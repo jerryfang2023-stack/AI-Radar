@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"The conversation around generative 
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "驾驭AI应用‘最后一英里’的3个关键 - Salesforce"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # The 3 Keys to Navigating the ‘Last Mile’ of AI Adoption - Salesforce

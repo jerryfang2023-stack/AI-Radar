@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"Mortgage follow-up calls have long been 
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Better.com的AI智能体解决了35%的抵押贷款电话"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # PYMNTS | Better.com's AI Agent Resolved 35% of Mortgage Calls Al…

@@ -2,7 +2,7 @@
 id: SIG-20260703-A09
 type: signal_card
 signal_type: funding
-title: "Chamath Palihapitiya 获得 $135M A 轮 融资"
+title: "Chamath Palihapitiya为其AI编程初创公司筹集1.35亿美元A轮融资，并出任CEO | TechCrunch"
 date: 2026-07-03
 status: published
 source_title: "Chamath Palihapitiya raises $135M Series A for his AI coding startup, takes CEO role | TechCrunch"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Chamath Palihapitiya"
 
 frontend:
-  displayTitle: "Chamath Palihapitiya 获得 $135M A 轮 融资"
+  displayTitle: "Chamath Palihapitiya为其AI编程初创公司筹集1.35亿美元A轮融资，并出任CEO | TechCrunch"
   sourceLinks:
     - "https://techcrunch.com/2026/06/29/chamath-palihapitiya-raises-135m-series-a-for-his-ai-coding-startup-takes-ceo-role/"
 ---
 
-# Chamath Palihapitiya 获得 $135M A 轮 融资
+# Chamath Palihapitiya为其AI编程初创公司筹集1.35亿美元A轮融资，并出任CEO | TechCrunch
 
 ## 新闻事实
 

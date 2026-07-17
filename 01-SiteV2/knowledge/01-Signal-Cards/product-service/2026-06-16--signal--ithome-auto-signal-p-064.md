@@ -2,7 +2,7 @@
 id: SIG-20260616-A18
 type: signal_card
 signal_type: product_service
-title: "Ithome 推出 Agent 工作流能力，切入企业 Agent 协作平台"
+title: "微信支付 AI 接入工具箱 2.0 发布，Token 消耗降低 50%"
 date: 2026-06-16
 status: published
 source_title: "微信支付 AI 接入工具箱 2.0 发布，Token 消耗降低 50%"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Ithome"
 
 frontend:
-  displayTitle: "Ithome 推出 Agent 工作流能力，切入企业 Agent 协作平台"
+  displayTitle: "微信支付 AI 接入工具箱 2.0 发布，Token 消耗降低 50%"
   sourceLinks:
     - "https://www.ithome.com/0/964/467.htm"
 ---
 
-# Ithome 推出 Agent 工作流能力，切入企业 Agent 协作平台
+# 微信支付 AI 接入工具箱 2.0 发布，Token 消耗降低 50%
 
 ## 新闻事实
 

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"Agentic Resource Discovery（ARD）
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "谷歌发布Agentic Resource Discovery（ARD）开放规范"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 谷歌发布Agentic Resource Discovery（ARD）开放规范

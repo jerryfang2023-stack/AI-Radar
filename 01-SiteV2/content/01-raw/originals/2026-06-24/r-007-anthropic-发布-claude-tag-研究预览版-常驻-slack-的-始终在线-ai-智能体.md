@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"Anthropic 推出 Claude Tag 研�
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Anthropic 发布 Claude Tag 研究预览版：常驻 Slack 的\"始终在线\"AI 智能体"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Anthropic 发布 Claude Tag 研究预览版：常驻 Slack 的"始终在线"AI 智能体

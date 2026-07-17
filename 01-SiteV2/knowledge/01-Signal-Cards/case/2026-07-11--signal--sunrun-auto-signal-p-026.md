@@ -2,7 +2,7 @@
 id: SIG-20260711-A06
 type: signal_card
 signal_type: case
-title: "Sunrun 启动家庭分布式 AI 算力试点"
+title: "你愿意在家托管部分AI数据中心吗？"
 date: 2026-07-11
 status: published
 source_title: "Would you host part of an AI data center in your home?"
@@ -57,12 +57,12 @@ opportunity_signals:
 signal_owner: "Sunrun"
 
 frontend:
-  displayTitle: "Sunrun 启动家庭分布式 AI 算力试点"
+  displayTitle: "你愿意在家托管部分AI数据中心吗？"
   sourceLinks:
     - "https://www.theverge.com/ai-artificial-intelligence/963930/sunrun-distributed-ai-data-center"
 ---
 
-# Sunrun 启动家庭分布式 AI 算力试点
+# 你愿意在家托管部分AI数据中心吗？
 
 ## 新闻事实
 

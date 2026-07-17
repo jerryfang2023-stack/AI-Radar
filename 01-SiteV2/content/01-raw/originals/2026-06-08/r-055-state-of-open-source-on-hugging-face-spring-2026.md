@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"This post examines how the open 
 theme: technical-iteration-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "Hugging Face 开源现状：2026年春季"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # State of Open Source on Hugging Face: Spring 2026

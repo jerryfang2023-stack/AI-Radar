@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-018
 title: "Introducing AgentControl | LaunchDarkly"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "推出AgentControl | LaunchDarkly"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://launchdarkly.com/blog/introducing-agentcontrol/"
 canonical_url: "https://launchdarkly.com/blog/introducing-agentcontrol"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-09T03:05:44.891Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Introducing AgentControl | LaunchDarkly

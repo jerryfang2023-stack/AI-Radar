@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-049
 title: "Announcing Our Investment in Mowito: Physical AI for Robot Arms in Manufacturing - Version One Ventures"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "Version One Ventures 宣布投资 Mowito：面向制造业机械臂的 Physical AI"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://versionone.vc/announcing-our-investment-in-mowito-physical-ai-for-robot-arms-in-manufacturing/"
 canonical_url: "https://versionone.vc/announcing-our-investment-in-mowito-physical-ai-for-robot-arms-in-manufacturing"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-14T01:56:51.617Z
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Announcing Our Investment in Mowito: Physical AI for Robot Arms in Manufacturing - Version One Ventures

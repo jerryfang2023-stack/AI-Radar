@@ -2,7 +2,7 @@
 id: SIG-20260708-A05
 type: signal_card
 signal_type: funding
-title: "Ornn 获得 $33M 融资"
+title: "Ornn 融资3300万美元，助力企业像买卖石油一样将AI算力作为商品交易 - SiliconANGLE"
 date: 2026-07-08
 status: published
 source_title: "Ornn raises $33M to help companies buy and sell AI compute as a commodity like oil - SiliconANGLE"
@@ -55,12 +55,12 @@ opportunity_signals:
 signal_owner: "Ornn"
 
 frontend:
-  displayTitle: "Ornn 获得 $33M 融资"
+  displayTitle: "Ornn 融资3300万美元，助力企业像买卖石油一样将AI算力作为商品交易 - SiliconANGLE"
   sourceLinks:
     - "https://siliconangle.com/2026/06/24/ornn-raises-33m-help-companies-buy-sell-ai-compute-commodity-like-oil/"
 ---
 
-# Ornn 获得 $33M 融资
+# Ornn 融资3300万美元，助力企业像买卖石油一样将AI算力作为商品交易 - SiliconANGLE
 
 ## 新闻事实
 

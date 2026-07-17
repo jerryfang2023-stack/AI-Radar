@@ -2,7 +2,7 @@
 id: SIG-20260612-A02
 type: signal_card
 signal_type: funding
-title: "Notch 获得$30 M 融资，押注地产和建筑设计工作流"
+title: "Notch 获 3000 万美元融资，打造受监管行业的人工智能操作系统"
 date: 2026-06-12
 status: published
 source_title: "Notch Raises $30 Million to Build the AI Operating System for Regulated Industries"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Notch"
 
 frontend:
-  displayTitle: "Notch 获得$30 M 融资，押注地产和建筑设计工作流"
+  displayTitle: "Notch 获 3000 万美元融资，打造受监管行业的人工智能操作系统"
   sourceLinks:
     - "https://www.notch.cx/post/notch-30-million-series-a"
 ---
 
-# Notch 获得$30 M 融资，押注地产和建筑设计工作流
+# Notch 获 3000 万美元融资，打造受监管行业的人工智能操作系统
 
 ## 新闻事实
 

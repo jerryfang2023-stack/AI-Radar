@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"NVIDIA founder and CEO Jensen Huang took
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_zh: "NVIDIA Rubin平台、开放模型、自动驾驶：NVIDIA在CES上展示未来蓝图"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # NVIDIA Rubin Platform, Open Models, Autonomous Driving: NVIDIA Presents Blueprint for the Future at CES

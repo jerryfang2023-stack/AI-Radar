@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-014
 title: "Vint Cerf 加入 Innovation Labs，推动 AI 智能体开放互联网身份识别标准 DNSid"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "Vint Cerf 加入 Innovation Labs，推动 AI 智能体开放互联网身份识别标准 DNSid"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://techcrunch.com/2026/07/15/vint-cerf-is-working-on-a-plan-to-unleash-ai-agents-on-the-open-internet"
 canonical_url: "https://techcrunch.com/2026/07/15/vint-cerf-is-working-on-a-plan-to-unleash-ai-agents-on-the-open-internet"
 source_name: "TechCrunch：AI（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-16T02:39:33.475Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Vint Cerf 加入 Innovation Labs，推动 AI 智能体开放互联网身份识别标准 DNSid

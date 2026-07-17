@@ -2,7 +2,7 @@
 id: SIG-20260709-A04
 type: signal_card
 signal_type: case
-title: "Sabre 在 Linex 全球扩张中扩大 agentic AI 部署"
+title: "Sabre 扩大 AI 智能体部署，Ultra Group 在 Linex 旗下全球扩张"
 date: 2026-07-09
 status: published
 source_title: "Sabre scales agentic AI deployment as Ultra Group expands globally under Linex – Company Announcement - FT.com"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "Ft"
 
 frontend:
-  displayTitle: "Sabre 在 Linex 全球扩张中扩大 agentic AI 部署"
+  displayTitle: "Sabre 扩大 AI 智能体部署，Ultra Group 在 Linex 旗下全球扩张"
   sourceLinks:
     - "https://markets.ft.com/data/announce/detail?dockey=600-202606170900PR_NEWS_USPRX____DA85593-1"
 ---
 
-# Sabre 在 Linex 全球扩张中扩大 agentic AI 部署
+# Sabre 扩大 AI 智能体部署，Ultra Group 在 Linex 旗下全球扩张
 
 ## 新闻事实
 

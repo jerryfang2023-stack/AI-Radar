@@ -72,6 +72,10 @@ key_excerpts: [{"type":"quote","text":"In this conversation with Malte Ubl, CTO 
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "⚡️ Ship AI 回顾：智能体、工作流与 Python——Vercel CTO Malte Ubl 分享"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # ⚡️ Ship AI recap: Agents, Workflows, and Python — w/ Vercel CTO Malte Ubl

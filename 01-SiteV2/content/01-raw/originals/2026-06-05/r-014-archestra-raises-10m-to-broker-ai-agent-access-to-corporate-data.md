@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"Archestra Inc., a U.K.-based startu
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "Archestra 融资1000万美元，为AI代理接入企业数据提供中介服务"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Archestra raises $10M to broker AI agent access to corporate data

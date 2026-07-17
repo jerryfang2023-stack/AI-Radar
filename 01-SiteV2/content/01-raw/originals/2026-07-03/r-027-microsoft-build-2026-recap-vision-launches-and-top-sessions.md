@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-027
 title: "Microsoft Build 2026 recap: vision, launches, and top sessions"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "微软Build 2026回顾：愿景、发布及热门会议"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://developer.microsoft.com/blog/build-recap"
 canonical_url: "https://developer.microsoft.com/blog/build-recap"
 source_name: "keyword search / Anysearch"
@@ -78,6 +78,7 @@ fact_extraction_completed_at: 2026-07-03T01:59:31.171Z
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Microsoft Build 2026 recap: vision, launches, and top sessions

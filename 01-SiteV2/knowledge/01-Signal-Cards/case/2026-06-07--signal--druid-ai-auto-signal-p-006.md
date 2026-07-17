@@ -2,7 +2,7 @@
 id: SIG-20260607-A02
 type: signal_card
 signal_type: case
-title: "How Druid AI helped a global appliance retailer automate contact center support and unlock growth"
+title: "Druid AI助力全球家电零售商自动化客服中心支持，释放增长潜力"
 date: 2026-06-07
 status: published
 source_title: "How Druid AI helped a global appliance retailer automate contact center support and unlock growth"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Druid AI"
 
 frontend:
-  displayTitle: "How Druid AI helped a global appliance retailer automate contact center support and unlock growth"
+  displayTitle: "Druid AI助力全球家电零售商自动化客服中心支持，释放增长潜力"
   sourceLinks:
     - "https://www.druidai.com/case-studies/druid-ai-agents-automate-customer-support-appliances-retailer?hs_amp=true"
 ---
 
-# How Druid AI helped a global appliance retailer automate contact center support and unlock growth
+# Druid AI助力全球家电零售商自动化客服中心支持，释放增长潜力
 
 ## 新闻事实
 

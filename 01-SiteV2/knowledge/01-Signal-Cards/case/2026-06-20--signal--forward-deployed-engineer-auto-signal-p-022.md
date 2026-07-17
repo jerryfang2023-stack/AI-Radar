@@ -2,7 +2,7 @@
 id: SIG-20260620-A07
 type: signal_card
 signal_type: case
-title: "Forward Deployed Engineer - AI Engineer @ Reflection - Jobs"
+title: "Reflection 招聘：前部署工程师 - AI 工程师"
 date: 2026-06-20
 status: published
 source_title: "Forward Deployed Engineer - AI Engineer @ Reflection - Jobs"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Forward Deployed Engineer"
 
 frontend:
-  displayTitle: "Forward Deployed Engineer - AI Engineer @ Reflection - Jobs"
+  displayTitle: "Reflection 招聘：前部署工程师 - AI 工程师"
   sourceLinks:
     - "https://jobs.ashbyhq.com/reflectionai/8b97b583-3cc6-4834-ae2c-d5aecf22ed7d"
 ---
 
-# Forward Deployed Engineer - AI Engineer @ Reflection - Jobs
+# Reflection 招聘：前部署工程师 - AI 工程师
 
 ## 新闻事实
 

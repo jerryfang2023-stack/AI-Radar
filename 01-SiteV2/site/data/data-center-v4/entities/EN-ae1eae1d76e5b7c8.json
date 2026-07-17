@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-17T18:20:10.588Z",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 727,
-    "quarantinedEventCount": 50
+    "eventCount": 818,
+    "quarantinedEventCount": 58
   },
   "entity": {
     "id": "EN-ae1eae1d76e5b7c8",
@@ -22,15 +22,19 @@
     "datasetScopes": [
       "canonical"
     ],
-    "eventIds": [],
+    "eventIds": [
+      "EV-4da1a7c4d527eb69"
+    ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
-    "firstSeen": "",
-    "lastSeen": "",
+    "firstSeen": "2026-07-14",
+    "lastSeen": "2026-07-16",
     "relationIds": [],
     "groupedEventIds": {
-      "fundingAcquisition": [],
+      "fundingAcquisition": [
+        "EV-4da1a7c4d527eb69"
+      ],
       "deployments": [],
       "partnerships": [],
       "productsServices": [],
@@ -38,7 +42,24 @@
       "organizationPeople": [],
       "other": []
     },
-    "timeline": [],
+    "timeline": [
+      {
+        "id": "EV-4da1a7c4d527eb69",
+        "dataDate": "2026-07-16",
+        "date": "2026-07-14",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "独家：初创公司Adapter携1780万美元推出AI工具新“认知”功能",
+        "displayTags": [],
+        "entityIds": [
+          "EN-ae1eae1d76e5b7c8",
+          "EN-7d3194f79e645c42"
+        ]
+      }
+    ],
     "viewpoints": []
   },
   "relatedEntities": [],

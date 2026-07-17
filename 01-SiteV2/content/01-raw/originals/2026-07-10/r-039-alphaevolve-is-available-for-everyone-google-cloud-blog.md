@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-039
 title: "AlphaEvolve is available for everyone | Google Cloud Blog"
-title_zh: "AlphaEvolve可供所有人使用| Google Cloud博客"
-title_translation_status: translated
-title_translation_method: mymemory_title_translation
+title_zh: "AlphaEvolve现已面向所有人开放 | Google Cloud博客"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://cloud.google.com/blog/products/ai-machine-learning/alphaevolve-is-available-for-everyone"
 canonical_url: "https://cloud.google.com/blog/products/ai-machine-learning/alphaevolve-is-available-for-everyone"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-10T01:59:52.246Z
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # AlphaEvolve is available for everyone | Google Cloud Blog

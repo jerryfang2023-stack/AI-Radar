@@ -72,6 +72,10 @@ key_excerpts: [{"type":"supporting_context","text":"A civil engineering and infr
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Azure AI 咨询服务助力招标合规自动化"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Azure AI Consulting Services for Tender Compliance Automation

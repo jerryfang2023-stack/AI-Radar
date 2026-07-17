@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-029
 title: "开源工具 pxpipe 将文本隐藏到 PNG 中，削减 Claude Code 和 Fable 5 的 token 成本高达 70%"
 title_zh: "开源工具 pxpipe 将文本隐藏到 PNG 中，削减 Claude Code 和 Fable 5 的 token 成本高达 70%"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://the-decoder.com/open-source-tool-pxpipe-hides-text-in-pngs-to-cut-claude-code-and-fable-5-token-costs-up-to-70"
 canonical_url: "https://the-decoder.com/open-source-tool-pxpipe-hides-text-in-pngs-to-cut-claude-code-and-fable-5-token-costs-up-to-70"
 source_name: "The Decoder：AI News（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-05T04:56:15.276Z
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 开源工具 pxpipe 将文本隐藏到 PNG 中，削减 Claude Code 和 Fable 5 的 token 成本高达 70%

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"NanoCo, the company behind security-foc
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "NanoClaw 创始人拒绝 2000 万美元收购要约，转而获得 1200 万美元种子轮融资"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # NanoClaw creator turns down $20M buyout offer, raises $12M seed instead | TechCrunch

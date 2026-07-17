@@ -72,6 +72,10 @@ key_excerpts: [{"type":"company_action","text":"Built as a multi-cloud platform,
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "DataRobot AI Cloud 在 Google Cloud Marketplace 上线"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # DataRobot AI Cloud Launches on Google Cloud Marketplace

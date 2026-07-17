@@ -72,6 +72,10 @@ key_excerpts: [{"type":"workflow_change","text":"CLIENT STORY International Flav
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "通过智能技术革新采购流程"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Transforming procurement through intelligent technology

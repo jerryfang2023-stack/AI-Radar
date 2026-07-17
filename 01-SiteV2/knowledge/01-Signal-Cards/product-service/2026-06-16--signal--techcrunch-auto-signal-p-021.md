@@ -2,7 +2,7 @@
 id: SIG-20260616-A14
 type: signal_card
 signal_type: product_service
-title: "Techcrunch 推出 Agent 工作流能力，切入采购下单自动化"
+title: "76位网络安全专家联名要求撤销美国政府对Anthropic最强模型的出口禁令"
 date: 2026-06-16
 status: published
 source_title: "76位网络安全专家联名要求撤销美国政府对Anthropic最强模型的出口禁令"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Techcrunch"
 
 frontend:
-  displayTitle: "Techcrunch 推出 Agent 工作流能力，切入采购下单自动化"
+  displayTitle: "76位网络安全专家联名要求撤销美国政府对Anthropic最强模型的出口禁令"
   sourceLinks:
     - "https://techcrunch.com/2026/06/15/cybersecurity-vets-protest-dangerous-us-government-ban-on-anthropics-most-powerful-models"
 ---
 
-# Techcrunch 推出 Agent 工作流能力，切入采购下单自动化
+# 76位网络安全专家联名要求撤销美国政府对Anthropic最强模型的出口禁令
 
 ## 新闻事实
 

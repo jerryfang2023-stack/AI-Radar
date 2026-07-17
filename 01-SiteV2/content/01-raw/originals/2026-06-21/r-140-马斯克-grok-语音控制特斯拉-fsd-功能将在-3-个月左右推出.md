@@ -72,6 +72,10 @@ key_excerpts: [{"type":"quote","text":"马斯克在 X 平台回复称，Grok 语
 theme: outside-core-exploration
 keyword_group: outside-core-exploration
 copyright_note: local research archive only
+title_zh: "马斯克：Grok 语音控制特斯拉 FSD 功能将在 3 个月左右推出"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 马斯克：Grok 语音控制特斯拉 FSD 功能将在 3 个月左右推出

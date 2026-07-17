@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Convey Raises $38 Million Series A Led 
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only
+title_zh: "Convey 获 Andreessen Horowitz 领投 3800 万美元 A 轮融资，以 AI 同事自动化企业运营"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Convey Raises $38 Million Series A Led by Andreessen Horowitz to Automate Enterprise Operations with AI Teammates

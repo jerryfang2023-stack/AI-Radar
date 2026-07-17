@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-036
 title: "Tencent releases Hy3 open-source model that allegedly matches models up to five times its active size"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "腾讯发布Hy3开源模型，声称性能可匹敌其活跃规模五倍的模型"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://the-decoder.com/tencent-releases-hy3-open-source-model-that-allegedly-matches-models-up-to-five-times-its-active-size/"
 canonical_url: "https://the-decoder.com/tencent-releases-hy3-open-source-model-that-allegedly-matches-models-up-to-five-times-its-active-size"
 source_name: "The Decoder AI News"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-07T02:01:23.512Z
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Tencent releases Hy3 open-source model that allegedly matches models up to five times its active size

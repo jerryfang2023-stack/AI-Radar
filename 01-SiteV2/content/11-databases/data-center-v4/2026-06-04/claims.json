@@ -105,7 +105,7 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-625e3c8988e3228a",
+    "claim_id": "CL-b52d7cdf13a4cf65",
     "raw_id": "RAW-e3e1982578fcac77",
     "claim_type": "funding",
     "subject": "Alphabet 创纪录 850 亿美元",
@@ -117,52 +117,115 @@
     },
     "source_span": {
       "raw_id": "RAW-e3e1982578fcac77",
-      "start": 11,
-      "end": 98
+      "start": 789,
+      "end": 874
     },
-    "source_quote": "Alphabet’s record-breaking $85B raise for Google’s AI business is a helluva good signal",
+    "source_quote": "Alphabet plans to sell another $40 billion worth next quarter, for $85 billion total.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-7a4b3a587e58c2ed",
-    "raw_id": "RAW-ec8ae9a085f4323f",
-    "claim_type": "product_release",
-    "subject": "Claude Code v2.1.162",
-    "predicate": "product_release",
-    "object": "Fixed a silent startup hang when the config directory is read-only or unwritable — Claude Code now starts with in-memory config and surfaces startup errors instead of showing a blank screen",
+    "claim_id": "CL-fce12e29c39d5ebb",
+    "raw_id": "RAW-e3e1982578fcac77",
+    "claim_type": "funding",
+    "subject": "Alphabet 创纪录 850 亿美元",
+    "predicate": "funding",
+    "object": "用于 Google AI 业务，投资者对 AI 兴趣高涨",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-e3e1982578fcac77",
+      "start": 1060,
+      "end": 1309
+    },
+    "source_quote": "Now, it’s true that these investors are buying shares of Alphabet, not shares in a younger, possibly debt-riddled AI startup. Alphabet is a very healthy business: $110 billion in revenue (with high profit margins) in Q1 alone, up 22% year-over-year.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-20e153e5accbf9b6",
+    "raw_id": "RAW-b53918062b0fab53",
+    "claim_type": "funding",
+    "subject": "Vapi",
+    "predicate": "funding",
+    "object": "$50M to make voice AI more human - SiliconANGLE",
     "qualifiers": {
       "event_status": "completed",
       "sequence": 1
     },
     "source_span": {
-      "raw_id": "RAW-ec8ae9a085f4323f",
-      "start": 1149,
-      "end": 1338
+      "raw_id": "RAW-b53918062b0fab53",
+      "start": 35,
+      "end": 77
     },
-    "source_quote": "Fixed a silent startup hang when the config directory is read-only or unwritable — Claude Code now starts with in-memory config and surfaces startup errors instead of showing a blank screen",
+    "source_quote": "Vapi nabs $50M to make voice AI more human",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.9,
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-af0b87d7f3ec73ad",
-    "raw_id": "RAW-ec8ae9a085f4323f",
-    "claim_type": "product_release",
-    "subject": "Claude Code v2.1.162",
-    "predicate": "product_release",
-    "object": "Fixed cross-session messaging ( SendMessage ) silently breaking when CLAUDE_CODE_TMPDIR or $TMPDIR points at a deep directory",
+    "claim_id": "CL-e7b02081e44a3188",
+    "raw_id": "RAW-b53918062b0fab53",
+    "claim_type": "funding",
+    "subject": "Vapi",
+    "predicate": "funding",
+    "object": "$50M to make voice AI more human - SiliconANGLE",
     "qualifiers": {
       "event_status": "completed",
       "sequence": 2
     },
     "source_span": {
-      "raw_id": "RAW-ec8ae9a085f4323f",
-      "start": 3287,
-      "end": 3412
+      "raw_id": "RAW-b53918062b0fab53",
+      "start": 98,
+      "end": 300
     },
-    "source_quote": "Fixed cross-session messaging ( SendMessage ) silently breaking when CLAUDE_CODE_TMPDIR or $TMPDIR points at a deep directory",
+    "source_quote": "Voice artificial intelligence startup Vapi Inc. said today it has raised $50 million in new funding to change the way people talk to computers, experience phone calls and interact with customer support.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-215161f9d48a66da",
+    "raw_id": "RAW-b53918062b0fab53",
+    "claim_type": "funding",
+    "subject": "Vapi",
+    "predicate": "funding",
+    "object": "$50M to make voice AI more human - SiliconANGLE",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-b53918062b0fab53",
+      "start": 575,
+      "end": 804
+    },
+    "source_quote": "Peak XV led the Series B funding round, with participation from Y Combinator, Microsoft Corp.’s venture fund M12, Kleiner Perkins and the company’s earliest investors. This round brings the company’s total funding to $72 million.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-414d677208667e33",
+    "raw_id": "RAW-b53918062b0fab53",
+    "claim_type": "funding",
+    "subject": "Vapi",
+    "predicate": "funding",
+    "object": "$50M to make voice AI more human - SiliconANGLE",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-b53918062b0fab53",
+      "start": 4449,
+      "end": 4491
+    },
+    "source_quote": "Vapi nabs $50M to make voice AI more human",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -175,7 +238,7 @@
     "predicate": "funding",
     "object": "$20M to Redefine AI Inference",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 1
     },
     "source_span": {
@@ -189,6 +252,27 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-fa1804e576ccdf23",
+    "raw_id": "RAW-670b7e4b1bcf3868",
+    "claim_type": "funding",
+    "subject": "FriendliAI",
+    "predicate": "funding",
+    "object": "$20M to Redefine AI Inference",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-670b7e4b1bcf3868",
+      "start": 76,
+      "end": 412
+    },
+    "source_quote": "We are thrilled to announce our $20 million seed extension round, led by Capstone Partners and joined by Sierra Ventures , Alumni Ventures , KDB , and KB Securities . This milestone marks a major step forward in our mission to make high-performance AI inference accessible, scalable, and cost-efficient for enterprises around the world.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-7190537bdb579236",
     "raw_id": "RAW-670b7e4b1bcf3868",
     "claim_type": "funding",
@@ -196,8 +280,8 @@
     "predicate": "funding",
     "object": "$20M to Redefine AI Inference",
     "qualifiers": {
-      "event_status": "announced",
-      "sequence": 2
+      "event_status": "completed",
+      "sequence": 3
     },
     "source_span": {
       "raw_id": "RAW-670b7e4b1bcf3868",
@@ -217,8 +301,8 @@
     "predicate": "funding",
     "object": "$20M to Redefine AI Inference",
     "qualifiers": {
-      "event_status": "announced",
-      "sequence": 3
+      "event_status": "completed",
+      "sequence": 4
     },
     "source_span": {
       "raw_id": "RAW-670b7e4b1bcf3868",
@@ -226,27 +310,6 @@
       "end": 1559
     },
     "source_quote": "“The AI inference market is exploding as more organizations move from AI experimentation to production deployment,” said Byung-Gon Chun, CEO and Co-founder of FriendliAI . “This funding underscores the strength of our approach and positions us to capture the massive opportunity ahead.”",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-8071676e3aac8b5a",
-    "raw_id": "RAW-670b7e4b1bcf3868",
-    "claim_type": "funding",
-    "subject": "FriendliAI",
-    "predicate": "funding",
-    "object": "$20M to Redefine AI Inference",
-    "qualifiers": {
-      "event_status": "announced",
-      "sequence": 4
-    },
-    "source_span": {
-      "raw_id": "RAW-670b7e4b1bcf3868",
-      "start": 2320,
-      "end": 3110
-    },
-    "source_quote": "With support for over 430,000 models from Hugging Face , the platform enables seamless, one-click deployment of advanced AI models, significantly reducing the complexity of bringing models into life. In partnership with LG AI Research , FriendliAI introduced the API access to EXAONE 4.0 , their most advanced large language model. This collaboration marks the first public release of the model, expanding global access to high-performance, enterprise-grade AI. Furthermore, startups such as Scatter Lab are achieving a significant reduction in infrastructure costs by leveraging FriendliAI’s platform. In addition, Upstage , a fast-growing AI company best known for its cutting-edge Solar foundation model, relies on FriendliAI’s platform to deliver state-of-the-art inference performance.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -504,27 +567,6 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-bde1074da1e7f759",
-    "raw_id": "RAW-63f7f69d7e82ac14",
-    "claim_type": "model_release",
-    "subject": "Google DeepMind",
-    "predicate": "model_release",
-    "object": "，16GB 内存笔记本即可运行",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 2
-    },
-    "source_span": {
-      "raw_id": "RAW-63f7f69d7e82ac14",
-      "start": 19,
-      "end": 108
-    },
-    "source_quote": "Google Deepmind's Gemma 4 12B squeezes multimodal AI onto a laptop with just 16 GB of RAM",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
     "claim_id": "CL-035fba984bda80eb",
     "raw_id": "RAW-63f7f69d7e82ac14",
     "claim_type": "model_release",
@@ -533,7 +575,7 @@
     "object": "，16GB 内存笔记本即可运行",
     "qualifiers": {
       "event_status": "completed",
-      "sequence": 3
+      "sequence": 2
     },
     "source_span": {
       "raw_id": "RAW-63f7f69d7e82ac14",
@@ -554,7 +596,7 @@
     "object": "，16GB 内存笔记本即可运行",
     "qualifiers": {
       "event_status": "completed",
-      "sequence": 4
+      "sequence": 3
     },
     "source_span": {
       "raw_id": "RAW-63f7f69d7e82ac14",
@@ -562,6 +604,27 @@
       "end": 1115
     },
     "source_quote": "Across benchmarks like GPQA Diamond, MMLU Pro, and DocVQA, Gemma 4 12B nearly matches the twice-as-large 26B model and clearly beats the older Gemma 3 27B. | Image: Google Deepmind",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-bde1074da1e7f759",
+    "raw_id": "RAW-63f7f69d7e82ac14",
+    "claim_type": "model_release",
+    "subject": "Google DeepMind",
+    "predicate": "model_release",
+    "object": "，16GB 内存笔记本即可运行",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-63f7f69d7e82ac14",
+      "start": 19,
+      "end": 108
+    },
+    "source_quote": "Google Deepmind's Gemma 4 12B squeezes multimodal AI onto a laptop with just 16 GB of RAM",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -688,6 +751,48 @@
       "end": 555
     },
     "source_quote": "SpaceX is seeking to raise $75 billion in an initial public offering that would be the biggest of all time, as Elon Musk ’s rocket, satellite and artificial intelligence company targets a historic debut that could clear a path for more mega-listings.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-c01ce4565d77f8cb",
+    "raw_id": "RAW-1691742e41378943",
+    "claim_type": "funding",
+    "subject": "SpaceX 寻求 750 亿美元 IPO，创历史记录，为 AI 与发射业务",
+    "predicate": "funding",
+    "object": "Contact us: Provide news feedback or report an error",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-1691742e41378943",
+      "start": 81,
+      "end": 133
+    },
+    "source_quote": "Contact us: Provide news feedback or report an error",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-2408e288dcde6d2b",
+    "raw_id": "RAW-1691742e41378943",
+    "claim_type": "funding",
+    "subject": "SpaceX 寻求 750 亿美元 IPO，创历史记录，为 AI 与发射业务",
+    "predicate": "funding",
+    "object": "Send a tip to our reporters",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-1691742e41378943",
+      "start": 152,
+      "end": 179
+    },
+    "source_quote": "Send a tip to our reporters",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"

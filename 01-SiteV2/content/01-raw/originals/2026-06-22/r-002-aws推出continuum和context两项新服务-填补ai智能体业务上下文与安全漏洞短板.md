@@ -72,6 +72,10 @@ key_excerpts: [{"type":"supporting_context","text":"在纽约AWS峰会上，亚�
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "AWS推出Continuum和Context两项新服务，填补AI智能体业务上下文与安全漏洞短板"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # AWS推出Continuum和Context两项新服务，填补AI智能体业务上下文与安全漏洞短板

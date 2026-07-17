@@ -1,0 +1,156 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 818,
+    "quarantinedEventCount": 58
+  },
+  "entity": {
+    "id": "EN-d8fbfdb6a8143da8",
+    "name": "WPS Comate",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-ad8f847d403433f7"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [
+      "EN-3f726694f178ed7a"
+    ],
+    "firstSeen": "2026-06-20",
+    "lastSeen": "2026-06-21",
+    "relationIds": [
+      "REL2-2bf29f48932fee41"
+    ],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-702ed039940800fb",
+        "EV-ad8f847d403433f7"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-702ed039940800fb",
+        "dataDate": "2026-07-16",
+        "date": "2026-07-15",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "金山办公推出 WPS Comate AI 办公客户端",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "id": "knowledge_search",
+            "dimensionName": "应用场景",
+            "name": "知识与搜索"
+          }
+        ],
+        "entityIds": [
+          "EN-3f726694f178ed7a",
+          "EN-45e0ade11fed1e44",
+          "EN-1e68d267df86aa4c",
+          "EN-9d93b78264eb6acb"
+        ]
+      },
+      {
+        "id": "EV-ad8f847d403433f7",
+        "dataDate": "2026-06-21",
+        "date": "2026-06-20",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "金山办公将于下月推出组织级AI产品\"企业大脑\"WPS Comate",
+        "displayTags": [],
+        "entityIds": [
+          "EN-021e433bb36b1989",
+          "EN-3f726694f178ed7a",
+          "EN-d8fbfdb6a8143da8"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [
+    {
+      "id": "EN-3f726694f178ed7a",
+      "name": "Kingsoft Office",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "金山办公"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-385dc1ac09a211bd",
+        "EV-702ed039940800fb",
+        "EV-d2c1c077a2102f35",
+        "EV-ad8f847d403433f7",
+        "EV-ae4561a4a9ebe17f"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-multimodal",
+        "TX-use_case-knowledge_search"
+      ],
+      "relatedEntityIds": [
+        "EN-d8fbfdb6a8143da8",
+        "EN-9d93b78264eb6acb",
+        "EN-1e68d267df86aa4c",
+        "EN-26e4951af4490c21"
+      ],
+      "firstSeen": "2026-06-11",
+      "lastSeen": "2026-07-17"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-2bf29f48932fee41",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-3f726694f178ed7a",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-d8fbfdb6a8143da8",
+      "object_type": "entity",
+      "event_id": "EV-702ed039940800fb",
+      "claim_refs": [
+        "CL-c925bbad2b823d08",
+        "CL-5fd685ea5e45fab9",
+        "CL-465a68f25ab3c791",
+        "CL-9331e22d2beb68e3"
+      ],
+      "source_refs": [
+        "SA-c82c09f4581c09fc"
+      ],
+      "data_date": "2026-07-16",
+      "status": "verified"
+    }
+  ],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

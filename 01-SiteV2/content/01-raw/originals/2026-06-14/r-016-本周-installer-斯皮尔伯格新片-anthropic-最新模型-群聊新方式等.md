@@ -72,6 +72,10 @@ key_excerpts: [{"type":"company_action","text":"本周 Installer 介绍了斯皮
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "本周 Installer：斯皮尔伯格新片、Anthropic 最新模型、群聊新方式等"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 本周 Installer：斯皮尔伯格新片、Anthropic 最新模型、群聊新方式等

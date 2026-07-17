@@ -72,8 +72,8 @@
     "claim_refs": [
       "CL-1781673ba2a165aa",
       "CL-2cb4260e9ce8493a",
-      "CL-5ce8f14646a64cf5",
-      "CL-7662823a90569cbd"
+      "CL-7662823a90569cbd",
+      "CL-abb8ad5a4db84f09"
     ],
     "source_refs": [
       "SA-7c440e19e636aaf7"
@@ -82,8 +82,8 @@
     "missing_fields": []
   },
   {
-    "card_id": "CARD-07ef226efbae3d4f",
-    "event_id": "EV-b3809ff557361cc2",
+    "card_id": "CARD-edeab777408613a3",
+    "event_id": "EV-51dfd0d541380500",
     "card_type": "product_service",
     "title": "Google Cloud 推出 OKF v0.1：供应商中立的 Markdown 规范，为 AI 智能体提供结构化上下文",
     "fact": "Google Cloud introduced the Open Knowledge Format (OKF) , an open specification that formalizes the LLM-wiki pattern into a portable, interoperable format. It is a vendor-neutral, agent- and human-friendly standard for the context modern AI systems need.",
@@ -92,9 +92,9 @@
     "event_time": "2026-06-16T08:18:58.000Z",
     "claim_refs": [
       "CL-c83d337cfa0736fd",
+      "CL-ca554276228d639a",
       "CL-dca0f01153b681c9",
-      "CL-191ed56085648a37",
-      "CL-4d3adddb13a9fdb2"
+      "CL-191ed56085648a37"
     ],
     "source_refs": [
       "SA-3322f5b356cb1b1c"
@@ -106,7 +106,7 @@
     "card_id": "CARD-200f37ec0f821c5b",
     "event_id": "EV-189e43cb9fea8e1a",
     "card_type": "funding",
-    "title": "New 完成 5000 万美元 C 轮融资",
+    "title": "Bland完成超1亿美元C轮融资，推动复杂高风险对话场景的语音AI技术",
     "fact": "SAN FRANCISCO , June 16, 2026 /PRNewswire/ -- Bland today announced it has raised a $50 million Series C, underscoring its leadership position in voice AI for complex, real-world conversations. The round was led by Dell Technologies Capital, with participation from HubSpot Ventures, Archerman Capital, and Tribeca Venture Partners. All existing investors also participated, including Emergence Capital, Upfront Ventures, Scale Venture Partners, Y Combinator, Max Levchin, Piotr Dąbkowski, and Jeff Lawson.",
     "event_status": "announced",
     "publication_status": "verified",
@@ -114,14 +114,16 @@
     "claim_refs": [
       "CL-8fa5f1fe90c64e2b",
       "CL-6b7b744bc04d3d51",
-      "CL-96d3d2df912b6167",
-      "CL-db121d9b8526db73"
+      "CL-b3931415c68f0046",
+      "CL-8eb7bb1b2078308c"
     ],
     "source_refs": [
       "SA-a0cd1a6cde24af53"
     ],
     "conflicts": [],
-    "missing_fields": []
+    "missing_fields": [
+      "event_time"
+    ]
   },
   {
     "card_id": "CARD-6351bff2f6067674",
@@ -133,7 +135,9 @@
     "publication_status": "verified",
     "event_time": "2026-06-16T10:00:00.000Z",
     "claim_refs": [
-      "CL-1382a007ab508203"
+      "CL-1382a007ab508203",
+      "CL-0048ea0ed4a5e659",
+      "CL-5b441ac110766c08"
     ],
     "source_refs": [
       "SA-2cf150a9d46cfd59"
@@ -142,27 +146,8 @@
     "missing_fields": []
   },
   {
-    "card_id": "CARD-d55f4c36ad2b4f94",
-    "event_id": "EV-197aac95e60671f7",
-    "card_type": "product_service",
-    "title": "Qwen团队发布三个具身AI模型套件 Qwen-RobotSuite",
-    "fact": "Home Artificial Intelligence AI Infrastructure Meet Qwen-RobotSuite: Three Embodied AI Models for VLA Manipulation, Video World Modeling,...",
-    "event_status": "completed",
-    "publication_status": "verified",
-    "event_time": "2026-06-16T16:51:19.000Z",
-    "claim_refs": [
-      "CL-8dc861067c20a1f9",
-      "CL-0217665e34546b30"
-    ],
-    "source_refs": [
-      "SA-5b7a6e6c986343dc"
-    ],
-    "conflicts": [],
-    "missing_fields": []
-  },
-  {
-    "card_id": "CARD-e0ccc3abdbb36a3a",
-    "event_id": "EV-bc71b0ddefa209a9",
+    "card_id": "CARD-e29800f144e9c71f",
+    "event_id": "EV-1b03e5dff76a50a1",
     "card_type": "product_service",
     "title": "Hermes Agent 新增异步子代理，委托工作不再阻塞父聊天",
     "fact": "Hermes Agent is an open-source personal agent from Nous Research. A parent agent can spawn child agents, called subagents, to fan out work. Until now, that delegation made you wait.",
@@ -182,6 +167,26 @@
     "missing_fields": []
   },
   {
+    "card_id": "CARD-fc26ac251401ed89",
+    "event_id": "EV-710b145230faa692",
+    "card_type": "product_service",
+    "title": "爱沙尼亚语言研究所发布基准测试：衡量AI模型对俄罗斯宣传的易感性",
+    "fact": "The Institute of the Estonian Language has released a benchmark measuring how susceptible AI language models are to Russian propaganda. Sixty models were tested with 75 questions in three languages covering 14 propaganda narratives, phrased in neutral, biased, and manipulative ways. Each answer is scored on a scale of 1 to 5, where 1 means the model repeats Russian talking points.",
+    "event_status": "completed",
+    "publication_status": "verified",
+    "event_time": "2026-06-16T11:28:13.000Z",
+    "claim_refs": [
+      "CL-33c49f37acf67d1d",
+      "CL-fc57cedb9125ddea",
+      "CL-a09ddefd89296d7d"
+    ],
+    "source_refs": [
+      "SA-89e22e142a74c206"
+    ],
+    "conflicts": [],
+    "missing_fields": []
+  },
+  {
     "card_id": "CARD-068856985ff53167",
     "event_id": "EV-83acf26a011ef213",
     "card_type": "product_service",
@@ -194,10 +199,33 @@
       "CL-6be20636838bc4ee",
       "CL-c612821277a8c314",
       "CL-5649aac20c729388",
-      "CL-028befc1d492f990"
+      "CL-fcab875ac47ba6c4"
     ],
     "source_refs": [
       "SA-c824127f769b58f5"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "entities"
+    ]
+  },
+  {
+    "card_id": "CARD-e19d26161fe0e063",
+    "event_id": "EV-8ca5600b39776400",
+    "card_type": "product_service",
+    "title": "女子用 AI 生成视频造谣上海地铁塌顶，被警方依法处以行政拘留",
+    "fact": "6 月 13 日，外省市人员孙某（女，50 岁，非路过女乘客）在网上看到上述墙皮脱落的信息后，为吸引流量，利用 AI 工具生成“上海地铁站内顶部大面积坠落”的虚假视频，发布在其个人微信视频号上，造成恶劣社会影响。",
+    "event_status": "announced",
+    "publication_status": "verified",
+    "event_time": "2026-06-17T00:15:19.000Z",
+    "claim_refs": [
+      "CL-034aef43b0b59610",
+      "CL-2545d0653c3f1146",
+      "CL-a95f180944e0278c",
+      "CL-70d880c62d7fabe5"
+    ],
+    "source_refs": [
+      "SA-c267a966342c4f42"
     ],
     "conflicts": [],
     "missing_fields": [
@@ -247,31 +275,29 @@
     "missing_fields": []
   },
   {
-    "card_id": "CARD-f82af35a7b7a94a1",
-    "event_id": "EV-b9a009b48d4cbf85",
+    "card_id": "CARD-20780a05f5b0a634",
+    "event_id": "EV-99e5df844a1bd670",
     "card_type": "product_service",
-    "title": "XREAL 发布 Aura XR 眼镜，搭载 Android XR 与 Gemini 大模型",
-    "fact": "在三星推出首款搭载 Android XR 系统的眼镜之前，各大品牌都希望抢先布局、抢占市场先机，XREAL 便是其中一员。",
-    "event_status": "completed",
+    "title": "谷歌推送 Android 17 正式版，深度集成 AI 功能",
+    "fact": "本次新版系统将率先搭载于谷歌自家 Pixel 系列设备，同步上线 Pixel 专属功能更新包，新增多项 AI 相关功能，包括对最新人工智能模型的支持，如音乐生成模型 Lyria 3、多模态大模型 Gemini Omni，以及搭载 AudioLM、适配 Pixel 10a 的语音翻译工具。",
+    "event_status": "announced",
     "publication_status": "verified",
-    "event_time": "2026-06-16T23:50:04.000Z",
+    "event_time": "2026-06-16T23:13:15.000Z",
     "claim_refs": [
-      "CL-def9d7b0f0ce9df7",
-      "CL-868982cd8bc6242d",
-      "CL-8b898f85f0916623",
-      "CL-636725312164524d"
+      "CL-524ffc470ce7246d",
+      "CL-a11cf53e9ae277c1",
+      "CL-2d3d4cf25f483fee",
+      "CL-9ca1813b0e901145"
     ],
     "source_refs": [
-      "SA-c336d9c4c33beac5"
+      "SA-7f1a78d22d637b90"
     ],
     "conflicts": [],
-    "missing_fields": [
-      "object"
-    ]
+    "missing_fields": []
   },
   {
-    "card_id": "CARD-ec662a2d36b755fa",
-    "event_id": "EV-b15c842ee1974890",
+    "card_id": "CARD-975ce584aff2924c",
+    "event_id": "EV-20dcacae656a9eb8",
     "card_type": "product_service",
     "title": "高通发布骁龙 Reality Elite 旗舰 XR 芯片，AI 算力提升 160%",
     "fact": "高通发布骁龙 Reality Elite 旗舰 XR 芯片，AI 算力暴涨 160% - IT之家",
@@ -291,8 +317,8 @@
     "missing_fields": []
   },
   {
-    "card_id": "CARD-409af967a9b137e6",
-    "event_id": "EV-d50a2832bb30b287",
+    "card_id": "CARD-6da2e69b90acb457",
+    "event_id": "EV-ab3586268ebfab38",
     "card_type": "product_service",
     "title": "OpenRouter 发布 Fusion API，多模型协同以一半成本接近 Claude Fable 5 性能",
     "fact": "IT之家 6 月 16 日消息，全球最大 AI 大模型 API 聚合平台 OpenRouter 于 6 月 14 日发布公告，宣布推出 Fusion API 复合 AI 模型， 只需约一半成本就能实现 Claude Fable 5 级别性能。",
@@ -301,9 +327,9 @@
     "event_time": "2026-06-16T07:47:12.000Z",
     "claim_refs": [
       "CL-8baf55396569778e",
-      "CL-37bb9b7ce057bacb",
-      "CL-16760d467a5bf879",
-      "CL-3410008b34a3fe7b"
+      "CL-ee968ec26fbadd33",
+      "CL-73f4cfe9ec18e00c",
+      "CL-37bb9b7ce057bacb"
     ],
     "source_refs": [
       "SA-0dc7f4cfc2270562"
@@ -333,8 +359,30 @@
     "missing_fields": []
   },
   {
-    "card_id": "CARD-3eeb4dbf93ba6292",
-    "event_id": "EV-b0d008460e8f75fe",
+    "card_id": "CARD-0683b1d34c1627b9",
+    "event_id": "EV-59be9748eaca01b5",
+    "card_type": "product_service",
+    "title": "1.6 万创作者洞察：Adobe 报告称 87% 受访者认为 AI 加快业务和粉丝增长",
+    "fact": "IT之家 6 月 17 日消息，Adobe 昨日（6 月 16 日）发布《2026 创作者工具包报告》， 75% 受访者已将创意 AI 视为工作中的整合工具或核心工具，87% 认为它加快了业务或粉丝增长，58% 称其增强了与大团队竞争的能力。",
+    "event_status": "announced",
+    "publication_status": "verified",
+    "event_time": "2026-06-17T00:12:04.000Z",
+    "claim_refs": [
+      "CL-1267a594bdc31711",
+      "CL-2062db918376171e",
+      "CL-8bc71896d589c612"
+    ],
+    "source_refs": [
+      "SA-197cf7125c01c17c"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "object"
+    ]
+  },
+  {
+    "card_id": "CARD-2775845b24992e7c",
+    "event_id": "EV-619e33abf3f9bfbf",
     "card_type": "case",
     "title": "微信正测试 AI 支付功能，\"AI 专属卡\"最快本周内上线",
     "fact": "IT之家 6 月 16 日消息，据财联社独家获悉，微信支付正联合腾讯智能体产品 WorkBuddy 测试 AI 支付功能， 计划在微信钱包中上线“AI 专属卡” ，最快将于本周内上线。",
@@ -342,7 +390,9 @@
     "publication_status": "verified",
     "event_time": "2026-06-16T11:44:38.000Z",
     "claim_refs": [
-      "CL-3b5bf1521ba5e79e"
+      "CL-3b5bf1521ba5e79e",
+      "CL-5aaa003d2e529efa",
+      "CL-dd43f7f9018f1a19"
     ],
     "source_refs": [
       "SA-bce11bb3a11c9d42"
@@ -353,8 +403,28 @@
     ]
   },
   {
-    "card_id": "CARD-589d3cf3bbb392f6",
-    "event_id": "EV-f89d14f52c223a04",
+    "card_id": "CARD-db0563cd77531b17",
+    "event_id": "EV-0fa9d5770cc0ab28",
+    "card_type": "product_service",
+    "title": "雷鸟 V3 AI 拍摄眼镜京东国补后 499 元（原价 1799 元）",
+    "fact": "雷鸟 V3 AI 拍摄眼镜发布于 2025 年 1 月 7 日，标准版官方定价 1799 元。",
+    "event_status": "announced",
+    "publication_status": "verified",
+    "event_time": "2026-06-16T14:19:50.000Z",
+    "claim_refs": [
+      "CL-11ac1171efcd7656",
+      "CL-0f1dfe362ae5b3a3",
+      "CL-3c67d397d410b44c"
+    ],
+    "source_refs": [
+      "SA-2dbb4f85a5470628"
+    ],
+    "conflicts": [],
+    "missing_fields": []
+  },
+  {
+    "card_id": "CARD-21b5526066415177",
+    "event_id": "EV-be2f6bfcad93c42f",
     "card_type": "case",
     "title": "腾讯张军：智能体 WorkBuddy 将入职政务系统，全国首个省级政务智能中枢「湾擎」上线试运行",
     "fact": "IT之家 6 月 16 日消息，腾讯公司公关总监张军今日宣布，智能体 WorkBuddy 即将入职政务系统：6 月 16 日， 全国首个省级政务智能中枢平台「湾擎」上线试运行 ，同时预发布湾擎 ·WorkBuddy，即将面向广东全省公务员开放使用。",
@@ -364,7 +434,8 @@
     "claim_refs": [
       "CL-0e557913d7187b7f",
       "CL-fb0353c273994249",
-      "CL-699f732bfc1085e8"
+      "CL-699f732bfc1085e8",
+      "CL-59804993ed5e8778"
     ],
     "source_refs": [
       "SA-c28dc1a590bd4d1d"

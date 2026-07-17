@@ -2,7 +2,7 @@
 id: SIG-20260617-A21
 type: signal_card
 signal_type: product_service
-title: "Midjourney 推出 Agent 工作流能力，切入企业 Agent 协作平台"
+title: "Midjourney V8.1 推出 Draft mode 草稿模式与新功能预览"
 date: 2026-06-17
 status: published
 source_title: "Midjourney V8.1 推出 Draft mode 草稿模式与新功能预览"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Midjourney"
 
 frontend:
-  displayTitle: "Midjourney 推出 Agent 工作流能力，切入企业 Agent 协作平台"
+  displayTitle: "Midjourney V8.1 推出 Draft mode 草稿模式与新功能预览"
   sourceLinks:
     - "https://updates.midjourney.com/draft-mode-for-v8-1-and-new-feature-previews"
 ---
 
-# Midjourney 推出 Agent 工作流能力，切入企业 Agent 协作平台
+# Midjourney V8.1 推出 Draft mode 草稿模式与新功能预览
 
 ## 新闻事实
 

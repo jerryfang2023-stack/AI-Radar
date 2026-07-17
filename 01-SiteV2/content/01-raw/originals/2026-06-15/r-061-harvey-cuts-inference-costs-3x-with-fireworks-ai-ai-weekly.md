@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"- Harvey cut inference costs 3x combinin
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Harvey借助Fireworks AI将推理成本降低3倍 | AI周报"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Harvey Cuts Inference Costs 3x With Fireworks AI | AI Weekly

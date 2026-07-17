@@ -2,7 +2,7 @@
 id: SIG-20260706-A11
 type: signal_card
 signal_type: case
-title: "AI Agent Platform for Finance Ops Case Study"
+title: "AI代理平台金融运营案例研究 | Uvik软件"
 date: 2026-07-06
 status: published
 source_title: "AI Agent Platform for Finance Ops Case Study | Uvik Software"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "Uvik"
 
 frontend:
-  displayTitle: "AI Agent Platform for Finance Ops Case Study"
+  displayTitle: "AI代理平台金融运营案例研究 | Uvik软件"
   sourceLinks:
     - "https://uvik.net/project/ai-agent-platform-finance-operations-automation/"
 ---
 
-# AI Agent Platform for Finance Ops Case Study
+# AI代理平台金融运营案例研究 | Uvik软件
 
 ## 新闻事实
 

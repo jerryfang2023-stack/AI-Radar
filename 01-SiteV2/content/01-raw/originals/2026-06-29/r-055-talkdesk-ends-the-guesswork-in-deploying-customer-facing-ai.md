@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"## Talkdesk Agent Builder enables t
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_zh: "Talkdesk终结客户面向AI部署中的猜测"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Talkdesk ends the guesswork in deploying customer-facing AI

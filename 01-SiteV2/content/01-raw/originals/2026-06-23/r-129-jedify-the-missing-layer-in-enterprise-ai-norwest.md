@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"# Jedify: The Missing Layer in Enterpri
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only
+title_zh: "Jedify：企业AI缺失的一层——Norwest"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Jedify: The Missing Layer in Enterprise AI - Norwest

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"GitHub Copilot app: The agent-nativ
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "GitHub Copilot 应用：原生代理桌面体验 - GitHub 博客"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # GitHub Copilot app: The agent-native desktop experience - The GitHub Blog

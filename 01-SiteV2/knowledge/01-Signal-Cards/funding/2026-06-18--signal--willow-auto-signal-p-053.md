@@ -2,7 +2,7 @@
 id: SIG-20260618-A02
 type: signal_card
 signal_type: funding
-title: "Willow 获得$7M 融资，押注销售线索和收入团队协作"
+title: "Willow 获 700 万美元融资，打造企业 AI 代理治理未来"
 date: 2026-06-18
 status: published
 source_title: "Willow Launches with $7M to Build the Future of Enterprise AI Agent Governance | Willow"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "Willow"
 
 frontend:
-  displayTitle: "Willow 获得$7M 融资，押注销售线索和收入团队协作"
+  displayTitle: "Willow 获 700 万美元融资，打造企业 AI 代理治理未来"
   sourceLinks:
     - "https://withwillow.ai/blog/willow-7m-seed-funding"
 ---
 
-# Willow 获得$7M 融资，押注销售线索和收入团队协作
+# Willow 获 700 万美元融资，打造企业 AI 代理治理未来
 
 ## 新闻事实
 

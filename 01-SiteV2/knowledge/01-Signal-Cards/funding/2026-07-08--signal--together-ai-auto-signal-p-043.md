@@ -2,7 +2,7 @@
 id: SIG-20260708-A12
 type: signal_card
 signal_type: funding
-title: "Together AI 获得 $800M 融资"
+title: "Neocloud Together AI融资8亿美元，估值跃升至83亿美元 | TechCrunch"
 date: 2026-07-08
 status: published
 source_title: "Neocloud Together AI raises $800M, leaps to $8.3B valuation | TechCrunch"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "Together AI"
 
 frontend:
-  displayTitle: "Together AI 获得 $800M 融资"
+  displayTitle: "Neocloud Together AI融资8亿美元，估值跃升至83亿美元 | TechCrunch"
   sourceLinks:
     - "https://techcrunch.com/2026/07/01/neocloud-together-ai-raises-800m-leaps-to-8-3b-valuation/"
 ---
 
-# Together AI 获得 $800M 融资
+# Neocloud Together AI融资8亿美元，估值跃升至83亿美元 | TechCrunch
 
 ## 新闻事实
 

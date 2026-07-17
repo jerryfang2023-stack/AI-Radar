@@ -2,7 +2,7 @@
 id: SIG-20260621-A15
 type: signal_card
 signal_type: case
-title: "Building the Easy Button for Generative AI"
+title: "打造生成式AI的“简易按钮” | Writer首席执行官May Habib"
 date: 2026-06-21
 status: published
 source_title: "Building the Easy Button for Generative AI | May Habib, CEO, Writer"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Writer"
 
 frontend:
-  displayTitle: "Building the Easy Button for Generative AI"
+  displayTitle: "打造生成式AI的“简易按钮” | Writer首席执行官May Habib"
   sourceLinks:
     - "https://podcasters.spotify.com/pod/show/firstmark/episodes/Building-the-Easy-Button-for-Generative-AI--May-Habib--CEO--Writer-e2r9qk6"
 ---
 
-# Building the Easy Button for Generative AI
+# 打造生成式AI的“简易按钮” | Writer首席执行官May Habib
 
 ## 新闻事实
 

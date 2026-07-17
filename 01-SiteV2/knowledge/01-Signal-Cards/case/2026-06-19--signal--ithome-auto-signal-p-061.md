@@ -2,7 +2,7 @@
 id: SIG-20260619-A21
 type: signal_card
 signal_type: case
-title: "AI 账单失控：AT&T、Meta 等巨头急刹车，从"疯狂消耗"到"严苛限制"
+title: "AI 账单失控：AT&T、Meta 等巨头急刹车，从\"疯狂消耗\"到\"严苛限制\""
 date: 2026-06-19
 status: published
 source_title: "AI 账单失控：AT&T、Meta 等巨头急刹车，从"疯狂消耗"到"严苛限制""
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "Ithome"
 
 frontend:
-  displayTitle: "AI 账单失控：AT&T、Meta 等巨头急刹车，从"疯狂消耗"到"严苛限制"
+  displayTitle: "AI 账单失控：AT&T、Meta 等巨头急刹车，从\"疯狂消耗\"到\"严苛限制\""
   sourceLinks:
     - "https://www.ithome.com/0/966/306.htm"
 ---
 
-# AI 账单失控：AT&T、Meta 等巨头急刹车，从"疯狂消耗"到"严苛限制
+# AI 账单失控：AT&T、Meta 等巨头急刹车，从"疯狂消耗"到"严苛限制"
 
 ## 新闻事实
 

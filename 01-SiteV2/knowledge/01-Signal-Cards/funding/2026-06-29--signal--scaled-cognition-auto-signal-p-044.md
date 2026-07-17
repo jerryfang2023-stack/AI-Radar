@@ -2,7 +2,7 @@
 id: SIG-20260629-A08
 type: signal_card
 signal_type: funding
-title: "Scaled Cognition 获得 Khosla 领投的 1 亿美元融资"
+title: "Scaled Cognition 获 Khosla 领投 1 亿美元融资"
 date: 2026-06-29
 status: published
 source_title: "Scaled Cognition raises $100M led by Khosla"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Scaled Cognition"
 
 frontend:
-  displayTitle: "Scaled Cognition 获得 Khosla 领投的 1 亿美元融资"
+  displayTitle: "Scaled Cognition 获 Khosla 领投 1 亿美元融资"
   sourceLinks:
     - "https://thenextweb.com/news/scaled-cognition-100m-khosla-reliable-ai"
 ---
 
-# Scaled Cognition 获得 Khosla 领投的 1 亿美元融资
+# Scaled Cognition 获 Khosla 领投 1 亿美元融资
 
 ## 新闻事实
 

@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-016
 title: "BidScript Secures $800K to Scale AI Platform Modernizing Public and Private Sector Tendering | FounderTrove"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "BidScript获80万美元融资，推动AI平台升级公共与私营部门招投标流程 | FounderTrove"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://foundertrove.com/bidscript-secures-800k-to-scale-ai-platform-modernizing-public-and-private-sector-tendering"
 canonical_url: "https://foundertrove.com/bidscript-secures-800k-to-scale-ai-platform-modernizing-public-and-private-sector-tendering"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-09T03:05:44.883Z
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # BidScript Secures $800K to Scale AI Platform Modernizing Public and Private Sector Tendering | FounderTrove

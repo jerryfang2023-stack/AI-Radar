@@ -72,6 +72,10 @@ key_excerpts: [{"type":"company_action","text":"We’re announcing AIEWF speaker
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "为什么视频代理模型是下一个方向——xAI Grok Imagine的Ethan He"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Why Video Agent models are next — Ethan He, xAI Grok Imagine

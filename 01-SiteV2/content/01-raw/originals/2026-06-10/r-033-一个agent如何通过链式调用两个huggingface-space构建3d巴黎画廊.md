@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"一个编码Agent调用HuggingFace上的
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "一个Agent如何通过链式调用两个HuggingFace Space构建3D巴黎画廊"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 一个Agent如何通过链式调用两个HuggingFace Space构建3D巴黎画廊

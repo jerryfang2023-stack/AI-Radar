@@ -2,7 +2,7 @@
 id: SIG-20260624-A13
 type: signal_card
 signal_type: case
-title: "Techcrunch 记录企业应用场景：地产开发和建筑设计流程"
+title: "企业AI将成为2026年VivaTech大会的核心焦点"
 date: 2026-06-24
 status: published
 source_title: "Why enterprise AI will be a major focus at VivaTech 2026"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Techcrunch"
 
 frontend:
-  displayTitle: "Techcrunch 记录企业应用场景：地产开发和建筑设计流程"
+  displayTitle: "企业AI将成为2026年VivaTech大会的核心焦点"
   sourceLinks:
     - "https://techcrunch.com/2026/06/10/why-enterprise-ai-will-be-a-major-focus-at-vivatech-2026/"
 ---
 
-# Techcrunch 记录企业应用场景：地产开发和建筑设计流程
+# 企业AI将成为2026年VivaTech大会的核心焦点
 
 ## 新闻事实
 

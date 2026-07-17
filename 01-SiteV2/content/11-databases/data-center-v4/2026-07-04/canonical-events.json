@@ -1,10 +1,11 @@
 [
   {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "",
     "disclosed_at": "2026-07-04T04:35:47.529Z",
     "entities": [
+      "EN-0cc3af265406c202",
       "EN-b0532e1af75cc4ab"
     ],
     "action": "Raises",
@@ -24,17 +25,19 @@
       "SA-4c7af008a157ae01"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-4c7af008a157ae01",
         "disclosed_at": "2026-07-04T04:35:47.529Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-a1552fec696f1a43",
-    "display_title_zh": "Rime 完成 3200 万美元 种子轮融资"
+    "event_id": "EV-f0fee44c1dfdcb09",
+    "display_title_zh": "Hang Ten Systems 获 3200 万美元融资，助力企业成功应用 AI"
   },
   {
     "event_type": "model_release",
@@ -42,7 +45,8 @@
     "event_time": "2026-07-03T22:20:26.000Z",
     "disclosed_at": "2026-07-03T22:20:26.000Z",
     "entities": [
-      "EN-c04bd5ebd10ab696"
+      "EN-c04bd5ebd10ab696",
+      "EN-0d4ab5f8db6e89bc"
     ],
     "action": "发布 Leanstral 1.5：专为 Lean 4 证明助手设计的代码智能体模型",
     "object": "Mistral AI 发布 Leanstral 1.5：专为 Lean 4 证明助手设计的代码智能体模型",
@@ -78,7 +82,11 @@
     "event_time": "",
     "disclosed_at": "2026-07-04T04:35:47.632Z",
     "entities": [
-      "EN-49f756463ad9dcfb"
+      "EN-49f756463ad9dcfb",
+      "EN-96eebba49dbbf422",
+      "EN-a9f74d68b2b7c964",
+      "EN-e8fc8b3e92a8dc5a",
+      "EN-098a7df7f42ccf8b"
     ],
     "action": "Launches",
     "object": "Autonomous Worker Agents for Software Delivery",
@@ -97,7 +105,9 @@
       "SA-c1f8723a192b7f19"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-c1f8723a192b7f19",
@@ -107,7 +117,86 @@
     ],
     "publication_status": "verified",
     "event_id": "EV-a70d5cf3ee6d6d64",
-    "display_title_zh": "Harness 发布 Autonomous Worker Agents for Software Delivery"
+    "display_title_zh": "Harness推出面向软件交付的自主工作代理"
+  },
+  {
+    "event_type": "product_release",
+    "event_status": "announced",
+    "event_time": "",
+    "disclosed_at": "2026-07-04T04:50:50.150Z",
+    "entities": [
+      "EN-9fbf261b62c1d7c0",
+      "EN-cbc62794911ff31b",
+      "EN-7d3194f79e645c42",
+      "EN-c70eca6b0f88f44d"
+    ],
+    "action": "launches",
+    "object": "its own AI deployment company with $2.5 billion commitment",
+    "metrics": [
+      "$2.5 billion",
+      "$1 billion"
+    ],
+    "locations": [],
+    "claim_refs": [
+      "CL-1b2414334803833d",
+      "CL-cabf0cb8c5164d3d",
+      "CL-c02cf65e57168c3f",
+      "CL-321bacffbd5b9093"
+    ],
+    "source_refs": [
+      "SA-526ea30d865f3f42"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "event_time"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-526ea30d865f3f42",
+        "disclosed_at": "2026-07-04T04:50:50.150Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-b93b5cc15823e9c3",
+    "display_title_zh": "微软以25亿美元承诺成立自家AI部署公司"
+  },
+  {
+    "event_type": "acquisition",
+    "event_status": "completed",
+    "event_time": "",
+    "disclosed_at": "2026-07-04T04:35:47.676Z",
+    "entities": [
+      "EN-8c7f410ade00f949"
+    ],
+    "action": "acquired",
+    "object": "by Grammarly https://techcrunch.com/2025/07/01/grammarly-acquires-ai-email-client-superhuman/), Loïc Houssier has lived the full arc from deep infra and complianc",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-207fbfd28b7dae9e",
+      "CL-c7dce5c2b08a322d",
+      "CL-68bd1d28b85d6816",
+      "CL-e4bb082fb14ba7bb"
+    ],
+    "source_refs": [
+      "SA-edacd4205f9bd222"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "event_time",
+      "display_title_zh"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-edacd4205f9bd222",
+        "disclosed_at": "2026-07-04T04:35:47.676Z",
+        "status": "completed"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-bd5fd963c3c71c29",
+    "display_title_zh": ""
   },
   {
     "event_type": "product_release",
@@ -125,15 +214,17 @@
     "locations": [],
     "claim_refs": [
       "CL-9054353c70406853",
+      "CL-eb590334d0cee5bc",
       "CL-50fc4c52f3afdb99",
-      "CL-24d1f83ef4f257cd",
-      "CL-6afebbbd18db945a"
+      "CL-24d1f83ef4f257cd"
     ],
     "source_refs": [
       "SA-24786c0e6151c2de"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-24786c0e6151c2de",
@@ -143,7 +234,82 @@
     ],
     "publication_status": "verified",
     "event_id": "EV-0370a17f0ef39c3e",
-    "display_title_zh": "Microsoft 发布 $2.5 billion &quot;Frontier Company&quot; to embed 6"
+    "display_title_zh": "微软推出25亿美元“前沿公司”，将6000名AI工程师嵌入企业客户内部"
+  },
+  {
+    "event_type": "product_release",
+    "event_status": "planned",
+    "event_time": "2026-07-03T19:24:40.000Z",
+    "disclosed_at": "2026-07-03T19:24:40.000Z",
+    "entities": [
+      "EN-9fbf261b62c1d7c0",
+      "EN-0a1750ec669a270c",
+      "EN-96eebba49dbbf422",
+      "EN-c70eca6b0f88f44d",
+      "EN-7d3194f79e645c42",
+      "EN-c141d2237427f30d"
+    ],
+    "action": "发布",
+    "object": "改版Copilot，合并消费者与企业应用并推出AutoPilot智能体",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-f4fdde2db1597bc8",
+      "CL-c5f7806522082a1c",
+      "CL-5f453decd0023a66"
+    ],
+    "source_refs": [
+      "SA-30454b249b349f51"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-30454b249b349f51",
+        "disclosed_at": "2026-07-03T19:24:40.000Z",
+        "status": "planned"
+      }
+    ],
+    "publication_status": "partial",
+    "event_id": "EV-578a9db1fe952d0a",
+    "display_title_zh": "微软八月将发布改版Copilot，合并消费者与企业应用并推出AutoPilot智能体"
+  },
+  {
+    "event_type": "product_release",
+    "event_status": "announced",
+    "event_time": "2026-07-03T23:57:11.000Z",
+    "disclosed_at": "2026-07-03T23:57:11.000Z",
+    "entities": [
+      "EN-c70eca6b0f88f44d",
+      "EN-3a13916345b60fad"
+    ],
+    "action": "product_release",
+    "object": "网友反馈 Claude Fable 5 重上架版\"降智\"，严苛 AI 护栏致频繁回退 Opus 4.8",
+    "metrics": [
+      "50%"
+    ],
+    "locations": [],
+    "claim_refs": [
+      "CL-c6b452ab6a7b8c00",
+      "CL-96212a77c4196fb9",
+      "CL-d4caf6e3c11a2875",
+      "CL-0ce4965a43ece2d4"
+    ],
+    "source_refs": [
+      "SA-2d56119bf44508c8"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-2d56119bf44508c8",
+        "disclosed_at": "2026-07-03T23:57:11.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-8b5801b69eb1781b",
+    "display_title_zh": "网友反馈 Claude Fable 5 重上架版\"降智\"，严苛 AI 护栏致频繁回退 Opus 4.8"
   },
   {
     "event_type": "funding",
@@ -151,7 +317,8 @@
     "event_time": "2026-07-03T08:53:16.000Z",
     "disclosed_at": "2026-07-03T08:53:16.000Z",
     "entities": [
-      "EN-f6d1a1492613d460"
+      "EN-f6d1a1492613d460",
+      "EN-9c8ae69b84f21a2e"
     ],
     "action": "融资",
     "object": "20亿美元，准备赴港IPO",
@@ -159,12 +326,15 @@
       "$2 billion",
       "13.82 billion",
       "$2.04 billion",
-      "$18 billion"
+      "$18 billion",
+      "$3 billion"
     ],
     "locations": [],
     "claim_refs": [
       "CL-f20e817a6fbfb9ba",
-      "CL-128fef58c65d33df"
+      "CL-128fef58c65d33df",
+      "CL-cec42c78f574f888",
+      "CL-92ca1ae0de8ce735"
     ],
     "source_refs": [
       "SA-9466a26822afc609"
@@ -188,6 +358,7 @@
     "event_time": "2026-07-03T13:51:20.000Z",
     "disclosed_at": "2026-07-03T13:51:20.000Z",
     "entities": [
+      "EN-ad1b7e4bc3a5c870",
       "EN-7d3194f79e645c42",
       "EN-8f71c4871a160172",
       "EN-c70eca6b0f88f44d",
@@ -200,7 +371,9 @@
     "locations": [],
     "claim_refs": [
       "CL-4985308fe7b9edfe",
-      "CL-19830c0ef45285be"
+      "CL-19830c0ef45285be",
+      "CL-2b3b2be53b0595b4",
+      "CL-6604ce518abec179"
     ],
     "source_refs": [
       "SA-19d4ce2e9fc6d98b"
@@ -215,7 +388,7 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-9fac0983ab657689",
+    "event_id": "EV-77662aa9bef9efbe",
     "display_title_zh": "桥水基金联合研究：前沿AI模型金融判断准确率仅50-70%，微调开源模型达84.7%"
   },
   {
@@ -224,7 +397,9 @@
     "event_time": "2026-07-03T05:21:52.000Z",
     "disclosed_at": "2026-07-03T05:21:52.000Z",
     "entities": [
-      "EN-8d4321d936320802"
+      "EN-60094bcf5292c490",
+      "EN-8d4321d936320802",
+      "EN-3ae50afab3e392b8"
     ],
     "action": "开源 Nemotron-Labs-TwoTower 双塔扩散语言模型",
     "object": "英伟达开源 Nemotron-Labs-TwoTower 双塔扩散语言模型",
@@ -232,8 +407,9 @@
     "locations": [],
     "claim_refs": [
       "CL-e97a7a589b9980c1",
-      "CL-6baa9897903cc3dc",
-      "CL-449635d474ab1f3a"
+      "CL-0bbdad6779952a81",
+      "CL-be203ee2e7fb516b",
+      "CL-6baa9897903cc3dc"
     ],
     "source_refs": [
       "SA-7d7d63f2484913f7"
@@ -250,8 +426,161 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-3028dfadf94c8f4c",
+    "event_id": "EV-bd66e5b45a6a577e",
     "display_title_zh": "英伟达开源 Nemotron-Labs-TwoTower 双塔扩散语言模型"
+  },
+  {
+    "event_type": "product_release",
+    "event_status": "announced",
+    "event_time": "2026-07-03T04:48:11.000Z",
+    "disclosed_at": "2026-07-03T04:48:11.000Z",
+    "entities": [
+      "EN-ea3bd73e2b506e00",
+      "EN-c70eca6b0f88f44d",
+      "EN-7d3194f79e645c42"
+    ],
+    "action": "product_release",
+    "object": "汪滔：Meta 下一代 AI 模型\"西瓜\"已追上 GPT-5.5",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-e1ef06dade7be920",
+      "CL-7d2c87f196a672db",
+      "CL-5ff26cfd60e8a5e3",
+      "CL-8826af3dabfdd756"
+    ],
+    "source_refs": [
+      "SA-246354c753054733"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-246354c753054733",
+        "disclosed_at": "2026-07-03T04:48:11.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-20ffa968bcbc4729",
+    "display_title_zh": "汪滔：Meta 下一代 AI 模型\"西瓜\"已追上 GPT-5.5"
+  },
+  {
+    "event_type": "product_release",
+    "event_status": "announced",
+    "event_time": "2026-07-03T04:09:45.000Z",
+    "disclosed_at": "2026-07-03T04:09:45.000Z",
+    "entities": [
+      "EN-c70eca6b0f88f44d",
+      "EN-3a13916345b60fad"
+    ],
+    "action": "product_release",
+    "object": "Anthropic 收紧 Claude Fable 5 最强模型，7 月 7 日从订阅中移除改为 AI 用量计费",
+    "metrics": [],
+    "locations": [
+      "美国"
+    ],
+    "claim_refs": [
+      "CL-232fe29cfa1f1638",
+      "CL-c2f80a136c503e9b",
+      "CL-abcfff874d9141a5",
+      "CL-18954b77fd39ca67"
+    ],
+    "source_refs": [
+      "SA-c023caafc814d4ca"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-c023caafc814d4ca",
+        "disclosed_at": "2026-07-03T04:09:45.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-bf6f67c47c6b0d7c",
+    "display_title_zh": "Anthropic 收紧 Claude Fable 5 最强模型，7 月 7 日从订阅中移除改为 AI 用量计费"
+  },
+  {
+    "event_type": "product_release",
+    "event_status": "announced",
+    "event_time": "",
+    "disclosed_at": "2026-07-04T04:35:47.915Z",
+    "entities": [
+      "EN-8d4321d936320802",
+      "EN-2f354de778e6a6da",
+      "EN-936f01f91fdadf69"
+    ],
+    "action": "Releases",
+    "object": "New AI Models and Developer Tools to Advance Autonomous Vehicle Ecosystem",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-ead11e489b74d617",
+      "CL-7a2cf3057497c5f0",
+      "CL-6e49ac10053e7c69",
+      "CL-aa0756db01b89b6c"
+    ],
+    "source_refs": [
+      "SA-c43517546564505d"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "event_time"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-c43517546564505d",
+        "disclosed_at": "2026-07-04T04:35:47.915Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-6a2f3e9a22edff64",
+    "display_title_zh": "NVIDIA 发布新 AI 模型与开发者工具，推动自动驾驶生态系统发展"
+  },
+  {
+    "event_type": "procurement_contract",
+    "event_status": "announced",
+    "event_time": "",
+    "disclosed_at": "2026-07-04T04:35:47.925Z",
+    "entities": [
+      "EN-8147e6fed86d42c1"
+    ],
+    "action": "tender",
+    "object": "offer at $8.5B valuation",
+    "metrics": [
+      "$85M",
+      "$8.5B",
+      "$85 million",
+      "$8.5 billion",
+      "$1.05 billion"
+    ],
+    "locations": [],
+    "claim_refs": [
+      "CL-9c76a8449b009ce7",
+      "CL-3c58e463e410a299",
+      "CL-5384370b5378c4e7",
+      "CL-1ba8ae1042abc1df"
+    ],
+    "source_refs": [
+      "SA-d49b0b6529e2ac33"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "event_time"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-d49b0b6529e2ac33",
+        "disclosed_at": "2026-07-04T04:35:47.925Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-0592458e094f26cc",
+    "display_title_zh": "Wayve 启动 8500 万美元员工要约收购，估值达 85 亿美元"
   },
   {
     "event_type": "product_release",
@@ -259,6 +588,7 @@
     "event_time": "2026-07-03T07:10:21.000Z",
     "disclosed_at": "2026-07-03T07:10:21.000Z",
     "entities": [
+      "EN-0efc7ad87e828dc8",
       "EN-8f71c4871a160172"
     ],
     "action": "开源电子书管理工具",
@@ -268,8 +598,7 @@
     "claim_refs": [
       "CL-339a19453c9812e7",
       "CL-73f5e6263d67632b",
-      "CL-19e51ea8947bc6c1",
-      "CL-84f992ca3ab26171"
+      "CL-19e51ea8947bc6c1"
     ],
     "source_refs": [
       "SA-fb540989ccc6a6c0"
@@ -284,7 +613,7 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-c6a50c6abc37378d",
+    "event_id": "EV-38e1fc190aeb0f75",
     "display_title_zh": "开源电子书管理工具 Calibre 9.11 发布：支持 HTML 格式导出注释"
   },
   {
@@ -294,7 +623,8 @@
     "disclosed_at": "2026-07-03T13:01:08.000Z",
     "entities": [
       "EN-6f7ac1823da81d2e",
-      "EN-9c8ae69b84f21a2e"
+      "EN-9c8ae69b84f21a2e",
+      "EN-9fd74b87b71e744a"
     ],
     "action": "定价",
     "object": "DeepSeek-V4 原厂直供模型 7 月中旬登陆腾讯云，同步引入峰谷定价",
@@ -330,7 +660,9 @@
     "event_time": "2026-07-03T06:32:43.000Z",
     "disclosed_at": "2026-07-03T06:32:43.000Z",
     "entities": [
-      "EN-8d4321d936320802"
+      "EN-1da46c494dfdd8d3",
+      "EN-8d4321d936320802",
+      "EN-e3a80a99bb5fa250"
     ],
     "action": "推出",
     "object": "强固型边缘 AI 平台 FPC-9309W-G5，支持 RTX 5090 显卡",
@@ -355,7 +687,7 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-412a140df8d75c45",
+    "event_id": "EV-587c18cb1837c74f",
     "display_title_zh": "磐仪推出强固型边缘 AI 平台 FPC-9309W-G5，支持 RTX 5090 显卡"
   },
   {
@@ -399,7 +731,9 @@
     "event_time": "2026-07-03T03:27:15.000Z",
     "disclosed_at": "2026-07-03T03:27:15.000Z",
     "entities": [
-      "EN-047364b9be67f665"
+      "EN-42f0b44cc91cc5e0",
+      "EN-047364b9be67f665",
+      "EN-94caa859c22071b1"
     ],
     "action": "发布",
     "object": "超导材料发现AI智能体Elements Claw",
@@ -410,7 +744,9 @@
       "中国"
     ],
     "claim_refs": [
-      "CL-64369a09ca7e9385"
+      "CL-64369a09ca7e9385",
+      "CL-dce7f3ddb3fd068e",
+      "CL-ae24dc6d66a8f1d1"
     ],
     "source_refs": [
       "SA-ea7f110e9de336cd"
@@ -425,7 +761,7 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-7a1cedd0530529a0",
+    "event_id": "EV-c7f274c3aadece12",
     "display_title_zh": "阿里达摩院发布超导材料发现AI智能体Elements Claw"
   },
   {
@@ -434,7 +770,9 @@
     "event_time": "",
     "disclosed_at": "2026-07-04T04:50:50.417Z",
     "entities": [
+      "EN-72e28a6aa6b39c76",
       "EN-ea3bd73e2b506e00",
+      "EN-96eebba49dbbf422",
       "EN-bbdefa2950f49882"
     ],
     "action": "launches",
@@ -451,7 +789,9 @@
       "SA-e8300099b26c9060"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-e8300099b26c9060",
@@ -460,8 +800,8 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-04873bbc8be8e70d",
-    "display_title_zh": "Meta 发布 vibe"
+    "event_id": "EV-0edb0a592ca1fd67",
+    "display_title_zh": "Meta悄然推出“氛围编程”游戏应用Pocket"
   },
   {
     "event_type": "service_change",
@@ -498,6 +838,42 @@
     "display_title_zh": "豆包智能体功能将于7月15日下线，官方建议提前完成备份"
   },
   {
+    "event_type": "policy_regulation",
+    "event_status": "announced",
+    "event_time": "",
+    "disclosed_at": "2026-07-04T04:50:50.564Z",
+    "entities": [
+      "EN-5504f88c63fe766d"
+    ],
+    "action": "Policy",
+    "object": "for Securing AI Agents",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-b497ca086c67c450",
+      "CL-eafac5981df64272",
+      "CL-9edda0688f31f815",
+      "CL-dce5de7fbce721ef"
+    ],
+    "source_refs": [
+      "SA-c400290e5fe0c888"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "event_time"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-c400290e5fe0c888",
+        "disclosed_at": "2026-07-04T04:50:50.564Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-9c41acd6ef6df77f",
+    "display_title_zh": "确保AI智能体安全的多层策略"
+  },
+  {
     "event_type": "funding",
     "event_status": "announced",
     "event_time": "",
@@ -518,7 +894,8 @@
     ],
     "conflicts": [],
     "missing_fields": [
-      "entities"
+      "entities",
+      "event_time"
     ],
     "update_history": [
       {
@@ -529,7 +906,46 @@
     ],
     "publication_status": "partial",
     "event_id": "EV-89351585b44f8e9c",
-    "display_title_zh": "Convey Gets $38M 完成 3800 万美元 A 轮融资"
+    "display_title_zh": "Convey获3800万美元A轮融资，用于扩展AI队友平台"
+  },
+  {
+    "event_type": "deployment",
+    "event_status": "announced",
+    "event_time": "",
+    "disclosed_at": "2026-07-04T04:50:50.762Z",
+    "entities": [
+      "EN-d209546db19d96af",
+      "EN-7d3194f79e645c42",
+      "EN-8d4321d936320802"
+    ],
+    "action": "Goes Live",
+    "object": "Isambard-AI, the UK’s Most Powerful AI Supercomputer, Goes Live",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-810c3aeb1717ea07",
+      "CL-3b0bdd8b6e727f3d",
+      "CL-02aa3bc24e16cb3e",
+      "CL-ed6ed836cddf3eef"
+    ],
+    "source_refs": [
+      "SA-7aaf47f57230dc6f"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "object",
+      "event_time"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-7aaf47f57230dc6f",
+        "disclosed_at": "2026-07-04T04:50:50.762Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-36d484148fbd3424",
+    "display_title_zh": "英国最强AI超级计算机Isambard-AI正式上线"
   },
   {
     "event_type": "product_release",
@@ -539,7 +955,9 @@
     "entities": [
       "EN-c70eca6b0f88f44d",
       "EN-7d3194f79e645c42",
-      "EN-bbdefa2950f49882"
+      "EN-bbdefa2950f49882",
+      "EN-5a4c2be958c0af72",
+      "EN-a18162bf7228289d"
     ],
     "action": "launches",
     "object": "Cowork, a Claude Desktop agent that works in your files — no coding required",
@@ -552,7 +970,9 @@
       "SA-cc58c7b3419a9f7a"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-cc58c7b3419a9f7a",
@@ -562,7 +982,7 @@
     ],
     "publication_status": "partial",
     "event_id": "EV-2059f42c7b2aff44",
-    "display_title_zh": "Anthropic 发布 Cowork"
+    "display_title_zh": "Anthropic推出Cowork，一款无需编程即可在文件中工作的Claude Desktop代理"
   },
   {
     "event_type": "model_release",
@@ -570,8 +990,12 @@
     "event_time": "",
     "disclosed_at": "2026-07-04T04:35:48.301Z",
     "entities": [
+      "EN-96eebba49dbbf422",
       "EN-c70eca6b0f88f44d",
-      "EN-8d4321d936320802"
+      "EN-8d4321d936320802",
+      "EN-cb4754c48f8023d0",
+      "EN-761c4b9294ee43a7",
+      "EN-3969dd578ebf6c65"
     ],
     "action": "open-source coding model",
     "object": "landing right in the Claude Code moment",
@@ -584,7 +1008,9 @@
       "SA-fabe84bd58602fd5"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-fabe84bd58602fd5",
@@ -593,47 +1019,83 @@
       }
     ],
     "publication_status": "partial",
-    "event_id": "EV-6f696e408bf0016f",
-    "display_title_zh": "Anthropic 发布 landing right in the Claude Code moment"
+    "event_id": "EV-f784003febc1d9eb",
+    "display_title_zh": "Nous Research发布NousCoder-14B开源编程模型，恰逢Claude Code时刻"
   },
   {
-    "event_type": "policy_regulation",
+    "event_type": "product_release",
     "event_status": "announced",
-    "event_time": "2026-07-03T17:11:33.000Z",
-    "disclosed_at": "2026-07-03T17:11:33.000Z",
+    "event_time": "2026-07-03T05:43:53.000Z",
+    "disclosed_at": "2026-07-03T05:43:53.000Z",
     "entities": [
-      "EN-c70eca6b0f88f44d",
-      "EN-5388bc10736a0eff",
-      "EN-047364b9be67f665"
+      "EN-32e83e92d45d71f6",
+      "EN-c70eca6b0f88f44d"
     ],
-    "action": "禁令",
-    "object": "Claude Code 的中国问题：太平洋两岸的禁令",
-    "metrics": [],
-    "locations": [
-      "China"
+    "action": "product_release",
+    "object": "AI 交互革命：Claude Code 系统提示词精简 80%，示例约束反而遏制表现",
+    "metrics": [
+      "80%"
     ],
+    "locations": [],
     "claim_refs": [
-      "CL-d62b373896a8e05b",
-      "CL-ee19fbedd9251476",
-      "CL-af2ee581cc459fae",
-      "CL-f4981cbe0b8c9d5c"
+      "CL-a5dfd6ae744288b0",
+      "CL-38bf355ed1c4c354",
+      "CL-fb8cedb7443d76bf",
+      "CL-4bfd38483c946266"
     ],
     "source_refs": [
-      "SA-155a43ce671e87f7"
+      "SA-d23b5a4c0de7e988"
     ],
     "conflicts": [],
-    "missing_fields": [
-      "object"
-    ],
+    "missing_fields": [],
     "update_history": [
       {
-        "source_ref": "SA-155a43ce671e87f7",
-        "disclosed_at": "2026-07-03T17:11:33.000Z",
+        "source_ref": "SA-d23b5a4c0de7e988",
+        "disclosed_at": "2026-07-03T05:43:53.000Z",
         "status": "announced"
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-aef95763358b4ec8",
-    "display_title_zh": "Claude Code 的中国问题：太平洋两岸的禁令"
+    "event_id": "EV-8f0c63ed7bb153dc",
+    "display_title_zh": "AI 交互革命：Claude Code 系统提示词精简 80%，示例约束反而遏制表现"
+  },
+  {
+    "event_type": "product_release",
+    "event_status": "announced",
+    "event_time": "2026-07-03T06:06:28.000Z",
+    "disclosed_at": "2026-07-03T06:06:28.000Z",
+    "entities": [
+      "EN-c70eca6b0f88f44d",
+      "EN-c857d09db23e6822",
+      "EN-9f15bb7e29e191eb"
+    ],
+    "action": "product_release",
+    "object": "Claude Fable 5 在 RLI 基准测试中达成 16.1% 自动化率，刷新纪录",
+    "metrics": [
+      "2.5%",
+      "16.1%"
+    ],
+    "locations": [],
+    "claim_refs": [
+      "CL-af2b034f0eb6aa26",
+      "CL-308882ef1d436dbd",
+      "CL-67ab3b5eb0dac08c",
+      "CL-d88322cbdb52c4eb"
+    ],
+    "source_refs": [
+      "SA-96cf95551f37ccd7"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-96cf95551f37ccd7",
+        "disclosed_at": "2026-07-03T06:06:28.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-9c0552732b34f278",
+    "display_title_zh": "Claude Fable 5 在 RLI 基准测试中达成 16.1% 自动化率，刷新纪录"
   }
 ]

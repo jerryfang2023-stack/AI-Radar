@@ -2,7 +2,7 @@
 id: SIG-20260521-03
 type: signal_card
 signal_type: case
-title: "LTM 在 HR 和销售组织部署 Copilot Agents"
+title: "LTM借助AI驱动Copilot代理变革人力资源与销售组织"
 date: 2026-05-21
 status: draft
 asset_level: candidate
@@ -37,7 +37,7 @@ signal_owner: "LTM / Microsoft"
 watch_reason: "继续看 LTM 是否披露使用规模、节省时间或销售流程改进数据。"
 
 frontend:
-  displayTitle: "LTM 在 HR 和销售组织部署 Copilot Agents"
+  displayTitle: "LTM借助AI驱动Copilot代理变革人力资源与销售组织"
   eventLine: "Microsoft 案例显示，LTM 将 Copilot Agents 用于 HR 和销售组织流程。"
   whyWatch: "这是企业内部职能部门使用智能体的案例，重点不在模型，而在岗位流程。"
   businessMeaning: "影响的是 HR 服务、销售跟进、员工支持和管理者对流程结果的复核。"
@@ -71,7 +71,7 @@ opportunity_signals:
   missing_fields: ["delivery_model"]
 ---
 
-# LTM 在 HR 和销售组织部署 Copilot Agents
+# LTM借助AI驱动Copilot代理变革人力资源与销售组织
 
 ## 信号底稿
 

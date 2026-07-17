@@ -1,0 +1,290 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 818,
+    "quarantinedEventCount": 58
+  },
+  "entity": {
+    "id": "EN-5e1fcba4c9f1cf69",
+    "name": "Decart",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-3f8ba5855b64dd1a"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-industry-retail_ecommerce",
+      "TX-technology-embodied_ai",
+      "TX-use_case-robotics_automation"
+    ],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-06-10",
+    "lastSeen": "2026-06-11",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-3f8ba5855b64dd1a"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-3f8ba5855b64dd1a",
+        "dataDate": "2026-06-11",
+        "date": "2026-06-10",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "Decart 发布 Oasis 3：实时世界模型可模拟数小时逼真驾驶场景",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "id": "robotics_automation",
+            "dimensionName": "应用场景",
+            "name": "机器人与物理自动化"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "embodied_ai",
+            "name": "具身智能"
+          },
+          {
+            "dimensionId": "target_user",
+            "id": "developer",
+            "dimensionName": "目标用户",
+            "name": "开发者"
+          },
+          {
+            "dimensionId": "industry",
+            "id": "retail_ecommerce",
+            "dimensionName": "行业",
+            "name": "零售与电商"
+          }
+        ],
+        "entityIds": [
+          "EN-5e1fcba4c9f1cf69",
+          "EN-7d3194f79e645c42",
+          "EN-94ff75465b1afa65"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-industry-retail_ecommerce",
+      "name": "零售与电商",
+      "nodeType": "industry",
+      "typeLabel": "行业",
+      "valueId": "retail_ecommerce",
+      "eventIds": [
+        "EV-e7dcecaed5a0ee5b",
+        "EV-8b0f056571d68269",
+        "EV-434dcf1813a84ead",
+        "EV-a3b006906f6d46a0",
+        "EV-046caa2b3d6fbdde",
+        "EV-02686922dd82c4aa",
+        "EV-99a0cb6bac516bdd",
+        "EV-2ffc3377977da114",
+        "EV-d12aa40eff40c97e",
+        "EV-89b644ff05e6b93b",
+        "EV-c7404765df94a3b4",
+        "EV-3f8ba5855b64dd1a",
+        "EV-52e1ac21c25a0a09",
+        "EV-6ce6b9c9780b97d9",
+        "EV-dd62847548bb6ae3"
+      ],
+      "entityIds": [
+        "EN-f346eaca864441f9",
+        "EN-96eebba49dbbf422",
+        "EN-c70eca6b0f88f44d",
+        "EN-b0532e1af75cc4ab",
+        "EN-e5cc9e38970eacb5",
+        "EN-cbc62794911ff31b",
+        "EN-6f21a653c48f4f19",
+        "EN-4dbe391b8fcf977a",
+        "EN-c5947269de664c47",
+        "EN-88e2cce43eeadb36",
+        "EN-276a8bc458036a1a",
+        "EN-5239a379b6326549",
+        "EN-8147e6fed86d42c1",
+        "EN-e274048227f164dc",
+        "EN-1bf93b12e68cac56",
+        "EN-d9b1d7819af92e77",
+        "EN-bbdefa2950f49882",
+        "EN-242e21e3dc6869a9",
+        "EN-ffc6caa049c23d48",
+        "EN-151013fb8438c046",
+        "EN-01f1074bb52ff605",
+        "EN-5388bc10736a0eff",
+        "EN-43a340bb75b45f02",
+        "EN-5e1fcba4c9f1cf69",
+        "EN-7d3194f79e645c42",
+        "EN-94ff75465b1afa65",
+        "EN-3a7bd3e2360a3d29",
+        "EN-40e307d789f77264",
+        "EN-1924fff8eb4d54ae",
+        "EN-61cce404a45c3545",
+        "EN-2a920347dfcf07a7",
+        "EN-9fbf261b62c1d7c0",
+        "EN-23b979df49741c93",
+        "EN-02072c80a8386e8d",
+        "EN-2eb073b22916de55",
+        "EN-4a639cb888a15d75",
+        "EN-56ee86045cfb0ddd",
+        "EN-9dde0c2d375060f6"
+      ],
+      "fdeIds": [
+        "FDE-62f660a9a90bc3f6",
+        "FDE-309bc49d109029a3"
+      ],
+      "hardwareIds": [],
+      "firstSeen": "2026-01-20",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "TX-technology-embodied_ai",
+      "name": "具身智能",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "embodied_ai",
+      "eventIds": [
+        "EV-43b56d49df9a73a2",
+        "EV-cafe435ddd007821",
+        "EV-234ad54940674bf6",
+        "EV-6415a58637893b34",
+        "EV-4faa2bcf2e42e60c",
+        "EV-6b51b1b6fe22c540",
+        "EV-d633676a4a7d89a3",
+        "EV-6a2f3e9a22edff64",
+        "EV-49751dfc7d2f6d6c",
+        "EV-e2d4132c671e3d41",
+        "EV-3f8ba5855b64dd1a"
+      ],
+      "entityIds": [
+        "EN-bbdefa2950f49882",
+        "EN-59ae856cd788d0f5",
+        "EN-8d4321d936320802",
+        "EN-0f3360879e746531",
+        "EN-e3b1bf3dab957ffe",
+        "EN-9700d41909cf810f",
+        "EN-c70eca6b0f88f44d",
+        "EN-1f1cfc1d441be41f",
+        "EN-60094bcf5292c490",
+        "EN-aa75c47729b4a292",
+        "EN-8147e6fed86d42c1",
+        "EN-96eebba49dbbf422",
+        "EN-754c490bd199c21a",
+        "EN-7a3ecc54829211df",
+        "EN-2f354de778e6a6da",
+        "EN-936f01f91fdadf69",
+        "EN-30081094f2a8c83d",
+        "EN-d558e1de958b9d05",
+        "EN-89e3f0711b76932c",
+        "EN-e9830c30bc572802",
+        "EN-5e1fcba4c9f1cf69",
+        "EN-7d3194f79e645c42",
+        "EN-94ff75465b1afa65"
+      ],
+      "fdeIds": [
+        "FDE-dadf0e9572889d3d",
+        "FDE-a85c538af1b093ed"
+      ],
+      "hardwareIds": [
+        "HW-ceb55d9bc637c1d3",
+        "HW-dca442211b264bbe",
+        "HW-1450585d9cd5879f"
+      ],
+      "firstSeen": "2026-06-02",
+      "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "TX-use_case-robotics_automation",
+      "name": "机器人与物理自动化",
+      "nodeType": "use_case",
+      "typeLabel": "应用场景",
+      "valueId": "robotics_automation",
+      "eventIds": [
+        "EV-434dcf1813a84ead",
+        "EV-f059fd80d668c6bc",
+        "EV-234ad54940674bf6",
+        "EV-39848cdd62c00e59",
+        "EV-4faa2bcf2e42e60c",
+        "EV-6b51b1b6fe22c540",
+        "EV-3353bd96728c99e2",
+        "EV-57565fc2e7502c59",
+        "EV-49751dfc7d2f6d6c",
+        "EV-69fbe85ca4ac81cd",
+        "EV-e1a7e7dcb19bfc70",
+        "EV-c834a9d33a86373c",
+        "EV-3f8ba5855b64dd1a",
+        "EV-7da59380bb30e76a",
+        "EV-67f32771d69084d6",
+        "EV-df3f5cf6bc985a9c",
+        "EV-ad64347138da72bb"
+      ],
+      "entityIds": [
+        "EN-6f21a653c48f4f19",
+        "EN-4dbe391b8fcf977a",
+        "EN-8d4321d936320802",
+        "EN-72138e570e5103e2",
+        "EN-60094bcf5292c490",
+        "EN-aa75c47729b4a292",
+        "EN-8147e6fed86d42c1",
+        "EN-96eebba49dbbf422",
+        "EN-e3b1bf3dab957ffe",
+        "EN-0f3360879e746531",
+        "EN-522d3edeb64a7ca4",
+        "EN-c608c4787821de1b",
+        "EN-101a515191c6be9e",
+        "EN-8afd897b5b887b06",
+        "EN-4d8ee3ec190ebf35",
+        "EN-30081094f2a8c83d",
+        "EN-d558e1de958b9d05",
+        "EN-4e7e886400fe6a83",
+        "EN-75fe8aaf5a7e3a7e",
+        "EN-6fcba5d96a4fadfd",
+        "EN-7d5f17368c04f04c",
+        "EN-0d049cd1e9f619f9",
+        "EN-5e1fcba4c9f1cf69",
+        "EN-7d3194f79e645c42",
+        "EN-94ff75465b1afa65",
+        "EN-42375a8003f17c95",
+        "EN-171fa23d27b5894b",
+        "EN-80ea42a231357d12"
+      ],
+      "fdeIds": [
+        "FDE-dadf0e9572889d3d"
+      ],
+      "hardwareIds": [
+        "HW-dca442211b264bbe"
+      ],
+      "firstSeen": "2026-05-24",
+      "lastSeen": "2026-07-17"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}

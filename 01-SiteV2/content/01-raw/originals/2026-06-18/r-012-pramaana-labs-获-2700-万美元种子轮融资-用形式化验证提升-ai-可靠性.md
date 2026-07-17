@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Pramaana Labs 宣布获得 2700 万美�
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "Pramaana Labs 获 2700 万美元种子轮融资，用形式化验证提升 AI 可靠性"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Pramaana Labs 获 2700 万美元种子轮融资，用形式化验证提升 AI 可靠性

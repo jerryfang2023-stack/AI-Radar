@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-056
 title: "特斯拉 FSD v14 Lite 首次走出美国，韩国率先获得更新"
 title_zh: "特斯拉 FSD v14 Lite 首次走出美国，韩国率先获得更新"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/975/655.htm"
 canonical_url: "https://ithome.com/0/975/655.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-12T09:55:36.268Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 特斯拉 FSD v14 Lite 首次走出美国，韩国率先获得更新

@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-085
 title: "ChatGPT 重返欧洲 WhatsApp，欧盟强制 Meta 开放平台"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "ChatGPT 重返欧洲 WhatsApp，欧盟强制 Meta 开放平台"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://the-decoder.com/chatgpt-returns-to-whatsapp-in-europe-after-eu-forces-meta-to-open-the-door-to-rival-ai-bots"
 canonical_url: "https://the-decoder.com/chatgpt-returns-to-whatsapp-in-europe-after-eu-forces-meta-to-open-the-door-to-rival-ai-bots"
 source_name: "The Decoder：AI News（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-15T04:28:38.070Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # ChatGPT 重返欧洲 WhatsApp，欧盟强制 Meta 开放平台

@@ -2,7 +2,7 @@
 id: SIG-20260606-A02
 type: signal_card
 signal_type: case
-title: "Lio (formerly askLio): The World's First Multi-Agent System for Procurement | Y Combinator"
+title: "Lio（原名askLio）：全球首个面向采购的多智能体系统 | Y Combinator"
 date: 2026-06-06
 status: published
 source_title: "Lio (formerly askLio): The World's First Multi-Agent System for Procurement | Y Combinator"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Lio (formerly askLio)"
 
 frontend:
-  displayTitle: "Lio (formerly askLio): The World's First Multi-Agent System for Procurement | Y Combinator"
+  displayTitle: "Lio（原名askLio）：全球首个面向采购的多智能体系统 | Y Combinator"
   sourceLinks:
     - "https://www.ycombinator.com/companies/lio"
 ---
 
-# Lio (formerly askLio): The World's First Multi-Agent System for Procurement | Y Combinator
+# Lio（原名askLio）：全球首个面向采购的多智能体系统 | Y Combinator
 
 ## 新闻事实
 

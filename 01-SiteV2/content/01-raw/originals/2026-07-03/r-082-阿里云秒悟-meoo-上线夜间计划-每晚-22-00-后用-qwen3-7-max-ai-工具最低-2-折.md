@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-082
 title: "阿里云秒悟 Meoo 上线夜间计划，每晚 22：00 后用 Qwen3.7-Max AI 工具最低 2 折"
 title_zh: "阿里云秒悟 Meoo 上线夜间计划，每晚 22：00 后用 Qwen3.7-Max AI 工具最低 2 折"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/971/565.htm"
 canonical_url: "https://ithome.com/0/971/565.htm"
 source_name: "IT之家（RSS）"
@@ -78,6 +78,7 @@ fact_extraction_completed_at: 2026-07-03T01:59:31.546Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 阿里云秒悟 Meoo 上线夜间计划，每晚 22：00 后用 Qwen3.7-Max AI 工具最低 2 折

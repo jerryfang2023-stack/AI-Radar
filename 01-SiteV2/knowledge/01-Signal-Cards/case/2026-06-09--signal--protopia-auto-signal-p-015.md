@@ -2,7 +2,7 @@
 id: SIG-20260609-A10
 type: signal_card
 signal_type: case
-title: "Protopia AI Now Available on AWS Marketplace"
+title: "Protopia AI 现已登陆 AWS Marketplace"
 date: 2026-06-09
 status: published
 source_title: "Protopia AI Now Available on AWS Marketplace"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Protopia"
 
 frontend:
-  displayTitle: "Protopia AI Now Available on AWS Marketplace"
+  displayTitle: "Protopia AI 现已登陆 AWS Marketplace"
   sourceLinks:
     - "https://protopia.ai/protopia-ai-on-aws/"
 ---
 
-# Protopia AI Now Available on AWS Marketplace
+# Protopia AI 现已登陆 AWS Marketplace
 
 ## 新闻事实
 

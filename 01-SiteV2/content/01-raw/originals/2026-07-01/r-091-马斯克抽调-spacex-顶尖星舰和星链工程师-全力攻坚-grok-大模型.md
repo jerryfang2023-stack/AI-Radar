@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"马斯克透露，SpaceX 已抽调数十
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "马斯克抽调 SpaceX 顶尖星舰和星链工程师，全力攻坚 Grok 大模型"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 马斯克抽调 SpaceX 顶尖星舰和星链工程师，全力攻坚 Grok 大模型

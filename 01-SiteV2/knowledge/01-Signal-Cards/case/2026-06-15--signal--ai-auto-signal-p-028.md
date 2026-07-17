@@ -2,7 +2,7 @@
 id: SIG-20260615-A05
 type: signal_card
 signal_type: case
-title: "AI 案例：AI 进入地产开发和建筑设计流程"
+title: "顶级AI研究员谈GPT 4.5、DeepSeek与Agentic RAG | Contextual AI CEO Douwe Kiela"
 date: 2026-06-15
 status: published
 source_title: "Top AI Researcher on GPT 4.5, DeepSeek and Agentic RAG | Douwe Kiela, CEO, Contextual AI"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "AI"
 
 frontend:
-  displayTitle: "AI 案例：AI 进入地产开发和建筑设计流程"
+  displayTitle: "顶级AI研究员谈GPT 4.5、DeepSeek与Agentic RAG | Contextual AI CEO Douwe Kiela"
   sourceLinks:
     - "https://podcasters.spotify.com/pod/show/firstmark/episodes/Top-AI-Researcher-on-GPT-4-5--DeepSeek-and-Agentic-RAG--Douwe-Kiela--CEO--Contextual-AI-e2vpcmg"
 ---
 
-# AI 案例：AI 进入地产开发和建筑设计流程
+# 顶级AI研究员谈GPT 4.5、DeepSeek与Agentic RAG | Contextual AI CEO Douwe Kiela
 
 ## 新闻事实
 

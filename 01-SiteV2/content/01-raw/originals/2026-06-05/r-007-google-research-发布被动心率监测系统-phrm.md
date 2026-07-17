@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"Google Research 开发了一种被动心
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Google Research 发布被动心率监测系统 PHRM"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Google Research 发布被动心率监测系统 PHRM

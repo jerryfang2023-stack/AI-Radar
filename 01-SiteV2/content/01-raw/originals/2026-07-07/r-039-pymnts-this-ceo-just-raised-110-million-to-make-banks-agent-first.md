@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-039
 title: "PYMNTS | This CEO Just Raised $110 Million to Make Banks Agent-First"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "PYMNTS | 这位CEO刚融资1.1亿美元，欲打造银行优先代理模式"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.pymnts.com/news/artificial-intelligence/2026/this-ceo-just-raised-110-million-to-make-banks-agent-first/"
 canonical_url: "https://pymnts.com/news/artificial-intelligence/2026/this-ceo-just-raised-110-million-to-make-banks-agent-first"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-07T02:01:23.525Z
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # PYMNTS | This CEO Just Raised $110 Million to Make Banks Agent-First

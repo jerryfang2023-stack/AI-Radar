@@ -2,7 +2,7 @@
 id: SIG-20260709-A09
 type: signal_card
 signal_type: case
-title: "Estée Lauder 与 Jo Malone London 用 Google Cloud 为香氛体验注入 AI"
+title: "Estée Lauder案例研究 | Google Cloud # 雅诗兰黛公司与祖·玛珑：用AI为标志性香氛注入活力 免费试用 Google Cloud 结果 推出基于AI的对话式数字体验 将自然语言映射至深层香氛专业知识，打造定制香水... / 查询=企业AI代理客户案例部署宣布2026 / 意图=查找客户案例 / 路径=官方原文"
 date: 2026-07-09
 status: published
 source_title: "Estée Lauder case study | Google Cloud # The Estée Lauder Companies and Jo Malone London: Giving signature scents a spritz of AI Get started for free Google Cloud results Launched a conversational, AI-powered digital experience Maps natural language to deep scent expertise for bespoke fragrance... / query=enterprise AI agent customer story deployment announced 2026 / intent=find_customer_case / path=official_original"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "Google"
 
 frontend:
-  displayTitle: "Estée Lauder 与 Jo Malone London 用 Google Cloud 为香氛体验注入 AI"
+  displayTitle: "Estée Lauder案例研究 | Google Cloud # 雅诗兰黛公司与祖·玛珑：用AI为标志性香氛注入活力 免费试用 Google Cloud 结果 推出基于AI的对话式数字体验 将自然语言映射至深层香氛专业知识，打造定制香水... / 查询=企业AI代理客户案例部署宣布2026 / 意图=查找客户案例 / 路径=官方原文"
   sourceLinks:
     - "https://cloud.google.com/customers/elc"
 ---
 
-# Estée Lauder 与 Jo Malone London 用 Google Cloud 为香氛体验注入 AI
+# Estée Lauder案例研究 | Google Cloud # 雅诗兰黛公司与祖·玛珑：用AI为标志性香氛注入活力 免费试用 Google Cloud 结果 推出基于AI的对话式数字体验 将自然语言映射至深层香氛专业知识，打造定制香水... / 查询=企业AI代理客户案例部署宣布2026 / 意图=查找客户案例 / 路径=官方原文
 
 ## 新闻事实
 

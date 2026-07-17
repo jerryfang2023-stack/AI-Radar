@@ -72,6 +72,10 @@ key_excerpts: [{"type":"supporting_context","text":"Gemini 3.5 Live Translate �
 theme: outside-core-exploration
 keyword_group: outside-core-exploration
 copyright_note: local research archive only
+title_zh: "Google 发布 Gemini 3.5 Live Translate，实现即时语音到语音翻译"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Google 发布 Gemini 3.5 Live Translate，实现即时语音到语音翻译

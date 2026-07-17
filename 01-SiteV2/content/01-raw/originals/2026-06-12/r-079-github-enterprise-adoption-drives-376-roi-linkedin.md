@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"You can now use production-grade AI
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "GitHub企业版采用推动376%投资回报率 - LinkedIn"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # GitHub Enterprise Adoption Drives 376% ROI - LinkedIn

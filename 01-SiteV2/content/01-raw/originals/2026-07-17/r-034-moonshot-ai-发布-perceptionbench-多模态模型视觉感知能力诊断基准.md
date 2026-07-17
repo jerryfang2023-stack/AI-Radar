@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-034
 title: "Moonshot AI 发布 PerceptionBench：多模态模型视觉感知能力诊断基准"
 title_zh: "Moonshot AI 发布 PerceptionBench：多模态模型视觉感知能力诊断基准"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.kimi.com/blog/perception-bench"
 canonical_url: "https://kimi.com/blog/perception-bench"
 source_name: "Moonshot AI：Kimi Blog"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-17T04:40:17.008Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Moonshot AI 发布 PerceptionBench：多模态模型视觉感知能力诊断基准

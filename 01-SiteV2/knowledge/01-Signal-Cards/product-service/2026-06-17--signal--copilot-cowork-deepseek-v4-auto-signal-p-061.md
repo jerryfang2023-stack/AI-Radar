@@ -2,7 +2,7 @@
 id: SIG-20260617-A20
 type: signal_card
 signal_type: product_service
-title: "微软 Copilot Cowork 转向按用量计费，考虑采用 DeepSeek V4 发布 AI 基础设施能力，切入模型部署和算力服务"
+title: "微软 Copilot Cowork 转向按用量计费，考虑采用 DeepSeek V4"
 date: 2026-06-17
 status: published
 source_title: "微软 Copilot Cowork 转向按用量计费，考虑采用 DeepSeek V4"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "微软 Copilot Cowork 转向按用量计费，考虑采用 DeepSeek V4"
 
 frontend:
-  displayTitle: "微软 Copilot Cowork 转向按用量计费，考虑采用 DeepSeek V4 发布 AI 基础设施能力，切入模型部署和算力服务"
+  displayTitle: "微软 Copilot Cowork 转向按用量计费，考虑采用 DeepSeek V4"
   sourceLinks:
     - "https://the-decoder.com/microsofts-copilot-cowork-moves-to-usage-based-billing-and-may-tap-deepseek"
 ---
 
-# 微软 Copilot Cowork 转向按用量计费，考虑采用 DeepSeek V4 发布 AI 基础设施能力，切入模型部署和算力服务
+# 微软 Copilot Cowork 转向按用量计费，考虑采用 DeepSeek V4
 
 ## 新闻事实
 

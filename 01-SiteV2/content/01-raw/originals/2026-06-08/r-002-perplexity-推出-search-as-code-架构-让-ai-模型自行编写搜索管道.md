@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"Perplexity 的 \"Search as Code\" 架构
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Perplexity 推出 \"Search as Code\" 架构，让 AI 模型自行编写搜索管道"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Perplexity 推出 "Search as Code" 架构，让 AI 模型自行编写搜索管道

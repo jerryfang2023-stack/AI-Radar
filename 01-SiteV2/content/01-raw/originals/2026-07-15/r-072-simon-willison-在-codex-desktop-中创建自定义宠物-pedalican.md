@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-072
 title: "Simon Willison 在 Codex Desktop 中创建自定义宠物\"Pedalican\""
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "Simon Willison 在 Codex Desktop 中创建自定义宠物\"Pedalican\""
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://simonwillison.net/2026/Jul/14/pedalican"
 canonical_url: "https://simonwillison.net/2026/Jul/14/pedalican"
 source_name: "Simon Willison 博客"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-15T04:28:38.038Z
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Simon Willison 在 Codex Desktop 中创建自定义宠物"Pedalican"

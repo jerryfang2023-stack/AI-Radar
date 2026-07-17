@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"Anthropic 6月16日发布博文，分析
 theme: outside-core-exploration
 keyword_group: outside-core-exploration
 copyright_note: local research archive only
+title_zh: "Claude Code 用户画像：平均每周使用 20 小时，AI 代码修改占 26%"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Claude Code 用户画像：平均每周使用 20 小时，AI 代码修改占 26%

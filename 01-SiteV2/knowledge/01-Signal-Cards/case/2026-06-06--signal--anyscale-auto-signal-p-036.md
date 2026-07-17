@@ -2,7 +2,7 @@
 id: SIG-20260606-A08
 type: signal_card
 signal_type: case
-title: "Bedrock Robotics Builds Autonomous Construction Systems on Anyscale"
+title: "Bedrock Robotics在Anyscale上构建自主施工系统"
 date: 2026-06-06
 status: published
 source_title: "Bedrock Robotics Builds Autonomous Construction Systems on Anyscale"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Anyscale"
 
 frontend:
-  displayTitle: "Bedrock Robotics Builds Autonomous Construction Systems on Anyscale"
+  displayTitle: "Bedrock Robotics在Anyscale上构建自主施工系统"
   sourceLinks:
     - "https://www.anyscale.com/resources/case-study/bedrock-robotics"
 ---
 
-# Bedrock Robotics Builds Autonomous Construction Systems on Anyscale
+# Bedrock Robotics在Anyscale上构建自主施工系统
 
 ## 新闻事实
 

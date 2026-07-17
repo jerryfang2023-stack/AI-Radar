@@ -2,7 +2,7 @@
 id: SIG-20260710-A22
 type: signal_card
 signal_type: product_service
-title: "Gemini企业代理平台优化您的代理"
+title: "Gemini企业级智能体平台优化您的智能体"
 date: 2026-07-10
 status: published
 source_title: "Gemini Enterprise Agent Platform optimizes your agents"
@@ -57,12 +57,12 @@ opportunity_signals:
 signal_owner: "Blog"
 
 frontend:
-  displayTitle: "Gemini企业代理平台优化您的代理"
+  displayTitle: "Gemini企业级智能体平台优化您的智能体"
   sourceLinks:
     - "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-enterprise-agent-platform/"
 ---
 
-# Gemini企业代理平台优化您的代理
+# Gemini企业级智能体平台优化您的智能体
 
 ## 新闻事实
 

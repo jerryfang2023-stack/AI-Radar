@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"在 2026 全球开发者大会�
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "苹果发布 Xcode 27 Beta 与 Core AI 框架，称其为构建 AI 智能体\"最佳场所\""
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 苹果发布 Xcode 27 Beta 与 Core AI 框架，称其为构建 AI 智能体"最佳场所"

@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-033
 title: "FuriosaAI partners with Broadcom to build next-generation inference platform for the Agentic Era"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "FuriosaAI与博通合作，为代理时代构建下一代推理平台"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://furiosa.ai/blog/furiosaai-partners-with-broadcom-to-build-next-generation-inference-platform-for-the-agentic-era"
 canonical_url: "https://furiosa.ai/blog/furiosaai-partners-with-broadcom-to-build-next-generation-inference-platform-for-the-agentic-era"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-15T04:28:37.754Z
 theme: ai-hardware-scenario-service-signal
 keyword_group: ai-hardware-scenario-service-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # FuriosaAI partners with Broadcom to build next-generation inference platform for the Agentic Era

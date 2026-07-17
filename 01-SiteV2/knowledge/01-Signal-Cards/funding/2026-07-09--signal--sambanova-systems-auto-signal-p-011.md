@@ -2,7 +2,7 @@
 id: SIG-20260709-A01
 type: signal_card
 signal_type: funding
-title: "AI 芯片公司 SambaNova 以 110 亿美元估值完成 10 亿美元 Series F 首次交割"
+title: "AI 芯片制造商 SambaNova 以 110 亿美元估值融资 10 亿美元，距上一轮巨额融资仅 5 个月"
 date: 2026-07-09
 status: published
 source_title: "AI chip maker SambaNova raises $1B at $11B valuation, 5 months after last mega round | TechCrunch"
@@ -55,12 +55,12 @@ opportunity_signals:
 signal_owner: "SambaNova Systems"
 
 frontend:
-  displayTitle: "AI 芯片公司 SambaNova 以 110 亿美元估值完成 10 亿美元 Series F 首次交割"
+  displayTitle: "AI 芯片制造商 SambaNova 以 110 亿美元估值融资 10 亿美元，距上一轮巨额融资仅 5 个月"
   sourceLinks:
     - "https://techcrunch.com/2026/07/08/sambanova-draws-1b-at-11b-valuation-in-series-f-first-close/"
 ---
 
-# AI 芯片公司 SambaNova 以 110 亿美元估值完成 10 亿美元 Series F 首次交割
+# AI 芯片制造商 SambaNova 以 110 亿美元估值融资 10 亿美元，距上一轮巨额融资仅 5 个月
 
 ## 新闻事实
 

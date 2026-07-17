@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"欧莱雅在VivaTech 2026宣布与OpenAI
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "欧莱雅与OpenAI合作，将美宝莲虚拟试妆引入ChatGPT"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 欧莱雅与OpenAI合作，将美宝莲虚拟试妆引入ChatGPT

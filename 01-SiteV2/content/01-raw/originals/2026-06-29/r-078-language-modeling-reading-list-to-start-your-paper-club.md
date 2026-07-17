@@ -72,6 +72,10 @@ key_excerpts: [{"type":"company_action","text":"Some fundamental papers and a on
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_zh: "语言建模阅读清单（开启论文俱乐部指南）"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Language Modeling Reading List (to Start Your Paper Club)

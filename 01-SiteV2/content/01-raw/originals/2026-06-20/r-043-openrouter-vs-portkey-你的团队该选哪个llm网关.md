@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"OpenRouter是托管路由网络，买cre
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "OpenRouter vs Portkey：你的团队该选哪个LLM网关？"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # OpenRouter vs Portkey：你的团队该选哪个LLM网关？

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"Automatically turn commits, pull re
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "GitHub 发布说明代理 - Agno"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # GitHub release notes agent - Agno

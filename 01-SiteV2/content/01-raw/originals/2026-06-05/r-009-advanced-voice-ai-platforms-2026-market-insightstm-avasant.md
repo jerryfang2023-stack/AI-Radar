@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"This report identifies key demand-side 
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "高级语音AI平台2026市场洞察™ - Avasant"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Advanced Voice AI Platforms 2026 Market Insights™ - Avasant

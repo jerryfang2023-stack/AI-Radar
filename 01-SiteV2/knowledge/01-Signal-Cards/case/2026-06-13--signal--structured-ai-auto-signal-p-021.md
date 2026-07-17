@@ -2,7 +2,7 @@
 id: SIG-20260613-A04
 type: signal_card
 signal_type: case
-title: "Structured AI 案例：AI 进入企业智能体协作流程"
+title: "Structured AI 获420万美元种子轮融资，为建筑世界构建质量层"
 date: 2026-06-13
 status: published
 source_title: "Structured AI Raises $4.2M Seed to Build the Quality Layer for the Built World - Structured AI"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Structured AI"
 
 frontend:
-  displayTitle: "Structured AI 案例：AI 进入企业智能体协作流程"
+  displayTitle: "Structured AI 获420万美元种子轮融资，为建筑世界构建质量层"
   sourceLinks:
     - "https://getstructured.ai/blog/structured-ai-4-2m-seed-round/"
 ---
 
-# Structured AI 案例：AI 进入企业智能体协作流程
+# Structured AI 获420万美元种子轮融资，为建筑世界构建质量层
 
 ## 新闻事实
 

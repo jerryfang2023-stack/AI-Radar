@@ -2,7 +2,7 @@
 id: SIG-20260619-A08
 type: signal_card
 signal_type: product_service
-title: "Marktechpost 发布 AI 基础设施能力，切入模型部署和算力服务"
+title: "Perplexity 推出自改进记忆系统 Brain，构建智能体工作上下文图"
 date: 2026-06-19
 status: published
 source_title: "Perplexity 推出自改进记忆系统 Brain，构建智能体工作上下文图"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Marktechpost"
 
 frontend:
-  displayTitle: "Marktechpost 发布 AI 基础设施能力，切入模型部署和算力服务"
+  displayTitle: "Perplexity 推出自改进记忆系统 Brain，构建智能体工作上下文图"
   sourceLinks:
     - "https://www.marktechpost.com/2026/06/18/perplexity-launches-brain"
 ---
 
-# Marktechpost 发布 AI 基础设施能力，切入模型部署和算力服务
+# Perplexity 推出自改进记忆系统 Brain，构建智能体工作上下文图
 
 ## 新闻事实
 

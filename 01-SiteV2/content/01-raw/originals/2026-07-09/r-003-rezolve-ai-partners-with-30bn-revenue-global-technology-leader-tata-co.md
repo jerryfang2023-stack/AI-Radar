@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-003
 title: "Rezolve Ai partners with $30bn+ revenue global technology leader Tata Consultancy Services to bring its AI-powered commerce platform to enterprise clients worldwide – Company Announcement - FT.com"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "Rezolve Ai 与营收超 300 亿美元的全球科技领导者塔塔咨询服务合作，将其 AI 驱动的商务平台推向全球企业客户"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://markets.ft.com/data/announce/full?dockey=1330-9718167en-6JC737QJFPTJMIQQR11CSGKG8S"
 canonical_url: "https://markets.ft.com/data/announce/full?dockey=1330-9718167en-6JC737QJFPTJMIQQR11CSGKG8S"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-09T03:05:44.818Z
 theme: aihot-fallback-market-structure
 keyword_group: aihot-fallback-market-structure
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Rezolve Ai partners with $30bn+ revenue global technology leader Tata Consultancy Services to bring its AI-powered commerce platform to enterprise clients worldwide – Company Announcement - FT.com

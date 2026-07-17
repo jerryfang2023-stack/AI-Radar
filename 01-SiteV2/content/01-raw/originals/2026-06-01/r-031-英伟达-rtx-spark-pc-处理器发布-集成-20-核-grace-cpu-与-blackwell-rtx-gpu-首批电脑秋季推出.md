@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"英伟达在台北电脑展推出 RTX Sp
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "英伟达 RTX Spark PC 处理器发布：集成 20 核 Grace CPU 与 Blackwell RTX GPU，首批电脑秋季推出"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 英伟达 RTX Spark PC 处理器发布：集成 20 核 Grace CPU 与 Blackwell RTX GPU，首批电脑秋季推出

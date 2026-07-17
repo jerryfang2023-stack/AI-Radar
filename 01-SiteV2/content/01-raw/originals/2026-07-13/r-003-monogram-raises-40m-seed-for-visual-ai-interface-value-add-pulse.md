@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-003
 title: "Monogram Raises $40M Seed for Visual AI Interface | Value Add Pulse"
-title_zh: "Monogram 完成 4000 万美元 种子轮融资，用于 Visual AI Interface"
-title_translation_status: translated
-title_translation_method: business-rule_title_translation
+title_zh: "Monogram为其视觉AI界面筹集4000万美元种子轮资金 | Value Add Pulse"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://valueaddvc.com/pulse/monogram-ai-40m-seed-2026"
 canonical_url: "https://valueaddvc.com/pulse/monogram-ai-40m-seed-2026"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-13T10:23:56.672Z
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Monogram Raises $40M Seed for Visual AI Interface | Value Add Pulse

@@ -2,7 +2,7 @@
 id: SIG-20260609-A07
 type: signal_card
 signal_type: case
-title: "AI SaaS Market Size, Industry Share, Forecast, 2034"
+title: "AI SaaS市场规模、行业份额及预测，2034年"
 date: 2026-06-09
 status: published
 source_title: "AI SaaS Market Size, Industry Share, Forecast, 2034"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Fortunebusinessinsights"
 
 frontend:
-  displayTitle: "AI SaaS Market Size, Industry Share, Forecast, 2034"
+  displayTitle: "AI SaaS市场规模、行业份额及预测，2034年"
   sourceLinks:
     - "https://www.fortunebusinessinsights.com/ai-saas-market-111182"
 ---
 
-# AI SaaS Market Size, Industry Share, Forecast, 2034
+# AI SaaS市场规模、行业份额及预测，2034年
 
 ## 新闻事实
 

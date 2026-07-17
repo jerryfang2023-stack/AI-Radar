@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"阿里巴巴Qwen团队发布Qwen
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Qwen3.7-Plus：阿里巴巴将多模态AI打造成完全自主智能体"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Qwen3.7-Plus：阿里巴巴将多模态AI打造成完全自主智能体

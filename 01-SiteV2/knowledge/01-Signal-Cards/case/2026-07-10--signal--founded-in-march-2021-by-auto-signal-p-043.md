@@ -2,7 +2,7 @@
 id: SIG-20260710-A14
 type: signal_card
 signal_type: case
-title: "ETERNO使用Amazon Connect客户转变患者沟通| AWS联系中心"
+title: "ETERNO利用Amazon Connect客户服务转型患者沟通 | AWS联络中心"
 date: 2026-07-10
 status: published
 source_title: "ETERNO transforms patient communication using Amazon Connect Customer | AWS Contact Center"
@@ -57,12 +57,12 @@ opportunity_signals:
 signal_owner: "Founded in March 2021 by"
 
 frontend:
-  displayTitle: "ETERNO使用Amazon Connect客户转变患者沟通| AWS联系中心"
+  displayTitle: "ETERNO利用Amazon Connect客户服务转型患者沟通 | AWS联络中心"
   sourceLinks:
     - "https://aws.amazon.com/blogs/contact-center/eterno-transforms-patient-communication-using-amazon-connect-customer-ai/"
 ---
 
-# ETERNO使用Amazon Connect客户转变患者沟通| AWS联系中心
+# ETERNO利用Amazon Connect客户服务转型患者沟通 | AWS联络中心
 
 ## 新闻事实
 

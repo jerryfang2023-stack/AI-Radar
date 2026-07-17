@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-008
 title: "xAI 起诉 Grok 用户制作儿童性虐待内容，不再否认模型被滥用"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "xAI 起诉 Grok 用户制作儿童性虐待内容，不再否认模型被滥用"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://arstechnica.com/tech-policy/2026/07/xai-cant-deny-grok-makes-csam-anymore-so-its-suing-users"
 canonical_url: "https://arstechnica.com/tech-policy/2026/07/xai-cant-deny-grok-makes-csam-anymore-so-its-suing-users"
 source_name: "Ars Technica：AI（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-17T04:40:16.818Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # xAI 起诉 Grok 用户制作儿童性虐待内容，不再否认模型被滥用

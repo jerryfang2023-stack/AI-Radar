@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"周二，Google 推出其自研 AI 图�
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "Google 发布更快更便宜的图像生成器 Nano Banana 2 Lite"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Google 发布更快更便宜的图像生成器 Nano Banana 2 Lite

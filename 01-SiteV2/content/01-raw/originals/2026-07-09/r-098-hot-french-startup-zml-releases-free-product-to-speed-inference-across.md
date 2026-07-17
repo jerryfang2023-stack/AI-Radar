@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-098
 title: "Hot French startup ZML releases free product to speed inference across lots of AI chips"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "法国热门初创公司ZML发布免费产品，加速多AI芯片推理速度"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://techcrunch.com/2026/07/08/hot-french-startup-zml-releases-free-product-to-speed-inference-across-lots-of-ai-chips/"
 canonical_url: "https://techcrunch.com/2026/07/08/hot-french-startup-zml-releases-free-product-to-speed-inference-across-lots-of-ai-chips"
 source_name: "TechCrunch AI"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-09T03:05:45.351Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Hot French startup ZML releases free product to speed inference across lots of AI chips

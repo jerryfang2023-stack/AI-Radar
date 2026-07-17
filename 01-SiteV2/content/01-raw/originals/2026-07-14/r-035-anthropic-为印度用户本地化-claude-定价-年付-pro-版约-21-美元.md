@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-035
 title: "Anthropic 为印度用户本地化 Claude 定价，年付 Pro 版约 21 美元"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "Anthropic 为印度用户本地化 Claude 定价，年付 Pro 版约 21 美元"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://techcrunch.com/2026/07/13/anthropic-starts-localizing-claude-pricing-for-india-its-biggest-market-after-the-us"
 canonical_url: "https://techcrunch.com/2026/07/13/anthropic-starts-localizing-claude-pricing-for-india-its-biggest-market-after-the-us"
 source_name: "TechCrunch：AI（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-14T01:56:51.515Z
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Anthropic 为印度用户本地化 Claude 定价，年付 Pro 版约 21 美元

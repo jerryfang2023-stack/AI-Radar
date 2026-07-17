@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"Model API spend reached $8.4B enterprise
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Menlo Ventures 报告：AI 战略与运营的 3 个关键要点"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Menlo Ventures report: 3 key takeaways for AI strategy and ops

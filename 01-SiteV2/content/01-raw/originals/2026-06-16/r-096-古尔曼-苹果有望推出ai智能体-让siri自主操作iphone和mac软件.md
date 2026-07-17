@@ -72,6 +72,10 @@ key_excerpts: [{"type":"quote","text":"彭博社记者马克·古尔曼预测，
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "古尔曼：苹果有望推出AI智能体，让Siri自主操作iPhone和Mac软件"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 古尔曼：苹果有望推出AI智能体，让Siri自主操作iPhone和Mac软件

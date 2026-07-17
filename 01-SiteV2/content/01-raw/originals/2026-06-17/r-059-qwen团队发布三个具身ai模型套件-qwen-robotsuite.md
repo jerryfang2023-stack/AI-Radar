@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"Qwen团队发布三个具身AI模型组�
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "Qwen团队发布三个具身AI模型套件 Qwen-RobotSuite"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Qwen团队发布三个具身AI模型套件 Qwen-RobotSuite

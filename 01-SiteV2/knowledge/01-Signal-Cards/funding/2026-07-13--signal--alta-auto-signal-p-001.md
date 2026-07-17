@@ -2,7 +2,7 @@
 id: SIG-20260713-A01
 type: signal_card
 signal_type: funding
-title: "Alta 获得 2500 万美元融资"
+title: "Alta 完成 2500 万美元融资，用于重塑收入团队的市场进入架构"
 date: 2026-07-13
 status: published
 source_title: "Alta Raises $25M to Redefine the Go-to-Market Architecture for Revenue Teams"
@@ -59,12 +59,12 @@ opportunity_signals:
 signal_owner: "Alta"
 
 frontend:
-  displayTitle: "Alta 获得 2500 万美元融资"
+  displayTitle: "Alta 完成 2500 万美元融资，用于重塑收入团队的市场进入架构"
   sourceLinks:
     - "https://prnewswire.com/news-releases/alta-raises-25m-to-redefine-the-go-to-market-architecture-for-revenue-teams-302820618.html"
 ---
 
-# Alta 获得 2500 万美元融资
+# Alta 完成 2500 万美元融资，用于重塑收入团队的市场进入架构
 
 ## 新闻事实
 

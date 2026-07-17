@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-009
 title: "Upscale AI Adds $190 Million in Extension to Series A, Reaching Half-Billion Dollars in Total Funding"
-title_zh: "Upscale AI 完成 1.9 亿美元 A-1 轮融资，总融资额达 5 亿美元"
-title_translation_status: translated
-title_translation_method: source_title_translation_db
+title_zh: "高端AI公司Upscale AI将A轮融资扩大1.9亿美元，总融资额达5亿美元"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://upscale.com/blogs/upscale-ai-adds-190-million-in-extension-to-series-a-reaching-half-billion-dollars-in-total-funding?from_theconsensus=1"
 canonical_url: "https://upscale.com/blogs/upscale-ai-adds-190-million-in-extension-to-series-a-reaching-half-billion-dollars-in-total-funding?from_theconsensus=1"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-12T09:55:25.096Z
 theme: ai-hardware-investment-signal
 keyword_group: ai-hardware-investment-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Upscale AI Adds $190 Million in Extension to Series A, Reaching Half-Billion Dollars in Total Funding

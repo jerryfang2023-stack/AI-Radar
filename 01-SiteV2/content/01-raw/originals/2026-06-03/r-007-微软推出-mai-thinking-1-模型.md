@@ -72,6 +72,10 @@ key_excerpts: [{"type":"quote","text":"微软通过其AI官方网站 microsoft.a
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "微软推出 MAI-Thinking-1 模型"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 微软推出 MAI-Thinking-1 模型

@@ -2,7 +2,7 @@
 id: SIG-20260615-A11
 type: signal_card
 signal_type: case
-title: "Spotify 案例：AI 进入销售和收入团队流程"
+title: "2024年人工智能现状：前沿模型、AI地缘政治与机器人复兴 | 创始人Nathan Benaich，Air Street Capital"
 date: 2026-06-15
 status: published
 source_title: "State of AI 2024: Frontier Models, AI Geopolitics and The Robotics Renaissance | Nathan Benaich, Founder, Air Street Capital"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "Spotify"
 
 frontend:
-  displayTitle: "Spotify 案例：AI 进入销售和收入团队流程"
+  displayTitle: "2024年人工智能现状：前沿模型、AI地缘政治与机器人复兴 | 创始人Nathan Benaich，Air Street Capital"
   sourceLinks:
     - "https://podcasters.spotify.com/pod/show/firstmark/episodes/State-of-AI-2024-Frontier-Models--AI-Geopolitics-and-The-Robotics-Renaissance--Nathan-Benaich--Founder--Air-Street-Capital-e2qvc5i"
 ---
 
-# Spotify 案例：AI 进入销售和收入团队流程
+# 2024年人工智能现状：前沿模型、AI地缘政治与机器人复兴 | 创始人Nathan Benaich，Air Street Capital
 
 ## 新闻事实
 

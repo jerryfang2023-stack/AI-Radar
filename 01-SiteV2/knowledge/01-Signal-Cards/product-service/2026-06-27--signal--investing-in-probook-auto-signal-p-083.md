@@ -2,7 +2,7 @@
 id: SIG-20260627-A09
 type: signal_card
 signal_type: product_service
-title: "Investing in Probook"
+title: "投资Probook"
 date: 2026-06-27
 status: published
 source_title: "Investing in Probook"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Investing in Probook"
 
 frontend:
-  displayTitle: "Investing in Probook"
+  displayTitle: "投资Probook"
   sourceLinks:
     - "https://www.a16z.news/p/investing-in-probook"
 ---
 
-# Investing in Probook
+# 投资Probook
 
 ## 新闻事实
 

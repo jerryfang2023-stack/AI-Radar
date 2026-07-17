@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"美国政府出于安全考虑，要求O
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "消息称美国政府要求OpenAI审核后分批发布GPT-5.6"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 消息称美国政府要求OpenAI审核后分批发布GPT-5.6

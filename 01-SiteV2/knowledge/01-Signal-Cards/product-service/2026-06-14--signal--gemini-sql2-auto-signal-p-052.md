@@ -2,7 +2,7 @@
 id: SIG-20260614-A12
 type: signal_card
 signal_type: product_service
-title: "Gemini-SQL2 推出 Agent 工作流能力，切入模型部署和算力服务"
+title: "Google Research 的 Gemini-SQL2 在 text-to-SQL 基准测试中以大幅优势领先"
 date: 2026-06-14
 status: published
 source_title: "Google Research 的 Gemini-SQL2 在 text-to-SQL 基准测试中以大幅优势领先"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Gemini-SQL2"
 
 frontend:
-  displayTitle: "Gemini-SQL2 推出 Agent 工作流能力，切入模型部署和算力服务"
+  displayTitle: "Google Research 的 Gemini-SQL2 在 text-to-SQL 基准测试中以大幅优势领先"
   sourceLinks:
     - "https://the-decoder.com/google-researchs-gemini-sql2-tops-text-to-sql-benchmarks-by-a-wide-margin"
 ---
 
-# Gemini-SQL2 推出 Agent 工作流能力，切入模型部署和算力服务
+# Google Research 的 Gemini-SQL2 在 text-to-SQL 基准测试中以大幅优势领先
 
 ## 新闻事实
 

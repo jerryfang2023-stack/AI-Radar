@@ -21,11 +21,25 @@
     "source_ref": "SA-1951162200d81e2e"
   },
   {
+    "qa_id": "QA-3110777d7a5db404",
+    "asset_id": "RAW-8c5a0fa27152a2e4",
+    "reason": "no_source_bounded_claim",
+    "status": "review_optional",
+    "source_ref": "SA-a4512a0a1ea7fc98"
+  },
+  {
     "qa_id": "QA-1af8d982a54d9351",
     "asset_id": "RAW-4894cca65a35fe00",
     "reason": "no_source_bounded_event",
     "status": "review_optional",
     "source_ref": "SA-dded5511c04dbfac"
+  },
+  {
+    "qa_id": "QA-3063188cff7efb2d",
+    "asset_id": "RAW-b189d22327cdbf00",
+    "reason": "no_source_bounded_claim",
+    "status": "review_optional",
+    "source_ref": "SA-2db7e52381d6b966"
   },
   {
     "qa_id": "QA-9b5ebccd926b13a1",
@@ -49,9 +63,9 @@
     "source_ref": "SA-bee8e60a01b42453"
   },
   {
-    "qa_id": "QA-7a49645358a71a0c",
+    "qa_id": "QA-6341a6ed0084f0db",
     "asset_id": "RAW-f50ac354e999b977",
-    "reason": "event_not_ai_relevant",
+    "reason": "no_source_bounded_claim",
     "status": "review_optional",
     "source_ref": "SA-d5428dacbf7c81d9"
   },
@@ -126,6 +140,13 @@
     "source_ref": "SA-bf876c17a43454cf"
   },
   {
+    "qa_id": "QA-50fb49c3faee65fd",
+    "asset_id": "RAW-e404167aaf90aa7c",
+    "reason": "event_not_ai_relevant",
+    "status": "review_optional",
+    "source_ref": "SA-871426a3c991d361"
+  },
+  {
     "qa_id": "QA-87c8f6c5dcd51f1c",
     "asset_id": "RAW-2f71368326cc6186",
     "reason": "repository_page_requires_release_source",
@@ -138,6 +159,13 @@
     "reason": "non_event_or_index_title",
     "status": "review_optional",
     "source_ref": "SA-e3c285b8f4832ad0"
+  },
+  {
+    "qa_id": "QA-7fbe566ae0536863",
+    "asset_id": "RAW-56a74adde88456b4",
+    "reason": "event_not_ai_relevant",
+    "status": "review_optional",
+    "source_ref": "SA-f06194befcba1dde"
   },
   {
     "qa_id": "QA-9b726ac1ff371766",
@@ -474,5 +502,12 @@
     "reason": "raw_source_quality_block",
     "status": "review_optional",
     "source_ref": "SA-f9e2d0fd4ef5eaa6"
+  },
+  {
+    "qa_id": "QA-403e0b7c4659ad7d",
+    "asset_id": "EV-220be2fe413b8cfa",
+    "reason": "public_event_title_incomplete",
+    "status": "open",
+    "source_ref": "SA-ea8d458f9508545a"
   }
 ]

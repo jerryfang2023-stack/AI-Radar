@@ -72,6 +72,10 @@ key_excerpts: [{"type":"workflow_change","text":"Two platforms, two teams, two p
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "2026年虚拟机与容器整合的案例"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # The Case for VM and Container Consolidation in 2026

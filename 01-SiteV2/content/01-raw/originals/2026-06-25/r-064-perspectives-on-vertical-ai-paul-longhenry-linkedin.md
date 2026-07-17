@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"Unlike foundational AI models (hori
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "垂直AI视角 | Paul Longhenry - LinkedIn"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Perspectives on Vertical AI | Paul Longhenry - LinkedIn

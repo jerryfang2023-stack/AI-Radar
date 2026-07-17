@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-058
 title: "Meta 推出社交 AI 应用 Pocket，支持 Vibe Coding 生成小程序/小游戏并分享"
 title_zh: "Meta 推出社交 AI 应用 Pocket，支持 Vibe Coding 生成小程序/小游戏并分享"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/972/832.htm"
 canonical_url: "https://ithome.com/0/972/832.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-06T02:21:27.062Z
 theme: outside-core-exploration
 keyword_group: outside-core-exploration
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Meta 推出社交 AI 应用 Pocket，支持 Vibe Coding 生成小程序/小游戏并分享

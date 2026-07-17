@@ -23,10 +23,10 @@
   {
     "claim_id": "CL-39f51073a1da78f0",
     "raw_id": "RAW-04e4796c95927342",
-    "claim_type": "deployment",
-    "subject": "Google Finance 推出首款独立 Android 应用，iOS 版计划今年晚些时候",
-    "predicate": "deployment",
-    "object": "Google Finance is not a new product—it has been around for 20 years, long enough that it initially relied on Flash to display charts and graphs. The website has gotten a few major updates over the years, but it has never had a mobile app until now. Google has released the first standalone app for Google Finance, which is currently exclusive to Android, with iOS planned for later this year.",
+    "claim_type": "product_release",
+    "subject": "Google Finance",
+    "predicate": "product_release",
+    "object": "首款独立 Android 应用，iOS 版计划今年晚些时候上线",
     "qualifiers": {
       "event_status": "planned",
       "sequence": 1
@@ -42,15 +42,36 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-91a088a6fc02ec3a",
+    "claim_id": "CL-b3f72da1c6bc2bc4",
     "raw_id": "RAW-04e4796c95927342",
-    "claim_type": "deployment",
-    "subject": "Google Finance 推出首款独立 Android 应用，iOS 版计划今年晚些时候",
-    "predicate": "deployment",
-    "object": "The app is available globally in the Play Store , but that’s not the only update to Google’s financial tracker. The AI-powered makeover for the Finance website is also leaving beta, making Google’s chatbot a core part of the experience. Naturally, the mobile app includes a heaping helping of generative AI that aims to make sense of irrational financial markets.",
+    "claim_type": "product_release",
+    "subject": "Google Finance",
+    "predicate": "product_release",
+    "object": "首款独立 Android 应用，iOS 版计划今年晚些时候上线",
     "qualifiers": {
       "event_status": "planned",
       "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-04e4796c95927342",
+      "start": 912,
+      "end": 1320
+    },
+    "source_quote": "If you’ve checked out the new Finance web experience, you’ll see a lot of familiar features in the app. You can create watchlists, monitor real-time market data, and keep up with financial news in one place. While perusing graphs of stock performance, Finance will use AI to generate “key moments” that can explain why the numbers changed. This feature initially launched in the Finance web interface in May.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-91a088a6fc02ec3a",
+    "raw_id": "RAW-04e4796c95927342",
+    "claim_type": "product_release",
+    "subject": "Google Finance",
+    "predicate": "product_release",
+    "object": "首款独立 Android 应用，iOS 版计划今年晚些时候上线",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 3
     },
     "source_span": {
       "raw_id": "RAW-04e4796c95927342",
@@ -65,13 +86,13 @@
   {
     "claim_id": "CL-4db278891d1e958a",
     "raw_id": "RAW-04e4796c95927342",
-    "claim_type": "deployment",
-    "subject": "Google Finance 推出首款独立 Android 应用，iOS 版计划今年晚些时候",
-    "predicate": "deployment",
-    "object": "Google Finance on Android",
+    "claim_type": "product_release",
+    "subject": "Google Finance",
+    "predicate": "product_release",
+    "object": "首款独立 Android 应用，iOS 版计划今年晚些时候上线",
     "qualifiers": {
       "event_status": "planned",
-      "sequence": 3
+      "sequence": 4
     },
     "source_span": {
       "raw_id": "RAW-04e4796c95927342",
@@ -79,195 +100,6 @@
       "end": 1346
     },
     "source_quote": "Google Finance on Android",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-e43739cca7cb7888",
-    "raw_id": "RAW-04e4796c95927342",
-    "claim_type": "deployment",
-    "subject": "Google Finance 推出首款独立 Android 应用，iOS 版计划今年晚些时候",
-    "predicate": "deployment",
-    "object": "Google Finance on Android",
-    "qualifiers": {
-      "event_status": "planned",
-      "sequence": 4
-    },
-    "source_span": {
-      "raw_id": "RAW-04e4796c95927342",
-      "start": 1347,
-      "end": 1372
-    },
-    "source_quote": "Google Finance on Android",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-8314402e319ffe37",
-    "raw_id": "RAW-d30b5d15e0171b55",
-    "claim_type": "funding",
-    "subject": "General Intuition 23亿美元估值",
-    "predicate": "funding",
-    "object": "General Intuition’s $2.3B bet that video games can train AI agents for the real world",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 1
-    },
-    "source_span": {
-      "raw_id": "RAW-d30b5d15e0171b55",
-      "start": 227,
-      "end": 312
-    },
-    "source_quote": "General Intuition’s $2.3B bet that video games can train AI agents for the real world",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.9,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-62fdc12d067bfd95",
-    "raw_id": "RAW-d30b5d15e0171b55",
-    "claim_type": "funding",
-    "subject": "General Intuition 23亿美元估值",
-    "predicate": "funding",
-    "object": "As soon as I entered General Intuition’s R&D floor at its New York office, the company’s 31-year-old co-founder and CEO Pim de Witte directed my attention to a monitor perched on a standing desk. Someone appeared to be playing something like Fortnite. It wasn’t a person.",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 2
-    },
-    "source_span": {
-      "raw_id": "RAW-d30b5d15e0171b55",
-      "start": 356,
-      "end": 627
-    },
-    "source_quote": "As soon as I entered General Intuition’s R&D floor at its New York office, the company’s 31-year-old co-founder and CEO Pim de Witte directed my attention to a monitor perched on a standing desk. Someone appeared to be playing something like Fortnite. It wasn’t a person.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-e44976a185dd354f",
-    "raw_id": "RAW-d30b5d15e0171b55",
-    "claim_type": "funding",
-    "subject": "General Intuition 23亿美元估值",
-    "predicate": "funding",
-    "object": "An agentic model that can generalize from gameplay to simulation to embodiment is General Intuition’s raison d’être. And that model’s ability to figure out its place in the world has secured the backing of some heavy hitters.",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 3
-    },
-    "source_span": {
-      "raw_id": "RAW-d30b5d15e0171b55",
-      "start": 1716,
-      "end": 1941
-    },
-    "source_quote": "An agentic model that can generalize from gameplay to simulation to embodiment is General Intuition’s raison d’être. And that model’s ability to figure out its place in the world has secured the backing of some heavy hitters.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-3ac36cc5d1f5665d",
-    "raw_id": "RAW-d30b5d15e0171b55",
-    "claim_type": "funding",
-    "subject": "General Intuition 23亿美元估值",
-    "predicate": "funding",
-    "object": "On Thursday, General Intuition said it raised $320 million at a $2.3 billion valuation, confirming TechCrunch’s previous reporting . The round brings General Intuition’s total disclosed funding to $454 million, after the $134 million round it raised at launch last October.",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 4
-    },
-    "source_span": {
-      "raw_id": "RAW-d30b5d15e0171b55",
-      "start": 1942,
-      "end": 2215
-    },
-    "source_quote": "On Thursday, General Intuition said it raised $320 million at a $2.3 billion valuation, confirming TechCrunch’s previous reporting . The round brings General Intuition’s total disclosed funding to $454 million, after the $134 million round it raised at launch last October.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-9259a97ffdc28558",
-    "raw_id": "RAW-3dba2a027c147084",
-    "claim_type": "funding",
-    "subject": "General Intuition",
-    "predicate": "funding",
-    "object": "，用游戏数据训练通用 AI 智能体",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 1
-    },
-    "source_span": {
-      "raw_id": "RAW-3dba2a027c147084",
-      "start": 227,
-      "end": 312
-    },
-    "source_quote": "General Intuition’s $2.3B bet that video games can train AI agents for the real world",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.9,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-8c95dabc7b41ec36",
-    "raw_id": "RAW-3dba2a027c147084",
-    "claim_type": "funding",
-    "subject": "General Intuition",
-    "predicate": "funding",
-    "object": "，用游戏数据训练通用 AI 智能体",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 2
-    },
-    "source_span": {
-      "raw_id": "RAW-3dba2a027c147084",
-      "start": 356,
-      "end": 627
-    },
-    "source_quote": "As soon as I entered General Intuition’s R&D floor at its New York office, the company’s 31-year-old co-founder and CEO Pim de Witte directed my attention to a monitor perched on a standing desk. Someone appeared to be playing something like Fortnite. It wasn’t a person.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-2e5da4c7f19f4080",
-    "raw_id": "RAW-3dba2a027c147084",
-    "claim_type": "funding",
-    "subject": "General Intuition",
-    "predicate": "funding",
-    "object": "，用游戏数据训练通用 AI 智能体",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 3
-    },
-    "source_span": {
-      "raw_id": "RAW-3dba2a027c147084",
-      "start": 1716,
-      "end": 1941
-    },
-    "source_quote": "An agentic model that can generalize from gameplay to simulation to embodiment is General Intuition’s raison d’être. And that model’s ability to figure out its place in the world has secured the backing of some heavy hitters.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-59d60f6d0087a994",
-    "raw_id": "RAW-3dba2a027c147084",
-    "claim_type": "funding",
-    "subject": "General Intuition",
-    "predicate": "funding",
-    "object": "，用游戏数据训练通用 AI 智能体",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 4
-    },
-    "source_span": {
-      "raw_id": "RAW-3dba2a027c147084",
-      "start": 1942,
-      "end": 2215
-    },
-    "source_quote": "On Thursday, General Intuition said it raised $320 million at a $2.3 billion valuation, confirming TechCrunch’s previous reporting . The round brings General Intuition’s total disclosed funding to $454 million, after the $134 million round it raised at launch last October.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -315,6 +147,48 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-a64bc0c100e260a2",
+    "raw_id": "RAW-73a555daaf7ed6d8",
+    "claim_type": "model_release",
+    "subject": "白宫因安全担忧要求OpenAI延缓",
+    "predicate": "model_release",
+    "object": "4:34 PM PDT · June 25, 2026",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-73a555daaf7ed6d8",
+      "start": 335,
+      "end": 362
+    },
+    "source_quote": "4:34 PM PDT · June 25, 2026",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-ae6b9044da45da92",
+    "raw_id": "RAW-73a555daaf7ed6d8",
+    "claim_type": "model_release",
+    "subject": "白宫因安全担忧要求OpenAI延缓",
+    "predicate": "model_release",
+    "object": "At a meeting this week, CEO Sam Altman reportedly told staff that the government would be “approving access customer by customer” during a preview period. Altman reportedly added that if the limited release goes well, OpenAI hopes to follow with a general, broader release a “couple of weeks later.”",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-73a555daaf7ed6d8",
+      "start": 644,
+      "end": 943
+    },
+    "source_quote": "At a meeting this week, CEO Sam Altman reportedly told staff that the government would be “approving access customer by customer” during a preview period. Altman reportedly added that if the limited release goes well, OpenAI hopes to follow with a general, broader release a “couple of weeks later.”",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-57b27c7fe6dd4589",
     "raw_id": "RAW-6020f0d48143dd93",
     "claim_type": "funding",
@@ -322,7 +196,7 @@
     "predicate": "funding",
     "object": "$2.1M Pre-Seed Round Led By Embark",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 1
     },
     "source_span": {
@@ -343,7 +217,7 @@
     "predicate": "funding",
     "object": "$2.1M Pre-Seed Round Led By Embark",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 2
     },
     "source_span": {
@@ -364,7 +238,7 @@
     "predicate": "funding",
     "object": "$2.1M Pre-Seed Round Led By Embark",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 3
     },
     "source_span": {
@@ -385,7 +259,7 @@
     "predicate": "funding",
     "object": "$2.1M Pre-Seed Round Led By Embark",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 4
     },
     "source_span": {
@@ -394,6 +268,90 @@
       "end": 1632
     },
     "source_quote": "A central part of Newera.ai’s strategy is data localisation within Saudi Arabia. The company stores and processes data locally to meet regulatory requirements and address enterprise concerns around data control and security.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e9dc4b6a0f7a6120",
+    "raw_id": "RAW-77713337e1ff2ab2",
+    "claim_type": "deployment",
+    "subject": "undisclosed_subject",
+    "predicate": "deployment",
+    "object": "and Scaling Enterprise AI Agents - Eloquent AI",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-77713337e1ff2ab2",
+      "start": 0,
+      "end": 56
+    },
+    "source_quote": "Deploying and Scaling Enterprise AI Agents — Eloquent AI",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-57924d3009a495d9",
+    "raw_id": "RAW-77713337e1ff2ab2",
+    "claim_type": "deployment",
+    "subject": "undisclosed_subject",
+    "predicate": "deployment",
+    "object": "and Scaling Enterprise AI Agents - Eloquent AI",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-77713337e1ff2ab2",
+      "start": 57,
+      "end": 107
+    },
+    "source_quote": "Go back Deploying and Scaling Enterprise AI Agents",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-db810b4dfb6312c3",
+    "raw_id": "RAW-77713337e1ff2ab2",
+    "claim_type": "deployment",
+    "subject": "undisclosed_subject",
+    "predicate": "deployment",
+    "object": "and Scaling Enterprise AI Agents - Eloquent AI",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-77713337e1ff2ab2",
+      "start": 463,
+      "end": 712
+    },
+    "source_quote": "The promise of enterprise AI agents is transformative: enhanced customer experiences, streamlined operations, and significant cost savings. Yet, despite the widespread interest, enterprise AI rollouts often fail to progress beyond pilot stages. Why?",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-1ad2b96c179d25bb",
+    "raw_id": "RAW-77713337e1ff2ab2",
+    "claim_type": "deployment",
+    "subject": "undisclosed_subject",
+    "predicate": "deployment",
+    "object": "and Scaling Enterprise AI Agents - Eloquent AI",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-77713337e1ff2ab2",
+      "start": 108,
+      "end": 308
+    },
+    "source_quote": "Enterprise AI agents can transform customer experiences, streamline operations, and drive major cost savings. Yet, most projects stall before full-scale deployment. Why aren't AI agents happening yet?",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -483,6 +441,90 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-6b1e56f0351eaabd",
+    "raw_id": "RAW-88b9e65521112610",
+    "claim_type": "product_release",
+    "subject": "Vertical",
+    "predicate": "product_release",
+    "object": "Vertical AI Agents Are Eating Horizontal SaaS in 2026",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-88b9e65521112610",
+      "start": 134,
+      "end": 628
+    },
+    "source_quote": "Sierra, the customer support AI agent company founded by former Salesforce co-CEO Bret Taylor, raised $950 million in May 2026 at a $15.8 billion valuation . It had crossed $100 million in ARR roughly seven quarters after launch. Legora, a legal AI platform, hit $100 million ARR in 18 months , which Bessemer Venture Partners called the fastest growth trajectory in enterprise software history. Harvey, the legal AI competitor, closed Q2 2026 at $300 million ARR and an $11 billion valuation .",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-fbea8f816cae883c",
+    "raw_id": "RAW-88b9e65521112610",
+    "claim_type": "product_release",
+    "subject": "Vertical",
+    "predicate": "product_release",
+    "object": "Vertical AI Agents Are Eating Horizontal SaaS in 2026",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-88b9e65521112610",
+      "start": 629,
+      "end": 1107
+    },
+    "source_quote": "These are not horizontal copilots. They are vertical AI agents, purpose-built for one industry, one workflow, one persona, and they are scaling faster than any SaaS cohort in history. Gartner forecasts that 40% of enterprise applications will embed task-specific AI agents by the end of 2026 , up from less than 5% in 2025. The global AI agents market is on track to exceed $10.9 billion in 2026 and $50 billion by 2030 , with vertical specialization absorbing the lion’s share.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-87bdf94c1c605656",
+    "raw_id": "RAW-88b9e65521112610",
+    "claim_type": "product_release",
+    "subject": "Vertical",
+    "predicate": "product_release",
+    "object": "Vertical AI Agents Are Eating Horizontal SaaS in 2026",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-88b9e65521112610",
+      "start": 1108,
+      "end": 1353
+    },
+    "source_quote": "For SaaS founders, this is the most consequential shift since cloud delivery itself. Not because SaaS is dying, but because the vertical AI wave is reshaping what SaaS can actually do per customer. The companies that move first are pulling away.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-7b5285fbd5416bdf",
+    "raw_id": "RAW-88b9e65521112610",
+    "claim_type": "product_release",
+    "subject": "Vertical",
+    "predicate": "product_release",
+    "object": "Vertical AI Agents Are Eating Horizontal SaaS in 2026",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-88b9e65521112610",
+      "start": 0,
+      "end": 82
+    },
+    "source_quote": "Vertical AI Agents Are Eating Horizontal SaaS: Inside the 2026 Specialization Boom",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-ea015cc07c0428ed",
     "raw_id": "RAW-37ccdd08c585dbba",
     "claim_type": "funding",
@@ -490,7 +532,7 @@
     "predicate": "funding",
     "object": "$2.5M in a Pre-Seed Funding",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 1
     },
     "source_span": {
@@ -511,7 +553,7 @@
     "predicate": "funding",
     "object": "$2.5M in a Pre-Seed Funding",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 2
     },
     "source_span": {
@@ -532,7 +574,7 @@
     "predicate": "funding",
     "object": "$2.5M in a Pre-Seed Funding",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 3
     },
     "source_span": {
@@ -553,7 +595,7 @@
     "predicate": "funding",
     "object": "$2.5M in a Pre-Seed Funding",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 4
     },
     "source_span": {
@@ -562,6 +604,90 @@
       "end": 661
     },
     "source_quote": "Paris-Based Cybersecurity Startup MokN Raises €2.6M To Expand In The U.S.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-4ef2926165df5b71",
+    "raw_id": "RAW-039ce00c70127e58",
+    "claim_type": "deployment",
+    "subject": "Enterprise AI Agent",
+    "predicate": "deployment",
+    "object": "to Production: A Scaling Framework",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-039ce00c70127e58",
+      "start": 17,
+      "end": 77
+    },
+    "source_quote": "Enterprise AI Agent Pilot to Production: A Scaling Framework",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-6d6bb515235326a3",
+    "raw_id": "RAW-039ce00c70127e58",
+    "claim_type": "deployment",
+    "subject": "Enterprise AI Agent",
+    "predicate": "deployment",
+    "object": "to Production: A Scaling Framework",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-039ce00c70127e58",
+      "start": 142,
+      "end": 202
+    },
+    "source_quote": "Enterprise AI Agent Pilot to Production: A Scaling Framework",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-12c22d3b6d42b66c",
+    "raw_id": "RAW-039ce00c70127e58",
+    "claim_type": "deployment",
+    "subject": "Enterprise AI Agent",
+    "predicate": "deployment",
+    "object": "to Production: A Scaling Framework",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-039ce00c70127e58",
+      "start": 237,
+      "end": 297
+    },
+    "source_quote": "Enterprise AI Agent Pilot to Production: A Scaling Framework",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-9ff3bfa4139beb17",
+    "raw_id": "RAW-039ce00c70127e58",
+    "claim_type": "deployment",
+    "subject": "Enterprise AI Agent",
+    "predicate": "deployment",
+    "object": "to Production: A Scaling Framework",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-039ce00c70127e58",
+      "start": 323,
+      "end": 383
+    },
+    "source_quote": "Enterprise AI Agent Pilot to Production: A Scaling Framework",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -658,7 +784,7 @@
     "predicate": "funding",
     "object": "$500,000 Pre-Seed Funding Led by Titan Capital - Indian Startup Times",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 1
     },
     "source_span": {
@@ -679,7 +805,7 @@
     "predicate": "funding",
     "object": "$500,000 Pre-Seed Funding Led by Titan Capital - Indian Startup Times",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 2
     },
     "source_span": {
@@ -700,7 +826,7 @@
     "predicate": "funding",
     "object": "$500,000 Pre-Seed Funding Led by Titan Capital - Indian Startup Times",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 3
     },
     "source_span": {
@@ -721,7 +847,7 @@
     "predicate": "funding",
     "object": "$500,000 Pre-Seed Funding Led by Titan Capital - Indian Startup Times",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 4
     },
     "source_span": {
@@ -730,90 +856,6 @@
       "end": 3641
     },
     "source_quote": "AI Shopping Assistant Startup Zave Raises Rs 4.7 Crore in Bridge Round Led by Inflection Point Ventures",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-74f14f3822d82164",
-    "raw_id": "RAW-15a91ea4f5a78737",
-    "claim_type": "product_release",
-    "subject": "消息称美国政府要求OpenAI审核后分批",
-    "predicate": "product_release",
-    "object": "GPT-5.6",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 1
-    },
-    "source_span": {
-      "raw_id": "RAW-15a91ea4f5a78737",
-      "start": 0,
-      "end": 39
-    },
-    "source_quote": "消息称美国政府要求 OpenAI 审核后分批发布 GPT-5.6 - IT之家",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.9,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-63768e543233504b",
-    "raw_id": "RAW-15a91ea4f5a78737",
-    "claim_type": "product_release",
-    "subject": "消息称美国政府要求OpenAI审核后分批",
-    "predicate": "product_release",
-    "object": "GPT-5.6",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 2
-    },
-    "source_span": {
-      "raw_id": "RAW-15a91ea4f5a78737",
-      "start": 207,
-      "end": 239
-    },
-    "source_quote": "消息称美国政府要求 OpenAI 审核后分批发布 GPT-5.6",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-2ab9fe08e4da312b",
-    "raw_id": "RAW-15a91ea4f5a78737",
-    "claim_type": "product_release",
-    "subject": "消息称美国政府要求OpenAI审核后分批",
-    "predicate": "product_release",
-    "object": "GPT-5.6",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 3
-    },
-    "source_span": {
-      "raw_id": "RAW-15a91ea4f5a78737",
-      "start": 316,
-      "end": 405
-    },
-    "source_quote": "IT之家 6 月 26 日消息，据 The Information 今日报道，美国政府担心潜在的安全问题， 已要求 OpenAI 分批发布其下一版本的 GPT-5.6 大模型 。",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-759c5cf7d06db5ae",
-    "raw_id": "RAW-15a91ea4f5a78737",
-    "claim_type": "product_release",
-    "subject": "消息称美国政府要求OpenAI审核后分批",
-    "predicate": "product_release",
-    "object": "GPT-5.6",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 4
-    },
-    "source_span": {
-      "raw_id": "RAW-15a91ea4f5a78737",
-      "start": 406,
-      "end": 503
-    },
-    "source_quote": "报道称，OpenAI CEO 萨姆 · 奥尔特曼（Sam Altman）当地时间周三在公司问答中告诉员工， 将以有限预览形式发布 GPT-5.6，仅允许少数企业客户访问 ，以符合美国政府的要求。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -1066,69 +1108,6 @@
       "end": 1370
     },
     "source_quote": "Added automatic memory-pressure reaping for idle background shell commands (disable with CLAUDE_CODE_DISABLE_BG_SHELL_PRESSURE_REAP=1 )",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-50a59ba23539c6d2",
-    "raw_id": "RAW-12b9def6abdf4866",
-    "claim_type": "organization_people",
-    "subject": "核心研究员接连",
-    "predicate": "organization_people",
-    "object": "后，消息称谷歌重组 AI 编程小组试图追赶 Anthropic",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 1
-    },
-    "source_span": {
-      "raw_id": "RAW-12b9def6abdf4866",
-      "start": 0,
-      "end": 47
-    },
-    "source_quote": "核心研究员接连离职后，消息称谷歌重组 AI 编程小组试图追赶 Anthropic - IT之家",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.9,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-7b331cbc138fd686",
-    "raw_id": "RAW-12b9def6abdf4866",
-    "claim_type": "organization_people",
-    "subject": "核心研究员接连",
-    "predicate": "organization_people",
-    "object": "后，消息称谷歌重组 AI 编程小组试图追赶 Anthropic",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 2
-    },
-    "source_span": {
-      "raw_id": "RAW-12b9def6abdf4866",
-      "start": 213,
-      "end": 253
-    },
-    "source_quote": "核心研究员接连离职后，消息称谷歌重组 AI 编程小组试图追赶 Anthropic",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-7f375947fc1ea986",
-    "raw_id": "RAW-12b9def6abdf4866",
-    "claim_type": "organization_people",
-    "subject": "核心研究员接连",
-    "predicate": "organization_people",
-    "object": "后，消息称谷歌重组 AI 编程小组试图追赶 Anthropic",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 3
-    },
-    "source_span": {
-      "raw_id": "RAW-12b9def6abdf4866",
-      "start": 541,
-      "end": 614
-    },
-    "source_quote": "据悉，此次重组就发生在乔纳斯 · 阿德勒（Jonas Adler）和亚历山大 · 普里策尔（Alexander Pritzel） 计划离职 之后。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"

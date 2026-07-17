@@ -2,7 +2,7 @@
 id: SIG-20260710-A10
 type: signal_card
 signal_type: case
-title: "从人工智能试点到自主贷款：了解L&T Finance的企业人工智能之旅- Express Computer"
+title: "从AI试点到自主借贷：L&T金融的企业AI之旅"
 date: 2026-07-10
 status: published
 source_title: "From AI pilots to autonomous lending: Inside L&T Finance's enterprise AI journey - Express Computer"
@@ -57,12 +57,12 @@ opportunity_signals:
 signal_owner: "From AI pilots to autonomous lending"
 
 frontend:
-  displayTitle: "从人工智能试点到自主贷款：了解L&T Finance的企业人工智能之旅- Express Computer"
+  displayTitle: "从AI试点到自主借贷：L&T金融的企业AI之旅"
   sourceLinks:
     - "https://www.expresscomputer.in/amp/exclusives/from-ai-pilots-to-autonomous-lending-inside-lt-finances-enterprise-ai-journey/136627/"
 ---
 
-# 从人工智能试点到自主贷款：了解L&T Finance的企业人工智能之旅- Express Computer
+# 从AI试点到自主借贷：L&T金融的企业AI之旅
 
 ## 新闻事实
 

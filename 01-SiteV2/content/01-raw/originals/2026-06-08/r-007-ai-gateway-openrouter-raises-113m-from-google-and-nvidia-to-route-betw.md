@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"OpenRouter, the New York-based AI infra
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "AI网关OpenRouter获谷歌与英伟达1.13亿美元投资，用于路由其模型"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # AI Gateway OpenRouter Raises $113M From Google and NVIDIA to Route Between Their Models

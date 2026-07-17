@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-016
 title: "Chamath Palihapitiya raises $135M Series A for his AI coding startup, takes CEO role | TechCrunch"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "Chamath Palihapitiya为其AI编程初创公司筹集1.35亿美元A轮融资，并出任CEO | TechCrunch"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://techcrunch.com/2026/06/29/chamath-palihapitiya-raises-135m-series-a-for-his-ai-coding-startup-takes-ceo-role/"
 canonical_url: "https://techcrunch.com/2026/06/29/chamath-palihapitiya-raises-135m-series-a-for-his-ai-coding-startup-takes-ceo-role"
 source_name: "keyword search / Anysearch"
@@ -78,6 +78,7 @@ fact_extraction_completed_at: 2026-07-03T01:59:31.112Z
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Chamath Palihapitiya raises $135M Series A for his AI coding startup, takes CEO role | TechCrunch

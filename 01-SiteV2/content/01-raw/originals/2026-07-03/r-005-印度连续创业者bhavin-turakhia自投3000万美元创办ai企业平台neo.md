@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-005
 title: "印度连续创业者Bhavin Turakhia自投3000万美元创办AI企业平台Neo"
 title_zh: "印度连续创业者Bhavin Turakhia自投3000万美元创办AI企业平台Neo"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://techcrunch.com/2026/07/01/indian-tech-tycoon-bets-30m-to-build-an-ai-alternative-to-microsoft-office"
 canonical_url: "https://techcrunch.com/2026/07/01/indian-tech-tycoon-bets-30m-to-build-an-ai-alternative-to-microsoft-office"
 source_name: "TechCrunch：AI（RSS）"
@@ -78,6 +78,7 @@ fact_extraction_completed_at: 2026-07-03T01:59:31.055Z
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 印度连续创业者Bhavin Turakhia自投3000万美元创办AI企业平台Neo

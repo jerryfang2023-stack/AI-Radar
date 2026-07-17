@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Blitzy Raises $200M At $1.4B Valuation 
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Blitzy以14亿美元估值融资2亿美元，用于自主软件开发"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Blitzy Raises $200M At $1.4B Valuation For Autonomous Software Development

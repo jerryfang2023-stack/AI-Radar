@@ -1,0 +1,179 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 818,
+    "quarantinedEventCount": 58
+  },
+  "entity": {
+    "id": "EN-1f1cfc1d441be41f",
+    "name": "UST",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-6415a58637893b34"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-technology-embodied_ai"
+    ],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-10",
+    "lastSeen": "2026-07-10",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [
+        "EV-6415a58637893b34"
+      ],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-6415a58637893b34",
+        "dataDate": "2026-07-10",
+        "date": "2026-07-10",
+        "eventType": "partnership",
+        "eventTypeLabel": "合作",
+        "eventGroup": "商业合作",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "Anthropic 与 UST 合作，将 Claude 部署到物理产品工程与生产流程中",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "embodied_ai",
+            "name": "具身智能"
+          }
+        ],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-1f1cfc1d441be41f"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-technology-embodied_ai",
+      "name": "具身智能",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "embodied_ai",
+      "eventIds": [
+        "EV-43b56d49df9a73a2",
+        "EV-cafe435ddd007821",
+        "EV-234ad54940674bf6",
+        "EV-6415a58637893b34",
+        "EV-4faa2bcf2e42e60c",
+        "EV-6b51b1b6fe22c540",
+        "EV-d633676a4a7d89a3",
+        "EV-6a2f3e9a22edff64",
+        "EV-49751dfc7d2f6d6c",
+        "EV-e2d4132c671e3d41",
+        "EV-3f8ba5855b64dd1a"
+      ],
+      "entityIds": [
+        "EN-bbdefa2950f49882",
+        "EN-59ae856cd788d0f5",
+        "EN-8d4321d936320802",
+        "EN-0f3360879e746531",
+        "EN-e3b1bf3dab957ffe",
+        "EN-9700d41909cf810f",
+        "EN-c70eca6b0f88f44d",
+        "EN-1f1cfc1d441be41f",
+        "EN-60094bcf5292c490",
+        "EN-aa75c47729b4a292",
+        "EN-8147e6fed86d42c1",
+        "EN-96eebba49dbbf422",
+        "EN-754c490bd199c21a",
+        "EN-7a3ecc54829211df",
+        "EN-2f354de778e6a6da",
+        "EN-936f01f91fdadf69",
+        "EN-30081094f2a8c83d",
+        "EN-d558e1de958b9d05",
+        "EN-89e3f0711b76932c",
+        "EN-e9830c30bc572802",
+        "EN-5e1fcba4c9f1cf69",
+        "EN-7d3194f79e645c42",
+        "EN-94ff75465b1afa65"
+      ],
+      "fdeIds": [
+        "FDE-dadf0e9572889d3d",
+        "FDE-a85c538af1b093ed"
+      ],
+      "hardwareIds": [
+        "HW-ceb55d9bc637c1d3",
+        "HW-dca442211b264bbe",
+        "HW-1450585d9cd5879f"
+      ],
+      "firstSeen": "2026-06-02",
+      "lastSeen": "2026-07-17"
+    }
+  ],
+  "fde": [
+    {
+      "id": "FDE-a85c538af1b093ed",
+      "eventId": "EV-6415a58637893b34",
+      "dataDate": "2026-07-10",
+      "date": "2026-07-10",
+      "title": "Anthropic 与 UST 合作，将 Claude 部署到物理产品工程与生产流程中",
+      "stage": "planned",
+      "stageLabel": "计划中",
+      "customer": "未披露",
+      "vendor": "UST",
+      "industry": "未披露",
+      "useCase": "将 Claude 部署到物理产品工程与生产流程中",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "UST is committing to train 20,000 of its associates on Claude worldwide, including engineers, architects, consultants, industry specialists, and forward-deployed engineers, who sit alongside client teams. It’s also building specialized teams to deploy Claude. We’re supporting UST in this effort with enablement, technical guidance, and certification through the Claude Partner Network. This partnership also makes UST a Global Premier Partner in the Claude Partner Network."
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "customer",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        }
+      ],
+      "sourceUrl": "https://anthropic.com/news/ust-claude",
+      "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-1f1cfc1d441be41f"
+      ]
+    }
+  ],
+  "hardware": []
+}

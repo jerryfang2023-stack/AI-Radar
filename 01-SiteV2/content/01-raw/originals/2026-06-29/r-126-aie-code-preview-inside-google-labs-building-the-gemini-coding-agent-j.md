@@ -72,6 +72,10 @@ key_excerpts: [{"type":"company_action","text":"Jed Borovik, Product Lead at Goo
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_zh: "⚡ [AIE CODE 预览] 走进谷歌实验室：构建 Gemini 编程代理——Jed Borovik、Jules"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # ⚡ [AIE CODE Preview] Inside Google Labs: Building The Gemini Coding Agent — Jed Borovik, Jules

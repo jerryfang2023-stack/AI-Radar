@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-032
 title: "Custom AI chip design startup TYLsemi launches with $43M in early-stage funding - SiliconANGLE"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "定制AI芯片设计初创公司TYLsemi获4300万美元早期融资 - SiliconANGLE"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://siliconangle.com/2026/07/14/custom-ai-chip-design-startup-tylsemi-launches-43m-early-stage-funding/"
 canonical_url: "https://siliconangle.com/2026/07/14/custom-ai-chip-design-startup-tylsemi-launches-43m-early-stage-funding"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-15T04:28:37.744Z
 theme: ai-hardware-investment-signal
 keyword_group: ai-hardware-investment-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Custom AI chip design startup TYLsemi launches with $43M in early-stage funding - SiliconANGLE

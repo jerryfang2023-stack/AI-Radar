@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-005
 title: "诺基亚推出基于英伟达的AI-RAN平台，声称业界首个"
 title_zh: "诺基亚推出基于英伟达的AI-RAN平台，声称业界首个"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.artificialintelligence-news.com/news/nokia-ai-ran-platform-nvidia"
 canonical_url: "https://artificialintelligence-news.com/news/nokia-ai-ran-platform-nvidia"
 source_name: "Artificial Intelligence News（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-16T02:39:33.396Z
 theme: outside-core-exploration
 keyword_group: outside-core-exploration
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 诺基亚推出基于英伟达的AI-RAN平台，声称业界首个

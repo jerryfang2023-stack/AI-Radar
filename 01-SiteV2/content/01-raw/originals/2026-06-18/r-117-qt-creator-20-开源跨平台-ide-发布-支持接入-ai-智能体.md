@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"Qt Creator 20 开源跨平台 ID
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Qt Creator 20 开源跨平台 IDE 发布，支持接入 AI 智能体"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Qt Creator 20 开源跨平台 IDE 发布，支持接入 AI 智能体

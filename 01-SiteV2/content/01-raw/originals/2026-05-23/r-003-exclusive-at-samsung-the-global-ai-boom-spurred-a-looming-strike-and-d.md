@@ -72,6 +72,10 @@ key_excerpts: [{"type":"company_action","text":"SEOUL, May 15 (Reuters) - A loom
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "独家：三星内部，全球AI热潮引发罢工危机与深刻分歧"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Exclusive: At Samsung, the global AI boom spurred a looming strike and deep divisions

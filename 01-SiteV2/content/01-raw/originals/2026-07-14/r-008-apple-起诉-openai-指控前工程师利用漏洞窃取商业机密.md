@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-008
 title: "Apple 起诉 OpenAI，指控前工程师利用漏洞窃取商业机密"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "Apple 起诉 OpenAI，指控前工程师利用漏洞窃取商业机密"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://arstechnica.com/tech-policy/2026/07/apple-sues-openai-after-ex-engineer-allegedly-used-bug-to-steal-trade-secrets"
 canonical_url: "https://arstechnica.com/tech-policy/2026/07/apple-sues-openai-after-ex-engineer-allegedly-used-bug-to-steal-trade-secrets"
 source_name: "Ars Technica：AI（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-14T01:56:51.277Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Apple 起诉 OpenAI，指控前工程师利用漏洞窃取商业机密

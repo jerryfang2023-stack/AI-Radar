@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-032
 title: "Morgan Stanley Cut Its Riskiest Reconciliation Job in Half by Making Its Agents Less Autonomous | Value Add Pulse"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "摩根士丹利通过降低代理人自主权，将风险最高的对账岗位工作量减半 | 增值脉搏"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://valueaddvc.com/pulse/morgan-stanley-fixr-less-autonomous-agents-2026"
 canonical_url: "https://valueaddvc.com/pulse/morgan-stanley-fixr-less-autonomous-agents-2026"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-06T02:21:26.899Z
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Morgan Stanley Cut Its Riskiest Reconciliation Job in Half by Making Its Agents Less Autonomous | Value Add Pulse

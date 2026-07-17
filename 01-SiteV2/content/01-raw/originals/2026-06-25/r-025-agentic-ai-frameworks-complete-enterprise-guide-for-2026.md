@@ -72,6 +72,10 @@ key_excerpts: [{"type":"quote","text":"* [Services](https://www.spaceo.ai/blog/a
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_zh: "2026年自主AI框架：企业完整指南"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Agentic AI Frameworks: Complete Enterprise Guide for 2026

@@ -2,7 +2,7 @@
 id: SIG-20260614-A01
 type: signal_card
 signal_type: funding
-title: "Jedify 获得$24M 融资，押注销售线索和收入团队协作"
+title: "总部位于纽约的AI基础设施初创公司Jedify在Instagram上筹集了..."
 date: 2026-06-14
 status: published
 source_title: "New York-based AI infrastructure startup Jedify raised ... - Instagram"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "Jedify"
 
 frontend:
-  displayTitle: "Jedify 获得$24M 融资，押注销售线索和收入团队协作"
+  displayTitle: "总部位于纽约的AI基础设施初创公司Jedify在Instagram上筹集了..."
   sourceLinks:
     - "https://www.instagram.com/p/DZaq23zCT9J/"
 ---
 
-# Jedify 获得$24M 融资，押注销售线索和收入团队协作
+# 总部位于纽约的AI基础设施初创公司Jedify在Instagram上筹集了...
 
 ## 新闻事实
 

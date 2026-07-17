@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-029
 title: "Global consultancy accelerates research & strategy by 80% with AI"
-title_zh: "全球咨询公司借助人工智能将研究和战略加速80%"
-title_translation_status: translated
-title_translation_method: mymemory_title_translation
+title_zh: "全球咨询公司借助AI将研究与战略速度提升80%"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.simform.com/case-studies/global-consultancy-firm-cuts-analysis-time-by-80-with-ai/"
 canonical_url: "https://simform.com/case-studies/global-consultancy-firm-cuts-analysis-time-by-80-with-ai"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-10T01:59:48.527Z
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Global consultancy accelerates research & strategy by 80% with AI

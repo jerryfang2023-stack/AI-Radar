@@ -72,6 +72,10 @@ key_excerpts: [{"type":"quote","text":"Anthropic 昨日推出最强 AI 模型 Cl
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "因安全顾虑，Anthropic 最强 AI 模型 Claude Fable 5 拒绝回答基础生物问题"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 因安全顾虑，Anthropic 最强 AI 模型 Claude Fable 5 拒绝回答基础生物问题

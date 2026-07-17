@@ -1,0 +1,196 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 818,
+    "quarantinedEventCount": 58
+  },
+  "entity": {
+    "id": "EN-7a3ecc54829211df",
+    "name": "LingBot-World 2.0",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-d633676a4a7d89a3"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-technology-embodied_ai",
+      "TX-industry-media_entertainment"
+    ],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-09",
+    "lastSeen": "2026-07-10",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-d633676a4a7d89a3"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-d633676a4a7d89a3",
+        "dataDate": "2026-07-10",
+        "date": "2026-07-09",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "蚂蚁灵波开源实时交互世界模型 LingBot-World 2.0",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "embodied_ai",
+            "name": "具身智能"
+          },
+          {
+            "dimensionId": "industry",
+            "id": "media_entertainment",
+            "dimensionName": "行业",
+            "name": "媒体与娱乐"
+          }
+        ],
+        "entityIds": [
+          "EN-754c490bd199c21a",
+          "EN-7a3ecc54829211df"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-technology-embodied_ai",
+      "name": "具身智能",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "embodied_ai",
+      "eventIds": [
+        "EV-43b56d49df9a73a2",
+        "EV-cafe435ddd007821",
+        "EV-234ad54940674bf6",
+        "EV-6415a58637893b34",
+        "EV-4faa2bcf2e42e60c",
+        "EV-6b51b1b6fe22c540",
+        "EV-d633676a4a7d89a3",
+        "EV-6a2f3e9a22edff64",
+        "EV-49751dfc7d2f6d6c",
+        "EV-e2d4132c671e3d41",
+        "EV-3f8ba5855b64dd1a"
+      ],
+      "entityIds": [
+        "EN-bbdefa2950f49882",
+        "EN-59ae856cd788d0f5",
+        "EN-8d4321d936320802",
+        "EN-0f3360879e746531",
+        "EN-e3b1bf3dab957ffe",
+        "EN-9700d41909cf810f",
+        "EN-c70eca6b0f88f44d",
+        "EN-1f1cfc1d441be41f",
+        "EN-60094bcf5292c490",
+        "EN-aa75c47729b4a292",
+        "EN-8147e6fed86d42c1",
+        "EN-96eebba49dbbf422",
+        "EN-754c490bd199c21a",
+        "EN-7a3ecc54829211df",
+        "EN-2f354de778e6a6da",
+        "EN-936f01f91fdadf69",
+        "EN-30081094f2a8c83d",
+        "EN-d558e1de958b9d05",
+        "EN-89e3f0711b76932c",
+        "EN-e9830c30bc572802",
+        "EN-5e1fcba4c9f1cf69",
+        "EN-7d3194f79e645c42",
+        "EN-94ff75465b1afa65"
+      ],
+      "fdeIds": [
+        "FDE-dadf0e9572889d3d",
+        "FDE-a85c538af1b093ed"
+      ],
+      "hardwareIds": [
+        "HW-ceb55d9bc637c1d3",
+        "HW-dca442211b264bbe",
+        "HW-1450585d9cd5879f"
+      ],
+      "firstSeen": "2026-06-02",
+      "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "TX-industry-media_entertainment",
+      "name": "媒体与娱乐",
+      "nodeType": "industry",
+      "typeLabel": "行业",
+      "valueId": "media_entertainment",
+      "eventIds": [
+        "EV-2d6d2dc0ead4be10",
+        "EV-afcd5426f5c01dc7",
+        "EV-6c361125c3f50bb6",
+        "EV-aad2b98b8f25d64b",
+        "EV-d633676a4a7d89a3",
+        "EV-07a5533c18e5a74e",
+        "EV-0edb0a592ca1fd67",
+        "EV-7e52d691a0553667",
+        "EV-49751dfc7d2f6d6c",
+        "EV-83acf26a011ef213",
+        "EV-568d2aeab5234e48",
+        "EV-b986a633cca27df9"
+      ],
+      "entityIds": [
+        "EN-3db1f560db626918",
+        "EN-bfc698cb0f9b4d72",
+        "EN-9c8ae69b84f21a2e",
+        "EN-3a7bd3e2360a3d29",
+        "EN-23929c7dca3eb576",
+        "EN-5388bc10736a0eff",
+        "EN-f0edcf96f6fa2ccb",
+        "EN-d36e5a1a7a3c45ce",
+        "EN-397e5a2983130593",
+        "EN-dd172e183ec20177",
+        "EN-754c490bd199c21a",
+        "EN-7a3ecc54829211df",
+        "EN-ea3bd73e2b506e00",
+        "EN-72e28a6aa6b39c76",
+        "EN-96eebba49dbbf422",
+        "EN-bbdefa2950f49882",
+        "EN-2df4d39c248116dc",
+        "EN-30081094f2a8c83d",
+        "EN-d558e1de958b9d05",
+        "EN-2b6e51bec93e86c1",
+        "EN-8d4321d936320802",
+        "EN-d56aa2f9908f566a",
+        "EN-4d09c69c19f5f67b",
+        "EN-c1eb8e913000a8eb",
+        "EN-0be477336d3e1a8d",
+        "EN-1dc405a4cda895d0"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [
+        "HW-dca442211b264bbe"
+      ],
+      "firstSeen": "2026-06-07",
+      "lastSeen": "2026-07-17"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}

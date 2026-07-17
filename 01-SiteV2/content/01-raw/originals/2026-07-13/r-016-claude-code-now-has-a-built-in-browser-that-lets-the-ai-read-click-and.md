@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-016
 title: "Claude Code now has a built-in browser that lets the AI read, click, and type on external websites"
 title_zh: "Claude Code 新增内置浏览器，可直接读取、点击并操作外部网页"
-title_translation_status: translated
-title_translation_method: business-rule_title_translation
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://the-decoder.com/claude-code-now-has-a-built-in-browser-that-lets-the-ai-read-click-and-type-on-external-websites"
 canonical_url: "https://the-decoder.com/claude-code-now-has-a-built-in-browser-that-lets-the-ai-read-click-and-type-on-external-websites"
 source_name: "The Decoder AI News"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-13T10:23:56.738Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Claude Code now has a built-in browser that lets the AI read, click, and type on external websites

@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-042
 title: "Gemini Enterprise release notes | Google Cloud Documentation"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "Gemini Enterprise 发布说明 | Google Cloud 文档"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://docs.cloud.google.com/gemini/enterprise/docs/release-notes"
 canonical_url: "https://docs.cloud.google.com/gemini/enterprise/docs/release-notes"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-15T04:28:37.822Z
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Gemini Enterprise release notes | Google Cloud Documentation

@@ -21,7 +21,7 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-aa1c95c005ffc7a3",
+    "claim_id": "CL-89bc885ad7a89e4f",
     "raw_id": "RAW-3863bd6f25d38a84",
     "claim_type": "funding",
     "subject": "Pit",
@@ -30,6 +30,48 @@
     "qualifiers": {
       "event_status": "announced",
       "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-3863bd6f25d38a84",
+      "start": 145,
+      "end": 312
+    },
+    "source_quote": "Founded by the team behind Voi and Klarna, Pit acts as an AI product team as a service: learning how companies work and building the systems that run their operations.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-d4af62a0fc70e6a6",
+    "raw_id": "RAW-3863bd6f25d38a84",
+    "claim_type": "funding",
+    "subject": "Pit",
+    "predicate": "funding",
+    "object": "6M Led by Andreessen Horowitz to Bring AI-Native Software to Enterprise Operations - Pit",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-3863bd6f25d38a84",
+      "start": 313,
+      "end": 336
+    },
+    "source_quote": "Stockholm · May 7, 2026",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-aa1c95c005ffc7a3",
+    "raw_id": "RAW-3863bd6f25d38a84",
+    "claim_type": "funding",
+    "subject": "Pit",
+    "predicate": "funding",
+    "object": "6M Led by Andreessen Horowitz to Bring AI-Native Software to Enterprise Operations - Pit",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
     },
     "source_span": {
       "raw_id": "RAW-3863bd6f25d38a84",
@@ -42,246 +84,15 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-5af726f49475977c",
-    "raw_id": "RAW-3863bd6f25d38a84",
-    "claim_type": "funding",
-    "subject": "Pit",
-    "predicate": "funding",
-    "object": "6M Led by Andreessen Horowitz to Bring AI-Native Software to Enterprise Operations - Pit",
-    "qualifiers": {
-      "event_status": "announced",
-      "sequence": 3
-    },
-    "source_span": {
-      "raw_id": "RAW-3863bd6f25d38a84",
-      "start": 1245,
-      "end": 1457
-    },
-    "source_quote": "Pit replaces this layer with AI-native software that is custom-built for each company’s workflows. This enables teams to move faster, operate more efficiently, and scale without the constraints of legacy systems.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-a686bc7079c9ab63",
-    "raw_id": "RAW-3863bd6f25d38a84",
-    "claim_type": "funding",
-    "subject": "Pit",
-    "predicate": "funding",
-    "object": "6M Led by Andreessen Horowitz to Bring AI-Native Software to Enterprise Operations - Pit",
-    "qualifiers": {
-      "event_status": "announced",
-      "sequence": 4
-    },
-    "source_span": {
-      "raw_id": "RAW-3863bd6f25d38a84",
-      "start": 1976,
-      "end": 2095
-    },
-    "source_quote": "— Pit Cloud provides governed infrastructure with tenant isolation, ISO 27001, SSO, RBAC, and full audit observability.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-0d0f1af89f4d48c7",
-    "raw_id": "RAW-18a684d4e44311aa",
-    "claim_type": "product_release",
-    "subject": "Morgan Stanley Cut Its Riskiest Reconciliation Job in Half by Making Its Agents Less Autonomous | Value",
-    "predicate": "product_release",
-    "object": "Pulse",
-    "qualifiers": {
-      "event_status": "announced",
-      "sequence": 1
-    },
-    "source_span": {
-      "raw_id": "RAW-18a684d4e44311aa",
-      "start": 0,
-      "end": 529
-    },
-    "source_quote": "Morgan Stanley has deployed agentic AI in one of banking's most accuracy-critical, deadline-driven workflows -- profit and loss (P&L) reconciliation -- and cut the associated work in half, according to VentureBeat reporting published June 30, 2026 . The counterintuitive part, per Morgan Stanley Managing Director Todd Johnson: the bank got there by making the system less autonomous, not more, keeping humans tightly in the loop while their decisions get iteratively turned into repeatable rules the system can apply on its own.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.9,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-88687cae2f8339ac",
-    "raw_id": "RAW-18a684d4e44311aa",
-    "claim_type": "product_release",
-    "subject": "Morgan Stanley Cut Its Riskiest Reconciliation Job in Half by Making Its Agents Less Autonomous | Value",
-    "predicate": "product_release",
-    "object": "Pulse",
-    "qualifiers": {
-      "event_status": "announced",
-      "sequence": 2
-    },
-    "source_span": {
-      "raw_id": "RAW-18a684d4e44311aa",
-      "start": 530,
-      "end": 1313
-    },
-    "source_quote": "The internal system, known as FIXR, operates against a specific, high-stakes daily process: every trading day, Morgan Stanley's desks handle transactions across cash equities and debt investments, and at day's end, controllers must reconcile P&L across the firm's Finance, Risk, Operations and Trade Capture systems -- a process where hundreds of thousands of attributes frequently fail to match . Historically, this required controllers to manually investigate each mismatch (a \"break\"), decide on an adjustment, and sign off, all against a hard morning deadline, taking up to six hours for a single book. FIXR now performs the same task in two to three hours, and across roughly 100 controllers doing this work globally, that translates to approximately 1,500 hours saved per week.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-0b5db3792641c6e9",
-    "raw_id": "RAW-18a684d4e44311aa",
-    "claim_type": "product_release",
-    "subject": "Morgan Stanley Cut Its Riskiest Reconciliation Job in Half by Making Its Agents Less Autonomous | Value",
-    "predicate": "product_release",
-    "object": "Pulse",
-    "qualifiers": {
-      "event_status": "announced",
-      "sequence": 3
-    },
-    "source_span": {
-      "raw_id": "RAW-18a684d4e44311aa",
-      "start": 2710,
-      "end": 3420
-    },
-    "source_quote": "Johnson's team also deliberately limited how much of the workflow depended on the model's judgment at all, favoring prescribed, repeatable logic wherever possible: \"If you have an opportunity to make things very prescribed and repeatable, that's cheaper in terms of token consumption, it's more repeatable in terms of controls -- and have the LLM do the stuff where you don't need that kind of deterministic workflow,\" he said . As the system observes more controller feedback on a given type of break, Morgan Stanley converts that pattern into a fixed rule rather than continuing to leave it to the model's judgment -- a deliberate design choice to minimize unnecessary model reliance rather than maximize it.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-0c58247ceb729f65",
-    "raw_id": "RAW-18a684d4e44311aa",
-    "claim_type": "product_release",
-    "subject": "Morgan Stanley Cut Its Riskiest Reconciliation Job in Half by Making Its Agents Less Autonomous | Value",
-    "predicate": "product_release",
-    "object": "Pulse",
-    "qualifiers": {
-      "event_status": "announced",
-      "sequence": 4
-    },
-    "source_span": {
-      "raw_id": "RAW-18a684d4e44311aa",
-      "start": 3421,
-      "end": 4087
-    },
-    "source_quote": "The broader context reinforces why this design philosophy matters: VentureBeat's own VB Pulse survey of 87 enterprises found nearly three-quarters reporting little to no ROI from custom model fine-tuning, describing a \"sandbox graveyard\" of AI projects too costly to maintain, while 38% cited the lack of a single accountable owner as their biggest barrier to production AI, and only two of the 87 surveyed enterprises had active monitoring and alerting in place to detect model failures . Morgan Stanley's process-first, human-accountability-centered approach directly addresses the governance gap that survey identifies as the industry's most common failure point.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-76b7e0f4a70c7644",
-    "raw_id": "RAW-ae41c91cbbd2ccd4",
-    "claim_type": "product_release",
-    "subject": "LlamaIndex",
-    "predicate": "product_release",
-    "object": "legal-kb：基于 Index v2 的智能体检索参考应用",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 1
-    },
-    "source_span": {
-      "raw_id": "RAW-ae41c91cbbd2ccd4",
-      "start": 117,
-      "end": 402
-    },
-    "source_quote": "LlamaIndex has published legal-kb , a public reference application on GitHub. It is described as a knowledge base for legal documents, powered by LlamaIndex Index v2 (the LlamaParse Platform). The project demonstrates a pattern the team calls a Retrieval Harness for agentic retrieval.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.9,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-9d563bfa34ff0dc4",
-    "raw_id": "RAW-ae41c91cbbd2ccd4",
-    "claim_type": "product_release",
-    "subject": "LlamaIndex",
-    "predicate": "product_release",
-    "object": "legal-kb：基于 Index v2 的智能体检索参考应用",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 2
-    },
-    "source_span": {
-      "raw_id": "RAW-ae41c91cbbd2ccd4",
-      "start": 739,
-      "end": 1060
-    },
-    "source_quote": "legal-kb is a working TanStack Start web app, not a library. You sign in, create a project, upload files, and chat with an agent. Each project is mirrored as a managed LlamaCloud Index v2. Uploaded files are parsed and indexed automatically in the background. The chat agent then queries that index live during each turn.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-953648085a0f92b7",
-    "raw_id": "RAW-ae41c91cbbd2ccd4",
-    "claim_type": "product_release",
-    "subject": "LlamaIndex",
-    "predicate": "product_release",
-    "object": "legal-kb：基于 Index v2 的智能体检索参考应用",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 3
-    },
-    "source_span": {
-      "raw_id": "RAW-ae41c91cbbd2ccd4",
-      "start": 3366,
-      "end": 3418
-    },
-    "source_quote": "import { LlamaCloud } from '@llamaindex/llama-cloud'",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-2cbed214b03003dc",
-    "raw_id": "RAW-ae41c91cbbd2ccd4",
-    "claim_type": "product_release",
-    "subject": "LlamaIndex",
-    "predicate": "product_release",
-    "object": "legal-kb：基于 Index v2 的智能体检索参考应用",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 4
-    },
-    "source_span": {
-      "raw_id": "RAW-ae41c91cbbd2ccd4",
-      "start": 7128,
-      "end": 7212
-    },
-    "source_quote": "legal-kb is a public reference app showing agentic retrieval on LlamaIndex Index v2.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-2cc2c5c488bb1be9",
-    "raw_id": "RAW-1b207453d5f4d089",
-    "claim_type": "product_release",
-    "subject": "Talkdesk ends the guesswork in deploying customer-facing AI agents - Press",
-    "predicate": "product_release",
-    "object": "| Talkdesk",
-    "qualifiers": {
-      "event_status": "announced",
-      "sequence": 1
-    },
-    "source_span": {
-      "raw_id": "RAW-1b207453d5f4d089",
-      "start": 899,
-      "end": 1246
-    },
-    "source_quote": "Building a production-ready AI agent has traditionally required weeks of iteration, testing, and tuning to keep it on topic. Agent Builder introduces a zero-prompt approach to AI agent development, compressing that process into hours and enabling organizations to rapidly build and scale a full AI workforce without sacrificing quality or control.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.9,
-    "verification_status": "accepted"
-  },
-  {
     "claim_id": "CL-f20e5cafafb96f21",
     "raw_id": "RAW-1b207453d5f4d089",
-    "claim_type": "product_release",
-    "subject": "Talkdesk ends the guesswork in deploying customer-facing AI agents - Press",
-    "predicate": "product_release",
-    "object": "| Talkdesk",
+    "claim_type": "deployment",
+    "subject": "Talkdesk ends the guesswork in",
+    "predicate": "deployment",
+    "object": "customer-facing AI agents - Press Releases | Talkdesk",
     "qualifiers": {
       "event_status": "announced",
-      "sequence": 2
+      "sequence": 1
     },
     "source_span": {
       "raw_id": "RAW-1b207453d5f4d089",
@@ -290,19 +101,61 @@
     },
     "source_quote": "Talkdesk ends the guesswork in deploying customer-facing AI agents",
     "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-96a8eccf516b8447",
+    "raw_id": "RAW-1b207453d5f4d089",
+    "claim_type": "deployment",
+    "subject": "Talkdesk ends the guesswork in",
+    "predicate": "deployment",
+    "object": "customer-facing AI agents - Press Releases | Talkdesk",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-1b207453d5f4d089",
+      "start": 1247,
+      "end": 1782
+    },
+    "source_quote": "By functioning as a specialized agent-building agent, the platform automatically ingests an enterprise’s existing raw assets, such as standard operating procedures and policies, and translates them into high-precision logical instructions and structured guardrails. Once new AI Agents are approved by a human operator and deployed, they’re continuously monitored, evaluated, and governed through the CXA Operations Center . This complete framework helps organizations grow their AI workforce without multiplying their operational risk.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-5a7a02d00bedf23e",
+    "raw_id": "RAW-1b207453d5f4d089",
+    "claim_type": "deployment",
+    "subject": "Talkdesk ends the guesswork in",
+    "predicate": "deployment",
+    "object": "customer-facing AI agents - Press Releases | Talkdesk",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-1b207453d5f4d089",
+      "start": 2693,
+      "end": 3236
+    },
+    "source_quote": "“You cannot simply deploy an AI agent into the wild and hope for the best. Organizations need proof that an agent will follow instructions, stay on brand, and handle pressure before a real customer ever experiences it,” said Munil Shah, chief product, technology, and customer officer at Talkdesk. “Talkdesk Agent Builder provides that certainty. By systematically debugging and validating interactions against simulated datasets, we give enterprises the confidence to expand their operations with an AI workforce that’s trusted and reliable.”",
+    "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
   },
   {
     "claim_id": "CL-ff398dbc34ca6316",
     "raw_id": "RAW-1b207453d5f4d089",
-    "claim_type": "product_release",
-    "subject": "Talkdesk ends the guesswork in deploying customer-facing AI agents - Press",
-    "predicate": "product_release",
-    "object": "| Talkdesk",
+    "claim_type": "deployment",
+    "subject": "Talkdesk ends the guesswork in",
+    "predicate": "deployment",
+    "object": "customer-facing AI agents - Press Releases | Talkdesk",
     "qualifiers": {
       "event_status": "announced",
-      "sequence": 3
+      "sequence": 4
     },
     "source_span": {
       "raw_id": "RAW-1b207453d5f4d089",
@@ -315,27 +168,6 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-165927b8a1a17c33",
-    "raw_id": "RAW-1b207453d5f4d089",
-    "claim_type": "product_release",
-    "subject": "Talkdesk ends the guesswork in deploying customer-facing AI agents - Press",
-    "predicate": "product_release",
-    "object": "| Talkdesk",
-    "qualifiers": {
-      "event_status": "announced",
-      "sequence": 4
-    },
-    "source_span": {
-      "raw_id": "RAW-1b207453d5f4d089",
-      "start": 245,
-      "end": 898
-    },
-    "source_quote": "PALO ALTO, Calif. — June 23, 2026 — Talkdesk®, Inc. , a leader in Customer Experience Automation (CXA) , today announced Talkdesk Agent Builder, a natural language-driven tool that enables both business users and technical teams to oversee the complete lifecycle of their customer service AI agents . Customer experience (CX) leaders describe the outcome they want to achieve with natural language, and Agent Builder creates, tests, diagnoses, and validates the AI agent before it ever interacts with a customer. The result is a faster path to production, lower deployment risk, and the ability to build a trusted AI workforce in hours instead of weeks.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
     "claim_id": "CL-61a6f1996a1979e6",
     "raw_id": "RAW-e52293cf087c6e5f",
     "claim_type": "funding",
@@ -343,7 +175,7 @@
     "predicate": "funding",
     "object": "$6.5M to Build the AI Agent Resource Network - AIsa News",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 1
     },
     "source_span": {
@@ -364,7 +196,7 @@
     "predicate": "funding",
     "object": "$6.5M to Build the AI Agent Resource Network - AIsa News",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 2
     },
     "source_span": {
@@ -385,7 +217,7 @@
     "predicate": "funding",
     "object": "$6.5M to Build the AI Agent Resource Network - AIsa News",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 3
     },
     "source_span": {
@@ -406,7 +238,7 @@
     "predicate": "funding",
     "object": "$6.5M to Build the AI Agent Resource Network - AIsa News",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 4
     },
     "source_span": {
@@ -861,7 +693,7 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-d05b87243b5fda5c",
+    "claim_id": "CL-60b815ce658fe627",
     "raw_id": "RAW-51fa066e1f539d1e",
     "claim_type": "service_change",
     "subject": "Meta 将于明日",
@@ -873,16 +705,16 @@
     },
     "source_span": {
       "raw_id": "RAW-51fa066e1f539d1e",
-      "start": 170,
-      "end": 210
+      "start": 69,
+      "end": 105
     },
-    "source_quote": "用户依然可以通过 Meta Llama 下载页面 获取并下载 Llama 模型。",
+    "source_quote": "该服务自发布以来，一直处于公共预览（Public Preview）阶段。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-801cd17a22cabf09",
+    "claim_id": "CL-368028d4325f1c06",
     "raw_id": "RAW-51fa066e1f539d1e",
     "claim_type": "service_change",
     "subject": "Meta 将于明日",
@@ -894,10 +726,10 @@
     },
     "source_span": {
       "raw_id": "RAW-51fa066e1f539d1e",
-      "start": 211,
-      "end": 245
+      "start": 106,
+      "end": 144
     },
-    "source_quote": "Meta 表示，建议用户迁移至支持 Llama 模型的第三方提供商。",
+    "source_quote": "届时，该服务将全面关闭，所有 API 请求将返回停用提示，并附带重定向指引。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"

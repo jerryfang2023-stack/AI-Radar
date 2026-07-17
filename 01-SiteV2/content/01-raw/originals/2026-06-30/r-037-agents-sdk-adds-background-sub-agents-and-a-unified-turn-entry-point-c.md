@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"New updates and improvements at 
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_zh: "Agents SDK新增后台子代理及统一回合入口点 · 更新日志"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Agents SDK adds background sub-agents and a unified turn entry point · Changelog

@@ -2,7 +2,7 @@
 id: SIG-20260622-A05
 type: signal_card
 signal_type: product_service
-title: "Capital 发布 AI 平台能力，面向企业 Agent 协作平台"
+title: "Sabre扩大代理型AI部署，Ultra Group在Linex旗下全球扩张"
 date: 2026-06-22
 status: published
 source_title: "Sabre scales agentic AI deployment as Ultra Group expands globally under Linex"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Capital"
 
 frontend:
-  displayTitle: "Capital 发布 AI 平台能力，面向企业 Agent 协作平台"
+  displayTitle: "Sabre扩大代理型AI部署，Ultra Group在Linex旗下全球扩张"
   sourceLinks:
     - "https://www.prnewswire.com/news-releases/sabre-scales-agentic-ai-deployment-as-ultra-group-expands-globally-under-linex-302803108.html"
 ---
 
-# Capital 发布 AI 平台能力，面向企业 Agent 协作平台
+# Sabre扩大代理型AI部署，Ultra Group在Linex旗下全球扩张
 
 ## 新闻事实
 

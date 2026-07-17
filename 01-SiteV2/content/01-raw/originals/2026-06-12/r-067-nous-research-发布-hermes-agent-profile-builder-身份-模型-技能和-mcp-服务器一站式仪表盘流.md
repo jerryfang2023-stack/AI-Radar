@@ -72,6 +72,10 @@ key_excerpts: [{"type":"workflow_change","text":"Nous Research 为 Hermes Agent 
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Nous Research 发布 Hermes Agent Profile Builder：身份、模型、技能和 MCP 服务器一站式仪表盘流"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Nous Research 发布 Hermes Agent Profile Builder：身份、模型、技能和 MCP 服务器一站式仪表盘流

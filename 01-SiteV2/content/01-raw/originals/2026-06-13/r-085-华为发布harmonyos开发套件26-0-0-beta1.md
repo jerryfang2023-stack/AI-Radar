@@ -72,6 +72,10 @@ key_excerpts: [{"type":"supporting_context","text":"华为在HDC2026面向开发
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "华为发布HarmonyOS开发套件26.0.0 Beta1"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 华为发布HarmonyOS开发套件26.0.0 Beta1

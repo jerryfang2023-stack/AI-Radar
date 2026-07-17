@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"# Best Vertical AI Agents in 2026: 
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_zh: "2026年最佳垂直AI代理：排名与对比... - EasyClaw"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Best Vertical AI Agents in 2026: Ranked, Compared ... - EasyClaw

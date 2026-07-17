@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"Focus first on governance, owner-de
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "在与企业的对话中，我看到了三种截然不同的人工智能现实……"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # In my conversations with enterprises I see three distinct AI realities ...

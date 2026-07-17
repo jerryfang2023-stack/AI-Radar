@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"三星电子向韩国全体员工及全�
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "三星在韩国及全球DX部门部署ChatGPT Enterprise和Codex"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 三星在韩国及全球DX部门部署ChatGPT Enterprise和Codex

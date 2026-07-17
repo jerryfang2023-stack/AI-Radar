@@ -2,7 +2,7 @@
 id: SIG-20260623-A13
 type: signal_card
 signal_type: product_service
-title: "Jedify 推出 Agent 工作流，面向销售线索和收入团队协作"
+title: "Jedify：企业AI缺失的一层——Norwest"
 date: 2026-06-23
 status: published
 source_title: "Jedify: The Missing Layer in Enterprise AI - Norwest"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Jedify"
 
 frontend:
-  displayTitle: "Jedify 推出 Agent 工作流，面向销售线索和收入团队协作"
+  displayTitle: "Jedify：企业AI缺失的一层——Norwest"
   sourceLinks:
     - "https://www.norwest.com/blog/jedify-the-missing-layer-in-enterprise-ai/"
 ---
 
-# Jedify 推出 Agent 工作流，面向销售线索和收入团队协作
+# Jedify：企业AI缺失的一层——Norwest
 
 ## 新闻事实
 

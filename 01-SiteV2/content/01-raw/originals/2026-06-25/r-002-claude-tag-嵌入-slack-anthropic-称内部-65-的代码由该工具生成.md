@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"Anthropic 推出 Claude Tag，允许团�
 theme: outside-core-exploration
 keyword_group: outside-core-exploration
 copyright_note: local research archive only
+title_zh: "Claude Tag 嵌入 Slack，Anthropic 称内部 65% 的代码由该工具生成"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Claude Tag 嵌入 Slack，Anthropic 称内部 65% 的代码由该工具生成

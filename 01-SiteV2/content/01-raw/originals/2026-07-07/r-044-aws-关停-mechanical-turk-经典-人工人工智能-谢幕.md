@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-044
 title: "AWS 关停 Mechanical Turk，经典\"人工人工智能\"谢幕"
 title_zh: "AWS 关停 Mechanical Turk，经典\"人工人工智能\"谢幕"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://the-decoder.com/amazon-sunsets-mechanical-turk-the-original-artificial-artificial-intelligence"
 canonical_url: "https://the-decoder.com/amazon-sunsets-mechanical-turk-the-original-artificial-artificial-intelligence"
 source_name: "The Decoder：AI News（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-07T02:46:59.755Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # AWS 关停 Mechanical Turk，经典"人工人工智能"谢幕

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"supporting_context","text":"DeepSeek 在 2026 年 6 月�
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "DeepSeek 在 2026 年 6 月登顶 Ramp 热门软件供应商，美国公司追逐更便宜的 AI"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # DeepSeek 在 2026 年 6 月登顶 Ramp 热门软件供应商，美国公司追逐更便宜的 AI

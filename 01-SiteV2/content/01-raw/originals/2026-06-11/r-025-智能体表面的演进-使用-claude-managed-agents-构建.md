@@ -72,6 +72,10 @@ key_excerpts: [{"type":"supporting_context","text":"Anthropic 推出 Claude Mana
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "智能体表面的演进：使用 Claude Managed Agents 构建"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 智能体表面的演进：使用 Claude Managed Agents 构建

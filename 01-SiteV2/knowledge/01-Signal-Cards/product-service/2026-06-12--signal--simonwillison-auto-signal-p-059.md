@@ -2,7 +2,7 @@
 id: SIG-20260612-A20
 type: signal_card
 signal_type: product_service
-title: "Simonwillison 推出 Agent 工作流能力，切入地产和建筑设计工作流"
+title: "Datasette 1.0a33 发布"
 date: 2026-06-12
 status: published
 source_title: "Datasette 1.0a33 发布"
@@ -59,12 +59,12 @@ opportunity_signals:
 signal_owner: "Simonwillison"
 
 frontend:
-  displayTitle: "Simonwillison 推出 Agent 工作流能力，切入地产和建筑设计工作流"
+  displayTitle: "Datasette 1.0a33 发布"
   sourceLinks:
     - "https://simonwillison.net/2026/Jun/11/datasette"
 ---
 
-# Simonwillison 推出 Agent 工作流能力，切入地产和建筑设计工作流
+# Datasette 1.0a33 发布
 
 ## 新闻事实
 

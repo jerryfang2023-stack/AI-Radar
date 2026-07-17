@@ -14,6 +14,13 @@
     "source_ref": "SA-683056adde0cfa1f"
   },
   {
+    "qa_id": "QA-ccb243a21e8ffec1",
+    "asset_id": "RAW-ebeb71c75571d12a",
+    "reason": "no_source_bounded_claim",
+    "status": "review_optional",
+    "source_ref": "SA-b61e012c7293516f"
+  },
+  {
     "qa_id": "QA-3db0584fe950390c",
     "asset_id": "RAW-8aad9e7b9edd13d8",
     "reason": "no_source_bounded_event",
@@ -343,13 +350,6 @@
     "source_ref": "SA-7d2257456fde8afe"
   },
   {
-    "qa_id": "QA-e76830bb10c05077",
-    "asset_id": "RAW-9cf068907b7e995a",
-    "reason": "no_source_bounded_event",
-    "status": "review_optional",
-    "source_ref": "SA-2d56119bf44508c8"
-  },
-  {
     "qa_id": "QA-ec245ba6af4935d7",
     "asset_id": "RAW-0e2ea9051cd40511",
     "reason": "community_source_requires_original_event_source",
@@ -387,7 +387,7 @@
   {
     "qa_id": "QA-7137c96a6d824fc1",
     "asset_id": "RAW-1b8a8ac9fd14dd4c",
-    "reason": "no_source_bounded_event",
+    "reason": "rumor_requires_primary_confirmation",
     "status": "review_optional",
     "source_ref": "SA-6932ec8f6e56fd24"
   },
@@ -404,20 +404,6 @@
     "reason": "community_source_requires_original_event_source",
     "status": "review_optional",
     "source_ref": "SA-a25e9e2b88ebbfac"
-  },
-  {
-    "qa_id": "QA-7b664bad421dec20",
-    "asset_id": "RAW-598508a5e1b7a883",
-    "reason": "no_source_bounded_event",
-    "status": "review_optional",
-    "source_ref": "SA-246354c753054733"
-  },
-  {
-    "qa_id": "QA-bbe9c4aca63b6f48",
-    "asset_id": "RAW-6b39826d0f5a2474",
-    "reason": "no_source_bounded_event",
-    "status": "review_optional",
-    "source_ref": "SA-c023caafc814d4ca"
   },
   {
     "qa_id": "QA-5f96f2630cf05726",
@@ -646,7 +632,7 @@
   {
     "qa_id": "QA-dc938564a71bc970",
     "asset_id": "RAW-bbe96f6fa9e44127",
-    "reason": "no_source_bounded_event",
+    "reason": "rumor_requires_primary_confirmation",
     "status": "review_optional",
     "source_ref": "SA-3d2f551d5aaaabab"
   },
@@ -854,6 +840,13 @@
     "source_ref": "SA-2885dd6b444572d3"
   },
   {
+    "qa_id": "QA-31721d57eecb8aaf",
+    "asset_id": "RAW-1205c825e84d9358",
+    "reason": "no_source_bounded_claim",
+    "status": "review_optional",
+    "source_ref": "SA-889f824d7658c2dd"
+  },
+  {
     "qa_id": "QA-28a9e24a31d1febf",
     "asset_id": "RAW-2034756816c77505",
     "reason": "no_source_bounded_event",
@@ -868,11 +861,11 @@
     "source_ref": "SA-9b2376741c7e789b"
   },
   {
-    "qa_id": "QA-17cb4d56875e41fe",
-    "asset_id": "RAW-27e48b07974ca2a7",
-    "reason": "no_source_bounded_event",
+    "qa_id": "QA-aaee63adbc2cf0f5",
+    "asset_id": "RAW-57f427828fbca60f",
+    "reason": "no_source_bounded_claim",
     "status": "review_optional",
-    "source_ref": "SA-d23b5a4c0de7e988"
+    "source_ref": "SA-51bcff65d3d03c2c"
   },
   {
     "qa_id": "QA-106bda99db5cb691",
@@ -908,6 +901,13 @@
     "reason": "no_source_bounded_event",
     "status": "review_optional",
     "source_ref": "SA-428250de014b3ecd"
+  },
+  {
+    "qa_id": "QA-376afbf9344fcf8b",
+    "asset_id": "RAW-deabeead4a96ec66",
+    "reason": "no_source_bounded_claim",
+    "status": "review_optional",
+    "source_ref": "SA-155a43ce671e87f7"
   },
   {
     "qa_id": "QA-dae28ff264dcc19e",
@@ -950,13 +950,6 @@
     "reason": "raw_document_not_auditable",
     "status": "open",
     "source_ref": "SA-d6f14e5f2bbb7fbe"
-  },
-  {
-    "qa_id": "QA-d68846a756201f8b",
-    "asset_id": "RAW-b679d1dfe5074385",
-    "reason": "no_source_bounded_event",
-    "status": "review_optional",
-    "source_ref": "SA-96cf95551f37ccd7"
   },
   {
     "qa_id": "QA-c027a10286ec546f",
@@ -2128,59 +2121,10 @@
     "source_ref": "SA-a5d7a7bbad41c109"
   },
   {
-    "qa_id": "QA-c2baa6f2f6afff85",
-    "asset_id": "EV-b93b5cc15823e9c3",
-    "reason": "public_event_title_incomplete",
-    "status": "open",
-    "source_ref": "SA-526ea30d865f3f42"
-  },
-  {
     "qa_id": "QA-9f45f4259100adf6",
     "asset_id": "EV-bd5fd963c3c71c29",
     "reason": "public_event_title_incomplete",
     "status": "open",
     "source_ref": "SA-edacd4205f9bd222"
-  },
-  {
-    "qa_id": "QA-5aafb7ab8e36c7b3",
-    "asset_id": "EV-6a2f3e9a22edff64",
-    "reason": "public_event_title_incomplete",
-    "status": "open",
-    "source_ref": "SA-c43517546564505d"
-  },
-  {
-    "qa_id": "QA-c30587555f4a4a06",
-    "asset_id": "EV-0592458e094f26cc",
-    "reason": "public_event_title_incomplete",
-    "status": "open",
-    "source_ref": "SA-d49b0b6529e2ac33"
-  },
-  {
-    "qa_id": "QA-ddf7875ba07798c9",
-    "asset_id": "EV-9c41acd6ef6df77f",
-    "reason": "public_event_title_incomplete",
-    "status": "open",
-    "source_ref": "SA-c400290e5fe0c888"
-  },
-  {
-    "qa_id": "QA-71e748c80095b76c",
-    "asset_id": "EV-ddd7bf9ce946c7d0",
-    "reason": "public_event_title_incomplete",
-    "status": "open",
-    "source_ref": "SA-7aaf47f57230dc6f"
-  },
-  {
-    "qa_id": "QA-d56c3b4e588d1e09",
-    "asset_id": "EV-3fb9fc2247da0e5b",
-    "reason": "public_event_title_incomplete",
-    "status": "open",
-    "source_ref": "SA-889f824d7658c2dd"
-  },
-  {
-    "qa_id": "QA-3ee7c749fc35e09d",
-    "asset_id": "EV-fb4db66e7d75bce1",
-    "reason": "public_event_title_incomplete",
-    "status": "open",
-    "source_ref": "SA-51bcff65d3d03c2c"
   }
 ]

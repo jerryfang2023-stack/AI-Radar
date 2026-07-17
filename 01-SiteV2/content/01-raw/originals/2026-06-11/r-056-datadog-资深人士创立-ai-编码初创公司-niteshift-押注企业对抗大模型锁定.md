@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"AI 编码智能体初创公司 Niteshif
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "Datadog 资深人士创立 AI 编码初创公司 Niteshift，押注企业对抗大模型锁定"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Datadog 资深人士创立 AI 编码初创公司 Niteshift，押注企业对抗大模型锁定

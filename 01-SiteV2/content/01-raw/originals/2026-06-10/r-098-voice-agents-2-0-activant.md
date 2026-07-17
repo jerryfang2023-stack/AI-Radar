@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":", building internal trust for future ex
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "语音代理 2.0 — Activant"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Voice Agents 2.0 — Activant

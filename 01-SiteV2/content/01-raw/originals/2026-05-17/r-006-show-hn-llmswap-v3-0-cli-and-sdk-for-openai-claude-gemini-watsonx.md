@@ -57,6 +57,10 @@ key_excerpts: [{"type":"company_action","text":"2 points / 0 comments / query=AI
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "Show HN：Llmswap v3.0 – 面向OpenAI、Claude、Gemini、Watsonx的命令行界面与SDK"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Show HN: Llmswap v3.0 – CLI and SDK for OpenAI, Claude, Gemini, Watsonx

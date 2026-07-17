@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-084
 title: "Anthropic 推出 Claude for Teachers，免费向美国 K-12 教师提供高级功能"
 title_zh: "Anthropic 推出 Claude for Teachers，免费向美国 K-12 教师提供高级功能"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/976/791.htm"
 canonical_url: "https://ithome.com/0/976/791.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-15T04:28:38.067Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Anthropic 推出 Claude for Teachers，免费向美国 K-12 教师提供高级功能

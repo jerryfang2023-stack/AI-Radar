@@ -2,7 +2,7 @@
 id: SIG-20260628-A01
 type: signal_card
 signal_type: case
-title: "Lakeflow: A new era of agentic data engineering"
+title: "Lakeflow：代理式数据工程的新纪元 | Databricks 博客"
 date: 2026-06-28
 status: published
 source_title: "Lakeflow: A new era of agentic data engineering | Databricks Blog"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Lakeflow"
 
 frontend:
-  displayTitle: "Lakeflow: A new era of agentic data engineering"
+  displayTitle: "Lakeflow：代理式数据工程的新纪元 | Databricks 博客"
   sourceLinks:
     - "https://www.databricks.com/blog/lakeflow-new-era-agentic-data-engineering"
 ---
 
-# Lakeflow: A new era of agentic data engineering
+# Lakeflow：代理式数据工程的新纪元 | Databricks 博客
 
 ## 新闻事实
 

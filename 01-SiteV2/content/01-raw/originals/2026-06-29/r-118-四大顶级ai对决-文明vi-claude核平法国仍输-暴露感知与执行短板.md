@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"英国前首相府数据科学家Liam Wi
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "四大顶级AI对决《文明VI》：Claude核平法国仍输，暴露感知与执行短板"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 四大顶级AI对决《文明VI》：Claude核平法国仍输，暴露感知与执行短板

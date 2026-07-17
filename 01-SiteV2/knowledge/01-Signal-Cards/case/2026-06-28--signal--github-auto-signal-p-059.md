@@ -2,7 +2,7 @@
 id: SIG-20260628-A21
 type: signal_card
 signal_type: case
-title: "What are git worktrees, and why should I use them?"
+title: "什么是 git worktrees，以及为什么应该使用它们？"
 date: 2026-06-28
 status: published
 source_title: "What are git worktrees, and why should I use them?"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "GitHub"
 
 frontend:
-  displayTitle: "What are git worktrees, and why should I use them?"
+  displayTitle: "什么是 git worktrees，以及为什么应该使用它们？"
   sourceLinks:
     - "https://github.blog/ai-and-ml/github-copilot/what-are-git-worktrees-and-why-should-i-use-them/"
 ---
 
-# What are git worktrees, and why should I use them?
+# 什么是 git worktrees，以及为什么应该使用它们？
 
 ## 新闻事实
 

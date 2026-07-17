@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"Z Lab、Modal 与 SGLang 团队联�
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "下一代投机解码：DFlash 与 Spec V2"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 下一代投机解码：DFlash 与 Spec V2

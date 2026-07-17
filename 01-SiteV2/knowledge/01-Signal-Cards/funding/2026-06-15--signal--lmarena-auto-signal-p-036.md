@@ -2,7 +2,7 @@
 id: SIG-20260615-A03
 type: signal_card
 signal_type: funding
-title: "LMArena 获得$1.7B 融资，押注地产和建筑设计工作流"
+title: "[评估现状] LMArena的17亿美元愿景 — Anastasios Angelopoulos, LMArena"
 date: 2026-06-15
 status: published
 source_title: "State of Evals] LMArena's $1.7B Vision — Anastasios Angelopoulos, LMArena"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "LMArena"
 
 frontend:
-  displayTitle: "LMArena 获得$1.7B 融资，押注地产和建筑设计工作流"
+  displayTitle: "[评估现状] LMArena的17亿美元愿景 — Anastasios Angelopoulos, LMArena"
   sourceLinks:
     - "https://www.latent.space/p/state-of-evals-lmarenas-17b-vision"
 ---
 
-# LMArena 获得$1.7B 融资，押注地产和建筑设计工作流
+# [评估现状] LMArena的17亿美元愿景 — Anastasios Angelopoulos, LMArena
 
 ## 新闻事实
 

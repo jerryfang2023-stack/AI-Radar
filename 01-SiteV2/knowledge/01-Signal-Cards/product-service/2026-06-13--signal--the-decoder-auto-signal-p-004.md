@@ -2,7 +2,7 @@
 id: SIG-20260613-A16
 type: signal_card
 signal_type: product_service
-title: "The-Decoder 发布 AI 基础设施能力，切入地产和建筑设计工作流"
+title: "Anthropic限制Mythos模型部分任务，自建应用与客户竞争引反弹"
 date: 2026-06-13
 status: published
 source_title: "Anthropic限制Mythos模型部分任务，自建应用与客户竞争引反弹"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "The-Decoder"
 
 frontend:
-  displayTitle: "The-Decoder 发布 AI 基础设施能力，切入地产和建筑设计工作流"
+  displayTitle: "Anthropic限制Mythos模型部分任务，自建应用与客户竞争引反弹"
   sourceLinks:
     - "https://the-decoder.com/the-ai-industrys-platform-trap-is-starting-to-look-a-lot-like-microsofts"
 ---
 
-# The-Decoder 发布 AI 基础设施能力，切入地产和建筑设计工作流
+# Anthropic限制Mythos模型部分任务，自建应用与客户竞争引反弹
 
 ## 新闻事实
 

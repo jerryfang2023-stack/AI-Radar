@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"Anthropic 于周二推出 Claude Science
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Anthropic 推出 Claude Science 科学家 AI 工作台"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Anthropic 推出 Claude Science 科学家 AI 工作台

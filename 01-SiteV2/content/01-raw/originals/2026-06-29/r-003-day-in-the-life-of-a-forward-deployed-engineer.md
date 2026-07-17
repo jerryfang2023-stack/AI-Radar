@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"Day in the life of a Forward Deploy
 theme: enterprise-ai-implementation-signal
 keyword_group: enterprise-ai-implementation-signal
 copyright_note: local research archive only
+title_zh: "前线部署工程师的一天"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Day in the Life of a Forward Deployed Engineer

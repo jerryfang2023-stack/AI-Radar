@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-002
 title: "巴黎AI语音初创Gradium获1亿美元种子轮融资，Nvidia参投"
 title_zh: "巴黎AI语音初创Gradium获1亿美元种子轮融资，Nvidia参投"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://techcrunch.com/2026/07/09/paris-based-ai-voice-startup-gradium-raises-100m-seed-backed-by-nvidia"
 canonical_url: "https://techcrunch.com/2026/07/09/paris-based-ai-voice-startup-gradium-raises-100m-seed-backed-by-nvidia"
 source_name: "TechCrunch：AI（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-10T01:59:44.088Z
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 巴黎AI语音初创Gradium获1亿美元种子轮融资，Nvidia参投

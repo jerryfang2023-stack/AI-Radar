@@ -2,7 +2,7 @@
 id: SIG-20260709-A16
 type: signal_card
 signal_type: case
-title: "Zo Computer 在 Vercel 上将 AI 可靠性提升 20 倍"
+title: "Zo Computer在Vercel上将AI可靠性提升20倍 - Vercel"
 date: 2026-07-09
 status: published
 source_title: "How Zo Computer improved AI reliability 20x on Vercel - Vercel"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "Vercel"
 
 frontend:
-  displayTitle: "Zo Computer 在 Vercel 上将 AI 可靠性提升 20 倍"
+  displayTitle: "Zo Computer在Vercel上将AI可靠性提升20倍 - Vercel"
   sourceLinks:
     - "https://vercel.com/blog/how-zo-computer-improved-ai-reliability-20x-on-vercel"
 ---
 
-# Zo Computer 在 Vercel 上将 AI 可靠性提升 20 倍
+# Zo Computer在Vercel上将AI可靠性提升20倍 - Vercel
 
 ## 新闻事实
 

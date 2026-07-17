@@ -1,7 +1,7 @@
 ---
 id: CASE-20260518-03
 type: case_card
-title: "keyword search：千问 - 阿里Qwen大模型打造的 AI 对话助手"
+title: "千问 - 阿里Qwen大模型打造的 AI 对话助手"
 date: 2026-05-18
 status: draft
 created_at: 2026-05-19T05:28:07.902Z
@@ -69,7 +69,7 @@ internal:
   last_reviewed: 2026-05-18
 ---
 
-# keyword search：千问 - 阿里Qwen大模型打造的 AI 对话助手
+# 千问 - 阿里Qwen大模型打造的 AI 对话助手
 
 ## 这个案例是谁
 

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"company_action","text":"From creating SWE-bench in a Pri
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "[代码评估现状] SWE-bench之后，Code Clash与SOTA编码基准回顾——John Yang"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # [State of Code Evals] After SWE-bench, Code Clash &amp; SOTA Coding Benchmarks recap — John Yang

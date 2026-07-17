@@ -2,7 +2,7 @@
 id: SIG-20260703-A01
 type: signal_card
 signal_type: funding
-title: "Tasklet 获得 $20M 融资"
+title: "Tasklet 获投2000万美元，打造云端工作代理操作系统"
 date: 2026-07-03
 status: published
 source_title: "We've raised $20M to build the cloud agent OS for work - Release Notes - Tasklet"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Tasklet"
 
 frontend:
-  displayTitle: "Tasklet 获得 $20M 融资"
+  displayTitle: "Tasklet 获投2000万美元，打造云端工作代理操作系统"
   sourceLinks:
     - "https://tasklet.ai/release-notes/2026-04-07-20m-funding"
 ---
 
-# Tasklet 获得 $20M 融资
+# Tasklet 获投2000万美元，打造云端工作代理操作系统
 
 ## 新闻事实
 

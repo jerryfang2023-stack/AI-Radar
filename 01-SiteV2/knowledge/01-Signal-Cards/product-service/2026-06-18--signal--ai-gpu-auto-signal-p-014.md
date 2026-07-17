@@ -2,7 +2,7 @@
 id: SIG-20260618-A20
 type: signal_card
 signal_type: product_service
-title: "AI编码智能体教会机器人安装GPU和剪扎带 发布 AI 基础设施能力，切入模型部署和算力服务"
+title: "AI编码智能体教会机器人安装GPU和剪扎带--NVIDIA GEAR等团队开发ENPIRE框架"
 date: 2026-06-18
 status: published
 source_title: "AI编码智能体教会机器人安装GPU和剪扎带--NVIDIA GEAR等团队开发ENPIRE框架"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "AI编码智能体教会机器人安装GPU和剪扎带"
 
 frontend:
-  displayTitle: "AI编码智能体教会机器人安装GPU和剪扎带 发布 AI 基础设施能力，切入模型部署和算力服务"
+  displayTitle: "AI编码智能体教会机器人安装GPU和剪扎带--NVIDIA GEAR等团队开发ENPIRE框架"
   sourceLinks:
     - "https://arstechnica.com/ai/2026/06/ai-coding-agents-can-autonomously-direct-robot-training"
 ---
 
-# AI编码智能体教会机器人安装GPU和剪扎带 发布 AI 基础设施能力，切入模型部署和算力服务
+# AI编码智能体教会机器人安装GPU和剪扎带--NVIDIA GEAR等团队开发ENPIRE框架
 
 ## 新闻事实
 

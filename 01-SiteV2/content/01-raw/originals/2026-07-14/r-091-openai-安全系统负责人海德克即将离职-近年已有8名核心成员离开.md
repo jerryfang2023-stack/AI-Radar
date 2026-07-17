@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-091
 title: "OpenAI 安全系统负责人海德克即将离职，近年已有8名核心成员离开"
 title_zh: "OpenAI 安全系统负责人海德克即将离职，近年已有8名核心成员离开"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/976/262.htm"
 canonical_url: "https://ithome.com/0/976/262.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-14T01:56:51.840Z
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # OpenAI 安全系统负责人海德克即将离职，近年已有8名核心成员离开

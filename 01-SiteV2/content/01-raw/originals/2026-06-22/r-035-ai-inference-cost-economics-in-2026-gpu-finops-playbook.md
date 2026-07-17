@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"# AI Inference Cost Economics in 2026: G
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_zh: "2026年AI推理成本经济学：GPU财务运营指南"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # AI Inference Cost Economics in 2026: GPU FinOps Playbook

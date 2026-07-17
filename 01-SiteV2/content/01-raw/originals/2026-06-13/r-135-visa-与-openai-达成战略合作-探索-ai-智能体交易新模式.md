@@ -72,6 +72,10 @@ key_excerpts: [{"type":"supporting_context","text":"Visa 日前宣布与 OpenAI 
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "Visa 与 OpenAI 达成战略合作，探索 AI 智能体交易新模式"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Visa 与 OpenAI 达成战略合作，探索 AI 智能体交易新模式

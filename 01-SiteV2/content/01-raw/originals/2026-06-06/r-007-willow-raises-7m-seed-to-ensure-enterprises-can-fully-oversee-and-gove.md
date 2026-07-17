@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"# Willow Raises $7M Seed to Ensure Ente
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Willow 获 700 万美元种子轮融资，确保企业全面监管自主代理"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Willow Raises $7M Seed to Ensure Enterprises Can Fully Oversee and Govern Autonomous Agents

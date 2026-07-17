@@ -233,10 +233,10 @@
   {
     "claim_id": "CL-82f00a90d2b461ee",
     "raw_id": "RAW-00abea76a539b3a4",
-    "claim_type": "product_release",
+    "claim_type": "research_result",
     "subject": "Hugging Face 博客",
-    "predicate": "product_release",
-    "object": "语音智能体代码切换基准测试",
+    "predicate": "research_result",
+    "object": "测试",
     "qualifiers": {
       "event_status": "completed",
       "sequence": 1
@@ -441,27 +441,6 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-1851a003cfc5c07a",
-    "raw_id": "RAW-d9551535eaf8e69a",
-    "claim_type": "model_release",
-    "subject": "Anthropic",
-    "predicate": "model_release",
-    "object": "Anthropic’s Claude Fable 5 is a version of Mythos the public can access today",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 2
-    },
-    "source_span": {
-      "raw_id": "RAW-d9551535eaf8e69a",
-      "start": 3,
-      "end": 80
-    },
-    "source_quote": "Anthropic’s Claude Fable 5 is a version of Mythos the public can access today",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
     "claim_id": "CL-84f70f2a285c9c39",
     "raw_id": "RAW-d9551535eaf8e69a",
     "claim_type": "model_release",
@@ -470,7 +449,7 @@
     "object": "Launched as a preview in April, Mythos was initially limited to a handful of partners due to cybersecurity concerns. Last week, Anthropic expanded access to hundreds of organizations across 15 countries, again focusing on organizations that manage critical infrastructure.",
     "qualifiers": {
       "event_status": "completed",
-      "sequence": 3
+      "sequence": 2
     },
     "source_span": {
       "raw_id": "RAW-d9551535eaf8e69a",
@@ -491,7 +470,7 @@
     "object": "Now a version of that technology is available to anyone through Anthropic’s Claude API and consumption-based Enterprise plans. Access on subscriptions will roll out in stages: Through June 22, Fable 5 will be included in Pro, Max, Team, and seat-based Enterprise plans at no extra cost. On June 23, Anthropic will pull Fable 5 from those plans, requiring usage credits going forward, with plans to restore it as a standard subscription feature as soon as possible.",
     "qualifiers": {
       "event_status": "completed",
-      "sequence": 4
+      "sequence": 3
     },
     "source_span": {
       "raw_id": "RAW-d9551535eaf8e69a",
@@ -499,6 +478,27 @@
       "end": 1355
     },
     "source_quote": "Now a version of that technology is available to anyone through Anthropic’s Claude API and consumption-based Enterprise plans. Access on subscriptions will roll out in stages: Through June 22, Fable 5 will be included in Pro, Max, Team, and seat-based Enterprise plans at no extra cost. On June 23, Anthropic will pull Fable 5 from those plans, requiring usage credits going forward, with plans to restore it as a standard subscription feature as soon as possible.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-1851a003cfc5c07a",
+    "raw_id": "RAW-d9551535eaf8e69a",
+    "claim_type": "model_release",
+    "subject": "Anthropic",
+    "predicate": "model_release",
+    "object": "Anthropic’s Claude Fable 5 is a version of Mythos the public can access today",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-d9551535eaf8e69a",
+      "start": 3,
+      "end": 80
+    },
+    "source_quote": "Anthropic’s Claude Fable 5 is a version of Mythos the public can access today",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -525,27 +525,6 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-9a266b0fa28a06e3",
-    "raw_id": "RAW-7bfe3b131447b76b",
-    "claim_type": "model_release",
-    "subject": "Anthropic",
-    "predicate": "model_release",
-    "object": "Claude Fable 5",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 2
-    },
-    "source_span": {
-      "raw_id": "RAW-7bfe3b131447b76b",
-      "start": 3,
-      "end": 80
-    },
-    "source_quote": "Anthropic’s Claude Fable 5 is a version of Mythos the public can access today",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
     "claim_id": "CL-f10c16fd23860c12",
     "raw_id": "RAW-7bfe3b131447b76b",
     "claim_type": "model_release",
@@ -554,7 +533,7 @@
     "object": "Claude Fable 5",
     "qualifiers": {
       "event_status": "completed",
-      "sequence": 3
+      "sequence": 2
     },
     "source_span": {
       "raw_id": "RAW-7bfe3b131447b76b",
@@ -575,7 +554,7 @@
     "object": "Claude Fable 5",
     "qualifiers": {
       "event_status": "completed",
-      "sequence": 4
+      "sequence": 3
     },
     "source_span": {
       "raw_id": "RAW-7bfe3b131447b76b",
@@ -588,6 +567,27 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-9a266b0fa28a06e3",
+    "raw_id": "RAW-7bfe3b131447b76b",
+    "claim_type": "model_release",
+    "subject": "Anthropic",
+    "predicate": "model_release",
+    "object": "Claude Fable 5",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-7bfe3b131447b76b",
+      "start": 3,
+      "end": 80
+    },
+    "source_quote": "Anthropic’s Claude Fable 5 is a version of Mythos the public can access today",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-7def33f631247792",
     "raw_id": "RAW-4f79a58131b0b84b",
     "claim_type": "funding",
@@ -595,7 +595,7 @@
     "predicate": "funding",
     "object": "$30m Series A to Bring Agentic AI to Enterprise Procurement | HELIAD Hightlights",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 1
     },
     "source_span": {
@@ -616,7 +616,7 @@
     "predicate": "funding",
     "object": "$30m Series A to Bring Agentic AI to Enterprise Procurement | HELIAD Hightlights",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 2
     },
     "source_span": {
@@ -637,7 +637,7 @@
     "predicate": "funding",
     "object": "$30m Series A to Bring Agentic AI to Enterprise Procurement | HELIAD Hightlights",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 3
     },
     "source_span": {
@@ -658,7 +658,7 @@
     "predicate": "funding",
     "object": "$30m Series A to Bring Agentic AI to Enterprise Procurement | HELIAD Hightlights",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 4
     },
     "source_span": {
@@ -667,90 +667,6 @@
       "end": 616
     },
     "source_quote": "funding round led by Andreessen Horowitz (a16z), with participation from SV Angels, Harry",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-72a8b20e5b822de1",
-    "raw_id": "RAW-5b12da994b0520f8",
-    "claim_type": "product_release",
-    "subject": "Claude Managed Agents",
-    "predicate": "product_release",
-    "object": "定时运行和环境变量存储功能",
-    "qualifiers": {
-      "event_status": "announced",
-      "sequence": 1
-    },
-    "source_span": {
-      "raw_id": "RAW-5b12da994b0520f8",
-      "start": 0,
-      "end": 194
-    },
-    "source_quote": "Starting today, Claude Managed Agents can run on a schedule and securely access CLI tools and other authenticated services. Both features are now available in public beta on the Claude Platform.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.9,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-99232d93a7502389",
-    "raw_id": "RAW-5b12da994b0520f8",
-    "claim_type": "product_release",
-    "subject": "Claude Managed Agents",
-    "predicate": "product_release",
-    "object": "定时运行和环境变量存储功能",
-    "qualifiers": {
-      "event_status": "announced",
-      "sequence": 2
-    },
-    "source_span": {
-      "raw_id": "RAW-5b12da994b0520f8",
-      "start": 1019,
-      "end": 1256
-    },
-    "source_quote": "Actively AI uses Managed Agents to power cross-account agentic search for sales teams. Scheduled deployments refresh answers regularly, simplifying their stack by replacing scheduling infrastructure the team initially built themselves. ‍",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-2b30b83b9a3a5aff",
-    "raw_id": "RAW-5b12da994b0520f8",
-    "claim_type": "product_release",
-    "subject": "Claude Managed Agents",
-    "predicate": "product_release",
-    "object": "定时运行和环境变量存储功能",
-    "qualifiers": {
-      "event_status": "announced",
-      "sequence": 3
-    },
-    "source_span": {
-      "raw_id": "RAW-5b12da994b0520f8",
-      "start": 2012,
-      "end": 2620
-    },
-    "source_quote": "The agent never sees your key because the sandbox only holds a placeholder. The real key is attached at the network boundary, and only on requests to domains you allow, so it only goes where you’ve approved. To change a key, update it in the vault, and running sessions will pick up the new value on their next call. Most CLIs that send their key in an HTTP request work this way, including the Browserbase, KERNEL, Notion, Ramp, and Sentry CLIs. Browserbase and KERNEL give Managed Agents browser capabilities for the first time, so agents can navigate and interact with the web alongside their other tools.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-fb31c1d43120967f",
-    "raw_id": "RAW-5b12da994b0520f8",
-    "claim_type": "product_release",
-    "subject": "Claude Managed Agents",
-    "predicate": "product_release",
-    "object": "定时运行和环境变量存储功能",
-    "qualifiers": {
-      "event_status": "announced",
-      "sequence": 4
-    },
-    "source_span": {
-      "raw_id": "RAW-5b12da994b0520f8",
-      "start": 3563,
-      "end": 3843
-    },
-    "source_quote": "“Environment variables in vaults let us securely roll out the Notion CLI, meeting our security team’s strict guidelines by ensuring sensitive API tokens are never handed to agents. The CLI is complementary to MCP tools, enabling file-upload capabilities in Claude Managed Agents.”",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -840,132 +756,6 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-7736eddc43100860",
-    "raw_id": "RAW-74f0f8830b9efa62",
-    "claim_type": "model_release",
-    "subject": "Cohere",
-    "predicate": "model_release",
-    "object": "Introducing North Mini Code: Cohere’s First Model For Developers",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 1
-    },
-    "source_span": {
-      "raw_id": "RAW-74f0f8830b9efa62",
-      "start": 17,
-      "end": 81
-    },
-    "source_quote": "Introducing North Mini Code: Cohere’s First Model For Developers",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.9,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-ecadc77f4ca55bdb",
-    "raw_id": "RAW-74f0f8830b9efa62",
-    "claim_type": "model_release",
-    "subject": "Cohere",
-    "predicate": "model_release",
-    "object": "Today, we are releasing North Mini Code, a 30B-parameter Mixture-of-Experts model with 3B active parameters with powerful agentic coding capabilities, available on Hugging Face under the Apache 2.0 license.",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 2
-    },
-    "source_span": {
-      "raw_id": "RAW-74f0f8830b9efa62",
-      "start": 219,
-      "end": 425
-    },
-    "source_quote": "Today, we are releasing North Mini Code, a 30B-parameter Mixture-of-Experts model with 3B active parameters with powerful agentic coding capabilities, available on Hugging Face under the Apache 2.0 license.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-b6fee0cfa78eb35d",
-    "raw_id": "RAW-74f0f8830b9efa62",
-    "claim_type": "model_release",
-    "subject": "Cohere",
-    "predicate": "model_release",
-    "object": "North Mini Code is the first model in Cohere’s new family of models, and is specifically designed and trained for agentic software engineering tasks.",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 3
-    },
-    "source_span": {
-      "raw_id": "RAW-74f0f8830b9efa62",
-      "start": 426,
-      "end": 575
-    },
-    "source_quote": "North Mini Code is the first model in Cohere’s new family of models, and is specifically designed and trained for agentic software engineering tasks.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-a2d4d0012a497449",
-    "raw_id": "RAW-74f0f8830b9efa62",
-    "claim_type": "model_release",
-    "subject": "Cohere",
-    "predicate": "model_release",
-    "object": "Figure 1: North Mini Code’s performance in agentic coding tasks and complex code generation benchmarks, compared to leading open-source models of similar size. See here for the details of our benchmarking methodology.",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 4
-    },
-    "source_span": {
-      "raw_id": "RAW-74f0f8830b9efa62",
-      "start": 576,
-      "end": 793
-    },
-    "source_quote": "Figure 1: North Mini Code’s performance in agentic coding tasks and complex code generation benchmarks, compared to leading open-source models of similar size. See here for the details of our benchmarking methodology.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-507b9a21cd21c19c",
-    "raw_id": "RAW-4ebca45081807f90",
-    "claim_type": "funding",
-    "subject": "Apollo 与 Blackstone 联手 350 亿美元 AI",
-    "predicate": "funding",
-    "object": "交易",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 1
-    },
-    "source_span": {
-      "raw_id": "RAW-4ebca45081807f90",
-      "start": 14,
-      "end": 45
-    },
-    "source_quote": "Apollo, Blackstone Fund AI Boom",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.9,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-389a0e4597ef6d26",
-    "raw_id": "RAW-4ebca45081807f90",
-    "claim_type": "funding",
-    "subject": "Apollo 与 Blackstone 联手 350 亿美元 AI",
-    "predicate": "funding",
-    "object": "交易",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 2
-    },
-    "source_span": {
-      "raw_id": "RAW-4ebca45081807f90",
-      "start": 46,
-      "end": 465
-    },
-    "source_quote": "Apollo and Blackstone are teaming up on a massive $35 billion AI financing deal that could reshape how artificial intelligence infrastructure gets funded. Bloomberg’s Emily Graffeo joins Bloomberg Open Interest to explain why Wall Street is creating new financing models for expensive AI chips, how Anthropic and Broadcom fit into the deal, and why this could be the beginning of an entirely new AI investment category.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
     "claim_id": "CL-6d6fc89616877a66",
     "raw_id": "RAW-39d012a90e3d85b5",
     "claim_type": "product_release",
@@ -1029,7 +819,7 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-7d552f47f035b204",
+    "claim_id": "CL-e23d209b0219b4d8",
     "raw_id": "RAW-39d012a90e3d85b5",
     "claim_type": "product_release",
     "subject": "Anthropic",
@@ -1041,52 +831,10 @@
     },
     "source_span": {
       "raw_id": "RAW-39d012a90e3d85b5",
-      "start": 1647,
-      "end": 1690
+      "start": 522,
+      "end": 642
     },
-    "source_quote": "Anthropic 推出中小企业专属 Claude 服务，AI 平台竞争下沉至小微商户",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-855f3e7d0e472ff1",
-    "raw_id": "RAW-e0b3081df950dcb0",
-    "claim_type": "model_release",
-    "subject": "Claude Code v2.1.170",
-    "predicate": "model_release",
-    "object": "Introducing Claude Fable 5: a Mythos-class model that we’ve made safe for general use. Fable’s capabilities exceed those of any model we’ve ever made generally available. Update to version 2.1.170 for access. https://www.anthropic.com/news/claude-fable-5-mythos-5",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 1
-    },
-    "source_span": {
-      "raw_id": "RAW-e0b3081df950dcb0",
-      "start": 460,
-      "end": 723
-    },
-    "source_quote": "Introducing Claude Fable 5: a Mythos-class model that we’ve made safe for general use. Fable’s capabilities exceed those of any model we’ve ever made generally available. Update to version 2.1.170 for access. https://www.anthropic.com/news/claude-fable-5-mythos-5",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.9,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-23710e46a6647443",
-    "raw_id": "RAW-e0b3081df950dcb0",
-    "claim_type": "model_release",
-    "subject": "Claude Code v2.1.170",
-    "predicate": "model_release",
-    "object": "Fixed sessions not saving transcripts (and not appearing in --resume) when launched from the VS Code integrated terminal or any shell that inherited Claude Code environment variables.",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 2
-    },
-    "source_span": {
-      "raw_id": "RAW-e0b3081df950dcb0",
-      "start": 724,
-      "end": 907
-    },
-    "source_quote": "Fixed sessions not saving transcripts (and not appearing in --resume) when launched from the VS Code integrated terminal or any shell that inherited Claude Code environment variables.",
+    "source_quote": "定位方面，Claude Fable 5 面向普通用户开放，定位为目前公开可用能力最强的 Claude 模型；而 Claude Mythos 5 会继续通过 Project Glasswing 项目先向少量网络安全防御方和基础设施提供商开放。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -1281,7 +1029,7 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-4b05c0b092a3223c",
+    "claim_id": "CL-27be0ea223ac06f6",
     "raw_id": "RAW-fc9f6a3e271d3b24",
     "claim_type": "product_release",
     "subject": "谷歌 Gemini 3.5 Live Translate",
@@ -1293,16 +1041,16 @@
     },
     "source_span": {
       "raw_id": "RAW-fc9f6a3e271d3b24",
-      "start": 0,
-      "end": 92
+      "start": 824,
+      "end": 848
     },
-    "source_quote": "Google's Gemini 3.5 Live Translate delivers real-time voice translation across 70+ languages",
+    "source_quote": "AI, Menschen, Wirtschaft",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-a4210aca733c1141",
+    "claim_id": "CL-1bd3cd32051761fa",
     "raw_id": "RAW-fc9f6a3e271d3b24",
     "claim_type": "product_release",
     "subject": "谷歌 Gemini 3.5 Live Translate",
@@ -1314,10 +1062,10 @@
     },
     "source_span": {
       "raw_id": "RAW-fc9f6a3e271d3b24",
-      "start": 93,
-      "end": 185
+      "start": 849,
+      "end": 873
     },
-    "source_quote": "Google's Gemini 3.5 Live Translate delivers real-time voice translation across 70+ languages",
+    "source_quote": "AI, Menschen, Wirtschaft",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -1498,7 +1246,7 @@
     "predicate": "funding",
     "object": "$10M to unlock next-gen agentic use case - Tech.eu",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 1
     },
     "source_span": {
@@ -1519,7 +1267,7 @@
     "predicate": "funding",
     "object": "$10M to unlock next-gen agentic use case - Tech.eu",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 2
     },
     "source_span": {
@@ -1540,7 +1288,7 @@
     "predicate": "funding",
     "object": "$10M to unlock next-gen agentic use case - Tech.eu",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 3
     },
     "source_span": {
@@ -1561,7 +1309,7 @@
     "predicate": "funding",
     "object": "$10M to unlock next-gen agentic use case - Tech.eu",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 4
     },
     "source_span": {
@@ -1612,48 +1360,6 @@
       "end": 762
     },
     "source_quote": "The deal will consist of $5 billion in underwritten offerings and $2 billion in an at-the-market program, which would involve Super Micro selling shares directly into the open market from time to time beginning “no earlier” than the third quarter, the company said Tuesday in a statement .",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-dd38fff3462127e1",
-    "raw_id": "RAW-42422427e487f272",
-    "claim_type": "hardware_product",
-    "subject": "Cadence 携手 NVIDIA",
-    "predicate": "hardware_product",
-    "object": "设计 AI 虚拟工程师",
-    "qualifiers": {
-      "event_status": "planned",
-      "sequence": 1
-    },
-    "source_span": {
-      "raw_id": "RAW-42422427e487f272",
-      "start": 0,
-      "end": 144
-    },
-    "source_quote": "IT之家 6 月 9 日消息，Cadence（楷登）在 COMPUTEX 2026 台北国际电脑展上宣布，在 NVIDIA（英伟达）的支持下，其 ChipStack AI Super Agent 自主水平已达 Level-5 级别， 成为业界首款具备全自主芯片能力的 AI 虚拟工程师 。",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.9,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-7cd98e982964be41",
-    "raw_id": "RAW-42422427e487f272",
-    "claim_type": "hardware_product",
-    "subject": "Cadence 携手 NVIDIA",
-    "predicate": "hardware_product",
-    "object": "设计 AI 虚拟工程师",
-    "qualifiers": {
-      "event_status": "planned",
-      "sequence": 2
-    },
-    "source_span": {
-      "raw_id": "RAW-42422427e487f272",
-      "start": 145,
-      "end": 268
-    },
-    "source_quote": "ChipStack 智能体的全新能力基于 Cadence 的 AI 驱动 EDA 产品组合，结合 NVIDIA Nemotron 模型构建，并由 NVIDIA OpenShell 沙箱运行环境提供安全保障，赋能客户在自动化工作流程中运行动态仿真。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"

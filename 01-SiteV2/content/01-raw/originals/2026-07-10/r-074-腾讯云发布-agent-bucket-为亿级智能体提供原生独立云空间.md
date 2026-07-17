@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-074
 title: "腾讯云发布 Agent Bucket，为亿级智能体提供原生独立云空间"
 title_zh: "腾讯云发布 Agent Bucket，为亿级智能体提供原生独立云空间"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/974/504.htm"
 canonical_url: "https://ithome.com/0/974/504.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-10T02:00:00.730Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 腾讯云发布 Agent Bucket，为亿级智能体提供原生独立云空间

@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-017
 title: "Canva unveils Canva AI 2.0, recasting its platform as an agentic system for work - SiliconANGLE"
-title_zh: "Canva推出Canva AI 2.0 ，将其平台重塑为工作代理系统- SiliconANGLE"
-title_translation_status: translated
-title_translation_method: mymemory_title_translation
+title_zh: "Canva发布Canva AI 2.0，将其平台重塑为工作代理系统 - SiliconANGLE"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://siliconangle.com/2026/04/16/canva-unveils-canva-ai-2-0-recasting-platform-agentic-system-work/"
 canonical_url: "https://siliconangle.com/2026/04/16/canva-unveils-canva-ai-2-0-recasting-platform-agentic-system-work"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-11T04:06:33.994Z
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Canva unveils Canva AI 2.0, recasting its platform as an agentic system for work - SiliconANGLE

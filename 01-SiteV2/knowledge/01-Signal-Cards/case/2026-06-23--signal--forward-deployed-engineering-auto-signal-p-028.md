@@ -2,7 +2,7 @@
 id: SIG-20260623-A10
 type: signal_card
 signal_type: case
-title: "Forward Deployed Engineering 记录企业应用场景：企业智能体协作流程"
+title: "前部署工程：利用AI实现业务成果 | Databricks博客"
 date: 2026-06-23
 status: published
 source_title: "Forward Deployed Engineering: Delivering Business Outcomes with AI | Databricks Blog"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Forward Deployed Engineering"
 
 frontend:
-  displayTitle: "Forward Deployed Engineering 记录企业应用场景：企业智能体协作流程"
+  displayTitle: "前部署工程：利用AI实现业务成果 | Databricks博客"
   sourceLinks:
     - "https://www.databricks.com/blog/forward-deployed-engineering-delivering-business-outcomes-ai"
 ---
 
-# Forward Deployed Engineering 记录企业应用场景：企业智能体协作流程
+# 前部署工程：利用AI实现业务成果 | Databricks博客
 
 ## 新闻事实
 

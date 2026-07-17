@@ -2,7 +2,7 @@
 id: SIG-20260620-A17
 type: signal_card
 signal_type: case
-title: "Yeahs Awards 2026 is now open for submissions, returning ..."
+title: "Yeahs Awards 2026 现已开放提交，回归..."
 date: 2026-06-20
 status: published
 source_title: "Yeahs Awards 2026 is now open for submissions, returning ..."
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Facebook"
 
 frontend:
-  displayTitle: "Yeahs Awards 2026 is now open for submissions, returning ..."
+  displayTitle: "Yeahs Awards 2026 现已开放提交，回归..."
   sourceLinks:
     - "https://www.facebook.com/yeastar/posts/%F0%9D%90%98%F0%9D%90%9E%F0%9D%90%9A%F0%9D%90%A1%F0%9D%90%AC-%F0%9D%90%80%F0%9D%90%B0%F0%9D%90%9A%F0%9D%90%AB%F0%9D%90%9D%F0%9D%90%AC-%F0%9D%9F%90%F0%9D%9F%8E%F0%9D%9F%90%F0%9D%9F%94-is-now-open-for-submissions-returning-with-an-expanded-program/1576088687855852/"
 ---
 
-# Yeahs Awards 2026 is now open for submissions, returning ...
+# Yeahs Awards 2026 现已开放提交，回归...
 
 ## 新闻事实
 

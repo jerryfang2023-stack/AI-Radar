@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"Anthropic 发布 Claude Sonnet 5，称�
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Anthropic 发布 Claude Sonnet 5，号称最智能体版本，逼近 Opus 系列"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Anthropic 发布 Claude Sonnet 5，号称最智能体版本，逼近 Opus 系列

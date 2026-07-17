@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"This article, the second in our series,
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "开发与部署生成式AI - Altman Solon"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Developing and Deploying Generative AI - Altman Solon

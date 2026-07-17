@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-049
 title: "How we used Gemini to build Google I/O 2026"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "我们如何利用Gemini构建Google I/O 2026"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://blog.google/innovation-and-ai/technology/ai/io-2026-google-ai/"
 canonical_url: "https://blog.google/innovation-and-ai/technology/ai/io-2026-google-ai"
 source_name: "Google AI Blog"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-07T02:01:23.571Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # How we used Gemini to build Google I/O 2026

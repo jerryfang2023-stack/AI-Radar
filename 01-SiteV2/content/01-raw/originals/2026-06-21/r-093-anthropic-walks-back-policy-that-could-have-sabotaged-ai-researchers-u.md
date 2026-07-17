@@ -72,6 +72,10 @@ key_excerpts: [{"type":"quote","text":"&lt;p&gt;&lt;strong&gt;&lt;a href=\"https
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_zh: "Anthropic 撤回可能‘破坏’使用 Claude 的 AI 研究人员的政策"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Anthropic Walks Back Policy That Could Have ‘Sabotaged’ AI Researchers Using Claude

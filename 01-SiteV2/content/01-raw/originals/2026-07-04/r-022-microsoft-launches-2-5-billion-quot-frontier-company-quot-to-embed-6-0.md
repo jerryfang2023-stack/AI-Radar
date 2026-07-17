@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-022
 title: "Microsoft launches $2.5 billion &quot;Frontier Company&quot; to embed 6,000 AI engineers inside enterprise clients"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "微软推出25亿美元“前沿公司”，将6000名AI工程师嵌入企业客户内部"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://the-decoder.com/microsoft-launches-2-5-billion-frontier-company-to-embed-6000-ai-engineers-inside-enterprise-clients/"
 canonical_url: "https://the-decoder.com/microsoft-launches-2-5-billion-frontier-company-to-embed-6000-ai-engineers-inside-enterprise-clients"
 source_name: "The Decoder AI News"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-04T04:50:50.173Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Microsoft launches $2.5 billion &quot;Frontier Company&quot; to embed 6,000 AI engineers inside enterprise clients

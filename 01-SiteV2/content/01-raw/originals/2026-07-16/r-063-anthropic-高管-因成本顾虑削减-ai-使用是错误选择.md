@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-063
 title: "Anthropic 高管：因成本顾虑削减 AI 使用是错误选择"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "Anthropic 高管：因成本顾虑削减 AI 使用是错误选择"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/977/149.htm"
 canonical_url: "https://ithome.com/0/977/149.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-16T02:39:33.793Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Anthropic 高管：因成本顾虑削减 AI 使用是错误选择

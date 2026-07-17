@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-073
 title: "蚂蚁灵波开源实时交互世界模型 LingBot-World 2.0"
 title_zh: "蚂蚁灵波开源实时交互世界模型 LingBot-World 2.0"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/974/508.htm"
 canonical_url: "https://ithome.com/0/974/508.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-10T02:00:00.727Z
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 蚂蚁灵波开源实时交互世界模型 LingBot-World 2.0

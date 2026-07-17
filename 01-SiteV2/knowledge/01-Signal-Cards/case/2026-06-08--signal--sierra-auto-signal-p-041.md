@@ -2,7 +2,7 @@
 id: SIG-20260608-A06
 type: signal_card
 signal_type: case
-title: "There's an agent for that, and it runs on Sierra | Sierra"
+title: "Sierra推出智能代理，名为“Sierra”"
 date: 2026-06-08
 status: published
 source_title: "There's an agent for that, and it runs on Sierra | Sierra"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Sierra"
 
 frontend:
-  displayTitle: "There's an agent for that, and it runs on Sierra | Sierra"
+  displayTitle: "Sierra推出智能代理，名为“Sierra”"
   sourceLinks:
     - "https://sierra.ai/blog/theres-an-agent-for-that-and-it-runs-on-sierra"
 ---
 
-# There's an agent for that, and it runs on Sierra | Sierra
+# Sierra推出智能代理，名为“Sierra”
 
 ## 新闻事实
 

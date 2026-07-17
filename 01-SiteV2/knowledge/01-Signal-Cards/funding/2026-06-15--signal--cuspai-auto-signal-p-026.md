@@ -2,7 +2,7 @@
 id: SIG-20260615-A02
 type: signal_card
 signal_type: funding
-title: "CuspAI 获得$100m 融资，押注模型部署和算力服务"
+title: "🔬探索所有可能材料的空间——CuspAI 教授 Max Welling"
 date: 2026-06-15
 status: published
 source_title: "Searching the Space of All Possible Materials — Prof. Max Welling, CuspAI"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "CuspAI"
 
 frontend:
-  displayTitle: "CuspAI 获得$100m 融资，押注模型部署和算力服务"
+  displayTitle: "🔬探索所有可能材料的空间——CuspAI 教授 Max Welling"
   sourceLinks:
     - "https://www.latent.space/p/cuspai"
 ---
 
-# CuspAI 获得$100m 融资，押注模型部署和算力服务
+# 🔬探索所有可能材料的空间——CuspAI 教授 Max Welling
 
 ## 新闻事实
 

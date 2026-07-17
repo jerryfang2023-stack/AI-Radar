@@ -72,6 +72,10 @@ key_excerpts: [{"type":"quote","text":"Fifteen installable skills that help exec
 theme: mature-commercial-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "GitHub 仓库：geledek/enterprise-ai-transformation-skills"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # geledek/enterprise-ai-transformation-skills

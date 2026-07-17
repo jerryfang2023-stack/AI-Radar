@@ -259,9 +259,9 @@
     "source_ref": "SA-9f56ce5bbf5f83b8"
   },
   {
-    "qa_id": "QA-40d50d3e9a94224a",
+    "qa_id": "QA-f03aa4b9b458c1f3",
     "asset_id": "RAW-58f30c6df96c3670",
-    "reason": "no_source_bounded_event",
+    "reason": "no_source_bounded_claim",
     "status": "review_optional",
     "source_ref": "SA-8022296da9043827"
   },
@@ -518,13 +518,6 @@
     "source_ref": "SA-70dc6eb0e2800fa7"
   },
   {
-    "qa_id": "QA-7039b1a02162e50a",
-    "asset_id": "RAW-8ce8d37a76aac132",
-    "reason": "no_source_bounded_event",
-    "status": "review_optional",
-    "source_ref": "SA-984aa436be6a458e"
-  },
-  {
     "qa_id": "QA-093d7ffe0f9402c4",
     "asset_id": "RAW-29b6953765161f7f",
     "reason": "community_source_requires_original_event_source",
@@ -558,6 +551,13 @@
     "reason": "no_source_bounded_event",
     "status": "review_optional",
     "source_ref": "SA-faa5e25d2f813994"
+  },
+  {
+    "qa_id": "QA-1a095684cba2e80c",
+    "asset_id": "RAW-9f9319f39be6db68",
+    "reason": "rumor_requires_primary_confirmation",
+    "status": "review_optional",
+    "source_ref": "SA-bd11f4fa55092827"
   },
   {
     "qa_id": "QA-d99ebc9f2bd1baba",
@@ -653,7 +653,7 @@
   {
     "qa_id": "QA-978993b5e0205b4b",
     "asset_id": "RAW-b00efb112dad5a0e",
-    "reason": "no_source_bounded_event",
+    "reason": "rumor_requires_primary_confirmation",
     "status": "review_optional",
     "source_ref": "SA-2e4d171d30de76fb"
   },
@@ -947,7 +947,7 @@
   {
     "qa_id": "QA-c1563cc8c6912a67",
     "asset_id": "RAW-6918197d94a79ef7",
-    "reason": "no_source_bounded_event",
+    "reason": "rumor_requires_primary_confirmation",
     "status": "review_optional",
     "source_ref": "SA-ae045571b7ad7cfd"
   },
@@ -1237,12 +1237,5 @@
     "reason": "raw_source_quality_block",
     "status": "review_optional",
     "source_ref": "SA-bb1ae6c01eb828ec"
-  },
-  {
-    "qa_id": "QA-0728783c0bd9acc1",
-    "asset_id": "EV-83c9326c3f797a2e",
-    "reason": "public_event_title_incomplete",
-    "status": "open",
-    "source_ref": "SA-ef685d087f4b8571"
   }
 ]

@@ -2,7 +2,7 @@
 id: SIG-20260618-A02
 type: signal_card
 signal_type: funding
-title: "VoiceRun 获得5 million 融资，押注企业 Agent 协作平台"
+title: "VoiceRun推出面向企业的全栈式语音AI平台，并..."
 date: 2026-06-18
 status: published
 source_title: "VoiceRun Launches Full-Stack Voice AI Platform for Enterprises with ..."
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "VoiceRun"
 
 frontend:
-  displayTitle: "VoiceRun 获得5 million 融资，押注企业 Agent 协作平台"
+  displayTitle: "VoiceRun推出面向企业的全栈式语音AI平台，并..."
   sourceLinks:
     - "https://www.prnewswire.com/news-releases/voicerun-launches-full-stack-voice-ai-platform-for-enterprises-with-5-5-million-seed-round-302660750.html"
 ---
 
-# VoiceRun 获得5 million 融资，押注企业 Agent 协作平台
+# VoiceRun推出面向企业的全栈式语音AI平台，并...
 
 ## 新闻事实
 

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"由自动驾驶领域连续创业者Oli
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "世界模型公司Odyssey完成3.1亿美元B轮融资，估值14.5亿美元"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 世界模型公司Odyssey完成3.1亿美元B轮融资，估值14.5亿美元

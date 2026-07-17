@@ -1,0 +1,151 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 818,
+    "quarantinedEventCount": 58
+  },
+  "entity": {
+    "id": "EN-23bc2a854bc0cfb0",
+    "name": "K2.7 Code",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-2cb9dbed2b2b6077"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [
+      "EN-b5251b35f15bedc4"
+    ],
+    "firstSeen": "2026-06-13",
+    "lastSeen": "2026-06-14",
+    "relationIds": [
+      "REL2-fd08f8e3ae8e8b5a"
+    ],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-2cb9dbed2b2b6077"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-2cb9dbed2b2b6077",
+        "dataDate": "2026-06-14",
+        "date": "2026-06-13",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "月之暗面开源模型Kimi K2.7 Code每个token价格比GPT-5.5和Claude低12倍",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          }
+        ],
+        "entityIds": [
+          "EN-b5251b35f15bedc4",
+          "EN-481243d2f2a235c1",
+          "EN-7d3194f79e645c42",
+          "EN-c70eca6b0f88f44d",
+          "EN-23bc2a854bc0cfb0",
+          "EN-62ce3c1a5a893a2c",
+          "EN-2cfed21b7a971267"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [
+    {
+      "id": "EN-b5251b35f15bedc4",
+      "name": "Moonshot AI",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "月之暗面"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-fd21441fb6e143c3",
+        "EV-0d5a32aca724d30e",
+        "EV-1b03e5dff76a50a1",
+        "EV-5caf7f83664b1a2c",
+        "EV-2cb9dbed2b2b6077",
+        "EV-6af31d42885e0361",
+        "EV-e878e56967902718",
+        "EV-e9a86c47da229331",
+        "EV-773ffcc6e1df56fa",
+        "EV-74b965de27bc0515"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-vision_language",
+        "TX-technology-code_generation",
+        "TX-use_case-software_development",
+        "TX-technology-long_context",
+        "TX-industry-financial_services",
+        "TX-technology-retrieval_augmented_generation",
+        "TX-technology-multimodal"
+      ],
+      "relatedEntityIds": [
+        "EN-2cfed21b7a971267",
+        "EN-62ce3c1a5a893a2c",
+        "EN-23bc2a854bc0cfb0",
+        "EN-b57c95289680078c"
+      ],
+      "firstSeen": "2026-05-19",
+      "lastSeen": "2026-07-17"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-fd08f8e3ae8e8b5a",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-b5251b35f15bedc4",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-23bc2a854bc0cfb0",
+      "object_type": "entity",
+      "event_id": "EV-2cb9dbed2b2b6077",
+      "claim_refs": [
+        "CL-fabe10d92e0fd9bf",
+        "CL-3baa89c0a5c4b8da",
+        "CL-876e0fc93c576154",
+        "CL-527d08ef88c8ca78"
+      ],
+      "source_refs": [
+        "SA-be99f27322d076ab"
+      ],
+      "data_date": "2026-06-14",
+      "status": "verified"
+    }
+  ],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

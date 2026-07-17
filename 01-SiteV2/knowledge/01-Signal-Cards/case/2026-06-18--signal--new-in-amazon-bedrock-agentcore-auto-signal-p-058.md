@@ -2,7 +2,7 @@
 id: SIG-20260618-A18
 type: signal_card
 signal_type: case
-title: "New in Amazon Bedrock AgentCore: Build agents with broader knowledge and continuous learning"
+title: "Amazon Bedrock AgentCore新增功能：构建知识更广、持续学习的智能体 | 人工智能"
 date: 2026-06-18
 status: published
 source_title: "New in Amazon Bedrock AgentCore: Build agents with broader knowledge and continuous learning | Artificial Intelligence"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "New in Amazon Bedrock AgentCore"
 
 frontend:
-  displayTitle: "New in Amazon Bedrock AgentCore: Build agents with broader knowledge and continuous learning"
+  displayTitle: "Amazon Bedrock AgentCore新增功能：构建知识更广、持续学习的智能体 | 人工智能"
   sourceLinks:
     - "https://aws.amazon.com/blogs/machine-learning/new-in-amazon-bedrock-agentcore-build-agents-with-broader-knowledge-and-continuous-learning/"
 ---
 
-# New in Amazon Bedrock AgentCore: Build agents with broader knowledge and continuous learning
+# Amazon Bedrock AgentCore新增功能：构建知识更广、持续学习的智能体 | 人工智能
 
 ## 新闻事实
 

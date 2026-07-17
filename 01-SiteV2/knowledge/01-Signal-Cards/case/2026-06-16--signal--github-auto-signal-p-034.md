@@ -2,7 +2,7 @@
 id: SIG-20260616-A17
 type: signal_card
 signal_type: case
-title: "GitHub 案例：AI 进入模型部署和算力调用"
+title: "GitHub Copilot CLI 初学者指南：常用斜杠命令概览"
 date: 2026-06-16
 status: published
 source_title: "GitHub Copilot CLI 初学者指南：常用斜杠命令概览"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "GitHub"
 
 frontend:
-  displayTitle: "GitHub 案例：AI 进入模型部署和算力调用"
+  displayTitle: "GitHub Copilot CLI 初学者指南：常用斜杠命令概览"
   sourceLinks:
     - "https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-for-beginners-overview-of-common-slash-commands"
 ---
 
-# GitHub 案例：AI 进入模型部署和算力调用
+# GitHub Copilot CLI 初学者指南：常用斜杠命令概览
 
 ## 新闻事实
 

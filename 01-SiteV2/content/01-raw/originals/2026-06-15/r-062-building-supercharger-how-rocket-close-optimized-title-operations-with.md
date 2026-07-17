@@ -72,6 +72,10 @@ key_excerpts: [{"type":"workflow_change","text":"Rocket Close is a Detroit-based
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_zh: "建设超级充电站：Rocket Close如何利用代理式AI优化产权运营 | 人工智能"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Building Supercharger: How Rocket Close optimized title operations with agentic AI | Artificial Intelligence

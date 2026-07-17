@@ -72,6 +72,10 @@ key_excerpts: [{"type":"company_action","text":"The fresh cash will be spent on 
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "Hark为其神秘的“通用”AI界面筹集7亿美元A轮融资"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Hark raises $700M Series A for its secretive 'universal' AI interface

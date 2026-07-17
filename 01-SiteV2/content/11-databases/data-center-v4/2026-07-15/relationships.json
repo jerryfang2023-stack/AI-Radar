@@ -1,38 +1,5 @@
 [
   {
-    "relationship_id": "REL-b7ddf72485586cec",
-    "event_id": "EV-14b44a40808340f5",
-    "subject": "OpenAI 研究员 Miles Wang 将",
-    "predicate": "organization_people",
-    "object": "创办 AI 药物发现初创公司，估值 20 亿美元",
-    "claim_ref": "CL-f97385a0609e1497",
-    "source_refs": [
-      "SA-97d40e90a6596004"
-    ]
-  },
-  {
-    "relationship_id": "REL-ba52fd9753d1c4f9",
-    "event_id": "EV-14b44a40808340f5",
-    "subject": "OpenAI 研究员 Miles Wang 将",
-    "predicate": "organization_people",
-    "object": "创办 AI 药物发现初创公司，估值 20 亿美元",
-    "claim_ref": "CL-bdf37c7d1e20c5a8",
-    "source_refs": [
-      "SA-97d40e90a6596004"
-    ]
-  },
-  {
-    "relationship_id": "REL-4abce1282642a0c7",
-    "event_id": "EV-14b44a40808340f5",
-    "subject": "OpenAI 研究员 Miles Wang 将",
-    "predicate": "organization_people",
-    "object": "创办 AI 药物发现初创公司，估值 20 亿美元",
-    "claim_ref": "CL-eb80541e2fee7231",
-    "source_refs": [
-      "SA-97d40e90a6596004"
-    ]
-  },
-  {
     "relationship_id": "REL-67c8b4bb8c2b7b15",
     "event_id": "EV-8cb2374f76202ecc",
     "subject": "OpenAI 回应苹果商业秘密",
@@ -77,8 +44,8 @@
     ]
   },
   {
-    "relationship_id": "REL-96b6b950ff4e5645",
-    "event_id": "EV-ed65f3187aa6aa40",
+    "relationship_id": "REL-992a1f1a6d77234b",
+    "event_id": "EV-87432dbb99cd6033",
     "subject": "DeepSeek 新一轮",
     "predicate": "funding",
     "object": "估值约710亿美元，资金将用于自建数据中心和AI芯片",
@@ -88,8 +55,8 @@
     ]
   },
   {
-    "relationship_id": "REL-6aa4193557416b98",
-    "event_id": "EV-ed65f3187aa6aa40",
+    "relationship_id": "REL-c5afe7492e60a27c",
+    "event_id": "EV-87432dbb99cd6033",
     "subject": "DeepSeek 新一轮",
     "predicate": "funding",
     "object": "估值约710亿美元，资金将用于自建数据中心和AI芯片",
@@ -99,8 +66,8 @@
     ]
   },
   {
-    "relationship_id": "REL-c864d03c42f5cd89",
-    "event_id": "EV-ed65f3187aa6aa40",
+    "relationship_id": "REL-e1241368cad316c8",
+    "event_id": "EV-87432dbb99cd6033",
     "subject": "DeepSeek 新一轮",
     "predicate": "funding",
     "object": "估值约710亿美元，资金将用于自建数据中心和AI芯片",
@@ -132,23 +99,23 @@
     ]
   },
   {
-    "relationship_id": "REL-f608097b92fdb291",
+    "relationship_id": "REL-bac292c894b60bca",
     "event_id": "EV-8bf42c1816e772ba",
     "subject": "Claude Code v2.1.210",
     "predicate": "product_release",
-    "object": "Fixed paste markers leaking into external editors opened from Claude Code, which could appear as stray È/É characters around pasted text",
-    "claim_ref": "CL-8f6bb2d416b0bd0f",
+    "object": "Fixed isolation: 'worktree' subagents being able to run git-mutating commands against the main repo checkout instead of their own isolated worktree",
+    "claim_ref": "CL-35805c61d35f6a55",
     "source_refs": [
       "SA-8d8371357696159d"
     ]
   },
   {
-    "relationship_id": "REL-9ab6a3f06f659db3",
+    "relationship_id": "REL-806acf19990629f8",
     "event_id": "EV-8bf42c1816e772ba",
     "subject": "Claude Code v2.1.210",
     "predicate": "product_release",
-    "object": "Fixed claude agents --effort ultracode not reaching dispatched sessions; the value was silently dropped",
-    "claim_ref": "CL-414d23fc4ffe7738",
+    "object": "Fixed the ultracode keyword opt-in firing on non-human-originated input such as webhook payloads and relayed PR comments",
+    "claim_ref": "CL-d9d66c08731165a1",
     "source_refs": [
       "SA-8d8371357696159d"
     ]
@@ -330,99 +297,47 @@
     ]
   },
   {
-    "relationship_id": "REL-927ea4f0056dd3ea",
-    "event_id": "EV-2dff32c1b6f813e4",
-    "subject": "TYLsemi",
-    "predicate": "funding",
-    "object": "$43 Million to Launch First Full-Stack Chiplet Platform for Custom AI Silicon - TYLsemi",
+    "relationship_id": "REL-55a67dd62080d07a",
+    "event_id": "EV-5f718c76c285ac9b",
+    "subject": "TYLsemi Raises $43 Million to",
+    "predicate": "product_release",
+    "object": "First Full-Stack Chiplet Platform for Custom AI Silicon - TYLsemi",
     "claim_ref": "CL-bb89b2f344ac2037",
     "source_refs": [
-      "SA-8368bad4f79b26ba",
-      "SA-903d243c7a19a7c1"
+      "SA-8368bad4f79b26ba"
     ]
   },
   {
-    "relationship_id": "REL-e0a452afd671d701",
-    "event_id": "EV-2dff32c1b6f813e4",
-    "subject": "TYLsemi",
-    "predicate": "funding",
-    "object": "$43 Million to Launch First Full-Stack Chiplet Platform for Custom AI Silicon - TYLsemi",
-    "claim_ref": "CL-8b941b4cf3279dc5",
-    "source_refs": [
-      "SA-8368bad4f79b26ba",
-      "SA-903d243c7a19a7c1"
-    ]
-  },
-  {
-    "relationship_id": "REL-07ed98b4bcadfe24",
-    "event_id": "EV-2dff32c1b6f813e4",
-    "subject": "TYLsemi",
-    "predicate": "funding",
-    "object": "$43 Million to Launch First Full-Stack Chiplet Platform for Custom AI Silicon - TYLsemi",
+    "relationship_id": "REL-88691db80de44505",
+    "event_id": "EV-5f718c76c285ac9b",
+    "subject": "TYLsemi Raises $43 Million to",
+    "predicate": "product_release",
+    "object": "First Full-Stack Chiplet Platform for Custom AI Silicon - TYLsemi",
     "claim_ref": "CL-98cdae07134fa042",
     "source_refs": [
-      "SA-8368bad4f79b26ba",
-      "SA-903d243c7a19a7c1"
+      "SA-8368bad4f79b26ba"
     ]
   },
   {
-    "relationship_id": "REL-43fb8014ff7ffa9a",
-    "event_id": "EV-2dff32c1b6f813e4",
-    "subject": "TYLsemi",
-    "predicate": "funding",
-    "object": "$43 Million to Launch First Full-Stack Chiplet Platform for Custom AI Silicon - TYLsemi",
-    "claim_ref": "CL-2ad74646f2a4f453",
+    "relationship_id": "REL-72a8bf95a071f715",
+    "event_id": "EV-5f718c76c285ac9b",
+    "subject": "TYLsemi Raises $43 Million to",
+    "predicate": "product_release",
+    "object": "First Full-Stack Chiplet Platform for Custom AI Silicon - TYLsemi",
+    "claim_ref": "CL-e76a8dabda824337",
     "source_refs": [
-      "SA-8368bad4f79b26ba",
-      "SA-903d243c7a19a7c1"
+      "SA-8368bad4f79b26ba"
     ]
   },
   {
-    "relationship_id": "REL-3fe01ba731da48b1",
-    "event_id": "EV-2dff32c1b6f813e4",
-    "subject": "Custom AI chip design startup TYLsemi",
-    "predicate": "funding",
-    "object": "3M in early-stage funding - SiliconANGLE",
-    "claim_ref": "CL-0f7de1f289c977b6",
+    "relationship_id": "REL-324cafdc2580aaf1",
+    "event_id": "EV-5f718c76c285ac9b",
+    "subject": "TYLsemi Raises $43 Million to",
+    "predicate": "product_release",
+    "object": "First Full-Stack Chiplet Platform for Custom AI Silicon - TYLsemi",
+    "claim_ref": "CL-8b941b4cf3279dc5",
     "source_refs": [
-      "SA-8368bad4f79b26ba",
-      "SA-903d243c7a19a7c1"
-    ]
-  },
-  {
-    "relationship_id": "REL-f6acc046514aebbe",
-    "event_id": "EV-2dff32c1b6f813e4",
-    "subject": "Custom AI chip design startup TYLsemi",
-    "predicate": "funding",
-    "object": "3M in early-stage funding - SiliconANGLE",
-    "claim_ref": "CL-5192ba89fe6ed0e1",
-    "source_refs": [
-      "SA-8368bad4f79b26ba",
-      "SA-903d243c7a19a7c1"
-    ]
-  },
-  {
-    "relationship_id": "REL-0d64a73eae8aeb1b",
-    "event_id": "EV-2dff32c1b6f813e4",
-    "subject": "Custom AI chip design startup TYLsemi",
-    "predicate": "funding",
-    "object": "3M in early-stage funding - SiliconANGLE",
-    "claim_ref": "CL-fcb2de937150ec2c",
-    "source_refs": [
-      "SA-8368bad4f79b26ba",
-      "SA-903d243c7a19a7c1"
-    ]
-  },
-  {
-    "relationship_id": "REL-7b7b7e666d86bb36",
-    "event_id": "EV-2dff32c1b6f813e4",
-    "subject": "Custom AI chip design startup TYLsemi",
-    "predicate": "funding",
-    "object": "3M in early-stage funding - SiliconANGLE",
-    "claim_ref": "CL-09b924ea73ded312",
-    "source_refs": [
-      "SA-8368bad4f79b26ba",
-      "SA-903d243c7a19a7c1"
+      "SA-8368bad4f79b26ba"
     ]
   },
   {
@@ -432,39 +347,6 @@
     "predicate": "product_release",
     "object": "FuriosaAI-Powered AI Services on July 16",
     "claim_ref": "CL-f4aef3f955fb2648",
-    "source_refs": [
-      "SA-d0f24e921d121a4d"
-    ]
-  },
-  {
-    "relationship_id": "REL-4d942964fb436b69",
-    "event_id": "EV-6ebcbb2660ec7ad9",
-    "subject": "Samsung SDS to",
-    "predicate": "product_release",
-    "object": "FuriosaAI-Powered AI Services on July 16",
-    "claim_ref": "CL-e2efded39d1ea724",
-    "source_refs": [
-      "SA-d0f24e921d121a4d"
-    ]
-  },
-  {
-    "relationship_id": "REL-86606eeddef6f3f3",
-    "event_id": "EV-6ebcbb2660ec7ad9",
-    "subject": "Samsung SDS to",
-    "predicate": "product_release",
-    "object": "FuriosaAI-Powered AI Services on July 16",
-    "claim_ref": "CL-c86c105bfd855776",
-    "source_refs": [
-      "SA-d0f24e921d121a4d"
-    ]
-  },
-  {
-    "relationship_id": "REL-9eec875e139649f8",
-    "event_id": "EV-6ebcbb2660ec7ad9",
-    "subject": "Samsung SDS to",
-    "predicate": "product_release",
-    "object": "FuriosaAI-Powered AI Services on July 16",
-    "claim_ref": "CL-4326c5845b1ac7d1",
     "source_refs": [
       "SA-d0f24e921d121a4d"
     ]
@@ -489,6 +371,72 @@
     "claim_ref": "CL-3372209a15f0cc21",
     "source_refs": [
       "SA-8da4900888d68499"
+    ]
+  },
+  {
+    "relationship_id": "REL-03ad2e4d083651dd",
+    "event_id": "EV-f61a61d1287e2ca9",
+    "subject": "Announcing our $22 Million",
+    "predicate": "funding",
+    "object": "Thomas Stewart, Founder & CEO",
+    "claim_ref": "CL-fab3c3d58e127030",
+    "source_refs": [
+      "SA-8da4900888d68499"
+    ]
+  },
+  {
+    "relationship_id": "REL-b53a5386de51f1bd",
+    "event_id": "EV-f61a61d1287e2ca9",
+    "subject": "Announcing our $22 Million",
+    "predicate": "funding",
+    "object": "In 2026, everything is compliance.",
+    "claim_ref": "CL-ae6f22e3e93e6ad7",
+    "source_refs": [
+      "SA-8da4900888d68499"
+    ]
+  },
+  {
+    "relationship_id": "REL-3fe01ba731da48b1",
+    "event_id": "EV-2dff32c1b6f813e4",
+    "subject": "Custom AI chip design startup TYLsemi",
+    "predicate": "funding",
+    "object": "3M in early-stage funding - SiliconANGLE",
+    "claim_ref": "CL-0f7de1f289c977b6",
+    "source_refs": [
+      "SA-903d243c7a19a7c1"
+    ]
+  },
+  {
+    "relationship_id": "REL-f6acc046514aebbe",
+    "event_id": "EV-2dff32c1b6f813e4",
+    "subject": "Custom AI chip design startup TYLsemi",
+    "predicate": "funding",
+    "object": "3M in early-stage funding - SiliconANGLE",
+    "claim_ref": "CL-5192ba89fe6ed0e1",
+    "source_refs": [
+      "SA-903d243c7a19a7c1"
+    ]
+  },
+  {
+    "relationship_id": "REL-0d64a73eae8aeb1b",
+    "event_id": "EV-2dff32c1b6f813e4",
+    "subject": "Custom AI chip design startup TYLsemi",
+    "predicate": "funding",
+    "object": "3M in early-stage funding - SiliconANGLE",
+    "claim_ref": "CL-fcb2de937150ec2c",
+    "source_refs": [
+      "SA-903d243c7a19a7c1"
+    ]
+  },
+  {
+    "relationship_id": "REL-7b7b7e666d86bb36",
+    "event_id": "EV-2dff32c1b6f813e4",
+    "subject": "Custom AI chip design startup TYLsemi",
+    "predicate": "funding",
+    "object": "3M in early-stage funding - SiliconANGLE",
+    "claim_ref": "CL-09b924ea73ded312",
+    "source_refs": [
+      "SA-903d243c7a19a7c1"
     ]
   },
   {
@@ -602,6 +550,17 @@
     ]
   },
   {
+    "relationship_id": "REL-40b9e79cf2d2cff6",
+    "event_id": "EV-e31a6bf3c0a979f8",
+    "subject": "Thira",
+    "predicate": "funding",
+    "object": "$21 Million Seed To Build Self-Learning AI Back-Office Platform",
+    "claim_ref": "CL-2d2c3a58146b870c",
+    "source_refs": [
+      "SA-3439ee6d697794b3"
+    ]
+  },
+  {
     "relationship_id": "REL-dd1e9d32e88c02c3",
     "event_id": "EV-e31a6bf3c0a979f8",
     "subject": "Thira",
@@ -613,19 +572,8 @@
     ]
   },
   {
-    "relationship_id": "REL-c0baf9a640b20102",
-    "event_id": "EV-e31a6bf3c0a979f8",
-    "subject": "Thira",
-    "predicate": "funding",
-    "object": "$21 Million Seed To Build Self-Learning AI Back-Office Platform",
-    "claim_ref": "CL-cd0f018d570f50c6",
-    "source_refs": [
-      "SA-3439ee6d697794b3"
-    ]
-  },
-  {
-    "relationship_id": "REL-eb2ba2b6d5bd5e0b",
-    "event_id": "EV-04ee2bc4ac888358",
+    "relationship_id": "REL-e2a4bdf3dfd43b06",
+    "event_id": "EV-49d9029bdcf87db4",
     "subject": "Gemini Enterprise",
     "predicate": "product_release",
     "object": "notes | Google Cloud Documentation",
@@ -635,8 +583,8 @@
     ]
   },
   {
-    "relationship_id": "REL-aa9b2dc6a5bc8a1a",
-    "event_id": "EV-04ee2bc4ac888358",
+    "relationship_id": "REL-8400c01984d6537a",
+    "event_id": "EV-49d9029bdcf87db4",
     "subject": "Gemini Enterprise",
     "predicate": "product_release",
     "object": "notes | Google Cloud Documentation",
@@ -646,8 +594,8 @@
     ]
   },
   {
-    "relationship_id": "REL-88d58d9f3e800166",
-    "event_id": "EV-04ee2bc4ac888358",
+    "relationship_id": "REL-89a5b3e79b9db06c",
+    "event_id": "EV-49d9029bdcf87db4",
     "subject": "Gemini Enterprise",
     "predicate": "product_release",
     "object": "notes | Google Cloud Documentation",
@@ -657,8 +605,8 @@
     ]
   },
   {
-    "relationship_id": "REL-4ec2b4c083a4581c",
-    "event_id": "EV-04ee2bc4ac888358",
+    "relationship_id": "REL-51eee66b540812cc",
+    "event_id": "EV-49d9029bdcf87db4",
     "subject": "Gemini Enterprise",
     "predicate": "product_release",
     "object": "notes | Google Cloud Documentation",
@@ -756,6 +704,50 @@
     ]
   },
   {
+    "relationship_id": "REL-7962a464a3840de3",
+    "event_id": "EV-01df8e489a34893b",
+    "subject": "ServiceNow and Accenture launch forward",
+    "predicate": "deployment",
+    "object": "engineering program to scale agentic AI across the enterprise – Company Announcement - FT.com",
+    "claim_ref": "CL-49cf63db2ce521c6",
+    "source_refs": [
+      "SA-0cf4ee710fb28741"
+    ]
+  },
+  {
+    "relationship_id": "REL-6ad6e814ef06bdda",
+    "event_id": "EV-01df8e489a34893b",
+    "subject": "ServiceNow and Accenture launch forward",
+    "predicate": "deployment",
+    "object": "engineering program to scale agentic AI across the enterprise – Company Announcement - FT.com",
+    "claim_ref": "CL-60c8541993c87f4a",
+    "source_refs": [
+      "SA-0cf4ee710fb28741"
+    ]
+  },
+  {
+    "relationship_id": "REL-97eab59b55fc10ad",
+    "event_id": "EV-01df8e489a34893b",
+    "subject": "ServiceNow and Accenture launch forward",
+    "predicate": "deployment",
+    "object": "engineering program to scale agentic AI across the enterprise – Company Announcement - FT.com",
+    "claim_ref": "CL-451f577bd446ad13",
+    "source_refs": [
+      "SA-0cf4ee710fb28741"
+    ]
+  },
+  {
+    "relationship_id": "REL-b1c7d59ece3381de",
+    "event_id": "EV-01df8e489a34893b",
+    "subject": "ServiceNow and Accenture launch forward",
+    "predicate": "deployment",
+    "object": "engineering program to scale agentic AI across the enterprise – Company Announcement - FT.com",
+    "claim_ref": "CL-73230226861aa1de",
+    "source_refs": [
+      "SA-0cf4ee710fb28741"
+    ]
+  },
+  {
     "relationship_id": "REL-020641df26245599",
     "event_id": "EV-02b07069713d9a1c",
     "subject": "undisclosed_subject",
@@ -800,8 +792,52 @@
     ]
   },
   {
-    "relationship_id": "REL-e77ce302a6bc9e32",
-    "event_id": "EV-f1947f4eea4fa37b",
+    "relationship_id": "REL-6ef96ab097ba7555",
+    "event_id": "EV-946569cccbd9222f",
+    "subject": "Sam Altman didn’t need another",
+    "predicate": "lawsuit_settlement",
+    "object": "Sam Altman didn’t need another lawsuit",
+    "claim_ref": "CL-af3eb32c07321d59",
+    "source_refs": [
+      "SA-3860942e74a2bb58"
+    ]
+  },
+  {
+    "relationship_id": "REL-e1b144c10113cc80",
+    "event_id": "EV-946569cccbd9222f",
+    "subject": "Sam Altman didn’t need another",
+    "predicate": "lawsuit_settlement",
+    "object": "On Friday, OpenAI was hit with a high-profile lawsuit from Apple, over allegedly stealing trade secrets. OpenAI’s expensive hardware bet is what’s on the line.",
+    "claim_ref": "CL-f12332096334fc25",
+    "source_refs": [
+      "SA-3860942e74a2bb58"
+    ]
+  },
+  {
+    "relationship_id": "REL-3dd288a242268e05",
+    "event_id": "EV-946569cccbd9222f",
+    "subject": "Sam Altman didn’t need another",
+    "predicate": "lawsuit_settlement",
+    "object": "OpenAI has spent the better part of the year involved in lawsuit after lawsuit, including one from the world’s richest man. But last Friday, the company was hit with one of the highest-profile legal actions yet — from Apple. OpenAI’s expensive hardware bet is what’s on the line.",
+    "claim_ref": "CL-8869355e5016074b",
+    "source_refs": [
+      "SA-3860942e74a2bb58"
+    ]
+  },
+  {
+    "relationship_id": "REL-3dd2883d635d9e5d",
+    "event_id": "EV-946569cccbd9222f",
+    "subject": "Sam Altman didn’t need another",
+    "predicate": "lawsuit_settlement",
+    "object": "Apple’s lawsuit against OpenAI, filed in Northern California federal court, accused former Apple employees of “stealing Apple’s trade secrets for the benefit of OpenAI.” The 41-page complaint states that Apple keeps its “product development, manufacturing, supply chain, technology research, and other innovations confidential” and that “the trade secrets spanning Apple’s hardware operations collectively constitute one of the most valuable intellectual assets in all of American business.”",
+    "claim_ref": "CL-eb1412669184d820",
+    "source_refs": [
+      "SA-3860942e74a2bb58"
+    ]
+  },
+  {
+    "relationship_id": "REL-11a5f1d8757a75e4",
+    "event_id": "EV-e4f5a28a1c8396b6",
     "subject": "undisclosed_subject",
     "predicate": "product_release",
     "object": "YC: Nitrode - Advancing AI for Game Development | Y Combinator",
@@ -811,8 +847,8 @@
     ]
   },
   {
-    "relationship_id": "REL-009c9bc3741d47a4",
-    "event_id": "EV-f1947f4eea4fa37b",
+    "relationship_id": "REL-4a0e5af1a71ffe07",
+    "event_id": "EV-e4f5a28a1c8396b6",
     "subject": "undisclosed_subject",
     "predicate": "product_release",
     "object": "YC: Nitrode - Advancing AI for Game Development | Y Combinator",
@@ -822,8 +858,8 @@
     ]
   },
   {
-    "relationship_id": "REL-1fe366316c648cf0",
-    "event_id": "EV-f1947f4eea4fa37b",
+    "relationship_id": "REL-06bf03d9544f99b4",
+    "event_id": "EV-e4f5a28a1c8396b6",
     "subject": "undisclosed_subject",
     "predicate": "product_release",
     "object": "YC: Nitrode - Advancing AI for Game Development | Y Combinator",
@@ -833,14 +869,58 @@
     ]
   },
   {
-    "relationship_id": "REL-6946a0ecea7c471e",
-    "event_id": "EV-f1947f4eea4fa37b",
+    "relationship_id": "REL-46b624a2e5bf0135",
+    "event_id": "EV-e4f5a28a1c8396b6",
     "subject": "undisclosed_subject",
     "predicate": "product_release",
     "object": "YC: Nitrode - Advancing AI for Game Development | Y Combinator",
     "claim_ref": "CL-00a811cf2b3046ba",
     "source_refs": [
       "SA-fdf9caf3a0b03e9a"
+    ]
+  },
+  {
+    "relationship_id": "REL-30bfb737151b948a",
+    "event_id": "EV-30d7f1c5dc8ea464",
+    "subject": "AI",
+    "predicate": "deployment",
+    "object": "AI taps algorithms to extract info from sales calls",
+    "claim_ref": "CL-8d92651e7262aa01",
+    "source_refs": [
+      "SA-ebfc3501f9aba9ad"
+    ]
+  },
+  {
+    "relationship_id": "REL-9226c2a6d998b8ef",
+    "event_id": "EV-30d7f1c5dc8ea464",
+    "subject": "AI",
+    "predicate": "deployment",
+    "object": "AI taps algorithms to extract info from sales calls",
+    "claim_ref": "CL-7e2c5c16f110a101",
+    "source_refs": [
+      "SA-ebfc3501f9aba9ad"
+    ]
+  },
+  {
+    "relationship_id": "REL-b1edaec9c8bed922",
+    "event_id": "EV-30d7f1c5dc8ea464",
+    "subject": "AI",
+    "predicate": "deployment",
+    "object": "AI taps algorithms to extract info from sales calls",
+    "claim_ref": "CL-801ab9d7c70c9d70",
+    "source_refs": [
+      "SA-ebfc3501f9aba9ad"
+    ]
+  },
+  {
+    "relationship_id": "REL-f3d86c66894fa623",
+    "event_id": "EV-30d7f1c5dc8ea464",
+    "subject": "AI",
+    "predicate": "deployment",
+    "object": "AI taps algorithms to extract info from sales calls",
+    "claim_ref": "CL-60bbeb505434da14",
+    "source_refs": [
+      "SA-ebfc3501f9aba9ad"
     ]
   },
   {
@@ -888,94 +968,6 @@
     ]
   },
   {
-    "relationship_id": "REL-7e3e6284ba87829d",
-    "event_id": "EV-363fe72da52bdb86",
-    "subject": "阿里",
-    "predicate": "model_release",
-    "object": "Qwen-Audio-3.0-Realtime",
-    "claim_ref": "CL-5d0e14a1378aee76",
-    "source_refs": [
-      "SA-7a70aff625162bde"
-    ]
-  },
-  {
-    "relationship_id": "REL-7f73bec34c5239b9",
-    "event_id": "EV-363fe72da52bdb86",
-    "subject": "阿里",
-    "predicate": "model_release",
-    "object": "Qwen-Audio-3.0-Realtime",
-    "claim_ref": "CL-5e1fe157f9abaae9",
-    "source_refs": [
-      "SA-7a70aff625162bde"
-    ]
-  },
-  {
-    "relationship_id": "REL-dfd8884a10042859",
-    "event_id": "EV-363fe72da52bdb86",
-    "subject": "阿里",
-    "predicate": "model_release",
-    "object": "Qwen-Audio-3.0-Realtime",
-    "claim_ref": "CL-934876accbacd03b",
-    "source_refs": [
-      "SA-7a70aff625162bde"
-    ]
-  },
-  {
-    "relationship_id": "REL-80eeef9da6cb115b",
-    "event_id": "EV-363fe72da52bdb86",
-    "subject": "阿里",
-    "predicate": "model_release",
-    "object": "Qwen-Audio-3.0-Realtime",
-    "claim_ref": "CL-26fc7296f69626e6",
-    "source_refs": [
-      "SA-7a70aff625162bde"
-    ]
-  },
-  {
-    "relationship_id": "REL-793ce8a1f45c359b",
-    "event_id": "EV-917a138950a21f91",
-    "subject": "Anthropic",
-    "predicate": "model_release",
-    "object": "训练",
-    "claim_ref": "CL-0d47eb95cfca0d1d",
-    "source_refs": [
-      "SA-da517d26bbf298aa"
-    ]
-  },
-  {
-    "relationship_id": "REL-c3c507152ee7c0cf",
-    "event_id": "EV-917a138950a21f91",
-    "subject": "Anthropic",
-    "predicate": "model_release",
-    "object": "训练",
-    "claim_ref": "CL-233802dc4b2dd5f9",
-    "source_refs": [
-      "SA-da517d26bbf298aa"
-    ]
-  },
-  {
-    "relationship_id": "REL-7d17d44045968f7a",
-    "event_id": "EV-917a138950a21f91",
-    "subject": "Anthropic",
-    "predicate": "model_release",
-    "object": "训练",
-    "claim_ref": "CL-3361dc5c23272d31",
-    "source_refs": [
-      "SA-da517d26bbf298aa"
-    ]
-  },
-  {
-    "relationship_id": "REL-d6604bf145fa5153",
-    "event_id": "EV-917a138950a21f91",
-    "subject": "Anthropic",
-    "predicate": "model_release",
-    "object": "训练",
-    "claim_ref": "CL-2212e110d145be91",
-    "source_refs": [
-      "SA-da517d26bbf298aa"
-    ]
-  },
-  {
     "relationship_id": "REL-93261c7bd78bc9f1",
     "event_id": "EV-5b16886442234f81",
     "subject": "英伟达与三菱重工拟",
@@ -1020,6 +1012,50 @@
     ]
   },
   {
+    "relationship_id": "REL-3e16cdfec3ec6ce4",
+    "event_id": "EV-f8ba1728de6a4899",
+    "subject": "DeepSeek",
+    "predicate": "product_release",
+    "object": "DeepSeek 梁文锋身价飙升至 360 亿美元，成 AI 公司新首富",
+    "claim_ref": "CL-d8cdc0aa2d138ffe",
+    "source_refs": [
+      "SA-190b5b6f3e8f44fd"
+    ]
+  },
+  {
+    "relationship_id": "REL-3b6c8e6362af8844",
+    "event_id": "EV-f8ba1728de6a4899",
+    "subject": "DeepSeek",
+    "predicate": "product_release",
+    "object": "DeepSeek 梁文锋身价飙升至 360 亿美元，成 AI 公司新首富",
+    "claim_ref": "CL-58dcd8ce5b58ec35",
+    "source_refs": [
+      "SA-190b5b6f3e8f44fd"
+    ]
+  },
+  {
+    "relationship_id": "REL-115537416aec8c8f",
+    "event_id": "EV-f8ba1728de6a4899",
+    "subject": "DeepSeek",
+    "predicate": "product_release",
+    "object": "DeepSeek 梁文锋身价飙升至 360 亿美元，成 AI 公司新首富",
+    "claim_ref": "CL-0ab48c223d20c105",
+    "source_refs": [
+      "SA-190b5b6f3e8f44fd"
+    ]
+  },
+  {
+    "relationship_id": "REL-40242e9e48e8ff39",
+    "event_id": "EV-f8ba1728de6a4899",
+    "subject": "DeepSeek",
+    "predicate": "product_release",
+    "object": "DeepSeek 梁文锋身价飙升至 360 亿美元，成 AI 公司新首富",
+    "claim_ref": "CL-8e55955bfa3a877d",
+    "source_refs": [
+      "SA-190b5b6f3e8f44fd"
+    ]
+  },
+  {
     "relationship_id": "REL-4221cb50aac76428",
     "event_id": "EV-02686922dd82c4aa",
     "subject": "支付宝与OPPO达成智能体跨端互联",
@@ -1061,6 +1097,50 @@
     "claim_ref": "CL-f0aba62c0c765c5d",
     "source_refs": [
       "SA-00c4c99c53006a13"
+    ]
+  },
+  {
+    "relationship_id": "REL-317c37e3feffc4cd",
+    "event_id": "EV-167f50a6f3134bd5",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "OpenAI GPT-5.6 Sol 被曝擅自删除用户文件，系统卡曾预警风险",
+    "claim_ref": "CL-b3d18fb369dd95cd",
+    "source_refs": [
+      "SA-48c5c4234efd9800"
+    ]
+  },
+  {
+    "relationship_id": "REL-25ea6551072fce02",
+    "event_id": "EV-167f50a6f3134bd5",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "OpenAI GPT-5.6 Sol 被曝擅自删除用户文件，系统卡曾预警风险",
+    "claim_ref": "CL-8b8b592d0cafdfcc",
+    "source_refs": [
+      "SA-48c5c4234efd9800"
+    ]
+  },
+  {
+    "relationship_id": "REL-860d19d6651a6d31",
+    "event_id": "EV-167f50a6f3134bd5",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "OpenAI GPT-5.6 Sol 被曝擅自删除用户文件，系统卡曾预警风险",
+    "claim_ref": "CL-55da132f2fbde4f6",
+    "source_refs": [
+      "SA-48c5c4234efd9800"
+    ]
+  },
+  {
+    "relationship_id": "REL-fc92477063c2d168",
+    "event_id": "EV-167f50a6f3134bd5",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "OpenAI GPT-5.6 Sol 被曝擅自删除用户文件，系统卡曾预警风险",
+    "claim_ref": "CL-fcac0454f440382a",
+    "source_refs": [
+      "SA-48c5c4234efd9800"
     ]
   },
   {
@@ -1229,6 +1309,94 @@
     ]
   },
   {
+    "relationship_id": "REL-351f645efe72f8c9",
+    "event_id": "EV-8b9e4428074bde60",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "苹果评估 PrismML 量化技术，内存占用从 54GB 降至 3.9GB，iPhone 15 及后续机型可运行 27B 模型",
+    "claim_ref": "CL-86b22b342fb297d9",
+    "source_refs": [
+      "SA-9405b2d9c7199282"
+    ]
+  },
+  {
+    "relationship_id": "REL-ca134a770e8c25a1",
+    "event_id": "EV-8b9e4428074bde60",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "苹果评估 PrismML 量化技术，内存占用从 54GB 降至 3.9GB，iPhone 15 及后续机型可运行 27B 模型",
+    "claim_ref": "CL-0657d61ac5fc613d",
+    "source_refs": [
+      "SA-9405b2d9c7199282"
+    ]
+  },
+  {
+    "relationship_id": "REL-e2dba48a978e4d1a",
+    "event_id": "EV-8b9e4428074bde60",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "苹果评估 PrismML 量化技术，内存占用从 54GB 降至 3.9GB，iPhone 15 及后续机型可运行 27B 模型",
+    "claim_ref": "CL-4fc36b49dda83531",
+    "source_refs": [
+      "SA-9405b2d9c7199282"
+    ]
+  },
+  {
+    "relationship_id": "REL-d22fc726b551a94c",
+    "event_id": "EV-8b9e4428074bde60",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "苹果评估 PrismML 量化技术，内存占用从 54GB 降至 3.9GB，iPhone 15 及后续机型可运行 27B 模型",
+    "claim_ref": "CL-429297129a61fed0",
+    "source_refs": [
+      "SA-9405b2d9c7199282"
+    ]
+  },
+  {
+    "relationship_id": "REL-315edaa5bbf7e3f5",
+    "event_id": "EV-70cbf25f7ec2cc3a",
+    "subject": "Bonsai",
+    "predicate": "product_release",
+    "object": "Bonsai 27B 模型登场，12GB 内存 iPhone 17 Pro 可原生运行",
+    "claim_ref": "CL-22183797025ff414",
+    "source_refs": [
+      "SA-1dbdb746b9284b67"
+    ]
+  },
+  {
+    "relationship_id": "REL-41c58142c10dae4a",
+    "event_id": "EV-70cbf25f7ec2cc3a",
+    "subject": "Bonsai",
+    "predicate": "product_release",
+    "object": "Bonsai 27B 模型登场，12GB 内存 iPhone 17 Pro 可原生运行",
+    "claim_ref": "CL-4934f7ffad2a3c86",
+    "source_refs": [
+      "SA-1dbdb746b9284b67"
+    ]
+  },
+  {
+    "relationship_id": "REL-a4af660ba194163c",
+    "event_id": "EV-70cbf25f7ec2cc3a",
+    "subject": "Bonsai",
+    "predicate": "product_release",
+    "object": "Bonsai 27B 模型登场，12GB 内存 iPhone 17 Pro 可原生运行",
+    "claim_ref": "CL-c16a01f6159388be",
+    "source_refs": [
+      "SA-1dbdb746b9284b67"
+    ]
+  },
+  {
+    "relationship_id": "REL-72ecd5c25d06e7b9",
+    "event_id": "EV-70cbf25f7ec2cc3a",
+    "subject": "Bonsai",
+    "predicate": "product_release",
+    "object": "Bonsai 27B 模型登场，12GB 内存 iPhone 17 Pro 可原生运行",
+    "claim_ref": "CL-7cc542a472e16545",
+    "source_refs": [
+      "SA-1dbdb746b9284b67"
+    ]
+  },
+  {
     "relationship_id": "REL-d9a4061c4a59182b",
     "event_id": "EV-de54542fd7e2282c",
     "subject": "腾讯混元",
@@ -1251,6 +1419,17 @@
     ]
   },
   {
+    "relationship_id": "REL-11583fe312e180cc",
+    "event_id": "EV-de54542fd7e2282c",
+    "subject": "腾讯混元",
+    "predicate": "model_release",
+    "object": "可单卡本地运行",
+    "claim_ref": "CL-6ae09bb9bcf96000",
+    "source_refs": [
+      "SA-fa629b013d3d81ce"
+    ]
+  },
+  {
     "relationship_id": "REL-9f7c0a2f173b8fae",
     "event_id": "EV-de54542fd7e2282c",
     "subject": "腾讯混元",
@@ -1262,14 +1441,47 @@
     ]
   },
   {
-    "relationship_id": "REL-61da839d3f6e9695",
-    "event_id": "EV-de54542fd7e2282c",
-    "subject": "腾讯混元",
-    "predicate": "model_release",
-    "object": "可单卡本地运行",
-    "claim_ref": "CL-c15d0afbb65d80c2",
+    "relationship_id": "REL-e9d823144d8e69f5",
+    "event_id": "EV-5cd7eaa56c1fbb83",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "报告称 Claude Code 处理用户请求前消耗 Tokens 量约为 OpenCode 的 4.7 倍",
+    "claim_ref": "CL-972909f107eb213a",
     "source_refs": [
-      "SA-fa629b013d3d81ce"
+      "SA-300616a6b04b8070"
+    ]
+  },
+  {
+    "relationship_id": "REL-e55a9e48c5320ebe",
+    "event_id": "EV-5cd7eaa56c1fbb83",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "报告称 Claude Code 处理用户请求前消耗 Tokens 量约为 OpenCode 的 4.7 倍",
+    "claim_ref": "CL-98568a4769d6cba5",
+    "source_refs": [
+      "SA-300616a6b04b8070"
+    ]
+  },
+  {
+    "relationship_id": "REL-6c40eba493e0fd23",
+    "event_id": "EV-5cd7eaa56c1fbb83",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "报告称 Claude Code 处理用户请求前消耗 Tokens 量约为 OpenCode 的 4.7 倍",
+    "claim_ref": "CL-0d31b12e78daafe8",
+    "source_refs": [
+      "SA-300616a6b04b8070"
+    ]
+  },
+  {
+    "relationship_id": "REL-65f96a28007872d3",
+    "event_id": "EV-5cd7eaa56c1fbb83",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "报告称 Claude Code 处理用户请求前消耗 Tokens 量约为 OpenCode 的 4.7 倍",
+    "claim_ref": "CL-176a954d9d2dec69",
+    "source_refs": [
+      "SA-300616a6b04b8070"
     ]
   },
   {
@@ -1328,6 +1540,17 @@
     ]
   },
   {
+    "relationship_id": "REL-5f38e44c5ad7ef3e",
+    "event_id": "EV-df789745fb926bfd",
+    "subject": "The founder of Hinge",
+    "predicate": "funding",
+    "object": "$18M to build a new AI dating service, Overtone",
+    "claim_ref": "CL-3a0e3ba6b57e7410",
+    "source_refs": [
+      "SA-9f4af31d84030c93"
+    ]
+  },
+  {
     "relationship_id": "REL-89fcbbfd775fe7d7",
     "event_id": "EV-df789745fb926bfd",
     "subject": "The founder of Hinge",
@@ -1347,50 +1570,6 @@
     "claim_ref": "CL-16612c68b2207028",
     "source_refs": [
       "SA-9f4af31d84030c93"
-    ]
-  },
-  {
-    "relationship_id": "REL-99e8be9d50f2de9b",
-    "event_id": "EV-df789745fb926bfd",
-    "subject": "The founder of Hinge",
-    "predicate": "funding",
-    "object": "$18M to build a new AI dating service, Overtone",
-    "claim_ref": "CL-1e82166f891f2fe2",
-    "source_refs": [
-      "SA-9f4af31d84030c93"
-    ]
-  },
-  {
-    "relationship_id": "REL-b3a07f882d5142a2",
-    "event_id": "EV-76da9e22fccc8dff",
-    "subject": "软银与Sierra",
-    "predicate": "partnership",
-    "object": "在日本推出AI客服服务",
-    "claim_ref": "CL-65f171b3d88f3d34",
-    "source_refs": [
-      "SA-bb2c860a8153f633"
-    ]
-  },
-  {
-    "relationship_id": "REL-28eed20016c7841b",
-    "event_id": "EV-76da9e22fccc8dff",
-    "subject": "软银与Sierra",
-    "predicate": "partnership",
-    "object": "在日本推出AI客服服务",
-    "claim_ref": "CL-6f713561270ebf6b",
-    "source_refs": [
-      "SA-bb2c860a8153f633"
-    ]
-  },
-  {
-    "relationship_id": "REL-0ff5a33a1f6e3335",
-    "event_id": "EV-fd303844e336b9ee",
-    "subject": "Claude Code v2.1.209",
-    "predicate": "product_release",
-    "object": "：修复 /model 等对话框在后台会话中被拦截的问题",
-    "claim_ref": "CL-3d5c86431c4b8683",
-    "source_refs": [
-      "SA-bcc681f3bbb4acae"
     ]
   },
   {
@@ -1427,8 +1606,8 @@
     ]
   },
   {
-    "relationship_id": "REL-e11625da0e0bed47",
-    "event_id": "EV-8e49e130d7c890f0",
+    "relationship_id": "REL-8bdbcfaafba208fb",
+    "event_id": "EV-8c88edd0ad8ff029",
     "subject": "MacWhisper 14",
     "predicate": "product_release",
     "object": "：新增编辑器视图，修复 CPU 占用过高问题",
@@ -1438,8 +1617,8 @@
     ]
   },
   {
-    "relationship_id": "REL-374c16c4e906b713",
-    "event_id": "EV-8e49e130d7c890f0",
+    "relationship_id": "REL-78995ec9d3b1cd76",
+    "event_id": "EV-8c88edd0ad8ff029",
     "subject": "MacWhisper 14",
     "predicate": "product_release",
     "object": "：新增编辑器视图，修复 CPU 占用过高问题",
@@ -1449,8 +1628,8 @@
     ]
   },
   {
-    "relationship_id": "REL-1fce40c21fb44e20",
-    "event_id": "EV-8e49e130d7c890f0",
+    "relationship_id": "REL-b5992641ae56dee0",
+    "event_id": "EV-8c88edd0ad8ff029",
     "subject": "MacWhisper 14",
     "predicate": "product_release",
     "object": "：新增编辑器视图，修复 CPU 占用过高问题",
@@ -1460,14 +1639,58 @@
     ]
   },
   {
-    "relationship_id": "REL-6edacdf3b92e138b",
-    "event_id": "EV-8e49e130d7c890f0",
+    "relationship_id": "REL-5ce2611d3bdf9ef5",
+    "event_id": "EV-8c88edd0ad8ff029",
     "subject": "MacWhisper 14",
     "predicate": "product_release",
     "object": "：新增编辑器视图，修复 CPU 占用过高问题",
     "claim_ref": "CL-fd16a4c8da456a6b",
     "source_refs": [
       "SA-c865fe22e4dd5538"
+    ]
+  },
+  {
+    "relationship_id": "REL-30254b7ad4a5bf4c",
+    "event_id": "EV-7c6a9f4ee4829976",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "谷歌 DeepMind CEO 哈萨比斯警告：AGI 可能几年内到来，人类需抓紧窗口期确保安全",
+    "claim_ref": "CL-1383dc2b9d7b7ac7",
+    "source_refs": [
+      "SA-9a1d61b42ff51615"
+    ]
+  },
+  {
+    "relationship_id": "REL-3d0af87285652e8a",
+    "event_id": "EV-7c6a9f4ee4829976",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "谷歌 DeepMind CEO 哈萨比斯警告：AGI 可能几年内到来，人类需抓紧窗口期确保安全",
+    "claim_ref": "CL-b9ad309c79dae365",
+    "source_refs": [
+      "SA-9a1d61b42ff51615"
+    ]
+  },
+  {
+    "relationship_id": "REL-f5f887c80fd0678e",
+    "event_id": "EV-7c6a9f4ee4829976",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "谷歌 DeepMind CEO 哈萨比斯警告：AGI 可能几年内到来，人类需抓紧窗口期确保安全",
+    "claim_ref": "CL-04f3ee34f0a37149",
+    "source_refs": [
+      "SA-9a1d61b42ff51615"
+    ]
+  },
+  {
+    "relationship_id": "REL-98133dee50ca0d6f",
+    "event_id": "EV-7c6a9f4ee4829976",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "谷歌 DeepMind CEO 哈萨比斯警告：AGI 可能几年内到来，人类需抓紧窗口期确保安全",
+    "claim_ref": "CL-e6fdfa9a52b202e1",
+    "source_refs": [
+      "SA-9a1d61b42ff51615"
     ]
   },
   {

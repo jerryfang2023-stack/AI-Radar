@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-038
 title: "Rime 获 2400 万美元 A 轮融资，用自建录音棚数据训练企业语音 AI"
 title_zh: "Rime 获 2400 万美元 A 轮融资，用自建录音棚数据训练企业语音 AI"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://techcrunch.com/2026/07/15/rime-picks-up-24m-series-a-to-help-enterprises-field-customer-calls"
 canonical_url: "https://techcrunch.com/2026/07/15/rime-picks-up-24m-series-a-to-help-enterprises-field-customer-calls"
 source_name: "TechCrunch：AI（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-16T02:39:33.658Z
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Rime 获 2400 万美元 A 轮融资，用自建录音棚数据训练企业语音 AI

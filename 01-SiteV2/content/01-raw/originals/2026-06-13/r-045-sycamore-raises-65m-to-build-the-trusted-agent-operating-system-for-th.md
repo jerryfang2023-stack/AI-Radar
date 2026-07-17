@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Funding led by Coatue and Lightspeed to
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "Sycamore融资6500万美元，为企业打造可信代理操作系统"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Sycamore Raises $65M to Build the Trusted Agent Operating System for the Enterprise

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"# AWS invests $1 billion to embed AI for
 theme: enterprise-ai-implementation-signal
 keyword_group: enterprise-ai-implementation-signal
 copyright_note: local research archive only
+title_zh: "AWS 投资 10 亿美元部署前线 AI 工程师"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # AWS invests $1 billion in forward deployed AI engineers

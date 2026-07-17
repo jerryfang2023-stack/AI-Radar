@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"Examine the systemic causes of ente
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "企业AI部署失败：原因与案例研究"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Enterprise AI Rollout Failures: Causes and Case Studies

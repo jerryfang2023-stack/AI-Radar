@@ -2,7 +2,7 @@
 id: SIG-20260629-A10
 type: signal_card
 signal_type: funding
-title: "JustAI 获得 1700 万美元 A 轮融资，扩展 AI 营销自动化"
+title: "JustAI 获1700万美元A轮融资，用于全球扩展AI驱动营销自动化 - 印度初创企业时报"
 date: 2026-06-29
 status: published
 source_title: "JustAI Raises $17 Million in Series A to Scale AI-Powered Marketing Automation Globally - Indian Startup Times"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "JustAI"
 
 frontend:
-  displayTitle: "JustAI 获得 1700 万美元 A 轮融资，扩展 AI 营销自动化"
+  displayTitle: "JustAI 获1700万美元A轮融资，用于全球扩展AI驱动营销自动化 - 印度初创企业时报"
   sourceLinks:
     - "https://www.indianstartuptimes.com/investment/justai-raises-17-million-in-series-a-to-scale-ai-powered-marketing-automation-globally/"
 ---
 
-# JustAI 获得 1700 万美元 A 轮融资，扩展 AI 营销自动化
+# JustAI 获1700万美元A轮融资，用于全球扩展AI驱动营销自动化 - 印度初创企业时报
 
 ## 新闻事实
 

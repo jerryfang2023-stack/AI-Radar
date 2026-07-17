@@ -1,0 +1,172 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 818,
+    "quarantinedEventCount": 58
+  },
+  "entity": {
+    "id": "EN-5fa6f727c9e3afe0",
+    "name": "Brain2Qwerty v1",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-c996e56f7f4bdc49"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [
+      "EN-ea3bd73e2b506e00"
+    ],
+    "firstSeen": "2026-07-01",
+    "lastSeen": "2026-07-01",
+    "relationIds": [
+      "REL2-8288d584d6d4def1"
+    ],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-c996e56f7f4bdc49"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-c996e56f7f4bdc49",
+        "dataDate": "2026-07-01",
+        "date": "2026-07-01",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Meta AI 发布 Brain2Qwerty v2：无需手术的脑电波解码系统",
+        "displayTags": [],
+        "entityIds": [
+          "EN-ae31f30d39374a8b",
+          "EN-ea3bd73e2b506e00",
+          "EN-557203e8cc173124",
+          "EN-2ba325ce6f8e3dc9",
+          "EN-5fa6f727c9e3afe0"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [
+    {
+      "id": "EN-ea3bd73e2b506e00",
+      "name": "Meta",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-02882e6f5e1902c6",
+        "EV-5df885dbd24b6d00",
+        "EV-427081ec574b43bb",
+        "EV-e41fc65eb014893f",
+        "EV-974a6b7d0e0efef2",
+        "EV-917a390341b9fce6",
+        "EV-9efcf6480f6c6f48",
+        "EV-cf76f090a1a20a36",
+        "EV-fd7e79d3cb9cdb69",
+        "EV-43301de739fe560e",
+        "EV-cf176636839e45be",
+        "EV-9496f90f3e808992",
+        "EV-dce5de62b2e4b752",
+        "EV-ae736eb124d7163a",
+        "EV-e42e55d1e11a2ba2",
+        "EV-41baa43cf05d4288",
+        "EV-40390136762c64d3",
+        "EV-07a5533c18e5a74e",
+        "EV-56b9643b245a5ff4",
+        "EV-0edb0a592ca1fd67",
+        "EV-20ffa968bcbc4729",
+        "EV-7e52d691a0553667",
+        "EV-f34eec5df7f5bcb7",
+        "EV-c996e56f7f4bdc49",
+        "EV-b60df35d168fe6b7",
+        "EV-c846e768dad05441",
+        "EV-cea99e5d7f93d56a",
+        "EV-29f130674dbbb59e",
+        "EV-a39ca82d354c7197",
+        "EV-657837763764c869",
+        "EV-ef823877347ff40f",
+        "EV-04cf95633b564f9a",
+        "EV-02b07069713d9a1c",
+        "EV-322796d9761a0824",
+        "EV-2d56dec8dfeb2b56",
+        "EV-8fcecabca2e92b40"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
+        "TX-industry-healthcare_life_sciences",
+        "TX-industry-media_entertainment",
+        "TX-technology-multimodal",
+        "TX-technology-guardrails_safety",
+        "TX-technology-tool_use",
+        "TX-technology-reasoning",
+        "TX-technology-image_generation",
+        "TX-technology-computer_use"
+      ],
+      "relatedEntityIds": [
+        "EN-e3863f813fe47240",
+        "EN-de1afc61dd4d2cea",
+        "EN-d85ad5e8ff8e2889",
+        "EN-a2fa009495c3bb3a",
+        "EN-77fe4e790d5bc756",
+        "EN-2ba325ce6f8e3dc9",
+        "EN-557203e8cc173124",
+        "EN-5fa6f727c9e3afe0",
+        "EN-e71558a14e7ed6ab"
+      ],
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-07-17"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-8288d584d6d4def1",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-ea3bd73e2b506e00",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-5fa6f727c9e3afe0",
+      "object_type": "entity",
+      "event_id": "EV-c996e56f7f4bdc49",
+      "claim_refs": [
+        "CL-de2a8e6c3c188c7e",
+        "CL-d18e038b43a5ff43",
+        "CL-fe6157f96041c43f"
+      ],
+      "source_refs": [
+        "SA-529f0b59de6f5f06"
+      ],
+      "data_date": "2026-07-01",
+      "status": "verified"
+    }
+  ],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

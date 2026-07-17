@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"# Trase Raises $107 Million Seed Round 
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Trase 获得 1.07 亿美元种子轮融资，由 ARCH Venture Partners 领投"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Trase Raises $107 Million Seed Round Led By ARCH Venture Partners

@@ -2,7 +2,7 @@
 id: SIG-20260710-A15
 type: signal_card
 signal_type: case
-title: "IBM借助多代理功能和专门的现代化工作流程推进企业AI软件开发"
+title: "IBM通过多智能体能力和专业化现代化工作流推进企业AI软件开发"
 date: 2026-07-10
 status: published
 source_title: "IBM Advances Enterprise AI Software Development with Multi-Agent Capabilities and Specialized Modernization Workflows"
@@ -57,12 +57,12 @@ opportunity_signals:
 signal_owner: "Henry"
 
 frontend:
-  displayTitle: "IBM借助多代理功能和专门的现代化工作流程推进企业AI软件开发"
+  displayTitle: "IBM通过多智能体能力和专业化现代化工作流推进企业AI软件开发"
   sourceLinks:
     - "https://newsroom.ibm.com/2026-07-09-ibm-advances-enterprise-ai-software-development-with-multi-agent-capabilities-and-specialized-modernization-workflows"
 ---
 
-# IBM借助多代理功能和专门的现代化工作流程推进企业AI软件开发
+# IBM通过多智能体能力和专业化现代化工作流推进企业AI软件开发
 
 ## 新闻事实
 

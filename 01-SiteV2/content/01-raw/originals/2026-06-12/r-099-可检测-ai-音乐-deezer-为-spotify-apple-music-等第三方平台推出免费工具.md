@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"法国音乐流媒体平台 Deez
 theme: outside-core-exploration
 keyword_group: outside-core-exploration
 copyright_note: local research archive only
+title_zh: "可检测 AI 音乐，Deezer 为 Spotify、Apple Music 等第三方平台推出免费工具"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 可检测 AI 音乐，Deezer 为 Spotify、Apple Music 等第三方平台推出免费工具

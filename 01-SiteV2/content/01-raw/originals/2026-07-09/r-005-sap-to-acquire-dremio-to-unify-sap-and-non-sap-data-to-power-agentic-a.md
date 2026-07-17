@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-005
 title: "SAP to Acquire Dremio to Unify SAP and Non-SAP Data to Power Agentic AI – Company Announcement - FT.com"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "SAP 收购 Dremio 以统一 SAP 与非 SAP 数据，赋能 AI 智能体"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://markets.ft.com/data/announce/full?dockey=600-202605040717PR_NEWS_USPRX____LN50004-1"
 canonical_url: "https://markets.ft.com/data/announce/full?dockey=600-202605040717PR_NEWS_USPRX____LN50004-1"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-09T03:05:44.829Z
 theme: aihot-fallback-market-structure
 keyword_group: aihot-fallback-market-structure
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # SAP to Acquire Dremio to Unify SAP and Non-SAP Data to Power Agentic AI – Company Announcement - FT.com

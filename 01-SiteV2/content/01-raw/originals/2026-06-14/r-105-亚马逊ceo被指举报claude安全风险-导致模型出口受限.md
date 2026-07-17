@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"据报道，亚马逊CEO Andy Jassy向�
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "亚马逊CEO被指举报Claude安全风险，导致模型出口受限"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 亚马逊CEO被指举报Claude安全风险，导致模型出口受限

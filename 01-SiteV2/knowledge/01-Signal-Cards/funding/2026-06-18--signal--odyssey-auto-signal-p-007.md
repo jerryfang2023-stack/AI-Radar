@@ -2,7 +2,7 @@
 id: SIG-20260618-A15
 type: signal_card
 signal_type: funding
-title: "Odyssey 获得$310 m 融资，押注销售线索和收入团队协作"
+title: "世界模型公司Odyssey完成3.1亿美元B轮融资，估值14.5亿美元"
 date: 2026-06-18
 status: published
 source_title: "世界模型公司Odyssey完成3.1亿美元B轮融资，估值14.5亿美元"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Odyssey"
 
 frontend:
-  displayTitle: "Odyssey 获得$310 m 融资，押注销售线索和收入团队协作"
+  displayTitle: "世界模型公司Odyssey完成3.1亿美元B轮融资，估值14.5亿美元"
   sourceLinks:
     - "https://techcrunch.com/2026/06/17/world-model-maker-odyssey-nabs-1-45b-valuation-backed-by-amazon-and-other-big-names"
 ---
 
-# Odyssey 获得$310 m 融资，押注销售线索和收入团队协作
+# 世界模型公司Odyssey完成3.1亿美元B轮融资，估值14.5亿美元
 
 ## 新闻事实
 

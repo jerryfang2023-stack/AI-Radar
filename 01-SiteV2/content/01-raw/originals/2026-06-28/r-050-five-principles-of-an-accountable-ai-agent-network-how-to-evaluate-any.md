@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"The first post in this series argued th
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "负责任AI代理网络的五项原则：如何评估任何治理平台"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Five Principles of an Accountable AI Agent Network: How to Evaluate Any Governance Platform

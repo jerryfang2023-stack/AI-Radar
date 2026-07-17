@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"DiffusionGemma 是 Google 基于 Ge
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "DiffusionGemma 开发者指南"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # DiffusionGemma 开发者指南

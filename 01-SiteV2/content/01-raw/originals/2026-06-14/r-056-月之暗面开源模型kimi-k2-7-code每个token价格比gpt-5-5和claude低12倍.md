@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"Moonshot AI发布Kimi K2.7 Code，一款
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "月之暗面开源模型Kimi K2.7 Code每个token价格比GPT-5.5和Claude低12倍"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 月之暗面开源模型Kimi K2.7 Code每个token价格比GPT-5.5和Claude低12倍

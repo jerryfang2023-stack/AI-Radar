@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"OpenAI 发布 GeneBench-Pro 基准�
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "OpenAI 推出 GeneBench-Pro 基准测试，评估 AI 模型生物学计算能力"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # OpenAI 推出 GeneBench-Pro 基准测试，评估 AI 模型生物学计算能力

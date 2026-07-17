@@ -72,6 +72,10 @@ key_excerpts: [{"type":"company_action","text":"Introducing computer use in Gemi
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Gemini 3.5 Flash 引入计算机使用功能"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Introducing computer use in Gemini 3.5 Flash

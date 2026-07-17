@@ -72,6 +72,10 @@ key_excerpts: [{"type":"quote","text":"Nathan Benaich, founder and GP at VC firm
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "2024年人工智能现状：前沿模型、AI地缘政治与机器人复兴 | 创始人Nathan Benaich，Air Street Capital"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # State of AI 2024: Frontier Models, AI Geopolitics and The Robotics Renaissance | Nathan Benaich, Founder, Air Street Capital

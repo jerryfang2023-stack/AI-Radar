@@ -72,6 +72,10 @@ key_excerpts: [{"type":"company_action","text":"&lt;!-- Let&#39;s see how to imp
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_zh: "使用 Tensorflow + OpenAI Gym 实现深度强化学习模型"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Implementing Deep Reinforcement Learning Models with Tensorflow &#43; OpenAI Gym

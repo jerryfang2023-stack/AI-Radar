@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"Ex-GitHub CEO Thomas Dohmke Launches Ent
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "前GitHub CEO Thomas Dohmke 获6000万美元融资创立Entire，打造面向AI智能体的下一代开发者平台"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Ex-GitHub CEO Thomas Dohmke Launches Entire with $60M to Build the Next Developer Platform for AI Agents | The Agent Report

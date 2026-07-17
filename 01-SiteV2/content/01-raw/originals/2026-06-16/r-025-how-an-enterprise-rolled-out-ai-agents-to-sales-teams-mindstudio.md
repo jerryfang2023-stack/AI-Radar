@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"This case study examines how a mid-
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_zh: "企业如何向销售团队推广AI代理 | MindStudio"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # How an Enterprise Rolled Out AI Agents to Sales Teams | MindStudio

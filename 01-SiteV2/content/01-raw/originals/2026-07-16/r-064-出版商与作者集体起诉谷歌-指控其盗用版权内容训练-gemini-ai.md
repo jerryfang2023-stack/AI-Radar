@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-064
 title: "出版商与作者集体起诉谷歌，指控其盗用版权内容训练 Gemini AI"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "出版商与作者集体起诉谷歌，指控其盗用版权内容训练 Gemini AI"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/977/050.htm"
 canonical_url: "https://ithome.com/0/977/050.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-16T02:39:33.796Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 出版商与作者集体起诉谷歌，指控其盗用版权内容训练 Gemini AI

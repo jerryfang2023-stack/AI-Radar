@@ -1,7 +1,7 @@
 ---
 id: CASE-20260518-05
 type: case_card
-title: "IT之家（RSS）：Linux 之父 Linus 发飙：别用 AI 提交大量重复 Bug 报告，直接提修复方"
+title: "Linux 之父 Linus 发飙：别用 AI 提交大量重复 Bug 报告，直接提修复方案，OK？"
 date: 2026-05-18
 status: draft
 created_at: 2026-05-19T05:28:07.904Z
@@ -69,7 +69,7 @@ internal:
   last_reviewed: 2026-05-18
 ---
 
-# IT之家（RSS）：Linux 之父 Linus 发飙：别用 AI 提交大量重复 Bug 报告，直接提修复方
+# Linux 之父 Linus 发飙：别用 AI 提交大量重复 Bug 报告，直接提修复方案，OK？
 
 ## 这个案例是谁
 

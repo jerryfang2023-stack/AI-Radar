@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-001
 title: "Hang Ten Systems Raises $32M to Help Enterprises Succeed With AI"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "Hang Ten Systems 获 3200 万美元融资，助力企业成功应用 AI"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://theaiinsider.tech/2026/07/02/hang-ten-systems-raises-32m-to-help-enterprises-succeed-with-ai/"
 canonical_url: "https://theaiinsider.tech/2026/07/02/hang-ten-systems-raises-32m-to-help-enterprises-succeed-with-ai"
 source_name: "keyword search / Anysearch"
@@ -78,6 +78,7 @@ fact_extraction_completed_at: 2026-07-04T04:35:47.529Z
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Hang Ten Systems Raises $32M to Help Enterprises Succeed With AI

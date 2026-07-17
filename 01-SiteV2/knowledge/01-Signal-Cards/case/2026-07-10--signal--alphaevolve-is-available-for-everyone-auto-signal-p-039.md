@@ -2,7 +2,7 @@
 id: SIG-20260710-A12
 type: signal_card
 signal_type: case
-title: "AlphaEvolve可供所有人使用| Google Cloud博客"
+title: "AlphaEvolve现已面向所有人开放 | Google Cloud博客"
 date: 2026-07-10
 status: published
 source_title: "AlphaEvolve is available for everyone | Google Cloud Blog"
@@ -57,12 +57,12 @@ opportunity_signals:
 signal_owner: "AlphaEvolve is available for everyone"
 
 frontend:
-  displayTitle: "AlphaEvolve可供所有人使用| Google Cloud博客"
+  displayTitle: "AlphaEvolve现已面向所有人开放 | Google Cloud博客"
   sourceLinks:
     - "https://cloud.google.com/blog/products/ai-machine-learning/alphaevolve-is-available-for-everyone"
 ---
 
-# AlphaEvolve可供所有人使用| Google Cloud博客
+# AlphaEvolve现已面向所有人开放 | Google Cloud博客
 
 ## 新闻事实
 

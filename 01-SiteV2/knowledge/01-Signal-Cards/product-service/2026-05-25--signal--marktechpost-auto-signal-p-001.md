@@ -2,7 +2,7 @@
 id: SIG-20260525-A01
 type: signal_card
 signal_type: product_service
-title: "微软研究院推出Webwright终端原生浏览器代理框架"
+title: "构建完整的 Langfuse 可观测性与评估流水线以实现追踪、提示词管理、评分与实验"
 date: 2026-05-25
 status: published
 asset_level: frontstage
@@ -68,7 +68,7 @@ signal_owner: "Marktechpost"
 watch_reason: "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
 
 frontend:
-  displayTitle: "微软研究院推出Webwright终端原生浏览器代理框架"
+  displayTitle: "构建完整的 Langfuse 可观测性与评估流水线以实现追踪、提示词管理、评分与实验"
   eventLine: "Marktechpost 发布新的 AI 能力，面向模型部署和算力调用。"
   whyWatch: "这条变化值得看，是因为它把竞争点放到了模型部署和算力调用：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"
   businessMeaning: "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
@@ -78,7 +78,7 @@ frontend:
     - "https://www.marktechpost.com/2026/05/24/microsoft-research-releases-webwright-a-terminal-native-web-agent-framework-that-scores-60-1-on-odysseys-up-from-base-gpt-5-4s-33-5"
 ---
 
-# 微软研究院推出Webwright终端原生浏览器代理框架
+# 构建完整的 Langfuse 可观测性与评估流水线以实现追踪、提示词管理、评分与实验
 
 ## 信号底稿
 

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"quote","text":"Olivia Watkins (Frontier Evals team) and 
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "⚡️SWE-Bench Verified的终结——OpenAI前沿评估与人类数据团队Mia Glaese与Olivia Watkins"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # ⚡️The End of SWE-Bench Verified — Mia Glaese &amp; Olivia Watkins, OpenAI Frontier Evals &amp; Human Data

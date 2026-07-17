@@ -2,7 +2,7 @@
 id: SIG-20260617-A18
 type: signal_card
 signal_type: product_service
-title: "Anthropic 推出 Agent 工作流能力，切入企业 Agent 协作平台"
+title: "Anthropic暂停Claude Agent SDK基于token的计费调整"
 date: 2026-06-17
 status: published
 source_title: "Anthropic暂停Claude Agent SDK基于token的计费调整"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Anthropic"
 
 frontend:
-  displayTitle: "Anthropic 推出 Agent 工作流能力，切入企业 Agent 协作平台"
+  displayTitle: "Anthropic暂停Claude Agent SDK基于token的计费调整"
   sourceLinks:
     - "https://arstechnica.com/ai/2026/06/anthropic-pauses-token-based-billing-for-its-claude-agent-sdk"
 ---
 
-# Anthropic 推出 Agent 工作流能力，切入企业 Agent 协作平台
+# Anthropic暂停Claude Agent SDK基于token的计费调整
 
 ## 新闻事实
 

@@ -2,7 +2,7 @@
 id: SIG-20260613-A17
 type: signal_card
 signal_type: product_service
-title: "Bloomberg 发布 AI 基础设施能力，切入模型部署和算力服务"
+title: "前投资银行家为印度推出低成本视频AI"
 date: 2026-06-13
 status: published
 source_title: "前投资银行家为印度推出低成本视频AI"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Bloomberg"
 
 frontend:
-  displayTitle: "Bloomberg 发布 AI 基础设施能力，切入模型部署和算力服务"
+  displayTitle: "前投资银行家为印度推出低成本视频AI"
   sourceLinks:
     - "https://www.bloomberg.com/news/articles/2026-06-12/former-investment-banker-debuts-low-cost-video-ai-for-india"
 ---
 
-# Bloomberg 发布 AI 基础设施能力，切入模型部署和算力服务
+# 前投资银行家为印度推出低成本视频AI
 
 ## 新闻事实
 

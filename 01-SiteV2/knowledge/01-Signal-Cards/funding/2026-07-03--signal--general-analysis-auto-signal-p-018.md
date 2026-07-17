@@ -2,7 +2,7 @@
 id: SIG-20260703-A02
 type: signal_card
 signal_type: funding
-title: "General Analysis 获得 $10M 融资"
+title: "General Analysis 融资1000万美元，打造代理时代的安全武器库"
 date: 2026-07-03
 status: published
 source_title: "General Analysis raises $10M to build the security arsenal for the agentic era | General Analysis"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "General Analysis"
 
 frontend:
-  displayTitle: "General Analysis 获得 $10M 融资"
+  displayTitle: "General Analysis 融资1000万美元，打造代理时代的安全武器库"
   sourceLinks:
     - "https://generalanalysis.com/blog/general-analysis-raises-10m"
 ---
 
-# General Analysis 获得 $10M 融资
+# General Analysis 融资1000万美元，打造代理时代的安全武器库
 
 ## 新闻事实
 

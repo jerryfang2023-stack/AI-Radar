@@ -2,7 +2,7 @@
 id: SIG-20260625-A19
 type: signal_card
 signal_type: product_service
-title: "AI Inference Explained: How Models Generate Outputs at Scale"
+title: "AI推理详解：模型如何大规模生成输出"
 date: 2026-06-25
 status: published
 source_title: "AI Inference Explained: How Models Generate Outputs at Scale"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "AI Inference Explained"
 
 frontend:
-  displayTitle: "AI Inference Explained: How Models Generate Outputs at Scale"
+  displayTitle: "AI推理详解：模型如何大规模生成输出"
   sourceLinks:
     - "https://alicelabs.ai/en/insights/what-is-ai-inference"
 ---
 
-# AI Inference Explained: How Models Generate Outputs at Scale
+# AI推理详解：模型如何大规模生成输出
 
 ## 新闻事实
 

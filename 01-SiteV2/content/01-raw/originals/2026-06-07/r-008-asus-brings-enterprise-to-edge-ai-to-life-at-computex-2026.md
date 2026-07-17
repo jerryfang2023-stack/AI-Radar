@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"2026-06-02T06:15:00Z / query=mod
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "华硕在2026年台北国际电脑展上实现企业级到边缘AI的落地"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # ASUS Brings Enterprise - to - Edge AI to Life at Computex 2026

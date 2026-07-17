@@ -72,6 +72,10 @@ key_excerpts: [{"type":"company_action","text":"据Bloomberg报道，顶尖AI研
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "AI研究员持续从Google流向竞争对手"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # AI研究员持续从Google流向竞争对手

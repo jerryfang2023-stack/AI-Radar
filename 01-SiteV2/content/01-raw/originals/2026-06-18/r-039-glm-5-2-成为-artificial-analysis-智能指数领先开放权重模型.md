@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"GLM-5.2 在 Artificial Analysis Intellig
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "GLM-5.2 成为 Artificial Analysis 智能指数领先开放权重模型"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # GLM-5.2 成为 Artificial Analysis 智能指数领先开放权重模型

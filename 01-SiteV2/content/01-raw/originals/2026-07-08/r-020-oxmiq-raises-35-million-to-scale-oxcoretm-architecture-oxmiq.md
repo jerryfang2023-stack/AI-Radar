@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-020
 title: "OXMIQ Raises $35 Million to Scale OxCore™ Architecture — OXMIQ"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "OXMIQ 获3500万美元融资，用于扩展OxCore™架构"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://oxmiq.ai/blog-oxmiq-raises-35m-series-a"
 canonical_url: "https://oxmiq.ai/blog-oxmiq-raises-35m-series-a"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-08T04:39:25.447Z
 theme: ai-hardware-investment-signal
 keyword_group: ai-hardware-investment-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # OXMIQ Raises $35 Million to Scale OxCore™ Architecture — OXMIQ

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"LinkedIn联合创始人、Anthropic和O
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "里德·霍夫曼称SpaceX\"不是一家人工智能公司\"，xAI则是\"彻底的灾难\""
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 里德·霍夫曼称SpaceX"不是一家人工智能公司"，xAI则是"彻底的灾难"

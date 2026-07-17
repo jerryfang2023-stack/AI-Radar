@@ -2,7 +2,7 @@
 id: SIG-20260630-A09
 type: signal_card
 signal_type: case
-title: "Dapta 评选 2026 年最佳 AI 智能体构建平台"
+title: "2026年最佳AI智能体构建平台（诚实排名）——Dapta"
 date: 2026-06-30
 status: published
 source_title: "Best AI Agent Builder Platforms in 2026 (Ranked Honestly) - Dapta"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Dapta"
 
 frontend:
-  displayTitle: "Dapta 评选 2026 年最佳 AI 智能体构建平台"
+  displayTitle: "2026年最佳AI智能体构建平台（诚实排名）——Dapta"
   sourceLinks:
     - "https://dapta.ai/blog-posts/best-ai-agent-platforms-2026/"
 ---
 
-# Dapta 评选 2026 年最佳 AI 智能体构建平台
+# 2026年最佳AI智能体构建平台（诚实排名）——Dapta
 
 ## 新闻事实
 

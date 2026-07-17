@@ -2,7 +2,7 @@
 id: SIG-20260611-A11
 type: signal_card
 signal_type: case
-title: "Claude Fable 5：首个 Mythos 模型 案例：AI 进入模型部署和算力调用"
+title: "Claude Fable 5：首个 Mythos 模型--强大、昂贵且经过严格过滤"
 date: 2026-06-11
 status: published
 source_title: "Claude Fable 5：首个 Mythos 模型--强大、昂贵且经过严格过滤"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Claude Fable 5：首个 Mythos 模型"
 
 frontend:
-  displayTitle: "Claude Fable 5：首个 Mythos 模型 案例：AI 进入模型部署和算力调用"
+  displayTitle: "Claude Fable 5：首个 Mythos 模型--强大、昂贵且经过严格过滤"
   sourceLinks:
     - "https://the-decoder.com/claude-fable-5-the-first-mythos-model-is-powerful-expensive-and-heavily-filtered"
 ---
 
-# Claude Fable 5：首个 Mythos 模型 案例：AI 进入模型部署和算力调用
+# Claude Fable 5：首个 Mythos 模型--强大、昂贵且经过严格过滤
 
 ## 新闻事实
 

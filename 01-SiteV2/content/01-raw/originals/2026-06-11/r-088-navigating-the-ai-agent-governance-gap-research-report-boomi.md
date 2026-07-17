@@ -72,6 +72,10 @@ key_excerpts: [{"type":"company_action","text":"AI agents are on the rise. Learn
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "应对AI代理治理空白 | 研究报告 - Boomi"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Navigating the AI Agent Governance Gap | Research Report - Boomi

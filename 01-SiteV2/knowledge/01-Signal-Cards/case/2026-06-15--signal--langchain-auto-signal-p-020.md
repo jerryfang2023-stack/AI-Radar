@@ -2,7 +2,7 @@
 id: SIG-20260615-A03
 type: signal_card
 signal_type: case
-title: "Langchain 案例：AI 进入地产开发和建筑设计流程"
+title: "Rippling 如何在6个月内借助 Deep Agents 和 LangSmith 构建生产级 AI"
 date: 2026-06-15
 status: published
 source_title: "How Rippling built production AI in 6 months with Deep Agents and LangSmith"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Langchain"
 
 frontend:
-  displayTitle: "Langchain 案例：AI 进入地产开发和建筑设计流程"
+  displayTitle: "Rippling 如何在6个月内借助 Deep Agents 和 LangSmith 构建生产级 AI"
   sourceLinks:
     - "https://www.langchain.com/blog/how-rippling-went-ai-native-across-every-product-in-6-months-with-deep-agents-and-langsmith"
 ---
 
-# Langchain 案例：AI 进入地产开发和建筑设计流程
+# Rippling 如何在6个月内借助 Deep Agents 和 LangSmith 构建生产级 AI
 
 ## 新闻事实
 

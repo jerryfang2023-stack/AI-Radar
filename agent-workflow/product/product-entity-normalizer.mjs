@@ -38,6 +38,7 @@ function cleanCandidate(value = "") {
   if (GENERIC_WORDS.has(candidate.toLocaleLowerCase())) return "";
   if (/^AI[- ]powered\b|^(?:AI Social|AI Public Launch)$/iu.test(candidate)) return "";
   if (/Social Platform for|^Every Team$/iu.test(candidate)) return "";
+  if (/^(?:Development|Experiment|Production)(?:\s+(?:From|To)\s+(?:Development|Experiment|Production))+$/iu.test(candidate)) return "";
   if (/\b(?:CTO|CEO|founder)$/iu.test(candidate)) return "";
   if (/^(?:开箱即用)$/u.test(candidate)) return "";
   if (/^(?:AI|artificial intelligence|人工智能|大模型|模型|平台|服务|产品|应用|工具|系统|功能)$/iu.test(candidate)) return "";

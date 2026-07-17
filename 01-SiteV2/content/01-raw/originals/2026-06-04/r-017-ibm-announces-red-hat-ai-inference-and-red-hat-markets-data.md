@@ -72,6 +72,10 @@ key_excerpts: [{"type":"supporting_context","text":"ARMONK, N.Y. , May 12, 2026 
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "IBM宣布推出Red Hat AI推理及Red Hat... - 市场数据"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # IBM Announces Red Hat AI Inference and Red Hat ... - Markets data

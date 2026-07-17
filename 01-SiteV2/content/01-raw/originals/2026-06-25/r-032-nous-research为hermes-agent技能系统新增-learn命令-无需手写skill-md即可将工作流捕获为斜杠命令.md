@@ -72,6 +72,10 @@ key_excerpts: [{"type":"quote","text":"Nous Research为开源自改进智能体H
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Nous Research为Hermes Agent技能系统新增/learn命令，无需手写SKILL.md即可将工作流捕获为斜杠命令"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Nous Research为Hermes Agent技能系统新增/learn命令，无需手写SKILL.md即可将工作流捕获为斜杠命令

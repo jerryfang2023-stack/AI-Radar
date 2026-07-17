@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"Sanofi built an enterprise-wide pro
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_zh: "赛诺菲携手AI与Snowflake打造企业级流程挖掘卓越中心"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # How Sanofi Built an Enterprise Process Mining Center of Excellence with AI and Snowflake

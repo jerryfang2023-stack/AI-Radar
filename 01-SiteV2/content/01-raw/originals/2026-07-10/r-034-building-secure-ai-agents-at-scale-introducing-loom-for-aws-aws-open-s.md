@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-034
 title: "Building secure AI agents at scale: Introducing Loom for AWS | AWS Open Source Blog"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "大规模构建安全AI智能体：推出Loom for AWS"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://aws.amazon.com/blogs/opensource/building-secure-ai-agents-at-scale-introducing-loom-for-aws/"
 canonical_url: "https://aws.amazon.com/blogs/opensource/building-secure-ai-agents-at-scale-introducing-loom-for-aws"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-10T01:59:50.229Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Building secure AI agents at scale: Introducing Loom for AWS | AWS Open Source Blog

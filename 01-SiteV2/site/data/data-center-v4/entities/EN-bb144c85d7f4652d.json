@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-17T18:20:10.588Z",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 727,
-    "quarantinedEventCount": 50
+    "eventCount": 818,
+    "quarantinedEventCount": 58
   },
   "entity": {
     "id": "EN-bb144c85d7f4652d",
@@ -57,6 +57,12 @@
             "id": "compute_system",
             "dimensionName": "产品形态",
             "name": "计算系统"
+          },
+          {
+            "dimensionId": "product_form",
+            "id": "data_infrastructure",
+            "dimensionName": "产品形态",
+            "name": "数据与模型基础设施"
           }
         ],
         "entityIds": [
@@ -79,9 +85,9 @@
       "stage": "announced",
       "stageLabel": "已公布",
       "customer": "未披露",
-      "vendor": "未披露",
+      "vendor": "鸿海",
       "industry": "未披露",
-      "useCase": "，合作生产年内启动",
+      "useCase": "合作生产年内启动",
       "reportedNeed": "未披露",
       "deliveryComponents": [
         "IT之家了解到，本次合作中双方将结合鸿海的制造优势和施耐德电气的能源智慧， 共同打造集成式、可实时部署的解决方案 ，协助客户在全球各地以更快的速度、更好的效率与更佳的预先规划，构建并运营 AI 基础设施。"
@@ -90,7 +96,6 @@
       "metrics": [],
       "undisclosedFields": [
         "customer",
-        "vendor",
         "industry",
         "workflow_before",
         "workflow_after",

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"AMD and Airbus back Featherless.ai’s 
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "AMD与空客支持Featherless.ai的2000万美元A轮融资，助力开源AI基础设施"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # AMD and Airbus back Featherless.ai’s $20M Series A to power open-source AI infrastructure — TFN

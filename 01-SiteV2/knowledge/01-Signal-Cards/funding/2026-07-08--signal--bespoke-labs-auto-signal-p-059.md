@@ -2,7 +2,7 @@
 id: SIG-20260708-A13
 type: signal_card
 signal_type: funding
-title: "Bespoke Labs 获得 $40M 融资"
+title: "获Anthropic、OpenAI及Meta内部人士支持，Bespoke Labs融资4000万美元：更好的环境能否击败更大的模型？——TFN"
 date: 2026-07-08
 status: published
 source_title: "Backed by Anthropic, OpenAI, and Meta insiders, Bespoke Labs raises $40M: can better environments beat bigger models? — TFN"
@@ -55,12 +55,12 @@ opportunity_signals:
 signal_owner: "Bespoke Labs"
 
 frontend:
-  displayTitle: "Bespoke Labs 获得 $40M 融资"
+  displayTitle: "获Anthropic、OpenAI及Meta内部人士支持，Bespoke Labs融资4000万美元：更好的环境能否击败更大的模型？——TFN"
   sourceLinks:
     - "https://techfundingnews.com/backed-by-anthropic-openai-and-meta-insiders-bespoke-labs-raises-40m-can-better-environments-beat-bigger-models/"
 ---
 
-# Bespoke Labs 获得 $40M 融资
+# 获Anthropic、OpenAI及Meta内部人士支持，Bespoke Labs融资4000万美元：更好的环境能否击败更大的模型？——TFN
 
 ## 新闻事实
 

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"咨询公司贝恩使用 vibecoding 构
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "贝恩用 vibecoding 生成 AI 复制品评估软件收购目标"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 贝恩用 vibecoding 生成 AI 复制品评估软件收购目标

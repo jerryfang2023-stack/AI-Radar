@@ -1,0 +1,223 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 818,
+    "quarantinedEventCount": 58
+  },
+  "entity": {
+    "id": "EN-7d5f17368c04f04c",
+    "name": "FSD",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-e1a7e7dcb19bfc70"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-use_case-robotics_automation"
+    ],
+    "relatedEntityIds": [
+      "EN-6fcba5d96a4fadfd"
+    ],
+    "firstSeen": "2026-06-21",
+    "lastSeen": "2026-06-21",
+    "relationIds": [
+      "REL2-8c0678e04d37ce7f"
+    ],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-e1a7e7dcb19bfc70"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-e1a7e7dcb19bfc70",
+        "dataDate": "2026-06-21",
+        "date": "2026-06-21",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "马斯克：Grok 语音控制特斯拉 FSD 功能将在 3 个月左右推出",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "id": "robotics_automation",
+            "dimensionName": "应用场景",
+            "name": "机器人与物理自动化"
+          }
+        ],
+        "entityIds": [
+          "EN-75fe8aaf5a7e3a7e",
+          "EN-6fcba5d96a4fadfd",
+          "EN-7d5f17368c04f04c"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [
+    {
+      "id": "EN-6fcba5d96a4fadfd",
+      "name": "xAI",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "Grok",
+        "SpaceXAI"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-3daefecd0453631a",
+        "EV-edcb66d0401cfb8f",
+        "EV-5d581d112fdbd464",
+        "EV-201b25d4f3cf696a",
+        "EV-e15ae1112294d59e",
+        "EV-43301de739fe560e",
+        "EV-ae736eb124d7163a",
+        "EV-bdcd6fc0caa8f6d4",
+        "EV-5012364af7480121",
+        "EV-e1a7e7dcb19bfc70",
+        "EV-10aac036228b3c6b",
+        "EV-ed58c2c69290ee4c",
+        "EV-631197767a45d34c",
+        "EV-d53cd33e8f541a65",
+        "EV-11a3893cb86fef69",
+        "EV-9578242a4df20721",
+        "EV-8cd571951f62b2c8",
+        "EV-bce258f8f915ff5f",
+        "EV-4beb890f0879aeaf"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-code_generation",
+        "TX-use_case-software_development",
+        "TX-use_case-robotics_automation",
+        "TX-technology-tool_use"
+      ],
+      "relatedEntityIds": [
+        "EN-0b9ca57f53ba758b",
+        "EN-c4bc2d00a42f220f",
+        "EN-24caf10fe9bfb1c5",
+        "EN-7d5f17368c04f04c",
+        "EN-1a254d17cfa54b16",
+        "EN-26e4951af4490c21"
+      ],
+      "firstSeen": "2026-05-25",
+      "lastSeen": "2026-07-17"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-8c0678e04d37ce7f",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-6fcba5d96a4fadfd",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-7d5f17368c04f04c",
+      "object_type": "entity",
+      "event_id": "EV-e1a7e7dcb19bfc70",
+      "claim_refs": [
+        "CL-f60f2cdb6d25ad05",
+        "CL-0febde26abbb50bd",
+        "CL-2afb32525c04ca66",
+        "CL-87512dc4ff7dc7be"
+      ],
+      "source_refs": [
+        "SA-866e0da6d4d70f3c"
+      ],
+      "data_date": "2026-06-21",
+      "status": "verified"
+    }
+  ],
+  "taxonomyNodes": [
+    {
+      "id": "TX-use_case-robotics_automation",
+      "name": "机器人与物理自动化",
+      "nodeType": "use_case",
+      "typeLabel": "应用场景",
+      "valueId": "robotics_automation",
+      "eventIds": [
+        "EV-434dcf1813a84ead",
+        "EV-f059fd80d668c6bc",
+        "EV-234ad54940674bf6",
+        "EV-39848cdd62c00e59",
+        "EV-4faa2bcf2e42e60c",
+        "EV-6b51b1b6fe22c540",
+        "EV-3353bd96728c99e2",
+        "EV-57565fc2e7502c59",
+        "EV-49751dfc7d2f6d6c",
+        "EV-69fbe85ca4ac81cd",
+        "EV-e1a7e7dcb19bfc70",
+        "EV-c834a9d33a86373c",
+        "EV-3f8ba5855b64dd1a",
+        "EV-7da59380bb30e76a",
+        "EV-67f32771d69084d6",
+        "EV-df3f5cf6bc985a9c",
+        "EV-ad64347138da72bb"
+      ],
+      "entityIds": [
+        "EN-6f21a653c48f4f19",
+        "EN-4dbe391b8fcf977a",
+        "EN-8d4321d936320802",
+        "EN-72138e570e5103e2",
+        "EN-60094bcf5292c490",
+        "EN-aa75c47729b4a292",
+        "EN-8147e6fed86d42c1",
+        "EN-96eebba49dbbf422",
+        "EN-e3b1bf3dab957ffe",
+        "EN-0f3360879e746531",
+        "EN-522d3edeb64a7ca4",
+        "EN-c608c4787821de1b",
+        "EN-101a515191c6be9e",
+        "EN-8afd897b5b887b06",
+        "EN-4d8ee3ec190ebf35",
+        "EN-30081094f2a8c83d",
+        "EN-d558e1de958b9d05",
+        "EN-4e7e886400fe6a83",
+        "EN-75fe8aaf5a7e3a7e",
+        "EN-6fcba5d96a4fadfd",
+        "EN-7d5f17368c04f04c",
+        "EN-0d049cd1e9f619f9",
+        "EN-5e1fcba4c9f1cf69",
+        "EN-7d3194f79e645c42",
+        "EN-94ff75465b1afa65",
+        "EN-42375a8003f17c95",
+        "EN-171fa23d27b5894b",
+        "EN-80ea42a231357d12"
+      ],
+      "fdeIds": [
+        "FDE-dadf0e9572889d3d"
+      ],
+      "hardwareIds": [
+        "HW-dca442211b264bbe"
+      ],
+      "firstSeen": "2026-05-24",
+      "lastSeen": "2026-07-17"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}

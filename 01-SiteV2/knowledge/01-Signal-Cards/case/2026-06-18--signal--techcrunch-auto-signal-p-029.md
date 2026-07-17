@@ -2,7 +2,7 @@
 id: SIG-20260618-A16
 type: signal_card
 signal_type: case
-title: "G7领导人担忧美国随时切断AI访问，讨论建立"信任伙伴"计划"
+title: "G7领导人担忧美国随时切断AI访问，讨论建立\"信任伙伴\"计划"
 date: 2026-06-18
 status: published
 source_title: "G7领导人担忧美国随时切断AI访问，讨论建立"信任伙伴"计划"
@@ -53,7 +53,7 @@ opportunity_signals:
 signal_owner: "Techcrunch"
 
 frontend:
-  displayTitle: "G7领导人担忧美国随时切断AI访问，讨论建立"信任伙伴"计划"
+  displayTitle: "G7领导人担忧美国随时切断AI访问，讨论建立\"信任伙伴\"计划"
   sourceLinks:
     - "https://techcrunch.com/2026/06/17/world-leaders-want-american-ai-they-just-dont-want-america-to-be-able-to-turn-it-off"
 ---

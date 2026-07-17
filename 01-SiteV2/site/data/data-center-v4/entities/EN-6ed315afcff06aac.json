@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-17T18:20:10.588Z",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 727,
-    "quarantinedEventCount": 50
+    "eventCount": 818,
+    "quarantinedEventCount": 58
   },
   "entity": {
     "id": "EN-6ed315afcff06aac",
@@ -51,7 +51,14 @@
         "status": "completed",
         "statusLabel": "已完成",
         "title": "微信 AI 助手\"小微\"灰度上线，可通过文字或语音对话操作原生功能",
-        "displayTags": [],
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "ai_application",
+            "dimensionName": "产品形态",
+            "name": "AI 应用"
+          }
+        ],
         "entityIds": [
           "EN-6ed315afcff06aac"
         ]
@@ -62,45 +69,6 @@
   "relatedEntities": [],
   "relationships": [],
   "taxonomyNodes": [],
-  "fde": [
-    {
-      "id": "FDE-2ecd6233112fcf0e",
-      "eventId": "EV-3acfc96d99c32cf0",
-      "dataDate": "2026-06-21",
-      "date": "2026-06-20",
-      "title": "微信 AI 助手\"小微\"灰度上线，可通过文字或语音对话操作原生功能",
-      "stage": "completed",
-      "stageLabel": "已完成",
-      "customer": "微信 AI 助手\"小微\"灰度",
-      "vendor": "未披露",
-      "industry": "未披露",
-      "useCase": "，可通过文字或语音对话操作原生功能",
-      "reportedNeed": "未披露",
-      "deliveryComponents": [
-        "微信 AI 助手“小微”灰度上线，可通过文字或语音对话操作微信原生功能 - IT之家",
-        "微信 AI 助手“小微”灰度上线，可通过文字或语音对话操作微信原生功能"
-      ],
-      "outcomes": [],
-      "metrics": [],
-      "undisclosedFields": [
-        "vendor",
-        "industry",
-        "workflow_before",
-        "workflow_after",
-        "delivery_model",
-        "team_composition",
-        "reported_need",
-        "systems_integrated",
-        "data_requirements",
-        "governance_controls",
-        "reported_outcomes"
-      ],
-      "tags": [],
-      "sourceUrl": "https://ithome.com/0/966/534.htm",
-      "entityIds": [
-        "EN-6ed315afcff06aac"
-      ]
-    }
-  ],
+  "fde": [],
   "hardware": []
 }

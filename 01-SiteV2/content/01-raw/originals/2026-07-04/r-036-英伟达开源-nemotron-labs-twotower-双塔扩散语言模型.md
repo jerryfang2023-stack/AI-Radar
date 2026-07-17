@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-036
 title: "英伟达开源 Nemotron-Labs-TwoTower 双塔扩散语言模型"
 title_zh: "英伟达开源 Nemotron-Labs-TwoTower 双塔扩散语言模型"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/972/162.htm"
 canonical_url: "https://ithome.com/0/972/162.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-04T04:50:50.266Z
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 英伟达开源 Nemotron-Labs-TwoTower 双塔扩散语言模型

@@ -1,0 +1,179 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 818,
+    "quarantinedEventCount": 58
+  },
+  "entity": {
+    "id": "EN-50fbf46e6eff93e5",
+    "name": "Lean 4",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-dbc47d61f3e94306"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [
+      "EN-c04bd5ebd10ab696"
+    ],
+    "firstSeen": "2026-07-04",
+    "lastSeen": "2026-07-05",
+    "relationIds": [
+      "REL2-a72c6ea4612a0db0",
+      "REL2-dd9fb29914c37f4a"
+    ],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-dbc47d61f3e94306",
+        "EV-eb2584a4801eb1e6"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-dbc47d61f3e94306",
+        "dataDate": "2026-07-05",
+        "date": "2026-07-04",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Mistral AI 开源模型 Leanstral 1.5 专为 Lean 4 形式化验证设计",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          }
+        ],
+        "entityIds": [
+          "EN-c04bd5ebd10ab696",
+          "EN-0d4ab5f8db6e89bc",
+          "EN-50fbf46e6eff93e5"
+        ]
+      },
+      {
+        "id": "EV-eb2584a4801eb1e6",
+        "dataDate": "2026-07-04",
+        "date": "2026-07-04",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Mistral AI 发布 Leanstral 1.5：专为 Lean 4 证明助手设计的代码智能体模型",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c04bd5ebd10ab696",
+          "EN-0d4ab5f8db6e89bc"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [
+    {
+      "id": "EN-c04bd5ebd10ab696",
+      "name": "Mistral AI",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-d4e44892226be468",
+        "EV-85506f9f86779a6d",
+        "EV-dc442b91a69fcc5a",
+        "EV-d292329c0ec64c8f",
+        "EV-653cbce2ccc79f8b",
+        "EV-3a67edc87806b5f1",
+        "EV-dbc47d61f3e94306",
+        "EV-eb2584a4801eb1e6",
+        "EV-865af5f2f09605c4"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-code_generation",
+        "TX-technology-long_context",
+        "TX-technology-on_device",
+        "TX-industry-automotive_transportation",
+        "TX-technology-tool_use"
+      ],
+      "relatedEntityIds": [
+        "EN-0d4ab5f8db6e89bc",
+        "EN-50fbf46e6eff93e5"
+      ],
+      "firstSeen": "2026-06-02",
+      "lastSeen": "2026-07-17"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-a72c6ea4612a0db0",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-c04bd5ebd10ab696",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-50fbf46e6eff93e5",
+      "object_type": "entity",
+      "event_id": "EV-dbc47d61f3e94306",
+      "claim_refs": [
+        "CL-51796767bcae979d",
+        "CL-238c5691ff58e17d",
+        "CL-2d1ec2f5767400b9",
+        "CL-48754f374fe2395e"
+      ],
+      "source_refs": [
+        "SA-3f455714b2d11914"
+      ],
+      "data_date": "2026-07-05",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-dd9fb29914c37f4a",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-c04bd5ebd10ab696",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-50fbf46e6eff93e5",
+      "object_type": "entity",
+      "event_id": "EV-eb2584a4801eb1e6",
+      "claim_refs": [
+        "CL-b2ca87455d9c5de5",
+        "CL-26592a3c0f803908",
+        "CL-b85a42b95b2be839",
+        "CL-23c4158d25f76d5c"
+      ],
+      "source_refs": [
+        "SA-8d35079dbf65f996"
+      ],
+      "data_date": "2026-07-04",
+      "status": "verified"
+    }
+  ],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

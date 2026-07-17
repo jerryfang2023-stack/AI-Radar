@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-038
 title: "腾讯洽谈收购 Manus 多数股权，此前北京迫使 Meta 放弃 20 亿美元收购"
 title_zh: "腾讯洽谈收购 Manus 多数股权，此前北京迫使 Meta 放弃 20 亿美元收购"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://the-decoder.com/tencent-moves-to-buy-majority-stake-in-manus-after-beijing-forced-meta-to-unwind-its-2-billion-deal"
 canonical_url: "https://the-decoder.com/tencent-moves-to-buy-majority-stake-in-manus-after-beijing-forced-meta-to-unwind-its-2-billion-deal"
 source_name: "The Decoder：AI News（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-11T04:06:39.246Z
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 腾讯洽谈收购 Manus 多数股权，此前北京迫使 Meta 放弃 20 亿美元收购

@@ -1,0 +1,141 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 818,
+    "quarantinedEventCount": 58
+  },
+  "entity": {
+    "id": "EN-72e28a6aa6b39c76",
+    "name": "Meta quietly",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-0edb0a592ca1fd67"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-industry-media_entertainment"
+    ],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-04",
+    "lastSeen": "2026-07-04",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-0edb0a592ca1fd67"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-0edb0a592ca1fd67",
+        "dataDate": "2026-07-04",
+        "date": "2026-07-04",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Meta悄然推出“氛围编程”游戏应用Pocket",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "ai_application",
+            "dimensionName": "产品形态",
+            "name": "AI 应用"
+          },
+          {
+            "dimensionId": "industry",
+            "id": "media_entertainment",
+            "dimensionName": "行业",
+            "name": "媒体与娱乐"
+          }
+        ],
+        "entityIds": [
+          "EN-72e28a6aa6b39c76",
+          "EN-ea3bd73e2b506e00",
+          "EN-96eebba49dbbf422",
+          "EN-bbdefa2950f49882"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-industry-media_entertainment",
+      "name": "媒体与娱乐",
+      "nodeType": "industry",
+      "typeLabel": "行业",
+      "valueId": "media_entertainment",
+      "eventIds": [
+        "EV-2d6d2dc0ead4be10",
+        "EV-afcd5426f5c01dc7",
+        "EV-6c361125c3f50bb6",
+        "EV-aad2b98b8f25d64b",
+        "EV-d633676a4a7d89a3",
+        "EV-07a5533c18e5a74e",
+        "EV-0edb0a592ca1fd67",
+        "EV-7e52d691a0553667",
+        "EV-49751dfc7d2f6d6c",
+        "EV-83acf26a011ef213",
+        "EV-568d2aeab5234e48",
+        "EV-b986a633cca27df9"
+      ],
+      "entityIds": [
+        "EN-3db1f560db626918",
+        "EN-bfc698cb0f9b4d72",
+        "EN-9c8ae69b84f21a2e",
+        "EN-3a7bd3e2360a3d29",
+        "EN-23929c7dca3eb576",
+        "EN-5388bc10736a0eff",
+        "EN-f0edcf96f6fa2ccb",
+        "EN-d36e5a1a7a3c45ce",
+        "EN-397e5a2983130593",
+        "EN-dd172e183ec20177",
+        "EN-754c490bd199c21a",
+        "EN-7a3ecc54829211df",
+        "EN-ea3bd73e2b506e00",
+        "EN-72e28a6aa6b39c76",
+        "EN-96eebba49dbbf422",
+        "EN-bbdefa2950f49882",
+        "EN-2df4d39c248116dc",
+        "EN-30081094f2a8c83d",
+        "EN-d558e1de958b9d05",
+        "EN-2b6e51bec93e86c1",
+        "EN-8d4321d936320802",
+        "EN-d56aa2f9908f566a",
+        "EN-4d09c69c19f5f67b",
+        "EN-c1eb8e913000a8eb",
+        "EN-0be477336d3e1a8d",
+        "EN-1dc405a4cda895d0"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [
+        "HW-dca442211b264bbe"
+      ],
+      "firstSeen": "2026-06-07",
+      "lastSeen": "2026-07-17"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}

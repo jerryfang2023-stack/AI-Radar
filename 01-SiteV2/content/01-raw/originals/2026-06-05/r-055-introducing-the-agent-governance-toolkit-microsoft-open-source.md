@@ -72,6 +72,10 @@ key_excerpts: [{"type":"company_action","text":"Discover how the Microsoft Agent
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "微软开源推出Agent治理工具包"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Introducing the Agent Governance Toolkit - Microsoft Open Source

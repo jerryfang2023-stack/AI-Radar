@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"DeductiveAI 同意被 Elastic 以最高
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "Elastic 同意以最高8500万美元收购 AI 初创公司 DeductiveAI"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Elastic 同意以最高8500万美元收购 AI 初创公司 DeductiveAI

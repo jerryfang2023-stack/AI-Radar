@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-013
 title: "Six AI agent SDKs for enterprise Kubernetes, compared"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "六款面向企业Kubernetes的AI代理SDK对比"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.tigera.io/blog/six-ai-agent-sdks-for-enterprise-kubernetes-compared/"
 canonical_url: "https://tigera.io/blog/six-ai-agent-sdks-for-enterprise-kubernetes-compared"
 source_name: "Tigera Blog (Calico / AI Security)"
@@ -78,6 +78,7 @@ fact_extraction_completed_at: 2026-07-04T04:35:47.620Z
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Six AI agent SDKs for enterprise Kubernetes, compared

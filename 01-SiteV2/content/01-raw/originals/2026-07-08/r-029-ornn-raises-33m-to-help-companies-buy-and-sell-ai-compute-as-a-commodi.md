@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-029
 title: "Ornn raises $33M to help companies buy and sell AI compute as a commodity like oil - SiliconANGLE"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "Ornn 融资3300万美元，助力企业像买卖石油一样将AI算力作为商品交易 - SiliconANGLE"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://siliconangle.com/2026/06/24/ornn-raises-33m-help-companies-buy-sell-ai-compute-commodity-like-oil/"
 canonical_url: "https://siliconangle.com/2026/06/24/ornn-raises-33m-help-companies-buy-sell-ai-compute-commodity-like-oil"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-08T04:39:25.551Z
 theme: ai-hardware-scenario-service-signal
 keyword_group: ai-hardware-scenario-service-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Ornn raises $33M to help companies buy and sell AI compute as a commodity like oil - SiliconANGLE

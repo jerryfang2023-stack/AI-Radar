@@ -2,7 +2,7 @@
 id: SIG-20260617-A08
 type: signal_card
 signal_type: product_service
-title: "Deepmind 推出 Agent 工作流能力，切入地产和建筑设计工作流"
+title: "Google DeepMind 基于 Gemini 与英国政府合作开发 AI 规划原型，目标将家庭申请处理时间减半"
 date: 2026-06-17
 status: published
 source_title: "Google DeepMind 基于 Gemini 与英国政府合作开发 AI 规划原型，目标将家庭申请处理时间减半"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Deepmind"
 
 frontend:
-  displayTitle: "Deepmind 推出 Agent 工作流能力，切入地产和建筑设计工作流"
+  displayTitle: "Google DeepMind 基于 Gemini 与英国政府合作开发 AI 规划原型，目标将家庭申请处理时间减半"
   sourceLinks:
     - "https://deepmind.google/blog/unlocking-uk-house-building-with-ai-accelerated-planning"
 ---
 
-# Deepmind 推出 Agent 工作流能力，切入地产和建筑设计工作流
+# Google DeepMind 基于 Gemini 与英国政府合作开发 AI 规划原型，目标将家庭申请处理时间减半
 
 ## 新闻事实
 

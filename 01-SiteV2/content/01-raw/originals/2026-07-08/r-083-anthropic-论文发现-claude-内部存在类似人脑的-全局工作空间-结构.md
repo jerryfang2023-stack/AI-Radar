@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-083
 title: "Anthropic 论文发现 Claude 内部存在类似人脑的\"全局工作空间\"结构"
 title_zh: "Anthropic 论文发现 Claude 内部存在类似人脑的\"全局工作空间\"结构"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/973/522.htm"
 canonical_url: "https://ithome.com/0/973/522.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-08T04:39:26.079Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Anthropic 论文发现 Claude 内部存在类似人脑的"全局工作空间"结构

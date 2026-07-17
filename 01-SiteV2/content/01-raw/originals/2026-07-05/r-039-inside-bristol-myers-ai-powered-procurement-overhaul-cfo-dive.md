@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-039
 title: "Inside Bristol Myers’ AI-powered procurement overhaul | CFO Dive"
-title_zh: "Bristol Myers 推进 AI 采购流程改造"
-title_translation_status: translated
-title_translation_method: source_title_translation_db
+title_zh: "百时美施贵宝AI驱动的采购改革内幕 | CFO Dive"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.cfodive.com/news/inside-bristol-myers-ai-powered-procurement-overhaul/822188/?.tsrc=rss"
 canonical_url: "https://cfodive.com/news/inside-bristol-myers-ai-powered-procurement-overhaul/822188/?.tsrc=rss"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-05T04:56:15.343Z
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Inside Bristol Myers’ AI-powered procurement overhaul | CFO Dive

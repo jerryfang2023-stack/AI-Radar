@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-060
 title: "Lawsuit claims Meta's layoff decisions were made by AI, not humans"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "诉讼称Meta裁员决定由AI而非人类做出"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://arstechnica.com/tech-policy/2026/07/lawsuit-claims-metas-layoff-decisions-were-made-by-ai-not-humans/"
 canonical_url: "https://arstechnica.com/tech-policy/2026/07/lawsuit-claims-metas-layoff-decisions-were-made-by-ai-not-humans"
 source_name: "Ars Technica AI"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-15T04:28:37.956Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Lawsuit claims Meta's layoff decisions were made by AI, not humans

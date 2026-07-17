@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"Anthropic 近日发表文章《�
 theme: outside-core-exploration
 keyword_group: outside-core-exploration
 copyright_note: local research archive only
+title_zh: "Anthropic 报告递归式自我改进进展"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Anthropic 报告递归式自我改进进展

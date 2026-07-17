@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"The 2026 AI adoption statistics that sep
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_zh: "2026年AI代理采用统计：企业AI使用情况 | GoGloby"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # AI Agent Adoption Statistics 2026: Enterprise AI Usage | GoGloby

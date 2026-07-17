@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Lio raises $30M from Andreessen Horowit
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only
+title_zh: "Lio 从 Andreessen Horowitz 等机构融资 3000 万美元，用于自动化企业采购 | TechCrunch"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Lio raises $30M from Andreessen Horowitz and others to automate enterprise procurement | TechCrunch

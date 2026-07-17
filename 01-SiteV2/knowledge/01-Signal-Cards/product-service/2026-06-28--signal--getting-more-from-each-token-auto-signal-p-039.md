@@ -2,7 +2,7 @@
 id: SIG-20260628-A06
 type: signal_card
 signal_type: product_service
-title: "Getting more from each token: How Copilot improves context handling and model routing"
+title: "提升每个令牌的价值：Copilot如何优化上下文处理与模型路由"
 date: 2026-06-28
 status: published
 source_title: "Getting more from each token: How Copilot improves context handling and model routing"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Getting more from each token"
 
 frontend:
-  displayTitle: "Getting more from each token: How Copilot improves context handling and model routing"
+  displayTitle: "提升每个令牌的价值：Copilot如何优化上下文处理与模型路由"
   sourceLinks:
     - "https://github.blog/ai-and-ml/github-copilot/getting-more-from-each-token-how-copilot-improves-context-handling-and-model-routing/"
 ---
 
-# Getting more from each token: How Copilot improves context handling and model routing
+# 提升每个令牌的价值：Copilot如何优化上下文处理与模型路由
 
 ## 新闻事实
 

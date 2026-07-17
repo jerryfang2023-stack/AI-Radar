@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"A reservation booking platform had 
 theme: enterprise-ai-implementation-signal
 keyword_group: enterprise-ai-implementation-signal
 copyright_note: local research archive only
+title_zh: "今日最热门职位：前部署工程师 - Salesforce"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Today’s Hottest Role: Forward Deployed Engineer - Salesforce

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Empromptu raises $2M pre-seed to help e
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "Empromptu获200万美元预种子轮融资，助力企业构建AI应用"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Empromptu raises $2M pre-seed to help enterprises build AI apps

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"邵猛（@shao__meng）更新开
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "邵猛更新 infocard-skills，优化多比例布局"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 邵猛更新 infocard-skills，优化多比例布局

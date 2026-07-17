@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"In our Customer Triage test case (250 su
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "智能工作流自动化 - 应用型人工智能"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Intelligent Workflow Automation - Applied AI

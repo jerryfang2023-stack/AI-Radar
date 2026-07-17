@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-090
 title: "DOOMQL：基于 GPT-5.6 Sol 构建的 SQLite 游戏引擎 Doom 风格游戏"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "DOOMQL：基于 GPT-5.6 Sol 构建的 SQLite 游戏引擎 Doom 风格游戏"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://simonwillison.net/2026/Jul/13/doomql"
 canonical_url: "https://simonwillison.net/2026/Jul/13/doomql"
 source_name: "Simon Willison 博客"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-14T01:56:51.836Z
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # DOOMQL：基于 GPT-5.6 Sol 构建的 SQLite 游戏引擎 Doom 风格游戏

@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-17T18:20:10.588Z",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 727,
-    "quarantinedEventCount": 50
+    "eventCount": 818,
+    "quarantinedEventCount": 58
   },
   "entity": {
     "id": "EN-d68ee0912eb2221c",
@@ -20,12 +20,14 @@
     "datasetScopes": [
       "canonical"
     ],
-    "eventIds": [],
+    "eventIds": [
+      "EV-710b145230faa692"
+    ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
-    "firstSeen": "",
-    "lastSeen": "",
+    "firstSeen": "2026-06-16",
+    "lastSeen": "2026-06-17",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -34,9 +36,30 @@
       "productsServices": [],
       "hardware": [],
       "organizationPeople": [],
-      "other": []
+      "other": [
+        "EV-710b145230faa692"
+      ]
     },
-    "timeline": [],
+    "timeline": [
+      {
+        "id": "EV-710b145230faa692",
+        "dataDate": "2026-06-17",
+        "date": "2026-06-16",
+        "eventType": "research_result",
+        "eventTypeLabel": "研究结果",
+        "eventGroup": "研究结果",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "爱沙尼亚语言研究所发布基准测试：衡量AI模型对俄罗斯宣传的易感性",
+        "displayTags": [],
+        "entityIds": [
+          "EN-d68ee0912eb2221c",
+          "EN-c70eca6b0f88f44d",
+          "EN-8d4321d936320802",
+          "EN-047364b9be67f665"
+        ]
+      }
+    ],
     "viewpoints": []
   },
   "relatedEntities": [],

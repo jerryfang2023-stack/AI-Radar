@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-17T18:20:10.588Z",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 727,
-    "quarantinedEventCount": 50
+    "eventCount": 818,
+    "quarantinedEventCount": 58
   },
   "entity": {
     "id": "EN-7117fa8d72fb99b9",
@@ -55,6 +55,12 @@
         "title": "长安汽车发布\"天枢领航\"自研辅助驾驶系统：长安启源 Q06 将全系搭载、9月上市",
         "displayTags": [
           {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          },
+          {
             "dimensionId": "technology",
             "dimensionName": "技术",
             "id": "vision_language",
@@ -62,7 +68,8 @@
           }
         ],
         "entityIds": [
-          "EN-7117fa8d72fb99b9"
+          "EN-7117fa8d72fb99b9",
+          "EN-24dcf762a3ebce39"
         ]
       }
     ],
@@ -78,11 +85,15 @@
       "typeLabel": "技术",
       "valueId": "vision_language",
       "eventIds": [
+        "EV-6f092cfc7a064d64",
         "EV-0259aae5ef9e83cd",
         "EV-74b965de27bc0515"
       ],
       "entityIds": [
+        "EN-e647c818ac38b6ca",
+        "EN-2b6e51bec93e86c1",
         "EN-7117fa8d72fb99b9",
+        "EN-24dcf762a3ebce39",
         "EN-b5251b35f15bedc4",
         "EN-d831f1170590ddb1"
       ],

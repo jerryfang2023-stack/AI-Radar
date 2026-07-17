@@ -2,7 +2,7 @@
 id: SIG-20260628-A14
 type: signal_card
 signal_type: product_service
-title: "Feedbacks upon feedbacks: Rock weathering and the climate"
+title: "反馈的反馈：岩石风化与气候"
 date: 2026-06-28
 status: published
 source_title: "Feedbacks upon feedbacks: Rock weathering and the climate"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Feedbacks upon feedbacks"
 
 frontend:
-  displayTitle: "Feedbacks upon feedbacks: Rock weathering and the climate"
+  displayTitle: "反馈的反馈：岩石风化与气候"
   sourceLinks:
     - "https://arstechnica.com/science/2026/06/feedbacks-upon-feedbacks-rock-weathering-and-the-climate/"
 ---
 
-# Feedbacks upon feedbacks: Rock weathering and the climate
+# 反馈的反馈：岩石风化与气候
 
 ## 新闻事实
 

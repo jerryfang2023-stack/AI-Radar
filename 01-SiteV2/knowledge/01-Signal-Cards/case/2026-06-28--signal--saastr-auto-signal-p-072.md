@@ -2,7 +2,7 @@
 id: SIG-20260628-A09
 type: signal_card
 signal_type: case
-title: "PayPal Put Agentforce on 8,000 Leads a Month No Human Was Going to Call. Conversions Jumped 50%."
+title: "PayPal将Agentforce用于每月8000条无人处理的线索，转化率提升50% | SaaStrAI"
 date: 2026-06-28
 status: published
 source_title: "PayPal Put Agentforce on 8,000 Leads a Month No Human Was Going to Call. Conversions Jumped 50%. | SaaStrAI"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Saastr"
 
 frontend:
-  displayTitle: "PayPal Put Agentforce on 8,000 Leads a Month No Human Was Going to Call. Conversions Jumped 50%."
+  displayTitle: "PayPal将Agentforce用于每月8000条无人处理的线索，转化率提升50% | SaaStrAI"
   sourceLinks:
     - "https://www.saastr.com/paypal-put-agentforce-on-8000-leads-a-month-no-human-was-going-to-call-conversions-jumped-50/"
 ---
 
-# PayPal Put Agentforce on 8,000 Leads a Month No Human Was Going to Call. Conversions Jumped 50%.
+# PayPal将Agentforce用于每月8000条无人处理的线索，转化率提升50% | SaaStrAI
 
 ## 新闻事实
 

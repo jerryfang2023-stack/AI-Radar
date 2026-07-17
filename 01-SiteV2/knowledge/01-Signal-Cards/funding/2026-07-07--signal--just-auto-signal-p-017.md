@@ -2,7 +2,7 @@
 id: SIG-20260707-A01
 type: signal_card
 signal_type: funding
-title: "just 获得 $135M 融资"
+title: "这家芯片初创公司押注人工智能，刚刚融资1.35亿美元"
 date: 2026-07-07
 status: published
 source_title: "This chip startup just raised $135M on a bet that AI's ... - TechCrunch"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "just"
 
 frontend:
-  displayTitle: "just 获得 $135M 融资"
+  displayTitle: "这家芯片初创公司押注人工智能，刚刚融资1.35亿美元"
   sourceLinks:
     - "https://techcrunch.com/2026/05/29/xcena-secures-135m-at-570m-valuation-betting-on-memory-as-ais-real-bottleneck/"
 ---
 
-# just 获得 $135M 融资
+# 这家芯片初创公司押注人工智能，刚刚融资1.35亿美元
 
 ## 新闻事实
 

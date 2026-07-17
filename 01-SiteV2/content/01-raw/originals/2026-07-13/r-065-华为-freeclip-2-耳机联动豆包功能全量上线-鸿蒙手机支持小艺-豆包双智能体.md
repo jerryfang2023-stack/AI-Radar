@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-065
 title: "华为 FreeClip 2 耳机联动豆包功能全量上线，鸿蒙手机支持小艺/豆包双智能体"
 title_zh: "华为 FreeClip 2 耳机联动豆包功能全量上线，鸿蒙手机支持小艺/豆包双智能体"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/976/126.htm"
 canonical_url: "https://ithome.com/0/976/126.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-13T10:23:57.052Z
 theme: outside-core-exploration
 keyword_group: outside-core-exploration
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 华为 FreeClip 2 耳机联动豆包功能全量上线，鸿蒙手机支持小艺/豆包双智能体

@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-015
 title: "Supermicro Introduces Compact, Energy-Efficient Systems to Accelerate Adoption of Intelligent Edge AI | Supermicro"
-title_zh: "Supermicro 发布 Compact, Energy-Efficient Systems，用于Accelerate Adoption of Intelligent Edge AI"
-title_translation_status: translated
-title_translation_method: business-rule_title_translation
+title_zh: "Supermicro推出紧凑节能系统，加速智能边缘AI应用普及"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.supermicro.com/en/pressreleases/supermicro-introduces-compact-energy-efficient-systems-accelerate-adoption"
 canonical_url: "https://supermicro.com/en/pressreleases/supermicro-introduces-compact-energy-efficient-systems-accelerate-adoption"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-14T01:56:51.345Z
 theme: ai-hardware-trend-innovation-signal
 keyword_group: ai-hardware-trend-innovation-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Supermicro Introduces Compact, Energy-Efficient Systems to Accelerate Adoption of Intelligent Edge AI | Supermicro

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"Artificial Analysis 推出的 AA-Briefca
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "AA-Briefcase 基准测试：最佳 AI 模型仅完全解决 3% 真实知识工作"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # AA-Briefcase 基准测试：最佳 AI 模型仅完全解决 3% 真实知识工作

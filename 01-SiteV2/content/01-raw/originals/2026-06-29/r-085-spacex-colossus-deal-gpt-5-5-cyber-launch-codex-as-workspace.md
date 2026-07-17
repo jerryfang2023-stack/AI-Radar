@@ -72,6 +72,10 @@ key_excerpts: [{"type":"company_action","text":"SpaceX Colossus deal 🚀, GPT-5
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_zh: "SpaceX Colossus交易🚀，GPT-5.5 Cyber发布🛡️，Codex作为工作空间🤖"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # SpaceX Colossus deal 🚀, GPT-5.5 Cyber launch 🛡️, Codex as workspace 🤖

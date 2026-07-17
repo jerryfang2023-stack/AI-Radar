@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"A VC told Keely Cat-Wells to get a , no
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "一位风险投资人告诉Keely Cat-Wells，要找一个男性、非残疾的联合创始人。"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # A VC told Keely Cat-Wells to get a male, non-disabled co-founder

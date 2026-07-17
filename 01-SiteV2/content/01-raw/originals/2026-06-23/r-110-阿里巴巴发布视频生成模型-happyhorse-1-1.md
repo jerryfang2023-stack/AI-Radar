@@ -72,6 +72,10 @@ key_excerpts: [{"type":"quote","text":"阿里巴巴今日发布视频生成模�
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "阿里巴巴发布视频生成模型 HappyHorse 1.1"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 阿里巴巴发布视频生成模型 HappyHorse 1.1

@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-17T18:20:10.588Z",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 727,
-    "quarantinedEventCount": 50
+    "eventCount": 818,
+    "quarantinedEventCount": 58
   },
   "node": {
     "id": "TX-technology-inference_optimization",
@@ -17,36 +17,39 @@
     "typeLabel": "技术",
     "valueId": "inference_optimization",
     "eventIds": [
-      "EV-0a5e65aa46b0d194"
+      "EV-f7b60c0c63403f8c"
     ],
     "entityIds": [
-      "EN-8d4321d936320802"
+      "EN-de6b71bf77ff4299",
+      "EN-8d4321d936320802",
+      "EN-c4ef31845ea79710"
     ],
     "fdeIds": [],
-    "hardwareIds": [
-      "HW-de1b3c6ad39cc9bc"
-    ],
+    "hardwareIds": [],
     "firstSeen": "2026-07-10",
     "lastSeen": "2026-07-11"
   },
   "events": [
     {
-      "id": "EV-0a5e65aa46b0d194",
+      "id": "EV-f7b60c0c63403f8c",
       "dataDate": "2026-07-11",
       "date": "2026-07-10",
       "updatedDate": "2026-07-11",
-      "eventType": "hardware_product",
-      "eventTypeLabel": "硬件产品",
-      "eventGroup": "AI 硬件",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
       "status": "completed",
       "statusLabel": "已完成",
       "publicationStatus": "verified",
       "title": "加速进化发布 Booster T2 具身开发旗舰平台：搭载英伟达 Thor 芯片，2070TFLOPS 算力",
       "originalTitle": "",
       "subject": "加速进化",
-      "action": "发布 Booster T2 具身开发旗舰平台：搭载英伟达 Thor 芯片",
-      "object": "，2070TFLOPS 算力",
-      "metrics": [],
+      "action": "发布",
+      "object": "Booster T2 具身开发旗舰平台：搭载英伟达 Thor 芯片，2070TFLOPS 算力",
+      "metrics": [
+        "2070TFLOPS",
+        "128GB"
+      ],
       "locations": [],
       "missingFields": [],
       "conflicts": [],
@@ -137,18 +140,53 @@
         }
       ],
       "entityIds": [
-        "EN-8d4321d936320802"
+        "EN-de6b71bf77ff4299",
+        "EN-8d4321d936320802",
+        "EN-c4ef31845ea79710"
       ],
       "entityNames": [
-        "NVIDIA"
+        "加速进化",
+        "NVIDIA",
+        "Booster T2"
       ],
-      "productName": "",
-      "products": [],
+      "productName": "Booster T2",
+      "products": [
+        {
+          "name": "Booster T2",
+          "type": "产品/服务",
+          "ownerNames": [
+            "NVIDIA"
+          ]
+        }
+      ],
       "sourceUrl": "https://ithome.com/0/975/340.htm",
       "publisher": "IT之家（RSS）"
     }
   ],
   "entities": [
+    {
+      "id": "EN-de6b71bf77ff4299",
+      "name": "加速进化",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-f7b60c0c63403f8c"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-on_device",
+        "TX-technology-multimodal",
+        "TX-technology-inference_optimization"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-10",
+      "lastSeen": "2026-07-11"
+    },
     {
       "id": "EN-8d4321d936320802",
       "name": "NVIDIA",
@@ -160,21 +198,20 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-ed65f3187aa6aa40",
-        "EV-60b2d4d401bf5e97",
+        "EV-4eaf3aabecae6016",
+        "EV-87432dbb99cd6033",
+        "EV-6e516b6e68def9cf",
         "EV-e41fc65eb014893f",
-        "EV-39894e375aacee77",
-        "EV-efca54f3b07072a6",
+        "EV-040fc355bc12a750",
         "EV-80e54c9a390da293",
-        "EV-d16fc5601c04a6a2",
+        "EV-4118202ed0f91895",
         "EV-236cbc2d64f0c455",
-        "EV-6180de2e02597d9d",
-        "EV-968709fe29b77eba",
-        "EV-adafffa563a53d49",
-        "EV-1f842e1dff69bb87",
-        "EV-9a7cd217a7a9a51c",
+        "EV-0e84a2f49d765ce3",
         "EV-cafe435ddd007821",
-        "EV-283e88bdd15ed87e",
+        "EV-36d484148fbd3424",
+        "EV-47a16db069ed320e",
+        "EV-cf76f090a1a20a36",
+        "EV-7263caa45bbf168e",
         "EV-234ad54940674bf6",
         "EV-5b16886442234f81",
         "EV-ef6464cf7f764835",
@@ -183,122 +220,109 @@
         "EV-4faa2bcf2e42e60c",
         "EV-9ee3c0ec243b6129",
         "EV-58c1cc3749294649",
-        "EV-303b418c63895ba6",
+        "EV-6b51b1b6fe22c540",
+        "EV-c2800c1c5a3f568f",
         "EV-1ff169120ed385f6",
-        "EV-082314251be505e2",
-        "EV-0a5e65aa46b0d194",
+        "EV-47d14d0aa4d4414e",
+        "EV-f7b60c0c63403f8c",
+        "EV-6139380f3362803b",
+        "EV-96c8ce4ee89adb84",
         "EV-53f881da31630a04",
-        "EV-3028dfadf94c8f4c",
-        "EV-412a140df8d75c45",
+        "EV-6a2f3e9a22edff64",
+        "EV-f784003febc1d9eb",
+        "EV-587c18cb1837c74f",
+        "EV-bd66e5b45a6a577e",
         "EV-53564b1f0fd2214b",
-        "EV-09610316ac52221e",
-        "EV-c0f86afbefa2e0a6",
-        "EV-c718a5ff4b0acd66",
-        "EV-722c2a8dd6b70abd",
-        "EV-6eb9a23be3117421",
-        "EV-13f105479652938d",
-        "EV-3456f723929eff1b",
-        "EV-66338f5fb682617e",
+        "EV-7fb25ff3d853c314",
+        "EV-8a91e14f37d32b4d",
+        "EV-13f0b515194f3245",
+        "EV-5d50eb202b478bd4",
+        "EV-e2db9c4e7c16ae7a",
+        "EV-69fbe85ca4ac81cd",
+        "EV-b7ba9acba80a852e",
+        "EV-4bb5b24400e49ea4",
         "EV-568d2aeab5234e48",
-        "EV-305091abd41ad88d",
-        "EV-a24f9cba6b31439e",
         "EV-b986a633cca27df9",
-        "EV-57597c92f7b183a9",
         "EV-2258329f33d413cf",
-        "EV-19ea623bb5eabdd5",
+        "EV-4bf0e4043c3562f2",
         "EV-309ea4fc27a66485",
+        "EV-fa1b1efd77f36d56",
         "EV-4026c95d4c01b96e",
-        "EV-66970d4aea37111f",
-        "EV-aa63303570154a9b",
-        "EV-cbc8b53d4f4478b1",
-        "EV-d2a00623908ca15f",
+        "EV-631197767a45d34c",
+        "EV-67f32771d69084d6",
         "EV-d2ac9700c86913da",
         "EV-d43a561da59b2897",
-        "EV-fc2164eb66e27f7e",
+        "EV-f5755fccd5731063",
+        "EV-34929bdd016dc8d6",
+        "EV-710b145230faa692",
         "EV-0b49d637d7c07ce0"
       ],
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
-        "TX-use_case-customer_service",
+        "TX-technology-code_generation",
         "TX-industry-healthcare_life_sciences",
-        "TX-use_case-robotics_automation",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
-        "TX-technology-on_device",
         "TX-use_case-cybersecurity",
-        "TX-industry-retail_ecommerce",
-        "TX-industry-telecommunications",
-        "TX-industry-technology",
-        "TX-technology-multimodal",
+        "TX-technology-on_device",
         "TX-technology-embodied_ai",
-        "TX-technology-speech_audio",
+        "TX-industry-automotive_transportation",
         "TX-technology-open_weights",
+        "TX-industry-telecommunications",
         "TX-industry-media_entertainment",
+        "TX-use_case-robotics_automation",
+        "TX-technology-multimodal",
+        "TX-technology-guardrails_safety",
         "TX-technology-reasoning",
-        "TX-technology-inference_optimization"
+        "TX-technology-fine_tuning",
+        "TX-technology-image_generation",
+        "TX-technology-inference_optimization",
+        "TX-technology-speech_audio"
       ],
       "relatedEntityIds": [
         "EN-0f3360879e746531",
-        "EN-fbe26af59be95e52",
-        "EN-2b119dc14de9478d",
-        "EN-a1b0d8a938903dc7",
+        "EN-51fd7dc086fcb858",
+        "EN-9e193e1ec8d75d41",
         "EN-8395dc051feafc4c",
+        "EN-936f01f91fdadf69",
+        "EN-2f354de778e6a6da",
         "EN-b5738c169b693bee",
-        "EN-9fbf261b62c1d7c0"
+        "EN-1dc405a4cda895d0",
+        "EN-12ab68e37d104d27",
+        "EN-a3266ab9e10d6105",
+        "EN-ab9e3beebd83960d",
+        "EN-9fbf261b62c1d7c0",
+        "EN-e246a1f9a090075b"
       ],
-      "firstSeen": "2026-05-18",
+      "firstSeen": "2025-03-18",
       "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "EN-c4ef31845ea79710",
+      "name": "Booster T2",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-f7b60c0c63403f8c"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-on_device",
+        "TX-technology-multimodal",
+        "TX-technology-inference_optimization"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-10",
+      "lastSeen": "2026-07-11"
     }
   ],
   "fde": [],
-  "hardware": [
-    {
-      "id": "HW-de1b3c6ad39cc9bc",
-      "eventId": "EV-0a5e65aa46b0d194",
-      "dataDate": "2026-07-11",
-      "date": "2026-07-10",
-      "title": "加速进化发布 Booster T2 具身开发旗舰平台：搭载英伟达 Thor 芯片，2070TFLOPS 算力",
-      "hardwareType": "semiconductor",
-      "eventType": "hardware_product",
-      "eventTypeLabel": "硬件产品",
-      "computeLayer": "edge",
-      "supplier": "NVIDIA",
-      "customer": "未披露",
-      "processNode": "未披露",
-      "capacity": "未披露",
-      "capacityUnit": "",
-      "site": "未披露",
-      "region": "未披露",
-      "contractValue": "未披露",
-      "shipmentDate": "未披露",
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "multimodal",
-          "name": "多模态"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "inference_optimization",
-          "name": "推理优化"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "on_device",
-          "name": "端侧"
-        }
-      ],
-      "sourceUrl": "https://ithome.com/0/975/340.htm",
-      "sourceName": "IT之家（RSS）",
-      "sourceDate": "2026-07-10",
-      "entityIds": [
-        "EN-8d4321d936320802"
-      ]
-    }
-  ]
+  "hardware": []
 }

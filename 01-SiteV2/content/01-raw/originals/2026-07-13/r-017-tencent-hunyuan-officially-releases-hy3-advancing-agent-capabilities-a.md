@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-017
 title: "Tencent Hunyuan Officially Releases Hy3, Advancing Agent Capabilities and Deeper Product Integration"
 title_zh: "腾讯混元正式发布 Hy3，扩展 Agent 能力与产品集成"
-title_translation_status: translated
-title_translation_method: source_title_translation_db
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://tencent.com/tencent-hunyuan-officially-releases-hy3-advancing-agent-capabilities-and-deeper-product-integration"
 canonical_url: "https://tencent.com/tencent-hunyuan-officially-releases-hy3-advancing-agent-capabilities-and-deeper-product-integration"
 source_name: "Tencent"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-13T10:23:56.744Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Tencent Hunyuan Officially Releases Hy3, Advancing Agent Capabilities and Deeper Product Integration

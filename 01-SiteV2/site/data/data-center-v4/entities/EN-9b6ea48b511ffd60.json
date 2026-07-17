@@ -1,0 +1,177 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 818,
+    "quarantinedEventCount": 58
+  },
+  "entity": {
+    "id": "EN-9b6ea48b511ffd60",
+    "name": "汇丰银行",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-97747aee0cafd9f3"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-industry-financial_services"
+    ],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-06-18",
+    "lastSeen": "2026-06-19",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [
+        "EV-97747aee0cafd9f3"
+      ],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-97747aee0cafd9f3",
+        "dataDate": "2026-06-19",
+        "date": "2026-06-18",
+        "eventType": "partnership",
+        "eventTypeLabel": "合作",
+        "eventGroup": "商业合作",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "汇丰银行与Google Cloud扩大AI银行合作",
+        "displayTags": [
+          {
+            "dimensionId": "industry",
+            "id": "financial_services",
+            "dimensionName": "行业",
+            "name": "金融服务"
+          }
+        ],
+        "entityIds": [
+          "EN-9b6ea48b511ffd60",
+          "EN-bbdefa2950f49882",
+          "EN-96eebba49dbbf422"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-industry-financial_services",
+      "name": "金融服务",
+      "nodeType": "industry",
+      "typeLabel": "行业",
+      "valueId": "financial_services",
+      "eventIds": [
+        "EV-aa33ca051f3a7f78",
+        "EV-189e43cb9fea8e1a",
+        "EV-a42e51959c627554",
+        "EV-c0d19b8641a7a36c",
+        "EV-e4b3a19529576778",
+        "EV-a84ec4216d3ded6d",
+        "EV-778ae7684a4d782e",
+        "EV-86247a326e79bb88",
+        "EV-d1e2a7c6d314612c",
+        "EV-33717672cb5e8004",
+        "EV-83b2e8f7fe679bc3",
+        "EV-2c87c8ea47cbd1b6",
+        "EV-97747aee0cafd9f3",
+        "EV-bad301e14b034fbd",
+        "EV-5caf7f83664b1a2c"
+      ],
+      "entityIds": [
+        "EN-1bd14cd1a58c5708",
+        "EN-7d3194f79e645c42",
+        "EN-11507a0e2f5e69d5",
+        "EN-b314f58f5f506fd2",
+        "EN-a972bc1b3220493e",
+        "EN-96eebba49dbbf422",
+        "EN-eaa1c24270a0d057",
+        "EN-d82ff987d73882b8",
+        "EN-ee04228c5c6d8b08",
+        "EN-7706c3c94d5f9b59",
+        "EN-25690754dd14bd1b",
+        "EN-43381465c2b7d64e",
+        "EN-c70eca6b0f88f44d",
+        "EN-5e757c7fc575c41e",
+        "EN-bc8a00f7f6fb535f",
+        "EN-4d748ebd71af03a7",
+        "EN-c3e4cc183d345262",
+        "EN-9b6ea48b511ffd60",
+        "EN-bbdefa2950f49882",
+        "EN-06b5472c16feae4c",
+        "EN-4e721fae5963494d",
+        "EN-b5251b35f15bedc4",
+        "EN-a4eee620f5a081bd"
+      ],
+      "fdeIds": [
+        "FDE-e1b2683e8d017358",
+        "FDE-0ee0fe3baa3f1364",
+        "FDE-d0a39c8df546833a",
+        "FDE-560b710961006374",
+        "FDE-ae4c44cd0de9d48a"
+      ],
+      "hardwareIds": [],
+      "firstSeen": "2026-05-22",
+      "lastSeen": "2026-07-10"
+    }
+  ],
+  "fde": [
+    {
+      "id": "FDE-ae4c44cd0de9d48a",
+      "eventId": "EV-97747aee0cafd9f3",
+      "dataDate": "2026-06-19",
+      "date": "2026-06-18",
+      "title": "汇丰银行与Google Cloud扩大AI银行合作",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Google",
+      "vendor": "汇丰银行",
+      "industry": "未披露",
+      "useCase": "汇丰银行与Google Cloud扩大AI银行合作",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [],
+      "outcomes": [],
+      "metrics": [
+        "$100 million"
+      ],
+      "undisclosedFields": [
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "data_requirements",
+        "governance_controls",
+        "reported_delivery_components",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://artificialintelligence-news.com/news/hsbc-google-cloud-ai-partnership",
+      "entityIds": [
+        "EN-9b6ea48b511ffd60",
+        "EN-bbdefa2950f49882",
+        "EN-96eebba49dbbf422"
+      ]
+    }
+  ],
+  "hardware": []
+}

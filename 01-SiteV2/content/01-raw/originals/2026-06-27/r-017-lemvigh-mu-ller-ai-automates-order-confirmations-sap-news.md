@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"The Danish wholesaler Lemvigh‑Mü
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Lemvigh‑Müller：AI 自动处理订单确认 | SAP 新闻"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Lemvigh‑Müller: AI Automates Order Confirmations | SAP News

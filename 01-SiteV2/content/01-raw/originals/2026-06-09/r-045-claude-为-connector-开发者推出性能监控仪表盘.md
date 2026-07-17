@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"Claude 为目录中已发布的 
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Claude 为 Connector 开发者推出性能监控仪表盘"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Claude 为 Connector 开发者推出性能监控仪表盘

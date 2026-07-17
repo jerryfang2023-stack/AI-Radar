@@ -1,0 +1,232 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 818,
+    "quarantinedEventCount": 58
+  },
+  "entity": {
+    "id": "EN-26e4951af4490c21",
+    "name": "Office",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-10aac036228b3c6b"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [
+      "EN-3f726694f178ed7a",
+      "EN-6fcba5d96a4fadfd"
+    ],
+    "firstSeen": "2026-06-20",
+    "lastSeen": "2026-06-21",
+    "relationIds": [
+      "REL2-fc622293dff98236",
+      "REL2-d3f7ba9816341d35"
+    ],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-d2c1c077a2102f35",
+        "EV-10aac036228b3c6b"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-d2c1c077a2102f35",
+        "dataDate": "2026-07-16",
+        "date": "2026-07-15",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "金山办公推出 AI 办公智能体灵犀专业版，支持专业 Office 操作",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体"
+          }
+        ],
+        "entityIds": [
+          "EN-3f726694f178ed7a",
+          "EN-45e0ade11fed1e44"
+        ]
+      },
+      {
+        "id": "EV-10aac036228b3c6b",
+        "dataDate": "2026-06-21",
+        "date": "2026-06-20",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "马斯克 SpaceXAI 为微软 Office 推出 Grok 扩展，支持自然语言操控文档、表格和演示文稿",
+        "displayTags": [],
+        "entityIds": [
+          "EN-6fcba5d96a4fadfd",
+          "EN-9fbf261b62c1d7c0",
+          "EN-0b9ca57f53ba758b",
+          "EN-1a254d17cfa54b16",
+          "EN-26e4951af4490c21"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [
+    {
+      "id": "EN-3f726694f178ed7a",
+      "name": "Kingsoft Office",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "金山办公"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-385dc1ac09a211bd",
+        "EV-702ed039940800fb",
+        "EV-d2c1c077a2102f35",
+        "EV-ad8f847d403433f7",
+        "EV-ae4561a4a9ebe17f"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-multimodal",
+        "TX-use_case-knowledge_search"
+      ],
+      "relatedEntityIds": [
+        "EN-d8fbfdb6a8143da8",
+        "EN-9d93b78264eb6acb",
+        "EN-1e68d267df86aa4c",
+        "EN-26e4951af4490c21"
+      ],
+      "firstSeen": "2026-06-11",
+      "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "EN-6fcba5d96a4fadfd",
+      "name": "xAI",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "Grok",
+        "SpaceXAI"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-3daefecd0453631a",
+        "EV-edcb66d0401cfb8f",
+        "EV-5d581d112fdbd464",
+        "EV-201b25d4f3cf696a",
+        "EV-e15ae1112294d59e",
+        "EV-43301de739fe560e",
+        "EV-ae736eb124d7163a",
+        "EV-bdcd6fc0caa8f6d4",
+        "EV-5012364af7480121",
+        "EV-e1a7e7dcb19bfc70",
+        "EV-10aac036228b3c6b",
+        "EV-ed58c2c69290ee4c",
+        "EV-631197767a45d34c",
+        "EV-d53cd33e8f541a65",
+        "EV-11a3893cb86fef69",
+        "EV-9578242a4df20721",
+        "EV-8cd571951f62b2c8",
+        "EV-bce258f8f915ff5f",
+        "EV-4beb890f0879aeaf"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-code_generation",
+        "TX-use_case-software_development",
+        "TX-use_case-robotics_automation",
+        "TX-technology-tool_use"
+      ],
+      "relatedEntityIds": [
+        "EN-0b9ca57f53ba758b",
+        "EN-c4bc2d00a42f220f",
+        "EN-24caf10fe9bfb1c5",
+        "EN-7d5f17368c04f04c",
+        "EN-1a254d17cfa54b16",
+        "EN-26e4951af4490c21"
+      ],
+      "firstSeen": "2026-05-25",
+      "lastSeen": "2026-07-17"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-fc622293dff98236",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-3f726694f178ed7a",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-26e4951af4490c21",
+      "object_type": "entity",
+      "event_id": "EV-d2c1c077a2102f35",
+      "claim_refs": [
+        "CL-53adfd6ec3d4e899",
+        "CL-08c01a84d1450680",
+        "CL-85e283c4e7a19617",
+        "CL-928afe90f7fa47bd"
+      ],
+      "source_refs": [
+        "SA-c4fd245e513e8392"
+      ],
+      "data_date": "2026-07-16",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-d3f7ba9816341d35",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-6fcba5d96a4fadfd",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-26e4951af4490c21",
+      "object_type": "entity",
+      "event_id": "EV-10aac036228b3c6b",
+      "claim_refs": [
+        "CL-34ad279d62cf4bdc",
+        "CL-78afe1659d3c2512",
+        "CL-1fb492b260514e14",
+        "CL-77833569bd63ddac"
+      ],
+      "source_refs": [
+        "SA-5a4fce8c152fbdb8"
+      ],
+      "data_date": "2026-06-21",
+      "status": "verified"
+    }
+  ],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

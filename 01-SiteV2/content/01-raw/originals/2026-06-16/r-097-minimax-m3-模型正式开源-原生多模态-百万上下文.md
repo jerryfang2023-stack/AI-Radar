@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"MiniMax 于 6 月 12 日开源 MiniMax M
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "MiniMax M3 模型正式开源：原生多模态、百万上下文"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # MiniMax M3 模型正式开源：原生多模态、百万上下文

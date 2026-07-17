@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"Google Research 在 Gemini Enterprise Ag
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "Google Research 为 Gemini Enterprise Agent Platform 引入 Agentic RAG 与 Sufficient Context Agent 支持多跳查询"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Google Research 为 Gemini Enterprise Agent Platform 引入 Agentic RAG 与 Sufficient Context Agent 支持多跳查询

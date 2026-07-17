@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-041
 title: "Wayve launches $85M employee tender offer at $8.5B valuation"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "Wayve 启动 8500 万美元员工要约收购，估值达 85 亿美元"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://techcrunch.com/2026/06/30/wayve-launches-85m-employee-tender-offer-at-8-5b-valuation/"
 canonical_url: "https://techcrunch.com/2026/06/30/wayve-launches-85m-employee-tender-offer-at-8-5b-valuation"
 source_name: "TechCrunch AI"
@@ -78,6 +78,7 @@ fact_extraction_completed_at: 2026-07-04T04:35:47.925Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Wayve launches $85M employee tender offer at $8.5B valuation

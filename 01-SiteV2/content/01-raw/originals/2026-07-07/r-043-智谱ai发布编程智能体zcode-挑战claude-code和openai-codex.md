@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-043
 title: "智谱AI发布编程智能体ZCode，挑战Claude Code和OpenAI Codex"
 title_zh: "智谱AI发布编程智能体ZCode，挑战Claude Code和OpenAI Codex"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://the-decoder.com/zhipu-ai-launches-zcode-to-challenge-claude-code-and-openai-codex-at-a-fraction-of-the-cost"
 canonical_url: "https://the-decoder.com/zhipu-ai-launches-zcode-to-challenge-claude-code-and-openai-codex-at-a-fraction-of-the-cost"
 source_name: "The Decoder：AI News（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-07T02:46:59.750Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 智谱AI发布编程智能体ZCode，挑战Claude Code和OpenAI Codex

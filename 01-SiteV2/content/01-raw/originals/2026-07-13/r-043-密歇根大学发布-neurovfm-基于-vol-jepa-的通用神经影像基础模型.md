@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-043
 title: "密歇根大学发布 NeuroVFM：基于 Vol-JEPA 的通用神经影像基础模型"
 title_zh: "密歇根大学发布 NeuroVFM：基于 Vol-JEPA 的通用神经影像基础模型"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.marktechpost.com/2026/07/12/meet-neurovfm-a-new-neuroimaging-foundation-model-trained-with-vol-jepa-on-uncurated-clinical-mri-and-ct-volumes"
 canonical_url: "https://marktechpost.com/2026/07/12/meet-neurovfm-a-new-neuroimaging-foundation-model-trained-with-vol-jepa-on-uncurated-clinical-mri-and-ct-volumes"
 source_name: "MarkTechPost（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-13T10:23:56.927Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 密歇根大学发布 NeuroVFM：基于 Vol-JEPA 的通用神经影像基础模型

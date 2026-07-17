@@ -2,7 +2,7 @@
 id: SIG-20260607-A10
 type: signal_card
 signal_type: case
-title: "How SaaS Companies Are Monetizing AI Agents in 2026"
+title: "SaaS公司如何在2026年通过AI代理实现盈利"
 date: 2026-06-07
 status: published
 source_title: "How SaaS Companies Are Monetizing AI Agents in 2026"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "SaaS companies"
 
 frontend:
-  displayTitle: "How SaaS Companies Are Monetizing AI Agents in 2026"
+  displayTitle: "SaaS公司如何在2026年通过AI代理实现盈利"
   sourceLinks:
     - "https://www.saasmag.com/how-saas-companies-monetizing-ai-agents/"
 ---
 
-# How SaaS Companies Are Monetizing AI Agents in 2026
+# SaaS公司如何在2026年通过AI代理实现盈利
 
 ## 新闻事实
 

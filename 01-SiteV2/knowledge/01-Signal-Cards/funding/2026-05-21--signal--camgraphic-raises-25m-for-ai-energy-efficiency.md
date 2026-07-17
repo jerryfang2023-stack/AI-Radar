@@ -2,7 +2,7 @@
 id: SIG-20260521-01
 type: signal_card
 signal_type: funding
-title: "CamGraPhIC 获得 2500 万欧元融资，推进 AI 光互连"
+title: "大学衍生企业获融资，提升AI能效"
 date: 2026-05-21
 status: draft
 asset_level: candidate
@@ -37,7 +37,7 @@ signal_owner: "CamGraPhIC"
 watch_reason: "继续看 CamGraPhIC 是否披露产业合作、试点客户或量产计划。"
 
 frontend:
-  displayTitle: "CamGraPhIC 获得 2500 万欧元融资，推进 AI 光互连"
+  displayTitle: "大学衍生企业获融资，提升AI能效"
   eventLine: "Cambridge 披露 CamGraPhIC 获得 2500 万欧元融资，用于能效和带宽相关的光子互连技术。"
   whyWatch: "AI 成本不只来自模型，也来自算力基础设施的能耗、延迟和带宽。"
   businessMeaning: "如果技术路线成立，影响的是数据中心成本、芯片互连预算和基础设施采购判断。"
@@ -70,7 +70,7 @@ opportunity_signals:
   missing_fields: ["specific_task", "product_form", "delivery_model"]
 ---
 
-# CamGraPhIC 获得 2500 万欧元融资，推进 AI 光互连
+# 大学衍生企业获融资，提升AI能效
 
 ## 信号底稿
 

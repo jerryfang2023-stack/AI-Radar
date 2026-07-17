@@ -2,7 +2,7 @@
 id: SIG-20260604-A05
 type: signal_card
 signal_type: case
-title: "Here's the full list of 49 US AI startups that have raised $100M or ..."
+title: "以下是49家融资额达1亿美元及以上的美国AI初创公司完整名单"
 date: 2026-06-04
 status: published
 asset_level: frontstage
@@ -59,7 +59,7 @@ signal_owner: "OpenAI"
 watch_reason: "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
 
 frontend:
-  displayTitle: "Here's the full list of 49 US AI startups that have raised $100M or ..."
+  displayTitle: "以下是49家融资额达1亿美元及以上的美国AI初创公司完整名单"
   eventLine: "OpenAI 把 AI 用进销售和收入团队流程。"
   whyWatch: "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"
   businessMeaning: "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
@@ -69,7 +69,7 @@ frontend:
     - "https://techcrunch.com/2024/12/20/heres-the-full-list-of-49-us-ai-startups-that-have-raised-100m-or-more-in-2024/"
 ---
 
-# Here's the full list of 49 US AI startups that have raised $100M or ...
+# 以下是49家融资额达1亿美元及以上的美国AI初创公司完整名单
 
 ## 信号底稿
 

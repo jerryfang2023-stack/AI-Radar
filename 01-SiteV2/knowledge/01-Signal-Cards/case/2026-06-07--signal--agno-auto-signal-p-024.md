@@ -2,7 +2,7 @@
 id: SIG-20260607-A04
 type: signal_card
 signal_type: case
-title: "GitHub release notes agent - Agno"
+title: "GitHub 发布说明代理 - Agno"
 date: 2026-06-07
 status: published
 source_title: "GitHub release notes agent - Agno"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Agno"
 
 frontend:
-  displayTitle: "GitHub release notes agent - Agno"
+  displayTitle: "GitHub 发布说明代理 - Agno"
   sourceLinks:
     - "https://www.agno.com/ai-agents/github-release-notes-agent"
 ---
 
-# GitHub release notes agent - Agno
+# GitHub 发布说明代理 - Agno
 
 ## 新闻事实
 

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"supporting_context","text":"英伟达 6 月 22 日发布
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "英伟达发布业界首个全栈物理 AI 安全系统 Halos for Robotics"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 英伟达发布业界首个全栈物理 AI 安全系统 Halos for Robotics

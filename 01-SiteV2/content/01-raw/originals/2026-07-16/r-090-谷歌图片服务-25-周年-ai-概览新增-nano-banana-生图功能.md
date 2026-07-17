@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-090
 title: "谷歌图片服务 25 周年，AI 概览新增 Nano Banana 生图功能"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "谷歌图片服务 25 周年，AI 概览新增 Nano Banana 生图功能"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/976/980.htm"
 canonical_url: "https://ithome.com/0/976/980.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-16T02:39:33.894Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 谷歌图片服务 25 周年，AI 概览新增 Nano Banana 生图功能

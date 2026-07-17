@@ -1,0 +1,176 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 818,
+    "quarantinedEventCount": 58
+  },
+  "entity": {
+    "id": "EN-f475981105d2acbd",
+    "name": "SiliconANGLE",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-0cb98302768c2e0a"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [
+      "EN-3db1f560db626918"
+    ],
+    "firstSeen": "2026-05-23",
+    "lastSeen": "2026-05-23",
+    "relationIds": [
+      "REL2-1ae8eb8881fff6c0"
+    ],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-f05783f745bc7c2c",
+        "EV-0cb98302768c2e0a"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-f05783f745bc7c2c",
+        "dataDate": "2026-07-11",
+        "date": "2026-07-11",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Canva发布Canva AI 2.0，将其平台重塑为工作代理系统 - SiliconANGLE",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体"
+          }
+        ],
+        "entityIds": [
+          "EN-3db1f560db626918",
+          "EN-bbdefa2950f49882",
+          "EN-309e1850e39b13ff"
+        ]
+      },
+      {
+        "id": "EV-0cb98302768c2e0a",
+        "dataDate": "2026-05-23",
+        "date": "2026-05-23",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Featherless.ai获2000万美元融资，用于扩展开源AI模型的无服务器托管服务",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          },
+          {
+            "dimensionId": "product_form",
+            "id": "data_infrastructure",
+            "dimensionName": "产品形态",
+            "name": "数据与模型基础设施"
+          },
+          {
+            "dimensionId": "target_user",
+            "id": "enterprise",
+            "dimensionName": "目标用户",
+            "name": "企业用户"
+          }
+        ],
+        "entityIds": [
+          "EN-96eebba49dbbf422",
+          "EN-f475981105d2acbd",
+          "EN-ce31f92c521b7b08"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [
+    {
+      "id": "EN-3db1f560db626918",
+      "name": "Canva",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-2d6d2dc0ead4be10",
+        "EV-f05783f745bc7c2c",
+        "EV-34b0f4cfd513fbde",
+        "EV-a0d3853dd41c8ef6",
+        "EV-266aff97294156f6",
+        "EV-568d2aeab5234e48"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-code_generation",
+        "TX-use_case-software_development",
+        "TX-technology-mixture_of_experts",
+        "TX-technology-model_context_protocol",
+        "TX-industry-media_entertainment",
+        "TX-technology-image_generation"
+      ],
+      "relatedEntityIds": [
+        "EN-f475981105d2acbd",
+        "EN-309e1850e39b13ff",
+        "EN-954dc5d6516f127c"
+      ],
+      "firstSeen": "2026-06-11",
+      "lastSeen": "2026-07-15"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-1ae8eb8881fff6c0",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-3db1f560db626918",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-f475981105d2acbd",
+      "object_type": "entity",
+      "event_id": "EV-f05783f745bc7c2c",
+      "claim_refs": [
+        "CL-683c9eb3000ec555",
+        "CL-5abf8e821a0d0b9a",
+        "CL-9e7b93ef54af8b54",
+        "CL-b583f4a673dd1fa8"
+      ],
+      "source_refs": [
+        "SA-2f3baf3a43e6adcb"
+      ],
+      "data_date": "2026-07-11",
+      "status": "verified"
+    }
+  ],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

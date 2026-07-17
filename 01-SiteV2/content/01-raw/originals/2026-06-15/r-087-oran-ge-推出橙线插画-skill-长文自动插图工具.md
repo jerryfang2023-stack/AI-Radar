@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"Oran Ge 发布了一套名为\"橙线插
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "Oran Ge 推出橙线插画.skill 长文自动插图工具"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Oran Ge 推出橙线插画.skill 长文自动插图工具

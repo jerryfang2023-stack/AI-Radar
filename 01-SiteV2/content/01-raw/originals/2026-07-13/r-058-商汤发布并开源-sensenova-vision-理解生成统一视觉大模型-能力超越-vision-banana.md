@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-058
 title: "商汤发布并开源 SenseNova-Vision 理解生成统一视觉大模型，能力超越 Vision Banana"
 title_zh: "商汤发布并开源 SenseNova-Vision 理解生成统一视觉大模型，能力超越 Vision Banana"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/975/952.htm"
 canonical_url: "https://ithome.com/0/975/952.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-13T10:23:57.016Z
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 商汤发布并开源 SenseNova-Vision 理解生成统一视觉大模型，能力超越 Vision Banana

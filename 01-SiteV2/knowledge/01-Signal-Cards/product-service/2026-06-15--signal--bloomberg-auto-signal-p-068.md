@@ -2,7 +2,7 @@
 id: SIG-20260615-A11
 type: signal_card
 signal_type: product_service
-title: "Bloomberg 推出 Agent 工作流能力，切入采购下单自动化"
+title: "美国禁止外国访问Anthropic最佳AI模型，标志政策逆转与对硅谷警告"
 date: 2026-06-15
 status: published
 source_title: "美国禁止外国访问Anthropic最佳AI模型，标志政策逆转与对硅谷警告"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Bloomberg"
 
 frontend:
-  displayTitle: "Bloomberg 推出 Agent 工作流能力，切入采购下单自动化"
+  displayTitle: "美国禁止外国访问Anthropic最佳AI模型，标志政策逆转与对硅谷警告"
   sourceLinks:
     - "https://www.bloomberg.com/news/articles/2026-06-15/anthropic-block-marks-us-reversal-warning-to-silicon-valley"
 ---
 
-# Bloomberg 推出 Agent 工作流能力，切入采购下单自动化
+# 美国禁止外国访问Anthropic最佳AI模型，标志政策逆转与对硅谷警告
 
 ## 新闻事实
 

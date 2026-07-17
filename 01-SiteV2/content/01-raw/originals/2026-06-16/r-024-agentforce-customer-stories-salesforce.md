@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"Discover real-life success stories 
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_zh: "Agentforce客户案例 - Salesforce"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Agentforce Customer Stories - Salesforce

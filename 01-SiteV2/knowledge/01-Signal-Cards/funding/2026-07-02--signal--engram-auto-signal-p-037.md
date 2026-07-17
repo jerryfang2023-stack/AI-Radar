@@ -2,7 +2,7 @@
 id: SIG-20260702-A14
 type: signal_card
 signal_type: funding
-title: "Engram 携 9800 万美元启动，打造真正了解组织的 AI"
+title: "Engram 获 9800 万美元启动资金，打造真正了解你组织的 AI"
 date: 2026-07-02
 status: published
 source_title: "Engram Launches with $98M to Build AI That Actually Knows Your Organization"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "Engram"
 
 frontend:
-  displayTitle: "Engram 携 9800 万美元启动，打造真正了解组织的 AI"
+  displayTitle: "Engram 获 9800 万美元启动资金，打造真正了解你组织的 AI"
   sourceLinks:
     - "https://theaiinsider.tech/2026/07/01/engram-launches-with-98m-to-build-ai-that-actually-knows-your-organization/"
 ---
 
-# Engram 携 9800 万美元启动，打造真正了解组织的 AI
+# Engram 获 9800 万美元启动资金，打造真正了解你组织的 AI
 
 ## 新闻事实
 

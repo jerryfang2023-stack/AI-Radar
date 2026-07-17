@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-035
 title: "CursorBench 3.1"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "CursorBench 3.1"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://cursor.com/evals"
 canonical_url: "https://cursor.com/evals"
 source_name: "Hacker News 热门（buzzing.cc 中文翻译）"
@@ -78,6 +78,7 @@ fact_extraction_completed_at: 2026-07-03T01:59:31.230Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # CursorBench 3.1

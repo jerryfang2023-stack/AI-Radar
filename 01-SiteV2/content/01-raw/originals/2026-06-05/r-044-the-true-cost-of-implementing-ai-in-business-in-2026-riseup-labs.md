@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"Enterprise-Grade AI Solutions Total impl
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "2026年企业实施AI的真实成本 - Riseup Labs"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # The True Cost of Implementing AI in Business in 2026 - Riseup Labs

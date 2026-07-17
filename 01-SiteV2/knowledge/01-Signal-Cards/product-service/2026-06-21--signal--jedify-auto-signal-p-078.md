@@ -2,7 +2,7 @@
 id: SIG-20260621-A07
 type: signal_card
 signal_type: product_service
-title: "Here's Why Context Graphs Are the Next Must-Have for Enterprise AI - Jedify"
+title: "以下是为什么上下文图是企业AI的下一个必备工具 - Jedify"
 date: 2026-06-21
 status: published
 source_title: "Here's Why Context Graphs Are the Next Must-Have for Enterprise AI - Jedify"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Jedify"
 
 frontend:
-  displayTitle: "Here's Why Context Graphs Are the Next Must-Have for Enterprise AI - Jedify"
+  displayTitle: "以下是为什么上下文图是企业AI的下一个必备工具 - Jedify"
   sourceLinks:
     - "https://jedify.com/heres-why-context-graphs-are-the-next-must-have-for-enterprise-ai/"
 ---
 
-# Here's Why Context Graphs Are the Next Must-Have for Enterprise AI - Jedify
+# 以下是为什么上下文图是企业AI的下一个必备工具 - Jedify
 
 ## 新闻事实
 

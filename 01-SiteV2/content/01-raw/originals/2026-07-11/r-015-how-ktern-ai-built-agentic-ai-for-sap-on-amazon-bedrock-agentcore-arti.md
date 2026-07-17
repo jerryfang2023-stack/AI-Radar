@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-015
 title: "How KTern.AI built agentic AI for SAP on Amazon Bedrock AgentCore | Artificial Intelligence"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "KTern.AI 如何在 Amazon Bedrock AgentCore 上为 SAP 构建代理型 AI | 人工智能"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://aws.amazon.com/blogs/machine-learning/how-ktern-ai-built-agentic-ai-for-sap-on-amazon-bedrock-agentcore/"
 canonical_url: "https://aws.amazon.com/blogs/machine-learning/how-ktern-ai-built-agentic-ai-for-sap-on-amazon-bedrock-agentcore"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-11T04:06:33.342Z
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # How KTern.AI built agentic AI for SAP on Amazon Bedrock AgentCore | Artificial Intelligence

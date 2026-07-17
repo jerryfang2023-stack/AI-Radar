@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"在 COMPUTEX 的 GTC Taipei 上，NVIDIA
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "NVIDIA 发布 RTX Spark 与 OpenShell，强化本地 AI 智能体"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # NVIDIA 发布 RTX Spark 与 OpenShell，强化本地 AI 智能体

@@ -1,17 +1,20 @@
 [
   {
-    "fde_id": "FDE-5e60bdedfcb3a425",
-    "event_id": "EV-3398ae53a199be16",
-    "customer": "",
-    "vendor": "",
+    "fde_id": "FDE-27308b0a6cb2321a",
+    "event_id": "EV-c0a65877001ed413",
+    "customer": "Snowflake",
+    "vendor": "Anthropic",
     "industry": "",
-    "use_case": "to bring agentic AI to global enterprises \\ Anthropic",
+    "use_case": "bring agentic AI to global enterprises",
     "workflow_before": "",
     "workflow_after": "",
     "deployment_stage": "announced",
     "delivery_model": "",
     "team_composition": "",
-    "systems_integrated": [],
+    "systems_integrated": [
+      "Google Cloud",
+      "Claude"
+    ],
     "data_requirements": [],
     "governance_controls": [],
     "timeline": "",
@@ -22,18 +25,18 @@
     ],
     "metric_attribution": "source_reported",
     "reported_need": "",
-    "reported_delivery_components": [],
+    "reported_delivery_components": [
+      "Today, we announce a significant expansion of our strategic partnership with Snowflake. The multi-year, $200 million agreement will not only make Anthropic’s Claude models available in the Snowflake platform to more than 12,600 global customers across Amazon Bedrock, Google Cloud Vertex AI, and Microsoft Azure, but also establishes a joint go-to-market (GTM) initiative focused on deploying AI agents across the world's largest enterprises. The partnership enables enterprises to gain insights from both structured and unstructured data using Claude, while maintaining rigorous security standards.",
+      "Thousands of Snowflake customers already process trillions of Claude tokens per month through Snowflake Cortex AI . The next phase of the partnership focuses on deploying AI agents capable of handling complex, multi-step analysis, powered by Claude's advanced reasoning and Snowflake's governed data and AI environment. Business users can ask questions in plain English. Claude figures out what data is needed, pulls it from across the company's Snowflake environment, and delivers the answer, with greater than 90% accuracy on complex text-to-SQL tasks based on Snowflake's internal benchmarks."
+    ],
     "reported_outcomes": [],
     "undisclosed_fields": [
-      "customer",
-      "vendor",
       "industry",
       "workflow_before",
       "workflow_after",
       "delivery_model",
       "team_composition",
       "reported_need",
-      "systems_integrated",
       "data_requirements",
       "governance_controls",
       "reported_outcomes"
@@ -46,6 +49,50 @@
     ],
     "source_refs": [
       "SA-86a9d0df93d46c9a"
+    ]
+  },
+  {
+    "fde_id": "FDE-98a3583160cf79b0",
+    "event_id": "EV-8b73e88ffd3569b2",
+    "customer": "NHS Shared Business Services",
+    "vendor": "Salesforce",
+    "industry": "",
+    "use_case": "AI-powered Platform to Transform Corporate Services across the NHS - Salesforce",
+    "workflow_before": "",
+    "workflow_after": "",
+    "deployment_stage": "announced",
+    "delivery_model": "",
+    "team_composition": "",
+    "systems_integrated": [],
+    "data_requirements": [],
+    "governance_controls": [],
+    "timeline": "",
+    "reported_metrics": [],
+    "metric_attribution": "",
+    "reported_need": "",
+    "reported_delivery_components": [],
+    "reported_outcomes": [],
+    "undisclosed_fields": [
+      "industry",
+      "workflow_before",
+      "workflow_after",
+      "delivery_model",
+      "team_composition",
+      "reported_need",
+      "systems_integrated",
+      "data_requirements",
+      "governance_controls",
+      "reported_delivery_components",
+      "reported_outcomes"
+    ],
+    "claim_refs": [
+      "CL-4d1674c85d7a50a3",
+      "CL-a8725512d141ef54",
+      "CL-ff6feb7a9df85684",
+      "CL-729f43cddf0fdd35"
+    ],
+    "source_refs": [
+      "SA-0f691fb7db187777"
     ]
   }
 ]

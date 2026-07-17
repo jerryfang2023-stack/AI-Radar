@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-17T18:20:10.588Z",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 727,
-    "quarantinedEventCount": 50
+    "eventCount": 818,
+    "quarantinedEventCount": 58
   },
   "entity": {
     "id": "EN-0e008e2c06144ec8",
@@ -33,9 +33,7 @@
     "lastSeen": "2026-07-16",
     "relationIds": [
       "REL2-125e92100f14f132",
-      "REL2-6af4e37c7a244b18",
       "REL2-c1743ef4560536bd",
-      "REL2-cd214d6968d23853",
       "REL2-d1256a41edab3bfb"
     ],
     "groupedEventIds": {
@@ -45,9 +43,7 @@
       "productsServices": [
         "EV-6359c9f6c2609a38",
         "EV-5babb43f4b4d302f",
-        "EV-8fad966ecb9b1d31",
         "EV-89b644ff05e6b93b",
-        "EV-ff10670ad06959ec",
         "EV-d8c69ed782b73a34"
       ],
       "hardware": [],
@@ -97,22 +93,10 @@
         ],
         "entityIds": [
           "EN-2b6e51bec93e86c1",
-          "EN-b0532e1af75cc4ab"
-        ]
-      },
-      {
-        "id": "EV-8fad966ecb9b1d31",
-        "dataDate": "2026-07-01",
-        "date": "2026-07-01",
-        "eventType": "model_release",
-        "eventTypeLabel": "模型发布",
-        "eventGroup": "模型、产品与服务",
-        "status": "completed",
-        "statusLabel": "已完成",
-        "title": "Google 发布 Nano Banana 2 Lite 图像模型与 Gemini Omni Flash 视频模型",
-        "displayTags": [],
-        "entityIds": [
-          "EN-bbdefa2950f49882"
+          "EN-b0532e1af75cc4ab",
+          "EN-01f1074bb52ff605",
+          "EN-7ed9c9e7c260ed06",
+          "EN-4d09c69c19f5f67b"
         ]
       },
       {
@@ -134,22 +118,8 @@
           }
         ],
         "entityIds": [
-          "EN-bbdefa2950f49882"
-        ]
-      },
-      {
-        "id": "EV-ff10670ad06959ec",
-        "dataDate": "2026-07-01",
-        "date": "2026-07-01",
-        "eventType": "model_release",
-        "eventTypeLabel": "模型发布",
-        "eventGroup": "模型、产品与服务",
-        "status": "completed",
-        "statusLabel": "已完成",
-        "title": "Google DeepMind 发布 Nano Banana 2 Lite 图像生成模型",
-        "displayTags": [],
-        "entityIds": [
-          "EN-2b6e51bec93e86c1"
+          "EN-bbdefa2950f49882",
+          "EN-01f1074bb52ff605"
         ]
       },
       {
@@ -171,7 +141,9 @@
           }
         ],
         "entityIds": [
-          "EN-bbdefa2950f49882"
+          "EN-bbdefa2950f49882",
+          "EN-6e7e64cf66f76a04",
+          "EN-01f1074bb52ff605"
         ]
       }
     ],
@@ -191,18 +163,18 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-6f092cfc7a064d64",
+        "EV-d4e44892226be468",
         "EV-1ac32035d5e425e1",
-        "EV-adafffa563a53d49",
-        "EV-ef7402351b6b37bd",
         "EV-67ef7accd26a07a0",
         "EV-a7e1ecd212474e00",
         "EV-d961d3ad02f6ae14",
-        "EV-f9eebe4e3b9b667c",
+        "EV-7c6a9f4ee4829976",
+        "EV-93c6ccf23cc422cb",
         "EV-5babb43f4b4d302f",
-        "EV-ff10670ad06959ec",
-        "EV-8ab21bf8e73cf44a",
+        "EV-8eed6489ab514823",
+        "EV-3ef3e18df61a00d8",
         "EV-568d2aeab5234e48",
-        "EV-d6f638da9e1d3b46",
         "EV-f68e00bb9fd49fac",
         "EV-3e9a0d1be6de5096",
         "EV-e96aba142e46eba1",
@@ -212,24 +184,28 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-industry-manufacturing",
+        "TX-technology-vision_language",
         "TX-technology-code_generation",
-        "TX-use_case-customer_service",
-        "TX-industry-healthcare_life_sciences",
         "TX-use_case-software_development",
         "TX-technology-mixture_of_experts",
-        "TX-use_case-cybersecurity",
-        "TX-technology-multimodal",
-        "TX-technology-speech_audio",
+        "TX-technology-retrieval_augmented_generation",
         "TX-use_case-research_science",
         "TX-industry-media_entertainment",
+        "TX-technology-multimodal",
         "TX-technology-video_generation",
-        "TX-technology-fine_tuning"
+        "TX-technology-image_generation",
+        "TX-technology-speech_audio"
       ],
       "relatedEntityIds": [
-        "EN-0e008e2c06144ec8"
+        "EN-0e008e2c06144ec8",
+        "EN-7ed9c9e7c260ed06",
+        "EN-01f1074bb52ff605",
+        "EN-4d09c69c19f5f67b",
+        "EN-d56aa2f9908f566a",
+        "EN-085598c00f2aaccf",
+        "EN-a3c3b987b09fc1bb"
       ],
-      "firstSeen": "2026-05-23",
+      "firstSeen": "2026-06-02",
       "lastSeen": "2026-07-17"
     },
     {
@@ -245,126 +221,132 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-10c70ced68ccb31b",
-        "EV-d4d7b019ff0015df",
-        "EV-21c2e81a7c073e04",
-        "EV-54e23045d3334e65",
+        "EV-e41fc65eb014893f",
+        "EV-dfddbb260b3d1c77",
+        "EV-2bb63a3015195f9b",
         "EV-43b56d49df9a73a2",
-        "EV-6180de2e02597d9d",
-        "EV-968709fe29b77eba",
+        "EV-0e84a2f49d765ce3",
         "EV-dbbe3fd637be213f",
         "EV-4a162c41bb82f325",
-        "EV-9fc8a84b3d0797d1",
-        "EV-57105df2fcada2e5",
+        "EV-cf76f090a1a20a36",
         "EV-36a9e4e908249381",
         "EV-ef6464cf7f764835",
         "EV-b95539d17772a4ce",
-        "EV-df5831ff5762432d",
+        "EV-d1a3f5c8045e548d",
         "EV-f949fd95df58d42d",
-        "EV-a9a3b5b56befe593",
-        "EV-f7e41493addd1104",
-        "EV-3398ae53a199be16",
+        "EV-97747aee0cafd9f3",
+        "EV-c0a65877001ed413",
         "EV-04efb4eecbb8125f",
         "EV-6359c9f6c2609a38",
-        "EV-04ee2bc4ac888358",
         "EV-c2d784ef0a5376f8",
-        "EV-302018f2e960a8bf",
-        "EV-aa962ef7ec9a5c50",
-        "EV-db1d74f0bfcc1b04",
+        "EV-967239f907803753",
+        "EV-ac8f8581cd1ca75d",
         "EV-f05783f745bc7c2c",
-        "EV-52508b70ccd2cc0b",
-        "EV-f9eebe4e3b9b667c",
-        "EV-c410d77c8d531e5f",
-        "EV-268250d426c1a4a0",
-        "EV-04873bbc8be8e70d",
+        "EV-d12aa40eff40c97e",
+        "EV-96c8ce4ee89adb84",
+        "EV-caec65aef89d3b4a",
+        "EV-cabc88e1d09dec80",
+        "EV-cc3b92fe233953cf",
+        "EV-0edb0a592ca1fd67",
         "EV-2059f42c7b2aff44",
-        "EV-9fac0983ab657689",
-        "EV-4c0e7025692ab98c",
+        "EV-77662aa9bef9efbe",
+        "EV-7e52d691a0553667",
         "EV-b8bba030747fd3b6",
-        "EV-8daf217ff024ac4a",
+        "EV-8aead769e84de342",
+        "EV-eddb4330fed15762",
         "EV-2298304e18dbf493",
         "EV-89b644ff05e6b93b",
-        "EV-8fad966ecb9b1d31",
         "EV-9c4b862020202f6c",
         "EV-d8c69ed782b73a34",
-        "EV-c0f86afbefa2e0a6",
+        "EV-5012364af7480121",
         "EV-abf0990dcaceb1ce",
-        "EV-c60208ea9b51f47a",
-        "EV-c6359191a071b538",
+        "EV-d5cc9a50a9b88d2b",
         "EV-b860d46fee913f27",
-        "EV-09d3ce5611881ed4",
-        "EV-c033ae6f9784d674",
+        "EV-f953555178744c22",
         "EV-28145c97a7237d6d",
-        "EV-e6771f58d7c2a050",
-        "EV-b8b39e635aa7511f",
+        "EV-c108e7cc2df7faf4",
+        "EV-916bcaee6266e0d0",
         "EV-54c329f4c8e4227b",
-        "EV-7808c274ce0aa0bf",
-        "EV-c3cbf5d7f860c693",
+        "EV-dfba03031e5726ad",
         "EV-009105cbcf82a638",
-        "EV-b9a009b48d4cbf85",
-        "EV-b3809ff557361cc2",
-        "EV-bc71b0ddefa209a9",
-        "EV-a85fe927f20c2595",
-        "EV-b4f3dcac8cc230d9",
-        "EV-175af8c7b8146340",
-        "EV-d2d1834222ab32d3",
+        "EV-99e5df844a1bd670",
+        "EV-1b03e5dff76a50a1",
+        "EV-51dfd0d541380500",
+        "EV-ab3586268ebfab38",
+        "EV-e4b5fe493066804b",
+        "EV-8ca7da5081a2e2fc",
+        "EV-8eed6489ab514823",
         "EV-22b8d155ce027905",
-        "EV-d6f638da9e1d3b46",
+        "EV-3ef3e18df61a00d8",
+        "EV-4bb5b24400e49ea4",
+        "EV-97a8d86baa7fffc4",
         "EV-0ad758b04b9b5313",
-        "EV-3ed6744b43d9b8df",
         "EV-c08837795f9e16d2",
-        "EV-4a3cb762183581cd",
-        "EV-59933d63c4051085",
-        "EV-588cf9609e44edc9",
-        "EV-7fa23cf0102a8f92",
-        "EV-c28e0d02272537d8",
-        "EV-d31057c6f6ec28ba",
-        "EV-342799d4e68e7416",
+        "EV-9bc41f08cb0b4f39",
+        "EV-5a1422a9929c582e",
+        "EV-bff418b2959f58fb",
+        "EV-e878e56967902718",
+        "EV-5493c61bcbe58aa2",
+        "EV-cac9d9f31ef675ce",
+        "EV-dab4d3f2059e8880",
+        "EV-0d1980baa83e1e6c",
         "EV-d53cd33e8f541a65",
         "EV-a4f052325d0ef230",
         "EV-ef823877347ff40f",
         "EV-3e9a0d1be6de5096",
         "EV-8cd7665e40729256",
         "EV-2d56dec8dfeb2b56",
-        "EV-6266c73d470e8aef",
         "EV-ad269fada2269f35",
-        "EV-bce258f8f915ff5f"
+        "EV-bce258f8f915ff5f",
+        "EV-1df9b606627460f7",
+        "EV-39460c022e56badd"
       ],
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-industry-manufacturing",
         "TX-technology-code_generation",
         "TX-use_case-enterprise_operations",
         "TX-use_case-software_development",
-        "TX-use_case-robotics_automation",
-        "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-industry-financial_services",
-        "TX-technology-on_device",
         "TX-use_case-cybersecurity",
         "TX-industry-retail_ecommerce",
-        "TX-technology-human_in_loop",
-        "TX-industry-telecommunications",
-        "TX-industry-technology",
-        "TX-technology-multimodal",
+        "TX-technology-on_device",
         "TX-technology-retrieval_augmented_generation",
-        "TX-use_case-knowledge_search",
         "TX-technology-embodied_ai",
-        "TX-technology-speech_audio",
         "TX-industry-media_entertainment",
+        "TX-technology-multimodal",
         "TX-technology-video_generation",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
         "TX-technology-fine_tuning",
-        "TX-technology-computer_use"
+        "TX-use_case-content_creation",
+        "TX-technology-computer_use",
+        "TX-technology-speech_audio"
       ],
       "relatedEntityIds": [
         "EN-96eebba49dbbf422",
         "EN-81e577740888ca6d",
         "EN-1229af0aa3b0305e",
         "EN-992eafe973f69075",
-        "EN-0e008e2c06144ec8"
+        "EN-40f98159922ab514",
+        "EN-834ab0b6e4492d23",
+        "EN-ffc6caa049c23d48",
+        "EN-242e21e3dc6869a9",
+        "EN-151013fb8438c046",
+        "EN-77fe4e790d5bc756",
+        "EN-8d323d8bba783aa3",
+        "EN-9ff1a58a589bc318",
+        "EN-01f1074bb52ff605",
+        "EN-0e008e2c06144ec8",
+        "EN-f2c032b19edb7900",
+        "EN-d4c56709df757c56",
+        "EN-6470c8584a9d35d3",
+        "EN-b5c336c0dd1ff29c",
+        "EN-eb0cc8fb584389db",
+        "EN-d56aa2f9908f566a",
+        "EN-4baef0e41cbd7ae2",
+        "EN-e3db3da2b7dc6057"
       ],
       "firstSeen": "2026-05-22",
       "lastSeen": "2026-07-17"
@@ -393,27 +375,6 @@
       "status": "verified"
     },
     {
-      "relationship_id": "REL2-6af4e37c7a244b18",
-      "relationship_version": "RELATION-V2.0",
-      "subject_ref": "EN-bbdefa2950f49882",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-0e008e2c06144ec8",
-      "object_type": "entity",
-      "event_id": "EV-8fad966ecb9b1d31",
-      "claim_refs": [
-        "CL-065dd83395226ed0",
-        "CL-e3002fd2f0b0a2cf",
-        "CL-964d1c46878035fb",
-        "CL-e3281aa0b1a7a799"
-      ],
-      "source_refs": [
-        "SA-4f851010e165ff0d"
-      ],
-      "data_date": "2026-07-01",
-      "status": "verified"
-    },
-    {
       "relationship_id": "REL2-c1743ef4560536bd",
       "relationship_version": "RELATION-V2.0",
       "subject_ref": "EN-bbdefa2950f49882",
@@ -430,27 +391,6 @@
       ],
       "source_refs": [
         "SA-7c91c84c27e2a1a0"
-      ],
-      "data_date": "2026-07-01",
-      "status": "verified"
-    },
-    {
-      "relationship_id": "REL2-cd214d6968d23853",
-      "relationship_version": "RELATION-V2.0",
-      "subject_ref": "EN-2b6e51bec93e86c1",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-0e008e2c06144ec8",
-      "object_type": "entity",
-      "event_id": "EV-ff10670ad06959ec",
-      "claim_refs": [
-        "CL-456c912408df54cc",
-        "CL-366c9776915c1d2b",
-        "CL-cc6e6fc96a525e7f",
-        "CL-9ec32dfd58966c90"
-      ],
-      "source_refs": [
-        "SA-2537967031e08701"
       ],
       "data_date": "2026-07-01",
       "status": "verified"

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"quote","text":"@HiTw93 推荐了开源工具Kami：用�
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "推荐Kami与Claude Design生成简历"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 推荐Kami与Claude Design生成简历

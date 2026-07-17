@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"It was 11:47pm on a Thursday nig
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "计算Kubernetes集成税：你的DIY网络栈实际成本"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Calculating The Kubernetes Integration Tax: What Your DIY Networking Stack Actually Costs

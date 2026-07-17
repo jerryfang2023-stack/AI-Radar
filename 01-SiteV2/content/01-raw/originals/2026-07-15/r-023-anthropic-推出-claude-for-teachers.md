@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-023
 title: "Anthropic 推出 Claude for Teachers"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "Anthropic 推出 Claude for Teachers"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.anthropic.com/news/claude-for-teachers"
 canonical_url: "https://anthropic.com/news/claude-for-teachers"
 source_name: "Anthropic：Newsroom（网页）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-15T04:28:37.670Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Anthropic 推出 Claude for Teachers

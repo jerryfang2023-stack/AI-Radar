@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-050
 title: "Hostie Raises $12M Series A to Power the Future of Restaurant Hospitality"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "Hostie 完成1200万美元A轮融资，助力餐饮服务业未来"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.prnewswire.com/news-releases/hostie-raises-12m-series-a-to-power-the-future-of-restaurant-hospitality-302820521.html"
 canonical_url: "https://prnewswire.com/news-releases/hostie-raises-12m-series-a-to-power-the-future-of-restaurant-hospitality-302820521.html"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-09T03:05:45.072Z
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Hostie Raises $12M Series A to Power the Future of Restaurant Hospitality

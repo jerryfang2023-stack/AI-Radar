@@ -2,7 +2,7 @@
 id: SIG-20260709-A13
 type: signal_card
 signal_type: case
-title: "Cognizant 宣布与 ServiceNow 合作，加速企业级 AI 治理落地"
+title: "Cognizant宣布与ServiceNow合作，加速企业级可扩展、可操作的AI治理落地"
 date: 2026-07-09
 status: published
 source_title: "Cognizant announces ServiceNow partnership to accelerate scalable, operationalized AI governance at enterprise scale – Company Announcement - FT.com"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "Cognizant"
 
 frontend:
-  displayTitle: "Cognizant 宣布与 ServiceNow 合作，加速企业级 AI 治理落地"
+  displayTitle: "Cognizant宣布与ServiceNow合作，加速企业级可扩展、可操作的AI治理落地"
   sourceLinks:
     - "https://markets.ft.com/data/announce/detail?dockey=600-202606041500PR_NEWS_USPRX____NY76513-1"
 ---
 
-# Cognizant 宣布与 ServiceNow 合作，加速企业级 AI 治理落地
+# Cognizant宣布与ServiceNow合作，加速企业级可扩展、可操作的AI治理落地
 
 ## 新闻事实
 

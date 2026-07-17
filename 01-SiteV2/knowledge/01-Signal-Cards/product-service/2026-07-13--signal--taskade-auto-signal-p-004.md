@@ -2,7 +2,7 @@
 id: SIG-20260713-A03
 type: signal_card
 signal_type: product_service
-title: "Taskade 发布 TSK-1 系统内核，为工作区应用提供统一智能运行层"
+title: "Taskade TSK-1 发布：Taskade 系统内核（2026）"
 date: 2026-07-13
 status: published
 source_title: "Introducing Taskade TSK-1: The Taskade System Kernel (2026) | Taskade Blog"
@@ -58,12 +58,12 @@ opportunity_signals:
 signal_owner: "Taskade"
 
 frontend:
-  displayTitle: "Taskade 发布 TSK-1 系统内核，为工作区应用提供统一智能运行层"
+  displayTitle: "Taskade TSK-1 发布：Taskade 系统内核（2026）"
   sourceLinks:
     - "https://taskade.com/blog/introducing-tsk-1"
 ---
 
-# Taskade 发布 TSK-1 系统内核，为工作区应用提供统一智能运行层
+# Taskade TSK-1 发布：Taskade 系统内核（2026）
 
 ## 新闻事实
 

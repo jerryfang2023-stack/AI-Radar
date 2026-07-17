@@ -2,7 +2,7 @@
 id: SIG-20260602-A08
 type: signal_card
 signal_type: product_service
-title: "Thoughtly 获 800 万美元融资，把 AI Agent 接进 CRM 销售流程"
+title: "Thoughtly 获超800万美元融资，为营收团队打造全渠道智能代理"
 date: 2026-06-02
 status: published
 asset_level: frontstage
@@ -58,7 +58,7 @@ signal_owner: "Thoughtly"
 watch_reason: "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
 
 frontend:
-  displayTitle: "Thoughtly 获 800 万美元融资，把 AI Agent 接进 CRM 销售流程"
+  displayTitle: "Thoughtly 获超800万美元融资，为营收团队打造全渠道智能代理"
   eventLine: "Thoughtly 发布新的 AI 能力，面向销售和收入团队流程。"
   whyWatch: "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"
   businessMeaning: "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
@@ -68,7 +68,7 @@ frontend:
     - "https://thoughtly.com/blog/thoughtly-raises-usd8m-to-build-omnichannel-agents-for-revenue-teams"
 ---
 
-# Thoughtly 获 800 万美元融资，把 AI Agent 接进 CRM 销售流程
+# Thoughtly 获超800万美元融资，为营收团队打造全渠道智能代理
 
 ## 信号底稿
 

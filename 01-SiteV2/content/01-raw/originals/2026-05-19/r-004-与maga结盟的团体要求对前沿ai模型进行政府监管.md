@@ -57,6 +57,10 @@ key_excerpts: [{"type":"risk","text":"一个以Humans First为首的保守派联
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "与MAGA结盟的团体要求对前沿AI模型进行政府监管"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 与MAGA结盟的团体要求对前沿AI模型进行政府监管

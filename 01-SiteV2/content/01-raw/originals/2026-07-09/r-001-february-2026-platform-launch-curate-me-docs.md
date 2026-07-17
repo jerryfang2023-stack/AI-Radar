@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-001
 title: "February 2026: Platform Launch | Curate-Me Docs"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "2026年2月：平台上线 | Curate-Me Docs"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://docs.curate-me.ai/blog/changelog-february-2026"
 canonical_url: "https://docs.curate-me.ai/blog/changelog-february-2026"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-09T03:05:44.803Z
 theme: aihot-fallback-product
 keyword_group: aihot-fallback-product
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # February 2026: Platform Launch | Curate-Me Docs

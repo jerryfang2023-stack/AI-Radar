@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-089
 title: "Cognizant and Rubrik expand alliance to give enterprises control over autonomous AI in production – Company Announcement - FT.com"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "Cognizant与Rubrik扩大合作，助力企业掌控生产环境中的自主AI智能体"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://markets.ft.com/data/announce/detail?dockey=600-202606161000PR_NEWS_USPRX____NY84494-1"
 canonical_url: "https://markets.ft.com/data/announce/detail?dockey=600-202606161000PR_NEWS_USPRX____NY84494-1"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-10T02:00:07.826Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Cognizant and Rubrik expand alliance to give enterprises control over autonomous AI in production – Company Announcement - FT.com

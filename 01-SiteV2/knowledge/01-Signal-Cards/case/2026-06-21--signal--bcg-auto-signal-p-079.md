@@ -2,7 +2,7 @@
 id: SIG-20260621-A14
 type: signal_card
 signal_type: case
-title: "The $200 Billion AI Opportunity in Tech Services"
+title: "BCG：科技服务业中2000亿美元的AI机遇"
 date: 2026-06-21
 status: published
 source_title: "The $200 Billion AI Opportunity in Tech Services | BCG"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Bcg"
 
 frontend:
-  displayTitle: "The $200 Billion AI Opportunity in Tech Services"
+  displayTitle: "BCG：科技服务业中2000亿美元的AI机遇"
   sourceLinks:
     - "https://www.bcg.com/publications/2026/the-200-billion-dollar-ai-opportunity-in-tech-services"
 ---
 
-# The $200 Billion AI Opportunity in Tech Services
+# BCG：科技服务业中2000亿美元的AI机遇
 
 ## 新闻事实
 

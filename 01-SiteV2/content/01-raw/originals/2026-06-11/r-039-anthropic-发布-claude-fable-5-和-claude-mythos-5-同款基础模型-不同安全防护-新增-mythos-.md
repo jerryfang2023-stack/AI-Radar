@@ -72,6 +72,10 @@ key_excerpts: [{"type":"supporting_context","text":"Anthropic 正式推出 Claud
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Anthropic 发布 Claude Fable 5 和 Claude Mythos 5：同款基础模型，不同安全防护，新增 Mythos 级层次"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Anthropic 发布 Claude Fable 5 和 Claude Mythos 5：同款基础模型，不同安全防护，新增 Mythos 级层次

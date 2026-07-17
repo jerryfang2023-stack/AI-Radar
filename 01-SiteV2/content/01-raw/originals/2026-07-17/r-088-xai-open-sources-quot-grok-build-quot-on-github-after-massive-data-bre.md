@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-088
 title: "xAI open-sources &quot;Grok-Build&quot; on GitHub after massive data breach"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "xAI在重大数据泄露后在GitHub上开源“Grok-Build”"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://the-decoder.com/xai-open-sources-grok-build-on-github-after-massive-data-breach/"
 canonical_url: "https://the-decoder.com/xai-open-sources-grok-build-on-github-after-massive-data-breach"
 source_name: "The Decoder AI News"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-17T04:40:17.302Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # xAI open-sources &quot;Grok-Build&quot; on GitHub after massive data breach

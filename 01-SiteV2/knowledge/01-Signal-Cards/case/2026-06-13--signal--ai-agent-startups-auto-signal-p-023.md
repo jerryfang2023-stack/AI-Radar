@@ -2,7 +2,7 @@
 id: SIG-20260613-A12
 type: signal_card
 signal_type: case
-title: "AI Agent Startups 案例：AI 进入销售和收入团队流程"
+title: "AI代理初创公司：重写风投融资规则，融资额达$100..."
 date: 2026-06-13
 status: published
 source_title: "AI Agent Startups: Rewriting VC Funding Playbook, Reaching $100 ..."
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "AI Agent Startups"
 
 frontend:
-  displayTitle: "AI Agent Startups 案例：AI 进入销售和收入团队流程"
+  displayTitle: "AI代理初创公司：重写风投融资规则，融资额达$100..."
   sourceLinks:
     - "https://www.linkedin.com/posts/sharatchandratechevangelist_ai-startups-coding-activity-7354328740740386816-lHBX"
 ---
 
-# AI Agent Startups 案例：AI 进入销售和收入团队流程
+# AI代理初创公司：重写风投融资规则，融资额达$100...
 
 ## 新闻事实
 

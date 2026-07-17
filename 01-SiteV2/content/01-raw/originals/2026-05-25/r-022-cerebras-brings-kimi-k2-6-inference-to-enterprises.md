@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"Cerebras Brings Kimi K2.6 Inference
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Cerebras将Kimi K2.6推理能力引入企业"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Cerebras Brings Kimi K2.6 Inference to Enterprises

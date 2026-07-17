@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-027
 title: "Enterprise AI Series B Funding Concentration Q1 2026"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "2026年第一季度企业AI系列B轮融资集中"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://angelinvestorsnetwork.com/market-analysis/enterprise-ai-series-b-funding-concentration-q1-2026"
 canonical_url: "https://angelinvestorsnetwork.com/market-analysis/enterprise-ai-series-b-funding-concentration-q1-2026"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-05T04:56:15.256Z
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Enterprise AI Series B Funding Concentration Q1 2026

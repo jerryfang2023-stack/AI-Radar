@@ -2,7 +2,7 @@
 id: SIG-20260610-A18
 type: signal_card
 signal_type: product_service
-title: "The token bill comes due: Inside the industry scramble to manage ..."
+title: "代币账单到期：行业内部争相管理……"
 date: 2026-06-10
 status: published
 source_title: "The token bill comes due: Inside the industry scramble to manage ..."
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "token bill comes due"
 
 frontend:
-  displayTitle: "The token bill comes due: Inside the industry scramble to manage ..."
+  displayTitle: "代币账单到期：行业内部争相管理……"
   sourceLinks:
     - "https://techcrunch.com/2026/06/05/the-token-bill-comes-due-inside-the-industry-scramble-to-manage-ais-runaway-costs/"
 ---
 
-# The token bill comes due: Inside the industry scramble to manage ...
+# 代币账单到期：行业内部争相管理……
 
 ## 新闻事实
 

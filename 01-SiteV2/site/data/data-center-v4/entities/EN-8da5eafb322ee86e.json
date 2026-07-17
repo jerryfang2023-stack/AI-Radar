@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-17T18:20:10.588Z",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 727,
-    "quarantinedEventCount": 50
+    "eventCount": 818,
+    "quarantinedEventCount": 58
   },
   "entity": {
     "id": "EN-8da5eafb322ee86e",
@@ -48,10 +48,17 @@
         "eventType": "funding",
         "eventTypeLabel": "融资",
         "eventGroup": "融资与并购",
-        "status": "announced",
-        "statusLabel": "已公布",
-        "title": "Fractile 完成 2.2 亿美元融资",
-        "displayTags": [],
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Fractile 融资2.2亿美元，打造下一代推理硬件",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          }
+        ],
         "entityIds": [
           "EN-8da5eafb322ee86e"
         ]

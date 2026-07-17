@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-007
 title: "OpenAI推出GPT-5.6系列模型，含三个变体及ChatGPT Work工具"
 title_zh: "OpenAI推出GPT-5.6系列模型，含三个变体及ChatGPT Work工具"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://techcrunch.com/2026/07/09/openai-launches-its-new-family-of-models-with-gpt-5-6"
 canonical_url: "https://techcrunch.com/2026/07/09/openai-launches-its-new-family-of-models-with-gpt-5-6"
 source_name: "TechCrunch：AI（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-10T01:59:44.107Z
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # OpenAI推出GPT-5.6系列模型，含三个变体及ChatGPT Work工具

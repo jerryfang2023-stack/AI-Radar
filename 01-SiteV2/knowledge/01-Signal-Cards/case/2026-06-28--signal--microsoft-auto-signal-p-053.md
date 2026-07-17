@@ -2,7 +2,7 @@
 id: SIG-20260628-A18
 type: signal_card
 signal_type: case
-title: "There is no Copilot without the pilots, says Slovenian insurance executive"
+title: "斯洛文尼亚保险高管表示：没有飞行员，就没有副驾驶"
 date: 2026-06-28
 status: published
 source_title: "There is no Copilot without the pilots, says Slovenian insurance executive"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Microsoft"
 
 frontend:
-  displayTitle: "There is no Copilot without the pilots, says Slovenian insurance executive"
+  displayTitle: "斯洛文尼亚保险高管表示：没有飞行员，就没有副驾驶"
   sourceLinks:
     - "https://news.microsoft.com/source/emea/features/zavarovalnica-triglav-copilot-adoption-insurance/"
 ---
 
-# There is no Copilot without the pilots, says Slovenian insurance executive
+# 斯洛文尼亚保险高管表示：没有飞行员，就没有副驾驶
 
 ## 新闻事实
 

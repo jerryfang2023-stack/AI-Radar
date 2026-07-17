@@ -72,6 +72,10 @@ key_excerpts: [{"type":"company_action","text":"OpenAI 为 ChatGPT 新增「Sche
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "ChatGPT 新增「Scheduled」侧边栏，统一管理定时任务"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # ChatGPT 新增「Scheduled」侧边栏，统一管理定时任务

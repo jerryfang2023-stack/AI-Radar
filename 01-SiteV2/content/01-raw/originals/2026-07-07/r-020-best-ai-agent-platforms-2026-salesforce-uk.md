@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-020
 title: "Best AI Agent Platforms (2026) | Salesforce UK"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "最佳AI代理平台（2026年）| Salesforce英国"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.salesforce.com/uk/agentforce/ai-agents/platform/"
 canonical_url: "https://salesforce.com/uk/agentforce/ai-agents/platform"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-07T02:01:23.414Z
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Best AI Agent Platforms (2026) | Salesforce UK

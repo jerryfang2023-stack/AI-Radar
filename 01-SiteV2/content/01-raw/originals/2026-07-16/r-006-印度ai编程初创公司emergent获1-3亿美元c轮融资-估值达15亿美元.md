@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-006
 title: "印度AI编程初创公司Emergent获1.3亿美元C轮融资，估值达15亿美元"
 title_zh: "印度AI编程初创公司Emergent获1.3亿美元C轮融资，估值达15亿美元"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://techcrunch.com/2026/07/15/indian-ai-coding-startup-emergent-becomes-a-unicorn-just-over-a-year-after-launch"
 canonical_url: "https://techcrunch.com/2026/07/15/indian-ai-coding-startup-emergent-becomes-a-unicorn-just-over-a-year-after-launch"
 source_name: "TechCrunch：AI（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-16T02:39:33.401Z
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 印度AI编程初创公司Emergent获1.3亿美元C轮融资，估值达15亿美元

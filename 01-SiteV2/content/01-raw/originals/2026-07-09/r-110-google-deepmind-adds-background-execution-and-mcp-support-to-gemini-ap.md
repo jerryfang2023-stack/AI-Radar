@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-110
 title: "Google Deepmind adds background execution and MCP support to Gemini API managed agents"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "Google Deepmind 为 Gemini API 托管智能体新增后台执行与 MCP 支持"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://the-decoder.com/google-deepmind-adds-background-execution-and-mcp-support-to-gemini-api-managed-agents/"
 canonical_url: "https://the-decoder.com/google-deepmind-adds-background-execution-and-mcp-support-to-gemini-api-managed-agents"
 source_name: "The Decoder AI News"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-09T03:05:45.420Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Google Deepmind adds background execution and MCP support to Gemini API managed agents

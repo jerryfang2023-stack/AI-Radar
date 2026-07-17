@@ -72,6 +72,10 @@ key_excerpts: [{"type":"workflow_change","text":"Learning to automate simple age
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "使用MCP、Q和tmux构建每日新闻摘要的新闻智能体"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Building News Agents for Daily News Recaps with MCP, Q, and tmux

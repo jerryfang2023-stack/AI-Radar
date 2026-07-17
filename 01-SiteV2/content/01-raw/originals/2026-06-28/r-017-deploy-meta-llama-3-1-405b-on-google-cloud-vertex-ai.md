@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"This blog will be focused on deploy
 theme: enterprise-ai-implementation-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "在 Google Cloud Vertex AI 上部署 Meta Llama 3.1 405B"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Deploy Meta Llama 3.1 405B on Google Cloud Vertex AI

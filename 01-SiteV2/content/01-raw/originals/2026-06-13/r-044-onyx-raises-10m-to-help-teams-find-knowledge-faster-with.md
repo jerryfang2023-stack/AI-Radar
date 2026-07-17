@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"osla Ventures and First Round Capital S
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "Onyx 获 1000 万美元融资，助力团队更快获取知识"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Onyx Raises $10M To Help Teams Find Knowledge Faster with

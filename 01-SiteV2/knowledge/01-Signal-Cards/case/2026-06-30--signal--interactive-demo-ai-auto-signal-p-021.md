@@ -2,7 +2,7 @@
 id: SIG-20260630-A07
 type: signal_card
 signal_type: case
-title: "Arcade Software 交互式演示：AI 原生团队如何交付"
+title: "互动演示AI原生团队：如何交付... - Arcade Software"
 date: 2026-06-30
 status: published
 source_title: "Interactive Demo AI-Native Teams: How to Ship ... - Arcade Software"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Interactive Demo AI"
 
 frontend:
-  displayTitle: "Arcade Software 交互式演示：AI 原生团队如何交付"
+  displayTitle: "互动演示AI原生团队：如何交付... - Arcade Software"
   sourceLinks:
     - "https://www.arcade.software/post/interactive-demo-ai-native-teams-2026"
 ---
 
-# Arcade Software 交互式演示：AI 原生团队如何交付
+# 互动演示AI原生团队：如何交付... - Arcade Software
 
 ## 新闻事实
 

@@ -10,7 +10,9 @@
     "event_time": "2026-06-30T15:00:00.000Z",
     "claim_refs": [
       "CL-dc23474ce510969f",
-      "CL-b4211247d7bbb43a"
+      "CL-b4211247d7bbb43a",
+      "CL-378985f18f0f01d2",
+      "CL-578435fd0cf8fef8"
     ],
     "source_refs": [
       "SA-98e5a0925d1d4346"
@@ -19,8 +21,8 @@
     "missing_fields": []
   },
   {
-    "card_id": "CARD-e616ca1c2c74437f",
-    "event_id": "EV-d8f0f89fed45ae5b",
+    "card_id": "CARD-3fe748174f0de405",
+    "event_id": "EV-c996e56f7f4bdc49",
     "card_type": "product_service",
     "title": "Meta AI 发布 Brain2Qwerty v2：无需手术的脑电波解码系统",
     "fact": "Last year, we introduced Brain2Qwerty v1, research that uses AI to decode brain activity into text without any surgical implant. Now we're sharing the next step: Brain2Qwerty v2, the highest-performing end-to-end pipeline capable of real-time sentence decoding from non-invasive brain recordings, approaching levels of accuracy previously exclusive to techniques that require brain surgery.",
@@ -28,31 +30,12 @@
     "publication_status": "verified",
     "event_time": "2026-07-01T00:58:06.785Z",
     "claim_refs": [
-      "CL-de2a8e6c3c188c7e"
+      "CL-de2a8e6c3c188c7e",
+      "CL-d18e038b43a5ff43",
+      "CL-fe6157f96041c43f"
     ],
     "source_refs": [
       "SA-529f0b59de6f5f06"
-    ],
-    "conflicts": [],
-    "missing_fields": []
-  },
-  {
-    "card_id": "CARD-92e8afbde6a6b46b",
-    "event_id": "EV-1662a98c563d3dce",
-    "card_type": "product_service",
-    "title": "Anthropic 发布 Claude Science beta：专注严谨科学研究的 AI 应用",
-    "fact": "The Claude Science app runs analyses, searches databases, and traces every step from data wrangling to publication, so you can spend time on science.",
-    "event_status": "completed",
-    "publication_status": "verified",
-    "event_time": "2026-06-30T18:34:55.498Z",
-    "claim_refs": [
-      "CL-7722dce1391b8d2c",
-      "CL-468ba50bd0275883",
-      "CL-674e453f1e1f89a0",
-      "CL-1444e2426cbe686c"
-    ],
-    "source_refs": [
-      "SA-048ee76d5b81a31e"
     ],
     "conflicts": [],
     "missing_fields": []
@@ -79,29 +62,6 @@
     "missing_fields": []
   },
   {
-    "card_id": "CARD-89f852343b3e5aa2",
-    "event_id": "EV-ff10670ad06959ec",
-    "card_type": "product_service",
-    "title": "Google DeepMind 发布 Nano Banana 2 Lite 图像生成模型",
-    "fact": "There are plenty of AI image-generation models these days, but the ones capable of quality outputs tend to be slow and expensive. Google DeepMind says its new image model, known as Nano Banana 2 Lite, offers the best balance of quality and speed. It’s available today across the Google ecosystem, creating images in a fraction of the time it takes Google’s beefier models .",
-    "event_status": "completed",
-    "publication_status": "verified",
-    "event_time": "2026-06-30T18:36:10.000Z",
-    "claim_refs": [
-      "CL-456c912408df54cc",
-      "CL-366c9776915c1d2b",
-      "CL-cc6e6fc96a525e7f",
-      "CL-9ec32dfd58966c90"
-    ],
-    "source_refs": [
-      "SA-2537967031e08701"
-    ],
-    "conflicts": [],
-    "missing_fields": [
-      "object"
-    ]
-  },
-  {
     "card_id": "CARD-480356cc9eb4869b",
     "event_id": "EV-3b5cb867fdaba28f",
     "card_type": "product_service",
@@ -123,8 +83,8 @@
     "missing_fields": []
   },
   {
-    "card_id": "CARD-6a069d5fed83259c",
-    "event_id": "EV-a1a2337ea4b70f52",
+    "card_id": "CARD-290b354563dacf3f",
+    "event_id": "EV-81219786acf95504",
     "card_type": "product_service",
     "title": "ADK Go 2.0 发布：构建可靠的多智能体应用，新增基于图的工作流引擎、人工参与循环与动态编排",
     "fact": "Since its 1.0 release, Agent Development Kit (ADK) for Go has helped Go developers build production agents with a clean, idiomatic API — strong typing, iter.Seq2 event streams, and a runtime that fits naturally into existing Go services. That foundation has been a real success, and it's exactly what made the next step possible.",
@@ -139,9 +99,7 @@
       "SA-0d616c261049edb8"
     ],
     "conflicts": [],
-    "missing_fields": [
-      "entities"
-    ]
+    "missing_fields": []
   },
   {
     "card_id": "CARD-25a376fbe1a6a77a",
@@ -158,27 +116,6 @@
     ],
     "source_refs": [
       "SA-9e20265220fe3a88"
-    ],
-    "conflicts": [],
-    "missing_fields": []
-  },
-  {
-    "card_id": "CARD-4acfab8b6f72d255",
-    "event_id": "EV-8fad966ecb9b1d31",
-    "card_type": "product_service",
-    "title": "Google 发布 Nano Banana 2 Lite 图像模型与 Gemini Omni Flash 视频模型",
-    "fact": "Google launches Nano Banana 2 Lite for fast AI images and Gemini Omni Flash for video via API",
-    "event_status": "completed",
-    "publication_status": "verified",
-    "event_time": "2026-06-30T17:17:33.000Z",
-    "claim_refs": [
-      "CL-065dd83395226ed0",
-      "CL-e3002fd2f0b0a2cf",
-      "CL-964d1c46878035fb",
-      "CL-e3281aa0b1a7a799"
-    ],
-    "source_refs": [
-      "SA-4f851010e165ff0d"
     ],
     "conflicts": [],
     "missing_fields": []
@@ -203,29 +140,6 @@
     ],
     "conflicts": [],
     "missing_fields": []
-  },
-  {
-    "card_id": "CARD-b189ec676bc5a4d4",
-    "event_id": "EV-5964027086487940",
-    "card_type": "case",
-    "title": "Claude Science 科研工作台正式上线",
-    "fact": "Claude Science, an AI workbench for scientists \\ Anthropic",
-    "event_status": "completed",
-    "publication_status": "verified",
-    "event_time": "2026-06-30T17:32:06.724Z",
-    "claim_refs": [
-      "CL-9406bf9b3f7e1c58",
-      "CL-0940bfe6c9cab160",
-      "CL-7b0aeb638da9cfb6",
-      "CL-2c59002d2387bcd2"
-    ],
-    "source_refs": [
-      "SA-6c90ad3baae5243a"
-    ],
-    "conflicts": [],
-    "missing_fields": [
-      "object"
-    ]
   },
   {
     "card_id": "CARD-aa3713b60edc3bcd",
@@ -270,8 +184,8 @@
     "missing_fields": []
   },
   {
-    "card_id": "CARD-13f25c53099fff65",
-    "event_id": "EV-b78311001509be2c",
+    "card_id": "CARD-cad3904415429a75",
+    "event_id": "EV-b60df35d168fe6b7",
     "card_type": "product_service",
     "title": "Meta AI 发布 Brain2Qwerty v2：非侵入式 MEG 脑到文本解码管线",
     "fact": "Meta AI just introduced Brain2Qwerty v2 . It decodes natural sentences from non-invasive brain recordings in real time. The system reads magnetoencephalography (MEG) signals while a person types. It reconstructs what they typed, with no implant and no surgery. This is the follow-up to Brain2Qwerty v1, released in February 2025. Meta is also releasing the full training code for both versions. The pipeline combines a convolutional encoder, a transformer, and a character-level language model.",
@@ -280,7 +194,8 @@
     "event_time": "2026-06-30T08:13:41.000Z",
     "claim_refs": [
       "CL-8b8c958533d0e038",
-      "CL-9bc49e8ccccb2592"
+      "CL-9bc49e8ccccb2592",
+      "CL-de00de874752d3d6"
     ],
     "source_refs": [
       "SA-eb397f2ea8a52371"
@@ -309,25 +224,96 @@
     "missing_fields": []
   },
   {
+    "card_id": "CARD-33ed0bdb7b19e3d1",
+    "event_id": "EV-9efcf6480f6c6f48",
+    "card_type": "case",
+    "title": "AWS 投资 10 亿美元部署前线 AI 工程师",
+    "fact": "Today, I'm excited to announce that we are meeting that demand by creating a dedicated AWS Forward Deployed Engineering (FDE) organization. Backed by a $1 billion investment, the AWS FDE model is different in three key ways: it is agentic-first, it compresses timelines from months to days, and it is designed so customers are self-sufficient when a deployment ends.",
+    "event_status": "completed",
+    "publication_status": "verified",
+    "event_time": "",
+    "claim_refs": [
+      "CL-3a655cbaec38bb4c",
+      "CL-9f6baae338d4acc4",
+      "CL-29ba87b3ef060435",
+      "CL-db7a643e6888604e"
+    ],
+    "source_refs": [
+      "SA-066bbfb54ee52d4a"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "event_time"
+    ]
+  },
+  {
+    "card_id": "CARD-5c2969f5c749383b",
+    "event_id": "EV-bc99fb915c25ace4",
+    "card_type": "case",
+    "title": "Telnyx 部署工程师构建您的语音 AI 智能体",
+    "fact": "Our expert Forward Deployment Engineers work side-by-side with your team to build, integrate, and deploy your custom Voice AI agents. Skip the technical complexity—we handle everything!",
+    "event_status": "announced",
+    "publication_status": "verified",
+    "event_time": "",
+    "claim_refs": [
+      "CL-eb9c7a5268570137",
+      "CL-2584e14cafed973b",
+      "CL-c57babe8c9e26849",
+      "CL-0314d80498a9934d"
+    ],
+    "source_refs": [
+      "SA-e9353b023d52c05c"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "event_time"
+    ]
+  },
+  {
     "card_id": "CARD-33f80150e4d9723b",
     "event_id": "EV-f0fee44c1dfdcb09",
     "card_type": "funding",
-    "title": "Hang Ten Systems 完成 3200 万美元 种子轮融资",
+    "title": "Hang Ten Systems 获3200万美元融资，助力企业成功应用AI",
     "fact": "Hang Ten Systems raises $32 million to help enterprises succeed with AI",
-    "event_status": "announced",
+    "event_status": "completed",
     "publication_status": "verified",
     "event_time": "",
     "claim_refs": [
       "CL-3c01a1c39e20e72c",
       "CL-b47fb1bd55eea6c3",
-      "CL-8a279787da49aaea",
-      "CL-ff9797783a9b0c67"
+      "CL-1cc58067fabba78f",
+      "CL-8a279787da49aaea"
     ],
     "source_refs": [
       "SA-76fc19bec2154818"
     ],
     "conflicts": [],
-    "missing_fields": []
+    "missing_fields": [
+      "event_time"
+    ]
+  },
+  {
+    "card_id": "CARD-5e5b0ec72276db8c",
+    "event_id": "EV-3dad0c66d96f7072",
+    "card_type": "case",
+    "title": "Azure AI 咨询服务助力招标合规自动化",
+    "fact": "Tender Compliance Automation — AI-Powered Bid Preparation & Compliance Validation",
+    "event_status": "announced",
+    "publication_status": "verified",
+    "event_time": "",
+    "claim_refs": [
+      "CL-52a53cda4759224d",
+      "CL-dcf5205fc2f4c59c",
+      "CL-f201ff9ae174798c",
+      "CL-a48aa6e16e4de340"
+    ],
+    "source_refs": [
+      "SA-8655545b437a656d"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "event_time"
+    ]
   },
   {
     "card_id": "CARD-b46c1d56374abb87",
@@ -335,8 +321,8 @@
     "card_type": "product_service",
     "title": "AI 编程工具 Cursor 推出移动端应用，手机即可操控智能体",
     "fact": "AI 编程工具 Cursor 推出移动端应用，手机即可操控智能体 - IT之家",
-    "event_status": "withdrawn",
-    "publication_status": "withdrawn",
+    "event_status": "completed",
+    "publication_status": "verified",
     "event_time": "2026-06-30T06:59:56.000Z",
     "claim_refs": [
       "CL-3e14964024c281e1",
@@ -346,6 +332,27 @@
     ],
     "source_refs": [
       "SA-6a6de8d603bc0a3a"
+    ],
+    "conflicts": [],
+    "missing_fields": []
+  },
+  {
+    "card_id": "CARD-2e3e38a9aa768129",
+    "event_id": "EV-3b77f14fea21485e",
+    "card_type": "product_service",
+    "title": "美国商务部\"松手\"，Anthropic 现可对外出口 Fable 及 Mythos AI 模型",
+    "fact": "随着先进 AI 模型推动 AI 热潮和大规模资本投入，美国政府加大了新模型发布前的审查力度。",
+    "event_status": "announced",
+    "publication_status": "verified",
+    "event_time": "2026-07-01T01:23:18.000Z",
+    "claim_refs": [
+      "CL-6c7a6dd98426163a",
+      "CL-cceb1f9569c7a956",
+      "CL-4f6c2f7a24e51b89",
+      "CL-a725180e40707606"
+    ],
+    "source_refs": [
+      "SA-7d235383d717b393"
     ],
     "conflicts": [],
     "missing_fields": []
@@ -370,29 +377,6 @@
     ],
     "conflicts": [],
     "missing_fields": []
-  },
-  {
-    "card_id": "CARD-7ab47fb211189117",
-    "event_id": "EV-ff748f8529cd80e7",
-    "card_type": "product_service",
-    "title": "Claude Sonnet 5 发布，系 Sonnet 系列最强智能体模型",
-    "fact": "系列最强智能体 AI 模型：Claude Sonnet 5 登场，部分性能逼近 Opus 4.8 - IT之家",
-    "event_status": "completed",
-    "publication_status": "verified",
-    "event_time": "2026-06-30T23:41:05.000Z",
-    "claim_refs": [
-      "CL-4b99156c29eaa75c",
-      "CL-e2d1311a41102e11",
-      "CL-87090d96951c4cdd",
-      "CL-10a418ecdf1a52b4"
-    ],
-    "source_refs": [
-      "SA-72c905759fb2a8c6"
-    ],
-    "conflicts": [],
-    "missing_fields": [
-      "object"
-    ]
   },
   {
     "card_id": "CARD-1cac7266c46fe30c",
@@ -426,9 +410,9 @@
     "event_time": "2026-06-30T12:49:46.000Z",
     "claim_refs": [
       "CL-24cec32502931a27",
-      "CL-5eba5b1bb7f068a3",
-      "CL-c8e480545591dcc1",
-      "CL-d2540e64f2208c33"
+      "CL-2dce1fe66b3d30e2",
+      "CL-d2540e64f2208c33",
+      "CL-5eba5b1bb7f068a3"
     ],
     "source_refs": [
       "SA-6fcd51c77962d55a"
@@ -439,8 +423,29 @@
     ]
   },
   {
-    "card_id": "CARD-a08684488199d16b",
-    "event_id": "EV-09610316ac52221e",
+    "card_id": "CARD-5e654a60ef3e96e9",
+    "event_id": "EV-5012364af7480121",
+    "card_type": "product_service",
+    "title": "马斯克抽调 SpaceX 顶尖星舰和星链工程师，全力攻坚 Grok 大模型",
+    "fact": "他还发文称，SpaceX 今年将每月推出一款从零全新训练的大模型。",
+    "event_status": "announced",
+    "publication_status": "verified",
+    "event_time": "2026-06-30T09:43:29.000Z",
+    "claim_refs": [
+      "CL-b2a161b6355ffe8a",
+      "CL-e6226019f1c30e0f",
+      "CL-dbce438adca03c09",
+      "CL-0e989d219aeb1772"
+    ],
+    "source_refs": [
+      "SA-e1dd693cbf4a7287"
+    ],
+    "conflicts": [],
+    "missing_fields": []
+  },
+  {
+    "card_id": "CARD-d7372cf474a9fdb3",
+    "event_id": "EV-7fb25ff3d853c314",
     "card_type": "product_service",
     "title": "微软全面推出 Anthropic Claude 模型 Azure 云服务，基于英伟达 GB300",
     "fact": "微软全面推出 Anthropic Claude 模型 Azure 云服务，基于英伟达 GB300 - IT之家",
@@ -455,24 +460,6 @@
     ],
     "source_refs": [
       "SA-91eb96be35f521bf"
-    ],
-    "conflicts": [],
-    "missing_fields": []
-  },
-  {
-    "card_id": "CARD-4dd909fdc585cc8a",
-    "event_id": "EV-761d76b722321673",
-    "card_type": "product_service",
-    "title": "Claude Code v2.1.197 发布：默认模型升级为 Claude Sonnet 5，支持原生 1M-token 上下文窗口",
-    "fact": "Introducing Claude Sonnet 5: now the default model in Claude Code, with a native 1M-token context window and promotional pricing of $2/$10 per Mtok through August 31. Update to version 2.1.197 for access. https://www.anthropic.com/news/claude-sonnet-5",
-    "event_status": "completed",
-    "publication_status": "verified",
-    "event_time": "2026-06-30T17:56:37.000Z",
-    "claim_refs": [
-      "CL-f76c0edc473931f6"
-    ],
-    "source_refs": [
-      "SA-bfb54266a8bb6faa"
     ],
     "conflicts": [],
     "missing_fields": []

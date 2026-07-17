@@ -2,7 +2,7 @@
 id: SIG-20260609-B01
 type: signal_card
 signal_type: funding
-title: "OpenAI 秘密提交 IPO 申请，估值 8520 亿美元"
+title: "继Anthropic之后，OpenAI秘密提交IPO申请"
 date: 2026-06-09
 status: published
 source_title: "OpenAI 秘密提交 IPO 申请"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "OpenAI"
 
 frontend:
-  displayTitle: "OpenAI 秘密提交 IPO 申请，估值 8520 亿美元"
+  displayTitle: "继Anthropic之后，OpenAI秘密提交IPO申请"
   sourceLinks:
     - "https://techcrunch.com/2026/06/08/following-anthropic-openai-files-confidentially-for-ipo"
 ---
 
-# OpenAI 秘密提交 IPO 申请，估值 8520 亿美元
+# 继Anthropic之后，OpenAI秘密提交IPO申请
 
 ## 新闻事实
 

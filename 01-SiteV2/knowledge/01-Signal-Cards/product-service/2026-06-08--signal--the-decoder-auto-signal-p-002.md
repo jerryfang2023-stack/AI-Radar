@@ -2,7 +2,7 @@
 id: SIG-20260608-A08
 type: signal_card
 signal_type: product_service
-title: "Perplexity 推出 "Search as Code" 架构，让 AI 模型自行编写搜索管道"
+title: "Perplexity 推出 \"Search as Code\" 架构，让 AI 模型自行编写搜索管道"
 date: 2026-06-08
 status: published
 source_title: "Perplexity 推出 "Search as Code" 架构，让 AI 模型自行编写搜索管道"
@@ -53,7 +53,7 @@ opportunity_signals:
 signal_owner: "The-Decoder"
 
 frontend:
-  displayTitle: "Perplexity 推出 "Search as Code" 架构，让 AI 模型自行编写搜索管道"
+  displayTitle: "Perplexity 推出 \"Search as Code\" 架构，让 AI 模型自行编写搜索管道"
   sourceLinks:
     - "https://the-decoder.com/perplexitys-search-as-code-lets-ai-models-write-their-own-search-pipelines-instead-of-calling-fixed-apis"
 ---

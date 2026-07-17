@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-032
 title: "Moonhub AI: The On-Demand AI Recruiter with Founder & CEO Nancy Xu"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "Moonhub AI：按需AI招聘平台，创始人兼CEO Nancy Xu"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://podcasters.spotify.com/pod/show/firstmark/episodes/Moonhub-AI-The-On-Demand-AI-Recruiter-with-Founder--CEO-Nancy-Xu-e2gemrn"
 canonical_url: "https://podcasters.spotify.com/pod/show/firstmark/episodes/Moonhub-AI-The-On-Demand-AI-Recruiter-with-Founder--CEO-Nancy-Xu-e2gemrn"
 source_name: "The MAD Podcast (Matt Turck)"
@@ -78,6 +78,7 @@ fact_extraction_completed_at: 2026-07-04T04:35:47.822Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Moonhub AI: The On-Demand AI Recruiter with Founder & CEO Nancy Xu

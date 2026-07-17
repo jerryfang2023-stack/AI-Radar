@@ -2,7 +2,7 @@
 id: SIG-20260618-A20
 type: signal_card
 signal_type: product_service
-title: "GitHub 推出 Agent 工作流能力，切入企业 Agent 协作平台"
+title: "Claude Code v2.1.181 发布"
 date: 2026-06-18
 status: published
 source_title: "Claude Code v2.1.181 发布"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "GitHub"
 
 frontend:
-  displayTitle: "GitHub 推出 Agent 工作流能力，切入企业 Agent 协作平台"
+  displayTitle: "Claude Code v2.1.181 发布"
   sourceLinks:
     - "https://github.com/anthropics/claude-code/releases/tag/v2.1.181"
 ---
 
-# GitHub 推出 Agent 工作流能力，切入企业 Agent 协作平台
+# Claude Code v2.1.181 发布
 
 ## 新闻事实
 

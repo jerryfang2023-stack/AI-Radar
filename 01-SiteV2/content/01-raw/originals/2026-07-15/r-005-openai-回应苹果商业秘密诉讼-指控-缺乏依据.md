@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-005
 title: "OpenAI 回应苹果商业秘密诉讼：指控\"缺乏依据\""
 title_zh: "OpenAI 回应苹果商业秘密诉讼：指控\"缺乏依据\""
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://techcrunch.com/2026/07/14/openai-pushes-back-on-apple-trade-secret-lawsuit"
 canonical_url: "https://techcrunch.com/2026/07/14/openai-pushes-back-on-apple-trade-secret-lawsuit"
 source_name: "TechCrunch：AI（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-15T04:28:37.550Z
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # OpenAI 回应苹果商业秘密诉讼：指控"缺乏依据"

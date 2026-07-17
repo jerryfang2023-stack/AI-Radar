@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"AI SaaS platforms support use cases suc
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "AI SaaS市场规模、行业份额及预测，2034年"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # AI SaaS Market Size, Industry Share, Forecast, 2034

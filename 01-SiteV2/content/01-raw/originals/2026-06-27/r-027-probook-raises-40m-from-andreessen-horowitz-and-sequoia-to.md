@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Probook Raises $40M from Andreessen Hor
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_zh: "Probook 从 Andreessen Horowitz 和 Sequoia 融资 4000 万美元"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Probook Raises $40M from Andreessen Horowitz and Sequoia to

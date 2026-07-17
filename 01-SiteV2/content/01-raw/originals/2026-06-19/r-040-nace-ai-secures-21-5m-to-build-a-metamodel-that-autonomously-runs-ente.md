@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Nace.AI Secures $21.5M to Build a Metam
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only
+title_zh: "Nace.AI获2150万美元融资，构建自主运行企业工作流的元模型，专家提供最终验证"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Nace.AI Secures $21.5M to Build a Metamodel That Autonomously Runs Enterprise Workflows, With Experts Providing Final Validation

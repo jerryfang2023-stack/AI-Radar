@@ -2,7 +2,7 @@
 id: SIG-20260621-A10
 type: signal_card
 signal_type: case
-title: "Retell AI Automates Usage-Based Pricing to Scale its AI Voice Agent ..."
+title: "Retell AI 实现基于使用量的自动定价，以扩展其AI语音代理..."
 date: 2026-06-21
 status: published
 source_title: "Retell AI Automates Usage-Based Pricing to Scale its AI Voice Agent ..."
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Retell AI Automates Usage"
 
 frontend:
-  displayTitle: "Retell AI Automates Usage-Based Pricing to Scale its AI Voice Agent ..."
+  displayTitle: "Retell AI 实现基于使用量的自动定价，以扩展其AI语音代理..."
   sourceLinks:
     - "https://stripe.com/en-hr/customers/retell-ai"
 ---
 
-# Retell AI Automates Usage-Based Pricing to Scale its AI Voice Agent ...
+# Retell AI 实现基于使用量的自动定价，以扩展其AI语音代理...
 
 ## 新闻事实
 

@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-010
 title: "NVIDIA 发布 Audex（Nemotron-Labs-Audex-30B-A3B）统一音频-文本大语言模型"
 title_zh: "NVIDIA 发布 Audex（Nemotron-Labs-Audex-30B-A3B）统一音频-文本大语言模型"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.marktechpost.com/2026/07/07/nvidia-releases-audex-nemotron-labs-audex-30b-a3b-a-unified-audio-text-llm-that-preserves-the-text-intelligence-of-its-backbone"
 canonical_url: "https://marktechpost.com/2026/07/07/nvidia-releases-audex-nemotron-labs-audex-30b-a3b-a-unified-audio-text-llm-that-preserves-the-text-intelligence-of-its-backbone"
 source_name: "MarkTechPost（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-08T04:39:25.376Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # NVIDIA 发布 Audex（Nemotron-Labs-Audex-30B-A3B）统一音频-文本大语言模型

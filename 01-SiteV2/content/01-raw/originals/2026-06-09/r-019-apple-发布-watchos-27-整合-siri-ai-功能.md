@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"Apple 宣布 watchOS 27 系统�
 theme: outside-core-exploration
 keyword_group: outside-core-exploration
 copyright_note: local research archive only
+title_zh: "Apple 发布 watchOS 27，整合 Siri AI 功能"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Apple 发布 watchOS 27，整合 Siri AI 功能

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"quote","text":"Meta 在其独立的 Meta AI 应用中新
 theme: outside-core-exploration
 keyword_group: outside-core-exploration
 copyright_note: local research archive only
+title_zh: "Meta 在其 AI 应用中推出 AI 生成的点击诱饵新闻 feed"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Meta 在其 AI 应用中推出 AI 生成的点击诱饵新闻 feed

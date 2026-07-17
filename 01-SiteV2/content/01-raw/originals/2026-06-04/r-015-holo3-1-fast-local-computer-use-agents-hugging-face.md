@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"Smaller Sizes for Cost-Performan
 theme: technical-iteration-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "Holo3.1：快速本地化计算机使用代理 - Hugging Face"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Holo3.1: Fast & Local Computer Use Agents - Hugging Face

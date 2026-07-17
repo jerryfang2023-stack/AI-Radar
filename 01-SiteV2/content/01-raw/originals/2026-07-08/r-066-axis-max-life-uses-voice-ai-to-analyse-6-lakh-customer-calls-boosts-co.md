@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-066
 title: "Axis Max Life uses Voice AI to analyse 6 lakh customer calls, boosts conversions"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "Axis Max Life 利用语音 AI 分析 6 lakh 通客户来电，提升转化率"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.techcircle.in/2026/07/07/axis-max-life-uses-voice-ai-to-analyse-6-lakh-customer-calls-boosts-conversions"
 canonical_url: "https://techcircle.in/2026/07/07/axis-max-life-uses-voice-ai-to-analyse-6-lakh-customer-calls-boosts-conversions"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-08T04:39:25.914Z
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Axis Max Life uses Voice AI to analyse 6 lakh customer calls, boosts conversions

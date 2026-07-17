@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-019
 title: "Japan Government, Industrial Leaders and NVIDIA Launch the"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "日本政府、行业领袖与英伟达共同启动"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.globenewswire.com/news-release/2026/07/16/3328258/0/en/Japan-Government-Industrial-Leaders-and-NVIDIA-Launch-the-World-s-First-National-AI-Infrastructure.html"
 canonical_url: "https://globenewswire.com/news-release/2026/07/16/3328258/0/en/Japan-Government-Industrial-Leaders-and-NVIDIA-Launch-the-World-s-First-National-AI-Infrastructure.html"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-17T04:40:16.900Z
 theme: ai-hardware-scenario-service-signal
 keyword_group: ai-hardware-scenario-service-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Japan Government, Industrial Leaders and NVIDIA Launch the

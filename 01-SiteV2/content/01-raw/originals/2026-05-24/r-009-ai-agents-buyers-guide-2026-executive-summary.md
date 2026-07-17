@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"Software Provider SummaryThe ISG Bu
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "2026年AI代理买家指南执行摘要"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # AI Agents Buyers Guide 2026 Executive Summary

@@ -2,7 +2,7 @@
 id: SIG-20260613-A01
 type: signal_card
 signal_type: funding
-title: "Series B Enterprise AI Agents: Insight 获得$150M 融资，押注地产和建筑设计工作流"
+title: "B轮企业AI代理：Insight Partners 1.5亿美元"
 date: 2026-06-13
 status: published
 source_title: "Series B Enterprise AI Agents: Insight Partners $150M"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Series B Enterprise AI Agents: Insight"
 
 frontend:
-  displayTitle: "Series B Enterprise AI Agents: Insight 获得$150M 融资，押注地产和建筑设计工作流"
+  displayTitle: "B轮企业AI代理：Insight Partners 1.5亿美元"
   sourceLinks:
     - "https://angelinvestorsnetwork.com/venture-capital/series-b-enterprise-ai-agents-insight-partners-funding"
 ---
 
-# Series B Enterprise AI Agents: Insight 获得$150M 融资，押注地产和建筑设计工作流
+# B轮企业AI代理：Insight Partners 1.5亿美元
 
 ## 新闻事实
 

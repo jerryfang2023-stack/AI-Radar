@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"AWS成立了一个10亿美元的AI前向
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "亚马逊推出10亿美元FDE新部门，紧随OpenAI和Anthropic"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 亚马逊推出10亿美元FDE新部门，紧随OpenAI和Anthropic

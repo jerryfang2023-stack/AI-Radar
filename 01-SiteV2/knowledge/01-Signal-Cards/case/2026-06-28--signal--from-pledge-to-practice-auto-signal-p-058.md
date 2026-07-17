@@ -2,7 +2,7 @@
 id: SIG-20260628-A20
 type: signal_card
 signal_type: case
-title: "From pledge to practice: Building a more inclusive open source ecosystem"
+title: "从承诺到实践：构建更具包容性的开源生态系统"
 date: 2026-06-28
 status: published
 source_title: "From pledge to practice: Building a more inclusive open source ecosystem"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "From pledge to practice"
 
 frontend:
-  displayTitle: "From pledge to practice: Building a more inclusive open source ecosystem"
+  displayTitle: "从承诺到实践：构建更具包容性的开源生态系统"
   sourceLinks:
     - "https://github.blog/open-source/from-pledge-to-practice-building-a-more-inclusive-open-source-ecosystem/"
 ---
 
-# From pledge to practice: Building a more inclusive open source ecosystem
+# 从承诺到实践：构建更具包容性的开源生态系统
 
 ## 新闻事实
 

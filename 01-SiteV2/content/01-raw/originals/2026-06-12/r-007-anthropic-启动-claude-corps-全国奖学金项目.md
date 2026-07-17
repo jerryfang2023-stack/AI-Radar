@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"Anthropic 推出 Claude Corps 奖学金�
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Anthropic 启动 Claude Corps 全国奖学金项目"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Anthropic 启动 Claude Corps 全国奖学金项目

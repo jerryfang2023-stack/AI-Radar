@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"摩尔线程发布并开源 MusaCoder �
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "摩尔线程开源 MusaCoder 代码大模型，9B/27B 参数基于国产 GPU 全链路训练"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 摩尔线程开源 MusaCoder 代码大模型，9B/27B 参数基于国产 GPU 全链路训练

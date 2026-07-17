@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Sycamore Labs Secures $65 Million Seed 
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Sycamore Labs 获6500万美元种子轮融资，打造企业AI代理平台 | Raising.fi"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Sycamore Labs Secures $65 Million Seed Funding to Build Enterprise AI Agent Platform | Raising.fi

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"NEW YORK--(BUSINESS WIRE)--ElevenLabs, 
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "ElevenLabs与Better.com展示AI贷款智能体Betsy™在金融服务中的规模化成功"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # ElevenLabs and Better.com Showcase Success of AI Loan Agent, Betsy™, at Scale in Financial Services

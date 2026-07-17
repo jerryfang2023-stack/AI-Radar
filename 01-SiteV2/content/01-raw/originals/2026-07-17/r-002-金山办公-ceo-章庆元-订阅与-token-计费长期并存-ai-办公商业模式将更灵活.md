@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-002
 title: "金山办公 CEO 章庆元：订阅与 Token 计费长期并存，AI 办公商业模式将更灵活"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "金山办公 CEO 章庆元：订阅与 Token 计费长期并存，AI 办公商业模式将更灵活"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/977/946.htm"
 canonical_url: "https://ithome.com/0/977/946.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-17T04:40:16.773Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 金山办公 CEO 章庆元：订阅与 Token 计费长期并存，AI 办公商业模式将更灵活

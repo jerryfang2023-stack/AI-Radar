@@ -5,6 +5,7 @@
     "event_time": "",
     "disclosed_at": "2026-07-06T02:21:26.700Z",
     "entities": [
+      "EN-d2d165dff04ba225",
       "EN-7d3194f79e645c42",
       "EN-c70eca6b0f88f44d",
       "EN-bbdefa2950f49882"
@@ -18,15 +19,17 @@
     "locations": [],
     "claim_refs": [
       "CL-cf1afe14067538cd",
-      "CL-aa1c95c005ffc7a3",
-      "CL-5af726f49475977c",
-      "CL-a686bc7079c9ab63"
+      "CL-89bc885ad7a89e4f",
+      "CL-d4af62a0fc70e6a6",
+      "CL-aa1c95c005ffc7a3"
     ],
     "source_refs": [
       "SA-3ebba4e0d5856d3b"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-3ebba4e0d5856d3b",
@@ -35,101 +38,34 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-10c70ced68ccb31b",
-    "display_title_zh": "OpenAI 完成 1600 万美元融资"
+    "event_id": "EV-dfddbb260b3d1c77",
+    "display_title_zh": "Pit完成1600万美元融资，由Andreessen Horowitz领投，将AI原生软件引入企业运营"
   },
   {
-    "event_type": "product_release",
-    "event_status": "announced",
-    "event_time": "",
-    "disclosed_at": "2026-07-06T02:21:26.899Z",
-    "entities": [
-      "EN-8147e6fed86d42c1"
-    ],
-    "action": "Add",
-    "object": "Pulse",
-    "metrics": [
-      "38%"
-    ],
-    "locations": [],
-    "claim_refs": [
-      "CL-0d0f1af89f4d48c7",
-      "CL-88687cae2f8339ac",
-      "CL-0b5db3792641c6e9",
-      "CL-0c58247ceb729f65"
-    ],
-    "source_refs": [
-      "SA-587508daf2bb2646"
-    ],
-    "conflicts": [],
-    "missing_fields": [],
-    "update_history": [
-      {
-        "source_ref": "SA-587508daf2bb2646",
-        "disclosed_at": "2026-07-06T02:21:26.899Z",
-        "status": "announced"
-      }
-    ],
-    "publication_status": "verified",
-    "event_id": "EV-8f8f477441a23b7c",
-    "display_title_zh": "OPPO 发布 Pulse"
-  },
-  {
-    "event_type": "product_release",
-    "event_status": "completed",
-    "event_time": "2026-07-05T07:50:19.000Z",
-    "disclosed_at": "2026-07-05T07:50:19.000Z",
-    "entities": [
-      "EN-2086d0f715be4a4d"
-    ],
-    "action": "发布",
-    "object": "legal-kb：基于 Index v2 的智能体检索参考应用",
-    "metrics": [],
-    "locations": [],
-    "claim_refs": [
-      "CL-76b7e0f4a70c7644",
-      "CL-9d563bfa34ff0dc4",
-      "CL-953648085a0f92b7",
-      "CL-2cbed214b03003dc"
-    ],
-    "source_refs": [
-      "SA-5f716104a2a5a4f6"
-    ],
-    "conflicts": [],
-    "missing_fields": [],
-    "update_history": [
-      {
-        "source_ref": "SA-5f716104a2a5a4f6",
-        "disclosed_at": "2026-07-05T07:50:19.000Z",
-        "status": "completed"
-      }
-    ],
-    "publication_status": "verified",
-    "event_id": "EV-f064e5f05c36c404",
-    "display_title_zh": "LlamaIndex 发布 legal-kb：基于 Index v2 的智能体检索参考应用"
-  },
-  {
-    "event_type": "product_release",
+    "event_type": "deployment",
     "event_status": "announced",
     "event_time": "",
     "disclosed_at": "2026-07-06T02:21:27.005Z",
-    "entities": [],
-    "action": "Releases",
-    "object": "| Talkdesk",
+    "entities": [
+      "EN-3474e24464fc25a7"
+    ],
+    "action": "deploying",
+    "object": "customer-facing AI agents - Press Releases | Talkdesk",
     "metrics": [],
     "locations": [],
     "claim_refs": [
-      "CL-2cc2c5c488bb1be9",
       "CL-f20e5cafafb96f21",
-      "CL-ff398dbc34ca6316",
-      "CL-165927b8a1a17c33"
+      "CL-96a8eccf516b8447",
+      "CL-5a7a02d00bedf23e",
+      "CL-ff398dbc34ca6316"
     ],
     "source_refs": [
       "SA-07f981000d2409f4"
     ],
     "conflicts": [],
     "missing_fields": [
-      "entities"
+      "event_time",
+      "display_title_zh"
     ],
     "update_history": [
       {
@@ -139,15 +75,16 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-47c910c0498f3562",
-    "display_title_zh": "Talkdesk ends the guesswork in deploying customer-facing AI agents - Press 发布"
+    "event_id": "EV-0a96b17e1977ae89",
+    "display_title_zh": ""
   },
   {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "",
     "disclosed_at": "2026-07-06T02:21:27.029Z",
     "entities": [
+      "EN-14ce7672aaca7a68",
       "EN-047364b9be67f665"
     ],
     "action": "Raises",
@@ -168,17 +105,19 @@
       "SA-ba149da2c48f6a93"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-ba149da2c48f6a93",
         "disclosed_at": "2026-07-06T02:21:27.029Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-9895cb57eb366680",
-    "display_title_zh": "Alibaba 完成 650 万美元 种子轮融资"
+    "event_id": "EV-3d93d1da8cb64462",
+    "display_title_zh": "AIsa 筹集 650 万美元，打造 AI 代理资源网络 - AIsa 新闻"
   },
   {
     "event_type": "product_release",
@@ -257,6 +196,7 @@
     "event_time": "2026-07-05T23:28:32.000Z",
     "disclosed_at": "2026-07-05T23:28:32.000Z",
     "entities": [
+      "EN-d8cb1acd1b39854a",
       "EN-5388bc10736a0eff",
       "EN-047364b9be67f665"
     ],
@@ -285,7 +225,7 @@
       }
     ],
     "publication_status": "partial",
-    "event_id": "EV-4532e847f78cde0d",
+    "event_id": "EV-76aa77f5a2e7c661",
     "display_title_zh": "字节豆包、阿里千问宣布拟人化智能体 7 月 10 日下线"
   },
   {
@@ -318,7 +258,9 @@
       "SA-693f847609bf6451"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-f304585508211891",
@@ -333,7 +275,7 @@
     ],
     "publication_status": "verified",
     "event_id": "EV-327ba605bd9e8307",
-    "display_title_zh": "Andreessen Horowitz Leads Netris 完成 1500 万美元 A 轮融资"
+    "display_title_zh": "Andreessen Horowitz领投Netris A轮融资，加速全球AI云运营商对GPU网络自动化与多租户技术的采用"
   },
   {
     "event_type": "service_change",
@@ -341,7 +283,9 @@
     "event_time": "2026-07-05T15:15:14.000Z",
     "disclosed_at": "2026-07-05T15:15:14.000Z",
     "entities": [
-      "EN-ea3bd73e2b506e00"
+      "EN-4347a8471047faa4",
+      "EN-ea3bd73e2b506e00",
+      "EN-5b76e682643efda7"
     ],
     "action": "下线",
     "object": "Llama API 公共预览版",
@@ -350,8 +294,8 @@
     "claim_refs": [
       "CL-fc300cf26339c37e",
       "CL-dd0c08036c9bbbf1",
-      "CL-d05b87243b5fda5c",
-      "CL-801cd17a22cabf09"
+      "CL-60b815ce658fe627",
+      "CL-368028d4325f1c06"
     ],
     "source_refs": [
       "SA-bc7243cfa4f4de85"
@@ -366,7 +310,7 @@
       }
     ],
     "publication_status": "partial",
-    "event_id": "EV-4a8dce3c9fec1bd3",
+    "event_id": "EV-56b9643b245a5ff4",
     "display_title_zh": "Meta 将于明日下线 Llama API 公共预览版"
   }
 ]

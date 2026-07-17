@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"Anthropic 发布新 AI 工具 Mythos，�
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Anthropic 的 Mythos AI 是什么？为何被限制发布？"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Anthropic 的 Mythos AI 是什么？为何被限制发布？

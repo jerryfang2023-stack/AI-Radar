@@ -72,6 +72,10 @@ key_excerpts: [{"type":"company_action","text":"This guide breaks down what it a
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "AI代理在生产环境中的部署：架构、挑战与最佳实践"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # AI Agent Deployment in Production: Architecture, Challenges & Best ...

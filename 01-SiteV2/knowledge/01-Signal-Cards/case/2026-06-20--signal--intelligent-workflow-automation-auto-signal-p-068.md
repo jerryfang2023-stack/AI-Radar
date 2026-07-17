@@ -2,7 +2,7 @@
 id: SIG-20260620-A10
 type: signal_card
 signal_type: case
-title: "Intelligent Workflow Automation - Applied AI"
+title: "智能工作流自动化 - 应用型人工智能"
 date: 2026-06-20
 status: published
 source_title: "Intelligent Workflow Automation - Applied AI"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Intelligent Workflow Automation"
 
 frontend:
-  displayTitle: "Intelligent Workflow Automation - Applied AI"
+  displayTitle: "智能工作流自动化 - 应用型人工智能"
   sourceLinks:
     - "https://www.applied-ai.com/services/workflow-automation/"
 ---
 
-# Intelligent Workflow Automation - Applied AI
+# 智能工作流自动化 - 应用型人工智能
 
 ## 新闻事实
 

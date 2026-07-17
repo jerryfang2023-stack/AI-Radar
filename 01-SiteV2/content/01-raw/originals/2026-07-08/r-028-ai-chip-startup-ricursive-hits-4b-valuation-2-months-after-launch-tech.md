@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-028
 title: "AI chip startup Ricursive hits $4B valuation 2 months after launch | TechCrunch"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "AI 芯片初创公司 Ricursive 成立 2 个月后估值达 40 亿美元"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://techcrunch.com/2026/01/26/ai-chip-startup-ricursive-hits-4b-valuation-two-months-after-launch/"
 canonical_url: "https://techcrunch.com/2026/01/26/ai-chip-startup-ricursive-hits-4b-valuation-two-months-after-launch"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-08T04:39:25.538Z
 theme: ai-hardware-investment-signal
 keyword_group: ai-hardware-investment-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # AI chip startup Ricursive hits $4B valuation 2 months after launch | TechCrunch

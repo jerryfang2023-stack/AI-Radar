@@ -72,6 +72,10 @@ key_excerpts: [{"type":"quote","text":"微软修复了 M365 Copilot 平台一个
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "M365 Copilot 曝最高严重性漏洞，攻击者可窃取 2FA 码"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # M365 Copilot 曝最高严重性漏洞，攻击者可窃取 2FA 码

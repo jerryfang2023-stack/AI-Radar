@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"Your In-house 10X AI Product + Designer 
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "Foundey"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Foundey

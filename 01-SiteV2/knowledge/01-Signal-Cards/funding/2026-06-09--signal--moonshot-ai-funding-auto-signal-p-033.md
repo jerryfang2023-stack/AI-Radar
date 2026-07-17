@@ -58,7 +58,7 @@ frontend:
     - "https://the-decoder.com/moonshot-ai-targets-a-30-billion-valuation-more-than-six-times-its-late-2025-worth"
 ---
 
-# 月之暗面（Moonshot AI）寻求 300 亿美元估值
+# 月之暗面（Moonshot AI）寻求 300 亿美元估值，较 2025 年底增长超 6 倍
 
 ## 新闻事实
 

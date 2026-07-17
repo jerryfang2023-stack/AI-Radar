@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"AI Voice Agent Startup Telli Secures $3
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_zh: "AI语音代理初创公司Telli获360万美元预种子轮融资 - 加拿大创业生态系统"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # AI Voice Agent Startup Telli Secures $3.6M in Pre-Seed Funding - Startup Ecosystem Canada

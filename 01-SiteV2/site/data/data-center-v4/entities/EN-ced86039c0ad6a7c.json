@@ -1,0 +1,163 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 818,
+    "quarantinedEventCount": 58
+  },
+  "entity": {
+    "id": "EN-ced86039c0ad6a7c",
+    "name": "Claude Fable",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-7133e378762edda5"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-use_case-cybersecurity"
+    ],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-06-10",
+    "lastSeen": "2026-06-10",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-7133e378762edda5"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-7133e378762edda5",
+        "dataDate": "2026-06-10",
+        "date": "2026-06-10",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Claude Fable 发布：Anthropic 带来的另一种推理体验",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "id": "cybersecurity",
+            "dimensionName": "应用场景",
+            "name": "网络安全"
+          }
+        ],
+        "entityIds": [
+          "EN-ced86039c0ad6a7c",
+          "EN-c70eca6b0f88f44d"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-use_case-cybersecurity",
+      "name": "网络安全",
+      "nodeType": "use_case",
+      "typeLabel": "应用场景",
+      "valueId": "cybersecurity",
+      "eventIds": [
+        "EV-9ddcfd9f61c25158",
+        "EV-6484904c176aa016",
+        "EV-c85011ca6a0389bf",
+        "EV-0e84a2f49d765ce3",
+        "EV-c81cb21337a9bb98",
+        "EV-9dab7fa55702e561",
+        "EV-53f4f2a34b3ce1b4",
+        "EV-b240fb11e65b018e",
+        "EV-bd508dbe4205774f",
+        "EV-167f50a6f3134bd5",
+        "EV-d07906b648eec63f",
+        "EV-d40a4e1b7a53cabe",
+        "EV-cc3b92fe233953cf",
+        "EV-3b5cb867fdaba28f",
+        "EV-a4b72879f3d73ea4",
+        "EV-1ec24a430911185c",
+        "EV-888b9eb73582e21c",
+        "EV-3ff2a155035d01e7",
+        "EV-482df8a8ef264238",
+        "EV-9110f23a7e60173e",
+        "EV-e792252690f98a22",
+        "EV-491e7b4b506ab3e3",
+        "EV-832fa2db95cfea6e",
+        "EV-68fcce7fde89e5d7",
+        "EV-7133e378762edda5",
+        "EV-c7a2774b07554f5d",
+        "EV-f1418d9e3b1413b7",
+        "EV-2eabd03665cbdef7",
+        "EV-a35a3871bf36fea2"
+      ],
+      "entityIds": [
+        "EN-871e6f4bf723cb1b",
+        "EN-72badbbdbf521cec",
+        "EN-c0cd6e83b6dd78a5",
+        "EN-634561e92b7593c3",
+        "EN-bbdefa2950f49882",
+        "EN-8d4321d936320802",
+        "EN-b5738c169b693bee",
+        "EN-c70eca6b0f88f44d",
+        "EN-7d3194f79e645c42",
+        "EN-96eebba49dbbf422",
+        "EN-a23572554f6c861e",
+        "EN-8652f6cd9088f1fa",
+        "EN-fb2a436a76aa9fde",
+        "EN-9fbf261b62c1d7c0",
+        "EN-ea87a2bd84296f73",
+        "EN-4094a2b7125c7564",
+        "EN-cbc62794911ff31b",
+        "EN-7839fb10a8f14c70",
+        "EN-fab30471ea65d627",
+        "EN-c4941bfc97ac7c2d",
+        "EN-3a7bd3e2360a3d29",
+        "EN-2c063f604e634100",
+        "EN-03b974cdbd22fe32",
+        "EN-ac123e56b0168ec2",
+        "EN-784c7cd63a83ccaa",
+        "EN-b50e6e7659f1018e",
+        "EN-8de7e44229714152",
+        "EN-db68703d8d719bd0",
+        "EN-52fc33ae4d101a5d",
+        "EN-5ce177312903c604",
+        "EN-272d6a7a0db89710",
+        "EN-d8494bb34d6ddc43",
+        "EN-9f15bb7e29e191eb",
+        "EN-c8185a1a8a6595ad",
+        "EN-3a13916345b60fad",
+        "EN-ced86039c0ad6a7c",
+        "EN-b59c577ed73536c6",
+        "EN-842a7da99bd249d4"
+      ],
+      "fdeIds": [
+        "FDE-f34ca7b021eae900",
+        "FDE-4edaa833d41055bd"
+      ],
+      "hardwareIds": [],
+      "firstSeen": "2026-04-16",
+      "lastSeen": "2026-07-17"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}

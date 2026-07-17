@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"A University of Cambridge spin-out comp
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "大学衍生企业获融资，提升AI能效"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # University spin-out secures funding to improve AI energy efficiency ...

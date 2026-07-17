@@ -1,11 +1,47 @@
 [
   {
+    "event_type": "product_release",
+    "event_status": "announced",
+    "event_time": "2026-07-12T00:44:43.000Z",
+    "disclosed_at": "2026-07-12T00:44:43.000Z",
+    "entities": [
+      "EN-7d3194f79e645c42",
+      "EN-047bdfce48c28cfc"
+    ],
+    "action": "product_release",
+    "object": "OpenAI GPT-5.6 Sol Ultra 一小时证明 50 年图论猜想",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-b8b6f05da157ac45",
+      "CL-29f2a5426067b4cc",
+      "CL-ff7f24e6d9029a4a",
+      "CL-2351ba0e84f7e705"
+    ],
+    "source_refs": [
+      "SA-b9277e4181d8d7ff"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-b9277e4181d8d7ff",
+        "disclosed_at": "2026-07-12T00:44:43.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-d7d8fcd0694a590f",
+    "display_title_zh": "OpenAI GPT-5.6 Sol Ultra 一小时证明 50 年图论猜想"
+  },
+  {
     "event_type": "lawsuit_settlement",
     "event_status": "completed",
     "event_time": "2026-07-11T06:56:20.000Z",
     "disclosed_at": "2026-07-11T06:56:20.000Z",
     "entities": [
       "EN-3a7bd3e2360a3d29",
+      "EN-50537dab76505dfc",
       "EN-7d3194f79e645c42"
     ],
     "action": "起诉",
@@ -71,7 +107,7 @@
     ],
     "publication_status": "verified",
     "event_id": "EV-236cbc2d64f0c455",
-    "display_title_zh": "Upscale AI 完成 1.9 亿美元 A-1 轮融资，总融资额达 5 亿美元"
+    "display_title_zh": "高端AI公司Upscale AI将A轮融资扩大1.9亿美元，总融资额达5亿美元"
   },
   {
     "event_type": "model_release",
@@ -79,7 +115,9 @@
     "event_time": "2026-07-11T09:03:26.000Z",
     "disclosed_at": "2026-07-11T09:03:26.000Z",
     "entities": [
-      "EN-8afd897b5b887b06"
+      "EN-8afd897b5b887b06",
+      "EN-96eebba49dbbf422",
+      "EN-4d8ee3ec190ebf35"
     ],
     "action": "发布世界基础模型",
     "object": "Orca，不预测 token 而建模世界下一状态",
@@ -88,8 +126,8 @@
     "claim_refs": [
       "CL-b40da776a8cd0ce7",
       "CL-94b09f30f734236f",
-      "CL-45b1565355412342",
-      "CL-9e6aa233b33391e4"
+      "CL-fc1b5992b93828e1",
+      "CL-2cd264593aa3c5c5"
     ],
     "source_refs": [
       "SA-f47c1f501f0f4dd2"
@@ -108,46 +146,13 @@
     "display_title_zh": "北京智源发布世界基础模型 Orca，不预测 token 而建模世界下一状态"
   },
   {
-    "event_type": "model_release",
-    "event_status": "completed",
-    "event_time": "2026-07-12T00:46:13.000Z",
-    "disclosed_at": "2026-07-12T00:46:13.000Z",
-    "entities": [
-      "EN-8f71c4871a160172"
-    ],
-    "action": "发布技术白皮书：以可定制模型",
-    "object": "权重构建以人为本的 AI",
-    "metrics": [],
-    "locations": [],
-    "claim_refs": [
-      "CL-4e418114683ce5f4",
-      "CL-98d6224c1149e5c3",
-      "CL-ae2682c6e29350be",
-      "CL-3a2016946e6ba83f"
-    ],
-    "source_refs": [
-      "SA-dc71682cfac72ab7"
-    ],
-    "conflicts": [],
-    "missing_fields": [],
-    "update_history": [
-      {
-        "source_ref": "SA-dc71682cfac72ab7",
-        "disclosed_at": "2026-07-12T00:46:13.000Z",
-        "status": "completed"
-      }
-    ],
-    "publication_status": "verified",
-    "event_id": "EV-b148f4df9dc65c3a",
-    "display_title_zh": "Thinking Machines Lab 发布技术白皮书：以可定制模型权重构建以人为本的 AI"
-  },
-  {
     "event_type": "product_release",
     "event_status": "completed",
     "event_time": "2026-07-11T08:01:09.000Z",
     "disclosed_at": "2026-07-11T08:01:09.000Z",
     "entities": [
-      "EN-7d3194f79e645c42"
+      "EN-7d3194f79e645c42",
+      "EN-6a50fbf0b970c03a"
     ],
     "action": "发布",
     "object": "\"并非一切顺利\"，紧急修复用户体验和成本问题",
@@ -181,6 +186,7 @@
     "event_time": "2026-07-11T11:01:54.000Z",
     "disclosed_at": "2026-07-11T11:01:54.000Z",
     "entities": [
+      "EN-143a82384f59112c",
       "EN-bbdefa2950f49882"
     ],
     "action": "推出",
@@ -206,8 +212,43 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-db1d74f0bfcc1b04",
+    "event_id": "EV-ac8f8581cd1ca75d",
     "display_title_zh": "谷歌 Voice 推出个人付费套餐：每月 10 美元起，Gemini 纪要功能首次下放"
+  },
+  {
+    "event_type": "product_release",
+    "event_status": "announced",
+    "event_time": "2026-07-12T02:23:53.000Z",
+    "disclosed_at": "2026-07-12T02:23:53.000Z",
+    "entities": [
+      "EN-6f21a653c48f4f19",
+      "EN-4dbe391b8fcf977a"
+    ],
+    "action": "product_release",
+    "object": "努比亚倪飞谈 AI 智能体手机：下半场从\"功能叠加\"走向\"原生智能体\"",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-d6d43a162247197b",
+      "CL-61b3d2020e55f161",
+      "CL-e12fc9f136adc287",
+      "CL-08e9f3624aa2bbe6"
+    ],
+    "source_refs": [
+      "SA-3799b400fcd66601"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-3799b400fcd66601",
+        "disclosed_at": "2026-07-12T02:23:53.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-7256017056b81bbe",
+    "display_title_zh": "努比亚倪飞谈 AI 智能体手机：下半场从\"功能叠加\"走向\"原生智能体\""
   },
   {
     "event_type": "deployment",
@@ -246,67 +287,22 @@
   {
     "event_type": "model_release",
     "event_status": "completed",
-    "event_time": "2026-07-11T08:28:12.000Z",
-    "disclosed_at": "2026-07-11T08:28:12.000Z",
-    "entities": [
-      "EN-ea3bd73e2b506e00",
-      "EN-7d3194f79e645c42",
-      "EN-c70eca6b0f88f44d"
-    ],
-    "action": "发布 Muse Spark 1.1 模型",
-    "object": "Meta 发布 Muse Spark 1.1 模型",
-    "metrics": [
-      "$0.26 ",
-      "$0.37 ",
-      "$0.89 ",
-      "94 million",
-      "141 million"
-    ],
-    "locations": [],
-    "claim_refs": [
-      "CL-681b7cac54d16703",
-      "CL-e4cf87a6f81382e2",
-      "CL-b84a41db1eb19f09",
-      "CL-06e2509ea1a38ac5"
-    ],
-    "source_refs": [
-      "SA-27c70c1a001c8bf4"
-    ],
-    "conflicts": [],
-    "missing_fields": [
-      "object"
-    ],
-    "update_history": [
-      {
-        "source_ref": "SA-27c70c1a001c8bf4",
-        "disclosed_at": "2026-07-11T08:28:12.000Z",
-        "status": "completed"
-      }
-    ],
-    "publication_status": "verified",
-    "event_id": "EV-ebe02c213368afae",
-    "display_title_zh": "Meta 发布 Muse Spark 1.1 模型"
-  },
-  {
-    "event_type": "model_release",
-    "event_status": "completed",
     "event_time": "2026-07-12T03:42:29.000Z",
     "disclosed_at": "2026-07-12T03:42:29.000Z",
     "entities": [
-      "EN-2c348893efb2316e"
+      "EN-2c348893efb2316e",
+      "EN-f77d48bcb475d189",
+      "EN-44a9bf3b11abea5c"
     ],
     "action": "发布 Step Edge 端侧模型",
     "object": "全家桶",
-    "metrics": [
-      "400%",
-      "90%"
-    ],
+    "metrics": [],
     "locations": [],
     "claim_refs": [
       "CL-257e63d8454919b6",
-      "CL-0635e17da2d7593a",
-      "CL-a04a905d15e05e41",
-      "CL-256286ab80313edc"
+      "CL-8306c7840f559010",
+      "CL-cac59cf17d5304e8",
+      "CL-f9fe92db57e2480f"
     ],
     "source_refs": [
       "SA-8d4d62cfcc68a7b4"
@@ -325,11 +321,48 @@
     "display_title_zh": "阶跃星辰发布 Step Edge 端侧模型全家桶"
   },
   {
-    "event_type": "lawsuit_settlement",
+    "event_type": "product_release",
     "event_status": "announced",
+    "event_time": "2026-07-11T07:33:08.000Z",
+    "disclosed_at": "2026-07-11T07:33:08.000Z",
+    "entities": [
+      "EN-c70eca6b0f88f44d",
+      "EN-3a13916345b60fad"
+    ],
+    "action": "product_release",
+    "object": "11天Claude Fable 5写超100万行代码：Rust重构JavaScript运行时Bun",
+    "metrics": [
+      "16.5 万"
+    ],
+    "locations": [],
+    "claim_refs": [
+      "CL-c6d5adbd817032dc",
+      "CL-a907b3daf6043287",
+      "CL-be4de1bf47ea13bd"
+    ],
+    "source_refs": [
+      "SA-8cc883b806cd12bd"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-8cc883b806cd12bd",
+        "disclosed_at": "2026-07-11T07:33:08.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-730a2f95a698a96d",
+    "display_title_zh": "11天Claude Fable 5写超100万行代码：Rust重构JavaScript运行时Bun"
+  },
+  {
+    "event_type": "lawsuit_settlement",
+    "event_status": "completed",
     "event_time": "2026-07-11T23:21:57.000Z",
     "disclosed_at": "2026-07-11T23:21:57.000Z",
     "entities": [
+      "EN-e104840db7bf075d",
       "EN-3a7bd3e2360a3d29",
       "EN-7d3194f79e645c42"
     ],
@@ -352,12 +385,83 @@
       {
         "source_ref": "SA-866bebfd50085a1f",
         "disclosed_at": "2026-07-11T23:21:57.000Z",
+        "status": "completed"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-10e841ab47d2b1f1",
+    "display_title_zh": "彭博社揭秘苹果起诉 OpenAI 内幕：前员工一句\"哈哈\"成窃密关键"
+  },
+  {
+    "event_type": "product_release",
+    "event_status": "announced",
+    "event_time": "2026-07-11T07:14:57.000Z",
+    "disclosed_at": "2026-07-11T07:14:57.000Z",
+    "entities": [
+      "EN-7d3194f79e645c42",
+      "EN-7839fb10a8f14c70"
+    ],
+    "action": "product_release",
+    "object": "OpenAI 称 GPT-5.6 Sol 可化身研究员，后训练 Luna AI 模型",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-1c774cfcd38f6d6e",
+      "CL-0332ecead125e958",
+      "CL-91b0ba775f5cf13a",
+      "CL-4aa091613f76bd7f"
+    ],
+    "source_refs": [
+      "SA-203c000308fba049"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-203c000308fba049",
+        "disclosed_at": "2026-07-11T07:14:57.000Z",
         "status": "announced"
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-1b5db76949c2795c",
-    "display_title_zh": "彭博社揭秘苹果起诉 OpenAI 内幕：前员工一句\"哈哈\"成窃密关键"
+    "event_id": "EV-6e7b632ee0b3410d",
+    "display_title_zh": "OpenAI 称 GPT-5.6 Sol 可化身研究员，后训练 Luna AI 模型"
+  },
+  {
+    "event_type": "product_release",
+    "event_status": "announced",
+    "event_time": "",
+    "disclosed_at": "2026-07-12T09:55:36.802Z",
+    "entities": [
+      "EN-4757c80052ae2b3f",
+      "EN-4d8f3ef9d13d6777",
+      "EN-d736115a934212d4",
+      "EN-d7acd28717af7078"
+    ],
+    "action": "Launches",
+    "object": "'ZenseAI.AgentMesh' to Accelerate Enterprise AI Adoption at Scale – Company Announcement - FT.com",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-c8af52ead25dfa23"
+    ],
+    "source_refs": [
+      "SA-6bcf28df4caa5f34"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "event_time"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-6bcf28df4caa5f34",
+        "disclosed_at": "2026-07-12T09:55:36.802Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "partial",
+    "event_id": "EV-a685bd05ec7ed3ba",
+    "display_title_zh": "Zensar Technologies 推出 'ZenseAI.AgentMesh'，加速企业级 AI 规模化应用"
   },
   {
     "event_type": "deployment",
@@ -375,7 +479,9 @@
     ],
     "claim_refs": [
       "CL-b5c608edfee2739b",
-      "CL-369f8526a48640d5"
+      "CL-369f8526a48640d5",
+      "CL-c47c35926b2a2cbf",
+      "CL-39c4748cbaeb0eff"
     ],
     "source_refs": [
       "SA-acaf15bb3dee519f"
@@ -400,6 +506,7 @@
     "disclosed_at": "2026-07-12T02:37:22.000Z",
     "entities": [
       "EN-3a7bd3e2360a3d29",
+      "EN-50537dab76505dfc",
       "EN-7d3194f79e645c42"
     ],
     "action": "起诉",
@@ -411,8 +518,8 @@
     "claim_refs": [
       "CL-ffa41b6cdf707f2c",
       "CL-b1f9c6be892f4d12",
-      "CL-3a55d3635ea4e6f4",
-      "CL-bf8d5a0e607f6d14"
+      "CL-2c4794e2daff2a3f",
+      "CL-417af930abc71f1d"
     ],
     "source_refs": [
       "SA-9cfadfea998727a6"

@@ -1,7 +1,7 @@
 [
   {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "",
     "disclosed_at": "2026-05-23T04:13:32.690Z",
     "entities": [
@@ -18,33 +18,35 @@
       "CL-c34371db7b592779",
       "CL-18c35f543234716d",
       "CL-44e34a775df7b107",
-      "CL-4e26bfcfa651b799",
+      "CL-27267465948e9333",
       "CL-4b28299c3771f8c0",
       "CL-43aa08c90030cbc8",
       "CL-691b194f018c100b",
-      "CL-e688871bb2d46d50"
+      "CL-bc76183bf9a469ca"
     ],
     "source_refs": [
       "SA-bf211b03e67dff64",
       "SA-3a3301572b851684"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-bf211b03e67dff64",
         "disclosed_at": "2026-05-23T04:13:32.690Z",
-        "status": "announced"
+        "status": "completed"
       },
       {
         "source_ref": "SA-3a3301572b851684",
         "disclosed_at": "2026-05-23T04:13:32.985Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
     "event_id": "EV-4596181c26d7f672",
-    "display_title_zh": "Davis 完成 550 万美元 种子前轮融资"
+    "display_title_zh": "Davis 筹集 550 万美元预种子轮 - Balderton"
   },
   {
     "event_type": "funding",
@@ -52,6 +54,7 @@
     "event_time": "",
     "disclosed_at": "2026-05-23T04:13:32.701Z",
     "entities": [
+      "EN-864e7f949b17c9b1",
       "EN-4d748ebd71af03a7"
     ],
     "action": "Raises",
@@ -71,7 +74,9 @@
       "SA-2b810e0c08df3b1f"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-2b810e0c08df3b1f",
@@ -80,16 +85,18 @@
       }
     ],
     "publication_status": "partial",
-    "event_id": "EV-74344d86ce9081b7",
-    "display_title_zh": "Accenture 完成 1.1 亿美元融资"
+    "event_id": "EV-bbab0dff2f55a4f6",
+    "display_title_zh": "Netomi从Accenture Ventures、Adobe Ventures和WndrCo融资1.1亿美元，用于在全球最复杂环境中部署代理型客户体验，打造AI嵌入的数字体验"
   },
   {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "",
     "disclosed_at": "2026-05-23T04:13:32.714Z",
     "entities": [
-      "EN-7d3194f79e645c42"
+      "EN-3e665817a41133c2",
+      "EN-7d3194f79e645c42",
+      "EN-96eebba49dbbf422"
     ],
     "action": "raises",
     "object": "huge $65M seed for enterprise AI agent startup",
@@ -101,31 +108,36 @@
     "claim_refs": [
       "CL-1787cec9020688c4",
       "CL-10714caf05337f88",
+      "CL-29e413c7327d39be",
       "CL-8aaaab52aa66d1c7"
     ],
     "source_refs": [
       "SA-11d41090259ea6b3"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time",
+      "display_title_zh"
+    ],
     "update_history": [
       {
         "source_ref": "SA-11d41090259ea6b3",
         "disclosed_at": "2026-05-23T04:13:32.714Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-7dac684a33062b7f",
-    "display_title_zh": "OpenAI 完成 6500 万美元 种子轮融资"
+    "event_id": "EV-7add33b4c74dbf1a",
+    "display_title_zh": ""
   },
   {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "",
     "disclosed_at": "2026-05-23T04:13:32.730Z",
     "entities": [
-      "EN-58433553ed68884b"
+      "EN-58433553ed68884b",
+      "EN-96eebba49dbbf422"
     ],
     "action": "raises",
     "object": "$40M to help enterprises move beyond isolated AI assistants - SiliconANGLE",
@@ -145,58 +157,64 @@
       "SA-52f8cda089ab8f85"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-52f8cda089ab8f85",
         "disclosed_at": "2026-05-23T04:13:32.730Z",
-        "status": "announced"
-      }
-    ],
-    "publication_status": "verified",
-    "event_id": "EV-3b1613cedea7dad4",
-    "display_title_zh": "Multiplayer AI startup Dust 完成 4000 万美元 B 轮融资"
-  },
-  {
-    "event_type": "funding",
-    "event_status": "completed",
-    "event_time": "",
-    "disclosed_at": "2026-05-23T04:13:32.817Z",
-    "entities": [
-      "EN-8147e6fed86d42c1"
-    ],
-    "action": "Raised",
-    "object": "€1.6M in Weeks. Meet Cato, the AI Rewriting Italian Public Procurement - Startup Reporter",
-    "metrics": [
-      "€500 billion",
-      "€1.6 million"
-    ],
-    "locations": [],
-    "claim_refs": [
-      "CL-b026c78c078f874f",
-      "CL-a8c927e4fb8a8dde",
-      "CL-5ec6835b9edd80af",
-      "CL-1b3a8fc70194b6b6"
-    ],
-    "source_refs": [
-      "SA-339482f06c0d532c"
-    ],
-    "conflicts": [],
-    "missing_fields": [],
-    "update_history": [
-      {
-        "source_ref": "SA-339482f06c0d532c",
-        "disclosed_at": "2026-05-23T04:13:32.817Z",
         "status": "completed"
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-94e8711cecfe6149",
-    "display_title_zh": "OPPO 完成 5000 亿欧元 种子前轮融资"
+    "event_id": "EV-3b1613cedea7dad4",
+    "display_title_zh": "多人在线AI初创公司Dust获4000万美元融资，助力企业突破孤立AI助手局限"
+  },
+  {
+    "event_type": "product_release",
+    "event_status": "announced",
+    "event_time": "",
+    "disclosed_at": "2026-05-23T04:13:32.769Z",
+    "entities": [
+      "EN-96eebba49dbbf422",
+      "EN-f475981105d2acbd",
+      "EN-ce31f92c521b7b08"
+    ],
+    "action": "open-source",
+    "object": "AI models - SiliconANGLE",
+    "metrics": [
+      "$20M",
+      "$20 million"
+    ],
+    "locations": [],
+    "claim_refs": [
+      "CL-6b5a7a02c537b32e",
+      "CL-4d3226bfb67eac47",
+      "CL-4a7aba5c5b345c7d",
+      "CL-5e39cfad058f0146"
+    ],
+    "source_refs": [
+      "SA-d2d8319adda2f85e"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "event_time"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-d2d8319adda2f85e",
+        "disclosed_at": "2026-05-23T04:13:32.769Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-0cb98302768c2e0a",
+    "display_title_zh": "Featherless.ai获2000万美元融资，用于扩展开源AI模型的无服务器托管服务"
   },
   {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "",
     "disclosed_at": "2026-05-23T04:13:32.822Z",
     "entities": [
@@ -212,14 +230,15 @@
     ],
     "locations": [
       "US",
+      "Europe",
       "India",
       "Singapore"
     ],
     "claim_refs": [
       "CL-9a2ab59ce466381e",
       "CL-ef9358ebe6757c2b",
-      "CL-c52d393cb9ae3355",
-      "CL-c149e013e0466c78",
+      "CL-b657361d75230933",
+      "CL-a07228b75b5036b6",
       "CL-fe10b289ec107360",
       "CL-221484f2730625a8",
       "CL-09c9e800264974d3",
@@ -230,97 +249,144 @@
       "SA-d8a516fbfec637e2"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-a0e6abf83d53882d",
         "disclosed_at": "2026-05-23T04:13:32.822Z",
-        "status": "announced"
+        "status": "completed"
       },
       {
         "source_ref": "SA-d8a516fbfec637e2",
         "disclosed_at": "2026-05-23T04:13:32.849Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
     "event_id": "EV-c0921550f102695d",
-    "display_title_zh": "FORMAS.AI 完成 398 万美元 种子前轮融资"
+    "display_title_zh": "FORMAS.AI 完成398万美元超额认购预种子轮融资，打造面向建筑行业的AI原生设计工作空间"
   },
   {
-    "event_type": "product_release",
+    "event_type": "partnership",
     "event_status": "announced",
     "event_time": "",
-    "disclosed_at": "2026-05-23T04:13:32.889Z",
+    "disclosed_at": "2026-05-23T04:13:32.833Z",
     "entities": [
-      "EN-9fbf261b62c1d7c0"
+      "EN-6bd8fab90eb8e022",
+      "EN-b0532e1af75cc4ab"
     ],
-    "action": "Launches",
-    "object": "a Combined Marketplace for Cloud Solutions, AI Apps and Agents - The New Stack",
-    "metrics": [],
+    "action": "Partnership",
+    "object": "for AI Startups | Fractional Product & UX Design | Poplab",
+    "metrics": [
+      "$2,900 "
+    ],
     "locations": [],
     "claim_refs": [
-      "CL-741e4816ae738da6",
-      "CL-c9aa2518d7529a03",
-      "CL-d6ec89f5386a38f6",
-      "CL-f75ea5adb20117d4"
+      "CL-fe5c37fc71ddfe76",
+      "CL-c35b52c8d0347ed5",
+      "CL-f2c044784b53b4a1",
+      "CL-d40b9fd3a1255a12"
     ],
     "source_refs": [
-      "SA-93e8ea1570ff076b"
+      "SA-bcb292334e98c350"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time",
+      "display_title_zh"
+    ],
     "update_history": [
       {
-        "source_ref": "SA-93e8ea1570ff076b",
-        "disclosed_at": "2026-05-23T04:13:32.889Z",
+        "source_ref": "SA-bcb292334e98c350",
+        "disclosed_at": "2026-05-23T04:13:32.833Z",
         "status": "announced"
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-d88eba63d4c84281",
-    "display_title_zh": "Microsoft 发布 a Combined Marketplace for Cloud Solutions"
+    "event_id": "EV-4b4943ce006aeb80",
+    "display_title_zh": ""
+  },
+  {
+    "event_type": "deployment",
+    "event_status": "completed",
+    "event_time": "",
+    "disclosed_at": "2026-05-23T04:13:32.874Z",
+    "entities": [],
+    "action": "Deployed",
+    "object": "Designer: Embedded Brand for AI Startups",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-25c1d2e40e98e31f",
+      "CL-5f8431a9af8d2db2",
+      "CL-9ef349119c358bc2",
+      "CL-8590a6a1b96853a9"
+    ],
+    "source_refs": [
+      "SA-abbb39b3a41611d2"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "entities",
+      "event_time"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-abbb39b3a41611d2",
+        "disclosed_at": "2026-05-23T04:13:32.874Z",
+        "status": "completed"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-eb02cdf96fb66377",
+    "display_title_zh": "Forward Deployed Designer：为AI初创公司嵌入品牌"
   },
   {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "",
     "disclosed_at": "2026-05-23T04:13:32.930Z",
     "entities": [
-      "EN-2b6e51bec93e86c1"
+      "EN-8dfa7ee544d661eb",
+      "EN-96eebba49dbbf422"
     ],
     "action": "Raises",
     "object": "$13 Million Seed Led by Bessemer Venture",
     "metrics": [
       "$13 Million",
-      "$13 million"
+      "$13 million",
+      "60%"
     ],
     "locations": [],
     "claim_refs": [
       "CL-07ef4c2669829f11",
       "CL-62c0a754b6513d84",
-      "CL-b6ff33b319fd88ff",
-      "CL-a0485f29fe2dde2a"
+      "CL-b69efb093973f71a",
+      "CL-5d30f7d8442c9d17"
     ],
     "source_refs": [
       "SA-c25b090ab1874018"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-c25b090ab1874018",
         "disclosed_at": "2026-05-23T04:13:32.930Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-ef7402351b6b37bd",
-    "display_title_zh": "Google DeepMind 完成 1300 万美元 种子轮融资"
+    "event_id": "EV-59f4561c5243eb98",
+    "display_title_zh": "Illoca 获1300万美元种子轮融资，由Bessemer Venture领投"
   },
   {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "",
     "disclosed_at": "2026-05-23T04:13:32.997Z",
     "entities": [
@@ -343,17 +409,19 @@
       "SA-8cb198de0dd42cde"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-8cb198de0dd42cde",
         "disclosed_at": "2026-05-23T04:13:32.997Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
     "event_id": "EV-70a994b9339f92e7",
-    "display_title_zh": "Fractile 完成 2.2 亿美元融资"
+    "display_title_zh": "Fractile 融资2.2亿美元，打造下一代推理硬件"
   },
   {
     "event_type": "funding",
@@ -361,6 +429,7 @@
     "event_time": "",
     "disclosed_at": "2026-05-23T04:13:33.026Z",
     "entities": [
+      "EN-240389f4b730bad4",
       "EN-7d3194f79e645c42",
       "EN-c70eca6b0f88f44d"
     ],
@@ -382,7 +451,9 @@
       "SA-83b92b4b4df84ab0"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-83b92b4b4df84ab0",
@@ -391,12 +462,12 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-06fd0cc175652354",
-    "display_title_zh": "OpenAI 完成 2000 万美元 A 轮融资"
+    "event_id": "EV-1abf0d076d30ec6d",
+    "display_title_zh": "AMD与空客支持Featherless.ai的2000万美元A轮融资，助力开源AI基础设施"
   },
   {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "",
     "disclosed_at": "2026-05-23T04:13:33.078Z",
     "entities": [
@@ -424,25 +495,28 @@
       "SA-a5837f123c0e99ad"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-a5837f123c0e99ad",
         "disclosed_at": "2026-05-23T04:13:33.078Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
     "event_id": "EV-2083b9eda52a3f76",
-    "display_title_zh": "Lio 完成 3000 万美元 A 轮融资"
+    "display_title_zh": "Lio 获3000万美元A轮融资，将代理式AI引入企业采购"
   },
   {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "",
     "disclosed_at": "2026-05-23T04:13:33.153Z",
     "entities": [
-      "EN-38a3c50b7c1f9635"
+      "EN-38a3c50b7c1f9635",
+      "EN-2a920347dfcf07a7"
     ],
     "action": "Raises",
     "object": "$12.5M to Tackle the Operational Complexity of the Modern Grid",
@@ -460,17 +534,19 @@
       "SA-ab7bd303af033e6e"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-ab7bd303af033e6e",
         "disclosed_at": "2026-05-23T04:13:33.153Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "partial",
     "event_id": "EV-3902d8bd5da40a20",
-    "display_title_zh": "Texture 完成 1250 万美元 A 轮融资"
+    "display_title_zh": "Texture 获 1250 万美元融资，应对现代电网运营复杂性"
   },
   {
     "event_type": "model_release",
@@ -479,8 +555,11 @@
     "disclosed_at": "2026-05-23T02:41:20.000Z",
     "entities": [
       "EN-9fbf261b62c1d7c0",
+      "EN-12b0c8b376b8375e",
       "EN-7d3194f79e645c42",
-      "EN-bbdefa2950f49882"
+      "EN-047364b9be67f665",
+      "EN-bbdefa2950f49882",
+      "EN-10fce287b4b1464c"
     ],
     "action": "推出 Fara1.5 系列浏览器 AI 智能体模型",
     "object": "，72% 任务成功率超 OpenAI Operator",
@@ -493,6 +572,8 @@
     "locations": [],
     "claim_refs": [
       "CL-4c50bbc497deaee1",
+      "CL-e47629bdfee086e4",
+      "CL-25b9389df0e0f06f",
       "CL-eece65ce191fb7c6"
     ],
     "source_refs": [

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"Harvey AI — the $3B legal-AI company b
 theme: enterprise-ai-implementation-signal
 keyword_group: enterprise-ai-implementation-signal
 copyright_note: local research archive only
+title_zh: "Harvey AI的前线部署工程师：这家估值30亿美元的法律AI领导者如何在大律所内部部署 | 博客 | Perspective AI"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Harvey AI's Forward Deployed Engineers: How the $3B Legal AI Leader Deploys Inside BigLaw | Blog | Perspective AI

@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-087
 title: "Anthropic launches Cowork, a Claude Desktop agent that works in your files — no coding required"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "Anthropic推出Cowork，一款无需编程即可在文件中工作的Claude Desktop代理"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://venturebeat.com/technology/anthropic-launches-cowork-a-claude-desktop-agent-that-works-in-your-files-no"
 canonical_url: "https://venturebeat.com/technology/anthropic-launches-cowork-a-claude-desktop-agent-that-works-in-your-files-no"
 source_name: "VentureBeat AI"
@@ -78,6 +78,7 @@ fact_extraction_completed_at: 2026-07-04T04:35:48.300Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Anthropic launches Cowork, a Claude Desktop agent that works in your files — no coding required

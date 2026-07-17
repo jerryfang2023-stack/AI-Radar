@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-019
 title: "Google 因 AI 训练再遭出版商集体诉讼"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "Google 因 AI 训练再遭出版商集体诉讼"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://techcrunch.com/2026/07/14/google-faces-another-ai-training-lawsuit-from-major-publishers"
 canonical_url: "https://techcrunch.com/2026/07/14/google-faces-another-ai-training-lawsuit-from-major-publishers"
 source_name: "TechCrunch：AI（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-15T04:28:37.642Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Google 因 AI 训练再遭出版商集体诉讼

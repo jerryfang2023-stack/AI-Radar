@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"F2 Raises $24M to Build AI for Private 
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only
+title_zh: "F2 获2400万美元融资，为私募信贷构建AI"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # F2 Raises $24M to Build AI for Private Credit

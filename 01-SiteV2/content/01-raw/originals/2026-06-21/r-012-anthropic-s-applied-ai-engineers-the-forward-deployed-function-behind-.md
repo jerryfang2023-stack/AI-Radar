@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"Anthropic calls its forward-deployed eng
 theme: enterprise-ai-implementation-signal
 keyword_group: enterprise-ai-implementation-signal
 copyright_note: local research archive only
+title_zh: "Anthropic 应用 AI 工程师：Claude 企业战略背后的前沿部署职能"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Anthropic's Applied AI Engineers: The Forward-Deployed Function Behind Claude's Enterprise Strategy | Blog | Perspective AI

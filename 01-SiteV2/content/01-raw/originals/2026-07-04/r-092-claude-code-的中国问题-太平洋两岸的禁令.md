@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-092
 title: "Claude Code 的中国问题：太平洋两岸的禁令"
 title_zh: "Claude Code 的中国问题：太平洋两岸的禁令"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://the-decoder.com/claude-codes-complicated-china-problem-involves-bans-on-both-sides-of-the-pacific"
 canonical_url: "https://the-decoder.com/claude-codes-complicated-china-problem-involves-bans-on-both-sides-of-the-pacific"
 source_name: "The Decoder：AI News（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-04T04:50:50.846Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Claude Code 的中国问题：太平洋两岸的禁令

@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 818,
+    "quarantinedEventCount": 58
+  },
+  "entity": {
+    "id": "EN-4699374f30941481",
+    "name": "Travelport",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-bb9ba11acf104db1"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-06-27",
+    "lastSeen": "2026-06-27",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [
+        "EV-bb9ba11acf104db1"
+      ],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-bb9ba11acf104db1",
+        "dataDate": "2026-06-27",
+        "date": "2026-06-27",
+        "eventType": "partnership",
+        "eventTypeLabel": "合作",
+        "eventGroup": "商业合作",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Travelport、Cognizant与Anthropic合作，为AI时代赋能旅游技术",
+        "displayTags": [],
+        "entityIds": [
+          "EN-4699374f30941481",
+          "EN-c70eca6b0f88f44d",
+          "EN-96eebba49dbbf422",
+          "EN-b0532e1af75cc4ab"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [
+    {
+      "id": "FDE-e6644cd7a8e6df59",
+      "eventId": "EV-bb9ba11acf104db1",
+      "dataDate": "2026-06-27",
+      "date": "2026-06-27",
+      "title": "Travelport、Cognizant与Anthropic合作，为AI时代赋能旅游技术",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Travelport",
+      "vendor": "Intel",
+      "industry": "未披露",
+      "useCase": "Power Travel Technology for the AI Era",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "The work with Travelport reflects Cognizant's AI Builder strategy: bringing industry context, end-to-end systems integration and day-to-day operational accountability to help enterprises move from AI experimentation to production at scale. Anthropic is a nodal partner within Cognizant's global AI ecosystem, and this work extends the strategic partnership between Cognizant and Anthropic that was announced in November 2025."
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://prnewswire.com/news-releases/travelport-cognizant-and-anthropic-collaborate-to-power-travel-technology-for-the-ai-era-302782597.html",
+      "entityIds": [
+        "EN-4699374f30941481",
+        "EN-c70eca6b0f88f44d",
+        "EN-96eebba49dbbf422",
+        "EN-b0532e1af75cc4ab"
+      ]
+    }
+  ],
+  "hardware": []
+}

@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-020
 title: "Aina Raises $5.5 Mn From Info Edge, Others To Build AI Hardware Interface"
 title_zh: "Aina 从 Info Edge 等投资方获得 550 万美元融资，用于打造 AI 硬件界面"
-title_translation_status: translated
-title_translation_method: business-rule_title_translation
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://inc42.com/buzz/aina-raises-5-5-mn-from-info-edge-ventures-360-one-asset-to-build-ai-native-interfaces/"
 canonical_url: "https://inc42.com/buzz/aina-raises-5-5-mn-from-info-edge-ventures-360-one-asset-to-build-ai-native-interfaces"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-17T04:40:16.907Z
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Aina Raises $5.5 Mn From Info Edge, Others To Build AI Hardware Interface

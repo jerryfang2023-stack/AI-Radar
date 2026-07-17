@@ -69,6 +69,10 @@ key_excerpts: [{"type":"funding","text":"NEW YORK, March 5, 2026 /PRNewswire/ --
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Lio 获3000万美元A轮融资，将代理式AI引入企业采购"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Lio Raises $30M Series A to Bring Agentic AI to Enterprise Procurement

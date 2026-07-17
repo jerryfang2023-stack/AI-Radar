@@ -2,7 +2,7 @@
 id: SIG-20260520-06
 type: signal_card
 signal_type: funding
-title: "Nexus 融资 430 万美元，帮助业务团队部署 AI Agents"
+title: "Nexus 获430万美元种子轮融资，助力业务团队部署"
 date: 2026-05-20
 status: draft
 asset_level: candidate
@@ -37,7 +37,7 @@ signal_owner: "Nexus"
 watch_reason: "继续看 Nexus 是否公布业务团队使用场景、模板市场或治理能力。"
 
 frontend:
-  displayTitle: "Nexus 融资 430 万美元，帮助业务团队部署 AI Agents"
+  displayTitle: "Nexus 获430万美元种子轮融资，助力业务团队部署"
   eventLine: "Nexus 宣布 430 万美元种子轮融资，目标是让业务团队部署 AI Agents。"
   whyWatch: "这类产品把 Agent 从工程团队推向业务团队，关键会变成权限、流程和可复用模板。"
   businessMeaning: "影响的是业务部门能否自己配置流程，以及 IT 团队如何管理访问和风险。"
@@ -70,7 +70,7 @@ opportunity_signals:
   missing_fields: ["specific_task", "product_form", "adoption_evidence"]
 ---
 
-# Nexus 融资 430 万美元，帮助业务团队部署 AI Agents
+# Nexus 获430万美元种子轮融资，助力业务团队部署
 
 ## 信号底稿
 

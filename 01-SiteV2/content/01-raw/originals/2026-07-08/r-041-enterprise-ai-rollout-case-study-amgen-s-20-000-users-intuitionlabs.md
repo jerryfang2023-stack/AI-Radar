@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-041
 title: "Enterprise AI Rollout Case Study: Amgen's 20,000 Users | IntuitionLabs"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "企业AI推广案例研究：安进公司20,000名用户 | IntuitionLabs"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://intuitionlabs.ai/articles/enterprise-ai-rollout-case-study-amgen"
 canonical_url: "https://intuitionlabs.ai/articles/enterprise-ai-rollout-case-study-amgen"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-08T04:39:25.710Z
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Enterprise AI Rollout Case Study: Amgen's 20,000 Users | IntuitionLabs

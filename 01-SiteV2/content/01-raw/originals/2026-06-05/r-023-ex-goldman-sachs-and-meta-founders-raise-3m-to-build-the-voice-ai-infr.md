@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"# Ex-Goldman Sachs and Meta founders ra
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only
+title_zh: "前高盛与Meta创始人筹集300万美元，打造全球科技巨头忽视的语音AI基础设施"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Ex-Goldman Sachs and Meta founders raise $3M to build the voice AI infrastructure global tech giants overlooked — TFN

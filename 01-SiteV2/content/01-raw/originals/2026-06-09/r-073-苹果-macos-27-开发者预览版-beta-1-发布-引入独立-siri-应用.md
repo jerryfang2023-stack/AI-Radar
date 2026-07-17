@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"苹果今日向 Mac 电脑推送
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "苹果 macOS 27 开发者预览版 Beta 1 发布，引入独立 Siri 应用"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 苹果 macOS 27 开发者预览版 Beta 1 发布，引入独立 Siri 应用

@@ -1,5 +1,43 @@
 [
   {
+    "event_type": "funding",
+    "event_status": "withdrawn",
+    "event_time": "2026-06-17T23:34:30.000Z",
+    "disclosed_at": "2026-06-17T23:34:30.000Z",
+    "entities": [
+      "EN-11869ad3f165ddaf",
+      "EN-6f7ac1823da81d2e",
+      "EN-9c8ae69b84f21a2e"
+    ],
+    "action": "融资",
+    "object": "；微信支付AI专属卡；Android 17正式版",
+    "metrics": [
+      "4000 亿",
+      "510 亿"
+    ],
+    "locations": [],
+    "claim_refs": [
+      "CL-2db27ad5dc141afd",
+      "CL-7b56507635ff4545",
+      "CL-2fb9defd741e6889"
+    ],
+    "source_refs": [
+      "SA-4ab5250eb55db7ce"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-4ab5250eb55db7ce",
+        "disclosed_at": "2026-06-17T23:34:30.000Z",
+        "status": "withdrawn"
+      }
+    ],
+    "publication_status": "withdrawn",
+    "event_id": "EV-27b69ea604475b72",
+    "display_title_zh": "IT早报：DeepSeek 4000亿元融资；微信支付AI专属卡；Android 17正式版"
+  },
+  {
     "event_type": "product_release",
     "event_status": "completed",
     "event_time": "2026-06-17T16:30:09.000Z",
@@ -14,7 +52,9 @@
     ],
     "locations": [],
     "claim_refs": [
-      "CL-7be8fe99bfdf5bcc"
+      "CL-7be8fe99bfdf5bcc",
+      "CL-2d67fc03d2189ee3",
+      "CL-1e8fc573b5bae7b1"
     ],
     "source_refs": [
       "SA-4f8125fedc610612"
@@ -39,7 +79,8 @@
     "disclosed_at": "2026-06-17T18:30:56.000Z",
     "entities": [
       "EN-c70eca6b0f88f44d",
-      "EN-bbdefa2950f49882"
+      "EN-bbdefa2950f49882",
+      "EN-2a920347dfcf07a7"
     ],
     "action": "加入",
     "object": "Frontier 碳去除联盟，成首家 AI 初创成员",
@@ -119,6 +160,8 @@
     "locations": [],
     "claim_refs": [
       "CL-bc344fccd49405f3",
+      "CL-975dc348b5fbfaf5",
+      "CL-fa9f2a3fe7d47b26",
       "CL-ffda282197ca410d"
     ],
     "source_refs": [
@@ -140,50 +183,14 @@
     "display_title_zh": "Pramaana Labs 获 2700 万美元种子轮融资，用形式化验证提升 AI 可靠性"
   },
   {
-    "event_type": "service_change",
-    "event_status": "announced",
-    "event_time": "2026-06-17T17:50:46.000Z",
-    "disclosed_at": "2026-06-17T17:50:46.000Z",
-    "entities": [
-      "EN-c70eca6b0f88f44d"
-    ],
-    "action": "下线",
-    "object": "Anthropic 的 Claude Fable 5 和 Mythos 5 因美国出口管制下线",
-    "metrics": [],
-    "locations": [
-      "United States"
-    ],
-    "claim_refs": [
-      "CL-688c58ef1fe4eff6",
-      "CL-90b614ee4c2ce731",
-      "CL-19f9b36a424c273d",
-      "CL-09833d2e8ec3a30b"
-    ],
-    "source_refs": [
-      "SA-a3d64960524d3e0e"
-    ],
-    "conflicts": [],
-    "missing_fields": [
-      "object"
-    ],
-    "update_history": [
-      {
-        "source_ref": "SA-a3d64960524d3e0e",
-        "disclosed_at": "2026-06-17T17:50:46.000Z",
-        "status": "announced"
-      }
-    ],
-    "publication_status": "verified",
-    "event_id": "EV-56f80f42cf6a7096",
-    "display_title_zh": "Anthropic 的 Claude Fable 5 和 Mythos 5 因美国出口管制下线"
-  },
-  {
     "event_type": "model_release",
     "event_status": "completed",
     "event_time": "2026-06-17T17:30:00.000Z",
     "disclosed_at": "2026-06-17T17:30:00.000Z",
     "entities": [
-      "EN-c70eca6b0f88f44d"
+      "EN-1d79127e9d90e89b",
+      "EN-c70eca6b0f88f44d",
+      "EN-bc1fc5140040180e"
     ],
     "action": "发布GLM-5.2，百万token上下文下的开源编码模型",
     "object": "逼近闭源标杆",
@@ -191,7 +198,9 @@
     "locations": [],
     "claim_refs": [
       "CL-dd02a198256fca4d",
-      "CL-43fc0a73a9b8ff50"
+      "CL-43fc0a73a9b8ff50",
+      "CL-d6e06437f5f8f3c1",
+      "CL-43da95ca3ce02aac"
     ],
     "source_refs": [
       "SA-adf567515307df8d"
@@ -206,7 +215,7 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-745adb0e9f7a75a2",
+    "event_id": "EV-534dc9add1c0cc35",
     "display_title_zh": "智谱AI发布GLM-5.2，百万token上下文下的开源编码模型逼近闭源标杆"
   },
   {
@@ -216,7 +225,8 @@
     "disclosed_at": "2026-06-17T22:07:41.000Z",
     "entities": [
       "EN-c70eca6b0f88f44d",
-      "EN-3a7bd3e2360a3d29"
+      "EN-3a7bd3e2360a3d29",
+      "EN-e61ac98ebb45d0db"
     ],
     "action": "发布",
     "object": "Claude Code v2.1.181 发布",
@@ -248,46 +258,13 @@
   },
   {
     "event_type": "product_release",
-    "event_status": "completed",
-    "event_time": "2026-06-17T16:08:36.794Z",
-    "disclosed_at": "2026-06-17T16:08:36.794Z",
-    "entities": [
-      "EN-bbdefa2950f49882",
-      "EN-ea3bd73e2b506e00"
-    ],
-    "action": "发布",
-    "object": "Agentic Resource Discovery（ARD）开放规范",
-    "metrics": [],
-    "locations": [],
-    "claim_refs": [
-      "CL-1454e3b20b2473c9",
-      "CL-5da980acb81369b1",
-      "CL-738d002677848724",
-      "CL-a810849976de487d"
-    ],
-    "source_refs": [
-      "SA-ee0dad2775cdb5ec"
-    ],
-    "conflicts": [],
-    "missing_fields": [],
-    "update_history": [
-      {
-        "source_ref": "SA-ee0dad2775cdb5ec",
-        "disclosed_at": "2026-06-17T16:08:36.794Z",
-        "status": "completed"
-      }
-    ],
-    "publication_status": "verified",
-    "event_id": "EV-7808c274ce0aa0bf",
-    "display_title_zh": "谷歌发布Agentic Resource Discovery（ARD）开放规范"
-  },
-  {
-    "event_type": "product_release",
     "event_status": "announced",
     "event_time": "",
     "disclosed_at": "2026-06-18T06:41:08.947Z",
     "entities": [
-      "EN-b0532e1af75cc4ab"
+      "EN-5e18acda295236e9",
+      "EN-b0532e1af75cc4ab",
+      "EN-e97edd12a2b8befa"
     ],
     "action": "launches",
     "object": "Kolibri, an agentic platform, to speed up enterprise deployment of agentic AI and end “pilot purgatory”",
@@ -303,7 +280,9 @@
       "SA-550cb8c56c4b70fd"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-550cb8c56c4b70fd",
@@ -312,8 +291,8 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-14401cfc102c6511",
-    "display_title_zh": "Rime 发布 Kolibri"
+    "event_id": "EV-173d08643472aee5",
+    "display_title_zh": "Konecta推出Kolibri智能代理平台，加速企业部署代理型AI，终结“试点炼狱”"
   },
   {
     "event_type": "product_release",
@@ -321,7 +300,9 @@
     "event_time": "",
     "disclosed_at": "2026-06-18T06:41:09.003Z",
     "entities": [
-      "EN-9fbf261b62c1d7c0"
+      "EN-3fb921805aa44727",
+      "EN-9fbf261b62c1d7c0",
+      "EN-d2f4e09cb01afa3c"
     ],
     "action": "release",
     "object": "your AI app or agent on Microsoft Marketplace",
@@ -337,7 +318,9 @@
       "SA-c08ea2b0dd067b8c"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-c08ea2b0dd067b8c",
@@ -346,8 +329,45 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-a313df5691ef51f6",
-    "display_title_zh": "Microsoft 发布 your AI app or agent on Microsoft Marketplace"
+    "event_id": "EV-8495af729cd05f62",
+    "display_title_zh": "在微软市场上发布和部署您的AI应用或代理"
+  },
+  {
+    "event_type": "partnership",
+    "event_status": "announced",
+    "event_time": "",
+    "disclosed_at": "2026-06-18T06:41:09.017Z",
+    "entities": [
+      "EN-e4ffb7bd879b89da",
+      "EN-c70eca6b0f88f44d"
+    ],
+    "action": "Alliance",
+    "object": "Expansion | Evermx",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-9c8888e20105c782",
+      "CL-4ed1fb104ac850c3",
+      "CL-29ea504d09fdf455",
+      "CL-4b271e3595ef84f8"
+    ],
+    "source_refs": [
+      "SA-e46eadd7bcb0ee1a"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "event_time"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-e46eadd7bcb0ee1a",
+        "disclosed_at": "2026-06-18T06:41:09.017Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-9884a0317e1e6ae7",
+    "display_title_zh": "PwC 向 30,000 名员工部署 Claude，扩大与 Anthropic 的重大联盟"
   },
   {
     "event_type": "funding",
@@ -374,7 +394,9 @@
       "SA-79040909c1c77a3d"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-79040909c1c77a3d",
@@ -384,7 +406,83 @@
     ],
     "publication_status": "verified",
     "event_id": "EV-8bbc23e53e799d9d",
-    "display_title_zh": "Willow 完成 700 万美元 种子轮融资"
+    "display_title_zh": "Willow 获 700 万美元融资，打造企业 AI 代理治理未来"
+  },
+  {
+    "event_type": "deployment",
+    "event_status": "planned",
+    "event_time": "",
+    "disclosed_at": "2026-06-18T06:41:09.168Z",
+    "entities": [
+      "EN-cd65acdabcbbd55c",
+      "EN-b0532e1af75cc4ab"
+    ],
+    "action": "Deploy",
+    "object": "and Scale with Confidence",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-79882c8bebd91013",
+      "CL-025c2acc6dd3eb95",
+      "CL-22c93593d830dda5",
+      "CL-00b40adc2e884bb0"
+    ],
+    "source_refs": [
+      "SA-9c486c0de56fca6c"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "event_time"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-9c486c0de56fca6c",
+        "disclosed_at": "2026-06-18T06:41:09.168Z",
+        "status": "planned"
+      }
+    ],
+    "publication_status": "partial",
+    "event_id": "EV-06b294f255c0087e",
+    "display_title_zh": "治理型AI代理：如何自信部署与规模化"
+  },
+  {
+    "event_type": "deployment",
+    "event_status": "announced",
+    "event_time": "",
+    "disclosed_at": "2026-06-18T06:41:09.216Z",
+    "entities": [
+      "EN-8399c0081be3fd2b",
+      "EN-8147e6fed86d42c1"
+    ],
+    "action": "Pilot",
+    "object": "Resource Requests to Advance AI Research",
+    "metrics": [],
+    "locations": [
+      "US"
+    ],
+    "claim_refs": [
+      "CL-8d0a749f823c6153",
+      "CL-df55bab523a74370",
+      "CL-2dceb43645a5452b",
+      "CL-ff939818fe0632a5"
+    ],
+    "source_refs": [
+      "SA-784f2e0e72e726b0"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "event_time"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-784f2e0e72e726b0",
+        "disclosed_at": "2026-06-18T06:41:09.216Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-33b218942b1deab7",
+    "display_title_zh": "NAIRR 试点资源请求推动 AI 研究进展"
   },
   {
     "event_type": "product_release",
@@ -392,7 +490,8 @@
     "event_time": "",
     "disclosed_at": "2026-06-18T06:41:09.261Z",
     "entities": [
-      "EN-7d3194f79e645c42"
+      "EN-7d3194f79e645c42",
+      "EN-af53dbc3e443f7a9"
     ],
     "action": "launches",
     "object": "AgentKit to help developers build and ship AI agents",
@@ -410,7 +509,9 @@
       "SA-93771286b459e87b"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-93771286b459e87b",
@@ -420,7 +521,7 @@
     ],
     "publication_status": "verified",
     "event_id": "EV-7f979d0a01e6dffa",
-    "display_title_zh": "OpenAI 发布 AgentKit"
+    "display_title_zh": "OpenAI推出AgentKit，助力开发者构建并部署AI代理"
   },
   {
     "event_type": "organization_people",
@@ -464,7 +565,9 @@
     "event_time": "2026-06-17T13:50:08.000Z",
     "disclosed_at": "2026-06-17T13:50:08.000Z",
     "entities": [
-      "EN-bbdefa2950f49882"
+      "EN-6e7e64cf66f76a04",
+      "EN-bbdefa2950f49882",
+      "EN-6470c8584a9d35d3"
     ],
     "action": "推出",
     "object": "新一代 Google Home 智能音箱：搭载 Gemini AI 助手，售 100 美元",
@@ -489,7 +592,7 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-c3cbf5d7f860c693",
+    "event_id": "EV-dfba03031e5726ad",
     "display_title_zh": "谷歌推出新一代 Google Home 智能音箱：搭载 Gemini AI 助手，售 100 美元"
   },
   {
@@ -527,8 +630,48 @@
     "display_title_zh": "Qt Creator 20 开源跨平台 IDE 发布，支持接入 AI 智能体"
   },
   {
+    "event_type": "model_release",
+    "event_status": "completed",
+    "event_time": "2026-06-17T06:59:02.000Z",
+    "disclosed_at": "2026-06-17T06:59:02.000Z",
+    "entities": [
+      "EN-c147411a9accf922",
+      "EN-7d3194f79e645c42",
+      "EN-d1ad14d4ad57d207",
+      "EN-b269456229397ef3",
+      "EN-f2272e70be63bc65"
+    ],
+    "action": "推出 GPT-Bidi-1 模型",
+    "object": "ChatGPT 语音最大规模升级：OpenAI 正筹备推出 GPT-Bidi-1 模型",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-6d0e84f3ec701d54",
+      "CL-8487e3e6cecb0a37",
+      "CL-5c0db6d40d137cb2",
+      "CL-ba43f9bd410153ff"
+    ],
+    "source_refs": [
+      "SA-64c98afeac817dfc"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "object"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-64c98afeac817dfc",
+        "disclosed_at": "2026-06-17T06:59:02.000Z",
+        "status": "completed"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-f3e11eadfb7c6a4b",
+    "display_title_zh": "ChatGPT 语音最大规模升级：OpenAI 正筹备推出 GPT-Bidi-1 模型"
+  },
+  {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "",
     "disclosed_at": "2026-06-18T06:41:09.314Z",
     "entities": [
@@ -551,17 +694,19 @@
       "SA-842efd4c6943be34"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-842efd4c6943be34",
         "disclosed_at": "2026-06-18T06:41:09.314Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
     "event_id": "EV-8c2fdaad276818b0",
-    "display_title_zh": "INXM 完成 570 万欧元 种子前轮融资"
+    "display_title_zh": "INXM 获570万欧元种子轮融资，弥合企业AI演示与实际运营部署之间的差距"
   },
   {
     "event_type": "product_release",
@@ -569,7 +714,9 @@
     "event_time": "2026-06-17T23:06:58.000Z",
     "disclosed_at": "2026-06-17T23:06:58.000Z",
     "entities": [
-      "EN-7d3194f79e645c42"
+      "EN-76da7c3c08fa8c13",
+      "EN-7d3194f79e645c42",
+      "EN-d1ad14d4ad57d207"
     ],
     "action": "推出",
     "object": "全新定时任务功能，今日起逐步推送",
@@ -594,7 +741,82 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-068a0671fa96b07d",
+    "event_id": "EV-0b6992ae74184d13",
     "display_title_zh": "OpenAI 为 ChatGPT 推出全新定时任务功能，今日起逐步推送"
+  },
+  {
+    "event_type": "product_release",
+    "event_status": "announced",
+    "event_time": "2026-06-18T00:43:26.000Z",
+    "disclosed_at": "2026-06-18T00:43:26.000Z",
+    "entities": [
+      "EN-3a7bd3e2360a3d29",
+      "EN-0502bb9ed34980aa"
+    ],
+    "action": "product_release",
+    "object": "苹果 Xcode 27 核心首次深度集成 AI 智能体：支持自然语言修 Bug、构建 App",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-f7567c47ed360e90",
+      "CL-b796d429ad81aca5",
+      "CL-30b655e8301503f9",
+      "CL-4f2e4c17b2c92312"
+    ],
+    "source_refs": [
+      "SA-4cd346680b734b4c"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-4cd346680b734b4c",
+        "disclosed_at": "2026-06-18T00:43:26.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-eeb687002cac5f4e",
+    "display_title_zh": "苹果 Xcode 27 核心首次深度集成 AI 智能体：支持自然语言修 Bug、构建 App"
+  },
+  {
+    "event_type": "product_release",
+    "event_status": "announced",
+    "event_time": "2026-06-17T07:16:18.000Z",
+    "disclosed_at": "2026-06-17T07:16:18.000Z",
+    "entities": [
+      "EN-c70eca6b0f88f44d",
+      "EN-c857d09db23e6822",
+      "EN-7ec0224e483d913b"
+    ],
+    "action": "product_release",
+    "object": "Claude Code 用户画像：平均每周使用 20 小时，AI 代码修改占 26%",
+    "metrics": [
+      "23.5 万",
+      "40 万",
+      "70%"
+    ],
+    "locations": [],
+    "claim_refs": [
+      "CL-f7f9a46e7662739e",
+      "CL-c6c460440f11105c",
+      "CL-09da470a73f9efc5",
+      "CL-deecb393c84fdad3"
+    ],
+    "source_refs": [
+      "SA-b7f4418ac4c2ff19"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-b7f4418ac4c2ff19",
+        "disclosed_at": "2026-06-17T07:16:18.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-cec69087dc8992e0",
+    "display_title_zh": "Claude Code 用户画像：平均每周使用 20 小时，AI 代码修改占 26%"
   }
 ]

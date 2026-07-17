@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-077
 title: "Nandan Nilekani leaves GP role at Fundamentum as it launches $200M third fund"
-title_zh: "Nandan Nilekani离开Fundamentum的GP职位，推出2亿美元的第三只基金"
-title_translation_status: translated
-title_translation_method: mymemory_title_translation
+title_zh: "Nandan Nilekani 卸任 Fundamentum 普通合伙人职务，该基金推出第三期基金，规模达 2 亿美元"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://techcrunch.com/2026/07/09/nandan-nilekani-leaves-gp-role-at-his-vc-firm-as-it-launches-third-200m-fund/"
 canonical_url: "https://techcrunch.com/2026/07/09/nandan-nilekani-leaves-gp-role-at-his-vc-firm-as-it-launches-third-200m-fund"
 source_name: "TechCrunch AI"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-10T02:00:01.586Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Nandan Nilekani leaves GP role at Fundamentum as it launches $200M third fund

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"6 月 17 日，谷歌正式推送 Androi
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "谷歌推送 Android 17 正式版，深度集成 AI 功能"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 谷歌推送 Android 17 正式版，深度集成 AI 功能

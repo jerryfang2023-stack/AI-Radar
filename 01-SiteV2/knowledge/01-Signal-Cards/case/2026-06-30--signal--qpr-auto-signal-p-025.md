@@ -2,7 +2,7 @@
 id: SIG-20260630-A02
 type: signal_card
 signal_type: case
-title: "Sanofi 如何用 AI 和 Snowflake 建立企业流程挖掘卓越中心"
+title: "赛诺菲携手AI与Snowflake打造企业级流程挖掘卓越中心"
 date: 2026-06-30
 status: published
 source_title: "How Sanofi Built an Enterprise Process Mining Center of Excellence with AI and Snowflake"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Qpr"
 
 frontend:
-  displayTitle: "Sanofi 如何用 AI 和 Snowflake 建立企业流程挖掘卓越中心"
+  displayTitle: "赛诺菲携手AI与Snowflake打造企业级流程挖掘卓越中心"
   sourceLinks:
     - "https://www.qpr.com/blog/how-sanofi-scaled-process-mining-with-ai-and-snowflake"
 ---
 
-# Sanofi 如何用 AI 和 Snowflake 建立企业流程挖掘卓越中心
+# 赛诺菲携手AI与Snowflake打造企业级流程挖掘卓越中心
 
 ## 新闻事实
 

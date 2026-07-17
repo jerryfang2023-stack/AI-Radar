@@ -7,7 +7,7 @@
     "predicate": "funding",
     "object": "$32M to Help Enterprises Succeed With AI",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 1
     },
     "source_span": {
@@ -28,7 +28,7 @@
     "predicate": "funding",
     "object": "$32M to Help Enterprises Succeed With AI",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 2
     },
     "source_span": {
@@ -49,7 +49,7 @@
     "predicate": "funding",
     "object": "$32M to Help Enterprises Succeed With AI",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 3
     },
     "source_span": {
@@ -70,7 +70,7 @@
     "predicate": "funding",
     "object": "$32M to Help Enterprises Succeed With AI",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 4
     },
     "source_span": {
@@ -294,7 +294,7 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-321bacffbd5b9093",
+    "claim_id": "CL-c02cf65e57168c3f",
     "raw_id": "RAW-aed853a95f62acd8",
     "claim_type": "product_release",
     "subject": "Microsoft",
@@ -306,16 +306,16 @@
     },
     "source_span": {
       "raw_id": "RAW-aed853a95f62acd8",
-      "start": 132,
-      "end": 442
+      "start": 105,
+      "end": 131
     },
-    "source_quote": "On Thursday, Microsoft announced a new operating business called Microsoft Frontier Company, focused on delivering successful enterprise AI deployments with Microsoft’s existing AI tools. The project will be backed by a $2.5 billion investment from Microsoft, as well as 6,000 industry and engineering experts.",
+    "source_quote": "6:53 AM PDT · July 2, 2026",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-e7c8b24a2a2281d6",
+    "claim_id": "CL-321bacffbd5b9093",
     "raw_id": "RAW-aed853a95f62acd8",
     "claim_type": "product_release",
     "subject": "Microsoft",
@@ -327,10 +327,10 @@
     },
     "source_span": {
       "raw_id": "RAW-aed853a95f62acd8",
-      "start": 1247,
-      "end": 1536
+      "start": 132,
+      "end": 442
     },
-    "source_quote": "Microsoft’s existing client base will give the new effort a significant head start, as the company has already deployed engineers to much of the Fortune 500. The announcement cites an early partnership with the London Stock Exchange Group, as well as Unilever, Land O’Lakes, and Accenture.",
+    "source_quote": "On Thursday, Microsoft announced a new operating business called Microsoft Frontier Company, focused on delivering successful enterprise AI deployments with Microsoft’s existing AI tools. The project will be backed by a $2.5 billion investment from Microsoft, as well as 6,000 industry and engineering experts.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -441,7 +441,7 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-50fc4c52f3afdb99",
+    "claim_id": "CL-eb590334d0cee5bc",
     "raw_id": "RAW-c52333fe422dc411",
     "claim_type": "product_release",
     "subject": "Microsoft",
@@ -450,6 +450,27 @@
     "qualifiers": {
       "event_status": "announced",
       "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-c52333fe422dc411",
+      "start": 141,
+      "end": 186
+    },
+    "source_quote": "View the LinkedIn Profile of Matthias Bastian",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-50fc4c52f3afdb99",
+    "raw_id": "RAW-c52333fe422dc411",
+    "claim_type": "product_release",
+    "subject": "Microsoft",
+    "predicate": "product_release",
+    "object": "$2.5 billion &quot;Frontier Company&quot; to embed 6,000 AI engineers inside enterprise clients",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
     },
     "source_span": {
       "raw_id": "RAW-c52333fe422dc411",
@@ -470,7 +491,7 @@
     "object": "$2.5 billion &quot;Frontier Company&quot; to embed 6,000 AI engineers inside enterprise clients",
     "qualifiers": {
       "event_status": "announced",
-      "sequence": 3
+      "sequence": 4
     },
     "source_span": {
       "raw_id": "RAW-c52333fe422dc411",
@@ -483,22 +504,148 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-6afebbbd18db945a",
-    "raw_id": "RAW-c52333fe422dc411",
+    "claim_id": "CL-f4fdde2db1597bc8",
+    "raw_id": "RAW-cdcda1f483b3b6f9",
     "claim_type": "product_release",
-    "subject": "Microsoft",
+    "subject": "微软八月将",
     "predicate": "product_release",
-    "object": "$2.5 billion &quot;Frontier Company&quot; to embed 6,000 AI engineers inside enterprise clients",
+    "object": "改版Copilot，合并消费者与企业应用并推出AutoPilot智能体",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-cdcda1f483b3b6f9",
+      "start": 205,
+      "end": 627
+    },
+    "source_quote": "Microsoft is planning yet another overhauled version of Copilot, reportedly set to release in August. According to an internal memo seen by The Information, the company will merge its consumer and enterprise apps into a single app. It will include AI coding tools and new AI agents called \"AutoPilot\" that handle tasks like scheduling and email summaries in the background. Customers will pay extra for the added features.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-c5f7806522082a1c",
+    "raw_id": "RAW-cdcda1f483b3b6f9",
+    "claim_type": "product_release",
+    "subject": "微软八月将",
+    "predicate": "product_release",
+    "object": "改版Copilot，合并消费者与企业应用并推出AutoPilot智能体",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-cdcda1f483b3b6f9",
+      "start": 628,
+      "end": 1045
+    },
+    "source_quote": "Executive Vice President Jacob Andreou wrote in the memo that the team \"stripped out what wasn't working,\" including Copilot Podcasts and Copilot Labs . Copilot should focus on \"real work\" instead of chasing intelligence \"for intelligence's sake,\" being \"optimized for outcomes.\" The app has to \"earn the right to exist,\" he wrote. Anthropic with Claude Code and OpenAI with Codex are working on similar \"super apps.\"",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-5f453decd0023a66",
+    "raw_id": "RAW-cdcda1f483b3b6f9",
+    "claim_type": "product_release",
+    "subject": "微软八月将",
+    "predicate": "product_release",
+    "object": "改版Copilot，合并消费者与企业应用并推出AutoPilot智能体",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-cdcda1f483b3b6f9",
+      "start": 1046,
+      "end": 1439
+    },
+    "source_quote": "Yesterday, Microsoft also announced a new company focused on rolling out AI inside businesses . Microsoft engineers will work directly inside departments to help build AI into workflows. It's an admission that a chatbot alone delivers limited value, or at least value that's hard to measure . Meanwhile, Microsoft and other AI companies still have to justify their billions in AI spending . Ad",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-c6b452ab6a7b8c00",
+    "raw_id": "RAW-9cf068907b7e995a",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "网友反馈 Claude Fable 5 重上架版\"降智\"，严苛 AI 护栏致频繁回退 Opus 4.8",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-9cf068907b7e995a",
+      "start": 322,
+      "end": 460
+    },
+    "source_quote": "IT之家 7 月 4 日消息，科技媒体 bleepingcomputer 昨日（7 月 3 日）发布博文，报道称 Anthropic 本月重新上架 Claude Fable 5 最强模型， 除了额度限制外，多名用户反馈存在“降智”情况，且更频繁回退到 Opus 4.8 模型。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-96212a77c4196fb9",
+    "raw_id": "RAW-9cf068907b7e995a",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "网友反馈 Claude Fable 5 重上架版\"降智\"，严苛 AI 护栏致频繁回退 Opus 4.8",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-9cf068907b7e995a",
+      "start": 461,
+      "end": 507
+    },
+    "source_quote": "Claude Fable 5 于 6 月 30 日解除出口管制，于 7 月 1 日重新上线。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-d4caf6e3c11a2875",
+    "raw_id": "RAW-9cf068907b7e995a",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "网友反馈 Claude Fable 5 重上架版\"降智\"，严苛 AI 护栏致频繁回退 Opus 4.8",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-9cf068907b7e995a",
+      "start": 507,
+      "end": 569
+    },
+    "source_quote": "根据官方公告，Fable 5 当前最多只能使用到用户每周总额度的 50%，且 7 月 7 日后将完全转入按用量积分计费模式。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-0ce4965a43ece2d4",
+    "raw_id": "RAW-9cf068907b7e995a",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "网友反馈 Claude Fable 5 重上架版\"降智\"，严苛 AI 护栏致频繁回退 Opus 4.8",
     "qualifiers": {
       "event_status": "announced",
       "sequence": 4
     },
     "source_span": {
-      "raw_id": "RAW-c52333fe422dc411",
-      "start": 558,
-      "end": 828
+      "raw_id": "RAW-9cf068907b7e995a",
+      "start": 0,
+      "end": 58
     },
-    "source_quote": "According to Judson Althoff , CEO of Microsoft Commercial Business, 6,000 industry and engineering experts will be embedded directly with customers \"to co-design, co-innovate, deploy and continuously improve AI systems at scale based on measurable business outcomes.\" Ad",
+    "source_quote": "网友反馈 Claude Fable 5 重上架版“降智”，严苛 AI 护栏致频繁回退 Opus 4.8 - IT之家",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -546,6 +693,48 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-cec42c78f574f888",
+    "raw_id": "RAW-53cfbfbb58fb45bf",
+    "claim_type": "funding",
+    "subject": "快手旗下AI视频部门Kling",
+    "predicate": "funding",
+    "object": "20亿美元，准备赴港IPO",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-53cfbfbb58fb45bf",
+      "start": 115,
+      "end": 159
+    },
+    "source_quote": "View the LinkedIn Profile of Jonathan Kemper",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-92ca1ae0de8ce735",
+    "raw_id": "RAW-53cfbfbb58fb45bf",
+    "claim_type": "funding",
+    "subject": "快手旗下AI视频部门Kling",
+    "predicate": "funding",
+    "object": "20亿美元，准备赴港IPO",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-53cfbfbb58fb45bf",
+      "start": 402,
+      "end": 635
+    },
+    "source_quote": "CPE, Guofang Investment, BlueFive, Tencent, and Citic Securities are leading the round. More investors could still join, which would push the total to as much as $3 billion. Kuaishou's stake in Kling would then fall to 68.33 percent.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-4985308fe7b9edfe",
     "raw_id": "RAW-d1200ea0e299fe51",
     "claim_type": "model_release",
@@ -588,6 +777,48 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-2b3b2be53b0595b4",
+    "raw_id": "RAW-d1200ea0e299fe51",
+    "claim_type": "model_release",
+    "subject": "桥水基金联合研究：前沿AI",
+    "predicate": "model_release",
+    "object": "模型达84.7%",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-d1200ea0e299fe51",
+      "start": 175,
+      "end": 244
+    },
+    "source_quote": "研究团队从投资分析师的日常工作中提取了六项典型任务，包括判断一篇财经文章对高管层是否具有参考价值、判断央行文件是否预示未来利率变化方向等。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-6604ce518abec179",
+    "raw_id": "RAW-d1200ea0e299fe51",
+    "claim_type": "model_release",
+    "subject": "桥水基金联合研究：前沿AI",
+    "predicate": "model_release",
+    "object": "模型达84.7%",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-d1200ea0e299fe51",
+      "start": 245,
+      "end": 289
+    },
+    "source_quote": "报告指出，这些任务对专业投资者而言非常基础，但他们往往难以用语言清晰描述自己的判断逻辑。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-e97a7a589b9980c1",
     "raw_id": "RAW-dc794cdc8ac26d63",
     "claim_type": "model_release",
@@ -609,6 +840,48 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-0bbdad6779952a81",
+    "raw_id": "RAW-dc794cdc8ac26d63",
+    "claim_type": "model_release",
+    "subject": "英伟达",
+    "predicate": "model_release",
+    "object": "参数方面，该模型总参数为 60B，采用双塔（TwoTower）架构，包括 30B 的自回归模型（AR）/context Tower 和 30B 的扩散 / 降噪 Tower，每个 Tower 激活 3B 模型，128 个可路由专家。",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-dc794cdc8ac26d63",
+      "start": 188,
+      "end": 304
+    },
+    "source_quote": "参数方面，该模型总参数为 60B，采用双塔（TwoTower）架构，包括 30B 的自回归模型（AR）/context Tower 和 30B 的扩散 / 降噪 Tower，每个 Tower 激活 3B 模型，128 个可路由专家。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-be203ee2e7fb516b",
+    "raw_id": "RAW-dc794cdc8ac26d63",
+    "claim_type": "model_release",
+    "subject": "英伟达",
+    "predicate": "model_release",
+    "object": "架构方面，TwoTower 最大的亮点，在于拆分传统扩散语言模型中的网络任务，将文本生成任务中的上下文表示与去噪过程分离到两个独立的神经网络“塔”中。",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-dc794cdc8ac26d63",
+      "start": 305,
+      "end": 380
+    },
+    "source_quote": "架构方面，TwoTower 最大的亮点，在于拆分传统扩散语言模型中的网络任务，将文本生成任务中的上下文表示与去噪过程分离到两个独立的神经网络“塔”中。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-6baa9897903cc3dc",
     "raw_id": "RAW-dc794cdc8ac26d63",
     "claim_type": "model_release",
@@ -617,7 +890,7 @@
     "object": "IT之家 7 月 3 日消息，英伟达昨日（7 月 2 日）发布博文，宣布推出 Nemotron-Labs-TwoTower，是一种基于预训练自回归骨干网络的离散扩散语言模型， 致力于解决大模型 Token 生成速度瓶颈。",
     "qualifiers": {
       "event_status": "announced",
-      "sequence": 2
+      "sequence": 4
     },
     "source_span": {
       "raw_id": "RAW-dc794cdc8ac26d63",
@@ -630,22 +903,169 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-449635d474ab1f3a",
-    "raw_id": "RAW-dc794cdc8ac26d63",
-    "claim_type": "model_release",
-    "subject": "英伟达",
-    "predicate": "model_release",
-    "object": "任务 Nemotron-3-Nano-30B-A3B (AR) Nemotron-Labs-TwoTower (diffusion)",
+    "claim_id": "CL-e1ef06dade7be920",
+    "raw_id": "RAW-598508a5e1b7a883",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "汪滔：Meta 下一代 AI 模型\"西瓜\"已追上 GPT-5.5",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-598508a5e1b7a883",
+      "start": 367,
+      "end": 424
+    },
+    "source_quote": "有用户询问 Meta 何时能推出比肩 Anthropic Claude Opus 的编程模型，汪滔回答：“ 很快。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-7d2c87f196a672db",
+    "raw_id": "RAW-598508a5e1b7a883",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "汪滔：Meta 下一代 AI 模型\"西瓜\"已追上 GPT-5.5",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-598508a5e1b7a883",
+      "start": 515,
+      "end": 545
+    },
+    "source_quote": "OpenAI 今年 4 月发布了性能强大的 GPT-5.5。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-5ff26cfd60e8a5e3",
+    "raw_id": "RAW-598508a5e1b7a883",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "汪滔：Meta 下一代 AI 模型\"西瓜\"已追上 GPT-5.5",
     "qualifiers": {
       "event_status": "announced",
       "sequence": 3
     },
     "source_span": {
-      "raw_id": "RAW-dc794cdc8ac26d63",
-      "start": 535,
-      "end": 601
+      "raw_id": "RAW-598508a5e1b7a883",
+      "start": 597,
+      "end": 628
     },
-    "source_quote": "任务 Nemotron-3-Nano-30B-A3B (AR) Nemotron-Labs-TwoTower (diffusion)",
+    "source_quote": "Meta 在 4 月发布 Muse Spark 系列首款模型。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-8826af3dabfdd756",
+    "raw_id": "RAW-598508a5e1b7a883",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "汪滔：Meta 下一代 AI 模型\"西瓜\"已追上 GPT-5.5",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-598508a5e1b7a883",
+      "start": 94,
+      "end": 199
+    },
+    "source_quote": "两名知情人士称，汪滔在内部全员大会上披露，Meta 下一代 AI 模型 Watermelon（西瓜）已在备受关注的基准测试中 追平 OpenAI 旗舰模型 GPT-5.5 ，不过没有说明具体采用了哪些测试项目。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-232fe29cfa1f1638",
+    "raw_id": "RAW-6b39826d0f5a2474",
+    "claim_type": "product_release",
+    "subject": "Anthropic",
+    "predicate": "product_release",
+    "object": "Anthropic 收紧 Claude Fable 5 最强模型，7 月 7 日从订阅中移除改为 AI 用量计费",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-6b39826d0f5a2474",
+      "start": 355,
+      "end": 473
+    },
+    "source_quote": "IT之家 7 月 3 日消息，科技媒体 bleepingcomputer 昨日（7 月 2 日）发布博文，报道称 Anthropic 公司计划 7 月 7 日后， 从现有订阅中移除访问其 最强模型 Claude Fable 5 权限 。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-c2f80a136c503e9b",
+    "raw_id": "RAW-6b39826d0f5a2474",
+    "claim_type": "product_release",
+    "subject": "Anthropic",
+    "predicate": "product_release",
+    "object": "Anthropic 收紧 Claude Fable 5 最强模型，7 月 7 日从订阅中移除改为 AI 用量计费",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-6b39826d0f5a2474",
+      "start": 814,
+      "end": 945
+    },
+    "source_quote": "该规则落地后引来诸多开发者和用户的争议，Anthropic 的核心工程师 Thariq Shihipar 在 X 平台发布推文，回应称：“随后 7 月 7 日后从订阅中移除 Fable 5 模型，但后续我们计划在容量允许的情况下，尽快将其纳入到现有订阅体系中”。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-abcfff874d9141a5",
+    "raw_id": "RAW-6b39826d0f5a2474",
+    "claim_type": "product_release",
+    "subject": "Anthropic",
+    "predicate": "product_release",
+    "object": "Anthropic 收紧 Claude Fable 5 最强模型，7 月 7 日从订阅中移除改为 AI 用量计费",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-6b39826d0f5a2474",
+      "start": 474,
+      "end": 529
+    },
+    "source_quote": "IT之家曾于 7 月 1 日报道，美国商务部已经撤销针对 Fable 和 Mythos AI 模型的出口限制。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-18954b77fd39ca67",
+    "raw_id": "RAW-6b39826d0f5a2474",
+    "claim_type": "product_release",
+    "subject": "Anthropic",
+    "predicate": "product_release",
+    "object": "Anthropic 收紧 Claude Fable 5 最强模型，7 月 7 日从订阅中移除改为 AI 用量计费",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-6b39826d0f5a2474",
+      "start": 529,
+      "end": 630
+    },
+    "source_quote": "在重新部署规划中，Anthropic 表示将在全球范围内，在 Claude.ai 、Claude Code、Claude Cowork 及 Claude Platform 上提供 Fable 5 服务。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -877,27 +1297,6 @@
       "end": 404
     },
     "source_quote": "IT之家 7 月 3 日消息，科技媒体 Linuxiac 今天（7 月 3 日）发布博文，报道称开源电子书管理工具 Calibre 更新至 9.11 版本，新增将电子书注释导出为独立 HTML 网页的功能。",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-84f992ca3ab26171",
-    "raw_id": "RAW-b369ca2fac8e1b2f",
-    "claim_type": "product_release",
-    "subject": "Calibre",
-    "predicate": "product_release",
-    "object": "Calibre 9.11 发布：支持 HTML 格式导出注释",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 4
-    },
-    "source_span": {
-      "raw_id": "RAW-b369ca2fac8e1b2f",
-      "start": 868,
-      "end": 907
-    },
-    "source_quote": "开源电子书管理工具 Calibre 9.10 发布：升级界面、增强书籍编辑器等",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -1152,6 +1551,48 @@
     "source_quote": "IT之家 7 月 3 日消息，阿里达摩院通过公众号宣布，7 月 3 日（今天），阿里达摩院联合中国人民大学、中国科学院大学等发布首个超导材料发现 AI 智能体 Elements Claw，预测出 6.8 万个可能的超导材料，其中 4 种全新材料已合成并证实存在超导性。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-dce7f3ddb3fd068e",
+    "raw_id": "RAW-1a2530a099bf5996",
+    "claim_type": "product_release",
+    "subject": "阿里达摩院",
+    "predicate": "product_release",
+    "object": "超导材料发现AI智能体Elements Claw",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-1a2530a099bf5996",
+      "start": 145,
+      "end": 189
+    },
+    "source_quote": "目前，国际主流超导数据库 SuperCon 历经数十年积累，仅收录约 2000 种材料。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-ae24dc6d66a8f1d1",
+    "raw_id": "RAW-1a2530a099bf5996",
+    "claim_type": "product_release",
+    "subject": "阿里达摩院",
+    "predicate": "product_release",
+    "object": "超导材料发现AI智能体Elements Claw",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-1a2530a099bf5996",
+      "start": 189,
+      "end": 318
+    },
+    "source_quote": "为此，阿里达摩院发挥 AI for Science 技术优势，联合中国人民大学、中国科学院大学等机构研发 ElementsClaw， 不仅可预测材料是否具有超导性，更能像人类材料学家一样查阅文献、评估合成可行性、设计实验方案 ，大幅提升材料发现效率和成功率。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
     "verification_status": "accepted"
   },
   {
@@ -1512,45 +1953,24 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-bda588bbf5a53349",
+    "claim_id": "CL-ed6ed836cddf3eef",
     "raw_id": "RAW-274b4e71bbb7c84d",
     "claim_type": "deployment",
     "subject": "Isambard-AI, the UK’s Most Powerful AI Supercomputer,",
     "predicate": "deployment",
-    "object": "At a ribbon-cutting ceremony at the Bristol Centre for Supercomputing (BriCS), leaders today unveiled Isambard-AI, the most powerful AI supercomputer ever built in the U.K.",
+    "object": "July 17, 2025 by Brian Caulfield",
     "qualifiers": {
       "event_status": "announced",
       "sequence": 4
     },
     "source_span": {
       "raw_id": "RAW-274b4e71bbb7c84d",
-      "start": 510,
-      "end": 682
+      "start": 291,
+      "end": 323
     },
-    "source_quote": "At a ribbon-cutting ceremony at the Bristol Centre for Supercomputing (BriCS), leaders today unveiled Isambard-AI, the most powerful AI supercomputer ever built in the U.K.",
+    "source_quote": "July 17, 2025 by Brian Caulfield",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-1dfc98408b776b6e",
-    "raw_id": "RAW-1205c825e84d9358",
-    "claim_type": "deployment",
-    "subject": "Salesforce",
-    "predicate": "deployment",
-    "object": "new Slackbot AI agent as it battles Microsoft and Google in workplace AI",
-    "qualifiers": {
-      "event_status": "announced",
-      "sequence": 1
-    },
-    "source_span": {
-      "raw_id": "RAW-1205c825e84d9358",
-      "start": 0,
-      "end": 500
-    },
-    "source_quote": "Salesforce on Tuesday launched an entirely rebuilt version of Slackbot, the company&#x27;s workplace assistant, transforming it from a simple notification tool into what executives describe as a fully powered AI agent capable of searching enterprise data, drafting documents, and taking action on behalf of employees.The new Slackbot, now generally available to Business+ and Enterprise+ customers, is Salesforce&#x27;s most aggressive move yet to position Slack at the center of the emerging &quot;a",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.9,
     "verification_status": "accepted"
   },
   {
@@ -1570,27 +1990,6 @@
       "end": 500
     },
     "source_quote": "Anthropic released Cowork on Monday, a new AI agent capability that extends the power of its wildly successful Claude Code tool to non-technical users — and according to company insiders, the team built the entire feature in approximately a week and a half, largely using Claude Code itself.The launch marks a major inflection point in the race to deliver practical AI agents to mainstream users, positioning Anthropic to compete not just with OpenAI and Google in conversational AI, but with Microso",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.9,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-036ae15c7a7bdf03",
-    "raw_id": "RAW-57f427828fbca60f",
-    "claim_type": "product_release",
-    "subject": "Claude Code v2.1.201",
-    "predicate": "product_release",
-    "object": "：Claude Sonnet 5 会话不再使用对话中系统角色进行约束提醒",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 1
-    },
-    "source_span": {
-      "raw_id": "RAW-57f427828fbca60f",
-      "start": 482,
-      "end": 575
-    },
-    "source_quote": "Claude Sonnet 5 sessions no longer use the mid-conversation system role for harness reminders",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.9,
     "verification_status": "accepted"
@@ -1617,85 +2016,169 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-d62b373896a8e05b",
-    "raw_id": "RAW-deabeead4a96ec66",
-    "claim_type": "policy_regulation",
-    "subject": "Claude Code 的中国问题：太平洋两岸的",
-    "predicate": "policy_regulation",
-    "object": "Claude Code's complicated China problem involves bans on both sides of the Pacific",
+    "claim_id": "CL-a5dfd6ae744288b0",
+    "raw_id": "RAW-27e48b07974ca2a7",
+    "claim_type": "product_release",
+    "subject": "AI",
+    "predicate": "product_release",
+    "object": "AI 交互革命：Claude Code 系统提示词精简 80%，示例约束反而遏制表现",
     "qualifiers": {
       "event_status": "announced",
       "sequence": 1
     },
     "source_span": {
-      "raw_id": "RAW-deabeead4a96ec66",
+      "raw_id": "RAW-27e48b07974ca2a7",
       "start": 0,
-      "end": 82
+      "end": 120
     },
-    "source_quote": "Claude Code's complicated China problem involves bans on both sides of the Pacific",
+    "source_quote": "IT之家 7 月 3 日消息，科技媒体 The Decoder 昨日（7 月 2 日）发布博文，报道称 Anthropic 表示为迎合 Claude Fable 5 模型， 进一步精简 Claude Code 系统提示词，降幅达到 80%。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.9,
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-ee19fbedd9251476",
-    "raw_id": "RAW-deabeead4a96ec66",
-    "claim_type": "policy_regulation",
-    "subject": "Claude Code 的中国问题：太平洋两岸的",
-    "predicate": "policy_regulation",
-    "object": "Claude Code's complicated China problem involves bans on both sides of the Pacific",
+    "claim_id": "CL-38bf355ed1c4c354",
+    "raw_id": "RAW-27e48b07974ca2a7",
+    "claim_type": "product_release",
+    "subject": "AI",
+    "predicate": "product_release",
+    "object": "AI 交互革命：Claude Code 系统提示词精简 80%，示例约束反而遏制表现",
     "qualifiers": {
       "event_status": "announced",
       "sequence": 2
     },
     "source_span": {
-      "raw_id": "RAW-deabeead4a96ec66",
-      "start": 83,
-      "end": 165
+      "raw_id": "RAW-27e48b07974ca2a7",
+      "start": 121,
+      "end": 204
     },
-    "source_quote": "Claude Code's complicated China problem involves bans on both sides of the Pacific",
+    "source_quote": "Anthropic 技术人员塔里克 · 希希帕尔（Tariq Shihipar）表示，引导 AI 模型方式已发生根本性转变，更多的提示词和示例，已无法带来更好的结果。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-af2ee581cc459fae",
-    "raw_id": "RAW-deabeead4a96ec66",
-    "claim_type": "policy_regulation",
-    "subject": "Claude Code 的中国问题：太平洋两岸的",
-    "predicate": "policy_regulation",
-    "object": "Anthropic is trying to block Chinese companies like ByteDance and Ant Financial from accessing Claude Code, but they're getting around the restrictions through VPNs and overseas subsidiaries. Alibaba, meanwhile, has banned its own employees from using the tool after hidden code was found that could identify Chinese users.",
+    "claim_id": "CL-fb8cedb7443d76bf",
+    "raw_id": "RAW-27e48b07974ca2a7",
+    "claim_type": "product_release",
+    "subject": "AI",
+    "predicate": "product_release",
+    "object": "AI 交互革命：Claude Code 系统提示词精简 80%，示例约束反而遏制表现",
     "qualifiers": {
       "event_status": "announced",
       "sequence": 3
     },
     "source_span": {
-      "raw_id": "RAW-deabeead4a96ec66",
-      "start": 166,
-      "end": 489
+      "raw_id": "RAW-27e48b07974ca2a7",
+      "start": 205,
+      "end": 285
     },
-    "source_quote": "Anthropic is trying to block Chinese companies like ByteDance and Ant Financial from accessing Claude Code, but they're getting around the restrictions through VPNs and overseas subsidiaries. Alibaba, meanwhile, has banned its own employees from using the tool after hidden code was found that could identify Chinese users.",
+    "source_quote": "他表示：“我们最近发现，包括 Fable 5 在内，新模型要更简洁的系统提示，用户输入的示例往往会限制其表现，事实上此类新模型所掌握的示例，要比用户更具想象力。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-f4981cbe0b8c9d5c",
-    "raw_id": "RAW-deabeead4a96ec66",
-    "claim_type": "policy_regulation",
-    "subject": "Claude Code 的中国问题：太平洋两岸的",
-    "predicate": "policy_regulation",
-    "object": "Anthropic is trying to block Chinese companies like ByteDance and Ant Financial from accessing Claude Code, but they're getting around the restrictions through VPNs and overseas subsidiaries. Alibaba, meanwhile, has banned its own employees from using the tool after hidden code was found that could identify Chinese users.",
+    "claim_id": "CL-4bfd38483c946266",
+    "raw_id": "RAW-27e48b07974ca2a7",
+    "claim_type": "product_release",
+    "subject": "AI",
+    "predicate": "product_release",
+    "object": "AI 交互革命：Claude Code 系统提示词精简 80%，示例约束反而遏制表现",
     "qualifiers": {
       "event_status": "announced",
       "sequence": 4
     },
     "source_span": {
-      "raw_id": "RAW-deabeead4a96ec66",
-      "start": 490,
-      "end": 813
+      "raw_id": "RAW-27e48b07974ca2a7",
+      "start": 441,
+      "end": 491
     },
-    "source_quote": "Anthropic is trying to block Chinese companies like ByteDance and Ant Financial from accessing Claude Code, but they're getting around the restrictions through VPNs and overseas subsidiaries. Alibaba, meanwhile, has banned its own employees from using the tool after hidden code was found that could identify Chinese users.",
+    "source_quote": "Claude Code 是一个由 AI 驱动的编码助手，可帮助你构建功能、修复错误和自动化开发任务。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-af2b034f0eb6aa26",
+    "raw_id": "RAW-b679d1dfe5074385",
+    "claim_type": "product_release",
+    "subject": "Claude",
+    "predicate": "product_release",
+    "object": "Claude Fable 5 在 RLI 基准测试中达成 16.1% 自动化率，刷新纪录",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-b679d1dfe5074385",
+      "start": 352,
+      "end": 427
+    },
+    "source_quote": "在 RLI（2025 年 10 月底发布）上线短短 8 个月内，最初最高得分为 2.5%，Claude Fable 5 模型的得分达到了 16.1%。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-308882ef1d436dbd",
+    "raw_id": "RAW-b679d1dfe5074385",
+    "claim_type": "product_release",
+    "subject": "Claude",
+    "predicate": "product_release",
+    "object": "Claude Fable 5 在 RLI 基准测试中达成 16.1% 自动化率，刷新纪录",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-b679d1dfe5074385",
+      "start": 428,
+      "end": 501
+    },
+    "source_quote": "在具体项目表现上，例如在珠宝设计项目中，Fable 5 的戒指设计在质量上显著优于此前 AI 模型，不过实际交付物和人工设计产品依然存在一定差距。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-67ab3b5eb0dac08c",
+    "raw_id": "RAW-b679d1dfe5074385",
+    "claim_type": "product_release",
+    "subject": "Claude",
+    "predicate": "product_release",
+    "object": "Claude Fable 5 在 RLI 基准测试中达成 16.1% 自动化率，刷新纪录",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-b679d1dfe5074385",
+      "start": 502,
+      "end": 541
+    },
+    "source_quote": "在 2D 动画广告、建筑平面图等项目上，新模型的视觉质量和模型准确度均有改善。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-d88322cbdb52c4eb",
+    "raw_id": "RAW-b679d1dfe5074385",
+    "claim_type": "product_release",
+    "subject": "Claude",
+    "predicate": "product_release",
+    "object": "Claude Fable 5 在 RLI 基准测试中达成 16.1% 自动化率，刷新纪录",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-b679d1dfe5074385",
+      "start": 0,
+      "end": 114
+    },
+    "source_quote": "IT之家 7 月 3 日消息，AI 安全中心（CAIS）于 7 月 1 日更新远程劳动指数（RLI），指出 AI 远程劳动自动化率正在经历快速跃升，Claude Fable 5 模型自动化率达到 16.1%，刷新该基准测试纪录。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"

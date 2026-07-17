@@ -2,7 +2,7 @@
 id: SIG-20260621-A08
 type: signal_card
 signal_type: product_service
-title: "State of RL/Reasoning] IMO/IOI Gold, OpenAI o3/GPT-5, and Cursor Composer — Ashvin Nair, Cursor"
+title: "[RL/推理现状] IMO/IOI金牌、OpenAI o3/GPT-5与Cursor Composer — Ashvin Nair, Cursor"
 date: 2026-06-21
 status: published
 source_title: "State of RL/Reasoning] IMO/IOI Gold, OpenAI o3/GPT-5, and Cursor Composer — Ashvin Nair, Cursor"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Latent"
 
 frontend:
-  displayTitle: "State of RL/Reasoning] IMO/IOI Gold, OpenAI o3/GPT-5, and Cursor Composer — Ashvin Nair, Cursor"
+  displayTitle: "[RL/推理现状] IMO/IOI金牌、OpenAI o3/GPT-5与Cursor Composer — Ashvin Nair, Cursor"
   sourceLinks:
     - "https://www.latent.space/p/state-of-rlreasoning-imoioi-gold"
 ---
 
-# State of RL/Reasoning] IMO/IOI Gold, OpenAI o3/GPT-5, and Cursor Composer — Ashvin Nair, Cursor
+# [RL/推理现状] IMO/IOI金牌、OpenAI o3/GPT-5与Cursor Composer — Ashvin Nair, Cursor
 
 ## 新闻事实
 

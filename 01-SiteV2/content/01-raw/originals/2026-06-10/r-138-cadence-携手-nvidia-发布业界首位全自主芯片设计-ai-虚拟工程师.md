@@ -72,6 +72,10 @@ key_excerpts: [{"type":"supporting_context","text":"Cadence（楷登）在 COMPU
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Cadence 携手 NVIDIA 发布业界首位全自主芯片设计 AI 虚拟工程师"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Cadence 携手 NVIDIA 发布业界首位全自主芯片设计 AI 虚拟工程师

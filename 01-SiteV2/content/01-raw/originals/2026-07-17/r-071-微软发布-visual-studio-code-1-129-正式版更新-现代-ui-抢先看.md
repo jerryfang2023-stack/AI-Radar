@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-071
 title: "微软发布 Visual Studio Code 1.129 正式版更新，现代 UI 抢先看"
 title_zh: "微软发布 Visual Studio Code 1.129 正式版更新，现代 UI 抢先看"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/977/469.htm"
 canonical_url: "https://ithome.com/0/977/469.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-17T04:40:17.234Z
 theme: outside-core-exploration
 keyword_group: outside-core-exploration
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 微软发布 Visual Studio Code 1.129 正式版更新，现代 UI 抢先看

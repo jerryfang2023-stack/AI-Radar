@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-034
 title: "AI Agent Platform for Finance Ops Case Study | Uvik Software"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "AI代理平台金融运营案例研究 | Uvik软件"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://uvik.net/project/ai-agent-platform-finance-operations-automation/"
 canonical_url: "https://uvik.net/project/ai-agent-platform-finance-operations-automation"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-06T02:21:26.912Z
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # AI Agent Platform for Finance Ops Case Study | Uvik Software

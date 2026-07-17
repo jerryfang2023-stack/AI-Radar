@@ -2,7 +2,7 @@
 id: SIG-20260622-A12
 type: signal_card
 signal_type: case
-title: "Best AI deployment platforms in 2026 记录企业应用场景：地产开发和建筑设计流程"
+title: "2026年最佳AI部署平台 | 博客 — Northflank"
 date: 2026-06-22
 status: published
 source_title: "Best AI deployment platforms in 2026 | Blog — Northflank"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Best AI deployment platforms in 2026"
 
 frontend:
-  displayTitle: "Best AI deployment platforms in 2026 记录企业应用场景：地产开发和建筑设计流程"
+  displayTitle: "2026年最佳AI部署平台 | 博客 — Northflank"
   sourceLinks:
     - "https://northflank.com/blog/ai-deployment-platforms"
 ---
 
-# Best AI deployment platforms in 2026 记录企业应用场景：地产开发和建筑设计流程
+# 2026年最佳AI部署平台 | 博客 — Northflank
 
 ## 新闻事实
 

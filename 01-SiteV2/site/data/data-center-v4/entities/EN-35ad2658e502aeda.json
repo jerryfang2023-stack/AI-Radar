@@ -1,0 +1,132 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 818,
+    "quarantinedEventCount": 58
+  },
+  "entity": {
+    "id": "EN-35ad2658e502aeda",
+    "name": "Colossus",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-8a91e14f37d32b4d"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [
+      "EN-e78bdebae031095b"
+    ],
+    "firstSeen": "2026-06-29",
+    "lastSeen": "2026-06-29",
+    "relationIds": [
+      "REL2-64d994912ba46191"
+    ],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-8a91e14f37d32b4d"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-8a91e14f37d32b4d",
+        "dataDate": "2026-06-29",
+        "date": "2026-06-29",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "SpaceX Colossus交易🚀，GPT-5.5 Cyber发布🛡️，Codex作为工作空间🤖",
+        "displayTags": [],
+        "entityIds": [
+          "EN-ffc33568b1122cc5",
+          "EN-e78bdebae031095b",
+          "EN-7d3194f79e645c42",
+          "EN-8d4321d936320802",
+          "EN-35ad2658e502aeda"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [
+    {
+      "id": "EN-e78bdebae031095b",
+      "name": "SpaceX",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-3daefecd0453631a",
+        "EV-bb6bc8194a3a50c1",
+        "EV-edcb66d0401cfb8f",
+        "EV-03f661e8dcdf1b58",
+        "EV-ef7346378fcf9746",
+        "EV-f949fd95df58d42d",
+        "EV-fcbd97e1f30c95e3",
+        "EV-5012364af7480121",
+        "EV-8a91e14f37d32b4d",
+        "EV-3c51bcb5e99d2b68"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-code_generation",
+        "TX-use_case-software_development"
+      ],
+      "relatedEntityIds": [
+        "EN-62ce3c1a5a893a2c",
+        "EN-35ad2658e502aeda"
+      ],
+      "firstSeen": "2026-06-04",
+      "lastSeen": "2026-07-10"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-64d994912ba46191",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-e78bdebae031095b",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-35ad2658e502aeda",
+      "object_type": "entity",
+      "event_id": "EV-8a91e14f37d32b4d",
+      "claim_refs": [
+        "CL-95f44cb09829ce61",
+        "CL-a93154756285b513",
+        "CL-7df93efc4a64cc9c",
+        "CL-8e0772ef6fe2fd0e"
+      ],
+      "source_refs": [
+        "SA-e12af0ca03080fdd"
+      ],
+      "data_date": "2026-06-29",
+      "status": "verified"
+    }
+  ],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

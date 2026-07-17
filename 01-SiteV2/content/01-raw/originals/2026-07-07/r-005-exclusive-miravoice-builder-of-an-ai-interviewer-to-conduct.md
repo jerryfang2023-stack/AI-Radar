@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-005
 title: "Exclusive: Miravoice, Builder Of An AI 'Interviewer' To Conduct ..."
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "独家：Miravoice，打造AI“面试官”以进行..."
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://news.crunchbase.com/venture/ai-interviewer-miravoice-raises-seed-funding-unusual/"
 canonical_url: "https://news.crunchbase.com/venture/ai-interviewer-miravoice-raises-seed-funding-unusual"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-07T02:01:23.331Z
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Exclusive: Miravoice, Builder Of An AI 'Interviewer' To Conduct ...

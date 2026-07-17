@@ -72,6 +72,10 @@ key_excerpts: [{"type":"company_action","text":"Move would test whether group ca
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_zh: "SpaceX计划在美国推出Starlink移动服务"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # SpaceX plans to launch Starlink mobile service in the US

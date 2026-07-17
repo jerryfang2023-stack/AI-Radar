@@ -72,6 +72,10 @@ key_excerpts: [{"type":"company_action","text":"Perplexity 将 Deep Research 功
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Perplexity 将 Deep Research 整合进 Perplexity Computer，跨 20 多个前沿模型路由研究子任务"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Perplexity 将 Deep Research 整合进 Perplexity Computer，跨 20 多个前沿模型路由研究子任务

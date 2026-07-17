@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"Zillow, the leading US real estate marke
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Zillow如何利用AI：在7000名员工中部署Glean，每人每周节省1.5小时以上 | 应用案例"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # How Zillow Uses AI for How Zillow Deployed Glean Across 7,000 Employees and Saved 1.5+ Hours Per Person Per Week | Applied

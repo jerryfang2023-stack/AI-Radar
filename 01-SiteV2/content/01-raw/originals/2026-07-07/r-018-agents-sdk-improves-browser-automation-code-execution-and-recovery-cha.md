@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-018
 title: "Agents SDK improves browser automation, code execution, and recovery · Changelog"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "Agents SDK 提升浏览器自动化、代码执行与恢复能力 · 更新日志"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://developers.cloudflare.com/changelog/post/2026-06-16-agents-sdk-v0161/"
 canonical_url: "https://developers.cloudflare.com/changelog/post/2026-06-16-agents-sdk-v0161"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-07T02:01:23.401Z
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Agents SDK improves browser automation, code execution, and recovery · Changelog

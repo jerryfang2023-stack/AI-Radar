@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 818,
+    "quarantinedEventCount": 58
+  },
+  "entity": {
+    "id": "EN-3a63fb227a4df26d",
+    "name": "三星在韩国及全球DX部门",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-538adc98d1da8fda"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-06-22",
+    "lastSeen": "2026-06-23",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [
+        "EV-538adc98d1da8fda"
+      ],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-538adc98d1da8fda",
+        "dataDate": "2026-06-23",
+        "date": "2026-06-22",
+        "eventType": "deployment",
+        "eventTypeLabel": "部署",
+        "eventGroup": "部署与案例",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "三星在韩国及全球DX部门部署ChatGPT Enterprise和Codex",
+        "displayTags": [],
+        "entityIds": [
+          "EN-3a63fb227a4df26d",
+          "EN-968e2d5b08687bf4",
+          "EN-7d3194f79e645c42"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [
+    {
+      "id": "FDE-8f63ee695a479d40",
+      "eventId": "EV-538adc98d1da8fda",
+      "dataDate": "2026-06-23",
+      "date": "2026-06-22",
+      "title": "三星在韩国及全球DX部门部署ChatGPT Enterprise和Codex",
+      "stage": "completed",
+      "stageLabel": "已完成",
+      "customer": "Samsung",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "ChatGPT Enterprise和Codex",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "Samsung Electronics is deploying ChatGPT Enterprise and Codex to all employees in South Korea and everyone in its Device eXperience (DX) division worldwide.",
+        "Samsung Electronics is deploying ChatGPT Enterprise and Codex to all employees in South Korea and everyone in its Device eXperience (DX) division worldwide."
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://the-decoder.com/samsung-rolls-out-chatgpt-enterprise-and-codex-to-employees-in-south-korea",
+      "entityIds": [
+        "EN-3a63fb227a4df26d",
+        "EN-968e2d5b08687bf4",
+        "EN-7d3194f79e645c42"
+      ]
+    }
+  ],
+  "hardware": []
+}

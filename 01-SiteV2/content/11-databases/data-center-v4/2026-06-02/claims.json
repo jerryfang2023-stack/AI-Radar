@@ -21,6 +21,48 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-6058251a64be3cde",
+    "raw_id": "RAW-74278aa84119962d",
+    "claim_type": "product_release",
+    "subject": "Claude Code v2.1.160",
+    "predicate": "product_release",
+    "object": "acceptEdits mode now prompts before writing build-tool config files that grant code execution ( .npmrc , .yarnrc* , bunfig.toml , .bazelrc , .pre-commit-config.yaml , .devcontainer/ , etc.)",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-74278aa84119962d",
+      "start": 584,
+      "end": 773
+    },
+    "source_quote": "acceptEdits mode now prompts before writing build-tool config files that grant code execution ( .npmrc , .yarnrc* , bunfig.toml , .bazelrc , .pre-commit-config.yaml , .devcontainer/ , etc.)",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-3742ccf065945f2f",
+    "raw_id": "RAW-74278aa84119962d",
+    "claim_type": "product_release",
+    "subject": "Claude Code v2.1.160",
+    "predicate": "product_release",
+    "object": "Edit no longer requires a separate Read after viewing a file with grep : single-file grep / egrep / fgrep commands now satisfy the read-before-edit check",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-74278aa84119962d",
+      "start": 774,
+      "end": 927
+    },
+    "source_quote": "Edit no longer requires a separate Read after viewing a file with grep : single-file grep / egrep / fgrep commands now satisfy the read-before-edit check",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-32bb638b8d6ba50a",
     "raw_id": "RAW-74278aa84119962d",
     "claim_type": "product_release",
@@ -29,7 +71,7 @@
     "object": "Fixed the auto mode unavailability message on third-party providers (Bedrock/Vertex/Foundry) to point to the CLAUDE_CODE_ENABLE_AUTO_MODE opt-in instead of incorrectly blaming the model",
     "qualifiers": {
       "event_status": "completed",
-      "sequence": 2
+      "sequence": 4
     },
     "source_span": {
       "raw_id": "RAW-74278aa84119962d",
@@ -37,27 +79,6 @@
       "end": 2826
     },
     "source_quote": "Fixed the auto mode unavailability message on third-party providers (Bedrock/Vertex/Foundry) to point to the CLAUDE_CODE_ENABLE_AUTO_MODE opt-in instead of incorrectly blaming the model",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-c679e4b54957e7a5",
-    "raw_id": "RAW-74278aa84119962d",
-    "claim_type": "product_release",
-    "subject": "Claude Code v2.1.160",
-    "predicate": "product_release",
-    "object": "Removed CLAUDE_CODE_OPUS_4_6_FAST_MODE_OVERRIDE ; the environment variable is now a no-op",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 3
-    },
-    "source_span": {
-      "raw_id": "RAW-74278aa84119962d",
-      "start": 3734,
-      "end": 3823
-    },
-    "source_quote": "Removed CLAUDE_CODE_OPUS_4_6_FAST_MODE_OVERRIDE ; the environment variable is now a no-op",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -189,7 +210,7 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-a69a96d180f7f707",
+    "claim_id": "CL-1f52a91fcf7799b5",
     "raw_id": "RAW-1070e9b577a3b72a",
     "claim_type": "deployment",
     "subject": "Parloa",
@@ -198,6 +219,27 @@
     "qualifiers": {
       "event_status": "announced",
       "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-1070e9b577a3b72a",
+      "start": 2885,
+      "end": 3308
+    },
+    "source_quote": "The company has also signed partnerships with Five9, the cloud contact centre provider, and Epic, the healthcare software company, to bring HIPAA-ready AI agents into clinical and patient support workflows. Outsourcing giants TP, Concentrix, and Foundever are deploying Parloa agents within their own operations, a sign that the business process outsourcing industry sees agentic AI as augmentation rather than replacement.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a69a96d180f7f707",
+    "raw_id": "RAW-1070e9b577a3b72a",
+    "claim_type": "deployment",
+    "subject": "Parloa",
+    "predicate": "deployment",
+    "object": "$350M with SAP, Microsoft, OpenAI partnerships",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
     },
     "source_span": {
       "raw_id": "RAW-1070e9b577a3b72a",
@@ -210,27 +252,6 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-8fba0f2db9b48b2c",
-    "raw_id": "RAW-1070e9b577a3b72a",
-    "claim_type": "deployment",
-    "subject": "Parloa",
-    "predicate": "deployment",
-    "object": "$350M with SAP, Microsoft, OpenAI partnerships",
-    "qualifiers": {
-      "event_status": "announced",
-      "sequence": 4
-    },
-    "source_span": {
-      "raw_id": "RAW-1070e9b577a3b72a",
-      "start": 5770,
-      "end": 6132
-    },
-    "source_quote": "Parloa, the Berlin-founded AI agent management platform, has announced a wave of strategic partnerships with SAP, Microsoft, OpenAI, Five9, and Epic as it deploys the $350 million it raised in its January 2026 Series D round. The company, which builds AI agents for enterprise customer service, has also surpassed $50 million in annual recurring revenue with […]",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
     "claim_id": "CL-e006b1aae6d7786b",
     "raw_id": "RAW-ac120da2d0e15a31",
     "claim_type": "funding",
@@ -238,7 +259,7 @@
     "predicate": "funding",
     "object": "$8M+ to build omnichannel agents for revenue teams | Thoughtly",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 1
     },
     "source_span": {
@@ -259,7 +280,7 @@
     "predicate": "funding",
     "object": "$8M+ to build omnichannel agents for revenue teams | Thoughtly",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 2
     },
     "source_span": {
@@ -280,7 +301,7 @@
     "predicate": "funding",
     "object": "$8M+ to build omnichannel agents for revenue teams | Thoughtly",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 3
     },
     "source_span": {
@@ -301,7 +322,7 @@
     "predicate": "funding",
     "object": "$8M+ to build omnichannel agents for revenue teams | Thoughtly",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 4
     },
     "source_span": {
@@ -322,7 +343,7 @@
     "predicate": "funding",
     "object": "$1M to develop AI-native OS for creative work - Tech.eu",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 1
     },
     "source_span": {
@@ -343,7 +364,7 @@
     "predicate": "funding",
     "object": "$1M to develop AI-native OS for creative work - Tech.eu",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 2
     },
     "source_span": {
@@ -364,7 +385,7 @@
     "predicate": "funding",
     "object": "$1M to develop AI-native OS for creative work - Tech.eu",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 3
     },
     "source_span": {
@@ -385,7 +406,7 @@
     "predicate": "funding",
     "object": "$1M to develop AI-native OS for creative work - Tech.eu",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 4
     },
     "source_span": {
@@ -490,7 +511,7 @@
     "predicate": "funding",
     "object": "$47M",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 1
     },
     "source_span": {
@@ -511,7 +532,7 @@
     "predicate": "funding",
     "object": "$47M",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 2
     },
     "source_span": {
@@ -532,7 +553,7 @@
     "predicate": "funding",
     "object": "$47M",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 3
     },
     "source_span": {
@@ -553,7 +574,7 @@
     "predicate": "funding",
     "object": "$47M",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 4
     },
     "source_span": {
@@ -574,7 +595,7 @@
     "predicate": "funding",
     "object": "pre-seed funding for its AI voice agents",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 1
     },
     "source_span": {
@@ -595,7 +616,7 @@
     "predicate": "funding",
     "object": "pre-seed funding for its AI voice agents",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 2
     },
     "source_span": {
@@ -609,6 +630,27 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-4875952d70141946",
+    "raw_id": "RAW-9f2f1ae36c170790",
+    "claim_type": "funding",
+    "subject": "Telli, a YC alum,",
+    "predicate": "funding",
+    "object": "pre-seed funding for its AI voice agents",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-9f2f1ae36c170790",
+      "start": 278,
+      "end": 306
+    },
+    "source_quote": "2:06 PM PDT · April 15, 2025",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-902ff6e4251ed6d0",
     "raw_id": "RAW-9f2f1ae36c170790",
     "claim_type": "funding",
@@ -616,8 +658,8 @@
     "predicate": "funding",
     "object": "pre-seed funding for its AI voice agents",
     "qualifiers": {
-      "event_status": "announced",
-      "sequence": 3
+      "event_status": "completed",
+      "sequence": 4
     },
     "source_span": {
       "raw_id": "RAW-9f2f1ae36c170790",
@@ -625,27 +667,6 @@
       "end": 834
     },
     "source_quote": "Telli says its AI voice agents can perform a number of tasks, including automated callbacks and even closing deals.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-73c987a9a2e06683",
-    "raw_id": "RAW-9f2f1ae36c170790",
-    "claim_type": "funding",
-    "subject": "Telli, a YC alum,",
-    "predicate": "funding",
-    "object": "pre-seed funding for its AI voice agents",
-    "qualifiers": {
-      "event_status": "announced",
-      "sequence": 4
-    },
-    "source_span": {
-      "raw_id": "RAW-9f2f1ae36c170790",
-      "start": 997,
-      "end": 1302
-    },
-    "source_quote": "It’s now claiming to have reached revenue growth of more than 50% month over month and has processed close to a million phone calls (and all with only a six-person team) out of the Berlin office. Customers are spread across Germany, the U.K., Latin America, and the U.S., with plans for further expansion.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -826,7 +847,7 @@
     "predicate": "funding",
     "object": "$2M pre-seed to help enterprises build AI apps",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 1
     },
     "source_span": {
@@ -840,6 +861,48 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-4086c21d73c5d914",
+    "raw_id": "RAW-5941b1d0c9eba020",
+    "claim_type": "funding",
+    "subject": "Empromptu",
+    "predicate": "funding",
+    "object": "$2M pre-seed to help enterprises build AI apps",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-5941b1d0c9eba020",
+      "start": 260,
+      "end": 280
+    },
+    "source_quote": "Dominic-Madori Davis",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-c9831b6be2fd3ef0",
+    "raw_id": "RAW-5941b1d0c9eba020",
+    "claim_type": "funding",
+    "subject": "Empromptu",
+    "predicate": "funding",
+    "object": "$2M pre-seed to help enterprises build AI apps",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-5941b1d0c9eba020",
+      "start": 281,
+      "end": 311
+    },
+    "source_quote": "5:51 AM PST · December 9, 2025",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-6648bbdefe007f3d",
     "raw_id": "RAW-5941b1d0c9eba020",
     "claim_type": "funding",
@@ -847,8 +910,8 @@
     "predicate": "funding",
     "object": "$2M pre-seed to help enterprises build AI apps",
     "qualifiers": {
-      "event_status": "announced",
-      "sequence": 2
+      "event_status": "completed",
+      "sequence": 4
     },
     "source_span": {
       "raw_id": "RAW-5941b1d0c9eba020",
@@ -861,48 +924,6 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-7b440ce9071d91ea",
-    "raw_id": "RAW-5941b1d0c9eba020",
-    "claim_type": "funding",
-    "subject": "Empromptu",
-    "predicate": "funding",
-    "object": "$2M pre-seed to help enterprises build AI apps",
-    "qualifiers": {
-      "event_status": "announced",
-      "sequence": 3
-    },
-    "source_span": {
-      "raw_id": "RAW-5941b1d0c9eba020",
-      "start": 1056,
-      "end": 1400
-    },
-    "source_quote": "Empromptu claims all a user has to do is tell the platform’s AI chatbot what they want — like a new classification app or a generative recommendation app — and the tool will go ahead and build it. It also provides LLM tools to help users if they want to fine-tune any results and lets companies add AI features to their own existing code bases.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-2e188b60d17dc4e4",
-    "raw_id": "RAW-5941b1d0c9eba020",
-    "claim_type": "funding",
-    "subject": "Empromptu",
-    "predicate": "funding",
-    "object": "$2M pre-seed to help enterprises build AI apps",
-    "qualifiers": {
-      "event_status": "announced",
-      "sequence": 4
-    },
-    "source_span": {
-      "raw_id": "RAW-5941b1d0c9eba020",
-      "start": 1523,
-      "end": 1896
-    },
-    "source_quote": "“Vibe coding is excellent for quick experiments, but Empromptu is what turns those experiments into real software,” she said. Empromptu, she continued, “turns ideas into production features with built-in evaluation, governance, and self-improvement. You ship to real customers, with real data and complete control. If vibe coding is the brainstorm, Empromptu is the build.”",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
     "claim_id": "CL-c99d02cb4f23c9e2",
     "raw_id": "RAW-ac14a92e351864c8",
     "claim_type": "funding",
@@ -910,7 +931,7 @@
     "predicate": "funding",
     "object": "$24M to help businesses build AI agents",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 1
     },
     "source_span": {
@@ -931,7 +952,7 @@
     "predicate": "funding",
     "object": "$24M to help businesses build AI agents",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 2
     },
     "source_span": {
@@ -952,7 +973,7 @@
     "predicate": "funding",
     "object": "$24M to help businesses build AI agents",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 3
     },
     "source_span": {
@@ -973,7 +994,7 @@
     "predicate": "funding",
     "object": "$24M to help businesses build AI agents",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 4
     },
     "source_span": {
@@ -1050,27 +1071,6 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-5f45ad800bcbb895",
-    "raw_id": "RAW-5e12e0a995c900fd",
-    "claim_type": "funding",
-    "subject": "谷歌母公司 Alphabet 宣布 800 亿美元大额",
-    "predicate": "funding",
-    "object": "，用于 AI 基础设施与算力建设",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 4
-    },
-    "source_span": {
-      "raw_id": "RAW-5e12e0a995c900fd",
-      "start": 960,
-      "end": 1012
-    },
-    "source_quote": "谷歌母公司 Alphabet 2025 年营收首破 4000 亿美元，2026 年 AI 支出增长近一倍",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
     "claim_id": "CL-dd15cf279436e22b",
     "raw_id": "RAW-63c27018cc1d4f60",
     "claim_type": "funding",
@@ -1078,7 +1078,7 @@
     "predicate": "funding",
     "object": "$4.1M to turn viral text-to-3D tool into AI copilot",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 1
     },
     "source_span": {
@@ -1099,7 +1099,7 @@
     "predicate": "funding",
     "object": "$4.1M to turn viral text-to-3D tool into AI copilot",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 2
     },
     "source_span": {
@@ -1113,43 +1113,127 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-e4175189ca6aac93",
+    "claim_id": "CL-a349f4160cbc2e5d",
     "raw_id": "RAW-63c27018cc1d4f60",
     "claim_type": "funding",
     "subject": "YC alum Adam",
     "predicate": "funding",
     "object": "$4.1M to turn viral text-to-3D tool into AI copilot",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 3
     },
     "source_span": {
       "raw_id": "RAW-63c27018cc1d4f60",
-      "start": 1497,
-      "end": 1832
+      "start": 281,
+      "end": 311
     },
-    "source_quote": "Its initial tool lets creators without CAD skills create 3D models from text prompts, but early feedback showed that text wasn’t always the best way to interact with 3D, Dive said. “So for our copilot, we blended in different interaction paradigms; for example, users selecting different parts of the 3D object and conversing with it.”",
+    "source_quote": "7:20 AM PDT · October 31, 2025",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-b8853d1e3681ca75",
+    "claim_id": "CL-5f696b6bec9eb44b",
     "raw_id": "RAW-63c27018cc1d4f60",
     "claim_type": "funding",
     "subject": "YC alum Adam",
     "predicate": "funding",
     "object": "$4.1M to turn viral text-to-3D tool into AI copilot",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 4
     },
     "source_span": {
       "raw_id": "RAW-63c27018cc1d4f60",
-      "start": 1833,
-      "end": 2107
+      "start": 481,
+      "end": 625
     },
-    "source_quote": "This will give the startup an element of differentiation compared to other text-to-CAD products , although there is already competition in the “AI copilot for CAD” segment as well. MecAgent , for instance, is already available, but Adam could capitalize on its viral launch.",
+    "source_quote": "After generating over 10 million social media impressions with the launch of its text-to-3D model app, the AI startup had its pick of investors.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-7c064ac0f7651d30",
+    "raw_id": "RAW-765891f9aca2c79f",
+    "claim_type": "product_release",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "OpenAI 调整手机端 ChatGPT，提示词可提前选 AI 响应档位",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-765891f9aca2c79f",
+      "start": 0,
+      "end": 94
+    },
+    "source_quote": "IT之家 6 月 2 日消息，科技媒体 9to5Mac 昨日（6 月 1 日）发布博文，报道称 OpenAI 升级其 ChatGPT 应用，聚焦更新提示词发送、长对话浏览和默认模型体验上。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-3ce0d901e6060501",
+    "raw_id": "RAW-765891f9aca2c79f",
+    "claim_type": "product_release",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "OpenAI 调整手机端 ChatGPT，提示词可提前选 AI 响应档位",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-765891f9aca2c79f",
+      "start": 550,
+      "end": 584
+    },
+    "source_quote": "该模型于 5 月 5 日上线，是多数 Prompt 默认使用的模型。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b917b0aec2dc7400",
+    "raw_id": "RAW-765891f9aca2c79f",
+    "claim_type": "product_release",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "OpenAI 调整手机端 ChatGPT，提示词可提前选 AI 响应档位",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-765891f9aca2c79f",
+      "start": 95,
+      "end": 148
+    },
+    "source_quote": "在手势交互方面，移动端新增隐藏手势，用户长按发送箭头，就能在发出提示词（Prompt）前选择“智能程度”。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e4c82a4931b2b93a",
+    "raw_id": "RAW-765891f9aca2c79f",
+    "claim_type": "product_release",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "OpenAI 调整手机端 ChatGPT，提示词可提前选 AI 响应档位",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-765891f9aca2c79f",
+      "start": 162,
+      "end": 235
+    },
+    "source_quote": "用户在 ChatGPT 移动端输入消息后，长按发送箭头即可调出智能等级选择器，并切换 Instant、Thinking、Extended 等选项。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"

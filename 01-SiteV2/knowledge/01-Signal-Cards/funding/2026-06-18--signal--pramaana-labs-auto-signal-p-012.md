@@ -2,7 +2,7 @@
 id: SIG-20260618-A01
 type: signal_card
 signal_type: funding
-title: "Pramaana Labs 获得$27M 融资，押注模型部署和算力服务"
+title: "Pramaana Labs 获 2700 万美元种子轮融资，用形式化验证提升 AI 可靠性"
 date: 2026-06-18
 status: published
 source_title: "Pramaana Labs 获 2700 万美元种子轮融资，用形式化验证提升 AI 可靠性"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Pramaana Labs"
 
 frontend:
-  displayTitle: "Pramaana Labs 获得$27M 融资，押注模型部署和算力服务"
+  displayTitle: "Pramaana Labs 获 2700 万美元种子轮融资，用形式化验证提升 AI 可靠性"
   sourceLinks:
     - "https://techcrunch.com/2026/06/17/pramaana-labs-raises-27-million-seed-round-from-khosla-ventures-to-bring-formal-verification-to-ai"
 ---
 
-# Pramaana Labs 获得$27M 融资，押注模型部署和算力服务
+# Pramaana Labs 获 2700 万美元种子轮融资，用形式化验证提升 AI 可靠性
 
 ## 新闻事实
 

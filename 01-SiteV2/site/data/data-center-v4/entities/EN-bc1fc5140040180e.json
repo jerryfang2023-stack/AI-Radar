@@ -1,0 +1,217 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 818,
+    "quarantinedEventCount": 58
+  },
+  "entity": {
+    "id": "EN-bc1fc5140040180e",
+    "name": "GLM-5.2",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-534dc9add1c0cc35"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-technology-long_context"
+    ],
+    "relatedEntityIds": [
+      "EN-6c87e5496f592f3c"
+    ],
+    "firstSeen": "2026-06-18",
+    "lastSeen": "2026-06-18",
+    "relationIds": [
+      "REL2-ca13cb49e45e3819"
+    ],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-fe2b0d74944d6128",
+        "EV-534dc9add1c0cc35"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-fe2b0d74944d6128",
+        "dataDate": "2026-07-15",
+        "date": "2026-07-14",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "LMSYS 与 SGLang 团队为 GLM-5.2 NVFP4 推出推理优化，8×B300 单 batch 解码超 500 TPS",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "chip_accelerator",
+            "dimensionName": "产品形态",
+            "name": "芯片与加速器"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体"
+          }
+        ],
+        "entityIds": [
+          "EN-636fa9664f878a4d",
+          "EN-6c87e5496f592f3c",
+          "EN-6f7ac1823da81d2e",
+          "EN-64c4e740f32911e8"
+        ]
+      },
+      {
+        "id": "EV-534dc9add1c0cc35",
+        "dataDate": "2026-06-18",
+        "date": "2026-06-18",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "智谱AI发布GLM-5.2，百万token上下文下的开源编码模型逼近闭源标杆",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "long_context",
+            "name": "长上下文"
+          }
+        ],
+        "entityIds": [
+          "EN-1d79127e9d90e89b",
+          "EN-c70eca6b0f88f44d",
+          "EN-bc1fc5140040180e"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [
+    {
+      "id": "EN-6c87e5496f592f3c",
+      "name": "SGLang",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-fe2b0d74944d6128"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution"
+      ],
+      "relatedEntityIds": [
+        "EN-64c4e740f32911e8",
+        "EN-bc1fc5140040180e"
+      ],
+      "firstSeen": "2026-07-14",
+      "lastSeen": "2026-07-15"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-ca13cb49e45e3819",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-6c87e5496f592f3c",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-bc1fc5140040180e",
+      "object_type": "entity",
+      "event_id": "EV-fe2b0d74944d6128",
+      "claim_refs": [
+        "CL-9565270c2ee6db60",
+        "CL-5f21324ca48bdbb5",
+        "CL-fe19ca104837cb24",
+        "CL-28348c4fe65170b5"
+      ],
+      "source_refs": [
+        "SA-3b5d365f11350356"
+      ],
+      "data_date": "2026-07-15",
+      "status": "verified"
+    }
+  ],
+  "taxonomyNodes": [
+    {
+      "id": "TX-technology-long_context",
+      "name": "长上下文",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "long_context",
+      "eventIds": [
+        "EV-80e54c9a390da293",
+        "EV-fd21441fb6e143c3",
+        "EV-0d5a32aca724d30e",
+        "EV-653cbce2ccc79f8b",
+        "EV-70e3f88cb06a856c",
+        "EV-70cbf25f7ec2cc3a",
+        "EV-70efbfcaadcdb259",
+        "EV-0c06df62702d26ab",
+        "EV-534dc9add1c0cc35",
+        "EV-57f083a39393d841",
+        "EV-86537be17d50ff20"
+      ],
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-c70eca6b0f88f44d",
+        "EN-7df09a7717ef2feb",
+        "EN-3a7bd3e2360a3d29",
+        "EN-50537dab76505dfc",
+        "EN-b5251b35f15bedc4",
+        "EN-607964040e4b62e0",
+        "EN-23dcd1053b8a922f",
+        "EN-7d3194f79e645c42",
+        "EN-e4f9c522e1c89280",
+        "EN-76ac3e702b5ccaff",
+        "EN-f3cfedbe8428c9f7",
+        "EN-c04bd5ebd10ab696",
+        "EN-50ba7ff15827787b",
+        "EN-8f71c4871a160172",
+        "EN-78624f0a98e78301",
+        "EN-7dd7122ad9bf240f",
+        "EN-95b0632f1b292fa7",
+        "EN-047364b9be67f665",
+        "EN-6f7ac1823da81d2e",
+        "EN-1d79127e9d90e89b",
+        "EN-bc77259c5d2eb341",
+        "EN-52fc33ae4d101a5d",
+        "EN-bc1fc5140040180e",
+        "EN-3153ebda601cdb79",
+        "EN-c23eb5fae3cdd763",
+        "EN-c608c4787821de1b",
+        "EN-9c8ae69b84f21a2e",
+        "EN-6ac6ad44bb9995ca"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-06-12",
+      "lastSeen": "2026-07-17"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}

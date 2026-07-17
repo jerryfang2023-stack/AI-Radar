@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"Anthropic 推出 Claude Sonnet 5，称�
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "Claude Sonnet 5 发布，系 Sonnet 系列最强智能体模型"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Claude Sonnet 5 发布，系 Sonnet 系列最强智能体模型

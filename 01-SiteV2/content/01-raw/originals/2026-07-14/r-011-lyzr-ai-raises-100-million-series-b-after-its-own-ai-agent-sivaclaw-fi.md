@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-011
 title: "Lyzr AI Raises $100 Million Series B After Its Own AI Agent SivaClaw Fielded 130‑Plus Investors And Generated $400 Million In Interest"
-title_zh: "Lyzr AI 完成 1 亿美元 B 轮融资，其 AI 智能体参与融资流程"
-title_translation_status: translated
-title_translation_method: business-rule_title_translation
+title_zh: "Lyzr AI 完成1亿美元B轮融资，其AI代理SivaClaw吸引130多家投资者并产生4亿美元意向"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://pulse2.com/lyzr-ai-raises-100-million-series-b-after-its-own-ai-agent-sivaclaw-fielded-130-plus-investors-and-generated-400-million-in-interest/"
 canonical_url: "https://pulse2.com/lyzr-ai-raises-100-million-series-b-after-its-own-ai-agent-sivaclaw-fielded-130-plus-investors-and-generated-400-million-in-interest"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-14T01:56:51.306Z
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Lyzr AI Raises $100 Million Series B After Its Own AI Agent SivaClaw Fielded 130‑Plus Investors And Generated $400 Million In Interest

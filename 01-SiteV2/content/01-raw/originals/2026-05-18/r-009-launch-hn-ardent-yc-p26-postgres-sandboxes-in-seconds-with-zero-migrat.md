@@ -57,6 +57,10 @@ key_excerpts: [{"type":"risk","text":"96 points / 51 comments / query=AI coding 
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Launch HN: Ardent (YC P26) – 秒级创建Postgres沙箱，零迁移"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Launch HN: Ardent (YC P26) – Postgres sandboxes in seconds with zero migration

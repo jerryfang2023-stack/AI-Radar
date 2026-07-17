@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-005
 title: "GLM 5.2 与即将到来的 AI 利润率崩盘"
 title_zh: "GLM 5.2 与即将到来的 AI 利润率崩盘"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://martinalderson.com/posts/the-upcoming-ai-margin-collapse-part-1-glm-5-2"
 canonical_url: "https://martinalderson.com/posts/the-upcoming-ai-margin-collapse-part-1-glm-5-2"
 source_name: "Hacker News 热门（buzzing.cc 中文翻译）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-07T02:46:59.201Z
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # GLM 5.2 与即将到来的 AI 利润率崩盘

@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-011
 title: "努比亚 AI 宠物机器人 iMoochi 定档 7 月 17 日上线"
 title_zh: "努比亚 AI 宠物机器人 iMoochi 定档 7 月 17 日上线"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://ithome.com/0/975/885.htm"
 canonical_url: "https://ithome.com/0/975/885.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-13T10:23:56.712Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 努比亚 AI 宠物机器人 iMoochi 定档 7 月 17 日上线

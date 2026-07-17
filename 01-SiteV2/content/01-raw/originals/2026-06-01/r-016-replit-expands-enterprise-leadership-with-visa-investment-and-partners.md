@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"Visa invests in and partners wit
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Replit通过Visa投资与合作伙伴关系、支付扩展及解决方案合作伙伴计划，扩大企业领导力"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Replit Expands Enterprise Leadership with Visa Investment and Partnership, Payments Expansion, and Solution Partner Program

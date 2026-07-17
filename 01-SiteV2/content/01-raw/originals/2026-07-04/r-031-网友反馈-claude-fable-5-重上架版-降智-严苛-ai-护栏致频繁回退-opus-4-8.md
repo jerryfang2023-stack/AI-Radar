@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-031
 title: "网友反馈 Claude Fable 5 重上架版\"降智\"，严苛 AI 护栏致频繁回退 Opus 4.8"
 title_zh: "网友反馈 Claude Fable 5 重上架版\"降智\"，严苛 AI 护栏致频繁回退 Opus 4.8"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/972/477.htm"
 canonical_url: "https://ithome.com/0/972/477.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-04T04:50:50.240Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 网友反馈 Claude Fable 5 重上架版"降智"，严苛 AI 护栏致频繁回退 Opus 4.8

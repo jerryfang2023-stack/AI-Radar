@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"The 6 best AI agent builder platfor
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_zh: "2026年最佳AI智能体构建平台（诚实排名）——Dapta"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Best AI Agent Builder Platforms in 2026 (Ranked Honestly) - Dapta

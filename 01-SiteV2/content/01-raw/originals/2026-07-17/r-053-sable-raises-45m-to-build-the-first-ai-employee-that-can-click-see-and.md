@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-053
 title: "Sable Raises $45M to Build the First AI Employee that can Click, See, and Explain | Newswire"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "Sable 获4500万美元融资，打造首个能点击、查看和解释的AI员工 | Newswire"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.newswire.com/news/sable-raises-45m-to-build-the-first-ai-employee-that-can-click-see-and-explain"
 canonical_url: "https://newswire.com/news/sable-raises-45m-to-build-the-first-ai-employee-that-can-click-see-and-explain"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-17T04:40:17.140Z
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Sable Raises $45M to Build the First AI Employee that can Click, See, and Explain | Newswire

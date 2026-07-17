@@ -2,7 +2,7 @@
 id: SIG-20260614-A05
 type: signal_card
 signal_type: product_service
-title: "Theverge 发布 AI 基础设施能力，切入模型部署和算力服务"
+title: "本周 Installer：斯皮尔伯格新片、Anthropic 最新模型、群聊新方式等"
 date: 2026-06-14
 status: published
 source_title: "本周 Installer：斯皮尔伯格新片、Anthropic 最新模型、群聊新方式等"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Theverge"
 
 frontend:
-  displayTitle: "Theverge 发布 AI 基础设施能力，切入模型部署和算力服务"
+  displayTitle: "本周 Installer：斯皮尔伯格新片、Anthropic 最新模型、群聊新方式等"
   sourceLinks:
     - "https://www.theverge.com/tech/949465/pool-screenshots-app-disclosure-day-installer"
 ---
 
-# Theverge 发布 AI 基础设施能力，切入模型部署和算力服务
+# 本周 Installer：斯皮尔伯格新片、Anthropic 最新模型、群聊新方式等
 
 ## 新闻事实
 

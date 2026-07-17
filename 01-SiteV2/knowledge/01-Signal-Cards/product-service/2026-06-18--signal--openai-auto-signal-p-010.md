@@ -2,7 +2,7 @@
 id: SIG-20260618-A19
 type: signal_card
 signal_type: product_service
-title: "OpenAI 发布 AI 基础设施能力，切入地产和建筑设计工作流"
+title: "XDOF获7000万美元融资，构建机器人训练数据基础设施"
 date: 2026-06-18
 status: published
 source_title: "XDOF获7000万美元融资，构建机器人训练数据基础设施"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "OpenAI"
 
 frontend:
-  displayTitle: "OpenAI 发布 AI 基础设施能力，切入地产和建筑设计工作流"
+  displayTitle: "XDOF获7000万美元融资，构建机器人训练数据基础设施"
   sourceLinks:
     - "https://techcrunch.com/2026/06/17/collecting-robot-training-data-is-dirty-unglamorous-work-some-ai-labs-are-already-paying-xdof-to-do-it"
 ---
 
-# OpenAI 发布 AI 基础设施能力，切入地产和建筑设计工作流
+# XDOF获7000万美元融资，构建机器人训练数据基础设施
 
 ## 新闻事实
 

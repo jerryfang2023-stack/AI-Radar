@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-091
 title: "苹果评估 PrismML 量化技术，内存占用从 54GB 降至 3.9GB，iPhone 15 及后续机型可运行 27B 模型"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "苹果评估 PrismML 量化技术，内存占用从 54GB 降至 3.9GB，iPhone 15 及后续机型可运行 27B 模型"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/976/826.htm"
 canonical_url: "https://ithome.com/0/976/826.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-15T04:28:38.092Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 苹果评估 PrismML 量化技术，内存占用从 54GB 降至 3.9GB，iPhone 15 及后续机型可运行 27B 模型

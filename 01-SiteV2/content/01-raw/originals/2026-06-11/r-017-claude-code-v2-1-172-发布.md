@@ -72,6 +72,10 @@ key_excerpts: [{"type":"company_action","text":"子智能体现可创建自己�
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "Claude Code v2.1.172 发布"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Claude Code v2.1.172 发布

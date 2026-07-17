@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"《粉雄救兵》生活教练 Karamo Br
 theme: outside-core-exploration
 keyword_group: outside-core-exploration
 copyright_note: local research archive only
+title_zh: "《粉雄救兵》Karamo Brown 推出健康应用 Kē，含 AI 数字克隆\"AI Karamo\""
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 《粉雄救兵》Karamo Brown 推出健康应用 Kē，含 AI 数字克隆"AI Karamo"

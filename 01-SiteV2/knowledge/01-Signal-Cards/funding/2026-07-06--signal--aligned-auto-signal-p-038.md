@@ -2,7 +2,7 @@
 id: SIG-20260706-A05
 type: signal_card
 signal_type: funding
-title: "Aligned 获得 $60M 融资"
+title: "Aligned获6000万美元融资，打造面向企业交易的AI原生销售执行层 - SiliconANGLE"
 date: 2026-07-06
 status: published
 source_title: "Aligned bags $60M in funding to build the AI-native sales execution layer for enterprise deals - SiliconANGLE"
@@ -55,12 +55,12 @@ opportunity_signals:
 signal_owner: "Aligned"
 
 frontend:
-  displayTitle: "Aligned 获得 $60M 融资"
+  displayTitle: "Aligned获6000万美元融资，打造面向企业交易的AI原生销售执行层 - SiliconANGLE"
   sourceLinks:
     - "https://siliconangle.com/2026/07/01/aligned-bags-60m-funding-build-ai-native-sales-execution-layer-enterprise-deals/"
 ---
 
-# Aligned 获得 $60M 融资
+# Aligned获6000万美元融资，打造面向企业交易的AI原生销售执行层 - SiliconANGLE
 
 ## 新闻事实
 

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"美团今日发布万亿参数大模型 
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "美团发布万亿参数大模型 LongCat-2.0，五万卡国产算力训练并开源"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 美团发布万亿参数大模型 LongCat-2.0，五万卡国产算力训练并开源

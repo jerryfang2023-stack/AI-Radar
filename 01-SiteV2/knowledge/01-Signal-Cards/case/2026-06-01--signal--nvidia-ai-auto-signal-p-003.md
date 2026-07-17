@@ -2,7 +2,7 @@
 id: SIG-20260601-A03
 type: signal_card
 signal_type: case
-title: "NVIDIA 披露台积电、富士康等采用 AI 改造制造运营"
+title: "台湾产业巨头借助NVIDIA加速世界AI基础设施建设"
 date: 2026-06-01
 status: published
 asset_level: frontstage
@@ -58,7 +58,7 @@ signal_owner: "NVIDIA / 台湾制造伙伴"
 watch_reason: "继续看这些效率数字是否被客户独立披露，尤其是根因分析、视觉检测和工厂规划是否形成可复用采购方案。"
 
 frontend:
-  displayTitle: "NVIDIA 披露台积电、富士康等采用 AI 改造制造运营"
+  displayTitle: "台湾产业巨头借助NVIDIA加速世界AI基础设施建设"
   eventLine: "NVIDIA 披露多家台湾产业伙伴把加速计算、仿真、AI agents 和物理 AI 用进制造运营。"
   whyWatch: "这不是单纯供货关系，英伟达正在把客户现场变成物理 AI 的展示场。"
   businessMeaning: "AI 基础设施采购会更靠近工厂规划、质量检测、根因分析和设备效率。"
@@ -68,7 +68,7 @@ frontend:
     - "https://blogs.nvidia.com/blog/taiwan-ecosystem-ai-infrastructure"
 ---
 
-# NVIDIA 披露台积电、富士康等采用 AI 改造制造运营
+# 台湾产业巨头借助NVIDIA加速世界AI基础设施建设
 
 ## 信号底稿
 

@@ -2,7 +2,7 @@
 id: SIG-20260710-A04
 type: signal_card
 signal_type: funding
-title: "Etched将工作硅和10亿美元的合同置于推理ASIC的背后-见解"
+title: "Etched推出工作硅片及10亿美元合同，助力推理ASIC芯片——深度解析"
 date: 2026-07-10
 status: published
 source_title: "Etched puts working silicon and $1B in contracts behind inference ASICs - Insights"
@@ -58,12 +58,12 @@ opportunity_signals:
 signal_owner: "Marvin-42"
 
 frontend:
-  displayTitle: "Etched将工作硅和10亿美元的合同置于推理ASIC的背后-见解"
+  displayTitle: "Etched推出工作硅片及10亿美元合同，助力推理ASIC芯片——深度解析"
   sourceLinks:
     - "https://insights.marvin-42.com/articles/etched-puts-working-silicon-and-1b-in-contracts-behind-inference-asics"
 ---
 
-# Etched将工作硅和10亿美元的合同置于推理ASIC的背后-见解
+# Etched推出工作硅片及10亿美元合同，助力推理ASIC芯片——深度解析
 
 ## 新闻事实
 

@@ -2,7 +2,7 @@
 id: SIG-20260629-A28
 type: signal_card
 signal_type: product_service
-title: "自动化岗位相关公司资助 10 亿美元再培训计划"
+title: "最可能自动化你工作的公司正资助10亿美元计划重新培训你"
 date: 2026-06-29
 status: published
 source_title: "The companies most likely to automate your job are now funding a $1 billion program to retrain you"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "The-Decoder"
 
 frontend:
-  displayTitle: "自动化岗位相关公司资助 10 亿美元再培训计划"
+  displayTitle: "最可能自动化你工作的公司正资助10亿美元计划重新培训你"
   sourceLinks:
     - "https://the-decoder.com/the-companies-most-likely-to-automate-your-job-are-now-funding-a-1-billion-program-to-retrain-you/"
 ---
 
-# 自动化岗位相关公司资助 10 亿美元再培训计划
+# 最可能自动化你工作的公司正资助10亿美元计划重新培训你
 
 ## 新闻事实
 

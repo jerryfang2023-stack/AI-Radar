@@ -1,5 +1,19 @@
 [
   {
+    "asset_id": "CL-daa5e86461b687f8",
+    "tag_id": "guardrails_safety",
+    "evidence_ref": "CL-daa5e86461b687f8",
+    "source_span": {
+      "raw_id": "RAW-7ea3e4a7933dbe55",
+      "start": 1129,
+      "end": 1483
+    },
+    "assignment_method": "rule",
+    "confidence": 0.9,
+    "taxonomy_version": "TAG-V4.0",
+    "status": "active"
+  },
+  {
     "asset_id": "CL-dd02a198256fca4d",
     "tag_id": "long_context",
     "evidence_ref": "CL-dd02a198256fca4d",
@@ -21,34 +35,6 @@
       "raw_id": "RAW-19442fb443380974",
       "start": 457,
       "end": 765
-    },
-    "assignment_method": "rule",
-    "confidence": 0.9,
-    "taxonomy_version": "TAG-V4.0",
-    "status": "active"
-  },
-  {
-    "asset_id": "CL-1454e3b20b2473c9",
-    "tag_id": "agentic_execution",
-    "evidence_ref": "CL-1454e3b20b2473c9",
-    "source_span": {
-      "raw_id": "RAW-5272417102bc8120",
-      "start": 0,
-      "end": 55
-    },
-    "assignment_method": "rule",
-    "confidence": 0.9,
-    "taxonomy_version": "TAG-V4.0",
-    "status": "active"
-  },
-  {
-    "asset_id": "CL-5da980acb81369b1",
-    "tag_id": "agentic_execution",
-    "evidence_ref": "CL-5da980acb81369b1",
-    "source_span": {
-      "raw_id": "RAW-5272417102bc8120",
-      "start": 744,
-      "end": 1080
     },
     "assignment_method": "rule",
     "confidence": 0.9,
@@ -196,13 +182,13 @@
     "status": "active"
   },
   {
-    "asset_id": "CL-52fd97d11b26382e",
+    "asset_id": "CL-00b40adc2e884bb0",
     "tag_id": "agentic_execution",
-    "evidence_ref": "CL-52fd97d11b26382e",
+    "evidence_ref": "CL-00b40adc2e884bb0",
     "source_span": {
       "raw_id": "RAW-89f644f30caf8262",
-      "start": 10151,
-      "end": 10719
+      "start": 7841,
+      "end": 8098
     },
     "assignment_method": "rule",
     "confidence": 0.9,
@@ -287,6 +273,76 @@
       "raw_id": "RAW-bdaaa2b88da5c4d4",
       "start": 302,
       "end": 379
+    },
+    "assignment_method": "rule",
+    "confidence": 0.9,
+    "taxonomy_version": "TAG-V4.0",
+    "status": "active"
+  },
+  {
+    "asset_id": "CL-f7567c47ed360e90",
+    "tag_id": "agentic_execution",
+    "evidence_ref": "CL-f7567c47ed360e90",
+    "source_span": {
+      "raw_id": "RAW-1ecbff972a499c72",
+      "start": 142,
+      "end": 246
+    },
+    "assignment_method": "rule",
+    "confidence": 0.9,
+    "taxonomy_version": "TAG-V4.0",
+    "status": "active"
+  },
+  {
+    "asset_id": "CL-30b655e8301503f9",
+    "tag_id": "agentic_execution",
+    "evidence_ref": "CL-30b655e8301503f9",
+    "source_span": {
+      "raw_id": "RAW-1ecbff972a499c72",
+      "start": 348,
+      "end": 412
+    },
+    "assignment_method": "rule",
+    "confidence": 0.9,
+    "taxonomy_version": "TAG-V4.0",
+    "status": "active"
+  },
+  {
+    "asset_id": "CL-4f2e4c17b2c92312",
+    "tag_id": "agentic_execution",
+    "evidence_ref": "CL-4f2e4c17b2c92312",
+    "source_span": {
+      "raw_id": "RAW-1ecbff972a499c72",
+      "start": 0,
+      "end": 141
+    },
+    "assignment_method": "rule",
+    "confidence": 0.9,
+    "taxonomy_version": "TAG-V4.0",
+    "status": "active"
+  },
+  {
+    "asset_id": "CL-f7f9a46e7662739e",
+    "tag_id": "agentic_execution",
+    "evidence_ref": "CL-f7f9a46e7662739e",
+    "source_span": {
+      "raw_id": "RAW-4c229ff36d31c4d9",
+      "start": 0,
+      "end": 108
+    },
+    "assignment_method": "rule",
+    "confidence": 0.9,
+    "taxonomy_version": "TAG-V4.0",
+    "status": "active"
+  },
+  {
+    "asset_id": "CL-f7f9a46e7662739e",
+    "tag_id": "code_generation",
+    "evidence_ref": "CL-f7f9a46e7662739e",
+    "source_span": {
+      "raw_id": "RAW-4c229ff36d31c4d9",
+      "start": 0,
+      "end": 108
     },
     "assignment_method": "rule",
     "confidence": 0.9,

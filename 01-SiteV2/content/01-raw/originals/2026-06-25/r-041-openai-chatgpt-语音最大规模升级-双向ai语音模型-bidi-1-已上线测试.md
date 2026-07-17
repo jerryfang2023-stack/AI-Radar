@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"6月23日，部分用户反馈 C
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "OpenAI ChatGPT 语音最大规模升级：双向AI语音模型 Bidi 1 已上线测试"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # OpenAI ChatGPT 语音最大规模升级：双向AI语音模型 Bidi 1 已上线测试

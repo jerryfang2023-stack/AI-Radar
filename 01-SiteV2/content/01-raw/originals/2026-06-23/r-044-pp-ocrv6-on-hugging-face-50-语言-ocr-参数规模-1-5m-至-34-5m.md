@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"PP-OCRv6 是 PaddleOCR 最新一代通�
 theme: technical-iteration-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "PP-OCRv6 on Hugging Face：50 语言 OCR，参数规模 1.5M 至 34.5M"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # PP-OCRv6 on Hugging Face：50 语言 OCR，参数规模 1.5M 至 34.5M

@@ -5,6 +5,7 @@
     "event_time": "2026-06-23T20:44:19.947Z",
     "disclosed_at": "2026-06-23T20:44:19.947Z",
     "entities": [
+      "EN-85c88a8dfc71d9fc",
       "EN-c70eca6b0f88f44d"
     ],
     "action": "政策",
@@ -30,7 +31,7 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-d26ad59ffe89d45a",
+    "event_id": "EV-0c541092e3ba6dac",
     "display_title_zh": "Anthropic 更新隐私政策以验证用户年龄或身份"
   },
   {
@@ -39,7 +40,8 @@
     "event_time": "2026-06-23T22:28:19.000Z",
     "disclosed_at": "2026-06-23T22:28:19.000Z",
     "entities": [
-      "EN-bbdefa2950f49882"
+      "EN-bbdefa2950f49882",
+      "EN-3546e1b15e6549b2"
     ],
     "action": "新增",
     "object": "特定声音检测",
@@ -73,7 +75,8 @@
     "event_time": "2026-06-23T21:03:48.000Z",
     "disclosed_at": "2026-06-23T21:03:48.000Z",
     "entities": [
-      "EN-c70eca6b0f88f44d"
+      "EN-c70eca6b0f88f44d",
+      "EN-5fc6493a57c5f14e"
     ],
     "action": "发布",
     "object": "Claude Code v2.1.187 发布",
@@ -109,7 +112,8 @@
     "event_time": "2026-06-23T17:00:00.000Z",
     "disclosed_at": "2026-06-23T17:00:00.000Z",
     "entities": [
-      "EN-c70eca6b0f88f44d"
+      "EN-c70eca6b0f88f44d",
+      "EN-d0a0acb9a5ef0560"
     ],
     "action": "发布",
     "object": "Claude Tag 研究预览版：常驻 Slack 的\"始终在线\"AI 智能体",
@@ -143,7 +147,8 @@
     "event_time": "2026-06-23T12:51:55.000Z",
     "disclosed_at": "2026-06-23T12:51:55.000Z",
     "entities": [
-      "EN-916a98f0fa2a39af"
+      "EN-916a98f0fa2a39af",
+      "EN-d6d6e4e33c59b45e"
     ],
     "action": "开源 CUGA：轻量级智能体框架",
     "object": "，提供二十余个单文件示例应用",
@@ -173,124 +178,98 @@
   },
   {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "",
-    "disclosed_at": "2026-06-24T01:53:52.370Z",
-    "entities": [
-      "EN-9fbf261b62c1d7c0",
-      "EN-7d3194f79e645c42"
-    ],
-    "action": "Launches with $9",
-    "object": "8M to Build AI That Actually Knows Your Organization",
+    "disclosed_at": "2026-06-24T01:53:52.387Z",
+    "entities": [],
+    "action": "raised",
+    "object": "$40 million for AI | Fortune",
     "metrics": [
-      "$98M"
+      "$40 million",
+      "$34 million",
+      "$6 million",
+      "$700 billion",
+      "$380 million"
     ],
     "locations": [],
     "claim_refs": [
-      "CL-8de6ccc6bf564bea",
-      "CL-e6a9e177ffa3cf4c",
-      "CL-9f43e1adf8a4335d",
-      "CL-c670bdd8d20e60bb"
+      "CL-396ce3ff688f212b",
+      "CL-98c3be5a68811e0a",
+      "CL-103014ff1eaad700",
+      "CL-5fbfe2078c8475ca"
     ],
     "source_refs": [
-      "SA-531a5f97b7c01835"
+      "SA-b5680d1bceac0234"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "entities",
+      "event_time",
+      "display_title_zh"
+    ],
     "update_history": [
       {
-        "source_ref": "SA-531a5f97b7c01835",
-        "disclosed_at": "2026-06-24T01:53:52.370Z",
-        "status": "announced"
+        "source_ref": "SA-b5680d1bceac0234",
+        "disclosed_at": "2026-06-24T01:53:52.387Z",
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-adf92ecb7cd8714f",
-    "display_title_zh": "Microsoft 完成 9800 万美元融资"
+    "event_id": "EV-da6fe8c311fc8406",
+    "display_title_zh": ""
   },
   {
     "event_type": "funding",
-    "event_status": "announced",
-    "event_time": "",
-    "disclosed_at": "2026-06-24T01:53:52.375Z",
-    "entities": [
-      "EN-b0532e1af75cc4ab"
-    ],
-    "action": "Raises",
-    "object": "Pre-Seed Round to Bring Deterministic AI Workflows to Enterprises at a Fraction of the Token Cost",
-    "metrics": [
-      "$3 million"
-    ],
-    "locations": [],
-    "claim_refs": [
-      "CL-d667a623ece112e0",
-      "CL-ad0c7e102da804e2",
-      "CL-0bcf4b9093eb6d6c",
-      "CL-3c1627fe12157979"
-    ],
-    "source_refs": [
-      "SA-fb309372649c99dc"
-    ],
-    "conflicts": [],
-    "missing_fields": [],
-    "update_history": [
-      {
-        "source_ref": "SA-fb309372649c99dc",
-        "disclosed_at": "2026-06-24T01:53:52.375Z",
-        "status": "announced"
-      }
-    ],
-    "publication_status": "verified",
-    "event_id": "EV-c808bd4cb76bda9e",
-    "display_title_zh": "Rime 完成 300 万美元 种子前轮融资"
-  },
-  {
-    "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "",
     "disclosed_at": "2026-06-24T01:53:52.426Z",
     "entities": [
+      "EN-f346eaca864441f9",
       "EN-b0532e1af75cc4ab",
-      "EN-c70eca6b0f88f44d",
-      "EN-8147e6fed86d42c1"
+      "EN-c70eca6b0f88f44d"
     ],
     "action": "Raises",
     "object": "$17M Series A to Build an Agentic Marketing Platform",
     "metrics": [
-      "$17 million"
+      "$17 million",
+      "15.3%",
+      "30%"
     ],
     "locations": [
       "US"
     ],
     "claim_refs": [
       "CL-c17d8623ee553ae3",
-      "CL-02d3bcef8f2ae5fc",
+      "CL-abdd70acf4c596cc",
       "CL-ebcb82c7d0d4163c",
-      "CL-ab6ff0345676a50b"
+      "CL-02d3bcef8f2ae5fc"
     ],
     "source_refs": [
       "SA-880bf76d050f1840"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-880bf76d050f1840",
         "disclosed_at": "2026-06-24T01:53:52.426Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-7aaed0a2ae5cf8b6",
-    "display_title_zh": "Rime 完成 1700 万美元 A 轮融资"
+    "event_id": "EV-e7dcecaed5a0ee5b",
+    "display_title_zh": "JustAI 获1700万美元A轮融资，打造智能营销平台"
   },
   {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "",
     "disclosed_at": "2026-06-24T01:53:52.430Z",
     "entities": [
-      "EN-4728b0c37dc84206"
+      "EN-4728b0c37dc84206",
+      "EN-96eebba49dbbf422"
     ],
     "action": "closes",
     "object": "on $38M round to help companies automate repetitive work with AI teammates - SiliconANGLE",
@@ -311,28 +290,32 @@
       "SA-e51af1a2c6cb4a93"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-e51af1a2c6cb4a93",
         "disclosed_at": "2026-06-24T01:53:52.430Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
     "event_id": "EV-1306e17cf1f3553e",
-    "display_title_zh": "Convey 完成 3800 万美元 A 轮融资"
+    "display_title_zh": "Convey完成3800万美元融资，用AI队友助企业自动化重复性工作 - SiliconANGLE"
   },
   {
-    "event_type": "hardware_product",
+    "event_type": "product_release",
     "event_status": "completed",
     "event_time": "2026-06-23T12:56:21.000Z",
     "disclosed_at": "2026-06-23T12:56:21.000Z",
     "entities": [
-      "EN-8d4321d936320802"
+      "EN-b34aa8e97b2c2454",
+      "EN-8d4321d936320802",
+      "EN-85852fd45706e894"
     ],
-    "action": "发布新一代超算 AI 服务器 PowerEdge XE8812：每机架 144 GPU",
-    "object": "，全液冷设计",
+    "action": "发布",
+    "object": "新一代超算 AI 服务器 PowerEdge XE8812：每机架 144 GPU，全液冷设计",
     "metrics": [],
     "locations": [],
     "claim_refs": [
@@ -354,7 +337,7 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-3456f723929eff1b",
+    "event_id": "EV-e2db9c4e7c16ae7a",
     "display_title_zh": "戴尔发布新一代超算 AI 服务器 PowerEdge XE8812：每机架 144 GPU，全液冷设计"
   },
   {
@@ -363,12 +346,14 @@
     "event_time": "2026-06-23T01:57:03.000Z",
     "disclosed_at": "2026-06-23T01:57:03.000Z",
     "entities": [
+      "EN-0b79cf2de0ee6b8e",
       "EN-8d4321d936320802"
     ],
     "action": "完成新一轮 6.5 亿美元融资",
     "object": "Groq 与英伟达交易后转型 AI 推理 CSP，完成新一轮 6.5 亿美元融资",
     "metrics": [
       "6.5 亿",
+      "200 亿",
       "44.11 亿"
     ],
     "locations": [
@@ -377,6 +362,7 @@
     "claim_refs": [
       "CL-520f84ae45d1e439",
       "CL-32b67bb175b0cb53",
+      "CL-588cf4409f27236d",
       "CL-837a82491d3af42f"
     ],
     "source_refs": [
@@ -394,7 +380,7 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-d16fc5601c04a6a2",
+    "event_id": "EV-4118202ed0f91895",
     "display_title_zh": "Groq 与英伟达交易后转型 AI 推理 CSP，完成新一轮 6.5 亿美元融资"
   },
   {
@@ -403,7 +389,9 @@
     "event_time": "2026-06-23T06:16:33.000Z",
     "disclosed_at": "2026-06-23T06:16:33.000Z",
     "entities": [
-      "EN-ac123e56b0168ec2"
+      "EN-ac123e56b0168ec2",
+      "EN-fdc6b157616f12a8",
+      "EN-d4c633f24b48fcc4"
     ],
     "action": "推出",
     "object": "多智能体编排系统 Sakana Fugu",
@@ -448,8 +436,7 @@
     "claim_refs": [
       "CL-5235cd42bfff905b",
       "CL-46ac6cbd1021dcd4",
-      "CL-cfdb48c1bc541e64",
-      "CL-f6015ff7b04dbf07"
+      "CL-cfdb48c1bc541e64"
     ],
     "source_refs": [
       "SA-36fbc56110b2817d"
@@ -466,6 +453,44 @@
     "publication_status": "verified",
     "event_id": "EV-e88fc7702acc5d3b",
     "display_title_zh": "微信上线高考 AI 志愿助手，可在搜一搜直接语音提问"
+  },
+  {
+    "event_type": "product_release",
+    "event_status": "announced",
+    "event_time": "2026-06-23T02:54:37.000Z",
+    "disclosed_at": "2026-06-23T02:54:37.000Z",
+    "entities": [
+      "EN-5388bc10736a0eff",
+      "EN-43a340bb75b45f02"
+    ],
+    "action": "product_release",
+    "object": "字节跳动豆包大模型日均tokens调用量达180万亿，梁汝波称聚焦提升大模型能力",
+    "metrics": [
+      "180 万",
+      "2 亿"
+    ],
+    "locations": [],
+    "claim_refs": [
+      "CL-9e8764d924d0e1bd",
+      "CL-5f984d01edfee167",
+      "CL-23558124d690d10b",
+      "CL-3f773e3e7eba5e14"
+    ],
+    "source_refs": [
+      "SA-25c0b5db5f2afaf7"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-25c0b5db5f2afaf7",
+        "disclosed_at": "2026-06-23T02:54:37.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-c7404765df94a3b4",
+    "display_title_zh": "字节跳动豆包大模型日均tokens调用量达180万亿，梁汝波称聚焦提升大模型能力"
   },
   {
     "event_type": "model_release",
@@ -511,14 +536,18 @@
     "event_time": "2026-06-23T10:03:08.000Z",
     "disclosed_at": "2026-06-23T10:03:08.000Z",
     "entities": [
-      "EN-9c8ae69b84f21a2e"
+      "EN-0666a703033ebd1b",
+      "EN-9c8ae69b84f21a2e",
+      "EN-30a63b26b06e096e"
     ],
     "action": "推出",
     "object": "Agently Mail，为AI智能体提供专属邮箱服务",
     "metrics": [],
     "locations": [],
     "claim_refs": [
-      "CL-3a5697d62cea7b5e"
+      "CL-3a5697d62cea7b5e",
+      "CL-acbba404b4cb7f94",
+      "CL-380ea0da32168193"
     ],
     "source_refs": [
       "SA-52bf9473bad09232"
@@ -533,25 +562,26 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-3526144877bc9400",
+    "event_id": "EV-1a073cd22d1bfa59",
     "display_title_zh": "QQ邮箱推出Agently Mail，为AI智能体提供专属邮箱服务"
   },
   {
-    "event_type": "model_release",
+    "event_type": "product_release",
     "event_status": "completed",
     "event_time": "2026-06-23T12:12:40.000Z",
     "disclosed_at": "2026-06-23T12:12:40.000Z",
     "entities": [
       "EN-46a4eebd20d881ec"
     ],
-    "action": "发布自有 AI 模型",
-    "object": "、新 Git 平台和移动应用",
+    "action": "发布",
+    "object": "自有 AI 模型、新 Git 平台和移动应用",
     "metrics": [],
     "locations": [],
     "claim_refs": [
       "CL-f6dab6c945dd31eb",
-      "CL-4f1403785198f82d",
-      "CL-34000c579a4c6bc9"
+      "CL-34000c579a4c6bc9",
+      "CL-5f096f29e3814c7f",
+      "CL-4f1403785198f82d"
     ],
     "source_refs": [
       "SA-e7264c42b26f6fce"
@@ -566,7 +596,7 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-9c47099ed5d824a7",
+    "event_id": "EV-c3babb7738875383",
     "display_title_zh": "Cursor 发布自有 AI 模型、新 Git 平台和移动应用"
   },
   {
@@ -575,6 +605,7 @@
     "event_time": "2026-06-24T01:12:25.000Z",
     "disclosed_at": "2026-06-24T01:12:25.000Z",
     "entities": [
+      "EN-c39551756f4e2d96",
       "EN-5388bc10736a0eff"
     ],
     "action": "推出",
@@ -583,7 +614,9 @@
     "locations": [],
     "claim_refs": [
       "CL-793eac136353a79c",
-      "CL-9201513bd6d50985"
+      "CL-9201513bd6d50985",
+      "CL-075cf7aa54eb1449",
+      "CL-514f195adde0840a"
     ],
     "source_refs": [
       "SA-224cf1f8df8d5b49"
@@ -598,7 +631,79 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-b7dc60c0b63b6063",
+    "event_id": "EV-620f5ebfb6ac81ac",
     "display_title_zh": "豆包正式推出专业版，连续包月68元起、最高500元"
+  },
+  {
+    "event_type": "product_release",
+    "event_status": "announced",
+    "event_time": "2026-06-23T07:17:57.000Z",
+    "disclosed_at": "2026-06-23T07:17:57.000Z",
+    "entities": [
+      "EN-7d3194f79e645c42",
+      "EN-c70eca6b0f88f44d",
+      "EN-d8494bb34d6ddc43"
+    ],
+    "action": "product_release",
+    "object": "超Claude Mythos 5成绩：OpenAI最强\"抓虫AI\"GPT-5.5-Cyber刷新CyberGym纪录",
+    "metrics": [
+      "81.8%",
+      "83.8%"
+    ],
+    "locations": [],
+    "claim_refs": [
+      "CL-20513dc0c0a32c40",
+      "CL-fc6c68e6a9647111",
+      "CL-447dbf1c3c89777c",
+      "CL-648078b991a89b97"
+    ],
+    "source_refs": [
+      "SA-a3182ee541a8bdba"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-a3182ee541a8bdba",
+        "disclosed_at": "2026-06-23T07:17:57.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-482df8a8ef264238",
+    "display_title_zh": "超Claude Mythos 5成绩：OpenAI最强\"抓虫AI\"GPT-5.5-Cyber刷新CyberGym纪录"
+  },
+  {
+    "event_type": "product_release",
+    "event_status": "announced",
+    "event_time": "2026-06-23T07:54:29.000Z",
+    "disclosed_at": "2026-06-23T07:54:29.000Z",
+    "entities": [
+      "EN-b3f3ddb837329753"
+    ],
+    "action": "product_release",
+    "object": "比亚迪超级智能体\"迪迪虾\"确认登陆腾势N8L闪充版，新车今晚上市",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-1ba5198d507629e8",
+      "CL-b3d74ae78b8f740e",
+      "CL-edc694057aafff37"
+    ],
+    "source_refs": [
+      "SA-dc0904838556a92c"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-dc0904838556a92c",
+        "disclosed_at": "2026-06-23T07:54:29.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-93ed02a096b932af",
+    "display_title_zh": "比亚迪超级智能体\"迪迪虾\"确认登陆腾势N8L闪充版，新车今晚上市"
   }
 ]

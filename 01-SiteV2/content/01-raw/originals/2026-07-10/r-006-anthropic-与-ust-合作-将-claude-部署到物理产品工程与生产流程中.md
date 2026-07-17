@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-006
 title: "Anthropic 与 UST 合作，将 Claude 部署到物理产品工程与生产流程中"
 title_zh: "Anthropic 与 UST 合作，将 Claude 部署到物理产品工程与生产流程中"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.anthropic.com/news/ust-claude"
 canonical_url: "https://anthropic.com/news/ust-claude"
 source_name: "Anthropic：Newsroom（网页）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-10T01:59:44.103Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Anthropic 与 UST 合作，将 Claude 部署到物理产品工程与生产流程中

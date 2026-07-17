@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"AI记事本公司Plaud宣布售出超200
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Plaud：AI记事本销量超200万台，订阅业务ARR突破1亿美元"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Plaud：AI记事本销量超200万台，订阅业务ARR突破1亿美元

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"workflow_change","text":"How Rippling built production A
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_zh: "Rippling 如何在6个月内借助 Deep Agents 和 LangSmith 构建生产级 AI"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # How Rippling built production AI in 6 months with Deep Agents and LangSmith

@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-049
 title: "腾讯发布开源MoE模型Hy3，性能声称匹敌5倍规模"
 title_zh: "腾讯发布开源MoE模型Hy3，性能声称匹敌5倍规模"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://the-decoder.com/tencent-releases-hy3-open-source-model-that-allegedly-matches-models-up-to-five-times-its-active-size"
 canonical_url: "https://the-decoder.com/tencent-releases-hy3-open-source-model-that-allegedly-matches-models-up-to-five-times-its-active-size"
 source_name: "The Decoder：AI News（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-07T02:46:59.777Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 腾讯发布开源MoE模型Hy3，性能声称匹敌5倍规模

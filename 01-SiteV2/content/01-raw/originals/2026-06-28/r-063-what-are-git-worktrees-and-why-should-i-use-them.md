@@ -72,6 +72,10 @@ key_excerpts: [{"type":"company_action","text":"Git worktrees have been around s
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_zh: "什么是 git worktrees，以及为什么应该使用它们？"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # What are git worktrees, and why should I use them?

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"company_action","text":"提醒一下，你可以使用 C
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "Codex 现已支持所有开源模型"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Codex 现已支持所有开源模型

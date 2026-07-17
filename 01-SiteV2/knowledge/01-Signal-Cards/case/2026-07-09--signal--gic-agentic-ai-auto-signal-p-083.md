@@ -2,7 +2,7 @@
 id: SIG-20260709-A08
 type: signal_card
 signal_type: case
-title: "GIC Agentic AI 案例：节省工时并保留关系优先文化"
+title: "GIC代理型AI案例研究：节省工时，维护以关系为先的文化 | Prowess Consulting"
 date: 2026-07-09
 status: published
 source_title: "GIC Agentic AI Case Study: Hours Saved, Relationship-First Culture Preserved | Prowess Consulting"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "GIC Agentic AI"
 
 frontend:
-  displayTitle: "GIC Agentic AI 案例：节省工时并保留关系优先文化"
+  displayTitle: "GIC代理型AI案例研究：节省工时，维护以关系为先的文化 | Prowess Consulting"
   sourceLinks:
     - "https://prowessconsulting.com/case-studies/gic-agentic-ai/"
 ---
 
-# GIC Agentic AI 案例：节省工时并保留关系优先文化
+# GIC代理型AI案例研究：节省工时，维护以关系为先的文化 | Prowess Consulting
 
 ## 新闻事实
 

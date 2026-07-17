@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-041
 title: "From AI pilots to autonomous lending: Inside L&T Finance's enterprise AI journey - Express Computer"
-title_zh: "从人工智能试点到自主贷款：了解L&T Finance的企业人工智能之旅- Express Computer"
-title_translation_status: translated
-title_translation_method: mymemory_title_translation
+title_zh: "从AI试点到自主借贷：L&T金融的企业AI之旅"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.expresscomputer.in/amp/exclusives/from-ai-pilots-to-autonomous-lending-inside-lt-finances-enterprise-ai-journey/136627/"
 canonical_url: "https://expresscomputer.in/amp/exclusives/from-ai-pilots-to-autonomous-lending-inside-lt-finances-enterprise-ai-journey/136627"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-10T01:59:53.161Z
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # From AI pilots to autonomous lending: Inside L&T Finance's enterprise AI journey - Express Computer

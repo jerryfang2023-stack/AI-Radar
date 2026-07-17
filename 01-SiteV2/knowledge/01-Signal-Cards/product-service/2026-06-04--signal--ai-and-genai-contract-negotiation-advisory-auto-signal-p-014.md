@@ -2,7 +2,7 @@
 id: SIG-20260604-A11
 type: signal_card
 signal_type: product_service
-title: "AI & GenAI Contract Negotiation Advisory 发布 AI 能力，指向销售和收入团队流程"
+title: "AI与GenAI合同谈判咨询 | IT谈判"
 date: 2026-06-04
 status: published
 asset_level: frontstage
@@ -58,7 +58,7 @@ signal_owner: "AI & GenAI Contract Negotiation Advisory"
 watch_reason: "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
 
 frontend:
-  displayTitle: "AI & GenAI Contract Negotiation Advisory 发布 AI 能力，指向销售和收入团队流程"
+  displayTitle: "AI与GenAI合同谈判咨询 | IT谈判"
   eventLine: "AI & GenAI Contract Negotiation Advisory 发布新的 AI 能力，面向销售和收入团队流程。"
   whyWatch: "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"
   businessMeaning: "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
@@ -68,7 +68,7 @@ frontend:
     - "https://itnegotiationservices.com/services/genai"
 ---
 
-# AI & GenAI Contract Negotiation Advisory 发布 AI 能力，指向销售和收入团队流程
+# AI与GenAI合同谈判咨询 | IT谈判
 
 ## 信号底稿
 

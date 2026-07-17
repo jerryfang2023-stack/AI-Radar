@@ -72,6 +72,10 @@ key_excerpts: [{"type":"supporting_context","text":"Cursor 近日推出 Auto-rev
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "Cursor 推出 Auto-review 机制：用分类器智能体动态管控智能体自主权限"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Cursor 推出 Auto-review 机制：用分类器智能体动态管控智能体自主权限

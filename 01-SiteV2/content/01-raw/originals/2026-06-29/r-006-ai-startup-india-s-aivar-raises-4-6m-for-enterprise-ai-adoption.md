@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Coimbatore-based Aivar has secured $4.6
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only
+title_zh: "AI初创公司：印度Aivar融资460万美元推动企业AI应用"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # AI Startup: India's Aivar Raises $4.6M for Enterprise AI Adoption

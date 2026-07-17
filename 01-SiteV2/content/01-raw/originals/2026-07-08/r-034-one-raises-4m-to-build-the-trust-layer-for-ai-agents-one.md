@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-034
 title: "One raises $4M to build the trust layer for AI agents | One"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "One 筹集400万美元，为AI代理构建信任层"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.withone.ai/blog/one-raises-4m-trust-layer-ai-agents"
 canonical_url: "https://withone.ai/blog/one-raises-4m-trust-layer-ai-agents"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-08T04:39:25.608Z
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # One raises $4M to build the trust layer for AI agents | One

@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-004
 title: "Claude Code v2.1.207 发布"
 title_zh: "Claude Code v2.1.207 发布"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://github.com/anthropics/claude-code/releases/tag/v2.1.207"
 canonical_url: "https://github.com/anthropics/claude-code/releases/tag/v2.1.207"
 source_name: "Claude Code：GitHub Releases（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-11T04:06:31.336Z
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Claude Code v2.1.207 发布

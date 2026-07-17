@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"2026年6月12日，美国商务部依据
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "美国商务部下令Anthropic全球关闭Fable 5和Mythos 5"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 美国商务部下令Anthropic全球关闭Fable 5和Mythos 5

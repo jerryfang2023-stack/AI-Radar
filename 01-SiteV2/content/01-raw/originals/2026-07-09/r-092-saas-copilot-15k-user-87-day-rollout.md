@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-092
 title: "SaaS Copilot: 15K-User 87-Day Rollout"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "SaaS Copilot：1.5万用户87天部署完成"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.copilotconsulting.com/case-studies/technology-saas-company"
 canonical_url: "https://copilotconsulting.com/case-studies/technology-saas-company"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-09T03:05:45.324Z
 theme: aihot-fallback-case
 keyword_group: aihot-fallback-case
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # SaaS Copilot: 15K-User 87-Day Rollout

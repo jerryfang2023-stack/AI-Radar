@@ -2,7 +2,7 @@
 id: SIG-20260619-A19
 type: signal_card
 signal_type: product_service
-title: "Claude Code 现已支持 artifacts 推出 Agent 工作流能力，切入地产和建筑设计工作流"
+title: "Claude Code 现已支持 artifacts"
 date: 2026-06-19
 status: published
 source_title: "Claude Code 现已支持 artifacts"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "Claude Code 现已支持 artifacts"
 
 frontend:
-  displayTitle: "Claude Code 现已支持 artifacts 推出 Agent 工作流能力，切入地产和建筑设计工作流"
+  displayTitle: "Claude Code 现已支持 artifacts"
   sourceLinks:
     - "https://claude.com/blog/artifacts-in-claude-code"
 ---
 
-# Claude Code 现已支持 artifacts 推出 Agent 工作流能力，切入地产和建筑设计工作流
+# Claude Code 现已支持 artifacts
 
 ## 新闻事实
 

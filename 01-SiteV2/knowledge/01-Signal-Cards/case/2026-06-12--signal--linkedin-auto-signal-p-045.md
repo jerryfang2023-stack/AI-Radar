@@ -2,7 +2,7 @@
 id: SIG-20260612-A14
 type: signal_card
 signal_type: case
-title: "Linkedin 案例：AI 进入模型部署和算力调用"
+title: "GitHub企业版采用推动376%投资回报率 - LinkedIn"
 date: 2026-06-12
 status: published
 source_title: "GitHub Enterprise Adoption Drives 376% ROI - LinkedIn"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Linkedin"
 
 frontend:
-  displayTitle: "Linkedin 案例：AI 进入模型部署和算力调用"
+  displayTitle: "GitHub企业版采用推动376%投资回报率 - LinkedIn"
   sourceLinks:
     - "https://www.linkedin.com/posts/prakash-kantumutchu_github-devops-agenticai-activity-7412716282040709120-GgJp"
 ---
 
-# Linkedin 案例：AI 进入模型部署和算力调用
+# GitHub企业版采用推动376%投资回报率 - LinkedIn
 
 ## 新闻事实
 

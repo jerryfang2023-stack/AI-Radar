@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-036
 title: "Cloudflare 推出 Precursor：通过持续客户端信号检测 AI 智能体行为"
 title_zh: "Cloudflare 推出 Precursor：通过持续客户端信号检测 AI 智能体行为"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://blog.cloudflare.com/introducing-precursor"
 canonical_url: "https://blog.cloudflare.com/introducing-precursor"
 source_name: "Cloudflare Blog"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-14T01:56:51.519Z
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Cloudflare 推出 Precursor：通过持续客户端信号检测 AI 智能体行为

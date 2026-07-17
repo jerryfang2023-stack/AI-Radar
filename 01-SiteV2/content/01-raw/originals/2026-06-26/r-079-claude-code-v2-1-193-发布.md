@@ -72,6 +72,10 @@ key_excerpts: [{"type":"company_action","text":"Claude Code v2.1.193 新增 `aut
 theme: technical-iteration-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "Claude Code v2.1.193 发布"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Claude Code v2.1.193 发布

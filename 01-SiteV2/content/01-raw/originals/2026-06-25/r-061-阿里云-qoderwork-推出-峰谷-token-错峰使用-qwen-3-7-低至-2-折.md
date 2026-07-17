@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"阿里云公告称，QoderWork 推出\"�
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "阿里云：QoderWork 推出\"峰谷 Token\"，错峰使用 Qwen 3.7 低至 2 折"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 阿里云：QoderWork 推出"峰谷 Token"，错峰使用 Qwen 3.7 低至 2 折

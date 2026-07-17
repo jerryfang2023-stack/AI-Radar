@@ -2,7 +2,7 @@
 id: SIG-20260614-A04
 type: signal_card
 signal_type: product_service
-title: "Anthropic 推出 Agent 工作流能力，切入模型部署和算力服务"
+title: "Anthropic 暂停新模型访问，印度辩论 AI 未来"
 date: 2026-06-14
 status: published
 source_title: "Anthropic 暂停新模型访问，印度辩论 AI 未来"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Anthropic"
 
 frontend:
-  displayTitle: "Anthropic 推出 Agent 工作流能力，切入模型部署和算力服务"
+  displayTitle: "Anthropic 暂停新模型访问，印度辩论 AI 未来"
   sourceLinks:
     - "https://techcrunch.com/2026/06/13/as-anthropic-suspends-access-to-new-models-india-debates-its-ai-future"
 ---
 
-# Anthropic 推出 Agent 工作流能力，切入模型部署和算力服务
+# Anthropic 暂停新模型访问，印度辩论 AI 未来
 
 ## 新闻事实
 

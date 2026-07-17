@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Here are the 55 US AI startups that rai
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "2025年55家美国AI初创公司融资超1亿美元"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Here are the 55 US AI startups that raised $100M or more in 2025

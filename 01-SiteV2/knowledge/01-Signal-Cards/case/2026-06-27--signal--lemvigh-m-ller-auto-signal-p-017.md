@@ -2,7 +2,7 @@
 id: SIG-20260627-A05
 type: signal_card
 signal_type: case
-title: "Lemvigh‑Müller: AI Automates Order Confirmations"
+title: "Lemvigh‑Müller：AI 自动处理订单确认 | SAP 新闻"
 date: 2026-06-27
 status: published
 source_title: "Lemvigh‑Müller: AI Automates Order Confirmations | SAP News"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Lemvigh‑Müller"
 
 frontend:
-  displayTitle: "Lemvigh‑Müller: AI Automates Order Confirmations"
+  displayTitle: "Lemvigh‑Müller：AI 自动处理订单确认 | SAP 新闻"
   sourceLinks:
     - "https://news.sap.com/2026/06/lemvigh-muller-ai-agents-order-confirmations/"
 ---
 
-# Lemvigh‑Müller: AI Automates Order Confirmations
+# Lemvigh‑Müller：AI 自动处理订单确认 | SAP 新闻
 
 ## 新闻事实
 

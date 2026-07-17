@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"Meta效仿SpaceX，将大量购入的Nvi
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Meta效仿SpaceX建立云业务，转售闲置AI算力"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Meta效仿SpaceX建立云业务，转售闲置AI算力

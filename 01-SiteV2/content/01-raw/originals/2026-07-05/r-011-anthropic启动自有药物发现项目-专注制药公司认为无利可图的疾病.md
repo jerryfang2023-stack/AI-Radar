@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-011
 title: "Anthropic启动自有药物发现项目，专注制药公司认为无利可图的疾病"
 title_zh: "Anthropic启动自有药物发现项目，专注制药公司认为无利可图的疾病"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://the-decoder.com/anthropic-launches-its-own-drug-discovery-programs-to-tackle-diseases-big-pharma-considers-unprofitable"
 canonical_url: "https://the-decoder.com/anthropic-launches-its-own-drug-discovery-programs-to-tackle-diseases-big-pharma-considers-unprofitable"
 source_name: "The Decoder：AI News（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-05T04:56:15.153Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Anthropic启动自有药物发现项目，专注制药公司认为无利可图的疾病

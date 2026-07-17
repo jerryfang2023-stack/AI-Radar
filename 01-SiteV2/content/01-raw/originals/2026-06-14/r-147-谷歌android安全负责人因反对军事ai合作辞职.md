@@ -72,6 +72,10 @@ key_excerpts: [{"type":"supporting_context","text":"谷歌抛弃\"不作恶\"承
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "谷歌Android安全负责人因反对军事AI合作辞职"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 谷歌Android安全负责人因反对军事AI合作辞职

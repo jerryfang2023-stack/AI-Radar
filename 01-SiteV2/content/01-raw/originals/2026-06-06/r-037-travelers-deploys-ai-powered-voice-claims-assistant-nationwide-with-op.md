@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Travelers deploys AI-powered voice clai
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Travelers 借助 OpenAI Realtime API 在全国部署 AI 语音理赔助手"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Travelers deploys AI-powered voice claims assistant nationwide with OpenAI Realtime API | keepingupwith.ai

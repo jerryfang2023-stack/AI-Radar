@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-052
 title: "Anthropic 与三星洽谈定制 AI 芯片，同时强调英伟达仍重要"
 title_zh: "Anthropic 与三星洽谈定制 AI 芯片，同时强调英伟达仍重要"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://the-decoder.com/anthropic-reportedly-explores-custom-chip-manufacturing-with-samsung-while-insisting-nvidia-still-matters"
 canonical_url: "https://the-decoder.com/anthropic-reportedly-explores-custom-chip-manufacturing-with-samsung-while-insisting-nvidia-still-matters"
 source_name: "The Decoder：AI News（RSS）"
@@ -78,6 +78,7 @@ fact_extraction_completed_at: 2026-07-03T01:59:31.330Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Anthropic 与三星洽谈定制 AI 芯片，同时强调英伟达仍重要

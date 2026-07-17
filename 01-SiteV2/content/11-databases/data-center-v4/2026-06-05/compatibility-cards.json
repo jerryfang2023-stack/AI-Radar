@@ -23,8 +23,8 @@
     ]
   },
   {
-    "card_id": "CARD-22193ad6fb36f085",
-    "event_id": "EV-19ea623bb5eabdd5",
+    "card_id": "CARD-9010cae232a7ee1f",
+    "event_id": "EV-4bf0e4043c3562f2",
     "card_type": "product_service",
     "title": "NVIDIA AI 发布 Nemotron 3 Ultra：开源 550B MoE 混合 Mamba-Transformer，面向长时间运行智能体",
     "fact": "NVIDIA has released Nemotron 3 Ultra , the largest model in its Nemotron 3 family. It targets a specific problem: long-running agents that plan, call tools, and reason across many turns. As agents run longer, token counts grow and inference cost climbs. Nemotron 3 Ultra is designed to keep accuracy high while making that inference faster and cheaper.",
@@ -44,8 +44,8 @@
     "missing_fields": []
   },
   {
-    "card_id": "CARD-1b2099e8be2863c0",
-    "event_id": "EV-d31057c6f6ec28ba",
+    "card_id": "CARD-d4d2868f840c9388",
+    "event_id": "EV-dab4d3f2059e8880",
     "card_type": "product_service",
     "title": "Google Research 发布被动心率监测系统 PHRM",
     "fact": "In “ Passive Heart Rate Monitoring During Smartphone Use in Everyday Life ”, published in Nature , we introduce a research system (PHRM) that enables tracking of HR and RHR in the background during everyday smartphone use. PHRM leverages the front-facing camera to capture video of the user’s face in the seconds after face unlock events. It then applies deep learning to estimate HR with a mean absolute percentage error (MAPE) < 10% compared to electrocardiogram -derived ground truth, meeting industry accuracy standards for people of all skin tones. Finally, the system integrates HR measurements throughout the day into an estimate of daily RHR that matches the accuracy of wearables, with a mean absolute error (MAE) of < 5 beats per minute (bpm) compared to a wearable tracker. With our publication, we release the largest and most diverse dataset of smartphone videos publicly available for research along with a pre-trained “PHRM-mini” model. Qualified researchers can apply for access.",
@@ -65,10 +65,10 @@
     "missing_fields": []
   },
   {
-    "card_id": "CARD-c234d4b004fcf911",
-    "event_id": "EV-c28e0d02272537d8",
+    "card_id": "CARD-b1f9802fcfc9159d",
+    "event_id": "EV-cac9d9f31ef675ce",
     "card_type": "product_service",
-    "title": "OpenAI 发布 frameworks",
+    "title": "2026年构建AI代理的最佳开源框架",
     "fact": "Blog The best open source frameworks for building AI agents in 2026",
     "event_status": "announced",
     "publication_status": "verified",
@@ -83,15 +83,17 @@
       "SA-38c1fae4554f9306"
     ],
     "conflicts": [],
-    "missing_fields": []
+    "missing_fields": [
+      "event_time"
+    ]
   },
   {
     "card_id": "CARD-6c2faabba03d416d",
     "event_id": "EV-6ae3594aadfcd3d8",
     "card_type": "funding",
-    "title": "Archestra 完成 1000 万美元 种子前轮融资",
+    "title": "Archestra 融资1000万美元，为AI代理接入企业数据提供中介服务",
     "fact": "Archestra raises $10M to broker AI agent access to corporate data",
-    "event_status": "announced",
+    "event_status": "completed",
     "publication_status": "verified",
     "event_time": "",
     "claim_refs": [
@@ -104,13 +106,15 @@
       "SA-ddb6754de5b2017d"
     ],
     "conflicts": [],
-    "missing_fields": []
+    "missing_fields": [
+      "event_time"
+    ]
   },
   {
     "card_id": "CARD-0df5b85d11ad6810",
     "event_id": "EV-fa1b1efd77f36d56",
     "card_type": "product_service",
-    "title": "NVIDIA 发布 inference cost reduction enterprise adoption / intent=find_market_trend / path=a_media_gdelt",
+    "title": "2026-06-01T18:00:00Z / 查询=模型发布推理成本降低企业采用 / 意图=寻找市场趋势 / 路径=a_media_gdelt",
     "fact": "Today's launch builds on Aible's recent announcement on Secure AI for Business Users , which set out the broader context for fixed-cost, on-prem private AI in an era of rising token prices and growing security concerns with frontier models.",
     "event_status": "announced",
     "publication_status": "verified",
@@ -128,31 +132,33 @@
     "missing_fields": []
   },
   {
-    "card_id": "CARD-093deb47b53b9f67",
-    "event_id": "EV-f64345af2affb07d",
-    "card_type": "funding",
-    "title": "Meta 完成 300 万美元 D 轮融资",
+    "card_id": "CARD-9d84fd7aa512dddd",
+    "event_id": "EV-43301de739fe560e",
+    "card_type": "product_service",
+    "title": "前高盛与Meta创始人筹集300万美元，打造全球科技巨头忽视的语音AI基础设施",
     "fact": "Ex-Goldman Sachs and Meta founders raise $3M to build the voice AI infrastructure global tech giants overlooked",
     "event_status": "announced",
     "publication_status": "partial",
     "event_time": "",
     "claim_refs": [
       "CL-245355925d177ced",
-      "CL-9b15fec709aaa6de",
-      "CL-817a2d5ea3011f6d",
-      "CL-9f380d1ccd2641f3"
+      "CL-896ba25e2819e633",
+      "CL-822cea60c869f7d2",
+      "CL-142fe82a5fc48927"
     ],
     "source_refs": [
       "SA-b2672f0f309fb59d"
     ],
     "conflicts": [],
-    "missing_fields": []
+    "missing_fields": [
+      "event_time"
+    ]
   },
   {
-    "card_id": "CARD-7da6aa10501662af",
-    "event_id": "EV-7fa23cf0102a8f92",
+    "card_id": "CARD-ba01dbc59804ed93",
+    "event_id": "EV-5493c61bcbe58aa2",
     "card_type": "product_service",
-    "title": "Google 发布 on Google Cloud Marketplace",
+    "title": "DataRobot AI Cloud 在 Google Cloud Marketplace 上线",
     "fact": "DataRobot AI Cloud Launches on Google Cloud Marketplace",
     "event_status": "announced",
     "publication_status": "verified",
@@ -167,13 +173,39 @@
       "SA-6167412f76ca2c15"
     ],
     "conflicts": [],
-    "missing_fields": []
+    "missing_fields": [
+      "event_time"
+    ]
+  },
+  {
+    "card_id": "CARD-c3c23efbdf4eecba",
+    "event_id": "EV-2749b10fd85fc58c",
+    "card_type": "case",
+    "title": "2026年企业实施AI的真实成本 - Riseup Labs",
+    "fact": "Home Article The True Cost of Implementing AI in Business in 2026",
+    "event_status": "announced",
+    "publication_status": "partial",
+    "event_time": "",
+    "claim_refs": [
+      "CL-3b146b69b4409cf5",
+      "CL-b6ceaee6164fd64a",
+      "CL-5111ca3d28bbe54c",
+      "CL-a410cf9e165b75be"
+    ],
+    "source_refs": [
+      "SA-854910cb91ebbac6"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "entities",
+      "event_time"
+    ]
   },
   {
     "card_id": "CARD-556e41abd4d670a5",
     "event_id": "EV-922de7a46f447efa",
     "card_type": "product_service",
-    "title": "Microsoft 发布 Introducing the Agent Governance Toolkit",
+    "title": "微软开源推出Agent治理工具包",
     "fact": "Today, we’re sharing the Agent Governance Toolkit , an open-source project released under the Microsoft organization and MIT license that brings runtime security governance to autonomous AI agents. It is the first toolkit to address all 10 OWASP agentic AI risks with deterministic, sub-millisecond policy enforcement. It’s designed to work with the frameworks developers already use, not replace them.",
     "event_status": "announced",
     "publication_status": "verified",
@@ -189,7 +221,32 @@
     ],
     "conflicts": [],
     "missing_fields": [
-      "object"
+      "object",
+      "event_time"
+    ]
+  },
+  {
+    "card_id": "CARD-a743b0020130bb96",
+    "event_id": "EV-bc4ac955cd26b969",
+    "card_type": "product_service",
+    "title": "Anthropic 新咨询业务完成首次收购",
+    "fact": "Anthropic-Backed AI Services Firm Acquires Fractional AI in First Deal - Bloomberg",
+    "event_status": "announced",
+    "publication_status": "verified",
+    "event_time": "",
+    "claim_refs": [
+      "CL-1281dd1d28fa4571",
+      "CL-07c14baf1cb7dd94",
+      "CL-36157bbcba12611b",
+      "CL-7ca620e4dc33f3ea"
+    ],
+    "source_refs": [
+      "SA-02bebf42caf24cc8"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "object",
+      "event_time"
     ]
   }
 ]

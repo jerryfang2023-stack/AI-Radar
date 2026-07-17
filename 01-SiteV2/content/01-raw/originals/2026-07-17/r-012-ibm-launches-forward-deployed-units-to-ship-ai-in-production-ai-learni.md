@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-012
 title: "IBM Launches Forward Deployed Units to Ship AI in Production - AI Learning Guides"
 title_zh: "IBM 发布前线部署单元，将 AI 投入生产"
-title_translation_status: translated
-title_translation_method: business-rule_title_translation
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://ailearningguides.com/ibm-forward-deployed-units-ai-production/"
 canonical_url: "https://ailearningguides.com/ibm-forward-deployed-units-ai-production"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-17T04:40:16.844Z
 theme: enterprise-ai-implementation-signal
 keyword_group: enterprise-ai-implementation-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # IBM Launches Forward Deployed Units to Ship AI in Production - AI Learning Guides

@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-106
 title: "苹果起诉OpenAI挖角窃密，分析师称即使指控未证实也可能重创其硬件计划"
 title_zh: "苹果起诉OpenAI挖角窃密，分析师称即使指控未证实也可能重创其硬件计划"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/975/666.htm"
 canonical_url: "https://ithome.com/0/975/666.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-12T09:56:02.432Z
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 苹果起诉OpenAI挖角窃密，分析师称即使指控未证实也可能重创其硬件计划

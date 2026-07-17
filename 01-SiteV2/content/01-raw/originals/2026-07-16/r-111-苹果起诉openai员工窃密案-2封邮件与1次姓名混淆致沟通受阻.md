@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-111
 title: "苹果起诉OpenAI员工窃密案：2封邮件与1次姓名混淆致沟通受阻"
 title_zh: "苹果起诉OpenAI员工窃密案：2封邮件与1次姓名混淆致沟通受阻"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/977/291.htm"
 canonical_url: "https://ithome.com/0/977/291.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-16T02:39:34.045Z
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 苹果起诉OpenAI员工窃密案：2封邮件与1次姓名混淆致沟通受阻

@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-067
 title: "OpenAI 上线 GPT-5.6 系列模型，微软 Copilot 同步接入"
 title_zh: "OpenAI 上线 GPT-5.6 系列模型，微软 Copilot 同步接入"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/974/787.htm"
 canonical_url: "https://ithome.com/0/974/787.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-10T02:00:00.715Z
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # OpenAI 上线 GPT-5.6 系列模型，微软 Copilot 同步接入

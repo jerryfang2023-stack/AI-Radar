@@ -2,7 +2,7 @@
 id: SIG-20260627-A17
 type: signal_card
 signal_type: product_service
-title: "GitHub’s COO Explains Why AI Hasn’t Replaced Developers"
+title: "GitHub首席运营官解释为何AI尚未取代开发者"
 date: 2026-06-27
 status: published
 source_title: "GitHub’s COO Explains Why AI Hasn’t Replaced Developers"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Spotify"
 
 frontend:
-  displayTitle: "GitHub’s COO Explains Why AI Hasn’t Replaced Developers"
+  displayTitle: "GitHub首席运营官解释为何AI尚未取代开发者"
   sourceLinks:
     - "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/GitHubs-COO-Explains-Why-AI-Hasnt-Replaced-Developers-e3ktu6s"
 ---
 
-# GitHub’s COO Explains Why AI Hasn’t Replaced Developers
+# GitHub首席运营官解释为何AI尚未取代开发者
 
 ## 新闻事实
 

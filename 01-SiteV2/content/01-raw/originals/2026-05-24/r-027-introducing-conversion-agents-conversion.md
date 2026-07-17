@@ -72,6 +72,10 @@ key_excerpts: [{"type":"quote","text":"Introducing Conversion Agents | Conversio
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "推出转化代理 | 转化"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Introducing Conversion Agents | Conversion

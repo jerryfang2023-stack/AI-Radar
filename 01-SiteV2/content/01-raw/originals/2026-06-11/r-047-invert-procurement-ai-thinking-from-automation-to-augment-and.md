@@ -72,6 +72,10 @@ key_excerpts: [{"type":"supporting_context","text":"→ AI is automating routine
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "将采购AI思维从自动化转向增强与..."
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Invert Procurement AI Thinking from Automation to Augment and ...

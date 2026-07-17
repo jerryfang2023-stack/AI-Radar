@@ -2,7 +2,7 @@
 id: SIG-20260614-A14
 type: signal_card
 signal_type: product_service
-title: "Ithome 推出 Agent 工作流能力，切入物流订单处理"
+title: "三星打造50兆瓦海上浮动AI数据中心，获国际海事初步审批"
 date: 2026-06-14
 status: published
 source_title: "三星打造50兆瓦海上浮动AI数据中心，获国际海事初步审批"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Ithome"
 
 frontend:
-  displayTitle: "Ithome 推出 Agent 工作流能力，切入物流订单处理"
+  displayTitle: "三星打造50兆瓦海上浮动AI数据中心，获国际海事初步审批"
   sourceLinks:
     - "https://www.ithome.com/0/963/999.htm"
 ---
 
-# Ithome 推出 Agent 工作流能力，切入物流订单处理
+# 三星打造50兆瓦海上浮动AI数据中心，获国际海事初步审批
 
 ## 新闻事实
 

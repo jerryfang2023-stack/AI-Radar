@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"Agent tasks REST API now available 
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "GitHub Changelog：Copilot Pro、Pro+ 及 Max 现已支持代理任务 REST API"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Agent tasks REST API now available for Copilot Pro, Pro+, and Max - GitHub Changelog

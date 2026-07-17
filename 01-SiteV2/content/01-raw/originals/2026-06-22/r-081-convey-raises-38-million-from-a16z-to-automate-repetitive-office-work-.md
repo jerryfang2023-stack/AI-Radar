@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Convey Raises $38 Million From A16z to 
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only
+title_zh: "Convey获A16z投资3800万美元，用于自动化重复性办公室工作 - Business Insider"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Convey Raises $38 Million From A16z to Automate Repetitive Office Work - Business Insider

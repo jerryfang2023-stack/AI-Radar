@@ -2,7 +2,7 @@
 id: SIG-20260709-A05
 type: signal_card
 signal_type: funding
-title: "BidScript 获得 80 万美元融资，用于扩展公共和私营部门招投标 AI 平台"
+title: "BidScript获80万美元融资，推动AI平台升级公共与私营部门招投标流程 | FounderTrove"
 date: 2026-07-09
 status: published
 source_title: "BidScript Secures $800K to Scale AI Platform Modernizing Public and Private Sector Tendering | FounderTrove"
@@ -55,12 +55,12 @@ opportunity_signals:
 signal_owner: "BidScript"
 
 frontend:
-  displayTitle: "BidScript 获得 80 万美元融资，用于扩展公共和私营部门招投标 AI 平台"
+  displayTitle: "BidScript获80万美元融资，推动AI平台升级公共与私营部门招投标流程 | FounderTrove"
   sourceLinks:
     - "https://foundertrove.com/bidscript-secures-800k-to-scale-ai-platform-modernizing-public-and-private-sector-tendering"
 ---
 
-# BidScript 获得 80 万美元融资，用于扩展公共和私营部门招投标 AI 平台
+# BidScript获80万美元融资，推动AI平台升级公共与私营部门招投标流程 | FounderTrove
 
 ## 新闻事实
 

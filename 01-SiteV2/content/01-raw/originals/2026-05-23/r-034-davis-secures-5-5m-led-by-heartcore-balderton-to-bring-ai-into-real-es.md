@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Davis secures $5.5M led by Heartcore, B
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "Davis获得由Heartcore、Balderton领投的550万美元融资，将AI引入房地产设计工作流程"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Davis secures $5.5M led by Heartcore, Balderton to bring AI into real estate design workflows — TFN

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Texture Raises $12.5M to Tackle the Ope
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Texture 获 1250 万美元融资，应对现代电网运营复杂性"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Texture Raises $12.5M to Tackle the Operational Complexity of the Modern Grid

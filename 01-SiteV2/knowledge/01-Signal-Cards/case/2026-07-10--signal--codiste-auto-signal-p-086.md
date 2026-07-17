@@ -2,7 +2,7 @@
 id: SIG-20260710-A16
 type: signal_card
 signal_type: case
-title: "美国企业2026年人工智能代理采用状况： 50多位首席技术官的调查结果"
+title: "美国企业2026年AI代理采用现状：来自50多位CTO的调查结果"
 date: 2026-07-10
 status: published
 source_title: "The State of AI Agent Adoption in US Enterprise 2026: Findings From 50+ CTOs"
@@ -57,12 +57,12 @@ opportunity_signals:
 signal_owner: "Codiste"
 
 frontend:
-  displayTitle: "美国企业2026年人工智能代理采用状况： 50多位首席技术官的调查结果"
+  displayTitle: "美国企业2026年AI代理采用现状：来自50多位CTO的调查结果"
   sourceLinks:
     - "https://www.codiste.com/ai-agent-adoption-us-enterprise"
 ---
 
-# 美国企业2026年人工智能代理采用状况： 50多位首席技术官的调查结果
+# 美国企业2026年AI代理采用现状：来自50多位CTO的调查结果
 
 ## 新闻事实
 

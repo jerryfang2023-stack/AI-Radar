@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"Zendesk replaces deflection bots wi
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_zh: "Zendesk在Relate 2026上推出自主服务团队"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Zendesk Unveils Autonomous Service Workforce at Relate 2026

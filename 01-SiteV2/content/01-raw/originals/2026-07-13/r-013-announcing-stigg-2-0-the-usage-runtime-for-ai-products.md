@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-013
 title: "Announcing Stigg 2.0 - The Usage Runtime for AI Products"
 title_zh: "Stigg 发布 2.0：面向 AI 产品的用量运行时"
-title_translation_status: translated
-title_translation_method: source_title_translation_db
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://stigg.io/blog-posts/announcing-stigg-2-0-the-usage-runtime-for-ai-products"
 canonical_url: "https://stigg.io/blog-posts/announcing-stigg-2-0-the-usage-runtime-for-ai-products"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-13T10:23:56.717Z
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Announcing Stigg 2.0 - The Usage Runtime for AI Products

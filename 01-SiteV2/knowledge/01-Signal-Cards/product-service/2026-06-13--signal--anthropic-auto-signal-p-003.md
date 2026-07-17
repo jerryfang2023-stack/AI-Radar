@@ -2,7 +2,7 @@
 id: SIG-20260613-A15
 type: signal_card
 signal_type: product_service
-title: "Anthropic 推出 Agent 工作流能力，切入采购下单自动化"
+title: "Anthropic首次公众调查：近半美国人盼AI治愈疾病，超六成担忧失业"
 date: 2026-06-13
 status: published
 source_title: "Anthropic首次公众调查：近半美国人盼AI治愈疾病，超六成担忧失业"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Anthropic"
 
 frontend:
-  displayTitle: "Anthropic 推出 Agent 工作流能力，切入采购下单自动化"
+  displayTitle: "Anthropic首次公众调查：近半美国人盼AI治愈疾病，超六成担忧失业"
   sourceLinks:
     - "https://www.anthropic.com/news/anthropic-public-record"
 ---
 
-# Anthropic 推出 Agent 工作流能力，切入采购下单自动化
+# Anthropic首次公众调查：近半美国人盼AI治愈疾病，超六成担忧失业
 
 ## 新闻事实
 

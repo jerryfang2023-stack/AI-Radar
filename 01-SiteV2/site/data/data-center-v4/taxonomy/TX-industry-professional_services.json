@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-17T18:20:10.588Z",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 727,
-    "quarantinedEventCount": 50
+    "eventCount": 818,
+    "quarantinedEventCount": 58
   },
   "node": {
     "id": "TX-industry-professional_services",
@@ -17,191 +17,24 @@
     "typeLabel": "行业",
     "valueId": "professional_services",
     "eventIds": [
-      "EV-0f520c9e5b1ea1d2",
-      "EV-c9af33ffe65d236b",
-      "EV-e1e0a38da122caed"
+      "EV-e1e0a38da122caed",
+      "EV-39717cdbada984d7",
+      "EV-26183a56cf9ed63c"
     ],
     "entityIds": [
-      "EN-733859c1fc6b9331",
+      "EN-d74c69db63e4763f",
+      "EN-96eebba49dbbf422",
+      "EN-3b7491f6cfa8bb7a",
       "EN-7d3194f79e645c42"
     ],
-    "fdeIds": [],
+    "fdeIds": [
+      "FDE-0e1970e9eb17729f"
+    ],
     "hardwareIds": [],
-    "firstSeen": "2026-06-22",
-    "lastSeen": "2026-07-08"
+    "firstSeen": "2026-06-19",
+    "lastSeen": "2026-06-23"
   },
   "events": [
-    {
-      "id": "EV-0f520c9e5b1ea1d2",
-      "dataDate": "2026-07-08",
-      "date": "2026-07-08",
-      "updatedDate": "2026-07-08",
-      "eventType": "funding",
-      "eventTypeLabel": "融资",
-      "eventGroup": "融资与并购",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "Norm 完成 1.2 亿美元 C 轮融资",
-      "originalTitle": "AI law startup Norm raises $120M, hits unicorn valuation | TechCrunch",
-      "subject": "AI law startup Norm",
-      "action": "raises",
-      "object": "$120M, hits unicorn valuation",
-      "metrics": [
-        "$120M",
-        "$120 million",
-        "$1.2 billion"
-      ],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        }
-      ],
-      "facets": {
-        "product_form": [],
-        "use_case": [],
-        "industry": [
-          {
-            "dimensionId": "industry",
-            "id": "professional_services",
-            "dimensionName": "行业",
-            "name": "专业服务"
-          }
-        ],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        },
-        {
-          "dimensionId": "industry",
-          "id": "professional_services",
-          "dimensionName": "行业",
-          "name": "专业服务"
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        },
-        {
-          "dimensionId": "industry",
-          "id": "professional_services",
-          "dimensionName": "行业",
-          "name": "专业服务"
-        }
-      ],
-      "entityIds": [
-        "EN-733859c1fc6b9331"
-      ],
-      "entityNames": [
-        "Norm"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://techcrunch.com/2026/07/07/ai-law-startup-norm-raises-120m-hits-unicorn-valuation",
-      "publisher": "techcrunch.com"
-    },
-    {
-      "id": "EV-c9af33ffe65d236b",
-      "dataDate": "2026-07-08",
-      "date": "2026-07-08",
-      "updatedDate": "2026-07-08",
-      "eventType": "funding",
-      "eventTypeLabel": "融资",
-      "eventGroup": "融资与并购",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "OpenAI 完成 1.2 亿美元 C 轮融资",
-      "originalTitle": "Norm Ai Raises $120 Million at a $1.2 Billion Valuation Led by Khosla Ventures to Deliver the Full-Stack Model for Legal AI",
-      "subject": "Norm Ai",
-      "action": "Raises",
-      "object": "$120 Million at a $1.2 Billion Valuation Led by Khosla Ventures to Deliver the Full-Stack Model for Legal AI",
-      "metrics": [
-        "$120 million",
-        "$1.2 billion",
-        "$260 million",
-        "$30 trillion"
-      ],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        }
-      ],
-      "facets": {
-        "product_form": [],
-        "use_case": [],
-        "industry": [
-          {
-            "dimensionId": "industry",
-            "id": "professional_services",
-            "dimensionName": "行业",
-            "name": "专业服务"
-          }
-        ],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        },
-        {
-          "dimensionId": "industry",
-          "id": "professional_services",
-          "dimensionName": "行业",
-          "name": "专业服务"
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        },
-        {
-          "dimensionId": "industry",
-          "id": "professional_services",
-          "dimensionName": "行业",
-          "name": "专业服务"
-        }
-      ],
-      "entityIds": [
-        "EN-7d3194f79e645c42"
-      ],
-      "entityNames": [
-        "OpenAI"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://prnewswire.com/news-releases/norm-ai-raises-120-million-at-a-1-2-billion-valuation-led-by-khosla-ventures-to-deliver-the-full-stack-model-for-legal-ai-302819152.html",
-      "publisher": "prnewswire.com"
-    },
     {
       "id": "EV-e1e0a38da122caed",
       "dataDate": "2026-06-23",
@@ -222,6 +55,173 @@
       "locations": [],
       "missingFields": [
         "entities"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "professional_services",
+            "dimensionName": "行业",
+            "name": "专业服务"
+          },
+          {
+            "dimensionId": "industry",
+            "id": "technology",
+            "dimensionName": "行业",
+            "name": "科技与软件"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "id": "professional_services",
+          "dimensionName": "行业",
+          "name": "专业服务"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "technology",
+          "dimensionName": "行业",
+          "name": "科技与软件"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "id": "professional_services",
+          "dimensionName": "行业",
+          "name": "专业服务"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "technology",
+          "dimensionName": "行业",
+          "name": "科技与软件"
+        }
+      ],
+      "entityIds": [],
+      "entityNames": [],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://the-decoder.com/vibecoding-is-becoming-a-deal-breaker-test-for-software-acquisitions",
+      "publisher": "The Decoder：AI News（RSS）"
+    },
+    {
+      "id": "EV-39717cdbada984d7",
+      "dataDate": "2026-06-19",
+      "date": "2026-06-19",
+      "updatedDate": "2026-06-19",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "AI代理授权初创公司Arcade获得6000万美元投资 - SiliconANGLE",
+      "originalTitle": "AI agent authorization startup Arcade nabs $60M investment - SiliconANGLE",
+      "subject": "AI agent authorization startup Arcade",
+      "action": "nabs",
+      "object": "$60M investment - SiliconANGLE",
+      "metrics": [
+        "$60M",
+        "$60 million",
+        "$12 million"
+      ],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "professional_services",
+            "dimensionName": "行业",
+            "name": "专业服务"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "professional_services",
+          "dimensionName": "行业",
+          "name": "专业服务"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "professional_services",
+          "dimensionName": "行业",
+          "name": "专业服务"
+        }
+      ],
+      "entityIds": [
+        "EN-d74c69db63e4763f",
+        "EN-96eebba49dbbf422"
+      ],
+      "entityNames": [
+        "Arcade",
+        "Intel"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://siliconangle.com/2026/06/15/ai-agent-authorization-startup-arcade-nabs-60m-investment",
+      "publisher": "siliconangle.com"
+    },
+    {
+      "id": "EV-26183a56cf9ed63c",
+      "dataDate": "2026-06-22",
+      "date": "2026-06-22",
+      "updatedDate": "2026-06-22",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "partial",
+      "title": "英国律所与法律AI初创公司Harvey达成最新合作",
+      "originalTitle": "UK law firm is latest to partner with legal AI startup Harvey | Reuters",
+      "subject": "UK law firm is latest to",
+      "action": "partner with",
+      "object": "legal AI startup Harvey",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "event_time"
       ],
       "conflicts": [],
       "tags": [],
@@ -255,18 +255,26 @@
           "name": "专业服务"
         }
       ],
-      "entityIds": [],
-      "entityNames": [],
+      "entityIds": [
+        "EN-3b7491f6cfa8bb7a",
+        "EN-96eebba49dbbf422",
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "UK law firm is latest",
+        "Intel",
+        "OpenAI"
+      ],
       "productName": "",
       "products": [],
-      "sourceUrl": "https://the-decoder.com/vibecoding-is-becoming-a-deal-breaker-test-for-software-acquisitions",
-      "publisher": "The Decoder：AI News（RSS）"
+      "sourceUrl": "https://reuters.com/legal/transactional/uk-law-firm-is-latest-partner-with-legal-ai-startup-harvey-2023-09-21",
+      "publisher": "reuters.com"
     }
   ],
   "entities": [
     {
-      "id": "EN-733859c1fc6b9331",
-      "name": "Norm",
+      "id": "EN-d74c69db63e4763f",
+      "name": "Arcade",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [],
@@ -275,7 +283,7 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-0f520c9e5b1ea1d2"
+        "EV-39717cdbada984d7"
       ],
       "viewpointIds": [],
       "classificationRefs": [
@@ -283,8 +291,167 @@
         "TX-industry-professional_services"
       ],
       "relatedEntityIds": [],
-      "firstSeen": "2026-07-08",
-      "lastSeen": "2026-07-08"
+      "firstSeen": "2026-06-19",
+      "lastSeen": "2026-06-19"
+    },
+    {
+      "id": "EN-96eebba49dbbf422",
+      "name": "Intel",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-4eaf3aabecae6016",
+        "EV-2dff32c1b6f813e4",
+        "EV-305ec93673f4f12e",
+        "EV-640c5ea9f4fa2780",
+        "EV-6e516b6e68def9cf",
+        "EV-a8dc5c859946f336",
+        "EV-d9cc588fb41a7e67",
+        "EV-48075ca70a5458ec",
+        "EV-7b1c734882fa1ea6",
+        "EV-b3c7c4bff17063d8",
+        "EV-2bb63a3015195f9b",
+        "EV-d4e44892226be468",
+        "EV-921c843ad32c993c",
+        "EV-2bea8d8046a9b325",
+        "EV-5f5f252c6a826599",
+        "EV-e7dcecaed5a0ee5b",
+        "EV-232ab5bcbaf6552d",
+        "EV-14a666fc27d73a80",
+        "EV-9de19f01ac4771fa",
+        "EV-39717cdbada984d7",
+        "EV-dc442b91a69fcc5a",
+        "EV-02548003157849bb",
+        "EV-c0d19b8641a7a36c",
+        "EV-ee0662b75588987e",
+        "EV-e941c32639167c23",
+        "EV-6ae3594aadfcd3d8",
+        "EV-bc4ac955cd26b969",
+        "EV-88f4ee8cd57bdf42",
+        "EV-ef7346378fcf9746",
+        "EV-86489eda802ffc19",
+        "EV-ebe9ed3158df619b",
+        "EV-3b1613cedea7dad4",
+        "EV-59f4561c5243eb98",
+        "EV-c4303801ea8c54dc",
+        "EV-8b0f056571d68269",
+        "EV-b4eb99a878be9bb2",
+        "EV-cfb7c4b4b765f53b",
+        "EV-4dd25589d834060d",
+        "EV-6617850e0b014051",
+        "EV-c81cb21337a9bb98",
+        "EV-36a9e4e908249381",
+        "EV-181b425d2a600cad",
+        "EV-2c87c8ea47cbd1b6",
+        "EV-bb9ba11acf104db1",
+        "EV-2fd730d0ad452334",
+        "EV-b95539d17772a4ce",
+        "EV-f63462e34ea40699",
+        "EV-26183a56cf9ed63c",
+        "EV-97747aee0cafd9f3",
+        "EV-4faa2bcf2e42e60c",
+        "EV-45be473baf6dfa4c",
+        "EV-c2800c1c5a3f568f",
+        "EV-025778b83c1b2ca9",
+        "EV-dce5de62b2e4b752",
+        "EV-57565fc2e7502c59",
+        "EV-e42e55d1e11a2ba2",
+        "EV-41baa43cf05d4288",
+        "EV-6af1e74358025628",
+        "EV-3847d883688587ba",
+        "EV-3a7128e2d7ff149e",
+        "EV-40390136762c64d3",
+        "EV-53f881da31630a04",
+        "EV-b84035029a63e52e",
+        "EV-0edb0a592ca1fd67",
+        "EV-578a9db1fe952d0a",
+        "EV-a70d5cf3ee6d6d64",
+        "EV-f784003febc1d9eb",
+        "EV-7e52d691a0553667",
+        "EV-1e7c76dae985100f",
+        "EV-644337db309a1c82",
+        "EV-9ae9aa86e51e64a2",
+        "EV-be19904753c9c486",
+        "EV-832fa2db95cfea6e",
+        "EV-e28e134345ea5f99",
+        "EV-4e55361d8324dd49",
+        "EV-97a8d86baa7fffc4",
+        "EV-c5b8faec223a4caf",
+        "EV-9eb3693cc65fbca9",
+        "EV-5493c61bcbe58aa2",
+        "EV-95a393fd0183b5f3",
+        "EV-0cb98302768c2e0a",
+        "EV-6ce6b9c9780b97d9",
+        "EV-dd62847548bb6ae3",
+        "EV-34929bdd016dc8d6",
+        "EV-067f57f6e6ffa6ce",
+        "EV-02b07069713d9a1c",
+        "EV-8cb2374f76202ecc",
+        "EV-946569cccbd9222f",
+        "EV-edb1ddb3a091ada4",
+        "EV-9705a8de3c2e9653"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
+        "TX-technology-code_generation",
+        "TX-use_case-customer_service",
+        "TX-industry-healthcare_life_sciences",
+        "TX-use_case-enterprise_operations",
+        "TX-technology-mixture_of_experts",
+        "TX-industry-financial_services",
+        "TX-use_case-cybersecurity",
+        "TX-use_case-data_analysis",
+        "TX-industry-retail_ecommerce",
+        "TX-technology-on_device",
+        "TX-industry-professional_services",
+        "TX-industry-technology",
+        "TX-technology-embodied_ai",
+        "TX-technology-open_weights",
+        "TX-industry-telecommunications",
+        "TX-industry-media_entertainment",
+        "TX-use_case-robotics_automation",
+        "TX-technology-multimodal",
+        "TX-technology-tool_use",
+        "TX-technology-reasoning",
+        "TX-industry-government_public_sector",
+        "TX-technology-fine_tuning",
+        "TX-technology-image_generation",
+        "TX-technology-computer_use"
+      ],
+      "relatedEntityIds": [
+        "EN-bbdefa2950f49882",
+        "EN-c70eca6b0f88f44d"
+      ],
+      "firstSeen": "2025-03-18",
+      "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "EN-3b7491f6cfa8bb7a",
+      "name": "UK law firm is latest",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-26183a56cf9ed63c"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-professional_services"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-22",
+      "lastSeen": "2026-06-22"
     },
     {
       "id": "EN-7d3194f79e645c42",
@@ -300,118 +467,145 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-7f77e6a2d1698307",
-        "EV-c9af33ffe65d236b",
-        "EV-efca54f3b07072a6",
-        "EV-10c70ced68ccb31b",
-        "EV-adf92ecb7cd8714f",
-        "EV-384cc24be4b56cb5",
-        "EV-21c2e81a7c073e04",
+        "EV-4da1a7c4d527eb69",
+        "EV-e41fc65eb014893f",
+        "EV-974a6b7d0e0efef2",
+        "EV-dfddbb260b3d1c77",
+        "EV-20d762872664fddb",
+        "EV-aa33ca051f3a7f78",
+        "EV-d4e44892226be468",
         "EV-edcb66d0401cfb8f",
-        "EV-b1138bccf5ccd86c",
+        "EV-a42e51959c627554",
         "EV-ee0662b75588987e",
-        "EV-052d7d9120c683d1",
-        "EV-6180de2e02597d9d",
+        "EV-9055cb4fa2b4ee62",
+        "EV-0e84a2f49d765ce3",
         "EV-201b25d4f3cf696a",
-        "EV-853559d61ae2e313",
-        "EV-7dac684a33062b7f",
-        "EV-06fd0cc175652354",
-        "EV-1f842e1dff69bb87",
-        "EV-8a0866a27909f9d9",
+        "EV-1abf0d076d30ec6d",
+        "EV-3b40ec144e5db22c",
         "EV-e15ae1112294d59e",
+        "EV-36d484148fbd3424",
+        "EV-47a16db069ed320e",
+        "EV-49c6291694fb6c7b",
         "EV-62901df23f471eea",
-        "EV-4a4869273654c799",
-        "EV-d3528ccff1833385",
+        "EV-538adc98d1da8fda",
+        "EV-d209a6acecba4285",
+        "EV-a5d127e62d102ad6",
+        "EV-d1e2a7c6d314612c",
         "EV-e1a4bc40db4a9d8f",
+        "EV-83b2e8f7fe679bc3",
+        "EV-8abf5adc3e72fbb8",
         "EV-7f2811d2272cf4a3",
         "EV-2fab4396000198d2",
         "EV-3fb492fb45980541",
-        "EV-58614476c796a67a",
-        "EV-1060a8b37ddd87ac",
-        "EV-b716e560a685c41b",
-        "EV-1fbead21a2dd47a0",
+        "EV-41ffecb51e643397",
+        "EV-26183a56cf9ed63c",
+        "EV-3fbfb89a10efd42f",
+        "EV-1c6adfef6f405319",
+        "EV-66df35d14361a6cb",
         "EV-0d5a32aca724d30e",
         "EV-70e3f88cb06a856c",
         "EV-7c899d5decafc42f",
         "EV-a4a61babc902931a",
         "EV-1c2723ad61d192bd",
-        "EV-cf5b2a0aff3914bd",
-        "EV-302018f2e960a8bf",
-        "EV-000f2abf549268a6",
-        "EV-519205eb50c83300",
-        "EV-ebe02c213368afae",
+        "EV-74dfbd82b47dc626",
+        "EV-167f50a6f3134bd5",
+        "EV-025778b83c1b2ca9",
+        "EV-969ed3078d10f0c9",
+        "EV-d7d8fcd0694a590f",
+        "EV-6e7b632ee0b3410d",
         "EV-efee7c1ac4dc336f",
+        "EV-0dbc7b904378f713",
+        "EV-10eb16192d83dbf7",
+        "EV-ae736eb124d7163a",
         "EV-cf317dd1579a01bb",
+        "EV-d07f7a8d4d20a034",
+        "EV-107725f2bdece882",
+        "EV-6af1e74358025628",
+        "EV-ee9a1c99fe7054d6",
+        "EV-cadcc94249dea81d",
+        "EV-caec65aef89d3b4a",
         "EV-d07906b648eec63f",
         "EV-0510a983e120a381",
-        "EV-3cd088098be5d0d4",
-        "EV-268250d426c1a4a0",
+        "EV-70efbfcaadcdb259",
         "EV-51aed98773a9fca1",
+        "EV-cc3b92fe233953cf",
         "EV-2059f42c7b2aff44",
-        "EV-9fac0983ab657689",
-        "EV-af1d9851e91802af",
+        "EV-578a9db1fe952d0a",
+        "EV-b93b5cc15823e9c3",
+        "EV-20ffa968bcbc4729",
+        "EV-77662aa9bef9efbe",
+        "EV-9ca7db66f8f10b63",
         "EV-9c4b862020202f6c",
+        "EV-5012364af7480121",
         "EV-918fc324de3117bd",
-        "EV-c718a5ff4b0acd66",
+        "EV-8a91e14f37d32b4d",
         "EV-860b90c017deaa59",
         "EV-888b9eb73582e21c",
-        "EV-3f07de398af7a118",
-        "EV-722c2a8dd6b70abd",
+        "EV-13f0b515194f3245",
         "EV-abf0990dcaceb1ce",
         "EV-b8bfab77707274b7",
         "EV-6eb9a23be3117421",
-        "EV-9659eb492a9eea1b",
         "EV-a0d3853dd41c8ef6",
-        "EV-cf883e02c693dfea",
-        "EV-fbde4dad2288059a",
+        "EV-b26bead25288d19c",
         "EV-1e7c76dae985100f",
-        "EV-09d3ce5611881ed4",
+        "EV-644337db309a1c82",
+        "EV-482df8a8ef264238",
         "EV-9110f23a7e60173e",
+        "EV-9e04edd969c977a1",
         "EV-e792252690f98a22",
-        "EV-63a344522ee9e8d4",
+        "EV-2aca9a810ea65555",
+        "EV-f953555178744c22",
         "EV-28145c97a7237d6d",
-        "EV-8160e13555e65130",
+        "EV-0c06df62702d26ab",
         "EV-f01d28aac73c3f9c",
-        "EV-e6771f58d7c2a050",
-        "EV-068a0671fa96b07d",
+        "EV-574998b1638a3f4f",
+        "EV-0b6992ae74184d13",
         "EV-7f979d0a01e6dffa",
-        "EV-d50a2832bb30b287",
-        "EV-91d9e2c780593bbb",
-        "EV-6b74ed049774f0c5",
-        "EV-61b97c0ee6ad83b3",
+        "EV-f3e11eadfb7c6a4b",
+        "EV-ab3586268ebfab38",
+        "EV-2cb9dbed2b2b6077",
+        "EV-d6ba9ef3ff65940c",
+        "EV-3f8ba5855b64dd1a",
         "EV-b73c7096546b82e8",
-        "EV-2de6ff1a7aebd6e7",
-        "EV-59933d63c4051085",
+        "EV-19903b5eef9b1de0",
+        "EV-57b029a4afb71044",
+        "EV-ad1444d8653b37ae",
         "EV-fbdfb5888ad19663",
-        "EV-c28e0d02272537d8",
+        "EV-cac9d9f31ef675ce",
         "EV-4a727d54055d6d0e",
         "EV-e295f808713644c7",
-        "EV-d2a00623908ca15f",
-        "EV-01e414a25347cfd9",
+        "EV-3474febbec499f3c",
+        "EV-519537a36355d82e",
+        "EV-631197767a45d34c",
+        "EV-657837763764c869",
+        "EV-ce291577f61b8543",
         "EV-a4f052325d0ef230",
-        "EV-4f4274fb5920a8b4",
-        "EV-0aa2e53c51b2b8e5",
+        "EV-ca420d07e12369f1",
+        "EV-773ffcc6e1df56fa",
         "EV-5cd10de5c12916f0",
         "EV-067f57f6e6ffa6ce",
         "EV-da6678e4e865e00e",
-        "EV-14b44a40808340f5",
         "EV-2d56dec8dfeb2b56",
         "EV-8cb2374f76202ecc",
+        "EV-946569cccbd9222f",
         "EV-917966af8545a380",
         "EV-b4203b10d6592bf2",
-        "EV-1b5db76949c2795c",
+        "EV-5eb23cdd9c14c6ea",
+        "EV-10e841ab47d2b1f1",
         "EV-f2d29ca7b05c3dd9",
         "EV-ea2b6ce4acd46366",
         "EV-2821d0cef61b3c6a",
         "EV-6f7c5f0abad3d4da",
         "EV-8f497488d129fee5",
         "EV-a8f1204b54ae6475",
-        "EV-2ca9d0a3ca53c3bf",
+        "EV-62df953d81def866",
         "EV-6b7917bd7edd4bde",
         "EV-e1ebf7d63e058a39",
+        "EV-b52af7bb03c98eb0",
         "EV-9705a8de3c2e9653",
         "EV-bce258f8f915ff5f",
-        "EV-4beb890f0879aeaf"
+        "EV-4beb890f0879aeaf",
+        "EV-4900ddf0686f4bbc"
       ],
       "viewpointIds": [],
       "classificationRefs": [
@@ -419,33 +613,97 @@
         "TX-industry-manufacturing",
         "TX-technology-code_generation",
         "TX-use_case-customer_service",
-        "TX-industry-professional_services",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-enterprise_operations",
         "TX-use_case-software_development",
-        "TX-use_case-robotics_automation",
         "TX-technology-long_context",
         "TX-industry-financial_services",
         "TX-use_case-cybersecurity",
-        "TX-technology-human_in_loop",
-        "TX-industry-telecommunications",
-        "TX-technology-multimodal",
-        "TX-technology-retrieval_augmented_generation",
-        "TX-use_case-research_science",
+        "TX-use_case-data_analysis",
+        "TX-industry-retail_ecommerce",
+        "TX-industry-professional_services",
+        "TX-industry-technology",
+        "TX-technology-embodied_ai",
         "TX-technology-open_weights",
+        "TX-technology-model_context_protocol",
+        "TX-use_case-robotics_automation",
+        "TX-technology-multimodal",
+        "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
-        "TX-technology-model_context_protocol",
         "TX-technology-fine_tuning",
         "TX-technology-computer_use"
       ],
       "relatedEntityIds": [
-        "EN-c70eca6b0f88f44d"
+        "EN-c70eca6b0f88f44d",
+        "EN-52fc33ae4d101a5d",
+        "EN-7839fb10a8f14c70",
+        "EN-9f15bb7e29e191eb",
+        "EN-047bdfce48c28cfc",
+        "EN-6a50fbf0b970c03a",
+        "EN-d1ad14d4ad57d207",
+        "EN-536c4035ba0c7047",
+        "EN-3c92cc7e49924a6f",
+        "EN-77fe4e790d5bc756",
+        "EN-729324072d368379",
+        "EN-b8c236d640d6a5fb",
+        "EN-db68703d8d719bd0",
+        "EN-272d6a7a0db89710",
+        "EN-5ce177312903c604",
+        "EN-bd2bfbea5911ec7a",
+        "EN-af53dbc3e443f7a9",
+        "EN-b269456229397ef3",
+        "EN-f2272e70be63bc65",
+        "EN-148b42653f5e08b1",
+        "EN-da20c5952dba19d8",
+        "EN-fc0586e76f80f181",
+        "EN-e8b6dfd27f418787",
+        "EN-9de030d092759897",
+        "EN-7bf321fa55418fba"
       ],
-      "firstSeen": "2026-03-13",
+      "firstSeen": "2026-05-19",
       "lastSeen": "2026-07-17"
     }
   ],
-  "fde": [],
+  "fde": [
+    {
+      "id": "FDE-0e1970e9eb17729f",
+      "eventId": "EV-26183a56cf9ed63c",
+      "dataDate": "2026-06-22",
+      "date": "2026-06-22",
+      "title": "英国律所与法律AI初创公司Harvey达成最新合作",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "OpenAI",
+      "vendor": "UK law firm is latest",
+      "industry": "未披露",
+      "useCase": "legal AI startup Harvey",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "UK law firm is latest to partner with legal AI startup Harvey | Reuters ... Sept 21 (Reuters) - Another major law firm is debuting a legal artificial intelligence tool for its attorneys, turning to a startup called Harvey that has drawn investment from Sequoia Capital and OpenAI's startup fund. ... ... / query=AI implementation startup design partner pilot customer / intent=find_market_trend / path=a_media_gdelt"
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://reuters.com/legal/transactional/uk-law-firm-is-latest-partner-with-legal-ai-startup-harvey-2023-09-21",
+      "entityIds": [
+        "EN-3b7491f6cfa8bb7a",
+        "EN-96eebba49dbbf422",
+        "EN-7d3194f79e645c42"
+      ]
+    }
+  ],
   "hardware": []
 }

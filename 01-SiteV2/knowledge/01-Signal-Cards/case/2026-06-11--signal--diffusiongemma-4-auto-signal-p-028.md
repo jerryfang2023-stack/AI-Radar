@@ -2,7 +2,7 @@
 id: SIG-20260611-A10
 type: signal_card
 signal_type: case
-title: "DiffusionGemma：文本生成速度提升4倍的开源扩散模型 案例：AI 进入模型部署和算力调用"
+title: "DiffusionGemma：文本生成速度提升4倍的开源扩散模型"
 date: 2026-06-11
 status: published
 source_title: "DiffusionGemma：文本生成速度提升4倍的开源扩散模型"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "DiffusionGemma：文本生成速度提升4倍的开源扩散模型"
 
 frontend:
-  displayTitle: "DiffusionGemma：文本生成速度提升4倍的开源扩散模型 案例：AI 进入模型部署和算力调用"
+  displayTitle: "DiffusionGemma：文本生成速度提升4倍的开源扩散模型"
   sourceLinks:
     - "https://deepmind.google/blog/diffusiongemma-4x-faster-text-generation"
 ---
 
-# DiffusionGemma：文本生成速度提升4倍的开源扩散模型 案例：AI 进入模型部署和算力调用
+# DiffusionGemma：文本生成速度提升4倍的开源扩散模型
 
 ## 新闻事实
 

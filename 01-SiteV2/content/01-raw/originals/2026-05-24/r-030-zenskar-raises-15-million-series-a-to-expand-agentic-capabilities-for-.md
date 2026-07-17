@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Zenskar Raises $15 Million Series A to 
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Zenskar获1500万美元A轮融资，用于扩展B2B收入自动化的代理能力"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Zenskar Raises $15 Million Series A to Expand Agentic Capabilities for B2B Revenue Automation

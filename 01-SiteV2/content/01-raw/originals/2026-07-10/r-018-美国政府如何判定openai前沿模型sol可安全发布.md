@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-018
 title: "美国政府如何判定OpenAI前沿模型Sol可安全发布？"
 title_zh: "美国政府如何判定OpenAI前沿模型Sol可安全发布？"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://techcrunch.com/2026/07/09/how-did-the-government-decide-openais-frontier-model-was-safe-to-release"
 canonical_url: "https://techcrunch.com/2026/07/09/how-did-the-government-decide-openais-frontier-model-was-safe-to-release"
 source_name: "TechCrunch：AI（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-10T01:59:44.161Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 美国政府如何判定OpenAI前沿模型Sol可安全发布？

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"We're quickly improving how Figma s
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "代理，遇见Figma画布 | Figma博客"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Agents, Meet the Figma Canvas | Figma Blog

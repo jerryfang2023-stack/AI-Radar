@@ -2,7 +2,7 @@
 id: SIG-20260704-A13
 type: signal_card
 signal_type: product_service
-title: "Khan Academy 的 AI 商业观察"
+title: "第63期：可汗学院创始人/CEO萨尔曼·可汗谈20年后的课堂、拓展至140万用户及萨尔对AI教育的期望"
 date: 2026-07-04
 status: published
 source_title: "Ep 63: Khan Academy Founder/CEO on Salman Khan on Classrooms in 20 years, Rolling out to 1.4M Users & Sal’s Hopes for AI Education"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "Khan Academy"
 
 frontend:
-  displayTitle: "Khan Academy 的 AI 商业观察"
+  displayTitle: "第63期：可汗学院创始人/CEO萨尔曼·可汗谈20年后的课堂、拓展至140万用户及萨尔对AI教育的期望"
   sourceLinks:
     - "https://unsupervised-learning.simplecast.com/episodes/ep-63-khan-academy-founder-ceo-on-salman-khan-on-classrooms-in-20-years-rolling-out-to-14m-users-sals-hopes-for-ai-education-6U445CUu"
 ---
 
-# Khan Academy 的 AI 商业观察
+# 第63期：可汗学院创始人/CEO萨尔曼·可汗谈20年后的课堂、拓展至140万用户及萨尔对AI教育的期望
 
 ## 新闻事实
 

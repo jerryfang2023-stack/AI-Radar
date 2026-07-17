@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Tasklet: Agents that own the work | Y C
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Tasklet：面向知识工作的云代理操作系统 | Y Combinator"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Tasklet: The cloud agent operating system for knowledge work | Y Combinator

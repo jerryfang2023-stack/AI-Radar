@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"Rabble AI Launches Platform to F
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Rabble AI推出平台，解决导致企业AI项目失败的数据准备问题"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Rabble AI Launches Platform to Fix the Data Readiness Problem Killing Enterprise AI Projects

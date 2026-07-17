@@ -2,7 +2,7 @@
 id: SIG-20260619-A18
 type: signal_card
 signal_type: product_service
-title: "Snap 剥离 AI 视频团队成立新公司 Dotmo 推出 Agent 工作流能力，切入模型部署和算力服务"
+title: "Snap 剥离 AI 视频团队成立新公司 Dotmo"
 date: 2026-06-19
 status: published
 source_title: "Snap 剥离 AI 视频团队成立新公司 Dotmo"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Snap 剥离 AI 视频团队成立新公司 Dotmo"
 
 frontend:
-  displayTitle: "Snap 剥离 AI 视频团队成立新公司 Dotmo 推出 Agent 工作流能力，切入模型部署和算力服务"
+  displayTitle: "Snap 剥离 AI 视频团队成立新公司 Dotmo"
   sourceLinks:
     - "https://techcrunch.com/2026/06/18/snap-spins-off-ai-video-team-into-new-company-dotmo-due-to-costs"
 ---
 
-# Snap 剥离 AI 视频团队成立新公司 Dotmo 推出 Agent 工作流能力，切入模型部署和算力服务
+# Snap 剥离 AI 视频团队成立新公司 Dotmo
 
 ## 新闻事实
 

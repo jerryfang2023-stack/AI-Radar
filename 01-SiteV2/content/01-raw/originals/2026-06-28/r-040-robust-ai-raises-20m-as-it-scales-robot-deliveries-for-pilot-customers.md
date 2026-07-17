@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Robust.AI raises $20M as it scales robo
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "Robust.AI 融资2000万美元，扩大机器人配送试点客户规模"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Robust.AI raises $20M as it scales robot deliveries for pilot customers

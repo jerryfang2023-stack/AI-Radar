@@ -2,7 +2,7 @@
 id: SIG-20260615-A07
 type: signal_card
 signal_type: product_service
-title: "Bloomberg 推出 Agent 工作流能力，切入采购下单自动化"
+title: "蚂蚁集团拟为支付宝引入AI智能体界面，与微信争夺用户"
 date: 2026-06-15
 status: published
 source_title: "蚂蚁集团拟为支付宝引入AI智能体界面，与微信争夺用户"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "Bloomberg"
 
 frontend:
-  displayTitle: "Bloomberg 推出 Agent 工作流能力，切入采购下单自动化"
+  displayTitle: "蚂蚁集团拟为支付宝引入AI智能体界面，与微信争夺用户"
   sourceLinks:
     - "https://www.bloomberg.com/news/articles/2026-06-14/jack-ma-backed-ant-set-for-high-stakes-overhaul-of-billion-user-alipay-app"
 ---
 
-# Bloomberg 推出 Agent 工作流能力，切入采购下单自动化
+# 蚂蚁集团拟为支付宝引入AI智能体界面，与微信争夺用户
 
 ## 新闻事实
 

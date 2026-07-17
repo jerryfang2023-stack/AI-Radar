@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-071
 title: "Exclusive: Startup Adapter Launches With $17.8M To Bring New 'Cognition' To AI Tools"
-title_zh: "Exclusive: Startup Adapter 完成 1780 万美元融资，用于 Bring New 'Cognition' To AI Tools"
-title_translation_status: translated
-title_translation_method: business-rule_title_translation
+title_zh: "独家：初创公司Adapter携1780万美元推出AI工具新“认知”功能"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.upstartsmedia.com/p/deep-dive-adapter-launches-ai-cognition"
 canonical_url: "https://upstartsmedia.com/p/deep-dive-adapter-launches-ai-cognition"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-16T02:39:33.837Z
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Exclusive: Startup Adapter Launches With $17.8M To Bring New 'Cognition' To AI Tools

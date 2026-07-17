@@ -2,7 +2,7 @@
 id: SIG-20260612-A04
 type: signal_card
 signal_type: case
-title: "Marktechpost 案例：AI 进入模型部署和算力调用"
+title: "Perplexity 将 Deep Research 整合进 Perplexity Computer，跨 20 多个前沿模型路由研究子任务"
 date: 2026-06-12
 status: published
 source_title: "Perplexity 将 Deep Research 整合进 Perplexity Computer，跨 20 多个前沿模型路由研究子任务"
@@ -59,12 +59,12 @@ opportunity_signals:
 signal_owner: "Marktechpost"
 
 frontend:
-  displayTitle: "Marktechpost 案例：AI 进入模型部署和算力调用"
+  displayTitle: "Perplexity 将 Deep Research 整合进 Perplexity Computer，跨 20 多个前沿模型路由研究子任务"
   sourceLinks:
     - "https://www.marktechpost.com/2026/06/11/perplexity-moves-deep-research-into-computer-routing-research-subtasks-across-20-frontier-models-for-reports-decks-and-dashboards"
 ---
 
-# Marktechpost 案例：AI 进入模型部署和算力调用
+# Perplexity 将 Deep Research 整合进 Perplexity Computer，跨 20 多个前沿模型路由研究子任务
 
 ## 新闻事实
 

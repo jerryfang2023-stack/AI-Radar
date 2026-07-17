@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"智谱 GLM 5.2 在 Design Arena 单轮 H
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "超越Claude Fable 5：智谱GLM 5.2登顶Design Arena网页设计AI榜单"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 超越Claude Fable 5：智谱GLM 5.2登顶Design Arena网页设计AI榜单

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"workflow_change","text":"... Agent Framework. This open-
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "使用AI进行VSCode与GitHub的软件开发"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Using AI for Software Development with VSCode and GitHub

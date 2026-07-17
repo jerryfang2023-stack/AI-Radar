@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-076
 title: "月之暗面预热 Kimi K3 模型，多段与 Claude Fable 5、GPT-5.6-Sol 对比视频流出"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "月之暗面预热 Kimi K3 模型，多段与 Claude Fable 5、GPT-5.6-Sol 对比视频流出"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/977/468.htm"
 canonical_url: "https://ithome.com/0/977/468.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-17T04:40:17.244Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 月之暗面预热 Kimi K3 模型，多段与 Claude Fable 5、GPT-5.6-Sol 对比视频流出

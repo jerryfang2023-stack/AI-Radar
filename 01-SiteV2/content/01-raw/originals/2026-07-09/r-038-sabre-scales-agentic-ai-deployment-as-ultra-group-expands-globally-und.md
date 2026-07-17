@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-038
 title: "Sabre scales agentic AI deployment as Ultra Group expands globally under Linex – Company Announcement - FT.com"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "Sabre 扩大 AI 智能体部署，Ultra Group 在 Linex 旗下全球扩张"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://markets.ft.com/data/announce/detail?dockey=600-202606170900PR_NEWS_USPRX____DA85593-1"
 canonical_url: "https://markets.ft.com/data/announce/detail?dockey=600-202606170900PR_NEWS_USPRX____DA85593-1"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-09T03:05:45.003Z
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Sabre scales agentic AI deployment as Ultra Group expands globally under Linex – Company Announcement - FT.com

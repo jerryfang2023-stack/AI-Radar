@@ -2,7 +2,7 @@
 id: SIG-20260617-A17
 type: signal_card
 signal_type: product_service
-title: "ChatGPT 市场份额首次跌破 50% 推出 Agent 工作流能力，切入企业 Agent 协作平台"
+title: "ChatGPT 市场份额首次跌破 50%"
 date: 2026-06-17
 status: published
 source_title: "ChatGPT 市场份额首次跌破 50%"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "ChatGPT 市场份额首次跌破 50%"
 
 frontend:
-  displayTitle: "ChatGPT 市场份额首次跌破 50% 推出 Agent 工作流能力，切入企业 Agent 协作平台"
+  displayTitle: "ChatGPT 市场份额首次跌破 50%"
   sourceLinks:
     - "https://techcrunch.com/2026/06/16/chatgpts-market-share-slips-below-50-for-first-time"
 ---
 
-# ChatGPT 市场份额首次跌破 50% 推出 Agent 工作流能力，切入企业 Agent 协作平台
+# ChatGPT 市场份额首次跌破 50%
 
 ## 新闻事实
 

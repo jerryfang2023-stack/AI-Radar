@@ -2,7 +2,7 @@
 id: SIG-20260622-A07
 type: signal_card
 signal_type: case
-title: "Enterprise AI Agent for Procurement 记录企业应用场景：地产开发和建筑设计流程"
+title: "采购领域企业AI代理 | Madgeek"
 date: 2026-06-22
 status: published
 source_title: "Enterprise AI Agent for Procurement | Madgeek"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Enterprise AI Agent for Procurement"
 
 frontend:
-  displayTitle: "Enterprise AI Agent for Procurement 记录企业应用场景：地产开发和建筑设计流程"
+  displayTitle: "采购领域企业AI代理 | Madgeek"
   sourceLinks:
     - "https://madgeek.ai/blog/how-we-designed-procurement-ai-agent-enterprise"
 ---
 
-# Enterprise AI Agent for Procurement 记录企业应用场景：地产开发和建筑设计流程
+# 采购领域企业AI代理 | Madgeek
 
 ## 新闻事实
 

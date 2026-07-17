@@ -9,7 +9,7 @@
     "process_node": "",
     "capacity": null,
     "capacity_unit": "",
-    "supplier": "OpenAI",
+    "supplier": "Broadcom",
     "customer": "",
     "deployment_site": "",
     "region": "",
@@ -18,10 +18,12 @@
     "claim_refs": [
       "CL-b88641e01cdad72a",
       "CL-5413e715d40d2b50",
-      "CL-494e8516ce41967c",
+      "CL-7030daff2ffb4118",
+      "CL-652453caf7e2525b",
       "CL-bda970b74593ef85",
       "CL-1664c1e84b50e11f",
-      "CL-147bacddf0bfcec3"
+      "CL-28e393dcf2d388ef",
+      "CL-6dfd026efb1716d6"
     ],
     "source_refs": [
       "SA-72ee90b730174e9d",
@@ -38,7 +40,7 @@
     "process_node": "",
     "capacity": null,
     "capacity_unit": "",
-    "supplier": "OpenAI",
+    "supplier": "",
     "customer": "",
     "deployment_site": "",
     "region": "",
@@ -51,6 +53,32 @@
     ],
     "source_refs": [
       "SA-ff75e3c65b9f78e0"
+    ]
+  },
+  {
+    "hardware_record_id": "HW-fceac179a4df80f5",
+    "event_id": "EV-5d50eb202b478bd4",
+    "hardware_event_type": "hardware_product",
+    "component_type": "ai_device",
+    "compute_layer": "edge",
+    "manufacturing_stage": "",
+    "process_node": "",
+    "capacity": 128,
+    "capacity_unit": "GB",
+    "supplier": "NVIDIA",
+    "customer": "",
+    "deployment_site": "",
+    "region": "",
+    "contract_value": "",
+    "shipment_date": "",
+    "claim_refs": [
+      "CL-34eae2e3cf08f5dd",
+      "CL-bf403f976718f0a9",
+      "CL-491026e3b84ada48",
+      "CL-030aaa8424464499"
+    ],
+    "source_refs": [
+      "SA-a02988935452a619"
     ]
   }
 ]

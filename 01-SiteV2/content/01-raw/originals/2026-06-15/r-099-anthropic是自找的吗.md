@@ -72,6 +72,10 @@ key_excerpts: [{"type":"quote","text":"一个 Hacker News 帖子以\"Did Anthrop
 theme: outside-core-exploration
 keyword_group: outside-core-exploration
 copyright_note: local research archive only
+title_zh: "Anthropic是自找的吗？"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Anthropic是自找的吗？

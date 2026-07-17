@@ -72,6 +72,10 @@ key_excerpts: [{"type":"supporting_context","text":"英伟达宣布，微软在 
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "微软全面推出 Anthropic Claude 模型 Azure 云服务，基于英伟达 GB300"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 微软全面推出 Anthropic Claude 模型 Azure 云服务，基于英伟达 GB300

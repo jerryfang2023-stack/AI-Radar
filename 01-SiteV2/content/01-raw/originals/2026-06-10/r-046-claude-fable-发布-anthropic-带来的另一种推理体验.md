@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"Anthropic 发布 Claude Fable，
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Claude Fable 发布：Anthropic 带来的另一种推理体验"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Claude Fable 发布：Anthropic 带来的另一种推理体验

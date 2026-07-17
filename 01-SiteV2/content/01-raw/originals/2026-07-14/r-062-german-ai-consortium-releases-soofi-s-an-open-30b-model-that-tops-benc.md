@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-062
 title: "German AI consortium releases Soofi S, an open 30B model that tops benchmarks in both English and German"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "德国AI联盟发布Soofi S，一款开源300亿参数模型，在英语和德语基准测试中均名列前茅"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://the-decoder.com/german-ai-consortium-releases-soofi-s-an-open-30b-model-that-tops-benchmarks-in-both-english-and-german/"
 canonical_url: "https://the-decoder.com/german-ai-consortium-releases-soofi-s-an-open-30b-model-that-tops-benchmarks-in-both-english-and-german"
 source_name: "The Decoder AI News"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-14T01:56:51.691Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # German AI consortium releases Soofi S, an open 30B model that tops benchmarks in both English and German

@@ -1,7 +1,7 @@
 ---
 id: CASE-20260519-04
 type: case_card
-title: "Hacker News 热门（buzzing.c：\"玻璃翅膀\"项目：Mythos向我们展示了什么"
+title: "\"玻璃翅膀\"项目：Mythos向我们展示了什么"
 date: 2026-05-19
 status: draft
 created_at: 2026-05-19T16:02:30.472Z
@@ -68,7 +68,7 @@ internal:
   last_reviewed: 2026-05-19
 ---
 
-# Hacker News 热门（buzzing.c："玻璃翅膀"项目：Mythos向我们展示了什么
+# "玻璃翅膀"项目：Mythos向我们展示了什么
 
 ## 这个案例是谁
 

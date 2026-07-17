@@ -2,7 +2,7 @@
 id: SIG-20260629-A06
 type: signal_card
 signal_type: case
-title: "Talkdesk 降低客户面对型 AI 部署的不确定性"
+title: "Talkdesk终结客户面向AI部署中的猜测"
 date: 2026-06-29
 status: published
 source_title: "Talkdesk ends the guesswork in deploying customer-facing AI"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Talkdesk"
 
 frontend:
-  displayTitle: "Talkdesk 降低客户面对型 AI 部署的不确定性"
+  displayTitle: "Talkdesk终结客户面向AI部署中的猜测"
   sourceLinks:
     - "https://www.globenewswire.com/news-release/2026/06/23/3316084/0/en/Talkdesk-ends-the-guesswork-in-deploying-customer-facing-AI-agents.html"
 ---
 
-# Talkdesk 降低客户面对型 AI 部署的不确定性
+# Talkdesk终结客户面向AI部署中的猜测
 
 ## 新闻事实
 

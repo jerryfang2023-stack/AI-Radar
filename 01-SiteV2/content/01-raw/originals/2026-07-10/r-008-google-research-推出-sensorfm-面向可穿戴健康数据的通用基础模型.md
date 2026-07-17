@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-008
 title: "Google Research 推出 SensorFM：面向可穿戴健康数据的通用基础模型"
 title_zh: "Google Research 推出 SensorFM：面向可穿戴健康数据的通用基础模型"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://research.google/blog/sensorfm-towards-a-general-intelligence-and-interface-for-wearable-health-data"
 canonical_url: "https://research.google/blog/sensorfm-towards-a-general-intelligence-and-interface-for-wearable-health-data"
 source_name: "Google Research：Blog（网页）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-10T01:59:44.111Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Google Research 推出 SensorFM：面向可穿戴健康数据的通用基础模型

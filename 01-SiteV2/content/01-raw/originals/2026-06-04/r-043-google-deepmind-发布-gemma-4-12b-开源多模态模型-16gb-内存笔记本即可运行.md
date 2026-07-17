@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"Gemma 4 12B 是 Google DeepMind 推
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "Google DeepMind 发布 Gemma 4 12B：开源多模态模型，16GB 内存笔记本即可运行"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Google DeepMind 发布 Gemma 4 12B：开源多模态模型，16GB 内存笔记本即可运行

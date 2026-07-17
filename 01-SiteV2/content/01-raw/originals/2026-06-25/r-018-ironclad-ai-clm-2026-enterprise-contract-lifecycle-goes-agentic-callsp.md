@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"CallSphere - AI voice and chat agents f
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_zh: "Ironclad AI CLM 2026：企业合同生命周期进入代理化时代 | CallSphere博客"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Ironclad AI CLM 2026: Enterprise Contract Lifecycle Goes Agentic | CallSphere Blog

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"Inference costs dropped 280-fold
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Sunita Verma的LinkedIn帖子"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Sunita Verma's Post - LinkedIn

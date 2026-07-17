@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"# Bland Surpasses $100M Funding With Ne
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Bland完成超1亿美元C轮融资，推动复杂高风险对话场景的语音AI技术"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Bland Surpasses $100M Funding With New Series C to Advance Voice AI for Complex, High-Stakes Conversations

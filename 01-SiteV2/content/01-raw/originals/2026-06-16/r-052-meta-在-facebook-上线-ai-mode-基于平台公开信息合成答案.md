@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"Meta 宣布在 Facebook 推出\"AI Mode\
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "Meta 在 Facebook 上线\"AI Mode\"，基于平台公开信息合成答案"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Meta 在 Facebook 上线"AI Mode"，基于平台公开信息合成答案

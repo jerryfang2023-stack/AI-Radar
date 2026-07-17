@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"Built alongside early design partners, t
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "DigitalOcean推出推理引擎，新增生产级AI功能，包括用于高效扩展代理工作负载的推理路由器"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # DigitalOcean Launches Inference Engine with New Capabilities for Production AI, Including Inference Router for Efficient Scaling of Agentic Workloads

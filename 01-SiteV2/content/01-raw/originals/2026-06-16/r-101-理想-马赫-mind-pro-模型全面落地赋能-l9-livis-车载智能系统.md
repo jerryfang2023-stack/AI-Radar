@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"理想在 Livis Day 发布会上宣
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "理想：马赫 Mind-Pro 模型全面落地赋能 L9 Livis 车载智能系统"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 理想：马赫 Mind-Pro 模型全面落地赋能 L9 Livis 车载智能系统

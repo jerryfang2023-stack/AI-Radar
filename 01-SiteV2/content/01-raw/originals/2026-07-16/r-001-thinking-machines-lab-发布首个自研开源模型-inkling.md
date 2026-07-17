@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-001
 title: "Thinking Machines Lab 发布首个自研开源模型 Inkling"
 title_zh: "Thinking Machines Lab 发布首个自研开源模型 Inkling"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://techcrunch.com/2026/07/15/thinking-machines-amps-up-its-bet-against-one-size-fits-all-ai-with-its-first-open-model-inkling"
 canonical_url: "https://techcrunch.com/2026/07/15/thinking-machines-amps-up-its-bet-against-one-size-fits-all-ai-with-its-first-open-model-inkling"
 source_name: "TechCrunch：AI（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-16T02:39:33.360Z
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Thinking Machines Lab 发布首个自研开源模型 Inkling

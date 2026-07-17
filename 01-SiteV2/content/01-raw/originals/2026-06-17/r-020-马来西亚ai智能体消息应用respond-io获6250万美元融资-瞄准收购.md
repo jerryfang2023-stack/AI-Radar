@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"总部位于吉隆坡的客户对话管
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "马来西亚AI智能体消息应用Respond.io获6250万美元融资，瞄准收购"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 马来西亚AI智能体消息应用Respond.io获6250万美元融资，瞄准收购

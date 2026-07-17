@@ -2,7 +2,7 @@
 id: SIG-20260709-A03
 type: signal_card
 signal_type: case
-title: "Duvo 使用 Claude Agent SDK 的案例"
+title: "Duvo Claude Agent SDK 案例研究 | Anthropic 旗下 Claude"
 date: 2026-07-09
 status: published
 source_title: "Duvo Claude Agent SDK case study | Claude by Anthropic"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "Romancov"
 
 frontend:
-  displayTitle: "Duvo 使用 Claude Agent SDK 的案例"
+  displayTitle: "Duvo Claude Agent SDK 案例研究 | Anthropic 旗下 Claude"
   sourceLinks:
     - "https://claude.com/customers/duvo"
 ---
 
-# Duvo 使用 Claude Agent SDK 的案例
+# Duvo Claude Agent SDK 案例研究 | Anthropic 旗下 Claude
 
 ## 新闻事实
 

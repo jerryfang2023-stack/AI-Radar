@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"Google DeepMind 发布 Nano Banana 2 Lit
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "Google DeepMind 发布 Nano Banana 2 Lite 图像生成模型"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Google DeepMind 发布 Nano Banana 2 Lite 图像生成模型

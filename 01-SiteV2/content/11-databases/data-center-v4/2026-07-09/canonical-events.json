@@ -4,7 +4,10 @@
     "event_status": "announced",
     "event_time": "",
     "disclosed_at": "2026-07-09T03:05:44.803Z",
-    "entities": [],
+    "entities": [
+      "EN-18cab68e658be896",
+      "EN-64978f6783bb0099"
+    ],
     "action": "Launch",
     "object": "| Curate-Me Docs",
     "metrics": [],
@@ -20,7 +23,8 @@
     ],
     "conflicts": [],
     "missing_fields": [
-      "entities"
+      "event_time",
+      "display_title_zh"
     ],
     "update_history": [
       {
@@ -30,15 +34,94 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-0a16dac5c414ce8e",
-    "display_title_zh": "February 2026: Platform 发布"
+    "event_id": "EV-4a67e6cebb818fea",
+    "display_title_zh": ""
+  },
+  {
+    "event_type": "partnership",
+    "event_status": "announced",
+    "event_time": "",
+    "disclosed_at": "2026-07-09T03:05:44.818Z",
+    "entities": [
+      "EN-e274048227f164dc"
+    ],
+    "action": "partners with",
+    "object": "$30bn+ revenue global technology leader Tata Consultancy Services to bring its AI-powered commerce platform to enterprise clients worldwide – Company Announcement - FT.com",
+    "metrics": [
+      "$30b"
+    ],
+    "locations": [
+      "India"
+    ],
+    "claim_refs": [
+      "CL-2e6fc1fdef82929e",
+      "CL-b4ea8f0cf662a13c",
+      "CL-7cb02bba1851769d",
+      "CL-6ab63afc27a8ef91"
+    ],
+    "source_refs": [
+      "SA-9425cba353214d0a"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "event_time"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-9425cba353214d0a",
+        "disclosed_at": "2026-07-09T03:05:44.818Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-99a0cb6bac516bdd",
+    "display_title_zh": "Rezolve Ai 与营收超 300 亿美元的全球科技领导者塔塔咨询服务合作，将其 AI 驱动的商务平台推向全球企业客户"
+  },
+  {
+    "event_type": "partnership",
+    "event_status": "announced",
+    "event_time": "",
+    "disclosed_at": "2026-07-09T03:05:44.823Z",
+    "entities": [
+      "EN-4d748ebd71af03a7",
+      "EN-c3e4cc183d345262",
+      "EN-96eebba49dbbf422"
+    ],
+    "action": "Partnership",
+    "object": "to Bring Agentic Workflows for Market Intelligence to Enterprises – Company Announcement - FT.com",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-6a473bac822036ec",
+      "CL-76324a16dfcd37fe",
+      "CL-fdfa6fc6f542853d",
+      "CL-4380ece3909cf394"
+    ],
+    "source_refs": [
+      "SA-3dc7650619239f70"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "event_time"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-3dc7650619239f70",
+        "disclosed_at": "2026-07-09T03:05:44.823Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-2c87c8ea47cbd1b6",
+    "display_title_zh": "埃森哲与AlphaSense宣布战略投资与合作伙伴关系，为企业市场情报带来智能体工作流"
   },
   {
     "event_type": "acquisition",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "",
     "disclosed_at": "2026-07-09T03:05:44.829Z",
     "entities": [
+      "EN-7a9c94a8c201bcc2",
       "EN-8f71c4871a160172"
     ],
     "action": "Acquire",
@@ -55,25 +138,30 @@
       "SA-76ad8891c18165c9"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-76ad8891c18165c9",
         "disclosed_at": "2026-07-09T03:05:44.829Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-0af2872b513631d9",
-    "display_title_zh": "Thinking Machines Lab 收购 Dremio"
+    "event_id": "EV-0a5d792223f5381f",
+    "display_title_zh": "SAP 收购 Dremio 以统一 SAP 与非 SAP 数据，赋能 AI 智能体"
   },
   {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "",
     "disclosed_at": "2026-07-09T03:05:44.833Z",
     "entities": [
-      "EN-b0532e1af75cc4ab"
+      "EN-fa373257792c6b9b",
+      "EN-b0532e1af75cc4ab",
+      "EN-96eebba49dbbf422",
+      "EN-8d4321d936320802"
     ],
     "action": "raises",
     "object": "$130M Series A to help enterprises build their own AI agents",
@@ -86,31 +174,36 @@
     "claim_refs": [
       "CL-b333c723ee135fe0",
       "CL-0d4a043cf39423e3",
-      "CL-3b9ae778d50b2d8b",
-      "CL-aaf9ea3a2f7248dd"
+      "CL-14fc9d7289f08c79",
+      "CL-514c437864f01e12"
     ],
     "source_refs": [
       "SA-2bec96260be8d65c"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time",
+      "display_title_zh"
+    ],
     "update_history": [
       {
         "source_ref": "SA-2bec96260be8d65c",
         "disclosed_at": "2026-07-09T03:05:44.833Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-8bbe9b602c09273d",
-    "display_title_zh": "Rime 完成 1.3 亿美元 A 轮融资"
+    "event_id": "EV-463cb26b5e03c7f7",
+    "display_title_zh": ""
   },
   {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "",
     "disclosed_at": "2026-07-09T03:05:44.852Z",
     "entities": [
+      "EN-10905d25fc373f32",
+      "EN-96eebba49dbbf422",
       "EN-9fbf261b62c1d7c0"
     ],
     "action": "raises",
@@ -131,25 +224,29 @@
       "SA-ee9be452a30f78a6"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time",
+      "display_title_zh"
+    ],
     "update_history": [
       {
         "source_ref": "SA-ee9be452a30f78a6",
         "disclosed_at": "2026-07-09T03:05:44.852Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-d4baddef1dda157c",
-    "display_title_zh": "Microsoft 完成 1200 万美元 A 轮融资"
+    "event_id": "EV-86ca5af11ee4d275",
+    "display_title_zh": ""
   },
   {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "",
     "disclosed_at": "2026-07-09T03:05:44.857Z",
     "entities": [
-      "EN-6907a22fafe13a63"
+      "EN-6907a22fafe13a63",
+      "EN-96eebba49dbbf422"
     ],
     "action": "raises",
     "object": "$1B at $11B valuation, 5 months after last mega round",
@@ -173,17 +270,19 @@
       "SA-c59f24520cbd17da"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-c59f24520cbd17da",
         "disclosed_at": "2026-07-09T03:05:44.857Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
     "event_id": "EV-a8dc5c859946f336",
-    "display_title_zh": "AI chip maker SambaNova 完成 10 亿美元 F 轮融资"
+    "display_title_zh": "AI 芯片制造商 SambaNova 以 110 亿美元估值融资 10 亿美元，距上一轮巨额融资仅 5 个月"
   },
   {
     "event_type": "partnership",
@@ -191,8 +290,10 @@
     "event_time": "",
     "disclosed_at": "2026-07-09T03:05:44.871Z",
     "entities": [
+      "EN-5bc1ca2813bf4c23",
       "EN-b5738c169b693bee",
-      "EN-8f71c4871a160172"
+      "EN-8f71c4871a160172",
+      "EN-96eebba49dbbf422"
     ],
     "action": "partnership",
     "object": "to accelerate scalable, operationalized AI governance at enterprise scale – Company Announcement - FT.com",
@@ -208,7 +309,9 @@
       "SA-025be5322c0449d7"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-025be5322c0449d7",
@@ -217,12 +320,12 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-fa930fb25552f666",
-    "display_title_zh": "ServiceNow 与 Thinking Machines Lab 达成商业合作"
+    "event_id": "EV-181b425d2a600cad",
+    "display_title_zh": "Cognizant宣布与ServiceNow合作，加速企业级可扩展、可操作的AI治理落地"
   },
   {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "",
     "disclosed_at": "2026-07-09T03:05:44.883Z",
     "entities": [
@@ -240,27 +343,30 @@
       "CL-09ce2e65163e9179",
       "CL-432b9ed80803d655",
       "CL-38df0728bc686e67",
-      "CL-7a47f8ee2602ae5e"
+      "CL-d5d46bf4d4f77788"
     ],
     "source_refs": [
       "SA-9eb8d93598d8d57e"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time",
+      "display_title_zh"
+    ],
     "update_history": [
       {
         "source_ref": "SA-9eb8d93598d8d57e",
         "disclosed_at": "2026-07-09T03:05:44.883Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
     "event_id": "EV-1a6def173f4d7c94",
-    "display_title_zh": "BidScript 完成 800 美元 种子前轮融资"
+    "display_title_zh": ""
   },
   {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "",
     "disclosed_at": "2026-07-09T03:05:44.902Z",
     "entities": [
@@ -270,27 +376,32 @@
     "object": "$40 Million Series B",
     "metrics": [
       "$40 million",
-      "$70 million"
+      "$70 million",
+      "$3 billion"
     ],
     "locations": [],
     "claim_refs": [
-      "CL-3cb7c577b6ef7b51"
+      "CL-3cb7c577b6ef7b51",
+      "CL-ed10c422f63537f8",
+      "CL-7daac09d34c391c9"
     ],
     "source_refs": [
       "SA-2d3bab7d8d790aa9"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-2d3bab7d8d790aa9",
         "disclosed_at": "2026-07-09T03:05:44.902Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
     "event_id": "EV-63236c15166b71e0",
-    "display_title_zh": "Pivot 完成 4000 万美元 B 轮融资"
+    "display_title_zh": "Pivot 完成4000万美元B轮融资"
   },
   {
     "event_type": "partnership",
@@ -299,6 +410,7 @@
     "disclosed_at": "2026-07-09T03:05:44.938Z",
     "entities": [
       "EN-f48a4090493d2b5e",
+      "EN-f9ae78c09ff308f9",
       "EN-ce635c4eabff5e4f",
       "EN-9fbf261b62c1d7c0"
     ],
@@ -316,7 +428,9 @@
       "SA-55e02c1c69136bab"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-55e02c1c69136bab",
@@ -326,11 +440,98 @@
     ],
     "publication_status": "verified",
     "event_id": "EV-b2e374d54b10b9af",
-    "display_title_zh": "C3 AI 与 Shell 达成商业合作"
+    "display_title_zh": "C3 AI与壳牌扩大合作，在全球资产运营中规模化部署可靠性AI"
+  },
+  {
+    "event_type": "research_result",
+    "event_status": "announced",
+    "event_time": "",
+    "disclosed_at": "2026-07-09T03:05:44.993Z",
+    "entities": [
+      "EN-e54c14020fb74611",
+      "EN-916a98f0fa2a39af",
+      "EN-8f71c4871a160172",
+      "EN-b0532e1af75cc4ab",
+      "EN-d736115a934212d4",
+      "EN-ba68e0d45eda3690",
+      "EN-1943e48082f97bd6"
+    ],
+    "action": "Study Finds CIOs and CTOs Face Growing AI Control Gap",
+    "object": "as Enterprise Deployment Scales – Company Announcement - FT.com",
+    "metrics": [
+      "70%"
+    ],
+    "locations": [],
+    "claim_refs": [
+      "CL-0e9ab37b8f9e6388",
+      "CL-4b128a844b41c0df",
+      "CL-05555dd2e0168af7",
+      "CL-492ec8ee5501b3e4"
+    ],
+    "source_refs": [
+      "SA-cdfa8f8e032ca592"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "event_time"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-cdfa8f8e032ca592",
+        "disclosed_at": "2026-07-09T03:05:44.993Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-2f56b99f72ad6c4f",
+    "display_title_zh": "IBM新研究：CIO与CTO面临AI控制差距扩大，企业部署规模增长"
   },
   {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
+    "event_time": "",
+    "disclosed_at": "2026-07-09T03:05:45.068Z",
+    "entities": [
+      "EN-712dffae168fe622",
+      "EN-96eebba49dbbf422"
+    ],
+    "action": "nabs",
+    "object": "$120M at $1.2B valuation to bring AI agents to the law - SiliconANGLE",
+    "metrics": [
+      "$120M",
+      "$1.2B",
+      "$120 million",
+      "$1.2 billion",
+      "$260 million"
+    ],
+    "locations": [],
+    "claim_refs": [
+      "CL-fb7ed31ae249ac1e",
+      "CL-534f2ceed140b49d",
+      "CL-60db84f9a47a4524",
+      "CL-680c9fbb12790050"
+    ],
+    "source_refs": [
+      "SA-a59774a78ba741ec"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "event_time"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-a59774a78ba741ec",
+        "disclosed_at": "2026-07-09T03:05:45.068Z",
+        "status": "completed"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-d9cc588fb41a7e67",
+    "display_title_zh": "Norm Ai 以 12 亿美元估值获 1.2 亿美元融资，将 AI 智能体引入法律领域"
+  },
+  {
+    "event_type": "funding",
+    "event_status": "completed",
     "event_time": "",
     "disclosed_at": "2026-07-09T03:05:45.072Z",
     "entities": [
@@ -355,17 +556,19 @@
       "SA-a164c9907970f7f6"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-a164c9907970f7f6",
         "disclosed_at": "2026-07-09T03:05:45.072Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
     "event_id": "EV-0a62954694db4143",
-    "display_title_zh": "Hostie 完成 1200 万美元 A 轮融资"
+    "display_title_zh": "Hostie 完成1200万美元A轮融资，助力餐饮服务业未来"
   },
   {
     "event_type": "product_release",
@@ -373,7 +576,9 @@
     "event_time": "",
     "disclosed_at": "2026-07-09T03:05:45.082Z",
     "entities": [
-      "EN-bbdefa2950f49882"
+      "EN-bbdefa2950f49882",
+      "EN-c96163fd12452c9c",
+      "EN-cfe6926406f30a15"
     ],
     "action": "release",
     "object": "notes | Google Cloud Documentation",
@@ -389,7 +594,10 @@
       "SA-972efffc04ed35b1"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time",
+      "display_title_zh"
+    ],
     "update_history": [
       {
         "source_ref": "SA-972efffc04ed35b1",
@@ -399,48 +607,53 @@
     ],
     "publication_status": "verified",
     "event_id": "EV-04ee2bc4ac888358",
-    "display_title_zh": "Google 发布 notes"
+    "display_title_zh": ""
   },
   {
-    "event_type": "funding",
+    "event_type": "hardware_product",
     "event_status": "announced",
     "event_time": "",
-    "disclosed_at": "2026-07-09T03:05:45.140Z",
+    "disclosed_at": "2026-07-09T03:05:45.194Z",
     "entities": [
-      "EN-8d4321d936320802"
+      "EN-d9b1d7819af92e77",
+      "EN-bbdefa2950f49882",
+      "EN-8d4321d936320802",
+      "EN-8d323d8bba783aa3"
     ],
-    "action": "Series A",
-    "object": "to Build the Open Superintelligence Stack",
+    "action": "launches two new AI chips",
+    "object": "to compete with Nvidia",
     "metrics": [
-      "$130M",
-      "$150M"
+      "80%",
+      "1 million"
     ],
     "locations": [],
     "claim_refs": [
-      "CL-69b80588bbce60c4",
-      "CL-e424bd5758c51a90",
-      "CL-e3fe124b838767d4",
-      "CL-91b0687a6b33bfb3"
+      "CL-1cc211dda48a2df5",
+      "CL-a474abd4f4f26091",
+      "CL-349612643de6fc05",
+      "CL-4f231c50ce2a04bc"
     ],
     "source_refs": [
-      "SA-ecf40d5ee8e921b3"
+      "SA-e694ff120209f67a"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
-        "source_ref": "SA-ecf40d5ee8e921b3",
-        "disclosed_at": "2026-07-09T03:05:45.140Z",
+        "source_ref": "SA-e694ff120209f67a",
+        "disclosed_at": "2026-07-09T03:05:45.194Z",
         "status": "announced"
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-39894e375aacee77",
-    "display_title_zh": "NVIDIA 完成 1.3 亿美元 A 轮融资"
+    "event_id": "EV-96c8ce4ee89adb84",
+    "display_title_zh": "谷歌云推出两款新AI芯片以与英伟达竞争"
   },
   {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "",
     "disclosed_at": "2026-07-09T03:05:45.202Z",
     "entities": [
@@ -468,17 +681,170 @@
       "SA-f6b9dd88f97d03c5"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time",
+      "display_title_zh"
+    ],
     "update_history": [
       {
         "source_ref": "SA-f6b9dd88f97d03c5",
         "disclosed_at": "2026-07-09T03:05:45.202Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
     "event_id": "EV-4e1d2d6105d09d24",
-    "display_title_zh": "Rebellions 完成 4 亿美元 C 轮融资"
+    "display_title_zh": ""
+  },
+  {
+    "event_type": "product_release",
+    "event_status": "announced",
+    "event_time": "",
+    "disclosed_at": "2026-07-09T03:05:45.212Z",
+    "entities": [
+      "EN-7d3194f79e645c42",
+      "EN-96eebba49dbbf422"
+    ],
+    "action": "releases",
+    "object": "new voice models for more natural live conversations",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-2c4fb60b7634cd24",
+      "CL-2c908209cf0a7d2e",
+      "CL-0ad496141a0ca536",
+      "CL-90485452cb1f9821"
+    ],
+    "source_refs": [
+      "SA-f74f72f8cc98683e"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "event_time"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-f74f72f8cc98683e",
+        "disclosed_at": "2026-07-09T03:05:45.212Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-6af1e74358025628",
+    "display_title_zh": "OpenAI 发布新语音模型，实现更自然的实时对话"
+  },
+  {
+    "event_type": "deployment",
+    "event_status": "completed",
+    "event_time": "",
+    "disclosed_at": "2026-07-09T03:05:45.216Z",
+    "entities": [
+      "EN-b5738c169b693bee",
+      "EN-4d748ebd71af03a7"
+    ],
+    "action": "deployed",
+    "object": "engineering program to scale agentic AI across the enterprise – Company Announcement - FT.com",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-43ee3549d25382c0",
+      "CL-299ac6c83518d682",
+      "CL-541e282169b4886f",
+      "CL-2003fb451b03d019"
+    ],
+    "source_refs": [
+      "SA-121c5d107f955286"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "event_time"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-121c5d107f955286",
+        "disclosed_at": "2026-07-09T03:05:45.216Z",
+        "status": "completed"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-01df8e489a34893b",
+    "display_title_zh": "ServiceNow 与埃森哲推出前沿部署工程计划，规模化企业级 AI 智能体应用"
+  },
+  {
+    "event_type": "deployment",
+    "event_status": "announced",
+    "event_time": "",
+    "disclosed_at": "2026-07-09T03:05:45.319Z",
+    "entities": [
+      "EN-8c9b422d20880c5a",
+      "EN-916a98f0fa2a39af",
+      "EN-e1874fed9f22986d"
+    ],
+    "action": "pilot",
+    "object": "AI/blockchain agtech platform",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-3f3b9f9d73c9e75f",
+      "CL-1bcf08e089297252",
+      "CL-653ae00d0b0eac59",
+      "CL-38bc20b0d60113d6"
+    ],
+    "source_refs": [
+      "SA-886944ef09f3cd6d"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "event_time"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-886944ef09f3cd6d",
+        "disclosed_at": "2026-07-09T03:05:45.319Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-df2357fc3c3b4f5e",
+    "display_title_zh": "IBM Africa 与 Hello Tractor 试点 AI/区块链农业科技平台"
+  },
+  {
+    "event_type": "model_release",
+    "event_status": "announced",
+    "event_time": "",
+    "disclosed_at": "2026-07-09T03:05:45.344Z",
+    "entities": [
+      "EN-6fcba5d96a4fadfd",
+      "EN-630dc133336bc266",
+      "EN-24caf10fe9bfb1c5"
+    ],
+    "action": "releases Grok 4.5, which Elon describes as an &#8216;Opus-class model",
+    "object": "&#8217;",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-ec2d6107c732e14c",
+      "CL-913d46a75159fe2c",
+      "CL-ac4400a00aa86a15",
+      "CL-9237aaeca90244b9"
+    ],
+    "source_refs": [
+      "SA-bcceb60ea21e07af"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "event_time"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-bcceb60ea21e07af",
+        "disclosed_at": "2026-07-09T03:05:45.344Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-bdcd6fc0caa8f6d4",
+    "display_title_zh": "SpaceXAI 发布 Grok 4.5，马斯克称其为“Opus 级模型”"
   },
   {
     "event_type": "product_release",
@@ -486,7 +852,10 @@
     "event_time": "",
     "disclosed_at": "2026-07-09T03:05:45.346Z",
     "entities": [
-      "EN-ea3bd73e2b506e00"
+      "EN-534e99d81da1c54d",
+      "EN-ea3bd73e2b506e00",
+      "EN-96eebba49dbbf422",
+      "EN-de1afc61dd4d2cea"
     ],
     "action": "launched",
     "object": "a new AI generator, Muse Image, and users are already pushing back over use of their photos",
@@ -502,7 +871,9 @@
       "SA-8b06d81f406c07f4"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-8b06d81f406c07f4",
@@ -511,8 +882,47 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-8f6cf12525556d0e",
-    "display_title_zh": "Meta 发布 a new AI generator"
+    "event_id": "EV-41baa43cf05d4288",
+    "display_title_zh": "Meta推出新AI图像生成器Muse Image，用户因照片使用问题表示反对"
+  },
+  {
+    "event_type": "hardware_product",
+    "event_status": "announced",
+    "event_time": "",
+    "disclosed_at": "2026-07-09T03:05:45.351Z",
+    "entities": [
+      "EN-26dd8e22f8cd723f",
+      "EN-8d4321d936320802",
+      "EN-5bd0203f18d83c93"
+    ],
+    "action": "releases free product to speed inference across lots of AI chips",
+    "object": "Hot French startup ZML releases free product to speed inference across lots of AI chips",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-aae94e9f5d1a367a",
+      "CL-7fc7752f05d748a4",
+      "CL-e8e8bd0d1b114ace",
+      "CL-caedb1b28a56f708"
+    ],
+    "source_refs": [
+      "SA-8dce55258443b217"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "object",
+      "event_time"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-8dce55258443b217",
+        "disclosed_at": "2026-07-09T03:05:45.351Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-6139380f3362803b",
+    "display_title_zh": "法国热门初创公司ZML发布免费产品，加速多AI芯片推理速度"
   },
   {
     "event_type": "lawsuit_settlement",
@@ -536,7 +946,9 @@
       "SA-6526d91600d34ba9"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-6526d91600d34ba9",
@@ -546,7 +958,47 @@
     ],
     "publication_status": "verified",
     "event_id": "EV-8cd571951f62b2c8",
-    "display_title_zh": "xAI 涉及诉讼与和解：: Man used Grok to make 7K sex images of stepdaughter, then shot himself"
+    "display_title_zh": "诉讼：男子利用Grok制作7000张继女性爱图片后开枪自杀"
+  },
+  {
+    "event_type": "product_release",
+    "event_status": "announced",
+    "event_time": "",
+    "disclosed_at": "2026-07-09T03:05:45.387Z",
+    "entities": [
+      "EN-7d3194f79e645c42",
+      "EN-c70eca6b0f88f44d",
+      "EN-3c92cc7e49924a6f"
+    ],
+    "action": "launches",
+    "object": "Thursday after a delay forced by the U.S. government",
+    "metrics": [],
+    "locations": [
+      "U.S."
+    ],
+    "claim_refs": [
+      "CL-bbdd2091c6b95965",
+      "CL-f0a75dd978f15381",
+      "CL-93b0d4a31067426c",
+      "CL-c735fe30141305e7"
+    ],
+    "source_refs": [
+      "SA-ad028d48f1c6efb8"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "event_time"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-ad028d48f1c6efb8",
+        "disclosed_at": "2026-07-09T03:05:45.387Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-ee9a1c99fe7054d6",
+    "display_title_zh": "OpenAI 的 GPT-5.6 因美国政府强制延迟后于周四发布"
   },
   {
     "event_type": "funding",
@@ -577,7 +1029,9 @@
     "conflicts": [],
     "missing_fields": [
       "entities",
-      "object"
+      "object",
+      "event_time",
+      "display_title_zh"
     ],
     "update_history": [
       {
@@ -588,7 +1042,44 @@
     ],
     "publication_status": "verified",
     "event_id": "EV-095e1a90f14ccdb9",
-    "display_title_zh": "LayerX uses AI to cut enterprise back-office workload, scores $100M in 完成 1 亿美元 B 轮融资"
+    "display_title_zh": ""
+  },
+  {
+    "event_type": "product_release",
+    "event_status": "announced",
+    "event_time": "",
+    "disclosed_at": "2026-07-09T03:05:45.420Z",
+    "entities": [
+      "EN-2b6e51bec93e86c1",
+      "EN-a6f1623a1e5232a6"
+    ],
+    "action": "adds",
+    "object": "background execution and MCP support to Gemini API managed agents",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-80619fd5e25eabb6",
+      "CL-a8b11d5a5372ff6b",
+      "CL-21d206ae86a7b6eb",
+      "CL-3cad9a139bae62ba"
+    ],
+    "source_refs": [
+      "SA-88176174776226f0"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "event_time"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-88176174776226f0",
+        "disclosed_at": "2026-07-09T03:05:45.420Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-93c6ccf23cc422cb",
+    "display_title_zh": "Google Deepmind 为 Gemini API 托管智能体新增后台执行与 MCP 支持"
   },
   {
     "event_type": "model_release",
@@ -596,7 +1087,9 @@
     "event_time": "",
     "disclosed_at": "2026-07-09T03:05:45.422Z",
     "entities": [
-      "EN-e1517be14d06cdb7"
+      "EN-3f140abd179102dd",
+      "EN-e1517be14d06cdb7",
+      "EN-cf5378a2305a999f"
     ],
     "action": "open-source a 2.7 trillion parameter model",
     "object": "later this year",
@@ -614,7 +1107,9 @@
       "SA-9e9d9b0a5226d7b5"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-9e9d9b0a5226d7b5",
@@ -623,7 +1118,7 @@
       }
     ],
     "publication_status": "partial",
-    "event_id": "EV-9da9d755019f241f",
-    "display_title_zh": "MiniMax 发布 later this year"
+    "event_id": "EV-ca8ea84386674eb0",
+    "display_title_zh": "中国AI初创公司MiniMax计划今年晚些时候开源一个2.7万亿参数模型"
   }
 ]

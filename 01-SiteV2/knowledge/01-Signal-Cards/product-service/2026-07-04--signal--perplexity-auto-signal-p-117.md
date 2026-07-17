@@ -2,7 +2,7 @@
 id: SIG-20260704-A12
 type: signal_card
 signal_type: product_service
-title: "Perplexity 的 AI 商业观察"
+title: "第23集：Perplexity CEO Aravind Srinivas谈搜索的未来、OpenAI封装器及用AI与亲人对话"
 date: 2026-07-04
 status: published
 source_title: "Ep 23: Perplexity CEO Aravind Srinivas on the future of Search, OpenAI Wrappers and Using AI to Talk to Loved Ones"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "Perplexity"
 
 frontend:
-  displayTitle: "Perplexity 的 AI 商业观察"
+  displayTitle: "第23集：Perplexity CEO Aravind Srinivas谈搜索的未来、OpenAI封装器及用AI与亲人对话"
   sourceLinks:
     - "https://unsupervised-learning.simplecast.com/episodes/ep-23-perplexity-ceo-aravind-srinivas-on-the-future-of-search-openai-wrappers-and-using-ai-to-talk-to-loved-ones-jTkHZhQG"
 ---
 
-# Perplexity 的 AI 商业观察
+# 第23集：Perplexity CEO Aravind Srinivas谈搜索的未来、OpenAI封装器及用AI与亲人对话
 
 ## 新闻事实
 

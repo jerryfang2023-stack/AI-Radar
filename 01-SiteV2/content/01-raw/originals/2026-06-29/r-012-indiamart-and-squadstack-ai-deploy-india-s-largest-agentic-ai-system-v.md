@@ -72,6 +72,10 @@ key_excerpts: [{"type":"workflow_change","text":"New Delhi, June 17: ... MART ha
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_zh: "IndiaMART 与 SquadStack.ai 部署印度最大 AI 智能体系统 VANI，每日驱动超 10 万次自主买卖对话"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # IndiaMART and SquadStack.ai Deploy India’s Largest Agentic AI System, VANI, Powering over 1 Lakh Autonomous Buyer-Seller Conversations Daily |

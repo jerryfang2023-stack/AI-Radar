@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-062
 title: "NVIDIA 联手日本政经界发布全球首个国家级 AI 基础设施"
 title_zh: "NVIDIA 联手日本政经界发布全球首个国家级 AI 基础设施"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/977/552.htm"
 canonical_url: "https://ithome.com/0/977/552.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-17T04:40:17.178Z
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # NVIDIA 联手日本政经界发布全球首个国家级 AI 基础设施

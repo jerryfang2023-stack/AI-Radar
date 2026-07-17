@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Snap 将内部生成式 AI 视频团队
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "Snap 剥离 AI 视频团队成立新公司 Dotmo"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Snap 剥离 AI 视频团队成立新公司 Dotmo

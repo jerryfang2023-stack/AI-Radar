@@ -72,6 +72,10 @@ key_excerpts: [{"type":"supporting_context","text":"微软计划在2026年6月�
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "微软将默认向符合条件Win11设备自动安装Microsoft 365 Copilot"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 微软将默认向符合条件Win11设备自动安装Microsoft 365 Copilot

@@ -2,7 +2,7 @@
 id: SIG-20260601-A16
 type: signal_card
 signal_type: case
-title: "Replit 宣布获得 Visa 投资，企业 AI 编程接近支付流程"
+title: "Replit通过Visa投资与合作伙伴关系、支付扩展及解决方案合作伙伴计划，扩大企业领导力"
 date: 2026-06-01
 status: published
 asset_level: frontstage
@@ -58,7 +58,7 @@ signal_owner: "Replit / Visa"
 watch_reason: "继续看双方是否披露支付能力接入范围、Visa 内部使用效果和企业客户采用情况。"
 
 frontend:
-  displayTitle: "Replit 宣布获得 Visa 投资，企业 AI 编程接近支付流程"
+  displayTitle: "Replit通过Visa投资与合作伙伴关系、支付扩展及解决方案合作伙伴计划，扩大企业领导力"
   eventLine: "Replit 宣布获得 Visa 投资，并扩展双方在企业使用、支付能力和解决方案伙伴计划上的合作。"
   whyWatch: "Visa 的参与让 AI 编程工具更接近真实交易系统。"
   businessMeaning: "企业要处理的不只是代码效率，还包括支付、权限、交易确认和责任归属。"
@@ -68,7 +68,7 @@ frontend:
     - "https://www.prnewswire.com/news-releases/replit-expands-enterprise-leadership-with-visa-investment-and-partnership-payments-expansion-and-solution-partner-program-302784366.html"
 ---
 
-# Replit 宣布获得 Visa 投资，企业 AI 编程接近支付流程
+# Replit通过Visa投资与合作伙伴关系、支付扩展及解决方案合作伙伴计划，扩大企业领导力
 
 ## 信号底稿
 

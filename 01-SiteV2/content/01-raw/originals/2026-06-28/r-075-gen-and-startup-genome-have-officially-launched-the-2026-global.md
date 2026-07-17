@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"The IDC forecasts the AI market to reach
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "GEN与Startup Genome正式启动2026年全球..."
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # GEN and Startup Genome have officially launched the 2026 Global ...

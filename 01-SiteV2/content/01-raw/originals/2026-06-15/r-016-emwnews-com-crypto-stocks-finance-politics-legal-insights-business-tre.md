@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"2026 AI [...] deflations [...] Mechanism
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "EMWNews.com 加密货币股票 金融 政治 法律洞察 商业趋势 网络安全与金融科技"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # EMWNews.com Crypto Stocks Finance Politics Legal Insights Business Trends Cybersecurity & Fintech

@@ -1,7 +1,7 @@
 ---
 id: CASE-20260519-06
 type: case_card
-title: "Hacker News：Show HN: Skyvern – Browser automation using "
+title: "Show HN: Skyvern – 利用大语言模型与计算机视觉的浏览器自动化工具"
 date: 2026-05-19
 status: draft
 created_at: 2026-05-19T16:02:30.474Z
@@ -68,7 +68,7 @@ internal:
   last_reviewed: 2026-05-19
 ---
 
-# Hacker News：Show HN: Skyvern – Browser automation using 
+# Show HN: Skyvern – 利用大语言模型与计算机视觉的浏览器自动化工具
 
 ## 这个案例是谁
 

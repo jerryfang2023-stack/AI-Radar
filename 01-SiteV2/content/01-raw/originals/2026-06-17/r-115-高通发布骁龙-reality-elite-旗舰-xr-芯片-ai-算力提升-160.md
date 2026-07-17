@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"高通发布骁龙 Reality Elite 旗舰 
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "高通发布骁龙 Reality Elite 旗舰 XR 芯片，AI 算力提升 160%"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 高通发布骁龙 Reality Elite 旗舰 XR 芯片，AI 算力提升 160%

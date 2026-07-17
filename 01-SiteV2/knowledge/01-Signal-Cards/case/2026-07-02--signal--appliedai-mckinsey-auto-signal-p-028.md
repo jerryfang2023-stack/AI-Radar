@@ -2,7 +2,7 @@
 id: SIG-20260702-A12
 type: signal_card
 signal_type: case
-title: "AppliedAI 与麦肯锡合作，用 AI 改造受监管企业流程"
+title: "AppliedAI与麦肯锡合作，利用AI快速重构受监管企业流程"
 date: 2026-07-02
 status: published
 source_title: "AppliedAI and McKinsey & Company collaborate to rapidly rewire regulated enterprise processes with AI"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "AppliedAI / McKinsey"
 
 frontend:
-  displayTitle: "AppliedAI 与麦肯锡合作，用 AI 改造受监管企业流程"
+  displayTitle: "AppliedAI与麦肯锡合作，利用AI快速重构受监管企业流程"
   sourceLinks:
     - "https://www.prnewswire.com/apac/news-releases/appliedai-and-mckinsey--company-collaborate-to-rapidly-rewire-regulated-enterprise-processes-with-ai-302780007.html"
 ---
 
-# AppliedAI 与麦肯锡合作，用 AI 改造受监管企业流程
+# AppliedAI与麦肯锡合作，利用AI快速重构受监管企业流程
 
 ## 新闻事实
 

@@ -2,7 +2,7 @@
 id: SIG-20260523-01
 type: signal_card
 signal_type: funding
-title: "Netomi 融资 1.1 亿美元，扩展高风险客户体验智能体"
+title: "Netomi从Accenture Ventures、Adobe Ventures和WndrCo融资1.1亿美元，用于在全球最复杂环境中部署代理型客户体验，打造AI嵌入的数字体验"
 date: 2026-05-23
 status: published
 asset_level: frontstage
@@ -64,7 +64,7 @@ signal_owner: "Netomi"
 watch_reason: "未来 60 到 90 天观察 Netomi 是否披露行业客户案例、部署规模、处理量、留存或合规指标。"
 
 frontend:
-  displayTitle: "Netomi 融资 1.1 亿美元，扩展高风险客户体验智能体"
+  displayTitle: "Netomi从Accenture Ventures、Adobe Ventures和WndrCo融资1.1亿美元，用于在全球最复杂环境中部署代理型客户体验，打造AI嵌入的数字体验"
   eventLine: "Netomi 宣布完成 1.1 亿美元融资，用于扩展面向复杂企业环境的 agentic CX 平台。"
   whyWatch: "这条信号把大额融资、企业级客户体验和可审计运行环境放在一起，说明智能体预算正在从通用工具走向高风险业务流程。"
   businessMeaning: "企业老板需要关注的不是客服机器人本身，而是客服回复、合规审核、升级转人工和断线后的恢复责任被打包进同一套 AI 交付责任。"
@@ -74,7 +74,7 @@ frontend:
     - "https://www.businesswire.com/news/home/20260429618643/en/Netomi-Raises-%24110M-from-Accenture-Ventures-Adobe-Ventures-and-WndrCo-to-Deploy-Agentic-Customer-Experiences-in-the-Worlds-Most-Complex-Environments-and-Create-the-AI-Embedded-Digital-Experience"
 ---
 
-# Netomi 融资 1.1 亿美元，扩展高风险客户体验智能体
+# Netomi从Accenture Ventures、Adobe Ventures和WndrCo融资1.1亿美元，用于在全球最复杂环境中部署代理型客户体验，打造AI嵌入的数字体验
 
 ## 信号底稿
 

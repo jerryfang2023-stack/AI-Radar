@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-014
 title: "Roadmap: The AI data center stack - Bessemer Venture Partners"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "路线图：AI数据中心技术栈 - Bessemer Venture Partners"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.bvp.com/atlas/roadmap-the-ai-data-center-stack"
 canonical_url: "https://bvp.com/atlas/roadmap-the-ai-data-center-stack"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-07T02:01:23.379Z
 theme: ai-hardware-investment-signal
 keyword_group: ai-hardware-investment-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Roadmap: The AI data center stack - Bessemer Venture Partners

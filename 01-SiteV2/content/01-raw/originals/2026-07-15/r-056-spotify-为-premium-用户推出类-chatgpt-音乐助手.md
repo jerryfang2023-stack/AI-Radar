@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-056
 title: "Spotify 为 Premium 用户推出类 ChatGPT 音乐助手"
 title_zh: "Spotify 为 Premium 用户推出类 ChatGPT 音乐助手"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://techcrunch.com/2026/07/14/spotify-expands-its-ai-push-with-a-chatgpt-like-music-assistant"
 canonical_url: "https://techcrunch.com/2026/07/14/spotify-expands-its-ai-push-with-a-chatgpt-like-music-assistant"
 source_name: "TechCrunch：AI（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-15T04:28:37.935Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Spotify 为 Premium 用户推出类 ChatGPT 音乐助手

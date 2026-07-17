@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-055
 title: "微软将重构Copilot：合并消费者与企业版本，8月发布，新增AutoPilot智能体"
 title_zh: "微软将重构Copilot：合并消费者与企业版本，8月发布，新增AutoPilot智能体"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/972/542.htm"
 canonical_url: "https://ithome.com/0/972/542.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-05T04:56:15.430Z
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 微软将重构Copilot：合并消费者与企业版本，8月发布，新增AutoPilot智能体

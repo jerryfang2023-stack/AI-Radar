@@ -2,7 +2,7 @@
 id: SIG-20260629-A23
 type: signal_card
 signal_type: case
-title: "GitHub 2026 年 6 月发布说明与最新更新"
+title: "GitHub 发布说明 - 2026年6月最新更新 - Releasebot"
 date: 2026-06-29
 status: published
 source_title: "GitHub Release Notes - June 2026 Latest Updates - Releasebot"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "GitHub Release Notes"
 
 frontend:
-  displayTitle: "GitHub 2026 年 6 月发布说明与最新更新"
+  displayTitle: "GitHub 发布说明 - 2026年6月最新更新 - Releasebot"
   sourceLinks:
     - "https://releasebot.io/updates/github"
 ---
 
-# GitHub 2026 年 6 月发布说明与最新更新
+# GitHub 发布说明 - 2026年6月最新更新 - Releasebot
 
 ## 新闻事实
 

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"Anthropic and PwC today announced an exp
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "PwC部署Claude为客户构建技术、执行交易并重塑企业职能 \\ Anthropic"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # PwC is deploying Claude to build technology, execute deals, and reinvent enterprise functions for clients \ Anthropic

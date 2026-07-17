@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-044
 title: "How Zo Computer improved AI reliability 20x on Vercel - Vercel"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "Zo Computer在Vercel上将AI可靠性提升20倍 - Vercel"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://vercel.com/blog/how-zo-computer-improved-ai-reliability-20x-on-vercel"
 canonical_url: "https://vercel.com/blog/how-zo-computer-improved-ai-reliability-20x-on-vercel"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-09T03:05:45.044Z
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # How Zo Computer improved AI reliability 20x on Vercel - Vercel

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"When a prospective exhibitor submits a f
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Questex利用AI代理在90天内完成100万美元交易 - 一家媒体运营商"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Questex Used AI Agents to Close $1 Million in 90 Days - A Media Operator

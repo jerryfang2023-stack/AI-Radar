@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"At Microsoft Build, we are sharing 
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "使用 Microsoft Marketplace 构建、扩展和变现应用与代理 | Azure 全方位指南"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Build, scale, and monetize apps and agents with Microsoft Marketplace | All things Azure

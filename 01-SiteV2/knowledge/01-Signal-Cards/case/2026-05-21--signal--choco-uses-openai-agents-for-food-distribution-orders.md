@@ -2,7 +2,7 @@
 id: SIG-20260521-07
 type: signal_card
 signal_type: case
-title: "Choco 部署 OpenAI Agent 处理食品分销订单"
+title: "Choco利用AI代理实现食品配送自动化"
 date: 2026-05-21
 status: draft
 asset_level: candidate
@@ -37,7 +37,7 @@ signal_owner: "Choco / OpenAI"
 watch_reason: "继续看 Choco 是否披露订单量、错误率和分销商采用范围。"
 
 frontend:
-  displayTitle: "Choco 部署 OpenAI Agent 处理食品分销订单"
+  displayTitle: "Choco利用AI代理实现食品配送自动化"
   eventLine: "OpenAI 案例显示，Choco 用 OrderAgent 和 VoiceAgent 减少分销商人工录单。"
   whyWatch: "它落在传统分销行业的订单流，不是通用聊天，而是具体运营任务。"
   businessMeaning: "影响的是订单录入、电话沟通、分销商人力和供应链响应速度。"
@@ -71,7 +71,7 @@ opportunity_signals:
   missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
 ---
 
-# Choco 部署 OpenAI Agent 处理食品分销订单
+# Choco利用AI代理实现食品配送自动化
 
 ## 信号底稿
 

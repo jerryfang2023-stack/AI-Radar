@@ -72,6 +72,10 @@ key_excerpts: [{"type":"workflow_change","text":"# Coupa acquires Israeli AI sta
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Coupa并购持续，收购Tonkean AI | Ctech"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Coupa's M&A Spree Continues With Tonkean AI Acquisition | Ctech

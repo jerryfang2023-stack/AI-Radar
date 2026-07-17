@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Editor’s note: CuspAI raised a $100m 
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only
+title_zh: "🔬探索所有可能材料的空间——CuspAI 教授 Max Welling"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # 🔬Searching the Space of All Possible Materials — Prof. Max Welling, CuspAI

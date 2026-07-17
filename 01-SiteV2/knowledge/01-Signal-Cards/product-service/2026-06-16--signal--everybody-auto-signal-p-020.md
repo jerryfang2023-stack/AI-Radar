@@ -2,7 +2,7 @@
 id: SIG-20260616-A13
 type: signal_card
 signal_type: product_service
-title: "Everybody 推出 Agent 工作流能力，切入模型部署和算力服务"
+title: "美国政府指责Anthropic，安全专家称不可破解的LLM不现实"
 date: 2026-06-16
 status: published
 source_title: "美国政府指责Anthropic，安全专家称不可破解的LLM不现实"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Everybody"
 
 frontend:
-  displayTitle: "Everybody 推出 Agent 工作流能力，切入模型部署和算力服务"
+  displayTitle: "美国政府指责Anthropic，安全专家称不可破解的LLM不现实"
   sourceLinks:
     - "https://the-decoder.com/the-us-government-may-be-asking-anthropic-the-impossible-by-demanding-unhackable-llms"
 ---
 
-# Everybody 推出 Agent 工作流能力，切入模型部署和算力服务
+# 美国政府指责Anthropic，安全专家称不可破解的LLM不现实
 
 ## 新闻事实
 

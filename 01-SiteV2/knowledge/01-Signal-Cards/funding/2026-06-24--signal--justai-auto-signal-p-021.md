@@ -2,7 +2,7 @@
 id: SIG-20260624-A03
 type: signal_card
 signal_type: funding
-title: "JustAI 获得$17M 融资，用于企业 Agent 协作平台"
+title: "JustAI 获1700万美元A轮融资，打造智能营销平台"
 date: 2026-06-24
 status: published
 source_title: "JustAI Raises $17M Series A to Build an Agentic Marketing Platform"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "JustAI"
 
 frontend:
-  displayTitle: "JustAI 获得$17M 融资，用于企业 Agent 协作平台"
+  displayTitle: "JustAI 获1700万美元A轮融资，打造智能营销平台"
   sourceLinks:
     - "https://www.prnewswire.com/news-releases/justai-raises-17m-series-a-to-build-an-agentic-marketing-platform-302807090.html"
 ---
 
-# JustAI 获得$17M 融资，用于企业 Agent 协作平台
+# JustAI 获1700万美元A轮融资，打造智能营销平台
 
 ## 新闻事实
 

@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-17T18:20:10.588Z",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 727,
-    "quarantinedEventCount": 50
+    "eventCount": 818,
+    "quarantinedEventCount": 58
   },
   "entity": {
     "id": "EN-e3b1bf3dab957ffe",
@@ -21,14 +21,17 @@
       "canonical"
     ],
     "eventIds": [
-      "EV-cafe435ddd007821"
+      "EV-cafe435ddd007821",
+      "EV-6b51b1b6fe22c540"
     ],
     "viewpointIds": [],
     "classificationRefs": [
       "TX-industry-manufacturing",
       "TX-industry-healthcare_life_sciences",
+      "TX-technology-embodied_ai",
       "TX-industry-telecommunications",
-      "TX-technology-embodied_ai"
+      "TX-use_case-robotics_automation",
+      "TX-technology-multimodal"
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-07-16",
@@ -40,7 +43,9 @@
         "EV-cafe435ddd007821"
       ],
       "partnerships": [],
-      "productsServices": [],
+      "productsServices": [
+        "EV-6b51b1b6fe22c540"
+      ],
       "hardware": [],
       "organizationPeople": [],
       "other": []
@@ -55,7 +60,7 @@
         "eventGroup": "AI 硬件",
         "status": "announced",
         "statusLabel": "已公布",
-        "title": "NVIDIA 联手日本政经界发布全球首个国家级 AI 基础设施",
+        "title": "日本将购买英伟达Rubin芯片，用于构建机器人AI——《日本时报》",
         "displayTags": [
           {
             "dimensionId": "product_form",
@@ -101,6 +106,72 @@
           "EN-e3b1bf3dab957ffe",
           "EN-9700d41909cf810f"
         ]
+      },
+      {
+        "id": "EV-6b51b1b6fe22c540",
+        "dataDate": "2026-07-17",
+        "date": "2026-07-16",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "日本政府、行业领袖与英伟达共同启动",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "data_infrastructure",
+            "dimensionName": "产品形态",
+            "name": "数据与模型基础设施"
+          },
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          },
+          {
+            "dimensionId": "use_case",
+            "id": "robotics_automation",
+            "dimensionName": "应用场景",
+            "name": "机器人与物理自动化"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "embodied_ai",
+            "name": "具身智能"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "multimodal",
+            "name": "多模态"
+          },
+          {
+            "dimensionId": "industry",
+            "id": "healthcare_life_sciences",
+            "dimensionName": "行业",
+            "name": "医疗与生命科学"
+          },
+          {
+            "dimensionId": "industry",
+            "id": "manufacturing",
+            "dimensionName": "行业",
+            "name": "制造业"
+          },
+          {
+            "dimensionId": "industry",
+            "id": "telecommunications",
+            "dimensionName": "行业",
+            "name": "电信"
+          }
+        ],
+        "entityIds": [
+          "EN-e3b1bf3dab957ffe",
+          "EN-8d4321d936320802",
+          "EN-0f3360879e746531"
+        ]
       }
     ],
     "viewpoints": []
@@ -116,59 +187,72 @@
       "valueId": "manufacturing",
       "eventIds": [
         "EV-02882e6f5e1902c6",
-        "EV-82020f9eaea90951",
-        "EV-a1e3aeedc80c61b9",
-        "EV-adf92ecb7cd8714f",
         "EV-80e54c9a390da293",
-        "EV-384cc24be4b56cb5",
-        "EV-010946e35d35bb43",
-        "EV-21c2e81a7c073e04",
-        "EV-ef7402351b6b37bd",
-        "EV-1f842e1dff69bb87",
-        "EV-94b6fae7dd4e2b95",
-        "EV-9ab076d2fff77412",
+        "EV-aa33ca051f3a7f78",
         "EV-a84ec4216d3ded6d",
         "EV-cafe435ddd007821",
-        "EV-9f067d8f0d23eb48",
-        "EV-283e88bdd15ed87e",
+        "EV-4dd25589d834060d",
+        "EV-7263caa45bbf168e",
         "EV-5b16886442234f81",
+        "EV-39848cdd62c00e59",
         "EV-4faa2bcf2e42e60c",
         "EV-9ee3c0ec243b6129",
+        "EV-6b51b1b6fe22c540",
+        "EV-5f718c76c285ac9b",
         "EV-309ea4fc27a66485",
-        "EV-ec15684583d6f7a9"
+        "EV-6ce6b9c9780b97d9",
+        "EV-dd62847548bb6ae3",
+        "EV-946569cccbd9222f"
       ],
       "entityIds": [
         "EN-2a920347dfcf07a7",
         "EN-d5edfd3c9768e212",
         "EN-ea3bd73e2b506e00",
-        "EN-047364b9be67f665",
-        "EN-3ccbd9105a45d8fc",
-        "EN-9fbf261b62c1d7c0",
-        "EN-7d3194f79e645c42",
         "EN-8d4321d936320802",
         "EN-c70eca6b0f88f44d",
-        "EN-b9b0702726f5be1c",
-        "EN-bbdefa2950f49882",
-        "EN-2b6e51bec93e86c1",
-        "EN-7706c3c94d5f9b59",
-        "EN-968e2d5b08687bf4",
+        "EN-1bd14cd1a58c5708",
+        "EN-7d3194f79e645c42",
         "EN-ee04228c5c6d8b08",
+        "EN-7706c3c94d5f9b59",
         "EN-59ae856cd788d0f5",
         "EN-0f3360879e746531",
         "EN-e3b1bf3dab957ffe",
         "EN-9700d41909cf810f",
+        "EN-2fc9fff8ab7f35aa",
+        "EN-8efebac68a48c369",
+        "EN-96eebba49dbbf422",
+        "EN-16fd849ce27f115b",
+        "EN-f5791343a13abc71",
+        "EN-9fbf261b62c1d7c0",
+        "EN-60094bcf5292c490",
         "EN-956b7280912ef1cc",
+        "EN-18ada5002dd89e01",
+        "EN-72138e570e5103e2",
+        "EN-aa75c47729b4a292",
         "EN-8147e6fed86d42c1",
-        "EN-ce635c4eabff5e4f"
+        "EN-51188f73e8dfbfee",
+        "EN-cf9488537f777c1a",
+        "EN-38f4d27a18084522",
+        "EN-74beb25bdfe7bdd1",
+        "EN-94c93b5ab886f2d9",
+        "EN-ce635c4eabff5e4f",
+        "EN-ab9e3beebd83960d",
+        "EN-61cce404a45c3545",
+        "EN-23b979df49741c93",
+        "EN-02072c80a8386e8d",
+        "EN-2eb073b22916de55",
+        "EN-4a639cb888a15d75",
+        "EN-56ee86045cfb0ddd",
+        "EN-9dde0c2d375060f6",
+        "EN-3a7bd3e2360a3d29"
       ],
       "fdeIds": [
-        "FDE-45ad6eae0d326429",
-        "FDE-ef57fbc39a8c11f6"
+        "FDE-9f64e1521dd2dea0"
       ],
       "hardwareIds": [
         "HW-ceb55d9bc637c1d3"
       ],
-      "firstSeen": "2026-05-20",
+      "firstSeen": "2026-04-13",
       "lastSeen": "2026-07-17"
     },
     {
@@ -178,81 +262,89 @@
       "typeLabel": "行业",
       "valueId": "healthcare_life_sciences",
       "eventIds": [
+        "EV-2dff32c1b6f813e4",
         "EV-6e06cfa28f76a76f",
-        "EV-384cc24be4b56cb5",
+        "EV-aa33ca051f3a7f78",
         "EV-f487788f3d44f288",
-        "EV-b1138bccf5ccd86c",
-        "EV-ef7402351b6b37bd",
-        "EV-94b6fae7dd4e2b95",
+        "EV-189e43cb9fea8e1a",
+        "EV-a42e51959c627554",
         "EV-a84ec4216d3ded6d",
-        "EV-7c646d3fbc3fbbf1",
+        "EV-8b0f056571d68269",
         "EV-cafe435ddd007821",
-        "EV-30e8529ddeb228c8",
+        "EV-4db890779221bd9a",
+        "EV-d1e2a7c6d314612c",
+        "EV-8abf5adc3e72fbb8",
+        "EV-afd0332ad8f5f05b",
+        "EV-2c87c8ea47cbd1b6",
+        "EV-794296a712c1cf15",
+        "EV-bad301e14b034fbd",
         "EV-4763b46821ab746e",
-        "EV-63a344522ee9e8d4",
-        "EV-57597c92f7b183a9",
-        "EV-ec15684583d6f7a9",
+        "EV-6b51b1b6fe22c540",
+        "EV-2aca9a810ea65555",
+        "EV-6ce6b9c9780b97d9",
+        "EV-dd62847548bb6ae3",
         "EV-322796d9761a0824",
-        "EV-14b44a40808340f5"
+        "EV-edb1ddb3a091ada4"
       ],
       "entityIds": [
+        "EN-cf9488537f777c1a",
+        "EN-96eebba49dbbf422",
         "EN-caaa8e02be54cfc9",
+        "EN-1bd14cd1a58c5708",
         "EN-7d3194f79e645c42",
         "EN-f3d05a0f6248941d",
-        "EN-2b6e51bec93e86c1",
-        "EN-7706c3c94d5f9b59",
+        "EN-11507a0e2f5e69d5",
+        "EN-b314f58f5f506fd2",
         "EN-ee04228c5c6d8b08",
+        "EN-7706c3c94d5f9b59",
+        "EN-e5cc9e38970eacb5",
         "EN-cbc62794911ff31b",
         "EN-59ae856cd788d0f5",
         "EN-8d4321d936320802",
         "EN-0f3360879e746531",
         "EN-e3b1bf3dab957ffe",
         "EN-9700d41909cf810f",
+        "EN-27032b3c60ab2a95",
+        "EN-43381465c2b7d64e",
         "EN-c70eca6b0f88f44d",
+        "EN-28d0bd981118a907",
         "EN-9fbf261b62c1d7c0",
-        "EN-ea3bd73e2b506e00"
+        "EN-8d291c7017252b07",
+        "EN-8147e6fed86d42c1",
+        "EN-4d748ebd71af03a7",
+        "EN-c3e4cc183d345262",
+        "EN-ab877737b6081bd1",
+        "EN-06b5472c16feae4c",
+        "EN-12b0c8b376b8375e",
+        "EN-bab9670e68265ab1",
+        "EN-a93bc1dfeb147c54",
+        "EN-6f7ac1823da81d2e",
+        "EN-86acdf589a6723d5",
+        "EN-61cce404a45c3545",
+        "EN-2a920347dfcf07a7",
+        "EN-23b979df49741c93",
+        "EN-02072c80a8386e8d",
+        "EN-2eb073b22916de55",
+        "EN-4a639cb888a15d75",
+        "EN-56ee86045cfb0ddd",
+        "EN-9dde0c2d375060f6",
+        "EN-ea3bd73e2b506e00",
+        "EN-a19ad969c84178e9",
+        "EN-668a3f52e25f8f4c",
+        "EN-9eb42ffb4942bcc2",
+        "EN-b6e23938808f272d"
       ],
       "fdeIds": [
-        "FDE-0aed94e1936b4bc7"
+        "FDE-0ee0fe3baa3f1364",
+        "FDE-d08fed45110ab44b",
+        "FDE-ab9c514225686f60",
+        "FDE-560b710961006374",
+        "FDE-1fb7e2ae69d2f044"
       ],
       "hardwareIds": [
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-01-20",
-      "lastSeen": "2026-07-17"
-    },
-    {
-      "id": "TX-industry-telecommunications",
-      "name": "电信",
-      "nodeType": "industry",
-      "typeLabel": "行业",
-      "valueId": "telecommunications",
-      "eventIds": [
-        "EV-21c2e81a7c073e04",
-        "EV-cafe435ddd007821",
-        "EV-1ff169120ed385f6",
-        "EV-ec15684583d6f7a9"
-      ],
-      "entityIds": [
-        "EN-7d3194f79e645c42",
-        "EN-c70eca6b0f88f44d",
-        "EN-bbdefa2950f49882",
-        "EN-59ae856cd788d0f5",
-        "EN-8d4321d936320802",
-        "EN-0f3360879e746531",
-        "EN-e3b1bf3dab957ffe",
-        "EN-9700d41909cf810f",
-        "EN-2ab6d53e717a0e0d",
-        "EN-accf304851de0ad2",
-        "EN-f0fa30cd90f406c8",
-        "EN-60094bcf5292c490",
-        "EN-9fbf261b62c1d7c0"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [
-        "HW-ceb55d9bc637c1d3"
-      ],
-      "firstSeen": "2026-05-20",
       "lastSeen": "2026-07-17"
     },
     {
@@ -264,16 +356,15 @@
       "eventIds": [
         "EV-43b56d49df9a73a2",
         "EV-cafe435ddd007821",
-        "EV-9f067d8f0d23eb48",
         "EV-234ad54940674bf6",
         "EV-6415a58637893b34",
         "EV-4faa2bcf2e42e60c",
-        "EV-473f852b374d8b1c",
+        "EV-6b51b1b6fe22c540",
+        "EV-d633676a4a7d89a3",
+        "EV-6a2f3e9a22edff64",
         "EV-49751dfc7d2f6d6c",
-        "EV-197aac95e60671f7",
         "EV-e2d4132c671e3d41",
-        "EV-b88affdec306a75a",
-        "EV-305091abd41ad88d"
+        "EV-3f8ba5855b64dd1a"
       ],
       "entityIds": [
         "EN-bbdefa2950f49882",
@@ -283,14 +374,24 @@
         "EN-e3b1bf3dab957ffe",
         "EN-9700d41909cf810f",
         "EN-c70eca6b0f88f44d",
+        "EN-1f1cfc1d441be41f",
+        "EN-60094bcf5292c490",
+        "EN-aa75c47729b4a292",
         "EN-8147e6fed86d42c1",
-        "EN-047364b9be67f665",
+        "EN-96eebba49dbbf422",
+        "EN-754c490bd199c21a",
+        "EN-7a3ecc54829211df",
+        "EN-2f354de778e6a6da",
+        "EN-936f01f91fdadf69",
         "EN-30081094f2a8c83d",
+        "EN-d558e1de958b9d05",
         "EN-89e3f0711b76932c",
-        "EN-7ca2b7da6e0f8654"
+        "EN-e9830c30bc572802",
+        "EN-5e1fcba4c9f1cf69",
+        "EN-7d3194f79e645c42",
+        "EN-94ff75465b1afa65"
       ],
       "fdeIds": [
-        "FDE-45ad6eae0d326429",
         "FDE-dadf0e9572889d3d",
         "FDE-a85c538af1b093ed"
       ],
@@ -299,6 +400,187 @@
         "HW-dca442211b264bbe",
         "HW-1450585d9cd5879f"
       ],
+      "firstSeen": "2026-06-02",
+      "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "TX-industry-telecommunications",
+      "name": "电信",
+      "nodeType": "industry",
+      "typeLabel": "行业",
+      "valueId": "telecommunications",
+      "eventIds": [
+        "EV-cafe435ddd007821",
+        "EV-6b51b1b6fe22c540",
+        "EV-1ff169120ed385f6",
+        "EV-6ce6b9c9780b97d9"
+      ],
+      "entityIds": [
+        "EN-59ae856cd788d0f5",
+        "EN-8d4321d936320802",
+        "EN-0f3360879e746531",
+        "EN-e3b1bf3dab957ffe",
+        "EN-9700d41909cf810f",
+        "EN-2ab6d53e717a0e0d",
+        "EN-accf304851de0ad2",
+        "EN-f0fa30cd90f406c8",
+        "EN-60094bcf5292c490",
+        "EN-61cce404a45c3545",
+        "EN-2a920347dfcf07a7",
+        "EN-96eebba49dbbf422",
+        "EN-9fbf261b62c1d7c0",
+        "EN-23b979df49741c93",
+        "EN-02072c80a8386e8d",
+        "EN-2eb073b22916de55"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [
+        "HW-ceb55d9bc637c1d3"
+      ],
+      "firstSeen": "2026-05-20",
+      "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "TX-use_case-robotics_automation",
+      "name": "机器人与物理自动化",
+      "nodeType": "use_case",
+      "typeLabel": "应用场景",
+      "valueId": "robotics_automation",
+      "eventIds": [
+        "EV-434dcf1813a84ead",
+        "EV-f059fd80d668c6bc",
+        "EV-234ad54940674bf6",
+        "EV-39848cdd62c00e59",
+        "EV-4faa2bcf2e42e60c",
+        "EV-6b51b1b6fe22c540",
+        "EV-3353bd96728c99e2",
+        "EV-57565fc2e7502c59",
+        "EV-49751dfc7d2f6d6c",
+        "EV-69fbe85ca4ac81cd",
+        "EV-e1a7e7dcb19bfc70",
+        "EV-c834a9d33a86373c",
+        "EV-3f8ba5855b64dd1a",
+        "EV-7da59380bb30e76a",
+        "EV-67f32771d69084d6",
+        "EV-df3f5cf6bc985a9c",
+        "EV-ad64347138da72bb"
+      ],
+      "entityIds": [
+        "EN-6f21a653c48f4f19",
+        "EN-4dbe391b8fcf977a",
+        "EN-8d4321d936320802",
+        "EN-72138e570e5103e2",
+        "EN-60094bcf5292c490",
+        "EN-aa75c47729b4a292",
+        "EN-8147e6fed86d42c1",
+        "EN-96eebba49dbbf422",
+        "EN-e3b1bf3dab957ffe",
+        "EN-0f3360879e746531",
+        "EN-522d3edeb64a7ca4",
+        "EN-c608c4787821de1b",
+        "EN-101a515191c6be9e",
+        "EN-8afd897b5b887b06",
+        "EN-4d8ee3ec190ebf35",
+        "EN-30081094f2a8c83d",
+        "EN-d558e1de958b9d05",
+        "EN-4e7e886400fe6a83",
+        "EN-75fe8aaf5a7e3a7e",
+        "EN-6fcba5d96a4fadfd",
+        "EN-7d5f17368c04f04c",
+        "EN-0d049cd1e9f619f9",
+        "EN-5e1fcba4c9f1cf69",
+        "EN-7d3194f79e645c42",
+        "EN-94ff75465b1afa65",
+        "EN-42375a8003f17c95",
+        "EN-171fa23d27b5894b",
+        "EN-80ea42a231357d12"
+      ],
+      "fdeIds": [
+        "FDE-dadf0e9572889d3d"
+      ],
+      "hardwareIds": [
+        "HW-dca442211b264bbe"
+      ],
+      "firstSeen": "2026-05-24",
+      "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "TX-technology-multimodal",
+      "name": "多模态",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "multimodal",
+      "eventIds": [
+        "EV-a9810b47e0408a05",
+        "EV-f169db2fb75a1371",
+        "EV-fd21441fb6e143c3",
+        "EV-6b51b1b6fe22c540",
+        "EV-70e3f88cb06a856c",
+        "EV-3353bd96728c99e2",
+        "EV-f8ba1728de6a4899",
+        "EV-9496f90f3e808992",
+        "EV-f7b60c0c63403f8c",
+        "EV-e42e55d1e11a2ba2",
+        "EV-53f881da31630a04",
+        "EV-d07906b648eec63f",
+        "EV-5babb43f4b4d302f",
+        "EV-99e5df844a1bd670",
+        "EV-aae8b6aa0da7f103",
+        "EV-20cdbe59ba2a1359",
+        "EV-ae4561a4a9ebe17f",
+        "EV-f68e00bb9fd49fac",
+        "EV-fa1b1efd77f36d56",
+        "EV-74b965de27bc0515",
+        "EV-dd902b603e2e3dbc",
+        "EV-6b7917bd7edd4bde"
+      ],
+      "entityIds": [
+        "EN-193d220b421d776e",
+        "EN-7df09a7717ef2feb",
+        "EN-3a7bd3e2360a3d29",
+        "EN-50537dab76505dfc",
+        "EN-b5251b35f15bedc4",
+        "EN-e3b1bf3dab957ffe",
+        "EN-8d4321d936320802",
+        "EN-0f3360879e746531",
+        "EN-7d3194f79e645c42",
+        "EN-8f71c4871a160172",
+        "EN-78624f0a98e78301",
+        "EN-522d3edeb64a7ca4",
+        "EN-c608c4787821de1b",
+        "EN-101a515191c6be9e",
+        "EN-6f7ac1823da81d2e",
+        "EN-ea3bd73e2b506e00",
+        "EN-e3863f813fe47240",
+        "EN-de6b71bf77ff4299",
+        "EN-c4ef31845ea79710",
+        "EN-96eebba49dbbf422",
+        "EN-9e193e1ec8d75d41",
+        "EN-51fd7dc086fcb858",
+        "EN-2b6e51bec93e86c1",
+        "EN-b0532e1af75cc4ab",
+        "EN-01f1074bb52ff605",
+        "EN-7ed9c9e7c260ed06",
+        "EN-4d09c69c19f5f67b",
+        "EN-bbdefa2950f49882",
+        "EN-e0bab6f6c58bfe4e",
+        "EN-afe83c198e329ef2",
+        "EN-1730144d4e269a62",
+        "EN-e1517be14d06cdb7",
+        "EN-cf81a61e4eaef17c",
+        "EN-4f5d0b82a300f296",
+        "EN-2b96ed840c07482a",
+        "EN-9a6ee79873b1fb7b",
+        "EN-3f726694f178ed7a",
+        "EN-085598c00f2aaccf",
+        "EN-a3c3b987b09fc1bb",
+        "EN-d831f1170590ddb1",
+        "EN-3dd90c2e1bf28b32",
+        "EN-5d7b7e77768bfdfc",
+        "EN-9c8ae69b84f21a2e"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
       "firstSeen": "2026-06-02",
       "lastSeen": "2026-07-17"
     }
@@ -310,7 +592,7 @@
       "eventId": "EV-cafe435ddd007821",
       "dataDate": "2026-07-17",
       "date": "2026-07-16",
-      "title": "NVIDIA 联手日本政经界发布全球首个国家级 AI 基础设施",
+      "title": "日本将购买英伟达Rubin芯片，用于构建机器人AI——《日本时报》",
       "hardwareType": "gpu",
       "eventType": "hardware_deployment",
       "eventTypeLabel": "硬件部署",

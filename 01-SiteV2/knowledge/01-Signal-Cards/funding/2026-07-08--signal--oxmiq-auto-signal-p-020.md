@@ -2,7 +2,7 @@
 id: SIG-20260708-A04
 type: signal_card
 signal_type: funding
-title: "OXMIQ 获得 $35 M 融资"
+title: "OXMIQ 获3500万美元融资，用于扩展OxCore™架构"
 date: 2026-07-08
 status: published
 source_title: "OXMIQ Raises $35 Million to Scale OxCore™ Architecture — OXMIQ"
@@ -55,12 +55,12 @@ opportunity_signals:
 signal_owner: "OXMIQ"
 
 frontend:
-  displayTitle: "OXMIQ 获得 $35 M 融资"
+  displayTitle: "OXMIQ 获3500万美元融资，用于扩展OxCore™架构"
   sourceLinks:
     - "https://oxmiq.ai/blog-oxmiq-raises-35m-series-a"
 ---
 
-# OXMIQ 获得 $35 M 融资
+# OXMIQ 获3500万美元融资，用于扩展OxCore™架构
 
 ## 新闻事实
 

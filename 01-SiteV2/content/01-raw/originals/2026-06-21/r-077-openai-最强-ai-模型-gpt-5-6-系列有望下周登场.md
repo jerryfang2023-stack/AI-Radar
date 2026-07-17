@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"科技媒体 testingcatalog 报道，Ope
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "OpenAI 最强 AI 模型：GPT-5.6 系列有望下周登场"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # OpenAI 最强 AI 模型：GPT-5.6 系列有望下周登场

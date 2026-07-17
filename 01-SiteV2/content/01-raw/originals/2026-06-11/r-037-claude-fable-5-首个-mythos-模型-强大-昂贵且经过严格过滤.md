@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"Anthropic 发布 Claude Fable 5，这是
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Claude Fable 5：首个 Mythos 模型--强大、昂贵且经过严格过滤"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Claude Fable 5：首个 Mythos 模型--强大、昂贵且经过严格过滤

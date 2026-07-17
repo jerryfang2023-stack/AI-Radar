@@ -72,6 +72,10 @@ key_excerpts: [{"type":"supporting_context","text":"日本初创公司 Sakana AI
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Sakana AI 押注能自我改进的 AI，欲打破前沿实验室的算力军备竞赛"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Sakana AI 押注能自我改进的 AI，欲打破前沿实验室的算力军备竞赛

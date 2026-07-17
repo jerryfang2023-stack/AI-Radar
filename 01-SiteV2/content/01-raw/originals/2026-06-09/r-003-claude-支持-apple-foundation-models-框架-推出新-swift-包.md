@@ -72,6 +72,10 @@ key_excerpts: [{"type":"company_action","text":"Anthropic 通过一个新 Swift 
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "Claude 支持 Apple Foundation Models 框架，推出新 Swift 包"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Claude 支持 Apple Foundation Models 框架，推出新 Swift 包

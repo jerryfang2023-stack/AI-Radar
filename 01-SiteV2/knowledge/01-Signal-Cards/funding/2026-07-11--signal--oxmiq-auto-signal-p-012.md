@@ -2,7 +2,7 @@
 id: SIG-20260711-A03
 type: signal_card
 signal_type: funding
-title: "OXMIQ 完成 3500 万美元 A 轮融资，扩展 OxCore AI 芯片架构"
+title: "HPCwire - 自1987年起——报道全球最快计算机及其运营者"
 date: 2026-07-11
 status: published
 source_title: "OXMIQ Raises $35M to Scale OxCore Architecture"
@@ -57,12 +57,12 @@ opportunity_signals:
 signal_owner: "OXMIQ"
 
 frontend:
-  displayTitle: "OXMIQ 完成 3500 万美元 A 轮融资，扩展 OxCore AI 芯片架构"
+  displayTitle: "HPCwire - 自1987年起——报道全球最快计算机及其运营者"
   sourceLinks:
     - "https://www.hpcwire.com/off-the-wire/oxmiq-raises-35m-to-scale-oxcoretm-architecture/"
 ---
 
-# OXMIQ 完成 3500 万美元 A 轮融资，扩展 OxCore AI 芯片架构
+# HPCwire - 自1987年起——报道全球最快计算机及其运营者
 
 ## 新闻事实
 

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"supporting_context","text":"The growing adoption of mult
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_zh: "Rede Mater Dei de Saúde：使用Amazon Bedrock AgentCore监控收入周期中的AI代理 | 人工智能"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Rede Mater Dei de Saúde: Monitoring AI agents in the revenue cycle with Amazon Bedrock AgentCore | Artificial Intelligence

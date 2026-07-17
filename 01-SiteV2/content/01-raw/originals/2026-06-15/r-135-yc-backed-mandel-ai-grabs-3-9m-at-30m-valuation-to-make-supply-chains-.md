@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"YC-backed Mandel AI grabs $3.9M at $30M 
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only
+title_zh: "YC支持的Mandel AI以3000万美元估值融资390万美元，旨在提升供应链效率——TFN"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # YC-backed Mandel AI grabs $3.9M at $30M valuation to make supply chains more efficient — TFN

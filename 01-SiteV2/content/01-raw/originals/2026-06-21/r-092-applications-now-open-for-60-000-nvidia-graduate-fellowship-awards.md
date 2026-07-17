@@ -72,6 +72,10 @@ key_excerpts: [{"type":"workflow_change","text":"Bringing together the world’s
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_zh: "NVIDIA 研究生奖学金申请现已开放，奖金为 60,000 美元"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Applications Now Open for $60,000 NVIDIA Graduate Fellowship Awards

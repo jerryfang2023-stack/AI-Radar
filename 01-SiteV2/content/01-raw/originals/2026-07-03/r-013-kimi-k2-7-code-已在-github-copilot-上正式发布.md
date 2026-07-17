@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-013
 title: "Kimi K2.7 Code 已在 GitHub Copilot 上正式发布"
 title_zh: "Kimi K2.7 Code 已在 GitHub Copilot 上正式发布"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://github.blog/changelog/2026-07-01-kimi-k2-7-is-now-available-in-github-copilot"
 canonical_url: "https://github.blog/changelog/2026-07-01-kimi-k2-7-is-now-available-in-github-copilot"
 source_name: "Hacker News 热门（buzzing.cc 中文翻译）"
@@ -78,6 +78,7 @@ fact_extraction_completed_at: 2026-07-03T01:59:31.100Z
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Kimi K2.7 Code 已在 GitHub Copilot 上正式发布

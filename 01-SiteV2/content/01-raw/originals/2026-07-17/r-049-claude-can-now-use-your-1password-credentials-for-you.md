@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-049
 title: "Claude can now use your 1Password credentials for you"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "Claude现可代您使用1Password凭证"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.theverge.com/tech/966442/1password-anthropic-claude-browser-integration"
 canonical_url: "https://theverge.com/tech/966442/1password-anthropic-claude-browser-integration"
 source_name: "The Verge AI"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-17T04:40:17.115Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Claude can now use your 1Password credentials for you

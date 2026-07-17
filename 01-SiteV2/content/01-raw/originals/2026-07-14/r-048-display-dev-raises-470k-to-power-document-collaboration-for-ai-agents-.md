@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-048
 title: "Display.dev raises €470K to power document collaboration for AI agents - Tech.eu"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "Display.dev 获 47 万欧元融资，为 AI 智能体赋能文档协作"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://tech.eu/2026/07/07/displaydev-raises-eur470k-to-power-document-collaboration-for-ai-agents/"
 canonical_url: "https://tech.eu/2026/07/07/displaydev-raises-eur470k-to-power-document-collaboration-for-ai-agents"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-14T01:56:51.613Z
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Display.dev raises €470K to power document collaboration for AI agents - Tech.eu

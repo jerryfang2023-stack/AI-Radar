@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"微软发布了MAI-Thinking-1与MAI
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "微软发布新MAI模型"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 微软发布新MAI模型

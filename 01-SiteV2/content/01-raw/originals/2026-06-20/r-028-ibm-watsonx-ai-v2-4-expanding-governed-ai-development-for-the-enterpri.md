@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"The release expands governed model 
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "IBM watsonx.ai v2.4：扩展企业级受管AI开发"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # IBM watsonx.ai v2.4: Expanding governed AI development for the enterprise

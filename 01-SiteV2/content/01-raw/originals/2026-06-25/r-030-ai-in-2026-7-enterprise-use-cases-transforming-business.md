@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"# AI in 2026: 7 Enterprise Use Cases Tra
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_zh: "2026年人工智能：7个企业用例正在重塑商业..."
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # AI in 2026: 7 Enterprise Use Cases Transforming Business ...

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Mem0 Raises $24M Series A to Build Memo
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "Mem0 完成2400万美元A轮融资，为AI代理构建记忆层"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Mem0 Raises $24M Series A to Build Memory Layer for AI Agents

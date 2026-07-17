@@ -2,7 +2,7 @@
 id: SIG-20260619-A20
 type: signal_card
 signal_type: case
-title: "Today’s Hottest Role: Forward Deployed Engineer - Salesforce"
+title: "今日最热门职位：前部署工程师 - Salesforce"
 date: 2026-06-19
 status: published
 source_title: "Today’s Hottest Role: Forward Deployed Engineer - Salesforce"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Today’s Hottest Role"
 
 frontend:
-  displayTitle: "Today’s Hottest Role: Forward Deployed Engineer - Salesforce"
+  displayTitle: "今日最热门职位：前部署工程师 - Salesforce"
   sourceLinks:
     - "https://www.salesforce.com/ap/blog/forward-deployed-engineer/"
 ---
 
-# Today’s Hottest Role: Forward Deployed Engineer - Salesforce
+# 今日最热门职位：前部署工程师 - Salesforce
 
 ## 新闻事实
 

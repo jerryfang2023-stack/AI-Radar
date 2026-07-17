@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-022
 title: "Etched puts working silicon and $1B in contracts behind inference ASICs - Insights"
-title_zh: "Etched将工作硅和10亿美元的合同置于推理ASIC的背后-见解"
-title_translation_status: translated
-title_translation_method: mymemory_title_translation
+title_zh: "Etched推出工作硅片及10亿美元合同，助力推理ASIC芯片——深度解析"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://insights.marvin-42.com/articles/etched-puts-working-silicon-and-1b-in-contracts-behind-inference-asics"
 canonical_url: "https://insights.marvin-42.com/articles/etched-puts-working-silicon-and-1b-in-contracts-behind-inference-asics"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-10T01:59:45.040Z
 theme: ai-hardware-investment-signal
 keyword_group: ai-hardware-investment-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Etched puts working silicon and $1B in contracts behind inference ASICs - Insights

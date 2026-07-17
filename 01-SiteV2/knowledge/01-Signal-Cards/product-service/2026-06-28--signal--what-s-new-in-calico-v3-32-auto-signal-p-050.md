@@ -2,7 +2,7 @@
 id: SIG-20260628-A12
 type: signal_card
 signal_type: product_service
-title: "What’s New in Calico v3.32"
+title: "Calico v3.32 新特性"
 date: 2026-06-28
 status: published
 source_title: "What’s New in Calico v3.32"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "What’s New in Calico v3.32"
 
 frontend:
-  displayTitle: "What’s New in Calico v3.32"
+  displayTitle: "Calico v3.32 新特性"
   sourceLinks:
     - "https://www.tigera.io/blog/whats-new-in-calico-v3-32/"
 ---
 
-# What’s New in Calico v3.32
+# Calico v3.32 新特性
 
 ## 新闻事实
 

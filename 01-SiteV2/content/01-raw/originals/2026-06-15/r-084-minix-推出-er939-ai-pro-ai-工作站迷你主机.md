@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"MINIX 推出 ER939-AI Pro AI 工作站�
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "MINIX 推出 ER939-AI Pro AI 工作站迷你主机"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # MINIX 推出 ER939-AI Pro AI 工作站迷你主机

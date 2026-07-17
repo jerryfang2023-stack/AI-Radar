@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"Anthropic 加入由 Stripe、Google、Sh
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Anthropic 加入 Frontier 碳去除联盟，成首家 AI 初创成员"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Anthropic 加入 Frontier 碳去除联盟，成首家 AI 初创成员

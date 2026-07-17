@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-047
 title: "How a former DeepMind researcher raised at a $300M pre-seed valuation before launching a product"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "前DeepMind研究员在推出产品前以3亿美元预种子轮估值融资"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://techcrunch.com/2026/07/16/how-a-former-deepmind-researcher-raised-at-a-300m-pre-seed-valuation-before-launching-a-product/"
 canonical_url: "https://techcrunch.com/2026/07/16/how-a-former-deepmind-researcher-raised-at-a-300m-pre-seed-valuation-before-launching-a-product"
 source_name: "TechCrunch AI"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-17T04:40:17.104Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # How a former DeepMind researcher raised at a $300M pre-seed valuation before launching a product

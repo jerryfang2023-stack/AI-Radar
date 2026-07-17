@@ -2,7 +2,7 @@
 id: SIG-20260615-A01
 type: signal_card
 signal_type: funding
-title: "Willow 获得$7M 融资，押注地产和建筑设计工作流"
+title: "Willow 获 700 万美元种子轮融资，确保企业全面监管自主代理"
 date: 2026-06-15
 status: published
 source_title: "Willow Raises $7M Seed to Ensure Enterprises Can Fully Oversee and Govern Autonomous Agents"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Willow"
 
 frontend:
-  displayTitle: "Willow 获得$7M 融资，押注地产和建筑设计工作流"
+  displayTitle: "Willow 获 700 万美元种子轮融资，确保企业全面监管自主代理"
   sourceLinks:
     - "https://www.prnewswire.com/il/news-releases/willow-raises-7m-seed-to-ensure-enterprises-can-fully-oversee-and-govern-autonomous-agents-302791492.html"
 ---
 
-# Willow 获得$7M 融资，押注地产和建筑设计工作流
+# Willow 获 700 万美元种子轮融资，确保企业全面监管自主代理
 
 ## 新闻事实
 

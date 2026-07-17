@@ -72,6 +72,10 @@ key_excerpts: [{"type":"workflow_change","text":"Anthropic 推出 Claude Science
 theme: outside-core-exploration
 keyword_group: outside-core-exploration
 copyright_note: local research archive only
+title_zh: "Anthropic 发布 Claude Science beta：专注严谨科学研究的 AI 应用"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Anthropic 发布 Claude Science beta：专注严谨科学研究的 AI 应用

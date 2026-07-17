@@ -72,6 +72,10 @@ key_excerpts: [{"type":"supporting_context","text":"Nvidia has dominated the AI 
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_zh: "从OpenAI到SpaceX，为何纷纷自研芯片（给英伟达加压）"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Why everyone from OpenAI to SpaceX is building their own chips (and turning up the heat on Nvidia)

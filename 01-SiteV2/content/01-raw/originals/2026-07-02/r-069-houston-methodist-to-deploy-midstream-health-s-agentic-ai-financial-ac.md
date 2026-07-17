@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"/ query=vertical AI solution custom
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_zh: "休斯顿卫理公会医院将在全企业部署Midstream Health的代理式AI财务行动平台"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Houston Methodist to Deploy Midstream Health’s Agentic AI Financial Action Platform Across Enterprise

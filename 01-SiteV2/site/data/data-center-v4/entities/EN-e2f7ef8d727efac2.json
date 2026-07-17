@@ -1,0 +1,111 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 818,
+    "quarantinedEventCount": 58
+  },
+  "entity": {
+    "id": "EN-e2f7ef8d727efac2",
+    "name": "Developing and",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-3d80a399cdb2bb72"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-06-27",
+    "lastSeen": "2026-06-27",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [
+        "EV-3d80a399cdb2bb72"
+      ],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-3d80a399cdb2bb72",
+        "dataDate": "2026-06-27",
+        "date": "2026-06-27",
+        "eventType": "deployment",
+        "eventTypeLabel": "部署",
+        "eventGroup": "部署与案例",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "开发与部署生成式AI - Altman Solon",
+        "displayTags": [],
+        "entityIds": [
+          "EN-e2f7ef8d727efac2"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [
+    {
+      "id": "FDE-06ef9b4e442caa9c",
+      "eventId": "EV-3d80a399cdb2bb72",
+      "dataDate": "2026-06-27",
+      "date": "2026-06-27",
+      "title": "开发与部署生成式AI - Altman Solon",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Developing and",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "Generative AI - Altman Solon",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "Developing and Deploying Generative AI | Altman Solon",
+        "Pre-Packaged to Custom: Developing and Deploying Enterprise Generative AI Tools",
+        "However, enterprises that want to adopt generative AI tools face more complex choices compared to when they adopt well-established enterprise Software-as-a-Service (SaaS) solutions. How a company opts to develop and deploy generative AI tools brings tradeoffs across security, tool customization, licensing fees, deployment costs, scalability, time to deploy, and availability of internal skillsets. Our survey of 292 business leaders revealed the following:",
+        "62% of enterprises rank “customization” as the most important criterion to consider when implementing generative AI tools, followed by 55% citing “licensing and deployment costs.”"
+      ],
+      "outcomes": [],
+      "metrics": [
+        "62%",
+        "55%"
+      ],
+      "undisclosedFields": [
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://altmansolon.com/thought-leadership/generative-ai-deployment-strategies",
+      "entityIds": [
+        "EN-e2f7ef8d727efac2"
+      ]
+    }
+  ],
+  "hardware": []
+}

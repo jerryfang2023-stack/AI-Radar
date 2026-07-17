@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-120
 title: "Meta employees sue over layoffs they say were driven by discriminatory AI selection systems"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "Meta员工起诉公司，称裁员由歧视性AI筛选系统驱动"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://the-decoder.com/meta-employees-sue-over-layoffs-they-say-were-driven-by-discriminatory-ai-selection-systems/"
 canonical_url: "https://the-decoder.com/meta-employees-sue-over-layoffs-they-say-were-driven-by-discriminatory-ai-selection-systems"
 source_name: "The Decoder AI News"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-16T02:39:34.073Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Meta employees sue over layoffs they say were driven by discriminatory AI selection systems

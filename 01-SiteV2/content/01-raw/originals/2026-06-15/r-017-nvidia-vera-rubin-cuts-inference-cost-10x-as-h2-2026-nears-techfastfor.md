@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"The performance claims are among the mos
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "NVIDIA Vera Rubin将推理成本降低10倍，H2 2026临近 | TechFastForward"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # NVIDIA Vera Rubin Cuts Inference Cost 10x as H2 2026 Nears | TechFastForward

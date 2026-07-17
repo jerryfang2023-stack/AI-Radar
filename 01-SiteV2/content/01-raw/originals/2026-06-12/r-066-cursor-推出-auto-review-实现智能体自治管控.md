@@ -72,6 +72,10 @@ key_excerpts: [{"type":"supporting_context","text":"Cursor 本周推出 Auto-rev
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Cursor 推出 Auto-review 实现智能体自治管控"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Cursor 推出 Auto-review 实现智能体自治管控

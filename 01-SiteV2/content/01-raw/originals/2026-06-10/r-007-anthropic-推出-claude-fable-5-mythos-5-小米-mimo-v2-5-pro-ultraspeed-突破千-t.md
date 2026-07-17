@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"Anthropic 发布 Claude Fable 5 与 Clau
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Anthropic 推出 Claude Fable 5/Mythos 5，小米 MiMo V2.5-Pro-UltraSpeed 突破千 token/s 输出"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Anthropic 推出 Claude Fable 5/Mythos 5，小米 MiMo V2.5-Pro-UltraSpeed 突破千 token/s 输出

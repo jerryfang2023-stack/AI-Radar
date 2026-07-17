@@ -2,7 +2,7 @@
 id: SIG-20260617-A09
 type: signal_card
 signal_type: product_service
-title: "Research 推出 Agent 工作流能力，切入企业 Agent 协作平台"
+title: "从像素到规划：Google Research 发布 Vectorized Farmscapes 2020 数据集"
 date: 2026-06-17
 status: published
 source_title: "从像素到规划：Google Research 发布 Vectorized Farmscapes 2020 数据集"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Research"
 
 frontend:
-  displayTitle: "Research 推出 Agent 工作流能力，切入企业 Agent 协作平台"
+  displayTitle: "从像素到规划：Google Research 发布 Vectorized Farmscapes 2020 数据集"
   sourceLinks:
     - "https://research.google/blog/from-pixels-to-planning-earth-ai-for-nature-restoration"
 ---
 
-# Research 推出 Agent 工作流能力，切入企业 Agent 协作平台
+# 从像素到规划：Google Research 发布 Vectorized Farmscapes 2020 数据集
 
 ## 新闻事实
 

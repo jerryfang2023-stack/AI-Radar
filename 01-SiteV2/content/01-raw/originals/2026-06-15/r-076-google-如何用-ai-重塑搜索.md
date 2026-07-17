@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"Google 对其搜索引擎进行 
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Google 如何用 AI 重塑搜索"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Google 如何用 AI 重塑搜索

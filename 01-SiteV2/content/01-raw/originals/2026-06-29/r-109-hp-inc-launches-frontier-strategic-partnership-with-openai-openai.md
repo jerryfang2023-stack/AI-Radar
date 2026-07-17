@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"HP Inc. launches ... HP Inc. launches .
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "惠普公司与OpenAI启动Frontier战略合作伙伴关系"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # HP Inc. launches Frontier strategic partnership with OpenAI | OpenAI

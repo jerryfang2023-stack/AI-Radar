@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"BOSTON--(BUSINESS WIRE)--OutSystems, a l
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "AI 智能体在企业中走向主流，但94%担忧蔓延问题，OutSystems研究显示"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Agentic AI Goes Mainstream in the Enterprise, but 94% Raise Concern About Sprawl, OutSystems Research Finds

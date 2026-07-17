@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-045
 title: "Blaize and NeoTensr Enter into Contract for Up to $50M to Deploy Co-Branded AI Edge Data Center Infrastructure Across Asia Pacific – Company Announcement - FT.com"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "Blaize 与 NeoTensr 签署最高 5000 万美元合同，在亚太地区部署联合品牌 AI 边缘数据中心基础设施"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://markets.ft.com/data/announce/detail?dockey=600-202604161610BIZWIRE_USPRX____20260416_BW115083-1"
 canonical_url: "https://markets.ft.com/data/announce/detail?dockey=600-202604161610BIZWIRE_USPRX____20260416_BW115083-1"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-13T10:23:56.943Z
 theme: ai-hardware-scenario-service-signal
 keyword_group: ai-hardware-scenario-service-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Blaize and NeoTensr Enter into Contract for Up to $50M to Deploy Co-Branded AI Edge Data Center Infrastructure Across Asia Pacific – Company Announcement - FT.com

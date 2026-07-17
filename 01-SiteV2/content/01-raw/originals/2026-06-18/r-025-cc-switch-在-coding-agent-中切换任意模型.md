@@ -72,6 +72,10 @@ key_excerpts: [{"type":"company_action","text":"邵猛推荐 @Jason_Young1231 �
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "CC Switch：在 Coding Agent 中切换任意模型"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # CC Switch：在 Coding Agent 中切换任意模型

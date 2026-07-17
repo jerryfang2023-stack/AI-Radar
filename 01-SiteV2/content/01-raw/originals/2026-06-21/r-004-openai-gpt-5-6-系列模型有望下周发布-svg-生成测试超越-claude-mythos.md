@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"OpenAI 预计下周推出 GPT-5.
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "OpenAI GPT-5.6 系列模型有望下周发布，SVG 生成测试超越 Claude Mythos"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # OpenAI GPT-5.6 系列模型有望下周发布，SVG 生成测试超越 Claude Mythos

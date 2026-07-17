@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"Design partners, or the first few u
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "寻找设计合作伙伴的框架 | Andreessen Horowitz"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # A Framework for Finding A Design Partner | Andreessen Horowitz

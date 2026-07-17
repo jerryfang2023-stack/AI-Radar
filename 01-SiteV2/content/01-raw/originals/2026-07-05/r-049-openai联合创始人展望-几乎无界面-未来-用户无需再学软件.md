@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-049
 title: "OpenAI联合创始人展望\"几乎无界面\"未来：用户无需再学软件"
 title_zh: "OpenAI联合创始人展望\"几乎无界面\"未来：用户无需再学软件"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://the-decoder.com/openai-cofounder-envisions-almost-no-interface-future-where-nobody-learns-software-anymore"
 canonical_url: "https://the-decoder.com/openai-cofounder-envisions-almost-no-interface-future-where-nobody-learns-software-anymore"
 source_name: "The Decoder：AI News（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-05T04:56:15.400Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # OpenAI联合创始人展望"几乎无界面"未来：用户无需再学软件

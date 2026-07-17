@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"# Introducing the ... Introducing the C
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only
+title_zh: "推出C1自主工作机器人"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Introducing the C1 Autonomous Worker

@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-050
 title: "Supermicro Simplifies Edge AI Deployments with Validated Kubernetes Appliances with Red Hat and Everpure"
 title_zh: "Supermicro 联合 Red Hat 和 Everpure 推出经验证的边缘 AI Kubernetes 一体机"
-title_translation_status: translated
-title_translation_method: business-rule_title_translation
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.supermicro.com/en/pressreleases/supermicro-simplifies-edge-ai-deployments-validated-kubernetes-appliances-red-hat"
 canonical_url: "https://supermicro.com/en/pressreleases/supermicro-simplifies-edge-ai-deployments-validated-kubernetes-appliances-red-hat"
 source_name: "Supermicro official press release"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-13T10:23:56.984Z
 theme: ai-hardware-trend-innovation-signal
 keyword_group: ai-hardware-trend-innovation-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Supermicro Simplifies Edge AI Deployments with Validated Kubernetes Appliances with Red Hat and Everpure

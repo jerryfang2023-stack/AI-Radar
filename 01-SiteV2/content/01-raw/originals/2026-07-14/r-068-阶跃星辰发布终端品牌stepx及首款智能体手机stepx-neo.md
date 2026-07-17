@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-068
 title: "阶跃星辰发布终端品牌STEPX及首款智能体手机STEPX Neo"
 title_zh: "阶跃星辰发布终端品牌STEPX及首款智能体手机STEPX Neo"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/976/201.htm"
 canonical_url: "https://ithome.com/0/976/201.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-14T01:56:51.735Z
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 阶跃星辰发布终端品牌STEPX及首款智能体手机STEPX Neo

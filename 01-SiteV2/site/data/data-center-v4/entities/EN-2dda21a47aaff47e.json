@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-17T18:20:10.588Z",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 727,
-    "quarantinedEventCount": 50
+    "eventCount": 818,
+    "quarantinedEventCount": 58
   },
   "entity": {
     "id": "EN-2dda21a47aaff47e",
@@ -24,9 +24,7 @@
       "EV-9df93e714a75cd7c"
     ],
     "viewpointIds": [],
-    "classificationRefs": [
-      "TX-industry-media_entertainment"
-    ],
+    "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-22",
     "lastSeen": "2026-06-23",
@@ -53,14 +51,7 @@
         "status": "completed",
         "statusLabel": "已完成",
         "title": "英特尔联合长安汽车发布 AI 座舱方案：基于第三代酷睿 Ultra 处理器，支持本地运行大语言模型",
-        "displayTags": [
-          {
-            "dimensionId": "industry",
-            "id": "media_entertainment",
-            "dimensionName": "行业",
-            "name": "媒体与娱乐"
-          }
-        ],
+        "displayTags": [],
         "entityIds": [
           "EN-2dda21a47aaff47e"
         ]
@@ -70,52 +61,7 @@
   },
   "relatedEntities": [],
   "relationships": [],
-  "taxonomyNodes": [
-    {
-      "id": "TX-industry-media_entertainment",
-      "name": "媒体与娱乐",
-      "nodeType": "industry",
-      "typeLabel": "行业",
-      "valueId": "media_entertainment",
-      "eventIds": [
-        "EV-2d6d2dc0ead4be10",
-        "EV-e7a6bcd24f4241d0",
-        "EV-aad2b98b8f25d64b",
-        "EV-07a5533c18e5a74e",
-        "EV-04873bbc8be8e70d",
-        "EV-4c0e7025692ab98c",
-        "EV-49751dfc7d2f6d6c",
-        "EV-9df93e714a75cd7c",
-        "EV-83acf26a011ef213",
-        "EV-568d2aeab5234e48",
-        "EV-b986a633cca27df9"
-      ],
-      "entityIds": [
-        "EN-3db1f560db626918",
-        "EN-5388bc10736a0eff",
-        "EN-f0edcf96f6fa2ccb",
-        "EN-d36e5a1a7a3c45ce",
-        "EN-397e5a2983130593",
-        "EN-dd172e183ec20177",
-        "EN-ea3bd73e2b506e00",
-        "EN-bbdefa2950f49882",
-        "EN-30081094f2a8c83d",
-        "EN-2dda21a47aaff47e",
-        "EN-2b6e51bec93e86c1",
-        "EN-8d4321d936320802",
-        "EN-b0532e1af75cc4ab"
-      ],
-      "fdeIds": [
-        "FDE-7334c7781021c39a",
-        "FDE-54a51e13cde024a8"
-      ],
-      "hardwareIds": [
-        "HW-dca442211b264bbe"
-      ],
-      "firstSeen": "2026-06-07",
-      "lastSeen": "2026-07-17"
-    }
-  ],
+  "taxonomyNodes": [],
   "fde": [],
   "hardware": []
 }

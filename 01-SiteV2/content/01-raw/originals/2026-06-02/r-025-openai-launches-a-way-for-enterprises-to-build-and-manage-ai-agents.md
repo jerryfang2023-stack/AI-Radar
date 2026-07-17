@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"OpenAI launches a way for enterp
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "OpenAI 推出企业构建与管理 AI 智能体的新方式"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # OpenAI launches a way for enterprises to build and manage AI agents

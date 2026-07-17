@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"Stephanie Palazzolo reports on t
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "前沿AI实验室正扩大对开源领域的领先优势..."
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Frontier AI labs are extending their lead over open source ...

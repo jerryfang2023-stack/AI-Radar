@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-073
 title: "小米开源 Xiaomi-Robotics-U0：380 亿参数多模态具身生成模型"
 title_zh: "小米开源 Xiaomi-Robotics-U0：380 亿参数多模态具身生成模型"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/977/012.htm"
 canonical_url: "https://ithome.com/0/977/012.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-16T02:39:33.852Z
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 小米开源 Xiaomi-Robotics-U0：380 亿参数多模态具身生成模型

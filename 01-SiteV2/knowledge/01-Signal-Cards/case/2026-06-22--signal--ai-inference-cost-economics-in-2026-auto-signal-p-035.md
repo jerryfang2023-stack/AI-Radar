@@ -2,7 +2,7 @@
 id: SIG-20260622-A09
 type: signal_card
 signal_type: case
-title: "AI Inference Cost Economics in 2026 记录企业应用场景：模型部署和算力调用"
+title: "2026年AI推理成本经济学：GPU财务运营指南"
 date: 2026-06-22
 status: published
 source_title: "AI Inference Cost Economics in 2026: GPU FinOps Playbook"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "AI Inference Cost Economics in 2026"
 
 frontend:
-  displayTitle: "AI Inference Cost Economics in 2026 记录企业应用场景：模型部署和算力调用"
+  displayTitle: "2026年AI推理成本经济学：GPU财务运营指南"
   sourceLinks:
     - "https://www.spheron.network/blog/ai-inference-cost-economics-2026"
 ---
 
-# AI Inference Cost Economics in 2026 记录企业应用场景：模型部署和算力调用
+# 2026年AI推理成本经济学：GPU财务运营指南
 
 ## 新闻事实
 

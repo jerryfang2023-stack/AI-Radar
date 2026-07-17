@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-099
 title: "Lawsuit: Man used Grok to make 7K sex images of stepdaughter, then shot himself"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "诉讼：男子利用Grok制作7000张继女性爱图片后开枪自杀"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://arstechnica.com/tech-policy/2026/07/lawsuit-grok-user-made-7k-child-sex-images-xai-only-reported-one-gang-rape-prompt/"
 canonical_url: "https://arstechnica.com/tech-policy/2026/07/lawsuit-grok-user-made-7k-child-sex-images-xai-only-reported-one-gang-rape-prompt"
 source_name: "Ars Technica AI"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-09T03:05:45.355Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Lawsuit: Man used Grok to make 7K sex images of stepdaughter, then shot himself

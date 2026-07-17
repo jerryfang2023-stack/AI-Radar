@@ -1,7 +1,7 @@
 ---
 id: CASE-20260519-02
 type: case_card
-title: "The Decoder：与MAGA结盟的团体要求对前沿AI模型进行政府监管"
+title: "与MAGA结盟的团体要求对前沿AI模型进行政府监管"
 date: 2026-05-19
 status: draft
 created_at: 2026-05-19T16:02:30.469Z
@@ -68,7 +68,7 @@ internal:
   last_reviewed: 2026-05-19
 ---
 
-# The Decoder：与MAGA结盟的团体要求对前沿AI模型进行政府监管
+# 与MAGA结盟的团体要求对前沿AI模型进行政府监管
 
 ## 这个案例是谁
 

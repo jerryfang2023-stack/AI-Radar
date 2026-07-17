@@ -2,7 +2,7 @@
 id: SIG-20260617-A02
 type: signal_card
 signal_type: funding
-title: "Techcrunch 获得$9M 融资，押注模型部署和算力服务"
+title: "Probably 获 900 万美元种子轮，构建更可靠的 AI 错误检测系统"
 date: 2026-06-17
 status: published
 source_title: "Probably 获 900 万美元种子轮，构建更可靠的 AI 错误检测系统"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Techcrunch"
 
 frontend:
-  displayTitle: "Techcrunch 获得$9M 融资，押注模型部署和算力服务"
+  displayTitle: "Probably 获 900 万美元种子轮，构建更可靠的 AI 错误检测系统"
   sourceLinks:
     - "https://techcrunch.com/2026/06/16/probably-raises-9m-to-build-a-more-reliable-kind-of-ai"
 ---
 
-# Techcrunch 获得$9M 融资，押注模型部署和算力服务
+# Probably 获 900 万美元种子轮，构建更可靠的 AI 错误检测系统
 
 ## 新闻事实
 

@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-029
 title: "Best AI Agent Platforms and Tools in 2026 - Truefoundry"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "2026年最佳AI代理平台与工具 - Truefoundry"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.truefoundry.com/pt/blog/best-ai-agent-platforms"
 canonical_url: "https://truefoundry.com/pt/blog/best-ai-agent-platforms"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-07T02:01:23.477Z
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Best AI Agent Platforms and Tools in 2026 - Truefoundry

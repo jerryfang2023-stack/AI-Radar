@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-062
 title: "OpenAI 首款联名硬件：Codex Micro 键盘登场，灵活操控 AI 智能体"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "OpenAI 首款联名硬件：Codex Micro 键盘登场，灵活操控 AI 智能体"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/977/267.htm"
 canonical_url: "https://ithome.com/0/977/267.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-16T02:39:33.790Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # OpenAI 首款联名硬件：Codex Micro 键盘登场，灵活操控 AI 智能体

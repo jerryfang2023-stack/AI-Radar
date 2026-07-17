@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"OpenAI周一在一篇博客中宣布已
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "继Anthropic之后，OpenAI秘密提交IPO申请"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 继Anthropic之后，OpenAI秘密提交IPO申请

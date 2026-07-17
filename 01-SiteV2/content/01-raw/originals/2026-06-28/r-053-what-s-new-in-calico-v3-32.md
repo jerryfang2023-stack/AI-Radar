@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"We&#8217;re excited to announce 
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "Calico v3.32 新特性"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # What’s New in Calico v3.32

@@ -2,7 +2,7 @@
 id: SIG-20260610-A12
 type: signal_card
 signal_type: case
-title: "Merck, Home Depot tap Gemini Enterprise for AI agent development | TechTarget"
+title: "Merck、家得宝采用Gemini Enterprise开发AI代理 | TechTarget"
 date: 2026-06-10
 status: published
 source_title: "Merck, Home Depot tap Gemini Enterprise for AI agent development | TechTarget"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Williams"
 
 frontend:
-  displayTitle: "Merck, Home Depot tap Gemini Enterprise for AI agent development | TechTarget"
+  displayTitle: "Merck、家得宝采用Gemini Enterprise开发AI代理 | TechTarget"
   sourceLinks:
     - "https://www.techtarget.com/searchitoperations/news/366642097/Merck-Home-Depot-tap-Gemini-Enterprise-for-AI-agent-development"
 ---
 
-# Merck, Home Depot tap Gemini Enterprise for AI agent development | TechTarget
+# Merck、家得宝采用Gemini Enterprise开发AI代理 | TechTarget
 
 ## 新闻事实
 

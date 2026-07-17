@@ -2,7 +2,7 @@
 id: SIG-20260607-A09
 type: signal_card
 signal_type: case
-title: "GoogleCloudPlatform/agent-starter-pack - GitHub"
+title: "GitHub 仓库：GoogleCloudPlatform/agent-starter-pack"
 date: 2026-06-07
 status: published
 source_title: "GoogleCloudPlatform/agent-starter-pack - GitHub"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "GoogleCloudPlatform/agent"
 
 frontend:
-  displayTitle: "GoogleCloudPlatform/agent-starter-pack - GitHub"
+  displayTitle: "GitHub 仓库：GoogleCloudPlatform/agent-starter-pack"
   sourceLinks:
     - "https://github.com/googlecloudplatform/agent-starter-pack"
 ---
 
-# GoogleCloudPlatform/agent-starter-pack - GitHub
+# GitHub 仓库：GoogleCloudPlatform/agent-starter-pack
 
 ## 新闻事实
 

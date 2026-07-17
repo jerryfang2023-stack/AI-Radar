@@ -2,7 +2,7 @@
 id: SIG-20260619-A21
 type: signal_card
 signal_type: case
-title: "GitHub's plan for Agents — Kyle Daigle, GitHub - Latent.Space"
+title: "GitHub的Agent计划——Kyle Daigle，GitHub - Latent.Space"
 date: 2026-06-19
 status: published
 source_title: "GitHub's plan for Agents — Kyle Daigle, GitHub - Latent.Space"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Latent"
 
 frontend:
-  displayTitle: "GitHub's plan for Agents — Kyle Daigle, GitHub - Latent.Space"
+  displayTitle: "GitHub的Agent计划——Kyle Daigle，GitHub - Latent.Space"
   sourceLinks:
     - "https://www.latent.space/p/github"
 ---
 
-# GitHub's plan for Agents — Kyle Daigle, GitHub - Latent.Space
+# GitHub的Agent计划——Kyle Daigle，GitHub - Latent.Space
 
 ## 新闻事实
 

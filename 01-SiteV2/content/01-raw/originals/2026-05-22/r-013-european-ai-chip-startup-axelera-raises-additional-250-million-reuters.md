@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"European AI chip startup Axelera raises
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "欧洲AI芯片初创公司Axelera再获2.5亿美元融资 | 路透社"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # European AI chip startup Axelera raises additional $250 million | Reuters

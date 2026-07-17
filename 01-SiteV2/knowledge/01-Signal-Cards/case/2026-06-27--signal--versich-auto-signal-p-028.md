@@ -2,7 +2,7 @@
 id: SIG-20260627-A10
 type: signal_card
 signal_type: case
-title: "Making AI the Central Nervous System of a Manufacturer NetSuite ERP"
+title: "将AI打造为制造商NetSuite ERP的中枢神经系统"
 date: 2026-06-27
 status: published
 source_title: "Making AI the Central Nervous System of a Manufacturer NetSuite ERP"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Versich"
 
 frontend:
-  displayTitle: "Making AI the Central Nervous System of a Manufacturer NetSuite ERP"
+  displayTitle: "将AI打造为制造商NetSuite ERP的中枢神经系统"
   sourceLinks:
     - "https://versich.com/netsuite/case-studies/making-ai-central-nervous-system-manufacturer/"
 ---
 
-# Making AI the Central Nervous System of a Manufacturer NetSuite ERP
+# 将AI打造为制造商NetSuite ERP的中枢神经系统
 
 ## 新闻事实
 

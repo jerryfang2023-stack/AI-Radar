@@ -72,6 +72,10 @@ key_excerpts: [{"type":"workflow_change","text":"Title: ServiceNow, Nvidia expan
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_zh: "ServiceNow与Nvidia扩大合作，推出新AI代理 - 《经济时报》"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # ServiceNow, Nvidia expand partnership, launch new AI agent - The Economic Times

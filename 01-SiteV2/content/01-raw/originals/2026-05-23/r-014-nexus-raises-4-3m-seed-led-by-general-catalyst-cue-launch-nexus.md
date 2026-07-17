@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Nexus Raises $4.3M Seed Led by General 
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Nexus完成430万美元种子轮融资，由General Catalyst领投 | Cue Launch | Nexus"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Nexus Raises $4.3M Seed Led by General Catalyst | Cue Launch | Nexus

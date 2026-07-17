@@ -1,0 +1,118 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 818,
+    "quarantinedEventCount": 58
+  },
+  "entity": {
+    "id": "EN-caf559f7830b566f",
+    "name": "Claude Enterprise",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-266aff97294156f6"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-technology-model_context_protocol"
+    ],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-06-19",
+    "lastSeen": "2026-06-19",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-266aff97294156f6"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-266aff97294156f6",
+        "dataDate": "2026-06-19",
+        "date": "2026-06-19",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Claude Enterprise 推出企业托管 MCP 连接器授权管理",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "model_context_protocol",
+            "name": "MCP"
+          }
+        ],
+        "entityIds": [
+          "EN-caf559f7830b566f",
+          "EN-c70eca6b0f88f44d",
+          "EN-3db1f560db626918"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-technology-model_context_protocol",
+      "name": "MCP",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "model_context_protocol",
+      "eventIds": [
+        "EV-ed8260ee9a7a80af",
+        "EV-a2c13c14efec9218",
+        "EV-33292a33d0f4d599",
+        "EV-48a7437742aff5c5",
+        "EV-a0d3853dd41c8ef6",
+        "EV-7449d239223d4928",
+        "EV-266aff97294156f6",
+        "EV-9c41acd6ef6df77f"
+      ],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-08b6a35be337edce",
+        "EN-9fbf261b62c1d7c0",
+        "EN-e473f24d4325d51a",
+        "EN-33a6331aaa822714",
+        "EN-b3b5882e4eb97824",
+        "EN-a83eedd800c2433b",
+        "EN-7d3194f79e645c42",
+        "EN-178e3a5167e8e1d5",
+        "EN-3db1f560db626918",
+        "EN-2b78da3dc866654e",
+        "EN-bd2bfbea5911ec7a",
+        "EN-916a98f0fa2a39af",
+        "EN-d6d6e4e33c59b45e",
+        "EN-caf559f7830b566f",
+        "EN-5504f88c63fe766d"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-05-19",
+      "lastSeen": "2026-07-13"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"Visa 将支付基础设施接入 Ch
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Visa 与 ChatGPT 集成，AI 智能体可实现零售购买"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Visa 与 ChatGPT 集成，AI 智能体可实现零售购买

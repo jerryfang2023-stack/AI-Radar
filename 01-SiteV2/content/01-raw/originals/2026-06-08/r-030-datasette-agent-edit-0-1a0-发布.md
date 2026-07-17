@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"datasette-agent-edit 0.1a0 插�
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "datasette-agent-edit 0.1a0 发布"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # datasette-agent-edit 0.1a0 发布

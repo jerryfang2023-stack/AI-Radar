@@ -2,7 +2,7 @@
 id: SIG-20260610-A03
 type: signal_card
 signal_type: funding
-title: "Archestra.AI raises $10M to unlock next-gen agentic use case - Tech.eu"
+title: "Archestra.AI 获1000万美元融资，解锁下一代自主代理应用场景 - Tech.eu"
 date: 2026-06-10
 status: published
 source_title: "Archestra.AI raises $10M to unlock next-gen agentic use case - Tech.eu"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Archestra.AI"
 
 frontend:
-  displayTitle: "Archestra.AI raises $10M to unlock next-gen agentic use case - Tech.eu"
+  displayTitle: "Archestra.AI 获1000万美元融资，解锁下一代自主代理应用场景 - Tech.eu"
   sourceLinks:
     - "https://tech.eu/2026/06/02/archestraai-raises-10m-to-unlock-next-gen-agentic-use-case/"
 ---
 
-# Archestra.AI raises $10M to unlock next-gen agentic use case - Tech.eu
+# Archestra.AI 获1000万美元融资，解锁下一代自主代理应用场景 - Tech.eu
 
 ## 新闻事实
 

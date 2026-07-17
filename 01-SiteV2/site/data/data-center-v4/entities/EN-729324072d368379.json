@@ -1,0 +1,2893 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 818,
+    "quarantinedEventCount": 58
+  },
+  "entity": {
+    "id": "EN-729324072d368379",
+    "name": "Claude",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-84226288807f817b",
+      "EV-0347414d81e7f02e",
+      "EV-7fb25ff3d853c314"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-industry-education"
+    ],
+    "relatedEntityIds": [
+      "EN-c70eca6b0f88f44d",
+      "EN-7d3194f79e645c42",
+      "EN-3a7bd3e2360a3d29"
+    ],
+    "firstSeen": "2026-06-30",
+    "lastSeen": "2026-07-15",
+    "relationIds": [
+      "REL2-f1dcfa6f5b5a61d1",
+      "REL2-59bae0716fb5568d",
+      "REL2-0e0ef4c13fd83477",
+      "REL2-282eb0c70c8e4564",
+      "REL2-7cc4acc5b353f4fc",
+      "REL2-80e1cf8c6adda0e7",
+      "REL2-af9efc27d4eb77af",
+      "REL2-6e39a930f3aa1688",
+      "REL2-b5e7fc6aebb74f2d",
+      "REL2-33045ca6da0f1758",
+      "REL2-484ed3617e7af912",
+      "REL2-d732460240ae0fca",
+      "REL2-2a47bb839eee70c5",
+      "REL2-a3a6bf494b1a1a36",
+      "REL2-b5f95a4bf76881e0",
+      "REL2-2942b0593c04c0e0",
+      "REL2-bff72a2a7e329405",
+      "REL2-0636bdcd705d71c5",
+      "REL2-4182bb33531f8309",
+      "REL2-4a73ed3d8c5482e4",
+      "REL2-f008fbaf7aa95da2",
+      "REL2-6488006f011b1bd5",
+      "REL2-5bedce8e3290b08e",
+      "REL2-7f5cb3c99f5e6776",
+      "REL2-a3a488f8efd223ce",
+      "REL2-b28eafdbf14c50de",
+      "REL2-0c892894a2c3b039",
+      "REL2-a8713041b3d3c706",
+      "REL2-33e373a9dd84ecd2",
+      "REL2-134368b43c17c946",
+      "REL2-03a9fee9f0f0adc9",
+      "REL2-a0b5b92e12c2fe06",
+      "REL2-98d3a14eddaaeb6f",
+      "REL2-98fd209d09005a1c",
+      "REL2-4ad53e05ce3fda29",
+      "REL2-0efe853421b84beb",
+      "REL2-c471780ab055c67c",
+      "REL2-5d703aae847bbc5e",
+      "REL2-7eb22c82dc9fc8a2",
+      "REL2-1f7f0f143aeb3e68",
+      "REL2-2993f4f400172e9c",
+      "REL2-30448a7da675c5ae",
+      "REL2-3ee2424266e0f256",
+      "REL2-8b46e6332bf1ea1b",
+      "REL2-e8f23c5396109c3b",
+      "REL2-0b992980f3ebebc9",
+      "REL2-937c0d5c5660f23a",
+      "REL2-40f49af8f268e68f",
+      "REL2-ee02c22ed3f61a9c",
+      "REL2-880ef9b2b80e161e"
+    ],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-a8a8f26c5128d894",
+        "EV-26cd4d692404e5c6",
+        "EV-84226288807f817b",
+        "EV-0347414d81e7f02e",
+        "EV-8bf42c1816e772ba",
+        "EV-2bd337245c920bc8",
+        "EV-d39b53ca7b84b9ca",
+        "EV-92fbbeb840a98e97",
+        "EV-cedeae902fd1263d",
+        "EV-e130583e34ab9d4c",
+        "EV-cc3b92fe233953cf",
+        "EV-d40a4e1b7a53cabe",
+        "EV-bf6f67c47c6b0d7c",
+        "EV-2059f42c7b2aff44",
+        "EV-9c0552732b34f278",
+        "EV-63fdf001c22a0ed4",
+        "EV-d2c370511e9e55fe",
+        "EV-7fb25ff3d853c314",
+        "EV-3b5cb867fdaba28f",
+        "EV-01212a5ad9db6a20",
+        "EV-9c4b862020202f6c",
+        "EV-13e06fc12cc3fb7c",
+        "EV-860b90c017deaa59",
+        "EV-445db243814e88d0",
+        "EV-644337db309a1c82",
+        "EV-b796ba14c4eba861",
+        "EV-46b9ae8e68164b93",
+        "EV-7e6e0470ea99a6eb",
+        "EV-cb08f263d23e6c00",
+        "EV-9536c76cee278fcb",
+        "EV-28145c97a7237d6d",
+        "EV-2af2957a10b3c198",
+        "EV-266aff97294156f6",
+        "EV-60c27ec9b857f5c2",
+        "EV-cec69087dc8992e0",
+        "EV-f2acdcbe3b644340",
+        "EV-461b38cb8f56b067",
+        "EV-57f083a39393d841",
+        "EV-689538e8159887de",
+        "EV-adbdaa251b42ec79",
+        "EV-68fcce7fde89e5d7",
+        "EV-c7a2774b07554f5d",
+        "EV-7133e378762edda5",
+        "EV-f1418d9e3b1413b7",
+        "EV-e09bff5515b1896b",
+        "EV-f5dd192f6d4e04a3",
+        "EV-9127c613a365044b",
+        "EV-c5b8faec223a4caf",
+        "EV-d83bfcd73c850580",
+        "EV-dbeae330706b53ca",
+        "EV-abaf05e513f88a4f"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-a8a8f26c5128d894",
+        "dataDate": "2026-07-17",
+        "date": "2026-07-17",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Claude Code v2.1.212 发布",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "tool_use",
+            "name": "工具调用"
+          }
+        ],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-3a9b395103419892"
+        ]
+      },
+      {
+        "id": "EV-26cd4d692404e5c6",
+        "dataDate": "2026-07-16",
+        "date": "2026-07-16",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Claude Code v2.1.211 发布",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体"
+          }
+        ],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-9612b6f6884e062f"
+        ]
+      },
+      {
+        "id": "EV-84226288807f817b",
+        "dataDate": "2026-07-15",
+        "date": "2026-07-15",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Anthropic 推出 Claude for Teachers，免费向美国 K-12 教师提供高级功能",
+        "displayTags": [
+          {
+            "dimensionId": "target_user",
+            "id": "researcher_education",
+            "dimensionName": "目标用户",
+            "name": "研究与教育用户"
+          },
+          {
+            "dimensionId": "industry",
+            "id": "education",
+            "dimensionName": "行业",
+            "name": "教育"
+          }
+        ],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-ef11a801c5bd3673",
+          "EN-729324072d368379"
+        ]
+      },
+      {
+        "id": "EV-0347414d81e7f02e",
+        "dataDate": "2026-07-15",
+        "date": "2026-07-14",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Anthropic 推出 Claude for Teachers",
+        "displayTags": [
+          {
+            "dimensionId": "target_user",
+            "id": "researcher_education",
+            "dimensionName": "目标用户",
+            "name": "研究与教育用户"
+          }
+        ],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-ef11a801c5bd3673",
+          "EN-729324072d368379"
+        ]
+      },
+      {
+        "id": "EV-8bf42c1816e772ba",
+        "dataDate": "2026-07-15",
+        "date": "2026-07-15",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Claude Code v2.1.210 发布",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "tool_use",
+            "name": "工具调用"
+          }
+        ],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-9418d9e3d1e469cf"
+        ]
+      },
+      {
+        "id": "EV-2bd337245c920bc8",
+        "dataDate": "2026-07-14",
+        "date": "2026-07-14",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Claude Code v2.1.208 发布",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-dca4b9c41c4f7a0a"
+        ]
+      },
+      {
+        "id": "EV-d39b53ca7b84b9ca",
+        "dataDate": "2026-07-11",
+        "date": "2026-07-11",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Claude Code v2.1.207 发布",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-2ec3a04623962df8"
+        ]
+      },
+      {
+        "id": "EV-92fbbeb840a98e97",
+        "dataDate": "2026-07-08",
+        "date": "2026-07-07",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Anthropic 论文发现 Claude 内部存在类似人脑的\"全局工作空间\"结构",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d"
+        ]
+      },
+      {
+        "id": "EV-cedeae902fd1263d",
+        "dataDate": "2026-07-08",
+        "date": "2026-07-08",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Claude Code v2.1.203 发布",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-40bad8003c5ee358"
+        ]
+      },
+      {
+        "id": "EV-e130583e34ab9d4c",
+        "dataDate": "2026-07-07",
+        "date": "2026-07-07",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Claude Code v2.1.202 发布",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-85a7b756f3a700d0"
+        ]
+      },
+      {
+        "id": "EV-cc3b92fe233953cf",
+        "dataDate": "2026-07-05",
+        "date": "2026-07-04",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Claude Mythos Preview 发布前后，严重漏洞披露数量激增",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "id": "cybersecurity",
+            "dimensionName": "应用场景",
+            "name": "网络安全"
+          }
+        ],
+        "entityIds": [
+          "EN-c4941bfc97ac7c2d",
+          "EN-c70eca6b0f88f44d",
+          "EN-9fbf261b62c1d7c0",
+          "EN-bbdefa2950f49882",
+          "EN-3a7bd3e2360a3d29",
+          "EN-7d3194f79e645c42"
+        ]
+      },
+      {
+        "id": "EV-d40a4e1b7a53cabe",
+        "dataDate": "2026-07-05",
+        "date": "2026-07-05",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Anthropic推出Claude Science公测版：用于可重复基因组学、蛋白质组学和化学信息学流程的多智能体AI工作台",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "id": "cybersecurity",
+            "dimensionName": "应用场景",
+            "name": "网络安全"
+          }
+        ],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-fab30471ea65d627"
+        ]
+      },
+      {
+        "id": "EV-bf6f67c47c6b0d7c",
+        "dataDate": "2026-07-04",
+        "date": "2026-07-03",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Anthropic 收紧 Claude Fable 5 最强模型，7 月 7 日从订阅中移除改为 AI 用量计费",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-3a13916345b60fad"
+        ]
+      },
+      {
+        "id": "EV-2059f42c7b2aff44",
+        "dataDate": "2026-07-04",
+        "date": "2026-07-04",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Anthropic推出Cowork，一款无需编程即可在文件中工作的Claude Desktop代理",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体"
+          }
+        ],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-7d3194f79e645c42",
+          "EN-bbdefa2950f49882",
+          "EN-5a4c2be958c0af72",
+          "EN-a18162bf7228289d"
+        ]
+      },
+      {
+        "id": "EV-9c0552732b34f278",
+        "dataDate": "2026-07-04",
+        "date": "2026-07-03",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Claude Fable 5 在 RLI 基准测试中达成 16.1% 自动化率，刷新纪录",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "guardrails_safety",
+            "name": "安全护栏"
+          }
+        ],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-c857d09db23e6822",
+          "EN-9f15bb7e29e191eb"
+        ]
+      },
+      {
+        "id": "EV-63fdf001c22a0ed4",
+        "dataDate": "2026-07-02",
+        "date": "2026-07-02",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Claude Code v2.1.198 发布",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-8218ed4e007b0ad1"
+        ]
+      },
+      {
+        "id": "EV-d2c370511e9e55fe",
+        "dataDate": "2026-07-02",
+        "date": "2026-07-01",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "Anthropic 回应 Claude Code 暗藏检测中国用户代码：将在明日更新中删除",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "distillation",
+            "name": "模型蒸馏"
+          }
+        ],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-cb4754c48f8023d0"
+        ]
+      },
+      {
+        "id": "EV-7fb25ff3d853c314",
+        "dataDate": "2026-07-01",
+        "date": "2026-06-30",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "微软全面推出 Anthropic Claude 模型 Azure 云服务，基于英伟达 GB300",
+        "displayTags": [
+          {
+            "dimensionId": "deployment_model",
+            "id": "cloud",
+            "dimensionName": "部署形态",
+            "name": "云端"
+          }
+        ],
+        "entityIds": [
+          "EN-6f4e2e93ad6de7f1",
+          "EN-c70eca6b0f88f44d",
+          "EN-8d4321d936320802",
+          "EN-9fbf261b62c1d7c0",
+          "EN-729324072d368379"
+        ]
+      },
+      {
+        "id": "EV-3b5cb867fdaba28f",
+        "dataDate": "2026-07-01",
+        "date": "2026-07-01",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Anthropic 发布 Claude Sonnet 5，号称最智能体版本，逼近 Opus 系列",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "id": "cybersecurity",
+            "dimensionName": "应用场景",
+            "name": "网络安全"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体"
+          }
+        ],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-2c063f604e634100"
+        ]
+      },
+      {
+        "id": "EV-01212a5ad9db6a20",
+        "dataDate": "2026-07-01",
+        "date": "2026-07-01",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Anthropic 推出面向科学家的 AI 工作台 Claude Science",
+        "displayTags": [
+          {
+            "dimensionId": "target_user",
+            "id": "researcher_education",
+            "dimensionName": "目标用户",
+            "name": "研究与教育用户"
+          }
+        ],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-fab30471ea65d627"
+        ]
+      },
+      {
+        "id": "EV-9c4b862020202f6c",
+        "dataDate": "2026-07-01",
+        "date": "2026-07-01",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Anthropic 推出 Claude Sonnet 5，主打低成本智能体能力",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "tool_use",
+            "name": "工具调用"
+          }
+        ],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-bbdefa2950f49882",
+          "EN-7d3194f79e645c42",
+          "EN-2c063f604e634100"
+        ]
+      },
+      {
+        "id": "EV-13e06fc12cc3fb7c",
+        "dataDate": "2026-07-01",
+        "date": "2026-07-01",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Anthropic 推出 Claude Science 科学家 AI 工作台",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "id": "software_development",
+            "dimensionName": "应用场景",
+            "name": "软件开发"
+          }
+        ],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-fab30471ea65d627",
+          "EN-bb5b6487f881bbb1"
+        ]
+      },
+      {
+        "id": "EV-860b90c017deaa59",
+        "dataDate": "2026-06-28",
+        "date": "2026-06-28",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "OpenAI推出政府访问权限下名为Claude Mythos竞争对手的GPT-5.6 Sol，称其不可持续",
+        "displayTags": [],
+        "entityIds": [
+          "EN-7d3194f79e645c42",
+          "EN-2a920347dfcf07a7",
+          "EN-c70eca6b0f88f44d",
+          "EN-7839fb10a8f14c70",
+          "EN-b8c236d640d6a5fb"
+        ]
+      },
+      {
+        "id": "EV-445db243814e88d0",
+        "dataDate": "2026-06-26",
+        "date": "2026-06-26",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Claude Code v2.1.193 发布",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-ce635c4eabff5e4f",
+          "EN-774251f8d6e46d3d",
+          "EN-4f237537da9719b4"
+        ]
+      },
+      {
+        "id": "EV-644337db309a1c82",
+        "dataDate": "2026-06-25",
+        "date": "2026-06-24",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Anthropic 在 Slack 中推出 Claude Tag 功能，通过 @Claude 调用 AI 智能体",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-96eebba49dbbf422",
+          "EN-7d3194f79e645c42",
+          "EN-d0a0acb9a5ef0560"
+        ]
+      },
+      {
+        "id": "EV-b796ba14c4eba861",
+        "dataDate": "2026-06-25",
+        "date": "2026-06-24",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "仅需 @ 即可调用：Anthropic 推出 AI 虚拟团队成员 Claude Tag",
+        "displayTags": [],
+        "entityIds": [
+          "EN-a757e4eb89baa567",
+          "EN-c70eca6b0f88f44d",
+          "EN-d0a0acb9a5ef0560"
+        ]
+      },
+      {
+        "id": "EV-46b9ae8e68164b93",
+        "dataDate": "2026-06-25",
+        "date": "2026-06-25",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Anthropic 推出 Claude Tag，构建人机协作团队",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-d0a0acb9a5ef0560"
+        ]
+      },
+      {
+        "id": "EV-7e6e0470ea99a6eb",
+        "dataDate": "2026-06-24",
+        "date": "2026-06-24",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Anthropic 发布 Claude Tag 研究预览版：常驻 Slack 的\"始终在线\"AI 智能体",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-d0a0acb9a5ef0560"
+        ]
+      },
+      {
+        "id": "EV-cb08f263d23e6c00",
+        "dataDate": "2026-06-24",
+        "date": "2026-06-24",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Claude Code v2.1.187 发布",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-5fc6493a57c5f14e"
+        ]
+      },
+      {
+        "id": "EV-9536c76cee278fcb",
+        "dataDate": "2026-06-23",
+        "date": "2026-06-23",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Claude Code v2.1.186 发布",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-ad2cec837f9cb98f"
+        ]
+      },
+      {
+        "id": "EV-28145c97a7237d6d",
+        "dataDate": "2026-06-21",
+        "date": "2026-06-21",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "withdrawn",
+        "statusLabel": "已撤回",
+        "title": "OpenAI GPT-5.6 系列模型有望下周发布，SVG 生成测试超越 Claude Mythos",
+        "displayTags": [],
+        "entityIds": [
+          "EN-7d3194f79e645c42",
+          "EN-c70eca6b0f88f44d",
+          "EN-bbdefa2950f49882",
+          "EN-c608c4787821de1b",
+          "EN-9fbf261b62c1d7c0",
+          "EN-52fc33ae4d101a5d"
+        ]
+      },
+      {
+        "id": "EV-2af2957a10b3c198",
+        "dataDate": "2026-06-19",
+        "date": "2026-06-19",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Claude Code v2.1.183 发布",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-29eb5745fdfcb027"
+        ]
+      },
+      {
+        "id": "EV-266aff97294156f6",
+        "dataDate": "2026-06-19",
+        "date": "2026-06-19",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Claude Enterprise 推出企业托管 MCP 连接器授权管理",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "model_context_protocol",
+            "name": "MCP"
+          }
+        ],
+        "entityIds": [
+          "EN-caf559f7830b566f",
+          "EN-c70eca6b0f88f44d",
+          "EN-3db1f560db626918"
+        ]
+      },
+      {
+        "id": "EV-60c27ec9b857f5c2",
+        "dataDate": "2026-06-18",
+        "date": "2026-06-18",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Claude Code v2.1.181 发布",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-3a7bd3e2360a3d29",
+          "EN-e61ac98ebb45d0db"
+        ]
+      },
+      {
+        "id": "EV-cec69087dc8992e0",
+        "dataDate": "2026-06-18",
+        "date": "2026-06-17",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Claude Code 用户画像：平均每周使用 20 小时，AI 代码修改占 26%",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "id": "software_development",
+            "dimensionName": "应用场景",
+            "name": "软件开发"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "code_generation",
+            "name": "代码生成"
+          }
+        ],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-c857d09db23e6822",
+          "EN-7ec0224e483d913b"
+        ]
+      },
+      {
+        "id": "EV-f2acdcbe3b644340",
+        "dataDate": "2026-06-16",
+        "date": "2026-06-16",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Claude Code v2.1.178 发布",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-1e4fdc17666edc33"
+        ]
+      },
+      {
+        "id": "EV-461b38cb8f56b067",
+        "dataDate": "2026-06-13",
+        "date": "2026-06-13",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Claude Code v2.1.176 发布",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-d65f09457cc098a8",
+          "EN-ea4ea767088c4a22"
+        ]
+      },
+      {
+        "id": "EV-57f083a39393d841",
+        "dataDate": "2026-06-12",
+        "date": "2026-06-12",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Claude Code v2.1.174 发布",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "long_context",
+            "name": "长上下文"
+          }
+        ],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-3153ebda601cdb79",
+          "EN-c23eb5fae3cdd763"
+        ]
+      },
+      {
+        "id": "EV-689538e8159887de",
+        "dataDate": "2026-06-11",
+        "date": "2026-06-10",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Anthropic 发布 Claude Fable 5 和 Claude Mythos 5：同款基础模型，不同安全防护，新增 Mythos 级层次",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体"
+          }
+        ],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-3a13916345b60fad",
+          "EN-d8494bb34d6ddc43",
+          "EN-db68703d8d719bd0"
+        ]
+      },
+      {
+        "id": "EV-adbdaa251b42ec79",
+        "dataDate": "2026-06-11",
+        "date": "2026-06-11",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Claude Code v2.1.172 发布",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-4db5fd308d379cab"
+        ]
+      },
+      {
+        "id": "EV-68fcce7fde89e5d7",
+        "dataDate": "2026-06-10",
+        "date": "2026-06-10",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Anthropic 发布首个公众可用的 Mythos 级模型 Claude Fable 5",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "id": "cybersecurity",
+            "dimensionName": "应用场景",
+            "name": "网络安全"
+          }
+        ],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-3a13916345b60fad"
+        ]
+      },
+      {
+        "id": "EV-c7a2774b07554f5d",
+        "dataDate": "2026-06-10",
+        "date": "2026-06-10",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Anthropic 发布 Claude Fable 5 与 Mythos 5",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "id": "cybersecurity",
+            "dimensionName": "应用场景",
+            "name": "网络安全"
+          },
+          {
+            "dimensionId": "target_user",
+            "id": "consumer",
+            "dimensionName": "目标用户",
+            "name": "个人用户"
+          }
+        ],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-3a13916345b60fad",
+          "EN-b59c577ed73536c6",
+          "EN-9f15bb7e29e191eb"
+        ]
+      },
+      {
+        "id": "EV-7133e378762edda5",
+        "dataDate": "2026-06-10",
+        "date": "2026-06-10",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Claude Fable 发布：Anthropic 带来的另一种推理体验",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "id": "cybersecurity",
+            "dimensionName": "应用场景",
+            "name": "网络安全"
+          }
+        ],
+        "entityIds": [
+          "EN-ced86039c0ad6a7c",
+          "EN-c70eca6b0f88f44d"
+        ]
+      },
+      {
+        "id": "EV-f1418d9e3b1413b7",
+        "dataDate": "2026-06-10",
+        "date": "2026-06-10",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Anthropic 发布 Claude Fable 5，首个面向公众的 Mythos 级模型",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "id": "cybersecurity",
+            "dimensionName": "应用场景",
+            "name": "网络安全"
+          }
+        ],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-3a13916345b60fad"
+        ]
+      },
+      {
+        "id": "EV-e09bff5515b1896b",
+        "dataDate": "2026-06-10",
+        "date": "2026-06-10",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Anthropic 发布 Claude Fable 5 和 Mythos 5，编程和科学能力大幅提升",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          },
+          {
+            "dimensionId": "use_case",
+            "id": "data_analysis",
+            "dimensionName": "应用场景",
+            "name": "数据分析"
+          }
+        ],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-3a13916345b60fad",
+          "EN-b59c577ed73536c6",
+          "EN-540dfc8c5e1b1136"
+        ]
+      },
+      {
+        "id": "EV-f5dd192f6d4e04a3",
+        "dataDate": "2026-06-10",
+        "date": "2026-06-10",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Anthropic 推出 Claude Fable 5/Mythos 5，小米 MiMo V2.5-Pro-UltraSpeed 突破千 token/s 输出",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-c608c4787821de1b",
+          "EN-3a13916345b60fad",
+          "EN-b59c577ed73536c6"
+        ]
+      },
+      {
+        "id": "EV-9127c613a365044b",
+        "dataDate": "2026-06-09",
+        "date": "2026-06-09",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Claude Code v2.1.169 发布",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-9ab4135a1cdb0a8c"
+        ]
+      },
+      {
+        "id": "EV-c5b8faec223a4caf",
+        "dataDate": "2026-06-09",
+        "date": "2026-06-09",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Claude 支持 Apple Foundation Models 框架，推出新 Swift 包",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "tool_use",
+            "name": "工具调用"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "on_device",
+            "name": "端侧"
+          },
+          {
+            "dimensionId": "deployment_model",
+            "id": "edge_device",
+            "dimensionName": "部署形态",
+            "name": "边缘与端侧"
+          }
+        ],
+        "entityIds": [
+          "EN-3a7bd3e2360a3d29",
+          "EN-c70eca6b0f88f44d",
+          "EN-96eebba49dbbf422",
+          "EN-41dcc2d4951f337b"
+        ]
+      },
+      {
+        "id": "EV-d83bfcd73c850580",
+        "dataDate": "2026-06-05",
+        "date": "2026-06-05",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Claude Code v2.1.163 发布",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-fe7f2cc6a2c87e0b"
+        ]
+      },
+      {
+        "id": "EV-dbeae330706b53ca",
+        "dataDate": "2026-06-03",
+        "date": "2026-06-03",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Claude Code v2.1.161 发布",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "chip_accelerator",
+            "dimensionName": "产品形态",
+            "name": "芯片与加速器"
+          }
+        ],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-16f9e91ad20e6467"
+        ]
+      },
+      {
+        "id": "EV-abaf05e513f88a4f",
+        "dataDate": "2026-06-02",
+        "date": "2026-06-02",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Claude Code v2.1.160 发布",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-ce635c4eabff5e4f",
+          "EN-f1360a6b087edd47"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [
+    {
+      "id": "EN-c70eca6b0f88f44d",
+      "name": "Anthropic",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "Claude Code",
+        "Claude"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-e41fc65eb014893f",
+        "EV-974a6b7d0e0efef2",
+        "EV-dfddbb260b3d1c77",
+        "EV-80e54c9a390da293",
+        "EV-d4e44892226be468",
+        "EV-e7dcecaed5a0ee5b",
+        "EV-edcb66d0401cfb8f",
+        "EV-9055cb4fa2b4ee62",
+        "EV-0e84a2f49d765ce3",
+        "EV-bc4ac955cd26b969",
+        "EV-5d581d112fdbd464",
+        "EV-201b25d4f3cf696a",
+        "EV-cbc0b7a7d21a29e2",
+        "EV-1abf0d076d30ec6d",
+        "EV-ed8260ee9a7a80af",
+        "EV-47a16db069ed320e",
+        "EV-49c6291694fb6c7b",
+        "EV-d1e2a7c6d314612c",
+        "EV-e1a4bc40db4a9d8f",
+        "EV-c81cb21337a9bb98",
+        "EV-94e0afb44c320c99",
+        "EV-7f2811d2272cf4a3",
+        "EV-6415a58637893b34",
+        "EV-4515377aa6311bf1",
+        "EV-ef6464cf7f764835",
+        "EV-bb9ba11acf104db1",
+        "EV-a16be3cb9dad7cfe",
+        "EV-f949fd95df58d42d",
+        "EV-9884a0317e1e6ae7",
+        "EV-b240fb11e65b018e",
+        "EV-bad301e14b034fbd",
+        "EV-c0a65877001ed413",
+        "EV-0d5a32aca724d30e",
+        "EV-a8a8f26c5128d894",
+        "EV-51645a3b1e730105",
+        "EV-7c899d5decafc42f",
+        "EV-c2800c1c5a3f568f",
+        "EV-26cd4d692404e5c6",
+        "EV-1c2723ad61d192bd",
+        "EV-84226288807f817b",
+        "EV-8bf42c1816e772ba",
+        "EV-0347414d81e7f02e",
+        "EV-5cd7eaa56c1fbb83",
+        "EV-2bd337245c920bc8",
+        "EV-025778b83c1b2ca9",
+        "EV-969ed3078d10f0c9",
+        "EV-b920999c64aa9ef6",
+        "EV-730a2f95a698a96d",
+        "EV-d39b53ca7b84b9ca",
+        "EV-cf317dd1579a01bb",
+        "EV-fcbd97e1f30c95e3",
+        "EV-ee9a1c99fe7054d6",
+        "EV-cadcc94249dea81d",
+        "EV-cedeae902fd1263d",
+        "EV-92fbbeb840a98e97",
+        "EV-caec65aef89d3b4a",
+        "EV-70efbfcaadcdb259",
+        "EV-e130583e34ab9d4c",
+        "EV-a2476148e8f1eec4",
+        "EV-598888cce208de5c",
+        "EV-d40a4e1b7a53cabe",
+        "EV-51aed98773a9fca1",
+        "EV-9f04529a3a216060",
+        "EV-c12f0ae399078a56",
+        "EV-cc3b92fe233953cf",
+        "EV-2059f42c7b2aff44",
+        "EV-578a9db1fe952d0a",
+        "EV-8b5801b69eb1781b",
+        "EV-b93b5cc15823e9c3",
+        "EV-f784003febc1d9eb",
+        "EV-20ffa968bcbc4729",
+        "EV-77662aa9bef9efbe",
+        "EV-8f0c63ed7bb153dc",
+        "EV-9c0552732b34f278",
+        "EV-bf6f67c47c6b0d7c",
+        "EV-9ca7db66f8f10b63",
+        "EV-63fdf001c22a0ed4",
+        "EV-2f81b0d48d128f5c",
+        "EV-8aead769e84de342",
+        "EV-d2c370511e9e55fe",
+        "EV-eddb4330fed15762",
+        "EV-01212a5ad9db6a20",
+        "EV-13e06fc12cc3fb7c",
+        "EV-3b5cb867fdaba28f",
+        "EV-3b77f14fea21485e",
+        "EV-9c4b862020202f6c",
+        "EV-7fb25ff3d853c314",
+        "EV-918fc324de3117bd",
+        "EV-a4b72879f3d73ea4",
+        "EV-1ec24a430911185c",
+        "EV-860b90c017deaa59",
+        "EV-13f0b515194f3245",
+        "EV-445db243814e88d0",
+        "EV-abf0990dcaceb1ce",
+        "EV-46b9ae8e68164b93",
+        "EV-b26bead25288d19c",
+        "EV-3ff2a155035d01e7",
+        "EV-644337db309a1c82",
+        "EV-b796ba14c4eba861",
+        "EV-7e6e0470ea99a6eb",
+        "EV-cb08f263d23e6c00",
+        "EV-482df8a8ef264238",
+        "EV-9536c76cee278fcb",
+        "EV-9e04edd969c977a1",
+        "EV-2aca9a810ea65555",
+        "EV-ceb7d70f0043eb81",
+        "EV-f953555178744c22",
+        "EV-28145c97a7237d6d",
+        "EV-491e7b4b506ab3e3",
+        "EV-f0caa4082916d619",
+        "EV-574998b1638a3f4f",
+        "EV-266aff97294156f6",
+        "EV-2af2957a10b3c198",
+        "EV-534dc9add1c0cc35",
+        "EV-60c27ec9b857f5c2",
+        "EV-cec69087dc8992e0",
+        "EV-ab3586268ebfab38",
+        "EV-832fa2db95cfea6e",
+        "EV-f2acdcbe3b644340",
+        "EV-2cb9dbed2b2b6077",
+        "EV-461b38cb8f56b067",
+        "EV-57f083a39393d841",
+        "EV-a695ff8c1cff8c64",
+        "EV-adbdaa251b42ec79",
+        "EV-689538e8159887de",
+        "EV-6af31d42885e0361",
+        "EV-68fcce7fde89e5d7",
+        "EV-7133e378762edda5",
+        "EV-c7a2774b07554f5d",
+        "EV-e09bff5515b1896b",
+        "EV-f1418d9e3b1413b7",
+        "EV-f5dd192f6d4e04a3",
+        "EV-2eabd03665cbdef7",
+        "EV-9127c613a365044b",
+        "EV-c5b8faec223a4caf",
+        "EV-f6611268f119a172",
+        "EV-ad1444d8653b37ae",
+        "EV-d83bfcd73c850580",
+        "EV-dbeae330706b53ca",
+        "EV-abaf05e513f88a4f",
+        "EV-631197767a45d34c",
+        "EV-ce291577f61b8543",
+        "EV-773ffcc6e1df56fa",
+        "EV-2d56dec8dfeb2b56",
+        "EV-62df953d81def866",
+        "EV-0c541092e3ba6dac",
+        "EV-9705a8de3c2e9653",
+        "EV-ed3baeeb5137137f",
+        "EV-68edd592c36dccd3",
+        "EV-d49da50484ba781f",
+        "EV-ad269fada2269f35",
+        "EV-710b145230faa692",
+        "EV-4900ddf0686f4bbc",
+        "EV-5e4db66a00cb2158",
+        "EV-77ddb45e31018552"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
+        "TX-technology-code_generation",
+        "TX-industry-healthcare_life_sciences",
+        "TX-use_case-enterprise_operations",
+        "TX-use_case-software_development",
+        "TX-technology-long_context",
+        "TX-technology-mixture_of_experts",
+        "TX-industry-financial_services",
+        "TX-use_case-cybersecurity",
+        "TX-use_case-data_analysis",
+        "TX-industry-retail_ecommerce",
+        "TX-technology-on_device",
+        "TX-technology-embodied_ai",
+        "TX-technology-open_weights",
+        "TX-technology-model_context_protocol",
+        "TX-technology-guardrails_safety",
+        "TX-technology-tool_use",
+        "TX-industry-government_public_sector",
+        "TX-technology-fine_tuning",
+        "TX-industry-education",
+        "TX-technology-distillation"
+      ],
+      "relatedEntityIds": [
+        "EN-cb4754c48f8023d0",
+        "EN-3a9b395103419892",
+        "EN-729324072d368379",
+        "EN-7d3194f79e645c42",
+        "EN-9612b6f6884e062f",
+        "EN-ef11a801c5bd3673",
+        "EN-9418d9e3d1e469cf",
+        "EN-dca4b9c41c4f7a0a",
+        "EN-2ec3a04623962df8",
+        "EN-40bad8003c5ee358",
+        "EN-85a7b756f3a700d0",
+        "EN-fab30471ea65d627",
+        "EN-b8c236d640d6a5fb",
+        "EN-db68703d8d719bd0",
+        "EN-9f15bb7e29e191eb",
+        "EN-3a13916345b60fad",
+        "EN-77fe4e790d5bc756",
+        "EN-5a4c2be958c0af72",
+        "EN-a18162bf7228289d",
+        "EN-8218ed4e007b0ad1",
+        "EN-bb5b6487f881bbb1",
+        "EN-2c063f604e634100",
+        "EN-4f237537da9719b4",
+        "EN-774251f8d6e46d3d",
+        "EN-d0a0acb9a5ef0560",
+        "EN-5fc6493a57c5f14e",
+        "EN-ad2cec837f9cb98f",
+        "EN-29eb5745fdfcb027",
+        "EN-7ec0224e483d913b",
+        "EN-e61ac98ebb45d0db",
+        "EN-e4ffb7bd879b89da",
+        "EN-1e4fdc17666edc33",
+        "EN-c8185a1a8a6595ad",
+        "EN-d65f09457cc098a8",
+        "EN-ea4ea767088c4a22",
+        "EN-c23eb5fae3cdd763",
+        "EN-3153ebda601cdb79",
+        "EN-b59c577ed73536c6",
+        "EN-4db5fd308d379cab",
+        "EN-96eebba49dbbf422",
+        "EN-d8494bb34d6ddc43",
+        "EN-540dfc8c5e1b1136",
+        "EN-9ab4135a1cdb0a8c",
+        "EN-fe7f2cc6a2c87e0b",
+        "EN-16f9e91ad20e6467",
+        "EN-f1360a6b087edd47"
+      ],
+      "firstSeen": "2026-05-14",
+      "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "EN-7d3194f79e645c42",
+      "name": "OpenAI",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "Codex",
+        "GPT-5.6"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-4da1a7c4d527eb69",
+        "EV-e41fc65eb014893f",
+        "EV-974a6b7d0e0efef2",
+        "EV-dfddbb260b3d1c77",
+        "EV-20d762872664fddb",
+        "EV-aa33ca051f3a7f78",
+        "EV-d4e44892226be468",
+        "EV-edcb66d0401cfb8f",
+        "EV-a42e51959c627554",
+        "EV-ee0662b75588987e",
+        "EV-9055cb4fa2b4ee62",
+        "EV-0e84a2f49d765ce3",
+        "EV-201b25d4f3cf696a",
+        "EV-1abf0d076d30ec6d",
+        "EV-3b40ec144e5db22c",
+        "EV-e15ae1112294d59e",
+        "EV-36d484148fbd3424",
+        "EV-47a16db069ed320e",
+        "EV-49c6291694fb6c7b",
+        "EV-62901df23f471eea",
+        "EV-538adc98d1da8fda",
+        "EV-d209a6acecba4285",
+        "EV-a5d127e62d102ad6",
+        "EV-d1e2a7c6d314612c",
+        "EV-e1a4bc40db4a9d8f",
+        "EV-83b2e8f7fe679bc3",
+        "EV-8abf5adc3e72fbb8",
+        "EV-7f2811d2272cf4a3",
+        "EV-2fab4396000198d2",
+        "EV-3fb492fb45980541",
+        "EV-41ffecb51e643397",
+        "EV-26183a56cf9ed63c",
+        "EV-3fbfb89a10efd42f",
+        "EV-1c6adfef6f405319",
+        "EV-66df35d14361a6cb",
+        "EV-0d5a32aca724d30e",
+        "EV-70e3f88cb06a856c",
+        "EV-7c899d5decafc42f",
+        "EV-a4a61babc902931a",
+        "EV-1c2723ad61d192bd",
+        "EV-74dfbd82b47dc626",
+        "EV-167f50a6f3134bd5",
+        "EV-025778b83c1b2ca9",
+        "EV-969ed3078d10f0c9",
+        "EV-d7d8fcd0694a590f",
+        "EV-6e7b632ee0b3410d",
+        "EV-efee7c1ac4dc336f",
+        "EV-0dbc7b904378f713",
+        "EV-10eb16192d83dbf7",
+        "EV-ae736eb124d7163a",
+        "EV-cf317dd1579a01bb",
+        "EV-d07f7a8d4d20a034",
+        "EV-107725f2bdece882",
+        "EV-6af1e74358025628",
+        "EV-ee9a1c99fe7054d6",
+        "EV-cadcc94249dea81d",
+        "EV-caec65aef89d3b4a",
+        "EV-d07906b648eec63f",
+        "EV-0510a983e120a381",
+        "EV-70efbfcaadcdb259",
+        "EV-51aed98773a9fca1",
+        "EV-cc3b92fe233953cf",
+        "EV-2059f42c7b2aff44",
+        "EV-578a9db1fe952d0a",
+        "EV-b93b5cc15823e9c3",
+        "EV-20ffa968bcbc4729",
+        "EV-77662aa9bef9efbe",
+        "EV-9ca7db66f8f10b63",
+        "EV-9c4b862020202f6c",
+        "EV-5012364af7480121",
+        "EV-918fc324de3117bd",
+        "EV-8a91e14f37d32b4d",
+        "EV-860b90c017deaa59",
+        "EV-888b9eb73582e21c",
+        "EV-13f0b515194f3245",
+        "EV-abf0990dcaceb1ce",
+        "EV-b8bfab77707274b7",
+        "EV-6eb9a23be3117421",
+        "EV-a0d3853dd41c8ef6",
+        "EV-b26bead25288d19c",
+        "EV-1e7c76dae985100f",
+        "EV-644337db309a1c82",
+        "EV-482df8a8ef264238",
+        "EV-9110f23a7e60173e",
+        "EV-9e04edd969c977a1",
+        "EV-e792252690f98a22",
+        "EV-2aca9a810ea65555",
+        "EV-f953555178744c22",
+        "EV-28145c97a7237d6d",
+        "EV-0c06df62702d26ab",
+        "EV-f01d28aac73c3f9c",
+        "EV-574998b1638a3f4f",
+        "EV-0b6992ae74184d13",
+        "EV-7f979d0a01e6dffa",
+        "EV-f3e11eadfb7c6a4b",
+        "EV-ab3586268ebfab38",
+        "EV-2cb9dbed2b2b6077",
+        "EV-d6ba9ef3ff65940c",
+        "EV-3f8ba5855b64dd1a",
+        "EV-b73c7096546b82e8",
+        "EV-19903b5eef9b1de0",
+        "EV-57b029a4afb71044",
+        "EV-ad1444d8653b37ae",
+        "EV-fbdfb5888ad19663",
+        "EV-cac9d9f31ef675ce",
+        "EV-4a727d54055d6d0e",
+        "EV-e295f808713644c7",
+        "EV-3474febbec499f3c",
+        "EV-519537a36355d82e",
+        "EV-631197767a45d34c",
+        "EV-657837763764c869",
+        "EV-ce291577f61b8543",
+        "EV-a4f052325d0ef230",
+        "EV-ca420d07e12369f1",
+        "EV-773ffcc6e1df56fa",
+        "EV-5cd10de5c12916f0",
+        "EV-067f57f6e6ffa6ce",
+        "EV-da6678e4e865e00e",
+        "EV-2d56dec8dfeb2b56",
+        "EV-8cb2374f76202ecc",
+        "EV-946569cccbd9222f",
+        "EV-917966af8545a380",
+        "EV-b4203b10d6592bf2",
+        "EV-5eb23cdd9c14c6ea",
+        "EV-10e841ab47d2b1f1",
+        "EV-f2d29ca7b05c3dd9",
+        "EV-ea2b6ce4acd46366",
+        "EV-2821d0cef61b3c6a",
+        "EV-6f7c5f0abad3d4da",
+        "EV-8f497488d129fee5",
+        "EV-a8f1204b54ae6475",
+        "EV-62df953d81def866",
+        "EV-6b7917bd7edd4bde",
+        "EV-e1ebf7d63e058a39",
+        "EV-b52af7bb03c98eb0",
+        "EV-9705a8de3c2e9653",
+        "EV-bce258f8f915ff5f",
+        "EV-4beb890f0879aeaf",
+        "EV-4900ddf0686f4bbc"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
+        "TX-technology-code_generation",
+        "TX-use_case-customer_service",
+        "TX-industry-healthcare_life_sciences",
+        "TX-use_case-enterprise_operations",
+        "TX-use_case-software_development",
+        "TX-technology-long_context",
+        "TX-industry-financial_services",
+        "TX-use_case-cybersecurity",
+        "TX-use_case-data_analysis",
+        "TX-industry-retail_ecommerce",
+        "TX-industry-professional_services",
+        "TX-industry-technology",
+        "TX-technology-embodied_ai",
+        "TX-technology-open_weights",
+        "TX-technology-model_context_protocol",
+        "TX-use_case-robotics_automation",
+        "TX-technology-multimodal",
+        "TX-technology-guardrails_safety",
+        "TX-technology-tool_use",
+        "TX-technology-reasoning",
+        "TX-technology-fine_tuning",
+        "TX-technology-computer_use"
+      ],
+      "relatedEntityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-52fc33ae4d101a5d",
+        "EN-7839fb10a8f14c70",
+        "EN-9f15bb7e29e191eb",
+        "EN-047bdfce48c28cfc",
+        "EN-6a50fbf0b970c03a",
+        "EN-d1ad14d4ad57d207",
+        "EN-536c4035ba0c7047",
+        "EN-3c92cc7e49924a6f",
+        "EN-77fe4e790d5bc756",
+        "EN-729324072d368379",
+        "EN-b8c236d640d6a5fb",
+        "EN-db68703d8d719bd0",
+        "EN-272d6a7a0db89710",
+        "EN-5ce177312903c604",
+        "EN-bd2bfbea5911ec7a",
+        "EN-af53dbc3e443f7a9",
+        "EN-b269456229397ef3",
+        "EN-f2272e70be63bc65",
+        "EN-148b42653f5e08b1",
+        "EN-da20c5952dba19d8",
+        "EN-fc0586e76f80f181",
+        "EN-e8b6dfd27f418787",
+        "EN-9de030d092759897",
+        "EN-7bf321fa55418fba"
+      ],
+      "firstSeen": "2026-05-19",
+      "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "EN-3a7bd3e2360a3d29",
+      "name": "Apple",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-f282ab8740ff0096",
+        "EV-8a8e894a84768ea5",
+        "EV-afcd5426f5c01dc7",
+        "EV-f5a50f1fed72fec3",
+        "EV-e857f9d1c1478c70",
+        "EV-fd21441fb6e143c3",
+        "EV-8a9b12665a3e40a0",
+        "EV-70cbf25f7ec2cc3a",
+        "EV-8b9e4428074bde60",
+        "EV-967239f907803753",
+        "EV-113899096a32165a",
+        "EV-cabc88e1d09dec80",
+        "EV-cc3b92fe233953cf",
+        "EV-8aead769e84de342",
+        "EV-abf0990dcaceb1ce",
+        "EV-89930fa8d1db98eb",
+        "EV-60c27ec9b857f5c2",
+        "EV-eeb687002cac5f4e",
+        "EV-99e5df844a1bd670",
+        "EV-0b2bfd57923cedd3",
+        "EV-3c51bcb5e99d2b68",
+        "EV-a736c6c64d106475",
+        "EV-dad8c827d14f2799",
+        "EV-4e6dc3ec2b3f0bd6",
+        "EV-634ce5b42f6d32f6",
+        "EV-85373b8ec9148127",
+        "EV-1ae8027c085679e9",
+        "EV-21c749570133c786",
+        "EV-52e1ac21c25a0a09",
+        "EV-591542ccc2de5be8",
+        "EV-5a1422a9929c582e",
+        "EV-8361a47c70ecd243",
+        "EV-9f9bc7ffe6228281",
+        "EV-a5ba3797b38df125",
+        "EV-a9fe726c4ea2a17b",
+        "EV-bff418b2959f58fb",
+        "EV-c5b8faec223a4caf",
+        "EV-d40a1a873015ac98",
+        "EV-da062d02015f99fb",
+        "EV-f6611268f119a172",
+        "EV-0d1980baa83e1e6c",
+        "EV-ef823877347ff40f",
+        "EV-5cd10de5c12916f0",
+        "EV-5613946bdd578a26",
+        "EV-dd902b603e2e3dbc",
+        "EV-da6678e4e865e00e",
+        "EV-8cb2374f76202ecc",
+        "EV-946569cccbd9222f",
+        "EV-b4203b10d6592bf2",
+        "EV-5eb23cdd9c14c6ea",
+        "EV-7d4b4b8d4e3599d4",
+        "EV-10e841ab47d2b1f1",
+        "EV-f2d29ca7b05c3dd9",
+        "EV-ea2b6ce4acd46366",
+        "EV-2821d0cef61b3c6a",
+        "EV-6f7c5f0abad3d4da",
+        "EV-8f497488d129fee5",
+        "EV-a8f1204b54ae6475"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
+        "TX-technology-long_context",
+        "TX-use_case-cybersecurity",
+        "TX-industry-retail_ecommerce",
+        "TX-technology-on_device",
+        "TX-industry-media_entertainment",
+        "TX-technology-multimodal",
+        "TX-technology-tool_use",
+        "TX-technology-fine_tuning",
+        "TX-use_case-content_creation",
+        "TX-technology-quantization",
+        "TX-technology-speech_audio"
+      ],
+      "relatedEntityIds": [
+        "EN-af3ceabbe048a291",
+        "EN-41dcc2d4951f337b",
+        "EN-dfabe4215e8c07cb",
+        "EN-729324072d368379"
+      ],
+      "firstSeen": "2026-06-04",
+      "lastSeen": "2026-07-17"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-f1dcfa6f5b5a61d1",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-c70eca6b0f88f44d",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-729324072d368379",
+      "object_type": "entity",
+      "event_id": "EV-a8a8f26c5128d894",
+      "claim_refs": [
+        "CL-d89c94ff8898405e",
+        "CL-5de323a2f2ce2584",
+        "CL-0bfc5f47f64321d3",
+        "CL-70bfaefa00926ea5"
+      ],
+      "source_refs": [
+        "SA-c25f34fee15c1684"
+      ],
+      "data_date": "2026-07-17",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-59bae0716fb5568d",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-c70eca6b0f88f44d",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-729324072d368379",
+      "object_type": "entity",
+      "event_id": "EV-26cd4d692404e5c6",
+      "claim_refs": [
+        "CL-693f22d0cdeced40",
+        "CL-6968911ffd794833",
+        "CL-56fbd964405339c6",
+        "CL-8e5fa7c3d998bcae"
+      ],
+      "source_refs": [
+        "SA-30bf1c69b49ec431"
+      ],
+      "data_date": "2026-07-16",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-0e0ef4c13fd83477",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-c70eca6b0f88f44d",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-729324072d368379",
+      "object_type": "entity",
+      "event_id": "EV-84226288807f817b",
+      "claim_refs": [
+        "CL-7cd54039dc1e5f71",
+        "CL-45e2ed5859db0a05",
+        "CL-109d6a2837236c4f",
+        "CL-39814ebcc9acd800"
+      ],
+      "source_refs": [
+        "SA-be46d0a7d5cb5d2b"
+      ],
+      "data_date": "2026-07-15",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-282eb0c70c8e4564",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-c70eca6b0f88f44d",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-729324072d368379",
+      "object_type": "entity",
+      "event_id": "EV-0347414d81e7f02e",
+      "claim_refs": [
+        "CL-f65c1001ca94e11d",
+        "CL-9d1b43eebef49b3c",
+        "CL-799b33272144e93e",
+        "CL-aed0ce8b828933ba"
+      ],
+      "source_refs": [
+        "SA-a1f9f7f27b56c7b8"
+      ],
+      "data_date": "2026-07-15",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-7cc4acc5b353f4fc",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-c70eca6b0f88f44d",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-729324072d368379",
+      "object_type": "entity",
+      "event_id": "EV-8bf42c1816e772ba",
+      "claim_refs": [
+        "CL-4bea714ea47fc24f",
+        "CL-bc61708ff5b5493d",
+        "CL-35805c61d35f6a55",
+        "CL-d9d66c08731165a1"
+      ],
+      "source_refs": [
+        "SA-8d8371357696159d"
+      ],
+      "data_date": "2026-07-15",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-80e1cf8c6adda0e7",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-c70eca6b0f88f44d",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-729324072d368379",
+      "object_type": "entity",
+      "event_id": "EV-2bd337245c920bc8",
+      "claim_refs": [
+        "CL-63d6bbacf0d3aec7",
+        "CL-792b6e955aabffe2",
+        "CL-0ca355cf7decc1d3",
+        "CL-7301b30c2d890eeb"
+      ],
+      "source_refs": [
+        "SA-0da90d2497543ea9"
+      ],
+      "data_date": "2026-07-14",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-af9efc27d4eb77af",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-c70eca6b0f88f44d",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-729324072d368379",
+      "object_type": "entity",
+      "event_id": "EV-d39b53ca7b84b9ca",
+      "claim_refs": [
+        "CL-77855e8e5fdd7a05",
+        "CL-4d0d7e6f82fb2392"
+      ],
+      "source_refs": [
+        "SA-e7ec718572732a04"
+      ],
+      "data_date": "2026-07-11",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-6e39a930f3aa1688",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-c70eca6b0f88f44d",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-729324072d368379",
+      "object_type": "entity",
+      "event_id": "EV-92fbbeb840a98e97",
+      "claim_refs": [
+        "CL-90df88e6b39e4dac",
+        "CL-b5b70d93c9691001",
+        "CL-6c21fc280d9dd579",
+        "CL-04bcc5875e6b00c7"
+      ],
+      "source_refs": [
+        "SA-d4544333593411ea"
+      ],
+      "data_date": "2026-07-08",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-b5e7fc6aebb74f2d",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-c70eca6b0f88f44d",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-729324072d368379",
+      "object_type": "entity",
+      "event_id": "EV-cedeae902fd1263d",
+      "claim_refs": [
+        "CL-64772a58ba191af1",
+        "CL-7c45c9b9e2b3573f",
+        "CL-1610d540de36d81d",
+        "CL-3666845c0cf3e786"
+      ],
+      "source_refs": [
+        "SA-3047c002a6c44243"
+      ],
+      "data_date": "2026-07-08",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-33045ca6da0f1758",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-c70eca6b0f88f44d",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-729324072d368379",
+      "object_type": "entity",
+      "event_id": "EV-e130583e34ab9d4c",
+      "claim_refs": [
+        "CL-67001824539d7679",
+        "CL-709283621618c805",
+        "CL-b4ec1c96ecd4804e",
+        "CL-00e119907c3e5b48"
+      ],
+      "source_refs": [
+        "SA-661e4c17a696d592"
+      ],
+      "data_date": "2026-07-07",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-484ed3617e7af912",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-c70eca6b0f88f44d",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-729324072d368379",
+      "object_type": "entity",
+      "event_id": "EV-cc3b92fe233953cf",
+      "claim_refs": [
+        "CL-8424ab1ad266316a",
+        "CL-3cecd48d9480f1c5",
+        "CL-988d503797fc6cc6",
+        "CL-94840dec572ce4c5"
+      ],
+      "source_refs": [
+        "SA-ff58815cf907094e"
+      ],
+      "data_date": "2026-07-05",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-d732460240ae0fca",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-c70eca6b0f88f44d",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-729324072d368379",
+      "object_type": "entity",
+      "event_id": "EV-d40a4e1b7a53cabe",
+      "claim_refs": [
+        "CL-79962ec5841d32d3",
+        "CL-64c92b66b45f56e0",
+        "CL-8f57bdb2bc1e63f6",
+        "CL-d131a3ee320475df"
+      ],
+      "source_refs": [
+        "SA-4371bdb36fc3d03b"
+      ],
+      "data_date": "2026-07-05",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-2a47bb839eee70c5",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-c70eca6b0f88f44d",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-729324072d368379",
+      "object_type": "entity",
+      "event_id": "EV-bf6f67c47c6b0d7c",
+      "claim_refs": [
+        "CL-232fe29cfa1f1638",
+        "CL-c2f80a136c503e9b",
+        "CL-abcfff874d9141a5",
+        "CL-18954b77fd39ca67"
+      ],
+      "source_refs": [
+        "SA-c023caafc814d4ca"
+      ],
+      "data_date": "2026-07-04",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-a3a6bf494b1a1a36",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-c70eca6b0f88f44d",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-729324072d368379",
+      "object_type": "entity",
+      "event_id": "EV-2059f42c7b2aff44",
+      "claim_refs": [
+        "CL-df0a3aadcfe5c2a3"
+      ],
+      "source_refs": [
+        "SA-cc58c7b3419a9f7a"
+      ],
+      "data_date": "2026-07-04",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-b5f95a4bf76881e0",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-c70eca6b0f88f44d",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-729324072d368379",
+      "object_type": "entity",
+      "event_id": "EV-9c0552732b34f278",
+      "claim_refs": [
+        "CL-af2b034f0eb6aa26",
+        "CL-308882ef1d436dbd",
+        "CL-67ab3b5eb0dac08c",
+        "CL-d88322cbdb52c4eb"
+      ],
+      "source_refs": [
+        "SA-96cf95551f37ccd7"
+      ],
+      "data_date": "2026-07-04",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-2942b0593c04c0e0",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-c70eca6b0f88f44d",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-729324072d368379",
+      "object_type": "entity",
+      "event_id": "EV-63fdf001c22a0ed4",
+      "claim_refs": [
+        "CL-3cf1d0d1a1f86ff3",
+        "CL-ea8d581916c7ec4b",
+        "CL-61227cdf9b53be75",
+        "CL-1f7d823bb7872786"
+      ],
+      "source_refs": [
+        "SA-233afa573c4cdb06"
+      ],
+      "data_date": "2026-07-02",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-bff72a2a7e329405",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-c70eca6b0f88f44d",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-729324072d368379",
+      "object_type": "entity",
+      "event_id": "EV-d2c370511e9e55fe",
+      "claim_refs": [
+        "CL-a443b4503f34acea",
+        "CL-426e067d1ff091c4",
+        "CL-259615c509f24d9c",
+        "CL-94e0cab7efd339d9"
+      ],
+      "source_refs": [
+        "SA-0955f4f3c5b71400"
+      ],
+      "data_date": "2026-07-02",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-0636bdcd705d71c5",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-c70eca6b0f88f44d",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-729324072d368379",
+      "object_type": "entity",
+      "event_id": "EV-3b5cb867fdaba28f",
+      "claim_refs": [
+        "CL-4b514070ee79745d",
+        "CL-8e7a4f010dd98a04",
+        "CL-76e4b501e31a78c3",
+        "CL-576faea004dacb66"
+      ],
+      "source_refs": [
+        "SA-db23a63c5784394e"
+      ],
+      "data_date": "2026-07-01",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-4182bb33531f8309",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-c70eca6b0f88f44d",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-729324072d368379",
+      "object_type": "entity",
+      "event_id": "EV-01212a5ad9db6a20",
+      "claim_refs": [
+        "CL-af18b14b62596ebc",
+        "CL-a2a2c126f0728a55",
+        "CL-1a8e48107a085be8",
+        "CL-c7b28e72ae87693e"
+      ],
+      "source_refs": [
+        "SA-8f8bacf8e42f9cb1"
+      ],
+      "data_date": "2026-07-01",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-4a73ed3d8c5482e4",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-c70eca6b0f88f44d",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-729324072d368379",
+      "object_type": "entity",
+      "event_id": "EV-9c4b862020202f6c",
+      "claim_refs": [
+        "CL-f7edc802c1a7a858",
+        "CL-4caea7656a68d60a",
+        "CL-182d0dbabfca1db3",
+        "CL-29e66353e1ff4024"
+      ],
+      "source_refs": [
+        "SA-7a32bbc33335a22e"
+      ],
+      "data_date": "2026-07-01",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-f008fbaf7aa95da2",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-c70eca6b0f88f44d",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-729324072d368379",
+      "object_type": "entity",
+      "event_id": "EV-13e06fc12cc3fb7c",
+      "claim_refs": [
+        "CL-262b9c1886051391",
+        "CL-4ba1eb0e0182bccd",
+        "CL-2eee52bfd1b74c89",
+        "CL-6c83de77e3224efa"
+      ],
+      "source_refs": [
+        "SA-ddd5b344fc8bbc1e"
+      ],
+      "data_date": "2026-07-01",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-6488006f011b1bd5",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-7d3194f79e645c42",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-729324072d368379",
+      "object_type": "entity",
+      "event_id": "EV-860b90c017deaa59",
+      "claim_refs": [
+        "CL-856fd3d929db7b81",
+        "CL-10448def9b55c060",
+        "CL-2a1497429cb41ce3",
+        "CL-f007b7913c791e2b"
+      ],
+      "source_refs": [
+        "SA-9b0d907c41c1424d"
+      ],
+      "data_date": "2026-06-28",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-5bedce8e3290b08e",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-c70eca6b0f88f44d",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-729324072d368379",
+      "object_type": "entity",
+      "event_id": "EV-445db243814e88d0",
+      "claim_refs": [
+        "CL-328a54cce2445303",
+        "CL-6d1c28eb85de7256",
+        "CL-70a2d985e6abce68",
+        "CL-919fe14a95c35c04"
+      ],
+      "source_refs": [
+        "SA-d9ace0fba4c3470b"
+      ],
+      "data_date": "2026-06-26",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-7f5cb3c99f5e6776",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-c70eca6b0f88f44d",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-729324072d368379",
+      "object_type": "entity",
+      "event_id": "EV-644337db309a1c82",
+      "claim_refs": [
+        "CL-25a5162492bd09b0",
+        "CL-d5abb17c8d807a39",
+        "CL-3000e7ac35019671",
+        "CL-44970c4d25da8d06",
+        "CL-f11901e3b71eae33",
+        "CL-5503a87e4feb0640",
+        "CL-05e2fae140d03781",
+        "CL-ef3aa23d298d9620"
+      ],
+      "source_refs": [
+        "SA-478445e6957e13c8",
+        "SA-9daae05f89c19eaf"
+      ],
+      "data_date": "2026-06-25",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-a3a488f8efd223ce",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-c70eca6b0f88f44d",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-729324072d368379",
+      "object_type": "entity",
+      "event_id": "EV-b796ba14c4eba861",
+      "claim_refs": [
+        "CL-cc3baf9939903d46",
+        "CL-07375a7c088d6f25",
+        "CL-b04f83b168af2936",
+        "CL-4774b7a5f2c5ebdc"
+      ],
+      "source_refs": [
+        "SA-a559cbc25faafbfc"
+      ],
+      "data_date": "2026-06-25",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-b28eafdbf14c50de",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-c70eca6b0f88f44d",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-729324072d368379",
+      "object_type": "entity",
+      "event_id": "EV-46b9ae8e68164b93",
+      "claim_refs": [
+        "CL-09fd919b9c8bcac5",
+        "CL-81171588a6640638",
+        "CL-c4299f65c0aefcab",
+        "CL-5cb0001c8ebbfe21"
+      ],
+      "source_refs": [
+        "SA-8b700a5d815f8cdc"
+      ],
+      "data_date": "2026-06-25",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-0c892894a2c3b039",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-c70eca6b0f88f44d",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-729324072d368379",
+      "object_type": "entity",
+      "event_id": "EV-7e6e0470ea99a6eb",
+      "claim_refs": [
+        "CL-86c7ccd04ee00b71",
+        "CL-8052e5df6f2f4068",
+        "CL-d9d13e77a36078fa",
+        "CL-f3e38bcb4fc90c81"
+      ],
+      "source_refs": [
+        "SA-a45d3a852e357aa0"
+      ],
+      "data_date": "2026-06-24",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-a8713041b3d3c706",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-c70eca6b0f88f44d",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-729324072d368379",
+      "object_type": "entity",
+      "event_id": "EV-cb08f263d23e6c00",
+      "claim_refs": [
+        "CL-2265466871bf98a6",
+        "CL-652314938f7cdfc9",
+        "CL-e12abc1de848fd38",
+        "CL-ba84e4ab8df000c3"
+      ],
+      "source_refs": [
+        "SA-304e13e0c5388842"
+      ],
+      "data_date": "2026-06-24",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-33e373a9dd84ecd2",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-c70eca6b0f88f44d",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-729324072d368379",
+      "object_type": "entity",
+      "event_id": "EV-9536c76cee278fcb",
+      "claim_refs": [
+        "CL-5cd74377c9116233",
+        "CL-13aed9e17c5c86d5",
+        "CL-2b43759a39b1b598",
+        "CL-eeb473d9f81f82fd"
+      ],
+      "source_refs": [
+        "SA-edef45c04eb91401"
+      ],
+      "data_date": "2026-06-23",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-134368b43c17c946",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-7d3194f79e645c42",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-729324072d368379",
+      "object_type": "entity",
+      "event_id": "EV-28145c97a7237d6d",
+      "claim_refs": [
+        "CL-aa555933f7430696",
+        "CL-ad7603df2ee9a83f",
+        "CL-a9043e6904f051fe",
+        "CL-8e011b5c6b14a5eb"
+      ],
+      "source_refs": [
+        "SA-c3267724a519f363"
+      ],
+      "data_date": "2026-06-21",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-03a9fee9f0f0adc9",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-c70eca6b0f88f44d",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-729324072d368379",
+      "object_type": "entity",
+      "event_id": "EV-2af2957a10b3c198",
+      "claim_refs": [
+        "CL-700a48ac4c21710f",
+        "CL-0655555d0cfe1469"
+      ],
+      "source_refs": [
+        "SA-10936897221fa1b4"
+      ],
+      "data_date": "2026-06-19",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-a0b5b92e12c2fe06",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-c70eca6b0f88f44d",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-729324072d368379",
+      "object_type": "entity",
+      "event_id": "EV-266aff97294156f6",
+      "claim_refs": [
+        "CL-5d7966374a6cc88b",
+        "CL-5cf750bb8aa21826",
+        "CL-6c1e4f0d9bb879e0",
+        "CL-ec023e4ed4ff57bf"
+      ],
+      "source_refs": [
+        "SA-ae1409e1858d1d49"
+      ],
+      "data_date": "2026-06-19",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-98d3a14eddaaeb6f",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-c70eca6b0f88f44d",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-729324072d368379",
+      "object_type": "entity",
+      "event_id": "EV-60c27ec9b857f5c2",
+      "claim_refs": [
+        "CL-ca9aebd3e0a85e55",
+        "CL-cebb3f957c1adc0a",
+        "CL-bfb7e80639278ab1",
+        "CL-34c344e4066555cf"
+      ],
+      "source_refs": [
+        "SA-17950fc11ed622ba"
+      ],
+      "data_date": "2026-06-18",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-98fd209d09005a1c",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-c70eca6b0f88f44d",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-729324072d368379",
+      "object_type": "entity",
+      "event_id": "EV-cec69087dc8992e0",
+      "claim_refs": [
+        "CL-f7f9a46e7662739e",
+        "CL-c6c460440f11105c",
+        "CL-09da470a73f9efc5",
+        "CL-deecb393c84fdad3"
+      ],
+      "source_refs": [
+        "SA-b7f4418ac4c2ff19"
+      ],
+      "data_date": "2026-06-18",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-4ad53e05ce3fda29",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-c70eca6b0f88f44d",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-729324072d368379",
+      "object_type": "entity",
+      "event_id": "EV-f2acdcbe3b644340",
+      "claim_refs": [
+        "CL-74287334ff5d2e18",
+        "CL-fd2bc362c69c237e",
+        "CL-99bc128825e4c6a6",
+        "CL-21598d53fa37dfd9"
+      ],
+      "source_refs": [
+        "SA-11588f90f57b0a00"
+      ],
+      "data_date": "2026-06-16",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-0efe853421b84beb",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-c70eca6b0f88f44d",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-729324072d368379",
+      "object_type": "entity",
+      "event_id": "EV-461b38cb8f56b067",
+      "claim_refs": [
+        "CL-ad6ae9f6375dd85f",
+        "CL-8e2a3027e6f027ae",
+        "CL-ef8c89451667027c"
+      ],
+      "source_refs": [
+        "SA-ac1b30bc95da1906"
+      ],
+      "data_date": "2026-06-13",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-c471780ab055c67c",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-c70eca6b0f88f44d",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-729324072d368379",
+      "object_type": "entity",
+      "event_id": "EV-57f083a39393d841",
+      "claim_refs": [
+        "CL-4a6ed87bb9fa740f",
+        "CL-67a5b366c704944f",
+        "CL-cbaff86d744f269b",
+        "CL-21d23df5cc09744f"
+      ],
+      "source_refs": [
+        "SA-e4025b0bae1449d1"
+      ],
+      "data_date": "2026-06-12",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-5d703aae847bbc5e",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-c70eca6b0f88f44d",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-729324072d368379",
+      "object_type": "entity",
+      "event_id": "EV-689538e8159887de",
+      "claim_refs": [
+        "CL-4ff7bb9716ade0f4",
+        "CL-6efbc9da742294ac",
+        "CL-6f8b56682d62571e",
+        "CL-36ad8dab40651f22"
+      ],
+      "source_refs": [
+        "SA-c743a5e148930111"
+      ],
+      "data_date": "2026-06-11",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-7eb22c82dc9fc8a2",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-c70eca6b0f88f44d",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-729324072d368379",
+      "object_type": "entity",
+      "event_id": "EV-adbdaa251b42ec79",
+      "claim_refs": [
+        "CL-ee7deb3aa47b3b8a",
+        "CL-0bbda6cfc1ab2da4",
+        "CL-676c34e466db055c"
+      ],
+      "source_refs": [
+        "SA-a21fd811ee3f5425"
+      ],
+      "data_date": "2026-06-11",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-1f7f0f143aeb3e68",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-c70eca6b0f88f44d",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-729324072d368379",
+      "object_type": "entity",
+      "event_id": "EV-68fcce7fde89e5d7",
+      "claim_refs": [
+        "CL-0eea4ecb1dde07fa",
+        "CL-f10c16fd23860c12",
+        "CL-1e20e2fb059c6477",
+        "CL-9a266b0fa28a06e3"
+      ],
+      "source_refs": [
+        "SA-b080d104a8e6e7bc"
+      ],
+      "data_date": "2026-06-10",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-2993f4f400172e9c",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-c70eca6b0f88f44d",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-729324072d368379",
+      "object_type": "entity",
+      "event_id": "EV-c7a2774b07554f5d",
+      "claim_refs": [
+        "CL-6d6fc89616877a66",
+        "CL-200210cc6f668bc1",
+        "CL-0c2d8eedf393ff6e",
+        "CL-e23d209b0219b4d8"
+      ],
+      "source_refs": [
+        "SA-688d4a3d24991b75"
+      ],
+      "data_date": "2026-06-10",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-30448a7da675c5ae",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-c70eca6b0f88f44d",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-729324072d368379",
+      "object_type": "entity",
+      "event_id": "EV-7133e378762edda5",
+      "claim_refs": [
+        "CL-6b6072c5d313ced1",
+        "CL-c30dbb79de65d344",
+        "CL-795140370af505e5",
+        "CL-4b99fbb0d1624107"
+      ],
+      "source_refs": [
+        "SA-1f2c4f86a692acff"
+      ],
+      "data_date": "2026-06-10",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-3ee2424266e0f256",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-c70eca6b0f88f44d",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-729324072d368379",
+      "object_type": "entity",
+      "event_id": "EV-f1418d9e3b1413b7",
+      "claim_refs": [
+        "CL-0dfe28151e772826",
+        "CL-84f70f2a285c9c39",
+        "CL-71d4f16cf2f0d27c",
+        "CL-1851a003cfc5c07a"
+      ],
+      "source_refs": [
+        "SA-45a96a767247ca86"
+      ],
+      "data_date": "2026-06-10",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-8b46e6332bf1ea1b",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-c70eca6b0f88f44d",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-729324072d368379",
+      "object_type": "entity",
+      "event_id": "EV-e09bff5515b1896b",
+      "claim_refs": [
+        "CL-022ff08fc8204a5e",
+        "CL-0f37c2091158dc07",
+        "CL-4b1710f3a8a8d8f2",
+        "CL-ed2867d0b13b7090"
+      ],
+      "source_refs": [
+        "SA-5648af9929156bbd"
+      ],
+      "data_date": "2026-06-10",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-e8f23c5396109c3b",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-c70eca6b0f88f44d",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-729324072d368379",
+      "object_type": "entity",
+      "event_id": "EV-f5dd192f6d4e04a3",
+      "claim_refs": [
+        "CL-e6ce1d6235737c33",
+        "CL-8d9f1bd0a40a92ea",
+        "CL-892c1da5909b5172",
+        "CL-4d053f6129938e3c"
+      ],
+      "source_refs": [
+        "SA-39dad4c753ccb2d8"
+      ],
+      "data_date": "2026-06-10",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-0b992980f3ebebc9",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-c70eca6b0f88f44d",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-729324072d368379",
+      "object_type": "entity",
+      "event_id": "EV-9127c613a365044b",
+      "claim_refs": [
+        "CL-f026f7aa852926d2",
+        "CL-5871e3da130b1bf0",
+        "CL-6a1b5916dd369b07",
+        "CL-2d5d0bd418989205"
+      ],
+      "source_refs": [
+        "SA-310a7358d1185c80"
+      ],
+      "data_date": "2026-06-09",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-937c0d5c5660f23a",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-3a7bd3e2360a3d29",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-729324072d368379",
+      "object_type": "entity",
+      "event_id": "EV-c5b8faec223a4caf",
+      "claim_refs": [
+        "CL-5e55b73326fc1077",
+        "CL-d39aa41668213fa3",
+        "CL-1d39937de43f7a3c",
+        "CL-9b9af4ee977e02f6"
+      ],
+      "source_refs": [
+        "SA-1b505a997d4a14f3"
+      ],
+      "data_date": "2026-06-09",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-40f49af8f268e68f",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-c70eca6b0f88f44d",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-729324072d368379",
+      "object_type": "entity",
+      "event_id": "EV-d83bfcd73c850580",
+      "claim_refs": [
+        "CL-da31990aad053e3c",
+        "CL-7534b2c96466ab8a",
+        "CL-fa6bb167a3d4ba37",
+        "CL-9e2df0da53df2c3b"
+      ],
+      "source_refs": [
+        "SA-c628e02e86351d43"
+      ],
+      "data_date": "2026-06-05",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-ee02c22ed3f61a9c",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-c70eca6b0f88f44d",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-729324072d368379",
+      "object_type": "entity",
+      "event_id": "EV-dbeae330706b53ca",
+      "claim_refs": [
+        "CL-15e9bbbb876c2f8b",
+        "CL-c60ea412cb8bf065",
+        "CL-c0478b3686d82d3a"
+      ],
+      "source_refs": [
+        "SA-2523d40c4a7fe952"
+      ],
+      "data_date": "2026-06-03",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-880ef9b2b80e161e",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-c70eca6b0f88f44d",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-729324072d368379",
+      "object_type": "entity",
+      "event_id": "EV-abaf05e513f88a4f",
+      "claim_refs": [
+        "CL-20df2227f2110bfe",
+        "CL-6058251a64be3cde",
+        "CL-3742ccf065945f2f",
+        "CL-32bb638b8d6ba50a"
+      ],
+      "source_refs": [
+        "SA-ab2962dcc5950a5c"
+      ],
+      "data_date": "2026-06-02",
+      "status": "verified"
+    }
+  ],
+  "taxonomyNodes": [
+    {
+      "id": "TX-industry-education",
+      "name": "教育",
+      "nodeType": "industry",
+      "typeLabel": "行业",
+      "valueId": "education",
+      "eventIds": [
+        "EV-84226288807f817b"
+      ],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-ef11a801c5bd3673",
+        "EN-729324072d368379"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}

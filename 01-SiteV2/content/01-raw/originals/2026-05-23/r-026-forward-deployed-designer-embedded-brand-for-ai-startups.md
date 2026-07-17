@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"founders, 0–18 months post a p
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "Forward Deployed Designer：为AI初创公司嵌入品牌"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Forward Deployed Designer: Embedded Brand for AI Startups

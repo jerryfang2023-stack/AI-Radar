@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"This free GitHub repository of open
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "终极开源AI代理目录 - VC角"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # The Ultimate Open-Source AI Agent Directory - The VC Corner

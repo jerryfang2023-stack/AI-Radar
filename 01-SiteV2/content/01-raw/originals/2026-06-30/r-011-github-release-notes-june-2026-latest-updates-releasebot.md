@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"GitHub adds total pull request merg
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "GitHub 发布说明 - 2026年6月最新更新 - Releasebot"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # GitHub Release Notes - June 2026 Latest Updates - Releasebot

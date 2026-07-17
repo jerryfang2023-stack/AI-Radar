@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-025
 title: "Apple sues OpenAI for allegedly stealing hardware secrets"
 title_zh: "苹果起诉OpenAI涉嫌窃取硬件机密"
-title_translation_status: translated
-title_translation_method: mymemory_title_translation
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.theverge.com/tech/964350/apple-openai-lawsuit-trade-secrets"
 canonical_url: "https://theverge.com/tech/964350/apple-openai-lawsuit-trade-secrets"
 source_name: "The Verge AI"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-11T04:06:34.966Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Apple sues OpenAI for allegedly stealing hardware secrets

@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-030
 title: "微软八月将发布改版Copilot，合并消费者与企业应用并推出AutoPilot智能体"
 title_zh: "微软八月将发布改版Copilot，合并消费者与企业应用并推出AutoPilot智能体"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://the-decoder.com/microsoft-follows-anthropic-and-openai-into-the-ai-super-app-race-with-overhauled-copilot-and-autopilot-agents"
 canonical_url: "https://the-decoder.com/microsoft-follows-anthropic-and-openai-into-the-ai-super-app-race-with-overhauled-copilot-and-autopilot-agents"
 source_name: "The Decoder：AI News（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-04T04:50:50.236Z
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 微软八月将发布改版Copilot，合并消费者与企业应用并推出AutoPilot智能体

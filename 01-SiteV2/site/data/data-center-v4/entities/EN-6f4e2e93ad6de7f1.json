@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 818,
+    "quarantinedEventCount": 58
+  },
+  "entity": {
+    "id": "EN-6f4e2e93ad6de7f1",
+    "name": "微软全面",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-7fb25ff3d853c314"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-06-30",
+    "lastSeen": "2026-07-01",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-7fb25ff3d853c314"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-7fb25ff3d853c314",
+        "dataDate": "2026-07-01",
+        "date": "2026-06-30",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "微软全面推出 Anthropic Claude 模型 Azure 云服务，基于英伟达 GB300",
+        "displayTags": [
+          {
+            "dimensionId": "deployment_model",
+            "id": "cloud",
+            "dimensionName": "部署形态",
+            "name": "云端"
+          }
+        ],
+        "entityIds": [
+          "EN-6f4e2e93ad6de7f1",
+          "EN-c70eca6b0f88f44d",
+          "EN-8d4321d936320802",
+          "EN-9fbf261b62c1d7c0",
+          "EN-729324072d368379"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

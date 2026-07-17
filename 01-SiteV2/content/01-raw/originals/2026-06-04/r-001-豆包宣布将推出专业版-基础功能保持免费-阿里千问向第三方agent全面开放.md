@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"豆包声明，针对专业人群推出
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "豆包宣布将推出专业版，基础功能保持免费；阿里千问向第三方Agent全面开放"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 豆包宣布将推出专业版，基础功能保持免费；阿里千问向第三方Agent全面开放

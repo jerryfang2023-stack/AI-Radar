@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"Snowflake expands its AWS collaboration 
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Snowflake 扩大与AWS合作，承诺投入60亿美元用于AI"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Snowflake Expands AWS Collaboration with $6B AI Commitment

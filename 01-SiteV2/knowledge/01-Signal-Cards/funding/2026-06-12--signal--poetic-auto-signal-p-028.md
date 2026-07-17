@@ -2,7 +2,7 @@
 id: SIG-20260612-A16
 type: signal_card
 signal_type: funding
-title: "Poetic 获得$50M 融资，押注地产和建筑设计工作流"
+title: "Poetic 完成5000万美元A轮融资，以可靠AI自动化全球最复杂的企业流程"
 date: 2026-06-12
 status: published
 source_title: "Poetic Raises $50M Series A to Automate the World's Most Complex Enterprise Processes with Reliable AI"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Poetic"
 
 frontend:
-  displayTitle: "Poetic 获得$50M 融资，押注地产和建筑设计工作流"
+  displayTitle: "Poetic 完成5000万美元A轮融资，以可靠AI自动化全球最复杂的企业流程"
   sourceLinks:
     - "https://www.prnewswire.com/news-releases/poetic-raises-50m-series-a-to-automate-the-worlds-most-complex-enterprise-processes-with-reliable-ai-302796939.html"
 ---
 
-# Poetic 获得$50M 融资，押注地产和建筑设计工作流
+# Poetic 完成5000万美元A轮融资，以可靠AI自动化全球最复杂的企业流程
 
 ## 新闻事实
 

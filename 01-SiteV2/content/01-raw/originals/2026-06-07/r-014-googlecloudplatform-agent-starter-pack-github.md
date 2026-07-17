@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"Ship AI Agents to Google Cloud in m
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "GitHub 仓库：GoogleCloudPlatform/agent-starter-pack"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # GoogleCloudPlatform/agent-starter-pack - GitHub

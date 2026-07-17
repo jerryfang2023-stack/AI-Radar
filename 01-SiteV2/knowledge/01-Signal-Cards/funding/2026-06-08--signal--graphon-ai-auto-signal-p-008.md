@@ -2,7 +2,7 @@
 id: SIG-20260608-A02
 type: signal_card
 signal_type: funding
-title: "Graphon AI 获 830 万美元种子轮融资，为企业 AI 构建「预模型智能层」"
+title: "Graphon AI 获 830 万美元种子轮融资，为企业 AI 构建预模型智能层"
 date: 2026-06-08
 status: published
 source_title: "Graphon AI raises $8.3M seed to build a pre-model intelligence layer for enterprise AI"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Graphon AI"
 
 frontend:
-  displayTitle: "Graphon AI 获 830 万美元种子轮融资，为企业 AI 构建「预模型智能层」"
+  displayTitle: "Graphon AI 获 830 万美元种子轮融资，为企业 AI 构建预模型智能层"
   sourceLinks:
     - "https://thenextweb.com/news/graphon-ai-pre-model-intelligence-layer-seed-funding"
 ---
 
-# Graphon AI raises $8.3M seed to build a pre-model intelligence layer for enterprise AI
+# Graphon AI 获 830 万美元种子轮融资，为企业 AI 构建预模型智能层
 
 ## 新闻事实
 

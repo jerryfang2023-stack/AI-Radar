@@ -2,7 +2,7 @@
 id: SIG-20260616-A06
 type: signal_card
 signal_type: product_service
-title: "下一代投机解码：DFlash 与 Spec V2 发布 AI 基础设施能力，切入模型部署和算力服务"
+title: "下一代投机解码：DFlash 与 Spec V2"
 date: 2026-06-16
 status: published
 source_title: "下一代投机解码：DFlash 与 Spec V2"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "下一代投机解码：DFlash 与 Spec V2"
 
 frontend:
-  displayTitle: "下一代投机解码：DFlash 与 Spec V2 发布 AI 基础设施能力，切入模型部署和算力服务"
+  displayTitle: "下一代投机解码：DFlash 与 Spec V2"
   sourceLinks:
     - "https://www.lmsys.org/blog/2026-06-15-next-generation-speculative-decoding-dflash-v2"
 ---
 
-# 下一代投机解码：DFlash 与 Spec V2 发布 AI 基础设施能力，切入模型部署和算力服务
+# 下一代投机解码：DFlash 与 Spec V2
 
 ## 新闻事实
 

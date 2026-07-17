@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-052
 title: "Gemini Enterprise Agent Platform release notes | Google Cloud Documentation"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "Gemini Enterprise Agent平台发布说明 | Google Cloud 文档"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://docs.cloud.google.com/gemini-enterprise-agent-platform/release-notes"
 canonical_url: "https://docs.cloud.google.com/gemini-enterprise-agent-platform/release-notes"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-09T03:05:45.082Z
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Gemini Enterprise Agent Platform release notes | Google Cloud Documentation

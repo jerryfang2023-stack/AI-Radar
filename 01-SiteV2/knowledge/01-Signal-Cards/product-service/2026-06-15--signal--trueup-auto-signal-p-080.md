@@ -2,7 +2,7 @@
 id: SIG-20260615-A13
 type: signal_card
 signal_type: product_service
-title: "TrueUp 发布 AI 基础设施能力，切入销售线索和收入团队协作"
+title: "AI裁员浪潮成为火药桶"
 date: 2026-06-15
 status: published
 source_title: "AI裁员浪潮成为火药桶"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "TrueUp"
 
 frontend:
-  displayTitle: "TrueUp 发布 AI 基础设施能力，切入销售线索和收入团队协作"
+  displayTitle: "AI裁员浪潮成为火药桶"
   sourceLinks:
     - "https://techcrunch.com/2026/06/15/the-ai-layoff-wave-is-becoming-a-powder-keg"
 ---
 
-# TrueUp 发布 AI 基础设施能力，切入销售线索和收入团队协作
+# AI裁员浪潮成为火药桶
 
 ## 新闻事实
 

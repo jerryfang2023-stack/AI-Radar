@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-004
 title: "Introducing Taskade TSK-1: The Taskade System Kernel (2026) | Taskade Blog"
-title_zh: "Taskade 发布 TSK-1 系统内核，为工作区应用提供统一智能运行层"
-title_translation_status: translated
-title_translation_method: source_title_translation_db
+title_zh: "Taskade TSK-1 发布：Taskade 系统内核（2026）"
+title_translation_status: "translated"
+title_translation_method: "deepseek_title_translation"
 original_url: "https://taskade.com/blog/introducing-tsk-1"
 canonical_url: "https://taskade.com/blog/introducing-tsk-1"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-13T10:23:56.685Z
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_translation_model: "deepseek-v4-flash"
 ---
 
 # Introducing Taskade TSK-1: The Taskade System Kernel (2026) | Taskade Blog

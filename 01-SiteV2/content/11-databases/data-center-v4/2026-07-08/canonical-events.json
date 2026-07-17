@@ -5,7 +5,10 @@
     "event_time": "2026-07-07T20:31:58.000Z",
     "disclosed_at": "2026-07-07T20:31:58.000Z",
     "entities": [
-      "EN-ea3bd73e2b506e00"
+      "EN-ea3bd73e2b506e00",
+      "EN-96eebba49dbbf422",
+      "EN-d85ad5e8ff8e2889",
+      "EN-a2fa009495c3bb3a"
     ],
     "action": "发布Muse Image模型",
     "object": "，可引用其他Instagram用户生成AI图片",
@@ -13,7 +16,9 @@
     "locations": [],
     "claim_refs": [
       "CL-39cea080b696eadb",
-      "CL-61c69fc0a3b00b68"
+      "CL-61c69fc0a3b00b68",
+      "CL-1bf7df99a4917d22",
+      "CL-2acd933238b5dd99"
     ],
     "source_refs": [
       "SA-eea05bb5beca19b2"
@@ -37,6 +42,7 @@
     "event_time": "2026-07-07T12:00:00.000Z",
     "disclosed_at": "2026-07-07T12:00:00.000Z",
     "entities": [
+      "EN-2d0943142ffe9b0f",
       "EN-3a7bd3e2360a3d29",
       "EN-2b78da3dc866654e"
     ],
@@ -66,7 +72,7 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-7cd4a5b931f0b667",
+    "event_id": "EV-113899096a32165a",
     "display_title_zh": "Savi Security 发布反 AI 诈骗 App，抵御语音/短信/电话骗局（如绑架勒索）"
   },
   {
@@ -75,7 +81,10 @@
     "event_time": "2026-07-08T00:50:26.000Z",
     "disclosed_at": "2026-07-08T00:50:26.000Z",
     "entities": [
-      "EN-8d4321d936320802"
+      "EN-8d4321d936320802",
+      "EN-96eebba49dbbf422",
+      "EN-9e193e1ec8d75d41",
+      "EN-51fd7dc086fcb858"
     ],
     "action": "发布",
     "object": "Audex（Nemotron-Labs-Audex-30B-A3B）统一音频-文本大语言模型",
@@ -85,7 +94,7 @@
       "CL-c75eab56dd59b0cc",
       "CL-49ec39f518bbe1cd",
       "CL-8968b8b3556f9f4a",
-      "CL-a71565d0860201a2"
+      "CL-cfd3efe39a15d156"
     ],
     "source_refs": [
       "SA-233b53691866c29d"
@@ -109,7 +118,8 @@
     "event_time": "2026-07-07T21:06:12.000Z",
     "disclosed_at": "2026-07-07T21:06:12.000Z",
     "entities": [
-      "EN-c70eca6b0f88f44d"
+      "EN-c70eca6b0f88f44d",
+      "EN-40bad8003c5ee358"
     ],
     "action": "发布",
     "object": "Claude Code v2.1.203 发布",
@@ -145,14 +155,18 @@
     "event_time": "2026-07-07T19:58:20.000Z",
     "disclosed_at": "2026-07-07T19:58:20.000Z",
     "entities": [
-      "EN-9fbf261b62c1d7c0"
+      "EN-9fbf261b62c1d7c0",
+      "EN-7d3194f79e645c42",
+      "EN-c70eca6b0f88f44d"
     ],
     "action": "加入",
     "object": "AI 降本趋势，更多依赖自家模型",
     "metrics": [],
     "locations": [],
     "claim_refs": [
-      "CL-78216df90445c241"
+      "CL-78216df90445c241",
+      "CL-d8cb80cfbcd37658",
+      "CL-105c0459aeb71015"
     ],
     "source_refs": [
       "SA-f4e2daa4a5f6192c"
@@ -208,11 +222,13 @@
   },
   {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "",
     "disclosed_at": "2026-07-08T04:39:25.447Z",
     "entities": [
-      "EN-968e2d5b08687bf4"
+      "EN-7a814849bc288dc0",
+      "EN-968e2d5b08687bf4",
+      "EN-96eebba49dbbf422"
     ],
     "action": "Raises",
     "object": "$35 Million to Scale OxCore™ Architecture — OXMIQ",
@@ -224,32 +240,77 @@
     "claim_refs": [
       "CL-6728673577721baf",
       "CL-f2ce21e1d6659d62",
-      "CL-04fdbdf4ee9056f3",
-      "CL-318067b97bc32f85"
+      "CL-5d2471ee8d6c8436",
+      "CL-04fdbdf4ee9056f3"
     ],
     "source_refs": [
       "SA-469786f431912a32"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-469786f431912a32",
         "disclosed_at": "2026-07-08T04:39:25.447Z",
+        "status": "completed"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-48075ca70a5458ec",
+    "display_title_zh": "OXMIQ 获3500万美元融资，用于扩展OxCore™架构"
+  },
+  {
+    "event_type": "product_release",
+    "event_status": "announced",
+    "event_time": "",
+    "disclosed_at": "2026-07-08T04:39:25.538Z",
+    "entities": [
+      "EN-96eebba49dbbf422"
+    ],
+    "action": "launch",
+    "object": "AI chip startup Ricursive hits $4B valuation 2 months after launch",
+    "metrics": [
+      "$4B",
+      "$335 million",
+      "$300 million",
+      "$4 billion"
+    ],
+    "locations": [],
+    "claim_refs": [
+      "CL-70df1bfee362fc78",
+      "CL-b5c1e9da2777f2da",
+      "CL-40519f9781e63ed7",
+      "CL-4b60795091f2c75b"
+    ],
+    "source_refs": [
+      "SA-3502e590eb470da3"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "object",
+      "event_time"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-3502e590eb470da3",
+        "disclosed_at": "2026-07-08T04:39:25.538Z",
         "status": "announced"
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-ac6f75718393f2c4",
-    "display_title_zh": "Samsung 完成 3500 万美元 A 轮融资"
+    "event_id": "EV-3847d883688587ba",
+    "display_title_zh": "AI 芯片初创公司 Ricursive 成立 2 个月后估值达 40 亿美元"
   },
   {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "",
     "disclosed_at": "2026-07-08T04:39:25.551Z",
     "entities": [
-      "EN-830cefea8ed73a00"
+      "EN-830cefea8ed73a00",
+      "EN-96eebba49dbbf422"
     ],
     "action": "raises",
     "object": "$33M to help companies buy and sell AI compute as a commodity like oil - SiliconANGLE",
@@ -261,28 +322,30 @@
     "claim_refs": [
       "CL-b7bffd210d0e4870",
       "CL-2bbf3aa844ccb10d",
-      "CL-8f21f08042ec5df5",
-      "CL-bfc47aab727a8567"
+      "CL-eb912dec4617073a",
+      "CL-8f21f08042ec5df5"
     ],
     "source_refs": [
       "SA-aa8b7c2ab55f7451"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-aa8b7c2ab55f7451",
         "disclosed_at": "2026-07-08T04:39:25.551Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
     "event_id": "EV-7b1c734882fa1ea6",
-    "display_title_zh": "Ornn 完成 3300 万美元 种子轮融资"
+    "display_title_zh": "Ornn 融资3300万美元，助力企业像买卖石油一样将AI算力作为商品交易 - SiliconANGLE"
   },
   {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "",
     "disclosed_at": "2026-07-08T04:39:25.608Z",
     "entities": [
@@ -306,24 +369,27 @@
       "SA-a02c71dfb7f772b7"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-a02c71dfb7f772b7",
         "disclosed_at": "2026-07-08T04:39:25.608Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
     "event_id": "EV-8bb64551124d8870",
-    "display_title_zh": "One 完成 400 万美元 种子轮融资"
+    "display_title_zh": "One 筹集400万美元，为AI代理构建信任层"
   },
   {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "",
     "disclosed_at": "2026-07-08T04:39:25.749Z",
     "entities": [
+      "EN-816bab802b34b308",
       "EN-8d4321d936320802"
     ],
     "action": "raises",
@@ -352,24 +418,28 @@
       "SA-5cd223ef162fc17c"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time",
+      "display_title_zh"
+    ],
     "update_history": [
       {
         "source_ref": "SA-5cd223ef162fc17c",
         "disclosed_at": "2026-07-08T04:39:25.749Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-80e54c9a390da293",
-    "display_title_zh": "NVIDIA 完成 8 亿美元 C 轮融资"
+    "event_id": "EV-13ec78dfdbca678b",
+    "display_title_zh": ""
   },
   {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "",
     "disclosed_at": "2026-07-08T04:39:25.798Z",
     "entities": [
+      "EN-712dffae168fe622",
       "EN-7d3194f79e645c42"
     ],
     "action": "Raises",
@@ -391,17 +461,19 @@
       "SA-df768b7010a85914"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-df768b7010a85914",
         "disclosed_at": "2026-07-08T04:39:25.798Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-c9af33ffe65d236b",
-    "display_title_zh": "OpenAI 完成 1.2 亿美元 C 轮融资"
+    "event_id": "EV-d9cc588fb41a7e67",
+    "display_title_zh": "Norm Ai获1.2亿美元融资，估值达12亿美元，由Khosla Ventures领投，打造法律AI全栈模型"
   },
   {
     "event_type": "product_release",
@@ -409,7 +481,10 @@
     "event_time": "",
     "disclosed_at": "2026-07-08T04:39:25.834Z",
     "entities": [
-      "EN-754b113d548b4469"
+      "EN-754b113d548b4469",
+      "EN-d87e6bf7aa180a4a",
+      "EN-23fa906ab8df13d6",
+      "EN-feecb1b1adc8584d"
     ],
     "action": "Open Source",
     "object": "TypeScript AI Agent Framework",
@@ -418,14 +493,16 @@
     "claim_refs": [
       "CL-e1ad432c9824b470",
       "CL-7507646f63868460",
-      "CL-d40bd48cc7c4ebfb",
-      "CL-7cb45e34e768b9bc"
+      "CL-51cc83a2889e23f2",
+      "CL-f2a9507602c2b524"
     ],
     "source_refs": [
       "SA-dcc123bd88bd76a3"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-dcc123bd88bd76a3",
@@ -435,16 +512,18 @@
     ],
     "publication_status": "verified",
     "event_id": "EV-3011ea85c51a3ee0",
-    "display_title_zh": "VoltAgent 发布 TypeScript AI Agent Framework"
+    "display_title_zh": "VoltAgent - 开源TypeScript AI代理框架"
   },
   {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "",
     "disclosed_at": "2026-07-08T04:39:25.862Z",
     "entities": [
+      "EN-8c178e7cfa1b29f9",
       "EN-c70eca6b0f88f44d",
       "EN-7d3194f79e645c42",
+      "EN-717399fcba3c79be",
       "EN-ea3bd73e2b506e00"
     ],
     "action": "raises",
@@ -469,17 +548,19 @@
       "SA-d9d84b4d8a816a6e"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-d9d84b4d8a816a6e",
         "disclosed_at": "2026-07-08T04:39:25.862Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-7f77e6a2d1698307",
-    "display_title_zh": "Anthropic 完成 4000 万美元 A 轮融资"
+    "event_id": "EV-974a6b7d0e0efef2",
+    "display_title_zh": "获Anthropic、OpenAI及Meta内部人士支持，Bespoke Labs融资4000万美元：更好的环境能否击败更大的模型？——TFN"
   },
   {
     "event_type": "product_release",
@@ -487,7 +568,9 @@
     "event_time": "",
     "disclosed_at": "2026-07-08T04:39:25.869Z",
     "entities": [
-      "EN-e395d03e988d30a9"
+      "EN-e395d03e988d30a9",
+      "EN-96eebba49dbbf422",
+      "EN-0dba03107c52ed3e"
     ],
     "action": "Unveils",
     "object": "Peraton[x]™: The First True Enterprise Agentic AI Platform Built for the Nation’s Most Critical Operations and Missions",
@@ -503,7 +586,9 @@
       "SA-119d9217accbe015"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-119d9217accbe015",
@@ -513,7 +598,83 @@
     ],
     "publication_status": "verified",
     "event_id": "EV-3a7128e2d7ff149e",
-    "display_title_zh": "Peraton 发布 Peraton[x]™"
+    "display_title_zh": "Peraton发布Peraton[x]™：首个专为国家关键行动与任务打造的企业级自主AI平台"
+  },
+  {
+    "event_type": "research_result",
+    "event_status": "announced",
+    "event_time": "",
+    "disclosed_at": "2026-07-08T04:39:25.922Z",
+    "entities": [
+      "EN-a19ad969c84178e9",
+      "EN-96eebba49dbbf422",
+      "EN-668a3f52e25f8f4c",
+      "EN-9eb42ffb4942bcc2",
+      "EN-b6e23938808f272d"
+    ],
+    "action": "Study Finds",
+    "object": "AI Voice Agents Increased Specialty Care Program Enrollment Rates 340% in Real-World Clinical Setting",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-3f689640ff78ed82",
+      "CL-33efd9167d0f81d9",
+      "CL-54c36b180fb4893f",
+      "CL-0581a6be6d26dce4"
+    ],
+    "source_refs": [
+      "SA-386373481b3e7b31"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "event_time"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-386373481b3e7b31",
+        "disclosed_at": "2026-07-08T04:39:25.922Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-edb1ddb3a091ada4",
+    "display_title_zh": "研究显示AI语音智能体在真实临床环境中将专科护理项目注册率提升340%"
+  },
+  {
+    "event_type": "product_release",
+    "event_status": "announced",
+    "event_time": "2026-07-07T22:47:35.000Z",
+    "disclosed_at": "2026-07-07T22:47:35.000Z",
+    "entities": [
+      "EN-9fbf261b62c1d7c0",
+      "EN-7d3194f79e645c42",
+      "EN-c70eca6b0f88f44d"
+    ],
+    "action": "product_release",
+    "object": "微软自研 AI 模型 MAI 开始接手 Office 应用，逐步替代 OpenAI 和 Anthropic",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-dce0703468c7b2aa",
+      "CL-479cc856c871c30f",
+      "CL-1d7259841832b5e5",
+      "CL-038561445f81a351"
+    ],
+    "source_refs": [
+      "SA-d9b7ef7f5dbebf8e"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-d9b7ef7f5dbebf8e",
+        "disclosed_at": "2026-07-07T22:47:35.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-cadcc94249dea81d",
+    "display_title_zh": "微软自研 AI 模型 MAI 开始接手 Office 应用，逐步替代 OpenAI 和 Anthropic"
   },
   {
     "event_type": "policy_regulation",
@@ -533,7 +694,7 @@
       "CL-2b6541a6d067781a",
       "CL-ce6213d97f977ce7",
       "CL-ba5006bb9cc0d49a",
-      "CL-a1f3484ab04c870b"
+      "CL-cf1cad6e7bf9045a"
     ],
     "source_refs": [
       "SA-3d69e81c433fda1c"
@@ -587,47 +748,87 @@
     "display_title_zh": "OpenAI前研究员田永龙加入腾讯，将负责混元多模态模型方向"
   },
   {
-    "event_type": "partnership",
+    "event_type": "product_release",
     "event_status": "announced",
-    "event_time": "2026-07-08T01:00:05.000Z",
-    "disclosed_at": "2026-07-08T01:00:05.000Z",
+    "event_time": "2026-07-07T08:58:34.000Z",
+    "disclosed_at": "2026-07-07T08:58:34.000Z",
     "entities": [
-      "EN-e78bdebae031095b",
-      "EN-6fcba5d96a4fadfd",
-      "EN-7d3194f79e645c42"
+      "EN-6f7ac1823da81d2e",
+      "EN-c70eca6b0f88f44d",
+      "EN-7d3194f79e645c42",
+      "EN-bbdefa2950f49882"
     ],
-    "action": "合作",
-    "object": "AI 模型最快今日亮相，部分性能媲美 GPT-5.5",
+    "action": "product_release",
+    "object": "中国AI模型凭成本优势赢得美国企业青睐",
     "metrics": [
-      "600 亿",
-      "4081.13 亿"
+      "30%",
+      "46%",
+      "11%",
+      "4.5%"
     ],
-    "locations": [],
+    "locations": [
+      "美国",
+      "中国"
+    ],
     "claim_refs": [
-      "CL-ab31a4c9cfcf32f3",
-      "CL-5775b8fcdc59b7e9",
-      "CL-923f73c5f7d5a118",
-      "CL-9a5f4e41018fc3ce"
+      "CL-46924b28701fbb6b",
+      "CL-a265b0b38276f0e5",
+      "CL-b7a35a5891582936",
+      "CL-a1f504dc773d4842"
     ],
     "source_refs": [
-      "SA-3a07f7296612110c"
+      "SA-f0832cc6db6e7ff9"
     ],
     "conflicts": [],
     "missing_fields": [],
     "update_history": [
       {
-        "source_ref": "SA-3a07f7296612110c",
-        "disclosed_at": "2026-07-08T01:00:05.000Z",
+        "source_ref": "SA-f0832cc6db6e7ff9",
+        "disclosed_at": "2026-07-07T08:58:34.000Z",
         "status": "announced"
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-58614476c796a67a",
-    "display_title_zh": "SpaceXAI 与 Cursor 合作 AI 模型最快今日亮相，部分性能媲美 GPT-5.5"
+    "event_id": "EV-caec65aef89d3b4a",
+    "display_title_zh": "中国AI模型凭成本优势赢得美国企业青睐"
+  },
+  {
+    "event_type": "product_release",
+    "event_status": "announced",
+    "event_time": "2026-07-07T06:41:52.000Z",
+    "disclosed_at": "2026-07-07T06:41:52.000Z",
+    "entities": [
+      "EN-c70eca6b0f88f44d"
+    ],
+    "action": "product_release",
+    "object": "Anthropic 论文发现 Claude 内部存在类似人脑的\"全局工作空间\"结构",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-90df88e6b39e4dac",
+      "CL-b5b70d93c9691001",
+      "CL-6c21fc280d9dd579",
+      "CL-04bcc5875e6b00c7"
+    ],
+    "source_refs": [
+      "SA-d4544333593411ea"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-d4544333593411ea",
+        "disclosed_at": "2026-07-07T06:41:52.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-92fbbeb840a98e97",
+    "display_title_zh": "Anthropic 论文发现 Claude 内部存在类似人脑的\"全局工作空间\"结构"
   },
   {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "",
     "disclosed_at": "2026-07-08T04:39:26.106Z",
     "entities": [
@@ -651,24 +852,30 @@
       "SA-2a32100cbebc7ea6"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time",
+      "display_title_zh"
+    ],
     "update_history": [
       {
         "source_ref": "SA-2a32100cbebc7ea6",
         "disclosed_at": "2026-07-08T04:39:26.106Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
     "event_id": "EV-0f520c9e5b1ea1d2",
-    "display_title_zh": "Norm 完成 1.2 亿美元 C 轮融资"
+    "display_title_zh": ""
   },
   {
     "event_type": "product_release",
     "event_status": "announced",
     "event_time": "",
     "disclosed_at": "2026-07-08T04:39:26.170Z",
-    "entities": [],
+    "entities": [
+      "EN-f0aa6c0681eb0d35",
+      "EN-3149ad548669e717"
+    ],
     "action": "Launch",
     "object": "YC: SigmanticAI - The Cursor for Hardware Design | Y Combinator",
     "metrics": [],
@@ -684,7 +891,8 @@
     ],
     "conflicts": [],
     "missing_fields": [
-      "entities"
+      "event_time",
+      "display_title_zh"
     ],
     "update_history": [
       {
@@ -694,7 +902,7 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-4e5c5fb117a94574",
-    "display_title_zh": "YC 发布 YC"
+    "event_id": "EV-d1b9072f0e55eba5",
+    "display_title_zh": ""
   }
 ]

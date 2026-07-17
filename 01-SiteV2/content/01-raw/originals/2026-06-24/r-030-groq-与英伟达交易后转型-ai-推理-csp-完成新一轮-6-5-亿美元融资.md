@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"AI 初创企业 Groq 去年底与英伟
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "Groq 与英伟达交易后转型 AI 推理 CSP，完成新一轮 6.5 亿美元融资"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Groq 与英伟达交易后转型 AI 推理 CSP，完成新一轮 6.5 亿美元融资

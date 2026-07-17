@@ -2,7 +2,7 @@
 id: SIG-20260706-A07
 type: signal_card
 signal_type: product_service
-title: "M-Files Expands Agentic AI Capabilities with New Agents That Deliver Context-Aware Automation"
+title: "M-Files推出新智能体，扩展代理型AI能力，实现上下文感知自动化"
 date: 2026-07-06
 status: published
 source_title: "M-Files Expands Agentic AI Capabilities with New Agents That Deliver Context-Aware Automation | M-Files"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "M"
 
 frontend:
-  displayTitle: "M-Files Expands Agentic AI Capabilities with New Agents That Deliver Context-Aware Automation"
+  displayTitle: "M-Files推出新智能体，扩展代理型AI能力，实现上下文感知自动化"
   sourceLinks:
     - "https://www.m-files.com/press-releases/m-files-ai-agents/"
 ---
 
-# M-Files Expands Agentic AI Capabilities with New Agents That Deliver Context-Aware Automation
+# M-Files推出新智能体，扩展代理型AI能力，实现上下文感知自动化
 
 ## 新闻事实
 

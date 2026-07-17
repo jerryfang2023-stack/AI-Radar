@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-013
 title: "Anthropic 与私募巨头合资成立 AI 实施公司 Ode，初始资金 15 亿美元"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "Anthropic 与私募巨头合资成立 AI 实施公司 Ode，初始资金 15 亿美元"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://techcrunch.com/2026/07/15/anthropic-blackstone-bet-the-next-trillion-dollar-ai-business-is-implementation-not-models"
 canonical_url: "https://techcrunch.com/2026/07/15/anthropic-blackstone-bet-the-next-trillion-dollar-ai-business-is-implementation-not-models"
 source_name: "TechCrunch：AI（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-16T02:39:33.468Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Anthropic 与私募巨头合资成立 AI 实施公司 Ode，初始资金 15 亿美元

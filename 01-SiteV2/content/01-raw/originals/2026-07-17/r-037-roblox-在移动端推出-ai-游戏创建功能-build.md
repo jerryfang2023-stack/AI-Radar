@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-037
 title: "Roblox 在移动端推出 AI 游戏创建功能\"Build\""
 title_zh: "Roblox 在移动端推出 AI 游戏创建功能\"Build\""
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://techcrunch.com/2026/07/16/roblox-launches-an-ai-powered-game-creation-feature-in-its-mobile-app"
 canonical_url: "https://techcrunch.com/2026/07/16/roblox-launches-an-ai-powered-game-creation-feature-in-its-mobile-app"
 source_name: "TechCrunch：AI（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-17T04:40:17.024Z
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Roblox 在移动端推出 AI 游戏创建功能"Build"

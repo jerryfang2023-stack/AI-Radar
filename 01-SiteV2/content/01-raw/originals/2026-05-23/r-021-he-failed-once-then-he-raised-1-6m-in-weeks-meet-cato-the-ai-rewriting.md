@@ -72,6 +72,10 @@ key_excerpts: [{"type":"workflow_change","text":"buying goods and services proce
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "他曾失败过一次。随后在数周内融资160万欧元。认识Cato，这个正在改写意大利公共采购的人工智能——Startup Reporter"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # He Failed Once. Then He Raised €1.6M in Weeks. Meet Cato, the AI Rewriting Italian Public Procurement - Startup Reporter

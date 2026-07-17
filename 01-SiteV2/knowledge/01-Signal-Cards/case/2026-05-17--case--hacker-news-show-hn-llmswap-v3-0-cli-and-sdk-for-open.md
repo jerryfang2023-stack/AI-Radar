@@ -1,7 +1,7 @@
 ---
 id: CASE-20260517-01
 type: case_card
-title: "Hacker News：Show HN: Llmswap v3.0 – CLI and SDK for Open"
+title: "Show HN：Llmswap v3.0 – 面向OpenAI、Claude、Gemini、Watsonx的命令行界面与SDK"
 date: 2026-05-17
 status: draft
 created_at: 2026-05-19T05:28:07.843Z
@@ -68,7 +68,7 @@ internal:
   last_reviewed: 2026-05-17
 ---
 
-# Hacker News：Show HN: Llmswap v3.0 – CLI and SDK for Open
+# Show HN：Llmswap v3.0 – 面向OpenAI、Claude、Gemini、Watsonx的命令行界面与SDK
 
 ## 这个案例是谁
 

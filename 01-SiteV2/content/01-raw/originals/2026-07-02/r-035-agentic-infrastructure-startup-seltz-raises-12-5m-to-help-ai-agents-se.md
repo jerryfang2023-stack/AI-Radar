@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Agentic infrastructure startup Seltz ra
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_zh: "智能体基础设施初创公司Seltz融资1250万美元，帮助AI代理搜索网络答案 - SiliconANGLE"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Agentic infrastructure startup Seltz raises $12.5M to help AI agents search the web for answers - SiliconANGLE

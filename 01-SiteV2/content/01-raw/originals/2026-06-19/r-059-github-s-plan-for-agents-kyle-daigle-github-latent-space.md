@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"GitHub pioneered the modern AI codi
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "GitHub的Agent计划——Kyle Daigle，GitHub - Latent.Space"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # GitHub's plan for Agents — Kyle Daigle, GitHub - Latent.Space

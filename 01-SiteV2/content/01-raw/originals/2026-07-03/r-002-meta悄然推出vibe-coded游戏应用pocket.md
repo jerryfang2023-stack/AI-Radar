@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-002
 title: "Meta悄然推出vibe-coded游戏应用Pocket"
 title_zh: "Meta悄然推出vibe-coded游戏应用Pocket"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://techcrunch.com/2026/07/02/meta-quietly-launches-vibe-coded-gaming-app-pocket"
 canonical_url: "https://techcrunch.com/2026/07/02/meta-quietly-launches-vibe-coded-gaming-app-pocket"
 source_name: "TechCrunch：AI（RSS）"
@@ -78,6 +78,7 @@ fact_extraction_completed_at: 2026-07-03T01:59:31.046Z
 theme: outside-core-exploration
 keyword_group: outside-core-exploration
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Meta悄然推出vibe-coded游戏应用Pocket

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"谷歌发布 Gemini 3.5 Live Tra
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "谷歌 Gemini 3.5 Live Translate 发布：支持70多种语言的实时语音翻译"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 谷歌 Gemini 3.5 Live Translate 发布：支持70多种语言的实时语音翻译

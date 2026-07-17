@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-010
 title: "Claude Mythos Preview 发布前后，严重漏洞披露数量激增"
 title_zh: "Claude Mythos Preview 发布前后，严重漏洞披露数量激增"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://epoch.ai/data-insights/cve-severity-spike"
 canonical_url: "https://epoch.ai/data-insights/cve-severity-spike"
 source_name: "Hacker News 热门（buzzing.cc 中文翻译）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-05T04:56:15.150Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Claude Mythos Preview 发布前后，严重漏洞披露数量激增

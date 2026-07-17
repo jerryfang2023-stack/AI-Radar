@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"6 月 9 日，苹果在 2026 年
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "苹果 iOS 27 版 Siri AI 推出系统原生自动校正功能"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 苹果 iOS 27 版 Siri AI 推出系统原生自动校正功能

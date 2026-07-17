@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"Meta AI 推出 Brain2Qwerty v2，一种�
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "Meta AI 发布 Brain2Qwerty v2：无需手术的脑电波解码系统"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Meta AI 发布 Brain2Qwerty v2：无需手术的脑电波解码系统

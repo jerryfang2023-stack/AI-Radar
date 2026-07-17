@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-046
 title: "The new GPT-5.6 family: Luna, Terra, Sol"
-title_zh: "全新GPT-5.6系列： Luna、Terra、Sol"
-title_translation_status: translated
-title_translation_method: mymemory_title_translation
+title_zh: "新的GPT-5.6系列：Luna、Terra、Sol"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://simonwillison.net/2026/Jul/9/gpt-5-6/#atom-everything"
 canonical_url: "https://simonwillison.net/2026/Jul/9/gpt-5-6"
 source_name: "Simon Willison's Blog"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-10T01:59:54.760Z
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # The new GPT-5.6 family: Luna, Terra, Sol

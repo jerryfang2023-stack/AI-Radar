@@ -5,7 +5,9 @@
     "event_time": "2026-06-21T08:25:41.000Z",
     "disclosed_at": "2026-06-21T08:25:41.000Z",
     "entities": [
-      "EN-cbc62794911ff31b"
+      "EN-7d1507284a5757ca",
+      "EN-cbc62794911ff31b",
+      "EN-02bb4eeba3bde980"
     ],
     "action": "推出",
     "object": "Continuum和Context两项新服务，填补AI智能体业务上下文与安全漏洞短板",
@@ -29,45 +31,42 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-072b7dabe8ea6032",
+    "event_id": "EV-69a82f50c60d4a64",
     "display_title_zh": "AWS推出Continuum和Context两项新服务，填补AI智能体业务上下文与安全漏洞短板"
   },
   {
-    "event_type": "product_release",
+    "event_type": "policy_regulation",
     "event_status": "announced",
-    "event_time": "",
-    "disclosed_at": "2026-06-22T06:23:05.534Z",
+    "event_time": "2026-06-21T15:28:17.000Z",
+    "disclosed_at": "2026-06-21T15:28:17.000Z",
     "entities": [
-      "EN-f19600b9e18f7f27"
+      "EN-783ef849d8a6ffe6",
+      "EN-c70eca6b0f88f44d"
     ],
-    "action": "Introduces",
-    "object": "Maestro Case to Orchestrate Dynamic Business Processes | UiPath",
-    "metrics": [
-      "$1B",
-      "52%"
-    ],
+    "action": "政府要求",
+    "object": "Anthropic 下线两模型引争议",
+    "metrics": [],
     "locations": [],
     "claim_refs": [
-      "CL-e94d3c3317cc3c26",
-      "CL-509dbd056c3a6080",
-      "CL-dba34f042015345e",
-      "CL-c3bc568a36852ea2"
+      "CL-a783dce71d6160b2",
+      "CL-4366baedf260ef2b",
+      "CL-f0ce79525cde54f5"
     ],
     "source_refs": [
-      "SA-1d77bde9686a1b42"
+      "SA-237f1e6a31fe2f62"
     ],
     "conflicts": [],
     "missing_fields": [],
     "update_history": [
       {
-        "source_ref": "SA-1d77bde9686a1b42",
-        "disclosed_at": "2026-06-22T06:23:05.534Z",
+        "source_ref": "SA-237f1e6a31fe2f62",
+        "disclosed_at": "2026-06-21T15:28:17.000Z",
         "status": "announced"
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-54c7f0169fbd500e",
-    "display_title_zh": "UiPath 发布 Maestro Case to Orchestrate Dynamic Business Processes"
+    "event_id": "EV-ed3baeeb5137137f",
+    "display_title_zh": "特朗普政府要求 Anthropic 下线两模型引争议"
   },
   {
     "event_type": "deployment",
@@ -86,14 +85,17 @@
     "claim_refs": [
       "CL-593986cabaff4495",
       "CL-2b6efca6c537c8f1",
-      "CL-a36a0ce0c2714a4b",
-      "CL-98da2ab0fd0a190b"
+      "CL-cbd7cff2d45d59a1",
+      "CL-a36a0ce0c2714a4b"
     ],
     "source_refs": [
       "SA-9332bf1138e14951"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time",
+      "display_title_zh"
+    ],
     "update_history": [
       {
         "source_ref": "SA-9332bf1138e14951",
@@ -103,7 +105,86 @@
     ],
     "publication_status": "verified",
     "event_id": "EV-ec711aed6721bb30",
-    "display_title_zh": "Rime 完成部署：, and govern production AI faster | ai-data-science"
+    "display_title_zh": ""
+  },
+  {
+    "event_type": "deployment",
+    "event_status": "announced",
+    "event_time": "",
+    "disclosed_at": "2026-06-22T06:23:05.613Z",
+    "entities": [],
+    "action": "Deploying",
+    "object": "an AI agent in production in 4 months: the lacoste use case",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-a0de633957552896",
+      "CL-9049031067aee3d9",
+      "CL-c67df41e66ecdd8e",
+      "CL-c7e8608101ccee6e"
+    ],
+    "source_refs": [
+      "SA-2b565f8dcc5d15ec"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "entities",
+      "event_time"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-2b565f8dcc5d15ec",
+        "disclosed_at": "2026-06-22T06:23:05.613Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-046caa2b3d6fbdde",
+    "display_title_zh": "4个月内将AI智能体部署到生产环境：Lacoste用例"
+  },
+  {
+    "event_type": "product_release",
+    "event_status": "announced",
+    "event_time": "",
+    "disclosed_at": "2026-06-22T06:23:05.773Z",
+    "entities": [
+      "EN-27b78f50b2d3d969",
+      "EN-96eebba49dbbf422",
+      "EN-b0532e1af75cc4ab",
+      "EN-1b0a2528912919f4",
+      "EN-5c5f862c2a5059df",
+      "EN-3137a20f5252af53"
+    ],
+    "action": "Launches",
+    "object": "Agent/works™ to Govern and Run Enterprise AI Agents Across Any Cloud | Thoughtworks United States",
+    "metrics": [
+      "42%",
+      "25%"
+    ],
+    "locations": [],
+    "claim_refs": [
+      "CL-417f3430556889ce",
+      "CL-4ec2992a62659404",
+      "CL-0472d9e46c65b045",
+      "CL-9a09f2694ff4bbe7"
+    ],
+    "source_refs": [
+      "SA-0a4ddc672d10ae72"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "event_time"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-0a4ddc672d10ae72",
+        "disclosed_at": "2026-06-22T06:23:05.773Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-9ae9aa86e51e64a2",
+    "display_title_zh": "Thoughtworks 推出 Agent/works™，用于跨任意云环境治理和运行企业级 AI 智能体"
   },
   {
     "event_type": "deployment",
@@ -142,6 +223,7 @@
     "event_time": "",
     "disclosed_at": "2026-06-22T06:23:06.074Z",
     "entities": [
+      "EN-a25f979f2efd630f",
       "EN-7d3194f79e645c42",
       "EN-bbdefa2950f49882",
       "EN-9fbf261b62c1d7c0",
@@ -162,7 +244,9 @@
       "SA-acf8bb331c8ccced"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-acf8bb331c8ccced",
@@ -171,8 +255,8 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-cf317dd1579a01bb",
-    "display_title_zh": "OpenAI 发布 🤖"
+    "event_id": "EV-f953555178744c22",
+    "display_title_zh": "OpenAI政府持股🇺🇸，谷歌计算交易🚀，微软Scout发布🤖"
   },
   {
     "event_type": "partnership",
@@ -180,6 +264,8 @@
     "event_time": "2026-06-22T00:38:13.000Z",
     "disclosed_at": "2026-06-22T00:38:13.000Z",
     "entities": [
+      "EN-00943928d15bba0b",
+      "EN-4c06fff8651d4ff4",
       "EN-7d3194f79e645c42"
     ],
     "action": "合作",
@@ -205,83 +291,48 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-b716e560a685c41b",
+    "event_id": "EV-3fbfb89a10efd42f",
     "display_title_zh": "Getty Images 与 OpenAI 达成合作，授权图库内容引入 ChatGPT"
   },
   {
-    "event_type": "product_release",
-    "event_status": "completed",
-    "event_time": "2026-06-21T10:30:13.000Z",
-    "disclosed_at": "2026-06-21T10:30:13.000Z",
-    "entities": [
-      "EN-76b1e21d4abcf455"
-    ],
-    "action": "推出",
-    "object": "\"刷掌取件\"，全程无需使用手机",
-    "metrics": [],
-    "locations": [],
-    "claim_refs": [
-      "CL-553628b2e697193a",
-      "CL-6518add8adaad348",
-      "CL-aa079940be50f4a7",
-      "CL-06a6d817c12a0a87"
-    ],
-    "source_refs": [
-      "SA-2109aae17ebbe2dc"
-    ],
-    "conflicts": [],
-    "missing_fields": [],
-    "update_history": [
-      {
-        "source_ref": "SA-2109aae17ebbe2dc",
-        "disclosed_at": "2026-06-21T10:30:13.000Z",
-        "status": "completed"
-      }
-    ],
-    "publication_status": "verified",
-    "event_id": "EV-42c4adef053385a0",
-    "display_title_zh": "丰巢联合微信支付推出\"刷掌取件\"，全程无需使用手机"
-  },
-  {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "",
     "disclosed_at": "2026-06-22T06:23:06.173Z",
     "entities": [
-      "EN-7d3194f79e645c42",
-      "EN-c70eca6b0f88f44d",
-      "EN-bbdefa2950f49882"
+      "EN-7bcfaaf82306c01d"
     ],
     "action": "raises",
     "object": "¥280M seed for enterprise AI governance platform",
     "metrics": [
       "¥280M",
       "¥280 million",
-      "35%",
-      "98%"
+      "$1.74M"
     ],
     "locations": [],
     "claim_refs": [
       "CL-47f0cf8bf8b4ad3b",
       "CL-1a850391249d821a",
-      "CL-ab41e4fb55aa953e",
-      "CL-75a8f6fc023b219b"
+      "CL-6e6399c252fb1204",
+      "CL-86deb846d7bb4b9e"
     ],
     "source_refs": [
       "SA-0fcbc05eaf89a93a"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-0fcbc05eaf89a93a",
         "disclosed_at": "2026-06-22T06:23:06.173Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-21c2e81a7c073e04",
-    "display_title_zh": "OpenAI 完成 2.8 亿元 种子轮融资"
+    "event_id": "EV-60f9204b84882857",
+    "display_title_zh": "dodoAI为其企业AI治理平台筹集2.8亿元人民币种子轮资金"
   },
   {
     "event_type": "product_release",
@@ -319,11 +370,13 @@
   },
   {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "",
     "disclosed_at": "2026-06-22T06:23:06.257Z",
     "entities": [
-      "EN-3ccbd9105a45d8fc"
+      "EN-4abc3bd0f9e75c63",
+      "EN-3ccbd9105a45d8fc",
+      "EN-96eebba49dbbf422"
     ],
     "action": "Secures",
     "object": "$5.1M to Unify Enterprise AI Agents, Data, and Applications in a Single Context Layer",
@@ -342,17 +395,54 @@
       "SA-497407af8f7f1f75"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-497407af8f7f1f75",
         "disclosed_at": "2026-06-22T06:23:06.257Z",
+        "status": "completed"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-14a666fc27d73a80",
+    "display_title_zh": "Zaro.ai获510万美元融资，打造统一企业AI代理、数据与应用的单层上下文平台"
+  },
+  {
+    "event_type": "product_release",
+    "event_status": "announced",
+    "event_time": "2026-06-22T04:18:01.000Z",
+    "disclosed_at": "2026-06-22T04:18:01.000Z",
+    "entities": [],
+    "action": "product_release",
+    "object": "2026世界杯佛得角连续逼平两个世界冠军，12家AI集体预测错误",
+    "metrics": [
+      "100%"
+    ],
+    "locations": [],
+    "claim_refs": [
+      "CL-4db001fa1c0da31a",
+      "CL-2f349cd0a4138f9a",
+      "CL-0a79967cd22f5a1b"
+    ],
+    "source_refs": [
+      "SA-d4ede726abedc320"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "entities"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-d4ede726abedc320",
+        "disclosed_at": "2026-06-22T04:18:01.000Z",
         "status": "announced"
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-abe44ba0233e8516",
-    "display_title_zh": "Salesforce 完成 510 万美元 种子前轮融资"
+    "event_id": "EV-44e112cd9089d10f",
+    "display_title_zh": "2026世界杯佛得角连续逼平两个世界冠军，12家AI集体预测错误"
   },
   {
     "event_type": "deployment",
@@ -360,6 +450,7 @@
     "event_time": "2026-06-22T04:00:11.000Z",
     "disclosed_at": "2026-06-22T04:00:11.000Z",
     "entities": [
+      "EN-7c3482959a6cdd3f",
       "EN-7d3194f79e645c42",
       "EN-968e2d5b08687bf4"
     ],
@@ -388,16 +479,17 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-d3528ccff1833385",
+    "event_id": "EV-d209a6acecba4285",
     "display_title_zh": "OpenAI 史上最大规模企业部署之一：三星向员工开放 ChatGPT 和 Codex"
   },
   {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "",
     "disclosed_at": "2026-06-22T06:23:06.389Z",
     "entities": [
-      "EN-c945929c3683ffb0"
+      "EN-c945929c3683ffb0",
+      "EN-96eebba49dbbf422"
     ],
     "action": "Raises",
     "object": "$3.1M for Tender Bidding Platform",
@@ -415,21 +507,23 @@
       "SA-6f97a4f42b947d4d"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-6f97a4f42b947d4d",
         "disclosed_at": "2026-06-22T06:23:06.389Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "partial",
     "event_id": "EV-232ab5bcbaf6552d",
-    "display_title_zh": "ContraVault AI 完成 310 万美元 A 轮融资"
+    "display_title_zh": "ContraVault AI为其投标平台融资310万美元"
   },
   {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "",
     "disclosed_at": "2026-06-22T06:23:06.400Z",
     "entities": [
@@ -449,16 +543,53 @@
       "SA-3f02185ef72d97d9"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-3f02185ef72d97d9",
         "disclosed_at": "2026-06-22T06:23:06.400Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "partial",
     "event_id": "EV-1306e17cf1f3553e",
-    "display_title_zh": "Convey 完成 3800 万美元 A 轮融资"
+    "display_title_zh": "Convey获A16z投资3800万美元，用于自动化重复性办公室工作 - Business Insider"
+  },
+  {
+    "event_type": "partnership",
+    "event_status": "announced",
+    "event_time": "",
+    "disclosed_at": "2026-06-22T06:23:06.466Z",
+    "entities": [
+      "EN-3b7491f6cfa8bb7a",
+      "EN-96eebba49dbbf422",
+      "EN-7d3194f79e645c42"
+    ],
+    "action": "partner with",
+    "object": "legal AI startup Harvey",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-18fd1331339064b1"
+    ],
+    "source_refs": [
+      "SA-741d5e515408917b"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "event_time"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-741d5e515408917b",
+        "disclosed_at": "2026-06-22T06:23:06.466Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "partial",
+    "event_id": "EV-26183a56cf9ed63c",
+    "display_title_zh": "英国律所与法律AI初创公司Harvey达成最新合作"
   }
 ]

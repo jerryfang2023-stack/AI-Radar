@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-023
 title: "Introducing the Giant Swarm Agent Platform: Agents that run where your data lives"
-title_zh: "Giant Swarm Agent平台简介：在您的数据所在地运行的代理"
-title_translation_status: translated
-title_translation_method: mymemory_title_translation
+title_zh: "推出Giant Swarm Agent平台：智能体在数据所在之处运行"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.giantswarm.io/blog/introducing-the-giant-swarm-agent-platform-agents-that-run-where-your-data-lives"
 canonical_url: "https://giantswarm.io/blog/introducing-the-giant-swarm-agent-platform-agents-that-run-where-your-data-lives"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-10T01:59:45.777Z
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Introducing the Giant Swarm Agent Platform: Agents that run where your data lives

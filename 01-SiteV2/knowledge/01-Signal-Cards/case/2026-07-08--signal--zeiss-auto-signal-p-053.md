@@ -2,7 +2,7 @@
 id: SIG-20260708-A01
 type: signal_card
 signal_type: case
-title: "ZEISS 使用 Dapr Agents 处理文档提取案例"
+title: "ZEISS案例研究：使用Dapr Agents进行文档提取 | Diagrid"
 date: 2026-07-08
 status: published
 source_title: "ZEISS Case Study: Document Extraction with Dapr Agents | Diagrid"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "ZEISS"
 
 frontend:
-  displayTitle: "ZEISS 使用 Dapr Agents 处理文档提取案例"
+  displayTitle: "ZEISS案例研究：使用Dapr Agents进行文档提取 | Diagrid"
   sourceLinks:
     - "https://www.diagrid.io/case-studies/zeiss-vision-document-extraction"
 ---
 
-# ZEISS 使用 Dapr Agents 处理文档提取案例
+# ZEISS案例研究：使用Dapr Agents进行文档提取 | Diagrid
 
 ## 新闻事实
 

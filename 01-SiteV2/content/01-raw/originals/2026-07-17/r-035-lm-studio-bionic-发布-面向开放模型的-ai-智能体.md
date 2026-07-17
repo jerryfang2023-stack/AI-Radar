@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-035
 title: "LM Studio Bionic 发布：面向开放模型的 AI 智能体"
 title_zh: "LM Studio Bionic 发布：面向开放模型的 AI 智能体"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://lmstudio.ai/blog/introducing-lm-studio-bionic"
 canonical_url: "https://lmstudio.ai/blog/introducing-lm-studio-bionic"
 source_name: "Hacker News 热门（buzzing.cc 中文翻译）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-17T04:40:17.013Z
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # LM Studio Bionic 发布：面向开放模型的 AI 智能体

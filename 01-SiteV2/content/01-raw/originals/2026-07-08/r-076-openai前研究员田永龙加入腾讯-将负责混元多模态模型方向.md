@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-076
 title: "OpenAI前研究员田永龙加入腾讯，将负责混元多模态模型方向"
 title_zh: "OpenAI前研究员田永龙加入腾讯，将负责混元多模态模型方向"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/973/892.htm"
 canonical_url: "https://ithome.com/0/973/892.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-08T04:39:26.026Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # OpenAI前研究员田永龙加入腾讯，将负责混元多模态模型方向

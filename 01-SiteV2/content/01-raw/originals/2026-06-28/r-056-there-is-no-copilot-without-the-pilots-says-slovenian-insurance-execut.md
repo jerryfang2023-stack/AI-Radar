@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"The post There is no Copilot withou
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_zh: "斯洛文尼亚保险高管表示：没有飞行员，就没有副驾驶"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # There is no Copilot without the pilots, says Slovenian insurance executive

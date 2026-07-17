@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-088
 title: "Global Internal Automation Agents for a $50BN CPG - Eliza"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "全球内部自动化代理助力一家500亿美元消费品巨头 - Eliza"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://eliza.com/case-studies/global-internal-automation-agents-for-a-50bn-cpg"
 canonical_url: "https://eliza.com/case-studies/global-internal-automation-agents-for-a-50bn-cpg"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-08T04:39:26.125Z
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Global Internal Automation Agents for a $50BN CPG - Eliza

@@ -2,7 +2,7 @@
 id: SIG-20260707-A03
 type: signal_card
 signal_type: funding
-title: "Katalyze AI 获得 $10.5M 融资"
+title: "Katalyze AI获Bonfire Ventures领投1050万美元，为制药业部署代理操作系统 | The AI Journal"
 date: 2026-07-07
 status: published
 source_title: "Katalyze AI Raises $10.5M Led by Bonfire Ventures Deploy Agentic Operating System for Pharma | The AI Journal"
@@ -55,12 +55,12 @@ opportunity_signals:
 signal_owner: "Katalyze AI"
 
 frontend:
-  displayTitle: "Katalyze AI 获得 $10.5M 融资"
+  displayTitle: "Katalyze AI获Bonfire Ventures领投1050万美元，为制药业部署代理操作系统 | The AI Journal"
   sourceLinks:
     - "https://aijourn.com/katalyze-ai-raises-10-5m-led-by-bonfire-ventures-deploy-agentic-operating-system-for-pharma/"
 ---
 
-# Katalyze AI 获得 $10.5M 融资
+# Katalyze AI获Bonfire Ventures领投1050万美元，为制药业部署代理操作系统 | The AI Journal
 
 ## 新闻事实
 

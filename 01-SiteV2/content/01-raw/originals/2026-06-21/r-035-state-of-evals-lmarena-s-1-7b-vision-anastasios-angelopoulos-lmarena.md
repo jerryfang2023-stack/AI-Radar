@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"We are reupping this episode after LMAr
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "[评估现状] LMArena的17亿美元愿景 — Anastasios Angelopoulos, LMArena"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # [State of Evals] LMArena's $1.7B Vision — Anastasios Angelopoulos, LMArena

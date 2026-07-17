@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-051
 title: "面向数学形式化证明：Mistral AI 发布 Leanstral 1.5 低使用成本开源模型"
 title_zh: "面向数学形式化证明：Mistral AI 发布 Leanstral 1.5 低使用成本开源模型"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/973/135.htm"
 canonical_url: "https://ithome.com/0/973/135.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-07T02:46:59.788Z
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 面向数学形式化证明：Mistral AI 发布 Leanstral 1.5 低使用成本开源模型

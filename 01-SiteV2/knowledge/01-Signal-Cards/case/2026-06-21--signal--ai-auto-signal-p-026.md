@@ -2,7 +2,7 @@
 id: SIG-20260621-A05
 type: signal_card
 signal_type: case
-title: "Top AI Researcher on GPT 4.5, DeepSeek and Agentic RAG"
+title: "顶级AI研究员谈GPT 4.5、DeepSeek与Agentic RAG | Contextual AI CEO Douwe Kiela"
 date: 2026-06-21
 status: published
 source_title: "Top AI Researcher on GPT 4.5, DeepSeek and Agentic RAG | Douwe Kiela, CEO, Contextual AI"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "AI"
 
 frontend:
-  displayTitle: "Top AI Researcher on GPT 4.5, DeepSeek and Agentic RAG"
+  displayTitle: "顶级AI研究员谈GPT 4.5、DeepSeek与Agentic RAG | Contextual AI CEO Douwe Kiela"
   sourceLinks:
     - "https://podcasters.spotify.com/pod/show/firstmark/episodes/Top-AI-Researcher-on-GPT-4-5--DeepSeek-and-Agentic-RAG--Douwe-Kiela--CEO--Contextual-AI-e2vpcmg"
 ---
 
-# Top AI Researcher on GPT 4.5, DeepSeek and Agentic RAG
+# 顶级AI研究员谈GPT 4.5、DeepSeek与Agentic RAG | Contextual AI CEO Douwe Kiela
 
 ## 新闻事实
 

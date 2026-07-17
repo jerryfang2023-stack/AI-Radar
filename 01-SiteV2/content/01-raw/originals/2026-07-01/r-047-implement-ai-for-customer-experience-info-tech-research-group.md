@@ -72,6 +72,10 @@ key_excerpts: [{"type":"company_action","text":"Our research can help you identi
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "实施AI提升客户体验 | Info-Tech Research Group"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Implement AI for Customer Experience | Info-Tech Research Group

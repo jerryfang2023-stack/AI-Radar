@@ -1,11 +1,15 @@
 [
   {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "",
     "disclosed_at": "2026-06-28T04:05:27.893Z",
     "entities": [
-      "EN-e69f64149edae6b1"
+      "EN-e69f64149edae6b1",
+      "EN-8d4321d936320802",
+      "EN-c70eca6b0f88f44d",
+      "EN-ea3bd73e2b506e00",
+      "EN-bbdefa2950f49882"
     ],
     "action": "raises",
     "object": "$30M Series A to go all in on AI",
@@ -23,30 +27,112 @@
       "CL-7bb8a736eab78e58",
       "CL-69f6f7ac18989b11",
       "CL-b76b8398d32f3ce9",
-      "CL-5cbd260401ce63b2",
-      "CL-5d4387c6d9dd5f19"
+      "CL-d58211ef3c29bdda",
+      "CL-2df57b6b38d896e0"
     ],
     "source_refs": [
       "SA-317effbacd477100",
       "SA-e325cb15daaff611"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-317effbacd477100",
         "disclosed_at": "2026-06-28T04:05:27.893Z",
-        "status": "announced"
+        "status": "completed"
       },
       {
         "source_ref": "SA-e325cb15daaff611",
         "disclosed_at": "2026-06-28T04:05:27.901Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
     "event_id": "EV-7817dc69d5228cbb",
-    "display_title_zh": "Runlayer 完成 3000 万美元 A 轮融资"
+    "display_title_zh": "Runlayer 完成3000万美元A轮融资，全力押注人工智能"
+  },
+  {
+    "event_type": "deployment",
+    "event_status": "announced",
+    "event_time": "",
+    "disclosed_at": "2026-06-28T04:05:27.979Z",
+    "entities": [
+      "EN-04c869555f58b7ea",
+      "EN-ea3bd73e2b506e00",
+      "EN-bbdefa2950f49882",
+      "EN-8d4321d936320802"
+    ],
+    "action": "Deploy",
+    "object": "Meta Llama 3.1 405B on Google Cloud Vertex AI",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-076f7c4a695a52ce",
+      "CL-e7594f03d450403f",
+      "CL-d7af048bd67d9151",
+      "CL-2ece935f6243028d"
+    ],
+    "source_refs": [
+      "SA-151d1ec8819e5b64"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "event_time"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-151d1ec8819e5b64",
+        "disclosed_at": "2026-06-28T04:05:27.979Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-cf76f090a1a20a36",
+    "display_title_zh": "在 Google Cloud Vertex AI 上部署 Meta Llama 3.1 405B"
+  },
+  {
+    "event_type": "product_release",
+    "event_status": "announced",
+    "event_time": "",
+    "disclosed_at": "2026-06-28T04:05:28.010Z",
+    "entities": [
+      "EN-8de7e44229714152",
+      "EN-c70eca6b0f88f44d",
+      "EN-db68703d8d719bd0"
+    ],
+    "action": "releases",
+    "object": "Anthropic Mythos to be used by more than 100 US companies, agencies",
+    "metrics": [],
+    "locations": [
+      "US",
+      "U.S."
+    ],
+    "claim_refs": [
+      "CL-9071e8a4c51305e5",
+      "CL-8695f82cf7500c8f",
+      "CL-057442f37b53ecca",
+      "CL-cf43aeb7787293a7"
+    ],
+    "source_refs": [
+      "SA-5ff74d890312b003"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "event_time"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-5ff74d890312b003",
+        "disclosed_at": "2026-06-28T04:05:28.010Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-1ec24a430911185c",
+    "display_title_zh": "特朗普政府发布Anthropic Mythos，供超过100家美国企业和机构使用"
   },
   {
     "event_type": "product_release",
@@ -55,7 +141,10 @@
     "disclosed_at": "2026-06-28T04:05:28.019Z",
     "entities": [
       "EN-7d3194f79e645c42",
-      "EN-c70eca6b0f88f44d"
+      "EN-2a920347dfcf07a7",
+      "EN-c70eca6b0f88f44d",
+      "EN-7839fb10a8f14c70",
+      "EN-b8c236d640d6a5fb"
     ],
     "action": "launches",
     "object": "Claude Mythos rival GPT-5.6 Sol under government access it calls unsustainable",
@@ -66,14 +155,16 @@
     "claim_refs": [
       "CL-856fd3d929db7b81",
       "CL-10448def9b55c060",
-      "CL-b85ce24100027bbc",
-      "CL-4551b0c6340592c2"
+      "CL-2a1497429cb41ce3",
+      "CL-f007b7913c791e2b"
     ],
     "source_refs": [
       "SA-9b0d907c41c1424d"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-9b0d907c41c1424d",
@@ -83,16 +174,16 @@
     ],
     "publication_status": "verified",
     "event_id": "EV-860b90c017deaa59",
-    "display_title_zh": "OpenAI 发布 Claude Mythos rival GPT"
+    "display_title_zh": "OpenAI推出政府访问权限下名为Claude Mythos竞争对手的GPT-5.6 Sol，称其不可持续"
   },
   {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "",
     "disclosed_at": "2026-06-28T04:05:28.098Z",
     "entities": [
-      "EN-b0532e1af75cc4ab",
-      "EN-cbc62794911ff31b"
+      "EN-6b5df3bd8bb0c67d",
+      "EN-b0532e1af75cc4ab"
     ],
     "action": "raises",
     "object": "$20M as it scales robot deliveries for pilot customers",
@@ -105,33 +196,34 @@
     "claim_refs": [
       "CL-60e12926741304e9",
       "CL-da58d20931a8cd39",
-      "CL-11a53ff0eec0598a",
-      "CL-448262882cbdee23"
+      "CL-ea0e96bd4b38366c",
+      "CL-bca4b311581d0a69"
     ],
     "source_refs": [
       "SA-807ee9dbd47ef003"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-807ee9dbd47ef003",
         "disclosed_at": "2026-06-28T04:05:28.098Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-5a26f343846cb8ad",
-    "display_title_zh": "Rime 完成 2000 万美元 A 轮融资"
+    "event_id": "EV-52bf48005db3461a",
+    "display_title_zh": "Robust.AI 融资2000万美元，扩大机器人配送试点客户规模"
   },
   {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "",
     "disclosed_at": "2026-06-28T04:05:28.140Z",
     "entities": [
-      "EN-6f7ac1823da81d2e",
-      "EN-bbdefa2950f49882"
+      "EN-6f7ac1823da81d2e"
     ],
     "action": "raises",
     "object": "$7.4B 💰, Android MCP 📱",
@@ -142,22 +234,96 @@
     "claim_refs": [
       "CL-d77757eee6a7133b",
       "CL-1fc50ada9925ca7b",
-      "CL-508d4eeb61e818a5"
+      "CL-2f8a4767d5887056",
+      "CL-b9d5f924a42f1eed"
     ],
     "source_refs": [
       "SA-d7cc100a5f6aab14"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-d7cc100a5f6aab14",
         "disclosed_at": "2026-06-28T04:05:28.140Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
     "event_id": "EV-d4d7b019ff0015df",
-    "display_title_zh": "DeepSeek 完成 74 亿美元融资"
+    "display_title_zh": "GLM-5.2 🤖，DeepSeek 融资 74 亿美元 💰，Android MCP 📱"
+  },
+  {
+    "event_type": "deployment",
+    "event_status": "announced",
+    "event_time": "",
+    "disclosed_at": "2026-06-28T04:05:28.226Z",
+    "entities": [],
+    "action": "pilots",
+    "object": ", says Slovenian insurance executive",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-8a01f82150f4dd1f",
+      "CL-43f4f75bdf168998",
+      "CL-01f0c07db875e4bf",
+      "CL-ec20a40a7ea99dc3"
+    ],
+    "source_refs": [
+      "SA-32b1ca90e786a448"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "entities",
+      "event_time"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-32b1ca90e786a448",
+        "disclosed_at": "2026-06-28T04:05:28.226Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-86247a326e79bb88",
+    "display_title_zh": "斯洛文尼亚保险高管表示：没有飞行员，就没有副驾驶"
+  },
+  {
+    "event_type": "partnership",
+    "event_status": "announced",
+    "event_time": "2026-06-26T05:45:00Z",
+    "disclosed_at": "2026-06-26T05:45:00Z",
+    "entities": [
+      "EN-c890cfa67d1da908",
+      "EN-96eebba49dbbf422",
+      "EN-8147e6fed86d42c1"
+    ],
+    "action": "Partners with",
+    "object": "BlueMesh to Bring Private AI to Business Communications – IT Business Net",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-a632bca446bb4448",
+      "CL-e914c31a4dfa3872",
+      "CL-e035cb5ab5d6df79",
+      "CL-91f1a6465627b75b"
+    ],
+    "source_refs": [
+      "SA-285c66f797c020bd"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-285c66f797c020bd",
+        "disclosed_at": "2026-06-26T05:45:00Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-2fd730d0ad452334",
+    "display_title_zh": "Vaspian 与 BlueMesh 合作，将私有 AI 引入企业通信"
   }
 ]

@@ -2,7 +2,7 @@
 id: SIG-20260614-A07
 type: signal_card
 signal_type: product_service
-title: "OpenAI 面临多州检察长调查 发布 AI 基础设施能力，切入采购下单自动化"
+title: "OpenAI 面临多州检察长调查"
 date: 2026-06-14
 status: published
 source_title: "OpenAI 面临多州检察长调查"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "OpenAI 面临多州检察长调查"
 
 frontend:
-  displayTitle: "OpenAI 面临多州检察长调查 发布 AI 基础设施能力，切入采购下单自动化"
+  displayTitle: "OpenAI 面临多州检察长调查"
   sourceLinks:
     - "https://techcrunch.com/2026/06/13/openai-faces-investigation-from-state-attorneys-general"
 ---
 
-# OpenAI 面临多州检察长调查 发布 AI 基础设施能力，切入采购下单自动化
+# OpenAI 面临多州检察长调查
 
 ## 新闻事实
 

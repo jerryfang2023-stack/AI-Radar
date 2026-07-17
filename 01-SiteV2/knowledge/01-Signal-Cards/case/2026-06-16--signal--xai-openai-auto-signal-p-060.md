@@ -2,7 +2,7 @@
 id: SIG-20260616-A11
 type: signal_card
 signal_type: case
-title: "美国法官驳回 xAI 指控 OpenAI 窃取商业机密的诉讼 案例：AI 进入采购下单流程"
+title: "美国法官驳回 xAI 指控 OpenAI 窃取商业机密的诉讼"
 date: 2026-06-16
 status: published
 source_title: "美国法官驳回 xAI 指控 OpenAI 窃取商业机密的诉讼"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "美国法官驳回 xAI 指控 OpenAI 窃取商业机密的诉讼"
 
 frontend:
-  displayTitle: "美国法官驳回 xAI 指控 OpenAI 窃取商业机密的诉讼 案例：AI 进入采购下单流程"
+  displayTitle: "美国法官驳回 xAI 指控 OpenAI 窃取商业机密的诉讼"
   sourceLinks:
     - "https://www.ithome.com/0/964/631.htm"
 ---
 
-# 美国法官驳回 xAI 指控 OpenAI 窃取商业机密的诉讼 案例：AI 进入采购下单流程
+# 美国法官驳回 xAI 指控 OpenAI 窃取商业机密的诉讼
 
 ## 新闻事实
 

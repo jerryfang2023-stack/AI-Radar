@@ -69,6 +69,10 @@ key_excerpts: [{"type":"funding","text":"is at the forefront of integrated AI fo
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "NHS共享商业服务公司与Salesforce部署AI驱动平台，助力NHS企业服务转型——Salesforce"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # NHS Shared Business Services and Salesforce Deploy AI-powered Platform to Transform Corporate Services across the NHS - Salesforce

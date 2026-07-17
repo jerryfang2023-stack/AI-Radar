@@ -2,7 +2,7 @@
 id: SIG-20260624-A14
 type: signal_card
 signal_type: case
-title: "Instagram 记录企业应用场景：企业智能体协作流程"
+title: "在与企业的对话中，我看到了三种截然不同的人工智能现实……"
 date: 2026-06-24
 status: published
 source_title: "In my conversations with enterprises I see three distinct AI realities ..."
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Instagram"
 
 frontend:
-  displayTitle: "Instagram 记录企业应用场景：企业智能体协作流程"
+  displayTitle: "在与企业的对话中，我看到了三种截然不同的人工智能现实……"
   sourceLinks:
     - "https://www.instagram.com/reel/DZ6f4x9NSRj/"
 ---
 
-# Instagram 记录企业应用场景：企业智能体协作流程
+# 在与企业的对话中，我看到了三种截然不同的人工智能现实……
 
 ## 新闻事实
 

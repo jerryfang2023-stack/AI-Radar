@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"On May 19, 2026, OpenAI moved a pie
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "OpenAI的3年计算承诺：折扣还是陷阱？| THE D[AI]LY BRIEF"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # OpenAI's 3-Year Compute Commit: Discount or Trap? | THE D[AI]LY BRIEF

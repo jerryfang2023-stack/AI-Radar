@@ -1,0 +1,241 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 818,
+    "quarantinedEventCount": 58
+  },
+  "entity": {
+    "id": "EN-e0bab6f6c58bfe4e",
+    "name": "Android 17",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-99e5df844a1bd670"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-technology-multimodal",
+      "TX-use_case-content_creation",
+      "TX-technology-speech_audio"
+    ],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-06-17",
+    "lastSeen": "2026-06-17",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-99e5df844a1bd670"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-99e5df844a1bd670",
+        "dataDate": "2026-06-17",
+        "date": "2026-06-17",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "谷歌推送 Android 17 正式版，深度集成 AI 功能",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          },
+          {
+            "dimensionId": "use_case",
+            "id": "content_creation",
+            "dimensionName": "应用场景",
+            "name": "内容创作"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "multimodal",
+            "name": "多模态"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "speech_audio",
+            "name": "语音与音频"
+          }
+        ],
+        "entityIds": [
+          "EN-bbdefa2950f49882",
+          "EN-3a7bd3e2360a3d29",
+          "EN-e0bab6f6c58bfe4e",
+          "EN-afe83c198e329ef2"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-technology-multimodal",
+      "name": "多模态",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "multimodal",
+      "eventIds": [
+        "EV-a9810b47e0408a05",
+        "EV-f169db2fb75a1371",
+        "EV-fd21441fb6e143c3",
+        "EV-6b51b1b6fe22c540",
+        "EV-70e3f88cb06a856c",
+        "EV-3353bd96728c99e2",
+        "EV-f8ba1728de6a4899",
+        "EV-9496f90f3e808992",
+        "EV-f7b60c0c63403f8c",
+        "EV-e42e55d1e11a2ba2",
+        "EV-53f881da31630a04",
+        "EV-d07906b648eec63f",
+        "EV-5babb43f4b4d302f",
+        "EV-99e5df844a1bd670",
+        "EV-aae8b6aa0da7f103",
+        "EV-20cdbe59ba2a1359",
+        "EV-ae4561a4a9ebe17f",
+        "EV-f68e00bb9fd49fac",
+        "EV-fa1b1efd77f36d56",
+        "EV-74b965de27bc0515",
+        "EV-dd902b603e2e3dbc",
+        "EV-6b7917bd7edd4bde"
+      ],
+      "entityIds": [
+        "EN-193d220b421d776e",
+        "EN-7df09a7717ef2feb",
+        "EN-3a7bd3e2360a3d29",
+        "EN-50537dab76505dfc",
+        "EN-b5251b35f15bedc4",
+        "EN-e3b1bf3dab957ffe",
+        "EN-8d4321d936320802",
+        "EN-0f3360879e746531",
+        "EN-7d3194f79e645c42",
+        "EN-8f71c4871a160172",
+        "EN-78624f0a98e78301",
+        "EN-522d3edeb64a7ca4",
+        "EN-c608c4787821de1b",
+        "EN-101a515191c6be9e",
+        "EN-6f7ac1823da81d2e",
+        "EN-ea3bd73e2b506e00",
+        "EN-e3863f813fe47240",
+        "EN-de6b71bf77ff4299",
+        "EN-c4ef31845ea79710",
+        "EN-96eebba49dbbf422",
+        "EN-9e193e1ec8d75d41",
+        "EN-51fd7dc086fcb858",
+        "EN-2b6e51bec93e86c1",
+        "EN-b0532e1af75cc4ab",
+        "EN-01f1074bb52ff605",
+        "EN-7ed9c9e7c260ed06",
+        "EN-4d09c69c19f5f67b",
+        "EN-bbdefa2950f49882",
+        "EN-e0bab6f6c58bfe4e",
+        "EN-afe83c198e329ef2",
+        "EN-1730144d4e269a62",
+        "EN-e1517be14d06cdb7",
+        "EN-cf81a61e4eaef17c",
+        "EN-4f5d0b82a300f296",
+        "EN-2b96ed840c07482a",
+        "EN-9a6ee79873b1fb7b",
+        "EN-3f726694f178ed7a",
+        "EN-085598c00f2aaccf",
+        "EN-a3c3b987b09fc1bb",
+        "EN-d831f1170590ddb1",
+        "EN-3dd90c2e1bf28b32",
+        "EN-5d7b7e77768bfdfc",
+        "EN-9c8ae69b84f21a2e"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-06-02",
+      "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "TX-use_case-content_creation",
+      "name": "内容创作",
+      "nodeType": "use_case",
+      "typeLabel": "应用场景",
+      "valueId": "content_creation",
+      "eventIds": [
+        "EV-1de38866b4b92754",
+        "EV-99e5df844a1bd670",
+        "EV-631dce4dc135d01b"
+      ],
+      "entityIds": [
+        "EN-e93e29634540a290",
+        "EN-bbdefa2950f49882",
+        "EN-3a7bd3e2360a3d29",
+        "EN-e0bab6f6c58bfe4e",
+        "EN-afe83c198e329ef2",
+        "EN-b2968d9ba72f4818"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-06-04",
+      "lastSeen": "2026-07-16"
+    },
+    {
+      "id": "TX-technology-speech_audio",
+      "name": "语音与音频",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "speech_audio",
+      "eventIds": [
+        "EV-99e5df844a1bd670",
+        "EV-dad8c827d14f2799",
+        "EV-2258329f33d413cf",
+        "EV-f68e00bb9fd49fac",
+        "EV-d99037f2ed8db897",
+        "EV-631dce4dc135d01b"
+      ],
+      "entityIds": [
+        "EN-bbdefa2950f49882",
+        "EN-3a7bd3e2360a3d29",
+        "EN-e0bab6f6c58bfe4e",
+        "EN-afe83c198e329ef2",
+        "EN-0aa590cbbdb3835a",
+        "EN-2b78da3dc866654e",
+        "EN-8d4321d936320802",
+        "EN-12ab68e37d104d27",
+        "EN-2b6e51bec93e86c1",
+        "EN-4d09c69c19f5f67b",
+        "EN-085598c00f2aaccf",
+        "EN-a3c3b987b09fc1bb",
+        "EN-2c348893efb2316e",
+        "EN-f77d48bcb475d189",
+        "EN-ed501d3e2d977553",
+        "EN-b2968d9ba72f4818"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-05-25",
+      "lastSeen": "2026-06-17"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}

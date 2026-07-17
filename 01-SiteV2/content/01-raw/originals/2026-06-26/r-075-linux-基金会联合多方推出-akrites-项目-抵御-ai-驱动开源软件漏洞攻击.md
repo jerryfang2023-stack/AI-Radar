@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Linux 基金会联合亚马逊、Anthro
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "Linux 基金会联合多方推出 Akrites 项目，抵御 AI 驱动开源软件漏洞攻击"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Linux 基金会联合多方推出 Akrites 项目，抵御 AI 驱动开源软件漏洞攻击

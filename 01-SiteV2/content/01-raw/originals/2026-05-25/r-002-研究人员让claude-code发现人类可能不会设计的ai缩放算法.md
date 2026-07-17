@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"马里兰大学、谷歌、Meta等机构
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "研究人员让Claude Code发现人类可能不会设计的AI缩放算法"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 研究人员让Claude Code发现人类可能不会设计的AI缩放算法

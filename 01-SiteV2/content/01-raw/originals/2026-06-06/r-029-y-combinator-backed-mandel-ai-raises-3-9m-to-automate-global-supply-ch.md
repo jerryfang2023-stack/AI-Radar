@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Y Combinator-backed Mandel AI raises $3
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only
+title_zh: "Y Combinator支持的Mandel AI融资390万美元，用于自动化全球供应链 - Tech.eu"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Y Combinator-backed Mandel AI raises $3.9M to automate global supply chains - Tech.eu

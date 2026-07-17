@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-035
 title: "Sovereign AI infrastructure startup Valarian raises $50M to help nations secure their defense systems - SiliconANGLE"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "主权AI基础设施初创公司Valarian融资5000万美元，助力各国保障国防系统安全"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://siliconangle.com/2026/07/14/sovereign-ai-infrastructure-startup-valarian-raises-50m-help-nations-secure-military-defense-systems/"
 canonical_url: "https://siliconangle.com/2026/07/14/sovereign-ai-infrastructure-startup-valarian-raises-50m-help-nations-secure-military-defense-systems"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-15T04:28:37.766Z
 theme: ai-hardware-investment-signal
 keyword_group: ai-hardware-investment-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Sovereign AI infrastructure startup Valarian raises $50M to help nations secure their defense systems - SiliconANGLE

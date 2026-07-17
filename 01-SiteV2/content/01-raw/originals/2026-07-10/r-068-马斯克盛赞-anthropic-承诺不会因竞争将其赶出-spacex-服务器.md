@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-068
 title: "马斯克盛赞 Anthropic，承诺不会因竞争将其赶出 SpaceX 服务器"
 title_zh: "马斯克盛赞 Anthropic，承诺不会因竞争将其赶出 SpaceX 服务器"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/974/813.htm"
 canonical_url: "https://ithome.com/0/974/813.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-10T02:00:00.717Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 马斯克盛赞 Anthropic，承诺不会因竞争将其赶出 SpaceX 服务器

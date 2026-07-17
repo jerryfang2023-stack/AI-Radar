@@ -2,7 +2,7 @@
 id: SIG-20260612-A19
 type: signal_card
 signal_type: funding
-title: "Bajaj 获得$12 b 融资，押注企业 Agent 协作平台"
+title: "Jeff Bezos旗下AI初创公司Prometheus完成120亿美元融资，估值达410亿美元"
 date: 2026-06-12
 status: published
 source_title: "Jeff Bezos旗下AI初创公司Prometheus完成120亿美元融资，估值达410亿美元"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Bajaj"
 
 frontend:
-  displayTitle: "Bajaj 获得$12 b 融资，押注企业 Agent 协作平台"
+  displayTitle: "Jeff Bezos旗下AI初创公司Prometheus完成120亿美元融资，估值达410亿美元"
   sourceLinks:
     - "https://the-decoder.com/jeff-bezos-ai-startup-prometheus-closes-12-billion-round-at-a-41-billion-valuation"
 ---
 
-# Bajaj 获得$12 b 融资，押注企业 Agent 协作平台
+# Jeff Bezos旗下AI初创公司Prometheus完成120亿美元融资，估值达410亿美元
 
 ## 新闻事实
 

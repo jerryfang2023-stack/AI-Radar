@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-028
 title: "Samsung SDS to Launch FuriosaAI-Powered AI Services on July 16 < Semiconductor < 기사본문 - The Elec Inc."
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "三星SDS将于7月16日推出基于FuriosaAI的AI服务"
+title_translation_status: "translated"
+title_translation_method: "deepseek_title_translation"
 original_url: "https://www.thelec.net/news/articleView.html?idxno=12245"
 canonical_url: "https://thelec.net/news/articleView.html?idxno=12245"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-15T04:28:37.714Z
 theme: ai-hardware-scenario-service-signal
 keyword_group: ai-hardware-scenario-service-signal
 copyright_note: local research archive only
+title_translation_model: "deepseek-v4-pro"
 ---
 
 # Samsung SDS to Launch FuriosaAI-Powered AI Services on July 16 < Semiconductor < 기사본문 - The Elec Inc.

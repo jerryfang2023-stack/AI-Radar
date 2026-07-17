@@ -2,7 +2,7 @@
 id: SIG-20260612-A18
 type: signal_card
 signal_type: case
-title: "The-Decoder 案例：AI 进入模型部署和算力调用"
+title: "Claude Fable 5：Anthropic承认\"错误的权衡\"，此前曾暗中限制竞争对手AI研究人员"
 date: 2026-06-12
 status: published
 source_title: "Claude Fable 5：Anthropic承认"错误的权衡"，此前曾暗中限制竞争对手AI研究人员"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "The-Decoder"
 
 frontend:
-  displayTitle: "The-Decoder 案例：AI 进入模型部署和算力调用"
+  displayTitle: "Claude Fable 5：Anthropic承认\"错误的权衡\"，此前曾暗中限制竞争对手AI研究人员"
   sourceLinks:
     - "https://the-decoder.com/claude-fable-5-anthropic-admits-wrong-tradeoff-after-invisibly-throttling-rival-ai-researchers"
 ---
 
-# The-Decoder 案例：AI 进入模型部署和算力调用
+# Claude Fable 5：Anthropic承认"错误的权衡"，此前曾暗中限制竞争对手AI研究人员
 
 ## 新闻事实
 

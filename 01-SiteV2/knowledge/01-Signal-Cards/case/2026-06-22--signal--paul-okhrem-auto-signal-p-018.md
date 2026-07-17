@@ -2,7 +2,7 @@
 id: SIG-20260622-A01
 type: signal_card
 signal_type: case
-title: "Paul-Okhrem 记录企业应用场景：销售和收入团队流程"
+title: "2026年企业AI代理采用统计 - Paul Okhrem"
 date: 2026-06-22
 status: published
 source_title: "Enterprise AI Agents Adoption Statistics 2026 - Paul Okhrem"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Paul-Okhrem"
 
 frontend:
-  displayTitle: "Paul-Okhrem 记录企业应用场景：销售和收入团队流程"
+  displayTitle: "2026年企业AI代理采用统计 - Paul Okhrem"
   sourceLinks:
     - "https://paul-okhrem.com/enterprise-ai-agents-statistics-2026/"
 ---
 
-# Paul-Okhrem 记录企业应用场景：销售和收入团队流程
+# 2026年企业AI代理采用统计 - Paul Okhrem
 
 ## 新闻事实
 

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"If you're building enterprise-grade
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "2025年10月企业动态汇总 - GitHub"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # October '25 enterprise roundup - GitHub

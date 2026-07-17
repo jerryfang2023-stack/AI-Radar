@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"SAN FRANCISCO, July 28, 2025 /PRNewswir
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "E2B获2100万美元A轮融资，为财富100强企业提供AI代理云服务"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # E2B Raises a $21M Series A to Offer Cloud for AI Agents to Fortune 100

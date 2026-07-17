@@ -2,7 +2,7 @@
 id: SIG-20260704-A11
 type: signal_card
 signal_type: product_service
-title: "Ep 59 的 AI 商业观察"
+title: "第59集：OpenAI产品与工程负责人Nikunj Handa和Steve Coffey谈OpenAI新智能体开发工具"
 date: 2026-07-04
 status: published
 source_title: "Ep 59: OpenAI Product & Eng Leads Nikunj Handa and Steve Coffey on OpenAI’s New Agent Development Tools"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "Ep 59"
 
 frontend:
-  displayTitle: "Ep 59 的 AI 商业观察"
+  displayTitle: "第59集：OpenAI产品与工程负责人Nikunj Handa和Steve Coffey谈OpenAI新智能体开发工具"
   sourceLinks:
     - "https://unsupervised-learning.simplecast.com/episodes/ep-59-openai-product-eng-leads-nikunj-handa-and-steven-heidel-on-openais-new-agent-development-tools-x9_i37Gl"
 ---
 
-# Ep 59 的 AI 商业观察
+# 第59集：OpenAI产品与工程负责人Nikunj Handa和Steve Coffey谈OpenAI新智能体开发工具
 
 ## 新闻事实
 

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"- Engram has emerged from stealth with 
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_zh: "Engram 获 9800 万美元启动资金，打造真正了解你组织的 AI"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Engram Launches with $98M to Build AI That Actually Knows Your Organization

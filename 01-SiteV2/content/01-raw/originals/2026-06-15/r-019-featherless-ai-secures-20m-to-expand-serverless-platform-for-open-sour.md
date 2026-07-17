@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"The serverless inference platform provi
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Featherless.ai获2000万美元融资，用于扩展开源AI的无服务器平台 - Tech.eu"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Featherless.ai secures $20M to expand serverless platform for open-source AI - Tech.eu

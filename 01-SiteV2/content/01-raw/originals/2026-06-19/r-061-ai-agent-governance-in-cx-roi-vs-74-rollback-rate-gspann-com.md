@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"AI agent governance separates CX deploym
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "客户体验中的AI智能体治理：ROI与74%回滚率之对比"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # AI Agent Governance in CX: ROI vs. 74% Rollback Rate - Gspann.com

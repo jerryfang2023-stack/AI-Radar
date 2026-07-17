@@ -4,6 +4,12 @@ import path from "node:path";
 import { buildTagIndex, readTagTaxonomy } from "./tag-taxonomy-utils.mjs";
 import { completeOpinionTranslation } from "./opinion-translation-utils.mjs";
 
+const approvedTranslationMethods = new Set([
+  "deepseek_translation",
+  "manual_reviewed_translation",
+  "source_chinese",
+]);
+
 const root = process.cwd();
 const args = new Map(
   process.argv.slice(2).map((arg) => {
@@ -118,6 +124,15 @@ if (payload) {
     if (!podcast?.url) warnings.push(`podcast[${index}] missing original url`);
     else if (podcastUrls.has(podcast.url)) problems.push(`podcast[${index}] duplicate url`);
     else podcastUrls.add(podcast.url);
+    if (!completeOpinionTranslation(podcast?.originalTitle || "", podcast?.title || "")) {
+      problems.push(`podcast[${index}] missing complete Chinese title translation`);
+    }
+    if (podcast?.originalExcerpt && !completeOpinionTranslation(podcast.originalExcerpt, podcast?.excerpt || "", { preferFullTranslation: true })) {
+      problems.push(`podcast[${index}] missing complete Chinese excerpt translation`);
+    }
+    for (const method of [podcast?.titleTranslationMethod, podcast?.excerptTranslationMethod].filter(Boolean)) {
+      if (!approvedTranslationMethods.has(method)) problems.push(`podcast[${index}] unapproved translation method ${method}`);
+    }
   }
 
   const ids = new Set();
@@ -142,6 +157,18 @@ if (payload) {
     }
     if (remark?.translationStatus !== "translated") {
       problems.push(`${prefix} translationStatus must be translated`);
+    }
+    if (!approvedTranslationMethods.has(remark?.translationMethod)) {
+      problems.push(`${prefix} unapproved translation method ${remark?.translationMethod || "missing"}`);
+    }
+    if (remark?.translationMethod === "deepseek_translation" && !remark?.translationModel) {
+      problems.push(`${prefix} DeepSeek translation is missing model provenance`);
+    }
+    if (remark?.sourceType === "blog" && remark?.content) {
+      if (remark?.contentTranslationStatus !== "translated") problems.push(`${prefix} blog contentTranslationStatus must be translated`);
+      if (!completeOpinionTranslation(remark.content, remark?.contentTranslation || "", { preferFullTranslation: true })) {
+        problems.push(`${prefix} missing complete Chinese blog content translation`);
+      }
     }
     if (!remark?.observation) problems.push(`${prefix} missing observation`);
 

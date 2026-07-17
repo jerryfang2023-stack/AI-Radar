@@ -2,7 +2,7 @@
 id: SIG-20260708-A14
 type: signal_card
 signal_type: case
-title: "YC 发布 SigmanticAI：面向硬件设计的 Cursor"
+title: "Launch YC: SigmanticAI - 硬件设计的Cursor工具 | Y Combinator"
 date: 2026-07-08
 status: published
 source_title: "Launch YC: SigmanticAI - The Cursor for Hardware Design | Y Combinator"
@@ -55,12 +55,12 @@ opportunity_signals:
 signal_owner: "SigmanticAI"
 
 frontend:
-  displayTitle: "YC 发布 SigmanticAI：面向硬件设计的 Cursor"
+  displayTitle: "Launch YC: SigmanticAI - 硬件设计的Cursor工具 | Y Combinator"
   sourceLinks:
     - "https://www.ycombinator.com/launches/NzI-sigmanticai-the-cursor-for-hardware-design"
 ---
 
-# YC 发布 SigmanticAI：面向硬件设计的 Cursor
+# Launch YC: SigmanticAI - 硬件设计的Cursor工具 | Y Combinator
 
 ## 新闻事实
 

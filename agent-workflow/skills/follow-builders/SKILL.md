@@ -405,6 +405,12 @@ Read the prompts from the `prompts` field in the JSON:
 
 Assemble the digest following `prompts.digest_intro`.
 
+**Production translation contract:**
+- Preserve the original text and URL. Translation is an additional representation, not a replacement for the source.
+- Use DeepSeek Flash for titles and text up to 600 characters / two paragraphs. Use DeepSeek Pro for longer text or a failed Flash fidelity check.
+- Record the translation method, selected model, and source hash. Preserve URLs, handles, hashtags, dates, amounts, percentages, and product names.
+- Never use MyMemory or another generic public machine-translation fallback. Missing credentials or incomplete translation blocks publication.
+
 **ABSOLUTE RULES:**
 - NEVER invent or fabricate content. Only use what's in the JSON.
 - Every piece of content MUST have its URL. No URL = do not include.

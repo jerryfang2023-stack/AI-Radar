@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-005
 title: "Meta 发布多模态推理模型 Muse Spark 1.1，强化 AI 智能体任务能力"
 title_zh: "Meta 发布多模态推理模型 Muse Spark 1.1，强化 AI 智能体任务能力"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://ithome.com/0/975/832.htm"
 canonical_url: "https://ithome.com/0/975/832.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-13T10:23:56.696Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Meta 发布多模态推理模型 Muse Spark 1.1，强化 AI 智能体任务能力

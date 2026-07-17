@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-073
 title: "Roblox 移动版将推出 AI 游戏创作工具\"Build\"，7 月 28 日开启 Alpha 测试"
 title_zh: "Roblox 移动版将推出 AI 游戏创作工具\"Build\"，7 月 28 日开启 Alpha 测试"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/977/876.htm"
 canonical_url: "https://ithome.com/0/977/876.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-17T04:40:17.238Z
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Roblox 移动版将推出 AI 游戏创作工具"Build"，7 月 28 日开启 Alpha 测试

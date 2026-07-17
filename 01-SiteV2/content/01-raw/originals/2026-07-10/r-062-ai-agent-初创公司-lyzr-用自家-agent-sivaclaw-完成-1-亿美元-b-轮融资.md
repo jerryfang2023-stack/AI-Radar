@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-062
 title: "AI Agent 初创公司 Lyzr 用自家 Agent SivaClaw 完成 1 亿美元 B 轮融资"
 title_zh: "AI Agent 初创公司 Lyzr 用自家 Agent SivaClaw 完成 1 亿美元 B 轮融资"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://techcrunch.com/2026/07/09/an-ai-agent-startup-just-let-its-agent-run-its-100-million-fundraise"
 canonical_url: "https://techcrunch.com/2026/07/09/an-ai-agent-startup-just-let-its-agent-run-its-100-million-fundraise"
 source_name: "TechCrunch：AI（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-10T02:00:00.705Z
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # AI Agent 初创公司 Lyzr 用自家 Agent SivaClaw 完成 1 亿美元 B 轮融资

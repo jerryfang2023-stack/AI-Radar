@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"Ecolab uses Anthropic's Claude Sonn
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Ecolab如何在Databricks和Anthropic Claude上重建零售智能 | Databricks博客"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # How Ecolab rebuilt retail intelligence on Databricks and Anthropic Claude | Databricks Blog

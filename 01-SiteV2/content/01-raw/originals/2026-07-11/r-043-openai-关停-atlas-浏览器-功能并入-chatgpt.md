@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-043
 title: "OpenAI 关停 Atlas 浏览器，功能并入 ChatGPT"
 title_zh: "OpenAI 关停 Atlas 浏览器，功能并入 ChatGPT"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://the-decoder.com/openai-kills-its-atlas-browser-after-just-eight-months-and-folds-everything-into-chatgpt"
 canonical_url: "https://the-decoder.com/openai-kills-its-atlas-browser-after-just-eight-months-and-folds-everything-into-chatgpt"
 source_name: "The Decoder：AI News（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-11T04:06:39.256Z
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # OpenAI 关停 Atlas 浏览器，功能并入 ChatGPT

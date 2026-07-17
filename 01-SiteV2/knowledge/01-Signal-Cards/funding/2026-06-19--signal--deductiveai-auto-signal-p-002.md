@@ -2,7 +2,7 @@
 id: SIG-20260619-A01
 type: signal_card
 signal_type: funding
-title: "DeductiveAI 获得$85M 融资，押注销售线索和收入团队协作"
+title: "Elastic 同意以最高8500万美元收购 AI 初创公司 DeductiveAI"
 date: 2026-06-19
 status: published
 source_title: "Elastic 同意以最高8500万美元收购 AI 初创公司 DeductiveAI"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "DeductiveAI"
 
 frontend:
-  displayTitle: "DeductiveAI 获得$85M 融资，押注销售线索和收入团队协作"
+  displayTitle: "Elastic 同意以最高8500万美元收购 AI 初创公司 DeductiveAI"
   sourceLinks:
     - "https://techcrunch.com/2026/06/18/source-elastic-agrees-to-buy-crv-backed-deductiveai-for-up-to-85m"
 ---
 
-# DeductiveAI 获得$85M 融资，押注销售线索和收入团队协作
+# Elastic 同意以最高8500万美元收购 AI 初创公司 DeductiveAI
 
 ## 新闻事实
 

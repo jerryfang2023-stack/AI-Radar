@@ -2,7 +2,7 @@
 id: SIG-20260606-A03
 type: signal_card
 signal_type: case
-title: "AI for procurement decision-making at a Pharma company"
+title: "制药公司AI采购决策支持"
 date: 2026-06-06
 status: published
 source_title: "AI for procurement decision-making at a Pharma company"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "AI for procurement decision"
 
 frontend:
-  displayTitle: "AI for procurement decision-making at a Pharma company"
+  displayTitle: "制药公司AI采购决策支持"
   sourceLinks:
     - "https://saxon.ai/case-study/pharmaceuticals-procurement-ai-agent-pr-po-automation/"
 ---
 
-# AI for procurement decision-making at a Pharma company
+# 制药公司AI采购决策支持
 
 ## 新闻事实
 

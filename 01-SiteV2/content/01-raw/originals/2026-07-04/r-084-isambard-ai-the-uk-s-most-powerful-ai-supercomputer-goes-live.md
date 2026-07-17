@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-084
 title: "Isambard-AI, the UK’s Most Powerful AI Supercomputer, Goes Live"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "英国最强AI超级计算机Isambard-AI正式上线"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://blogs.nvidia.com/blog/isambard-ai/"
 canonical_url: "https://blogs.nvidia.com/blog/isambard-ai"
 source_name: "NVIDIA AI Blog"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-04T04:50:50.762Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Isambard-AI, the UK’s Most Powerful AI Supercomputer, Goes Live

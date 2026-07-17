@@ -72,6 +72,10 @@ key_excerpts: [{"type":"workflow_change","text":"DRW 的 Don Wilson 去年提出
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Carmen Li 的计划：为计算资源构建期货市场 | Odd Lots"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Carmen Li 的计划：为计算资源构建期货市场 | Odd Lots

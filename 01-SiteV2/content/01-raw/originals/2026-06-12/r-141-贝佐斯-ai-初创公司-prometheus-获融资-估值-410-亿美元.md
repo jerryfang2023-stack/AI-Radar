@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Jeff Bezos 领导的 AI 初创公司 Pr
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "贝佐斯 AI 初创公司 Prometheus 获融资，估值 410 亿美元"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 贝佐斯 AI 初创公司 Prometheus 获融资，估值 410 亿美元

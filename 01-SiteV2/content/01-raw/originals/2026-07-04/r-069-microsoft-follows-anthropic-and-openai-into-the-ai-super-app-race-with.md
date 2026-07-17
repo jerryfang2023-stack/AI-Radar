@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-069
 title: "Microsoft follows Anthropic and OpenAI into the AI super app race with overhauled Copilot and AutoPilot agents"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "微软紧随Anthropic和OpenAI，以改版Copilot和AutoPilot智能体加入AI超级应用竞赛。"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://the-decoder.com/microsoft-follows-anthropic-and-openai-into-the-ai-super-app-race-with-overhauled-copilot-and-autopilot-agents/"
 canonical_url: "https://the-decoder.com/microsoft-follows-anthropic-and-openai-into-the-ai-super-app-race-with-overhauled-copilot-and-autopilot-agents"
 source_name: "The Decoder AI News"
@@ -78,6 +78,7 @@ fact_extraction_completed_at: 2026-07-04T04:35:48.193Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Microsoft follows Anthropic and OpenAI into the AI super app race with overhauled Copilot and AutoPilot agents

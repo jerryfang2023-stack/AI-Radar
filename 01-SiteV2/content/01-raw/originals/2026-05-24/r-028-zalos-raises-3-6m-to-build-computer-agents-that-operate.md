@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Zalos raises $3.6M to build Computer Ag
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Zalos筹集360万美元，用于构建可自主操作的计算机代理"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Zalos raises $3.6M to build Computer Agents that operate

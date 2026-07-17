@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Former US Commerce Secretary Gina Raimo
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_zh: "最可能自动化你工作的公司正资助10亿美元计划重新培训你"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # The companies most likely to automate your job are now funding a $1 billion program to retrain you

@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-071
 title: "OpenAI 首度回应苹果诉讼：相信公平竞争，未发现任何证据"
 title_zh: "OpenAI 首度回应苹果诉讼：相信公平竞争，未发现任何证据"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/976/767.htm"
 canonical_url: "https://ithome.com/0/976/767.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-15T04:28:38.036Z
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # OpenAI 首度回应苹果诉讼：相信公平竞争，未发现任何证据

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"The Home Depot is launching a new custo
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "家得宝借助谷歌云Gemini企业版实现客户支持速度提升四倍 - 2026年4月22日"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # The Home Depot Delivers Customer Support Four Times Faster Using Google Cloud's Gemini Enterprise for Customer Experience - Apr 22, 2026

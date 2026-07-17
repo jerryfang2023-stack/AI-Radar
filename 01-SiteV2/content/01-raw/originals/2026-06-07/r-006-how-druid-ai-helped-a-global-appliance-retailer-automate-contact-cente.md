@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"How Druid AI helped a global appliance 
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Druid AI助力全球家电零售商自动化客服中心支持，释放增长潜力"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # How Druid AI helped a global appliance retailer automate contact center support and unlock growth

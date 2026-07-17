@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-060
 title: "面壁智能 MiniCPM 系列端侧模型将搭载于三星手机上市，覆盖数款旗舰机型"
 title_zh: "面壁智能 MiniCPM 系列端侧模型将搭载于三星手机上市，覆盖数款旗舰机型"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/977/217.htm"
 canonical_url: "https://ithome.com/0/977/217.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-16T02:39:33.786Z
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 面壁智能 MiniCPM 系列端侧模型将搭载于三星手机上市，覆盖数款旗舰机型

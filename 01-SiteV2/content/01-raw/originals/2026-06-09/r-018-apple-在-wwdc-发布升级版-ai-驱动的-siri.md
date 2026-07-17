@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"Apple 在 WWDC 主题演讲中�
 theme: outside-core-exploration
 keyword_group: outside-core-exploration
 copyright_note: local research archive only
+title_zh: "Apple 在 WWDC 发布升级版 AI 驱动的 Siri"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Apple 在 WWDC 发布升级版 AI 驱动的 Siri

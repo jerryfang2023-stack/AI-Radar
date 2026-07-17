@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"The study ranked S&P 500 compani
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_zh: "基于AI驱动企业新发布的开源指数..."
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Based on a new open-source index from the AI-Driven Enterprise ...

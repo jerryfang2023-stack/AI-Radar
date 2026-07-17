@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"We were building a specialty insurance 
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Notch 获 3000 万美元融资，打造受监管行业的人工智能操作系统"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Notch Raises $30 Million to Build the AI Operating System for Regulated Industries

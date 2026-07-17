@@ -2,7 +2,7 @@
 id: SIG-20260618-A22
 type: signal_card
 signal_type: case
-title: "A Framework for Finding A Design Partner"
+title: "寻找设计合作伙伴的框架 | Andreessen Horowitz"
 date: 2026-06-18
 status: published
 source_title: "A Framework for Finding A Design Partner | Andreessen Horowitz"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "A Framework for Finding A Design Partner"
 
 frontend:
-  displayTitle: "A Framework for Finding A Design Partner"
+  displayTitle: "寻找设计合作伙伴的框架 | Andreessen Horowitz"
   sourceLinks:
     - "https://a16z.com/a-framework-for-finding-a-design-partner/"
 ---
 
-# A Framework for Finding A Design Partner
+# 寻找设计合作伙伴的框架 | Andreessen Horowitz
 
 ## 新闻事实
 

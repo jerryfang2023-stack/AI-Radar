@@ -2,7 +2,7 @@
 id: SIG-20260522-07
 type: signal_card
 signal_type: case
-title: "AdventHealth 部署 ChatGPT for Healthcare，推进医疗服务工作流"
+title: "AdventHealth借助OpenAI推进全人护理"
 date: 2026-05-22
 status: draft
 asset_level: candidate
@@ -37,7 +37,7 @@ signal_owner: "AdventHealth / OpenAI"
 watch_reason: "继续看 AdventHealth 是否披露更具体的科室、流程、使用规模和效果指标。"
 
 frontend:
-  displayTitle: "AdventHealth 部署 ChatGPT for Healthcare，推进医疗服务工作流"
+  displayTitle: "AdventHealth借助OpenAI推进全人护理"
   eventLine: "OpenAI 发布 AdventHealth 案例，说明 ChatGPT for Healthcare 正进入具名医疗机构的服务和照护工作流。"
   whyWatch: "医疗案例比通用办公更能暴露 AI 落地边界：使用者、责任、流程范围和临床措辞都需要被管住。"
   businessMeaning: "影响的是医疗机构的服务流程、员工支持、患者体验和合规复核责任。"
@@ -71,7 +71,7 @@ opportunity_signals:
   missing_fields: ["delivery_model"]
 ---
 
-# AdventHealth 部署 ChatGPT for Healthcare，推进医疗服务工作流
+# AdventHealth借助OpenAI推进全人护理
 
 ## 信号底稿
 

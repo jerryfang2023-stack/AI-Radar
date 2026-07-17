@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"微软正考虑采用自托管微�
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "微软 Copilot Cowork 转向按用量计费，考虑采用 DeepSeek V4"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 微软 Copilot Cowork 转向按用量计费，考虑采用 DeepSeek V4

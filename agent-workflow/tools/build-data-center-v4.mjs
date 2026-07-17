@@ -38,7 +38,7 @@ const EVENT_RULES = [
   ["research_result", /\b(?:study|research|benchmark|paper|report)\b.{0,70}\b(?:finds?|shows?|reports?|achieves?|usage|gap)\b|(?:研究(?!员)|论文|基准|报告).{0,50}(?:显示|表明|达到|结果|差距|用量|增长|下降|登顶|占比)/iu],
   ["organization_people", /\b(?:appoints?|appointed|hires?|hired|joins?|joined|resigns?|leaves?|depart(?:s|ed)?)\b|任命|加入|离职|辞任|聘任/iu],
   ["model_release", /\b(?:releases?|released|launch(?:es|ed)?|introduces?|introduced|unveils?|unveiled|open[- ]sources?)\b.{0,90}\b(?:model|llm|foundation model)\b|发布.{0,40}(?:模型|大模型)|推出.{0,40}(?:模型|大模型)|开源.{0,50}(?:模型|大模型)|(?:模型|大模型).{0,30}开源/iu],
-  ["hardware_product", /\b(?:releases?|released|launch(?:es|ed)?|introduces?|introduced|unveils?|unveiled|ships?|shipped|debuts?|expands?|adds?)\b.{0,90}\b(?:gpus?|chips?|processors?|accelerators?|servers?|computers?|devices?|robots?|glasses|keyboards?|npus?|chiplets?|modules?)\b|(?:发布|推出|扩展|新增).{0,40}(?:芯片|GPU|服务器|计算机|设备|机器人|眼镜|键盘|NPU|芯粒|工作站|模组)|(?:硬件|键盘|设备|计算机|工作站|模组).{0,40}(?:登场|亮相|新增|扩展)/iu],
+  ["hardware_product", /\b(?:releases?|released|launch(?:es|ed)?|introduces?|introduced|unveils?|unveiled|ships?|shipped|debuts?|expands?|adds?)\b.{0,90}\b(?:gpus?|chips?|processors?|accelerators?|servers?|computers?|devices?|robots?|glasses|keyboards?|npus?|chiplets?|modules?)\b|(?:发布|推出|扩展|新增).{0,80}(?:芯片|GPU|服务器|计算机|设备|机器人|眼镜|键盘|NPU|芯粒|工作站|模组)|(?:硬件|键盘|设备|计算机|工作站|模组).{0,40}(?:登场|亮相|新增|扩展)/iu],
   ["service_change", /\b(?:discontinues?|discontinued|shuts? down|sunsets?|removes?|removed)\b|停止服务|关闭服务|下线|移除功能/iu],
   ["product_release", /\b(?:releases?|released|launch(?:es|ed)?|introduces?|introduced|unveils?|unveiled|adds?|added|open[- ]sources?)\b|发布|推出|上线新|新增|宣布开源|开源.{0,50}(?:工具|框架|软件)/iu]
 ];

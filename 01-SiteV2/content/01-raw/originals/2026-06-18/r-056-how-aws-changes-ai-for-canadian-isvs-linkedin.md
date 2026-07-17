@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"Now, ISVs can build AI solutions wi
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "AWS如何改变加拿大独立软件供应商的人工智能格局 - LinkedIn"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # How AWS changes AI for Canadian ISVs - LinkedIn

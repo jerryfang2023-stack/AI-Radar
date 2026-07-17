@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"OpenAI govt stake 🇺🇸, Google 
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_zh: "OpenAI政府持股🇺🇸，谷歌计算交易🚀，微软Scout发布🤖"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # OpenAI govt stake 🇺🇸, Google compute deal 🚀, Microsoft Scout launch 🤖

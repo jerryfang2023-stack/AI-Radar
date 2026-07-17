@@ -2,7 +2,7 @@
 id: SIG-20260617-A07
 type: signal_card
 signal_type: product_service
-title: "Plaud：AI记事本销量超200万台，订阅业务ARR突破1亿美元 推出 Agent 工作流能力，切入销售线索和收入团队协作"
+title: "Plaud：AI记事本销量超200万台，订阅业务ARR突破1亿美元"
 date: 2026-06-17
 status: published
 source_title: "Plaud：AI记事本销量超200万台，订阅业务ARR突破1亿美元"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Plaud：AI记事本销量超200万台，订阅业务ARR突破1亿美元"
 
 frontend:
-  displayTitle: "Plaud：AI记事本销量超200万台，订阅业务ARR突破1亿美元 推出 Agent 工作流能力，切入销售线索和收入团队协作"
+  displayTitle: "Plaud：AI记事本销量超200万台，订阅业务ARR突破1亿美元"
   sourceLinks:
     - "https://techcrunch.com/2026/06/16/plaud-says-its-software-business-topped-100m-in-arr-after-shipping-over-2m-ai-notetakers"
 ---
 
-# Plaud：AI记事本销量超200万台，订阅业务ARR突破1亿美元 推出 Agent 工作流能力，切入销售线索和收入团队协作
+# Plaud：AI记事本销量超200万台，订阅业务ARR突破1亿美元
 
 ## 新闻事实
 

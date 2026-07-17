@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-007
 title: "Thinking Machines Lab 发布 Inkling：975B 参数开源多模态 MoE 模型"
 title_zh: "Thinking Machines Lab 发布 Inkling：975B 参数开源多模态 MoE 模型"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.marktechpost.com/2026/07/15/thinking-machines-lab-releases-inkling-a-975b-parameter-open-weights-multimodal-moe-with-41b-active-parameters-and-controllable-thinking-effort"
 canonical_url: "https://marktechpost.com/2026/07/15/thinking-machines-lab-releases-inkling-a-975b-parameter-open-weights-multimodal-moe-with-41b-active-parameters-and-controllable-thinking-effort"
 source_name: "MarkTechPost（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-16T02:39:33.406Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Thinking Machines Lab 发布 Inkling：975B 参数开源多模态 MoE 模型

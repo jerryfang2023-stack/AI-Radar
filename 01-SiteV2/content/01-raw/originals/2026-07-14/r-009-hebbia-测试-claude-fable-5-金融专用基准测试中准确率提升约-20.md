@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-009
 title: "Hebbia 测试 Claude Fable 5：金融专用基准测试中准确率提升约 20%"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "Hebbia 测试 Claude Fable 5：金融专用基准测试中准确率提升约 20%"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://claude.com/blog/working-at-the-frontier-how-hebbia-builds-ai-for-financial-diligence-that-cant-miss-a-detail"
 canonical_url: "https://claude.com/blog/working-at-the-frontier-how-hebbia-builds-ai-for-financial-diligence-that-cant-miss-a-detail"
 source_name: "Claude：Blog（网页）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-14T01:56:51.283Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Hebbia 测试 Claude Fable 5：金融专用基准测试中准确率提升约 20%

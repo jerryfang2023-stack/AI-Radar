@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Google Finance 推出首款独立移动
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "Google Finance 推出首款独立 Android 应用，iOS 版计划今年晚些时候上线"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Google Finance 推出首款独立 Android 应用，iOS 版计划今年晚些时候上线

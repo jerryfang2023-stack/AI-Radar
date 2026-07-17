@@ -2,7 +2,7 @@
 id: SIG-20260613-A06
 type: signal_card
 signal_type: case
-title: "Anthropic 案例：AI 进入销售和收入团队流程"
+title: "TCS与Anthropic合作，将Claude引入受监管行业"
 date: 2026-06-13
 status: published
 source_title: "TCS与Anthropic合作，将Claude引入受监管行业"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Anthropic"
 
 frontend:
-  displayTitle: "Anthropic 案例：AI 进入销售和收入团队流程"
+  displayTitle: "TCS与Anthropic合作，将Claude引入受监管行业"
   sourceLinks:
     - "https://www.anthropic.com/news/tcs-anthropic-partnership"
 ---
 
-# Anthropic 案例：AI 进入销售和收入团队流程
+# TCS与Anthropic合作，将Claude引入受监管行业
 
 ## 新闻事实
 

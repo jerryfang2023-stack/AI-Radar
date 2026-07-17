@@ -2,7 +2,7 @@
 id: SIG-20260620-A01
 type: signal_card
 signal_type: case
-title: "Enterprise AI adoption shifts from pilot projects to core business ..."
+title: "企业AI应用从试点项目转向核心业务"
 date: 2026-06-20
 status: published
 source_title: "Enterprise AI adoption shifts from pilot projects to core business ..."
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Marketscale"
 
 frontend:
-  displayTitle: "Enterprise AI adoption shifts from pilot projects to core business ..."
+  displayTitle: "企业AI应用从试点项目转向核心业务"
   sourceLinks:
     - "https://marketscale.com/industries/software-and-technology/enterprise-ai-adoption-shifts-from-pilot-projects-to-core-business-strategy"
 ---
 
-# Enterprise AI adoption shifts from pilot projects to core business ...
+# 企业AI应用从试点项目转向核心业务
 
 ## 新闻事实
 

@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { deepSeekChatCompletion, deepSeekModels } from "./deepseek-translation-client.mjs";
 
 export function hasCjk(value = "") {
   return /[\u3400-\u9fff]/u.test(String(value || ""));
@@ -22,8 +23,8 @@ export function sourceTitleNeedsChineseTranslation(value = "") {
   if (!text) return false;
   const hanCount = (text.match(/[\u4e00-\u9fff]/gu) || []).length;
   const latinWords = text.match(/\b[A-Za-z][A-Za-z0-9&.'-]*\b/gu) || [];
-  const hasChineseEventAction = /(?:发布|上线|推出|更新|完成|获得|宣布|融资|合作|部署|采购|采用|收购|获批)/u.test(text);
-  if (hanCount >= 6 && hasChineseEventAction) return false;
+  const hasChineseEventAction = /(?:发布|上线|推出|更新|完成|获得|宣布|融资|合作|部署|采购|采用|收购|获批|关停|开放|扩展|发布会)/u.test(text);
+  if (hanCount >= 4 || (hanCount >= 2 && hasChineseEventAction)) return false;
   return text.length > 12 && latinWords.length >= 2;
 }
 
@@ -48,6 +49,7 @@ function stripGeneratorNoise(value = "") {
   return decodeHtmlEntities(value)
     .replace(/^["'`]+|["'`]+$/gu, "")
     .replace(/^(?:\u4e2d\u6587\u6807\u9898|\u8bd1\u6587|\u7ffb\u8bd1)[:\uff1a]\s*/u, "")
+    .replace(/^SOURCE TITLE:\s*/iu, "")
     .replace(/\s+/gu, " ")
     .trim();
 }
@@ -73,20 +75,21 @@ function moneyCurrency(value = "") {
   if (/€|eur|euros?|欧元/u.test(text)) return "EUR";
   if (/£|gbp|pounds?|英镑/u.test(text)) return "GBP";
   if (/₹|inr|rupees?|卢比/u.test(text)) return "INR";
-  if (/rmb|cny|yuan|人民币|元/u.test(text)) return "CNY";
   if (/¥|jpy|yen|日元/u.test(text)) return "JPY";
+  if (/rmb|cny|yuan|人民币|元/u.test(text)) return "CNY";
   return "";
 }
 
-function extractMoneyAmounts(value = "") {
+export function extractMoneyAmounts(value = "") {
   const text = String(value || "");
-  const pattern = /(?:(?:US\$|\$|€|£|¥|₹|USD|EUR|GBP|RMB|CNY|JPY|INR)\s*)?(\d[\d,]*(?:\.\d+)?)\s*(trillion|billion|million|bn|mn|m|b|k|万亿|亿|万|千)?\s*(?:US\s*)?(?:dollars?|euros?|pounds?|rupees?|yuan|yen|美元|美金|欧元|英镑|卢比|人民币|日元|元)?/giu;
+  const pattern = /(?:(?:US\$|\$|€|£|¥|₹|USD|EUR|GBP|RMB|CNY|JPY|INR)\s*)?(\d[\d,]*(?:\.\d+)?)\s*(trillion|billion|million|bn|mn|m|b|k|万亿|亿|万|千)?(?![A-Za-z])\s*(?:US\s*)?(?:dollars?|euros?|pounds?|rupees?|yuan|yen|美元|美金|欧元|英镑|卢比|人民币|日元|元)?/giu;
   const results = [];
   for (const match of text.matchAll(pattern)) {
     const raw = match[0];
     const unit = String(match[2] || "").toLowerCase();
     const currency = moneyCurrency(raw);
-    if (!unit && !currency) continue;
+    const context = text.slice(Math.max(0, (match.index || 0) - 40), (match.index || 0) + raw.length + 40);
+    if (!currency && (!unit || !/(?:rais|fund|financ|valuation|revenue|round|融资|估值|募资|营收)/iu.test(context))) continue;
     const number = Number(String(match[1] || "").replace(/,/gu, ""));
     if (!Number.isFinite(number)) continue;
     results.push({
@@ -97,10 +100,20 @@ function extractMoneyAmounts(value = "") {
       end: match.index + raw.length,
     });
   }
+  for (const match of text.matchAll(/\bhalf[- ](?:a[- ]?)?(billion|million)\s+dollars?\b/giu)) {
+    results.push({
+      raw: match[0],
+      currency: "USD",
+      value: match[1].toLowerCase() === "billion" ? 5e8 : 5e5,
+      start: match.index,
+      end: match.index + match[0].length,
+    });
+  }
+  results.sort((a, b) => a.start - b.start);
   return results;
 }
 
-function sourceTitleNumericFacts(value = "") {
+export function sourceTitleNumericFacts(value = "") {
   const text = String(value || "");
   const amounts = extractMoneyAmounts(text);
   const otherNumbers = withoutSpans(text, amounts).match(/\d[\d,]*(?:\.\d+)?/gu) || [];
@@ -108,7 +121,7 @@ function sourceTitleNumericFacts(value = "") {
 }
 
 function withoutSpans(value = "", spans = []) {
-  const characters = [...String(value || "")];
+  const characters = String(value || "").split("");
   for (const span of spans) {
     for (let index = span.start; index < span.end; index += 1) characters[index] = " ";
   }
@@ -118,6 +131,50 @@ function withoutSpans(value = "", spans = []) {
 function sameNumericValue(first, second) {
   const scale = Math.max(1, Math.abs(first), Math.abs(second));
   return Math.abs(first - second) / scale < 1e-9;
+}
+
+function normalizeDateTokens(value) {
+  return String(value || "")
+    .replace(/'([0-9]{2})\b/gu, (_, year) => ` 20${year} `)
+    .replace(/\bQ([1-4])\b/giu, (_, quarter) => ` QUARTER_${["ONE", "TWO", "THREE", "FOUR"][Number(quarter) - 1]} `)
+    .replace(/第?([一二三四1-4])季度/gu, (_, quarter) => {
+      const index = { 一: 0, 二: 1, 三: 2, 四: 3, 1: 0, 2: 1, 3: 2, 4: 3 }[quarter];
+      return ` QUARTER_${["ONE", "TWO", "THREE", "FOUR"][index]} `;
+    })
+    .replace(/\b(January|February|March|April|May|June|July|August|September|October|November|December)\b/giu, (_, month) => ` MONTH_${month.slice(0, 3).toUpperCase()} `)
+    .replace(/(?:^|\D)(1[0-2]|[1-9])月/gu, (match, month) => `${match.startsWith(month) ? "" : match[0]} MONTH_${["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"][Number(month) - 1]} `);
+}
+
+function normalizeChineseQuantifiers(value) {
+  return String(value || "")
+    .replace(/([一二三四五六七八九十])(?=(?:年|个月|月|周|天|小时|分钟|倍|大))/gu, (match) => ({ 一: "1", 二: "2", 三: "3", 四: "4", 五: "5", 六: "6", 七: "7", 八: "8", 九: "9", 十: "10" }[match]));
+}
+
+function normalizeComparableScales(value) {
+  const englishNumbers = { one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7, eight: 8, nine: 9, ten: 10 };
+  const chineseNumbers = { 一: 1, 二: 2, 两: 2, 三: 3, 四: 4, 五: 5, 六: 6, 七: 7, 八: 8, 九: 9, 十: 10 };
+  return String(value || "")
+    .replace(/\b(one|two|three|four|five|six|seven|eight|nine|ten)\s+times?\b/giu, (_, number) => ` ${englishNumbers[number.toLowerCase()]} `)
+    .replace(/([一二两三四五六七八九十])\s*倍/gu, (_, number) => ` ${chineseNumbers[number]} `)
+    .replace(/(\d[\d,]*(?:\.\d+)?)\s*(trillion|billion|million)\b/giu, (_, number, unit) => {
+      const factor = { trillion: 1e12, billion: 1e9, million: 1e6 }[unit.toLowerCase()];
+      return ` ${Number(number.replace(/,/gu, "")) * factor} `;
+    })
+    .replace(/(\d[\d,]*(?:\.\d+)?)\s*万亿/gu, (_, number) => ` ${Number(number.replace(/,/gu, "")) * 1e12} `)
+    .replace(/(\d[\d,]*(?:\.\d+)?)\s*亿/gu, (_, number) => ` ${Number(number.replace(/,/gu, "")) * 1e8} `)
+    .replace(/(\d[\d,]*(?:\.\d+)?)\s*万/gu, (_, number) => ` ${Number(number.replace(/,/gu, "")) * 1e4} `)
+    .replace(/(\d[\d,]*(?:\.\d+)?)\s*(?:x|倍)\b/giu, (_, number) => ` ${number} `);
+}
+
+export function comparableNumericFacts(value = "", spans = []) {
+  const remainder = withoutSpans(value, spans);
+  const normalized = normalizeComparableScales(normalizeChineseQuantifiers(normalizeDateTokens(remainder)))
+    .replace(/(\d[\d,]*(?:\.\d+)?)\s*lakh\b/giu, (_, number) => `${Number(number.replace(/,/gu, "")) * 100} k`);
+  return [...normalized.matchAll(/(\d[\d,]*(?:\.\d+)?)\s*(k|m|b|万|亿)?(?![A-Za-z])/giu)].map((match) => {
+    const number = Number(match[1].replace(/,/gu, ""));
+    const factor = moneyUnitFactors.get(String(match[2] || "").toLowerCase()) || 1;
+    return String(number * factor);
+  });
 }
 
 export function sourceTitleFactsPreserved(sourceTitle = "", translation = "") {
@@ -130,15 +187,17 @@ export function sourceTitleFactsPreserved(sourceTitle = "", translation = "") {
   const unusedTargetAmounts = [...targetAmounts];
   for (const sourceAmount of sourceAmounts) {
     const matchIndex = unusedTargetAmounts.findIndex((targetAmount) => {
-      const currencyMatches = !sourceAmount.currency || sourceAmount.currency === targetAmount.currency;
+      const yenSymbolIsAmbiguous = /¥/u.test(sourceAmount.raw)
+        && ["JPY", "CNY"].includes(targetAmount.currency);
+      const currencyMatches = !sourceAmount.currency || sourceAmount.currency === targetAmount.currency || yenSymbolIsAmbiguous;
       return currencyMatches && sameNumericValue(sourceAmount.value, targetAmount.value);
     });
     if (matchIndex === -1) return false;
     unusedTargetAmounts.splice(matchIndex, 1);
   }
 
-  const sourceNumbers = withoutSpans(source, sourceAmounts).match(/\d[\d,]*(?:\.\d+)?/gu) || [];
-  const targetNumbers = withoutSpans(target, targetAmounts).match(/\d[\d,]*(?:\.\d+)?/gu) || [];
+  const sourceNumbers = comparableNumericFacts(source, sourceAmounts);
+  const targetNumbers = comparableNumericFacts(target, targetAmounts);
   const normalizeNumbers = (items) => items.map((item) => item.replace(/,/gu, "")).sort();
   return JSON.stringify(normalizeNumbers(sourceNumbers)) === JSON.stringify(normalizeNumbers(targetNumbers));
 }
@@ -170,15 +229,17 @@ export function titleTranslationLooksUsable(sourceTitle = "", translation = "") 
     if (new RegExp(`\\b${term}\\b`, "iu").test(source) && !translatedPattern.test(value)) return false;
   }
   if (/\bAI agents?\b/iu.test(source) && !/AI\s*(?:智能体|代理)|智能体/iu.test(value)) return false;
+  const repositoryPath = source.match(/^([A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+)(?:\s+-\s+GitHub)?$/u)?.[1];
+  if (repositoryPath && !value.includes(repositoryPath)) return false;
   return true;
 }
 
-function generatedTitleTranslationLooksUsable(sourceTitle = "", translation = "") {
+export function generatedTitleTranslationLooksUsable(sourceTitle = "", translation = "") {
   if (!titleTranslationLooksUsable(sourceTitle, translation)) return false;
   if (!sourceTitleFactsPreserved(sourceTitle, translation)) return false;
-  const lowerWords = stripGeneratorNoise(translation).match(/\b[a-z]{3,}\b/gu) || [];
-  const allowed = new Set(["api", "sdk", "mcp", "llm", "gpu", "cpu", "npu", "xai"]);
-  return lowerWords.every((word) => allowed.has(word.toLowerCase()));
+  const residualConnectors = stripGeneratorNoise(translation)
+    .match(/\b(?:the|and|to|for|with|from|into|across|after|before|as|at|by|is|are|of)\b/giu) || [];
+  return residualConnectors.length < 2;
 }
 
 export function loadSourceTitleTranslations(file) {
@@ -200,11 +261,7 @@ export function loadSourceTitleTranslations(file) {
   return map;
 }
 
-export function upsertSourceTitleTranslation(file, { sourceTitle = "", zhTitle = "", method = "", sourceUrl = "" } = {}) {
-  const cleanSourceTitle = decodeHtmlEntities(sourceTitle).replace(/\s+/gu, " ").trim();
-  const cleanZhTitle = stripGeneratorNoise(zhTitle);
-  if (!titleTranslationLooksUsable(cleanSourceTitle, cleanZhTitle)) return false;
-
+export function upsertSourceTitleTranslations(file, updates = []) {
   let payload = {
     version: "source-title-translations-v1",
     description: "Business Signals frontstage title translations. Keys are original source titles only; do not add URL, keyword, company-name, or AI-generated title rules here.",
@@ -217,31 +274,43 @@ export function upsertSourceTitleTranslation(file, { sourceTitle = "", zhTitle =
   }
   if (Array.isArray(payload)) payload = { version: "source-title-translations-v1", translations: payload };
   if (!Array.isArray(payload.translations)) payload.translations = [];
-
-  const key = titleTranslationKey(cleanSourceTitle);
-  const existing = payload.translations.find((entry) => titleTranslationKey(entry?.sourceTitle || "") === key);
-  if (existing) {
-    const existingZh = String(existing.zhTitle || existing.translation || "").trim();
-    if (isApprovedSourceTitleTranslation(existing) && titleTranslationLooksUsable(cleanSourceTitle, existingZh)) return false;
-    existing.sourceTitle = cleanSourceTitle;
-    existing.zhTitle = cleanZhTitle;
-    existing.generatedBy = method || "source_title_translation_generator";
-    existing.generatedAt = new Date().toISOString();
-    if (sourceUrl) existing.sourceUrl = sourceUrl;
-  } else {
-    const entry = {
-      sourceTitle: cleanSourceTitle,
-      zhTitle: cleanZhTitle,
-      generatedBy: method || "source_title_translation_generator",
-      generatedAt: new Date().toISOString(),
-    };
-    if (sourceUrl) entry.sourceUrl = sourceUrl;
-    payload.translations.push(entry);
+  let changed = 0;
+  for (const { sourceTitle = "", zhTitle = "", method = "", model = "", sourceUrl = "" } of updates) {
+    const cleanSourceTitle = decodeHtmlEntities(sourceTitle).replace(/\s+/gu, " ").trim();
+    const cleanZhTitle = stripGeneratorNoise(zhTitle);
+    if (!generatedTitleTranslationLooksUsable(cleanSourceTitle, cleanZhTitle)) continue;
+    const key = titleTranslationKey(cleanSourceTitle);
+    const existing = payload.translations.find((entry) => titleTranslationKey(entry?.sourceTitle || "") === key);
+    if (existing) {
+      const existingZh = String(existing.zhTitle || existing.translation || "").trim();
+      if (isApprovedSourceTitleTranslation(existing) && generatedTitleTranslationLooksUsable(cleanSourceTitle, existingZh)) continue;
+      existing.sourceTitle = cleanSourceTitle;
+      existing.zhTitle = cleanZhTitle;
+      existing.generatedBy = method || "source_title_translation_generator";
+      if (model) existing.generatedModel = model;
+      existing.generatedAt = new Date().toISOString();
+      if (sourceUrl) existing.sourceUrl = sourceUrl;
+    } else {
+      const entry = {
+        sourceTitle: cleanSourceTitle,
+        zhTitle: cleanZhTitle,
+        generatedBy: method || "source_title_translation_generator",
+        generatedAt: new Date().toISOString(),
+      };
+      if (model) entry.generatedModel = model;
+      if (sourceUrl) entry.sourceUrl = sourceUrl;
+      payload.translations.push(entry);
+    }
+    changed += 1;
   }
-
+  if (!changed) return 0;
   fs.mkdirSync(path.dirname(file), { recursive: true });
   fs.writeFileSync(file, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
-  return true;
+  return changed;
+}
+
+export function upsertSourceTitleTranslation(file, update = {}) {
+  return upsertSourceTitleTranslations(file, [update]) > 0;
 }
 
 async function translateTitleWithOpenAICompatible(sourceTitle = "", {
@@ -297,22 +366,52 @@ async function translateTitleWithOpenAICompatible(sourceTitle = "", {
 async function translateTitleWithDeepSeek(sourceTitle = "", {
   apiKey = process.env.DEEPSEEK_API_KEY || process.env.DEEPSEEK_TITLE_TRANSLATION_API_KEY || "",
   baseUrl = process.env.DEEPSEEK_BASE_URL || "https://api.deepseek.com",
-  model = process.env.DEEPSEEK_TITLE_TRANSLATION_MODEL || process.env.DEEPSEEK_MODEL || process.env.TITLE_TRANSLATION_MODEL || "deepseek-v4-flash",
+  model = process.env.DEEPSEEK_TITLE_TRANSLATION_MODEL || deepSeekModels().flash,
   timeoutMs = 12000,
 } = {}) {
-  const options = {
+  const messages = (retryInstruction = "") => [
+    {
+      role: "system",
+      content: [
+        "Translate business-news source titles into concise Simplified Chinese.",
+        "Preserve company names, product names, funding amounts, round names, dates, and named customers exactly.",
+        "Never calculate, round, change, omit, or add any number or monetary amount.",
+        "Translate AI agent as AI 智能体. Remove publisher and website suffixes such as Company Announcement, FT.com, TechCrunch, or PYMNTS.com.",
+        "Translate generic product-category words even when the title is mostly brand names; for example, translate Marketplace as 市场 while preserving NVIDIA AI Enterprise exactly.",
+        "For a repository-only title such as owner/repository, preserve the exact path and translate it as GitHub 仓库：owner/repository.",
+        "Do not add facts that are not present in the source title. Return only the translated title.",
+      ].join(" "),
+    },
+    {
+      role: "user",
+      content: [
+        `SOURCE TITLE:\n${sourceTitle}`,
+        sourceTitleNumericFacts(sourceTitle).length
+          ? `NUMERIC FACTS THAT MUST REMAIN EQUIVALENT:\n${sourceTitleNumericFacts(sourceTitle).join("; ")}`
+          : "",
+        retryInstruction,
+      ].filter(Boolean).join("\n\n"),
+    },
+  ];
+  const first = stripGeneratorNoise(await deepSeekChatCompletion({
     apiKey,
     baseUrl,
     model,
     timeoutMs,
-    extraBody: { thinking: { type: "disabled" } },
-  };
-  const first = await translateTitleWithOpenAICompatible(sourceTitle, options);
-  if (sourceTitleFactsPreserved(sourceTitle, first)) return first;
-  return translateTitleWithOpenAICompatible(sourceTitle, {
-    ...options,
-    retryInstruction: "A previous translation was rejected because it changed or omitted a numeric fact. Translate again and verify every source amount, date, version, and count before answering.",
-  });
+    maxTokens: 120,
+    messages: messages(),
+  }));
+  if (generatedTitleTranslationLooksUsable(sourceTitle, first)) return { text: first, model };
+  const retryModel = deepSeekModels().pro;
+  const retry = stripGeneratorNoise(await deepSeekChatCompletion({
+    apiKey,
+    baseUrl,
+    model: retryModel,
+    timeoutMs: Math.max(timeoutMs, 30000),
+    maxTokens: 120,
+    messages: messages("A previous translation was rejected. Preserve every amount, date, quarter, version, and count. If an amount such as $12.5 has no unit, keep the literal $12.5 and never infer million or billion. Keep tokens such as Q1 and model versions semantically exact."),
+  }));
+  return { text: retry, model: retryModel };
 }
 
 async function translateTitleWithOpenAI(sourceTitle = "", {
@@ -592,7 +691,7 @@ export async function generateSourceTitleTranslation(sourceTitle = "", {
   const providers = provider === "auto" ? ["deepseek", "openai", "business-rule"] : [provider];
   for (const item of providers) {
     try {
-      const translated = item === "deepseek"
+      const generated = item === "deepseek"
         ? await translateTitleWithDeepSeek(title, { timeoutMs })
         : item === "openai"
           ? await translateTitleWithOpenAI(title, { timeoutMs })
@@ -601,8 +700,14 @@ export async function generateSourceTitleTranslation(sourceTitle = "", {
             : item === "mymemory"
               ? await translateTitleWithMyMemory(title, { timeoutMs })
               : "";
+      const translated = typeof generated === "object" ? generated.text : generated;
       if (generatedTitleTranslationLooksUsable(title, translated)) {
-        return { titleZh: stripGeneratorNoise(translated), status: "translated", method: `${item}_title_translation` };
+        return {
+          titleZh: stripGeneratorNoise(translated),
+          status: "translated",
+          method: `${item}_title_translation`,
+          model: typeof generated === "object" ? generated.model || "" : "",
+        };
       }
     } catch {
       // Try the next provider. The caller records a failed status only after all providers fail.
@@ -637,6 +742,7 @@ export async function resolveSourceTitleTranslation(sourceTitle = "", {
         sourceTitle: title,
         zhTitle: generated.titleZh,
         method: generated.method,
+        model: generated.model || "",
         sourceUrl,
       });
     }

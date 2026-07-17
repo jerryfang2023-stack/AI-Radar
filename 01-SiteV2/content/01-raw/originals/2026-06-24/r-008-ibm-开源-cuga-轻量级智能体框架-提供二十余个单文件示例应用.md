@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"IBM 开源了 CUGA（Configurabl
 theme: technical-iteration-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "IBM 开源 CUGA：轻量级智能体框架，提供二十余个单文件示例应用"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # IBM 开源 CUGA：轻量级智能体框架，提供二十余个单文件示例应用

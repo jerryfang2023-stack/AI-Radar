@@ -72,6 +72,10 @@ key_excerpts: [{"type":"company_action","text":"OpenAI 现在允许 Codex 用户
 theme: outside-core-exploration
 keyword_group: outside-core-exploration
 copyright_note: local research archive only
+title_zh: "OpenAI 为 Codex 编程智能体推出灵活速率限制重置，开启 AI 价格战"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # OpenAI 为 Codex 编程智能体推出灵活速率限制重置，开启 AI 价格战

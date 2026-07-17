@@ -2,7 +2,7 @@
 id: SIG-20260710-A01
 type: signal_card
 signal_type: funding
-title: "ActionAI 完成 1000 万美元 种子轮融资，用于Fix AI's Trust Problem"
+title: "ActionAI 获1000万美元种子轮融资，旨在解决AI信任问题"
 date: 2026-07-10
 status: published
 source_title: "ActionAI Raises $10m Seed to Fix AI's Trust Problem"
@@ -58,12 +58,12 @@ opportunity_signals:
 signal_owner: "ActionAI"
 
 frontend:
-  displayTitle: "ActionAI 完成 1000 万美元 种子轮融资，用于Fix AI's Trust Problem"
+  displayTitle: "ActionAI 获1000万美元种子轮融资，旨在解决AI信任问题"
   sourceLinks:
     - "https://www.prnewswire.com/news-releases/actionai-raises-10m-seed-to-fix-ais-trust-problem-302744706.html"
 ---
 
-# ActionAI 完成 1000 万美元 种子轮融资，用于Fix AI's Trust Problem
+# ActionAI 获1000万美元种子轮融资，旨在解决AI信任问题
 
 ## 新闻事实
 

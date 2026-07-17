@@ -2,7 +2,7 @@
 id: SIG-20260706-A03
 type: signal_card
 signal_type: case
-title: "Linkup 帮助中东头部银行扩展 120+ 个 AI Agent"
+title: "Linkup - 案例研究：在中东一家顶级银行部署120多个AI代理"
 date: 2026-07-06
 status: published
 source_title: "Linkup - Case study: scaling 120+ AI agents in a top Middle East bank"
@@ -55,12 +55,12 @@ opportunity_signals:
 signal_owner: "Boris Toledano COO &"
 
 frontend:
-  displayTitle: "Linkup 帮助中东头部银行扩展 120+ 个 AI Agent"
+  displayTitle: "Linkup - 案例研究：在中东一家顶级银行部署120多个AI代理"
   sourceLinks:
     - "https://www.linkup.so/case-studies/how-a-leading-middle-east-bank-powers-ai-agents-with-linkup"
 ---
 
-# Linkup 帮助中东头部银行扩展 120+ 个 AI Agent
+# Linkup - 案例研究：在中东一家顶级银行部署120多个AI代理
 
 ## 新闻事实
 

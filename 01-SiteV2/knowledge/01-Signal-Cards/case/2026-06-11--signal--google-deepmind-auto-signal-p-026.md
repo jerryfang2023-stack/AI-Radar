@@ -2,7 +2,7 @@
 id: SIG-20260611-A09
 type: signal_card
 signal_type: case
-title: "Google DeepMind 案例：AI 进入模型部署和算力调用"
+title: "DiffusionGemma 开发者指南"
 date: 2026-06-11
 status: published
 source_title: "DiffusionGemma 开发者指南"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Google DeepMind"
 
 frontend:
-  displayTitle: "Google DeepMind 案例：AI 进入模型部署和算力调用"
+  displayTitle: "DiffusionGemma 开发者指南"
   sourceLinks:
     - "https://developers.googleblog.com/diffusiongemma-the-developer-guide"
 ---
 
-# Google DeepMind 案例：AI 进入模型部署和算力调用
+# DiffusionGemma 开发者指南
 
 ## 新闻事实
 

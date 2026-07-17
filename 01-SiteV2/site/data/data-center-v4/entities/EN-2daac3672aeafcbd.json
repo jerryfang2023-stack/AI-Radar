@@ -1,0 +1,193 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 818,
+    "quarantinedEventCount": 58
+  },
+  "entity": {
+    "id": "EN-2daac3672aeafcbd",
+    "name": "HappyHorse 1.1",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-473f852b374d8b1c"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-technology-video_generation"
+    ],
+    "relatedEntityIds": [
+      "EN-047364b9be67f665"
+    ],
+    "firstSeen": "2026-06-22",
+    "lastSeen": "2026-06-23",
+    "relationIds": [
+      "REL2-28ee71371286b022"
+    ],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-473f852b374d8b1c"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-473f852b374d8b1c",
+        "dataDate": "2026-06-23",
+        "date": "2026-06-22",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "阿里巴巴发布视频生成模型 HappyHorse 1.1",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "video_generation",
+            "name": "视频生成"
+          }
+        ],
+        "entityIds": [
+          "EN-047364b9be67f665",
+          "EN-47c1e53c427aafb4",
+          "EN-2daac3672aeafcbd"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [
+    {
+      "id": "EN-047364b9be67f665",
+      "name": "Alibaba",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "阿里巴巴"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-43b7f45e9bd7ec9b",
+        "EV-3d93d1da8cb64462",
+        "EV-e1a4bc40db4a9d8f",
+        "EV-f6ac2938949f74ec",
+        "EV-70cbf25f7ec2cc3a",
+        "EV-8b9e4428074bde60",
+        "EV-83c841a4c42cfdea",
+        "EV-3167e6eed75597e9",
+        "EV-76aa77f5a2e7c661",
+        "EV-77662aa9bef9efbe",
+        "EV-c7f274c3aadece12",
+        "EV-333851b077b606c8",
+        "EV-6712f8ac1f00fe85",
+        "EV-c54172bf4e0c1068",
+        "EV-473f852b374d8b1c",
+        "EV-4e6dc3ec2b3f0bd6",
+        "EV-bbc34d7bc9c02b6f",
+        "EV-c11ee0da38376254",
+        "EV-657837763764c869",
+        "EV-a4f052325d0ef230",
+        "EV-710b145230faa692"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-code_generation",
+        "TX-technology-long_context",
+        "TX-use_case-data_analysis",
+        "TX-technology-on_device",
+        "TX-technology-video_generation",
+        "TX-technology-fine_tuning",
+        "TX-technology-quantization",
+        "TX-technology-computer_use"
+      ],
+      "relatedEntityIds": [
+        "EN-2daac3672aeafcbd"
+      ],
+      "firstSeen": "2026-05-23",
+      "lastSeen": "2026-07-17"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-28ee71371286b022",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-047364b9be67f665",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-2daac3672aeafcbd",
+      "object_type": "entity",
+      "event_id": "EV-473f852b374d8b1c",
+      "claim_refs": [
+        "CL-bbcf707867f201c2",
+        "CL-fc9ca608d16b9e92",
+        "CL-c0453e0ddf222c2c"
+      ],
+      "source_refs": [
+        "SA-2a6fddf2020cbec2"
+      ],
+      "data_date": "2026-06-23",
+      "status": "verified"
+    }
+  ],
+  "taxonomyNodes": [
+    {
+      "id": "TX-technology-video_generation",
+      "name": "视频生成",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "video_generation",
+      "eventIds": [
+        "EV-f169db2fb75a1371",
+        "EV-5babb43f4b4d302f",
+        "EV-d8c69ed782b73a34",
+        "EV-c7404765df94a3b4",
+        "EV-473f852b374d8b1c",
+        "EV-887d47bb477e2142"
+      ],
+      "entityIds": [
+        "EN-2b6e51bec93e86c1",
+        "EN-b0532e1af75cc4ab",
+        "EN-01f1074bb52ff605",
+        "EN-7ed9c9e7c260ed06",
+        "EN-4d09c69c19f5f67b",
+        "EN-bbdefa2950f49882",
+        "EN-6e7e64cf66f76a04",
+        "EN-5388bc10736a0eff",
+        "EN-43a340bb75b45f02",
+        "EN-047364b9be67f665",
+        "EN-47c1e53c427aafb4",
+        "EN-2daac3672aeafcbd",
+        "EN-e9857f381893dd05",
+        "EN-4f96127fdacbb405"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-06-16",
+      "lastSeen": "2026-07-01"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}

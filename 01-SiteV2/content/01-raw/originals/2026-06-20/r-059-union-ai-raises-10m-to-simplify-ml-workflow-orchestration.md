@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Union.ai raises $10M to simplify ML wor
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only
+title_zh: "Union.ai融资1000万美元，简化机器学习工作流编排"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Union.ai raises $10M to simplify ML workflow orchestration

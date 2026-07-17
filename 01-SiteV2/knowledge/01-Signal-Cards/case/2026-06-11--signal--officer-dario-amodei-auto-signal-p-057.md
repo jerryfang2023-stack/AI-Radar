@@ -2,7 +2,7 @@
 id: SIG-20260611-A13
 type: signal_card
 signal_type: case
-title: "Officer Dario Amodei 案例：AI 进入模型部署和算力调用"
+title: "Anthropic CEO 称政府应有权阻止高风险新 AI 模型部署"
 date: 2026-06-11
 status: published
 source_title: "Anthropic CEO 称政府应有权阻止高风险新 AI 模型部署"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Officer Dario Amodei"
 
 frontend:
-  displayTitle: "Officer Dario Amodei 案例：AI 进入模型部署和算力调用"
+  displayTitle: "Anthropic CEO 称政府应有权阻止高风险新 AI 模型部署"
   sourceLinks:
     - "https://www.bloomberg.com/news/articles/2026-06-10/anthropic-ceo-says-government-should-be-able-to-block-new-models"
 ---
 
-# Officer Dario Amodei 案例：AI 进入模型部署和算力调用
+# Anthropic CEO 称政府应有权阻止高风险新 AI 模型部署
 
 ## 新闻事实
 

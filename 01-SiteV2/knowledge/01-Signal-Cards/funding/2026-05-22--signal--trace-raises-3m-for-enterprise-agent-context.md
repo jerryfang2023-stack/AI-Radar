@@ -2,7 +2,7 @@
 id: SIG-20260522-05
 type: signal_card
 signal_type: funding
-title: "Trace 融资 300 万美元，解决企业 Agent 上下文缺口"
+title: "Trace 筹集300万美元，解决企业AI代理采用难题 | TechCrunch"
 date: 2026-05-22
 status: draft
 asset_level: candidate
@@ -37,7 +37,7 @@ signal_owner: "Trace"
 watch_reason: "继续看 Trace 是否公布设计伙伴、企业客户或与现有系统集成的更多说明。"
 
 frontend:
-  displayTitle: "Trace 融资 300 万美元，解决企业 Agent 上下文缺口"
+  displayTitle: "Trace 筹集300万美元，解决企业AI代理采用难题 | TechCrunch"
   eventLine: "TechCrunch 披露 Trace 获得 300 万美元融资，产品方向是映射企业环境和流程，让 Agent 具备可执行上下文。"
   whyWatch: "Agent 进入企业后，难点会从生成答案转向理解组织流程、系统边界和任务分配。"
   businessMeaning: "企业预算可能流向流程梳理、上下文管理、权限配置和部署服务，而不只是模型调用。"
@@ -70,7 +70,7 @@ opportunity_signals:
   missing_fields: ["specific_task", "delivery_model"]
 ---
 
-# Trace 融资 300 万美元，解决企业 Agent 上下文缺口
+# Trace 筹集300万美元，解决企业AI代理采用难题 | TechCrunch
 
 ## 信号底稿
 

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"supporting_context","text":"6 月 23 日，OpenAI 宣布
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "OpenAI 推出\"修补地球\"计划，用 AI 助力开源社区提升网络安全"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # OpenAI 推出"修补地球"计划，用 AI 助力开源社区提升网络安全

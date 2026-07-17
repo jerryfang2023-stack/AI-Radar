@@ -9,6 +9,7 @@ import { buildTagIndex, readTagTaxonomy } from "../../../agent-workflow/tools/ta
 import {
   completeOpinionTranslation,
   loadTranslationCache,
+  pruneLegacyTranslationCache,
   saveTranslationCache,
   translateOpinionText,
   visibleChineseTranslation,
@@ -206,7 +207,7 @@ async function translateBlogTitle(title = "", url = "", cache = {}) {
   const text = decodeText(title);
   const staticTranslation = blogTitleTranslations.get(text);
   if (visibleChineseTranslation(staticTranslation)) {
-    return { translation: staticTranslation, status: "translated", method: "static_blog_title" };
+    return { translation: staticTranslation, status: "translated", method: "manual_reviewed_translation" };
   }
   return translateOpinionText(text, {
     cache,
@@ -221,7 +222,7 @@ async function translateTweet(tweet = {}, cache = {}) {
     preferFullTranslation: true,
   });
   if (staticTranslation) {
-    return { translation: staticTranslation, status: "translated", method: "static_by_tweet_id" };
+    return { translation: staticTranslation, status: "translated", method: "manual_reviewed_translation" };
   }
   return translateOpinionText(text, {
     cache,
@@ -317,6 +318,7 @@ async function trackedSourceCount() {
 
 async function normalize(feed, trackedSources) {
   const translationCache = await loadTranslationCache(process.cwd());
+  pruneLegacyTranslationCache(translationCache);
   const remarks = [];
   for (const builder of feed.x || []) {
     for (const tweet of builder.tweets || []) {
@@ -340,6 +342,7 @@ async function normalize(feed, trackedSources) {
         translation: translated.translation,
         translationStatus: translated.status,
         translationMethod: translated.method,
+        translationModel: translated.model || "",
         topic,
         columnTags: tagsForTopic(topic),
         sourceType: "social",
@@ -377,8 +380,9 @@ async function normalize(feed, trackedSources) {
           allowNetwork: process.env.FOLLOW_BUILDERS_TRANSLATE_NETWORK !== "false",
           preferFullTranslation: true,
         });
-        contentTranslation = translated.translation || content;
-        contentTranslationStatus = translated.status || "translated";
+        contentTranslation = translated.translation || "";
+        contentTranslationStatus = translated.status || "pending_translation";
+        if (!completeOpinionTranslation(content, contentTranslation, { preferFullTranslation: true })) continue;
       }
       const titleTranslation = await translateBlogTitle(text, item.url || item.id || "", translationCache);
       if (!completeOpinionTranslation(text, titleTranslation.translation || "")) continue;
@@ -396,6 +400,7 @@ async function normalize(feed, trackedSources) {
         translation: titleTranslation.translation,
         translationStatus: "translated",
         translationMethod: titleTranslation.method,
+        translationModel: titleTranslation.model || "",
         topic,
         columnTags: tagsForTopic(topic),
         sourceType: "blog",
@@ -422,14 +427,41 @@ async function normalize(feed, trackedSources) {
     }))
     .sort((a, b) => b.count - a.count || a.name.localeCompare(b.name));
 
-  const podcasts = (feed.podcastsFromFeed || feed.podcasts || []).filter((item) => item.url).slice(0, 3).map((item) => ({
-    source: "podcast",
-    name: item.name,
-    title: item.title,
-    url: item.url,
-    publishedAt: item.publishedAt,
-    excerpt: compact(item.excerpt || "", 920),
-  }));
+  const podcasts = [];
+  for (const item of (feed.podcastsFromFeed || feed.podcasts || []).filter((entry) => entry.url).slice(0, 3)) {
+    const originalTitle = decodeText(item.title || "");
+    const originalExcerpt = compact(decodeText(item.excerpt || ""), 920);
+    const titleResult = await translateOpinionText(originalTitle, {
+      cache: translationCache,
+      cacheKey: `podcast-title:${item.url}`,
+      allowNetwork: process.env.FOLLOW_BUILDERS_TRANSLATE_NETWORK !== "false",
+    });
+    const excerptResult = originalExcerpt
+      ? await translateOpinionText(originalExcerpt, {
+        cache: translationCache,
+        cacheKey: `podcast-excerpt:${item.url}`,
+        allowNetwork: process.env.FOLLOW_BUILDERS_TRANSLATE_NETWORK !== "false",
+        preferFullTranslation: true,
+      })
+      : { translation: "", status: "not_required", method: "empty_source" };
+    if (!completeOpinionTranslation(originalTitle, titleResult.translation || "")) continue;
+    if (originalExcerpt && !completeOpinionTranslation(originalExcerpt, excerptResult.translation || "", { preferFullTranslation: true })) continue;
+    podcasts.push({
+      source: "podcast",
+      name: item.name,
+      title: titleResult.translation,
+      originalTitle,
+      titleTranslationMethod: titleResult.method,
+      titleTranslationModel: titleResult.model || "",
+      url: item.url,
+      publishedAt: item.publishedAt,
+      excerpt: excerptResult.translation || "",
+      originalExcerpt,
+      excerptTranslationMethod: excerptResult.method,
+      excerptTranslationModel: excerptResult.model || "",
+    });
+  }
+  await saveTranslationCache(process.cwd(), translationCache);
 
   return {
     meta: {

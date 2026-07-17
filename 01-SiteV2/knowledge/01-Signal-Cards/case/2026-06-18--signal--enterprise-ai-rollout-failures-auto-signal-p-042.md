@@ -2,7 +2,7 @@
 id: SIG-20260618-A13
 type: signal_card
 signal_type: case
-title: "Enterprise AI Rollout Failures: Causes and Case Studies"
+title: "企业AI部署失败：原因与案例研究"
 date: 2026-06-18
 status: published
 source_title: "Enterprise AI Rollout Failures: Causes and Case Studies"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Enterprise AI Rollout Failures"
 
 frontend:
-  displayTitle: "Enterprise AI Rollout Failures: Causes and Case Studies"
+  displayTitle: "企业AI部署失败：原因与案例研究"
   sourceLinks:
     - "https://intuitionlabs.ai/articles/enterprise-ai-rollout-failures"
 ---
 
-# Enterprise AI Rollout Failures: Causes and Case Studies
+# 企业AI部署失败：原因与案例研究
 
 ## 新闻事实
 

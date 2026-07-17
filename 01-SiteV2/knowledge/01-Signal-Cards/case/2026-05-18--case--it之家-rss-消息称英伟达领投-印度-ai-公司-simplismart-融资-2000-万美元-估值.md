@@ -1,7 +1,7 @@
 ---
 id: CASE-20260518-06
 type: case_card
-title: "IT之家（RSS）：消息称英伟达领投：印度 AI 公司 Simplismart 融资 2000 万美元，估值"
+title: "消息称英伟达领投：印度 AI 公司 Simplismart 融资 2000 万美元，估值约 1 亿美元"
 date: 2026-05-18
 status: draft
 created_at: 2026-05-19T05:28:07.905Z
@@ -69,7 +69,7 @@ internal:
   last_reviewed: 2026-05-18
 ---
 
-# IT之家（RSS）：消息称英伟达领投：印度 AI 公司 Simplismart 融资 2000 万美元，估值
+# 消息称英伟达领投：印度 AI 公司 Simplismart 融资 2000 万美元，估值约 1 亿美元
 
 ## 这个案例是谁
 

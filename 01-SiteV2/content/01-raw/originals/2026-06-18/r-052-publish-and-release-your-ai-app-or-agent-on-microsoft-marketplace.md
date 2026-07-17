@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"This article presents information t
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "在微软市场上发布和部署您的AI应用或代理"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Publish and release your AI app or agent on Microsoft Marketplace

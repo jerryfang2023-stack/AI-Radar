@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"本次更新新增 `Tool（param：
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "Claude Code v2.1.178 发布"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Claude Code v2.1.178 发布

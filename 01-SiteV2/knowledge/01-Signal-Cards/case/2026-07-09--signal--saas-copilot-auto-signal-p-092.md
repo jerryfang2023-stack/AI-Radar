@@ -2,7 +2,7 @@
 id: SIG-20260709-A12
 type: signal_card
 signal_type: case
-title: "SaaS Copilot 完成 1.5 万用户 87 天推广案例"
+title: "SaaS Copilot：1.5万用户87天部署完成"
 date: 2026-07-09
 status: published
 source_title: "SaaS Copilot: 15K-User 87-Day Rollout"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "SaaS Copilot"
 
 frontend:
-  displayTitle: "SaaS Copilot 完成 1.5 万用户 87 天推广案例"
+  displayTitle: "SaaS Copilot：1.5万用户87天部署完成"
   sourceLinks:
     - "https://www.copilotconsulting.com/case-studies/technology-saas-company"
 ---
 
-# SaaS Copilot 完成 1.5 万用户 87 天推广案例
+# SaaS Copilot：1.5万用户87天部署完成
 
 ## 新闻事实
 

@@ -72,6 +72,10 @@ guanlan_scores: {"importance_type":"important_vertical_solution","importance_sco
 theme: "mature-commercial-signal"
 keyword_group: "mature-commercial-signal"
 copyright_note: "local research archive only"
+title_zh: "Veltris推出VeltrisOne——专为微型行业打造的垂直AI编排平台"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Veltris Launches VeltrisOne -- A Vertical AI Orchestration Platform Purpose-Built to Power Micro-Industries

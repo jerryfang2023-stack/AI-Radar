@@ -72,6 +72,10 @@ key_excerpts: [{"type":"company_action","text":"Evaluation metrics, how to build
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "评估长上下文问答系统"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Evaluating Long-Context Question &amp; Answer Systems

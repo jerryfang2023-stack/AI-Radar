@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-035
 title: "M-Files Expands Agentic AI Capabilities with New Agents That Deliver Context-Aware Automation | M-Files"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "M-Files推出新智能体，扩展代理型AI能力，实现上下文感知自动化"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.m-files.com/press-releases/m-files-ai-agents/"
 canonical_url: "https://m-files.com/press-releases/m-files-ai-agents"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-06T02:21:26.919Z
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # M-Files Expands Agentic AI Capabilities with New Agents That Deliver Context-Aware Automation | M-Files

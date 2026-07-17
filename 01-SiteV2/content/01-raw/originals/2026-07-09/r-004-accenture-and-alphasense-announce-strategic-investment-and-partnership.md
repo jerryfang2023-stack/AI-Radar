@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-004
 title: "Accenture and AlphaSense Announce Strategic Investment and Partnership to Bring Agentic Workflows for Market Intelligence to Enterprises – Company Announcement - FT.com"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "埃森哲与AlphaSense宣布战略投资与合作伙伴关系，为企业市场情报带来智能体工作流"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://markets.ft.com/data/announce/detail?dockey=600-202606030759BIZWIRE_USPRX____20260603_BW374687-1"
 canonical_url: "https://markets.ft.com/data/announce/detail?dockey=600-202606030759BIZWIRE_USPRX____20260603_BW374687-1"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-09T03:05:44.823Z
 theme: aihot-fallback-market-structure
 keyword_group: aihot-fallback-market-structure
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Accenture and AlphaSense Announce Strategic Investment and Partnership to Bring Agentic Workflows for Market Intelligence to Enterprises – Company Announcement - FT.com

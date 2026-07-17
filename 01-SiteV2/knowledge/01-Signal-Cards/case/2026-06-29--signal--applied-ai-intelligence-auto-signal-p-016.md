@@ -2,7 +2,7 @@
 id: SIG-20260629-A03
 type: signal_card
 signal_type: case
-title: "Future Works：应用型 AI 智能"
+title: "应用人工智能 - 未来工程"
 date: 2026-06-29
 status: published
 source_title: "Applied AI Intelligence - Future Works"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "Applied AI Intelligence"
 
 frontend:
-  displayTitle: "Future Works：应用型 AI 智能"
+  displayTitle: "应用人工智能 - 未来工程"
   sourceLinks:
     - "https://future.works/applied-ai-intelligence/"
 ---
 
-# Future Works：应用型 AI 智能
+# 应用人工智能 - 未来工程
 
 ## 新闻事实
 
