@@ -30,7 +30,5 @@
 
 计划通过后，只更新当前需要的文件：
 
-- `agent-workflow/execution/dispatch-board.md`
-- `agent-workflow/feature_list.json`
-- `agent-workflow/progress.md`
+- `context/09-v3-3-current-action-index.md`（仅在当前动作索引确需更新时）
 - 必要 closeout

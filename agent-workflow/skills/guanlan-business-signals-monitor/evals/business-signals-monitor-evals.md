@@ -2,6 +2,8 @@
 
 Run these pass/fail checks when supervising, repairing, or updating the Business Signals lane.
 
+Compatibility note: legacy field and gate names such as `frontstageCards`, `public_frontstage_card_contract`, and `frontstage_contract` remain schema identifiers. They validate the internal V3 compatibility set and must not be interpreted as the public Data Center V4 event set.
+
 ## Required Checks
 
 1. `lane_owner_loaded`

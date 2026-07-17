@@ -1,9 +1,9 @@
 # Current Quality Gates
 
 Status: current
-Updated: 2026-07-11
+Updated: 2026-07-17
 
-This governance note lists active SITE-V3.4.0 checks only. Retired V1/V2 daily observation, business brief, publiccopy, cardcopy, writer-style, V2 typography, V2 raw evidence, and V2 source gates are not active release gates.
+This governance note lists active SITE-V4.1 public checks and the remaining V3 internal compatibility checks. Retired V1/V2 outputs and retired V3 page CSS/JS are not active release gates.
 
 ## General Completion Rule
 
@@ -24,7 +24,8 @@ node agent-workflow/tools/run-quality-gates.mjs syntax
 node agent-workflow/tools/run-quality-gates.mjs automation
 node agent-workflow/tools/run-quality-gates.mjs business --date=YYYY-MM-DD
 node agent-workflow/tools/run-quality-gates.mjs regression --date=YYYY-MM-DD
-node --check 01-SiteV2/site/assets/v3-data-observation-desk.js
+node --check 01-SiteV2/site/assets/data-center-v4.js
+node --check 01-SiteV2/site/assets/v4-report-shell.js
 ```
 
 ## Daily Monitor Checks

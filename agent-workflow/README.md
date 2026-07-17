@@ -38,8 +38,8 @@
 
 ## 当前任务
 
-当前任务看板见：
+当前动作索引见：
 
 ```text
-agent-workflow/execution/dispatch-board.md
+context/09-v3-3-current-action-index.md
 ```

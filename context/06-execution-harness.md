@@ -1,15 +1,21 @@
 ---
 status: current
-scope: v3-execution-harness
-last_updated: 2026-06-06
+scope: site-v4-execution-harness
+last_updated: 2026-07-17
 priority: current
 ---
 
-# V3.3 Execution Harness
+# SITE-V4.1 Execution Harness
 
-Use this harness for monitoring, Pool routing, Card generation, first-line viewpoints data, relationship graph, trend-candidate analysis, and site data sync.
+Use this harness for Data Center V4 production, monitoring, V3 internal Card compatibility, first-line viewpoints data, relationship graph, trend-candidate analysis, and site data sync.
 
-Current rule source:
+Current V4 factual rule source:
+
+```text
+context/12-data-center-v4.md
+```
+
+V3 internal compatibility rule source:
 
 ```text
 context/07-v3-intelligence-generation-rules.md
@@ -22,6 +28,17 @@ context/08-v3-3-automation.md
 ```
 
 ## Active Flows
+
+### A0. Data Center V4
+
+Reads:
+
+1. `AGENTS.md`
+2. `context/12-data-center-v4.md`
+3. `agent-workflow/product/data-center-v4-contract.md`
+4. `agent-workflow/product/data-center-v4.schema.json`
+
+Produces source artifacts, exact-span Claims, Entities, CanonicalEvents, evidence-backed tags, FDE / hardware projections, queryable exports, and V4 frontstage bundles. It does not produce recommendations, opportunity judgments, trend maturity, or other decision fields in canonical tables.
 
 ### A. Daily Monitoring
 
@@ -54,7 +71,7 @@ Reads:
 Produces:
 
 - `signal_card` assets;
-- business-signal frontstage manifest;
+- V3 internal Card compatibility manifest;
 - relationship graph inputs;
 - trend-candidate inputs.
 
@@ -64,7 +81,7 @@ Current business-signal Card types:
 - `funding`;
 - `case`.
 
-Default frontstage target: publish every qualified Raw / Pool business signal that passes raw-to-card cardability and can become a Card. Asset generation should cover all cardable Raw / Pool items; Pool is an audit index and repair surface, not a required manual selection layer. There is no public Top10 selector or candidate-pool split.
+Compatibility target: preserve every qualified Raw / Pool business signal that passes raw-to-card cardability and can become a Card. Asset generation should cover all cardable Raw / Pool items; Pool is an audit index and repair surface, not a required manual selection layer. V3 Card data is not a public page payload and has no public Top10 selector or candidate-pool split.
 
 ### C. First-Line Viewpoints
 
@@ -108,11 +125,11 @@ Runs:
 - GitHub PR / merge path;
 - local Obsidian sync after merged changes are available on `origin/main`.
 
-## Paused / Not Active For V3.3
+## Retired / Not Active
 
-Legacy content-output routes, legacy publication templates, and legacy copy gates are not required outputs for the current bottom layer.
+Legacy content-output routes, retired V3 page CSS/JS, legacy publication templates, and legacy copy gates are not current outputs.
 
-If any workflow or script still requires these as blockers for V3.3 business-signal production, treat it as historical contamination and update it.
+If any workflow or script still requires them as blockers for V4 production or V3 internal compatibility production, treat it as historical contamination and update it.
 
 ## Hard Stops
 

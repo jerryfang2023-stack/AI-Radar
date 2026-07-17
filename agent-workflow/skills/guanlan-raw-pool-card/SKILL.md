@@ -1,13 +1,13 @@
 ---
 name: guanlan-raw-pool-card
-description: Use only for frozen V3 Raw/Pool-to-Card and frontstage compatibility after Data Center V4 build and integrity gate. Do not use Cards, cardability, importance, or value fields as V4 facts.
+description: Use only for frozen V3 Raw/Pool-to-Card internal compatibility after Data Center V4 build and integrity gate. Do not use Cards, cardability, importance, or value fields as V4 facts.
 metadata:
   guanlan:
-    version: "1.0.4"
+    version: "1.0.6"
     lane: "Business Signals"
     status: "compatibility sub-skill"
     order: 70
-    responsibility: "Render legacy source-backed Signal Cards for frozen V3 pages without writing V4 truth."
+    responsibility: "Render legacy source-backed Signal Cards for internal compatibility without writing V4 truth."
     upstream: "eligible Raw / Pool items"
     downstream: "Signal Cards and card examples"
     gates: "source-backed details, type contract, field discipline"
@@ -18,16 +18,16 @@ metadata:
 
 # Guanlan Raw Pool Card
 
-Compatibility boundary: CanonicalEvent is the V4 fact layer and Card is only a renderer for frozen pages.
+Compatibility boundary: CanonicalEvent is the V4 fact layer and Card is only an internal compatibility renderer.
 
-This skill is the production route for WaveSight AI business-signal assets after daily monitoring starts and before public frontstage release.
+This skill is the compatibility route for WaveSight AI business-signal assets after daily monitoring. Its output can feed internal graph/trend analytics and Industry Reports projection, but is not a public V3 page.
 
 Use it for:
 
 - Raw / Pool audit quantity and balance checks.
 - Generating or repairing Signal Cards from Pool.
 - Deciding why a Raw / Pool candidate did or did not become a formal Signal Card.
-- Updating the unified Business Signals frontstage Card view.
+- Updating the unified internal Business Signals compatibility Card set.
 - Auditing cardable coverage and large-company concentration.
 
 Do not use it for first-line builders viewpoints, opinion cards, daily observation articles, trend reports, or business briefs.
@@ -46,7 +46,7 @@ Read only what is needed:
    - `01-SiteV2/knowledge/01-Signal-Cards/`
    - `01-SiteV2/site/data/v3-data-observation-desk.json`
 
-For frontstage count and display rules, read `references/frontstage-cardability-rules.md`.
+For compatibility count and display rules, read `references/frontstage-cardability-rules.md`.
 
 For self-improvement and regression prevention, read these only when relevant:
 
@@ -98,22 +98,22 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 8. Run the pass/fail checks in `evals/raw-pool-card-evals.md`. If any check fails, repair the source script or data and rerun until all required checks pass.
 
-## Current Frontstage Contract
+## Current Compatibility Contract
 
-- Business Signals has one public Card view for the active date.
-- Every qualified Raw / Pool business signal that passes raw-to-card cardability and can become a Card should appear in that public Card set.
+- Business Signals has one internal compatibility Card set for the active date.
+- Every qualified Raw / Pool business signal that passes raw-to-card cardability and can become a Card should appear in that compatibility set.
 - Frontstage must consume formal Signal Cards. It must not re-run semantic cardability, support-sufficiency, customer-detail, ROI, or before/after-workflow blockers after the Card has been generated.
 - English source-title translation and source-backed fact extraction belong to raw-to-card ingestion. Missing or weak title/fact fields must fail before publication and route to the Card asset or generator; do not suppress a formal Card or replace its title in the frontstage selector.
 - The Card generator may satisfy Chinese fact normalization from captured original-source excerpts when its source-backed normalization produces usable Chinese facts. Do not require a redundant pre-populated `fact_translation_zh` field if the same ingestion stage has already produced the compliant fact material.
-- The public page must not split items into Top10 versus candidate-pool modes.
+- The compatibility set must not split items into Top10 versus candidate-pool modes.
 - Cards are sorted by importance / impact from high to low.
-- The page must not display sorting reasons, selection tiers, or candidate-only labels.
+- Sorting reasons, selection tiers, and candidate-only labels must not enter downstream public projections.
 
 ## Card Boundary
 
-Formal Signal Cards are persistent knowledge assets. They must be source-backed and pass semantic gates. A Raw / Pool item that cannot pass Card display requirements may stay in backend Pool evidence, but it must not appear as a separate public candidate-pool item.
+Formal Signal Cards are persistent compatibility assets. They must be source-backed and pass semantic gates. A Raw / Pool item that cannot pass Card display requirements may stay in backend Pool evidence, but it must not appear as a separate candidate-pool item.
 
-Besides product launches, funding rounds, and customer deployments, concrete AI commercial market-structure events can become Cards when source-backed: acquisitions / mergers, material partnerships, procurement / contracts, pricing or billing changes, regulatory approvals / antitrust actions, and material lawsuits / settlements. They must be normalized into the existing `case` or `product_service` Card types, not a fourth public type.
+Besides product launches, funding rounds, and customer deployments, concrete AI commercial market-structure events can become Cards when source-backed: acquisitions / mergers, material partnerships, procurement / contracts, pricing or billing changes, regulatory approvals / antitrust actions, and material lawsuits / settlements. They must be normalized into the existing `case` or `product_service` Card types, not a fourth type.
 
 Funding recognition must cover English and Chinese financing expressions, including `raises`, `closes`, `announcing our <amount> <round>`, `launches with <amount>`, `emerged from stealth with <amount>`, and `完成/获得/宣布 <amount> <round> 融资`. Rumors, future-tense items such as `将完成`, funding trackers, broad lists, and generic funding commentary stay backend-only.
 
@@ -121,7 +121,7 @@ A headline about helping, running, or automating a fundraise is not proof that t
 
 Funding confirmation is cluster-wide, not headline-local. Normalize optional company suffixes such as `AI` when clustering company + amount + round. If any same-event source says the round is pending, still coming together, or not closed, block every alternate-source version from formal Cards until a primary source or named investor confirms closing; a more assertive secondary headline must not override the contradiction.
 
-Public titles should be resolved during raw-to-card ingestion. English articles should enter the Card asset with a Chinese event title or an exact approved source-title translation entry. The unified pre-publication Business gate may block missing translation fields and route them to Raw/Card repair, but the frontstage builder must not silently hide a formal Card or replace its title because a separate frontstage lookup is missing. The Raw/Card title translation generator may produce a factual funding-title translation only when the original source title itself confirms a single-company financing event with amount / round wording such as `raises <amount>`, `announcing our <amount> <round>`, `launches with <amount>`, or `emerged from stealth with <amount>`. Do not use this exception for rumors, future-tense financing claims, funding trackers, broad lists, or commentary.
+Compatibility titles should be resolved during raw-to-card ingestion. English articles should enter the Card asset with a Chinese event title or an exact approved source-title translation entry. The unified pre-publication Business gate may block missing translation fields and route them to Raw/Card repair, but the compatibility builder must not silently hide a formal Card or replace its title because a separate lookup is missing. The Raw/Card title translation generator may produce a factual funding-title translation only when the original source title itself confirms a single-company financing event with amount / round wording such as `raises <amount>`, `announcing our <amount> <round>`, `launches with <amount>`, or `emerged from stealth with <amount>`. Do not use this exception for rumors, future-tense financing claims, funding trackers, broad lists, or commentary.
 
 Rumor detection must inspect the whole source title, not only its prefix. Titles containing `爆料`, `传闻`, `泄露`, `据称`, or equivalent language stay backend-only unless the same title independently confirms an official launch. Source-backed `How X used Y to achieve Z` case titles are valid case evidence and need deterministic Chinese title coverage when the exact translation registry is empty.
 
@@ -137,7 +137,7 @@ Funding Card facts should preserve amount / round plus investor, use of proceeds
 
 Fact extraction also belongs to raw-to-card ingestion. Missing customer / ROI / before-after workflow details are evidence-boundary notes, not frontstage blockers for a formal Signal Card.
 
-Frontstage summaries should reuse each Card asset's source-backed `价值描述` before category-level fallback text. Repeated category boilerplate is a frontstage build defect, not a Card-content shortage.
+Compatibility summaries should reuse each Card asset's source-backed `价值描述` before category-level fallback text. Repeated category boilerplate is a compatibility-build defect, not a Card-content shortage.
 
 Voluntary privacy pledges and similar policy/ethics events remain backend context unless the same source proves a separate product, funding, procurement, contract, or customer event.
 
@@ -158,7 +158,7 @@ When finishing, report:
 
 - Raw / Pool audit counts;
 - Signal Card count;
-- public Card count;
+- compatibility Card count;
 - rejected Raw / Pool candidates and gate reasons;
 - gates run;
 - whether changes were committed and deployed.

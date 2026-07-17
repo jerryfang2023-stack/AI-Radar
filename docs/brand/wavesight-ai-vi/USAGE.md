@@ -1,6 +1,6 @@
 # 观澜AI｜WaveSight AI VI 资产使用规范
 
-本目录是观澜AI V2 视觉识别系统的项目内基准资料库。后续任何网站页面、商业内参页面、组件库、截图验收、动效或品牌物料设计，必须先读取本目录，再进行实现。
+本目录是 WaveSight AI 当前视觉识别系统的项目内基准资料库。后续任何 V4 网站页面、行业报告详情、组件库、截图验收、动效或品牌物料设计，必须先读取本目录，再进行实现。
 
 ## 资产来源
 
@@ -73,7 +73,7 @@ docs/brand/wavesight-ai-vi/executable-svg/
 3. 不得去掉金色地平线、添加新的品牌母题。
 4. 不得把 Logo 改成雷达、眼睛、机器人、科技光圈、蓝紫渐变或其他通用 AI 视觉。
 5. 页面配色必须优先使用 `brand-tokens.css` 中的 `--gl-*` token。
-6. V2 公开页面全局背景使用 `#FFFDF8` / `--gl-bg-page`，与导航栏融合；卡片和内容容器使用半透明暖白纸面或 `--gl-paper`，不要把栏目 / 卡片背景直接铺成导航栏色。
+6. V4 公开页面全局背景使用 `#FFFDF8` / `--gl-bg-page`，与共享页面壳融合；卡片和内容容器使用半透明暖白纸面或 `--gl-paper`，不要把栏目 / 卡片背景直接铺成导航栏色。
 7. 正式横版 Logo 网页默认宽度不低于 `160px`，报告封面建议不低于 `220px`；小于 `120px` 宽时优先使用 symbol。
 8. 页面字体必须使用 `typography-guidelines.md`、`page-typography-position-guidelines.md` 与 `brand-tokens.css` 中的字体 token：中文标题用衬线，正文与界面用黑体，英文标签用 Inter 系，数字数据用 Mono 系。
 9. 页面生成前必须执行 Typography-first：先按 `agent-workflow/governance/typography-first-page-gate.md` 输出 Typography 页面位置表，再进入 Build & Release；不得等页面生成后才检查字体。
@@ -82,7 +82,7 @@ docs/brand/wavesight-ai-vi/executable-svg/
 11. 规范源图只能作为对照资料；需要进入页面或组件库的视觉元素，必须拆为 `executable-svg/` 下的单项 SVG。
 12. 所有 Logo、符号、信息卡片和动效分镜都优先引用 SVG 资产，不允许根据截图重画元素。
 13. 如需新增组件，必须基于现有 SVG 风格扩展，保持深海蓝、暖白、雾灰和少量香槟金。
-14. 导航、报告封面、商业内参、符号系统、数据卡、机会矩阵和动效必须与 `agent-workflow/product/DESIGN.md` 的 V2 VI 硬基线一致。
+14. V4 页头 / 侧栏、报告封面、符号系统、数据卡、机会矩阵和动效必须与 `context/02-vi-style.md`、`context/frontstage-page-contracts.md` 和本目录 VI 资产一致。
 
 ## 设计验收口径
 

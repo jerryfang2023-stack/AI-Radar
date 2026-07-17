@@ -37,7 +37,7 @@ This file records stable project memory for WaveSight AI / Guanlan AI. It is not
 
 - Column-level production is independent; site-level publication is unified.
 - Business Signals, First-Line Viewpoints, and Community Intelligence each own their monitoring, gates, persistence, and PR boundary.
-- Reports Center and Dashboard follow the relevant upstream data chains.
+- Industry Reports and Dashboard follow the relevant upstream data chains.
 - Hermes supervises, records, classifies, and hands off failures.
 - Codex repairs root causes, validates fixes, records prevention, and prepares git changes.
 - Hermes should not directly rewrite production rules, merge PRs, bypass gates, or judge Codex work by commit author name.

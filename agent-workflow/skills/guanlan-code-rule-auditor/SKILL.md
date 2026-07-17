@@ -1,9 +1,9 @@
 ---
 name: guanlan-code-rule-auditor
-description: Use when auditing WaveSight AI / Guanlan code, rules, skills, scripts, GitHub Actions, gates, or data-flow logic for bugs, contradictions, dead paths, V2-to-V3 migration failures, and unnecessary complexity. Covers the Business Signals Card, relationship-graph, and trend-candidate chain. Do not use it to run daily production, edit same-day production data, auto-fix findings, push, or deploy.
+description: Use when auditing WaveSight AI / Guanlan code, rules, skills, scripts, GitHub Actions, gates, or data-flow logic for bugs, contradictions, dead paths, migration failures, and unnecessary complexity. Covers the V4 factual core plus V3 internal Card, relationship-graph, and trend-candidate compatibility chain. Do not use it to run daily production, edit same-day production data, auto-fix findings, push, or deploy.
 metadata:
   guanlan:
-    version: "1.0.0"
+    version: "1.0.1"
     lane: "Code and rule audit"
     status: "governance"
     order: 115
@@ -58,7 +58,7 @@ Keep First-Line Viewpoints, Community Intelligence, AI Hardware, and Enterprise 
 2. **Classify commands before execution.** Inspect an audit/check command and its children for writes, sync, generation, repair, incident closure, Git, or deployment behavior. Prefer direct read-only children or a proven dry-run mode. Never infer safety from a command name.
 3. **Build the active execution map.** Follow only reachable commands, workflow steps, imports, arguments, outputs, and gates. Mark retired or unreachable paths separately.
 4. **Run mechanical checks first.** Confirm files and commands exist, arguments are consumed, outputs feed the next stage, workflow conditions are reachable, generated files have one owner, and gates inspect the fields they claim to inspect.
-5. **Run semantic review.** Apply the five axes in the checklist: correctness, simplicity/readability, architecture/stage ownership, security/integrity, and performance/reliability. Then apply Guanlan-specific source-of-truth and V3 boundaries.
+5. **Run semantic review.** Apply the five axes in the checklist: correctness, simplicity/readability, architecture/stage ownership, security/integrity, and performance/reliability. Then apply Guanlan-specific V4 source-of-truth and V3 internal compatibility boundaries.
 6. **Trace symptoms upstream.** Identify the earliest stage that creates the bad state. Do not repair an ingestion defect in a frontstage filter or close a recurring incident by editing only same-day data.
 7. **Challenge necessity.** For every rule, gate, workflow, fallback, compatibility branch, and generated artifact, state its owner and consumer. Flag items with no current consumer, duplicate ownership, contradictory thresholds, or no failure-prevention value.
 8. **Report before repair.** Produce prioritized, evidence-backed findings and a minimal repair/validation plan. Change files only when the user explicitly requests the repair phase.
@@ -82,7 +82,7 @@ Use `confirmed`, `likely`, or `needs-runtime-proof`. Do not present search hits,
 - Stay read-only during audit mode.
 - Do not run daily production, publish data, close Hermes items, push, or deploy.
 - Do not lower evidence, Card, or release gates merely to make a workflow green.
-- Do not preserve retired V2 behavior when it conflicts with current V3 rules.
+- Do not preserve retired V2/V3 page behavior when it conflicts with current V4 rules.
 - Do not treat provider quota, Raw coverage, or lane-balance diagnostics as release blockers unless current context explicitly does.
 - Do not recommend a new abstraction, workflow, dependency, or gate without naming the duplicate or failure it replaces.
 

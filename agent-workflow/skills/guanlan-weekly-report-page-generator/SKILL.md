@@ -1,15 +1,15 @@
 ---
 name: guanlan-weekly-report-page-generator
-description: Use when creating, updating, or repairing WaveSight AI weekly report frontstage pages from `01-SiteV2/content/08-report/`. Applies to Reports Center weekly report entries, weekly report detail pages, time-window selectors, report archive wiring, Guanlan VI page styling, and converting weekly report Markdown into editorial page modules. Do not use for writing the weekly report judgment itself; use `guanlan-weekly-business-change-radar` first.
+description: Use when creating, updating, or repairing WaveSight AI weekly report frontstage pages from `01-SiteV2/content/08-report/`. Applies to Industry Reports weekly entries, weekly report detail pages, time-window selectors, report archive wiring, Guanlan VI page styling, and converting weekly report Markdown into editorial page modules. Do not use for writing the weekly report judgment itself; use `guanlan-weekly-business-change-radar` first.
 metadata:
   guanlan:
-    version: "1.0.2"
-    lane: "Reports Center"
+    version: "1.0.3"
+    lane: "Industry Reports"
     status: "current sub-skill"
     order: 91
     responsibility: "Generate and maintain weekly report frontstage pages from the Obsidian content source under `01-SiteV2/content/08-report/`."
-    upstream: "weekly report Markdown, Reports Center page, Guanlan VI rules"
-    downstream: "weekly report detail page, Reports Center weekly report entry, page styles, version metadata"
+    upstream: "weekly report Markdown, Industry Reports page, Guanlan VI rules"
+    downstream: "weekly report detail page, Industry Reports weekly entry, page styles, version metadata"
     gates: "content-source discipline, user preference memory, Guanlan VI fit, no table-heavy rendering, responsive visual smoke, frontstage regression"
     recent_learning: "User preference is explicit: delete generic helper/navigation copy, avoid static date text, avoid raw tables, and keep weekly modules flexible except the watchlist anchor."
     mirrored_in_skill_store: true
@@ -20,7 +20,7 @@ metadata:
 
 ## Purpose
 
-Turn accepted weekly report Markdown into a WaveSight frontstage experience. This skill handles page structure, visual modules, Reports Center wiring, version metadata, and validation. It does not decide the weekly business judgment.
+Turn accepted weekly report Markdown into a WaveSight frontstage experience. This skill handles page structure, visual modules, Industry Reports wiring, version metadata, and validation. It does not decide the weekly business judgment.
 
 ## Required Reads
 
@@ -54,11 +54,11 @@ For detailed rules, load:
    - Generate the visible title from the report content, not from a generic label such as “本周 AI 商业变化判断”.
    - Preserve the time window as a selector on both the Intelligence Map entry and detail page.
 
-3. Build the Reports Center entry.
+3. Build the Industry Reports entry.
    - Keep weekly reports in the Industry Reports area of `intelligence-map.html`.
    - `reports.html` is a compatibility redirect only and must not become a second report center.
    - Do not push relation paths or decorative graph modules above the report-first entry.
-   - Do not restore Trend Candidates or History modules on the Reports Center page.
+   - Do not restore Trend Candidates or History modules on the Industry Reports page.
    - Show report counts as compact tags, not boxed KPI cards.
 
 4. Build the detail page.
@@ -71,14 +71,14 @@ For detailed rules, load:
 
 5. Update version metadata when releasing.
    - Main site version lives in `meta[name="wavesight-version"]` and must match `SITE-V4.1.0-unified-frontstage` for the unified-frontstage release.
-   - Reports Center column version lives in `meta[name="wavesight-column-version"]`.
+   - Industry Reports column version lives in `meta[name="wavesight-column-version"]`.
    - Weekly source path lives in `meta[name="weekly-report-source"]`.
    - Update `context/version-ledger.md` only for accepted release changes.
 
 6. Validate.
    - Run syntax checks for touched JS if any.
    - Run `node agent-workflow/tools/frontstage-regression-gate.mjs`.
-   - Use Playwright visual smoke on desktop and mobile for the Reports Center entry and weekly detail page.
+   - Use Playwright visual smoke on desktop and mobile for the Industry Reports entry and weekly detail page.
    - Check there are no `<table>` elements on the weekly detail page unless the user explicitly asks for a raw data appendix.
 
 ## Hard Rules

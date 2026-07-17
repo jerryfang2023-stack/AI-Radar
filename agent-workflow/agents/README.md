@@ -6,7 +6,7 @@
 流程驱动的轻 Agent + 可复用 Skill
 ```
 
-Agent 不再按栏目、页面或传统岗位碎片拆分。Agent 只负责生产流程中的关键责任节点；栏目写作、文案、字体、监测 QC、今日观察等可复用能力沉淀为 Skill。
+Agent 不再按栏目、页面或传统岗位碎片拆分。Agent 只负责生产流程中的关键责任节点；报告写作、页面生成、字体、监测 QC 等可复用能力沉淀为 Skill。
 
 观澜 AI 的目标是 AI Native。Agent 不只是分工表，而要形成联动：持续感知外部变化，把来源和证据转化为结构化情报资产，再经由表达、实现、发布、复盘进入下一轮生产。所有 Agent 协作优先通过结构化 handoff、质量门和自动化任务衔接，避免靠长提示词和人工转述维持流程。
 
@@ -203,9 +203,8 @@ Skill 是能力模块，不是流程 owner。
 | 每日监测 | `skills/guanlan-daily-monitor/SKILL.md` |
 | 监测预闸门 | `skills/guanlan-monitor-quality-gate/SKILL.md` |
 | Raw / Pool 质检 | `skills/guanlan-daily-monitor-qc/SKILL.md` |
-| 全站基础文案 | `skills/guanlan-copy-style/SKILL.md` |
-| 全站基础文案 QC | `skills/guanlan-copy-style-qc/SKILL.md` |
-| 今日观察选题 / 写作 / QC | `guanlan-daily-observation*` 系列 Skill |
+| V4 页面字段与表达 | `context/frontstage-page-contracts.md` + 目标数据合同 |
+| 报告页表达 | 对应周报 / 月报页面生成 Skill |
 | 字体位置审查 | `guanlan-typography-qc` |
 
 原则：
@@ -221,7 +220,7 @@ Skill 是能力模块，不是流程 owner。
 |---|---|---|
 | 新增栏目或调整导航 | Product Commander | Plan-first、产品结构 |
 | 优化首页 / 栏目页 / 详情页 | Experience & Editorial -> Build & Release | 页面 / 文案 / Typography Harness、VI、Typography、Copy |
-| 修改普通页面文案 | Experience & Editorial | `guanlan-copy-style` |
+| 修改普通页面文案 | Experience & Editorial | V4 页面合同、目标数据合同、VI |
 | 每日监测规则调整 | Intelligence Engine -> Build & Release | 每日监测 Harness、daily monitor、monitor QC |
 | Raw / Pool 质量下降 | Intelligence Engine | 每日监测 Harness、monitor quality gate、source rules |
 | 自动化脚本改造 | Build & Release | 对应自动化 prompt / quality gates |

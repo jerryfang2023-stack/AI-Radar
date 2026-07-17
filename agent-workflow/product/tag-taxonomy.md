@@ -1,6 +1,6 @@
 # Tag Taxonomy｜标签体系
 
-Compatibility notice: this TAG-V2 taxonomy is retained only for frozen V3 Cards, Reports Center, and page rendering. Data Center V4 uses `tag-taxonomy-v3.json`; V4 tags are Claim-level evidence assertions and cannot represent structured fields, ranking, eligibility, opportunity, or trend judgment.
+Compatibility notice: this TAG-V2 taxonomy is retained only for frozen V3 Cards and downstream Industry Reports projections. Data Center V4 uses `tag-taxonomy-v3.json`; V4 tags are Claim-level evidence assertions and cannot represent structured fields, ranking, eligibility, opportunity, or trend judgment.
 
 更新时间：2026-07-11
 version：TAG-V2.0.0-semantic-boundaries
@@ -16,7 +16,7 @@ owner：Intelligence Engine / Experience & Editorial
 | layer | 字段 | 作用 | 边界 |
 |---|---|---|---|
 | 商业语义标签 | `formal_tags` | Signal Card 检索、筛选、关系图辅助、趋势候选上下文 | 只允许 `track / function / scenario / customer / evidence` |
-| 机会信号 | `opportunity_signals` | Reports Center 的 Entry Point Map / Product Pain Map | 必须贴近来源；不从标签推导 |
+| 机会信号 | `opportunity_signals` | Industry Reports 的 Entry Point Map / Product Pain Map | 必须贴近来源；不从标签推导 |
 | 结构化元数据 | `source_type`、`market_regions`、`trend_state` | 来源追踪、地域、趋势状态 | 不进入 `formal_tags`，不参与标签聚合 |
 | 栏目私有分类 | `column_tags` 或栏目自有字段 | First-Line Viewpoints、Community Intelligence 内部筛选 | 不作为 Business Signals 事实、关系边或趋势证据 |
 

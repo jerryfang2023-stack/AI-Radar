@@ -1,9 +1,9 @@
 ---
 name: guanlan-trend-candidate-writer
-description: Use only in downstream insight applications or frozen V3 page compatibility to judge trend candidates. Never write trend judgments, maturity, direction, or recommendations into Data Center V4 canonical data.
+description: Use only in downstream insight applications or V3 internal compatibility to judge trend candidates. Never write trend judgments, maturity, direction, or recommendations into Data Center V4 canonical data.
 metadata:
   guanlan:
-    version: "1.0.0"
+    version: "1.0.1"
     lane: "Business Signals"
     status: "downstream application"
     order: 80
@@ -18,7 +18,7 @@ metadata:
 
 # Guanlan Trend Candidate Writer
 
-This is not a Data Center V4 skill. Its outputs are downstream interpretation or frozen-page compatibility only.
+This is not a Data Center V4 skill. Its outputs are downstream interpretation or V3 internal compatibility only.
 
 ## Use For
 
@@ -41,7 +41,7 @@ Open only what the task needs:
 
 Read only when needed:
 
-- `agent-workflow/product/evidence-and-routing-rules.md` when evidence eligibility is unclear.
+- `context/07-v3-intelligence-generation-rules.md` when evidence eligibility is unclear.
 - `01-SiteV2/knowledge/10-Templates/trend-candidate-template.md` when creating a new candidate from scratch.
 - Existing trend candidates from the past 7-14 days when deciding whether to update rather than create.
 - `evals/trend-candidate-evals.md` when creating, repairing, auditing, or updating this skill.

@@ -1,7 +1,7 @@
 ---
 status: current
-scope: v3-3-automation
-last_updated: 2026-07-16
+scope: site-v4-automation
+last_updated: 2026-07-17
 use_when:
   - github automation
   - daily monitoring
@@ -10,9 +10,9 @@ use_when:
 priority: current
 ---
 
-# SITE-V4.0 Data Center Automation Loop
+# SITE-V4.1 Data Center Automation Loop
 
-The daily production workflow now dual-writes the Data Center V4 factual bundle after Raw evidence supply and before frozen V3 Card/page compatibility work. V4 build, integrity gate, and JSONL materialization are release-blocking. Legacy trend, opportunity, Card, and page stages remain only to keep the current frontstage operational while page planning is frozen.
+The daily production workflow builds the Data Center V4 factual bundle after Raw evidence supply, then builds frozen V3 Card / graph / trend assets only as internal compatibility and downstream-application input. V4 build, integrity gate, and JSONL materialization are release-blocking. Retired V3 page assets are not generated or deployed.
 
 SITE-V4.1 automation is lane-independent for production and site-unified for publication. First-Line Viewpoints and Community Intelligence keep independent data gates and are projected into the V4 Data Center shell. Business Signals continues as an internal V3.3.6.3 compatibility lane after the V4 integrity gate. Industry Reports publishes monthly / weekly reports and source-backed opportunity maps from `industry-reports-frontstage.json`; no public page reads the V3 desk JSON. Hermes remains a problem monitor: failed production runs are recorded by Daily Problem Watchdog for targeted Codex repair.
 
@@ -49,8 +49,8 @@ Execution order:
 4. Persist Raw / Pool assets.
 5. Build SourceArtifact / RawDocument / Claim / Entity / CanonicalEvent and FDE / hardware / TAG-V4 projections.
 6. Run the Data Center V4 integrity gate and materialize V4 JSONL tables.
-7. Generate Signal Card and trend assets only for frozen V3 page compatibility, then run their existing gates.
-8. Build and gate the existing business-signal frontstage and operations data.
+7. Generate Signal Card, relationship, and trend assets only for V3 internal compatibility, then run their existing gates.
+8. Build and gate V4 frontstage projections, Industry Reports application data, and operations data.
 9. Run the pre-commit freshness gate and write the persistent asset manifest.
 10. Push the automation branch, create or update the PR, merge after gates pass, and deploy through GitHub Pages.
 
@@ -58,9 +58,9 @@ The four production states are `evidence_supply`, `card_quality`, `frontstage_co
 
 An existing `automation/business-signals-<date>` branch must not block a scheduled rerun. The workflow should update the same branch and PR instead of skipping, because a previous delayed or partial run may have left the branch stale.
 
-`intelligence-graph-index.json` is the stable machine-readable entry for Hermes Agent / data-officer analysis. It is generated from the same Card / backend audit / relationship / trend-candidate dataset as the business-signal frontstage, and must be committed and deployed whenever `v3-data-observation-desk.json` is updated.
+`intelligence-graph-index.json` is the stable machine-readable entry for Hermes Agent / data-officer analysis. It is generated from the same Card / backend audit / relationship / trend-candidate compatibility dataset and must be committed whenever `v3-data-observation-desk.json` is updated. Both files stay out of the GitHub Pages artifact.
 
-Hermes must not infer the active public Business Signals set from the graph-analysis subsets. For current-day public Card count and category mix, read `v3-data-observation-desk.json.meta.activeDate` and `frontstageCards.filter(card.date === activeDate)`, or read `intelligence-graph-index.json.todayFrontstageCards` / `summary.todayFrontstageCards`. `intelligence-graph-index.json.cards` is a historical archive, and `coreSignalCards` is a relationship-analysis subset; neither is the current frontstage set. Normalize `product-service` to `product_service` for analytics, and compute funding counts only from active-date public Cards.
+Hermes may use `v3-data-observation-desk.json.meta.activeDate` and `frontstageCards.filter(card.date === activeDate)`, or `intelligence-graph-index.json.todayFrontstageCards` / `summary.todayFrontstageCards`, only to measure the internal Card compatibility lane. These counts are not the public V4 event set. `intelligence-graph-index.json.cards` is a historical archive, and `coreSignalCards` is a relationship-analysis subset. Normalize `product-service` to `product_service` for compatibility analytics.
 
 ## Morning Production And Problem Monitoring
 
@@ -182,7 +182,7 @@ This skill lane does not write business-signal Cards, relationship graph data, t
 | Lane | Primary runner | Main trigger | Success gate | Persistence |
 |---|---|---|---|---|
 | Business Signals | GitHub Actions + `agent-workflow/skills/guanlan-business-signals-monitor/SKILL.md` | `.github/workflows/daily-persistent-assets-pr.yml` at 08:57 Asia/Shanghai; `.github/workflows/business-signals-health-dispatch.yml` at 09:27 for conditional dispatch; Daily Problem Watchdog records failures to inbox | V3 evidence-supply gate, Card generation/editorial, accepted-Card relationship graph, trend candidate/no-candidate decision, unified three-block frontstage gate, pre-commit freshness | independent automation PR to `main` |
-| Reports Center / Opportunity Maps | GitHub Actions + `agent-workflow/skills/guanlan-opportunity-radar-updater/SKILL.md` | follows the Business Signals Card chain for map evidence; report pages update through report page generator skills | unified Business frontstage gate from the business-signal chain + opportunity radar skill rules when map fields change + report page validation when report wiring changes | included in Business / report-center PRs depending on changed assets |
+| Industry Reports / Opportunity Maps | GitHub Actions + `agent-workflow/skills/guanlan-opportunity-radar-updater/SKILL.md` | follows the compatibility Card chain for map evidence; report pages update through report page generator skills | compatibility Card gate + opportunity radar skill rules when map fields change + report page validation when report wiring changes | included in Business / industry-report PRs depending on changed assets |
 | First-Line Viewpoints | Local Codex morning RSS collection/build/sync + GitHub Actions RSS fallback + local afternoon follow-builders skill lane | `builder-observation-daily-sync` at 08:30 Asia/Shanghai for morning RSS collection, page-data build, and Obsidian sync; `.github/workflows/daily-first-line-viewpoints-pr.yml` at 09:17 Asia/Shanghai for RSS fallback; `agent-workflow/tools/install-follow-builders-skill-task.ps1` at 16:10 Asia/Shanghai for the skill publish plus Obsidian sync; Daily Problem Watchdog records failures to inbox | `agent-workflow/tools/assert-follow-builders-data.mjs` + `agent-workflow/tools/sync-follow-builders-to-opinion-timelines.mjs` idempotency for RSS and skill outputs; local publish report, Obsidian sync counts, and branch / PR for skill lane | independent automation PR to `main` after builders gate, Obsidian sync, and local skill publish pass |
 | Community Intelligence | Windows task `WaveSight Community Intelligence Daily` + Codex automation `community-intelligence-daily-local` + `agent-workflow/skills/guanlan-community-intelligence-monitor/SKILL.md` + GitHub publish workflow | Windows local collection at 08:30 Asia/Shanghai; Codex local fallback / repair at about 09:00 Asia/Shanghai after checking same-date output health; `.github/workflows/daily-community-intelligence-pr.yml` at 08:45 / 09:35 for publication; Daily Problem Watchdog records failures to inbox | `agent-workflow/tools/assert-community-intelligence-data.mjs` | local files and archive, then independent community PR to `main` |
 
@@ -430,7 +430,7 @@ Do not let a red latest workflow, missing GitHub run, or non-zero Windows task r
 
 Lane-specific rules:
 
-- Business Signals is data-healthy when activeDate matches the production date, public Cards exist, `intelligence-graph-index.json` exists, and the Business frontstage / monitor gates pass. `frontstageSelection.supplyConstrained=true` is warning-only when public Cards and gates pass. A red Business workflow after healthy same-date data is a publication / branch / PR repair.
+- Business Signals compatibility is data-healthy when activeDate matches the production date, compatibility Cards exist, `intelligence-graph-index.json` exists, and the Card / monitor gates pass. `frontstageSelection.supplyConstrained=true` is warning-only when compatibility Cards and gates pass. A red workflow after healthy same-date data is a publication / branch / PR repair.
 - First-Line Viewpoints is public-lane healthy when same-date `follow-builders-daily.json` exists, remarks / builders meet floors, and the follow-builders data gate passes. Missing GitHub fallback state is observability only when local data is healthy.
 - Community Intelligence local collection is healthy when same-date `community-intelligence.json` exists, items / links meet floors, collector errors are zero, archive outputs exist, and the community gate passes. A non-zero scheduled-task `LastTaskResult` is warning-only after healthy local data; a red GitHub publish workflow after healthy local data is a publish workflow / PR repair.
 
@@ -548,7 +548,7 @@ The intended morning flow is: 08:57 primary production, 09:27 conditional health
 
 ## Data Observation Multi-Agent Review Trial
 
-The data observation agent layer is a one-week sidecar review for the whole observation desk. It does not replace the three production lanes or Reports Center, and it must not edit Raw, Pool, Cards, frontstage data, PRs, scheduled tasks, or deployment state.
+The data observation agent layer is a one-week sidecar review for the whole observation desk. It does not replace the three production lanes or Industry Reports, and it must not edit Raw, Pool, Cards, frontstage data, PRs, scheduled tasks, or deployment state.
 
 Run manually:
 
@@ -571,7 +571,7 @@ Default outputs:
 
 The five agents are horizontal review roles, not lane owners:
 
-| Agent | Business Signals | First-Line Viewpoints | Community Intelligence | Reports Center |
+| Agent | Business Compatibility | First-Line Viewpoints | Community Intelligence | Industry Reports |
 |---|---|---|---|---|
 | Source Scout | source coverage gaps, category gaps, source diversity | remarks / builder coverage | item / link coverage | relationship-map coverage |
 | Evidence Verifier | six Signal Card gates and source URL checks | original URL, translation, formal tags | lead evidence and URL presence | Card reference integrity |
@@ -583,9 +583,9 @@ Agent review gate:
 
 - `pass`: no blockers and no warnings;
 - `warning`: no blockers, but source diversity, opportunity-signal coverage, trend thinness, or lead evidence needs review;
-- `fail`: a public Business Card lacks source auditability, has invalid Card type, uses social/community/opinion material as direct evidence, or otherwise violates the current six-gate boundary.
+- `fail`: a compatibility Card lacks source auditability, has invalid Card type, uses social/community/opinion material as direct evidence, or otherwise violates the current six-gate boundary.
 
-The agent review task should run after the morning production / self-repair window. It is scheduled at 10:05 by default so it can read same-date data, Codex self-repair results, and Reports Center artifacts without competing with production. A `fail` status in the agent review report is an analysis result, not a production rerun trigger. Repair still goes through the existing lane scripts, gates, and Codex handoff path.
+The agent review task should run after the morning production / self-repair window. It is scheduled at 10:05 by default so it can read same-date data, Codex self-repair results, and Industry Reports artifacts without competing with production. A `fail` status in the agent review report is an analysis result, not a production rerun trigger. Repair still goes through the existing lane scripts, gates, and Codex handoff path.
 
 ## Monitor Skill Self-Improvement
 

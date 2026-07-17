@@ -86,6 +86,16 @@ const retiredFrontstagePages = [
   "01-SiteV2/site/builder-detail.html",
 ].map((file) => path.join(root, file));
 
+const retiredV3PageAssets = [
+  "01-SiteV2/site/assets/wavesight-nav.css",
+  "01-SiteV2/site/assets/v3-data-observation-desk.css",
+  "01-SiteV2/site/assets/v3-data-observation-desk.js",
+  "01-SiteV2/site/assets/follow-builders.css",
+  "01-SiteV2/site/assets/follow-builders.js",
+  "01-SiteV2/site/assets/community-intelligence.css",
+  "01-SiteV2/site/assets/community-intelligence.js",
+].map((file) => path.join(root, file));
+
 const requiredOperationalPages = [
   "01-SiteV2/site/admin.html",
   "01-SiteV2/site/operations-console.html",
@@ -144,6 +154,9 @@ function collectRetiredPageIssues() {
   const issues = [];
   for (const file of retiredFrontstagePages) {
     if (fs.existsSync(file)) issues.push(issue(file, "retired_v2_frontstage_page_still_exists"));
+  }
+  for (const file of retiredV3PageAssets) {
+    if (fs.existsSync(file)) issues.push(issue(file, "retired_v3_page_asset_still_exists"));
   }
   for (const file of requiredOperationalPages) {
     if (!fs.existsSync(file)) issues.push(issue(file, "missing_required_operational_page"));
