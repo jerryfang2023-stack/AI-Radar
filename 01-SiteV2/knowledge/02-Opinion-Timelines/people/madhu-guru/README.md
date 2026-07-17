@@ -1,14 +1,15 @@
 ---
 type: opinion_person_timeline
 person_name: "Madhu Guru"
-opinion_count: 16
-latest_date: 2026-07-15
+opinion_count: 17
+latest_date: 2026-07-16
 ---
 
 # Madhu Guru 观点时间线
-共 16 条观点，按人物 + 日期文件聚合。
+共 17 条观点，按人物 + 日期文件聚合。
 ## 日期
 
+- [2026-07-16](./2026-07-16.md)
 - [2026-07-15](./2026-07-15.md)
 - [2026-07-09](./2026-07-09.md)
 - [2026-07-08](./2026-07-08.md)

@@ -1,14 +1,15 @@
 ---
 type: opinion_person_timeline
 person_name: "Boris Cherny"
-opinion_count: 19
-latest_date: 2026-07-15
+opinion_count: 22
+latest_date: 2026-07-17
 ---
 
 # Boris Cherny 观点时间线
-共 19 条观点，按人物 + 日期文件聚合。
+共 22 条观点，按人物 + 日期文件聚合。
 ## 日期
 
+- [2026-07-17](./2026-07-17.md)
 - [2026-07-15](./2026-07-15.md)
 - [2026-07-08](./2026-07-08.md)
 - [2026-07-06](./2026-07-06.md)
