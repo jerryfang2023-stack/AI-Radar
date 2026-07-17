@@ -3,7 +3,7 @@ name: guanlan-weekly-report-page-generator
 description: Use when creating, updating, or repairing WaveSight AI weekly report frontstage pages from `01-SiteV2/content/08-report/`. Applies to Industry Reports weekly entries, weekly report detail pages, time-window selectors, report archive wiring, Guanlan VI page styling, and converting weekly report Markdown into editorial page modules. Do not use for writing the weekly report judgment itself; use `guanlan-weekly-business-change-radar` first.
 metadata:
   guanlan:
-    version: "1.0.3"
+    version: "1.0.4"
     lane: "Industry Reports"
     status: "current sub-skill"
     order: 91
@@ -21,6 +21,8 @@ metadata:
 ## Purpose
 
 Turn accepted weekly report Markdown into a WaveSight frontstage experience. This skill handles page structure, visual modules, Industry Reports wiring, version metadata, and validation. It does not decide the weekly business judgment.
+
+The periodic controller may invoke this skill only after the weekly content acceptance gate passes. Page generation and page regression are the second gate; a failed content gate must leave the frontstage unchanged.
 
 ## Required Reads
 

@@ -3,7 +3,7 @@ name: guanlan-monthly-business-structure-report
 description: Produce WaveSight AI monthly business structure and opportunity reports. Use when writing, revising, or auditing a monthly report from Business compatibility Cards, weekly reports, Community Intelligence, First-Line Viewpoints, Industry Reports context, trend candidates, or opportunity maps. The report must diagnose industry-structure change, adjudicate trends, build an opportunity map, and define next-month verification conditions. Do not use for daily Cards, weekly reports, frontstage page generation, or business-signal fact creation.
 metadata:
   guanlan:
-    version: "0.1.1"
+    version: "0.1.2"
     lane: "Business Signals"
     status: "downstream application"
     order: 95
@@ -45,6 +45,10 @@ Default output path:
 ```
 
 Use `status: draft` unless the user explicitly asks to publish and validation is complete.
+
+## Cadence
+
+Run at 14:00 Asia/Shanghai on the first Monday-Friday weekday of each month and cover the previous complete calendar month. The same controller also creates the monthly maintenance report. After the monthly Markdown is written, `assert-periodic-report-content.mjs` must pass before the monthly page-generator skill may run.
 
 ## Core Method
 

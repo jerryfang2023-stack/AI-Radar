@@ -3,7 +3,7 @@ name: guanlan-weekly-business-change-radar
 description: 观澜AI周度商业变化判断。从 Signals / Opinions / Community 三方数据中提取趋势链、机会卡、反共识判断和热力图，输出面向企业老板和创业者的周度 AI 商业机会雷达报告。
 metadata:
   guanlan:
-    version: "1.0.0"
+    version: "1.0.1"
     lane: "Business Signals"
     status: "downstream application"
     order: 90
@@ -190,6 +190,8 @@ Before finalizing, verify:
 8. Opportunity cards include itemized 100-point scoring breakdown
 
 ## Output Path
+
+The automated cadence is Monday 10:30 Asia/Shanghai. Each run covers the previous complete Monday through Sunday. After both Markdown outputs are written, `assert-periodic-report-content.mjs` must pass before the weekly page-generator skill may run.
 
 双路径写入，每周生成两份（内容相同，用途不同）：
 
