@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-17T15:01:31.906Z",
+    "generatedAt": "2026-07-17T18:20:10.588Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 748,
-    "quarantinedEventCount": 32
+    "eventCount": 727,
+    "quarantinedEventCount": 50
   },
   "entity": {
     "id": "EN-59ae856cd788d0f5",
@@ -26,10 +26,8 @@
     "viewpointIds": [],
     "classificationRefs": [
       "TX-industry-manufacturing",
-      "TX-use_case-robotics_automation",
       "TX-industry-healthcare_life_sciences",
       "TX-industry-telecommunications",
-      "TX-technology-multimodal",
       "TX-technology-embodied_ai"
     ],
     "relatedEntityIds": [],
@@ -57,7 +55,7 @@
         "eventGroup": "AI 硬件",
         "status": "announced",
         "statusLabel": "已公布",
-        "title": "日本启动 Noetra 国家级 AI 基础设施，计划采购 2.75 万枚 NVIDIA Rubin 芯片",
+        "title": "NVIDIA 联手日本政经界发布全球首个国家级 AI 基础设施",
         "displayTags": [
           {
             "dimensionId": "product_form",
@@ -72,22 +70,10 @@
             "name": "数据与模型基础设施"
           },
           {
-            "dimensionId": "use_case",
-            "id": "robotics_automation",
-            "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
-          },
-          {
             "dimensionId": "technology",
             "dimensionName": "技术",
             "id": "embodied_ai",
             "name": "具身智能"
-          },
-          {
-            "dimensionId": "technology",
-            "dimensionName": "技术",
-            "id": "multimodal",
-            "name": "多模态"
           },
           {
             "dimensionId": "industry",
@@ -130,7 +116,6 @@
       "valueId": "manufacturing",
       "eventIds": [
         "EV-02882e6f5e1902c6",
-        "EV-59da4e6dc6b61c4a",
         "EV-82020f9eaea90951",
         "EV-a1e3aeedc80c61b9",
         "EV-adf92ecb7cd8714f",
@@ -156,8 +141,6 @@
         "EN-2a920347dfcf07a7",
         "EN-d5edfd3c9768e212",
         "EN-ea3bd73e2b506e00",
-        "EN-54cc885945b8f2f2",
-        "EN-96eebba49dbbf422",
         "EN-047364b9be67f665",
         "EN-3ccbd9105a45d8fc",
         "EN-9fbf261b62c1d7c0",
@@ -186,92 +169,6 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-05-20",
-      "lastSeen": "2026-07-17"
-    },
-    {
-      "id": "TX-use_case-robotics_automation",
-      "name": "机器人与物理自动化",
-      "nodeType": "use_case",
-      "typeLabel": "应用场景",
-      "valueId": "robotics_automation",
-      "eventIds": [
-        "EV-59da4e6dc6b61c4a",
-        "EV-adf92ecb7cd8714f",
-        "EV-5a26f343846cb8ad",
-        "EV-9fa9822969d3c3fd",
-        "EV-44c9a50b99c76a70",
-        "EV-cafe435ddd007821",
-        "EV-434dcf1813a84ead",
-        "EV-9f067d8f0d23eb48",
-        "EV-f059fd80d668c6bc",
-        "EV-234ad54940674bf6",
-        "EV-2fab4396000198d2",
-        "EV-3fb492fb45980541",
-        "EV-39848cdd62c00e59",
-        "EV-4faa2bcf2e42e60c",
-        "EV-70530734d19a478e",
-        "EV-303b418c63895ba6",
-        "EV-71f78f2026b54ba2",
-        "EV-57565fc2e7502c59",
-        "EV-4536910c045ae530",
-        "EV-473f852b374d8b1c",
-        "EV-49751dfc7d2f6d6c",
-        "EV-66338f5fb682617e",
-        "EV-e6771f58d7c2a050",
-        "EV-b88affdec306a75a",
-        "EV-85373b8ec9148127",
-        "EV-52e1ac21c25a0a09",
-        "EV-ed58c2c69290ee4c",
-        "EV-66970d4aea37111f",
-        "EV-cbc8b53d4f4478b1",
-        "EV-4beb890f0879aeaf",
-        "EV-ad64347138da72bb"
-      ],
-      "entityIds": [
-        "EN-54cc885945b8f2f2",
-        "EN-96eebba49dbbf422",
-        "EN-9fbf261b62c1d7c0",
-        "EN-7d3194f79e645c42",
-        "EN-b0532e1af75cc4ab",
-        "EN-cbc62794911ff31b",
-        "EN-b51b27d89f9ea747",
-        "EN-245f1e177c5169cb",
-        "EN-59ae856cd788d0f5",
-        "EN-8d4321d936320802",
-        "EN-0f3360879e746531",
-        "EN-e3b1bf3dab957ffe",
-        "EN-9700d41909cf810f",
-        "EN-6f21a653c48f4f19",
-        "EN-4dbe391b8fcf977a",
-        "EN-72138e570e5103e2",
-        "EN-8147e6fed86d42c1",
-        "EN-522d3edeb64a7ca4",
-        "EN-c608c4787821de1b",
-        "EN-8f71c4871a160172",
-        "EN-2f795798add63d7f",
-        "EN-8afd897b5b887b06",
-        "EN-047364b9be67f665",
-        "EN-30081094f2a8c83d",
-        "EN-bbdefa2950f49882",
-        "EN-7ca2b7da6e0f8654",
-        "EN-3a7bd3e2360a3d29",
-        "EN-6fcba5d96a4fadfd"
-      ],
-      "fdeIds": [
-        "FDE-13cf52a1201f0544",
-        "FDE-45ad6eae0d326429",
-        "FDE-a28fee3a33c46db9",
-        "FDE-dadf0e9572889d3d",
-        "FDE-779bb70e06a29ed4",
-        "FDE-8669dbd3140ecd8e"
-      ],
-      "hardwareIds": [
-        "HW-ceb55d9bc637c1d3",
-        "HW-0ebffabe51a60966",
-        "HW-8f63cf2364e0df35",
-        "HW-dca442211b264bbe"
-      ],
-      "firstSeen": "2026-06-01",
       "lastSeen": "2026-07-17"
     },
     {
@@ -333,7 +230,7 @@
       "eventIds": [
         "EV-21c2e81a7c073e04",
         "EV-cafe435ddd007821",
-        "EV-dfc634f28a70f423",
+        "EV-1ff169120ed385f6",
         "EV-ec15684583d6f7a9"
       ],
       "entityIds": [
@@ -346,6 +243,9 @@
         "EN-e3b1bf3dab957ffe",
         "EN-9700d41909cf810f",
         "EN-2ab6d53e717a0e0d",
+        "EN-accf304851de0ad2",
+        "EN-f0fa30cd90f406c8",
+        "EN-60094bcf5292c490",
         "EN-9fbf261b62c1d7c0"
       ],
       "fdeIds": [],
@@ -353,78 +253,6 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-05-20",
-      "lastSeen": "2026-07-17"
-    },
-    {
-      "id": "TX-technology-multimodal",
-      "name": "多模态",
-      "nodeType": "technology",
-      "typeLabel": "技术",
-      "valueId": "multimodal",
-      "eventIds": [
-        "EV-44c9a50b99c76a70",
-        "EV-968709fe29b77eba",
-        "EV-cafe435ddd007821",
-        "EV-9f067d8f0d23eb48",
-        "EV-a9810b47e0408a05",
-        "EV-f169db2fb75a1371",
-        "EV-21caef1790021587",
-        "EV-70e3f88cb06a856c",
-        "EV-71f78f2026b54ba2",
-        "EV-9496f90f3e808992",
-        "EV-0a5e65aa46b0d194",
-        "EV-e42e55d1e11a2ba2",
-        "EV-53f881da31630a04",
-        "EV-d07906b648eec63f",
-        "EV-c410d77c8d531e5f",
-        "EV-5babb43f4b4d302f",
-        "EV-75b741c8c09d4384",
-        "EV-b88affdec306a75a",
-        "EV-e8bdeab9389a5f0c",
-        "EV-160a359d9406b69e",
-        "EV-61b97c0ee6ad83b3",
-        "EV-f68e00bb9fd49fac",
-        "EV-74b965de27bc0515",
-        "EV-2ca9d0a3ca53c3bf",
-        "EV-6b7917bd7edd4bde"
-      ],
-      "entityIds": [
-        "EN-245f1e177c5169cb",
-        "EN-968e2d5b08687bf4",
-        "EN-cbc62794911ff31b",
-        "EN-ea3bd73e2b506e00",
-        "EN-bbdefa2950f49882",
-        "EN-3a7bd3e2360a3d29",
-        "EN-8d4321d936320802",
-        "EN-59ae856cd788d0f5",
-        "EN-0f3360879e746531",
-        "EN-e3b1bf3dab957ffe",
-        "EN-9700d41909cf810f",
-        "EN-193d220b421d776e",
-        "EN-7d3194f79e645c42",
-        "EN-8f71c4871a160172",
-        "EN-78624f0a98e78301",
-        "EN-c608c4787821de1b",
-        "EN-c70eca6b0f88f44d",
-        "EN-2b6e51bec93e86c1",
-        "EN-b0532e1af75cc4ab",
-        "EN-e1517be14d06cdb7",
-        "EN-7ca2b7da6e0f8654",
-        "EN-047364b9be67f665",
-        "EN-b5251b35f15bedc4",
-        "EN-d831f1170590ddb1",
-        "EN-9c8ae69b84f21a2e"
-      ],
-      "fdeIds": [
-        "FDE-45ad6eae0d326429",
-        "FDE-4858cc86925e281a",
-        "FDE-5587adb203295543"
-      ],
-      "hardwareIds": [
-        "HW-ceb55d9bc637c1d3",
-        "HW-de1b3c6ad39cc9bc"
-      ],
-      "firstSeen": "2026-06-04",
       "lastSeen": "2026-07-17"
     },
     {
@@ -440,7 +268,6 @@
         "EV-234ad54940674bf6",
         "EV-6415a58637893b34",
         "EV-4faa2bcf2e42e60c",
-        "EV-70530734d19a478e",
         "EV-473f852b374d8b1c",
         "EV-49751dfc7d2f6d6c",
         "EV-197aac95e60671f7",
@@ -457,10 +284,6 @@
         "EN-9700d41909cf810f",
         "EN-c70eca6b0f88f44d",
         "EN-8147e6fed86d42c1",
-        "EN-522d3edeb64a7ca4",
-        "EN-c608c4787821de1b",
-        "EN-8f71c4871a160172",
-        "EN-2f795798add63d7f",
         "EN-047364b9be67f665",
         "EN-30081094f2a8c83d",
         "EN-89e3f0711b76932c",
@@ -487,7 +310,7 @@
       "eventId": "EV-cafe435ddd007821",
       "dataDate": "2026-07-17",
       "date": "2026-07-16",
-      "title": "日本启动 Noetra 国家级 AI 基础设施，计划采购 2.75 万枚 NVIDIA Rubin 芯片",
+      "title": "NVIDIA 联手日本政经界发布全球首个国家级 AI 基础设施",
       "hardwareType": "gpu",
       "eventType": "hardware_deployment",
       "eventTypeLabel": "硬件部署",
@@ -507,12 +330,6 @@
           "dimensionName": "技术",
           "id": "embodied_ai",
           "name": "具身智能"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "multimodal",
-          "name": "多模态"
         }
       ],
       "sourceUrl": "https://japantimes.co.jp/business/2026/07/16/japan-nvidia-rubin-chips-robots",

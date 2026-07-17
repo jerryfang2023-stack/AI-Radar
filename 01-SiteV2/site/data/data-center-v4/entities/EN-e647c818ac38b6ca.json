@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-17T15:01:31.906Z",
+    "generatedAt": "2026-07-17T18:20:10.588Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 748,
-    "quarantinedEventCount": 32
+    "eventCount": 727,
+    "quarantinedEventCount": 50
   },
   "entity": {
     "id": "EN-e647c818ac38b6ca",
@@ -20,21 +20,15 @@
     "datasetScopes": [
       "canonical"
     ],
-    "eventIds": [
-      "EV-6f092cfc7a064d64"
-    ],
+    "eventIds": [],
     "viewpointIds": [],
-    "classificationRefs": [
-      "TX-technology-vision_language"
-    ],
+    "classificationRefs": [],
     "relatedEntityIds": [],
-    "firstSeen": "2026-07-16",
-    "lastSeen": "2026-07-17",
+    "firstSeen": "",
+    "lastSeen": "",
     "relationIds": [],
     "groupedEventIds": {
-      "fundingAcquisition": [
-        "EV-6f092cfc7a064d64"
-      ],
+      "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [],
@@ -42,60 +36,12 @@
       "organizationPeople": [],
       "other": []
     },
-    "timeline": [
-      {
-        "id": "EV-6f092cfc7a064d64",
-        "dataDate": "2026-07-17",
-        "date": "2026-07-16",
-        "eventType": "funding",
-        "eventTypeLabel": "融资",
-        "eventGroup": "融资与并购",
-        "status": "completed",
-        "statusLabel": "已完成",
-        "title": "Elorian 完成 5500 万美元 种子前轮融资",
-        "displayTags": [
-          {
-            "dimensionId": "technology",
-            "dimensionName": "技术",
-            "id": "vision_language",
-            "name": "视觉语言"
-          }
-        ],
-        "entityIds": [
-          "EN-e647c818ac38b6ca",
-          "EN-2b6e51bec93e86c1"
-        ]
-      }
-    ],
+    "timeline": [],
     "viewpoints": []
   },
   "relatedEntities": [],
   "relationships": [],
-  "taxonomyNodes": [
-    {
-      "id": "TX-technology-vision_language",
-      "name": "视觉语言",
-      "nodeType": "technology",
-      "typeLabel": "技术",
-      "valueId": "vision_language",
-      "eventIds": [
-        "EV-6f092cfc7a064d64",
-        "EV-0259aae5ef9e83cd",
-        "EV-74b965de27bc0515"
-      ],
-      "entityIds": [
-        "EN-e647c818ac38b6ca",
-        "EN-2b6e51bec93e86c1",
-        "EN-7117fa8d72fb99b9",
-        "EN-b5251b35f15bedc4",
-        "EN-d831f1170590ddb1"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [],
-      "firstSeen": "2026-06-13",
-      "lastSeen": "2026-07-17"
-    }
-  ],
+  "taxonomyNodes": [],
   "fde": [],
   "hardware": []
 }

@@ -6,6 +6,7 @@ export function hasCjk(value = "") {
 }
 
 const approvedTranslationMethods = new Set([
+  "deepseek_title_translation",
   "openai_title_translation",
   "business-rule_title_translation",
   "controlled_model_prompt_title_translation",
@@ -51,6 +52,97 @@ function stripGeneratorNoise(value = "") {
     .trim();
 }
 
+const moneyUnitFactors = new Map([
+  ["trillion", 1e12],
+  ["billion", 1e9],
+  ["bn", 1e9],
+  ["b", 1e9],
+  ["million", 1e6],
+  ["mn", 1e6],
+  ["m", 1e6],
+  ["k", 1e3],
+  ["万亿", 1e12],
+  ["亿", 1e8],
+  ["万", 1e4],
+  ["千", 1e3],
+]);
+
+function moneyCurrency(value = "") {
+  const text = String(value || "").toLowerCase();
+  if (/us\$|\$|usd|dollars?|美元|美金/u.test(text)) return "USD";
+  if (/€|eur|euros?|欧元/u.test(text)) return "EUR";
+  if (/£|gbp|pounds?|英镑/u.test(text)) return "GBP";
+  if (/₹|inr|rupees?|卢比/u.test(text)) return "INR";
+  if (/rmb|cny|yuan|人民币|元/u.test(text)) return "CNY";
+  if (/¥|jpy|yen|日元/u.test(text)) return "JPY";
+  return "";
+}
+
+function extractMoneyAmounts(value = "") {
+  const text = String(value || "");
+  const pattern = /(?:(?:US\$|\$|€|£|¥|₹|USD|EUR|GBP|RMB|CNY|JPY|INR)\s*)?(\d[\d,]*(?:\.\d+)?)\s*(trillion|billion|million|bn|mn|m|b|k|万亿|亿|万|千)?\s*(?:US\s*)?(?:dollars?|euros?|pounds?|rupees?|yuan|yen|美元|美金|欧元|英镑|卢比|人民币|日元|元)?/giu;
+  const results = [];
+  for (const match of text.matchAll(pattern)) {
+    const raw = match[0];
+    const unit = String(match[2] || "").toLowerCase();
+    const currency = moneyCurrency(raw);
+    if (!unit && !currency) continue;
+    const number = Number(String(match[1] || "").replace(/,/gu, ""));
+    if (!Number.isFinite(number)) continue;
+    results.push({
+      raw,
+      currency,
+      value: number * (moneyUnitFactors.get(unit) || 1),
+      start: match.index,
+      end: match.index + raw.length,
+    });
+  }
+  return results;
+}
+
+function sourceTitleNumericFacts(value = "") {
+  const text = String(value || "");
+  const amounts = extractMoneyAmounts(text);
+  const otherNumbers = withoutSpans(text, amounts).match(/\d[\d,]*(?:\.\d+)?/gu) || [];
+  return [...amounts.map((item) => item.raw.trim()), ...otherNumbers];
+}
+
+function withoutSpans(value = "", spans = []) {
+  const characters = [...String(value || "")];
+  for (const span of spans) {
+    for (let index = span.start; index < span.end; index += 1) characters[index] = " ";
+  }
+  return characters.join("");
+}
+
+function sameNumericValue(first, second) {
+  const scale = Math.max(1, Math.abs(first), Math.abs(second));
+  return Math.abs(first - second) / scale < 1e-9;
+}
+
+export function sourceTitleFactsPreserved(sourceTitle = "", translation = "") {
+  const source = stripGeneratorNoise(sourceTitle);
+  const target = stripGeneratorNoise(translation);
+  const sourceAmounts = extractMoneyAmounts(source);
+  const targetAmounts = extractMoneyAmounts(target);
+  if (sourceAmounts.length !== targetAmounts.length) return false;
+
+  const unusedTargetAmounts = [...targetAmounts];
+  for (const sourceAmount of sourceAmounts) {
+    const matchIndex = unusedTargetAmounts.findIndex((targetAmount) => {
+      const currencyMatches = !sourceAmount.currency || sourceAmount.currency === targetAmount.currency;
+      return currencyMatches && sameNumericValue(sourceAmount.value, targetAmount.value);
+    });
+    if (matchIndex === -1) return false;
+    unusedTargetAmounts.splice(matchIndex, 1);
+  }
+
+  const sourceNumbers = withoutSpans(source, sourceAmounts).match(/\d[\d,]*(?:\.\d+)?/gu) || [];
+  const targetNumbers = withoutSpans(target, targetAmounts).match(/\d[\d,]*(?:\.\d+)?/gu) || [];
+  const normalizeNumbers = (items) => items.map((item) => item.replace(/,/gu, "")).sort();
+  return JSON.stringify(normalizeNumbers(sourceNumbers)) === JSON.stringify(normalizeNumbers(targetNumbers));
+}
+
 function looksGarbled(value = "") {
   const text = String(value || "");
   const markers = ["\uFFFD", "锛", "鈥", "鎴", "鏄", "涓", "瀹", "绾", "鐨", "鍙", "闇"];
@@ -83,6 +175,7 @@ export function titleTranslationLooksUsable(sourceTitle = "", translation = "") 
 
 function generatedTitleTranslationLooksUsable(sourceTitle = "", translation = "") {
   if (!titleTranslationLooksUsable(sourceTitle, translation)) return false;
+  if (!sourceTitleFactsPreserved(sourceTitle, translation)) return false;
   const lowerWords = stripGeneratorNoise(translation).match(/\b[a-z]{3,}\b/gu) || [];
   const allowed = new Set(["api", "sdk", "mcp", "llm", "gpu", "cpu", "npu", "xai"]);
   return lowerWords.every((word) => allowed.has(word.toLowerCase()));
@@ -151,13 +244,16 @@ export function upsertSourceTitleTranslation(file, { sourceTitle = "", zhTitle =
   return true;
 }
 
-async function translateTitleWithOpenAI(sourceTitle = "", {
-  apiKey = process.env.OPENAI_API_KEY || process.env.OPENAI_TITLE_TRANSLATION_API_KEY || "",
-  model = process.env.TITLE_TRANSLATION_MODEL || process.env.OPENAI_MODEL || "gpt-4.1-mini",
+async function translateTitleWithOpenAICompatible(sourceTitle = "", {
+  apiKey = "",
+  baseUrl = "",
+  model = "",
   timeoutMs = 12000,
+  extraBody = {},
+  retryInstruction = "",
 } = {}) {
-  if (!apiKey) return "";
-  const response = await fetch("https://api.openai.com/v1/chat/completions", {
+  if (!apiKey || !baseUrl || !model) return "";
+  const response = await fetch(`${baseUrl.replace(/\/+$/u, "")}/chat/completions`, {
     method: "POST",
     headers: {
       "content-type": "application/json",
@@ -167,17 +263,28 @@ async function translateTitleWithOpenAI(sourceTitle = "", {
       model,
       temperature: 0.1,
       max_tokens: 120,
+      ...extraBody,
       messages: [
         {
           role: "system",
           content: [
             "Translate business-news source titles into concise Simplified Chinese.",
             "Preserve company names, product names, funding amounts, round names, dates, and named customers exactly.",
+            "Never calculate, round, change, omit, or add any number or monetary amount.",
             "Do not add facts that are not present in the source title.",
             "Return only the translated title.",
           ].join(" "),
         },
-        { role: "user", content: sourceTitle },
+        {
+          role: "user",
+          content: [
+            `SOURCE TITLE:\n${sourceTitle}`,
+            sourceTitleNumericFacts(sourceTitle).length
+              ? `NUMERIC FACTS THAT MUST REMAIN EQUIVALENT:\n${sourceTitleNumericFacts(sourceTitle).join("; ")}`
+              : "",
+            retryInstruction,
+          ].filter(Boolean).join("\n\n"),
+        },
       ],
     }),
     signal: AbortSignal.timeout(timeoutMs),
@@ -187,16 +294,46 @@ async function translateTitleWithOpenAI(sourceTitle = "", {
   return stripGeneratorNoise(data?.choices?.[0]?.message?.content || "");
 }
 
+async function translateTitleWithDeepSeek(sourceTitle = "", {
+  apiKey = process.env.DEEPSEEK_API_KEY || process.env.DEEPSEEK_TITLE_TRANSLATION_API_KEY || "",
+  baseUrl = process.env.DEEPSEEK_BASE_URL || "https://api.deepseek.com",
+  model = process.env.DEEPSEEK_TITLE_TRANSLATION_MODEL || process.env.DEEPSEEK_MODEL || process.env.TITLE_TRANSLATION_MODEL || "deepseek-v4-flash",
+  timeoutMs = 12000,
+} = {}) {
+  const options = {
+    apiKey,
+    baseUrl,
+    model,
+    timeoutMs,
+    extraBody: { thinking: { type: "disabled" } },
+  };
+  const first = await translateTitleWithOpenAICompatible(sourceTitle, options);
+  if (sourceTitleFactsPreserved(sourceTitle, first)) return first;
+  return translateTitleWithOpenAICompatible(sourceTitle, {
+    ...options,
+    retryInstruction: "A previous translation was rejected because it changed or omitted a numeric fact. Translate again and verify every source amount, date, version, and count before answering.",
+  });
+}
+
+async function translateTitleWithOpenAI(sourceTitle = "", {
+  apiKey = process.env.OPENAI_API_KEY || process.env.OPENAI_TITLE_TRANSLATION_API_KEY || "",
+  baseUrl = process.env.OPENAI_BASE_URL || "https://api.openai.com/v1",
+  model = process.env.OPENAI_TITLE_TRANSLATION_MODEL || process.env.OPENAI_MODEL || process.env.TITLE_TRANSLATION_MODEL || "gpt-4.1-mini",
+  timeoutMs = 12000,
+} = {}) {
+  return translateTitleWithOpenAICompatible(sourceTitle, { apiKey, baseUrl, model, timeoutMs });
+}
+
 function translateMoneyAmount(value = "") {
   const raw = String(value || "").replace(/,/gu, "").trim();
-  const match = raw.match(/\$?\s*([\d.]+)\s*(billion|million|bn|m|b|k)?/iu);
+  const match = raw.match(/\$?\s*([\d.]+)\s*(billion|million|bn|mn|m|b|k)?/iu);
   if (!match) return raw;
   const amount = Number(match[1]);
   if (!Number.isFinite(amount)) return raw;
   const unit = String(match[2] || "").toLowerCase();
   const usd = /\$/u.test(raw) || /billion|million|bn|m|b|k/iu.test(raw);
   if (unit === "billion" || unit === "bn" || unit === "b") return `${formatNumber(amount * 10)} 亿${usd ? "美元" : ""}`;
-  if (unit === "million" || unit === "m") {
+  if (unit === "million" || unit === "mn" || unit === "m") {
     if (amount >= 100) return `${formatNumber(amount / 100)} 亿${usd ? "美元" : ""}`;
     return `${formatNumber(amount * 100)} 万${usd ? "美元" : ""}`;
   }
@@ -238,6 +375,7 @@ function translateBusinessPhrase(value = "") {
     return `扩大 ${subject}在美国的制造规模`;
   }
   const directRules = [
+    [/^build ai hardware interfaces?$/iu, "打造 AI 硬件界面"],
     [/^help enterprises build their own ai agents$/iu, "帮助企业构建自有 AI 智能体"],
     [/^help companies automate repetitive work with ai teammates$/iu, "帮助企业用 AI 队友自动化重复工作"],
     [/^expand enterprise agent platform$/iu, "扩展企业智能体平台"],
@@ -308,6 +446,13 @@ function fundingPurposeClause(purpose = "") {
   return `，用于${/^[A-Za-z0-9]/u.test(value) ? " " : ""}${value}`;
 }
 
+function translateFundingSources(value = "") {
+  return String(value || "")
+    .replace(/,?\s+(?:and\s+)?others\b/iu, " 等投资方")
+    .replace(/\s+/gu, " ")
+    .trim();
+}
+
 function translateTitleWithBusinessRules(sourceTitle = "") {
   const title = decodeHtmlEntities(sourceTitle)
     .replace(/\s+\|\s+[^|]+$/u, "")
@@ -319,7 +464,7 @@ function translateTitleWithBusinessRules(sourceTitle = "") {
     return "法国初创公司 ZML 发布免费产品，用于提升多种 AI 芯片上的推理速度";
   }
   if (/^introducing taskade tsk-1:\s*the taskade system kernel(?:\s*\(2026\))?$/iu.test(title)) {
-    return "Taskade 发布 TSK-1 系统内核，为工作区应用提供统一智能运行层";
+    return "Taskade 发布 TSK-1：Taskade 系统内核（2026）";
   }
   if (/^announcing stigg 2\.0\s*[-–—:]\s*the usage runtime for ai products$/iu.test(title)) {
     return "Stigg 发布 2.0：面向 AI 产品的用量运行时";
@@ -328,7 +473,7 @@ function translateTitleWithBusinessRules(sourceTitle = "") {
     return "Talp 以 2000 万美元估值完成种子前轮融资，用于通过 AI 虚拟用户模拟客户反应";
   }
   if (/^how github used secret scanning to reach inbox zero$/iu.test(title)) {
-    return "GitHub 使用秘密扫描，在九个月内清零安全告警积压";
+    return "GitHub 使用秘密扫描清零安全告警积压";
   }
   if (/^claude code now has a built-in browser that lets the ai read, click, and type on external websites$/iu.test(title)) {
     return "Claude Code 新增内置浏览器，可直接读取、点击并操作外部网页";
@@ -361,7 +506,18 @@ function translateTitleWithBusinessRules(sourceTitle = "") {
   if (/^lyzr['’]s ai agent ran its own \$100m series b fundraise(?:\s+[—–-]\s+ai chat daily)?$/iu.test(title)) {
     return "Lyzr 的 AI 智能体参与其 1 亿美元 B 轮融资流程";
   }
-  const valuationRound = title.match(/^meet\s+([^:]+):.+?\braising\s+(\$?\s*[\d,.]+\s*(?:billion|million|bn|m|b|k)?)\s+(pre[-\s]?seed|seed|series\s+[a-z])\s+valuation(?:\s+round)?(?:\s+to\s+(.+))?$/iu);
+  if (/^lyzr ai raises \$100 million series b after its own ai agent sivaclaw fielded 130-plus investors and generated \$400 million in interest$/iu.test(title)) {
+    return "Lyzr AI 完成 1 亿美元 B 轮融资，其 AI 智能体 SivaClaw 接洽 130 多名投资者并获得 4 亿美元投资意向";
+  }
+  const sourcedFunding = title.match(/^(.+?)\s+(?:raises?|raised|secures?|secured|closes?|closed|lands?|landed|nabs?|nabbed)\s+(\$?\s*[\d,.]+\s*(?:billion|million|bn|mn|m|b|k)?)\s+from\s+(.+?)(?:\s+to\s+(.+))?$/iu);
+  if (sourcedFunding) {
+    const company = titleCaseName(sourcedFunding[1]);
+    const amount = translateMoneyAmount(sourcedFunding[2]);
+    const sources = translateFundingSources(sourcedFunding[3]);
+    const purpose = translateBusinessPhrase(sourcedFunding[4] || "");
+    return `${company} 从 ${sources}获得 ${amount}融资${fundingPurposeClause(purpose)}`;
+  }
+  const valuationRound = title.match(/^meet\s+([^:]+):.+?\braising\s+(\$?\s*[\d,.]+\s*(?:billion|million|bn|mn|m|b|k)?)\s+(pre[-\s]?seed|seed|series\s+[a-z])\s+valuation(?:\s+round)?(?:\s+to\s+(.+))?$/iu);
   if (valuationRound) {
     const company = titleCaseName(valuationRound[1]);
     const valuation = translateMoneyAmount(valuationRound[2]);
@@ -369,7 +525,7 @@ function translateTitleWithBusinessRules(sourceTitle = "") {
     const purpose = translateBusinessPhrase(valuationRound[4] || "");
     return `${company} 以 ${valuation}估值完成${round}融资${purpose ? `，用于${purpose}` : ""}`;
   }
-  const valuationFunding = title.match(/^(.+?)\s+(?:raises?|raised)\s+(\$?\s*[\d,.]+\s*(?:billion|million|bn|m|b|k)?)\s+at\s+(\$?\s*[\d,.]+\s*(?:billion|million|bn|m|b|k)?)\s+valuation(?:\s+(?:to|for)\s+(.+))?$/iu);
+  const valuationFunding = title.match(/^(.+?)\s+(?:raises?|raised)\s+(\$?\s*[\d,.]+\s*(?:billion|million|bn|mn|m|b|k)?)\s+at\s+(\$?\s*[\d,.]+\s*(?:billion|million|bn|mn|m|b|k)?)\s+valuation(?:\s+(?:to|for)\s+(.+))?$/iu);
   if (valuationFunding) {
     const company = titleCaseName(valuationFunding[1]);
     const amount = translateMoneyAmount(valuationFunding[2]);
@@ -378,9 +534,9 @@ function translateTitleWithBusinessRules(sourceTitle = "") {
     return `${company} 完成 ${amount}融资，估值 ${valuation}${fundingPurposeClause(purpose)}`;
   }
   const fundingPatterns = [
-    /^(.+?)\s+(?:raises?|raised|secures?|secured|closes?|closed|lands?|landed|nabs?|nabbed)\s+(\$?\s*[\d,.]+\s*(?:billion|million|bn|m|b|k)?)\s*(?:(series\s+[a-z]|pre[-\s]?seed|seed|strategic investment)\s*)?(?:round|funding)?(?:(?:\s+(?:to|for)\s+(.+))|(?:\s+((?:after|as|while|with|and)\s+.+)))?$/iu,
-    /^(.+?)\s+launches\s+with\s+(\$?\s*[\d,.]+\s*(?:billion|million|bn|m|b|k)?)\s*(?:(series\s+[a-z]|pre[-\s]?seed|seed)\s*)?(?:funding)?(?:\s+(?:to|for)\s+(.+))?$/iu,
-    /^(.+?)\s+emerged?\s+from\s+stealth\s+with\s+(\$?\s*[\d,.]+\s*(?:billion|million|bn|m|b|k)?)\s*(?:(series\s+[a-z]|pre[-\s]?seed|seed)\s*)?(?:funding)?(?:\s+(?:to|for)\s+(.+))?$/iu,
+    /^(.+?)\s+(?:raises?|raised|secures?|secured|closes?|closed|lands?|landed|nabs?|nabbed)\s+(\$?\s*[\d,.]+\s*(?:billion|million|bn|mn|m|b|k)?)\s*(?:(series\s+[a-z]|pre[-\s]?seed|seed|strategic investment)\s*)?(?:round|funding)?(?:(?:\s+(?:to|for)\s+(.+))|(?:\s+((?:after|as|while|with|and)\s+.+)))?$/iu,
+    /^(.+?)\s+launches\s+with\s+(\$?\s*[\d,.]+\s*(?:billion|million|bn|mn|m|b|k)?)\s*(?:(series\s+[a-z]|pre[-\s]?seed|seed)\s*)?(?:funding)?(?:\s+(?:to|for)\s+(.+))?$/iu,
+    /^(.+?)\s+emerged?\s+from\s+stealth\s+with\s+(\$?\s*[\d,.]+\s*(?:billion|million|bn|mn|m|b|k)?)\s*(?:(series\s+[a-z]|pre[-\s]?seed|seed)\s*)?(?:funding)?(?:\s+(?:to|for)\s+(.+))?$/iu,
   ];
   for (const pattern of fundingPatterns) {
     const match = title.match(pattern);
@@ -433,16 +589,18 @@ export async function generateSourceTitleTranslation(sourceTitle = "", {
   // mode, use the controlled model prompt when configured, then deterministic
   // business-event rules. An unresolved title must remain blocking instead of
   // being persisted as a plausible-looking but wrong Chinese title.
-  const providers = provider === "auto" ? ["openai", "business-rule"] : [provider];
+  const providers = provider === "auto" ? ["deepseek", "openai", "business-rule"] : [provider];
   for (const item of providers) {
     try {
-      const translated = item === "openai"
-        ? await translateTitleWithOpenAI(title, { timeoutMs })
-        : item === "business-rule"
-          ? translateTitleWithBusinessRules(title)
-        : item === "mymemory"
-          ? await translateTitleWithMyMemory(title, { timeoutMs })
-          : "";
+      const translated = item === "deepseek"
+        ? await translateTitleWithDeepSeek(title, { timeoutMs })
+        : item === "openai"
+          ? await translateTitleWithOpenAI(title, { timeoutMs })
+          : item === "business-rule"
+            ? translateTitleWithBusinessRules(title)
+            : item === "mymemory"
+              ? await translateTitleWithMyMemory(title, { timeoutMs })
+              : "";
       if (generatedTitleTranslationLooksUsable(title, translated)) {
         return { titleZh: stripGeneratorNoise(translated), status: "translated", method: `${item}_title_translation` };
       }

@@ -5,11 +5,83 @@ import test from "node:test";
 import { fileURLToPath } from "node:url";
 import { buildBundle, eventAiRelevanceEvidence, findEventRule, normalizeEventTitle, trimBoilerplate } from "../build-data-center-v4.mjs";
 import { evaluateBundle, evaluateBundleFiles } from "../assert-data-center-v4.mjs";
+import { generateSourceTitleTranslation, isApprovedSourceTitleTranslation, sourceTitleFactsPreserved } from "../source-title-translation-generator.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, "../../..");
 const taxonomy = JSON.parse(fs.readFileSync(path.join(root, "agent-workflow/product/tag-taxonomy-v4.json"), "utf8"));
 const date = "2026-07-16";
+
+test("DeepSeek V4 translates source titles through the OpenAI-compatible endpoint", async (t) => {
+  const originalFetch = globalThis.fetch;
+  const originalKey = process.env.DEEPSEEK_API_KEY;
+  const originalModel = process.env.DEEPSEEK_MODEL;
+  t.after(() => {
+    globalThis.fetch = originalFetch;
+    if (originalKey === undefined) delete process.env.DEEPSEEK_API_KEY;
+    else process.env.DEEPSEEK_API_KEY = originalKey;
+    if (originalModel === undefined) delete process.env.DEEPSEEK_MODEL;
+    else process.env.DEEPSEEK_MODEL = originalModel;
+  });
+
+  process.env.DEEPSEEK_API_KEY = "test-key";
+  process.env.DEEPSEEK_MODEL = "deepseek-v4-flash";
+  globalThis.fetch = async (url, options) => {
+    assert.equal(url, "https://api.deepseek.com/chat/completions");
+    const body = JSON.parse(options.body);
+    assert.equal(body.model, "deepseek-v4-flash");
+    assert.deepEqual(body.thinking, { type: "disabled" });
+    assert.equal(options.headers.authorization, "Bearer test-key");
+    return {
+      ok: true,
+      async json() {
+        return { choices: [{ message: { content: "Acme 发布 AI 工作流平台" } }] };
+      },
+    };
+  };
+
+  const result = await generateSourceTitleTranslation("Acme Launches AI Workflow Platform", {
+    provider: "deepseek",
+    timeoutMs: 1000,
+  });
+  assert.deepEqual(result, {
+    titleZh: "Acme 发布 AI 工作流平台",
+    status: "translated",
+    method: "deepseek_title_translation",
+  });
+  assert.equal(isApprovedSourceTitleTranslation({ generatedBy: result.method }), true);
+  assert.equal(sourceTitleFactsPreserved("Aina Raises $5.5 Mn", "Aina 获得 550 万美元融资"), true);
+  assert.equal(sourceTitleFactsPreserved("Aina Raises $5.5 Mn", "Aina 获得 450 万美元融资"), false);
+  assert.equal(sourceTitleFactsPreserved("Aina Raises $5.5 Mn", "Aina 获得 550 万卢比融资"), false);
+});
+
+test("DeepSeek translations with changed monetary facts are rejected", async (t) => {
+  const originalFetch = globalThis.fetch;
+  const originalKey = process.env.DEEPSEEK_API_KEY;
+  t.after(() => {
+    globalThis.fetch = originalFetch;
+    if (originalKey === undefined) delete process.env.DEEPSEEK_API_KEY;
+    else process.env.DEEPSEEK_API_KEY = originalKey;
+  });
+
+  process.env.DEEPSEEK_API_KEY = "test-key";
+  globalThis.fetch = async () => ({
+    ok: true,
+    async json() {
+      return { choices: [{ message: { content: "Aina 获 Info Edge 等投资 450 万美元，打造 AI 硬件接口" } }] };
+    },
+  });
+
+  const result = await generateSourceTitleTranslation(
+    "Aina Raises $5.5 Mn From Info Edge, Others To Build AI Hardware Interface",
+    { provider: "deepseek", timeoutMs: 1000 },
+  );
+  assert.deepEqual(result, {
+    titleZh: "",
+    status: "needs_ingestion_translation",
+    method: "title_translation_generator_failed",
+  });
+});
 
 function entry(id, title, body, extra = {}) {
   return {
@@ -140,12 +212,28 @@ test("launches with disclosed capital is normalized as funding", () => {
     entry(
       "launches-with-capital",
       "Exclusive: Startup Adapter Launches With $17.8M To Bring New Cognition To AI Tools",
-      "Startup Adapter launches with $17.8 million in financing to build enterprise AI tools."
+      "Startup Adapter launches with $17.8 million in financing to build enterprise AI tools.",
+      { title_zh: "独家：初创公司 Adapter 获得 1780 万美元融资，用于为 AI 工具带来新认知" }
     )
   ], taxonomy, date, "2026-07-16T00:00:00.000Z");
 
   assert.equal(bundle.canonical_events[0].event_type, "funding");
-  assert.equal(bundle.canonical_events[0].display_title_zh, "Adapter 完成 1780 万美元融资");
+  assert.equal(bundle.canonical_events[0].display_title_zh, "独家：初创公司 Adapter 获得 1780 万美元融资，用于为 AI 工具带来新认知");
+});
+
+test("public event title is the exact Raw source-title translation", () => {
+  const sourceTitle = "Aina Raises $5.5 Mn From Info Edge, Others To Build AI Hardware Interface";
+  const translatedTitle = "Aina 从 Info Edge 等投资方获得 550 万美元融资，用于打造 AI 硬件界面";
+  const bundle = buildBundle([
+    entry("aina-funding", sourceTitle, "Aina raised $5.5 million from Info Edge and other investors to build an AI hardware interface.", {
+      title_zh: translatedTitle
+    })
+  ], taxonomy, date, "2026-07-16T00:00:00.000Z");
+
+  assert.equal(bundle.raw_documents[0].title_original, sourceTitle);
+  assert.equal(bundle.raw_documents[0].title_zh, translatedTitle);
+  assert.equal(bundle.canonical_events[0].display_title_zh, translatedTitle);
+  assert.equal(bundle.compatibility_cards[0].title, translatedTitle);
 });
 
 test("incomplete mixed-language public titles remain canonical but are withheld from public compatibility output", () => {
@@ -254,6 +342,7 @@ test("a computer launch with explicit accelerator modules becomes a hardware pro
   assert.equal(bundle.hardware_records.length, 1);
   assert.equal(bundle.hardware_records[0].component_type, "gpu");
   assert.deepEqual(bundle.hardware_records[0].claim_refs, bundle.canonical_events[0].claim_refs);
+  assert.ok(bundle.entities.some((entity) => entity.entity_type === "product_candidate" && entity.canonical_name === "Jetson Thor"));
 });
 
 test("a source-bounded portable AI hardware launch receives a hardware projection", () => {
@@ -630,7 +719,9 @@ test("filesystem integrity gate requires resolvable snapshots and complete curre
 
 test("integrity gate blocks a canonical event whose evidence is no longer AI-industry scoped", () => {
   const bundle = buildBundle([
-    entry("tampered", "Acme launches AI agent platform", "Acme launched an AI agent platform for customer support.")
+    entry("tampered", "Acme launches AI agent platform", "Acme launched an AI agent platform for customer support.", {
+      title_zh: "Acme 发布 AI 智能体平台"
+    })
   ], taxonomy, date, "2026-07-16T00:00:00.000Z");
   const raw = bundle.raw_documents[0];
   const claim = bundle.claims[0];
@@ -660,6 +751,18 @@ test("integrity gate enforces the published JSON Schema", () => {
 
   const result = evaluateBundle(bundle, taxonomy);
   assert.ok(result.failures.some((failure) => failure.includes("additional properties")));
+});
+
+test("integrity gate rejects event-field summaries as public titles", () => {
+  const bundle = buildBundle([
+    entry("source-title-contract", "Acme AI raises $10 million to build AI hardware", "Acme AI raised $10 million to build AI hardware.", {
+      title_zh: "Acme AI 获得 1000 万美元融资，用于打造 AI 硬件"
+    })
+  ], taxonomy, date, "2026-07-16T00:00:00.000Z");
+  bundle.canonical_events[0].display_title_zh = "Acme AI 完成 1000 万美元融资";
+
+  const result = evaluateBundle(bundle, taxonomy);
+  assert.ok(result.failures.some((failure) => failure.includes("not an exact source-title translation")));
 });
 
 test("integrity gate enforces FDE and hardware contract versions", () => {
@@ -754,13 +857,15 @@ test("Chinese related-article tails never enter accepted claims", () => {
 
 test("current funding language captures nabs and separates raised capital from valuation", () => {
   const bundle = buildBundle([
-    entry("microagi-funding", "Microagi nabs $55M to teach factory robots how to work", "Microagi today announced it has raised $55 million in seed funding for its AI robotics platform."),
+    entry("microagi-funding", "Microagi nabs $55M to teach factory robots how to work", "Microagi today announced it has raised $55 million in seed funding for its AI robotics platform.", {
+      title_zh: "Microagi 获得 5500 万美元融资，用于训练工厂机器人工作"
+    }),
     entry("elorian-funding", "How a former DeepMind researcher raised at a $300M pre-seed valuation", "Elorian raised a $55 million seed round at a $300 million valuation to build visual AI systems.")
   ], taxonomy, date, "2026-07-16T00:00:00.000Z");
 
   assert.equal(bundle.canonical_events.length, 2);
   assert.ok(bundle.canonical_events.every((event) => event.event_type === "funding"));
-  assert.ok(bundle.canonical_events.some((event) => /完成 5500 万美元 种子轮融资/u.test(event.display_title_zh)));
+  assert.ok(bundle.canonical_events.some((event) => event.display_title_zh === "Microagi 获得 5500 万美元融资，用于训练工厂机器人工作"));
 });
 
 test("benchmark releases and body-led product launches remain factual events", () => {
@@ -770,7 +875,7 @@ test("benchmark releases and body-led product launches remain factual events", (
   ], taxonomy, date, "2026-07-16T00:00:00.000Z");
 
   assert.ok(bundle.canonical_events.some((event) => event.event_type === "research_result" && /PerceptionBench/u.test(event.display_title_zh)));
-  assert.ok(bundle.canonical_events.some((event) => event.event_type === "product_release" && /灵犀专业版与 WPS Comate/u.test(event.display_title_zh)));
+  assert.ok(bundle.canonical_events.some((event) => event.event_type === "product_release" && event.display_title_zh === "金山办公 CEO 章庆元谈 AI 办公商业模式"));
 });
 
 test("unconfirmed secondary rumors stay in QA", () => {

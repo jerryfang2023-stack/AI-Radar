@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-17T15:01:31.906Z",
+    "generatedAt": "2026-07-17T18:20:10.588Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 748,
-    "quarantinedEventCount": 32
+    "eventCount": 727,
+    "quarantinedEventCount": 50
   },
   "entity": {
     "id": "EN-27aaa410b20647e0",
@@ -20,99 +20,28 @@
     "datasetScopes": [
       "canonical"
     ],
-    "eventIds": [
-      "EV-51e3ec25899a2486"
-    ],
+    "eventIds": [],
     "viewpointIds": [],
-    "classificationRefs": [
-      "TX-technology-mixture_of_experts"
-    ],
+    "classificationRefs": [],
     "relatedEntityIds": [],
-    "firstSeen": "2026-07-16",
-    "lastSeen": "2026-07-16",
+    "firstSeen": "",
+    "lastSeen": "",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
-      "productsServices": [
-        "EV-51e3ec25899a2486"
-      ],
+      "productsServices": [],
       "hardware": [],
       "organizationPeople": [],
       "other": []
     },
-    "timeline": [
-      {
-        "id": "EV-51e3ec25899a2486",
-        "dataDate": "2026-07-16",
-        "date": "2026-07-16",
-        "eventType": "model_release",
-        "eventTypeLabel": "模型发布",
-        "eventGroup": "模型、产品与服务",
-        "status": "completed",
-        "statusLabel": "已完成",
-        "title": "Soofi 联盟发布 Soofi S 30B-A3B：面向德语和英语的开源混合 Mamba-Transformer MoE 基础模型",
-        "displayTags": [
-          {
-            "dimensionId": "product_form",
-            "id": "model",
-            "dimensionName": "产品形态",
-            "name": "模型"
-          },
-          {
-            "dimensionId": "technology",
-            "dimensionName": "技术",
-            "id": "mixture_of_experts",
-            "name": "混合专家模型"
-          }
-        ],
-        "entityIds": [
-          "EN-27aaa410b20647e0"
-        ]
-      }
-    ],
+    "timeline": [],
     "viewpoints": []
   },
   "relatedEntities": [],
   "relationships": [],
-  "taxonomyNodes": [
-    {
-      "id": "TX-technology-mixture_of_experts",
-      "name": "混合专家模型",
-      "nodeType": "technology",
-      "typeLabel": "技术",
-      "valueId": "mixture_of_experts",
-      "eventIds": [
-        "EV-80e54c9a390da293",
-        "EV-3aaff91528ca3d37",
-        "EV-51e3ec25899a2486",
-        "EV-53f881da31630a04",
-        "EV-7fd3102ac547cbda",
-        "EV-568d2aeab5234e48",
-        "EV-d6f638da9e1d3b46",
-        "EV-fbc5c65cc697c83b",
-        "EV-964971e83a649d4d",
-        "EV-c7336cf617a545ce",
-        "EV-57597c92f7b183a9"
-      ],
-      "entityIds": [
-        "EN-8d4321d936320802",
-        "EN-c70eca6b0f88f44d",
-        "EN-8f71c4871a160172",
-        "EN-27aaa410b20647e0",
-        "EN-72e8088a05b38ae3",
-        "EN-2b6e51bec93e86c1",
-        "EN-b0532e1af75cc4ab",
-        "EN-bbdefa2950f49882",
-        "EN-c608c4787821de1b"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [],
-      "firstSeen": "2026-06-06",
-      "lastSeen": "2026-07-16"
-    }
-  ],
+  "taxonomyNodes": [],
   "fde": [],
   "hardware": []
 }

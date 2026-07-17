@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-17T15:01:31.906Z",
+    "generatedAt": "2026-07-17T18:20:10.588Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 748,
-    "quarantinedEventCount": 32
+    "eventCount": 727,
+    "quarantinedEventCount": 50
   },
   "node": {
     "id": "TX-technology-on_device",
@@ -22,6 +22,7 @@
       "EV-283e88bdd15ed87e",
       "EV-653cbce2ccc79f8b",
       "EV-04efb4eecbb8125f",
+      "EV-8a9b12665a3e40a0",
       "EV-712bb6241160c4c5",
       "EV-0a5e65aa46b0d194",
       "EV-52508b70ccd2cc0b",
@@ -30,6 +31,7 @@
       "EV-0597e07d7e73051a",
       "EV-02186ed7885f68fe",
       "EV-5613946bdd578a26",
+      "EV-dd902b603e2e3dbc",
       "EV-f4876d2e1a20d87b"
     ],
     "entityIds": [
@@ -42,13 +44,23 @@
       "EN-7df09a7717ef2feb",
       "EN-c04bd5ebd10ab696",
       "EN-50ba7ff15827787b",
-      "EN-2c348893efb2316e",
+      "EN-992eafe973f69075",
+      "EN-1229af0aa3b0305e",
+      "EN-81e577740888ca6d",
+      "EN-968e2d5b08687bf4",
       "EN-3a7bd3e2360a3d29",
+      "EN-8147e6fed86d42c1",
+      "EN-c608c4787821de1b",
+      "EN-6f21a653c48f4f19",
+      "EN-5388bc10736a0eff",
+      "EN-12a81529bba89666",
+      "EN-2c348893efb2316e",
       "EN-c70eca6b0f88f44d",
       "EN-ce635c4eabff5e4f",
       "EN-c3ce0cc92b48bbd6",
-      "EN-968e2d5b08687bf4",
-      "EN-0899bccb1b028521"
+      "EN-0899bccb1b028521",
+      "EN-3dd90c2e1bf28b32",
+      "EN-5d7b7e77768bfdfc"
     ],
     "fdeIds": [
       "FDE-ef57fbc39a8c11f6"
@@ -604,15 +616,163 @@
         }
       ],
       "entityIds": [
-        "EN-bbdefa2950f49882"
+        "EN-bbdefa2950f49882",
+        "EN-992eafe973f69075",
+        "EN-1229af0aa3b0305e",
+        "EN-81e577740888ca6d"
       ],
       "entityNames": [
-        "Google"
+        "Google",
+        "JavaScript",
+        "LiteRT.js",
+        "SensorFM"
       ],
-      "productName": "",
-      "products": [],
+      "productName": "JavaScript",
+      "products": [
+        {
+          "name": "JavaScript",
+          "type": "模型",
+          "ownerNames": [
+            "Google"
+          ]
+        },
+        {
+          "name": "LiteRT.js",
+          "type": "模型",
+          "ownerNames": [
+            "Google"
+          ]
+        },
+        {
+          "name": "SensorFM",
+          "type": "模型",
+          "ownerNames": [
+            "Google"
+          ]
+        }
+      ],
       "sourceUrl": "https://marktechpost.com/2026/07/15/google-releases-litert-js-a-javascript-binding-of-litert-that-runs-tflite-models-in-browsers-via-webgpu",
       "publisher": "MarkTechPost（RSS）"
+    },
+    {
+      "id": "EV-8a9b12665a3e40a0",
+      "dataDate": "2026-07-16",
+      "date": "2026-07-15",
+      "updatedDate": "2026-07-16",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "面壁智能 MiniCPM 系列端侧模型将搭载于三星手机上市，覆盖数款旗舰机型",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "面壁智能 MiniCPM 系列端侧模型将搭载于三星手机上市，覆盖数款旗舰机型",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧"
+        }
+      ],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [
+          {
+            "dimensionId": "deployment_model",
+            "id": "edge_device",
+            "dimensionName": "部署形态",
+            "name": "边缘与端侧"
+          }
+        ],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        },
+        {
+          "dimensionId": "deployment_model",
+          "id": "edge_device",
+          "dimensionName": "部署形态",
+          "name": "边缘与端侧"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧"
+        },
+        {
+          "dimensionId": "deployment_model",
+          "id": "edge_device",
+          "dimensionName": "部署形态",
+          "name": "边缘与端侧"
+        }
+      ],
+      "entityIds": [
+        "EN-968e2d5b08687bf4",
+        "EN-3a7bd3e2360a3d29",
+        "EN-8147e6fed86d42c1",
+        "EN-c608c4787821de1b",
+        "EN-6f21a653c48f4f19",
+        "EN-5388bc10736a0eff",
+        "EN-12a81529bba89666"
+      ],
+      "entityNames": [
+        "Samsung",
+        "Apple",
+        "OPPO",
+        "Xiaomi",
+        "Nubia",
+        "ByteDance",
+        "MiniCPM"
+      ],
+      "productName": "MiniCPM",
+      "products": [
+        {
+          "name": "MiniCPM",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Samsung"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/977/217.htm",
+      "publisher": "IT之家（RSS）"
     },
     {
       "id": "EV-712bb6241160c4c5",
@@ -1353,8 +1513,8 @@
       "publicationStatus": "verified",
       "title": "网信部门公布 7 款手机端侧生成式 AI 服务备案，Apple 智能在列",
       "originalTitle": "",
-      "subject": "undisclosed_subject",
-      "action": "网信部门公布 7 款手机端侧生成式 AI 服务备案",
+      "subject": "网信部门公布 7 款手机端侧生成式 AI 服务",
+      "action": "备案",
       "object": "，Apple 智能在列",
       "metrics": [],
       "locations": [],
@@ -1419,6 +1579,132 @@
       "productName": "",
       "products": [],
       "sourceUrl": "https://ithome.com/0/977/080.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-dd902b603e2e3dbc",
+      "dataDate": "2026-07-16",
+      "date": "2026-07-15",
+      "updatedDate": "2026-07-16",
+      "eventType": "policy_regulation",
+      "eventTypeLabel": "政策监管",
+      "eventGroup": "组织、政策与法律",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "小米 MiMo 完成大语言、多模态、语音全系列模型矩阵闭环，端侧模型通过国家大模型备案",
+      "originalTitle": "",
+      "subject": "小米 MiMo 完成大语言、多模态、语音全系列模型矩阵闭环，端侧模型通过国家大模型",
+      "action": "备案",
+      "object": "小米 MiMo 完成大语言、多模态、语音全系列模型矩阵闭环，端侧模型通过国家大模型备案",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧"
+        }
+      ],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [
+          {
+            "dimensionId": "deployment_model",
+            "id": "edge_device",
+            "dimensionName": "部署形态",
+            "name": "边缘与端侧"
+          }
+        ],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        },
+        {
+          "dimensionId": "deployment_model",
+          "id": "edge_device",
+          "dimensionName": "部署形态",
+          "name": "边缘与端侧"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧"
+        },
+        {
+          "dimensionId": "deployment_model",
+          "id": "edge_device",
+          "dimensionName": "部署形态",
+          "name": "边缘与端侧"
+        }
+      ],
+      "entityIds": [
+        "EN-3dd90c2e1bf28b32",
+        "EN-c608c4787821de1b",
+        "EN-5d7b7e77768bfdfc",
+        "EN-3a7bd3e2360a3d29"
+      ],
+      "entityNames": [
+        "小米 MiMo 完成大语言",
+        "Xiaomi",
+        "多模态",
+        "Apple"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/977/116.htm",
       "publisher": "IT之家（RSS）"
     },
     {
@@ -1515,8 +1801,6 @@
       "eventIds": [
         "EV-ed65f3187aa6aa40",
         "EV-d4d7b019ff0015df",
-        "EV-371a54f74b9d332c",
-        "EV-cde5c3e5ef83bd51",
         "EV-fe2b0d74944d6128",
         "EV-57e6392fe3bb69cd",
         "EV-fb0838335d861b02",
@@ -1524,11 +1808,13 @@
         "EV-a498b12f3fa2197e",
         "EV-43fdb17a23e13f97",
         "EV-9260a223a780b898",
-        "EV-01e414a25347cfd9"
+        "EV-01e414a25347cfd9",
+        "EV-86537be17d50ff20"
       ],
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-technology-long_context",
         "TX-technology-on_device",
         "TX-technology-open_weights"
       ],
@@ -1568,10 +1854,7 @@
         "EV-a9a3b5b56befe593",
         "EV-f7e41493addd1104",
         "EV-3398ae53a199be16",
-        "EV-d53cd33e8f541a65",
-        "EV-810e5c71956fccbc",
         "EV-04efb4eecbb8125f",
-        "EV-0ca3a9830e25f56b",
         "EV-6359c9f6c2609a38",
         "EV-04ee2bc4ac888358",
         "EV-c2d784ef0a5376f8",
@@ -1627,10 +1910,10 @@
         "EV-c28e0d02272537d8",
         "EV-d31057c6f6ec28ba",
         "EV-342799d4e68e7416",
+        "EV-d53cd33e8f541a65",
         "EV-a4f052325d0ef230",
         "EV-ef823877347ff40f",
         "EV-3e9a0d1be6de5096",
-        "EV-70fd0c4e482a646e",
         "EV-8cd7665e40729256",
         "EV-2d56dec8dfeb2b56",
         "EV-6266c73d470e8aef",
@@ -1641,11 +1924,10 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
-        "TX-technology-computer_use",
-        "TX-use_case-robotics_automation",
         "TX-technology-code_generation",
         "TX-use_case-enterprise_operations",
         "TX-use_case-software_development",
+        "TX-use_case-robotics_automation",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-industry-financial_services",
@@ -1660,15 +1942,19 @@
         "TX-use_case-knowledge_search",
         "TX-technology-embodied_ai",
         "TX-technology-speech_audio",
-        "TX-technology-open_weights",
         "TX-industry-media_entertainment",
         "TX-technology-video_generation",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
-        "TX-technology-fine_tuning"
+        "TX-technology-fine_tuning",
+        "TX-technology-computer_use"
       ],
       "relatedEntityIds": [
-        "EN-96eebba49dbbf422"
+        "EN-96eebba49dbbf422",
+        "EN-81e577740888ca6d",
+        "EN-1229af0aa3b0305e",
+        "EN-992eafe973f69075",
+        "EN-0e008e2c06144ec8"
       ],
       "firstSeen": "2026-05-22",
       "lastSeen": "2026-07-17"
@@ -1705,7 +1991,6 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-4eaf3aabecae6016",
         "EV-ed65f3187aa6aa40",
         "EV-60b2d4d401bf5e97",
         "EV-e41fc65eb014893f",
@@ -1729,11 +2014,8 @@
         "EV-4faa2bcf2e42e60c",
         "EV-9ee3c0ec243b6129",
         "EV-58c1cc3749294649",
-        "EV-69784fe31cfdfc44",
-        "EV-c2800c1c5a3f568f",
         "EV-303b418c63895ba6",
-        "EV-bb6d9e43c082fb47",
-        "EV-dfc634f28a70f423",
+        "EV-1ff169120ed385f6",
         "EV-082314251be505e2",
         "EV-0a5e65aa46b0d194",
         "EV-53f881da31630a04",
@@ -1770,8 +2052,9 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
-        "TX-use_case-robotics_automation",
+        "TX-use_case-customer_service",
         "TX-industry-healthcare_life_sciences",
+        "TX-use_case-robotics_automation",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
@@ -1779,7 +2062,6 @@
         "TX-industry-retail_ecommerce",
         "TX-industry-telecommunications",
         "TX-industry-technology",
-        "TX-use_case-customer_service",
         "TX-technology-multimodal",
         "TX-technology-embodied_ai",
         "TX-technology-speech_audio",
@@ -1790,6 +2072,8 @@
       ],
       "relatedEntityIds": [
         "EN-0f3360879e746531",
+        "EN-fbe26af59be95e52",
+        "EN-2b119dc14de9478d",
         "EN-a1b0d8a938903dc7",
         "EN-8395dc051feafc4c",
         "EN-b5738c169b693bee",
@@ -1822,11 +2106,9 @@
         "EV-2fab4396000198d2",
         "EV-3fb492fb45980541",
         "EV-b95539d17772a4ce",
-        "EV-b2e374d54b10b9af",
         "EV-4763b46821ab746e",
         "EV-58c1cc3749294649",
         "EV-3398ae53a199be16",
-        "EV-bd508dbe4205774f",
         "EV-7c899d5decafc42f",
         "EV-9fb217d7e855c8f7",
         "EV-268250d426c1a4a0",
@@ -1852,10 +2134,8 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
-        "TX-technology-computer_use",
-        "TX-use_case-robotics_automation",
         "TX-industry-healthcare_life_sciences",
-        "TX-use_case-software_development",
+        "TX-use_case-robotics_automation",
         "TX-technology-on_device",
         "TX-use_case-cybersecurity",
         "TX-industry-retail_ecommerce",
@@ -1863,14 +2143,14 @@
         "TX-technology-speech_audio",
         "TX-technology-open_weights",
         "TX-technology-reasoning",
-        "TX-technology-model_context_protocol"
+        "TX-technology-model_context_protocol",
+        "TX-technology-computer_use"
       ],
       "relatedEntityIds": [
-        "EN-8652f6cd9088f1fa",
         "EN-597d8c4afa5fe3d6",
         "EN-8d4321d936320802"
       ],
-      "firstSeen": "2026-04-16",
+      "firstSeen": "2026-05-20",
       "lastSeen": "2026-07-17"
     },
     {
@@ -1987,31 +2267,113 @@
       "lastSeen": "2026-07-17"
     },
     {
-      "id": "EN-2c348893efb2316e",
-      "name": "StepFun",
+      "id": "EN-992eafe973f69075",
+      "name": "JavaScript",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-04efb4eecbb8125f"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-on_device"
+      ],
+      "relatedEntityIds": [
+        "EN-bbdefa2950f49882"
+      ],
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-16"
+    },
+    {
+      "id": "EN-1229af0aa3b0305e",
+      "name": "LiteRT.js",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-04efb4eecbb8125f"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-on_device"
+      ],
+      "relatedEntityIds": [
+        "EN-bbdefa2950f49882"
+      ],
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-16"
+    },
+    {
+      "id": "EN-81e577740888ca6d",
+      "name": "SensorFM",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-04efb4eecbb8125f"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-on_device"
+      ],
+      "relatedEntityIds": [
+        "EN-bbdefa2950f49882"
+      ],
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-16"
+    },
+    {
+      "id": "EN-968e2d5b08687bf4",
+      "name": "Samsung",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "阶跃星辰"
+        "三星"
       ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
-        "EV-6824e76c4aa69a71",
-        "EV-712bb6241160c4c5",
-        "EV-d99037f2ed8db897"
+        "EV-ac6f75718393f2c4",
+        "EV-614fb5bb3cfc2519",
+        "EV-968709fe29b77eba",
+        "EV-9ab076d2fff77412",
+        "EV-4a4869273654c799",
+        "EV-d3528ccff1833385",
+        "EV-ef6464cf7f764835",
+        "EV-8a9b12665a3e40a0",
+        "EV-72d274f7fcd97151",
+        "EV-9b29acd28643e9d1",
+        "EV-b15c842ee1974890",
+        "EV-b9a009b48d4cbf85",
+        "EV-02186ed7885f68fe",
+        "EV-44a492c1688949cf"
       ],
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
+        "TX-use_case-software_development",
         "TX-technology-on_device",
-        "TX-technology-speech_audio"
+        "TX-technology-multimodal"
       ],
       "relatedEntityIds": [],
-      "firstSeen": "2026-05-25",
-      "lastSeen": "2026-07-14"
+      "firstSeen": "2026-05-22",
+      "lastSeen": "2026-07-17"
     },
     {
       "id": "EN-3a7bd3e2360a3d29",
@@ -2026,11 +2388,12 @@
       "eventIds": [
         "EV-f282ab8740ff0096",
         "EV-968709fe29b77eba",
-        "EV-371a54f74b9d332c",
         "EV-8a8e894a84768ea5",
         "EV-f5a50f1fed72fec3",
         "EV-d5419a74073b4508",
+        "EV-e857f9d1c1478c70",
         "EV-21caef1790021587",
+        "EV-8a9b12665a3e40a0",
         "EV-302018f2e960a8bf",
         "EV-aa962ef7ec9a5c50",
         "EV-7cd4a5b931f0b667",
@@ -2056,6 +2419,7 @@
         "EV-ef823877347ff40f",
         "EV-5cd10de5c12916f0",
         "EV-5613946bdd578a26",
+        "EV-dd902b603e2e3dbc",
         "EV-da6678e4e865e00e",
         "EV-8cb2374f76202ecc",
         "EV-b4203b10d6592bf2",
@@ -2080,6 +2444,191 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-06-04",
       "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "EN-8147e6fed86d42c1",
+      "name": "OPPO",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-94e8711cecfe6149",
+        "EV-02686922dd82c4aa",
+        "EV-4faa2bcf2e42e60c",
+        "EV-8a9b12665a3e40a0",
+        "EV-8f8f477441a23b7c",
+        "EV-cfa8c754627747a1",
+        "EV-d31057c6f6ec28ba"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
+        "TX-use_case-robotics_automation",
+        "TX-industry-financial_services",
+        "TX-technology-on_device",
+        "TX-industry-retail_ecommerce",
+        "TX-technology-embodied_ai",
+        "TX-technology-fine_tuning"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-05-23",
+      "lastSeen": "2026-07-16"
+    },
+    {
+      "id": "EN-c608c4787821de1b",
+      "name": "Xiaomi",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "小米"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-3353bd96728c99e2",
+        "EV-8a9b12665a3e40a0",
+        "EV-28145c97a7237d6d",
+        "EV-45d7d42ef38e29bf",
+        "EV-f5dd192f6d4e04a3",
+        "EV-c7336cf617a545ce",
+        "EV-86537be17d50ff20",
+        "EV-dd902b603e2e3dbc"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-use_case-robotics_automation",
+        "TX-technology-long_context",
+        "TX-technology-mixture_of_experts",
+        "TX-technology-on_device",
+        "TX-technology-multimodal",
+        "TX-technology-open_weights"
+      ],
+      "relatedEntityIds": [
+        "EN-101a515191c6be9e"
+      ],
+      "firstSeen": "2026-06-09",
+      "lastSeen": "2026-07-16"
+    },
+    {
+      "id": "EN-6f21a653c48f4f19",
+      "name": "Nubia",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "努比亚"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-434dcf1813a84ead",
+        "EV-8a9b12665a3e40a0"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-robotics_automation",
+        "TX-technology-on_device",
+        "TX-industry-retail_ecommerce"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-13",
+      "lastSeen": "2026-07-16"
+    },
+    {
+      "id": "EN-5388bc10736a0eff",
+      "name": "ByteDance",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "豆包"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-8a8e894a84768ea5",
+        "EV-d76dac938af08f62",
+        "EV-47a84a0f1a85c29c",
+        "EV-e7a6bcd24f4241d0",
+        "EV-533d2da98cce1ae0",
+        "EV-8a9b12665a3e40a0",
+        "EV-4532e847f78cde0d",
+        "EV-0e42803078b1c6be",
+        "EV-b7dc60c0b63b6063",
+        "EV-b9c1e7a2c89817f1",
+        "EV-c68a8af069f3ed1d",
+        "EV-d2a00623908ca15f",
+        "EV-aef95763358b4ec8"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-on_device",
+        "TX-industry-media_entertainment",
+        "TX-technology-video_generation",
+        "TX-technology-tool_use"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-01",
+      "lastSeen": "2026-07-16"
+    },
+    {
+      "id": "EN-12a81529bba89666",
+      "name": "MiniCPM",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-8a9b12665a3e40a0"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-on_device"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-16"
+    },
+    {
+      "id": "EN-2c348893efb2316e",
+      "name": "StepFun",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "阶跃星辰"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-6824e76c4aa69a71",
+        "EV-712bb6241160c4c5",
+        "EV-d99037f2ed8db897"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-on_device",
+        "TX-technology-speech_audio"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-05-25",
+      "lastSeen": "2026-07-14"
     },
     {
       "id": "EN-c70eca6b0f88f44d",
@@ -2116,6 +2665,7 @@
         "EV-5964027086487940",
         "EV-e1a4bc40db4a9d8f",
         "EV-c81cb21337a9bb98",
+        "EV-94e0afb44c320c99",
         "EV-7f2811d2272cf4a3",
         "EV-6415a58637893b34",
         "EV-ef6464cf7f764835",
@@ -2129,10 +2679,8 @@
         "EV-a8a8f26c5128d894",
         "EV-51645a3b1e730105",
         "EV-7c899d5decafc42f",
-        "EV-c2800c1c5a3f568f",
         "EV-26cd4d692404e5c6",
-        "EV-cde5c3e5ef83bd51",
-        "EV-0ca3a9830e25f56b",
+        "EV-1c2723ad61d192bd",
         "EV-84226288807f817b",
         "EV-8bf42c1816e772ba",
         "EV-0347414d81e7f02e",
@@ -2143,7 +2691,6 @@
         "EV-000f2abf549268a6",
         "EV-ebe02c213368afae",
         "EV-d39b53ca7b84b9ca",
-        "EV-3e55e1cd1d54f6ef",
         "EV-cedeae902fd1263d",
         "EV-3cd088098be5d0d4",
         "EV-c410d77c8d531e5f",
@@ -2241,6 +2788,7 @@
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
         "TX-technology-code_generation",
+        "TX-use_case-customer_service",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-enterprise_operations",
         "TX-use_case-software_development",
@@ -2253,7 +2801,6 @@
         "TX-industry-retail_ecommerce",
         "TX-technology-human_in_loop",
         "TX-industry-telecommunications",
-        "TX-use_case-customer_service",
         "TX-technology-multimodal",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-embodied_ai",
@@ -2262,11 +2809,13 @@
         "TX-technology-tool_use",
         "TX-technology-model_context_protocol",
         "TX-industry-government_public_sector",
-        "TX-industry-education",
-        "TX-technology-fine_tuning"
+        "TX-technology-fine_tuning",
+        "TX-industry-education"
       ],
       "relatedEntityIds": [
-        "EN-3a9b395103419892"
+        "EN-3a9b395103419892",
+        "EN-7d3194f79e645c42",
+        "EN-9612b6f6884e062f"
       ],
       "firstSeen": "2026-03-13",
       "lastSeen": "2026-07-17"
@@ -2282,9 +2831,7 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-b2e374d54b10b9af",
         "EV-58c1cc3749294649",
-        "EV-d53cd33e8f541a65",
         "EV-445db243814e88d0",
         "EV-57f083a39393d841",
         "EV-b0145ffd99b55e66",
@@ -2292,7 +2839,8 @@
         "EV-343e0454586c58a9",
         "EV-309ea4fc27a66485",
         "EV-abaf05e513f88a4f",
-        "EV-4026c95d4c01b96e"
+        "EV-4026c95d4c01b96e",
+        "EV-d53cd33e8f541a65"
       ],
       "viewpointIds": [],
       "classificationRefs": [
@@ -2301,12 +2849,11 @@
         "TX-technology-code_generation",
         "TX-use_case-software_development",
         "TX-technology-long_context",
-        "TX-technology-on_device"
+        "TX-technology-on_device",
+        "TX-technology-tool_use"
       ],
-      "relatedEntityIds": [
-        "EN-f48a4090493d2b5e"
-      ],
-      "firstSeen": "2026-06-01",
+      "relatedEntityIds": [],
+      "firstSeen": "2026-05-25",
       "lastSeen": "2026-07-17"
     },
     {
@@ -2331,45 +2878,6 @@
       "lastSeen": "2026-05-25"
     },
     {
-      "id": "EN-968e2d5b08687bf4",
-      "name": "Samsung",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [
-        "三星"
-      ],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-ac6f75718393f2c4",
-        "EV-614fb5bb3cfc2519",
-        "EV-968709fe29b77eba",
-        "EV-9ab076d2fff77412",
-        "EV-4a4869273654c799",
-        "EV-d3528ccff1833385",
-        "EV-ef6464cf7f764835",
-        "EV-72d274f7fcd97151",
-        "EV-9b29acd28643e9d1",
-        "EV-b15c842ee1974890",
-        "EV-b9a009b48d4cbf85",
-        "EV-02186ed7885f68fe",
-        "EV-44a492c1688949cf"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-industry-manufacturing",
-        "TX-use_case-software_development",
-        "TX-technology-on_device",
-        "TX-technology-multimodal"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-05-22",
-      "lastSeen": "2026-07-17"
-    },
-    {
       "id": "EN-0899bccb1b028521",
       "name": "Baidu AI Cloud",
       "entityType": "organization_candidate",
@@ -2391,6 +2899,50 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-07-16",
       "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "EN-3dd90c2e1bf28b32",
+      "name": "小米 MiMo 完成大语言",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-dd902b603e2e3dbc"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-on_device",
+        "TX-technology-multimodal"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-16"
+    },
+    {
+      "id": "EN-5d7b7e77768bfdfc",
+      "name": "多模态",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-dd902b603e2e3dbc"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-on_device",
+        "TX-technology-multimodal"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-16"
     }
   ],
   "fde": [

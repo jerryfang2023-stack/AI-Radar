@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-17T15:01:31.906Z",
+    "generatedAt": "2026-07-17T18:20:10.588Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 748,
-    "quarantinedEventCount": 32
+    "eventCount": 727,
+    "quarantinedEventCount": 50
   },
   "entity": {
     "id": "EN-8652f6cd9088f1fa",
@@ -20,220 +20,28 @@
     "datasetScopes": [
       "canonical"
     ],
-    "eventIds": [
-      "EV-bd508dbe4205774f"
-    ],
+    "eventIds": [],
     "viewpointIds": [],
-    "classificationRefs": [
-      "TX-use_case-cybersecurity"
-    ],
-    "relatedEntityIds": [
-      "EN-9fbf261b62c1d7c0"
-    ],
-    "firstSeen": "2026-04-16",
-    "lastSeen": "2026-07-17",
-    "relationIds": [
-      "REL2-4410cf5eef104c6e"
-    ],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "",
+    "lastSeen": "",
+    "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
-      "partnerships": [
-        "EV-bd508dbe4205774f"
-      ],
+      "partnerships": [],
       "productsServices": [],
       "hardware": [],
       "organizationPeople": [],
       "other": []
     },
-    "timeline": [
-      {
-        "id": "EV-bd508dbe4205774f",
-        "dataDate": "2026-07-17",
-        "date": "2026-04-16",
-        "eventType": "partnership",
-        "eventTypeLabel": "合作",
-        "eventGroup": "商业合作",
-        "status": "announced",
-        "statusLabel": "已公布",
-        "title": "Stellantis 与微软扩大 AI 与云服务合作",
-        "displayTags": [
-          {
-            "dimensionId": "use_case",
-            "id": "cybersecurity",
-            "dimensionName": "应用场景",
-            "name": "网络安全"
-          }
-        ],
-        "entityIds": [
-          "EN-a23572554f6c861e",
-          "EN-8652f6cd9088f1fa",
-          "EN-fb2a436a76aa9fde",
-          "EN-9fbf261b62c1d7c0"
-        ]
-      }
-    ],
+    "timeline": [],
     "viewpoints": []
   },
-  "relatedEntities": [
-    {
-      "id": "EN-9fbf261b62c1d7c0",
-      "name": "Microsoft",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [
-        "微软"
-      ],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-d4baddef1dda157c",
-        "EV-32adf75fbfda29bb",
-        "EV-adf92ecb7cd8714f",
-        "EV-f074a62a26f37ae3",
-        "EV-fc395b2413c9b34a",
-        "EV-47a16db069ed320e",
-        "EV-49c6291694fb6c7b",
-        "EV-283e88bdd15ed87e",
-        "EV-2fab4396000198d2",
-        "EV-3fb492fb45980541",
-        "EV-b95539d17772a4ce",
-        "EV-b2e374d54b10b9af",
-        "EV-4763b46821ab746e",
-        "EV-58c1cc3749294649",
-        "EV-3398ae53a199be16",
-        "EV-bd508dbe4205774f",
-        "EV-7c899d5decafc42f",
-        "EV-9fb217d7e855c8f7",
-        "EV-268250d426c1a4a0",
-        "EV-7309586168387ad8",
-        "EV-6dbf6cfbb35fe77c",
-        "EV-09610316ac52221e",
-        "EV-4ee99f92b011d16f",
-        "EV-c0f86afbefa2e0a6",
-        "EV-e594a091ce2940db",
-        "EV-28145c97a7237d6d",
-        "EV-3da99329ccc33816",
-        "EV-3aca8c193bf251ee",
-        "EV-d2d1834222ab32d3",
-        "EV-b902c7cffb30dec3",
-        "EV-4905e6385c8f4c3a",
-        "EV-ae89898e7aa4a4d6",
-        "EV-d596f111808bd55b",
-        "EV-a4f052325d0ef230",
-        "EV-ec15684583d6f7a9",
-        "EV-62df953d81def866"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-industry-manufacturing",
-        "TX-technology-computer_use",
-        "TX-use_case-robotics_automation",
-        "TX-industry-healthcare_life_sciences",
-        "TX-use_case-software_development",
-        "TX-technology-on_device",
-        "TX-use_case-cybersecurity",
-        "TX-industry-retail_ecommerce",
-        "TX-industry-telecommunications",
-        "TX-technology-speech_audio",
-        "TX-technology-open_weights",
-        "TX-technology-reasoning",
-        "TX-technology-model_context_protocol"
-      ],
-      "relatedEntityIds": [
-        "EN-8652f6cd9088f1fa",
-        "EN-597d8c4afa5fe3d6",
-        "EN-8d4321d936320802"
-      ],
-      "firstSeen": "2026-04-16",
-      "lastSeen": "2026-07-17"
-    }
-  ],
-  "relationships": [
-    {
-      "relationship_id": "REL2-4410cf5eef104c6e",
-      "relationship_version": "RELATION-V2.0",
-      "subject_ref": "EN-8652f6cd9088f1fa",
-      "subject_type": "entity",
-      "predicate": "partners_with",
-      "object_ref": "EN-9fbf261b62c1d7c0",
-      "object_type": "entity",
-      "event_id": "EV-bd508dbe4205774f",
-      "claim_refs": [
-        "CL-04e98ba0e9b8edb2",
-        "CL-493d4bf1f447452e",
-        "CL-949a99d5c225b76e",
-        "CL-c1c83c837b16b430"
-      ],
-      "source_refs": [
-        "SA-71efe7d19781f0d1"
-      ],
-      "data_date": "2026-07-17",
-      "status": "verified"
-    }
-  ],
-  "taxonomyNodes": [
-    {
-      "id": "TX-use_case-cybersecurity",
-      "name": "网络安全",
-      "nodeType": "use_case",
-      "typeLabel": "应用场景",
-      "valueId": "cybersecurity",
-      "eventIds": [
-        "EV-9ddcfd9f61c25158",
-        "EV-6484904c176aa016",
-        "EV-c85011ca6a0389bf",
-        "EV-6180de2e02597d9d",
-        "EV-adafffa563a53d49",
-        "EV-de6682a190c78625",
-        "EV-b240fb11e65b018e",
-        "EV-bd508dbe4205774f",
-        "EV-d07906b648eec63f",
-        "EV-d40a4e1b7a53cabe",
-        "EV-268250d426c1a4a0",
-        "EV-3b5cb867fdaba28f",
-        "EV-87ad2bdf8cd4b0c8",
-        "EV-860b90c017deaa59",
-        "EV-888b9eb73582e21c",
-        "EV-3ff2a155035d01e7",
-        "EV-9110f23a7e60173e",
-        "EV-e792252690f98a22",
-        "EV-56f80f42cf6a7096",
-        "EV-832fa2db95cfea6e",
-        "EV-68fcce7fde89e5d7",
-        "EV-f1418d9e3b1413b7",
-        "EV-ff3ae595bf49ccbf"
-      ],
-      "entityIds": [
-        "EN-871e6f4bf723cb1b",
-        "EN-72badbbdbf521cec",
-        "EN-c0cd6e83b6dd78a5",
-        "EN-bbdefa2950f49882",
-        "EN-8d4321d936320802",
-        "EN-b5738c169b693bee",
-        "EN-c70eca6b0f88f44d",
-        "EN-7d3194f79e645c42",
-        "EN-6fcba5d96a4fadfd",
-        "EN-2b6e51bec93e86c1",
-        "EN-4094a2b7125c7564",
-        "EN-cbc62794911ff31b",
-        "EN-a23572554f6c861e",
-        "EN-8652f6cd9088f1fa",
-        "EN-fb2a436a76aa9fde",
-        "EN-9fbf261b62c1d7c0",
-        "EN-3a7bd3e2360a3d29"
-      ],
-      "fdeIds": [
-        "FDE-d35bf5e6fe7cef6b"
-      ],
-      "hardwareIds": [],
-      "firstSeen": "2026-04-16",
-      "lastSeen": "2026-07-17"
-    }
-  ],
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
   "fde": [],
   "hardware": []
 }

@@ -37,6 +37,12 @@ function normalize(value) {
   return String(value ?? "").replace(/\s+/gu, " ").trim();
 }
 
+function sourceBackedPublicTitle(raw = {}) {
+  const translatedTitle = normalize(raw.title_zh);
+  const originalTitle = normalize(raw.title_original);
+  return translatedTitle || (/[\u3400-\u9fff]/u.test(originalTitle) ? originalTitle : "");
+}
+
 function normalizeUrl(value) {
   const text = normalize(value);
   if (!text) return "";
@@ -177,6 +183,12 @@ export function evaluateBundle(bundle, taxonomy) {
     if (!event.claim_refs.length || event.claim_refs.some((id) => !claimById.has(id))) failures.push(`${event.event_id}: invalid claim_refs`);
     if (["verified", "partial"].includes(event.publication_status) && event.claim_refs.some((id) => claimById.get(id)?.verification_status === "disputed")) {
       failures.push(`${event.event_id}: disputed claim published as ${event.publication_status}`);
+    }
+    const sourceTitles = event.source_refs
+      .map((sourceId) => sourceBackedPublicTitle(rawBySourceId.get(sourceId)))
+      .filter(Boolean);
+    if (normalize(event.display_title_zh) && !sourceTitles.some((title) => normalize(title) === normalize(event.display_title_zh))) {
+      failures.push(`${event.event_id}: display_title_zh is not an exact source-title translation`);
     }
     const sourceRaw = rawBySourceId.get(event.source_refs[0]);
     const relevance = eventAiRelevanceEvidence({

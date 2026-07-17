@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-027
 title: "Intel and Google Cloud Announce Collaboration to Accelerate Intel’s AI-Enabled Enterprise Transformation - Intel Newsroom"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "Intel 与 Google Cloud 宣布合作，加速 Intel 的 AI 赋能企业转型"
+title_translation_status: translated
+title_translation_method: manual_reviewed_source_title_translation
 original_url: "https://newsroom.intel.com/artificial-intelligence/intel-google-cloud-announce-collaboration-to-accelerate-intel-ai-enabled-enterprise-transformation"
 canonical_url: "https://newsroom.intel.com/artificial-intelligence/intel-google-cloud-announce-collaboration-to-accelerate-intel-ai-enabled-enterprise-transformation"
 source_name: "keyword search / Anysearch"

@@ -1,0 +1,156 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T18:20:10.588Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 727,
+    "quarantinedEventCount": 50
+  },
+  "entity": {
+    "id": "EN-12a81529bba89666",
+    "name": "MiniCPM",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-8a9b12665a3e40a0"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-technology-on_device"
+    ],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-15",
+    "lastSeen": "2026-07-16",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-8a9b12665a3e40a0"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-8a9b12665a3e40a0",
+        "dataDate": "2026-07-16",
+        "date": "2026-07-15",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "面壁智能 MiniCPM 系列端侧模型将搭载于三星手机上市，覆盖数款旗舰机型",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "on_device",
+            "name": "端侧"
+          },
+          {
+            "dimensionId": "deployment_model",
+            "id": "edge_device",
+            "dimensionName": "部署形态",
+            "name": "边缘与端侧"
+          }
+        ],
+        "entityIds": [
+          "EN-968e2d5b08687bf4",
+          "EN-3a7bd3e2360a3d29",
+          "EN-8147e6fed86d42c1",
+          "EN-c608c4787821de1b",
+          "EN-6f21a653c48f4f19",
+          "EN-5388bc10736a0eff",
+          "EN-12a81529bba89666"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-technology-on_device",
+      "name": "端侧",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "on_device",
+      "eventIds": [
+        "EV-d4d7b019ff0015df",
+        "EV-a15da1b52d939967",
+        "EV-283e88bdd15ed87e",
+        "EV-653cbce2ccc79f8b",
+        "EV-04efb4eecbb8125f",
+        "EV-8a9b12665a3e40a0",
+        "EV-712bb6241160c4c5",
+        "EV-0a5e65aa46b0d194",
+        "EV-52508b70ccd2cc0b",
+        "EV-c5b8faec223a4caf",
+        "EV-4026c95d4c01b96e",
+        "EV-0597e07d7e73051a",
+        "EV-02186ed7885f68fe",
+        "EV-5613946bdd578a26",
+        "EV-dd902b603e2e3dbc",
+        "EV-f4876d2e1a20d87b"
+      ],
+      "entityIds": [
+        "EN-6f7ac1823da81d2e",
+        "EN-bbdefa2950f49882",
+        "EN-a35b80cf9d171015",
+        "EN-8d4321d936320802",
+        "EN-9fbf261b62c1d7c0",
+        "EN-f3cfedbe8428c9f7",
+        "EN-7df09a7717ef2feb",
+        "EN-c04bd5ebd10ab696",
+        "EN-50ba7ff15827787b",
+        "EN-992eafe973f69075",
+        "EN-1229af0aa3b0305e",
+        "EN-81e577740888ca6d",
+        "EN-968e2d5b08687bf4",
+        "EN-3a7bd3e2360a3d29",
+        "EN-8147e6fed86d42c1",
+        "EN-c608c4787821de1b",
+        "EN-6f21a653c48f4f19",
+        "EN-5388bc10736a0eff",
+        "EN-12a81529bba89666",
+        "EN-2c348893efb2316e",
+        "EN-c70eca6b0f88f44d",
+        "EN-ce635c4eabff5e4f",
+        "EN-c3ce0cc92b48bbd6",
+        "EN-0899bccb1b028521",
+        "EN-3dd90c2e1bf28b32",
+        "EN-5d7b7e77768bfdfc"
+      ],
+      "fdeIds": [
+        "FDE-ef57fbc39a8c11f6"
+      ],
+      "hardwareIds": [
+        "HW-de1b3c6ad39cc9bc"
+      ],
+      "firstSeen": "2026-05-25",
+      "lastSeen": "2026-07-17"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}

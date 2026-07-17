@@ -30,6 +30,8 @@ jobs:
       ANYSEARCH_API_KEY: ${{ secrets.ANYSEARCH_API_KEY }}
       TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
       EXA_API_KEY: ${{ secrets.EXA_API_KEY }}
+      DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+      DEEPSEEK_MODEL: deepseek-v4-flash
       OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
 
     steps:
@@ -74,7 +76,8 @@ jobs:
             echo "- anysearch_secret: $([ -n "$ANYSEARCH_API_KEY" ] && echo configured || echo missing)"
             echo "- tavily_secret: $([ -n "$TAVILY_API_KEY" ] && echo configured || echo missing)"
             echo "- exa_secret: $([ -n "$EXA_API_KEY" ] && echo configured || echo missing)"
-            echo "- openai_secret: $([ -n "$OPENAI_API_KEY" ] && echo configured || echo missing)"
+            echo "- deepseek_v4_title_translation: $([ -n "$DEEPSEEK_API_KEY" ] && echo configured || echo missing)"
+            echo "- openai_title_translation_fallback: $([ -n "$OPENAI_API_KEY" ] && echo configured || echo missing)"
             echo
             echo "This workflow is a dry run. It uploads artifacts only and never commits, pushes, opens PRs, commits site data, or deploys."
             echo

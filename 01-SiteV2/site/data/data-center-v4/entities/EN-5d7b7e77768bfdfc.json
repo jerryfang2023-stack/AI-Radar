@@ -1,0 +1,231 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T18:20:10.588Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 727,
+    "quarantinedEventCount": 50
+  },
+  "entity": {
+    "id": "EN-5d7b7e77768bfdfc",
+    "name": "多模态",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-dd902b603e2e3dbc"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-technology-on_device",
+      "TX-technology-multimodal"
+    ],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-15",
+    "lastSeen": "2026-07-16",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": [
+        "EV-dd902b603e2e3dbc"
+      ]
+    },
+    "timeline": [
+      {
+        "id": "EV-dd902b603e2e3dbc",
+        "dataDate": "2026-07-16",
+        "date": "2026-07-15",
+        "eventType": "policy_regulation",
+        "eventTypeLabel": "政策监管",
+        "eventGroup": "组织、政策与法律",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "小米 MiMo 完成大语言、多模态、语音全系列模型矩阵闭环，端侧模型通过国家大模型备案",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "multimodal",
+            "name": "多模态"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "on_device",
+            "name": "端侧"
+          },
+          {
+            "dimensionId": "deployment_model",
+            "id": "edge_device",
+            "dimensionName": "部署形态",
+            "name": "边缘与端侧"
+          }
+        ],
+        "entityIds": [
+          "EN-3dd90c2e1bf28b32",
+          "EN-c608c4787821de1b",
+          "EN-5d7b7e77768bfdfc",
+          "EN-3a7bd3e2360a3d29"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-technology-on_device",
+      "name": "端侧",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "on_device",
+      "eventIds": [
+        "EV-d4d7b019ff0015df",
+        "EV-a15da1b52d939967",
+        "EV-283e88bdd15ed87e",
+        "EV-653cbce2ccc79f8b",
+        "EV-04efb4eecbb8125f",
+        "EV-8a9b12665a3e40a0",
+        "EV-712bb6241160c4c5",
+        "EV-0a5e65aa46b0d194",
+        "EV-52508b70ccd2cc0b",
+        "EV-c5b8faec223a4caf",
+        "EV-4026c95d4c01b96e",
+        "EV-0597e07d7e73051a",
+        "EV-02186ed7885f68fe",
+        "EV-5613946bdd578a26",
+        "EV-dd902b603e2e3dbc",
+        "EV-f4876d2e1a20d87b"
+      ],
+      "entityIds": [
+        "EN-6f7ac1823da81d2e",
+        "EN-bbdefa2950f49882",
+        "EN-a35b80cf9d171015",
+        "EN-8d4321d936320802",
+        "EN-9fbf261b62c1d7c0",
+        "EN-f3cfedbe8428c9f7",
+        "EN-7df09a7717ef2feb",
+        "EN-c04bd5ebd10ab696",
+        "EN-50ba7ff15827787b",
+        "EN-992eafe973f69075",
+        "EN-1229af0aa3b0305e",
+        "EN-81e577740888ca6d",
+        "EN-968e2d5b08687bf4",
+        "EN-3a7bd3e2360a3d29",
+        "EN-8147e6fed86d42c1",
+        "EN-c608c4787821de1b",
+        "EN-6f21a653c48f4f19",
+        "EN-5388bc10736a0eff",
+        "EN-12a81529bba89666",
+        "EN-2c348893efb2316e",
+        "EN-c70eca6b0f88f44d",
+        "EN-ce635c4eabff5e4f",
+        "EN-c3ce0cc92b48bbd6",
+        "EN-0899bccb1b028521",
+        "EN-3dd90c2e1bf28b32",
+        "EN-5d7b7e77768bfdfc"
+      ],
+      "fdeIds": [
+        "FDE-ef57fbc39a8c11f6"
+      ],
+      "hardwareIds": [
+        "HW-de1b3c6ad39cc9bc"
+      ],
+      "firstSeen": "2026-05-25",
+      "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "TX-technology-multimodal",
+      "name": "多模态",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "multimodal",
+      "eventIds": [
+        "EV-44c9a50b99c76a70",
+        "EV-968709fe29b77eba",
+        "EV-9f067d8f0d23eb48",
+        "EV-a9810b47e0408a05",
+        "EV-f169db2fb75a1371",
+        "EV-21caef1790021587",
+        "EV-70e3f88cb06a856c",
+        "EV-3353bd96728c99e2",
+        "EV-9496f90f3e808992",
+        "EV-0a5e65aa46b0d194",
+        "EV-e42e55d1e11a2ba2",
+        "EV-53f881da31630a04",
+        "EV-d07906b648eec63f",
+        "EV-c410d77c8d531e5f",
+        "EV-5babb43f4b4d302f",
+        "EV-75b741c8c09d4384",
+        "EV-b88affdec306a75a",
+        "EV-e8bdeab9389a5f0c",
+        "EV-160a359d9406b69e",
+        "EV-61b97c0ee6ad83b3",
+        "EV-f68e00bb9fd49fac",
+        "EV-74b965de27bc0515",
+        "EV-dd902b603e2e3dbc",
+        "EV-2ca9d0a3ca53c3bf",
+        "EV-6b7917bd7edd4bde"
+      ],
+      "entityIds": [
+        "EN-245f1e177c5169cb",
+        "EN-968e2d5b08687bf4",
+        "EN-cbc62794911ff31b",
+        "EN-ea3bd73e2b506e00",
+        "EN-bbdefa2950f49882",
+        "EN-3a7bd3e2360a3d29",
+        "EN-8d4321d936320802",
+        "EN-193d220b421d776e",
+        "EN-7d3194f79e645c42",
+        "EN-8f71c4871a160172",
+        "EN-78624f0a98e78301",
+        "EN-522d3edeb64a7ca4",
+        "EN-c608c4787821de1b",
+        "EN-101a515191c6be9e",
+        "EN-c70eca6b0f88f44d",
+        "EN-2b6e51bec93e86c1",
+        "EN-b0532e1af75cc4ab",
+        "EN-e1517be14d06cdb7",
+        "EN-7ca2b7da6e0f8654",
+        "EN-047364b9be67f665",
+        "EN-b5251b35f15bedc4",
+        "EN-d831f1170590ddb1",
+        "EN-3dd90c2e1bf28b32",
+        "EN-5d7b7e77768bfdfc",
+        "EN-9c8ae69b84f21a2e"
+      ],
+      "fdeIds": [
+        "FDE-45ad6eae0d326429",
+        "FDE-4858cc86925e281a",
+        "FDE-5587adb203295543"
+      ],
+      "hardwareIds": [
+        "HW-de1b3c6ad39cc9bc"
+      ],
+      "firstSeen": "2026-06-04",
+      "lastSeen": "2026-07-17"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}

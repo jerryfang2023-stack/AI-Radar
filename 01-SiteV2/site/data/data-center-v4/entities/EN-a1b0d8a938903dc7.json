@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-17T15:01:31.906Z",
+    "generatedAt": "2026-07-17T18:20:10.588Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 748,
-    "quarantinedEventCount": 32
+    "eventCount": 727,
+    "quarantinedEventCount": 50
   },
   "entity": {
     "id": "EN-a1b0d8a938903dc7",
@@ -21,15 +21,17 @@
       "canonical"
     ],
     "eventIds": [
-      "EV-69784fe31cfdfc44"
+      "EV-303b418c63895ba6"
     ],
     "viewpointIds": [],
-    "classificationRefs": [],
+    "classificationRefs": [
+      "TX-use_case-robotics_automation"
+    ],
     "relatedEntityIds": [
       "EN-8d4321d936320802"
     ],
     "firstSeen": "2026-07-16",
-    "lastSeen": "2026-07-17",
+    "lastSeen": "2026-07-16",
     "relationIds": [
       "REL2-e450a1c99a5b2883"
     ],
@@ -39,37 +41,12 @@
       "partnerships": [],
       "productsServices": [],
       "hardware": [
-        "EV-69784fe31cfdfc44",
         "EV-303b418c63895ba6"
       ],
       "organizationPeople": [],
       "other": []
     },
     "timeline": [
-      {
-        "id": "EV-69784fe31cfdfc44",
-        "dataDate": "2026-07-17",
-        "date": "2026-07-16",
-        "eventType": "hardware_product",
-        "eventTypeLabel": "硬件产品",
-        "eventGroup": "AI 硬件",
-        "status": "announced",
-        "statusLabel": "已公布",
-        "title": "NVIDIA 扩展 Jetson Thor 计算机家族，新增 T3000、T2000 模组",
-        "displayTags": [
-          {
-            "dimensionId": "product_form",
-            "id": "compute_system",
-            "dimensionName": "产品形态",
-            "name": "计算系统"
-          }
-        ],
-        "entityIds": [
-          "EN-8d4321d936320802",
-          "EN-a1b0d8a938903dc7",
-          "EN-7d3c95ebe1221dbb"
-        ]
-      },
       {
         "id": "EV-303b418c63895ba6",
         "dataDate": "2026-07-16",
@@ -92,23 +69,14 @@
             "id": "robotics_automation",
             "dimensionName": "应用场景",
             "name": "机器人与物理自动化"
-          },
-          {
-            "dimensionId": "technology",
-            "dimensionName": "技术",
-            "id": "agentic_execution",
-            "name": "智能体"
-          },
-          {
-            "dimensionId": "target_user",
-            "id": "developer",
-            "dimensionName": "目标用户",
-            "name": "开发者"
           }
         ],
         "entityIds": [
           "EN-8d4321d936320802",
-          "EN-cbc62794911ff31b"
+          "EN-cbc62794911ff31b",
+          "EN-a1b0d8a938903dc7",
+          "EN-fbe26af59be95e52",
+          "EN-2b119dc14de9478d"
         ]
       }
     ],
@@ -126,7 +94,6 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-4eaf3aabecae6016",
         "EV-ed65f3187aa6aa40",
         "EV-60b2d4d401bf5e97",
         "EV-e41fc65eb014893f",
@@ -150,11 +117,8 @@
         "EV-4faa2bcf2e42e60c",
         "EV-9ee3c0ec243b6129",
         "EV-58c1cc3749294649",
-        "EV-69784fe31cfdfc44",
-        "EV-c2800c1c5a3f568f",
         "EV-303b418c63895ba6",
-        "EV-bb6d9e43c082fb47",
-        "EV-dfc634f28a70f423",
+        "EV-1ff169120ed385f6",
         "EV-082314251be505e2",
         "EV-0a5e65aa46b0d194",
         "EV-53f881da31630a04",
@@ -191,8 +155,9 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
-        "TX-use_case-robotics_automation",
+        "TX-use_case-customer_service",
         "TX-industry-healthcare_life_sciences",
+        "TX-use_case-robotics_automation",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
@@ -200,7 +165,6 @@
         "TX-industry-retail_ecommerce",
         "TX-industry-telecommunications",
         "TX-industry-technology",
-        "TX-use_case-customer_service",
         "TX-technology-multimodal",
         "TX-technology-embodied_ai",
         "TX-technology-speech_audio",
@@ -211,6 +175,8 @@
       ],
       "relatedEntityIds": [
         "EN-0f3360879e746531",
+        "EN-fbe26af59be95e52",
+        "EN-2b119dc14de9478d",
         "EN-a1b0d8a938903dc7",
         "EN-8395dc051feafc4c",
         "EN-b5738c169b693bee",
@@ -233,8 +199,8 @@
       "claim_refs": [
         "CL-dbbed563be597499",
         "CL-4b65a9f9d61bb755",
-        "CL-2182dc15ee8cb7e8",
-        "CL-aa43b1006b63c793"
+        "CL-e617ccfe75aad513",
+        "CL-2182dc15ee8cb7e8"
       ],
       "source_refs": [
         "SA-976748d90721f77e"
@@ -243,36 +209,117 @@
       "status": "verified"
     }
   ],
-  "taxonomyNodes": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-use_case-robotics_automation",
+      "name": "机器人与物理自动化",
+      "nodeType": "use_case",
+      "typeLabel": "应用场景",
+      "valueId": "robotics_automation",
+      "eventIds": [
+        "EV-adf92ecb7cd8714f",
+        "EV-5a26f343846cb8ad",
+        "EV-9fa9822969d3c3fd",
+        "EV-44c9a50b99c76a70",
+        "EV-434dcf1813a84ead",
+        "EV-9f067d8f0d23eb48",
+        "EV-f059fd80d668c6bc",
+        "EV-234ad54940674bf6",
+        "EV-2fab4396000198d2",
+        "EV-3fb492fb45980541",
+        "EV-39848cdd62c00e59",
+        "EV-4faa2bcf2e42e60c",
+        "EV-303b418c63895ba6",
+        "EV-3353bd96728c99e2",
+        "EV-57565fc2e7502c59",
+        "EV-4536910c045ae530",
+        "EV-473f852b374d8b1c",
+        "EV-49751dfc7d2f6d6c",
+        "EV-66338f5fb682617e",
+        "EV-e6771f58d7c2a050",
+        "EV-b88affdec306a75a",
+        "EV-85373b8ec9148127",
+        "EV-52e1ac21c25a0a09",
+        "EV-ed58c2c69290ee4c",
+        "EV-66970d4aea37111f",
+        "EV-cbc8b53d4f4478b1",
+        "EV-4beb890f0879aeaf",
+        "EV-ad64347138da72bb"
+      ],
+      "entityIds": [
+        "EN-9fbf261b62c1d7c0",
+        "EN-7d3194f79e645c42",
+        "EN-b0532e1af75cc4ab",
+        "EN-cbc62794911ff31b",
+        "EN-b51b27d89f9ea747",
+        "EN-245f1e177c5169cb",
+        "EN-6f21a653c48f4f19",
+        "EN-4dbe391b8fcf977a",
+        "EN-8d4321d936320802",
+        "EN-72138e570e5103e2",
+        "EN-8147e6fed86d42c1",
+        "EN-a1b0d8a938903dc7",
+        "EN-fbe26af59be95e52",
+        "EN-2b119dc14de9478d",
+        "EN-522d3edeb64a7ca4",
+        "EN-c608c4787821de1b",
+        "EN-101a515191c6be9e",
+        "EN-8afd897b5b887b06",
+        "EN-047364b9be67f665",
+        "EN-30081094f2a8c83d",
+        "EN-bbdefa2950f49882",
+        "EN-7ca2b7da6e0f8654",
+        "EN-3a7bd3e2360a3d29",
+        "EN-6fcba5d96a4fadfd"
+      ],
+      "fdeIds": [
+        "FDE-13cf52a1201f0544",
+        "FDE-45ad6eae0d326429",
+        "FDE-a28fee3a33c46db9",
+        "FDE-dadf0e9572889d3d",
+        "FDE-779bb70e06a29ed4",
+        "FDE-8669dbd3140ecd8e"
+      ],
+      "hardwareIds": [
+        "HW-0ebffabe51a60966",
+        "HW-8f63cf2364e0df35",
+        "HW-dca442211b264bbe"
+      ],
+      "firstSeen": "2026-06-01",
+      "lastSeen": "2026-07-16"
+    }
+  ],
   "fde": [],
   "hardware": [
     {
-      "id": "HW-51034436efb8365e",
-      "eventId": "EV-69784fe31cfdfc44",
-      "dataDate": "2026-07-17",
+      "id": "HW-0ebffabe51a60966",
+      "eventId": "EV-303b418c63895ba6",
+      "dataDate": "2026-07-16",
       "date": "2026-07-16",
-      "title": "NVIDIA 扩展 Jetson Thor 计算机家族，新增 T3000、T2000 模组",
-      "hardwareType": "ai_device",
+      "title": "NVIDIA 发布新款 Jetson Thor 计算机，推动机器人与边缘 AI 普及",
+      "hardwareType": "gpu",
       "eventType": "hardware_product",
       "eventTypeLabel": "硬件产品",
-      "computeLayer": "未披露",
+      "computeLayer": "edge",
       "supplier": "NVIDIA",
       "customer": "未披露",
       "processNode": "未披露",
-      "capacity": 865,
-      "capacityUnit": "TFLOPS",
+      "capacity": 32,
+      "capacityUnit": "GB",
       "site": "未披露",
       "region": "未披露",
       "contractValue": "未披露",
       "shipmentDate": "未披露",
       "tags": [],
-      "sourceUrl": "https://ithome.com/0/977/455.htm",
-      "sourceName": "IT之家（RSS）",
+      "sourceUrl": "https://blogs.nvidia.com/blog/jetson-thor-robotics-edge-ai-agent",
+      "sourceName": "blogs.nvidia.com",
       "sourceDate": "2026-07-16",
       "entityIds": [
         "EN-8d4321d936320802",
+        "EN-cbc62794911ff31b",
         "EN-a1b0d8a938903dc7",
-        "EN-7d3c95ebe1221dbb"
+        "EN-fbe26af59be95e52",
+        "EN-2b119dc14de9478d"
       ]
     }
   ]

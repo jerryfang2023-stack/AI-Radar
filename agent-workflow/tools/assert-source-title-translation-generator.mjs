@@ -78,7 +78,11 @@ const metaFeatureRemoval = await generateSourceTitleTranslation(
   { provider: "business-rule", allowNetwork: true }
 );
 const supermicroEdgeAi = await generateSourceTitleTranslation(
-  "Supermicro Simplifies Edge AI Deployments with Validated Kubernetes Appliances with Red Hat and Everpure – Company Announcement - FT.com",
+  "Supermicro Simplifies Edge AI Deployments with Validated Kubernetes Appliances with Red Hat and Everpure — Company Announcement - FT.com",
+  { provider: "business-rule", allowNetwork: true }
+);
+const ainaFunding = await generateSourceTitleTranslation(
+  "Aina Raises $5.5 Mn From Info Edge, Others To Build AI Hardware Interface",
   { provider: "business-rule", allowNetwork: true }
 );
 
@@ -101,18 +105,19 @@ const ok =
   result.titleZh === expectedZh &&
   result.method === "controlled_model_prompt_title_translation" &&
   cached === expectedZh &&
-  taskade.titleZh === "Taskade 发布 TSK-1 系统内核，为工作区应用提供统一智能运行层" &&
+  taskade.titleZh === "Taskade 发布 TSK-1：Taskade 系统内核（2026）" &&
   stigg.titleZh === "Stigg 发布 2.0：面向 AI 产品的用量运行时" &&
   primeIntellect.titleZh === "Prime Intellect 完成 1.3 亿美元融资，估值 10 亿美元，用于 AI 训练平台" &&
   neuralTrust.titleZh === "NeuralTrust 完成 2000 万美元融资，用于保护企业不断增长的 AI 智能体集群" &&
   talp.titleZh === "Talp 以 2000 万美元估值完成种子前轮融资，用于通过 AI 虚拟用户模拟客户反应" &&
-  lyzr.titleZh === "Lyzr AI 完成 1 亿美元 B 轮融资，其 AI 智能体参与融资流程" &&
+  lyzr.titleZh === "Lyzr AI 完成 1 亿美元 B 轮融资，其 AI 智能体 SivaClaw 接洽 130 多名投资者并获得 4 亿美元投资意向" &&
   alta.titleZh === "Alta 完成 2500 万美元融资，用于重塑收入团队的市场进入架构" &&
-  githubSecretScanning.titleZh === "GitHub 使用秘密扫描，在九个月内清零安全告警积压" &&
+  githubSecretScanning.titleZh === "GitHub 使用秘密扫描清零安全告警积压" &&
   lyzrFundraiseProcess.titleZh === "Lyzr 的 AI 智能体参与其 1 亿美元 B 轮融资流程" &&
   claudeCodeBrowser.titleZh === "Claude Code 新增内置浏览器，可直接读取、点击并操作外部网页" &&
   metaFeatureRemoval.titleZh === "Meta 在用户反弹后下线 Instagram 争议 AI 图片生成功能" &&
   supermicroEdgeAi.titleZh === "Supermicro 联合 Red Hat 和 Everpure 推出经验证的边缘 AI Kubernetes 一体机" &&
+  ainaFunding.titleZh === "Aina 从 Info Edge 等投资方获得 550 万美元融资，用于打造 AI 硬件界面" &&
   sourceTitleNeedsChineseTranslation("Taskade TSK-1 内核") &&
   sourceTitleNeedsChineseTranslation("Tencent officially releases Hy3 并开放 API") &&
   !sourceTitleNeedsChineseTranslation("Taskade 发布 TSK-1 系统内核") &&
@@ -137,6 +142,7 @@ if (!ok) {
     claudeCodeBrowser,
     metaFeatureRemoval,
     supermicroEdgeAi,
+    ainaFunding,
     legacyMachineTranslationCount: legacyMachineTranslations.size,
     reason: "English source title was not generated and persisted when the exact translation DB entry was missing.",
   }, null, 2));

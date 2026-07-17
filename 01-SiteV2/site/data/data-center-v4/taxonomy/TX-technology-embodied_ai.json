@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-17T15:01:31.906Z",
+    "generatedAt": "2026-07-17T18:20:10.588Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 748,
-    "quarantinedEventCount": 32
+    "eventCount": 727,
+    "quarantinedEventCount": 50
   },
   "node": {
     "id": "TX-technology-embodied_ai",
@@ -23,7 +23,6 @@
       "EV-234ad54940674bf6",
       "EV-6415a58637893b34",
       "EV-4faa2bcf2e42e60c",
-      "EV-70530734d19a478e",
       "EV-473f852b374d8b1c",
       "EV-49751dfc7d2f6d6c",
       "EV-197aac95e60671f7",
@@ -40,10 +39,6 @@
       "EN-9700d41909cf810f",
       "EN-c70eca6b0f88f44d",
       "EN-8147e6fed86d42c1",
-      "EN-522d3edeb64a7ca4",
-      "EN-c608c4787821de1b",
-      "EN-8f71c4871a160172",
-      "EN-2f795798add63d7f",
       "EN-047364b9be67f665",
       "EN-30081094f2a8c83d",
       "EN-89e3f0711b76932c",
@@ -141,19 +136,12 @@
       "status": "announced",
       "statusLabel": "已公布",
       "publicationStatus": "verified",
-      "title": "日本启动 Noetra 国家级 AI 基础设施，计划采购 2.75 万枚 NVIDIA Rubin 芯片",
-      "originalTitle": "NVIDIA 联手日本政经界发布全球首个国家级 AI 基础设施",
+      "title": "NVIDIA 联手日本政经界发布全球首个国家级 AI 基础设施",
+      "originalTitle": "",
       "subject": "Japan to",
       "action": "buy Nvidia Rubin chips",
       "object": "to build an AI for robots - The Japan Times",
-      "metrics": [
-        "$5 million",
-        "$7 million",
-        "$1.9 billion",
-        "$2.7 billion",
-        "$55,000 ",
-        "$1.5 billion"
-      ],
+      "metrics": [],
       "locations": [
         "Japan",
         "日本"
@@ -166,12 +154,6 @@
           "dimensionName": "技术",
           "id": "embodied_ai",
           "name": "具身智能"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "multimodal",
-          "name": "多模态"
         }
       ],
       "facets": {
@@ -189,14 +171,7 @@
             "name": "数据与模型基础设施"
           }
         ],
-        "use_case": [
-          {
-            "dimensionId": "use_case",
-            "id": "robotics_automation",
-            "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
-          }
-        ],
+        "use_case": [],
         "industry": [
           {
             "dimensionId": "industry",
@@ -228,12 +203,6 @@
           "name": "具身智能"
         },
         {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "multimodal",
-          "name": "多模态"
-        },
-        {
           "dimensionId": "product_form",
           "id": "model",
           "dimensionName": "产品形态",
@@ -262,12 +231,6 @@
           "id": "telecommunications",
           "dimensionName": "行业",
           "name": "电信"
-        },
-        {
-          "dimensionId": "use_case",
-          "id": "robotics_automation",
-          "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
         }
       ],
       "displayTags": [
@@ -284,22 +247,10 @@
           "name": "数据与模型基础设施"
         },
         {
-          "dimensionId": "use_case",
-          "id": "robotics_automation",
-          "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
-        },
-        {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "embodied_ai",
           "name": "具身智能"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "multimodal",
-          "name": "多模态"
         },
         {
           "dimensionId": "industry",
@@ -761,103 +712,6 @@
       "products": [],
       "sourceUrl": "https://blogs.nvidia.com/blog/nvidia-and-doosan-group-physical-ai",
       "publisher": "NVIDIA AI Blog"
-    },
-    {
-      "id": "EV-70530734d19a478e",
-      "dataDate": "2026-07-17",
-      "date": "2026-07-16",
-      "updatedDate": "2026-07-17",
-      "eventType": "model_release",
-      "eventTypeLabel": "模型发布",
-      "eventGroup": "模型、产品与服务",
-      "status": "completed",
-      "statusLabel": "已完成",
-      "publicationStatus": "verified",
-      "title": "小米发布具身基座模型 Xiaomi-Robotics-1，基于 10 万小时数据实现\"开箱即用\"",
-      "originalTitle": "",
-      "subject": "小米",
-      "action": "发布具身基座模型",
-      "object": "Xiaomi-Robotics-1，基于 10 万小时数据实现\"开箱即用\"",
-      "metrics": [
-        "10 万"
-      ],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "embodied_ai",
-          "name": "具身智能"
-        }
-      ],
-      "facets": {
-        "product_form": [],
-        "use_case": [
-          {
-            "dimensionId": "use_case",
-            "id": "robotics_automation",
-            "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
-          }
-        ],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "embodied_ai",
-          "name": "具身智能"
-        },
-        {
-          "dimensionId": "use_case",
-          "id": "robotics_automation",
-          "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "use_case",
-          "id": "robotics_automation",
-          "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "embodied_ai",
-          "name": "具身智能"
-        }
-      ],
-      "entityIds": [
-        "EN-522d3edeb64a7ca4",
-        "EN-c608c4787821de1b",
-        "EN-8f71c4871a160172",
-        "EN-2f795798add63d7f"
-      ],
-      "entityNames": [
-        "小米",
-        "Xiaomi",
-        "Thinking Machines Lab",
-        "Xiaomi-Robotics-1"
-      ],
-      "productName": "Xiaomi-Robotics-1",
-      "products": [
-        {
-          "name": "Xiaomi-Robotics-1",
-          "type": "模型",
-          "ownerNames": [
-            "Xiaomi"
-          ]
-        }
-      ],
-      "sourceUrl": "https://ithome.com/0/977/453.htm",
-      "publisher": "IT之家（RSS）"
     },
     {
       "id": "EV-473f852b374d8b1c",
@@ -1480,10 +1334,7 @@
         "EV-a9a3b5b56befe593",
         "EV-f7e41493addd1104",
         "EV-3398ae53a199be16",
-        "EV-d53cd33e8f541a65",
-        "EV-810e5c71956fccbc",
         "EV-04efb4eecbb8125f",
-        "EV-0ca3a9830e25f56b",
         "EV-6359c9f6c2609a38",
         "EV-04ee2bc4ac888358",
         "EV-c2d784ef0a5376f8",
@@ -1539,10 +1390,10 @@
         "EV-c28e0d02272537d8",
         "EV-d31057c6f6ec28ba",
         "EV-342799d4e68e7416",
+        "EV-d53cd33e8f541a65",
         "EV-a4f052325d0ef230",
         "EV-ef823877347ff40f",
         "EV-3e9a0d1be6de5096",
-        "EV-70fd0c4e482a646e",
         "EV-8cd7665e40729256",
         "EV-2d56dec8dfeb2b56",
         "EV-6266c73d470e8aef",
@@ -1553,11 +1404,10 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
-        "TX-technology-computer_use",
-        "TX-use_case-robotics_automation",
         "TX-technology-code_generation",
         "TX-use_case-enterprise_operations",
         "TX-use_case-software_development",
+        "TX-use_case-robotics_automation",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-industry-financial_services",
@@ -1572,15 +1422,19 @@
         "TX-use_case-knowledge_search",
         "TX-technology-embodied_ai",
         "TX-technology-speech_audio",
-        "TX-technology-open_weights",
         "TX-industry-media_entertainment",
         "TX-technology-video_generation",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
-        "TX-technology-fine_tuning"
+        "TX-technology-fine_tuning",
+        "TX-technology-computer_use"
       ],
       "relatedEntityIds": [
-        "EN-96eebba49dbbf422"
+        "EN-96eebba49dbbf422",
+        "EN-81e577740888ca6d",
+        "EN-1229af0aa3b0305e",
+        "EN-992eafe973f69075",
+        "EN-0e008e2c06144ec8"
       ],
       "firstSeen": "2026-05-22",
       "lastSeen": "2026-07-17"
@@ -1601,10 +1455,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-industry-manufacturing",
-        "TX-use_case-robotics_automation",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-telecommunications",
-        "TX-technology-multimodal",
         "TX-technology-embodied_ai"
       ],
       "relatedEntityIds": [],
@@ -1622,7 +1474,6 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-4eaf3aabecae6016",
         "EV-ed65f3187aa6aa40",
         "EV-60b2d4d401bf5e97",
         "EV-e41fc65eb014893f",
@@ -1646,11 +1497,8 @@
         "EV-4faa2bcf2e42e60c",
         "EV-9ee3c0ec243b6129",
         "EV-58c1cc3749294649",
-        "EV-69784fe31cfdfc44",
-        "EV-c2800c1c5a3f568f",
         "EV-303b418c63895ba6",
-        "EV-bb6d9e43c082fb47",
-        "EV-dfc634f28a70f423",
+        "EV-1ff169120ed385f6",
         "EV-082314251be505e2",
         "EV-0a5e65aa46b0d194",
         "EV-53f881da31630a04",
@@ -1687,8 +1535,9 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
-        "TX-use_case-robotics_automation",
+        "TX-use_case-customer_service",
         "TX-industry-healthcare_life_sciences",
+        "TX-use_case-robotics_automation",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
@@ -1696,7 +1545,6 @@
         "TX-industry-retail_ecommerce",
         "TX-industry-telecommunications",
         "TX-industry-technology",
-        "TX-use_case-customer_service",
         "TX-technology-multimodal",
         "TX-technology-embodied_ai",
         "TX-technology-speech_audio",
@@ -1707,6 +1555,8 @@
       ],
       "relatedEntityIds": [
         "EN-0f3360879e746531",
+        "EN-fbe26af59be95e52",
+        "EN-2b119dc14de9478d",
         "EN-a1b0d8a938903dc7",
         "EN-8395dc051feafc4c",
         "EN-b5738c169b693bee",
@@ -1731,10 +1581,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-industry-manufacturing",
-        "TX-use_case-robotics_automation",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-telecommunications",
-        "TX-technology-multimodal",
         "TX-technology-embodied_ai"
       ],
       "relatedEntityIds": [
@@ -1759,10 +1607,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-industry-manufacturing",
-        "TX-use_case-robotics_automation",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-telecommunications",
-        "TX-technology-multimodal",
         "TX-technology-embodied_ai"
       ],
       "relatedEntityIds": [],
@@ -1785,10 +1631,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-industry-manufacturing",
-        "TX-use_case-robotics_automation",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-telecommunications",
-        "TX-technology-multimodal",
         "TX-technology-embodied_ai"
       ],
       "relatedEntityIds": [],
@@ -1830,6 +1674,7 @@
         "EV-5964027086487940",
         "EV-e1a4bc40db4a9d8f",
         "EV-c81cb21337a9bb98",
+        "EV-94e0afb44c320c99",
         "EV-7f2811d2272cf4a3",
         "EV-6415a58637893b34",
         "EV-ef6464cf7f764835",
@@ -1843,10 +1688,8 @@
         "EV-a8a8f26c5128d894",
         "EV-51645a3b1e730105",
         "EV-7c899d5decafc42f",
-        "EV-c2800c1c5a3f568f",
         "EV-26cd4d692404e5c6",
-        "EV-cde5c3e5ef83bd51",
-        "EV-0ca3a9830e25f56b",
+        "EV-1c2723ad61d192bd",
         "EV-84226288807f817b",
         "EV-8bf42c1816e772ba",
         "EV-0347414d81e7f02e",
@@ -1857,7 +1700,6 @@
         "EV-000f2abf549268a6",
         "EV-ebe02c213368afae",
         "EV-d39b53ca7b84b9ca",
-        "EV-3e55e1cd1d54f6ef",
         "EV-cedeae902fd1263d",
         "EV-3cd088098be5d0d4",
         "EV-c410d77c8d531e5f",
@@ -1955,6 +1797,7 @@
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
         "TX-technology-code_generation",
+        "TX-use_case-customer_service",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-enterprise_operations",
         "TX-use_case-software_development",
@@ -1967,7 +1810,6 @@
         "TX-industry-retail_ecommerce",
         "TX-technology-human_in_loop",
         "TX-industry-telecommunications",
-        "TX-use_case-customer_service",
         "TX-technology-multimodal",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-embodied_ai",
@@ -1976,11 +1818,13 @@
         "TX-technology-tool_use",
         "TX-technology-model_context_protocol",
         "TX-industry-government_public_sector",
-        "TX-industry-education",
-        "TX-technology-fine_tuning"
+        "TX-technology-fine_tuning",
+        "TX-industry-education"
       ],
       "relatedEntityIds": [
-        "EN-3a9b395103419892"
+        "EN-3a9b395103419892",
+        "EN-7d3194f79e645c42",
+        "EN-9612b6f6884e062f"
       ],
       "firstSeen": "2026-03-13",
       "lastSeen": "2026-07-17"
@@ -1999,6 +1843,7 @@
         "EV-94e8711cecfe6149",
         "EV-02686922dd82c4aa",
         "EV-4faa2bcf2e42e60c",
+        "EV-8a9b12665a3e40a0",
         "EV-8f8f477441a23b7c",
         "EV-cfa8c754627747a1",
         "EV-d31057c6f6ec28ba"
@@ -2009,131 +1854,14 @@
         "TX-industry-manufacturing",
         "TX-use_case-robotics_automation",
         "TX-industry-financial_services",
+        "TX-technology-on_device",
         "TX-industry-retail_ecommerce",
         "TX-technology-embodied_ai",
         "TX-technology-fine_tuning"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-07-15"
-    },
-    {
-      "id": "EN-522d3edeb64a7ca4",
-      "name": "小米",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "candidate",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-70530734d19a478e"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-use_case-robotics_automation",
-        "TX-technology-embodied_ai"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-07-16",
-      "lastSeen": "2026-07-17"
-    },
-    {
-      "id": "EN-c608c4787821de1b",
-      "name": "Xiaomi",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-70530734d19a478e",
-        "EV-71f78f2026b54ba2",
-        "EV-28145c97a7237d6d",
-        "EV-45d7d42ef38e29bf",
-        "EV-f5dd192f6d4e04a3",
-        "EV-c7336cf617a545ce"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-use_case-robotics_automation",
-        "TX-technology-mixture_of_experts",
-        "TX-technology-multimodal",
-        "TX-technology-embodied_ai"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-06-09",
-      "lastSeen": "2026-07-17"
-    },
-    {
-      "id": "EN-8f71c4871a160172",
-      "name": "Thinking Machines Lab",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [
-        "tml"
-      ],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-0af2872b513631d9",
-        "EV-80d4092a3df97198",
-        "EV-fa930fb25552f666",
-        "EV-70530734d19a478e",
-        "EV-70e3f88cb06a856c",
-        "EV-3aaff91528ca3d37",
-        "EV-cde5c3e5ef83bd51",
-        "EV-0ca3a9830e25f56b",
-        "EV-63b11635dd8d53a2",
-        "EV-b148f4df9dc65c3a",
-        "EV-3a888651e6ee5418",
-        "EV-9fac0983ab657689",
-        "EV-c6a50c6abc37378d"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-use_case-robotics_automation",
-        "TX-technology-code_generation",
-        "TX-technology-long_context",
-        "TX-technology-mixture_of_experts",
-        "TX-technology-multimodal",
-        "TX-technology-embodied_ai",
-        "TX-technology-open_weights",
-        "TX-technology-fine_tuning"
-      ],
-      "relatedEntityIds": [
-        "EN-78624f0a98e78301"
-      ],
-      "firstSeen": "2026-07-03",
-      "lastSeen": "2026-07-17"
-    },
-    {
-      "id": "EN-2f795798add63d7f",
-      "name": "Xiaomi-Robotics-1",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-70530734d19a478e"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-use_case-robotics_automation",
-        "TX-technology-embodied_ai"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-07-16",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-07-16"
     },
     {
       "id": "EN-047364b9be67f665",
@@ -2150,7 +1878,6 @@
       "eventIds": [
         "EV-82020f9eaea90951",
         "EV-9895cb57eb366680",
-        "EV-371a54f74b9d332c",
         "EV-341e9759d2cd90f7",
         "EV-e1a4bc40db4a9d8f",
         "EV-ff8e19a80058c198",
@@ -2173,8 +1900,8 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
-        "TX-use_case-robotics_automation",
         "TX-technology-code_generation",
+        "TX-use_case-robotics_automation",
         "TX-technology-multimodal",
         "TX-technology-embodied_ai",
         "TX-technology-video_generation",
@@ -2404,7 +2131,7 @@
       "eventId": "EV-cafe435ddd007821",
       "dataDate": "2026-07-17",
       "date": "2026-07-16",
-      "title": "日本启动 Noetra 国家级 AI 基础设施，计划采购 2.75 万枚 NVIDIA Rubin 芯片",
+      "title": "NVIDIA 联手日本政经界发布全球首个国家级 AI 基础设施",
       "hardwareType": "gpu",
       "eventType": "hardware_deployment",
       "eventTypeLabel": "硬件部署",
@@ -2424,12 +2151,6 @@
           "dimensionName": "技术",
           "id": "embodied_ai",
           "name": "具身智能"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "multimodal",
-          "name": "多模态"
         }
       ],
       "sourceUrl": "https://japantimes.co.jp/business/2026/07/16/japan-nvidia-rubin-chips-robots",

@@ -25,15 +25,11 @@ test("frontstage adapter builds real V4 data collections", () => {
 test("current commercial event titles are complete and evidence-specific", () => {
   const data = buildFrontstageData(root);
   const currentEvents = data.events.filter((event) => event.dataDate === data.meta.currentDate);
-  const instalily = data.events.filter((event) => /InstaLILY/iu.test(event.title));
+  const aina = currentEvents.find((event) => event.originalTitle === "Aina Raises $5.5 Mn From Info Edge, Others To Build AI Hardware Interface");
 
   assert.ok(currentEvents.every((event) => isCompletePublicEventTitle(event.title)));
   assert.equal(currentEvents.some((event) => /模型券即时补贴平台/u.test(event.title)), false);
-  assert.ok(data.events.some((event) => event.title === "Whatnot 收购 Shaped"));
-  assert.ok(data.events.some((event) => event.title === "Orthogonal 完成 430 万美元 种子轮融资"));
-  assert.ok(data.events.some((event) => event.title === "Orthogonal 推出面向 API 的智能体支付服务"));
-  assert.equal(instalily.length, 1);
-  assert.equal(instalily[0].title, "InstaLILY 完成 6000 万美元 B 轮融资");
+  assert.equal(aina?.title, "Aina 从 Info Edge 等投资方获得 550 万美元融资，用于打造 AI 硬件界面");
 });
 
 test("default event date follows the latest accepted data batch", () => {
@@ -79,7 +75,7 @@ test("product projection contains named products with bounded ownership", () => 
   const adapter = fs.readFileSync(path.join(root, "01-SiteV2/site/scripts/build-data-center-v4-frontstage.mjs"), "utf8");
   const names = data.products.map((item) => item.name);
   const inkling = data.products.find((item) => item.name === "Inkling");
-  const nemotron = data.products.find((item) => item.name === "Nemotron");
+  const jetsonThor = data.products.find((item) => item.name === "Jetson Thor");
 
   assert.ok(names.includes("1Password for Claude"));
   assert.ok(names.includes("PerceptionBench"));
@@ -88,8 +84,7 @@ test("product projection contains named products with bounded ownership", () => 
   assert.ok(names.includes("Kimi K3"));
   assert.ok(names.includes("LM Studio Bionic"));
   assert.deepEqual(inkling?.companyNames, ["Thinking Machines Lab"]);
-  assert.deepEqual(nemotron?.companyNames, ["NVIDIA"]);
-  assert.ok(data.events.some((event) => event.title === "Sakana AI 将 NVIDIA Nemotron 模型接入 Fugu 多模型编排器"));
+  assert.deepEqual(jetsonThor?.companyNames, ["NVIDIA"]);
   assert.equal(names.includes("Codex Micro"), false);
   assert.doesNotMatch(adapter, /namedProductRules|extractNamedProducts/u);
   assert.ok(names.every((name) => !/^(?:的|会|训练|多款|可|全球首个|人工智能标准|推理优化|record|with |Apollo|Development|notes|YC:)/iu.test(name)));
@@ -268,9 +263,12 @@ test("commercial events expose TAG-V4 technical tags and structured facets separ
 
 test("FDE and hardware projections preserve the daily batch date", () => {
   const data = buildFrontstageData(root);
+  const publicEventIds = new Set(data.events.map((item) => item.id));
 
   assert.ok(data.fde.every((item) => /^\d{4}-\d{2}-\d{2}$/u.test(item.dataDate)));
   assert.ok(data.hardware.every((item) => /^\d{4}-\d{2}-\d{2}$/u.test(item.dataDate)));
+  assert.ok(data.fde.every((item) => publicEventIds.has(item.eventId)));
+  assert.ok(data.hardware.every((item) => publicEventIds.has(item.eventId)));
   assert.ok(data.fde.some((item) => item.dataDate === data.meta.currentDate));
   assert.ok(data.hardware.some((item) => item.dataDate === data.meta.currentDate));
 });

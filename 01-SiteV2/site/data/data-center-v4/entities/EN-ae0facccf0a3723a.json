@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-17T15:01:31.906Z",
+    "generatedAt": "2026-07-17T18:20:10.588Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 748,
-    "quarantinedEventCount": 32
+    "eventCount": 727,
+    "quarantinedEventCount": 50
   },
   "entity": {
     "id": "EN-ae0facccf0a3723a",
@@ -21,7 +21,7 @@
       "canonical"
     ],
     "eventIds": [
-      "EV-ba28d2085f87b6f0"
+      "EV-98dd0db65ab955f7"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
@@ -35,14 +35,14 @@
       "partnerships": [],
       "productsServices": [],
       "hardware": [
-        "EV-ba28d2085f87b6f0"
+        "EV-98dd0db65ab955f7"
       ],
       "organizationPeople": [],
       "other": []
     },
     "timeline": [
       {
-        "id": "EV-ba28d2085f87b6f0",
+        "id": "EV-98dd0db65ab955f7",
         "dataDate": "2026-07-16",
         "date": "2026-07-15",
         "eventType": "hardware_product",
@@ -66,6 +66,7 @@
           }
         ],
         "entityIds": [
+          "EN-4e3da39e54ff3137",
           "EN-ae0facccf0a3723a"
         ]
       }
@@ -78,8 +79,8 @@
   "fde": [],
   "hardware": [
     {
-      "id": "HW-ee4e70904c107cfc",
-      "eventId": "EV-ba28d2085f87b6f0",
+      "id": "HW-2e209cb3dffbef1b",
+      "eventId": "EV-98dd0db65ab955f7",
       "dataDate": "2026-07-16",
       "date": "2026-07-15",
       "title": "交友应用 Soul 将推出首款便携式 AI 智能硬件，搭载自研大模型 SoulX 亮相 WAIC 2026",
@@ -87,7 +88,7 @@
       "eventType": "hardware_product",
       "eventTypeLabel": "硬件产品",
       "computeLayer": "未披露",
-      "supplier": "Soul",
+      "supplier": "未披露",
       "customer": "未披露",
       "processNode": "未披露",
       "capacity": "未披露",
@@ -101,6 +102,7 @@
       "sourceName": "IT之家（RSS）",
       "sourceDate": "2026-07-15",
       "entityIds": [
+        "EN-4e3da39e54ff3137",
         "EN-ae0facccf0a3723a"
       ]
     }

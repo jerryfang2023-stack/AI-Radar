@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-17T15:01:31.906Z",
+    "generatedAt": "2026-07-17T18:20:10.588Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 748,
-    "quarantinedEventCount": 32
+    "eventCount": 727,
+    "quarantinedEventCount": 50
   },
   "node": {
     "id": "TX-use_case-cybersecurity",
@@ -22,9 +22,7 @@
       "EV-c85011ca6a0389bf",
       "EV-6180de2e02597d9d",
       "EV-adafffa563a53d49",
-      "EV-de6682a190c78625",
       "EV-b240fb11e65b018e",
-      "EV-bd508dbe4205774f",
       "EV-d07906b648eec63f",
       "EV-d40a4e1b7a53cabe",
       "EV-268250d426c1a4a0",
@@ -52,20 +50,13 @@
       "EN-7d3194f79e645c42",
       "EN-6fcba5d96a4fadfd",
       "EN-2b6e51bec93e86c1",
-      "EN-4094a2b7125c7564",
-      "EN-cbc62794911ff31b",
-      "EN-a23572554f6c861e",
-      "EN-8652f6cd9088f1fa",
-      "EN-fb2a436a76aa9fde",
       "EN-9fbf261b62c1d7c0",
       "EN-3a7bd3e2360a3d29"
     ],
-    "fdeIds": [
-      "FDE-d35bf5e6fe7cef6b"
-    ],
+    "fdeIds": [],
     "hardwareIds": [],
-    "firstSeen": "2026-04-16",
-    "lastSeen": "2026-07-17"
+    "firstSeen": "2026-05-24",
+    "lastSeen": "2026-07-08"
   },
   "events": [
     {
@@ -586,108 +577,6 @@
       "publisher": "businesswire.com"
     },
     {
-      "id": "EV-de6682a190c78625",
-      "dataDate": "2026-07-16",
-      "date": "2026-06-17",
-      "updatedDate": "2026-07-16",
-      "eventType": "partnership",
-      "eventTypeLabel": "合作",
-      "eventGroup": "商业合作",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "Rubrik 与 Amazon 达成商业合作",
-      "originalTitle": "Rubrik Announces Upcoming Integration with Amazon Bedrock AgentCore to Secure AI Agents – Company Announcement - FT.com",
-      "subject": "Rubrik Announces Upcoming",
-      "action": "Integration with",
-      "object": "Amazon Bedrock AgentCore to Secure AI Agents – Company Announcement - FT.com",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        }
-      ],
-      "facets": {
-        "product_form": [],
-        "use_case": [
-          {
-            "dimensionId": "use_case",
-            "id": "cybersecurity",
-            "dimensionName": "应用场景",
-            "name": "网络安全"
-          }
-        ],
-        "industry": [],
-        "deployment_model": [
-          {
-            "dimensionId": "deployment_model",
-            "id": "hybrid",
-            "dimensionName": "部署形态",
-            "name": "混合部署"
-          }
-        ],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        },
-        {
-          "dimensionId": "deployment_model",
-          "id": "hybrid",
-          "dimensionName": "部署形态",
-          "name": "混合部署"
-        },
-        {
-          "dimensionId": "use_case",
-          "id": "cybersecurity",
-          "dimensionName": "应用场景",
-          "name": "网络安全"
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "use_case",
-          "id": "cybersecurity",
-          "dimensionName": "应用场景",
-          "name": "网络安全"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        },
-        {
-          "dimensionId": "deployment_model",
-          "id": "hybrid",
-          "dimensionName": "部署形态",
-          "name": "混合部署"
-        }
-      ],
-      "entityIds": [
-        "EN-4094a2b7125c7564",
-        "EN-cbc62794911ff31b"
-      ],
-      "entityNames": [
-        "Rubrik",
-        "Amazon"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://markets.ft.com/data/announce/full?dockey=600-202606171200BIZWIRE_USPRX____20260617_BW107817-1",
-      "publisher": "markets.ft.com"
-    },
-    {
       "id": "EV-b240fb11e65b018e",
       "dataDate": "2026-06-18",
       "date": "2026-06-17",
@@ -771,74 +660,6 @@
       "products": [],
       "sourceUrl": "https://anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem",
       "publisher": "Anthropic：Newsroom（网页）"
-    },
-    {
-      "id": "EV-bd508dbe4205774f",
-      "dataDate": "2026-07-17",
-      "date": "2026-04-16",
-      "updatedDate": "2026-07-17",
-      "eventType": "partnership",
-      "eventTypeLabel": "合作",
-      "eventGroup": "商业合作",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "Stellantis 与微软扩大 AI 与云服务合作",
-      "originalTitle": "Stellantis Accelerates AI-led Strategy and Digital Transformation Through Strategic Collaboration with Microsoft to Enhance Customer Experiences – Company Announcement - FT.com",
-      "subject": "Stellantis Accelerates AI-led Strategy and Digital Transformation Through Strategic",
-      "action": "Collaboration",
-      "object": "with Microsoft to Enhance Customer Experiences – Company Announcement - FT.com",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "product_form": [],
-        "use_case": [
-          {
-            "dimensionId": "use_case",
-            "id": "cybersecurity",
-            "dimensionName": "应用场景",
-            "name": "网络安全"
-          }
-        ],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "use_case",
-          "id": "cybersecurity",
-          "dimensionName": "应用场景",
-          "name": "网络安全"
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "use_case",
-          "id": "cybersecurity",
-          "dimensionName": "应用场景",
-          "name": "网络安全"
-        }
-      ],
-      "entityIds": [
-        "EN-a23572554f6c861e",
-        "EN-8652f6cd9088f1fa",
-        "EN-fb2a436a76aa9fde",
-        "EN-9fbf261b62c1d7c0"
-      ],
-      "entityNames": [
-        "Stellantis Accelerates AI-led Strategy",
-        "Stellantis",
-        "Digital Transformation Through Strategic",
-        "Microsoft"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://markets.ft.com/data/announce/full?dockey=1330-1001176217en-1878JJNUD9H6E0K0LPGOSGE4ST",
-      "publisher": "markets.ft.com"
     },
     {
       "id": "EV-d07906b648eec63f",
@@ -2031,10 +1852,7 @@
         "EV-a9a3b5b56befe593",
         "EV-f7e41493addd1104",
         "EV-3398ae53a199be16",
-        "EV-d53cd33e8f541a65",
-        "EV-810e5c71956fccbc",
         "EV-04efb4eecbb8125f",
-        "EV-0ca3a9830e25f56b",
         "EV-6359c9f6c2609a38",
         "EV-04ee2bc4ac888358",
         "EV-c2d784ef0a5376f8",
@@ -2090,10 +1908,10 @@
         "EV-c28e0d02272537d8",
         "EV-d31057c6f6ec28ba",
         "EV-342799d4e68e7416",
+        "EV-d53cd33e8f541a65",
         "EV-a4f052325d0ef230",
         "EV-ef823877347ff40f",
         "EV-3e9a0d1be6de5096",
-        "EV-70fd0c4e482a646e",
         "EV-8cd7665e40729256",
         "EV-2d56dec8dfeb2b56",
         "EV-6266c73d470e8aef",
@@ -2104,11 +1922,10 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
-        "TX-technology-computer_use",
-        "TX-use_case-robotics_automation",
         "TX-technology-code_generation",
         "TX-use_case-enterprise_operations",
         "TX-use_case-software_development",
+        "TX-use_case-robotics_automation",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-industry-financial_services",
@@ -2123,15 +1940,19 @@
         "TX-use_case-knowledge_search",
         "TX-technology-embodied_ai",
         "TX-technology-speech_audio",
-        "TX-technology-open_weights",
         "TX-industry-media_entertainment",
         "TX-technology-video_generation",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
-        "TX-technology-fine_tuning"
+        "TX-technology-fine_tuning",
+        "TX-technology-computer_use"
       ],
       "relatedEntityIds": [
-        "EN-96eebba49dbbf422"
+        "EN-96eebba49dbbf422",
+        "EN-81e577740888ca6d",
+        "EN-1229af0aa3b0305e",
+        "EN-992eafe973f69075",
+        "EN-0e008e2c06144ec8"
       ],
       "firstSeen": "2026-05-22",
       "lastSeen": "2026-07-17"
@@ -2147,7 +1968,6 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-4eaf3aabecae6016",
         "EV-ed65f3187aa6aa40",
         "EV-60b2d4d401bf5e97",
         "EV-e41fc65eb014893f",
@@ -2171,11 +1991,8 @@
         "EV-4faa2bcf2e42e60c",
         "EV-9ee3c0ec243b6129",
         "EV-58c1cc3749294649",
-        "EV-69784fe31cfdfc44",
-        "EV-c2800c1c5a3f568f",
         "EV-303b418c63895ba6",
-        "EV-bb6d9e43c082fb47",
-        "EV-dfc634f28a70f423",
+        "EV-1ff169120ed385f6",
         "EV-082314251be505e2",
         "EV-0a5e65aa46b0d194",
         "EV-53f881da31630a04",
@@ -2212,8 +2029,9 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
-        "TX-use_case-robotics_automation",
+        "TX-use_case-customer_service",
         "TX-industry-healthcare_life_sciences",
+        "TX-use_case-robotics_automation",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
@@ -2221,7 +2039,6 @@
         "TX-industry-retail_ecommerce",
         "TX-industry-telecommunications",
         "TX-industry-technology",
-        "TX-use_case-customer_service",
         "TX-technology-multimodal",
         "TX-technology-embodied_ai",
         "TX-technology-speech_audio",
@@ -2232,6 +2049,8 @@
       ],
       "relatedEntityIds": [
         "EN-0f3360879e746531",
+        "EN-fbe26af59be95e52",
+        "EN-2b119dc14de9478d",
         "EN-a1b0d8a938903dc7",
         "EN-8395dc051feafc4c",
         "EN-b5738c169b693bee",
@@ -2303,6 +2122,7 @@
         "EV-5964027086487940",
         "EV-e1a4bc40db4a9d8f",
         "EV-c81cb21337a9bb98",
+        "EV-94e0afb44c320c99",
         "EV-7f2811d2272cf4a3",
         "EV-6415a58637893b34",
         "EV-ef6464cf7f764835",
@@ -2316,10 +2136,8 @@
         "EV-a8a8f26c5128d894",
         "EV-51645a3b1e730105",
         "EV-7c899d5decafc42f",
-        "EV-c2800c1c5a3f568f",
         "EV-26cd4d692404e5c6",
-        "EV-cde5c3e5ef83bd51",
-        "EV-0ca3a9830e25f56b",
+        "EV-1c2723ad61d192bd",
         "EV-84226288807f817b",
         "EV-8bf42c1816e772ba",
         "EV-0347414d81e7f02e",
@@ -2330,7 +2148,6 @@
         "EV-000f2abf549268a6",
         "EV-ebe02c213368afae",
         "EV-d39b53ca7b84b9ca",
-        "EV-3e55e1cd1d54f6ef",
         "EV-cedeae902fd1263d",
         "EV-3cd088098be5d0d4",
         "EV-c410d77c8d531e5f",
@@ -2428,6 +2245,7 @@
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
         "TX-technology-code_generation",
+        "TX-use_case-customer_service",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-enterprise_operations",
         "TX-use_case-software_development",
@@ -2440,7 +2258,6 @@
         "TX-industry-retail_ecommerce",
         "TX-technology-human_in_loop",
         "TX-industry-telecommunications",
-        "TX-use_case-customer_service",
         "TX-technology-multimodal",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-embodied_ai",
@@ -2449,11 +2266,13 @@
         "TX-technology-tool_use",
         "TX-technology-model_context_protocol",
         "TX-industry-government_public_sector",
-        "TX-industry-education",
-        "TX-technology-fine_tuning"
+        "TX-technology-fine_tuning",
+        "TX-industry-education"
       ],
       "relatedEntityIds": [
-        "EN-3a9b395103419892"
+        "EN-3a9b395103419892",
+        "EN-7d3194f79e645c42",
+        "EN-9612b6f6884e062f"
       ],
       "firstSeen": "2026-03-13",
       "lastSeen": "2026-07-17"
@@ -2472,7 +2291,6 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-4da1a7c4d527eb69",
         "EV-7f77e6a2d1698307",
         "EV-c9af33ffe65d236b",
         "EV-efca54f3b07072a6",
@@ -2506,9 +2324,8 @@
         "EV-0d5a32aca724d30e",
         "EV-70e3f88cb06a856c",
         "EV-7c899d5decafc42f",
-        "EV-cde5c3e5ef83bd51",
-        "EV-0ca3a9830e25f56b",
-        "EV-a3d022fa41708774",
+        "EV-a4a61babc902931a",
+        "EV-1c2723ad61d192bd",
         "EV-cf5b2a0aff3914bd",
         "EV-302018f2e960a8bf",
         "EV-000f2abf549268a6",
@@ -2566,7 +2383,7 @@
         "EV-4f4274fb5920a8b4",
         "EV-0aa2e53c51b2b8e5",
         "EV-5cd10de5c12916f0",
-        "EV-1a5628259e6ee487",
+        "EV-067f57f6e6ffa6ce",
         "EV-da6678e4e865e00e",
         "EV-14b44a40808340f5",
         "EV-2d56dec8dfeb2b56",
@@ -2591,19 +2408,18 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
-        "TX-technology-computer_use",
-        "TX-use_case-robotics_automation",
         "TX-technology-code_generation",
+        "TX-use_case-customer_service",
         "TX-industry-professional_services",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-enterprise_operations",
         "TX-use_case-software_development",
+        "TX-use_case-robotics_automation",
         "TX-technology-long_context",
         "TX-industry-financial_services",
         "TX-use_case-cybersecurity",
         "TX-technology-human_in_loop",
         "TX-industry-telecommunications",
-        "TX-use_case-customer_service",
         "TX-technology-multimodal",
         "TX-technology-retrieval_augmented_generation",
         "TX-use_case-research_science",
@@ -2611,9 +2427,12 @@
         "TX-technology-tool_use",
         "TX-technology-reasoning",
         "TX-technology-model_context_protocol",
-        "TX-technology-fine_tuning"
+        "TX-technology-fine_tuning",
+        "TX-technology-computer_use"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-c70eca6b0f88f44d"
+      ],
       "firstSeen": "2026-03-13",
       "lastSeen": "2026-07-17"
     },
@@ -2623,7 +2442,8 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "Grok"
+        "Grok",
+        "SpaceXAI"
       ],
       "verificationStatus": "verified",
       "datasetScopes": [
@@ -2638,30 +2458,30 @@
         "EV-201b25d4f3cf696a",
         "EV-e15ae1112294d59e",
         "EV-58614476c796a67a",
-        "EV-d53cd33e8f541a65",
-        "EV-48b20c05c9530810",
-        "EV-810e5c71956fccbc",
         "EV-c033ae6f9784d674",
         "EV-3da99329ccc33816",
         "EV-175af8c7b8146340",
         "EV-ed58c2c69290ee4c",
         "EV-d2a00623908ca15f",
+        "EV-d53cd33e8f541a65",
         "EV-11a3893cb86fef69",
-        "EV-9578242a4df20721",
         "EV-bce258f8f915ff5f",
         "EV-4beb890f0879aeaf"
       ],
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-use_case-robotics_automation",
         "TX-technology-code_generation",
         "TX-use_case-software_development",
+        "TX-use_case-robotics_automation",
         "TX-use_case-cybersecurity",
-        "TX-technology-speech_audio"
+        "TX-technology-speech_audio",
+        "TX-technology-tool_use"
       ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-06-01",
+      "relatedEntityIds": [
+        "EN-c4bc2d00a42f220f"
+      ],
+      "firstSeen": "2026-05-25",
       "lastSeen": "2026-07-17"
     },
     {
@@ -2677,7 +2497,6 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-6f092cfc7a064d64",
         "EV-1ac32035d5e425e1",
         "EV-adafffa563a53d49",
         "EV-ef7402351b6b37bd",
@@ -2692,6 +2511,7 @@
         "EV-d6f638da9e1d3b46",
         "EV-f68e00bb9fd49fac",
         "EV-3e9a0d1be6de5096",
+        "EV-e96aba142e46eba1",
         "EV-68edd592c36dccd3",
         "EV-d49da50484ba781f"
       ],
@@ -2699,13 +2519,12 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
-        "TX-technology-vision_language",
         "TX-technology-code_generation",
+        "TX-use_case-customer_service",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-software_development",
         "TX-technology-mixture_of_experts",
         "TX-use_case-cybersecurity",
-        "TX-use_case-customer_service",
         "TX-technology-multimodal",
         "TX-technology-speech_audio",
         "TX-use_case-research_science",
@@ -2713,140 +2532,10 @@
         "TX-technology-video_generation",
         "TX-technology-fine_tuning"
       ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-05-23",
-      "lastSeen": "2026-07-17"
-    },
-    {
-      "id": "EN-4094a2b7125c7564",
-      "name": "Rubrik",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-80d4092a3df97198",
-        "EV-de6682a190c78625"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-technology-code_generation",
-        "TX-use_case-cybersecurity"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-06-17",
-      "lastSeen": "2026-07-16"
-    },
-    {
-      "id": "EN-cbc62794911ff31b",
-      "name": "Amazon",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [
-        "Amazon Bedrock"
-      ],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-5a26f343846cb8ad",
-        "EV-a9a40462f12bbbd3",
-        "EV-968709fe29b77eba",
-        "EV-7c646d3fbc3fbbf1",
-        "EV-ef6464cf7f764835",
-        "EV-de6682a190c78625",
-        "EV-3398ae53a199be16",
-        "EV-303b418c63895ba6",
-        "EV-918fc324de3117bd",
-        "EV-c0f86afbefa2e0a6",
-        "EV-072b7dabe8ea6032",
-        "EV-673435b5652e2ab4",
-        "EV-51cdc6a8928bdc56",
-        "EV-16ed97ffc0998d0a",
-        "EV-8ea138b78f24e910"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-use_case-robotics_automation",
-        "TX-industry-healthcare_life_sciences",
-        "TX-use_case-cybersecurity",
-        "TX-industry-retail_ecommerce",
-        "TX-use_case-customer_service",
-        "TX-technology-multimodal"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-01-20",
-      "lastSeen": "2026-07-16"
-    },
-    {
-      "id": "EN-a23572554f6c861e",
-      "name": "Stellantis Accelerates AI-led Strategy",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "candidate",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-bd508dbe4205774f"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-use_case-cybersecurity"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-04-16",
-      "lastSeen": "2026-07-17"
-    },
-    {
-      "id": "EN-8652f6cd9088f1fa",
-      "name": "Stellantis",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-bd508dbe4205774f"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-use_case-cybersecurity"
-      ],
       "relatedEntityIds": [
-        "EN-9fbf261b62c1d7c0"
+        "EN-0e008e2c06144ec8"
       ],
-      "firstSeen": "2026-04-16",
-      "lastSeen": "2026-07-17"
-    },
-    {
-      "id": "EN-fb2a436a76aa9fde",
-      "name": "Digital Transformation Through Strategic",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "candidate",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-bd508dbe4205774f"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-use_case-cybersecurity"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-04-16",
+      "firstSeen": "2026-05-23",
       "lastSeen": "2026-07-17"
     },
     {
@@ -2873,11 +2562,9 @@
         "EV-2fab4396000198d2",
         "EV-3fb492fb45980541",
         "EV-b95539d17772a4ce",
-        "EV-b2e374d54b10b9af",
         "EV-4763b46821ab746e",
         "EV-58c1cc3749294649",
         "EV-3398ae53a199be16",
-        "EV-bd508dbe4205774f",
         "EV-7c899d5decafc42f",
         "EV-9fb217d7e855c8f7",
         "EV-268250d426c1a4a0",
@@ -2903,10 +2590,8 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
-        "TX-technology-computer_use",
-        "TX-use_case-robotics_automation",
         "TX-industry-healthcare_life_sciences",
-        "TX-use_case-software_development",
+        "TX-use_case-robotics_automation",
         "TX-technology-on_device",
         "TX-use_case-cybersecurity",
         "TX-industry-retail_ecommerce",
@@ -2914,14 +2599,14 @@
         "TX-technology-speech_audio",
         "TX-technology-open_weights",
         "TX-technology-reasoning",
-        "TX-technology-model_context_protocol"
+        "TX-technology-model_context_protocol",
+        "TX-technology-computer_use"
       ],
       "relatedEntityIds": [
-        "EN-8652f6cd9088f1fa",
         "EN-597d8c4afa5fe3d6",
         "EN-8d4321d936320802"
       ],
-      "firstSeen": "2026-04-16",
+      "firstSeen": "2026-05-20",
       "lastSeen": "2026-07-17"
     },
     {
@@ -2937,11 +2622,12 @@
       "eventIds": [
         "EV-f282ab8740ff0096",
         "EV-968709fe29b77eba",
-        "EV-371a54f74b9d332c",
         "EV-8a8e894a84768ea5",
         "EV-f5a50f1fed72fec3",
         "EV-d5419a74073b4508",
+        "EV-e857f9d1c1478c70",
         "EV-21caef1790021587",
+        "EV-8a9b12665a3e40a0",
         "EV-302018f2e960a8bf",
         "EV-aa962ef7ec9a5c50",
         "EV-7cd4a5b931f0b667",
@@ -2967,6 +2653,7 @@
         "EV-ef823877347ff40f",
         "EV-5cd10de5c12916f0",
         "EV-5613946bdd578a26",
+        "EV-dd902b603e2e3dbc",
         "EV-da6678e4e865e00e",
         "EV-8cb2374f76202ecc",
         "EV-b4203b10d6592bf2",
@@ -2993,51 +2680,6 @@
       "lastSeen": "2026-07-17"
     }
   ],
-  "fde": [
-    {
-      "id": "FDE-d35bf5e6fe7cef6b",
-      "eventId": "EV-de6682a190c78625",
-      "dataDate": "2026-07-16",
-      "date": "2026-06-17",
-      "title": "Rubrik 与 Amazon 达成商业合作",
-      "stage": "announced",
-      "stageLabel": "已公布",
-      "customer": "未披露",
-      "vendor": "未披露",
-      "industry": "未披露",
-      "useCase": "Amazon Bedrock AgentCore to Secure AI Agents – Company Announcement - FT.com",
-      "reportedNeed": "未披露",
-      "deliveryComponents": [],
-      "outcomes": [],
-      "metrics": [],
-      "undisclosedFields": [
-        "customer",
-        "vendor",
-        "industry",
-        "workflow_before",
-        "workflow_after",
-        "delivery_model",
-        "team_composition",
-        "reported_need",
-        "systems_integrated",
-        "data_requirements",
-        "governance_controls",
-        "reported_outcomes"
-      ],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        }
-      ],
-      "sourceUrl": "https://markets.ft.com/data/announce/full?dockey=600-202606171200BIZWIRE_USPRX____20260617_BW107817-1",
-      "entityIds": [
-        "EN-4094a2b7125c7564",
-        "EN-cbc62794911ff31b"
-      ]
-    }
-  ],
+  "fde": [],
   "hardware": []
 }

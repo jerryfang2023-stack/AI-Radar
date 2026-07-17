@@ -14,6 +14,20 @@
     "status": "active"
   },
   {
+    "asset_id": "CL-208b61fcad3aea6e",
+    "tag_id": "mixture_of_experts",
+    "evidence_ref": "CL-208b61fcad3aea6e",
+    "source_span": {
+      "raw_id": "RAW-de25a47b5685605a",
+      "start": 462,
+      "end": 955
+    },
+    "assignment_method": "rule",
+    "confidence": 0.9,
+    "taxonomy_version": "TAG-V4.0",
+    "status": "active"
+  },
+  {
     "asset_id": "CL-bb873b849c4d5b74",
     "tag_id": "code_generation",
     "evidence_ref": "CL-bb873b849c4d5b74",
@@ -84,6 +98,20 @@
     "status": "active"
   },
   {
+    "asset_id": "CL-705cb83899412a95",
+    "tag_id": "agentic_execution",
+    "evidence_ref": "CL-705cb83899412a95",
+    "source_span": {
+      "raw_id": "RAW-350fcc07a6ef3267",
+      "start": 833,
+      "end": 1187
+    },
+    "assignment_method": "rule",
+    "confidence": 0.9,
+    "taxonomy_version": "TAG-V4.0",
+    "status": "active"
+  },
+  {
     "asset_id": "CL-153e55b240827359",
     "tag_id": "agentic_execution",
     "evidence_ref": "CL-153e55b240827359",
@@ -98,20 +126,6 @@
     "status": "active"
   },
   {
-    "asset_id": "CL-b31c867c177cb2dd",
-    "tag_id": "agentic_execution",
-    "evidence_ref": "CL-b31c867c177cb2dd",
-    "source_span": {
-      "raw_id": "RAW-350fcc07a6ef3267",
-      "start": 184,
-      "end": 484
-    },
-    "assignment_method": "rule",
-    "confidence": 0.9,
-    "taxonomy_version": "TAG-V4.0",
-    "status": "active"
-  },
-  {
     "asset_id": "CL-0b9e84b1b5bb3529",
     "tag_id": "on_device",
     "evidence_ref": "CL-0b9e84b1b5bb3529",
@@ -119,20 +133,6 @@
       "raw_id": "RAW-5bb64e5649133a37",
       "start": 169,
       "end": 310
-    },
-    "assignment_method": "rule",
-    "confidence": 0.9,
-    "taxonomy_version": "TAG-V4.0",
-    "status": "active"
-  },
-  {
-    "asset_id": "CL-aa43b1006b63c793",
-    "tag_id": "agentic_execution",
-    "evidence_ref": "CL-aa43b1006b63c793",
-    "source_span": {
-      "raw_id": "RAW-90ea536703f9ae86",
-      "start": 1655,
-      "end": 1940
     },
     "assignment_method": "rule",
     "confidence": 0.9,
@@ -238,13 +238,41 @@
     "status": "active"
   },
   {
-    "asset_id": "CL-6aa4da9f2d4f12a1",
-    "tag_id": "mixture_of_experts",
-    "evidence_ref": "CL-6aa4da9f2d4f12a1",
+    "asset_id": "CL-b83ea9849c3419f2",
+    "tag_id": "agentic_execution",
+    "evidence_ref": "CL-b83ea9849c3419f2",
     "source_span": {
-      "raw_id": "RAW-2df08dd5ca2eba6c",
-      "start": 639,
-      "end": 1065
+      "raw_id": "RAW-06e01c80eb8535b3",
+      "start": 936,
+      "end": 1179
+    },
+    "assignment_method": "rule",
+    "confidence": 0.9,
+    "taxonomy_version": "TAG-V4.0",
+    "status": "active"
+  },
+  {
+    "asset_id": "CL-b83ea9849c3419f2",
+    "tag_id": "fine_tuning",
+    "evidence_ref": "CL-b83ea9849c3419f2",
+    "source_span": {
+      "raw_id": "RAW-06e01c80eb8535b3",
+      "start": 936,
+      "end": 1179
+    },
+    "assignment_method": "rule",
+    "confidence": 0.9,
+    "taxonomy_version": "TAG-V4.0",
+    "status": "active"
+  },
+  {
+    "asset_id": "CL-693f22d0cdeced40",
+    "tag_id": "agentic_execution",
+    "evidence_ref": "CL-693f22d0cdeced40",
+    "source_span": {
+      "raw_id": "RAW-ccb8cd5bd8ba2517",
+      "start": 482,
+      "end": 635
     },
     "assignment_method": "rule",
     "confidence": 0.9,
@@ -350,6 +378,48 @@
     "status": "active"
   },
   {
+    "asset_id": "CL-47457854665a1194",
+    "tag_id": "on_device",
+    "evidence_ref": "CL-47457854665a1194",
+    "source_span": {
+      "raw_id": "RAW-7eec79e72429c89c",
+      "start": 335,
+      "end": 463
+    },
+    "assignment_method": "rule",
+    "confidence": 0.9,
+    "taxonomy_version": "TAG-V4.0",
+    "status": "active"
+  },
+  {
+    "asset_id": "CL-6ec9ec2903819053",
+    "tag_id": "on_device",
+    "evidence_ref": "CL-6ec9ec2903819053",
+    "source_span": {
+      "raw_id": "RAW-7eec79e72429c89c",
+      "start": 464,
+      "end": 537
+    },
+    "assignment_method": "rule",
+    "confidence": 0.9,
+    "taxonomy_version": "TAG-V4.0",
+    "status": "active"
+  },
+  {
+    "asset_id": "CL-e036cc41f39e2bd4",
+    "tag_id": "on_device",
+    "evidence_ref": "CL-e036cc41f39e2bd4",
+    "source_span": {
+      "raw_id": "RAW-7eec79e72429c89c",
+      "start": 0,
+      "end": 48
+    },
+    "assignment_method": "rule",
+    "confidence": 0.9,
+    "taxonomy_version": "TAG-V4.0",
+    "status": "active"
+  },
+  {
     "asset_id": "CL-5bc1a466ff503ad6",
     "tag_id": "open_weights",
     "evidence_ref": "CL-5bc1a466ff503ad6",
@@ -385,20 +455,6 @@
       "raw_id": "RAW-fe3c6a41b4b22d00",
       "start": 217,
       "end": 259
-    },
-    "assignment_method": "rule",
-    "confidence": 0.9,
-    "taxonomy_version": "TAG-V4.0",
-    "status": "active"
-  },
-  {
-    "asset_id": "CL-fbd0d93556ad18cc",
-    "tag_id": "agentic_execution",
-    "evidence_ref": "CL-fbd0d93556ad18cc",
-    "source_span": {
-      "raw_id": "RAW-fe3c6a41b4b22d00",
-      "start": 474,
-      "end": 533
     },
     "assignment_method": "rule",
     "confidence": 0.9,
@@ -490,6 +546,76 @@
     "status": "active"
   },
   {
+    "asset_id": "CL-8c117516f210d696",
+    "tag_id": "multimodal",
+    "evidence_ref": "CL-8c117516f210d696",
+    "source_span": {
+      "raw_id": "RAW-5b13e9ec83e7aa4d",
+      "start": 0,
+      "end": 51
+    },
+    "assignment_method": "rule",
+    "confidence": 0.9,
+    "taxonomy_version": "TAG-V4.0",
+    "status": "active"
+  },
+  {
+    "asset_id": "CL-8c117516f210d696",
+    "tag_id": "on_device",
+    "evidence_ref": "CL-8c117516f210d696",
+    "source_span": {
+      "raw_id": "RAW-5b13e9ec83e7aa4d",
+      "start": 0,
+      "end": 51
+    },
+    "assignment_method": "rule",
+    "confidence": 0.9,
+    "taxonomy_version": "TAG-V4.0",
+    "status": "active"
+  },
+  {
+    "asset_id": "CL-bcf688566dc9f309",
+    "tag_id": "multimodal",
+    "evidence_ref": "CL-bcf688566dc9f309",
+    "source_span": {
+      "raw_id": "RAW-5b13e9ec83e7aa4d",
+      "start": 219,
+      "end": 263
+    },
+    "assignment_method": "rule",
+    "confidence": 0.9,
+    "taxonomy_version": "TAG-V4.0",
+    "status": "active"
+  },
+  {
+    "asset_id": "CL-bcf688566dc9f309",
+    "tag_id": "on_device",
+    "evidence_ref": "CL-bcf688566dc9f309",
+    "source_span": {
+      "raw_id": "RAW-5b13e9ec83e7aa4d",
+      "start": 219,
+      "end": 263
+    },
+    "assignment_method": "rule",
+    "confidence": 0.9,
+    "taxonomy_version": "TAG-V4.0",
+    "status": "active"
+  },
+  {
+    "asset_id": "CL-707de66971cf967a",
+    "tag_id": "on_device",
+    "evidence_ref": "CL-707de66971cf967a",
+    "source_span": {
+      "raw_id": "RAW-5b13e9ec83e7aa4d",
+      "start": 338,
+      "end": 471
+    },
+    "assignment_method": "rule",
+    "confidence": 0.9,
+    "taxonomy_version": "TAG-V4.0",
+    "status": "active"
+  },
+  {
     "asset_id": "CL-2a062867b0fc12ac",
     "tag_id": "on_device",
     "evidence_ref": "CL-2a062867b0fc12ac",
@@ -567,20 +693,6 @@
       "raw_id": "RAW-071fb683dd5efc83",
       "start": 296,
       "end": 366
-    },
-    "assignment_method": "rule",
-    "confidence": 0.9,
-    "taxonomy_version": "TAG-V4.0",
-    "status": "active"
-  },
-  {
-    "asset_id": "CL-47dc0dc122d2e53a",
-    "tag_id": "agentic_execution",
-    "evidence_ref": "CL-47dc0dc122d2e53a",
-    "source_span": {
-      "raw_id": "RAW-c419d380551c0b66",
-      "start": 349,
-      "end": 426
     },
     "assignment_method": "rule",
     "confidence": 0.9,

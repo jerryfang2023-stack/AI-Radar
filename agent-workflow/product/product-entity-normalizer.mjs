@@ -89,6 +89,7 @@ export function extractExplicitProductNames({ eventType = "", object = "", title
   const evidence = [object, title, ...evidenceTexts].join("\n");
   const preservedBrandNames = [
     ["1Password for Claude", /\b1Password for Claude\b/iu],
+    ["Jetson Thor", /\bJetson(?:\s+(?:AGX|T\d+))?\s+Thor\b|\bJetson Thor\b/iu],
     ["LM Studio Bionic", /\bLM Studio Bionic\b/iu]
   ].filter(([, pattern]) => pattern.test(evidence)).map(([name]) => name);
   const preservedBrandKeys = new Set(preservedBrandNames.map((name) => name.toLocaleLowerCase()));

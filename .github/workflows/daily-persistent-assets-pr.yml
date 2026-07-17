@@ -32,6 +32,8 @@ jobs:
       TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
       TAVILY_DISABLED: "true"
       EXA_API_KEY: ${{ secrets.EXA_API_KEY }}
+      DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+      DEEPSEEK_MODEL: deepseek-v4-flash
       OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
       FEISHU_WEBHOOK_SECRET: ${{ secrets.FEISHU_WEBHOOK_SECRET }}
@@ -132,7 +134,8 @@ jobs:
             echo "- anysearch_secret: $([ -n "$ANYSEARCH_API_KEY" ] && echo configured || echo missing)"
             echo "- tavily_secret: $([ "$TAVILY_DISABLED" = "true" ] && echo disabled || ([ -n "$TAVILY_API_KEY" ] && echo configured || echo missing))"
             echo "- exa_secret: $([ -n "$EXA_API_KEY" ] && echo configured || echo missing)"
-            echo "- openai_title_translation: $([ -n "$OPENAI_API_KEY" ] && echo configured || echo optional-missing-with-deterministic-rules-only)"
+            echo "- deepseek_v4_title_translation: $([ -n "$DEEPSEEK_API_KEY" ] && echo configured || echo missing)"
+            echo "- openai_title_translation_fallback: $([ -n "$OPENAI_API_KEY" ] && echo configured || echo optional-missing-with-deterministic-rules-only)"
             echo
             echo "This V4 workflow commits the Data Center factual bundle plus frozen V3 page-compatibility assets to an automation branch, opens or updates a PR, and auto-merges only after factual-integrity and compatibility gates pass."
             echo "Raw / Pool are persisted after V3 monitor hard gates pass. Card assets are persisted after asset generation. Site data is persisted only after Card/source-first/frontstage gates pass."

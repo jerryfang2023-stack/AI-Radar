@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-17T15:01:31.906Z",
+    "generatedAt": "2026-07-17T18:20:10.588Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 748,
-    "quarantinedEventCount": 32
+    "eventCount": 727,
+    "quarantinedEventCount": 50
   },
   "node": {
     "id": "TX-technology-tool_use",
@@ -23,7 +23,8 @@
       "EV-653cbce2ccc79f8b",
       "EV-363fe72da52bdb86",
       "EV-9496f90f3e808992",
-      "EV-9c4b862020202f6c"
+      "EV-9c4b862020202f6c",
+      "EV-d53cd33e8f541a65"
     ],
     "entityIds": [
       "EN-7f90f96bd6306bff",
@@ -37,13 +38,17 @@
       "EN-047364b9be67f665",
       "EN-ea3bd73e2b506e00",
       "EN-bbdefa2950f49882",
-      "EN-7d3194f79e645c42"
+      "EN-7d3194f79e645c42",
+      "EN-6fcba5d96a4fadfd",
+      "EN-630dc133336bc266",
+      "EN-ce635c4eabff5e4f",
+      "EN-c4bc2d00a42f220f"
     ],
     "fdeIds": [
       "FDE-21fb0ab2e92411f4"
     ],
     "hardwareIds": [],
-    "firstSeen": "2026-06-12",
+    "firstSeen": "2026-05-25",
     "lastSeen": "2026-07-17"
   },
   "events": [
@@ -747,6 +752,121 @@
       "products": [],
       "sourceUrl": "https://techcrunch.com/2026/06/30/anthropic-launches-claude-sonnet-5-as-a-cheaper-way-to-run-agents",
       "publisher": "TechCrunch：AI（RSS）"
+    },
+    {
+      "id": "EV-d53cd33e8f541a65",
+      "dataDate": "2026-07-17",
+      "date": "2026-05-25",
+      "updatedDate": "2026-07-17",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "SpaceXAI 开源 Grok Build：Rust 智能体框架、TUI 与工具层",
+      "originalTitle": "",
+      "subject": "SpaceXAI",
+      "action": "开源 Grok Build：Rust 智能体框架、TUI 与工具",
+      "object": "层",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "tool_use",
+          "name": "工具调用"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "software_development",
+            "dimensionName": "应用场景",
+            "name": "软件开发"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "tool_use",
+          "name": "工具调用"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "software_development",
+          "dimensionName": "应用场景",
+          "name": "软件开发"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "software_development",
+          "dimensionName": "应用场景",
+          "name": "软件开发"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "tool_use",
+          "name": "工具调用"
+        }
+      ],
+      "entityIds": [
+        "EN-6fcba5d96a4fadfd",
+        "EN-630dc133336bc266",
+        "EN-ce635c4eabff5e4f",
+        "EN-c4bc2d00a42f220f",
+        "EN-bbdefa2950f49882"
+      ],
+      "entityNames": [
+        "xAI",
+        "SpaceXAI",
+        "Shell",
+        "Grok Build",
+        "Google"
+      ],
+      "productName": "Grok Build",
+      "products": [
+        {
+          "name": "Grok Build",
+          "type": "产品/服务",
+          "ownerNames": [
+            "xAI"
+          ]
+        }
+      ],
+      "sourceUrl": "https://marktechpost.com/2026/07/15/spacexai-open-sources-grok-build-the-rust-agent-harness-tui-and-tool-layer-behind-its-coding-cli",
+      "publisher": "MarkTechPost（RSS）"
     }
   ],
   "entities": [
@@ -777,20 +897,19 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "字节跳动"
+        "豆包"
       ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
-        "EV-371a54f74b9d332c",
         "EV-8a8e894a84768ea5",
         "EV-d76dac938af08f62",
         "EV-47a84a0f1a85c29c",
         "EV-e7a6bcd24f4241d0",
         "EV-533d2da98cce1ae0",
-        "EV-c66ea834b364c3f5",
+        "EV-8a9b12665a3e40a0",
         "EV-4532e847f78cde0d",
         "EV-0e42803078b1c6be",
         "EV-b7dc60c0b63b6063",
@@ -802,6 +921,7 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-technology-on_device",
         "TX-industry-media_entertainment",
         "TX-technology-video_generation",
         "TX-technology-tool_use"
@@ -845,6 +965,7 @@
         "EV-5964027086487940",
         "EV-e1a4bc40db4a9d8f",
         "EV-c81cb21337a9bb98",
+        "EV-94e0afb44c320c99",
         "EV-7f2811d2272cf4a3",
         "EV-6415a58637893b34",
         "EV-ef6464cf7f764835",
@@ -858,10 +979,8 @@
         "EV-a8a8f26c5128d894",
         "EV-51645a3b1e730105",
         "EV-7c899d5decafc42f",
-        "EV-c2800c1c5a3f568f",
         "EV-26cd4d692404e5c6",
-        "EV-cde5c3e5ef83bd51",
-        "EV-0ca3a9830e25f56b",
+        "EV-1c2723ad61d192bd",
         "EV-84226288807f817b",
         "EV-8bf42c1816e772ba",
         "EV-0347414d81e7f02e",
@@ -872,7 +991,6 @@
         "EV-000f2abf549268a6",
         "EV-ebe02c213368afae",
         "EV-d39b53ca7b84b9ca",
-        "EV-3e55e1cd1d54f6ef",
         "EV-cedeae902fd1263d",
         "EV-3cd088098be5d0d4",
         "EV-c410d77c8d531e5f",
@@ -970,6 +1088,7 @@
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
         "TX-technology-code_generation",
+        "TX-use_case-customer_service",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-enterprise_operations",
         "TX-use_case-software_development",
@@ -982,7 +1101,6 @@
         "TX-industry-retail_ecommerce",
         "TX-technology-human_in_loop",
         "TX-industry-telecommunications",
-        "TX-use_case-customer_service",
         "TX-technology-multimodal",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-embodied_ai",
@@ -991,11 +1109,13 @@
         "TX-technology-tool_use",
         "TX-technology-model_context_protocol",
         "TX-industry-government_public_sector",
-        "TX-industry-education",
-        "TX-technology-fine_tuning"
+        "TX-technology-fine_tuning",
+        "TX-industry-education"
       ],
       "relatedEntityIds": [
-        "EN-3a9b395103419892"
+        "EN-3a9b395103419892",
+        "EN-7d3194f79e645c42",
+        "EN-9612b6f6884e062f"
       ],
       "firstSeen": "2026-03-13",
       "lastSeen": "2026-07-17"
@@ -1152,7 +1272,6 @@
       "eventIds": [
         "EV-82020f9eaea90951",
         "EV-9895cb57eb366680",
-        "EV-371a54f74b9d332c",
         "EV-341e9759d2cd90f7",
         "EV-e1a4bc40db4a9d8f",
         "EV-ff8e19a80058c198",
@@ -1175,8 +1294,8 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
-        "TX-use_case-robotics_automation",
         "TX-technology-code_generation",
+        "TX-use_case-robotics_automation",
         "TX-technology-multimodal",
         "TX-technology-embodied_ai",
         "TX-technology-video_generation",
@@ -1199,7 +1318,6 @@
       ],
       "eventIds": [
         "EV-02882e6f5e1902c6",
-        "EV-5df885dbd24b6d00",
         "EV-427081ec574b43bb",
         "EV-7f77e6a2d1698307",
         "EV-b39d759a11086d41",
@@ -1229,7 +1347,6 @@
         "EV-c98d4ee7764d51b2",
         "EV-01e414a25347cfd9",
         "EV-ef823877347ff40f",
-        "EV-04cf95633b564f9a",
         "EV-02b07069713d9a1c",
         "EV-322796d9761a0824",
         "EV-2d56dec8dfeb2b56",
@@ -1240,7 +1357,6 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
-        "TX-technology-computer_use",
         "TX-technology-code_generation",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-software_development",
@@ -1251,7 +1367,8 @@
         "TX-technology-tool_use",
         "TX-technology-reasoning",
         "TX-technology-guardrails_safety",
-        "TX-technology-image_generation"
+        "TX-technology-image_generation",
+        "TX-technology-computer_use"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-22",
@@ -1289,10 +1406,7 @@
         "EV-a9a3b5b56befe593",
         "EV-f7e41493addd1104",
         "EV-3398ae53a199be16",
-        "EV-d53cd33e8f541a65",
-        "EV-810e5c71956fccbc",
         "EV-04efb4eecbb8125f",
-        "EV-0ca3a9830e25f56b",
         "EV-6359c9f6c2609a38",
         "EV-04ee2bc4ac888358",
         "EV-c2d784ef0a5376f8",
@@ -1348,10 +1462,10 @@
         "EV-c28e0d02272537d8",
         "EV-d31057c6f6ec28ba",
         "EV-342799d4e68e7416",
+        "EV-d53cd33e8f541a65",
         "EV-a4f052325d0ef230",
         "EV-ef823877347ff40f",
         "EV-3e9a0d1be6de5096",
-        "EV-70fd0c4e482a646e",
         "EV-8cd7665e40729256",
         "EV-2d56dec8dfeb2b56",
         "EV-6266c73d470e8aef",
@@ -1362,11 +1476,10 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
-        "TX-technology-computer_use",
-        "TX-use_case-robotics_automation",
         "TX-technology-code_generation",
         "TX-use_case-enterprise_operations",
         "TX-use_case-software_development",
+        "TX-use_case-robotics_automation",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-industry-financial_services",
@@ -1381,15 +1494,19 @@
         "TX-use_case-knowledge_search",
         "TX-technology-embodied_ai",
         "TX-technology-speech_audio",
-        "TX-technology-open_weights",
         "TX-industry-media_entertainment",
         "TX-technology-video_generation",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
-        "TX-technology-fine_tuning"
+        "TX-technology-fine_tuning",
+        "TX-technology-computer_use"
       ],
       "relatedEntityIds": [
-        "EN-96eebba49dbbf422"
+        "EN-96eebba49dbbf422",
+        "EN-81e577740888ca6d",
+        "EN-1229af0aa3b0305e",
+        "EN-992eafe973f69075",
+        "EN-0e008e2c06144ec8"
       ],
       "firstSeen": "2026-05-22",
       "lastSeen": "2026-07-17"
@@ -1408,7 +1525,6 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-4da1a7c4d527eb69",
         "EV-7f77e6a2d1698307",
         "EV-c9af33ffe65d236b",
         "EV-efca54f3b07072a6",
@@ -1442,9 +1558,8 @@
         "EV-0d5a32aca724d30e",
         "EV-70e3f88cb06a856c",
         "EV-7c899d5decafc42f",
-        "EV-cde5c3e5ef83bd51",
-        "EV-0ca3a9830e25f56b",
-        "EV-a3d022fa41708774",
+        "EV-a4a61babc902931a",
+        "EV-1c2723ad61d192bd",
         "EV-cf5b2a0aff3914bd",
         "EV-302018f2e960a8bf",
         "EV-000f2abf549268a6",
@@ -1502,7 +1617,7 @@
         "EV-4f4274fb5920a8b4",
         "EV-0aa2e53c51b2b8e5",
         "EV-5cd10de5c12916f0",
-        "EV-1a5628259e6ee487",
+        "EV-067f57f6e6ffa6ce",
         "EV-da6678e4e865e00e",
         "EV-14b44a40808340f5",
         "EV-2d56dec8dfeb2b56",
@@ -1527,19 +1642,18 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
-        "TX-technology-computer_use",
-        "TX-use_case-robotics_automation",
         "TX-technology-code_generation",
+        "TX-use_case-customer_service",
         "TX-industry-professional_services",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-enterprise_operations",
         "TX-use_case-software_development",
+        "TX-use_case-robotics_automation",
         "TX-technology-long_context",
         "TX-industry-financial_services",
         "TX-use_case-cybersecurity",
         "TX-technology-human_in_loop",
         "TX-industry-telecommunications",
-        "TX-use_case-customer_service",
         "TX-technology-multimodal",
         "TX-technology-retrieval_augmented_generation",
         "TX-use_case-research_science",
@@ -1547,10 +1661,145 @@
         "TX-technology-tool_use",
         "TX-technology-reasoning",
         "TX-technology-model_context_protocol",
-        "TX-technology-fine_tuning"
+        "TX-technology-fine_tuning",
+        "TX-technology-computer_use"
+      ],
+      "relatedEntityIds": [
+        "EN-c70eca6b0f88f44d"
+      ],
+      "firstSeen": "2026-03-13",
+      "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "EN-6fcba5d96a4fadfd",
+      "name": "xAI",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "Grok",
+        "SpaceXAI"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-3daefecd0453631a",
+        "EV-edcb66d0401cfb8f",
+        "EV-6180de2e02597d9d",
+        "EV-f64345af2affb07d",
+        "EV-05be25222ebd2bc2",
+        "EV-201b25d4f3cf696a",
+        "EV-e15ae1112294d59e",
+        "EV-58614476c796a67a",
+        "EV-c033ae6f9784d674",
+        "EV-3da99329ccc33816",
+        "EV-175af8c7b8146340",
+        "EV-ed58c2c69290ee4c",
+        "EV-d2a00623908ca15f",
+        "EV-d53cd33e8f541a65",
+        "EV-11a3893cb86fef69",
+        "EV-bce258f8f915ff5f",
+        "EV-4beb890f0879aeaf"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-code_generation",
+        "TX-use_case-software_development",
+        "TX-use_case-robotics_automation",
+        "TX-use_case-cybersecurity",
+        "TX-technology-speech_audio",
+        "TX-technology-tool_use"
+      ],
+      "relatedEntityIds": [
+        "EN-c4bc2d00a42f220f"
+      ],
+      "firstSeen": "2026-05-25",
+      "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "EN-630dc133336bc266",
+      "name": "SpaceXAI",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-d53cd33e8f541a65"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-code_generation",
+        "TX-use_case-software_development",
+        "TX-technology-tool_use"
       ],
       "relatedEntityIds": [],
-      "firstSeen": "2026-03-13",
+      "firstSeen": "2026-05-25",
+      "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "EN-ce635c4eabff5e4f",
+      "name": "Shell",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-58c1cc3749294649",
+        "EV-445db243814e88d0",
+        "EV-57f083a39393d841",
+        "EV-b0145ffd99b55e66",
+        "EV-a24f9cba6b31439e",
+        "EV-343e0454586c58a9",
+        "EV-309ea4fc27a66485",
+        "EV-abaf05e513f88a4f",
+        "EV-4026c95d4c01b96e",
+        "EV-d53cd33e8f541a65"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
+        "TX-technology-code_generation",
+        "TX-use_case-software_development",
+        "TX-technology-long_context",
+        "TX-technology-on_device",
+        "TX-technology-tool_use"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-05-25",
+      "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "EN-c4bc2d00a42f220f",
+      "name": "Grok Build",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-d53cd33e8f541a65"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-code_generation",
+        "TX-use_case-software_development",
+        "TX-technology-tool_use"
+      ],
+      "relatedEntityIds": [
+        "EN-6fcba5d96a4fadfd"
+      ],
+      "firstSeen": "2026-05-25",
       "lastSeen": "2026-07-17"
     }
   ],
