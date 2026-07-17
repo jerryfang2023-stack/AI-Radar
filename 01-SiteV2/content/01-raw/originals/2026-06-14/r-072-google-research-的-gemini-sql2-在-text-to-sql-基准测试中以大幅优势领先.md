@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"Google Research 推出 Gemini-SQL2，基
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Google Research 的 Gemini-SQL2 在 text-to-SQL 基准测试中以大幅优势领先"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Google Research 的 Gemini-SQL2 在 text-to-SQL 基准测试中以大幅优势领先

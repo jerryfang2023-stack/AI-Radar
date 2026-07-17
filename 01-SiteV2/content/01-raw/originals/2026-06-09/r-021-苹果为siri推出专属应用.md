@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"苹果公司为Siri推出了独�
 theme: outside-core-exploration
 keyword_group: outside-core-exploration
 copyright_note: local research archive only
+title_zh: "苹果为Siri推出专属应用"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 苹果为Siri推出专属应用

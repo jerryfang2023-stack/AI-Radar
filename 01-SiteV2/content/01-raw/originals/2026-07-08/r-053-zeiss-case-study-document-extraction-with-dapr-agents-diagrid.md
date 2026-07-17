@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-053
 title: "ZEISS Case Study: Document Extraction with Dapr Agents | Diagrid"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "ZEISS案例研究：使用Dapr Agents进行文档提取 | Diagrid"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.diagrid.io/case-studies/zeiss-vision-document-extraction"
 canonical_url: "https://diagrid.io/case-studies/zeiss-vision-document-extraction"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-08T04:39:25.829Z
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # ZEISS Case Study: Document Extraction with Dapr Agents | Diagrid

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"quote","text":"May 18, 2026 - California's AB 2013, also
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "商业秘密与训练数据透明度法案"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Trade secrets and the Training Data Transparency Act

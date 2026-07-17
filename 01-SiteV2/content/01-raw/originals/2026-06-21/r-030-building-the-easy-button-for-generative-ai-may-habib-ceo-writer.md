@@ -72,6 +72,10 @@ key_excerpts: [{"type":"workflow_change","text":"In this episode, we dive into t
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "打造生成式AI的“简易按钮” | Writer首席执行官May Habib"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Building the Easy Button for Generative AI | May Habib, CEO, Writer

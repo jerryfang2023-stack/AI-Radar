@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"2026年6月，伯克利RDI发布Agents' 
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "伯克利RDI发布Agents' Last Exam基准"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 伯克利RDI发布Agents' Last Exam基准

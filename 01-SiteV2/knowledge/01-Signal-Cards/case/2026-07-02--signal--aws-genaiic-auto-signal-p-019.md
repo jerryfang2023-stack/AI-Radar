@@ -2,7 +2,7 @@
 id: SIG-20260702-A07
 type: signal_card
 signal_type: case
-title: "AWS GenAIIC Partner Agent Factory 新增智能体进入 AWS Marketplace"
+title: "AWS GenAIIC合作伙伴Agent Factory：新型AI代理现已登陆AWS"
 date: 2026-07-02
 status: published
 source_title: "AWS GenAIIC Partner Agent Factory: New AI agents now in AWS ..."
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "AWS GenAIIC"
 
 frontend:
-  displayTitle: "AWS GenAIIC Partner Agent Factory 新增智能体进入 AWS Marketplace"
+  displayTitle: "AWS GenAIIC合作伙伴Agent Factory：新型AI代理现已登陆AWS"
   sourceLinks:
     - "https://aws.amazon.com/blogs/awsmarketplace/aws-genaiic-partner-agent-factory-new-ai-agents-now-in-aws-marketplace/"
 ---
 
-# AWS GenAIIC Partner Agent Factory 新增智能体进入 AWS Marketplace
+# AWS GenAIIC合作伙伴Agent Factory：新型AI代理现已登陆AWS
 
 ## 新闻事实
 

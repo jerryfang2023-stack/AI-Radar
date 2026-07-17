@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-021
 title: "ActionAI Raises $10m Seed to Fix AI's Trust Problem"
-title_zh: "ActionAI 完成 1000 万美元 种子轮融资，用于Fix AI's Trust Problem"
-title_translation_status: translated
-title_translation_method: business-rule_title_translation
+title_zh: "ActionAI 获1000万美元种子轮融资，旨在解决AI信任问题"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.prnewswire.com/news-releases/actionai-raises-10m-seed-to-fix-ais-trust-problem-302744706.html"
 canonical_url: "https://prnewswire.com/news-releases/actionai-raises-10m-seed-to-fix-ais-trust-problem-302744706.html"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-10T01:59:45.029Z
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # ActionAI Raises $10m Seed to Fix AI's Trust Problem

@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-031
 title: "Qualcomm unveils three new data center solutions including Dragonfly C1000 CPU, set to be deployed by Meta - DCD"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "高通发布三款新数据中心解决方案，包括Dragonfly C1000 CPU，将由Meta部署"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.datacenterdynamics.com/en/news/qualcomm-unveils-three-new-data-center-solutions-including-qualcomm-dragonfly-c1000-cpu-set-to-be-deployed-by-meta/"
 canonical_url: "https://datacenterdynamics.com/en/news/qualcomm-unveils-three-new-data-center-solutions-including-qualcomm-dragonfly-c1000-cpu-set-to-be-deployed-by-meta"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-13T10:23:56.840Z
 theme: ai-hardware-trend-innovation-signal
 keyword_group: ai-hardware-trend-innovation-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Qualcomm unveils three new data center solutions including Dragonfly C1000 CPU, set to be deployed by Meta - DCD

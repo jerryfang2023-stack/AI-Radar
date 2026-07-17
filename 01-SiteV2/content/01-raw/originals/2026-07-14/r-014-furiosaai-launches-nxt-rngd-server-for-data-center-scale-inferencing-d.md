@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-014
 title: "FuriosaAI launches NXT RNGD server for data center-scale inferencing - DCD"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "FuriosaAI 推出面向数据中心规模推理的 NXT RNGD 服务器 - DCD"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.datacenterdynamics.com/en/news/furiosaai-launches-nxt-rngd-server-for-data-center-scale-inferencing/"
 canonical_url: "https://datacenterdynamics.com/en/news/furiosaai-launches-nxt-rngd-server-for-data-center-scale-inferencing"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-14T01:56:51.336Z
 theme: ai-hardware-scenario-service-signal
 keyword_group: ai-hardware-scenario-service-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # FuriosaAI launches NXT RNGD server for data center-scale inferencing - DCD

@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-17T18:20:10.588Z",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 727,
-    "quarantinedEventCount": 50
+    "eventCount": 818,
+    "quarantinedEventCount": 58
   },
   "entity": {
     "id": "EN-5c178682f5573d29",
@@ -20,15 +20,19 @@
     "datasetScopes": [
       "canonical"
     ],
-    "eventIds": [],
+    "eventIds": [
+      "EV-9e678b626c2a5c83"
+    ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
-    "firstSeen": "",
-    "lastSeen": "",
+    "firstSeen": "2026-06-06",
+    "lastSeen": "2026-06-07",
     "relationIds": [],
     "groupedEventIds": {
-      "fundingAcquisition": [],
+      "fundingAcquisition": [
+        "EV-9e678b626c2a5c83"
+      ],
       "deployments": [],
       "partnerships": [],
       "productsServices": [],
@@ -36,7 +40,23 @@
       "organizationPeople": [],
       "other": []
     },
-    "timeline": [],
+    "timeline": [
+      {
+        "id": "EV-9e678b626c2a5c83",
+        "dataDate": "2026-06-06",
+        "date": "2026-06-07",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Y Combinator支持的Mandel AI融资390万美元，用于自动化全球供应链 - Tech.eu",
+        "displayTags": [],
+        "entityIds": [
+          "EN-5c178682f5573d29"
+        ]
+      }
+    ],
     "viewpoints": []
   },
   "relatedEntities": [],

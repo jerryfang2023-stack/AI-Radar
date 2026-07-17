@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-083
 title: "华擎推出 ASRock Claw Quickset 桌面工具，可简化本地 AI 环境部署"
 title_zh: "华擎推出 ASRock Claw Quickset 桌面工具，可简化本地 AI 环境部署"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/971/454.htm"
 canonical_url: "https://ithome.com/0/971/454.htm"
 source_name: "IT之家（RSS）"
@@ -78,6 +78,7 @@ fact_extraction_completed_at: 2026-07-03T01:59:31.547Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 华擎推出 ASRock Claw Quickset 桌面工具，可简化本地 AI 环境部署

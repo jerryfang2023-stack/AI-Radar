@@ -72,6 +72,10 @@ key_excerpts: [{"type":"quote","text":"OpenAI has just revealed a new \"intellig
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_zh: "OpenAI发布首款AI处理器：Jalapeño"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # OpenAI reveals its first AI processor: Jalapeño

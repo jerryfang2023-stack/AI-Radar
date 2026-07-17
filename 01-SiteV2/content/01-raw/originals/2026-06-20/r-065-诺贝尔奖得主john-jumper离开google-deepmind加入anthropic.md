@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"诺贝尔化学奖得主、Alpha
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "诺贝尔奖得主John Jumper离开Google Deepmind加入Anthropic"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 诺贝尔奖得主John Jumper离开Google Deepmind加入Anthropic

@@ -2,7 +2,7 @@
 id: SIG-20260628-A03
 type: signal_card
 signal_type: case
-title: "Five Principles of an Accountable AI Agent Network: How to Evaluate Any Governance Platform"
+title: "负责任AI代理网络的五项原则：如何评估任何治理平台"
 date: 2026-06-28
 status: published
 source_title: "Five Principles of an Accountable AI Agent Network: How to Evaluate Any Governance Platform"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Tigera"
 
 frontend:
-  displayTitle: "Five Principles of an Accountable AI Agent Network: How to Evaluate Any Governance Platform"
+  displayTitle: "负责任AI代理网络的五项原则：如何评估任何治理平台"
   sourceLinks:
     - "https://www.tigera.io/blog/five-principles-of-an-accountable-ai-agent-network-how-to-evaluate-any-governance-platform/"
 ---
 
-# Five Principles of an Accountable AI Agent Network: How to Evaluate Any Governance Platform
+# 负责任AI代理网络的五项原则：如何评估任何治理平台
 
 ## 新闻事实
 

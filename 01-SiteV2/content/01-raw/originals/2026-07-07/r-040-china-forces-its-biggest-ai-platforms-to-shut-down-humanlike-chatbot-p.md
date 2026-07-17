@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-040
 title: "China forces its biggest AI platforms to shut down humanlike chatbot personas"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "中国强制国内最大AI平台关闭类人聊天机器人角色"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://the-decoder.com/china-forces-its-biggest-ai-platforms-to-shut-down-humanlike-chatbot-personas/"
 canonical_url: "https://the-decoder.com/china-forces-its-biggest-ai-platforms-to-shut-down-humanlike-chatbot-personas"
 source_name: "The Decoder AI News"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-07T02:01:23.530Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # China forces its biggest AI platforms to shut down humanlike chatbot personas

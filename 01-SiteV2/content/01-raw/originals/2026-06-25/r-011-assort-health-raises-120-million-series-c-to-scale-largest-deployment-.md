@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Assort Health, the most widely-used AI 
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only
+title_zh: "Assort Health完成1.2亿美元C轮融资，用于扩大患者旅程中最大规模AI代理部署"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Assort Health Raises $120 Million Series C to Scale Largest Deployment of AI Agents for the Patient Journey | Assort Health

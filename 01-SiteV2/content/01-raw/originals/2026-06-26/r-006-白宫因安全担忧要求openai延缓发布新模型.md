@@ -72,6 +72,10 @@ key_excerpts: [{"type":"supporting_context","text":"OpenAI新模型GPT 5.6将不
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "白宫因安全担忧要求OpenAI延缓发布新模型"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 白宫因安全担忧要求OpenAI延缓发布新模型

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Clara raises $12M pre-seed, joins Y Com
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only
+title_zh: "Clara完成1200万美元预种子轮融资，加入Y Combinator"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Clara launches with $12M pre-seed round, joins Y Combinator — Clara

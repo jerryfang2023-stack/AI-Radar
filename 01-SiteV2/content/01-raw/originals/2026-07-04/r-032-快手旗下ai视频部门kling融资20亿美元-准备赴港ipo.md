@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-032
 title: "快手旗下AI视频部门Kling融资20亿美元，准备赴港IPO"
 title_zh: "快手旗下AI视频部门Kling融资20亿美元，准备赴港IPO"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://the-decoder.com/chinese-ai-video-maker-kling-raises-2-billion-as-it-gears-up-for-hong-kong-ipo"
 canonical_url: "https://the-decoder.com/chinese-ai-video-maker-kling-raises-2-billion-as-it-gears-up-for-hong-kong-ipo"
 source_name: "The Decoder：AI News（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-04T04:50:50.244Z
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 快手旗下AI视频部门Kling融资20亿美元，准备赴港IPO

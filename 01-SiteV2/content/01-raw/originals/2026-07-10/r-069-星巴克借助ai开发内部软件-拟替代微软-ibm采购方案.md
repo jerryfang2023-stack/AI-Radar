@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-069
 title: "星巴克借助AI开发内部软件，拟替代微软、IBM采购方案"
 title_zh: "星巴克借助AI开发内部软件，拟替代微软、IBM采购方案"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/974/750.htm"
 canonical_url: "https://ithome.com/0/974/750.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-10T02:00:00.719Z
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 星巴克借助AI开发内部软件，拟替代微软、IBM采购方案

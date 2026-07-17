@@ -2,7 +2,7 @@
 id: SIG-20260620-A02
 type: signal_card
 signal_type: case
-title: "CrewAI: Funding, Team & Investors"
+title: "CrewAI：融资、团队与投资者 | 初创企业介绍"
 date: 2026-06-20
 status: published
 source_title: "CrewAI: Funding, Team & Investors | Startup Intros"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "CrewAI"
 
 frontend:
-  displayTitle: "CrewAI: Funding, Team & Investors"
+  displayTitle: "CrewAI：融资、团队与投资者 | 初创企业介绍"
   sourceLinks:
     - "https://startupintros.com/orgs/crewai"
 ---
 
-# CrewAI: Funding, Team & Investors
+# CrewAI：融资、团队与投资者 | 初创企业介绍
 
 ## 新闻事实
 

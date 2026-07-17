@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-17T18:20:10.588Z",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 727,
-    "quarantinedEventCount": 50
+    "eventCount": 818,
+    "quarantinedEventCount": 58
   },
   "entity": {
     "id": "EN-fbefd62449ea6310",
@@ -20,23 +20,44 @@
     "datasetScopes": [
       "canonical"
     ],
-    "eventIds": [],
+    "eventIds": [
+      "EV-35930ad4d40377af"
+    ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
-    "firstSeen": "",
-    "lastSeen": "",
+    "firstSeen": "2026-04-16",
+    "lastSeen": "2026-07-13",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
-      "deployments": [],
+      "deployments": [
+        "EV-35930ad4d40377af"
+      ],
       "partnerships": [],
       "productsServices": [],
       "hardware": [],
       "organizationPeople": [],
       "other": []
     },
-    "timeline": [],
+    "timeline": [
+      {
+        "id": "EV-35930ad4d40377af",
+        "dataDate": "2026-07-13",
+        "date": "2026-04-16",
+        "eventType": "procurement_contract",
+        "eventTypeLabel": "采购合同",
+        "eventGroup": "商业合作",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "Blaize 与 NeoTensr 签署最高 5000 万美元合同，在亚太地区部署联合品牌 AI 边缘数据中心基础设施",
+        "displayTags": [],
+        "entityIds": [
+          "EN-862dd01160b992bf",
+          "EN-fbefd62449ea6310"
+        ]
+      }
+    ],
     "viewpoints": []
   },
   "relatedEntities": [],

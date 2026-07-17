@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"Claude Sonnet 5在Artificial Analysis评
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Claude Sonnet 5延续Anthropic隐藏涨价的模式"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Claude Sonnet 5延续Anthropic隐藏涨价的模式

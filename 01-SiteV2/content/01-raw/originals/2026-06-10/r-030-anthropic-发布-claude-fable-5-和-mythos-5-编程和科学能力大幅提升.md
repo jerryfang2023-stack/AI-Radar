@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"Anthropic 推出 Claude Fable 5 
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Anthropic 发布 Claude Fable 5 和 Mythos 5，编程和科学能力大幅提升"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Anthropic 发布 Claude Fable 5 和 Mythos 5，编程和科学能力大幅提升

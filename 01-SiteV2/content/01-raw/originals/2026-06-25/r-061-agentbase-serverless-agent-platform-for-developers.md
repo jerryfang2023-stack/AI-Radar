@@ -72,6 +72,10 @@ key_excerpts: [{"type":"workflow_change","text":"Join our agent building communi
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_zh: "Agentbase | 面向开发者的无服务器智能体平台"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Agentbase | Serverless Agent Platform for Developers

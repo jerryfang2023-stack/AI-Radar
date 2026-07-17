@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"OpenClaw didn’t just break GitHub
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "OpenClaw 7个月获37万星：为何这个AI智能体在他人失败处成功 - NovVista Tech Brief"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # OpenClaw's 370K Stars in 7 Months: Why This AI Agent Succeeded Where Others Failed - NovVista Tech Brief

@@ -1,47 +1,5 @@
 [
   {
-    "claim_id": "CL-2d0831001c72f51c",
-    "raw_id": "RAW-86b972fad861cc01",
-    "claim_type": "acquisition",
-    "subject": "Elastic 同意以最高8500万美元",
-    "predicate": "acquisition",
-    "object": "AI 初创公司 DeductiveAI",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 1
-    },
-    "source_span": {
-      "raw_id": "RAW-86b972fad861cc01",
-      "start": 3,
-      "end": 70
-    },
-    "source_quote": "Source: Elastic agrees to buy CRV-backed DeductiveAI for up to $85M",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.9,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-bf9202fcf6bbb929",
-    "raw_id": "RAW-86b972fad861cc01",
-    "claim_type": "acquisition",
-    "subject": "Elastic 同意以最高8500万美元",
-    "predicate": "acquisition",
-    "object": "AI 初创公司 DeductiveAI",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 2
-    },
-    "source_span": {
-      "raw_id": "RAW-86b972fad861cc01",
-      "start": 113,
-      "end": 321
-    },
-    "source_quote": "DeductiveAI, a startup that uses AI to catch and resolve bugs in software, has agreed to be sold to enterprise software company Elastic for up to $85 million, according to a person with knowledge of the deal.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
     "claim_id": "CL-4e5925ea627f0fe2",
     "raw_id": "RAW-6863d919d0181580",
     "claim_type": "funding",
@@ -84,7 +42,7 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-5144aaac74b8ab0a",
+    "claim_id": "CL-8d4b4f2d5d623a57",
     "raw_id": "RAW-6863d919d0181580",
     "claim_type": "funding",
     "subject": "General Intuition 洽谈约3亿美元",
@@ -96,16 +54,16 @@
     },
     "source_span": {
       "raw_id": "RAW-6863d919d0181580",
-      "start": 336,
-      "end": 588
+      "start": 84,
+      "end": 111
     },
-    "source_quote": "The raise comes eight months after General Intuition spun out of Medal , a platform for uploading and sharing video game clips, with a $134 million seed round. The fresh funds would bring the startup’s valuation up to just over $2 billion, sources say.",
+    "source_quote": "8:20 AM PDT · June 18, 2026",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-4905d1de8c717623",
+    "claim_id": "CL-5144aaac74b8ab0a",
     "raw_id": "RAW-6863d919d0181580",
     "claim_type": "funding",
     "subject": "General Intuition 洽谈约3亿美元",
@@ -117,10 +75,10 @@
     },
     "source_span": {
       "raw_id": "RAW-6863d919d0181580",
-      "start": 589,
-      "end": 769
+      "start": 336,
+      "end": 588
     },
-    "source_quote": "Sources tell TechCrunch General Intuition has secured funds from backers, including Jeff Bezos and Eric Schmidt, as well as existing investors Khosla Ventures and General Catalyst.",
+    "source_quote": "The raise comes eight months after General Intuition spun out of Medal , a platform for uploading and sharing video game clips, with a $134 million seed round. The fresh funds would bring the startup’s valuation up to just over $2 billion, sources say.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -205,6 +163,27 @@
       "end": 1025
     },
     "source_quote": "If finalized, this latest round would represent a 160% increase in valuation in less than half a year. However, the WSJ reports that this is a split-priced round , a tactic startups are using to boost their headline valuation and make lead investors look good on paper. Some investors in this latest funding round are reportedly coming in at a $13 billion valuation, while others at $11 billion, sources told the Journal. This deal is said to be co-led by Spark Capital, Sands Capital, Altimeter Capital, and Wellington Management.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-6ee28547ed189fcf",
+    "raw_id": "RAW-1f0741ec790173a2",
+    "claim_type": "funding",
+    "subject": "AI推理公司Baseten据报以130亿美元估值",
+    "predicate": "funding",
+    "object": "15亿美元",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-1f0741ec790173a2",
+      "start": 1026,
+      "end": 1478
+    },
+    "source_quote": "Launched in 2019, Baseten is a startup benefiting from what The Next Wave hailed the “ inference gold rush ,” in which VCs are pouring enormous amounts of money into companies building the inference layer. Inference is what the model does after a user submits a prompt. Baseten promises to handle inference quickly while controlling costs by routing requests to the best-for-task model, especially to competent, less-expensive open source alternatives.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -315,85 +294,43 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-6eaac07a3368d23a",
-    "raw_id": "RAW-8595ce5058f2a462",
+    "claim_id": "CL-571d64e54e2de70e",
+    "raw_id": "RAW-93d10b9063075295",
     "claim_type": "product_release",
-    "subject": "Google Deepmind",
+    "subject": "Google 庆祝A2A协议",
     "predicate": "product_release",
-    "object": "AI 控制路线图：将 AI 智能体视为内部威胁，基于行为逐步授权",
+    "object": "一周年：协作智能体生态",
     "qualifiers": {
-      "event_status": "planned",
-      "sequence": 1
-    },
-    "source_span": {
-      "raw_id": "RAW-8595ce5058f2a462",
-      "start": 19,
-      "end": 97
-    },
-    "source_quote": "Google Deepmind treats its own AI agents like rogue employees with office keys",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.9,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-07b3337cc9a2eec9",
-    "raw_id": "RAW-8595ce5058f2a462",
-    "claim_type": "product_release",
-    "subject": "Google Deepmind",
-    "predicate": "product_release",
-    "object": "AI 控制路线图：将 AI 智能体视为内部威胁，基于行为逐步授权",
-    "qualifiers": {
-      "event_status": "planned",
+      "event_status": "completed",
       "sequence": 2
     },
     "source_span": {
-      "raw_id": "RAW-8595ce5058f2a462",
-      "start": 225,
-      "end": 428
+      "raw_id": "RAW-93d10b9063075295",
+      "start": 776,
+      "end": 809
     },
-    "source_quote": "Google Deepmind's new \"AI Control Roadmap\" doesn't blindly trust AI agents. Instead, the framework treats them as potential insider threats and grants permissions step by step based on verified behavior.",
+    "source_quote": "The Architecture of Collaboration",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-50442a26a02e2b39",
-    "raw_id": "RAW-8595ce5058f2a462",
+    "claim_id": "CL-bfa04fa02a64a36f",
+    "raw_id": "RAW-93d10b9063075295",
     "claim_type": "product_release",
-    "subject": "Google Deepmind",
+    "subject": "Google 庆祝A2A协议",
     "predicate": "product_release",
-    "object": "AI 控制路线图：将 AI 智能体视为内部威胁，基于行为逐步授权",
+    "object": "一周年：协作智能体生态",
     "qualifiers": {
-      "event_status": "planned",
+      "event_status": "completed",
       "sequence": 3
     },
     "source_span": {
-      "raw_id": "RAW-8595ce5058f2a462",
-      "start": 809,
-      "end": 990
+      "raw_id": "RAW-93d10b9063075295",
+      "start": 810,
+      "end": 951
     },
-    "source_quote": "Deepmind's AI Control Roadmap details how Google locks down its most advanced internal AI systems. The company thinks it could work as a blueprint for the rest of the industry, too.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-ae684c0ade1dbf7d",
-    "raw_id": "RAW-8595ce5058f2a462",
-    "claim_type": "product_release",
-    "subject": "Google Deepmind",
-    "predicate": "product_release",
-    "object": "AI 控制路线图：将 AI 智能体视为内部威胁，基于行为逐步授权",
-    "qualifiers": {
-      "event_status": "planned",
-      "sequence": 4
-    },
-    "source_span": {
-      "raw_id": "RAW-8595ce5058f2a462",
-      "start": 3407,
-      "end": 3625
-    },
-    "source_quote": "Deepmind's \"AI Control Roadmap\" maps out escalation levels for monitoring (D1 through D4) and defense (R1 through R3) as AI systems grow more capable of evading detection and executing attacks. | Image: Google Deepmind",
+    "source_quote": "Before we look at A2A in action, it's important to understand why we need a new protocol. Why not just connect agents via standard REST APIs?",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -469,7 +406,7 @@
     "predicate": "funding",
     "object": "$30M from Andreessen Horowitz and others to automate enterprise procurement",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 1
     },
     "source_span": {
@@ -490,7 +427,7 @@
     "predicate": "funding",
     "object": "$30M from Andreessen Horowitz and others to automate enterprise procurement",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 2
     },
     "source_span": {
@@ -504,43 +441,43 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-95cb6bc4514c55f2",
+    "claim_id": "CL-25a2d8f747e2a70a",
     "raw_id": "RAW-b081eaf2613733e1",
     "claim_type": "funding",
     "subject": "Lio",
     "predicate": "funding",
     "object": "$30M from Andreessen Horowitz and others to automate enterprise procurement",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 3
     },
     "source_span": {
       "raw_id": "RAW-b081eaf2613733e1",
-      "start": 144,
-      "end": 447
+      "start": 95,
+      "end": 115
     },
-    "source_quote": "Lio’s co-founders know firsthand that procurement — the process enterprises use to purchase services from vendors — is often a bottleneck. Vladimir Keil, the company’s co-founder and CEO, had experienced this problem as an employee inside a large company and then again while building his first startup.",
+    "source_quote": "Dominic-Madori Davis",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-18a6c23a5214a20f",
+    "claim_id": "CL-54d6cabdd299a266",
     "raw_id": "RAW-b081eaf2613733e1",
     "claim_type": "funding",
     "subject": "Lio",
     "predicate": "funding",
     "object": "$30M from Andreessen Horowitz and others to automate enterprise procurement",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 4
     },
     "source_span": {
       "raw_id": "RAW-b081eaf2613733e1",
-      "start": 1237,
-      "end": 1649
+      "start": 116,
+      "end": 143
     },
-    "source_quote": "Procurement is at the heart of enterprise spending, where companies look to buy everything from raw materials to professional services. Each purchase order requires focus and commitment: One usually has to open some type of Enterprise Resource Planning (ERP) software, check contract management systems, search the supplier database, run compliance checks, cross-reference budgets, dig through emails, and so on.",
+    "source_quote": "5:00 AM PST · March 5, 2026",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -553,7 +490,7 @@
     "predicate": "funding",
     "object": "$21.5M to Build a Metamodel That Autonomously Runs Enterprise Workflows, With Experts Providing Final Validation",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 1
     },
     "source_span": {
@@ -574,7 +511,7 @@
     "predicate": "funding",
     "object": "$21.5M to Build a Metamodel That Autonomously Runs Enterprise Workflows, With Experts Providing Final Validation",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 2
     },
     "source_span": {
@@ -595,7 +532,7 @@
     "predicate": "funding",
     "object": "$21.5M to Build a Metamodel That Autonomously Runs Enterprise Workflows, With Experts Providing Final Validation",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 3
     },
     "source_span": {
@@ -616,7 +553,7 @@
     "predicate": "funding",
     "object": "$21.5M to Build a Metamodel That Autonomously Runs Enterprise Workflows, With Experts Providing Final Validation",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 4
     },
     "source_span": {
@@ -630,6 +567,258 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-418de637a1800668",
+    "raw_id": "RAW-10f61c79360e3be4",
+    "claim_type": "deployment",
+    "subject": "88% AI",
+    "predicate": "deployment",
+    "object": "Failure: ServiceNow + Accenture's FDE Fix | THE D[AI]LY BRIEF",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-10f61c79360e3be4",
+      "start": 0,
+      "end": 716
+    },
+    "source_quote": "Eighty-eight percent of enterprise AI pilots never reach production. That single number — replicated across Forrester, Anaconda, a16z, and the MIT Sloan CIO panel — is the defining failure mode of the agentic era. On May 6, 2026, at Knowledge 2026 in Las Vegas, ServiceNow and Accenture stepped onto the keynote stage with their answer: a joint Forward Deployed Engineering (FDE) program that embeds platform-native and industry-native engineers inside customer environments to drag pilots across the production line. The program leans on 300+ pre-built AI agent skills on the ServiceNow AI Platform, ServiceNow's AI Control Tower for governance, and Accenture's 786,000-person delivery footprint for industry depth.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-fe1a97c8acd5550c",
+    "raw_id": "RAW-10f61c79360e3be4",
+    "claim_type": "deployment",
+    "subject": "88% AI",
+    "predicate": "deployment",
+    "object": "Failure: ServiceNow + Accenture's FDE Fix | THE D[AI]LY BRIEF",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-10f61c79360e3be4",
+      "start": 717,
+      "end": 1331
+    },
+    "source_quote": "The bet is bold: that the missing ingredient in agentic AI is not models, infrastructure, or even data — it is implementation labor with permission to live inside the customer's environment until the workflow ships. That is the Palantir model rewritten for the agent era. This article unpacks what was announced, why it matters to CIOs and CFOs, the competitive landscape (Anthropic, OpenAI , Google, Microsoft are all converging on the same conclusion), a decision matrix on when an FDE engagement actually pays back, and a 90-day pilot-to-production readiness assessment you can score against your own org today.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-4e0d890c364f5a09",
+    "raw_id": "RAW-10f61c79360e3be4",
+    "claim_type": "deployment",
+    "subject": "88% AI",
+    "predicate": "deployment",
+    "object": "Failure: ServiceNow + Accenture's FDE Fix | THE D[AI]LY BRIEF",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-10f61c79360e3be4",
+      "start": 1332,
+      "end": 1395
+    },
+    "source_quote": "What Changed: ServiceNow + Accenture Operationalize the FDE Bet",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-ffa15af36a3e9b01",
+    "raw_id": "RAW-10f61c79360e3be4",
+    "claim_type": "deployment",
+    "subject": "88% AI",
+    "predicate": "deployment",
+    "object": "Failure: ServiceNow + Accenture's FDE Fix | THE D[AI]LY BRIEF",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-10f61c79360e3be4",
+      "start": 1396,
+      "end": 2041
+    },
+    "source_quote": "The Forward Deployed Engineering program announced at Knowledge 2026 is a joint motion that fuses two specialist teams inside customer environments. ServiceNow's AI-native FDE team — engineers who live in the platform, the AI Control Tower, RaptorDB, and the agent runtime — works shoulder-to-shoulder with Accenture's industry-led FDEs, who bring vertical depth in financial services, healthcare, manufacturing, public sector, and retail. According to the joint announcement , they form \"purpose-built pods\" that build agentic workflows natively on the ServiceNow AI Platform and stay embedded until measurable production value is demonstrated.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-3751e1bcd8c3f3d7",
+    "raw_id": "RAW-8a06c7dcb986efb8",
+    "claim_type": "deployment",
+    "subject": "undisclosed_subject",
+    "predicate": "deployment",
+    "object": "to Production: Enterprise Agent Deployment Playbook - AI Learning Guides",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-8a06c7dcb986efb8",
+      "start": 0,
+      "end": 784
+    },
+    "source_quote": "The defining enterprise AI agent deployment challenge of 2026 is no longer model quality. It’s the pilot-to-production gap. 78% of enterprise technology leaders have at least one AI agent pilot running; only 14% have successfully scaled an agent to organization-wide operational use. The gap — sometimes called pilot purgatory — has almost nothing to do with the capability of frontier LLMs and almost everything to do with the operational, organizational, and integration work that turns a promising prototype into a reliable production system. This guide is a 15-chapter playbook for moving enterprise agents from pilots to production, covering architecture, governance, observability, cost, reliability, rollout, and the anti-patterns that strand companies in perpetual pilot mode.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-db11a5bd1c43d579",
+    "raw_id": "RAW-8a06c7dcb986efb8",
+    "claim_type": "deployment",
+    "subject": "undisclosed_subject",
+    "predicate": "deployment",
+    "object": "to Production: Enterprise Agent Deployment Playbook - AI Learning Guides",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-8a06c7dcb986efb8",
+      "start": 803,
+      "end": 863
+    },
+    "source_quote": "The pilot-to-production gap in 2026 — what’s actually broken",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-f535c8eddb088b82",
+    "raw_id": "RAW-8a06c7dcb986efb8",
+    "claim_type": "deployment",
+    "subject": "undisclosed_subject",
+    "predicate": "deployment",
+    "object": "to Production: Enterprise Agent Deployment Playbook - AI Learning Guides",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-8a06c7dcb986efb8",
+      "start": 864,
+      "end": 913
+    },
+    "source_quote": "The enterprise agent maturity model — five stages",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-da830e09ea696979",
+    "raw_id": "RAW-8a06c7dcb986efb8",
+    "claim_type": "deployment",
+    "subject": "undisclosed_subject",
+    "predicate": "deployment",
+    "object": "to Production: Enterprise Agent Deployment Playbook - AI Learning Guides",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-8a06c7dcb986efb8",
+      "start": 914,
+      "end": 971
+    },
+    "source_quote": "Choosing the right first agent — narrow wins, broad fails",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-6e81a9c9336787ce",
+    "raw_id": "RAW-672f395c7e58543b",
+    "claim_type": "funding",
+    "subject": "AI agent authorization startup Arcade",
+    "predicate": "funding",
+    "object": "$60M investment - SiliconANGLE",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-672f395c7e58543b",
+      "start": 36,
+      "end": 94
+    },
+    "source_quote": "AI agent authorization startup Arcade nabs $60M investment",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-ce0608b3a72a64ad",
+    "raw_id": "RAW-672f395c7e58543b",
+    "claim_type": "funding",
+    "subject": "AI agent authorization startup Arcade",
+    "predicate": "funding",
+    "object": "$60M investment - SiliconANGLE",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-672f395c7e58543b",
+      "start": 114,
+      "end": 267
+    },
+    "source_quote": "Arcade AI Inc., the developer of an authorization platform for artificial intelligence agents, today announced that it has raised $60 million in funding.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-d15dc1f45cf7379c",
+    "raw_id": "RAW-672f395c7e58543b",
+    "claim_type": "funding",
+    "subject": "AI agent authorization startup Arcade",
+    "predicate": "funding",
+    "object": "$60M investment - SiliconANGLE",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-672f395c7e58543b",
+      "start": 268,
+      "end": 398
+    },
+    "source_quote": "SYN Ventures led the Series A round. It was joined by Morgan Stanley and Wipro Ltd., a publicly traded technology consulting firm.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-55e72de0f9ea2ef6",
+    "raw_id": "RAW-672f395c7e58543b",
+    "claim_type": "funding",
+    "subject": "AI agent authorization startup Arcade",
+    "predicate": "funding",
+    "object": "$60M investment - SiliconANGLE",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-672f395c7e58543b",
+      "start": 762,
+      "end": 1031
+    },
+    "source_quote": "The company was founded in 2024 by Chief Executive Officer Alex Salazar and Chief Technology Officer Sam Partee, who previously held senior product roles at Oka Inc. and Redis Inc., respectively. Today’s funding round was preceded by a $12 million seed raise last year.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-c37d633c8cd2e6cb",
     "raw_id": "RAW-95b3693dd3ac0138",
     "claim_type": "funding",
@@ -637,7 +826,7 @@
     "predicate": "funding",
     "object": "€17.2 million to secure and govern enterprise AI agents | EU-Startups",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 1
     },
     "source_span": {
@@ -658,7 +847,7 @@
     "predicate": "funding",
     "object": "€17.2 million to secure and govern enterprise AI agents | EU-Startups",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 2
     },
     "source_span": {
@@ -679,7 +868,7 @@
     "predicate": "funding",
     "object": "€17.2 million to secure and govern enterprise AI agents | EU-Startups",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 3
     },
     "source_span": {
@@ -700,7 +889,7 @@
     "predicate": "funding",
     "object": "€17.2 million to secure and govern enterprise AI agents | EU-Startups",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 4
     },
     "source_span": {
@@ -756,7 +945,7 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-291b248f0d0b7be2",
+    "claim_id": "CL-98b594285f787add",
     "raw_id": "RAW-3b99c26051db1e8b",
     "claim_type": "product_release",
     "subject": "《粉雄救兵》Karamo Brown",
@@ -768,16 +957,16 @@
     },
     "source_span": {
       "raw_id": "RAW-3b99c26051db1e8b",
-      "start": 145,
-      "end": 466
+      "start": 117,
+      "end": 144
     },
-    "source_quote": "Karamo Brown, famous for his pep talks on Netflix’s “Queer Eye,” has jumped into the wellness and AI space with his new app, Kē . After spending a year and a half focusing on his own journey — from fitness and nutrition to meditation, sobriety, relationships, and personal growth — Brown wants to help others do the same.",
+    "source_quote": "9:55 AM PDT · June 18, 2026",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-81784b835978671d",
+    "claim_id": "CL-291b248f0d0b7be2",
     "raw_id": "RAW-3b99c26051db1e8b",
     "claim_type": "product_release",
     "subject": "《粉雄救兵》Karamo Brown",
@@ -789,10 +978,10 @@
     },
     "source_span": {
       "raw_id": "RAW-3b99c26051db1e8b",
-      "start": 1242,
-      "end": 1429
+      "start": 145,
+      "end": 466
     },
-    "source_quote": "But what really sets Kē apart is its “AI Karamo” feature that lets users talk with a digital version of Karamo. They can ask questions and get advice in real time, delivered in his voice.",
+    "source_quote": "Karamo Brown, famous for his pep talks on Netflix’s “Queer Eye,” has jumped into the wellness and AI space with his new app, Kē . After spending a year and a half focusing on his own journey — from fitness and nutrition to meditation, sobriety, relationships, and personal growth — Brown wants to help others do the same.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -882,6 +1071,90 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-95553fb44c719f8f",
+    "raw_id": "RAW-029e0f41370eeb3d",
+    "claim_type": "deployment",
+    "subject": "AI Hub Co-Design Programmes: Startup Accelerator",
+    "predicate": "deployment",
+    "object": "AI Hub Co-Design Programmes: Startup Accelerator Pilot",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-029e0f41370eeb3d",
+      "start": 0,
+      "end": 54
+    },
+    "source_quote": "AI Hub Co-Design Programmes: Startup Accelerator Pilot",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b149faefacf8954c",
+    "raw_id": "RAW-029e0f41370eeb3d",
+    "claim_type": "deployment",
+    "subject": "AI Hub Co-Design Programmes: Startup Accelerator",
+    "predicate": "deployment",
+    "object": "Startup Accelerator Pilot",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-029e0f41370eeb3d",
+      "start": 243,
+      "end": 268
+    },
+    "source_quote": "Startup Accelerator Pilot",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-dcb85967b087dd97",
+    "raw_id": "RAW-029e0f41370eeb3d",
+    "claim_type": "deployment",
+    "subject": "AI Hub Co-Design Programmes: Startup Accelerator",
+    "predicate": "deployment",
+    "object": "Strengthening AI foundations is not just important—it's critical for the future of industrial and sustainable development. Without solid AI infrastructure, the potential of technology to revolutionize industries remains untapped. We are thrilled to present the results of our application process for the AI Hub for Sustainable Development Startup Accelerator Pilot. This initiative, part of the co-design of the AI Hub for Sustainable Development, has showcased the wealth of innovation across the African continent, highlighting the immense potential of AI to drive progress.",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-029e0f41370eeb3d",
+      "start": 356,
+      "end": 932
+    },
+    "source_quote": "Strengthening AI foundations is not just important—it's critical for the future of industrial and sustainable development. Without solid AI infrastructure, the potential of technology to revolutionize industries remains untapped. We are thrilled to present the results of our application process for the AI Hub for Sustainable Development Startup Accelerator Pilot. This initiative, part of the co-design of the AI Hub for Sustainable Development, has showcased the wealth of innovation across the African continent, highlighting the immense potential of AI to drive progress.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-c95a720b11cdf32f",
+    "raw_id": "RAW-029e0f41370eeb3d",
+    "claim_type": "deployment",
+    "subject": "AI Hub Co-Design Programmes: Startup Accelerator",
+    "predicate": "deployment",
+    "object": "The programme has sparked a wave of creativity, attracting over 300 applications from cutting-edge startups from the nine priority countries of the Italy-Africa Mattei Plan for a six-month co-design accelerator pilot. With innovative solutions in energy, agriculture, health, water, education and training, and infrastructure, these startups are leading the charge towards a smarter, more sustainable world.",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-029e0f41370eeb3d",
+      "start": 933,
+      "end": 1340
+    },
+    "source_quote": "The programme has sparked a wave of creativity, attracting over 300 applications from cutting-edge startups from the nine priority countries of the Italy-Africa Mattei Plan for a six-month co-design accelerator pilot. With innovative solutions in energy, agriculture, health, water, education and training, and infrastructure, these startups are leading the charge towards a smarter, more sustainable world.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-9b85d86ba2c6d4f9",
     "raw_id": "RAW-7b43be46aaff07d1",
     "claim_type": "organization_people",
@@ -903,7 +1176,7 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-0adf5dd45b3b65a9",
+    "claim_id": "CL-283e6d1a0028916d",
     "raw_id": "RAW-7b43be46aaff07d1",
     "claim_type": "organization_people",
     "subject": "Meta AI重组核心项目高管道尔顿·史密斯被曝",
@@ -912,6 +1185,27 @@
     "qualifiers": {
       "event_status": "completed",
       "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-7b43be46aaff07d1",
+      "start": 536,
+      "end": 596
+    },
+    "source_quote": "Meta 发言人拒绝确认道尔顿 · 史密斯是否即将离职，但表示 Meta 会继续向 Metamate 整合 AI 工具。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-0adf5dd45b3b65a9",
+    "raw_id": "RAW-7b43be46aaff07d1",
+    "claim_type": "organization_people",
+    "subject": "Meta AI重组核心项目高管道尔顿·史密斯被曝",
+    "predicate": "organization_people",
+    "object": "，内部士气\"史上最低\"",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
     },
     "source_span": {
       "raw_id": "RAW-7b43be46aaff07d1",
@@ -924,7 +1218,7 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-283e6d1a0028916d",
+    "claim_id": "CL-2cb1ae5a3f61e76c",
     "raw_id": "RAW-7b43be46aaff07d1",
     "claim_type": "organization_people",
     "subject": "Meta AI重组核心项目高管道尔顿·史密斯被曝",
@@ -932,14 +1226,14 @@
     "object": "，内部士气\"史上最低\"",
     "qualifiers": {
       "event_status": "completed",
-      "sequence": 3
+      "sequence": 4
     },
     "source_span": {
       "raw_id": "RAW-7b43be46aaff07d1",
-      "start": 536,
-      "end": 596
+      "start": 133,
+      "end": 176
     },
-    "source_quote": "Meta 发言人拒绝确认道尔顿 · 史密斯是否即将离职，但表示 Meta 会继续向 Metamate 整合 AI 工具。",
+    "source_quote": "约两个月前，Meta 才向员工宣布，道尔顿 · 史密斯将 负责改进内部 AI 工具 。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -1036,7 +1330,7 @@
     "predicate": "funding",
     "object": "$10M Seed Round",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 1
     },
     "source_span": {

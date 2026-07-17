@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"Compare the 10 best AI agent platfo
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "2026年企业级十大最佳AI智能体平台 - Rasa"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # 10 Best AI Agent Platforms for Enterprise in 2026 - Rasa

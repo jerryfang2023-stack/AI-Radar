@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-004
 title: "Savi Security 发布反 AI 诈骗 App，抵御语音/短信/电话骗局（如绑架勒索）"
 title_zh: "Savi Security 发布反 AI 诈骗 App，抵御语音/短信/电话骗局（如绑架勒索）"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://techcrunch.com/2026/07/07/savis-app-aims-to-protect-consumers-from-realistic-ai-scams-like-kidnappers-demanding-ransom"
 canonical_url: "https://techcrunch.com/2026/07/07/savis-app-aims-to-protect-consumers-from-realistic-ai-scams-like-kidnappers-demanding-ransom"
 source_name: "TechCrunch：AI（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-08T04:39:25.321Z
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Savi Security 发布反 AI 诈骗 App，抵御语音/短信/电话骗局（如绑架勒索）

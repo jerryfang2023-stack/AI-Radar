@@ -1,0 +1,121 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 818,
+    "quarantinedEventCount": 58
+  },
+  "entity": {
+    "id": "EN-c890cfa67d1da908",
+    "name": "Vaspian",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-2fd730d0ad452334"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-06-26",
+    "lastSeen": "2026-06-28",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [
+        "EV-2fd730d0ad452334"
+      ],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-2fd730d0ad452334",
+        "dataDate": "2026-06-28",
+        "date": "2026-06-26",
+        "eventType": "partnership",
+        "eventTypeLabel": "合作",
+        "eventGroup": "商业合作",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Vaspian 与 BlueMesh 合作，将私有 AI 引入企业通信",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "enterprise_platform",
+            "dimensionName": "产品形态",
+            "name": "企业 AI 平台"
+          },
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          }
+        ],
+        "entityIds": [
+          "EN-c890cfa67d1da908",
+          "EN-96eebba49dbbf422",
+          "EN-8147e6fed86d42c1"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [
+    {
+      "id": "FDE-faf3a8cfcafef981",
+      "eventId": "EV-2fd730d0ad452334",
+      "dataDate": "2026-06-28",
+      "date": "2026-06-26",
+      "title": "Vaspian 与 BlueMesh 合作，将私有 AI 引入企业通信",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Vaspian",
+      "vendor": "Intel",
+      "industry": "未披露",
+      "useCase": "BlueMesh to Bring Private AI to Business Communications – IT Business Net",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "Vaspian’s partnership with BlueMesh is built on the opposite premise. BlueMesh is designed around private deployment and complete data ownership, supporting cloud, on-premises, and hybrid environments, with built-in data encryption, role-based access control, security guardrails, and the ability to run AI models on infrastructure the customer or Vaspian controls. That architecture is what allows Vaspian to make a claim most AI providers cannot: a customer’s data is analyzed for that customer’s benefit alone, and never pooled or used to train shared models. Learn more about Vaspian’s AI capabilities ."
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://itbusinessnet.com/2026/06/vaspian-partners-with-bluemesh-to-bring-private-ai-to-business-communications",
+      "entityIds": [
+        "EN-c890cfa67d1da908",
+        "EN-96eebba49dbbf422",
+        "EN-8147e6fed86d42c1"
+      ]
+    }
+  ],
+  "hardware": []
+}

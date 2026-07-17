@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"How Versich embedded end-to-end artifici
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_zh: "将AI打造为制造商NetSuite ERP的中枢神经系统"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Making AI the Central Nervous System of a Manufacturer NetSuite ERP

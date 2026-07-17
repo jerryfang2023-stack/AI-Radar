@@ -2,7 +2,7 @@
 id: SIG-20260628-A10
 type: signal_card
 signal_type: case
-title: "Marketing AI Agent Deployment Playbook for Agencies"
+title: "面向代理机构的营销AI代理部署操作手册"
 date: 2026-06-28
 status: published
 source_title: "Marketing AI Agent Deployment Playbook for Agencies"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Digital Applied"
 
 frontend:
-  displayTitle: "Marketing AI Agent Deployment Playbook for Agencies"
+  displayTitle: "面向代理机构的营销AI代理部署操作手册"
   sourceLinks:
     - "https://www.digitalapplied.com/blog/marketing-ai-agent-deployment-playbook-agency-guide"
 ---
 
-# Marketing AI Agent Deployment Playbook for Agencies
+# 面向代理机构的营销AI代理部署操作手册
 
 ## 新闻事实
 

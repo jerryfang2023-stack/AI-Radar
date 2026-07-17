@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"# How AWS SMGS uses an AI-powered c
 theme: outside-core-exploration
 keyword_group: outside-core-exploration
 copyright_note: local research archive only
+title_zh: "AWS SMGS借助Amazon Bedrock AgentCore的AI对话助手，革新业务管理方式 | 人工智能"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # How AWS SMGS uses an AI-powered conversational assistant to transform business management with Amazon Bedrock AgentCore | Artificial Intelligence

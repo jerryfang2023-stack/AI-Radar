@@ -72,6 +72,10 @@ key_excerpts: [{"type":"workflow_change","text":"### Learning from Vertical SaaS
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_zh: "垂直AI已到来：如何抓住机遇并赢得巨大成功——Greenfield Partners"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Vertical AI Is Here: How to Capture the Opportunity and Win Big — Greenfield Partners

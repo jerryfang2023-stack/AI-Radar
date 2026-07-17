@@ -2,7 +2,7 @@
 id: SIG-20260625-A04
 type: signal_card
 signal_type: case
-title: "LLM Inference Optimization: A Practical Guide for AI Engineers"
+title: "LLM推理优化：AI工程师实用指南"
 date: 2026-06-25
 status: published
 source_title: "LLM Inference Optimization: A Practical Guide for AI Engineers"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "LLM Inference Optimization"
 
 frontend:
-  displayTitle: "LLM Inference Optimization: A Practical Guide for AI Engineers"
+  displayTitle: "LLM推理优化：AI工程师实用指南"
   sourceLinks:
     - "https://jobsbyculture.com/blog/llm-inference-optimization-guide-2026"
 ---
 
-# LLM Inference Optimization: A Practical Guide for AI Engineers
+# LLM推理优化：AI工程师实用指南
 
 ## 新闻事实
 

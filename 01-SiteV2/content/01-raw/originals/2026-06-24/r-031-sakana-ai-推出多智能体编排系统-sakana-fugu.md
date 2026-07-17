@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"日本 Sakana AI 于当地时间
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "Sakana AI 推出多智能体编排系统 Sakana Fugu"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Sakana AI 推出多智能体编排系统 Sakana Fugu

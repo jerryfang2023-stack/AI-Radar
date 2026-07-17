@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"GitHub Copilot SDK GA: What You Can
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "GitHub Copilot SDK正式发布：可构建内容、成本分析及是否优于自研方案 | Pondero"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # GitHub Copilot SDK GA: What You Can Build, What It Costs, and Whether It Beats Rolling Your Own | Pondero

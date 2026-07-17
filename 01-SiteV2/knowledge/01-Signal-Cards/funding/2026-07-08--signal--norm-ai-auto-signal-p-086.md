@@ -2,7 +2,7 @@
 id: SIG-20260708-A07
 type: signal_card
 signal_type: funding
-title: "Norm AI 获得 $120M 融资"
+title: "AI法律初创公司Norm融资1.2亿美元，估值达独角兽级别 | TechCrunch"
 date: 2026-07-08
 status: published
 source_title: "AI law startup Norm raises $120M, hits unicorn valuation | TechCrunch"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "Norm AI"
 
 frontend:
-  displayTitle: "Norm AI 获得 $120M 融资"
+  displayTitle: "AI法律初创公司Norm融资1.2亿美元，估值达独角兽级别 | TechCrunch"
   sourceLinks:
     - "https://techcrunch.com/2026/07/07/ai-law-startup-norm-raises-120m-hits-unicorn-valuation/"
 ---
 
-# Norm AI 获得 $120M 融资
+# AI法律初创公司Norm融资1.2亿美元，估值达独角兽级别 | TechCrunch
 
 ## 新闻事实
 

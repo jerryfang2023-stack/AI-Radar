@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 818,
+    "quarantinedEventCount": 58
+  },
+  "entity": {
+    "id": "EN-cf5378a2305a999f",
+    "name": "Chinese AI",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-ca8ea84386674eb0"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [
+      "EN-e1517be14d06cdb7"
+    ],
+    "firstSeen": "2026-07-09",
+    "lastSeen": "2026-07-09",
+    "relationIds": [
+      "REL2-ae05285e0576d4b9"
+    ],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-ca8ea84386674eb0"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-ca8ea84386674eb0",
+        "dataDate": "2026-07-09",
+        "date": "2026-07-09",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "中国AI初创公司MiniMax计划今年晚些时候开源一个2.7万亿参数模型",
+        "displayTags": [],
+        "entityIds": [
+          "EN-3f140abd179102dd",
+          "EN-e1517be14d06cdb7",
+          "EN-cf5378a2305a999f"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [
+    {
+      "id": "EN-e1517be14d06cdb7",
+      "name": "MiniMax",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-ca8ea84386674eb0",
+        "EV-aae8b6aa0da7f103",
+        "EV-20cdbe59ba2a1359"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-multimodal"
+      ],
+      "relatedEntityIds": [
+        "EN-cf5378a2305a999f",
+        "EN-cf81a61e4eaef17c"
+      ],
+      "firstSeen": "2026-06-13",
+      "lastSeen": "2026-07-09"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-ae05285e0576d4b9",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-e1517be14d06cdb7",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-cf5378a2305a999f",
+      "object_type": "entity",
+      "event_id": "EV-ca8ea84386674eb0",
+      "claim_refs": [
+        "CL-5b1c1ec9e1d977ba",
+        "CL-bdf2be420c647faa",
+        "CL-837ef054f32e38ca",
+        "CL-c7052e949737c57a"
+      ],
+      "source_refs": [
+        "SA-9e9d9b0a5226d7b5"
+      ],
+      "data_date": "2026-07-09",
+      "status": "verified"
+    }
+  ],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

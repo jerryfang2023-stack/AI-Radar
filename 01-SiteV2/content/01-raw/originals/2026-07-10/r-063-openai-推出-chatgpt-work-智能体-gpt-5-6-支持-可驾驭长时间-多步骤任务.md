@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-063
 title: "OpenAI 推出 ChatGPT Work 智能体：GPT-5.6 支持，可驾驭长时间、多步骤任务"
 title_zh: "OpenAI 推出 ChatGPT Work 智能体：GPT-5.6 支持，可驾驭长时间、多步骤任务"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/974/789.htm"
 canonical_url: "https://ithome.com/0/974/789.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-10T02:00:00.708Z
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # OpenAI 推出 ChatGPT Work 智能体：GPT-5.6 支持，可驾驭长时间、多步骤任务

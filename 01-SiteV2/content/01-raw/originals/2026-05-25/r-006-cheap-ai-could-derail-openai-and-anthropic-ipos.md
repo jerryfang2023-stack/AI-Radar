@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"2026-05-20T19:15:00Z / query=mod
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "廉价AI可能阻碍OpenAI和Anthropic的IPO"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Cheap AI could derail OpenAI and Anthropic IPOs

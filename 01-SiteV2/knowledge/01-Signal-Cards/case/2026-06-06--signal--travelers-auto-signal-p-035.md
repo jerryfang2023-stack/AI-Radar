@@ -2,7 +2,7 @@
 id: SIG-20260606-A11
 type: signal_card
 signal_type: case
-title: "Travelers deploys AI-powered voice claims assistant nationwide with OpenAI Realtime API | keepingupwith.ai"
+title: "Travelers 借助 OpenAI Realtime API 在全国部署 AI 语音理赔助手"
 date: 2026-06-06
 status: published
 source_title: "Travelers deploys AI-powered voice claims assistant nationwide with OpenAI Realtime API | keepingupwith.ai"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Travelers"
 
 frontend:
-  displayTitle: "Travelers deploys AI-powered voice claims assistant nationwide with OpenAI Realtime API | keepingupwith.ai"
+  displayTitle: "Travelers 借助 OpenAI Realtime API 在全国部署 AI 语音理赔助手"
   sourceLinks:
     - "https://keepingupwith.ai/articles/travelers-deploys-ai-powered-voice-claims-assistant-nationwide-with-openai-realt/"
 ---
 
-# Travelers deploys AI-powered voice claims assistant nationwide with OpenAI Realtime API | keepingupwith.ai
+# Travelers 借助 OpenAI Realtime API 在全国部署 AI 语音理赔助手
 
 ## 新闻事实
 

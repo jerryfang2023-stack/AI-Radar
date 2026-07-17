@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-17T18:20:10.588Z",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 727,
-    "quarantinedEventCount": 50
+    "eventCount": 818,
+    "quarantinedEventCount": 58
   },
   "entity": {
     "id": "EN-32e83e92d45d71f6",
@@ -20,23 +20,63 @@
     "datasetScopes": [
       "canonical"
     ],
-    "eventIds": [],
+    "eventIds": [
+      "EV-30d7f1c5dc8ea464",
+      "EV-8f0c63ed7bb153dc"
+    ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
-    "firstSeen": "",
-    "lastSeen": "",
+    "firstSeen": "2023-03-21",
+    "lastSeen": "2026-07-15",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
-      "deployments": [],
+      "deployments": [
+        "EV-30d7f1c5dc8ea464"
+      ],
       "partnerships": [],
-      "productsServices": [],
+      "productsServices": [
+        "EV-8f0c63ed7bb153dc"
+      ],
       "hardware": [],
       "organizationPeople": [],
       "other": []
     },
-    "timeline": [],
+    "timeline": [
+      {
+        "id": "EV-30d7f1c5dc8ea464",
+        "dataDate": "2026-07-15",
+        "date": "2023-03-21",
+        "eventType": "deployment",
+        "eventTypeLabel": "部署",
+        "eventGroup": "部署与案例",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Pilot AI 利用算法从销售电话中提取信息",
+        "displayTags": [],
+        "entityIds": [
+          "EN-32e83e92d45d71f6",
+          "EN-3ccbd9105a45d8fc"
+        ]
+      },
+      {
+        "id": "EV-8f0c63ed7bb153dc",
+        "dataDate": "2026-07-04",
+        "date": "2026-07-03",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "AI 交互革命：Claude Code 系统提示词精简 80%，示例约束反而遏制表现",
+        "displayTags": [],
+        "entityIds": [
+          "EN-32e83e92d45d71f6",
+          "EN-c70eca6b0f88f44d"
+        ]
+      }
+    ],
     "viewpoints": []
   },
   "relatedEntities": [],

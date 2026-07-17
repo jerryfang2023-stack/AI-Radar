@@ -2,7 +2,7 @@
 id: SIG-20260616-A12
 type: signal_card
 signal_type: product_service
-title: "Salesforce 发布 AI 基础设施能力，切入销售线索和收入团队协作"
+title: "Salesforce以36亿美元收购AI客服平台Fin"
 date: 2026-06-16
 status: published
 source_title: "Salesforce以36亿美元收购AI客服平台Fin"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Salesforce"
 
 frontend:
-  displayTitle: "Salesforce 发布 AI 基础设施能力，切入销售线索和收入团队协作"
+  displayTitle: "Salesforce以36亿美元收购AI客服平台Fin"
   sourceLinks:
     - "https://techcrunch.com/2026/06/15/salesforce-acquires-ai-customer-service-platform-fin-for-3-6b"
 ---
 
-# Salesforce 发布 AI 基础设施能力，切入销售线索和收入团队协作
+# Salesforce以36亿美元收购AI客服平台Fin
 
 ## 新闻事实
 

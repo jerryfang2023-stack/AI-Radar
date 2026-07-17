@@ -1,7 +1,7 @@
 [
   {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "2026-07-08T11:00:00.000Z",
     "disclosed_at": "2026-07-08T11:00:00.000Z",
     "entities": [
@@ -16,9 +16,9 @@
     "locations": [],
     "claim_refs": [
       "CL-e240519aa8bbb784",
-      "CL-72553c8a4e5f416a",
       "CL-c610711413df2977",
-      "CL-b52ba0bba8be0d6b"
+      "CL-b52ba0bba8be0d6b",
+      "CL-72553c8a4e5f416a"
     ],
     "source_refs": [
       "SA-3e9c362d0ec1caea"
@@ -29,7 +29,7 @@
       {
         "source_ref": "SA-3e9c362d0ec1caea",
         "disclosed_at": "2026-07-08T11:00:00.000Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
@@ -38,7 +38,7 @@
   },
   {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "2026-07-07T17:00:00.000Z",
     "disclosed_at": "2026-07-07T17:00:00.000Z",
     "entities": [
@@ -61,17 +61,19 @@
       "SA-5bd20b59ec4ea094"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "display_title_zh"
+    ],
     "update_history": [
       {
         "source_ref": "SA-5bd20b59ec4ea094",
         "disclosed_at": "2026-07-07T17:00:00.000Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
     "event_id": "EV-fab81bddb815267b",
-    "display_title_zh": "Monogram 完成 4000 万美元 种子轮融资，用于 Visual AI Interface"
+    "display_title_zh": ""
   },
   {
     "event_type": "model_release",
@@ -79,17 +81,20 @@
     "event_time": "2026-07-12T15:12:54.000Z",
     "disclosed_at": "2026-07-12T15:12:54.000Z",
     "entities": [
-      "EN-ea3bd73e2b506e00"
+      "EN-ea3bd73e2b506e00",
+      "EN-e3863f813fe47240"
     ],
     "action": "发布多模态推理模型",
     "object": "Muse Spark 1.1，强化 AI 智能体任务能力",
-    "metrics": [],
+    "metrics": [
+      "100 万"
+    ],
     "locations": [],
     "claim_refs": [
       "CL-09ba92021f65499b",
       "CL-ee71ff195b36344c",
-      "CL-f612e93c00edf3d8",
-      "CL-426b2fd1eedb9b24"
+      "CL-d43c0532cc8b30cf",
+      "CL-f612e93c00edf3d8"
     ],
     "source_refs": [
       "SA-eb6d431b1c867ceb"
@@ -113,6 +118,7 @@
     "event_time": "2026-07-12T12:45:22.000Z",
     "disclosed_at": "2026-07-12T12:45:22.000Z",
     "entities": [
+      "EN-08b6a35be337edce",
       "EN-9fbf261b62c1d7c0"
     ],
     "action": "推出",
@@ -123,7 +129,9 @@
     ],
     "claim_refs": [
       "CL-8e59eb4b32bf50fd",
-      "CL-ef211a554ce22078"
+      "CL-ef211a554ce22078",
+      "CL-689a4132f36dc5fa",
+      "CL-5e20117fd4a299a3"
     ],
     "source_refs": [
       "SA-4d9d9a055e4fbe39"
@@ -138,8 +146,44 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-9fb217d7e855c8f7",
+    "event_id": "EV-33292a33d0f4d599",
     "display_title_zh": "微软研究院推出开源可视化中间语言 Flint，让 AI 智能体\"一句话生成专业图表\""
+  },
+  {
+    "event_type": "product_release",
+    "event_status": "withdrawn",
+    "event_time": "2026-07-13T06:17:23.000Z",
+    "disclosed_at": "2026-07-13T06:17:23.000Z",
+    "entities": [
+      "EN-7d3194f79e645c42",
+      "EN-c70eca6b0f88f44d",
+      "EN-7839fb10a8f14c70"
+    ],
+    "action": "product_release",
+    "object": "OpenAI 优化 GPT-5.6 Sol 并放宽使用限额，Anthropic 延长 Fable 5 推广期",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-2fa148c9e7ee7ca0",
+      "CL-65f72c79f0647f4e",
+      "CL-02161f1daab02adb",
+      "CL-e14c4254880f1815"
+    ],
+    "source_refs": [
+      "SA-dc53486867fd7b9c"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-dc53486867fd7b9c",
+        "disclosed_at": "2026-07-13T06:17:23.000Z",
+        "status": "withdrawn"
+      }
+    ],
+    "publication_status": "withdrawn",
+    "event_id": "EV-969ed3078d10f0c9",
+    "display_title_zh": "OpenAI 优化 GPT-5.6 Sol 并放宽使用限额，Anthropic 延长 Fable 5 推广期"
   },
   {
     "event_type": "product_release",
@@ -147,7 +191,8 @@
     "event_time": "2026-07-12T11:44:02.000Z",
     "disclosed_at": "2026-07-12T11:44:02.000Z",
     "entities": [
-      "EN-7d3194f79e645c42"
+      "EN-cf5b2ffd42a2ebbe",
+      "EN-30bb70f57054ca83"
     ],
     "action": "发布",
     "object": "VisionRay Flow Pro AI 太阳镜：20Mp 摄像头、35g 重量、199 美元",
@@ -158,8 +203,7 @@
     "claim_refs": [
       "CL-7d58908dfc229a35",
       "CL-e5c59b1872c60260",
-      "CL-07a2decdb599ec04",
-      "CL-16c13fa694554ea7"
+      "CL-07a2decdb599ec04"
     ],
     "source_refs": [
       "SA-422316eff6fb0fc2"
@@ -174,20 +218,25 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-519205eb50c83300",
+    "event_id": "EV-3e0953cd3f84b652",
     "display_title_zh": "DPVR 发布 VisionRay Flow Pro AI 太阳镜：20Mp 摄像头、35g 重量、199 美元"
   },
   {
-    "event_type": "product_release",
+    "event_type": "hardware_product",
     "event_status": "completed",
     "event_time": "2026-07-13T06:24:29.000Z",
     "disclosed_at": "2026-07-13T06:24:29.000Z",
     "entities": [
-      "EN-8d4321d936320802"
+      "EN-a48f75191ba3e484",
+      "EN-8d4321d936320802",
+      "EN-c73da23142d2205b"
     ],
-    "action": "推出",
-    "object": "Nexus 系列 AI 工作站，可选 AMD 锐龙 / 锐龙 Threadripper 处理器",
-    "metrics": [],
+    "action": "推出 Nexus 系列 AI 工作站",
+    "object": "，可选 AMD 锐龙 / 锐龙 Threadripper 处理器",
+    "metrics": [
+      "128GB",
+      "4TB"
+    ],
     "locations": [],
     "claim_refs": [
       "CL-c9c9122cdc5e75b5",
@@ -208,7 +257,7 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-082314251be505e2",
+    "event_id": "EV-47d14d0aa4d4414e",
     "display_title_zh": "Slimbook 推出 Nexus 系列 AI 工作站，可选 AMD 锐龙 / 锐龙 Threadripper 处理器"
   },
   {
@@ -254,7 +303,8 @@
     "event_time": "2026-07-10T23:55:07.000Z",
     "disclosed_at": "2026-07-10T23:55:07.000Z",
     "entities": [
-      "EN-ea3bd73e2b506e00"
+      "EN-ea3bd73e2b506e00",
+      "EN-96eebba49dbbf422"
     ],
     "action": "removes",
     "object": "controversial AI feature on Instagram after backlash",
@@ -262,9 +312,9 @@
     "locations": [],
     "claim_refs": [
       "CL-363f329bcb11077a",
+      "CL-9d57a04fe9c3461d",
       "CL-20542fea14248d9c",
-      "CL-82492cce29556fe9",
-      "CL-8f46ea6584fd5ded"
+      "CL-82492cce29556fe9"
     ],
     "source_refs": [
       "SA-d59c331722c57163"
@@ -288,9 +338,13 @@
     "event_time": "2026-07-13T07:40:18.000Z",
     "disclosed_at": "2026-07-13T07:40:18.000Z",
     "entities": [
+      "EN-fa373257792c6b9b",
       "EN-b0532e1af75cc4ab",
+      "EN-96eebba49dbbf422",
       "EN-7d3194f79e645c42",
-      "EN-c70eca6b0f88f44d"
+      "EN-c70eca6b0f88f44d",
+      "EN-8c8c58ec2d92d598",
+      "EN-1c6392c229ed9069"
     ],
     "action": "发布",
     "object": "Verifiers v1：用于智能体强化学习训练与评估的可组合任务集、Harness 与运行时",
@@ -298,9 +352,9 @@
     "locations": [],
     "claim_refs": [
       "CL-640c4ad549143696",
+      "CL-73a06a2613c622b3",
       "CL-434349c3bb4f4e0d",
-      "CL-fc6b39ea688897c5",
-      "CL-45cd8468ded6fa77"
+      "CL-fc6b39ea688897c5"
     ],
     "source_refs": [
       "SA-400e018b4aa3f410"
@@ -315,7 +369,7 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-000f2abf549268a6",
+    "event_id": "EV-025778b83c1b2ca9",
     "display_title_zh": "Prime Intellect 发布 Verifiers v1：用于智能体强化学习训练与评估的可组合任务集、Harness 与运行时"
   },
   {
@@ -354,46 +408,118 @@
     ],
     "publication_status": "verified",
     "event_id": "EV-095e1a90f14ccdb9",
-    "display_title_zh": "Lyzr 的 AI 智能体参与其 1 亿美元 B 轮融资流程"
+    "display_title_zh": "Lyzr的AI代理自主完成了1亿美元B轮融资——AI Chat Daily"
   },
   {
-    "event_type": "deployment",
+    "event_type": "hardware_product",
     "event_status": "announced",
-    "event_time": "2026-07-08T07:54:44.000Z",
-    "disclosed_at": "2026-07-08T07:54:44.000Z",
-    "entities": [],
-    "action": "Deploys",
-    "object": "at Leaderdrive and AI Infrastructure Factories | RobotsBeat",
+    "event_time": "2025-03-18T00:00:00.000Z",
+    "disclosed_at": "2025-03-18T00:00:00.000Z",
+    "entities": [
+      "EN-4a639cb888a15d75",
+      "EN-8d4321d936320802",
+      "EN-96eebba49dbbf422",
+      "EN-65b3aa2f527deeef",
+      "EN-a2413f7c5095f988",
+      "EN-c165c006a5968443"
+    ],
+    "action": "Expands Enterprise AI Portfolio of over 100 GPU",
+    "object": "-Optimized Systems Supporting the Upcoming NVIDIA RTX PRO 6000 Blackwell Server Edition and NVIDIA H200 NVL Platform | Supermicro",
     "metrics": [
-      "40%",
-      "99.9%"
+      "100 GPU"
     ],
-    "locations": [
-      "China"
-    ],
+    "locations": [],
     "claim_refs": [
-      "CL-df50564496b63c7b",
-      "CL-d8179eed7fb124c2",
-      "CL-18644d47f58d0f1a",
-      "CL-00ea9790fc8b8534"
+      "CL-9cc98d31288c9ff7",
+      "CL-a35e34184928739f",
+      "CL-eef10607234667d5",
+      "CL-fa424945c58620bc"
     ],
     "source_refs": [
-      "SA-7a226c100edb11b4"
+      "SA-2154a69a72d72de2"
     ],
     "conflicts": [],
-    "missing_fields": [
-      "entities"
-    ],
+    "missing_fields": [],
     "update_history": [
       {
-        "source_ref": "SA-7a226c100edb11b4",
-        "disclosed_at": "2026-07-08T07:54:44.000Z",
+        "source_ref": "SA-2154a69a72d72de2",
+        "disclosed_at": "2025-03-18T00:00:00.000Z",
         "status": "announced"
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-9f067d8f0d23eb48",
-    "display_title_zh": "Simplexity Robotics 成立 11 个月即向生产线交付 100 台 i7 Pro 机器人，并部署于 Leaderdrive 与 AI 基础设施工厂"
+    "event_id": "EV-34929bdd016dc8d6",
+    "display_title_zh": "Supermicro 扩展企业级 AI 产品组合，新增超100款 GPU 优化系统，支持即将推出的 NVIDIA RTX PRO 6000 Blackwell 服务器版及 NVIDIA H200 NVL 平台"
+  },
+  {
+    "event_type": "deployment",
+    "event_status": "completed",
+    "event_time": "2026-06-25T00:00:00.000Z",
+    "disclosed_at": "2026-06-25T00:00:00.000Z",
+    "entities": [
+      "EN-ea3bd73e2b506e00"
+    ],
+    "action": "deployed",
+    "object": "by Meta - DCD",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-4b60aa0ecbd5d311",
+      "CL-4abc5db04e97e261",
+      "CL-c8554859e026f9af",
+      "CL-ed2b2ad0778ac277"
+    ],
+    "source_refs": [
+      "SA-1a80bbbd6be4c621"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-1a80bbbd6be4c621",
+        "disclosed_at": "2026-06-25T00:00:00.000Z",
+        "status": "completed"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-fd7e79d3cb9cdb69",
+    "display_title_zh": "高通发布三款新数据中心解决方案，包括Dragonfly C1000 CPU，将由Meta部署"
+  },
+  {
+    "event_type": "deployment",
+    "event_status": "announced",
+    "event_time": "2026-07-10T00:00:00.000Z",
+    "disclosed_at": "2026-07-10T00:00:00.000Z",
+    "entities": [
+      "EN-96eebba49dbbf422"
+    ],
+    "action": "goes live",
+    "object": "in Zhengzhou - Chinadaily.com.cn",
+    "metrics": [],
+    "locations": [
+      "China"
+    ],
+    "claim_refs": [
+      "CL-67e81c3c832a7d7a",
+      "CL-00d0523d142b97ee",
+      "CL-4578894530e87340",
+      "CL-bca8defeb73c23c9"
+    ],
+    "source_refs": [
+      "SA-9a3beb94e3e6ec08"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-9a3beb94e3e6ec08",
+        "disclosed_at": "2026-07-10T00:00:00.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-b4eb99a878be9bb2",
+    "display_title_zh": "中国首个国产10万卡AI超算集群在郑州上线"
   },
   {
     "event_type": "product_release",
@@ -401,14 +527,17 @@
     "event_time": "2026-07-13T08:45:12.000Z",
     "disclosed_at": "2026-07-13T08:45:12.000Z",
     "entities": [
-      "EN-85badcce1d692b9b"
+      "EN-85badcce1d692b9b",
+      "EN-8775f30318a77aea"
     ],
     "action": "推出",
     "object": "TRACE：将智能体反复失败转化为合成 RL 训练环境的能力定向训练系统",
     "metrics": [],
     "locations": [],
     "claim_refs": [
-      "CL-192a87e64ca4b5a9"
+      "CL-192a87e64ca4b5a9",
+      "CL-75c18f308c9d4f4f",
+      "CL-7bffc38e62f55b6d"
     ],
     "source_refs": [
       "SA-58388495077eca14"
@@ -427,49 +556,88 @@
     "display_title_zh": "斯坦福大学推出 TRACE：将智能体反复失败转化为合成 RL 训练环境的能力定向训练系统"
   },
   {
-    "event_type": "model_release",
-    "event_status": "completed",
-    "event_time": "2026-07-13T00:35:36.000Z",
-    "disclosed_at": "2026-07-13T00:35:36.000Z",
+    "event_type": "procurement_contract",
+    "event_status": "planned",
+    "event_time": "2026-04-16T00:00:00.000Z",
+    "disclosed_at": "2026-04-16T00:00:00.000Z",
     "entities": [
-      "EN-8920a00f76fe52b5"
+      "EN-862dd01160b992bf",
+      "EN-fbefd62449ea6310"
     ],
-    "action": "发布 NeuroVFM：基于 Vol-JEPA 的通用神经影像基础模型",
-    "object": "密歇根大学发布 NeuroVFM：基于 Vol-JEPA 的通用神经影像基础模型",
+    "action": "Enter into Contract",
+    "object": "for Up to $50M to Deploy Co-Branded AI Edge Data Center Infrastructure Across Asia Pacific – Company Announcement - FT.com",
     "metrics": [
-      "5.24 million"
+      "$50M",
+      "$50.0 million"
     ],
     "locations": [],
     "claim_refs": [
-      "CL-eccfef3b2bfefd6f",
-      "CL-2449a44b385af17c",
-      "CL-eef733d770189926",
-      "CL-f4a6acdaa5e6191a"
+      "CL-845545af816210bd",
+      "CL-14e88cffaf4a7f2e",
+      "CL-84b9f354c4f0208d",
+      "CL-5eef79d10bbff0f8"
     ],
     "source_refs": [
-      "SA-b3017bc294278b9d"
+      "SA-0da16d3533a208fc"
     ],
     "conflicts": [],
-    "missing_fields": [
-      "object"
-    ],
+    "missing_fields": [],
     "update_history": [
       {
-        "source_ref": "SA-b3017bc294278b9d",
-        "disclosed_at": "2026-07-13T00:35:36.000Z",
+        "source_ref": "SA-0da16d3533a208fc",
+        "disclosed_at": "2026-04-16T00:00:00.000Z",
+        "status": "planned"
+      }
+    ],
+    "publication_status": "partial",
+    "event_id": "EV-35930ad4d40377af",
+    "display_title_zh": "Blaize 与 NeoTensr 签署最高 5000 万美元合同，在亚太地区部署联合品牌 AI 边缘数据中心基础设施"
+  },
+  {
+    "event_type": "organization_people",
+    "event_status": "completed",
+    "event_time": "2026-07-12T00:00:00.000Z",
+    "disclosed_at": "2026-07-12T00:00:00.000Z",
+    "entities": [
+      "EN-3a7bd3e2360a3d29"
+    ],
+    "action": "left",
+    "object": "a legacy of powerful AI chips",
+    "metrics": [
+      "1.5TB"
+    ],
+    "locations": [],
+    "claim_refs": [
+      "CL-363f1314e03fcd0f",
+      "CL-4a41cbee54b3521b",
+      "CL-27b473732653c8ae",
+      "CL-b010c8f5aa692261"
+    ],
+    "source_refs": [
+      "SA-c925ef87e69b9238"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-c925ef87e69b9238",
+        "disclosed_at": "2026-07-12T00:00:00.000Z",
         "status": "completed"
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-4bcf4400b3784f04",
-    "display_title_zh": "密歇根大学发布 NeuroVFM：基于 Vol-JEPA 的通用神经影像基础模型"
+    "event_id": "EV-7d4b4b8d4e3599d4",
+    "display_title_zh": "苹果失败的自动驾驶汽车项目留下了强大的AI芯片遗产"
   },
   {
     "event_type": "product_release",
     "event_status": "announced",
     "event_time": "",
     "disclosed_at": "2026-07-13T10:23:56.977Z",
-    "entities": [],
+    "entities": [
+      "EN-f0aa6c0681eb0d35",
+      "EN-3149ad548669e717"
+    ],
     "action": "Launch",
     "object": "YC: Castari - Vercel for AI Agents | Y Combinator",
     "metrics": [],
@@ -485,7 +653,8 @@
     ],
     "conflicts": [],
     "missing_fields": [
-      "entities"
+      "event_time",
+      "display_title_zh"
     ],
     "update_history": [
       {
@@ -495,8 +664,8 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-76d4f6da876b2606",
-    "display_title_zh": "YC 发布 YC"
+    "event_id": "EV-60a9ea1c58de3226",
+    "display_title_zh": ""
   },
   {
     "event_type": "product_release",
@@ -504,6 +673,7 @@
     "event_time": "2026-07-13T03:58:11.000Z",
     "disclosed_at": "2026-07-13T03:58:11.000Z",
     "entities": [
+      "EN-1622bc43a3da8171",
       "EN-9c8ae69b84f21a2e",
       "EN-047364b9be67f665",
       "EN-43a340bb75b45f02"
@@ -533,7 +703,7 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-6fea710316ebda18",
+    "event_id": "EV-3167e6eed75597e9",
     "display_title_zh": "《智能体个人信息保护自律公约》发布，百度、腾讯、阿里、火山引擎等 31 家企业首批签署"
   },
   {
@@ -542,7 +712,8 @@
     "event_time": "2026-07-13T04:38:23.000Z",
     "disclosed_at": "2026-07-13T04:38:23.000Z",
     "entities": [
-      "EN-6416272bf06ab3ec"
+      "EN-6416272bf06ab3ec",
+      "EN-8fc4d0cdb7b45668"
     ],
     "action": "发布并开源 SenseNova-Vision 理解生成统一视觉大模型",
     "object": "，能力超越 Vision Banana",
@@ -550,9 +721,9 @@
     "locations": [],
     "claim_refs": [
       "CL-0a07df5755be5277",
+      "CL-26af16a56efd3a88",
       "CL-55064fc713f68fca",
-      "CL-7c6f5cd8bf74d2e5",
-      "CL-f9f1b073d1222450"
+      "CL-7c6f5cd8bf74d2e5"
     ],
     "source_refs": [
       "SA-773b66759f418b5d"
@@ -569,6 +740,39 @@
     "publication_status": "verified",
     "event_id": "EV-e8105c2990ca8172",
     "display_title_zh": "商汤发布并开源 SenseNova-Vision 理解生成统一视觉大模型，能力超越 Vision Banana"
+  },
+  {
+    "event_type": "product_release",
+    "event_status": "announced",
+    "event_time": "2026-07-13T06:40:42.000Z",
+    "disclosed_at": "2026-07-13T06:40:42.000Z",
+    "entities": [
+      "EN-c70eca6b0f88f44d",
+      "EN-9fbf261b62c1d7c0"
+    ],
+    "action": "product_release",
+    "object": "微软CEO纳德拉批评AI模型公司\"双标\"：一边主张\"合理使用\"数据，一边限制他人蒸馏",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-18ab0e2023bd2c58",
+      "CL-d043f6e9a66dc58a"
+    ],
+    "source_refs": [
+      "SA-be32d6f459a3a4e1"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-be32d6f459a3a4e1",
+        "disclosed_at": "2026-07-13T06:40:42.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-b920999c64aa9ef6",
+    "display_title_zh": "微软CEO纳德拉批评AI模型公司\"双标\"：一边主张\"合理使用\"数据，一边限制他人蒸馏"
   },
   {
     "event_type": "deployment",

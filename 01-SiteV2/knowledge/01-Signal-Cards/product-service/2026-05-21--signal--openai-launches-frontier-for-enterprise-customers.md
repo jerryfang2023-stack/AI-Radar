@@ -2,7 +2,7 @@
 id: SIG-20260521-02
 type: signal_card
 signal_type: product_service
-title: "OpenAI 推出 Frontier，争取更多企业客户"
+title: "OpenAI推出Frontier，旨在赢得更多企业客户"
 date: 2026-05-21
 status: draft
 asset_level: candidate
@@ -37,7 +37,7 @@ signal_owner: "OpenAI"
 watch_reason: "继续看 Frontier 是否披露功能边界、定价方式和企业客户采用案例。"
 
 frontend:
-  displayTitle: "OpenAI 推出 Frontier，争取更多企业客户"
+  displayTitle: "OpenAI推出Frontier，旨在赢得更多企业客户"
   eventLine: "OpenAI 推出面向企业的新平台 Frontier，并把它与既有企业产品组合连接起来。"
   whyWatch: "这条信号说明头部模型公司在从模型订阅走向企业平台和客户份额争夺。"
   businessMeaning: "企业客户会把模型能力、账号治理、合同承诺和容量保障放在同一轮采购里比较。"
@@ -70,7 +70,7 @@ opportunity_signals:
   missing_fields: ["product_form"]
 ---
 
-# OpenAI 推出 Frontier，争取更多企业客户
+# OpenAI推出Frontier，旨在赢得更多企业客户
 
 ## 信号底稿
 

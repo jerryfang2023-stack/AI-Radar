@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"博主 @缪特mt 发文称小米
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "小米 miclaw 率先实现 AI 上岛，澎湃 OS 4 被曝有新交互"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 小米 miclaw 率先实现 AI 上岛，澎湃 OS 4 被曝有新交互

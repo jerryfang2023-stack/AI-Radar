@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"Eighty-eight percent of enterprise 
 theme: enterprise-ai-implementation-signal
 keyword_group: enterprise-ai-implementation-signal
 copyright_note: local research archive only
+title_zh: "88% AI 智能体失败：ServiceNow + Accenture 的 FDE 修复 | THE D[AI]LY BRIEF"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # 88% AI Pilot Failure: ServiceNow + Accenture's FDE Fix | THE D[AI]LY BRIEF

@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-003
 title: "Pit Launches with $16M Led by Andreessen Horowitz to Bring AI-Native Software to Enterprise Operations - Pit"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "Pit完成1600万美元融资，由Andreessen Horowitz领投，将AI原生软件引入企业运营"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://pit.com/press/pit-launches-with-16m"
 canonical_url: "https://pit.com/press/pit-launches-with-16m"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-06T02:21:26.700Z
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Pit Launches with $16M Led by Andreessen Horowitz to Bring AI-Native Software to Enterprise Operations - Pit

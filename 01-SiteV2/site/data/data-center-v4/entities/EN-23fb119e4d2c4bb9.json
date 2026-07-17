@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-17T18:20:10.588Z",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 727,
-    "quarantinedEventCount": 50
+    "eventCount": 818,
+    "quarantinedEventCount": 58
   },
   "entity": {
     "id": "EN-23fb119e4d2c4bb9",
@@ -20,23 +20,43 @@
     "datasetScopes": [
       "canonical"
     ],
-    "eventIds": [],
+    "eventIds": [
+      "EV-44661cdaaa133a6b"
+    ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
-    "firstSeen": "",
-    "lastSeen": "",
+    "firstSeen": "2026-06-11",
+    "lastSeen": "2026-06-12",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
-      "productsServices": [],
+      "productsServices": [
+        "EV-44661cdaaa133a6b"
+      ],
       "hardware": [],
       "organizationPeople": [],
       "other": []
     },
-    "timeline": [],
+    "timeline": [
+      {
+        "id": "EV-44661cdaaa133a6b",
+        "dataDate": "2026-06-12",
+        "date": "2026-06-11",
+        "eventType": "pricing_change",
+        "eventTypeLabel": "定价变更",
+        "eventGroup": "模型、产品与服务",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "追觅Eclix品牌负责人俞雷：AI手机预计2026年9月发布，定价5000元以上",
+        "displayTags": [],
+        "entityIds": [
+          "EN-23fb119e4d2c4bb9"
+        ]
+      }
+    ],
     "viewpoints": []
   },
   "relatedEntities": [],

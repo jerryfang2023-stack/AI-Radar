@@ -2,7 +2,7 @@
 id: SIG-20260616-A01
 type: signal_card
 signal_type: funding
-title: "Blitzy 获得$200M 融资，押注企业 Agent 协作平台"
+title: "Blitzy以14亿美元估值融资2亿美元，用于自主软件开发"
 date: 2026-06-16
 status: published
 source_title: "Blitzy Raises $200M At $1.4B Valuation For Autonomous Software Development"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Blitzy"
 
 frontend:
-  displayTitle: "Blitzy 获得$200M 融资，押注企业 Agent 协作平台"
+  displayTitle: "Blitzy以14亿美元估值融资2亿美元，用于自主软件开发"
   sourceLinks:
     - "https://news.crunchbase.com/ai/blitzy-funding-valuation-autonomous-software-development-vibe-coding-startups/"
 ---
 
-# Blitzy 获得$200M 融资，押注企业 Agent 协作平台
+# Blitzy以14亿美元估值融资2亿美元，用于自主软件开发
 
 ## 新闻事实
 

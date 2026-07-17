@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-021
 title: "Meet WebBrain：开源本地优先的AI浏览器智能体"
 title_zh: "Meet WebBrain：开源本地优先的AI浏览器智能体"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.marktechpost.com/2026/07/02/meet-webbrain-an-open-source-local-first-ai-browser-agent-that-reads-pages-and-automates-tasks-in-chrome-and-firefox"
 canonical_url: "https://marktechpost.com/2026/07/02/meet-webbrain-an-open-source-local-first-ai-browser-agent-that-reads-pages-and-automates-tasks-in-chrome-and-firefox"
 source_name: "MarkTechPost（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-04T04:50:50.167Z
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Meet WebBrain：开源本地优先的AI浏览器智能体

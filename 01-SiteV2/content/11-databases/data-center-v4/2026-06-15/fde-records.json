@@ -1,17 +1,19 @@
 [
   {
-    "fde_id": "FDE-eb03aaf41c7835a6",
-    "event_id": "EV-8c2c856bbb86a479",
+    "fde_id": "FDE-226f304c9cf13a74",
+    "event_id": "EV-029d34e296397775",
     "customer": "Google",
     "vendor": "",
     "industry": "",
-    "use_case": ": The First Natural Language Agent Discovery Platform | AgentMarketCap",
+    "use_case": "The First Natural Language Agent Discovery Platform | AgentMarketCap",
     "workflow_before": "",
     "workflow_after": "",
     "deployment_stage": "announced",
     "delivery_model": "",
     "team_composition": "",
-    "systems_integrated": [],
+    "systems_integrated": [
+      "Google Cloud"
+    ],
     "data_requirements": [],
     "governance_controls": [],
     "timeline": "2026-04-12T00:00:00.000Z",
@@ -19,7 +21,9 @@
     "metric_attribution": "",
     "reported_need": "",
     "reported_delivery_components": [
-      "Google Cloud just made it possible to shop for AI agents the same way you ask a question — in plain English. The new AI Agent Marketplace, integrated directly into Google Cloud Marketplace, lets enterprise teams discover, evaluate, and deploy third-party agents built on the Agent2Agent (A2A) protocol using Gemini-powered natural language search. It is the first major cloud marketplace where the discovery layer itself is agentic."
+      "Google Cloud just made it possible to shop for AI agents the same way you ask a question — in plain English. The new AI Agent Marketplace, integrated directly into Google Cloud Marketplace, lets enterprise teams discover, evaluate, and deploy third-party agents built on the Agent2Agent (A2A) protocol using Gemini-powered natural language search. It is the first major cloud marketplace where the discovery layer itself is agentic.",
+      "For the Google Cloud Agent Marketplace specifically, this means listed agents can leverage MCP for their internal tool integrations while exposing A2A interfaces for inter-agent collaboration. An enterprise team deploying a ServiceNow ITSM agent alongside an Elastic observability agent can orchestrate them through A2A without either agent needing to understand the other's internal MCP tool connections.",
+      "For enterprise teams evaluating agent procurement strategy, the practical recommendation is straightforward: if you are already on Google Cloud, the Agent Marketplace is now the lowest-friction path to deploying third-party agents. If you are multi-cloud, watch for equivalent marketplace offerings from AWS and Azure — both have A2A support, and both have existing marketplace infrastructure that could host similar agent directories."
     ],
     "reported_outcomes": [],
     "undisclosed_fields": [
@@ -30,16 +34,15 @@
       "delivery_model",
       "team_composition",
       "reported_need",
-      "systems_integrated",
       "data_requirements",
       "governance_controls",
       "reported_outcomes"
     ],
     "claim_refs": [
       "CL-2ebf93df3af9a2a5",
-      "CL-8b175094c25209ff",
-      "CL-1073d89dc167d6b0",
-      "CL-9e7cec15171bf226"
+      "CL-73d1a9d8c565a603",
+      "CL-3bb914674bfa9dff",
+      "CL-8b175094c25209ff"
     ],
     "source_refs": [
       "SA-2d89d4eb0c5aa5c9"

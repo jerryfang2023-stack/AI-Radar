@@ -57,6 +57,10 @@ key_excerpts: [{"type":"funding","text":"英伟达正处高级谈判阶段，准
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "消息称英伟达领投：印度 AI 公司 Simplismart 融资 2000 万美元，估值约 1 亿美元"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 消息称英伟达领投：印度 AI 公司 Simplismart 融资 2000 万美元，估值约 1 亿美元

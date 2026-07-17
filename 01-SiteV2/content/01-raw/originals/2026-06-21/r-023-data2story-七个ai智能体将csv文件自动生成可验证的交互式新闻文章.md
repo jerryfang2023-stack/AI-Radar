@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"Data2Story是牛津和斯坦福研究人
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "Data2Story：七个AI智能体将CSV文件自动生成可验证的交互式新闻文章"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Data2Story：七个AI智能体将CSV文件自动生成可验证的交互式新闻文章

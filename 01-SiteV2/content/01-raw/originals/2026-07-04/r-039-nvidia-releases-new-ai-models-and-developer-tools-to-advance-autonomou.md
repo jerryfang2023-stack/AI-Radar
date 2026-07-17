@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-039
 title: "NVIDIA Releases New AI Models and Developer Tools to Advance Autonomous Vehicle Ecosystem"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "NVIDIA 发布新 AI 模型与开发者工具，推动自动驾驶生态系统发展"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://blogs.nvidia.com/blog/autonomous-vehicle-ecosystem-ai-models-developer-tools/"
 canonical_url: "https://blogs.nvidia.com/blog/autonomous-vehicle-ecosystem-ai-models-developer-tools"
 source_name: "NVIDIA AI Blog"
@@ -78,6 +78,7 @@ fact_extraction_completed_at: 2026-07-04T04:35:47.915Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # NVIDIA Releases New AI Models and Developer Tools to Advance Autonomous Vehicle Ecosystem

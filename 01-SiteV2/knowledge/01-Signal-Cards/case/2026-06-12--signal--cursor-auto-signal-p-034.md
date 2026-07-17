@@ -2,7 +2,7 @@
 id: SIG-20260612-A06
 type: signal_card
 signal_type: case
-title: "Cursor 案例：AI 进入模型部署和算力调用"
+title: "Cursor 推出 Auto-review 机制：用分类器智能体动态管控智能体自主权限"
 date: 2026-06-12
 status: published
 source_title: "Cursor 推出 Auto-review 机制：用分类器智能体动态管控智能体自主权限"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Cursor"
 
 frontend:
-  displayTitle: "Cursor 案例：AI 进入模型部署和算力调用"
+  displayTitle: "Cursor 推出 Auto-review 机制：用分类器智能体动态管控智能体自主权限"
   sourceLinks:
     - "https://cursor.com/blog/auto-review"
 ---
 
-# Cursor 案例：AI 进入模型部署和算力调用
+# Cursor 推出 Auto-review 机制：用分类器智能体动态管控智能体自主权限
 
 ## 新闻事实
 

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"workflow_change","text":"Lower total cost of inference b
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Protopia AI 现已登陆 AWS Marketplace"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Protopia AI Now Available on AWS Marketplace

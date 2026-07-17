@@ -2,7 +2,7 @@
 id: SIG-20260702-A09
 type: signal_card
 signal_type: case
-title: "Glean 年经常性收入超过 3 亿美元，企业上下文推动 AI 采用"
+title: "Glean年化经常性收入突破3亿美元：无与伦比的企业上下文推动AI应用 | AP新闻"
 date: 2026-07-02
 status: published
 source_title: "Glean Surpasses $300M ARR: Unrivaled Enterprise Context Fuels AI Adoption | AP News"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Glean"
 
 frontend:
-  displayTitle: "Glean 年经常性收入超过 3 亿美元，企业上下文推动 AI 采用"
+  displayTitle: "Glean年化经常性收入突破3亿美元：无与伦比的企业上下文推动AI应用 | AP新闻"
   sourceLinks:
     - "https://apnews.com/press-release/business-wire/glean-surpasses-300m-arr-unrivaled-enterprise-context-fuels-ai-adoption-9a46bde83507422aa6138d75d2aa2995"
 ---
 
-# Glean 年经常性收入超过 3 亿美元，企业上下文推动 AI 采用
+# Glean年化经常性收入突破3亿美元：无与伦比的企业上下文推动AI应用 | AP新闻
 
 ## 新闻事实
 

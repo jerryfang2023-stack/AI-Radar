@@ -2,7 +2,7 @@
 id: SIG-20260606-A12
 type: signal_card
 signal_type: case
-title: "GitHub Copilot app: The agent-native desktop experience - The GitHub Blog"
+title: "GitHub Copilot 应用：原生代理桌面体验 - GitHub 博客"
 date: 2026-06-06
 status: published
 source_title: "GitHub Copilot app: The agent-native desktop experience - The GitHub Blog"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "GitHub Copilot app"
 
 frontend:
-  displayTitle: "GitHub Copilot app: The agent-native desktop experience - The GitHub Blog"
+  displayTitle: "GitHub Copilot 应用：原生代理桌面体验 - GitHub 博客"
   sourceLinks:
     - "https://github.blog/news-insights/product-news/github-copilot-app-the-agent-native-desktop-experience/"
 ---
 
-# GitHub Copilot app: The agent-native desktop experience - The GitHub Blog
+# GitHub Copilot 应用：原生代理桌面体验 - GitHub 博客
 
 ## 新闻事实
 

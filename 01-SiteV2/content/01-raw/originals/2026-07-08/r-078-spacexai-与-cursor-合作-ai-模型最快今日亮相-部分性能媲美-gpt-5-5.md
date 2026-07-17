@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-078
 title: "SpaceXAI 与 Cursor 合作 AI 模型最快今日亮相，部分性能媲美 GPT-5.5"
 title_zh: "SpaceXAI 与 Cursor 合作 AI 模型最快今日亮相，部分性能媲美 GPT-5.5"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/973/847.htm"
 canonical_url: "https://ithome.com/0/973/847.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-08T04:39:26.042Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # SpaceXAI 与 Cursor 合作 AI 模型最快今日亮相，部分性能媲美 GPT-5.5

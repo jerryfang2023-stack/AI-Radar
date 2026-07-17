@@ -72,6 +72,10 @@ key_excerpts: [{"type":"company_action","text":"Over 100 companies and governmen
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_zh: "特朗普政府发布Anthropic Mythos，供超过100家美国企业和机构使用"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Trump Admin releases Anthropic Mythos to be used by more than 100 US companies, agencies

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"A married founder duo's company, 14
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "一对夫妻创始人创立的公司14.ai正在取代客户..."
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # A married founder duo's company, 14.ai, is replacing customer ...

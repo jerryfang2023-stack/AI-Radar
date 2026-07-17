@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-018
 title: "General Analysis raises $10M to build the security arsenal for the agentic era | General Analysis"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "General Analysis 融资1000万美元，打造代理时代的安全武器库"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://generalanalysis.com/blog/general-analysis-raises-10m"
 canonical_url: "https://generalanalysis.com/blog/general-analysis-raises-10m"
 source_name: "keyword search / Anysearch"
@@ -78,6 +78,7 @@ fact_extraction_completed_at: 2026-07-03T01:59:31.120Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # General Analysis raises $10M to build the security arsenal for the agentic era | General Analysis

@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-026
 title: "Would you host part of an AI data center in your home?"
-title_zh: "您是否会在家中托管人工智能数据中心的一部分？"
-title_translation_status: translated
-title_translation_method: mymemory_title_translation
+title_zh: "你愿意在家托管部分AI数据中心吗？"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.theverge.com/ai-artificial-intelligence/963930/sunrun-distributed-ai-data-center"
 canonical_url: "https://theverge.com/ai-artificial-intelligence/963930/sunrun-distributed-ai-data-center"
 source_name: "The Verge AI"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-11T04:06:35.263Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Would you host part of an AI data center in your home?

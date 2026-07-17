@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"OpenAI 为 macOS 版 Codex 新�
 theme: outside-core-exploration
 keyword_group: outside-core-exploration
 copyright_note: local research archive only
+title_zh: "OpenAI 为 macOS 版 Codex 推出 Record & Replay 功能"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # OpenAI 为 macOS 版 Codex 推出 Record & Replay 功能

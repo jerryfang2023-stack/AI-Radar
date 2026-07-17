@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-002
 title: "OpenAI 研究员 Miles Wang 将离职创办 AI 药物发现初创公司，估值 20 亿美元"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "OpenAI 研究员 Miles Wang 将离职创办 AI 药物发现初创公司，估值 20 亿美元"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://techcrunch.com/2026/07/14/openai-researcher-miles-wang-in-talks-to-launch-ai-drug-discovery-startup-valued-at-2b"
 canonical_url: "https://techcrunch.com/2026/07/14/openai-researcher-miles-wang-in-talks-to-launch-ai-drug-discovery-startup-valued-at-2b"
 source_name: "TechCrunch：AI（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-15T04:28:37.529Z
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # OpenAI 研究员 Miles Wang 将离职创办 AI 药物发现初创公司，估值 20 亿美元

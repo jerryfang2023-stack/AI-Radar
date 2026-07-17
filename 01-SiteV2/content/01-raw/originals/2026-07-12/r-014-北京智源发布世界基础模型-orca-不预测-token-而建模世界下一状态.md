@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-014
 title: "北京智源发布世界基础模型 Orca，不预测 token 而建模世界下一状态"
 title_zh: "北京智源发布世界基础模型 Orca，不预测 token 而建模世界下一状态"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://the-decoder.com/chinas-orca-world-model-matches-specialized-robotics-systems-without-ever-seeing-a-single-action-label"
 canonical_url: "https://the-decoder.com/chinas-orca-world-model-matches-specialized-robotics-systems-without-ever-seeing-a-single-action-label"
 source_name: "The Decoder：AI News（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-12T09:55:27.343Z
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 北京智源发布世界基础模型 Orca，不预测 token 而建模世界下一状态

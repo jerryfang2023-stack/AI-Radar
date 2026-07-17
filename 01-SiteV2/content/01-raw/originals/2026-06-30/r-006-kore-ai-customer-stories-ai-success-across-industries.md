@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"AMD partnered with Kore.ai to trans
 theme: enterprise-ai-implementation-signal
 keyword_group: enterprise-ai-implementation-signal
 copyright_note: local research archive only
+title_zh: "Kore.ai客户案例：AI在各行业的成功应用"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Kore.ai Customer Stories – AI Success Across Industries

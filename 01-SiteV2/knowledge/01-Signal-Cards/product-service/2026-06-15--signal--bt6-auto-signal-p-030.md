@@ -2,7 +2,7 @@
 id: SIG-20260615-A09
 type: signal_card
 signal_type: product_service
-title: "BT6 发布 AI 基础设施能力，切入模型部署和算力服务"
+title: "⚡️越狱AGI：解放者普林尼与约翰·V谈红队测试、BT6与AI安全未来"
 date: 2026-06-15
 status: published
 source_title: "Jailbreaking AGI: Pliny the Liberator &amp; John V on Red Teaming, BT6, and the Future of AI Security"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "BT6"
 
 frontend:
-  displayTitle: "BT6 发布 AI 基础设施能力，切入模型部署和算力服务"
+  displayTitle: "⚡️越狱AGI：解放者普林尼与约翰·V谈红队测试、BT6与AI安全未来"
   sourceLinks:
     - "https://www.latent.space/p/jailbreaking-agi-pliny-the-liberator"
 ---
 
-# BT6 发布 AI 基础设施能力，切入模型部署和算力服务
+# ⚡️越狱AGI：解放者普林尼与约翰·V谈红队测试、BT6与AI安全未来
 
 ## 新闻事实
 

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"Netflix 高级工程师 Tejas Chopra 开
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "开源工具 Headroom 爆火：Netflix 工程师打造，声称可节省 60%-95% Token 消耗量"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 开源工具 Headroom 爆火：Netflix 工程师打造，声称可节省 60%-95% Token 消耗量

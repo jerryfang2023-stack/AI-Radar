@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"法国AI初创公司Mistral AI正在谈
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "Mistral AI 寻求30亿欧元融资以推动欧洲AI发展"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Mistral AI 寻求30亿欧元融资以推动欧洲AI发展

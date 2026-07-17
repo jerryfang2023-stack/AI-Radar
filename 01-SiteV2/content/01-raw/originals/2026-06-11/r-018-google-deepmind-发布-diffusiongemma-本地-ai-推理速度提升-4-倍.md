@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"Google DeepMind 发布 DiffusionGemma，
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Google DeepMind 发布 DiffusionGemma，本地 AI 推理速度提升 4 倍"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Google DeepMind 发布 DiffusionGemma，本地 AI 推理速度提升 4 倍

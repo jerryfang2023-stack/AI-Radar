@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-060
 title: "$130M Series A to Build the Open Superintelligence Stack"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "1.3亿美元A轮融资，打造开放超级智能堆栈"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.primeintellect.ai/blog/series-a"
 canonical_url: "https://primeintellect.ai/blog/series-a"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-09T03:05:45.140Z
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # $130M Series A to Build the Open Superintelligence Stack

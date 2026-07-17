@@ -2,7 +2,7 @@
 id: SIG-20260629-A18
 type: signal_card
 signal_type: case
-title: "Stripe 金融合规生产级 AI Agent 经验"
+title: "金融合规的生产级AI代理：来自Stripe的经验教训 | 人工智能"
 date: 2026-06-29
 status: published
 source_title: "Production-grade AI agents for financial compliance: Lessons from Stripe | Artificial Intelligence"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "Production"
 
 frontend:
-  displayTitle: "Stripe 金融合规生产级 AI Agent 经验"
+  displayTitle: "金融合规的生产级AI代理：来自Stripe的经验教训 | 人工智能"
   sourceLinks:
     - "https://aws.amazon.com/blogs/machine-learning/production-grade-ai-agents-for-financial-compliance-lessons-from-stripe/"
 ---
 
-# Stripe 金融合规生产级 AI Agent 经验
+# 金融合规的生产级AI代理：来自Stripe的经验教训 | 人工智能
 
 ## 新闻事实
 

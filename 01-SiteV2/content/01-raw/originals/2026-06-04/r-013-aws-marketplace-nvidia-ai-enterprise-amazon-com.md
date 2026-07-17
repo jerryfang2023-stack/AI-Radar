@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"NVIDIA AI Enterprise is an end-to-e
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "AWS 市场：NVIDIA AI Enterprise - Amazon.com"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # AWS Marketplace: NVIDIA AI Enterprise - Amazon.com

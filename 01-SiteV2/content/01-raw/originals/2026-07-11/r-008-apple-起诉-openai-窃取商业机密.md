@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-008
 title: "Apple 起诉 OpenAI 窃取商业机密"
 title_zh: "Apple 起诉 OpenAI 窃取商业机密"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://techcrunch.com/2026/07/10/apple-sues-openai-over-alleged-trade-secret-theft"
 canonical_url: "https://techcrunch.com/2026/07/10/apple-sues-openai-over-alleged-trade-secret-theft"
 source_name: "TechCrunch：AI（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-11T04:06:31.359Z
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Apple 起诉 OpenAI 窃取商业机密

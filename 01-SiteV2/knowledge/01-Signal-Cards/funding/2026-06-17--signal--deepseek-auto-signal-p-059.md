@@ -2,7 +2,7 @@
 id: SIG-20260617-A03
 type: signal_card
 signal_type: funding
-title: "DeepSeek 获得$50 b 融资，押注模型部署和算力服务"
+title: "DeepSeek 完成首轮外部融资，估值超 500 亿美元"
 date: 2026-06-17
 status: published
 source_title: "DeepSeek 完成首轮外部融资，估值超 500 亿美元"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "DeepSeek"
 
 frontend:
-  displayTitle: "DeepSeek 获得$50 b 融资，押注模型部署和算力服务"
+  displayTitle: "DeepSeek 完成首轮外部融资，估值超 500 亿美元"
   sourceLinks:
     - "https://the-decoder.com/deepseek-takes-outside-money-for-the-first-time-at-a-50-billion-valuation"
 ---
 
-# DeepSeek 获得$50 b 融资，押注模型部署和算力服务
+# DeepSeek 完成首轮外部融资，估值超 500 亿美元
 
 ## 新闻事实
 

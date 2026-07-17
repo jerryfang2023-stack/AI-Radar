@@ -2,7 +2,7 @@
 id: SIG-20260621-A06
 type: signal_card
 signal_type: product_service
-title: "The Case for VM and Container Consolidation in 2026"
+title: "2026年虚拟机与容器整合的案例"
 date: 2026-06-21
 status: published
 source_title: "The Case for VM and Container Consolidation in 2026"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Tigera"
 
 frontend:
-  displayTitle: "The Case for VM and Container Consolidation in 2026"
+  displayTitle: "2026年虚拟机与容器整合的案例"
   sourceLinks:
     - "https://www.tigera.io/blog/the-case-for-vm-and-container-consolidation-in-2026/"
 ---
 
-# The Case for VM and Container Consolidation in 2026
+# 2026年虚拟机与容器整合的案例
 
 ## 新闻事实
 

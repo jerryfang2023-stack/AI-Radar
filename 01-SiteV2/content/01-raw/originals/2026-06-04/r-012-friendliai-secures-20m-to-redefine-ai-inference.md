@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"FriendliAI leads this shift with a cutti
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "FriendliAI获2000万美元融资，重新定义AI推理"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # FriendliAI Secures $20M to Redefine AI Inference

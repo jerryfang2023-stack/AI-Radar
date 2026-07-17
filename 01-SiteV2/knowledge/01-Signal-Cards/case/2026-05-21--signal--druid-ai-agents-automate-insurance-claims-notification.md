@@ -2,7 +2,7 @@
 id: SIG-20260521-06
 type: signal_card
 signal_type: case
-title: "欧洲保险公司部署 Druid AI Agent 处理理赔通知"
+title: "欧洲顶级保险公司借助Druid AI代理加速理赔通知"
 date: 2026-05-21
 status: draft
 asset_level: candidate
@@ -37,7 +37,7 @@ signal_owner: "Druid AI"
 watch_reason: "继续看保险客户是否披露规模、节省人力或合规复核安排。"
 
 frontend:
-  displayTitle: "欧洲保险公司部署 Druid AI Agent 处理理赔通知"
+  displayTitle: "欧洲顶级保险公司借助Druid AI代理加速理赔通知"
   eventLine: "Druid AI 案例显示，欧洲保险公司用 AI Agent 处理理赔通知和顾问分配流程。"
   whyWatch: "理赔通知是保险运营里的高频流程，适合观察 AI Agent 是否降低人工流转。"
   businessMeaning: "影响的是理赔处理、客户响应、销售顾问路由和后台系统录入。"
@@ -71,7 +71,7 @@ opportunity_signals:
   missing_fields: ["delivery_model"]
 ---
 
-# 欧洲保险公司部署 Druid AI Agent 处理理赔通知
+# 欧洲顶级保险公司借助Druid AI代理加速理赔通知
 
 ## 信号底稿
 

@@ -2,7 +2,7 @@
 id: SIG-20260625-A17
 type: signal_card
 signal_type: product_service
-title: "Agentbase"
+title: "Agentbase | 面向开发者的无服务器智能体平台"
 date: 2026-06-25
 status: published
 source_title: "Agentbase | Serverless Agent Platform for Developers"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Agentbase"
 
 frontend:
-  displayTitle: "Agentbase"
+  displayTitle: "Agentbase | 面向开发者的无服务器智能体平台"
   sourceLinks:
     - "https://www.agentbase.sh/changelog"
 ---
 
-# Agentbase
+# Agentbase | 面向开发者的无服务器智能体平台
 
 ## 新闻事实
 

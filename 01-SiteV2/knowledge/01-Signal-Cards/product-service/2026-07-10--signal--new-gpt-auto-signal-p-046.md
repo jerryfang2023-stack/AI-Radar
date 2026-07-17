@@ -2,7 +2,7 @@
 id: SIG-20260710-A21
 type: signal_card
 signal_type: product_service
-title: "全新GPT-5.6系列： Luna、Terra、Sol"
+title: "新的GPT-5.6系列：Luna、Terra、Sol"
 date: 2026-07-10
 status: published
 source_title: "The new GPT-5.6 family: Luna, Terra, Sol"
@@ -57,12 +57,12 @@ opportunity_signals:
 signal_owner: "new GPT"
 
 frontend:
-  displayTitle: "全新GPT-5.6系列： Luna、Terra、Sol"
+  displayTitle: "新的GPT-5.6系列：Luna、Terra、Sol"
   sourceLinks:
     - "https://simonwillison.net/2026/Jul/9/gpt-5-6/#atom-everything"
 ---
 
-# 全新GPT-5.6系列： Luna、Terra、Sol
+# 新的GPT-5.6系列：Luna、Terra、Sol
 
 ## 新闻事实
 

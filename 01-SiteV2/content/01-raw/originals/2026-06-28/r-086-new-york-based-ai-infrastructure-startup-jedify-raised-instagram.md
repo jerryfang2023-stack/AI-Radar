@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Three founders just solved AI's biggest
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only
+title_zh: "总部位于纽约的AI基础设施初创公司Jedify在Instagram上筹集了..."
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # New York-based AI infrastructure startup Jedify raised ... - Instagram

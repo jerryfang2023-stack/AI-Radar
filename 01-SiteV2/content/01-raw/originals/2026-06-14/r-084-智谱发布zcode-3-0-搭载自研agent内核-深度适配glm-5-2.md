@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"智谱今日推出AI编程工具ZCode 3.
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "智谱发布ZCode 3.0：搭载自研Agent内核，深度适配GLM-5.2"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 智谱发布ZCode 3.0：搭载自研Agent内核，深度适配GLM-5.2

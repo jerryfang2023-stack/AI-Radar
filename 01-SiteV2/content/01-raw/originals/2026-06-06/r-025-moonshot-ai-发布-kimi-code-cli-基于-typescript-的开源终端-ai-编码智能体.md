@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"Kimi Code CLI 是 Moonshot AI �
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Moonshot AI 发布 Kimi Code CLI：基于 TypeScript 的开源终端 AI 编码智能体"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Moonshot AI 发布 Kimi Code CLI：基于 TypeScript 的开源终端 AI 编码智能体

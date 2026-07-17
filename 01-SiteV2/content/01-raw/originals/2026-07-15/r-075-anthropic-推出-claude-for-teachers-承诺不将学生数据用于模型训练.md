@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-075
 title: "Anthropic 推出 Claude for Teachers，承诺不将学生数据用于模型训练"
 title_zh: "Anthropic 推出 Claude for Teachers，承诺不将学生数据用于模型训练"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://the-decoder.com/anthropic-opens-claude-for-teachers-with-a-promise-not-to-train-models-on-student-data"
 canonical_url: "https://the-decoder.com/anthropic-opens-claude-for-teachers-with-a-promise-not-to-train-models-on-student-data"
 source_name: "The Decoder：AI News（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-15T04:28:38.046Z
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Anthropic 推出 Claude for Teachers，承诺不将学生数据用于模型训练

@@ -5,7 +5,9 @@
     "event_time": "2026-07-02T18:44:02.000Z",
     "disclosed_at": "2026-07-02T18:44:02.000Z",
     "entities": [
+      "EN-2df4d39c248116dc",
       "EN-ea3bd73e2b506e00",
+      "EN-96eebba49dbbf422",
       "EN-bbdefa2950f49882"
     ],
     "action": "推出",
@@ -30,7 +32,7 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-4c0e7025692ab98c",
+    "event_id": "EV-7e52d691a0553667",
     "display_title_zh": "Meta悄然推出vibe-coded游戏应用Pocket"
   },
   {
@@ -39,14 +41,22 @@
     "event_time": "2026-07-02T13:53:00.000Z",
     "disclosed_at": "2026-07-02T13:53:00.000Z",
     "entities": [
-      "EN-9fbf261b62c1d7c0"
+      "EN-9fbf261b62c1d7c0",
+      "EN-cbc62794911ff31b",
+      "EN-7d3194f79e645c42",
+      "EN-c70eca6b0f88f44d",
+      "EN-4d748ebd71af03a7"
     ],
     "action": "部署",
     "object": "公司，投入25亿美元",
-    "metrics": [],
+    "metrics": [
+      "$1 billion"
+    ],
     "locations": [],
     "claim_refs": [
-      "CL-bf1895460dba3240"
+      "CL-bf1895460dba3240",
+      "CL-7f51040e45fca777",
+      "CL-e4bdd3c2b84aada6"
     ],
     "source_refs": [
       "SA-e94393958a88bbef"
@@ -71,6 +81,7 @@
     "disclosed_at": "2026-07-02T18:31:09.000Z",
     "entities": [
       "EN-c70eca6b0f88f44d",
+      "EN-f9ac519ffef9058f",
       "EN-968e2d5b08687bf4",
       "EN-bbdefa2950f49882",
       "EN-cbc62794911ff31b",
@@ -82,7 +93,9 @@
     "locations": [],
     "claim_refs": [
       "CL-333f401c6ab2ae9f",
-      "CL-8391abb623f3be4c"
+      "CL-8391abb623f3be4c",
+      "CL-56c99a19783adaa4",
+      "CL-ec9a12a611300175"
     ],
     "source_refs": [
       "SA-d60a7482c4c7a18b"
@@ -103,114 +116,12 @@
     "display_title_zh": "Anthropic 与三星洽谈定制芯片合作"
   },
   {
-    "event_type": "product_release",
-    "event_status": "announced",
-    "event_time": "2026-07-02T18:03:22.345Z",
-    "disclosed_at": "2026-07-02T18:03:22.345Z",
-    "entities": [
-      "EN-c70eca6b0f88f44d"
-    ],
-    "action": "新增",
-    "object": "用量与成本分析及支出管控功能",
-    "metrics": [
-      "4%"
-    ],
-    "locations": [],
-    "claim_refs": [
-      "CL-0f229889cb8a2db0",
-      "CL-c44cd6808795d14a"
-    ],
-    "source_refs": [
-      "SA-53e04cfbc5ee7164"
-    ],
-    "conflicts": [],
-    "missing_fields": [],
-    "update_history": [
-      {
-        "source_ref": "SA-53e04cfbc5ee7164",
-        "disclosed_at": "2026-07-02T18:03:22.345Z",
-        "status": "announced"
-      }
-    ],
-    "publication_status": "verified",
-    "event_id": "EV-9ab36b0012b5c8c1",
-    "display_title_zh": "Claude Enterprise 新增用量与成本分析及支出管控功能"
-  },
-  {
-    "event_type": "product_release",
-    "event_status": "completed",
-    "event_time": "2026-07-02T23:35:18.000Z",
-    "disclosed_at": "2026-07-02T23:35:18.000Z",
-    "entities": [
-      "EN-c70eca6b0f88f44d"
-    ],
-    "action": "发布",
-    "object": "Claude Code v2.1.199 发布",
-    "metrics": [],
-    "locations": [],
-    "claim_refs": [
-      "CL-2672d972a920b4de"
-    ],
-    "source_refs": [
-      "SA-450dce4efbd432b8"
-    ],
-    "conflicts": [],
-    "missing_fields": [
-      "object"
-    ],
-    "update_history": [
-      {
-        "source_ref": "SA-450dce4efbd432b8",
-        "disclosed_at": "2026-07-02T23:35:18.000Z",
-        "status": "completed"
-      }
-    ],
-    "publication_status": "verified",
-    "event_id": "EV-eb02b3d3b25fe584",
-    "display_title_zh": "Claude Code v2.1.199 发布"
-  },
-  {
-    "event_type": "product_release",
-    "event_status": "completed",
-    "event_time": "2026-07-02T08:24:53.347Z",
-    "disclosed_at": "2026-07-02T08:24:53.347Z",
-    "entities": [
-      "EN-9fbf261b62c1d7c0"
-    ],
-    "action": "发布",
-    "object": "Kimi K2.7 Code 已在 GitHub Copilot 上正式发布",
-    "metrics": [],
-    "locations": [],
-    "claim_refs": [
-      "CL-3a9df8f0c1928e2a",
-      "CL-45e4ccd26c2e2580",
-      "CL-0364e398fbf94933",
-      "CL-0348a57a95d4673c"
-    ],
-    "source_refs": [
-      "SA-dc970b2cdad0cdae"
-    ],
-    "conflicts": [],
-    "missing_fields": [
-      "object"
-    ],
-    "update_history": [
-      {
-        "source_ref": "SA-dc970b2cdad0cdae",
-        "disclosed_at": "2026-07-02T08:24:53.347Z",
-        "status": "completed"
-      }
-    ],
-    "publication_status": "verified",
-    "event_id": "EV-6dbf6cfbb35fe77c",
-    "display_title_zh": "Kimi K2.7 Code 已在 GitHub Copilot 上正式发布"
-  },
-  {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "",
     "disclosed_at": "2026-07-03T01:59:31.112Z",
     "entities": [
+      "EN-7106dbc04a08ce3a",
       "EN-3ccbd9105a45d8fc"
     ],
     "action": "raises",
@@ -230,21 +141,24 @@
       "SA-5c97c976507644a9"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time",
+      "display_title_zh"
+    ],
     "update_history": [
       {
         "source_ref": "SA-5c97c976507644a9",
         "disclosed_at": "2026-07-03T01:59:31.112Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-a1e3aeedc80c61b9",
-    "display_title_zh": "Salesforce 完成 1.35 亿美元 A 轮融资"
+    "event_id": "EV-9300044a58395552",
+    "display_title_zh": ""
   },
   {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "",
     "disclosed_at": "2026-07-03T01:59:31.120Z",
     "entities": [
@@ -266,24 +180,27 @@
       "SA-7575e285f5b3ad9d"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-7575e285f5b3ad9d",
         "disclosed_at": "2026-07-03T01:59:31.120Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
     "event_id": "EV-61546e58c0e669e7",
-    "display_title_zh": "General Analysis 完成 1000 万美元 种子轮融资"
+    "display_title_zh": "General Analysis 融资1000万美元，打造代理时代的安全武器库"
   },
   {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "",
     "disclosed_at": "2026-07-03T01:59:31.151Z",
     "entities": [
+      "EN-86c8e13e5821183d",
       "EN-4dbe391b8fcf977a",
       "EN-c70eca6b0f88f44d"
     ],
@@ -304,17 +221,20 @@
       "SA-3d513f23591975c8"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time",
+      "display_title_zh"
+    ],
     "update_history": [
       {
         "source_ref": "SA-3d513f23591975c8",
         "disclosed_at": "2026-07-03T01:59:31.151Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-6fe0054517fdee98",
-    "display_title_zh": "ZTE 完成 850 美元融资"
+    "event_id": "EV-4b8064b1139e1724",
+    "display_title_zh": ""
   },
   {
     "event_type": "product_release",
@@ -322,7 +242,8 @@
     "event_time": "",
     "disclosed_at": "2026-07-03T01:59:31.171Z",
     "entities": [
-      "EN-9fbf261b62c1d7c0"
+      "EN-9fbf261b62c1d7c0",
+      "EN-cf49fab26fe3c4a1"
     ],
     "action": "launches",
     "object": ", and top sessions",
@@ -338,7 +259,9 @@
       "SA-06f20c425772ebf4"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-06f20c425772ebf4",
@@ -348,7 +271,79 @@
     ],
     "publication_status": "verified",
     "event_id": "EV-7309586168387ad8",
-    "display_title_zh": "Microsoft 发布"
+    "display_title_zh": "微软Build 2026回顾：愿景、发布及热门会议"
+  },
+  {
+    "event_type": "product_release",
+    "event_status": "planned",
+    "event_time": "2026-07-02T06:29:12.000Z",
+    "disclosed_at": "2026-07-02T06:29:12.000Z",
+    "entities": [
+      "EN-047364b9be67f665",
+      "EN-09c344df70df9660",
+      "EN-1725c58362aadc2a"
+    ],
+    "action": "product_release",
+    "object": "阿里拟整合 QoderWork、悟空、MuleRun 三大 Agent 产品，现有用户权益不受影响",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-f2d4b04a0a1dd78d",
+      "CL-987b6b91845064eb",
+      "CL-b28fcafff0a14b4d",
+      "CL-404e2f09a3ef7471"
+    ],
+    "source_refs": [
+      "SA-ad7f82e7efdb1cd7"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-ad7f82e7efdb1cd7",
+        "disclosed_at": "2026-07-02T06:29:12.000Z",
+        "status": "planned"
+      }
+    ],
+    "publication_status": "partial",
+    "event_id": "EV-333851b077b606c8",
+    "display_title_zh": "阿里拟整合 QoderWork、悟空、MuleRun 三大 Agent 产品，现有用户权益不受影响"
+  },
+  {
+    "event_type": "product_release",
+    "event_status": "planned",
+    "event_time": "2026-07-02T13:59:49.000Z",
+    "disclosed_at": "2026-07-02T13:59:49.000Z",
+    "entities": [
+      "EN-c70eca6b0f88f44d",
+      "EN-7d3194f79e645c42",
+      "EN-968e2d5b08687bf4"
+    ],
+    "action": "product_release",
+    "object": "Anthropic 启动自研 AI 芯片早期开发，拟采用三星 2 纳米工艺",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-68243ebe74f232f1",
+      "CL-d47fdf5c02372d92",
+      "CL-06c4b41465e3b8d9",
+      "CL-c1748e06a3757b55"
+    ],
+    "source_refs": [
+      "SA-90fb9b3643564a63"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-90fb9b3643564a63",
+        "disclosed_at": "2026-07-02T13:59:49.000Z",
+        "status": "planned"
+      }
+    ],
+    "publication_status": "partial",
+    "event_id": "EV-9ca7db66f8f10b63",
+    "display_title_zh": "Anthropic 启动自研 AI 芯片早期开发，拟采用三星 2 纳米工艺"
   },
   {
     "event_type": "product_release",
@@ -362,10 +357,14 @@
     "object": "物理 AI 国家战略，剑指全球领军地位",
     "metrics": [],
     "locations": [
+      "美国",
+      "中国",
       "韩国"
     ],
     "claim_refs": [
-      "CL-0fdc56554f30141d"
+      "CL-0fdc56554f30141d",
+      "CL-7a95f8348c0fd961",
+      "CL-db6fba01ea36ee18"
     ],
     "source_refs": [
       "SA-399415a952c7c476"
@@ -389,14 +388,21 @@
     "event_time": "2026-07-02T13:29:00.000Z",
     "disclosed_at": "2026-07-02T13:29:00.000Z",
     "entities": [
-      "EN-9fbf261b62c1d7c0"
+      "EN-9fbf261b62c1d7c0",
+      "EN-8d4321d936320802",
+      "EN-c70eca6b0f88f44d",
+      "EN-7d3194f79e645c42"
     ],
     "action": "落地",
     "object": "人工智能技术",
-    "metrics": [],
+    "metrics": [
+      "10 亿"
+    ],
     "locations": [],
     "claim_refs": [
-      "CL-9c37e0460540cba0"
+      "CL-9c37e0460540cba0",
+      "CL-c93332c0caae50ea",
+      "CL-9bae2921945a23b6"
     ],
     "source_refs": [
       "SA-89e8a79d62e1feb1"
@@ -420,7 +426,8 @@
     "event_time": "2026-07-02T11:57:24.000Z",
     "disclosed_at": "2026-07-02T11:57:24.000Z",
     "entities": [
-      "EN-8d4321d936320802"
+      "EN-8d4321d936320802",
+      "EN-60094bcf5292c490"
     ],
     "action": "推出",
     "object": "全新扶持计划，以收益分成模式助力 AI 初创企业获取算力",
@@ -429,8 +436,7 @@
     "claim_refs": [
       "CL-988abe5bfca88fc2",
       "CL-cf8f5b4446e54421",
-      "CL-15271662abb66d57",
-      "CL-fc1e41acf536fb28"
+      "CL-15271662abb66d57"
     ],
     "source_refs": [
       "SA-108a558651e36737"
@@ -449,15 +455,16 @@
     "display_title_zh": "英伟达推出全新扶持计划，以收益分成模式助力 AI 初创企业获取算力"
   },
   {
-    "event_type": "deployment",
+    "event_type": "product_release",
     "event_status": "planned",
     "event_time": "2026-07-02T06:33:47.000Z",
     "disclosed_at": "2026-07-02T06:33:47.000Z",
     "entities": [
+      "EN-2cc8d30260b8f155",
       "EN-047364b9be67f665"
     ],
-    "action": "上线",
-    "object": "夜间计划，每晚 22：00 后用 Qwen3.7-Max AI 工具最低 2 折",
+    "action": "上线夜间计划，每晚 22：00 后用 Qwen3.7-Max AI 工具",
+    "object": "最低 2 折",
     "metrics": [],
     "locations": [],
     "claim_refs": [
@@ -479,33 +486,33 @@
       }
     ],
     "publication_status": "partial",
-    "event_id": "EV-341e9759d2cd90f7",
+    "event_id": "EV-6712f8ac1f00fe85",
     "display_title_zh": "阿里云秒悟 Meoo 上线夜间计划，每晚 22：00 后用 Qwen3.7-Max AI 工具最低 2 折"
   },
   {
-    "event_type": "deployment",
+    "event_type": "product_release",
     "event_status": "completed",
     "event_time": "2026-07-02T02:32:01.000Z",
     "disclosed_at": "2026-07-02T02:32:01.000Z",
-    "entities": [],
-    "action": "部署",
-    "object": "华擎推出 ASRock Claw Quickset 桌面工具，可简化本地 AI 环境部署",
+    "entities": [
+      "EN-bdedcf7e3b01508b",
+      "EN-aa70ef0a3cae0638"
+    ],
+    "action": "推出",
+    "object": "ASRock Claw Quickset 桌面工具，可简化本地 AI 环境部署",
     "metrics": [],
     "locations": [],
     "claim_refs": [
       "CL-97c9b12f91823925",
       "CL-a6b0029076353c91",
-      "CL-ac07ae7e0a512ce2",
-      "CL-c2c7c8ff32f2ac29"
+      "CL-767c6e27f18d910a",
+      "CL-ac07ae7e0a512ce2"
     ],
     "source_refs": [
       "SA-e34661d9af24967b"
     ],
     "conflicts": [],
-    "missing_fields": [
-      "entities",
-      "object"
-    ],
+    "missing_fields": [],
     "update_history": [
       {
         "source_ref": "SA-e34661d9af24967b",
@@ -514,7 +521,7 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-aebfc17061e968f9",
+    "event_id": "EV-130460e1ff74d191",
     "display_title_zh": "华擎推出 ASRock Claw Quickset 桌面工具，可简化本地 AI 环境部署"
   }
 ]

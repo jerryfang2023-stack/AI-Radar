@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"Take a pilot that stalled in handof
 theme: enterprise-ai-implementation-signal
 keyword_group: enterprise-ai-implementation-signal
 copyright_note: local research archive only
+title_zh: "应用人工智能 - 未来工程"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Applied AI Intelligence - Future Works

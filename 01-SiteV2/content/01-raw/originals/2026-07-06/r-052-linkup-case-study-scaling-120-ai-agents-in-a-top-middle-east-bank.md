@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-052
 title: "Linkup - Case study: scaling 120+ AI agents in a top Middle East bank"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "Linkup - 案例研究：在中东一家顶级银行部署120多个AI代理"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.linkup.so/case-studies/how-a-leading-middle-east-bank-powers-ai-agents-with-linkup"
 canonical_url: "https://linkup.so/case-studies/how-a-leading-middle-east-bank-powers-ai-agents-with-linkup"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-06T02:21:27.024Z
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Linkup - Case study: scaling 120+ AI agents in a top Middle East bank

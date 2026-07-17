@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-056
 title: "Mistral AI 开源模型 Leanstral 1.5 专为 Lean 4 形式化验证设计"
 title_zh: "Mistral AI 开源模型 Leanstral 1.5 专为 Lean 4 形式化验证设计"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://the-decoder.com/mistrals-open-source-leanstral-1-5-aces-formal-math-benchmarks-and-catches-real-bugs-in-code"
 canonical_url: "https://the-decoder.com/mistrals-open-source-leanstral-1-5-aces-formal-math-benchmarks-and-catches-real-bugs-in-code"
 source_name: "The Decoder：AI News（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-05T04:56:15.432Z
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Mistral AI 开源模型 Leanstral 1.5 专为 Lean 4 形式化验证设计

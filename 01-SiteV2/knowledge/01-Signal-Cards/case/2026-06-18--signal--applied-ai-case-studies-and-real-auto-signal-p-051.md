@@ -2,7 +2,7 @@
 id: SIG-20260618-A05
 type: signal_card
 signal_type: case
-title: "Applied AI Case Studies and Real-World Success Stories"
+title: "Applied AI案例研究与实际成功故事 | GoGloby"
 date: 2026-06-18
 status: published
 source_title: "Applied AI Case Studies and Real-World Success Stories | GoGloby"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "Applied AI Case Studies and Real"
 
 frontend:
-  displayTitle: "Applied AI Case Studies and Real-World Success Stories"
+  displayTitle: "Applied AI案例研究与实际成功故事 | GoGloby"
   sourceLinks:
     - "https://gogloby.com/insights/applied-ai-case-studies/"
 ---
 
-# Applied AI Case Studies and Real-World Success Stories
+# Applied AI案例研究与实际成功故事 | GoGloby
 
 ## 新闻事实
 

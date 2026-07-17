@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-021
 title: "KPMG and Anthropic sign global alliance and launch Digital Gateway Powered by Claude"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "KPMG与Anthropic签署全球联盟，推出由Claude驱动的数字网关"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://kpmg.com/us/en/media/news/kpmg-anthropic-global-alliance.html"
 canonical_url: "https://kpmg.com/us/en/media/news/kpmg-anthropic-global-alliance.html"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-05T04:56:15.211Z
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # KPMG and Anthropic sign global alliance and launch Digital Gateway Powered by Claude

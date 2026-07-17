@@ -72,6 +72,10 @@ key_excerpts: [{"type":"supporting_context","text":"Meta暂停了引发争议的
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Meta因内部数据泄露暂停员工追踪计划"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Meta因内部数据泄露暂停员工追踪计划

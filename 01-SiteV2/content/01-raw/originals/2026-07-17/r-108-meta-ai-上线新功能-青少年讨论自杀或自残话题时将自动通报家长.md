@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-108
 title: "Meta AI 上线新功能：青少年讨论自杀或自残话题时将自动通报家长"
 title_zh: "Meta AI 上线新功能：青少年讨论自杀或自残话题时将自动通报家长"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/977/841.htm"
 canonical_url: "https://ithome.com/0/977/841.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-17T04:40:17.407Z
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Meta AI 上线新功能：青少年讨论自杀或自残话题时将自动通报家长

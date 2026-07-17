@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Pivot raises $40m Series B to pitch an 
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only
+title_zh: "Pivot 获4000万美元B轮融资，推企业级AI代理采购操作系统，解决遗留软件未修复的问题"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Pivot raises $40m Series B to pitch an agentic-AI procurement OS at the enterprises legacy software has not fixed

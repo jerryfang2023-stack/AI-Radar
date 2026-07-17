@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-015
 title: "Meta 发布 Muse Spark 1.1 多模态推理模型"
 title_zh: "Meta 发布 Muse Spark 1.1 多模态推理模型"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://ai.meta.com/blog/introducing-muse-spark-meta-model-api"
 canonical_url: "https://ai.meta.com/blog/introducing-muse-spark-meta-model-api"
 source_name: "Hacker News 热门（buzzing.cc 中文翻译）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-10T01:59:44.147Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Meta 发布 Muse Spark 1.1 多模态推理模型

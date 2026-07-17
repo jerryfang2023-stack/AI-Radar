@@ -48,6 +48,7 @@ test("DeepSeek V4 translates source titles through the OpenAI-compatible endpoin
     titleZh: "Acme 发布 AI 工作流平台",
     status: "translated",
     method: "deepseek_title_translation",
+    model: "deepseek-v4-flash",
   });
   assert.equal(isApprovedSourceTitleTranslation({ generatedBy: result.method }), true);
   assert.equal(sourceTitleFactsPreserved("Aina Raises $5.5 Mn", "Aina 获得 550 万美元融资"), true);
@@ -900,13 +901,20 @@ test("Noetra infrastructure sources merge and preserve disclosed chip capacity",
   assert.equal(bundle.hardware_records[0].source_refs.length, 2);
 });
 
-test("legacy Card projection disambiguates physical files and resolves all mapped V4 events", () => {
+test("legacy Card projection disambiguates physical files and keeps URL-conflicting legacy ids unresolved", () => {
   const dataRoot = path.join(root, "01-SiteV2/content/11-databases/data-center-v4");
   const projection = JSON.parse(fs.readFileSync(path.join(dataRoot, "legacy-card-event-mappings.json"), "utf8"));
   assert.equal(projection.failures.length, 0);
   assert.equal(projection.summary.card_instances, projection.mappings.length);
   assert.equal(new Set(projection.mappings.map((item) => item.card_instance_id)).size, projection.mappings.length);
-  assert.equal(projection.summary.unresolved, 0);
+  const unresolved = projection.mappings.filter((item) => item.mapping_status === "unresolved");
+  assert.equal(projection.summary.unresolved, unresolved.length);
+  assert.ok(unresolved.length > 0, "legacy Cards without a matching source URL must remain unresolved");
+  for (const item of unresolved) {
+    assert.ok(item.source_urls.length > 0);
+    assert.equal(item.raw_ids.length, 0);
+    assert.equal(item.event_ids.length, 0);
+  }
   assert.ok(projection.summary.raw_only > 0, "legacy Cards without a canonical event must remain explicit");
 
   const eventIds = new Set();

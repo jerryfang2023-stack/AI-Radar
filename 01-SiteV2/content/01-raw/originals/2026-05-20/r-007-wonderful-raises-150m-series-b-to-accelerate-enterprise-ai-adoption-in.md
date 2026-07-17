@@ -69,6 +69,10 @@ key_excerpts: [{"type":"funding","text":"AMSTERDAM, March 12, 2026 /PRNewswire/ 
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Wonderful 完成1.5亿美元B轮融资，加速在30多个市场的企业AI应用"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Wonderful Raises $150M Series B to Accelerate Enterprise AI Adoption in 30+ Markets

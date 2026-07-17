@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"/ query=enterprise AI search ARR cu
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Glean年化经常性收入突破3亿美元：无与伦比的企业上下文推动AI应用 | AP新闻"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Glean Surpasses $300M ARR: Unrivaled Enterprise Context Fuels AI Adoption | AP News

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"quote","text":"Google Cloud 发布 Open Knowledge Format
 theme: outside-core-exploration
 keyword_group: outside-core-exploration
 copyright_note: local research archive only
+title_zh: "Google Cloud 推出 Open Knowledge Format （OKF）：将散乱文档转为 Markdown 文件供 AI 智能体使用"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Google Cloud 推出 Open Knowledge Format （OKF）：将散乱文档转为 Markdown 文件供 AI 智能体使用

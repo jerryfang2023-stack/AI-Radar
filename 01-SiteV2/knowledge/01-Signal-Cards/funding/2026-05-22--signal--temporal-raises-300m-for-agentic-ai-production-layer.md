@@ -2,7 +2,7 @@
 id: SIG-20260522-04
 type: signal_card
 signal_type: funding
-title: "Temporal 融资 3 亿美元，补企业 Agent 的生产运行层"
+title: "Temporal 完成 D 轮融资"
 date: 2026-05-22
 status: draft
 asset_level: candidate
@@ -37,7 +37,7 @@ signal_owner: "Temporal"
 watch_reason: "继续看 Temporal 是否披露生产客户、任务失败后的恢复方式和系统集成案例。"
 
 frontend:
-  displayTitle: "Temporal 融资 3 亿美元，补企业 Agent 的生产运行层"
+  displayTitle: "Temporal 完成 D 轮融资"
   eventLine: "Temporal 宣布 3 亿美元 D 轮融资，定位是为长时间运行、有状态的 AI 系统提供可靠执行层。"
   whyWatch: "企业 Agent 卡在试点到生产之间时，问题常常不是模型会不会，而是任务能否稳定运行、恢复和审计。"
   businessMeaning: "这会影响开发团队、平台团队和 CIO 对 Agent 基础设施预算的判断。"
@@ -70,7 +70,7 @@ opportunity_signals:
   missing_fields: ["specific_task", "product_form"]
 ---
 
-# Temporal 融资 3 亿美元，补企业 Agent 的生产运行层
+# Temporal 完成 D 轮融资
 
 ## 信号底稿
 

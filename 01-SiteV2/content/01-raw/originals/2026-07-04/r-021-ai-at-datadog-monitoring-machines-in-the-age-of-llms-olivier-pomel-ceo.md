@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-021
 title: "AI at Datadog: Monitoring machines in the age of LLMs | Olivier Pomel, CEO of Datadog"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "Datadog的AI：LLM时代监控机器 | Datadog首席执行官Olivier Pomel"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://podcasters.spotify.com/pod/show/firstmark/episodes/AI-at-Datadog-Monitoring-machines-in-the-age-of-LLMs--Olivier-Pomel--CEO-of-Datadog-e2otjai"
 canonical_url: "https://podcasters.spotify.com/pod/show/firstmark/episodes/AI-at-Datadog-Monitoring-machines-in-the-age-of-LLMs--Olivier-Pomel--CEO-of-Datadog-e2otjai"
 source_name: "The MAD Podcast (Matt Turck)"
@@ -78,6 +78,7 @@ fact_extraction_completed_at: 2026-07-04T04:35:47.682Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # AI at Datadog: Monitoring machines in the age of LLMs | Olivier Pomel, CEO of Datadog

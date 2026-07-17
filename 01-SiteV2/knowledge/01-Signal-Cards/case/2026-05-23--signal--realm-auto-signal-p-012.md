@@ -2,7 +2,7 @@
 id: SIG-20260523-A04
 type: signal_card
 signal_type: case
-title: "Realm 把 AI 用进销售和收入团队流程"
+title: "Realm获450万美元种子轮融资，推动企业销售领域AI发展"
 date: 2026-05-23
 status: published
 asset_level: frontstage
@@ -58,7 +58,7 @@ signal_owner: "Realm"
 watch_reason: "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
 
 frontend:
-  displayTitle: "Realm 把 AI 用进销售和收入团队流程"
+  displayTitle: "Realm获450万美元种子轮融资，推动企业销售领域AI发展"
   eventLine: "Realm 把 AI 用进销售和收入团队流程。"
   whyWatch: "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"
   businessMeaning: "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
@@ -68,7 +68,7 @@ frontend:
     - "https://tech.eu/2026/04/22/45m-seed-for-realm-to-advance-ai-in-enterprise-sales/"
 ---
 
-# Realm 把 AI 用进销售和收入团队流程
+# Realm获450万美元种子轮融资，推动企业销售领域AI发展
 
 ## 信号底稿
 

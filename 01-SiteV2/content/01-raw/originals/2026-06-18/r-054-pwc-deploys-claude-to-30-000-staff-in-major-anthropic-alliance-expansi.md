@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"PwC and Anthropic deepen their part
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "PwC 向 30,000 名员工部署 Claude，扩大与 Anthropic 的重大联盟"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # PwC Deploys Claude to 30,000 Staff in Major Anthropic Alliance Expansion | Evermx

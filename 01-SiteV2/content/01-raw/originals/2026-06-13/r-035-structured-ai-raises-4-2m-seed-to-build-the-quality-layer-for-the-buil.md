@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Structured AI Raises $4.2M Seed to Buil
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only
+title_zh: "Structured AI 获420万美元种子轮融资，为建筑世界构建质量层"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Structured AI Raises $4.2M Seed to Build the Quality Layer for the Built World - Structured AI

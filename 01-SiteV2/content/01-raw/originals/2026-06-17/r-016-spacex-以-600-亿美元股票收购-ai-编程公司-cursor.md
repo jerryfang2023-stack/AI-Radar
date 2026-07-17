@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"SpaceX 在历史性 IPO 数天后，同
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "SpaceX 以 600 亿美元股票收购 AI 编程公司 Cursor"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # SpaceX 以 600 亿美元股票收购 AI 编程公司 Cursor

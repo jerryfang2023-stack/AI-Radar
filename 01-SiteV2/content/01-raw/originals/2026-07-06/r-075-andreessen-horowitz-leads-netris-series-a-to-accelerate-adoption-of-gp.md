@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-075
 title: "Andreessen Horowitz Leads Netris' Series A to Accelerate Adoption of GPU Network Automation and Multi-Tenancy Across AI Cloud Operators Worldwide - Netris"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "Andreessen Horowitz领投Netris A轮融资，加速全球AI云运营商对GPU网络自动化与多租户技术的采用"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://netris.io/blog/andreessen-horowitz-leads-netris-series-a-to-accelerate-adoption-of-gpu-network-automation-and-multi-tenancy-across-ai-cloud-operators-worldwide/"
 canonical_url: "https://netris.io/blog/andreessen-horowitz-leads-netris-series-a-to-accelerate-adoption-of-gpu-network-automation-and-multi-tenancy-across-ai-cloud-operators-worldwide"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-06T02:21:27.115Z
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Andreessen Horowitz Leads Netris' Series A to Accelerate Adoption of GPU Network Automation and Multi-Tenancy Across AI Cloud Operators Worldwide - Netris

@@ -2,7 +2,7 @@
 id: SIG-20260614-A11
 type: signal_card
 signal_type: product_service
-title: "Eugeneyan 推出 Agent 工作流能力，切入地产和建筑设计工作流"
+title: "使用MCP、Q和tmux构建每日新闻摘要的新闻智能体"
 date: 2026-06-14
 status: published
 source_title: "Building News Agents for Daily News Recaps with MCP, Q, and tmux"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Eugeneyan"
 
 frontend:
-  displayTitle: "Eugeneyan 推出 Agent 工作流能力，切入地产和建筑设计工作流"
+  displayTitle: "使用MCP、Q和tmux构建每日新闻摘要的新闻智能体"
   sourceLinks:
     - "https://eugeneyan.com//writing/news-agents/"
 ---
 
-# Eugeneyan 推出 Agent 工作流能力，切入地产和建筑设计工作流
+# 使用MCP、Q和tmux构建每日新闻摘要的新闻智能体
 
 ## 新闻事实
 

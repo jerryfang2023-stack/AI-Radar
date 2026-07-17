@@ -2,7 +2,7 @@
 id: SIG-20260606-A13
 type: signal_card
 signal_type: case
-title: "Agent tasks REST API now available for Copilot Pro, Pro+, and Max - GitHub Changelog"
+title: "GitHub Changelog：Copilot Pro、Pro+ 及 Max 现已支持代理任务 REST API"
 date: 2026-06-06
 status: published
 source_title: "Agent tasks REST API now available for Copilot Pro, Pro+, and Max - GitHub Changelog"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "GitHub"
 
 frontend:
-  displayTitle: "Agent tasks REST API now available for Copilot Pro, Pro+, and Max - GitHub Changelog"
+  displayTitle: "GitHub Changelog：Copilot Pro、Pro+ 及 Max 现已支持代理任务 REST API"
   sourceLinks:
     - "https://github.blog/changelog/2026-06-04-agent-tasks-rest-api-now-available-for-copilot-pro-pro-and-max/"
 ---
 
-# Agent tasks REST API now available for Copilot Pro, Pro+, and Max - GitHub Changelog
+# GitHub Changelog：Copilot Pro、Pro+ 及 Max 现已支持代理任务 REST API
 
 ## 新闻事实
 

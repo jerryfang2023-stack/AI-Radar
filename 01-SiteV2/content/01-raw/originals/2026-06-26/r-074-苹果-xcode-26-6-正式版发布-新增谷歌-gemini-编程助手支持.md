@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"苹果今日发布 Xcode 26.6 ID
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "苹果 Xcode 26.6 正式版发布，新增谷歌 Gemini 编程助手支持"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 苹果 Xcode 26.6 正式版发布，新增谷歌 Gemini 编程助手支持

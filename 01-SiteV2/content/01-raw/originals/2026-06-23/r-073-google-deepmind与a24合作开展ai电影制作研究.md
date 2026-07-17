@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Google Deepmind与电影工作室A24建
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "Google Deepmind与A24合作开展AI电影制作研究"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Google Deepmind与A24合作开展AI电影制作研究

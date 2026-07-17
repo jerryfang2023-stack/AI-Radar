@@ -2,7 +2,7 @@
 id: SIG-20260619-A09
 type: signal_card
 signal_type: product_service
-title: "C1 发布 AI 基础设施能力，切入销售线索和收入团队协作"
+title: "推出C1自主工作机器人"
 date: 2026-06-19
 status: published
 source_title: "Introducing the C1 Autonomous Worker"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "C1"
 
 frontend:
-  displayTitle: "C1 发布 AI 基础设施能力，切入销售线索和收入团队协作"
+  displayTitle: "推出C1自主工作机器人"
   sourceLinks:
     - "https://www.c1.ai/blog/introducing-the-c1-autonomous-worker"
 ---
 
-# C1 发布 AI 基础设施能力，切入销售线索和收入团队协作
+# 推出C1自主工作机器人
 
 ## 新闻事实
 

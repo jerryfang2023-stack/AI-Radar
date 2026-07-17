@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-114
 title: "Claude Code v2.1.209 发布：修复 /model 等对话框在后台会话中被拦截的问题"
 title_zh: "Claude Code v2.1.209 发布：修复 /model 等对话框在后台会话中被拦截的问题"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://github.com/anthropics/claude-code/releases/tag/v2.1.209"
 canonical_url: "https://github.com/anthropics/claude-code/releases/tag/v2.1.209"
 source_name: "Claude Code：GitHub Releases（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-15T04:28:38.214Z
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Claude Code v2.1.209 发布：修复 /model 等对话框在后台会话中被拦截的问题

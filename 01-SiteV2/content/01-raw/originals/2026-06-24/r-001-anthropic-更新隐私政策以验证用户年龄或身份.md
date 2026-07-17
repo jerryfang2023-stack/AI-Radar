@@ -72,6 +72,10 @@ key_excerpts: [{"type":"supporting_context","text":"Anthropic 于2026年6月8日
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Anthropic 更新隐私政策以验证用户年龄或身份"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Anthropic 更新隐私政策以验证用户年龄或身份

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Parloa deploys $350M with SAP, Microsof
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Parloa通过与SAP、微软、OpenAI的合作部署3.5亿美元"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Parloa deploys $350M with SAP, Microsoft, OpenAI partnerships

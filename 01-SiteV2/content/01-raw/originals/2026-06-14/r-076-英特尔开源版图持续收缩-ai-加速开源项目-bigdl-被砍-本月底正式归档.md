@@ -72,6 +72,10 @@ key_excerpts: [{"type":"supporting_context","text":"英特尔将 AI 加速开源
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "英特尔开源版图持续收缩：AI 加速开源项目 BigDL 被砍，本月底正式归档"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 英特尔开源版图持续收缩：AI 加速开源项目 BigDL 被砍，本月底正式归档

@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-071
 title: "OpenAI releases new voice models for more natural live conversations"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "OpenAI 发布新语音模型，实现更自然的实时对话"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://techcrunch.com/2026/07/08/openai-releases-new-voice-models-for-more-natural-live-conversations/"
 canonical_url: "https://techcrunch.com/2026/07/08/openai-releases-new-voice-models-for-more-natural-live-conversations"
 source_name: "TechCrunch AI"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-09T03:05:45.212Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # OpenAI releases new voice models for more natural live conversations

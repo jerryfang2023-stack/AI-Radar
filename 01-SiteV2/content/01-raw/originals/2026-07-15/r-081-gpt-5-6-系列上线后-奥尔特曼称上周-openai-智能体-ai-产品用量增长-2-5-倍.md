@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-081
 title: "GPT-5.6 系列上线后，奥尔特曼称上周 OpenAI 智能体 AI 产品用量增长 2.5 倍"
 title_zh: "GPT-5.6 系列上线后，奥尔特曼称上周 OpenAI 智能体 AI 产品用量增长 2.5 倍"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/976/806.htm"
 canonical_url: "https://ithome.com/0/976/806.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-15T04:28:38.060Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # GPT-5.6 系列上线后，奥尔特曼称上周 OpenAI 智能体 AI 产品用量增长 2.5 倍

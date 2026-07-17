@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-17T18:20:10.588Z",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 727,
-    "quarantinedEventCount": 50
+    "eventCount": 818,
+    "quarantinedEventCount": 58
   },
   "entity": {
     "id": "EN-b9e93f925b8d42c8",
@@ -21,7 +21,7 @@
       "canonical"
     ],
     "eventIds": [
-      "EV-b40efa1689aed2e5"
+      "EV-9191a8bbd547a28e"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
@@ -31,26 +31,26 @@
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
-      "deployments": [],
+      "deployments": [
+        "EV-9191a8bbd547a28e"
+      ],
       "partnerships": [],
       "productsServices": [],
-      "hardware": [
-        "EV-b40efa1689aed2e5"
-      ],
+      "hardware": [],
       "organizationPeople": [],
       "other": []
     },
     "timeline": [
       {
-        "id": "EV-b40efa1689aed2e5",
+        "id": "EV-9191a8bbd547a28e",
         "dataDate": "2026-06-29",
         "date": "2026-06-09",
-        "eventType": "hardware_product",
-        "eventTypeLabel": "硬件产品",
+        "eventType": "hardware_deployment",
+        "eventTypeLabel": "硬件部署",
         "eventGroup": "AI 硬件",
         "status": "announced",
         "statusLabel": "已公布",
-        "title": "Akamas 发布 Efficiency",
+        "title": "Akamas推出AI基础设施优化方案，提升GPU效率",
         "displayTags": [
           {
             "dimensionId": "product_form",
@@ -78,14 +78,14 @@
   "fde": [],
   "hardware": [
     {
-      "id": "HW-1011bec4518f1128",
-      "eventId": "EV-b40efa1689aed2e5",
+      "id": "HW-b32e61f6ea5c1646",
+      "eventId": "EV-9191a8bbd547a28e",
       "dataDate": "2026-06-29",
       "date": "2026-06-09",
-      "title": "Akamas 发布 Efficiency",
+      "title": "Akamas推出AI基础设施优化方案，提升GPU效率",
       "hardwareType": "gpu",
-      "eventType": "hardware_product",
-      "eventTypeLabel": "硬件产品",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
       "computeLayer": "data_center",
       "supplier": "Akamas",
       "customer": "未披露",

@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-037
 title: "汪滔：Meta 下一代 AI 模型\"西瓜\"已追上 GPT-5.5"
 title_zh: "汪滔：Meta 下一代 AI 模型\"西瓜\"已追上 GPT-5.5"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/972/120.htm"
 canonical_url: "https://ithome.com/0/972/120.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-04T04:50:50.271Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 汪滔：Meta 下一代 AI 模型"西瓜"已追上 GPT-5.5

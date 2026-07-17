@@ -2,7 +2,7 @@
 id: SIG-20260609-A02
 type: signal_card
 signal_type: case
-title: "Ai Model Hosting And Inference - Bid Information - Commerce, Department Of - National Institute Of Standards And Technology - Dept Of Commerce Nist | BidNet Direct"
+title: "美国国家标准与技术研究院（商务部）AI模型托管与推理招标信息 | BidNet Direct"
 date: 2026-06-09
 status: published
 source_title: "Ai Model Hosting And Inference - Bid Information - Commerce, Department Of - National Institute Of Standards And Technology - Dept Of Commerce Nist | BidNet Direct"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Ai Model Hosting And Inference"
 
 frontend:
-  displayTitle: "Ai Model Hosting And Inference - Bid Information - Commerce, Department Of - National Institute Of Standards And Technology - Dept Of Commerce Nist | BidNet Direct"
+  displayTitle: "美国国家标准与技术研究院（商务部）AI模型托管与推理招标信息 | BidNet Direct"
   sourceLinks:
     - "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/2668201217/abstract"
 ---
 
-# Ai Model Hosting And Inference - Bid Information - Commerce, Department Of - National Institute Of Standards And Technology - Dept Of Commerce Nist | BidNet Direct
+# 美国国家标准与技术研究院（商务部）AI模型托管与推理招标信息 | BidNet Direct
 
 ## 新闻事实
 

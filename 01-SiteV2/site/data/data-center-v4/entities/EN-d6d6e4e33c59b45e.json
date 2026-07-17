@@ -1,0 +1,283 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 818,
+    "quarantinedEventCount": 58
+  },
+  "entity": {
+    "id": "EN-d6d6e4e33c59b45e",
+    "name": "CUGA",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-7449d239223d4928"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-technology-retrieval_augmented_generation",
+      "TX-technology-model_context_protocol",
+      "TX-technology-tool_use"
+    ],
+    "relatedEntityIds": [
+      "EN-916a98f0fa2a39af"
+    ],
+    "firstSeen": "2026-06-23",
+    "lastSeen": "2026-06-24",
+    "relationIds": [
+      "REL2-b31fe93b814fce5d"
+    ],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-7449d239223d4928"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-7449d239223d4928",
+        "dataDate": "2026-06-24",
+        "date": "2026-06-23",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "IBM 开源 CUGA：轻量级智能体框架，提供二十余个单文件示例应用",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "tool_use",
+            "name": "工具调用"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "model_context_protocol",
+            "name": "MCP"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "retrieval_augmented_generation",
+            "name": "RAG"
+          }
+        ],
+        "entityIds": [
+          "EN-916a98f0fa2a39af",
+          "EN-d6d6e4e33c59b45e"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [
+    {
+      "id": "EN-916a98f0fa2a39af",
+      "name": "IBM",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-bcb74b02448b7d78",
+        "EV-df2357fc3c3b4f5e",
+        "EV-bbc1042dcf5ad317",
+        "EV-b95539d17772a4ce",
+        "EV-347d250e2769de9a",
+        "EV-7449d239223d4928",
+        "EV-2f56b99f72ad6c4f"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-use_case-software_development",
+        "TX-technology-retrieval_augmented_generation",
+        "TX-technology-model_context_protocol",
+        "TX-technology-tool_use",
+        "TX-technology-reasoning"
+      ],
+      "relatedEntityIds": [
+        "EN-dc6c28a2123e8efb",
+        "EN-d6d6e4e33c59b45e"
+      ],
+      "firstSeen": "2026-05-15",
+      "lastSeen": "2026-07-17"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-b31fe93b814fce5d",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-916a98f0fa2a39af",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-d6d6e4e33c59b45e",
+      "object_type": "entity",
+      "event_id": "EV-7449d239223d4928",
+      "claim_refs": [
+        "CL-2126331ef6503828",
+        "CL-9ce295a92a1fc3bf",
+        "CL-d6857e7b630cfd18",
+        "CL-b9d0d3f3c8c311b9"
+      ],
+      "source_refs": [
+        "SA-e6fccd722a93d8b2"
+      ],
+      "data_date": "2026-06-24",
+      "status": "verified"
+    }
+  ],
+  "taxonomyNodes": [
+    {
+      "id": "TX-technology-retrieval_augmented_generation",
+      "name": "RAG",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "retrieval_augmented_generation",
+      "eventIds": [
+        "EV-30466ebe86779a64",
+        "EV-3011ea85c51a3ee0",
+        "EV-f50752717e2a8536",
+        "EV-7449d239223d4928",
+        "EV-adc7c7865f4e9e64",
+        "EV-1b03e5dff76a50a1",
+        "EV-8eed6489ab514823"
+      ],
+      "entityIds": [
+        "EN-a9aff9e0737a5d4a",
+        "EN-754b113d548b4469",
+        "EN-d87e6bf7aa180a4a",
+        "EN-23fa906ab8df13d6",
+        "EN-feecb1b1adc8584d",
+        "EN-ae4ea495016fb286",
+        "EN-916a98f0fa2a39af",
+        "EN-d6d6e4e33c59b45e",
+        "EN-716f0a8b380bb7d0",
+        "EN-ddc6bcfaf931295c",
+        "EN-d31a4982f920e657",
+        "EN-576c367dfd7686e8",
+        "EN-2d87f3d38782aa14",
+        "EN-bbdefa2950f49882",
+        "EN-b5251b35f15bedc4",
+        "EN-0db2d631b42da133",
+        "EN-3eee4f30151db45a",
+        "EN-2b6e51bec93e86c1",
+        "EN-c18179b68329b054"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-06-11",
+      "lastSeen": "2026-07-08"
+    },
+    {
+      "id": "TX-technology-model_context_protocol",
+      "name": "MCP",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "model_context_protocol",
+      "eventIds": [
+        "EV-ed8260ee9a7a80af",
+        "EV-a2c13c14efec9218",
+        "EV-33292a33d0f4d599",
+        "EV-48a7437742aff5c5",
+        "EV-a0d3853dd41c8ef6",
+        "EV-7449d239223d4928",
+        "EV-266aff97294156f6",
+        "EV-9c41acd6ef6df77f"
+      ],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-08b6a35be337edce",
+        "EN-9fbf261b62c1d7c0",
+        "EN-e473f24d4325d51a",
+        "EN-33a6331aaa822714",
+        "EN-b3b5882e4eb97824",
+        "EN-a83eedd800c2433b",
+        "EN-7d3194f79e645c42",
+        "EN-178e3a5167e8e1d5",
+        "EN-3db1f560db626918",
+        "EN-2b78da3dc866654e",
+        "EN-bd2bfbea5911ec7a",
+        "EN-916a98f0fa2a39af",
+        "EN-d6d6e4e33c59b45e",
+        "EN-caf559f7830b566f",
+        "EN-5504f88c63fe766d"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-05-19",
+      "lastSeen": "2026-07-13"
+    },
+    {
+      "id": "TX-technology-tool_use",
+      "name": "工具调用",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "tool_use",
+      "eventIds": [
+        "EV-baa76a4f03b84980",
+        "EV-97fdf068afbbe555",
+        "EV-a8a8f26c5128d894",
+        "EV-653cbce2ccc79f8b",
+        "EV-8bf42c1816e772ba",
+        "EV-9496f90f3e808992",
+        "EV-9c4b862020202f6c",
+        "EV-7449d239223d4928",
+        "EV-c5b8faec223a4caf",
+        "EV-d53cd33e8f541a65"
+      ],
+      "entityIds": [
+        "EN-7f90f96bd6306bff",
+        "EN-d8cb1acd1b39854a",
+        "EN-5388bc10736a0eff",
+        "EN-c70eca6b0f88f44d",
+        "EN-3a9b395103419892",
+        "EN-f3cfedbe8428c9f7",
+        "EN-7df09a7717ef2feb",
+        "EN-c04bd5ebd10ab696",
+        "EN-50ba7ff15827787b",
+        "EN-9418d9e3d1e469cf",
+        "EN-ea3bd73e2b506e00",
+        "EN-e3863f813fe47240",
+        "EN-bbdefa2950f49882",
+        "EN-7d3194f79e645c42",
+        "EN-2c063f604e634100",
+        "EN-916a98f0fa2a39af",
+        "EN-d6d6e4e33c59b45e",
+        "EN-3a7bd3e2360a3d29",
+        "EN-96eebba49dbbf422",
+        "EN-41dcc2d4951f337b",
+        "EN-6fcba5d96a4fadfd",
+        "EN-630dc133336bc266",
+        "EN-ce635c4eabff5e4f",
+        "EN-c4bc2d00a42f220f"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-05-25",
+      "lastSeen": "2026-07-17"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}

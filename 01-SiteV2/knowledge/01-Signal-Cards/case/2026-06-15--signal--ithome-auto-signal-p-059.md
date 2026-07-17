@@ -2,7 +2,7 @@
 id: SIG-20260615-A05
 type: signal_card
 signal_type: case
-title: "Ithome 案例：AI 进入模型部署和算力调用"
+title: "AI 幻觉让法官头疼，韩国计划向滥用 AI 的律师开罚单"
 date: 2026-06-15
 status: published
 source_title: "AI 幻觉让法官头疼，韩国计划向滥用 AI 的律师开罚单"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Ithome"
 
 frontend:
-  displayTitle: "Ithome 案例：AI 进入模型部署和算力调用"
+  displayTitle: "AI 幻觉让法官头疼，韩国计划向滥用 AI 的律师开罚单"
   sourceLinks:
     - "https://www.ithome.com/0/964/264.htm"
 ---
 
-# Ithome 案例：AI 进入模型部署和算力调用
+# AI 幻觉让法官头疼，韩国计划向滥用 AI 的律师开罚单
 
 ## 新闻事实
 

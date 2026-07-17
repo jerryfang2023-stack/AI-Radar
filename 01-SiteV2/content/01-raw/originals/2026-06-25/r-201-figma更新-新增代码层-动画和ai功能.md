@@ -72,6 +72,10 @@ key_excerpts: [{"type":"workflow_change","text":"Figma本周三发布更新，�
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "Figma更新：新增代码层、动画和AI功能"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Figma更新：新增代码层、动画和AI功能

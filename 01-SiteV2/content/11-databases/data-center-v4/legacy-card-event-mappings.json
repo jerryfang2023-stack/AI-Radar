@@ -1,14 +1,14 @@
 {
   "schema_version": "LEGACY-CARD-EVENT-MAP-V1.0",
-  "generated_at": "2026-07-17T18:19:34.314Z",
+  "generated_at": "2026-07-17T21:23:51.547Z",
   "summary": {
     "card_instances": 919,
     "logical_card_ids": 809,
     "duplicate_legacy_ids": 104,
-    "mapped": 322,
-    "ambiguous": 6,
-    "raw_only": 591,
-    "unresolved": 0
+    "mapped": 305,
+    "ambiguous": 3,
+    "raw_only": 573,
+    "unresolved": 38
   },
   "duplicate_legacy_ids": [
     {
@@ -467,14 +467,12 @@
         "R-009"
       ],
       "raw_ids": [
-        "RAW-1440c465c5e2e7c3",
         "RAW-e7563bd8076fb154"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": false
@@ -492,16 +490,12 @@
         "R-011"
       ],
       "raw_ids": [
-        "RAW-45db4dd021449eb5",
         "RAW-d5befc8e49a8d0d4"
       ],
-      "event_ids": [
-        "EV-9a7cd217a7a9a51c"
-      ],
-      "mapping_status": "mapped",
+      "event_ids": [],
+      "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": false
@@ -518,14 +512,10 @@
       "legacy_raw_ids": [
         "R-001"
       ],
-      "raw_ids": [
-        "RAW-85b1c1db560363ad"
-      ],
+      "raw_ids": [],
       "event_ids": [],
-      "mapping_status": "raw_only",
-      "mapping_methods": [
-        "legacy_raw_id"
-      ],
+      "mapping_status": "unresolved",
+      "mapping_methods": [],
       "duplicate_legacy_id": false
     },
     {
@@ -541,13 +531,11 @@
         "R-004"
       ],
       "raw_ids": [
-        "RAW-a0d30de6ed67dc87",
-        "RAW-f77d28c94bf6e311"
+        "RAW-a0d30de6ed67dc87"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
       "mapping_methods": [
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": false
@@ -713,8 +701,10 @@
       "raw_ids": [
         "RAW-ab76651ef4df1970"
       ],
-      "event_ids": [],
-      "mapping_status": "raw_only",
+      "event_ids": [
+        "EV-8b73e88ffd3569b2"
+      ],
+      "mapping_status": "mapped",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -738,7 +728,7 @@
         "RAW-7d4d764ee3f4e2ce"
       ],
       "event_ids": [
-        "EV-3398ae53a199be16"
+        "EV-c0a65877001ed413"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -764,7 +754,7 @@
         "RAW-931521c80bd6a2a0"
       ],
       "event_ids": [
-        "EV-ec15684583d6f7a9"
+        "EV-6ce6b9c9780b97d9"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -928,7 +918,7 @@
         "RAW-cb92f3c014e356c9"
       ],
       "event_ids": [
-        "EV-3398ae53a199be16"
+        "EV-c0a65877001ed413"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -1001,8 +991,10 @@
       "raw_ids": [
         "RAW-9703462172caf365"
       ],
-      "event_ids": [],
-      "mapping_status": "raw_only",
+      "event_ids": [
+        "EV-94e0afb44c320c99"
+      ],
+      "mapping_status": "mapped",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -1414,7 +1406,7 @@
         "RAW-1070e9b577a3b72a"
       ],
       "event_ids": [
-        "EV-f8becea58ba65e8b"
+        "EV-8abf5adc3e72fbb8"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -1563,14 +1555,11 @@
         "R-051"
       ],
       "raw_ids": [
-        "RAW-2da821dc7f200c00",
-        "RAW-b87bc451cff7bd24",
-        "RAW-bc3d97367d44c15c"
+        "RAW-2da821dc7f200c00"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
       "mapping_methods": [
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -1638,7 +1627,6 @@
         "R-005"
       ],
       "raw_ids": [
-        "RAW-441265add685f181",
         "RAW-e3e1982578fcac77"
       ],
       "event_ids": [
@@ -1647,7 +1635,6 @@
       "mapping_status": "mapped",
       "mapping_methods": [
         "legacy_path",
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -1689,14 +1676,12 @@
         "R-015"
       ],
       "raw_ids": [
-        "RAW-49781cc40764e84e",
-        "RAW-a92a4c7485a8b848"
+        "RAW-49781cc40764e84e"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": false
@@ -1714,13 +1699,11 @@
         "R-007"
       ],
       "raw_ids": [
-        "RAW-20647808cce40bec",
         "RAW-afb4a0883677c3ca"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
       "mapping_methods": [
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -1741,7 +1724,7 @@
         "RAW-670b7e4b1bcf3868"
       ],
       "event_ids": [
-        "EV-5a26f343846cb8ad"
+        "EV-736404028b8ad33e"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -2011,7 +1994,7 @@
         "RAW-ae16ba85acc30daf"
       ],
       "event_ids": [
-        "EV-343e0454586c58a9"
+        "EV-e9a86c47da229331"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -2086,8 +2069,10 @@
       "raw_ids": [
         "RAW-1e3a9ef618b2eaaa"
       ],
-      "event_ids": [],
-      "mapping_status": "raw_only",
+      "event_ids": [
+        "EV-83b2e8f7fe679bc3"
+      ],
+      "mapping_status": "mapped",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -2254,8 +2239,10 @@
       "raw_ids": [
         "RAW-b07666aea5cde42a"
       ],
-      "event_ids": [],
-      "mapping_status": "raw_only",
+      "event_ids": [
+        "EV-ec2e421d0e18be9b"
+      ],
+      "mapping_status": "mapped",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -2590,10 +2577,8 @@
       "raw_ids": [
         "RAW-4f817965ef74029a"
       ],
-      "event_ids": [
-        "EV-b902c7cffb30dec3"
-      ],
-      "mapping_status": "mapped",
+      "event_ids": [],
+      "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -2712,10 +2697,8 @@
       "raw_ids": [
         "RAW-74f0f8830b9efa62"
       ],
-      "event_ids": [
-        "EV-964971e83a649d4d"
-      ],
-      "mapping_status": "mapped",
+      "event_ids": [],
+      "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -2981,7 +2964,7 @@
         "RAW-53d52f271ce257ad"
       ],
       "event_ids": [
-        "EV-fbc5c65cc697c83b"
+        "EV-97a8d86baa7fffc4"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -3256,8 +3239,10 @@
         "RAW-187cecac91be0010",
         "RAW-ffbb8802ad34e561"
       ],
-      "event_ids": [],
-      "mapping_status": "raw_only",
+      "event_ids": [
+        "EV-8eed6489ab514823"
+      ],
+      "mapping_status": "mapped",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -3353,7 +3338,7 @@
         "RAW-2b2f9f000172a06e"
       ],
       "event_ids": [
-        "EV-30e8529ddeb228c8"
+        "EV-bad301e14b034fbd"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -3451,7 +3436,7 @@
         "RAW-f992f2424778bfb4"
       ],
       "event_ids": [
-        "EV-c5abea15a56d035e"
+        "EV-40d196865997025c"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -3474,14 +3459,12 @@
         "R-069"
       ],
       "raw_ids": [
-        "RAW-4d673420b63a8585",
         "RAW-d7a68dc0f3052af7"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -3522,14 +3505,10 @@
       "legacy_raw_ids": [
         "R-125"
       ],
-      "raw_ids": [
-        "RAW-e81d6ebeb32ce4e0"
-      ],
+      "raw_ids": [],
       "event_ids": [],
-      "mapping_status": "raw_only",
-      "mapping_methods": [
-        "legacy_raw_id"
-      ],
+      "mapping_status": "unresolved",
+      "mapping_methods": [],
       "duplicate_legacy_id": false
     },
     {
@@ -3549,16 +3528,14 @@
       ],
       "raw_ids": [
         "RAW-14d43904cec19889",
-        "RAW-16a3348f13008f16",
-        "RAW-845be59b088955ce",
         "RAW-8ce8d37a76aac132"
       ],
       "event_ids": [
-        "EV-b4f3dcac8cc230d9"
+        "EV-2976098c0690e3a9",
+        "EV-e4b5fe493066804b"
       ],
-      "mapping_status": "mapped",
+      "mapping_status": "ambiguous",
       "mapping_methods": [
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -3583,9 +3560,10 @@
         "RAW-8ce8d37a76aac132"
       ],
       "event_ids": [
-        "EV-b4f3dcac8cc230d9"
+        "EV-2976098c0690e3a9",
+        "EV-e4b5fe493066804b"
       ],
-      "mapping_status": "mapped",
+      "mapping_status": "ambiguous",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -3606,16 +3584,14 @@
         "R-052"
       ],
       "raw_ids": [
-        "RAW-65d9a26422ae0150",
-        "RAW-6d7c2c7459c4f868"
+        "RAW-65d9a26422ae0150"
       ],
       "event_ids": [
-        "EV-91d9e2c780593bbb"
+        "EV-2cb9dbed2b2b6077"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
         "legacy_path",
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -3636,7 +3612,7 @@
         "RAW-65d9a26422ae0150"
       ],
       "event_ids": [
-        "EV-91d9e2c780593bbb"
+        "EV-2cb9dbed2b2b6077"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -3659,14 +3635,12 @@
         "R-023"
       ],
       "raw_ids": [
-        "RAW-04f82f71018288e6",
-        "RAW-419bc75cb9ab1761"
+        "RAW-04f82f71018288e6"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -3732,14 +3706,12 @@
         "R-153"
       ],
       "raw_ids": [
-        "RAW-0e91ddb6377fb4c7",
-        "RAW-355f377d8468d842"
+        "RAW-0e91ddb6377fb4c7"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -3757,13 +3729,11 @@
         "R-038"
       ],
       "raw_ids": [
-        "RAW-b756a714e3b01f74",
-        "RAW-e508353f773e38e6"
+        "RAW-b756a714e3b01f74"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
       "mapping_methods": [
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -3805,14 +3775,12 @@
         "R-069"
       ],
       "raw_ids": [
-        "RAW-09901acb795621f7",
         "RAW-6afad7d4a2b39591"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": false
@@ -3854,13 +3822,11 @@
         "R-049"
       ],
       "raw_ids": [
-        "RAW-1078c731c13041a6",
         "RAW-123d0a306f64b29b"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
       "mapping_methods": [
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -3878,16 +3844,12 @@
         "R-066"
       ],
       "raw_ids": [
-        "RAW-dc8ebbea054b5bd8",
         "RAW-fece875aaef724d8"
       ],
-      "event_ids": [
-        "EV-df8c2d52e43b5f0c"
-      ],
-      "mapping_status": "mapped",
+      "event_ids": [],
+      "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -3952,14 +3914,10 @@
       "legacy_raw_ids": [
         "R-017"
       ],
-      "raw_ids": [
-        "RAW-e881b5c4c24dd318"
-      ],
+      "raw_ids": [],
       "event_ids": [],
-      "mapping_status": "raw_only",
-      "mapping_methods": [
-        "legacy_raw_id"
-      ],
+      "mapping_status": "unresolved",
+      "mapping_methods": [],
       "duplicate_legacy_id": true
     },
     {
@@ -3975,13 +3933,11 @@
         "R-087"
       ],
       "raw_ids": [
-        "RAW-08ea1bfccf860da1",
-        "RAW-33b8de03f60e8f45"
+        "RAW-08ea1bfccf860da1"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
       "mapping_methods": [
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": false
@@ -3998,14 +3954,10 @@
       "legacy_raw_ids": [
         "R-016"
       ],
-      "raw_ids": [
-        "RAW-5d6b1271c08dbe09"
-      ],
+      "raw_ids": [],
       "event_ids": [],
-      "mapping_status": "raw_only",
-      "mapping_methods": [
-        "legacy_raw_id"
-      ],
+      "mapping_status": "unresolved",
+      "mapping_methods": [],
       "duplicate_legacy_id": true
     },
     {
@@ -4021,13 +3973,11 @@
         "R-042"
       ],
       "raw_ids": [
-        "RAW-2de3fcb16bc07dc7",
-        "RAW-51a56b8eb730f9f8"
+        "RAW-2de3fcb16bc07dc7"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
       "mapping_methods": [
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -4045,14 +3995,12 @@
         "R-099"
       ],
       "raw_ids": [
-        "RAW-44e2cbd86cf295a7",
         "RAW-ec98d92e3baec87b"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": false
@@ -4094,15 +4042,11 @@
         "R-041"
       ],
       "raw_ids": [
-        "RAW-389071fa8195f413",
-        "RAW-fc243e2148619bcc"
+        "RAW-389071fa8195f413"
       ],
-      "event_ids": [
-        "EV-4900ddf0686f4bbc"
-      ],
-      "mapping_status": "mapped",
+      "event_ids": [],
+      "mapping_status": "raw_only",
       "mapping_methods": [
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -4510,14 +4454,12 @@
         "R-082"
       ],
       "raw_ids": [
-        "RAW-afbba3a1d3188648",
         "RAW-b794557b9c0d766d"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -4535,14 +4477,12 @@
         "R-080"
       ],
       "raw_ids": [
-        "RAW-b794557b9c0d766d",
-        "RAW-f24fb8262742c679"
+        "RAW-b794557b9c0d766d"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -4560,14 +4500,12 @@
         "R-057"
       ],
       "raw_ids": [
-        "RAW-7a6720ae430e987d",
-        "RAW-c07b2ae760d31468"
+        "RAW-7a6720ae430e987d"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -4585,14 +4523,12 @@
         "R-057"
       ],
       "raw_ids": [
-        "RAW-7a6720ae430e987d",
-        "RAW-c07b2ae760d31468"
+        "RAW-7a6720ae430e987d"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -4634,14 +4570,12 @@
         "R-041"
       ],
       "raw_ids": [
-        "RAW-6f2ce8d377c5e72a",
         "RAW-8f7b38b272bddfe0"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -4683,14 +4617,12 @@
         "R-050"
       ],
       "raw_ids": [
-        "RAW-8f7b38b272bddfe0",
-        "RAW-961a6b6828ea070b"
+        "RAW-8f7b38b272bddfe0"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -4708,14 +4640,12 @@
         "R-039"
       ],
       "raw_ids": [
-        "RAW-38715d14040d3fa7",
-        "RAW-8cffd1c8201059fb"
+        "RAW-38715d14040d3fa7"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -4757,16 +4687,12 @@
         "R-043"
       ],
       "raw_ids": [
-        "RAW-38715d14040d3fa7",
-        "RAW-d1b64825602a5eb2"
+        "RAW-38715d14040d3fa7"
       ],
-      "event_ids": [
-        "EV-14401cfc102c6511"
-      ],
-      "mapping_status": "mapped",
+      "event_ids": [],
+      "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -4784,16 +4710,14 @@
         "R-016"
       ],
       "raw_ids": [
-        "RAW-19442fb443380974",
-        "RAW-58d9c30702ed8ffb"
+        "RAW-19442fb443380974"
       ],
       "event_ids": [
-        "EV-745adb0e9f7a75a2"
+        "EV-534dc9add1c0cc35"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
         "legacy_path",
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -4814,7 +4738,7 @@
         "RAW-19442fb443380974"
       ],
       "event_ids": [
-        "EV-745adb0e9f7a75a2"
+        "EV-534dc9add1c0cc35"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -4837,14 +4761,12 @@
         "R-031"
       ],
       "raw_ids": [
-        "RAW-94a92f2a33a1a7a1",
-        "RAW-9f3bf701b03ee2e5"
+        "RAW-94a92f2a33a1a7a1"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -4886,17 +4808,12 @@
         "R-022"
       ],
       "raw_ids": [
-        "RAW-4b156e1dd065b2a8",
         "RAW-5272417102bc8120"
       ],
-      "event_ids": [
-        "EV-60c27ec9b857f5c2",
-        "EV-7808c274ce0aa0bf"
-      ],
-      "mapping_status": "ambiguous",
+      "event_ids": [],
+      "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -4916,10 +4833,8 @@
       "raw_ids": [
         "RAW-5272417102bc8120"
       ],
-      "event_ids": [
-        "EV-7808c274ce0aa0bf"
-      ],
-      "mapping_status": "mapped",
+      "event_ids": [],
+      "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -4940,14 +4855,14 @@
         "R-073"
       ],
       "raw_ids": [
-        "RAW-89f644f30caf8262",
-        "RAW-98f29200e84f1409"
+        "RAW-89f644f30caf8262"
       ],
-      "event_ids": [],
-      "mapping_status": "raw_only",
+      "event_ids": [
+        "EV-06b294f255c0087e"
+      ],
+      "mapping_status": "mapped",
       "mapping_methods": [
         "legacy_path",
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -4967,8 +4882,10 @@
       "raw_ids": [
         "RAW-89f644f30caf8262"
       ],
-      "event_ids": [],
-      "mapping_status": "raw_only",
+      "event_ids": [
+        "EV-06b294f255c0087e"
+      ],
+      "mapping_status": "mapped",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -5037,14 +4954,12 @@
         "R-116"
       ],
       "raw_ids": [
-        "RAW-43ab94c9cf2034ec",
         "RAW-d962f820a10153e7"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -5062,14 +4977,12 @@
         "R-025"
       ],
       "raw_ids": [
-        "RAW-391970acaee5d1fe",
-        "RAW-af26a6032279f0d6"
+        "RAW-391970acaee5d1fe"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -5111,13 +5024,11 @@
         "R-052"
       ],
       "raw_ids": [
-        "RAW-ad2159d067c6468e",
         "RAW-f29ecf18c6235640"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
       "mapping_methods": [
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -5135,14 +5046,12 @@
         "R-048"
       ],
       "raw_ids": [
-        "RAW-93bf504fe6a5efc4",
-        "RAW-f30d03cb237007f3"
+        "RAW-93bf504fe6a5efc4"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": false
@@ -5184,14 +5093,12 @@
         "R-041"
       ],
       "raw_ids": [
-        "RAW-374bebd7fdba2f6d",
-        "RAW-5761a5e02921bd14"
+        "RAW-374bebd7fdba2f6d"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -5232,14 +5139,10 @@
       "legacy_raw_ids": [
         "R-045"
       ],
-      "raw_ids": [
-        "RAW-1302e48e897ac352"
-      ],
+      "raw_ids": [],
       "event_ids": [],
-      "mapping_status": "raw_only",
-      "mapping_methods": [
-        "legacy_raw_id"
-      ],
+      "mapping_status": "unresolved",
+      "mapping_methods": [],
       "duplicate_legacy_id": true
     },
     {
@@ -5282,7 +5185,7 @@
         "RAW-42070a7f2cfd6659"
       ],
       "event_ids": [
-        "EV-a9a3b5b56befe593"
+        "EV-97747aee0cafd9f3"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -5304,14 +5207,10 @@
       "legacy_raw_ids": [
         "R-037"
       ],
-      "raw_ids": [
-        "RAW-d4c42f03d8257166"
-      ],
+      "raw_ids": [],
       "event_ids": [],
-      "mapping_status": "raw_only",
-      "mapping_methods": [
-        "legacy_raw_id"
-      ],
+      "mapping_status": "unresolved",
+      "mapping_methods": [],
       "duplicate_legacy_id": true
     },
     {
@@ -5327,13 +5226,13 @@
         "R-044"
       ],
       "raw_ids": [
-        "RAW-0b4917b17f5429d1",
-        "RAW-94f1df01164f7dff"
+        "RAW-0b4917b17f5429d1"
       ],
-      "event_ids": [],
-      "mapping_status": "raw_only",
+      "event_ids": [
+        "EV-3d80a399cdb2bb72"
+      ],
+      "mapping_status": "mapped",
       "mapping_methods": [
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -5374,14 +5273,10 @@
       "legacy_raw_ids": [
         "R-109"
       ],
-      "raw_ids": [
-        "RAW-b4c5b437921e947e"
-      ],
+      "raw_ids": [],
       "event_ids": [],
-      "mapping_status": "raw_only",
-      "mapping_methods": [
-        "legacy_raw_id"
-      ],
+      "mapping_status": "unresolved",
+      "mapping_methods": [],
       "duplicate_legacy_id": true
     },
     {
@@ -5400,7 +5295,7 @@
         "RAW-93d10b9063075295"
       ],
       "event_ids": [
-        "EV-b8b39e635aa7511f"
+        "EV-916bcaee6266e0d0"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -5423,14 +5318,12 @@
         "R-094"
       ],
       "raw_ids": [
-        "RAW-40722f85246876d6",
         "RAW-d4f4faa815c70da8"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -5544,13 +5437,13 @@
         "R-051"
       ],
       "raw_ids": [
-        "RAW-38f408efdc2c9964",
-        "RAW-725b2d0f63c15ec6"
+        "RAW-38f408efdc2c9964"
       ],
-      "event_ids": [],
-      "mapping_status": "raw_only",
+      "event_ids": [
+        "EV-9ae9aa86e51e64a2"
+      ],
+      "mapping_status": "mapped",
       "mapping_methods": [
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -5932,10 +5825,8 @@
       "raw_ids": [
         "RAW-f54781b5e12f9925"
       ],
-      "event_ids": [
-        "EV-8160e13555e65130"
-      ],
-      "mapping_status": "mapped",
+      "event_ids": [],
+      "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -5982,8 +5873,10 @@
       "raw_ids": [
         "RAW-783594f2f736d8df"
       ],
-      "event_ids": [],
-      "mapping_status": "raw_only",
+      "event_ids": [
+        "EV-ca0c54e3f9776fa5"
+      ],
+      "mapping_status": "mapped",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -6006,8 +5899,10 @@
       "raw_ids": [
         "RAW-c32e5c39c095ad3e"
       ],
-      "event_ids": [],
-      "mapping_status": "raw_only",
+      "event_ids": [
+        "EV-bf20e6670dc67e8d"
+      ],
+      "mapping_status": "mapped",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -6391,7 +6286,7 @@
         "RAW-cc2ea930e4031d7d"
       ],
       "event_ids": [
-        "EV-072b7dabe8ea6032"
+        "EV-69a82f50c60d4a64"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -6416,8 +6311,10 @@
       "raw_ids": [
         "RAW-38f408efdc2c9964"
       ],
-      "event_ids": [],
-      "mapping_status": "raw_only",
+      "event_ids": [
+        "EV-9ae9aa86e51e64a2"
+      ],
+      "mapping_status": "mapped",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -6465,7 +6362,7 @@
         "RAW-f5c1d78454b6b961"
       ],
       "event_ids": [
-        "EV-cf317dd1579a01bb"
+        "EV-f953555178744c22"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -6635,7 +6532,7 @@
         "RAW-91829e752329268e"
       ],
       "event_ids": [
-        "EV-c033ae6f9784d674"
+        "EV-d53cd33e8f541a65"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -6661,7 +6558,7 @@
         "RAW-1a96de09af4a589c"
       ],
       "event_ids": [
-        "EV-1060a8b37ddd87ac"
+        "EV-41ffecb51e643397"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -6758,10 +6655,8 @@
       "raw_ids": [
         "RAW-55affd70e5ac8e64"
       ],
-      "event_ids": [
-        "EV-adf92ecb7cd8714f"
-      ],
-      "mapping_status": "mapped",
+      "event_ids": [],
+      "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -6930,7 +6825,6 @@
         "R-063"
       ],
       "raw_ids": [
-        "RAW-3d46079a8cde3568",
         "RAW-942bf4a2de18904e"
       ],
       "event_ids": [],
@@ -6955,13 +6849,10 @@
         "R-017"
       ],
       "raw_ids": [
-        "RAW-0ccb838ef38e9ca9",
-        "RAW-49cb227e81b38827"
+        "RAW-0ccb838ef38e9ca9"
       ],
-      "event_ids": [
-        "EV-ad0589423b3aa1ce"
-      ],
-      "mapping_status": "mapped",
+      "event_ids": [],
+      "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -6982,13 +6873,11 @@
         "R-020"
       ],
       "raw_ids": [
-        "RAW-0ccb838ef38e9ca9",
-        "RAW-19175fa5f8ae8493"
+        "RAW-0ccb838ef38e9ca9"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
       "mapping_methods": [
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -7006,7 +6895,6 @@
         "R-058"
       ],
       "raw_ids": [
-        "RAW-9394e2075e915079",
         "RAW-d72a3fc1e8eec864"
       ],
       "event_ids": [],
@@ -7055,7 +6943,6 @@
         "R-036"
       ],
       "raw_ids": [
-        "RAW-19b7133c6efe6f3d",
         "RAW-f3fe39fdde3bedda"
       ],
       "event_ids": [],
@@ -7080,8 +6967,7 @@
         "R-029"
       ],
       "raw_ids": [
-        "RAW-56a09a943a4ac131",
-        "RAW-a003fb86956e7d6a"
+        "RAW-56a09a943a4ac131"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
@@ -7105,15 +6991,11 @@
         "R-046"
       ],
       "raw_ids": [
-        "RAW-28afdaba0f36d41d",
         "RAW-56a09a943a4ac131"
       ],
-      "event_ids": [
-        "EV-a15da1b52d939967"
-      ],
-      "mapping_status": "mapped",
+      "event_ids": [],
+      "mapping_status": "raw_only",
       "mapping_methods": [
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -7131,7 +7013,6 @@
         "R-032"
       ],
       "raw_ids": [
-        "RAW-0302551b1b469dfd",
         "RAW-8b2b0aa9cd5b68f2"
       ],
       "event_ids": [],
@@ -7182,16 +7063,13 @@
         "R-011"
       ],
       "raw_ids": [
-        "RAW-5b8e45ba74ba6101",
-        "RAW-7655324f72c9a837"
+        "RAW-5b8e45ba74ba6101"
       ],
       "event_ids": [
-        "EV-1e7c76dae985100f",
-        "EV-f487788f3d44f288"
+        "EV-1e7c76dae985100f"
       ],
-      "mapping_status": "ambiguous",
+      "mapping_status": "mapped",
       "mapping_methods": [
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -7209,8 +7087,7 @@
         "R-039"
       ],
       "raw_ids": [
-        "RAW-06d42594511f88fb",
-        "RAW-2feecb4beeb25004"
+        "RAW-06d42594511f88fb"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
@@ -7234,13 +7111,11 @@
         "R-067"
       ],
       "raw_ids": [
-        "RAW-06d42594511f88fb",
-        "RAW-6a0903ad095d89e7"
+        "RAW-06d42594511f88fb"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
       "mapping_methods": [
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -7284,8 +7159,10 @@
       "raw_ids": [
         "RAW-0b4917b17f5429d1"
       ],
-      "event_ids": [],
-      "mapping_status": "raw_only",
+      "event_ids": [
+        "EV-3d80a399cdb2bb72"
+      ],
+      "mapping_status": "mapped",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -7620,8 +7497,10 @@
       "raw_ids": [
         "RAW-392a6dbe679200d2"
       ],
-      "event_ids": [],
-      "mapping_status": "raw_only",
+      "event_ids": [
+        "EV-86247a326e79bb88"
+      ],
+      "mapping_status": "mapped",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -7737,16 +7616,10 @@
       "legacy_raw_ids": [
         "R-051"
       ],
-      "raw_ids": [
-        "RAW-391f945e4668ab1d"
-      ],
-      "event_ids": [
-        "EV-226a363f84676808"
-      ],
-      "mapping_status": "mapped",
-      "mapping_methods": [
-        "legacy_raw_id"
-      ],
+      "raw_ids": [],
+      "event_ids": [],
+      "mapping_status": "unresolved",
+      "mapping_methods": [],
       "duplicate_legacy_id": false
     },
     {
@@ -7761,14 +7634,10 @@
       "legacy_raw_ids": [
         "R-050"
       ],
-      "raw_ids": [
-        "RAW-132116fcc9bda9c4"
-      ],
+      "raw_ids": [],
       "event_ids": [],
-      "mapping_status": "raw_only",
-      "mapping_methods": [
-        "legacy_raw_id"
-      ],
+      "mapping_status": "unresolved",
+      "mapping_methods": [],
       "duplicate_legacy_id": false
     },
     {
@@ -7783,14 +7652,10 @@
       "legacy_raw_ids": [
         "R-070"
       ],
-      "raw_ids": [
-        "RAW-fb09c56ccee70134"
-      ],
+      "raw_ids": [],
       "event_ids": [],
-      "mapping_status": "raw_only",
-      "mapping_methods": [
-        "legacy_raw_id"
-      ],
+      "mapping_status": "unresolved",
+      "mapping_methods": [],
       "duplicate_legacy_id": false
     },
     {
@@ -7805,14 +7670,10 @@
       "legacy_raw_ids": [
         "R-057"
       ],
-      "raw_ids": [
-        "RAW-b810ac96258eceec"
-      ],
+      "raw_ids": [],
       "event_ids": [],
-      "mapping_status": "raw_only",
-      "mapping_methods": [
-        "legacy_raw_id"
-      ],
+      "mapping_status": "unresolved",
+      "mapping_methods": [],
       "duplicate_legacy_id": false
     },
     {
@@ -7827,14 +7688,10 @@
       "legacy_raw_ids": [
         "R-036"
       ],
-      "raw_ids": [
-        "RAW-b915459173f0e5f8"
-      ],
+      "raw_ids": [],
       "event_ids": [],
-      "mapping_status": "raw_only",
-      "mapping_methods": [
-        "legacy_raw_id"
-      ],
+      "mapping_status": "unresolved",
+      "mapping_methods": [],
       "duplicate_legacy_id": true
     },
     {
@@ -7850,13 +7707,11 @@
         "R-033"
       ],
       "raw_ids": [
-        "RAW-3f97b14ae9283b80",
-        "RAW-7b284dfde17f3494"
+        "RAW-3f97b14ae9283b80"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
       "mapping_methods": [
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -7873,14 +7728,10 @@
       "legacy_raw_ids": [
         "R-071"
       ],
-      "raw_ids": [
-        "RAW-49ffd81e1dc341e5"
-      ],
+      "raw_ids": [],
       "event_ids": [],
-      "mapping_status": "raw_only",
-      "mapping_methods": [
-        "legacy_raw_id"
-      ],
+      "mapping_status": "unresolved",
+      "mapping_methods": [],
       "duplicate_legacy_id": false
     },
     {
@@ -7896,15 +7747,11 @@
         "R-016"
       ],
       "raw_ids": [
-        "RAW-6341cd63338cc7b7",
-        "RAW-779775f70005c724"
+        "RAW-6341cd63338cc7b7"
       ],
-      "event_ids": [
-        "EV-b40efa1689aed2e5"
-      ],
-      "mapping_status": "mapped",
+      "event_ids": [],
+      "mapping_status": "raw_only",
       "mapping_methods": [
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -7921,16 +7768,10 @@
       "legacy_raw_ids": [
         "R-043"
       ],
-      "raw_ids": [
-        "RAW-f5e39b636aa46cdc"
-      ],
-      "event_ids": [
-        "EV-7817dc69d5228cbb"
-      ],
-      "mapping_status": "mapped",
-      "mapping_methods": [
-        "legacy_raw_id"
-      ],
+      "raw_ids": [],
+      "event_ids": [],
+      "mapping_status": "unresolved",
+      "mapping_methods": [],
       "duplicate_legacy_id": false
     },
     {
@@ -7945,14 +7786,10 @@
       "legacy_raw_ids": [
         "R-052"
       ],
-      "raw_ids": [
-        "RAW-1281af38af927074"
-      ],
+      "raw_ids": [],
       "event_ids": [],
-      "mapping_status": "raw_only",
-      "mapping_methods": [
-        "legacy_raw_id"
-      ],
+      "mapping_status": "unresolved",
+      "mapping_methods": [],
       "duplicate_legacy_id": false
     },
     {
@@ -7967,14 +7804,10 @@
       "legacy_raw_ids": [
         "R-105"
       ],
-      "raw_ids": [
-        "RAW-660c2f3c77ab2c46"
-      ],
+      "raw_ids": [],
       "event_ids": [],
-      "mapping_status": "raw_only",
-      "mapping_methods": [
-        "legacy_raw_id"
-      ],
+      "mapping_status": "unresolved",
+      "mapping_methods": [],
       "duplicate_legacy_id": false
     },
     {
@@ -7989,14 +7822,10 @@
       "legacy_raw_ids": [
         "R-049"
       ],
-      "raw_ids": [
-        "RAW-e532a90d43325060"
-      ],
+      "raw_ids": [],
       "event_ids": [],
-      "mapping_status": "raw_only",
-      "mapping_methods": [
-        "legacy_raw_id"
-      ],
+      "mapping_status": "unresolved",
+      "mapping_methods": [],
       "duplicate_legacy_id": false
     },
     {
@@ -8012,15 +7841,11 @@
         "R-031"
       ],
       "raw_ids": [
-        "RAW-53e5445ecb165740",
         "RAW-af875817ca7e3b87"
       ],
-      "event_ids": [
-        "EV-0aa2e53c51b2b8e5"
-      ],
-      "mapping_status": "mapped",
+      "event_ids": [],
+      "mapping_status": "raw_only",
       "mapping_methods": [
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": false
@@ -8063,14 +7888,10 @@
       "legacy_raw_ids": [
         "R-066"
       ],
-      "raw_ids": [
-        "RAW-9d0a418547aaf567"
-      ],
+      "raw_ids": [],
       "event_ids": [],
-      "mapping_status": "raw_only",
-      "mapping_methods": [
-        "legacy_raw_id"
-      ],
+      "mapping_status": "unresolved",
+      "mapping_methods": [],
       "duplicate_legacy_id": false
     },
     {
@@ -8085,14 +7906,10 @@
       "legacy_raw_ids": [
         "R-035"
       ],
-      "raw_ids": [
-        "RAW-1275c7cdab6dabe3"
-      ],
+      "raw_ids": [],
       "event_ids": [],
-      "mapping_status": "raw_only",
-      "mapping_methods": [
-        "legacy_raw_id"
-      ],
+      "mapping_status": "unresolved",
+      "mapping_methods": [],
       "duplicate_legacy_id": true
     },
     {
@@ -8108,13 +7925,11 @@
         "R-005"
       ],
       "raw_ids": [
-        "RAW-2f5fd64dbfc038fc",
         "RAW-ebf005d4cb8c575a"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
       "mapping_methods": [
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": false
@@ -8131,14 +7946,10 @@
       "legacy_raw_ids": [
         "R-107"
       ],
-      "raw_ids": [
-        "RAW-9d425ac3e9f702f3"
-      ],
+      "raw_ids": [],
       "event_ids": [],
-      "mapping_status": "raw_only",
-      "mapping_methods": [
-        "legacy_raw_id"
-      ],
+      "mapping_status": "unresolved",
+      "mapping_methods": [],
       "duplicate_legacy_id": false
     },
     {
@@ -8156,8 +7967,10 @@
       "raw_ids": [
         "RAW-65f8ca6e0ced2b61"
       ],
-      "event_ids": [],
-      "mapping_status": "raw_only",
+      "event_ids": [
+        "EV-794296a712c1cf15"
+      ],
+      "mapping_status": "mapped",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -8177,14 +7990,10 @@
       "legacy_raw_ids": [
         "R-048"
       ],
-      "raw_ids": [
-        "RAW-66e1f7d6167767fe"
-      ],
+      "raw_ids": [],
       "event_ids": [],
-      "mapping_status": "raw_only",
-      "mapping_methods": [
-        "legacy_raw_id"
-      ],
+      "mapping_status": "unresolved",
+      "mapping_methods": [],
       "duplicate_legacy_id": false
     },
     {
@@ -8199,14 +8008,10 @@
       "legacy_raw_ids": [
         "R-078"
       ],
-      "raw_ids": [
-        "RAW-435a55ae2427d096"
-      ],
+      "raw_ids": [],
       "event_ids": [],
-      "mapping_status": "raw_only",
-      "mapping_methods": [
-        "legacy_raw_id"
-      ],
+      "mapping_status": "unresolved",
+      "mapping_methods": [],
       "duplicate_legacy_id": false
     },
     {
@@ -8221,14 +8026,10 @@
       "legacy_raw_ids": [
         "R-029"
       ],
-      "raw_ids": [
-        "RAW-a846ff60b4fed876"
-      ],
+      "raw_ids": [],
       "event_ids": [],
-      "mapping_status": "raw_only",
-      "mapping_methods": [
-        "legacy_raw_id"
-      ],
+      "mapping_status": "unresolved",
+      "mapping_methods": [],
       "duplicate_legacy_id": true
     },
     {
@@ -8244,16 +8045,12 @@
         "R-002"
       ],
       "raw_ids": [
-        "RAW-0a40ff47693a473b",
         "RAW-b915459173f0e5f8"
       ],
-      "event_ids": [
-        "EV-1306e17cf1f3553e"
-      ],
-      "mapping_status": "mapped",
+      "event_ids": [],
+      "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": false
@@ -8273,8 +8070,10 @@
       "raw_ids": [
         "RAW-360456a447881cf7"
       ],
-      "event_ids": [],
-      "mapping_status": "raw_only",
+      "event_ids": [
+        "EV-e869f17214557633"
+      ],
+      "mapping_status": "mapped",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -8294,14 +8093,10 @@
       "legacy_raw_ids": [
         "R-003"
       ],
-      "raw_ids": [
-        "RAW-7aaf88523930298d"
-      ],
+      "raw_ids": [],
       "event_ids": [],
-      "mapping_status": "raw_only",
-      "mapping_methods": [
-        "legacy_raw_id"
-      ],
+      "mapping_status": "unresolved",
+      "mapping_methods": [],
       "duplicate_legacy_id": true
     },
     {
@@ -8396,7 +8191,7 @@
         "RAW-2834e7d77bd0fd0b"
       ],
       "event_ids": [
-        "EV-e594a091ce2940db"
+        "EV-9009adaed650ddde"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -8591,10 +8386,8 @@
       "raw_ids": [
         "RAW-7dab79e66a47139d"
       ],
-      "event_ids": [
-        "EV-5964027086487940"
-      ],
-      "mapping_status": "mapped",
+      "event_ids": [],
+      "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -8643,8 +8436,10 @@
       "raw_ids": [
         "RAW-ceabaff186bacceb"
       ],
-      "event_ids": [],
-      "mapping_status": "raw_only",
+      "event_ids": [
+        "EV-06487af6e98ea491"
+      ],
+      "mapping_status": "mapped",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -8717,10 +8512,8 @@
       "raw_ids": [
         "RAW-23c99b1d82798173"
       ],
-      "event_ids": [
-        "EV-3e1d53d372d8713d"
-      ],
-      "mapping_status": "mapped",
+      "event_ids": [],
+      "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -8791,8 +8584,10 @@
       "raw_ids": [
         "RAW-6bd089434d584ba6"
       ],
-      "event_ids": [],
-      "mapping_status": "raw_only",
+      "event_ids": [
+        "EV-4db890779221bd9a"
+      ],
+      "mapping_status": "mapped",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -8911,10 +8706,8 @@
       "raw_ids": [
         "RAW-5ae24c7860676e8e"
       ],
-      "event_ids": [
-        "EV-6dbf6cfbb35fe77c"
-      ],
-      "mapping_status": "mapped",
+      "event_ids": [],
+      "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -8962,7 +8755,7 @@
         "RAW-688e90b52006651c"
       ],
       "event_ids": [
-        "EV-4c0e7025692ab98c"
+        "EV-7e52d691a0553667"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -8985,8 +8778,7 @@
         "R-090"
       ],
       "raw_ids": [
-        "RAW-59e3bdbfc8a04b36",
-        "RAW-87d05fb8a695add8"
+        "RAW-59e3bdbfc8a04b36"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
@@ -9010,13 +8802,10 @@
         "R-015"
       ],
       "raw_ids": [
-        "RAW-3223bc7720a2107c",
         "RAW-aaf638366bfedfa8"
       ],
-      "event_ids": [
-        "EV-a70d5cf3ee6d6d64"
-      ],
-      "mapping_status": "mapped",
+      "event_ids": [],
+      "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -9037,7 +8826,6 @@
         "R-021"
       ],
       "raw_ids": [
-        "RAW-bc069c8a1dad5319",
         "RAW-c838a1d110dd72ea"
       ],
       "event_ids": [],
@@ -9062,7 +8850,6 @@
         "R-017"
       ],
       "raw_ids": [
-        "RAW-a026293ca72a49a4",
         "RAW-d25fa0c825393123"
       ],
       "event_ids": [],
@@ -9087,16 +8874,12 @@
         "R-029"
       ],
       "raw_ids": [
-        "RAW-dd4582894eb2c4c4",
-        "RAW-dff3fee99f9209d0"
+        "RAW-dd4582894eb2c4c4"
       ],
-      "event_ids": [
-        "EV-598888cce208de5c"
-      ],
-      "mapping_status": "mapped",
+      "event_ids": [],
+      "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -9140,8 +8923,10 @@
       "raw_ids": [
         "RAW-838470a88b30ba6c"
       ],
-      "event_ids": [],
-      "mapping_status": "raw_only",
+      "event_ids": [
+        "EV-9369ed00f9192f6c"
+      ],
+      "mapping_status": "mapped",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -9162,13 +8947,11 @@
         "R-028"
       ],
       "raw_ids": [
-        "RAW-89ff07a596f1223f",
-        "RAW-970c12a7a6ca88ec"
+        "RAW-89ff07a596f1223f"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
       "mapping_methods": [
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -9261,14 +9044,10 @@
       "legacy_raw_ids": [
         "R-011"
       ],
-      "raw_ids": [
-        "RAW-9aec5280798ab735"
-      ],
+      "raw_ids": [],
       "event_ids": [],
-      "mapping_status": "raw_only",
-      "mapping_methods": [
-        "legacy_raw_id"
-      ],
+      "mapping_status": "unresolved",
+      "mapping_methods": [],
       "duplicate_legacy_id": true
     },
     {
@@ -9284,14 +9063,12 @@
         "R-025"
       ],
       "raw_ids": [
-        "RAW-a048fc9ebb934f0c",
         "RAW-b3f9c9e497c60a29"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -9477,7 +9254,6 @@
         "R-029"
       ],
       "raw_ids": [
-        "RAW-2476c999cba130d5",
         "RAW-84fcc2dffe7e9eec"
       ],
       "event_ids": [],
@@ -9502,8 +9278,7 @@
         "R-020"
       ],
       "raw_ids": [
-        "RAW-c53058d14e489fce",
-        "RAW-e7f49efb57151ae3"
+        "RAW-c53058d14e489fce"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
@@ -9628,7 +9403,7 @@
         "RAW-21bd4b62c5e81066"
       ],
       "event_ids": [
-        "EV-4e5c5fb117a94574"
+        "EV-d1b9072f0e55eba5"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -9677,8 +9452,10 @@
       "raw_ids": [
         "RAW-2b94a14188ed2055"
       ],
-      "event_ids": [],
-      "mapping_status": "raw_only",
+      "event_ids": [
+        "EV-2c87c8ea47cbd1b6"
+      ],
+      "mapping_status": "mapped",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -9702,7 +9479,7 @@
         "RAW-3f0eb365598ddd03"
       ],
       "event_ids": [
-        "EV-fa930fb25552f666"
+        "EV-181b425d2a600cad"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -10142,7 +9919,7 @@
         "RAW-459c9999677ae10d"
       ],
       "event_ids": [
-        "EV-a9f1e8662a1e22cf"
+        "EV-778ae7684a4d782e"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -10387,8 +10164,10 @@
       "raw_ids": [
         "RAW-94a443297c18030f"
       ],
-      "event_ids": [],
-      "mapping_status": "raw_only",
+      "event_ids": [
+        "EV-730a2f95a698a96d"
+      ],
+      "mapping_status": "mapped",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -10435,10 +10214,8 @@
       "raw_ids": [
         "RAW-fc4ef3403bbbe91b"
       ],
-      "event_ids": [
-        "EV-9f067d8f0d23eb48"
-      ],
-      "mapping_status": "mapped",
+      "event_ids": [],
+      "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -10461,10 +10238,8 @@
       "raw_ids": [
         "RAW-503a45cacd577d4c"
       ],
-      "event_ids": [
-        "EV-302018f2e960a8bf"
-      ],
-      "mapping_status": "mapped",
+      "event_ids": [],
+      "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -10739,7 +10514,6 @@
         "R-021"
       ],
       "raw_ids": [
-        "RAW-501f369c417bba50",
         "RAW-ed9f63ccee13b997"
       ],
       "event_ids": [
@@ -10769,7 +10543,7 @@
         "RAW-5e8a1cd3d0492b66"
       ],
       "event_ids": [
-        "EV-b67b71905356837d"
+        "EV-c8928410f6c145eb"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -10895,7 +10669,7 @@
         "RAW-c61aaa7b3175cebc"
       ],
       "event_ids": [
-        "EV-7dac684a33062b7f"
+        "EV-c5643983538c6513"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -10921,7 +10695,7 @@
         "RAW-adddd8d024241073"
       ],
       "event_ids": [
-        "EV-8a0866a27909f9d9"
+        "EV-3b40ec144e5db22c"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -10973,7 +10747,7 @@
         "RAW-b3a1f3556d776713"
       ],
       "event_ids": [
-        "EV-94b6fae7dd4e2b95"
+        "EV-a84ec4216d3ded6d"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -10998,11 +10772,10 @@
         "R-005"
       ],
       "raw_ids": [
-        "RAW-5218d014ce9e072e",
-        "RAW-7bc23236deb221f4"
+        "RAW-5218d014ce9e072e"
       ],
       "event_ids": [
-        "EV-74344d86ce9081b7"
+        "EV-bbab0dff2f55a4f6"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -11103,10 +10876,8 @@
       "raw_ids": [
         "RAW-cabf4aa58b7e7791"
       ],
-      "event_ids": [
-        "EV-8bbc23e53e799d9d"
-      ],
-      "mapping_status": "mapped",
+      "event_ids": [],
+      "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -11154,7 +10925,7 @@
         "RAW-518aa875e58ae4a4"
       ],
       "event_ids": [
-        "EV-6180de2e02597d9d"
+        "EV-0e84a2f49d765ce3"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -11205,10 +10976,8 @@
       "raw_ids": [
         "RAW-5100b03136925b0f"
       ],
-      "event_ids": [
-        "EV-968709fe29b77eba"
-      ],
-      "mapping_status": "mapped",
+      "event_ids": [],
+      "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -11231,8 +11000,10 @@
       "raw_ids": [
         "RAW-805c7eb15b8ce4e6"
       ],
-      "event_ids": [],
-      "mapping_status": "raw_only",
+      "event_ids": [
+        "EV-7e745300bc3df0e3"
+      ],
+      "mapping_status": "mapped",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -11503,10 +11274,8 @@
       "raw_ids": [
         "RAW-234548f4e695684b"
       ],
-      "event_ids": [
-        "EV-a2cc4c7b0c23dc34"
-      ],
-      "mapping_status": "mapped",
+      "event_ids": [],
+      "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -11556,7 +11325,7 @@
         "RAW-efc0950bc32247a3"
       ],
       "event_ids": [
-        "EV-b1138bccf5ccd86c"
+        "EV-a42e51959c627554"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -11705,13 +11474,11 @@
         "R-072"
       ],
       "raw_ids": [
-        "RAW-35c49bd036b84252",
         "RAW-3ec5f6f75a479f8f"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
       "mapping_methods": [
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -11729,14 +11496,12 @@
         "R-036"
       ],
       "raw_ids": [
-        "RAW-40c80772836a7cdc",
         "RAW-51a56b8eb730f9f8"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -11778,13 +11543,11 @@
         "R-046"
       ],
       "raw_ids": [
-        "RAW-b0e202732f1f76be",
         "RAW-d3ecfce2a3d665b3"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
       "mapping_methods": [
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -11801,16 +11564,10 @@
       "legacy_raw_ids": [
         "R-019"
       ],
-      "raw_ids": [
-        "RAW-6bc56a4bf90072eb"
-      ],
-      "event_ids": [
-        "EV-6011ab83ebd290bd"
-      ],
-      "mapping_status": "mapped",
-      "mapping_methods": [
-        "legacy_raw_id"
-      ],
+      "raw_ids": [],
+      "event_ids": [],
+      "mapping_status": "unresolved",
+      "mapping_methods": [],
       "duplicate_legacy_id": true
     },
     {
@@ -11828,10 +11585,8 @@
       "raw_ids": [
         "RAW-0541f50f1083c574"
       ],
-      "event_ids": [
-        "EV-8bbc23e53e799d9d"
-      ],
-      "mapping_status": "mapped",
+      "event_ids": [],
+      "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -11978,7 +11733,6 @@
         "R-068"
       ],
       "raw_ids": [
-        "RAW-47191015a82b80ed",
         "RAW-95b3693dd3ac0138"
       ],
       "event_ids": [
@@ -11986,7 +11740,6 @@
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -12004,16 +11757,12 @@
         "R-004"
       ],
       "raw_ids": [
-        "RAW-c95056276c76a4e0",
-        "RAW-cf06df12c5b46e73"
+        "RAW-c95056276c76a4e0"
       ],
-      "event_ids": [
-        "EV-54c329f4c8e4227b"
-      ],
-      "mapping_status": "mapped",
+      "event_ids": [],
+      "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -12055,7 +11804,6 @@
         "R-010"
       ],
       "raw_ids": [
-        "RAW-141eeb1394dc8c1f",
         "RAW-b1435c797d12dc32"
       ],
       "event_ids": [
@@ -12064,7 +11812,6 @@
       "mapping_status": "mapped",
       "mapping_methods": [
         "legacy_path",
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -12108,14 +11855,12 @@
         "R-056"
       ],
       "raw_ids": [
-        "RAW-e82ef34bbb284233",
-        "RAW-e94ab18ef5677d17"
+        "RAW-e82ef34bbb284233"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -12157,8 +11902,7 @@
         "R-066"
       ],
       "raw_ids": [
-        "RAW-0e1f4b473ea156f8",
-        "RAW-3716d1336f8e05b7"
+        "RAW-0e1f4b473ea156f8"
       ],
       "event_ids": [
         "EV-8bbc23e53e799d9d"
@@ -12166,7 +11910,6 @@
       "mapping_status": "mapped",
       "mapping_methods": [
         "legacy_path",
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -12238,10 +11981,8 @@
       "raw_ids": [
         "RAW-86b972fad861cc01"
       ],
-      "event_ids": [
-        "EV-b563d5cf0f12119e"
-      ],
-      "mapping_status": "mapped",
+      "event_ids": [],
+      "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -12262,14 +12003,14 @@
         "R-046"
       ],
       "raw_ids": [
-        "RAW-21c991b044c03224",
         "RAW-672f395c7e58543b"
       ],
-      "event_ids": [],
-      "mapping_status": "raw_only",
+      "event_ids": [
+        "EV-39717cdbada984d7"
+      ],
+      "mapping_status": "mapped",
       "mapping_methods": [
         "legacy_path",
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -12289,8 +12030,10 @@
       "raw_ids": [
         "RAW-672f395c7e58543b"
       ],
-      "event_ids": [],
-      "mapping_status": "raw_only",
+      "event_ids": [
+        "EV-39717cdbada984d7"
+      ],
+      "mapping_status": "mapped",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -12413,8 +12156,10 @@
       "raw_ids": [
         "RAW-512503a4a5e026bb"
       ],
-      "event_ids": [],
-      "mapping_status": "raw_only",
+      "event_ids": [
+        "EV-da6fe8c311fc8406"
+      ],
+      "mapping_status": "mapped",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -12438,7 +12183,7 @@
         "RAW-9e5f5bc0224f21c7"
       ],
       "event_ids": [
-        "EV-7aaed0a2ae5cf8b6"
+        "EV-e7dcecaed5a0ee5b"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -12464,8 +12209,10 @@
         "RAW-4b755a2f016ad7f1",
         "RAW-87d948e254ffe51f"
       ],
-      "event_ids": [],
-      "mapping_status": "raw_only",
+      "event_ids": [
+        "EV-8aa51e324eca8fc2"
+      ],
+      "mapping_status": "mapped",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -12486,8 +12233,7 @@
         "R-026"
       ],
       "raw_ids": [
-        "RAW-11b04b0269190426",
-        "RAW-1d55994c2fbc2b41"
+        "RAW-11b04b0269190426"
       ],
       "event_ids": [
         "EV-9fc8916c19c19f99"
@@ -12616,14 +12362,10 @@
       "legacy_raw_ids": [
         "R-109"
       ],
-      "raw_ids": [
-        "RAW-c1e3b21c77e6b547"
-      ],
+      "raw_ids": [],
       "event_ids": [],
-      "mapping_status": "raw_only",
-      "mapping_methods": [
-        "legacy_raw_id"
-      ],
+      "mapping_status": "unresolved",
+      "mapping_methods": [],
       "duplicate_legacy_id": true
     },
     {
@@ -12642,7 +12384,7 @@
         "RAW-392794dbe69d623f"
       ],
       "event_ids": [
-        "EV-5ca4c08ec3e2c3b7"
+        "EV-e7dcecaed5a0ee5b"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -12746,7 +12488,7 @@
         "RAW-7915df53b6e43f60"
       ],
       "event_ids": [
-        "EV-adf92ecb7cd8714f"
+        "EV-20d762872664fddb"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -12872,7 +12614,7 @@
         "RAW-92d60c0df2942572"
       ],
       "event_ids": [
-        "EV-a1e3aeedc80c61b9"
+        "EV-9300044a58395552"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -12997,15 +12739,13 @@
         "R-006"
       ],
       "raw_ids": [
-        "RAW-5dfa75c4d92a2637",
-        "RAW-8c083ddd763b5c7f"
+        "RAW-5dfa75c4d92a2637"
       ],
       "event_ids": [
-        "EV-a1552fec696f1a43"
+        "EV-f0fee44c1dfdcb09"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": false
@@ -13023,7 +12763,6 @@
         "R-032"
       ],
       "raw_ids": [
-        "RAW-0e2ea9051cd40511",
         "RAW-53cfbfbb58fb45bf"
       ],
       "event_ids": [
@@ -13049,16 +12788,10 @@
       "legacy_raw_ids": [
         "R-009"
       ],
-      "raw_ids": [
-        "RAW-7d55b22bd3d1c758"
-      ],
-      "event_ids": [
-        "EV-d40a4e1b7a53cabe"
-      ],
-      "mapping_status": "mapped",
-      "mapping_methods": [
-        "legacy_raw_id"
-      ],
+      "raw_ids": [],
+      "event_ids": [],
+      "mapping_status": "unresolved",
+      "mapping_methods": [],
       "duplicate_legacy_id": true
     },
     {
@@ -13074,15 +12807,13 @@
         "R-005"
       ],
       "raw_ids": [
-        "RAW-18f67bc5fecbad34",
         "RAW-3863bd6f25d38a84"
       ],
       "event_ids": [
-        "EV-10c70ced68ccb31b"
+        "EV-dfddbb260b3d1c77"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -13099,14 +12830,10 @@
       "legacy_raw_ids": [
         "R-018"
       ],
-      "raw_ids": [
-        "RAW-219e8e45c747f241"
-      ],
+      "raw_ids": [],
       "event_ids": [],
-      "mapping_status": "raw_only",
-      "mapping_methods": [
-        "legacy_raw_id"
-      ],
+      "mapping_status": "unresolved",
+      "mapping_methods": [],
       "duplicate_legacy_id": true
     },
     {
@@ -13175,7 +12902,7 @@
         "RAW-3863bd6f25d38a84"
       ],
       "event_ids": [
-        "EV-10c70ced68ccb31b"
+        "EV-dfddbb260b3d1c77"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -13198,15 +12925,11 @@
         "R-017"
       ],
       "raw_ids": [
-        "RAW-a92519dc0679809f",
-        "RAW-edacfe93b5751a9f"
+        "RAW-a92519dc0679809f"
       ],
-      "event_ids": [
-        "EV-19d26c4129df1cee"
-      ],
-      "mapping_status": "mapped",
+      "event_ids": [],
+      "mapping_status": "raw_only",
       "mapping_methods": [
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": false
@@ -13224,7 +12947,6 @@
         "R-022"
       ],
       "raw_ids": [
-        "RAW-706387d75150bc8f",
         "RAW-a296e842c31fb767"
       ],
       "event_ids": [
@@ -13232,7 +12954,6 @@
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": false
@@ -13250,13 +12971,11 @@
         "R-019"
       ],
       "raw_ids": [
-        "RAW-1578ac25ac23e524",
         "RAW-962724f9c03b8ad6"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
       "mapping_methods": [
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": false
@@ -13274,15 +12993,13 @@
         "R-018"
       ],
       "raw_ids": [
-        "RAW-5aa2147da6bc56d3",
         "RAW-afedfc330cef0cef"
       ],
       "event_ids": [
-        "EV-ac6f75718393f2c4"
+        "EV-b3c7c4bff17063d8"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": false
@@ -13303,7 +13020,7 @@
         "RAW-2cbaa8332b976efc"
       ],
       "event_ids": [
-        "EV-7f77e6a2d1698307"
+        "EV-974a6b7d0e0efef2"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -13407,7 +13124,7 @@
         "RAW-9a5d67d3a5cabb8b"
       ],
       "event_ids": [
-        "EV-ac6f75718393f2c4"
+        "EV-48075ca70a5458ec"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -13457,7 +13174,7 @@
         "RAW-678b75fdc2045f18"
       ],
       "event_ids": [
-        "EV-7cd4a5b931f0b667"
+        "EV-113899096a32165a"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -13483,7 +13200,7 @@
         "RAW-d5f9e65e0b85bf7f"
       ],
       "event_ids": [
-        "EV-80e54c9a390da293"
+        "EV-13ec78dfdbca678b"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -13561,7 +13278,7 @@
         "RAW-e23227b3e6a3382b"
       ],
       "event_ids": [
-        "EV-8bbe9b602c09273d"
+        "EV-463cb26b5e03c7f7"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -13636,10 +13353,8 @@
       "raw_ids": [
         "RAW-fb00452a43a20c8c"
       ],
-      "event_ids": [
-        "EV-28b8d39cf9a104e1"
-      ],
-      "mapping_status": "mapped",
+      "event_ids": [],
+      "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -13737,7 +13452,7 @@
         "RAW-a16377a97bc0ec67"
       ],
       "event_ids": [
-        "EV-60b2d4d401bf5e97"
+        "EV-6e516b6e68def9cf"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -13787,7 +13502,7 @@
         "RAW-e6c4ff82ba76f846"
       ],
       "event_ids": [
-        "EV-82020f9eaea90951"
+        "EV-43b7f45e9bd7ec9b"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -14016,8 +13731,10 @@
       "raw_ids": [
         "RAW-6c1ed1eb77cad848"
       ],
-      "event_ids": [],
-      "mapping_status": "raw_only",
+      "event_ids": [
+        "EV-f8ba1728de6a4899"
+      ],
+      "mapping_status": "mapped",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -14093,7 +13810,7 @@
         "RAW-a99a702fb97ff925"
       ],
       "event_ids": [
-        "EV-ed65f3187aa6aa40"
+        "EV-87432dbb99cd6033"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -14145,7 +13862,7 @@
         "RAW-28d3dc0185933fc0"
       ],
       "event_ids": [
-        "EV-2dff32c1b6f813e4"
+        "EV-5f718c76c285ac9b"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -14326,8 +14043,10 @@
       "raw_ids": [
         "RAW-d3539666ea0ce079"
       ],
-      "event_ids": [],
-      "mapping_status": "raw_only",
+      "event_ids": [
+        "EV-0cb98302768c2e0a"
+      ],
+      "mapping_status": "mapped",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -14350,13 +14069,10 @@
         "R-006"
       ],
       "raw_ids": [
-        "RAW-8f256c93226ef598",
         "RAW-b37af7f4dc6d0dc9"
       ],
-      "event_ids": [
-        "EV-7dac684a33062b7f"
-      ],
-      "mapping_status": "mapped",
+      "event_ids": [],
+      "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -14379,11 +14095,10 @@
         "R-003"
       ],
       "raw_ids": [
-        "RAW-8f256c93226ef598",
-        "RAW-a010cfe133d2b813"
+        "RAW-8f256c93226ef598"
       ],
       "event_ids": [
-        "EV-7dac684a33062b7f"
+        "EV-7add33b4c74dbf1a"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -14409,7 +14124,7 @@
         "RAW-4bb7e9b2577b05d8"
       ],
       "event_ids": [
-        "EV-adafffa563a53d49"
+        "EV-61546e58c0e669e7"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -14653,7 +14368,7 @@
         "RAW-cc230c84b5f70016"
       ],
       "event_ids": [
-        "EV-f074a62a26f37ae3"
+        "EV-44a4e92c03a31ab1"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -14678,10 +14393,8 @@
       "raw_ids": [
         "RAW-0a86b9839f9a500a"
       ],
-      "event_ids": [
-        "EV-57ab4ab35bcefe19"
-      ],
-      "mapping_status": "mapped",
+      "event_ids": [],
+      "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -14776,8 +14489,10 @@
       "raw_ids": [
         "RAW-a394b4f119f8b77e"
       ],
-      "event_ids": [],
-      "mapping_status": "raw_only",
+      "event_ids": [
+        "EV-df3f5cf6bc985a9c"
+      ],
+      "mapping_status": "mapped",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -14904,14 +14619,10 @@
       "legacy_raw_ids": [
         "R-009"
       ],
-      "raw_ids": [
-        "RAW-589d16513ed85539"
-      ],
+      "raw_ids": [],
       "event_ids": [],
-      "mapping_status": "raw_only",
-      "mapping_methods": [
-        "legacy_raw_id"
-      ],
+      "mapping_status": "unresolved",
+      "mapping_methods": [],
       "duplicate_legacy_id": false
     },
     {
@@ -15149,10 +14860,8 @@
       "raw_ids": [
         "RAW-d6bbdf1212dadff6"
       ],
-      "event_ids": [
-        "EV-4905e6385c8f4c3a"
-      ],
-      "mapping_status": "mapped",
+      "event_ids": [],
+      "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -15228,7 +14937,7 @@
         "RAW-d52c66d07849c989"
       ],
       "event_ids": [
-        "EV-ae89898e7aa4a4d6"
+        "EV-95a393fd0183b5f3"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -15251,14 +14960,12 @@
         "R-010"
       ],
       "raw_ids": [
-        "RAW-b6984d9b54f2ee29",
-        "RAW-bbd63884e23a280d"
+        "RAW-b6984d9b54f2ee29"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -15323,16 +15030,10 @@
       "legacy_raw_ids": [
         "R-012"
       ],
-      "raw_ids": [
-        "RAW-670b7e4b1bcf3868"
-      ],
-      "event_ids": [
-        "EV-5a26f343846cb8ad"
-      ],
-      "mapping_status": "mapped",
-      "mapping_methods": [
-        "legacy_raw_id"
-      ],
+      "raw_ids": [],
+      "event_ids": [],
+      "mapping_status": "unresolved",
+      "mapping_methods": [],
       "duplicate_legacy_id": true
     },
     {
@@ -15348,17 +15049,12 @@
         "R-003"
       ],
       "raw_ids": [
-        "RAW-e3e1982578fcac77",
         "RAW-ec8ae9a085f4323f"
       ],
-      "event_ids": [
-        "EV-1d972159120db2fc",
-        "EV-dbbe3fd637be213f"
-      ],
-      "mapping_status": "ambiguous",
+      "event_ids": [],
+      "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -15378,10 +15074,8 @@
       "raw_ids": [
         "RAW-ec8ae9a085f4323f"
       ],
-      "event_ids": [
-        "EV-1d972159120db2fc"
-      ],
-      "mapping_status": "mapped",
+      "event_ids": [],
+      "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -15401,14 +15095,10 @@
       "legacy_raw_ids": [
         "R-006"
       ],
-      "raw_ids": [
-        "RAW-978c8559591fbdd2"
-      ],
+      "raw_ids": [],
       "event_ids": [],
-      "mapping_status": "raw_only",
-      "mapping_methods": [
-        "legacy_raw_id"
-      ],
+      "mapping_status": "unresolved",
+      "mapping_methods": [],
       "duplicate_legacy_id": true
     },
     {
@@ -15472,14 +15162,12 @@
         "R-014"
       ],
       "raw_ids": [
-        "RAW-b6984d9b54f2ee29",
         "RAW-bbd63884e23a280d"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -15497,14 +15185,12 @@
         "R-016"
       ],
       "raw_ids": [
-        "RAW-c20ff252f2a3d115",
         "RAW-f0949ef294b94286"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": false
@@ -15521,16 +15207,10 @@
       "legacy_raw_ids": [
         "R-004"
       ],
-      "raw_ids": [
-        "RAW-ec8ae9a085f4323f"
-      ],
-      "event_ids": [
-        "EV-1d972159120db2fc"
-      ],
-      "mapping_status": "mapped",
-      "mapping_methods": [
-        "legacy_raw_id"
-      ],
+      "raw_ids": [],
+      "event_ids": [],
+      "mapping_status": "unresolved",
+      "mapping_methods": [],
       "duplicate_legacy_id": true
     },
     {
@@ -15548,8 +15228,10 @@
       "raw_ids": [
         "RAW-b53918062b0fab53"
       ],
-      "event_ids": [],
-      "mapping_status": "raw_only",
+      "event_ids": [
+        "EV-88f4ee8cd57bdf42"
+      ],
+      "mapping_status": "mapped",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -15601,15 +15283,12 @@
         "R-013"
       ],
       "raw_ids": [
-        "RAW-49781cc40764e84e",
         "RAW-72c9f7897463c8db",
-        "RAW-978c8559591fbdd2",
-        "RAW-e8ee51fecf078c53"
+        "RAW-978c8559591fbdd2"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
       "mapping_methods": [
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -15704,7 +15383,7 @@
         "RAW-2a01463284f6067e"
       ],
       "event_ids": [
-        "EV-c28e0d02272537d8"
+        "EV-cac9d9f31ef675ce"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -15730,7 +15409,7 @@
         "RAW-d5d28f027a3ef98b"
       ],
       "event_ids": [
-        "EV-d31057c6f6ec28ba"
+        "EV-dab4d3f2059e8880"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -15804,7 +15483,7 @@
         "RAW-0c058e6c9ab2fc06"
       ],
       "event_ids": [
-        "EV-19ea623bb5eabdd5"
+        "EV-4bf0e4043c3562f2"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -15877,10 +15556,8 @@
       "raw_ids": [
         "RAW-be9d78247d8d1bb4"
       ],
-      "event_ids": [
-        "EV-59933d63c4051085"
-      ],
-      "mapping_status": "mapped",
+      "event_ids": [],
+      "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -15930,7 +15607,7 @@
         "RAW-b39b320df06285f4"
       ],
       "event_ids": [
-        "EV-c98d4ee7764d51b2"
+        "EV-a39ca82d354c7197"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -15980,7 +15657,7 @@
         "RAW-19350550b241c6fb"
       ],
       "event_ids": [
-        "EV-588cf9609e44edc9"
+        "EV-e878e56967902718"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -16151,8 +15828,10 @@
       "raw_ids": [
         "RAW-25474a8ad21d3f10"
       ],
-      "event_ids": [],
-      "mapping_status": "raw_only",
+      "event_ids": [
+        "EV-ad10892743d344ae"
+      ],
+      "mapping_status": "mapped",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -16227,10 +15906,8 @@
       "raw_ids": [
         "RAW-e04e5d68d10a8723"
       ],
-      "event_ids": [
-        "EV-2de6ff1a7aebd6e7"
-      ],
-      "mapping_status": "mapped",
+      "event_ids": [],
+      "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -16353,10 +16030,8 @@
       "raw_ids": [
         "RAW-e53f2f88aabf1d89"
       ],
-      "event_ids": [
-        "EV-c7336cf617a545ce"
-      ],
-      "mapping_status": "mapped",
+      "event_ids": [],
+      "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -16430,7 +16105,7 @@
         "RAW-00abea76a539b3a4"
       ],
       "event_ids": [
-        "EV-3ed6744b43d9b8df"
+        "EV-39460c022e56badd"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -16530,7 +16205,7 @@
         "RAW-b2ad1486dfcf4412"
       ],
       "event_ids": [
-        "EV-305091abd41ad88d"
+        "EV-3f8ba5855b64dd1a"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -16579,10 +16254,8 @@
       "raw_ids": [
         "RAW-2208d2b395b59176"
       ],
-      "event_ids": [
-        "EV-852c816998aeffbf"
-      ],
-      "mapping_status": "mapped",
+      "event_ids": [],
+      "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -16633,8 +16306,10 @@
         "RAW-a95072970057c35e",
         "RAW-dcd16e1351c74f11"
       ],
-      "event_ids": [],
-      "mapping_status": "raw_only",
+      "event_ids": [
+        "EV-1b46e22e6b51032d"
+      ],
+      "mapping_status": "mapped",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -16827,14 +16502,12 @@
         "R-105"
       ],
       "raw_ids": [
-        "RAW-96e4fd3613b2a506",
         "RAW-b00efb112dad5a0e"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -16924,14 +16597,12 @@
         "R-068"
       ],
       "raw_ids": [
-        "RAW-35c49bd036b84252",
-        "RAW-46859607099a8ecd"
+        "RAW-35c49bd036b84252"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -17021,14 +16692,12 @@
         "R-158"
       ],
       "raw_ids": [
-        "RAW-49df405615a10fc7",
-        "RAW-c393710a469a6468"
+        "RAW-49df405615a10fc7"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": false
@@ -17046,14 +16715,12 @@
         "R-093"
       ],
       "raw_ids": [
-        "RAW-4f1b3407b73e5c90",
         "RAW-60b79e3301be695e"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": false
@@ -17070,14 +16737,10 @@
       "legacy_raw_ids": [
         "R-118"
       ],
-      "raw_ids": [
-        "RAW-26d3fd5387455623"
-      ],
+      "raw_ids": [],
       "event_ids": [],
-      "mapping_status": "raw_only",
-      "mapping_methods": [
-        "legacy_raw_id"
-      ],
+      "mapping_status": "unresolved",
+      "mapping_methods": [],
       "duplicate_legacy_id": true
     },
     {
@@ -17093,14 +16756,12 @@
         "R-015"
       ],
       "raw_ids": [
-        "RAW-a28684b53b6fb4b6",
-        "RAW-b62384fd05f5f6c8"
+        "RAW-a28684b53b6fb4b6"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -17142,14 +16803,12 @@
         "R-118"
       ],
       "raw_ids": [
-        "RAW-bc92c68d95fc0bd1",
         "RAW-e8f99c2ab83960eb"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": false
@@ -17239,14 +16898,12 @@
         "R-135"
       ],
       "raw_ids": [
-        "RAW-2af30ce33df46b8b",
-        "RAW-e2d51754de98b374"
+        "RAW-2af30ce33df46b8b"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -17264,13 +16921,11 @@
         "R-040"
       ],
       "raw_ids": [
-        "RAW-7a19f92b78e89a9f",
         "RAW-a118e39bf39aae5a"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
       "mapping_methods": [
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -17288,16 +16943,12 @@
         "R-045"
       ],
       "raw_ids": [
-        "RAW-915d68f241453b81",
         "RAW-f7d99678937121b5"
       ],
-      "event_ids": [
-        "EV-05be25222ebd2bc2"
-      ],
-      "mapping_status": "mapped",
+      "event_ids": [],
+      "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": false
@@ -17345,18 +16996,14 @@
         "R-047"
       ],
       "raw_ids": [
-        "RAW-055c2a3cdc46409d",
         "RAW-6704dd5f0a0a21a2",
-        "RAW-708d930ca0c598fc",
         "RAW-b60fa2142d90b593",
-        "RAW-ea75df97ef46c1ea",
         "RAW-edebfbb25581a4b2"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -17448,10 +17095,8 @@
       "raw_ids": [
         "RAW-7fb42994899d25f5"
       ],
-      "event_ids": [
-        "EV-0e8e45fb09e183e3"
-      ],
-      "mapping_status": "mapped",
+      "event_ids": [],
+      "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -17546,10 +17191,8 @@
       "raw_ids": [
         "RAW-cbe0f071c17a64b0"
       ],
-      "event_ids": [
-        "EV-29a08a4c2d7bccfc"
-      ],
-      "mapping_status": "mapped",
+      "event_ids": [],
+      "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -17573,7 +17216,7 @@
         "RAW-95256b5def34a405"
       ],
       "event_ids": [
-        "EV-75b741c8c09d4384"
+        "EV-aae8b6aa0da7f103"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -17842,8 +17485,10 @@
       "raw_ids": [
         "RAW-b6f29e2b151f77ea"
       ],
-      "event_ids": [],
-      "mapping_status": "raw_only",
+      "event_ids": [
+        "EV-710b145230faa692"
+      ],
+      "mapping_status": "mapped",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -17864,14 +17509,12 @@
         "R-034"
       ],
       "raw_ids": [
-        "RAW-03f9b72cc0779d3f",
-        "RAW-94a92f2a33a1a7a1"
+        "RAW-03f9b72cc0779d3f"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -17913,16 +17556,12 @@
         "R-012"
       ],
       "raw_ids": [
-        "RAW-738234c0247e1522",
-        "RAW-b1435c797d12dc32"
+        "RAW-738234c0247e1522"
       ],
-      "event_ids": [
-        "EV-085cb0ece7ede76c"
-      ],
-      "mapping_status": "mapped",
+      "event_ids": [],
+      "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -17990,7 +17629,6 @@
         "R-007"
       ],
       "raw_ids": [
-        "RAW-c95056276c76a4e0",
         "RAW-d30971df7f502c90"
       ],
       "event_ids": [
@@ -17999,7 +17637,6 @@
       "mapping_status": "mapped",
       "mapping_methods": [
         "legacy_path",
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -18017,16 +17654,12 @@
         "R-014"
       ],
       "raw_ids": [
-        "RAW-738234c0247e1522",
         "RAW-842d5465f1014808"
       ],
-      "event_ids": [
-        "EV-56f80f42cf6a7096"
-      ],
-      "mapping_status": "mapped",
+      "event_ids": [],
+      "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -18046,10 +17679,8 @@
       "raw_ids": [
         "RAW-842d5465f1014808"
       ],
-      "event_ids": [
-        "EV-56f80f42cf6a7096"
-      ],
-      "mapping_status": "mapped",
+      "event_ids": [],
+      "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -18070,8 +17701,7 @@
         "R-019"
       ],
       "raw_ids": [
-        "RAW-4b156e1dd065b2a8",
-        "RAW-c6d2b7fae4534b21"
+        "RAW-4b156e1dd065b2a8"
       ],
       "event_ids": [
         "EV-60c27ec9b857f5c2"
@@ -18079,7 +17709,6 @@
       "mapping_status": "mapped",
       "mapping_methods": [
         "legacy_path",
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -18123,14 +17752,12 @@
         "R-027"
       ],
       "raw_ids": [
-        "RAW-5f4f4dd7318213d4",
         "RAW-8ad4c1e9a1f38048"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -18172,14 +17799,12 @@
         "R-077"
       ],
       "raw_ids": [
-        "RAW-afbba3a1d3188648",
-        "RAW-f80adc59b0b41cc2"
+        "RAW-afbba3a1d3188648"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -18221,14 +17846,12 @@
         "R-008"
       ],
       "raw_ids": [
-        "RAW-141eeb1394dc8c1f",
-        "RAW-1f9176d14c7a94e3"
+        "RAW-141eeb1394dc8c1f"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -18270,7 +17893,6 @@
         "R-003"
       ],
       "raw_ids": [
-        "RAW-8d29db18d6981bc0",
         "RAW-cf06df12c5b46e73"
       ],
       "event_ids": [
@@ -18279,7 +17901,6 @@
       "mapping_status": "mapped",
       "mapping_methods": [
         "legacy_path",
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -18321,14 +17942,12 @@
         "R-071"
       ],
       "raw_ids": [
-        "RAW-6caafff17cb0d7a9",
-        "RAW-9723b2b4a29b72fb"
+        "RAW-6caafff17cb0d7a9"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -18369,16 +17988,10 @@
       "legacy_raw_ids": [
         "R-106"
       ],
-      "raw_ids": [
-        "RAW-7b43be46aaff07d1"
-      ],
-      "event_ids": [
-        "EV-8fcecabca2e92b40"
-      ],
-      "mapping_status": "mapped",
-      "mapping_methods": [
-        "legacy_raw_id"
-      ],
+      "raw_ids": [],
+      "event_ids": [],
+      "mapping_status": "unresolved",
+      "mapping_methods": [],
       "duplicate_legacy_id": false
     },
     {
@@ -18446,14 +18059,12 @@
         "R-057"
       ],
       "raw_ids": [
-        "RAW-cfd5f7036e4c3929",
         "RAW-d85833b2566fd078"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -18643,10 +18254,8 @@
       "raw_ids": [
         "RAW-e89e9a8394db344c"
       ],
-      "event_ids": [
-        "EV-679f2e5b30947066"
-      ],
-      "mapping_status": "mapped",
+      "event_ids": [],
+      "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -18887,10 +18496,8 @@
       "raw_ids": [
         "RAW-36ea69dd09473943"
       ],
-      "event_ids": [
-        "EV-54c7f0169fbd500e"
-      ],
-      "mapping_status": "mapped",
+      "event_ids": [],
+      "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -18937,8 +18544,10 @@
       "raw_ids": [
         "RAW-5302412fc8838e4c"
       ],
-      "event_ids": [],
-      "mapping_status": "raw_only",
+      "event_ids": [
+        "EV-44e112cd9089d10f"
+      ],
+      "mapping_status": "mapped",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -18986,7 +18595,7 @@
         "RAW-a89d5b55e404cf78"
       ],
       "event_ids": [
-        "EV-abe44ba0233e8516"
+        "EV-14a666fc27d73a80"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -19061,8 +18670,10 @@
       "raw_ids": [
         "RAW-0cf1d9eac0babb45"
       ],
-      "event_ids": [],
-      "mapping_status": "raw_only",
+      "event_ids": [
+        "EV-b7ba9acba80a852e"
+      ],
+      "mapping_status": "mapped",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -19110,7 +18721,7 @@
         "RAW-97d5ff9144feb738"
       ],
       "event_ids": [
-        "EV-ad2c8dc4a08de64c"
+        "EV-9e04edd969c977a1"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -19186,7 +18797,7 @@
         "RAW-f7ef4503999a0cc8"
       ],
       "event_ids": [
-        "EV-53f7c11bfe7b50d1"
+        "EV-ceb7d70f0043eb81"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -19286,7 +18897,7 @@
         "RAW-a1c3a711756b999c"
       ],
       "event_ids": [
-        "EV-9c47099ed5d824a7"
+        "EV-c3babb7738875383"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -19338,7 +18949,7 @@
         "RAW-677e92d523d02478"
       ],
       "event_ids": [
-        "EV-3456f723929eff1b"
+        "EV-e2db9c4e7c16ae7a"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -19387,8 +18998,7 @@
         "R-061"
       ],
       "raw_ids": [
-        "RAW-b011ca1ffa52de49",
-        "RAW-b7b8e3508852b0b9"
+        "RAW-b011ca1ffa52de49"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
@@ -19412,13 +19022,10 @@
         "R-060"
       ],
       "raw_ids": [
-        "RAW-8f9ae71d87f082c8",
         "RAW-b804ff3258fbf809"
       ],
-      "event_ids": [
-        "EV-9659eb492a9eea1b"
-      ],
-      "mapping_status": "mapped",
+      "event_ids": [],
+      "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -19439,8 +19046,7 @@
         "R-075"
       ],
       "raw_ids": [
-        "RAW-98777733fefa91bd",
-        "RAW-a62a728a4ea2c105"
+        "RAW-98777733fefa91bd"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
@@ -19464,7 +19070,6 @@
         "R-003"
       ],
       "raw_ids": [
-        "RAW-38d2a301006d9055",
         "RAW-85875c3bea80f23f",
         "RAW-c471572548183b53"
       ],
@@ -19491,8 +19096,7 @@
       ],
       "raw_ids": [
         "RAW-85875c3bea80f23f",
-        "RAW-c471572548183b53",
-        "RAW-c7d031f6eb125808"
+        "RAW-c471572548183b53"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
@@ -19543,7 +19147,6 @@
         "R-013"
       ],
       "raw_ids": [
-        "RAW-0adc3b5ee0909754",
         "RAW-ecc19b547f8f580c",
         "RAW-fa0b27ddc1fe7505"
       ],
@@ -19597,16 +19200,13 @@
         "R-014"
       ],
       "raw_ids": [
-        "RAW-7655324f72c9a837",
-        "RAW-885ae83f111bcca6"
+        "RAW-7655324f72c9a837"
       ],
       "event_ids": [
-        "EV-ad0589423b3aa1ce",
         "EV-f487788f3d44f288"
       ],
-      "mapping_status": "ambiguous",
+      "mapping_status": "mapped",
       "mapping_methods": [
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -19650,16 +19250,13 @@
         "R-010"
       ],
       "raw_ids": [
-        "RAW-956ec006197ae907",
-        "RAW-fa0b27ddc1fe7505"
+        "RAW-956ec006197ae907"
       ],
       "event_ids": [
-        "EV-46b9ae8e68164b93",
-        "EV-644337db309a1c82"
+        "EV-46b9ae8e68164b93"
       ],
-      "mapping_status": "ambiguous",
+      "mapping_status": "mapped",
       "mapping_methods": [
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -19678,8 +19275,7 @@
       ],
       "raw_ids": [
         "RAW-38d2a301006d9055",
-        "RAW-a832cac2c41f5c56",
-        "RAW-c471572548183b53"
+        "RAW-a832cac2c41f5c56"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
@@ -19704,11 +19300,10 @@
       ],
       "raw_ids": [
         "RAW-78369bca908e9132",
-        "RAW-9afc85274223d9cd",
         "RAW-be58a8482117f3cb"
       ],
       "event_ids": [
-        "EV-41e534c846124691"
+        "EV-cea99e5d7f93d56a"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -19731,12 +19326,11 @@
         "R-027"
       ],
       "raw_ids": [
-        "RAW-75b1afa0063f2b24",
         "RAW-d38048e642b2054b",
         "RAW-dd6ae077d3ad9148"
       ],
       "event_ids": [
-        "EV-cf883e02c693dfea"
+        "EV-b26bead25288d19c"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -19759,7 +19353,6 @@
         "R-028"
       ],
       "raw_ids": [
-        "RAW-295f69356567747b",
         "RAW-afd9910430467b96"
       ],
       "event_ids": [
@@ -19786,8 +19379,7 @@
         "R-036"
       ],
       "raw_ids": [
-        "RAW-19b7133c6efe6f3d",
-        "RAW-f3fe39fdde3bedda"
+        "RAW-19b7133c6efe6f3d"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
@@ -19811,7 +19403,6 @@
         "R-045"
       ],
       "raw_ids": [
-        "RAW-8dd713f33134ed1c",
         "RAW-afd9910430467b96"
       ],
       "event_ids": [
@@ -19819,7 +19410,6 @@
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -19861,13 +19451,11 @@
         "R-064"
       ],
       "raw_ids": [
-        "RAW-19b7133c6efe6f3d",
-        "RAW-6cd0be03a7038306"
+        "RAW-19b7133c6efe6f3d"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
       "mapping_methods": [
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": false
@@ -19885,13 +19473,10 @@
         "R-030"
       ],
       "raw_ids": [
-        "RAW-9d8153c3b3c4a1bb",
-        "RAW-e0d612ef78e5287d"
+        "RAW-9d8153c3b3c4a1bb"
       ],
-      "event_ids": [
-        "EV-c6359191a071b538"
-      ],
-      "mapping_status": "mapped",
+      "event_ids": [],
+      "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -19912,15 +19497,11 @@
         "R-047"
       ],
       "raw_ids": [
-        "RAW-8c97ccf27c0141b3",
         "RAW-9d8153c3b3c4a1bb"
       ],
-      "event_ids": [
-        "EV-c6359191a071b538"
-      ],
-      "mapping_status": "mapped",
+      "event_ids": [],
+      "mapping_status": "raw_only",
       "mapping_methods": [
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -19938,7 +19519,6 @@
         "R-062"
       ],
       "raw_ids": [
-        "RAW-00b0ad7224ecfe7b",
         "RAW-8122514bc3994976"
       ],
       "event_ids": [
@@ -19965,8 +19545,7 @@
         "R-032"
       ],
       "raw_ids": [
-        "RAW-0302551b1b469dfd",
-        "RAW-8b2b0aa9cd5b68f2"
+        "RAW-0302551b1b469dfd"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
@@ -19990,13 +19569,11 @@
         "R-049"
       ],
       "raw_ids": [
-        "RAW-0302551b1b469dfd",
-        "RAW-077238812785e654"
+        "RAW-0302551b1b469dfd"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
       "mapping_methods": [
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -20014,8 +19591,7 @@
         "R-002"
       ],
       "raw_ids": [
-        "RAW-519457492a6735de",
-        "RAW-b7641a06c83b1b65"
+        "RAW-519457492a6735de"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
@@ -20039,13 +19615,11 @@
         "R-004"
       ],
       "raw_ids": [
-        "RAW-519457492a6735de",
-        "RAW-ec61d1f18f710d8f"
+        "RAW-519457492a6735de"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
       "mapping_methods": [
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -20064,8 +19638,7 @@
       ],
       "raw_ids": [
         "RAW-2c3751d2cd6eeb19",
-        "RAW-2feecb4beeb25004",
-        "RAW-cad767804efa3ae1"
+        "RAW-2feecb4beeb25004"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
@@ -20089,7 +19662,6 @@
         "R-039"
       ],
       "raw_ids": [
-        "RAW-06d42594511f88fb",
         "RAW-2c3751d2cd6eeb19",
         "RAW-2feecb4beeb25004"
       ],
@@ -20115,11 +19687,10 @@
         "R-013"
       ],
       "raw_ids": [
-        "RAW-0adc3b5ee0909754",
-        "RAW-ecc19b547f8f580c"
+        "RAW-0adc3b5ee0909754"
       ],
       "event_ids": [
-        "EV-644337db309a1c82"
+        "EV-2bea8d8046a9b325"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -20142,13 +19713,13 @@
         "R-016"
       ],
       "raw_ids": [
-        "RAW-0adc3b5ee0909754",
-        "RAW-4b755a2f016ad7f1"
+        "RAW-0adc3b5ee0909754"
       ],
-      "event_ids": [],
-      "mapping_status": "raw_only",
+      "event_ids": [
+        "EV-2bea8d8046a9b325"
+      ],
+      "mapping_status": "mapped",
       "mapping_methods": [
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -20166,7 +19737,6 @@
         "R-005"
       ],
       "raw_ids": [
-        "RAW-85875c3bea80f23f",
         "RAW-c7d031f6eb125808"
       ],
       "event_ids": [],
@@ -20191,15 +19761,11 @@
         "R-008"
       ],
       "raw_ids": [
-        "RAW-5b8e45ba74ba6101",
         "RAW-c7d031f6eb125808"
       ],
-      "event_ids": [
-        "EV-1e7c76dae985100f"
-      ],
-      "mapping_status": "mapped",
+      "event_ids": [],
+      "mapping_status": "raw_only",
       "mapping_methods": [
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -20660,14 +20226,10 @@
       "legacy_raw_ids": [
         "R-123"
       ],
-      "raw_ids": [
-        "RAW-3bf499fffd0fe63b"
-      ],
+      "raw_ids": [],
       "event_ids": [],
-      "mapping_status": "raw_only",
-      "mapping_methods": [
-        "legacy_raw_id"
-      ],
+      "mapping_status": "unresolved",
+      "mapping_methods": [],
       "duplicate_legacy_id": true
     },
     {
@@ -20706,14 +20268,10 @@
       "legacy_raw_ids": [
         "R-133"
       ],
-      "raw_ids": [
-        "RAW-9eff21c7a299bbfd"
-      ],
+      "raw_ids": [],
       "event_ids": [],
-      "mapping_status": "raw_only",
-      "mapping_methods": [
-        "legacy_raw_id"
-      ],
+      "mapping_status": "unresolved",
+      "mapping_methods": [],
       "duplicate_legacy_id": true
     },
     {
@@ -20728,14 +20286,10 @@
       "legacy_raw_ids": [
         "R-118"
       ],
-      "raw_ids": [
-        "RAW-a35f25efc6e438d1"
-      ],
+      "raw_ids": [],
       "event_ids": [],
-      "mapping_status": "raw_only",
-      "mapping_methods": [
-        "legacy_raw_id"
-      ],
+      "mapping_status": "unresolved",
+      "mapping_methods": [],
       "duplicate_legacy_id": false
     },
     {
@@ -20751,14 +20305,14 @@
         "R-126"
       ],
       "raw_ids": [
-        "RAW-8dbbb4d277f62d9c",
-        "RAW-ad78fec2f9275882"
+        "RAW-8dbbb4d277f62d9c"
       ],
-      "event_ids": [],
-      "mapping_status": "raw_only",
+      "event_ids": [
+        "EV-333ce1a5838ced85"
+      ],
+      "mapping_status": "mapped",
       "mapping_methods": [
         "legacy_path",
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": true
@@ -20776,14 +20330,12 @@
         "R-081"
       ],
       "raw_ids": [
-        "RAW-3dbd432debd2277c",
         "RAW-edb824418a734434"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
-        "legacy_raw_id",
         "source_url"
       ],
       "duplicate_legacy_id": false
@@ -20827,8 +20379,10 @@
       "raw_ids": [
         "RAW-d3db326f6ce7504a"
       ],
-      "event_ids": [],
-      "mapping_status": "raw_only",
+      "event_ids": [
+        "EV-5012364af7480121"
+      ],
+      "mapping_status": "mapped",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -20973,8 +20527,10 @@
       "raw_ids": [
         "RAW-1f7c7206b0434bbd"
       ],
-      "event_ids": [],
-      "mapping_status": "raw_only",
+      "event_ids": [
+        "EV-333851b077b606c8"
+      ],
+      "mapping_status": "mapped",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -21065,13 +20621,10 @@
         "R-088"
       ],
       "raw_ids": [
-        "RAW-57f427828fbca60f",
-        "RAW-aa2fc9ebf1f7762f"
+        "RAW-57f427828fbca60f"
       ],
-      "event_ids": [
-        "EV-6f696e408bf0016f"
-      ],
-      "mapping_status": "mapped",
+      "event_ids": [],
+      "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -21114,7 +20667,6 @@
         "R-002"
       ],
       "raw_ids": [
-        "RAW-201eddd6fee68cef",
         "RAW-3f77bdbf61db3c78"
       ],
       "event_ids": [
@@ -21141,11 +20693,10 @@
         "R-036"
       ],
       "raw_ids": [
-        "RAW-39c3bae4dd674701",
         "RAW-dc794cdc8ac26d63"
       ],
       "event_ids": [
-        "EV-3028dfadf94c8f4c"
+        "EV-bd66e5b45a6a577e"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -21190,12 +20741,13 @@
         "R-030"
       ],
       "raw_ids": [
-        "RAW-49c460558264cd7b",
         "RAW-cdcda1f483b3b6f9",
         "RAW-e4057c9cf5b0f1a6"
       ],
-      "event_ids": [],
-      "mapping_status": "raw_only",
+      "event_ids": [
+        "EV-578a9db1fe952d0a"
+      ],
+      "mapping_status": "mapped",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -21217,7 +20769,6 @@
       ],
       "raw_ids": [
         "RAW-0dde80bba7cac8d9",
-        "RAW-4e445af73785d12f",
         "RAW-8f41d4ec19b0e520"
       ],
       "event_ids": [],
@@ -21242,7 +20793,6 @@
         "R-013"
       ],
       "raw_ids": [
-        "RAW-2afcd079b4ffe964",
         "RAW-62c1ebca40315497"
       ],
       "event_ids": [],
@@ -21270,7 +20820,7 @@
         "RAW-c8db033c3d90b74e"
       ],
       "event_ids": [
-        "EV-268250d426c1a4a0"
+        "EV-cc3b92fe233953cf"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -21465,8 +21015,7 @@
         "R-044"
       ],
       "raw_ids": [
-        "RAW-3cab40518da107cf",
-        "RAW-4f58dcfd7e545703"
+        "RAW-3cab40518da107cf"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
@@ -21490,11 +21039,10 @@
         "R-063"
       ],
       "raw_ids": [
-        "RAW-48d69339b9a53475",
         "RAW-9209c6920572e721"
       ],
       "event_ids": [
-        "EV-ffc283de5ef01169"
+        "EV-cd12d961ed71e707"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -21517,7 +21065,6 @@
         "R-005"
       ],
       "raw_ids": [
-        "RAW-962724f9c03b8ad6",
         "RAW-98d132b72d562f46"
       ],
       "event_ids": [],
@@ -21542,8 +21089,7 @@
         "R-061"
       ],
       "raw_ids": [
-        "RAW-2ed310d8ab1ae2fd",
-        "RAW-7ff620718fc0f7ec"
+        "RAW-2ed310d8ab1ae2fd"
       ],
       "event_ids": [],
       "mapping_status": "raw_only",
@@ -21567,7 +21113,6 @@
         "R-014"
       ],
       "raw_ids": [
-        "RAW-78e0c684c296eb34",
         "RAW-83d6c8b7a76c4d26"
       ],
       "event_ids": [],
@@ -21592,7 +21137,6 @@
         "R-049"
       ],
       "raw_ids": [
-        "RAW-64347f3c8cf2dcbe",
         "RAW-84b187e5bcfb0a88",
         "RAW-9d822e552b80b937"
       ],
@@ -21644,10 +21188,8 @@
       "raw_ids": [
         "RAW-5873bb776bbd31e8"
       ],
-      "event_ids": [
-        "EV-52508b70ccd2cc0b"
-      ],
-      "mapping_status": "mapped",
+      "event_ids": [],
+      "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -21819,7 +21361,7 @@
         "RAW-f0863b54f21d60db"
       ],
       "event_ids": [
-        "EV-db1d74f0bfcc1b04"
+        "EV-ac8f8581cd1ca75d"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -21868,10 +21410,8 @@
       "raw_ids": [
         "RAW-04f7ead45eb3db0a"
       ],
-      "event_ids": [
-        "EV-ebe02c213368afae"
-      ],
-      "mapping_status": "mapped",
+      "event_ids": [],
+      "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -22044,8 +21584,10 @@
       "raw_ids": [
         "RAW-158d96ec77213832"
       ],
-      "event_ids": [],
-      "mapping_status": "raw_only",
+      "event_ids": [
+        "EV-969ed3078d10f0c9"
+      ],
+      "mapping_status": "mapped",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -22093,7 +21635,7 @@
         "RAW-f27e74446fc65785"
       ],
       "event_ids": [
-        "EV-519205eb50c83300"
+        "EV-3e0953cd3f84b652"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -22197,7 +21739,7 @@
         "RAW-300d311e9ded8ea9"
       ],
       "event_ids": [
-        "EV-9fb217d7e855c8f7"
+        "EV-33292a33d0f4d599"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -22271,7 +21813,7 @@
         "RAW-d60b9f4a7958c5a4"
       ],
       "event_ids": [
-        "EV-082314251be505e2"
+        "EV-47d14d0aa4d4414e"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -22417,7 +21959,7 @@
         "RAW-fe6763908066be2b"
       ],
       "event_ids": [
-        "EV-63b11635dd8d53a2"
+        "EV-54ecd52c69b97834"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -22544,10 +22086,8 @@
       "raw_ids": [
         "RAW-044a181fd75da2eb"
       ],
-      "event_ids": [
-        "EV-917a138950a21f91"
-      ],
-      "mapping_status": "mapped",
+      "event_ids": [],
+      "mapping_status": "raw_only",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -22596,8 +22136,10 @@
       "raw_ids": [
         "RAW-3bc4efe65e7195ea"
       ],
-      "event_ids": [],
-      "mapping_status": "raw_only",
+      "event_ids": [
+        "EV-5cd7eaa56c1fbb83"
+      ],
+      "mapping_status": "mapped",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -22719,7 +22261,7 @@
         "RAW-dd05aaf1219c9e8d"
       ],
       "event_ids": [
-        "EV-8e49e130d7c890f0"
+        "EV-8c88edd0ad8ff029"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [

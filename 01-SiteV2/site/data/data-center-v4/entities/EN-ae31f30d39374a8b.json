@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-17T18:20:10.588Z",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 727,
-    "quarantinedEventCount": 50
+    "eventCount": 818,
+    "quarantinedEventCount": 58
   },
   "entity": {
     "id": "EN-ae31f30d39374a8b",
@@ -21,14 +21,16 @@
       "canonical"
     ],
     "eventIds": [
-      "EV-cf176636839e45be"
+      "EV-cf176636839e45be",
+      "EV-c996e56f7f4bdc49",
+      "EV-b60df35d168fe6b7"
     ],
     "viewpointIds": [],
     "classificationRefs": [
       "TX-technology-guardrails_safety"
     ],
     "relatedEntityIds": [],
-    "firstSeen": "2026-07-17",
+    "firstSeen": "2026-06-30",
     "lastSeen": "2026-07-17",
     "relationIds": [],
     "groupedEventIds": {
@@ -36,7 +38,9 @@
       "deployments": [],
       "partnerships": [],
       "productsServices": [
-        "EV-cf176636839e45be"
+        "EV-cf176636839e45be",
+        "EV-c996e56f7f4bdc49",
+        "EV-b60df35d168fe6b7"
       ],
       "hardware": [],
       "organizationPeople": [],
@@ -65,6 +69,43 @@
           "EN-ae31f30d39374a8b",
           "EN-ea3bd73e2b506e00"
         ]
+      },
+      {
+        "id": "EV-c996e56f7f4bdc49",
+        "dataDate": "2026-07-01",
+        "date": "2026-07-01",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Meta AI 发布 Brain2Qwerty v2：无需手术的脑电波解码系统",
+        "displayTags": [],
+        "entityIds": [
+          "EN-ae31f30d39374a8b",
+          "EN-ea3bd73e2b506e00",
+          "EN-557203e8cc173124",
+          "EN-2ba325ce6f8e3dc9",
+          "EN-5fa6f727c9e3afe0"
+        ]
+      },
+      {
+        "id": "EV-b60df35d168fe6b7",
+        "dataDate": "2026-07-01",
+        "date": "2026-06-30",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Meta AI 发布 Brain2Qwerty v2：非侵入式 MEG 脑到文本解码管线",
+        "displayTags": [],
+        "entityIds": [
+          "EN-ae31f30d39374a8b",
+          "EN-ea3bd73e2b506e00",
+          "EN-557203e8cc173124",
+          "EN-2ba325ce6f8e3dc9"
+        ]
       }
     ],
     "viewpoints": []
@@ -79,15 +120,31 @@
       "typeLabel": "技术",
       "valueId": "guardrails_safety",
       "eventIds": [
-        "EV-cf176636839e45be"
+        "EV-d1e2a7c6d314612c",
+        "EV-b240fb11e65b018e",
+        "EV-cf176636839e45be",
+        "EV-9c0552732b34f278",
+        "EV-3ff2a155035d01e7",
+        "EV-69fbe85ca4ac81cd",
+        "EV-917966af8545a380"
       ],
       "entityIds": [
+        "EN-43381465c2b7d64e",
+        "EN-c70eca6b0f88f44d",
+        "EN-7d3194f79e645c42",
         "EN-ae31f30d39374a8b",
-        "EN-ea3bd73e2b506e00"
+        "EN-ea3bd73e2b506e00",
+        "EN-c857d09db23e6822",
+        "EN-9f15bb7e29e191eb",
+        "EN-60094bcf5292c490",
+        "EN-8d4321d936320802",
+        "EN-4e7e886400fe6a83"
       ],
-      "fdeIds": [],
+      "fdeIds": [
+        "FDE-0ee0fe3baa3f1364"
+      ],
       "hardwareIds": [],
-      "firstSeen": "2026-07-17",
+      "firstSeen": "2026-06-17",
       "lastSeen": "2026-07-17"
     }
   ],

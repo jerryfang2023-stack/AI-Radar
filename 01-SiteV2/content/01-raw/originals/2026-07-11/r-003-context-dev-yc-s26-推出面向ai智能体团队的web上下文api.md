@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-003
 title: "Context.dev（YC S26）推出面向AI智能体团队的Web上下文API"
 title_zh: "Context.dev（YC S26）推出面向AI智能体团队的Web上下文API"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.context.dev/"
 canonical_url: "https://context.dev"
 source_name: "Hacker News 热门（buzzing.cc 中文翻译）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-11T04:06:31.327Z
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Context.dev（YC S26）推出面向AI智能体团队的Web上下文API

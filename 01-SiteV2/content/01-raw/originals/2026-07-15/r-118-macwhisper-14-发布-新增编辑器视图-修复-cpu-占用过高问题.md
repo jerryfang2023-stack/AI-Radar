@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-118
 title: "MacWhisper 14 发布：新增编辑器视图，修复 CPU 占用过高问题"
 title_zh: "MacWhisper 14 发布：新增编辑器视图，修复 CPU 占用过高问题"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/976/812.htm"
 canonical_url: "https://ithome.com/0/976/812.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-15T04:28:38.227Z
 theme: outside-core-exploration
 keyword_group: outside-core-exploration
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # MacWhisper 14 发布：新增编辑器视图，修复 CPU 占用过高问题

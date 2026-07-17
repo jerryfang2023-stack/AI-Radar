@@ -2,7 +2,7 @@
 id: SIG-20260611-A08
 type: signal_card
 signal_type: case
-title: "智能体表面的演进：使用 Claude Managed Agents 构建 案例：AI 进入地产开发和建筑设计流程"
+title: "智能体表面的演进：使用 Claude Managed Agents 构建"
 date: 2026-06-11
 status: published
 source_title: "智能体表面的演进：使用 Claude Managed Agents 构建"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "智能体表面的演进：使用 Claude Managed Agents 构建"
 
 frontend:
-  displayTitle: "智能体表面的演进：使用 Claude Managed Agents 构建 案例：AI 进入地产开发和建筑设计流程"
+  displayTitle: "智能体表面的演进：使用 Claude Managed Agents 构建"
   sourceLinks:
     - "https://claude.com/blog/building-with-claude-managed-agents"
 ---
 
-# 智能体表面的演进：使用 Claude Managed Agents 构建 案例：AI 进入地产开发和建筑设计流程
+# 智能体表面的演进：使用 Claude Managed Agents 构建
 
 ## 新闻事实
 

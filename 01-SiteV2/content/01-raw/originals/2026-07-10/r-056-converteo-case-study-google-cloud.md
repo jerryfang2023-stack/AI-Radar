@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-056
 title: "Converteo case study | Google Cloud"
-title_zh: "Converteo案例研究| Google Cloud"
-title_translation_status: translated
-title_translation_method: mymemory_title_translation
+title_zh: "Converteo案例研究 | Google Cloud"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://cloud.google.com/customers/converteo"
 canonical_url: "https://cloud.google.com/customers/converteo"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-10T01:59:58.621Z
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Converteo case study | Google Cloud

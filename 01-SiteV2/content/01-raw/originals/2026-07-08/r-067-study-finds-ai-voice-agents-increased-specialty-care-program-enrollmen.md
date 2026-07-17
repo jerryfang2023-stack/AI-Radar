@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-067
 title: "Study Finds AI Voice Agents Increased Specialty Care Program Enrollment Rates 340% in Real-World Clinical Setting"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "研究显示AI语音智能体在真实临床环境中将专科护理项目注册率提升340%"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.prnewswire.com/news-releases/study-finds-ai-voice-agents-increased-specialty-care-program-enrollment-rates-340-in-real-world-clinical-setting-302818900.html"
 canonical_url: "https://prnewswire.com/news-releases/study-finds-ai-voice-agents-increased-specialty-care-program-enrollment-rates-340-in-real-world-clinical-setting-302818900.html"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-08T04:39:25.922Z
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Study Finds AI Voice Agents Increased Specialty Care Program Enrollment Rates 340% in Real-World Clinical Setting

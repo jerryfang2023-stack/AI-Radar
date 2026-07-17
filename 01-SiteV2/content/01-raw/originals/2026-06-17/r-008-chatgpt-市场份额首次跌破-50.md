@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"2026 年 5 月底，ChatGPT 市场份额
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "ChatGPT 市场份额首次跌破 50%"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # ChatGPT 市场份额首次跌破 50%

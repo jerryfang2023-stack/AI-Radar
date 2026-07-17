@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"In today's world of agentic AI, 
 theme: technical-iteration-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "超越大语言模型：为何可扩展的企业AI应用取决于……"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Beyond LLMs: Why Scalable Enterprise AI Adoption Depends on ...

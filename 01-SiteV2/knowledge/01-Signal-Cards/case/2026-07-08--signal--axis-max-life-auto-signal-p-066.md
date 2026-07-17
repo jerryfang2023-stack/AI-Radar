@@ -2,7 +2,7 @@
 id: SIG-20260708-A09
 type: signal_card
 signal_type: case
-title: "Axis Max Life 用语音 AI 分析 60 万通客户来电并提升转化"
+title: "Axis Max Life 利用语音 AI 分析 6 lakh 通客户来电，提升转化率"
 date: 2026-07-08
 status: published
 source_title: "Axis Max Life uses Voice AI to analyse 6 lakh customer calls, boosts conversions"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "Axis Max Life"
 
 frontend:
-  displayTitle: "Axis Max Life 用语音 AI 分析 60 万通客户来电并提升转化"
+  displayTitle: "Axis Max Life 利用语音 AI 分析 6 lakh 通客户来电，提升转化率"
   sourceLinks:
     - "https://www.techcircle.in/2026/07/07/axis-max-life-uses-voice-ai-to-analyse-6-lakh-customer-calls-boosts-conversions"
 ---
 
-# Axis Max Life 用语音 AI 分析 60 万通客户来电并提升转化
+# Axis Max Life 利用语音 AI 分析 6 lakh 通客户来电，提升转化率
 
 ## 新闻事实
 

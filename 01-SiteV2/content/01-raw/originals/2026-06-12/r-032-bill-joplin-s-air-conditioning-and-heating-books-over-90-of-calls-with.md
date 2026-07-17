@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"LOS ANGELES, June 09, 2026 (GLOBE NEWSW
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Bill Joplin空调供暖公司借助ServiceTitan AI语音代理在旺季前接听超90%来电 | Markets Insider"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Bill Joplin’s Air Conditioning and Heating Books Over 90% of Calls with ServiceTitan AI Voice Agent Ahead of Peak Season | Markets Insider

@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-044
 title: "The wildest allegations in Apple’s trade secrets lawsuit against OpenAI"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "苹果诉OpenAI商业秘密案中最惊人的指控"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://techcrunch.com/2026/07/13/the-wildest-allegations-in-apples-trade-secrets-lawsuit-against-openai/"
 canonical_url: "https://techcrunch.com/2026/07/13/the-wildest-allegations-in-apples-trade-secrets-lawsuit-against-openai"
 source_name: "TechCrunch AI"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-14T01:56:51.582Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # The wildest allegations in Apple’s trade secrets lawsuit against OpenAI

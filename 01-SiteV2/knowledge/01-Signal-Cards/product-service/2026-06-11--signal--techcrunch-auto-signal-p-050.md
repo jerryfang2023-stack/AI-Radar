@@ -2,7 +2,7 @@
 id: SIG-20260611-A07
 type: signal_card
 signal_type: product_service
-title: "Techcrunch 发布 AI 基础设施能力，切入模型部署和算力服务"
+title: "Decart 发布 Oasis 3：实时世界模型可模拟数小时逼真驾驶场景"
 date: 2026-06-11
 status: published
 source_title: "Decart 发布 Oasis 3：实时世界模型可模拟数小时逼真驾驶场景"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Techcrunch"
 
 frontend:
-  displayTitle: "Techcrunch 发布 AI 基础设施能力，切入模型部署和算力服务"
+  displayTitle: "Decart 发布 Oasis 3：实时世界模型可模拟数小时逼真驾驶场景"
   sourceLinks:
     - "https://techcrunch.com/2026/06/10/decarts-new-world-model-can-simulate-hours-of-photorealistic-driving-with-some-caveats"
 ---
 
-# Techcrunch 发布 AI 基础设施能力，切入模型部署和算力服务
+# Decart 发布 Oasis 3：实时世界模型可模拟数小时逼真驾驶场景
 
 ## 新闻事实
 

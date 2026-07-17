@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"Learn what artificial intelligence 
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "AI部署：终极指南 - Mirantis"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # AI Deployment: The Definitive Guide - Mirantis

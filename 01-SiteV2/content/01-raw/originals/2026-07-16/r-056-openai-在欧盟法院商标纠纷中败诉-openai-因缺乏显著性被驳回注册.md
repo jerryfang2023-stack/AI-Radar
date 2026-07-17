@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-056
 title: "OpenAI 在欧盟法院商标纠纷中败诉，\"OPENAI\"因缺乏显著性被驳回注册"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "OpenAI 在欧盟法院商标纠纷中败诉，\"OPENAI\"因缺乏显著性被驳回注册"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://dpa-international.com/economics/urn:newsml:dpa.com:20090101:260715-930-389143"
 canonical_url: "https://dpa-international.com/economics/urn:newsml:dpa.com:20090101:260715-930-389143"
 source_name: "Hacker News 热门（buzzing.cc 中文翻译）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-16T02:39:33.775Z
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # OpenAI 在欧盟法院商标纠纷中败诉，"OPENAI"因缺乏显著性被驳回注册

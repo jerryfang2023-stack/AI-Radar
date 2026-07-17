@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-079
 title: "大疆发布迷你无线麦克风 DJI Mic Mini 2S：32-bit 浮点内录、自研降噪，399-1199 元"
 title_zh: "大疆发布迷你无线麦克风 DJI Mic Mini 2S：32-bit 浮点内录、自研降噪，399-1199 元"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/971/886.htm"
 canonical_url: "https://ithome.com/0/971/886.htm"
 source_name: "IT之家（RSS）"
@@ -78,6 +78,7 @@ fact_extraction_completed_at: 2026-07-03T01:59:31.540Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 大疆发布迷你无线麦克风 DJI Mic Mini 2S：32-bit 浮点内录、自研降噪，399-1199 元

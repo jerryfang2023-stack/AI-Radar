@@ -72,6 +72,10 @@ key_excerpts: [{"type":"company_action","text":"# AI Agent Builder 2026: How to 
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_zh: "AI Agent构建器2026：打造你的首个AI智能体 | 更好发布"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # AI Agent Builder 2026: Build Your First AI Agent | Better Launch

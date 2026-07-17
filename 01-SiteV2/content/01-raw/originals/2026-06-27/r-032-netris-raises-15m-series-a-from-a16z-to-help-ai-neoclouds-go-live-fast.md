@@ -72,6 +72,10 @@ key_excerpts: [{"type":"company_action","text":"Netris provides software that ru
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only
+title_zh: "Netris获a16z领投1500万美元A轮融资，助力AI新云加速上线"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Netris raises $15M Series A from a16z to help AI neoclouds go live faster

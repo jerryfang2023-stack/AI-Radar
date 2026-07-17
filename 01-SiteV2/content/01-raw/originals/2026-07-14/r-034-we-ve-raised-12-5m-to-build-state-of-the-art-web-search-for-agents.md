@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-034
 title: "We've raised $12.5M to build state-of-the-art Web Search for agents"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "Seltz 融资 1250 万美元，用于为智能体构建先进 Web Search"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://seltz.ai/blog/seed-round-announcement"
 canonical_url: "https://seltz.ai/blog/seed-round-announcement"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-14T01:56:51.508Z
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # We've raised $12.5M to build state-of-the-art Web Search for agents

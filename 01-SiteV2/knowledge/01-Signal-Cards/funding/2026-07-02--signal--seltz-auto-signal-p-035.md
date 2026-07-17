@@ -2,7 +2,7 @@
 id: SIG-20260702-A02
 type: signal_card
 signal_type: funding
-title: "Seltz 获得 $12.5M 融资"
+title: "智能体基础设施初创公司Seltz融资1250万美元，帮助AI代理搜索网络答案 - SiliconANGLE"
 date: 2026-07-02
 status: published
 source_title: "Agentic infrastructure startup Seltz raises $12.5M to help AI agents search the web for answers - SiliconANGLE"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "Seltz"
 
 frontend:
-  displayTitle: "Seltz 获得 $12.5M 融资"
+  displayTitle: "智能体基础设施初创公司Seltz融资1250万美元，帮助AI代理搜索网络答案 - SiliconANGLE"
   sourceLinks:
     - "https://siliconangle.com/2026/06/24/agentic-infrastructure-startup-seltz-raises-12-5m-help-ai-agents-search-web-answers/"
 ---
 
-# Seltz 获得 $12.5M 融资
+# 智能体基础设施初创公司Seltz融资1250万美元，帮助AI代理搜索网络答案 - SiliconANGLE
 
 ## 新闻事实
 

@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-103
 title: "OpenAI&#039;s GPT-5.6 launches Thursday after a delay forced by the U.S. government"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "OpenAI 的 GPT-5.6 因美国政府强制延迟后于周四发布"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://the-decoder.com/openais-gpt-5-6-launches-thursday-after-a-delay-forced-by-the-u-s-government/"
 canonical_url: "https://the-decoder.com/openais-gpt-5-6-launches-thursday-after-a-delay-forced-by-the-u-s-government"
 source_name: "The Decoder AI News"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-09T03:05:45.387Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # OpenAI&#039;s GPT-5.6 launches Thursday after a delay forced by the U.S. government

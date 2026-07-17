@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-002
 title: "TectoAI 🛡️"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "TectoAI 🛡️"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.angelsround.com/p/tectoai"
 canonical_url: "https://angelsround.com/p/tectoai"
 source_name: "keyword search / Anysearch"
@@ -78,6 +78,7 @@ fact_extraction_completed_at: 2026-07-04T04:35:47.538Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # TectoAI 🛡️

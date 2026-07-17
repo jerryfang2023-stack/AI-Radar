@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"Claude Tag 推出 agent identity
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "Claude Tag 的 Agent Identity 访问模型"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Claude Tag 的 Agent Identity 访问模型

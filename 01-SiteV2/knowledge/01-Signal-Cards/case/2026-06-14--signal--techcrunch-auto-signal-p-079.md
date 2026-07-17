@@ -2,7 +2,7 @@
 id: SIG-20260614-A12
 type: signal_card
 signal_type: case
-title: "Techcrunch 案例：AI 进入模型部署和算力调用"
+title: "毕马威因明显的模型幻觉撤回AI使用报告"
 date: 2026-06-14
 status: published
 source_title: "毕马威因明显的模型幻觉撤回AI使用报告"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "Techcrunch"
 
 frontend:
-  displayTitle: "Techcrunch 案例：AI 进入模型部署和算力调用"
+  displayTitle: "毕马威因明显的模型幻觉撤回AI使用报告"
   sourceLinks:
     - "https://techcrunch.com/2026/06/13/kpmg-pulls-report-on-ai-usage-due-to-apparent-hallucinations"
 ---
 
-# Techcrunch 案例：AI 进入模型部署和算力调用
+# 毕马威因明显的模型幻觉撤回AI使用报告
 
 ## 新闻事实
 

@@ -2,7 +2,7 @@
 id: SIG-20260605-A06
 type: signal_card
 signal_type: funding
-title: "57 early stage AI startups 融资，做地产和建筑设计工作流"
+title: "57家早期AI初创公司在种子轮及种子前轮融资中共筹集3.16亿美元 - LinkedIn"
 date: 2026-06-05
 status: published
 asset_level: frontstage
@@ -58,7 +58,7 @@ signal_owner: "57 early stage AI startups"
 watch_reason: "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
 
 frontend:
-  displayTitle: "57 early stage AI startups 融资，做地产和建筑设计工作流"
+  displayTitle: "57家早期AI初创公司在种子轮及种子前轮融资中共筹集3.16亿美元 - LinkedIn"
   eventLine: "57 early stage AI startups 宣布$316M 融资，业务重点落在地产和建筑设计工作流。"
   whyWatch: "这条变化值得看，是因为它把竞争点放到了地产开发和建筑设计流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"
   businessMeaning: "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
@@ -68,7 +68,7 @@ frontend:
     - "https://www.linkedin.com/posts/chintanzalani_57-early-stage-ai-startups-raised-316m-in-activity-7434321064035319809-BOrh"
 ---
 
-# 57 early stage AI startups 融资，做地产和建筑设计工作流
+# 57家早期AI初创公司在种子轮及种子前轮融资中共筹集3.16亿美元 - LinkedIn
 
 ## 信号底稿
 

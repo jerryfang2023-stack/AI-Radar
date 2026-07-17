@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-076
 title: "Linux 之父托瓦兹回应 AI 争议：不同意可 Fork 或离开"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "Linux 之父托瓦兹回应 AI 争议：不同意可 Fork 或离开"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/977/300.htm"
 canonical_url: "https://ithome.com/0/977/300.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-16T02:39:33.861Z
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Linux 之父托瓦兹回应 AI 争议：不同意可 Fork 或离开

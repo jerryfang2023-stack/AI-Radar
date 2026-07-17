@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"Adobe 6月16日发布报告，覆盖8国
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "1.6 万创作者洞察：Adobe 报告称 87% 受访者认为 AI 加快业务和粉丝增长"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 1.6 万创作者洞察：Adobe 报告称 87% 受访者认为 AI 加快业务和粉丝增长

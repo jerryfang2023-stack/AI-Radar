@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"Cursor 本周一推出移动端应�
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "AI 编程工具 Cursor 推出移动端应用，手机即可操控智能体"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # AI 编程工具 Cursor 推出移动端应用，手机即可操控智能体

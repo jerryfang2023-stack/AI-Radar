@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-17T18:20:10.588Z",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 727,
-    "quarantinedEventCount": 50
+    "eventCount": 818,
+    "quarantinedEventCount": 58
   },
   "node": {
     "id": "TX-technology-quantization",
@@ -17,38 +17,65 @@
     "typeLabel": "技术",
     "valueId": "quantization",
     "eventIds": [
-      "EV-de54542fd7e2282c"
+      "EV-70cbf25f7ec2cc3a"
     ],
     "entityIds": [
-      "EN-9c8ae69b84f21a2e"
+      "EN-7dd7122ad9bf240f",
+      "EN-95b0632f1b292fa7",
+      "EN-047364b9be67f665",
+      "EN-6f7ac1823da81d2e",
+      "EN-3a7bd3e2360a3d29"
     ],
     "fdeIds": [],
     "hardwareIds": [],
-    "firstSeen": "2026-07-14",
+    "firstSeen": "2026-07-15",
     "lastSeen": "2026-07-15"
   },
   "events": [
     {
-      "id": "EV-de54542fd7e2282c",
+      "id": "EV-70cbf25f7ec2cc3a",
       "dataDate": "2026-07-15",
-      "date": "2026-07-14",
+      "date": "2026-07-15",
       "updatedDate": "2026-07-15",
-      "eventType": "model_release",
-      "eventTypeLabel": "模型发布",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
       "eventGroup": "模型、产品与服务",
-      "status": "completed",
-      "statusLabel": "已完成",
+      "status": "announced",
+      "statusLabel": "已公布",
       "publicationStatus": "verified",
-      "title": "腾讯混元发布 1bit 与 4bit 量化版 Hy3 模型，旗舰 AI 模型可单卡本地运行",
+      "title": "Bonsai 27B 模型登场，12GB 内存 iPhone 17 Pro 可原生运行",
       "originalTitle": "",
-      "subject": "腾讯混元",
-      "action": "发布 1bit 与 4bit 量化版 Hy3 模型，旗舰 AI 模型",
-      "object": "可单卡本地运行",
-      "metrics": [],
+      "subject": "Bonsai",
+      "action": "product_release",
+      "object": "Bonsai 27B 模型登场，12GB 内存 iPhone 17 Pro 可原生运行",
+      "metrics": [
+        "90%",
+        "12GB",
+        "54GB",
+        "18GB"
+      ],
       "locations": [],
       "missingFields": [],
       "conflicts": [],
       "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "fine_tuning",
+          "name": "模型微调"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "long_context",
+          "name": "长上下文"
+        },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
@@ -67,6 +94,24 @@
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
+          "id": "fine_tuning",
+          "name": "模型微调"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "long_context",
+          "name": "长上下文"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
           "id": "quantization",
           "name": "模型量化"
         }
@@ -75,66 +120,288 @@
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
+          "id": "fine_tuning",
+          "name": "模型微调"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "long_context",
+          "name": "长上下文"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
           "id": "quantization",
           "name": "模型量化"
         }
       ],
       "entityIds": [
-        "EN-9c8ae69b84f21a2e"
+        "EN-7dd7122ad9bf240f",
+        "EN-95b0632f1b292fa7",
+        "EN-047364b9be67f665",
+        "EN-6f7ac1823da81d2e",
+        "EN-3a7bd3e2360a3d29"
       ],
       "entityNames": [
-        "Tencent"
+        "Bonsai",
+        "PrismML",
+        "Alibaba",
+        "DeepSeek",
+        "Apple"
       ],
       "productName": "",
       "products": [],
-      "sourceUrl": "https://ithome.com/0/976/642.htm",
+      "sourceUrl": "https://ithome.com/0/976/772.htm",
       "publisher": "IT之家（RSS）"
     }
   ],
   "entities": [
     {
-      "id": "EN-9c8ae69b84f21a2e",
-      "name": "Tencent",
+      "id": "EN-7dd7122ad9bf240f",
+      "name": "Bonsai",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-70cbf25f7ec2cc3a"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-long_context",
+        "TX-technology-fine_tuning",
+        "TX-technology-quantization"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "EN-95b0632f1b292fa7",
+      "name": "PrismML",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-70cbf25f7ec2cc3a",
+        "EV-8b9e4428074bde60"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-long_context",
+        "TX-technology-fine_tuning",
+        "TX-technology-quantization"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "EN-047364b9be67f665",
+      "name": "Alibaba",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "腾讯"
+        "阿里巴巴"
       ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
-        "EV-ed65f3187aa6aa40",
-        "EV-427081ec574b43bb",
-        "EV-e0b0ab8dfcab20a5",
-        "EV-b0d008460e8f75fe",
-        "EV-f89d14f52c223a04",
-        "EV-242b4e0488296c1d",
-        "EV-c01b11eed792b3e8",
-        "EV-de54542fd7e2282c",
-        "EV-6fea710316ebda18",
-        "EV-5e5294fe06002bc1",
-        "EV-760d117b4d82fc97",
-        "EV-57e6392fe3bb69cd",
-        "EV-3526144877bc9400",
-        "EV-a498b12f3fa2197e",
-        "EV-c68a8af069f3ed1d",
-        "EV-6a6ff349579765ad",
-        "EV-86537be17d50ff20",
-        "EV-6b7917bd7edd4bde"
+        "EV-43b7f45e9bd7ec9b",
+        "EV-3d93d1da8cb64462",
+        "EV-e1a4bc40db4a9d8f",
+        "EV-f6ac2938949f74ec",
+        "EV-70cbf25f7ec2cc3a",
+        "EV-8b9e4428074bde60",
+        "EV-83c841a4c42cfdea",
+        "EV-3167e6eed75597e9",
+        "EV-76aa77f5a2e7c661",
+        "EV-77662aa9bef9efbe",
+        "EV-c7f274c3aadece12",
+        "EV-333851b077b606c8",
+        "EV-6712f8ac1f00fe85",
+        "EV-c54172bf4e0c1068",
+        "EV-473f852b374d8b1c",
+        "EV-4e6dc3ec2b3f0bd6",
+        "EV-bbc34d7bc9c02b6f",
+        "EV-c11ee0da38376254",
+        "EV-657837763764c869",
+        "EV-a4f052325d0ef230",
+        "EV-710b145230faa692"
       ],
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-technology-code_generation",
         "TX-technology-long_context",
-        "TX-technology-multimodal",
+        "TX-use_case-data_analysis",
+        "TX-technology-on_device",
+        "TX-technology-video_generation",
+        "TX-technology-fine_tuning",
+        "TX-technology-quantization",
+        "TX-technology-computer_use"
+      ],
+      "relatedEntityIds": [
+        "EN-2daac3672aeafcbd"
+      ],
+      "firstSeen": "2026-05-23",
+      "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "EN-6f7ac1823da81d2e",
+      "name": "DeepSeek",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-87432dbb99cd6033",
+        "EV-d4d7b019ff0015df",
+        "EV-27b69ea604475b72",
+        "EV-70cbf25f7ec2cc3a",
+        "EV-f8ba1728de6a4899",
+        "EV-fe2b0d74944d6128",
+        "EV-caec65aef89d3b4a",
+        "EV-57e6392fe3bb69cd",
+        "EV-eddb4330fed15762",
+        "EV-2aca9a810ea65555",
+        "EV-a498b12f3fa2197e",
+        "EV-d064939235825765",
+        "EV-6af31d42885e0361",
+        "EV-657837763764c869",
+        "EV-86537be17d50ff20"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-code_generation",
+        "TX-industry-healthcare_life_sciences",
+        "TX-use_case-software_development",
+        "TX-technology-long_context",
         "TX-technology-open_weights",
+        "TX-technology-multimodal",
+        "TX-technology-fine_tuning",
         "TX-technology-quantization"
       ],
       "relatedEntityIds": [],
-      "firstSeen": "2026-05-18",
+      "firstSeen": "2026-05-27",
       "lastSeen": "2026-07-16"
+    },
+    {
+      "id": "EN-3a7bd3e2360a3d29",
+      "name": "Apple",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-f282ab8740ff0096",
+        "EV-8a8e894a84768ea5",
+        "EV-afcd5426f5c01dc7",
+        "EV-f5a50f1fed72fec3",
+        "EV-e857f9d1c1478c70",
+        "EV-fd21441fb6e143c3",
+        "EV-8a9b12665a3e40a0",
+        "EV-70cbf25f7ec2cc3a",
+        "EV-8b9e4428074bde60",
+        "EV-967239f907803753",
+        "EV-113899096a32165a",
+        "EV-cabc88e1d09dec80",
+        "EV-cc3b92fe233953cf",
+        "EV-8aead769e84de342",
+        "EV-abf0990dcaceb1ce",
+        "EV-89930fa8d1db98eb",
+        "EV-60c27ec9b857f5c2",
+        "EV-eeb687002cac5f4e",
+        "EV-99e5df844a1bd670",
+        "EV-0b2bfd57923cedd3",
+        "EV-3c51bcb5e99d2b68",
+        "EV-a736c6c64d106475",
+        "EV-dad8c827d14f2799",
+        "EV-4e6dc3ec2b3f0bd6",
+        "EV-634ce5b42f6d32f6",
+        "EV-85373b8ec9148127",
+        "EV-1ae8027c085679e9",
+        "EV-21c749570133c786",
+        "EV-52e1ac21c25a0a09",
+        "EV-591542ccc2de5be8",
+        "EV-5a1422a9929c582e",
+        "EV-8361a47c70ecd243",
+        "EV-9f9bc7ffe6228281",
+        "EV-a5ba3797b38df125",
+        "EV-a9fe726c4ea2a17b",
+        "EV-bff418b2959f58fb",
+        "EV-c5b8faec223a4caf",
+        "EV-d40a1a873015ac98",
+        "EV-da062d02015f99fb",
+        "EV-f6611268f119a172",
+        "EV-0d1980baa83e1e6c",
+        "EV-ef823877347ff40f",
+        "EV-5cd10de5c12916f0",
+        "EV-5613946bdd578a26",
+        "EV-dd902b603e2e3dbc",
+        "EV-da6678e4e865e00e",
+        "EV-8cb2374f76202ecc",
+        "EV-946569cccbd9222f",
+        "EV-b4203b10d6592bf2",
+        "EV-5eb23cdd9c14c6ea",
+        "EV-7d4b4b8d4e3599d4",
+        "EV-10e841ab47d2b1f1",
+        "EV-f2d29ca7b05c3dd9",
+        "EV-ea2b6ce4acd46366",
+        "EV-2821d0cef61b3c6a",
+        "EV-6f7c5f0abad3d4da",
+        "EV-8f497488d129fee5",
+        "EV-a8f1204b54ae6475"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
+        "TX-technology-long_context",
+        "TX-use_case-cybersecurity",
+        "TX-industry-retail_ecommerce",
+        "TX-technology-on_device",
+        "TX-industry-media_entertainment",
+        "TX-technology-multimodal",
+        "TX-technology-tool_use",
+        "TX-technology-fine_tuning",
+        "TX-use_case-content_creation",
+        "TX-technology-quantization",
+        "TX-technology-speech_audio"
+      ],
+      "relatedEntityIds": [
+        "EN-af3ceabbe048a291",
+        "EN-41dcc2d4951f337b",
+        "EN-dfabe4215e8c07cb",
+        "EN-729324072d368379"
+      ],
+      "firstSeen": "2026-06-04",
+      "lastSeen": "2026-07-17"
     }
   ],
   "fde": [],

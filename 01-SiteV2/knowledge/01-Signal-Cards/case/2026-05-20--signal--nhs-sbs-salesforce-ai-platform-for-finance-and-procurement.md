@@ -2,7 +2,7 @@
 id: SIG-20260520-04
 type: signal_card
 signal_type: case
-title: "NHS SBS 与 Salesforce 部署 AI 平台，处理财务和采购服务"
+title: "NHS共享商业服务公司与Salesforce部署AI驱动平台，助力NHS企业服务转型——Salesforce"
 date: 2026-05-20
 status: draft
 asset_level: candidate
@@ -37,7 +37,7 @@ signal_owner: "NHS Shared Business Services / Salesforce"
 watch_reason: "继续看 NHS SBS 是否公布处理时长、满意度或采购结算效率变化。"
 
 frontend:
-  displayTitle: "NHS SBS 与 Salesforce 部署 AI 平台，处理财务和采购服务"
+  displayTitle: "NHS共享商业服务公司与Salesforce部署AI驱动平台，助力NHS企业服务转型——Salesforce"
   eventLine: "NHS SBS 与 Salesforce 推出统一财务和采购服务中的 AI 数字帮助中心。"
   whyWatch: "材料落在公共服务的财务和采购流程，不只是工具试用，而是工作流改造。"
   businessMeaning: "影响的是供应商响应、员工服务体验、采购交付速度和公共部门流程责任。"
@@ -70,7 +70,7 @@ opportunity_signals:
   missing_fields: ["product_form", "delivery_model"]
 ---
 
-# NHS SBS 与 Salesforce 部署 AI 平台，处理财务和采购服务
+# NHS共享商业服务公司与Salesforce部署AI驱动平台，助力NHS企业服务转型——Salesforce
 
 ## 信号底稿
 

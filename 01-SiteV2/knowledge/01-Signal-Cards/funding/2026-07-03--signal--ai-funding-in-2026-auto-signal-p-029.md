@@ -2,7 +2,7 @@
 id: SIG-20260703-A03
 type: signal_card
 signal_type: funding
-title: "AI Funding in 2026 获得 $300 b 融资"
+title: "2026年AI融资：风投资金流向何方 - AI Insider"
 date: 2026-07-03
 status: published
 source_title: "AI Funding in 2026: Where Venture Capital Is Going - AI Insider"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "AI Funding in 2026"
 
 frontend:
-  displayTitle: "AI Funding in 2026 获得 $300 b 融资"
+  displayTitle: "2026年AI融资：风投资金流向何方 - AI Insider"
   sourceLinks:
     - "https://theaiinsider.tech/2026/05/27/ai-funding-in-2026-where-venture-capital-is-going/"
 ---
 
-# AI Funding in 2026 获得 $300 b 融资
+# 2026年AI融资：风投资金流向何方 - AI Insider
 
 ## 新闻事实
 

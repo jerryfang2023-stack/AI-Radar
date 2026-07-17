@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"Inscribe has been building AI-power
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Inscribe如何利用Amazon Bedrock在数秒内阻止文档欺诈 | 人工智能"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # How Inscribe uses Amazon Bedrock to stop document fraud in seconds | Artificial Intelligence

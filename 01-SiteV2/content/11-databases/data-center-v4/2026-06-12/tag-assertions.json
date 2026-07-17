@@ -28,20 +28,6 @@
     "status": "active"
   },
   {
-    "asset_id": "CL-ba43f6da4df23c2b",
-    "tag_id": "agentic_execution",
-    "evidence_ref": "CL-ba43f6da4df23c2b",
-    "source_span": {
-      "raw_id": "RAW-afdaf31aa518e9d6",
-      "start": 148,
-      "end": 578
-    },
-    "assignment_method": "rule",
-    "confidence": 0.9,
-    "taxonomy_version": "TAG-V4.0",
-    "status": "active"
-  },
-  {
     "asset_id": "CL-47e8000d9e590827",
     "tag_id": "agentic_execution",
     "evidence_ref": "CL-47e8000d9e590827",
@@ -56,13 +42,55 @@
     "status": "active"
   },
   {
-    "asset_id": "CL-90148d1a980ffa90",
+    "asset_id": "CL-cf60a146bd5967ed",
     "tag_id": "agentic_execution",
-    "evidence_ref": "CL-90148d1a980ffa90",
+    "evidence_ref": "CL-cf60a146bd5967ed",
     "source_span": {
       "raw_id": "RAW-efc0950bc32247a3",
-      "start": 0,
-      "end": 191
+      "start": 1066,
+      "end": 1730
+    },
+    "assignment_method": "rule",
+    "confidence": 0.9,
+    "taxonomy_version": "TAG-V4.0",
+    "status": "active"
+  },
+  {
+    "asset_id": "CL-3b6789674b015f11",
+    "tag_id": "agentic_execution",
+    "evidence_ref": "CL-3b6789674b015f11",
+    "source_span": {
+      "raw_id": "RAW-ffbb8802ad34e561",
+      "start": 7995,
+      "end": 8117
+    },
+    "assignment_method": "rule",
+    "confidence": 0.9,
+    "taxonomy_version": "TAG-V4.0",
+    "status": "active"
+  },
+  {
+    "asset_id": "CL-3b6789674b015f11",
+    "tag_id": "retrieval_augmented_generation",
+    "evidence_ref": "CL-3b6789674b015f11",
+    "source_span": {
+      "raw_id": "RAW-ffbb8802ad34e561",
+      "start": 7995,
+      "end": 8117
+    },
+    "assignment_method": "rule",
+    "confidence": 0.9,
+    "taxonomy_version": "TAG-V4.0",
+    "status": "active"
+  },
+  {
+    "asset_id": "CL-d1600f27813f18a5",
+    "tag_id": "agentic_execution",
+    "evidence_ref": "CL-d1600f27813f18a5",
+    "source_span": {
+      "raw_id": "RAW-ffbb8802ad34e561",
+      "start": 17267,
+      "end": 17400
     },
     "assignment_method": "rule",
     "confidence": 0.9,
@@ -77,76 +105,6 @@
       "raw_id": "RAW-ee998dfbe9bb5205",
       "start": 306,
       "end": 379
-    },
-    "assignment_method": "rule",
-    "confidence": 0.9,
-    "taxonomy_version": "TAG-V4.0",
-    "status": "active"
-  },
-  {
-    "asset_id": "CL-0d74c98dcf84c226",
-    "tag_id": "mixture_of_experts",
-    "evidence_ref": "CL-0d74c98dcf84c226",
-    "source_span": {
-      "raw_id": "RAW-cb7708325b4ef681",
-      "start": 156,
-      "end": 438
-    },
-    "assignment_method": "rule",
-    "confidence": 0.9,
-    "taxonomy_version": "TAG-V4.0",
-    "status": "active"
-  },
-  {
-    "asset_id": "CL-0d74c98dcf84c226",
-    "tag_id": "open_weights",
-    "evidence_ref": "CL-0d74c98dcf84c226",
-    "source_span": {
-      "raw_id": "RAW-cb7708325b4ef681",
-      "start": 156,
-      "end": 438
-    },
-    "assignment_method": "rule",
-    "confidence": 0.9,
-    "taxonomy_version": "TAG-V4.0",
-    "status": "active"
-  },
-  {
-    "asset_id": "CL-4a5b67f5ef4ca6cd",
-    "tag_id": "agentic_execution",
-    "evidence_ref": "CL-4a5b67f5ef4ca6cd",
-    "source_span": {
-      "raw_id": "RAW-cb7708325b4ef681",
-      "start": 684,
-      "end": 968
-    },
-    "assignment_method": "rule",
-    "confidence": 0.9,
-    "taxonomy_version": "TAG-V4.0",
-    "status": "active"
-  },
-  {
-    "asset_id": "CL-4a5b67f5ef4ca6cd",
-    "tag_id": "code_generation",
-    "evidence_ref": "CL-4a5b67f5ef4ca6cd",
-    "source_span": {
-      "raw_id": "RAW-cb7708325b4ef681",
-      "start": 684,
-      "end": 968
-    },
-    "assignment_method": "rule",
-    "confidence": 0.9,
-    "taxonomy_version": "TAG-V4.0",
-    "status": "active"
-  },
-  {
-    "asset_id": "CL-1dd2c12c558bfdb2",
-    "tag_id": "long_context",
-    "evidence_ref": "CL-1dd2c12c558bfdb2",
-    "source_span": {
-      "raw_id": "RAW-cb7708325b4ef681",
-      "start": 969,
-      "end": 1218
     },
     "assignment_method": "rule",
     "confidence": 0.9,
@@ -189,6 +147,62 @@
       "raw_id": "RAW-1f7b587108b66b05",
       "start": 11504,
       "end": 11610
+    },
+    "assignment_method": "rule",
+    "confidence": 0.9,
+    "taxonomy_version": "TAG-V4.0",
+    "status": "active"
+  },
+  {
+    "asset_id": "CL-1cf3b9661572d1db",
+    "tag_id": "speech_audio",
+    "evidence_ref": "CL-1cf3b9661572d1db",
+    "source_span": {
+      "raw_id": "RAW-8390f9902abe88bc",
+      "start": 0,
+      "end": 58
+    },
+    "assignment_method": "rule",
+    "confidence": 0.9,
+    "taxonomy_version": "TAG-V4.0",
+    "status": "active"
+  },
+  {
+    "asset_id": "CL-e78ceab58dd8a516",
+    "tag_id": "speech_audio",
+    "evidence_ref": "CL-e78ceab58dd8a516",
+    "source_span": {
+      "raw_id": "RAW-8390f9902abe88bc",
+      "start": 226,
+      "end": 277
+    },
+    "assignment_method": "rule",
+    "confidence": 0.9,
+    "taxonomy_version": "TAG-V4.0",
+    "status": "active"
+  },
+  {
+    "asset_id": "CL-c219014c38d3e963",
+    "tag_id": "on_device",
+    "evidence_ref": "CL-c219014c38d3e963",
+    "source_span": {
+      "raw_id": "RAW-86b980bf756f0561",
+      "start": 0,
+      "end": 122
+    },
+    "assignment_method": "rule",
+    "confidence": 0.9,
+    "taxonomy_version": "TAG-V4.0",
+    "status": "active"
+  },
+  {
+    "asset_id": "CL-18d554f72c3e47aa",
+    "tag_id": "on_device",
+    "evidence_ref": "CL-18d554f72c3e47aa",
+    "source_span": {
+      "raw_id": "RAW-86b980bf756f0561",
+      "start": 123,
+      "end": 239
     },
     "assignment_method": "rule",
     "confidence": 0.9,

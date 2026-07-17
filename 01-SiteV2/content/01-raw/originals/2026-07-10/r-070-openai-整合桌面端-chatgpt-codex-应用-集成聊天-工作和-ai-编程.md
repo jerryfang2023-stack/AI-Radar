@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-070
 title: "OpenAI 整合桌面端 ChatGPT / Codex 应用，集成聊天、工作和 AI 编程"
 title_zh: "OpenAI 整合桌面端 ChatGPT / Codex 应用，集成聊天、工作和 AI 编程"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/974/804.htm"
 canonical_url: "https://ithome.com/0/974/804.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-10T02:00:00.721Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # OpenAI 整合桌面端 ChatGPT / Codex 应用，集成聊天、工作和 AI 编程

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"supporting_context","text":"New platform gives enterpris
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_zh: "Thoughtworks 推出 Agent/works™ 以管理和运行..."
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Thoughtworks Launches Agent/works™ to Govern and Run ...

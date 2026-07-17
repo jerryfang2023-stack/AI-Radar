@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-065
 title: "Monogram Raises $40M Seed"
-title_zh: "Monogram 完成 4000 万美元 种子轮融资"
-title_translation_status: translated
-title_translation_method: business-rule_title_translation
+title_zh: "Monogram 获 4000 万美元种子轮融资"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.thesaasnews.com/news/monogram-raises-40m-seed/"
 canonical_url: "https://thesaasnews.com/news/monogram-raises-40m-seed"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-14T01:56:51.724Z
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Monogram Raises $40M Seed

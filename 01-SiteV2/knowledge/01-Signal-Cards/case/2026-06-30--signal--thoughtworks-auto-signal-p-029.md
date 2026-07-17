@@ -2,7 +2,7 @@
 id: SIG-20260630-A04
 type: signal_card
 signal_type: case
-title: "Thoughtworks 发布 Agent/works，用于治理和运行企业 AI 智能体"
+title: "Thoughtworks 推出 Agent/works™ 以管理和运行..."
 date: 2026-06-30
 status: published
 source_title: "Thoughtworks Launches Agent/works™ to Govern and Run ..."
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Thoughtworks"
 
 frontend:
-  displayTitle: "Thoughtworks 发布 Agent/works，用于治理和运行企业 AI 智能体"
+  displayTitle: "Thoughtworks 推出 Agent/works™ 以管理和运行..."
   sourceLinks:
     - "https://www.prnewswire.com/news-releases/thoughtworks-launches-agentworks-to-govern-and-run-enterprise-ai-agents-across-any-cloud-302801086.html"
 ---
 
-# Thoughtworks 发布 Agent/works，用于治理和运行企业 AI 智能体
+# Thoughtworks 推出 Agent/works™ 以管理和运行...
 
 ## 新闻事实
 

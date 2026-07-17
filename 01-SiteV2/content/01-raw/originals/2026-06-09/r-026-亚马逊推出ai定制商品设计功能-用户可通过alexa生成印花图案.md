@@ -72,6 +72,10 @@ key_excerpts: [{"type":"company_action","text":"Amazon Shopping应用新增AI功
 theme: outside-core-exploration
 keyword_group: outside-core-exploration
 copyright_note: local research archive only
+title_zh: "亚马逊推出AI定制商品设计功能：用户可通过Alexa生成印花图案"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 亚马逊推出AI定制商品设计功能：用户可通过Alexa生成印花图案

@@ -2,7 +2,7 @@
 id: SIG-20260525-A06
 type: signal_card
 signal_type: case
-title: "Cheap AI could derail OpenAI and Anthropic IPOs"
+title: "廉价AI可能阻碍OpenAI和Anthropic的IPO"
 date: 2026-05-25
 status: published
 asset_level: frontstage
@@ -58,7 +58,7 @@ signal_owner: "Cnbc"
 watch_reason: "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
 
 frontend:
-  displayTitle: "Cheap AI could derail OpenAI and Anthropic IPOs"
+  displayTitle: "廉价AI可能阻碍OpenAI和Anthropic的IPO"
   eventLine: "Cnbc 把 AI 用进地产开发和建筑设计流程。"
   whyWatch: "这条变化值得看，是因为它把竞争点放到了地产开发和建筑设计流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"
   businessMeaning: "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
@@ -68,7 +68,7 @@ frontend:
     - "https://www.cnbc.com/2026/05/20/cheap-ai-could-derail-openai-and-anthropics-ipos.html"
 ---
 
-# Cheap AI could derail OpenAI and Anthropic IPOs
+# 廉价AI可能阻碍OpenAI和Anthropic的IPO
 
 ## 信号底稿
 

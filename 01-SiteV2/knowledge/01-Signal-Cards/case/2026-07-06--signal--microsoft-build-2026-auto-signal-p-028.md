@@ -2,7 +2,7 @@
 id: SIG-20260706-A06
 type: signal_card
 signal_type: case
-title: "Microsoft Build 2026"
+title: "微软Build 2026"
 date: 2026-07-06
 status: published
 source_title: "Microsoft Build 2026"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "Microsoft Build 2026"
 
 frontend:
-  displayTitle: "Microsoft Build 2026"
+  displayTitle: "微软Build 2026"
   sourceLinks:
     - "https://news.microsoft.com/build-2026/"
 ---
 
-# Microsoft Build 2026
+# 微软Build 2026
 
 ## 新闻事实
 

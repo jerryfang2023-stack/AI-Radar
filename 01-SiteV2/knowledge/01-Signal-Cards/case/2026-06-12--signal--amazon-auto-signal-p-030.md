@@ -2,7 +2,7 @@
 id: SIG-20260612-A12
 type: signal_card
 signal_type: case
-title: "Amazon 案例：AI 进入采购下单流程"
+title: "AWS Marketplace中的算法与软件包 - Amazon SageMaker AI"
 date: 2026-06-12
 status: published
 source_title: "Algorithms and packages in the AWS Marketplace - Amazon SageMaker AI"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Amazon"
 
 frontend:
-  displayTitle: "Amazon 案例：AI 进入采购下单流程"
+  displayTitle: "AWS Marketplace中的算法与软件包 - Amazon SageMaker AI"
   sourceLinks:
     - "https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-marketplace.html"
 ---
 
-# Amazon 案例：AI 进入采购下单流程
+# AWS Marketplace中的算法与软件包 - Amazon SageMaker AI
 
 ## 新闻事实
 

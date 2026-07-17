@@ -2,7 +2,7 @@
 id: SIG-20260710-A17
 type: signal_card
 signal_type: funding
-title: "数据中心基础设施初创公司TensorWave融资3.5亿美元，帮助打破英伟达的人工智能芯片垄断--SiliconANGLE"
+title: "数据中心基础设施初创公司TensorWave融资3.5亿美元，助力打破英伟达AI芯片垄断 - SiliconANGLE"
 date: 2026-07-10
 status: published
 source_title: "Data center infrastructure startup TensorWave raises $350M to help break Nvidia's AI chip monopoly - SiliconANGLE"
@@ -58,12 +58,12 @@ opportunity_signals:
 signal_owner: "TensorWave"
 
 frontend:
-  displayTitle: "数据中心基础设施初创公司TensorWave融资3.5亿美元，帮助打破英伟达的人工智能芯片垄断--SiliconANGLE"
+  displayTitle: "数据中心基础设施初创公司TensorWave融资3.5亿美元，助力打破英伟达AI芯片垄断 - SiliconANGLE"
   sourceLinks:
     - "https://siliconangle.com/2026/06/10/data-center-infrastructure-startup-tensorwave-raises-350m-help-break-nvidias-ai-chip-monopoly/"
 ---
 
-# 数据中心基础设施初创公司TensorWave融资3.5亿美元，帮助打破英伟达的人工智能芯片垄断--SiliconANGLE
+# 数据中心基础设施初创公司TensorWave融资3.5亿美元，助力打破英伟达AI芯片垄断 - SiliconANGLE
 
 ## 新闻事实
 

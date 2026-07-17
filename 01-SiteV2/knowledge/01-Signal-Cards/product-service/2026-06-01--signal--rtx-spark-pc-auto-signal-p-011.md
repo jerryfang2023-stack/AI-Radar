@@ -2,7 +2,7 @@
 id: SIG-20260601-A11
 type: signal_card
 signal_type: product_service
-title: "英伟达推出 RTX Spark，试图把 AI 开发拉回本地 PC"
+title: "英伟达发布 RTX Spark，称其为\"史上最高效的 PC 芯片\""
 date: 2026-06-01
 status: published
 asset_level: frontstage
@@ -58,7 +58,7 @@ signal_owner: "NVIDIA"
 watch_reason: "继续看 OEM 设备、开发者工具和实际售价，判断它是否会改变小团队的 AI 开发成本结构。"
 
 frontend:
-  displayTitle: "英伟达推出 RTX Spark，试图把 AI 开发拉回本地 PC"
+  displayTitle: "英伟达发布 RTX Spark，称其为\"史上最高效的 PC 芯片\""
   eventLine: "英伟达推出 RTX Spark 芯片方向，面向轻薄电脑和桌面设备上的本地 AI 工作负载。"
   whyWatch: "这关系到 AI 开发成本和数据边界，不只是 PC 芯片新闻。"
   businessMeaning: "一部分测试、推理和原型工作可能从云端回到开发者本地设备。"
@@ -68,7 +68,7 @@ frontend:
     - "https://www.theverge.com/tech/940589/nvidia-rtx-spark-n1-n1x-laptop-desktop-pc-cpu-gpu-ai-release-date"
 ---
 
-# 英伟达推出 RTX Spark，试图把 AI 开发拉回本地 PC
+# 英伟达发布 RTX Spark，称其为"史上最高效的 PC 芯片"
 
 ## 信号底稿
 

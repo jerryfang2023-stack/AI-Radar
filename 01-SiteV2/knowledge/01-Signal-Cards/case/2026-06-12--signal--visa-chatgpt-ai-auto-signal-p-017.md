@@ -2,7 +2,7 @@
 id: SIG-20260612-A11
 type: signal_card
 signal_type: case
-title: "Visa 与 ChatGPT 集成，AI 智能体可实现零售购买 案例：AI 进入物流订单和邮件处理流程"
+title: "Visa 与 ChatGPT 集成，AI 智能体可实现零售购买"
 date: 2026-06-12
 status: published
 source_title: "Visa 与 ChatGPT 集成，AI 智能体可实现零售购买"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Visa 与 ChatGPT 集成，AI 智能体可实现零售购买"
 
 frontend:
-  displayTitle: "Visa 与 ChatGPT 集成，AI 智能体可实现零售购买 案例：AI 进入物流订单和邮件处理流程"
+  displayTitle: "Visa 与 ChatGPT 集成，AI 智能体可实现零售购买"
   sourceLinks:
     - "https://www.artificialintelligence-news.com/news/visa-chatgpt-integration-enables-ai-agent-retail-purchasing"
 ---
 
-# Visa 与 ChatGPT 集成，AI 智能体可实现零售购买 案例：AI 进入物流订单和邮件处理流程
+# Visa 与 ChatGPT 集成，AI 智能体可实现零售购买
 
 ## 新闻事实
 

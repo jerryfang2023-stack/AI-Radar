@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"How modern organizations actually d
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "现代组织如何实际部署AI：工具、团队与……"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # How Modern Organizations Actually Deploy AI: Tools, Teams, and ...

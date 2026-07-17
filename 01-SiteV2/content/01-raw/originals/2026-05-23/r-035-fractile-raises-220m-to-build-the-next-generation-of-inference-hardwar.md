@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Fractile raises $220M to build the next
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Fractile 融资2.2亿美元，打造下一代推理硬件"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Fractile raises $220M to build the next generation of inference hardware

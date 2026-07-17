@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-020
 title: "From applied cryptography and offensive security in France’s defense industry to optimizing nuclear submarine workflows, then selling his e-signature startup to Docusign (https://www.docusign.com/company/news-center/opentrust-joins-docusign-global-trust-network and now running AI as CTO of Superhuman Mail (Superhuman, recently acquired by Grammarly https://techcrunch.com/2025/07/01/grammarly-acquires-ai-email-client-superhuman/), Loïc Houssier has lived the full arc from deep infra and complianc"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "从法国国防工业的应用密码学与进攻性安全，到优化核潜艇工作流程，再到将电子签名初创公司出售给 Docusign（https://www.docusign.com/company/news-center/opentrust-joins-docusign-global-trust-network），如今作为 Superhuman Mail 的 CTO 运营 AI（Superhuman 近期被 Grammarly 收购 https://techcrunch.com/2025/07/01/grammarly-acquires-ai-email-client-superhuman/），Loïc Houssier 经历了从"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.latent.space/p/the-future-of-email-superhuman-cto"
 canonical_url: "https://latent.space/p/the-future-of-email-superhuman-cto"
 source_name: "Latent Space"
@@ -78,6 +78,7 @@ fact_extraction_completed_at: 2026-07-04T04:35:47.676Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # From applied cryptography and offensive security in France’s defense industry to optimizing nuclear submarine workflows, then selling his e-signature startup to Docusign (https://www.docusign.com/company/news-center/opentrust-joins-docusign-global-trust-network and now running AI as CTO of Superhuman Mail (Superhuman, recently acquired by Grammarly https://techcrunch.com/2025/07/01/grammarly-acquires-ai-email-client-superhuman/), Loïc Houssier has lived the full arc from deep infra and complianc

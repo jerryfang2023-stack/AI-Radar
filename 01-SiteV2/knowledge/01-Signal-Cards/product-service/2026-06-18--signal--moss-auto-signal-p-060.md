@@ -2,7 +2,7 @@
 id: SIG-20260618-A08
 type: signal_card
 signal_type: product_service
-title: "MOSS 发布 AI 基础设施能力，切入模型部署和算力服务"
+title: "MOSS-TTS-Local-Transformer-v1.5 在 SGLang-Omni 上：原生流式 48 kHz 语音服务"
 date: 2026-06-18
 status: published
 source_title: "MOSS-TTS-Local-Transformer-v1.5 在 SGLang-Omni 上：原生流式 48 kHz 语音服务"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "MOSS"
 
 frontend:
-  displayTitle: "MOSS 发布 AI 基础设施能力，切入模型部署和算力服务"
+  displayTitle: "MOSS-TTS-Local-Transformer-v1.5 在 SGLang-Omni 上：原生流式 48 kHz 语音服务"
   sourceLinks:
     - "https://www.lmsys.org/blog/2026-06-17-moss-tts-local-v15"
 ---
 
-# MOSS 发布 AI 基础设施能力，切入模型部署和算力服务
+# MOSS-TTS-Local-Transformer-v1.5 在 SGLang-Omni 上：原生流式 48 kHz 语音服务
 
 ## 新闻事实
 

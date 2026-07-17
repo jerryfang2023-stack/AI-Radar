@@ -2,7 +2,7 @@
 id: SIG-20260611-A04
 type: signal_card
 signal_type: case
-title: "Better.com 案例：AI 进入企业智能体协作流程"
+title: "ElevenLabs与Better.com展示AI贷款智能体Betsy™在金融服务中的规模化成功"
 date: 2026-06-11
 status: published
 source_title: "ElevenLabs and Better.com Showcase Success of AI Loan Agent, Betsy™, at Scale in Financial Services"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Better.com"
 
 frontend:
-  displayTitle: "Better.com 案例：AI 进入企业智能体协作流程"
+  displayTitle: "ElevenLabs与Better.com展示AI贷款智能体Betsy™在金融服务中的规模化成功"
   sourceLinks:
     - "https://www.businesswire.com/news/home/20260225955474/en/ElevenLabs-and-Better.com-Showcase-Success-of-AI-Loan-Agent-Betsy-at-Scale-in-Financial-Services"
 ---
 
-# Better.com 案例：AI 进入企业智能体协作流程
+# ElevenLabs与Better.com展示AI贷款智能体Betsy™在金融服务中的规模化成功
 
 ## 新闻事实
 

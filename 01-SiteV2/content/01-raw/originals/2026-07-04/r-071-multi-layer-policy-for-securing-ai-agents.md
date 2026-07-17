@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-071
 title: "Multi-Layer Policy for Securing AI Agents"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "确保AI智能体安全的多层策略"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.tigera.io/blog/multi-layer-policy-for-securing-ai-agents/"
 canonical_url: "https://tigera.io/blog/multi-layer-policy-for-securing-ai-agents"
 source_name: "Tigera Blog (Calico / AI Security)"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-04T04:50:50.564Z
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Multi-Layer Policy for Securing AI Agents

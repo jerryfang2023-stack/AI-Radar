@@ -72,6 +72,10 @@ key_excerpts: [{"type":"workflow_change","text":"Anthropic 推出 AI 科研工�
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Claude Science 科研工作台正式上线"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Claude Science 科研工作台正式上线

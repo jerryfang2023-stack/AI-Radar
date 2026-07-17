@@ -2,7 +2,7 @@
 id: SIG-20260615-A15
 type: signal_card
 signal_type: case
-title: "Google 如何用 AI 重塑搜索 案例：AI 进入企业智能体协作流程"
+title: "Google 如何用 AI 重塑搜索"
 date: 2026-06-15
 status: published
 source_title: "Google 如何用 AI 重塑搜索"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "Google 如何用 AI 重塑搜索"
 
 frontend:
-  displayTitle: "Google 如何用 AI 重塑搜索 案例：AI 进入企业智能体协作流程"
+  displayTitle: "Google 如何用 AI 重塑搜索"
   sourceLinks:
     - "https://www.bloomberg.com/news/videos/2026-06-14/how-google-is-reinventing-search-with-ai-video"
 ---
 
-# Google 如何用 AI 重塑搜索 案例：AI 进入企业智能体协作流程
+# Google 如何用 AI 重塑搜索
 
 ## 新闻事实
 

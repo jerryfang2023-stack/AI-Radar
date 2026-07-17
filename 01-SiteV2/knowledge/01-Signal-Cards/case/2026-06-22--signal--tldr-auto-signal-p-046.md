@@ -2,7 +2,7 @@
 id: SIG-20260622-A15
 type: signal_card
 signal_type: case
-title: "Tldr 记录企业应用场景：模型部署和算力调用"
+title: "OpenAI政府持股🇺🇸，谷歌计算交易🚀，微软Scout发布🤖"
 date: 2026-06-22
 status: published
 source_title: "OpenAI govt stake 🇺🇸, Google compute deal 🚀, Microsoft Scout launch 🤖"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Tldr"
 
 frontend:
-  displayTitle: "Tldr 记录企业应用场景：模型部署和算力调用"
+  displayTitle: "OpenAI政府持股🇺🇸，谷歌计算交易🚀，微软Scout发布🤖"
   sourceLinks:
     - "https://tldr.tech/ai/2026-06-08"
 ---
 
-# Tldr 记录企业应用场景：模型部署和算力调用
+# OpenAI政府持股🇺🇸，谷歌计算交易🚀，微软Scout发布🤖
 
 ## 新闻事实
 

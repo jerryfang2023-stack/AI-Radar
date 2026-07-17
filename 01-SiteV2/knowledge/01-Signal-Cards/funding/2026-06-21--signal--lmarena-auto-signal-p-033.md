@@ -2,7 +2,7 @@
 id: SIG-20260621-A02
 type: signal_card
 signal_type: funding
-title: "State of Evals] LMArena's $1.7B Vision — Anastasios Angelopoulos, LMArena"
+title: "[评估现状] LMArena的17亿美元愿景 — Anastasios Angelopoulos, LMArena"
 date: 2026-06-21
 status: published
 source_title: "State of Evals] LMArena's $1.7B Vision — Anastasios Angelopoulos, LMArena"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "LMArena"
 
 frontend:
-  displayTitle: "State of Evals] LMArena's $1.7B Vision — Anastasios Angelopoulos, LMArena"
+  displayTitle: "[评估现状] LMArena的17亿美元愿景 — Anastasios Angelopoulos, LMArena"
   sourceLinks:
     - "https://www.latent.space/p/state-of-evals-lmarenas-17b-vision"
 ---
 
-# State of Evals] LMArena's $1.7B Vision — Anastasios Angelopoulos, LMArena
+# [评估现状] LMArena的17亿美元愿景 — Anastasios Angelopoulos, LMArena
 
 ## 新闻事实
 

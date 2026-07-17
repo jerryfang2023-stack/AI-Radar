@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Runlayer raises $30M from Felicis & Kho
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only
+title_zh: "Runlayer 完成3000万美元A轮融资，全力押注人工智能"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Runlayer raises $30M Series A to go all in on AI

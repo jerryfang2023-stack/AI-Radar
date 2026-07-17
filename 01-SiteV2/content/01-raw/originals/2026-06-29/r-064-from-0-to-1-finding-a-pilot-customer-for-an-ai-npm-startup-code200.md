@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"In this case study, we share how we
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "从0到1：为AI NPM初创公司寻找试点客户 - Code200"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # From 0 to 1: Finding a Pilot Customer for an AI NPM Startup - Code200

@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-010
 title: "DeepSeek 新一轮融资估值约710亿美元，资金将用于自建数据中心和AI芯片"
 title_zh: "DeepSeek 新一轮融资估值约710亿美元，资金将用于自建数据中心和AI芯片"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://the-decoder.com/deepseek-needs-more-cash-just-weeks-after-closing-its-first-7-billion-round"
 canonical_url: "https://the-decoder.com/deepseek-needs-more-cash-just-weeks-after-closing-its-first-7-billion-round"
 source_name: "The Decoder：AI News（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-15T04:28:37.574Z
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # DeepSeek 新一轮融资估值约710亿美元，资金将用于自建数据中心和AI芯片

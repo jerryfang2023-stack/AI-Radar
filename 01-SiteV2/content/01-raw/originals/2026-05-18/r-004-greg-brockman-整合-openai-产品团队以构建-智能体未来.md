@@ -57,6 +57,10 @@ key_excerpts: [{"type":"product_update","text":"OpenAI 正将 ChatGPT、代码�
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "Greg Brockman 整合 OpenAI 产品团队以构建\"智能体未来\""
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Greg Brockman 整合 OpenAI 产品团队以构建"智能体未来"

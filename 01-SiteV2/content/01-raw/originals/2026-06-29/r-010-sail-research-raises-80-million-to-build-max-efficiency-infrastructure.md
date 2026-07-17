@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Sail Research Raises $80 Million to Bui
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_zh: "Sail Research 筹集8000万美元，为AI代理构建最高效基础设施"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Sail Research Raises $80 Million to Build Max-Efficiency Infrastructure for AI Agents

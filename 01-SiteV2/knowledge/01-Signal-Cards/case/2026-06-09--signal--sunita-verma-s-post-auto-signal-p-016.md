@@ -2,7 +2,7 @@
 id: SIG-20260609-A03
 type: signal_card
 signal_type: case
-title: "Sunita Verma's Post - LinkedIn"
+title: "Sunita Verma的LinkedIn帖子"
 date: 2026-06-09
 status: published
 source_title: "Sunita Verma's Post - LinkedIn"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Sunita Verma's Post"
 
 frontend:
-  displayTitle: "Sunita Verma's Post - LinkedIn"
+  displayTitle: "Sunita Verma的LinkedIn帖子"
   sourceLinks:
     - "https://www.linkedin.com/posts/sunita-verma-1a4491_inference-costs-dropped-280-fold-over-the-activity-7425297392540975104-X9Fk"
 ---
 
-# Sunita Verma's Post - LinkedIn
+# Sunita Verma的LinkedIn帖子
 
 ## 新闻事实
 

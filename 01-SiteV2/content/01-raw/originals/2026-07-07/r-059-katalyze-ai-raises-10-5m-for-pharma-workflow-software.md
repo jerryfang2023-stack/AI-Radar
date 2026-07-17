@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-059
 title: "Katalyze AI raises $10.5M for pharma workflow software"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "Katalyze AI 获1050万美元融资，用于开发制药工作流软件"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.axios.com/pro/biotech-deals/2026/07/06/katalyze-ai-seed-round-pharma-workflow-software"
 canonical_url: "https://axios.com/pro/biotech-deals/2026/07/06/katalyze-ai-seed-round-pharma-workflow-software"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-07T02:46:59.861Z
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Katalyze AI raises $10.5M for pharma workflow software

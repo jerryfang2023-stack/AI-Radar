@@ -57,6 +57,10 @@ key_excerpts: [{"type":"workflow_change","text":"422 points / 139 comments / que
 theme: mature-commercial-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "Show HN: Skyvern – 利用大语言模型与计算机视觉的浏览器自动化工具"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Show HN: Skyvern – Browser automation using LLMs and computer vision

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"Retell AI Automates Usage-Based Pri
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "Retell AI 实现基于使用量的自动定价，以扩展其AI语音代理..."
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Retell AI Automates Usage-Based Pricing to Scale its AI Voice Agent ...

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"MattoBoard, the makers of web-based sof
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "3D 情绪板与市场 MattoBoard 获 200 万美元融资，推出 AI 视觉搜索"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # 3D mood board and marketplace MattoBoard picks up $2M to launch AI visual search | TechCrunch

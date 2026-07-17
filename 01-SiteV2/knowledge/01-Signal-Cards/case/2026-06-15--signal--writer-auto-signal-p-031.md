@@ -2,7 +2,7 @@
 id: SIG-20260615-A06
 type: signal_card
 signal_type: case
-title: "Writer 案例：AI 进入地产开发和建筑设计流程"
+title: "打造生成式AI的“简易按钮” | Writer首席执行官May Habib"
 date: 2026-06-15
 status: published
 source_title: "Building the Easy Button for Generative AI | May Habib, CEO, Writer"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "Writer"
 
 frontend:
-  displayTitle: "Writer 案例：AI 进入地产开发和建筑设计流程"
+  displayTitle: "打造生成式AI的“简易按钮” | Writer首席执行官May Habib"
   sourceLinks:
     - "https://podcasters.spotify.com/pod/show/firstmark/episodes/Building-the-Easy-Button-for-Generative-AI--May-Habib--CEO--Writer-e2r9qk6"
 ---
 
-# Writer 案例：AI 进入地产开发和建筑设计流程
+# 打造生成式AI的“简易按钮” | Writer首席执行官May Habib
 
 ## 新闻事实
 

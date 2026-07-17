@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"- From deterministic chatbot to con
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "4个月内将AI智能体部署到生产环境：Lacoste用例"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Deploying an AI agent in production in 4 months: the lacoste use case

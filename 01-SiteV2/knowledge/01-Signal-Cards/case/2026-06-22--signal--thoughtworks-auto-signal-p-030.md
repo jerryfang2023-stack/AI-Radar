@@ -2,7 +2,7 @@
 id: SIG-20260622-A08
 type: signal_card
 signal_type: case
-title: "Thoughtworks 记录企业应用场景：模型部署和算力调用"
+title: "Thoughtworks 推出 Agent/works™，用于跨任意云环境治理和运行企业级 AI 智能体"
 date: 2026-06-22
 status: published
 source_title: "Thoughtworks Launches Agent/works™ to Govern and Run Enterprise AI Agents Across Any Cloud | Thoughtworks United States"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Thoughtworks"
 
 frontend:
-  displayTitle: "Thoughtworks 记录企业应用场景：模型部署和算力调用"
+  displayTitle: "Thoughtworks 推出 Agent/works™，用于跨任意云环境治理和运行企业级 AI 智能体"
   sourceLinks:
     - "https://www.thoughtworks.com/en-us/about-us/news/2026/thoughtworks-launches-agent-works"
 ---
 
-# Thoughtworks 记录企业应用场景：模型部署和算力调用
+# Thoughtworks 推出 Agent/works™，用于跨任意云环境治理和运行企业级 AI 智能体
 
 ## 新闻事实
 

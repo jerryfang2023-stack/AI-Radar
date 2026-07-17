@@ -72,6 +72,10 @@ key_excerpts: [{"type":"company_action","text":"Midjourney V8.1 的 Draft mode �
 theme: outside-core-exploration
 keyword_group: outside-core-exploration
 copyright_note: local research archive only
+title_zh: "Midjourney V8.1 推出 Draft mode 草稿模式与新功能预览"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Midjourney V8.1 推出 Draft mode 草稿模式与新功能预览

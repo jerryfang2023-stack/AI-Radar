@@ -2,7 +2,7 @@
 id: SIG-20260710-A09
 type: signal_card
 signal_type: case
-title: "Giant Swarm Agent平台简介：在您的数据所在地运行的代理"
+title: "推出Giant Swarm Agent平台：智能体在数据所在之处运行"
 date: 2026-07-10
 status: published
 source_title: "Introducing the Giant Swarm Agent Platform: Agents that run where your data lives"
@@ -57,12 +57,12 @@ opportunity_signals:
 signal_owner: "Giantswarm"
 
 frontend:
-  displayTitle: "Giant Swarm Agent平台简介：在您的数据所在地运行的代理"
+  displayTitle: "推出Giant Swarm Agent平台：智能体在数据所在之处运行"
   sourceLinks:
     - "https://www.giantswarm.io/blog/introducing-the-giant-swarm-agent-platform-agents-that-run-where-your-data-lives"
 ---
 
-# Giant Swarm Agent平台简介：在您的数据所在地运行的代理
+# 推出Giant Swarm Agent平台：智能体在数据所在之处运行
 
 ## 新闻事实
 

@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-075
 title: "美国商务部批准OpenAI大规模发布GPT-5.6，Sol明日亮相"
 title_zh: "美国商务部批准OpenAI大规模发布GPT-5.6，Sol明日亮相"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/973/922.htm"
 canonical_url: "https://ithome.com/0/973/922.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-08T04:39:26.020Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 美国商务部批准OpenAI大规模发布GPT-5.6，Sol明日亮相

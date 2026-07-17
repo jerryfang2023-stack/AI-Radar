@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"Cloudflare 宣布 Ensemble AI 团�
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Cloudflare 引入 Ensemble AI 团队，加速 AI 基础设施研发"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Cloudflare 引入 Ensemble AI 团队，加速 AI 基础设施研发

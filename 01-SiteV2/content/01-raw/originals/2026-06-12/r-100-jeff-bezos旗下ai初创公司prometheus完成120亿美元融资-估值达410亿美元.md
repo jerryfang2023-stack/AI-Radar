@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Jeff Bezos的AI初创公司Prometheus�
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "Jeff Bezos旗下AI初创公司Prometheus完成120亿美元融资，估值达410亿美元"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Jeff Bezos旗下AI初创公司Prometheus完成120亿美元融资，估值达410亿美元

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"company_action","text":"2026-06-26T05:45:00Z","supports"
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Vaspian 与 BlueMesh 合作，将私有 AI 引入企业通信"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Vaspian Partners with BlueMesh to Bring Private AI to Business Communications – IT Business Net

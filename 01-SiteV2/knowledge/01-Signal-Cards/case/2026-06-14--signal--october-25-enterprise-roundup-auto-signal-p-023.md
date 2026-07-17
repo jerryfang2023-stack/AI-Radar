@@ -2,7 +2,7 @@
 id: SIG-20260614-A02
 type: signal_card
 signal_type: case
-title: "October '25 enterprise roundup 案例：AI 进入地产开发和建筑设计流程"
+title: "2025年10月企业动态汇总 - GitHub"
 date: 2026-06-14
 status: published
 source_title: "October '25 enterprise roundup - GitHub"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "October '25 enterprise roundup"
 
 frontend:
-  displayTitle: "October '25 enterprise roundup 案例：AI 进入地产开发和建筑设计流程"
+  displayTitle: "2025年10月企业动态汇总 - GitHub"
   sourceLinks:
     - "https://github.com/resources/insights/enterprise-content-roundup-october"
 ---
 
-# October '25 enterprise roundup 案例：AI 进入地产开发和建筑设计流程
+# 2025年10月企业动态汇总 - GitHub
 
 ## 新闻事实
 

@@ -2,7 +2,7 @@
 id: SIG-20260616-A05
 type: signal_card
 signal_type: product_service
-title: "Berkeley 推出 Agent 工作流能力，切入地产和建筑设计工作流"
+title: "伯克利RDI发布Agents' Last Exam基准"
 date: 2026-06-16
 status: published
 source_title: "伯克利RDI发布Agents' Last Exam基准"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Berkeley"
 
 frontend:
-  displayTitle: "Berkeley 推出 Agent 工作流能力，切入地产和建筑设计工作流"
+  displayTitle: "伯克利RDI发布Agents' Last Exam基准"
   sourceLinks:
     - "https://rdi.berkeley.edu/blog/agents-last-exam"
 ---
 
-# Berkeley 推出 Agent 工作流能力，切入地产和建筑设计工作流
+# 伯克利RDI发布Agents' Last Exam基准
 
 ## 新闻事实
 

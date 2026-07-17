@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"cuTile Rust 是一个基于 tile 的 GPU
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "cuTile Rust：安全无数据竞争的 GPU 内核系统"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # cuTile Rust：安全无数据竞争的 GPU 内核系统

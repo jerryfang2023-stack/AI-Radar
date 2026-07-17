@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"Microsoft AI 发布 MAI-Transcribe-1.5�
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Microsoft AI 推出 MAI-Transcribe-1.5 语音转文本模型"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Microsoft AI 推出 MAI-Transcribe-1.5 语音转文本模型

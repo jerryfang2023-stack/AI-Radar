@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Apollo 和 Blackstone 合作开展 350 
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Apollo 与 Blackstone 联手 350 亿美元 AI 融资交易"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Apollo 与 Blackstone 联手 350 亿美元 AI 融资交易

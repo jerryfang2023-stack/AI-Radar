@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"# Algorithms and packages in the AW
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "AWS Marketplace中的算法与软件包 - Amazon SageMaker AI"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Algorithms and packages in the AWS Marketplace - Amazon SageMaker AI

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Ascend raises $25 million for pre-seed 
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "Ascend为太平洋地区AI初创公司筹集2500万美元种子前资金"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Ascend raises $25 million for pre-seed AI startups in the Pacific ...

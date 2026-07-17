@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"Anthropic 举办的 Built with Opus
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Built with Opus 4.7 Claude Code 黑客马拉松获奖者揭晓"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Built with Opus 4.7 Claude Code 黑客马拉松获奖者揭晓

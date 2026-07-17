@@ -2,7 +2,7 @@
 id: SIG-20260520-01
 type: signal_card
 signal_type: funding
-title: "Trace 融资 300 万美元，瞄准企业智能体上下文管理"
+title: "Trace 筹集300万美元，解决企业AI代理采用难题 | TechCrunch"
 date: 2026-05-20
 status: draft
 asset_level: candidate
@@ -37,7 +37,7 @@ signal_owner: "Trace"
 watch_reason: "未来 30 天观察是否出现设计伙伴、企业客户或与现有系统集成的更多说明。"
 
 frontend:
-  displayTitle: "Trace 融资 300 万美元，瞄准企业智能体上下文管理"
+  displayTitle: "Trace 筹集300万美元，解决企业AI代理采用难题 | TechCrunch"
   eventLine: "Trace 获得 300 万美元融资，产品方向是把企业环境和流程映射给智能体使用。"
   whyWatch: "这条信号把融资和企业智能体落地难题连在一起，问题落在流程、权限和上下文交付。"
   businessMeaning: "企业采用智能体时，预算不只花在模型调用上，也会流向流程梳理、系统上下文和部署管理。"
@@ -70,7 +70,7 @@ opportunity_signals:
   missing_fields: ["specific_task", "delivery_model"]
 ---
 
-# Trace 融资 300 万美元，瞄准企业智能体上下文管理
+# Trace 筹集300万美元，解决企业AI代理采用难题 | TechCrunch
 
 ## 信号底稿
 

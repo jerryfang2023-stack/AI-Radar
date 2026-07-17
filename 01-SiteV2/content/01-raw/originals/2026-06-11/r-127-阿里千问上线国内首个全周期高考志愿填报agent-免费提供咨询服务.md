@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"阿里巴巴旗下千问上线�
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "阿里千问上线国内首个全周期高考志愿填报Agent，免费提供咨询服务"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 阿里千问上线国内首个全周期高考志愿填报Agent，免费提供咨询服务

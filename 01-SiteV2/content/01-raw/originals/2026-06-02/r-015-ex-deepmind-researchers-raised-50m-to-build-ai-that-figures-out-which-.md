@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"London AI lab Inherent raised $50M from
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only
+title_zh: "前DeepMind研究人员筹集5000万美元，打造能判断哪些科学问题值得探究的AI"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Ex-DeepMind researchers raised $50M to build AI that figures out which scientific questions are worth asking

@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-115
 title: "金山办公推出 WPS Comate AI 办公客户端"
 title_zh: "金山办公推出 WPS Comate AI 办公客户端"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/977/105.htm"
 canonical_url: "https://ithome.com/0/977/105.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-16T02:39:34.057Z
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 金山办公推出 WPS Comate AI 办公客户端

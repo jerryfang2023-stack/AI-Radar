@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-063
 title: "前 OpenAI CTO 穆拉蒂创立的 Thinking Machines Lab 发布 Inkling 多模态模型，975B 参数开源"
 title_zh: "前 OpenAI CTO 穆拉蒂创立的 Thinking Machines Lab 发布 Inkling 多模态模型，975B 参数开源"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/977/504.htm"
 canonical_url: "https://ithome.com/0/977/504.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-17T04:40:17.180Z
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 前 OpenAI CTO 穆拉蒂创立的 Thinking Machines Lab 发布 Inkling 多模态模型，975B 参数开源

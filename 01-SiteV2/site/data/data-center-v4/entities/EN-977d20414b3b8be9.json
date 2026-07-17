@@ -1,0 +1,161 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 818,
+    "quarantinedEventCount": 58
+  },
+  "entity": {
+    "id": "EN-977d20414b3b8be9",
+    "name": "NXT RNGD server",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-f1912ab7c46288f3"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [
+      "EN-f4bec299df3f4f27"
+    ],
+    "firstSeen": "2025-09-26",
+    "lastSeen": "2026-07-14",
+    "relationIds": [
+      "REL2-8206a9e5e6a4bd80"
+    ],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [
+        "EV-f1912ab7c46288f3"
+      ],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-f1912ab7c46288f3",
+        "dataDate": "2026-07-14",
+        "date": "2025-09-26",
+        "eventType": "hardware_product",
+        "eventTypeLabel": "硬件产品",
+        "eventGroup": "AI 硬件",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "FuriosaAI 推出面向数据中心规模推理的 NXT RNGD 服务器 - DCD",
+        "displayTags": [
+          {
+            "dimensionId": "deployment_model",
+            "id": "on_premise",
+            "dimensionName": "部署形态",
+            "name": "本地部署"
+          }
+        ],
+        "entityIds": [
+          "EN-f4bec299df3f4f27",
+          "EN-5f5fcd8701ab30c0",
+          "EN-977d20414b3b8be9"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [
+    {
+      "id": "EN-f4bec299df3f4f27",
+      "name": "FuriosaAI",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-8fcb52bb6ec980af",
+        "EV-6ebcbb2660ec7ad9",
+        "EV-f1912ab7c46288f3"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution"
+      ],
+      "relatedEntityIds": [
+        "EN-373ac021a2c0bb2c",
+        "EN-5f5fcd8701ab30c0",
+        "EN-977d20414b3b8be9",
+        "EN-77fe4e790d5bc756"
+      ],
+      "firstSeen": "2025-09-26",
+      "lastSeen": "2026-07-15"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-8206a9e5e6a4bd80",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-f4bec299df3f4f27",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-977d20414b3b8be9",
+      "object_type": "entity",
+      "event_id": "EV-f1912ab7c46288f3",
+      "claim_refs": [
+        "CL-8fae10d119f22475",
+        "CL-0c210509638f5894",
+        "CL-38c8cddac76c3aca",
+        "CL-58bce007eb76e2ff"
+      ],
+      "source_refs": [
+        "SA-4dfac39df948c1ef"
+      ],
+      "data_date": "2026-07-14",
+      "status": "verified"
+    }
+  ],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [
+    {
+      "id": "HW-ecc6755da7bbbbcd",
+      "eventId": "EV-f1912ab7c46288f3",
+      "dataDate": "2026-07-14",
+      "date": "2025-09-26",
+      "title": "FuriosaAI 推出面向数据中心规模推理的 NXT RNGD 服务器 - DCD",
+      "hardwareType": "gpu",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "data_center",
+      "supplier": "FuriosaAI",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://datacenterdynamics.com/en/news/furiosaai-launches-nxt-rngd-server-for-data-center-scale-inferencing",
+      "sourceName": "datacenterdynamics.com",
+      "sourceDate": "2025-09-26",
+      "entityIds": [
+        "EN-f4bec299df3f4f27",
+        "EN-5f5fcd8701ab30c0",
+        "EN-977d20414b3b8be9"
+      ]
+    }
+  ]
+}

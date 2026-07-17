@@ -2,7 +2,7 @@
 id: SIG-20260709-A10
 type: signal_card
 signal_type: case
-title: "Accenture 与 AlphaSense 宣布战略投资和合作，将市场情报 agentic 工作流带给企业"
+title: "埃森哲与AlphaSense宣布战略投资与合作伙伴关系，为企业市场情报带来智能体工作流"
 date: 2026-07-09
 status: published
 source_title: "Accenture and AlphaSense Announce Strategic Investment and Partnership to Bring Agentic Workflows for Market Intelligence to Enterprises – Company Announcement - FT.com"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "Accenture and AlphaSense"
 
 frontend:
-  displayTitle: "Accenture 与 AlphaSense 宣布战略投资和合作，将市场情报 agentic 工作流带给企业"
+  displayTitle: "埃森哲与AlphaSense宣布战略投资与合作伙伴关系，为企业市场情报带来智能体工作流"
   sourceLinks:
     - "https://markets.ft.com/data/announce/detail?dockey=600-202606030759BIZWIRE_USPRX____20260603_BW374687-1"
 ---
 
-# Accenture 与 AlphaSense 宣布战略投资和合作，将市场情报 agentic 工作流带给企业
+# 埃森哲与AlphaSense宣布战略投资与合作伙伴关系，为企业市场情报带来智能体工作流
 
 ## 新闻事实
 

@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-005
 title: "美联储任命AI投资人Marc Andreessen加入工作组，研究AI对经济影响"
 title_zh: "美联储任命AI投资人Marc Andreessen加入工作组，研究AI对经济影响"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://the-decoder.com/the-fed-wants-ai-investor-marc-andreessen-to-help-figure-out-if-ai-can-tame-inflation"
 canonical_url: "https://the-decoder.com/the-fed-wants-ai-investor-marc-andreessen-to-help-figure-out-if-ai-can-tame-inflation"
 source_name: "The Decoder：AI News（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-11T04:06:31.341Z
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 美联储任命AI投资人Marc Andreessen加入工作组，研究AI对经济影响

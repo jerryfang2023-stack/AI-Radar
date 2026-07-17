@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-094
 title: "报告称 Claude Code 处理用户请求前消耗 Tokens 量约为 OpenCode 的 4.7 倍"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "报告称 Claude Code 处理用户请求前消耗 Tokens 量约为 OpenCode 的 4.7 倍"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/976/510.htm"
 canonical_url: "https://ithome.com/0/976/510.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-15T04:28:38.100Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 报告称 Claude Code 处理用户请求前消耗 Tokens 量约为 OpenCode 的 4.7 倍

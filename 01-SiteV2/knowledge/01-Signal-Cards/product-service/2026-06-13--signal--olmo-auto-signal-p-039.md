@@ -2,7 +2,7 @@
 id: SIG-20260613-A08
 type: signal_card
 signal_type: product_service
-title: "olmo 发布 AI 基础设施能力，切入地产和建筑设计工作流"
+title: "olmo-eval：面向模型开发循环的评估工作台"
 date: 2026-06-13
 status: published
 source_title: "olmo-eval：面向模型开发循环的评估工作台"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "olmo"
 
 frontend:
-  displayTitle: "olmo 发布 AI 基础设施能力，切入地产和建筑设计工作流"
+  displayTitle: "olmo-eval：面向模型开发循环的评估工作台"
   sourceLinks:
     - "https://huggingface.co/blog/allenai/olmo-eval"
 ---
 
-# olmo 发布 AI 基础设施能力，切入地产和建筑设计工作流
+# olmo-eval：面向模型开发循环的评估工作台
 
 ## 新闻事实
 

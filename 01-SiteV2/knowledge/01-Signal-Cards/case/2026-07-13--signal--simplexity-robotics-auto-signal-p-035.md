@@ -2,7 +2,7 @@
 id: SIG-20260713-A02
 type: signal_card
 signal_type: case
-title: "Simplexity Robotics 成立 11 个月即向生产线交付 100 台 i7 Pro 机器人，并部署于 Leaderdrive 与 AI 基础设施工厂"
+title: "Simplexity Robotics 在成立11个月时向生产线交付100台i7 Pro机器人，部署于Leaderdrive及AI基础设施工厂"
 date: 2026-07-13
 status: published
 source_title: "Simplexity Robotics Ships 100 i7 Pro Robots to Production Lines at 11 Months Old, Deploys at Leaderdrive and AI Infrastructure Factories | RobotsBeat"
@@ -58,12 +58,12 @@ opportunity_signals:
 signal_owner: "Simplexity Robotics"
 
 frontend:
-  displayTitle: "Simplexity Robotics 成立 11 个月即向生产线交付 100 台 i7 Pro 机器人，并部署于 Leaderdrive 与 AI 基础设施工厂"
+  displayTitle: "Simplexity Robotics 在成立11个月时向生产线交付100台i7 Pro机器人，部署于Leaderdrive及AI基础设施工厂"
   sourceLinks:
     - "https://robotsbeat.com/simplexity-robotics-100-robots-i7-pro-leaderdrive-production-deployment/"
 ---
 
-# Simplexity Robotics 成立 11 个月即向生产线交付 100 台 i7 Pro 机器人，并部署于 Leaderdrive 与 AI 基础设施工厂
+# Simplexity Robotics 在成立11个月时向生产线交付100台i7 Pro机器人，部署于Leaderdrive及AI基础设施工厂
 
 ## 新闻事实
 

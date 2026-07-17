@@ -2,7 +2,7 @@
 id: SIG-20260627-A02
 type: signal_card
 signal_type: funding
-title: "Netris raises $15M Series A from a16z to help AI neoclouds go live faster"
+title: "Netris获a16z领投1500万美元A轮融资，助力AI新云加速上线"
 date: 2026-06-27
 status: published
 source_title: "Netris raises $15M Series A from a16z to help AI neoclouds go live faster"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Netris"
 
 frontend:
-  displayTitle: "Netris raises $15M Series A from a16z to help AI neoclouds go live faster"
+  displayTitle: "Netris获a16z领投1500万美元A轮融资，助力AI新云加速上线"
   sourceLinks:
     - "https://techcrunch.com/2026/06/25/netris-raises-15m-series-a-from-a16z-to-help-ai-neoclouds-go-live-faster/"
 ---
 
-# Netris raises $15M Series A from a16z to help AI neoclouds go live faster
+# Netris获a16z领投1500万美元A轮融资，助力AI新云加速上线
 
 ## 新闻事实
 

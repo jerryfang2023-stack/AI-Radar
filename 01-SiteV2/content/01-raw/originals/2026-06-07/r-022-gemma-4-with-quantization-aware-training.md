@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"# Gemma 4 QAT models: Optimizing
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Gemma 4 引入量化感知训练"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Gemma 4 with quantization-aware training

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"2024 年诺贝尔化学奖得主、Alph
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "2024 诺贝尔化学奖得主詹珀离开谷歌 DeepMind，加入 Anthropic"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 2024 诺贝尔化学奖得主詹珀离开谷歌 DeepMind，加入 Anthropic

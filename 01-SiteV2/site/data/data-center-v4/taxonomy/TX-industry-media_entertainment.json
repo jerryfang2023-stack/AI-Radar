@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-17T18:20:10.588Z",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 727,
-    "quarantinedEventCount": 50
+    "eventCount": 818,
+    "quarantinedEventCount": 58
   },
   "node": {
     "id": "TX-industry-media_entertainment",
@@ -18,36 +18,47 @@
     "valueId": "media_entertainment",
     "eventIds": [
       "EV-2d6d2dc0ead4be10",
-      "EV-e7a6bcd24f4241d0",
+      "EV-afcd5426f5c01dc7",
+      "EV-6c361125c3f50bb6",
       "EV-aad2b98b8f25d64b",
+      "EV-d633676a4a7d89a3",
       "EV-07a5533c18e5a74e",
-      "EV-04873bbc8be8e70d",
-      "EV-4c0e7025692ab98c",
+      "EV-0edb0a592ca1fd67",
+      "EV-7e52d691a0553667",
       "EV-49751dfc7d2f6d6c",
-      "EV-9df93e714a75cd7c",
       "EV-83acf26a011ef213",
       "EV-568d2aeab5234e48",
       "EV-b986a633cca27df9"
     ],
     "entityIds": [
       "EN-3db1f560db626918",
+      "EN-bfc698cb0f9b4d72",
+      "EN-9c8ae69b84f21a2e",
+      "EN-3a7bd3e2360a3d29",
+      "EN-23929c7dca3eb576",
       "EN-5388bc10736a0eff",
       "EN-f0edcf96f6fa2ccb",
       "EN-d36e5a1a7a3c45ce",
       "EN-397e5a2983130593",
       "EN-dd172e183ec20177",
+      "EN-754c490bd199c21a",
+      "EN-7a3ecc54829211df",
       "EN-ea3bd73e2b506e00",
+      "EN-72e28a6aa6b39c76",
+      "EN-96eebba49dbbf422",
       "EN-bbdefa2950f49882",
+      "EN-2df4d39c248116dc",
       "EN-30081094f2a8c83d",
-      "EN-2dda21a47aaff47e",
+      "EN-d558e1de958b9d05",
       "EN-2b6e51bec93e86c1",
       "EN-8d4321d936320802",
-      "EN-b0532e1af75cc4ab"
+      "EN-d56aa2f9908f566a",
+      "EN-4d09c69c19f5f67b",
+      "EN-c1eb8e913000a8eb",
+      "EN-0be477336d3e1a8d",
+      "EN-1dc405a4cda895d0"
     ],
-    "fdeIds": [
-      "FDE-7334c7781021c39a",
-      "FDE-54a51e13cde024a8"
-    ],
+    "fdeIds": [],
     "hardwareIds": [
       "HW-dca442211b264bbe"
     ],
@@ -159,7 +170,73 @@
       "publisher": "IT之家（RSS）"
     },
     {
-      "id": "EV-e7a6bcd24f4241d0",
+      "id": "EV-afcd5426f5c01dc7",
+      "dataDate": "2026-07-02",
+      "date": "2026-07-02",
+      "updatedDate": "2026-07-02",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "《舞力全开：派对》今日上线：无需外设，登陆iOS/安卓/鸿蒙",
+      "originalTitle": "",
+      "subject": "《舞力全开：派对》今日",
+      "action": "上线",
+      "object": "：无需外设，登陆iOS/安卓/鸿蒙",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "media_entertainment",
+            "dimensionName": "行业",
+            "name": "媒体与娱乐"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "id": "media_entertainment",
+          "dimensionName": "行业",
+          "name": "媒体与娱乐"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "id": "media_entertainment",
+          "dimensionName": "行业",
+          "name": "媒体与娱乐"
+        }
+      ],
+      "entityIds": [
+        "EN-bfc698cb0f9b4d72",
+        "EN-9c8ae69b84f21a2e",
+        "EN-3a7bd3e2360a3d29"
+      ],
+      "entityNames": [
+        "《舞力全开",
+        "Tencent",
+        "Apple"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/971/414.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-6c361125c3f50bb6",
       "dataDate": "2026-06-07",
       "date": "2026-06-07",
       "updatedDate": "2026-06-07",
@@ -231,9 +308,11 @@
         }
       ],
       "entityIds": [
+        "EN-23929c7dca3eb576",
         "EN-5388bc10736a0eff"
       ],
       "entityNames": [
+        "华为 HiCar 等",
         "ByteDance"
       ],
       "productName": "",
@@ -337,6 +416,95 @@
       "publisher": "TechCrunch：AI（RSS）"
     },
     {
+      "id": "EV-d633676a4a7d89a3",
+      "dataDate": "2026-07-10",
+      "date": "2026-07-09",
+      "updatedDate": "2026-07-10",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "蚂蚁灵波开源实时交互世界模型 LingBot-World 2.0",
+      "originalTitle": "",
+      "subject": "蚂蚁灵波",
+      "action": "开源实时交互世界模型",
+      "object": "LingBot-World 2.0",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "media_entertainment",
+            "dimensionName": "行业",
+            "name": "媒体与娱乐"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "media_entertainment",
+          "dimensionName": "行业",
+          "name": "媒体与娱乐"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "media_entertainment",
+          "dimensionName": "行业",
+          "name": "媒体与娱乐"
+        }
+      ],
+      "entityIds": [
+        "EN-754c490bd199c21a",
+        "EN-7a3ecc54829211df"
+      ],
+      "entityNames": [
+        "蚂蚁灵波",
+        "LingBot-World 2.0"
+      ],
+      "productName": "LingBot-World 2.0",
+      "products": [
+        {
+          "name": "LingBot-World 2.0",
+          "type": "模型",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/974/508.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
       "id": "EV-07a5533c18e5a74e",
       "dataDate": "2026-07-06",
       "date": "2026-07-05",
@@ -364,6 +532,12 @@
             "id": "ai_application",
             "dimensionName": "产品形态",
             "name": "AI 应用"
+          },
+          {
+            "dimensionId": "product_form",
+            "id": "enterprise_platform",
+            "dimensionName": "产品形态",
+            "name": "企业 AI 平台"
           }
         ],
         "use_case": [],
@@ -390,6 +564,12 @@
           "id": "media_entertainment",
           "dimensionName": "行业",
           "name": "媒体与娱乐"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "enterprise_platform",
+          "dimensionName": "产品形态",
+          "name": "企业 AI 平台"
         }
       ],
       "displayTags": [
@@ -398,6 +578,12 @@
           "id": "ai_application",
           "dimensionName": "产品形态",
           "name": "AI 应用"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "enterprise_platform",
+          "dimensionName": "产品形态",
+          "name": "企业 AI 平台"
         },
         {
           "dimensionId": "industry",
@@ -418,7 +604,7 @@
       "publisher": "IT之家（RSS）"
     },
     {
-      "id": "EV-04873bbc8be8e70d",
+      "id": "EV-0edb0a592ca1fd67",
       "dataDate": "2026-07-04",
       "date": "2026-07-04",
       "updatedDate": "2026-07-04",
@@ -428,14 +614,16 @@
       "status": "announced",
       "statusLabel": "已公布",
       "publicationStatus": "verified",
-      "title": "Meta 发布 vibe",
+      "title": "Meta悄然推出“氛围编程”游戏应用Pocket",
       "originalTitle": "Meta quietly launches vibe-coded gaming app Pocket",
       "subject": "Meta quietly",
       "action": "launches",
       "object": "vibe-coded gaming app Pocket",
       "metrics": [],
       "locations": [],
-      "missingFields": [],
+      "missingFields": [
+        "event_time"
+      ],
       "conflicts": [],
       "tags": [],
       "facets": {
@@ -488,11 +676,15 @@
         }
       ],
       "entityIds": [
+        "EN-72e28a6aa6b39c76",
         "EN-ea3bd73e2b506e00",
+        "EN-96eebba49dbbf422",
         "EN-bbdefa2950f49882"
       ],
       "entityNames": [
+        "Meta quietly",
         "Meta",
+        "Intel",
         "Google"
       ],
       "productName": "",
@@ -501,7 +693,7 @@
       "publisher": "TechCrunch AI"
     },
     {
-      "id": "EV-4c0e7025692ab98c",
+      "id": "EV-7e52d691a0553667",
       "dataDate": "2026-07-03",
       "date": "2026-07-03",
       "updatedDate": "2026-07-03",
@@ -552,11 +744,15 @@
         }
       ],
       "entityIds": [
+        "EN-2df4d39c248116dc",
         "EN-ea3bd73e2b506e00",
+        "EN-96eebba49dbbf422",
         "EN-bbdefa2950f49882"
       ],
       "entityNames": [
+        "Meta悄然",
         "Meta",
+        "Intel",
         "Google"
       ],
       "productName": "",
@@ -675,78 +871,22 @@
         }
       ],
       "entityIds": [
-        "EN-30081094f2a8c83d"
+        "EN-30081094f2a8c83d",
+        "EN-d558e1de958b9d05"
       ],
       "entityNames": [
-        "优必选"
+        "优必选",
+        "Walker C1"
       ],
-      "productName": "",
-      "products": [],
+      "productName": "Walker C1",
+      "products": [
+        {
+          "name": "Walker C1",
+          "type": "AI 硬件",
+          "ownerNames": []
+        }
+      ],
       "sourceUrl": "https://ithome.com/0/967/191.htm",
-      "publisher": "IT之家（RSS）"
-    },
-    {
-      "id": "EV-9df93e714a75cd7c",
-      "dataDate": "2026-06-23",
-      "date": "2026-06-22",
-      "updatedDate": "2026-06-23",
-      "eventType": "model_release",
-      "eventTypeLabel": "模型发布",
-      "eventGroup": "模型、产品与服务",
-      "status": "completed",
-      "statusLabel": "已完成",
-      "publicationStatus": "verified",
-      "title": "英特尔联合长安汽车发布 AI 座舱方案：基于第三代酷睿 Ultra 处理器，支持本地运行大语言模型",
-      "originalTitle": "",
-      "subject": "英特尔联合长安汽车",
-      "action": "发布 AI 座舱方案：基于第三代酷睿 Ultra 处理器，支持本地运行大语言模型",
-      "object": "英特尔联合长安汽车发布 AI 座舱方案：基于第三代酷睿 Ultra 处理器，支持本地运行大语言模型",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [
-        "object"
-      ],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "product_form": [],
-        "use_case": [],
-        "industry": [
-          {
-            "dimensionId": "industry",
-            "id": "media_entertainment",
-            "dimensionName": "行业",
-            "name": "媒体与娱乐"
-          }
-        ],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "industry",
-          "id": "media_entertainment",
-          "dimensionName": "行业",
-          "name": "媒体与娱乐"
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "industry",
-          "id": "media_entertainment",
-          "dimensionName": "行业",
-          "name": "媒体与娱乐"
-        }
-      ],
-      "entityIds": [
-        "EN-2dda21a47aaff47e"
-      ],
-      "entityNames": [
-        "英特尔联合长安汽车"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://ithome.com/0/967/220.htm",
       "publisher": "IT之家（RSS）"
     },
     {
@@ -765,9 +905,7 @@
       "subject": "Snap 旗下首款面向普通消费者的 AR 眼镜 Specs",
       "action": "发布",
       "object": "：电致变色镜片、无需外接计算单元，2195 美元",
-      "metrics": [
-        "800 万"
-      ],
+      "metrics": [],
       "locations": [],
       "missingFields": [
         "entities"
@@ -867,12 +1005,19 @@
       "object": "DiffusionGemma，本地 AI 推理速度提升 4 倍",
       "metrics": [
         "26 billion",
-        "3.8 billion"
+        "3.8 billion",
+        "18GB"
       ],
       "locations": [],
       "missingFields": [],
       "conflicts": [],
       "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "image_generation",
+          "name": "图像生成"
+        },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
@@ -882,6 +1027,12 @@
       ],
       "facets": {
         "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          },
           {
             "dimensionId": "product_form",
             "id": "chip_accelerator",
@@ -905,8 +1056,20 @@
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
+          "id": "image_generation",
+          "name": "图像生成"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
           "id": "mixture_of_experts",
           "name": "混合专家模型"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
         },
         {
           "dimensionId": "industry",
@@ -924,9 +1087,21 @@
       "displayTags": [
         {
           "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        },
+        {
+          "dimensionId": "product_form",
           "id": "chip_accelerator",
           "dimensionName": "产品形态",
           "name": "芯片与加速器"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "image_generation",
+          "name": "图像生成"
         },
         {
           "dimensionId": "technology",
@@ -944,15 +1119,34 @@
       "entityIds": [
         "EN-2b6e51bec93e86c1",
         "EN-8d4321d936320802",
-        "EN-b0532e1af75cc4ab"
+        "EN-3db1f560db626918",
+        "EN-d56aa2f9908f566a",
+        "EN-4d09c69c19f5f67b"
       ],
       "entityNames": [
         "Google DeepMind",
         "NVIDIA",
-        "Rime"
+        "Canva",
+        "DiffusionGemma",
+        "DeepMind"
       ],
-      "productName": "",
-      "products": [],
+      "productName": "DiffusionGemma",
+      "products": [
+        {
+          "name": "DiffusionGemma",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Google DeepMind"
+          ]
+        },
+        {
+          "name": "DeepMind",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Google DeepMind"
+          ]
+        }
+      ],
       "sourceUrl": "https://arstechnica.com/google/2026/06/googles-latest-diffusiongemma-open-ai-model-comes-with-a-4x-speed-boost",
       "publisher": "Ars Technica：AI（RSS）"
     },
@@ -1031,13 +1225,27 @@
         }
       ],
       "entityIds": [
-        "EN-8d4321d936320802"
+        "EN-8d4321d936320802",
+        "EN-c1eb8e913000a8eb",
+        "EN-0be477336d3e1a8d",
+        "EN-1dc405a4cda895d0"
       ],
       "entityNames": [
-        "NVIDIA"
+        "NVIDIA",
+        "KRAFTON",
+        "NC",
+        "RTX Spark"
       ],
-      "productName": "",
-      "products": [],
+      "productName": "RTX Spark",
+      "products": [
+        {
+          "name": "RTX Spark",
+          "type": "产品/服务",
+          "ownerNames": [
+            "NVIDIA"
+          ]
+        }
+      ],
       "sourceUrl": "https://blogs.nvidia.com/blog/krafton-nc-t1-korea-gaming-pc-bang-rtx-spark",
       "publisher": "NVIDIA AI Blog"
     }
@@ -1055,22 +1263,212 @@
       ],
       "eventIds": [
         "EV-2d6d2dc0ead4be10",
-        "EV-917a138950a21f91",
         "EV-f05783f745bc7c2c",
+        "EV-34b0f4cfd513fbde",
         "EV-a0d3853dd41c8ef6",
-        "EV-67d9c51e97dfbb7b"
+        "EV-266aff97294156f6",
+        "EV-568d2aeab5234e48"
       ],
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-technology-code_generation",
         "TX-use_case-software_development",
+        "TX-technology-mixture_of_experts",
+        "TX-technology-model_context_protocol",
         "TX-industry-media_entertainment",
-        "TX-technology-model_context_protocol"
+        "TX-technology-image_generation"
+      ],
+      "relatedEntityIds": [
+        "EN-f475981105d2acbd",
+        "EN-309e1850e39b13ff",
+        "EN-954dc5d6516f127c"
+      ],
+      "firstSeen": "2026-06-11",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "EN-bfc698cb0f9b4d72",
+      "name": "《舞力全开",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-afcd5426f5c01dc7"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-media_entertainment"
       ],
       "relatedEntityIds": [],
-      "firstSeen": "2026-06-19",
-      "lastSeen": "2026-07-15"
+      "firstSeen": "2026-07-02",
+      "lastSeen": "2026-07-02"
+    },
+    {
+      "id": "EN-9c8ae69b84f21a2e",
+      "name": "Tencent",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "腾讯"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-87432dbb99cd6033",
+        "EV-427081ec574b43bb",
+        "EV-acaf06b262d9c3db",
+        "EV-27b69ea604475b72",
+        "EV-afcd5426f5c01dc7",
+        "EV-619e33abf3f9bfbf",
+        "EV-be2f6bfcad93c42f",
+        "EV-c7b81290859057b0",
+        "EV-de54542fd7e2282c",
+        "EV-3167e6eed75597e9",
+        "EV-9e35de25113a9269",
+        "EV-c2f5b59db9912018",
+        "EV-57e6392fe3bb69cd",
+        "EV-1a073cd22d1bfa59",
+        "EV-a498b12f3fa2197e",
+        "EV-c11ee0da38376254",
+        "EV-6a6ff349579765ad",
+        "EV-7ff24ae733821395",
+        "EV-86537be17d50ff20",
+        "EV-6b7917bd7edd4bde"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-long_context",
+        "TX-technology-open_weights",
+        "TX-industry-media_entertainment",
+        "TX-technology-multimodal"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-05-18",
+      "lastSeen": "2026-07-16"
+    },
+    {
+      "id": "EN-3a7bd3e2360a3d29",
+      "name": "Apple",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-f282ab8740ff0096",
+        "EV-8a8e894a84768ea5",
+        "EV-afcd5426f5c01dc7",
+        "EV-f5a50f1fed72fec3",
+        "EV-e857f9d1c1478c70",
+        "EV-fd21441fb6e143c3",
+        "EV-8a9b12665a3e40a0",
+        "EV-70cbf25f7ec2cc3a",
+        "EV-8b9e4428074bde60",
+        "EV-967239f907803753",
+        "EV-113899096a32165a",
+        "EV-cabc88e1d09dec80",
+        "EV-cc3b92fe233953cf",
+        "EV-8aead769e84de342",
+        "EV-abf0990dcaceb1ce",
+        "EV-89930fa8d1db98eb",
+        "EV-60c27ec9b857f5c2",
+        "EV-eeb687002cac5f4e",
+        "EV-99e5df844a1bd670",
+        "EV-0b2bfd57923cedd3",
+        "EV-3c51bcb5e99d2b68",
+        "EV-a736c6c64d106475",
+        "EV-dad8c827d14f2799",
+        "EV-4e6dc3ec2b3f0bd6",
+        "EV-634ce5b42f6d32f6",
+        "EV-85373b8ec9148127",
+        "EV-1ae8027c085679e9",
+        "EV-21c749570133c786",
+        "EV-52e1ac21c25a0a09",
+        "EV-591542ccc2de5be8",
+        "EV-5a1422a9929c582e",
+        "EV-8361a47c70ecd243",
+        "EV-9f9bc7ffe6228281",
+        "EV-a5ba3797b38df125",
+        "EV-a9fe726c4ea2a17b",
+        "EV-bff418b2959f58fb",
+        "EV-c5b8faec223a4caf",
+        "EV-d40a1a873015ac98",
+        "EV-da062d02015f99fb",
+        "EV-f6611268f119a172",
+        "EV-0d1980baa83e1e6c",
+        "EV-ef823877347ff40f",
+        "EV-5cd10de5c12916f0",
+        "EV-5613946bdd578a26",
+        "EV-dd902b603e2e3dbc",
+        "EV-da6678e4e865e00e",
+        "EV-8cb2374f76202ecc",
+        "EV-946569cccbd9222f",
+        "EV-b4203b10d6592bf2",
+        "EV-5eb23cdd9c14c6ea",
+        "EV-7d4b4b8d4e3599d4",
+        "EV-10e841ab47d2b1f1",
+        "EV-f2d29ca7b05c3dd9",
+        "EV-ea2b6ce4acd46366",
+        "EV-2821d0cef61b3c6a",
+        "EV-6f7c5f0abad3d4da",
+        "EV-8f497488d129fee5",
+        "EV-a8f1204b54ae6475"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
+        "TX-technology-long_context",
+        "TX-use_case-cybersecurity",
+        "TX-industry-retail_ecommerce",
+        "TX-technology-on_device",
+        "TX-industry-media_entertainment",
+        "TX-technology-multimodal",
+        "TX-technology-tool_use",
+        "TX-technology-fine_tuning",
+        "TX-use_case-content_creation",
+        "TX-technology-quantization",
+        "TX-technology-speech_audio"
+      ],
+      "relatedEntityIds": [
+        "EN-af3ceabbe048a291",
+        "EN-41dcc2d4951f337b",
+        "EN-dfabe4215e8c07cb",
+        "EN-729324072d368379"
+      ],
+      "firstSeen": "2026-06-04",
+      "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "EN-23929c7dca3eb576",
+      "name": "华为 HiCar 等",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-6c361125c3f50bb6"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-media_entertainment"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-07",
+      "lastSeen": "2026-06-07"
     },
     {
       "id": "EN-5388bc10736a0eff",
@@ -1086,22 +1484,24 @@
       ],
       "eventIds": [
         "EV-8a8e894a84768ea5",
-        "EV-d76dac938af08f62",
+        "EV-97fdf068afbbe555",
         "EV-47a84a0f1a85c29c",
-        "EV-e7a6bcd24f4241d0",
+        "EV-6c361125c3f50bb6",
         "EV-533d2da98cce1ae0",
         "EV-8a9b12665a3e40a0",
-        "EV-4532e847f78cde0d",
+        "EV-ee363e679d12329c",
+        "EV-76aa77f5a2e7c661",
         "EV-0e42803078b1c6be",
-        "EV-b7dc60c0b63b6063",
-        "EV-b9c1e7a2c89817f1",
-        "EV-c68a8af069f3ed1d",
-        "EV-d2a00623908ca15f",
-        "EV-aef95763358b4ec8"
+        "EV-620f5ebfb6ac81ac",
+        "EV-c7404765df94a3b4",
+        "EV-887d47bb477e2142",
+        "EV-c11ee0da38376254",
+        "EV-631197767a45d34c"
       ],
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-retail_ecommerce",
         "TX-technology-on_device",
         "TX-industry-media_entertainment",
         "TX-technology-video_generation",
@@ -1200,6 +1600,50 @@
       "lastSeen": "2026-07-17"
     },
     {
+      "id": "EN-754c490bd199c21a",
+      "name": "蚂蚁灵波",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-d633676a4a7d89a3"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-embodied_ai",
+        "TX-industry-media_entertainment"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-09",
+      "lastSeen": "2026-07-10"
+    },
+    {
+      "id": "EN-7a3ecc54829211df",
+      "name": "LingBot-World 2.0",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-d633676a4a7d89a3"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-embodied_ai",
+        "TX-industry-media_entertainment"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-09",
+      "lastSeen": "2026-07-10"
+    },
+    {
       "id": "EN-ea3bd73e2b506e00",
       "name": "Meta",
       "entityType": "organization_candidate",
@@ -1211,60 +1655,226 @@
       ],
       "eventIds": [
         "EV-02882e6f5e1902c6",
+        "EV-5df885dbd24b6d00",
         "EV-427081ec574b43bb",
-        "EV-7f77e6a2d1698307",
-        "EV-b39d759a11086d41",
-        "EV-968709fe29b77eba",
-        "EV-724fc985c22215f3",
-        "EV-f64345af2affb07d",
-        "EV-1f842e1dff69bb87",
-        "EV-e58bd372c139073c",
+        "EV-e41fc65eb014893f",
+        "EV-974a6b7d0e0efef2",
+        "EV-917a390341b9fce6",
+        "EV-9efcf6480f6c6f48",
+        "EV-cf76f090a1a20a36",
+        "EV-fd7e79d3cb9cdb69",
+        "EV-43301de739fe560e",
         "EV-cf176636839e45be",
         "EV-9496f90f3e808992",
         "EV-dce5de62b2e4b752",
-        "EV-ebe02c213368afae",
+        "EV-ae736eb124d7163a",
         "EV-e42e55d1e11a2ba2",
-        "EV-f9eebe4e3b9b667c",
-        "EV-8f6cf12525556d0e",
+        "EV-41baa43cf05d4288",
         "EV-40390136762c64d3",
         "EV-07a5533c18e5a74e",
-        "EV-4a8dce3c9fec1bd3",
-        "EV-04873bbc8be8e70d",
-        "EV-4c0e7025692ab98c",
+        "EV-56b9643b245a5ff4",
+        "EV-0edb0a592ca1fd67",
+        "EV-20ffa968bcbc4729",
+        "EV-7e52d691a0553667",
         "EV-f34eec5df7f5bcb7",
-        "EV-d8f0f89fed45ae5b",
-        "EV-b78311001509be2c",
-        "EV-a4cd74ae97317e4e",
-        "EV-41e534c846124691",
-        "EV-7808c274ce0aa0bf",
-        "EV-c98d4ee7764d51b2",
-        "EV-01e414a25347cfd9",
+        "EV-c996e56f7f4bdc49",
+        "EV-b60df35d168fe6b7",
+        "EV-c846e768dad05441",
+        "EV-cea99e5d7f93d56a",
+        "EV-29f130674dbbb59e",
+        "EV-a39ca82d354c7197",
+        "EV-657837763764c869",
         "EV-ef823877347ff40f",
+        "EV-04cf95633b564f9a",
         "EV-02b07069713d9a1c",
         "EV-322796d9761a0824",
         "EV-2d56dec8dfeb2b56",
-        "EV-2ca9d0a3ca53c3bf",
         "EV-8fcecabca2e92b40"
       ],
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
-        "TX-technology-code_generation",
         "TX-industry-healthcare_life_sciences",
-        "TX-use_case-software_development",
-        "TX-technology-long_context",
-        "TX-technology-multimodal",
-        "TX-technology-speech_audio",
         "TX-industry-media_entertainment",
+        "TX-technology-multimodal",
+        "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
-        "TX-technology-guardrails_safety",
         "TX-technology-image_generation",
         "TX-technology-computer_use"
       ],
+      "relatedEntityIds": [
+        "EN-e3863f813fe47240",
+        "EN-de1afc61dd4d2cea",
+        "EN-d85ad5e8ff8e2889",
+        "EN-a2fa009495c3bb3a",
+        "EN-77fe4e790d5bc756",
+        "EN-2ba325ce6f8e3dc9",
+        "EN-557203e8cc173124",
+        "EN-5fa6f727c9e3afe0",
+        "EN-e71558a14e7ed6ab"
+      ],
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "EN-72e28a6aa6b39c76",
+      "name": "Meta quietly",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-0edb0a592ca1fd67"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-media_entertainment"
+      ],
       "relatedEntityIds": [],
-      "firstSeen": "2026-05-22",
+      "firstSeen": "2026-07-04",
+      "lastSeen": "2026-07-04"
+    },
+    {
+      "id": "EN-96eebba49dbbf422",
+      "name": "Intel",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-4eaf3aabecae6016",
+        "EV-2dff32c1b6f813e4",
+        "EV-305ec93673f4f12e",
+        "EV-640c5ea9f4fa2780",
+        "EV-6e516b6e68def9cf",
+        "EV-a8dc5c859946f336",
+        "EV-d9cc588fb41a7e67",
+        "EV-48075ca70a5458ec",
+        "EV-7b1c734882fa1ea6",
+        "EV-b3c7c4bff17063d8",
+        "EV-2bb63a3015195f9b",
+        "EV-d4e44892226be468",
+        "EV-921c843ad32c993c",
+        "EV-2bea8d8046a9b325",
+        "EV-5f5f252c6a826599",
+        "EV-e7dcecaed5a0ee5b",
+        "EV-232ab5bcbaf6552d",
+        "EV-14a666fc27d73a80",
+        "EV-9de19f01ac4771fa",
+        "EV-39717cdbada984d7",
+        "EV-dc442b91a69fcc5a",
+        "EV-02548003157849bb",
+        "EV-c0d19b8641a7a36c",
+        "EV-ee0662b75588987e",
+        "EV-e941c32639167c23",
+        "EV-6ae3594aadfcd3d8",
+        "EV-bc4ac955cd26b969",
+        "EV-88f4ee8cd57bdf42",
+        "EV-ef7346378fcf9746",
+        "EV-86489eda802ffc19",
+        "EV-ebe9ed3158df619b",
+        "EV-3b1613cedea7dad4",
+        "EV-59f4561c5243eb98",
+        "EV-c4303801ea8c54dc",
+        "EV-8b0f056571d68269",
+        "EV-b4eb99a878be9bb2",
+        "EV-cfb7c4b4b765f53b",
+        "EV-4dd25589d834060d",
+        "EV-6617850e0b014051",
+        "EV-c81cb21337a9bb98",
+        "EV-36a9e4e908249381",
+        "EV-181b425d2a600cad",
+        "EV-2c87c8ea47cbd1b6",
+        "EV-bb9ba11acf104db1",
+        "EV-2fd730d0ad452334",
+        "EV-b95539d17772a4ce",
+        "EV-f63462e34ea40699",
+        "EV-26183a56cf9ed63c",
+        "EV-97747aee0cafd9f3",
+        "EV-4faa2bcf2e42e60c",
+        "EV-45be473baf6dfa4c",
+        "EV-c2800c1c5a3f568f",
+        "EV-025778b83c1b2ca9",
+        "EV-dce5de62b2e4b752",
+        "EV-57565fc2e7502c59",
+        "EV-e42e55d1e11a2ba2",
+        "EV-41baa43cf05d4288",
+        "EV-6af1e74358025628",
+        "EV-3847d883688587ba",
+        "EV-3a7128e2d7ff149e",
+        "EV-40390136762c64d3",
+        "EV-53f881da31630a04",
+        "EV-b84035029a63e52e",
+        "EV-0edb0a592ca1fd67",
+        "EV-578a9db1fe952d0a",
+        "EV-a70d5cf3ee6d6d64",
+        "EV-f784003febc1d9eb",
+        "EV-7e52d691a0553667",
+        "EV-1e7c76dae985100f",
+        "EV-644337db309a1c82",
+        "EV-9ae9aa86e51e64a2",
+        "EV-be19904753c9c486",
+        "EV-832fa2db95cfea6e",
+        "EV-e28e134345ea5f99",
+        "EV-4e55361d8324dd49",
+        "EV-97a8d86baa7fffc4",
+        "EV-c5b8faec223a4caf",
+        "EV-9eb3693cc65fbca9",
+        "EV-5493c61bcbe58aa2",
+        "EV-95a393fd0183b5f3",
+        "EV-0cb98302768c2e0a",
+        "EV-6ce6b9c9780b97d9",
+        "EV-dd62847548bb6ae3",
+        "EV-34929bdd016dc8d6",
+        "EV-067f57f6e6ffa6ce",
+        "EV-02b07069713d9a1c",
+        "EV-8cb2374f76202ecc",
+        "EV-946569cccbd9222f",
+        "EV-edb1ddb3a091ada4",
+        "EV-9705a8de3c2e9653"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
+        "TX-technology-code_generation",
+        "TX-use_case-customer_service",
+        "TX-industry-healthcare_life_sciences",
+        "TX-use_case-enterprise_operations",
+        "TX-technology-mixture_of_experts",
+        "TX-industry-financial_services",
+        "TX-use_case-cybersecurity",
+        "TX-use_case-data_analysis",
+        "TX-industry-retail_ecommerce",
+        "TX-technology-on_device",
+        "TX-industry-professional_services",
+        "TX-industry-technology",
+        "TX-technology-embodied_ai",
+        "TX-technology-open_weights",
+        "TX-industry-telecommunications",
+        "TX-industry-media_entertainment",
+        "TX-use_case-robotics_automation",
+        "TX-technology-multimodal",
+        "TX-technology-tool_use",
+        "TX-technology-reasoning",
+        "TX-industry-government_public_sector",
+        "TX-technology-fine_tuning",
+        "TX-technology-image_generation",
+        "TX-technology-computer_use"
+      ],
+      "relatedEntityIds": [
+        "EN-bbdefa2950f49882",
+        "EN-c70eca6b0f88f44d"
+      ],
+      "firstSeen": "2025-03-18",
       "lastSeen": "2026-07-17"
     },
     {
@@ -1280,129 +1890,156 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-10c70ced68ccb31b",
-        "EV-d4d7b019ff0015df",
-        "EV-21c2e81a7c073e04",
-        "EV-54e23045d3334e65",
+        "EV-e41fc65eb014893f",
+        "EV-dfddbb260b3d1c77",
+        "EV-2bb63a3015195f9b",
         "EV-43b56d49df9a73a2",
-        "EV-6180de2e02597d9d",
-        "EV-968709fe29b77eba",
+        "EV-0e84a2f49d765ce3",
         "EV-dbbe3fd637be213f",
         "EV-4a162c41bb82f325",
-        "EV-9fc8a84b3d0797d1",
-        "EV-57105df2fcada2e5",
+        "EV-cf76f090a1a20a36",
         "EV-36a9e4e908249381",
         "EV-ef6464cf7f764835",
         "EV-b95539d17772a4ce",
-        "EV-df5831ff5762432d",
+        "EV-d1a3f5c8045e548d",
         "EV-f949fd95df58d42d",
-        "EV-a9a3b5b56befe593",
-        "EV-f7e41493addd1104",
-        "EV-3398ae53a199be16",
+        "EV-97747aee0cafd9f3",
+        "EV-c0a65877001ed413",
         "EV-04efb4eecbb8125f",
         "EV-6359c9f6c2609a38",
-        "EV-04ee2bc4ac888358",
         "EV-c2d784ef0a5376f8",
-        "EV-302018f2e960a8bf",
-        "EV-aa962ef7ec9a5c50",
-        "EV-db1d74f0bfcc1b04",
+        "EV-967239f907803753",
+        "EV-ac8f8581cd1ca75d",
         "EV-f05783f745bc7c2c",
-        "EV-52508b70ccd2cc0b",
-        "EV-f9eebe4e3b9b667c",
-        "EV-c410d77c8d531e5f",
-        "EV-268250d426c1a4a0",
-        "EV-04873bbc8be8e70d",
+        "EV-d12aa40eff40c97e",
+        "EV-96c8ce4ee89adb84",
+        "EV-caec65aef89d3b4a",
+        "EV-cabc88e1d09dec80",
+        "EV-cc3b92fe233953cf",
+        "EV-0edb0a592ca1fd67",
         "EV-2059f42c7b2aff44",
-        "EV-9fac0983ab657689",
-        "EV-4c0e7025692ab98c",
+        "EV-77662aa9bef9efbe",
+        "EV-7e52d691a0553667",
         "EV-b8bba030747fd3b6",
-        "EV-8daf217ff024ac4a",
+        "EV-8aead769e84de342",
+        "EV-eddb4330fed15762",
         "EV-2298304e18dbf493",
         "EV-89b644ff05e6b93b",
-        "EV-8fad966ecb9b1d31",
         "EV-9c4b862020202f6c",
         "EV-d8c69ed782b73a34",
-        "EV-c0f86afbefa2e0a6",
+        "EV-5012364af7480121",
         "EV-abf0990dcaceb1ce",
-        "EV-c60208ea9b51f47a",
-        "EV-c6359191a071b538",
+        "EV-d5cc9a50a9b88d2b",
         "EV-b860d46fee913f27",
-        "EV-09d3ce5611881ed4",
-        "EV-c033ae6f9784d674",
+        "EV-f953555178744c22",
         "EV-28145c97a7237d6d",
-        "EV-e6771f58d7c2a050",
-        "EV-b8b39e635aa7511f",
+        "EV-c108e7cc2df7faf4",
+        "EV-916bcaee6266e0d0",
         "EV-54c329f4c8e4227b",
-        "EV-7808c274ce0aa0bf",
-        "EV-c3cbf5d7f860c693",
+        "EV-dfba03031e5726ad",
         "EV-009105cbcf82a638",
-        "EV-b9a009b48d4cbf85",
-        "EV-b3809ff557361cc2",
-        "EV-bc71b0ddefa209a9",
-        "EV-a85fe927f20c2595",
-        "EV-b4f3dcac8cc230d9",
-        "EV-175af8c7b8146340",
-        "EV-d2d1834222ab32d3",
+        "EV-99e5df844a1bd670",
+        "EV-1b03e5dff76a50a1",
+        "EV-51dfd0d541380500",
+        "EV-ab3586268ebfab38",
+        "EV-e4b5fe493066804b",
+        "EV-8ca7da5081a2e2fc",
+        "EV-8eed6489ab514823",
         "EV-22b8d155ce027905",
-        "EV-d6f638da9e1d3b46",
+        "EV-3ef3e18df61a00d8",
+        "EV-4bb5b24400e49ea4",
+        "EV-97a8d86baa7fffc4",
         "EV-0ad758b04b9b5313",
-        "EV-3ed6744b43d9b8df",
         "EV-c08837795f9e16d2",
-        "EV-4a3cb762183581cd",
-        "EV-59933d63c4051085",
-        "EV-588cf9609e44edc9",
-        "EV-7fa23cf0102a8f92",
-        "EV-c28e0d02272537d8",
-        "EV-d31057c6f6ec28ba",
-        "EV-342799d4e68e7416",
+        "EV-9bc41f08cb0b4f39",
+        "EV-5a1422a9929c582e",
+        "EV-bff418b2959f58fb",
+        "EV-e878e56967902718",
+        "EV-5493c61bcbe58aa2",
+        "EV-cac9d9f31ef675ce",
+        "EV-dab4d3f2059e8880",
+        "EV-0d1980baa83e1e6c",
         "EV-d53cd33e8f541a65",
         "EV-a4f052325d0ef230",
         "EV-ef823877347ff40f",
         "EV-3e9a0d1be6de5096",
         "EV-8cd7665e40729256",
         "EV-2d56dec8dfeb2b56",
-        "EV-6266c73d470e8aef",
         "EV-ad269fada2269f35",
-        "EV-bce258f8f915ff5f"
+        "EV-bce258f8f915ff5f",
+        "EV-1df9b606627460f7",
+        "EV-39460c022e56badd"
       ],
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-industry-manufacturing",
         "TX-technology-code_generation",
         "TX-use_case-enterprise_operations",
         "TX-use_case-software_development",
-        "TX-use_case-robotics_automation",
-        "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-industry-financial_services",
-        "TX-technology-on_device",
         "TX-use_case-cybersecurity",
         "TX-industry-retail_ecommerce",
-        "TX-technology-human_in_loop",
-        "TX-industry-telecommunications",
-        "TX-industry-technology",
-        "TX-technology-multimodal",
+        "TX-technology-on_device",
         "TX-technology-retrieval_augmented_generation",
-        "TX-use_case-knowledge_search",
         "TX-technology-embodied_ai",
-        "TX-technology-speech_audio",
         "TX-industry-media_entertainment",
+        "TX-technology-multimodal",
         "TX-technology-video_generation",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
         "TX-technology-fine_tuning",
-        "TX-technology-computer_use"
+        "TX-use_case-content_creation",
+        "TX-technology-computer_use",
+        "TX-technology-speech_audio"
       ],
       "relatedEntityIds": [
         "EN-96eebba49dbbf422",
         "EN-81e577740888ca6d",
         "EN-1229af0aa3b0305e",
         "EN-992eafe973f69075",
-        "EN-0e008e2c06144ec8"
+        "EN-40f98159922ab514",
+        "EN-834ab0b6e4492d23",
+        "EN-ffc6caa049c23d48",
+        "EN-242e21e3dc6869a9",
+        "EN-151013fb8438c046",
+        "EN-77fe4e790d5bc756",
+        "EN-8d323d8bba783aa3",
+        "EN-9ff1a58a589bc318",
+        "EN-01f1074bb52ff605",
+        "EN-0e008e2c06144ec8",
+        "EN-f2c032b19edb7900",
+        "EN-d4c56709df757c56",
+        "EN-6470c8584a9d35d3",
+        "EN-b5c336c0dd1ff29c",
+        "EN-eb0cc8fb584389db",
+        "EN-d56aa2f9908f566a",
+        "EN-4baef0e41cbd7ae2",
+        "EN-e3db3da2b7dc6057"
       ],
       "firstSeen": "2026-05-22",
       "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "EN-2df4d39c248116dc",
+      "name": "Meta悄然",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-7e52d691a0553667"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-media_entertainment"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-03",
+      "lastSeen": "2026-07-03"
     },
     {
       "id": "EN-30081094f2a8c83d",
@@ -1419,30 +2056,32 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-robotics_automation",
         "TX-technology-embodied_ai",
-        "TX-industry-media_entertainment"
+        "TX-industry-media_entertainment",
+        "TX-use_case-robotics_automation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-22",
       "lastSeen": "2026-06-23"
     },
     {
-      "id": "EN-2dda21a47aaff47e",
-      "name": "英特尔联合长安汽车",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
+      "id": "EN-d558e1de958b9d05",
+      "name": "Walker C1",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
       "aliases": [],
-      "verificationStatus": "candidate",
+      "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
-        "EV-9df93e714a75cd7c"
+        "EV-49751dfc7d2f6d6c"
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-media_entertainment"
+        "TX-technology-embodied_ai",
+        "TX-industry-media_entertainment",
+        "TX-use_case-robotics_automation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-22",
@@ -1461,18 +2100,18 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-6f092cfc7a064d64",
+        "EV-d4e44892226be468",
         "EV-1ac32035d5e425e1",
-        "EV-adafffa563a53d49",
-        "EV-ef7402351b6b37bd",
         "EV-67ef7accd26a07a0",
         "EV-a7e1ecd212474e00",
         "EV-d961d3ad02f6ae14",
-        "EV-f9eebe4e3b9b667c",
+        "EV-7c6a9f4ee4829976",
+        "EV-93c6ccf23cc422cb",
         "EV-5babb43f4b4d302f",
-        "EV-ff10670ad06959ec",
-        "EV-8ab21bf8e73cf44a",
+        "EV-8eed6489ab514823",
+        "EV-3ef3e18df61a00d8",
         "EV-568d2aeab5234e48",
-        "EV-d6f638da9e1d3b46",
         "EV-f68e00bb9fd49fac",
         "EV-3e9a0d1be6de5096",
         "EV-e96aba142e46eba1",
@@ -1482,24 +2121,28 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-industry-manufacturing",
+        "TX-technology-vision_language",
         "TX-technology-code_generation",
-        "TX-use_case-customer_service",
-        "TX-industry-healthcare_life_sciences",
         "TX-use_case-software_development",
         "TX-technology-mixture_of_experts",
-        "TX-use_case-cybersecurity",
-        "TX-technology-multimodal",
-        "TX-technology-speech_audio",
+        "TX-technology-retrieval_augmented_generation",
         "TX-use_case-research_science",
         "TX-industry-media_entertainment",
+        "TX-technology-multimodal",
         "TX-technology-video_generation",
-        "TX-technology-fine_tuning"
+        "TX-technology-image_generation",
+        "TX-technology-speech_audio"
       ],
       "relatedEntityIds": [
-        "EN-0e008e2c06144ec8"
+        "EN-0e008e2c06144ec8",
+        "EN-7ed9c9e7c260ed06",
+        "EN-01f1074bb52ff605",
+        "EN-4d09c69c19f5f67b",
+        "EN-d56aa2f9908f566a",
+        "EN-085598c00f2aaccf",
+        "EN-a3c3b987b09fc1bb"
       ],
-      "firstSeen": "2026-05-23",
+      "firstSeen": "2026-06-02",
       "lastSeen": "2026-07-17"
     },
     {
@@ -1513,21 +2156,20 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-ed65f3187aa6aa40",
-        "EV-60b2d4d401bf5e97",
+        "EV-4eaf3aabecae6016",
+        "EV-87432dbb99cd6033",
+        "EV-6e516b6e68def9cf",
         "EV-e41fc65eb014893f",
-        "EV-39894e375aacee77",
-        "EV-efca54f3b07072a6",
+        "EV-040fc355bc12a750",
         "EV-80e54c9a390da293",
-        "EV-d16fc5601c04a6a2",
+        "EV-4118202ed0f91895",
         "EV-236cbc2d64f0c455",
-        "EV-6180de2e02597d9d",
-        "EV-968709fe29b77eba",
-        "EV-adafffa563a53d49",
-        "EV-1f842e1dff69bb87",
-        "EV-9a7cd217a7a9a51c",
+        "EV-0e84a2f49d765ce3",
         "EV-cafe435ddd007821",
-        "EV-283e88bdd15ed87e",
+        "EV-36d484148fbd3424",
+        "EV-47a16db069ed320e",
+        "EV-cf76f090a1a20a36",
+        "EV-7263caa45bbf168e",
         "EV-234ad54940674bf6",
         "EV-5b16886442234f81",
         "EV-ef6464cf7f764835",
@@ -1536,223 +2178,218 @@
         "EV-4faa2bcf2e42e60c",
         "EV-9ee3c0ec243b6129",
         "EV-58c1cc3749294649",
-        "EV-303b418c63895ba6",
+        "EV-6b51b1b6fe22c540",
+        "EV-c2800c1c5a3f568f",
         "EV-1ff169120ed385f6",
-        "EV-082314251be505e2",
-        "EV-0a5e65aa46b0d194",
+        "EV-47d14d0aa4d4414e",
+        "EV-f7b60c0c63403f8c",
+        "EV-6139380f3362803b",
+        "EV-96c8ce4ee89adb84",
         "EV-53f881da31630a04",
-        "EV-3028dfadf94c8f4c",
-        "EV-412a140df8d75c45",
+        "EV-6a2f3e9a22edff64",
+        "EV-f784003febc1d9eb",
+        "EV-587c18cb1837c74f",
+        "EV-bd66e5b45a6a577e",
         "EV-53564b1f0fd2214b",
-        "EV-09610316ac52221e",
-        "EV-c0f86afbefa2e0a6",
-        "EV-c718a5ff4b0acd66",
-        "EV-722c2a8dd6b70abd",
-        "EV-6eb9a23be3117421",
-        "EV-13f105479652938d",
-        "EV-3456f723929eff1b",
-        "EV-66338f5fb682617e",
+        "EV-7fb25ff3d853c314",
+        "EV-8a91e14f37d32b4d",
+        "EV-13f0b515194f3245",
+        "EV-5d50eb202b478bd4",
+        "EV-e2db9c4e7c16ae7a",
+        "EV-69fbe85ca4ac81cd",
+        "EV-b7ba9acba80a852e",
+        "EV-4bb5b24400e49ea4",
         "EV-568d2aeab5234e48",
-        "EV-305091abd41ad88d",
-        "EV-a24f9cba6b31439e",
         "EV-b986a633cca27df9",
-        "EV-57597c92f7b183a9",
         "EV-2258329f33d413cf",
-        "EV-19ea623bb5eabdd5",
+        "EV-4bf0e4043c3562f2",
         "EV-309ea4fc27a66485",
+        "EV-fa1b1efd77f36d56",
         "EV-4026c95d4c01b96e",
-        "EV-66970d4aea37111f",
-        "EV-aa63303570154a9b",
-        "EV-cbc8b53d4f4478b1",
-        "EV-d2a00623908ca15f",
+        "EV-631197767a45d34c",
+        "EV-67f32771d69084d6",
         "EV-d2ac9700c86913da",
         "EV-d43a561da59b2897",
-        "EV-fc2164eb66e27f7e",
+        "EV-f5755fccd5731063",
+        "EV-34929bdd016dc8d6",
+        "EV-710b145230faa692",
         "EV-0b49d637d7c07ce0"
       ],
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
-        "TX-use_case-customer_service",
+        "TX-technology-code_generation",
         "TX-industry-healthcare_life_sciences",
-        "TX-use_case-robotics_automation",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
-        "TX-technology-on_device",
         "TX-use_case-cybersecurity",
-        "TX-industry-retail_ecommerce",
-        "TX-industry-telecommunications",
-        "TX-industry-technology",
-        "TX-technology-multimodal",
+        "TX-technology-on_device",
         "TX-technology-embodied_ai",
-        "TX-technology-speech_audio",
+        "TX-industry-automotive_transportation",
         "TX-technology-open_weights",
+        "TX-industry-telecommunications",
         "TX-industry-media_entertainment",
+        "TX-use_case-robotics_automation",
+        "TX-technology-multimodal",
+        "TX-technology-guardrails_safety",
         "TX-technology-reasoning",
-        "TX-technology-inference_optimization"
+        "TX-technology-fine_tuning",
+        "TX-technology-image_generation",
+        "TX-technology-inference_optimization",
+        "TX-technology-speech_audio"
       ],
       "relatedEntityIds": [
         "EN-0f3360879e746531",
-        "EN-fbe26af59be95e52",
-        "EN-2b119dc14de9478d",
-        "EN-a1b0d8a938903dc7",
+        "EN-51fd7dc086fcb858",
+        "EN-9e193e1ec8d75d41",
         "EN-8395dc051feafc4c",
+        "EN-936f01f91fdadf69",
+        "EN-2f354de778e6a6da",
         "EN-b5738c169b693bee",
-        "EN-9fbf261b62c1d7c0"
+        "EN-1dc405a4cda895d0",
+        "EN-12ab68e37d104d27",
+        "EN-a3266ab9e10d6105",
+        "EN-ab9e3beebd83960d",
+        "EN-9fbf261b62c1d7c0",
+        "EN-e246a1f9a090075b"
       ],
-      "firstSeen": "2026-05-18",
+      "firstSeen": "2025-03-18",
       "lastSeen": "2026-07-17"
     },
     {
-      "id": "EN-b0532e1af75cc4ab",
-      "name": "Rime",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
+      "id": "EN-d56aa2f9908f566a",
+      "name": "DiffusionGemma",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
       "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
-        "EV-64fb6d791e19d10a",
-        "EV-8bbe9b602c09273d",
-        "EV-19d26c4129df1cee",
-        "EV-a1552fec696f1a43",
-        "EV-5a26f343846cb8ad",
-        "EV-9326c7450f6c318d",
-        "EV-c808bd4cb76bda9e",
-        "EV-7aaed0a2ae5cf8b6",
-        "EV-c5abea15a56d035e",
-        "EV-05be25222ebd2bc2",
-        "EV-f8a79104a533422b",
-        "EV-f074a62a26f37ae3",
-        "EV-8a0866a27909f9d9",
-        "EV-b67b71905356837d",
-        "EV-a9f1e8662a1e22cf",
-        "EV-727ba25770d1f897",
-        "EV-000f2abf549268a6",
+        "EV-22b8d155ce027905",
+        "EV-3ef3e18df61a00d8",
+        "EV-568d2aeab5234e48"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-mixture_of_experts",
+        "TX-industry-media_entertainment",
+        "TX-technology-image_generation"
+      ],
+      "relatedEntityIds": [
+        "EN-2b6e51bec93e86c1",
+        "EN-bbdefa2950f49882"
+      ],
+      "firstSeen": "2026-06-11",
+      "lastSeen": "2026-06-11"
+    },
+    {
+      "id": "EN-4d09c69c19f5f67b",
+      "name": "DeepMind",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
         "EV-5babb43f4b4d302f",
-        "EV-14401cfc102c6511",
         "EV-568d2aeab5234e48",
-        "EV-d6f638da9e1d3b46",
-        "EV-fbc5c65cc697c83b",
-        "EV-0ad758b04b9b5313",
-        "EV-0b3d4c788a892787",
-        "EV-d31057c6f6ec28ba"
+        "EV-f68e00bb9fd49fac"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-code_generation",
+        "TX-use_case-software_development",
+        "TX-technology-mixture_of_experts",
+        "TX-industry-media_entertainment",
+        "TX-technology-multimodal",
+        "TX-technology-video_generation",
+        "TX-technology-image_generation",
+        "TX-technology-speech_audio"
+      ],
+      "relatedEntityIds": [
+        "EN-2b6e51bec93e86c1"
+      ],
+      "firstSeen": "2026-06-04",
+      "lastSeen": "2026-07-01"
+    },
+    {
+      "id": "EN-c1eb8e913000a8eb",
+      "name": "KRAFTON",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-b986a633cca27df9"
       ],
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-technology-code_generation",
-        "TX-use_case-customer_service",
-        "TX-use_case-software_development",
-        "TX-use_case-robotics_automation",
-        "TX-technology-mixture_of_experts",
-        "TX-industry-financial_services",
-        "TX-industry-retail_ecommerce",
-        "TX-technology-multimodal",
-        "TX-industry-media_entertainment",
-        "TX-technology-video_generation",
-        "TX-technology-fine_tuning"
+        "TX-industry-media_entertainment"
       ],
       "relatedEntityIds": [],
-      "firstSeen": "2026-05-20",
-      "lastSeen": "2026-07-16"
-    }
-  ],
-  "fde": [
-    {
-      "id": "FDE-7334c7781021c39a",
-      "eventId": "EV-2d6d2dc0ead4be10",
-      "dataDate": "2026-07-15",
-      "date": "2026-07-15",
-      "title": "Canva Code 2.0 上线：代码生成提速 75%，从提示到发布提速 30%",
-      "stage": "completed",
-      "stageLabel": "已完成",
-      "customer": "Canva",
-      "vendor": "未披露",
-      "industry": "未披露",
-      "useCase": "：代码生成提速 75%，从提示到发布提速 30%",
-      "reportedNeed": "未披露",
-      "deliveryComponents": [
-        "AI 网页开发平台 Canva Code 2.0 上线：代码生成提速 75%，从提示到发布提速 30% - IT之家",
-        "AI 网页开发平台 Canva Code 2.0 上线：代码生成提速 75%，从提示到发布提速 30%",
-        "IT之家 7 月 15 日消息，Canva 昨日（7 月 14 日）发布公告， 宣布正式上线 Canva Code 2.0 版本，让完全不懂代码的用户通过聊天交互方式，直接做出互动网页、小游戏等。"
-      ],
-      "outcomes": [
-        "定位方面，Canva Code 2.0 是一款 AI 氛围编程（Vibe Coding）平台，让用户构建并可视化编辑网站、应用及交互体验，最新版本结合创意控制与最新 AI 编程模型，进一步降低交互体验设计门槛。"
-      ],
-      "metrics": [
-        "75%",
-        "30%",
-        "75%",
-        "30%"
-      ],
-      "undisclosedFields": [
-        "vendor",
-        "industry",
-        "workflow_before",
-        "workflow_after",
-        "delivery_model",
-        "team_composition",
-        "reported_need",
-        "systems_integrated",
-        "data_requirements",
-        "governance_controls"
-      ],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "code_generation",
-          "name": "代码生成"
-        }
-      ],
-      "sourceUrl": "https://ithome.com/0/976/803.htm",
-      "entityIds": [
-        "EN-3db1f560db626918"
-      ]
+      "firstSeen": "2026-06-07",
+      "lastSeen": "2026-06-08"
     },
     {
-      "id": "FDE-54a51e13cde024a8",
-      "eventId": "EV-e7a6bcd24f4241d0",
-      "dataDate": "2026-06-07",
-      "date": "2026-06-07",
-      "title": "smart 精灵 5 号 OTA 升级 2.3.1 CN 版本：电子后视镜、华为 HiCar 等上线",
-      "stage": "completed",
-      "stageLabel": "已完成",
-      "customer": "ByteDance",
-      "vendor": "未披露",
-      "industry": "未披露",
-      "useCase": "smart 精灵 5 号 OTA 升级 2.3.1 CN 版本：电子后视镜、华为 HiCar 等上线",
-      "reportedNeed": "未披露",
-      "deliveryComponents": [
-        "smart 精灵 5 号 OTA 升级 2.3.1 CN 版本：电子后视镜、华为 HiCar 等上线 - IT之家",
-        "smart 精灵 5 号 OTA 升级 2.3.1 CN 版本：电子后视镜、华为 HiCar 等上线"
+      "id": "EN-0be477336d3e1a8d",
+      "name": "NC",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
       ],
-      "outcomes": [],
-      "metrics": [],
-      "undisclosedFields": [
-        "vendor",
-        "industry",
-        "workflow_before",
-        "workflow_after",
-        "delivery_model",
-        "team_composition",
-        "reported_need",
-        "systems_integrated",
-        "data_requirements",
-        "governance_controls",
-        "reported_outcomes"
+      "eventIds": [
+        "EV-b986a633cca27df9"
       ],
-      "tags": [],
-      "sourceUrl": "https://ithome.com/0/961/005.htm",
-      "entityIds": [
-        "EN-5388bc10736a0eff"
-      ]
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-media_entertainment"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-07",
+      "lastSeen": "2026-06-08"
+    },
+    {
+      "id": "EN-1dc405a4cda895d0",
+      "name": "RTX Spark",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-b7ba9acba80a852e",
+        "EV-b986a633cca27df9",
+        "EV-4026c95d4c01b96e"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-on_device",
+        "TX-industry-media_entertainment"
+      ],
+      "relatedEntityIds": [
+        "EN-8d4321d936320802"
+      ],
+      "firstSeen": "2026-06-01",
+      "lastSeen": "2026-06-23"
     }
   ],
+  "fde": [],
   "hardware": [
     {
       "id": "HW-dca442211b264bbe",
@@ -1785,7 +2422,8 @@
       "sourceName": "IT之家（RSS）",
       "sourceDate": "2026-06-22",
       "entityIds": [
-        "EN-30081094f2a8c83d"
+        "EN-30081094f2a8c83d",
+        "EN-d558e1de958b9d05"
       ]
     }
   ]

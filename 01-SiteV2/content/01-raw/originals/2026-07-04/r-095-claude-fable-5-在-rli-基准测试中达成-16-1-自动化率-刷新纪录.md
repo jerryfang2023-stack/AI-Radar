@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-095
 title: "Claude Fable 5 在 RLI 基准测试中达成 16.1% 自动化率，刷新纪录"
 title_zh: "Claude Fable 5 在 RLI 基准测试中达成 16.1% 自动化率，刷新纪录"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/972/242.htm"
 canonical_url: "https://ithome.com/0/972/242.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-04T04:50:50.872Z
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Claude Fable 5 在 RLI 基准测试中达成 16.1% 自动化率，刷新纪录

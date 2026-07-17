@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-007
 title: "Claude Enterprise 新增用量与成本分析及支出管控功能"
 title_zh: "Claude Enterprise 新增用量与成本分析及支出管控功能"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://claude.com/blog/giving-admins-more-visibility-and-control-over-claude-usage-and-spend"
 canonical_url: "https://claude.com/blog/giving-admins-more-visibility-and-control-over-claude-usage-and-spend"
 source_name: "Claude：Blog（网页）"
@@ -78,6 +78,7 @@ fact_extraction_completed_at: 2026-07-03T01:59:31.062Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Claude Enterprise 新增用量与成本分析及支出管控功能

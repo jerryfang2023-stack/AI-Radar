@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Sopra Steria Ventures' Socheat Chhay re
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_zh: "AI 时代如何融资：投资者希望看到的5件事"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # How to Raise Funding in the AI Era: 5 Things Investors Want to See

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Venice AI 获得由 Dragonfly 领投、
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "Venice AI 完成 6500 万美元 A 轮融资，估值 10 亿美元"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Venice AI 完成 6500 万美元 A 轮融资，估值 10 亿美元

@@ -2,7 +2,7 @@
 id: SIG-20260614-A03
 type: signal_card
 signal_type: case
-title: "月之暗面开源模型Kimi K2.7 Code每个token价格比GPT 案例：AI 进入模型部署和算力调用"
+title: "月之暗面开源模型Kimi K2.7 Code每个token价格比GPT-5.5和Claude低12倍"
 date: 2026-06-14
 status: published
 source_title: "月之暗面开源模型Kimi K2.7 Code每个token价格比GPT-5.5和Claude低12倍"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "月之暗面开源模型Kimi K2.7 Code每个token价格比GPT"
 
 frontend:
-  displayTitle: "月之暗面开源模型Kimi K2.7 Code每个token价格比GPT 案例：AI 进入模型部署和算力调用"
+  displayTitle: "月之暗面开源模型Kimi K2.7 Code每个token价格比GPT-5.5和Claude低12倍"
   sourceLinks:
     - "https://the-decoder.com/moonshots-open-model-kimi-k2-7-code-undercuts-gpt-5-5-and-claude-by-up-to-12x-on-price-per-token"
 ---
 
-# 月之暗面开源模型Kimi K2.7 Code每个token价格比GPT 案例：AI 进入模型部署和算力调用
+# 月之暗面开源模型Kimi K2.7 Code每个token价格比GPT-5.5和Claude低12倍
 
 ## 新闻事实
 

@@ -2,7 +2,7 @@
 id: SIG-20260709-A15
 type: signal_card
 signal_type: case
-title: "C3 AI 与 Shell 扩大合作，在全球资产运营中规模化部署 Reliability AI"
+title: "C3 AI与壳牌扩大合作，在全球资产运营中规模化部署可靠性AI"
 date: 2026-07-09
 status: published
 source_title: "C3 AI and Shell Expand Collaboration, Scaling Reliability AI Deployment Across Global Asset Operations – Company Announcement - FT.com"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "Ft"
 
 frontend:
-  displayTitle: "C3 AI 与 Shell 扩大合作，在全球资产运营中规模化部署 Reliability AI"
+  displayTitle: "C3 AI与壳牌扩大合作，在全球资产运营中规模化部署可靠性AI"
   sourceLinks:
     - "https://markets.ft.com/data/announce/detail?dockey=600-202606040900BIZWIRE_USPRX____20260604_BW461527-1"
 ---
 
-# C3 AI 与 Shell 扩大合作，在全球资产运营中规模化部署 Reliability AI
+# C3 AI与壳牌扩大合作，在全球资产运营中规模化部署可靠性AI
 
 ## 新闻事实
 

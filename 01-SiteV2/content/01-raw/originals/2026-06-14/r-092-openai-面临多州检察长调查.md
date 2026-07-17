@@ -72,6 +72,10 @@ key_excerpts: [{"type":"company_action","text":"多个州检察长正在对 Open
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "OpenAI 面临多州检察长调查"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # OpenAI 面临多州检察长调查

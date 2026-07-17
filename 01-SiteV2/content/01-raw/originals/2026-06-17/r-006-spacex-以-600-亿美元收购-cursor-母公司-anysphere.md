@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"SpaceX 以 600 亿美元（股票支付�
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "SpaceX 以 600 亿美元收购 Cursor 母公司 Anysphere"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # SpaceX 以 600 亿美元收购 Cursor 母公司 Anysphere

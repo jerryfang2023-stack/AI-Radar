@@ -2,7 +2,7 @@
 id: SIG-20260609-A01
 type: signal_card
 signal_type: case
-title: "Investing in Lio | Andreessen Horowitz"
+title: "投资Lio | Andreessen Horowitz"
 date: 2026-06-09
 status: published
 source_title: "Investing in Lio | Andreessen Horowitz"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Investing in Lio"
 
 frontend:
-  displayTitle: "Investing in Lio | Andreessen Horowitz"
+  displayTitle: "投资Lio | Andreessen Horowitz"
   sourceLinks:
     - "https://a16z.com/announcement/investing-in-lio/"
 ---
 
-# Investing in Lio | Andreessen Horowitz
+# 投资Lio | Andreessen Horowitz
 
 ## 新闻事实
 

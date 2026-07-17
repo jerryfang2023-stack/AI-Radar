@@ -1,26 +1,5 @@
 [
   {
-    "claim_id": "CL-1b19516cb35c768c",
-    "raw_id": "RAW-7fb42994899d25f5",
-    "claim_type": "product_release",
-    "subject": "伯克利RDI",
-    "predicate": "product_release",
-    "object": "Agents' Last Exam基准",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 1
-    },
-    "source_span": {
-      "raw_id": "RAW-7fb42994899d25f5",
-      "start": 274,
-      "end": 414
-    },
-    "source_quote": "Everyone says the latest AI agents will be “job-ready” soon, especially after the release of Fable 5 last week. But is that really the case?",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.9,
-    "verification_status": "accepted"
-  },
-  {
     "claim_id": "CL-7282a90fabceaaa9",
     "raw_id": "RAW-744bce70e4b002b5",
     "claim_type": "acquisition",
@@ -63,6 +42,48 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-8dc6052428203044",
+    "raw_id": "RAW-744bce70e4b002b5",
+    "claim_type": "acquisition",
+    "subject": "Salesforce以36亿美元",
+    "predicate": "acquisition",
+    "object": "AI客服平台Fin",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-744bce70e4b002b5",
+      "start": 394,
+      "end": 578
+    },
+    "source_quote": "Salesforce says it wants to use Fin’s team and technology to improve Agentforce, its existing enterprise platform that businesses can use to build custom AI agents that automate tasks.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a4ac923e464f14db",
+    "raw_id": "RAW-744bce70e4b002b5",
+    "claim_type": "acquisition",
+    "subject": "Salesforce以36亿美元",
+    "predicate": "acquisition",
+    "object": "AI客服平台Fin",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-744bce70e4b002b5",
+      "start": 579,
+      "end": 966
+    },
+    "source_quote": "“Fin brings proven agent technology, a deep commitment to customer success, and an incredible AI team that will complement Agentforce with powerful service agent capabilities,” said Salesforce CEO Marc Benioff in a statement. “Together, we’ll help companies of every size seize this opportunity — accelerating time to value with trusted agents that deliver measurable outcomes at scale.”",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-00a23cacc7c7492f",
     "raw_id": "RAW-6fd47bbde94421ca",
     "claim_type": "funding",
@@ -70,7 +91,7 @@
     "predicate": "funding",
     "object": "$200M At $1.4B Valuation For Autonomous Software Development",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 1
     },
     "source_span": {
@@ -91,7 +112,7 @@
     "predicate": "funding",
     "object": "$200M At $1.4B Valuation For Autonomous Software Development",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 2
     },
     "source_span": {
@@ -112,7 +133,7 @@
     "predicate": "funding",
     "object": "$200M At $1.4B Valuation For Autonomous Software Development",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 3
     },
     "source_span": {
@@ -126,22 +147,22 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-a44a4340e7a68f9f",
+    "claim_id": "CL-93171d43a4d95df1",
     "raw_id": "RAW-6fd47bbde94421ca",
     "claim_type": "funding",
     "subject": "Blitzy",
     "predicate": "funding",
     "object": "$200M At $1.4B Valuation For Autonomous Software Development",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 4
     },
     "source_span": {
       "raw_id": "RAW-6fd47bbde94421ca",
-      "start": 1349,
-      "end": 1657
+      "start": 1262,
+      "end": 1348
     },
-    "source_quote": "While Blitzy did not reveal hard revenue figures, it said that its technology has been adopted by “dozens” of Global 2000 enterprises across 10 industries, including State Street and QAD. The company says it was built on the premise that frontier models alone would not solve enterprise software development.",
+    "source_quote": "Blitzy co-founders Brian Elliott (CEO), left, and Sid Pardeshi (CTO). (courtesy photo)",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -168,15 +189,57 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-2a1170824f0b17b5",
+    "claim_id": "CL-5fea0153dfc177bd",
     "raw_id": "RAW-5c261e703fee9af8",
-    "claim_type": "deployment",
+    "claim_type": "product_release",
     "subject": "Meta 在 Facebook",
-    "predicate": "deployment",
-    "object": "\"AI Mode\"，基于平台公开信息合成答案",
+    "predicate": "product_release",
+    "object": "公开信息合成答案",
     "qualifiers": {
       "event_status": "completed",
       "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-5c261e703fee9af8",
+      "start": 718,
+      "end": 930
+    },
+    "source_quote": "This follows Meta’s quiet launch last month of Forum , a Reddit-style app that includes its own AI “Ask” tab, letting users pose questions and get answers pulled from discussions happening across Facebook Groups.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-594b6d5126ce07ff",
+    "raw_id": "RAW-5c261e703fee9af8",
+    "claim_type": "product_release",
+    "subject": "Meta 在 Facebook",
+    "predicate": "product_release",
+    "object": "公开信息合成答案",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-5c261e703fee9af8",
+      "start": 2486,
+      "end": 2930
+    },
+    "source_quote": "Taken together, the flurry of releases points to a broader strategy: Meta wants Facebook’s AI tools to make the platform stickier and more useful, while also diversifying how it makes money. Alongside these feature rollouts, the company recently launched global subscription plans for Facebook, Instagram, and WhatsApp — starting at $3.99 a month — that unlock additional features, with more AI-related subscription tiers reportedly on the way.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-2a1170824f0b17b5",
+    "raw_id": "RAW-5c261e703fee9af8",
+    "claim_type": "product_release",
+    "subject": "Meta 在 Facebook",
+    "predicate": "product_release",
+    "object": "公开信息合成答案",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
     },
     "source_span": {
       "raw_id": "RAW-5c261e703fee9af8",
@@ -185,19 +248,19 @@
     },
     "source_quote": "Meta’s new ‘AI Mode’ on Facebook pulls from public info across its platforms",
     "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.9,
+    "extraction_confidence": 0.82,
     "verification_status": "accepted"
   },
   {
     "claim_id": "CL-6e744daf4363cf86",
     "raw_id": "RAW-5c261e703fee9af8",
-    "claim_type": "deployment",
+    "claim_type": "product_release",
     "subject": "Meta 在 Facebook",
-    "predicate": "deployment",
-    "object": "\"AI Mode\"，基于平台公开信息合成答案",
+    "predicate": "product_release",
+    "object": "公开信息合成答案",
     "qualifiers": {
       "event_status": "completed",
-      "sequence": 2
+      "sequence": 4
     },
     "source_span": {
       "raw_id": "RAW-5c261e703fee9af8",
@@ -205,48 +268,6 @@
       "end": 380
     },
     "source_quote": "As Meta tries to catch up in the AI race and boost engagement with its AI bot, the company announced Monday that it’s rolling out new AI features on Facebook that aim to change how users find information, create content, and interact with the platform.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-f5cb0032855846f1",
-    "raw_id": "RAW-5c261e703fee9af8",
-    "claim_type": "deployment",
-    "subject": "Meta 在 Facebook",
-    "predicate": "deployment",
-    "object": "\"AI Mode\"，基于平台公开信息合成答案",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 3
-    },
-    "source_span": {
-      "raw_id": "RAW-5c261e703fee9af8",
-      "start": 381,
-      "end": 717
-    },
-    "source_quote": "The headline update is “AI Mode,” a new way to search Facebook that uses Meta AI to surface answers pulled from public posts across the platform, including Groups and Reels. Instead of scrolling through search results, users can ask a question in plain language and get a synthesized answer based on what people are actually discussing.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-5fea0153dfc177bd",
-    "raw_id": "RAW-5c261e703fee9af8",
-    "claim_type": "deployment",
-    "subject": "Meta 在 Facebook",
-    "predicate": "deployment",
-    "object": "\"AI Mode\"，基于平台公开信息合成答案",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 4
-    },
-    "source_span": {
-      "raw_id": "RAW-5c261e703fee9af8",
-      "start": 718,
-      "end": 930
-    },
-    "source_quote": "This follows Meta’s quiet launch last month of Forum , a Reddit-style app that includes its own AI “Ask” tab, letting users pose questions and get answers pulled from discussions happening across Facebook Groups.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -273,6 +294,48 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-fd2bc362c69c237e",
+    "raw_id": "RAW-0d61660e2a5bb439",
+    "claim_type": "product_release",
+    "subject": "Claude Code v2.1.178",
+    "predicate": "product_release",
+    "object": "Skills in nested .claude/skills directories now load when working on files there; on a name clash, the nested skill appears as <dir>:<name> so both stay available",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-0d61660e2a5bb439",
+      "start": 568,
+      "end": 730
+    },
+    "source_quote": "Skills in nested .claude/skills directories now load when working on files there; on a name clash, the nested skill appears as <dir>:<name> so both stay available",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-99bc128825e4c6a6",
+    "raw_id": "RAW-0d61660e2a5bb439",
+    "claim_type": "product_release",
+    "subject": "Claude Code v2.1.178",
+    "predicate": "product_release",
+    "object": "Nested .claude/ directories: the agent, workflow, and output-style closest to the working directory now wins when names collide; project-scope workflow saves now target the closest existing .claude/workflows/",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-0d61660e2a5bb439",
+      "start": 731,
+      "end": 939
+    },
+    "source_quote": "Nested .claude/ directories: the agent, workflow, and output-style closest to the working directory now wins when names collide; project-scope workflow saves now target the closest existing .claude/workflows/",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-21598d53fa37dfd9",
     "raw_id": "RAW-0d61660e2a5bb439",
     "claim_type": "product_release",
@@ -281,7 +344,7 @@
     "object": "Fixed Claude in Chrome silently failing to connect when the OAuth token belongs to a different account than the Claude Code login",
     "qualifiers": {
       "event_status": "completed",
-      "sequence": 2
+      "sequence": 4
     },
     "source_span": {
       "raw_id": "RAW-0d61660e2a5bb439",
@@ -289,132 +352,6 @@
       "end": 2125
     },
     "source_quote": "Fixed Claude in Chrome silently failing to connect when the OAuth token belongs to a different account than the Claude Code login",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-8400ad3ae904b687",
-    "raw_id": "RAW-0d61660e2a5bb439",
-    "claim_type": "product_release",
-    "subject": "Claude Code v2.1.178",
-    "predicate": "product_release",
-    "object": "Fixed CLAUDE_CODE_PLUGIN_KEEP_MARKETPLACE_ON_FAILURE=1 preventing fresh marketplace installs from cloning",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 3
-    },
-    "source_span": {
-      "raw_id": "RAW-0d61660e2a5bb439",
-      "start": 3109,
-      "end": 3214
-    },
-    "source_quote": "Fixed CLAUDE_CODE_PLUGIN_KEEP_MARKETPLACE_ON_FAILURE=1 preventing fresh marketplace installs from cloning",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-1555b350b9a0c3de",
-    "raw_id": "RAW-0d61660e2a5bb439",
-    "claim_type": "product_release",
-    "subject": "Claude Code v2.1.178",
-    "predicate": "product_release",
-    "object": "Fixed statusline links with custom URI schemes (e.g. vscode:// ) not opening when clicked in claude agents",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 4
-    },
-    "source_span": {
-      "raw_id": "RAW-0d61660e2a5bb439",
-      "start": 3492,
-      "end": 3598
-    },
-    "source_quote": "Fixed statusline links with custom URI schemes (e.g. vscode:// ) not opening when clicked in claude agents",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-e28f2e1efb9a7b59",
-    "raw_id": "RAW-673786a876c956f7",
-    "claim_type": "acquisition",
-    "subject": "消息称高通洽谈",
-    "predicate": "acquisition",
-    "object": "AI 芯片初创 Tenstorrent，对价 80 亿至 100 亿美元",
-    "qualifiers": {
-      "event_status": "in_progress",
-      "sequence": 1
-    },
-    "source_span": {
-      "raw_id": "RAW-673786a876c956f7",
-      "start": 0,
-      "end": 43
-    },
-    "source_quote": "消息称高通洽谈收购 Tenstorrent，旨在提升人工智能芯片研发实力 - IT之家",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.9,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-105269af11c0abb2",
-    "raw_id": "RAW-673786a876c956f7",
-    "claim_type": "acquisition",
-    "subject": "消息称高通洽谈",
-    "predicate": "acquisition",
-    "object": "AI 芯片初创 Tenstorrent，对价 80 亿至 100 亿美元",
-    "qualifiers": {
-      "event_status": "in_progress",
-      "sequence": 2
-    },
-    "source_span": {
-      "raw_id": "RAW-673786a876c956f7",
-      "start": 209,
-      "end": 245
-    },
-    "source_quote": "消息称高通洽谈收购 Tenstorrent，旨在提升人工智能芯片研发实力",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-60b681d7509f6086",
-    "raw_id": "RAW-673786a876c956f7",
-    "claim_type": "acquisition",
-    "subject": "消息称高通洽谈",
-    "predicate": "acquisition",
-    "object": "AI 芯片初创 Tenstorrent，对价 80 亿至 100 亿美元",
-    "qualifiers": {
-      "event_status": "in_progress",
-      "sequence": 3
-    },
-    "source_span": {
-      "raw_id": "RAW-673786a876c956f7",
-      "start": 291,
-      "end": 457
-    },
-    "source_quote": "IT之家 6 月 16 日消息，据外媒 The Information 报道，高通正洽谈收购人工智能芯片设计初创企业 Tenstorrent， 双方商讨的收购对价区间至少在 80 亿至 100 亿美元（IT之家注：现汇率约合 541.53 亿至 676.91 亿元人民币），相较于 Tenstorrent 上一轮估值存在大幅溢价 。",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-90e72d52adff17b8",
-    "raw_id": "RAW-673786a876c956f7",
-    "claim_type": "acquisition",
-    "subject": "消息称高通洽谈",
-    "predicate": "acquisition",
-    "object": "AI 芯片初创 Tenstorrent，对价 80 亿至 100 亿美元",
-    "qualifiers": {
-      "event_status": "in_progress",
-      "sequence": 4
-    },
-    "source_span": {
-      "raw_id": "RAW-673786a876c956f7",
-      "start": 520,
-      "end": 574
-    },
-    "source_quote": "目前尚不清楚这笔交易价款是否会包含与业绩目标挂钩的浮动支付款项，以往半导体初创企业收购案通常会设置此类条款。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -457,6 +394,69 @@
       "end": 1235
     },
     "source_quote": "Despite the precautions taken by Anthropic, the Trump administration on June 12 ordered the company to keep its most advanced models out of the hands of all foreign nationals inside and outside the US. To ensure compliance, Anthropic has since shut off access for all customers to Mythos 5 and Fable 5, a version of Mythos that the company blocked from carrying out cybersecurity tasks. Anthropic said it believes the US government issued the order after discovering that it’s possible to “jailbreak,” or bypass the guardrails, of Fable 5.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-fff01b9449a39855",
+    "raw_id": "RAW-50f147fa7550b791",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "微软推Intelligent Terminal：Win11终端集成AI智能体",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-50f147fa7550b791",
+      "start": 108,
+      "end": 210
+    },
+    "source_quote": "IT之家曾于本月初报道，在 Build 2026 开发者大会上，微软宣布推出智能终端工具，定位现有 Windows Terminal 终端工具的 AI 分叉出独立版本，重点在终端侧边栏整合 AI 智能体。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e1c4bb634f348b94",
+    "raw_id": "RAW-50f147fa7550b791",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "微软推Intelligent Terminal：Win11终端集成AI智能体",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-50f147fa7550b791",
+      "start": 219,
+      "end": 260
+    },
+    "source_quote": "智能终端是一个具有原生智能体集成的实验性终端，基于 Windows 终端进行分支。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-7b3da75ee3eee173",
+    "raw_id": "RAW-50f147fa7550b791",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "微软推Intelligent Terminal：Win11终端集成AI智能体",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-50f147fa7550b791",
+      "start": 260,
+      "end": 317
+    },
+    "source_quote": "主要功能包括在专用窗格中的智能体，可以看到您的 shell 上下文，实时捕获错误，并帮助您修复它们而无需复制粘贴。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -672,6 +672,27 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-64405d95a58f738f",
+    "raw_id": "RAW-4e5c6c34ece31210",
+    "claim_type": "model_release",
+    "subject": "成本砍半，字节跳动",
+    "predicate": "model_release",
+    "object": "感谢IT之家网友 华南吴彦祖 的线索投递！",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-4e5c6c34ece31210",
+      "start": 293,
+      "end": 314
+    },
+    "source_quote": "感谢IT之家网友 华南吴彦祖 的线索投递！",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-687c5027592b39c5",
     "raw_id": "RAW-4e5c6c34ece31210",
     "claim_type": "model_release",
@@ -680,7 +701,7 @@
     "object": "IT之家 6 月 16 日消息，字节跳动火山引擎旗下火山方舟体验中心于 6 月 15 日正式上线 Seedance 2.0 Mini 视频生成模型，并计划近期开放 API 服务。",
     "qualifiers": {
       "event_status": "completed",
-      "sequence": 3
+      "sequence": 4
     },
     "source_span": {
       "raw_id": "RAW-4e5c6c34ece31210",
@@ -688,27 +709,6 @@
       "end": 404
     },
     "source_quote": "IT之家 6 月 16 日消息，字节跳动火山引擎旗下火山方舟体验中心于 6 月 15 日正式上线 Seedance 2.0 Mini 视频生成模型，并计划近期开放 API 服务。",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-55886112911f0af1",
-    "raw_id": "RAW-4e5c6c34ece31210",
-    "claim_type": "model_release",
-    "subject": "成本砍半，字节跳动",
-    "predicate": "model_release",
-    "object": "官方称，Seedance 2.0 Mini 比 Seedance 2.0 Fast 快 2 倍，输出质量与 Seedance 2.0 Fast 相当。",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 4
-    },
-    "source_span": {
-      "raw_id": "RAW-4e5c6c34ece31210",
-      "start": 436,
-      "end": 511
-    },
-    "source_quote": "官方称，Seedance 2.0 Mini 比 Seedance 2.0 Fast 快 2 倍，输出质量与 Seedance 2.0 Fast 相当。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -772,90 +772,6 @@
       "end": 356
     },
     "source_quote": "IT之家 6 月 15 日消息，腾讯今日宣布，ima 知识库作为信源接入元宝，腾讯 AI 生态进一步打通。",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-4bc2526dc5c47410",
-    "raw_id": "RAW-cbe0f071c17a64b0",
-    "claim_type": "partnership",
-    "subject": "微信支付 AI",
-    "predicate": "partnership",
-    "object": "工具箱 2.0 发布，Token 消耗降低 50%",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 1
-    },
-    "source_span": {
-      "raw_id": "RAW-cbe0f071c17a64b0",
-      "start": 0,
-      "end": 90
-    },
-    "source_quote": "IT之家 6 月 15 日消息，今年 4 月， 微信支付官宣发布一整套面向 AI 的支付接入 Skill ，涵盖 Skill 技能包、AI 友好文档、AI 友好 API 三大工具。",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.9,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-23435868cc3bb1ff",
-    "raw_id": "RAW-cbe0f071c17a64b0",
-    "claim_type": "partnership",
-    "subject": "微信支付 AI",
-    "predicate": "partnership",
-    "object": "工具箱 2.0 发布，Token 消耗降低 50%",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 2
-    },
-    "source_span": {
-      "raw_id": "RAW-cbe0f071c17a64b0",
-      "start": 90,
-      "end": 150
-    },
-    "source_quote": "据微信公开课消息，微信支付 AI 接入工具箱迎来 2.0 版本，围绕“安全、高效、原生流畅”的方向，重点更新了五大内容。",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-b45bfba0c6e0d435",
-    "raw_id": "RAW-cbe0f071c17a64b0",
-    "claim_type": "partnership",
-    "subject": "微信支付 AI",
-    "predicate": "partnership",
-    "object": "工具箱 2.0 发布，Token 消耗降低 50%",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 3
-    },
-    "source_span": {
-      "raw_id": "RAW-cbe0f071c17a64b0",
-      "start": 151,
-      "end": 221
-    },
-    "source_quote": "据介绍，微信支付 AI 接入工具箱 2.0 现在 全面支持中文、英语、日语、韩语、法语、俄语、葡萄牙语、西班牙语、阿拉伯语这 9 种语言 。",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-88f7afad1b6e0f30",
-    "raw_id": "RAW-cbe0f071c17a64b0",
-    "claim_type": "partnership",
-    "subject": "微信支付 AI",
-    "predicate": "partnership",
-    "object": "工具箱 2.0 发布，Token 消耗降低 50%",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 4
-    },
-    "source_span": {
-      "raw_id": "RAW-cbe0f071c17a64b0",
-      "start": 325,
-      "end": 402
-    },
-    "source_quote": "技术专家： 支持从支付场景选型、接入流程解读，到动态排障的全链路问答，帮助开发者通过对话完成【报错 → 定位 → 修复】的完整闭环，全程无需脱离开发环境。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -1113,7 +1029,7 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-ca044777717424e5",
+    "claim_id": "CL-686e36f03a60435e",
     "raw_id": "RAW-84d812f81c901792",
     "claim_type": "hardware_product",
     "subject": "理想马赫 M100",
@@ -1125,16 +1041,16 @@
     },
     "source_span": {
       "raw_id": "RAW-84d812f81c901792",
-      "start": 0,
-      "end": 61
+      "start": 432,
+      "end": 454
     },
-    "source_quote": "“全球首款动态数据流 AI 芯片”理想马赫 M100 发布：5nm 车规级工艺、单芯算力 1280 TOPS - IT之家",
+    "source_quote": "数据是张量，关系是确定的，流动路径是清晰的。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-97fbcf154f1f434e",
+    "claim_id": "CL-747739bb5e2ca184",
     "raw_id": "RAW-84d812f81c901792",
     "claim_type": "hardware_product",
     "subject": "理想马赫 M100",
@@ -1146,16 +1062,16 @@
     },
     "source_span": {
       "raw_id": "RAW-84d812f81c901792",
-      "start": 229,
-      "end": 283
+      "start": 454,
+      "end": 490
     },
-    "source_quote": "“全球首款动态数据流 AI 芯片”理想马赫 M100 发布：5nm 车规级工艺、单芯算力 1280 TOPS",
+    "source_quote": "让数据的流动来驱动计算的发生；让架构本身，围绕 AI 的计算形态来设计。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-f3db08c262ec8f76",
+    "claim_id": "CL-ca044777717424e5",
     "raw_id": "RAW-84d812f81c901792",
     "claim_type": "hardware_product",
     "subject": "理想马赫 M100",
@@ -1167,10 +1083,10 @@
     },
     "source_span": {
       "raw_id": "RAW-84d812f81c901792",
-      "start": 490,
-      "end": 527
+      "start": 0,
+      "end": 61
     },
-    "source_quote": "这就是数据流架构， 马赫 M100 就是全球首款动态数据流 AI 芯片 。",
+    "source_quote": "“全球首款动态数据流 AI 芯片”理想马赫 M100 发布：5nm 车规级工艺、单芯算力 1280 TOPS - IT之家",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -1344,6 +1260,48 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-fb9aefaf20650eb3",
+    "raw_id": "RAW-15b4ba4ac636149f",
+    "claim_type": "organization_people",
+    "subject": "Nvidia",
+    "predicate": "organization_people",
+    "object": "AI 债务热潮，发行 200 亿美元债券",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-15b4ba4ac636149f",
+      "start": 72,
+      "end": 92
+    },
+    "source_quote": "Maximilian Schreiner",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-f1f95f3800b7b157",
+    "raw_id": "RAW-15b4ba4ac636149f",
+    "claim_type": "organization_people",
+    "subject": "Nvidia",
+    "predicate": "organization_people",
+    "object": "AI 债务热潮，发行 200 亿美元债券",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-15b4ba4ac636149f",
+      "start": 93,
+      "end": 142
+    },
+    "source_quote": "View the LinkedIn Profile of Maximilian Schreiner",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-c507501f7fa7a3bb",
     "raw_id": "RAW-4ed864874d2076d6",
     "claim_type": "partnership",
@@ -1362,6 +1320,48 @@
     "source_quote": "Adani, Jabil Alliance to Build AI Data Center Gear in India - Bloomberg",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-fa7ad84334b953c7",
+    "raw_id": "RAW-4ed864874d2076d6",
+    "claim_type": "partnership",
+    "subject": "阿达尼集团与捷普",
+    "predicate": "partnership",
+    "object": "在印度制造AI数据中心设备",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-4ed864874d2076d6",
+      "start": 85,
+      "end": 105
+    },
+    "source_quote": "OpenAI Files for IPO",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a572efc24b5a6c55",
+    "raw_id": "RAW-4ed864874d2076d6",
+    "claim_type": "partnership",
+    "subject": "阿达尼集团与捷普",
+    "predicate": "partnership",
+    "object": "在印度制造AI数据中心设备",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-4ed864874d2076d6",
+      "start": 120,
+      "end": 141
+    },
+    "source_quote": "Boom Stokes Inflation",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
     "verification_status": "accepted"
   },
   {

@@ -2,7 +2,7 @@
 id: SIG-20260628-A13
 type: signal_card
 signal_type: product_service
-title: "Calculating The Kubernetes Integration Tax: What Your DIY Networking Stack Actually Costs"
+title: "计算Kubernetes集成税：你的DIY网络栈实际成本"
 date: 2026-06-28
 status: published
 source_title: "Calculating The Kubernetes Integration Tax: What Your DIY Networking Stack Actually Costs"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Calculating The Kubernetes Integration Tax"
 
 frontend:
-  displayTitle: "Calculating The Kubernetes Integration Tax: What Your DIY Networking Stack Actually Costs"
+  displayTitle: "计算Kubernetes集成税：你的DIY网络栈实际成本"
   sourceLinks:
     - "https://www.tigera.io/blog/calculating-the-kubernetes-integration-tax-what-your-diy-networking-stack-actually-costs/"
 ---
 
-# Calculating The Kubernetes Integration Tax: What Your DIY Networking Stack Actually Costs
+# 计算Kubernetes集成税：你的DIY网络栈实际成本
 
 ## 新闻事实
 

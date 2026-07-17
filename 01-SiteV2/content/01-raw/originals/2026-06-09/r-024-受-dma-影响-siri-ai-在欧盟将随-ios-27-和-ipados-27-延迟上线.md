@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"由于欧盟《数字市场法�
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "受 DMA 影响，Siri AI 在欧盟将随 iOS 27 和 iPadOS 27 延迟上线"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 受 DMA 影响，Siri AI 在欧盟将随 iOS 27 和 iPadOS 27 延迟上线

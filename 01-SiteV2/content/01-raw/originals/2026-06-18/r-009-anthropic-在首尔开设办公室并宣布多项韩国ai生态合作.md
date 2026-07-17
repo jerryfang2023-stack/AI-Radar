@@ -72,6 +72,10 @@ key_excerpts: [{"type":"supporting_context","text":"Anthropic 正式启用首尔
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Anthropic 在首尔开设办公室并宣布多项韩国AI生态合作"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Anthropic 在首尔开设办公室并宣布多项韩国AI生态合作

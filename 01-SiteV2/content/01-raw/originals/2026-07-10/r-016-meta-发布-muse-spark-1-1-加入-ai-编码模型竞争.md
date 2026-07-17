@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-016
 title: "Meta 发布 Muse Spark 1.1，加入 AI 编码模型竞争"
 title_zh: "Meta 发布 Muse Spark 1.1，加入 AI 编码模型竞争"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://techcrunch.com/2026/07/09/meta-enters-the-crowded-ai-coding-battle-with-muse-spark-1-1"
 canonical_url: "https://techcrunch.com/2026/07/09/meta-enters-the-crowded-ai-coding-battle-with-muse-spark-1-1"
 source_name: "TechCrunch：AI（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-10T01:59:44.153Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Meta 发布 Muse Spark 1.1，加入 AI 编码模型竞争

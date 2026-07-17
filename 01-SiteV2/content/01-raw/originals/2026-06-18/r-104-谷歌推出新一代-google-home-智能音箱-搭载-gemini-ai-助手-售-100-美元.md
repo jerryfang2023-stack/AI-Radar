@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"谷歌发布新一代 Google Home 智能
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "谷歌推出新一代 Google Home 智能音箱：搭载 Gemini AI 助手，售 100 美元"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 谷歌推出新一代 Google Home 智能音箱：搭载 Gemini AI 助手，售 100 美元

@@ -2,7 +2,7 @@
 id: SIG-20260608-A05
 type: signal_card
 signal_type: case
-title: "Requests for Startups - Y Combinator"
+title: "Y Combinator 发布初创企业征集"
 date: 2026-06-08
 status: published
 source_title: "Requests for Startups - Y Combinator"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Requests for Startups"
 
 frontend:
-  displayTitle: "Requests for Startups - Y Combinator"
+  displayTitle: "Y Combinator 发布初创企业征集"
   sourceLinks:
     - "https://www.ycombinator.com/rfs"
 ---
 
-# Requests for Startups - Y Combinator
+# Y Combinator 发布初创企业征集
 
 ## 新闻事实
 

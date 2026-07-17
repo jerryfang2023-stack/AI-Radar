@@ -42,7 +42,7 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-ae2554656695a66f",
+    "claim_id": "CL-f7f0b9774f2fb13f",
     "raw_id": "RAW-e6c4ff82ba76f846",
     "claim_type": "funding",
     "subject": "SK Hynix 美国 IPO",
@@ -51,6 +51,27 @@
     "qualifiers": {
       "event_status": "completed",
       "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-e6c4ff82ba76f846",
+      "start": 108,
+      "end": 136
+    },
+    "source_quote": "10:17 AM PDT · July 10, 2026",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-ae2554656695a66f",
+    "raw_id": "RAW-e6c4ff82ba76f846",
+    "claim_type": "funding",
+    "subject": "SK Hynix 美国 IPO",
+    "predicate": "funding",
+    "object": "265 亿美元，创史上最大外国公司上市纪录",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
     },
     "source_span": {
       "raw_id": "RAW-e6c4ff82ba76f846",
@@ -63,27 +84,6 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-45bff19c18d93de3",
-    "raw_id": "RAW-e6c4ff82ba76f846",
-    "claim_type": "funding",
-    "subject": "SK Hynix 美国 IPO",
-    "predicate": "funding",
-    "object": "265 亿美元，创史上最大外国公司上市纪录",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 4
-    },
-    "source_span": {
-      "raw_id": "RAW-e6c4ff82ba76f846",
-      "start": 2875,
-      "end": 3060
-    },
-    "source_quote": "The timing of Lutnick’s request is notable beyond this U.S. IPO for SK Hynix: Both Korean chipmakers just pledged more than $550 billion for new manufacturing investment in South Korea.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
     "claim_id": "CL-e7779bde6d5d2ccc",
     "raw_id": "RAW-c338e2698df6bd2e",
     "claim_type": "lawsuit_settlement",
@@ -91,7 +91,7 @@
     "predicate": "lawsuit_settlement",
     "object": "OpenAI窃取商业机密以开发人工智能硬件",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 1
     },
     "source_span": {
@@ -112,7 +112,7 @@
     "predicate": "lawsuit_settlement",
     "object": "OpenAI窃取商业机密以开发人工智能硬件",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 2
     },
     "source_span": {
@@ -133,7 +133,7 @@
     "predicate": "lawsuit_settlement",
     "object": "OpenAI窃取商业机密以开发人工智能硬件",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 3
     },
     "source_span": {
@@ -142,90 +142,6 @@
       "end": 518
     },
     "source_quote": "“This case is about Apple’s former employees stealing Apple’s trade secrets for the benefit of OpenAI. Apple brings this suit to put a stop to it,” the lawsuit says.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-781488ff20682f6c",
-    "raw_id": "RAW-fdc72a2b34f3e703",
-    "claim_type": "product_release",
-    "subject": "Context.dev（YC S26）",
-    "predicate": "product_release",
-    "object": "面向AI智能体团队的Web上下文API",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 1
-    },
-    "source_span": {
-      "raw_id": "RAW-fdc72a2b34f3e703",
-      "start": 683,
-      "end": 735
-    },
-    "source_quote": "Let Context.dev handle the data infrastructure layer",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.9,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-1bfe8d3aa6027d35",
-    "raw_id": "RAW-fdc72a2b34f3e703",
-    "claim_type": "product_release",
-    "subject": "Context.dev（YC S26）",
-    "predicate": "product_release",
-    "object": "面向AI智能体团队的Web上下文API",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 2
-    },
-    "source_span": {
-      "raw_id": "RAW-fdc72a2b34f3e703",
-      "start": 1096,
-      "end": 1148
-    },
-    "source_quote": "Let Context.dev handle the data infrastructure layer",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-8d01083bc9f30c1b",
-    "raw_id": "RAW-fdc72a2b34f3e703",
-    "claim_type": "product_release",
-    "subject": "Context.dev（YC S26）",
-    "predicate": "product_release",
-    "object": "面向AI智能体团队的Web上下文API",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 3
-    },
-    "source_span": {
-      "raw_id": "RAW-fdc72a2b34f3e703",
-      "start": 1622,
-      "end": 1730
-    },
-    "source_quote": "Paste one line into your coding agent — it signs you up, grabs your key, and integrates Context.dev for you.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-346dcd28150c73d9",
-    "raw_id": "RAW-fdc72a2b34f3e703",
-    "claim_type": "product_release",
-    "subject": "Context.dev（YC S26）",
-    "predicate": "product_release",
-    "object": "面向AI智能体团队的Web上下文API",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 4
-    },
-    "source_span": {
-      "raw_id": "RAW-fdc72a2b34f3e703",
-      "start": 1743,
-      "end": 1882
-    },
-    "source_quote": "Signup for an account & get API key with context.dev/auth.md , then follow docs.context.dev/agent-quickstart to integrate into the codebase",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -315,6 +231,48 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-9b36d0d628a9588f",
+    "raw_id": "RAW-faa455e476c770bb",
+    "claim_type": "organization_people",
+    "subject": "美联储",
+    "predicate": "organization_people",
+    "object": "AI投资人Marc Andreessen加入工作组，研究AI对经济影响",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-faa455e476c770bb",
+      "start": 776,
+      "end": 800
+    },
+    "source_quote": "AI, Menschen, Wirtschaft",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-88495a733f0dfaa9",
+    "raw_id": "RAW-faa455e476c770bb",
+    "claim_type": "organization_people",
+    "subject": "美联储",
+    "predicate": "organization_people",
+    "object": "AI投资人Marc Andreessen加入工作组，研究AI对经济影响",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-faa455e476c770bb",
+      "start": 801,
+      "end": 825
+    },
+    "source_quote": "AI, Menschen, Wirtschaft",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-01fe3224a8d81884",
     "raw_id": "RAW-d5da651033974bbf",
     "claim_type": "lawsuit_settlement",
@@ -322,7 +280,7 @@
     "predicate": "lawsuit_settlement",
     "object": "OpenAI 窃取商业机密",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 1
     },
     "source_span": {
@@ -343,7 +301,7 @@
     "predicate": "lawsuit_settlement",
     "object": "OpenAI 窃取商业机密",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 2
     },
     "source_span": {
@@ -364,7 +322,7 @@
     "predicate": "lawsuit_settlement",
     "object": "OpenAI 窃取商业机密",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 3
     },
     "source_span": {
@@ -385,7 +343,7 @@
     "predicate": "lawsuit_settlement",
     "object": "OpenAI 窃取商业机密",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 4
     },
     "source_span": {
@@ -483,48 +441,6 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-d9f07444c2495f6b",
-    "raw_id": "RAW-71a74012350be919",
-    "claim_type": "model_release",
-    "subject": "Hugging Face CEO：企业不再\"租用\"AI，",
-    "predicate": "model_release",
-    "object": "正重塑行业格局",
-    "qualifiers": {
-      "event_status": "announced",
-      "sequence": 1
-    },
-    "source_span": {
-      "raw_id": "RAW-71a74012350be919",
-      "start": 9,
-      "end": 70
-    },
-    "source_quote": "Hugging Face’s CEO on why companies are done renting their AI",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.9,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-3449483862020b75",
-    "raw_id": "RAW-71a74012350be919",
-    "claim_type": "model_release",
-    "subject": "Hugging Face CEO：企业不再\"租用\"AI，",
-    "predicate": "model_release",
-    "object": "正重塑行业格局",
-    "qualifiers": {
-      "event_status": "announced",
-      "sequence": 2
-    },
-    "source_span": {
-      "raw_id": "RAW-71a74012350be919",
-      "start": 137,
-      "end": 557
-    },
-    "source_quote": "Open source AI is booming, according to Hugging Face CEO Clem Delangue . The company has grown into something like a GitHub for AI in recent years, where AI builders can share and download open models and datasets, now used by roughly half the Fortune 500. Delangue has seen the same story play out again and again: companies start out on frontier APIs, but as they scale, the costs push them towards open source models.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
     "claim_id": "CL-48a580c2ef131d69",
     "raw_id": "RAW-1d822defccc3d5b7",
     "claim_type": "lawsuit_settlement",
@@ -532,7 +448,7 @@
     "predicate": "lawsuit_settlement",
     "object": "OpenAI for allegedly stealing hardware secrets",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 1
     },
     "source_span": {
@@ -553,7 +469,7 @@
     "predicate": "lawsuit_settlement",
     "object": "OpenAI for allegedly stealing hardware secrets",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 2
     },
     "source_span": {
@@ -574,7 +490,7 @@
     "predicate": "lawsuit_settlement",
     "object": "OpenAI for allegedly stealing hardware secrets",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 3
     },
     "source_span": {
@@ -595,7 +511,7 @@
     "predicate": "lawsuit_settlement",
     "object": "OpenAI for allegedly stealing hardware secrets",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 4
     },
     "source_span": {
@@ -651,7 +567,7 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-7fef6cd18e16dd56",
+    "claim_id": "CL-06ca9a4f9bdb74ac",
     "raw_id": "RAW-5197d31ae697eebf",
     "claim_type": "acquisition",
     "subject": "腾讯洽谈",
@@ -663,16 +579,16 @@
     },
     "source_span": {
       "raw_id": "RAW-5197d31ae697eebf",
-      "start": 0,
-      "end": 100
+      "start": 800,
+      "end": 824
     },
-    "source_quote": "Tencent moves to buy majority stake in Manus after Beijing forced Meta to unwind its $2 billion deal",
+    "source_quote": "AI, Menschen, Wirtschaft",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-c29a96370c9b5fb0",
+    "claim_id": "CL-c605f9b50ec9f004",
     "raw_id": "RAW-5197d31ae697eebf",
     "claim_type": "acquisition",
     "subject": "腾讯洽谈",
@@ -684,10 +600,10 @@
     },
     "source_span": {
       "raw_id": "RAW-5197d31ae697eebf",
-      "start": 101,
-      "end": 201
+      "start": 825,
+      "end": 849
     },
-    "source_quote": "Tencent moves to buy majority stake in Manus after Beijing forced Meta to unwind its $2 billion deal",
+    "source_quote": "AI, Menschen, Wirtschaft",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -779,10 +695,10 @@
   {
     "claim_id": "CL-7044c3e5ee3cf9e0",
     "raw_id": "RAW-2518857d0a974fdf",
-    "claim_type": "hardware_product",
+    "claim_type": "product_release",
     "subject": "加速进化",
-    "predicate": "hardware_product",
-    "object": "，2070TFLOPS 算力",
+    "predicate": "product_release",
+    "object": "Booster T2 具身开发旗舰平台：搭载英伟达 Thor 芯片，2070TFLOPS 算力",
     "qualifiers": {
       "event_status": "completed",
       "sequence": 1
@@ -800,10 +716,10 @@
   {
     "claim_id": "CL-f2bc8db4d7c0babc",
     "raw_id": "RAW-2518857d0a974fdf",
-    "claim_type": "hardware_product",
+    "claim_type": "product_release",
     "subject": "加速进化",
-    "predicate": "hardware_product",
-    "object": "，2070TFLOPS 算力",
+    "predicate": "product_release",
+    "object": "Booster T2 具身开发旗舰平台：搭载英伟达 Thor 芯片，2070TFLOPS 算力",
     "qualifiers": {
       "event_status": "completed",
       "sequence": 2
@@ -821,10 +737,10 @@
   {
     "claim_id": "CL-297221466f1efecf",
     "raw_id": "RAW-2518857d0a974fdf",
-    "claim_type": "hardware_product",
+    "claim_type": "product_release",
     "subject": "加速进化",
-    "predicate": "hardware_product",
-    "object": "，2070TFLOPS 算力",
+    "predicate": "product_release",
+    "object": "Booster T2 具身开发旗舰平台：搭载英伟达 Thor 芯片，2070TFLOPS 算力",
     "qualifiers": {
       "event_status": "completed",
       "sequence": 3
@@ -842,10 +758,10 @@
   {
     "claim_id": "CL-0aca511b9b7dd59f",
     "raw_id": "RAW-2518857d0a974fdf",
-    "claim_type": "hardware_product",
+    "claim_type": "product_release",
     "subject": "加速进化",
-    "predicate": "hardware_product",
-    "object": "，2070TFLOPS 算力",
+    "predicate": "product_release",
+    "object": "Booster T2 具身开发旗舰平台：搭载英伟达 Thor 芯片，2070TFLOPS 算力",
     "qualifiers": {
       "event_status": "completed",
       "sequence": 4
@@ -856,90 +772,6 @@
       "end": 525
     },
     "source_quote": "加速进化 Booster T2 专业版标配 英伟达 Thor 芯片 ，算力达 2070TFLOPS，搭配 14 核 CPU（最高 2.6GHz）和 128GB 256bit LPDDR5X 内存，端侧多模态推理延迟低至 100ms。",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-5c0e34a83568a4c6",
-    "raw_id": "RAW-dcccacd446a8b82f",
-    "claim_type": "hardware_product",
-    "subject": "上纬新材将在 WAIC 2026",
-    "predicate": "hardware_product",
-    "object": "启元 T1",
-    "qualifiers": {
-      "event_status": "planned",
-      "sequence": 1
-    },
-    "source_span": {
-      "raw_id": "RAW-dcccacd446a8b82f",
-      "start": 0,
-      "end": 43
-    },
-    "source_quote": "上纬新材将在 WAIC 2026 发布全球首款可变形个人机器人启元 T1 - IT之家",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.9,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-dfe52c43b412e69f",
-    "raw_id": "RAW-dcccacd446a8b82f",
-    "claim_type": "hardware_product",
-    "subject": "上纬新材将在 WAIC 2026",
-    "predicate": "hardware_product",
-    "object": "启元 T1",
-    "qualifiers": {
-      "event_status": "planned",
-      "sequence": 2
-    },
-    "source_span": {
-      "raw_id": "RAW-dcccacd446a8b82f",
-      "start": 209,
-      "end": 245
-    },
-    "source_quote": "上纬新材将在 WAIC 2026 发布全球首款可变形个人机器人启元 T1",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-8127829f28deda9a",
-    "raw_id": "RAW-dcccacd446a8b82f",
-    "claim_type": "hardware_product",
-    "subject": "上纬新材将在 WAIC 2026",
-    "predicate": "hardware_product",
-    "object": "启元 T1",
-    "qualifiers": {
-      "event_status": "planned",
-      "sequence": 3
-    },
-    "source_span": {
-      "raw_id": "RAW-dcccacd446a8b82f",
-      "start": 314,
-      "end": 407
-    },
-    "source_quote": "IT之家 7 月 10 日消息，2026 世界人工智能大会暨人工智能全球治理高级别会议（WAIC 2026）将于 7 月 17 日至 20 日在上海世博、张江、西岸“三地四馆”同步举行。",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-e50ec475e19d40e9",
-    "raw_id": "RAW-dcccacd446a8b82f",
-    "claim_type": "hardware_product",
-    "subject": "上纬新材将在 WAIC 2026",
-    "predicate": "hardware_product",
-    "object": "启元 T1",
-    "qualifiers": {
-      "event_status": "planned",
-      "sequence": 4
-    },
-    "source_span": {
-      "raw_id": "RAW-dcccacd446a8b82f",
-      "start": 897,
-      "end": 926
-    },
-    "source_quote": "关键词： 启元 T1 ， 上纬新材 ， WAIC 2026",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"

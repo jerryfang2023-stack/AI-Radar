@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"鞋履品牌 Allbirds 4 月宣布转型
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "Allbirds 转型 AI 后更名为 Smartbird，新 CEO 计划部署托管计算集群"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Allbirds 转型 AI 后更名为 Smartbird，新 CEO 计划部署托管计算集群

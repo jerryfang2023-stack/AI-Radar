@@ -2,7 +2,7 @@
 id: SIG-20260602-A04
 type: signal_card
 signal_type: case
-title: "Wonderful 获 1 亿美元 A 轮，扩展客服 Agent 部署"
+title: "Wonderful 完成1亿美元A轮融资，将AI代理部署至一线..."
 date: 2026-06-02
 status: published
 asset_level: frontstage
@@ -58,7 +58,7 @@ signal_owner: "Wonderful"
 watch_reason: "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
 
 frontend:
-  displayTitle: "Wonderful 获 1 亿美元 A 轮，扩展客服 Agent 部署"
+  displayTitle: "Wonderful 完成1亿美元A轮融资，将AI代理部署至一线..."
   eventLine: "Wonderful 把 AI 用进地产开发和建筑设计流程。"
   whyWatch: "这条变化值得看，是因为它把竞争点放到了地产开发和建筑设计流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"
   businessMeaning: "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
@@ -68,7 +68,7 @@ frontend:
     - "https://techcrunch.com/2025/11/11/wonderful-raised-100m-series-a-to-put-ai-agents-on-the-front-lines-of-customer-service/"
 ---
 
-# Wonderful 获 1 亿美元 A 轮，扩展客服 Agent 部署
+# Wonderful 完成1亿美元A轮融资，将AI代理部署至一线...
 
 ## 信号底稿
 

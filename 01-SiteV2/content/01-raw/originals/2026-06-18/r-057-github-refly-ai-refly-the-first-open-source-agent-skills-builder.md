@@ -72,6 +72,10 @@ key_excerpts: [{"type":"quote","text":"**TL;DR**: Refly compiles your enterprise
 theme: mature-commercial-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "GitHub - refly-ai/refly：首个开源AI智能体技能构建工具..."
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # GitHub - refly-ai/refly: The first open-source agent skills builder ...

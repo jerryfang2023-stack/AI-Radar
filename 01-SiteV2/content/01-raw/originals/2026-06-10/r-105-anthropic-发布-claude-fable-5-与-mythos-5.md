@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"Anthropic 于 6 月 9 日推出 Claude F
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Anthropic 发布 Claude Fable 5 与 Mythos 5"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Anthropic 发布 Claude Fable 5 与 Mythos 5

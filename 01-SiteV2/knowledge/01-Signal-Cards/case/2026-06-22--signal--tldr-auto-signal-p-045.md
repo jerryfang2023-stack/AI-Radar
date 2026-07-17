@@ -2,7 +2,7 @@
 id: SIG-20260622-A14
 type: signal_card
 signal_type: case
-title: "Tldr 记录企业应用场景：企业智能体协作流程"
+title: "Meta AI模式📱，Factory 2.0👨‍💻，Sakana自主研究员🐟"
 date: 2026-06-22
 status: published
 source_title: "Meta AI mode 📱, Factory 2.0 👨‍💻, Sakana’s autonomous researcher 🐟"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Tldr"
 
 frontend:
-  displayTitle: "Tldr 记录企业应用场景：企业智能体协作流程"
+  displayTitle: "Meta AI模式📱，Factory 2.0👨‍💻，Sakana自主研究员🐟"
   sourceLinks:
     - "https://tldr.tech/ai/2026-06-16"
 ---
 
-# Tldr 记录企业应用场景：企业智能体协作流程
+# Meta AI模式📱，Factory 2.0👨‍💻，Sakana自主研究员🐟
 
 ## 新闻事实
 

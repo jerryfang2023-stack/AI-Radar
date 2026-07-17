@@ -2,7 +2,7 @@
 id: SIG-20260612-A03
 type: signal_card
 signal_type: funding
-title: "Techcrunch 获得$85M 融资，押注销售线索和收入团队协作"
+title: "Theker 获 8500 万美元融资，打造可重新配置的工厂机器人"
 date: 2026-06-12
 status: published
 source_title: "Theker 获 8500 万美元融资，打造可重新配置的工厂机器人"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Techcrunch"
 
 frontend:
-  displayTitle: "Techcrunch 获得$85M 融资，押注销售线索和收入团队协作"
+  displayTitle: "Theker 获 8500 万美元融资，打造可重新配置的工厂机器人"
   sourceLinks:
     - "https://techcrunch.com/2026/06/11/theker-just-raised-85m-to-build-the-factory-robot-that-doesnt-specialize-in-anything"
 ---
 
-# Techcrunch 获得$85M 融资，押注销售线索和收入团队协作
+# Theker 获 8500 万美元融资，打造可重新配置的工厂机器人
 
 ## 新闻事实
 

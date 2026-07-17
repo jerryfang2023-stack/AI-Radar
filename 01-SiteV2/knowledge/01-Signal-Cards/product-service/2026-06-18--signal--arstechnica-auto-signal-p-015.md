@@ -2,7 +2,7 @@
 id: SIG-20260618-A21
 type: signal_card
 signal_type: product_service
-title: "Arstechnica 发布 AI 基础设施能力，切入模型部署和算力服务"
+title: "Anthropic 的 Claude Fable 5 和 Mythos 5 因美国出口管制下线"
 date: 2026-06-18
 status: published
 source_title: "Anthropic 的 Claude Fable 5 和 Mythos 5 因美国出口管制下线"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Arstechnica"
 
 frontend:
-  displayTitle: "Arstechnica 发布 AI 基础设施能力，切入模型部署和算力服务"
+  displayTitle: "Anthropic 的 Claude Fable 5 和 Mythos 5 因美国出口管制下线"
   sourceLinks:
     - "https://arstechnica.com/ai/2026/06/dangerous-ai-models-are-coming-no-matter-what"
 ---
 
-# Arstechnica 发布 AI 基础设施能力，切入模型部署和算力服务
+# Anthropic 的 Claude Fable 5 和 Mythos 5 因美国出口管制下线
 
 ## 新闻事实
 

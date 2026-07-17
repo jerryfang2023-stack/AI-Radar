@@ -2,7 +2,7 @@
 id: SIG-20260627-A12
 type: signal_card
 signal_type: case
-title: "The Corporate AI Learning Curve Is Flatlining - Paid Program"
+title: "企业AI学习曲线趋于平缓 - 付费项目"
 date: 2026-06-27
 status: published
 source_title: "The Corporate AI Learning Curve Is Flatlining - Paid Program"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Corporate AI Learning Curve Is Flatlining"
 
 frontend:
-  displayTitle: "The Corporate AI Learning Curve Is Flatlining - Paid Program"
+  displayTitle: "企业AI学习曲线趋于平缓 - 付费项目"
   sourceLinks:
     - "https://partners.wsj.com/parloa/ai-and-automation/the-corporate-ai-learning-curve-is-flatlining/"
 ---
 
-# The Corporate AI Learning Curve Is Flatlining - Paid Program
+# 企业AI学习曲线趋于平缓 - 付费项目
 
 ## 新闻事实
 

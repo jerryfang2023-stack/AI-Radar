@@ -2,7 +2,7 @@
 id: SIG-20260615-A14
 type: signal_card
 signal_type: product_service
-title: "欢迎进入AI治理的AGI时代 发布 AI 基础设施能力，切入模型部署和算力服务"
+title: "欢迎进入AI治理的AGI时代"
 date: 2026-06-15
 status: published
 source_title: "欢迎进入AI治理的AGI时代"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "欢迎进入AI治理的AGI时代"
 
 frontend:
-  displayTitle: "欢迎进入AI治理的AGI时代 发布 AI 基础设施能力，切入模型部署和算力服务"
+  displayTitle: "欢迎进入AI治理的AGI时代"
   sourceLinks:
     - "https://www.interconnects.ai/p/welcome-to-the-agi-era-of-ai-governance"
 ---
 
-# 欢迎进入AI治理的AGI时代 发布 AI 基础设施能力，切入模型部署和算力服务
+# 欢迎进入AI治理的AGI时代
 
 ## 新闻事实
 

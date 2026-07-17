@@ -11,23 +11,34 @@
     ]
   },
   {
+    "relationship_id": "REL-8e0609067e220563",
+    "event_id": "EV-abaf05e513f88a4f",
+    "subject": "Claude Code v2.1.160",
+    "predicate": "product_release",
+    "object": "acceptEdits mode now prompts before writing build-tool config files that grant code execution ( .npmrc , .yarnrc* , bunfig.toml , .bazelrc , .pre-commit-config.yaml , .devcontainer/ , etc.)",
+    "claim_ref": "CL-6058251a64be3cde",
+    "source_refs": [
+      "SA-ab2962dcc5950a5c"
+    ]
+  },
+  {
+    "relationship_id": "REL-fdcf6383eab0c8bf",
+    "event_id": "EV-abaf05e513f88a4f",
+    "subject": "Claude Code v2.1.160",
+    "predicate": "product_release",
+    "object": "Edit no longer requires a separate Read after viewing a file with grep : single-file grep / egrep / fgrep commands now satisfy the read-before-edit check",
+    "claim_ref": "CL-3742ccf065945f2f",
+    "source_refs": [
+      "SA-ab2962dcc5950a5c"
+    ]
+  },
+  {
     "relationship_id": "REL-4be559165af5e8ec",
     "event_id": "EV-abaf05e513f88a4f",
     "subject": "Claude Code v2.1.160",
     "predicate": "product_release",
     "object": "Fixed the auto mode unavailability message on third-party providers (Bedrock/Vertex/Foundry) to point to the CLAUDE_CODE_ENABLE_AUTO_MODE opt-in instead of incorrectly blaming the model",
     "claim_ref": "CL-32bb638b8d6ba50a",
-    "source_refs": [
-      "SA-ab2962dcc5950a5c"
-    ]
-  },
-  {
-    "relationship_id": "REL-be903ac15a5791c3",
-    "event_id": "EV-abaf05e513f88a4f",
-    "subject": "Claude Code v2.1.160",
-    "predicate": "product_release",
-    "object": "Removed CLAUDE_CODE_OPUS_4_6_FAST_MODE_OVERRIDE ; the environment variable is now a no-op",
-    "claim_ref": "CL-c679e4b54957e7a5",
     "source_refs": [
       "SA-ab2962dcc5950a5c"
     ]
@@ -77,8 +88,8 @@
     ]
   },
   {
-    "relationship_id": "REL-e4fd32beaa7a5131",
-    "event_id": "EV-f8becea58ba65e8b",
+    "relationship_id": "REL-3b23be5edf9bf129",
+    "event_id": "EV-8abf5adc3e72fbb8",
     "subject": "Parloa",
     "predicate": "deployment",
     "object": "$350M with SAP, Microsoft, OpenAI partnerships",
@@ -88,8 +99,8 @@
     ]
   },
   {
-    "relationship_id": "REL-55a46c288bac5a1b",
-    "event_id": "EV-f8becea58ba65e8b",
+    "relationship_id": "REL-88c4ae0fc512b647",
+    "event_id": "EV-8abf5adc3e72fbb8",
     "subject": "Parloa",
     "predicate": "deployment",
     "object": "$350M with SAP, Microsoft, OpenAI partnerships",
@@ -99,23 +110,23 @@
     ]
   },
   {
-    "relationship_id": "REL-a0f86f2b247275f5",
-    "event_id": "EV-f8becea58ba65e8b",
+    "relationship_id": "REL-445bf94086445542",
+    "event_id": "EV-8abf5adc3e72fbb8",
     "subject": "Parloa",
     "predicate": "deployment",
     "object": "$350M with SAP, Microsoft, OpenAI partnerships",
-    "claim_ref": "CL-a69a96d180f7f707",
+    "claim_ref": "CL-1f52a91fcf7799b5",
     "source_refs": [
       "SA-77e563a58b6d395f"
     ]
   },
   {
-    "relationship_id": "REL-8b52790282aeb613",
-    "event_id": "EV-f8becea58ba65e8b",
+    "relationship_id": "REL-c61a2db6241b0df8",
+    "event_id": "EV-8abf5adc3e72fbb8",
     "subject": "Parloa",
     "predicate": "deployment",
     "object": "$350M with SAP, Microsoft, OpenAI partnerships",
-    "claim_ref": "CL-8fba0f2db9b48b2c",
+    "claim_ref": "CL-a69a96d180f7f707",
     "source_refs": [
       "SA-77e563a58b6d395f"
     ]
@@ -319,23 +330,23 @@
     ]
   },
   {
+    "relationship_id": "REL-c80418a99e311d35",
+    "event_id": "EV-9fc8916c19c19f99",
+    "subject": "Telli, a YC alum,",
+    "predicate": "funding",
+    "object": "pre-seed funding for its AI voice agents",
+    "claim_ref": "CL-4875952d70141946",
+    "source_refs": [
+      "SA-32457975dc434bf6"
+    ]
+  },
+  {
     "relationship_id": "REL-313e6804fbcce267",
     "event_id": "EV-9fc8916c19c19f99",
     "subject": "Telli, a YC alum,",
     "predicate": "funding",
     "object": "pre-seed funding for its AI voice agents",
     "claim_ref": "CL-902ff6e4251ed6d0",
-    "source_refs": [
-      "SA-32457975dc434bf6"
-    ]
-  },
-  {
-    "relationship_id": "REL-1c9a4606a805d76f",
-    "event_id": "EV-9fc8916c19c19f99",
-    "subject": "Telli, a YC alum,",
-    "predicate": "funding",
-    "object": "pre-seed funding for its AI voice agents",
-    "claim_ref": "CL-73c987a9a2e06683",
     "source_refs": [
       "SA-32457975dc434bf6"
     ]
@@ -385,8 +396,52 @@
     ]
   },
   {
-    "relationship_id": "REL-b7902f1ec88aa6b9",
-    "event_id": "EV-f8a79104a533422b",
+    "relationship_id": "REL-1715b95954a5cb12",
+    "event_id": "EV-3474febbec499f3c",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "a way for enterprises to build and manage AI agents",
+    "claim_ref": "CL-083dede3547eb7ab",
+    "source_refs": [
+      "SA-e930e7ed681cc8d9"
+    ]
+  },
+  {
+    "relationship_id": "REL-dfe1f40b5bb2c913",
+    "event_id": "EV-3474febbec499f3c",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "a way for enterprises to build and manage AI agents",
+    "claim_ref": "CL-8c153161cb7e77c9",
+    "source_refs": [
+      "SA-e930e7ed681cc8d9"
+    ]
+  },
+  {
+    "relationship_id": "REL-43f52e566b25e9a9",
+    "event_id": "EV-3474febbec499f3c",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "a way for enterprises to build and manage AI agents",
+    "claim_ref": "CL-0ec606d1daf4c861",
+    "source_refs": [
+      "SA-e930e7ed681cc8d9"
+    ]
+  },
+  {
+    "relationship_id": "REL-61e1a561479a143c",
+    "event_id": "EV-3474febbec499f3c",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "a way for enterprises to build and manage AI agents",
+    "claim_ref": "CL-ef67c03336755f7d",
+    "source_refs": [
+      "SA-e930e7ed681cc8d9"
+    ]
+  },
+  {
+    "relationship_id": "REL-e664a4fba19aa0fd",
+    "event_id": "EV-a7dfdd426fe2a74d",
     "subject": "Empromptu",
     "predicate": "funding",
     "object": "$2M pre-seed to help enterprises build AI apps",
@@ -396,34 +451,34 @@
     ]
   },
   {
-    "relationship_id": "REL-8ae66b7e35803dd7",
-    "event_id": "EV-f8a79104a533422b",
+    "relationship_id": "REL-8fa62aa6e09755fc",
+    "event_id": "EV-a7dfdd426fe2a74d",
+    "subject": "Empromptu",
+    "predicate": "funding",
+    "object": "$2M pre-seed to help enterprises build AI apps",
+    "claim_ref": "CL-4086c21d73c5d914",
+    "source_refs": [
+      "SA-67dacc2ec4f916eb"
+    ]
+  },
+  {
+    "relationship_id": "REL-f69a5d7de29ce2d2",
+    "event_id": "EV-a7dfdd426fe2a74d",
+    "subject": "Empromptu",
+    "predicate": "funding",
+    "object": "$2M pre-seed to help enterprises build AI apps",
+    "claim_ref": "CL-c9831b6be2fd3ef0",
+    "source_refs": [
+      "SA-67dacc2ec4f916eb"
+    ]
+  },
+  {
+    "relationship_id": "REL-cdd39411cb486a6b",
+    "event_id": "EV-a7dfdd426fe2a74d",
     "subject": "Empromptu",
     "predicate": "funding",
     "object": "$2M pre-seed to help enterprises build AI apps",
     "claim_ref": "CL-6648bbdefe007f3d",
-    "source_refs": [
-      "SA-67dacc2ec4f916eb"
-    ]
-  },
-  {
-    "relationship_id": "REL-66cbabb97dd9aab4",
-    "event_id": "EV-f8a79104a533422b",
-    "subject": "Empromptu",
-    "predicate": "funding",
-    "object": "$2M pre-seed to help enterprises build AI apps",
-    "claim_ref": "CL-7b440ce9071d91ea",
-    "source_refs": [
-      "SA-67dacc2ec4f916eb"
-    ]
-  },
-  {
-    "relationship_id": "REL-87e1e122a6eb5539",
-    "event_id": "EV-f8a79104a533422b",
-    "subject": "Empromptu",
-    "predicate": "funding",
-    "object": "$2M pre-seed to help enterprises build AI apps",
-    "claim_ref": "CL-2e188b60d17dc4e4",
     "source_refs": [
       "SA-67dacc2ec4f916eb"
     ]
@@ -506,17 +561,6 @@
     ]
   },
   {
-    "relationship_id": "REL-4beb19c41fd084a6",
-    "event_id": "EV-4a162c41bb82f325",
-    "subject": "谷歌母公司 Alphabet 宣布 800 亿美元大额",
-    "predicate": "funding",
-    "object": "，用于 AI 基础设施与算力建设",
-    "claim_ref": "CL-5f45ad800bcbb895",
-    "source_refs": [
-      "SA-0bff9233fcd0cb9e"
-    ]
-  },
-  {
     "relationship_id": "REL-ef3d034132094448",
     "event_id": "EV-e12b17260d19c5ff",
     "subject": "YC alum Adam",
@@ -539,25 +583,69 @@
     ]
   },
   {
-    "relationship_id": "REL-c4a025a379bfb80a",
+    "relationship_id": "REL-88031ef927107218",
     "event_id": "EV-e12b17260d19c5ff",
     "subject": "YC alum Adam",
     "predicate": "funding",
     "object": "$4.1M to turn viral text-to-3D tool into AI copilot",
-    "claim_ref": "CL-e4175189ca6aac93",
+    "claim_ref": "CL-a349f4160cbc2e5d",
     "source_refs": [
       "SA-72f45efb0345e436"
     ]
   },
   {
-    "relationship_id": "REL-5815d6a89272cd2e",
+    "relationship_id": "REL-536cfb57698fb48b",
     "event_id": "EV-e12b17260d19c5ff",
     "subject": "YC alum Adam",
     "predicate": "funding",
     "object": "$4.1M to turn viral text-to-3D tool into AI copilot",
-    "claim_ref": "CL-b8853d1e3681ca75",
+    "claim_ref": "CL-5f696b6bec9eb44b",
     "source_refs": [
       "SA-72f45efb0345e436"
+    ]
+  },
+  {
+    "relationship_id": "REL-f918d2bad1a22827",
+    "event_id": "EV-519537a36355d82e",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "OpenAI 调整手机端 ChatGPT，提示词可提前选 AI 响应档位",
+    "claim_ref": "CL-7c064ac0f7651d30",
+    "source_refs": [
+      "SA-3fa3a792d20371be"
+    ]
+  },
+  {
+    "relationship_id": "REL-88b1059898b680ab",
+    "event_id": "EV-519537a36355d82e",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "OpenAI 调整手机端 ChatGPT，提示词可提前选 AI 响应档位",
+    "claim_ref": "CL-3ce0d901e6060501",
+    "source_refs": [
+      "SA-3fa3a792d20371be"
+    ]
+  },
+  {
+    "relationship_id": "REL-6b7c29aa422d3736",
+    "event_id": "EV-519537a36355d82e",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "OpenAI 调整手机端 ChatGPT，提示词可提前选 AI 响应档位",
+    "claim_ref": "CL-b917b0aec2dc7400",
+    "source_refs": [
+      "SA-3fa3a792d20371be"
+    ]
+  },
+  {
+    "relationship_id": "REL-22676f79d16e9678",
+    "event_id": "EV-519537a36355d82e",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "OpenAI 调整手机端 ChatGPT，提示词可提前选 AI 响应档位",
+    "claim_ref": "CL-e4c82a4931b2b93a",
+    "source_refs": [
+      "SA-3fa3a792d20371be"
     ]
   }
 ]

@@ -2,7 +2,7 @@
 id: SIG-20260616-A15
 type: signal_card
 signal_type: product_service
-title: "Built with Opus 4.7 Claude Code 黑客马拉松获奖者揭晓 推出 Agent 工作流能力，切入模型部署和算力服务"
+title: "Built with Opus 4.7 Claude Code 黑客马拉松获奖者揭晓"
 date: 2026-06-16
 status: published
 source_title: "Built with Opus 4.7 Claude Code 黑客马拉松获奖者揭晓"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Built with Opus 4.7 Claude Code 黑客马拉松获奖者揭晓"
 
 frontend:
-  displayTitle: "Built with Opus 4.7 Claude Code 黑客马拉松获奖者揭晓 推出 Agent 工作流能力，切入模型部署和算力服务"
+  displayTitle: "Built with Opus 4.7 Claude Code 黑客马拉松获奖者揭晓"
   sourceLinks:
     - "https://claude.com/blog/meet-the-winners-of-built-with-opus-4-7-claude-code-hackathon"
 ---
 
-# Built with Opus 4.7 Claude Code 黑客马拉松获奖者揭晓 推出 Agent 工作流能力，切入模型部署和算力服务
+# Built with Opus 4.7 Claude Code 黑客马拉松获奖者揭晓
 
 ## 新闻事实
 

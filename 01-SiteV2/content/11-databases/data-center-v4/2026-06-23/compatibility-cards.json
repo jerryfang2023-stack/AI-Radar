@@ -1,7 +1,7 @@
 [
   {
-    "card_id": "CARD-e920303ca477ff73",
-    "event_id": "EV-c033ae6f9784d674",
+    "card_id": "CARD-4bc6595d7ed768c1",
+    "event_id": "EV-d53cd33e8f541a65",
     "card_type": "product_service",
     "title": "xAI 为 Grok Build 推出 /goal 模式，支持长周期自主编码与内置验证",
     "fact": "/goal adds commands to monitor and steer the run. You type them inside the Grok Build session:",
@@ -87,8 +87,8 @@
     ]
   },
   {
-    "card_id": "CARD-5c40bd3ed3bf0f91",
-    "event_id": "EV-1060a8b37ddd87ac",
+    "card_id": "CARD-f3db5441c694f838",
+    "event_id": "EV-41ffecb51e643397",
     "card_type": "case",
     "title": "欧莱雅与OpenAI合作，将美宝莲虚拟试妆引入ChatGPT",
     "fact": "L’Oréal has announced a collaboration with OpenAI that will bring Maybelline New York’s virtual makeup try-on feature into ChatGPT.",
@@ -97,7 +97,9 @@
     "event_time": "2026-06-22T10:00:00.000Z",
     "claim_refs": [
       "CL-566ecb8cc10d682d",
-      "CL-06f133eb5ad05b3a"
+      "CL-06f133eb5ad05b3a",
+      "CL-a544880339324d17",
+      "CL-f345a2699617aae6"
     ],
     "source_refs": [
       "SA-acead99a3c8a95c5"
@@ -106,8 +108,8 @@
     "missing_fields": []
   },
   {
-    "card_id": "CARD-edb51ae79774c47b",
-    "event_id": "EV-ad2c8dc4a08de64c",
+    "card_id": "CARD-b9640a7aa2a07a02",
+    "event_id": "EV-9e04edd969c977a1",
     "card_type": "product_service",
     "title": "Sakana AI 发布多智能体编排系统 Sakana Fugu，对外表现为单一模型",
     "fact": "Today, Sakana AI launched Sakana Fugu . It is a multi-agent orchestration system that behaves like one model. You send a request to a single endpoint. Fugu decides how to handle it internally. It solves a task directly when that is enough. It also assembles and coordinates a team of expert models when needed. The complexity of a multi-agent system never reaches your code.",
@@ -116,9 +118,9 @@
     "event_time": "2026-06-22T18:42:59.000Z",
     "claim_refs": [
       "CL-fd6d56ad0ffd74a8",
-      "CL-f89404e49114cb10",
-      "CL-2b036ef4e4a8d11a",
-      "CL-f52add6b38ead60a"
+      "CL-0099a4dc4bc5bfe3",
+      "CL-1062fedf781d161d",
+      "CL-f89404e49114cb10"
     ],
     "source_refs": [
       "SA-c940ebd28f55133c"
@@ -129,8 +131,8 @@
     ]
   },
   {
-    "card_id": "CARD-ca06b956ce0f88e8",
-    "event_id": "EV-53f7c11bfe7b50d1",
+    "card_id": "CARD-209716b0b17ff74a",
+    "event_id": "EV-ceb7d70f0043eb81",
     "card_type": "product_service",
     "title": "Sakana AI 推出 Fugu：动态协调多 LLM 的系统，匹配 Anthropic 顶级模型性能",
     "fact": "Tokyo-based startup Sakana AI has unveiled Fugu, a multi-LLM orchestrator that looks and feels like a single model to the user. Sakana already had strong results with orchestrator setups for coding. Its ALE-Agent placed 21st out of 1,000 human experts in a coding competition.",
@@ -153,9 +155,9 @@
     "card_id": "CARD-0df92c1aa4099081",
     "event_id": "EV-232ab5bcbaf6552d",
     "card_type": "funding",
-    "title": "ContraVault AI 完成 310 万美元 A 轮融资",
+    "title": "ContraVault AI 获310万美元Pre-A轮融资，旨在革新采购智能",
     "fact": "ContraVault AI Raises $3.1M Pre-Series A to Revolutionize Procurement Intelligence",
-    "event_status": "announced",
+    "event_status": "completed",
     "publication_status": "verified",
     "event_time": "",
     "claim_refs": [
@@ -168,7 +170,9 @@
       "SA-673cf2d74bade870"
     ],
     "conflicts": [],
-    "missing_fields": []
+    "missing_fields": [
+      "event_time"
+    ]
   },
   {
     "card_id": "CARD-1931d6358b483609",
@@ -181,7 +185,9 @@
     "event_time": "2026-06-22T13:57:53.000Z",
     "claim_refs": [
       "CL-d0987569d0c3accd",
-      "CL-4646b2fafd1a6f66"
+      "CL-4646b2fafd1a6f66",
+      "CL-79a536581095b1c5",
+      "CL-5b51bd0506763fa7"
     ],
     "source_refs": [
       "SA-63e0c79f675adbd0"
@@ -192,19 +198,22 @@
     ]
   },
   {
-    "card_id": "CARD-c63e29678138887b",
-    "event_id": "EV-09d3ce5611881ed4",
+    "card_id": "CARD-57e5ceffd04a51ba",
+    "event_id": "EV-b7ba9acba80a852e",
     "card_type": "product_service",
-    "title": "GLM-5.2 开源模型发布：744B 参数，1M 上下文，可本地运行",
-    "fact": "GLM-5.2 is Z.ai’s new open model, delivering SOTA performance across long-horizon coding, reasoning, and agentic tasks. With 744B parameters , 40B active parameters, and a 1M context window, it can now be run locally using Unsloth Dynamic GGUFs. GLM-5.2 is the strongest open model to date, performing on par with Claude 4.8 Opus, GPT-5.5, and Gemini 3.1 Pro across Artificial Analysis and many other benchmarks.",
-    "event_status": "completed",
+    "title": "联想百应 AI 主机 300 体验：AI Max+395 芯片加持，能跑 120B 本地大模型",
+    "fact": "最近，NVIDIA 在 GTC Taipei 期间发布了 RTX Spark 超级芯片，引起业界的广泛关注，被认为标志着个人计算产业迎来了自图形加速时代以来最重大的变革。",
+    "event_status": "announced",
     "publication_status": "verified",
-    "event_time": "2026-06-22T23:56:29.361Z",
+    "event_time": "2026-06-22T09:08:01.000Z",
     "claim_refs": [
-      "CL-8b973c30ba857429"
+      "CL-b117e19a6817961f",
+      "CL-985067f0cc2f6f84",
+      "CL-f34f5593191225ae",
+      "CL-e7fad5ae3313dc3c"
     ],
     "source_refs": [
-      "SA-b2d018a446c80c77"
+      "SA-1d6d916b356345c7"
     ],
     "conflicts": [],
     "missing_fields": []
@@ -220,7 +229,9 @@
     "event_time": "2026-06-23T00:45:05.000Z",
     "claim_refs": [
       "CL-f9439d5afc10c6b2",
-      "CL-284941a189153f15"
+      "CL-284941a189153f15",
+      "CL-5811009234212f72",
+      "CL-894756650c8d1cf8"
     ],
     "source_refs": [
       "SA-30af9c8e1ebbc476"
@@ -239,7 +250,9 @@
     "event_time": "2026-06-22T15:03:46.000Z",
     "claim_refs": [
       "CL-0baac58657853aa1",
-      "CL-5490e6e362f02532"
+      "CL-5490e6e362f02532",
+      "CL-9fc5e28890574d01",
+      "CL-a72bbe0c0fdbf1b1"
     ],
     "source_refs": [
       "SA-db48422d1746d451"
@@ -248,8 +261,8 @@
     "missing_fields": []
   },
   {
-    "card_id": "CARD-979344a59d8068ca",
-    "event_id": "EV-4b0a7d68040c37aa",
+    "card_id": "CARD-23bc89ec770ad8cb",
+    "event_id": "EV-a16be3cb9dad7cfe",
     "card_type": "case",
     "title": "美光与 Anthropic 达成战略合作，含 AI 存储供应、技术研发及股权投资",
     "fact": "美光与 Anthropic 达成战略合作，包含 AI 存储供应、技术研发及股权投资 - IT之家",
@@ -269,8 +282,8 @@
     "missing_fields": []
   },
   {
-    "card_id": "CARD-2021af4da95cfd6d",
-    "event_id": "EV-66338f5fb682617e",
+    "card_id": "CARD-03a6267842bb42b7",
+    "event_id": "EV-69fbe85ca4ac81cd",
     "card_type": "product_service",
     "title": "英伟达发布业界首个全栈物理 AI 安全系统 Halos for Robotics",
     "fact": "业界首个全栈物理 AI 安全系统，英伟达 Halos for Robotics 正式发布 - IT之家",
@@ -290,8 +303,8 @@
     "missing_fields": []
   },
   {
-    "card_id": "CARD-05e8b371b9e1938d",
-    "event_id": "EV-63a344522ee9e8d4",
+    "card_id": "CARD-3cb08dab4baa85e4",
+    "event_id": "EV-2aca9a810ea65555",
     "card_type": "product_service",
     "title": "百川智能联合清华发布医疗增强大模型 Baichuan-M4，登顶 OpenAI 医疗评测",
     "fact": "IT之家 6 月 22 日消息，百川智能与清华大学研究团队今日联合发布 新一代医疗增强大模型 Baichuan-M4 。",
@@ -301,6 +314,7 @@
     "claim_refs": [
       "CL-6b51fd7d11260cbc",
       "CL-f388c2f8e703ff36",
+      "CL-a23f5d8643b674bc",
       "CL-1f4f3f36a016587d"
     ],
     "source_refs": [
@@ -310,8 +324,8 @@
     "missing_fields": []
   },
   {
-    "card_id": "CARD-f2baffd19a369692",
-    "event_id": "EV-4a4869273654c799",
+    "card_id": "CARD-8f63ee695a479d40",
+    "event_id": "EV-538adc98d1da8fda",
     "card_type": "case",
     "title": "三星在韩国及全球DX部门部署ChatGPT Enterprise和Codex",
     "fact": "Samsung rolls out ChatGPT Enterprise and Codex to employees in South Korea",
@@ -320,7 +334,9 @@
     "event_time": "2026-06-22T09:40:29.000Z",
     "claim_refs": [
       "CL-071f20f81aef7c67",
-      "CL-7d736a5c118ac7ef"
+      "CL-7d736a5c118ac7ef",
+      "CL-8430df7ed570f052",
+      "CL-c37288e24f7aa5cb"
     ],
     "source_refs": [
       "SA-847d108bb7988061"
@@ -329,8 +345,8 @@
     "missing_fields": []
   },
   {
-    "card_id": "CARD-0d883d711bb5753b",
-    "event_id": "EV-a8729ea4c04fb077",
+    "card_id": "CARD-2075285d83e49098",
+    "event_id": "EV-03e7df67a4156fd8",
     "card_type": "product_service",
     "title": "让大模型从\"一问一答\"走向\"边看边说\"，京东开源实时视频视觉语言交互模型 JoyAI-VL-Interaction",
     "fact": "让大模型从“一问一答”走向“边看边说”，京东开源实时视频视觉语言交互模型 JoyAI-VL-Interaction - IT之家",
@@ -347,9 +363,7 @@
       "SA-e6314973580a7d63"
     ],
     "conflicts": [],
-    "missing_fields": [
-      "entities"
-    ]
+    "missing_fields": []
   },
   {
     "card_id": "CARD-5507cd06f05012d6",
@@ -363,7 +377,8 @@
     "claim_refs": [
       "CL-3e98038d42ba8599",
       "CL-d915e284056c9e8a",
-      "CL-8ecc3ad988009f10"
+      "CL-b67689191d1fd305",
+      "CL-389bf4a58de39e29"
     ],
     "source_refs": [
       "SA-dba71ba57365a874"
@@ -397,8 +412,8 @@
     ]
   },
   {
-    "card_id": "CARD-da90718662cc571d",
-    "event_id": "EV-df5831ff5762432d",
+    "card_id": "CARD-e672d503747aa7c3",
+    "event_id": "EV-d1a3f5c8045e548d",
     "card_type": "case",
     "title": "谷歌云与诺基亚扩大合作，将 Gemini 模型融入电信网络智能运维平台",
     "fact": "谷歌云与诺基亚扩大合作，将 Gemini 模型融入电信网络智能运维平台 - IT之家",
@@ -428,8 +443,7 @@
     "claim_refs": [
       "CL-bbcf707867f201c2",
       "CL-fc9ca608d16b9e92",
-      "CL-c0453e0ddf222c2c",
-      "CL-44d37b8005d9f2c8"
+      "CL-c0453e0ddf222c2c"
     ],
     "source_refs": [
       "SA-2a6fddf2020cbec2"
@@ -449,8 +463,8 @@
     "claim_refs": [
       "CL-5d0574d041abbde9",
       "CL-3ab03fc9b5a8f408",
-      "CL-4e3ec2293eeb7013",
-      "CL-7ee3cc294f8ea5b1"
+      "CL-7ee3cc294f8ea5b1",
+      "CL-55b225d23b5a6b5d"
     ],
     "source_refs": [
       "SA-6383c672cc89a420"
@@ -480,8 +494,8 @@
     "missing_fields": []
   },
   {
-    "card_id": "CARD-b3f2242046dbdd52",
-    "event_id": "EV-9202647c8ad8f11b",
+    "card_id": "CARD-9fca3fd954644631",
+    "event_id": "EV-cbb1cc90380d57a7",
     "card_type": "product_service",
     "title": "极摩客 EVO-X3 迷你主机发布：锐龙 AI Max+ 395、预装 GMKtec Claw 龙虾 AI，首发 21699 元起",
     "fact": "IT之家 6 月 22 日消息，极摩客今日正式发布了 EVO-X3 迷你主机，搭载锐龙 AI Max+ 395 处理器，128GB LPDDR5X 内存，预装 GMKtec Claw 龙虾 AI， 首发 21699 元起 ：",
@@ -490,9 +504,9 @@
     "event_time": "2026-06-22T10:00:56.000Z",
     "claim_refs": [
       "CL-0993390da9398403",
-      "CL-a4bafacf7d7e205d",
-      "CL-736e9dd880972647",
-      "CL-6961497d9fba82bd"
+      "CL-e73d6dd9fc2b7218",
+      "CL-5290639f977e4b33",
+      "CL-a4bafacf7d7e205d"
     ],
     "source_refs": [
       "SA-4f464cb0fe8377cb"
@@ -510,7 +524,9 @@
     "publication_status": "verified",
     "event_time": "2026-06-22T12:13:20.000Z",
     "claim_refs": [
-      "CL-eae2cec5964f6779"
+      "CL-eae2cec5964f6779",
+      "CL-d1cac0d94682d59d",
+      "CL-35a814ab6cf1ac87"
     ],
     "source_refs": [
       "SA-4dbdfd94a7a74570"

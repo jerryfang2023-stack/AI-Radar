@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-003
 title: "欧盟正式要求 Google 在 Android 上共享搜索数据并开放 AI"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "欧盟正式要求 Google 在 Android 上共享搜索数据并开放 AI"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://arstechnica.com/gadgets/2026/07/its-official-eu-will-force-google-to-share-search-data-and-open-up-ai-on-android"
 canonical_url: "https://arstechnica.com/gadgets/2026/07/its-official-eu-will-force-google-to-share-search-data-and-open-up-ai-on-android"
 source_name: "Ars Technica：AI（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-17T04:40:16.783Z
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 欧盟正式要求 Google 在 Android 上共享搜索数据并开放 AI

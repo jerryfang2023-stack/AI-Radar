@@ -2,7 +2,7 @@
 id: SIG-20260710-A18
 type: signal_card
 signal_type: case
-title: "AlphaEvolve ， 1年后：对科学、技术的影响"
+title: "AlphaEvolve 一年后：对科学和技术的影响"
 date: 2026-07-10
 status: published
 source_title: "AlphaEvolve, 1 year later: Impact on science, technology"
@@ -57,12 +57,12 @@ opportunity_signals:
 signal_owner: "AlphaEvolve"
 
 frontend:
-  displayTitle: "AlphaEvolve ， 1年后：对科学、技术的影响"
+  displayTitle: "AlphaEvolve 一年后：对科学和技术的影响"
   sourceLinks:
     - "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/alphaevolve-updates/"
 ---
 
-# AlphaEvolve ， 1年后：对科学、技术的影响
+# AlphaEvolve 一年后：对科学和技术的影响
 
 ## 新闻事实
 

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Convey closes on $38M round to help com
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_zh: "Convey完成3800万美元融资，用AI队友助企业自动化重复性工作 - SiliconANGLE"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Convey closes on $38M round to help companies automate repetitive work with AI teammates - SiliconANGLE

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"AgentMail raises $6M to build an email 
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "AgentMail 获600万美元融资，为AI代理构建邮件服务"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # AgentMail raises $6M to build an email service for AI agents

@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-015
 title: "Interfaze 开源 diffusion-gemma-asr-small，基于 DiffusionGemma 并行去噪解码器的多语言扩散 ASR 模型"
 title_zh: "Interfaze 开源 diffusion-gemma-asr-small，基于 DiffusionGemma 并行去噪解码器的多语言扩散 ASR 模型"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.marktechpost.com/2026/07/02/interfaze-ships-diffusion-gemma-asr-small-an-open-source-diffusion-asr-model-transcribing-six-languages-via-diffusiongemmas-parallel-denoising-decoder"
 canonical_url: "https://marktechpost.com/2026/07/02/interfaze-ships-diffusion-gemma-asr-small-an-open-source-diffusion-asr-model-transcribing-six-languages-via-diffusiongemmas-parallel-denoising-decoder"
 source_name: "MarkTechPost（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-04T04:50:50.097Z
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Interfaze 开源 diffusion-gemma-asr-small，基于 DiffusionGemma 并行去噪解码器的多语言扩散 ASR 模型

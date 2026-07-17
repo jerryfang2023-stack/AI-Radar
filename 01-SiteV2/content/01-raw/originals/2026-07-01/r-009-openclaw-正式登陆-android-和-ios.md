@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"免费开源 AI 智能体 OpenCl
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "OpenClaw 正式登陆 Android 和 iOS"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # OpenClaw 正式登陆 Android 和 iOS

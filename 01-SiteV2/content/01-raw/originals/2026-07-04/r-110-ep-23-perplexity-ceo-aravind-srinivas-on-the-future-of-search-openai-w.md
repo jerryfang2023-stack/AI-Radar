@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-110
 title: "Ep 23: Perplexity CEO Aravind Srinivas on the future of Search, OpenAI Wrappers and Using AI to Talk to Loved Ones"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "第23集：Perplexity CEO Aravind Srinivas谈搜索的未来、OpenAI封装器及用AI与亲人对话"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://unsupervised-learning.simplecast.com/episodes/ep-23-perplexity-ceo-aravind-srinivas-on-the-future-of-search-openai-wrappers-and-using-ai-to-talk-to-loved-ones-jTkHZhQG"
 canonical_url: "https://unsupervised-learning.simplecast.com/episodes/ep-23-perplexity-ceo-aravind-srinivas-on-the-future-of-search-openai-wrappers-and-using-ai-to-talk-to-loved-ones-jTkHZhQG"
 source_name: "Unsupervised Learning (Redpoint)"
@@ -78,6 +78,7 @@ fact_extraction_completed_at: 2026-07-04T04:35:48.345Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Ep 23: Perplexity CEO Aravind Srinivas on the future of Search, OpenAI Wrappers and Using AI to Talk to Loved Ones

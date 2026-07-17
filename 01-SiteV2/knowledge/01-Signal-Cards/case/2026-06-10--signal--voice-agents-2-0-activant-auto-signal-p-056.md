@@ -2,7 +2,7 @@
 id: SIG-20260610-A10
 type: signal_card
 signal_type: case
-title: "Voice Agents 2.0 — Activant"
+title: "语音代理 2.0 — Activant"
 date: 2026-06-10
 status: published
 source_title: "Voice Agents 2.0 — Activant"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Voice Agents 2.0 — Activant"
 
 frontend:
-  displayTitle: "Voice Agents 2.0 — Activant"
+  displayTitle: "语音代理 2.0 — Activant"
   sourceLinks:
     - "https://activantcapital.com/research/voice-agents-2-0"
 ---
 
-# Voice Agents 2.0 — Activant
+# 语音代理 2.0 — Activant
 
 ## 新闻事实
 

@@ -1,5 +1,12 @@
 [
   {
+    "qa_id": "QA-359d7f46d53e704e",
+    "asset_id": "RAW-be9d78247d8d1bb4",
+    "reason": "no_source_bounded_claim",
+    "status": "review_optional",
+    "source_ref": "SA-68466f414e5908d3"
+  },
+  {
     "qa_id": "QA-9fbae2e3d4a05bde",
     "asset_id": "RAW-51335fc8b1ba221e",
     "reason": "no_source_bounded_event",
@@ -26,6 +33,13 @@
     "reason": "no_source_bounded_event",
     "status": "review_optional",
     "source_ref": "SA-beee9d1ce12746e1"
+  },
+  {
+    "qa_id": "QA-eb9c3c5398be775d",
+    "asset_id": "RAW-cabf4aa58b7e7791",
+    "reason": "no_source_bounded_claim",
+    "status": "review_optional",
+    "source_ref": "SA-eff532ce9fcd07d3"
   },
   {
     "qa_id": "QA-d23fadefa4cbd961",
@@ -70,25 +84,11 @@
     "source_ref": "SA-3ee264719beebc81"
   },
   {
-    "qa_id": "QA-2440e216d9e599b6",
-    "asset_id": "RAW-0d56a989e3758777",
-    "reason": "event_not_ai_relevant",
-    "status": "review_optional",
-    "source_ref": "SA-48d5319f165fc3af"
-  },
-  {
     "qa_id": "QA-c0d8c64b2b091eac",
     "asset_id": "RAW-78ff9e1c79d5a828",
     "reason": "no_source_bounded_event",
     "status": "review_optional",
     "source_ref": "SA-eefdc902c054efaf"
-  },
-  {
-    "qa_id": "QA-deb10f9b242d0e55",
-    "asset_id": "RAW-677a08e4585a97f4",
-    "reason": "no_source_bounded_event",
-    "status": "review_optional",
-    "source_ref": "SA-a56643474da704ec"
   },
   {
     "qa_id": "QA-3282aff423001970",
@@ -119,9 +119,9 @@
     "source_ref": "SA-df240bdb266b8651"
   },
   {
-    "qa_id": "QA-af1a3ff19b7ab97c",
+    "qa_id": "QA-44ba13442e023cf7",
     "asset_id": "RAW-85be239c10f6e0da",
-    "reason": "no_source_bounded_event",
+    "reason": "no_source_bounded_claim",
     "status": "review_optional",
     "source_ref": "SA-773790ae6bb2c9ca"
   },
@@ -219,7 +219,7 @@
   {
     "qa_id": "QA-39754f9a21cda4df",
     "asset_id": "RAW-e99f0f2a86a83de8",
-    "reason": "opinion_without_source_bounded_event",
+    "reason": "rumor_requires_primary_confirmation",
     "status": "review_optional",
     "source_ref": "SA-ca43d56963a4039a"
   },
@@ -329,13 +329,6 @@
     "source_ref": "SA-9fa0359e3516c38f"
   },
   {
-    "qa_id": "QA-6c8c765f0b1f1471",
-    "asset_id": "RAW-7ddb221029a80e87",
-    "reason": "no_source_bounded_event",
-    "status": "review_optional",
-    "source_ref": "SA-05eb5604cec13b8e"
-  },
-  {
     "qa_id": "QA-49a7e2e5b097cd86",
     "asset_id": "RAW-e874b7f0d1bd1da8",
     "reason": "non_event_or_index_title",
@@ -357,11 +350,25 @@
     "source_ref": "SA-e47ed5607c6377eb"
   },
   {
+    "qa_id": "QA-33d420f4a55d482c",
+    "asset_id": "RAW-c4c0fa0fa75fb520",
+    "reason": "rumor_requires_primary_confirmation",
+    "status": "review_optional",
+    "source_ref": "SA-1a6514306feaab14"
+  },
+  {
     "qa_id": "QA-df82b93d8eb904ef",
     "asset_id": "RAW-352f6c446a16272d",
     "reason": "no_source_bounded_event",
     "status": "review_optional",
     "source_ref": "SA-11860101ff29915f"
+  },
+  {
+    "qa_id": "QA-2077bc2576a449b6",
+    "asset_id": "RAW-6e1d42be8cf0eb45",
+    "reason": "no_source_bounded_claim",
+    "status": "review_optional",
+    "source_ref": "SA-086f28f9cbc77662"
   },
   {
     "qa_id": "QA-72e8cc8d52132ec3",
@@ -1225,10 +1232,10 @@
     "source_ref": "SA-836ebf5bf4320f54"
   },
   {
-    "qa_id": "QA-b4b37852cabdcfd4",
-    "asset_id": "EV-a6fa17316d1c97b9",
+    "qa_id": "QA-975de8cf28dffbc6",
+    "asset_id": "EV-57597c92f7b183a9",
     "reason": "public_event_title_incomplete",
     "status": "open",
-    "source_ref": "SA-82a6a74110f7dc75"
+    "source_ref": "SA-ced784ef0108b8ac"
   }
 ]

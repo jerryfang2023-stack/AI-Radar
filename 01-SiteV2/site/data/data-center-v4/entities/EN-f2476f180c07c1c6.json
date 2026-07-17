@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 818,
+    "quarantinedEventCount": 58
+  },
+  "entity": {
+    "id": "EN-f2476f180c07c1c6",
+    "name": "Backed by Mistral AI founders",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-d292329c0ec64c8f"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-industry-automotive_transportation"
+    ],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-06-02",
+    "lastSeen": "2026-06-15",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-d292329c0ec64c8f"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-d292329c0ec64c8f",
+        "dataDate": "2026-06-15",
+        "date": "2026-06-02",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "获Mistral AI创始人支持，NP公司完成600万欧元预种子轮融资，推动工程领域AI发展",
+        "displayTags": [
+          {
+            "dimensionId": "industry",
+            "id": "automotive_transportation",
+            "dimensionName": "行业",
+            "name": "汽车与交通"
+          }
+        ],
+        "entityIds": [
+          "EN-f2476f180c07c1c6",
+          "EN-c04bd5ebd10ab696"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-industry-automotive_transportation",
+      "name": "汽车与交通",
+      "nodeType": "industry",
+      "typeLabel": "行业",
+      "valueId": "automotive_transportation",
+      "eventIds": [
+        "EV-d292329c0ec64c8f",
+        "EV-9dab7fa55702e561",
+        "EV-6a2f3e9a22edff64"
+      ],
+      "entityIds": [
+        "EN-f2476f180c07c1c6",
+        "EN-c04bd5ebd10ab696",
+        "EN-a23572554f6c861e",
+        "EN-8652f6cd9088f1fa",
+        "EN-fb2a436a76aa9fde",
+        "EN-9fbf261b62c1d7c0",
+        "EN-8d4321d936320802",
+        "EN-2f354de778e6a6da",
+        "EN-936f01f91fdadf69"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-06-02",
+      "lastSeen": "2026-07-07"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}

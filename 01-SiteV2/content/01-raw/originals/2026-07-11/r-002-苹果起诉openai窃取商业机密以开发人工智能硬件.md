@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-002
 title: "苹果起诉OpenAI窃取商业机密以开发人工智能硬件"
 title_zh: "苹果起诉OpenAI窃取商业机密以开发人工智能硬件"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://9to5mac.com/2026/07/10/apple-sues-openai-trade-secret-theft"
 canonical_url: "https://9to5mac.com/2026/07/10/apple-sues-openai-trade-secret-theft"
 source_name: "Hacker News 热门（buzzing.cc 中文翻译）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-11T04:06:31.321Z
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 苹果起诉OpenAI窃取商业机密以开发人工智能硬件

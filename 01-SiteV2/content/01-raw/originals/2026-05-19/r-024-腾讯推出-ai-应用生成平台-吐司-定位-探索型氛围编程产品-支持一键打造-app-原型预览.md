@@ -57,6 +57,10 @@ key_excerpts: [{"type":"product_update","text":"腾讯于5月18日推出AI应用
 theme: outside-core-exploration
 keyword_group: outside-core-exploration
 copyright_note: local research archive only
+title_zh: "腾讯推出 AI 应用生成平台\"吐司\"：定位\"探索型氛围编程产品\"、支持一键打造 App 原型预览"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 腾讯推出 AI 应用生成平台"吐司"：定位"探索型氛围编程产品"、支持一键打造 App 原型预览

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"That's why your pricing strategy mu
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "AI定价与变现策略手册 - 贝塞麦风险投资公司"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # The AI pricing and monetization playbook - Bessemer Venture Partners

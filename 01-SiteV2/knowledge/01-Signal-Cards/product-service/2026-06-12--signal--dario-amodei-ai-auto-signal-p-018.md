@@ -2,7 +2,7 @@
 id: SIG-20260612-A09
 type: signal_card
 signal_type: product_service
-title: "Dario Amodei 新文章：AI 时代的冷战剧本 推出 Agent 工作流能力，切入模型部署和算力服务"
+title: "Dario Amodei 新文章：AI 时代的冷战剧本"
 date: 2026-06-12
 status: published
 source_title: "Dario Amodei 新文章：AI 时代的冷战剧本"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Dario Amodei 新文章：AI 时代的冷战剧本"
 
 frontend:
-  displayTitle: "Dario Amodei 新文章：AI 时代的冷战剧本 推出 Agent 工作流能力，切入模型部署和算力服务"
+  displayTitle: "Dario Amodei 新文章：AI 时代的冷战剧本"
   sourceLinks:
     - "https://the-decoder.com/dario-amodeis-new-essay-reads-like-a-cold-war-playbook-for-the-ai-age"
 ---
 
-# Dario Amodei 新文章：AI 时代的冷战剧本 推出 Agent 工作流能力，切入模型部署和算力服务
+# Dario Amodei 新文章：AI 时代的冷战剧本
 
 ## 新闻事实
 

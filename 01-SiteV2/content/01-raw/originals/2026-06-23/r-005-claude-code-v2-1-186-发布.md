@@ -72,6 +72,10 @@ key_excerpts: [{"type":"workflow_change","text":"新增 `claude mcp login/logout
 theme: technical-iteration-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "Claude Code v2.1.186 发布"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Claude Code v2.1.186 发布

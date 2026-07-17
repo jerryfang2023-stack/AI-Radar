@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-035
 title: "Simplexity Robotics Ships 100 i7 Pro Robots to Production Lines at 11 Months Old, Deploys at Leaderdrive and AI Infrastructure Factories | RobotsBeat"
-title_zh: "Simplexity Robotics 成立 11 个月即向生产线交付 100 台 i7 Pro 机器人，并部署于 Leaderdrive 与 AI 基础设施工厂"
-title_translation_status: translated
-title_translation_method: business-rule_title_translation
+title_zh: "Simplexity Robotics 在成立11个月时向生产线交付100台i7 Pro机器人，部署于Leaderdrive及AI基础设施工厂"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://robotsbeat.com/simplexity-robotics-100-robots-i7-pro-leaderdrive-production-deployment/"
 canonical_url: "https://robotsbeat.com/simplexity-robotics-100-robots-i7-pro-leaderdrive-production-deployment"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-13T10:23:56.872Z
 theme: ai-hardware-scenario-service-signal
 keyword_group: ai-hardware-scenario-service-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Simplexity Robotics Ships 100 i7 Pro Robots to Production Lines at 11 Months Old, Deploys at Leaderdrive and AI Infrastructure Factories | RobotsBeat

@@ -2,7 +2,7 @@
 id: SIG-20260601-A10
 type: signal_card
 signal_type: case
-title: "NVIDIA 发布 Cosmos 3，争夺物理 AI 开发链"
+title: "使用NVIDIA Cosmos 3开发物理AI推理、世界与行动模型"
 date: 2026-06-01
 status: published
 asset_level: frontstage
@@ -58,7 +58,7 @@ signal_owner: "NVIDIA"
 watch_reason: "接下来要看汽车、机器人、制造企业是否把 Cosmos 3 放进真实研发流程，以及英伟达能否披露客户、测试指标和部署边界。"
 
 frontend:
-  displayTitle: "NVIDIA 发布 Cosmos 3，争夺物理 AI 开发链"
+  displayTitle: "使用NVIDIA Cosmos 3开发物理AI推理、世界与行动模型"
   eventLine: "NVIDIA 发布 Cosmos 3，用世界模型和动作模型支持机器人、自动驾驶和智能空间的开发。"
   whyWatch: "它把 AI 竞争从聊天框和办公软件推向车辆、机器人、工厂和真实空间。"
   businessMeaning: "企业采购重点会从模型接口扩展到仿真、训练数据、边缘硬件和安全责任。"
@@ -68,7 +68,7 @@ frontend:
     - "https://developer.nvidia.com/blog/develop-physical-ai-reasoning-world-and-action-models-with-nvidia-cosmos-3"
 ---
 
-# NVIDIA 发布 Cosmos 3，争夺物理 AI 开发链
+# 使用NVIDIA Cosmos 3开发物理AI推理、世界与行动模型
 
 ## 信号底稿
 

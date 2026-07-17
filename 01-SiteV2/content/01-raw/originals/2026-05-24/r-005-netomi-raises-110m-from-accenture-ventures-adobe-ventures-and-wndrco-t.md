@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Netomi Raises $110M from Accenture Vent
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Netomi从Accenture Ventures、Adobe Ventures和WndrCo融资1.1亿美元，用于在全球最复杂环境中部署代理型客户体验，打造AI嵌入的数字体验"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Netomi Raises $110M from Accenture Ventures, Adobe Ventures, and WndrCo to Deploy Agentic Customer Experiences in the World's Most Complex Environments and Create the AI-Embedded Digital Experience

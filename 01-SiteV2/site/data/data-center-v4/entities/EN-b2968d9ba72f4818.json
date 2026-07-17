@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-17T18:20:10.588Z",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 727,
-    "quarantinedEventCount": 50
+    "eventCount": 818,
+    "quarantinedEventCount": 58
   },
   "entity": {
     "id": "EN-b2968d9ba72f4818",
@@ -24,7 +24,10 @@
       "EV-631dce4dc135d01b"
     ],
     "viewpointIds": [],
-    "classificationRefs": [],
+    "classificationRefs": [
+      "TX-use_case-content_creation",
+      "TX-technology-speech_audio"
+    ],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-04",
     "lastSeen": "2026-06-04",
@@ -51,7 +54,20 @@
         "status": "completed",
         "statusLabel": "已完成",
         "title": "深陷版权诉讼仍受资本热捧，AI 音乐生成公司 Suno 再融资 4 亿美元",
-        "displayTags": [],
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "id": "content_creation",
+            "dimensionName": "应用场景",
+            "name": "内容创作"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "speech_audio",
+            "name": "语音与音频"
+          }
+        ],
         "entityIds": [
           "EN-b2968d9ba72f4818"
         ]
@@ -61,7 +77,69 @@
   },
   "relatedEntities": [],
   "relationships": [],
-  "taxonomyNodes": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-use_case-content_creation",
+      "name": "内容创作",
+      "nodeType": "use_case",
+      "typeLabel": "应用场景",
+      "valueId": "content_creation",
+      "eventIds": [
+        "EV-1de38866b4b92754",
+        "EV-99e5df844a1bd670",
+        "EV-631dce4dc135d01b"
+      ],
+      "entityIds": [
+        "EN-e93e29634540a290",
+        "EN-bbdefa2950f49882",
+        "EN-3a7bd3e2360a3d29",
+        "EN-e0bab6f6c58bfe4e",
+        "EN-afe83c198e329ef2",
+        "EN-b2968d9ba72f4818"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-06-04",
+      "lastSeen": "2026-07-16"
+    },
+    {
+      "id": "TX-technology-speech_audio",
+      "name": "语音与音频",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "speech_audio",
+      "eventIds": [
+        "EV-99e5df844a1bd670",
+        "EV-dad8c827d14f2799",
+        "EV-2258329f33d413cf",
+        "EV-f68e00bb9fd49fac",
+        "EV-d99037f2ed8db897",
+        "EV-631dce4dc135d01b"
+      ],
+      "entityIds": [
+        "EN-bbdefa2950f49882",
+        "EN-3a7bd3e2360a3d29",
+        "EN-e0bab6f6c58bfe4e",
+        "EN-afe83c198e329ef2",
+        "EN-0aa590cbbdb3835a",
+        "EN-2b78da3dc866654e",
+        "EN-8d4321d936320802",
+        "EN-12ab68e37d104d27",
+        "EN-2b6e51bec93e86c1",
+        "EN-4d09c69c19f5f67b",
+        "EN-085598c00f2aaccf",
+        "EN-a3c3b987b09fc1bb",
+        "EN-2c348893efb2316e",
+        "EN-f77d48bcb475d189",
+        "EN-ed501d3e2d977553",
+        "EN-b2968d9ba72f4818"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-05-25",
+      "lastSeen": "2026-06-17"
+    }
+  ],
   "fde": [],
   "hardware": []
 }

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"小米MiMo团队与TileRT合作发布MiM
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "小米MiMo与TileRT推出MiMo-V2.5-Pro-UltraSpeed，万亿参数模型在8-GPU节点上解码超1000 tokens/s"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 小米MiMo与TileRT推出MiMo-V2.5-Pro-UltraSpeed，万亿参数模型在8-GPU节点上解码超1000 tokens/s

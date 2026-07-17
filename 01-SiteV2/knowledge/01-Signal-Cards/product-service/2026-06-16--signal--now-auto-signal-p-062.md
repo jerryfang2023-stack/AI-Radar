@@ -2,7 +2,7 @@
 id: SIG-20260616-A07
 type: signal_card
 signal_type: product_service
-title: "Now 发布 AI 基础设施能力，切入地产和建筑设计工作流"
+title: "Carmen Li 的计划：为计算资源构建期货市场 | Odd Lots"
 date: 2026-06-16
 status: published
 source_title: "Carmen Li 的计划：为计算资源构建期货市场 | Odd Lots"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Now"
 
 frontend:
-  displayTitle: "Now 发布 AI 基础设施能力，切入地产和建筑设计工作流"
+  displayTitle: "Carmen Li 的计划：为计算资源构建期货市场 | Odd Lots"
   sourceLinks:
     - "https://www.bloomberg.com/news/videos/2026-06-15/carmen-li-s-plan-to-build-a-futures-market-for-compute-video"
 ---
 
-# Now 发布 AI 基础设施能力，切入地产和建筑设计工作流
+# Carmen Li 的计划：为计算资源构建期货市场 | Odd Lots
 
 ## 新闻事实
 

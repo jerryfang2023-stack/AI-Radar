@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-018
 title: "Discovery Evolves to Enable Automated Action - LinkedIn"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "Discovery进化，实现自动化操作——LinkedIn"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.linkedin.com/posts/hlflanagan_when-discovery-starts-taking-action-activity-7475110559768563713-iSNV"
 canonical_url: "https://linkedin.com/posts/hlflanagan_when-discovery-starts-taking-action-activity-7475110559768563713-iSNV"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-05T04:56:15.184Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Discovery Evolves to Enable Automated Action - LinkedIn

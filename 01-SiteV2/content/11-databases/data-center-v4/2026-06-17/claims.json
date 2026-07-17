@@ -252,7 +252,7 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-5ce8f14646a64cf5",
+    "claim_id": "CL-7662823a90569cbd",
     "raw_id": "RAW-1ea84e0bd0507174",
     "claim_type": "product_release",
     "subject": "TPU Developer Hub 正式",
@@ -264,16 +264,16 @@
     },
     "source_span": {
       "raw_id": "RAW-1ea84e0bd0507174",
-      "start": 0,
-      "end": 71
+      "start": 660,
+      "end": 1037
     },
-    "source_quote": "Unlocking the Power of the TPU Stack: Introducing our new Developer Hub",
+    "source_quote": "You can rely on the TPU Hub to provide regular updates to help you find the latest technical content from across Google. Whether you are just beginning your journey or are a seasoned practitioner looking to squeeze every ounce of performance out of your models, the hub provides a growing list of educational resources required to bridge the gap between concept and production.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-7662823a90569cbd",
+    "claim_id": "CL-abb8ad5a4db84f09",
     "raw_id": "RAW-1ea84e0bd0507174",
     "claim_type": "product_release",
     "subject": "TPU Developer Hub 正式",
@@ -285,10 +285,10 @@
     },
     "source_span": {
       "raw_id": "RAW-1ea84e0bd0507174",
-      "start": 660,
-      "end": 1037
+      "start": 1038,
+      "end": 1081
     },
-    "source_quote": "You can rely on the TPU Hub to provide regular updates to help you find the latest technical content from across Google. Whether you are just beginning your journey or are a seasoned practitioner looking to squeeze every ounce of performance out of your models, the hub provides a growing list of educational resources required to bridge the gap between concept and production.",
+    "source_quote": "New Educational Resources: What You’ll Find",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -315,7 +315,7 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-dca0f01153b681c9",
+    "claim_id": "CL-ca554276228d639a",
     "raw_id": "RAW-e577465289fdb4ae",
     "claim_type": "product_release",
     "subject": "Google Cloud",
@@ -324,6 +324,27 @@
     "qualifiers": {
       "event_status": "completed",
       "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-e577465289fdb4ae",
+      "start": 792,
+      "end": 819
+    },
+    "source_quote": "Open Knowledge Format (OKF)",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-dca0f01153b681c9",
+    "raw_id": "RAW-e577465289fdb4ae",
+    "claim_type": "product_release",
+    "subject": "Google Cloud",
+    "predicate": "product_release",
+    "object": "OKF v0.1：供应商中立的 Markdown 规范，为 AI 智能体提供结构化上下文",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
     },
     "source_span": {
       "raw_id": "RAW-e577465289fdb4ae",
@@ -344,7 +365,7 @@
     "object": "OKF v0.1：供应商中立的 Markdown 规范，为 AI 智能体提供结构化上下文",
     "qualifiers": {
       "event_status": "completed",
-      "sequence": 3
+      "sequence": 4
     },
     "source_span": {
       "raw_id": "RAW-e577465289fdb4ae",
@@ -352,27 +373,6 @@
       "end": 1327
     },
     "source_quote": "That is the whole idea. There is no compression scheme, no new runtime, and no required SDK. A bundle of OKF documents is just markdown, just files, and just YAML frontmatter. It renders on GitHub, ships as a tarball, and mounts on any filesystem.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-4d3adddb13a9fdb2",
-    "raw_id": "RAW-e577465289fdb4ae",
-    "claim_type": "product_release",
-    "subject": "Google Cloud",
-    "predicate": "product_release",
-    "object": "OKF v0.1：供应商中立的 Markdown 规范，为 AI 智能体提供结构化上下文",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 4
-    },
-    "source_span": {
-      "raw_id": "RAW-e577465289fdb4ae",
-      "start": 2823,
-      "end": 3011
-    },
-    "source_quote": "An OKF bundle is a directory of markdown files representing concepts — tables, datasets, metrics, playbooks, runbooks, or APIs. Each concept is one file, and the file path is its identity.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -420,7 +420,7 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-96d3d2df912b6167",
+    "claim_id": "CL-b3931415c68f0046",
     "raw_id": "RAW-6ab5690d7d298aa3",
     "claim_type": "funding",
     "subject": "Bland Surpasses $100M Funding With New",
@@ -432,16 +432,16 @@
     },
     "source_span": {
       "raw_id": "RAW-6ab5690d7d298aa3",
-      "start": 2438,
-      "end": 2589
+      "start": 944,
+      "end": 1226
     },
-    "source_quote": "Bland replaces rigid scripts with models that track context across long conversations, adapt in real time, and carry interactions from start to finish.",
+    "source_quote": "While most of the market is built on top of third-party foundation models, Bland develops its own models in-house, purpose-built for voice. These systems are designed to take on long, unpredictable, high-stakes conversations that short calls, scripts, and phone trees cannot handle.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-db121d9b8526db73",
+    "claim_id": "CL-8eb7bb1b2078308c",
     "raw_id": "RAW-6ab5690d7d298aa3",
     "claim_type": "funding",
     "subject": "Bland Surpasses $100M Funding With New",
@@ -453,10 +453,10 @@
     },
     "source_span": {
       "raw_id": "RAW-6ab5690d7d298aa3",
-      "start": 3251,
-      "end": 3439
+      "start": 1227,
+      "end": 1424
     },
-    "source_quote": "With this new funding, Bland will expand its research efforts, grow its engineering team, and continue scaling its platform across industries where conversations are central to operations.",
+    "source_quote": "Today, Bland handles more than 3.5 million calls per week across healthcare, financial services, and other regulated industries where conversations are complex and mistakes carry real consequences.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -483,43 +483,43 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-8dc861067c20a1f9",
-    "raw_id": "RAW-749bc686b94f8853",
-    "claim_type": "model_release",
-    "subject": "Qwen团队",
-    "predicate": "model_release",
-    "object": "套件 Qwen-RobotSuite",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 1
-    },
-    "source_span": {
-      "raw_id": "RAW-749bc686b94f8853",
-      "start": 390,
-      "end": 530
-    },
-    "source_quote": "Home Artificial Intelligence AI Infrastructure Meet Qwen-RobotSuite: Three Embodied AI Models for VLA Manipulation, Video World Modeling,...",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.9,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-0217665e34546b30",
-    "raw_id": "RAW-749bc686b94f8853",
-    "claim_type": "model_release",
-    "subject": "Qwen团队",
-    "predicate": "model_release",
-    "object": "套件 Qwen-RobotSuite",
+    "claim_id": "CL-0048ea0ed4a5e659",
+    "raw_id": "RAW-eafac8f2633e4597",
+    "claim_type": "product_release",
+    "subject": "欧盟委员会",
+    "predicate": "product_release",
+    "object": "《AI内容标注行为守则》",
     "qualifiers": {
       "event_status": "completed",
       "sequence": 2
     },
     "source_span": {
-      "raw_id": "RAW-749bc686b94f8853",
-      "start": 15394,
-      "end": 15499
+      "raw_id": "RAW-eafac8f2633e4597",
+      "start": 737,
+      "end": 1011
     },
-    "source_quote": "Qwen released three embodied AI models: RobotManip, RobotWorld, and RobotNav (grouped as Qwen-RobotSuite)",
+    "source_quote": "The Code itself is optional. The obligations it points to are not. They sit under Article 50 of the EU AI Act, and from August 2, 2026, they apply whether or not a company signs the Commission’s guidance. Signing simply gives a business a recognised way to show it complies.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-5b441ac110766c08",
+    "raw_id": "RAW-eafac8f2633e4597",
+    "claim_type": "product_release",
+    "subject": "欧盟委员会",
+    "predicate": "product_release",
+    "object": "《AI内容标注行为守则》",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-eafac8f2633e4597",
+      "start": 1012,
+      "end": 1064
+    },
+    "source_quote": "What the AI content labelling rules actually require",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -609,6 +609,69 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-33c49f37acf67d1d",
+    "raw_id": "RAW-b6f29e2b151f77ea",
+    "claim_type": "research_result",
+    "subject": "爱沙尼亚语言研究所",
+    "predicate": "research_result",
+    "object": "测试：衡量AI模型对俄罗斯宣传的易感性",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-b6f29e2b151f77ea",
+      "start": 169,
+      "end": 552
+    },
+    "source_quote": "The Institute of the Estonian Language has released a benchmark measuring how susceptible AI language models are to Russian propaganda. Sixty models were tested with 75 questions in three languages covering 14 propaganda narratives, phrased in neutral, biased, and manipulative ways. Each answer is scored on a scale of 1 to 5, where 1 means the model repeats Russian talking points.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-fc57cedb9125ddea",
+    "raw_id": "RAW-b6f29e2b151f77ea",
+    "claim_type": "research_result",
+    "subject": "爱沙尼亚语言研究所",
+    "predicate": "research_result",
+    "object": "测试：衡量AI模型对俄罗斯宣传的易感性",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-b6f29e2b151f77ea",
+      "start": 553,
+      "end": 1040
+    },
+    "source_quote": "A calibrated Claude Opus 4.5 served as the evaluation model, validated by disinformation experts at the organization Propastop . Anthropic's Claude models claimed the top spots, followed by Nvidia's Nemotron 3 and Alibaba's Qwen 3.6 Plus . Mistral's models, including the newest Medium 3.5 , landed in the bottom third. The models had no access to web search or other tools during testing, so the benchmark only measures how well the language model itself can spot and reject propaganda.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a09ddefd89296d7d",
+    "raw_id": "RAW-b6f29e2b151f77ea",
+    "claim_type": "research_result",
+    "subject": "爱沙尼亚语言研究所",
+    "predicate": "research_result",
+    "object": "测试：衡量AI模型对俄罗斯宣传的易感性",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-b6f29e2b151f77ea",
+      "start": 1041,
+      "end": 1237
+    },
+    "source_quote": "Anthropic models dominate the benchmark for detecting Russian disinformation: Claude Fable 5, which is currently disabled outside the U.S., leads with a score of 95.2, followed by Claude Opus 4.7.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-6be20636838bc4ee",
     "raw_id": "RAW-0aadf369d36c6bf0",
     "claim_type": "product_release",
@@ -672,7 +735,7 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-028befc1d492f990",
+    "claim_id": "CL-fcab875ac47ba6c4",
     "raw_id": "RAW-0aadf369d36c6bf0",
     "claim_type": "product_release",
     "subject": "Snap 旗下首款面向普通消费者的 AR 眼镜 Specs",
@@ -684,10 +747,94 @@
     },
     "source_span": {
       "raw_id": "RAW-0aadf369d36c6bf0",
-      "start": 993,
-      "end": 1036
+      "start": 657,
+      "end": 806
     },
-    "source_quote": "初创公司 Camp Snap 推出无屏数码相机：果冻配色、800 万像素、内置多款滤镜",
+    "source_quote": "官方强调，该机无需外接计算单元即可独立运行，其内部搭载了两颗高通骁龙处理器，其中一颗专门负责计算机视觉任务，另一颗则用于运行 Snap AR 界面，设备内置 AI 功能，能够实时监测用户所看到的内容，理解用户当前目标，并实时提供情境化帮助，同时开发者也能创建能够实时响应现实世界的智能 AR 应用。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-034aef43b0b59610",
+    "raw_id": "RAW-e09121215fe41375",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "女子用 AI 生成视频造谣上海地铁塌顶，被警方依法处以行政拘留",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-e09121215fe41375",
+      "start": 508,
+      "end": 614
+    },
+    "source_quote": "6 月 13 日，外省市人员孙某（女，50 岁，非路过女乘客）在网上看到上述墙皮脱落的信息后，为吸引流量，利用 AI 工具生成“上海地铁站内顶部大面积坠落”的虚假视频，发布在其个人微信视频号上，造成恶劣社会影响。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-2545d0653c3f1146",
+    "raw_id": "RAW-e09121215fe41375",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "女子用 AI 生成视频造谣上海地铁塌顶，被警方依法处以行政拘留",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-e09121215fe41375",
+      "start": 615,
+      "end": 651
+    },
+    "source_quote": "目前，轨交警方已在外省市公安机关协作下抓获孙某，并对其依法处以行政拘留。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a95f180944e0278c",
+    "raw_id": "RAW-e09121215fe41375",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "女子用 AI 生成视频造谣上海地铁塌顶，被警方依法处以行政拘留",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-e09121215fe41375",
+      "start": 652,
+      "end": 692
+    },
+    "source_quote": "IT之家提醒：当前，利用 AI 生成虚假图文、音视频已成为网络谣言传播的新趋势。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-70d880c62d7fabe5",
+    "raw_id": "RAW-e09121215fe41375",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "女子用 AI 生成视频造谣上海地铁塌顶，被警方依法处以行政拘留",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-e09121215fe41375",
+      "start": 0,
+      "end": 38
+    },
+    "source_quote": "女子用 AI 生成视频造谣上海地铁塌顶，被警方依法处以行政拘留 - IT之家",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -861,85 +1008,85 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-def9d7b0f0ce9df7",
-    "raw_id": "RAW-b0c8529773d492f7",
-    "claim_type": "model_release",
-    "subject": "XREAL",
-    "predicate": "model_release",
-    "object": "在三星推出首款搭载 Android XR 系统的眼镜之前，各大品牌都希望抢先布局、抢占市场先机，XREAL 便是其中一员。",
+    "claim_id": "CL-524ffc470ce7246d",
+    "raw_id": "RAW-a8919b1002112361",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "谷歌推送 Android 17 正式版，深度集成 AI 功能",
     "qualifiers": {
-      "event_status": "completed",
+      "event_status": "announced",
       "sequence": 1
     },
     "source_span": {
-      "raw_id": "RAW-b0c8529773d492f7",
-      "start": 149,
-      "end": 210
+      "raw_id": "RAW-a8919b1002112361",
+      "start": 382,
+      "end": 526
     },
-    "source_quote": "在三星推出首款搭载 Android XR 系统的眼镜之前，各大品牌都希望抢先布局、抢占市场先机，XREAL 便是其中一员。",
+    "source_quote": "本次新版系统将率先搭载于谷歌自家 Pixel 系列设备，同步上线 Pixel 专属功能更新包，新增多项 AI 相关功能，包括对最新人工智能模型的支持，如音乐生成模型 Lyria 3、多模态大模型 Gemini Omni，以及搭载 AudioLM、适配 Pixel 10a 的语音翻译工具。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.9,
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-868982cd8bc6242d",
-    "raw_id": "RAW-b0c8529773d492f7",
-    "claim_type": "model_release",
-    "subject": "XREAL",
-    "predicate": "model_release",
-    "object": "在此后的数月里，谷歌与 XREAL 陆续放出多款“Project Aura”眼镜的实拍片段，却始终未公布核心参数。",
+    "claim_id": "CL-a11cf53e9ae277c1",
+    "raw_id": "RAW-a8919b1002112361",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "谷歌推送 Android 17 正式版，深度集成 AI 功能",
     "qualifiers": {
-      "event_status": "completed",
+      "event_status": "announced",
       "sequence": 2
     },
     "source_span": {
-      "raw_id": "RAW-b0c8529773d492f7",
-      "start": 342,
-      "end": 399
+      "raw_id": "RAW-a8919b1002112361",
+      "start": 527,
+      "end": 576
     },
-    "source_quote": "在此后的数月里，谷歌与 XREAL 陆续放出多款“Project Aura”眼镜的实拍片段，却始终未公布核心参数。",
+    "source_quote": "此次重磅功能更新，凸显谷歌依托 安卓 系统与 Pixel 硬件展示自研前沿 AI 技术的产品战略。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-8b898f85f0916623",
-    "raw_id": "RAW-b0c8529773d492f7",
-    "claim_type": "model_release",
-    "subject": "XREAL",
-    "predicate": "model_release",
-    "object": "2026 年增强现实世界博览会（AWE）现场，Snap 也展出了售价高达 2000 美元（IT之家注：现汇率约合 13544 元人民币）、价格令人咋舌的智能眼镜，而 XREAL 则正式发布旗下 Aura 眼镜。",
+    "claim_id": "CL-2d3d4cf25f483fee",
+    "raw_id": "RAW-a8919b1002112361",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "谷歌推送 Android 17 正式版，深度集成 AI 功能",
     "qualifiers": {
-      "event_status": "completed",
+      "event_status": "announced",
       "sequence": 3
     },
     "source_span": {
-      "raw_id": "RAW-b0c8529773d492f7",
-      "start": 456,
-      "end": 561
+      "raw_id": "RAW-a8919b1002112361",
+      "start": 576,
+      "end": 695
     },
-    "source_quote": "2026 年增强现实世界博览会（AWE）现场，Snap 也展出了售价高达 2000 美元（IT之家注：现汇率约合 13544 元人民币）、价格令人咋舌的智能眼镜，而 XREAL 则正式发布旗下 Aura 眼镜。",
+    "source_quote": "竞争对手苹果计划在 9 月正式推出 Siri 与 iOS 27 的 AI 升级功能，致力于在人工智能领域迎头赶上；而 Android 17 则主打全新一代 AI 模型，将 Gemini 大模型深度融入内容创作、即时沟通与各类设备使用场景。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-636725312164524d",
-    "raw_id": "RAW-b0c8529773d492f7",
-    "claim_type": "model_release",
-    "subject": "XREAL",
-    "predicate": "model_release",
-    "object": "该设备搭载谷歌 Android XR 系统，并基于大模型 Gemini 打造；核心算力由高通全新发布的骁龙 Reality Elite 平台提供，性能大幅提升，支持本地人工智能运算。",
+    "claim_id": "CL-9ca1813b0e901145",
+    "raw_id": "RAW-a8919b1002112361",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "谷歌推送 Android 17 正式版，深度集成 AI 功能",
     "qualifiers": {
-      "event_status": "completed",
+      "event_status": "announced",
       "sequence": 4
     },
     "source_span": {
-      "raw_id": "RAW-b0c8529773d492f7",
-      "start": 561,
-      "end": 652
+      "raw_id": "RAW-a8919b1002112361",
+      "start": 0,
+      "end": 37
     },
-    "source_quote": "该设备搭载谷歌 Android XR 系统，并基于大模型 Gemini 打造；核心算力由高通全新发布的骁龙 Reality Elite 平台提供，性能大幅提升，支持本地人工智能运算。",
+    "source_quote": "谷歌推送 Android 17 正式版，深度集成 AI 功能 - IT之家",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -1050,7 +1197,7 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-37bb9b7ce057bacb",
+    "claim_id": "CL-ee968ec26fbadd33",
     "raw_id": "RAW-47d572a88f4a8467",
     "claim_type": "model_release",
     "subject": "OpenRouter",
@@ -1062,16 +1209,16 @@
     },
     "source_span": {
       "raw_id": "RAW-47d572a88f4a8467",
-      "start": 302,
-      "end": 328
+      "start": 122,
+      "end": 182
     },
-    "source_quote": "Fusion Fable 5 + GPT-5.5**",
+    "source_quote": "IT之家注，Fusion 是个多模型协同系统服务，会把用户输入同时发给多个模型，再汇总分析各模型结果，最后生成统一回答。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-16760d467a5bf879",
+    "claim_id": "CL-73f4cfe9ec18e00c",
     "raw_id": "RAW-47d572a88f4a8467",
     "claim_type": "model_release",
     "subject": "OpenRouter",
@@ -1083,16 +1230,16 @@
     },
     "source_span": {
       "raw_id": "RAW-47d572a88f4a8467",
-      "start": 545,
-      "end": 570
+      "start": 183,
+      "end": 292
     },
-    "source_quote": "Solo Claude Fable 5 65.3%",
+    "source_quote": "官方测试组合包括 Claude Opus 4.8 与 GPT-5.5、双 Claude Opus 4.8 等“双强”组合，以及 Claude Opus 4.8、GPT-5.5、Gemini 3.1 Pro“三强”组合。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-3410008b34a3fe7b",
+    "claim_id": "CL-37bb9b7ce057bacb",
     "raw_id": "RAW-47d572a88f4a8467",
     "claim_type": "model_release",
     "subject": "OpenRouter",
@@ -1104,10 +1251,10 @@
     },
     "source_span": {
       "raw_id": "RAW-47d572a88f4a8467",
-      "start": 799,
-      "end": 837
+      "start": 302,
+      "end": 328
     },
-    "source_quote": "根据 OpenRouter 公开说明，Fusion 的工作链路分为 3 步：",
+    "source_quote": "Fusion Fable 5 + GPT-5.5**",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -1218,6 +1365,48 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-2062db918376171e",
+    "raw_id": "RAW-67a47bb7cb8e288c",
+    "claim_type": "research_result",
+    "subject": "1.6 万创作者洞察：Adobe",
+    "predicate": "research_result",
+    "object": "本次报告调查覆盖澳大利亚、法国、德国、印度、日本、韩国、英国和美国 8 个国家，样本超过 16000 名创作者。",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-67a47bb7cb8e288c",
+      "start": 122,
+      "end": 178
+    },
+    "source_quote": "本次报告调查覆盖澳大利亚、法国、德国、印度、日本、韩国、英国和美国 8 个国家，样本超过 16000 名创作者。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-8bc71896d589c612",
+    "raw_id": "RAW-67a47bb7cb8e288c",
+    "claim_type": "research_result",
+    "subject": "1.6 万创作者洞察：Adobe",
+    "predicate": "research_result",
+    "object": "大量创作者表示，创意 AI 工具能明显缩短创作时间，并提升业务增长与受众扩张速度。",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-67a47bb7cb8e288c",
+      "start": 179,
+      "end": 220
+    },
+    "source_quote": "大量创作者表示，创意 AI 工具能明显缩短创作时间，并提升业务增长与受众扩张速度。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-3b5bf1521ba5e79e",
     "raw_id": "RAW-4c3205eb9bb590cf",
     "claim_type": "deployment",
@@ -1236,6 +1425,111 @@
     "source_quote": "IT之家 6 月 16 日消息，据财联社独家获悉，微信支付正联合腾讯智能体产品 WorkBuddy 测试 AI 支付功能， 计划在微信钱包中上线“AI 专属卡” ，最快将于本周内上线。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-5aaa003d2e529efa",
+    "raw_id": "RAW-4c3205eb9bb590cf",
+    "claim_type": "deployment",
+    "subject": "微信正测试 AI 支付功能，\"AI 专属卡\"最快本周内",
+    "predicate": "deployment",
+    "object": "就在昨天（15 日），微信支付 AI 接入工具箱迎来 2.0 版本，围绕“安全、高效、原生流畅”的方向， 重点更新了五大内容 。",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-4c3205eb9bb590cf",
+      "start": 112,
+      "end": 176
+    },
+    "source_quote": "就在昨天（15 日），微信支付 AI 接入工具箱迎来 2.0 版本，围绕“安全、高效、原生流畅”的方向， 重点更新了五大内容 。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-dd43f7f9018f1a19",
+    "raw_id": "RAW-4c3205eb9bb590cf",
+    "claim_type": "deployment",
+    "subject": "微信正测试 AI 支付功能，\"AI 专属卡\"最快本周内",
+    "predicate": "deployment",
+    "object": "工具箱 1.0 的 Skill 仅覆盖“支付”和“券”两大方向，2.0 版本升级为全线覆盖 —— 囊括微信支付所有产品的知识 ，同时还提供两大 AI 专家能力：",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-4c3205eb9bb590cf",
+      "start": 176,
+      "end": 256
+    },
+    "source_quote": "工具箱 1.0 的 Skill 仅覆盖“支付”和“券”两大方向，2.0 版本升级为全线覆盖 —— 囊括微信支付所有产品的知识 ，同时还提供两大 AI 专家能力：",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-11ac1171efcd7656",
+    "raw_id": "RAW-6f0aa6aac626d898",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "雷鸟 V3 AI 拍摄眼镜京东国补后 499 元（原价 1799 元）",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-6f0aa6aac626d898",
+      "start": 0,
+      "end": 47
+    },
+    "source_quote": "雷鸟 V3 AI 拍摄眼镜发布于 2025 年 1 月 7 日，标准版官方定价 1799 元。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-0f1dfe362ae5b3a3",
+    "raw_id": "RAW-6f0aa6aac626d898",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "雷鸟 V3 AI 拍摄眼镜京东国补后 499 元（原价 1799 元）",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-6f0aa6aac626d898",
+      "start": 48,
+      "end": 68
+    },
+    "source_quote": "今日京东国补后仅需 499 元，手慢无：",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-3c67d397d410b44c",
+    "raw_id": "RAW-6f0aa6aac626d898",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "雷鸟 V3 AI 拍摄眼镜京东国补后 499 元（原价 1799 元）",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-6f0aa6aac626d898",
+      "start": 69,
+      "end": 147
+    },
+    "source_quote": "京东 雷鸟 V3 AI 拍摄眼镜 需领政府补贴 国补后 499 元 直达链接 支持 +1 元配近视镜，但选择配镜后就不支持加购充电盒了哦： 点此领配镜券 。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
     "verification_status": "accepted"
   },
   {
@@ -1297,6 +1591,27 @@
       "end": 192
     },
     "source_quote": "IT之家从腾讯官方了解到，湾擎 ·WorkBuddy 基于腾讯自研 AI 办公智能体 WorkBuddy 打造， 专为政务场景定制 。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-59804993ed5e8778",
+    "raw_id": "RAW-563ddd6dd60c0d7d",
+    "claim_type": "deployment",
+    "subject": "腾讯张军：智能体 WorkBuddy 将入职政务系统，全国首个省级政务智能中枢「湾擎」",
+    "predicate": "deployment",
+    "object": "试运行",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-563ddd6dd60c0d7d",
+      "start": 192,
+      "end": 222
+    },
+    "source_quote": "湾擎 ·WorkBuddy 将覆盖政务办公日常六大高频场景：",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"

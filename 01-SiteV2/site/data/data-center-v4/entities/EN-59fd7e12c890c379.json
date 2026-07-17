@@ -1,0 +1,121 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 818,
+    "quarantinedEventCount": 58
+  },
+  "entity": {
+    "id": "EN-59fd7e12c890c379",
+    "name": "Launch FuriosaAI-Powered AI",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-6ebcbb2660ec7ad9"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [
+      "EN-c13e2f4a44bb01ed"
+    ],
+    "firstSeen": "2026-07-15",
+    "lastSeen": "2026-07-15",
+    "relationIds": [
+      "REL2-9f1579a1de782854"
+    ],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-6ebcbb2660ec7ad9"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-6ebcbb2660ec7ad9",
+        "dataDate": "2026-07-15",
+        "date": "2026-07-15",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "三星SDS将于7月16日推出基于FuriosaAI的AI服务",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c13e2f4a44bb01ed",
+          "EN-f4bec299df3f4f27",
+          "EN-464631bd17a23159",
+          "EN-73c5a6485d01d20c",
+          "EN-59fd7e12c890c379"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [
+    {
+      "id": "EN-c13e2f4a44bb01ed",
+      "name": "Samsung SDS",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-8fcb52bb6ec980af",
+        "EV-6ebcbb2660ec7ad9"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution"
+      ],
+      "relatedEntityIds": [
+        "EN-73c5a6485d01d20c",
+        "EN-59fd7e12c890c379",
+        "EN-464631bd17a23159"
+      ],
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-07-15"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-9f1579a1de782854",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-c13e2f4a44bb01ed",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-59fd7e12c890c379",
+      "object_type": "entity",
+      "event_id": "EV-6ebcbb2660ec7ad9",
+      "claim_refs": [
+        "CL-f4aef3f955fb2648"
+      ],
+      "source_refs": [
+        "SA-d0f24e921d121a4d"
+      ],
+      "data_date": "2026-07-15",
+      "status": "verified"
+    }
+  ],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

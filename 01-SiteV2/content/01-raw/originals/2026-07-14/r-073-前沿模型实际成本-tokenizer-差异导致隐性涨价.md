@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-073
 title: "前沿模型实际成本：tokenizer 差异导致隐性涨价"
 title_zh: "前沿模型实际成本：tokenizer 差异导致隐性涨价"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://playcode.io/blog/real-price-of-frontier-models"
 canonical_url: "https://playcode.io/blog/real-price-of-frontier-models"
 source_name: "Hacker News 热门（buzzing.cc 中文翻译）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-14T01:56:51.747Z
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 前沿模型实际成本：tokenizer 差异导致隐性涨价

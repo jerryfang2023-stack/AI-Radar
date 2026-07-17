@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-014
 title: "Meta removes controversial AI feature on Instagram after backlash"
 title_zh: "Meta 在用户反弹后下线 Instagram 争议 AI 图片生成功能"
-title_translation_status: translated
-title_translation_method: business-rule_title_translation
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://techcrunch.com/2026/07/10/meta-removes-controversial-ai-feature-on-instagram-after-backlash"
 canonical_url: "https://techcrunch.com/2026/07/10/meta-removes-controversial-ai-feature-on-instagram-after-backlash"
 source_name: "TechCrunch AI"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-13T10:23:56.728Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Meta removes controversial AI feature on Instagram after backlash

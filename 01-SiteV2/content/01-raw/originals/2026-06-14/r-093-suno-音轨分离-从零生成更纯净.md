@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"重大更新：Suno 的音轨分
 theme: outside-core-exploration
 keyword_group: outside-core-exploration
 copyright_note: local research archive only
+title_zh: "Suno 音轨分离：从零生成更纯净"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Suno 音轨分离：从零生成更纯净

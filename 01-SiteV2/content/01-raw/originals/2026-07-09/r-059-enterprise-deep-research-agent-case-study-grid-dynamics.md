@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-059
 title: "Enterprise Deep Research Agent Case Study | Grid Dynamics"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "企业深度研究代理案例研究 | Grid Dynamics"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.griddynamics.com/blog/enterprise-deep-research-agent-case-study"
 canonical_url: "https://griddynamics.com/blog/enterprise-deep-research-agent-case-study"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-09T03:05:45.136Z
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Enterprise Deep Research Agent Case Study | Grid Dynamics

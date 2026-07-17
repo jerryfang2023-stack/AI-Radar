@@ -2,7 +2,7 @@
 id: SIG-20260621-A19
 type: signal_card
 signal_type: product_service
-title: "State of Code Evals] After SWE-bench, Code Clash &amp; SOTA Coding Benchmarks recap — John Yang"
+title: "[代码评估现状] SWE-bench之后，Code Clash与SOTA编码基准回顾——John Yang"
 date: 2026-06-21
 status: published
 source_title: "State of Code Evals] After SWE-bench, Code Clash &amp; SOTA Coding Benchmarks recap — John Yang"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Latent"
 
 frontend:
-  displayTitle: "State of Code Evals] After SWE-bench, Code Clash &amp; SOTA Coding Benchmarks recap — John Yang"
+  displayTitle: "[代码评估现状] SWE-bench之后，Code Clash与SOTA编码基准回顾——John Yang"
   sourceLinks:
     - "https://www.latent.space/p/state-of-code-evals-after-swe-bench"
 ---
 
-# State of Code Evals] After SWE-bench, Code Clash &amp; SOTA Coding Benchmarks recap — John Yang
+# [代码评估现状] SWE-bench之后，Code Clash与SOTA编码基准回顾——John Yang
 
 ## 新闻事实
 

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"company_action","text":"Gemini Flash 3.5, Mythos, open-c
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_zh: "关于下一步的一些想法，2026年5月"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Some ideas for what comes next, May 2026

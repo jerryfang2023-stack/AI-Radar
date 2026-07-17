@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"Anthropic 面向 Enterprise 和 
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Anthropic 在 Slack 中推出 Claude Tag 功能，通过 @Claude 调用 AI 智能体"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Anthropic 在 Slack 中推出 Claude Tag 功能，通过 @Claude 调用 AI 智能体

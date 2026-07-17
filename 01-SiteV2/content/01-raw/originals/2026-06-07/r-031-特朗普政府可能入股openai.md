@@ -72,6 +72,10 @@ key_excerpts: [{"type":"opinion","text":"美国总统特朗普表示正在商讨
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "特朗普政府可能入股OpenAI"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 特朗普政府可能入股OpenAI

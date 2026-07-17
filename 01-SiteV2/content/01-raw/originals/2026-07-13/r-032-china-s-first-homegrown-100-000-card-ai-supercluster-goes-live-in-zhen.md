@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-032
 title: "China's first homegrown 100,000-card AI supercluster goes live in Zhengzhou - Chinadaily.com.cn"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "中国首个国产10万卡AI超算集群在郑州上线"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.chinadaily.com.cn/a/202607/10/WS6a508b1da310986e2b4649a7.html"
 canonical_url: "https://chinadaily.com.cn/a/202607/10/WS6a508b1da310986e2b4649a7.html"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-13T10:23:56.848Z
 theme: ai-hardware-scenario-service-signal
 keyword_group: ai-hardware-scenario-service-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # China's first homegrown 100,000-card AI supercluster goes live in Zhengzhou - Chinadaily.com.cn

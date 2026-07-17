@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"Nous Research 为开源个人代
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "Hermes Agent 新增异步子代理，委托工作不再阻塞父聊天"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Hermes Agent 新增异步子代理，委托工作不再阻塞父聊天

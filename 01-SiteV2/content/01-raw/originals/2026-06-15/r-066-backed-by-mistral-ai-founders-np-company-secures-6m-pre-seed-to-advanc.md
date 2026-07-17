@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Backed by Mistral AI founders, NP Compa
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "获Mistral AI创始人支持，NP公司完成600万欧元预种子轮融资，推动工程领域AI发展"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Backed by Mistral AI founders, NP Company secures €6M pre-seed to advance AI for engineering - Tech.eu

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Amazon CEO reportedly raised Anthropic 
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "据报道，亚马逊CEO在政府打击前曾对Anthropic模型表示担忧"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Amazon CEO reportedly raised Anthropic model concerns before government crackdown

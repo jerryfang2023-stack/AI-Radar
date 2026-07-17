@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-039
 title: "Reelful 利用 AI 将相册内容自动剪辑成短视频"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "Reelful 利用 AI 将相册内容自动剪辑成短视频"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://techcrunch.com/2026/07/15/reelfuls-ai-turns-your-camera-roll-into-short-form-videos-for-social-media"
 canonical_url: "https://techcrunch.com/2026/07/15/reelfuls-ai-turns-your-camera-roll-into-short-form-videos-for-social-media"
 source_name: "TechCrunch：AI（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-16T02:39:33.663Z
 theme: outside-core-exploration
 keyword_group: outside-core-exploration
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Reelful 利用 AI 将相册内容自动剪辑成短视频

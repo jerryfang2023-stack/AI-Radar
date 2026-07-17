@@ -2,7 +2,7 @@
 id: SIG-20260715-A22
 type: signal_card
 signal_type: funding
-title: "design startup TYLsemi 获得 4300 万美元融资"
+title: "定制AI芯片设计初创公司TYLsemi获4300万美元早期融资 - SiliconANGLE"
 date: 2026-07-15
 status: published
 source_title: "Custom AI chip design startup TYLsemi launches with $43M in early-stage funding - SiliconANGLE"
@@ -58,12 +58,12 @@ opportunity_signals:
 signal_owner: "design startup TYLsemi"
 
 frontend:
-  displayTitle: "design startup TYLsemi 获得 4300 万美元融资"
+  displayTitle: "定制AI芯片设计初创公司TYLsemi获4300万美元早期融资 - SiliconANGLE"
   sourceLinks:
     - "https://siliconangle.com/2026/07/14/custom-ai-chip-design-startup-tylsemi-launches-43m-early-stage-funding/"
 ---
 
-# design startup TYLsemi 获得 4300 万美元融资
+# 定制AI芯片设计初创公司TYLsemi获4300万美元早期融资 - SiliconANGLE
 
 ## 新闻事实
 

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"To catalyze adoption, the company has la
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_zh: "SAP发布自主企业愿景 | SAP Sapphire - SAP新闻"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # SAP Unveils the Autonomous Enterprise | SAP Sapphire - SAP News

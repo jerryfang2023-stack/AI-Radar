@@ -2,7 +2,7 @@
 id: SIG-20260706-A10
 type: signal_card
 signal_type: case
-title: "Salesforce 与 AWS Marketplace 推进企业智能体采购路径"
+title: "面向代理型企业的采购策略：Salesforce 在..."
 date: 2026-07-06
 status: published
 source_title: "Procurement Strategy For The Agentic Enterprise: Salesforce In ..."
@@ -55,12 +55,12 @@ opportunity_signals:
 signal_owner: "Deel"
 
 frontend:
-  displayTitle: "Salesforce 与 AWS Marketplace 推进企业智能体采购路径"
+  displayTitle: "面向代理型企业的采购策略：Salesforce 在..."
   sourceLinks:
     - "https://tei.forrester.com/go/salesforce/procurementawsmarketplacespotlight/"
 ---
 
-# Salesforce 与 AWS Marketplace 推进企业智能体采购路径
+# 面向代理型企业的采购策略：Salesforce 在...
 
 ## 新闻事实
 

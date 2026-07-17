@@ -2,7 +2,7 @@
 id: SIG-20260708-A10
 type: signal_card
 signal_type: case
-title: "Eliza 为 500 亿美元 CPG 企业部署内部自动化 Agents"
+title: "全球内部自动化代理助力一家500亿美元消费品巨头 - Eliza"
 date: 2026-07-08
 status: published
 source_title: "Global Internal Automation Agents for a $50BN CPG - Eliza"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "Eliza"
 
 frontend:
-  displayTitle: "Eliza 为 500 亿美元 CPG 企业部署内部自动化 Agents"
+  displayTitle: "全球内部自动化代理助力一家500亿美元消费品巨头 - Eliza"
   sourceLinks:
     - "https://eliza.com/case-studies/global-internal-automation-agents-for-a-50bn-cpg"
 ---
 
-# Eliza 为 500 亿美元 CPG 企业部署内部自动化 Agents
+# 全球内部自动化代理助力一家500亿美元消费品巨头 - Eliza
 
 ## 新闻事实
 

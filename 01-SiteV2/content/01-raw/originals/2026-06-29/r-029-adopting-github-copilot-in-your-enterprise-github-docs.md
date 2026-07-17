@@ -72,6 +72,10 @@ key_excerpts: [{"type":"supporting_context","text":"# Adopting GitHub Copilot in
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "在企业中采用GitHub Copilot - GitHub文档"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Adopting GitHub Copilot in your enterprise - GitHub Docs

@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-026
 title: "From Pilot to 6,000 Users: How to Scale Enterprise AI Agents"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "从试点到6000用户：如何扩展企业级AI智能体"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.snowflake.com/en/blog/scale-enterprise-agents/"
 canonical_url: "https://snowflake.com/en/blog/scale-enterprise-agents"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-05T04:56:15.246Z
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # From Pilot to 6,000 Users: How to Scale Enterprise AI Agents

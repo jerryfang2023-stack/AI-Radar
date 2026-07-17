@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-086
 title: "AI law startup Norm raises $120M, hits unicorn valuation | TechCrunch"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "AI法律初创公司Norm融资1.2亿美元，估值达独角兽级别 | TechCrunch"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://techcrunch.com/2026/07/07/ai-law-startup-norm-raises-120m-hits-unicorn-valuation/"
 canonical_url: "https://techcrunch.com/2026/07/07/ai-law-startup-norm-raises-120m-hits-unicorn-valuation"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-08T04:39:26.106Z
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # AI law startup Norm raises $120M, hits unicorn valuation | TechCrunch

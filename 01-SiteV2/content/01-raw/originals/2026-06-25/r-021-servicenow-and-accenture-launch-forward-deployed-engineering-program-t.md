@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"# **ServiceNow and Accenture Launch
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_zh: "ServiceNow与埃森哲推出前沿部署工程计划，助力企业规模化部署Agentic AI"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # ServiceNow and Accenture Launch Forward Deployed Engineering Program to Scale Agentic AI Across the Enterprise

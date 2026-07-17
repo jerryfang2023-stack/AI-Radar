@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"Anthropic 的 Claude Fable 5 在 Frontie
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Claude Fable 5 在 FrontierMath 最难题目上超越 GPT-5.5 13 个百分点"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Claude Fable 5 在 FrontierMath 最难题目上超越 GPT-5.5 13 个百分点

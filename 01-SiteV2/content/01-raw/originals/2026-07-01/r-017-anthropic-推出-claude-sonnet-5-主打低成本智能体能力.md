@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"Anthropic 发布 Claude Sonnet 5，这�
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Anthropic 推出 Claude Sonnet 5，主打低成本智能体能力"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Anthropic 推出 Claude Sonnet 5，主打低成本智能体能力

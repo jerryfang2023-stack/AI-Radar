@@ -2,7 +2,7 @@
 id: SIG-20260627-A18
 type: signal_card
 signal_type: product_service
-title: "Based on a new open-source index from the AI-Driven Enterprise ..."
+title: "基于AI驱动企业新发布的开源指数..."
 date: 2026-06-27
 status: published
 source_title: "Based on a new open-source index from the AI-Driven Enterprise ..."
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Based on a new open"
 
 frontend:
-  displayTitle: "Based on a new open-source index from the AI-Driven Enterprise ..."
+  displayTitle: "基于AI驱动企业新发布的开源指数..."
   sourceLinks:
     - "https://www.instagram.com/p/DZDoXwpEzN2/"
 ---
 
-# Based on a new open-source index from the AI-Driven Enterprise ...
+# 基于AI驱动企业新发布的开源指数...
 
 ## 新闻事实
 

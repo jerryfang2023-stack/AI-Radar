@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-013
 title: "Transformer Chip Startup Etched Exits Stealth: $800M Raised, $1B in Contracts"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "变压器芯片初创公司Etched结束隐身模式：融资8亿美元，合同金额10亿美元"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.techtimes.com/articles/319393/20260630/transformer-chip-startup-etched-exits-stealth-800m-raised-1b-contracts.htm"
 canonical_url: "https://techtimes.com/articles/319393/20260630/transformer-chip-startup-etched-exits-stealth-800m-raised-1b-contracts.htm"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-14T01:56:51.326Z
 theme: ai-hardware-investment-signal
 keyword_group: ai-hardware-investment-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Transformer Chip Startup Etched Exits Stealth: $800M Raised, $1B in Contracts

@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-026
 title: "PwC is deploying Claude to build technology, execute deals, and reinvent enterprise functions for clients \\ Anthropic"
-title_zh: "PwC 部署 Claude，为客户构建技术、执行交易并重塑企业职能"
-title_translation_status: translated
-title_translation_method: manual_reviewed_source_title_translation
+title_zh: "PwC部署Claude为客户构建技术、执行交易并重塑企业职能 \\ Anthropic"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.anthropic.com/news/pwc-expanded-partnership?939688b5_page=1"
 canonical_url: "https://anthropic.com/news/pwc-expanded-partnership?939688b5_page=1"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-17T04:40:16.949Z
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # PwC is deploying Claude to build technology, execute deals, and reinvent enterprise functions for clients \ Anthropic

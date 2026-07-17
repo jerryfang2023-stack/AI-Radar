@@ -2,7 +2,7 @@
 id: SIG-20260618-A10
 type: signal_card
 signal_type: funding
-title: "INXM 获得€5.7 M 融资，押注企业 Agent 协作平台"
+title: "INXM 获570万欧元种子轮融资，弥合企业AI演示与实际运营部署之间的差距"
 date: 2026-06-18
 status: published
 source_title: "INXM Raises €5.7 Million Pre-Seed To Bridge The Gap Between Enterprise AI Demos And Real Operational Deployment"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "INXM"
 
 frontend:
-  displayTitle: "INXM 获得€5.7 M 融资，押注企业 Agent 协作平台"
+  displayTitle: "INXM 获570万欧元种子轮融资，弥合企业AI演示与实际运营部署之间的差距"
   sourceLinks:
     - "https://pulse2.com/inxm-raises-e5-7-million-pre-seed-to-bridge-the-gap-between-enterprise-ai-demos-and-real-operational-deployment/"
 ---
 
-# INXM 获得€5.7 M 融资，押注企业 Agent 协作平台
+# INXM 获570万欧元种子轮融资，弥合企业AI演示与实际运营部署之间的差距
 
 ## 新闻事实
 

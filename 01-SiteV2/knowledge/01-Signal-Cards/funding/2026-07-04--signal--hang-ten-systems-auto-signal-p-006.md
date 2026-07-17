@@ -2,7 +2,7 @@
 id: SIG-20260704-A01
 type: signal_card
 signal_type: funding
-title: "Hang Ten Systems 获得 $32M 融资"
+title: "Hang Ten Systems 获 3200 万美元融资，助力企业成功应用 AI"
 date: 2026-07-04
 status: published
 source_title: "Hang Ten Systems Raises $32M to Help Enterprises Succeed With AI"
@@ -55,12 +55,12 @@ opportunity_signals:
 signal_owner: "Hang Ten Systems"
 
 frontend:
-  displayTitle: "Hang Ten Systems 获得 $32M 融资"
+  displayTitle: "Hang Ten Systems 获 3200 万美元融资，助力企业成功应用 AI"
   sourceLinks:
     - "https://theaiinsider.tech/2026/07/02/hang-ten-systems-raises-32m-to-help-enterprises-succeed-with-ai/"
 ---
 
-# Hang Ten Systems 获得 $32M 融资
+# Hang Ten Systems 获 3200 万美元融资，助力企业成功应用 AI
 
 ## 新闻事实
 

@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-083
 title: "阿里千问首款 AI 智能体耳机将在 WAIC 亮相"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "阿里千问首款 AI 智能体耳机将在 WAIC 亮相"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/977/558.htm"
 canonical_url: "https://ithome.com/0/977/558.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-17T04:40:17.280Z
 theme: outside-core-exploration
 keyword_group: outside-core-exploration
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 阿里千问首款 AI 智能体耳机将在 WAIC 亮相

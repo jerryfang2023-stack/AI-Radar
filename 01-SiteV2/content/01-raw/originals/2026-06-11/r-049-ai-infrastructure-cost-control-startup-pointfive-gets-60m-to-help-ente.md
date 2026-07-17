@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"FinOps startup PointFive Inc. said toda
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "AI基础设施成本控制初创公司PointFive获6000万美元融资，助力企业节省开支"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # AI infrastructure cost control startup PointFive gets $60M to help enterprises save - SiliconANGLE

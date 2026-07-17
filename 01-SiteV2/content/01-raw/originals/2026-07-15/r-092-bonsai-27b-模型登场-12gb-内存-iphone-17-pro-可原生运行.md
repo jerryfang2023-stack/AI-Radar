@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-092
 title: "Bonsai 27B 模型登场，12GB 内存 iPhone 17 Pro 可原生运行"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "Bonsai 27B 模型登场，12GB 内存 iPhone 17 Pro 可原生运行"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/976/772.htm"
 canonical_url: "https://ithome.com/0/976/772.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-15T04:28:38.095Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Bonsai 27B 模型登场，12GB 内存 iPhone 17 Pro 可原生运行

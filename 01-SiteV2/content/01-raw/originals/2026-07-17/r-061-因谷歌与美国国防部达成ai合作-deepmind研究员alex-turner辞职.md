@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-061
 title: "因谷歌与美国国防部达成AI合作，DeepMind研究员Alex Turner辞职"
 title_zh: "因谷歌与美国国防部达成AI合作，DeepMind研究员Alex Turner辞职"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/977/627.htm"
 canonical_url: "https://ithome.com/0/977/627.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-17T04:40:17.176Z
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 因谷歌与美国国防部达成AI合作，DeepMind研究员Alex Turner辞职

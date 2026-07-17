@@ -1,7 +1,7 @@
 [
   {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "",
     "disclosed_at": "2026-05-20T17:25:07.458Z",
     "entities": [
@@ -14,23 +14,28 @@
     ],
     "locations": [],
     "claim_refs": [
-      "CL-84307baa9880e4a3"
+      "CL-84307baa9880e4a3",
+      "CL-3d90ef2bdaea7216",
+      "CL-3630c556275a0123"
     ],
     "source_refs": [
       "SA-12a5e509298d1142"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time",
+      "display_title_zh"
+    ],
     "update_history": [
       {
         "source_ref": "SA-12a5e509298d1142",
         "disclosed_at": "2026-05-20T17:25:07.458Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
     "event_id": "EV-c46e427fedbf518d",
-    "display_title_zh": "Trace 完成 300 万美元融资"
+    "display_title_zh": ""
   },
   {
     "event_type": "partnership",
@@ -38,6 +43,7 @@
     "event_time": "",
     "disclosed_at": "2026-05-20T17:25:07.497Z",
     "entities": [
+      "EN-de5a1adf4fedcce1",
       "EN-c70eca6b0f88f44d",
       "EN-cbc62794911ff31b",
       "EN-bbdefa2950f49882",
@@ -60,7 +66,9 @@
       "SA-86a9d0df93d46c9a"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-86a9d0df93d46c9a",
@@ -69,12 +77,49 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-3398ae53a199be16",
-    "display_title_zh": "Anthropic 与 Amazon 达成商业合作"
+    "event_id": "EV-c0a65877001ed413",
+    "display_title_zh": "Snowflake与Anthropic宣布2亿美元合作，将代理式AI引入全球企业"
+  },
+  {
+    "event_type": "deployment",
+    "event_status": "announced",
+    "event_time": "",
+    "disclosed_at": "2026-05-20T17:25:07.507Z",
+    "entities": [
+      "EN-6f30fa79d4bd8a3e",
+      "EN-3ccbd9105a45d8fc"
+    ],
+    "action": "Deploy",
+    "object": "AI-powered Platform to Transform Corporate Services across the NHS - Salesforce",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-4d1674c85d7a50a3",
+      "CL-a8725512d141ef54",
+      "CL-ff6feb7a9df85684",
+      "CL-729f43cddf0fdd35"
+    ],
+    "source_refs": [
+      "SA-0f691fb7db187777"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "event_time"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-0f691fb7db187777",
+        "disclosed_at": "2026-05-20T17:25:07.507Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-8b73e88ffd3569b2",
+    "display_title_zh": "NHS共享商业服务公司与Salesforce部署AI驱动平台，助力NHS企业服务转型——Salesforce"
   },
   {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "",
     "disclosed_at": "2026-05-20T17:25:07.519Z",
     "entities": [
@@ -100,21 +145,23 @@
       "SA-a8b3650e5c9b07c6"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-a8b3650e5c9b07c6",
         "disclosed_at": "2026-05-20T17:25:07.519Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
     "event_id": "EV-2083b9eda52a3f76",
-    "display_title_zh": "Lio 完成 3000 万美元 A 轮融资"
+    "display_title_zh": "Lio 获3000万美元A轮融资，将代理式AI引入企业采购"
   },
   {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "",
     "disclosed_at": "2026-05-20T17:25:07.528Z",
     "entities": [
@@ -139,24 +186,27 @@
       "SA-a8a8058d17953974"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-a8a8058d17953974",
         "disclosed_at": "2026-05-20T17:25:07.528Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
     "event_id": "EV-a84ec4216d3ded6d",
-    "display_title_zh": "Wonderful 完成 1.5 亿美元 B 轮融资"
+    "display_title_zh": "Wonderful 完成1.5亿美元B轮融资，加速在30多个市场的企业AI应用"
   },
   {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "",
     "disclosed_at": "2026-05-20T17:25:07.537Z",
     "entities": [
+      "EN-f5cfcb570b7edac2",
       "EN-b0532e1af75cc4ab"
     ],
     "action": "Raises",
@@ -176,17 +226,19 @@
       "SA-25066f1830956af8"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-25066f1830956af8",
         "disclosed_at": "2026-05-20T17:25:07.537Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-b67b71905356837d",
-    "display_title_zh": "Rime 完成 430 万美元 种子轮融资"
+    "event_id": "EV-c8928410f6c145eb",
+    "display_title_zh": "Nexus 获430万美元种子轮融资，助力业务团队部署"
   },
   {
     "event_type": "product_release",
@@ -194,7 +246,13 @@
     "event_time": "2026-05-20T11:33:00-04:00",
     "disclosed_at": "2026-05-20T11:33:00-04:00",
     "entities": [
-      "EN-9fbf261b62c1d7c0"
+      "EN-61cce404a45c3545",
+      "EN-2a920347dfcf07a7",
+      "EN-96eebba49dbbf422",
+      "EN-9fbf261b62c1d7c0",
+      "EN-23b979df49741c93",
+      "EN-02072c80a8386e8d",
+      "EN-2eb073b22916de55"
     ],
     "action": "Launches",
     "object": "VeltrisOne -- A Vertical AI Orchestration Platform Purpose-Built to Power Micro-Industries",
@@ -227,7 +285,7 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-ec15684583d6f7a9",
-    "display_title_zh": "Microsoft 发布 VeltrisOne"
+    "event_id": "EV-6ce6b9c9780b97d9",
+    "display_title_zh": "Veltris推出VeltrisOne——专为微型行业打造的垂直AI编排平台"
   }
 ]

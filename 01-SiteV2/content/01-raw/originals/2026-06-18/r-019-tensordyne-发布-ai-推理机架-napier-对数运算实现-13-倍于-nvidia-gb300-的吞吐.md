@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"TensorDyne 发布 AI 推理机架 Napier
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "TensorDyne 发布 AI 推理机架 Napier，对数运算实现 13 倍于 NVIDIA GB300 的吞吐"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # TensorDyne 发布 AI 推理机架 Napier，对数运算实现 13 倍于 NVIDIA GB300 的吞吐

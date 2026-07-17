@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"XREAL 正式发布 Aura XR 眼镜，搭�
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "XREAL 发布 Aura XR 眼镜，搭载 Android XR 与 Gemini 大模型"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # XREAL 发布 Aura XR 眼镜，搭载 Android XR 与 Gemini 大模型

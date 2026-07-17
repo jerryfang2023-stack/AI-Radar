@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"Claude Code v2.1.198 更新。Cl
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "Claude Code v2.1.198 发布"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Claude Code v2.1.198 发布

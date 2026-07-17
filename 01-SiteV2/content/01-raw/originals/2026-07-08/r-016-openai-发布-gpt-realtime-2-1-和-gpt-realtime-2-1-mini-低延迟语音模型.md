@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-016
 title: "OpenAI 发布 gpt-realtime-2.1 和 gpt-realtime-2.1-mini 低延迟语音模型"
 title_zh: "OpenAI 发布 gpt-realtime-2.1 和 gpt-realtime-2.1-mini 低延迟语音模型"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.marktechpost.com/2026/07/06/openai-gpt-realtime-2-1-mini-reasoning-realtime-api"
 canonical_url: "https://marktechpost.com/2026/07/06/openai-gpt-realtime-2-1-mini-reasoning-realtime-api"
 source_name: "MarkTechPost（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-08T04:39:25.415Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # OpenAI 发布 gpt-realtime-2.1 和 gpt-realtime-2.1-mini 低延迟语音模型

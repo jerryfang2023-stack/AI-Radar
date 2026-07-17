@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-015
 title: "Harness Launches Autonomous Worker Agents for Software Delivery"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "Harness推出面向软件交付的自主工作代理"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.prnewswire.com/news-releases/harness-launches-autonomous-worker-agents-for-software-delivery-302814180.html"
 canonical_url: "https://prnewswire.com/news-releases/harness-launches-autonomous-worker-agents-for-software-delivery-302814180.html"
 source_name: "keyword search / Anysearch"
@@ -78,6 +78,7 @@ fact_extraction_completed_at: 2026-07-04T04:35:47.632Z
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Harness Launches Autonomous Worker Agents for Software Delivery

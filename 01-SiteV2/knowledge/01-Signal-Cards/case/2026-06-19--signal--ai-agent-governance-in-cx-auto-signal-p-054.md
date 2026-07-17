@@ -2,7 +2,7 @@
 id: SIG-20260619-A14
 type: signal_card
 signal_type: case
-title: "AI Agent Governance in CX: ROI vs. 74% Rollback Rate - Gspann.com"
+title: "客户体验中的AI智能体治理：ROI与74%回滚率之对比"
 date: 2026-06-19
 status: published
 source_title: "AI Agent Governance in CX: ROI vs. 74% Rollback Rate - Gspann.com"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "AI Agent Governance in CX"
 
 frontend:
-  displayTitle: "AI Agent Governance in CX: ROI vs. 74% Rollback Rate - Gspann.com"
+  displayTitle: "客户体验中的AI智能体治理：ROI与74%回滚率之对比"
   sourceLinks:
     - "https://www.gspann.com/insights/blog/ai-agent-governance-customer-experience"
 ---
 
-# AI Agent Governance in CX: ROI vs. 74% Rollback Rate - Gspann.com
+# 客户体验中的AI智能体治理：ROI与74%回滚率之对比
 
 ## 新闻事实
 

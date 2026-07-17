@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-037
 title: "Visa and Banks Across Europe Reach the Next Phase of Agentic Commerce, Unlocking Secure Access to Merchants | Visa"
-title_zh: "Visa 与欧洲银行推进智能体商业交易落地"
-title_translation_status: translated
-title_translation_method: source_title_translation_db
+title_zh: "Visa与欧洲多家银行推进代理商务下一阶段，为商户解锁安全访问权限"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.visa.co.uk/about-visa/newsroom/press-releases.3457328.html"
 canonical_url: "https://visa.co.uk/about-visa/newsroom/press-releases.3457328.html"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-05T04:56:15.328Z
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Visa and Banks Across Europe Reach the Next Phase of Agentic Commerce, Unlocking Secure Access to Merchants | Visa

@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-092
 title: "OpenAI 指摘 SWE-Bench Pro 约 30% 任务存在缺陷，撤回采用建议"
 title_zh: "OpenAI 指摘 SWE-Bench Pro 约 30% 任务存在缺陷，撤回采用建议"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/974/531.htm"
 canonical_url: "https://ithome.com/0/974/531.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-10T02:00:08.536Z
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # OpenAI 指摘 SWE-Bench Pro 约 30% 任务存在缺陷，撤回采用建议

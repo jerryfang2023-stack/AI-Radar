@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"Google DeepMind 发布实验性开源模
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "Google AI 发布 DiffusionGemma：基于文本扩散的 26B MoE 开源模型，生成速度最高提升 4 倍"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Google AI 发布 DiffusionGemma：基于文本扩散的 26B MoE 开源模型，生成速度最高提升 4 倍

@@ -1,7 +1,7 @@
 ---
 id: CASE-20260519-01
 type: case_card
-title: "Anthropic：Anthropic收购SDK与MCP服务器工具开发商Stainless"
+title: "Anthropic收购SDK与MCP服务器工具开发商Stainless"
 date: 2026-05-19
 status: published
 created_at: 2026-05-19T16:02:30.468Z
@@ -68,7 +68,7 @@ internal:
   last_reviewed: 2026-05-19
 ---
 
-# Anthropic：Anthropic收购SDK与MCP服务器工具开发商Stainless
+# Anthropic收购SDK与MCP服务器工具开发商Stainless
 
 ## 这个案例是谁
 

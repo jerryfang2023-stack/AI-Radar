@@ -2,7 +2,7 @@
 id: SIG-20260628-A15
 type: signal_card
 signal_type: product_service
-title: "SpaceX plans to launch Starlink mobile service in the US"
+title: "SpaceX计划在美国推出Starlink移动服务"
 date: 2026-06-28
 status: published
 source_title: "SpaceX plans to launch Starlink mobile service in the US"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Arstechnica"
 
 frontend:
-  displayTitle: "SpaceX plans to launch Starlink mobile service in the US"
+  displayTitle: "SpaceX计划在美国推出Starlink移动服务"
   sourceLinks:
     - "https://arstechnica.com/space/2026/06/spacex-plans-to-launch-starlink-mobile-service-in-the-us/"
 ---
 
-# SpaceX plans to launch Starlink mobile service in the US
+# SpaceX计划在美国推出Starlink移动服务
 
 ## 新闻事实
 

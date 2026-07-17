@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-046
 title: "Apple’s failed self-driving car program left a legacy of powerful AI chips"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "苹果失败的自动驾驶汽车项目留下了强大的AI芯片遗产"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.theverge.com/tech/964519/apple-silicon-self-driving-car-ai-m7-ultra"
 canonical_url: "https://theverge.com/tech/964519/apple-silicon-self-driving-car-ai-m7-ultra"
 source_name: "The Verge AI"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-13T10:23:56.953Z
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Apple’s failed self-driving car program left a legacy of powerful AI chips

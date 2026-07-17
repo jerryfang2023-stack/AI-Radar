@@ -72,6 +72,10 @@ key_excerpts: [{"type":"company_action","text":"Cloudflare 为所有网站所有
 theme: outside-core-exploration
 keyword_group: outside-core-exploration
 copyright_note: local research archive only
+title_zh: "Cloudflare 推出全新AI流量管理选项：区分搜索、智能体与训练爬虫，保护广告页面"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Cloudflare 推出全新AI流量管理选项：区分搜索、智能体与训练爬虫，保护广告页面

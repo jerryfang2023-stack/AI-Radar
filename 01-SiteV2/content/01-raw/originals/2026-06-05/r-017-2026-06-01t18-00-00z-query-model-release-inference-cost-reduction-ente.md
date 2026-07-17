@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"2026-06-01T18:00:00Z / query=mod
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "2026-06-01T18:00:00Z / 查询=模型发布推理成本降低企业采用 / 意图=寻找市场趋势 / 路径=a_media_gdelt"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # 2026-06-01T18:00:00Z / query=model release inference cost reduction enterprise adoption / intent=find_market_trend / path=a_media_gdelt

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"supporting_context","text":"Note: this is Pliny and John
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "⚡️越狱AGI：解放者普林尼与约翰·V谈红队测试、BT6与AI安全未来"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # ⚡️Jailbreaking AGI: Pliny the Liberator &amp; John V on Red Teaming, BT6, and the Future of AI Security

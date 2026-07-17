@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"据彭博社报道，欧洲 AI 初创 M
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "Mistral AI 洽谈 200 亿欧元估值 D 轮融资"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Mistral AI 洽谈 200 亿欧元估值 D 轮融资

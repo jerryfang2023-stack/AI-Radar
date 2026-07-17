@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"GitHub stars have become a critical adop
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "12家增长最快的开源开发工具公司及初创企业"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # 12 Fastest Growing Open Source Dev Tools Companies and Startups

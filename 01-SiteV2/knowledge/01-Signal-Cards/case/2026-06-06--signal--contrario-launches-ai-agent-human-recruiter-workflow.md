@@ -2,7 +2,7 @@
 id: SIG-20260606-E01
 type: signal_card
 signal_type: case
-title: "Contrario launches AI agents paired with human recruiters"
+title: "Contrario上线：主张AI代理与人类招聘人员协作而非取代"
 date: 2026-06-06
 status: published
 asset_level: frontstage
@@ -52,12 +52,12 @@ opportunity_signals:
 signal_owner: "Contrario"
 
 frontend:
-  displayTitle: "Contrario launches AI agents paired with human recruiters"
+  displayTitle: "Contrario上线：主张AI代理与人类招聘人员协作而非取代"
   sourceLinks:
     - "https://www.contrario.ai/blogs/announcement/contrario-launches-the-case-for-pairing-ai-agents-with-human-recruiters-instead-of-replacing-them"
 ---
 
-# Contrario launches AI agents paired with human recruiters
+# Contrario上线：主张AI代理与人类招聘人员协作而非取代
 
 ## 新闻事实
 

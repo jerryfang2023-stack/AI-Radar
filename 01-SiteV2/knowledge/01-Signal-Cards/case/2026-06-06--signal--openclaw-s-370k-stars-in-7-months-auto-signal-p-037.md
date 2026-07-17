@@ -2,7 +2,7 @@
 id: SIG-20260606-A09
 type: signal_card
 signal_type: case
-title: "OpenClaw's 370K Stars in 7 Months: Why This AI Agent Succeeded Where Others Failed - NovVista Tech Brief"
+title: "OpenClaw 7个月获37万星：为何这个AI智能体在他人失败处成功 - NovVista Tech Brief"
 date: 2026-06-06
 status: published
 source_title: "OpenClaw's 370K Stars in 7 Months: Why This AI Agent Succeeded Where Others Failed - NovVista Tech Brief"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "OpenClaw's 370K Stars in 7 Months"
 
 frontend:
-  displayTitle: "OpenClaw's 370K Stars in 7 Months: Why This AI Agent Succeeded Where Others Failed - NovVista Tech Brief"
+  displayTitle: "OpenClaw 7个月获37万星：为何这个AI智能体在他人失败处成功 - NovVista Tech Brief"
   sourceLinks:
     - "https://novvista.com/openclaws-370k-stars-in-7-months-why-this-ai-agent-succeeded-where-others-failed/"
 ---
 
-# OpenClaw's 370K Stars in 7 Months: Why This AI Agent Succeeded Where Others Failed - NovVista Tech Brief
+# OpenClaw 7个月获37万星：为何这个AI智能体在他人失败处成功 - NovVista Tech Brief
 
 ## 新闻事实
 

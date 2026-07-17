@@ -1,0 +1,168 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 818,
+    "quarantinedEventCount": 58
+  },
+  "entity": {
+    "id": "EN-dd920a8cd166f486",
+    "name": "CoreAI",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-4e6dc3ec2b3f0bd6"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-technology-on_device"
+    ],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-06-11",
+    "lastSeen": "2026-06-12",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-4e6dc3ec2b3f0bd6"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-4e6dc3ec2b3f0bd6",
+        "dataDate": "2026-06-12",
+        "date": "2026-06-11",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "苹果 CoreAI 端侧 AI 引擎测试：小模型解码速度是 MLX 的 2.47 倍，大模型性能持平",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "on_device",
+            "name": "端侧"
+          },
+          {
+            "dimensionId": "deployment_model",
+            "id": "edge_device",
+            "dimensionName": "部署形态",
+            "name": "边缘与端侧"
+          }
+        ],
+        "entityIds": [
+          "EN-3a7bd3e2360a3d29",
+          "EN-047364b9be67f665",
+          "EN-dd920a8cd166f486"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-technology-on_device",
+      "name": "端侧",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "on_device",
+      "eventIds": [
+        "EV-a15da1b52d939967",
+        "EV-736404028b8ad33e",
+        "EV-7263caa45bbf168e",
+        "EV-653cbce2ccc79f8b",
+        "EV-04efb4eecbb8125f",
+        "EV-8a9b12665a3e40a0",
+        "EV-712bb6241160c4c5",
+        "EV-f7b60c0c63403f8c",
+        "EV-e28e134345ea5f99",
+        "EV-a736c6c64d106475",
+        "EV-4e6dc3ec2b3f0bd6",
+        "EV-c5b8faec223a4caf",
+        "EV-4026c95d4c01b96e",
+        "EV-0597e07d7e73051a",
+        "EV-02186ed7885f68fe",
+        "EV-5613946bdd578a26",
+        "EV-dd902b603e2e3dbc",
+        "EV-7d4b4b8d4e3599d4",
+        "EV-f4876d2e1a20d87b"
+      ],
+      "entityIds": [
+        "EN-a35b80cf9d171015",
+        "EN-48bebf25e5bd5aca",
+        "EN-dca6ec9510fc0176",
+        "EN-b0532e1af75cc4ab",
+        "EN-8147e6fed86d42c1",
+        "EN-16fd849ce27f115b",
+        "EN-8d4321d936320802",
+        "EN-f5791343a13abc71",
+        "EN-9fbf261b62c1d7c0",
+        "EN-f3cfedbe8428c9f7",
+        "EN-7df09a7717ef2feb",
+        "EN-c04bd5ebd10ab696",
+        "EN-50ba7ff15827787b",
+        "EN-bbdefa2950f49882",
+        "EN-992eafe973f69075",
+        "EN-1229af0aa3b0305e",
+        "EN-81e577740888ca6d",
+        "EN-968e2d5b08687bf4",
+        "EN-3a7bd3e2360a3d29",
+        "EN-c608c4787821de1b",
+        "EN-6f21a653c48f4f19",
+        "EN-5388bc10736a0eff",
+        "EN-12a81529bba89666",
+        "EN-2c348893efb2316e",
+        "EN-f77d48bcb475d189",
+        "EN-44a9bf3b11abea5c",
+        "EN-de6b71bf77ff4299",
+        "EN-c4ef31845ea79710",
+        "EN-96eebba49dbbf422",
+        "EN-ce635c4eabff5e4f",
+        "EN-f8ceb65dd1764cd4",
+        "EN-af3ceabbe048a291",
+        "EN-047364b9be67f665",
+        "EN-dd920a8cd166f486",
+        "EN-c70eca6b0f88f44d",
+        "EN-41dcc2d4951f337b",
+        "EN-e246a1f9a090075b",
+        "EN-1dc405a4cda895d0",
+        "EN-c3ce0cc92b48bbd6",
+        "EN-54ef981ab82586b5",
+        "EN-0899bccb1b028521",
+        "EN-3dd90c2e1bf28b32",
+        "EN-5d7b7e77768bfdfc"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-05-25",
+      "lastSeen": "2026-07-17"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}

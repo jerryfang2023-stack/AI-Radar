@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"# Announcing our $800M Series C to acce
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only
+title_zh: "宣布8亿美元C轮融资，加速开源AI转型"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Announcing our $800M Series C to accelerate the shift to open-source AI

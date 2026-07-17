@@ -2,7 +2,7 @@
 id: SIG-20260627-A06
 type: signal_card
 signal_type: case
-title: "Scaling AI Agents Across Your Organization - MindStudio"
+title: "在整个组织中扩展AI代理 - MindStudio"
 date: 2026-06-27
 status: published
 source_title: "Scaling AI Agents Across Your Organization - MindStudio"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Scaling AI Agents Across Your Organization"
 
 frontend:
-  displayTitle: "Scaling AI Agents Across Your Organization - MindStudio"
+  displayTitle: "在整个组织中扩展AI代理 - MindStudio"
   sourceLinks:
     - "https://www.mindstudio.ai/blog/scaling-ai-agents-organization"
 ---
 
-# Scaling AI Agents Across Your Organization - MindStudio
+# 在整个组织中扩展AI代理 - MindStudio
 
 ## 新闻事实
 

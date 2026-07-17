@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"How to scale AI agents from pilot t
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "在整个组织中扩展AI代理 - MindStudio"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Scaling AI Agents Across Your Organization - MindStudio

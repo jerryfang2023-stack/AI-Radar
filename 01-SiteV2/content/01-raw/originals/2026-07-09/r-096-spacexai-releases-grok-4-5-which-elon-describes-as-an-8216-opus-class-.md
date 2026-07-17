@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-096
 title: "SpaceXAI releases Grok 4.5, which Elon describes as an &#8216;Opus-class model&#8217;"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "SpaceXAI 发布 Grok 4.5，马斯克称其为“Opus 级模型”"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://techcrunch.com/2026/07/08/spacexai-releases-grok-4-5-which-elon-describes-as-an-opus-class-model/"
 canonical_url: "https://techcrunch.com/2026/07/08/spacexai-releases-grok-4-5-which-elon-describes-as-an-opus-class-model"
 source_name: "TechCrunch AI"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-09T03:05:45.344Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # SpaceXAI releases Grok 4.5, which Elon describes as an &#8216;Opus-class model&#8217;

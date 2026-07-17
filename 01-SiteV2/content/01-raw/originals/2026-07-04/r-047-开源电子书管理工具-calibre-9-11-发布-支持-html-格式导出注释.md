@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-047
 title: "开源电子书管理工具 Calibre 9.11 发布：支持 HTML 格式导出注释"
 title_zh: "开源电子书管理工具 Calibre 9.11 发布：支持 HTML 格式导出注释"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/972/270.htm"
 canonical_url: "https://ithome.com/0/972/270.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-04T04:50:50.370Z
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 开源电子书管理工具 Calibre 9.11 发布：支持 HTML 格式导出注释

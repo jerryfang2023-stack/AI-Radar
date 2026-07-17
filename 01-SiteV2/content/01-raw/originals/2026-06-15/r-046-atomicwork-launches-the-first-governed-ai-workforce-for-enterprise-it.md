@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"PALO ALTO, Calif., June 9, 2026 
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Atomicwork 推出首个受监管的企业IT人工智能劳动力"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Atomicwork Launches the First Governed AI Workforce for Enterprise IT

@@ -5,7 +5,8 @@
     "event_time": "2026-07-01T20:45:36.000Z",
     "disclosed_at": "2026-07-01T20:45:36.000Z",
     "entities": [
-      "EN-c70eca6b0f88f44d"
+      "EN-c70eca6b0f88f44d",
+      "EN-8218ed4e007b0ad1"
     ],
     "action": "发布",
     "object": "Claude Code v2.1.198 发布",
@@ -41,7 +42,9 @@
     "event_time": "2026-07-01T17:17:56.374Z",
     "disclosed_at": "2026-07-01T17:17:56.374Z",
     "entities": [
-      "EN-bbdefa2950f49882"
+      "EN-bbdefa2950f49882",
+      "EN-b0532e1af75cc4ab",
+      "EN-9ff1a58a589bc318"
     ],
     "action": "发布",
     "object": "：在 VS Code 中连接云端 Jupyter 环境",
@@ -50,8 +53,8 @@
     "claim_refs": [
       "CL-283dbc5bfe75db2f",
       "CL-4c6183d41cbb5951",
-      "CL-b976b1e9039d610e",
-      "CL-94c89cfbc12c54e4"
+      "CL-94c89cfbc12c54e4",
+      "CL-1a7e4542b5776180"
     ],
     "source_refs": [
       "SA-247aeeadc7275db3"
@@ -75,7 +78,8 @@
     "event_time": "2026-07-01T11:12:09.000Z",
     "disclosed_at": "2026-07-01T11:12:09.000Z",
     "entities": [
-      "EN-c70eca6b0f88f44d"
+      "EN-c70eca6b0f88f44d",
+      "EN-2c063f604e634100"
     ],
     "action": "涨价",
     "object": "的模式",
@@ -104,12 +108,52 @@
     "display_title_zh": "Claude Sonnet 5延续Anthropic隐藏涨价的模式"
   },
   {
-    "event_type": "funding",
+    "event_type": "partnership",
     "event_status": "announced",
+    "event_time": "",
+    "disclosed_at": "2026-07-02T02:28:35.273Z",
+    "entities": [
+      "EN-160077a1c92d0095",
+      "EN-af7ddda9aad50840",
+      "EN-b0532e1af75cc4ab"
+    ],
+    "action": "collaborate",
+    "object": "to rapidly rewire regulated enterprise processes with AI",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-327e94661223194f",
+      "CL-c384f8da2b033b30",
+      "CL-6ca4b0d86b0c1189",
+      "CL-7fa3394934e93024"
+    ],
+    "source_refs": [
+      "SA-f3194f67826d0ef2"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "event_time"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-f3194f67826d0ef2",
+        "disclosed_at": "2026-07-02T02:28:35.273Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-06487af6e98ea491",
+    "display_title_zh": "AppliedAI与麦肯锡合作，利用AI快速重构受监管企业流程"
+  },
+  {
+    "event_type": "funding",
+    "event_status": "completed",
     "event_time": "",
     "disclosed_at": "2026-07-02T02:28:35.310Z",
     "entities": [
-      "EN-cfd62617fdedfdf4"
+      "EN-cfd62617fdedfdf4",
+      "EN-96eebba49dbbf422",
+      "EN-bbdefa2950f49882"
     ],
     "action": "raises",
     "object": "$12.5M to help AI agents search the web for answers - SiliconANGLE",
@@ -125,23 +169,25 @@
       "CL-ad2dc6269c91e8bf",
       "CL-f31e4b5be294409b",
       "CL-925c6fad070235f1",
-      "CL-30eb84eaa3450a3c"
+      "CL-7e02888ae245125e"
     ],
     "source_refs": [
       "SA-344b1d90b6022053"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-344b1d90b6022053",
         "disclosed_at": "2026-07-02T02:28:35.310Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
     "event_id": "EV-2bb63a3015195f9b",
-    "display_title_zh": "Agentic infrastructure startup Seltz 完成 1250 万美元 B 轮融资"
+    "display_title_zh": "智能体基础设施初创公司Seltz融资1250万美元，帮助AI代理搜索网络答案 - SiliconANGLE"
   },
   {
     "event_type": "funding",
@@ -149,6 +195,7 @@
     "event_time": "",
     "disclosed_at": "2026-07-02T02:28:35.320Z",
     "entities": [
+      "EN-450dcf23e621ff10",
       "EN-9fbf261b62c1d7c0",
       "EN-7d3194f79e645c42"
     ],
@@ -161,14 +208,16 @@
     "claim_refs": [
       "CL-da243cb6c755c4ba",
       "CL-80d304e3ac3aaac5",
-      "CL-710e20e22bd59aff",
-      "CL-0d3541408062c99d"
+      "CL-2077025cd1fadd2d",
+      "CL-710e20e22bd59aff"
     ],
     "source_refs": [
       "SA-e91a69292997822a"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-e91a69292997822a",
@@ -177,8 +226,8 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-adf92ecb7cd8714f",
-    "display_title_zh": "Microsoft 完成 9800 万美元融资"
+    "event_id": "EV-20d762872664fddb",
+    "display_title_zh": "Engram 获 9800 万美元启动资金，打造真正了解你组织的 AI"
   },
   {
     "event_type": "product_release",
@@ -250,44 +299,12 @@
   {
     "event_type": "product_release",
     "event_status": "completed",
-    "event_time": "2026-07-01T17:13:17.147Z",
-    "disclosed_at": "2026-07-01T17:13:17.147Z",
-    "entities": [
-      "EN-738e22f0acab814c"
-    ],
-    "action": "推出",
-    "object": "Monetization Gateway 变现网关",
-    "metrics": [],
-    "locations": [],
-    "claim_refs": [
-      "CL-041e8227d36a4830",
-      "CL-d3f54d23d47cab04",
-      "CL-e7e0fa0471b64c1d",
-      "CL-1d7266bbf53f1aa7"
-    ],
-    "source_refs": [
-      "SA-740c22524f76dd8b"
-    ],
-    "conflicts": [],
-    "missing_fields": [],
-    "update_history": [
-      {
-        "source_ref": "SA-740c22524f76dd8b",
-        "disclosed_at": "2026-07-01T17:13:17.147Z",
-        "status": "completed"
-      }
-    ],
-    "publication_status": "verified",
-    "event_id": "EV-3e1d53d372d8713d",
-    "display_title_zh": "Cloudflare 推出 Monetization Gateway 变现网关"
-  },
-  {
-    "event_type": "product_release",
-    "event_status": "completed",
     "event_time": "2026-07-01T15:34:09.000Z",
     "disclosed_at": "2026-07-01T15:34:09.000Z",
     "entities": [
-      "EN-ea3bd73e2b506e00"
+      "EN-ea3bd73e2b506e00",
+      "EN-557203e8cc173124",
+      "EN-2ba325ce6f8e3dc9"
     ],
     "action": "发布",
     "object": "非侵入式脑机接口 Brain2Qwerty v2，词错误率降至 39%",
@@ -328,20 +345,23 @@
     "object": "to accelerate the shift to open-source AI",
     "metrics": [
       "$800M",
-      "$800 million"
+      "$800 million",
+      "500 MW"
     ],
     "locations": [],
     "claim_refs": [
       "CL-366d1bca92131295",
       "CL-f4fc62fe3b4858c4",
-      "CL-13ad14b5de31c6cf",
-      "CL-8fbb9486b211c4cd"
+      "CL-b53eb0489b55549a",
+      "CL-13ad14b5de31c6cf"
     ],
     "source_refs": [
       "SA-7433945944813ef2"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-7433945944813ef2",
@@ -351,48 +371,7 @@
     ],
     "publication_status": "verified",
     "event_id": "EV-80e54c9a390da293",
-    "display_title_zh": "NVIDIA 完成 8 亿美元 C 轮融资"
-  },
-  {
-    "event_type": "funding",
-    "event_status": "planned",
-    "event_time": "2026-07-02T01:32:29.000Z",
-    "disclosed_at": "2026-07-02T01:32:29.000Z",
-    "entities": [
-      "EN-9c8ae69b84f21a2e"
-    ],
-    "action": "完成 30 亿美元融资",
-    "object": "：投后估值 180 亿美元，腾讯参投",
-    "metrics": [
-      "30 亿",
-      "180 亿",
-      "204.03 亿",
-      "1224.19 亿",
-      "200 亿",
-      "1360.21 亿"
-    ],
-    "locations": [],
-    "claim_refs": [
-      "CL-f153dfcbe21b689a",
-      "CL-24e846331c4be5bc",
-      "CL-1c1c565634c8cb9e",
-      "CL-0d1dc6e06e1cb0b6"
-    ],
-    "source_refs": [
-      "SA-19617a11f23e79c3"
-    ],
-    "conflicts": [],
-    "missing_fields": [],
-    "update_history": [
-      {
-        "source_ref": "SA-19617a11f23e79c3",
-        "disclosed_at": "2026-07-02T01:32:29.000Z",
-        "status": "planned"
-      }
-    ],
-    "publication_status": "partial",
-    "event_id": "EV-e0b0ab8dfcab20a5",
-    "display_title_zh": "消息称快手可灵 AI 将完成 30 亿美元融资：投后估值 180 亿美元，腾讯参投"
+    "display_title_zh": "宣布8亿美元C轮融资，加速开源AI转型"
   },
   {
     "event_type": "model_release",
@@ -400,6 +379,7 @@
     "event_time": "2026-07-01T09:50:27.000Z",
     "disclosed_at": "2026-07-01T09:50:27.000Z",
     "entities": [
+      "EN-0874d2a9a463699b",
       "EN-6f7ac1823da81d2e",
       "EN-bbdefa2950f49882",
       "EN-c70eca6b0f88f44d"
@@ -428,19 +408,20 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-8daf217ff024ac4a",
+    "event_id": "EV-eddb4330fed15762",
     "display_title_zh": "瑞银：约六成企业收紧 AI 开支，DeepSeek 等开源大模型有望受益"
   },
   {
-    "event_type": "model_release",
+    "event_type": "research_result",
     "event_status": "completed",
     "event_time": "2026-07-01T14:53:23.000Z",
     "disclosed_at": "2026-07-01T14:53:23.000Z",
     "entities": [
-      "EN-7d3194f79e645c42"
+      "EN-7d3194f79e645c42",
+      "EN-65ef4539bbcbe9fc"
     ],
-    "action": "推出 GeneBench-Pro 基准测试，评估 AI 模型",
-    "object": "生物学计算能力",
+    "action": "推出 GeneBench-Pro 基准",
+    "object": "测试，评估 AI 模型生物学计算能力",
     "metrics": [],
     "locations": [],
     "claim_refs": [
@@ -462,44 +443,189 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-af1d9851e91802af",
+    "event_id": "EV-b52af7bb03c98eb0",
     "display_title_zh": "OpenAI 推出 GeneBench-Pro 基准测试，评估 AI 模型生物学计算能力"
   },
   {
-    "event_type": "model_release",
-    "event_status": "completed",
-    "event_time": "2026-07-02T01:30:15.000Z",
-    "disclosed_at": "2026-07-02T01:30:15.000Z",
+    "event_type": "product_release",
+    "event_status": "announced",
+    "event_time": "2026-07-01T14:42:03.000Z",
+    "disclosed_at": "2026-07-01T14:42:03.000Z",
     "entities": [
-      "EN-6f7ac1823da81d2e"
+      "EN-3a7bd3e2360a3d29",
+      "EN-bbdefa2950f49882",
+      "EN-c70eca6b0f88f44d",
+      "EN-9fbf261b62c1d7c0",
+      "EN-307557d99a7eb726"
     ],
-    "action": "发布首个欧洲葡语开源大语言模型",
-    "object": "AMALIA",
+    "action": "product_release",
+    "object": "谷歌 AI 智能体 Gemini Spark 登陆苹果 Mac，可实时追踪资讯动态",
     "metrics": [],
-    "locations": [
-      "欧洲"
-    ],
+    "locations": [],
     "claim_refs": [
-      "CL-3a8a93c720f79863",
-      "CL-6d84ff8ba355025a",
-      "CL-82840cd1794dbfc4",
-      "CL-4b38c4b6ef858a09"
+      "CL-bdd121210d6019c5",
+      "CL-b000143fed6c52d3",
+      "CL-a06e131db75a6c1d",
+      "CL-b0dab5d514b2d3a0"
     ],
     "source_refs": [
-      "SA-01e19b4720fd567c"
+      "SA-2c01c4a8cbc96c17"
     ],
     "conflicts": [],
     "missing_fields": [],
     "update_history": [
       {
-        "source_ref": "SA-01e19b4720fd567c",
-        "disclosed_at": "2026-07-02T01:30:15.000Z",
+        "source_ref": "SA-2c01c4a8cbc96c17",
+        "disclosed_at": "2026-07-01T14:42:03.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-8aead769e84de342",
+    "display_title_zh": "谷歌 AI 智能体 Gemini Spark 登陆苹果 Mac，可实时追踪资讯动态"
+  },
+  {
+    "event_type": "product_release",
+    "event_status": "planned",
+    "event_time": "2026-07-01T07:41:45.000Z",
+    "disclosed_at": "2026-07-01T07:41:45.000Z",
+    "entities": [
+      "EN-c70eca6b0f88f44d",
+      "EN-cb4754c48f8023d0"
+    ],
+    "action": "product_release",
+    "object": "Anthropic 回应 Claude Code 暗藏检测中国用户代码：将在明日更新中删除",
+    "metrics": [],
+    "locations": [
+      "中国"
+    ],
+    "claim_refs": [
+      "CL-a443b4503f34acea",
+      "CL-426e067d1ff091c4",
+      "CL-259615c509f24d9c",
+      "CL-94e0cab7efd339d9"
+    ],
+    "source_refs": [
+      "SA-0955f4f3c5b71400"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-0955f4f3c5b71400",
+        "disclosed_at": "2026-07-01T07:41:45.000Z",
+        "status": "planned"
+      }
+    ],
+    "publication_status": "partial",
+    "event_id": "EV-d2c370511e9e55fe",
+    "display_title_zh": "Anthropic 回应 Claude Code 暗藏检测中国用户代码：将在明日更新中删除"
+  },
+  {
+    "event_type": "deployment",
+    "event_status": "planned",
+    "event_time": "",
+    "disclosed_at": "2026-07-02T02:28:35.497Z",
+    "entities": [
+      "EN-27032b3c60ab2a95"
+    ],
+    "action": "Deploy",
+    "object": "Midstream Health’s Agentic AI Financial Action Platform Across Enterprise",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-2595e07b9a72dec2",
+      "CL-4aaa9e3a4746d2a6",
+      "CL-ad8b8441bd5e3757",
+      "CL-6f06ed59bd42fe55"
+    ],
+    "source_refs": [
+      "SA-58bad086b947a26a"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "event_time"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-58bad086b947a26a",
+        "disclosed_at": "2026-07-02T02:28:35.497Z",
+        "status": "planned"
+      }
+    ],
+    "publication_status": "partial",
+    "event_id": "EV-4db890779221bd9a",
+    "display_title_zh": "休斯顿卫理公会医院将在全企业部署Midstream Health的代理式AI财务行动平台"
+  },
+  {
+    "event_type": "deployment",
+    "event_status": "completed",
+    "event_time": "2026-07-02T00:23:14.000Z",
+    "disclosed_at": "2026-07-02T00:23:14.000Z",
+    "entities": [
+      "EN-bfc698cb0f9b4d72",
+      "EN-9c8ae69b84f21a2e",
+      "EN-3a7bd3e2360a3d29"
+    ],
+    "action": "上线",
+    "object": "：无需外设，登陆iOS/安卓/鸿蒙",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-d4697195adccf8ea",
+      "CL-fa5e9a46d5c8d098",
+      "CL-6bece82016a4a112",
+      "CL-83686970a0495661"
+    ],
+    "source_refs": [
+      "SA-1cd224c4c6d14be8"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-1cd224c4c6d14be8",
+        "disclosed_at": "2026-07-02T00:23:14.000Z",
         "status": "completed"
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-fb0838335d861b02",
-    "display_title_zh": "葡萄牙发布首个欧洲葡语开源大语言模型 AMALIA"
+    "event_id": "EV-afcd5426f5c01dc7",
+    "display_title_zh": "《舞力全开：派对》今日上线：无需外设，登陆iOS/安卓/鸿蒙"
+  },
+  {
+    "event_type": "product_release",
+    "event_status": "announced",
+    "event_time": "2026-07-02T01:22:07.000Z",
+    "disclosed_at": "2026-07-02T01:22:07.000Z",
+    "entities": [],
+    "action": "product_release",
+    "object": "联合国专家组警告：AI 能力进步速度已超过科学认知",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-7f7ef65dde1b8617",
+      "CL-40725e1d2113c996",
+      "CL-2251102166c4d1b8",
+      "CL-6f10fb0dab1b34f1"
+    ],
+    "source_refs": [
+      "SA-9167b3c0b5b49c34"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "entities"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-9167b3c0b5b49c34",
+        "disclosed_at": "2026-07-02T01:22:07.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-612c0fbde73c5a79",
+    "display_title_zh": "联合国专家组警告：AI 能力进步速度已超过科学认知"
   },
   {
     "event_type": "deployment",
@@ -511,7 +637,9 @@
     ],
     "action": "落地",
     "object": "5G-A×AI 大上行样板点：实测峰值速率 1Gbps，中心城区年底实现 20Mbps 上行连续覆盖",
-    "metrics": [],
+    "metrics": [
+      "1Gb"
+    ],
     "locations": [],
     "claim_refs": [
       "CL-1eb595aacf4e431f",

@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-038
 title: "Atos Group Launches Sovereign Agentic Studios to Bring AI Safely into Production Across Organizations – Company Announcement - FT.com"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "Atos 集团推出 Sovereign Agentic Studios，助力企业安全将 AI 投入生产"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://markets.ft.com/data/announce/full?dockey=1330-1001169683en-5U29EK31S3BTD5BTO88AFDU8JO"
 canonical_url: "https://markets.ft.com/data/announce/full?dockey=1330-1001169683en-5U29EK31S3BTD5BTO88AFDU8JO"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-10T01:59:51.840Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Atos Group Launches Sovereign Agentic Studios to Bring AI Safely into Production Across Organizations – Company Announcement - FT.com

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"quote","text":"datasette-agent 发布 0.1a4 版本。该
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "datasette-agent 0.1a4 发布"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # datasette-agent 0.1a4 发布

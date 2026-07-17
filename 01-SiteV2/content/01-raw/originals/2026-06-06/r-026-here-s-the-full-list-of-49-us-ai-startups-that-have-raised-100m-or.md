@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"- Bret Taylor’s Sierra, which makes A
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "以下是49家融资额达1亿美元及以上的美国AI初创公司完整名单"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Here's the full list of 49 US AI startups that have raised $100M or ...

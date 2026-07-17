@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-006
 title: "1 Finance ships 3x faster and breaks less, with Claude and Atrina - Atriina"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "1 Finance借助Claude和Atrina实现3倍提速并减少故障 - Atriina"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://atriina.com/blogs/1-finance-ships-3x-faster-and-breaks-less-with-claude-and-atrina/"
 canonical_url: "https://atriina.com/blogs/1-finance-ships-3x-faster-and-breaks-less-with-claude-and-atrina"
 source_name: "keyword search / Anysearch"
@@ -78,6 +78,7 @@ fact_extraction_completed_at: 2026-07-04T04:35:47.566Z
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 1 Finance ships 3x faster and breaks less, with Claude and Atrina - Atriina

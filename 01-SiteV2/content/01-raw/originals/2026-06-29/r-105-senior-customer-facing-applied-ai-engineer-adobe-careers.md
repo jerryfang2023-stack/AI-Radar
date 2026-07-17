@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"Senior Customer Facing Applied AI E
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "高级客户面向应用AI工程师 - Adobe职业"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Senior Customer Facing Applied AI Engineer - Adobe Careers

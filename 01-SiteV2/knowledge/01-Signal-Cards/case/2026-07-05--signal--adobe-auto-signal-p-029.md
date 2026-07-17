@@ -2,7 +2,7 @@
 id: SIG-20260705-A05
 type: signal_card
 signal_type: case
-title: "Adobe 扩展合作伙伴生态以交付智能体工作流"
+title: "Adobe扩展合作伙伴生态系统，打造无缝工作流程"
 date: 2026-07-05
 status: published
 source_title: "Adobe Expands Partner Ecosystem to Deliver Frictionless Workflows ..."
@@ -56,12 +56,12 @@ opportunity_signals:
 signal_owner: "Adobe"
 
 frontend:
-  displayTitle: "Adobe 扩展合作伙伴生态以交付智能体工作流"
+  displayTitle: "Adobe扩展合作伙伴生态系统，打造无缝工作流程"
   sourceLinks:
     - "https://news.adobe.com/news/2026/04/adobe-expands-partner-ecosystem"
 ---
 
-# Adobe 扩展合作伙伴生态以交付智能体工作流
+# Adobe扩展合作伙伴生态系统，打造无缝工作流程
 
 ## 新闻事实
 

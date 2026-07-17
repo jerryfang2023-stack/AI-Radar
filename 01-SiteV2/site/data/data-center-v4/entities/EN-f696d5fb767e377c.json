@@ -1,0 +1,126 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 818,
+    "quarantinedEventCount": 58
+  },
+  "entity": {
+    "id": "EN-f696d5fb767e377c",
+    "name": "GPT-2",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-b73c7096546b82e8"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-technology-fine_tuning"
+    ],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-06-10",
+    "lastSeen": "2026-06-10",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-b73c7096546b82e8"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-b73c7096546b82e8",
+        "dataDate": "2026-06-10",
+        "date": "2026-06-10",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "GPT-2：过于危险，不宜发布（2019）",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "fine_tuning",
+            "name": "模型微调"
+          }
+        ],
+        "entityIds": [
+          "EN-7d3194f79e645c42",
+          "EN-f696d5fb767e377c"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-technology-fine_tuning",
+      "name": "模型微调",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "fine_tuning",
+      "eventIds": [
+        "EV-1de38866b4b92754",
+        "EV-70cbf25f7ec2cc3a",
+        "EV-8b9e4428074bde60",
+        "EV-b84035029a63e52e",
+        "EV-77662aa9bef9efbe",
+        "EV-b73c7096546b82e8",
+        "EV-34929bdd016dc8d6"
+      ],
+      "entityIds": [
+        "EN-e93e29634540a290",
+        "EN-7dd7122ad9bf240f",
+        "EN-95b0632f1b292fa7",
+        "EN-047364b9be67f665",
+        "EN-6f7ac1823da81d2e",
+        "EN-3a7bd3e2360a3d29",
+        "EN-03e2a9d18916f7c5",
+        "EN-d41ebd9f02722fc8",
+        "EN-b0532e1af75cc4ab",
+        "EN-96eebba49dbbf422",
+        "EN-10556ee2cee94c72",
+        "EN-f8c237773fe24a98",
+        "EN-2b5e92d1908d42f6",
+        "EN-ad1b7e4bc3a5c870",
+        "EN-7d3194f79e645c42",
+        "EN-8f71c4871a160172",
+        "EN-c70eca6b0f88f44d",
+        "EN-bbdefa2950f49882",
+        "EN-f696d5fb767e377c",
+        "EN-4a639cb888a15d75",
+        "EN-8d4321d936320802",
+        "EN-65b3aa2f527deeef",
+        "EN-a2413f7c5095f988",
+        "EN-c165c006a5968443"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [
+        "HW-25ce41fab12d9ef2"
+      ],
+      "firstSeen": "2025-03-18",
+      "lastSeen": "2026-07-16"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}

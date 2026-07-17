@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-17T18:20:10.588Z",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 727,
-    "quarantinedEventCount": 50
+    "eventCount": 818,
+    "quarantinedEventCount": 58
   },
   "node": {
     "id": "TX-technology-speech_audio",
@@ -17,161 +17,54 @@
     "typeLabel": "技术",
     "valueId": "speech_audio",
     "eventIds": [
-      "EV-f64345af2affb07d",
-      "EV-712bb6241160c4c5",
-      "EV-175af8c7b8146340",
-      "EV-b902c7cffb30dec3",
+      "EV-99e5df844a1bd670",
+      "EV-dad8c827d14f2799",
       "EV-2258329f33d413cf",
-      "EV-f68e00bb9fd49fac"
+      "EV-f68e00bb9fd49fac",
+      "EV-d99037f2ed8db897",
+      "EV-631dce4dc135d01b"
     ],
     "entityIds": [
-      "EN-ea3bd73e2b506e00",
-      "EN-6fcba5d96a4fadfd",
-      "EN-c70eca6b0f88f44d",
-      "EN-2c348893efb2316e",
       "EN-bbdefa2950f49882",
-      "EN-9fbf261b62c1d7c0",
+      "EN-3a7bd3e2360a3d29",
+      "EN-e0bab6f6c58bfe4e",
+      "EN-afe83c198e329ef2",
+      "EN-0aa590cbbdb3835a",
+      "EN-2b78da3dc866654e",
       "EN-8d4321d936320802",
-      "EN-2b6e51bec93e86c1"
+      "EN-12ab68e37d104d27",
+      "EN-2b6e51bec93e86c1",
+      "EN-4d09c69c19f5f67b",
+      "EN-085598c00f2aaccf",
+      "EN-a3c3b987b09fc1bb",
+      "EN-2c348893efb2316e",
+      "EN-f77d48bcb475d189",
+      "EN-ed501d3e2d977553",
+      "EN-b2968d9ba72f4818"
     ],
     "fdeIds": [],
     "hardwareIds": [],
-    "firstSeen": "2026-06-04",
-    "lastSeen": "2026-07-12"
+    "firstSeen": "2026-05-25",
+    "lastSeen": "2026-06-17"
   },
   "events": [
     {
-      "id": "EV-f64345af2affb07d",
-      "dataDate": "2026-06-05",
-      "date": "2026-06-05",
-      "updatedDate": "2026-06-05",
-      "eventType": "funding",
-      "eventTypeLabel": "融资",
-      "eventGroup": "融资与并购",
+      "id": "EV-99e5df844a1bd670",
+      "dataDate": "2026-06-17",
+      "date": "2026-06-17",
+      "updatedDate": "2026-06-17",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
       "status": "announced",
       "statusLabel": "已公布",
-      "publicationStatus": "partial",
-      "title": "Meta 完成 300 万美元 D 轮融资",
-      "originalTitle": "Ex-Goldman Sachs and Meta founders raise $3M to build the voice AI infrastructure global tech giants overlooked — TFN",
-      "subject": "Ex-Goldman Sachs and Meta founders",
-      "action": "raise",
-      "object": "$3M to build the voice AI infrastructure global tech giants overlooked — TFN",
-      "metrics": [
-        "$3M",
-        "$3 million",
-        "$500 million",
-        "$11 billion",
-        "$50 million",
-        "$14 million",
-        "€10.5M"
-      ],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "speech_audio",
-          "name": "语音与音频"
-        }
-      ],
-      "facets": {
-        "product_form": [
-          {
-            "dimensionId": "product_form",
-            "id": "data_infrastructure",
-            "dimensionName": "产品形态",
-            "name": "数据与模型基础设施"
-          }
-        ],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [
-          {
-            "dimensionId": "deployment_model",
-            "id": "on_premise",
-            "dimensionName": "部署形态",
-            "name": "本地部署"
-          }
-        ],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "speech_audio",
-          "name": "语音与音频"
-        },
-        {
-          "dimensionId": "product_form",
-          "id": "data_infrastructure",
-          "dimensionName": "产品形态",
-          "name": "数据与模型基础设施"
-        },
-        {
-          "dimensionId": "deployment_model",
-          "id": "on_premise",
-          "dimensionName": "部署形态",
-          "name": "本地部署"
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "product_form",
-          "id": "data_infrastructure",
-          "dimensionName": "产品形态",
-          "name": "数据与模型基础设施"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "speech_audio",
-          "name": "语音与音频"
-        },
-        {
-          "dimensionId": "deployment_model",
-          "id": "on_premise",
-          "dimensionName": "部署形态",
-          "name": "本地部署"
-        }
-      ],
-      "entityIds": [
-        "EN-ea3bd73e2b506e00",
-        "EN-6fcba5d96a4fadfd",
-        "EN-c70eca6b0f88f44d"
-      ],
-      "entityNames": [
-        "Meta",
-        "xAI",
-        "Anthropic"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://techfundingnews.com/ex-goldman-sachs-and-meta-founders-raise-3m-to-build-the-voice-ai-infrastructure-global-tech-giants-overlooked",
-      "publisher": "techfundingnews.com"
-    },
-    {
-      "id": "EV-712bb6241160c4c5",
-      "dataDate": "2026-07-12",
-      "date": "2026-07-12",
-      "updatedDate": "2026-07-12",
-      "eventType": "model_release",
-      "eventTypeLabel": "模型发布",
-      "eventGroup": "模型、产品与服务",
-      "status": "completed",
-      "statusLabel": "已完成",
       "publicationStatus": "verified",
-      "title": "阶跃星辰发布 Step Edge 端侧模型全家桶",
+      "title": "谷歌推送 Android 17 正式版，深度集成 AI 功能",
       "originalTitle": "",
-      "subject": "阶跃星辰",
-      "action": "发布 Step Edge 端侧模型",
-      "object": "全家桶",
-      "metrics": [
-        "400%",
-        "90%"
-      ],
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "谷歌推送 Android 17 正式版，深度集成 AI 功能",
+      "metrics": [],
       "locations": [],
       "missingFields": [],
       "conflicts": [],
@@ -179,8 +72,8 @@
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
-          "id": "on_device",
-          "name": "端侧"
+          "id": "multimodal",
+          "name": "多模态"
         },
         {
           "dimensionId": "technology",
@@ -198,24 +91,24 @@
             "name": "模型"
           }
         ],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [
+        "use_case": [
           {
-            "dimensionId": "deployment_model",
-            "id": "edge_device",
-            "dimensionName": "部署形态",
-            "name": "边缘与端侧"
+            "dimensionId": "use_case",
+            "id": "content_creation",
+            "dimensionName": "应用场景",
+            "name": "内容创作"
           }
         ],
+        "industry": [],
+        "deployment_model": [],
         "target_user": []
       },
       "classifications": [
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
-          "id": "on_device",
-          "name": "端侧"
+          "id": "multimodal",
+          "name": "多模态"
         },
         {
           "dimensionId": "technology",
@@ -230,10 +123,10 @@
           "name": "模型"
         },
         {
-          "dimensionId": "deployment_model",
-          "id": "edge_device",
-          "dimensionName": "部署形态",
-          "name": "边缘与端侧"
+          "dimensionId": "use_case",
+          "id": "content_creation",
+          "dimensionName": "应用场景",
+          "name": "内容创作"
         }
       ],
       "displayTags": [
@@ -244,37 +137,58 @@
           "name": "模型"
         },
         {
+          "dimensionId": "use_case",
+          "id": "content_creation",
+          "dimensionName": "应用场景",
+          "name": "内容创作"
+        },
+        {
           "dimensionId": "technology",
           "dimensionName": "技术",
-          "id": "on_device",
-          "name": "端侧"
+          "id": "multimodal",
+          "name": "多模态"
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "speech_audio",
           "name": "语音与音频"
-        },
-        {
-          "dimensionId": "deployment_model",
-          "id": "edge_device",
-          "dimensionName": "部署形态",
-          "name": "边缘与端侧"
         }
       ],
       "entityIds": [
-        "EN-2c348893efb2316e"
+        "EN-bbdefa2950f49882",
+        "EN-3a7bd3e2360a3d29",
+        "EN-e0bab6f6c58bfe4e",
+        "EN-afe83c198e329ef2"
       ],
       "entityNames": [
-        "StepFun"
+        "Google",
+        "Apple",
+        "Android 17",
+        "Pixel"
       ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://ithome.com/0/975/681.htm",
+      "productName": "Android 17",
+      "products": [
+        {
+          "name": "Android 17",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Google"
+          ]
+        },
+        {
+          "name": "Pixel",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Google"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/965/145.htm",
       "publisher": "IT之家（RSS）"
     },
     {
-      "id": "EV-175af8c7b8146340",
+      "id": "EV-dad8c827d14f2799",
       "dataDate": "2026-06-12",
       "date": "2026-06-12",
       "updatedDate": "2026-06-12",
@@ -284,119 +198,14 @@
       "status": "completed",
       "statusLabel": "已完成",
       "publicationStatus": "verified",
-      "title": "xAI 发布 Grok Build 插件市场，首发集成 MongoDB、Vercel、Sentry、Chrome DevTools、Cloudflare 等插件",
+      "title": "可检测 AI 音乐，Deezer 为 Spotify、Apple Music 等第三方平台推出免费工具",
       "originalTitle": "",
-      "subject": "xAI",
-      "action": "发布",
-      "object": "Grok Build 插件市场，首发集成 MongoDB、Vercel、Sentry、Chrome DevTools、Cloudflare 等插件",
-      "metrics": [
-        "67.3%"
-      ],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "code_generation",
-          "name": "代码生成"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "speech_audio",
-          "name": "语音与音频"
-        }
-      ],
-      "facets": {
-        "product_form": [],
-        "use_case": [
-          {
-            "dimensionId": "use_case",
-            "id": "software_development",
-            "dimensionName": "应用场景",
-            "name": "软件开发"
-          }
-        ],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "code_generation",
-          "name": "代码生成"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "speech_audio",
-          "name": "语音与音频"
-        },
-        {
-          "dimensionId": "use_case",
-          "id": "software_development",
-          "dimensionName": "应用场景",
-          "name": "软件开发"
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "use_case",
-          "id": "software_development",
-          "dimensionName": "应用场景",
-          "name": "软件开发"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "code_generation",
-          "name": "代码生成"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "speech_audio",
-          "name": "语音与音频"
-        }
-      ],
-      "entityIds": [
-        "EN-6fcba5d96a4fadfd",
-        "EN-bbdefa2950f49882"
-      ],
-      "entityNames": [
-        "xAI",
-        "Google"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://marktechpost.com/2026/06/11/xai-ships-grok-build-plugin-marketplace-with-mongodb-vercel-sentry-chrome-devtools-cloudflare-and-superpowers-plugins-at-launch",
-      "publisher": "MarkTechPost（RSS）"
-    },
-    {
-      "id": "EV-b902c7cffb30dec3",
-      "dataDate": "2026-06-09",
-      "date": "2026-06-08",
-      "updatedDate": "2026-06-09",
-      "eventType": "model_release",
-      "eventTypeLabel": "模型发布",
-      "eventGroup": "模型、产品与服务",
-      "status": "completed",
-      "statusLabel": "已完成",
-      "publicationStatus": "verified",
-      "title": "Microsoft AI 推出 MAI-Transcribe-1.5 语音转文本模型",
-      "originalTitle": "",
-      "subject": "Microsoft AI",
-      "action": "推出 MAI-Transcribe-1.5 语音转文本模型",
-      "object": "Microsoft AI 推出 MAI-Transcribe-1.5 语音转文本模型",
+      "subject": "可检测 AI 音乐，Deezer 为 Spotify、Apple Music 等第三方平台",
+      "action": "推出",
+      "object": "免费工具",
       "metrics": [],
       "locations": [],
-      "missingFields": [
-        "object"
-      ],
+      "missingFields": [],
       "conflicts": [],
       "tags": [
         {
@@ -430,15 +239,19 @@
         }
       ],
       "entityIds": [
-        "EN-9fbf261b62c1d7c0"
+        "EN-0aa590cbbdb3835a",
+        "EN-2b78da3dc866654e",
+        "EN-3a7bd3e2360a3d29"
       ],
       "entityNames": [
-        "Microsoft"
+        "可检测 AI 音乐",
+        "Spotify",
+        "Apple"
       ],
       "productName": "",
       "products": [],
-      "sourceUrl": "https://marktechpost.com/2026/06/08/microsoft-ai-introduces-mai-transcribe-1-5-2-4-wer-on-artificial-analysis-best-in-class-fleurs-accuracy-and-up-to-5x-faster-long-audio-transcription",
-      "publisher": "MarkTechPost（RSS）"
+      "sourceUrl": "https://ithome.com/0/963/320.htm",
+      "publisher": "IT之家（RSS）"
     },
     {
       "id": "EV-2258329f33d413cf",
@@ -510,13 +323,23 @@
         }
       ],
       "entityIds": [
-        "EN-8d4321d936320802"
+        "EN-8d4321d936320802",
+        "EN-12ab68e37d104d27"
       ],
       "entityNames": [
-        "NVIDIA"
+        "NVIDIA",
+        "Nemotron 3.5 ASR"
       ],
-      "productName": "",
-      "products": [],
+      "productName": "Nemotron 3.5 ASR",
+      "products": [
+        {
+          "name": "Nemotron 3.5 ASR",
+          "type": "模型",
+          "ownerNames": [
+            "NVIDIA"
+          ]
+        }
+      ],
       "sourceUrl": "https://marktechpost.com/2026/06/06/nvidia-releases-nemotron-3-5-asr-a-600m-parameter-cache-aware-streaming-model-transcribing-40-language-locales-in-real-time",
       "publisher": "MarkTechPost（RSS）"
     },
@@ -536,7 +359,9 @@
       "subject": "Google DeepMind",
       "action": "发布 Gemma 4 12B：开源多模态模型",
       "object": "，16GB 内存笔记本即可运行",
-      "metrics": [],
+      "metrics": [
+        "16 GB"
+      ],
       "locations": [],
       "missingFields": [],
       "conflicts": [],
@@ -627,21 +452,353 @@
         }
       ],
       "entityIds": [
-        "EN-2b6e51bec93e86c1"
+        "EN-2b6e51bec93e86c1",
+        "EN-4d09c69c19f5f67b",
+        "EN-085598c00f2aaccf",
+        "EN-a3c3b987b09fc1bb"
       ],
       "entityNames": [
-        "Google DeepMind"
+        "Google DeepMind",
+        "DeepMind",
+        "Gemma 4",
+        "Gemma 4 12"
+      ],
+      "productName": "DeepMind",
+      "products": [
+        {
+          "name": "DeepMind",
+          "type": "模型",
+          "ownerNames": [
+            "Google DeepMind"
+          ]
+        },
+        {
+          "name": "Gemma 4",
+          "type": "模型",
+          "ownerNames": [
+            "Google DeepMind"
+          ]
+        },
+        {
+          "name": "Gemma 4 12",
+          "type": "模型",
+          "ownerNames": [
+            "Google DeepMind"
+          ]
+        }
+      ],
+      "sourceUrl": "https://the-decoder.com/google-deepminds-gemma-4-12b-squeezes-multimodal-ai-onto-a-laptop-with-just-16-gb-of-ram",
+      "publisher": "The Decoder：AI News（RSS）"
+    },
+    {
+      "id": "EV-d99037f2ed8db897",
+      "dataDate": "2026-05-25",
+      "date": "2026-05-25",
+      "updatedDate": "2026-05-25",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "阶跃星辰发布StepAudio 2.5 Realtime：一款具有角色扮演RLHF和副语言理解的端到端语音模型",
+      "originalTitle": "",
+      "subject": "阶跃星辰",
+      "action": "发布",
+      "object": "StepAudio 2.5 Realtime：一款具有角色扮演RLHF和副语言理解的端到端语音模型",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "speech_audio",
+          "name": "语音与音频"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "speech_audio",
+          "name": "语音与音频"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "speech_audio",
+          "name": "语音与音频"
+        }
+      ],
+      "entityIds": [
+        "EN-2c348893efb2316e",
+        "EN-f77d48bcb475d189",
+        "EN-ed501d3e2d977553"
+      ],
+      "entityNames": [
+        "StepFun",
+        "阶跃星辰",
+        "StepAudio 2.5 Realtime"
+      ],
+      "productName": "StepAudio 2.5 Realtime",
+      "products": [
+        {
+          "name": "StepAudio 2.5 Realtime",
+          "type": "产品/服务",
+          "ownerNames": [
+            "StepFun"
+          ]
+        }
+      ],
+      "sourceUrl": "https://marktechpost.com/2026/05/24/stepfun-releases-stepaudio-2-5-realtime-an-end-to-end-voice-model-with-roleplay-specific-rlhf-and-paralinguistic-comprehension",
+      "publisher": "MarkTechPost（RSS）"
+    },
+    {
+      "id": "EV-631dce4dc135d01b",
+      "dataDate": "2026-06-04",
+      "date": "2026-06-04",
+      "updatedDate": "2026-06-04",
+      "eventType": "lawsuit_settlement",
+      "eventTypeLabel": "诉讼与和解",
+      "eventGroup": "组织、政策与法律",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "深陷版权诉讼仍受资本热捧，AI 音乐生成公司 Suno 再融资 4 亿美元",
+      "originalTitle": "",
+      "subject": "深陷版权",
+      "action": "诉讼",
+      "object": "仍受资本热捧，AI 音乐生成公司 Suno 再融资 4 亿美元",
+      "metrics": [
+        "6.1 万",
+        "4 亿",
+        "27.11 亿",
+        "54 亿",
+        "366.04 亿"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "speech_audio",
+          "name": "语音与音频"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "content_creation",
+            "dimensionName": "应用场景",
+            "name": "内容创作"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "speech_audio",
+          "name": "语音与音频"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "content_creation",
+          "dimensionName": "应用场景",
+          "name": "内容创作"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "content_creation",
+          "dimensionName": "应用场景",
+          "name": "内容创作"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "speech_audio",
+          "name": "语音与音频"
+        }
+      ],
+      "entityIds": [
+        "EN-b2968d9ba72f4818"
+      ],
+      "entityNames": [
+        "深陷版权"
       ],
       "productName": "",
       "products": [],
-      "sourceUrl": "https://the-decoder.com/google-deepminds-gemma-4-12b-squeezes-multimodal-ai-onto-a-laptop-with-just-16-gb-of-ram",
-      "publisher": "The Decoder：AI News（RSS）"
+      "sourceUrl": "https://ithome.com/0/959/592.htm",
+      "publisher": "IT之家（RSS）"
     }
   ],
   "entities": [
     {
-      "id": "EN-ea3bd73e2b506e00",
-      "name": "Meta",
+      "id": "EN-bbdefa2950f49882",
+      "name": "Google",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "谷歌"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-e41fc65eb014893f",
+        "EV-dfddbb260b3d1c77",
+        "EV-2bb63a3015195f9b",
+        "EV-43b56d49df9a73a2",
+        "EV-0e84a2f49d765ce3",
+        "EV-dbbe3fd637be213f",
+        "EV-4a162c41bb82f325",
+        "EV-cf76f090a1a20a36",
+        "EV-36a9e4e908249381",
+        "EV-ef6464cf7f764835",
+        "EV-b95539d17772a4ce",
+        "EV-d1a3f5c8045e548d",
+        "EV-f949fd95df58d42d",
+        "EV-97747aee0cafd9f3",
+        "EV-c0a65877001ed413",
+        "EV-04efb4eecbb8125f",
+        "EV-6359c9f6c2609a38",
+        "EV-c2d784ef0a5376f8",
+        "EV-967239f907803753",
+        "EV-ac8f8581cd1ca75d",
+        "EV-f05783f745bc7c2c",
+        "EV-d12aa40eff40c97e",
+        "EV-96c8ce4ee89adb84",
+        "EV-caec65aef89d3b4a",
+        "EV-cabc88e1d09dec80",
+        "EV-cc3b92fe233953cf",
+        "EV-0edb0a592ca1fd67",
+        "EV-2059f42c7b2aff44",
+        "EV-77662aa9bef9efbe",
+        "EV-7e52d691a0553667",
+        "EV-b8bba030747fd3b6",
+        "EV-8aead769e84de342",
+        "EV-eddb4330fed15762",
+        "EV-2298304e18dbf493",
+        "EV-89b644ff05e6b93b",
+        "EV-9c4b862020202f6c",
+        "EV-d8c69ed782b73a34",
+        "EV-5012364af7480121",
+        "EV-abf0990dcaceb1ce",
+        "EV-d5cc9a50a9b88d2b",
+        "EV-b860d46fee913f27",
+        "EV-f953555178744c22",
+        "EV-28145c97a7237d6d",
+        "EV-c108e7cc2df7faf4",
+        "EV-916bcaee6266e0d0",
+        "EV-54c329f4c8e4227b",
+        "EV-dfba03031e5726ad",
+        "EV-009105cbcf82a638",
+        "EV-99e5df844a1bd670",
+        "EV-1b03e5dff76a50a1",
+        "EV-51dfd0d541380500",
+        "EV-ab3586268ebfab38",
+        "EV-e4b5fe493066804b",
+        "EV-8ca7da5081a2e2fc",
+        "EV-8eed6489ab514823",
+        "EV-22b8d155ce027905",
+        "EV-3ef3e18df61a00d8",
+        "EV-4bb5b24400e49ea4",
+        "EV-97a8d86baa7fffc4",
+        "EV-0ad758b04b9b5313",
+        "EV-c08837795f9e16d2",
+        "EV-9bc41f08cb0b4f39",
+        "EV-5a1422a9929c582e",
+        "EV-bff418b2959f58fb",
+        "EV-e878e56967902718",
+        "EV-5493c61bcbe58aa2",
+        "EV-cac9d9f31ef675ce",
+        "EV-dab4d3f2059e8880",
+        "EV-0d1980baa83e1e6c",
+        "EV-d53cd33e8f541a65",
+        "EV-a4f052325d0ef230",
+        "EV-ef823877347ff40f",
+        "EV-3e9a0d1be6de5096",
+        "EV-8cd7665e40729256",
+        "EV-2d56dec8dfeb2b56",
+        "EV-ad269fada2269f35",
+        "EV-bce258f8f915ff5f",
+        "EV-1df9b606627460f7",
+        "EV-39460c022e56badd"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-code_generation",
+        "TX-use_case-enterprise_operations",
+        "TX-use_case-software_development",
+        "TX-technology-mixture_of_experts",
+        "TX-industry-financial_services",
+        "TX-use_case-cybersecurity",
+        "TX-industry-retail_ecommerce",
+        "TX-technology-on_device",
+        "TX-technology-retrieval_augmented_generation",
+        "TX-technology-embodied_ai",
+        "TX-industry-media_entertainment",
+        "TX-technology-multimodal",
+        "TX-technology-video_generation",
+        "TX-technology-tool_use",
+        "TX-technology-reasoning",
+        "TX-technology-fine_tuning",
+        "TX-use_case-content_creation",
+        "TX-technology-computer_use",
+        "TX-technology-speech_audio"
+      ],
+      "relatedEntityIds": [
+        "EN-96eebba49dbbf422",
+        "EN-81e577740888ca6d",
+        "EN-1229af0aa3b0305e",
+        "EN-992eafe973f69075",
+        "EN-40f98159922ab514",
+        "EN-834ab0b6e4492d23",
+        "EN-ffc6caa049c23d48",
+        "EN-242e21e3dc6869a9",
+        "EN-151013fb8438c046",
+        "EN-77fe4e790d5bc756",
+        "EN-8d323d8bba783aa3",
+        "EN-9ff1a58a589bc318",
+        "EN-01f1074bb52ff605",
+        "EN-0e008e2c06144ec8",
+        "EN-f2c032b19edb7900",
+        "EN-d4c56709df757c56",
+        "EN-6470c8584a9d35d3",
+        "EN-b5c336c0dd1ff29c",
+        "EN-eb0cc8fb584389db",
+        "EN-d56aa2f9908f566a",
+        "EN-4baef0e41cbd7ae2",
+        "EN-e3db3da2b7dc6057"
+      ],
+      "firstSeen": "2026-05-22",
+      "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "EN-3a7bd3e2360a3d29",
+      "name": "Apple",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [],
@@ -650,300 +807,461 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-02882e6f5e1902c6",
-        "EV-427081ec574b43bb",
-        "EV-7f77e6a2d1698307",
-        "EV-b39d759a11086d41",
-        "EV-968709fe29b77eba",
-        "EV-724fc985c22215f3",
-        "EV-f64345af2affb07d",
-        "EV-1f842e1dff69bb87",
-        "EV-e58bd372c139073c",
-        "EV-cf176636839e45be",
-        "EV-9496f90f3e808992",
-        "EV-dce5de62b2e4b752",
-        "EV-ebe02c213368afae",
-        "EV-e42e55d1e11a2ba2",
-        "EV-f9eebe4e3b9b667c",
-        "EV-8f6cf12525556d0e",
-        "EV-40390136762c64d3",
-        "EV-07a5533c18e5a74e",
-        "EV-4a8dce3c9fec1bd3",
-        "EV-04873bbc8be8e70d",
-        "EV-4c0e7025692ab98c",
-        "EV-f34eec5df7f5bcb7",
-        "EV-d8f0f89fed45ae5b",
-        "EV-b78311001509be2c",
-        "EV-a4cd74ae97317e4e",
-        "EV-41e534c846124691",
-        "EV-7808c274ce0aa0bf",
-        "EV-c98d4ee7764d51b2",
-        "EV-01e414a25347cfd9",
+        "EV-f282ab8740ff0096",
+        "EV-8a8e894a84768ea5",
+        "EV-afcd5426f5c01dc7",
+        "EV-f5a50f1fed72fec3",
+        "EV-e857f9d1c1478c70",
+        "EV-fd21441fb6e143c3",
+        "EV-8a9b12665a3e40a0",
+        "EV-70cbf25f7ec2cc3a",
+        "EV-8b9e4428074bde60",
+        "EV-967239f907803753",
+        "EV-113899096a32165a",
+        "EV-cabc88e1d09dec80",
+        "EV-cc3b92fe233953cf",
+        "EV-8aead769e84de342",
+        "EV-abf0990dcaceb1ce",
+        "EV-89930fa8d1db98eb",
+        "EV-60c27ec9b857f5c2",
+        "EV-eeb687002cac5f4e",
+        "EV-99e5df844a1bd670",
+        "EV-0b2bfd57923cedd3",
+        "EV-3c51bcb5e99d2b68",
+        "EV-a736c6c64d106475",
+        "EV-dad8c827d14f2799",
+        "EV-4e6dc3ec2b3f0bd6",
+        "EV-634ce5b42f6d32f6",
+        "EV-85373b8ec9148127",
+        "EV-1ae8027c085679e9",
+        "EV-21c749570133c786",
+        "EV-52e1ac21c25a0a09",
+        "EV-591542ccc2de5be8",
+        "EV-5a1422a9929c582e",
+        "EV-8361a47c70ecd243",
+        "EV-9f9bc7ffe6228281",
+        "EV-a5ba3797b38df125",
+        "EV-a9fe726c4ea2a17b",
+        "EV-bff418b2959f58fb",
+        "EV-c5b8faec223a4caf",
+        "EV-d40a1a873015ac98",
+        "EV-da062d02015f99fb",
+        "EV-f6611268f119a172",
+        "EV-0d1980baa83e1e6c",
         "EV-ef823877347ff40f",
-        "EV-02b07069713d9a1c",
-        "EV-322796d9761a0824",
-        "EV-2d56dec8dfeb2b56",
-        "EV-2ca9d0a3ca53c3bf",
-        "EV-8fcecabca2e92b40"
+        "EV-5cd10de5c12916f0",
+        "EV-5613946bdd578a26",
+        "EV-dd902b603e2e3dbc",
+        "EV-da6678e4e865e00e",
+        "EV-8cb2374f76202ecc",
+        "EV-946569cccbd9222f",
+        "EV-b4203b10d6592bf2",
+        "EV-5eb23cdd9c14c6ea",
+        "EV-7d4b4b8d4e3599d4",
+        "EV-10e841ab47d2b1f1",
+        "EV-f2d29ca7b05c3dd9",
+        "EV-ea2b6ce4acd46366",
+        "EV-2821d0cef61b3c6a",
+        "EV-6f7c5f0abad3d4da",
+        "EV-8f497488d129fee5",
+        "EV-a8f1204b54ae6475"
       ],
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
-        "TX-technology-code_generation",
-        "TX-industry-healthcare_life_sciences",
-        "TX-use_case-software_development",
         "TX-technology-long_context",
-        "TX-technology-multimodal",
-        "TX-technology-speech_audio",
+        "TX-use_case-cybersecurity",
+        "TX-industry-retail_ecommerce",
+        "TX-technology-on_device",
         "TX-industry-media_entertainment",
+        "TX-technology-multimodal",
         "TX-technology-tool_use",
-        "TX-technology-reasoning",
-        "TX-technology-guardrails_safety",
-        "TX-technology-image_generation",
-        "TX-technology-computer_use"
+        "TX-technology-fine_tuning",
+        "TX-use_case-content_creation",
+        "TX-technology-quantization",
+        "TX-technology-speech_audio"
+      ],
+      "relatedEntityIds": [
+        "EN-af3ceabbe048a291",
+        "EN-41dcc2d4951f337b",
+        "EN-dfabe4215e8c07cb",
+        "EN-729324072d368379"
+      ],
+      "firstSeen": "2026-06-04",
+      "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "EN-e0bab6f6c58bfe4e",
+      "name": "Android 17",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-99e5df844a1bd670"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-multimodal",
+        "TX-use_case-content_creation",
+        "TX-technology-speech_audio"
       ],
       "relatedEntityIds": [],
-      "firstSeen": "2026-05-22",
-      "lastSeen": "2026-07-17"
+      "firstSeen": "2026-06-17",
+      "lastSeen": "2026-06-17"
     },
     {
-      "id": "EN-6fcba5d96a4fadfd",
-      "name": "xAI",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [
-        "Grok",
-        "SpaceXAI"
-      ],
+      "id": "EN-afe83c198e329ef2",
+      "name": "Pixel",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
-        "EV-3daefecd0453631a",
-        "EV-edcb66d0401cfb8f",
-        "EV-6180de2e02597d9d",
-        "EV-f64345af2affb07d",
-        "EV-05be25222ebd2bc2",
-        "EV-201b25d4f3cf696a",
-        "EV-e15ae1112294d59e",
-        "EV-58614476c796a67a",
-        "EV-c033ae6f9784d674",
-        "EV-3da99329ccc33816",
-        "EV-175af8c7b8146340",
-        "EV-ed58c2c69290ee4c",
-        "EV-d2a00623908ca15f",
-        "EV-d53cd33e8f541a65",
-        "EV-11a3893cb86fef69",
-        "EV-bce258f8f915ff5f",
-        "EV-4beb890f0879aeaf"
+        "EV-99e5df844a1bd670"
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-technology-code_generation",
-        "TX-use_case-software_development",
-        "TX-use_case-robotics_automation",
-        "TX-use_case-cybersecurity",
-        "TX-technology-speech_audio",
-        "TX-technology-tool_use"
+        "TX-technology-multimodal",
+        "TX-use_case-content_creation",
+        "TX-technology-speech_audio"
       ],
-      "relatedEntityIds": [
-        "EN-c4bc2d00a42f220f"
-      ],
-      "firstSeen": "2026-05-25",
-      "lastSeen": "2026-07-17"
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-17",
+      "lastSeen": "2026-06-17"
     },
     {
-      "id": "EN-c70eca6b0f88f44d",
-      "name": "Anthropic",
+      "id": "EN-0aa590cbbdb3835a",
+      "name": "可检测 AI 音乐",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "Claude Code",
-        "Claude"
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
       ],
+      "eventIds": [
+        "EV-dad8c827d14f2799"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-speech_audio"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-12",
+      "lastSeen": "2026-06-12"
+    },
+    {
+      "id": "EN-2b78da3dc866654e",
+      "name": "Spotify",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
-        "EV-7f77e6a2d1698307",
-        "EV-10c70ced68ccb31b",
-        "EV-6fe0054517fdee98",
+        "EV-20dea13a4e6100ea",
+        "EV-113899096a32165a",
+        "EV-a0d3853dd41c8ef6",
+        "EV-dad8c827d14f2799"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-model_context_protocol",
+        "TX-technology-speech_audio"
+      ],
+      "relatedEntityIds": [
+        "EN-d1ad14d4ad57d207"
+      ],
+      "firstSeen": "2026-06-12",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "EN-8d4321d936320802",
+      "name": "NVIDIA",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-4eaf3aabecae6016",
+        "EV-87432dbb99cd6033",
+        "EV-6e516b6e68def9cf",
+        "EV-e41fc65eb014893f",
+        "EV-040fc355bc12a750",
         "EV-80e54c9a390da293",
-        "EV-5ca4c08ec3e2c3b7",
-        "EV-7aaed0a2ae5cf8b6",
-        "EV-21c2e81a7c073e04",
-        "EV-edcb66d0401cfb8f",
-        "EV-052d7d9120c683d1",
-        "EV-19d4c2ef8d9f338a",
-        "EV-6180de2e02597d9d",
-        "EV-f64345af2affb07d",
-        "EV-05be25222ebd2bc2",
-        "EV-201b25d4f3cf696a",
-        "EV-853559d61ae2e313",
-        "EV-7958f9adf8f62577",
-        "EV-06fd0cc175652354",
-        "EV-ed8260ee9a7a80af",
-        "EV-5964027086487940",
-        "EV-e1a4bc40db4a9d8f",
-        "EV-c81cb21337a9bb98",
-        "EV-94e0afb44c320c99",
-        "EV-7f2811d2272cf4a3",
-        "EV-6415a58637893b34",
+        "EV-4118202ed0f91895",
+        "EV-236cbc2d64f0c455",
+        "EV-0e84a2f49d765ce3",
+        "EV-cafe435ddd007821",
+        "EV-36d484148fbd3424",
+        "EV-47a16db069ed320e",
+        "EV-cf76f090a1a20a36",
+        "EV-7263caa45bbf168e",
+        "EV-234ad54940674bf6",
+        "EV-5b16886442234f81",
         "EV-ef6464cf7f764835",
-        "EV-727ba25770d1f897",
-        "EV-4b0a7d68040c37aa",
-        "EV-f949fd95df58d42d",
-        "EV-b240fb11e65b018e",
-        "EV-30e8529ddeb228c8",
-        "EV-3398ae53a199be16",
-        "EV-0d5a32aca724d30e",
-        "EV-a8a8f26c5128d894",
-        "EV-51645a3b1e730105",
-        "EV-7c899d5decafc42f",
-        "EV-26cd4d692404e5c6",
-        "EV-1c2723ad61d192bd",
-        "EV-84226288807f817b",
-        "EV-8bf42c1816e772ba",
-        "EV-0347414d81e7f02e",
-        "EV-917a138950a21f91",
-        "EV-fd303844e336b9ee",
-        "EV-2bd337245c920bc8",
-        "EV-302018f2e960a8bf",
-        "EV-000f2abf549268a6",
-        "EV-ebe02c213368afae",
-        "EV-d39b53ca7b84b9ca",
-        "EV-cedeae902fd1263d",
-        "EV-3cd088098be5d0d4",
-        "EV-c410d77c8d531e5f",
-        "EV-e130583e34ab9d4c",
-        "EV-e31f0616ad878b7d",
-        "EV-598888cce208de5c",
-        "EV-d40a4e1b7a53cabe",
-        "EV-268250d426c1a4a0",
-        "EV-2059f42c7b2aff44",
-        "EV-9fac0983ab657689",
-        "EV-9ab36b0012b5c8c1",
-        "EV-eb02b3d3b25fe584",
-        "EV-63fdf001c22a0ed4",
-        "EV-2f81b0d48d128f5c",
-        "EV-8daf217ff024ac4a",
-        "EV-01212a5ad9db6a20",
-        "EV-13e06fc12cc3fb7c",
-        "EV-1662a98c563d3dce",
-        "EV-3b5cb867fdaba28f",
-        "EV-761d76b722321673",
-        "EV-9c4b862020202f6c",
-        "EV-ff748f8529cd80e7",
-        "EV-09610316ac52221e",
-        "EV-918fc324de3117bd",
-        "EV-c0f86afbefa2e0a6",
-        "EV-87ad2bdf8cd4b0c8",
-        "EV-860b90c017deaa59",
-        "EV-445db243814e88d0",
-        "EV-722c2a8dd6b70abd",
-        "EV-abf0990dcaceb1ce",
-        "EV-46b9ae8e68164b93",
-        "EV-9659eb492a9eea1b",
-        "EV-cf883e02c693dfea",
-        "EV-3ff2a155035d01e7",
-        "EV-644337db309a1c82",
-        "EV-7e6e0470ea99a6eb",
-        "EV-cb08f263d23e6c00",
-        "EV-09d3ce5611881ed4",
-        "EV-9536c76cee278fcb",
-        "EV-ad2c8dc4a08de64c",
-        "EV-53f7c11bfe7b50d1",
-        "EV-28145c97a7237d6d",
-        "EV-491e7b4b506ab3e3",
-        "EV-2af2957a10b3c198",
-        "EV-67d9c51e97dfbb7b",
-        "EV-56f80f42cf6a7096",
-        "EV-60c27ec9b857f5c2",
-        "EV-745adb0e9f7a75a2",
-        "EV-d50a2832bb30b287",
-        "EV-832fa2db95cfea6e",
-        "EV-f2acdcbe3b644340",
-        "EV-91d9e2c780593bbb",
-        "EV-461b38cb8f56b067",
-        "EV-61b97c0ee6ad83b3",
-        "EV-57f083a39393d841",
-        "EV-6007062e7e4a6f5e",
-        "EV-adbdaa251b42ec79",
-        "EV-43fdb17a23e13f97",
-        "EV-689538e8159887de",
-        "EV-68fcce7fde89e5d7",
-        "EV-b0145ffd99b55e66",
-        "EV-c7a2774b07554f5d",
-        "EV-e09bff5515b1896b",
-        "EV-f107a073158480a9",
-        "EV-f1418d9e3b1413b7",
-        "EV-f5dd192f6d4e04a3",
-        "EV-ff3ae595bf49ccbf",
-        "EV-3371b45e53949464",
-        "EV-9127c613a365044b",
-        "EV-c5b8faec223a4caf",
-        "EV-fd527f43b5eb5f0a",
-        "EV-2de6ff1a7aebd6e7",
-        "EV-59933d63c4051085",
-        "EV-d83bfcd73c850580",
-        "EV-1d972159120db2fc",
-        "EV-4a727d54055d6d0e",
-        "EV-dbeae330706b53ca",
-        "EV-abaf05e513f88a4f",
-        "EV-d2a00623908ca15f",
-        "EV-4f4274fb5920a8b4",
-        "EV-0aa2e53c51b2b8e5",
-        "EV-2d56dec8dfeb2b56",
-        "EV-2ca9d0a3ca53c3bf",
-        "EV-aef95763358b4ec8",
-        "EV-6266c73d470e8aef",
-        "EV-d26ad59ffe89d45a",
-        "EV-9705a8de3c2e9653",
-        "EV-68edd592c36dccd3",
-        "EV-d49da50484ba781f",
-        "EV-ad269fada2269f35",
-        "EV-978474e4af50eb35"
+        "EV-b95539d17772a4ce",
+        "EV-f63462e34ea40699",
+        "EV-4faa2bcf2e42e60c",
+        "EV-9ee3c0ec243b6129",
+        "EV-58c1cc3749294649",
+        "EV-6b51b1b6fe22c540",
+        "EV-c2800c1c5a3f568f",
+        "EV-1ff169120ed385f6",
+        "EV-47d14d0aa4d4414e",
+        "EV-f7b60c0c63403f8c",
+        "EV-6139380f3362803b",
+        "EV-96c8ce4ee89adb84",
+        "EV-53f881da31630a04",
+        "EV-6a2f3e9a22edff64",
+        "EV-f784003febc1d9eb",
+        "EV-587c18cb1837c74f",
+        "EV-bd66e5b45a6a577e",
+        "EV-53564b1f0fd2214b",
+        "EV-7fb25ff3d853c314",
+        "EV-8a91e14f37d32b4d",
+        "EV-13f0b515194f3245",
+        "EV-5d50eb202b478bd4",
+        "EV-e2db9c4e7c16ae7a",
+        "EV-69fbe85ca4ac81cd",
+        "EV-b7ba9acba80a852e",
+        "EV-4bb5b24400e49ea4",
+        "EV-568d2aeab5234e48",
+        "EV-b986a633cca27df9",
+        "EV-2258329f33d413cf",
+        "EV-4bf0e4043c3562f2",
+        "EV-309ea4fc27a66485",
+        "EV-fa1b1efd77f36d56",
+        "EV-4026c95d4c01b96e",
+        "EV-631197767a45d34c",
+        "EV-67f32771d69084d6",
+        "EV-d2ac9700c86913da",
+        "EV-d43a561da59b2897",
+        "EV-f5755fccd5731063",
+        "EV-34929bdd016dc8d6",
+        "EV-710b145230faa692",
+        "EV-0b49d637d7c07ce0"
       ],
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
         "TX-technology-code_generation",
-        "TX-use_case-customer_service",
         "TX-industry-healthcare_life_sciences",
-        "TX-use_case-enterprise_operations",
-        "TX-use_case-software_development",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
-        "TX-industry-financial_services",
-        "TX-technology-on_device",
         "TX-use_case-cybersecurity",
-        "TX-use_case-data_analysis",
-        "TX-industry-retail_ecommerce",
-        "TX-technology-human_in_loop",
-        "TX-industry-telecommunications",
-        "TX-technology-multimodal",
-        "TX-technology-retrieval_augmented_generation",
+        "TX-technology-on_device",
         "TX-technology-embodied_ai",
-        "TX-technology-speech_audio",
+        "TX-industry-automotive_transportation",
         "TX-technology-open_weights",
-        "TX-technology-tool_use",
-        "TX-technology-model_context_protocol",
-        "TX-industry-government_public_sector",
+        "TX-industry-telecommunications",
+        "TX-industry-media_entertainment",
+        "TX-use_case-robotics_automation",
+        "TX-technology-multimodal",
+        "TX-technology-guardrails_safety",
+        "TX-technology-reasoning",
         "TX-technology-fine_tuning",
-        "TX-industry-education"
+        "TX-technology-image_generation",
+        "TX-technology-inference_optimization",
+        "TX-technology-speech_audio"
       ],
       "relatedEntityIds": [
-        "EN-3a9b395103419892",
-        "EN-7d3194f79e645c42",
-        "EN-9612b6f6884e062f"
+        "EN-0f3360879e746531",
+        "EN-51fd7dc086fcb858",
+        "EN-9e193e1ec8d75d41",
+        "EN-8395dc051feafc4c",
+        "EN-936f01f91fdadf69",
+        "EN-2f354de778e6a6da",
+        "EN-b5738c169b693bee",
+        "EN-1dc405a4cda895d0",
+        "EN-12ab68e37d104d27",
+        "EN-a3266ab9e10d6105",
+        "EN-ab9e3beebd83960d",
+        "EN-9fbf261b62c1d7c0",
+        "EN-e246a1f9a090075b"
       ],
-      "firstSeen": "2026-03-13",
+      "firstSeen": "2025-03-18",
       "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "EN-12ab68e37d104d27",
+      "name": "Nemotron 3.5 ASR",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-2258329f33d413cf"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-open_weights",
+        "TX-technology-speech_audio"
+      ],
+      "relatedEntityIds": [
+        "EN-8d4321d936320802"
+      ],
+      "firstSeen": "2026-06-06",
+      "lastSeen": "2026-06-06"
+    },
+    {
+      "id": "EN-2b6e51bec93e86c1",
+      "name": "Google DeepMind",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "谷歌 DeepMind"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-6f092cfc7a064d64",
+        "EV-d4e44892226be468",
+        "EV-1ac32035d5e425e1",
+        "EV-67ef7accd26a07a0",
+        "EV-a7e1ecd212474e00",
+        "EV-d961d3ad02f6ae14",
+        "EV-7c6a9f4ee4829976",
+        "EV-93c6ccf23cc422cb",
+        "EV-5babb43f4b4d302f",
+        "EV-8eed6489ab514823",
+        "EV-3ef3e18df61a00d8",
+        "EV-568d2aeab5234e48",
+        "EV-f68e00bb9fd49fac",
+        "EV-3e9a0d1be6de5096",
+        "EV-e96aba142e46eba1",
+        "EV-68edd592c36dccd3",
+        "EV-d49da50484ba781f"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-vision_language",
+        "TX-technology-code_generation",
+        "TX-use_case-software_development",
+        "TX-technology-mixture_of_experts",
+        "TX-technology-retrieval_augmented_generation",
+        "TX-use_case-research_science",
+        "TX-industry-media_entertainment",
+        "TX-technology-multimodal",
+        "TX-technology-video_generation",
+        "TX-technology-image_generation",
+        "TX-technology-speech_audio"
+      ],
+      "relatedEntityIds": [
+        "EN-0e008e2c06144ec8",
+        "EN-7ed9c9e7c260ed06",
+        "EN-01f1074bb52ff605",
+        "EN-4d09c69c19f5f67b",
+        "EN-d56aa2f9908f566a",
+        "EN-085598c00f2aaccf",
+        "EN-a3c3b987b09fc1bb"
+      ],
+      "firstSeen": "2026-06-02",
+      "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "EN-4d09c69c19f5f67b",
+      "name": "DeepMind",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-5babb43f4b4d302f",
+        "EV-568d2aeab5234e48",
+        "EV-f68e00bb9fd49fac"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-code_generation",
+        "TX-use_case-software_development",
+        "TX-technology-mixture_of_experts",
+        "TX-industry-media_entertainment",
+        "TX-technology-multimodal",
+        "TX-technology-video_generation",
+        "TX-technology-image_generation",
+        "TX-technology-speech_audio"
+      ],
+      "relatedEntityIds": [
+        "EN-2b6e51bec93e86c1"
+      ],
+      "firstSeen": "2026-06-04",
+      "lastSeen": "2026-07-01"
+    },
+    {
+      "id": "EN-085598c00f2aaccf",
+      "name": "Gemma 4",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-f68e00bb9fd49fac"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-code_generation",
+        "TX-use_case-software_development",
+        "TX-technology-multimodal",
+        "TX-technology-speech_audio"
+      ],
+      "relatedEntityIds": [
+        "EN-2b6e51bec93e86c1"
+      ],
+      "firstSeen": "2026-06-04",
+      "lastSeen": "2026-06-04"
+    },
+    {
+      "id": "EN-a3c3b987b09fc1bb",
+      "name": "Gemma 4 12",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-f68e00bb9fd49fac"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-code_generation",
+        "TX-use_case-software_development",
+        "TX-technology-multimodal",
+        "TX-technology-speech_audio"
+      ],
+      "relatedEntityIds": [
+        "EN-2b6e51bec93e86c1"
+      ],
+      "firstSeen": "2026-06-04",
+      "lastSeen": "2026-06-04"
     },
     {
       "id": "EN-2c348893efb2316e",
@@ -951,9 +1269,41 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "阶跃星辰"
+        "阶跃星辰",
+        "阶跃"
       ],
       "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-2c1fc2143d7d4a6a",
+        "EV-6824e76c4aa69a71",
+        "EV-ee363e679d12329c",
+        "EV-712bb6241160c4c5",
+        "EV-d99037f2ed8db897"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-on_device",
+        "TX-technology-speech_audio"
+      ],
+      "relatedEntityIds": [
+        "EN-8b619895a83e35c8",
+        "EN-44a9bf3b11abea5c",
+        "EN-ed501d3e2d977553"
+      ],
+      "firstSeen": "2026-05-25",
+      "lastSeen": "2026-07-14"
+    },
+    {
+      "id": "EN-f77d48bcb475d189",
+      "name": "阶跃星辰",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
       "datasetScopes": [
         "canonical"
       ],
@@ -973,368 +1323,49 @@
       "lastSeen": "2026-07-14"
     },
     {
-      "id": "EN-bbdefa2950f49882",
-      "name": "Google",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [
-        "谷歌"
-      ],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-10c70ced68ccb31b",
-        "EV-d4d7b019ff0015df",
-        "EV-21c2e81a7c073e04",
-        "EV-54e23045d3334e65",
-        "EV-43b56d49df9a73a2",
-        "EV-6180de2e02597d9d",
-        "EV-968709fe29b77eba",
-        "EV-dbbe3fd637be213f",
-        "EV-4a162c41bb82f325",
-        "EV-9fc8a84b3d0797d1",
-        "EV-57105df2fcada2e5",
-        "EV-36a9e4e908249381",
-        "EV-ef6464cf7f764835",
-        "EV-b95539d17772a4ce",
-        "EV-df5831ff5762432d",
-        "EV-f949fd95df58d42d",
-        "EV-a9a3b5b56befe593",
-        "EV-f7e41493addd1104",
-        "EV-3398ae53a199be16",
-        "EV-04efb4eecbb8125f",
-        "EV-6359c9f6c2609a38",
-        "EV-04ee2bc4ac888358",
-        "EV-c2d784ef0a5376f8",
-        "EV-302018f2e960a8bf",
-        "EV-aa962ef7ec9a5c50",
-        "EV-db1d74f0bfcc1b04",
-        "EV-f05783f745bc7c2c",
-        "EV-52508b70ccd2cc0b",
-        "EV-f9eebe4e3b9b667c",
-        "EV-c410d77c8d531e5f",
-        "EV-268250d426c1a4a0",
-        "EV-04873bbc8be8e70d",
-        "EV-2059f42c7b2aff44",
-        "EV-9fac0983ab657689",
-        "EV-4c0e7025692ab98c",
-        "EV-b8bba030747fd3b6",
-        "EV-8daf217ff024ac4a",
-        "EV-2298304e18dbf493",
-        "EV-89b644ff05e6b93b",
-        "EV-8fad966ecb9b1d31",
-        "EV-9c4b862020202f6c",
-        "EV-d8c69ed782b73a34",
-        "EV-c0f86afbefa2e0a6",
-        "EV-abf0990dcaceb1ce",
-        "EV-c60208ea9b51f47a",
-        "EV-c6359191a071b538",
-        "EV-b860d46fee913f27",
-        "EV-09d3ce5611881ed4",
-        "EV-c033ae6f9784d674",
-        "EV-28145c97a7237d6d",
-        "EV-e6771f58d7c2a050",
-        "EV-b8b39e635aa7511f",
-        "EV-54c329f4c8e4227b",
-        "EV-7808c274ce0aa0bf",
-        "EV-c3cbf5d7f860c693",
-        "EV-009105cbcf82a638",
-        "EV-b9a009b48d4cbf85",
-        "EV-b3809ff557361cc2",
-        "EV-bc71b0ddefa209a9",
-        "EV-a85fe927f20c2595",
-        "EV-b4f3dcac8cc230d9",
-        "EV-175af8c7b8146340",
-        "EV-d2d1834222ab32d3",
-        "EV-22b8d155ce027905",
-        "EV-d6f638da9e1d3b46",
-        "EV-0ad758b04b9b5313",
-        "EV-3ed6744b43d9b8df",
-        "EV-c08837795f9e16d2",
-        "EV-4a3cb762183581cd",
-        "EV-59933d63c4051085",
-        "EV-588cf9609e44edc9",
-        "EV-7fa23cf0102a8f92",
-        "EV-c28e0d02272537d8",
-        "EV-d31057c6f6ec28ba",
-        "EV-342799d4e68e7416",
-        "EV-d53cd33e8f541a65",
-        "EV-a4f052325d0ef230",
-        "EV-ef823877347ff40f",
-        "EV-3e9a0d1be6de5096",
-        "EV-8cd7665e40729256",
-        "EV-2d56dec8dfeb2b56",
-        "EV-6266c73d470e8aef",
-        "EV-ad269fada2269f35",
-        "EV-bce258f8f915ff5f"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-industry-manufacturing",
-        "TX-technology-code_generation",
-        "TX-use_case-enterprise_operations",
-        "TX-use_case-software_development",
-        "TX-use_case-robotics_automation",
-        "TX-technology-long_context",
-        "TX-technology-mixture_of_experts",
-        "TX-industry-financial_services",
-        "TX-technology-on_device",
-        "TX-use_case-cybersecurity",
-        "TX-industry-retail_ecommerce",
-        "TX-technology-human_in_loop",
-        "TX-industry-telecommunications",
-        "TX-industry-technology",
-        "TX-technology-multimodal",
-        "TX-technology-retrieval_augmented_generation",
-        "TX-use_case-knowledge_search",
-        "TX-technology-embodied_ai",
-        "TX-technology-speech_audio",
-        "TX-industry-media_entertainment",
-        "TX-technology-video_generation",
-        "TX-technology-tool_use",
-        "TX-technology-reasoning",
-        "TX-technology-fine_tuning",
-        "TX-technology-computer_use"
-      ],
-      "relatedEntityIds": [
-        "EN-96eebba49dbbf422",
-        "EN-81e577740888ca6d",
-        "EN-1229af0aa3b0305e",
-        "EN-992eafe973f69075",
-        "EN-0e008e2c06144ec8"
-      ],
-      "firstSeen": "2026-05-22",
-      "lastSeen": "2026-07-17"
-    },
-    {
-      "id": "EN-9fbf261b62c1d7c0",
-      "name": "Microsoft",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [
-        "微软"
-      ],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-d4baddef1dda157c",
-        "EV-32adf75fbfda29bb",
-        "EV-adf92ecb7cd8714f",
-        "EV-f074a62a26f37ae3",
-        "EV-fc395b2413c9b34a",
-        "EV-47a16db069ed320e",
-        "EV-49c6291694fb6c7b",
-        "EV-283e88bdd15ed87e",
-        "EV-2fab4396000198d2",
-        "EV-3fb492fb45980541",
-        "EV-b95539d17772a4ce",
-        "EV-4763b46821ab746e",
-        "EV-58c1cc3749294649",
-        "EV-3398ae53a199be16",
-        "EV-7c899d5decafc42f",
-        "EV-9fb217d7e855c8f7",
-        "EV-268250d426c1a4a0",
-        "EV-7309586168387ad8",
-        "EV-6dbf6cfbb35fe77c",
-        "EV-09610316ac52221e",
-        "EV-4ee99f92b011d16f",
-        "EV-c0f86afbefa2e0a6",
-        "EV-e594a091ce2940db",
-        "EV-28145c97a7237d6d",
-        "EV-3da99329ccc33816",
-        "EV-3aca8c193bf251ee",
-        "EV-d2d1834222ab32d3",
-        "EV-b902c7cffb30dec3",
-        "EV-4905e6385c8f4c3a",
-        "EV-ae89898e7aa4a4d6",
-        "EV-d596f111808bd55b",
-        "EV-a4f052325d0ef230",
-        "EV-ec15684583d6f7a9",
-        "EV-62df953d81def866"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-industry-manufacturing",
-        "TX-industry-healthcare_life_sciences",
-        "TX-use_case-robotics_automation",
-        "TX-technology-on_device",
-        "TX-use_case-cybersecurity",
-        "TX-industry-retail_ecommerce",
-        "TX-industry-telecommunications",
-        "TX-technology-speech_audio",
-        "TX-technology-open_weights",
-        "TX-technology-reasoning",
-        "TX-technology-model_context_protocol",
-        "TX-technology-computer_use"
-      ],
-      "relatedEntityIds": [
-        "EN-597d8c4afa5fe3d6",
-        "EN-8d4321d936320802"
-      ],
-      "firstSeen": "2026-05-20",
-      "lastSeen": "2026-07-17"
-    },
-    {
-      "id": "EN-8d4321d936320802",
-      "name": "NVIDIA",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
+      "id": "EN-ed501d3e2d977553",
+      "name": "StepAudio 2.5 Realtime",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
       "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
-        "EV-ed65f3187aa6aa40",
-        "EV-60b2d4d401bf5e97",
-        "EV-e41fc65eb014893f",
-        "EV-39894e375aacee77",
-        "EV-efca54f3b07072a6",
-        "EV-80e54c9a390da293",
-        "EV-d16fc5601c04a6a2",
-        "EV-236cbc2d64f0c455",
-        "EV-6180de2e02597d9d",
-        "EV-968709fe29b77eba",
-        "EV-adafffa563a53d49",
-        "EV-1f842e1dff69bb87",
-        "EV-9a7cd217a7a9a51c",
-        "EV-cafe435ddd007821",
-        "EV-283e88bdd15ed87e",
-        "EV-234ad54940674bf6",
-        "EV-5b16886442234f81",
-        "EV-ef6464cf7f764835",
-        "EV-b95539d17772a4ce",
-        "EV-f63462e34ea40699",
-        "EV-4faa2bcf2e42e60c",
-        "EV-9ee3c0ec243b6129",
-        "EV-58c1cc3749294649",
-        "EV-303b418c63895ba6",
-        "EV-1ff169120ed385f6",
-        "EV-082314251be505e2",
-        "EV-0a5e65aa46b0d194",
-        "EV-53f881da31630a04",
-        "EV-3028dfadf94c8f4c",
-        "EV-412a140df8d75c45",
-        "EV-53564b1f0fd2214b",
-        "EV-09610316ac52221e",
-        "EV-c0f86afbefa2e0a6",
-        "EV-c718a5ff4b0acd66",
-        "EV-722c2a8dd6b70abd",
-        "EV-6eb9a23be3117421",
-        "EV-13f105479652938d",
-        "EV-3456f723929eff1b",
-        "EV-66338f5fb682617e",
-        "EV-568d2aeab5234e48",
-        "EV-305091abd41ad88d",
-        "EV-a24f9cba6b31439e",
-        "EV-b986a633cca27df9",
-        "EV-57597c92f7b183a9",
-        "EV-2258329f33d413cf",
-        "EV-19ea623bb5eabdd5",
-        "EV-309ea4fc27a66485",
-        "EV-4026c95d4c01b96e",
-        "EV-66970d4aea37111f",
-        "EV-aa63303570154a9b",
-        "EV-cbc8b53d4f4478b1",
-        "EV-d2a00623908ca15f",
-        "EV-d2ac9700c86913da",
-        "EV-d43a561da59b2897",
-        "EV-fc2164eb66e27f7e",
-        "EV-0b49d637d7c07ce0"
+        "EV-d99037f2ed8db897"
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-industry-manufacturing",
-        "TX-use_case-customer_service",
-        "TX-industry-healthcare_life_sciences",
-        "TX-use_case-robotics_automation",
-        "TX-technology-long_context",
-        "TX-technology-mixture_of_experts",
-        "TX-technology-on_device",
-        "TX-use_case-cybersecurity",
-        "TX-industry-retail_ecommerce",
-        "TX-industry-telecommunications",
-        "TX-industry-technology",
-        "TX-technology-multimodal",
-        "TX-technology-embodied_ai",
-        "TX-technology-speech_audio",
-        "TX-technology-open_weights",
-        "TX-industry-media_entertainment",
-        "TX-technology-reasoning",
-        "TX-technology-inference_optimization"
+        "TX-technology-speech_audio"
       ],
       "relatedEntityIds": [
-        "EN-0f3360879e746531",
-        "EN-fbe26af59be95e52",
-        "EN-2b119dc14de9478d",
-        "EN-a1b0d8a938903dc7",
-        "EN-8395dc051feafc4c",
-        "EN-b5738c169b693bee",
-        "EN-9fbf261b62c1d7c0"
+        "EN-2c348893efb2316e"
       ],
-      "firstSeen": "2026-05-18",
-      "lastSeen": "2026-07-17"
+      "firstSeen": "2026-05-25",
+      "lastSeen": "2026-05-25"
     },
     {
-      "id": "EN-2b6e51bec93e86c1",
-      "name": "Google DeepMind",
+      "id": "EN-b2968d9ba72f4818",
+      "name": "深陷版权",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "谷歌 DeepMind"
-      ],
-      "verificationStatus": "verified",
+      "aliases": [],
+      "verificationStatus": "candidate",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
-        "EV-1ac32035d5e425e1",
-        "EV-adafffa563a53d49",
-        "EV-ef7402351b6b37bd",
-        "EV-67ef7accd26a07a0",
-        "EV-a7e1ecd212474e00",
-        "EV-d961d3ad02f6ae14",
-        "EV-f9eebe4e3b9b667c",
-        "EV-5babb43f4b4d302f",
-        "EV-ff10670ad06959ec",
-        "EV-8ab21bf8e73cf44a",
-        "EV-568d2aeab5234e48",
-        "EV-d6f638da9e1d3b46",
-        "EV-f68e00bb9fd49fac",
-        "EV-3e9a0d1be6de5096",
-        "EV-e96aba142e46eba1",
-        "EV-68edd592c36dccd3",
-        "EV-d49da50484ba781f"
+        "EV-631dce4dc135d01b"
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-industry-manufacturing",
-        "TX-technology-code_generation",
-        "TX-use_case-customer_service",
-        "TX-industry-healthcare_life_sciences",
-        "TX-use_case-software_development",
-        "TX-technology-mixture_of_experts",
-        "TX-use_case-cybersecurity",
-        "TX-technology-multimodal",
-        "TX-technology-speech_audio",
-        "TX-use_case-research_science",
-        "TX-industry-media_entertainment",
-        "TX-technology-video_generation",
-        "TX-technology-fine_tuning"
+        "TX-use_case-content_creation",
+        "TX-technology-speech_audio"
       ],
-      "relatedEntityIds": [
-        "EN-0e008e2c06144ec8"
-      ],
-      "firstSeen": "2026-05-23",
-      "lastSeen": "2026-07-17"
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-04",
+      "lastSeen": "2026-06-04"
     }
   ],
   "fde": [],

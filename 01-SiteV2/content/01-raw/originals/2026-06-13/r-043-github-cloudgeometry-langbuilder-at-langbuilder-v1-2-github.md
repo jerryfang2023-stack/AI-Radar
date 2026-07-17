@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"# LangBuilder AI Agent Platform —
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "GitHub - CloudGeometry/langbuilder 在 LangBuilder_V1.2 版本"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # GitHub - CloudGeometry/langbuilder at LangBuilder_V1.2 · GitHub

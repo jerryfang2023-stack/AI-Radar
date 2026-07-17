@@ -72,6 +72,10 @@ key_excerpts: [{"type":"supporting_context","text":"在 COMPUTEX 上，NVIDIA �
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "NVIDIA 推出 NemoClaw 平台，助力工业软件厂商构建自主 AI 工程师"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # NVIDIA 推出 NemoClaw 平台，助力工业软件厂商构建自主 AI 工程师

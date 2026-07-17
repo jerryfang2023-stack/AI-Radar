@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Voice artificial intelligence startup V
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Vapi 获 5000 万美元融资，让语音 AI 更人性化 - SiliconANGLE"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Vapi nabs $50M to make voice AI more human - SiliconANGLE

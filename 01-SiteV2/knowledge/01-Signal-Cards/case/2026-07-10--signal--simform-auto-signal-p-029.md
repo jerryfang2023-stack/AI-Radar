@@ -2,7 +2,7 @@
 id: SIG-20260710-A03
 type: signal_card
 signal_type: case
-title: "全球咨询公司借助人工智能将研究和战略加速80%"
+title: "全球咨询公司借助AI将研究与战略速度提升80%"
 date: 2026-07-10
 status: published
 source_title: "Global consultancy accelerates research & strategy by 80% with AI"
@@ -57,12 +57,12 @@ opportunity_signals:
 signal_owner: "Simform"
 
 frontend:
-  displayTitle: "全球咨询公司借助人工智能将研究和战略加速80%"
+  displayTitle: "全球咨询公司借助AI将研究与战略速度提升80%"
   sourceLinks:
     - "https://www.simform.com/case-studies/global-consultancy-firm-cuts-analysis-time-by-80-with-ai/"
 ---
 
-# 全球咨询公司借助人工智能将研究和战略加速80%
+# 全球咨询公司借助AI将研究与战略速度提升80%
 
 ## 新闻事实
 

@@ -2,7 +2,7 @@
 id: SIG-20260627-A07
 type: signal_card
 signal_type: product_service
-title: "Probook Raises $40M from Andreessen Horowitz and Sequoia to"
+title: "Probook 从 Andreessen Horowitz 和 Sequoia 融资 4000 万美元"
 date: 2026-06-27
 status: published
 source_title: "Probook Raises $40M from Andreessen Horowitz and Sequoia to"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Probook"
 
 frontend:
-  displayTitle: "Probook Raises $40M from Andreessen Horowitz and Sequoia to"
+  displayTitle: "Probook 从 Andreessen Horowitz 和 Sequoia 融资 4000 万美元"
   sourceLinks:
     - "https://www.globenewswire.com/news-release/2026/06/23/3316215/0/en/Probook-Raises-40M-from-Andreessen-Horowitz-and-Sequoia-to-Scale-the-AI-Operating-System-for-Home-Services.html"
 ---
 
-# Probook Raises $40M from Andreessen Horowitz and Sequoia to
+# Probook 从 Andreessen Horowitz 和 Sequoia 融资 4000 万美元
 
 ## 新闻事实
 

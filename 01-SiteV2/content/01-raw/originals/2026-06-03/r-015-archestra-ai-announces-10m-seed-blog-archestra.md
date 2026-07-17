@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Archestra.AI Announces $10M Seed 🎉 |
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Archestra.AI 宣布完成1000万美元种子轮融资 🎉 | 博客 | Archestra"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Archestra.AI Announces $10M Seed 🎉 | Blog | Archestra

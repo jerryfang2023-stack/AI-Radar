@@ -72,6 +72,10 @@ key_excerpts: [{"type":"supporting_context","text":"NIST is seeking information 
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "美国国家标准与技术研究院（商务部）AI模型托管与推理招标信息 | BidNet Direct"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Ai Model Hosting And Inference - Bid Information - Commerce, Department Of - National Institute Of Standards And Technology - Dept Of Commerce Nist | BidNet Direct

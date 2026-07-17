@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"An enterprise logistics platform ha
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "案例研究：为企业物流平台设计AI驱动的订单支持代理——生成式AI系统设计"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Case Study: Designing an AI-Powered Order Support Agent for an Enterprise Logistics Platform — GenAI System Design

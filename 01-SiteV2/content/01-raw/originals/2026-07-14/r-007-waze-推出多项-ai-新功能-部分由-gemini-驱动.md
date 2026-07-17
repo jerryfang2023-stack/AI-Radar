@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-007
 title: "Waze 推出多项 AI 新功能，部分由 Gemini 驱动"
 title_zh: "Waze 推出多项 AI 新功能，部分由 Gemini 驱动"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://techcrunch.com/2026/07/13/waze-adds-new-ai-powered-features-and-customization-updates"
 canonical_url: "https://techcrunch.com/2026/07/13/waze-adds-new-ai-powered-features-and-customization-updates"
 source_name: "TechCrunch：AI（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-14T01:56:51.273Z
 theme: outside-core-exploration
 keyword_group: outside-core-exploration
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Waze 推出多项 AI 新功能，部分由 Gemini 驱动

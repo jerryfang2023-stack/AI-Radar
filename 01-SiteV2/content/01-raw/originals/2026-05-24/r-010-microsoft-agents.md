@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"The Microsoft 365 Agent SDK simplif
 theme: mature-commercial-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "GitHub 仓库：microsoft/Agents"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # microsoft/Agents

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"The programme has sparked a wave of
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "AI Hub 联合设计计划：初创企业加速器试点"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # AI Hub Co-Design Programmes: Startup Accelerator Pilot

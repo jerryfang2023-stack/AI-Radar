@@ -2,7 +2,7 @@
 id: SIG-20260628-A17
 type: signal_card
 signal_type: case
-title: "Why everyone from OpenAI to SpaceX is building their own chips (and turning up the heat on Nvidi"
+title: "从OpenAI到SpaceX，为何纷纷自研芯片（给英伟达加压）"
 date: 2026-06-28
 status: published
 source_title: "Why everyone from OpenAI to SpaceX is building their own chips (and turning up the heat on Nvidia)"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Techcrunch"
 
 frontend:
-  displayTitle: "Why everyone from OpenAI to SpaceX is building their own chips (and turning up the heat on Nvidi"
+  displayTitle: "从OpenAI到SpaceX，为何纷纷自研芯片（给英伟达加压）"
   sourceLinks:
     - "https://techcrunch.com/video/why-everyone-from-openai-to-spacex-is-building-their-own-chips-and-turning-up-the-heat-on-nvidia/"
 ---
 
-# Why everyone from OpenAI to SpaceX is building their own chips (and turning up the heat on Nvidi
+# 从OpenAI到SpaceX，为何纷纷自研芯片（给英伟达加压）
 
 ## 新闻事实
 

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Anthropic正在限制其新模型Mythos
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "Anthropic限制Mythos模型部分任务，自建应用与客户竞争引反弹"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Anthropic限制Mythos模型部分任务，自建应用与客户竞争引反弹

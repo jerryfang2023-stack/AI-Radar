@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Founded in 2024 by Finn, Philipp, and S
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "telli 借助 LiveKit 与 ai-coustics 实现高量企业电话运营自动化"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # How telli automates high-volume enterprise phone operations with LiveKit and ai-coustics | LiveKit

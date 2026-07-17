@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"AAG enables organizations to centra
 theme: outside-core-exploration
 keyword_group: outside-core-exploration
 copyright_note: local research archive only
+title_zh: "AWS GenAIIC合作伙伴Agent Factory：新型AI代理现已登陆AWS"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # AWS GenAIIC Partner Agent Factory: New AI agents now in AWS ...

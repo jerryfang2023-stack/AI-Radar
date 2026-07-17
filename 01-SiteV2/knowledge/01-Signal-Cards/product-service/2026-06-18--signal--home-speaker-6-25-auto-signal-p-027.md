@@ -2,7 +2,7 @@
 id: SIG-20260618-A21
 type: signal_card
 signal_type: product_service
-title: "谷歌 Home Speaker 开启预售，6 月 25 日开售 推出 Agent 工作流能力，切入采购下单自动化"
+title: "谷歌 Home Speaker 开启预售，6 月 25 日开售"
 date: 2026-06-18
 status: published
 source_title: "谷歌 Home Speaker 开启预售，6 月 25 日开售"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "谷歌 Home Speaker 开启预售，6 月 25 日开售"
 
 frontend:
-  displayTitle: "谷歌 Home Speaker 开启预售，6 月 25 日开售 推出 Agent 工作流能力，切入采购下单自动化"
+  displayTitle: "谷歌 Home Speaker 开启预售，6 月 25 日开售"
   sourceLinks:
     - "https://arstechnica.com/google/2026/06/the-gemini-powered-google-home-speaker-arrives-on-june-25-for-100"
 ---
 
-# 谷歌 Home Speaker 开启预售，6 月 25 日开售 推出 Agent 工作流能力，切入采购下单自动化
+# 谷歌 Home Speaker 开启预售，6 月 25 日开售
 
 ## 新闻事实
 

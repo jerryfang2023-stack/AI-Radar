@@ -2,7 +2,7 @@
 id: SIG-20260615-A06
 type: signal_card
 signal_type: product_service
-title: "Latent 发布 AI 基础设施能力，切入地产和建筑设计工作流"
+title: "为什么视频代理模型是下一个方向——xAI Grok Imagine的Ethan He"
 date: 2026-06-15
 status: published
 source_title: "Why Video Agent models are next — Ethan He, xAI Grok Imagine"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Latent"
 
 frontend:
-  displayTitle: "Latent 发布 AI 基础设施能力，切入地产和建筑设计工作流"
+  displayTitle: "为什么视频代理模型是下一个方向——xAI Grok Imagine的Ethan He"
   sourceLinks:
     - "https://www.latent.space/p/video-agents"
 ---
 
-# Latent 发布 AI 基础设施能力，切入地产和建筑设计工作流
+# 为什么视频代理模型是下一个方向——xAI Grok Imagine的Ethan He
 
 ## 新闻事实
 

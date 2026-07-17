@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 818,
+    "quarantinedEventCount": 58
+  },
+  "entity": {
+    "id": "EN-090e5412541f063f",
+    "name": "Ex-Goldman Sachs",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-43301de739fe560e"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-06-05",
+    "lastSeen": "2026-06-05",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [
+        "EV-43301de739fe560e"
+      ],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-43301de739fe560e",
+        "dataDate": "2026-06-05",
+        "date": "2026-06-05",
+        "eventType": "hardware_deployment",
+        "eventTypeLabel": "硬件部署",
+        "eventGroup": "AI 硬件",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "前高盛与Meta创始人筹集300万美元，打造全球科技巨头忽视的语音AI基础设施",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "data_infrastructure",
+            "dimensionName": "产品形态",
+            "name": "数据与模型基础设施"
+          },
+          {
+            "dimensionId": "target_user",
+            "id": "enterprise",
+            "dimensionName": "目标用户",
+            "name": "企业用户"
+          }
+        ],
+        "entityIds": [
+          "EN-090e5412541f063f",
+          "EN-ea3bd73e2b506e00",
+          "EN-6fcba5d96a4fadfd"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [
+    {
+      "id": "HW-9d84fd7aa512dddd",
+      "eventId": "EV-43301de739fe560e",
+      "dataDate": "2026-06-05",
+      "date": "2026-06-05",
+      "title": "前高盛与Meta创始人筹集300万美元，打造全球科技巨头忽视的语音AI基础设施",
+      "hardwareType": "data_center",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "computeLayer": "未披露",
+      "supplier": "Meta",
+      "customer": "Ex-Goldman Sachs",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://techfundingnews.com/ex-goldman-sachs-and-meta-founders-raise-3m-to-build-the-voice-ai-infrastructure-global-tech-giants-overlooked",
+      "sourceName": "techfundingnews.com",
+      "sourceDate": "2026-06-05",
+      "entityIds": [
+        "EN-090e5412541f063f",
+        "EN-ea3bd73e2b506e00",
+        "EN-6fcba5d96a4fadfd"
+      ]
+    }
+  ]
+}

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"英伟达推出 NVIDIA Isaac GR0
 theme: outside-core-exploration
 keyword_group: outside-core-exploration
 copyright_note: local research archive only
+title_zh: "英伟达 Isaac GR00T 人形机器人发布：基于宇树 H2 打造，年底推出"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 英伟达 Isaac GR00T 人形机器人发布：基于宇树 H2 打造，年底推出

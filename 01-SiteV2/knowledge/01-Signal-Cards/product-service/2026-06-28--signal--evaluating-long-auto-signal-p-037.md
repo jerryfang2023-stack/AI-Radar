@@ -2,7 +2,7 @@
 id: SIG-20260628-A05
 type: signal_card
 signal_type: product_service
-title: "Evaluating Long-Context Question & Answer Systems"
+title: "评估长上下文问答系统"
 date: 2026-06-28
 status: published
 source_title: "Evaluating Long-Context Question &amp; Answer Systems"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Evaluating Long"
 
 frontend:
-  displayTitle: "Evaluating Long-Context Question & Answer Systems"
+  displayTitle: "评估长上下文问答系统"
   sourceLinks:
     - "https://eugeneyan.com//writing/qa-evals/"
 ---
 
-# Evaluating Long-Context Question & Answer Systems
+# 评估长上下文问答系统
 
 ## 新闻事实
 

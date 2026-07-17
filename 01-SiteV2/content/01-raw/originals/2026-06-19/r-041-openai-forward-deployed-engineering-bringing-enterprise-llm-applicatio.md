@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"OpenAI's Forward Deployed Engineeri
 theme: enterprise-ai-implementation-signal
 keyword_group: enterprise-ai-implementation-signal
 copyright_note: local research archive only
+title_zh: "OpenAI：前向部署工程：将企业级LLM应用投入生产——ZenML LLMOps数据库"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # OpenAI: Forward Deployed Engineering: Bringing Enterprise LLM Applications to Production - ZenML LLMOps Database

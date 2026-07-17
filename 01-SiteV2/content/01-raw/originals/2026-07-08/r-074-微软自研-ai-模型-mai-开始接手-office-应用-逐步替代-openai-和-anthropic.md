@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-074
 title: "微软自研 AI 模型 MAI 开始接手 Office 应用，逐步替代 OpenAI 和 Anthropic"
 title_zh: "微软自研 AI 模型 MAI 开始接手 Office 应用，逐步替代 OpenAI 和 Anthropic"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/973/815.htm"
 canonical_url: "https://ithome.com/0/973/815.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-08T04:39:26.015Z
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 微软自研 AI 模型 MAI 开始接手 Office 应用，逐步替代 OpenAI 和 Anthropic

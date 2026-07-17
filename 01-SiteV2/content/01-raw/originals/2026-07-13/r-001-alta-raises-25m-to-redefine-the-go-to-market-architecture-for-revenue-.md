@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-001
 title: "Alta Raises $25M to Redefine the Go-to-Market Architecture for Revenue Teams"
 title_zh: "Alta 完成 2500 万美元融资，用于重塑收入团队的市场进入架构"
-title_translation_status: translated
-title_translation_method: business-rule_title_translation
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://prnewswire.com/news-releases/alta-raises-25m-to-redefine-the-go-to-market-architecture-for-revenue-teams-302820618.html"
 canonical_url: "https://prnewswire.com/news-releases/alta-raises-25m-to-redefine-the-go-to-market-architecture-for-revenue-teams-302820618.html"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-13T10:23:56.647Z
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Alta Raises $25M to Redefine the Go-to-Market Architecture for Revenue Teams

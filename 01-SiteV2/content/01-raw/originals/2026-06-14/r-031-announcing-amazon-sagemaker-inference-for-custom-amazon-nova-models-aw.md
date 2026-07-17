@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"Since we launched Amazon Nova custo
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "宣布推出适用于自定义Amazon Nova模型的Amazon SageMaker推理功能 | AWS新闻博客"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Announcing Amazon SageMaker Inference for custom Amazon Nova models | AWS News Blog

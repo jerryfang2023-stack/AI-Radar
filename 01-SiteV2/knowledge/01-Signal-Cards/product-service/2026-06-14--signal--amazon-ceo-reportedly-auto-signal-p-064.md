@@ -2,7 +2,7 @@
 id: SIG-20260614-A13
 type: signal_card
 signal_type: product_service
-title: "Amazon CEO reportedly 发布 AI 基础设施能力，切入模型部署和算力服务"
+title: "据报道，亚马逊CEO在政府打击前曾对Anthropic模型表示担忧"
 date: 2026-06-14
 status: published
 source_title: "Amazon CEO reportedly raised Anthropic model concerns before government crackdown"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Amazon CEO reportedly"
 
 frontend:
-  displayTitle: "Amazon CEO reportedly 发布 AI 基础设施能力，切入模型部署和算力服务"
+  displayTitle: "据报道，亚马逊CEO在政府打击前曾对Anthropic模型表示担忧"
   sourceLinks:
     - "https://techcrunch.com/2026/06/13/amazon-ceo-reportedly-raised-anthropic-model-concerns-before-government-crackdown"
 ---
 
-# Amazon CEO reportedly 发布 AI 基础设施能力，切入模型部署和算力服务
+# 据报道，亚马逊CEO在政府打击前曾对Anthropic模型表示担忧
 
 ## 新闻事实
 

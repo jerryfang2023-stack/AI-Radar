@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"The Databricks NAIRR Pilot partners
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "NAIRR 试点资源请求推动 AI 研究进展"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # NAIRR Pilot Resource Requests to Advance AI Research

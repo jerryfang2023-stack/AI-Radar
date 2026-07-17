@@ -1,0 +1,190 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 818,
+    "quarantinedEventCount": 58
+  },
+  "entity": {
+    "id": "EN-4e7e886400fe6a83",
+    "name": "Halos for Robotics",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-69fbe85ca4ac81cd"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-use_case-robotics_automation",
+      "TX-technology-guardrails_safety"
+    ],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-06-22",
+    "lastSeen": "2026-06-23",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-69fbe85ca4ac81cd"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-69fbe85ca4ac81cd",
+        "dataDate": "2026-06-23",
+        "date": "2026-06-22",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "英伟达发布业界首个全栈物理 AI 安全系统 Halos for Robotics",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "robot",
+            "dimensionName": "产品形态",
+            "name": "机器人"
+          },
+          {
+            "dimensionId": "use_case",
+            "id": "robotics_automation",
+            "dimensionName": "应用场景",
+            "name": "机器人与物理自动化"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "guardrails_safety",
+            "name": "安全护栏"
+          }
+        ],
+        "entityIds": [
+          "EN-60094bcf5292c490",
+          "EN-8d4321d936320802",
+          "EN-4e7e886400fe6a83"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-use_case-robotics_automation",
+      "name": "机器人与物理自动化",
+      "nodeType": "use_case",
+      "typeLabel": "应用场景",
+      "valueId": "robotics_automation",
+      "eventIds": [
+        "EV-434dcf1813a84ead",
+        "EV-f059fd80d668c6bc",
+        "EV-234ad54940674bf6",
+        "EV-39848cdd62c00e59",
+        "EV-4faa2bcf2e42e60c",
+        "EV-6b51b1b6fe22c540",
+        "EV-3353bd96728c99e2",
+        "EV-57565fc2e7502c59",
+        "EV-49751dfc7d2f6d6c",
+        "EV-69fbe85ca4ac81cd",
+        "EV-e1a7e7dcb19bfc70",
+        "EV-c834a9d33a86373c",
+        "EV-3f8ba5855b64dd1a",
+        "EV-7da59380bb30e76a",
+        "EV-67f32771d69084d6",
+        "EV-df3f5cf6bc985a9c",
+        "EV-ad64347138da72bb"
+      ],
+      "entityIds": [
+        "EN-6f21a653c48f4f19",
+        "EN-4dbe391b8fcf977a",
+        "EN-8d4321d936320802",
+        "EN-72138e570e5103e2",
+        "EN-60094bcf5292c490",
+        "EN-aa75c47729b4a292",
+        "EN-8147e6fed86d42c1",
+        "EN-96eebba49dbbf422",
+        "EN-e3b1bf3dab957ffe",
+        "EN-0f3360879e746531",
+        "EN-522d3edeb64a7ca4",
+        "EN-c608c4787821de1b",
+        "EN-101a515191c6be9e",
+        "EN-8afd897b5b887b06",
+        "EN-4d8ee3ec190ebf35",
+        "EN-30081094f2a8c83d",
+        "EN-d558e1de958b9d05",
+        "EN-4e7e886400fe6a83",
+        "EN-75fe8aaf5a7e3a7e",
+        "EN-6fcba5d96a4fadfd",
+        "EN-7d5f17368c04f04c",
+        "EN-0d049cd1e9f619f9",
+        "EN-5e1fcba4c9f1cf69",
+        "EN-7d3194f79e645c42",
+        "EN-94ff75465b1afa65",
+        "EN-42375a8003f17c95",
+        "EN-171fa23d27b5894b",
+        "EN-80ea42a231357d12"
+      ],
+      "fdeIds": [
+        "FDE-dadf0e9572889d3d"
+      ],
+      "hardwareIds": [
+        "HW-dca442211b264bbe"
+      ],
+      "firstSeen": "2026-05-24",
+      "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "TX-technology-guardrails_safety",
+      "name": "安全护栏",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "guardrails_safety",
+      "eventIds": [
+        "EV-d1e2a7c6d314612c",
+        "EV-b240fb11e65b018e",
+        "EV-cf176636839e45be",
+        "EV-9c0552732b34f278",
+        "EV-3ff2a155035d01e7",
+        "EV-69fbe85ca4ac81cd",
+        "EV-917966af8545a380"
+      ],
+      "entityIds": [
+        "EN-43381465c2b7d64e",
+        "EN-c70eca6b0f88f44d",
+        "EN-7d3194f79e645c42",
+        "EN-ae31f30d39374a8b",
+        "EN-ea3bd73e2b506e00",
+        "EN-c857d09db23e6822",
+        "EN-9f15bb7e29e191eb",
+        "EN-60094bcf5292c490",
+        "EN-8d4321d936320802",
+        "EN-4e7e886400fe6a83"
+      ],
+      "fdeIds": [
+        "FDE-0ee0fe3baa3f1364"
+      ],
+      "hardwareIds": [],
+      "firstSeen": "2026-06-17",
+      "lastSeen": "2026-07-17"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}

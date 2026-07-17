@@ -72,6 +72,10 @@ key_excerpts: [{"type":"company_action","text":"Adobe 于 6 月 15 日升级 Cre
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Adobe 升级 Creative Cloud 套件，Lightroom/Premiere/After Effects/Photoshop 加入 AI 功能"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Adobe 升级 Creative Cloud 套件，Lightroom/Premiere/After Effects/Photoshop 加入 AI 功能

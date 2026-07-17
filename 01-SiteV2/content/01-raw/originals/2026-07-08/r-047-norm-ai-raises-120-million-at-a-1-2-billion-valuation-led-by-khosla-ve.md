@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-047
 title: "Norm Ai Raises $120 Million at a $1.2 Billion Valuation Led by Khosla Ventures to Deliver the Full-Stack Model for Legal AI"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "Norm Ai获1.2亿美元融资，估值达12亿美元，由Khosla Ventures领投，打造法律AI全栈模型"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.prnewswire.com/news-releases/norm-ai-raises-120-million-at-a-1-2-billion-valuation-led-by-khosla-ventures-to-deliver-the-full-stack-model-for-legal-ai-302819152.html"
 canonical_url: "https://prnewswire.com/news-releases/norm-ai-raises-120-million-at-a-1-2-billion-valuation-led-by-khosla-ventures-to-deliver-the-full-stack-model-for-legal-ai-302819152.html"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-08T04:39:25.798Z
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Norm Ai Raises $120 Million at a $1.2 Billion Valuation Led by Khosla Ventures to Deliver the Full-Stack Model for Legal AI

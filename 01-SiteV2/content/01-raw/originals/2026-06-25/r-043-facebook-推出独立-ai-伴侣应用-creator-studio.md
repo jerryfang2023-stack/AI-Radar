@@ -72,6 +72,10 @@ key_excerpts: [{"type":"quote","text":"Facebook 近日宣布将 Creator Studio �
 theme: outside-core-exploration
 keyword_group: outside-core-exploration
 copyright_note: local research archive only
+title_zh: "Facebook 推出独立 AI 伴侣应用 Creator Studio"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Facebook 推出独立 AI 伴侣应用 Creator Studio

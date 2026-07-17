@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"SAN FRANCISCO, June 23, 2026 (GL
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_zh: "Upbound推出Modelplane：开源控制平面"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Upbound Launches Modelplane: The Open Source Control Plane

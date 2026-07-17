@@ -72,6 +72,10 @@ key_excerpts: [{"type":"company_action","text":"主题演讲展示了AI升级的
 theme: outside-core-exploration
 keyword_group: outside-core-exploration
 copyright_note: local research archive only
+title_zh: "Apple WWDC 2026：七大重磅发布"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Apple WWDC 2026：七大重磅发布

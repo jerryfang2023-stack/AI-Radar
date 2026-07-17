@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"Copilot Cowork is now generally ava
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_zh: "Copilot Cowork 现已全面可用 | Microsoft 365 博客"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Copilot Cowork is now generally available | Microsoft 365 Blog

@@ -2,7 +2,7 @@
 id: SIG-20260615-A07
 type: signal_card
 signal_type: product_service
-title: "End of SWE 发布 AI 基础设施能力，切入模型部署和算力服务"
+title: "⚡️SWE-Bench Verified的终结——OpenAI前沿评估与人类数据团队Mia Glaese与Olivia Watkins"
 date: 2026-06-15
 status: published
 source_title: "The End of SWE-Bench Verified — Mia Glaese &amp; Olivia Watkins, OpenAI Frontier Evals &amp; Human Data"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "End of SWE"
 
 frontend:
-  displayTitle: "End of SWE 发布 AI 基础设施能力，切入模型部署和算力服务"
+  displayTitle: "⚡️SWE-Bench Verified的终结——OpenAI前沿评估与人类数据团队Mia Glaese与Olivia Watkins"
   sourceLinks:
     - "https://www.latent.space/p/swe-bench-dead"
 ---
 
-# End of SWE 发布 AI 基础设施能力，切入模型部署和算力服务
+# ⚡️SWE-Bench Verified的终结——OpenAI前沿评估与人类数据团队Mia Glaese与Olivia Watkins
 
 ## 新闻事实
 

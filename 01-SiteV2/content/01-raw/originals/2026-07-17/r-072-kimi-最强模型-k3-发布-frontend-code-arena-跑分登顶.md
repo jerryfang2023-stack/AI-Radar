@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-072
 title: "Kimi 最强模型 K3 发布，Frontend Code Arena 跑分登顶"
 title_zh: "Kimi 最强模型 K3 发布，Frontend Code Arena 跑分登顶"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/977/829.htm"
 canonical_url: "https://ithome.com/0/977/829.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-17T04:40:17.236Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Kimi 最强模型 K3 发布，Frontend Code Arena 跑分登顶

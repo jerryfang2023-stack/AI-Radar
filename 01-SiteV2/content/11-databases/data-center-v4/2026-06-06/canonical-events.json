@@ -1,47 +1,12 @@
 [
   {
-    "event_type": "hardware_product",
-    "event_status": "completed",
-    "event_time": "2026-06-06T22:07:34.000Z",
-    "disclosed_at": "2026-06-06T22:07:34.000Z",
-    "entities": [
-      "EN-bbdefa2950f49882",
-      "EN-c70eca6b0f88f44d",
-      "EN-7d3194f79e645c42"
-    ],
-    "action": "发布 Colab CLI，开发者与 AI 智能体可在终端中远程调用 Colab GPU",
-    "object": "与 TPU 运行 Python 代码",
-    "metrics": [],
-    "locations": [],
-    "claim_refs": [
-      "CL-5502d0b0bd0e48c0",
-      "CL-8684c16946e448fb",
-      "CL-0bf0ef2a1b20d905",
-      "CL-bdc3375536e4a407"
-    ],
-    "source_refs": [
-      "SA-68466f414e5908d3"
-    ],
-    "conflicts": [],
-    "missing_fields": [],
-    "update_history": [
-      {
-        "source_ref": "SA-68466f414e5908d3",
-        "disclosed_at": "2026-06-06T22:07:34.000Z",
-        "status": "completed"
-      }
-    ],
-    "publication_status": "verified",
-    "event_id": "EV-59933d63c4051085",
-    "display_title_zh": "Google 发布 Colab CLI，开发者与 AI 智能体可在终端中远程调用 Colab GPU 与 TPU 运行 Python 代码"
-  },
-  {
     "event_type": "model_release",
     "event_status": "completed",
     "event_time": "2026-06-06T07:55:40.000Z",
     "disclosed_at": "2026-06-06T07:55:40.000Z",
     "entities": [
-      "EN-8d4321d936320802"
+      "EN-8d4321d936320802",
+      "EN-12ab68e37d104d27"
     ],
     "action": "发布 Nemotron 3.5 ASR：600M 参数缓存感知流式模型",
     "object": "，实时转录 40 种语言-地区",
@@ -71,39 +36,84 @@
   },
   {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "",
-    "disclosed_at": "2026-06-07T04:07:12.277Z",
-    "entities": [
-      "EN-da454b02b4700b1f"
-    ],
-    "action": "Raises",
-    "object": "$7M Seed to Ensure Enterprises Can Fully Oversee and Govern Autonomous Agents",
+    "disclosed_at": "2026-06-07T04:07:12.362Z",
+    "entities": [],
+    "action": "raises",
+    "object": "$12M seed instead",
     "metrics": [
-      "$7 million"
+      "$20M",
+      "$12M",
+      "$12 million"
     ],
     "locations": [],
     "claim_refs": [
-      "CL-9ebdfb35e1d2a1c1",
-      "CL-f810c0a90ab447d4",
-      "CL-65012d1846add3d3",
-      "CL-db4b4968ef236f26"
+      "CL-c5225b071a09c6e0",
+      "CL-c15358d129c17ff1",
+      "CL-76e49f9f0036f5b1",
+      "CL-177d26240e93de67"
     ],
     "source_refs": [
-      "SA-eff532ce9fcd07d3"
+      "SA-48d5319f165fc3af"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "entities",
+      "event_time"
+    ],
     "update_history": [
       {
-        "source_ref": "SA-eff532ce9fcd07d3",
-        "disclosed_at": "2026-06-07T04:07:12.277Z",
+        "source_ref": "SA-48d5319f165fc3af",
+        "disclosed_at": "2026-06-07T04:07:12.362Z",
+        "status": "completed"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-a7fd981ce15cd7d8",
+    "display_title_zh": "NanoClaw 创始人拒绝 2000 万美元收购要约，转而获得 1200 万美元种子轮融资"
+  },
+  {
+    "event_type": "product_release",
+    "event_status": "announced",
+    "event_time": "",
+    "disclosed_at": "2026-06-07T04:07:12.387Z",
+    "entities": [
+      "EN-e2a93bc5095dec6c",
+      "EN-9fbf261b62c1d7c0",
+      "EN-0decbc3b45f73b2b",
+      "EN-a6f7e7d15269ba2d",
+      "EN-45cbca5f78f1ef44"
+    ],
+    "action": "Launches",
+    "object": "Entire with $60M to Build the Next Developer Platform for AI Agents | The Agent Report",
+    "metrics": [
+      "$60 million"
+    ],
+    "locations": [],
+    "claim_refs": [
+      "CL-b967f75e7c42d240",
+      "CL-f449cdd84412379e",
+      "CL-bbe3b5838db213f3",
+      "CL-7f1ee7bec414a00d"
+    ],
+    "source_refs": [
+      "SA-a56643474da704ec"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "event_time"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-a56643474da704ec",
+        "disclosed_at": "2026-06-07T04:07:12.387Z",
         "status": "announced"
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-8bbc23e53e799d9d",
-    "display_title_zh": "Willow 完成 700 万美元 种子轮融资"
+    "event_id": "EV-a9e22f22b7a2ec53",
+    "display_title_zh": "前GitHub CEO Thomas Dohmke 获6000万美元融资创立Entire，打造面向AI智能体的下一代开发者平台"
   },
   {
     "event_type": "product_release",
@@ -111,7 +121,11 @@
     "event_time": "",
     "disclosed_at": "2026-06-07T04:07:12.418Z",
     "entities": [
-      "EN-8d4321d936320802"
+      "EN-8d4321d936320802",
+      "EN-96eebba49dbbf422",
+      "EN-ebe5ed2fc0df64de",
+      "EN-fbe26af59be95e52",
+      "EN-6f549489209ee753"
     ],
     "action": "Open Source",
     "object": "Models on NVIDIA Blackwell | NVIDIA Blog",
@@ -127,7 +141,10 @@
       "SA-ced784ef0108b8ac"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time",
+      "display_title_zh"
+    ],
     "update_history": [
       {
         "source_ref": "SA-ced784ef0108b8ac",
@@ -137,7 +154,7 @@
     ],
     "publication_status": "verified",
     "event_id": "EV-57597c92f7b183a9",
-    "display_title_zh": "NVIDIA 发布 Models on NVIDIA Blackwell"
+    "display_title_zh": ""
   },
   {
     "event_type": "product_release",
@@ -145,6 +162,7 @@
     "event_time": "2026-06-06T14:00:00.000Z",
     "disclosed_at": "2026-06-06T14:00:00.000Z",
     "entities": [
+      "EN-89e866844eab7732",
       "EN-ea3bd73e2b506e00"
     ],
     "action": "推出",
@@ -170,7 +188,7 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-c98d4ee7764d51b2",
+    "event_id": "EV-a39ca82d354c7197",
     "display_title_zh": "Meta 在其 AI 应用中推出 AI 生成的点击诱饵新闻 feed"
   },
   {
@@ -179,20 +197,19 @@
     "event_time": "2026-06-06T10:50:21.000Z",
     "disclosed_at": "2026-06-06T10:50:21.000Z",
     "entities": [
-      "EN-bbdefa2950f49882"
+      "EN-26d6a1ef9f111518",
+      "EN-bbdefa2950f49882",
+      "EN-b5251b35f15bedc4"
     ],
     "action": "开源语音模型",
     "object": "持续监听，每0.4秒决定是否说话或保持沉默",
     "metrics": [],
-    "locations": [
-      "China",
-      "Singapore"
-    ],
+    "locations": [],
     "claim_refs": [
       "CL-276571466c9e4253",
       "CL-c16ffb87eaea5fda",
-      "CL-f88c29291d632a8e",
-      "CL-927ec5e720d71a81"
+      "CL-f058b728ff1762b5",
+      "CL-ea5aff1bda11216e"
     ],
     "source_refs": [
       "SA-20ec5e611a154aba"
@@ -207,7 +224,7 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-588cf9609e44edc9",
+    "event_id": "EV-e878e56967902718",
     "display_title_zh": "Audio Interaction：开源语音模型持续监听，每0.4秒决定是否说话或保持沉默"
   },
   {
@@ -216,7 +233,9 @@
     "event_time": "2026-06-06T09:11:08.000Z",
     "disclosed_at": "2026-06-06T09:11:08.000Z",
     "entities": [
-      "EN-ce635c4eabff5e4f"
+      "EN-b5251b35f15bedc4",
+      "EN-ce635c4eabff5e4f",
+      "EN-b57c95289680078c"
     ],
     "action": "发布",
     "object": "Kimi Code CLI：基于 TypeScript 的开源终端 AI 编码智能体",
@@ -241,12 +260,12 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-343e0454586c58a9",
+    "event_id": "EV-e9a86c47da229331",
     "display_title_zh": "Moonshot AI 发布 Kimi Code CLI：基于 TypeScript 的开源终端 AI 编码智能体"
   },
   {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "",
     "disclosed_at": "2026-06-07T04:07:12.526Z",
     "entities": [
@@ -269,17 +288,19 @@
       "SA-376a021f0cce315b"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-376a021f0cce315b",
         "disclosed_at": "2026-06-07T04:07:12.526Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
     "event_id": "EV-9e678b626c2a5c83",
-    "display_title_zh": "Y Combinator-backed Mandel AI 完成 390 万美元 种子轮融资"
+    "display_title_zh": "Y Combinator支持的Mandel AI融资390万美元，用于自动化全球供应链 - Tech.eu"
   },
   {
     "event_type": "product_release",
@@ -305,7 +326,9 @@
       "SA-2e5ec8ec3aa35548"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-2e5ec8ec3aa35548",
@@ -315,14 +338,61 @@
     ],
     "publication_status": "verified",
     "event_id": "EV-cee7cdc20763028e",
-    "display_title_zh": "Contrario 发布"
+    "display_title_zh": "Contrario上线：主张AI代理与人类招聘人员协作而非取代"
+  },
+  {
+    "event_type": "deployment",
+    "event_status": "announced",
+    "event_time": "",
+    "disclosed_at": "2026-06-07T04:07:12.611Z",
+    "entities": [
+      "EN-bc8a00f7f6fb535f",
+      "EN-7d3194f79e645c42"
+    ],
+    "action": "deploys",
+    "object": "AI-powered voice claims assistant nationwide with OpenAI Realtime API | keepingupwith.ai",
+    "metrics": [
+      "90%",
+      "1.5 million",
+      "$23 billion"
+    ],
+    "locations": [
+      "US"
+    ],
+    "claim_refs": [
+      "CL-b0c0c9748c3995f5",
+      "CL-407fe0f490cb22cf",
+      "CL-56a18b40dc213993",
+      "CL-8e6b124487e848fc"
+    ],
+    "source_refs": [
+      "SA-82a6a74110f7dc75"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "event_time"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-82a6a74110f7dc75",
+        "disclosed_at": "2026-06-07T04:07:12.611Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-83b2e8f7fe679bc3",
+    "display_title_zh": "Travelers 借助 OpenAI Realtime API 在全国部署 AI 语音理赔助手"
   },
   {
     "event_type": "product_release",
     "event_status": "announced",
     "event_time": "",
     "disclosed_at": "2026-06-07T04:07:12.695Z",
-    "entities": [],
+    "entities": [
+      "EN-210c1cad011e5afb",
+      "EN-3b8ce17ae22357b6",
+      "EN-73209317ae64f32b"
+    ],
     "action": "Open Source",
     "object": "Dev Tools Companies and Startups",
     "metrics": [
@@ -341,7 +411,7 @@
     ],
     "conflicts": [],
     "missing_fields": [
-      "entities"
+      "event_time"
     ],
     "update_history": [
       {
@@ -351,8 +421,8 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-dfbc25a5339b71df",
-    "display_title_zh": "12 Fastest Growing 发布 Dev Tools Companies and Startups"
+    "event_id": "EV-25f9e4686e2c58c9",
+    "display_title_zh": "12家增长最快的开源开发工具公司及初创企业"
   },
   {
     "event_type": "funding",
@@ -372,15 +442,17 @@
     ],
     "claim_refs": [
       "CL-7f2a4ae53078b723",
-      "CL-f444977262e465e5",
-      "CL-bba992d4a0b7d74d",
-      "CL-34951c242b03458f"
+      "CL-8e7878db408d223b",
+      "CL-c9a9d4e6f8702b4c",
+      "CL-f444977262e465e5"
     ],
     "source_refs": [
       "SA-270a8ad9f0ffca0d"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-270a8ad9f0ffca0d",
@@ -390,30 +462,31 @@
     ],
     "publication_status": "verified",
     "event_id": "EV-9fffc7dd22df0064",
-    "display_title_zh": "Clara 完成 1200 万美元 种子前轮融资"
+    "display_title_zh": "Clara完成1200万美元预种子轮融资，加入Y Combinator"
   },
   {
-    "event_type": "deployment",
+    "event_type": "product_release",
     "event_status": "completed",
     "event_time": "2026-06-07T02:44:00.000Z",
     "disclosed_at": "2026-06-07T02:44:00.000Z",
-    "entities": [],
-    "action": "上线",
-    "object": "\"AI 志愿助手\"功能提供一站式全程服务",
+    "entities": [
+      "EN-87591eb8ddaae303"
+    ],
+    "action": "上线\"AI 志愿助手\"功能提供一站式全程服务",
+    "object": "2026 高考今日开考，vivo 上线\"AI 志愿助手\"功能提供一站式全程服务",
     "metrics": [],
     "locations": [],
     "claim_refs": [
       "CL-f458ddd8280f974d",
       "CL-ee93482e6fc8b526",
-      "CL-30e781cd79058e3e",
-      "CL-2881b1b0b1e9eff2"
+      "CL-30e781cd79058e3e"
     ],
     "source_refs": [
       "SA-d8efcd9eea0e8a10"
     ],
     "conflicts": [],
     "missing_fields": [
-      "entities"
+      "object"
     ],
     "update_history": [
       {
@@ -423,44 +496,42 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-5762ebd78546ec66",
+    "event_id": "EV-8dd408dd2ba2a6df",
     "display_title_zh": "2026 高考今日开考，vivo 上线\"AI 志愿助手\"功能提供一站式全程服务"
   },
   {
-    "event_type": "funding",
-    "event_status": "planned",
-    "event_time": "2026-06-07T00:58:29.000Z",
-    "disclosed_at": "2026-06-07T00:58:29.000Z",
-    "entities": [
-      "EN-ea3bd73e2b506e00"
+    "event_type": "product_release",
+    "event_status": "announced",
+    "event_time": "2026-06-07T01:18:44.000Z",
+    "disclosed_at": "2026-06-07T01:18:44.000Z",
+    "entities": [],
+    "action": "product_release",
+    "object": "美国全面推进 AI 军事应用，特朗普要求 90 天内修订自主武器规则",
+    "metrics": [],
+    "locations": [
+      "美国"
     ],
-    "action": "募资",
-    "object": "数百亿美元，为 AI 业务扩张提供资金",
-    "metrics": [
-      "300 亿",
-      "270 亿"
-    ],
-    "locations": [],
     "claim_refs": [
-      "CL-6c9b69596f851abd",
-      "CL-e1c031440a191d4d",
-      "CL-0ab6dbb8ff5153a1",
-      "CL-1698b4cb3e9a8f29"
+      "CL-397cece179a515a4",
+      "CL-5a57299b848050dc",
+      "CL-1b8f124a14d09b84"
     ],
     "source_refs": [
-      "SA-1a6514306feaab14"
+      "SA-05eb5604cec13b8e"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "entities"
+    ],
     "update_history": [
       {
-        "source_ref": "SA-1a6514306feaab14",
-        "disclosed_at": "2026-06-07T00:58:29.000Z",
-        "status": "planned"
+        "source_ref": "SA-05eb5604cec13b8e",
+        "disclosed_at": "2026-06-07T01:18:44.000Z",
+        "status": "announced"
       }
     ],
-    "publication_status": "partial",
-    "event_id": "EV-724fc985c22215f3",
-    "display_title_zh": "消息称 Meta 拟通过股票发行募资数百亿美元，为 AI 业务扩张提供资金"
+    "publication_status": "verified",
+    "event_id": "EV-a35a3871bf36fea2",
+    "display_title_zh": "美国全面推进 AI 军事应用，特朗普要求 90 天内修订自主武器规则"
   }
 ]

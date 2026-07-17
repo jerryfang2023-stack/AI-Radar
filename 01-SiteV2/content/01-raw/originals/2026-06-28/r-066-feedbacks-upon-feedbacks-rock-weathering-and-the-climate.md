@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"Rock weathering may release or d
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_zh: "反馈的反馈：岩石风化与气候"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Feedbacks upon feedbacks: Rock weathering and the climate

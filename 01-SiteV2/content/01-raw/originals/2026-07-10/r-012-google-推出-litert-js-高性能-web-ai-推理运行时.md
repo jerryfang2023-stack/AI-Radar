@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-012
 title: "Google 推出 LiteRT.js：高性能 Web AI 推理运行时"
 title_zh: "Google 推出 LiteRT.js：高性能 Web AI 推理运行时"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://developers.googleblog.com/litertjs-googles-high-performance-web-ai-inference"
 canonical_url: "https://developers.googleblog.com/litertjs-googles-high-performance-web-ai-inference"
 source_name: "Google Developers Blog（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-10T01:59:44.134Z
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Google 推出 LiteRT.js：高性能 Web AI 推理运行时

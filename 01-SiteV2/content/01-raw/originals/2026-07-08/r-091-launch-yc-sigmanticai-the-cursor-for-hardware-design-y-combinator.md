@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-091
 title: "Launch YC: SigmanticAI - The Cursor for Hardware Design | Y Combinator"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "Launch YC: SigmanticAI - 硬件设计的Cursor工具 | Y Combinator"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.ycombinator.com/launches/NzI-sigmanticai-the-cursor-for-hardware-design"
 canonical_url: "https://ycombinator.com/launches/NzI-sigmanticai-the-cursor-for-hardware-design"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-08T04:39:26.170Z
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Launch YC: SigmanticAI - The Cursor for Hardware Design | Y Combinator

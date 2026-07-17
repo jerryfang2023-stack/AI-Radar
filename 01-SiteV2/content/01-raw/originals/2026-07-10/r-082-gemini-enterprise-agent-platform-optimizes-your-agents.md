@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-082
 title: "Gemini Enterprise Agent Platform optimizes your agents"
-title_zh: "Gemini企业代理平台优化您的代理"
-title_translation_status: translated
-title_translation_method: mymemory_title_translation
+title_zh: "Gemini企业级智能体平台优化您的智能体"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-enterprise-agent-platform/"
 canonical_url: "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-enterprise-agent-platform"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-10T02:00:03.840Z
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Gemini Enterprise Agent Platform optimizes your agents

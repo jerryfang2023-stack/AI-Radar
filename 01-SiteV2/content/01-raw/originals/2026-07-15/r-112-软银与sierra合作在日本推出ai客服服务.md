@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-112
 title: "软银与Sierra合作在日本推出AI客服服务"
 title_zh: "软银与Sierra合作在日本推出AI客服服务"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/976/568.htm"
 canonical_url: "https://ithome.com/0/976/568.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-15T04:28:38.210Z
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 软银与Sierra合作在日本推出AI客服服务

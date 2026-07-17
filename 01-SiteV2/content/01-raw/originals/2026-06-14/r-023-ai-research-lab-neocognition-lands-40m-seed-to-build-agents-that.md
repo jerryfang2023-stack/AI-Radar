@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"NeoCognition intends to sell its agent 
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "AI研究实验室NeoCognition获4000万美元种子轮融资，用于构建智能体..."
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # AI research lab NeoCognition lands $40M seed to build agents that ...

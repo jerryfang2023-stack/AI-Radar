@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"Retrieval-Augmented Generation (RAG
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "顶级AI研究员谈GPT 4.5、DeepSeek与Agentic RAG | Contextual AI CEO Douwe Kiela"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Top AI Researcher on GPT 4.5, DeepSeek and Agentic RAG | Douwe Kiela, CEO, Contextual AI

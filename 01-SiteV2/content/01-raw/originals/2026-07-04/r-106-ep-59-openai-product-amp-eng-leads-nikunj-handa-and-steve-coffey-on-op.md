@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-106
 title: "Ep 59: OpenAI Product &amp; Eng Leads Nikunj Handa and Steve Coffey on OpenAI’s New Agent Development Tools"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "第59集：OpenAI产品与工程负责人Nikunj Handa和Steve Coffey谈OpenAI新智能体开发工具"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://unsupervised-learning.simplecast.com/episodes/ep-59-openai-product-eng-leads-nikunj-handa-and-steven-heidel-on-openais-new-agent-development-tools-x9_i37Gl"
 canonical_url: "https://unsupervised-learning.simplecast.com/episodes/ep-59-openai-product-eng-leads-nikunj-handa-and-steven-heidel-on-openais-new-agent-development-tools-x9_i37Gl"
 source_name: "Unsupervised Learning (Redpoint)"
@@ -78,6 +78,7 @@ fact_extraction_completed_at: 2026-07-04T04:35:48.337Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Ep 59: OpenAI Product &amp; Eng Leads Nikunj Handa and Steve Coffey on OpenAI’s New Agent Development Tools

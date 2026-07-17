@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"DeepSeek以4000亿元估值完成首轮
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "IT早报：DeepSeek 4000亿元融资；微信支付AI专属卡；Android 17正式版"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # IT早报：DeepSeek 4000亿元融资；微信支付AI专属卡；Android 17正式版

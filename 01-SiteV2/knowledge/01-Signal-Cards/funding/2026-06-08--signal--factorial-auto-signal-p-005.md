@@ -2,7 +2,7 @@
 id: SIG-20260608-A01
 type: signal_card
 signal_type: funding
-title: "Factorial 完成 1.5 亿美元 D 轮融资，估值 25 亿美元，成欧洲最具价值 AI 创业公司之一"
+title: "Factorial获1.5亿美元D轮融资，估值达25亿美元，成为欧洲最具价值AI规模化企业之一"
 date: 2026-06-08
 status: published
 source_title: "Factorial Raises $150M Series D, Reaches $2.5 Billion Valuation to Become One of the Most Valuable AI Scale-Ups in Europe"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Factorial"
 
 frontend:
-  displayTitle: "Factorial 完成 1.5 亿美元 D 轮融资，估值 25 亿美元，成欧洲最具价值 AI 创业公司之一"
+  displayTitle: "Factorial获1.5亿美元D轮融资，估值达25亿美元，成为欧洲最具价值AI规模化企业之一"
   sourceLinks:
     - "https://www.prnewswire.com/news-releases/factorial-raises-150m-series-d-reaches-2-5-billion-valuation-to-become-one-of-the-most-valuable-ai-scale-ups-in-europe-302789078.html"
 ---
 
-# Factorial Raises $150M Series D, Reaches $2.5 Billion Valuation to Become One of the Most Valuable AI Scale-Ups in Europe
+# Factorial获1.5亿美元D轮融资，估值达25亿美元，成为欧洲最具价值AI规模化企业之一
 
 ## 新闻事实
 

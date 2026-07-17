@@ -57,6 +57,10 @@ key_excerpts: [{"type":"company_action","text":"Anthropic宣布收购SDK与MCP�
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Anthropic收购SDK与MCP服务器工具开发商Stainless"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Anthropic收购SDK与MCP服务器工具开发商Stainless

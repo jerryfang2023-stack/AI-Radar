@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-003
 title: "Nvidia rival Etched raises $800M with backing from Jane Street and a TSMC-linked fund"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "英伟达竞争对手Etched获8亿美元融资，简街与台积电关联基金参投"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://thenextweb.com/news/etched-800-million-jane-street-tsmc-inference-chip"
 canonical_url: "https://thenextweb.com/news/etched-800-million-jane-street-tsmc-inference-chip"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-07T02:01:23.317Z
 theme: ai-hardware-investment-signal
 keyword_group: ai-hardware-investment-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Nvidia rival Etched raises $800M with backing from Jane Street and a TSMC-linked fund

@@ -2,7 +2,7 @@
 id: SIG-20260709-A02
 type: signal_card
 signal_type: case
-title: "Grid Dynamics 企业深度研究 Agent 案例"
+title: "企业深度研究代理案例研究 | Grid Dynamics"
 date: 2026-07-09
 status: published
 source_title: "Enterprise Deep Research Agent Case Study | Grid Dynamics"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "Griddynamics"
 
 frontend:
-  displayTitle: "Grid Dynamics 企业深度研究 Agent 案例"
+  displayTitle: "企业深度研究代理案例研究 | Grid Dynamics"
   sourceLinks:
     - "https://www.griddynamics.com/blog/enterprise-deep-research-agent-case-study"
 ---
 
-# Grid Dynamics 企业深度研究 Agent 案例
+# 企业深度研究代理案例研究 | Grid Dynamics
 
 ## 新闻事实
 

@@ -2,7 +2,7 @@
 id: SIG-20260624-A11
 type: signal_card
 signal_type: case
-title: "Engram 记录企业应用场景：地产开发和建筑设计流程"
+title: "Engram 获 9800 万美元启动资金，打造真正了解你组织的 AI"
 date: 2026-06-24
 status: published
 source_title: "Engram Launches with $98M to Build AI That Actually Knows Your Organization"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Engram"
 
 frontend:
-  displayTitle: "Engram 记录企业应用场景：地产开发和建筑设计流程"
+  displayTitle: "Engram 获 9800 万美元启动资金，打造真正了解你组织的 AI"
   sourceLinks:
     - "https://www.prnewswire.com/news-releases/engram-launches-with-98m-to-build-ai-that-actually-knows-your-organization-302807126.html"
 ---
 
-# Engram 记录企业应用场景：地产开发和建筑设计流程
+# Engram 获 9800 万美元启动资金，打造真正了解你组织的 AI
 
 ## 新闻事实
 

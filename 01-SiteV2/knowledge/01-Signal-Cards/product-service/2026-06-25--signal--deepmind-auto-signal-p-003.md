@@ -2,7 +2,7 @@
 id: SIG-20260625-A13
 type: signal_card
 signal_type: product_service
-title: "Introducing computer use in Gemini 3.5 Flash"
+title: "Gemini 3.5 Flash 引入计算机使用功能"
 date: 2026-06-25
 status: published
 source_title: "Introducing computer use in Gemini 3.5 Flash"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Deepmind"
 
 frontend:
-  displayTitle: "Introducing computer use in Gemini 3.5 Flash"
+  displayTitle: "Gemini 3.5 Flash 引入计算机使用功能"
   sourceLinks:
     - "https://deepmind.google/blog/introducing-computer-use-in-gemini-3-5-flash"
 ---
 
-# Introducing computer use in Gemini 3.5 Flash
+# Gemini 3.5 Flash 引入计算机使用功能
 
 ## 新闻事实
 

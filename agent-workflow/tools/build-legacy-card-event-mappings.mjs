@@ -83,6 +83,7 @@ export function buildLegacyCardEventMappings() {
   const rawByLegacyId = new Map();
   const rawByDatedUrl = new Map();
   const rawByUrl = new Map();
+  const rawUrlsById = new Map();
   const eventIds = new Set();
   const eventsByRaw = new Map();
   let generatedAt = "";
@@ -103,11 +104,14 @@ export function buildLegacyCardEventMappings() {
       addIndex(rawByLegacyId, `${date}::${normalize(mapping.legacy_raw_id)}`, rawId);
       if (mapping.event_id) addIndex(eventsByRaw, rawId, mapping.event_id);
       const raw = rawIndex.get(rawId);
+      const rawUrls = new Set();
       for (const value of [raw?.source_url, raw?.canonical_url]) {
         const url = normalizeUrl(value);
+        if (url) rawUrls.add(url);
         addIndex(rawByDatedUrl, `${date}::${url}`, rawId);
         addIndex(rawByUrl, url, rawId);
       }
+      rawUrlsById.set(rawId, rawUrls);
     }
   }
 
@@ -135,8 +139,10 @@ export function buildLegacyCardEventMappings() {
       if (rawByPath.has(rawPath)) methods.add("legacy_path");
     }
     for (const rawRef of legacyRawIds) {
-      for (const rawId of rawByLegacyId.get(`${cardDate}::${rawRef}`) || []) matchedRawIds.add(rawId);
-      if (rawByLegacyId.has(`${cardDate}::${rawRef}`)) methods.add("legacy_raw_id");
+      const candidates = [...(rawByLegacyId.get(`${cardDate}::${rawRef}`) || [])]
+        .filter((rawId) => !sourceUrls.length || sourceUrls.some((url) => rawUrlsById.get(rawId)?.has(url)));
+      for (const rawId of candidates) matchedRawIds.add(rawId);
+      if (candidates.length) methods.add("legacy_raw_id");
     }
     for (const url of sourceUrls) {
       const dated = rawByDatedUrl.get(`${cardDate}::${url}`);

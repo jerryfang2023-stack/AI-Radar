@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"负责Meta AI重组核心项目的高管
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Meta AI重组核心项目高管道尔顿·史密斯被曝离职，内部士气\"史上最低\""
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Meta AI重组核心项目高管道尔顿·史密斯被曝离职，内部士气"史上最低"

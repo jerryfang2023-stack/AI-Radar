@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"Enterprise spending on AI inference grew
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "企业如何大规模优化AI推理成本"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # How Enterprises Are Optimizing AI Inference Costs at Scale

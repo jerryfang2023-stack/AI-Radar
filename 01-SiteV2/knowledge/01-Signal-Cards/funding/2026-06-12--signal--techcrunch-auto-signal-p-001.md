@@ -2,7 +2,7 @@
 id: SIG-20260612-A15
 type: signal_card
 signal_type: funding
-title: "Techcrunch 获得$12B 融资，押注地产和建筑设计工作流"
+title: "Jeff Bezos 的 Prometheus 融资 120 亿美元，打造面向物理世界的\"人工通用工程师\""
 date: 2026-06-12
 status: published
 source_title: "Jeff Bezos 的 Prometheus 融资 120 亿美元，打造面向物理世界的"人工通用工程师""
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Techcrunch"
 
 frontend:
-  displayTitle: "Techcrunch 获得$12B 融资，押注地产和建筑设计工作流"
+  displayTitle: "Jeff Bezos 的 Prometheus 融资 120 亿美元，打造面向物理世界的\"人工通用工程师\""
   sourceLinks:
     - "https://techcrunch.com/2026/06/11/jeff-bezoss-prometheus-raises-12b-to-build-an-artificial-general-engineer-for-the-physical-world"
 ---
 
-# Techcrunch 获得$12B 融资，押注地产和建筑设计工作流
+# Jeff Bezos 的 Prometheus 融资 120 亿美元，打造面向物理世界的"人工通用工程师"
 
 ## 新闻事实
 

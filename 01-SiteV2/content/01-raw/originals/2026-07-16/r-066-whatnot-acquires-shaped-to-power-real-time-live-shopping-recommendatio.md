@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-066
 title: "Whatnot acquires Shaped to power real-time live shopping recommendations"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "Whatnot收购Shaped以增强实时直播购物推荐功能"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://techcrunch.com/2026/07/15/whatnot-acquires-shaped-to-power-real-time-live-shopping-recommendations/"
 canonical_url: "https://techcrunch.com/2026/07/15/whatnot-acquires-shaped-to-power-real-time-live-shopping-recommendations"
 source_name: "TechCrunch AI"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-16T02:39:33.806Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Whatnot acquires Shaped to power real-time live shopping recommendations

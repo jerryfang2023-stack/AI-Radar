@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"Today, we’re announcing Amazon Be
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "亚马逊Bedrock托管知识库发布，助力企业AI应用更快速、更精准 | AWS新闻博客"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Introducing Amazon Bedrock Managed Knowledge Base for faster, more accurate enterprise AI applications | AWS News Blog

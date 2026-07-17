@@ -2,7 +2,7 @@
 id: SIG-20260619-A23
 type: signal_card
 signal_type: product_service
-title: "Ithome 推出 Agent 工作流能力，切入销售线索和收入团队协作"
+title: "Meta AI重组核心项目高管道尔顿·史密斯被曝离职，内部士气\"史上最低\""
 date: 2026-06-19
 status: published
 source_title: "Meta AI重组核心项目高管道尔顿·史密斯被曝离职，内部士气"史上最低""
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Ithome"
 
 frontend:
-  displayTitle: "Ithome 推出 Agent 工作流能力，切入销售线索和收入团队协作"
+  displayTitle: "Meta AI重组核心项目高管道尔顿·史密斯被曝离职，内部士气\"史上最低\""
   sourceLinks:
     - "https://www.ithome.com/0/966/109.htm"
 ---
 
-# Ithome 推出 Agent 工作流能力，切入销售线索和收入团队协作
+# Meta AI重组核心项目高管道尔顿·史密斯被曝离职，内部士气"史上最低"
 
 ## 新闻事实
 

@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-001
 title: "SK Hynix 美国 IPO 融资 265 亿美元，创史上最大外国公司上市纪录"
 title_zh: "SK Hynix 美国 IPO 融资 265 亿美元，创史上最大外国公司上市纪录"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://techcrunch.com/2026/07/10/sk-hynix-raises-26-5b-in-the-biggest-foreign-ipo-in-us-history-is-urged-to-build-new-us-fabs"
 canonical_url: "https://techcrunch.com/2026/07/10/sk-hynix-raises-26-5b-in-the-biggest-foreign-ipo-in-us-history-is-urged-to-build-new-us-fabs"
 source_name: "TechCrunch：AI（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-11T04:06:31.315Z
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # SK Hynix 美国 IPO 融资 265 亿美元，创史上最大外国公司上市纪录

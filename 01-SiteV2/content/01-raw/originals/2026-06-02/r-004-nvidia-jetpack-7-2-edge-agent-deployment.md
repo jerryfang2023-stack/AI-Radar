@@ -72,6 +72,10 @@ key_excerpts: [{"type":"supporting_context","text":"NVIDIA JetPack 7.2发布，�
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "NVIDIA JetPack 7.2支持内存优化的边缘智能体部署"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # NVIDIA JetPack 7.2支持内存优化的边缘智能体部署

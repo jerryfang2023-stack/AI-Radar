@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"华为云发布全新 Agentic AI
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "华为云推出 Agentic AI 云入口\"智果园\"，支持 DeepSeek 等大模型"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 华为云推出 Agentic AI 云入口"智果园"，支持 DeepSeek 等大模型

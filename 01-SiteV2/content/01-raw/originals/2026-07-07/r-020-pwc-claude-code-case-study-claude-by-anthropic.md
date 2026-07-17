@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-020
 title: "PwC Claude Code case study | Claude by Anthropic"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "PwC Claude Code案例研究 | Anthropic旗下Claude"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://claude.com/customers/pwc-qa"
 canonical_url: "https://claude.com/customers/pwc-qa"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-07T02:46:59.409Z
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # PwC Claude Code case study | Claude by Anthropic

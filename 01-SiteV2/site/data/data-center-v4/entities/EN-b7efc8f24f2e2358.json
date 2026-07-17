@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 818,
+    "quarantinedEventCount": 58
+  },
+  "entity": {
+    "id": "EN-b7efc8f24f2e2358",
+    "name": "Auto-review",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-6756a2af0058318f",
+      "EV-cd3d3a11153c7070"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-06-11",
+    "lastSeen": "2026-06-12",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-6756a2af0058318f",
+        "EV-cd3d3a11153c7070"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-6756a2af0058318f",
+        "dataDate": "2026-06-12",
+        "date": "2026-06-11",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Cursor 推出 Auto-review 机制：用分类器智能体动态管控智能体自主权限",
+        "displayTags": [],
+        "entityIds": [
+          "EN-46a4eebd20d881ec",
+          "EN-b7efc8f24f2e2358"
+        ]
+      },
+      {
+        "id": "EV-cd3d3a11153c7070",
+        "dataDate": "2026-06-12",
+        "date": "2026-06-11",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Cursor 推出 Auto-review 实现智能体自治管控",
+        "displayTags": [],
+        "entityIds": [
+          "EN-46a4eebd20d881ec",
+          "EN-b7efc8f24f2e2358"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

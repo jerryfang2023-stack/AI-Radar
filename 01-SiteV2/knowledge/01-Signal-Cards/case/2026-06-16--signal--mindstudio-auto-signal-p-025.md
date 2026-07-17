@@ -2,7 +2,7 @@
 id: SIG-20260616-A04
 type: signal_card
 signal_type: case
-title: "Mindstudio 案例：AI 进入销售和收入团队流程"
+title: "企业如何向销售团队推广AI代理 | MindStudio"
 date: 2026-06-16
 status: published
 source_title: "How an Enterprise Rolled Out AI Agents to Sales Teams | MindStudio"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Mindstudio"
 
 frontend:
-  displayTitle: "Mindstudio 案例：AI 进入销售和收入团队流程"
+  displayTitle: "企业如何向销售团队推广AI代理 | MindStudio"
   sourceLinks:
     - "https://www.mindstudio.ai/blog/enterprise-sales-rollout"
 ---
 
-# Mindstudio 案例：AI 进入销售和收入团队流程
+# 企业如何向销售团队推广AI代理 | MindStudio
 
 ## 新闻事实
 

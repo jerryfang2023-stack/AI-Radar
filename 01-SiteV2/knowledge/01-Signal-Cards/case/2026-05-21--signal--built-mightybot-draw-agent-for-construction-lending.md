@@ -2,7 +2,7 @@
 id: SIG-20260521-04
 type: signal_card
 signal_type: case
-title: "Built 与 MightyBot 发布建设贷款 Draw Agent 生产案例"
+title: "Built x MightyBot案例研究：AI绘图代理投入生产"
 date: 2026-05-21
 status: draft
 asset_level: candidate
@@ -37,7 +37,7 @@ signal_owner: "Built / MightyBot"
 watch_reason: "继续看是否出现更多建设金融客户、准确率口径和人工复核安排。"
 
 frontend:
-  displayTitle: "Built 与 MightyBot 发布建设贷款 Draw Agent 生产案例"
+  displayTitle: "Built x MightyBot案例研究：AI绘图代理投入生产"
   eventLine: "Built 和 MightyBot 披露 Draw Agent 生产案例，服务建设贷款相关工作流。"
   whyWatch: "它把 AI Agent 放进垂直金融流程，关注点是材料处理、准确率和交付周期。"
   businessMeaning: "影响的是贷款运营、风控复核、文件处理和专业服务交付成本。"
@@ -71,7 +71,7 @@ opportunity_signals:
   missing_fields: ["buyer_or_user", "specific_task"]
 ---
 
-# Built 与 MightyBot 发布建设贷款 Draw Agent 生产案例
+# Built x MightyBot案例研究：AI绘图代理投入生产
 
 ## 信号底稿
 

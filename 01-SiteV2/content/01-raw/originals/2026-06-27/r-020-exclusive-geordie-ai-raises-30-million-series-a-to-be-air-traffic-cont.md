@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Geordie AI, a London-based startup whic
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "独家：Geordie AI获3000万美元A轮融资，欲做企业AI代理的“空中交通管制”"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Exclusive: Geordie AI raises $30 million Series A to be ‘air traffic control’ for your company’s AI agents – DNYUZ

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"ition raises $100 ... led by Khosla ...
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Scaled Cognition 获 Khosla 领投 1 亿美元融资"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Scaled Cognition raises $100M led by Khosla

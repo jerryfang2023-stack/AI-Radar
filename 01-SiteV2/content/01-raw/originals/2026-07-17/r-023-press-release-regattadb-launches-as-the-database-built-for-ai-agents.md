@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-023
 title: "Press Release: RegattaDB Launches as the Database Built for AI Agents"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "新闻稿：RegattaDB正式发布，专为AI智能体打造的数据库"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://regatta.dev/blog/press-release-regattadb-launches-as-the-database-built-for-ai-agents"
 canonical_url: "https://regatta.dev/blog/press-release-regattadb-launches-as-the-database-built-for-ai-agents"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-17T04:40:16.930Z
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Press Release: RegattaDB Launches as the Database Built for AI Agents

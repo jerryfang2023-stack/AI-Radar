@@ -72,6 +72,10 @@ key_excerpts: [{"type":"company_action","text":"Meta AI mode 📱, Factory 2.","
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_zh: "Meta AI模式📱，Factory 2.0👨‍💻，Sakana自主研究员🐟"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Meta AI mode 📱, Factory 2.0 👨‍💻, Sakana’s autonomous researcher 🐟

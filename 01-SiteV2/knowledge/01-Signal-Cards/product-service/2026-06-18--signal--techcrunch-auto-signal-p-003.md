@@ -2,7 +2,7 @@
 id: SIG-20260618-A08
 type: signal_card
 signal_type: product_service
-title: "Techcrunch 推出 Agent 工作流能力，切入企业 Agent 协作平台"
+title: "Google发布99美元Gemini智能音箱"
 date: 2026-06-18
 status: published
 source_title: "Google发布99美元Gemini智能音箱"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "Techcrunch"
 
 frontend:
-  displayTitle: "Techcrunch 推出 Agent 工作流能力，切入企业 Agent 协作平台"
+  displayTitle: "Google发布99美元Gemini智能音箱"
   sourceLinks:
     - "https://techcrunch.com/2026/06/17/google-bets-on-gemini-to-reinvent-the-smart-home-speaker"
 ---
 
-# Techcrunch 推出 Agent 工作流能力，切入企业 Agent 协作平台
+# Google发布99美元Gemini智能音箱
 
 ## 新闻事实
 

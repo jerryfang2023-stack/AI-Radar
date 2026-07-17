@@ -2,7 +2,7 @@
 id: SIG-20260620-A08
 type: signal_card
 signal_type: case
-title: "IBM watsonx.ai v2.4: Expanding governed AI development for the enterprise"
+title: "IBM watsonx.ai v2.4：扩展企业级受管AI开发"
 date: 2026-06-20
 status: published
 source_title: "IBM watsonx.ai v2.4: Expanding governed AI development for the enterprise"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "IBM watsonx.ai v2.4"
 
 frontend:
-  displayTitle: "IBM watsonx.ai v2.4: Expanding governed AI development for the enterprise"
+  displayTitle: "IBM watsonx.ai v2.4：扩展企业级受管AI开发"
   sourceLinks:
     - "https://www.ibm.com/new/announcements/ibm-watsonx-ai-v2-4-expanding-governed-ai-development-for-the-enterprise"
 ---
 
-# IBM watsonx.ai v2.4: Expanding governed AI development for the enterprise
+# IBM watsonx.ai v2.4：扩展企业级受管AI开发
 
 ## 新闻事实
 

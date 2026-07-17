@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"Databricks Launches Genie One: A
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_zh: "Databricks推出Genie One：面向所有团队的全新智能协作助手"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Databricks Launches Genie One: All-New Agentic Coworker for Every Team - Databricks

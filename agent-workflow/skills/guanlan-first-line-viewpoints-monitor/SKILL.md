@@ -3,7 +3,7 @@ name: guanlan-first-line-viewpoints-monitor
 description: Use when supervising, running, repairing, or improving the WaveSight AI current SITE-V3.4.5 First-Line Viewpoints lane. Covers builders / follow-builders data refresh, Chinese translation gate, original URL and tag checks, fallback safety, Obsidian person/date timeline sync, idempotent morning/afternoon publication checks, Hermes repair closure, and lane-specific self-improvement. Do not use for Business Signals, Signal Cards, relationship graph evidence, trend candidates, or Community Intelligence.
 metadata:
   guanlan:
-    version: "1.0.3"
+    version: "1.0.4"
     lane: "First-Line Viewpoints"
     status: "current lane owner"
     order: 20
@@ -11,7 +11,7 @@ metadata:
     upstream: "follow-builders source data, builders workflow, Hermes inbox"
     downstream: "follow-builders-daily.json, frontstage page data, Obsidian opinion timelines, PR publication"
     gates: "builders data assertion, translation gate, URL/tag checks, sync idempotency"
-    recent_learning: "Obsidian timelines are keyed by source original date, so same-day health must use sync dry-run added=0; afternoon reports must expose publish_status, publish_error, and Obsidian sync counts."
+    recent_learning: "Production translation must use DeepSeek with source-hash and model provenance; missing credentials, incomplete translation, or legacy public-MT output blocks publication."
     mirrored_in_skill_store: true
     memory_required: true
 ---
@@ -64,6 +64,15 @@ When repairing repeated morning or afternoon monitoring failures, also read `exa
 8. Stage / publish only first-line owned files through the automation PR route.
 9. Add or tighten evals before adding long prose when a failure recurs.
 10. Close Hermes inbox items only after validation and prevention are recorded.
+
+## Translation Provider Contract
+
+- Preserve the complete source text and original URL. Chinese is an additional field, never a replacement for evidence.
+- Use `deepseek-v4-flash` for titles and short text up to 600 characters and two paragraphs. Use `deepseek-v4-pro` for longer or structurally complex text, or as the quality retry after Flash fails.
+- Record `translationMethod=deepseek_translation`, the selected model, and a hash of the source text. A cached result is reusable only when its source hash still matches.
+- Preserve URLs, handles, hashtags, dates, amounts, percentages, product names, and other factual tokens. Full-text fields must be complete translations, not summaries.
+- Do not use MyMemory or another generic public machine-translation fallback in production.
+- If `DEEPSEEK_API_KEY` is missing, the request fails, or translation quality is incomplete, keep the item unpublished and fail the lane gate. Never expose untranslated English as Chinese primary text.
 
 ## Failure Router
 

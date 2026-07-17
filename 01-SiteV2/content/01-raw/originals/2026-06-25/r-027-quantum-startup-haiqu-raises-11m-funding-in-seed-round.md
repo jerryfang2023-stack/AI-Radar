@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Stay on top Get the daily news from Sta
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_zh: "量子初创公司Haiqu在种子轮融资中筹集1100万美元"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Quantum Startup Haiqu Raises $11M Funding In Seed Round

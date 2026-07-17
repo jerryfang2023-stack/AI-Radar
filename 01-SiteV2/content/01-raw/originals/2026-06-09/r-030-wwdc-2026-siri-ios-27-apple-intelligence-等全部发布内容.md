@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"苹果 WWDC 2026 于太平洋时
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "WWDC 2026：Siri、iOS 27、Apple Intelligence 等全部发布内容"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # WWDC 2026：Siri、iOS 27、Apple Intelligence 等全部发布内容

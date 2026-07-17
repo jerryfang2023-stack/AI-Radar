@@ -2,7 +2,7 @@
 id: SIG-20260713-A07
 type: signal_card
 signal_type: funding
-title: "Monogram 获得 4000 万美元种子轮融资"
+title: "Monogram为其视觉AI界面筹集4000万美元种子轮资金 | Value Add Pulse"
 date: 2026-07-13
 status: published
 source_title: "Monogram Raises $40M Seed for Visual AI Interface | Value Add Pulse"
@@ -59,12 +59,12 @@ opportunity_signals:
 signal_owner: "Monogram"
 
 frontend:
-  displayTitle: "Monogram 获得 4000 万美元种子轮融资"
+  displayTitle: "Monogram为其视觉AI界面筹集4000万美元种子轮资金 | Value Add Pulse"
   sourceLinks:
     - "https://valueaddvc.com/pulse/monogram-ai-40m-seed-2026"
 ---
 
-# Monogram 获得 4000 万美元种子轮融资
+# Monogram为其视觉AI界面筹集4000万美元种子轮资金 | Value Add Pulse
 
 ## 新闻事实
 

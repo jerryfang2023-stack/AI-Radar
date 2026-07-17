@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-061
 title: "微软让步：Teams 会议中途支持关闭 Recap 等 AI 功能"
 title_zh: "微软让步：Teams 会议中途支持关闭 Recap 等 AI 功能"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/973/376.htm"
 canonical_url: "https://ithome.com/0/973/376.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-07T02:46:59.878Z
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 微软让步：Teams 会议中途支持关闭 Recap 等 AI 功能

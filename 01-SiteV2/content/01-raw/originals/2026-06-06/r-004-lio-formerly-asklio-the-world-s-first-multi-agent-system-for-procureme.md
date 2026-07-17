@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Lio (formerly askLio): The World's Firs
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only
+title_zh: "Lio（原名askLio）：全球首个面向采购的多智能体系统 | Y Combinator"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Lio (formerly askLio): The World's First Multi-Agent System for Procurement | Y Combinator

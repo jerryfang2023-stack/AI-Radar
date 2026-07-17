@@ -5,7 +5,8 @@
     "event_time": "2026-06-04T21:52:51.000Z",
     "disclosed_at": "2026-06-04T21:52:51.000Z",
     "entities": [
-      "EN-c70eca6b0f88f44d"
+      "EN-c70eca6b0f88f44d",
+      "EN-fe7f2cc6a2c87e0b"
     ],
     "action": "发布",
     "object": "Claude Code v2.1.163 发布",
@@ -41,7 +42,9 @@
     "event_time": "2026-06-04T21:42:28.000Z",
     "disclosed_at": "2026-06-04T21:42:28.000Z",
     "entities": [
-      "EN-8d4321d936320802"
+      "EN-30554d395f1a7298",
+      "EN-8d4321d936320802",
+      "EN-a3266ab9e10d6105"
     ],
     "action": "发布",
     "object": "Nemotron 3 Ultra：开源 550B MoE 混合 Mamba-Transformer，面向长时间运行智能体",
@@ -70,7 +73,7 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-19ea623bb5eabdd5",
+    "event_id": "EV-4bf0e4043c3562f2",
     "display_title_zh": "NVIDIA AI 发布 Nemotron 3 Ultra：开源 550B MoE 混合 Mamba-Transformer，面向长时间运行智能体"
   },
   {
@@ -79,9 +82,11 @@
     "event_time": "2026-06-04T20:25:28.688Z",
     "disclosed_at": "2026-06-04T20:25:28.688Z",
     "entities": [
+      "EN-35e36dc1a5213fa3",
       "EN-bbdefa2950f49882",
       "EN-8147e6fed86d42c1",
-      "EN-b0532e1af75cc4ab"
+      "EN-b0532e1af75cc4ab",
+      "EN-e3db3da2b7dc6057"
     ],
     "action": "发布",
     "object": "被动心率监测系统 PHRM",
@@ -112,7 +117,7 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-d31057c6f6ec28ba",
+    "event_id": "EV-dab4d3f2059e8880",
     "display_title_zh": "Google Research 发布被动心率监测系统 PHRM"
   },
   {
@@ -121,6 +126,7 @@
     "event_time": "",
     "disclosed_at": "2026-06-05T00:46:23.070Z",
     "entities": [
+      "EN-6d766cee0782bfaf",
       "EN-7d3194f79e645c42",
       "EN-bbdefa2950f49882"
     ],
@@ -138,7 +144,9 @@
       "SA-38c1fae4554f9306"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-38c1fae4554f9306",
@@ -147,16 +155,17 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-c28e0d02272537d8",
-    "display_title_zh": "OpenAI 发布 frameworks"
+    "event_id": "EV-cac9d9f31ef675ce",
+    "display_title_zh": "2026年构建AI代理的最佳开源框架"
   },
   {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "",
     "disclosed_at": "2026-06-05T00:46:23.081Z",
     "entities": [
-      "EN-58b507456c52c9b3"
+      "EN-58b507456c52c9b3",
+      "EN-96eebba49dbbf422"
     ],
     "action": "raises",
     "object": "$10M to broker AI agent access to corporate data",
@@ -177,17 +186,19 @@
       "SA-ddb6754de5b2017d"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-ddb6754de5b2017d",
         "disclosed_at": "2026-06-05T00:46:23.081Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
     "event_id": "EV-6ae3594aadfcd3d8",
-    "display_title_zh": "Archestra 完成 1000 万美元 种子前轮融资"
+    "display_title_zh": "Archestra 融资1000万美元，为AI代理接入企业数据提供中介服务"
   },
   {
     "event_type": "product_release",
@@ -221,41 +232,38 @@
     ],
     "publication_status": "verified",
     "event_id": "EV-fa1b1efd77f36d56",
-    "display_title_zh": "NVIDIA 发布 inference cost reduction enterprise adoption / intent=find_market_trend / path=a_media_gdelt"
+    "display_title_zh": "2026-06-01T18:00:00Z / 查询=模型发布推理成本降低企业采用 / 意图=寻找市场趋势 / 路径=a_media_gdelt"
   },
   {
-    "event_type": "funding",
+    "event_type": "hardware_deployment",
     "event_status": "announced",
     "event_time": "",
     "disclosed_at": "2026-06-05T00:46:23.126Z",
     "entities": [
+      "EN-090e5412541f063f",
       "EN-ea3bd73e2b506e00",
-      "EN-6fcba5d96a4fadfd",
-      "EN-c70eca6b0f88f44d"
+      "EN-6fcba5d96a4fadfd"
     ],
-    "action": "raise",
-    "object": "$3M to build the voice AI infrastructure global tech giants overlooked — TFN",
+    "action": "build the voice AI infrastructure",
+    "object": "global tech giants overlooked — TFN",
     "metrics": [
       "$3M",
-      "$3 million",
-      "$500 million",
-      "$11 billion",
-      "$50 million",
-      "$14 million",
-      "€10.5M"
+      "$0.03 "
     ],
     "locations": [],
     "claim_refs": [
       "CL-245355925d177ced",
-      "CL-9b15fec709aaa6de",
-      "CL-817a2d5ea3011f6d",
-      "CL-9f380d1ccd2641f3"
+      "CL-896ba25e2819e633",
+      "CL-822cea60c869f7d2",
+      "CL-142fe82a5fc48927"
     ],
     "source_refs": [
       "SA-b2672f0f309fb59d"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-b2672f0f309fb59d",
@@ -264,8 +272,8 @@
       }
     ],
     "publication_status": "partial",
-    "event_id": "EV-f64345af2affb07d",
-    "display_title_zh": "Meta 完成 300 万美元 D 轮融资"
+    "event_id": "EV-43301de739fe560e",
+    "display_title_zh": "前高盛与Meta创始人筹集300万美元，打造全球科技巨头忽视的语音AI基础设施"
   },
   {
     "event_type": "product_release",
@@ -273,7 +281,12 @@
     "event_time": "",
     "disclosed_at": "2026-06-05T00:46:23.158Z",
     "entities": [
-      "EN-bbdefa2950f49882"
+      "EN-9d07f526fab9cfe9",
+      "EN-bbdefa2950f49882",
+      "EN-96eebba49dbbf422",
+      "EN-2aae0de3f5530f08",
+      "EN-77fe4e790d5bc756",
+      "EN-64d17ceed397dfde"
     ],
     "action": "Launches",
     "object": "on Google Cloud Marketplace",
@@ -289,7 +302,9 @@
       "SA-6167412f76ca2c15"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-6167412f76ca2c15",
@@ -298,8 +313,43 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-7fa23cf0102a8f92",
-    "display_title_zh": "Google 发布 on Google Cloud Marketplace"
+    "event_id": "EV-5493c61bcbe58aa2",
+    "display_title_zh": "DataRobot AI Cloud 在 Google Cloud Marketplace 上线"
+  },
+  {
+    "event_type": "deployment",
+    "event_status": "announced",
+    "event_time": "",
+    "disclosed_at": "2026-06-05T00:46:23.225Z",
+    "entities": [],
+    "action": "Implementing",
+    "object": "AI in Business in 2026 - Riseup Labs",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-3b146b69b4409cf5",
+      "CL-b6ceaee6164fd64a",
+      "CL-5111ca3d28bbe54c",
+      "CL-a410cf9e165b75be"
+    ],
+    "source_refs": [
+      "SA-854910cb91ebbac6"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "entities",
+      "event_time"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-854910cb91ebbac6",
+        "disclosed_at": "2026-06-05T00:46:23.225Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "partial",
+    "event_id": "EV-2749b10fd85fc58c",
+    "display_title_zh": "2026年企业实施AI的真实成本 - Riseup Labs"
   },
   {
     "event_type": "product_release",
@@ -307,7 +357,9 @@
     "event_time": "",
     "disclosed_at": "2026-06-05T00:46:23.264Z",
     "entities": [
-      "EN-9fbf261b62c1d7c0"
+      "EN-9fbf261b62c1d7c0",
+      "EN-e75a2e5083aa0089",
+      "EN-202ac21492470b79"
     ],
     "action": "Open Source",
     "object": "Introducing the Agent Governance Toolkit - Microsoft Open Source",
@@ -324,7 +376,8 @@
     ],
     "conflicts": [],
     "missing_fields": [
-      "object"
+      "object",
+      "event_time"
     ],
     "update_history": [
       {
@@ -335,6 +388,44 @@
     ],
     "publication_status": "verified",
     "event_id": "EV-922de7a46f447efa",
-    "display_title_zh": "Microsoft 发布 Introducing the Agent Governance Toolkit"
+    "display_title_zh": "微软开源推出Agent治理工具包"
+  },
+  {
+    "event_type": "acquisition",
+    "event_status": "announced",
+    "event_time": "",
+    "disclosed_at": "2026-06-05T00:46:23.276Z",
+    "entities": [
+      "EN-c70eca6b0f88f44d",
+      "EN-96eebba49dbbf422"
+    ],
+    "action": "Acquisition",
+    "object": "Anthropic's New Consulting Venture Makes Its First Acquisition",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-1281dd1d28fa4571",
+      "CL-07c14baf1cb7dd94",
+      "CL-36157bbcba12611b",
+      "CL-7ca620e4dc33f3ea"
+    ],
+    "source_refs": [
+      "SA-02bebf42caf24cc8"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "object",
+      "event_time"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-02bebf42caf24cc8",
+        "disclosed_at": "2026-06-05T00:46:23.276Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-bc4ac955cd26b969",
+    "display_title_zh": "Anthropic 新咨询业务完成首次收购"
   }
 ]

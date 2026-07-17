@@ -72,6 +72,10 @@ key_excerpts: [{"type":"company_action","text":"Evals for Agents introduces tool
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "OpenAI推出AgentKit，助力开发者构建并部署AI代理"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # OpenAI launches AgentKit to help developers build and ship AI agents

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"supporting_context","text":"美国政府在上周末前�
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "美国禁止Anthropic的Fable 5发布，但数字并不在意"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 美国禁止Anthropic的Fable 5发布，但数字并不在意

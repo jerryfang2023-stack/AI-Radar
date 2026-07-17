@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Legendary venture capital firm Andreess
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only
+title_zh: "AI产品团队初创公司Pit从a16z等机构融资1600万美元，用于自动化企业工作流程 - SiliconANGLE"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # AI product team startup Pit raises $16M from a16z and others to automate enterprise workflows - SiliconANGLE

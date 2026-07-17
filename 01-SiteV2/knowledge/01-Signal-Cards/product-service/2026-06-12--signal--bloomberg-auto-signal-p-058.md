@@ -2,7 +2,7 @@
 id: SIG-20260612-A07
 type: signal_card
 signal_type: product_service
-title: "Bloomberg 推出 Agent 工作流能力，切入销售线索和收入团队协作"
+title: "DoorDash 推出 AI 聊天机器人，帮助处理订单、预订和杂货清单"
 date: 2026-06-12
 status: published
 source_title: "DoorDash 推出 AI 聊天机器人，帮助处理订单、预订和杂货清单"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Bloomberg"
 
 frontend:
-  displayTitle: "Bloomberg 推出 Agent 工作流能力，切入销售线索和收入团队协作"
+  displayTitle: "DoorDash 推出 AI 聊天机器人，帮助处理订单、预订和杂货清单"
   sourceLinks:
     - "https://www.bloomberg.com/news/articles/2026-06-11/doordash-s-ask-doordash-ai-chatbot-can-help-with-orders-groceries-reservations"
 ---
 
-# Bloomberg 推出 Agent 工作流能力，切入销售线索和收入团队协作
+# DoorDash 推出 AI 聊天机器人，帮助处理订单、预订和杂货清单
 
 ## 新闻事实
 

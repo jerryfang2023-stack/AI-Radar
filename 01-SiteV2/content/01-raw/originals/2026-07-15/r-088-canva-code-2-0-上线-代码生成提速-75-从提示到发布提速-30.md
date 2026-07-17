@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-088
 title: "Canva Code 2.0 上线：代码生成提速 75%，从提示到发布提速 30%"
 title_zh: "Canva Code 2.0 上线：代码生成提速 75%，从提示到发布提速 30%"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/976/803.htm"
 canonical_url: "https://ithome.com/0/976/803.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-15T04:28:38.086Z
 theme: outside-core-exploration
 keyword_group: outside-core-exploration
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Canva Code 2.0 上线：代码生成提速 75%，从提示到发布提速 30%

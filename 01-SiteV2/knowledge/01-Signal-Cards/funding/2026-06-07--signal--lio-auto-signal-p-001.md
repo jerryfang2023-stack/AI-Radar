@@ -2,7 +2,7 @@
 id: SIG-20260607-A01
 type: signal_card
 signal_type: funding
-title: "Lio – The world's first multi agent system for procurement"
+title: "Lio – 全球首个采购领域多智能体系统"
 date: 2026-06-07
 status: published
 source_title: "Lio – The world's first multi agent system for procurement"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Lio"
 
 frontend:
-  displayTitle: "Lio – The world's first multi agent system for procurement"
+  displayTitle: "Lio – 全球首个采购领域多智能体系统"
   sourceLinks:
     - "https://lio.ai/"
 ---
 
-# Lio – The world's first multi agent system for procurement
+# Lio – 全球首个采购领域多智能体系统
 
 ## 新闻事实
 

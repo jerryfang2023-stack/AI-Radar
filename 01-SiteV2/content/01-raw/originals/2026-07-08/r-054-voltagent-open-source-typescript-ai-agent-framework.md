@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-054
 title: "VoltAgent - Open Source TypeScript AI Agent Framework"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "VoltAgent - 开源TypeScript AI代理框架"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://voltagent.dev/"
 canonical_url: "https://voltagent.dev"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-08T04:39:25.834Z
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # VoltAgent - Open Source TypeScript AI Agent Framework

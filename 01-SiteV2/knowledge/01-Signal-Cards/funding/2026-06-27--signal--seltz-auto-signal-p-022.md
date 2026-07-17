@@ -2,7 +2,7 @@
 id: SIG-20260627-A01
 type: signal_card
 signal_type: funding
-title: "Exclusive: Seltz, a startup trying to reinvent web search for AI agents, raises $12.5 seed round"
+title: "独家：Seltz，一家试图为AI智能体重塑网络搜索的初创公司，完成$12.5种子轮融资"
 date: 2026-06-27
 status: published
 source_title: "Exclusive: Seltz, a startup trying to reinvent web search for AI agents, raises $12.5 seed round | Fortune"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Seltz"
 
 frontend:
-  displayTitle: "Exclusive: Seltz, a startup trying to reinvent web search for AI agents, raises $12.5 seed round"
+  displayTitle: "独家：Seltz，一家试图为AI智能体重塑网络搜索的初创公司，完成$12.5种子轮融资"
   sourceLinks:
     - "https://fortune.com/2026/06/24/exclusive-seltz-a-startup-rebuilding-web-search-for-ai-agents-raises-12-5-million-in-seed-funding/"
 ---
 
-# Exclusive: Seltz, a startup trying to reinvent web search for AI agents, raises $12.5 seed round
+# 独家：Seltz，一家试图为AI智能体重塑网络搜索的初创公司，完成$12.5种子轮融资
 
 ## 新闻事实
 

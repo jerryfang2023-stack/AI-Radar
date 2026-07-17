@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-089
 title: "AI 交互革命：Claude Code 系统提示词精简 80%，示例约束反而遏制表现"
 title_zh: "AI 交互革命：Claude Code 系统提示词精简 80%，示例约束反而遏制表现"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/972/176.htm"
 canonical_url: "https://ithome.com/0/972/176.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-04T04:50:50.823Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # AI 交互革命：Claude Code 系统提示词精简 80%，示例约束反而遏制表现

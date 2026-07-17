@@ -2,7 +2,7 @@
 id: SIG-20260619-A02
 type: signal_card
 signal_type: funding
-title: "AI推理公司Baseten据报以130亿美元估值融资15亿美元 获得5 billion 融资，押注模型部署和算力服务"
+title: "AI推理公司Baseten据报以130亿美元估值融资15亿美元"
 date: 2026-06-19
 status: published
 source_title: "AI推理公司Baseten据报以130亿美元估值融资15亿美元"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "AI推理公司Baseten据报以130亿美元估值融资15亿美元"
 
 frontend:
-  displayTitle: "AI推理公司Baseten据报以130亿美元估值融资15亿美元 获得5 billion 融资，押注模型部署和算力服务"
+  displayTitle: "AI推理公司Baseten据报以130亿美元估值融资15亿美元"
   sourceLinks:
     - "https://techcrunch.com/2026/06/18/ai-inference-startup-baseten-reportedly-raising-1-5b-months-after-its-last-mega-round"
 ---
 
-# AI推理公司Baseten据报以130亿美元估值融资15亿美元 获得5 billion 融资，押注模型部署和算力服务
+# AI推理公司Baseten据报以130亿美元估值融资15亿美元
 
 ## 新闻事实
 

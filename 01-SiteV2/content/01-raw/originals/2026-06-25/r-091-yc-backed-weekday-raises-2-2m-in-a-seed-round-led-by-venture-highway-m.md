@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Title: YC-backed Weekday raises $2.2M i
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_zh: "YC支持的Weekday获得220万美元种子轮融资，由Venture Highway领投 | Medial"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # YC-backed Weekday raises $2.2M in a seed round led by Venture Highway | Medial

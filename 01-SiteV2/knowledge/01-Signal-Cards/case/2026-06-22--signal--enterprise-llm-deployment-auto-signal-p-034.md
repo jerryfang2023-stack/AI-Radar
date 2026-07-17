@@ -2,7 +2,7 @@
 id: SIG-20260622-A13
 type: signal_card
 signal_type: case
-title: "Enterprise LLM Deployment 记录企业应用场景：地产开发和建筑设计流程"
+title: "企业级LLM部署：私有云与公有云基础设施对比——OneSource云"
 date: 2026-06-22
 status: published
 source_title: "Enterprise LLM Deployment: Private vs Cloud Infrastructure-OneSource Cloud"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Enterprise LLM Deployment"
 
 frontend:
-  displayTitle: "Enterprise LLM Deployment 记录企业应用场景：地产开发和建筑设计流程"
+  displayTitle: "企业级LLM部署：私有云与公有云基础设施对比——OneSource云"
   sourceLinks:
     - "https://www.onesourcecloud.net/cms/2026-enterprise-llm-deployment.html"
 ---
 
-# Enterprise LLM Deployment 记录企业应用场景：地产开发和建筑设计流程
+# 企业级LLM部署：私有云与公有云基础设施对比——OneSource云
 
 ## 新闻事实
 

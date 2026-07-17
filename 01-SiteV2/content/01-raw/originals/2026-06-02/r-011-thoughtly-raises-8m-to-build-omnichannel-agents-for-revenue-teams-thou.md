@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Thoughtly, the AI engagement platform t
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Thoughtly 获超800万美元融资，为营收团队打造全渠道智能代理"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Thoughtly raises $8M+ to build omnichannel agents for revenue teams | Thoughtly

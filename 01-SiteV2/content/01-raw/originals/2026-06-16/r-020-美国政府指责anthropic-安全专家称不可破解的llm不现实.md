@@ -72,6 +72,10 @@ key_excerpts: [{"type":"supporting_context","text":"美国政府官员指责Anth
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "美国政府指责Anthropic，安全专家称不可破解的LLM不现实"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 美国政府指责Anthropic，安全专家称不可破解的LLM不现实

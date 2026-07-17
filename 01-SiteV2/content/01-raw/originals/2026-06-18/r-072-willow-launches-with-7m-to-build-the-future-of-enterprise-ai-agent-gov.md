@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"After a year running quietly inside Wix
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Willow 获 700 万美元融资，打造企业 AI 代理治理未来"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Willow Launches with $7M to Build the Future of Enterprise AI Agent Governance | Willow

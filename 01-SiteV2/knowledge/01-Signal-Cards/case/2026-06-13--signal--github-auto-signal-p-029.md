@@ -2,7 +2,7 @@
 id: SIG-20260613-A13
 type: signal_card
 signal_type: case
-title: "GitHub 案例：AI 进入销售和收入团队流程"
+title: "GitHub - CloudGeometry/langbuilder 在 LangBuilder_V1.2 版本"
 date: 2026-06-13
 status: published
 source_title: "GitHub - CloudGeometry/langbuilder at LangBuilder_V1.2 · GitHub"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "GitHub"
 
 frontend:
-  displayTitle: "GitHub 案例：AI 进入销售和收入团队流程"
+  displayTitle: "GitHub - CloudGeometry/langbuilder 在 LangBuilder_V1.2 版本"
   sourceLinks:
     - "https://github.com/CloudGeometry/langbuilder/tree/LangBuilder_V1.2"
 ---
 
-# GitHub 案例：AI 进入销售和收入团队流程
+# GitHub - CloudGeometry/langbuilder 在 LangBuilder_V1.2 版本
 
 ## 新闻事实
 

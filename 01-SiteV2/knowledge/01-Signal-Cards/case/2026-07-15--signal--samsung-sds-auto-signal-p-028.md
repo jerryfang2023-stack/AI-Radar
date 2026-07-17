@@ -2,7 +2,7 @@
 id: SIG-20260715-A08
 type: signal_card
 signal_type: case
-title: "Samsung SDS 发布 FuriosaAI-Powered AI Services"
+title: "三星SDS将于7月16日推出基于FuriosaAI的AI服务"
 date: 2026-07-15
 status: published
 source_title: "Samsung SDS to Launch FuriosaAI-Powered AI Services on July 16 < Semiconductor < 기사본문 - The Elec Inc."
@@ -58,12 +58,12 @@ opportunity_signals:
 signal_owner: "Samsung SDS"
 
 frontend:
-  displayTitle: "Samsung SDS 发布 FuriosaAI-Powered AI Services"
+  displayTitle: "三星SDS将于7月16日推出基于FuriosaAI的AI服务"
   sourceLinks:
     - "https://www.thelec.net/news/articleView.html?idxno=12245"
 ---
 
-# Samsung SDS 发布 FuriosaAI-Powered AI Services
+# 三星SDS将于7月16日推出基于FuriosaAI的AI服务
 
 ## 新闻事实
 

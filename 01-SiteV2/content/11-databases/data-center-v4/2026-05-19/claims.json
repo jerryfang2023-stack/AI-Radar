@@ -42,6 +42,48 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-4fa3073ba2cd5448",
+    "raw_id": "RAW-bda2bb8ccc2891ec",
+    "claim_type": "acquisition",
+    "subject": "Anthropic",
+    "predicate": "acquisition",
+    "object": "SDK与MCP服务器工具开发商Stainless",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-bda2bb8ccc2891ec",
+      "start": 103,
+      "end": 355
+    },
+    "source_quote": "The frontier of AI is shifting from models that answer to agents that act—and agents are only as capable as the systems they can reach. Today, Anthropic is acquiring Stainless, a leader in SDKs and MCP server tooling, to extend that reach even further.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e6e1ea818eb2fa71",
+    "raw_id": "RAW-bda2bb8ccc2891ec",
+    "claim_type": "acquisition",
+    "subject": "Anthropic",
+    "predicate": "acquisition",
+    "object": "SDK与MCP服务器工具开发商Stainless",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-bda2bb8ccc2891ec",
+      "start": 356,
+      "end": 813
+    },
+    "source_quote": "Founded in 2022, Stainless has powered the generation of every official Anthropic SDK since the earliest days of our API. Hundreds of companies rely on Stainless to generate SDKs, CLIs, and MCP servers—the libraries, command-line tools, and connectors that let developers and agents use an API. Stainless turns an API spec into SDKs across TypeScript, Python, Go, Java, Kotlin, and more. Each one is fast, reliable, and built to feel native in its language.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-ac46a13e315b8680",
     "raw_id": "RAW-926f5dbbcc5f0978",
     "claim_type": "product_release",
@@ -63,7 +105,7 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-02ec1f669993f2f4",
+    "claim_id": "CL-1cefd5ca06db9785",
     "raw_id": "RAW-926f5dbbcc5f0978",
     "claim_type": "product_release",
     "subject": "Cursor",
@@ -75,16 +117,16 @@
     },
     "source_span": {
       "raw_id": "RAW-926f5dbbcc5f0978",
-      "start": 0,
-      "end": 92
+      "start": 868,
+      "end": 1318
     },
-    "source_quote": "Cursor&#039;s Composer 2.5 matches Opus 4.7 and GPT-5.5 benchmarks at a fraction of the cost",
+    "source_quote": "On benchmarks like SWE-Bench Multilingual (79.8 percent) and CursorBench v3.1 (63.2 percent), Composer 2.5 matches Opus 4.7 and GPT-5.5. It's far cheaper per task, though: $0.50 per million input tokens and $2.50 per million output tokens, a fraction of what Anthropic and OpenAI charge . A faster variant with the same performance runs $3.00 and $15.00, respectively. Composer 2.5 is live in Cursor now. More details are in the model documentation .",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-c1b7fa9aebfb4042",
+    "claim_id": "CL-9a143b175e97cc12",
     "raw_id": "RAW-926f5dbbcc5f0978",
     "claim_type": "product_release",
     "subject": "Cursor",
@@ -96,16 +138,16 @@
     },
     "source_span": {
       "raw_id": "RAW-926f5dbbcc5f0978",
-      "start": 370,
-      "end": 457
+      "start": 1319,
+      "end": 1489
     },
-    "source_quote": "Cursor's Composer 2.5 matches Opus 4.7 and GPT-5.5 benchmarks at a fraction of the cost",
+    "source_quote": "Composer 2.5 matches Opus 4.7 and GPT-5.5 on CursorBench 3.1 but costs less than a dollar per task - compared to up to eleven dollars for the competition. | Image: Cursor",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-1cefd5ca06db9785",
+    "claim_id": "CL-02ec1f669993f2f4",
     "raw_id": "RAW-926f5dbbcc5f0978",
     "claim_type": "product_release",
     "subject": "Cursor",
@@ -117,10 +159,10 @@
     },
     "source_span": {
       "raw_id": "RAW-926f5dbbcc5f0978",
-      "start": 868,
-      "end": 1318
+      "start": 0,
+      "end": 92
     },
-    "source_quote": "On benchmarks like SWE-Bench Multilingual (79.8 percent) and CursorBench v3.1 (63.2 percent), Composer 2.5 matches Opus 4.7 and GPT-5.5. It's far cheaper per task, though: $0.50 per million input tokens and $2.50 per million output tokens, a fraction of what Anthropic and OpenAI charge . A faster variant with the same performance runs $3.00 and $15.00, respectively. Composer 2.5 is live in Cursor now. More details are in the model documentation .",
+    "source_quote": "Cursor&#039;s Composer 2.5 matches Opus 4.7 and GPT-5.5 benchmarks at a fraction of the cost",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"

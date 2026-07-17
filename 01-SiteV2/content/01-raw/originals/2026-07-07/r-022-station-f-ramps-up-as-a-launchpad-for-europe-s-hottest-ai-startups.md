@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-022
 title: "Station F ramps up as a launchpad for Europe’s hottest AI startups"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "Station F加速成为欧洲热门AI初创公司的发射台"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://techcrunch.com/2026/07/06/station-f-ramps-up-as-a-launchpad-for-europes-hottest-ai-startups/"
 canonical_url: "https://techcrunch.com/2026/07/06/station-f-ramps-up-as-a-launchpad-for-europes-hottest-ai-startups"
 source_name: "TechCrunch AI"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-07T02:01:23.427Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Station F ramps up as a launchpad for Europe’s hottest AI startups

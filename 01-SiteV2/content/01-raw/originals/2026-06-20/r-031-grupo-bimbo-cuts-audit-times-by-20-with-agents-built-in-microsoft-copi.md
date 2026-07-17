@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"Grupo Bimbo built Audit Assist and Comat
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Grupo Bimbo 借助 Microsoft Copilot Studio 构建的 AI 智能体，通过 Microsoft 365 Copilot 部署，将审计时间缩短 20%"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Grupo Bimbo cuts audit times by 20% with agents built in Microsoft Copilot Studio, deployed through Microsoft 365 Copilot | Microsoft Customer Stories

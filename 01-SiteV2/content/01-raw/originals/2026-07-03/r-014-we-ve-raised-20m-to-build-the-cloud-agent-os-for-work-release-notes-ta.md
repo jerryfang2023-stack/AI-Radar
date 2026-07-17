@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-014
 title: "We've raised $20M to build the cloud agent OS for work - Release Notes - Tasklet"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "Tasklet 获投2000万美元，打造云端工作代理操作系统"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://tasklet.ai/release-notes/2026-04-07-20m-funding"
 canonical_url: "https://tasklet.ai/release-notes/2026-04-07-20m-funding"
 source_name: "keyword search / Anysearch"
@@ -78,6 +78,7 @@ fact_extraction_completed_at: 2026-07-03T01:59:31.103Z
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # We've raised $20M to build the cloud agent OS for work - Release Notes - Tasklet

@@ -2,7 +2,7 @@
 id: SIG-20260615-A12
 type: signal_card
 signal_type: case
-title: "Huang 案例：AI 进入模型部署和算力调用"
+title: "NVIDIA Rubin平台、开放模型、自动驾驶：NVIDIA在CES上展示未来蓝图"
 date: 2026-06-15
 status: published
 source_title: "NVIDIA Rubin Platform, Open Models, Autonomous Driving: NVIDIA Presents Blueprint for the Future at CES"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "Huang"
 
 frontend:
-  displayTitle: "Huang 案例：AI 进入模型部署和算力调用"
+  displayTitle: "NVIDIA Rubin平台、开放模型、自动驾驶：NVIDIA在CES上展示未来蓝图"
   sourceLinks:
     - "https://blogs.nvidia.com/blog/2026-ces-special-presentation/"
 ---
 
-# Huang 案例：AI 进入模型部署和算力调用
+# NVIDIA Rubin平台、开放模型、自动驾驶：NVIDIA在CES上展示未来蓝图
 
 ## 新闻事实
 

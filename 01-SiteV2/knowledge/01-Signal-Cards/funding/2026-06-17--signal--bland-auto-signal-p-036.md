@@ -2,7 +2,7 @@
 id: SIG-20260617-A01
 type: signal_card
 signal_type: funding
-title: "Bland 获得$100M 融资，押注模型部署和算力服务"
+title: "Bland完成超1亿美元C轮融资，推动复杂高风险对话场景的语音AI技术"
 date: 2026-06-17
 status: published
 source_title: "Bland Surpasses $100M Funding With New Series C to Advance Voice AI for Complex, High-Stakes Conversations"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Bland"
 
 frontend:
-  displayTitle: "Bland 获得$100M 融资，押注模型部署和算力服务"
+  displayTitle: "Bland完成超1亿美元C轮融资，推动复杂高风险对话场景的语音AI技术"
   sourceLinks:
     - "https://www.prnewswire.com/news-releases/bland-surpasses-100m-funding-with-new-series-c-to-advance-voice-ai-for-complex-high-stakes-conversations-302801583.html"
 ---
 
-# Bland 获得$100M 融资，押注模型部署和算力服务
+# Bland完成超1亿美元C轮融资，推动复杂高风险对话场景的语音AI技术
 
 ## 新闻事实
 

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"workflow_change","text":"# AI SDK 7 is now available ...
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_zh: "Vercel 发布 AI SDK 7"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # AI SDK 7 is now available - Vercel

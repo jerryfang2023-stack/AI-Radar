@@ -72,6 +72,10 @@ key_excerpts: [{"type":"supporting_context","text":"Find and fix vulnerabilities
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "面向智能体就绪企业的AI驱动开发者平台"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # The AI-powered developer platform for the agent-ready enterprise

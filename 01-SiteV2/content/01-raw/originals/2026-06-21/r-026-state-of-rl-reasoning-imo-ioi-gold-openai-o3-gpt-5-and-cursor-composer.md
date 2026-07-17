@@ -72,6 +72,10 @@ key_excerpts: [{"type":"company_action","text":"From Berkeley robotics and OpenA
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "[RL/推理现状] IMO/IOI金牌、OpenAI o3/GPT-5与Cursor Composer — Ashvin Nair, Cursor"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # [State of RL/Reasoning] IMO/IOI Gold, OpenAI o3/GPT-5, and Cursor Composer — Ashvin Nair, Cursor

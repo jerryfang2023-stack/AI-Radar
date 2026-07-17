@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"Google DeepMind 发布开源实验模型
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "DiffusionGemma：文本生成速度提升4倍的开源扩散模型"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # DiffusionGemma：文本生成速度提升4倍的开源扩散模型

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"supporting_context","text":"上周五收盘后，美国�
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "欢迎进入AI治理的AGI时代"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 欢迎进入AI治理的AGI时代

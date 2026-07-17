@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"Special discounts up for AIE Melbourne (
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "原生AI医疗：1亿次就诊，节省10-20小时，预授权仅需数分钟——Janie Lee与Chai Asawa，Abridge"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # AI-Native Healthcare: 100M Doctor Visits, 10–20 Hours Saved, Prior Auth in Minutes — Janie Lee &amp; Chai Asawa, Abridge

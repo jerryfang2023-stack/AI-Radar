@@ -2,7 +2,7 @@
 id: SIG-20260525-A04
 type: signal_card
 signal_type: case
-title: "Multi-Agent AI Sales Crew Case Study: 4.2× SQL Conversion Lift, $14.2M Pipeline on CrewAI + Claude 3.5 + Salesforce | DreamzTech"
+title: "多智能体AI销售团队案例研究：基于CrewAI + Claude 3.5 + Salesforce实现4.2倍SQL转化提升，1420万美元管道 | DreamzTech"
 date: 2026-05-25
 status: published
 asset_level: frontstage
@@ -58,7 +58,7 @@ signal_owner: "Multi"
 watch_reason: "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
 
 frontend:
-  displayTitle: "Multi-Agent AI Sales Crew Case Study: 4.2× SQL Conversion Lift, $14.2M Pipeline on CrewAI + Claude 3.5 + Salesforce | DreamzTech"
+  displayTitle: "多智能体AI销售团队案例研究：基于CrewAI + Claude 3.5 + Salesforce实现4.2倍SQL转化提升，1420万美元管道 | DreamzTech"
   eventLine: "Multi 把 AI 用进销售和收入团队流程。"
   whyWatch: "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"
   businessMeaning: "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
@@ -68,7 +68,7 @@ frontend:
     - "https://www.dreamztech.com/multi-agent-ai-sales-automation-case-study/"
 ---
 
-# Multi-Agent AI Sales Crew Case Study: 4.2× SQL Conversion Lift, $14.2M Pipeline on CrewAI + Claude 3.5 + Salesforce | DreamzTech
+# 多智能体AI销售团队案例研究：基于CrewAI + Claude 3.5 + Salesforce实现4.2倍SQL转化提升，1420万美元管道 | DreamzTech
 
 ## 信号底稿
 

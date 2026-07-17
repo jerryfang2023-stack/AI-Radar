@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-003
 title: "Hermes 智能体开发商 Nous Research 正以 15 亿美元估值完成新一轮融资"
 title_zh: "Hermes 智能体开发商 Nous Research 正以 15 亿美元估值完成新一轮融资"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://techcrunch.com/2026/07/13/hermes-agent-maker-nous-research-in-talks-for-new-funding-at-1-5b-valuation"
 canonical_url: "https://techcrunch.com/2026/07/13/hermes-agent-maker-nous-research-in-talks-for-new-funding-at-1-5b-valuation"
 source_name: "TechCrunch：AI（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-14T01:56:51.235Z
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Hermes 智能体开发商 Nous Research 正以 15 亿美元估值完成新一轮融资

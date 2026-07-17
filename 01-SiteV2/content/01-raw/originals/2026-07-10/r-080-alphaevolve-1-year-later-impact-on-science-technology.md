@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-080
 title: "AlphaEvolve, 1 year later: Impact on science, technology"
-title_zh: "AlphaEvolve ， 1年后：对科学、技术的影响"
-title_translation_status: translated
-title_translation_method: mymemory_title_translation
+title_zh: "AlphaEvolve 一年后：对科学和技术的影响"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/alphaevolve-updates/"
 canonical_url: "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/alphaevolve-updates"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-10T02:00:03.040Z
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # AlphaEvolve, 1 year later: Impact on science, technology

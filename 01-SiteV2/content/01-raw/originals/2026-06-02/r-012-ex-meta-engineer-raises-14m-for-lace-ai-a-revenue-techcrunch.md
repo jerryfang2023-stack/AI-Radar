@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"He left Meta in late 2021 to start Lace
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "前Meta工程师为Lace AI融资1400万美元，用于营收... - TechCrunch"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Ex-Meta engineer raises $14M for Lace AI, a revenue ... - TechCrunch

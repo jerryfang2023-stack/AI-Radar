@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"live in Paris and ... For anyone tr
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "企业AI将成为2026年VivaTech大会的核心焦点"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Why enterprise AI will be a major focus at VivaTech 2026

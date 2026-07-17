@@ -71,6 +71,19 @@ Run these pass/fail checks when supervising, repairing, or updating the First-Li
     - Pass when a stale Hermes inbox generated before local repair is resolved or regenerated after the newer same-date gate passes.
     - Fail when supervision dispatches `.github/workflows/daily-first-line-viewpoints-pr.yml` only because no same-date GitHub run exists, while local same-date data and the data gate already pass.
 
+17. `deepseek_translation_provenance`
+    - Pass when every generated translation records `deepseek_translation`, the selected Flash or Pro model, and a source hash matching the preserved original text.
+    - Pass when titles and short text use Flash, while text over 600 characters, three or more paragraphs, or a failed Flash quality check uses Pro.
+    - Fail when active output reuses MyMemory, a failed cache entry, a cache entry for a different source hash, or an unrecorded model.
+
+18. `translation_fidelity`
+    - Pass when URLs, handles, hashtags, dates, amounts, percentages, and other factual tokens are preserved and full-text fields are translated completely rather than summarized.
+    - Fail when an English primary field remains, a long post is shortened into a summary, or a factual token changes.
+
+19. `translation_credential_gate`
+    - Pass when a missing `DEEPSEEK_API_KEY` or failed/incomplete translation blocks publication before page-data generation is accepted.
+    - Fail when the lane silently falls back to untranslated English or generic public machine translation.
+
 ## Repair Loop
 
 When a check fails, repair the builder data source, build script, gate, or timeline sync path. Do not unblock the lane by weakening translation, source URL, or idempotency requirements.

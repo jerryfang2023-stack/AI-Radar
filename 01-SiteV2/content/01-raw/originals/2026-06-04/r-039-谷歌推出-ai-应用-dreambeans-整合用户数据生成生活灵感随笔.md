@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"谷歌实验产品团队 Google 
 theme: outside-core-exploration
 keyword_group: outside-core-exploration
 copyright_note: local research archive only
+title_zh: "谷歌推出 AI 应用 Dreambeans：整合用户数据生成生活灵感随笔"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 谷歌推出 AI 应用 Dreambeans：整合用户数据生成生活灵感随笔

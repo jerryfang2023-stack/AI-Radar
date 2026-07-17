@@ -2,7 +2,7 @@
 id: SIG-20260629-A05
 type: signal_card
 signal_type: case
-title: "Databricks 发布 Genie One：面向每个团队的智能协作 Agent"
+title: "Databricks推出Genie One：面向所有团队的全新智能协作助手"
 date: 2026-06-29
 status: published
 source_title: "Databricks Launches Genie One: All-New Agentic Coworker for Every Team - Databricks"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Databricks"
 
 frontend:
-  displayTitle: "Databricks 发布 Genie One：面向每个团队的智能协作 Agent"
+  displayTitle: "Databricks推出Genie One：面向所有团队的全新智能协作助手"
   sourceLinks:
     - "https://www.databricks.com/company/newsroom/press-releases/databricks-launches-genie-one-all-new-agentic-coworker-every-team"
 ---
 
-# Databricks 发布 Genie One：面向每个团队的智能协作 Agent
+# Databricks推出Genie One：面向所有团队的全新智能协作助手
 
 ## 新闻事实
 

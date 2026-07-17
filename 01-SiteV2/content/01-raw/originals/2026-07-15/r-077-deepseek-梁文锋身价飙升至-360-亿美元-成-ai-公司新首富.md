@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-077
 title: "DeepSeek 梁文锋身价飙升至 360 亿美元，成 AI 公司新首富"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "DeepSeek 梁文锋身价飙升至 360 亿美元，成 AI 公司新首富"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/976/525.htm"
 canonical_url: "https://ithome.com/0/976/525.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-15T04:28:38.051Z
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # DeepSeek 梁文锋身价飙升至 360 亿美元，成 AI 公司新首富

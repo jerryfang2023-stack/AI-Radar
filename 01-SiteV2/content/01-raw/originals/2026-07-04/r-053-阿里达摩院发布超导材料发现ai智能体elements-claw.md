@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-053
 title: "阿里达摩院发布超导材料发现AI智能体Elements Claw"
 title_zh: "阿里达摩院发布超导材料发现AI智能体Elements Claw"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/972/089.htm"
 canonical_url: "https://ithome.com/0/972/089.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-04T04:50:50.397Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 阿里达摩院发布超导材料发现AI智能体Elements Claw

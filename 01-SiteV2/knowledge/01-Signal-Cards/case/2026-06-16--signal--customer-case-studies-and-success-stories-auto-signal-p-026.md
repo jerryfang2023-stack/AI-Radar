@@ -2,7 +2,7 @@
 id: SIG-20260616-A03
 type: signal_card
 signal_type: case
-title: "Customer Case Studies & Success Stories 案例：AI 进入物流订单和邮件处理流程"
+title: "客户案例与成功故事 - C3 AI"
 date: 2026-06-16
 status: published
 source_title: "Customer Case Studies & Success Stories - C3 AI"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Customer Case Studies & Success Stories"
 
 frontend:
-  displayTitle: "Customer Case Studies & Success Stories 案例：AI 进入物流订单和邮件处理流程"
+  displayTitle: "客户案例与成功故事 - C3 AI"
   sourceLinks:
     - "https://c3.ai/customers/"
 ---
 
-# Customer Case Studies & Success Stories 案例：AI 进入物流订单和邮件处理流程
+# 客户案例与成功故事 - C3 AI
 
 ## 新闻事实
 

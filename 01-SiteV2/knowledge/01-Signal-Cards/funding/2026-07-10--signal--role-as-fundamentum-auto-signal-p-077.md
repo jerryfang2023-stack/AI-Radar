@@ -2,7 +2,7 @@
 id: SIG-20260710-A05
 type: signal_card
 signal_type: funding
-title: "Nandan Nilekani离开Fundamentum的GP职位，推出2亿美元的第三只基金"
+title: "Nandan Nilekani 卸任 Fundamentum 普通合伙人职务，该基金推出第三期基金，规模达 2 亿美元"
 date: 2026-07-10
 status: published
 source_title: "Nandan Nilekani leaves GP role at Fundamentum as it launches $200M third fund"
@@ -57,12 +57,12 @@ opportunity_signals:
 signal_owner: "role as Fundamentum"
 
 frontend:
-  displayTitle: "Nandan Nilekani离开Fundamentum的GP职位，推出2亿美元的第三只基金"
+  displayTitle: "Nandan Nilekani 卸任 Fundamentum 普通合伙人职务，该基金推出第三期基金，规模达 2 亿美元"
   sourceLinks:
     - "https://techcrunch.com/2026/07/09/nandan-nilekani-leaves-gp-role-at-his-vc-firm-as-it-launches-third-200m-fund/"
 ---
 
-# Nandan Nilekani离开Fundamentum的GP职位，推出2亿美元的第三只基金
+# Nandan Nilekani 卸任 Fundamentum 普通合伙人职务，该基金推出第三期基金，规模达 2 亿美元
 
 ## 新闻事实
 

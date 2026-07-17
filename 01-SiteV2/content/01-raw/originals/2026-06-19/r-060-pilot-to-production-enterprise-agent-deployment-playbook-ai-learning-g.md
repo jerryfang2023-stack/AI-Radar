@@ -72,6 +72,10 @@ key_excerpts: [{"type":"supporting_context","text":"is not the opposite of speed
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "从试点到生产：企业智能体部署手册 - AI 学习指南"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Pilot to Production: Enterprise Agent Deployment Playbook - AI Learning Guides

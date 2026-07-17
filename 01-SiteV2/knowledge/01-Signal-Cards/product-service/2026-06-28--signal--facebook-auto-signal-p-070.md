@@ -2,7 +2,7 @@
 id: SIG-20260628-A16
 type: signal_card
 signal_type: product_service
-title: "GEN and Startup Genome have officially launched the 2026 Global ..."
+title: "GEN与Startup Genome正式启动2026年全球..."
 date: 2026-06-28
 status: published
 source_title: "GEN and Startup Genome have officially launched the 2026 Global ..."
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Facebook"
 
 frontend:
-  displayTitle: "GEN and Startup Genome have officially launched the 2026 Global ..."
+  displayTitle: "GEN与Startup Genome正式启动2026年全球..."
   sourceLinks:
     - "https://www.facebook.com/unleashingideas/posts/gen-and-startup-genome-have-officially-launched-the-2026-global-startup-ecosyste/1511341590450703/"
 ---
 
-# GEN and Startup Genome have officially launched the 2026 Global ...
+# GEN与Startup Genome正式启动2026年全球...
 
 ## 新闻事实
 

@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-060
 title: "微软CEO纳德拉批评AI模型公司\"双标\"：一边主张\"合理使用\"数据，一边限制他人蒸馏"
 title_zh: "微软CEO纳德拉批评AI模型公司\"双标\"：一边主张\"合理使用\"数据，一边限制他人蒸馏"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/975/986.htm"
 canonical_url: "https://ithome.com/0/975/986.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-13T10:23:57.019Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 微软CEO纳德拉批评AI模型公司"双标"：一边主张"合理使用"数据，一边限制他人蒸馏

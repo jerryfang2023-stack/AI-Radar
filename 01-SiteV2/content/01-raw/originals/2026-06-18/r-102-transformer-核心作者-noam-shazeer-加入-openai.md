@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"Transformer 核心作者 Noam Shazeer �
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Transformer 核心作者 Noam Shazeer 加入 OpenAI"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Transformer 核心作者 Noam Shazeer 加入 OpenAI

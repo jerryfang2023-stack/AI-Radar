@@ -2,7 +2,7 @@
 id: SIG-20260616-A02
 type: signal_card
 signal_type: case
-title: "Cloudflare 引入 Ensemble AI 团队，加速 AI 基础设施研发 案例：AI 进入地产开发和建筑设计流程"
+title: "Cloudflare 引入 Ensemble AI 团队，加速 AI 基础设施研发"
 date: 2026-06-16
 status: published
 source_title: "Cloudflare 引入 Ensemble AI 团队，加速 AI 基础设施研发"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Cloudflare 引入 Ensemble AI 团队，加速 AI 基础设施研发"
 
 frontend:
-  displayTitle: "Cloudflare 引入 Ensemble AI 团队，加速 AI 基础设施研发 案例：AI 进入地产开发和建筑设计流程"
+  displayTitle: "Cloudflare 引入 Ensemble AI 团队，加速 AI 基础设施研发"
   sourceLinks:
     - "https://blog.cloudflare.com/ensemble-ai-talent-joins-cloudflare"
 ---
 
-# Cloudflare 引入 Ensemble AI 团队，加速 AI 基础设施研发 案例：AI 进入地产开发和建筑设计流程
+# Cloudflare 引入 Ensemble AI 团队，加速 AI 基础设施研发
 
 ## 新闻事实
 

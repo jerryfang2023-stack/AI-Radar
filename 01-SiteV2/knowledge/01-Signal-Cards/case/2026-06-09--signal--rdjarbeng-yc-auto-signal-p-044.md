@@ -2,7 +2,7 @@
 id: SIG-20260609-A11
 type: signal_card
 signal_type: case
-title: "rdjarbeng/yc-rfs-analysis-2026 · Datasets at Hugging Face"
+title: "rdjarbeng/yc-rfs-analysis-2026 · Hugging Face 数据集"
 date: 2026-06-09
 status: published
 source_title: "rdjarbeng/yc-rfs-analysis-2026 · Datasets at Hugging Face"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "rdjarbeng/yc"
 
 frontend:
-  displayTitle: "rdjarbeng/yc-rfs-analysis-2026 · Datasets at Hugging Face"
+  displayTitle: "rdjarbeng/yc-rfs-analysis-2026 · Hugging Face 数据集"
   sourceLinks:
     - "https://huggingface.co/datasets/rdjarbeng/yc-rfs-analysis-2026"
 ---
 
-# rdjarbeng/yc-rfs-analysis-2026 · Datasets at Hugging Face
+# rdjarbeng/yc-rfs-analysis-2026 · Hugging Face 数据集
 
 ## 新闻事实
 

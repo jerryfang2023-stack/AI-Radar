@@ -2,7 +2,7 @@
 id: SIG-20260615-A16
 type: signal_card
 signal_type: case
-title: "Nvidia 案例：AI 进入模型部署和算力调用"
+title: "NVIDIA 研究生奖学金申请现已开放，奖金为 60,000 美元"
 date: 2026-06-15
 status: published
 source_title: "Applications Now Open for $60,000 NVIDIA Graduate Fellowship Awards"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "Nvidia"
 
 frontend:
-  displayTitle: "Nvidia 案例：AI 进入模型部署和算力调用"
+  displayTitle: "NVIDIA 研究生奖学金申请现已开放，奖金为 60,000 美元"
   sourceLinks:
     - "https://blogs.nvidia.com/blog/applications-open-graduate-fellowship-awards-2025/"
 ---
 
-# Nvidia 案例：AI 进入模型部署和算力调用
+# NVIDIA 研究生奖学金申请现已开放，奖金为 60,000 美元
 
 ## 新闻事实
 

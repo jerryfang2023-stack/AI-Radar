@@ -2,7 +2,7 @@
 id: SIG-20260705-A06
 type: signal_card
 signal_type: funding
-title: "Pit 获得 $16M 融资"
+title: "Pit完成1600万美元融资，由Andreessen Horowitz领投，将AI原生软件引入企业运营"
 date: 2026-07-05
 status: published
 source_title: "Pit Launches with $16M Led by Andreessen Horowitz to Bring AI-Native Software to Enterprise Operations - Pit"
@@ -55,12 +55,12 @@ opportunity_signals:
 signal_owner: "Pit"
 
 frontend:
-  displayTitle: "Pit 获得 $16M 融资"
+  displayTitle: "Pit完成1600万美元融资，由Andreessen Horowitz领投，将AI原生软件引入企业运营"
   sourceLinks:
     - "https://pit.com/press/pit-launches-with-16m"
 ---
 
-# Pit 获得 $16M 融资
+# Pit完成1600万美元融资，由Andreessen Horowitz领投，将AI原生软件引入企业运营
 
 ## 新闻事实
 

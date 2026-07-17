@@ -2,7 +2,7 @@
 id: SIG-20260628-A04
 type: signal_card
 signal_type: product_service
-title: "Runlayer raises $30M Series A to go all in on AI"
+title: "Runlayer 完成3000万美元A轮融资，全力押注人工智能"
 date: 2026-06-28
 status: published
 source_title: "Runlayer raises $30M Series A to go all in on AI"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Runlayer"
 
 frontend:
-  displayTitle: "Runlayer raises $30M Series A to go all in on AI"
+  displayTitle: "Runlayer 完成3000万美元A轮融资，全力押注人工智能"
   sourceLinks:
     - "https://www.runlayer.com/blog/series-A-30m-fundraise-felicis-khosla"
 ---
 
-# Runlayer raises $30M Series A to go all in on AI
+# Runlayer 完成3000万美元A轮融资，全力押注人工智能
 
 ## 新闻事实
 

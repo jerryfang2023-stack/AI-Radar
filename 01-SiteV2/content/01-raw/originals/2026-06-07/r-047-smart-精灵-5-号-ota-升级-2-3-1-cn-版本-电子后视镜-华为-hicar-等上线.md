@@ -72,6 +72,10 @@ key_excerpts: [{"type":"company_action","text":"Smart 精灵 5 号 OTA 升级至
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "smart 精灵 5 号 OTA 升级 2.3.1 CN 版本：电子后视镜、华为 HiCar 等上线"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # smart 精灵 5 号 OTA 升级 2.3.1 CN 版本：电子后视镜、华为 HiCar 等上线

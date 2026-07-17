@@ -2,7 +2,7 @@
 id: SIG-20260612-A08
 type: signal_card
 signal_type: product_service
-title: "Anthropic 启动 Claude Corps 全国奖学金项目 推出 Agent 工作流能力，切入地产和建筑设计工作流"
+title: "Anthropic 启动 Claude Corps 全国奖学金项目"
 date: 2026-06-12
 status: published
 source_title: "Anthropic 启动 Claude Corps 全国奖学金项目"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Anthropic 启动 Claude Corps 全国奖学金项目"
 
 frontend:
-  displayTitle: "Anthropic 启动 Claude Corps 全国奖学金项目 推出 Agent 工作流能力，切入地产和建筑设计工作流"
+  displayTitle: "Anthropic 启动 Claude Corps 全国奖学金项目"
   sourceLinks:
     - "https://www.anthropic.com/news/claude-corps"
 ---
 
-# Anthropic 启动 Claude Corps 全国奖学金项目 推出 Agent 工作流能力，切入地产和建筑设计工作流
+# Anthropic 启动 Claude Corps 全国奖学金项目
 
 ## 新闻事实
 

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"AI inference costs are soaring. See how 
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_zh: "推理正在耗尽企业预算——领导者如何重新掌控局面"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Inference Is Draining Enterprise Budgets — Here’s How Leaders Are Regaining Control

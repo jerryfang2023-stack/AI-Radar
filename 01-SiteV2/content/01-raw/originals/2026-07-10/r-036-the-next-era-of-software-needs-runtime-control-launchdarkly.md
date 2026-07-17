@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-036
 title: "The next era of software needs runtime control | LaunchDarkly"
-title_zh: "软件的下一个时代需要运行时控制| LaunchDarkly"
-title_translation_status: translated
-title_translation_method: mymemory_title_translation
+title_zh: "软件的下一个时代需要运行时控制 | LaunchDarkly"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://launchdarkly.com/blog/the-next-era-of-software-needs-runtime-control/"
 canonical_url: "https://launchdarkly.com/blog/the-next-era-of-software-needs-runtime-control"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-10T01:59:50.975Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # The next era of software needs runtime control | LaunchDarkly

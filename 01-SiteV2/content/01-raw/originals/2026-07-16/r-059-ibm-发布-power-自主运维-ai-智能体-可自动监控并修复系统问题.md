@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-059
 title: "IBM 发布 Power 自主运维 AI 智能体，可自动监控并修复系统问题"
 title_zh: "IBM 发布 Power 自主运维 AI 智能体，可自动监控并修复系统问题"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/977/181.htm"
 canonical_url: "https://ithome.com/0/977/181.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-16T02:39:33.783Z
 theme: outside-core-exploration
 keyword_group: outside-core-exploration
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # IBM 发布 Power 自主运维 AI 智能体，可自动监控并修复系统问题

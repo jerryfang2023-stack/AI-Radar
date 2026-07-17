@@ -1,58 +1,28 @@
 [
   {
-    "asset_id": "CL-1e9cc04c83c21e95",
+    "asset_id": "CL-9864e008a4044a91",
+    "dimension_id": "product_form",
+    "value_id": "model",
+    "evidence_ref": "CL-9864e008a4044a91",
+    "source_span": {
+      "raw_id": "RAW-6e677c698e3bb7cc",
+      "start": 129,
+      "end": 320
+    },
+    "assignment_method": "rule",
+    "confidence": 0.88,
+    "taxonomy_version": "TAG-V4.0",
+    "status": "active"
+  },
+  {
+    "asset_id": "CL-856083dd49f93e40",
     "dimension_id": "use_case",
-    "value_id": "robotics_automation",
-    "evidence_ref": "CL-1e9cc04c83c21e95",
+    "value_id": "customer_service",
+    "evidence_ref": "CL-856083dd49f93e40",
     "source_span": {
       "raw_id": "RAW-f8b9749893ae7387",
-      "start": 101,
-      "end": 202
-    },
-    "assignment_method": "rule",
-    "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
-    "status": "active"
-  },
-  {
-    "asset_id": "CL-616ed657aaa35e1b",
-    "dimension_id": "deployment_model",
-    "value_id": "edge_device",
-    "evidence_ref": "CL-616ed657aaa35e1b",
-    "source_span": {
-      "raw_id": "RAW-5873bb776bbd31e8",
-      "start": 229,
-      "end": 814
-    },
-    "assignment_method": "rule",
-    "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
-    "status": "active"
-  },
-  {
-    "asset_id": "CL-616ed657aaa35e1b",
-    "dimension_id": "target_user",
-    "value_id": "developer",
-    "evidence_ref": "CL-616ed657aaa35e1b",
-    "source_span": {
-      "raw_id": "RAW-5873bb776bbd31e8",
-      "start": 229,
-      "end": 814
-    },
-    "assignment_method": "rule",
-    "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
-    "status": "active"
-  },
-  {
-    "asset_id": "CL-fbd324b9b922f7c0",
-    "dimension_id": "product_form",
-    "value_id": "chip_accelerator",
-    "evidence_ref": "CL-fbd324b9b922f7c0",
-    "source_span": {
-      "raw_id": "RAW-5873bb776bbd31e8",
-      "start": 815,
-      "end": 1291
+      "start": 210,
+      "end": 243
     },
     "assignment_method": "rule",
     "confidence": 0.88,
@@ -90,36 +60,6 @@
     "status": "active"
   },
   {
-    "asset_id": "CL-40d20c80b2a99379",
-    "dimension_id": "use_case",
-    "value_id": "data_analysis",
-    "evidence_ref": "CL-40d20c80b2a99379",
-    "source_span": {
-      "raw_id": "RAW-fb00452a43a20c8c",
-      "start": 226,
-      "end": 722
-    },
-    "assignment_method": "rule",
-    "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
-    "status": "active"
-  },
-  {
-    "asset_id": "CL-40d20c80b2a99379",
-    "dimension_id": "target_user",
-    "value_id": "enterprise",
-    "evidence_ref": "CL-40d20c80b2a99379",
-    "source_span": {
-      "raw_id": "RAW-fb00452a43a20c8c",
-      "start": 226,
-      "end": 722
-    },
-    "assignment_method": "rule",
-    "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
-    "status": "active"
-  },
-  {
     "asset_id": "CL-d97ff0d6a5e43952",
     "dimension_id": "product_form",
     "value_id": "chip_accelerator",
@@ -135,6 +75,21 @@
     "status": "active"
   },
   {
+    "asset_id": "CL-b55ffa6a004d3eb5",
+    "dimension_id": "product_form",
+    "value_id": "data_infrastructure",
+    "evidence_ref": "CL-b55ffa6a004d3eb5",
+    "source_span": {
+      "raw_id": "RAW-a16377a97bc0ec67",
+      "start": 161,
+      "end": 401
+    },
+    "assignment_method": "rule",
+    "confidence": 0.88,
+    "taxonomy_version": "TAG-V4.0",
+    "status": "active"
+  },
+  {
     "asset_id": "CL-6c693b25ebfd4e1f",
     "dimension_id": "target_user",
     "value_id": "enterprise",
@@ -143,6 +98,21 @@
       "raw_id": "RAW-66c3d3f09f2174e4",
       "start": 90,
       "end": 857
+    },
+    "assignment_method": "rule",
+    "confidence": 0.88,
+    "taxonomy_version": "TAG-V4.0",
+    "status": "active"
+  },
+  {
+    "asset_id": "CL-d73d7f9720c5cf89",
+    "dimension_id": "product_form",
+    "value_id": "enterprise_platform",
+    "evidence_ref": "CL-d73d7f9720c5cf89",
+    "source_span": {
+      "raw_id": "RAW-459c9999677ae10d",
+      "start": 411,
+      "end": 1047
     },
     "assignment_method": "rule",
     "confidence": 0.88,
@@ -180,21 +150,6 @@
     "status": "active"
   },
   {
-    "asset_id": "CL-85ed90c869be8ead",
-    "dimension_id": "industry",
-    "value_id": "financial_services",
-    "evidence_ref": "CL-85ed90c869be8ead",
-    "source_span": {
-      "raw_id": "RAW-459c9999677ae10d",
-      "start": 1048,
-      "end": 1650
-    },
-    "assignment_method": "rule",
-    "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
-    "status": "active"
-  },
-  {
     "asset_id": "CL-6ffa953da2d8fbdc",
     "dimension_id": "industry",
     "value_id": "retail_ecommerce",
@@ -210,14 +165,29 @@
     "status": "active"
   },
   {
-    "asset_id": "CL-34656d5cecb02327",
-    "dimension_id": "use_case",
-    "value_id": "robotics_automation",
-    "evidence_ref": "CL-34656d5cecb02327",
+    "asset_id": "CL-cc01bdc7d183265e",
+    "dimension_id": "product_form",
+    "value_id": "chip_accelerator",
+    "evidence_ref": "CL-cc01bdc7d183265e",
     "source_span": {
-      "raw_id": "RAW-2d8f696396d92808",
-      "start": 412,
-      "end": 533
+      "raw_id": "RAW-62a3d2e925e0df6e",
+      "start": 303,
+      "end": 373
+    },
+    "assignment_method": "rule",
+    "confidence": 0.88,
+    "taxonomy_version": "TAG-V4.0",
+    "status": "active"
+  },
+  {
+    "asset_id": "CL-dad3a52f0fc6e925",
+    "dimension_id": "industry",
+    "value_id": "media_entertainment",
+    "evidence_ref": "CL-dad3a52f0fc6e925",
+    "source_span": {
+      "raw_id": "RAW-ca6f90bceb3973f5",
+      "start": 196,
+      "end": 250
     },
     "assignment_method": "rule",
     "confidence": 0.88,
@@ -233,6 +203,36 @@
       "raw_id": "RAW-81d6975584288039",
       "start": 352,
       "end": 489
+    },
+    "assignment_method": "rule",
+    "confidence": 0.88,
+    "taxonomy_version": "TAG-V4.0",
+    "status": "active"
+  },
+  {
+    "asset_id": "CL-3fa89f793a05018b",
+    "dimension_id": "product_form",
+    "value_id": "enterprise_platform",
+    "evidence_ref": "CL-3fa89f793a05018b",
+    "source_span": {
+      "raw_id": "RAW-425642147cdbc7dd",
+      "start": 75,
+      "end": 278
+    },
+    "assignment_method": "rule",
+    "confidence": 0.88,
+    "taxonomy_version": "TAG-V4.0",
+    "status": "active"
+  },
+  {
+    "asset_id": "CL-60036d288647a4cb",
+    "dimension_id": "use_case",
+    "value_id": "software_development",
+    "evidence_ref": "CL-60036d288647a4cb",
+    "source_span": {
+      "raw_id": "RAW-c03857ac389f2b9b",
+      "start": 199,
+      "end": 281
     },
     "assignment_method": "rule",
     "confidence": 0.88,

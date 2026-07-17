@@ -7,7 +7,7 @@
     "predicate": "funding",
     "object": "$25M to Redefine the Go-to-Market Architecture for Revenue Teams",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 1
     },
     "source_span": {
@@ -21,27 +21,6 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-72553c8a4e5f416a",
-    "raw_id": "RAW-80f61402be1f3d91",
-    "claim_type": "funding",
-    "subject": "Alta",
-    "predicate": "funding",
-    "object": "$25M to Redefine the Go-to-Market Architecture for Revenue Teams",
-    "qualifiers": {
-      "event_status": "announced",
-      "sequence": 2
-    },
-    "source_span": {
-      "raw_id": "RAW-80f61402be1f3d91",
-      "start": 0,
-      "end": 99
-    },
-    "source_quote": "By transforming the GTM stack, Alta's AI team brings a learning curve managers can only dream about",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
     "claim_id": "CL-c610711413df2977",
     "raw_id": "RAW-80f61402be1f3d91",
     "claim_type": "funding",
@@ -49,8 +28,8 @@
     "predicate": "funding",
     "object": "$25M to Redefine the Go-to-Market Architecture for Revenue Teams",
     "qualifiers": {
-      "event_status": "announced",
-      "sequence": 3
+      "event_status": "completed",
+      "sequence": 2
     },
     "source_span": {
       "raw_id": "RAW-80f61402be1f3d91",
@@ -70,8 +49,8 @@
     "predicate": "funding",
     "object": "$25M to Redefine the Go-to-Market Architecture for Revenue Teams",
     "qualifiers": {
-      "event_status": "announced",
-      "sequence": 4
+      "event_status": "completed",
+      "sequence": 3
     },
     "source_span": {
       "raw_id": "RAW-80f61402be1f3d91",
@@ -84,6 +63,27 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-72553c8a4e5f416a",
+    "raw_id": "RAW-80f61402be1f3d91",
+    "claim_type": "funding",
+    "subject": "Alta",
+    "predicate": "funding",
+    "object": "$25M to Redefine the Go-to-Market Architecture for Revenue Teams",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-80f61402be1f3d91",
+      "start": 0,
+      "end": 99
+    },
+    "source_quote": "By transforming the GTM stack, Alta's AI team brings a learning curve managers can only dream about",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-beddf8b893b8ba69",
     "raw_id": "RAW-8278cb8dfce35d39",
     "claim_type": "funding",
@@ -91,7 +91,7 @@
     "predicate": "funding",
     "object": "$40M Seed for Visual AI Interface | Value Add Pulse",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 1
     },
     "source_span": {
@@ -112,7 +112,7 @@
     "predicate": "funding",
     "object": "$40M Seed for Visual AI Interface | Value Add Pulse",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 2
     },
     "source_span": {
@@ -133,7 +133,7 @@
     "predicate": "funding",
     "object": "$40M Seed for Visual AI Interface | Value Add Pulse",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 3
     },
     "source_span": {
@@ -154,7 +154,7 @@
     "predicate": "funding",
     "object": "$40M Seed for Visual AI Interface | Value Add Pulse",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 4
     },
     "source_span": {
@@ -210,7 +210,7 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-f612e93c00edf3d8",
+    "claim_id": "CL-d43c0532cc8b30cf",
     "raw_id": "RAW-1e6fc8a2663dc814",
     "claim_type": "model_release",
     "subject": "Meta",
@@ -222,16 +222,16 @@
     },
     "source_span": {
       "raw_id": "RAW-1e6fc8a2663dc814",
-      "start": 265,
-      "end": 363
+      "start": 206,
+      "end": 264
     },
-    "source_quote": "在应用操作方面，Muse Spark 1.1 能够在多个应用之间持续执行长流程任务，并根据场景自主判断是直接点击界面、编写脚本进行自动化，还是一次性完成多个操作步骤，以减少人工干预并提升执行效率。",
+    "source_quote": "同时模型支持最高 100 万 token 的上下文长度，可在长时间工作流程中持续保留关键信息，并调用较早阶段的内容。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-426b2fd1eedb9b24",
+    "claim_id": "CL-f612e93c00edf3d8",
     "raw_id": "RAW-1e6fc8a2663dc814",
     "claim_type": "model_release",
     "subject": "Meta",
@@ -243,10 +243,10 @@
     },
     "source_span": {
       "raw_id": "RAW-1e6fc8a2663dc814",
-      "start": 445,
-      "end": 502
+      "start": 265,
+      "end": 363
     },
-    "source_quote": "Meta 表示，公司内部的开发人员和研究人员已经每天使用 Muse Spark 1.1 来辅助软件开发和模型评测。",
+    "source_quote": "在应用操作方面，Muse Spark 1.1 能够在多个应用之间持续执行长流程任务，并根据场景自主判断是直接点击界面、编写脚本进行自动化，还是一次性完成多个操作步骤，以减少人工干预并提升执行效率。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -289,6 +289,132 @@
       "end": 567
     },
     "source_quote": "开发人员同时发布了 flint-chart-mcp 服务器，使支持 MCP（Model Context Protocol）的 AI 智能体能够在对话中直接创建 / 预览图表，全程无需离开聊天窗口。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-689a4132f36dc5fa",
+    "raw_id": "RAW-300d311e9ded8ea9",
+    "claim_type": "product_release",
+    "subject": "微软研究院",
+    "predicate": "product_release",
+    "object": "开源可视化中间语言 Flint，让 AI 智能体\"一句话生成专业图表\"",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-300d311e9ded8ea9",
+      "start": 115,
+      "end": 196
+    },
+    "source_quote": "据介绍，现有可视化库通常提供大量配置选项，若采用精简配置，生成的图表未必适合数据内容；若要求大语言模型直接输出完整配置，又容易因参数过多而出现冲突、遗漏或不一致。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-5e20117fd4a299a3",
+    "raw_id": "RAW-300d311e9ded8ea9",
+    "claim_type": "product_release",
+    "subject": "微软研究院",
+    "predicate": "product_release",
+    "object": "开源可视化中间语言 Flint，让 AI 智能体\"一句话生成专业图表\"",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-300d311e9ded8ea9",
+      "start": 196,
+      "end": 244
+    },
+    "source_quote": "因此 Flint 在设计之初将图表意图与底层可视化库实现分离，以减少 AI 生成配置时的复杂度。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-2fa148c9e7ee7ca0",
+    "raw_id": "RAW-158d96ec77213832",
+    "claim_type": "product_release",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "OpenAI 优化 GPT-5.6 Sol 并放宽使用限额，Anthropic 延长 Fable 5 推广期",
+    "qualifiers": {
+      "event_status": "withdrawn",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-158d96ec77213832",
+      "start": 499,
+      "end": 549
+    },
+    "source_quote": "OpenAI 表示，GPT-5.6 发布后带来了前所未有的访问量高峰，整体流量达到此前峰值的约两倍。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-65f72c79f0647f4e",
+    "raw_id": "RAW-158d96ec77213832",
+    "claim_type": "product_release",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "OpenAI 优化 GPT-5.6 Sol 并放宽使用限额，Anthropic 延长 Fable 5 推广期",
+    "qualifiers": {
+      "event_status": "withdrawn",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-158d96ec77213832",
+      "start": 550,
+      "end": 616
+    },
+    "source_quote": "为缓解流量激增给用户带来的影响，OpenAI 在刚刚过去的周末多次重置了 ChatGPT Work 和 Codex 用户的使用额度。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-02161f1daab02adb",
+    "raw_id": "RAW-158d96ec77213832",
+    "claim_type": "product_release",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "OpenAI 优化 GPT-5.6 Sol 并放宽使用限额，Anthropic 延长 Fable 5 推广期",
+    "qualifiers": {
+      "event_status": "withdrawn",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-158d96ec77213832",
+      "start": 617,
+      "end": 702
+    },
+    "source_quote": "与此同时，OpenAI 还临时取消了 ChatGPT Plus、Business 和 Pro 订阅用户原本每 5 小时一次的使用额度限制，但并未透露这一临时措施何时结束。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e14c4254880f1815",
+    "raw_id": "RAW-158d96ec77213832",
+    "claim_type": "product_release",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "OpenAI 优化 GPT-5.6 Sol 并放宽使用限额，Anthropic 延长 Fable 5 推广期",
+    "qualifiers": {
+      "event_status": "withdrawn",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-158d96ec77213832",
+      "start": 0,
+      "end": 61
+    },
+    "source_quote": "OpenAI 优化 GPT-5.6 Sol 并放宽使用限额，Anthropic 延长 Fable 5 推广期 - IT之家",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -357,33 +483,12 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-16c13fa694554ea7",
-    "raw_id": "RAW-f27e74446fc65785",
-    "claim_type": "product_release",
-    "subject": "DPVR",
-    "predicate": "product_release",
-    "object": "VisionRay Flow Pro AI 太阳镜：20Mp 摄像头、35g 重量、199 美元",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 4
-    },
-    "source_span": {
-      "raw_id": "RAW-f27e74446fc65785",
-      "start": 878,
-      "end": 928
-    },
-    "source_quote": "OpenAI 推出 ChatGPT Work 智能体：GPT-5.6 支持，可驾驭长时间、多步骤任务",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
     "claim_id": "CL-c9c9122cdc5e75b5",
     "raw_id": "RAW-d60b9f4a7958c5a4",
-    "claim_type": "product_release",
+    "claim_type": "hardware_product",
     "subject": "Slimbook",
-    "predicate": "product_release",
-    "object": "Nexus 系列 AI 工作站，可选 AMD 锐龙 / 锐龙 Threadripper 处理器",
+    "predicate": "hardware_product",
+    "object": "，可选 AMD 锐龙 / 锐龙 Threadripper 处理器",
     "qualifiers": {
       "event_status": "completed",
       "sequence": 1
@@ -401,10 +506,10 @@
   {
     "claim_id": "CL-6a57a8710feb8939",
     "raw_id": "RAW-d60b9f4a7958c5a4",
-    "claim_type": "product_release",
+    "claim_type": "hardware_product",
     "subject": "Slimbook",
-    "predicate": "product_release",
-    "object": "Nexus 系列 AI 工作站，可选 AMD 锐龙 / 锐龙 Threadripper 处理器",
+    "predicate": "hardware_product",
+    "object": "，可选 AMD 锐龙 / 锐龙 Threadripper 处理器",
     "qualifiers": {
       "event_status": "completed",
       "sequence": 2
@@ -422,10 +527,10 @@
   {
     "claim_id": "CL-c050f1e378d3febe",
     "raw_id": "RAW-d60b9f4a7958c5a4",
-    "claim_type": "product_release",
+    "claim_type": "hardware_product",
     "subject": "Slimbook",
-    "predicate": "product_release",
-    "object": "Nexus 系列 AI 工作站，可选 AMD 锐龙 / 锐龙 Threadripper 处理器",
+    "predicate": "hardware_product",
+    "object": "，可选 AMD 锐龙 / 锐龙 Threadripper 处理器",
     "qualifiers": {
       "event_status": "completed",
       "sequence": 3
@@ -443,10 +548,10 @@
   {
     "claim_id": "CL-2aaf0fc18ffbfb07",
     "raw_id": "RAW-d60b9f4a7958c5a4",
-    "claim_type": "product_release",
+    "claim_type": "hardware_product",
     "subject": "Slimbook",
-    "predicate": "product_release",
-    "object": "Nexus 系列 AI 工作站，可选 AMD 锐龙 / 锐龙 Threadripper 处理器",
+    "predicate": "hardware_product",
+    "object": "，可选 AMD 锐龙 / 锐龙 Threadripper 处理器",
     "qualifiers": {
       "event_status": "completed",
       "sequence": 4
@@ -567,7 +672,7 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-20542fea14248d9c",
+    "claim_id": "CL-9d57a04fe9c3461d",
     "raw_id": "RAW-7774aa67d6ab99ed",
     "claim_type": "service_change",
     "subject": "Meta",
@@ -576,6 +681,27 @@
     "qualifiers": {
       "event_status": "announced",
       "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-7774aa67d6ab99ed",
+      "start": 81,
+      "end": 108
+    },
+    "source_quote": "4:55 PM PDT · July 10, 2026",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-20542fea14248d9c",
+    "raw_id": "RAW-7774aa67d6ab99ed",
+    "claim_type": "service_change",
+    "subject": "Meta",
+    "predicate": "service_change",
+    "object": "controversial AI feature on Instagram after backlash",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
     },
     "source_span": {
       "raw_id": "RAW-7774aa67d6ab99ed",
@@ -596,7 +722,7 @@
     "object": "controversial AI feature on Instagram after backlash",
     "qualifiers": {
       "event_status": "announced",
-      "sequence": 3
+      "sequence": 4
     },
     "source_span": {
       "raw_id": "RAW-7774aa67d6ab99ed",
@@ -604,27 +730,6 @@
       "end": 779
     },
     "source_quote": "Earlier this week, Meta announced Muse Image, a new AI image generator built by Meta Superintelligence Labs, its dedicated AI unit. Meta promoted one feature that allowed individuals to generate images by @-mentioning public Instagram accounts that they wanted to reference. The feature, which wasn’t designed to alert a user if their photos were used in this way, prompted immediate backlash.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-8f46ea6584fd5ded",
-    "raw_id": "RAW-7774aa67d6ab99ed",
-    "claim_type": "service_change",
-    "subject": "Meta",
-    "predicate": "service_change",
-    "object": "controversial AI feature on Instagram after backlash",
-    "qualifiers": {
-      "event_status": "announced",
-      "sequence": 4
-    },
-    "source_span": {
-      "raw_id": "RAW-7774aa67d6ab99ed",
-      "start": 842,
-      "end": 1041
-    },
-    "source_quote": "Now Meta has reversed course. The company issued a blog post Friday announcing that it was removing the feature. Puck News founding partner Dylan Byers was the first to share the company’s decision .",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -651,7 +756,7 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-434349c3bb4f4e0d",
+    "claim_id": "CL-73a06a2613c622b3",
     "raw_id": "RAW-66028bbd7f94b2a3",
     "claim_type": "product_release",
     "subject": "Prime Intellect",
@@ -660,6 +765,27 @@
     "qualifiers": {
       "event_status": "completed",
       "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-66028bbd7f94b2a3",
+      "start": 397,
+      "end": 418
+    },
+    "source_quote": "What is verifiers v1?",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-434349c3bb4f4e0d",
+    "raw_id": "RAW-66028bbd7f94b2a3",
+    "claim_type": "product_release",
+    "subject": "Prime Intellect",
+    "predicate": "product_release",
+    "object": "Verifiers v1：用于智能体强化学习训练与评估的可组合任务集、Harness 与运行时",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
     },
     "source_span": {
       "raw_id": "RAW-66028bbd7f94b2a3",
@@ -680,7 +806,7 @@
     "object": "Verifiers v1：用于智能体强化学习训练与评估的可组合任务集、Harness 与运行时",
     "qualifiers": {
       "event_status": "completed",
-      "sequence": 3
+      "sequence": 4
     },
     "source_span": {
       "raw_id": "RAW-66028bbd7f94b2a3",
@@ -688,27 +814,6 @@
       "end": 2099
     },
     "source_quote": "Because harnesses speak different dialects , verifiers supports three as of now. These are OpenAI Chat Completions, OpenAI Responses, and Anthropic Messages. A dialect adapter normalizes each wire format into canonical vf.types . Consequently, your scoring logic stays independent of the agent tested.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-45cd8468ded6fa77",
-    "raw_id": "RAW-66028bbd7f94b2a3",
-    "claim_type": "product_release",
-    "subject": "Prime Intellect",
-    "predicate": "product_release",
-    "object": "Verifiers v1：用于智能体强化学习训练与评估的可组合任务集、Harness 与运行时",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 4
-    },
-    "source_span": {
-      "raw_id": "RAW-66028bbd7f94b2a3",
-      "start": 2853,
-      "end": 3180
-    },
-    "source_quote": "Similarly, teams can reuse Harbor datasets without rewriting reward logic. Prime Intellect ported Terminal Bench 2 into v1 with only a small class. In its internal testing, verifiers matched Harbor’s performance on the same tasks. Harbor is the first fully-supported third-party format; NeMo Gym and OpenEnv have alpha support.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -798,6 +903,90 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-9cc98d31288c9ff7",
+    "raw_id": "RAW-78b868a3dad603bc",
+    "claim_type": "hardware_product",
+    "subject": "Supermicro",
+    "predicate": "hardware_product",
+    "object": "-Optimized Systems Supporting the Upcoming NVIDIA RTX PRO 6000 Blackwell Server Edition and NVIDIA H200 NVL Platform | Supermicro",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-78b868a3dad603bc",
+      "start": 0,
+      "end": 174
+    },
+    "source_quote": "Supermicro Expands Enterprise AI Portfolio of over 100 GPU-Optimized Systems Supporting the Upcoming NVIDIA RTX PRO 6000 Blackwell Server Edition and NVIDIA H200 NVL Platform",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a35e34184928739f",
+    "raw_id": "RAW-78b868a3dad603bc",
+    "claim_type": "hardware_product",
+    "subject": "Supermicro",
+    "predicate": "hardware_product",
+    "object": "-Optimized Systems Supporting the Upcoming NVIDIA RTX PRO 6000 Blackwell Server Edition and NVIDIA H200 NVL Platform | Supermicro",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-78b868a3dad603bc",
+      "start": 175,
+      "end": 479
+    },
+    "source_quote": "With a Broad Range of Form Factors, Supermicro’s Expanded Portfolio of PCIe GPU Systems Can Scale to the Most Demanding Data Center Requirements, with up to 10 Double Width GPUs to Low Power Intelligent Edge Systems Providing Maximum Flexibility and Optimization for Enterprise AI LLM-Inference Workloads",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-eef10607234667d5",
+    "raw_id": "RAW-78b868a3dad603bc",
+    "claim_type": "hardware_product",
+    "subject": "Supermicro",
+    "predicate": "hardware_product",
+    "object": "-Optimized Systems Supporting the Upcoming NVIDIA RTX PRO 6000 Blackwell Server Edition and NVIDIA H200 NVL Platform | Supermicro",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-78b868a3dad603bc",
+      "start": 480,
+      "end": 1262
+    },
+    "source_quote": "San Jose, Calif., GTC 2025 Conference – March 18, 2025 – Supermicro, Inc. (NASDAQ: SMCI) a Total IT Solution Provider for AI/ML, HPC, Cloud, Storage, and 5G/Edge, today announced support for the new NVIDIA RTX PROTM 6000 Blackwell Server Edition GPUs on a range of workload-optimized GPU servers and workstations. Specifically optimized for the NVIDIA Blackwell generation of PCIe GPUs, the broad range of Supermicro servers will enable more enterprises to leverage accelerated computing for LLM-inference and fine-tuning, agentic AI, visualization, graphics & rendering, and virtualization. Many Supermicro GPU-optimized systems are NVIDIA Certified, guaranteeing compatibility and support for NVIDIA AI Enterprise to simplify the process of developing and deploying production AI.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-fa424945c58620bc",
+    "raw_id": "RAW-78b868a3dad603bc",
+    "claim_type": "hardware_product",
+    "subject": "Supermicro",
+    "predicate": "hardware_product",
+    "object": "-Optimized Systems Supporting the Upcoming NVIDIA RTX PRO 6000 Blackwell Server Edition and NVIDIA H200 NVL Platform | Supermicro",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-78b868a3dad603bc",
+      "start": 1263,
+      "end": 2004
+    },
+    "source_quote": "\"Supermicro leads the industry with its broad portfolio of application optimized GPU servers that can be deployed in a wide range of enterprise environments with very short lead times,\" said Charles Liang, president and CEO of Supermicro. \"Our support for the NVIDIA RTX PRO 6000 Blackwell Server Edition GPU adds yet another dimension of performance and flexibility for customers looking to deploy the latest in accelerated computing capabilities from the data center to the intelligent edge. Supermicro's broad range of PCIe GPU-optimized products also support NVIDIA H200 NVL in 2-way and 4-way NVIDIA NVLink™ configurations to maximize inference performance for today's state-of-the-art AI models, as well as accelerating HPC workloads.\"",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-4b60aa0ecbd5d311",
     "raw_id": "RAW-9b96e4b826c5f655",
     "claim_type": "deployment",
@@ -840,7 +1029,7 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-ed2b2ad0778ac277",
+    "claim_id": "CL-c8554859e026f9af",
     "raw_id": "RAW-9b96e4b826c5f655",
     "claim_type": "deployment",
     "subject": "Qualcomm unveils three new data center solutions including Dragonfly C1000 CPU, set to be",
@@ -852,16 +1041,16 @@
     },
     "source_span": {
       "raw_id": "RAW-9b96e4b826c5f655",
-      "start": 320,
-      "end": 519
+      "start": 159,
+      "end": 270
     },
-    "source_quote": "Qualcomm has unveiled a number of new data center offerings, including the Qualcomm Dragonfly C1000 CPU, Qualcomm High Bandwidth Compute (HBC), and the Qualcomm Dragonfly AI300 inference accelerator.",
+    "source_quote": "Company also debuted the Qualcomm High Bandwidth Compute and the Qualcomm Dragonfly AI300 inference accelerator",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-345ed5a0d686ac8a",
+    "claim_id": "CL-ed2b2ad0778ac277",
     "raw_id": "RAW-9b96e4b826c5f655",
     "claim_type": "deployment",
     "subject": "Qualcomm unveils three new data center solutions including Dragonfly C1000 CPU, set to be",
@@ -873,10 +1062,10 @@
     },
     "source_span": {
       "raw_id": "RAW-9b96e4b826c5f655",
-      "start": 735,
-      "end": 1261
+      "start": 320,
+      "end": 519
     },
-    "source_quote": "“Agentic AI is driving a significant increase in demand for AI inference in the data center. As these become the dominant workloads, infrastructure has to deliver much higher performance at lower power and cost,” said Cristiano Amon, president and CEO of Qualcomm. “That plays directly to Qualcomm’s strengths, and we’re well positioned for this shift. With Qualcomm Dragonfly, we’re bringing our high-performance, low-power computing into the data center, with multi-year, multi-generation agreements with leading customers.”",
+    "source_quote": "Qualcomm has unveiled a number of new data center offerings, including the Qualcomm Dragonfly C1000 CPU, Qualcomm High Bandwidth Compute (HBC), and the Qualcomm Dragonfly AI300 inference accelerator.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -966,90 +1155,6 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-df50564496b63c7b",
-    "raw_id": "RAW-fc4ef3403bbbe91b",
-    "claim_type": "deployment",
-    "subject": "Simplexity Robotics Ships 100 i7 Pro Robots to Production Lines at 11 Months Old,",
-    "predicate": "deployment",
-    "object": "at Leaderdrive and AI Infrastructure Factories | RobotsBeat",
-    "qualifiers": {
-      "event_status": "announced",
-      "sequence": 1
-    },
-    "source_span": {
-      "raw_id": "RAW-fc4ef3403bbbe91b",
-      "start": 202,
-      "end": 627
-    },
-    "source_quote": "Simplexity Robotics, an embodied AI startup founded less than a year ago, has announced the first batch delivery of 100 units of its i7 Pro all-scenario robot, alongside the completion of a CNC intelligent embodied robot production line. The milestone marks the company’s transition from laboratory validation to multi-site industrial deployment at a pace that is unusual even in China’s fast-moving humanoid robotics sector.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.9,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-d8179eed7fb124c2",
-    "raw_id": "RAW-fc4ef3403bbbe91b",
-    "claim_type": "deployment",
-    "subject": "Simplexity Robotics Ships 100 i7 Pro Robots to Production Lines at 11 Months Old,",
-    "predicate": "deployment",
-    "object": "at Leaderdrive and AI Infrastructure Factories | RobotsBeat",
-    "qualifiers": {
-      "event_status": "announced",
-      "sequence": 2
-    },
-    "source_span": {
-      "raw_id": "RAW-fc4ef3403bbbe91b",
-      "start": 628,
-      "end": 1148
-    },
-    "source_quote": "The 100 units were distributed across multiple deployment environments rather than delivered to a single customer. The largest batch serves industrial clients in robot core component manufacturing – including CNC operations at Leaderdrive, the harmonic reducer manufacturer that holds approximately 40% of China’s robotic joint market. Additional units went to optical module and flexible PCB production lines supplying AI infrastructure manufacturers, research institutions, ecosystem partners, and developer customers.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-18644d47f58d0f1a",
-    "raw_id": "RAW-fc4ef3403bbbe91b",
-    "claim_type": "deployment",
-    "subject": "Simplexity Robotics Ships 100 i7 Pro Robots to Production Lines at 11 Months Old,",
-    "predicate": "deployment",
-    "object": "at Leaderdrive and AI Infrastructure Factories | RobotsBeat",
-    "qualifiers": {
-      "event_status": "announced",
-      "sequence": 3
-    },
-    "source_span": {
-      "raw_id": "RAW-fc4ef3403bbbe91b",
-      "start": 1605,
-      "end": 2032
-    },
-    "source_quote": "Beyond factory floors, Simplexity is validating the i7 Pro in retail and logistics environments. In retail, the robot navigates to shelves, locates specific items from orders, and delivers them to customers. In courier sorting lines, two i7 Pro units collaborate on moving packages and flipping parcels for processing – a multi-robot coordination scenario that tests generalization across different item types and orientations.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-00ea9790fc8b8534",
-    "raw_id": "RAW-fc4ef3403bbbe91b",
-    "claim_type": "deployment",
-    "subject": "Simplexity Robotics Ships 100 i7 Pro Robots to Production Lines at 11 Months Old,",
-    "predicate": "deployment",
-    "object": "at Leaderdrive and AI Infrastructure Factories | RobotsBeat",
-    "qualifiers": {
-      "event_status": "announced",
-      "sequence": 4
-    },
-    "source_span": {
-      "raw_id": "RAW-fc4ef3403bbbe91b",
-      "start": 2054,
-      "end": 2479
-    },
-    "source_quote": "Simplexity pursues full-stack vertical integration. Its LaST₀ embodied foundation model provides native multimodal understanding and generation. LaST-R1 introduces reinforcement learning into latent space feature reasoning, achieving a 99.9% success rate on the LIBERO manipulation benchmark. LaST-HD addresses human-to-robot hand operation data transfer, establishing scalable data construction and model training pipelines.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
     "claim_id": "CL-192a87e64ca4b5a9",
     "raw_id": "RAW-b9de8433ad38821e",
     "claim_type": "product_release",
@@ -1071,85 +1176,43 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-eccfef3b2bfefd6f",
-    "raw_id": "RAW-30094c67a6b6707e",
-    "claim_type": "model_release",
-    "subject": "密歇根大学",
-    "predicate": "model_release",
-    "object": "At its core, NeuroVFM is a generalist visual foundation model for neuroimaging. Specifically, it was trained on 5.24 million clinical MRI and CT volumes. These came from 566,915 studies in the UM-NeuroImages dataset. That data spans over two decades of routine care at Michigan Medicine.",
+    "claim_id": "CL-75c18f308c9d4f4f",
+    "raw_id": "RAW-b9de8433ad38821e",
+    "claim_type": "product_release",
+    "subject": "斯坦福大学",
+    "predicate": "product_release",
+    "object": "TRACE：将智能体反复失败转化为合成 RL 训练环境的能力定向训练系统",
     "qualifiers": {
-      "event_status": "completed",
-      "sequence": 1
-    },
-    "source_span": {
-      "raw_id": "RAW-30094c67a6b6707e",
-      "start": 531,
-      "end": 818
-    },
-    "source_quote": "At its core, NeuroVFM is a generalist visual foundation model for neuroimaging. Specifically, it was trained on 5.24 million clinical MRI and CT volumes. These came from 566,915 studies in the UM-NeuroImages dataset. That data spans over two decades of routine care at Michigan Medicine.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.9,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-2449a44b385af17c",
-    "raw_id": "RAW-30094c67a6b6707e",
-    "claim_type": "model_release",
-    "subject": "密歇根大学",
-    "predicate": "model_release",
-    "object": "Notably, the base model is called Vol-JEPA. It extends the earlier I-JEPA and V-JEPA methods to volumetric medical images. This reflects a wider trend: JEPA-style learning is expanding into medical imaging.",
-    "qualifiers": {
-      "event_status": "completed",
+      "event_status": "planned",
       "sequence": 2
     },
     "source_span": {
-      "raw_id": "RAW-30094c67a6b6707e",
-      "start": 1113,
-      "end": 1319
+      "raw_id": "RAW-b9de8433ad38821e",
+      "start": 552,
+      "end": 582
     },
-    "source_quote": "Notably, the base model is called Vol-JEPA. It extends the earlier I-JEPA and V-JEPA methods to volumetric medical images. This reflects a wider trend: JEPA-style learning is expanding into medical imaging.",
+    "source_quote": "What problem does TRACE solve?",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-eef733d770189926",
-    "raw_id": "RAW-30094c67a6b6707e",
-    "claim_type": "model_release",
-    "subject": "密歇根大学",
-    "predicate": "model_release",
-    "object": "How Vol-JEPA Works ?",
+    "claim_id": "CL-7bffc38e62f55b6d",
+    "raw_id": "RAW-b9de8433ad38821e",
+    "claim_type": "product_release",
+    "subject": "斯坦福大学",
+    "predicate": "product_release",
+    "object": "TRACE：将智能体反复失败转化为合成 RL 训练环境的能力定向训练系统",
     "qualifiers": {
-      "event_status": "completed",
+      "event_status": "planned",
       "sequence": 3
     },
     "source_span": {
-      "raw_id": "RAW-30094c67a6b6707e",
-      "start": 1320,
-      "end": 1340
+      "raw_id": "RAW-b9de8433ad38821e",
+      "start": 583,
+      "end": 747
     },
-    "source_quote": "How Vol-JEPA Works ?",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-f4a6acdaa5e6191a",
-    "raw_id": "RAW-30094c67a6b6707e",
-    "claim_type": "model_release",
-    "subject": "密歇根大学",
-    "predicate": "model_release",
-    "object": "Vol-JEPA is a self-supervised, vision-only algorithm. Rather than reconstructing pixels, it predicts representations in a learned latent space. As a result, it needs no labels, no report text, and no voxel decoder.",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 4
-    },
-    "source_span": {
-      "raw_id": "RAW-30094c67a6b6707e",
-      "start": 1341,
-      "end": 1555
-    },
-    "source_quote": "Vol-JEPA is a self-supervised, vision-only algorithm. Rather than reconstructing pixels, it predicts representations in a learned latent space. As a result, it needs no labels, no report text, and no voxel decoder.",
+    "source_quote": "To understand the design, first consider why agents fail. They lack specific skills that tasks demand, like retrieving the right record or verifying a precondition.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -1176,7 +1239,7 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-84b9f354c4f0208d",
+    "claim_id": "CL-14e88cffaf4a7f2e",
     "raw_id": "RAW-86915116cc15cc16",
     "claim_type": "procurement_contract",
     "subject": "Blaize and NeoTensr",
@@ -1185,6 +1248,27 @@
     "qualifiers": {
       "event_status": "planned",
       "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-86915116cc15cc16",
+      "start": 228,
+      "end": 249
+    },
+    "source_quote": "Apr 16 2026 21:10 BST",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-84b9f354c4f0208d",
+    "raw_id": "RAW-86915116cc15cc16",
+    "claim_type": "procurement_contract",
+    "subject": "Blaize and NeoTensr",
+    "predicate": "procurement_contract",
+    "object": "for Up to $50M to Deploy Co-Branded AI Edge Data Center Infrastructure Across Asia Pacific – Company Announcement - FT.com",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 3
     },
     "source_span": {
       "raw_id": "RAW-86915116cc15cc16",
@@ -1205,7 +1289,7 @@
     "object": "for Up to $50M to Deploy Co-Branded AI Edge Data Center Infrastructure Across Asia Pacific – Company Announcement - FT.com",
     "qualifiers": {
       "event_status": "planned",
-      "sequence": 3
+      "sequence": 4
     },
     "source_span": {
       "raw_id": "RAW-86915116cc15cc16",
@@ -1218,22 +1302,85 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-2ad8ab281bd18191",
-    "raw_id": "RAW-86915116cc15cc16",
-    "claim_type": "procurement_contract",
-    "subject": "Blaize and NeoTensr",
-    "predicate": "procurement_contract",
-    "object": "for Up to $50M to Deploy Co-Branded AI Edge Data Center Infrastructure Across Asia Pacific – Company Announcement - FT.com",
+    "claim_id": "CL-363f1314e03fcd0f",
+    "raw_id": "RAW-f54facc10fec3e4b",
+    "claim_type": "organization_people",
+    "subject": "Apple’s failed self-driving car program",
+    "predicate": "organization_people",
+    "object": "a legacy of powerful AI chips",
     "qualifiers": {
-      "event_status": "planned",
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-f54facc10fec3e4b",
+      "start": 13,
+      "end": 87
+    },
+    "source_quote": "Apple’s failed self-driving car program left a legacy of powerful AI chips",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-4a41cbee54b3521b",
+    "raw_id": "RAW-f54facc10fec3e4b",
+    "claim_type": "organization_people",
+    "subject": "Apple’s failed self-driving car program",
+    "predicate": "organization_people",
+    "object": "a legacy of powerful AI chips",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-f54facc10fec3e4b",
+      "start": 88,
+      "end": 184
+    },
+    "source_quote": "The company is accelerating development of the M7 Ultra, which could support up to 1.5TB of RAM.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-27b473732653c8ae",
+    "raw_id": "RAW-f54facc10fec3e4b",
+    "claim_type": "organization_people",
+    "subject": "Apple’s failed self-driving car program",
+    "predicate": "organization_people",
+    "object": "a legacy of powerful AI chips",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-f54facc10fec3e4b",
+      "start": 185,
+      "end": 281
+    },
+    "source_quote": "The company is accelerating development of the M7 Ultra, which could support up to 1.5TB of RAM.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b010c8f5aa692261",
+    "raw_id": "RAW-f54facc10fec3e4b",
+    "claim_type": "organization_people",
+    "subject": "Apple’s failed self-driving car program",
+    "predicate": "organization_people",
+    "object": "a legacy of powerful AI chips",
+    "qualifiers": {
+      "event_status": "completed",
       "sequence": 4
     },
     "source_span": {
-      "raw_id": "RAW-86915116cc15cc16",
-      "start": 598,
-      "end": 714
+      "raw_id": "RAW-f54facc10fec3e4b",
+      "start": 464,
+      "end": 947
     },
-    "source_quote": "Co-branded AI server based on Blaize’s quad card handles 200+ simultaneous camera streams with advanced AI analytics",
+    "source_quote": "Apple’s self-driving car program never really got off the ground , but it may have been what made the company’s chips the powerful AI performers they are. Early in the development of the self-driving platform, Apple realized that it would need powerful on-device AI processing . While the car processor was never finished , as Mark Gurman details in his latest Power On newsletter, it did lead to the development of the Neural Engine, the backbone of Apple’s on-device AI processing.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -1428,7 +1575,7 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-55064fc713f68fca",
+    "claim_id": "CL-26af16a56efd3a88",
     "raw_id": "RAW-b932c0b7b9842c61",
     "claim_type": "model_release",
     "subject": "商汤",
@@ -1437,6 +1584,27 @@
     "qualifiers": {
       "event_status": "completed",
       "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-b932c0b7b9842c61",
+      "start": 87,
+      "end": 142
+    },
+    "source_quote": "商汤科技表示，行业以往的 \" 统一视觉 \" 多是把检测、分割、深度预测等多个专家模型打包封装，本质还是割裂的。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-55064fc713f68fca",
+    "raw_id": "RAW-b932c0b7b9842c61",
+    "claim_type": "model_release",
+    "subject": "商汤",
+    "predicate": "model_release",
+    "object": "，能力超越 Vision Banana",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
     },
     "source_span": {
       "raw_id": "RAW-b932c0b7b9842c61",
@@ -1457,7 +1625,7 @@
     "object": "，能力超越 Vision Banana",
     "qualifiers": {
       "event_status": "completed",
-      "sequence": 3
+      "sequence": 4
     },
     "source_span": {
       "raw_id": "RAW-b932c0b7b9842c61",
@@ -1470,22 +1638,43 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-f9f1b073d1222450",
-    "raw_id": "RAW-b932c0b7b9842c61",
-    "claim_type": "model_release",
-    "subject": "商汤",
-    "predicate": "model_release",
-    "object": "，能力超越 Vision Banana",
+    "claim_id": "CL-18ab0e2023bd2c58",
+    "raw_id": "RAW-7ba1c9c9982ca540",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "微软CEO纳德拉批评AI模型公司\"双标\"：一边主张\"合理使用\"数据，一边限制他人蒸馏",
     "qualifiers": {
-      "event_status": "completed",
-      "sequence": 4
+      "event_status": "announced",
+      "sequence": 1
     },
     "source_span": {
-      "raw_id": "RAW-b932c0b7b9842c61",
-      "start": 621,
-      "end": 693
+      "raw_id": "RAW-7ba1c9c9982ca540",
+      "start": 856,
+      "end": 932
     },
-    "source_quote": "对比语义导向模型（如 Youtu-VL 等）：SenseNova-Vision 在检测、分割、深度等对细节要求极高的视觉任务上实现 全面领先 。",
+    "source_quote": "Anthropic 在今年 2 月发布的一份长篇声明中表示：“竞争对手可以利用模型蒸馏，以远低于自主研发所需的时间和成本，获得其他实验室的大量先进能力。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-d043f6e9a66dc58a",
+    "raw_id": "RAW-7ba1c9c9982ca540",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "微软CEO纳德拉批评AI模型公司\"双标\"：一边主张\"合理使用\"数据，一边限制他人蒸馏",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-7ba1c9c9982ca540",
+      "start": 100,
+      "end": 203
+    },
+    "source_quote": "纳德拉表示，一些模型厂商一边主张拥有利用公开数据训练 AI 模型的“合理使用（Fair Use）”权利，一边却反对其他公司通过模型蒸馏（Distillation）学习其模型能力，这种做法存在明显的自相矛盾。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"

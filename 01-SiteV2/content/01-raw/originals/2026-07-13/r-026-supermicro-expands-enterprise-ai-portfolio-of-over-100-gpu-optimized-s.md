@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-026
 title: "Supermicro Expands Enterprise AI Portfolio of over 100 GPU-Optimized Systems Supporting the Upcoming NVIDIA RTX PRO 6000 Blackwell Server Edition and NVIDIA H200 NVL Platform | Supermicro"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "Supermicro 扩展企业级 AI 产品组合，新增超100款 GPU 优化系统，支持即将推出的 NVIDIA RTX PRO 6000 Blackwell 服务器版及 NVIDIA H200 NVL 平台"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.supermicro.com/en/pressreleases/supermicro-expands-enterprise-ai-portfolio-over-100-gpu-optimized-systems-supporting?mlg=0"
 canonical_url: "https://supermicro.com/en/pressreleases/supermicro-expands-enterprise-ai-portfolio-over-100-gpu-optimized-systems-supporting?mlg=0"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-13T10:23:56.804Z
 theme: ai-hardware-trend-innovation-signal
 keyword_group: ai-hardware-trend-innovation-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Supermicro Expands Enterprise AI Portfolio of over 100 GPU-Optimized Systems Supporting the Upcoming NVIDIA RTX PRO 6000 Blackwell Server Edition and NVIDIA H200 NVL Platform | Supermicro

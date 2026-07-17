@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"OpenAI与Broadcom宣布推出名为
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "OpenAI与Broadcom联合发布定制芯片Jalapeño，专为大语言模型推理设计"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # OpenAI与Broadcom联合发布定制芯片Jalapeño，专为大语言模型推理设计

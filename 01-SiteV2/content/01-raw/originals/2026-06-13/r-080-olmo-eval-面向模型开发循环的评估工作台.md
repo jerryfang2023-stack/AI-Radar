@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"olmo-eval 是基于 OLMES 标准构
 theme: technical-iteration-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "olmo-eval：面向模型开发循环的评估工作台"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # olmo-eval：面向模型开发循环的评估工作台

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"‘We have these agents that are traine
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "AWS在合作伙伴中心推出AI代理，简化渠道合作伙伴的资金、联合销售及管理时间"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # AWS Launches AI Agents On Partner Central To Simplify Funding, Co-Sell And Admin Time For Channel Partners

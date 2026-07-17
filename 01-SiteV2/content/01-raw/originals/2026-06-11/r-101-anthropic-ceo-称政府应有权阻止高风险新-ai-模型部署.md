@@ -72,6 +72,10 @@ key_excerpts: [{"type":"supporting_context","text":"Anthropic PBC CEO Dario Amod
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "Anthropic CEO 称政府应有权阻止高风险新 AI 模型部署"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Anthropic CEO 称政府应有权阻止高风险新 AI 模型部署

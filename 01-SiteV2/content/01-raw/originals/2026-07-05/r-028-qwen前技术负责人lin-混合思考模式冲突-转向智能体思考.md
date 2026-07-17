@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-028
 title: "Qwen前技术负责人Lin：混合思考模式冲突，转向智能体思考"
 title_zh: "Qwen前技术负责人Lin：混合思考模式冲突，转向智能体思考"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.marktechpost.com/2026/07/04/qwens-former-lead-on-what-hybrid-thinking-got-wrong-and-why-he-now-backs-agents"
 canonical_url: "https://marktechpost.com/2026/07/04/qwens-former-lead-on-what-hybrid-thinking-got-wrong-and-why-he-now-backs-agents"
 source_name: "MarkTechPost（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-05T04:56:15.265Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Qwen前技术负责人Lin：混合思考模式冲突，转向智能体思考

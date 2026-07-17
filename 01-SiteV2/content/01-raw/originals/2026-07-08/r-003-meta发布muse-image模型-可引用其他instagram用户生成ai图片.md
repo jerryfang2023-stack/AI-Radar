@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-003
 title: "Meta发布Muse Image模型，可引用其他Instagram用户生成AI图片"
 title_zh: "Meta发布Muse Image模型，可引用其他Instagram用户生成AI图片"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.theverge.com/tech/962485/meta-muse-image-ai-model-instagram"
 canonical_url: "https://theverge.com/tech/962485/meta-muse-image-ai-model-instagram"
 source_name: "The Verge：AI（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-08T04:39:25.307Z
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Meta发布Muse Image模型，可引用其他Instagram用户生成AI图片

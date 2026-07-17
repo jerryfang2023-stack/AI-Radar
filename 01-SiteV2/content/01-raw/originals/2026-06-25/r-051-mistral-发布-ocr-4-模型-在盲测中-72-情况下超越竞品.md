@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"Mistral AI 推出 OCR 4 模型，专用�
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Mistral 发布 OCR 4 模型：在盲测中 72% 情况下超越竞品"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Mistral 发布 OCR 4 模型：在盲测中 72% 情况下超越竞品

@@ -21,6 +21,48 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-c3b3267357096f2f",
+    "raw_id": "RAW-2b2f9f000172a06e",
+    "claim_type": "partnership",
+    "subject": "TCS与Anthropic",
+    "predicate": "partnership",
+    "object": "，将Claude引入受监管行业",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-2b2f9f000172a06e",
+      "start": 636,
+      "end": 959
+    },
+    "source_quote": "Regulated industries need their work to be highly accurate and auditable, and enterprises in these fields already use Claude for that reason. TCS brings decades of experience delivering technology that is compliant with companies’ regulatory requirements—and the reach to bring Claude to thousands of enterprises worldwide.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-4cdc2e55ad146571",
+    "raw_id": "RAW-2b2f9f000172a06e",
+    "claim_type": "partnership",
+    "subject": "TCS与Anthropic",
+    "predicate": "partnership",
+    "object": "，将Claude引入受监管行业",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-2b2f9f000172a06e",
+      "start": 960,
+      "end": 983
+    },
+    "source_quote": "How TCS is using Claude",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-ad6ae9f6375dd85f",
     "raw_id": "RAW-6594f5c6a8b4a50c",
     "claim_type": "product_release",
@@ -42,6 +84,48 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-8e2a3027e6f027ae",
+    "raw_id": "RAW-6594f5c6a8b4a50c",
+    "claim_type": "product_release",
+    "subject": "Claude Code v2.1.176",
+    "predicate": "product_release",
+    "object": "Improved Bedrock credential caching: credentials from awsCredentialExport are now cached until their Expiration instead of a fixed 1 hour",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-6594f5c6a8b4a50c",
+      "start": 649,
+      "end": 786
+    },
+    "source_quote": "Improved Bedrock credential caching: credentials from awsCredentialExport are now cached until their Expiration instead of a fixed 1 hour",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-ef8c89451667027c",
+    "raw_id": "RAW-6594f5c6a8b4a50c",
+    "claim_type": "product_release",
+    "subject": "Claude Code v2.1.176",
+    "predicate": "product_release",
+    "object": "Fixed availableModels enforcement: alias model picks can no longer be redirected to a blocked model via ANTHROPIC_DEFAULT_*_MODEL environment variables, and /fast now refuses to toggle when it would switch to a model outside the allowlist",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-6594f5c6a8b4a50c",
+      "start": 787,
+      "end": 1025
+    },
+    "source_quote": "Fixed availableModels enforcement: alias model picks can no longer be redirected to a blocked model via ANTHROPIC_DEFAULT_*_MODEL environment variables, and /fast now refuses to toggle when it would switch to a model outside the allowlist",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-b0bda1d7b62a165d",
     "raw_id": "RAW-f992f2424778bfb4",
     "claim_type": "funding",
@@ -49,7 +133,7 @@
     "predicate": "funding",
     "object": "$4.2M Seed to Build the Quality Layer for the Built World - Structured AI",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 1
     },
     "source_span": {
@@ -70,7 +154,7 @@
     "predicate": "funding",
     "object": "$4.2M Seed to Build the Quality Layer for the Built World - Structured AI",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 2
     },
     "source_span": {
@@ -91,7 +175,7 @@
     "predicate": "funding",
     "object": "$4.2M Seed to Build the Quality Layer for the Built World - Structured AI",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 3
     },
     "source_span": {
@@ -112,7 +196,7 @@
     "predicate": "funding",
     "object": "$4.2M Seed to Build the Quality Layer for the Built World - Structured AI",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 4
     },
     "source_span": {
@@ -217,7 +301,7 @@
     "predicate": "funding",
     "object": "a $21M Series A to Offer Cloud for AI Agents to Fortune 100",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 1
     },
     "source_span": {
@@ -238,7 +322,7 @@
     "predicate": "funding",
     "object": "a $21M Series A to Offer Cloud for AI Agents to Fortune 100",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 2
     },
     "source_span": {
@@ -259,7 +343,7 @@
     "predicate": "funding",
     "object": "a $21M Series A to Offer Cloud for AI Agents to Fortune 100",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 3
     },
     "source_span": {
@@ -280,7 +364,7 @@
     "predicate": "funding",
     "object": "a $21M Series A to Offer Cloud for AI Agents to Fortune 100",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 4
     },
     "source_span": {
@@ -301,7 +385,7 @@
     "predicate": "funding",
     "object": "$10M To Help Teams Find Knowledge Faster with",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 1
     },
     "source_span": {
@@ -315,6 +399,48 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-a798b9c911a45435",
+    "raw_id": "RAW-88f8c157a8903364",
+    "claim_type": "funding",
+    "subject": "Onyx",
+    "predicate": "funding",
+    "object": "$10M To Help Teams Find Knowledge Faster with",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-88f8c157a8903364",
+      "start": 107,
+      "end": 226
+    },
+    "source_quote": "Onyx is Backed by Khosla Ventures and First Round Capital, with Participation from Y Combinator and Prominent Investors",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-5b391f2069471b5a",
+    "raw_id": "RAW-88f8c157a8903364",
+    "claim_type": "funding",
+    "subject": "Onyx",
+    "predicate": "funding",
+    "object": "$10M To Help Teams Find Knowledge Faster with",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-88f8c157a8903364",
+      "start": 227,
+      "end": 250
+    },
+    "source_quote": "March 12, 2025 12:55 ET",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-86f4802047c61ef5",
     "raw_id": "RAW-88f8c157a8903364",
     "claim_type": "funding",
@@ -322,8 +448,8 @@
     "predicate": "funding",
     "object": "$10M To Help Teams Find Knowledge Faster with",
     "qualifiers": {
-      "event_status": "announced",
-      "sequence": 2
+      "event_status": "completed",
+      "sequence": 4
     },
     "source_span": {
       "raw_id": "RAW-88f8c157a8903364",
@@ -336,48 +462,6 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-1a7b354e644423a6",
-    "raw_id": "RAW-88f8c157a8903364",
-    "claim_type": "funding",
-    "subject": "Onyx",
-    "predicate": "funding",
-    "object": "$10M To Help Teams Find Knowledge Faster with",
-    "qualifiers": {
-      "event_status": "announced",
-      "sequence": 3
-    },
-    "source_span": {
-      "raw_id": "RAW-88f8c157a8903364",
-      "start": 836,
-      "end": 1372
-    },
-    "source_quote": "“We are excited to work with this impressive set of investors who have deep expertise in AI and open source technology to help us bring enterprise search and GenAI to more teams around the world,” said Yuhong Sun, Co-Founder of Onyx. “Having worked at high growth tech companies, we experienced first hand the challenges of knowledge getting buried in disparate knowledge bases and becoming lost. We built Onyx as an open-source solution for companies to solve this challenge without needing to send all their data to external parties.”",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-100f64091133d7e3",
-    "raw_id": "RAW-88f8c157a8903364",
-    "claim_type": "funding",
-    "subject": "Onyx",
-    "predicate": "funding",
-    "object": "$10M To Help Teams Find Knowledge Faster with",
-    "qualifiers": {
-      "event_status": "announced",
-      "sequence": 4
-    },
-    "source_span": {
-      "raw_id": "RAW-88f8c157a8903364",
-      "start": 1373,
-      "end": 1629
-    },
-    "source_quote": "As teams scale, knowledge becomes scattered, irretrievable across a sprawl of SaaS tools. Employees right now have to search through Slack, Confluence, Google Drive and other tools to find information only to be let down by outdated keyword-based searches.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
     "claim_id": "CL-17df85ba1a002fea",
     "raw_id": "RAW-ffc0308cfa2ba7b0",
     "claim_type": "funding",
@@ -385,7 +469,7 @@
     "predicate": "funding",
     "object": "$65M to Build the Trusted Agent Operating System for the Enterprise",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 1
     },
     "source_span": {
@@ -406,7 +490,7 @@
     "predicate": "funding",
     "object": "$65M to Build the Trusted Agent Operating System for the Enterprise",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 2
     },
     "source_span": {
@@ -427,7 +511,7 @@
     "predicate": "funding",
     "object": "$65M to Build the Trusted Agent Operating System for the Enterprise",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 3
     },
     "source_span": {
@@ -448,7 +532,7 @@
     "predicate": "funding",
     "object": "$65M to Build the Trusted Agent Operating System for the Enterprise",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 4
     },
     "source_span": {
@@ -469,7 +553,7 @@
     "predicate": "funding",
     "object": "$24M Series A to Build Memory Layer for AI Agents",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 1
     },
     "source_span": {
@@ -483,27 +567,6 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-a1c0c272e563757c",
-    "raw_id": "RAW-a9a2afb5f8f32efb",
-    "claim_type": "funding",
-    "subject": "Mem0",
-    "predicate": "funding",
-    "object": "$24M Series A to Build Memory Layer for AI Agents",
-    "qualifiers": {
-      "event_status": "announced",
-      "sequence": 2
-    },
-    "source_span": {
-      "raw_id": "RAW-a9a2afb5f8f32efb",
-      "start": 0,
-      "end": 149
-    },
-    "source_quote": "With 14M+ downloads, over 41,000 Github stars, and backing from leading AI infrastructure CEOs, Mem0 aims to solve AI agents' biggest problem: memory",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
     "claim_id": "CL-3cbc36871ee4a334",
     "raw_id": "RAW-a9a2afb5f8f32efb",
     "claim_type": "funding",
@@ -511,8 +574,8 @@
     "predicate": "funding",
     "object": "$24M Series A to Build Memory Layer for AI Agents",
     "qualifiers": {
-      "event_status": "announced",
-      "sequence": 3
+      "event_status": "completed",
+      "sequence": 2
     },
     "source_span": {
       "raw_id": "RAW-a9a2afb5f8f32efb",
@@ -532,8 +595,8 @@
     "predicate": "funding",
     "object": "$24M Series A to Build Memory Layer for AI Agents",
     "qualifiers": {
-      "event_status": "announced",
-      "sequence": 4
+      "event_status": "completed",
+      "sequence": 3
     },
     "source_span": {
       "raw_id": "RAW-a9a2afb5f8f32efb",
@@ -541,6 +604,27 @@
       "end": 1439
     },
     "source_quote": "\" Every agentic application needs memory, just as every application needs a database, \" says Taranjeet, Co-founder and CEO of Mem0. \" We're using this funding to become the default memory layer for AI agents, making LLM memory accessible and reliable for all developers.\"",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a1c0c272e563757c",
+    "raw_id": "RAW-a9a2afb5f8f32efb",
+    "claim_type": "funding",
+    "subject": "Mem0",
+    "predicate": "funding",
+    "object": "$24M Series A to Build Memory Layer for AI Agents",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-a9a2afb5f8f32efb",
+      "start": 0,
+      "end": 149
+    },
+    "source_quote": "With 14M+ downloads, over 41,000 Github stars, and backing from leading AI infrastructure CEOs, Mem0 aims to solve AI agents' biggest problem: memory",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -630,174 +714,6 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-6d0a45c0cfb24516",
-    "raw_id": "RAW-979162b19a98d78e",
-    "claim_type": "model_release",
-    "subject": "Kimi K2.7-Code：具有更高",
-    "predicate": "model_release",
-    "object": "编码模型",
-    "qualifiers": {
-      "event_status": "announced",
-      "sequence": 1
-    },
-    "source_span": {
-      "raw_id": "RAW-979162b19a98d78e",
-      "start": 0,
-      "end": 5691
-    },
-    "source_quote": "image<|media_content|><|media_pad|><|media_end|>\\n {% elif content['type'] == 'video' or content['type']== 'video_url'-%}\\n <|kimi_k25_video_placeholder|>\\n {% else -%}\\n {{ content['text'] }}\\n {%- endif -%}\\n {%- endfor -%}\\n {%- endif -%}\\n{%- endmacro -%}\\n\\n{% macro set_roles(message) -%}\\n {%- set role_name = message.get('name') or message['role'] -%}\\n {%- if message['role'] == 'user' -%}\\n <|im_user|>{{role_name}}<|im_middle|>\\n {%- elif message['role'] == 'assistant' -%}\\n <|im_assistant|>{{role_name}}<|im_middle|>\\n {%- else -%}\\n <|im_system|>{{role_name}}<|im_middle|>\\n {%- endif -%}\\n{%- endmacro -%}\\n\\n\\n{%- macro render_toolcalls(message) -%}\\n <|tool_calls_section_begin|>\\n {%- for tool_call in message['tool_calls'] -%}\\n {%- set formatted_id = tool_call['id'] -%}\\n <|tool_call_begin|>{{ formatted_id }}<|tool_call_argument_begin|>{% if tool_call['function']['arguments'] is string %}{{ tool_call['function']['arguments'] }}{% else %}{{ tool_call['function']['arguments'] | tojson }}{% endif %}<|tool_call_end|>\\n {%- endfor -%}\\n <|tool_calls_section_end|>\\n{%- endmacro -%}\\n\\n\\n{%- set preserve_thinking = preserve_thinking | default(true) -%}\\n{# Find last non-tool-call assistant message. If preserve_thinking, keep -1 so hist is empty and all msgs use suffix (retain reasoning). #}\\n{%- set ns = namespace(last_non_tool_call_assistant_msg=-1) -%}\\n{%- if not preserve_thinking -%}\\n{%- for idx in range(messages|length-1, -1, -1) -%}\\n {%- if messages[idx]['role'] == 'assistant' and not messages[idx].get('tool_calls') -%}\\n {%- set ns.last_non_tool_call_assistant_msg = idx -%}\\n {%- break -%}\\n {%- endif -%}\\n{%- endfor -%}\\n{%- endif -%}\\n\\n{# split all messages into history & suffix, reasoning_content in suffix should be reserved.#}\\n{%- set hist_msgs = messages[:ns.last_non_tool_call_assistant_msg+1] -%}\\n{%- set suffix_msgs = messages[ns.last_non_tool_call_assistant_msg+1:] -%}\\n\\n{%- if tools -%}\\n {%- if tools_ts_str -%}\\n <|im_system|>tool_declare<|im_middle|>{{ tools_ts_str }}<|im_end|>\\n {%- else -%}\\n <|im_system|>tool_declare<|im_middle|>{{ tools | tojson(separators=(',', ':')) }}<|im_end|>\\n {%- endif -%}\\n{%- endif -%}\\n\\n \\n{%- for message in hist_msgs -%}\\n {{set_roles(message)}}\\n {%- if message['role'] == 'assistant' -%}\\n <think></think>{{render_content(message)}}\\n {%- if message.get('tool_calls') -%}\\n {{render_toolcalls(message)}}\\n {%- endif -%}\\n {%- elif message['role'] == 'tool' -%}\\n {%- set tool_call_id = message.tool_call_id -%}\\n ## Return of {{ tool_call_id }}\\n{{render_content(message)}}\\n {%- elif message['content'] is not none -%}\\n {{render_content(message)}}\\n {%- endif -%}\\n <|im_end|>\\n{%- endfor -%}\\n\\n{%- for message in suffix_msgs -%}\\n {{set_roles(message)}}\\n {%- if message['role'] == 'assistant' -%}\\n {%- if thinking is defined and thinking is false and preserve_thinking is false -%}\\n <think></think>{{render_content(message)}}\\n {%- else -%}\\n {%- set rc = message.get('reasoning', message.get('reasoning_content', '')) -%}\\n <think>{{rc}}</think>{{render_content(message)}}\\n {%- endif -%}\\n {%- if message.get('tool_calls') -%}\\n {{render_toolcalls(message)}}\\n {%- endif -%}\\n {%- elif message['role'] == 'tool' -%}\\n {%- set tool_call_id = message.tool_call_id -%}\\n ## Return of {{ tool_call_id }}\\n{{render_content(message)}}\\n {%- elif message['content'] is not none -%}\\n {{render_content(message)}}\\n {%- endif -%}\\n <|im_end|>\\n{%- endfor -%}\\n\\n\\n{%- if add_generation_prompt -%}\\n <|im_assistant|>assistant<|im_middle|>\\n {%- if thinking is defined and thinking is false -%}\\n <think></think>\\n {%- else -%}\\n <think>\\n {%- endif -%}\\n{%- endif -%}\"},\"createdAt\":\"2026-06-11T07:51:47.000Z\",\"discussionsDisabled\":false,\"discussionsSorting\":\"recently-created\",\"downloads\":0,\"downloadsAllTime\":0,\"id\":\"moonshotai/Kimi-K2.7-Code\",\"isLikedByUser\":false,\"availableInferenceProviders\":[{\"provider\":\"novita\",\"modelStatus\":\"live\",\"providerStatus\":\"live\",\"providerId\":\"moonshotai/kimi-k2.7-code\",\"task\":\"conversational\",\"adapterWeightsPath\":\"model-00001-of-000064.safetensors\",\"features\":{\"structuredOutput\":false,\"toolCalling\":true},\"isCheapestPricingOutput\":false,\"isFastestThroughput\":true,\"isModelAuthor\":false,\"tokensPerSecond\":63.15707206596608}],\"showHuggingChatEntry\":true,\"inference\":\"warm\",\"lastModified\":\"2026-06-12T10:05:55.000Z\",\"likes\":368,\"pipeline_tag\":\"image-text-to-text\",\"library_name\":\"transformers\",\"librariesOther\":[],\"trackDownloads\":true,\"model-index\":null,\"private\":false,\"repoType\":\"model\",\"gated\":false,\"tags\":[\"transformers\",\"safetensors\",\"kimi_k25\",\"image-feature-extraction\",\"compressed-tensors\",\"image-text-to-text\",\"conversational\",\"custom_code\",\"license:other\",\"region:us\"],\"tag_objs\":[{\"id\":\"image-text-to-text\",\"label\":\"Image-Text-to-Text\",\"type\":\"pipeline_tag\",\"subType\":\"multimodal\"},{\"id\":\"transformers\",\"label\":\"Transformers\",\"type\":\"library\"},{\"id\":\"safetensors\",\"label\":\"Safetensors\",\"type\":\"library\"},{\"id\":\"kimi_k25\",\"label\":\"kimi_k25\",\"type\":\"other\",\"clickable\":true},{\"id\":\"image-feature-extraction\",\"label\":\"image-feature-extraction\",\"type\":\"other\",\"clickable\":true},{\"id\":\"compressed-tensors\",\"label\":\"compressed-tensors\",\"type\":\"other\",\"clickable\":true},{\"id\":\"conversational\",\"label\":\"conversational\",\"type\":\"other\",\"clickable\":true},{\"id\":\"custom_code\",\"label\":\"custom_code\",\"type\":\"other\",\"clickable\":true},{\"id\":\"license:other\",\"label\":\"other\",\"type\":\"license\"},{\"type\":\"region\",\"label\":\"🇺🇸 Region: US\",\"id\":\"region:us\"}],\"transformersInfo\":{\"auto_model\":\"AutoModel\",\"custom_class\":\"modeling_kimi_k25.KimiK25ForConditionalGeneration\",\"pipeline_tag\":\"image-feature-extraction\"},\"widgetData\":[{\"text\":\"Hi, what can you help me with?",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.9,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-a4afcf989bec58df",
-    "raw_id": "RAW-979162b19a98d78e",
-    "claim_type": "model_release",
-    "subject": "Kimi K2.7-Code：具有更高",
-    "predicate": "model_release",
-    "object": "编码模型",
-    "qualifiers": {
-      "event_status": "announced",
-      "sequence": 2
-    },
-    "source_span": {
-      "raw_id": "RAW-979162b19a98d78e",
-      "start": 6420,
-      "end": 6759
-    },
-    "source_quote": "Kimi K2.7 Code is a coding-focused agentic model built upon Kimi K2.6. With substantial improvements on real-world long-horizon coding tasks, it strengthens end-to-end task completion across complex software engineering workflows while improving token efficiency, reducing thinking-token usage by approximately 30% compared with Kimi K2.6.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-aeeff6840a296ec4",
-    "raw_id": "RAW-979162b19a98d78e",
-    "claim_type": "model_release",
-    "subject": "Kimi K2.7-Code：具有更高",
-    "predicate": "model_release",
-    "object": "编码模型",
-    "qualifiers": {
-      "event_status": "announced",
-      "sequence": 3
-    },
-    "source_span": {
-      "raw_id": "RAW-979162b19a98d78e",
-      "start": 7596,
-      "end": 7943
-    },
-    "source_quote": "Unless stated otherwise, Kimi K2.7 Code and K2.6 were tested with thinking mode enabled via Kimi Code CLI at temperature = 1.0, top-p = 0.95, and a 262,144-token context length; GPT-5.5 ran in Codex with xhigh mode, and Opus 4.8 in Claude Code with xhigh mode. Aside from these differences, all benchmarks were evaluated under the same conditions.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-bb4392c4474fbce0",
-    "raw_id": "RAW-979162b19a98d78e",
-    "claim_type": "model_release",
-    "subject": "Kimi K2.7-Code：具有更高",
-    "predicate": "model_release",
-    "object": "编码模型",
-    "qualifiers": {
-      "event_status": "announced",
-      "sequence": 4
-    },
-    "source_span": {
-      "raw_id": "RAW-979162b19a98d78e",
-      "start": 7962,
-      "end": 8446
-    },
-    "source_quote": "Kimi Code Bench V2 is our in-house benchmark designed to evaluate coding agents on realistic tasks. It has diversed software engineering tasks across 10+ mainstream programming languages and a full production tech stack covering tasks from internal engineering use cases, production incidents, and real-world open-source projects, with emphasis on backend services, infrastructure, performance engineering, systems programming, security, frontend development, and ML/data engineering.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-660377656247c339",
-    "raw_id": "RAW-095eeea479e4cdb0",
-    "claim_type": "model_release",
-    "subject": "inclusionAI",
-    "predicate": "model_release",
-    "object": "= \\\"tool\\\" %}\\n {{- '<|im_end|>\\\\n' }}\\n {%- elif loop.last %}\\n {{- '<|im_end|>\\\\n' }}\\n {%- endif %}\\n {%- else %}\\n {{- raise_exception('Unexpected message role.') }}\\n {%- endif %}\\n{%- endfor %}\\n{%- if add_generation_prompt %}\\n {{- '<|im_start|>assistant\\\\n' }}\\n {%- if enable_thinking is defined and enable_thinking is false %}\\n {{- '<think>\\\\n\\\\n</think>\\\\n\\\\n' }}\\n {%- else %}\\n {{- '<think>\\\\n' }}\\n {%- endif %}\\n{%- endif %}\"},\"createdAt\":\"2026-06-12T08:59:41.000Z\",\"discussionsDisabled\":false,\"discussionsSorting\":\"recently-created\",\"downloads\":0,\"downloadsAllTime\":0,\"id\":\"inclusionAI/VISTA-4B\",\"isLikedByUser\":false,\"availableInferenceProviders\":[],\"showHuggingChatEntry\":false,\"inference\":\"\",\"lastModified\":\"2026-06-13T05:09:58.000Z\",\"likes\":0,\"pipeline_tag\":\"image-text-to-text\",\"library_name\":\"transformers\",\"librariesOther\":[],\"trackDownloads\":true,\"model-index\":null,\"private\":false,\"repoType\":\"model\",\"gated\":false,\"tags\":[\"transformers\",\"safetensors\",\"qwen3_5\",\"image-text-to-text\",\"vista\",\"qwen3.5\",\"vision-language\",\"gui-grounding\",\"reinforcement-learning\",\"conversational\",\"en\",\"license:apache-2.0\",\"endpoints_compatible\",\"region:us\"],\"tag_objs\":[{\"id\":\"image-text-to-text\",\"label\":\"Image-Text-to-Text\",\"type\":\"pipeline_tag\",\"subType\":\"multimodal\"},{\"id\":\"transformers\",\"label\":\"Transformers\",\"type\":\"library\"},{\"id\":\"safetensors\",\"label\":\"Safetensors\",\"type\":\"library\"},{\"id\":\"en\",\"label\":\"English\",\"type\":\"language\"},{\"id\":\"qwen3_5\",\"label\":\"qwen3_5\",\"type\":\"other\",\"clickable\":true},{\"id\":\"vista\",\"label\":\"vista\",\"type\":\"other\",\"clickable\":true},{\"id\":\"qwen3.5\",\"label\":\"qwen3.5\",\"type\":\"other\",\"clickable\":true},{\"id\":\"vision-language\",\"label\":\"vision-language\",\"type\":\"other\",\"clickable\":true},{\"id\":\"gui-grounding\",\"label\":\"gui-grounding\",\"type\":\"other\",\"clickable\":true},{\"id\":\"reinforcement-learning\",\"label\":\"reinforcement-learning\",\"type\":\"other\",\"clickable\":true},{\"id\":\"conversational\",\"label\":\"conversational\",\"type\":\"other\",\"clickable\":true},{\"id\":\"endpoints_compatible\",\"label\":\"Inference Endpoints\",\"type\":\"other\",\"clickable\":true},{\"id\":\"license:apache-2.0\",\"label\":\"apache-2.0\",\"type\":\"license\"},{\"type\":\"region\",\"label\":\"🇺🇸 Region: US\",\"id\":\"region:us\"}],\"transformersInfo\":{\"auto_model\":\"AutoModelForMultimodalLM\",\"pipeline_tag\":\"image-text-to-text\",\"processor\":\"AutoProcessor\"},\"widgetData\":[{\"text\":\"Hi, what can you help me with?",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 1
-    },
-    "source_span": {
-      "raw_id": "RAW-095eeea479e4cdb0",
-      "start": 6271,
-      "end": 8654
-    },
-    "source_quote": "= \\\"tool\\\" %}\\n {{- '<|im_end|>\\\\n' }}\\n {%- elif loop.last %}\\n {{- '<|im_end|>\\\\n' }}\\n {%- endif %}\\n {%- else %}\\n {{- raise_exception('Unexpected message role.') }}\\n {%- endif %}\\n{%- endfor %}\\n{%- if add_generation_prompt %}\\n {{- '<|im_start|>assistant\\\\n' }}\\n {%- if enable_thinking is defined and enable_thinking is false %}\\n {{- '<think>\\\\n\\\\n</think>\\\\n\\\\n' }}\\n {%- else %}\\n {{- '<think>\\\\n' }}\\n {%- endif %}\\n{%- endif %}\"},\"createdAt\":\"2026-06-12T08:59:41.000Z\",\"discussionsDisabled\":false,\"discussionsSorting\":\"recently-created\",\"downloads\":0,\"downloadsAllTime\":0,\"id\":\"inclusionAI/VISTA-4B\",\"isLikedByUser\":false,\"availableInferenceProviders\":[],\"showHuggingChatEntry\":false,\"inference\":\"\",\"lastModified\":\"2026-06-13T05:09:58.000Z\",\"likes\":0,\"pipeline_tag\":\"image-text-to-text\",\"library_name\":\"transformers\",\"librariesOther\":[],\"trackDownloads\":true,\"model-index\":null,\"private\":false,\"repoType\":\"model\",\"gated\":false,\"tags\":[\"transformers\",\"safetensors\",\"qwen3_5\",\"image-text-to-text\",\"vista\",\"qwen3.5\",\"vision-language\",\"gui-grounding\",\"reinforcement-learning\",\"conversational\",\"en\",\"license:apache-2.0\",\"endpoints_compatible\",\"region:us\"],\"tag_objs\":[{\"id\":\"image-text-to-text\",\"label\":\"Image-Text-to-Text\",\"type\":\"pipeline_tag\",\"subType\":\"multimodal\"},{\"id\":\"transformers\",\"label\":\"Transformers\",\"type\":\"library\"},{\"id\":\"safetensors\",\"label\":\"Safetensors\",\"type\":\"library\"},{\"id\":\"en\",\"label\":\"English\",\"type\":\"language\"},{\"id\":\"qwen3_5\",\"label\":\"qwen3_5\",\"type\":\"other\",\"clickable\":true},{\"id\":\"vista\",\"label\":\"vista\",\"type\":\"other\",\"clickable\":true},{\"id\":\"qwen3.5\",\"label\":\"qwen3.5\",\"type\":\"other\",\"clickable\":true},{\"id\":\"vision-language\",\"label\":\"vision-language\",\"type\":\"other\",\"clickable\":true},{\"id\":\"gui-grounding\",\"label\":\"gui-grounding\",\"type\":\"other\",\"clickable\":true},{\"id\":\"reinforcement-learning\",\"label\":\"reinforcement-learning\",\"type\":\"other\",\"clickable\":true},{\"id\":\"conversational\",\"label\":\"conversational\",\"type\":\"other\",\"clickable\":true},{\"id\":\"endpoints_compatible\",\"label\":\"Inference Endpoints\",\"type\":\"other\",\"clickable\":true},{\"id\":\"license:apache-2.0\",\"label\":\"apache-2.0\",\"type\":\"license\"},{\"type\":\"region\",\"label\":\"🇺🇸 Region: US\",\"id\":\"region:us\"}],\"transformersInfo\":{\"auto_model\":\"AutoModelForMultimodalLM\",\"pipeline_tag\":\"image-text-to-text\",\"processor\":\"AutoProcessor\"},\"widgetData\":[{\"text\":\"Hi, what can you help me with?",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.9,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-a995445ef1d9e1aa",
-    "raw_id": "RAW-095eeea479e4cdb0",
-    "claim_type": "model_release",
-    "subject": "inclusionAI",
-    "predicate": "model_release",
-    "object": "VISTA-4B are GUI-grounding vision-language models trained from Qwen3.5 4B backbones with VISTA: View-Consistent Self-Verified Training for GUI Grounding .",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 2
-    },
-    "source_span": {
-      "raw_id": "RAW-095eeea479e4cdb0",
-      "start": 9171,
-      "end": 9325
-    },
-    "source_quote": "VISTA-4B are GUI-grounding vision-language models trained from Qwen3.5 4B backbones with VISTA: View-Consistent Self-Verified Training for GUI Grounding .",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-a858b8c5e3a32493",
-    "raw_id": "RAW-095eeea479e4cdb0",
-    "claim_type": "model_release",
-    "subject": "inclusionAI",
-    "predicate": "model_release",
-    "object": "VISTA-4B is a GUI-grounding model that maps a screenshot and a natural-language instruction to a click coordinate in the normalized 0-1000 image frame.",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 3
-    },
-    "source_span": {
-      "raw_id": "RAW-095eeea479e4cdb0",
-      "start": 9344,
-      "end": 9495
-    },
-    "source_quote": "VISTA-4B is a GUI-grounding model that maps a screenshot and a natural-language instruction to a click coordinate in the normalized 0-1000 image frame.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-0093b3a4bad687df",
-    "raw_id": "RAW-095eeea479e4cdb0",
-    "claim_type": "model_release",
-    "subject": "inclusionAI",
-    "predicate": "model_release",
-    "object": "View-consistent GRPO training. VISTA builds each GRPO comparison group from target-preserving views of the same GUI instance, with exact coordinate remapping across cropped views. This exposes localization behavior under semantically equivalent but geometrically different screenshots.",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 4
-    },
-    "source_span": {
-      "raw_id": "RAW-095eeea479e4cdb0",
-      "start": 9496,
-      "end": 9781
-    },
-    "source_quote": "View-consistent GRPO training. VISTA builds each GRPO comparison group from target-preserving views of the same GUI instance, with exact coordinate remapping across cropped views. This exposes localization behavior under semantically equivalent but geometrically different screenshots.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
     "claim_id": "CL-fd24eb544cd9b969",
     "raw_id": "RAW-f258f2c30123d782",
     "claim_type": "product_release",
@@ -882,174 +798,6 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-d9d771d462ce1655",
-    "raw_id": "RAW-7e7e8f648321d874",
-    "claim_type": "funding",
-    "subject": "Mistral AI 洽谈 200 亿欧元估值 D 轮",
-    "predicate": "funding",
-    "object": "消息称欧洲“独角兽”Mistral AI 洽谈以 200 亿欧元估值进行 D 轮融资 - IT之家",
-    "qualifiers": {
-      "event_status": "in_progress",
-      "sequence": 1
-    },
-    "source_span": {
-      "raw_id": "RAW-7e7e8f648321d874",
-      "start": 0,
-      "end": 49
-    },
-    "source_quote": "消息称欧洲“独角兽”Mistral AI 洽谈以 200 亿欧元估值进行 D 轮融资 - IT之家",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.9,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-4958940ae7e09245",
-    "raw_id": "RAW-7e7e8f648321d874",
-    "claim_type": "funding",
-    "subject": "Mistral AI 洽谈 200 亿欧元估值 D 轮",
-    "predicate": "funding",
-    "object": "消息称欧洲“独角兽”Mistral AI 洽谈以 200 亿欧元估值进行 D 轮融资",
-    "qualifiers": {
-      "event_status": "in_progress",
-      "sequence": 2
-    },
-    "source_span": {
-      "raw_id": "RAW-7e7e8f648321d874",
-      "start": 215,
-      "end": 257
-    },
-    "source_quote": "消息称欧洲“独角兽”Mistral AI 洽谈以 200 亿欧元估值进行 D 轮融资",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-1ec07352c77904d1",
-    "raw_id": "RAW-7e7e8f648321d874",
-    "claim_type": "funding",
-    "subject": "Mistral AI 洽谈 200 亿欧元估值 D 轮",
-    "predicate": "funding",
-    "object": "IT之家 6 月 13 日消息，据彭博社当地时间昨日消息，欧洲人工智能初创企业中的佼佼者 Mistral AI 正就其新一轮融资与投资者进行早期交涉， 目标以约 200 亿欧元 （现汇率约合 1567.1 亿元人民币） 的估值筹集约 30 亿欧元 （现汇率约合 235.07 亿元人民币） 的资金用于运营 。",
-    "qualifiers": {
-      "event_status": "in_progress",
-      "sequence": 3
-    },
-    "source_span": {
-      "raw_id": "RAW-7e7e8f648321d874",
-      "start": 307,
-      "end": 461
-    },
-    "source_quote": "IT之家 6 月 13 日消息，据彭博社当地时间昨日消息，欧洲人工智能初创企业中的佼佼者 Mistral AI 正就其新一轮融资与投资者进行早期交涉， 目标以约 200 亿欧元 （现汇率约合 1567.1 亿元人民币） 的估值筹集约 30 亿欧元 （现汇率约合 235.07 亿元人民币） 的资金用于运营 。",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-9e2e2c5e88624c79",
-    "raw_id": "RAW-7e7e8f648321d874",
-    "claim_type": "funding",
-    "subject": "Mistral AI 洽谈 200 亿欧元估值 D 轮",
-    "predicate": "funding",
-    "object": "IT之家注意到，这家总部位于法国的企业在 2025 年 9 月的 C 轮融资中以 100 亿欧元 （IT之家注：现汇率约合 783.55 亿元人民币） 的投前估值筹集了 17 亿欧元，其中 ASML 领投 13 亿欧元。",
-    "qualifiers": {
-      "event_status": "in_progress",
-      "sequence": 4
-    },
-    "source_span": {
-      "raw_id": "RAW-7e7e8f648321d874",
-      "start": 462,
-      "end": 572
-    },
-    "source_quote": "IT之家注意到，这家总部位于法国的企业在 2025 年 9 月的 C 轮融资中以 100 亿欧元 （IT之家注：现汇率约合 783.55 亿元人民币） 的投前估值筹集了 17 亿欧元，其中 ASML 领投 13 亿欧元。",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-b49411f4f16af754",
-    "raw_id": "RAW-653fd16642adfe28",
-    "claim_type": "product_release",
-    "subject": "OpenAI 为 Codex 编程智能体",
-    "predicate": "product_release",
-    "object": "灵活速率限制重置，开启 AI 价格战",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 1
-    },
-    "source_span": {
-      "raw_id": "RAW-653fd16642adfe28",
-      "start": 0,
-      "end": 93
-    },
-    "source_quote": "OpenAI kicks off the AI price wars with flexible rate-limit resets for its Codex coding agent",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.9,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-6577a845b3f1abd9",
-    "raw_id": "RAW-653fd16642adfe28",
-    "claim_type": "product_release",
-    "subject": "OpenAI 为 Codex 编程智能体",
-    "predicate": "product_release",
-    "object": "灵活速率限制重置，开启 AI 价格战",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 2
-    },
-    "source_span": {
-      "raw_id": "RAW-653fd16642adfe28",
-      "start": 94,
-      "end": 187
-    },
-    "source_quote": "OpenAI kicks off the AI price wars with flexible rate-limit resets for its Codex coding agent",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-f090fd68de7406e1",
-    "raw_id": "RAW-653fd16642adfe28",
-    "claim_type": "product_release",
-    "subject": "OpenAI 为 Codex 编程智能体",
-    "predicate": "product_release",
-    "object": "灵活速率限制重置，开启 AI 价格战",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 3
-    },
-    "source_span": {
-      "raw_id": "RAW-653fd16642adfe28",
-      "start": 188,
-      "end": 571
-    },
-    "source_quote": "OpenAI now lets Codex users bank their rate-limit resets and trigger them manually instead of watching them expire on a fixed schedule. If you hit your usage cap mid-session, you can cash in a saved reset right away instead of waiting. Users on the Go, Plus, Pro, and Business plans each get one free reset to start. Plus and Pro users can also invite friends to unlock extra resets.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-1ce16d4a6509267d",
-    "raw_id": "RAW-653fd16642adfe28",
-    "claim_type": "product_release",
-    "subject": "OpenAI 为 Codex 编程智能体",
-    "predicate": "product_release",
-    "object": "灵活速率限制重置，开启 AI 价格战",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 4
-    },
-    "source_span": {
-      "raw_id": "RAW-653fd16642adfe28",
-      "start": 572,
-      "end": 955
-    },
-    "source_quote": "OpenAI now lets Codex users bank their rate-limit resets and trigger them manually instead of watching them expire on a fixed schedule. If you hit your usage cap mid-session, you can cash in a saved reset right away instead of waiting. Users on the Go, Plus, Pro, and Business plans each get one free reset to start. Plus and Pro users can also invite friends to unlock extra resets.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
     "claim_id": "CL-3c5dc3acc921a71e",
     "raw_id": "RAW-74131efebd82bf03",
     "claim_type": "funding",
@@ -1092,6 +840,48 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-10bc9481c9f0b14f",
+    "raw_id": "RAW-74131efebd82bf03",
+    "claim_type": "funding",
+    "subject": "Mistral AI 寻求30亿欧元",
+    "predicate": "funding",
+    "object": "以推动欧洲AI发展",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-74131efebd82bf03",
+      "start": 404,
+      "end": 428
+    },
+    "source_quote": "AI, Menschen, Wirtschaft",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-d42e8acaaf962a18",
+    "raw_id": "RAW-74131efebd82bf03",
+    "claim_type": "funding",
+    "subject": "Mistral AI 寻求30亿欧元",
+    "predicate": "funding",
+    "object": "以推动欧洲AI发展",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-74131efebd82bf03",
+      "start": 429,
+      "end": 453
+    },
+    "source_quote": "AI, Menschen, Wirtschaft",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-a4e5b71ea2743cfd",
     "raw_id": "RAW-bbfc9e3462b9a0c4",
     "claim_type": "funding",
@@ -1110,6 +900,27 @@
     "source_quote": "French startup Mistral AI is in talks to raise around €3 billion ($3.5 billion) at a valuation of roughly €20 billion, according to people familiar with the discussions, providing Europe’s artificial intelligence champion with a cash injection as it competes in a costly computing race against competitors in the US and China.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-c8f9a90f88079e80",
+    "raw_id": "RAW-bbfc9e3462b9a0c4",
+    "claim_type": "funding",
+    "subject": "法国 AI 初创公司 Mistral AI 估值约 200 亿欧元，正洽谈 30 亿欧元",
+    "predicate": "funding",
+    "object": "Discussions with investors are still at an early stage and the terms may change, the people said, asking not to be identified because the deliberations are private. The valuation may go higher depending on investor demand, they said. The Paris-based company was valued at €11.7 billion when it raised money in September.",
+    "qualifiers": {
+      "event_status": "in_progress",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-bbfc9e3462b9a0c4",
+      "start": 649,
+      "end": 969
+    },
+    "source_quote": "Discussions with investors are still at an early stage and the terms may change, the people said, asking not to be identified because the deliberations are private. The valuation may go higher depending on investor demand, they said. The Paris-based company was valued at €11.7 billion when it raised money in September.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
     "verification_status": "accepted"
   },
   {
@@ -1176,7 +987,7 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-9e4a80d415fd5050",
+    "claim_id": "CL-b412f98649ff3efe",
     "raw_id": "RAW-c9055c818fbe2def",
     "claim_type": "policy_regulation",
     "subject": "因美国政府",
@@ -1188,10 +999,94 @@
     },
     "source_span": {
       "raw_id": "RAW-c9055c818fbe2def",
-      "start": 511,
-      "end": 575
+      "start": 576,
+      "end": 612
     },
-    "source_quote": "为了符合法律要求，Anthropic 已立即暂停所有用户的 Mythos 5/Fable 5 模型访问权限，其他模型暂不受影响。",
+    "source_quote": "Anthropic 表示，公司愿意遵守美国政府要求，但对这项安排持异议。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-474697dd013e7586",
+    "raw_id": "RAW-9e683c5be867a7e1",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "苹果 Siri AI 仅限较新设备：iPhone 15 Pro 起，端侧模型门槛更高",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-9e683c5be867a7e1",
+      "start": 822,
+      "end": 1012
+    },
+    "source_quote": "苹果推出了一个性能最强的端侧 AI 模型，用于实现用户对 Siri 语音语速、情感表达与语调的个性化调节，该功能仅限 iPhone 17 Pro、 iPhone 17 Pro Max 、 iPhone Air ，配备 M4 芯片且统一内存至少 12GB 的 iPad，配备 M3 芯片且统一内存至少 12GB 的 Mac，以及搭载 M5 芯片的 Apple Vision Pro。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-c1309bd3709f4787",
+    "raw_id": "RAW-9e683c5be867a7e1",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "苹果 Siri AI 仅限较新设备：iPhone 15 Pro 起，端侧模型门槛更高",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-9e683c5be867a7e1",
+      "start": 221,
+      "end": 343
+    },
+    "source_quote": "在 iPhone 阵营，iOS 27 操作系统本身可向下兼容至 iPhone 11 及更新机型，但 Siri AI 的完整功能仅面向 iPhone 15 Pro、iPhone 15 Pro Max 以及 iPhone 16 及所有后续机型开放。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-5c6ee8c905e8bf97",
+    "raw_id": "RAW-9e683c5be867a7e1",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "苹果 Siri AI 仅限较新设备：iPhone 15 Pro 起，端侧模型门槛更高",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-9e683c5be867a7e1",
+      "start": 388,
+      "end": 457
+    },
+    "source_quote": "iPad 方面，Siri AI 最低要求配备 M1 或更新芯片的 iPad 型号，以及搭载 A17 Pro 芯片的 iPad mini 。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-1ad6276733e8cffb",
+    "raw_id": "RAW-9e683c5be867a7e1",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "苹果 Siri AI 仅限较新设备：iPhone 15 Pro 起，端侧模型门槛更高",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-9e683c5be867a7e1",
+      "start": 562,
+      "end": 712
+    },
+    "source_quote": "Apple Watch 的兼容性则相对严格，watchOS 27 支持 Apple Watch Series 9 或更新机型、Apple Watch Ultra 2 或更新型号以及 SE 3，但这些手表所搭载的 Siri AI 功能仍需与一部兼容 iOS 27 AI 功能的 iPhone 配合使用。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -1533,43 +1428,43 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-ae808e73d31c73e8",
-    "raw_id": "RAW-60a96d91d991fed1",
-    "claim_type": "deployment",
-    "subject": "AI 养马更省心：Hermes Agent",
-    "predicate": "deployment",
-    "object": "Profile Builder，5 步配置 AI 智能体",
+    "claim_id": "CL-c6c4917ad80c1b39",
+    "raw_id": "RAW-c1bea14268b5f386",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "亚马逊创始人贝索斯：AI 像把刀，有危险但不能直接\"一禁了之\"",
     "qualifiers": {
-      "event_status": "completed",
+      "event_status": "announced",
       "sequence": 1
     },
     "source_span": {
-      "raw_id": "RAW-60a96d91d991fed1",
-      "start": 0,
-      "end": 116
+      "raw_id": "RAW-c1bea14268b5f386",
+      "start": 458,
+      "end": 522
     },
-    "source_quote": "IT之家 6 月 12 日消息，Nous Research 昨日（6 月 11 日）发布公告，宣布为 Hermes Agent 发布 Profile Builder， 整合分散的命令行配置，让用户在网页端一站式创建与配置智能体角色。",
+    "source_quote": "IT之家获悉，美国政府最近签署了一项行政令，允许前沿 AI 模型开发商在模型公开发布前最多 30 天，自愿提交模型接受联邦审查。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.9,
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-a709bd3b29dcdffa",
-    "raw_id": "RAW-60a96d91d991fed1",
-    "claim_type": "deployment",
-    "subject": "AI 养马更省心：Hermes Agent",
-    "predicate": "deployment",
-    "object": "Profile Builder，5 步配置 AI 智能体",
+    "claim_id": "CL-65cf8e7b062df1de",
+    "raw_id": "RAW-c1bea14268b5f386",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "亚马逊创始人贝索斯：AI 像把刀，有危险但不能直接\"一禁了之\"",
     "qualifiers": {
-      "event_status": "completed",
+      "event_status": "announced",
       "sequence": 2
     },
     "source_span": {
-      "raw_id": "RAW-60a96d91d991fed1",
-      "start": 117,
-      "end": 232
+      "raw_id": "RAW-c1bea14268b5f386",
+      "start": 523,
+      "end": 598
     },
-    "source_quote": "IT之家注：Hermes Agent 是 Nous Research 开发的开源智能体，定位是“与你一同成长的 AI 智能体”，主打“越用越聪明”的特性，能记住用户的使用习惯，自动构建技能库，在国内不少人习惯称其为“AI 养马”。",
+    "source_quote": "广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"

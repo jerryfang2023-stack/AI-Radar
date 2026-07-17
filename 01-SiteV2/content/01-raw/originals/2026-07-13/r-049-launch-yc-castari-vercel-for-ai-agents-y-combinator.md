@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-049
 title: "Launch YC: Castari - Vercel for AI Agents | Y Combinator"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "Launch YC: Castari - AI代理的Vercel | Y Combinator"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.ycombinator.com/launches/OrV-castari-vercel-for-ai-agents"
 canonical_url: "https://ycombinator.com/launches/OrV-castari-vercel-for-ai-agents"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-13T10:23:56.977Z
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Launch YC: Castari - Vercel for AI Agents | Y Combinator

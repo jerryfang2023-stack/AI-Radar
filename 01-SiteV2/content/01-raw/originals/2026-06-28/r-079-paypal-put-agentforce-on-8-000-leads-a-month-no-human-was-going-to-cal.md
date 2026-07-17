@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"One of the best sessions at [SaaStr
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "PayPal将Agentforce用于每月8000条无人处理的线索，转化率提升50% | SaaStrAI"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # PayPal Put Agentforce on 8,000 Leads a Month No Human Was Going to Call. Conversions Jumped 50%. | SaaStrAI

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Apollo Global Management 与 Blackstone
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "Apollo 与 Blackstone 为 Anthropic 完成 350 亿美元 AI 基础设施融资"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Apollo 与 Blackstone 为 Anthropic 完成 350 亿美元 AI 基础设施融资

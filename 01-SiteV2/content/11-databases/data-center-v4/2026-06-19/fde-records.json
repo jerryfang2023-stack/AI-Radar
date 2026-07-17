@@ -1,9 +1,9 @@
 [
   {
-    "fde_id": "FDE-51d5310574bc443a",
-    "event_id": "EV-a9a3b5b56befe593",
-    "customer": "",
-    "vendor": "",
+    "fde_id": "FDE-ae4c44cd0de9d48a",
+    "event_id": "EV-97747aee0cafd9f3",
+    "customer": "Google",
+    "vendor": "汇丰银行",
     "industry": "",
     "use_case": "汇丰银行与Google Cloud扩大AI银行合作",
     "workflow_before": "",
@@ -11,7 +11,9 @@
     "deployment_stage": "announced",
     "delivery_model": "",
     "team_composition": "",
-    "systems_integrated": [],
+    "systems_integrated": [
+      "Google Cloud"
+    ],
     "data_requirements": [],
     "governance_controls": [],
     "timeline": "2026-06-18T10:00:00.000Z",
@@ -21,6 +23,100 @@
     "metric_attribution": "source_reported",
     "reported_need": "",
     "reported_delivery_components": [],
+    "reported_outcomes": [],
+    "undisclosed_fields": [
+      "industry",
+      "workflow_before",
+      "workflow_after",
+      "delivery_model",
+      "team_composition",
+      "reported_need",
+      "data_requirements",
+      "governance_controls",
+      "reported_delivery_components",
+      "reported_outcomes"
+    ],
+    "claim_refs": [
+      "CL-a9bb911f76ff97e5",
+      "CL-5145e28c19c5a45f",
+      "CL-ca32569d7369f44d"
+    ],
+    "source_refs": [
+      "SA-d457c76a8a9e7848"
+    ]
+  },
+  {
+    "fde_id": "FDE-9eb2a8e54b298f36",
+    "event_id": "EV-e78ef81d4971565e",
+    "customer": "ServiceNow",
+    "vendor": "Accenture",
+    "industry": "",
+    "use_case": "Failure: ServiceNow + Accenture's FDE Fix | THE D[AI]LY BRIEF",
+    "workflow_before": "",
+    "workflow_after": "",
+    "deployment_stage": "announced",
+    "delivery_model": "",
+    "team_composition": "",
+    "systems_integrated": [],
+    "data_requirements": [],
+    "governance_controls": [],
+    "timeline": "",
+    "reported_metrics": [],
+    "metric_attribution": "",
+    "reported_need": "",
+    "reported_delivery_components": [
+      "Eighty-eight percent of enterprise AI pilots never reach production. That single number — replicated across Forrester, Anaconda, a16z, and the MIT Sloan CIO panel — is the defining failure mode of the agentic era. On May 6, 2026, at Knowledge 2026 in Las Vegas, ServiceNow and Accenture stepped onto the keynote stage with their answer: a joint Forward Deployed Engineering (FDE) program that embeds platform-native and industry-native engineers inside customer environments to drag pilots across the production line. The program leans on 300+ pre-built AI agent skills on the ServiceNow AI Platform, ServiceNow's AI Control Tower for governance, and Accenture's 786,000-person delivery footprint for industry depth.",
+      "The bet is bold: that the missing ingredient in agentic AI is not models, infrastructure, or even data — it is implementation labor with permission to live inside the customer's environment until the workflow ships. That is the Palantir model rewritten for the agent era. This article unpacks what was announced, why it matters to CIOs and CFOs, the competitive landscape (Anthropic, OpenAI , Google, Microsoft are all converging on the same conclusion), a decision matrix on when an FDE engagement actually pays back, and a 90-day pilot-to-production readiness assessment you can score against your own org today.",
+      "The Forward Deployed Engineering program announced at Knowledge 2026 is a joint motion that fuses two specialist teams inside customer environments. ServiceNow's AI-native FDE team — engineers who live in the platform, the AI Control Tower, RaptorDB, and the agent runtime — works shoulder-to-shoulder with Accenture's industry-led FDEs, who bring vertical depth in financial services, healthcare, manufacturing, public sector, and retail. According to the joint announcement , they form \"purpose-built pods\" that build agentic workflows natively on the ServiceNow AI Platform and stay embedded until measurable production value is demonstrated."
+    ],
+    "reported_outcomes": [],
+    "undisclosed_fields": [
+      "industry",
+      "workflow_before",
+      "workflow_after",
+      "delivery_model",
+      "team_composition",
+      "reported_need",
+      "systems_integrated",
+      "data_requirements",
+      "governance_controls",
+      "reported_outcomes"
+    ],
+    "claim_refs": [
+      "CL-418de637a1800668",
+      "CL-fe1a97c8acd5550c",
+      "CL-4e0d890c364f5a09",
+      "CL-ffa15af36a3e9b01"
+    ],
+    "source_refs": [
+      "SA-c55b1312da967505"
+    ]
+  },
+  {
+    "fde_id": "FDE-d51458c45a717405",
+    "event_id": "EV-3877ac6cb0d3328c",
+    "customer": "",
+    "vendor": "",
+    "industry": "",
+    "use_case": "Production: Enterprise Agent Deployment Playbook - AI Learning Guides",
+    "workflow_before": "",
+    "workflow_after": "",
+    "deployment_stage": "announced",
+    "delivery_model": "",
+    "team_composition": "",
+    "systems_integrated": [],
+    "data_requirements": [],
+    "governance_controls": [],
+    "timeline": "",
+    "reported_metrics": [
+      "78%",
+      "14%"
+    ],
+    "metric_attribution": "source_reported",
+    "reported_need": "",
+    "reported_delivery_components": [
+      "The defining enterprise AI agent deployment challenge of 2026 is no longer model quality. It’s the pilot-to-production gap. 78% of enterprise technology leaders have at least one AI agent pilot running; only 14% have successfully scaled an agent to organization-wide operational use. The gap — sometimes called pilot purgatory — has almost nothing to do with the capability of frontier LLMs and almost everything to do with the operational, organizational, and integration work that turns a promising prototype into a reliable production system. This guide is a 15-chapter playbook for moving enterprise agents from pilots to production, covering architecture, governance, observability, cost, reliability, rollout, and the anti-patterns that strand companies in perpetual pilot mode."
+    ],
     "reported_outcomes": [],
     "undisclosed_fields": [
       "customer",
@@ -37,12 +133,13 @@
       "reported_outcomes"
     ],
     "claim_refs": [
-      "CL-a9bb911f76ff97e5",
-      "CL-5145e28c19c5a45f",
-      "CL-ca32569d7369f44d"
+      "CL-3751e1bcd8c3f3d7",
+      "CL-db11a5bd1c43d579",
+      "CL-f535c8eddb088b82",
+      "CL-da830e09ea696979"
     ],
     "source_refs": [
-      "SA-d457c76a8a9e7848"
+      "SA-94b37ab2498ab738"
     ]
   }
 ]

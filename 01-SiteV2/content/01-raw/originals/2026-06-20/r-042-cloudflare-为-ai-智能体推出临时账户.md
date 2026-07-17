@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"Cloudflare 在 Workers 上推出临
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Cloudflare 为 AI 智能体推出临时账户"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Cloudflare 为 AI 智能体推出临时账户

@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-081
 title: "German AI workforce management startup Sherpa raises $2.2M pre-seed - Tech.eu"
-title_zh: "德国人工智能劳动力管理初创公司Sherpa在种子期前筹集了220万$ - Tech.eu"
-title_translation_status: translated
-title_translation_method: mymemory_title_translation
+title_zh: "德国AI劳动力管理初创公司Sherpa获220万美元种子轮融资 - Tech.eu"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://tech.eu/2026/07/09/german-ai-workforce-management-startup-sherpa-raises-22m-pre-seed/"
 canonical_url: "https://tech.eu/2026/07/09/german-ai-workforce-management-startup-sherpa-raises-22m-pre-seed"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-10T02:00:03.478Z
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # German AI workforce management startup Sherpa raises $2.2M pre-seed - Tech.eu

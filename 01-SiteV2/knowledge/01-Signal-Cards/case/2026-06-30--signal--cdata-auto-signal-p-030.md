@@ -2,7 +2,7 @@
 id: SIG-20260630-A10
 type: signal_card
 signal_type: case
-title: "CData 发布 Connect AI 开发者版、Python SDK 和 CLI"
+title: "CData推出Connect AI开发者版、Python SDK及CLI"
 date: 2026-06-30
 status: published
 source_title: "CData Launches Connect AI Developer Edition, Python SDK, and CLI"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "CData"
 
 frontend:
-  displayTitle: "CData 发布 Connect AI 开发者版、Python SDK 和 CLI"
+  displayTitle: "CData推出Connect AI开发者版、Python SDK及CLI"
   sourceLinks:
     - "https://www.devopsdigest.com/cdata-launches-connect-ai-developer-edition-python-sdk-and-cli"
 ---
 
-# CData 发布 Connect AI 开发者版、Python SDK 和 CLI
+# CData推出Connect AI开发者版、Python SDK及CLI
 
 ## 新闻事实
 

@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-088
 title: "Estée Lauder case study | Google Cloud # The Estée Lauder Companies and Jo Malone London: Giving signature scents a spritz of AI Get started for free Google Cloud results Launched a conversational, AI-powered digital experience Maps natural language to deep scent expertise for bespoke fragrance... / query=enterprise AI agent customer story deployment announced 2026 / intent=find_customer_case / path=official_original"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "Estée Lauder案例研究 | Google Cloud # 雅诗兰黛公司与祖·玛珑：用AI为标志性香氛注入活力 免费试用 Google Cloud 结果 推出基于AI的对话式数字体验 将自然语言映射至深层香氛专业知识，打造定制香水... / 查询=企业AI代理客户案例部署宣布2026 / 意图=查找客户案例 / 路径=官方原文"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://cloud.google.com/customers/elc"
 canonical_url: "https://cloud.google.com/customers/elc"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-09T03:05:45.304Z
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Estée Lauder case study | Google Cloud # The Estée Lauder Companies and Jo Malone London: Giving signature scents a spritz of AI Get started for free Google Cloud results Launched a conversational, AI-powered digital experience Maps natural language to deep scent expertise for bespoke fragrance... / query=enterprise AI agent customer story deployment announced 2026 / intent=find_customer_case / path=official_original

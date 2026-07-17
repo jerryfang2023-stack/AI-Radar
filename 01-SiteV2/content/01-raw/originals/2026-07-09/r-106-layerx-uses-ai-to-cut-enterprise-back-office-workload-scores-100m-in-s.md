@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-106
 title: "LayerX uses AI to cut enterprise back-office workload, scores $100M in Series B | TechCrunch"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "LayerX利用AI削减企业后台工作量，获1亿美元B轮融资 | TechCrunch"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://techcrunch.com/2025/09/01/layerx-uses-ai-to-cut-enterprise-back-office-workload-scores-100m-in-series-b/"
 canonical_url: "https://techcrunch.com/2025/09/01/layerx-uses-ai-to-cut-enterprise-back-office-workload-scores-100m-in-series-b"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-09T03:05:45.394Z
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # LayerX uses AI to cut enterprise back-office workload, scores $100M in Series B | TechCrunch

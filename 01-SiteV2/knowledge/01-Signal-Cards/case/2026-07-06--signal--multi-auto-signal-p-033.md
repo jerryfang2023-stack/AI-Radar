@@ -2,7 +2,7 @@
 id: SIG-20260706-A02
 type: signal_card
 signal_type: case
-title: "Multi-Agent Hospital Operations Platform | Healthcare AI Case Study"
+title: "多智能体医院运营平台 | 医疗AI案例研究 | TechEniac"
 date: 2026-07-06
 status: published
 source_title: "Multi-Agent Hospital Operations Platform | Healthcare AI Case Study | TechEniac"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "Multi"
 
 frontend:
-  displayTitle: "Multi-Agent Hospital Operations Platform | Healthcare AI Case Study"
+  displayTitle: "多智能体医院运营平台 | 医疗AI案例研究 | TechEniac"
   sourceLinks:
     - "https://techeniac.com/case-studies/hospital-operations-ai"
 ---
 
-# Multi-Agent Hospital Operations Platform | Healthcare AI Case Study
+# 多智能体医院运营平台 | 医疗AI案例研究 | TechEniac
 
 ## 新闻事实
 

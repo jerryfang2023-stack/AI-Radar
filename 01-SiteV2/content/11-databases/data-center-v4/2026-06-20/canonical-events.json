@@ -5,7 +5,10 @@
     "event_time": "2026-06-19T15:23:28.000Z",
     "disclosed_at": "2026-06-19T15:23:28.000Z",
     "entities": [
-      "EN-28d79881d0386305"
+      "EN-28d79881d0386305",
+      "EN-cbc62794911ff31b",
+      "EN-bbdefa2950f49882",
+      "EN-a4e7560e8d2b340f"
     ],
     "action": "推出",
     "object": "多款AI服务，涵盖通话、应用与家居",
@@ -14,7 +17,9 @@
     ],
     "locations": [],
     "claim_refs": [
-      "CL-c19527da2838ee4a"
+      "CL-c19527da2838ee4a",
+      "CL-1c224d072885b4a9",
+      "CL-ed96cc19b0ba7804"
     ],
     "source_refs": [
       "SA-7f51029b392806f8"
@@ -33,45 +38,14 @@
     "display_title_zh": "信实工业推出多款AI服务，涵盖通话、应用与家居"
   },
   {
-    "event_type": "hardware_deployment",
-    "event_status": "planned",
-    "event_time": "2026-06-19T13:00:00.000Z",
-    "disclosed_at": "2026-06-19T13:00:00.000Z",
-    "entities": [],
-    "action": "部署托管计算集群",
-    "object": "Allbirds 转型 AI 后更名为 Smartbird，新 CEO 计划部署托管计算集群",
-    "metrics": [],
-    "locations": [],
-    "claim_refs": [
-      "CL-e4d7827cbf4eaf79",
-      "CL-1194d94816924522"
-    ],
-    "source_refs": [
-      "SA-bfd8f66bb35b5467"
-    ],
-    "conflicts": [],
-    "missing_fields": [
-      "entities",
-      "object"
-    ],
-    "update_history": [
-      {
-        "source_ref": "SA-bfd8f66bb35b5467",
-        "disclosed_at": "2026-06-19T13:00:00.000Z",
-        "status": "planned"
-      }
-    ],
-    "publication_status": "partial",
-    "event_id": "EV-679f2e5b30947066",
-    "display_title_zh": "Allbirds 转型 AI 后更名为 Smartbird，新 CEO 计划部署托管计算集群"
-  },
-  {
     "event_type": "product_release",
     "event_status": "completed",
     "event_time": "2026-06-19T16:01:03.000Z",
     "disclosed_at": "2026-06-19T16:01:03.000Z",
     "entities": [
-      "EN-c70eca6b0f88f44d"
+      "EN-c70eca6b0f88f44d",
+      "EN-cbc62794911ff31b",
+      "EN-9f15bb7e29e191eb"
     ],
     "action": "发布",
     "object": "，但数字并不在意",
@@ -80,7 +54,9 @@
       "US"
     ],
     "claim_refs": [
-      "CL-18f18dee1dc81ac7"
+      "CL-18f18dee1dc81ac7",
+      "CL-f3e18b1010a23606",
+      "CL-ab2c4ec68936dabe"
     ],
     "source_refs": [
       "SA-d457ce7e464bb3ff"
@@ -100,7 +76,7 @@
   },
   {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "",
     "disclosed_at": "2026-06-20T05:50:41.909Z",
     "entities": [
@@ -123,17 +99,58 @@
       "SA-2f8d0246d0c91239"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-2f8d0246d0c91239",
         "disclosed_at": "2026-06-20T05:50:41.909Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
     "event_id": "EV-63236c15166b71e0",
-    "display_title_zh": "Pivot 完成 4000 万美元 B 轮融资"
+    "display_title_zh": "Pivot 获4000万美元B轮融资，推企业级AI代理采购操作系统，解决遗留软件未修复的问题"
+  },
+  {
+    "event_type": "deployment",
+    "event_status": "completed",
+    "event_time": "",
+    "disclosed_at": "2026-06-20T05:50:41.939Z",
+    "entities": [
+      "EN-9fbf261b62c1d7c0",
+      "EN-b0532e1af75cc4ab"
+    ],
+    "action": "deployed",
+    "object": "through Microsoft 365 Copilot | Microsoft Customer Stories",
+    "metrics": [
+      "20%"
+    ],
+    "locations": [],
+    "claim_refs": [
+      "CL-34d6856a16926930",
+      "CL-c837d8938488532a",
+      "CL-e9d92fc46e288698",
+      "CL-31e773aa2d082cac"
+    ],
+    "source_refs": [
+      "SA-392c47455366552b"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "event_time"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-392c47455366552b",
+        "disclosed_at": "2026-06-20T05:50:41.939Z",
+        "status": "completed"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-d756f05478303505",
+    "display_title_zh": "Grupo Bimbo 借助 Microsoft Copilot Studio 构建的 AI 智能体，通过 Microsoft 365 Copilot 部署，将审计时间缩短 20%"
   },
   {
     "event_type": "product_release",
@@ -141,7 +158,11 @@
     "event_time": "",
     "disclosed_at": "2026-06-20T05:50:41.958Z",
     "entities": [
-      "EN-8a96f1a807787797"
+      "EN-8a96f1a807787797",
+      "EN-96eebba49dbbf422",
+      "EN-8487426ba81162db",
+      "EN-26ea860e3f994da6",
+      "EN-1ca156b825e21de0"
     ],
     "action": "Launches",
     "object": "First Enterprise AI Trust Platform Built for Everyone, Backed by $5M Seed Round",
@@ -159,7 +180,9 @@
       "SA-f21057f731f4c46f"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-f21057f731f4c46f",
@@ -169,7 +192,7 @@
     ],
     "publication_status": "verified",
     "event_id": "EV-be19904753c9c486",
-    "display_title_zh": "OpenBox AI 发布 First Enterprise AI Trust Platform Built for Everyone"
+    "display_title_zh": "OpenBox AI推出首个面向所有人的企业AI信任平台，获500万美元种子轮融资"
   },
   {
     "event_type": "product_release",
@@ -204,11 +227,11 @@
   },
   {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "",
     "disclosed_at": "2026-06-20T05:50:42.061Z",
     "entities": [
-      "EN-b0532e1af75cc4ab"
+      "EN-bf0e59763d382462"
     ],
     "action": "raises",
     "object": "$10M to simplify ML workflow orchestration",
@@ -220,24 +243,26 @@
     "claim_refs": [
       "CL-e9df61e088e8d4cf",
       "CL-a81d30bd2e82aced",
-      "CL-9faffb59c2e6e31a",
-      "CL-cb7c9f26c2b24932"
+      "CL-0b3d7f8b3225fe5d",
+      "CL-6a8021a087eb96fd"
     ],
     "source_refs": [
       "SA-9ca54e5fd7d94c90"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-9ca54e5fd7d94c90",
         "disclosed_at": "2026-06-20T05:50:42.061Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-19d26c4129df1cee",
-    "display_title_zh": "Rime 完成 1000 万美元融资"
+    "event_id": "EV-11b5192fc54c0aa0",
+    "display_title_zh": "Union.ai融资1000万美元，简化机器学习工作流编排"
   },
   {
     "event_type": "organization_people",
@@ -246,7 +271,8 @@
     "disclosed_at": "2026-06-19T17:54:14.000Z",
     "entities": [
       "EN-2b6e51bec93e86c1",
-      "EN-c70eca6b0f88f44d"
+      "EN-c70eca6b0f88f44d",
+      "EN-7d3194f79e645c42"
     ],
     "action": "加入",
     "object": "Anthropic",
@@ -254,7 +280,9 @@
     "locations": [],
     "claim_refs": [
       "CL-c9fc8fc6146106ff",
-      "CL-00f5fb7e06cf13e3"
+      "CL-00f5fb7e06cf13e3",
+      "CL-ceba0ef6f240b669",
+      "CL-bc07b3606728100a"
     ],
     "source_refs": [
       "SA-1f371cf6c50f5f15"
@@ -274,12 +302,121 @@
   },
   {
     "event_type": "product_release",
+    "event_status": "announced",
+    "event_time": "2026-06-19T10:51:06.000Z",
+    "disclosed_at": "2026-06-19T10:51:06.000Z",
+    "entities": [
+      "EN-c70eca6b0f88f44d",
+      "EN-7d3194f79e645c42",
+      "EN-34ec8666daf7b665"
+    ],
+    "action": "product_release",
+    "object": "马斯克预测中国大模型2027年Q1追上Anthropic Fable，智谱唐杰回应\"用不了那么久\"",
+    "metrics": [
+      "5000 万"
+    ],
+    "locations": [
+      "中国"
+    ],
+    "claim_refs": [
+      "CL-eb7c1777a68f63fe",
+      "CL-9f1b6e3dd0c30068",
+      "CL-95865507631ff9cd",
+      "CL-fe3ec3a665b7a169"
+    ],
+    "source_refs": [
+      "SA-70970315c84f7b5d"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-70970315c84f7b5d",
+        "disclosed_at": "2026-06-19T10:51:06.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-574998b1638a3f4f",
+    "display_title_zh": "马斯克预测中国大模型2027年Q1追上Anthropic Fable，智谱唐杰回应\"用不了那么久\""
+  },
+  {
+    "event_type": "product_release",
+    "event_status": "announced",
+    "event_time": "2026-06-20T00:04:39.000Z",
+    "disclosed_at": "2026-06-20T00:04:39.000Z",
+    "entities": [
+      "EN-c70eca6b0f88f44d",
+      "EN-8f71c4871a160172",
+      "EN-3a13916345b60fad"
+    ],
+    "action": "product_release",
+    "object": "超越Claude Fable 5：智谱GLM 5.2登顶Design Arena网页设计AI榜单",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-643502f3a4ccb47f",
+      "CL-83b6ed31fc33a4db",
+      "CL-e399757cf0796f4f"
+    ],
+    "source_refs": [
+      "SA-7b8bd1955e983c6d"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-7b8bd1955e983c6d",
+        "disclosed_at": "2026-06-20T00:04:39.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-f0caa4082916d619",
+    "display_title_zh": "超越Claude Fable 5：智谱GLM 5.2登顶Design Arena网页设计AI榜单"
+  },
+  {
+    "event_type": "product_release",
+    "event_status": "announced",
+    "event_time": "2026-06-19T23:23:15.000Z",
+    "disclosed_at": "2026-06-19T23:23:15.000Z",
+    "entities": [
+      "EN-3a7bd3e2360a3d29",
+      "EN-1924fff8eb4d54ae"
+    ],
+    "action": "product_release",
+    "object": "visionOS 27 今秋推送：M5 Vision Pro 头显独占 Siri 语音定制和苹果最强本地 AI 模型",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-e59ffd29c9fad267",
+      "CL-def709b9f0ef39c0",
+      "CL-85a4dcaf0f72d71b",
+      "CL-819b55565656b293"
+    ],
+    "source_refs": [
+      "SA-b7ca287a7f6b5136"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-b7ca287a7f6b5136",
+        "disclosed_at": "2026-06-19T23:23:15.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-89930fa8d1db98eb",
+    "display_title_zh": "visionOS 27 今秋推送：M5 Vision Pro 头显独占 Siri 语音定制和苹果最强本地 AI 模型"
+  },
+  {
+    "event_type": "product_release",
     "event_status": "completed",
     "event_time": "2026-06-19T07:38:43.000Z",
     "disclosed_at": "2026-06-19T07:38:43.000Z",
     "entities": [
-      "EN-bbdefa2950f49882",
-      "EN-7d3194f79e645c42"
+      "EN-0d049cd1e9f619f9"
     ],
     "action": "发布",
     "object": "AstraBrain-WBC 0.5",
@@ -292,7 +429,7 @@
       "CL-2d9c0183892f925c",
       "CL-8a246deb4a52a8fa",
       "CL-3166c56a9815c0ee",
-      "CL-e650b485049101e0"
+      "CL-b9e882ebf1259292"
     ],
     "source_refs": [
       "SA-bf9858d74ff31a54"
@@ -307,7 +444,7 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-e6771f58d7c2a050",
+    "event_id": "EV-c834a9d33a86373c",
     "display_title_zh": "全球首个人形机器人通用小脑 GPT 模型：银河通用发布 AstraBrain-WBC 0.5"
   },
   {
@@ -317,7 +454,9 @@
     "disclosed_at": "2026-06-20T03:05:48.000Z",
     "entities": [
       "EN-a517b1e8d2bf70a6",
-      "EN-96d1cecf438dc04e"
+      "EN-96d1cecf438dc04e",
+      "EN-252da501233d3c2d",
+      "EN-285c8f76de6c6c97"
     ],
     "action": "发布",
     "object": "ACE 1.15规范，增强x86架构AI算力",
@@ -325,7 +464,9 @@
     "locations": [],
     "claim_refs": [
       "CL-a2375b5fa313c2b6",
-      "CL-575c04e2b07891de"
+      "CL-575c04e2b07891de",
+      "CL-03a4844da011f8bc",
+      "CL-e81385ade6248b7b"
     ],
     "source_refs": [
       "SA-5f5765fb7216fe82"

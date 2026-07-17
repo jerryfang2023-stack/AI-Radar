@@ -72,6 +72,10 @@ key_excerpts: [{"type":"company_action","text":"在 WWDC 2026 上，苹果展示
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Apple Intelligence 借助 Google 和 Nvidia 再获新生"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Apple Intelligence 借助 Google 和 Nvidia 再获新生

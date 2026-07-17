@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"How GitHub Copilot is making more o
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "提升每个令牌的价值：Copilot如何优化上下文处理与模型路由"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Getting more from each token: How Copilot improves context handling and model routing

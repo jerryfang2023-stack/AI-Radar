@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-130
 title: "Ep 63: Khan Academy Founder/CEO on Salman Khan on Classrooms in 20 years, Rolling out to 1.4M Users &amp; Sal’s Hopes for AI Education"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "第63期：可汗学院创始人/CEO萨尔曼·可汗谈20年后的课堂、拓展至140万用户及萨尔对AI教育的期望"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://unsupervised-learning.simplecast.com/episodes/ep-63-khan-academy-founder-ceo-on-salman-khan-on-classrooms-in-20-years-rolling-out-to-14m-users-sals-hopes-for-ai-education-6U445CUu"
 canonical_url: "https://unsupervised-learning.simplecast.com/episodes/ep-63-khan-academy-founder-ceo-on-salman-khan-on-classrooms-in-20-years-rolling-out-to-14m-users-sals-hopes-for-ai-education-6U445CUu"
 source_name: "Unsupervised Learning (Redpoint)"
@@ -78,6 +78,7 @@ fact_extraction_completed_at: 2026-07-04T04:35:48.388Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Ep 63: Khan Academy Founder/CEO on Salman Khan on Classrooms in 20 years, Rolling out to 1.4M Users &amp; Sal’s Hopes for AI Education

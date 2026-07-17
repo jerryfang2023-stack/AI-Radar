@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-017
 title: "Takeda与Insilico签署6亿美元AI药物发现协议"
 title_zh: "Takeda与Insilico签署6亿美元AI药物发现协议"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.artificialintelligence-news.com/news/takeda-insilico-ai-drug-discovery-deal"
 canonical_url: "https://artificialintelligence-news.com/news/takeda-insilico-ai-drug-discovery-deal"
 source_name: "Artificial Intelligence News（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-04T04:50:50.128Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Takeda与Insilico签署6亿美元AI药物发现协议

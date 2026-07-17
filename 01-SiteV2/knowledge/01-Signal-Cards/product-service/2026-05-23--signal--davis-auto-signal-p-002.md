@@ -2,7 +2,7 @@
 id: SIG-20260523-A01
 type: signal_card
 signal_type: product_service
-title: "Davis 发布 AI 能力，指向地产开发和建筑设计流程"
+title: "Davis 筹集 550 万美元预种子轮 - Balderton"
 date: 2026-05-23
 status: published
 asset_level: frontstage
@@ -58,7 +58,7 @@ signal_owner: "Davis"
 watch_reason: "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
 
 frontend:
-  displayTitle: "Davis 发布 AI 能力，指向地产开发和建筑设计流程"
+  displayTitle: "Davis 筹集 550 万美元预种子轮 - Balderton"
   eventLine: "Davis 发布新的 AI 能力，面向地产开发和建筑设计流程。"
   whyWatch: "这条变化值得看，是因为它把竞争点放到了地产开发和建筑设计流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"
   businessMeaning: "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
@@ -68,7 +68,7 @@ frontend:
     - "https://www.balderton.com/news/davis-raises-5-5-million-pre-seed-to-accelerate-early-stage-real-estate-development-from-months-to-days/"
 ---
 
-# Davis 发布 AI 能力，指向地产开发和建筑设计流程
+# Davis 筹集 550 万美元预种子轮 - Balderton
 
 ## 信号底稿
 

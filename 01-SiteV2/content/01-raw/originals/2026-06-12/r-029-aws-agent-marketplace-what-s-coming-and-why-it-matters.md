@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"AI Agent Marketplace—a new hub wh
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "AWS Agent Marketplace：即将推出的功能及其重要性"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # AWS Agent Marketplace: What's Coming and Why It Matters

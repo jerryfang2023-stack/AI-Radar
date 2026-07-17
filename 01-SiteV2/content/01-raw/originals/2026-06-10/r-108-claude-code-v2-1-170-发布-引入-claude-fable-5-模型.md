@@ -72,6 +72,10 @@ key_excerpts: [{"type":"supporting_context","text":"Claude Code v2.1.170 更新�
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "Claude Code v2.1.170 发布：引入 Claude Fable 5 模型"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Claude Code v2.1.170 发布：引入 Claude Fable 5 模型

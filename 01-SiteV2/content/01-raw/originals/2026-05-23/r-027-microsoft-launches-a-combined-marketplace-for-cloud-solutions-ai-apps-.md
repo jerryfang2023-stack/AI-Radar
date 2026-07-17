@@ -72,6 +72,10 @@ key_excerpts: [{"type":"quote","text":"Microsoft Launches a Combined Marketplace
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "微软推出云解决方案、AI应用及代理的统一市场 - The New Stack"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Microsoft Launches a Combined Marketplace for Cloud Solutions, AI Apps and Agents - The New Stack

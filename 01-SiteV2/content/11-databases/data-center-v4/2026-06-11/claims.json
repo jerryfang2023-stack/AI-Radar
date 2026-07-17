@@ -84,7 +84,7 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-917ac73263ec2d6c",
+    "claim_id": "CL-996c42860de8d42c",
     "raw_id": "RAW-4bd466024c9efcb9",
     "claim_type": "product_release",
     "subject": "Google DeepMind",
@@ -93,6 +93,27 @@
     "qualifiers": {
       "event_status": "completed",
       "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-4bd466024c9efcb9",
+      "start": 605,
+      "end": 1119
+    },
+    "source_quote": "Most AI models are designed to be autoregressive—they generate text left to right one token at a time. DiffusionGemma has more in common with image generation models, which start with static and then denoise it to create the desired content. This model takes a field of placeholder tokens running over the canvas multiple times to generate likely tokens and using those to improve estimation of others. At the end of the process, the model finalizes its token outputs in one large block—the “denoised” text canvas.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-917ac73263ec2d6c",
+    "raw_id": "RAW-4bd466024c9efcb9",
+    "claim_type": "product_release",
+    "subject": "Google DeepMind",
+    "predicate": "product_release",
+    "object": "DiffusionGemma，本地 AI 推理速度提升 4 倍",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
     },
     "source_span": {
       "raw_id": "RAW-4bd466024c9efcb9",
@@ -113,7 +134,7 @@
     "object": "DiffusionGemma，本地 AI 推理速度提升 4 倍",
     "qualifiers": {
       "event_status": "completed",
-      "sequence": 3
+      "sequence": 4
     },
     "source_span": {
       "raw_id": "RAW-4bd466024c9efcb9",
@@ -121,27 +142,6 @@
       "end": 2245
     },
     "source_quote": "This approach to text generation shifts the bottleneck from memory bandwidth to compute, generating up to 256 tokens in parallel. Google says this offers a measurable boost in non-linear tasks like in-line editing, molecular sequencing, and mathematical graphing. The animation above shows how DiffusionGemma was tuned to solve Sudoku puzzles, which is a notoriously challenging task for standard autoregressive AI models because each token depends on future tokens. DiffusionGemma’s ability to continuously self-correct large sets of tokens makes that easier.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-ed92bd1b2ea4820b",
-    "raw_id": "RAW-4bd466024c9efcb9",
-    "claim_type": "product_release",
-    "subject": "Google DeepMind",
-    "predicate": "product_release",
-    "object": "DiffusionGemma，本地 AI 推理速度提升 4 倍",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 4
-    },
-    "source_span": {
-      "raw_id": "RAW-4bd466024c9efcb9",
-      "start": 3917,
-      "end": 4330
-    },
-    "source_quote": "Google stresses that DiffusionGemma is experimental, but it’s available under the same Apache 2.0 license as all the other fourth-generation Gemma models. You can download the model weights today from Hugging Face . Google says it worked with Nvidia to ensure DiffusionGemma was optimized for a variety of setups, including high-end RTX GPUs (quantized) and enterprise systems like the H100 or DGX Spark platform.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -168,7 +168,7 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-c855d3d9abf7a3f8",
+    "claim_id": "CL-e10fb59f0d0c9156",
     "raw_id": "RAW-18056a4774bad58a",
     "claim_type": "model_release",
     "subject": "Google AI",
@@ -180,16 +180,16 @@
     },
     "source_span": {
       "raw_id": "RAW-18056a4774bad58a",
-      "start": 1008,
-      "end": 1242
+      "start": 675,
+      "end": 984
     },
-    "source_quote": "DiffusionGemma is a 26B Mixture of Experts (MoE) model. It activates only 3.8B parameters during inference. It is built on the Gemma 4 backbone, specifically the 26B-A4B architecture. Google integrated a diffusion head onto that base.",
+    "source_quote": "Most language models in use today are autoregressive. They generate one token at a time, left to right. Each new token depends on the token before it. DiffusionGemma works differently. It generates entire blocks of text simultaneously, in parallel. On dedicated GPUs, this delivers up to 4x faster generation.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-feb62b2a812d1f3b",
+    "claim_id": "CL-4f700e72ca58f13c",
     "raw_id": "RAW-18056a4774bad58a",
     "claim_type": "model_release",
     "subject": "Google AI",
@@ -201,16 +201,16 @@
     },
     "source_span": {
       "raw_id": "RAW-18056a4774bad58a",
-      "start": 1662,
-      "end": 1913
+      "start": 985,
+      "end": 1007
     },
-    "source_quote": "Google is very direct about the trade-off. DiffusionGemma prioritizes speed and parallel layout generation. Its overall output quality is lower than standard Gemma 4. For maximum quality production work, Google still recommends autoregressive Gemma 4.",
+    "source_quote": "What is DiffusionGemma",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-248b9e3ceec4b51c",
+    "claim_id": "CL-c855d3d9abf7a3f8",
     "raw_id": "RAW-18056a4774bad58a",
     "claim_type": "model_release",
     "subject": "Google AI",
@@ -222,10 +222,10 @@
     },
     "source_span": {
       "raw_id": "RAW-18056a4774bad58a",
-      "start": 4339,
-      "end": 4696
+      "start": 1008,
+      "end": 1242
     },
-    "source_quote": "A clear example is the Sudoku showcase from Google’s developer guide. Autoregressive models struggle with strict, multivariable constrained puzzles. The base DiffusionGemma model solves roughly 0% of Sudoku puzzles. After a simple JAX supervised fine-tuning recipe, correctness rises to 80%. The fine-tuned model also stops earlier, cutting inference steps.",
+    "source_quote": "DiffusionGemma is a 26B Mixture of Experts (MoE) model. It activates only 3.8B parameters during inference. It is built on the Gemma 4 backbone, specifically the 26B-A4B architecture. Google integrated a diffusion head onto that base.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -249,6 +249,48 @@
     "source_quote": "Today, we’re introducing DiffusionGemma, an experimental open model that explores text diffusion, an exceptionally fast approach to text generation. Released under an Apache 2.0 license, this 26B Mixture of Experts (MoE) model moves beyond the sequential token-by-token processing of typical autoregressive Large Language Models (LLMs). Instead, it generates entire blocks of text simultaneously, delivering up to 4x faster text generation on GPUs.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-9ebe7e37ceb9eaa7",
+    "raw_id": "RAW-53d52f271ce257ad",
+    "claim_type": "model_release",
+    "subject": "DiffusionGemma：文本生成速度提升4倍的",
+    "predicate": "model_release",
+    "object": "Built upon the industry-leading intelligence-per-parameter of our Gemma 4 family and cutting-edge Gemini Diffusion research , DiffusionGemma integrates a novel diffusion head designed to maximize generation speed. While autoregressive Gemma 4 models remain the standard for high-quality production outputs, DiffusionGemma is designed for researchers and developers exploring speed-critical, interactive local workflows such as in-line editing, rapid iteration, and generating non-linear text structures.",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-53d52f271ce257ad",
+      "start": 837,
+      "end": 1340
+    },
+    "source_quote": "Built upon the industry-leading intelligence-per-parameter of our Gemma 4 family and cutting-edge Gemini Diffusion research , DiffusionGemma integrates a novel diffusion head designed to maximize generation speed. While autoregressive Gemma 4 models remain the standard for high-quality production outputs, DiffusionGemma is designed for researchers and developers exploring speed-critical, interactive local workflows such as in-line editing, rapid iteration, and generating non-linear text structures.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-032bae2517cec8a1",
+    "raw_id": "RAW-53d52f271ce257ad",
+    "claim_type": "model_release",
+    "subject": "DiffusionGemma：文本生成速度提升4倍的",
+    "predicate": "model_release",
+    "object": "Unlocking new value for developers",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-53d52f271ce257ad",
+      "start": 1341,
+      "end": 1375
+    },
+    "source_quote": "Unlocking new value for developers",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
     "verification_status": "accepted"
   },
   {
@@ -343,7 +385,7 @@
     "predicate": "funding",
     "object": "$6M to build an email service for AI agents",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 1
     },
     "source_span": {
@@ -357,6 +399,48 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-67ddff5ea400e1de",
+    "raw_id": "RAW-350fa8f5670555d0",
+    "claim_type": "funding",
+    "subject": "AgentMail",
+    "predicate": "funding",
+    "object": "$6M to build an email service for AI agents",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-350fa8f5670555d0",
+      "start": 73,
+      "end": 101
+    },
+    "source_quote": "9:00 AM PDT · March 10, 2026",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a430e9af293bea8e",
+    "raw_id": "RAW-350fa8f5670555d0",
+    "claim_type": "funding",
+    "subject": "AgentMail",
+    "predicate": "funding",
+    "object": "$6M to build an email service for AI agents",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-350fa8f5670555d0",
+      "start": 102,
+      "end": 330
+    },
+    "source_quote": "Just a couple of years ago, AI agents were mostly chatbots that could use basic tools. People were curious , but given concerns around reliability and security , as well as cost, the tech remained in the realm of early adopters.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-a71e7ecd6418ce1c",
     "raw_id": "RAW-350fa8f5670555d0",
     "claim_type": "funding",
@@ -364,8 +448,8 @@
     "predicate": "funding",
     "object": "$6M to build an email service for AI agents",
     "qualifiers": {
-      "event_status": "announced",
-      "sequence": 2
+      "event_status": "completed",
+      "sequence": 4
     },
     "source_span": {
       "raw_id": "RAW-350fa8f5670555d0",
@@ -373,48 +457,6 @@
       "end": 836
     },
     "source_quote": "How things have changed. Coding agents like Claude Code, Codex, and Cursor initially saw the most traction, spurring adoption among programmers around the world, but today we have people using AI agents to do everything from debugging at scale and building marketing campaigns, to managing calendars and scheduling meetings. OpenClaw ‘s blockbuster debut earlier this year only sped things up, opening up access to AI agents by letting users run their own localized and personalized agent round the clock.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-b04e963a27bac56f",
-    "raw_id": "RAW-350fa8f5670555d0",
-    "claim_type": "funding",
-    "subject": "AgentMail",
-    "predicate": "funding",
-    "object": "$6M to build an email service for AI agents",
-    "qualifiers": {
-      "event_status": "announced",
-      "sequence": 3
-    },
-    "source_span": {
-      "raw_id": "RAW-350fa8f5670555d0",
-      "start": 837,
-      "end": 1067
-    },
-    "source_quote": "And if the tech industry is to be believed , AI agents are set to become as numerous as real people on the internet, using software and services, talking and shopping on your behalf, and generally automating a wide swathe of work.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-9338b80779fe1f51",
-    "raw_id": "RAW-350fa8f5670555d0",
-    "claim_type": "funding",
-    "subject": "AgentMail",
-    "predicate": "funding",
-    "object": "$6M to build an email service for AI agents",
-    "qualifiers": {
-      "event_status": "announced",
-      "sequence": 4
-    },
-    "source_span": {
-      "raw_id": "RAW-350fa8f5670555d0",
-      "start": 1068,
-      "end": 1419
-    },
-    "source_quote": "AgentMail , a startup out of San Francisco, sees that future playing out for certain, which is why it has built an email service designed specifically for AI agents. The company provides an API platform that lets you give AI agents their own email inboxes, with support for two-way conversations, parsing, threading, labeling, searching, and replying.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -546,6 +588,48 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-93543a2d9d2fdad0",
+    "raw_id": "RAW-d32e9a9ab72bb29c",
+    "claim_type": "funding",
+    "subject": "Jedify 获 2400 万美元",
+    "predicate": "funding",
+    "object": "，帮助企业为 AI 智能体提供业务上下文",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-d32e9a9ab72bb29c",
+      "start": 94,
+      "end": 121
+    },
+    "source_quote": "6:33 AM PDT · June 10, 2026",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-de92519c3071222f",
+    "raw_id": "RAW-d32e9a9ab72bb29c",
+    "claim_type": "funding",
+    "subject": "Jedify 获 2400 万美元",
+    "predicate": "funding",
+    "object": "，帮助企业为 AI 智能体提供业务上下文",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-d32e9a9ab72bb29c",
+      "start": 122,
+      "end": 614
+    },
+    "source_quote": "AI vendors promote their enterprise products as if they’re turnkey solutions, but the chances are low that AI agents will hit the ground running right away. Unless you put in the effort to train a model on the specifics of your business, it’s unlikely to understand how your company, for example, defines revenue or knows who is allowed to see which file. That’s part of the reason why we’re seeing AI companies deploying engineers to help integrate their AI products into customers’ systems.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-62260e499c34fefe",
     "raw_id": "RAW-b2ad1486dfcf4412",
     "claim_type": "model_release",
@@ -567,7 +651,7 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-5c92ec7ee55a3124",
+    "claim_id": "CL-040f0a847e88c69d",
     "raw_id": "RAW-b2ad1486dfcf4412",
     "claim_type": "model_release",
     "subject": "Decart",
@@ -579,16 +663,16 @@
     },
     "source_span": {
       "raw_id": "RAW-b2ad1486dfcf4412",
-      "start": 990,
-      "end": 1370
+      "start": 366,
+      "end": 743
     },
-    "source_quote": "The startup already has a community of more than 100,000 developers, many of whom are building products on top of its real-time video model Lucy, largely in e-commerce and livestreaming. Oasis 3 is based on that foundation model, and it represents the company’s push into physical AI. Access is priced at $0.02 per second, and enterprise pricing depends on use cases, Decart said.",
+    "source_quote": "The startup is initially targeting autonomous vehicle companies that need to simulate rare driving scenarios at scale, and plans to expand into robotics and other physical AI applications. But the bigger bet is on developers: By offering API access from day one, Decart is trying to build a developer ecosystem around world models much like how OpenAI did with language models.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-e8a5aebe442cb17f",
+    "claim_id": "CL-b837900dd05d8830",
     "raw_id": "RAW-b2ad1486dfcf4412",
     "claim_type": "model_release",
     "subject": "Decart",
@@ -600,16 +684,16 @@
     },
     "source_span": {
       "raw_id": "RAW-b2ad1486dfcf4412",
-      "start": 1680,
-      "end": 1801
+      "start": 744,
+      "end": 989
     },
-    "source_quote": "Decart’s Oasis 3 generates photorealistic driving scenarios that you can interact with in real time Image Credits: Decart",
+    "source_quote": "“It’s going to be the first usable world model that people can actually program on top of,” Dean Leitersdorf, co-founder and CEO of Decart, told TechCrunch. “I think there’s going to be an entire developer community that emerges on top of this.”",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-cc058661912a8dee",
+    "claim_id": "CL-5c92ec7ee55a3124",
     "raw_id": "RAW-b2ad1486dfcf4412",
     "claim_type": "model_release",
     "subject": "Decart",
@@ -621,10 +705,10 @@
     },
     "source_span": {
       "raw_id": "RAW-b2ad1486dfcf4412",
-      "start": 1802,
-      "end": 2275
+      "start": 990,
+      "end": 1370
     },
-    "source_quote": "Oasis 3’s release comes a few weeks after two-year-old Decart raised $300 million, which Leitersdorf says followed “huge demand increases for the models we built” in e-commerce, livestreaming, and physical AI. The round boosted Decart’s valuation to nearly $4 billion, and brought a series of strategic investors such as Toyota, Adobe, and eBay. All of these companies are potential customers, says Leitersdorf. Nvidia, an existing investor, also participated in the round.",
+    "source_quote": "The startup already has a community of more than 100,000 developers, many of whom are building products on top of its real-time video model Lucy, largely in e-commerce and livestreaming. Oasis 3 is based on that foundation model, and it represents the company’s push into physical AI. Access is priced at $0.02 per second, and enterprise pricing depends on use cases, Decart said.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -735,43 +819,127 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-4684bcbaf82265f2",
-    "raw_id": "RAW-4f9982230a297b6e",
+    "claim_id": "CL-802bd4c641c695c0",
+    "raw_id": "RAW-dec436bc28b3b916",
     "claim_type": "funding",
-    "subject": "Apollo 与 Blackstone 为 Anthropic",
+    "subject": "超微计算机寻求70亿美元股权",
     "predicate": "funding",
-    "object": "Apollo Wraps Up $35B Chip Deal for Anthropic",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 1
-    },
-    "source_span": {
-      "raw_id": "RAW-4f9982230a297b6e",
-      "start": 15,
-      "end": 59
-    },
-    "source_quote": "Apollo Wraps Up $35B Chip Deal for Anthropic",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.9,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-8834b1dca327b3ca",
-    "raw_id": "RAW-4f9982230a297b6e",
-    "claim_type": "funding",
-    "subject": "Apollo 与 Blackstone 为 Anthropic",
-    "predicate": "funding",
-    "object": "Bloomberg's Emily Graffeo joins Matt Miller on \"Bloomberg Deals.\" Apollo Global Management and Blackstone have finalized a $35 billion financing package for Anthropic to expand its AI infrastructure, marking the latest mega-deal in the AI race.",
+    "object": "用于AI设备采购",
     "qualifiers": {
       "event_status": "completed",
       "sequence": 2
     },
     "source_span": {
-      "raw_id": "RAW-4f9982230a297b6e",
-      "start": 60,
-      "end": 304
+      "raw_id": "RAW-dec436bc28b3b916",
+      "start": 330,
+      "end": 382
     },
-    "source_quote": "Bloomberg's Emily Graffeo joins Matt Miller on \"Bloomberg Deals.\" Apollo Global Management and Blackstone have finalized a $35 billion financing package for Anthropic to expand its AI infrastructure, marking the latest mega-deal in the AI race.",
+    "source_quote": "Trump Says US Will Resume Attacking Iran 'Very Hard'",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e5211601227bef67",
+    "raw_id": "RAW-dec436bc28b3b916",
+    "claim_type": "funding",
+    "subject": "超微计算机寻求70亿美元股权",
+    "predicate": "funding",
+    "object": "用于AI设备采购",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-dec436bc28b3b916",
+      "start": 398,
+      "end": 452
+    },
+    "source_quote": "Will Billionaires Really Flee a California Wealth Tax?",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-65dfe7a9e21cf457",
+    "raw_id": "RAW-b0ccf10673a482f8",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "因安全顾虑，Anthropic 最强 AI 模型 Claude Fable 5 拒绝回答基础生物问题",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-b0ccf10673a482f8",
+      "start": 0,
+      "end": 88
+    },
+    "source_quote": "IT之家 6 月 11 日消息，Anthropic 昨日推出了 ClaudeFable 5，称其为该公司目前面向大众开放的最强人工智能模型，并着重夸赞了其在生物学等领域的能力。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-2665cddb1fb8782d",
+    "raw_id": "RAW-b0ccf10673a482f8",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "因安全顾虑，Anthropic 最强 AI 模型 Claude Fable 5 拒绝回答基础生物问题",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-b0ccf10673a482f8",
+      "start": 715,
+      "end": 820
+    },
+    "source_quote": "公司发言人帕鲁尔・马赫什瓦里称：“随着首款 Mythos 级模型 ClaudeFable 5 上线，我们意识到，如今 AI 模型完成现实科研任务的能力大幅提升，居心不良者也有可能利用这类模型开展高风险生物研究。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-87428a4d4c2b2daf",
+    "raw_id": "RAW-b0ccf10673a482f8",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "因安全顾虑，Anthropic 最强 AI 模型 Claude Fable 5 拒绝回答基础生物问题",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-b0ccf10673a482f8",
+      "start": 88,
+      "end": 148
+    },
+    "source_quote": "但这款模型却无法解答高中生本应掌握的基础生物问题，而是会将相关提问转接给此前的旗舰模型 Claude Opus 4.8。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-8682265b6de10912",
+    "raw_id": "RAW-b0ccf10673a482f8",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "因安全顾虑，Anthropic 最强 AI 模型 Claude Fable 5 拒绝回答基础生物问题",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-b0ccf10673a482f8",
+      "start": 149,
+      "end": 194
+    },
+    "source_quote": "这并非因为 Fable 5 不知道答案，而是 Anthropic 从设计层面主动做了限制。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -819,6 +987,90 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-88cda49d755b5754",
+    "raw_id": "RAW-e89e4b2a36b0e3d6",
+    "claim_type": "model_release",
+    "subject": "DiffusionGemma",
+    "predicate": "model_release",
+    "object": "，NVIDIA 免费托管",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-e89e4b2a36b0e3d6",
+      "start": 623,
+      "end": 849
+    },
+    "source_quote": "NVIDIA are currently hosting the model for free on their NIM cloud API. I used that API to generate this pelican , which took 4.4s (according to time uv run generate.py ) to return 2,409 tokens - so at least 500 tokens/second.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-ed43fd49cc2ef51d",
+    "raw_id": "RAW-882f3dbe0b99f635",
+    "claim_type": "deployment",
+    "subject": "Anthropic CEO 称政府应有权阻止高风险新 AI 模型",
+    "predicate": "deployment",
+    "object": "Anthropic PBC Chief Executive Officer Dario Amodei said the government should have the power to block artificial intelligence developers from deploying new AI models if they present certain risks.",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-882f3dbe0b99f635",
+      "start": 531,
+      "end": 727
+    },
+    "source_quote": "Anthropic PBC Chief Executive Officer Dario Amodei said the government should have the power to block artificial intelligence developers from deploying new AI models if they present certain risks.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-eabb33234f876f50",
+    "raw_id": "RAW-882f3dbe0b99f635",
+    "claim_type": "deployment",
+    "subject": "Anthropic CEO 称政府应有权阻止高风险新 AI 模型",
+    "predicate": "deployment",
+    "object": "In a lengthy essay on Wednesday, Amodei argued that AI models should undergo mandatory testing by third parties to assess the risk they pose across several categories, including enabling cybersecurity threats and biological weapons. If the AI is deemed to “present unacceptable risks,” he wrote, “the government should have the power to block or deter deployment.”",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-882f3dbe0b99f635",
+      "start": 728,
+      "end": 1092
+    },
+    "source_quote": "In a lengthy essay on Wednesday, Amodei argued that AI models should undergo mandatory testing by third parties to assess the risk they pose across several categories, including enabling cybersecurity threats and biological weapons. If the AI is deemed to “present unacceptable risks,” he wrote, “the government should have the power to block or deter deployment.”",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-bce7845f6d1f7096",
+    "raw_id": "RAW-882f3dbe0b99f635",
+    "claim_type": "deployment",
+    "subject": "Anthropic CEO 称政府应有权阻止高风险新 AI 模型",
+    "predicate": "deployment",
+    "object": "Home BTV+ Market Data Opinion Audio Originals Magazine Events",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-882f3dbe0b99f635",
+      "start": 1093,
+      "end": 1154
+    },
+    "source_quote": "Home BTV+ Market Data Opinion Audio Originals Magazine Events",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-24dc828bef8e02fa",
     "raw_id": "RAW-882f3dbe0b99f635",
     "claim_type": "deployment",
@@ -827,7 +1079,7 @@
     "object": "Anthropic CEO Says Government Should Be Able to Block New Models - Bloomberg",
     "qualifiers": {
       "event_status": "completed",
-      "sequence": 1
+      "sequence": 4
     },
     "source_span": {
       "raw_id": "RAW-882f3dbe0b99f635",
@@ -836,7 +1088,7 @@
     },
     "source_quote": "Anthropic CEO Says Government Should Be Able to Block New Models - Bloomberg",
     "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.9,
+    "extraction_confidence": 0.82,
     "verification_status": "accepted"
   },
   {
@@ -858,6 +1110,48 @@
     "source_quote": "Nela Richardson, Chief Economist at ADP and a Bloomberg contributor, says employers need to decide whether AI is going to be a tool for automating roles away or augmenting tasks to create new value. She discusses the new Canaries Dashboard, launched by ADP and the Stanford Digital Economy Lab, to provide real-time indications of how AI is reshaping different occupations based on labor market data. Richardson joins Caroline Hyde and Ed Ludlow on “Bloomberg Tech.”",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-c19b9272fc0b08ab",
+    "raw_id": "RAW-c015eb13f556ffbe",
+    "claim_type": "product_release",
+    "subject": "ADP与斯坦福联合",
+    "predicate": "product_release",
+    "object": "Canaries Dashboard，实时追踪AI对职业重塑的影响",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-c015eb13f556ffbe",
+      "start": 546,
+      "end": 598
+    },
+    "source_quote": "Trump Says US Will Resume Attacking Iran 'Very Hard'",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b836e87756cd4678",
+    "raw_id": "RAW-c015eb13f556ffbe",
+    "claim_type": "product_release",
+    "subject": "ADP与斯坦福联合",
+    "predicate": "product_release",
+    "object": "Canaries Dashboard，实时追踪AI对职业重塑的影响",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-c015eb13f556ffbe",
+      "start": 614,
+      "end": 668
+    },
+    "source_quote": "Will Billionaires Really Flee a California Wealth Tax?",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
     "verification_status": "accepted"
   },
   {
@@ -1115,10 +1409,10 @@
   {
     "claim_id": "CL-82f9a33c6e075b9f",
     "raw_id": "RAW-2c2dbf8a5edbddc4",
-    "claim_type": "deployment",
+    "claim_type": "product_release",
     "subject": "阿里千问",
-    "predicate": "deployment",
-    "object": "国内首个全周期高考志愿填报Agent，免费提供咨询服务",
+    "predicate": "product_release",
+    "object": "阿里千问上线“国内首个全周期高考志愿填报 Agent”，提供免费咨询服务 - IT之家",
     "qualifiers": {
       "event_status": "completed",
       "sequence": 1
@@ -1136,10 +1430,10 @@
   {
     "claim_id": "CL-9139659758440553",
     "raw_id": "RAW-2c2dbf8a5edbddc4",
-    "claim_type": "deployment",
+    "claim_type": "product_release",
     "subject": "阿里千问",
-    "predicate": "deployment",
-    "object": "国内首个全周期高考志愿填报Agent，免费提供咨询服务",
+    "predicate": "product_release",
+    "object": "阿里千问上线“国内首个全周期高考志愿填报 Agent”，提供免费咨询服务",
     "qualifiers": {
       "event_status": "completed",
       "sequence": 2
@@ -1157,10 +1451,10 @@
   {
     "claim_id": "CL-6d08d5517a55c877",
     "raw_id": "RAW-2c2dbf8a5edbddc4",
-    "claim_type": "deployment",
+    "claim_type": "product_release",
     "subject": "阿里千问",
-    "predicate": "deployment",
-    "object": "国内首个全周期高考志愿填报Agent，免费提供咨询服务",
+    "predicate": "product_release",
+    "object": "IT之家 6 月 10 日消息，阿里巴巴今日宣布， 千问上线国内首个全周期高考志愿填报 Agent ，为全国考生免费提供志愿填报和咨询服务。",
     "qualifiers": {
       "event_status": "completed",
       "sequence": 3
@@ -1218,7 +1512,7 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-fda9da9b3aa8feed",
+    "claim_id": "CL-3cf8b2b77dd0c405",
     "raw_id": "RAW-a239ab05b4f1b8a4",
     "claim_type": "model_release",
     "subject": "摩尔线程",
@@ -1227,6 +1521,27 @@
     "qualifiers": {
       "event_status": "announced",
       "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-a239ab05b4f1b8a4",
+      "start": 158,
+      "end": 272
+    },
+    "source_quote": "IT之家获悉，该模型重点支持从 PyTorch 标准算子自动生成高性能 CUDA / MUSA 原生 Kernel 代码，旨在 降低开发者手写底层 GPU 算子的门槛 ，提升 GPU 高性能计算场景下的代码生成、验证和优化效率。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-fda9da9b3aa8feed",
+    "raw_id": "RAW-a239ab05b4f1b8a4",
+    "claim_type": "model_release",
+    "subject": "摩尔线程",
+    "predicate": "model_release",
+    "object": "，9B/27B 参数基于国产 GPU 全链路训练",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
     },
     "source_span": {
       "raw_id": "RAW-a239ab05b4f1b8a4",
@@ -1239,22 +1554,64 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-ab1487c9cc1dead8",
-    "raw_id": "RAW-a239ab05b4f1b8a4",
-    "claim_type": "model_release",
-    "subject": "摩尔线程",
-    "predicate": "model_release",
-    "object": "，9B/27B 参数基于国产 GPU 全链路训练",
+    "claim_id": "CL-a6aa633507a7ef6c",
+    "raw_id": "RAW-d4b03ff256fdaaad",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "小米 miclaw 率先实现 AI 上岛，澎湃 OS 4 被曝有新交互",
     "qualifiers": {
       "event_status": "announced",
-      "sequence": 4
+      "sequence": 1
     },
     "source_span": {
-      "raw_id": "RAW-a239ab05b4f1b8a4",
-      "start": 450,
-      "end": 513
+      "raw_id": "RAW-d4b03ff256fdaaad",
+      "start": 109,
+      "end": 225
     },
-    "source_quote": "MusaCoder 模型： https://huggingface.co/MooreThreads/MusaCoder-27B",
+    "source_quote": "据IT之家今日早些时候报道，博主 @数码闲聊站 发文，透露某国产迭代 OS 将实现“AI 语音助手上岛”，其同时在评论区表示已看到具体系统， 相应功能实际上在苹果 iOS 27 发布之前就开发完成 ，“只能说好的创意总是不谋而合”。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-526c00004d7bf97d",
+    "raw_id": "RAW-d4b03ff256fdaaad",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "小米 miclaw 率先实现 AI 上岛，澎湃 OS 4 被曝有新交互",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-d4b03ff256fdaaad",
+      "start": 226,
+      "end": 326
+    },
+    "source_quote": "作为比较，苹果在 WWDC26 中带来了 Siri AI，参考官网演示可获悉，Siri 在灵动岛中会弹出很大的气泡，可以执行回答问题、设置提醒、播放音乐、搜索照片、屏幕感知、设定导航等一系列助理操作。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-ff59585b521edfd0",
+    "raw_id": "RAW-d4b03ff256fdaaad",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "小米 miclaw 率先实现 AI 上岛，澎湃 OS 4 被曝有新交互",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-d4b03ff256fdaaad",
+      "start": 332,
+      "end": 446
+    },
+    "source_quote": "Xiaomi miclaw 是基于小米 MiMo 大模型构建的 AI 交互测试产品，于 2026 年 3 月 6 日首次开启面向科技发烧友和极客用户的小范围封闭测试，其核心目标是验证大模型在小米“人车家全生态”系统中的执行能力。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"

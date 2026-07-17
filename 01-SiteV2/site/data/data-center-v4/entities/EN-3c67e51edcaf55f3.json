@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-17T18:20:10.588Z",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 727,
-    "quarantinedEventCount": 50
+    "eventCount": 818,
+    "quarantinedEventCount": 58
   },
   "entity": {
     "id": "EN-3c67e51edcaf55f3",
@@ -22,20 +22,18 @@
     ],
     "eventIds": [],
     "viewpointIds": [
-      "2077414312180932668",
-      "2077413491586253025"
+      "2077885624607228018"
     ],
     "classificationRefs": [],
     "relatedEntityIds": [],
-    "firstSeen": "2026-07-15",
-    "lastSeen": "2026-07-15",
+    "firstSeen": "2026-07-17",
+    "lastSeen": "2026-07-17",
     "handle": "realmadhuguru",
     "role": "Sr Director, AI at Meta; Prev: Google - Gemini, Veo, Nano Banana.",
     "organization": "",
     "viewpointTags": [
-      "产品与创业",
-      "产品策略观点",
-      "AI 应用与平台"
+      "AI 基础设施",
+      "模型基础设施观点"
     ],
     "relationIds": [],
     "groupedEventIds": {
@@ -50,16 +48,10 @@
     "timeline": [],
     "viewpoints": [
       {
-        "id": "2077414312180932668",
-        "date": "2026-07-15",
-        "title": "顺便说一句，我用AI来完善想法，不时地，一些标准的AI主义渗透到我的写作中。从那时起，我已经开始有意识地使用AI，主要是在头脑风暴阶段，并保持最终的写作人性化。",
-        "sourceUrl": "https://x.com/realmadhuguru/status/2077414312180932668"
-      },
-      {
-        "id": "2077413491586253025",
-        "date": "2026-07-15",
-        "title": "当你阅读某些东西并意识到它是AI写的时，我们需要一个术语来描述这种感觉。这是一种原始的感觉，尽管这种现象本身是新的。首先，大脑会退缩，然后是厌恶和精神恶心的结合。我提供： -语义恶心-不可思议的散文谷-合成不寒而栗",
-        "sourceUrl": "https://x.com/realmadhuguru/status/2077413491586253025"
+        "id": "2077885624607228018",
+        "date": "2026-07-17",
+        "title": "Kimi、GLM 这类开放权重模型，将促使企业 AI 技术栈全面重塑。若你经营一家企业，必须最大化模型选择的灵活性。以下是三项应立即采取的行动： 1. **评估体系** - 构建能精准反映业务场景的严格评估机制 （a）**回归评估** - 确保基础功能始终以高可靠性运行 （b）**进阶/攀登式评估** - 针对当前价位下最优模型仍难解决的复杂用例，通过提示工程、上下文管理及其他技术手段弥补短板，或等待更优模型出现 这些评估必须能快速便捷地执行。评估迭代速度本身就是竞争优势。 2. **模型路由** - 模型选择本质是在质量、成本、延迟之间为业务场景寻找平衡点。完善的评估体系能让你明确不同场景该调用哪个模型。这最好由企业自主构建，因为没人比你更懂自己的业务和用户。市面上虽有现成路由方案，但我尚未见到值得推荐的。 3. **模型无关型架构** - 系统绝不应感知 API 调用背后的具体模型。这意味着你的架构需统一不同模型的提示结构、上下文管理、工具定义和输出解析，确保评估通过后即可无缝切换。",
+        "sourceUrl": "https://x.com/realmadhuguru/status/2077885624607228018"
       }
     ]
   },

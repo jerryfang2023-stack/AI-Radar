@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-043
 title: "Amazon Mechanical Turk 将于 2026 年 7 月 30 日起停止接受新客户"
 title_zh: "Amazon Mechanical Turk 将于 2026 年 7 月 30 日起停止接受新客户"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://techcrunch.com/2026/07/05/amazon-will-stop-accepting-new-customers-for-mechanical-turk"
 canonical_url: "https://techcrunch.com/2026/07/05/amazon-will-stop-accepting-new-customers-for-mechanical-turk"
 source_name: "TechCrunch：AI（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-06T02:21:26.972Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Amazon Mechanical Turk 将于 2026 年 7 月 30 日起停止接受新客户

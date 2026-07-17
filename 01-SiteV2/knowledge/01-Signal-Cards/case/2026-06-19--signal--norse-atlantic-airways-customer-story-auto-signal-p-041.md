@@ -2,7 +2,7 @@
 id: SIG-20260619-A16
 type: signal_card
 signal_type: case
-title: "Norse Atlantic Airways customer story"
+title: "Norse Atlantic Airways客户案例"
 date: 2026-06-19
 status: published
 source_title: "Norse Atlantic Airways customer story"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Norse Atlantic Airways customer story"
 
 frontend:
-  displayTitle: "Norse Atlantic Airways customer story"
+  displayTitle: "Norse Atlantic Airways客户案例"
   sourceLinks:
     - "https://delight.ai/customers/norse-atlantic-airways"
 ---
 
-# Norse Atlantic Airways customer story
+# Norse Atlantic Airways客户案例
 
 ## 新闻事实
 

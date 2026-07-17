@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"Claude Fable 5 在 Artificial Analysis I
 theme: outside-core-exploration
 keyword_group: outside-core-exploration
 copyright_note: local research archive only
+title_zh: "Anthropic Claude Fable 5：价格翻倍，性能仅提升5.7%"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Anthropic Claude Fable 5：价格翻倍，性能仅提升5.7%

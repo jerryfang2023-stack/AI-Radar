@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Compri secures €3.2M to build AI-powe
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only
+title_zh: "Compri获320万欧元融资，打造AI驱动的采购团队 - Tech.eu"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Compri secures €3.2M to build AI-powered procurement teams - Tech.eu

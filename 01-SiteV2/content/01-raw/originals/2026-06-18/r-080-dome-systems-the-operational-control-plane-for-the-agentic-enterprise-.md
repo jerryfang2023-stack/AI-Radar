@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"## Bessemer Venture Partners co-leads D
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Dome Systems：面向智能体企业的运营控制平面——Bessemer Venture Partners"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Dome Systems: The operational control plane for the agentic enterprise - Bessemer Venture Partners

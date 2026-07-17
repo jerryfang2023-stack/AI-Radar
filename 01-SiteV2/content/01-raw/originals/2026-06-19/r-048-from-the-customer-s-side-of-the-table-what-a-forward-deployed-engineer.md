@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"FDE engagements at ellamind tend to
 theme: enterprise-ai-implementation-signal
 keyword_group: enterprise-ai-implementation-signal
 copyright_note: local research archive only
+title_zh: "从客户角度看：前部署工程师的实际工作内容 | ellamind 博客"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # From the Customer's Side of the Table: What a Forward Deployed Engineer Actually Does | ellamind Blog

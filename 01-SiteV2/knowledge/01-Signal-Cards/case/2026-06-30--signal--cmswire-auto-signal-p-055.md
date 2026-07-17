@@ -2,7 +2,7 @@
 id: SIG-20260630-A05
 type: signal_card
 signal_type: case
-title: "Zendesk 在 Relate 2026 发布自主服务劳动力"
+title: "Zendesk在Relate 2026上推出自主服务团队"
 date: 2026-06-30
 status: published
 source_title: "Zendesk Unveils Autonomous Service Workforce at Relate 2026"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Cmswire"
 
 frontend:
-  displayTitle: "Zendesk 在 Relate 2026 发布自主服务劳动力"
+  displayTitle: "Zendesk在Relate 2026上推出自主服务团队"
   sourceLinks:
     - "https://www.cmswire.com/customer-experience/zendesk-unveils-autonomous-ai-workforce-at-relate-2026/"
 ---
 
-# Zendesk 在 Relate 2026 发布自主服务劳动力
+# Zendesk在Relate 2026上推出自主服务团队
 
 ## 新闻事实
 

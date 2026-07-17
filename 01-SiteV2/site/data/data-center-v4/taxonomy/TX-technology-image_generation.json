@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-17T18:20:10.588Z",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 727,
-    "quarantinedEventCount": 50
+    "eventCount": 818,
+    "quarantinedEventCount": 58
   },
   "node": {
     "id": "TX-technology-image_generation",
@@ -18,14 +18,23 @@
     "valueId": "image_generation",
     "eventIds": [
       "EV-dce5de62b2e4b752",
-      "EV-8f6cf12525556d0e"
+      "EV-41baa43cf05d4288",
+      "EV-568d2aeab5234e48"
     ],
     "entityIds": [
-      "EN-ea3bd73e2b506e00"
+      "EN-ea3bd73e2b506e00",
+      "EN-96eebba49dbbf422",
+      "EN-534e99d81da1c54d",
+      "EN-de1afc61dd4d2cea",
+      "EN-2b6e51bec93e86c1",
+      "EN-8d4321d936320802",
+      "EN-3db1f560db626918",
+      "EN-d56aa2f9908f566a",
+      "EN-4d09c69c19f5f67b"
     ],
     "fdeIds": [],
     "hardwareIds": [],
-    "firstSeen": "2026-07-09",
+    "firstSeen": "2026-06-11",
     "lastSeen": "2026-07-13"
   },
   "events": [
@@ -81,10 +90,12 @@
         }
       ],
       "entityIds": [
-        "EN-ea3bd73e2b506e00"
+        "EN-ea3bd73e2b506e00",
+        "EN-96eebba49dbbf422"
       ],
       "entityNames": [
-        "Meta"
+        "Meta",
+        "Intel"
       ],
       "productName": "",
       "products": [],
@@ -92,7 +103,7 @@
       "publisher": "TechCrunch AI"
     },
     {
-      "id": "EV-8f6cf12525556d0e",
+      "id": "EV-41baa43cf05d4288",
       "dataDate": "2026-07-09",
       "date": "2026-07-09",
       "updatedDate": "2026-07-09",
@@ -102,14 +113,16 @@
       "status": "completed",
       "statusLabel": "已完成",
       "publicationStatus": "verified",
-      "title": "Meta 发布 a new AI generator",
+      "title": "Meta推出新AI图像生成器Muse Image，用户因照片使用问题表示反对",
       "originalTitle": "Meta just launched a new AI generator, Muse Image, and users are already pushing back over use of their photos",
       "subject": "Meta just",
       "action": "launched",
       "object": "a new AI generator, Muse Image, and users are already pushing back over use of their photos",
       "metrics": [],
       "locations": [],
-      "missingFields": [],
+      "missingFields": [
+        "event_time"
+      ],
       "conflicts": [],
       "tags": [
         {
@@ -162,15 +175,192 @@
         }
       ],
       "entityIds": [
-        "EN-ea3bd73e2b506e00"
+        "EN-534e99d81da1c54d",
+        "EN-ea3bd73e2b506e00",
+        "EN-96eebba49dbbf422",
+        "EN-de1afc61dd4d2cea"
       ],
       "entityNames": [
-        "Meta"
+        "Meta just",
+        "Meta",
+        "Intel",
+        "AI generator"
       ],
-      "productName": "",
-      "products": [],
+      "productName": "AI generator",
+      "products": [
+        {
+          "name": "AI generator",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Meta"
+          ]
+        }
+      ],
       "sourceUrl": "https://techcrunch.com/2026/07/07/meta-rolls-out-muse-a-new-ai-image-generator",
       "publisher": "TechCrunch AI"
+    },
+    {
+      "id": "EV-568d2aeab5234e48",
+      "dataDate": "2026-06-11",
+      "date": "2026-06-11",
+      "updatedDate": "2026-06-11",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Google DeepMind 发布 DiffusionGemma，本地 AI 推理速度提升 4 倍",
+      "originalTitle": "",
+      "subject": "Google DeepMind",
+      "action": "发布",
+      "object": "DiffusionGemma，本地 AI 推理速度提升 4 倍",
+      "metrics": [
+        "26 billion",
+        "3.8 billion",
+        "18GB"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "image_generation",
+          "name": "图像生成"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "mixture_of_experts",
+          "name": "混合专家模型"
+        }
+      ],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          },
+          {
+            "dimensionId": "product_form",
+            "id": "chip_accelerator",
+            "dimensionName": "产品形态",
+            "name": "芯片与加速器"
+          }
+        ],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "media_entertainment",
+            "dimensionName": "行业",
+            "name": "媒体与娱乐"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "image_generation",
+          "name": "图像生成"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "mixture_of_experts",
+          "name": "混合专家模型"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "media_entertainment",
+          "dimensionName": "行业",
+          "name": "媒体与娱乐"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "chip_accelerator",
+          "dimensionName": "产品形态",
+          "name": "芯片与加速器"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "chip_accelerator",
+          "dimensionName": "产品形态",
+          "name": "芯片与加速器"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "image_generation",
+          "name": "图像生成"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "mixture_of_experts",
+          "name": "混合专家模型"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "media_entertainment",
+          "dimensionName": "行业",
+          "name": "媒体与娱乐"
+        }
+      ],
+      "entityIds": [
+        "EN-2b6e51bec93e86c1",
+        "EN-8d4321d936320802",
+        "EN-3db1f560db626918",
+        "EN-d56aa2f9908f566a",
+        "EN-4d09c69c19f5f67b"
+      ],
+      "entityNames": [
+        "Google DeepMind",
+        "NVIDIA",
+        "Canva",
+        "DiffusionGemma",
+        "DeepMind"
+      ],
+      "productName": "DiffusionGemma",
+      "products": [
+        {
+          "name": "DiffusionGemma",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Google DeepMind"
+          ]
+        },
+        {
+          "name": "DeepMind",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Google DeepMind"
+          ]
+        }
+      ],
+      "sourceUrl": "https://arstechnica.com/google/2026/06/googles-latest-diffusiongemma-open-ai-model-comes-with-a-4x-speed-boost",
+      "publisher": "Ars Technica：AI（RSS）"
     }
   ],
   "entities": [
@@ -186,40 +376,378 @@
       ],
       "eventIds": [
         "EV-02882e6f5e1902c6",
+        "EV-5df885dbd24b6d00",
         "EV-427081ec574b43bb",
-        "EV-7f77e6a2d1698307",
-        "EV-b39d759a11086d41",
-        "EV-968709fe29b77eba",
-        "EV-724fc985c22215f3",
-        "EV-f64345af2affb07d",
-        "EV-1f842e1dff69bb87",
-        "EV-e58bd372c139073c",
+        "EV-e41fc65eb014893f",
+        "EV-974a6b7d0e0efef2",
+        "EV-917a390341b9fce6",
+        "EV-9efcf6480f6c6f48",
+        "EV-cf76f090a1a20a36",
+        "EV-fd7e79d3cb9cdb69",
+        "EV-43301de739fe560e",
         "EV-cf176636839e45be",
         "EV-9496f90f3e808992",
         "EV-dce5de62b2e4b752",
-        "EV-ebe02c213368afae",
+        "EV-ae736eb124d7163a",
         "EV-e42e55d1e11a2ba2",
-        "EV-f9eebe4e3b9b667c",
-        "EV-8f6cf12525556d0e",
+        "EV-41baa43cf05d4288",
         "EV-40390136762c64d3",
         "EV-07a5533c18e5a74e",
-        "EV-4a8dce3c9fec1bd3",
-        "EV-04873bbc8be8e70d",
-        "EV-4c0e7025692ab98c",
+        "EV-56b9643b245a5ff4",
+        "EV-0edb0a592ca1fd67",
+        "EV-20ffa968bcbc4729",
+        "EV-7e52d691a0553667",
         "EV-f34eec5df7f5bcb7",
-        "EV-d8f0f89fed45ae5b",
-        "EV-b78311001509be2c",
-        "EV-a4cd74ae97317e4e",
-        "EV-41e534c846124691",
-        "EV-7808c274ce0aa0bf",
-        "EV-c98d4ee7764d51b2",
-        "EV-01e414a25347cfd9",
+        "EV-c996e56f7f4bdc49",
+        "EV-b60df35d168fe6b7",
+        "EV-c846e768dad05441",
+        "EV-cea99e5d7f93d56a",
+        "EV-29f130674dbbb59e",
+        "EV-a39ca82d354c7197",
+        "EV-657837763764c869",
         "EV-ef823877347ff40f",
+        "EV-04cf95633b564f9a",
         "EV-02b07069713d9a1c",
         "EV-322796d9761a0824",
         "EV-2d56dec8dfeb2b56",
-        "EV-2ca9d0a3ca53c3bf",
         "EV-8fcecabca2e92b40"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
+        "TX-industry-healthcare_life_sciences",
+        "TX-industry-media_entertainment",
+        "TX-technology-multimodal",
+        "TX-technology-guardrails_safety",
+        "TX-technology-tool_use",
+        "TX-technology-reasoning",
+        "TX-technology-image_generation",
+        "TX-technology-computer_use"
+      ],
+      "relatedEntityIds": [
+        "EN-e3863f813fe47240",
+        "EN-de1afc61dd4d2cea",
+        "EN-d85ad5e8ff8e2889",
+        "EN-a2fa009495c3bb3a",
+        "EN-77fe4e790d5bc756",
+        "EN-2ba325ce6f8e3dc9",
+        "EN-557203e8cc173124",
+        "EN-5fa6f727c9e3afe0",
+        "EN-e71558a14e7ed6ab"
+      ],
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "EN-96eebba49dbbf422",
+      "name": "Intel",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-4eaf3aabecae6016",
+        "EV-2dff32c1b6f813e4",
+        "EV-305ec93673f4f12e",
+        "EV-640c5ea9f4fa2780",
+        "EV-6e516b6e68def9cf",
+        "EV-a8dc5c859946f336",
+        "EV-d9cc588fb41a7e67",
+        "EV-48075ca70a5458ec",
+        "EV-7b1c734882fa1ea6",
+        "EV-b3c7c4bff17063d8",
+        "EV-2bb63a3015195f9b",
+        "EV-d4e44892226be468",
+        "EV-921c843ad32c993c",
+        "EV-2bea8d8046a9b325",
+        "EV-5f5f252c6a826599",
+        "EV-e7dcecaed5a0ee5b",
+        "EV-232ab5bcbaf6552d",
+        "EV-14a666fc27d73a80",
+        "EV-9de19f01ac4771fa",
+        "EV-39717cdbada984d7",
+        "EV-dc442b91a69fcc5a",
+        "EV-02548003157849bb",
+        "EV-c0d19b8641a7a36c",
+        "EV-ee0662b75588987e",
+        "EV-e941c32639167c23",
+        "EV-6ae3594aadfcd3d8",
+        "EV-bc4ac955cd26b969",
+        "EV-88f4ee8cd57bdf42",
+        "EV-ef7346378fcf9746",
+        "EV-86489eda802ffc19",
+        "EV-ebe9ed3158df619b",
+        "EV-3b1613cedea7dad4",
+        "EV-59f4561c5243eb98",
+        "EV-c4303801ea8c54dc",
+        "EV-8b0f056571d68269",
+        "EV-b4eb99a878be9bb2",
+        "EV-cfb7c4b4b765f53b",
+        "EV-4dd25589d834060d",
+        "EV-6617850e0b014051",
+        "EV-c81cb21337a9bb98",
+        "EV-36a9e4e908249381",
+        "EV-181b425d2a600cad",
+        "EV-2c87c8ea47cbd1b6",
+        "EV-bb9ba11acf104db1",
+        "EV-2fd730d0ad452334",
+        "EV-b95539d17772a4ce",
+        "EV-f63462e34ea40699",
+        "EV-26183a56cf9ed63c",
+        "EV-97747aee0cafd9f3",
+        "EV-4faa2bcf2e42e60c",
+        "EV-45be473baf6dfa4c",
+        "EV-c2800c1c5a3f568f",
+        "EV-025778b83c1b2ca9",
+        "EV-dce5de62b2e4b752",
+        "EV-57565fc2e7502c59",
+        "EV-e42e55d1e11a2ba2",
+        "EV-41baa43cf05d4288",
+        "EV-6af1e74358025628",
+        "EV-3847d883688587ba",
+        "EV-3a7128e2d7ff149e",
+        "EV-40390136762c64d3",
+        "EV-53f881da31630a04",
+        "EV-b84035029a63e52e",
+        "EV-0edb0a592ca1fd67",
+        "EV-578a9db1fe952d0a",
+        "EV-a70d5cf3ee6d6d64",
+        "EV-f784003febc1d9eb",
+        "EV-7e52d691a0553667",
+        "EV-1e7c76dae985100f",
+        "EV-644337db309a1c82",
+        "EV-9ae9aa86e51e64a2",
+        "EV-be19904753c9c486",
+        "EV-832fa2db95cfea6e",
+        "EV-e28e134345ea5f99",
+        "EV-4e55361d8324dd49",
+        "EV-97a8d86baa7fffc4",
+        "EV-c5b8faec223a4caf",
+        "EV-9eb3693cc65fbca9",
+        "EV-5493c61bcbe58aa2",
+        "EV-95a393fd0183b5f3",
+        "EV-0cb98302768c2e0a",
+        "EV-6ce6b9c9780b97d9",
+        "EV-dd62847548bb6ae3",
+        "EV-34929bdd016dc8d6",
+        "EV-067f57f6e6ffa6ce",
+        "EV-02b07069713d9a1c",
+        "EV-8cb2374f76202ecc",
+        "EV-946569cccbd9222f",
+        "EV-edb1ddb3a091ada4",
+        "EV-9705a8de3c2e9653"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
+        "TX-technology-code_generation",
+        "TX-use_case-customer_service",
+        "TX-industry-healthcare_life_sciences",
+        "TX-use_case-enterprise_operations",
+        "TX-technology-mixture_of_experts",
+        "TX-industry-financial_services",
+        "TX-use_case-cybersecurity",
+        "TX-use_case-data_analysis",
+        "TX-industry-retail_ecommerce",
+        "TX-technology-on_device",
+        "TX-industry-professional_services",
+        "TX-industry-technology",
+        "TX-technology-embodied_ai",
+        "TX-technology-open_weights",
+        "TX-industry-telecommunications",
+        "TX-industry-media_entertainment",
+        "TX-use_case-robotics_automation",
+        "TX-technology-multimodal",
+        "TX-technology-tool_use",
+        "TX-technology-reasoning",
+        "TX-industry-government_public_sector",
+        "TX-technology-fine_tuning",
+        "TX-technology-image_generation",
+        "TX-technology-computer_use"
+      ],
+      "relatedEntityIds": [
+        "EN-bbdefa2950f49882",
+        "EN-c70eca6b0f88f44d"
+      ],
+      "firstSeen": "2025-03-18",
+      "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "EN-534e99d81da1c54d",
+      "name": "Meta just",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-41baa43cf05d4288"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-image_generation"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-09",
+      "lastSeen": "2026-07-09"
+    },
+    {
+      "id": "EN-de1afc61dd4d2cea",
+      "name": "AI generator",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-41baa43cf05d4288"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-image_generation"
+      ],
+      "relatedEntityIds": [
+        "EN-ea3bd73e2b506e00"
+      ],
+      "firstSeen": "2026-07-09",
+      "lastSeen": "2026-07-09"
+    },
+    {
+      "id": "EN-2b6e51bec93e86c1",
+      "name": "Google DeepMind",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "谷歌 DeepMind"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-6f092cfc7a064d64",
+        "EV-d4e44892226be468",
+        "EV-1ac32035d5e425e1",
+        "EV-67ef7accd26a07a0",
+        "EV-a7e1ecd212474e00",
+        "EV-d961d3ad02f6ae14",
+        "EV-7c6a9f4ee4829976",
+        "EV-93c6ccf23cc422cb",
+        "EV-5babb43f4b4d302f",
+        "EV-8eed6489ab514823",
+        "EV-3ef3e18df61a00d8",
+        "EV-568d2aeab5234e48",
+        "EV-f68e00bb9fd49fac",
+        "EV-3e9a0d1be6de5096",
+        "EV-e96aba142e46eba1",
+        "EV-68edd592c36dccd3",
+        "EV-d49da50484ba781f"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-vision_language",
+        "TX-technology-code_generation",
+        "TX-use_case-software_development",
+        "TX-technology-mixture_of_experts",
+        "TX-technology-retrieval_augmented_generation",
+        "TX-use_case-research_science",
+        "TX-industry-media_entertainment",
+        "TX-technology-multimodal",
+        "TX-technology-video_generation",
+        "TX-technology-image_generation",
+        "TX-technology-speech_audio"
+      ],
+      "relatedEntityIds": [
+        "EN-0e008e2c06144ec8",
+        "EN-7ed9c9e7c260ed06",
+        "EN-01f1074bb52ff605",
+        "EN-4d09c69c19f5f67b",
+        "EN-d56aa2f9908f566a",
+        "EN-085598c00f2aaccf",
+        "EN-a3c3b987b09fc1bb"
+      ],
+      "firstSeen": "2026-06-02",
+      "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "EN-8d4321d936320802",
+      "name": "NVIDIA",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-4eaf3aabecae6016",
+        "EV-87432dbb99cd6033",
+        "EV-6e516b6e68def9cf",
+        "EV-e41fc65eb014893f",
+        "EV-040fc355bc12a750",
+        "EV-80e54c9a390da293",
+        "EV-4118202ed0f91895",
+        "EV-236cbc2d64f0c455",
+        "EV-0e84a2f49d765ce3",
+        "EV-cafe435ddd007821",
+        "EV-36d484148fbd3424",
+        "EV-47a16db069ed320e",
+        "EV-cf76f090a1a20a36",
+        "EV-7263caa45bbf168e",
+        "EV-234ad54940674bf6",
+        "EV-5b16886442234f81",
+        "EV-ef6464cf7f764835",
+        "EV-b95539d17772a4ce",
+        "EV-f63462e34ea40699",
+        "EV-4faa2bcf2e42e60c",
+        "EV-9ee3c0ec243b6129",
+        "EV-58c1cc3749294649",
+        "EV-6b51b1b6fe22c540",
+        "EV-c2800c1c5a3f568f",
+        "EV-1ff169120ed385f6",
+        "EV-47d14d0aa4d4414e",
+        "EV-f7b60c0c63403f8c",
+        "EV-6139380f3362803b",
+        "EV-96c8ce4ee89adb84",
+        "EV-53f881da31630a04",
+        "EV-6a2f3e9a22edff64",
+        "EV-f784003febc1d9eb",
+        "EV-587c18cb1837c74f",
+        "EV-bd66e5b45a6a577e",
+        "EV-53564b1f0fd2214b",
+        "EV-7fb25ff3d853c314",
+        "EV-8a91e14f37d32b4d",
+        "EV-13f0b515194f3245",
+        "EV-5d50eb202b478bd4",
+        "EV-e2db9c4e7c16ae7a",
+        "EV-69fbe85ca4ac81cd",
+        "EV-b7ba9acba80a852e",
+        "EV-4bb5b24400e49ea4",
+        "EV-568d2aeab5234e48",
+        "EV-b986a633cca27df9",
+        "EV-2258329f33d413cf",
+        "EV-4bf0e4043c3562f2",
+        "EV-309ea4fc27a66485",
+        "EV-fa1b1efd77f36d56",
+        "EV-4026c95d4c01b96e",
+        "EV-631197767a45d34c",
+        "EV-67f32771d69084d6",
+        "EV-d2ac9700c86913da",
+        "EV-d43a561da59b2897",
+        "EV-f5755fccd5731063",
+        "EV-34929bdd016dc8d6",
+        "EV-710b145230faa692",
+        "EV-0b49d637d7c07ce0"
       ],
       "viewpointIds": [],
       "classificationRefs": [
@@ -227,20 +755,137 @@
         "TX-industry-manufacturing",
         "TX-technology-code_generation",
         "TX-industry-healthcare_life_sciences",
-        "TX-use_case-software_development",
         "TX-technology-long_context",
-        "TX-technology-multimodal",
-        "TX-technology-speech_audio",
+        "TX-technology-mixture_of_experts",
+        "TX-use_case-cybersecurity",
+        "TX-technology-on_device",
+        "TX-technology-embodied_ai",
+        "TX-industry-automotive_transportation",
+        "TX-technology-open_weights",
+        "TX-industry-telecommunications",
         "TX-industry-media_entertainment",
-        "TX-technology-tool_use",
-        "TX-technology-reasoning",
+        "TX-use_case-robotics_automation",
+        "TX-technology-multimodal",
         "TX-technology-guardrails_safety",
+        "TX-technology-reasoning",
+        "TX-technology-fine_tuning",
         "TX-technology-image_generation",
-        "TX-technology-computer_use"
+        "TX-technology-inference_optimization",
+        "TX-technology-speech_audio"
       ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-05-22",
+      "relatedEntityIds": [
+        "EN-0f3360879e746531",
+        "EN-51fd7dc086fcb858",
+        "EN-9e193e1ec8d75d41",
+        "EN-8395dc051feafc4c",
+        "EN-936f01f91fdadf69",
+        "EN-2f354de778e6a6da",
+        "EN-b5738c169b693bee",
+        "EN-1dc405a4cda895d0",
+        "EN-12ab68e37d104d27",
+        "EN-a3266ab9e10d6105",
+        "EN-ab9e3beebd83960d",
+        "EN-9fbf261b62c1d7c0",
+        "EN-e246a1f9a090075b"
+      ],
+      "firstSeen": "2025-03-18",
       "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "EN-3db1f560db626918",
+      "name": "Canva",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-2d6d2dc0ead4be10",
+        "EV-f05783f745bc7c2c",
+        "EV-34b0f4cfd513fbde",
+        "EV-a0d3853dd41c8ef6",
+        "EV-266aff97294156f6",
+        "EV-568d2aeab5234e48"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-code_generation",
+        "TX-use_case-software_development",
+        "TX-technology-mixture_of_experts",
+        "TX-technology-model_context_protocol",
+        "TX-industry-media_entertainment",
+        "TX-technology-image_generation"
+      ],
+      "relatedEntityIds": [
+        "EN-f475981105d2acbd",
+        "EN-309e1850e39b13ff",
+        "EN-954dc5d6516f127c"
+      ],
+      "firstSeen": "2026-06-11",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "EN-d56aa2f9908f566a",
+      "name": "DiffusionGemma",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-22b8d155ce027905",
+        "EV-3ef3e18df61a00d8",
+        "EV-568d2aeab5234e48"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-mixture_of_experts",
+        "TX-industry-media_entertainment",
+        "TX-technology-image_generation"
+      ],
+      "relatedEntityIds": [
+        "EN-2b6e51bec93e86c1",
+        "EN-bbdefa2950f49882"
+      ],
+      "firstSeen": "2026-06-11",
+      "lastSeen": "2026-06-11"
+    },
+    {
+      "id": "EN-4d09c69c19f5f67b",
+      "name": "DeepMind",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-5babb43f4b4d302f",
+        "EV-568d2aeab5234e48",
+        "EV-f68e00bb9fd49fac"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-code_generation",
+        "TX-use_case-software_development",
+        "TX-technology-mixture_of_experts",
+        "TX-industry-media_entertainment",
+        "TX-technology-multimodal",
+        "TX-technology-video_generation",
+        "TX-technology-image_generation",
+        "TX-technology-speech_audio"
+      ],
+      "relatedEntityIds": [
+        "EN-2b6e51bec93e86c1"
+      ],
+      "firstSeen": "2026-06-04",
+      "lastSeen": "2026-07-01"
     }
   ],
   "fde": [],

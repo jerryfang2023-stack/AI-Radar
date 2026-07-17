@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"Anthropic 发布了一篇由 Dar
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "Dario Amodei 新文章：AI 时代的冷战剧本"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Dario Amodei 新文章：AI 时代的冷战剧本

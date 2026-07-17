@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"The Bengaluru-based startup just closed
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only
+title_zh: "ContraVault AI 获310万美元Pre-A轮融资，旨在革新采购智能"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # ContraVault AI Raises $3.1M Pre-Series A to Revolutionize Procurement Intelligence

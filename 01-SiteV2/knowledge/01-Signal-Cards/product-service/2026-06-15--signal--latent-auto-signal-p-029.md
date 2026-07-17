@@ -2,7 +2,7 @@
 id: SIG-20260615-A08
 type: signal_card
 signal_type: product_service
-title: "Latent 发布 AI 基础设施能力，切入模型部署和算力服务"
+title: "[代码评估现状] SWE-bench之后，Code Clash与SOTA编码基准回顾——John Yang"
 date: 2026-06-15
 status: published
 source_title: "State of RL/Reasoning] IMO/IOI Gold, OpenAI o3/GPT-5, and Cursor Composer — Ashvin Nair, Cursor"
@@ -64,12 +64,12 @@ opportunity_signals:
 signal_owner: "Latent"
 
 frontend:
-  displayTitle: "Latent 发布 AI 基础设施能力，切入模型部署和算力服务"
+  displayTitle: "[代码评估现状] SWE-bench之后，Code Clash与SOTA编码基准回顾——John Yang"
   sourceLinks:
     - "https://www.latent.space/p/state-of-rlreasoning-imoioi-gold"
 ---
 
-# Latent 发布 AI 基础设施能力，切入模型部署和算力服务
+# [代码评估现状] SWE-bench之后，Code Clash与SOTA编码基准回顾——John Yang
 
 ## 新闻事实
 

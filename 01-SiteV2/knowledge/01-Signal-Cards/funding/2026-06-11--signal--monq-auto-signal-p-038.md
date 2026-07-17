@@ -2,7 +2,7 @@
 id: SIG-20260611-A01
 type: signal_card
 signal_type: funding
-title: "Monq 获得$3 M 融资，押注地产和建筑设计工作流"
+title: "Startuply.vc：Monq 获300万美元Pre-Seed轮融资，打造面向采购官的AI代理"
 date: 2026-06-11
 status: published
 source_title: "Startuply.vc: Monq's $3 Million Pre-Seed Lands on the AI Agent for the Procurement Officer"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Monq"
 
 frontend:
-  displayTitle: "Monq 获得$3 M 融资，押注地产和建筑设计工作流"
+  displayTitle: "Startuply.vc：Monq 获300万美元Pre-Seed轮融资，打造面向采购官的AI代理"
   sourceLinks:
     - "https://startuply.vc/article/monq-s-3-million-pre-seed-lands-on-the-ai-agent-for-the-procurement-officer-wa4kdm"
 ---
 
-# Monq 获得$3 M 融资，押注地产和建筑设计工作流
+# Startuply.vc：Monq 获300万美元Pre-Seed轮融资，打造面向采购官的AI代理
 
 ## 新闻事实
 

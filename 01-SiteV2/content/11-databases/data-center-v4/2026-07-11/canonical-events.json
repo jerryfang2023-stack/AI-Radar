@@ -5,6 +5,7 @@
     "event_time": "2026-07-10T17:17:12.000Z",
     "disclosed_at": "2026-07-10T17:17:12.000Z",
     "entities": [
+      "EN-79c60968d2c48711",
       "EN-047364b9be67f665"
     ],
     "action": "融资",
@@ -15,19 +16,17 @@
       "40 trillion",
       "177.9 million",
       "$149 ",
-      "$25 billion",
-      "$550 billion"
+      "$25 billion"
     ],
     "locations": [
       "US",
-      "U.S.",
-      "Korea"
+      "U.S."
     ],
     "claim_refs": [
       "CL-2d201e79b5367646",
       "CL-273d892f50d0c904",
-      "CL-ae2554656695a66f",
-      "CL-45bff19c18d93de3"
+      "CL-f7f0b9774f2fb13f",
+      "CL-ae2554656695a66f"
     ],
     "source_refs": [
       "SA-f7d06e5d1dda0155"
@@ -42,16 +41,17 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-82020f9eaea90951",
+    "event_id": "EV-43b7f45e9bd7ec9b",
     "display_title_zh": "SK Hynix 美国 IPO 融资 265 亿美元，创史上最大外国公司上市纪录"
   },
   {
     "event_type": "lawsuit_settlement",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "2026-07-10T23:11:12.310Z",
     "disclosed_at": "2026-07-10T23:11:12.310Z",
     "entities": [
       "EN-3a7bd3e2360a3d29",
+      "EN-50537dab76505dfc",
       "EN-7d3194f79e645c42"
     ],
     "action": "起诉",
@@ -72,7 +72,7 @@
       {
         "source_ref": "SA-c8f9806c2d12c171",
         "disclosed_at": "2026-07-10T23:11:12.310Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
@@ -82,44 +82,11 @@
   {
     "event_type": "product_release",
     "event_status": "completed",
-    "event_time": "2026-07-10T12:31:04.894Z",
-    "disclosed_at": "2026-07-10T12:31:04.894Z",
-    "entities": [
-      "EN-1b924576e394e538"
-    ],
-    "action": "推出",
-    "object": "面向AI智能体团队的Web上下文API",
-    "metrics": [],
-    "locations": [],
-    "claim_refs": [
-      "CL-781488ff20682f6c",
-      "CL-1bfe8d3aa6027d35",
-      "CL-8d01083bc9f30c1b",
-      "CL-346dcd28150c73d9"
-    ],
-    "source_refs": [
-      "SA-671d5760b95c7672"
-    ],
-    "conflicts": [],
-    "missing_fields": [],
-    "update_history": [
-      {
-        "source_ref": "SA-671d5760b95c7672",
-        "disclosed_at": "2026-07-10T12:31:04.894Z",
-        "status": "completed"
-      }
-    ],
-    "publication_status": "verified",
-    "event_id": "EV-e0ca82d9c7351494",
-    "display_title_zh": "Context.dev（YC S26）推出面向AI智能体团队的Web上下文API"
-  },
-  {
-    "event_type": "product_release",
-    "event_status": "completed",
     "event_time": "2026-07-11T00:52:10.000Z",
     "disclosed_at": "2026-07-11T00:52:10.000Z",
     "entities": [
-      "EN-c70eca6b0f88f44d"
+      "EN-c70eca6b0f88f44d",
+      "EN-2ec3a04623962df8"
     ],
     "action": "发布",
     "object": "Claude Code v2.1.207 发布",
@@ -159,7 +126,9 @@
     "locations": [],
     "claim_refs": [
       "CL-3be0b99556fba3bd",
-      "CL-2d219a82a74d41d6"
+      "CL-2d219a82a74d41d6",
+      "CL-9b36d0d628a9588f",
+      "CL-88495a733f0dfaa9"
     ],
     "source_refs": [
       "SA-3d58a7b10d75e560"
@@ -181,7 +150,7 @@
   },
   {
     "event_type": "lawsuit_settlement",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "2026-07-10T20:32:00.000Z",
     "disclosed_at": "2026-07-10T20:32:00.000Z",
     "entities": [
@@ -209,7 +178,7 @@
       {
         "source_ref": "SA-0bf9596875eccf69",
         "disclosed_at": "2026-07-10T20:32:00.000Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
@@ -223,7 +192,8 @@
     "disclosed_at": "2026-07-11T04:06:33.994Z",
     "entities": [
       "EN-3db1f560db626918",
-      "EN-bbdefa2950f49882"
+      "EN-bbdefa2950f49882",
+      "EN-309e1850e39b13ff"
     ],
     "action": "unveils",
     "object": "Canva AI 2.0, recasting its platform as an agentic system for work - SiliconANGLE",
@@ -239,7 +209,9 @@
       "SA-2f3baf3a43e6adcb"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-2f3baf3a43e6adcb",
@@ -249,43 +221,11 @@
     ],
     "publication_status": "verified",
     "event_id": "EV-f05783f745bc7c2c",
-    "display_title_zh": "Canva推出Canva AI 2.0 ，将其平台重塑为工作代理系统- SiliconANGLE"
-  },
-  {
-    "event_type": "model_release",
-    "event_status": "announced",
-    "event_time": "2026-07-10T14:00:00.000Z",
-    "disclosed_at": "2026-07-10T14:00:00.000Z",
-    "entities": [
-      "EN-e3ce9cc5efa9354c"
-    ],
-    "action": "开源模型",
-    "object": "正重塑行业格局",
-    "metrics": [],
-    "locations": [],
-    "claim_refs": [
-      "CL-d9f07444c2495f6b",
-      "CL-3449483862020b75"
-    ],
-    "source_refs": [
-      "SA-e9b9577aff548967"
-    ],
-    "conflicts": [],
-    "missing_fields": [],
-    "update_history": [
-      {
-        "source_ref": "SA-e9b9577aff548967",
-        "disclosed_at": "2026-07-10T14:00:00.000Z",
-        "status": "announced"
-      }
-    ],
-    "publication_status": "verified",
-    "event_id": "EV-ba8fcb50a227cc81",
-    "display_title_zh": "Hugging Face CEO：企业不再\"租用\"AI，开源模型正重塑行业格局"
+    "display_title_zh": "Canva发布Canva AI 2.0，将其平台重塑为工作代理系统 - SiliconANGLE"
   },
   {
     "event_type": "lawsuit_settlement",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "2026-07-10T21:36:51.000Z",
     "disclosed_at": "2026-07-10T21:36:51.000Z",
     "entities": [
@@ -311,7 +251,7 @@
       {
         "source_ref": "SA-170ac779b1ae5319",
         "disclosed_at": "2026-07-10T21:36:51.000Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
@@ -325,6 +265,7 @@
     "disclosed_at": "2026-07-10T16:48:05.000Z",
     "entities": [
       "EN-9c8ae69b84f21a2e",
+      "EN-45a46e581e91ce79",
       "EN-ea3bd73e2b506e00"
     ],
     "action": "收购",
@@ -338,8 +279,8 @@
     "claim_refs": [
       "CL-7dca153ff184e3e4",
       "CL-a8a4c1fecb5c748f",
-      "CL-7fef6cd18e16dd56",
-      "CL-c29a96370c9b5fb0"
+      "CL-06ca9a4f9bdb74ac",
+      "CL-c605f9b50ec9f004"
     ],
     "source_refs": [
       "SA-a7668c114e7cddb7"
@@ -364,6 +305,7 @@
     "disclosed_at": "2026-07-10T22:57:30.000Z",
     "entities": [
       "EN-3a7bd3e2360a3d29",
+      "EN-50537dab76505dfc",
       "EN-7d3194f79e645c42"
     ],
     "action": "起诉",
@@ -395,16 +337,21 @@
     "display_title_zh": "苹果起诉 OpenAI，指控其挖角前员工窃取未发布产品及供应链资料"
   },
   {
-    "event_type": "hardware_product",
+    "event_type": "product_release",
     "event_status": "completed",
     "event_time": "2026-07-10T12:49:35.000Z",
     "disclosed_at": "2026-07-10T12:49:35.000Z",
     "entities": [
-      "EN-8d4321d936320802"
+      "EN-de6b71bf77ff4299",
+      "EN-8d4321d936320802",
+      "EN-c4ef31845ea79710"
     ],
-    "action": "发布 Booster T2 具身开发旗舰平台：搭载英伟达 Thor 芯片",
-    "object": "，2070TFLOPS 算力",
-    "metrics": [],
+    "action": "发布",
+    "object": "Booster T2 具身开发旗舰平台：搭载英伟达 Thor 芯片，2070TFLOPS 算力",
+    "metrics": [
+      "2070TFLOPS",
+      "128GB"
+    ],
     "locations": [],
     "claim_refs": [
       "CL-7044c3e5ee3cf9e0",
@@ -425,41 +372,7 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-0a5e65aa46b0d194",
+    "event_id": "EV-f7b60c0c63403f8c",
     "display_title_zh": "加速进化发布 Booster T2 具身开发旗舰平台：搭载英伟达 Thor 芯片，2070TFLOPS 算力"
-  },
-  {
-    "event_type": "hardware_product",
-    "event_status": "planned",
-    "event_time": "2026-07-10T11:17:33.000Z",
-    "disclosed_at": "2026-07-10T11:17:33.000Z",
-    "entities": [],
-    "action": "发布全球首款可变形个人机器人",
-    "object": "启元 T1",
-    "metrics": [],
-    "locations": [],
-    "claim_refs": [
-      "CL-5c0e34a83568a4c6",
-      "CL-dfe52c43b412e69f",
-      "CL-8127829f28deda9a",
-      "CL-e50ec475e19d40e9"
-    ],
-    "source_refs": [
-      "SA-1ab5fc7e7e88f10d"
-    ],
-    "conflicts": [],
-    "missing_fields": [
-      "entities"
-    ],
-    "update_history": [
-      {
-        "source_ref": "SA-1ab5fc7e7e88f10d",
-        "disclosed_at": "2026-07-10T11:17:33.000Z",
-        "status": "planned"
-      }
-    ],
-    "publication_status": "partial",
-    "event_id": "EV-4536910c045ae530",
-    "display_title_zh": "上纬新材将在 WAIC 2026 发布全球首款可变形个人机器人启元 T1"
   }
 ]

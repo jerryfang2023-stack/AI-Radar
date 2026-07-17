@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"C.H. Robinson, one of the world's larges
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "C.H. Robinson如何利用LangChain AI代理每日自动化处理5,500票货运 | 应用篇"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # How C.H. Robinson Uses AI for How C.H. Robinson Automates 5,500 Shipments Daily with LangChain AI Agents | Applied

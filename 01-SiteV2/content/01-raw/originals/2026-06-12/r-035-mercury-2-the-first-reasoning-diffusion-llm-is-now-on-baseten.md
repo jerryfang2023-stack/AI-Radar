@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"Inception's Mercury 2 is now liv
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Mercury 2，首个推理扩散大语言模型，现已上线Baseten"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Mercury 2, the first reasoning diffusion LLM, is now on Baseten

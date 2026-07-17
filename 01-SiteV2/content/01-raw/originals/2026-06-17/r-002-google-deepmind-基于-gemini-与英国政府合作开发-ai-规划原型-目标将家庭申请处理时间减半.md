@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"Google DeepMind 与英国政府合作，
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Google DeepMind 基于 Gemini 与英国政府合作开发 AI 规划原型，目标将家庭申请处理时间减半"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Google DeepMind 基于 Gemini 与英国政府合作开发 AI 规划原型，目标将家庭申请处理时间减半

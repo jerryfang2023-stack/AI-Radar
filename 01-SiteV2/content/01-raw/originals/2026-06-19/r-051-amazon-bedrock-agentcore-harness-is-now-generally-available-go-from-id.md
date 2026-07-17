@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"When we launched the AgentCore harn
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Amazon Bedrock AgentCore 工具现已正式可用：数分钟内从创意到生产级智能体 | 人工智能"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Amazon Bedrock AgentCore harness is now generally available: Go from idea to production-grade agent in minutes | Artificial Intelligence

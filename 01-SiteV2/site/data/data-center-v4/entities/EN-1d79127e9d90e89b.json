@@ -1,0 +1,250 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 818,
+    "quarantinedEventCount": 58
+  },
+  "entity": {
+    "id": "EN-1d79127e9d90e89b",
+    "name": "智谱AI",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-70efbfcaadcdb259",
+      "EV-534dc9add1c0cc35"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-use_case-software_development",
+      "TX-technology-long_context"
+    ],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-06-18",
+    "lastSeen": "2026-07-07",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-70efbfcaadcdb259",
+        "EV-534dc9add1c0cc35"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-70efbfcaadcdb259",
+        "dataDate": "2026-07-07",
+        "date": "2026-07-07",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "智谱AI发布编程智能体ZCode，挑战Claude Code和OpenAI Codex",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "id": "software_development",
+            "dimensionName": "应用场景",
+            "name": "软件开发"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "long_context",
+            "name": "长上下文"
+          }
+        ],
+        "entityIds": [
+          "EN-1d79127e9d90e89b",
+          "EN-c70eca6b0f88f44d",
+          "EN-7d3194f79e645c42",
+          "EN-bc77259c5d2eb341"
+        ]
+      },
+      {
+        "id": "EV-534dc9add1c0cc35",
+        "dataDate": "2026-06-18",
+        "date": "2026-06-18",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "智谱AI发布GLM-5.2，百万token上下文下的开源编码模型逼近闭源标杆",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "long_context",
+            "name": "长上下文"
+          }
+        ],
+        "entityIds": [
+          "EN-1d79127e9d90e89b",
+          "EN-c70eca6b0f88f44d",
+          "EN-bc1fc5140040180e"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-use_case-software_development",
+      "name": "软件开发",
+      "nodeType": "use_case",
+      "typeLabel": "应用场景",
+      "valueId": "software_development",
+      "eventIds": [
+        "EV-f0fee44c1dfdcb09",
+        "EV-f3bb064250dba2b2",
+        "EV-03f661e8dcdf1b58",
+        "EV-474d5a8ffca11ed9",
+        "EV-2d6d2dc0ead4be10",
+        "EV-d209a6acecba4285",
+        "EV-b2e374d54b10b9af",
+        "EV-347d250e2769de9a",
+        "EV-107725f2bdece882",
+        "EV-70efbfcaadcdb259",
+        "EV-13e06fc12cc3fb7c",
+        "EV-53288fcf18e677e6",
+        "EV-cec69087dc8992e0",
+        "EV-1b03e5dff76a50a1",
+        "EV-6af31d42885e0361",
+        "EV-a9e22f22b7a2ec53",
+        "EV-e9a86c47da229331",
+        "EV-f68e00bb9fd49fac",
+        "EV-e295f808713644c7",
+        "EV-d53cd33e8f541a65"
+      ],
+      "entityIds": [
+        "EN-0cc3af265406c202",
+        "EN-b0532e1af75cc4ab",
+        "EN-15c785fe4bcb86f5",
+        "EN-e78bdebae031095b",
+        "EN-7d4e02d31a7eb0f8",
+        "EN-3db1f560db626918",
+        "EN-7c3482959a6cdd3f",
+        "EN-7d3194f79e645c42",
+        "EN-968e2d5b08687bf4",
+        "EN-f48a4090493d2b5e",
+        "EN-f9ae78c09ff308f9",
+        "EN-ce635c4eabff5e4f",
+        "EN-9fbf261b62c1d7c0",
+        "EN-916a98f0fa2a39af",
+        "EN-dc6c28a2123e8efb",
+        "EN-536c4035ba0c7047",
+        "EN-1d79127e9d90e89b",
+        "EN-c70eca6b0f88f44d",
+        "EN-bc77259c5d2eb341",
+        "EN-fab30471ea65d627",
+        "EN-bb5b6487f881bbb1",
+        "EN-4adc2faea521b1f1",
+        "EN-c857d09db23e6822",
+        "EN-7ec0224e483d913b",
+        "EN-2d87f3d38782aa14",
+        "EN-bbdefa2950f49882",
+        "EN-b5251b35f15bedc4",
+        "EN-0db2d631b42da133",
+        "EN-412b57e712039032",
+        "EN-6f7ac1823da81d2e",
+        "EN-c27c48199bb1e14b",
+        "EN-e2a93bc5095dec6c",
+        "EN-0decbc3b45f73b2b",
+        "EN-a6f7e7d15269ba2d",
+        "EN-45cbca5f78f1ef44",
+        "EN-b57c95289680078c",
+        "EN-2b6e51bec93e86c1",
+        "EN-4d09c69c19f5f67b",
+        "EN-085598c00f2aaccf",
+        "EN-a3c3b987b09fc1bb",
+        "EN-1ecf93c539fcffca",
+        "EN-6fcba5d96a4fadfd",
+        "EN-630dc133336bc266",
+        "EN-c4bc2d00a42f220f"
+      ],
+      "fdeIds": [
+        "FDE-2dda1b977721f467",
+        "FDE-8d7df617732e7c45"
+      ],
+      "hardwareIds": [],
+      "firstSeen": "2026-05-24",
+      "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "TX-technology-long_context",
+      "name": "长上下文",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "long_context",
+      "eventIds": [
+        "EV-80e54c9a390da293",
+        "EV-fd21441fb6e143c3",
+        "EV-0d5a32aca724d30e",
+        "EV-653cbce2ccc79f8b",
+        "EV-70e3f88cb06a856c",
+        "EV-70cbf25f7ec2cc3a",
+        "EV-70efbfcaadcdb259",
+        "EV-0c06df62702d26ab",
+        "EV-534dc9add1c0cc35",
+        "EV-57f083a39393d841",
+        "EV-86537be17d50ff20"
+      ],
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-c70eca6b0f88f44d",
+        "EN-7df09a7717ef2feb",
+        "EN-3a7bd3e2360a3d29",
+        "EN-50537dab76505dfc",
+        "EN-b5251b35f15bedc4",
+        "EN-607964040e4b62e0",
+        "EN-23dcd1053b8a922f",
+        "EN-7d3194f79e645c42",
+        "EN-e4f9c522e1c89280",
+        "EN-76ac3e702b5ccaff",
+        "EN-f3cfedbe8428c9f7",
+        "EN-c04bd5ebd10ab696",
+        "EN-50ba7ff15827787b",
+        "EN-8f71c4871a160172",
+        "EN-78624f0a98e78301",
+        "EN-7dd7122ad9bf240f",
+        "EN-95b0632f1b292fa7",
+        "EN-047364b9be67f665",
+        "EN-6f7ac1823da81d2e",
+        "EN-1d79127e9d90e89b",
+        "EN-bc77259c5d2eb341",
+        "EN-52fc33ae4d101a5d",
+        "EN-bc1fc5140040180e",
+        "EN-3153ebda601cdb79",
+        "EN-c23eb5fae3cdd763",
+        "EN-c608c4787821de1b",
+        "EN-9c8ae69b84f21a2e",
+        "EN-6ac6ad44bb9995ca"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-06-12",
+      "lastSeen": "2026-07-17"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}

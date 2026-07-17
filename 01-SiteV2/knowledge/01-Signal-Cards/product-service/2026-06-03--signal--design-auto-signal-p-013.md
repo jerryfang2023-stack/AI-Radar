@@ -2,7 +2,7 @@
 id: SIG-20260603-A07
 type: signal_card
 signal_type: product_service
-title: "Design partners: The pre-launch edge most AI founders ignore - Bessemer Venture Partners"
+title: "设计合作伙伴：大多数AI创始人忽视的发布前优势——Bessemer Venture Partners"
 date: 2026-06-03
 status: published
 asset_level: frontstage
@@ -58,7 +58,7 @@ signal_owner: "Design"
 watch_reason: "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
 
 frontend:
-  displayTitle: "Design partners: The pre-launch edge most AI founders ignore - Bessemer Venture Partners"
+  displayTitle: "设计合作伙伴：大多数AI创始人忽视的发布前优势——Bessemer Venture Partners"
   eventLine: "Design 发布新的 AI 能力，面向地产开发和建筑设计流程。"
   whyWatch: "这条变化值得看，是因为它把竞争点放到了地产开发和建筑设计流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"
   businessMeaning: "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
@@ -68,7 +68,7 @@ frontend:
     - "https://www.bvp.com/atlas/design-partners-the-pre-launch-edge-most-ai-founders-ignore"
 ---
 
-# Design partners: The pre-launch edge most AI founders ignore - Bessemer Venture Partners
+# 设计合作伙伴：大多数AI创始人忽视的发布前优势——Bessemer Venture Partners
 
 ## 信号底稿
 

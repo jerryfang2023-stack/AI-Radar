@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Graphon AI raises $8.3M seed to build a
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Graphon AI 获 830 万美元种子轮融资，为企业 AI 构建预模型智能层"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Graphon AI raises $8.3M seed to build a pre-model intelligence layer for enterprise AI

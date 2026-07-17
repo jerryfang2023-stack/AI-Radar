@@ -72,6 +72,10 @@ key_excerpts: [{"type":"supporting_context","text":"However, in the pilot exampl
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "生成式AI成功的关键？量化其真实价值"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # The Key to Success With Generative AI? Quantifying Its True Value

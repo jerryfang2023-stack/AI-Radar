@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-045
 title: "LlamaIndex 发布 legal-kb：基于 Index v2 的智能体检索参考应用"
 title_zh: "LlamaIndex 发布 legal-kb：基于 Index v2 的智能体检索参考应用"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.marktechpost.com/2026/07/05/llamaindex-legal-kb-agentic-retrieval-over-index-v2-with-retrieve-find-read-and-grep-tools"
 canonical_url: "https://marktechpost.com/2026/07/05/llamaindex-legal-kb-agentic-retrieval-over-index-v2-with-retrieve-find-read-and-grep-tools"
 source_name: "MarkTechPost（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-06T02:21:26.981Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # LlamaIndex 发布 legal-kb：基于 Index v2 的智能体检索参考应用

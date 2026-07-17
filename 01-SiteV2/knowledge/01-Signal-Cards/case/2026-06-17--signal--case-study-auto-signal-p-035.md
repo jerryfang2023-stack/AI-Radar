@@ -2,7 +2,7 @@
 id: SIG-20260617-A06
 type: signal_card
 signal_type: case
-title: "Case Study: Helping a Vertical SaaS Company Reposition for an AI ..."
+title: "案例研究：助力垂直SaaS公司为AI时代重新定位"
 date: 2026-06-17
 status: published
 source_title: "Case Study: Helping a Vertical SaaS Company Reposition for an AI ..."
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Case Study"
 
 frontend:
-  displayTitle: "Case Study: Helping a Vertical SaaS Company Reposition for an AI ..."
+  displayTitle: "案例研究：助力垂直SaaS公司为AI时代重新定位"
   sourceLinks:
     - "https://www.cfocentre.com/us/case-study-helping-a-vertical-saas-company-reposition-for-an-ai-first-future/"
 ---
 
-# Case Study: Helping a Vertical SaaS Company Reposition for an AI ...
+# 案例研究：助力垂直SaaS公司为AI时代重新定位
 
 ## 新闻事实
 

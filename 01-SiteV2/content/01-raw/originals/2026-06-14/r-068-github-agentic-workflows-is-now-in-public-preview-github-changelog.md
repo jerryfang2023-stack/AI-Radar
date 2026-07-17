@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"# GitHub Agentic Workflows is now i
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "GitHub Agentic Workflows 现已公开预览 - GitHub 更新日志"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # GitHub Agentic Workflows is now in public preview - GitHub Changelog

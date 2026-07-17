@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"6月17日，智谱开源新旗舰GLM-5.2
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "马斯克预测中国大模型2027年Q1追上Anthropic Fable，智谱唐杰回应\"用不了那么久\""
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 马斯克预测中国大模型2027年Q1追上Anthropic Fable，智谱唐杰回应"用不了那么久"

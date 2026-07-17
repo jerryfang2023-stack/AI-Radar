@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"Arcade's AI-native customer base in
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_zh: "互动演示AI原生团队：如何交付... - Arcade Software"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Interactive Demo AI-Native Teams: How to Ship ... - Arcade Software

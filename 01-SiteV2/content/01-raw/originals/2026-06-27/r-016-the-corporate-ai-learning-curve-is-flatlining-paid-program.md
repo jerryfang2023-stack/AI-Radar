@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"Companies are pushing for enterpris
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "企业AI学习曲线趋于平缓 - 付费项目"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # The Corporate AI Learning Curve Is Flatlining - Paid Program

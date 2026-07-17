@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"Kubernetes has come a long way s
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "Calico 2026年春季版新功能"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # What&#8217;s new in Calico: Spring 2026 Release

@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-026
 title: "Inference chip startup SambaNova valued at $11B in $1B funding round - SiliconANGLE"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "推理芯片初创公司SambaNova在10亿美元融资轮中估值达110亿美元 - SiliconANGLE"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://siliconangle.com/2026/07/08/inference-chip-startup-sambanova-valued-11b-1b-funding-round/"
 canonical_url: "https://siliconangle.com/2026/07/08/inference-chip-startup-sambanova-valued-11b-1b-funding-round"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-09T03:05:44.933Z
 theme: ai-hardware-investment-signal
 keyword_group: ai-hardware-investment-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Inference chip startup SambaNova valued at $11B in $1B funding round - SiliconANGLE

@@ -3,7 +3,7 @@ name: guanlan-data-center-supervisor
 description: Use when supervising, running, repairing, or changing the WaveSight Data Center V4 factual data lane. Covers SourceArtifact, RawDocument, Claim, Entity, CanonicalEvent, ENTITY-V1 history profiles, RELATION-V2 factual links, BACKFILL-V1 targeted historical collection, TAG-V4 assertions, FDE and hardware projections, database materialization, historical reprojection, and integrity gates. Do not use for page design, opportunity judgment, trend judgment, recommendations, or legacy Card editorial work.
 metadata:
   guanlan:
-    version: "1.2.0"
+    version: "1.2.1"
     lane: "Data Center"
     status: "current lane owner"
     order: 5
@@ -11,7 +11,7 @@ metadata:
     upstream: "external source capture and immutable Raw snapshots"
     downstream: "canonical events, entity profiles, factual relationships, domain projections, DuckDB/JSONL exports, downstream applications"
     gates: "claim traceability, event evidence, verified relationship endpoints, conflict preservation, taxonomy assertions, projection provenance"
-    recent_learning: "Cross-day backfill must separate recurring coverage sweeps from explicit fact gaps and return every candidate through the canonical evidence chain."
+    recent_learning: "Every public event title must equal an approved Raw title_zh (or an already-Chinese original); translation credentials and historical title parity are hard gates."
     mirrored_in_skill_store: true
     memory_required: false
 ---
@@ -36,6 +36,8 @@ Read `agent-workflow/product/data-center-v4-contract.md`, the relevant schema, t
 - Missing and conflicting fields remain visible.
 - No decision, recommendation, importance, opportunity, pain, or trend-maturity field may enter the V4 bundle.
 - LLM use is limited to evidence-linked extraction, translation with the original preserved, and ambiguity candidates.
+- English source titles are translated at Raw ingestion with DeepSeek, source-hash and model provenance. Flash handles titles; Pro is the quality retry. Missing credentials or an unresolved title blocks publication.
+- Historical repair must update Raw first, then regenerate canonical events and compatibility Cards. The public title must exactly equal the approved Raw `title_zh` (or an already-Chinese original), never an event-field summary.
 - Formal relationships require verified endpoints, one accepted event, Claim references, SourceArtifact references, and an explicit supported action. Entity or Tag co-occurrence is insufficient.
 - Historical reprojection aggregates accepted facts only; it cannot manufacture missing dates or use legacy page copy as evidence.
 - A recurring company/product sweep may record `no_findings`; it cannot infer that no event occurred. Funding/deployment tasks require original-source capture and exact-span Claims before canonical repair.

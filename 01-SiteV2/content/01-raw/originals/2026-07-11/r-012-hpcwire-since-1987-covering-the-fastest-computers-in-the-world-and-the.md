@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-012
 title: "HPCwire - Since 1987 – Covering the Fastest Computers in the World and the People Who Run Them"
-title_zh: "HPCwire -自1987年以来–涵盖世界上最快的计算机及其运行人员"
-title_translation_status: translated
-title_translation_method: mymemory_title_translation
+title_zh: "HPCwire - 自1987年起——报道全球最快计算机及其运营者"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.hpcwire.com/off-the-wire/oxmiq-raises-35m-to-scale-oxcoretm-architecture/"
 canonical_url: "https://hpcwire.com/off-the-wire/oxmiq-raises-35m-to-scale-oxcoretm-architecture"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-11T04:06:32.056Z
 theme: ai-hardware-investment-signal
 keyword_group: ai-hardware-investment-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # HPCwire - Since 1987 – Covering the Fastest Computers in the World and the People Who Run Them

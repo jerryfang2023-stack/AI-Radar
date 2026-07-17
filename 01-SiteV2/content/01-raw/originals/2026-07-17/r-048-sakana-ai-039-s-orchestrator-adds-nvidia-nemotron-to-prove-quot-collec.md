@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-048
 title: "Sakana AI&#039;s orchestrator adds Nvidia Nemotron to prove &quot;collective intelligence&quot; can rival single frontier models"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "Sakana AI的编排器新增Nvidia Nemotron，以证明“集体智能”可媲美单一前沿模型"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://the-decoder.com/sakana-ais-fugu-adds-nvidia-nemotron-to-prove-collective-intelligence-can-rival-single-frontier-models/"
 canonical_url: "https://the-decoder.com/sakana-ais-fugu-adds-nvidia-nemotron-to-prove-collective-intelligence-can-rival-single-frontier-models"
 source_name: "The Decoder AI News"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-17T04:40:17.109Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Sakana AI&#039;s orchestrator adds Nvidia Nemotron to prove &quot;collective intelligence&quot; can rival single frontier models

@@ -2,7 +2,7 @@
 id: SIG-20260714-A04
 type: signal_card
 signal_type: funding
-title: "Lyzr AI 完成 1 亿美元 B 轮融资：其 AI Agent SivaClaw 对接 130 多位投资者并产生 4 亿美元投资兴趣"
+title: "Lyzr AI 完成1亿美元B轮融资，其AI代理SivaClaw吸引130多家投资者并产生4亿美元意向"
 date: 2026-07-14
 status: published
 source_title: "Lyzr AI Raises $100 Million Series B After Its Own AI Agent SivaClaw Fielded 130‑Plus Investors And Generated $400 Million In Interest"
@@ -58,12 +58,12 @@ opportunity_signals:
 signal_owner: "Lyzr AI"
 
 frontend:
-  displayTitle: "Lyzr AI 完成 1 亿美元 B 轮融资：其 AI Agent SivaClaw 对接 130 多位投资者并产生 4 亿美元投资兴趣"
+  displayTitle: "Lyzr AI 完成1亿美元B轮融资，其AI代理SivaClaw吸引130多家投资者并产生4亿美元意向"
   sourceLinks:
     - "https://pulse2.com/lyzr-ai-raises-100-million-series-b-after-its-own-ai-agent-sivaclaw-fielded-130-plus-investors-and-generated-400-million-in-interest/"
 ---
 
-# Lyzr AI 完成 1 亿美元 B 轮融资：其 AI Agent SivaClaw 对接 130 多位投资者并产生 4 亿美元投资兴趣
+# Lyzr AI 完成1亿美元B轮融资，其AI代理SivaClaw吸引130多家投资者并产生4亿美元意向
 
 ## 新闻事实
 

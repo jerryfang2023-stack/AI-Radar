@@ -2,7 +2,7 @@
 id: SIG-20260611-A05
 type: signal_card
 signal_type: case
-title: "Linkedin 案例：AI 进入销售和收入团队流程"
+title: "将采购AI思维从自动化转向增强与..."
 date: 2026-06-11
 status: published
 source_title: "Invert Procurement AI Thinking from Automation to Augment and ..."
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Linkedin"
 
 frontend:
-  displayTitle: "Linkedin 案例：AI 进入销售和收入团队流程"
+  displayTitle: "将采购AI思维从自动化转向增强与..."
   sourceLinks:
     - "https://www.linkedin.com/posts/pascaldarc_a-pattern-i-keep-noticing-in-procurement-activity-7453415691053068289-axRZ"
 ---
 
-# Linkedin 案例：AI 进入销售和收入团队流程
+# 将采购AI思维从自动化转向增强与...
 
 ## 新闻事实
 

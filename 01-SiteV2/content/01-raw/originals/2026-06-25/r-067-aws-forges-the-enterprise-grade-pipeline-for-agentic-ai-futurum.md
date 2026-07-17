@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"This Marketplace enables customers 
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "AWS为企业级代理AI构建企业级管道 - Futurum"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # AWS Forges the Enterprise-grade Pipeline for Agentic AI - Futurum

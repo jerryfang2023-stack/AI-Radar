@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-17T18:20:10.588Z",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 727,
-    "quarantinedEventCount": 50
+    "eventCount": 818,
+    "quarantinedEventCount": 58
   },
   "entity": {
     "id": "EN-ffab0b8aa61e506a",
@@ -21,26 +21,54 @@
       "canonical"
     ],
     "eventIds": [
-      "EV-fcac39dc6ed3d544"
+      "EV-fcac39dc6ed3d544",
+      "EV-d961d3ad02f6ae14"
     ],
     "viewpointIds": [],
-    "classificationRefs": [],
+    "classificationRefs": [
+      "TX-use_case-research_science"
+    ],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-07",
-    "lastSeen": "2026-06-08",
+    "lastSeen": "2026-06-17",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [
         "EV-fcac39dc6ed3d544"
       ],
-      "partnerships": [],
+      "partnerships": [
+        "EV-d961d3ad02f6ae14"
+      ],
       "productsServices": [],
       "hardware": [],
       "organizationPeople": [],
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-d961d3ad02f6ae14",
+        "dataDate": "2026-06-17",
+        "date": "2026-06-17",
+        "eventType": "partnership",
+        "eventTypeLabel": "合作",
+        "eventGroup": "商业合作",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "Google DeepMind 基于 Gemini 与英国政府合作开发 AI 规划原型，目标将家庭申请处理时间减半",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "id": "research_science",
+            "dimensionName": "应用场景",
+            "name": "科研与发现"
+          }
+        ],
+        "entityIds": [
+          "EN-2b6e51bec93e86c1",
+          "EN-ffab0b8aa61e506a"
+        ]
+      },
       {
         "id": "EV-fcac39dc6ed3d544",
         "dataDate": "2026-06-08",
@@ -61,7 +89,27 @@
   },
   "relatedEntities": [],
   "relationships": [],
-  "taxonomyNodes": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-use_case-research_science",
+      "name": "科研与发现",
+      "nodeType": "use_case",
+      "typeLabel": "应用场景",
+      "valueId": "research_science",
+      "eventIds": [
+        "EV-1ac32035d5e425e1",
+        "EV-d961d3ad02f6ae14"
+      ],
+      "entityIds": [
+        "EN-2b6e51bec93e86c1",
+        "EN-ffab0b8aa61e506a"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-06-02",
+      "lastSeen": "2026-06-17"
+    }
+  ],
   "fde": [],
   "hardware": []
 }

@@ -1,0 +1,142 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 818,
+    "quarantinedEventCount": 58
+  },
+  "entity": {
+    "id": "EN-3b7491f6cfa8bb7a",
+    "name": "UK law firm is latest",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-26183a56cf9ed63c"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-industry-professional_services"
+    ],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-06-22",
+    "lastSeen": "2026-06-22",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [
+        "EV-26183a56cf9ed63c"
+      ],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-26183a56cf9ed63c",
+        "dataDate": "2026-06-22",
+        "date": "2026-06-22",
+        "eventType": "partnership",
+        "eventTypeLabel": "合作",
+        "eventGroup": "商业合作",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "英国律所与法律AI初创公司Harvey达成最新合作",
+        "displayTags": [
+          {
+            "dimensionId": "industry",
+            "id": "professional_services",
+            "dimensionName": "行业",
+            "name": "专业服务"
+          }
+        ],
+        "entityIds": [
+          "EN-3b7491f6cfa8bb7a",
+          "EN-96eebba49dbbf422",
+          "EN-7d3194f79e645c42"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-industry-professional_services",
+      "name": "专业服务",
+      "nodeType": "industry",
+      "typeLabel": "行业",
+      "valueId": "professional_services",
+      "eventIds": [
+        "EV-e1e0a38da122caed",
+        "EV-39717cdbada984d7",
+        "EV-26183a56cf9ed63c"
+      ],
+      "entityIds": [
+        "EN-d74c69db63e4763f",
+        "EN-96eebba49dbbf422",
+        "EN-3b7491f6cfa8bb7a",
+        "EN-7d3194f79e645c42"
+      ],
+      "fdeIds": [
+        "FDE-0e1970e9eb17729f"
+      ],
+      "hardwareIds": [],
+      "firstSeen": "2026-06-19",
+      "lastSeen": "2026-06-23"
+    }
+  ],
+  "fde": [
+    {
+      "id": "FDE-0e1970e9eb17729f",
+      "eventId": "EV-26183a56cf9ed63c",
+      "dataDate": "2026-06-22",
+      "date": "2026-06-22",
+      "title": "英国律所与法律AI初创公司Harvey达成最新合作",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "OpenAI",
+      "vendor": "UK law firm is latest",
+      "industry": "未披露",
+      "useCase": "legal AI startup Harvey",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "UK law firm is latest to partner with legal AI startup Harvey | Reuters ... Sept 21 (Reuters) - Another major law firm is debuting a legal artificial intelligence tool for its attorneys, turning to a startup called Harvey that has drawn investment from Sequoia Capital and OpenAI's startup fund. ... ... / query=AI implementation startup design partner pilot customer / intent=find_market_trend / path=a_media_gdelt"
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://reuters.com/legal/transactional/uk-law-firm-is-latest-partner-with-legal-ai-startup-harvey-2023-09-21",
+      "entityIds": [
+        "EN-3b7491f6cfa8bb7a",
+        "EN-96eebba49dbbf422",
+        "EN-7d3194f79e645c42"
+      ]
+    }
+  ],
+  "hardware": []
+}

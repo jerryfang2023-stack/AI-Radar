@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Tenzye – The World's First Agentic Te
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only
+title_zh: "Tenzye – 全球首个智能体式招标情报平台"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Tenzye – The World's First Agentic Tender Intelligence Platform

@@ -2,7 +2,7 @@
 id: SIG-20260629-A02
 type: signal_card
 signal_type: funding
-title: "Trase 获得 ARCH Venture Partners 领投的 1.07 亿美元种子轮融资"
+title: "Trase 获得 1.07 亿美元种子轮融资，由 ARCH Venture Partners 领投"
 date: 2026-06-29
 status: published
 source_title: "Trase Raises $107 Million Seed Round Led By ARCH Venture Partners"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Trase"
 
 frontend:
-  displayTitle: "Trase 获得 ARCH Venture Partners 领投的 1.07 亿美元种子轮融资"
+  displayTitle: "Trase 获得 1.07 亿美元种子轮融资，由 ARCH Venture Partners 领投"
   sourceLinks:
     - "https://pulse2.com/trase-raises-107-million-seed-round-led-by-arch-venture-partners/"
 ---
 
-# Trase 获得 ARCH Venture Partners 领投的 1.07 亿美元种子轮融资
+# Trase 获得 1.07 亿美元种子轮融资，由 ARCH Venture Partners 领投
 
 ## 新闻事实
 

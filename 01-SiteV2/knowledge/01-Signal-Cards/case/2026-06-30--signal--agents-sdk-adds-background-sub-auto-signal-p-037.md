@@ -2,7 +2,7 @@
 id: SIG-20260630-A08
 type: signal_card
 signal_type: case
-title: "Agents SDK 增加后台子智能体和统一回合入口"
+title: "Agents SDK新增后台子代理及统一回合入口点 · 更新日志"
 date: 2026-06-30
 status: published
 source_title: "Agents SDK adds background sub-agents and a unified turn entry point · Changelog"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Agents SDK adds background sub"
 
 frontend:
-  displayTitle: "Agents SDK 增加后台子智能体和统一回合入口"
+  displayTitle: "Agents SDK新增后台子代理及统一回合入口点 · 更新日志"
   sourceLinks:
     - "https://developers.cloudflare.com/changelog/post/2026-06-26-agents-sdk-v0170/"
 ---
 
-# Agents SDK 增加后台子智能体和统一回合入口
+# Agents SDK新增后台子代理及统一回合入口点 · 更新日志
 
 ## 新闻事实
 

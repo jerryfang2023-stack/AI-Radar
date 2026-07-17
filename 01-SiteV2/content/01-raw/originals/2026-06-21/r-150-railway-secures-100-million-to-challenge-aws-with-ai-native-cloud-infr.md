@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Railway, a San Francisco-based cloud pl
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_zh: "Railway获得1亿美元融资，以AI原生云基础设施挑战AWS"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Railway secures $100 million to challenge AWS with AI-native cloud infrastructure

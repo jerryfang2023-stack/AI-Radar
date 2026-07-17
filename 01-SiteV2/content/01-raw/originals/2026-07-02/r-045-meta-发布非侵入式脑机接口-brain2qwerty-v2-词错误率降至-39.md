@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"Meta FAIR 团队发布 Brain2Qwerty v2�
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Meta 发布非侵入式脑机接口 Brain2Qwerty v2，词错误率降至 39%"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Meta 发布非侵入式脑机接口 Brain2Qwerty v2，词错误率降至 39%

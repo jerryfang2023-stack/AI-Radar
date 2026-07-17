@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"The client was a privately owned, found
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "案例研究：助力垂直SaaS公司为AI时代重新定位"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Case Study: Helping a Vertical SaaS Company Reposition for an AI ...

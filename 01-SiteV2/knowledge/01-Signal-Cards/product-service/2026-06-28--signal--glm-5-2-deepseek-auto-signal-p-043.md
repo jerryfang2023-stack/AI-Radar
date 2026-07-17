@@ -2,7 +2,7 @@
 id: SIG-20260628-A11
 type: signal_card
 signal_type: product_service
-title: "GLM-5.2 🤖, DeepSeek raises $7.4B 💰, Android MCP 📱"
+title: "GLM-5.2 🤖，DeepSeek 融资 74 亿美元 💰，Android MCP 📱"
 date: 2026-06-28
 status: published
 source_title: "GLM-5.2 🤖, DeepSeek raises $7.4B 💰, Android MCP 📱"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "GLM-5.2 🤖, DeepSeek"
 
 frontend:
-  displayTitle: "GLM-5.2 🤖, DeepSeek raises $7.4B 💰, Android MCP 📱"
+  displayTitle: "GLM-5.2 🤖，DeepSeek 融资 74 亿美元 💰，Android MCP 📱"
   sourceLinks:
     - "https://tldr.tech/ai/2026-06-17"
 ---
 
-# GLM-5.2 🤖, DeepSeek raises $7.4B 💰, Android MCP 📱
+# GLM-5.2 🤖，DeepSeek 融资 74 亿美元 💰，Android MCP 📱
 
 ## 新闻事实
 

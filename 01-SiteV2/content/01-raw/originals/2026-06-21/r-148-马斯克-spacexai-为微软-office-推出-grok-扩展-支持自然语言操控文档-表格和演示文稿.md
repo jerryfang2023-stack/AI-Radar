@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"6月19日，马斯克旗下Space
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "马斯克 SpaceXAI 为微软 Office 推出 Grok 扩展，支持自然语言操控文档、表格和演示文稿"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 马斯克 SpaceXAI 为微软 Office 推出 Grok 扩展，支持自然语言操控文档、表格和演示文稿

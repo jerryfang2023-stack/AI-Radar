@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-029
 title: "Cursor 成立 CFO Council，聚焦 AI 支出新经济学"
 title_zh: "Cursor 成立 CFO Council，聚焦 AI 支出新经济学"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://cursor.com/blog/cfo-council"
 canonical_url: "https://cursor.com/blog/cfo-council"
 source_name: "Cursor Blog"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-07T02:46:59.570Z
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Cursor 成立 CFO Council，聚焦 AI 支出新经济学

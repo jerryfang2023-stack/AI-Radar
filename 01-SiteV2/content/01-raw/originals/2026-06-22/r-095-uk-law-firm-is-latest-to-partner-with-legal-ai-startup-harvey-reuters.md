@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"UK law firm is latest to partner wi
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "英国律所与法律AI初创公司Harvey达成最新合作"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # UK law firm is latest to partner with legal AI startup Harvey | Reuters

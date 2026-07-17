@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Exclusive: Seltz, a startup trying to r
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_zh: "独家：Seltz，一家试图为AI智能体重塑网络搜索的初创公司，完成$12.5种子轮融资"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Exclusive: Seltz, a startup trying to reinvent web search for AI agents, raises $12.5 seed round | Fortune

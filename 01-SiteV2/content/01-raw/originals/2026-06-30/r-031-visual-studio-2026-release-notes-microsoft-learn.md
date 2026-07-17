@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"This release marks the beginning
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_zh: "Visual Studio 2026 发行说明 | Microsoft Learn"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Visual Studio 2026 release notes | Microsoft Learn

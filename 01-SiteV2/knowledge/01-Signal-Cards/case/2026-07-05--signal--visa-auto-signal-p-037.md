@@ -2,7 +2,7 @@
 id: SIG-20260705-A01
 type: signal_card
 signal_type: case
-title: "Visa 与欧洲银行推进智能体商业交易落地"
+title: "Visa与欧洲多家银行推进代理商务下一阶段，为商户解锁安全访问权限"
 date: 2026-07-05
 status: published
 source_title: "Visa and Banks Across Europe Reach the Next Phase of Agentic Commerce, Unlocking Secure Access to Merchants | Visa"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "Visa"
 
 frontend:
-  displayTitle: "Visa 与欧洲银行推进智能体商业交易落地"
+  displayTitle: "Visa与欧洲多家银行推进代理商务下一阶段，为商户解锁安全访问权限"
   sourceLinks:
     - "https://www.visa.co.uk/about-visa/newsroom/press-releases.3457328.html"
 ---
 
-# Visa 与欧洲银行推进智能体商业交易落地
+# Visa与欧洲多家银行推进代理商务下一阶段，为商户解锁安全访问权限
 
 ## 新闻事实
 

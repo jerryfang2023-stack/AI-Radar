@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-17T18:20:10.588Z",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 727,
-    "quarantinedEventCount": 50
+    "eventCount": 818,
+    "quarantinedEventCount": 58
   },
   "entity": {
     "id": "EN-a585f0fe5d2e7895",
@@ -21,8 +21,7 @@
       "canonical"
     ],
     "eventIds": [
-      "EV-ce5a21e927fd7c18",
-      "EV-ff6f1c1ecaa100a0"
+      "EV-ea81ac7de65b0c07"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
@@ -34,43 +33,29 @@
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
-      "productsServices": [
-        "EV-ce5a21e927fd7c18",
-        "EV-ff6f1c1ecaa100a0"
+      "productsServices": [],
+      "hardware": [
+        "EV-ea81ac7de65b0c07"
       ],
-      "hardware": [],
       "organizationPeople": [],
       "other": []
     },
     "timeline": [
       {
-        "id": "EV-ce5a21e927fd7c18",
+        "id": "EV-ea81ac7de65b0c07",
         "dataDate": "2026-06-15",
         "date": "2026-06-15",
-        "eventType": "product_release",
-        "eventTypeLabel": "产品发布",
-        "eventGroup": "模型、产品与服务",
+        "eventType": "hardware_product",
+        "eventTypeLabel": "硬件产品",
+        "eventGroup": "AI 硬件",
         "status": "completed",
         "statusLabel": "已完成",
         "title": "MINIX 推出 ER939-AI Pro AI 工作站迷你主机",
         "displayTags": [],
         "entityIds": [
-          "EN-a585f0fe5d2e7895"
-        ]
-      },
-      {
-        "id": "EV-ff6f1c1ecaa100a0",
-        "dataDate": "2026-06-15",
-        "date": "2026-06-15",
-        "eventType": "product_release",
-        "eventTypeLabel": "产品发布",
-        "eventGroup": "模型、产品与服务",
-        "status": "completed",
-        "statusLabel": "已完成",
-        "title": "MINIX 发布基于酷睿 3 304 的入门级 AI 迷你主机 N304-AI",
-        "displayTags": [],
-        "entityIds": [
-          "EN-a585f0fe5d2e7895"
+          "EN-a585f0fe5d2e7895",
+          "EN-908c564e03e36ecc",
+          "EN-16afaf30cb520fb4"
         ]
       }
     ],
@@ -80,5 +65,35 @@
   "relationships": [],
   "taxonomyNodes": [],
   "fde": [],
-  "hardware": []
+  "hardware": [
+    {
+      "id": "HW-7f6353a7ffff8fcd",
+      "eventId": "EV-ea81ac7de65b0c07",
+      "dataDate": "2026-06-15",
+      "date": "2026-06-15",
+      "title": "MINIX 推出 ER939-AI Pro AI 工作站迷你主机",
+      "hardwareType": "semiconductor",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "未披露",
+      "supplier": "MINIX",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": 128,
+      "capacityUnit": "GB",
+      "site": "未披露",
+      "region": "日本",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/964/222.htm",
+      "sourceName": "IT之家（RSS）",
+      "sourceDate": "2026-06-15",
+      "entityIds": [
+        "EN-a585f0fe5d2e7895",
+        "EN-908c564e03e36ecc",
+        "EN-16afaf30cb520fb4"
+      ]
+    }
+  ]
 }

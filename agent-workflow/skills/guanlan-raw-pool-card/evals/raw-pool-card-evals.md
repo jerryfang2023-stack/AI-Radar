@@ -67,6 +67,8 @@ Do not use numeric scores. Each check must be `pass` or `fail` with the file or 
    - Pass when production auto-translation uses a controlled business-news prompt or deterministic event rules, preserves protected names such as LLM, Anthropic, Cursor, Perplexity, and Fable, and blocks unresolved titles instead of persisting generic public machine-translation errors.
    - Fail when a legacy generic machine translation such as `LLM -> 法学硕士` can satisfy the exact-title translation gate.
    - Pass when a funding headline with a trailing factual clause still produces a source-bounded Chinese title that preserves company, amount, round, and protected AI-agent terminology.
+   - Pass when DeepSeek Flash owns ordinary source-title translation, Pro retries a failed fidelity check, and the Raw record preserves translation method/model provenance.
+   - Fail when a missing DeepSeek credential, unresolved translation, or generic public-MT fallback is allowed through publication.
 
 12. `internal_language_block`
    - Pass when frontstage and Hermes JSON do not expose internal production phrases such as `index_only`, `not_fact_signal`, `auto_signal_spec_null`, `fallback`, `backend field`, or stale V2 module names.

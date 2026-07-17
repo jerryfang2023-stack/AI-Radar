@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-044
 title: "Canva Unveils Canva AI 2.0, Reimagining How The World Designs and Works"
-title_zh: "Canva 发布 Canva AI 2.0, Reimagining How The World Designs 和 Works"
-title_translation_status: translated
-title_translation_method: business-rule_title_translation
+title_zh: "Canva发布Canva AI 2.0，重新定义全球设计与工作方式"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.businesswire.com/news/home/20260416696203/en/Canva-Unveils-Canva-AI-2.0-Reimagining-How-The-World-Designs-and-Works"
 canonical_url: "https://businesswire.com/news/home/20260416696203/en/Canva-Unveils-Canva-AI-2.0-Reimagining-How-The-World-Designs-and-Works"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-10T01:59:54.376Z
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Canva Unveils Canva AI 2.0, Reimagining How The World Designs and Works

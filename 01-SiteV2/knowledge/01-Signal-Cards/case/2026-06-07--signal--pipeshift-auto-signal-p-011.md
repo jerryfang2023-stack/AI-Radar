@@ -2,7 +2,7 @@
 id: SIG-20260607-A11
 type: signal_card
 signal_type: case
-title: "Pipeshift: Inference for real-time production workloads | Y Combinator"
+title: "Pipeshift：面向实时生产工作负载的推理 | Y Combinator"
 date: 2026-06-07
 status: published
 source_title: "Pipeshift: Inference for real-time production workloads | Y Combinator"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Pipeshift"
 
 frontend:
-  displayTitle: "Pipeshift: Inference for real-time production workloads | Y Combinator"
+  displayTitle: "Pipeshift：面向实时生产工作负载的推理 | Y Combinator"
   sourceLinks:
     - "https://www.ycombinator.com/companies/pipeshift"
 ---
 
-# Pipeshift: Inference for real-time production workloads | Y Combinator
+# Pipeshift：面向实时生产工作负载的推理 | Y Combinator
 
 ## 新闻事实
 

@@ -2,7 +2,7 @@
 id: SIG-20260613-A14
 type: signal_card
 signal_type: product_service
-title: "Anthropic Claude Fable 5：价格翻倍，性能仅提升5.7% 发布 AI 基础设施能力，切入模型部署和算力服务"
+title: "Anthropic Claude Fable 5：价格翻倍，性能仅提升5.7%"
 date: 2026-06-13
 status: published
 source_title: "Anthropic Claude Fable 5：价格翻倍，性能仅提升5.7%"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Anthropic Claude Fable 5：价格翻倍，性能仅提升5.7%"
 
 frontend:
-  displayTitle: "Anthropic Claude Fable 5：价格翻倍，性能仅提升5.7% 发布 AI 基础设施能力，切入模型部署和算力服务"
+  displayTitle: "Anthropic Claude Fable 5：价格翻倍，性能仅提升5.7%"
   sourceLinks:
     - "https://the-decoder.com/anthropics-claude-fable-5-costs-twice-as-much-for-5-7-percent-more-performance"
 ---
 
-# Anthropic Claude Fable 5：价格翻倍，性能仅提升5.7% 发布 AI 基础设施能力，切入模型部署和算力服务
+# Anthropic Claude Fable 5：价格翻倍，性能仅提升5.7%
 
 ## 新闻事实
 

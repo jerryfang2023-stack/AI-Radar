@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"SpaceX 同意收购 AI 编程初创 Cur
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "SpaceX 收购 AI 编程公司 Cursor，交易估值 600 亿美元"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # SpaceX 收购 AI 编程公司 Cursor，交易估值 600 亿美元

@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-061
 title: "There were not one, but two asteroid encounters this weekend"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "本周末发生了两次小行星近距离飞掠事件，而非一次。"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://arstechnica.com/space/2026/07/there-were-not-one-but-two-asteroid-encounters-this-weekend/"
 canonical_url: "https://arstechnica.com/space/2026/07/there-were-not-one-but-two-asteroid-encounters-this-weekend"
 source_name: "Ars Technica AI"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-07T02:01:23.645Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # There were not one, but two asteroid encounters this weekend

@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-006
 title: "Prime Intellect raises $130M Series A to help enterprises build their own AI agents | TechCrunch"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "Prime Intellect 获1.3亿美元A轮融资，助力企业构建自有AI代理 | TechCrunch"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://techcrunch.com/2026/07/08/prime-intellect-raises-130m-series-a-to-help-enterprises-build-their-own-ai-agents/"
 canonical_url: "https://techcrunch.com/2026/07/08/prime-intellect-raises-130m-series-a-to-help-enterprises-build-their-own-ai-agents"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-09T03:05:44.833Z
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Prime Intellect raises $130M Series A to help enterprises build their own AI agents | TechCrunch

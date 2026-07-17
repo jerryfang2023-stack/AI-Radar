@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"Introducing Claude Opus 4.8 \\ A
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Anthropic 推出 Claude Opus 4.8"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Introducing Claude Opus 4.8 \ Anthropic

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"Google Research 发布 Vectorized Farmsc
 theme: outside-core-exploration
 keyword_group: outside-core-exploration
 copyright_note: local research archive only
+title_zh: "从像素到规划：Google Research 发布 Vectorized Farmscapes 2020 数据集"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 从像素到规划：Google Research 发布 Vectorized Farmscapes 2020 数据集

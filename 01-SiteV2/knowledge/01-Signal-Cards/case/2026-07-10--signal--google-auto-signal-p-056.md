@@ -2,7 +2,7 @@
 id: SIG-20260710-A08
 type: signal_card
 signal_type: case
-title: "Converteo案例研究| Google Cloud"
+title: "Converteo案例研究 | Google Cloud"
 date: 2026-07-10
 status: published
 source_title: "Converteo case study | Google Cloud"
@@ -57,12 +57,12 @@ opportunity_signals:
 signal_owner: "Google"
 
 frontend:
-  displayTitle: "Converteo案例研究| Google Cloud"
+  displayTitle: "Converteo案例研究 | Google Cloud"
   sourceLinks:
     - "https://cloud.google.com/customers/converteo"
 ---
 
-# Converteo案例研究| Google Cloud
+# Converteo案例研究 | Google Cloud
 
 ## 新闻事实
 

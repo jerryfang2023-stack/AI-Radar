@@ -6,8 +6,7 @@
     "disclosed_at": "2026-06-24T18:36:44.457Z",
     "entities": [
       "EN-7d3194f79e645c42",
-      "EN-373ac021a2c0bb2c",
-      "EN-8d4321d936320802"
+      "EN-373ac021a2c0bb2c"
     ],
     "action": "发布首款定制芯片",
     "object": "Jalapeño，由博通制造",
@@ -16,10 +15,12 @@
     "claim_refs": [
       "CL-b88641e01cdad72a",
       "CL-5413e715d40d2b50",
-      "CL-494e8516ce41967c",
+      "CL-7030daff2ffb4118",
+      "CL-652453caf7e2525b",
       "CL-bda970b74593ef85",
       "CL-1664c1e84b50e11f",
-      "CL-147bacddf0bfcec3"
+      "CL-28e393dcf2d388ef",
+      "CL-6dfd026efb1716d6"
     ],
     "source_refs": [
       "SA-72ee90b730174e9d",
@@ -49,7 +50,8 @@
     "event_time": "2026-06-24T18:35:00.940Z",
     "disclosed_at": "2026-06-24T18:35:00.940Z",
     "entities": [
-      "EN-c70eca6b0f88f44d"
+      "EN-c70eca6b0f88f44d",
+      "EN-d0a0acb9a5ef0560"
     ],
     "action": "推出",
     "object": "Claude Tag，构建人机协作团队",
@@ -58,8 +60,8 @@
     "claim_refs": [
       "CL-09fd919b9c8bcac5",
       "CL-81171588a6640638",
-      "CL-6baaa8a800815886",
-      "CL-0192057e0a80f682"
+      "CL-c4299f65c0aefcab",
+      "CL-5cb0001c8ebbfe21"
     ],
     "source_refs": [
       "SA-8b700a5d815f8cdc"
@@ -84,7 +86,8 @@
     "disclosed_at": "2026-06-24T13:50:56.000Z",
     "entities": [
       "EN-7d3194f79e645c42",
-      "EN-373ac021a2c0bb2c"
+      "EN-373ac021a2c0bb2c",
+      "EN-96eebba49dbbf422"
     ],
     "action": "发布首款定制芯片",
     "object": "\"Jalapeño\"，专为LLM推理设计",
@@ -117,21 +120,32 @@
     "event_time": "2026-06-24T09:00:00.000Z",
     "disclosed_at": "2026-06-24T09:00:00.000Z",
     "entities": [
-      "EN-c70eca6b0f88f44d"
+      "EN-c70eca6b0f88f44d",
+      "EN-96eebba49dbbf422",
+      "EN-7d3194f79e645c42",
+      "EN-d0a0acb9a5ef0560"
     ],
     "action": "推出",
     "object": "Claude Tag 功能，通过 @Claude 调用 AI 智能体",
-    "metrics": [],
-    "locations": [],
+    "metrics": [
+      "$65 billion",
+      "$965 billion",
+      "$852 billion",
+      "34.4%",
+      "32.3%"
+    ],
+    "locations": [
+      "US"
+    ],
     "claim_refs": [
       "CL-25a5162492bd09b0",
       "CL-d5abb17c8d807a39",
-      "CL-f25627c23e38c76d",
-      "CL-3af108f7274def85",
+      "CL-3000e7ac35019671",
+      "CL-44970c4d25da8d06",
       "CL-f11901e3b71eae33",
       "CL-5503a87e4feb0640",
-      "CL-a58a74eaa55d6778",
-      "CL-2ebe72df0c535213"
+      "CL-05e2fae140d03781",
+      "CL-ef3aa23d298d9620"
     ],
     "source_refs": [
       "SA-478445e6957e13c8",
@@ -157,7 +171,7 @@
   },
   {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "",
     "disclosed_at": "2026-06-25T03:26:00.335Z",
     "entities": [
@@ -185,21 +199,63 @@
       "SA-2ec1181cc56676b9"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-2ec1181cc56676b9",
         "disclosed_at": "2026-06-25T03:26:00.335Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
     "event_id": "EV-f487788f3d44f288",
-    "display_title_zh": "Assort Health 完成 1.2 亿美元 C 轮融资"
+    "display_title_zh": "Assort Health完成1.2亿美元C轮融资，用于扩大患者旅程中最大规模AI代理部署"
   },
   {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
+    "event_time": "",
+    "disclosed_at": "2026-06-25T03:26:00.346Z",
+    "entities": [
+      "EN-332ca661b9b8defe",
+      "EN-96eebba49dbbf422"
+    ],
+    "action": "raised",
+    "object": "$13.5M to define Process Intelligence for the Agentic Era",
+    "metrics": [
+      "$13.5M",
+      "$13.5 million"
+    ],
+    "locations": [],
+    "claim_refs": [
+      "CL-b342b3d28ab10ce7",
+      "CL-dbbeb41474ec7d75",
+      "CL-6ab852a7e32d1d33",
+      "CL-f944c89bef0e71c6"
+    ],
+    "source_refs": [
+      "SA-f0291fcaf2996212"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "event_time"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-f0291fcaf2996212",
+        "disclosed_at": "2026-06-25T03:26:00.346Z",
+        "status": "completed"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-2bea8d8046a9b325",
+    "display_title_zh": "我们为何融资1350万美元，为智能体时代定义流程智能"
+  },
+  {
+    "event_type": "funding",
+    "event_status": "completed",
     "event_time": "",
     "disclosed_at": "2026-06-25T03:26:00.350Z",
     "entities": [
@@ -227,22 +283,108 @@
       "SA-8311c3822938bcf5"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-23428d7fc7b43cc2",
         "disclosed_at": "2026-06-25T03:26:00.350Z",
-        "status": "announced"
+        "status": "completed"
       },
       {
         "source_ref": "SA-8311c3822938bcf5",
         "disclosed_at": "2026-06-25T05:10:40.098Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
     "event_id": "EV-ad0589423b3aa1ce",
-    "display_title_zh": "Compri 完成 320 万欧元 种子轮融资"
+    "display_title_zh": "Compri获320万欧元融资，打造AI驱动的采购团队 - Tech.eu"
+  },
+  {
+    "event_type": "funding",
+    "event_status": "completed",
+    "event_time": "",
+    "disclosed_at": "2026-06-25T03:26:00.359Z",
+    "entities": [],
+    "action": "raised",
+    "object": "$30 million | Fortune",
+    "metrics": [
+      "$30 million",
+      "$42 million",
+      "$11 million"
+    ],
+    "locations": [],
+    "claim_refs": [
+      "CL-608fabcffd3158a7",
+      "CL-5f698fc55c752013",
+      "CL-3a8f3cebc775c977",
+      "CL-d619f647981a0bf6",
+      "CL-e407c14141c8071b"
+    ],
+    "source_refs": [
+      "SA-54df3798734d572f",
+      "SA-154b2b3c6c20227a"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "entities",
+      "event_time",
+      "display_title_zh"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-54df3798734d572f",
+        "disclosed_at": "2026-06-25T03:26:00.359Z",
+        "status": "completed"
+      },
+      {
+        "source_ref": "SA-154b2b3c6c20227a",
+        "disclosed_at": "2026-06-25T05:10:40.234Z",
+        "status": "completed"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-8aa51e324eca8fc2",
+    "display_title_zh": ""
+  },
+  {
+    "event_type": "deployment",
+    "event_status": "completed",
+    "event_time": "",
+    "disclosed_at": "2026-06-25T03:26:00.394Z",
+    "entities": [
+      "EN-b5738c169b693bee",
+      "EN-4d748ebd71af03a7"
+    ],
+    "action": "Deployed",
+    "object": "Engineering Program to Scale Agentic AI Across the Enterprise",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-48ae9d3e9da0463a",
+      "CL-ed11bcd6e11af7dc",
+      "CL-0b53c5d34059a0d8",
+      "CL-9905bb3790fa4cb5"
+    ],
+    "source_refs": [
+      "SA-9e31d352aeaee3a1"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "event_time"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-9e31d352aeaee3a1",
+        "disclosed_at": "2026-06-25T03:26:00.394Z",
+        "status": "completed"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-eb2b4ee2c8cb0daa",
+    "display_title_zh": "ServiceNow与埃森哲推出前沿部署工程计划，助力企业规模化部署Agentic AI"
   },
   {
     "event_type": "product_release",
@@ -284,7 +426,9 @@
     "event_time": "2026-06-24T17:16:24.000Z",
     "disclosed_at": "2026-06-24T17:16:24.000Z",
     "entities": [
-      "EN-ea3bd73e2b506e00"
+      "EN-3d59f7548e1af215",
+      "EN-ea3bd73e2b506e00",
+      "EN-05644efc4f4a9f67"
     ],
     "action": "推出",
     "object": "独立 AI 伴侣应用 Creator Studio",
@@ -319,12 +463,12 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-41e534c846124691",
+    "event_id": "EV-cea99e5d7f93d56a",
     "display_title_zh": "Facebook 推出独立 AI 伴侣应用 Creator Studio"
   },
   {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "",
     "disclosed_at": "2026-06-25T03:26:00.431Z",
     "entities": [
@@ -350,17 +494,19 @@
       "SA-2518d69d1420fa39"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-2518d69d1420fa39",
         "disclosed_at": "2026-06-25T03:26:00.431Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
     "event_id": "EV-9fc8916c19c19f99",
-    "display_title_zh": "Telli 完成 360 万美元 种子前轮融资"
+    "display_title_zh": "AI语音代理初创公司Telli获360万美元预种子轮融资 - 加拿大创业生态系统"
   },
   {
     "event_type": "product_release",
@@ -368,6 +514,7 @@
     "event_time": "2026-06-24T16:15:00.000Z",
     "disclosed_at": "2026-06-24T16:15:00.000Z",
     "entities": [
+      "EN-30b6a841f80922c2",
       "EN-c70eca6b0f88f44d",
       "EN-7d3194f79e645c42"
     ],
@@ -393,7 +540,7 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-cf883e02c693dfea",
+    "event_id": "EV-b26bead25288d19c",
     "display_title_zh": "Figma更新：新增代码层、动画和AI功能"
   },
   {
@@ -409,7 +556,9 @@
     "metrics": [],
     "locations": [],
     "claim_refs": [
-      "CL-c183188d5d74dc04"
+      "CL-c183188d5d74dc04",
+      "CL-1bf61402cc6f3a00",
+      "CL-7e0c8bcc39dfd530"
     ],
     "source_refs": [
       "SA-eb80275c25212864"
@@ -428,48 +577,16 @@
     "display_title_zh": "豆包专业版正式发布，接入豆包2.1 Pro模型，连续包月68元起"
   },
   {
-    "event_type": "model_release",
-    "event_status": "completed",
-    "event_time": "2026-06-24T20:00:21.000Z",
-    "disclosed_at": "2026-06-24T20:00:21.000Z",
-    "entities": [
-      "EN-bbdefa2950f49882"
-    ],
-    "action": "发布实时语音翻译模型",
-    "object": "stt-translate 和 s2s-translate",
-    "metrics": [],
-    "locations": [],
-    "claim_refs": [
-      "CL-b69823db9ef52a2b",
-      "CL-345fe6ea4399b029",
-      "CL-cce7cec99e22ecb4",
-      "CL-0a80dd8ba0b13152"
-    ],
-    "source_refs": [
-      "SA-df461ff02397b304"
-    ],
-    "conflicts": [],
-    "missing_fields": [],
-    "update_history": [
-      {
-        "source_ref": "SA-df461ff02397b304",
-        "disclosed_at": "2026-06-24T20:00:21.000Z",
-        "status": "completed"
-      }
-    ],
-    "publication_status": "verified",
-    "event_id": "EV-c6359191a071b538",
-    "display_title_zh": "Gradium 发布实时语音翻译模型 stt-translate 和 s2s-translate"
-  },
-  {
     "event_type": "product_release",
     "event_status": "announced",
     "event_time": "",
     "disclosed_at": "2026-06-25T03:26:00.458Z",
     "entities": [
       "EN-7d3194f79e645c42",
+      "EN-178e3a5167e8e1d5",
       "EN-3db1f560db626918",
-      "EN-2b78da3dc866654e"
+      "EN-2b78da3dc866654e",
+      "EN-bd2bfbea5911ec7a"
     ],
     "action": "Launch",
     "object": "OpenAI DevDay 2025: AgentKit, Apps SDK and new API Launch",
@@ -490,7 +607,8 @@
     ],
     "conflicts": [],
     "missing_fields": [
-      "object"
+      "object",
+      "event_time"
     ],
     "update_history": [
       {
@@ -501,31 +619,38 @@
     ],
     "publication_status": "verified",
     "event_id": "EV-a0d3853dd41c8ef6",
-    "display_title_zh": "OpenAI 发布 OpenAI DevDay 2025"
+    "display_title_zh": "OpenAI DevDay 2025：AgentKit、Apps SDK及新API发布"
   },
   {
-    "event_type": "product_release",
+    "event_type": "hardware_product",
     "event_status": "completed",
     "event_time": "2026-06-24T08:11:10.000Z",
     "disclosed_at": "2026-06-24T08:11:10.000Z",
     "entities": [
-      "EN-8d4321d936320802"
+      "EN-98502f8f7e5e64cd",
+      "EN-8d4321d936320802",
+      "EN-a1b0d8a938903dc7",
+      "EN-cb29f2627d5408e0"
     ],
-    "action": "推出",
-    "object": "边缘 AI 系统 MS-NAT5000，搭载 NVIDIA Jetson Thor 模组",
-    "metrics": [],
+    "action": "推出边缘 AI 系统 MS-NAT5000，搭载 NVIDIA Jetson Thor 模组",
+    "object": "映泰推出边缘 AI 系统 MS-NAT5000，搭载 NVIDIA Jetson Thor 模组",
+    "metrics": [
+      "128GB"
+    ],
     "locations": [],
     "claim_refs": [
       "CL-34eae2e3cf08f5dd",
       "CL-bf403f976718f0a9",
       "CL-491026e3b84ada48",
-      "CL-e50d6de409a10013"
+      "CL-030aaa8424464499"
     ],
     "source_refs": [
       "SA-a02988935452a619"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "object"
+    ],
     "update_history": [
       {
         "source_ref": "SA-a02988935452a619",
@@ -534,8 +659,44 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-13f105479652938d",
+    "event_id": "EV-5d50eb202b478bd4",
     "display_title_zh": "映泰推出边缘 AI 系统 MS-NAT5000，搭载 NVIDIA Jetson Thor 模组"
+  },
+  {
+    "event_type": "product_release",
+    "event_status": "planned",
+    "event_time": "2026-06-24T09:06:30.000Z",
+    "disclosed_at": "2026-06-24T09:06:30.000Z",
+    "entities": [
+      "EN-a757e4eb89baa567",
+      "EN-c70eca6b0f88f44d",
+      "EN-d0a0acb9a5ef0560"
+    ],
+    "action": "推出",
+    "object": "AI 虚拟团队成员 Claude Tag",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-cc3baf9939903d46",
+      "CL-07375a7c088d6f25",
+      "CL-b04f83b168af2936",
+      "CL-4774b7a5f2c5ebdc"
+    ],
+    "source_refs": [
+      "SA-a559cbc25faafbfc"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-a559cbc25faafbfc",
+        "disclosed_at": "2026-06-24T09:06:30.000Z",
+        "status": "planned"
+      }
+    ],
+    "publication_status": "partial",
+    "event_id": "EV-b796ba14c4eba861",
+    "display_title_zh": "仅需 @ 即可调用：Anthropic 推出 AI 虚拟团队成员 Claude Tag"
   },
   {
     "event_type": "deployment",
@@ -553,7 +714,7 @@
       "CL-719a139726dade38",
       "CL-2567967a5245b713",
       "CL-b41900199ad411cb",
-      "CL-5fb0f9f2047b3f18"
+      "CL-fb79b5413c6c9eda"
     ],
     "source_refs": [
       "SA-0dd8c0be4e629f72"
@@ -570,40 +731,6 @@
     "publication_status": "verified",
     "event_id": "EV-62901df23f471eea",
     "display_title_zh": "OpenAI ChatGPT 语音最大规模升级：双向AI语音模型 Bidi 1 已上线测试"
-  },
-  {
-    "event_type": "model_release",
-    "event_status": "completed",
-    "event_time": "2026-06-24T22:45:09.000Z",
-    "disclosed_at": "2026-06-24T22:45:09.000Z",
-    "entities": [
-      "EN-bbdefa2950f49882"
-    ],
-    "action": "发布时间推迟至 7 月，旨在优化模型",
-    "object": "性能",
-    "metrics": [],
-    "locations": [],
-    "claim_refs": [
-      "CL-e08c104d51134491",
-      "CL-e2dc27412ae997a0",
-      "CL-bf116a91decea524",
-      "CL-0e6a3f002f1d1a88"
-    ],
-    "source_refs": [
-      "SA-fc35c2bc2ceec86b"
-    ],
-    "conflicts": [],
-    "missing_fields": [],
-    "update_history": [
-      {
-        "source_ref": "SA-fc35c2bc2ceec86b",
-        "disclosed_at": "2026-06-24T22:45:09.000Z",
-        "status": "completed"
-      }
-    ],
-    "publication_status": "verified",
-    "event_id": "EV-c60208ea9b51f47a",
-    "display_title_zh": "消息称谷歌 Gemini 3.5 Pro 发布时间推迟至 7 月，旨在优化模型性能"
   },
   {
     "event_type": "acquisition",
@@ -647,7 +774,9 @@
     "event_time": "2026-06-24T09:28:40.000Z",
     "disclosed_at": "2026-06-24T09:28:40.000Z",
     "entities": [
-      "EN-c04bd5ebd10ab696"
+      "EN-c04bd5ebd10ab696",
+      "EN-920510199770f4d6",
+      "EN-2c2a76216a876127"
     ],
     "action": "发布 OCR 4 模型",
     "object": "：在盲测中 72% 情况下超越竞品",
@@ -656,8 +785,8 @@
     "claim_refs": [
       "CL-8db6e572caff04f0",
       "CL-e93ecebce51681b4",
-      "CL-16f20968b8b7fbe1",
-      "CL-336b7a094fa91dae"
+      "CL-3b1ce463fe408334",
+      "CL-059c5d5c176b6330"
     ],
     "source_refs": [
       "SA-f8ea1918edf77ac5"
@@ -677,7 +806,7 @@
   },
   {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "",
     "disclosed_at": "2026-06-25T03:26:00.568Z",
     "entities": [
@@ -704,17 +833,20 @@
       "SA-b1c5bd5413afd07a"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time",
+      "display_title_zh"
+    ],
     "update_history": [
       {
         "source_ref": "SA-b1c5bd5413afd07a",
         "disclosed_at": "2026-06-25T03:26:00.568Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "partial",
     "event_id": "EV-da064f736e880e30",
-    "display_title_zh": "EV startup VOICE 完成 2500 万美元 A 轮融资"
+    "display_title_zh": ""
   },
   {
     "event_type": "product_release",
@@ -752,43 +884,43 @@
   },
   {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "",
     "disclosed_at": "2026-06-25T03:26:00.589Z",
     "entities": [
+      "EN-577d8adaee97497b",
       "EN-b0532e1af75cc4ab"
     ],
     "action": "Raises",
     "object": "$2.5 Million in Seed Funding Led by Prime Venture Partners - Startup Rise Asia",
     "metrics": [
       "$2.5 Million",
-      "$2.5 million",
-      "$22 M"
+      "$2.5 million"
     ],
-    "locations": [
-      "US"
-    ],
+    "locations": [],
     "claim_refs": [
       "CL-11838c60d8033366",
       "CL-223caccb6d98d692",
-      "CL-9d0758a43255602a",
-      "CL-f6132ddb615eb083"
+      "CL-166fcf7aaf3ea7bd",
+      "CL-e3b39869c6379032"
     ],
     "source_refs": [
       "SA-8dbe0e8f19bfa626"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-8dbe0e8f19bfa626",
         "disclosed_at": "2026-06-25T03:26:00.589Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-9326c7450f6c318d",
-    "display_title_zh": "Rime 完成 250 万美元 A 轮融资"
+    "event_id": "EV-a7e14985b924b464",
+    "display_title_zh": "Illumine 获 Prime Venture Partners 领投的 250 万美元种子轮融资 - Startup Rise Asia"
   },
   {
     "event_type": "partnership",
@@ -798,10 +930,10 @@
     "entities": [
       "EN-b5738c169b693bee",
       "EN-8d4321d936320802",
+      "EN-96eebba49dbbf422",
       "EN-4d748ebd71af03a7",
       "EN-bbdefa2950f49882",
-      "EN-916a98f0fa2a39af",
-      "EN-9fbf261b62c1d7c0"
+      "EN-916a98f0fa2a39af"
     ],
     "action": "partnership",
     "object": ", launch new AI agent - The Economic Times",
@@ -818,7 +950,9 @@
       "SA-f612cc9430dd9ff1"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-10e605e5a43ab661",
@@ -833,44 +967,47 @@
     ],
     "publication_status": "partial",
     "event_id": "EV-b95539d17772a4ce",
-    "display_title_zh": "ServiceNow 与 NVIDIA 达成商业合作"
+    "display_title_zh": "ServiceNow与Nvidia扩大合作，推出新AI代理 - 《经济时报》"
   },
   {
     "event_type": "product_release",
-    "event_status": "announced",
-    "event_time": "",
-    "disclosed_at": "2026-06-25T03:26:00.606Z",
+    "event_status": "completed",
+    "event_time": "2026-06-24T04:23:36.000Z",
+    "disclosed_at": "2026-06-24T04:23:36.000Z",
     "entities": [
-      "EN-c70eca6b0f88f44d",
-      "EN-7d3194f79e645c42"
+      "EN-e16fc821f34228d1",
+      "EN-047364b9be67f665",
+      "EN-16fe95bd48dbf178"
     ],
-    "action": "Launch",
-    "object": "AI Agent Builder 2026: Build Your First AI Agent | Better Launch",
-    "metrics": [],
-    "locations": [],
+    "action": "推出",
+    "object": "\"峰谷 Token\"，错峰使用 Qwen 3.7 低至 2 折",
+    "metrics": [
+      "500 万"
+    ],
+    "locations": [
+      "中国"
+    ],
     "claim_refs": [
-      "CL-b57532f167a1524d",
-      "CL-75c48c76eeb8f697",
-      "CL-336ac6bc35e65f8d",
-      "CL-6bdd1189dd891ce0"
+      "CL-7ffba551f34adfdb",
+      "CL-a791c3122c2ed06f",
+      "CL-c41530a8c9e2911c",
+      "CL-e1a3f19c09efd2b4"
     ],
     "source_refs": [
-      "SA-b5a6776bfe70ccc5"
+      "SA-70143bc26a97eb6e"
     ],
     "conflicts": [],
-    "missing_fields": [
-      "object"
-    ],
+    "missing_fields": [],
     "update_history": [
       {
-        "source_ref": "SA-b5a6776bfe70ccc5",
-        "disclosed_at": "2026-06-25T03:26:00.606Z",
-        "status": "announced"
+        "source_ref": "SA-70143bc26a97eb6e",
+        "disclosed_at": "2026-06-24T04:23:36.000Z",
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-9659eb492a9eea1b",
-    "display_title_zh": "Anthropic 发布 AI Agent Builder 2026"
+    "event_id": "EV-c54172bf4e0c1068",
+    "display_title_zh": "阿里云：QoderWork 推出\"峰谷 Token\"，错峰使用 Qwen 3.7 低至 2 折"
   },
   {
     "event_type": "product_release",
@@ -894,7 +1031,9 @@
       "SA-6493772094296d16"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-6493772094296d16",
@@ -904,15 +1043,16 @@
     ],
     "publication_status": "verified",
     "event_id": "EV-f50752717e2a8536",
-    "display_title_zh": "Kore.ai 发布 AI platform for enterprise workflow automation"
+    "display_title_zh": "Kore.ai推出企业工作流自动化AI平台"
   },
   {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "",
     "disclosed_at": "2026-06-25T03:26:00.649Z",
     "entities": [
-      "EN-b51b27d89f9ea747"
+      "EN-b51b27d89f9ea747",
+      "EN-96eebba49dbbf422"
     ],
     "action": "raises",
     "object": "$1.6 million in seed funding | Medial",
@@ -932,21 +1072,24 @@
       "SA-c176d6ed0bbf9067"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time",
+      "display_title_zh"
+    ],
     "update_history": [
       {
         "source_ref": "SA-c176d6ed0bbf9067",
         "disclosed_at": "2026-06-25T03:26:00.649Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "partial",
     "event_id": "EV-9fa9822969d3c3fd",
-    "display_title_zh": "Finance automation startup ZenStatement 完成 160 万美元 A 轮融资"
+    "display_title_zh": ""
   },
   {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "",
     "disclosed_at": "2026-06-25T03:26:00.714Z",
     "entities": [
@@ -972,25 +1115,29 @@
       "SA-acf5b8d5f72f61a6"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time",
+      "display_title_zh"
+    ],
     "update_history": [
       {
         "source_ref": "SA-acf5b8d5f72f61a6",
         "disclosed_at": "2026-06-25T03:26:00.714Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "partial",
     "event_id": "EV-010946e35d35bb43",
-    "display_title_zh": "YC-backed Weekday 完成 220 万美元 A 轮融资"
+    "display_title_zh": ""
   },
   {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "",
     "disclosed_at": "2026-06-25T03:26:00.720Z",
     "entities": [
-      "EN-122c0bebae950c77"
+      "EN-122c0bebae950c77",
+      "EN-96eebba49dbbf422"
     ],
     "action": "Secures",
     "object": "Pre-Seed Funding from Venture Catalysts",
@@ -1003,17 +1150,19 @@
       "SA-f6dde18ac412aa89"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-f6dde18ac412aa89",
         "disclosed_at": "2026-06-25T03:26:00.720Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "partial",
     "event_id": "EV-5f5f252c6a826599",
-    "display_title_zh": "Fire AI 完成 种子前轮融资"
+    "display_title_zh": "Fire AI从Venture Catalysts获得种子轮前融资"
   },
   {
     "event_type": "partnership",
@@ -1022,7 +1171,8 @@
     "disclosed_at": "2026-06-25T03:26:00.722Z",
     "entities": [
       "EN-b5738c169b693bee",
-      "EN-8d4321d936320802"
+      "EN-8d4321d936320802",
+      "EN-96eebba49dbbf422"
     ],
     "action": "partnership",
     "object": ", launch new AI agent, ETTelecom",
@@ -1035,7 +1185,9 @@
       "SA-77631ef5b46eb2a4"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-77631ef5b46eb2a4",
@@ -1045,7 +1197,7 @@
     ],
     "publication_status": "partial",
     "event_id": "EV-f63462e34ea40699",
-    "display_title_zh": "ServiceNow 与 NVIDIA 达成商业合作"
+    "display_title_zh": "ServiceNow与英伟达扩大合作，推出全新AI代理，ETTelecom"
   },
   {
     "event_type": "product_release",
@@ -1053,7 +1205,11 @@
     "event_time": "",
     "disclosed_at": "2026-06-25T03:26:00.730Z",
     "entities": [
-      "EN-7d3194f79e645c42"
+      "EN-89e28a570dce8b18",
+      "EN-7d3194f79e645c42",
+      "EN-b70e8201c9feb94a",
+      "EN-3673c8b4dba7409e",
+      "EN-7b80ed96beed8c0a"
     ],
     "action": "Launches",
     "object": "Agent Builder to Compete with n8n and Zapier in AI Workflow Automation",
@@ -1061,13 +1217,18 @@
     "locations": [],
     "claim_refs": [
       "CL-57944e88ad8b9e0f",
-      "CL-4629f6be78335566"
+      "CL-4629f6be78335566",
+      "CL-f072801e086bbc7e",
+      "CL-c46156bcf6d9fb53"
     ],
     "source_refs": [
       "SA-d0f9d0d6b7907fd9"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time",
+      "display_title_zh"
+    ],
     "update_history": [
       {
         "source_ref": "SA-d0f9d0d6b7907fd9",
@@ -1076,7 +1237,7 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-fbde4dad2288059a",
-    "display_title_zh": "OpenAI 发布 Agent Builder to Compete"
+    "event_id": "EV-6364cfadff0d1d30",
+    "display_title_zh": ""
   }
 ]

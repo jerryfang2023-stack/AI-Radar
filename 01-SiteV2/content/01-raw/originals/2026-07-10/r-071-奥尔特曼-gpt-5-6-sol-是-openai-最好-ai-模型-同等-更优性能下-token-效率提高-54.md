@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-071
 title: "奥尔特曼：GPT-5.6 Sol 是 OpenAI 最好 AI 模型，同等 / 更优性能下 Token 效率提高 54%"
 title_zh: "奥尔特曼：GPT-5.6 Sol 是 OpenAI 最好 AI 模型，同等 / 更优性能下 Token 效率提高 54%"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/974/792.htm"
 canonical_url: "https://ithome.com/0/974/792.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-10T02:00:00.723Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 奥尔特曼：GPT-5.6 Sol 是 OpenAI 最好 AI 模型，同等 / 更优性能下 Token 效率提高 54%

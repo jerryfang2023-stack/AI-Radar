@@ -72,6 +72,10 @@ key_excerpts: [{"type":"workflow_change","text":"Google Cloud Workbench Notebook
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "Google Cloud Workbench Notebooks 扩展发布：在 VS Code 中连接云端 Jupyter 环境"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Google Cloud Workbench Notebooks 扩展发布：在 VS Code 中连接云端 Jupyter 环境

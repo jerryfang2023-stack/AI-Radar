@@ -2,7 +2,7 @@
 id: SIG-20260625-A18
 type: signal_card
 signal_type: product_service
-title: "Kore.ai launches AI platform for enterprise workflow automation"
+title: "Kore.ai推出企业工作流自动化AI平台"
 date: 2026-06-25
 status: published
 source_title: "Kore.ai launches AI platform for enterprise workflow automation"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Process"
 
 frontend:
-  displayTitle: "Kore.ai launches AI platform for enterprise workflow automation"
+  displayTitle: "Kore.ai推出企业工作流自动化AI平台"
   sourceLinks:
     - "https://itbrief.com.au/story/kore-ai-launches-ai-platform-for-enterprise-workflow-automation"
 ---
 
-# Kore.ai launches AI platform for enterprise workflow automation
+# Kore.ai推出企业工作流自动化AI平台
 
 ## 新闻事实
 

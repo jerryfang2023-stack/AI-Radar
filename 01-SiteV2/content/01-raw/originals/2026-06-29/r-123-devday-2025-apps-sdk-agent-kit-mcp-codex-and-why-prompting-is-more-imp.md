@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"At OpenAI DevDay, we sit down with 
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "DevDay 2025：Apps SDK、Agent Kit、MCP、Codex 以及提示为何比以往更重要"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # DevDay 2025: Apps SDK, Agent Kit, MCP, Codex and why Prompting is More Important than Ever

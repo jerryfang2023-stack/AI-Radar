@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"GLM Coding Pro 在 Lite 基础上提供 
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "GLM Coding Pro 发布：面向专业开发者的编码助手"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # GLM Coding Pro 发布：面向专业开发者的编码助手

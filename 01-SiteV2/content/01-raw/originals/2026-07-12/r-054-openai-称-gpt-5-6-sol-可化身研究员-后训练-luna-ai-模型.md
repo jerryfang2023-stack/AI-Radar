@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-054
 title: "OpenAI 称 GPT-5.6 Sol 可化身研究员，后训练 Luna AI 模型"
 title_zh: "OpenAI 称 GPT-5.6 Sol 可化身研究员，后训练 Luna AI 模型"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/975/461.htm"
 canonical_url: "https://ithome.com/0/975/461.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-12T09:55:36.252Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # OpenAI 称 GPT-5.6 Sol 可化身研究员，后训练 Luna AI 模型

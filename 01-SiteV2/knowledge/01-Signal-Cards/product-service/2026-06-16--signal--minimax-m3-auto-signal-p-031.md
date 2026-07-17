@@ -2,7 +2,7 @@
 id: SIG-20260616-A16
 type: signal_card
 signal_type: product_service
-title: "MiniMax M3模型正式开源：原生多模态、百万上下文 推出 Agent 工作流能力，切入销售线索和收入团队协作"
+title: "MiniMax M3模型正式开源：原生多模态、百万上下文"
 date: 2026-06-16
 status: published
 source_title: "MiniMax M3模型正式开源：原生多模态、百万上下文"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "MiniMax M3模型正式开源：原生多模态、百万上下文"
 
 frontend:
-  displayTitle: "MiniMax M3模型正式开源：原生多模态、百万上下文 推出 Agent 工作流能力，切入销售线索和收入团队协作"
+  displayTitle: "MiniMax M3模型正式开源：原生多模态、百万上下文"
   sourceLinks:
     - "https://www.ithome.com/0/964/622.htm"
 ---
 
-# MiniMax M3模型正式开源：原生多模态、百万上下文 推出 Agent 工作流能力，切入销售线索和收入团队协作
+# MiniMax M3模型正式开源：原生多模态、百万上下文
 
 ## 新闻事实
 

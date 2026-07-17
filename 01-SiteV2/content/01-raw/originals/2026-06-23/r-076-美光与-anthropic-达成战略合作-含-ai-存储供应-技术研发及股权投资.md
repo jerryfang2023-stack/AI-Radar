@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"美光科技与 Anthropic 宣布战略�
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "美光与 Anthropic 达成战略合作，含 AI 存储供应、技术研发及股权投资"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 美光与 Anthropic 达成战略合作，含 AI 存储供应、技术研发及股权投资

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"Audio Interaction是一个开源
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "Audio Interaction：开源语音模型持续监听，每0.4秒决定是否说话或保持沉默"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Audio Interaction：开源语音模型持续监听，每0.4秒决定是否说话或保持沉默

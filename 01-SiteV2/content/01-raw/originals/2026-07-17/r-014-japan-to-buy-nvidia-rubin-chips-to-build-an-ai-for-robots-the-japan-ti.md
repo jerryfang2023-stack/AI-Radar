@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-014
 title: "Japan to buy Nvidia Rubin chips to build an AI for robots - The Japan Times"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "日本将购买英伟达Rubin芯片，用于构建机器人AI——《日本时报》"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.japantimes.co.jp/business/2026/07/16/japan-nvidia-rubin-chips-robots/"
 canonical_url: "https://japantimes.co.jp/business/2026/07/16/japan-nvidia-rubin-chips-robots"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-17T04:40:16.866Z
 theme: ai-hardware-scenario-service-signal
 keyword_group: ai-hardware-scenario-service-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Japan to buy Nvidia Rubin chips to build an AI for robots - The Japan Times

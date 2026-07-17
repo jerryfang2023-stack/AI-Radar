@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-022
 title: "Google Images 25周年：推出可浏览图片主页与AI Overviews图像生成功能"
 title_zh: "Google Images 25周年：推出可浏览图片主页与AI Overviews图像生成功能"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://blog.google/products-and-platforms/products/search/google-images-25th-anniversary"
 canonical_url: "https://blog.google/products-and-platforms/products/search/google-images-25th-anniversary"
 source_name: "Google Blog：AI（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-15T04:28:37.664Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Google Images 25周年：推出可浏览图片主页与AI Overviews图像生成功能

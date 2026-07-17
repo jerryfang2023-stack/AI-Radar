@@ -72,6 +72,10 @@ key_excerpts: [{"type":"quote","text":"美国商务部撤销对 Anthropic 旗下
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "美国商务部\"松手\"，Anthropic 现可对外出口 Fable 及 Mythos AI 模型"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 美国商务部"松手"，Anthropic 现可对外出口 Fable 及 Mythos AI 模型

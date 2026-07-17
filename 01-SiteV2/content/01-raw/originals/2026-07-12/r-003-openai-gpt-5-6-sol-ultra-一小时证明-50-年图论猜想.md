@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-003
 title: "OpenAI GPT-5.6 Sol Ultra 一小时证明 50 年图论猜想"
 title_zh: "OpenAI GPT-5.6 Sol Ultra 一小时证明 50 年图论猜想"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/975/646.htm"
 canonical_url: "https://ithome.com/0/975/646.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-12T09:55:23.628Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # OpenAI GPT-5.6 Sol Ultra 一小时证明 50 年图论猜想

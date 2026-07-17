@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"Anthropic宣布与塔塔咨询服务（T
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "TCS与Anthropic合作，将Claude引入受监管行业"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # TCS与Anthropic合作，将Claude引入受监管行业

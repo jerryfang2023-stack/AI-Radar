@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"A first-person account of building an AI
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_zh: "采购领域企业AI代理 | Madgeek"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Enterprise AI Agent for Procurement | Madgeek

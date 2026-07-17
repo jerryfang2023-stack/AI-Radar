@@ -2,7 +2,7 @@
 id: SIG-20260613-A09
 type: signal_card
 signal_type: product_service
-title: "Ithome 推出 Agent 工作流能力，切入模型部署和算力服务"
+title: "华为发布HarmonyOS开发套件26.0.0 Beta1"
 date: 2026-06-13
 status: published
 source_title: "华为发布HarmonyOS开发套件26.0.0 Beta1"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Ithome"
 
 frontend:
-  displayTitle: "Ithome 推出 Agent 工作流能力，切入模型部署和算力服务"
+  displayTitle: "华为发布HarmonyOS开发套件26.0.0 Beta1"
   sourceLinks:
     - "https://www.ithome.com/0/963/510.htm"
 ---
 
-# Ithome 推出 Agent 工作流能力，切入模型部署和算力服务
+# 华为发布HarmonyOS开发套件26.0.0 Beta1
 
 ## 新闻事实
 

@@ -126,7 +126,7 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-094f63d13201f8d9",
+    "claim_id": "CL-3ac47068224db228",
     "raw_id": "RAW-ab827b552075db19",
     "claim_type": "acquisition",
     "subject": "AI Enterprise Software",
@@ -138,10 +138,31 @@
     },
     "source_span": {
       "raw_id": "RAW-ab827b552075db19",
-      "start": 206,
-      "end": 278
+      "start": 108,
+      "end": 175
     },
-    "source_quote": "• Enterprise software with recurring revenue only, little to no hardware",
+    "source_quote": "• $5 to $200 million in revenues, with at least 50% being recurring",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-24386b6e887c22ad",
+    "raw_id": "RAW-ab827b552075db19",
+    "claim_type": "acquisition",
+    "subject": "AI Enterprise Software",
+    "predicate": "acquisition",
+    "object": "Partners - Assertive Industries, Inc.",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-ab827b552075db19",
+      "start": 176,
+      "end": 205
+    },
+    "source_quote": "• Based in USA, Canada, or UK",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"

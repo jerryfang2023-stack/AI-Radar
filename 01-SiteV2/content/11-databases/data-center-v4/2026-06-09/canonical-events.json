@@ -6,7 +6,9 @@
     "disclosed_at": "2026-06-08T22:24:02.356Z",
     "entities": [
       "EN-3a7bd3e2360a3d29",
-      "EN-c70eca6b0f88f44d"
+      "EN-c70eca6b0f88f44d",
+      "EN-96eebba49dbbf422",
+      "EN-41dcc2d4951f337b"
     ],
     "action": "推出",
     "object": "新 Swift 包",
@@ -40,7 +42,8 @@
     "event_time": "2026-06-08T21:57:18.000Z",
     "disclosed_at": "2026-06-08T21:57:18.000Z",
     "entities": [
-      "EN-c70eca6b0f88f44d"
+      "EN-c70eca6b0f88f44d",
+      "EN-9ab4135a1cdb0a8c"
     ],
     "action": "发布",
     "object": "Claude Code v2.1.169 发布",
@@ -71,44 +74,8 @@
     "display_title_zh": "Claude Code v2.1.169 发布"
   },
   {
-    "event_type": "model_release",
-    "event_status": "completed",
-    "event_time": "2026-06-08T08:56:49.000Z",
-    "disclosed_at": "2026-06-08T08:56:49.000Z",
-    "entities": [
-      "EN-9fbf261b62c1d7c0"
-    ],
-    "action": "推出 MAI-Transcribe-1.5 语音转文本模型",
-    "object": "Microsoft AI 推出 MAI-Transcribe-1.5 语音转文本模型",
-    "metrics": [],
-    "locations": [],
-    "claim_refs": [
-      "CL-8976d2e29bba202e",
-      "CL-34c74d3b793ed628",
-      "CL-7ed1f60407fab99e",
-      "CL-70ebed22fedc9935"
-    ],
-    "source_refs": [
-      "SA-7c511f3e310baf5f"
-    ],
-    "conflicts": [],
-    "missing_fields": [
-      "object"
-    ],
-    "update_history": [
-      {
-        "source_ref": "SA-7c511f3e310baf5f",
-        "disclosed_at": "2026-06-08T08:56:49.000Z",
-        "status": "completed"
-      }
-    ],
-    "publication_status": "verified",
-    "event_id": "EV-b902c7cffb30dec3",
-    "display_title_zh": "Microsoft AI 推出 MAI-Transcribe-1.5 语音转文本模型"
-  },
-  {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "",
     "disclosed_at": "2026-06-09T02:33:36.415Z",
     "entities": [
@@ -130,17 +97,19 @@
       "SA-7f94d709e33647d0"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-7f94d709e33647d0",
         "disclosed_at": "2026-06-09T02:33:36.415Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
     "event_id": "EV-4c247b02485de09b",
-    "display_title_zh": "Sequoia-backed Edra 完成 3000 万美元 A 轮融资"
+    "display_title_zh": "红杉资本支持的Edra获3000万美元A轮融资，将企业数据转化为自我优化的AI代理"
   },
   {
     "event_type": "product_release",
@@ -148,6 +117,7 @@
     "event_time": "2026-06-08T21:15:42.000Z",
     "disclosed_at": "2026-06-08T21:15:42.000Z",
     "entities": [
+      "EN-f52139ac312cad37",
       "EN-3a7bd3e2360a3d29",
       "EN-b0532e1af75cc4ab"
     ],
@@ -177,7 +147,7 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-0b3d4c788a892787",
+    "event_id": "EV-591542ccc2de5be8",
     "display_title_zh": "Apple 在 WWDC 发布升级版 AI 驱动的 Siri"
   },
   {
@@ -220,7 +190,8 @@
     "event_time": "2026-06-08T18:43:56.000Z",
     "disclosed_at": "2026-06-08T18:43:56.000Z",
     "entities": [
-      "EN-3a7bd3e2360a3d29"
+      "EN-3a7bd3e2360a3d29",
+      "EN-dfabe4215e8c07cb"
     ],
     "action": "发布",
     "object": "Apple WWDC 2026：七大重磅发布",
@@ -256,6 +227,7 @@
     "event_time": "2026-06-08T18:33:42.000Z",
     "disclosed_at": "2026-06-08T18:33:42.000Z",
     "entities": [
+      "EN-d1de01d18cc6c191",
       "EN-3a7bd3e2360a3d29",
       "EN-c70eca6b0f88f44d"
     ],
@@ -281,7 +253,7 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-fd527f43b5eb5f0a",
+    "event_id": "EV-f6611268f119a172",
     "display_title_zh": "苹果为Siri推出专属应用"
   },
   {
@@ -319,47 +291,12 @@
     "display_title_zh": "Apple 发布 visionOS 27，集成 Siri AI"
   },
   {
-    "event_type": "deployment",
-    "event_status": "planned",
-    "event_time": "2026-06-08T18:13:26.639Z",
-    "disclosed_at": "2026-06-08T18:13:26.639Z",
-    "entities": [
-      "EN-3a7bd3e2360a3d29"
-    ],
-    "action": "上线",
-    "object": "受 DMA 影响，Siri AI 在欧盟将随 iOS 27 和 iPadOS 27 延迟上线",
-    "metrics": [],
-    "locations": [],
-    "claim_refs": [
-      "CL-e9603d85f29b6da9",
-      "CL-891bdc08f01d4ee3",
-      "CL-56df599ca679173c",
-      "CL-de9d3adbcdbbcedc"
-    ],
-    "source_refs": [
-      "SA-22294bfcf7c1d154"
-    ],
-    "conflicts": [],
-    "missing_fields": [
-      "object"
-    ],
-    "update_history": [
-      {
-        "source_ref": "SA-22294bfcf7c1d154",
-        "disclosed_at": "2026-06-08T18:13:26.639Z",
-        "status": "planned"
-      }
-    ],
-    "publication_status": "partial",
-    "event_id": "EV-d5419a74073b4508",
-    "display_title_zh": "受 DMA 影响，Siri AI 在欧盟将随 iOS 27 和 iPadOS 27 延迟上线"
-  },
-  {
     "event_type": "product_release",
     "event_status": "completed",
     "event_time": "2026-06-08T15:49:12.000Z",
     "disclosed_at": "2026-06-08T15:49:12.000Z",
     "entities": [
+      "EN-6d37feda49a46792",
       "EN-cbc62794911ff31b"
     ],
     "action": "推出",
@@ -367,7 +304,9 @@
     "metrics": [],
     "locations": [],
     "claim_refs": [
-      "CL-9c34da516e6143a1"
+      "CL-9c34da516e6143a1",
+      "CL-1ae6b60a4009db26",
+      "CL-3ebfeeb5b550f9cc"
     ],
     "source_refs": [
       "SA-8436e4a968b0d378"
@@ -382,8 +321,44 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-16ed97ffc0998d0a",
+    "event_id": "EV-b4e7187a9bd1de0e",
     "display_title_zh": "亚马逊推出AI定制商品设计功能：用户可通过Alexa生成印花图案"
+  },
+  {
+    "event_type": "product_release",
+    "event_status": "completed",
+    "event_time": "2026-06-08T17:42:26.000Z",
+    "disclosed_at": "2026-06-08T17:42:26.000Z",
+    "entities": [
+      "EN-3a7bd3e2360a3d29",
+      "EN-bbdefa2950f49882",
+      "EN-dfabe4215e8c07cb"
+    ],
+    "action": "发布",
+    "object": "汇总",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-167cc4a45ad498cf",
+      "CL-aba3ad1e5b124223",
+      "CL-cec718c6f20d97a3",
+      "CL-b7f5f104685a0e17"
+    ],
+    "source_refs": [
+      "SA-3f3392d34a8a9e5e"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-3f3392d34a8a9e5e",
+        "disclosed_at": "2026-06-08T17:42:26.000Z",
+        "status": "completed"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-bff418b2959f58fb",
+    "display_title_zh": "WWDC 2026：Siri AI、iOS 27、Apple Intelligence 等发布汇总"
   },
   {
     "event_type": "product_release",
@@ -391,7 +366,8 @@
     "event_time": "2026-06-08T18:15:52.996Z",
     "disclosed_at": "2026-06-08T18:15:52.996Z",
     "entities": [
-      "EN-3a7bd3e2360a3d29"
+      "EN-3a7bd3e2360a3d29",
+      "EN-af3ceabbe048a291"
     ],
     "action": "推出",
     "object": "Siri AI：由 Apple Intelligence 驱动的更强大、更个性化的个人助理",
@@ -420,72 +396,110 @@
     "display_title_zh": "Apple 推出 Siri AI：由 Apple Intelligence 驱动的更强大、更个性化的个人助理"
   },
   {
-    "event_type": "model_release",
+    "event_type": "product_release",
     "event_status": "completed",
-    "event_time": "2026-06-08T16:49:04.000Z",
-    "disclosed_at": "2026-06-08T16:49:04.000Z",
+    "event_time": "2026-06-08T17:26:16.000Z",
+    "disclosed_at": "2026-06-08T17:26:16.000Z",
     "entities": [
-      "EN-c608c4787821de1b"
+      "EN-3a7bd3e2360a3d29",
+      "EN-bbdefa2950f49882",
+      "EN-dfabe4215e8c07cb"
     ],
-    "action": "推出MiMo-V2.5-Pro-UltraSpeed，万亿参数模型",
-    "object": "在8-GPU节点上解码超1000 tokens/s",
+    "action": "发布",
+    "object": "内容",
     "metrics": [],
     "locations": [],
     "claim_refs": [
-      "CL-cf1b2e1f21cf4767",
-      "CL-03ffbd25ec529020",
-      "CL-0c68d163dbc8c554",
-      "CL-34e809e524d30491"
+      "CL-779e90a07aec3259",
+      "CL-b6685ba3b1829f8e",
+      "CL-915c2c3abe2ad2e5",
+      "CL-8907543bb5c117b0"
     ],
     "source_refs": [
-      "SA-24b8c8321db1f30e"
+      "SA-eb351de4f54da415"
     ],
     "conflicts": [],
     "missing_fields": [],
     "update_history": [
       {
-        "source_ref": "SA-24b8c8321db1f30e",
-        "disclosed_at": "2026-06-08T16:49:04.000Z",
+        "source_ref": "SA-eb351de4f54da415",
+        "disclosed_at": "2026-06-08T17:26:16.000Z",
         "status": "completed"
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-c7336cf617a545ce",
-    "display_title_zh": "小米MiMo与TileRT推出MiMo-V2.5-Pro-UltraSpeed，万亿参数模型在8-GPU节点上解码超1000 tokens/s"
+    "event_id": "EV-5a1422a9929c582e",
+    "display_title_zh": "WWDC 2026：Siri、iOS 27、Apple Intelligence 等全部发布内容"
   },
   {
     "event_type": "product_release",
-    "event_status": "completed",
-    "event_time": "2026-06-08T18:50:51.580Z",
-    "disclosed_at": "2026-06-08T18:50:51.580Z",
+    "event_status": "announced",
+    "event_time": "2026-06-08T21:57:25.000Z",
+    "disclosed_at": "2026-06-08T21:57:25.000Z",
     "entities": [
-      "EN-c70eca6b0f88f44d"
+      "EN-7d3194f79e645c42",
+      "EN-148b42653f5e08b1"
     ],
-    "action": "推出",
-    "object": "性能监控仪表盘",
+    "action": "product_release",
+    "object": "OpenAI 已提交 S-1 草案，释放潜在 IPO 上市信号",
     "metrics": [],
-    "locations": [],
+    "locations": [
+      "美国"
+    ],
     "claim_refs": [
-      "CL-fd00638cf196efd1",
-      "CL-fb32ffef858439d3",
-      "CL-632c07123a1bb694",
-      "CL-571b66ef6267f646"
+      "CL-33e98d13578e6a9e",
+      "CL-5d756448caf51a9c",
+      "CL-fa37220043fac3d3",
+      "CL-c390dc03009f18dc"
     ],
     "source_refs": [
-      "SA-28943362f01853fe"
+      "SA-03c48d6223c4d2fa"
     ],
     "conflicts": [],
     "missing_fields": [],
     "update_history": [
       {
-        "source_ref": "SA-28943362f01853fe",
-        "disclosed_at": "2026-06-08T18:50:51.580Z",
-        "status": "completed"
+        "source_ref": "SA-03c48d6223c4d2fa",
+        "disclosed_at": "2026-06-08T21:57:25.000Z",
+        "status": "announced"
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-3371b45e53949464",
-    "display_title_zh": "Claude 为 Connector 开发者推出性能监控仪表盘"
+    "event_id": "EV-19903b5eef9b1de0",
+    "display_title_zh": "OpenAI 已提交 S-1 草案，释放潜在 IPO 上市信号"
+  },
+  {
+    "event_type": "product_release",
+    "event_status": "announced",
+    "event_time": "2026-06-08T22:50:42.000Z",
+    "disclosed_at": "2026-06-08T22:50:42.000Z",
+    "entities": [
+      "EN-7d3194f79e645c42"
+    ],
+    "action": "product_release",
+    "object": "奥尔特曼宣布 OpenAI 进入第三发展阶段：让 AI 普及、易用且安全",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-27426a2d002f5f79",
+      "CL-6f56d135e15079e7",
+      "CL-7dda9f09d0d2192c"
+    ],
+    "source_refs": [
+      "SA-4ba916c32accaebc"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-4ba916c32accaebc",
+        "disclosed_at": "2026-06-08T22:50:42.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-57b029a4afb71044",
+    "display_title_zh": "奥尔特曼宣布 OpenAI 进入第三发展阶段：让 AI 普及、易用且安全"
   },
   {
     "event_type": "product_release",
@@ -493,7 +507,10 @@
     "event_time": "2026-06-08T19:18:57.000Z",
     "disclosed_at": "2026-06-08T19:18:57.000Z",
     "entities": [
-      "EN-3a7bd3e2360a3d29"
+      "EN-3a7bd3e2360a3d29",
+      "EN-50537dab76505dfc",
+      "EN-1acf3a98930680ec",
+      "EN-45b5216872656eb3"
     ],
     "action": "发布",
     "object": "Xcode 27 Beta 与 Core AI 框架，称其为构建 AI 智能体\"最佳场所\"",
@@ -524,10 +541,48 @@
   {
     "event_type": "product_release",
     "event_status": "completed",
+    "event_time": "2026-06-08T18:32:08.000Z",
+    "disclosed_at": "2026-06-08T18:32:08.000Z",
+    "entities": [
+      "EN-3a7bd3e2360a3d29",
+      "EN-40e307d789f77264"
+    ],
+    "action": "发布",
+    "object": "苹果 visionOS 27 开发者预览版 Beta 1 发布",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-50f9195eab52f6b4",
+      "CL-6d88aad880aefc2f",
+      "CL-7be8ab2dc8139436",
+      "CL-6a080f8e3d619e2c"
+    ],
+    "source_refs": [
+      "SA-c5d7f74356e3c212"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "object"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-c5d7f74356e3c212",
+        "disclosed_at": "2026-06-08T18:32:08.000Z",
+        "status": "completed"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-21c749570133c786",
+    "display_title_zh": "苹果 visionOS 27 开发者预览版 Beta 1 发布"
+  },
+  {
+    "event_type": "product_release",
+    "event_status": "completed",
     "event_time": "2026-06-08T17:59:46.000Z",
     "disclosed_at": "2026-06-08T17:59:46.000Z",
     "entities": [
-      "EN-3a7bd3e2360a3d29"
+      "EN-3a7bd3e2360a3d29",
+      "EN-af3ceabbe048a291"
     ],
     "action": "推出",
     "object": "系统原生自动校正功能",
@@ -536,8 +591,7 @@
     "claim_refs": [
       "CL-412c1165ad9aea08",
       "CL-0d7806422b8f4731",
-      "CL-bf480f9596975b92",
-      "CL-42be09bfa046da80"
+      "CL-bf480f9596975b92"
     ],
     "source_refs": [
       "SA-c509109acff08b2a"
@@ -561,7 +615,9 @@
     "event_time": "2026-06-08T17:38:14.000Z",
     "disclosed_at": "2026-06-08T17:38:14.000Z",
     "entities": [
-      "EN-3a7bd3e2360a3d29"
+      "EN-3a7bd3e2360a3d29",
+      "EN-50537dab76505dfc",
+      "EN-af3ceabbe048a291"
     ],
     "action": "推出",
     "object": "Siri AI：独立 App，为灵动岛优化",
@@ -591,44 +647,12 @@
   {
     "event_type": "product_release",
     "event_status": "completed",
-    "event_time": "2026-06-08T18:32:09.000Z",
-    "disclosed_at": "2026-06-08T18:32:09.000Z",
-    "entities": [
-      "EN-3a7bd3e2360a3d29"
-    ],
-    "action": "发布",
-    "object": "：全新 App 应用网格界面、海外机型引入 Siri AI 功能",
-    "metrics": [],
-    "locations": [],
-    "claim_refs": [
-      "CL-f52e8cd721c6eb77",
-      "CL-df52a2c4fffc8725",
-      "CL-9aa07133228acbff",
-      "CL-0aa27e92690db435"
-    ],
-    "source_refs": [
-      "SA-ca431dc3552f882d"
-    ],
-    "conflicts": [],
-    "missing_fields": [],
-    "update_history": [
-      {
-        "source_ref": "SA-ca431dc3552f882d",
-        "disclosed_at": "2026-06-08T18:32:09.000Z",
-        "status": "completed"
-      }
-    ],
-    "publication_status": "verified",
-    "event_id": "EV-eebe7dbf68b1e0b4",
-    "display_title_zh": "苹果 watchOS 27 开发者预览版 Beta 1 发布：全新 App 应用网格界面、海外机型引入 Siri AI 功能"
-  },
-  {
-    "event_type": "product_release",
-    "event_status": "completed",
     "event_time": "2026-06-08T18:32:08.000Z",
     "disclosed_at": "2026-06-08T18:32:08.000Z",
     "entities": [
-      "EN-3a7bd3e2360a3d29"
+      "EN-3a7bd3e2360a3d29",
+      "EN-40e307d789f77264",
+      "EN-1924fff8eb4d54ae"
     ],
     "action": "发布",
     "object": "，引入独立 Siri 应用",
@@ -637,7 +661,8 @@
     "claim_refs": [
       "CL-200387b333a63bec",
       "CL-563ecffd6de962e3",
-      "CL-87987b509c2f8e3d"
+      "CL-dd8a0674c31cfc53",
+      "CL-826dd4d2f9e003bc"
     ],
     "source_refs": [
       "SA-07362e7a0eeb27d0"

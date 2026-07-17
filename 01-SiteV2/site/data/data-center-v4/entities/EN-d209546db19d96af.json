@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 818,
+    "quarantinedEventCount": 58
+  },
+  "entity": {
+    "id": "EN-d209546db19d96af",
+    "name": "Isambard-AI",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-36d484148fbd3424"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-04",
+    "lastSeen": "2026-07-04",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [
+        "EV-36d484148fbd3424"
+      ],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-36d484148fbd3424",
+        "dataDate": "2026-07-04",
+        "date": "2026-07-04",
+        "eventType": "deployment",
+        "eventTypeLabel": "部署",
+        "eventGroup": "部署与案例",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "英国最强AI超级计算机Isambard-AI正式上线",
+        "displayTags": [],
+        "entityIds": [
+          "EN-d209546db19d96af",
+          "EN-7d3194f79e645c42",
+          "EN-8d4321d936320802"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [
+    {
+      "id": "FDE-1b1197864e953ff1",
+      "eventId": "EV-36d484148fbd3424",
+      "dataDate": "2026-07-04",
+      "date": "2026-07-04",
+      "title": "英国最强AI超级计算机Isambard-AI正式上线",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Isambard-AI",
+      "vendor": "OpenAI",
+      "industry": "未披露",
+      "useCase": "Isambard-AI, the UK’s Most Powerful AI Supercomputer, Goes Live",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "Unveiling what it describes as the most capable model series yet for professional knowledge work, OpenAI launched GPT-5.2 in December. The model was trained and deployed on NVIDIA infrastructure, including..."
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://blogs.nvidia.com/blog/isambard-ai",
+      "entityIds": [
+        "EN-d209546db19d96af",
+        "EN-7d3194f79e645c42",
+        "EN-8d4321d936320802"
+      ]
+    }
+  ],
+  "hardware": []
+}

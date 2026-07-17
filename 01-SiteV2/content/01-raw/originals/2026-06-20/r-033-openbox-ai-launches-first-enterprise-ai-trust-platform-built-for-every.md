@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"OpenBox AI Launches First Enterprise AI
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "OpenBox AI推出首个面向所有人的企业AI信任平台，获500万美元种子轮融资"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # OpenBox AI Launches First Enterprise AI Trust Platform Built for Everyone, Backed by $5M Seed Round

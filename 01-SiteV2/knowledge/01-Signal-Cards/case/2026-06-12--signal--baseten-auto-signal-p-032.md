@@ -2,7 +2,7 @@
 id: SIG-20260612-A13
 type: signal_card
 signal_type: case
-title: "Baseten 案例：AI 进入模型部署和算力调用"
+title: "Mercury 2，首个推理扩散大语言模型，现已上线Baseten"
 date: 2026-06-12
 status: published
 source_title: "Mercury 2, the first reasoning diffusion LLM, is now on Baseten"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Baseten"
 
 frontend:
-  displayTitle: "Baseten 案例：AI 进入模型部署和算力调用"
+  displayTitle: "Mercury 2，首个推理扩散大语言模型，现已上线Baseten"
   sourceLinks:
     - "https://www.baseten.co/blog/mercury-2-is-now-available-on-baseten/"
 ---
 
-# Baseten 案例：AI 进入模型部署和算力调用
+# Mercury 2，首个推理扩散大语言模型，现已上线Baseten
 
 ## 新闻事实
 

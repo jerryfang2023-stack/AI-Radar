@@ -2,7 +2,7 @@
 id: SIG-20260617-A19
 type: signal_card
 signal_type: product_service
-title: "The-Decoder 发布 AI 基础设施能力，切入模型部署和算力服务"
+title: "爱沙尼亚语言研究所发布基准测试：衡量AI模型对俄罗斯宣传的易感性"
 date: 2026-06-17
 status: published
 source_title: "爱沙尼亚语言研究所发布基准测试：衡量AI模型对俄罗斯宣传的易感性"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "The-Decoder"
 
 frontend:
-  displayTitle: "The-Decoder 发布 AI 基础设施能力，切入模型部署和算力服务"
+  displayTitle: "爱沙尼亚语言研究所发布基准测试：衡量AI模型对俄罗斯宣传的易感性"
   sourceLinks:
     - "https://the-decoder.com/how-easily-can-russian-propaganda-fool-ai-models-a-new-benchmark-finds-out"
 ---
 
-# The-Decoder 发布 AI 基础设施能力，切入模型部署和算力服务
+# 爱沙尼亚语言研究所发布基准测试：衡量AI模型对俄罗斯宣传的易感性
 
 ## 新闻事实
 

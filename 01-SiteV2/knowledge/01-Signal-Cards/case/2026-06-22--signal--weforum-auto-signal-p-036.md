@@ -2,7 +2,7 @@
 id: SIG-20260622-A10
 type: signal_card
 signal_type: case
-title: "Weforum 记录企业应用场景：地产开发和建筑设计流程"
+title: "哪些AI系统正在重塑企业创新？"
 date: 2026-06-22
 status: published
 source_title: "Which AI systems are reshaping enterprise innovation?"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Weforum"
 
 frontend:
-  displayTitle: "Weforum 记录企业应用场景：地产开发和建筑设计流程"
+  displayTitle: "哪些AI系统正在重塑企业创新？"
   sourceLinks:
     - "https://www.weforum.org/stories/2026/01/how-agentic-physical-and-sovereign-ai-are-rewriting-the-rules-of-enterprise-innovation/"
 ---
 
-# Weforum 记录企业应用场景：地产开发和建筑设计流程
+# 哪些AI系统正在重塑企业创新？
 
 ## 新闻事实
 

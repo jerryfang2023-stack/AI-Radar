@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"AI 模型评测平台 Arena 宣布，其
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Arena 企业级评测服务 AI Evaluations 上线 8 个月，年度经常性收入突破 1 亿美元"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Arena 企业级评测服务 AI Evaluations 上线 8 个月，年度经常性收入突破 1 亿美元

@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-091
 title: "IBM Africa and Hello Tractor pilot AI/blockchain agtech platform | TechCrunch"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "IBM Africa 与 Hello Tractor 试点 AI/区块链农业科技平台"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://techcrunch.com/2018/12/20/ibm-africa-and-hello-tractor-pilot-ai-blockchain-agtech-platform/"
 canonical_url: "https://techcrunch.com/2018/12/20/ibm-africa-and-hello-tractor-pilot-ai-blockchain-agtech-platform"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-09T03:05:45.319Z
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # IBM Africa and Hello Tractor pilot AI/blockchain agtech platform | TechCrunch

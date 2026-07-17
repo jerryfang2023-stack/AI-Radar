@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-026
 title: "Resolve AI Announces $125M Series A at $1B Valuation to Fix Production Operations with AI"
-title_zh: "Resolve AI宣布以$ 10亿估值的$ 1.25亿A轮融资，通过AI修复生产运营"
-title_translation_status: translated
-title_translation_method: mymemory_title_translation
+title_zh: "Resolve AI宣布获得1.25亿美元A轮融资，估值达10亿美元，用AI修复生产运营"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://resolve.ai/news/resolveai-raises-125-million-series-a"
 canonical_url: "https://resolve.ai/news/resolveai-raises-125-million-series-a"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-10T01:59:47.098Z
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Resolve AI Announces $125M Series A at $1B Valuation to Fix Production Operations with AI

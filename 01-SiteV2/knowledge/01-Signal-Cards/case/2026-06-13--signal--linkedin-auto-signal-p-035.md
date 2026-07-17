@@ -2,7 +2,7 @@
 id: SIG-20260613-A05
 type: signal_card
 signal_type: case
-title: "Linkedin 案例：AI 进入地产开发和建筑设计流程"
+title: "为何企业迟迟不采用开放模型——领英"
 date: 2026-06-13
 status: published
 source_title: "Why companies are slow to adopt open models - LinkedIn"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Linkedin"
 
 frontend:
-  displayTitle: "Linkedin 案例：AI 进入地产开发和建筑设计流程"
+  displayTitle: "为何企业迟迟不采用开放模型——领英"
   sourceLinks:
     - "https://www.linkedin.com/posts/lvwerra_todays-gap-in-open-model-adoption-is-mostly-activity-7349384507298332674-xpSW"
 ---
 
-# Linkedin 案例：AI 进入地产开发和建筑设计流程
+# 为何企业迟迟不采用开放模型——领英
 
 ## 新闻事实
 

@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-17T18:20:10.588Z",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 727,
-    "quarantinedEventCount": 50
+    "eventCount": 818,
+    "quarantinedEventCount": 58
   },
   "entity": {
     "id": "EN-249d2c07610bbc52",
@@ -20,28 +20,85 @@
     "datasetScopes": [
       "canonical"
     ],
-    "eventIds": [],
+    "eventIds": [
+      "EV-6dc5c8b1d59e91ad"
+    ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
-    "firstSeen": "",
-    "lastSeen": "",
+    "firstSeen": "2026-07-16",
+    "lastSeen": "2026-07-17",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [],
-      "hardware": [],
+      "hardware": [
+        "EV-6dc5c8b1d59e91ad"
+      ],
       "organizationPeople": [],
       "other": []
     },
-    "timeline": [],
+    "timeline": [
+      {
+        "id": "EV-6dc5c8b1d59e91ad",
+        "dataDate": "2026-07-17",
+        "date": "2026-07-16",
+        "eventType": "hardware_supply",
+        "eventTypeLabel": "硬件供应",
+        "eventGroup": "AI 硬件",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "TYLsemi获4300万美元融资，从隐身模式中走出，旨在重建AI芯片供应链 - Startup Fortune",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "chip_accelerator",
+            "dimensionName": "产品形态",
+            "name": "芯片与加速器"
+          }
+        ],
+        "entityIds": [
+          "EN-249d2c07610bbc52",
+          "EN-cf9488537f777c1a"
+        ]
+      }
+    ],
     "viewpoints": []
   },
   "relatedEntities": [],
   "relationships": [],
   "taxonomyNodes": [],
   "fde": [],
-  "hardware": []
+  "hardware": [
+    {
+      "id": "HW-00b7f4878f794f31",
+      "eventId": "EV-6dc5c8b1d59e91ad",
+      "dataDate": "2026-07-17",
+      "date": "2026-07-16",
+      "title": "TYLsemi获4300万美元融资，从隐身模式中走出，旨在重建AI芯片供应链 - Startup Fortune",
+      "hardwareType": "semiconductor",
+      "eventType": "hardware_supply",
+      "eventTypeLabel": "硬件供应",
+      "computeLayer": "未披露",
+      "supplier": "TYLsemi Emerges From Stealth",
+      "customer": "TYLsemi Emerges From Stealth",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "2026-07-16",
+      "tags": [],
+      "sourceUrl": "https://startupfortune.com/tylsemi-emerges-from-stealth-with-43-million-to-rebuild-ai-chip-supply-chains",
+      "sourceName": "startupfortune.com",
+      "sourceDate": "2026-07-16",
+      "entityIds": [
+        "EN-249d2c07610bbc52",
+        "EN-cf9488537f777c1a"
+      ]
+    }
+  ]
 }

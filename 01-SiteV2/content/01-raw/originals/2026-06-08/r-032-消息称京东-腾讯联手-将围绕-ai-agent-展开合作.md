@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"京东与腾讯近期联手，围绕 AI 
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "消息称京东、腾讯联手，将围绕 AI Agent 展开合作"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 消息称京东、腾讯联手，将围绕 AI Agent 展开合作

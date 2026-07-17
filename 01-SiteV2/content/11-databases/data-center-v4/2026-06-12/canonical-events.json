@@ -38,46 +38,14 @@
     "display_title_zh": "Jeff Bezos 的 Prometheus 融资 120 亿美元，打造面向物理世界的\"人工通用工程师\""
   },
   {
-    "event_type": "funding",
-    "event_status": "announced",
-    "event_time": "",
-    "disclosed_at": "2026-06-12T03:53:39.127Z",
-    "entities": [
-      "EN-e4ab4e3b1493d5a9"
-    ],
-    "action": "Raises",
-    "object": "$24M to Build AI for Private Credit",
-    "metrics": [],
-    "locations": [],
-    "claim_refs": [
-      "CL-c77109b8ac61cbd1",
-      "CL-99f27a923bedf99b",
-      "CL-33295303089decb0",
-      "CL-97d8d97bb3689a9f"
-    ],
-    "source_refs": [
-      "SA-ef83df2dfd62c4a1"
-    ],
-    "conflicts": [],
-    "missing_fields": [],
-    "update_history": [
-      {
-        "source_ref": "SA-ef83df2dfd62c4a1",
-        "disclosed_at": "2026-06-12T03:53:39.127Z",
-        "status": "announced"
-      }
-    ],
-    "publication_status": "verified",
-    "event_id": "EV-a2cc4c7b0c23dc34",
-    "display_title_zh": "F2 完成 2400 万美元融资"
-  },
-  {
     "event_type": "product_release",
     "event_status": "announced",
     "event_time": "",
     "disclosed_at": "2026-06-12T03:53:39.131Z",
     "entities": [
-      "EN-cbc62794911ff31b"
+      "EN-7d1507284a5757ca",
+      "EN-cbc62794911ff31b",
+      "EN-dba61afed18c85d6"
     ],
     "action": "product_release",
     "object": "AWS Agent Marketplace: What's Coming and Why It Matters",
@@ -85,15 +53,17 @@
     "locations": [],
     "claim_refs": [
       "CL-786d5f23a31b595e",
-      "CL-4f806bffe6a5ad2e",
-      "CL-ba43f6da4df23c2b",
-      "CL-47e8000d9e590827"
+      "CL-47e8000d9e590827",
+      "CL-7f695a95cdc30ef6",
+      "CL-4f806bffe6a5ad2e"
     ],
     "source_refs": [
       "SA-bdb7d9ea840c6e9d"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-bdb7d9ea840c6e9d",
@@ -102,53 +72,58 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-51cdc6a8928bdc56",
-    "display_title_zh": "Amazon 发布 AWS Agent Marketplace"
+    "event_id": "EV-94d9c8d5ac1e10de",
+    "display_title_zh": "AWS Agent Marketplace：即将推出的功能及其重要性"
   },
   {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "",
     "disclosed_at": "2026-06-12T03:53:39.145Z",
     "entities": [
+      "EN-b314f58f5f506fd2",
       "EN-7d3194f79e645c42"
     ],
     "action": "Raises",
     "object": "$50M Series A to Automate the World's Most Complex Enterprise Processes with Reliable AI",
     "metrics": [
       "$50M",
-      "$500M"
+      "$500M",
+      "99%"
     ],
     "locations": [],
     "claim_refs": [
       "CL-4667dcd13153aeb8",
       "CL-5297e01acf0705db",
-      "CL-90148d1a980ffa90",
-      "CL-d4acd05e9b5b0848"
+      "CL-d4acd05e9b5b0848",
+      "CL-cf60a146bd5967ed"
     ],
     "source_refs": [
       "SA-690a5fb8c862f734"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-690a5fb8c862f734",
         "disclosed_at": "2026-06-12T03:53:39.145Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-b1138bccf5ccd86c",
-    "display_title_zh": "OpenAI 完成 5000 万美元 A 轮融资"
+    "event_id": "EV-a42e51959c627554",
+    "display_title_zh": "Poetic 完成5000万美元A轮融资，以可靠AI自动化全球最复杂的企业流程"
   },
   {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "",
     "disclosed_at": "2026-06-12T03:53:39.156Z",
     "entities": [
-      "EN-a972bc1b3220493e"
+      "EN-a972bc1b3220493e",
+      "EN-96eebba49dbbf422"
     ],
     "action": "Raises",
     "object": "$30 Million to Build the AI Operating System for Regulated Industries",
@@ -168,17 +143,19 @@
       "SA-e668a350e8bf9d8b"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-e668a350e8bf9d8b",
         "disclosed_at": "2026-06-12T03:53:39.156Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
     "event_id": "EV-c0d19b8641a7a36c",
-    "display_title_zh": "Notch 完成 3000 万美元 A 轮融资"
+    "display_title_zh": "Notch 获 3000 万美元融资，打造受监管行业的人工智能操作系统"
   },
   {
     "event_type": "product_release",
@@ -186,20 +163,18 @@
     "event_time": "2026-06-11T12:00:00.000Z",
     "disclosed_at": "2026-06-11T12:00:00.000Z",
     "entities": [
-      "EN-46a4eebd20d881ec"
+      "EN-46a4eebd20d881ec",
+      "EN-b7efc8f24f2e2358"
     ],
     "action": "推出",
     "object": "Auto-review 机制：用分类器智能体动态管控智能体自主权限",
-    "metrics": [
-      "7%",
-      "40%"
-    ],
+    "metrics": [],
     "locations": [],
     "claim_refs": [
       "CL-bf568a6fccd4a463",
       "CL-421f045aefa19028",
-      "CL-6fe5cfccaac53878",
-      "CL-904284d406d1a38b"
+      "CL-2578da7feac7d3ee",
+      "CL-6fe5cfccaac53878"
     ],
     "source_refs": [
       "SA-fbe36f6441378499"
@@ -223,20 +198,18 @@
     "event_time": "2026-06-11T12:00:00.000Z",
     "disclosed_at": "2026-06-11T12:00:00.000Z",
     "entities": [
-      "EN-46a4eebd20d881ec"
+      "EN-46a4eebd20d881ec",
+      "EN-b7efc8f24f2e2358"
     ],
     "action": "推出",
     "object": "Auto-review 实现智能体自治管控",
-    "metrics": [
-      "7%",
-      "40%"
-    ],
+    "metrics": [],
     "locations": [],
     "claim_refs": [
       "CL-dcb32d28c3f38f5f",
       "CL-27edd7de05c58272",
-      "CL-ba7306decbc9cce9",
-      "CL-382f27f2e68388ea"
+      "CL-a52148e2484dc9db",
+      "CL-ba7306decbc9cce9"
     ],
     "source_refs": [
       "SA-2b6a8131ec0580ee"
@@ -255,38 +228,114 @@
     "display_title_zh": "Cursor 推出 Auto-review 实现智能体自治管控"
   },
   {
-    "event_type": "model_release",
+    "event_type": "product_release",
     "event_status": "completed",
-    "event_time": "2026-06-11T08:33:27.000Z",
-    "disclosed_at": "2026-06-11T08:33:27.000Z",
+    "event_time": "2026-06-11T09:53:52.000Z",
+    "disclosed_at": "2026-06-11T09:53:52.000Z",
     "entities": [
-      "EN-72e8088a05b38ae3"
+      "EN-3eee4f30151db45a",
+      "EN-bbdefa2950f49882",
+      "EN-2b6e51bec93e86c1",
+      "EN-c18179b68329b054"
     ],
-    "action": "发布 North Mini Code：30B 参数 MoE 编码模型",
-    "object": "，3B 活跃参数，单卡 H100 运行，支持 256K 上下文",
+    "action": "发布",
+    "object": "Hermes Agent Profile Builder：身份、模型、技能和 MCP 服务器一站式仪表盘流",
     "metrics": [],
     "locations": [],
     "claim_refs": [
-      "CL-0d74c98dcf84c226",
-      "CL-3978ef0617b1df26",
-      "CL-4a5b67f5ef4ca6cd",
-      "CL-1dd2c12c558bfdb2"
+      "CL-df4e79b3ca7d8bd6",
+      "CL-3b6789674b015f11",
+      "CL-e4d2b3350d3f4a1f",
+      "CL-d1600f27813f18a5"
     ],
     "source_refs": [
-      "SA-f0d2128ac2aebfeb"
+      "SA-8669563f95772686"
     ],
     "conflicts": [],
     "missing_fields": [],
     "update_history": [
       {
-        "source_ref": "SA-f0d2128ac2aebfeb",
-        "disclosed_at": "2026-06-11T08:33:27.000Z",
+        "source_ref": "SA-8669563f95772686",
+        "disclosed_at": "2026-06-11T09:53:52.000Z",
         "status": "completed"
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-7fd3102ac547cbda",
-    "display_title_zh": "Cohere 发布 North Mini Code：30B 参数 MoE 编码模型，3B 活跃参数，单卡 H100 运行，支持 256K 上下文"
+    "event_id": "EV-8eed6489ab514823",
+    "display_title_zh": "Nous Research 发布 Hermes Agent Profile Builder：身份、模型、技能和 MCP 服务器一站式仪表盘流"
+  },
+  {
+    "event_type": "product_release",
+    "event_status": "completed",
+    "event_time": "2026-06-11T08:58:18.000Z",
+    "disclosed_at": "2026-06-11T08:58:18.000Z",
+    "entities": [
+      "EN-9a6ee79873b1fb7b",
+      "EN-3f726694f178ed7a"
+    ],
+    "action": "发布",
+    "object": "：AI 原生多模态，重新定义个人知识管理",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-47d1437d8101e4ed",
+      "CL-6b7420cb00bb51ca",
+      "CL-ee750d209a4515d3",
+      "CL-48822fe2e82e3897"
+    ],
+    "source_refs": [
+      "SA-7be4f8966901e967"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-7be4f8966901e967",
+        "disclosed_at": "2026-06-11T08:58:18.000Z",
+        "status": "completed"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-ae4561a4a9ebe17f",
+    "display_title_zh": "WPS 笔记发布：AI 原生多模态，重新定义个人知识管理"
+  },
+  {
+    "event_type": "procurement_contract",
+    "event_status": "announced",
+    "event_time": "",
+    "disclosed_at": "2026-06-12T03:53:39.291Z",
+    "entities": [
+      "EN-96eebba49dbbf422"
+    ],
+    "action": "Tender",
+    "object": "Intelligence Platform",
+    "metrics": [
+      "65%"
+    ],
+    "locations": [],
+    "claim_refs": [
+      "CL-de54d692f2f0d684",
+      "CL-b1a9b94685d41bb3",
+      "CL-1d0f4acf83687e41",
+      "CL-d93b3c9cfd22a690"
+    ],
+    "source_refs": [
+      "SA-8b2c73ec286b9124"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "event_time"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-8b2c73ec286b9124",
+        "disclosed_at": "2026-06-12T03:53:39.291Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-6617850e0b014051",
+    "display_title_zh": "Tenzye – 全球首个智能体式招标情报平台"
   },
   {
     "event_type": "product_release",
@@ -295,7 +344,8 @@
     "disclosed_at": "2026-06-11T21:30:31.000Z",
     "entities": [
       "EN-6fcba5d96a4fadfd",
-      "EN-bbdefa2950f49882"
+      "EN-bbdefa2950f49882",
+      "EN-c4bc2d00a42f220f"
     ],
     "action": "发布",
     "object": "Grok Build 插件市场，首发集成 MongoDB、Vercel、Sentry、Chrome DevTools、Cloudflare 等插件",
@@ -322,39 +372,42 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-175af8c7b8146340",
+    "event_id": "EV-d53cd33e8f541a65",
     "display_title_zh": "xAI 发布 Grok Build 插件市场，首发集成 MongoDB、Vercel、Sentry、Chrome DevTools、Cloudflare 等插件"
   },
   {
-    "event_type": "model_release",
-    "event_status": "completed",
-    "event_time": "2026-06-11T05:41:54.000Z",
-    "disclosed_at": "2026-06-11T05:41:54.000Z",
+    "event_type": "product_release",
+    "event_status": "announced",
+    "event_time": "2026-06-12T01:35:12.000Z",
+    "disclosed_at": "2026-06-12T01:35:12.000Z",
     "entities": [
-      "EN-c70eca6b0f88f44d"
+      "EN-7d3194f79e645c42"
     ],
-    "action": "发布：修复 Fable 5 模型",
-    "object": "名及 Windows 沙盒警告",
+    "action": "product_release",
+    "object": "OpenAI 推广 Codex：未来 2 周邀请好友可重置 AI 使用量",
     "metrics": [],
     "locations": [],
     "claim_refs": [
-      "CL-1ef19350bbb06753"
+      "CL-4378b26ef029e6f0",
+      "CL-a42b87933866d172",
+      "CL-bfa3405b5d02b88e",
+      "CL-6f8d9ac91d2a7ac6"
     ],
     "source_refs": [
-      "SA-e375b7a8f5304836"
+      "SA-431aa845d3f6e68d"
     ],
     "conflicts": [],
     "missing_fields": [],
     "update_history": [
       {
-        "source_ref": "SA-e375b7a8f5304836",
-        "disclosed_at": "2026-06-11T05:41:54.000Z",
-        "status": "completed"
+        "source_ref": "SA-431aa845d3f6e68d",
+        "disclosed_at": "2026-06-12T01:35:12.000Z",
+        "status": "announced"
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-6007062e7e4a6f5e",
-    "display_title_zh": "Claude Code v2.1.173 发布：修复 Fable 5 模型名及 Windows 沙盒警告"
+    "event_id": "EV-d6ba9ef3ff65940c",
+    "display_title_zh": "OpenAI 推广 Codex：未来 2 周邀请好友可重置 AI 使用量"
   },
   {
     "event_type": "product_release",
@@ -362,6 +415,7 @@
     "event_time": "2026-06-12T03:00:17.000Z",
     "disclosed_at": "2026-06-12T03:00:17.000Z",
     "entities": [
+      "EN-0aa590cbbdb3835a",
       "EN-2b78da3dc866654e",
       "EN-3a7bd3e2360a3d29"
     ],
@@ -372,8 +426,7 @@
     "claim_refs": [
       "CL-1cf3b9661572d1db",
       "CL-e78ceab58dd8a516",
-      "CL-a6bcfa083c5c6448",
-      "CL-8068a160737ea663"
+      "CL-a6bcfa083c5c6448"
     ],
     "source_refs": [
       "SA-00e8f8e72977f92c"
@@ -388,15 +441,53 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-4cad63b0de20edb2",
+    "event_id": "EV-dad8c827d14f2799",
     "display_title_zh": "可检测 AI 音乐，Deezer 为 Spotify、Apple Music 等第三方平台推出免费工具"
+  },
+  {
+    "event_type": "product_release",
+    "event_status": "announced",
+    "event_time": "2026-06-11T06:02:48.000Z",
+    "disclosed_at": "2026-06-11T06:02:48.000Z",
+    "entities": [
+      "EN-3a7bd3e2360a3d29",
+      "EN-047364b9be67f665",
+      "EN-dd920a8cd166f486"
+    ],
+    "action": "product_release",
+    "object": "苹果 CoreAI 端侧 AI 引擎测试：小模型解码速度是 MLX 的 2.47 倍，大模型性能持平",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-c219014c38d3e963",
+      "CL-18d554f72c3e47aa",
+      "CL-ac08c3739d1d2f6c",
+      "CL-6125ee27d333b5c5"
+    ],
+    "source_refs": [
+      "SA-122b35fc54deabea"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-122b35fc54deabea",
+        "disclosed_at": "2026-06-11T06:02:48.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-4e6dc3ec2b3f0bd6",
+    "display_title_zh": "苹果 CoreAI 端侧 AI 引擎测试：小模型解码速度是 MLX 的 2.47 倍，大模型性能持平"
   },
   {
     "event_type": "product_release",
     "event_status": "completed",
     "event_time": "2026-06-11T15:19:08.000Z",
     "disclosed_at": "2026-06-11T15:19:08.000Z",
-    "entities": [],
+    "entities": [
+      "EN-24381ecb01753c1b"
+    ],
     "action": "发布",
     "object": "华为 HiCar 7.0 手车互联解决方案官宣，定档 6 月 13 日发布",
     "metrics": [],
@@ -412,7 +503,6 @@
     ],
     "conflicts": [],
     "missing_fields": [
-      "entities",
       "object"
     ],
     "update_history": [
@@ -423,40 +513,8 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-7fae5b2d8e8181a6",
+    "event_id": "EV-cb12ed6ade2c8f39",
     "display_title_zh": "华为 HiCar 7.0 手车互联解决方案官宣，定档 6 月 13 日发布"
-  },
-  {
-    "event_type": "product_release",
-    "event_status": "completed",
-    "event_time": "2026-06-11T13:00:32.000Z",
-    "disclosed_at": "2026-06-11T13:00:32.000Z",
-    "entities": [
-      "EN-b0126946c556dc47"
-    ],
-    "action": "推出",
-    "object": "AI 聊天机器人，帮助处理订单、预订和杂货清单",
-    "metrics": [],
-    "locations": [],
-    "claim_refs": [
-      "CL-4b00293ac0cc396f",
-      "CL-21929b6fbbc5fc46"
-    ],
-    "source_refs": [
-      "SA-0bf11f9037662643"
-    ],
-    "conflicts": [],
-    "missing_fields": [],
-    "update_history": [
-      {
-        "source_ref": "SA-0bf11f9037662643",
-        "disclosed_at": "2026-06-11T13:00:32.000Z",
-        "status": "completed"
-      }
-    ],
-    "publication_status": "verified",
-    "event_id": "EV-852c816998aeffbf",
-    "display_title_zh": "DoorDash 推出 AI 聊天机器人，帮助处理订单、预订和杂货清单"
   },
   {
     "event_type": "deployment",
@@ -500,7 +558,8 @@
     "event_time": "2026-06-11T09:59:37.000Z",
     "disclosed_at": "2026-06-11T09:59:37.000Z",
     "entities": [
-      "EN-81baf57e05f11276"
+      "EN-81baf57e05f11276",
+      "EN-6c959f6391a7ce86"
     ],
     "action": "发布",
     "object": "国内首个智能体自主支付协议A2P2，划分L0至L5六个等级",
@@ -528,13 +587,81 @@
     "display_title_zh": "京东发布国内首个智能体自主支付协议A2P2，划分L0至L5六个等级"
   },
   {
+    "event_type": "pricing_change",
+    "event_status": "planned",
+    "event_time": "2026-06-11T07:28:32.000Z",
+    "disclosed_at": "2026-06-11T07:28:32.000Z",
+    "entities": [
+      "EN-23fb119e4d2c4bb9"
+    ],
+    "action": "定价",
+    "object": "5000元以上",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-11c203b9236044fe",
+      "CL-7f549e8458b36433",
+      "CL-12b8b625b4c05a5f"
+    ],
+    "source_refs": [
+      "SA-8a6eb1e31d5cfc7d"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-8a6eb1e31d5cfc7d",
+        "disclosed_at": "2026-06-11T07:28:32.000Z",
+        "status": "planned"
+      }
+    ],
+    "publication_status": "partial",
+    "event_id": "EV-44661cdaaa133a6b",
+    "display_title_zh": "追觅Eclix品牌负责人俞雷：AI手机预计2026年9月发布，定价5000元以上"
+  },
+  {
+    "event_type": "product_release",
+    "event_status": "completed",
+    "event_time": "2026-06-11T06:28:09.000Z",
+    "disclosed_at": "2026-06-11T06:28:09.000Z",
+    "entities": [],
+    "action": "发布",
+    "object": "asyncinject 0.7 发布",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-5e9ca6a3348653f9",
+      "CL-5ac71aa91d5ec8b7",
+      "CL-be3488e07472abd1"
+    ],
+    "source_refs": [
+      "SA-d36e78fb32421148"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "entities",
+      "object"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-d36e78fb32421148",
+        "disclosed_at": "2026-06-11T06:28:09.000Z",
+        "status": "completed"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-1b46e22e6b51032d",
+    "display_title_zh": "asyncinject 0.7 发布"
+  },
+  {
     "event_type": "product_release",
     "event_status": "completed",
     "event_time": "2026-06-12T01:16:36.000Z",
     "disclosed_at": "2026-06-12T01:16:36.000Z",
     "entities": [
       "EN-c70eca6b0f88f44d",
-      "EN-ce635c4eabff5e4f"
+      "EN-3153ebda601cdb79",
+      "EN-c23eb5fae3cdd763"
     ],
     "action": "发布",
     "object": "Claude Code v2.1.174 发布",
@@ -543,7 +670,8 @@
     "claim_refs": [
       "CL-4a6ed87bb9fa740f",
       "CL-67a5b366c704944f",
-      "CL-866c5ea2412b57d5"
+      "CL-cbaff86d744f269b",
+      "CL-21d23df5cc09744f"
     ],
     "source_refs": [
       "SA-e4025b0bae1449d1"
@@ -569,8 +697,10 @@
     "event_time": "2026-06-12T03:02:28.000Z",
     "disclosed_at": "2026-06-12T03:02:28.000Z",
     "entities": [
+      "EN-12b0c8b376b8375e",
       "EN-9fbf261b62c1d7c0",
-      "EN-bbdefa2950f49882"
+      "EN-bbdefa2950f49882",
+      "EN-e1a4e41919f7c2dc"
     ],
     "action": "发布",
     "object": "Chrome / Edge 浏览器扩展，一键关闭 Bing 搜索结果 AI 回答内容",
@@ -579,7 +709,8 @@
     "claim_refs": [
       "CL-0b370d47531a1859",
       "CL-b9b9ba1a2c7498ab",
-      "CL-70922a7ba521886f"
+      "CL-70922a7ba521886f",
+      "CL-70535c622b3df059"
     ],
     "source_refs": [
       "SA-cbf0a55c7f66649e"
@@ -594,7 +725,7 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-d2d1834222ab32d3",
+    "event_id": "EV-8ca7da5081a2e2fc",
     "display_title_zh": "微软发布 Chrome / Edge 浏览器扩展，一键关闭 Bing 搜索结果 AI 回答内容"
   },
   {
@@ -603,7 +734,8 @@
     "event_time": "2026-06-11T15:00:00.000Z",
     "disclosed_at": "2026-06-11T15:00:00.000Z",
     "entities": [
-      "EN-7d3194f79e645c42"
+      "EN-7d3194f79e645c42",
+      "EN-96eebba49dbbf422"
     ],
     "action": "收购",
     "object": "云平台 Ona 以支持 AI 智能体",
@@ -637,6 +769,7 @@
     "event_time": "2026-06-11T16:23:25.000Z",
     "disclosed_at": "2026-06-11T16:23:25.000Z",
     "entities": [
+      "EN-96eebba49dbbf422",
       "EN-cbc62794911ff31b"
     ],
     "action": "融资",
@@ -663,7 +796,7 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-a9a40462f12bbbd3",
+    "event_id": "EV-02548003157849bb",
     "display_title_zh": "贝佐斯 AI 初创公司 Prometheus 获融资，估值 410 亿美元"
   }
 ]

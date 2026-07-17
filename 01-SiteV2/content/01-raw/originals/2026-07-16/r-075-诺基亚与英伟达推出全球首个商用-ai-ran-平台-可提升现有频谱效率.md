@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-075
 title: "诺基亚与英伟达推出全球首个商用 AI-RAN 平台，可提升现有频谱效率"
 title_zh: "诺基亚与英伟达推出全球首个商用 AI-RAN 平台，可提升现有频谱效率"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/977/090.htm"
 canonical_url: "https://ithome.com/0/977/090.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-16T02:39:33.859Z
 theme: outside-core-exploration
 keyword_group: outside-core-exploration
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 诺基亚与英伟达推出全球首个商用 AI-RAN 平台，可提升现有频谱效率

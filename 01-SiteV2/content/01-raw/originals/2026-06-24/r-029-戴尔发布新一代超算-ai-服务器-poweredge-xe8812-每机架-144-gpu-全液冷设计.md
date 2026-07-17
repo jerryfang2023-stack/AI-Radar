@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"戴尔科技发布 PowerEdge XE8812 服
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "戴尔发布新一代超算 AI 服务器 PowerEdge XE8812：每机架 144 GPU，全液冷设计"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 戴尔发布新一代超算 AI 服务器 PowerEdge XE8812：每机架 144 GPU，全液冷设计

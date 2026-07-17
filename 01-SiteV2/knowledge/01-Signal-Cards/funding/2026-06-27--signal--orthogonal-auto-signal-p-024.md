@@ -2,7 +2,7 @@
 id: SIG-20260627-A03
 type: signal_card
 signal_type: funding
-title: "Orthogonal Raises $4.3M Seed for AI Agent Service Discovery, Orchestration, and Payments Across the Internet"
+title: "Orthogonal 获 430 万美元种子轮融资，用于互联网上的 AI 代理服务发现、编排与支付"
 date: 2026-06-27
 status: published
 source_title: "Orthogonal Raises $4.3M Seed for AI Agent Service Discovery, Orchestration, and Payments Across the Internet"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Orthogonal"
 
 frontend:
-  displayTitle: "Orthogonal Raises $4.3M Seed for AI Agent Service Discovery, Orchestration, and Payments Across the Internet"
+  displayTitle: "Orthogonal 获 430 万美元种子轮融资，用于互联网上的 AI 代理服务发现、编排与支付"
   sourceLinks:
     - "https://www.prnewswire.com/news-releases/orthogonal-raises-4-3m-seed-for-ai-agent-service-discovery-orchestration-and-payments-across-the-internet-302806969.html"
 ---
 
-# Orthogonal Raises $4.3M Seed for AI Agent Service Discovery, Orchestration, and Payments Across the Internet
+# Orthogonal 获 430 万美元种子轮融资，用于互联网上的 AI 代理服务发现、编排与支付
 
 ## 新闻事实
 

@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-023
 title: "Orthogonal Raises $4.3M to Build the API Layer for AI Agents - The Silicon Valley Post"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "Orthogonal 获 430 万美元融资，打造 AI 代理的 API 层 - 《硅谷邮报》"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://svpost.com/articles/orthogonal-4-3m-seed/"
 canonical_url: "https://svpost.com/articles/orthogonal-4-3m-seed"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-16T02:39:33.546Z
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Orthogonal Raises $4.3M to Build the API Layer for AI Agents - The Silicon Valley Post

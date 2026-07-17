@@ -72,6 +72,10 @@ key_excerpts: [{"type":"company_action","text":"Hanson Wang and Alexander Embiri
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_zh: "OpenAI Codex团队：从代码自动补全到异步自主智能体"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # OpenAI Codex Team: From Coding Autocomplete to Asynchronous Autonomous Agents

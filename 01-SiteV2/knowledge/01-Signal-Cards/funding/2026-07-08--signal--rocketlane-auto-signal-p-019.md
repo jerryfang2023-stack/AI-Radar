@@ -2,7 +2,7 @@
 id: SIG-20260708-A03
 type: signal_card
 signal_type: funding
-title: "Rocketlane 获得战略投资"
+title: "Atlassian Ventures战略投资Rocketlane，助力专业服务交付新时代"
 date: 2026-07-08
 status: published
 source_title: "Atlassian Ventures Makes Strategic Investment in Rocketlane, Backing the Next Era of Professional Services Delivery"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "Rocketlane"
 
 frontend:
-  displayTitle: "Rocketlane 获得战略投资"
+  displayTitle: "Atlassian Ventures战略投资Rocketlane，助力专业服务交付新时代"
   sourceLinks:
     - "https://www.prnewswire.com/news-releases/atlassian-ventures-makes-strategic-investment-in-rocketlane-backing-the-next-era-of-professional-services-delivery-302819530.html"
 ---
 
-# Rocketlane 获得战略投资
+# Atlassian Ventures战略投资Rocketlane，助力专业服务交付新时代
 
 ## 新闻事实
 

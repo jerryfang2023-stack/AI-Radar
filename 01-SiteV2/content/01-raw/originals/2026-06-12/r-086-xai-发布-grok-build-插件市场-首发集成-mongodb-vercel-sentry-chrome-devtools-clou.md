@@ -72,6 +72,10 @@ key_excerpts: [{"type":"supporting_context","text":"xAI 推出 Grok Build 插件
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "xAI 发布 Grok Build 插件市场，首发集成 MongoDB、Vercel、Sentry、Chrome DevTools、Cloudflare 等插件"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # xAI 发布 Grok Build 插件市场，首发集成 MongoDB、Vercel、Sentry、Chrome DevTools、Cloudflare 等插件

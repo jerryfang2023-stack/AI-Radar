@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"Google 的 AI 智能体助手 Ge
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Gemini Spark，Google 智能体助手，现已登陆 Mac"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Gemini Spark，Google 智能体助手，现已登陆 Mac

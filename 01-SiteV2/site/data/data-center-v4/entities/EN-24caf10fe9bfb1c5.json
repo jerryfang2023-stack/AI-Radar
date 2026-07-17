@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 818,
+    "quarantinedEventCount": 58
+  },
+  "entity": {
+    "id": "EN-24caf10fe9bfb1c5",
+    "name": "Grok 4.5",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-bdcd6fc0caa8f6d4"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [
+      "EN-6fcba5d96a4fadfd"
+    ],
+    "firstSeen": "2026-07-09",
+    "lastSeen": "2026-07-09",
+    "relationIds": [
+      "REL2-6e6899469cc60402"
+    ],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-bdcd6fc0caa8f6d4"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-bdcd6fc0caa8f6d4",
+        "dataDate": "2026-07-09",
+        "date": "2026-07-09",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "SpaceXAI 发布 Grok 4.5，马斯克称其为“Opus 级模型”",
+        "displayTags": [],
+        "entityIds": [
+          "EN-6fcba5d96a4fadfd",
+          "EN-630dc133336bc266",
+          "EN-24caf10fe9bfb1c5"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [
+    {
+      "id": "EN-6fcba5d96a4fadfd",
+      "name": "xAI",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "Grok",
+        "SpaceXAI"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-3daefecd0453631a",
+        "EV-edcb66d0401cfb8f",
+        "EV-5d581d112fdbd464",
+        "EV-201b25d4f3cf696a",
+        "EV-e15ae1112294d59e",
+        "EV-43301de739fe560e",
+        "EV-ae736eb124d7163a",
+        "EV-bdcd6fc0caa8f6d4",
+        "EV-5012364af7480121",
+        "EV-e1a7e7dcb19bfc70",
+        "EV-10aac036228b3c6b",
+        "EV-ed58c2c69290ee4c",
+        "EV-631197767a45d34c",
+        "EV-d53cd33e8f541a65",
+        "EV-11a3893cb86fef69",
+        "EV-9578242a4df20721",
+        "EV-8cd571951f62b2c8",
+        "EV-bce258f8f915ff5f",
+        "EV-4beb890f0879aeaf"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-code_generation",
+        "TX-use_case-software_development",
+        "TX-use_case-robotics_automation",
+        "TX-technology-tool_use"
+      ],
+      "relatedEntityIds": [
+        "EN-0b9ca57f53ba758b",
+        "EN-c4bc2d00a42f220f",
+        "EN-24caf10fe9bfb1c5",
+        "EN-7d5f17368c04f04c",
+        "EN-1a254d17cfa54b16",
+        "EN-26e4951af4490c21"
+      ],
+      "firstSeen": "2026-05-25",
+      "lastSeen": "2026-07-17"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-6e6899469cc60402",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-6fcba5d96a4fadfd",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-24caf10fe9bfb1c5",
+      "object_type": "entity",
+      "event_id": "EV-bdcd6fc0caa8f6d4",
+      "claim_refs": [
+        "CL-ec2d6107c732e14c",
+        "CL-913d46a75159fe2c",
+        "CL-ac4400a00aa86a15",
+        "CL-9237aaeca90244b9"
+      ],
+      "source_refs": [
+        "SA-bcceb60ea21e07af"
+      ],
+      "data_date": "2026-07-09",
+      "status": "verified"
+    }
+  ],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

@@ -2,7 +2,7 @@
 id: SIG-20260618-A09
 type: signal_card
 signal_type: product_service
-title: "Anthropic 加入 Frontier 碳去除联盟，成首家 AI 初创成员 推出 Agent 工作流能力，切入企业 Agent 协作平台"
+title: "Anthropic 加入 Frontier 碳去除联盟，成首家 AI 初创成员"
 date: 2026-06-18
 status: published
 source_title: "Anthropic 加入 Frontier 碳去除联盟，成首家 AI 初创成员"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Anthropic 加入 Frontier 碳去除联盟，成首家 AI 初创成员"
 
 frontend:
-  displayTitle: "Anthropic 加入 Frontier 碳去除联盟，成首家 AI 初创成员 推出 Agent 工作流能力，切入企业 Agent 协作平台"
+  displayTitle: "Anthropic 加入 Frontier 碳去除联盟，成首家 AI 初创成员"
   sourceLinks:
     - "https://techcrunch.com/2026/06/17/anthropic-becomes-first-ai-startup-to-join-the-frontier-carbon-removal-coalition"
 ---
 
-# Anthropic 加入 Frontier 碳去除联盟，成首家 AI 初创成员 推出 Agent 工作流能力，切入企业 Agent 协作平台
+# Anthropic 加入 Frontier 碳去除联盟，成首家 AI 初创成员
 
 ## 新闻事实
 

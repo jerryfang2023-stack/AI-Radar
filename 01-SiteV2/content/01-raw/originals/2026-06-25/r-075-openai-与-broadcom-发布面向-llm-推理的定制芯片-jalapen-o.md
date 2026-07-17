@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"OpenAI 与 Broadcom 联合推出
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "OpenAI 与 Broadcom 发布面向 LLM 推理的定制芯片 Jalapeño"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # OpenAI 与 Broadcom 发布面向 LLM 推理的定制芯片 Jalapeño

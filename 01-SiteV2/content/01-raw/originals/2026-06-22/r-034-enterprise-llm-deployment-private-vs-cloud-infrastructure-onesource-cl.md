@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"Enterprise LLM Deployment: Private 
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_zh: "企业级LLM部署：私有云与公有云基础设施对比——OneSource云"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Enterprise LLM Deployment: Private vs Cloud Infrastructure-OneSource Cloud

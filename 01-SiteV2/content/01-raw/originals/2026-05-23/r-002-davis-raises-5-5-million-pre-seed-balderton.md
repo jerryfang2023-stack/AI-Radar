@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Davis raises $5.5 million pre-seed - Ba
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "Davis 筹集 550 万美元预种子轮 - Balderton"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Davis raises $5.5 million pre-seed - Balderton

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Telli, a YC alum, raises pre-seed fundi
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only
+title_zh: "Telli（YC校友）为其AI语音代理筹集种子轮前资金"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Telli, a YC alum, raises pre-seed funding for its AI voice agents

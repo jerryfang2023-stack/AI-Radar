@@ -2,7 +2,7 @@
 id: SIG-20260614-A04
 type: signal_card
 signal_type: case
-title: "Ithome 案例：AI 进入企业智能体协作流程"
+title: "谷歌推出搜索智能体功能，可主动帮你盯全网信息"
 date: 2026-06-14
 status: published
 source_title: "毕马威AI报告被指由AI生成：引文45条仅5条准确，多处案例不实"
@@ -60,12 +60,12 @@ opportunity_signals:
 signal_owner: "Ithome"
 
 frontend:
-  displayTitle: "Ithome 案例：AI 进入企业智能体协作流程"
+  displayTitle: "谷歌推出搜索智能体功能，可主动帮你盯全网信息"
   sourceLinks:
     - "https://www.ithome.com/0/963/986.htm"
 ---
 
-# Ithome 案例：AI 进入企业智能体协作流程
+# 谷歌推出搜索智能体功能，可主动帮你盯全网信息
 
 ## 新闻事实
 

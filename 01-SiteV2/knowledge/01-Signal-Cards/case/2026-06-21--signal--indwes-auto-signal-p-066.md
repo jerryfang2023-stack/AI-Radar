@@ -2,7 +2,7 @@
 id: SIG-20260621-A12
 type: signal_card
 signal_type: case
-title: "How Modern Organizations Actually Deploy AI: Tools, Teams, and ..."
+title: "现代组织如何实际部署AI：工具、团队与……"
 date: 2026-06-21
 status: published
 source_title: "How Modern Organizations Actually Deploy AI: Tools, Teams, and ..."
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Indwes"
 
 frontend:
-  displayTitle: "How Modern Organizations Actually Deploy AI: Tools, Teams, and ..."
+  displayTitle: "现代组织如何实际部署AI：工具、团队与……"
   sourceLinks:
     - "https://www.indwes.edu/articles/2025/11/modern-organizations-actually-deploy-ai"
 ---
 
-# How Modern Organizations Actually Deploy AI: Tools, Teams, and ...
+# 现代组织如何实际部署AI：工具、团队与……
 
 ## 新闻事实
 

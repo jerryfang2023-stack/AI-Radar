@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-050
 title: "DeepSeek-V4 原厂直供模型 7 月中旬登陆腾讯云，同步引入峰谷定价"
 title_zh: "DeepSeek-V4 原厂直供模型 7 月中旬登陆腾讯云，同步引入峰谷定价"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/972/437.htm"
 canonical_url: "https://ithome.com/0/972/437.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-04T04:50:50.390Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # DeepSeek-V4 原厂直供模型 7 月中旬登陆腾讯云，同步引入峰谷定价

@@ -2,7 +2,7 @@
 id: SIG-20260624-A04
 type: signal_card
 signal_type: case
-title: "Cursor 记录企业应用场景：销售和收入团队流程"
+title: "Coinbase借助Cursor将创意到生产的时间缩短90%"
 date: 2026-06-24
 status: published
 source_title: "Coinbase reduces time from idea to production by 90% with Cursor · Cursor"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Cursor"
 
 frontend:
-  displayTitle: "Cursor 记录企业应用场景：销售和收入团队流程"
+  displayTitle: "Coinbase借助Cursor将创意到生产的时间缩短90%"
   sourceLinks:
     - "https://cursor.com/blog/coinbase"
 ---
 
-# Cursor 记录企业应用场景：销售和收入团队流程
+# Coinbase借助Cursor将创意到生产的时间缩短90%
 
 ## 新闻事实
 

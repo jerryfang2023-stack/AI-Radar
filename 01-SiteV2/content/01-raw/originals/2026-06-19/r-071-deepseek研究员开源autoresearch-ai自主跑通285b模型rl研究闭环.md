@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"DeepSeek研究员Deli Chen将Aut
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "DeepSeek研究员开源AutoResearch：AI自主跑通285B模型RL研究闭环"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # DeepSeek研究员开源AutoResearch：AI自主跑通285B模型RL研究闭环

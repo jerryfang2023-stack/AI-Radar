@@ -72,6 +72,10 @@ key_excerpts: [{"type":"workflow_change","text":"PALO ALTO, Calif.--(BUSINESS WI
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "SambaNova 在 AWS 市场推出其 AI 平台"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # SambaNova Launches Its AI Platform in AWS Marketplace

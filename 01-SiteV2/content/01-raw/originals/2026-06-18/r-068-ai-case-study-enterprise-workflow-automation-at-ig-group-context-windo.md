@@ -72,6 +72,10 @@ key_excerpts: [{"type":"supporting_context","text":"AI Case Study: Enterprise wo
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "AI案例研究：IG集团的企业工作流自动化 | 上下文窗口"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # AI Case Study: Enterprise workflow automation at IG Group | Context Windows

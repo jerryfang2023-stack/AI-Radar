@@ -2,7 +2,7 @@
 id: SIG-20260627-A15
 type: signal_card
 signal_type: product_service
-title: "OpenAI unveils GPT-5.6 amid US AI regulatory drama"
+title: "OpenAI在美国AI监管风波中发布GPT-5.6"
 date: 2026-06-27
 status: published
 source_title: "OpenAI unveils GPT-5.6 amid US AI regulatory drama"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Terra"
 
 frontend:
-  displayTitle: "OpenAI unveils GPT-5.6 amid US AI regulatory drama"
+  displayTitle: "OpenAI在美国AI监管风波中发布GPT-5.6"
   sourceLinks:
     - "https://www.theverge.com/ai-artificial-intelligence/957845/openai-gpt-5-6-trump-administration-ai-preview"
 ---
 
-# OpenAI unveils GPT-5.6 amid US AI regulatory drama
+# OpenAI在美国AI监管风波中发布GPT-5.6
 
 ## 新闻事实
 

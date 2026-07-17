@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"Anthropic 于当地时间 6 月 23 日�
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "仅需 @ 即可调用：Anthropic 推出 AI 虚拟团队成员 Claude Tag"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 仅需 @ 即可调用：Anthropic 推出 AI 虚拟团队成员 Claude Tag

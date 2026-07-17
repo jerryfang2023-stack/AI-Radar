@@ -2,7 +2,7 @@
 id: SIG-20260629-A09
 type: signal_card
 signal_type: case
-title: "Upbound 发布 Modelplane 开源控制平面"
+title: "Upbound推出Modelplane：开源控制平面"
 date: 2026-06-29
 status: published
 source_title: "Upbound Launches Modelplane: The Open Source Control Plane"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Upbound"
 
 frontend:
-  displayTitle: "Upbound 发布 Modelplane 开源控制平面"
+  displayTitle: "Upbound推出Modelplane：开源控制平面"
   sourceLinks:
     - "https://www.globenewswire.com/news-release/2026/06/23/3316226/0/en/Upbound-Launches-Modelplane-The-Open-Source-Control-Plane-for-AI-Inference.html"
 ---
 
-# Upbound 发布 Modelplane 开源控制平面
+# Upbound推出Modelplane：开源控制平面
 
 ## 新闻事实
 

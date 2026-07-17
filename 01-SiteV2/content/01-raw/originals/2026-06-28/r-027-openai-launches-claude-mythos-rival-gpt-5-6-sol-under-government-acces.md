@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"OpenAI's new flagship GPT-5.6 So
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_zh: "OpenAI推出政府访问权限下名为Claude Mythos竞争对手的GPT-5.6 Sol，称其不可持续"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # OpenAI launches Claude Mythos rival GPT-5.6 Sol under government access it calls unsustainable

@@ -84,6 +84,48 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-7f51040e45fca777",
+    "raw_id": "RAW-7b0c4f5a0627c882",
+    "claim_type": "deployment",
+    "subject": "微软推出自有AI",
+    "predicate": "deployment",
+    "object": "公司，投入25亿美元",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-7b0c4f5a0627c882",
+      "start": 812,
+      "end": 1246
+    },
+    "source_quote": "Nonetheless, the venture bears a striking similarity to a number of FDE-based AI ventures announced in recent months. Just two days earlier , Amazon Web Services announced an internal commitment of $1 billion for its own AI deployment venture, explicitly embracing the FDE model. Both OpenAI and Anthropic have launched joint ventures along similar lines, although those efforts also involve outside capital from private equity firms.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e4bdd3c2b84aada6",
+    "raw_id": "RAW-7b0c4f5a0627c882",
+    "claim_type": "deployment",
+    "subject": "微软推出自有AI",
+    "predicate": "deployment",
+    "object": "公司，投入25亿美元",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-7b0c4f5a0627c882",
+      "start": 1247,
+      "end": 1536
+    },
+    "source_quote": "Microsoft’s existing client base will give the new effort a significant head start, as the company has already deployed engineers to much of the Fortune 500. The announcement cites an early partnership with the London Stock Exchange Group, as well as Unilever, Land O’Lakes, and Accenture.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-333f401c6ab2ae9f",
     "raw_id": "RAW-1a8c859608cac2b7",
     "claim_type": "partnership",
@@ -126,148 +168,43 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-0f229889cb8a2db0",
-    "raw_id": "RAW-113fb485c7064756",
-    "claim_type": "product_release",
-    "subject": "Claude Enterprise",
-    "predicate": "product_release",
-    "object": "用量与成本分析及支出管控功能",
+    "claim_id": "CL-56c99a19783adaa4",
+    "raw_id": "RAW-1a8c859608cac2b7",
+    "claim_type": "partnership",
+    "subject": "Anthropic 与三星洽谈定制芯片",
+    "predicate": "partnership",
+    "object": "A number of AI companies have sought to develop custom chips — both as a way to create unique hardware for specific compute tasks and to gain a certain amount of independence from Nvidia, which continues to be the undisputed leader of the chip industry.",
     "qualifiers": {
-      "event_status": "announced",
-      "sequence": 1
-    },
-    "source_span": {
-      "raw_id": "RAW-113fb485c7064756",
-      "start": 0,
-      "end": 377
-    },
-    "source_quote": "We’re introducing richer admin analytics, model-level entitlements, and spend alerts for Claude Enterprise. As Claude takes on increasingly difficult and complex agentic work across the organization, usage and cost patterns look different from a standard chat tool. These controls give admins the visibility to understand how Claude is being used and the tools to manage costs.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.9,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-c44cd6808795d14a",
-    "raw_id": "RAW-113fb485c7064756",
-    "claim_type": "product_release",
-    "subject": "Claude Enterprise",
-    "predicate": "product_release",
-    "object": "用量与成本分析及支出管控功能",
-    "qualifiers": {
-      "event_status": "announced",
-      "sequence": 2
-    },
-    "source_span": {
-      "raw_id": "RAW-113fb485c7064756",
-      "start": 3815,
-      "end": 4093
-    },
-    "source_quote": "“I'm not going to slow down the people driving our best quarter, and my CFO isn't asking me to. He's asking for ROI. We've tied Claude, connected to our enterprise MCP servers, to a 4% revenue lift, and seeing cost next to business impact by team is how I make that case stick.”",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-2672d972a920b4de",
-    "raw_id": "RAW-41f03d0a1a1b5fc5",
-    "claim_type": "product_release",
-    "subject": "Claude Code v2.1.199",
-    "predicate": "product_release",
-    "object": "CLAUDE_CODE_RETRY_WATCHDOG now raises the default retry count for non-capacity transient errors to 300 and lifts the cap of 15 on CLAUDE_CODE_MAX_RETRIES",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 1
-    },
-    "source_span": {
-      "raw_id": "RAW-41f03d0a1a1b5fc5",
-      "start": 3469,
-      "end": 3622
-    },
-    "source_quote": "CLAUDE_CODE_RETRY_WATCHDOG now raises the default retry count for non-capacity transient errors to 300 and lifts the cap of 15 on CLAUDE_CODE_MAX_RETRIES",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.9,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-3a9df8f0c1928e2a",
-    "raw_id": "RAW-5ae24c7860676e8e",
-    "claim_type": "product_release",
-    "subject": "Kimi K2.7 Code 已在 GitHub Copilot 上正式",
-    "predicate": "product_release",
-    "object": "Kimi K2.7 Code, an open-weight model, is now generally available in GitHub Copilot. This is the first open-weight model offered as a selectable option in the Copilot model picker, giving you more choice and a lower-cost option for your coding workflows.",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 1
-    },
-    "source_span": {
-      "raw_id": "RAW-5ae24c7860676e8e",
-      "start": 18,
-      "end": 271
-    },
-    "source_quote": "Kimi K2.7 Code, an open-weight model, is now generally available in GitHub Copilot. This is the first open-weight model offered as a selectable option in the Copilot model picker, giving you more choice and a lower-cost option for your coding workflows.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.9,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-45e4ccd26c2e2580",
-    "raw_id": "RAW-5ae24c7860676e8e",
-    "claim_type": "product_release",
-    "subject": "Kimi K2.7 Code 已在 GitHub Copilot 上正式",
-    "predicate": "product_release",
-    "object": "Kimi K2.7 Code is hosted by GitHub on Microsoft Azure.",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 2
-    },
-    "source_span": {
-      "raw_id": "RAW-5ae24c7860676e8e",
-      "start": 272,
-      "end": 326
-    },
-    "source_quote": "Kimi K2.7 Code is hosted by GitHub on Microsoft Azure.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-0364e398fbf94933",
-    "raw_id": "RAW-5ae24c7860676e8e",
-    "claim_type": "product_release",
-    "subject": "Kimi K2.7 Code 已在 GitHub Copilot 上正式",
-    "predicate": "product_release",
-    "object": "This model is billed at provider list pricing under usage-based billing. See GitHub Copilot&rsquo;s pricing for models and requests for details.",
-    "qualifiers": {
-      "event_status": "completed",
+      "event_status": "in_progress",
       "sequence": 3
     },
     "source_span": {
-      "raw_id": "RAW-5ae24c7860676e8e",
-      "start": 327,
-      "end": 471
+      "raw_id": "RAW-1a8c859608cac2b7",
+      "start": 895,
+      "end": 1148
     },
-    "source_quote": "This model is billed at provider list pricing under usage-based billing. See GitHub Copilot&rsquo;s pricing for models and requests for details.",
+    "source_quote": "A number of AI companies have sought to develop custom chips — both as a way to create unique hardware for specific compute tasks and to gain a certain amount of independence from Nvidia, which continues to be the undisputed leader of the chip industry.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-0348a57a95d4673c",
-    "raw_id": "RAW-5ae24c7860676e8e",
-    "claim_type": "product_release",
-    "subject": "Kimi K2.7 Code 已在 GitHub Copilot 上正式",
-    "predicate": "product_release",
-    "object": "Availability in GitHub Copilot",
+    "claim_id": "CL-ec9a12a611300175",
+    "raw_id": "RAW-1a8c859608cac2b7",
+    "claim_type": "partnership",
+    "subject": "Anthropic 与三星洽谈定制芯片",
+    "predicate": "partnership",
+    "object": "Anthropic’s announcement may also be a response to one made last week by its key competitor, OpenAI, which has teamed up with Broadcom to announce its own custom-built inference processor, dubbed “Jalapeño.” OpenAI says that the chip is more efficient, demonstrating better performance-per-watt, than other competitor chips. Amazon and Google both offer custom-built TPUs as part of their cloud offering.",
     "qualifiers": {
-      "event_status": "completed",
+      "event_status": "in_progress",
       "sequence": 4
     },
     "source_span": {
-      "raw_id": "RAW-5ae24c7860676e8e",
-      "start": 472,
-      "end": 502
+      "raw_id": "RAW-1a8c859608cac2b7",
+      "start": 1149,
+      "end": 1553
     },
-    "source_quote": "Availability in GitHub Copilot",
+    "source_quote": "Anthropic’s announcement may also be a response to one made last week by its key competitor, OpenAI, which has teamed up with Broadcom to announce its own custom-built inference processor, dubbed “Jalapeño.” OpenAI says that the chip is more efficient, demonstrating better performance-per-watt, than other competitor chips. Amazon and Google both offer custom-built TPUs as part of their cloud offering.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -280,7 +217,7 @@
     "predicate": "funding",
     "object": "$135M Series A for his AI coding startup, takes CEO role",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 1
     },
     "source_span": {
@@ -301,7 +238,7 @@
     "predicate": "funding",
     "object": "$135M Series A for his AI coding startup, takes CEO role",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 2
     },
     "source_span": {
@@ -322,7 +259,7 @@
     "predicate": "funding",
     "object": "$135M Series A for his AI coding startup, takes CEO role",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 3
     },
     "source_span": {
@@ -343,7 +280,7 @@
     "predicate": "funding",
     "object": "$135M Series A for his AI coding startup, takes CEO role",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 4
     },
     "source_span": {
@@ -364,7 +301,7 @@
     "predicate": "funding",
     "object": "$10M to build the security arsenal for the agentic era | General Analysis",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 1
     },
     "source_span": {
@@ -385,7 +322,7 @@
     "predicate": "funding",
     "object": "$10M to build the security arsenal for the agentic era | General Analysis",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 2
     },
     "source_span": {
@@ -406,7 +343,7 @@
     "predicate": "funding",
     "object": "$10M to build the security arsenal for the agentic era | General Analysis",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 3
     },
     "source_span": {
@@ -427,7 +364,7 @@
     "predicate": "funding",
     "object": "$10M to build the security arsenal for the agentic era | General Analysis",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 4
     },
     "source_span": {
@@ -448,7 +385,7 @@
     "predicate": "funding",
     "object": "11→3 Days, $850K Saved on LangGraph + Claude 3.5 + SAP/Oracle/NetSuite | DreamzTech",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 1
     },
     "source_span": {
@@ -469,7 +406,7 @@
     "predicate": "funding",
     "object": "11→3 Days, $850K Saved on LangGraph + Claude 3.5 + SAP/Oracle/NetSuite | DreamzTech",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 2
     },
     "source_span": {
@@ -490,7 +427,7 @@
     "predicate": "funding",
     "object": "11→3 Days, $850K Saved on LangGraph + Claude 3.5 + SAP/Oracle/NetSuite | DreamzTech",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 3
     },
     "source_span": {
@@ -511,7 +448,7 @@
     "predicate": "funding",
     "object": "11→3 Days, $850K Saved on LangGraph + Claude 3.5 + SAP/Oracle/NetSuite | DreamzTech",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 4
     },
     "source_span": {
@@ -609,6 +546,174 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-f2d4b04a0a1dd78d",
+    "raw_id": "RAW-1f7c7206b0434bbd",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "阿里拟整合 QoderWork、悟空、MuleRun 三大 Agent 产品，现有用户权益不受影响",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-1f7c7206b0434bbd",
+      "start": 99,
+      "end": 141
+    },
+    "source_quote": "QoderWork 是阿里巴巴于 2026 年 1 月推出的桌面 AI 智能体工具。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-987b6b91845064eb",
+    "raw_id": "RAW-1f7c7206b0434bbd",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "阿里拟整合 QoderWork、悟空、MuleRun 三大 Agent 产品，现有用户权益不受影响",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-1f7c7206b0434bbd",
+      "start": 141,
+      "end": 194
+    },
+    "source_quote": "用户通过自然语言指令即可让 AI 直接操作电脑上的本地应用和文件，完成文档生成、数据分析、文件整理等任务。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b28fcafff0a14b4d",
+    "raw_id": "RAW-1f7c7206b0434bbd",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "阿里拟整合 QoderWork、悟空、MuleRun 三大 Agent 产品，现有用户权益不受影响",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-1f7c7206b0434bbd",
+      "start": 194,
+      "end": 275
+    },
+    "source_quote": "自发布以来，QoderWork 已陆续上线了金融、法律、营销等领域的专家套件、设计工作台以及“意识”记忆与反思功能，并与钉钉、微信、飞书等主流 IM 实现了打通。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-404e2f09a3ef7471",
+    "raw_id": "RAW-1f7c7206b0434bbd",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "阿里拟整合 QoderWork、悟空、MuleRun 三大 Agent 产品，现有用户权益不受影响",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-1f7c7206b0434bbd",
+      "start": 0,
+      "end": 88
+    },
+    "source_quote": "IT之家 7 月 2 日消息，据新浪科技报道，阿里巴巴计划以 QoderWork 为基础，整合“悟空”与“MuleRun”的能力，打造一款面向企业生产力场景的全新 AI 产品。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-68243ebe74f232f1",
+    "raw_id": "RAW-750810c85531ce0d",
+    "claim_type": "product_release",
+    "subject": "Anthropic",
+    "predicate": "product_release",
+    "object": "Anthropic 启动自研 AI 芯片早期开发，拟采用三星 2 纳米工艺",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-750810c85531ce0d",
+      "start": 621,
+      "end": 708
+    },
+    "source_quote": "IT之家注意到，OpenAI 早在 2024 年便携手博通开启自研芯片设计，上月双方合作的首款产品 Jalapeño 推理芯片正式发布，该芯片可大幅提升大语言模型的运行效率。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-d47fdf5c02372d92",
+    "raw_id": "RAW-750810c85531ce0d",
+    "claim_type": "product_release",
+    "subject": "Anthropic",
+    "predicate": "product_release",
+    "object": "Anthropic 启动自研 AI 芯片早期开发，拟采用三星 2 纳米工艺",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-750810c85531ce0d",
+      "start": 0,
+      "end": 48
+    },
+    "source_quote": "消息称 Anthropic 启动自研 AI 芯片早期开发，拟采用三星 2 纳米工艺 - IT之家",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-06c4b41465e3b8d9",
+    "raw_id": "RAW-750810c85531ce0d",
+    "claim_type": "product_release",
+    "subject": "Anthropic",
+    "predicate": "product_release",
+    "object": "Anthropic 启动自研 AI 芯片早期开发，拟采用三星 2 纳米工艺",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-750810c85531ce0d",
+      "start": 214,
+      "end": 255
+    },
+    "source_quote": "消息称 Anthropic 启动自研 AI 芯片早期开发，拟采用三星 2 纳米工艺",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-c1748e06a3757b55",
+    "raw_id": "RAW-750810c85531ce0d",
+    "claim_type": "product_release",
+    "subject": "Anthropic",
+    "predicate": "product_release",
+    "object": "Anthropic 启动自研 AI 芯片早期开发，拟采用三星 2 纳米工艺",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-750810c85531ce0d",
+      "start": 323,
+      "end": 415
+    },
+    "source_quote": "IT之家 7 月 2 日消息，据 The Information 报道，Anthropic 正与三星洽谈定制人工智能芯片事宜，Anthropic 已启动自研人工智能芯片的早期开发工作。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-0fdc56554f30141d",
     "raw_id": "RAW-309d2478639661e3",
     "claim_type": "product_release",
@@ -630,6 +735,48 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-7a95f8348c0fd961",
+    "raw_id": "RAW-309d2478639661e3",
+    "claim_type": "product_release",
+    "subject": "韩国",
+    "predicate": "product_release",
+    "object": "物理 AI 国家战略，剑指全球领军地位",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-309d2478639661e3",
+      "start": 107,
+      "end": 197
+    },
+    "source_quote": "韩国科学技术信息通信部表示，当前全球竞争日趋白热化，美国头部科技企业与中国均在布局垂直整合、全栈式物理人工智能平台，为此韩国多部委联合制定本战略，意在提升本国该产业整体国家竞争力。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-db6fba01ea36ee18",
+    "raw_id": "RAW-309d2478639661e3",
+    "claim_type": "product_release",
+    "subject": "韩国",
+    "predicate": "product_release",
+    "object": "物理 AI 国家战略，剑指全球领军地位",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-309d2478639661e3",
+      "start": 198,
+      "end": 263
+    },
+    "source_quote": "该战略设立两大总体目标：一是掌握全球领先的物理人工智能全栈技术；二是推动物理 AI 在制造、农业、国防、养老陪护等全行业落地普及。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-9c37e0460540cba0",
     "raw_id": "RAW-705fdc5fee7717b1",
     "claim_type": "deployment",
@@ -648,6 +795,48 @@
     "source_quote": "关键一点是，相关落地产出成果将完全归客户所有，无需回传给微软。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-c93332c0caae50ea",
+    "raw_id": "RAW-705fdc5fee7717b1",
+    "claim_type": "deployment",
+    "subject": "微软宣布斥资 25 亿美元成立新公司，助力企业",
+    "predicate": "deployment",
+    "object": "人工智能技术",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-705fdc5fee7717b1",
+      "start": 353,
+      "end": 462
+    },
+    "source_quote": "这家 Windows 操作系统厂商此举效仿了多家同行企业的做法：Palantir 早已依托英伟达开源大模型为大型企业提供同类定制服务；其云业务竞争对手亚马逊云科技也已设立规模达 10 亿美元的嵌入式工程师专项业务部门。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-9bae2921945a23b6",
+    "raw_id": "RAW-705fdc5fee7717b1",
+    "claim_type": "deployment",
+    "subject": "微软宣布斥资 25 亿美元成立新公司，助力企业",
+    "predicate": "deployment",
+    "object": "人工智能技术",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-705fdc5fee7717b1",
+      "start": 463,
+      "end": 595
+    },
+    "source_quote": "行业分析机构 Moor Insights & Strategy 公司首席执行官帕特里克 · 穆尔黑德表示，大型企业心存顾虑：长期使用 Anthropic、OpenAI 的大模型，最终会让这两家前沿实验室掌握足以与自身抗衡的技术能力，在代码开发、法务等领域尤为明显。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
     "verification_status": "accepted"
   },
   {
@@ -714,33 +903,12 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-fc1e41acf536fb28",
-    "raw_id": "RAW-c8665b3103f9969c",
-    "claim_type": "product_release",
-    "subject": "英伟达",
-    "predicate": "product_release",
-    "object": "全新扶持计划，以收益分成模式助力 AI 初创企业获取算力",
-    "qualifiers": {
-      "event_status": "planned",
-      "sequence": 4
-    },
-    "source_span": {
-      "raw_id": "RAW-c8665b3103f9969c",
-      "start": 1008,
-      "end": 1043
-    },
-    "source_quote": "英伟达推出 Earth-2 开放模型系列，可生成 15 天全球天气预报",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
     "claim_id": "CL-5c46fe62a1a28925",
     "raw_id": "RAW-f2b5d66c0b1a06e2",
-    "claim_type": "deployment",
+    "claim_type": "product_release",
     "subject": "阿里云秒悟 Meoo",
-    "predicate": "deployment",
-    "object": "夜间计划，每晚 22：00 后用 Qwen3.7-Max AI 工具最低 2 折",
+    "predicate": "product_release",
+    "object": "最低 2 折",
     "qualifiers": {
       "event_status": "planned",
       "sequence": 1
@@ -758,10 +926,10 @@
   {
     "claim_id": "CL-baea1e3e6ec4ea79",
     "raw_id": "RAW-f2b5d66c0b1a06e2",
-    "claim_type": "deployment",
+    "claim_type": "product_release",
     "subject": "阿里云秒悟 Meoo",
-    "predicate": "deployment",
-    "object": "夜间计划，每晚 22：00 后用 Qwen3.7-Max AI 工具最低 2 折",
+    "predicate": "product_release",
+    "object": "最低 2 折",
     "qualifiers": {
       "event_status": "planned",
       "sequence": 2
@@ -779,10 +947,10 @@
   {
     "claim_id": "CL-d452d33194eb5755",
     "raw_id": "RAW-f2b5d66c0b1a06e2",
-    "claim_type": "deployment",
+    "claim_type": "product_release",
     "subject": "阿里云秒悟 Meoo",
-    "predicate": "deployment",
-    "object": "夜间计划，每晚 22：00 后用 Qwen3.7-Max AI 工具最低 2 折",
+    "predicate": "product_release",
+    "object": "最低 2 折",
     "qualifiers": {
       "event_status": "planned",
       "sequence": 3
@@ -800,10 +968,10 @@
   {
     "claim_id": "CL-64dd89cda98a0545",
     "raw_id": "RAW-f2b5d66c0b1a06e2",
-    "claim_type": "deployment",
+    "claim_type": "product_release",
     "subject": "阿里云秒悟 Meoo",
-    "predicate": "deployment",
-    "object": "夜间计划，每晚 22：00 后用 Qwen3.7-Max AI 工具最低 2 折",
+    "predicate": "product_release",
+    "object": "最低 2 折",
     "qualifiers": {
       "event_status": "planned",
       "sequence": 4
@@ -821,10 +989,10 @@
   {
     "claim_id": "CL-97c9b12f91823925",
     "raw_id": "RAW-b298987cd91b1942",
-    "claim_type": "deployment",
-    "subject": "华擎推出 ASRock Claw Quickset 桌面工具，可简化本地 AI 环境",
-    "predicate": "deployment",
-    "object": "华擎推出 ASRock Claw Quickset 桌面工具，可简化本地 AI 环境部署 - IT之家",
+    "claim_type": "product_release",
+    "subject": "华擎",
+    "predicate": "product_release",
+    "object": "ASRock Claw Quickset 桌面工具，可简化本地 AI 环境部署",
     "qualifiers": {
       "event_status": "completed",
       "sequence": 1
@@ -842,10 +1010,10 @@
   {
     "claim_id": "CL-a6b0029076353c91",
     "raw_id": "RAW-b298987cd91b1942",
-    "claim_type": "deployment",
-    "subject": "华擎推出 ASRock Claw Quickset 桌面工具，可简化本地 AI 环境",
-    "predicate": "deployment",
-    "object": "华擎推出 ASRock Claw Quickset 桌面工具，可简化本地 AI 环境部署",
+    "claim_type": "product_release",
+    "subject": "华擎",
+    "predicate": "product_release",
+    "object": "ASRock Claw Quickset 桌面工具，可简化本地 AI 环境部署",
     "qualifiers": {
       "event_status": "completed",
       "sequence": 2
@@ -861,15 +1029,36 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-ac07ae7e0a512ce2",
+    "claim_id": "CL-767c6e27f18d910a",
     "raw_id": "RAW-b298987cd91b1942",
-    "claim_type": "deployment",
-    "subject": "华擎推出 ASRock Claw Quickset 桌面工具，可简化本地 AI 环境",
-    "predicate": "deployment",
-    "object": "其专为简化本地 AI 环境部署而设计， 能自动完成 OpenClaw、AI 模型及各项必要软件组件的安装与设定 。",
+    "claim_type": "product_release",
+    "subject": "华擎",
+    "predicate": "product_release",
+    "object": "ASRock Claw Quickset 桌面工具，可简化本地 AI 环境部署",
     "qualifiers": {
       "event_status": "completed",
       "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-b298987cd91b1942",
+      "start": 313,
+      "end": 371
+    },
+    "source_quote": "IT之家 7 月 2 日消息，华擎昨日宣布推出 Windows 桌面工具 ASRock Claw Quickset。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-ac07ae7e0a512ce2",
+    "raw_id": "RAW-b298987cd91b1942",
+    "claim_type": "product_release",
+    "subject": "华擎",
+    "predicate": "product_release",
+    "object": "ASRock Claw Quickset 桌面工具，可简化本地 AI 环境部署",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
     },
     "source_span": {
       "raw_id": "RAW-b298987cd91b1942",
@@ -877,27 +1066,6 @@
       "end": 428
     },
     "source_quote": "其专为简化本地 AI 环境部署而设计， 能自动完成 OpenClaw、AI 模型及各项必要软件组件的安装与设定 。",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-c2c7c8ff32f2ac29",
-    "raw_id": "RAW-b298987cd91b1942",
-    "claim_type": "deployment",
-    "subject": "华擎推出 ASRock Claw Quickset 桌面工具，可简化本地 AI 环境",
-    "predicate": "deployment",
-    "object": "这一工具专为搭载华擎主板或显卡的 Windows 系统打造，默认部署本地 AI 环境，支持通过 OpenClaw 配置云端算力；默认状态下，文件访问权限仅限于指定工作区，系统层级功能则一律关闭。",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 4
-    },
-    "source_span": {
-      "raw_id": "RAW-b298987cd91b1942",
-      "start": 584,
-      "end": 681
-    },
-    "source_quote": "这一工具专为搭载华擎主板或显卡的 Windows 系统打造，默认部署本地 AI 环境，支持通过 OpenClaw 配置云端算力；默认状态下，文件访问权限仅限于指定工作区，系统层级功能则一律关闭。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"

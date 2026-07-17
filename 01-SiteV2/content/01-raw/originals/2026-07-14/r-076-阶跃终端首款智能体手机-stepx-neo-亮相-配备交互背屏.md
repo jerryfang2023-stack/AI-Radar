@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-076
 title: "阶跃终端首款智能体手机 STEPX Neo 亮相，配备交互背屏"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "阶跃终端首款智能体手机 STEPX Neo 亮相，配备交互背屏"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/976/191.htm"
 canonical_url: "https://ithome.com/0/976/191.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-14T01:56:51.769Z
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 阶跃终端首款智能体手机 STEPX Neo 亮相，配备交互背屏

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"微信支付 AI 接入工具箱升级至
 theme: outside-core-exploration
 keyword_group: outside-core-exploration
 copyright_note: local research archive only
+title_zh: "微信支付 AI 接入工具箱 2.0 发布，Token 消耗降低 50%"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 微信支付 AI 接入工具箱 2.0 发布，Token 消耗降低 50%

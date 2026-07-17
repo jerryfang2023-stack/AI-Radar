@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"## Early stage teams gain an edge in th
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "设计合作伙伴：大多数AI创始人忽视的发布前优势——Bessemer Venture Partners"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Design partners: The pre-launch edge most AI founders ignore - Bessemer Venture Partners

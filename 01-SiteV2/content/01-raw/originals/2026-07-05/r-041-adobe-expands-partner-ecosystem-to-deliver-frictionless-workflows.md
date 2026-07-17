@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-041
 title: "Adobe Expands Partner Ecosystem to Deliver Frictionless Workflows ..."
-title_zh: "Adobe 扩展合作伙伴生态以交付智能体工作流"
-title_translation_status: translated
-title_translation_method: source_title_translation_db
+title_zh: "Adobe扩展合作伙伴生态系统，打造无缝工作流程"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://news.adobe.com/news/2026/04/adobe-expands-partner-ecosystem"
 canonical_url: "https://news.adobe.com/news/2026/04/adobe-expands-partner-ecosystem"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-05T04:56:15.355Z
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Adobe Expands Partner Ecosystem to Deliver Frictionless Workflows ...

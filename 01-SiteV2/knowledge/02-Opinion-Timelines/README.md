@@ -1,8 +1,8 @@
 ---
 type: opinion_timelines_index
 people_count: 46
-opinion_count: 1471
-generated_at: 2026-07-17T08:12:55.197Z
+opinion_count: 1480
+generated_at: 2026-07-17T21:27:22.562Z
 ---
 
 # 前沿观点 - 人物时间线目录
@@ -28,18 +28,18 @@ generated_at: 2026-07-17T08:12:55.197Z
 - [Matt Turck](people/matt-turck/README.md) - 52 条 - 最新 2026-07-16
 - [Nan Yu](people/nan-yu/README.md) - 40 条 - 最新 2026-07-16
 - [Sam Altman](people/sam-altman/README.md) - 40 条 - 最新 2026-07-16
-- [Simon Willison's Blog](people/simon-willisons-blog/README.md) - 31 条 - 最新 2026-07-16
+- [Simon Willison's Blog](people/simon-willisons-blog/README.md) - 38 条 - 最新 2026-07-16
 - [Josh Woodward](people/josh-woodward/README.md) - 24 条 - 最新 2026-07-16
 - [Madhu Guru](people/madhu-guru/README.md) - 17 条 - 最新 2026-07-16
 - [Google Labs](people/google-labs/README.md) - 15 条 - 最新 2026-07-16
+- [TLDR AI Newsletter](people/tldr-ai-newsletter/README.md) - 12 条 - 最新 2026-07-16
+- [Ben's Bites AI Newsletter](people/bens-bites-ai-newsletter/README.md) - 5 条 - 最新 2026-07-16
 - [Unsupervised Learning](people/unsupervised-learning/README.md) - 3 条 - 最新 2026-07-16
 - [Thariq](people/thariq/README.md) - 45 条 - 最新 2026-07-15
-- [TLDR AI Newsletter](people/tldr-ai-newsletter/README.md) - 11 条 - 最新 2026-07-15
 - [Tigera Blog (Calico / AI Security)](people/tigera-blog-calico-ai-security/README.md) - 4 条 - 最新 2026-07-15
 - [Claude](people/claude/README.md) - 45 条 - 最新 2026-07-14
 - [Ryo Lu](people/ryo-lu/README.md) - 21 条 - 最新 2026-07-14
 - [Training Data](people/training-data/README.md) - 5 条 - 最新 2026-07-14
-- [Ben's Bites AI Newsletter](people/bens-bites-ai-newsletter/README.md) - 4 条 - 最新 2026-07-14
 - [Interconnects (Nathan Lambert)](people/interconnects-nathan-lambert/README.md) - 3 条 - 最新 2026-07-12
 - [Amanda Askell](people/amanda-askell/README.md) - 12 条 - 最新 2026-07-09
 - [The MAD Podcast with Matt Turck](people/the-mad-podcast-with-matt-turck/README.md) - 6 条 - 最新 2026-07-09

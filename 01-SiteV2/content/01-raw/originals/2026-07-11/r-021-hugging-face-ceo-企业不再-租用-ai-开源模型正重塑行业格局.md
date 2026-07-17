@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-021
 title: "Hugging Face CEO：企业不再\"租用\"AI，开源模型正重塑行业格局"
 title_zh: "Hugging Face CEO：企业不再\"租用\"AI，开源模型正重塑行业格局"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://techcrunch.com/2026/07/10/hugging-faces-ceo-on-why-companies-are-done-renting-their-ai"
 canonical_url: "https://techcrunch.com/2026/07/10/hugging-faces-ceo-on-why-companies-are-done-renting-their-ai"
 source_name: "TechCrunch：AI（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-11T04:06:34.944Z
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Hugging Face CEO：企业不再"租用"AI，开源模型正重塑行业格局

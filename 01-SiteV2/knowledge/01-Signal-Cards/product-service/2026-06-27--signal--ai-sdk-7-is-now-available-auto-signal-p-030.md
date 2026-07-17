@@ -2,7 +2,7 @@
 id: SIG-20260627-A08
 type: signal_card
 signal_type: product_service
-title: "AI SDK 7 is now available - Vercel"
+title: "Vercel 发布 AI SDK 7"
 date: 2026-06-27
 status: published
 source_title: "AI SDK 7 is now available - Vercel"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "AI SDK 7 is now available"
 
 frontend:
-  displayTitle: "AI SDK 7 is now available - Vercel"
+  displayTitle: "Vercel 发布 AI SDK 7"
   sourceLinks:
     - "https://vercel.com/blog/ai-sdk-7"
 ---
 
-# AI SDK 7 is now available - Vercel
+# Vercel 发布 AI SDK 7
 
 ## 新闻事实
 

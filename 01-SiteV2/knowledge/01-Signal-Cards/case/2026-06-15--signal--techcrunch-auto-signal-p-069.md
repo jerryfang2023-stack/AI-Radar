@@ -2,7 +2,7 @@
 id: SIG-20260615-A17
 type: signal_card
 signal_type: case
-title: "Techcrunch 案例：AI 进入企业智能体协作流程"
+title: "AI公司竞相上市，谁在搭便车？"
 date: 2026-06-15
 status: published
 source_title: "AI公司竞相上市，谁在搭便车？"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "Techcrunch"
 
 frontend:
-  displayTitle: "Techcrunch 案例：AI 进入企业智能体协作流程"
+  displayTitle: "AI公司竞相上市，谁在搭便车？"
   sourceLinks:
     - "https://techcrunch.com/2026/06/14/as-ai-companies-race-to-go-public-who-else-is-along-for-the-ride"
 ---
 
-# Techcrunch 案例：AI 进入企业智能体协作流程
+# AI公司竞相上市，谁在搭便车？
 
 ## 新闻事实
 

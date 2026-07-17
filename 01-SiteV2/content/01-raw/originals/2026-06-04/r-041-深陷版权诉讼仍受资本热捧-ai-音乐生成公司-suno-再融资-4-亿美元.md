@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"AI 音乐生成企业 Suno 完成 4 亿
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "深陷版权诉讼仍受资本热捧，AI 音乐生成公司 Suno 再融资 4 亿美元"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 深陷版权诉讼仍受资本热捧，AI 音乐生成公司 Suno 再融资 4 亿美元

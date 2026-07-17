@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"Forward Deployed Engineer - Dublin 
 theme: enterprise-ai-implementation-signal
 keyword_group: enterprise-ai-implementation-signal
 copyright_note: local research archive only
+title_zh: "现场部署工程师 - 都柏林 | OpenAI"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Forward Deployed Engineer - Dublin | OpenAI

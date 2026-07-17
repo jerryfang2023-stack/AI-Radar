@@ -57,6 +57,10 @@ key_excerpts: [{"type":"company_action","text":"26 points / 7 comments / query=m
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "发布HN：Chamber（YC W26）——GPU基础设施的AI队友"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Launch HN: Chamber (YC W26) – An AI Teammate for GPU Infrastructure

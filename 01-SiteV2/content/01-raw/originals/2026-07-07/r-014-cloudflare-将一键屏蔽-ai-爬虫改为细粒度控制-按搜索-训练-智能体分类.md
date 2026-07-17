@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-014
 title: "Cloudflare 将一键屏蔽 AI 爬虫改为细粒度控制，按搜索/训练/智能体分类"
 title_zh: "Cloudflare 将一键屏蔽 AI 爬虫改为细粒度控制，按搜索/训练/智能体分类"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://the-decoder.com/cloudflare-replaces-its-blanket-ai-bot-block-with-granular-controls-for-search-training-and-agent-crawlers"
 canonical_url: "https://the-decoder.com/cloudflare-replaces-its-blanket-ai-bot-block-with-granular-controls-for-search-training-and-agent-crawlers"
 source_name: "The Decoder：AI News（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-07T02:46:59.326Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Cloudflare 将一键屏蔽 AI 爬虫改为细粒度控制，按搜索/训练/智能体分类

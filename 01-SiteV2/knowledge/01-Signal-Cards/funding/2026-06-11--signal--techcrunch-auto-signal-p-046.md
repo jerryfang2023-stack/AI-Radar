@@ -2,7 +2,7 @@
 id: SIG-20260611-A02
 type: signal_card
 signal_type: funding
-title: "Techcrunch 获得$24M 融资，押注销售线索和收入团队协作"
+title: "Jedify 获 2400 万美元融资，帮助企业为 AI 智能体提供业务上下文"
 date: 2026-06-11
 status: published
 source_title: "Jedify 获 2400 万美元融资，帮助企业为 AI 智能体提供业务上下文"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Techcrunch"
 
 frontend:
-  displayTitle: "Techcrunch 获得$24M 融资，押注销售线索和收入团队协作"
+  displayTitle: "Jedify 获 2400 万美元融资，帮助企业为 AI 智能体提供业务上下文"
   sourceLinks:
     - "https://techcrunch.com/2026/06/10/jedify-raises-24m-to-help-companies-arm-ai-agents-with-context-on-their-business"
 ---
 
-# Techcrunch 获得$24M 融资，押注销售线索和收入团队协作
+# Jedify 获 2400 万美元融资，帮助企业为 AI 智能体提供业务上下文
 
 ## 新闻事实
 

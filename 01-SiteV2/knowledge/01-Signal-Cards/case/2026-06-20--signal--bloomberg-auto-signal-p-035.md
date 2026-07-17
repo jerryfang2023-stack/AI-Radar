@@ -2,7 +2,7 @@
 id: SIG-20260620-A09
 type: signal_card
 signal_type: case
-title: "Introducing Claude Sonnet 4.5 - Anthropic"
+title: "Anthropic 推出 Claude Sonnet 4.5"
 date: 2026-06-20
 status: published
 source_title: "Introducing Claude Sonnet 4.5 - Anthropic"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Bloomberg"
 
 frontend:
-  displayTitle: "Introducing Claude Sonnet 4.5 - Anthropic"
+  displayTitle: "Anthropic 推出 Claude Sonnet 4.5"
   sourceLinks:
     - "https://links.message.bloomberg.com/s/c/0I9EA-kXNOAjVFykCfFrblHYt5L8-xE88Bmzr0pmL_UUfLcJppWcozW4-A2aGS2Z8UvLtrhVxjtEBf12WRkjOq6CfZArbHsZSHgWy93cxTqQwR_jG81TCx1rhGRJs-9ESUOfubt_gEH6ak9kDJkMMUJOzBtRhGVHOFVbFMX2C5qSOLgk-cE6x0PM6gBt_C8VpwGUtbfRswCEQ1OBCz4ULqFpCAg6u8kcDN6Tl4icGnxkPIeIm-c4T7Uq_wmvbi2HrnBDaROQc2yVT45xzALOm9xHkqYbFud8zhbmqhDiMpZPTpTIH8XBLC7hltyriiqyX9x8GBUkGhgk9WCHicSmDzYRLe62tjkNTy_HeYUf9NhT-6-fvQicHJQCdQc/iwvkf7xTN1LaeVdK83uwDgVsCtbeynDf/14"
 ---
 
-# Introducing Claude Sonnet 4.5 - Anthropic
+# Anthropic 推出 Claude Sonnet 4.5
 
 ## 新闻事实
 

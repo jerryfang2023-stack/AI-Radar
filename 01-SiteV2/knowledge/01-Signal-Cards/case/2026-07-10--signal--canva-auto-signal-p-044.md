@@ -2,7 +2,7 @@
 id: SIG-20260710-A11
 type: signal_card
 signal_type: case
-title: "Canva 发布 Canva AI 2.0, Reimagining How The World Designs 和 Works"
+title: "Canva发布Canva AI 2.0，重新定义全球设计与工作方式"
 date: 2026-07-10
 status: published
 source_title: "Canva Unveils Canva AI 2.0, Reimagining How The World Designs and Works"
@@ -57,12 +57,12 @@ opportunity_signals:
 signal_owner: "Canva"
 
 frontend:
-  displayTitle: "Canva 发布 Canva AI 2.0, Reimagining How The World Designs 和 Works"
+  displayTitle: "Canva发布Canva AI 2.0，重新定义全球设计与工作方式"
   sourceLinks:
     - "https://www.businesswire.com/news/home/20260416696203/en/Canva-Unveils-Canva-AI-2.0-Reimagining-How-The-World-Designs-and-Works"
 ---
 
-# Canva 发布 Canva AI 2.0, Reimagining How The World Designs 和 Works
+# Canva发布Canva AI 2.0，重新定义全球设计与工作方式
 
 ## 新闻事实
 

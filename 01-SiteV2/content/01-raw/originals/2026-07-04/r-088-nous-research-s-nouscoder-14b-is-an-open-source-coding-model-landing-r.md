@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-088
 title: "Nous Research's NousCoder-14B is an open-source coding model landing right in the Claude Code moment"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "Nous Research发布NousCoder-14B开源编程模型，恰逢Claude Code时刻"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://venturebeat.com/technology/nous-researchs-nouscoder-14b-is-an-open-source-coding-model-landing-right-in"
 canonical_url: "https://venturebeat.com/technology/nous-researchs-nouscoder-14b-is-an-open-source-coding-model-landing-right-in"
 source_name: "VentureBeat AI"
@@ -78,6 +78,7 @@ fact_extraction_completed_at: 2026-07-04T04:35:48.301Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Nous Research's NousCoder-14B is an open-source coding model landing right in the Claude Code moment

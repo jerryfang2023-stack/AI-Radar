@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"Apple 发布了 Siri AI，一款
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Apple 推出 Siri AI：由 Apple Intelligence 驱动的更强大、更个性化的个人助理"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Apple 推出 Siri AI：由 Apple Intelligence 驱动的更强大、更个性化的个人助理

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"million to secure and ... Barcelona-bas
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "总部位于巴塞罗那的NeuralTrust融资1720万欧元，用于保障和治理企业AI代理"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Barcelona-based NeuralTrust raises €17.2 million to secure and govern enterprise AI agents | EU-Startups

@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-045
 title: "IBM Advances Enterprise AI Software Development with Multi-Agent Capabilities and Specialized Modernization Workflows"
-title_zh: "IBM借助多代理功能和专门的现代化工作流程推进企业AI软件开发"
-title_translation_status: translated
-title_translation_method: mymemory_title_translation
+title_zh: "IBM通过多智能体能力和专业化现代化工作流推进企业AI软件开发"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://newsroom.ibm.com/2026-07-09-ibm-advances-enterprise-ai-software-development-with-multi-agent-capabilities-and-specialized-modernization-workflows"
 canonical_url: "https://newsroom.ibm.com/2026-07-09-ibm-advances-enterprise-ai-software-development-with-multi-agent-capabilities-and-specialized-modernization-workflows"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-10T01:59:54.386Z
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # IBM Advances Enterprise AI Software Development with Multi-Agent Capabilities and Specialized Modernization Workflows

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"workflow_change","text":"‍SAN MATEO, Calif., May 21, 2
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Kore.ai推出Artemis，新一代Kore.ai智能体平台，用于构建、治理和优化企业AI"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Kore.ai Launches Artemis, the New Generation of the Kore.ai Agent Platform for Building, Governing, and Optimizing Enterprise AI

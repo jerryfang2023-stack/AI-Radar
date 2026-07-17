@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-053
 title: "Anthropic 启动自研 AI 芯片早期开发，拟采用三星 2 纳米工艺"
 title_zh: "Anthropic 启动自研 AI 芯片早期开发，拟采用三星 2 纳米工艺"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/971/921.htm"
 canonical_url: "https://ithome.com/0/971/921.htm"
 source_name: "IT之家（RSS）"
@@ -78,6 +78,7 @@ fact_extraction_completed_at: 2026-07-03T01:59:31.332Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Anthropic 启动自研 AI 芯片早期开发，拟采用三星 2 纳米工艺

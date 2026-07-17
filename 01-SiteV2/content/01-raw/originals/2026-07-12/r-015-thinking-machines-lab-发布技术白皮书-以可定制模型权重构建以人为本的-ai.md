@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-015
 title: "Thinking Machines Lab 发布技术白皮书：以可定制模型权重构建以人为本的 AI"
 title_zh: "Thinking Machines Lab 发布技术白皮书：以可定制模型权重构建以人为本的 AI"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.marktechpost.com/2026/07/11/mira-muratis-thinking-machines-lab-makes-the-technical-case-for-human-centered-ai-built-on-customizable-model-weights"
 canonical_url: "https://marktechpost.com/2026/07/11/mira-muratis-thinking-machines-lab-makes-the-technical-case-for-human-centered-ai-built-on-customizable-model-weights"
 source_name: "MarkTechPost（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-12T09:55:27.368Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Thinking Machines Lab 发布技术白皮书：以可定制模型权重构建以人为本的 AI

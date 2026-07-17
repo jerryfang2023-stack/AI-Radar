@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"The 24 year-old spent six summers press
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "独家：这位创始人从高压清洗到沃顿商学院——刚刚为AI融资4000万美元 | 《财富》"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Exclusive: This founder went from pressure washing to Wharton—and just raised $40 million for AI | Fortune

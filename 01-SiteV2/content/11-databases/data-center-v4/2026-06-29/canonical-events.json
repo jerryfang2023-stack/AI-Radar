@@ -1,7 +1,7 @@
 [
   {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "",
     "disclosed_at": "2026-06-29T05:41:17.713Z",
     "entities": [
@@ -26,24 +26,28 @@
       "SA-7959edb366533565"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-7959edb366533565",
         "disclosed_at": "2026-06-29T05:41:17.713Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
     "event_id": "EV-1306e17cf1f3553e",
-    "display_title_zh": "Convey 完成 3800 万美元 A 轮融资"
+    "display_title_zh": "Convey 获 Andreessen Horowitz 领投 3800 万美元 A 轮融资，以 AI 同事自动化企业运营"
   },
   {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "2026-01-19T21:00:41.000Z",
     "disclosed_at": "2026-01-19T21:00:41.000Z",
     "entities": [
+      "EN-e5cc9e38970eacb5",
+      "EN-96eebba49dbbf422",
       "EN-cbc62794911ff31b"
     ],
     "action": "Raises",
@@ -72,16 +76,16 @@
       {
         "source_ref": "SA-8c77d3c6dec6efe6",
         "disclosed_at": "2026-01-19T21:00:41.000Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-7c646d3fbc3fbbf1",
-    "display_title_zh": "Amazon 完成 460 万美元 种子轮融资"
+    "event_id": "EV-8b0f056571d68269",
+    "display_title_zh": "AI初创公司：印度Aivar融资460万美元推动企业AI应用"
   },
   {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "2026-06-25T13:22:44.000Z",
     "disclosed_at": "2026-06-25T13:22:44.000Z",
     "entities": [
@@ -96,8 +100,8 @@
     "claim_refs": [
       "CL-21277f3fe17749b2",
       "CL-bb3b9a093dd0aca4",
-      "CL-b501fb638fcc00dc",
-      "CL-7814b64c1a2b20da"
+      "CL-848fcadad58a4f59",
+      "CL-b501fb638fcc00dc"
     ],
     "source_refs": [
       "SA-2366ff9c9a4b5ce9"
@@ -108,33 +112,35 @@
       {
         "source_ref": "SA-2366ff9c9a4b5ce9",
         "disclosed_at": "2026-06-25T13:22:44.000Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
     "event_id": "EV-561e2028a6212b99",
-    "display_title_zh": "Trase 完成 1.07 亿美元 种子轮融资"
+    "display_title_zh": "Trase 获得 1.07 亿美元种子轮融资，由 ARCH Venture Partners 领投"
   },
   {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "2026-06-25T13:01:00.000Z",
     "disclosed_at": "2026-06-25T13:01:00.000Z",
     "entities": [
-      "EN-d1fa538179ba6371"
+      "EN-d1fa538179ba6371",
+      "EN-96eebba49dbbf422"
     ],
     "action": "Raises",
     "object": "$80 Million to Build Max-Efficiency Infrastructure for AI Agents",
     "metrics": [
       "$80 million",
-      "$450 million"
+      "$450 million",
+      "$2.5 trillion"
     ],
     "locations": [],
     "claim_refs": [
       "CL-3360631ac2446441",
-      "CL-8adfe5fcfa492d1a",
+      "CL-907cfaf8dacfc2c3",
       "CL-1029b0930a7db713",
-      "CL-7ee437e7a79342ba"
+      "CL-8adfe5fcfa492d1a"
     ],
     "source_refs": [
       "SA-367fdfb46f32019a"
@@ -145,30 +151,105 @@
       {
         "source_ref": "SA-367fdfb46f32019a",
         "disclosed_at": "2026-06-25T13:01:00.000Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
     "event_id": "EV-921c843ad32c993c",
-    "display_title_zh": "Sail Research 完成 8000 万美元 A 轮融资"
+    "display_title_zh": "Sail Research 筹集8000万美元，为AI代理构建最高效基础设施"
   },
   {
-    "event_type": "hardware_product",
+    "event_type": "partnership",
+    "event_status": "announced",
+    "event_time": "2026-06-24T00:00:00.000Z",
+    "disclosed_at": "2026-06-24T00:00:00.000Z",
+    "entities": [
+      "EN-ab877737b6081bd1"
+    ],
+    "action": "Collaborates",
+    "object": "with Sentara to Unlock AI Value and Scale Enterprise AI Adoption in Healthcare Services",
+    "metrics": [],
+    "locations": [
+      "US",
+      "India"
+    ],
+    "claim_refs": [
+      "CL-abda1dc775207a6a",
+      "CL-ad702d6f5fbd283b",
+      "CL-0f687e37b5e4abc1",
+      "CL-87eaf659fb59276a"
+    ],
+    "source_refs": [
+      "SA-2c7beaa63284b196"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-2c7beaa63284b196",
+        "disclosed_at": "2026-06-24T00:00:00.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-794296a712c1cf15",
+    "display_title_zh": "Infosys与Sentara合作，解锁AI价值并扩大医疗保健服务中的企业AI应用规模"
+  },
+  {
+    "event_type": "deployment",
+    "event_status": "announced",
+    "event_time": "2026-06-17T07:53:02.000Z",
+    "disclosed_at": "2026-06-17T07:53:02.000Z",
+    "entities": [
+      "EN-2fc9fff8ab7f35aa",
+      "EN-8efebac68a48c369",
+      "EN-96eebba49dbbf422"
+    ],
+    "action": "Deploy",
+    "object": "India’s Largest Agentic AI System, VANI, Powering over 1 Lakh Autonomous Buyer-Seller Conversations Daily |",
+    "metrics": [],
+    "locations": [
+      "India"
+    ],
+    "claim_refs": [
+      "CL-360089aae6e54709",
+      "CL-af10004900e9469c",
+      "CL-60bcd1a61defb73b",
+      "CL-bab6b5df3bd9203a"
+    ],
+    "source_refs": [
+      "SA-03501b355957637a"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-03501b355957637a",
+        "disclosed_at": "2026-06-17T07:53:02.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-4dd25589d834060d",
+    "display_title_zh": "IndiaMART 与 SquadStack.ai 部署印度最大 AI 智能体系统 VANI，每日驱动超 10 万次自主买卖对话"
+  },
+  {
+    "event_type": "hardware_deployment",
     "event_status": "announced",
     "event_time": "2026-06-09T07:49:20.000Z",
     "disclosed_at": "2026-06-09T07:49:20.000Z",
     "entities": [
       "EN-b9e93f925b8d42c8"
     ],
-    "action": "Launches AI Infrastructure Optimization for GPU",
-    "object": "Efficiency",
+    "action": "Launches AI Infrastructure",
+    "object": "Optimization for GPU Efficiency",
     "metrics": [],
     "locations": [],
     "claim_refs": [
-      "CL-5bba7244b3f3f7f5",
       "CL-07a7070205248fe7",
-      "CL-71783be0df8d998e",
-      "CL-c6e4d7caf129d7a0"
+      "CL-5bba7244b3f3f7f5",
+      "CL-c6e4d7caf129d7a0",
+      "CL-71783be0df8d998e"
     ],
     "source_refs": [
       "SA-a4fcf414ba8f1bef"
@@ -183,15 +264,58 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-b40efa1689aed2e5",
-    "display_title_zh": "Akamas 发布 Efficiency"
+    "event_id": "EV-9191a8bbd547a28e",
+    "display_title_zh": "Akamas推出AI基础设施优化方案，提升GPU效率"
+  },
+  {
+    "event_type": "research_result",
+    "event_status": "announced",
+    "event_time": "2026-04-07T00:00:00.000Z",
+    "disclosed_at": "2026-04-07T00:00:00.000Z",
+    "entities": [
+      "EN-b0532e1af75cc4ab",
+      "EN-a52f1da2224ffd03",
+      "EN-22d9e9f0b17223fe"
+    ],
+    "action": "Research Finds",
+    "object": "Agentic AI Goes Mainstream in the Enterprise, but 94% Raise Concern About Sprawl, OutSystems Research Finds",
+    "metrics": [
+      "94%",
+      "96%",
+      "97%"
+    ],
+    "locations": [],
+    "claim_refs": [
+      "CL-01c9133e30ad8243",
+      "CL-e1a41c8ba90b1962",
+      "CL-08f80b7f78f717d9",
+      "CL-3c10e430f763099b"
+    ],
+    "source_refs": [
+      "SA-3cc9032902ee6420"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "object"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-3cc9032902ee6420",
+        "disclosed_at": "2026-04-07T00:00:00.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-cf0551afe16562ef",
+    "display_title_zh": "AI 智能体在企业中走向主流，但94%担忧蔓延问题，OutSystems研究显示"
   },
   {
     "event_type": "acquisition",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "2026-06-15T00:00:00.000Z",
     "disclosed_at": "2026-06-15T00:00:00.000Z",
     "entities": [
+      "EN-c9173cc80ae1d619",
       "EN-3ccbd9105a45d8fc"
     ],
     "action": "Acquire",
@@ -216,12 +340,12 @@
       {
         "source_ref": "SA-6d4279997801465b",
         "disclosed_at": "2026-06-15T00:00:00.000Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-8f7e605c3134bb6d",
-    "display_title_zh": "Salesforce 收购 Fin"
+    "event_id": "EV-fb5d2ae875255804",
+    "display_title_zh": "Salesforce签署最终协议收购Fin"
   },
   {
     "event_type": "product_release",
@@ -229,7 +353,11 @@
     "event_time": "",
     "disclosed_at": "2026-06-29T05:41:17.852Z",
     "entities": [
-      "EN-c70eca6b0f88f44d"
+      "EN-03b974cdbd22fe32",
+      "EN-c70eca6b0f88f44d",
+      "EN-ac123e56b0168ec2",
+      "EN-784c7cd63a83ccaa",
+      "EN-b50e6e7659f1018e"
     ],
     "action": "launch",
     "object": "Mythos-like models as Anthropic&#8217;s export ban drags on",
@@ -247,7 +375,9 @@
       "SA-88ce682662a150b6"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-88ce682662a150b6",
@@ -256,28 +386,33 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-87ad2bdf8cd4b0c8",
-    "display_title_zh": "Anthropic 发布 Mythos"
+    "event_id": "EV-a4b72879f3d73ea4",
+    "display_title_zh": "亚洲AI初创公司推出类似Mythos的模型，Anthropic出口禁令持续"
   },
   {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "2026-05-07T12:00:20.000Z",
     "disclosed_at": "2026-05-07T12:00:20.000Z",
     "entities": [
-      "EN-d2d165dff04ba225"
+      "EN-d2d165dff04ba225",
+      "EN-96eebba49dbbf422",
+      "EN-7d3194f79e645c42",
+      "EN-c70eca6b0f88f44d",
+      "EN-bbdefa2950f49882"
     ],
     "action": "raises",
     "object": "$16M from a16z and others to automate enterprise workflows - SiliconANGLE",
     "metrics": [
-      "$16M"
+      "$16M",
+      "$16 million"
     ],
     "locations": [],
     "claim_refs": [
       "CL-21bffa6df19de6b7",
       "CL-6186885ef7ebd6b3",
-      "CL-02bfa2b29280525d",
-      "CL-4817698f19ed6ed5"
+      "CL-8356685f09d7ce8d",
+      "CL-02bfa2b29280525d"
     ],
     "source_refs": [
       "SA-aac29bfb7c98b3b1"
@@ -288,12 +423,12 @@
       {
         "source_ref": "SA-aac29bfb7c98b3b1",
         "disclosed_at": "2026-05-07T12:00:20.000Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
     "event_id": "EV-dfddbb260b3d1c77",
-    "display_title_zh": "Pit 完成 1600 万美元融资"
+    "display_title_zh": "AI产品团队初创公司Pit从a16z等机构融资1600万美元，用于自动化企业工作流程 - SiliconANGLE"
   },
   {
     "event_type": "product_release",
@@ -301,8 +436,11 @@
     "event_time": "2026-03-13T08:23:17.000Z",
     "disclosed_at": "2026-03-13T08:23:17.000Z",
     "entities": [
+      "EN-4d803c223cec4cc4",
       "EN-7d3194f79e645c42",
-      "EN-c70eca6b0f88f44d"
+      "EN-c70eca6b0f88f44d",
+      "EN-4634cbf463651816",
+      "EN-467f67b2ed0f9a54"
     ],
     "action": "Open Source",
     "object": "Distribution: 131K Stars to $30M Funding | FiguringOutWithAI",
@@ -320,7 +458,9 @@
       "SA-b77ab7b895d40b15"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "display_title_zh"
+    ],
     "update_history": [
       {
         "source_ref": "SA-b77ab7b895d40b15",
@@ -329,12 +469,48 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-0aa2e53c51b2b8e5",
-    "display_title_zh": "OpenAI 发布 Distribution"
+    "event_id": "EV-cf496e0f8a56ca97",
+    "display_title_zh": ""
+  },
+  {
+    "event_type": "deployment",
+    "event_status": "announced",
+    "event_time": "2026-04-17T00:00:00.000Z",
+    "disclosed_at": "2026-04-17T00:00:00.000Z",
+    "entities": [
+      "EN-b0532e1af75cc4ab"
+    ],
+    "action": "Pilot",
+    "object": "to Production | SysArt Consulting",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-f68f96740bc95ba6",
+      "CL-439e878a8fdba421",
+      "CL-c076b9f797fdd61f",
+      "CL-93c4b649382032a6"
+    ],
+    "source_refs": [
+      "SA-b11ee48741e33dbe"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "display_title_zh"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-b11ee48741e33dbe",
+        "disclosed_at": "2026-04-17T00:00:00.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-31abbd556dd87fc9",
+    "display_title_zh": ""
   },
   {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "2026-06-26T10:22:44.000Z",
     "disclosed_at": "2026-06-26T10:22:44.000Z",
     "entities": [
@@ -357,21 +533,23 @@
       "SA-299c72e024c9080c"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "display_title_zh"
+    ],
     "update_history": [
       {
         "source_ref": "SA-299c72e024c9080c",
         "disclosed_at": "2026-06-26T10:22:44.000Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
     "event_id": "EV-7817dc69d5228cbb",
-    "display_title_zh": "Runlayer 完成 3000 万美元 A 轮融资"
+    "display_title_zh": ""
   },
   {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "2026-06-25T15:12:40.000Z",
     "disclosed_at": "2026-06-25T15:12:40.000Z",
     "entities": [
@@ -400,37 +578,46 @@
       {
         "source_ref": "SA-d176161d529908f8",
         "disclosed_at": "2026-06-25T15:12:40.000Z",
-        "status": "announced"
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
     "event_id": "EV-d7f7e372d16c2241",
-    "display_title_zh": "Scaled Cognition 完成 1 亿美元 A 轮融资"
+    "display_title_zh": "Scaled Cognition 获 Khosla 领投 1 亿美元融资"
   },
   {
     "event_type": "funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "2026-06-24T05:42:32.000Z",
     "disclosed_at": "2026-06-24T05:42:32.000Z",
     "entities": [
-      "EN-c70eca6b0f88f44d"
+      "EN-f346eaca864441f9",
+      "EN-96eebba49dbbf422",
+      "EN-c70eca6b0f88f44d",
+      "EN-b0532e1af75cc4ab"
     ],
     "action": "Raises",
     "object": "$17 Million in Series A to Scale AI-Powered Marketing Automation Globally - Indian Startup Times",
     "metrics": [
       "$17 Million",
       "$17 million",
-      "$1.7 million"
+      "$1.7 million",
+      "$17M",
+      "50%"
     ],
-    "locations": [],
+    "locations": [
+      "US"
+    ],
     "claim_refs": [
       "CL-3c011aa65269d25e",
       "CL-5bc1ebfe7f0bb719",
       "CL-24c106f0ae729af5",
-      "CL-d87f540483bd87c0"
+      "CL-d87f540483bd87c0",
+      "CL-6b01d76b254e1e0e"
     ],
     "source_refs": [
-      "SA-65c2218816d4ff14"
+      "SA-65c2218816d4ff14",
+      "SA-d93a730f25f10560"
     ],
     "conflicts": [],
     "missing_fields": [],
@@ -438,12 +625,52 @@
       {
         "source_ref": "SA-65c2218816d4ff14",
         "disclosed_at": "2026-06-24T05:42:32.000Z",
+        "status": "completed"
+      },
+      {
+        "source_ref": "SA-d93a730f25f10560",
+        "disclosed_at": "2026-06-23T00:00:00.000Z",
+        "status": "completed"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-e7dcecaed5a0ee5b",
+    "display_title_zh": "JustAI 获1700万美元A轮融资，用于全球扩展AI驱动营销自动化 - 印度初创企业时报"
+  },
+  {
+    "event_type": "deployment",
+    "event_status": "announced",
+    "event_time": "2026-04-28T00:00:00.000Z",
+    "disclosed_at": "2026-04-28T00:00:00.000Z",
+    "entities": [
+      "EN-8d291c7017252b07",
+      "EN-8147e6fed86d42c1"
+    ],
+    "action": "deploys",
+    "object": "enterprise-wide agentic AI for chronic care patients",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-f7ead7504726f509",
+      "CL-ad7567b348a20226",
+      "CL-5b20a760aa4703ad",
+      "CL-6029bc478372ed3c"
+    ],
+    "source_refs": [
+      "SA-14e6056aa9e59e88"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-14e6056aa9e59e88",
+        "disclosed_at": "2026-04-28T00:00:00.000Z",
         "status": "announced"
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-5ca4c08ec3e2c3b7",
-    "display_title_zh": "Anthropic 完成 1700 万美元 A 轮融资"
+    "event_id": "EV-afd0332ad8f5f05b",
+    "display_title_zh": "CCS为慢性护理患者部署企业级代理型AI"
   },
   {
     "event_type": "product_release",
@@ -451,7 +678,9 @@
     "event_time": "",
     "disclosed_at": "2026-06-29T05:41:18.051Z",
     "entities": [
-      "EN-2dc010636b9dce91"
+      "EN-2dc010636b9dce91",
+      "EN-a42d5d95234db6c4",
+      "EN-9e5d9b729e161734"
     ],
     "action": "Launches",
     "object": "Genie One: All-New Agentic Coworker for Every Team - Databricks",
@@ -467,7 +696,9 @@
       "SA-f16c1788a1efddeb"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-f16c1788a1efddeb",
@@ -477,7 +708,7 @@
     ],
     "publication_status": "verified",
     "event_id": "EV-226a363f84676808",
-    "display_title_zh": "Databricks 发布 Genie One"
+    "display_title_zh": "Databricks推出Genie One：面向所有团队的全新智能协作助手"
   },
   {
     "event_type": "product_release",
@@ -485,7 +716,8 @@
     "event_time": "2026-06-22T00:00:00.000Z",
     "disclosed_at": "2026-06-22T00:00:00.000Z",
     "entities": [
-      "EN-64933d23013df5dc"
+      "EN-64933d23013df5dc",
+      "EN-6837142183eb8261"
     ],
     "action": "launches",
     "object": "Superagent",
@@ -513,7 +745,41 @@
     ],
     "publication_status": "verified",
     "event_id": "EV-636b02c3e8544c58",
-    "display_title_zh": "i10X 发布 Superagent"
+    "display_title_zh": "i10X推出Superagent"
+  },
+  {
+    "event_type": "deployment",
+    "event_status": "announced",
+    "event_time": "2026-06-23T09:30:00.000Z",
+    "disclosed_at": "2026-06-23T09:30:00.000Z",
+    "entities": [
+      "EN-3474e24464fc25a7"
+    ],
+    "action": "deploying",
+    "object": "customer-facing AI",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-7f8fac2bcd7f46ae",
+      "CL-45e39c4286955b45",
+      "CL-c491307f1bd5563b",
+      "CL-9259b1850576e39f"
+    ],
+    "source_refs": [
+      "SA-485f3f4050d5a584"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-485f3f4050d5a584",
+        "disclosed_at": "2026-06-23T09:30:00.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-e869f17214557633",
+    "display_title_zh": "Talkdesk终结客户面向AI部署中的猜测"
   },
   {
     "event_type": "product_release",
@@ -521,10 +787,14 @@
     "event_time": "2026-05-27T05:00:10.000Z",
     "disclosed_at": "2026-05-27T05:00:10.000Z",
     "entities": [
+      "EN-d5c876a36e02b120",
       "EN-047364b9be67f665",
       "EN-6f7ac1823da81d2e",
       "EN-7d3194f79e645c42",
-      "EN-ea3bd73e2b506e00"
+      "EN-ea3bd73e2b506e00",
+      "EN-1766fb6fac8f1c5d",
+      "EN-ae11c0abf6288776",
+      "EN-d200de545425ea63"
     ],
     "action": "Launch",
     "object": "Real-Time AI Inference",
@@ -551,8 +821,8 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-01e414a25347cfd9",
-    "display_title_zh": "Alibaba 发布 Real"
+    "event_id": "EV-657837763764c869",
+    "display_title_zh": "Neysa与Pipeshift联合推出实时AI推理服务"
   },
   {
     "event_type": "product_release",
@@ -560,7 +830,10 @@
     "event_time": "2026-06-23T11:00:00.000Z",
     "disclosed_at": "2026-06-23T11:00:00.000Z",
     "entities": [
-      "EN-b3e3bce83d29e787"
+      "EN-b3e3bce83d29e787",
+      "EN-9855ef88d183e07b",
+      "EN-049e948563e03e97",
+      "EN-8950d72f381130ac"
     ],
     "action": "Launches",
     "object": "Modelplane: The Open Source Control Plane",
@@ -586,7 +859,76 @@
     ],
     "publication_status": "verified",
     "event_id": "EV-a06011da69abcc3d",
-    "display_title_zh": "Upbound 发布 Modelplane"
+    "display_title_zh": "Upbound推出Modelplane：开源控制平面"
+  },
+  {
+    "event_type": "deployment",
+    "event_status": "announced",
+    "event_time": "2020-08-25T07:19:57.000Z",
+    "disclosed_at": "2020-08-25T07:19:57.000Z",
+    "entities": [],
+    "action": "Pilot",
+    "object": "Customer for an AI NPM Startup - Code200",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-cd2b793cff64e238",
+      "CL-1f78ac165a3fdfd7",
+      "CL-03b5de8a0a0141d8",
+      "CL-fd6cc642315d8685"
+    ],
+    "source_refs": [
+      "SA-3cab88c51bb4e38d"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "entities"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-3cab88c51bb4e38d",
+        "disclosed_at": "2020-08-25T07:19:57.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-aab6c94a295cba0d",
+    "display_title_zh": "从0到1：为AI NPM初创公司寻找试点客户 - Code200"
+  },
+  {
+    "event_type": "product_release",
+    "event_status": "announced",
+    "event_time": "2026-06-28T20:27:36.000Z",
+    "disclosed_at": "2026-06-28T20:27:36.000Z",
+    "entities": [
+      "EN-586937124e151c46",
+      "EN-39a37ee3a2b2c3c0"
+    ],
+    "action": "launches",
+    "object": "Spark incubator program to feed independent artists to its AI machine",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-627eae8c455f0cab",
+      "CL-72117354e6877a18",
+      "CL-acdbe61a9308366e",
+      "CL-4a8e4292b32c2821"
+    ],
+    "source_refs": [
+      "SA-863c5cfc35b646a6"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-863c5cfc35b646a6",
+        "disclosed_at": "2026-06-28T20:27:36.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-333ce1a5838ced85",
+    "display_title_zh": "Suno推出Spark孵化器计划，将独立艺术家引入其AI系统"
   },
   {
     "event_type": "product_release",
@@ -594,9 +936,11 @@
     "event_time": "",
     "disclosed_at": "2026-06-29T05:41:18.275Z",
     "entities": [
+      "EN-ffc33568b1122cc5",
       "EN-e78bdebae031095b",
       "EN-7d3194f79e645c42",
-      "EN-8d4321d936320802"
+      "EN-8d4321d936320802",
+      "EN-35ad2658e502aeda"
     ],
     "action": "launch",
     "object": "🛡️, Codex as workspace 🤖",
@@ -614,7 +958,9 @@
       "SA-e12af0ca03080fdd"
     ],
     "conflicts": [],
-    "missing_fields": [],
+    "missing_fields": [
+      "event_time"
+    ],
     "update_history": [
       {
         "source_ref": "SA-e12af0ca03080fdd",
@@ -623,45 +969,7 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-c718a5ff4b0acd66",
-    "display_title_zh": "SpaceX 发布 🛡️"
-  },
-  {
-    "event_type": "funding",
-    "event_status": "announced",
-    "event_time": "2026-06-23T00:00:00.000Z",
-    "disclosed_at": "2026-06-23T00:00:00.000Z",
-    "entities": [
-      "EN-b0532e1af75cc4ab",
-      "EN-c70eca6b0f88f44d"
-    ],
-    "action": "Raises",
-    "object": "$17M Series A to Build an Agentic Marketing Platform | NY Business Times",
-    "metrics": [
-      "$17M",
-      "$17 million",
-      "50%"
-    ],
-    "locations": [
-      "US"
-    ],
-    "claim_refs": [
-      "CL-6b01d76b254e1e0e"
-    ],
-    "source_refs": [
-      "SA-d93a730f25f10560"
-    ],
-    "conflicts": [],
-    "missing_fields": [],
-    "update_history": [
-      {
-        "source_ref": "SA-d93a730f25f10560",
-        "disclosed_at": "2026-06-23T00:00:00.000Z",
-        "status": "announced"
-      }
-    ],
-    "publication_status": "partial",
-    "event_id": "EV-7aaed0a2ae5cf8b6",
-    "display_title_zh": "Rime 完成 1700 万美元 A 轮融资"
+    "event_id": "EV-8a91e14f37d32b4d",
+    "display_title_zh": "SpaceX Colossus交易🚀，GPT-5.5 Cyber发布🛡️，Codex作为工作空间🤖"
   }
 ]

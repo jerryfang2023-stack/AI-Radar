@@ -2,7 +2,7 @@
 id: SIG-20260607-A05
 type: signal_card
 signal_type: product_service
-title: "Gemma 4 with quantization-aware training"
+title: "Gemma 4 引入量化感知训练"
 date: 2026-06-07
 status: published
 source_title: "Gemma 4 with quantization-aware training"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Google DeepMind"
 
 frontend:
-  displayTitle: "Gemma 4 with quantization-aware training"
+  displayTitle: "Gemma 4 引入量化感知训练"
   sourceLinks:
     - "https://blog.google/innovation-and-ai/technology/developers-tools/quantization-aware-training-gemma-4/"
 ---
 
-# Gemma 4 with quantization-aware training
+# Gemma 4 引入量化感知训练
 
 ## 新闻事实
 

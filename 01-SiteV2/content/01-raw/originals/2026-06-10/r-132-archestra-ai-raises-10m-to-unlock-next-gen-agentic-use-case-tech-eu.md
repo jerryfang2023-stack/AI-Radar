@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Archestra.AI raises $10M to unlock next
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "Archestra.AI 获1000万美元融资，解锁下一代自主代理应用场景 - Tech.eu"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Archestra.AI raises $10M to unlock next-gen agentic use case - Tech.eu

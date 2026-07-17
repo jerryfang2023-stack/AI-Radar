@@ -72,6 +72,10 @@ key_excerpts: [{"type":"company_action","text":"xAI 在终端编码智能体 Gro
 theme: outside-core-exploration
 keyword_group: outside-core-exploration
 copyright_note: local research archive only
+title_zh: "xAI 为 Grok Build 推出 /goal 模式，支持长周期自主编码与内置验证"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # xAI 为 Grok Build 推出 /goal 模式，支持长周期自主编码与内置验证

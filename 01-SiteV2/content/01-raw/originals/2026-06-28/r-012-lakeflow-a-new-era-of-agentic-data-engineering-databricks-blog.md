@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"why we set out to ... to transforma
 theme: outside-core-exploration
 keyword_group: outside-core-exploration
 copyright_note: local research archive only
+title_zh: "Lakeflow：代理式数据工程的新纪元 | Databricks 博客"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Lakeflow: A new era of agentic data engineering | Databricks Blog

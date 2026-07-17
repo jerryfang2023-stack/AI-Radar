@@ -72,6 +72,10 @@ key_excerpts: [{"type":"supporting_context","text":"Discover the top AI consulti
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "2026年面向金融服务机构的最佳AI咨询公司 - Neurons Lab"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Top AI Consulting Firms in 2026 for FSIs - Neurons Lab

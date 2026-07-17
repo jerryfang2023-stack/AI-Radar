@@ -2,7 +2,7 @@
 id: SIG-20260602-A02
 type: signal_card
 signal_type: case
-title: "NVIDIA JetPack 7.2 发布，简化边缘 Agent 部署"
+title: "NVIDIA JetPack 7.2支持内存优化的边缘智能体部署"
 date: 2026-06-02
 status: published
 asset_level: frontstage
@@ -58,7 +58,7 @@ signal_owner: "NVIDIA JetPack 7.2"
 watch_reason: "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
 
 frontend:
-  displayTitle: "NVIDIA JetPack 7.2 发布，简化边缘 Agent 部署"
+  displayTitle: "NVIDIA JetPack 7.2支持内存优化的边缘智能体部署"
   eventLine: "NVIDIA 发布 JetPack 7.2，加入 NemoClaw 一键部署、Jetson Agent skills 和 MIG 支持。"
   whyWatch: "这条变化值得看，是因为物理世界和工业场景里的 Agent 需要在本地设备上稳定运行，而不是只依赖云端推理。"
   businessMeaning: "边缘设备上的 Agent 部署开始从模型运行，转向安全、内存、隔离和设备侧开发工具的组合交付。"
@@ -68,7 +68,7 @@ frontend:
     - "https://developer.nvidia.com/blog/deploy-agentic-ready-ai-at-the-edge-with-memory-efficiency-in-nvidia-jetpack-7-2"
 ---
 
-# NVIDIA JetPack 7.2 发布，简化边缘 Agent 部署
+# NVIDIA JetPack 7.2支持内存优化的边缘智能体部署
 
 ## 信号底稿
 

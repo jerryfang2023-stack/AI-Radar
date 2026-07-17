@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Title: EV startup VOICE raises seed fun
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_zh: "电动汽车初创公司VOICE完成种子轮融资 | Medial"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # EV startup VOICE raises seed funding round | Medial

@@ -2,7 +2,7 @@
 id: SIG-20260708-A02
 type: signal_card
 signal_type: case
-title: "Amgen 2 万名用户的企业 AI 推广案例"
+title: "企业AI推广案例研究：安进公司20,000名用户 | IntuitionLabs"
 date: 2026-07-08
 status: published
 source_title: "Enterprise AI Rollout Case Study: Amgen's 20,000 Users | IntuitionLabs"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "Amgen"
 
 frontend:
-  displayTitle: "Amgen 2 万名用户的企业 AI 推广案例"
+  displayTitle: "企业AI推广案例研究：安进公司20,000名用户 | IntuitionLabs"
   sourceLinks:
     - "https://intuitionlabs.ai/articles/enterprise-ai-rollout-case-study-amgen"
 ---
 
-# Amgen 2 万名用户的企业 AI 推广案例
+# 企业AI推广案例研究：安进公司20,000名用户 | IntuitionLabs
 
 ## 新闻事实
 

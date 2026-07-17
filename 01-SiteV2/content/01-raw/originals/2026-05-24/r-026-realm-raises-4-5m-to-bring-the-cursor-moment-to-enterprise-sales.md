@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Accessibility Statement Skip Navigation
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Realm 获450万美元融资，将“Cursor时刻”带入企业销售领域"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Realm Raises $4.5M to Bring the 'Cursor Moment' to Enterprise Sales

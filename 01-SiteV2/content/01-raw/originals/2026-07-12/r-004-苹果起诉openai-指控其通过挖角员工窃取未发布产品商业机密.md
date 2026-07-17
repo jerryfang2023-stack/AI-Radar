@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-004
 title: "苹果起诉OpenAI，指控其通过挖角员工窃取未发布产品商业机密"
 title_zh: "苹果起诉OpenAI，指控其通过挖角员工窃取未发布产品商业机密"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://the-decoder.com/apple-sues-openai-for-allegedly-running-a-coordinated-campaign-to-steal-trade-secrets-through-poached-employees"
 canonical_url: "https://the-decoder.com/apple-sues-openai-for-allegedly-running-a-coordinated-campaign-to-steal-trade-secrets-through-poached-employees"
 source_name: "The Decoder：AI News（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-12T09:55:23.633Z
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 苹果起诉OpenAI，指控其通过挖角员工窃取未发布产品商业机密

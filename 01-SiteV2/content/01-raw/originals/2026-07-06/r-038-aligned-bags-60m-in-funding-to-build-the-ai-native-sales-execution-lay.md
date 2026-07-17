@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-038
 title: "Aligned bags $60M in funding to build the AI-native sales execution layer for enterprise deals - SiliconANGLE"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "Aligned获6000万美元融资，打造面向企业交易的AI原生销售执行层 - SiliconANGLE"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://siliconangle.com/2026/07/01/aligned-bags-60m-funding-build-ai-native-sales-execution-layer-enterprise-deals/"
 canonical_url: "https://siliconangle.com/2026/07/01/aligned-bags-60m-funding-build-ai-native-sales-execution-layer-enterprise-deals"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-06T02:21:26.939Z
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Aligned bags $60M in funding to build the AI-native sales execution layer for enterprise deals - SiliconANGLE

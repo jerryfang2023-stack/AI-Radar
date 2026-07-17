@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"startup Arcade nabs $60 ... Arcade AI I
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "AI代理授权初创公司Arcade获得6000万美元投资 - SiliconANGLE"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # AI agent authorization startup Arcade nabs $60M investment - SiliconANGLE

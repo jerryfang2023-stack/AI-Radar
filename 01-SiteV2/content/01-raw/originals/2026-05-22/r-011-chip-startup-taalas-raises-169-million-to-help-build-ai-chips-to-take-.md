@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Chip startup Taalas raises $169 million
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "芯片初创公司Taalas融资1.69亿美元，助力打造AI芯片挑战英伟达 | 路透社"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Chip startup Taalas raises $169 million to help build AI chips to take on Nvidia | Reuters

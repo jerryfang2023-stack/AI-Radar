@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"VISTA-4B 是基于 Qwen3.5-4B 骨�
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "inclusionAI 发布 VISTA-4B GUI 定位视觉语言模型"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # inclusionAI 发布 VISTA-4B GUI 定位视觉语言模型

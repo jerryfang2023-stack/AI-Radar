@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"Kimi K2.7-Code 是一个开源�
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "Kimi K2.7-Code：具有更高模型 token 效率的开源编码模型"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Kimi K2.7-Code：具有更高模型 token 效率的开源编码模型

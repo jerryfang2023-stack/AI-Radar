@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-119
 title: "谷歌 DeepMind CEO 哈萨比斯警告：AGI 可能几年内到来，人类需抓紧窗口期确保安全"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "谷歌 DeepMind CEO 哈萨比斯警告：AGI 可能几年内到来，人类需抓紧窗口期确保安全"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/976/776.htm"
 canonical_url: "https://ithome.com/0/976/776.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-15T04:28:38.228Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 谷歌 DeepMind CEO 哈萨比斯警告：AGI 可能几年内到来，人类需抓紧窗口期确保安全

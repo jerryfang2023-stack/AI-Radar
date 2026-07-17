@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-004
 title: "Skyfall AI 发布 MORPHEUS：面向持续强化学习的持久企业模拟基准"
 title_zh: "Skyfall AI 发布 MORPHEUS：面向持续强化学习的持久企业模拟基准"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.marktechpost.com/2026/07/13/skyfall-ai-releases-morpheus-a-persistent-enterprise-simulation-benchmark-that-makes-continual-reinforcement-learning-necessary-under-structured-non-stationarity"
 canonical_url: "https://marktechpost.com/2026/07/13/skyfall-ai-releases-morpheus-a-persistent-enterprise-simulation-benchmark-that-makes-continual-reinforcement-learning-necessary-under-structured-non-stationarity"
 source_name: "MarkTechPost（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-14T01:56:51.239Z
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Skyfall AI 发布 MORPHEUS：面向持续强化学习的持久企业模拟基准

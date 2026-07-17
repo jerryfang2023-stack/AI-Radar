@@ -182,6 +182,13 @@
     "source_ref": "SA-8bd76ed16374c926"
   },
   {
+    "qa_id": "QA-77ba0cafa41d03a2",
+    "asset_id": "RAW-234548f4e695684b",
+    "reason": "no_source_bounded_claim",
+    "status": "review_optional",
+    "source_ref": "SA-ef83df2dfd62c4a1"
+  },
+  {
     "qa_id": "QA-e39180af59b0538e",
     "asset_id": "RAW-8e5876b83aa58f7d",
     "reason": "raw_source_quality_block",
@@ -413,11 +420,11 @@
     "source_ref": "SA-596d8616dee69a15"
   },
   {
-    "qa_id": "QA-967081ae53d28368",
-    "asset_id": "RAW-ffbb8802ad34e561",
-    "reason": "event_not_ai_relevant",
+    "qa_id": "QA-9b15189fd1a1c305",
+    "asset_id": "RAW-cb7708325b4ef681",
+    "reason": "no_source_bounded_claim",
     "status": "review_optional",
-    "source_ref": "SA-8669563f95772686"
+    "source_ref": "SA-f0d2128ac2aebfeb"
   },
   {
     "qa_id": "QA-c39a93dead99e305",
@@ -534,16 +541,9 @@
   {
     "qa_id": "QA-ba5fa54ed8b393a8",
     "asset_id": "RAW-60c0ab7c93db8bd5",
-    "reason": "no_source_bounded_event",
+    "reason": "rumor_requires_primary_confirmation",
     "status": "review_optional",
     "source_ref": "SA-6855e8945f775b40"
-  },
-  {
-    "qa_id": "QA-ee4d98fd063ce77c",
-    "asset_id": "RAW-5412403a22f921ee",
-    "reason": "no_source_bounded_event",
-    "status": "review_optional",
-    "source_ref": "SA-431aa845d3f6e68d"
   },
   {
     "qa_id": "QA-0b02c3eab5213789",
@@ -595,11 +595,25 @@
     "source_ref": "SA-dd34f669bd3987b7"
   },
   {
-    "qa_id": "QA-210125cf4b7fc040",
+    "qa_id": "QA-3785ab25a8c715d9",
     "asset_id": "RAW-7d36ffd18f8a4a30",
-    "reason": "no_source_bounded_event",
+    "reason": "no_source_bounded_claim",
     "status": "review_optional",
     "source_ref": "SA-da7cbc346f94cb3f"
+  },
+  {
+    "qa_id": "QA-e4e5369632cca606",
+    "asset_id": "RAW-6664989c5d4f53bf",
+    "reason": "no_source_bounded_claim",
+    "status": "review_optional",
+    "source_ref": "SA-e375b7a8f5304836"
+  },
+  {
+    "qa_id": "QA-8917f0a0372b0fed",
+    "asset_id": "RAW-1b3197ce2177fd4d",
+    "reason": "no_source_bounded_claim",
+    "status": "review_optional",
+    "source_ref": "SA-33d0d13119f28e42"
   },
   {
     "qa_id": "QA-19e308c2121f6c9b",
@@ -607,13 +621,6 @@
     "reason": "community_source_requires_original_event_source",
     "status": "review_optional",
     "source_ref": "SA-7e818da5c5b31d31"
-  },
-  {
-    "qa_id": "QA-39c12dcb66593fa1",
-    "asset_id": "RAW-86b980bf756f0561",
-    "reason": "no_source_bounded_event",
-    "status": "review_optional",
-    "source_ref": "SA-122b35fc54deabea"
   },
   {
     "qa_id": "QA-ab0358417e19082e",
@@ -642,6 +649,13 @@
     "reason": "community_source_requires_original_event_source",
     "status": "review_optional",
     "source_ref": "SA-ff23da3a7280149d"
+  },
+  {
+    "qa_id": "QA-0aada8d2651eb020",
+    "asset_id": "RAW-2208d2b395b59176",
+    "reason": "no_source_bounded_claim",
+    "status": "review_optional",
+    "source_ref": "SA-0bf11f9037662643"
   },
   {
     "qa_id": "QA-33220f5486f50ea2",
@@ -733,13 +747,6 @@
     "reason": "no_source_bounded_event",
     "status": "review_optional",
     "source_ref": "SA-07bc7780740e4042"
-  },
-  {
-    "qa_id": "QA-3b6586b51ad56c14",
-    "asset_id": "RAW-dcd16e1351c74f11",
-    "reason": "event_not_ai_relevant",
-    "status": "review_optional",
-    "source_ref": "SA-d36e78fb32421148"
   },
   {
     "qa_id": "QA-6fafcae34af9c3d1",
@@ -1132,26 +1139,5 @@
     "reason": "raw_document_not_auditable",
     "status": "open",
     "source_ref": "SA-574b049ad313e5f2"
-  },
-  {
-    "qa_id": "QA-194c6fb4d499eed7",
-    "asset_id": "EV-b709d79a7095128c",
-    "reason": "public_event_title_incomplete",
-    "status": "open",
-    "source_ref": "SA-7be4f8966901e967"
-  },
-  {
-    "qa_id": "QA-88dfd0bafc82ba0e",
-    "asset_id": "EV-c3c541e547e0431f",
-    "reason": "public_event_title_incomplete",
-    "status": "open",
-    "source_ref": "SA-8b2c73ec286b9124"
-  },
-  {
-    "qa_id": "QA-c01bffd754e4af64",
-    "asset_id": "EV-44661cdaaa133a6b",
-    "reason": "public_event_title_incomplete",
-    "status": "open",
-    "source_ref": "SA-8a6eb1e31d5cfc7d"
   }
 ]

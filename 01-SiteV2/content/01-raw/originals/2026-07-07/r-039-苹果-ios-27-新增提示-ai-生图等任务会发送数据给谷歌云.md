@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-039
 title: "苹果 iOS 27 新增提示：AI 生图等任务会发送数据给谷歌云"
 title_zh: "苹果 iOS 27 新增提示：AI 生图等任务会发送数据给谷歌云"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/973/344.htm"
 canonical_url: "https://ithome.com/0/973/344.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-07T02:46:59.725Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 苹果 iOS 27 新增提示：AI 生图等任务会发送数据给谷歌云

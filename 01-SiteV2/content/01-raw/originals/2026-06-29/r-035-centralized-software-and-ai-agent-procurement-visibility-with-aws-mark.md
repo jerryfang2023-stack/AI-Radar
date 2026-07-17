@@ -72,6 +72,10 @@ key_excerpts: [{"type":"workflow_change","text":"AWS Marketplace has updated the
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "通过AWS Marketplace单一玻璃面板仪表盘实现集中化软件与AI代理采购可见性 | AWS Marketplace"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Centralized software and AI agent procurement visibility with AWS Marketplace Single Pane of Glass dashboard | AWS Marketplace

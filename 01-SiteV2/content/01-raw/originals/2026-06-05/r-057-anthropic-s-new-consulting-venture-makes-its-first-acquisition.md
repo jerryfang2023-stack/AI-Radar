@@ -72,6 +72,10 @@ key_excerpts: [{"type":"company_action","text":"Anthropic-Backed AI Services Fir
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Anthropic 新咨询业务完成首次收购"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Anthropic's New Consulting Venture Makes Its First Acquisition

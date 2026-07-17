@@ -2,7 +2,7 @@
 id: SIG-20260629-A01
 type: signal_card
 signal_type: funding
-title: "Convey 获得 a16z 领投的 3800 万美元 A 轮融资"
+title: "Convey 获 Andreessen Horowitz 领投 3800 万美元 A 轮融资，以 AI 同事自动化企业运营"
 date: 2026-06-29
 status: published
 source_title: "Convey Raises $38 Million Series A Led by Andreessen Horowitz to Automate Enterprise Operations with AI Teammates"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Convey"
 
 frontend:
-  displayTitle: "Convey 获得 a16z 领投的 3800 万美元 A 轮融资"
+  displayTitle: "Convey 获 Andreessen Horowitz 领投 3800 万美元 A 轮融资，以 AI 同事自动化企业运营"
   sourceLinks:
     - "https://finance.yahoo.com/technology/ai/articles/convey-raises-38-million-series-144600199.html"
 ---
 
-# Convey 获得 a16z 领投的 3800 万美元 A 轮融资
+# Convey 获 Andreessen Horowitz 领投 3800 万美元 A 轮融资，以 AI 同事自动化企业运营
 
 ## 新闻事实
 

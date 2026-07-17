@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-053
 title: "Launch YC: Orthogonal - Agentic Payments for APIs | Y Combinator"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "Launch YC: Orthogonal - 面向API的智能支付代理 | Y Combinator"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.ycombinator.com/launches/PJU-orthogonal-agentic-payments-for-apis"
 canonical_url: "https://ycombinator.com/launches/PJU-orthogonal-agentic-payments-for-apis"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-16T02:39:33.752Z
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Launch YC: Orthogonal - Agentic Payments for APIs | Y Combinator

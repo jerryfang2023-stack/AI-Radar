@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-17T18:20:10.588Z",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 727,
-    "quarantinedEventCount": 50
+    "eventCount": 818,
+    "quarantinedEventCount": 58
   },
   "node": {
     "id": "TX-industry-financial_services",
@@ -17,49 +17,61 @@
     "typeLabel": "行业",
     "valueId": "financial_services",
     "eventIds": [
-      "EV-384cc24be4b56cb5",
-      "EV-21c2e81a7c073e04",
+      "EV-aa33ca051f3a7f78",
       "EV-189e43cb9fea8e1a",
-      "EV-b1138bccf5ccd86c",
+      "EV-a42e51959c627554",
       "EV-c0d19b8641a7a36c",
       "EV-e4b3a19529576778",
-      "EV-57ab4ab35bcefe19",
-      "EV-94b6fae7dd4e2b95",
       "EV-a84ec4216d3ded6d",
-      "EV-a9f1e8662a1e22cf",
+      "EV-778ae7684a4d782e",
+      "EV-86247a326e79bb88",
+      "EV-d1e2a7c6d314612c",
       "EV-33717672cb5e8004",
-      "EV-a9a3b5b56befe593",
-      "EV-30e8529ddeb228c8",
-      "EV-8f8f477441a23b7c",
+      "EV-83b2e8f7fe679bc3",
+      "EV-2c87c8ea47cbd1b6",
+      "EV-97747aee0cafd9f3",
+      "EV-bad301e14b034fbd",
       "EV-5caf7f83664b1a2c"
     ],
     "entityIds": [
+      "EN-1bd14cd1a58c5708",
       "EN-7d3194f79e645c42",
-      "EN-c70eca6b0f88f44d",
-      "EN-bbdefa2950f49882",
       "EN-11507a0e2f5e69d5",
+      "EN-b314f58f5f506fd2",
       "EN-a972bc1b3220493e",
+      "EN-96eebba49dbbf422",
       "EN-eaa1c24270a0d057",
       "EN-d82ff987d73882b8",
-      "EN-4584b2d5819616b3",
-      "EN-7706c3c94d5f9b59",
       "EN-ee04228c5c6d8b08",
-      "EN-b0532e1af75cc4ab",
+      "EN-7706c3c94d5f9b59",
+      "EN-25690754dd14bd1b",
+      "EN-43381465c2b7d64e",
+      "EN-c70eca6b0f88f44d",
       "EN-5e757c7fc575c41e",
-      "EN-8147e6fed86d42c1",
-      "EN-4e721fae5963494d"
+      "EN-bc8a00f7f6fb535f",
+      "EN-4d748ebd71af03a7",
+      "EN-c3e4cc183d345262",
+      "EN-9b6ea48b511ffd60",
+      "EN-bbdefa2950f49882",
+      "EN-06b5472c16feae4c",
+      "EN-4e721fae5963494d",
+      "EN-b5251b35f15bedc4",
+      "EN-a4eee620f5a081bd"
     ],
     "fdeIds": [
-      "FDE-4269000419db8e31",
-      "FDE-51d5310574bc443a"
+      "FDE-e1b2683e8d017358",
+      "FDE-0ee0fe3baa3f1364",
+      "FDE-d0a39c8df546833a",
+      "FDE-560b710961006374",
+      "FDE-ae4c44cd0de9d48a"
     ],
     "hardwareIds": [],
-    "firstSeen": "2026-05-20",
+    "firstSeen": "2026-05-22",
     "lastSeen": "2026-07-10"
   },
   "events": [
     {
-      "id": "EV-384cc24be4b56cb5",
+      "id": "EV-aa33ca051f3a7f78",
       "dataDate": "2026-06-30",
       "date": "2026-06-30",
       "updatedDate": "2026-06-30",
@@ -69,7 +81,7 @@
       "status": "announced",
       "statusLabel": "已公布",
       "publicationStatus": "verified",
-      "title": "OpenAI 完成 1.5 亿美元 B 轮融资",
+      "title": "企业AI代理B轮融资：基础设施赢得2026年",
       "originalTitle": "Enterprise AI Agent Series B: Infrastructure Wins 2026",
       "subject": "Enterprise AI Agent",
       "action": "Series B",
@@ -80,7 +92,9 @@
       "locations": [
         "Europe"
       ],
-      "missingFields": [],
+      "missingFields": [
+        "event_time"
+      ],
       "conflicts": [],
       "tags": [
         {
@@ -188,159 +202,17 @@
         }
       ],
       "entityIds": [
+        "EN-1bd14cd1a58c5708",
         "EN-7d3194f79e645c42"
       ],
       "entityNames": [
+        "Enterprise AI Agent",
         "OpenAI"
       ],
       "productName": "",
       "products": [],
       "sourceUrl": "https://angelinvestorsnetwork.com/venture-capital/enterprise-ai-agent-series-b-why-infrastructure-wins",
       "publisher": "angelinvestorsnetwork.com"
-    },
-    {
-      "id": "EV-21c2e81a7c073e04",
-      "dataDate": "2026-06-22",
-      "date": "2026-06-22",
-      "updatedDate": "2026-06-22",
-      "eventType": "funding",
-      "eventTypeLabel": "融资",
-      "eventGroup": "融资与并购",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "OpenAI 完成 2.8 亿元 种子轮融资",
-      "originalTitle": "dodoAI raises ¥280M seed for enterprise AI governance platform",
-      "subject": "dodoAI",
-      "action": "raises",
-      "object": "¥280M seed for enterprise AI governance platform",
-      "metrics": [
-        "¥280M",
-        "¥280 million",
-        "35%",
-        "98%"
-      ],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "human_in_loop",
-          "name": "人在回路"
-        }
-      ],
-      "facets": {
-        "product_form": [],
-        "use_case": [],
-        "industry": [
-          {
-            "dimensionId": "industry",
-            "id": "financial_services",
-            "dimensionName": "行业",
-            "name": "金融服务"
-          },
-          {
-            "dimensionId": "industry",
-            "id": "manufacturing",
-            "dimensionName": "行业",
-            "name": "制造业"
-          },
-          {
-            "dimensionId": "industry",
-            "id": "telecommunications",
-            "dimensionName": "行业",
-            "name": "电信"
-          }
-        ],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "human_in_loop",
-          "name": "人在回路"
-        },
-        {
-          "dimensionId": "industry",
-          "id": "financial_services",
-          "dimensionName": "行业",
-          "name": "金融服务"
-        },
-        {
-          "dimensionId": "industry",
-          "id": "manufacturing",
-          "dimensionName": "行业",
-          "name": "制造业"
-        },
-        {
-          "dimensionId": "industry",
-          "id": "telecommunications",
-          "dimensionName": "行业",
-          "name": "电信"
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "human_in_loop",
-          "name": "人在回路"
-        },
-        {
-          "dimensionId": "industry",
-          "id": "financial_services",
-          "dimensionName": "行业",
-          "name": "金融服务"
-        },
-        {
-          "dimensionId": "industry",
-          "id": "manufacturing",
-          "dimensionName": "行业",
-          "name": "制造业"
-        },
-        {
-          "dimensionId": "industry",
-          "id": "telecommunications",
-          "dimensionName": "行业",
-          "name": "电信"
-        }
-      ],
-      "entityIds": [
-        "EN-7d3194f79e645c42",
-        "EN-c70eca6b0f88f44d",
-        "EN-bbdefa2950f49882"
-      ],
-      "entityNames": [
-        "OpenAI",
-        "Anthropic",
-        "Google"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://coverager.com/dodoai-raises-%c2%a5280m-seed-for-enterprise-ai-governance-platform",
-      "publisher": "coverager.com"
     },
     {
       "id": "EV-189e43cb9fea8e1a",
@@ -353,21 +225,31 @@
       "status": "announced",
       "statusLabel": "已公布",
       "publicationStatus": "verified",
-      "title": "New 完成 5000 万美元 C 轮融资",
+      "title": "Bland完成超1亿美元C轮融资，推动复杂高风险对话场景的语音AI技术",
       "originalTitle": "Bland Surpasses $100M Funding With New Series C to Advance Voice AI for Complex, High-Stakes Conversations",
       "subject": "Bland Surpasses $100M Funding With New",
       "action": "Series C",
       "object": "to Advance Voice AI for Complex, High-Stakes Conversations",
       "metrics": [
         "$50 million",
-        "$100 million"
+        "$100 million",
+        "3.5 million"
       ],
       "locations": [],
-      "missingFields": [],
+      "missingFields": [
+        "event_time"
+      ],
       "conflicts": [],
       "tags": [],
       "facets": {
-        "product_form": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          }
+        ],
         "use_case": [],
         "industry": [
           {
@@ -375,6 +257,12 @@
             "id": "financial_services",
             "dimensionName": "行业",
             "name": "金融服务"
+          },
+          {
+            "dimensionId": "industry",
+            "id": "healthcare_life_sciences",
+            "dimensionName": "行业",
+            "name": "医疗与生命科学"
           }
         ],
         "deployment_model": [],
@@ -386,14 +274,38 @@
           "id": "financial_services",
           "dimensionName": "行业",
           "name": "金融服务"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "healthcare_life_sciences",
+          "dimensionName": "行业",
+          "name": "医疗与生命科学"
         }
       ],
       "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        },
         {
           "dimensionId": "industry",
           "id": "financial_services",
           "dimensionName": "行业",
           "name": "金融服务"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "healthcare_life_sciences",
+          "dimensionName": "行业",
+          "name": "医疗与生命科学"
         }
       ],
       "entityIds": [
@@ -408,27 +320,30 @@
       "publisher": "prnewswire.com"
     },
     {
-      "id": "EV-b1138bccf5ccd86c",
+      "id": "EV-a42e51959c627554",
       "dataDate": "2026-06-12",
       "date": "2026-06-12",
       "updatedDate": "2026-06-12",
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
-      "status": "announced",
-      "statusLabel": "已公布",
+      "status": "completed",
+      "statusLabel": "已完成",
       "publicationStatus": "verified",
-      "title": "OpenAI 完成 5000 万美元 A 轮融资",
+      "title": "Poetic 完成5000万美元A轮融资，以可靠AI自动化全球最复杂的企业流程",
       "originalTitle": "Poetic Raises $50M Series A to Automate the World's Most Complex Enterprise Processes with Reliable AI",
       "subject": "Poetic",
       "action": "Raises",
       "object": "$50M Series A to Automate the World's Most Complex Enterprise Processes with Reliable AI",
       "metrics": [
         "$50M",
-        "$500M"
+        "$500M",
+        "99%"
       ],
       "locations": [],
-      "missingFields": [],
+      "missingFields": [
+        "event_time"
+      ],
       "conflicts": [],
       "tags": [
         {
@@ -499,9 +414,11 @@
         }
       ],
       "entityIds": [
+        "EN-b314f58f5f506fd2",
         "EN-7d3194f79e645c42"
       ],
       "entityNames": [
+        "Poetic",
         "OpenAI"
       ],
       "productName": "",
@@ -517,10 +434,10 @@
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
-      "status": "announced",
-      "statusLabel": "已公布",
+      "status": "completed",
+      "statusLabel": "已完成",
       "publicationStatus": "verified",
-      "title": "Notch 完成 3000 万美元 A 轮融资",
+      "title": "Notch 获 3000 万美元融资，打造受监管行业的人工智能操作系统",
       "originalTitle": "Notch Raises $30 Million to Build the AI Operating System for Regulated Industries",
       "subject": "Notch",
       "action": "Raises",
@@ -531,7 +448,9 @@
         "$45 million"
       ],
       "locations": [],
-      "missingFields": [],
+      "missingFields": [
+        "event_time"
+      ],
       "conflicts": [],
       "tags": [],
       "facets": {
@@ -565,10 +484,12 @@
         }
       ],
       "entityIds": [
-        "EN-a972bc1b3220493e"
+        "EN-a972bc1b3220493e",
+        "EN-96eebba49dbbf422"
       ],
       "entityNames": [
-        "Notch"
+        "Notch",
+        "Intel"
       ],
       "productName": "",
       "products": [],
@@ -583,10 +504,10 @@
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
-      "status": "announced",
-      "statusLabel": "已公布",
+      "status": "completed",
+      "statusLabel": "已完成",
       "publicationStatus": "verified",
-      "title": "Y Combinator grad 完成 4700 万美元 A 轮融资",
+      "title": "Y Combinator毕业生、AI保险经纪公司Harper获4700万美元融资",
       "originalTitle": "Y Combinator grad and AI insurance brokerage Harper raises $47M",
       "subject": "Y Combinator grad and AI insurance brokerage Harper",
       "action": "raises",
@@ -596,7 +517,9 @@
         "$46.8 million"
       ],
       "locations": [],
-      "missingFields": [],
+      "missingFields": [
+        "event_time"
+      ],
       "conflicts": [],
       "tags": [],
       "facets": {
@@ -643,101 +566,17 @@
       "publisher": "techcrunch.com"
     },
     {
-      "id": "EV-57ab4ab35bcefe19",
-      "dataDate": "2026-05-24",
-      "date": "2026-05-24",
-      "updatedDate": "2026-05-24",
-      "eventType": "funding",
-      "eventTypeLabel": "融资",
-      "eventGroup": "融资与并购",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "Zalos 完成 360 万美元 种子轮融资",
-      "originalTitle": "Zalos raises $3.6M to build Computer Agents that operate",
-      "subject": "Zalos",
-      "action": "raises",
-      "object": "$3.6M to build Computer Agents that operate",
-      "metrics": [
-        "$3.6M",
-        "$3.6 million"
-      ],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        }
-      ],
-      "facets": {
-        "product_form": [],
-        "use_case": [],
-        "industry": [
-          {
-            "dimensionId": "industry",
-            "id": "financial_services",
-            "dimensionName": "行业",
-            "name": "金融服务"
-          }
-        ],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        },
-        {
-          "dimensionId": "industry",
-          "id": "financial_services",
-          "dimensionName": "行业",
-          "name": "金融服务"
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        },
-        {
-          "dimensionId": "industry",
-          "id": "financial_services",
-          "dimensionName": "行业",
-          "name": "金融服务"
-        }
-      ],
-      "entityIds": [
-        "EN-4584b2d5819616b3"
-      ],
-      "entityNames": [
-        "Zalos"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://www.globenewswire.com/news-release/2026/03/24/3261268/0/en/zalos-raises-3-6m-to-build-computer-agents-that-operate-finance-systems-the-way-humans-do.html",
-      "publisher": "globenewswire.com"
-    },
-    {
-      "id": "EV-94b6fae7dd4e2b95",
+      "id": "EV-a84ec4216d3ded6d",
       "dataDate": "2026-05-22",
       "date": "2026-05-22",
       "updatedDate": "2026-05-22",
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
-      "status": "announced",
-      "statusLabel": "已公布",
+      "status": "completed",
+      "statusLabel": "已完成",
       "publicationStatus": "verified",
-      "title": "Hinge 完成 1.5 亿美元 B 轮融资",
+      "title": "Wonderful 完成1.5亿美元B轮融资，加速在30多个市场的企业AI应用",
       "originalTitle": "Wonderful Raises $150M Series B to Accelerate Enterprise AI Adoption in 30+ Markets",
       "subject": "Wonderful",
       "action": "Raises",
@@ -749,7 +588,9 @@
         "US",
         "Europe"
       ],
-      "missingFields": [],
+      "missingFields": [
+        "event_time"
+      ],
       "conflicts": [],
       "tags": [
         {
@@ -876,9 +717,11 @@
         }
       ],
       "entityIds": [
+        "EN-ee04228c5c6d8b08",
         "EN-7706c3c94d5f9b59"
       ],
       "entityNames": [
+        "Wonderful",
         "Hinge"
       ],
       "productName": "",
@@ -887,167 +730,7 @@
       "publisher": "prnewswire.com"
     },
     {
-      "id": "EV-a84ec4216d3ded6d",
-      "dataDate": "2026-05-20",
-      "date": "2026-05-21",
-      "updatedDate": "2026-05-21",
-      "eventType": "funding",
-      "eventTypeLabel": "融资",
-      "eventGroup": "融资与并购",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "Wonderful 完成 1.5 亿美元 B 轮融资",
-      "originalTitle": "Wonderful Raises $150M Series B to Accelerate Enterprise AI Adoption in 30+ Markets",
-      "subject": "Wonderful",
-      "action": "Raises",
-      "object": "$150M Series B to Accelerate Enterprise AI Adoption in 30+ Markets",
-      "metrics": [
-        "$150M",
-        "$150 million"
-      ],
-      "locations": [
-        "Europe"
-      ],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        }
-      ],
-      "facets": {
-        "product_form": [
-          {
-            "dimensionId": "product_form",
-            "id": "enterprise_platform",
-            "dimensionName": "产品形态",
-            "name": "企业 AI 平台"
-          }
-        ],
-        "use_case": [],
-        "industry": [
-          {
-            "dimensionId": "industry",
-            "id": "financial_services",
-            "dimensionName": "行业",
-            "name": "金融服务"
-          },
-          {
-            "dimensionId": "industry",
-            "id": "healthcare_life_sciences",
-            "dimensionName": "行业",
-            "name": "医疗与生命科学"
-          },
-          {
-            "dimensionId": "industry",
-            "id": "manufacturing",
-            "dimensionName": "行业",
-            "name": "制造业"
-          }
-        ],
-        "deployment_model": [],
-        "target_user": [
-          {
-            "dimensionId": "target_user",
-            "id": "enterprise",
-            "dimensionName": "目标用户",
-            "name": "企业用户"
-          }
-        ]
-      },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        },
-        {
-          "dimensionId": "product_form",
-          "id": "enterprise_platform",
-          "dimensionName": "产品形态",
-          "name": "企业 AI 平台"
-        },
-        {
-          "dimensionId": "industry",
-          "id": "financial_services",
-          "dimensionName": "行业",
-          "name": "金融服务"
-        },
-        {
-          "dimensionId": "industry",
-          "id": "healthcare_life_sciences",
-          "dimensionName": "行业",
-          "name": "医疗与生命科学"
-        },
-        {
-          "dimensionId": "industry",
-          "id": "manufacturing",
-          "dimensionName": "行业",
-          "name": "制造业"
-        },
-        {
-          "dimensionId": "target_user",
-          "id": "enterprise",
-          "dimensionName": "目标用户",
-          "name": "企业用户"
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "product_form",
-          "id": "enterprise_platform",
-          "dimensionName": "产品形态",
-          "name": "企业 AI 平台"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        },
-        {
-          "dimensionId": "industry",
-          "id": "financial_services",
-          "dimensionName": "行业",
-          "name": "金融服务"
-        },
-        {
-          "dimensionId": "industry",
-          "id": "healthcare_life_sciences",
-          "dimensionName": "行业",
-          "name": "医疗与生命科学"
-        },
-        {
-          "dimensionId": "industry",
-          "id": "manufacturing",
-          "dimensionName": "行业",
-          "name": "制造业"
-        },
-        {
-          "dimensionId": "target_user",
-          "id": "enterprise",
-          "dimensionName": "目标用户",
-          "name": "企业用户"
-        }
-      ],
-      "entityIds": [
-        "EN-ee04228c5c6d8b08"
-      ],
-      "entityNames": [
-        "Wonderful"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://www.prnewswire.com/news-releases/wonderful-raises-150m-series-b-to-accelerate-enterprise-ai-adoption-in-30-markets-302712238.html",
-      "publisher": "prnewswire.com"
-    },
-    {
-      "id": "EV-a9f1e8662a1e22cf",
+      "id": "EV-778ae7684a4d782e",
       "dataDate": "2026-07-10",
       "date": "2026-07-10",
       "updatedDate": "2026-07-10",
@@ -1057,25 +740,27 @@
       "status": "announced",
       "statusLabel": "已公布",
       "publicationStatus": "verified",
-      "title": "从人工智能试点到自主贷款：了解L&T Finance的企业人工智能之旅- Express Computer",
+      "title": "从AI试点到自主借贷：L&T金融的企业AI之旅",
       "originalTitle": "From AI pilots to autonomous lending: Inside L&T Finance's enterprise AI journey - Express Computer",
       "subject": "From AI",
       "action": "pilots",
       "object": "to autonomous lending: Inside L&T Finance's enterprise AI journey - Express Computer",
       "metrics": [],
       "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        }
+      "missingFields": [
+        "event_time"
       ],
+      "conflicts": [],
+      "tags": [],
       "facets": {
-        "product_form": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "enterprise_platform",
+            "dimensionName": "产品形态",
+            "name": "企业 AI 平台"
+          }
+        ],
         "use_case": [],
         "industry": [
           {
@@ -1097,10 +782,10 @@
       },
       "classifications": [
         {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
+          "dimensionId": "product_form",
+          "id": "enterprise_platform",
+          "dimensionName": "产品形态",
+          "name": "企业 AI 平台"
         },
         {
           "dimensionId": "industry",
@@ -1117,10 +802,10 @@
       ],
       "displayTags": [
         {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
+          "dimensionId": "product_form",
+          "id": "enterprise_platform",
+          "dimensionName": "产品形态",
+          "name": "企业 AI 平台"
         },
         {
           "dimensionId": "industry",
@@ -1136,15 +821,185 @@
         }
       ],
       "entityIds": [
-        "EN-b0532e1af75cc4ab"
+        "EN-25690754dd14bd1b"
       ],
       "entityNames": [
-        "Rime"
+        "From AI"
       ],
       "productName": "",
       "products": [],
       "sourceUrl": "https://expresscomputer.in/amp/exclusives/from-ai-pilots-to-autonomous-lending-inside-lt-finances-enterprise-ai-journey/136627",
       "publisher": "expresscomputer.in"
+    },
+    {
+      "id": "EV-86247a326e79bb88",
+      "dataDate": "2026-06-28",
+      "date": "2026-06-28",
+      "updatedDate": "2026-06-28",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "斯洛文尼亚保险高管表示：没有飞行员，就没有副驾驶",
+      "originalTitle": "There is no Copilot without the pilots, says Slovenian insurance executive",
+      "subject": "There is no Copilot without the",
+      "action": "pilots",
+      "object": ", says Slovenian insurance executive",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "entities",
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "financial_services",
+            "dimensionName": "行业",
+            "name": "金融服务"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "id": "financial_services",
+          "dimensionName": "行业",
+          "name": "金融服务"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "id": "financial_services",
+          "dimensionName": "行业",
+          "name": "金融服务"
+        }
+      ],
+      "entityIds": [],
+      "entityNames": [],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://news.microsoft.com/source/emea/features/zavarovalnica-triglav-copilot-adoption-insurance",
+      "publisher": "Microsoft AI and Azure AI official blogs"
+    },
+    {
+      "id": "EV-d1e2a7c6d314612c",
+      "dataDate": "2026-06-21",
+      "date": "2026-06-21",
+      "updatedDate": "2026-06-21",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Anthropic 应用 AI 工程师：Claude 企业战略背后的前沿部署职能",
+      "originalTitle": "Anthropic's Applied AI Engineers: The Forward-Deployed Function Behind Claude's Enterprise Strategy | Blog | Perspective AI",
+      "subject": "Anthropic's Applied AI Engineers: The Forward-",
+      "action": "Deployed",
+      "object": "Function Behind Claude's Enterprise Strategy | Blog | Perspective AI",
+      "metrics": [
+        "$1.5 billion",
+        "$350",
+        "$550"
+      ],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "guardrails_safety",
+          "name": "安全护栏"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "financial_services",
+            "dimensionName": "行业",
+            "name": "金融服务"
+          },
+          {
+            "dimensionId": "industry",
+            "id": "healthcare_life_sciences",
+            "dimensionName": "行业",
+            "name": "医疗与生命科学"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "guardrails_safety",
+          "name": "安全护栏"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "financial_services",
+          "dimensionName": "行业",
+          "name": "金融服务"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "healthcare_life_sciences",
+          "dimensionName": "行业",
+          "name": "医疗与生命科学"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "guardrails_safety",
+          "name": "安全护栏"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "financial_services",
+          "dimensionName": "行业",
+          "name": "金融服务"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "healthcare_life_sciences",
+          "dimensionName": "行业",
+          "name": "医疗与生命科学"
+        }
+      ],
+      "entityIds": [
+        "EN-43381465c2b7d64e",
+        "EN-c70eca6b0f88f44d",
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "Anthropic's Applied AI Engineers",
+        "Anthropic",
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://getperspective.ai/blog/anthropic-applied-ai-engineers-forward-deployed-claude-enterprise",
+      "publisher": "getperspective.ai"
     },
     {
       "id": "EV-33717672cb5e8004",
@@ -1228,7 +1083,222 @@
       "publisher": "IT之家（RSS）"
     },
     {
-      "id": "EV-a9a3b5b56befe593",
+      "id": "EV-83b2e8f7fe679bc3",
+      "dataDate": "2026-06-06",
+      "date": "2026-06-07",
+      "updatedDate": "2026-06-07",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Travelers 借助 OpenAI Realtime API 在全国部署 AI 语音理赔助手",
+      "originalTitle": "Travelers deploys AI-powered voice claims assistant nationwide with OpenAI Realtime API | keepingupwith.ai",
+      "subject": "Travelers",
+      "action": "deploys",
+      "object": "AI-powered voice claims assistant nationwide with OpenAI Realtime API | keepingupwith.ai",
+      "metrics": [
+        "90%",
+        "1.5 million",
+        "$23 billion"
+      ],
+      "locations": [
+        "US"
+      ],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          }
+        ],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "financial_services",
+            "dimensionName": "行业",
+            "name": "金融服务"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "id": "financial_services",
+          "dimensionName": "行业",
+          "name": "金融服务"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "financial_services",
+          "dimensionName": "行业",
+          "name": "金融服务"
+        }
+      ],
+      "entityIds": [
+        "EN-bc8a00f7f6fb535f",
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "Travelers",
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://keepingupwith.ai/articles/travelers-deploys-ai-powered-voice-claims-assistant-nationwide-with-openai-realt",
+      "publisher": "keepingupwith.ai"
+    },
+    {
+      "id": "EV-2c87c8ea47cbd1b6",
+      "dataDate": "2026-07-09",
+      "date": "2026-07-09",
+      "updatedDate": "2026-07-09",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "埃森哲与AlphaSense宣布战略投资与合作伙伴关系，为企业市场情报带来智能体工作流",
+      "originalTitle": "Accenture and AlphaSense Announce Strategic Investment and Partnership to Bring Agentic Workflows for Market Intelligence to Enterprises – Company Announcement - FT.com",
+      "subject": "Accenture and AlphaSense Announce Strategic Investment and",
+      "action": "Partnership",
+      "object": "to Bring Agentic Workflows for Market Intelligence to Enterprises – Company Announcement - FT.com",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "enterprise_platform",
+            "dimensionName": "产品形态",
+            "name": "企业 AI 平台"
+          }
+        ],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "financial_services",
+            "dimensionName": "行业",
+            "name": "金融服务"
+          },
+          {
+            "dimensionId": "industry",
+            "id": "healthcare_life_sciences",
+            "dimensionName": "行业",
+            "name": "医疗与生命科学"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "enterprise_platform",
+          "dimensionName": "产品形态",
+          "name": "企业 AI 平台"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "financial_services",
+          "dimensionName": "行业",
+          "name": "金融服务"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "healthcare_life_sciences",
+          "dimensionName": "行业",
+          "name": "医疗与生命科学"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "enterprise_platform",
+          "dimensionName": "产品形态",
+          "name": "企业 AI 平台"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "financial_services",
+          "dimensionName": "行业",
+          "name": "金融服务"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "healthcare_life_sciences",
+          "dimensionName": "行业",
+          "name": "医疗与生命科学"
+        }
+      ],
+      "entityIds": [
+        "EN-4d748ebd71af03a7",
+        "EN-c3e4cc183d345262",
+        "EN-96eebba49dbbf422"
+      ],
+      "entityNames": [
+        "Accenture",
+        "AlphaSense Announce Strategic Investment and",
+        "Intel"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://markets.ft.com/data/announce/detail?dockey=600-202606030759BIZWIRE_USPRX____20260603_BW374687-1",
+      "publisher": "markets.ft.com"
+    },
+    {
+      "id": "EV-97747aee0cafd9f3",
       "dataDate": "2026-06-19",
       "date": "2026-06-18",
       "updatedDate": "2026-06-19",
@@ -1285,10 +1355,14 @@
         }
       ],
       "entityIds": [
-        "EN-bbdefa2950f49882"
+        "EN-9b6ea48b511ffd60",
+        "EN-bbdefa2950f49882",
+        "EN-96eebba49dbbf422"
       ],
       "entityNames": [
-        "Google"
+        "汇丰银行",
+        "Google",
+        "Intel"
       ],
       "productName": "",
       "products": [],
@@ -1296,7 +1370,7 @@
       "publisher": "Artificial Intelligence News（RSS）"
     },
     {
-      "id": "EV-30e8529ddeb228c8",
+      "id": "EV-bad301e14b034fbd",
       "dataDate": "2026-06-13",
       "date": "2026-06-13",
       "updatedDate": "2026-06-13",
@@ -1383,116 +1457,17 @@
         }
       ],
       "entityIds": [
+        "EN-06b5472c16feae4c",
         "EN-c70eca6b0f88f44d"
       ],
       "entityNames": [
+        "TCS",
         "Anthropic"
       ],
       "productName": "",
       "products": [],
       "sourceUrl": "https://anthropic.com/news/tcs-anthropic-partnership",
       "publisher": "Anthropic：Newsroom（网页）"
-    },
-    {
-      "id": "EV-8f8f477441a23b7c",
-      "dataDate": "2026-07-06",
-      "date": "2026-07-06",
-      "updatedDate": "2026-07-06",
-      "eventType": "product_release",
-      "eventTypeLabel": "产品发布",
-      "eventGroup": "模型、产品与服务",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "OPPO 发布 Pulse",
-      "originalTitle": "Morgan Stanley Cut Its Riskiest Reconciliation Job in Half by Making Its Agents Less Autonomous | Value Add Pulse",
-      "subject": "Morgan Stanley Cut Its Riskiest Reconciliation Job in Half by Making Its Agents Less Autonomous | Value",
-      "action": "Add",
-      "object": "Pulse",
-      "metrics": [
-        "38%"
-      ],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "fine_tuning",
-          "name": "模型微调"
-        }
-      ],
-      "facets": {
-        "product_form": [],
-        "use_case": [],
-        "industry": [
-          {
-            "dimensionId": "industry",
-            "id": "financial_services",
-            "dimensionName": "行业",
-            "name": "金融服务"
-          }
-        ],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "fine_tuning",
-          "name": "模型微调"
-        },
-        {
-          "dimensionId": "industry",
-          "id": "financial_services",
-          "dimensionName": "行业",
-          "name": "金融服务"
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "fine_tuning",
-          "name": "模型微调"
-        },
-        {
-          "dimensionId": "industry",
-          "id": "financial_services",
-          "dimensionName": "行业",
-          "name": "金融服务"
-        }
-      ],
-      "entityIds": [
-        "EN-8147e6fed86d42c1"
-      ],
-      "entityNames": [
-        "OPPO"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://valueaddvc.com/pulse/morgan-stanley-fixr-less-autonomous-agents-2026",
-      "publisher": "valueaddvc.com"
     },
     {
       "id": "EV-5caf7f83664b1a2c",
@@ -1520,7 +1495,14 @@
       "conflicts": [],
       "tags": [],
       "facets": {
-        "product_form": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "ai_application",
+            "dimensionName": "产品形态",
+            "name": "AI 应用"
+          }
+        ],
         "use_case": [],
         "industry": [
           {
@@ -1539,9 +1521,21 @@
           "id": "financial_services",
           "dimensionName": "行业",
           "name": "金融服务"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "ai_application",
+          "dimensionName": "产品形态",
+          "name": "AI 应用"
         }
       ],
       "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "ai_application",
+          "dimensionName": "产品形态",
+          "name": "AI 应用"
+        },
         {
           "dimensionId": "industry",
           "id": "financial_services",
@@ -1550,18 +1544,55 @@
         }
       ],
       "entityIds": [
-        "EN-4e721fae5963494d"
+        "EN-4e721fae5963494d",
+        "EN-b5251b35f15bedc4",
+        "EN-a4eee620f5a081bd"
       ],
       "entityNames": [
-        "招商银行"
+        "招商银行",
+        "Moonshot AI",
+        "运通工程师信用卡"
       ],
-      "productName": "",
-      "products": [],
+      "productName": "运通工程师信用卡",
+      "products": [
+        {
+          "name": "运通工程师信用卡",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Moonshot AI"
+          ]
+        }
+      ],
       "sourceUrl": "https://ithome.com/0/964/614.htm",
       "publisher": "IT之家（RSS）"
     }
   ],
   "entities": [
+    {
+      "id": "EN-1bd14cd1a58c5708",
+      "name": "Enterprise AI Agent",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-aa33ca051f3a7f78",
+        "EV-6ef10e278f3c25a9"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
+        "TX-industry-healthcare_life_sciences",
+        "TX-industry-financial_services"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-26",
+      "lastSeen": "2026-06-30"
+    },
     {
       "id": "EN-7d3194f79e645c42",
       "name": "OpenAI",
@@ -1576,303 +1607,145 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-7f77e6a2d1698307",
-        "EV-c9af33ffe65d236b",
-        "EV-efca54f3b07072a6",
-        "EV-10c70ced68ccb31b",
-        "EV-adf92ecb7cd8714f",
-        "EV-384cc24be4b56cb5",
-        "EV-21c2e81a7c073e04",
+        "EV-4da1a7c4d527eb69",
+        "EV-e41fc65eb014893f",
+        "EV-974a6b7d0e0efef2",
+        "EV-dfddbb260b3d1c77",
+        "EV-20d762872664fddb",
+        "EV-aa33ca051f3a7f78",
+        "EV-d4e44892226be468",
         "EV-edcb66d0401cfb8f",
-        "EV-b1138bccf5ccd86c",
+        "EV-a42e51959c627554",
         "EV-ee0662b75588987e",
-        "EV-052d7d9120c683d1",
-        "EV-6180de2e02597d9d",
+        "EV-9055cb4fa2b4ee62",
+        "EV-0e84a2f49d765ce3",
         "EV-201b25d4f3cf696a",
-        "EV-853559d61ae2e313",
-        "EV-7dac684a33062b7f",
-        "EV-06fd0cc175652354",
-        "EV-1f842e1dff69bb87",
-        "EV-8a0866a27909f9d9",
+        "EV-1abf0d076d30ec6d",
+        "EV-3b40ec144e5db22c",
         "EV-e15ae1112294d59e",
+        "EV-36d484148fbd3424",
+        "EV-47a16db069ed320e",
+        "EV-49c6291694fb6c7b",
         "EV-62901df23f471eea",
-        "EV-4a4869273654c799",
-        "EV-d3528ccff1833385",
+        "EV-538adc98d1da8fda",
+        "EV-d209a6acecba4285",
+        "EV-a5d127e62d102ad6",
+        "EV-d1e2a7c6d314612c",
         "EV-e1a4bc40db4a9d8f",
+        "EV-83b2e8f7fe679bc3",
+        "EV-8abf5adc3e72fbb8",
         "EV-7f2811d2272cf4a3",
         "EV-2fab4396000198d2",
         "EV-3fb492fb45980541",
-        "EV-58614476c796a67a",
-        "EV-1060a8b37ddd87ac",
-        "EV-b716e560a685c41b",
-        "EV-1fbead21a2dd47a0",
+        "EV-41ffecb51e643397",
+        "EV-26183a56cf9ed63c",
+        "EV-3fbfb89a10efd42f",
+        "EV-1c6adfef6f405319",
+        "EV-66df35d14361a6cb",
         "EV-0d5a32aca724d30e",
         "EV-70e3f88cb06a856c",
         "EV-7c899d5decafc42f",
         "EV-a4a61babc902931a",
         "EV-1c2723ad61d192bd",
-        "EV-cf5b2a0aff3914bd",
-        "EV-302018f2e960a8bf",
-        "EV-000f2abf549268a6",
-        "EV-519205eb50c83300",
-        "EV-ebe02c213368afae",
+        "EV-74dfbd82b47dc626",
+        "EV-167f50a6f3134bd5",
+        "EV-025778b83c1b2ca9",
+        "EV-969ed3078d10f0c9",
+        "EV-d7d8fcd0694a590f",
+        "EV-6e7b632ee0b3410d",
         "EV-efee7c1ac4dc336f",
+        "EV-0dbc7b904378f713",
+        "EV-10eb16192d83dbf7",
+        "EV-ae736eb124d7163a",
         "EV-cf317dd1579a01bb",
+        "EV-d07f7a8d4d20a034",
+        "EV-107725f2bdece882",
+        "EV-6af1e74358025628",
+        "EV-ee9a1c99fe7054d6",
+        "EV-cadcc94249dea81d",
+        "EV-caec65aef89d3b4a",
         "EV-d07906b648eec63f",
         "EV-0510a983e120a381",
-        "EV-3cd088098be5d0d4",
-        "EV-268250d426c1a4a0",
+        "EV-70efbfcaadcdb259",
         "EV-51aed98773a9fca1",
+        "EV-cc3b92fe233953cf",
         "EV-2059f42c7b2aff44",
-        "EV-9fac0983ab657689",
-        "EV-af1d9851e91802af",
+        "EV-578a9db1fe952d0a",
+        "EV-b93b5cc15823e9c3",
+        "EV-20ffa968bcbc4729",
+        "EV-77662aa9bef9efbe",
+        "EV-9ca7db66f8f10b63",
         "EV-9c4b862020202f6c",
+        "EV-5012364af7480121",
         "EV-918fc324de3117bd",
-        "EV-c718a5ff4b0acd66",
+        "EV-8a91e14f37d32b4d",
         "EV-860b90c017deaa59",
         "EV-888b9eb73582e21c",
-        "EV-3f07de398af7a118",
-        "EV-722c2a8dd6b70abd",
+        "EV-13f0b515194f3245",
         "EV-abf0990dcaceb1ce",
         "EV-b8bfab77707274b7",
         "EV-6eb9a23be3117421",
-        "EV-9659eb492a9eea1b",
         "EV-a0d3853dd41c8ef6",
-        "EV-cf883e02c693dfea",
-        "EV-fbde4dad2288059a",
+        "EV-b26bead25288d19c",
         "EV-1e7c76dae985100f",
-        "EV-09d3ce5611881ed4",
+        "EV-644337db309a1c82",
+        "EV-482df8a8ef264238",
         "EV-9110f23a7e60173e",
+        "EV-9e04edd969c977a1",
         "EV-e792252690f98a22",
-        "EV-63a344522ee9e8d4",
+        "EV-2aca9a810ea65555",
+        "EV-f953555178744c22",
         "EV-28145c97a7237d6d",
-        "EV-8160e13555e65130",
+        "EV-0c06df62702d26ab",
         "EV-f01d28aac73c3f9c",
-        "EV-e6771f58d7c2a050",
-        "EV-068a0671fa96b07d",
+        "EV-574998b1638a3f4f",
+        "EV-0b6992ae74184d13",
         "EV-7f979d0a01e6dffa",
-        "EV-d50a2832bb30b287",
-        "EV-91d9e2c780593bbb",
-        "EV-6b74ed049774f0c5",
-        "EV-61b97c0ee6ad83b3",
+        "EV-f3e11eadfb7c6a4b",
+        "EV-ab3586268ebfab38",
+        "EV-2cb9dbed2b2b6077",
+        "EV-d6ba9ef3ff65940c",
+        "EV-3f8ba5855b64dd1a",
         "EV-b73c7096546b82e8",
-        "EV-2de6ff1a7aebd6e7",
-        "EV-59933d63c4051085",
+        "EV-19903b5eef9b1de0",
+        "EV-57b029a4afb71044",
+        "EV-ad1444d8653b37ae",
         "EV-fbdfb5888ad19663",
-        "EV-c28e0d02272537d8",
+        "EV-cac9d9f31ef675ce",
         "EV-4a727d54055d6d0e",
         "EV-e295f808713644c7",
-        "EV-d2a00623908ca15f",
-        "EV-01e414a25347cfd9",
+        "EV-3474febbec499f3c",
+        "EV-519537a36355d82e",
+        "EV-631197767a45d34c",
+        "EV-657837763764c869",
+        "EV-ce291577f61b8543",
         "EV-a4f052325d0ef230",
-        "EV-4f4274fb5920a8b4",
-        "EV-0aa2e53c51b2b8e5",
+        "EV-ca420d07e12369f1",
+        "EV-773ffcc6e1df56fa",
         "EV-5cd10de5c12916f0",
         "EV-067f57f6e6ffa6ce",
         "EV-da6678e4e865e00e",
-        "EV-14b44a40808340f5",
         "EV-2d56dec8dfeb2b56",
         "EV-8cb2374f76202ecc",
+        "EV-946569cccbd9222f",
         "EV-917966af8545a380",
         "EV-b4203b10d6592bf2",
-        "EV-1b5db76949c2795c",
+        "EV-5eb23cdd9c14c6ea",
+        "EV-10e841ab47d2b1f1",
         "EV-f2d29ca7b05c3dd9",
         "EV-ea2b6ce4acd46366",
         "EV-2821d0cef61b3c6a",
         "EV-6f7c5f0abad3d4da",
         "EV-8f497488d129fee5",
         "EV-a8f1204b54ae6475",
-        "EV-2ca9d0a3ca53c3bf",
+        "EV-62df953d81def866",
         "EV-6b7917bd7edd4bde",
         "EV-e1ebf7d63e058a39",
+        "EV-b52af7bb03c98eb0",
         "EV-9705a8de3c2e9653",
         "EV-bce258f8f915ff5f",
-        "EV-4beb890f0879aeaf"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-industry-manufacturing",
-        "TX-technology-code_generation",
-        "TX-use_case-customer_service",
-        "TX-industry-professional_services",
-        "TX-industry-healthcare_life_sciences",
-        "TX-use_case-enterprise_operations",
-        "TX-use_case-software_development",
-        "TX-use_case-robotics_automation",
-        "TX-technology-long_context",
-        "TX-industry-financial_services",
-        "TX-use_case-cybersecurity",
-        "TX-technology-human_in_loop",
-        "TX-industry-telecommunications",
-        "TX-technology-multimodal",
-        "TX-technology-retrieval_augmented_generation",
-        "TX-use_case-research_science",
-        "TX-technology-open_weights",
-        "TX-technology-tool_use",
-        "TX-technology-reasoning",
-        "TX-technology-model_context_protocol",
-        "TX-technology-fine_tuning",
-        "TX-technology-computer_use"
-      ],
-      "relatedEntityIds": [
-        "EN-c70eca6b0f88f44d"
-      ],
-      "firstSeen": "2026-03-13",
-      "lastSeen": "2026-07-17"
-    },
-    {
-      "id": "EN-c70eca6b0f88f44d",
-      "name": "Anthropic",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [
-        "Claude Code",
-        "Claude"
-      ],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-7f77e6a2d1698307",
-        "EV-10c70ced68ccb31b",
-        "EV-6fe0054517fdee98",
-        "EV-80e54c9a390da293",
-        "EV-5ca4c08ec3e2c3b7",
-        "EV-7aaed0a2ae5cf8b6",
-        "EV-21c2e81a7c073e04",
-        "EV-edcb66d0401cfb8f",
-        "EV-052d7d9120c683d1",
-        "EV-19d4c2ef8d9f338a",
-        "EV-6180de2e02597d9d",
-        "EV-f64345af2affb07d",
-        "EV-05be25222ebd2bc2",
-        "EV-201b25d4f3cf696a",
-        "EV-853559d61ae2e313",
-        "EV-7958f9adf8f62577",
-        "EV-06fd0cc175652354",
-        "EV-ed8260ee9a7a80af",
-        "EV-5964027086487940",
-        "EV-e1a4bc40db4a9d8f",
-        "EV-c81cb21337a9bb98",
-        "EV-94e0afb44c320c99",
-        "EV-7f2811d2272cf4a3",
-        "EV-6415a58637893b34",
-        "EV-ef6464cf7f764835",
-        "EV-727ba25770d1f897",
-        "EV-4b0a7d68040c37aa",
-        "EV-f949fd95df58d42d",
-        "EV-b240fb11e65b018e",
-        "EV-30e8529ddeb228c8",
-        "EV-3398ae53a199be16",
-        "EV-0d5a32aca724d30e",
-        "EV-a8a8f26c5128d894",
-        "EV-51645a3b1e730105",
-        "EV-7c899d5decafc42f",
-        "EV-26cd4d692404e5c6",
-        "EV-1c2723ad61d192bd",
-        "EV-84226288807f817b",
-        "EV-8bf42c1816e772ba",
-        "EV-0347414d81e7f02e",
-        "EV-917a138950a21f91",
-        "EV-fd303844e336b9ee",
-        "EV-2bd337245c920bc8",
-        "EV-302018f2e960a8bf",
-        "EV-000f2abf549268a6",
-        "EV-ebe02c213368afae",
-        "EV-d39b53ca7b84b9ca",
-        "EV-cedeae902fd1263d",
-        "EV-3cd088098be5d0d4",
-        "EV-c410d77c8d531e5f",
-        "EV-e130583e34ab9d4c",
-        "EV-e31f0616ad878b7d",
-        "EV-598888cce208de5c",
-        "EV-d40a4e1b7a53cabe",
-        "EV-268250d426c1a4a0",
-        "EV-2059f42c7b2aff44",
-        "EV-9fac0983ab657689",
-        "EV-9ab36b0012b5c8c1",
-        "EV-eb02b3d3b25fe584",
-        "EV-63fdf001c22a0ed4",
-        "EV-2f81b0d48d128f5c",
-        "EV-8daf217ff024ac4a",
-        "EV-01212a5ad9db6a20",
-        "EV-13e06fc12cc3fb7c",
-        "EV-1662a98c563d3dce",
-        "EV-3b5cb867fdaba28f",
-        "EV-761d76b722321673",
-        "EV-9c4b862020202f6c",
-        "EV-ff748f8529cd80e7",
-        "EV-09610316ac52221e",
-        "EV-918fc324de3117bd",
-        "EV-c0f86afbefa2e0a6",
-        "EV-87ad2bdf8cd4b0c8",
-        "EV-860b90c017deaa59",
-        "EV-445db243814e88d0",
-        "EV-722c2a8dd6b70abd",
-        "EV-abf0990dcaceb1ce",
-        "EV-46b9ae8e68164b93",
-        "EV-9659eb492a9eea1b",
-        "EV-cf883e02c693dfea",
-        "EV-3ff2a155035d01e7",
-        "EV-644337db309a1c82",
-        "EV-7e6e0470ea99a6eb",
-        "EV-cb08f263d23e6c00",
-        "EV-09d3ce5611881ed4",
-        "EV-9536c76cee278fcb",
-        "EV-ad2c8dc4a08de64c",
-        "EV-53f7c11bfe7b50d1",
-        "EV-28145c97a7237d6d",
-        "EV-491e7b4b506ab3e3",
-        "EV-2af2957a10b3c198",
-        "EV-67d9c51e97dfbb7b",
-        "EV-56f80f42cf6a7096",
-        "EV-60c27ec9b857f5c2",
-        "EV-745adb0e9f7a75a2",
-        "EV-d50a2832bb30b287",
-        "EV-832fa2db95cfea6e",
-        "EV-f2acdcbe3b644340",
-        "EV-91d9e2c780593bbb",
-        "EV-461b38cb8f56b067",
-        "EV-61b97c0ee6ad83b3",
-        "EV-57f083a39393d841",
-        "EV-6007062e7e4a6f5e",
-        "EV-adbdaa251b42ec79",
-        "EV-43fdb17a23e13f97",
-        "EV-689538e8159887de",
-        "EV-68fcce7fde89e5d7",
-        "EV-b0145ffd99b55e66",
-        "EV-c7a2774b07554f5d",
-        "EV-e09bff5515b1896b",
-        "EV-f107a073158480a9",
-        "EV-f1418d9e3b1413b7",
-        "EV-f5dd192f6d4e04a3",
-        "EV-ff3ae595bf49ccbf",
-        "EV-3371b45e53949464",
-        "EV-9127c613a365044b",
-        "EV-c5b8faec223a4caf",
-        "EV-fd527f43b5eb5f0a",
-        "EV-2de6ff1a7aebd6e7",
-        "EV-59933d63c4051085",
-        "EV-d83bfcd73c850580",
-        "EV-1d972159120db2fc",
-        "EV-4a727d54055d6d0e",
-        "EV-dbeae330706b53ca",
-        "EV-abaf05e513f88a4f",
-        "EV-d2a00623908ca15f",
-        "EV-4f4274fb5920a8b4",
-        "EV-0aa2e53c51b2b8e5",
-        "EV-2d56dec8dfeb2b56",
-        "EV-2ca9d0a3ca53c3bf",
-        "EV-aef95763358b4ec8",
-        "EV-6266c73d470e8aef",
-        "EV-d26ad59ffe89d45a",
-        "EV-9705a8de3c2e9653",
-        "EV-68edd592c36dccd3",
-        "EV-d49da50484ba781f",
-        "EV-ad269fada2269f35",
-        "EV-978474e4af50eb35"
+        "EV-4beb890f0879aeaf",
+        "EV-4900ddf0686f4bbc"
       ],
       "viewpointIds": [],
       "classificationRefs": [
@@ -1884,168 +1757,51 @@
         "TX-use_case-enterprise_operations",
         "TX-use_case-software_development",
         "TX-technology-long_context",
-        "TX-technology-mixture_of_experts",
         "TX-industry-financial_services",
-        "TX-technology-on_device",
         "TX-use_case-cybersecurity",
         "TX-use_case-data_analysis",
         "TX-industry-retail_ecommerce",
-        "TX-technology-human_in_loop",
-        "TX-industry-telecommunications",
-        "TX-technology-multimodal",
-        "TX-technology-retrieval_augmented_generation",
-        "TX-technology-embodied_ai",
-        "TX-technology-speech_audio",
-        "TX-technology-open_weights",
-        "TX-technology-tool_use",
-        "TX-technology-model_context_protocol",
-        "TX-industry-government_public_sector",
-        "TX-technology-fine_tuning",
-        "TX-industry-education"
-      ],
-      "relatedEntityIds": [
-        "EN-3a9b395103419892",
-        "EN-7d3194f79e645c42",
-        "EN-9612b6f6884e062f"
-      ],
-      "firstSeen": "2026-03-13",
-      "lastSeen": "2026-07-17"
-    },
-    {
-      "id": "EN-bbdefa2950f49882",
-      "name": "Google",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [
-        "谷歌"
-      ],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-10c70ced68ccb31b",
-        "EV-d4d7b019ff0015df",
-        "EV-21c2e81a7c073e04",
-        "EV-54e23045d3334e65",
-        "EV-43b56d49df9a73a2",
-        "EV-6180de2e02597d9d",
-        "EV-968709fe29b77eba",
-        "EV-dbbe3fd637be213f",
-        "EV-4a162c41bb82f325",
-        "EV-9fc8a84b3d0797d1",
-        "EV-57105df2fcada2e5",
-        "EV-36a9e4e908249381",
-        "EV-ef6464cf7f764835",
-        "EV-b95539d17772a4ce",
-        "EV-df5831ff5762432d",
-        "EV-f949fd95df58d42d",
-        "EV-a9a3b5b56befe593",
-        "EV-f7e41493addd1104",
-        "EV-3398ae53a199be16",
-        "EV-04efb4eecbb8125f",
-        "EV-6359c9f6c2609a38",
-        "EV-04ee2bc4ac888358",
-        "EV-c2d784ef0a5376f8",
-        "EV-302018f2e960a8bf",
-        "EV-aa962ef7ec9a5c50",
-        "EV-db1d74f0bfcc1b04",
-        "EV-f05783f745bc7c2c",
-        "EV-52508b70ccd2cc0b",
-        "EV-f9eebe4e3b9b667c",
-        "EV-c410d77c8d531e5f",
-        "EV-268250d426c1a4a0",
-        "EV-04873bbc8be8e70d",
-        "EV-2059f42c7b2aff44",
-        "EV-9fac0983ab657689",
-        "EV-4c0e7025692ab98c",
-        "EV-b8bba030747fd3b6",
-        "EV-8daf217ff024ac4a",
-        "EV-2298304e18dbf493",
-        "EV-89b644ff05e6b93b",
-        "EV-8fad966ecb9b1d31",
-        "EV-9c4b862020202f6c",
-        "EV-d8c69ed782b73a34",
-        "EV-c0f86afbefa2e0a6",
-        "EV-abf0990dcaceb1ce",
-        "EV-c60208ea9b51f47a",
-        "EV-c6359191a071b538",
-        "EV-b860d46fee913f27",
-        "EV-09d3ce5611881ed4",
-        "EV-c033ae6f9784d674",
-        "EV-28145c97a7237d6d",
-        "EV-e6771f58d7c2a050",
-        "EV-b8b39e635aa7511f",
-        "EV-54c329f4c8e4227b",
-        "EV-7808c274ce0aa0bf",
-        "EV-c3cbf5d7f860c693",
-        "EV-009105cbcf82a638",
-        "EV-b9a009b48d4cbf85",
-        "EV-b3809ff557361cc2",
-        "EV-bc71b0ddefa209a9",
-        "EV-a85fe927f20c2595",
-        "EV-b4f3dcac8cc230d9",
-        "EV-175af8c7b8146340",
-        "EV-d2d1834222ab32d3",
-        "EV-22b8d155ce027905",
-        "EV-d6f638da9e1d3b46",
-        "EV-0ad758b04b9b5313",
-        "EV-3ed6744b43d9b8df",
-        "EV-c08837795f9e16d2",
-        "EV-4a3cb762183581cd",
-        "EV-59933d63c4051085",
-        "EV-588cf9609e44edc9",
-        "EV-7fa23cf0102a8f92",
-        "EV-c28e0d02272537d8",
-        "EV-d31057c6f6ec28ba",
-        "EV-342799d4e68e7416",
-        "EV-d53cd33e8f541a65",
-        "EV-a4f052325d0ef230",
-        "EV-ef823877347ff40f",
-        "EV-3e9a0d1be6de5096",
-        "EV-8cd7665e40729256",
-        "EV-2d56dec8dfeb2b56",
-        "EV-6266c73d470e8aef",
-        "EV-ad269fada2269f35",
-        "EV-bce258f8f915ff5f"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-industry-manufacturing",
-        "TX-technology-code_generation",
-        "TX-use_case-enterprise_operations",
-        "TX-use_case-software_development",
-        "TX-use_case-robotics_automation",
-        "TX-technology-long_context",
-        "TX-technology-mixture_of_experts",
-        "TX-industry-financial_services",
-        "TX-technology-on_device",
-        "TX-use_case-cybersecurity",
-        "TX-industry-retail_ecommerce",
-        "TX-technology-human_in_loop",
-        "TX-industry-telecommunications",
+        "TX-industry-professional_services",
         "TX-industry-technology",
-        "TX-technology-multimodal",
-        "TX-technology-retrieval_augmented_generation",
-        "TX-use_case-knowledge_search",
         "TX-technology-embodied_ai",
-        "TX-technology-speech_audio",
-        "TX-industry-media_entertainment",
-        "TX-technology-video_generation",
+        "TX-technology-open_weights",
+        "TX-technology-model_context_protocol",
+        "TX-use_case-robotics_automation",
+        "TX-technology-multimodal",
+        "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
         "TX-technology-fine_tuning",
         "TX-technology-computer_use"
       ],
       "relatedEntityIds": [
-        "EN-96eebba49dbbf422",
-        "EN-81e577740888ca6d",
-        "EN-1229af0aa3b0305e",
-        "EN-992eafe973f69075",
-        "EN-0e008e2c06144ec8"
+        "EN-c70eca6b0f88f44d",
+        "EN-52fc33ae4d101a5d",
+        "EN-7839fb10a8f14c70",
+        "EN-9f15bb7e29e191eb",
+        "EN-047bdfce48c28cfc",
+        "EN-6a50fbf0b970c03a",
+        "EN-d1ad14d4ad57d207",
+        "EN-536c4035ba0c7047",
+        "EN-3c92cc7e49924a6f",
+        "EN-77fe4e790d5bc756",
+        "EN-729324072d368379",
+        "EN-b8c236d640d6a5fb",
+        "EN-db68703d8d719bd0",
+        "EN-272d6a7a0db89710",
+        "EN-5ce177312903c604",
+        "EN-bd2bfbea5911ec7a",
+        "EN-af53dbc3e443f7a9",
+        "EN-b269456229397ef3",
+        "EN-f2272e70be63bc65",
+        "EN-148b42653f5e08b1",
+        "EN-da20c5952dba19d8",
+        "EN-fc0586e76f80f181",
+        "EN-e8b6dfd27f418787",
+        "EN-9de030d092759897",
+        "EN-7bf321fa55418fba"
       ],
-      "firstSeen": "2026-05-22",
+      "firstSeen": "2026-05-19",
       "lastSeen": "2026-07-17"
     },
     {
@@ -2063,11 +1819,35 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-financial_services"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-17",
       "lastSeen": "2026-06-17"
+    },
+    {
+      "id": "EN-b314f58f5f506fd2",
+      "name": "Poetic",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-a42e51959c627554"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-healthcare_life_sciences",
+        "TX-industry-financial_services"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-12",
+      "lastSeen": "2026-06-12"
     },
     {
       "id": "EN-a972bc1b3220493e",
@@ -2089,6 +1869,144 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-06-12",
       "lastSeen": "2026-06-12"
+    },
+    {
+      "id": "EN-96eebba49dbbf422",
+      "name": "Intel",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-4eaf3aabecae6016",
+        "EV-2dff32c1b6f813e4",
+        "EV-305ec93673f4f12e",
+        "EV-640c5ea9f4fa2780",
+        "EV-6e516b6e68def9cf",
+        "EV-a8dc5c859946f336",
+        "EV-d9cc588fb41a7e67",
+        "EV-48075ca70a5458ec",
+        "EV-7b1c734882fa1ea6",
+        "EV-b3c7c4bff17063d8",
+        "EV-2bb63a3015195f9b",
+        "EV-d4e44892226be468",
+        "EV-921c843ad32c993c",
+        "EV-2bea8d8046a9b325",
+        "EV-5f5f252c6a826599",
+        "EV-e7dcecaed5a0ee5b",
+        "EV-232ab5bcbaf6552d",
+        "EV-14a666fc27d73a80",
+        "EV-9de19f01ac4771fa",
+        "EV-39717cdbada984d7",
+        "EV-dc442b91a69fcc5a",
+        "EV-02548003157849bb",
+        "EV-c0d19b8641a7a36c",
+        "EV-ee0662b75588987e",
+        "EV-e941c32639167c23",
+        "EV-6ae3594aadfcd3d8",
+        "EV-bc4ac955cd26b969",
+        "EV-88f4ee8cd57bdf42",
+        "EV-ef7346378fcf9746",
+        "EV-86489eda802ffc19",
+        "EV-ebe9ed3158df619b",
+        "EV-3b1613cedea7dad4",
+        "EV-59f4561c5243eb98",
+        "EV-c4303801ea8c54dc",
+        "EV-8b0f056571d68269",
+        "EV-b4eb99a878be9bb2",
+        "EV-cfb7c4b4b765f53b",
+        "EV-4dd25589d834060d",
+        "EV-6617850e0b014051",
+        "EV-c81cb21337a9bb98",
+        "EV-36a9e4e908249381",
+        "EV-181b425d2a600cad",
+        "EV-2c87c8ea47cbd1b6",
+        "EV-bb9ba11acf104db1",
+        "EV-2fd730d0ad452334",
+        "EV-b95539d17772a4ce",
+        "EV-f63462e34ea40699",
+        "EV-26183a56cf9ed63c",
+        "EV-97747aee0cafd9f3",
+        "EV-4faa2bcf2e42e60c",
+        "EV-45be473baf6dfa4c",
+        "EV-c2800c1c5a3f568f",
+        "EV-025778b83c1b2ca9",
+        "EV-dce5de62b2e4b752",
+        "EV-57565fc2e7502c59",
+        "EV-e42e55d1e11a2ba2",
+        "EV-41baa43cf05d4288",
+        "EV-6af1e74358025628",
+        "EV-3847d883688587ba",
+        "EV-3a7128e2d7ff149e",
+        "EV-40390136762c64d3",
+        "EV-53f881da31630a04",
+        "EV-b84035029a63e52e",
+        "EV-0edb0a592ca1fd67",
+        "EV-578a9db1fe952d0a",
+        "EV-a70d5cf3ee6d6d64",
+        "EV-f784003febc1d9eb",
+        "EV-7e52d691a0553667",
+        "EV-1e7c76dae985100f",
+        "EV-644337db309a1c82",
+        "EV-9ae9aa86e51e64a2",
+        "EV-be19904753c9c486",
+        "EV-832fa2db95cfea6e",
+        "EV-e28e134345ea5f99",
+        "EV-4e55361d8324dd49",
+        "EV-97a8d86baa7fffc4",
+        "EV-c5b8faec223a4caf",
+        "EV-9eb3693cc65fbca9",
+        "EV-5493c61bcbe58aa2",
+        "EV-95a393fd0183b5f3",
+        "EV-0cb98302768c2e0a",
+        "EV-6ce6b9c9780b97d9",
+        "EV-dd62847548bb6ae3",
+        "EV-34929bdd016dc8d6",
+        "EV-067f57f6e6ffa6ce",
+        "EV-02b07069713d9a1c",
+        "EV-8cb2374f76202ecc",
+        "EV-946569cccbd9222f",
+        "EV-edb1ddb3a091ada4",
+        "EV-9705a8de3c2e9653"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
+        "TX-technology-code_generation",
+        "TX-use_case-customer_service",
+        "TX-industry-healthcare_life_sciences",
+        "TX-use_case-enterprise_operations",
+        "TX-technology-mixture_of_experts",
+        "TX-industry-financial_services",
+        "TX-use_case-cybersecurity",
+        "TX-use_case-data_analysis",
+        "TX-industry-retail_ecommerce",
+        "TX-technology-on_device",
+        "TX-industry-professional_services",
+        "TX-industry-technology",
+        "TX-technology-embodied_ai",
+        "TX-technology-open_weights",
+        "TX-industry-telecommunications",
+        "TX-industry-media_entertainment",
+        "TX-use_case-robotics_automation",
+        "TX-technology-multimodal",
+        "TX-technology-tool_use",
+        "TX-technology-reasoning",
+        "TX-industry-government_public_sector",
+        "TX-technology-fine_tuning",
+        "TX-technology-image_generation",
+        "TX-technology-computer_use"
+      ],
+      "relatedEntityIds": [
+        "EN-bbdefa2950f49882",
+        "EN-c70eca6b0f88f44d"
+      ],
+      "firstSeen": "2025-03-18",
+      "lastSeen": "2026-07-17"
     },
     {
       "id": "EN-eaa1c24270a0d057",
@@ -2133,53 +2051,6 @@
       "lastSeen": "2026-06-02"
     },
     {
-      "id": "EN-4584b2d5819616b3",
-      "name": "Zalos",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "candidate",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-57ab4ab35bcefe19"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-industry-financial_services"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-24"
-    },
-    {
-      "id": "EN-7706c3c94d5f9b59",
-      "name": "Hinge",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-df789745fb926bfd",
-        "EV-94b6fae7dd4e2b95"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-industry-manufacturing",
-        "TX-industry-healthcare_life_sciences",
-        "TX-industry-financial_services"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-05-22",
-      "lastSeen": "2026-07-15"
-    },
-    {
       "id": "EN-ee04228c5c6d8b08",
       "name": "Wonderful",
       "entityType": "organization_candidate",
@@ -2200,12 +2071,12 @@
         "TX-industry-financial_services"
       ],
       "relatedEntityIds": [],
-      "firstSeen": "2026-05-20",
-      "lastSeen": "2026-05-21"
+      "firstSeen": "2026-05-22",
+      "lastSeen": "2026-05-22"
     },
     {
-      "id": "EN-b0532e1af75cc4ab",
-      "name": "Rime",
+      "id": "EN-7706c3c94d5f9b59",
+      "name": "Hinge",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [],
@@ -2214,50 +2085,309 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-64fb6d791e19d10a",
-        "EV-8bbe9b602c09273d",
-        "EV-19d26c4129df1cee",
-        "EV-a1552fec696f1a43",
-        "EV-5a26f343846cb8ad",
-        "EV-9326c7450f6c318d",
-        "EV-c808bd4cb76bda9e",
-        "EV-7aaed0a2ae5cf8b6",
-        "EV-c5abea15a56d035e",
-        "EV-05be25222ebd2bc2",
-        "EV-f8a79104a533422b",
-        "EV-f074a62a26f37ae3",
-        "EV-8a0866a27909f9d9",
-        "EV-b67b71905356837d",
-        "EV-a9f1e8662a1e22cf",
-        "EV-727ba25770d1f897",
-        "EV-000f2abf549268a6",
-        "EV-5babb43f4b4d302f",
-        "EV-14401cfc102c6511",
-        "EV-568d2aeab5234e48",
-        "EV-d6f638da9e1d3b46",
-        "EV-fbc5c65cc697c83b",
-        "EV-0ad758b04b9b5313",
-        "EV-0b3d4c788a892787",
-        "EV-d31057c6f6ec28ba"
+        "EV-df789745fb926bfd",
+        "EV-a84ec4216d3ded6d"
       ],
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-technology-code_generation",
-        "TX-use_case-customer_service",
-        "TX-use_case-software_development",
-        "TX-use_case-robotics_automation",
-        "TX-technology-mixture_of_experts",
-        "TX-industry-financial_services",
-        "TX-industry-retail_ecommerce",
-        "TX-technology-multimodal",
-        "TX-industry-media_entertainment",
-        "TX-technology-video_generation",
-        "TX-technology-fine_tuning"
+        "TX-industry-manufacturing",
+        "TX-industry-healthcare_life_sciences",
+        "TX-industry-financial_services"
       ],
       "relatedEntityIds": [],
-      "firstSeen": "2026-05-20",
-      "lastSeen": "2026-07-16"
+      "firstSeen": "2026-05-22",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "EN-25690754dd14bd1b",
+      "name": "From AI",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-778ae7684a4d782e"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-financial_services"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-10",
+      "lastSeen": "2026-07-10"
+    },
+    {
+      "id": "EN-43381465c2b7d64e",
+      "name": "Anthropic's Applied AI Engineers",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-d1e2a7c6d314612c"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-healthcare_life_sciences",
+        "TX-industry-financial_services",
+        "TX-technology-guardrails_safety"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-21",
+      "lastSeen": "2026-06-21"
+    },
+    {
+      "id": "EN-c70eca6b0f88f44d",
+      "name": "Anthropic",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "Claude Code",
+        "Claude"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-e41fc65eb014893f",
+        "EV-974a6b7d0e0efef2",
+        "EV-dfddbb260b3d1c77",
+        "EV-80e54c9a390da293",
+        "EV-d4e44892226be468",
+        "EV-e7dcecaed5a0ee5b",
+        "EV-edcb66d0401cfb8f",
+        "EV-9055cb4fa2b4ee62",
+        "EV-0e84a2f49d765ce3",
+        "EV-bc4ac955cd26b969",
+        "EV-5d581d112fdbd464",
+        "EV-201b25d4f3cf696a",
+        "EV-cbc0b7a7d21a29e2",
+        "EV-1abf0d076d30ec6d",
+        "EV-ed8260ee9a7a80af",
+        "EV-47a16db069ed320e",
+        "EV-49c6291694fb6c7b",
+        "EV-d1e2a7c6d314612c",
+        "EV-e1a4bc40db4a9d8f",
+        "EV-c81cb21337a9bb98",
+        "EV-94e0afb44c320c99",
+        "EV-7f2811d2272cf4a3",
+        "EV-6415a58637893b34",
+        "EV-4515377aa6311bf1",
+        "EV-ef6464cf7f764835",
+        "EV-bb9ba11acf104db1",
+        "EV-a16be3cb9dad7cfe",
+        "EV-f949fd95df58d42d",
+        "EV-9884a0317e1e6ae7",
+        "EV-b240fb11e65b018e",
+        "EV-bad301e14b034fbd",
+        "EV-c0a65877001ed413",
+        "EV-0d5a32aca724d30e",
+        "EV-a8a8f26c5128d894",
+        "EV-51645a3b1e730105",
+        "EV-7c899d5decafc42f",
+        "EV-c2800c1c5a3f568f",
+        "EV-26cd4d692404e5c6",
+        "EV-1c2723ad61d192bd",
+        "EV-84226288807f817b",
+        "EV-8bf42c1816e772ba",
+        "EV-0347414d81e7f02e",
+        "EV-5cd7eaa56c1fbb83",
+        "EV-2bd337245c920bc8",
+        "EV-025778b83c1b2ca9",
+        "EV-969ed3078d10f0c9",
+        "EV-b920999c64aa9ef6",
+        "EV-730a2f95a698a96d",
+        "EV-d39b53ca7b84b9ca",
+        "EV-cf317dd1579a01bb",
+        "EV-fcbd97e1f30c95e3",
+        "EV-ee9a1c99fe7054d6",
+        "EV-cadcc94249dea81d",
+        "EV-cedeae902fd1263d",
+        "EV-92fbbeb840a98e97",
+        "EV-caec65aef89d3b4a",
+        "EV-70efbfcaadcdb259",
+        "EV-e130583e34ab9d4c",
+        "EV-a2476148e8f1eec4",
+        "EV-598888cce208de5c",
+        "EV-d40a4e1b7a53cabe",
+        "EV-51aed98773a9fca1",
+        "EV-9f04529a3a216060",
+        "EV-c12f0ae399078a56",
+        "EV-cc3b92fe233953cf",
+        "EV-2059f42c7b2aff44",
+        "EV-578a9db1fe952d0a",
+        "EV-8b5801b69eb1781b",
+        "EV-b93b5cc15823e9c3",
+        "EV-f784003febc1d9eb",
+        "EV-20ffa968bcbc4729",
+        "EV-77662aa9bef9efbe",
+        "EV-8f0c63ed7bb153dc",
+        "EV-9c0552732b34f278",
+        "EV-bf6f67c47c6b0d7c",
+        "EV-9ca7db66f8f10b63",
+        "EV-63fdf001c22a0ed4",
+        "EV-2f81b0d48d128f5c",
+        "EV-8aead769e84de342",
+        "EV-d2c370511e9e55fe",
+        "EV-eddb4330fed15762",
+        "EV-01212a5ad9db6a20",
+        "EV-13e06fc12cc3fb7c",
+        "EV-3b5cb867fdaba28f",
+        "EV-3b77f14fea21485e",
+        "EV-9c4b862020202f6c",
+        "EV-7fb25ff3d853c314",
+        "EV-918fc324de3117bd",
+        "EV-a4b72879f3d73ea4",
+        "EV-1ec24a430911185c",
+        "EV-860b90c017deaa59",
+        "EV-13f0b515194f3245",
+        "EV-445db243814e88d0",
+        "EV-abf0990dcaceb1ce",
+        "EV-46b9ae8e68164b93",
+        "EV-b26bead25288d19c",
+        "EV-3ff2a155035d01e7",
+        "EV-644337db309a1c82",
+        "EV-b796ba14c4eba861",
+        "EV-7e6e0470ea99a6eb",
+        "EV-cb08f263d23e6c00",
+        "EV-482df8a8ef264238",
+        "EV-9536c76cee278fcb",
+        "EV-9e04edd969c977a1",
+        "EV-2aca9a810ea65555",
+        "EV-ceb7d70f0043eb81",
+        "EV-f953555178744c22",
+        "EV-28145c97a7237d6d",
+        "EV-491e7b4b506ab3e3",
+        "EV-f0caa4082916d619",
+        "EV-574998b1638a3f4f",
+        "EV-266aff97294156f6",
+        "EV-2af2957a10b3c198",
+        "EV-534dc9add1c0cc35",
+        "EV-60c27ec9b857f5c2",
+        "EV-cec69087dc8992e0",
+        "EV-ab3586268ebfab38",
+        "EV-832fa2db95cfea6e",
+        "EV-f2acdcbe3b644340",
+        "EV-2cb9dbed2b2b6077",
+        "EV-461b38cb8f56b067",
+        "EV-57f083a39393d841",
+        "EV-a695ff8c1cff8c64",
+        "EV-adbdaa251b42ec79",
+        "EV-689538e8159887de",
+        "EV-6af31d42885e0361",
+        "EV-68fcce7fde89e5d7",
+        "EV-7133e378762edda5",
+        "EV-c7a2774b07554f5d",
+        "EV-e09bff5515b1896b",
+        "EV-f1418d9e3b1413b7",
+        "EV-f5dd192f6d4e04a3",
+        "EV-2eabd03665cbdef7",
+        "EV-9127c613a365044b",
+        "EV-c5b8faec223a4caf",
+        "EV-f6611268f119a172",
+        "EV-ad1444d8653b37ae",
+        "EV-d83bfcd73c850580",
+        "EV-dbeae330706b53ca",
+        "EV-abaf05e513f88a4f",
+        "EV-631197767a45d34c",
+        "EV-ce291577f61b8543",
+        "EV-773ffcc6e1df56fa",
+        "EV-2d56dec8dfeb2b56",
+        "EV-62df953d81def866",
+        "EV-0c541092e3ba6dac",
+        "EV-9705a8de3c2e9653",
+        "EV-ed3baeeb5137137f",
+        "EV-68edd592c36dccd3",
+        "EV-d49da50484ba781f",
+        "EV-ad269fada2269f35",
+        "EV-710b145230faa692",
+        "EV-4900ddf0686f4bbc",
+        "EV-5e4db66a00cb2158",
+        "EV-77ddb45e31018552"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
+        "TX-technology-code_generation",
+        "TX-industry-healthcare_life_sciences",
+        "TX-use_case-enterprise_operations",
+        "TX-use_case-software_development",
+        "TX-technology-long_context",
+        "TX-technology-mixture_of_experts",
+        "TX-industry-financial_services",
+        "TX-use_case-cybersecurity",
+        "TX-use_case-data_analysis",
+        "TX-industry-retail_ecommerce",
+        "TX-technology-on_device",
+        "TX-technology-embodied_ai",
+        "TX-technology-open_weights",
+        "TX-technology-model_context_protocol",
+        "TX-technology-guardrails_safety",
+        "TX-technology-tool_use",
+        "TX-industry-government_public_sector",
+        "TX-technology-fine_tuning",
+        "TX-industry-education",
+        "TX-technology-distillation"
+      ],
+      "relatedEntityIds": [
+        "EN-cb4754c48f8023d0",
+        "EN-3a9b395103419892",
+        "EN-729324072d368379",
+        "EN-7d3194f79e645c42",
+        "EN-9612b6f6884e062f",
+        "EN-ef11a801c5bd3673",
+        "EN-9418d9e3d1e469cf",
+        "EN-dca4b9c41c4f7a0a",
+        "EN-2ec3a04623962df8",
+        "EN-40bad8003c5ee358",
+        "EN-85a7b756f3a700d0",
+        "EN-fab30471ea65d627",
+        "EN-b8c236d640d6a5fb",
+        "EN-db68703d8d719bd0",
+        "EN-9f15bb7e29e191eb",
+        "EN-3a13916345b60fad",
+        "EN-77fe4e790d5bc756",
+        "EN-5a4c2be958c0af72",
+        "EN-a18162bf7228289d",
+        "EN-8218ed4e007b0ad1",
+        "EN-bb5b6487f881bbb1",
+        "EN-2c063f604e634100",
+        "EN-4f237537da9719b4",
+        "EN-774251f8d6e46d3d",
+        "EN-d0a0acb9a5ef0560",
+        "EN-5fc6493a57c5f14e",
+        "EN-ad2cec837f9cb98f",
+        "EN-29eb5745fdfcb027",
+        "EN-7ec0224e483d913b",
+        "EN-e61ac98ebb45d0db",
+        "EN-e4ffb7bd879b89da",
+        "EN-1e4fdc17666edc33",
+        "EN-c8185a1a8a6595ad",
+        "EN-d65f09457cc098a8",
+        "EN-ea4ea767088c4a22",
+        "EN-c23eb5fae3cdd763",
+        "EN-3153ebda601cdb79",
+        "EN-b59c577ed73536c6",
+        "EN-4db5fd308d379cab",
+        "EN-96eebba49dbbf422",
+        "EN-d8494bb34d6ddc43",
+        "EN-540dfc8c5e1b1136",
+        "EN-9ab4135a1cdb0a8c",
+        "EN-fe7f2cc6a2c87e0b",
+        "EN-16f9e91ad20e6467",
+        "EN-f1360a6b087edd47"
+      ],
+      "firstSeen": "2026-05-14",
+      "lastSeen": "2026-07-17"
     },
     {
       "id": "EN-5e757c7fc575c41e",
@@ -2281,8 +2411,29 @@
       "lastSeen": "2026-06-15"
     },
     {
-      "id": "EN-8147e6fed86d42c1",
-      "name": "OPPO",
+      "id": "EN-bc8a00f7f6fb535f",
+      "name": "Travelers",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-83b2e8f7fe679bc3"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-financial_services"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-06",
+      "lastSeen": "2026-06-07"
+    },
+    {
+      "id": "EN-4d748ebd71af03a7",
+      "name": "Accenture",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [],
@@ -2291,28 +2442,234 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-94e8711cecfe6149",
-        "EV-02686922dd82c4aa",
-        "EV-4faa2bcf2e42e60c",
-        "EV-8a9b12665a3e40a0",
-        "EV-8f8f477441a23b7c",
-        "EV-cfa8c754627747a1",
-        "EV-d31057c6f6ec28ba"
+        "EV-640c5ea9f4fa2780",
+        "EV-bbab0dff2f55a4f6",
+        "EV-49c6291694fb6c7b",
+        "EV-eb2b4ee2c8cb0daa",
+        "EV-01df8e489a34893b",
+        "EV-2c87c8ea47cbd1b6",
+        "EV-b95539d17772a4ce"
       ],
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-industry-manufacturing",
-        "TX-use_case-robotics_automation",
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-financial_services",
-        "TX-technology-on_device",
-        "TX-industry-retail_ecommerce",
-        "TX-technology-embodied_ai",
-        "TX-technology-fine_tuning"
+        "TX-technology-reasoning"
       ],
       "relatedEntityIds": [],
-      "firstSeen": "2026-05-23",
-      "lastSeen": "2026-07-16"
+      "firstSeen": "2026-05-06",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "EN-c3e4cc183d345262",
+      "name": "AlphaSense Announce Strategic Investment and",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-2c87c8ea47cbd1b6"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-healthcare_life_sciences",
+        "TX-industry-financial_services"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-09",
+      "lastSeen": "2026-07-09"
+    },
+    {
+      "id": "EN-9b6ea48b511ffd60",
+      "name": "汇丰银行",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-97747aee0cafd9f3"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-financial_services"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-18",
+      "lastSeen": "2026-06-19"
+    },
+    {
+      "id": "EN-bbdefa2950f49882",
+      "name": "Google",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "谷歌"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-e41fc65eb014893f",
+        "EV-dfddbb260b3d1c77",
+        "EV-2bb63a3015195f9b",
+        "EV-43b56d49df9a73a2",
+        "EV-0e84a2f49d765ce3",
+        "EV-dbbe3fd637be213f",
+        "EV-4a162c41bb82f325",
+        "EV-cf76f090a1a20a36",
+        "EV-36a9e4e908249381",
+        "EV-ef6464cf7f764835",
+        "EV-b95539d17772a4ce",
+        "EV-d1a3f5c8045e548d",
+        "EV-f949fd95df58d42d",
+        "EV-97747aee0cafd9f3",
+        "EV-c0a65877001ed413",
+        "EV-04efb4eecbb8125f",
+        "EV-6359c9f6c2609a38",
+        "EV-c2d784ef0a5376f8",
+        "EV-967239f907803753",
+        "EV-ac8f8581cd1ca75d",
+        "EV-f05783f745bc7c2c",
+        "EV-d12aa40eff40c97e",
+        "EV-96c8ce4ee89adb84",
+        "EV-caec65aef89d3b4a",
+        "EV-cabc88e1d09dec80",
+        "EV-cc3b92fe233953cf",
+        "EV-0edb0a592ca1fd67",
+        "EV-2059f42c7b2aff44",
+        "EV-77662aa9bef9efbe",
+        "EV-7e52d691a0553667",
+        "EV-b8bba030747fd3b6",
+        "EV-8aead769e84de342",
+        "EV-eddb4330fed15762",
+        "EV-2298304e18dbf493",
+        "EV-89b644ff05e6b93b",
+        "EV-9c4b862020202f6c",
+        "EV-d8c69ed782b73a34",
+        "EV-5012364af7480121",
+        "EV-abf0990dcaceb1ce",
+        "EV-d5cc9a50a9b88d2b",
+        "EV-b860d46fee913f27",
+        "EV-f953555178744c22",
+        "EV-28145c97a7237d6d",
+        "EV-c108e7cc2df7faf4",
+        "EV-916bcaee6266e0d0",
+        "EV-54c329f4c8e4227b",
+        "EV-dfba03031e5726ad",
+        "EV-009105cbcf82a638",
+        "EV-99e5df844a1bd670",
+        "EV-1b03e5dff76a50a1",
+        "EV-51dfd0d541380500",
+        "EV-ab3586268ebfab38",
+        "EV-e4b5fe493066804b",
+        "EV-8ca7da5081a2e2fc",
+        "EV-8eed6489ab514823",
+        "EV-22b8d155ce027905",
+        "EV-3ef3e18df61a00d8",
+        "EV-4bb5b24400e49ea4",
+        "EV-97a8d86baa7fffc4",
+        "EV-0ad758b04b9b5313",
+        "EV-c08837795f9e16d2",
+        "EV-9bc41f08cb0b4f39",
+        "EV-5a1422a9929c582e",
+        "EV-bff418b2959f58fb",
+        "EV-e878e56967902718",
+        "EV-5493c61bcbe58aa2",
+        "EV-cac9d9f31ef675ce",
+        "EV-dab4d3f2059e8880",
+        "EV-0d1980baa83e1e6c",
+        "EV-d53cd33e8f541a65",
+        "EV-a4f052325d0ef230",
+        "EV-ef823877347ff40f",
+        "EV-3e9a0d1be6de5096",
+        "EV-8cd7665e40729256",
+        "EV-2d56dec8dfeb2b56",
+        "EV-ad269fada2269f35",
+        "EV-bce258f8f915ff5f",
+        "EV-1df9b606627460f7",
+        "EV-39460c022e56badd"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-code_generation",
+        "TX-use_case-enterprise_operations",
+        "TX-use_case-software_development",
+        "TX-technology-mixture_of_experts",
+        "TX-industry-financial_services",
+        "TX-use_case-cybersecurity",
+        "TX-industry-retail_ecommerce",
+        "TX-technology-on_device",
+        "TX-technology-retrieval_augmented_generation",
+        "TX-technology-embodied_ai",
+        "TX-industry-media_entertainment",
+        "TX-technology-multimodal",
+        "TX-technology-video_generation",
+        "TX-technology-tool_use",
+        "TX-technology-reasoning",
+        "TX-technology-fine_tuning",
+        "TX-use_case-content_creation",
+        "TX-technology-computer_use",
+        "TX-technology-speech_audio"
+      ],
+      "relatedEntityIds": [
+        "EN-96eebba49dbbf422",
+        "EN-81e577740888ca6d",
+        "EN-1229af0aa3b0305e",
+        "EN-992eafe973f69075",
+        "EN-40f98159922ab514",
+        "EN-834ab0b6e4492d23",
+        "EN-ffc6caa049c23d48",
+        "EN-242e21e3dc6869a9",
+        "EN-151013fb8438c046",
+        "EN-77fe4e790d5bc756",
+        "EN-8d323d8bba783aa3",
+        "EN-9ff1a58a589bc318",
+        "EN-01f1074bb52ff605",
+        "EN-0e008e2c06144ec8",
+        "EN-f2c032b19edb7900",
+        "EN-d4c56709df757c56",
+        "EN-6470c8584a9d35d3",
+        "EN-b5c336c0dd1ff29c",
+        "EN-eb0cc8fb584389db",
+        "EN-d56aa2f9908f566a",
+        "EN-4baef0e41cbd7ae2",
+        "EN-e3db3da2b7dc6057"
+      ],
+      "firstSeen": "2026-05-22",
+      "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "EN-06b5472c16feae4c",
+      "name": "TCS",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-bad301e14b034fbd"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-healthcare_life_sciences",
+        "TX-industry-financial_services",
+        "TX-industry-government_public_sector"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-13",
+      "lastSeen": "2026-06-13"
     },
     {
       "id": "EN-4e721fae5963494d",
@@ -2334,27 +2691,91 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-06-16",
       "lastSeen": "2026-06-16"
+    },
+    {
+      "id": "EN-b5251b35f15bedc4",
+      "name": "Moonshot AI",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "月之暗面"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-fd21441fb6e143c3",
+        "EV-0d5a32aca724d30e",
+        "EV-1b03e5dff76a50a1",
+        "EV-5caf7f83664b1a2c",
+        "EV-2cb9dbed2b2b6077",
+        "EV-6af31d42885e0361",
+        "EV-e878e56967902718",
+        "EV-e9a86c47da229331",
+        "EV-773ffcc6e1df56fa",
+        "EV-74b965de27bc0515"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-vision_language",
+        "TX-technology-code_generation",
+        "TX-use_case-software_development",
+        "TX-technology-long_context",
+        "TX-industry-financial_services",
+        "TX-technology-retrieval_augmented_generation",
+        "TX-technology-multimodal"
+      ],
+      "relatedEntityIds": [
+        "EN-2cfed21b7a971267",
+        "EN-62ce3c1a5a893a2c",
+        "EN-23bc2a854bc0cfb0",
+        "EN-b57c95289680078c"
+      ],
+      "firstSeen": "2026-05-19",
+      "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "EN-a4eee620f5a081bd",
+      "name": "运通工程师信用卡",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-5caf7f83664b1a2c"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-financial_services"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-16",
+      "lastSeen": "2026-06-16"
     }
   ],
   "fde": [
     {
-      "id": "FDE-4269000419db8e31",
-      "eventId": "EV-a9f1e8662a1e22cf",
-      "dataDate": "2026-07-10",
-      "date": "2026-07-10",
-      "title": "从人工智能试点到自主贷款：了解L&T Finance的企业人工智能之旅- Express Computer",
+      "id": "FDE-560b710961006374",
+      "eventId": "EV-2c87c8ea47cbd1b6",
+      "dataDate": "2026-07-09",
+      "date": "2026-07-09",
+      "title": "埃森哲与AlphaSense宣布战略投资与合作伙伴关系，为企业市场情报带来智能体工作流",
       "stage": "announced",
       "stageLabel": "已公布",
-      "customer": "Rime",
-      "vendor": "未披露",
+      "customer": "Accenture",
+      "vendor": "AlphaSense Announce Strategic Investment and",
       "industry": "未披露",
-      "useCase": "to autonomous lending: Inside L&T Finance's enterprise AI journey - Express Computer",
+      "useCase": "Bring Agentic Workflows for Market Intelligence to Enterprises",
       "reportedNeed": "未披露",
       "deliveryComponents": [],
       "outcomes": [],
       "metrics": [],
       "undisclosedFields": [
-        "vendor",
         "industry",
         "workflow_before",
         "workflow_after",
@@ -2364,6 +2785,7 @@
         "systems_integrated",
         "data_requirements",
         "governance_controls",
+        "reported_delivery_components",
         "reported_outcomes"
       ],
       "tags": [
@@ -2374,29 +2796,29 @@
           "name": "智能体"
         }
       ],
-      "sourceUrl": "https://expresscomputer.in/amp/exclusives/from-ai-pilots-to-autonomous-lending-inside-lt-finances-enterprise-ai-journey/136627",
+      "sourceUrl": "https://markets.ft.com/data/announce/detail?dockey=600-202606030759BIZWIRE_USPRX____20260603_BW374687-1",
       "entityIds": [
-        "EN-b0532e1af75cc4ab"
+        "EN-4d748ebd71af03a7",
+        "EN-c3e4cc183d345262",
+        "EN-96eebba49dbbf422"
       ]
     },
     {
-      "id": "FDE-51d5310574bc443a",
-      "eventId": "EV-a9a3b5b56befe593",
-      "dataDate": "2026-06-19",
-      "date": "2026-06-18",
-      "title": "汇丰银行与Google Cloud扩大AI银行合作",
+      "id": "FDE-e1b2683e8d017358",
+      "eventId": "EV-86247a326e79bb88",
+      "dataDate": "2026-06-28",
+      "date": "2026-06-28",
+      "title": "斯洛文尼亚保险高管表示：没有飞行员，就没有副驾驶",
       "stage": "announced",
       "stageLabel": "已公布",
       "customer": "未披露",
       "vendor": "未披露",
       "industry": "未披露",
-      "useCase": "汇丰银行与Google Cloud扩大AI银行合作",
+      "useCase": "says Slovenian insurance executive",
       "reportedNeed": "未披露",
       "deliveryComponents": [],
       "outcomes": [],
-      "metrics": [
-        "$100 million"
-      ],
+      "metrics": [],
       "undisclosedFields": [
         "customer",
         "vendor",
@@ -2409,12 +2831,144 @@
         "systems_integrated",
         "data_requirements",
         "governance_controls",
+        "reported_delivery_components",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://news.microsoft.com/source/emea/features/zavarovalnica-triglav-copilot-adoption-insurance",
+      "entityIds": []
+    },
+    {
+      "id": "FDE-0ee0fe3baa3f1364",
+      "eventId": "EV-d1e2a7c6d314612c",
+      "dataDate": "2026-06-21",
+      "date": "2026-06-21",
+      "title": "Anthropic 应用 AI 工程师：Claude 企业战略背后的前沿部署职能",
+      "stage": "completed",
+      "stageLabel": "已完成",
+      "customer": "Anthropic",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "Function Behind Claude's Enterprise Strategy | Blog | Perspective AI",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "Anthropic calls its forward-deployed engineering function \"Applied AI Engineer\" — same job as a Palantir or OpenAI FDE, different label that reflects Anthropic's safety-first, research-led culture. The role sits at the center of Anthropic's enterprise push for Claude, and a reported $1.5 billion joint venture announced in 2025 underwrites the customer-deployment muscle that Applied AI Engineers bring into regulated industries: financial services, healthcare, legal, and government. Day-to-day, an Applied AI Engineer embeds with customers for multi-week sprints, designs prompts and evals, ships agents into production, and runs the customer-discovery interviews that surface what enterprise buyers actually need. Total compensation lands in a $350K–$550K band — competitive with research engineering, deliberately so. The hiring bar reads like a hybrid: senior software engineer plus product manager plus AI safety researcher. Other AI labs are copying the playbook, but Anthropic's distinctive twist is treating customer interviews as a research input on par with internal evals — a posture that pairs naturally with conversational research tools like Perspective AI.",
+        "Applied AI Engineer vs Forward Deployed Engineer: Same Role, Different Label #",
+        "Applied AI Engineer and Forward Deployed Engineer (FDE) describe the same function — a customer-embedded technical role that ships AI applications inside enterprise accounts — but Anthropic chose a different label that reflects its research-led culture. Palantir popularized the FDE title in the 2010s, OpenAI adopted it, and the rest of the AI vendor market is following. The broader picture sits in the rise of the forward-deployed engineer in 2026 .",
+        "Anthropic's choice is more than branding. The company is deliberate about not positioning customer-facing engineers as \"field\" or \"deployed\" — phrases that imply distance from R&D. Calling them Applied frames the role as the production end of a single research-to-deployment continuum, downstream of the company's Responsible Scaling Policy framing that treats deployment as a first-class research question."
+      ],
+      "outcomes": [],
+      "metrics": [
+        "$1.5 billion",
+        "$350",
+        "$550"
+      ],
+      "undisclosedFields": [
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "guardrails_safety",
+          "name": "安全护栏"
+        }
+      ],
+      "sourceUrl": "https://getperspective.ai/blog/anthropic-applied-ai-engineers-forward-deployed-claude-enterprise",
+      "entityIds": [
+        "EN-43381465c2b7d64e",
+        "EN-c70eca6b0f88f44d",
+        "EN-7d3194f79e645c42"
+      ]
+    },
+    {
+      "id": "FDE-ae4c44cd0de9d48a",
+      "eventId": "EV-97747aee0cafd9f3",
+      "dataDate": "2026-06-19",
+      "date": "2026-06-18",
+      "title": "汇丰银行与Google Cloud扩大AI银行合作",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Google",
+      "vendor": "汇丰银行",
+      "industry": "未披露",
+      "useCase": "汇丰银行与Google Cloud扩大AI银行合作",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [],
+      "outcomes": [],
+      "metrics": [
+        "$100 million"
+      ],
+      "undisclosedFields": [
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "data_requirements",
+        "governance_controls",
+        "reported_delivery_components",
         "reported_outcomes"
       ],
       "tags": [],
       "sourceUrl": "https://artificialintelligence-news.com/news/hsbc-google-cloud-ai-partnership",
       "entityIds": [
-        "EN-bbdefa2950f49882"
+        "EN-9b6ea48b511ffd60",
+        "EN-bbdefa2950f49882",
+        "EN-96eebba49dbbf422"
+      ]
+    },
+    {
+      "id": "FDE-d0a39c8df546833a",
+      "eventId": "EV-83b2e8f7fe679bc3",
+      "dataDate": "2026-06-06",
+      "date": "2026-06-07",
+      "title": "Travelers 借助 OpenAI Realtime API 在全国部署 AI 语音理赔助手",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "OpenAI",
+      "vendor": "Travelers",
+      "industry": "未披露",
+      "useCase": "AI-powered voice claims assistant nationwide with OpenAI Realtime API | keepingupwith.ai",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "Travelers Insurance deployed a fully autonomous voice system powered by OpenAI’s Realtime API across all US states as of June 2, 2026, according to the OpenAI Blog. The AI Claim Assistant guides customers through first notice of loss for auto property damage claims using natural conversation, eliminating wait times and human involvement for routine filings. Between 85–90% of customers now complete their claim submission entirely through the AI system after the nationwide rollout, which occurred within two months of launching in eight pilot states.",
+        "The deployment addresses a critical operational constraint: Travelers processed more than 1.5 million claims and paid over $23 billion in losses last year, with catastrophe events alone capable of generating 100,000+ claims within days. By connecting OpenAI’s frontier models to its internal claims infrastructure and orchestration systems, Travelers enables 24/7 support that does not create bottlenecks during surge events, while claim professionals redirect their effort toward complex cases requiring human judgment.",
+        "Travelers SVP of Auto and Property Claims Patrick Gee credited OpenAI’s selection to the model’s ability to “perform in that environment”—a reference to the demanding requirements of low-latency, conversational voice interaction at enterprise scale. The Realtime API’s capacity to maintain natural dialogue while integrating with backend systems, retrieving policy details, and submitting structured claims data differentiated it from competing approaches."
+      ],
+      "outcomes": [],
+      "metrics": [
+        "90%",
+        "1.5 million",
+        "$23 billion"
+      ],
+      "undisclosedFields": [
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://keepingupwith.ai/articles/travelers-deploys-ai-powered-voice-claims-assistant-nationwide-with-openai-realt",
+      "entityIds": [
+        "EN-bc8a00f7f6fb535f",
+        "EN-7d3194f79e645c42"
       ]
     }
   ],

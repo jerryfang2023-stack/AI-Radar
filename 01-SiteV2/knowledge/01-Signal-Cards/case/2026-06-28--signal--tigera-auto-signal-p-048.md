@@ -2,7 +2,7 @@
 id: SIG-20260628-A07
 type: signal_card
 signal_type: case
-title: "What's new in Calico: Spring 2026 Release"
+title: "Calico 2026年春季版新功能"
 date: 2026-06-28
 status: published
 source_title: "What&#8217;s new in Calico: Spring 2026 Release"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Tigera"
 
 frontend:
-  displayTitle: "What's new in Calico: Spring 2026 Release"
+  displayTitle: "Calico 2026年春季版新功能"
   sourceLinks:
     - "https://www.tigera.io/blog/whats-new-in-calico-spring-2026-release/"
 ---
 
-# What's new in Calico: Spring 2026 Release
+# Calico 2026年春季版新功能
 
 ## 新闻事实
 

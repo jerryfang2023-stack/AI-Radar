@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-019
 title: "谷歌 Voice 推出个人付费套餐：每月 10 美元起，Gemini 纪要功能首次下放"
 title_zh: "谷歌 Voice 推出个人付费套餐：每月 10 美元起，Gemini 纪要功能首次下放"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/975/573.htm"
 canonical_url: "https://ithome.com/0/975/573.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-12T09:55:28.237Z
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 谷歌 Voice 推出个人付费套餐：每月 10 美元起，Gemini 纪要功能首次下放

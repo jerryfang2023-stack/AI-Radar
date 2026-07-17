@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"Even though per-token prices hav
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "代币账单到期：行业内部争相管理……"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # The token bill comes due: Inside the industry scramble to manage ...

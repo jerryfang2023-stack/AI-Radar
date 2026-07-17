@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-006
 title: "Anthropic 与三星洽谈定制芯片合作"
 title_zh: "Anthropic 与三星洽谈定制芯片合作"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://techcrunch.com/2026/07/02/anthropic-is-discussing-a-new-custom-chip-with-samsung"
 canonical_url: "https://techcrunch.com/2026/07/02/anthropic-is-discussing-a-new-custom-chip-with-samsung"
 source_name: "TechCrunch：AI（RSS）"
@@ -78,6 +78,7 @@ fact_extraction_completed_at: 2026-07-03T01:59:31.059Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Anthropic 与三星洽谈定制芯片合作

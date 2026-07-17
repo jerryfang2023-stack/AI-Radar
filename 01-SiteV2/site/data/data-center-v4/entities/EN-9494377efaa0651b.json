@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-17T18:20:10.588Z",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 727,
-    "quarantinedEventCount": 50
+    "eventCount": 818,
+    "quarantinedEventCount": 58
   },
   "entity": {
     "id": "EN-9494377efaa0651b",
@@ -21,19 +21,21 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-cbb1cc90380d57a7",
       "EV-3601a1d7d507cd18"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-07",
-    "lastSeen": "2026-06-08",
+    "lastSeen": "2026-06-23",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-cbb1cc90380d57a7",
         "EV-3601a1d7d507cd18"
       ],
       "hardware": [],
@@ -41,6 +43,22 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-cbb1cc90380d57a7",
+        "dataDate": "2026-06-23",
+        "date": "2026-06-22",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "极摩客 EVO-X3 迷你主机发布：锐龙 AI Max+ 395、预装 GMKtec Claw 龙虾 AI，首发 21699 元起",
+        "displayTags": [],
+        "entityIds": [
+          "EN-9494377efaa0651b",
+          "EN-790b8bc0b57d7a37"
+        ]
+      },
       {
         "id": "EV-3601a1d7d507cd18",
         "dataDate": "2026-06-08",
@@ -53,7 +71,8 @@
         "title": "极摩客 EVO-X3 迷你主机发布在即，高端版本将搭载 192GB 内存",
         "displayTags": [],
         "entityIds": [
-          "EN-9494377efaa0651b"
+          "EN-9494377efaa0651b",
+          "EN-790b8bc0b57d7a37"
         ]
       }
     ],

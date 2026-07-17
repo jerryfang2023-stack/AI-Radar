@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-054
 title: "微软：Windows 团队正全面利用 AI 挖掘漏洞，后续 Patch Tuesday 安全更新将包含更多修复补丁"
 title_zh: "微软：Windows 团队正全面利用 AI 挖掘漏洞，后续 Patch Tuesday 安全更新将包含更多修复补丁"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/976/101.htm"
 canonical_url: "https://ithome.com/0/976/101.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-13T10:23:57.009Z
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 微软：Windows 团队正全面利用 AI 挖掘漏洞，后续 Patch Tuesday 安全更新将包含更多修复补丁

@@ -1,0 +1,473 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 818,
+    "quarantinedEventCount": 58
+  },
+  "entity": {
+    "id": "EN-af3ceabbe048a291",
+    "name": "Siri AI",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-3c51bcb5e99d2b68",
+      "EV-a736c6c64d106475",
+      "EV-1ae8027c085679e9",
+      "EV-8361a47c70ecd243",
+      "EV-d40a1a873015ac98"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-technology-on_device"
+    ],
+    "relatedEntityIds": [
+      "EN-3a7bd3e2360a3d29"
+    ],
+    "firstSeen": "2026-06-09",
+    "lastSeen": "2026-06-13",
+    "relationIds": [
+      "REL2-04014818e378c5b2",
+      "REL2-13cc501e416c5363",
+      "REL2-1f4fedf249db5eac",
+      "REL2-f5b7bf87ac9c1791"
+    ],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-3c51bcb5e99d2b68",
+        "EV-a736c6c64d106475",
+        "EV-1ae8027c085679e9",
+        "EV-8361a47c70ecd243",
+        "EV-d40a1a873015ac98",
+        "EV-bff418b2959f58fb",
+        "EV-da062d02015f99fb",
+        "EV-9f9bc7ffe6228281"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-3c51bcb5e99d2b68",
+        "dataDate": "2026-06-13",
+        "date": "2026-06-13",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "IT早报0613：SpaceX上市、华为鸿蒙7发布、苹果Siri AI限制等",
+        "displayTags": [],
+        "entityIds": [
+          "EN-e78bdebae031095b",
+          "EN-3a7bd3e2360a3d29",
+          "EN-af3ceabbe048a291"
+        ]
+      },
+      {
+        "id": "EV-a736c6c64d106475",
+        "dataDate": "2026-06-13",
+        "date": "2026-06-12",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "苹果 Siri AI 仅限较新设备：iPhone 15 Pro 起，端侧模型门槛更高",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "on_device",
+            "name": "端侧"
+          },
+          {
+            "dimensionId": "deployment_model",
+            "id": "edge_device",
+            "dimensionName": "部署形态",
+            "name": "边缘与端侧"
+          }
+        ],
+        "entityIds": [
+          "EN-3a7bd3e2360a3d29",
+          "EN-af3ceabbe048a291"
+        ]
+      },
+      {
+        "id": "EV-1ae8027c085679e9",
+        "dataDate": "2026-06-09",
+        "date": "2026-06-09",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "苹果 iOS 27 版 Siri AI 推出系统原生自动校正功能",
+        "displayTags": [],
+        "entityIds": [
+          "EN-3a7bd3e2360a3d29",
+          "EN-af3ceabbe048a291"
+        ]
+      },
+      {
+        "id": "EV-8361a47c70ecd243",
+        "dataDate": "2026-06-09",
+        "date": "2026-06-09",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Apple 推出 Siri AI：由 Apple Intelligence 驱动的更强大、更个性化的个人助理",
+        "displayTags": [],
+        "entityIds": [
+          "EN-3a7bd3e2360a3d29",
+          "EN-af3ceabbe048a291"
+        ]
+      },
+      {
+        "id": "EV-d40a1a873015ac98",
+        "dataDate": "2026-06-09",
+        "date": "2026-06-09",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "苹果推出 Siri AI：独立 App，为灵动岛优化",
+        "displayTags": [],
+        "entityIds": [
+          "EN-3a7bd3e2360a3d29",
+          "EN-50537dab76505dfc",
+          "EN-af3ceabbe048a291"
+        ]
+      },
+      {
+        "id": "EV-bff418b2959f58fb",
+        "dataDate": "2026-06-09",
+        "date": "2026-06-09",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "WWDC 2026：Siri AI、iOS 27、Apple Intelligence 等发布汇总",
+        "displayTags": [],
+        "entityIds": [
+          "EN-3a7bd3e2360a3d29",
+          "EN-bbdefa2950f49882",
+          "EN-dfabe4215e8c07cb"
+        ]
+      },
+      {
+        "id": "EV-da062d02015f99fb",
+        "dataDate": "2026-06-09",
+        "date": "2026-06-09",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Apple 发布 watchOS 27，整合 Siri AI 功能",
+        "displayTags": [],
+        "entityIds": [
+          "EN-3a7bd3e2360a3d29"
+        ]
+      },
+      {
+        "id": "EV-9f9bc7ffe6228281",
+        "dataDate": "2026-06-09",
+        "date": "2026-06-09",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Apple 发布 visionOS 27，集成 Siri AI",
+        "displayTags": [],
+        "entityIds": [
+          "EN-3a7bd3e2360a3d29"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [
+    {
+      "id": "EN-3a7bd3e2360a3d29",
+      "name": "Apple",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-f282ab8740ff0096",
+        "EV-8a8e894a84768ea5",
+        "EV-afcd5426f5c01dc7",
+        "EV-f5a50f1fed72fec3",
+        "EV-e857f9d1c1478c70",
+        "EV-fd21441fb6e143c3",
+        "EV-8a9b12665a3e40a0",
+        "EV-70cbf25f7ec2cc3a",
+        "EV-8b9e4428074bde60",
+        "EV-967239f907803753",
+        "EV-113899096a32165a",
+        "EV-cabc88e1d09dec80",
+        "EV-cc3b92fe233953cf",
+        "EV-8aead769e84de342",
+        "EV-abf0990dcaceb1ce",
+        "EV-89930fa8d1db98eb",
+        "EV-60c27ec9b857f5c2",
+        "EV-eeb687002cac5f4e",
+        "EV-99e5df844a1bd670",
+        "EV-0b2bfd57923cedd3",
+        "EV-3c51bcb5e99d2b68",
+        "EV-a736c6c64d106475",
+        "EV-dad8c827d14f2799",
+        "EV-4e6dc3ec2b3f0bd6",
+        "EV-634ce5b42f6d32f6",
+        "EV-85373b8ec9148127",
+        "EV-1ae8027c085679e9",
+        "EV-21c749570133c786",
+        "EV-52e1ac21c25a0a09",
+        "EV-591542ccc2de5be8",
+        "EV-5a1422a9929c582e",
+        "EV-8361a47c70ecd243",
+        "EV-9f9bc7ffe6228281",
+        "EV-a5ba3797b38df125",
+        "EV-a9fe726c4ea2a17b",
+        "EV-bff418b2959f58fb",
+        "EV-c5b8faec223a4caf",
+        "EV-d40a1a873015ac98",
+        "EV-da062d02015f99fb",
+        "EV-f6611268f119a172",
+        "EV-0d1980baa83e1e6c",
+        "EV-ef823877347ff40f",
+        "EV-5cd10de5c12916f0",
+        "EV-5613946bdd578a26",
+        "EV-dd902b603e2e3dbc",
+        "EV-da6678e4e865e00e",
+        "EV-8cb2374f76202ecc",
+        "EV-946569cccbd9222f",
+        "EV-b4203b10d6592bf2",
+        "EV-5eb23cdd9c14c6ea",
+        "EV-7d4b4b8d4e3599d4",
+        "EV-10e841ab47d2b1f1",
+        "EV-f2d29ca7b05c3dd9",
+        "EV-ea2b6ce4acd46366",
+        "EV-2821d0cef61b3c6a",
+        "EV-6f7c5f0abad3d4da",
+        "EV-8f497488d129fee5",
+        "EV-a8f1204b54ae6475"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
+        "TX-technology-long_context",
+        "TX-use_case-cybersecurity",
+        "TX-industry-retail_ecommerce",
+        "TX-technology-on_device",
+        "TX-industry-media_entertainment",
+        "TX-technology-multimodal",
+        "TX-technology-tool_use",
+        "TX-technology-fine_tuning",
+        "TX-use_case-content_creation",
+        "TX-technology-quantization",
+        "TX-technology-speech_audio"
+      ],
+      "relatedEntityIds": [
+        "EN-af3ceabbe048a291",
+        "EN-41dcc2d4951f337b",
+        "EN-dfabe4215e8c07cb",
+        "EN-729324072d368379"
+      ],
+      "firstSeen": "2026-06-04",
+      "lastSeen": "2026-07-17"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-04014818e378c5b2",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-3a7bd3e2360a3d29",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-af3ceabbe048a291",
+      "object_type": "entity",
+      "event_id": "EV-8361a47c70ecd243",
+      "claim_refs": [
+        "CL-f5744b9e64c13032",
+        "CL-d8037f5ff6af4fc4",
+        "CL-54bee8d46c674c50",
+        "CL-d4b9eae28519bdf2"
+      ],
+      "source_refs": [
+        "SA-344d869517eac199"
+      ],
+      "data_date": "2026-06-09",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-13cc501e416c5363",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-3a7bd3e2360a3d29",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-af3ceabbe048a291",
+      "object_type": "entity",
+      "event_id": "EV-bff418b2959f58fb",
+      "claim_refs": [
+        "CL-167cc4a45ad498cf",
+        "CL-aba3ad1e5b124223",
+        "CL-cec718c6f20d97a3",
+        "CL-b7f5f104685a0e17"
+      ],
+      "source_refs": [
+        "SA-3f3392d34a8a9e5e"
+      ],
+      "data_date": "2026-06-09",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-1f4fedf249db5eac",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-3a7bd3e2360a3d29",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-af3ceabbe048a291",
+      "object_type": "entity",
+      "event_id": "EV-da062d02015f99fb",
+      "claim_refs": [
+        "CL-4dfab54d9db54ed1",
+        "CL-29288218b99fbd76",
+        "CL-6cb5d2da485b19fa",
+        "CL-514359fe69d37e62"
+      ],
+      "source_refs": [
+        "SA-28748e8b0a1767a3"
+      ],
+      "data_date": "2026-06-09",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-f5b7bf87ac9c1791",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-3a7bd3e2360a3d29",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-af3ceabbe048a291",
+      "object_type": "entity",
+      "event_id": "EV-9f9bc7ffe6228281",
+      "claim_refs": [
+        "CL-497b46074e896052",
+        "CL-2aeac409ee90a88c",
+        "CL-873c364a0c3fdeb6",
+        "CL-597811744929e408"
+      ],
+      "source_refs": [
+        "SA-9eac86beebff633a"
+      ],
+      "data_date": "2026-06-09",
+      "status": "verified"
+    }
+  ],
+  "taxonomyNodes": [
+    {
+      "id": "TX-technology-on_device",
+      "name": "端侧",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "on_device",
+      "eventIds": [
+        "EV-a15da1b52d939967",
+        "EV-736404028b8ad33e",
+        "EV-7263caa45bbf168e",
+        "EV-653cbce2ccc79f8b",
+        "EV-04efb4eecbb8125f",
+        "EV-8a9b12665a3e40a0",
+        "EV-712bb6241160c4c5",
+        "EV-f7b60c0c63403f8c",
+        "EV-e28e134345ea5f99",
+        "EV-a736c6c64d106475",
+        "EV-4e6dc3ec2b3f0bd6",
+        "EV-c5b8faec223a4caf",
+        "EV-4026c95d4c01b96e",
+        "EV-0597e07d7e73051a",
+        "EV-02186ed7885f68fe",
+        "EV-5613946bdd578a26",
+        "EV-dd902b603e2e3dbc",
+        "EV-7d4b4b8d4e3599d4",
+        "EV-f4876d2e1a20d87b"
+      ],
+      "entityIds": [
+        "EN-a35b80cf9d171015",
+        "EN-48bebf25e5bd5aca",
+        "EN-dca6ec9510fc0176",
+        "EN-b0532e1af75cc4ab",
+        "EN-8147e6fed86d42c1",
+        "EN-16fd849ce27f115b",
+        "EN-8d4321d936320802",
+        "EN-f5791343a13abc71",
+        "EN-9fbf261b62c1d7c0",
+        "EN-f3cfedbe8428c9f7",
+        "EN-7df09a7717ef2feb",
+        "EN-c04bd5ebd10ab696",
+        "EN-50ba7ff15827787b",
+        "EN-bbdefa2950f49882",
+        "EN-992eafe973f69075",
+        "EN-1229af0aa3b0305e",
+        "EN-81e577740888ca6d",
+        "EN-968e2d5b08687bf4",
+        "EN-3a7bd3e2360a3d29",
+        "EN-c608c4787821de1b",
+        "EN-6f21a653c48f4f19",
+        "EN-5388bc10736a0eff",
+        "EN-12a81529bba89666",
+        "EN-2c348893efb2316e",
+        "EN-f77d48bcb475d189",
+        "EN-44a9bf3b11abea5c",
+        "EN-de6b71bf77ff4299",
+        "EN-c4ef31845ea79710",
+        "EN-96eebba49dbbf422",
+        "EN-ce635c4eabff5e4f",
+        "EN-f8ceb65dd1764cd4",
+        "EN-af3ceabbe048a291",
+        "EN-047364b9be67f665",
+        "EN-dd920a8cd166f486",
+        "EN-c70eca6b0f88f44d",
+        "EN-41dcc2d4951f337b",
+        "EN-e246a1f9a090075b",
+        "EN-1dc405a4cda895d0",
+        "EN-c3ce0cc92b48bbd6",
+        "EN-54ef981ab82586b5",
+        "EN-0899bccb1b028521",
+        "EN-3dd90c2e1bf28b32",
+        "EN-5d7b7e77768bfdfc"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-05-25",
+      "lastSeen": "2026-07-17"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}

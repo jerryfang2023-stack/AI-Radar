@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"Oracle is announcing the upcoming g
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "宣布OCI企业AI正式上市：简化构建、部署和管理生产级AI的途径 | 人工智能与数据科学"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Announcing GA of OCI Enterprise AI: a simplified approach to build, deploy, and govern production AI faster | ai-data-science

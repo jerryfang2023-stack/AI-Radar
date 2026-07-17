@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Marketplace of domain-specific plugins 
 theme: mature-commercial-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "GitHub 仓库：panaversity/agentfactory-business-plugins"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # panaversity/agentfactory-business-plugins - GitHub

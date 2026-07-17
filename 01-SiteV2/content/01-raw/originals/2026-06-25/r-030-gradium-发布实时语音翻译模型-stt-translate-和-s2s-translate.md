@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"Gradium 发布两款实时语音
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Gradium 发布实时语音翻译模型 stt-translate 和 s2s-translate"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Gradium 发布实时语音翻译模型 stt-translate 和 s2s-translate

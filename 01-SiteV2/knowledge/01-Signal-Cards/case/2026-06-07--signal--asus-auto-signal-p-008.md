@@ -2,7 +2,7 @@
 id: SIG-20260607-A03
 type: signal_card
 signal_type: case
-title: "ASUS Brings Enterprise - to - Edge AI to Life at Computex 2026"
+title: "华硕在2026年台北国际电脑展上实现企业级到边缘AI的落地"
 date: 2026-06-07
 status: published
 source_title: "ASUS Brings Enterprise - to - Edge AI to Life at Computex 2026"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "ASUS"
 
 frontend:
-  displayTitle: "ASUS Brings Enterprise - to - Edge AI to Life at Computex 2026"
+  displayTitle: "华硕在2026年台北国际电脑展上实现企业级到边缘AI的落地"
   sourceLinks:
     - "https://itwire.com/business-it-news/business-technology/asus-brings-enterprise-to-edge-ai-to-life-at-computex-2026"
 ---
 
-# ASUS Brings Enterprise - to - Edge AI to Life at Computex 2026
+# 华硕在2026年台北国际电脑展上实现企业级到边缘AI的落地
 
 ## 新闻事实
 

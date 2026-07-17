@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"阿里云今日推出 Meoo（秒悟
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "阿里云发布 Meoo CLI：本地 AI 编程项目可一键部署上线"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 阿里云发布 Meoo CLI：本地 AI 编程项目可一键部署上线

@@ -2,7 +2,7 @@
 id: SIG-20260618-A07
 type: signal_card
 signal_type: product_service
-title: "博客现状，2026年中 发布 AI 基础设施能力，切入销售线索和收入团队协作"
+title: "博客现状，2026年中"
 date: 2026-06-18
 status: published
 source_title: "博客现状，2026年中"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "博客现状，2026年中"
 
 frontend:
-  displayTitle: "博客现状，2026年中 发布 AI 基础设施能力，切入销售线索和收入团队协作"
+  displayTitle: "博客现状，2026年中"
   sourceLinks:
     - "https://www.interconnects.ai/p/state-of-the-blog-mid-2026"
 ---
 
-# 博客现状，2026年中 发布 AI 基础设施能力，切入销售线索和收入团队协作
+# 博客现状，2026年中
 
 ## 新闻事实
 

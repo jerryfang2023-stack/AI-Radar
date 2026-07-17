@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"Stripe processes $1.4 trillion in annual
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "金融合规的生产级AI代理：来自Stripe的经验教训 | 人工智能"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Production-grade AI agents for financial compliance: Lessons from Stripe | Artificial Intelligence

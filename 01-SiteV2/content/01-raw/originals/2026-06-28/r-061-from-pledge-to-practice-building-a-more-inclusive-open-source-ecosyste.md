@@ -72,6 +72,10 @@ key_excerpts: [{"type":"company_action","text":"Learn about the progress we’ve
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_zh: "从承诺到实践：构建更具包容性的开源生态系统"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # From pledge to practice: Building a more inclusive open source ecosystem

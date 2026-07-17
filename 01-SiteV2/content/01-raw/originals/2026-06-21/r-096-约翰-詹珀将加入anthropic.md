@@ -72,6 +72,10 @@ key_excerpts: [{"type":"opinion","text":"谷歌DeepMind AlphaFold团队负责人
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "约翰·詹珀将加入Anthropic"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 约翰·詹珀将加入Anthropic

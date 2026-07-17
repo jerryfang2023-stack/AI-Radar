@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-053
 title: "AIsa Raises $6.5M to Build the AI Agent Resource Network - AIsa News"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "AIsa 筹集 650 万美元，打造 AI 代理资源网络 - AIsa 新闻"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://aisa.one/news/aisa-raises-6-5m-ai-agent-resource-network"
 canonical_url: "https://aisa.one/news/aisa-raises-6-5m-ai-agent-resource-network"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-06T02:21:27.029Z
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # AIsa Raises $6.5M to Build the AI Agent Resource Network - AIsa News

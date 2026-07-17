@@ -2,7 +2,7 @@
 id: SIG-20260710-A06
 type: signal_card
 signal_type: funding
-title: "德国人工智能劳动力管理初创公司Sherpa在种子期前筹集了220万$ - Tech.eu"
+title: "德国AI劳动力管理初创公司Sherpa获220万美元种子轮融资 - Tech.eu"
 date: 2026-07-10
 status: published
 source_title: "German AI workforce management startup Sherpa raises $2.2M pre-seed - Tech.eu"
@@ -58,12 +58,12 @@ opportunity_signals:
 signal_owner: "Sherpa"
 
 frontend:
-  displayTitle: "德国人工智能劳动力管理初创公司Sherpa在种子期前筹集了220万$ - Tech.eu"
+  displayTitle: "德国AI劳动力管理初创公司Sherpa获220万美元种子轮融资 - Tech.eu"
   sourceLinks:
     - "https://tech.eu/2026/07/09/german-ai-workforce-management-startup-sherpa-raises-22m-pre-seed/"
 ---
 
-# 德国人工智能劳动力管理初创公司Sherpa在种子期前筹集了220万$ - Tech.eu
+# 德国AI劳动力管理初创公司Sherpa获220万美元种子轮融资 - Tech.eu
 
 ## 新闻事实
 

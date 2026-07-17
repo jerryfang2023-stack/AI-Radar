@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Today we're announcing that Tekst has r
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only
+title_zh: "我们为何融资1350万美元，为智能体时代定义流程智能"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Why we raised $13.5M to define Process Intelligence for the Agentic Era

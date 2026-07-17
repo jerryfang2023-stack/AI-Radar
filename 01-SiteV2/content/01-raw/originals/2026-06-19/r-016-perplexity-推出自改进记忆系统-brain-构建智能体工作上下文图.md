@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"Perplexity 为其智能体产品 Compute
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Perplexity 推出自改进记忆系统 Brain，构建智能体工作上下文图"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Perplexity 推出自改进记忆系统 Brain，构建智能体工作上下文图

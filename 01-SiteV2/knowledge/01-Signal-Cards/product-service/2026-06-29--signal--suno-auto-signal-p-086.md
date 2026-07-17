@@ -2,7 +2,7 @@
 id: SIG-20260629-A06
 type: signal_card
 signal_type: product_service
-title: "Suno 推出 Spark 孵化器计划，面向独立艺术家"
+title: "Suno推出Spark孵化器计划，将独立艺术家引入其AI系统"
 date: 2026-06-29
 status: published
 source_title: "Suno launches Spark incubator program to feed independent artists to its AI machine"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "Suno"
 
 frontend:
-  displayTitle: "Suno 推出 Spark 孵化器计划，面向独立艺术家"
+  displayTitle: "Suno推出Spark孵化器计划，将独立艺术家引入其AI系统"
   sourceLinks:
     - "https://www.theverge.com/ai-artificial-intelligence/958801/suno-launches-spark-incubator-program-to-feed-independent-artists-to-its-ai-machine"
 ---
 
-# Suno 推出 Spark 孵化器计划，面向独立艺术家
+# Suno推出Spark孵化器计划，将独立艺术家引入其AI系统
 
 ## 新闻事实
 

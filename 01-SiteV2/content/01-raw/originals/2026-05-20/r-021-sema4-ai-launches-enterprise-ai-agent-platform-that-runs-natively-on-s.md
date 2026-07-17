@@ -69,6 +69,10 @@ key_excerpts: [{"type":"funding","text":"Sema4.ai Launches Enterprise AI Agent P
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Sema4.ai 推出可在 Snowflake 上原生运行的企业 AI 代理平台 | Sema4.ai"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Sema4.ai Launches Enterprise AI Agent Platform That Runs Natively on Snowflake | Sema4.ai

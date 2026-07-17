@@ -23,6 +23,7 @@ const from = args.get("from") || new Intl.DateTimeFormat("en-CA", {
 }).format(new Date());
 const to = args.get("to") || from;
 const dryRun = args.get("dry-run") === "true";
+const refreshExisting = args.get("refresh-existing") === "true";
 const pointsFile = args.get("points-file") || "";
 
 function rel(file) {
@@ -326,7 +327,7 @@ function collectRecords() {
   const snapshots = [];
   const current = currentSnapshot();
   if (current && current.date >= from && current.date <= to) snapshots.push(current);
-  snapshots.push(...snapshotCommits());
+  if (!refreshExisting) snapshots.push(...snapshotCommits());
 
   const records = [];
   for (const snapshot of snapshots) {
@@ -341,7 +342,7 @@ function collectRecords() {
       const day = parseDay(remark.createdAt || remark.date);
       if (!wantedDays.has(day)) continue;
       const key = String(remark.url || remark.id || `${remark.name}:${remark.text}:${day}`).trim();
-      if (seenKeys.has(key)) continue;
+      if (!refreshExisting && seenKeys.has(key)) continue;
       seenKeys.add(key);
       records.push({
         ...remark,
@@ -358,6 +359,37 @@ function collectRecords() {
     return String(a.name || "").localeCompare(String(b.name || ""));
   });
   return records;
+}
+
+function upsertReadableDateEntries(file, personName, day, entries) {
+  if (!refreshExisting || !fs.existsSync(file)) {
+    insertReadableDateEntries(file, personName, day, entries);
+    return { added: entries.length, updated: 0 };
+  }
+
+  let text = readText(file);
+  let added = 0;
+  let updated = 0;
+  const additions = [];
+  for (const record of entries) {
+    const sections = [...text.matchAll(/^###\s+[\s\S]*?(?=^###\s+|(?![\s\S]))/gmu)];
+    const section = sections.find((match) => record.url && match[0].includes(record.url));
+    if (!section) {
+      additions.push(record);
+      added += 1;
+      continue;
+    }
+    const replacement = readableEntryMarkdown(record);
+    if (section[0].trimEnd() === replacement.trimEnd()) continue;
+    text = `${text.slice(0, section.index)}${replacement}${text.slice(section.index + section[0].length)}`;
+    updated += 1;
+  }
+  if (updated) {
+    text = replaceFrontmatterValue(text, "opinion_count", String(countHeadings(text)));
+    writeText(file, `${text.trimEnd()}\n`);
+  }
+  if (additions.length) insertReadableDateEntries(file, personName, day, additions);
+  return { added, updated };
 }
 
 function insertDateEntries(file, personName, day, entries) {
@@ -622,13 +654,17 @@ function main() {
     groups.get(key).entries.push(record);
   }
 
+  let added = 0;
+  let updated = 0;
   for (const group of groups.values()) {
-    insertReadableDateEntries(
+    const result = upsertReadableDateEntries(
       path.join(peopleRoot, group.slug, `${group.day}.md`),
       group.personName,
       group.day,
       group.entries
     );
+    added += result.added;
+    updated += result.updated;
   }
 
   for (const group of groups.values()) {
@@ -641,7 +677,8 @@ function main() {
     from,
     to,
     dryRun,
-    added: records.length,
+    added,
+    updated,
     groups: groups.size,
     people: index.people,
     opinions: index.opinions,

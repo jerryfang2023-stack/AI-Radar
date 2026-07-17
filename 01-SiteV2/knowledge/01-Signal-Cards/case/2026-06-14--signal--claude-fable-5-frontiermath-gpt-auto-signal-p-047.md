@@ -2,7 +2,7 @@
 id: SIG-20260614-A11
 type: signal_card
 signal_type: case
-title: "Claude Fable 5 在 FrontierMath 最难题目上超越 GPT 案例：AI 进入企业智能体协作流程"
+title: "Claude Fable 5 在 FrontierMath 最难题目上超越 GPT-5.5 13 个百分点"
 date: 2026-06-14
 status: published
 source_title: "Claude Fable 5 在 FrontierMath 最难题目上超越 GPT-5.5 13 个百分点"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "Claude Fable 5 在 FrontierMath 最难题目上超越 GPT"
 
 frontend:
-  displayTitle: "Claude Fable 5 在 FrontierMath 最难题目上超越 GPT 案例：AI 进入企业智能体协作流程"
+  displayTitle: "Claude Fable 5 在 FrontierMath 最难题目上超越 GPT-5.5 13 个百分点"
   sourceLinks:
     - "https://the-decoder.com/claude-fable-5-outpaces-gpt-5-5-by-13-points-on-frontiermaths-toughest-problems"
 ---
 
-# Claude Fable 5 在 FrontierMath 最难题目上超越 GPT 案例：AI 进入企业智能体协作流程
+# Claude Fable 5 在 FrontierMath 最难题目上超越 GPT-5.5 13 个百分点
 
 ## 新闻事实
 

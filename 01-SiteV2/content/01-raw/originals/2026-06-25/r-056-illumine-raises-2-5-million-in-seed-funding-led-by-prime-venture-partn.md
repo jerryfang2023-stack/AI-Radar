@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Illumine Raises $2.5 Million in Seed Fu
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_zh: "Illumine 获 Prime Venture Partners 领投的 250 万美元种子轮融资 - Startup Rise Asia"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Illumine Raises $2.5 Million in Seed Funding Led by Prime Venture Partners - Startup Rise Asia

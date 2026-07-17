@@ -2,7 +2,7 @@
 id: SIG-20260706-A01
 type: signal_card
 signal_type: funding
-title: "Netris 获得 $15M A 轮 融资"
+title: "Andreessen Horowitz领投Netris A轮融资，加速全球AI云运营商对GPU网络自动化与多租户技术的采用"
 date: 2026-07-06
 status: published
 source_title: "Andreessen Horowitz Leads Netris' Series A to Accelerate Adoption of GPU Network Automation and Multi-Tenancy Across AI Cloud Operators Worldwide - Netris"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "Netris"
 
 frontend:
-  displayTitle: "Netris 获得 $15M A 轮 融资"
+  displayTitle: "Andreessen Horowitz领投Netris A轮融资，加速全球AI云运营商对GPU网络自动化与多租户技术的采用"
   sourceLinks:
     - "https://netris.io/blog/andreessen-horowitz-leads-netris-series-a-to-accelerate-adoption-of-gpu-network-automation-and-multi-tenancy-across-ai-cloud-operators-worldwide/"
 ---
 
-# Netris 获得 $15M A 轮 融资
+# Andreessen Horowitz领投Netris A轮融资，加速全球AI云运营商对GPU网络自动化与多租户技术的采用
 
 ## 新闻事实
 

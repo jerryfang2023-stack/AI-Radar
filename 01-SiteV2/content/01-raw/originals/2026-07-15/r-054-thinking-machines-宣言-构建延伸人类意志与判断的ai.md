@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-054
 title: "Thinking Machines 宣言：构建延伸人类意志与判断的AI"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "Thinking Machines 宣言：构建延伸人类意志与判断的AI"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://thinkingmachines.ai/blog/the-future-worth-building-is-human"
 canonical_url: "https://thinkingmachines.ai/blog/the-future-worth-building-is-human"
 source_name: "Hacker News 热门（buzzing.cc 中文翻译）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-15T04:28:37.922Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Thinking Machines 宣言：构建延伸人类意志与判断的AI

@@ -1,0 +1,176 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 818,
+    "quarantinedEventCount": 58
+  },
+  "entity": {
+    "id": "EN-ed501d3e2d977553",
+    "name": "StepAudio 2.5 Realtime",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-d99037f2ed8db897"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-technology-speech_audio"
+    ],
+    "relatedEntityIds": [
+      "EN-2c348893efb2316e"
+    ],
+    "firstSeen": "2026-05-25",
+    "lastSeen": "2026-05-25",
+    "relationIds": [
+      "REL2-b2812101f3a49110"
+    ],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-d99037f2ed8db897"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-d99037f2ed8db897",
+        "dataDate": "2026-05-25",
+        "date": "2026-05-25",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "阶跃星辰发布StepAudio 2.5 Realtime：一款具有角色扮演RLHF和副语言理解的端到端语音模型",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "speech_audio",
+            "name": "语音与音频"
+          }
+        ],
+        "entityIds": [
+          "EN-2c348893efb2316e",
+          "EN-f77d48bcb475d189",
+          "EN-ed501d3e2d977553"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [
+    {
+      "id": "EN-2c348893efb2316e",
+      "name": "StepFun",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "阶跃星辰",
+        "阶跃"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-2c1fc2143d7d4a6a",
+        "EV-6824e76c4aa69a71",
+        "EV-ee363e679d12329c",
+        "EV-712bb6241160c4c5",
+        "EV-d99037f2ed8db897"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-on_device",
+        "TX-technology-speech_audio"
+      ],
+      "relatedEntityIds": [
+        "EN-8b619895a83e35c8",
+        "EN-44a9bf3b11abea5c",
+        "EN-ed501d3e2d977553"
+      ],
+      "firstSeen": "2026-05-25",
+      "lastSeen": "2026-07-14"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-b2812101f3a49110",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-2c348893efb2316e",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-ed501d3e2d977553",
+      "object_type": "entity",
+      "event_id": "EV-d99037f2ed8db897",
+      "claim_refs": [
+        "CL-b7a461c1023fcdc8",
+        "CL-52a84bcf4c306930",
+        "CL-ca66b229cce5d7ed"
+      ],
+      "source_refs": [
+        "SA-01b198e7bed0acf7"
+      ],
+      "data_date": "2026-05-25",
+      "status": "verified"
+    }
+  ],
+  "taxonomyNodes": [
+    {
+      "id": "TX-technology-speech_audio",
+      "name": "语音与音频",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "speech_audio",
+      "eventIds": [
+        "EV-99e5df844a1bd670",
+        "EV-dad8c827d14f2799",
+        "EV-2258329f33d413cf",
+        "EV-f68e00bb9fd49fac",
+        "EV-d99037f2ed8db897",
+        "EV-631dce4dc135d01b"
+      ],
+      "entityIds": [
+        "EN-bbdefa2950f49882",
+        "EN-3a7bd3e2360a3d29",
+        "EN-e0bab6f6c58bfe4e",
+        "EN-afe83c198e329ef2",
+        "EN-0aa590cbbdb3835a",
+        "EN-2b78da3dc866654e",
+        "EN-8d4321d936320802",
+        "EN-12ab68e37d104d27",
+        "EN-2b6e51bec93e86c1",
+        "EN-4d09c69c19f5f67b",
+        "EN-085598c00f2aaccf",
+        "EN-a3c3b987b09fc1bb",
+        "EN-2c348893efb2316e",
+        "EN-f77d48bcb475d189",
+        "EN-ed501d3e2d977553",
+        "EN-b2968d9ba72f4818"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-05-25",
+      "lastSeen": "2026-06-17"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}

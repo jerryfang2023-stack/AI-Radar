@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"OpenAI 为旗下 AI 智能体助手 Code
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "OpenAI Codex 扩展使用场景，新增 6 款岗位插件覆盖 62 个应用"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # OpenAI Codex 扩展使用场景，新增 6 款岗位插件覆盖 62 个应用

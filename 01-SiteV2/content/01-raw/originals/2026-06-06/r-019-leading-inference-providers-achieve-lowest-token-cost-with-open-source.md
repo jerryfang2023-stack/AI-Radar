@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"Leading Inference Providers Achi
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "领先推理提供商借助NVIDIA Blackwell上的开源模型实现最低Token成本 | NVIDIA博客"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Leading Inference Providers Achieve Lowest Token Cost With Open Source Models on NVIDIA Blackwell | NVIDIA Blog

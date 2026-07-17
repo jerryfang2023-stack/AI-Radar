@@ -2,7 +2,7 @@
 id: SIG-20260707-A07
 type: signal_card
 signal_type: funding
-title: "Miravoice 获得 $6.3 m 融资"
+title: "独家：Miravoice，打造AI“面试官”以进行..."
 date: 2026-07-07
 status: published
 source_title: "Exclusive: Miravoice, Builder Of An AI 'Interviewer' To Conduct ..."
@@ -55,12 +55,12 @@ opportunity_signals:
 signal_owner: "Miravoice"
 
 frontend:
-  displayTitle: "Miravoice 获得 $6.3 m 融资"
+  displayTitle: "独家：Miravoice，打造AI“面试官”以进行..."
   sourceLinks:
     - "https://news.crunchbase.com/venture/ai-interviewer-miravoice-raises-seed-funding-unusual/"
 ---
 
-# Miravoice 获得 $6.3 m 融资
+# 独家：Miravoice，打造AI“面试官”以进行...
 
 ## 新闻事实
 

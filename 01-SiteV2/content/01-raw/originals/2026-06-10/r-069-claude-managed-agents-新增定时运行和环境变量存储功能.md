@@ -72,6 +72,10 @@ key_excerpts: [{"type":"supporting_context","text":"Claude Managed Agents 今日
 theme: outside-core-exploration
 keyword_group: outside-core-exploration
 copyright_note: local research archive only
+title_zh: "Claude Managed Agents 新增定时运行和环境变量存储功能"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Claude Managed Agents 新增定时运行和环境变量存储功能

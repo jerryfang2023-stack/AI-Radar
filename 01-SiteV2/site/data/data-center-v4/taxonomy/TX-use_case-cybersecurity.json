@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-17T18:20:10.588Z",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 727,
-    "quarantinedEventCount": 50
+    "eventCount": 818,
+    "quarantinedEventCount": 58
   },
   "node": {
     "id": "TX-use_case-cybersecurity",
@@ -20,43 +20,80 @@
       "EV-9ddcfd9f61c25158",
       "EV-6484904c176aa016",
       "EV-c85011ca6a0389bf",
-      "EV-6180de2e02597d9d",
-      "EV-adafffa563a53d49",
+      "EV-0e84a2f49d765ce3",
+      "EV-c81cb21337a9bb98",
+      "EV-9dab7fa55702e561",
+      "EV-53f4f2a34b3ce1b4",
       "EV-b240fb11e65b018e",
+      "EV-bd508dbe4205774f",
+      "EV-167f50a6f3134bd5",
       "EV-d07906b648eec63f",
       "EV-d40a4e1b7a53cabe",
-      "EV-268250d426c1a4a0",
+      "EV-cc3b92fe233953cf",
       "EV-3b5cb867fdaba28f",
-      "EV-87ad2bdf8cd4b0c8",
-      "EV-860b90c017deaa59",
+      "EV-a4b72879f3d73ea4",
+      "EV-1ec24a430911185c",
       "EV-888b9eb73582e21c",
       "EV-3ff2a155035d01e7",
+      "EV-482df8a8ef264238",
       "EV-9110f23a7e60173e",
       "EV-e792252690f98a22",
-      "EV-56f80f42cf6a7096",
+      "EV-491e7b4b506ab3e3",
       "EV-832fa2db95cfea6e",
       "EV-68fcce7fde89e5d7",
+      "EV-7133e378762edda5",
+      "EV-c7a2774b07554f5d",
       "EV-f1418d9e3b1413b7",
-      "EV-ff3ae595bf49ccbf"
+      "EV-2eabd03665cbdef7",
+      "EV-a35a3871bf36fea2"
     ],
     "entityIds": [
       "EN-871e6f4bf723cb1b",
       "EN-72badbbdbf521cec",
       "EN-c0cd6e83b6dd78a5",
+      "EN-634561e92b7593c3",
       "EN-bbdefa2950f49882",
       "EN-8d4321d936320802",
       "EN-b5738c169b693bee",
       "EN-c70eca6b0f88f44d",
       "EN-7d3194f79e645c42",
-      "EN-6fcba5d96a4fadfd",
-      "EN-2b6e51bec93e86c1",
+      "EN-96eebba49dbbf422",
+      "EN-a23572554f6c861e",
+      "EN-8652f6cd9088f1fa",
+      "EN-fb2a436a76aa9fde",
       "EN-9fbf261b62c1d7c0",
-      "EN-3a7bd3e2360a3d29"
+      "EN-ea87a2bd84296f73",
+      "EN-4094a2b7125c7564",
+      "EN-cbc62794911ff31b",
+      "EN-7839fb10a8f14c70",
+      "EN-fab30471ea65d627",
+      "EN-c4941bfc97ac7c2d",
+      "EN-3a7bd3e2360a3d29",
+      "EN-2c063f604e634100",
+      "EN-03b974cdbd22fe32",
+      "EN-ac123e56b0168ec2",
+      "EN-784c7cd63a83ccaa",
+      "EN-b50e6e7659f1018e",
+      "EN-8de7e44229714152",
+      "EN-db68703d8d719bd0",
+      "EN-52fc33ae4d101a5d",
+      "EN-5ce177312903c604",
+      "EN-272d6a7a0db89710",
+      "EN-d8494bb34d6ddc43",
+      "EN-9f15bb7e29e191eb",
+      "EN-c8185a1a8a6595ad",
+      "EN-3a13916345b60fad",
+      "EN-ced86039c0ad6a7c",
+      "EN-b59c577ed73536c6",
+      "EN-842a7da99bd249d4"
     ],
-    "fdeIds": [],
+    "fdeIds": [
+      "FDE-f34ca7b021eae900",
+      "FDE-4edaa833d41055bd"
+    ],
     "hardwareIds": [],
-    "firstSeen": "2026-05-24",
-    "lastSeen": "2026-07-08"
+    "firstSeen": "2026-04-16",
+    "lastSeen": "2026-07-17"
   },
   "events": [
     {
@@ -67,10 +104,10 @@
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
-      "status": "announced",
-      "statusLabel": "已公布",
+      "status": "completed",
+      "statusLabel": "已完成",
       "publicationStatus": "verified",
-      "title": "Geordie AI 完成 3000 万美元 A 轮融资",
+      "title": "独家：Geordie AI获3000万美元A轮融资，欲做企业AI代理的“空中交通管制”",
       "originalTitle": "Exclusive: Geordie AI raises $30 million Series A to be ‘air traffic control’ for your company’s AI agents – DNYUZ",
       "subject": "Exclusive: Geordie AI",
       "action": "raises",
@@ -84,7 +121,9 @@
       "locations": [
         "Europe"
       ],
-      "missingFields": [],
+      "missingFields": [
+        "event_time"
+      ],
       "conflicts": [],
       "tags": [
         {
@@ -155,10 +194,10 @@
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
-      "status": "announced",
-      "statusLabel": "已公布",
+      "status": "completed",
+      "statusLabel": "已完成",
       "publicationStatus": "verified",
-      "title": "Eindhoven-based Luna.ai 完成 250 万美元 种子前轮融资",
+      "title": "总部位于埃因霍温的Luna.ai完成250万美元Pre-Seed轮融资",
       "originalTitle": "Eindhoven-based Luna.ai Raises $2.5M in a Pre-Seed Funding",
       "subject": "Eindhoven-based Luna.ai",
       "action": "Raises",
@@ -171,7 +210,9 @@
       "locations": [
         "U.S."
       ],
-      "missingFields": [],
+      "missingFields": [
+        "event_time"
+      ],
       "conflicts": [],
       "tags": [],
       "facets": {
@@ -223,10 +264,10 @@
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
-      "status": "announced",
-      "statusLabel": "已公布",
+      "status": "completed",
+      "statusLabel": "已完成",
       "publicationStatus": "verified",
-      "title": "Barcelona-based NeuralTrust 完成 1720 万欧元 种子轮融资",
+      "title": "总部位于巴塞罗那的NeuralTrust融资1720万欧元，用于保障和治理企业AI代理",
       "originalTitle": "Barcelona-based NeuralTrust raises €17.2 million to secure and govern enterprise AI agents | EU-Startups",
       "subject": "Barcelona-based NeuralTrust",
       "action": "raises",
@@ -236,7 +277,9 @@
         "$20 million"
       ],
       "locations": [],
-      "missingFields": [],
+      "missingFields": [
+        "event_time"
+      ],
       "conflicts": [],
       "tags": [
         {
@@ -300,17 +343,17 @@
       "publisher": "eu-startups.com"
     },
     {
-      "id": "EV-6180de2e02597d9d",
+      "id": "EV-0e84a2f49d765ce3",
       "dataDate": "2026-06-08",
       "date": "2026-06-08",
       "updatedDate": "2026-06-08",
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
-      "status": "announced",
-      "statusLabel": "已公布",
+      "status": "completed",
+      "statusLabel": "已完成",
       "publicationStatus": "verified",
-      "title": "Google 完成 1.13 亿美元 B 轮融资",
+      "title": "AI网关OpenRouter获谷歌与英伟达1.13亿美元投资，用于路由其模型",
       "originalTitle": "AI Gateway OpenRouter Raises $113M From Google and NVIDIA to Route Between Their Models",
       "subject": "AI Gateway OpenRouter",
       "action": "Raises",
@@ -325,11 +368,19 @@
         "8 million"
       ],
       "locations": [],
-      "missingFields": [],
+      "missingFields": [
+        "event_time"
+      ],
       "conflicts": [],
       "tags": [],
       "facets": {
         "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          },
           {
             "dimensionId": "product_form",
             "id": "ai_application",
@@ -371,6 +422,12 @@
       "classifications": [
         {
           "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        },
+        {
+          "dimensionId": "product_form",
           "id": "ai_application",
           "dimensionName": "产品形态",
           "name": "AI 应用"
@@ -403,6 +460,12 @@
       "displayTags": [
         {
           "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        },
+        {
+          "dimensionId": "product_form",
           "id": "ai_application",
           "dimensionName": "产品形态",
           "name": "AI 应用"
@@ -433,20 +496,20 @@
         }
       ],
       "entityIds": [
+        "EN-634561e92b7593c3",
         "EN-bbdefa2950f49882",
         "EN-8d4321d936320802",
         "EN-b5738c169b693bee",
         "EN-c70eca6b0f88f44d",
-        "EN-7d3194f79e645c42",
-        "EN-6fcba5d96a4fadfd"
+        "EN-7d3194f79e645c42"
       ],
       "entityNames": [
+        "AI Gateway OpenRouter",
         "Google",
         "NVIDIA",
         "ServiceNow",
         "Anthropic",
-        "OpenAI",
-        "xAI"
+        "OpenAI"
       ],
       "productName": "",
       "products": [],
@@ -454,25 +517,196 @@
       "publisher": "techtimes.com"
     },
     {
-      "id": "EV-adafffa563a53d49",
-      "dataDate": "2026-05-24",
-      "date": "2026-05-24",
-      "updatedDate": "2026-05-24",
-      "eventType": "funding",
-      "eventTypeLabel": "融资",
-      "eventGroup": "融资与并购",
+      "id": "EV-c81cb21337a9bb98",
+      "dataDate": "2026-06-11",
+      "date": "2026-06-11",
+      "updatedDate": "2026-06-11",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Anthropic CEO 称政府应有权阻止高风险新 AI 模型部署",
+      "originalTitle": "",
+      "subject": "Anthropic CEO 称政府应有权阻止高风险新 AI 模型",
+      "action": "部署",
+      "object": "Anthropic CEO 称政府应有权阻止高风险新 AI 模型部署",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "cybersecurity",
+            "dimensionName": "应用场景",
+            "name": "网络安全"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "cybersecurity",
+          "dimensionName": "应用场景",
+          "name": "网络安全"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "cybersecurity",
+          "dimensionName": "应用场景",
+          "name": "网络安全"
+        }
+      ],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-96eebba49dbbf422"
+      ],
+      "entityNames": [
+        "Anthropic",
+        "Intel"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://bloomberg.com/news/articles/2026-06-10/anthropic-ceo-says-government-should-be-able-to-block-new-models",
+      "publisher": "Bloomberg：Technology（RSS）"
+    },
+    {
+      "id": "EV-9dab7fa55702e561",
+      "dataDate": "2026-07-07",
+      "date": "2026-07-07",
+      "updatedDate": "2026-07-07",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
       "status": "announced",
       "statusLabel": "已公布",
       "publicationStatus": "verified",
-      "title": "NVIDIA 完成 1000 万美元 种子轮融资",
-      "originalTitle": "General Analysis Raises $10M in Seed Funding to Secure Agentic AI",
-      "subject": "General Analysis",
-      "action": "Raises",
-      "object": "$10M in Seed Funding to Secure Agentic AI",
-      "metrics": [
-        "$10M",
-        "$10 million"
+      "title": "Stellantis 通过与微软的战略合作加速 AI 主导战略和数字化转型，提升客户体验",
+      "originalTitle": "Stellantis Accelerates AI-led Strategy and Digital Transformation Through Strategic Collaboration with Microsoft to Enhance Customer Experiences | Stellantis",
+      "subject": "Stellantis Accelerates AI-led Strategy and Digital Transformation Through Strategic",
+      "action": "Collaboration",
+      "object": "with Microsoft to Enhance Customer Experiences | Stellantis",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "event_time"
       ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "cybersecurity",
+            "dimensionName": "应用场景",
+            "name": "网络安全"
+          }
+        ],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "automotive_transportation",
+            "dimensionName": "行业",
+            "name": "汽车与交通"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "id": "cybersecurity",
+          "dimensionName": "应用场景",
+          "name": "网络安全"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "automotive_transportation",
+          "dimensionName": "行业",
+          "name": "汽车与交通"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "cybersecurity",
+          "dimensionName": "应用场景",
+          "name": "网络安全"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "automotive_transportation",
+          "dimensionName": "行业",
+          "name": "汽车与交通"
+        }
+      ],
+      "entityIds": [
+        "EN-a23572554f6c861e",
+        "EN-8652f6cd9088f1fa",
+        "EN-fb2a436a76aa9fde",
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "entityNames": [
+        "Stellantis Accelerates AI-led Strategy",
+        "Stellantis",
+        "Digital Transformation Through Strategic",
+        "Microsoft"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://stellantis.com/en/news/press-releases/2026/april/stellantis-accelerates-ai-led-strategy-and-digital-transformation-through-strategic-collaboration-with-microsoft-to-enhance-customer-experiences",
+      "publisher": "stellantis.com"
+    },
+    {
+      "id": "EV-53f4f2a34b3ce1b4",
+      "dataDate": "2026-07-16",
+      "date": "2026-06-17",
+      "updatedDate": "2026-07-16",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Rubrik 宣布即将集成 Amazon Bedrock AgentCore 以保护 AI 智能体",
+      "originalTitle": "Rubrik Announces Upcoming Integration with Amazon Bedrock AgentCore to Secure AI Agents – Company Announcement - FT.com",
+      "subject": "Rubrik Announces Upcoming",
+      "action": "Integration with",
+      "object": "Amazon Bedrock AgentCore to Secure AI Agents – Company Announcement - FT.com",
+      "metrics": [],
       "locations": [],
       "missingFields": [],
       "conflicts": [],
@@ -489,27 +723,21 @@
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "customer_service",
-            "dimensionName": "应用场景",
-            "name": "客户服务"
-          },
-          {
-            "dimensionId": "use_case",
             "id": "cybersecurity",
             "dimensionName": "应用场景",
             "name": "网络安全"
           }
         ],
         "industry": [],
-        "deployment_model": [],
-        "target_user": [
+        "deployment_model": [
           {
-            "dimensionId": "target_user",
-            "id": "enterprise",
-            "dimensionName": "目标用户",
-            "name": "企业用户"
+            "dimensionId": "deployment_model",
+            "id": "hybrid",
+            "dimensionName": "部署形态",
+            "name": "混合部署"
           }
-        ]
+        ],
+        "target_user": []
       },
       "classifications": [
         {
@@ -519,16 +747,10 @@
           "name": "智能体"
         },
         {
-          "dimensionId": "target_user",
-          "id": "enterprise",
-          "dimensionName": "目标用户",
-          "name": "企业用户"
-        },
-        {
-          "dimensionId": "use_case",
-          "id": "customer_service",
-          "dimensionName": "应用场景",
-          "name": "客户服务"
+          "dimensionId": "deployment_model",
+          "id": "hybrid",
+          "dimensionName": "部署形态",
+          "name": "混合部署"
         },
         {
           "dimensionId": "use_case",
@@ -540,12 +762,6 @@
       "displayTags": [
         {
           "dimensionId": "use_case",
-          "id": "customer_service",
-          "dimensionName": "应用场景",
-          "name": "客户服务"
-        },
-        {
-          "dimensionId": "use_case",
           "id": "cybersecurity",
           "dimensionName": "应用场景",
           "name": "网络安全"
@@ -557,24 +773,26 @@
           "name": "智能体"
         },
         {
-          "dimensionId": "target_user",
-          "id": "enterprise",
-          "dimensionName": "目标用户",
-          "name": "企业用户"
+          "dimensionId": "deployment_model",
+          "id": "hybrid",
+          "dimensionName": "部署形态",
+          "name": "混合部署"
         }
       ],
       "entityIds": [
-        "EN-8d4321d936320802",
-        "EN-2b6e51bec93e86c1"
+        "EN-ea87a2bd84296f73",
+        "EN-4094a2b7125c7564",
+        "EN-cbc62794911ff31b"
       ],
       "entityNames": [
-        "NVIDIA",
-        "Google DeepMind"
+        "Rubrik Announces Upcoming",
+        "Rubrik",
+        "Amazon"
       ],
       "productName": "",
       "products": [],
-      "sourceUrl": "https://www.businesswire.com/news/home/20260429247972/en/General-Analysis-Raises-%2410M-in-Seed-Funding-to-Secure-Agentic-AI",
-      "publisher": "businesswire.com"
+      "sourceUrl": "https://markets.ft.com/data/announce/full?dockey=600-202606171200BIZWIRE_USPRX____20260617_BW107817-1",
+      "publisher": "markets.ft.com"
     },
     {
       "id": "EV-b240fb11e65b018e",
@@ -600,7 +818,14 @@
         "object"
       ],
       "conflicts": [],
-      "tags": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "guardrails_safety",
+          "name": "安全护栏"
+        }
+      ],
       "facets": {
         "product_form": [],
         "use_case": [
@@ -624,6 +849,12 @@
       },
       "classifications": [
         {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "guardrails_safety",
+          "name": "安全护栏"
+        },
+        {
           "dimensionId": "use_case",
           "id": "cybersecurity",
           "dimensionName": "应用场景",
@@ -644,6 +875,12 @@
           "name": "网络安全"
         },
         {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "guardrails_safety",
+          "name": "安全护栏"
+        },
+        {
           "dimensionId": "industry",
           "id": "government_public_sector",
           "dimensionName": "行业",
@@ -660,6 +897,146 @@
       "products": [],
       "sourceUrl": "https://anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem",
       "publisher": "Anthropic：Newsroom（网页）"
+    },
+    {
+      "id": "EV-bd508dbe4205774f",
+      "dataDate": "2026-07-17",
+      "date": "2026-04-16",
+      "updatedDate": "2026-07-17",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Stellantis与微软战略合作加速AI主导战略及数字化转型，提升客户体验",
+      "originalTitle": "Stellantis Accelerates AI-led Strategy and Digital Transformation Through Strategic Collaboration with Microsoft to Enhance Customer Experiences – Company Announcement - FT.com",
+      "subject": "Stellantis Accelerates AI-led Strategy and Digital Transformation Through Strategic",
+      "action": "Collaboration",
+      "object": "with Microsoft to Enhance Customer Experiences – Company Announcement - FT.com",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "cybersecurity",
+            "dimensionName": "应用场景",
+            "name": "网络安全"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "id": "cybersecurity",
+          "dimensionName": "应用场景",
+          "name": "网络安全"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "cybersecurity",
+          "dimensionName": "应用场景",
+          "name": "网络安全"
+        }
+      ],
+      "entityIds": [
+        "EN-a23572554f6c861e",
+        "EN-8652f6cd9088f1fa",
+        "EN-fb2a436a76aa9fde",
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "entityNames": [
+        "Stellantis Accelerates AI-led Strategy",
+        "Stellantis",
+        "Digital Transformation Through Strategic",
+        "Microsoft"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://markets.ft.com/data/announce/full?dockey=1330-1001176217en-1878JJNUD9H6E0K0LPGOSGE4ST",
+      "publisher": "markets.ft.com"
+    },
+    {
+      "id": "EV-167f50a6f3134bd5",
+      "dataDate": "2026-07-15",
+      "date": "2026-07-15",
+      "updatedDate": "2026-07-15",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "OpenAI GPT-5.6 Sol 被曝擅自删除用户文件，系统卡曾预警风险",
+      "originalTitle": "",
+      "subject": "OpenAI",
+      "action": "product_release",
+      "object": "OpenAI GPT-5.6 Sol 被曝擅自删除用户文件，系统卡曾预警风险",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "cybersecurity",
+            "dimensionName": "应用场景",
+            "name": "网络安全"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "id": "cybersecurity",
+          "dimensionName": "应用场景",
+          "name": "网络安全"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "cybersecurity",
+          "dimensionName": "应用场景",
+          "name": "网络安全"
+        }
+      ],
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-7839fb10a8f14c70"
+      ],
+      "entityNames": [
+        "OpenAI",
+        "GPT-5.6 Sol"
+      ],
+      "productName": "GPT-5.6 Sol",
+      "products": [
+        {
+          "name": "GPT-5.6 Sol",
+          "type": "产品/服务",
+          "ownerNames": [
+            "OpenAI"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/976/792.htm",
+      "publisher": "IT之家（RSS）"
     },
     {
       "id": "EV-d07906b648eec63f",
@@ -816,18 +1193,28 @@
         }
       ],
       "entityIds": [
-        "EN-c70eca6b0f88f44d"
+        "EN-c70eca6b0f88f44d",
+        "EN-fab30471ea65d627"
       ],
       "entityNames": [
-        "Anthropic"
+        "Anthropic",
+        "Claude Science"
       ],
-      "productName": "",
-      "products": [],
+      "productName": "Claude Science",
+      "products": [
+        {
+          "name": "Claude Science",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Anthropic"
+          ]
+        }
+      ],
       "sourceUrl": "https://marktechpost.com/2026/07/04/anthropic-launches-claude-science-beta",
       "publisher": "MarkTechPost（RSS）"
     },
     {
-      "id": "EV-268250d426c1a4a0",
+      "id": "EV-cc3b92fe233953cf",
       "dataDate": "2026-07-05",
       "date": "2026-07-04",
       "updatedDate": "2026-07-05",
@@ -878,6 +1265,7 @@
         }
       ],
       "entityIds": [
+        "EN-c4941bfc97ac7c2d",
         "EN-c70eca6b0f88f44d",
         "EN-9fbf261b62c1d7c0",
         "EN-bbdefa2950f49882",
@@ -885,6 +1273,7 @@
         "EN-7d3194f79e645c42"
       ],
       "entityNames": [
+        "Claude Mythos Preview",
         "Anthropic",
         "Microsoft",
         "Google",
@@ -969,18 +1358,28 @@
         }
       ],
       "entityIds": [
-        "EN-c70eca6b0f88f44d"
+        "EN-c70eca6b0f88f44d",
+        "EN-2c063f604e634100"
       ],
       "entityNames": [
-        "Anthropic"
+        "Anthropic",
+        "Claude Sonnet 5"
       ],
-      "productName": "",
-      "products": [],
+      "productName": "Claude Sonnet 5",
+      "products": [
+        {
+          "name": "Claude Sonnet 5",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Anthropic"
+          ]
+        }
+      ],
       "sourceUrl": "https://the-decoder.com/anthropics-new-claude-sonnet-5-closes-the-gap-to-the-pricier-opus-model-series",
       "publisher": "The Decoder：AI News（RSS）"
     },
     {
-      "id": "EV-87ad2bdf8cd4b0c8",
+      "id": "EV-a4b72879f3d73ea4",
       "dataDate": "2026-06-29",
       "date": "2026-06-29",
       "updatedDate": "2026-06-29",
@@ -990,7 +1389,7 @@
       "status": "announced",
       "statusLabel": "已公布",
       "publicationStatus": "verified",
-      "title": "Anthropic 发布 Mythos",
+      "title": "亚洲AI初创公司推出类似Mythos的模型，Anthropic出口禁令持续",
       "originalTitle": "Asian AI startups launch Mythos-like models as Anthropic&#8217;s export ban drags on",
       "subject": "Asian AI startups",
       "action": "launch",
@@ -999,7 +1398,9 @@
       "locations": [
         "U.S."
       ],
-      "missingFields": [],
+      "missingFields": [
+        "event_time"
+      ],
       "conflicts": [],
       "tags": [],
       "facets": {
@@ -1052,18 +1453,41 @@
         }
       ],
       "entityIds": [
-        "EN-c70eca6b0f88f44d"
+        "EN-03b974cdbd22fe32",
+        "EN-c70eca6b0f88f44d",
+        "EN-ac123e56b0168ec2",
+        "EN-784c7cd63a83ccaa",
+        "EN-b50e6e7659f1018e"
       ],
       "entityNames": [
-        "Anthropic"
+        "Asian AI startups",
+        "Anthropic",
+        "Sakana AI",
+        "Mythos-like",
+        "Asian AI"
       ],
-      "productName": "",
-      "products": [],
+      "productName": "Mythos-like",
+      "products": [
+        {
+          "name": "Mythos-like",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Anthropic"
+          ]
+        },
+        {
+          "name": "Asian AI",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Anthropic"
+          ]
+        }
+      ],
       "sourceUrl": "https://techcrunch.com/2026/06/27/asian-ai-startups-launch-mythos-like-models-as-anthropics-export-ban-drags-on",
       "publisher": "TechCrunch AI"
     },
     {
-      "id": "EV-860b90c017deaa59",
+      "id": "EV-1ec24a430911185c",
       "dataDate": "2026-06-28",
       "date": "2026-06-28",
       "updatedDate": "2026-06-28",
@@ -1073,25 +1497,21 @@
       "status": "announced",
       "statusLabel": "已公布",
       "publicationStatus": "verified",
-      "title": "OpenAI 发布 Claude Mythos rival GPT",
-      "originalTitle": "OpenAI launches Claude Mythos rival GPT-5.6 Sol under government access it calls unsustainable",
-      "subject": "OpenAI",
-      "action": "launches",
-      "object": "Claude Mythos rival GPT-5.6 Sol under government access it calls unsustainable",
+      "title": "特朗普政府发布Anthropic Mythos，供超过100家美国企业和机构使用",
+      "originalTitle": "Trump Admin releases Anthropic Mythos to be used by more than 100 US companies, agencies",
+      "subject": "Trump Admin",
+      "action": "releases",
+      "object": "Anthropic Mythos to be used by more than 100 US companies, agencies",
       "metrics": [],
       "locations": [
-        "US"
+        "US",
+        "U.S."
       ],
-      "missingFields": [],
+      "missingFields": [
+        "event_time"
+      ],
       "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        }
-      ],
+      "tags": [],
       "facets": {
         "product_form": [],
         "use_case": [
@@ -1108,12 +1528,6 @@
       },
       "classifications": [
         {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        },
-        {
           "dimensionId": "use_case",
           "id": "cybersecurity",
           "dimensionName": "应用场景",
@@ -1126,26 +1540,30 @@
           "id": "cybersecurity",
           "dimensionName": "应用场景",
           "name": "网络安全"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
         }
       ],
       "entityIds": [
-        "EN-7d3194f79e645c42",
-        "EN-c70eca6b0f88f44d"
+        "EN-8de7e44229714152",
+        "EN-c70eca6b0f88f44d",
+        "EN-db68703d8d719bd0"
       ],
       "entityNames": [
-        "OpenAI",
-        "Anthropic"
+        "Trump Admin",
+        "Anthropic",
+        "Mythos"
       ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://the-decoder.com/openais-claude-mythos-competitor-gpt-5-6-sol-launches-under-government-controlled-access-it-calls-unsustainable",
-      "publisher": "The Decoder AI News"
+      "productName": "Mythos",
+      "products": [
+        {
+          "name": "Mythos",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Anthropic"
+          ]
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/06/26/trump-admin-releases-anthropic-mythos-to-be-used-by-more-than-100-us-companies-agencies",
+      "publisher": "TechCrunch AI"
     },
     {
       "id": "EV-888b9eb73582e21c",
@@ -1158,7 +1576,7 @@
       "status": "announced",
       "statusLabel": "已公布",
       "publicationStatus": "verified",
-      "title": "OpenAI 发布 GPT",
+      "title": "OpenAI在美国AI监管风波中发布GPT-5.6",
       "originalTitle": "OpenAI unveils GPT-5.6 amid US AI regulatory drama",
       "subject": "OpenAI",
       "action": "unveils",
@@ -1220,13 +1638,41 @@
         }
       ],
       "entityIds": [
-        "EN-7d3194f79e645c42"
+        "EN-7d3194f79e645c42",
+        "EN-52fc33ae4d101a5d",
+        "EN-5ce177312903c604",
+        "EN-272d6a7a0db89710"
       ],
       "entityNames": [
-        "OpenAI"
+        "OpenAI",
+        "GPT-5.6",
+        "US AI",
+        "GPT-5.6 amid US AI regulatory drama"
       ],
-      "productName": "",
-      "products": [],
+      "productName": "GPT-5.6",
+      "products": [
+        {
+          "name": "GPT-5.6",
+          "type": "产品/服务",
+          "ownerNames": [
+            "OpenAI"
+          ]
+        },
+        {
+          "name": "US AI",
+          "type": "产品/服务",
+          "ownerNames": [
+            "OpenAI"
+          ]
+        },
+        {
+          "name": "GPT-5.6 amid US AI regulatory drama",
+          "type": "产品/服务",
+          "ownerNames": [
+            "OpenAI"
+          ]
+        }
+      ],
       "sourceUrl": "https://theverge.com/ai-artificial-intelligence/957845/openai-gpt-5-6-trump-administration-ai-preview",
       "publisher": "The Verge AI"
     },
@@ -1254,6 +1700,12 @@
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
+          "id": "guardrails_safety",
+          "name": "安全护栏"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
           "id": "agentic_execution",
           "name": "智能体"
         }
@@ -1273,6 +1725,12 @@
         "target_user": []
       },
       "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "guardrails_safety",
+          "name": "安全护栏"
+        },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
@@ -1296,6 +1754,12 @@
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
+          "id": "guardrails_safety",
+          "name": "安全护栏"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
           "id": "agentic_execution",
           "name": "智能体"
         }
@@ -1309,6 +1773,83 @@
       "productName": "",
       "products": [],
       "sourceUrl": "https://ithome.com/0/968/197.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-482df8a8ef264238",
+      "dataDate": "2026-06-24",
+      "date": "2026-06-23",
+      "updatedDate": "2026-06-24",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "超Claude Mythos 5成绩：OpenAI最强\"抓虫AI\"GPT-5.5-Cyber刷新CyberGym纪录",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "超Claude Mythos 5成绩：OpenAI最强\"抓虫AI\"GPT-5.5-Cyber刷新CyberGym纪录",
+      "metrics": [
+        "81.8%",
+        "83.8%"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "cybersecurity",
+            "dimensionName": "应用场景",
+            "name": "网络安全"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "id": "cybersecurity",
+          "dimensionName": "应用场景",
+          "name": "网络安全"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "cybersecurity",
+          "dimensionName": "应用场景",
+          "name": "网络安全"
+        }
+      ],
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-c70eca6b0f88f44d",
+        "EN-d8494bb34d6ddc43"
+      ],
+      "entityNames": [
+        "OpenAI",
+        "Anthropic",
+        "Claude Mythos 5"
+      ],
+      "productName": "Claude Mythos 5",
+      "products": [
+        {
+          "name": "Claude Mythos 5",
+          "type": "产品/服务",
+          "ownerNames": [
+            "OpenAI"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/967/463.htm",
       "publisher": "IT之家（RSS）"
     },
     {
@@ -1436,28 +1977,26 @@
       "publisher": "TechCrunch：AI（RSS）"
     },
     {
-      "id": "EV-56f80f42cf6a7096",
-      "dataDate": "2026-06-18",
-      "date": "2026-06-18",
-      "updatedDate": "2026-06-18",
-      "eventType": "service_change",
-      "eventTypeLabel": "服务变更",
+      "id": "EV-491e7b4b506ab3e3",
+      "dataDate": "2026-06-20",
+      "date": "2026-06-20",
+      "updatedDate": "2026-06-20",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
       "eventGroup": "模型、产品与服务",
-      "status": "announced",
-      "statusLabel": "已公布",
+      "status": "completed",
+      "statusLabel": "已完成",
       "publicationStatus": "verified",
-      "title": "Anthropic 的 Claude Fable 5 和 Mythos 5 因美国出口管制下线",
+      "title": "美国禁止Anthropic的Fable 5发布，但数字并不在意",
       "originalTitle": "",
-      "subject": "Anthropic 的 Claude Fable 5 和 Mythos 5 因美国出口管制",
-      "action": "下线",
-      "object": "Anthropic 的 Claude Fable 5 和 Mythos 5 因美国出口管制下线",
+      "subject": "美国禁止Anthropic的Fable 5",
+      "action": "发布",
+      "object": "，但数字并不在意",
       "metrics": [],
       "locations": [
-        "United States"
+        "US"
       ],
-      "missingFields": [
-        "object"
-      ],
+      "missingFields": [],
       "conflicts": [],
       "tags": [],
       "facets": {
@@ -1491,15 +2030,27 @@
         }
       ],
       "entityIds": [
-        "EN-c70eca6b0f88f44d"
+        "EN-c70eca6b0f88f44d",
+        "EN-cbc62794911ff31b",
+        "EN-9f15bb7e29e191eb"
       ],
       "entityNames": [
-        "Anthropic"
+        "Anthropic",
+        "Amazon",
+        "Fable 5"
       ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://arstechnica.com/ai/2026/06/dangerous-ai-models-are-coming-no-matter-what",
-      "publisher": "Ars Technica：AI（RSS）"
+      "productName": "Fable 5",
+      "products": [
+        {
+          "name": "Fable 5",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Anthropic"
+          ]
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/podcast/the-us-banned-anthropics-fable-5-release-but-the-numbers-dont-seem-to-care",
+      "publisher": "TechCrunch：AI（RSS）"
     },
     {
       "id": "EV-832fa2db95cfea6e",
@@ -1555,13 +2106,34 @@
         }
       ],
       "entityIds": [
-        "EN-c70eca6b0f88f44d"
+        "EN-c70eca6b0f88f44d",
+        "EN-96eebba49dbbf422",
+        "EN-c8185a1a8a6595ad",
+        "EN-db68703d8d719bd0"
       ],
       "entityNames": [
-        "Anthropic"
+        "Anthropic",
+        "Intel",
+        "Mythos AI",
+        "Mythos"
       ],
-      "productName": "",
-      "products": [],
+      "productName": "Mythos AI",
+      "products": [
+        {
+          "name": "Mythos AI",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Anthropic"
+          ]
+        },
+        {
+          "name": "Mythos",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Anthropic"
+          ]
+        }
+      ],
       "sourceUrl": "https://bloomberg.com/news/articles/2026-06-15/why-was-anthropic-s-mythos-ai-blocked-security-risks-and-capabilities-explained",
       "publisher": "Bloomberg：Technology（RSS）"
     },
@@ -1617,15 +2189,198 @@
         }
       ],
       "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-3a13916345b60fad"
+      ],
+      "entityNames": [
+        "Anthropic",
+        "Claude Fable 5"
+      ],
+      "productName": "Claude Fable 5",
+      "products": [
+        {
+          "name": "Claude Fable 5",
+          "type": "模型",
+          "ownerNames": [
+            "Anthropic"
+          ]
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/06/09/anthropic-released-claude-fable-5-its-most-powerful-model-publicly-days-after-warning-ai-is-getting-too-dangerous",
+      "publisher": "TechCrunch：AI（RSS）"
+    },
+    {
+      "id": "EV-7133e378762edda5",
+      "dataDate": "2026-06-10",
+      "date": "2026-06-10",
+      "updatedDate": "2026-06-10",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Claude Fable 发布：Anthropic 带来的另一种推理体验",
+      "originalTitle": "",
+      "subject": "Claude Fable",
+      "action": "发布",
+      "object": "：Anthropic 带来的另一种推理体验",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "cybersecurity",
+            "dimensionName": "应用场景",
+            "name": "网络安全"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "id": "cybersecurity",
+          "dimensionName": "应用场景",
+          "name": "网络安全"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "cybersecurity",
+          "dimensionName": "应用场景",
+          "name": "网络安全"
+        }
+      ],
+      "entityIds": [
+        "EN-ced86039c0ad6a7c",
         "EN-c70eca6b0f88f44d"
       ],
       "entityNames": [
+        "Claude Fable",
         "Anthropic"
       ],
       "productName": "",
       "products": [],
-      "sourceUrl": "https://techcrunch.com/2026/06/09/anthropic-released-claude-fable-5-its-most-powerful-model-publicly-days-after-warning-ai-is-getting-too-dangerous",
-      "publisher": "TechCrunch：AI（RSS）"
+      "sourceUrl": "https://oneusefulthing.org/p/what-it-feels-like-to-work-with-mythos",
+      "publisher": "Ethan Mollick：One Useful Thing（RSS）"
+    },
+    {
+      "id": "EV-c7a2774b07554f5d",
+      "dataDate": "2026-06-10",
+      "date": "2026-06-10",
+      "updatedDate": "2026-06-10",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Anthropic 发布 Claude Fable 5 与 Mythos 5",
+      "originalTitle": "",
+      "subject": "Anthropic",
+      "action": "发布",
+      "object": "Claude Fable 5 与 Mythos 5",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "cybersecurity",
+            "dimensionName": "应用场景",
+            "name": "网络安全"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "id": "consumer",
+            "dimensionName": "目标用户",
+            "name": "个人用户"
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "id": "cybersecurity",
+          "dimensionName": "应用场景",
+          "name": "网络安全"
+        },
+        {
+          "dimensionId": "target_user",
+          "id": "consumer",
+          "dimensionName": "目标用户",
+          "name": "个人用户"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "cybersecurity",
+          "dimensionName": "应用场景",
+          "name": "网络安全"
+        },
+        {
+          "dimensionId": "target_user",
+          "id": "consumer",
+          "dimensionName": "目标用户",
+          "name": "个人用户"
+        }
+      ],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-3a13916345b60fad",
+        "EN-b59c577ed73536c6",
+        "EN-9f15bb7e29e191eb"
+      ],
+      "entityNames": [
+        "Anthropic",
+        "Claude Fable 5",
+        "Mythos 5",
+        "Fable 5"
+      ],
+      "productName": "Claude Fable 5",
+      "products": [
+        {
+          "name": "Claude Fable 5",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Anthropic"
+          ]
+        },
+        {
+          "name": "Mythos 5",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Anthropic"
+          ]
+        },
+        {
+          "name": "Fable 5",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Anthropic"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/962/152.htm",
+      "publisher": "IT之家（RSS）"
     },
     {
       "id": "EV-f1418d9e3b1413b7",
@@ -1681,18 +2436,28 @@
         }
       ],
       "entityIds": [
-        "EN-c70eca6b0f88f44d"
+        "EN-c70eca6b0f88f44d",
+        "EN-3a13916345b60fad"
       ],
       "entityNames": [
-        "Anthropic"
+        "Anthropic",
+        "Claude Fable 5"
       ],
-      "productName": "",
-      "products": [],
+      "productName": "Claude Fable 5",
+      "products": [
+        {
+          "name": "Claude Fable 5",
+          "type": "模型",
+          "ownerNames": [
+            "Anthropic"
+          ]
+        }
+      ],
       "sourceUrl": "https://techcrunch.com/2026/06/09/anthropics-claude-fable-5-is-a-version-of-mythos-the-public-can-access-today",
       "publisher": "TechCrunch：AI（RSS）"
     },
     {
-      "id": "EV-ff3ae595bf49ccbf",
+      "id": "EV-2eabd03665cbdef7",
       "dataDate": "2026-06-10",
       "date": "2026-06-09",
       "updatedDate": "2026-06-10",
@@ -1743,14 +2508,88 @@
         }
       ],
       "entityIds": [
-        "EN-c70eca6b0f88f44d"
+        "EN-842a7da99bd249d4",
+        "EN-c70eca6b0f88f44d",
+        "EN-9f15bb7e29e191eb"
       ],
       "entityNames": [
-        "Anthropic"
+        "Anthropic 明日",
+        "Anthropic",
+        "Fable 5"
       ],
+      "productName": "Fable 5",
+      "products": [
+        {
+          "name": "Fable 5",
+          "type": "模型",
+          "ownerNames": [
+            "Anthropic"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/961/945.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-a35a3871bf36fea2",
+      "dataDate": "2026-06-06",
+      "date": "2026-06-07",
+      "updatedDate": "2026-06-07",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "美国全面推进 AI 军事应用，特朗普要求 90 天内修订自主武器规则",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "美国全面推进 AI 军事应用，特朗普要求 90 天内修订自主武器规则",
+      "metrics": [],
+      "locations": [
+        "美国"
+      ],
+      "missingFields": [
+        "entities"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "cybersecurity",
+            "dimensionName": "应用场景",
+            "name": "网络安全"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "id": "cybersecurity",
+          "dimensionName": "应用场景",
+          "name": "网络安全"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "cybersecurity",
+          "dimensionName": "应用场景",
+          "name": "网络安全"
+        }
+      ],
+      "entityIds": [],
+      "entityNames": [],
       "productName": "",
       "products": [],
-      "sourceUrl": "https://ithome.com/0/961/945.htm",
+      "sourceUrl": "https://ithome.com/0/961/014.htm",
       "publisher": "IT之家（RSS）"
     }
   ],
@@ -1821,6 +2660,27 @@
       "lastSeen": "2026-06-19"
     },
     {
+      "id": "EN-634561e92b7593c3",
+      "name": "AI Gateway OpenRouter",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-0e84a2f49d765ce3"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-cybersecurity"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-08",
+      "lastSeen": "2026-06-08"
+    },
+    {
       "id": "EN-bbdefa2950f49882",
       "name": "Google",
       "entityType": "organization_candidate",
@@ -1833,126 +2693,132 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-10c70ced68ccb31b",
-        "EV-d4d7b019ff0015df",
-        "EV-21c2e81a7c073e04",
-        "EV-54e23045d3334e65",
+        "EV-e41fc65eb014893f",
+        "EV-dfddbb260b3d1c77",
+        "EV-2bb63a3015195f9b",
         "EV-43b56d49df9a73a2",
-        "EV-6180de2e02597d9d",
-        "EV-968709fe29b77eba",
+        "EV-0e84a2f49d765ce3",
         "EV-dbbe3fd637be213f",
         "EV-4a162c41bb82f325",
-        "EV-9fc8a84b3d0797d1",
-        "EV-57105df2fcada2e5",
+        "EV-cf76f090a1a20a36",
         "EV-36a9e4e908249381",
         "EV-ef6464cf7f764835",
         "EV-b95539d17772a4ce",
-        "EV-df5831ff5762432d",
+        "EV-d1a3f5c8045e548d",
         "EV-f949fd95df58d42d",
-        "EV-a9a3b5b56befe593",
-        "EV-f7e41493addd1104",
-        "EV-3398ae53a199be16",
+        "EV-97747aee0cafd9f3",
+        "EV-c0a65877001ed413",
         "EV-04efb4eecbb8125f",
         "EV-6359c9f6c2609a38",
-        "EV-04ee2bc4ac888358",
         "EV-c2d784ef0a5376f8",
-        "EV-302018f2e960a8bf",
-        "EV-aa962ef7ec9a5c50",
-        "EV-db1d74f0bfcc1b04",
+        "EV-967239f907803753",
+        "EV-ac8f8581cd1ca75d",
         "EV-f05783f745bc7c2c",
-        "EV-52508b70ccd2cc0b",
-        "EV-f9eebe4e3b9b667c",
-        "EV-c410d77c8d531e5f",
-        "EV-268250d426c1a4a0",
-        "EV-04873bbc8be8e70d",
+        "EV-d12aa40eff40c97e",
+        "EV-96c8ce4ee89adb84",
+        "EV-caec65aef89d3b4a",
+        "EV-cabc88e1d09dec80",
+        "EV-cc3b92fe233953cf",
+        "EV-0edb0a592ca1fd67",
         "EV-2059f42c7b2aff44",
-        "EV-9fac0983ab657689",
-        "EV-4c0e7025692ab98c",
+        "EV-77662aa9bef9efbe",
+        "EV-7e52d691a0553667",
         "EV-b8bba030747fd3b6",
-        "EV-8daf217ff024ac4a",
+        "EV-8aead769e84de342",
+        "EV-eddb4330fed15762",
         "EV-2298304e18dbf493",
         "EV-89b644ff05e6b93b",
-        "EV-8fad966ecb9b1d31",
         "EV-9c4b862020202f6c",
         "EV-d8c69ed782b73a34",
-        "EV-c0f86afbefa2e0a6",
+        "EV-5012364af7480121",
         "EV-abf0990dcaceb1ce",
-        "EV-c60208ea9b51f47a",
-        "EV-c6359191a071b538",
+        "EV-d5cc9a50a9b88d2b",
         "EV-b860d46fee913f27",
-        "EV-09d3ce5611881ed4",
-        "EV-c033ae6f9784d674",
+        "EV-f953555178744c22",
         "EV-28145c97a7237d6d",
-        "EV-e6771f58d7c2a050",
-        "EV-b8b39e635aa7511f",
+        "EV-c108e7cc2df7faf4",
+        "EV-916bcaee6266e0d0",
         "EV-54c329f4c8e4227b",
-        "EV-7808c274ce0aa0bf",
-        "EV-c3cbf5d7f860c693",
+        "EV-dfba03031e5726ad",
         "EV-009105cbcf82a638",
-        "EV-b9a009b48d4cbf85",
-        "EV-b3809ff557361cc2",
-        "EV-bc71b0ddefa209a9",
-        "EV-a85fe927f20c2595",
-        "EV-b4f3dcac8cc230d9",
-        "EV-175af8c7b8146340",
-        "EV-d2d1834222ab32d3",
+        "EV-99e5df844a1bd670",
+        "EV-1b03e5dff76a50a1",
+        "EV-51dfd0d541380500",
+        "EV-ab3586268ebfab38",
+        "EV-e4b5fe493066804b",
+        "EV-8ca7da5081a2e2fc",
+        "EV-8eed6489ab514823",
         "EV-22b8d155ce027905",
-        "EV-d6f638da9e1d3b46",
+        "EV-3ef3e18df61a00d8",
+        "EV-4bb5b24400e49ea4",
+        "EV-97a8d86baa7fffc4",
         "EV-0ad758b04b9b5313",
-        "EV-3ed6744b43d9b8df",
         "EV-c08837795f9e16d2",
-        "EV-4a3cb762183581cd",
-        "EV-59933d63c4051085",
-        "EV-588cf9609e44edc9",
-        "EV-7fa23cf0102a8f92",
-        "EV-c28e0d02272537d8",
-        "EV-d31057c6f6ec28ba",
-        "EV-342799d4e68e7416",
+        "EV-9bc41f08cb0b4f39",
+        "EV-5a1422a9929c582e",
+        "EV-bff418b2959f58fb",
+        "EV-e878e56967902718",
+        "EV-5493c61bcbe58aa2",
+        "EV-cac9d9f31ef675ce",
+        "EV-dab4d3f2059e8880",
+        "EV-0d1980baa83e1e6c",
         "EV-d53cd33e8f541a65",
         "EV-a4f052325d0ef230",
         "EV-ef823877347ff40f",
         "EV-3e9a0d1be6de5096",
         "EV-8cd7665e40729256",
         "EV-2d56dec8dfeb2b56",
-        "EV-6266c73d470e8aef",
         "EV-ad269fada2269f35",
-        "EV-bce258f8f915ff5f"
+        "EV-bce258f8f915ff5f",
+        "EV-1df9b606627460f7",
+        "EV-39460c022e56badd"
       ],
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-industry-manufacturing",
         "TX-technology-code_generation",
         "TX-use_case-enterprise_operations",
         "TX-use_case-software_development",
-        "TX-use_case-robotics_automation",
-        "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-industry-financial_services",
-        "TX-technology-on_device",
         "TX-use_case-cybersecurity",
         "TX-industry-retail_ecommerce",
-        "TX-technology-human_in_loop",
-        "TX-industry-telecommunications",
-        "TX-industry-technology",
-        "TX-technology-multimodal",
+        "TX-technology-on_device",
         "TX-technology-retrieval_augmented_generation",
-        "TX-use_case-knowledge_search",
         "TX-technology-embodied_ai",
-        "TX-technology-speech_audio",
         "TX-industry-media_entertainment",
+        "TX-technology-multimodal",
         "TX-technology-video_generation",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
         "TX-technology-fine_tuning",
-        "TX-technology-computer_use"
+        "TX-use_case-content_creation",
+        "TX-technology-computer_use",
+        "TX-technology-speech_audio"
       ],
       "relatedEntityIds": [
         "EN-96eebba49dbbf422",
         "EN-81e577740888ca6d",
         "EN-1229af0aa3b0305e",
         "EN-992eafe973f69075",
-        "EN-0e008e2c06144ec8"
+        "EN-40f98159922ab514",
+        "EN-834ab0b6e4492d23",
+        "EN-ffc6caa049c23d48",
+        "EN-242e21e3dc6869a9",
+        "EN-151013fb8438c046",
+        "EN-77fe4e790d5bc756",
+        "EN-8d323d8bba783aa3",
+        "EN-9ff1a58a589bc318",
+        "EN-01f1074bb52ff605",
+        "EN-0e008e2c06144ec8",
+        "EN-f2c032b19edb7900",
+        "EN-d4c56709df757c56",
+        "EN-6470c8584a9d35d3",
+        "EN-b5c336c0dd1ff29c",
+        "EN-eb0cc8fb584389db",
+        "EN-d56aa2f9908f566a",
+        "EN-4baef0e41cbd7ae2",
+        "EN-e3db3da2b7dc6057"
       ],
       "firstSeen": "2026-05-22",
       "lastSeen": "2026-07-17"
@@ -1968,21 +2834,20 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-ed65f3187aa6aa40",
-        "EV-60b2d4d401bf5e97",
+        "EV-4eaf3aabecae6016",
+        "EV-87432dbb99cd6033",
+        "EV-6e516b6e68def9cf",
         "EV-e41fc65eb014893f",
-        "EV-39894e375aacee77",
-        "EV-efca54f3b07072a6",
+        "EV-040fc355bc12a750",
         "EV-80e54c9a390da293",
-        "EV-d16fc5601c04a6a2",
+        "EV-4118202ed0f91895",
         "EV-236cbc2d64f0c455",
-        "EV-6180de2e02597d9d",
-        "EV-968709fe29b77eba",
-        "EV-adafffa563a53d49",
-        "EV-1f842e1dff69bb87",
-        "EV-9a7cd217a7a9a51c",
+        "EV-0e84a2f49d765ce3",
         "EV-cafe435ddd007821",
-        "EV-283e88bdd15ed87e",
+        "EV-36d484148fbd3424",
+        "EV-47a16db069ed320e",
+        "EV-cf76f090a1a20a36",
+        "EV-7263caa45bbf168e",
         "EV-234ad54940674bf6",
         "EV-5b16886442234f81",
         "EV-ef6464cf7f764835",
@@ -1991,72 +2856,83 @@
         "EV-4faa2bcf2e42e60c",
         "EV-9ee3c0ec243b6129",
         "EV-58c1cc3749294649",
-        "EV-303b418c63895ba6",
+        "EV-6b51b1b6fe22c540",
+        "EV-c2800c1c5a3f568f",
         "EV-1ff169120ed385f6",
-        "EV-082314251be505e2",
-        "EV-0a5e65aa46b0d194",
+        "EV-47d14d0aa4d4414e",
+        "EV-f7b60c0c63403f8c",
+        "EV-6139380f3362803b",
+        "EV-96c8ce4ee89adb84",
         "EV-53f881da31630a04",
-        "EV-3028dfadf94c8f4c",
-        "EV-412a140df8d75c45",
+        "EV-6a2f3e9a22edff64",
+        "EV-f784003febc1d9eb",
+        "EV-587c18cb1837c74f",
+        "EV-bd66e5b45a6a577e",
         "EV-53564b1f0fd2214b",
-        "EV-09610316ac52221e",
-        "EV-c0f86afbefa2e0a6",
-        "EV-c718a5ff4b0acd66",
-        "EV-722c2a8dd6b70abd",
-        "EV-6eb9a23be3117421",
-        "EV-13f105479652938d",
-        "EV-3456f723929eff1b",
-        "EV-66338f5fb682617e",
+        "EV-7fb25ff3d853c314",
+        "EV-8a91e14f37d32b4d",
+        "EV-13f0b515194f3245",
+        "EV-5d50eb202b478bd4",
+        "EV-e2db9c4e7c16ae7a",
+        "EV-69fbe85ca4ac81cd",
+        "EV-b7ba9acba80a852e",
+        "EV-4bb5b24400e49ea4",
         "EV-568d2aeab5234e48",
-        "EV-305091abd41ad88d",
-        "EV-a24f9cba6b31439e",
         "EV-b986a633cca27df9",
-        "EV-57597c92f7b183a9",
         "EV-2258329f33d413cf",
-        "EV-19ea623bb5eabdd5",
+        "EV-4bf0e4043c3562f2",
         "EV-309ea4fc27a66485",
+        "EV-fa1b1efd77f36d56",
         "EV-4026c95d4c01b96e",
-        "EV-66970d4aea37111f",
-        "EV-aa63303570154a9b",
-        "EV-cbc8b53d4f4478b1",
-        "EV-d2a00623908ca15f",
+        "EV-631197767a45d34c",
+        "EV-67f32771d69084d6",
         "EV-d2ac9700c86913da",
         "EV-d43a561da59b2897",
-        "EV-fc2164eb66e27f7e",
+        "EV-f5755fccd5731063",
+        "EV-34929bdd016dc8d6",
+        "EV-710b145230faa692",
         "EV-0b49d637d7c07ce0"
       ],
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
-        "TX-use_case-customer_service",
+        "TX-technology-code_generation",
         "TX-industry-healthcare_life_sciences",
-        "TX-use_case-robotics_automation",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
-        "TX-technology-on_device",
         "TX-use_case-cybersecurity",
-        "TX-industry-retail_ecommerce",
-        "TX-industry-telecommunications",
-        "TX-industry-technology",
-        "TX-technology-multimodal",
+        "TX-technology-on_device",
         "TX-technology-embodied_ai",
-        "TX-technology-speech_audio",
+        "TX-industry-automotive_transportation",
         "TX-technology-open_weights",
+        "TX-industry-telecommunications",
         "TX-industry-media_entertainment",
+        "TX-use_case-robotics_automation",
+        "TX-technology-multimodal",
+        "TX-technology-guardrails_safety",
         "TX-technology-reasoning",
-        "TX-technology-inference_optimization"
+        "TX-technology-fine_tuning",
+        "TX-technology-image_generation",
+        "TX-technology-inference_optimization",
+        "TX-technology-speech_audio"
       ],
       "relatedEntityIds": [
         "EN-0f3360879e746531",
-        "EN-fbe26af59be95e52",
-        "EN-2b119dc14de9478d",
-        "EN-a1b0d8a938903dc7",
+        "EN-51fd7dc086fcb858",
+        "EN-9e193e1ec8d75d41",
         "EN-8395dc051feafc4c",
+        "EN-936f01f91fdadf69",
+        "EN-2f354de778e6a6da",
         "EN-b5738c169b693bee",
-        "EN-9fbf261b62c1d7c0"
+        "EN-1dc405a4cda895d0",
+        "EN-12ab68e37d104d27",
+        "EN-a3266ab9e10d6105",
+        "EN-ab9e3beebd83960d",
+        "EN-9fbf261b62c1d7c0",
+        "EN-e246a1f9a090075b"
       ],
-      "firstSeen": "2026-05-18",
+      "firstSeen": "2025-03-18",
       "lastSeen": "2026-07-17"
     },
     {
@@ -2070,10 +2946,13 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-6180de2e02597d9d",
-        "EV-fa930fb25552f666",
+        "EV-0e84a2f49d765ce3",
+        "EV-eb2b4ee2c8cb0daa",
+        "EV-01df8e489a34893b",
+        "EV-181b425d2a600cad",
         "EV-b95539d17772a4ce",
-        "EV-f63462e34ea40699"
+        "EV-f63462e34ea40699",
+        "EV-3474febbec499f3c"
       ],
       "viewpointIds": [],
       "classificationRefs": [
@@ -2084,8 +2963,8 @@
       "relatedEntityIds": [
         "EN-8d4321d936320802"
       ],
-      "firstSeen": "2026-06-08",
-      "lastSeen": "2026-07-09"
+      "firstSeen": "2026-05-06",
+      "lastSeen": "2026-07-15"
     },
     {
       "id": "EN-c70eca6b0f88f44d",
@@ -2101,180 +2980,236 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-7f77e6a2d1698307",
-        "EV-10c70ced68ccb31b",
-        "EV-6fe0054517fdee98",
+        "EV-e41fc65eb014893f",
+        "EV-974a6b7d0e0efef2",
+        "EV-dfddbb260b3d1c77",
         "EV-80e54c9a390da293",
-        "EV-5ca4c08ec3e2c3b7",
-        "EV-7aaed0a2ae5cf8b6",
-        "EV-21c2e81a7c073e04",
+        "EV-d4e44892226be468",
+        "EV-e7dcecaed5a0ee5b",
         "EV-edcb66d0401cfb8f",
-        "EV-052d7d9120c683d1",
-        "EV-19d4c2ef8d9f338a",
-        "EV-6180de2e02597d9d",
-        "EV-f64345af2affb07d",
-        "EV-05be25222ebd2bc2",
+        "EV-9055cb4fa2b4ee62",
+        "EV-0e84a2f49d765ce3",
+        "EV-bc4ac955cd26b969",
+        "EV-5d581d112fdbd464",
         "EV-201b25d4f3cf696a",
-        "EV-853559d61ae2e313",
-        "EV-7958f9adf8f62577",
-        "EV-06fd0cc175652354",
+        "EV-cbc0b7a7d21a29e2",
+        "EV-1abf0d076d30ec6d",
         "EV-ed8260ee9a7a80af",
-        "EV-5964027086487940",
+        "EV-47a16db069ed320e",
+        "EV-49c6291694fb6c7b",
+        "EV-d1e2a7c6d314612c",
         "EV-e1a4bc40db4a9d8f",
         "EV-c81cb21337a9bb98",
         "EV-94e0afb44c320c99",
         "EV-7f2811d2272cf4a3",
         "EV-6415a58637893b34",
+        "EV-4515377aa6311bf1",
         "EV-ef6464cf7f764835",
-        "EV-727ba25770d1f897",
-        "EV-4b0a7d68040c37aa",
+        "EV-bb9ba11acf104db1",
+        "EV-a16be3cb9dad7cfe",
         "EV-f949fd95df58d42d",
+        "EV-9884a0317e1e6ae7",
         "EV-b240fb11e65b018e",
-        "EV-30e8529ddeb228c8",
-        "EV-3398ae53a199be16",
+        "EV-bad301e14b034fbd",
+        "EV-c0a65877001ed413",
         "EV-0d5a32aca724d30e",
         "EV-a8a8f26c5128d894",
         "EV-51645a3b1e730105",
         "EV-7c899d5decafc42f",
+        "EV-c2800c1c5a3f568f",
         "EV-26cd4d692404e5c6",
         "EV-1c2723ad61d192bd",
         "EV-84226288807f817b",
         "EV-8bf42c1816e772ba",
         "EV-0347414d81e7f02e",
-        "EV-917a138950a21f91",
-        "EV-fd303844e336b9ee",
+        "EV-5cd7eaa56c1fbb83",
         "EV-2bd337245c920bc8",
-        "EV-302018f2e960a8bf",
-        "EV-000f2abf549268a6",
-        "EV-ebe02c213368afae",
+        "EV-025778b83c1b2ca9",
+        "EV-969ed3078d10f0c9",
+        "EV-b920999c64aa9ef6",
+        "EV-730a2f95a698a96d",
         "EV-d39b53ca7b84b9ca",
+        "EV-cf317dd1579a01bb",
+        "EV-fcbd97e1f30c95e3",
+        "EV-ee9a1c99fe7054d6",
+        "EV-cadcc94249dea81d",
         "EV-cedeae902fd1263d",
-        "EV-3cd088098be5d0d4",
-        "EV-c410d77c8d531e5f",
+        "EV-92fbbeb840a98e97",
+        "EV-caec65aef89d3b4a",
+        "EV-70efbfcaadcdb259",
         "EV-e130583e34ab9d4c",
-        "EV-e31f0616ad878b7d",
+        "EV-a2476148e8f1eec4",
         "EV-598888cce208de5c",
         "EV-d40a4e1b7a53cabe",
-        "EV-268250d426c1a4a0",
+        "EV-51aed98773a9fca1",
+        "EV-9f04529a3a216060",
+        "EV-c12f0ae399078a56",
+        "EV-cc3b92fe233953cf",
         "EV-2059f42c7b2aff44",
-        "EV-9fac0983ab657689",
-        "EV-9ab36b0012b5c8c1",
-        "EV-eb02b3d3b25fe584",
+        "EV-578a9db1fe952d0a",
+        "EV-8b5801b69eb1781b",
+        "EV-b93b5cc15823e9c3",
+        "EV-f784003febc1d9eb",
+        "EV-20ffa968bcbc4729",
+        "EV-77662aa9bef9efbe",
+        "EV-8f0c63ed7bb153dc",
+        "EV-9c0552732b34f278",
+        "EV-bf6f67c47c6b0d7c",
+        "EV-9ca7db66f8f10b63",
         "EV-63fdf001c22a0ed4",
         "EV-2f81b0d48d128f5c",
-        "EV-8daf217ff024ac4a",
+        "EV-8aead769e84de342",
+        "EV-d2c370511e9e55fe",
+        "EV-eddb4330fed15762",
         "EV-01212a5ad9db6a20",
         "EV-13e06fc12cc3fb7c",
-        "EV-1662a98c563d3dce",
         "EV-3b5cb867fdaba28f",
-        "EV-761d76b722321673",
+        "EV-3b77f14fea21485e",
         "EV-9c4b862020202f6c",
-        "EV-ff748f8529cd80e7",
-        "EV-09610316ac52221e",
+        "EV-7fb25ff3d853c314",
         "EV-918fc324de3117bd",
-        "EV-c0f86afbefa2e0a6",
-        "EV-87ad2bdf8cd4b0c8",
+        "EV-a4b72879f3d73ea4",
+        "EV-1ec24a430911185c",
         "EV-860b90c017deaa59",
+        "EV-13f0b515194f3245",
         "EV-445db243814e88d0",
-        "EV-722c2a8dd6b70abd",
         "EV-abf0990dcaceb1ce",
         "EV-46b9ae8e68164b93",
-        "EV-9659eb492a9eea1b",
-        "EV-cf883e02c693dfea",
+        "EV-b26bead25288d19c",
         "EV-3ff2a155035d01e7",
         "EV-644337db309a1c82",
+        "EV-b796ba14c4eba861",
         "EV-7e6e0470ea99a6eb",
         "EV-cb08f263d23e6c00",
-        "EV-09d3ce5611881ed4",
+        "EV-482df8a8ef264238",
         "EV-9536c76cee278fcb",
-        "EV-ad2c8dc4a08de64c",
-        "EV-53f7c11bfe7b50d1",
+        "EV-9e04edd969c977a1",
+        "EV-2aca9a810ea65555",
+        "EV-ceb7d70f0043eb81",
+        "EV-f953555178744c22",
         "EV-28145c97a7237d6d",
         "EV-491e7b4b506ab3e3",
+        "EV-f0caa4082916d619",
+        "EV-574998b1638a3f4f",
+        "EV-266aff97294156f6",
         "EV-2af2957a10b3c198",
-        "EV-67d9c51e97dfbb7b",
-        "EV-56f80f42cf6a7096",
+        "EV-534dc9add1c0cc35",
         "EV-60c27ec9b857f5c2",
-        "EV-745adb0e9f7a75a2",
-        "EV-d50a2832bb30b287",
+        "EV-cec69087dc8992e0",
+        "EV-ab3586268ebfab38",
         "EV-832fa2db95cfea6e",
         "EV-f2acdcbe3b644340",
-        "EV-91d9e2c780593bbb",
+        "EV-2cb9dbed2b2b6077",
         "EV-461b38cb8f56b067",
-        "EV-61b97c0ee6ad83b3",
         "EV-57f083a39393d841",
-        "EV-6007062e7e4a6f5e",
+        "EV-a695ff8c1cff8c64",
         "EV-adbdaa251b42ec79",
-        "EV-43fdb17a23e13f97",
         "EV-689538e8159887de",
+        "EV-6af31d42885e0361",
         "EV-68fcce7fde89e5d7",
-        "EV-b0145ffd99b55e66",
+        "EV-7133e378762edda5",
         "EV-c7a2774b07554f5d",
         "EV-e09bff5515b1896b",
-        "EV-f107a073158480a9",
         "EV-f1418d9e3b1413b7",
         "EV-f5dd192f6d4e04a3",
-        "EV-ff3ae595bf49ccbf",
-        "EV-3371b45e53949464",
+        "EV-2eabd03665cbdef7",
         "EV-9127c613a365044b",
         "EV-c5b8faec223a4caf",
-        "EV-fd527f43b5eb5f0a",
-        "EV-2de6ff1a7aebd6e7",
-        "EV-59933d63c4051085",
+        "EV-f6611268f119a172",
+        "EV-ad1444d8653b37ae",
         "EV-d83bfcd73c850580",
-        "EV-1d972159120db2fc",
-        "EV-4a727d54055d6d0e",
         "EV-dbeae330706b53ca",
         "EV-abaf05e513f88a4f",
-        "EV-d2a00623908ca15f",
-        "EV-4f4274fb5920a8b4",
-        "EV-0aa2e53c51b2b8e5",
+        "EV-631197767a45d34c",
+        "EV-ce291577f61b8543",
+        "EV-773ffcc6e1df56fa",
         "EV-2d56dec8dfeb2b56",
-        "EV-2ca9d0a3ca53c3bf",
-        "EV-aef95763358b4ec8",
-        "EV-6266c73d470e8aef",
-        "EV-d26ad59ffe89d45a",
+        "EV-62df953d81def866",
+        "EV-0c541092e3ba6dac",
         "EV-9705a8de3c2e9653",
+        "EV-ed3baeeb5137137f",
         "EV-68edd592c36dccd3",
         "EV-d49da50484ba781f",
         "EV-ad269fada2269f35",
-        "EV-978474e4af50eb35"
+        "EV-710b145230faa692",
+        "EV-4900ddf0686f4bbc",
+        "EV-5e4db66a00cb2158",
+        "EV-77ddb45e31018552"
       ],
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
         "TX-technology-code_generation",
-        "TX-use_case-customer_service",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-enterprise_operations",
         "TX-use_case-software_development",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-industry-financial_services",
-        "TX-technology-on_device",
         "TX-use_case-cybersecurity",
         "TX-use_case-data_analysis",
         "TX-industry-retail_ecommerce",
-        "TX-technology-human_in_loop",
-        "TX-industry-telecommunications",
-        "TX-technology-multimodal",
-        "TX-technology-retrieval_augmented_generation",
+        "TX-technology-on_device",
         "TX-technology-embodied_ai",
-        "TX-technology-speech_audio",
         "TX-technology-open_weights",
-        "TX-technology-tool_use",
         "TX-technology-model_context_protocol",
+        "TX-technology-guardrails_safety",
+        "TX-technology-tool_use",
         "TX-industry-government_public_sector",
         "TX-technology-fine_tuning",
-        "TX-industry-education"
+        "TX-industry-education",
+        "TX-technology-distillation"
       ],
       "relatedEntityIds": [
+        "EN-cb4754c48f8023d0",
         "EN-3a9b395103419892",
+        "EN-729324072d368379",
         "EN-7d3194f79e645c42",
-        "EN-9612b6f6884e062f"
+        "EN-9612b6f6884e062f",
+        "EN-ef11a801c5bd3673",
+        "EN-9418d9e3d1e469cf",
+        "EN-dca4b9c41c4f7a0a",
+        "EN-2ec3a04623962df8",
+        "EN-40bad8003c5ee358",
+        "EN-85a7b756f3a700d0",
+        "EN-fab30471ea65d627",
+        "EN-b8c236d640d6a5fb",
+        "EN-db68703d8d719bd0",
+        "EN-9f15bb7e29e191eb",
+        "EN-3a13916345b60fad",
+        "EN-77fe4e790d5bc756",
+        "EN-5a4c2be958c0af72",
+        "EN-a18162bf7228289d",
+        "EN-8218ed4e007b0ad1",
+        "EN-bb5b6487f881bbb1",
+        "EN-2c063f604e634100",
+        "EN-4f237537da9719b4",
+        "EN-774251f8d6e46d3d",
+        "EN-d0a0acb9a5ef0560",
+        "EN-5fc6493a57c5f14e",
+        "EN-ad2cec837f9cb98f",
+        "EN-29eb5745fdfcb027",
+        "EN-7ec0224e483d913b",
+        "EN-e61ac98ebb45d0db",
+        "EN-e4ffb7bd879b89da",
+        "EN-1e4fdc17666edc33",
+        "EN-c8185a1a8a6595ad",
+        "EN-d65f09457cc098a8",
+        "EN-ea4ea767088c4a22",
+        "EN-c23eb5fae3cdd763",
+        "EN-3153ebda601cdb79",
+        "EN-b59c577ed73536c6",
+        "EN-4db5fd308d379cab",
+        "EN-96eebba49dbbf422",
+        "EN-d8494bb34d6ddc43",
+        "EN-540dfc8c5e1b1136",
+        "EN-9ab4135a1cdb0a8c",
+        "EN-fe7f2cc6a2c87e0b",
+        "EN-16f9e91ad20e6467",
+        "EN-f1360a6b087edd47"
       ],
-      "firstSeen": "2026-03-13",
+      "firstSeen": "2026-05-14",
       "lastSeen": "2026-07-17"
     },
     {
@@ -2291,118 +3226,145 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-7f77e6a2d1698307",
-        "EV-c9af33ffe65d236b",
-        "EV-efca54f3b07072a6",
-        "EV-10c70ced68ccb31b",
-        "EV-adf92ecb7cd8714f",
-        "EV-384cc24be4b56cb5",
-        "EV-21c2e81a7c073e04",
+        "EV-4da1a7c4d527eb69",
+        "EV-e41fc65eb014893f",
+        "EV-974a6b7d0e0efef2",
+        "EV-dfddbb260b3d1c77",
+        "EV-20d762872664fddb",
+        "EV-aa33ca051f3a7f78",
+        "EV-d4e44892226be468",
         "EV-edcb66d0401cfb8f",
-        "EV-b1138bccf5ccd86c",
+        "EV-a42e51959c627554",
         "EV-ee0662b75588987e",
-        "EV-052d7d9120c683d1",
-        "EV-6180de2e02597d9d",
+        "EV-9055cb4fa2b4ee62",
+        "EV-0e84a2f49d765ce3",
         "EV-201b25d4f3cf696a",
-        "EV-853559d61ae2e313",
-        "EV-7dac684a33062b7f",
-        "EV-06fd0cc175652354",
-        "EV-1f842e1dff69bb87",
-        "EV-8a0866a27909f9d9",
+        "EV-1abf0d076d30ec6d",
+        "EV-3b40ec144e5db22c",
         "EV-e15ae1112294d59e",
+        "EV-36d484148fbd3424",
+        "EV-47a16db069ed320e",
+        "EV-49c6291694fb6c7b",
         "EV-62901df23f471eea",
-        "EV-4a4869273654c799",
-        "EV-d3528ccff1833385",
+        "EV-538adc98d1da8fda",
+        "EV-d209a6acecba4285",
+        "EV-a5d127e62d102ad6",
+        "EV-d1e2a7c6d314612c",
         "EV-e1a4bc40db4a9d8f",
+        "EV-83b2e8f7fe679bc3",
+        "EV-8abf5adc3e72fbb8",
         "EV-7f2811d2272cf4a3",
         "EV-2fab4396000198d2",
         "EV-3fb492fb45980541",
-        "EV-58614476c796a67a",
-        "EV-1060a8b37ddd87ac",
-        "EV-b716e560a685c41b",
-        "EV-1fbead21a2dd47a0",
+        "EV-41ffecb51e643397",
+        "EV-26183a56cf9ed63c",
+        "EV-3fbfb89a10efd42f",
+        "EV-1c6adfef6f405319",
+        "EV-66df35d14361a6cb",
         "EV-0d5a32aca724d30e",
         "EV-70e3f88cb06a856c",
         "EV-7c899d5decafc42f",
         "EV-a4a61babc902931a",
         "EV-1c2723ad61d192bd",
-        "EV-cf5b2a0aff3914bd",
-        "EV-302018f2e960a8bf",
-        "EV-000f2abf549268a6",
-        "EV-519205eb50c83300",
-        "EV-ebe02c213368afae",
+        "EV-74dfbd82b47dc626",
+        "EV-167f50a6f3134bd5",
+        "EV-025778b83c1b2ca9",
+        "EV-969ed3078d10f0c9",
+        "EV-d7d8fcd0694a590f",
+        "EV-6e7b632ee0b3410d",
         "EV-efee7c1ac4dc336f",
+        "EV-0dbc7b904378f713",
+        "EV-10eb16192d83dbf7",
+        "EV-ae736eb124d7163a",
         "EV-cf317dd1579a01bb",
+        "EV-d07f7a8d4d20a034",
+        "EV-107725f2bdece882",
+        "EV-6af1e74358025628",
+        "EV-ee9a1c99fe7054d6",
+        "EV-cadcc94249dea81d",
+        "EV-caec65aef89d3b4a",
         "EV-d07906b648eec63f",
         "EV-0510a983e120a381",
-        "EV-3cd088098be5d0d4",
-        "EV-268250d426c1a4a0",
+        "EV-70efbfcaadcdb259",
         "EV-51aed98773a9fca1",
+        "EV-cc3b92fe233953cf",
         "EV-2059f42c7b2aff44",
-        "EV-9fac0983ab657689",
-        "EV-af1d9851e91802af",
+        "EV-578a9db1fe952d0a",
+        "EV-b93b5cc15823e9c3",
+        "EV-20ffa968bcbc4729",
+        "EV-77662aa9bef9efbe",
+        "EV-9ca7db66f8f10b63",
         "EV-9c4b862020202f6c",
+        "EV-5012364af7480121",
         "EV-918fc324de3117bd",
-        "EV-c718a5ff4b0acd66",
+        "EV-8a91e14f37d32b4d",
         "EV-860b90c017deaa59",
         "EV-888b9eb73582e21c",
-        "EV-3f07de398af7a118",
-        "EV-722c2a8dd6b70abd",
+        "EV-13f0b515194f3245",
         "EV-abf0990dcaceb1ce",
         "EV-b8bfab77707274b7",
         "EV-6eb9a23be3117421",
-        "EV-9659eb492a9eea1b",
         "EV-a0d3853dd41c8ef6",
-        "EV-cf883e02c693dfea",
-        "EV-fbde4dad2288059a",
+        "EV-b26bead25288d19c",
         "EV-1e7c76dae985100f",
-        "EV-09d3ce5611881ed4",
+        "EV-644337db309a1c82",
+        "EV-482df8a8ef264238",
         "EV-9110f23a7e60173e",
+        "EV-9e04edd969c977a1",
         "EV-e792252690f98a22",
-        "EV-63a344522ee9e8d4",
+        "EV-2aca9a810ea65555",
+        "EV-f953555178744c22",
         "EV-28145c97a7237d6d",
-        "EV-8160e13555e65130",
+        "EV-0c06df62702d26ab",
         "EV-f01d28aac73c3f9c",
-        "EV-e6771f58d7c2a050",
-        "EV-068a0671fa96b07d",
+        "EV-574998b1638a3f4f",
+        "EV-0b6992ae74184d13",
         "EV-7f979d0a01e6dffa",
-        "EV-d50a2832bb30b287",
-        "EV-91d9e2c780593bbb",
-        "EV-6b74ed049774f0c5",
-        "EV-61b97c0ee6ad83b3",
+        "EV-f3e11eadfb7c6a4b",
+        "EV-ab3586268ebfab38",
+        "EV-2cb9dbed2b2b6077",
+        "EV-d6ba9ef3ff65940c",
+        "EV-3f8ba5855b64dd1a",
         "EV-b73c7096546b82e8",
-        "EV-2de6ff1a7aebd6e7",
-        "EV-59933d63c4051085",
+        "EV-19903b5eef9b1de0",
+        "EV-57b029a4afb71044",
+        "EV-ad1444d8653b37ae",
         "EV-fbdfb5888ad19663",
-        "EV-c28e0d02272537d8",
+        "EV-cac9d9f31ef675ce",
         "EV-4a727d54055d6d0e",
         "EV-e295f808713644c7",
-        "EV-d2a00623908ca15f",
-        "EV-01e414a25347cfd9",
+        "EV-3474febbec499f3c",
+        "EV-519537a36355d82e",
+        "EV-631197767a45d34c",
+        "EV-657837763764c869",
+        "EV-ce291577f61b8543",
         "EV-a4f052325d0ef230",
-        "EV-4f4274fb5920a8b4",
-        "EV-0aa2e53c51b2b8e5",
+        "EV-ca420d07e12369f1",
+        "EV-773ffcc6e1df56fa",
         "EV-5cd10de5c12916f0",
         "EV-067f57f6e6ffa6ce",
         "EV-da6678e4e865e00e",
-        "EV-14b44a40808340f5",
         "EV-2d56dec8dfeb2b56",
         "EV-8cb2374f76202ecc",
+        "EV-946569cccbd9222f",
         "EV-917966af8545a380",
         "EV-b4203b10d6592bf2",
-        "EV-1b5db76949c2795c",
+        "EV-5eb23cdd9c14c6ea",
+        "EV-10e841ab47d2b1f1",
         "EV-f2d29ca7b05c3dd9",
         "EV-ea2b6ce4acd46366",
         "EV-2821d0cef61b3c6a",
         "EV-6f7c5f0abad3d4da",
         "EV-8f497488d129fee5",
         "EV-a8f1204b54ae6475",
-        "EV-2ca9d0a3ca53c3bf",
+        "EV-62df953d81def866",
         "EV-6b7917bd7edd4bde",
         "EV-e1ebf7d63e058a39",
+        "EV-b52af7bb03c98eb0",
         "EV-9705a8de3c2e9653",
         "EV-bce258f8f915ff5f",
-        "EV-4beb890f0879aeaf"
+        "EV-4beb890f0879aeaf",
+        "EV-4900ddf0686f4bbc"
       ],
       "viewpointIds": [],
       "classificationRefs": [
@@ -2410,110 +3372,158 @@
         "TX-industry-manufacturing",
         "TX-technology-code_generation",
         "TX-use_case-customer_service",
-        "TX-industry-professional_services",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-enterprise_operations",
         "TX-use_case-software_development",
-        "TX-use_case-robotics_automation",
         "TX-technology-long_context",
         "TX-industry-financial_services",
         "TX-use_case-cybersecurity",
-        "TX-technology-human_in_loop",
-        "TX-industry-telecommunications",
-        "TX-technology-multimodal",
-        "TX-technology-retrieval_augmented_generation",
-        "TX-use_case-research_science",
+        "TX-use_case-data_analysis",
+        "TX-industry-retail_ecommerce",
+        "TX-industry-professional_services",
+        "TX-industry-technology",
+        "TX-technology-embodied_ai",
         "TX-technology-open_weights",
+        "TX-technology-model_context_protocol",
+        "TX-use_case-robotics_automation",
+        "TX-technology-multimodal",
+        "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
-        "TX-technology-model_context_protocol",
         "TX-technology-fine_tuning",
         "TX-technology-computer_use"
       ],
       "relatedEntityIds": [
-        "EN-c70eca6b0f88f44d"
+        "EN-c70eca6b0f88f44d",
+        "EN-52fc33ae4d101a5d",
+        "EN-7839fb10a8f14c70",
+        "EN-9f15bb7e29e191eb",
+        "EN-047bdfce48c28cfc",
+        "EN-6a50fbf0b970c03a",
+        "EN-d1ad14d4ad57d207",
+        "EN-536c4035ba0c7047",
+        "EN-3c92cc7e49924a6f",
+        "EN-77fe4e790d5bc756",
+        "EN-729324072d368379",
+        "EN-b8c236d640d6a5fb",
+        "EN-db68703d8d719bd0",
+        "EN-272d6a7a0db89710",
+        "EN-5ce177312903c604",
+        "EN-bd2bfbea5911ec7a",
+        "EN-af53dbc3e443f7a9",
+        "EN-b269456229397ef3",
+        "EN-f2272e70be63bc65",
+        "EN-148b42653f5e08b1",
+        "EN-da20c5952dba19d8",
+        "EN-fc0586e76f80f181",
+        "EN-e8b6dfd27f418787",
+        "EN-9de030d092759897",
+        "EN-7bf321fa55418fba"
       ],
-      "firstSeen": "2026-03-13",
+      "firstSeen": "2026-05-19",
       "lastSeen": "2026-07-17"
     },
     {
-      "id": "EN-6fcba5d96a4fadfd",
-      "name": "xAI",
+      "id": "EN-96eebba49dbbf422",
+      "name": "Intel",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "Grok",
-        "SpaceXAI"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
-        "EV-3daefecd0453631a",
-        "EV-edcb66d0401cfb8f",
-        "EV-6180de2e02597d9d",
-        "EV-f64345af2affb07d",
-        "EV-05be25222ebd2bc2",
-        "EV-201b25d4f3cf696a",
-        "EV-e15ae1112294d59e",
-        "EV-58614476c796a67a",
-        "EV-c033ae6f9784d674",
-        "EV-3da99329ccc33816",
-        "EV-175af8c7b8146340",
-        "EV-ed58c2c69290ee4c",
-        "EV-d2a00623908ca15f",
-        "EV-d53cd33e8f541a65",
-        "EV-11a3893cb86fef69",
-        "EV-bce258f8f915ff5f",
-        "EV-4beb890f0879aeaf"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-technology-code_generation",
-        "TX-use_case-software_development",
-        "TX-use_case-robotics_automation",
-        "TX-use_case-cybersecurity",
-        "TX-technology-speech_audio",
-        "TX-technology-tool_use"
-      ],
-      "relatedEntityIds": [
-        "EN-c4bc2d00a42f220f"
-      ],
-      "firstSeen": "2026-05-25",
-      "lastSeen": "2026-07-17"
-    },
-    {
-      "id": "EN-2b6e51bec93e86c1",
-      "name": "Google DeepMind",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [
-        "谷歌 DeepMind"
-      ],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-1ac32035d5e425e1",
-        "EV-adafffa563a53d49",
-        "EV-ef7402351b6b37bd",
-        "EV-67ef7accd26a07a0",
-        "EV-a7e1ecd212474e00",
-        "EV-d961d3ad02f6ae14",
-        "EV-f9eebe4e3b9b667c",
-        "EV-5babb43f4b4d302f",
-        "EV-ff10670ad06959ec",
-        "EV-8ab21bf8e73cf44a",
-        "EV-568d2aeab5234e48",
-        "EV-d6f638da9e1d3b46",
-        "EV-f68e00bb9fd49fac",
-        "EV-3e9a0d1be6de5096",
-        "EV-e96aba142e46eba1",
-        "EV-68edd592c36dccd3",
-        "EV-d49da50484ba781f"
+        "EV-4eaf3aabecae6016",
+        "EV-2dff32c1b6f813e4",
+        "EV-305ec93673f4f12e",
+        "EV-640c5ea9f4fa2780",
+        "EV-6e516b6e68def9cf",
+        "EV-a8dc5c859946f336",
+        "EV-d9cc588fb41a7e67",
+        "EV-48075ca70a5458ec",
+        "EV-7b1c734882fa1ea6",
+        "EV-b3c7c4bff17063d8",
+        "EV-2bb63a3015195f9b",
+        "EV-d4e44892226be468",
+        "EV-921c843ad32c993c",
+        "EV-2bea8d8046a9b325",
+        "EV-5f5f252c6a826599",
+        "EV-e7dcecaed5a0ee5b",
+        "EV-232ab5bcbaf6552d",
+        "EV-14a666fc27d73a80",
+        "EV-9de19f01ac4771fa",
+        "EV-39717cdbada984d7",
+        "EV-dc442b91a69fcc5a",
+        "EV-02548003157849bb",
+        "EV-c0d19b8641a7a36c",
+        "EV-ee0662b75588987e",
+        "EV-e941c32639167c23",
+        "EV-6ae3594aadfcd3d8",
+        "EV-bc4ac955cd26b969",
+        "EV-88f4ee8cd57bdf42",
+        "EV-ef7346378fcf9746",
+        "EV-86489eda802ffc19",
+        "EV-ebe9ed3158df619b",
+        "EV-3b1613cedea7dad4",
+        "EV-59f4561c5243eb98",
+        "EV-c4303801ea8c54dc",
+        "EV-8b0f056571d68269",
+        "EV-b4eb99a878be9bb2",
+        "EV-cfb7c4b4b765f53b",
+        "EV-4dd25589d834060d",
+        "EV-6617850e0b014051",
+        "EV-c81cb21337a9bb98",
+        "EV-36a9e4e908249381",
+        "EV-181b425d2a600cad",
+        "EV-2c87c8ea47cbd1b6",
+        "EV-bb9ba11acf104db1",
+        "EV-2fd730d0ad452334",
+        "EV-b95539d17772a4ce",
+        "EV-f63462e34ea40699",
+        "EV-26183a56cf9ed63c",
+        "EV-97747aee0cafd9f3",
+        "EV-4faa2bcf2e42e60c",
+        "EV-45be473baf6dfa4c",
+        "EV-c2800c1c5a3f568f",
+        "EV-025778b83c1b2ca9",
+        "EV-dce5de62b2e4b752",
+        "EV-57565fc2e7502c59",
+        "EV-e42e55d1e11a2ba2",
+        "EV-41baa43cf05d4288",
+        "EV-6af1e74358025628",
+        "EV-3847d883688587ba",
+        "EV-3a7128e2d7ff149e",
+        "EV-40390136762c64d3",
+        "EV-53f881da31630a04",
+        "EV-b84035029a63e52e",
+        "EV-0edb0a592ca1fd67",
+        "EV-578a9db1fe952d0a",
+        "EV-a70d5cf3ee6d6d64",
+        "EV-f784003febc1d9eb",
+        "EV-7e52d691a0553667",
+        "EV-1e7c76dae985100f",
+        "EV-644337db309a1c82",
+        "EV-9ae9aa86e51e64a2",
+        "EV-be19904753c9c486",
+        "EV-832fa2db95cfea6e",
+        "EV-e28e134345ea5f99",
+        "EV-4e55361d8324dd49",
+        "EV-97a8d86baa7fffc4",
+        "EV-c5b8faec223a4caf",
+        "EV-9eb3693cc65fbca9",
+        "EV-5493c61bcbe58aa2",
+        "EV-95a393fd0183b5f3",
+        "EV-0cb98302768c2e0a",
+        "EV-6ce6b9c9780b97d9",
+        "EV-dd62847548bb6ae3",
+        "EV-34929bdd016dc8d6",
+        "EV-067f57f6e6ffa6ce",
+        "EV-02b07069713d9a1c",
+        "EV-8cb2374f76202ecc",
+        "EV-946569cccbd9222f",
+        "EV-edb1ddb3a091ada4",
+        "EV-9705a8de3c2e9653"
       ],
       "viewpointIds": [],
       "classificationRefs": [
@@ -2522,20 +3532,104 @@
         "TX-technology-code_generation",
         "TX-use_case-customer_service",
         "TX-industry-healthcare_life_sciences",
-        "TX-use_case-software_development",
+        "TX-use_case-enterprise_operations",
         "TX-technology-mixture_of_experts",
+        "TX-industry-financial_services",
         "TX-use_case-cybersecurity",
-        "TX-technology-multimodal",
-        "TX-technology-speech_audio",
-        "TX-use_case-research_science",
+        "TX-use_case-data_analysis",
+        "TX-industry-retail_ecommerce",
+        "TX-technology-on_device",
+        "TX-industry-professional_services",
+        "TX-industry-technology",
+        "TX-technology-embodied_ai",
+        "TX-technology-open_weights",
+        "TX-industry-telecommunications",
         "TX-industry-media_entertainment",
-        "TX-technology-video_generation",
-        "TX-technology-fine_tuning"
+        "TX-use_case-robotics_automation",
+        "TX-technology-multimodal",
+        "TX-technology-tool_use",
+        "TX-technology-reasoning",
+        "TX-industry-government_public_sector",
+        "TX-technology-fine_tuning",
+        "TX-technology-image_generation",
+        "TX-technology-computer_use"
       ],
       "relatedEntityIds": [
-        "EN-0e008e2c06144ec8"
+        "EN-bbdefa2950f49882",
+        "EN-c70eca6b0f88f44d"
       ],
-      "firstSeen": "2026-05-23",
+      "firstSeen": "2025-03-18",
+      "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "EN-a23572554f6c861e",
+      "name": "Stellantis Accelerates AI-led Strategy",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-9dab7fa55702e561",
+        "EV-bd508dbe4205774f"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-cybersecurity",
+        "TX-industry-automotive_transportation"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-04-16",
+      "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "EN-8652f6cd9088f1fa",
+      "name": "Stellantis",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-9dab7fa55702e561",
+        "EV-bd508dbe4205774f"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-cybersecurity",
+        "TX-industry-automotive_transportation"
+      ],
+      "relatedEntityIds": [
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "firstSeen": "2026-04-16",
+      "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "EN-fb2a436a76aa9fde",
+      "name": "Digital Transformation Through Strategic",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-9dab7fa55702e561",
+        "EV-bd508dbe4205774f"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-cybersecurity",
+        "TX-industry-automotive_transportation"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-04-16",
       "lastSeen": "2026-07-17"
     },
     {
@@ -2551,63 +3645,252 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-d4baddef1dda157c",
-        "EV-32adf75fbfda29bb",
-        "EV-adf92ecb7cd8714f",
-        "EV-f074a62a26f37ae3",
-        "EV-fc395b2413c9b34a",
+        "EV-52115fee0e716170",
+        "EV-20d762872664fddb",
+        "EV-88f4ee8cd57bdf42",
+        "EV-bcb74b02448b7d78",
         "EV-47a16db069ed320e",
         "EV-49c6291694fb6c7b",
-        "EV-283e88bdd15ed87e",
+        "EV-d756f05478303505",
+        "EV-7263caa45bbf168e",
+        "EV-8abf5adc3e72fbb8",
         "EV-2fab4396000198d2",
         "EV-3fb492fb45980541",
-        "EV-b95539d17772a4ce",
+        "EV-9dab7fa55702e561",
+        "EV-b2e374d54b10b9af",
         "EV-4763b46821ab746e",
         "EV-58c1cc3749294649",
-        "EV-3398ae53a199be16",
+        "EV-c0a65877001ed413",
+        "EV-bd508dbe4205774f",
         "EV-7c899d5decafc42f",
-        "EV-9fb217d7e855c8f7",
-        "EV-268250d426c1a4a0",
+        "EV-b920999c64aa9ef6",
+        "EV-33292a33d0f4d599",
+        "EV-cadcc94249dea81d",
+        "EV-51aed98773a9fca1",
+        "EV-cc3b92fe233953cf",
+        "EV-0370a17f0ef39c3e",
+        "EV-578a9db1fe952d0a",
+        "EV-b93b5cc15823e9c3",
         "EV-7309586168387ad8",
-        "EV-6dbf6cfbb35fe77c",
-        "EV-09610316ac52221e",
-        "EV-4ee99f92b011d16f",
-        "EV-c0f86afbefa2e0a6",
-        "EV-e594a091ce2940db",
+        "EV-8aead769e84de342",
+        "EV-7fb25ff3d853c314",
+        "EV-9009adaed650ddde",
+        "EV-f953555178744c22",
         "EV-28145c97a7237d6d",
-        "EV-3da99329ccc33816",
-        "EV-3aca8c193bf251ee",
-        "EV-d2d1834222ab32d3",
-        "EV-b902c7cffb30dec3",
-        "EV-4905e6385c8f4c3a",
-        "EV-ae89898e7aa4a4d6",
+        "EV-10aac036228b3c6b",
+        "EV-8495af729cd05f62",
+        "EV-e28e134345ea5f99",
+        "EV-f7484ad16a6d1876",
+        "EV-8ca7da5081a2e2fc",
+        "EV-a9e22f22b7a2ec53",
+        "EV-922de7a46f447efa",
+        "EV-1f61330a3f828179",
+        "EV-95a393fd0183b5f3",
         "EV-d596f111808bd55b",
         "EV-a4f052325d0ef230",
-        "EV-ec15684583d6f7a9",
+        "EV-6ce6b9c9780b97d9",
         "EV-62df953d81def866"
       ],
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
+        "TX-technology-code_generation",
+        "TX-use_case-customer_service",
         "TX-industry-healthcare_life_sciences",
-        "TX-use_case-robotics_automation",
-        "TX-technology-on_device",
+        "TX-use_case-software_development",
         "TX-use_case-cybersecurity",
         "TX-industry-retail_ecommerce",
-        "TX-industry-telecommunications",
-        "TX-technology-speech_audio",
-        "TX-technology-open_weights",
-        "TX-technology-reasoning",
+        "TX-technology-on_device",
+        "TX-industry-technology",
+        "TX-industry-automotive_transportation",
         "TX-technology-model_context_protocol",
+        "TX-industry-telecommunications",
+        "TX-technology-reasoning",
+        "TX-technology-distillation",
         "TX-technology-computer_use"
       ],
       "relatedEntityIds": [
+        "EN-8652f6cd9088f1fa",
         "EN-597d8c4afa5fe3d6",
-        "EN-8d4321d936320802"
+        "EN-77fe4e790d5bc756",
+        "EN-cf49fab26fe3c4a1",
+        "EN-cbc62794911ff31b",
+        "EN-e1a4e41919f7c2dc",
+        "EN-202ac21492470b79",
+        "EN-e75a2e5083aa0089",
+        "EN-1f8a924e62194552",
+        "EN-8d4321d936320802",
+        "EN-10fce287b4b1464c"
       ],
-      "firstSeen": "2026-05-20",
+      "firstSeen": "2026-04-16",
       "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "EN-ea87a2bd84296f73",
+      "name": "Rubrik Announces Upcoming",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-53f4f2a34b3ce1b4"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-use_case-cybersecurity"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-17",
+      "lastSeen": "2026-07-16"
+    },
+    {
+      "id": "EN-4094a2b7125c7564",
+      "name": "Rubrik",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-d5f276ad6b2ac9de",
+        "EV-53f4f2a34b3ce1b4"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-code_generation",
+        "TX-use_case-cybersecurity"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-17",
+      "lastSeen": "2026-07-16"
+    },
+    {
+      "id": "EN-cbc62794911ff31b",
+      "name": "Amazon",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "Amazon Bedrock"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-02548003157849bb",
+        "EV-8b0f056571d68269",
+        "EV-49c6291694fb6c7b",
+        "EV-ef6464cf7f764835",
+        "EV-67ef7accd26a07a0",
+        "EV-53f4f2a34b3ce1b4",
+        "EV-ec2e421d0e18be9b",
+        "EV-c0a65877001ed413",
+        "EV-b93b5cc15823e9c3",
+        "EV-918fc324de3117bd",
+        "EV-f953555178744c22",
+        "EV-69a82f50c60d4a64",
+        "EV-491e7b4b506ab3e3",
+        "EV-c108e7cc2df7faf4",
+        "EV-4e55361d8324dd49",
+        "EV-94d9c8d5ac1e10de",
+        "EV-b4e7187a9bd1de0e"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-use_case-customer_service",
+        "TX-industry-healthcare_life_sciences",
+        "TX-use_case-cybersecurity",
+        "TX-industry-retail_ecommerce"
+      ],
+      "relatedEntityIds": [
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "firstSeen": "2026-01-20",
+      "lastSeen": "2026-07-16"
+    },
+    {
+      "id": "EN-7839fb10a8f14c70",
+      "name": "GPT-5.6 Sol",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-167f50a6f3134bd5",
+        "EV-969ed3078d10f0c9",
+        "EV-6e7b632ee0b3410d",
+        "EV-10eb16192d83dbf7",
+        "EV-860b90c017deaa59"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-use_case-cybersecurity"
+      ],
+      "relatedEntityIds": [
+        "EN-7d3194f79e645c42"
+      ],
+      "firstSeen": "2026-06-28",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "EN-fab30471ea65d627",
+      "name": "Claude Science",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-d40a4e1b7a53cabe",
+        "EV-01212a5ad9db6a20",
+        "EV-13e06fc12cc3fb7c"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-software_development",
+        "TX-use_case-cybersecurity"
+      ],
+      "relatedEntityIds": [
+        "EN-c70eca6b0f88f44d"
+      ],
+      "firstSeen": "2026-07-01",
+      "lastSeen": "2026-07-05"
+    },
+    {
+      "id": "EN-c4941bfc97ac7c2d",
+      "name": "Claude Mythos Preview",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-cc3b92fe233953cf"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-cybersecurity"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-04",
+      "lastSeen": "2026-07-05"
     },
     {
       "id": "EN-3a7bd3e2360a3d29",
@@ -2621,43 +3904,57 @@
       ],
       "eventIds": [
         "EV-f282ab8740ff0096",
-        "EV-968709fe29b77eba",
         "EV-8a8e894a84768ea5",
+        "EV-afcd5426f5c01dc7",
         "EV-f5a50f1fed72fec3",
-        "EV-d5419a74073b4508",
         "EV-e857f9d1c1478c70",
-        "EV-21caef1790021587",
+        "EV-fd21441fb6e143c3",
         "EV-8a9b12665a3e40a0",
-        "EV-302018f2e960a8bf",
-        "EV-aa962ef7ec9a5c50",
-        "EV-7cd4a5b931f0b667",
-        "EV-268250d426c1a4a0",
+        "EV-70cbf25f7ec2cc3a",
+        "EV-8b9e4428074bde60",
+        "EV-967239f907803753",
+        "EV-113899096a32165a",
+        "EV-cabc88e1d09dec80",
+        "EV-cc3b92fe233953cf",
+        "EV-8aead769e84de342",
         "EV-abf0990dcaceb1ce",
+        "EV-89930fa8d1db98eb",
         "EV-60c27ec9b857f5c2",
-        "EV-485670365d8edca2",
-        "EV-4cad63b0de20edb2",
+        "EV-eeb687002cac5f4e",
+        "EV-99e5df844a1bd670",
+        "EV-0b2bfd57923cedd3",
+        "EV-3c51bcb5e99d2b68",
+        "EV-a736c6c64d106475",
+        "EV-dad8c827d14f2799",
+        "EV-4e6dc3ec2b3f0bd6",
+        "EV-634ce5b42f6d32f6",
         "EV-85373b8ec9148127",
-        "EV-0b3d4c788a892787",
         "EV-1ae8027c085679e9",
+        "EV-21c749570133c786",
         "EV-52e1ac21c25a0a09",
+        "EV-591542ccc2de5be8",
+        "EV-5a1422a9929c582e",
         "EV-8361a47c70ecd243",
         "EV-9f9bc7ffe6228281",
         "EV-a5ba3797b38df125",
         "EV-a9fe726c4ea2a17b",
+        "EV-bff418b2959f58fb",
         "EV-c5b8faec223a4caf",
         "EV-d40a1a873015ac98",
         "EV-da062d02015f99fb",
-        "EV-eebe7dbf68b1e0b4",
-        "EV-fd527f43b5eb5f0a",
-        "EV-342799d4e68e7416",
+        "EV-f6611268f119a172",
+        "EV-0d1980baa83e1e6c",
         "EV-ef823877347ff40f",
         "EV-5cd10de5c12916f0",
         "EV-5613946bdd578a26",
         "EV-dd902b603e2e3dbc",
         "EV-da6678e4e865e00e",
         "EV-8cb2374f76202ecc",
+        "EV-946569cccbd9222f",
         "EV-b4203b10d6592bf2",
-        "EV-1b5db76949c2795c",
+        "EV-5eb23cdd9c14c6ea",
+        "EV-7d4b4b8d4e3599d4",
+        "EV-10e841ab47d2b1f1",
         "EV-f2d29ca7b05c3dd9",
         "EV-ea2b6ce4acd46366",
         "EV-2821d0cef61b3c6a",
@@ -2668,18 +3965,537 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-use_case-robotics_automation",
+        "TX-industry-manufacturing",
         "TX-technology-long_context",
-        "TX-technology-on_device",
         "TX-use_case-cybersecurity",
         "TX-industry-retail_ecommerce",
-        "TX-technology-multimodal"
+        "TX-technology-on_device",
+        "TX-industry-media_entertainment",
+        "TX-technology-multimodal",
+        "TX-technology-tool_use",
+        "TX-technology-fine_tuning",
+        "TX-use_case-content_creation",
+        "TX-technology-quantization",
+        "TX-technology-speech_audio"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-af3ceabbe048a291",
+        "EN-41dcc2d4951f337b",
+        "EN-dfabe4215e8c07cb",
+        "EN-729324072d368379"
+      ],
       "firstSeen": "2026-06-04",
       "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "EN-2c063f604e634100",
+      "name": "Claude Sonnet 5",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-2f81b0d48d128f5c",
+        "EV-3b5cb867fdaba28f",
+        "EV-9c4b862020202f6c"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-use_case-cybersecurity",
+        "TX-technology-tool_use"
+      ],
+      "relatedEntityIds": [
+        "EN-c70eca6b0f88f44d"
+      ],
+      "firstSeen": "2026-07-01",
+      "lastSeen": "2026-07-02"
+    },
+    {
+      "id": "EN-03b974cdbd22fe32",
+      "name": "Asian AI startups",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-a4b72879f3d73ea4"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-cybersecurity"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-29",
+      "lastSeen": "2026-06-29"
+    },
+    {
+      "id": "EN-ac123e56b0168ec2",
+      "name": "Sakana AI",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-c2800c1c5a3f568f",
+        "EV-a4b72879f3d73ea4",
+        "EV-276d6fc7ccb9eb76",
+        "EV-9e04edd969c977a1",
+        "EV-ceb7d70f0043eb81"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-use_case-cybersecurity"
+      ],
+      "relatedEntityIds": [
+        "EN-d4c633f24b48fcc4",
+        "EN-fdc6b157616f12a8"
+      ],
+      "firstSeen": "2026-06-22",
+      "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "EN-784c7cd63a83ccaa",
+      "name": "Mythos-like",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-a4b72879f3d73ea4"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-cybersecurity"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-29",
+      "lastSeen": "2026-06-29"
+    },
+    {
+      "id": "EN-b50e6e7659f1018e",
+      "name": "Asian AI",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-a4b72879f3d73ea4"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-cybersecurity"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-29",
+      "lastSeen": "2026-06-29"
+    },
+    {
+      "id": "EN-8de7e44229714152",
+      "name": "Trump Admin",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-1ec24a430911185c"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-cybersecurity"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-28",
+      "lastSeen": "2026-06-28"
+    },
+    {
+      "id": "EN-db68703d8d719bd0",
+      "name": "Mythos",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-1ec24a430911185c",
+        "EV-832fa2db95cfea6e",
+        "EV-689538e8159887de"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-use_case-cybersecurity"
+      ],
+      "relatedEntityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-7d3194f79e645c42"
+      ],
+      "firstSeen": "2026-06-10",
+      "lastSeen": "2026-06-28"
+    },
+    {
+      "id": "EN-52fc33ae4d101a5d",
+      "name": "GPT-5.6",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-ae736eb124d7163a",
+        "EV-888b9eb73582e21c",
+        "EV-28145c97a7237d6d",
+        "EV-0c06df62702d26ab"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-long_context",
+        "TX-use_case-cybersecurity"
+      ],
+      "relatedEntityIds": [
+        "EN-7d3194f79e645c42"
+      ],
+      "firstSeen": "2026-06-20",
+      "lastSeen": "2026-07-10"
+    },
+    {
+      "id": "EN-5ce177312903c604",
+      "name": "US AI",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-888b9eb73582e21c"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-use_case-cybersecurity"
+      ],
+      "relatedEntityIds": [
+        "EN-7d3194f79e645c42"
+      ],
+      "firstSeen": "2026-06-27",
+      "lastSeen": "2026-06-27"
+    },
+    {
+      "id": "EN-272d6a7a0db89710",
+      "name": "GPT-5.6 amid US AI regulatory drama",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-888b9eb73582e21c"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-use_case-cybersecurity"
+      ],
+      "relatedEntityIds": [
+        "EN-7d3194f79e645c42"
+      ],
+      "firstSeen": "2026-06-27",
+      "lastSeen": "2026-06-27"
+    },
+    {
+      "id": "EN-d8494bb34d6ddc43",
+      "name": "Claude Mythos 5",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-482df8a8ef264238",
+        "EV-689538e8159887de"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-use_case-cybersecurity"
+      ],
+      "relatedEntityIds": [
+        "EN-c70eca6b0f88f44d"
+      ],
+      "firstSeen": "2026-06-10",
+      "lastSeen": "2026-06-24"
+    },
+    {
+      "id": "EN-9f15bb7e29e191eb",
+      "name": "Fable 5",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-9c0552732b34f278",
+        "EV-491e7b4b506ab3e3",
+        "EV-c7a2774b07554f5d",
+        "EV-2eabd03665cbdef7"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-cybersecurity",
+        "TX-technology-guardrails_safety"
+      ],
+      "relatedEntityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-c70eca6b0f88f44d"
+      ],
+      "firstSeen": "2026-06-09",
+      "lastSeen": "2026-07-04"
+    },
+    {
+      "id": "EN-c8185a1a8a6595ad",
+      "name": "Mythos AI",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-832fa2db95cfea6e"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-cybersecurity"
+      ],
+      "relatedEntityIds": [
+        "EN-c70eca6b0f88f44d"
+      ],
+      "firstSeen": "2026-06-16",
+      "lastSeen": "2026-06-16"
+    },
+    {
+      "id": "EN-3a13916345b60fad",
+      "name": "Claude Fable 5",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-730a2f95a698a96d",
+        "EV-8b5801b69eb1781b",
+        "EV-bf6f67c47c6b0d7c",
+        "EV-f0caa4082916d619",
+        "EV-ab3586268ebfab38",
+        "EV-689538e8159887de",
+        "EV-68fcce7fde89e5d7",
+        "EV-c7a2774b07554f5d",
+        "EV-e09bff5515b1896b",
+        "EV-f1418d9e3b1413b7",
+        "EV-f5dd192f6d4e04a3"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-use_case-cybersecurity",
+        "TX-use_case-data_analysis"
+      ],
+      "relatedEntityIds": [
+        "EN-c70eca6b0f88f44d"
+      ],
+      "firstSeen": "2026-06-10",
+      "lastSeen": "2026-07-12"
+    },
+    {
+      "id": "EN-ced86039c0ad6a7c",
+      "name": "Claude Fable",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-7133e378762edda5"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-cybersecurity"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-10",
+      "lastSeen": "2026-06-10"
+    },
+    {
+      "id": "EN-b59c577ed73536c6",
+      "name": "Mythos 5",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-c7a2774b07554f5d",
+        "EV-e09bff5515b1896b",
+        "EV-f5dd192f6d4e04a3"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-cybersecurity",
+        "TX-use_case-data_analysis"
+      ],
+      "relatedEntityIds": [
+        "EN-c70eca6b0f88f44d"
+      ],
+      "firstSeen": "2026-06-10",
+      "lastSeen": "2026-06-10"
+    },
+    {
+      "id": "EN-842a7da99bd249d4",
+      "name": "Anthropic 明日",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-2eabd03665cbdef7"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-cybersecurity"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-09",
+      "lastSeen": "2026-06-10"
     }
   ],
-  "fde": [],
+  "fde": [
+    {
+      "id": "FDE-4edaa833d41055bd",
+      "eventId": "EV-53f4f2a34b3ce1b4",
+      "dataDate": "2026-07-16",
+      "date": "2026-06-17",
+      "title": "Rubrik 宣布即将集成 Amazon Bedrock AgentCore 以保护 AI 智能体",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Rubrik",
+      "vendor": "Rubrik Announces Upcoming",
+      "industry": "未披露",
+      "useCase": "Amazon Bedrock AgentCore to Secure AI Agents",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "Rubrik Announces Upcoming Integration with Amazon Bedrock AgentCore to Secure AI Agents",
+        "AWS Summit -- Rubrik (NYSE: RBRK), the Security and AI Operations company, announced today its upcoming Rubrik Agent Cloud (RAC) integration with Amazon Bedrock AgentCore. The upcoming integration reflects Rubrik's commitment to extending the security controls customers already trust into agentic workflows.",
+        "\"Speed has always been the enterprise mandate, but today, safety is the prerequisite,\" said Devvret Rishi, General Manager AI, Rubrik. \"Cybersecurity leaders estimate that in the next year, half or more of attacks they face will be driven by agentic AI. Rubrik’s upcoming integration with AWS Bedrock AgentCore gives enterprises the confidence to deploy AI agents quickly with trustworthy governance.\""
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "sourceUrl": "https://markets.ft.com/data/announce/full?dockey=600-202606171200BIZWIRE_USPRX____20260617_BW107817-1",
+      "entityIds": [
+        "EN-ea87a2bd84296f73",
+        "EN-4094a2b7125c7564",
+        "EN-cbc62794911ff31b"
+      ]
+    },
+    {
+      "id": "FDE-f34ca7b021eae900",
+      "eventId": "EV-c81cb21337a9bb98",
+      "dataDate": "2026-06-11",
+      "date": "2026-06-11",
+      "title": "Anthropic CEO 称政府应有权阻止高风险新 AI 模型部署",
+      "stage": "completed",
+      "stageLabel": "已完成",
+      "customer": "Anthropic",
+      "vendor": "Intel",
+      "industry": "未披露",
+      "useCase": "Anthropic CEO 称政府应有权阻止高风险新 AI 模型部署",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "Anthropic PBC Chief Executive Officer Dario Amodei said the government should have the power to block artificial intelligence developers from deploying new AI models if they present certain risks.",
+        "In a lengthy essay on Wednesday, Amodei argued that AI models should undergo mandatory testing by third parties to assess the risk they pose across several categories, including enabling cybersecurity threats and biological weapons. If the AI is deemed to “present unacceptable risks,” he wrote, “the government should have the power to block or deter deployment.”"
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://bloomberg.com/news/articles/2026-06-10/anthropic-ceo-says-government-should-be-able-to-block-new-models",
+      "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-96eebba49dbbf422"
+      ]
+    }
+  ],
   "hardware": []
 }

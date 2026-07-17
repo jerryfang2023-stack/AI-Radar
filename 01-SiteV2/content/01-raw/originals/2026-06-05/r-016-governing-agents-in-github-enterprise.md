@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"Agents — Copilot cloud agent, Cop
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "GitHub Enterprise中的治理代理"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Governing agents in GitHub Enterprise

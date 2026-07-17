@@ -2,7 +2,7 @@
 id: SIG-20260604-A10
 type: signal_card
 signal_type: product_service
-title: "Holo3.1: Fast & Local Computer Use Agents 发布 AI 能力，指向模型部署和算力调用"
+title: "Holo3.1：快速本地化计算机使用代理 - Hugging Face"
 date: 2026-06-04
 status: published
 asset_level: frontstage
@@ -58,7 +58,7 @@ signal_owner: "Holo3.1: Fast & Local Computer Use Agents"
 watch_reason: "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
 
 frontend:
-  displayTitle: "Holo3.1: Fast & Local Computer Use Agents 发布 AI 能力，指向模型部署和算力调用"
+  displayTitle: "Holo3.1：快速本地化计算机使用代理 - Hugging Face"
   eventLine: "Holo3.1: Fast & Local Computer Use Agents 发布新的 AI 能力，面向模型部署和算力调用。"
   whyWatch: "这条变化值得看，是因为它把竞争点放到了模型部署和算力调用：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"
   businessMeaning: "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
@@ -68,7 +68,7 @@ frontend:
     - "https://huggingface.co/blog/hcompany/holo31"
 ---
 
-# Holo3.1: Fast & Local Computer Use Agents 发布 AI 能力，指向模型部署和算力调用
+# Holo3.1：快速本地化计算机使用代理 - Hugging Face
 
 ## 信号底稿
 

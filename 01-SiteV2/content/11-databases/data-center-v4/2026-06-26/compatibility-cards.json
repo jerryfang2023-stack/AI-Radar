@@ -18,9 +18,9 @@
     "missing_fields": []
   },
   {
-    "card_id": "CARD-e70ff4b19c0814f8",
-    "event_id": "EV-57105df2fcada2e5",
-    "card_type": "case",
+    "card_id": "CARD-699b480f6e4dd376",
+    "event_id": "EV-d5cc9a50a9b88d2b",
+    "card_type": "product_service",
     "title": "Google Finance 推出首款独立 Android 应用，iOS 版计划今年晚些时候上线",
     "fact": "Google Finance is not a new product—it has been around for 20 years, long enough that it initially relied on Flash to display charts and graphs. The website has gotten a few major updates over the years, but it has never had a mobile app until now. Google has released the first standalone app for Google Finance, which is currently exclusive to Android, with iOS planned for later this year.",
     "event_status": "planned",
@@ -28,59 +28,12 @@
     "event_time": "2026-06-25T18:38:51.000Z",
     "claim_refs": [
       "CL-39f51073a1da78f0",
+      "CL-b3f72da1c6bc2bc4",
       "CL-91a088a6fc02ec3a",
-      "CL-4db278891d1e958a",
-      "CL-e43739cca7cb7888"
+      "CL-4db278891d1e958a"
     ],
     "source_refs": [
       "SA-c0130d065f034381"
-    ],
-    "conflicts": [],
-    "missing_fields": [
-      "object"
-    ]
-  },
-  {
-    "card_id": "CARD-5e6c20259cadb45a",
-    "event_id": "EV-188381b996f77bef",
-    "card_type": "funding",
-    "title": "General Intuition 23亿美元估值完成3.2亿美元融资",
-    "fact": "General Intuition’s $2.3B bet that video games can train AI agents for the real world",
-    "event_status": "completed",
-    "publication_status": "verified",
-    "event_time": "2026-06-25T16:55:00.000Z",
-    "claim_refs": [
-      "CL-8314402e319ffe37",
-      "CL-62fdc12d067bfd95",
-      "CL-e44976a185dd354f",
-      "CL-3ac36cc5d1f5665d"
-    ],
-    "source_refs": [
-      "SA-b5e90701f9ed4178"
-    ],
-    "conflicts": [],
-    "missing_fields": [
-      "entities",
-      "object"
-    ]
-  },
-  {
-    "card_id": "CARD-f6fc10f04a697d22",
-    "event_id": "EV-c438ed7087cdd07d",
-    "card_type": "funding",
-    "title": "General Intuition 完成 3.2 亿美元融资，用游戏数据训练通用 AI 智能体",
-    "fact": "General Intuition’s $2.3B bet that video games can train AI agents for the real world",
-    "event_status": "completed",
-    "publication_status": "verified",
-    "event_time": "2026-06-25T16:00:00.000Z",
-    "claim_refs": [
-      "CL-9259a97ffdc28558",
-      "CL-8c95dabc7b41ec36",
-      "CL-2e5da4c7f19f4080",
-      "CL-59d60f6d0087a994"
-    ],
-    "source_refs": [
-      "SA-f180e84f6230a99b"
     ],
     "conflicts": [],
     "missing_fields": []
@@ -96,7 +49,9 @@
     "event_time": "2026-06-25T23:34:39.000Z",
     "claim_refs": [
       "CL-6fbec0f40b689adb",
-      "CL-43513170e402336c"
+      "CL-43513170e402336c",
+      "CL-a64bc0c100e260a2",
+      "CL-ae6b9044da45da92"
     ],
     "source_refs": [
       "SA-c2f6c6ce6b9873ab"
@@ -110,9 +65,9 @@
     "card_id": "CARD-c4f144aa04022fea",
     "event_id": "EV-ceb23160ad25e497",
     "card_type": "funding",
-    "title": "Dabafinance - Newera.ai 完成 210 万美元 种子前轮融资",
+    "title": "Dabafinance - Newera.ai 完成210万美元Pre-Seed轮融资，由Embark领投",
     "fact": "Newera.ai Raises $2.1M Pre-Seed Round Led By Embark",
-    "event_status": "announced",
+    "event_status": "completed",
     "publication_status": "verified",
     "event_time": "",
     "claim_refs": [
@@ -125,13 +80,39 @@
       "SA-b4ce81f07e97c50c"
     ],
     "conflicts": [],
-    "missing_fields": []
+    "missing_fields": [
+      "event_time"
+    ]
   },
   {
-    "card_id": "CARD-d991b63130c5d429",
-    "event_id": "EV-8a705711605ccdf5",
+    "card_id": "CARD-13bbc5471db90438",
+    "event_id": "EV-acddfa62aabb004f",
+    "card_type": "case",
+    "title": "部署与扩展企业级AI智能体 - Eloquent AI",
+    "fact": "Deploying and Scaling Enterprise AI Agents — Eloquent AI",
+    "event_status": "announced",
+    "publication_status": "verified",
+    "event_time": "",
+    "claim_refs": [
+      "CL-e9dc4b6a0f7a6120",
+      "CL-57924d3009a495d9",
+      "CL-db810b4dfb6312c3",
+      "CL-1ad2b96c179d25bb"
+    ],
+    "source_refs": [
+      "SA-9ae7afea5b5eb681"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "entities",
+      "event_time"
+    ]
+  },
+  {
+    "card_id": "CARD-786656c4b58f0524",
+    "event_id": "EV-779b733110003284",
     "card_type": "product_service",
-    "title": "LangBuilder — Enterprise AI Agent Platform with 发布 Flexibility",
+    "title": "LangBuilder — 具备开源灵活性的企业级AI智能体平台",
     "fact": "LangBuilder AI Agent Platform — Open Source, Enterprise-Ready, Yours to Own",
     "event_status": "announced",
     "publication_status": "verified",
@@ -147,16 +128,39 @@
     ],
     "conflicts": [],
     "missing_fields": [
-      "entities"
+      "event_time"
+    ]
+  },
+  {
+    "card_id": "CARD-adba9888061775d9",
+    "event_id": "EV-11a8e196deb21300",
+    "card_type": "product_service",
+    "title": "垂直AI智能体将在2026年蚕食横向SaaS",
+    "fact": "Sierra, the customer support AI agent company founded by former Salesforce co-CEO Bret Taylor, raised $950 million in May 2026 at a $15.8 billion valuation . It had crossed $100 million in ARR roughly seven quarters after launch. Legora, a legal AI platform, hit $100 million ARR in 18 months , which Bessemer Venture Partners called the fastest growth trajectory in enterprise software history. Harvey, the legal AI competitor, closed Q2 2026 at $300 million ARR and an $11 billion valuation .",
+    "event_status": "announced",
+    "publication_status": "verified",
+    "event_time": "",
+    "claim_refs": [
+      "CL-6b1e56f0351eaabd",
+      "CL-fbea8f816cae883c",
+      "CL-87bdf94c1c605656",
+      "CL-7b5285fbd5416bdf"
+    ],
+    "source_refs": [
+      "SA-c632c4bb893a0519"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "event_time"
     ]
   },
   {
     "card_id": "CARD-dec627e13347a261",
     "event_id": "EV-6484904c176aa016",
     "card_type": "funding",
-    "title": "Eindhoven-based Luna.ai 完成 250 万美元 种子前轮融资",
+    "title": "总部位于埃因霍温的Luna.ai完成250万美元Pre-Seed轮融资",
     "fact": "[Funding alert] Eindhoven-based Luna.ai Raises $2.5M in a Pre-Seed Funding",
-    "event_status": "announced",
+    "event_status": "completed",
     "publication_status": "verified",
     "event_time": "",
     "claim_refs": [
@@ -169,13 +173,38 @@
       "SA-467540cf2b495ef3"
     ],
     "conflicts": [],
-    "missing_fields": []
+    "missing_fields": [
+      "event_time"
+    ]
+  },
+  {
+    "card_id": "CARD-be6a60a0f57f59af",
+    "event_id": "EV-6ef10e278f3c25a9",
+    "card_type": "case",
+    "title": "企业AI智能体从试点到生产：规模化框架",
+    "fact": "Enterprise AI Agent Pilot to Production: A Scaling Framework",
+    "event_status": "announced",
+    "publication_status": "verified",
+    "event_time": "",
+    "claim_refs": [
+      "CL-4ef2926165df5b71",
+      "CL-6d6bb515235326a3",
+      "CL-12c22d3b6d42b66c",
+      "CL-9ff3bfa4139beb17"
+    ],
+    "source_refs": [
+      "SA-ce548f031e6da520"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "event_time"
+    ]
   },
   {
     "card_id": "CARD-c77b134f91a370a2",
     "event_id": "EV-7951af05be21dc7c",
     "card_type": "funding",
-    "title": "Agentic AI startup Quash 完成 635 美元 种子前轮融资",
+    "title": "AI智能体初创公司Quash从Arali Ventures获得63.5万美元预种子轮融资",
     "fact": "Agentic AI startup Quash raised $635K Pre-seed funding from Arali Ventures",
     "event_status": "completed",
     "publication_status": "verified",
@@ -190,15 +219,17 @@
       "SA-14180f12d9efc13b"
     ],
     "conflicts": [],
-    "missing_fields": []
+    "missing_fields": [
+      "event_time"
+    ]
   },
   {
     "card_id": "CARD-a20fd9d5406fb9b6",
     "event_id": "EV-cab0d2efad362cf7",
     "card_type": "funding",
-    "title": "Heizen 完成 500 美元 种子前轮融资",
+    "title": "AI软件初创公司Heizen获Titan Capital领投50万美元种子轮融资 - 印度初创时报",
     "fact": "AI Software Startup Heizen Secures $500,000 Pre-Seed Funding Led by Titan Capital",
-    "event_status": "announced",
+    "event_status": "completed",
     "publication_status": "verified",
     "event_time": "",
     "claim_refs": [
@@ -211,28 +242,9 @@
       "SA-c8937ea4e7bcad02"
     ],
     "conflicts": [],
-    "missing_fields": []
-  },
-  {
-    "card_id": "CARD-b612504377c9ea96",
-    "event_id": "EV-3f07de398af7a118",
-    "card_type": "product_service",
-    "title": "消息称美国政府要求OpenAI审核后分批发布GPT-5.6",
-    "fact": "消息称美国政府要求 OpenAI 审核后分批发布 GPT-5.6 - IT之家",
-    "event_status": "completed",
-    "publication_status": "verified",
-    "event_time": "2026-06-26T01:29:58.000Z",
-    "claim_refs": [
-      "CL-74f14f3822d82164",
-      "CL-63768e543233504b",
-      "CL-2ab9fe08e4da312b",
-      "CL-759c5cf7d06db5ae"
-    ],
-    "source_refs": [
-      "SA-cbe7bf4b86538287"
-    ],
-    "conflicts": [],
-    "missing_fields": []
+    "missing_fields": [
+      "event_time"
+    ]
   },
   {
     "card_id": "CARD-5073dde4fdc3fce0",
@@ -256,8 +268,8 @@
     "missing_fields": []
   },
   {
-    "card_id": "CARD-842bfa2218b99169",
-    "event_id": "EV-722c2a8dd6b70abd",
+    "card_id": "CARD-c711c7977c9ce715",
+    "event_id": "EV-13f0b515194f3245",
     "card_type": "product_service",
     "title": "Linux 基金会联合多方推出 Akrites 项目，抵御 AI 驱动开源软件漏洞攻击",
     "fact": "Linux 基金会联合 Anthropic、OpenAI 等推出“Akrites”项目，抵御基于 AI 的开源软件漏洞攻击 - IT之家",
@@ -298,25 +310,5 @@
     "missing_fields": [
       "object"
     ]
-  },
-  {
-    "card_id": "CARD-40e9978faa1ea1fb",
-    "event_id": "EV-6266c73d470e8aef",
-    "card_type": "product_service",
-    "title": "核心研究员接连离职后，消息称谷歌重组 AI 编程小组试图追赶 Anthropic",
-    "fact": "核心研究员接连离职后，消息称谷歌重组 AI 编程小组试图追赶 Anthropic - IT之家",
-    "event_status": "completed",
-    "publication_status": "verified",
-    "event_time": "2026-06-25T15:50:43.000Z",
-    "claim_refs": [
-      "CL-50a59ba23539c6d2",
-      "CL-7b331cbc138fd686",
-      "CL-7f375947fc1ea986"
-    ],
-    "source_refs": [
-      "SA-77efdcca0136eff3"
-    ],
-    "conflicts": [],
-    "missing_fields": []
   }
 ]

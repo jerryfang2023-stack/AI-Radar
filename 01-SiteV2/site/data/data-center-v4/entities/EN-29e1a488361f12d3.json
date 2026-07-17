@@ -1,0 +1,123 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T21:25:16.366Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 818,
+    "quarantinedEventCount": 58
+  },
+  "entity": {
+    "id": "EN-29e1a488361f12d3",
+    "name": "Vapi",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-88f4ee8cd57bdf42"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-use_case-customer_service"
+    ],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-06-04",
+    "lastSeen": "2026-06-04",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-88f4ee8cd57bdf42"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-88f4ee8cd57bdf42",
+        "dataDate": "2026-06-04",
+        "date": "2026-06-04",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Vapi 获 5000 万美元融资，让语音 AI 更人性化 - SiliconANGLE",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "id": "customer_service",
+            "dimensionName": "应用场景",
+            "name": "客户服务"
+          }
+        ],
+        "entityIds": [
+          "EN-29e1a488361f12d3",
+          "EN-96eebba49dbbf422",
+          "EN-9fbf261b62c1d7c0"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-use_case-customer_service",
+      "name": "客户服务",
+      "nodeType": "use_case",
+      "typeLabel": "应用场景",
+      "valueId": "customer_service",
+      "eventIds": [
+        "EV-64fb6d791e19d10a",
+        "EV-f020dd198aa2f952",
+        "EV-88f4ee8cd57bdf42",
+        "EV-e869f17214557633",
+        "EV-8abf5adc3e72fbb8",
+        "EV-3fb492fb45980541",
+        "EV-11a8e196deb21300",
+        "EV-94d9c8d5ac1e10de"
+      ],
+      "entityIds": [
+        "EN-b0532e1af75cc4ab",
+        "EN-dca6ec9510fc0176",
+        "EN-3ccbd9105a45d8fc",
+        "EN-8147e6fed86d42c1",
+        "EN-29e1a488361f12d3",
+        "EN-96eebba49dbbf422",
+        "EN-9fbf261b62c1d7c0",
+        "EN-3474e24464fc25a7",
+        "EN-28d0bd981118a907",
+        "EN-7d3194f79e645c42",
+        "EN-88e2cce43eeadb36",
+        "EN-34da56029403e6f7",
+        "EN-623fbff8d5179d4e",
+        "EN-fef851474e3c4311",
+        "EN-19018cddd8946526",
+        "EN-7d1507284a5757ca",
+        "EN-cbc62794911ff31b",
+        "EN-dba61afed18c85d6"
+      ],
+      "fdeIds": [
+        "FDE-3e499215265a81d5",
+        "FDE-d08fed45110ab44b"
+      ],
+      "hardwareIds": [],
+      "firstSeen": "2026-06-02",
+      "lastSeen": "2026-07-16"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}

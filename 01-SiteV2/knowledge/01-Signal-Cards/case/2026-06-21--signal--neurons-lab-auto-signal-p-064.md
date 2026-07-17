@@ -2,7 +2,7 @@
 id: SIG-20260621-A11
 type: signal_card
 signal_type: case
-title: "Top AI Consulting Firms in 2026 for FSIs - Neurons Lab"
+title: "2026年面向金融服务机构的最佳AI咨询公司 - Neurons Lab"
 date: 2026-06-21
 status: published
 source_title: "Top AI Consulting Firms in 2026 for FSIs - Neurons Lab"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Neurons-Lab"
 
 frontend:
-  displayTitle: "Top AI Consulting Firms in 2026 for FSIs - Neurons Lab"
+  displayTitle: "2026年面向金融服务机构的最佳AI咨询公司 - Neurons Lab"
   sourceLinks:
     - "https://neurons-lab.com/articles/top-ai-consulting-firms/"
 ---
 
-# Top AI Consulting Firms in 2026 for FSIs - Neurons Lab
+# 2026年面向金融服务机构的最佳AI咨询公司 - Neurons Lab
 
 ## 新闻事实
 

@@ -23,6 +23,9 @@ jobs:
     timeout-minutes: 35
     env:
       TZ: Asia/Shanghai
+      DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+      DEEPSEEK_FLASH_MODEL: deepseek-v4-flash
+      DEEPSEEK_PRO_MODEL: deepseek-v4-pro
 
     steps:
       - name: Check out repository
@@ -108,11 +111,26 @@ jobs:
           node --check agent-workflow/tools/fetch-builder-blog-feed.mjs
           node --check agent-workflow/tools/fetch-builder-podcast-feed.mjs
           node --check agent-workflow/tools/assert-follow-builders-data.mjs
+          node --check agent-workflow/tools/deepseek-translation-client.mjs
+          node --check agent-workflow/tools/opinion-translation-utils.mjs
           node --check agent-workflow/tools/assert-first-line-viewpoints-v4-data.mjs
           node --check agent-workflow/tools/sync-follow-builders-to-opinion-timelines.mjs
           node --check 01-SiteV2/site/scripts/build-follow-builders-page-data.mjs
           node --check 01-SiteV2/site/scripts/build-first-line-viewpoints-v4-data.mjs
           gh --version
+
+      - name: DeepSeek translation preflight
+        if: steps.existing-first-line.outputs.skip != 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ -z "$DEEPSEEK_API_KEY" ]; then
+            echo "deepseek_key_missing_for_required_translation" >&2
+            exit 2
+          fi
+          echo "deepseek_translation=configured"
+          echo "deepseek_flash_model=$DEEPSEEK_FLASH_MODEL"
+          echo "deepseek_pro_model=$DEEPSEEK_PRO_MODEL"
 
       - name: Fetch builder blog RSS feeds
         id: builder-blogs
@@ -196,6 +214,9 @@ jobs:
           - builders_data: ${{ steps.builders-data.outcome }}
           - builders_gate: ${{ steps.builders-gate.outcome }}
           - obsidian_sync: ${{ steps.obsidian-sync.outcome }}
+          - deepseek_translation: $([ -n "$DEEPSEEK_API_KEY" ] && echo configured || echo missing)
+          - deepseek_flash_model: ${DEEPSEEK_FLASH_MODEL}
+          - deepseek_pro_model: ${DEEPSEEK_PRO_MODEL}
           - data_file: ${state}
 
           This lane updates only First-Line Viewpoints and its Obsidian viewpoint timelines. It must not write business-signal Cards, relationship graph data, trend candidates, or community intelligence data.

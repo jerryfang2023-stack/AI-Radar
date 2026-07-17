@@ -21,43 +21,43 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-e4d7827cbf4eaf79",
-    "raw_id": "RAW-e89e9a8394db344c",
-    "claim_type": "hardware_deployment",
-    "subject": "Allbirds 转型 AI 后更名为 Smartbird，新 CEO 计划",
-    "predicate": "hardware_deployment",
-    "object": "The CEO of Allbirds’ new AI biz has a plan, but no team",
+    "claim_id": "CL-1c224d072885b4a9",
+    "raw_id": "RAW-789e7132ccd81dc4",
+    "claim_type": "product_release",
+    "subject": "信实工业",
+    "predicate": "product_release",
+    "object": "多款AI服务，涵盖通话、应用与家居",
     "qualifiers": {
-      "event_status": "planned",
-      "sequence": 1
-    },
-    "source_span": {
-      "raw_id": "RAW-e89e9a8394db344c",
-      "start": 3,
-      "end": 58
-    },
-    "source_quote": "The CEO of Allbirds’ new AI biz has a plan, but no team",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.9,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-1194d94816924522",
-    "raw_id": "RAW-e89e9a8394db344c",
-    "claim_type": "hardware_deployment",
-    "subject": "Allbirds 转型 AI 后更名为 Smartbird，新 CEO 计划",
-    "predicate": "hardware_deployment",
-    "object": "Now Nadia Carlsten has to make it work. A former AWS executive with an engineering PhD, Carlsten most recently led the European compute company DCAI before she began yesterday as Smartbird’s CEO.",
-    "qualifiers": {
-      "event_status": "planned",
+      "event_status": "completed",
       "sequence": 2
     },
     "source_span": {
-      "raw_id": "RAW-e89e9a8394db344c",
-      "start": 716,
-      "end": 911
+      "raw_id": "RAW-789e7132ccd81dc4",
+      "start": 756,
+      "end": 1104
     },
-    "source_quote": "Now Nadia Carlsten has to make it work. A former AWS executive with an engineering PhD, Carlsten most recently led the European compute company DCAI before she began yesterday as Smartbird’s CEO.",
+    "source_quote": "By embedding the service directly into its telecom network rather than offering it as a stand-alone app, Jio is betting AI assistance can become a native feature of phone calls. The approach could reduce consumers’ reliance on third-party call-assistant apps and give Reliance a powerful distribution advantage in an increasingly crowded AI market.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-ed96cc19b0ba7804",
+    "raw_id": "RAW-789e7132ccd81dc4",
+    "claim_type": "product_release",
+    "subject": "信实工业",
+    "predicate": "product_release",
+    "object": "多款AI服务，涵盖通话、应用与家居",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-789e7132ccd81dc4",
+      "start": 1105,
+      "end": 1646
+    },
+    "source_quote": "Reliance also unveiled an AI-powered version of its MyJio app that can perform tasks on behalf of users, from activating eSIMs to selecting roaming plans, through natural-language requests. The company further introduced TeleFrame, a home display that uses AI agents to proactively surface information and recommendations, such as weather alerts, schedules, and household reminders. The product appears to echo a broader industry push toward ambient AI assistants for the home, an area being explored by companies such as Amazon and Google .",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -84,6 +84,48 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-f3e18b1010a23606",
+    "raw_id": "RAW-003d5252494c0ef5",
+    "claim_type": "product_release",
+    "subject": "美国禁止Anthropic的Fable 5",
+    "predicate": "product_release",
+    "object": "，但数字并不在意",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-003d5252494c0ef5",
+      "start": 190,
+      "end": 421
+    },
+    "source_quote": "Just as last week was ending, the US government forced Anthropic to pull its two newest models , Fable 5 and Mythos 5, citing national security concerns after Amazon researchers allegedly found a way to bypass Fable 5’s guardrails.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-ab2c4ec68936dabe",
+    "raw_id": "RAW-003d5252494c0ef5",
+    "claim_type": "product_release",
+    "subject": "美国禁止Anthropic的Fable 5",
+    "predicate": "product_release",
+    "object": "，但数字并不在意",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-003d5252494c0ef5",
+      "start": 422,
+      "end": 716
+    },
+    "source_quote": "Cybersecurity researchers have since signed an open letter calling the move dangerous, and Anthropic itself noted the same jailbreaks exist in other models. So is this a genuine security concern, or just the latest chapter in a messy relationship between Anthropic and the Trump administration?",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-01b56ba4b43e3bee",
     "raw_id": "RAW-26f6ad0d5f13766f",
     "claim_type": "funding",
@@ -91,7 +133,7 @@
     "predicate": "funding",
     "object": "$40m Series B to pitch an agentic-AI procurement OS at the enterprises legacy software has not fixed",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 1
     },
     "source_span": {
@@ -112,7 +154,7 @@
     "predicate": "funding",
     "object": "$40m Series B to pitch an agentic-AI procurement OS at the enterprises legacy software has not fixed",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 2
     },
     "source_span": {
@@ -133,7 +175,7 @@
     "predicate": "funding",
     "object": "$40m Series B to pitch an agentic-AI procurement OS at the enterprises legacy software has not fixed",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 3
     },
     "source_span": {
@@ -154,7 +196,7 @@
     "predicate": "funding",
     "object": "$40m Series B to pitch an agentic-AI procurement OS at the enterprises legacy software has not fixed",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 4
     },
     "source_span": {
@@ -364,7 +406,7 @@
     "predicate": "funding",
     "object": "$10M to simplify ML workflow orchestration",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 1
     },
     "source_span": {
@@ -385,7 +427,7 @@
     "predicate": "funding",
     "object": "$10M to simplify ML workflow orchestration",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 2
     },
     "source_span": {
@@ -399,43 +441,43 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-9faffb59c2e6e31a",
+    "claim_id": "CL-0b3d7f8b3225fe5d",
     "raw_id": "RAW-918db1b376b9ff3c",
     "claim_type": "funding",
     "subject": "Union.ai",
     "predicate": "funding",
     "object": "$10M to simplify ML workflow orchestration",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 3
     },
     "source_span": {
       "raw_id": "RAW-918db1b376b9ff3c",
-      "start": 999,
-      "end": 1317
+      "start": 79,
+      "end": 108
     },
-    "source_quote": "That’s where Flyte comes in — a platform for programming and processing concurrent AI and data analytics workflows. Union’s team, including Umare, helped to build Flyte while at Lyft, where it was used to help create a system to calculate the estimated time of arrival (ETA) for drivers to get from point A to point B.",
+    "source_quote": "10:00 AM PDT · April 12, 2022",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-cb7c9f26c2b24932",
+    "claim_id": "CL-6a8021a087eb96fd",
     "raw_id": "RAW-918db1b376b9ff3c",
     "claim_type": "funding",
     "subject": "Union.ai",
     "predicate": "funding",
     "object": "$10M to simplify ML workflow orchestration",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 4
     },
     "source_span": {
       "raw_id": "RAW-918db1b376b9ff3c",
-      "start": 1994,
-      "end": 2498
+      "start": 557,
+      "end": 998
     },
-    "source_quote": "“A managed version of Flyte, called Union Cloud, will allow smaller teams and organizations to use the power of Flyte without the need to staff up on infrastructure teams,” Umare continued. “We [founded Union] because we believe that machine learning and data workflows are fundamentally different from software deployments. This is because software is more precise with a slower lifecycle while machine learning and data workflows start off being experimental and may need to be quickly productionized.”",
+    "source_quote": "While companies find AI’s predictive power alluring, particularly on the data analytics side of the organization, achieving meaningful results with AI often proves to be a challenge. It’s true that AI can help to project revenue, for example, by identifying trends in buying and selling. But implementing and maintaining the data pipelines necessary to keep AI systems from drifting to inaccuracy can require substantial technical resources.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -478,6 +520,279 @@
       "end": 197
     },
     "source_quote": "Google Deepmind loses another top AI researcher as Nobel laureate John Jumper leaves for Anthropic",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-ceba0ef6f240b669",
+    "raw_id": "RAW-822a66011caddd22",
+    "claim_type": "organization_people",
+    "subject": "诺贝尔奖得主John Jumper离开Google Deepmind",
+    "predicate": "organization_people",
+    "object": "Anthropic",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-822a66011caddd22",
+      "start": 198,
+      "end": 492
+    },
+    "source_quote": "Nobel Prize winner John Jumper is leaving Google Deepmind for Anthropic after nearly nine years. Days earlier, Gemini co-lead Noam Shazeer left for OpenAI. Weeks before that, AlphaGo researcher David Silver started his own company. Three of Google's most prominent AI minds, gone within months.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-bc07b3606728100a",
+    "raw_id": "RAW-822a66011caddd22",
+    "claim_type": "organization_people",
+    "subject": "诺贝尔奖得主John Jumper离开Google Deepmind",
+    "predicate": "organization_people",
+    "object": "Anthropic",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-822a66011caddd22",
+      "start": 493,
+      "end": 787
+    },
+    "source_quote": "Nobel Prize winner John Jumper is leaving Google Deepmind for Anthropic after nearly nine years. Days earlier, Gemini co-lead Noam Shazeer left for OpenAI. Weeks before that, AlphaGo researcher David Silver started his own company. Three of Google's most prominent AI minds, gone within months.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-eb7c1777a68f63fe",
+    "raw_id": "RAW-3469834c1101069e",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "马斯克预测中国大模型2027年Q1追上Anthropic Fable，智谱唐杰回应\"用不了那么久\"",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-3469834c1101069e",
+      "start": 357,
+      "end": 414
+    },
+    "source_quote": "IT之家 6 月 19 日消息，北京时间 6 月 17 日，智谱正式上线并开源了新一代旗舰大模型 GLM-5.2。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-9f1b6e3dd0c30068",
+    "raw_id": "RAW-3469834c1101069e",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "马斯克预测中国大模型2027年Q1追上Anthropic Fable，智谱唐杰回应\"用不了那么久\"",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-3469834c1101069e",
+      "start": 779,
+      "end": 911
+    },
+    "source_quote": "Anthropic Fable 5 发布于 6 月 9 日，这也是 Anthropic 目前公开可用能力最强的 Claude 模型，在软件工程、知识工作、视觉理解、科学研究等领域表现突出，能够处理涉及 5000 万行代码迁移等高难度工作，并配备了动态安全防护机制。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-95865507631ff9cd",
+    "raw_id": "RAW-3469834c1101069e",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "马斯克预测中国大模型2027年Q1追上Anthropic Fable，智谱唐杰回应\"用不了那么久\"",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-3469834c1101069e",
+      "start": 415,
+      "end": 525
+    },
+    "source_quote": "在技术评测方面，GLM-5.2 在 FrontierSWE 编程基准测试中得分 74.4，超过了 OpenAI GPT-5.5，仅落后 Anthropic 顶级闭源模型 Claude Opus 4.8 约 1 个百分点。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-fe3ec3a665b7a169",
+    "raw_id": "RAW-3469834c1101069e",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "马斯克预测中国大模型2027年Q1追上Anthropic Fable，智谱唐杰回应\"用不了那么久\"",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-3469834c1101069e",
+      "start": 526,
+      "end": 579
+    },
+    "source_quote": "因此，一位网友昨晚在 X 上发帖提问：“中国大模型预计何时能够达到 Anthropic Fable 水平？",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-643502f3a4ccb47f",
+    "raw_id": "RAW-ce8bef06b7f96228",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "超越Claude Fable 5：智谱GLM 5.2登顶Design Arena网页设计AI榜单",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-ce8bef06b7f96228",
+      "start": 331,
+      "end": 468
+    },
+    "source_quote": "IT之家 6 月 20 日消息，@Designarena 今天（6 月 20 日）在 X 平台发布推文， 宣布在 Design Arena 单轮 HTML 网页设计（非智能体）评测中，智谱的 GLM-5.2 模型超过 Claude Fable 5 等模型，首次登顶总分第一。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-83b6ed31fc33a4db",
+    "raw_id": "RAW-ce8bef06b7f96228",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "超越Claude Fable 5：智谱GLM 5.2登顶Design Arena网页设计AI榜单",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-ce8bef06b7f96228",
+      "start": 469,
+      "end": 542
+    },
+    "source_quote": "IT之家查询公开资料，Design Arena 是全球首个通过群众外包（Crowdsourced）盲测，来评估 AI 生成设计质量的基准测试平台。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e399757cf0796f4f",
+    "raw_id": "RAW-ce8bef06b7f96228",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "超越Claude Fable 5：智谱GLM 5.2登顶Design Arena网页设计AI榜单",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-ce8bef06b7f96228",
+      "start": 542,
+      "end": 594
+    },
+    "source_quote": "在目前的 AI 评测界，Design Arena 被公认为最具行业说服力的“审美和落地设计”风向标之一。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e59ffd29c9fad267",
+    "raw_id": "RAW-34c80920e9ee06e8",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "visionOS 27 今秋推送：M5 Vision Pro 头显独占 Siri 语音定制和苹果最强本地 AI 模型",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-34c80920e9ee06e8",
+      "start": 335,
+      "end": 488
+    },
+    "source_quote": "IT之家 6 月 20 日消息，科技媒体 9to5Mac 昨日（6 月 19 日）发布博文，报道称在 visionOS 27 系统中， 苹果为 M5 Vision Pro 头显独占推出 Siri 语音定制（Voice Customization）和本地 AI 模型 AFM 3 Core Advanced。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-def709b9f0ef39c0",
+    "raw_id": "RAW-34c80920e9ee06e8",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "visionOS 27 今秋推送：M5 Vision Pro 头显独占 Siri 语音定制和苹果最强本地 AI 模型",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-34c80920e9ee06e8",
+      "start": 489,
+      "end": 607
+    },
+    "source_quote": "该媒体指出 M2 款 Vision Pro 和 M5 款 Vision Pro 共享 visionOS 27 诸多功能升级，涵盖 Siri AI、全景照片转空间场景、重新设计的控制中心、更智能的自然语言理解，以及更强悍的语音操作交互等。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-85a4dcaf0f72d71b",
+    "raw_id": "RAW-34c80920e9ee06e8",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "visionOS 27 今秋推送：M5 Vision Pro 头显独占 Siri 语音定制和苹果最强本地 AI 模型",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-34c80920e9ee06e8",
+      "start": 608,
+      "end": 718
+    },
+    "source_quote": "IT之家援引博文介绍，M5 款 Vision Pro 头显独占 2 项功能，其一是 Siri AI 的语音定制（Voice Customization）功能，用户可自由调整 Siri 语气的表现力和语速，实现个性化交互。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-819b55565656b293",
+    "raw_id": "RAW-34c80920e9ee06e8",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "visionOS 27 今秋推送：M5 Vision Pro 头显独占 Siri 语音定制和苹果最强本地 AI 模型",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-34c80920e9ee06e8",
+      "start": 0,
+      "end": 65
+    },
+    "source_quote": "visionOS 27 今秋推送：M5 Vision Pro 头显独占 Siri 语音定制和苹果最强本地 AI 模型 - IT之家",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -546,7 +861,7 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-e650b485049101e0",
+    "claim_id": "CL-b9e882ebf1259292",
     "raw_id": "RAW-049cd53d42605a80",
     "claim_type": "product_release",
     "subject": "全球首个人形机器人通用小脑 GPT 模型：银河通用",
@@ -558,10 +873,10 @@
     },
     "source_span": {
       "raw_id": "RAW-049cd53d42605a80",
-      "start": 1236,
-      "end": 1274
+      "start": 475,
+      "end": 586
     },
-    "source_quote": "挑战谷歌：OpenAI 推出生物学专用 AI 模型 GPT-Rosalind",
+    "source_quote": "AstraBrain-WBC 0.5 首次构建起面向人形机器人全身实时运动控制的通用基础模型，使用 2 万小时人类动作数据进行训练，参数规模达 8040 万，是行业首个达到 GPT-1 量级的人形机器人全身实时运控大模型。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -604,6 +919,48 @@
       "end": 470
     },
     "source_quote": "技术细节方面，ACE 在现有 AVX 向量指令基础上，新增了“图块寄存器”（tile register）状态，并定义了数据移动与处理操作。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-03a4844da011f8bc",
+    "raw_id": "RAW-192e30d6c75cf693",
+    "claim_type": "product_release",
+    "subject": "英特尔与AMD联合",
+    "predicate": "product_release",
+    "object": "ACE 1.15规范，增强x86架构AI算力",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-192e30d6c75cf693",
+      "start": 121,
+      "end": 216
+    },
+    "source_quote": "IT之家注：为应对 AI 任务的挑战，英特尔和 AMD 公司于 2024 年“世纪破冰”，联合成立了 EAG 小组，协调 x86 架构的未来演进方向，进一步推动 x86 生态规范化和标准化。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e81385ade6248b7b",
+    "raw_id": "RAW-192e30d6c75cf693",
+    "claim_type": "product_release",
+    "subject": "英特尔与AMD联合",
+    "predicate": "product_release",
+    "object": "ACE 1.15规范，增强x86架构AI算力",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-192e30d6c75cf693",
+      "start": 217,
+      "end": 317
+    },
+    "source_quote": "ACE 全称为 AI Compute Extensions，是一组专为加速人工智能与机器学习负载设计的 x86 指令集，其核心目标是优化矩阵乘法运算（深度学习中最频繁的计算操作）和低精度数据格式处理。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"

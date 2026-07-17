@@ -72,6 +72,10 @@ key_excerpts: [{"type":"company_action","text":"Breaking it into offline vs. onl
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_zh: "推荐与搜索的系统设计"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # System Design for Recommendations and Search

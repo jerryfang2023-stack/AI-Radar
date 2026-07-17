@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-009
 title: "Anthropic推出Claude Science公测版：用于可重复基因组学、蛋白质组学和化学信息学流程的多智能体AI工作台"
 title_zh: "Anthropic推出Claude Science公测版：用于可重复基因组学、蛋白质组学和化学信息学流程的多智能体AI工作台"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.marktechpost.com/2026/07/04/anthropic-launches-claude-science-beta"
 canonical_url: "https://marktechpost.com/2026/07/04/anthropic-launches-claude-science-beta"
 source_name: "MarkTechPost（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-05T04:56:15.138Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Anthropic推出Claude Science公测版：用于可重复基因组学、蛋白质组学和化学信息学流程的多智能体AI工作台

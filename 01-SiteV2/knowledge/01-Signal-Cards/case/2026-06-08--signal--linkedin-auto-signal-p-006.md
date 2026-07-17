@@ -2,7 +2,7 @@
 id: SIG-20260608-A04
 type: signal_card
 signal_type: case
-title: "Cerebras Inference on AWS Marketplace Simplified - LinkedIn"
+title: "Cerebras推理服务在AWS Marketplace上简化部署 - LinkedIn"
 date: 2026-06-08
 status: published
 source_title: "Cerebras Inference on AWS Marketplace Simplified - LinkedIn"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Linkedin"
 
 frontend:
-  displayTitle: "Cerebras Inference on AWS Marketplace Simplified - LinkedIn"
+  displayTitle: "Cerebras推理服务在AWS Marketplace上简化部署 - LinkedIn"
   sourceLinks:
     - "https://www.linkedin.com/posts/cerebras-systems_partner-spotlight-aws-marketplace-cerebras-activity-7432890641824772096-3tXC"
 ---
 
-# Cerebras Inference on AWS Marketplace Simplified - LinkedIn
+# Cerebras推理服务在AWS Marketplace上简化部署 - LinkedIn
 
 ## 新闻事实
 

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Probably 获得 Andreessen Horowitz 的
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "Probably 获 900 万美元种子轮，构建更可靠的 AI 错误检测系统"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Probably 获 900 万美元种子轮，构建更可靠的 AI 错误检测系统

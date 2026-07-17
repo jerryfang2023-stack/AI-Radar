@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"映泰推出 EdgeComp MS-NAT5000 边缘 
 theme: outside-core-exploration
 keyword_group: outside-core-exploration
 copyright_note: local research archive only
+title_zh: "映泰推出边缘 AI 系统 MS-NAT5000，搭载 NVIDIA Jetson Thor 模组"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 映泰推出边缘 AI 系统 MS-NAT5000，搭载 NVIDIA Jetson Thor 模组

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"PALO ALTO, Calif., June 24, 2026 — Ha
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Hang Ten Systems 获3200万美元融资，助力企业成功应用AI"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Hang Ten Systems raises $32 million to help enterprises succeed with AI

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"workflow_change","text":"AI for procurement decision-mak
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "制药公司AI采购决策支持"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # AI for procurement decision-making at a Pharma company

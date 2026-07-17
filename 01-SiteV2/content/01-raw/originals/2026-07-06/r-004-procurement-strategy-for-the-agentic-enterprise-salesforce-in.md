@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-004
 title: "Procurement Strategy For The Agentic Enterprise: Salesforce In ..."
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "面向代理型企业的采购策略：Salesforce 在..."
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://tei.forrester.com/go/salesforce/procurementawsmarketplacespotlight/"
 canonical_url: "https://tei.forrester.com/go/salesforce/procurementawsmarketplacespotlight"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-06T02:21:26.704Z
 theme: outside-core-exploration
 keyword_group: outside-core-exploration
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Procurement Strategy For The Agentic Enterprise: Salesforce In ...

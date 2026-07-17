@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-002
 title: "Mistral AI 发布 Leanstral 1.5：专为 Lean 4 证明助手设计的代码智能体模型"
 title_zh: "Mistral AI 发布 Leanstral 1.5：专为 Lean 4 证明助手设计的代码智能体模型"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.marktechpost.com/2026/07/03/mistral-ai-releases-leanstral-1-5-an-apache-2-0-lean-4-code-agent-model-solving-587-of-672-putnambench-problems"
 canonical_url: "https://marktechpost.com/2026/07/03/mistral-ai-releases-leanstral-1-5-an-apache-2-0-lean-4-code-agent-model-solving-587-of-672-putnambench-problems"
 source_name: "MarkTechPost（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-04T04:50:49.972Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Mistral AI 发布 Leanstral 1.5：专为 Lean 4 证明助手设计的代码智能体模型

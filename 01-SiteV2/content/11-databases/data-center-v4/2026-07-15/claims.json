@@ -1,68 +1,5 @@
 [
   {
-    "claim_id": "CL-f97385a0609e1497",
-    "raw_id": "RAW-6ff3765b064fe003",
-    "claim_type": "organization_people",
-    "subject": "OpenAI 研究员 Miles Wang 将",
-    "predicate": "organization_people",
-    "object": "创办 AI 药物发现初创公司，估值 20 亿美元",
-    "qualifiers": {
-      "event_status": "planned",
-      "sequence": 1
-    },
-    "source_span": {
-      "raw_id": "RAW-6ff3765b064fe003",
-      "start": 147,
-      "end": 490
-    },
-    "source_quote": "Miles Wang , an OpenAI researcher whose work includes using AI to accelerate scientific and biological discovery, is leaving the ChatGPT maker to launch a new startup focused on developing AI models for drug discovery, according to four people with knowledge of his plans. Several other OpenAI researchers are expected to join the new company.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.9,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-bdf37c7d1e20c5a8",
-    "raw_id": "RAW-6ff3765b064fe003",
-    "claim_type": "organization_people",
-    "subject": "OpenAI 研究员 Miles Wang 将",
-    "predicate": "organization_people",
-    "object": "创办 AI 药物发现初创公司，估值 20 亿美元",
-    "qualifiers": {
-      "event_status": "planned",
-      "sequence": 2
-    },
-    "source_span": {
-      "raw_id": "RAW-6ff3765b064fe003",
-      "start": 1801,
-      "end": 2039
-    },
-    "source_quote": "Wang joined OpenAI in 2024 after dropping out from Harvard, where he was working on a bachelor’s degree in computer science. (In recent years, investors are once again comfortable betting on young founders who haven’t completed college .)",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-eb80541e2fee7231",
-    "raw_id": "RAW-6ff3765b064fe003",
-    "claim_type": "organization_people",
-    "subject": "OpenAI 研究员 Miles Wang 将",
-    "predicate": "organization_people",
-    "object": "创办 AI 药物发现初创公司，估值 20 亿美元",
-    "qualifiers": {
-      "event_status": "planned",
-      "sequence": 3
-    },
-    "source_span": {
-      "raw_id": "RAW-6ff3765b064fe003",
-      "start": 17,
-      "end": 104
-    },
-    "source_quote": "OpenAI researcher Miles Wang in talks to launch AI drug discovery startup valued at $2B",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
     "claim_id": "CL-7fec5dfea474c619",
     "raw_id": "RAW-da1f23be43b1faf9",
     "claim_type": "lawsuit_settlement",
@@ -252,43 +189,43 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-8f6bb2d416b0bd0f",
+    "claim_id": "CL-35805c61d35f6a55",
     "raw_id": "RAW-f655c1d494d42c5e",
     "claim_type": "product_release",
     "subject": "Claude Code v2.1.210",
     "predicate": "product_release",
-    "object": "Fixed paste markers leaking into external editors opened from Claude Code, which could appear as stray È/É characters around pasted text",
+    "object": "Fixed isolation: 'worktree' subagents being able to run git-mutating commands against the main repo checkout instead of their own isolated worktree",
     "qualifiers": {
       "event_status": "completed",
       "sequence": 3
     },
     "source_span": {
       "raw_id": "RAW-f655c1d494d42c5e",
-      "start": 1146,
-      "end": 1282
+      "start": 750,
+      "end": 897
     },
-    "source_quote": "Fixed paste markers leaking into external editors opened from Claude Code, which could appear as stray È/É characters around pasted text",
+    "source_quote": "Fixed isolation: 'worktree' subagents being able to run git-mutating commands against the main repo checkout instead of their own isolated worktree",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-414d23fc4ffe7738",
+    "claim_id": "CL-d9d66c08731165a1",
     "raw_id": "RAW-f655c1d494d42c5e",
     "claim_type": "product_release",
     "subject": "Claude Code v2.1.210",
     "predicate": "product_release",
-    "object": "Fixed claude agents --effort ultracode not reaching dispatched sessions; the value was silently dropped",
+    "object": "Fixed the ultracode keyword opt-in firing on non-human-originated input such as webhook payloads and relayed PR comments",
     "qualifiers": {
       "event_status": "completed",
       "sequence": 4
     },
     "source_span": {
       "raw_id": "RAW-f655c1d494d42c5e",
-      "start": 2715,
-      "end": 2818
+      "start": 898,
+      "end": 1018
     },
-    "source_quote": "Fixed claude agents --effort ultracode not reaching dispatched sessions; the value was silently dropped",
+    "source_quote": "Fixed the ultracode keyword opt-in firing on non-human-originated input such as webhook payloads and relayed PR comments",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -632,10 +569,10 @@
   {
     "claim_id": "CL-bb89b2f344ac2037",
     "raw_id": "RAW-28d3dc0185933fc0",
-    "claim_type": "funding",
-    "subject": "TYLsemi",
-    "predicate": "funding",
-    "object": "$43 Million to Launch First Full-Stack Chiplet Platform for Custom AI Silicon - TYLsemi",
+    "claim_type": "product_release",
+    "subject": "TYLsemi Raises $43 Million to",
+    "predicate": "product_release",
+    "object": "First Full-Stack Chiplet Platform for Custom AI Silicon - TYLsemi",
     "qualifiers": {
       "event_status": "planned",
       "sequence": 1
@@ -651,36 +588,15 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-8b941b4cf3279dc5",
+    "claim_id": "CL-98cdae07134fa042",
     "raw_id": "RAW-28d3dc0185933fc0",
-    "claim_type": "funding",
-    "subject": "TYLsemi",
-    "predicate": "funding",
-    "object": "$43 Million to Launch First Full-Stack Chiplet Platform for Custom AI Silicon - TYLsemi",
+    "claim_type": "product_release",
+    "subject": "TYLsemi Raises $43 Million to",
+    "predicate": "product_release",
+    "object": "First Full-Stack Chiplet Platform for Custom AI Silicon - TYLsemi",
     "qualifiers": {
       "event_status": "planned",
       "sequence": 2
-    },
-    "source_span": {
-      "raw_id": "RAW-28d3dc0185933fc0",
-      "start": 391,
-      "end": 985
-    },
-    "source_quote": "San Jose, California, July 14, 2026 – Today, TYLsemi™ emerged from stealth and announced the closing of an oversubscribed $43 million early-stage funding round to accelerate the development of AI infrastructure. TYLsemi is the first chiplet platform company to deliver a full portfolio across IO, power delivery, and memory paired with a chiplet-based custom silicon design, integration and supply-chain ownership. This standards-based, production-ready portfolio will provide AI infrastructure customers with a faster, lower-risk path for developing AI silicon from architecture to deployment.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-98cdae07134fa042",
-    "raw_id": "RAW-28d3dc0185933fc0",
-    "claim_type": "funding",
-    "subject": "TYLsemi",
-    "predicate": "funding",
-    "object": "$43 Million to Launch First Full-Stack Chiplet Platform for Custom AI Silicon - TYLsemi",
-    "qualifiers": {
-      "event_status": "planned",
-      "sequence": 3
     },
     "source_span": {
       "raw_id": "RAW-28d3dc0185933fc0",
@@ -693,22 +609,43 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-2ad74646f2a4f453",
+    "claim_id": "CL-e76a8dabda824337",
     "raw_id": "RAW-28d3dc0185933fc0",
-    "claim_type": "funding",
-    "subject": "TYLsemi",
-    "predicate": "funding",
-    "object": "$43 Million to Launch First Full-Stack Chiplet Platform for Custom AI Silicon - TYLsemi",
+    "claim_type": "product_release",
+    "subject": "TYLsemi Raises $43 Million to",
+    "predicate": "product_release",
+    "object": "First Full-Stack Chiplet Platform for Custom AI Silicon - TYLsemi",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-28d3dc0185933fc0",
+      "start": 198,
+      "end": 309
+    },
+    "source_quote": "Reduces custom AI silicon development time and cost by up to 50% from architecture to high-volume manufacturing",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-8b941b4cf3279dc5",
+    "raw_id": "RAW-28d3dc0185933fc0",
+    "claim_type": "product_release",
+    "subject": "TYLsemi Raises $43 Million to",
+    "predicate": "product_release",
+    "object": "First Full-Stack Chiplet Platform for Custom AI Silicon - TYLsemi",
     "qualifiers": {
       "event_status": "planned",
       "sequence": 4
     },
     "source_span": {
       "raw_id": "RAW-28d3dc0185933fc0",
-      "start": 1497,
-      "end": 2063
+      "start": 391,
+      "end": 985
     },
-    "source_quote": "“The AI accelerator market is on track to reach $604 billion by 2033 and custom silicon XPUs built for specific hyperscaler workloads are the fastest-growing segment,” said Mohit Gupta, Founder and CEO of TYLsemi. “At that scale, chiplet-based design is no longer optional, yet there is no pure-play chiplet company serving this market with a full portfolio. TYLsemi closes that gap with standards-based chiplets combined with UCIe-based die-to-die connectivity, XPU-aware design, packaging, and integration — giving customers a fast, proven path to AI-era silicon.”",
+    "source_quote": "San Jose, California, July 14, 2026 – Today, TYLsemi™ emerged from stealth and announced the closing of an oversubscribed $43 million early-stage funding round to accelerate the development of AI infrastructure. TYLsemi is the first chiplet platform company to deliver a full portfolio across IO, power delivery, and memory paired with a chiplet-based custom silicon design, integration and supply-chain ownership. This standards-based, production-ready portfolio will provide AI infrastructure customers with a faster, lower-risk path for developing AI silicon from architecture to deployment.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -732,69 +669,6 @@
     "source_quote": "Samsung SDS to Launch FuriosaAI-Powered AI Services on July 16",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.9,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-e2efded39d1ea724",
-    "raw_id": "RAW-909362d3ba26dea1",
-    "claim_type": "product_release",
-    "subject": "Samsung SDS to",
-    "predicate": "product_release",
-    "object": "FuriosaAI-Powered AI Services on July 16",
-    "qualifiers": {
-      "event_status": "planned",
-      "sequence": 2
-    },
-    "source_span": {
-      "raw_id": "RAW-909362d3ba26dea1",
-      "start": 435,
-      "end": 665
-    },
-    "source_quote": "Samsung SDS will launch its proprietary AI services powered by FuriosaAI's neural processing units (NPUs) on July 16, marking one of the first commercial deployments of the Korean AI chipmaker's hardware in enterprise AI services.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-c86c105bfd855776",
-    "raw_id": "RAW-909362d3ba26dea1",
-    "claim_type": "product_release",
-    "subject": "Samsung SDS to",
-    "predicate": "product_release",
-    "object": "FuriosaAI-Powered AI Services on July 16",
-    "qualifiers": {
-      "event_status": "planned",
-      "sequence": 3
-    },
-    "source_span": {
-      "raw_id": "RAW-909362d3ba26dea1",
-      "start": 666,
-      "end": 933
-    },
-    "source_quote": "Speaking at the 2026 K-NPU Tech Wave event at The Plaza Hotel in Seoul on July 14, Choi Jeong-jin, Executive Vice President at Samsung SDS, said the company will launch its NPU-as-a-Service (NPUaaS) platform based on FuriosaAI's second-generation RNGD (Renegade) NPU.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-4326c5845b1ac7d1",
-    "raw_id": "RAW-909362d3ba26dea1",
-    "claim_type": "product_release",
-    "subject": "Samsung SDS to",
-    "predicate": "product_release",
-    "object": "FuriosaAI-Powered AI Services on July 16",
-    "qualifiers": {
-      "event_status": "planned",
-      "sequence": 4
-    },
-    "source_span": {
-      "raw_id": "RAW-909362d3ba26dea1",
-      "start": 240,
-      "end": 434
-    },
-    "source_quote": "Choi Jeong-jin, Executive Vice President at Samsung SDS, presents the company's collaboration with FuriosaAI at the 2026 K-NPU Tech Wave at The Plaza Hotel in Seoul on July 14. (Photo: THE ELEC)",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
     "verification_status": "accepted"
   },
   {
@@ -835,6 +709,48 @@
       "end": 1557
     },
     "source_quote": "Today, we’re announcing $27 million in combined Seed and Series A funding, with the Series A led by CRV alongside Y Combinator, Pathlight Ventures, and angels including the founders of Altruist and Jump AI. This funding gives us the resources to go deeper into the mission we started with: making compliance effortless for regulated financial firms.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-fab3c3d58e127030",
+    "raw_id": "RAW-f0b6cb70052359a7",
+    "claim_type": "funding",
+    "subject": "Announcing our $22 Million",
+    "predicate": "funding",
+    "object": "Thomas Stewart, Founder & CEO",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-f0b6cb70052359a7",
+      "start": 71,
+      "end": 100
+    },
+    "source_quote": "Thomas Stewart, Founder & CEO",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-ae6f22e3e93e6ad7",
+    "raw_id": "RAW-f0b6cb70052359a7",
+    "claim_type": "funding",
+    "subject": "Announcing our $22 Million",
+    "predicate": "funding",
+    "object": "In 2026, everything is compliance.",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-f0b6cb70052359a7",
+      "start": 101,
+      "end": 135
+    },
+    "source_quote": "In 2026, everything is compliance.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -1015,7 +931,7 @@
     "predicate": "funding",
     "object": "$50M to help nations secure their defense systems - SiliconANGLE",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 1
     },
     "source_span": {
@@ -1036,7 +952,7 @@
     "predicate": "funding",
     "object": "$50M to help nations secure their defense systems - SiliconANGLE",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 2
     },
     "source_span": {
@@ -1057,7 +973,7 @@
     "predicate": "funding",
     "object": "$50M to help nations secure their defense systems - SiliconANGLE",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 3
     },
     "source_span": {
@@ -1078,7 +994,7 @@
     "predicate": "funding",
     "object": "$50M to help nations secure their defense systems - SiliconANGLE",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 4
     },
     "source_span": {
@@ -1099,7 +1015,7 @@
     "predicate": "funding",
     "object": "$21 Million Seed To Build Self-Learning AI Back-Office Platform",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 1
     },
     "source_span": {
@@ -1120,7 +1036,7 @@
     "predicate": "funding",
     "object": "$21 Million Seed To Build Self-Learning AI Back-Office Platform",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 2
     },
     "source_span": {
@@ -1134,6 +1050,27 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-2d2c3a58146b870c",
+    "raw_id": "RAW-fdc7e38f60f86aac",
+    "claim_type": "funding",
+    "subject": "Thira",
+    "predicate": "funding",
+    "object": "$21 Million Seed To Build Self-Learning AI Back-Office Platform",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-fdc7e38f60f86aac",
+      "start": 442,
+      "end": 872
+    },
+    "source_quote": "Thira was founded by Apptio co-founders Sunny Gupta and Kurt Shintaffer, who are reuniting as part of the company’s founding team. The broader founding and early team includes Mudit Goel, former SVP of Engineering at Atlassian; Grant Neuman, former AI Engineer at Oracle Cloud Infrastructure; Tarek Madkour, former Director of Product Management at Databricks; and Shashwat Srivastav, former founder and lead AI engineer at AIVOT.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-3f408d472b1cf048",
     "raw_id": "RAW-fdc7e38f60f86aac",
     "claim_type": "funding",
@@ -1141,8 +1078,8 @@
     "predicate": "funding",
     "object": "$21 Million Seed To Build Self-Learning AI Back-Office Platform",
     "qualifiers": {
-      "event_status": "announced",
-      "sequence": 3
+      "event_status": "completed",
+      "sequence": 4
     },
     "source_span": {
       "raw_id": "RAW-fdc7e38f60f86aac",
@@ -1150,27 +1087,6 @@
       "end": 1375
     },
     "source_quote": "Thira is designed to operate within existing enterprise systems while securely executing complex operational processes. Its platform combines self-learning agents, enterprise-grade security and governance, system connectivity, and an AI execution system powered by an enterprise knowledge graph.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-cd0f018d570f50c6",
-    "raw_id": "RAW-fdc7e38f60f86aac",
-    "claim_type": "funding",
-    "subject": "Thira",
-    "predicate": "funding",
-    "object": "$21 Million Seed To Build Self-Learning AI Back-Office Platform",
-    "qualifiers": {
-      "event_status": "announced",
-      "sequence": 4
-    },
-    "source_span": {
-      "raw_id": "RAW-fdc7e38f60f86aac",
-      "start": 1376,
-      "end": 1676
-    },
-    "source_quote": "The company said its goal is to create a “back-office that runs itself,” beginning with IT workflows that often require coordination across multiple tools, systems, and teams. Rather than simply providing insights, Thira is being built to take action on complex processes with visibility and control.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -1764,6 +1680,90 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-8d92651e7262aa01",
+    "raw_id": "RAW-1aeb2de3d29ed721",
+    "claim_type": "deployment",
+    "subject": "AI",
+    "predicate": "deployment",
+    "object": "AI taps algorithms to extract info from sales calls",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-1aeb2de3d29ed721",
+      "start": 9,
+      "end": 66
+    },
+    "source_quote": "Pilot AI taps algorithms to extract info from sales calls",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-7e2c5c16f110a101",
+    "raw_id": "RAW-1aeb2de3d29ed721",
+    "claim_type": "deployment",
+    "subject": "AI",
+    "predicate": "deployment",
+    "object": "AI taps algorithms to extract info from sales calls",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-1aeb2de3d29ed721",
+      "start": 556,
+      "end": 862
+    },
+    "source_quote": "The tech grew into a company, Pilot AI , that was accepted into Y Combinator’s summer 2022 batch and recently raised $2.2 million from Twitch co-founder Emmett Shear and Dropbox co-founder Arash Ferdowsi, among others. TechCrunch previously covered Pilot AI during Y Combinator’s Summer ’22 batch demo day.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-801ab9d7c70c9d70",
+    "raw_id": "RAW-1aeb2de3d29ed721",
+    "claim_type": "deployment",
+    "subject": "AI",
+    "predicate": "deployment",
+    "object": "AI taps algorithms to extract info from sales calls",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-1aeb2de3d29ed721",
+      "start": 863,
+      "end": 1287
+    },
+    "source_quote": "“Large organizations not only produce an incredible volume of calls but also typically have many more teams that can touch a single account, and thus have an even greater demand to unlock this information — and lower the friction of sharing it,” Lu told TechCrunch in an email interview. “Pilot AI doesn’t simply provide suggestions to sales reps, but rather takes over workload entirely from the sales reps and leadership.”",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-60bbeb505434da14",
+    "raw_id": "RAW-1aeb2de3d29ed721",
+    "claim_type": "deployment",
+    "subject": "AI",
+    "predicate": "deployment",
+    "object": "AI taps algorithms to extract info from sales calls",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-1aeb2de3d29ed721",
+      "start": 109,
+      "end": 555
+    },
+    "source_quote": "Maxwell Lu, formerly a product engineer at Salesforce and the head of revenue operations at a previous startup, found himself frustrated by the task of re-listening to sales calls to write up notes and fill out entries in customer relationship management (CRM) software. Searching for a better way, he decided to build tech that could analyze sales calls automatically — powered by AI — and transfer that information directly into a CRM database.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-220aceb0df32d7c0",
     "raw_id": "RAW-924223510b3e7220",
     "claim_type": "lawsuit_settlement",
@@ -1843,174 +1843,6 @@
       "end": 807
     },
     "source_quote": "此次诉讼的核心人物之一 Tang Tan 曾在苹果任职长达 24 年，离职前担任产品设计副总裁，深度参与了 iPhone 、Apple Watch、AirPods 及 iPod 等多款标志性产品的开发工作。",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-5d0e14a1378aee76",
-    "raw_id": "RAW-6fb9a0edbd6849e8",
-    "claim_type": "model_release",
-    "subject": "阿里",
-    "predicate": "model_release",
-    "object": "Qwen-Audio-3.0-Realtime",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 1
-    },
-    "source_span": {
-      "raw_id": "RAW-6fb9a0edbd6849e8",
-      "start": 0,
-      "end": 115
-    },
-    "source_quote": "IT之家 7 月 15 日消息，阿里巴巴实时语音交互对话模型 Qwen-Audio-3.0-Realtime 今天（15 日）正式发布，在智商、Agent 工具调用、共情对话和双工交互流畅度四条主线上同步升级，力求“又快又聪明”。",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.9,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-5e1fe157f9abaae9",
-    "raw_id": "RAW-6fb9a0edbd6849e8",
-    "claim_type": "model_release",
-    "subject": "阿里",
-    "predicate": "model_release",
-    "object": "Qwen-Audio-3.0-Realtime",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 2
-    },
-    "source_span": {
-      "raw_id": "RAW-6fb9a0edbd6849e8",
-      "start": 965,
-      "end": 1003
-    },
-    "source_quote": "qwen-audio-3.0-realtime-plus API: 点此前往",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-934876accbacd03b",
-    "raw_id": "RAW-6fb9a0edbd6849e8",
-    "claim_type": "model_release",
-    "subject": "阿里",
-    "predicate": "model_release",
-    "object": "Qwen-Audio-3.0-Realtime",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 3
-    },
-    "source_span": {
-      "raw_id": "RAW-6fb9a0edbd6849e8",
-      "start": 1004,
-      "end": 1043
-    },
-    "source_quote": "qwen-audio-3.0-realtime-flash API: 点此前往",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-26fc7296f69626e6",
-    "raw_id": "RAW-6fb9a0edbd6849e8",
-    "claim_type": "model_release",
-    "subject": "阿里",
-    "predicate": "model_release",
-    "object": "Qwen-Audio-3.0-Realtime",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 4
-    },
-    "source_span": {
-      "raw_id": "RAW-6fb9a0edbd6849e8",
-      "start": 1044,
-      "end": 1076
-    },
-    "source_quote": "Qwen-Audio-3.0-Realtime 文档： 点此前往",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-0d47eb95cfca0d1d",
-    "raw_id": "RAW-044a181fd75da2eb",
-    "claim_type": "model_release",
-    "subject": "Anthropic",
-    "predicate": "model_release",
-    "object": "训练",
-    "qualifiers": {
-      "event_status": "planned",
-      "sequence": 1
-    },
-    "source_span": {
-      "raw_id": "RAW-044a181fd75da2eb",
-      "start": 19,
-      "end": 105
-    },
-    "source_quote": "Anthropic opens Claude for Teachers with a promise not to train models on student data",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.9,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-233802dc4b2dd5f9",
-    "raw_id": "RAW-044a181fd75da2eb",
-    "claim_type": "model_release",
-    "subject": "Anthropic",
-    "predicate": "model_release",
-    "object": "训练",
-    "qualifiers": {
-      "event_status": "planned",
-      "sequence": 2
-    },
-    "source_span": {
-      "raw_id": "RAW-044a181fd75da2eb",
-      "start": 180,
-      "end": 521
-    },
-    "source_quote": "Anthropic is rolling out Claude for Teachers, a free offering for verified K-12 educators at US schools. It includes access to Claude along with Claude Code and the Cowork agent feature, a library of teaching-specific skills, and connections to curriculum-aligned content. The company says it covers education standards across all 50 states.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-3361dc5c23272d31",
-    "raw_id": "RAW-044a181fd75da2eb",
-    "claim_type": "model_release",
-    "subject": "Anthropic",
-    "predicate": "model_release",
-    "object": "训练",
-    "qualifiers": {
-      "event_status": "planned",
-      "sequence": 3
-    },
-    "source_span": {
-      "raw_id": "RAW-044a181fd75da2eb",
-      "start": 522,
-      "end": 988
-    },
-    "source_quote": "Teachers can use it to plan lessons, differentiate materials, or analyze student data. Recurring tasks like daily assessment reviews can be automated and scheduled to run at set times. Integrations with tools like Canva Education, MagicSchool, and ASSISTments let teachers plug Claude into their existing workflows. Anthropic says it won't use any processed data for model training. The American Federation of Teachers is working with Anthropic on privacy standards.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-2212e110d145be91",
-    "raw_id": "RAW-044a181fd75da2eb",
-    "claim_type": "model_release",
-    "subject": "Anthropic",
-    "predicate": "model_release",
-    "object": "训练",
-    "qualifiers": {
-      "event_status": "planned",
-      "sequence": 4
-    },
-    "source_span": {
-      "raw_id": "RAW-044a181fd75da2eb",
-      "start": 989,
-      "end": 1573
-    },
-    "source_quote": "Anthropic is also releasing a free, model-agnostic AI course for educators and a GitHub repository with agent skills . The company plans to study Claude for Teachers' impact through a pilot program at public schools in Detroit. The new offering builds on Claude for Education , which already serves colleges and universities. That program's learning mode came about because students said in interviews that AI tools were eroding their ability to think independently, according to Anthropic's head of education Drew Bent. Sign-ups for Claude for Teachers are open through June 2027. Ad",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -2100,6 +1932,90 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-d8cdc0aa2d138ffe",
+    "raw_id": "RAW-6c1ed1eb77cad848",
+    "claim_type": "product_release",
+    "subject": "DeepSeek",
+    "predicate": "product_release",
+    "object": "DeepSeek 梁文锋身价飙升至 360 亿美元，成 AI 公司新首富",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-6c1ed1eb77cad848",
+      "start": 623,
+      "end": 722
+    },
+    "source_quote": "DeepSeek 成立于 2023 年 7 月 17 日，总部位于浙江省杭州市拱墅区，主要从事大语言模型及多模态 AI 技术研发，其推出的 DeepSeek 系列开源模型是国内领先的开源大模型之一。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-58dcd8ce5b58ec35",
+    "raw_id": "RAW-6c1ed1eb77cad848",
+    "claim_type": "product_release",
+    "subject": "DeepSeek",
+    "predicate": "product_release",
+    "object": "DeepSeek 梁文锋身价飙升至 360 亿美元，成 AI 公司新首富",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-6c1ed1eb77cad848",
+      "start": 0,
+      "end": 43
+    },
+    "source_quote": "DeepSeek 梁文锋身价飙升至 360 亿美元，成 AI 公司新首富 - IT之家",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-0ab48c223d20c105",
+    "raw_id": "RAW-6c1ed1eb77cad848",
+    "claim_type": "product_release",
+    "subject": "DeepSeek",
+    "predicate": "product_release",
+    "object": "DeepSeek 梁文锋身价飙升至 360 亿美元，成 AI 公司新首富",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-6c1ed1eb77cad848",
+      "start": 209,
+      "end": 245
+    },
+    "source_quote": "DeepSeek 梁文锋身价飙升至 360 亿美元，成 AI 公司新首富",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-8e55955bfa3a877d",
+    "raw_id": "RAW-6c1ed1eb77cad848",
+    "claim_type": "product_release",
+    "subject": "DeepSeek",
+    "predicate": "product_release",
+    "object": "DeepSeek 梁文锋身价飙升至 360 亿美元，成 AI 公司新首富",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-6c1ed1eb77cad848",
+      "start": 292,
+      "end": 446
+    },
+    "source_quote": "IT之家 7 月 14 日消息，根据最新的彭博亿万富豪指数（截至 2026 年 7 月 14 日），DeepSeek 创始人梁文锋的身价飙升 193 亿美元， 达到 360 亿美元 （IT之家注：现汇率约合 2443.78 亿元人民币），成为全球 AI 公司领域的新首富（不涉及包含 AI 业务的大型集团）。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-dd98904ba63b0525",
     "raw_id": "RAW-227f660136ddb3dc",
     "claim_type": "partnership",
@@ -2179,6 +2095,90 @@
       "end": 418
     },
     "source_quote": "OPPO 成为首批通过该协议接入支付宝 AI 生态的手机厂商之一。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b3d18fb369dd95cd",
+    "raw_id": "RAW-cefb9b7f11995762",
+    "claim_type": "product_release",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "OpenAI GPT-5.6 Sol 被曝擅自删除用户文件，系统卡曾预警风险",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-cefb9b7f11995762",
+      "start": 324,
+      "end": 410
+    },
+    "source_quote": "IT之家 7 月 15 日消息，据外媒 TechCrunch 今天（15 日）报道，OpenAI 最新推出的编程及网络安全旗舰模型 GPT-5.6 Sol 正引发用户担忧。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-8b8b592d0cafdfcc",
+    "raw_id": "RAW-cefb9b7f11995762",
+    "claim_type": "product_release",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "OpenAI GPT-5.6 Sol 被曝擅自删除用户文件，系统卡曾预警风险",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-cefb9b7f11995762",
+      "start": 835,
+      "end": 864
+    },
+    "source_quote": "不过，OpenAI 早在 Sol 发布前便发现了这种风险。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-55da132f2fbde4f6",
+    "raw_id": "RAW-cefb9b7f11995762",
+    "claim_type": "product_release",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "OpenAI GPT-5.6 Sol 被曝擅自删除用户文件，系统卡曾预警风险",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-cefb9b7f11995762",
+      "start": 864,
+      "end": 910
+    },
+    "source_quote": "GPT-5.6 Sol 正式推出两周前，OpenAI 发布了记录模型测试方法和结果的系统卡。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-fcac0454f440382a",
+    "raw_id": "RAW-cefb9b7f11995762",
+    "claim_type": "product_release",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "OpenAI GPT-5.6 Sol 被曝擅自删除用户文件，系统卡曾预警风险",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-cefb9b7f11995762",
+      "start": 0,
+      "end": 47
+    },
+    "source_quote": "多名用户示警：OpenAI 最新模型 GPT-5.6 Sol 会擅自删除用户文件 - IT之家",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -2499,6 +2499,174 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-86b22b342fb297d9",
+    "raw_id": "RAW-c9b7167fb9767bf6",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "苹果评估 PrismML 量化技术，内存占用从 54GB 降至 3.9GB，iPhone 15 及后续机型可运行 27B 模型",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-c9b7167fb9767bf6",
+      "start": 836,
+      "end": 940
+    },
+    "source_quote": "IT之家今天报道，PrismML 公司今天宣布推出 Bonsai 27B 模型，基于 Qwen 3.6 27B 模型微调，在保留 90% 智能水平的情况下，可以在 12GB 内存的 iPhone 上原生运行。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-0657d61ac5fc613d",
+    "raw_id": "RAW-c9b7167fb9767bf6",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "苹果评估 PrismML 量化技术，内存占用从 54GB 降至 3.9GB，iPhone 15 及后续机型可运行 27B 模型",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-c9b7167fb9767bf6",
+      "start": 19,
+      "end": 75
+    },
+    "source_quote": "苹果正评估 PrismML 量化 AI 技术，让 iPhone 15 及后续机型运行 27B 模型 - IT之家",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-4fc36b49dda83531",
+    "raw_id": "RAW-c9b7167fb9767bf6",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "苹果评估 PrismML 量化技术，内存占用从 54GB 降至 3.9GB，iPhone 15 及后续机型可运行 27B 模型",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-c9b7167fb9767bf6",
+      "start": 270,
+      "end": 319
+    },
+    "source_quote": "苹果正评估 PrismML 量化 AI 技术，让 iPhone 15 及后续机型运行 27B 模型",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-429297129a61fed0",
+    "raw_id": "RAW-c9b7167fb9767bf6",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "苹果评估 PrismML 量化技术，内存占用从 54GB 降至 3.9GB，iPhone 15 及后续机型可运行 27B 模型",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-c9b7167fb9767bf6",
+      "start": 395,
+      "end": 512
+    },
+    "source_quote": "IT之家 7 月 15 日消息，昨日（7 月 14 日）在接受 CNBC 采访时，PrismML 首席执行官巴博克 · 哈西（Babak Hassibi）表示， 其公司确实和苹果公司接洽，并透露苹果公司正在评估其相关 AI 量化技术。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-22183797025ff414",
+    "raw_id": "RAW-cfbd59a14b0e0406",
+    "claim_type": "product_release",
+    "subject": "Bonsai",
+    "predicate": "product_release",
+    "object": "Bonsai 27B 模型登场，12GB 内存 iPhone 17 Pro 可原生运行",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-cfbd59a14b0e0406",
+      "start": 363,
+      "end": 493
+    },
+    "source_quote": "IT之家 7 月 15 日消息，@PrismML 官方账号今天（7 月 15 日）发布博文，宣布推出 Bonsai 27B 模型，基于 Qwen 3.6 27B 模型微调， 在保留 90% 智能水平的情况下，可以在 12GB 内存的 iPhone 上原生运行。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-4934f7ffad2a3c86",
+    "raw_id": "RAW-cfbd59a14b0e0406",
+    "claim_type": "product_release",
+    "subject": "Bonsai",
+    "predicate": "product_release",
+    "object": "Bonsai 27B 模型登场，12GB 内存 iPhone 17 Pro 可原生运行",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-cfbd59a14b0e0406",
+      "start": 494,
+      "end": 560
+    },
+    "source_quote": "Qwen 3.6 27B 模型进一步提升本地 AI 的能力，重点涵盖多步推理、结构化工具使用、长上下文工作流，以及连贯的智能体循环。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-c16a01f6159388be",
+    "raw_id": "RAW-cfbd59a14b0e0406",
+    "claim_type": "product_release",
+    "subject": "Bonsai",
+    "predicate": "product_release",
+    "object": "Bonsai 27B 模型登场，12GB 内存 iPhone 17 Pro 可原生运行",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-cfbd59a14b0e0406",
+      "start": 561,
+      "end": 663
+    },
+    "source_quote": "在 16-bit 精度下，Qwen 3.6 27B 模型需要占用 54GB 空间，而即便在 4-bit 精度下，该模型也需要占用 18GB 空间，对于手机和大部分笔记本而言，内存占用过高导致无法正常运行。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-7cc542a472e16545",
+    "raw_id": "RAW-cfbd59a14b0e0406",
+    "claim_type": "product_release",
+    "subject": "Bonsai",
+    "predicate": "product_release",
+    "object": "Bonsai 27B 模型登场，12GB 内存 iPhone 17 Pro 可原生运行",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-cfbd59a14b0e0406",
+      "start": 0,
+      "end": 63
+    },
+    "source_quote": "手机 AI 的 DeepSeek 时刻：Bonsai 27B 模型登场，苹果 iPhone 17 Pro 可运行 - IT之家",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-0f0c44cc60f60faa",
     "raw_id": "RAW-084faff33594e576",
     "claim_type": "model_release",
@@ -2541,7 +2709,7 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-d13b8dfe9939627c",
+    "claim_id": "CL-6ae09bb9bcf96000",
     "raw_id": "RAW-084faff33594e576",
     "claim_type": "model_release",
     "subject": "腾讯混元",
@@ -2550,6 +2718,27 @@
     "qualifiers": {
       "event_status": "completed",
       "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-084faff33594e576",
+      "start": 312,
+      "end": 333
+    },
+    "source_quote": "感谢IT之家网友 麻辣清补凉 的线索投递！",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-d13b8dfe9939627c",
+    "raw_id": "RAW-084faff33594e576",
+    "claim_type": "model_release",
+    "subject": "腾讯混元",
+    "predicate": "model_release",
+    "object": "可单卡本地运行",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
     },
     "source_span": {
       "raw_id": "RAW-084faff33594e576",
@@ -2562,22 +2751,85 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-c15d0afbb65d80c2",
-    "raw_id": "RAW-084faff33594e576",
-    "claim_type": "model_release",
-    "subject": "腾讯混元",
-    "predicate": "model_release",
-    "object": "可单卡本地运行",
+    "claim_id": "CL-972909f107eb213a",
+    "raw_id": "RAW-3bc4efe65e7195ea",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "报告称 Claude Code 处理用户请求前消耗 Tokens 量约为 OpenCode 的 4.7 倍",
     "qualifiers": {
-      "event_status": "completed",
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-3bc4efe65e7195ea",
+      "start": 0,
+      "end": 124
+    },
+    "source_quote": "IT之家 7 月 14 日消息，科技媒体 systima 于 7 月 12 日发布博文，对比测试指出在相同提示词、相同 AI 模型情况下， 在处理用户请求前，Claude Code 消耗的 Tokens 数量约为 OpenCode 的 4.7 倍。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-98568a4769d6cba5",
+    "raw_id": "RAW-3bc4efe65e7195ea",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "报告称 Claude Code 处理用户请求前消耗 Tokens 量约为 OpenCode 的 4.7 倍",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-3bc4efe65e7195ea",
+      "start": 125,
+      "end": 226
+    },
+    "source_quote": "该媒体对比测试 Claude Code 2.1.207 与 OpenCode 1.17.18 版本，均使用相同的 Claude Sonnet 4.5 模型，并通过日志智能体记录请求载荷和 API 用量。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-0d31b12e78daafe8",
+    "raw_id": "RAW-3bc4efe65e7195ea",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "报告称 Claude Code 处理用户请求前消耗 Tokens 量约为 OpenCode 的 4.7 倍",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-3bc4efe65e7195ea",
+      "start": 227,
+      "end": 324
+    },
+    "source_quote": "调查显示 Claude Code 初始请求包含系统提示词和 27 个工具说明，仅工具描述就占用了约 24000 个 Tokens，在处理用户输入之前大约需要消耗约 32800 个 Tokens。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-176a954d9d2dec69",
+    "raw_id": "RAW-3bc4efe65e7195ea",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "报告称 Claude Code 处理用户请求前消耗 Tokens 量约为 OpenCode 的 4.7 倍",
+    "qualifiers": {
+      "event_status": "announced",
       "sequence": 4
     },
     "source_span": {
-      "raw_id": "RAW-084faff33594e576",
-      "start": 405,
-      "end": 509
+      "raw_id": "RAW-3bc4efe65e7195ea",
+      "start": 324,
+      "end": 367
     },
-    "source_quote": "团队针对开源社区需求，把 Hy3 的权重量化到 1bit 与 4bit 并打包成 GGUF，配合 llama.cpp 生态，让原本只能跑在多卡集群上的模型，最少一张推理显卡、乃至内存充足的本地机器也能跑起来。",
+    "source_quote": "关闭全部工具后，Claude Code 的系统提示词仍约占 6500 个 Token。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -2688,7 +2940,7 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-13462087364190f3",
+    "claim_id": "CL-3a0e3ba6b57e7410",
     "raw_id": "RAW-0a0b1e947654ba0a",
     "claim_type": "funding",
     "subject": "The founder of Hinge",
@@ -2697,6 +2949,27 @@
     "qualifiers": {
       "event_status": "completed",
       "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-0a0b1e947654ba0a",
+      "start": 97,
+      "end": 125
+    },
+    "source_quote": "12:39 PM PDT · July 14, 2026",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-13462087364190f3",
+    "raw_id": "RAW-0a0b1e947654ba0a",
+    "claim_type": "funding",
+    "subject": "The founder of Hinge",
+    "predicate": "funding",
+    "object": "$18M to build a new AI dating service, Overtone",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
     },
     "source_span": {
       "raw_id": "RAW-0a0b1e947654ba0a",
@@ -2717,7 +2990,7 @@
     "object": "$18M to build a new AI dating service, Overtone",
     "qualifiers": {
       "event_status": "completed",
-      "sequence": 3
+      "sequence": 4
     },
     "source_span": {
       "raw_id": "RAW-0a0b1e947654ba0a",
@@ -2730,90 +3003,6 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-1e82166f891f2fe2",
-    "raw_id": "RAW-0a0b1e947654ba0a",
-    "claim_type": "funding",
-    "subject": "The founder of Hinge",
-    "predicate": "funding",
-    "object": "$18M to build a new AI dating service, Overtone",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 4
-    },
-    "source_span": {
-      "raw_id": "RAW-0a0b1e947654ba0a",
-      "start": 632,
-      "end": 951
-    },
-    "source_quote": "“Overtone is not a dating app,” McLeod wrote in the blog post . “By that I mean it’s not a social platform with profiles that reduce people to stats, quotes and photos. There are no opaque, algorithmic feeds trained on split-second impulses. And there’s no juggling likes, matches and chats across many people at once.”",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-65f171b3d88f3d34",
-    "raw_id": "RAW-3a012ba27ea63861",
-    "claim_type": "partnership",
-    "subject": "软银与Sierra",
-    "predicate": "partnership",
-    "object": "在日本推出AI客服服务",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 1
-    },
-    "source_span": {
-      "raw_id": "RAW-3a012ba27ea63861",
-      "start": 0,
-      "end": 105
-    },
-    "source_quote": "IT之家 7 月 14 日消息，软银公司今日宣布，在旗下纯线上移动通信品牌 LINEMO 部署美国 AI 初创公司 Sierra 的智能客服系统后，双方已达成合作，软银成为 Sierra 在日本的独家合作伙伴。",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.9,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-6f713561270ebf6b",
-    "raw_id": "RAW-3a012ba27ea63861",
-    "claim_type": "partnership",
-    "subject": "软银与Sierra",
-    "predicate": "partnership",
-    "object": "在日本推出AI客服服务",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 2
-    },
-    "source_span": {
-      "raw_id": "RAW-3a012ba27ea63861",
-      "start": 407,
-      "end": 458
-    },
-    "source_quote": "此次合作也是软银“Activate AI for Society（让 AI 赋能社会）”战略的一部分。",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-3d5c86431c4b8683",
-    "raw_id": "RAW-23d1d3ccbf4ed2f0",
-    "claim_type": "product_release",
-    "subject": "Claude Code v2.1.209",
-    "predicate": "product_release",
-    "object": "：修复 /model 等对话框在后台会话中被拦截的问题",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 1
-    },
-    "source_span": {
-      "raw_id": "RAW-23d1d3ccbf4ed2f0",
-      "start": 468,
-      "end": 581
-    },
-    "source_quote": "Fixed /model and other dialogs being blocked in claude agents background sessions (reverts an overly broad guard)",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.9,
-    "verification_status": "accepted"
-  },
-  {
     "claim_id": "CL-0adebe545cc00b60",
     "raw_id": "RAW-c75ec09c90c5567e",
     "claim_type": "lawsuit_settlement",
@@ -2821,7 +3010,7 @@
     "predicate": "lawsuit_settlement",
     "object": "Meta：休病假或育儿假也会导致自己被裁",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 1
     },
     "source_span": {
@@ -2842,7 +3031,7 @@
     "predicate": "lawsuit_settlement",
     "object": "Meta：休病假或育儿假也会导致自己被裁",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 2
     },
     "source_span": {
@@ -2863,7 +3052,7 @@
     "predicate": "lawsuit_settlement",
     "object": "Meta：休病假或育儿假也会导致自己被裁",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 3
     },
     "source_span": {
@@ -2956,6 +3145,90 @@
       "end": 690
     },
     "source_quote": "官方还同步推出 MacWhisper 14.1 更新，修复编辑器诸多 Bug 外，新增 Gladia 作为云转录提供商，用户可使用专属 Gladia API 密钥执行转录任务。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-1383dc2b9d7b7ac7",
+    "raw_id": "RAW-fc6fc7d33850fcfe",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "谷歌 DeepMind CEO 哈萨比斯警告：AGI 可能几年内到来，人类需抓紧窗口期确保安全",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-fc6fc7d33850fcfe",
+      "start": 156,
+      "end": 200
+    },
+    "source_quote": "哈萨比斯建议成立一个由美国牵头的国际联盟，在最先进的 AI 模型公开发布前开展安全审查。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b9ad309c79dae365",
+    "raw_id": "RAW-fc6fc7d33850fcfe",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "谷歌 DeepMind CEO 哈萨比斯警告：AGI 可能几年内到来，人类需抓紧窗口期确保安全",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-fc6fc7d33850fcfe",
+      "start": 200,
+      "end": 242
+    },
+    "source_quote": "“AI 能力正在快速进步，测试前沿 AI 模型必须采用一种动态、灵活而严谨的新方法。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-04f3ee34f0a37149",
+    "raw_id": "RAW-fc6fc7d33850fcfe",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "谷歌 DeepMind CEO 哈萨比斯警告：AGI 可能几年内到来，人类需抓紧窗口期确保安全",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-fc6fc7d33850fcfe",
+      "start": 242,
+      "end": 268
+    },
+    "source_quote": "凭借经济和技术优势，美国具备率先建立上述框架的条件。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e6fdfa9a52b202e1",
+    "raw_id": "RAW-fc6fc7d33850fcfe",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "谷歌 DeepMind CEO 哈萨比斯警告：AGI 可能几年内到来，人类需抓紧窗口期确保安全",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-fc6fc7d33850fcfe",
+      "start": 0,
+      "end": 80
+    },
+    "source_quote": "IT之家 7 月 15 日消息，谷歌 DeepMind CEO 德米斯 · 哈萨比斯发出明确警告：能力极强的 AI 可能距离人类已经不远，社会各界必须加快准备。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"

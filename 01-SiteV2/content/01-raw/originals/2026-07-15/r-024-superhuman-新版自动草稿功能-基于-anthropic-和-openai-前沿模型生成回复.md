@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-024
 title: "Superhuman 新版自动草稿功能：基于 Anthropic 和 OpenAI 前沿模型生成回复"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "Superhuman 新版自动草稿功能：基于 Anthropic 和 OpenAI 前沿模型生成回复"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://techcrunch.com/2026/07/14/superhumans-new-auto-draft-feature-almost-makes-me-like-ai-replies"
 canonical_url: "https://techcrunch.com/2026/07/14/superhumans-new-auto-draft-feature-almost-makes-me-like-ai-replies"
 source_name: "TechCrunch：AI（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-15T04:28:37.677Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Superhuman 新版自动草稿功能：基于 Anthropic 和 OpenAI 前沿模型生成回复

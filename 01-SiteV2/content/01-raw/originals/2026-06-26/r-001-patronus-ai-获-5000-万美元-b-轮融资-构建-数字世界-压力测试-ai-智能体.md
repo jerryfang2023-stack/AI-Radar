@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Patronus AI 宣布完成 5000 万美元
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "Patronus AI 获 5000 万美元 B 轮融资，构建\"数字世界\"压力测试 AI 智能体"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Patronus AI 获 5000 万美元 B 轮融资，构建"数字世界"压力测试 AI 智能体

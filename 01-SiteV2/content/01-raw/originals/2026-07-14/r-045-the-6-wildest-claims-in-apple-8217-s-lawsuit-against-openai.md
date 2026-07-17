@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-045
 title: "The 6 wildest claims in Apple&#8217;s lawsuit against OpenAI"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "苹果诉OpenAI案中最离谱的6项主张"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.theverge.com/tech/964843/apple-openai-lawsuit-wildest-claims"
 canonical_url: "https://theverge.com/tech/964843/apple-openai-lawsuit-wildest-claims"
 source_name: "The Verge AI"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-14T01:56:51.589Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # The 6 wildest claims in Apple&#8217;s lawsuit against OpenAI

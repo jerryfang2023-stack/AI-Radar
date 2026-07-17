@@ -2,7 +2,7 @@
 id: SIG-20260625-A07
 type: signal_card
 signal_type: product_service
-title: "Why we raised $13.5M to define Process Intelligence for the Agentic Era"
+title: "我们为何融资1350万美元，为智能体时代定义流程智能"
 date: 2026-06-25
 status: published
 source_title: "Why we raised $13.5M to define Process Intelligence for the Agentic Era"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Tekst"
 
 frontend:
-  displayTitle: "Why we raised $13.5M to define Process Intelligence for the Agentic Era"
+  displayTitle: "我们为何融资1350万美元，为智能体时代定义流程智能"
   sourceLinks:
     - "https://www.tekst.com/blogs/why-we-raised-13-5m-to-define-process-intelligence-for-the-agentic-era"
 ---
 
-# Why we raised $13.5M to define Process Intelligence for the Agentic Era
+# 我们为何融资1350万美元，为智能体时代定义流程智能
 
 ## 新闻事实
 

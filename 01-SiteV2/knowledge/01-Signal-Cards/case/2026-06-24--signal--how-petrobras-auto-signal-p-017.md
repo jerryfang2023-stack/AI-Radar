@@ -2,7 +2,7 @@
 id: SIG-20260624-A12
 type: signal_card
 signal_type: case
-title: "How Petrobras 记录企业应用场景：采购下单流程"
+title: "巴西国家石油公司如何利用生成式AI发现1.2亿美元税务节省 | 应用"
 date: 2026-06-24
 status: published
 source_title: "How Petrobras Uses AI for How Petrobras Uses Generative AI to Uncover $120M in Tax Savings | Applied"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "How Petrobras"
 
 frontend:
-  displayTitle: "How Petrobras 记录企业应用场景：采购下单流程"
+  displayTitle: "巴西国家石油公司如何利用生成式AI发现1.2亿美元税务节省 | 应用"
   sourceLinks:
     - "https://theapplied.co/use-cases/petrobras-generative-ai-tax-savings"
 ---
 
-# How Petrobras 记录企业应用场景：采购下单流程
+# 巴西国家石油公司如何利用生成式AI发现1.2亿美元税务节省 | 应用
 
 ## 新闻事实
 

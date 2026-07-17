@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Zaro.ai Secures $5.1M to Unify Enterpri
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_zh: "Zaro.ai获510万美元融资，打造统一企业AI代理、数据与应用的单层上下文平台"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Zaro.ai Secures $5.1M to Unify Enterprise AI Agents, Data, and Applications in a Single Context Layer

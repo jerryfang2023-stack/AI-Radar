@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Hang Ten Systems是一家企业AI服务
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "前Infosys CEO Vishal Sikka创立Hang Ten Systems，挑战IT服务行业"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 前Infosys CEO Vishal Sikka创立Hang Ten Systems，挑战IT服务行业

@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-044
 title: "You can now customize Siri&#8217;s pace and expressivity in the latest iOS 27 beta"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "最新 iOS 27 测试版中，您现在可以自定义 Siri 的语速和表现力"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://techcrunch.com/2026/07/06/you-can-now-customize-siris-pace-and-expressivity-in-the-latest-ios-27-beta/"
 canonical_url: "https://techcrunch.com/2026/07/06/you-can-now-customize-siris-pace-and-expressivity-in-the-latest-ios-27-beta"
 source_name: "TechCrunch AI"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-07T02:01:23.546Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # You can now customize Siri&#8217;s pace and expressivity in the latest iOS 27 beta

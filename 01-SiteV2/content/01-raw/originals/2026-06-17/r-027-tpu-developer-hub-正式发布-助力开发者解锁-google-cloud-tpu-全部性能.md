@@ -72,6 +72,10 @@ key_excerpts: [{"type":"supporting_context","text":"谷歌今日推出 TPU Devel
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "TPU Developer Hub 正式发布：助力开发者解锁 Google Cloud TPU 全部性能"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # TPU Developer Hub 正式发布：助力开发者解锁 Google Cloud TPU 全部性能

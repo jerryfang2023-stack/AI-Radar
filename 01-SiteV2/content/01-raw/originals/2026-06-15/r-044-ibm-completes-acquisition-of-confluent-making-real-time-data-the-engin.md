@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"ARMONK, N.Y., March 17, 2026 /PRNewswire
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "IBM完成对Confluent的收购，实时数据成为企业AI与智能体的引擎 | 纳斯达克"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # IBM Completes Acquisition of Confluent, Making Real Time Data the Engine of Enterprise AI and Agents | Nasdaq

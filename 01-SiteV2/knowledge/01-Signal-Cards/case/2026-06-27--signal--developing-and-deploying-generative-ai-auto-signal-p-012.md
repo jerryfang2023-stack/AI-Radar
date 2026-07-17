@@ -2,7 +2,7 @@
 id: SIG-20260627-A04
 type: signal_card
 signal_type: case
-title: "Developing and Deploying Generative AI - Altman Solon"
+title: "开发与部署生成式AI - Altman Solon"
 date: 2026-06-27
 status: published
 source_title: "Developing and Deploying Generative AI - Altman Solon"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Developing and Deploying Generative AI"
 
 frontend:
-  displayTitle: "Developing and Deploying Generative AI - Altman Solon"
+  displayTitle: "开发与部署生成式AI - Altman Solon"
   sourceLinks:
     - "https://www.altmansolon.com/thought-leadership/generative-ai-deployment-strategies"
 ---
 
-# Developing and Deploying Generative AI - Altman Solon
+# 开发与部署生成式AI - Altman Solon
 
 ## 新闻事实
 

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Runlayer has raised $30M in Series A fu
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Runlayer获3000万美元A轮融资，企业AI治理成为核心基础设施 | DevCuration"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Runlayer Raises $30M Series A as Enterprise AI Governance Becomes Core Infrastructure | DevCuration

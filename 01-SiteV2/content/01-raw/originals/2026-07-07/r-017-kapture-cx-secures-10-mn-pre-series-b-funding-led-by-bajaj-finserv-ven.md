@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-017
 title: "Kapture CX Secures $10 Mn Pre-Series B Funding Led by Bajaj Finserv Ventures to Scale Agentic Enterprise Stack"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "Kapture CX获Bajaj Finserv Ventures领投1000万美元Pre-B轮融资，用于扩展代理型企业技术栈"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://startupsuccessstories.in/kapture-cx-secures-10-mn-pre-series-b-funding/"
 canonical_url: "https://startupsuccessstories.in/kapture-cx-secures-10-mn-pre-series-b-funding"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-07T02:01:23.397Z
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Kapture CX Secures $10 Mn Pre-Series B Funding Led by Bajaj Finserv Ventures to Scale Agentic Enterprise Stack

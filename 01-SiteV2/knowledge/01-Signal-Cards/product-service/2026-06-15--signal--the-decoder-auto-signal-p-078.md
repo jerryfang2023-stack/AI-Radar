@@ -2,7 +2,7 @@
 id: SIG-20260615-A12
 type: signal_card
 signal_type: product_service
-title: "The-Decoder 发布 AI 基础设施能力，切入采购下单自动化"
+title: "亚马逊等六家公司据报引发政府对 Anthropic Fable 模型的打压"
 date: 2026-06-15
 status: published
 source_title: "亚马逊等六家公司据报引发政府对 Anthropic Fable 模型的打压"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "The-Decoder"
 
 frontend:
-  displayTitle: "The-Decoder 发布 AI 基础设施能力，切入采购下单自动化"
+  displayTitle: "亚马逊等六家公司据报引发政府对 Anthropic Fable 模型的打压"
   sourceLinks:
     - "https://the-decoder.com/amazon-and-five-other-companies-reportedly-triggered-the-government-crackdown-on-anthropics-fable-model"
 ---
 
-# The-Decoder 发布 AI 基础设施能力，切入采购下单自动化
+# 亚马逊等六家公司据报引发政府对 Anthropic Fable 模型的打压
 
 ## 新闻事实
 

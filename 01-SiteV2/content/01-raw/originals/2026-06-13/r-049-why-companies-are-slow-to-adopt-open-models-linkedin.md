@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"According to AI cost optimization resear
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "为何企业迟迟不采用开放模型——领英"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Why companies are slow to adopt open models - LinkedIn

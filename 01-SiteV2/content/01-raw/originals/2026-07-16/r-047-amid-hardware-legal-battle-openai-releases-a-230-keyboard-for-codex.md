@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-047
 title: "Amid hardware legal battle, OpenAI releases a $230 keyboard for Codex"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "在硬件法律纠纷中，OpenAI 发布了一款售价 230 美元的 Codex 键盘"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://techcrunch.com/2026/07/15/amid-hardware-legal-battle-openai-releases-a-230-keyboard-for-codex/"
 canonical_url: "https://techcrunch.com/2026/07/15/amid-hardware-legal-battle-openai-releases-a-230-keyboard-for-codex"
 source_name: "TechCrunch AI"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-16T02:39:33.716Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Amid hardware legal battle, OpenAI releases a $230 keyboard for Codex

@@ -2,7 +2,7 @@
 id: SIG-20260616-A09
 type: signal_card
 signal_type: case
-title: "Agentforce Customer Stories 案例：AI 进入销售和收入团队流程"
+title: "Agentforce客户案例 - Salesforce"
 date: 2026-06-16
 status: published
 source_title: "Agentforce Customer Stories - Salesforce"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Agentforce Customer Stories"
 
 frontend:
-  displayTitle: "Agentforce Customer Stories 案例：AI 进入销售和收入团队流程"
+  displayTitle: "Agentforce客户案例 - Salesforce"
   sourceLinks:
     - "https://www.salesforce.com/agentforce/customer-stories/"
 ---
 
-# Agentforce Customer Stories 案例：AI 进入销售和收入团队流程
+# Agentforce客户案例 - Salesforce
 
 ## 新闻事实
 

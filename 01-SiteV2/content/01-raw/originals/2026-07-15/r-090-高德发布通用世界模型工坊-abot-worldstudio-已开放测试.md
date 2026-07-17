@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-090
 title: "高德发布通用世界模型工坊 ABot-WorldStudio，已开放测试"
 title_zh: "高德发布通用世界模型工坊 ABot-WorldStudio，已开放测试"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/976/538.htm"
 canonical_url: "https://ithome.com/0/976/538.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-15T04:28:38.090Z
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 高德发布通用世界模型工坊 ABot-WorldStudio，已开放测试

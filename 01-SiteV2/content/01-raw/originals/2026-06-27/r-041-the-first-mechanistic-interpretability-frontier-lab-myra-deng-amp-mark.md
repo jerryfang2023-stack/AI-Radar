@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"From Palantir and Two Sigma to building
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_zh: "首个机制可解释性前沿实验室——Goodfire AI的Myra Deng与Mark Bissell"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # The First Mechanistic Interpretability Frontier Lab — Myra Deng &amp; Mark Bissell of Goodfire AI

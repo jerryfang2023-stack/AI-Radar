@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"苹果今日向 Vision Pro 用�
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "苹果 visionOS 27 开发者预览版 Beta 1 发布"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 苹果 visionOS 27 开发者预览版 Beta 1 发布

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Y Combinator grad and AI insurance brok
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only
+title_zh: "Y Combinator毕业生、AI保险经纪公司Harper获4700万美元融资"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Y Combinator grad and AI insurance brokerage Harper raises $47M

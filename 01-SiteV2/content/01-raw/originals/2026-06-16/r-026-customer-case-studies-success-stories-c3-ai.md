@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"View case studies and hear from C3 
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_zh: "客户案例与成功故事 - C3 AI"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Customer Case Studies & Success Stories - C3 AI

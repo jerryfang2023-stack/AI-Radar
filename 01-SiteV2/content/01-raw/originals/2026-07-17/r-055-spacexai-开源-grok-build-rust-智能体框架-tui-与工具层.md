@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-055
 title: "SpaceXAI 开源 Grok Build：Rust 智能体框架、TUI 与工具层"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "SpaceXAI 开源 Grok Build：Rust 智能体框架、TUI 与工具层"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.marktechpost.com/2026/07/15/spacexai-open-sources-grok-build-the-rust-agent-harness-tui-and-tool-layer-behind-its-coding-cli"
 canonical_url: "https://marktechpost.com/2026/07/15/spacexai-open-sources-grok-build-the-rust-agent-harness-tui-and-tool-layer-behind-its-coding-cli"
 source_name: "MarkTechPost（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-17T04:40:17.157Z
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # SpaceXAI 开源 Grok Build：Rust 智能体框架、TUI 与工具层

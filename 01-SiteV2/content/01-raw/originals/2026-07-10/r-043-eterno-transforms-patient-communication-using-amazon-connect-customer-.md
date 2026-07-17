@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-043
 title: "ETERNO transforms patient communication using Amazon Connect Customer | AWS Contact Center"
-title_zh: "ETERNO使用Amazon Connect客户转变患者沟通| AWS联系中心"
-title_translation_status: translated
-title_translation_method: mymemory_title_translation
+title_zh: "ETERNO利用Amazon Connect客户服务转型患者沟通 | AWS联络中心"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://aws.amazon.com/blogs/contact-center/eterno-transforms-patient-communication-using-amazon-connect-customer-ai/"
 canonical_url: "https://aws.amazon.com/blogs/contact-center/eterno-transforms-patient-communication-using-amazon-connect-customer-ai"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-10T01:59:53.969Z
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # ETERNO transforms patient communication using Amazon Connect Customer | AWS Contact Center

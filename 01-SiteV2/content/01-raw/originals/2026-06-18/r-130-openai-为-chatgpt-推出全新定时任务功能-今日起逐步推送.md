@@ -72,6 +72,10 @@ key_excerpts: [{"type":"company_action","text":"OpenAI 今日起为 ChatGPT 的 
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "OpenAI 为 ChatGPT 推出全新定时任务功能，今日起逐步推送"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # OpenAI 为 ChatGPT 推出全新定时任务功能，今日起逐步推送

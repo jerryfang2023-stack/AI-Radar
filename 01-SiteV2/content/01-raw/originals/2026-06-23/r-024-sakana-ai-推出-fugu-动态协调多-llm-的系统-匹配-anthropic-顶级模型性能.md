@@ -72,6 +72,10 @@ key_excerpts: [{"type":"workflow_change","text":"日本 AI 初创公司 Sakana A
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "Sakana AI 推出 Fugu：动态协调多 LLM 的系统，匹配 Anthropic 顶级模型性能"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Sakana AI 推出 Fugu：动态协调多 LLM 的系统，匹配 Anthropic 顶级模型性能

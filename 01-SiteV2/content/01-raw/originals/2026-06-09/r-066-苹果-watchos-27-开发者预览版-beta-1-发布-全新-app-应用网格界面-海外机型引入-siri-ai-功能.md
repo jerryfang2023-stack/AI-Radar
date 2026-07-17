@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"苹果 6 月 9 日向 Apple Watch 推�
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "苹果 watchOS 27 开发者预览版 Beta 1 发布：全新 App 应用网格界面、海外机型引入 Siri AI 功能"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 苹果 watchOS 27 开发者预览版 Beta 1 发布：全新 App 应用网格界面、海外机型引入 Siri AI 功能

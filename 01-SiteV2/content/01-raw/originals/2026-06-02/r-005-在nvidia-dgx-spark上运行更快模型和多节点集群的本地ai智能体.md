@@ -72,6 +72,10 @@ key_excerpts: [{"type":"supporting_context","text":"NVIDIA推出NVIDIA DGX Spark
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "在NVIDIA DGX Spark上运行更快模型和多节点集群的本地AI智能体"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 在NVIDIA DGX Spark上运行更快模型和多节点集群的本地AI智能体

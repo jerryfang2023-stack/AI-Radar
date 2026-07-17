@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"DoorDash Inc. 在应用内推出
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "DoorDash 推出 AI 聊天机器人，帮助处理订单、预订和杂货清单"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # DoorDash 推出 AI 聊天机器人，帮助处理订单、预订和杂货清单

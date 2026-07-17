@@ -2,7 +2,7 @@
 id: SIG-20260709-A07
 type: signal_card
 signal_type: funding
-title: "Hostie 完成 1200 万美元 A 轮融资，扩展餐厅 AI 虚拟礼宾平台"
+title: "Hostie 完成1200万美元A轮融资，助力餐饮服务业未来"
 date: 2026-07-09
 status: published
 source_title: "Hostie Raises $12M Series A to Power the Future of Restaurant Hospitality"
@@ -55,12 +55,12 @@ opportunity_signals:
 signal_owner: "Hostie"
 
 frontend:
-  displayTitle: "Hostie 完成 1200 万美元 A 轮融资，扩展餐厅 AI 虚拟礼宾平台"
+  displayTitle: "Hostie 完成1200万美元A轮融资，助力餐饮服务业未来"
   sourceLinks:
     - "https://www.prnewswire.com/news-releases/hostie-raises-12m-series-a-to-power-the-future-of-restaurant-hospitality-302820521.html"
 ---
 
-# Hostie 完成 1200 万美元 A 轮融资，扩展餐厅 AI 虚拟礼宾平台
+# Hostie 完成1200万美元A轮融资，助力餐饮服务业未来
 
 ## 新闻事实
 
