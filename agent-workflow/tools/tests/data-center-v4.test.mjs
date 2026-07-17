@@ -396,6 +396,112 @@ test("publisher channel does not establish AI relevance", () => {
   assert.equal(bundle.qa_queue[0].reason, "event_not_ai_relevant");
 });
 
+test("negated partnerships and AI-branded merchandise stay outside canonical events", () => {
+  const bundle = buildBundle([
+    entry(
+      "negated-partnership",
+      "古尔曼：苹果与 PrismML 在 AI 量化技术上的合作可能性较低",
+      "古尔曼认为苹果与 PrismML 合作的可能性较低。",
+      { language: "zh" }
+    ),
+    entry(
+      "chatgpt-basketball",
+      "OpenAI 推出官方周边，含 ChatGPT 篮球、Codex T 恤等",
+      "OpenAI released a ChatGPT basketball and Codex T-shirts as official merchandise.",
+      { language: "zh" }
+    )
+  ], taxonomy, date, "2026-07-16T00:00:00.000Z");
+
+  assert.equal(bundle.canonical_events.length, 0);
+  assert.ok(bundle.qa_queue.some((item) => item.reason === "non_ai_merchandise_not_industry_event"));
+});
+
+test("completed transactions outrank future-use wording in status extraction", () => {
+  const bundle = buildBundle([
+    entry(
+      "funding-with-future-use",
+      "Neko Health raises $700 million and will open its first US clinic",
+      "Neko Health raised $700 million in a Series C financing round and will use the funding to open a clinic."
+    ),
+    entry(
+      "completed-acquisition",
+      "Whatnot acquires Shaped",
+      "Whatnot acquired AI recommendation startup Shaped."
+    )
+  ], taxonomy, date, "2026-07-16T00:00:00.000Z");
+
+  assert.deepEqual(new Set(bundle.canonical_events.map((event) => event.event_status)), new Set(["completed"]));
+});
+
+test("same named release clusters across source wording", () => {
+  const bundle = buildBundle([
+    entry("inkling-a", "Thinking Machines Lab releases Inkling multimodal AI model", "Thinking Machines Lab released the Inkling multimodal AI model.", {
+      title_zh: "Thinking Machines Lab 发布 Inkling 多模态 AI 模型"
+    }),
+    entry("inkling-b", "Thinking Machines Lab launches Inkling with 975B parameters", "Thinking Machines Lab launched Inkling, a 975B parameter multimodal AI model.", {
+      title_zh: "Thinking Machines Lab 发布 975B 参数的 Inkling 多模态 AI 模型"
+    })
+  ], taxonomy, date, "2026-07-16T00:00:00.000Z");
+
+  assert.equal(bundle.canonical_events.length, 1);
+  assert.equal(bundle.canonical_events[0].source_refs.length, 2);
+});
+
+test("hardware capacity excludes price metrics and keeps price as contract value", () => {
+  const bundle = buildBundle([
+    entry(
+      "priced-keyboard",
+      "OpenAI releases Codex Micro AI keyboard for $230",
+      "OpenAI and Work Louder released the Codex Micro keyboard for Codex. The AI keyboard costs $230.",
+      { title_zh: "OpenAI 与 Work Louder 发布 Codex Micro AI 键盘，售价 230 美元" }
+    )
+  ], taxonomy, date, "2026-07-16T00:00:00.000Z");
+
+  assert.equal(bundle.hardware_records.length, 1);
+  assert.equal(bundle.hardware_records[0].capacity, null);
+  assert.equal(bundle.hardware_records[0].capacity_unit, "");
+  assert.equal(bundle.hardware_records[0].contract_value, "$230");
+  assert.equal(bundle.hardware_records[0].supplier, "");
+});
+
+test("current Chinese Jetson expansion is classified as hardware product", () => {
+  const bundle = buildBundle([
+    entry(
+      "jetson-expansion",
+      "NVIDIA 扩展 Jetson Thor 计算机家族，新增 T3000、T2000 模组",
+      "NVIDIA 扩展 Jetson Thor 计算机家族，新增 T3000 和 T2000 模组。新模组使用 NVIDIA Thor GPU，面向机器人与边缘 AI。",
+      { language: "zh" }
+    )
+  ], taxonomy, date, "2026-07-16T00:00:00.000Z");
+
+  assert.equal(bundle.canonical_events[0].event_type, "hardware_product");
+  assert.equal(bundle.hardware_records.length, 1);
+});
+
+test("FDE projection requires enterprise implementation evidence", () => {
+  const bundle = buildBundle([
+    entry(
+      "pwc-deployment",
+      "PwC is deploying Claude to employees across its business",
+      "PwC is deploying Claude to employees across its business workflows. The company integrated Claude with internal knowledge systems."
+    ),
+    entry(
+      "consumer-safety",
+      "Meta AI rolls out teen self-harm notifications to parents",
+      "Meta AI rolled out notifications to parents when teens discuss self-harm."
+    ),
+    entry(
+      "implementation-jv",
+      "Anthropic forms Ode AI implementation joint venture",
+      "Anthropic formed Ode, an AI implementation joint venture with initial capital."
+    )
+  ], taxonomy, date, "2026-07-16T00:00:00.000Z");
+
+  assert.equal(bundle.fde_records.length, 1);
+  assert.equal(bundle.fde_records[0].customer, "PwC");
+  assert.ok(bundle.fde_records[0].reported_delivery_components.length > 0);
+});
+
 test("AI relevance evaluator distinguishes industry facts from generic AI wording", () => {
   assert.equal(eventAiRelevanceEvidence({
     title: "Microsoft releases Windows security patches",

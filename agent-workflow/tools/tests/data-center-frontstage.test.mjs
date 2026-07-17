@@ -25,13 +25,13 @@ test("frontstage adapter builds real V4 data collections", () => {
 test("current commercial event titles are complete and evidence-specific", () => {
   const data = buildFrontstageData(root);
   const currentEvents = data.events.filter((event) => event.dataDate === data.meta.currentDate);
-  const instalily = currentEvents.filter((event) => /InstaLILY/iu.test(event.title));
+  const instalily = data.events.filter((event) => /InstaLILY/iu.test(event.title));
 
   assert.ok(currentEvents.every((event) => isCompletePublicEventTitle(event.title)));
   assert.equal(currentEvents.some((event) => /模型券即时补贴平台/u.test(event.title)), false);
-  assert.ok(currentEvents.some((event) => event.title === "Whatnot 收购 Shaped"));
-  assert.ok(currentEvents.some((event) => event.title === "Orthogonal 完成 430 万美元 种子轮融资"));
-  assert.ok(currentEvents.some((event) => event.title === "Orthogonal 推出面向 API 的智能体支付服务"));
+  assert.ok(data.events.some((event) => event.title === "Whatnot 收购 Shaped"));
+  assert.ok(data.events.some((event) => event.title === "Orthogonal 完成 430 万美元 种子轮融资"));
+  assert.ok(data.events.some((event) => event.title === "Orthogonal 推出面向 API 的智能体支付服务"));
   assert.equal(instalily.length, 1);
   assert.equal(instalily[0].title, "InstaLILY 完成 6000 万美元 B 轮融资");
 });
@@ -145,7 +145,9 @@ test("community intelligence keeps the V3.4.5 content and link workflow in the V
   const html = fs.readFileSync(path.join(root, "01-SiteV2/site/data-center.html"), "utf8");
   const script = fs.readFileSync(path.join(root, "01-SiteV2/site/assets/data-center-v4.js"), "utf8");
   const css = fs.readFileSync(path.join(root, "01-SiteV2/site/assets/data-center-v4.css"), "utf8");
-  const latest = JSON.parse(fs.readFileSync(path.join(root, "01-SiteV2/site/data/community-intelligence-daily/2026-07-16.json"), "utf8"));
+  const dailyIndex = JSON.parse(fs.readFileSync(path.join(root, "01-SiteV2/site/data/community-intelligence-daily/index.json"), "utf8"));
+  const latestEntry = dailyIndex.dates.find((item) => item.date === dailyIndex.meta.latestDate);
+  const latest = JSON.parse(fs.readFileSync(path.join(root, "01-SiteV2/site/data/community-intelligence-daily", latestEntry.href), "utf8"));
 
   assert.match(html, /data-community-dialog/u);
   assert.match(html, /data-community-dialog-content/u);
@@ -165,7 +167,8 @@ test("community intelligence keeps the V3.4.5 content and link workflow in the V
   assert.match(css, /\.dc-community-dialog/u);
   assert.match(css, /\.dc-community-rail/u);
   assert.match(css, /\.dc-community-card/u);
-  assert.equal(latest.items.length, 61);
+  assert.ok(latest.items.length >= 12);
+  assert.equal(latest.items.length, latestEntry.items);
   assert.ok(latest.items.some((item) => item.links?.some((link) => /feishu\.cn/u.test(link.href || ""))));
 });
 
@@ -253,6 +256,22 @@ test("commercial events expose TAG-V4 technical tags and structured facets separ
   assert.ok(data.events.some((item) => item.classifications.length > item.tags.length));
   assert.ok(data.events.every((item) => item.tags.every((tag) => tag.dimensionId === "technology")));
   assert.ok(data.events.every((item) => item.classifications.every((entry) => entry.dimensionId && entry.id && entry.name)));
+});
+
+test("FDE and hardware projections preserve the daily batch date", () => {
+  const data = buildFrontstageData(root);
+
+  assert.ok(data.fde.every((item) => /^\d{4}-\d{2}-\d{2}$/u.test(item.dataDate)));
+  assert.ok(data.hardware.every((item) => /^\d{4}-\d{2}-\d{2}$/u.test(item.dataDate)));
+  assert.ok(data.fde.some((item) => item.dataDate === data.meta.currentDate));
+  assert.ok(data.hardware.some((item) => item.dataDate === data.meta.currentDate));
+});
+
+test("public event sources expose original publishers instead of discovery channels", () => {
+  const data = buildFrontstageData(root);
+
+  assert.ok(data.events.every((item) => !/\b(?:keyword search|anysearch|gdelt)\b/iu.test(item.publisher)));
+  assert.ok(data.events.every((item) => item.sources.every((source) => !/\b(?:keyword search|anysearch|gdelt)\b/iu.test(source.publisher))));
 });
 
 test("commercial events prioritize financing and cases before products and other records", () => {

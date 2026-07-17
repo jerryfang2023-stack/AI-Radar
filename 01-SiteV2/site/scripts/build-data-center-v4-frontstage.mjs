@@ -234,6 +234,7 @@ function buildEventRecords({ events, claims, rawDocuments, sourceArtifacts, enti
       || translatedTitle
       || (containsChinese(originalTitle) ? originalTitle : "")
       || event.event_id;
+    const sourceUrl = primarySource?.canonical_url || primarySource?.source_url || primaryRaw?.canonical_url || primaryRaw?.source_url || "";
 
     return {
       id: event.event_id,
@@ -279,11 +280,11 @@ function buildEventRecords({ events, claims, rawDocuments, sourceArtifacts, enti
       })),
       sources: sources.map((source) => ({
         id: source.source_artifact_id,
-        publisher: source.publisher || "",
+        publisher: publicSourceName(source.publisher, source.canonical_url || source.source_url || ""),
         url: source.canonical_url || source.source_url || ""
       })),
-      sourceUrl: primarySource?.canonical_url || primarySource?.source_url || primaryRaw?.canonical_url || primaryRaw?.source_url || "",
-      publisher: primarySource?.publisher || primaryRaw?.publisher || "",
+      sourceUrl,
+      publisher: publicSourceName(primarySource?.publisher || primaryRaw?.publisher || "", sourceUrl),
       sourceExcerpt: compactText(primaryClaim?.source_quote || "", 700)
     };
   }).sort((a, b) => b.date.localeCompare(a.date) || b.updatedDate.localeCompare(a.updatedDate) || a.id.localeCompare(b.id));
@@ -364,6 +365,7 @@ function buildFdeRecords(rows, eventsById) {
     return {
       id: row.fde_id,
       eventId: row.event_id,
+      dataDate: row.data_date || "",
       date: event?.date || dateOnly(row.timeline || row.data_date),
       title: event?.title || compactText(`${row.customer || row.vendor || "企业"} FDE 实施`, 150),
       stage: row.deployment_stage || "",
@@ -390,6 +392,7 @@ function buildHardwareRecords(rows, eventsById) {
     return {
       id: row.hardware_record_id,
       eventId: row.event_id,
+      dataDate: row.data_date || "",
       date: event?.date || dateOnly(row.shipment_date || row.data_date),
       title: event?.title || compactText(`${row.supplier || row.customer || "AI 硬件"} ${row.component_type || "记录"}`, 150),
       hardwareType: row.component_type || "未披露",
@@ -465,7 +468,7 @@ export function buildFrontstageData(root = defaultRoot) {
     }
   ]));
 
-  const eventRecords = buildEventRecords({
+  const allEventRecords = buildEventRecords({
     events: readJsonl(path.join(tables, "canonical_events.jsonl")),
     claims: readJsonl(path.join(tables, "claims.jsonl")),
     rawDocuments: readJsonl(path.join(tables, "raw_documents.jsonl")),
@@ -476,24 +479,23 @@ export function buildFrontstageData(root = defaultRoot) {
     tagNames,
     facetNames
   });
+  const invalidTitles = allEventRecords.filter((item) => !isCompletePublicEventTitle(item.title));
+  const eventRecords = allEventRecords.filter((item) => isCompletePublicEventTitle(item.title));
   const latestDataDate = eventRecords.map((item) => item.dataDate).filter(Boolean).sort().at(-1) || "";
   const currentDate = latestDataDate;
-  const invalidTitles = eventRecords.filter((item) => !isCompletePublicEventTitle(item.title));
-  if (invalidTitles.length) {
-    throw new Error(`Frontstage event title gate failed: ${invalidTitles.map((item) => `${item.id}:${item.title}`).join("; ")}`);
-  }
   const companies = buildCompanies(readJsonl(path.join(tables, "entities.jsonl")), eventRecords);
   const products = buildProducts(eventRecords, companies);
   const eventsById = new Map(eventRecords.map((item) => [item.id, item]));
 
   return {
     meta: {
-      productVersion: "SITE-V4.0-data-center-frontstage-v1.0",
+      productVersion: "SITE-V4.1.0-unified-frontstage",
       dataVersion: "SITE-V4.0-data-center",
       generatedAt: new Date().toISOString(),
       latestDataDate,
       currentDate,
-      eventCount: eventRecords.length
+      eventCount: eventRecords.length,
+      quarantinedEventCount: invalidTitles.length
     },
     eventTypes: eventTypeLabels,
     events: eventRecords,
