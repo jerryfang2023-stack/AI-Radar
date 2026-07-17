@@ -3,21 +3,28 @@
   "$id": "https://wavesight.local/schemas/data-center-v4.schema.json",
   "title": "WaveSight Data Center V4",
   "type": "object",
-  "required": ["manifest", "source_artifacts", "raw_documents", "claims", "entities", "canonical_events", "compatibility_cards", "relationships", "tag_assertions", "facet_assertions", "fde_records", "hardware_records"],
+  "required": ["manifest", "source_artifacts", "raw_documents", "claims", "entities", "entity_mentions", "canonical_events", "compatibility_cards", "event_sources", "event_claims", "event_conflicts", "relationships", "tag_assertions", "facet_assertions", "fde_records", "hardware_records", "qa_queue", "legacy_asset_mappings"],
   "properties": {
     "manifest": { "$ref": "#/$defs/manifest" },
     "source_artifacts": { "type": "array", "items": { "$ref": "#/$defs/sourceArtifact" } },
     "raw_documents": { "type": "array", "items": { "$ref": "#/$defs/rawDocument" } },
     "claims": { "type": "array", "items": { "$ref": "#/$defs/claim" } },
     "entities": { "type": "array", "items": { "$ref": "#/$defs/entity" } },
+    "entity_mentions": { "type": "array", "items": { "$ref": "#/$defs/entityMention" } },
     "canonical_events": { "type": "array", "items": { "$ref": "#/$defs/canonicalEvent" } },
     "compatibility_cards": { "type": "array", "items": { "$ref": "#/$defs/compatibilityCard" } },
+    "event_sources": { "type": "array", "items": { "$ref": "#/$defs/eventSource" } },
+    "event_claims": { "type": "array", "items": { "$ref": "#/$defs/eventClaim" } },
+    "event_conflicts": { "type": "array", "items": { "$ref": "#/$defs/eventConflict" } },
     "relationships": { "type": "array", "items": { "$ref": "#/$defs/relationship" } },
     "tag_assertions": { "type": "array", "items": { "$ref": "#/$defs/tagAssertion" } },
     "facet_assertions": { "type": "array", "items": { "$ref": "#/$defs/facetAssertion" } },
     "fde_records": { "type": "array", "items": { "$ref": "#/$defs/fdeRecord" } },
-    "hardware_records": { "type": "array", "items": { "$ref": "#/$defs/hardwareRecord" } }
+    "hardware_records": { "type": "array", "items": { "$ref": "#/$defs/hardwareRecord" } },
+    "qa_queue": { "type": "array", "items": { "$ref": "#/$defs/qaItem" } },
+    "legacy_asset_mappings": { "type": "array", "items": { "$ref": "#/$defs/legacyAssetMapping" } }
   },
+  "additionalProperties": false,
   "$defs": {
     "sourceSpan": {
       "type": "object",
@@ -31,16 +38,22 @@
     },
     "manifest": {
       "type": "object",
-      "required": ["product_version", "raw_version", "event_version", "tag_version", "date", "generated_at", "counts"],
+      "required": ["product_version", "raw_version", "event_version", "fde_version", "hardware_version", "tag_version", "date", "generated_at", "counts"],
       "properties": {
         "product_version": { "const": "SITE-V4.0-data-center" },
         "raw_version": { "const": "RAW-V3.0" },
         "event_version": { "const": "EVENT-V1.0" },
+        "fde_version": { "const": "FDE-V2.0" },
+        "hardware_version": { "const": "HARDWARE-V1.0" },
         "tag_version": { "const": "TAG-V4.0" },
         "date": { "type": "string", "format": "date" },
         "generated_at": { "type": "string" },
-        "counts": { "type": "object" }
-      }
+        "source_of_truth": { "type": "string" },
+        "legacy_page_compatibility": { "type": "string" },
+        "counts": { "type": "object" },
+        "forbidden_field_hits": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": false
     },
     "sourceArtifact": {
       "type": "object",
@@ -114,6 +127,21 @@
         "canonical_name": { "type": "string" },
         "entity_type": { "enum": ["organization_candidate", "person_candidate", "product_candidate", "location_candidate", "unknown"] },
         "aliases": { "type": "array", "items": { "type": "string" } },
+        "verification_status": { "enum": ["candidate", "verified", "merged", "quarantined"] }
+      },
+      "additionalProperties": false
+    },
+    "entityMention": {
+      "type": "object",
+      "required": ["mention_id", "entity_id", "raw_id", "text", "source", "start", "end", "verification_status"],
+      "properties": {
+        "mention_id": { "type": "string", "minLength": 1 },
+        "entity_id": { "type": "string", "minLength": 1 },
+        "raw_id": { "type": "string", "minLength": 1 },
+        "text": { "type": "string", "minLength": 1 },
+        "source": { "enum": ["title_original", "claim_evidence"] },
+        "start": { "type": "integer", "minimum": 0 },
+        "end": { "type": "integer", "minimum": 1 },
         "verification_status": { "enum": ["candidate", "verified", "merged", "quarantined"] }
       },
       "additionalProperties": false
@@ -192,6 +220,36 @@
       },
       "additionalProperties": false
     },
+    "eventSource": {
+      "type": "object",
+      "required": ["event_id", "source_artifact_id"],
+      "properties": {
+        "event_id": { "type": "string", "minLength": 1 },
+        "source_artifact_id": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": false
+    },
+    "eventClaim": {
+      "type": "object",
+      "required": ["event_id", "claim_id"],
+      "properties": {
+        "event_id": { "type": "string", "minLength": 1 },
+        "claim_id": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": false
+    },
+    "eventConflict": {
+      "type": "object",
+      "required": ["conflict_id", "event_id", "field", "values", "source_refs"],
+      "properties": {
+        "conflict_id": { "type": "string", "minLength": 1 },
+        "event_id": { "type": "string", "minLength": 1 },
+        "field": { "type": "string", "minLength": 1 },
+        "values": { "type": "array", "minItems": 2 },
+        "source_refs": { "type": "array", "minItems": 1, "items": { "type": "string" } }
+      },
+      "additionalProperties": false
+    },
     "relationship": {
       "type": "object",
       "required": ["relationship_id", "event_id", "subject", "predicate", "object", "claim_ref", "source_refs"],
@@ -257,6 +315,30 @@
         "shipment_date": { "type": "string" },
         "claim_refs": { "type": "array", "minItems": 1 },
         "source_refs": { "type": "array", "minItems": 1 }
+      },
+      "additionalProperties": false
+    },
+    "qaItem": {
+      "type": "object",
+      "required": ["qa_id", "asset_id", "reason", "status", "source_ref"],
+      "properties": {
+        "qa_id": { "type": "string", "minLength": 1 },
+        "asset_id": { "type": "string", "minLength": 1 },
+        "reason": { "type": "string", "minLength": 1 },
+        "status": { "type": "string", "minLength": 1 },
+        "source_ref": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "legacyAssetMapping": {
+      "type": "object",
+      "required": ["legacy_raw_id", "legacy_path", "raw_id", "event_candidate_id", "event_id"],
+      "properties": {
+        "legacy_raw_id": { "type": "string" },
+        "legacy_path": { "type": "string" },
+        "raw_id": { "type": "string", "minLength": 1 },
+        "event_candidate_id": { "type": "string" },
+        "event_id": { "type": "string" }
       },
       "additionalProperties": false
     }

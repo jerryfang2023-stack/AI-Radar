@@ -4,6 +4,7 @@ import crypto from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { productEntityDisplayType } from "../../../agent-workflow/product/product-entity-normalizer.mjs";
 import { isCompletePublicEventTitle as isCompleteDataTitle } from "../../../agent-workflow/tools/event-public-title.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
@@ -101,6 +102,12 @@ function compactText(value = "", max = 240) {
   return `${text.slice(0, max).trim()}…`;
 }
 
+function exactMentionPositions(text = "", name = "") {
+  const escaped = String(name).replace(/[.*+?^${}()|[\]\\]/gu, "\\$&");
+  const pattern = new RegExp(`(?:^|[^\\p{L}\\p{N}_])(${escaped})(?=$|[^\\p{L}\\p{N}_])`, "giu");
+  return [...String(text).matchAll(pattern)].map((match) => (match.index || 0) + match[0].indexOf(match[1]));
+}
+
 function publicSourceName(publisher = "", sourceUrl = "") {
   const name = compactText(publisher, 100);
   if (name && !/\b(?:search|anysearch|gdelt)\b|关键词搜索/iu.test(name)) return name;
@@ -109,50 +116,6 @@ function publicSourceName(publisher = "", sourceUrl = "") {
   } catch {
     return name || "来源未披露";
   }
-}
-
-const namedProductRules = [
-  { name: "ABot-WorldStudio", type: "模型", owners: ["Gaode"], patterns: [/\bABot-WorldStudio\b/iu] },
-  { name: "AI Overviews", type: "产品/服务", owners: ["Google"], patterns: [/\bAI Overviews\b/iu] },
-  { name: "AI-RAN 平台", type: "产品/服务", owners: ["Nokia", "NVIDIA"], patterns: [/\bAI-?RAN\b/iu] },
-  { name: "Bonsai 27B", type: "模型", owners: ["PrismML"], patterns: [/\bBonsai 27B\b/iu] },
-  { name: "Claude Code", type: "产品/服务", owners: ["Anthropic"], patterns: [/\bClaude Code(?:\s+v?\d+(?:\.\d+)+)?\b/iu] },
-  { name: "Claude for Teachers", type: "产品/服务", owners: ["Anthropic"], patterns: [/\bClaude for Teachers\b/iu] },
-  { name: "Codex Micro", type: "AI 硬件", owners: ["OpenAI", "Work Louder"], patterns: [/\bCodex Micro\b/iu, /\$230 keyboard for Codex/iu, /hardware…?\s+for Codex/iu] },
-  { name: "Crusoe Serverless Fine-Tuning", type: "产品/服务", owners: ["Crusoe"], patterns: [/\bServerless Fine-Tuning\b/iu] },
-  { name: "Crusoe Self-Serve Inference", type: "产品/服务", owners: ["Crusoe"], patterns: [/\bSelf-Serve Inference\b/iu] },
-  { name: "Gemini Enterprise", type: "产品/服务", owners: ["Google"], patterns: [/\bGemini Enterprise\b/iu] },
-  { name: "GLM-5.2 NVFP4", type: "模型", owners: [], patterns: [/\bGLM-5\.2 NVFP4\b/iu] },
-  { name: "Google Images", type: "产品/服务", owners: ["Google"], patterns: [/\bGoogle Images\b/iu, /谷歌图片服务/iu] },
-  { name: "Grok Build", type: "产品/服务", owners: ["xAI"], patterns: [/\bGrok Build\b|xai-org\/grok-build/iu] },
-  { name: "Help Agent", type: "产品/服务", owners: ["Salesforce"], patterns: [/\bHelp Agent\b/iu] },
-  { name: "Hy3", type: "模型", owners: ["Tencent"], patterns: [/\bHy3\b/iu] },
-  { name: "IBM Power 自主运维 AI 智能体", type: "产品/服务", owners: ["IBM"], patterns: [/\bPower\b.{0,12}自主运维 AI 智能体/iu] },
-  { name: "Inkling", type: "模型", owners: ["Thinking Machines Lab"], patterns: [/\bInkling\b/iu] },
-  { name: "Jetson Thor", type: "AI 硬件", owners: ["NVIDIA"], patterns: [/\bJetson Thor\b/iu] },
-  { name: "LiteRT.js", type: "产品/服务", owners: ["Google"], patterns: [/\bLiteRT\.js\b/iu] },
-  { name: "MacWhisper 14", type: "产品/服务", owners: [], patterns: [/\bMacWhisper 14\b/iu] },
-  { name: "Nano Banana", type: "产品/服务", owners: ["Google"], patterns: [/\bNano Banana\b/iu] },
-  { name: "Nitrode", type: "产品/服务", owners: [], patterns: [/\bNitrode\b/iu] },
-  { name: "Orthogonal Agentic Payments", type: "产品/服务", owners: ["Orthogonal"], patterns: [/\bAgentic Payments for APIs\b/iu] },
-  { name: "Qwen-Audio-3.0-Realtime", type: "模型", owners: ["Alibaba"], patterns: [/\bQwen-Audio-3\.0-Realtime\b/iu] },
-  { name: "Robostral Navigate", type: "模型", owners: ["Mistral AI"], patterns: [/\bRobostral Navigate\b/iu] },
-  { name: "Seedance 2.5", type: "产品/服务", owners: ["Volcano Engine"], patterns: [/\bSeedance 2\.5\b/iu] },
-  { name: "Soofi S 30B-A3B", type: "模型", owners: ["Soofi"], patterns: [/\bSoofi S 30B-A3B\b/iu] },
-  { name: "SoulX", type: "模型", owners: ["Soul"], patterns: [/\bSoulX\b/iu] },
-  { name: "WPS Comate", type: "产品/服务", owners: ["Kingsoft Office"], patterns: [/\bWPS Comate\b/iu] },
-  { name: "天工短剧工作台", type: "产品/服务", owners: [], patterns: [/天工短剧工作台/iu] },
-  { name: "豆包 AI 智能体手机", type: "AI 硬件", owners: ["ByteDance", "ZTE", "Nubia"], patterns: [/豆包 AI 智能体手机/iu] },
-  { name: "灵犀专业版", type: "产品/服务", owners: ["Kingsoft Office"], patterns: [/灵犀专业版/iu] },
-  { name: "水风光一体化智慧运营大模型", type: "模型", owners: [], patterns: [/水风光一体化智慧运营大模型/iu] },
-  { name: "启元 T1", type: "AI 硬件", owners: ["上纬新材"], patterns: [/启元 T1/iu] }
-];
-
-function extractNamedProducts(...values) {
-  const text = values.filter(Boolean).join(" ");
-  return namedProductRules
-    .filter((rule) => rule.patterns.some((pattern) => pattern.test(text)))
-    .map((rule) => ({ name: rule.name, type: rule.type, ownerNames: rule.owners }));
 }
 
 export function isCompletePublicEventTitle(value = "") {
@@ -215,21 +178,29 @@ function buildEventRecords({ events, claims, rawDocuments, sourceArtifacts, enti
     }));
     const classifications = [...technicalTags, ...assertedFacets];
     const eventEntities = safeArray(event.entities).map((id) => entityById.get(id)).filter(Boolean);
+    const organizationEntities = eventEntities.filter((entity) => entity.entity_type === "organization_candidate" && entity.verification_status === "verified");
+    const productEntities = eventEntities.filter((entity) => entity.entity_type === "product_candidate");
     const label = eventTypeLabels[event.event_type] || { exact: event.event_type, group: event.event_type };
     const originalTitle = compactText(primaryRaw?.title_original || "", 180);
     const translatedTitle = compactText(primaryRaw?.title_zh || "", 180);
-    const products = [
-      "model_release",
-      "product_release",
-      "service_change",
-      "pricing_change",
-      "hardware_product"
-    ].includes(event.event_type) ? extractNamedProducts(
-      translatedTitle,
-      originalTitle,
-      event.object,
-      ...eventClaims.map((claim) => claim.source_quote)
-    ) : [];
+    const ownershipTitle = translatedTitle || originalTitle || primaryClaim?.subject || "";
+    const organizationPositions = organizationEntities.flatMap((owner) =>
+      exactMentionPositions(ownershipTitle, owner.canonical_name).map((position) => ({
+        name: owner.canonical_name,
+        position
+      })));
+    const products = productEntities.map((entity) => ({
+      name: entity.canonical_name,
+      type: productEntityDisplayType(event.event_type),
+      ownerNames: (() => {
+        const productPosition = exactMentionPositions(ownershipTitle, entity.canonical_name).at(-1) ?? ownershipTitle.length;
+        const nearestOwner = organizationPositions
+          .filter((owner) => owner.position <= productPosition)
+          .sort((a, b) => b.position - a.position)[0]
+          || organizationPositions.sort((a, b) => a.position - b.position)[0];
+        return nearestOwner ? [nearestOwner.name] : organizationEntities.slice(0, 1).map((owner) => owner.canonical_name);
+      })()
+    }));
     const title = compactText(event.display_title_zh || "", 180)
       || translatedTitle
       || (containsChinese(originalTitle) ? originalTitle : "")
@@ -287,7 +258,25 @@ function buildEventRecords({ events, claims, rawDocuments, sourceArtifacts, enti
       publisher: publicSourceName(primarySource?.publisher || primaryRaw?.publisher || "", sourceUrl),
       sourceExcerpt: compactText(primaryClaim?.source_quote || "", 700)
     };
-  }).sort((a, b) => b.date.localeCompare(a.date) || b.updatedDate.localeCompare(a.updatedDate) || a.id.localeCompare(b.id));
+  }).sort((a, b) => {
+    const priority = {
+      funding: 0,
+      acquisition: 0,
+      deployment: 1,
+      hardware_deployment: 1,
+      procurement_contract: 1,
+      partnership: 2,
+      model_release: 3,
+      product_release: 3,
+      service_change: 3,
+      pricing_change: 3,
+      hardware_product: 3
+    };
+    return (priority[a.eventType] ?? 9) - (priority[b.eventType] ?? 9)
+      || b.date.localeCompare(a.date)
+      || b.updatedDate.localeCompare(a.updatedDate)
+      || a.id.localeCompare(b.id);
+  });
 }
 
 function buildCompanies(entityRows, eventRecords) {
@@ -299,7 +288,7 @@ function buildCompanies(entityRows, eventRecords) {
     }
   }
 
-  return entityRows.filter((entity) => entity.verification_status === "verified").map((entity) => {
+  return entityRows.filter((entity) => entity.entity_type === "organization_candidate" && entity.verification_status === "verified").map((entity) => {
     const relatedEvents = eventsByEntity.get(entity.entity_id) || [];
     return {
       id: entity.entity_id,

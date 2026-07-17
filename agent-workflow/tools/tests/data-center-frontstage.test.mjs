@@ -76,14 +76,22 @@ test("company projection contains normalized organizations only", () => {
 
 test("product projection contains named products with bounded ownership", () => {
   const data = buildFrontstageData(root);
+  const adapter = fs.readFileSync(path.join(root, "01-SiteV2/site/scripts/build-data-center-v4-frontstage.mjs"), "utf8");
   const names = data.products.map((item) => item.name);
   const inkling = data.products.find((item) => item.name === "Inkling");
-  const codexMicro = data.products.find((item) => item.name === "Codex Micro");
+  const nemotron = data.products.find((item) => item.name === "Nemotron");
 
-  assert.ok(names.includes("LiteRT.js"));
-  assert.ok(names.includes("Qwen-Audio-3.0-Realtime"));
+  assert.ok(names.includes("1Password for Claude"));
+  assert.ok(names.includes("PerceptionBench"));
+  assert.ok(names.includes("GenFlow"));
+  assert.ok(names.includes("Jetson Thor"));
+  assert.ok(names.includes("Kimi K3"));
+  assert.ok(names.includes("LM Studio Bionic"));
   assert.deepEqual(inkling?.companyNames, ["Thinking Machines Lab"]);
-  assert.deepEqual(codexMicro?.companyNames, ["OpenAI", "Work Louder"]);
+  assert.deepEqual(nemotron?.companyNames, ["NVIDIA"]);
+  assert.ok(data.events.some((event) => event.title === "Sakana AI 将 NVIDIA Nemotron 模型接入 Fugu 多模型编排器"));
+  assert.equal(names.includes("Codex Micro"), false);
+  assert.doesNotMatch(adapter, /namedProductRules|extractNamedProducts/u);
   assert.ok(names.every((name) => !/^(?:的|会|训练|多款|可|全球首个|人工智能标准|推理优化|record|with |Apollo|Development|notes|YC:)/iu.test(name)));
   assert.equal(new Set(names.map((name) => name.toLocaleLowerCase())).size, names.length);
 });
