@@ -23,7 +23,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-07-16T09:02:00.000Z"
-collected_at: 2026-07-17T03:06:12.817Z
+collected_at: 2026-07-17T04:40:17.487Z
 language: mixed
 full_text_hash: 3e68d05e25e96c85
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-17/r-144-小米发布第二代vla模型xiaomi-robotics-1及世界基础模型u0.md"
@@ -49,7 +49,7 @@ capture_scope: aihot_visible_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: discovery_only
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"小米发布第二代VLA模型Xiaomi-Robotics-1及世界基础模型U0","discovery_summary":"小米发布第二代VLA模型Xiaomi-Robotics-1，基于10万小时真实操作数据训练，在四个基准上均取得第一。模型部署在单张4090上推理延迟仅80ms，支持开箱即用和少样本适配。同时发布的38B参数世界基础模型U0可将Pi-0.5的out-of-distribution成功率从36.9%提升至63.2%。","source_name":"公众号：卡尔的AI沃茨","origin_url":"https://mp.weixin.qq.com/s/uIFkvWzGeLaV3RKc74RGGQ","discovered_at":"2026-07-17T02:56:35.458Z","rank_on_page":281,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"小米发布第二代VLA模型Xiaomi-Robotics-1及世界基础模型U0","discovery_summary":"小米发布第二代VLA模型Xiaomi-Robotics-1，基于10万小时真实操作数据训练，在四个基准上均取得第一。模型部署在单张4090上推理延迟仅80ms，支持开箱即用和少样本适配。同时发布的38B参数世界基础模型U0可将Pi-0.5的out-of-distribution成功率从36.9%提升至63.2%。","source_name":"公众号：卡尔的AI沃茨","origin_url":"https://mp.weixin.qq.com/s/uIFkvWzGeLaV3RKc74RGGQ","discovered_at":"2026-07-17T04:31:45.358Z","rank_on_page":301,"discovery_status":"discovered"}
 source_role: discovery_source
 origin_fetch_status: "summary_only"
 paywall_status: none
@@ -60,7 +60,7 @@ content_hash: 3e68d05e25e96c85
 semantic_hash: 573e4a72ddd8fa3e
 duplicate_of: ""
 first_seen_at: "2026-07-16T09:02:00.000Z"
-last_seen_at: 2026-07-17T03:06:12.817Z
+last_seen_at: 2026-07-17T04:40:17.487Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":false,"business_change":false,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -75,7 +75,7 @@ missing_information: ["没有可用全文快照"]
 key_excerpts: [{"type":"number","text":"小米发布第二代VLA模型Xiaomi-Robotics-1，基于10万小时真实操作数据训练，在四个基准上均取得第一。模型部署在单张4090上推理延迟仅80ms，支持开箱即用和少样本适配。同时发布的38B参数世界基础模型U0可将Pi-0.5的out-of-distribution成功率从36.9%提升至63.2%。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"number","text":"小米发布第二代VLA模型Xiaomi-Robotics-1，基于10万小时真实操作数据训练，在四个基准上均取得第一。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"模型部署在单张4090上推理延迟仅80ms，支持开箱即用和少样本适配。","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"同时发布的38B参数世界基础模型U0可将Pi-0.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"5的out-of-distribution成功率从36.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-17T03:06:12.817Z
+fact_extraction_completed_at: 2026-07-17T04:40:17.487Z
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
@@ -185,7 +185,7 @@ copyright_note: local research archive only
 - discovery_source: AI HOT
 - source_role: discovery_source
 - origin_fetch_status: summary_only
-- discovery_record: {"discovery_title":"小米发布第二代VLA模型Xiaomi-Robotics-1及世界基础模型U0","discovery_summary":"小米发布第二代VLA模型Xiaomi-Robotics-1，基于10万小时真实操作数据训练，在四个基准上均取得第一。模型部署在单张4090上推理延迟仅80ms，支持开箱即用和少样本适配。同时发布的38B参数世界基础模型U0可将Pi-0.5的out-of-distribution成功率从36.9%提升至63.2%。","source_name":"公众号：卡尔的AI沃茨","origin_url":"https://mp.weixin.qq.com/s/uIFkvWzGeLaV3RKc74RGGQ","discovered_at":"2026-07-17T02:56:35.458Z","rank_on_page":281,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"小米发布第二代VLA模型Xiaomi-Robotics-1及世界基础模型U0","discovery_summary":"小米发布第二代VLA模型Xiaomi-Robotics-1，基于10万小时真实操作数据训练，在四个基准上均取得第一。模型部署在单张4090上推理延迟仅80ms，支持开箱即用和少样本适配。同时发布的38B参数世界基础模型U0可将Pi-0.5的out-of-distribution成功率从36.9%提升至63.2%。","source_name":"公众号：卡尔的AI沃茨","origin_url":"https://mp.weixin.qq.com/s/uIFkvWzGeLaV3RKc74RGGQ","discovered_at":"2026-07-17T04:31:45.358Z","rank_on_page":301,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

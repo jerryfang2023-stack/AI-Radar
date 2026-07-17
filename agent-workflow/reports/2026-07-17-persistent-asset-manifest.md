@@ -1,6 +1,6 @@
 # 2026-07-17 Data Center V4 + Internal Compatibility Asset Manifest
 
-- generated_at: 2026-07-17T11:06:43+08:00
+- generated_at: 2026-07-17T12:40:48+08:00
 - workflow_mode: business_signals_pr
 - monitor: success
 - raw_pool_gate: success
@@ -26,7 +26,7 @@
 | Pool candidates | present |
 | Data Center V4 bundle | present |
 | Business signals | present |
-| Signal card files | 27 |
+| Signal card files | 28 |
 | V3 data observation desk data | present |
 | Industry Reports application data | present |
 | Intelligence graph index | present |

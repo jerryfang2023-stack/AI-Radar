@@ -23,7 +23,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-07-16T00:00:00.000Z"
-collected_at: 2026-07-17T03:06:12.612Z
+collected_at: 2026-07-17T04:40:17.288Z
 language: mixed
 full_text_hash: 2c16ce96390ddf60
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-17/r-086-thinking-machines-inkling-gpt-red-perplexity-sandboxes.md"
@@ -60,7 +60,7 @@ content_hash: 2c16ce96390ddf60
 semantic_hash: 09a68d333f5a0af1
 duplicate_of: ""
 first_seen_at: "2026-07-16T00:00:00.000Z"
-last_seen_at: 2026-07-17T03:06:12.612Z
+last_seen_at: 2026-07-17T04:40:17.288Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -75,7 +75,7 @@ missing_information: ["没有具体客户或真实企业案例"]
 key_excerpts: [{"type":"product_update","text":"Thinking Machines Inkling 🧠, GPT-Red 🔒, Perplexity sandboxes 🛡️ TLDR Newsletters Advertise Blog TLDR TLDR AI 2026-07-16 Thinking Machines Inkling 🧠, GPT-Red 🔒, Perplexity sandboxes 🛡️ FYI: Granola has an MCP integration.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Time to put your meeting notes to work (Sponsor) Still managing a big messy folder full of meeting-transcript.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"product_update","text":"You're doing it wrong 😏 With the Granola MCP integration , Claude (or ChatGPT etc.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"high"},{"type":"company_action","text":") already has access to all your meeting notes, enriched and refined by Granola.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"workflow_change","text":"Automated workflows are one prompt away: → Ask Claude to review last week's client meetings and update your CRM.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"→ Have ChatGPT extract tasks from multiple conversations and organize them in Linear.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-17T03:06:12.612Z
+fact_extraction_completed_at: 2026-07-17T04:40:17.288Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only

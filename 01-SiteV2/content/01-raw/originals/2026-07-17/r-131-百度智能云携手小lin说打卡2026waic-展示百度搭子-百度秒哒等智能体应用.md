@@ -23,7 +23,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-07-17T00:00:00.000Z"
-collected_at: 2026-07-17T03:06:12.794Z
+collected_at: 2026-07-17T04:40:17.465Z
 language: mixed
 full_text_hash: 4544ba4b61ed91b6
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-17/r-131-百度智能云携手小lin说打卡2026waic-展示百度搭子-百度秒哒等智能体应用.md"
@@ -49,7 +49,7 @@ capture_scope: aihot_visible_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: discovery_only
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"百度智能云携手小Lin说打卡2026WAIC，展示百度搭子、百度秒哒等智能体应用","discovery_summary":"百度智能云在2026WAIC现场携手@小Lin说，沉浸式展示「百度搭子」、「百度秒哒」等创新智能体应用，并零距离呈现具身智能、AI硬件、金融等产业落地场景。展区全景式呈现百度智能云「芯云模体」全栈AI云。","source_name":"公众号：百度智能云（文心）","origin_url":"https://mp.weixin.qq.com/s/doYfxaH2HL515Hvf9s2Cjg","discovered_at":"2026-07-17T02:56:35.399Z","rank_on_page":62,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"百度智能云携手小Lin说打卡2026WAIC，展示百度搭子、百度秒哒等智能体应用","discovery_summary":"百度智能云在2026WAIC现场携手@小Lin说，沉浸式展示「百度搭子」、「百度秒哒」等创新智能体应用，并零距离呈现具身智能、AI硬件、金融等产业落地场景。展区全景式呈现百度智能云「芯云模体」全栈AI云。","source_name":"公众号：百度智能云（文心）","origin_url":"https://mp.weixin.qq.com/s/doYfxaH2HL515Hvf9s2Cjg","discovered_at":"2026-07-17T04:31:45.303Z","rank_on_page":81,"discovery_status":"discovered"}
 source_role: discovery_source
 origin_fetch_status: "summary_only"
 paywall_status: none
@@ -60,7 +60,7 @@ content_hash: 4544ba4b61ed91b6
 semantic_hash: 4f5ceac6256b77a9
 duplicate_of: ""
 first_seen_at: "2026-07-17T00:00:00.000Z"
-last_seen_at: 2026-07-17T03:06:12.794Z
+last_seen_at: 2026-07-17T04:40:17.465Z
 update_detected: false
 raw_status: ignored
 usable_for: {"viewpoint":false,"case":false,"business_change":false,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
@@ -75,7 +75,7 @@ missing_information: ["证据对象不可用：疑似索引页、目录页、薄
 key_excerpts: [{"type":"company_action","text":"百度智能云在2026WAIC现场携手@小Lin说，沉浸式展示「百度搭子」、「百度秒哒」等创新智能体应用，并零距离呈现具身智能、AI硬件、金融等产业落地场景。展区全景式呈现百度智能云「芯云模体」全栈AI云。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"百度智能云在2026WAIC现场携手@小Lin说，沉浸式展示「百度搭子」、「百度秒哒」等创新智能体应用，并零距离呈现具身智能、AI硬件、金融等产业落地场景。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"展区全景式呈现百度智能云「芯云模体」全栈AI云。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-17T03:06:12.794Z
+fact_extraction_completed_at: 2026-07-17T04:40:17.465Z
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
@@ -183,7 +183,7 @@ copyright_note: local research archive only
 - discovery_source: AI HOT
 - source_role: discovery_source
 - origin_fetch_status: summary_only
-- discovery_record: {"discovery_title":"百度智能云携手小Lin说打卡2026WAIC，展示百度搭子、百度秒哒等智能体应用","discovery_summary":"百度智能云在2026WAIC现场携手@小Lin说，沉浸式展示「百度搭子」、「百度秒哒」等创新智能体应用，并零距离呈现具身智能、AI硬件、金融等产业落地场景。展区全景式呈现百度智能云「芯云模体」全栈AI云。","source_name":"公众号：百度智能云（文心）","origin_url":"https://mp.weixin.qq.com/s/doYfxaH2HL515Hvf9s2Cjg","discovered_at":"2026-07-17T02:56:35.399Z","rank_on_page":62,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"百度智能云携手小Lin说打卡2026WAIC，展示百度搭子、百度秒哒等智能体应用","discovery_summary":"百度智能云在2026WAIC现场携手@小Lin说，沉浸式展示「百度搭子」、「百度秒哒」等创新智能体应用，并零距离呈现具身智能、AI硬件、金融等产业落地场景。展区全景式呈现百度智能云「芯云模体」全栈AI云。","source_name":"公众号：百度智能云（文心）","origin_url":"https://mp.weixin.qq.com/s/doYfxaH2HL515Hvf9s2Cjg","discovered_at":"2026-07-17T04:31:45.303Z","rank_on_page":81,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

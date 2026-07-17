@@ -23,7 +23,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: ""
-collected_at: 2026-07-17T03:06:12.827Z
+collected_at: 2026-07-17T04:40:17.497Z
 language: mixed
 full_text_hash: 8a49fc95068b35fc
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-17/r-152-千问app联合武汉发布举办ai求职实战课-演示简历诊断与办公自动化.md"
@@ -49,7 +49,7 @@ capture_scope: summary_only
 visible_range: "采集通道提供的标题与摘要"
 evidence_level: discovery_only
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"千问APP联合武汉发布举办AI求职实战课，演示简历诊断与办公自动化","discovery_summary":"千问APP与武汉发布在武汉举办AI求职实战课，现场演示了用千问进行简历诊断、PPT制作和表格分析。产品经理提出“给全材料、说明目标、定义标准、划定边界、索要可编辑文件”五步法，并展示了将486行杂乱销售数据浓缩为一页结论PPT的“建、理、算、析、呈”方法论。","source_name":"公众号：千问APP（阿里）","origin_url":"","discovered_at":"2026-07-17T02:56:33.360Z","rank_on_page":24,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"千问APP联合武汉发布举办AI求职实战课，演示简历诊断与办公自动化","discovery_summary":"千问APP与武汉发布在武汉举办AI求职实战课，现场演示了用千问进行简历诊断、PPT制作和表格分析。产品经理提出“给全材料、说明目标、定义标准、划定边界、索要可编辑文件”五步法，并展示了将486行杂乱销售数据浓缩为一页结论PPT的“建、理、算、析、呈”方法论。","source_name":"公众号：千问APP（阿里）","origin_url":"","discovered_at":"2026-07-17T04:31:43.237Z","rank_on_page":25,"discovery_status":"discovered"}
 source_role: discovery_source
 origin_fetch_status: "summary_only"
 paywall_status: none
@@ -59,8 +59,8 @@ url_hash: e3b0c44298fc1c14
 content_hash: 8a49fc95068b35fc
 semantic_hash: 1e40a9aea39cd319
 duplicate_of: ""
-first_seen_at: "2026-07-17T03:06:12.827Z"
-last_seen_at: 2026-07-17T03:06:12.827Z
+first_seen_at: "2026-07-17T04:40:17.497Z"
+last_seen_at: 2026-07-17T04:40:17.497Z
 update_detected: false
 raw_status: ignored
 usable_for: {"viewpoint":false,"case":false,"business_change":false,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
@@ -75,7 +75,7 @@ missing_information: ["证据对象不可用：疑似索引页、目录页、薄
 key_excerpts: [{"type":"quote","text":"千问APP与武汉发布在武汉举办AI求职实战课，现场演示了用千问进行简历诊断、PPT制作和表格分析。产品经理提出“给全材料、说明目标、定义标准、划定边界、索要可编辑文件”五步法，并展示了将486行杂乱销售数据浓缩为一页结论PPT的“建、理、算、析、呈”方法论。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"medium"},{"type":"product_update","text":"千问APP与武汉发布在武汉举办AI求职实战课，现场演示了用千问进行简历诊断、PPT制作和表格分析。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"medium"},{"type":"quote","text":"产品经理提出“给全材料、说明目标、定义标准、划定边界、索要可编辑文件”五步法，并展示了将486行杂乱销售数据浓缩为一页结论PPT的“建、理、算、析、呈”方法论。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"medium"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-17T03:06:12.827Z
+fact_extraction_completed_at: 2026-07-17T04:40:17.497Z
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
@@ -183,7 +183,7 @@ copyright_note: local research archive only
 - discovery_source: AI HOT
 - source_role: discovery_source
 - origin_fetch_status: summary_only
-- discovery_record: {"discovery_title":"千问APP联合武汉发布举办AI求职实战课，演示简历诊断与办公自动化","discovery_summary":"千问APP与武汉发布在武汉举办AI求职实战课，现场演示了用千问进行简历诊断、PPT制作和表格分析。产品经理提出“给全材料、说明目标、定义标准、划定边界、索要可编辑文件”五步法，并展示了将486行杂乱销售数据浓缩为一页结论PPT的“建、理、算、析、呈”方法论。","source_name":"公众号：千问APP（阿里）","origin_url":"","discovered_at":"2026-07-17T02:56:33.360Z","rank_on_page":24,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"千问APP联合武汉发布举办AI求职实战课，演示简历诊断与办公自动化","discovery_summary":"千问APP与武汉发布在武汉举办AI求职实战课，现场演示了用千问进行简历诊断、PPT制作和表格分析。产品经理提出“给全材料、说明目标、定义标准、划定边界、索要可编辑文件”五步法，并展示了将486行杂乱销售数据浓缩为一页结论PPT的“建、理、算、析、呈”方法论。","source_name":"公众号：千问APP（阿里）","origin_url":"","discovered_at":"2026-07-17T04:31:43.237Z","rank_on_page":25,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

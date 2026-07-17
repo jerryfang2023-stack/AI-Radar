@@ -23,7 +23,7 @@ search_path: "ai_hardware_original"
 search_path_label: "AI hardware original-source path"
 author: ""
 published_at: ""
-collected_at: 2026-07-17T03:06:12.776Z
+collected_at: 2026-07-17T04:40:17.447Z
 language: mixed
 full_text_hash: 335da2a01dfea2f2
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-17/r-122-nvidia-partners-with-noetra-for-140mw-vera-rubin-cluster-in-japan-dcd.md"
@@ -54,13 +54,13 @@ source_role: discovery_source
 origin_fetch_status: ""
 paywall_status: none
 block_status: suspected
-duplicate_status: merged_provider_duplicates
+duplicate_status: unique
 url_hash: df98e94192b3f14c
 content_hash: 335da2a01dfea2f2
 semantic_hash: 2c4223133635943e
-duplicate_of: "merged 3 duplicate provider hit(s) before Raw selection"
-first_seen_at: "2026-07-17T03:06:12.776Z"
-last_seen_at: 2026-07-17T03:06:12.776Z
+duplicate_of: ""
+first_seen_at: "2026-07-17T04:40:17.447Z"
+last_seen_at: 2026-07-17T04:40:17.447Z
 update_detected: false
 raw_status: ignored
 usable_for: {"viewpoint":false,"case":false,"business_change":false,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -75,7 +75,7 @@ missing_information: ["没有可用全文快照"]
 key_excerpts: [{"type":"case_detail","text":"Nvidia partners with Noetra for 140MW Vera Rubin cluster in Japan - DCD 14 Jul 2026 # FBI considers deploying AI LLM supercomputers with Nvidia B300 GPUs or Google TPUs https://www.datacenterdynamics.com/en/news/fbi-considers-deploying-ai-llm-supercomputers-with-nvidia-b300-gpus-or-google-tpus/ ... / query=AI server customer deployment enterprise inference / intent=find_customer_case / path=ai_hardware_original","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Nvidia partners with Noetra for 140MW Vera Rubin cluster in Japan - DCD 14 Jul 2026 # FBI considers deploying AI LLM supercomputers with Nvidia B300 GPUs or Google TPUs https://www.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"datacenterdynamics.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"com/en/news/fbi-considers-deploying-ai-llm-supercomputers-with-nvidia-b300-gpus-or-google-tpus/ .","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"/ query=AI server customer deployment enterprise inference / intent=find_customer_case / path=ai_hardware_original","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-17T03:06:12.776Z
+fact_extraction_completed_at: 2026-07-17T04:40:17.447Z
 theme: ai-hardware-scenario-service-signal
 keyword_group: ai-hardware-scenario-service-signal
 copyright_note: local research archive only

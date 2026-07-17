@@ -1,7 +1,7 @@
 # GitHub Business Signals PR
 
 - date: 2026-07-17
-- generated_at: 2026-07-17T10:56:30+08:00
+- generated_at: 2026-07-17T12:31:40+08:00
 - mode: business_signals_pr
 - trigger: workflow_dispatch
 - schedule: 08:57 Asia/Shanghai primary; 09:27 conditional health dispatch; Daily Problem Watchdog records failures to Hermes inbox
