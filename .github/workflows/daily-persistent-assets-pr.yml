@@ -1,11 +1,6 @@
 name: WaveSight Business Signals PR
 
 on:
-  schedule:
-    # 08:57 Asia/Shanghai primary production. The 09:27 check is handled by
-    # business-signals-health-dispatch.yml so the second window is conditional
-    # instead of a blind full-chain rerun.
-    - cron: "57 0 * * *"
   workflow_dispatch:
     inputs:
       date:
@@ -129,7 +124,7 @@ jobs:
             echo "- generated_at: $(date -Is)"
             echo "- mode: business_signals_pr"
             echo "- trigger: ${{ github.event_name }}"
-            echo "- schedule: 08:57 Asia/Shanghai primary; 09:27 conditional health dispatch; Daily Problem Watchdog records failures to Hermes inbox"
+            echo "- schedule: local 08:10 conditional dispatch; 09:15 targeted recovery; 10:30 cloud safety fallback"
             echo "- business_signal_skip: ${{ steps.existing-assets.outputs.skip }}"
             echo "- business_signal_skip_reason: ${{ steps.existing-assets.outputs.reason }}"
             echo "- existing_automation_branch: ${{ steps.existing-assets.outputs.branch_exists }}"
@@ -169,6 +164,8 @@ jobs:
         run: |
           node --check agent-workflow/tools/run-guanlan-daily-monitor.mjs
           node --check agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs
+          node --check agent-workflow/tools/run-daily-automation-controller.mjs
+          node --check agent-workflow/tools/run-business-signals-health-dispatch.mjs
           node --check agent-workflow/tools/build-data-center-v4.mjs
           node --check agent-workflow/tools/backfill-data-center-v4.mjs
           node --check agent-workflow/tools/assert-data-center-v4.mjs
@@ -401,9 +398,9 @@ jobs:
           node agent-workflow/tools/sync-business-lenses-to-obsidian.mjs \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-business-lenses-obsidian-sync.log"
 
-      - name: Sync operations data after frontstage gates pass
+      - name: Sync operations data after V4 production
         id: operations-data
-        if: steps.business-frontstage-gate.outcome == 'success' && steps.business-lenses-obsidian-sync.outcome == 'success'
+        if: always() && steps.data-center-v4-materialize.outcome == 'success'
         continue-on-error: true
         shell: bash
         run: |
@@ -487,7 +484,7 @@ jobs:
           The Data Center V4 bundle must be committed only after its integrity gate passes.
           Raw / Pool remain source-capture and compatibility artifacts.
           Card assets must be committed once asset generation runs.
-          Internal Business compatibility data is built and gated before operations dashboard data is generated.
+          The operations dashboard records V4 and compatibility lane states independently; compatibility assets are published only after their own gate passes.
           Accepted V4 facts persist after the V4 integrity/materialization gate; compatibility site data persists only when its own gates pass.
           First-line viewpoints data is produced by the independent first-line workflow.
           EOF
@@ -613,13 +610,8 @@ jobs:
           stage_if_exists "agent-workflow/reports/${RUN_DATE}-pool-to-card-dedupe-gate.md"
           stage_if_exists "agent-workflow/reports/${RUN_DATE}-pool-to-card-handoff.md"
           stage_if_exists "agent-workflow/reports/${RUN_DATE}-frontstage-manifest.json"
-          stage_if_exists "agent-workflow/reports/${RUN_DATE}-business-signals-frontstage-gate.md"
-          stage_if_exists "agent-workflow/reports/${RUN_DATE}-business-signals-frontstage-gate.json"
           stage_if_exists "agent-workflow/reports/${RUN_DATE}-data-center-v4-integrity-gate.md"
           stage_if_exists "agent-workflow/reports/${RUN_DATE}-data-center-v4-integrity-gate.json"
-          stage_if_exists "agent-workflow/reports/${RUN_DATE}-trend-candidate-decision.md"
-          stage_if_exists "agent-workflow/reports/${RUN_DATE}-trend-candidate-decision-blocked.md"
-          stage_if_exists "agent-workflow/reports/${RUN_DATE}-no-trend-candidate-decision.md"
           stage_if_exists "agent-workflow/reports/${RUN_DATE}-persistent-asset-manifest.md"
           stage_if_exists "agent-workflow/reports/${RUN_DATE}-persistent-asset-manifest.json"
           stage_if_exists "agent-workflow/reports/${RUN_DATE}-guanlan-daily-monitor-log.md"
@@ -656,13 +648,21 @@ jobs:
           fi
 
           if [ "${{ steps.pre-commit-gate.outcome }}" = "success" ]; then
+            stage_if_exists "agent-workflow/reports/${RUN_DATE}-business-signals-frontstage-gate.md"
+            stage_if_exists "agent-workflow/reports/${RUN_DATE}-business-signals-frontstage-gate.json"
+            stage_if_exists "agent-workflow/reports/${RUN_DATE}-trend-candidate-decision.md"
+            stage_if_exists "agent-workflow/reports/${RUN_DATE}-trend-candidate-decision-blocked.md"
+            stage_if_exists "agent-workflow/reports/${RUN_DATE}-no-trend-candidate-decision.md"
             stage_if_exists "01-SiteV2/site/data/v3-data-observation-desk.json"
             stage_if_exists "01-SiteV2/site/data/intelligence-graph-index.json"
+          fi
+
+          if [ "${{ steps.operations-data.outcome }}" = "success" ]; then
             stage_if_exists "01-SiteV2/site/data/pipeline-dashboard.json"
             stage_if_exists "01-SiteV2/site/data/pipeline-dashboard.js"
           fi
 
-          if [ "${{ steps.business-frontstage-data.outcome }}" = "success" ]; then
+          if [ "${{ steps.pre-commit-gate.outcome }}" = "success" ] && [ "${{ steps.business-frontstage-data.outcome }}" = "success" ]; then
             stage_if_exists "01-SiteV2/site/data/industry-reports-frontstage.json"
           fi
 
@@ -833,6 +833,9 @@ jobs:
             --skipReason="${{ steps.existing-assets.outputs.reason }}" \
             --monitor="${{ steps.monitor.outcome }}" \
             --evidenceGate="${{ steps.persistent-assets-post-monitor.outcome }}" \
+            --dataCenterBuild="${{ steps.data-center-v4.outcome }}" \
+            --dataCenterGate="${{ steps.data-center-v4-gate.outcome }}" \
+            --dataCenterMaterialize="${{ steps.data-center-v4-materialize.outcome }}" \
             --cards="${{ steps.assets.outcome }}" \
             --dedupe="${{ steps.pool-to-card-dedupe.outcome }}" \
             --cardEditorial="${{ steps.card-editorial-gate.outcome }}" \

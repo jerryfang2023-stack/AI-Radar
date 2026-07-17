@@ -314,6 +314,9 @@ jobs:
           node agent-workflow/tools/classify-business-signals-production-state.mjs \
             --monitor="${{ steps.monitor.outcome }}" \
             --evidenceGate="${{ steps.production-chain-post-monitor.outcome }}" \
+            --dataCenterBuild="${{ steps.data-center-v4.outcome }}" \
+            --dataCenterGate="${{ steps.data-center-v4-gate.outcome }}" \
+            --dataCenterMaterialize="${{ steps.data-center-v4-materialize.outcome }}" \
             --cards="${{ steps.assets.outcome }}" \
             --dedupe="${{ steps.pool-to-card-dedupe.outcome }}" \
             --cardEditorial="${{ steps.card-editorial-gate.outcome }}" \

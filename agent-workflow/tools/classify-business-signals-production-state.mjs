@@ -15,16 +15,28 @@ export function classifyBusinessSignalsProduction(input = {}) {
     return { ok: true, status: "passed", stage: "no_op", reason: input.skipReason || "healthy same-date assets already exist" };
   }
 
-  const stages = [
+  const v4Stages = [
     ["evidence_supply", [["monitor", "Daily Monitor"], ["evidenceGate", "evidence-supply gate"]]],
-    ["card_generation", [["cards", "Card generation"]]],
-    ["card_quality", [["dedupe", "Card dedupe/freshness gate"], ["cardEditorial", "Card editorial quality gate"], ["trendDecision", "trend-candidate decision"]]],
-    ["frontstage_contract", [["frontstageData", "frontstage build"], ["frontstageGate", "unified frontstage gate"], ["operations", "operations sync"], ["freshness", "final freshness gate"]]],
+    ["data_center_v4", [["dataCenterBuild", "Data Center V4 build"], ["dataCenterGate", "Data Center V4 integrity gate"], ["dataCenterMaterialize", "Data Center V4 materialization"]]],
   ];
 
-  for (const [stage, checks] of stages) {
+  for (const [stage, checks] of v4Stages) {
     const failed = checks.find(([key]) => value(input, key) !== "success");
     if (failed) return { ok: false, status: "failed", stage, reason: `${failed[1]} outcome is ${value(input, failed[0])}` };
+  }
+
+  const compatibilityStages = [
+    ["card_generation", [["cards", "Card generation"]]],
+    ["card_quality", [["dedupe", "Card dedupe/freshness gate"], ["cardEditorial", "Card editorial quality gate"], ["trendDecision", "trend-candidate decision"]]],
+    ["frontstage_contract", [["frontstageData", "frontstage build"], ["frontstageGate", "unified frontstage gate"], ["freshness", "final freshness gate"]]],
+  ];
+  let compatibilityFailure = null;
+  for (const [stage, checks] of compatibilityStages) {
+    const failed = checks.find(([key]) => value(input, key) !== "success");
+    if (failed) {
+      compatibilityFailure = { stage, reason: `${failed[1]} outcome is ${value(input, failed[0])}` };
+      break;
+    }
   }
 
   if (value(input, "commit") !== "success") {
@@ -32,7 +44,9 @@ export function classifyBusinessSignalsProduction(input = {}) {
   }
 
   if (String(input.changed) !== "true") {
-    return { ok: true, status: "passed", stage: "publication", reason: "production passed with no new diff" };
+    return compatibilityFailure
+      ? { ok: true, status: "degraded", stage: compatibilityFailure.stage, reason: `Data Center V4 passed with no new diff; ${compatibilityFailure.reason}` }
+      : { ok: true, status: "passed", stage: "publication", reason: "production passed with no new diff" };
   }
 
   if (input.prStatus === "manual_required" || input.mergeStatus === "publication_waiting") {
@@ -44,12 +58,21 @@ export function classifyBusinessSignalsProduction(input = {}) {
   if (value(input, "merge") !== "success") {
     return { ok: false, status: "failed", stage: "publication", reason: `merge outcome is ${value(input, "merge")}` };
   }
+  if (compatibilityFailure) {
+    return {
+      ok: true,
+      status: "degraded",
+      stage: compatibilityFailure.stage,
+      reason: `Data Center V4 publication completed; ${compatibilityFailure.reason}. Repair compatibility assets without rerunning source collection.`,
+    };
+  }
   return { ok: true, status: "passed", stage: "publication", reason: "production gates passed and publication completed or auto-merge was enabled" };
 }
 
 function runFixtures() {
-  const passedStages = { monitor: "success", evidenceGate: "success", cards: "success", dedupe: "success", cardEditorial: "success", trendDecision: "success", frontstageData: "success", frontstageGate: "success", operations: "success", freshness: "success", commit: "success" };
-  assert.equal(classifyBusinessSignalsProduction({ ...passedStages, cards: "failure" }).stage, "card_generation");
+  const passedStages = { monitor: "success", evidenceGate: "success", dataCenterBuild: "success", dataCenterGate: "success", dataCenterMaterialize: "success", cards: "success", dedupe: "success", cardEditorial: "success", trendDecision: "success", frontstageData: "success", frontstageGate: "success", operations: "success", freshness: "success", commit: "success" };
+  assert.equal(classifyBusinessSignalsProduction({ ...passedStages, dataCenterGate: "failure" }).stage, "data_center_v4");
+  assert.equal(classifyBusinessSignalsProduction({ ...passedStages, cards: "failure", changed: "false" }).status, "degraded");
   assert.equal(classifyBusinessSignalsProduction({ ...passedStages, dedupe: "failure" }).stage, "card_quality");
   assert.equal(classifyBusinessSignalsProduction({ ...passedStages, trendDecision: "failure" }).stage, "card_quality");
   assert.equal(classifyBusinessSignalsProduction({ ...passedStages, frontstageGate: "failure" }).stage, "frontstage_contract");

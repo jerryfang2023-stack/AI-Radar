@@ -29,11 +29,11 @@ Hermes is the daily supervisor for WaveSight AI. It should observe, classify, an
 
 Hermes should do this every Asia/Shanghai production day:
 
-1. 08:10 run the version state preflight when a version changed: package / ledger / AGENTS / current frontstage page meta / current frontstage data meta / Skill Ops sync / Skill Store dashboard data. This is read-only and must not block lane production by itself. Ignore old versions only when they appear in `context/version-ledger.md` historical rows.
-2. 08:45 check Community Intelligence local output, archive, and gate. If local collector output is missing, record that local Chrome / login repair is required; do not pretend GitHub can collect it.
+1. 08:10 observe the consolidated morning controller: non-blocking preflight plus conditional Data Center production dispatch.
+2. 09:15 observe the single recovery controller. It may dispatch missing Business or First-Line production once, but accepted V4 prevents a compatibility-only full-chain rerun. Community collection failures remain local Chrome/login repair.
 3. Daily Problem Watchdog records failed production workflows into dated reports and Hermes inbox items. It must not dispatch recovery or start another full-chain run.
 4. Before 10:00 use Business Signals compatibility Card health as a target checkpoint: same-date active data, `BSIG-V2.2.0-pipeline-stage-ownership` unified compatibility Cards present, AI Hardware lens-only items not counted as formal Cards, no placeholder/source-domain titles, no Top10/candidate split, and FDE compatibility items respecting `EAI-V1.2.0-raw-card-ingestion-boundary`. Do not lower gates to hit the checkpoint or confuse this count with public V4 events.
-5. 09:58 check PR / merge / GitHub Pages publication for lanes that produced public V4 data. For the Business Signals compatibility lane, check merged PR, same-date compatibility data, Card count, FDE detail/source boundaries, and whether local sync is blocked; its V3 datasets themselves are excluded from Pages. This check must account for the 09:35 Community Intelligence publish fallback window and treat queued / in-progress runs as Waiting.
+5. 09:50 use the consolidated closure report to check PR / merge / GitHub Pages, Dashboard freshness, safe repairs, and any targeted Codex handoff. Treat queued / in-progress runs as Waiting.
 6. 16:30 record the follow-builders skill publish: check the local publish report and builders viewpoints output for the afternoon skill lane.
 7. For every failure, write cause, result, report path, and one good / bad example into the Hermes report or inbox. Ask Codex to repair with validation and prevention.
 8. Never lower gates, edit generated data directly, push to `main`, dispatch recovery, or loop blind reruns.
@@ -98,20 +98,12 @@ When Hermes checks the internal Business Signals compatibility lane, the canonic
 
 | Time | Lane | Hermes action |
 |---:|---|---|
-| 08:10 | Version State Preflight | On version-change days, check `package.json`, `package-lock.json`, `AGENTS.md`, `context/version-ledger.md`, current page meta, current frontstage data meta versions, Skill Store dashboard data, and `npm run check:skill-ops`. Record drift only; do not block lane production unless the drift breaks a gate. |
+| 08:10 | Consolidated Morning Controller | Windows task `WaveSight Morning Production Dispatch` runs the non-blocking Skill Ops preflight and conditionally dispatches Data Center V4 production. GitHub cron is not the morning SLA clock. |
 | 08:30 | Community Intelligence Local | Windows scheduled task `WaveSight Community Intelligence Daily` runs logged-in collection, archive, gate, and local publish handoff. GitHub cannot replace this collector. |
 | 08:30 | First-Line Viewpoints RSS | Local Codex automation `builder-observation-daily-sync` runs RSS / podcast collection, page-data build, gate, and Obsidian person/date sync. |
-| 08:45 | Community Intelligence | Check local scheduled task, same-date community data, archive, and community gate. |
-| 09:00 | Community Intelligence Codex Fallback | Codex automation `community-intelligence-daily-local` is active as a local fallback / repair window after the Windows 08:30 task. It should first check same-date community data, archive, and gate; if healthy, report no-op instead of recollecting. If missing or failed, rerun local logged-in collection and archive without touching other lanes. |
-| 09:30 | Community Intelligence Publish | If local collector output exists but `.github/workflows/daily-community-intelligence-pr.yml` has not published same-date community data and no publish run is active, trigger the publish workflow. If local output is missing, record a local / Codex repair handoff. |
 | Daily preflight | Skill Ops Governance | Check current Guanlan skills, registry freshness, eval/example coverage, and `.skill-store` sync without editing files. |
-| 08:57 | Business Signals Primary | GitHub Actions runs `.github/workflows/daily-persistent-assets-pr.yml` for Raw / Pool / Card / Business frontstage / PR publication. |
-| 09:27 | Business Signals Health Dispatch | GitHub Actions runs `.github/workflows/business-signals-health-dispatch.yml`; it waits if same-date data is healthy or a same-date run is queued / in progress / successful, otherwise dispatches the primary Business Signals workflow. |
-| 09:30 | Morning Problem Check | After Community local collection / publish check and First-Line 09:17 fallback, classify missing or failed outputs. Write a problem report / inbox item when needed; do not dispatch recovery. |
-| 09:45 | Business / FDE Recheck | Judge the Business 08:57 primary and 09:27 health dispatch path. Check `BSIG-V2.2.0-pipeline-stage-ownership` unified Cards, separate AI Hardware lens, and `EAI-V1.2.0` FDE boundary separately. If output is unhealthy and no run is active, write a problem report / inbox item; do not dispatch recovery. |
-| 09:55 | Final Problem Check | Wait for active runs, record failures, or mark `manual_required`; avoid duplicate inbox writes and do not start a routine dispatch. |
-| 09:35 | Community Publish Fallback | Let the second Community Intelligence publish window run if first publication did not reach `main`. GitHub Pages follows after merge to `main`. |
-| 09:58 | Site publication | Check lane PR / merge / Pages status when GitHub state is available and after the Community 09:35 fallback window has had a chance to start. For Business compatibility also check same-date data, compatibility Card count, FDE detail boundaries, Industry Reports projection follow-through when report / opportunity data changed, and local sync status. Treat queued / in-progress runs as Waiting. |
+| 09:15 | Consolidated Recovery Controller | Check accepted V4, active runs, First-Line gate, and Community gate. Dispatch at most one missing Business/First-Line fallback; route Community to local repair; never recollect accepted V4 for compatibility-only defects. |
+| 09:50 | Consolidated Closure | Run supervision, safe repair, Dashboard/publication checks, and Codex handoff only for unresolved targeted tasks. |
 | 16:30 | Hermes Afternoon Record | Check the follow-builders skill publish report, `01-SiteV2/content/07-points/<YYYY-MM-DD>-builders-viewpoints.md`, the report's `publish_status` / `publish_error`, and `obsidian_sync_*` counts. If the report, output, publish closure, or Obsidian sync result is missing or failed, write a Codex handoff for `afternoon_skill_runner` or `afternoon_publication_failure`. |
 
 If any lane is still `queued` or `in_progress`, wait for it to finish before reporting that lane's data missing.

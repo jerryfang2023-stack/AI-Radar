@@ -27,8 +27,8 @@ It may call the generic `follow-builders` skill for source / digest behavior, bu
 ## Current Timing
 
 - Morning local Codex RSS collection/build/sync: 08:30 Asia/Shanghai via `builder-observation-daily-sync`.
-- GitHub RSS fallback window: 09:17 Asia/Shanghai.
-- Daily Problem Watchdog records failed RSS / publication runs to Hermes inbox after the local run and the single 09:17 fallback window. It must not dispatch recovery.
+- Conditional GitHub RSS fallback: the 09:15 consolidated recovery controller dispatches it only when the local gate is unhealthy and no same-date run exists.
+- Daily Problem Watchdog records failed RSS / publication runs after the single conditional fallback. It must not start another recovery loop.
 - Afternoon local `follow-builders` skill publish: 16:10 Asia/Shanghai; Hermes records it at 16:30.
 
 ## Required Reads
@@ -86,8 +86,8 @@ Repair the earliest category and rerun the smallest validation. Do not substitut
 Use this path for the public First-Line Viewpoints page:
 
 1. At 08:30, local Codex `builder-observation-daily-sync` runs blog RSS fetch, podcast RSS fetch, page-data build, data gate, and Obsidian sync.
-2. At 09:17, GitHub fallback may run the same RSS page-data path when same-date data / timelines are missing.
-3. At 09:30, supervision checks after the local attempt and the single GitHub fallback window. If the 09:17 fallback failed, same-date data is still unhealthy, and no run is active, Daily Problem Watchdog records a Hermes inbox item instead of dispatching another workflow.
+2. At 09:15, the consolidated recovery controller may dispatch the same RSS page-data path when same-date data / timelines are missing and no run exists.
+3. At 09:50, closure checks after the local attempt and the single fallback. If it failed, same-date data is still unhealthy, and no run is active, record a targeted repair task instead of dispatching another workflow.
 4. Success means:
    - same-date `follow-builders-daily.json`;
    - remarks count greater than `0` and builders count at least `6`;

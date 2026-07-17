@@ -84,8 +84,9 @@ Purpose:
 
 Primary route:
 
-- GitHub workflow: `.github/workflows/daily-persistent-assets-pr.yml` at 08:57 Asia/Shanghai.
-- Conditional health dispatch: `.github/workflows/business-signals-health-dispatch.yml` at 09:27 Asia/Shanghai. It dispatches the primary Business workflow only when same-date Business data is unhealthy and no same-date run is queued, in progress, or successful.
+- Local consolidated controller: `WaveSight Morning Production Dispatch` at 08:10 Asia/Shanghai conditionally dispatches `.github/workflows/daily-persistent-assets-pr.yml` after a non-blocking preflight.
+- Targeted recovery: `WaveSight Daily Recovery Controller` at 09:15 checks accepted V4, active runs, First-Line, and Community health. Accepted V4 prevents a full-chain rerun even when compatibility data needs repair.
+- Cloud fallback: `.github/workflows/business-signals-health-dispatch.yml` remains a late conditional safety check; the primary production workflow itself is dispatch-only.
 - Daily Problem Watchdog: `.github/workflows/daily-recovery-watchdog.yml` records Business Signals failures to Hermes inbox without dispatching recovery or rerunning the full chain.
 - Dry run workflow: `.github/workflows/daily-production-chain-dry-run.yml`.
 
@@ -293,8 +294,8 @@ Purpose:
 Primary route:
 
 - Local Codex automation: `builder-observation-daily-sync` at 08:30 Asia/Shanghai. The local automation config stores this as `FREQ=DAILY;BYHOUR=0;BYMINUTE=30;BYSECOND=0` because the observed Codex scheduler interprets `rrule` hours as UTC. This is a collection-first task: fetch builder blog RSS, fetch builder podcast RSS, build `follow-builders-daily.json`, validate, then sync Obsidian.
-- GitHub fallback workflow: `.github/workflows/daily-first-line-viewpoints-pr.yml` at 09:17 Asia/Shanghai.
-- Daily Problem Watchdog records First-Line Viewpoints failures to Hermes inbox after the 08:30 local collection/build/sync attempt and the single 09:17 GitHub fallback window.
+- Conditional GitHub fallback: the 09:15 consolidated recovery controller dispatches `.github/workflows/daily-first-line-viewpoints-pr.yml` only when the local gate is unhealthy and no same-date run exists.
+- Daily Problem Watchdog records failed publication runs; routine recovery performs at most the single 09:15 fallback.
 
 Reads:
 
@@ -441,8 +442,8 @@ Purpose:
 Primary route:
 
 - Primary local Windows task: `WaveSight Community Intelligence Daily` at 08:30 Asia/Shanghai for logged-in collection, archive, gate validation, and local publish handoff.
-- Codex automation `community-intelligence-daily-local` is active at about 09:00 Asia/Shanghai as a local fallback / repair window after the Windows task. It must first check same-date data, archive, and gate health; if healthy, it should report no-op instead of recollecting.
-- GitHub workflow: `.github/workflows/daily-community-intelligence-pr.yml` for same-date publication after local data exists.
+- Successful local collection owns the publish handoff. The 09:15 consolidated recovery controller validates same-date data, archive, and gate health and records local repair when Chrome/login collection is missing.
+- GitHub workflow: `.github/workflows/daily-community-intelligence-pr.yml` is dispatch-only for targeted publication repair after local data exists.
 
 Reads:
 
