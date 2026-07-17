@@ -1,18 +1,18 @@
 # 2026-07-17 Daily Production Chain Readiness
 
-- generated_at: 2026-07-17T01:57:09.318Z
-- stage: post-monitor
+- generated_at: 2026-07-17T03:06:29.072Z
+- stage: pre-trend
 - status: passed
-- final_active_raw_count: 167
+- final_active_raw_count: 163
 - raw_count_release_override: false
 - pool_count_release_override: raw_to_card_supply
-- final_active_pool_count: 152
-- logged_raw_count: 167
-- logged_pool_count: 152
+- final_active_pool_count: 149
+- logged_raw_count: 163
+- logged_pool_count: 149
 - historical_dedupe_enabled: true
 - historical_raw_records_checked: 8648
-- historical_duplicates_removed_before_fetch: 220
-- historical_duplicates_removed_after_fetch: 121
+- historical_duplicates_removed_before_fetch: 231
+- historical_duplicates_removed_after_fetch: 124
 - active_historical_duplicate_count: 0
 - active_raw_historical_duplicate_count: 0
 - active_pool_historical_duplicate_count: 0
@@ -22,8 +22,8 @@
 - monitor_quality_gate_override_reason: none
 - review_only: false
 - downstream_assets_stale: true
-- block_stale: false
-- block_stale_groups: none
+- block_stale: true
+- block_stale_groups: signal_cards
 
 ## Stale Groups
 

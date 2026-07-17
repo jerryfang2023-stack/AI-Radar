@@ -23,7 +23,7 @@ search_path: "capital_startup"
 search_path_label: "资本与创业公司路径"
 author: ""
 published_at: "2026-07-16T12:00:30.000Z"
-collected_at: 2026-07-17T01:57:08.479Z
+collected_at: 2026-07-17T03:06:12.200Z
 language: mixed
 full_text_hash: 495ca48cb14fa6d7
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-17/r-011-aina-raises-5-5-mn-from-info-edge-others-to-build-ai-hardware-interfac.md"
@@ -60,7 +60,7 @@ content_hash: 495ca48cb14fa6d7
 semantic_hash: aed5fccdc86fccb4
 duplicate_of: ""
 first_seen_at: "2026-07-16T12:00:30.000Z"
-last_seen_at: 2026-07-17T01:57:08.479Z
+last_seen_at: 2026-07-17T03:06:12.200Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
@@ -75,7 +75,7 @@ missing_information: ["没有具体客户或真实企业案例"]
 key_excerpts: [{"type":"funding","text":"Aina Raises $5.5 Mn From Info Edge, Others To Build AI Hardware Interface News SUMMARY Aina has emerged from stealth with a $5.5 Mn seed round to bring its AI-native hardware interface to market The fundraise positions Aina among the early Indian startups betting on AI-first hardware as the next... / query=applied AI startup raises design partner customers / intent=find_startups / path=capital_startup","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"number","text":"News SUMMARY Aina has emerged from stealth with a $5.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"5 Mn seed round to bring its AI-native hardware interface to market The fundraise positions Aina among the early Indian startups betting on AI-first hardware as the next computing platform beyond smartphones and PCs Founded by former Ultrahuman VP of Hardware Apoorv Shankar, Aina will use the capital to launch its flagship product and expand its Bengaluru and San Francisco teams FOLLOW US FOLLOW US Added to Saved Stories in Login VIEW SAVED STORIES AI hardware interface startup Aina has emerged from stealth with a ","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"5 Mn (about ₹53 Cr) seed funding round co-led by Redstart Labs, the venture arm of Info Edge Ventures, and 360 ONE Asset.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The round also saw participation from MIXI Global Investments, Antler and Blume Founders Fund.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Angel investors included WhatsApp head Kunal Shah, Scribd cofounder Tikhon Bernstam, Razorpay cofounders Harshil Mathur and Shashank Kumar, Better Capital founder Vaibhav Domkundwar, among others, also participated in the round.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-17T01:57:08.479Z
+fact_extraction_completed_at: 2026-07-17T03:06:12.200Z
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only

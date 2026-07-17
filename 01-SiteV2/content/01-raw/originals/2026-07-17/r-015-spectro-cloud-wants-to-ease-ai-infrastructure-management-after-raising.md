@@ -23,7 +23,7 @@ search_path: "ai_hardware_original"
 search_path_label: "AI hardware original-source path"
 author: ""
 published_at: "2026-07-15T00:00:00.000Z"
-collected_at: 2026-07-17T01:57:08.509Z
+collected_at: 2026-07-17T03:06:12.231Z
 language: mixed
 full_text_hash: 25095d52c991ebe7
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-17/r-015-spectro-cloud-wants-to-ease-ai-infrastructure-management-after-raising.md"
@@ -60,7 +60,7 @@ content_hash: 25095d52c991ebe7
 semantic_hash: ba3a2230d20e8fc3
 duplicate_of: ""
 first_seen_at: "2026-07-15T00:00:00.000Z"
-last_seen_at: 2026-07-17T01:57:08.509Z
+last_seen_at: 2026-07-17T03:06:12.231Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -75,7 +75,7 @@ missing_information: ["没有具体客户或真实企业案例"]
 key_excerpts: [{"type":"funding","text":"Spectro Cloud wants to ease AI infrastructure management after raising $100M in funding - SiliconANGLE SHARE UPDATED 21:36 EDT / JULY 15 2026 CLOUD ### Spectro Cloud wants to ease AI infrastructure management after raising $100M in funding Kubernetes software startup Spectro Cloud Inc. has bagg... / query=AI server startup funding GPU cluster customers / intent=find_startups / path=ai_hardware_original","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"UPDATED 21:36 EDT / JULY 15 2026 CLOUD Spectro Cloud wants to ease AI infrastructure management after raising $100M in funding by Mike Wheatley Kubernetes software startup Spectro Cloud Inc.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"has bagged $100 million in a late-stage funding round as it looks to solve a significant and growing problem in artificial intelligence.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Powerful processors might be hard to come by, but they are available for a price.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"However, what’s really lacking is the software needed to squeeze the most value out of those chips.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Spectro Cloud, founded by Chief Executive Tenry Fu and Chief Technology Officer Saad Malik in 2019, sells a software platform that helps organizations to deploy, govern and operate AI infrastructure at scale, across data centers, edge locations and on-premises.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-17T01:57:08.509Z
+fact_extraction_completed_at: 2026-07-17T03:06:12.231Z
 theme: ai-hardware-investment-signal
 keyword_group: ai-hardware-investment-signal
 copyright_note: local research archive only

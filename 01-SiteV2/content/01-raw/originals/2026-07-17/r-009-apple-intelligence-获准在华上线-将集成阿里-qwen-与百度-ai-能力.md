@@ -23,9 +23,9 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-07-16T00:00:00.000Z"
-collected_at: 2026-07-17T01:57:08.470Z
+collected_at: 2026-07-17T03:06:12.191Z
 language: mixed
-full_text_hash: 77d662092c5d4fa6
+full_text_hash: 8b4a29f2b8d53547
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-17/r-009-apple-intelligence-获准在华上线-将集成阿里-qwen-与百度-ai-能力.md"
 json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-17/r-009-apple-intelligence-获准在华上线-将集成阿里-qwen-与百度-ai-能力.json"
 html_snapshot_path: ""
@@ -34,33 +34,33 @@ fetch_status: fetched-readable-text-main
 extraction_quality: high
 extraction_method: "main"
 readability_score: 77
-extractor_diagnostics: {"readability_score":77,"text_length":2834,"paragraph_count":22,"sentence_count":16,"boilerplate_hits":2,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+extractor_diagnostics: {"readability_score":77,"text_length":2836,"paragraph_count":22,"sentence_count":16,"boilerplate_hits":2,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
 has_full_text: true
-content_length: 2834
+content_length: 2836
 fetch_error: ""
 evidence_strength: rich_evidence
 raw_qc_decision: allow
 raw_qc_downstream_use: eligible_after_qc
 degradation_reasons: []
-evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"77d662092c5d4fa6","missing":[]}
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"8b4a29f2b8d53547","missing":[]}
 source_volatility: medium
 community_name: ""
 capture_scope: article_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: core_evidence_candidate
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"Apple Intelligence 获准在华上线，将集成阿里 Qwen 与百度 AI 能力","discovery_summary":"中国网信办已批准 Apple Intelligence 在华上线，苹果将把阿里 Qwen 模型集成至 iOS、iPadOS、macOS 及 visionOS 系统。百度也确认正与苹果合作开发面向中国用户的 Apple Intelligence 功能。此前因未获监管批准，Apple Intelligence 自 2024 年推出后在中国市场一直延迟。","source_name":"TechCrunch：AI（RSS）","origin_url":"https://techcrunch.com/2026/07/16/apple-intelligence-approved-for-launch-in-china-with-alibabas-qwen-ai","discovered_at":"2026-07-17T01:46:58.978Z","rank_on_page":215,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"Apple Intelligence 获准在华上线，将集成阿里 Qwen 与百度 AI 能力","discovery_summary":"中国网信办已批准 Apple Intelligence 在华上线，苹果将把阿里 Qwen 模型集成至 iOS、iPadOS、macOS 及 visionOS 系统。百度也确认正与苹果合作开发面向中国用户的 Apple Intelligence 功能。此前因未获监管批准，Apple Intelligence 自 2024 年推出后在中国市场一直延迟。","source_name":"TechCrunch：AI（RSS）","origin_url":"https://techcrunch.com/2026/07/16/apple-intelligence-approved-for-launch-in-china-with-alibabas-qwen-ai","discovered_at":"2026-07-17T02:56:35.445Z","rank_on_page":228,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
 block_status: none
 duplicate_status: unique
 url_hash: 3d9c9d7dbf2a0e36
-content_hash: 77d662092c5d4fa6
+content_hash: 8b4a29f2b8d53547
 semantic_hash: 105b133c91d40a40
 duplicate_of: ""
 first_seen_at: "2026-07-16T00:00:00.000Z"
-last_seen_at: 2026-07-17T01:57:08.470Z
+last_seen_at: 2026-07-17T03:06:12.191Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -75,7 +75,7 @@ missing_information: ["没有具体客户或真实企业案例"]
 key_excerpts: [{"type":"supporting_context","text":"中国网信办已批准 Apple Intelligence 在华上线，苹果将把阿里 Qwen 模型集成至 iOS、iPadOS、macOS 及 visionOS 系统。百度也确认正与苹果合作开发面向中国用户的 Apple Intelligence 功能。此前因未获监管批准，Apple Intelligence 自 2024 年推出后在中国市场一直延迟。","supports":["signal_card_candidate","relationship_graph_input"],"importance":"high","confidence":"high"},{"type":"product_update","text":"In Brief Posted: 6:17 AM PDT · July 16, 2026 Image Credits: Apple (event screenshot) Sarah Perez Apple Intelligence approved for launch in China with Alibaba and Baidu Apple Intelligence, the iPhone maker’s generative AI offering, is coming to China.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"high"},{"type":"product_update","text":"On Wednesday, Reuters reported that China’s internet content regulator, the Cyberspace Administration of China, approved Apple’s AI services in the country on the back of a deal to integrate Alibaba’s Qwen AI model into Apple’s operating systems, including iOS, iPadOS, macOS, and visionOS.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"On Wednesday evening, a Baidu spokesperson confirmed to TechCrunch that it is also working with Apple on developing Apple Intelligence features for Chinese users.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The Alibaba deal, which was rumored to be in the works last year, marks an important step for Apple’s AI ambitions in a key market.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"number","text":"In the second quarter, Apple generated $20.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-17T01:57:08.470Z
+fact_extraction_completed_at: 2026-07-17T03:06:12.191Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
@@ -121,21 +121,21 @@ Sarah Perez
 Hardware
 India bets billions on breaking China’s grip on smartphone manufacturing
 Jagmeet Singh
-1 day ago
+2 days ago
 Latest in AI
 AI
 Google Vids now lets you star in your own AI videos
 Sarah Perez
-7 hours ago
+8 hours ago
 Gaming
 Roblox launches an AI-powered game-creation feature in its mobile app
 Lauren Forristal
-7 hours ago
+9 hours ago
 Startups
 The founder who left Google and secured a $300M pre-seed valuation in months
 Maggie Nye
 Isabelle Johannessen
-9 hours ago
+11 hours ago
 34 min
 
 ## full_text
@@ -176,21 +176,21 @@ Sarah Perez
 Hardware
 India bets billions on breaking China’s grip on smartphone manufacturing
 Jagmeet Singh
-1 day ago
+2 days ago
 Latest in AI
 AI
 Google Vids now lets you star in your own AI videos
 Sarah Perez
-7 hours ago
+8 hours ago
 Gaming
 Roblox launches an AI-powered game-creation feature in its mobile app
 Lauren Forristal
-7 hours ago
+9 hours ago
 Startups
 The founder who left Google and secured a $300M pre-seed valuation in months
 Maggie Nye
 Isabelle Johannessen
-9 hours ago
+11 hours ago
 34 min
 
 ## extraction_diagnostics
@@ -199,7 +199,7 @@ Isabelle Johannessen
 - readability_score: 77
 - fetch_status: fetched-readable-text-main
 - extraction_quality: high
-- diagnostics: {"readability_score":77,"text_length":2834,"paragraph_count":22,"sentence_count":16,"boilerplate_hits":2,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+- diagnostics: {"readability_score":77,"text_length":2836,"paragraph_count":22,"sentence_count":16,"boilerplate_hits":2,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
 
 ## markdown_snapshot
 
@@ -290,7 +290,7 @@ Isabelle Johannessen
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"Apple Intelligence 获准在华上线，将集成阿里 Qwen 与百度 AI 能力","discovery_summary":"中国网信办已批准 Apple Intelligence 在华上线，苹果将把阿里 Qwen 模型集成至 iOS、iPadOS、macOS 及 visionOS 系统。百度也确认正与苹果合作开发面向中国用户的 Apple Intelligence 功能。此前因未获监管批准，Apple Intelligence 自 2024 年推出后在中国市场一直延迟。","source_name":"TechCrunch：AI（RSS）","origin_url":"https://techcrunch.com/2026/07/16/apple-intelligence-approved-for-launch-in-china-with-alibabas-qwen-ai","discovered_at":"2026-07-17T01:46:58.978Z","rank_on_page":215,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"Apple Intelligence 获准在华上线，将集成阿里 Qwen 与百度 AI 能力","discovery_summary":"中国网信办已批准 Apple Intelligence 在华上线，苹果将把阿里 Qwen 模型集成至 iOS、iPadOS、macOS 及 visionOS 系统。百度也确认正与苹果合作开发面向中国用户的 Apple Intelligence 功能。此前因未获监管批准，Apple Intelligence 自 2024 年推出后在中国市场一直延迟。","source_name":"TechCrunch：AI（RSS）","origin_url":"https://techcrunch.com/2026/07/16/apple-intelligence-approved-for-launch-in-china-with-alibabas-qwen-ai","discovered_at":"2026-07-17T02:56:35.445Z","rank_on_page":228,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

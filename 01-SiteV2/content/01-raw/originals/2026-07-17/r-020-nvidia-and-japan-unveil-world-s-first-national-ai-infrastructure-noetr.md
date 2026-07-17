@@ -23,7 +23,7 @@ search_path: "ai_hardware_original"
 search_path_label: "AI hardware original-source path"
 author: ""
 published_at: "2026-07-16T13:43:58.000Z"
-collected_at: 2026-07-17T01:57:08.545Z
+collected_at: 2026-07-17T03:06:12.273Z
 language: mixed
 full_text_hash: 1c2891720b98f974
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-17/r-020-nvidia-and-japan-unveil-world-s-first-national-ai-infrastructure-noetr.md"
@@ -54,13 +54,13 @@ source_role: resolved_original_source
 origin_fetch_status: ""
 paywall_status: none
 block_status: none
-duplicate_status: unique
+duplicate_status: merged_provider_duplicates
 url_hash: 9cd0ee7e48095855
 content_hash: 1c2891720b98f974
 semantic_hash: 6c0573e2d2342b50
-duplicate_of: ""
+duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
 first_seen_at: "2026-07-16T13:43:58.000Z"
-last_seen_at: 2026-07-17T01:57:08.545Z
+last_seen_at: 2026-07-17T03:06:12.273Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
@@ -75,7 +75,7 @@ missing_information: []
 key_excerpts: [{"type":"case_detail","text":"Nvidia and Japan unveil world's first national AI infrastructure — Noetra consortium to build a 140MW Rubin AI factory with 27,500 GPUs | Tom's Hardware Nvidia and Japan unveil world's first national AI infrastructure — Noetra consortium to build a 140MW Rubin AI factory with 27,500 GPUs | Tom's Ha.... / query=AI server customer deployment enterprise inference / intent=find_customer_case / path=ai_hardware_original","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"product_update","text":"(Image credit: Nvidia) Copy link Facebook Whatsapp Reddit Pinterest Flipboard Email Share this article Join the conversation Follow us Add us as a preferred source on Google Newsletter Subscribe to our newsletter Nvidia today announced that it's working with Japan's Noetra Corp.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"to build a 140-megawatt AI factory packing 27,500 Rubin GPUs and 13,750 Vera CPUs, the compute foundation for FRONTia, the Japanese government's state-funded physical AI program.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The facility will be built from Vera Rubin NVL72 racks on Nvidia's DSX reference platform, connected with Spectrum-X Ethernet, and will train open multimodal foundation models for robotics, digital twins, and industrial automation, with pretrained weights shared broadly with domestic developers.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"\"Japan invented modern manufacturing.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"product_update","text":"Now, it is building the AI factories that will power the next industrial revolution,\" said Jensen Huang, founder and CEO of Nvidia, in the announcement.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"high"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-17T01:57:08.545Z
+fact_extraction_completed_at: 2026-07-17T03:06:12.273Z
 theme: ai-hardware-scenario-service-signal
 keyword_group: ai-hardware-scenario-service-signal
 copyright_note: local research archive only

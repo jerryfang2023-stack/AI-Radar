@@ -23,7 +23,7 @@ search_path: "official_original"
 search_path_label: "官方原始路径"
 author: ""
 published_at: "2026-07-14T11:30:00.000Z"
-collected_at: 2026-07-17T01:57:08.549Z
+collected_at: 2026-07-17T03:06:12.277Z
 language: mixed
 full_text_hash: 64a837c03ce3430b
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-17/r-021-plane-commercial-v3-0-0-is-live-our-biggest-self-hosted-update-yet-pla.md"
@@ -60,7 +60,7 @@ content_hash: 64a837c03ce3430b
 semantic_hash: 859071bb468c01ce
 duplicate_of: ""
 first_seen_at: "2026-07-14T11:30:00.000Z"
-last_seen_at: 2026-07-17T01:57:08.549Z
+last_seen_at: 2026-07-17T03:06:12.277Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -75,7 +75,7 @@ missing_information: []
 key_excerpts: [{"type":"funding","text":"Plane Commercial v3.0.0 is live. Our biggest self-hosted update yet. | Plane Blog # Plane Commercial v3.0.0 is live. Our biggest self-hosted update yet. ###### A native desktop app, workspace-level governance, platform-wide permissions, PQL across the platform, a more capable Plane AI, and new cap..... / query=AI implementation startup funding enterprise workflow / intent=find_startups / path=official_original","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Blog / Product Plane Commercial v3.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"product_update","text":"Our biggest self-hosted update yet.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"A native desktop app, workspace-level governance, platform-wide permissions, PQL across the platform, a more capable Plane AI, and new capabilities for planning and customer collaboration.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Devanshu Arora 14 Jul, 2026 Copy as markdown Share Start a free trial Share Start a free trial Plane Commercial v3.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"0 is here, bringing a stronger foundation for teams that run Plane on their own infrastructure.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-17T01:57:08.549Z
+fact_extraction_completed_at: 2026-07-17T03:06:12.277Z
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only

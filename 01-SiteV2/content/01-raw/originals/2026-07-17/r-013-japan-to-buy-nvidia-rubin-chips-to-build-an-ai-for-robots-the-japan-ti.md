@@ -23,9 +23,9 @@ search_path: "ai_hardware_original"
 search_path_label: "AI hardware original-source path"
 author: ""
 published_at: "2026-07-16T00:00:00.000Z"
-collected_at: 2026-07-17T01:57:08.492Z
+collected_at: 2026-07-17T03:06:12.213Z
 language: mixed
-full_text_hash: efc82a317410bf6c
+full_text_hash: 923789193b9d15dd
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-17/r-013-japan-to-buy-nvidia-rubin-chips-to-build-an-ai-for-robots-the-japan-ti.md"
 json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-17/r-013-japan-to-buy-nvidia-rubin-chips-to-build-an-ai-for-robots-the-japan-ti.json"
 html_snapshot_path: ""
@@ -33,16 +33,16 @@ screenshot_path: ""
 fetch_status: fetched-readable-text-main
 extraction_quality: high
 extraction_method: "main"
-readability_score: 78
-extractor_diagnostics: {"readability_score":78,"text_length":2967,"paragraph_count":33,"sentence_count":14,"boilerplate_hits":2,"symbol_ratio":0.0003,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+readability_score: 79
+extractor_diagnostics: {"readability_score":79,"text_length":3000,"paragraph_count":33,"sentence_count":13,"boilerplate_hits":2,"symbol_ratio":0.0003,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
 has_full_text: true
-content_length: 2967
+content_length: 3000
 fetch_error: ""
 evidence_strength: rich_evidence
 raw_qc_decision: allow
 raw_qc_downstream_use: eligible_after_qc
 degradation_reasons: []
-evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"efc82a317410bf6c","missing":[]}
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"923789193b9d15dd","missing":[]}
 source_volatility: low
 community_name: ""
 capture_scope: article_text
@@ -56,11 +56,11 @@ paywall_status: none
 block_status: none
 duplicate_status: merged_provider_duplicates
 url_hash: 479f11a74aea3e1a
-content_hash: efc82a317410bf6c
+content_hash: 923789193b9d15dd
 semantic_hash: 71a15940be34c662
 duplicate_of: "merged 3 duplicate provider hit(s) before Raw selection"
 first_seen_at: "2026-07-16T00:00:00.000Z"
-last_seen_at: 2026-07-17T01:57:08.492Z
+last_seen_at: 2026-07-17T03:06:12.213Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -69,13 +69,13 @@ change_action_detected: true
 evidence_eligibility: eligible
 evidence_block_reason: ""
 guanlan_scores: {"importance_type":"important_case","importance_score":5,"importance_reason":"enterprise AI implementation case; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","ai_hardware_lens","commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
-business_elements: {"companies":["keyword search","Anysearch","Microsoft","Nvidia"],"products":[],"people":[],"industries":["法律 / 法务","金融 / 保险","医疗","企业服务"],"roles":["法务 / 律师","销售 / 客服"],"workflows":["权限 / 安全治理","部署 / 集成交付"],"business_actions":["部署 / 上线"],"affected_departments":["IT / 安全","法务","销售 / 客服"],"numbers":["16","2026","27","500","¥387.3 billion","$2.4 billion","140 m","2028"],"quotes":[]}
-evidence_seed: {"company_actions":["BUSINESS Japan to buy Nvidia Rubin chips to build an AI for robots Hironobu Tamba, president of Noetra | BLOOMBERG By Min Jeong Lee and Mari Kiyohara BLOOMBERG SHARE/SAVE Facebook LinkedIn Reddit Bluesky Threads Email Print Bookmark story Copy link Jul 16, 2026 Japan is planning to buy 27,500 next-generation Rubin chips from Nvidia to build a homegrown foundational AI model for robots.","Newly established Noetra, which has been allocated ¥387.","Dozens of companies including Sony Group, SoftBank, Toyota-backed Preferred Networks and NEC are helping to set up and operate Noetra."],"case_details":["Japan to buy Nvidia Rubin chips to build an AI for robots - The Japan Times Subscribe Digital Print Home Delivery - JAPAN - - Politics - Society - Crime & Legal - Science & Health - Explainer - History - WORLD - - Politics - Crime & Legal - Science & Health - Society - ASIA PACIFIC - - Politics ... / query=AI server customer deployment enterprise inference / intent=find_customer_case / path=ai_hardware_original"],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["法务 / 律师","销售 / 客服"],"risks_or_constraints":[]}
+business_elements: {"companies":["keyword search","Anysearch","Google","Microsoft","Nvidia"],"products":[],"people":[],"industries":["法律 / 法务","金融 / 保险","医疗","企业服务"],"roles":["法务 / 律师","销售 / 客服"],"workflows":["部署 / 集成交付"],"business_actions":["部署 / 上线"],"affected_departments":["IT / 安全","法务","销售 / 客服"],"numbers":["16","2026","27","500","¥387.3 billion","$2.4 billion","140 m","2028"],"quotes":[]}
+evidence_seed: {"company_actions":["BUSINESS Japan to buy Nvidia Rubin chips to build an AI for robots Hironobu Tamba, president of Noetra | BLOOMBERG By Min Jeong Lee and Mari Kiyohara BLOOMBERG SHARE/SAVE Facebook LinkedIn Reddit Bluesky Threads Email Print Bookmark story Copy link Jul 16, 2026 Japan is planning to buy 27,500 next-generation Rubin chips from Nvidia to build a homegrown foundational AI model for robots.","Newly established Noetra, which has been allocated ¥387.","Dozens of companies including Sony Group, SoftBank, Toyota-backed Preferred Networks and NEC are helping to set up and operate Noetra."],"case_details":["Japan to buy Nvidia Rubin chips to build an AI for robots - The Japan Times Subscribe Digital Print Home Delivery - JAPAN - - Politics - Society - Crime & Legal - Science & Health - Explainer - History - WORLD - - Politics - Crime & Legal - Science & Health - Society - ASIA PACIFIC - - Politics ... / query=AI server customer deployment enterprise inference / intent=find_customer_case / path=ai_hardware_original"],"workflow_changes":[],"before_after_clues":["可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["法务 / 律师","销售 / 客服"],"risks_or_constraints":[]}
 missing_information: []
 key_excerpts: [{"type":"case_detail","text":"Japan to buy Nvidia Rubin chips to build an AI for robots - The Japan Times Subscribe Digital Print Home Delivery - JAPAN - - Politics - Society - Crime & Legal - Science & Health - Explainer - History - WORLD - - Politics - Crime & Legal - Science & Health - Society - ASIA PACIFIC - - Politics ... / query=AI server customer deployment enterprise inference / intent=find_customer_case / path=ai_hardware_original","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"BUSINESS Japan to buy Nvidia Rubin chips to build an AI for robots Hironobu Tamba, president of Noetra | BLOOMBERG By Min Jeong Lee and Mari Kiyohara BLOOMBERG SHARE/SAVE Facebook LinkedIn Reddit Bluesky Threads Email Print Bookmark story Copy link Jul 16, 2026 Japan is planning to buy 27,500 next-generation Rubin chips from Nvidia to build a homegrown foundational AI model for robots.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Newly established Noetra, which has been allocated ¥387.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"number","text":"4 billion) from government coffers through March of next year, said it will oversee the endeavor and build a roughly 140 megawatt data center.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Dozens of companies including Sony Group, SoftBank, Toyota-backed Preferred Networks and NEC are helping to set up and operate Noetra.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Noetra’s data center is slated to go online in June 2028.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-17T01:57:08.492Z
+fact_extraction_completed_at: 2026-07-17T03:06:12.213Z
 theme: ai-hardware-scenario-service-signal
 keyword_group: ai-hardware-scenario-service-signal
 copyright_note: local research archive only
@@ -133,7 +133,7 @@ Longform
 Why Japan’s utility poles won’t be disappearing anytime soon
 By Alex K.T. Martin
 SUSTAINABLE JAPAN
-Destination Restaurants 2026 award ceremony report
+New Logistics Consortium baton to accelerate trucking efficiency
 SPECIAL SUPPLEMENTS
 Sponsored contents planned and edited by JT Media Enterprise Division.
 広告出稿に関するおといあわせはこちらまで
@@ -144,16 +144,16 @@ Global Insight
 GMI Post
 World Eye Reports
 Latest News
-Seven & I said to be in talks to take stake in Poland’s Zabka
-19 mins ago
-Iran tells Houthis to close Red Sea gateway if U.S. hits power network, sources say
-21 mins ago
-China’s AI ascendance gives Xi a stage and a security dilemma
-42 mins ago
-Honda to halt sales of last EV in its U.S. lineup
-47 mins ago
-Top currency forecaster says yen may reach ¥170 against dollar
-59 mins ago
+Chipmaker Kioxia’s market value halves from peak on AI selloff
+35 mins ago
+Google Search AI poses ‘unacceptable risk’ to kids, report finds
+44 mins ago
+China’s giant EVs are damaging roads without paying for repairs
+53 mins ago
+SMBC bolsters global sales and trading push with macro hire
+1 hour ago
+Trump accuses China of 2020 voting interference, contradicting U.S. intelligence findings
+1 hour ago
 
 ## full_text
 
@@ -205,7 +205,7 @@ Longform
 Why Japan’s utility poles won’t be disappearing anytime soon
 By Alex K.T. Martin
 SUSTAINABLE JAPAN
-Destination Restaurants 2026 award ceremony report
+New Logistics Consortium baton to accelerate trucking efficiency
 SPECIAL SUPPLEMENTS
 Sponsored contents planned and edited by JT Media Enterprise Division.
 広告出稿に関するおといあわせはこちらまで
@@ -216,24 +216,24 @@ Global Insight
 GMI Post
 World Eye Reports
 Latest News
-Seven & I said to be in talks to take stake in Poland’s Zabka
-19 mins ago
-Iran tells Houthis to close Red Sea gateway if U.S. hits power network, sources say
-21 mins ago
-China’s AI ascendance gives Xi a stage and a security dilemma
-42 mins ago
-Honda to halt sales of last EV in its U.S. lineup
-47 mins ago
-Top currency forecaster says yen may reach ¥170 against dollar
-59 mins ago
+Chipmaker Kioxia’s market value halves from peak on AI selloff
+35 mins ago
+Google Search AI poses ‘unacceptable risk’ to kids, report finds
+44 mins ago
+China’s giant EVs are damaging roads without paying for repairs
+53 mins ago
+SMBC bolsters global sales and trading push with macro hire
+1 hour ago
+Trump accuses China of 2020 voting interference, contradicting U.S. intelligence findings
+1 hour ago
 
 ## extraction_diagnostics
 
 - extraction_method: main
-- readability_score: 78
+- readability_score: 79
 - fetch_status: fetched-readable-text-main
 - extraction_quality: high
-- diagnostics: {"readability_score":78,"text_length":2967,"paragraph_count":33,"sentence_count":14,"boilerplate_hits":2,"symbol_ratio":0.0003,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+- diagnostics: {"readability_score":79,"text_length":3000,"paragraph_count":33,"sentence_count":13,"boilerplate_hits":2,"symbol_ratio":0.0003,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
 
 ## markdown_snapshot
 
@@ -261,12 +261,12 @@ Top currency forecaster says yen may reach ¥170 against dollar
 
 ## business_elements
 
-- companies: keyword search, Anysearch, Microsoft, Nvidia
+- companies: keyword search, Anysearch, Google, Microsoft, Nvidia
 - products: 暂无公开信息
 - people: 暂无公开信息
 - industries: 法律 / 法务, 金融 / 保险, 医疗, 企业服务
 - roles: 法务 / 律师, 销售 / 客服
-- workflows: 权限 / 安全治理, 部署 / 集成交付
+- workflows: 部署 / 集成交付
 - business_actions: 部署 / 上线
 - affected_departments: IT / 安全, 法务, 销售 / 客服
 - numbers: 16, 2026, 27, 500, ¥387.3 billion, $2.4 billion, 140 m, 2028
@@ -277,7 +277,7 @@ Top currency forecaster says yen may reach ¥170 against dollar
 - company_actions: BUSINESS Japan to buy Nvidia Rubin chips to build an AI for robots Hironobu Tamba, president of Noetra | BLOOMBERG By Min Jeong Lee and Mari Kiyohara BLOOMBERG SHARE/SAVE Facebook LinkedIn Reddit Bluesky Threads Email Print Bookmark story Copy link Jul 16, 2026 Japan is planning to buy 27,500 next-generation Rubin chips from Nvidia to build a homegrown foundational AI model for robots. / Newly established Noetra, which has been allocated ¥387. / Dozens of companies including Sony Group, SoftBank, Toyota-backed Preferred Networks and NEC are helping to set up and operate Noetra.
 - case_details: Japan to buy Nvidia Rubin chips to build an AI for robots - The Japan Times Subscribe Digital Print Home Delivery - JAPAN - - Politics - Society - Crime & Legal - Science & Health - Explainer - History - WORLD - - Politics - Crime & Legal - Science & Health - Society - ASIA PACIFIC - - Politics ... / query=AI server customer deployment enterprise inference / intent=find_customer_case / path=ai_hardware_original
 - workflow_changes: 暂无公开信息
-- before_after_clues: 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- before_after_clues: 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
 - affected_roles: 法务 / 律师, 销售 / 客服
 - risks_or_constraints: 暂无公开信息
 

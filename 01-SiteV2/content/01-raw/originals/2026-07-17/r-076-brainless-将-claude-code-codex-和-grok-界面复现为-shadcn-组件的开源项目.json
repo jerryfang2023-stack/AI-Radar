@@ -1,0 +1,285 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-076",
+  "title": "Brainless：将 Claude Code、Codex 和 Grok 界面复现为 shadcn 组件的开源项目",
+  "title_zh": "",
+  "title_translation_status": "needs_ingestion_translation",
+  "title_translation_method": "title_translation_generator_failed",
+  "original_url": "https://brainless.swerdlow.dev/",
+  "canonical_url": "https://brainless.swerdlow.dev",
+  "source_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+  "source_type": "web",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "changelog_or_release",
+  "evidence_object_usable": false,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": false,
+  "enterprise_ai_transformation_stage": "",
+  "enterprise_ai_transformation_reason": "",
+  "author": "",
+  "published_at": "2026-07-16T03:04:30.184Z",
+  "collected_at": "2026-07-17T03:06:12.553Z",
+  "language": "mixed",
+  "full_text": "brainless\nClaude Code, Codex, and Grok interfaces as shadcn components.\nCopy agent prompt\n◆ @benswerd · freestyle\nClaude Code v2.1.206 Welcome back Ben !\nFable 7 with xhigh effort · Claude Max\nben@freestyle.sh's Organization\n~/acme-site\nTips for getting started\nAsk Claude to create a new app or clone a repo\nWhat's new\nAdded directory path suggestions to /cd\nAdded a /doctor check that proposes trims\n/release-notes for more\n❯ add the brainless pricing block to our landing page\n⏺ Bash ( bunx shadcn add brainless/pricing ) ⏺ ⎿ Added 1 block · 2 files ⏺ Update ( app/page.tsx )\n⏺ ⎿ Updated app/page.tsx with 3 additions\n41 <Features />\n42 + added: <Pricing tiers={TIERS} />\n43 <Footer />\n· Thinking … ( 0 s · ↑ 0 tokens · esc to interrupt)\n◉ xhigh · /effort\n⏵⏵ auto mode on (shift+tab to cycle) · ← for agents\n>_ OpenAI Codex ( v0.132.0 )\nmodel: gpt-6.9 low /model to change directory: ~/acme-site\n› add the brainless pricing section to the docs site\n• Read app/(marketing)/page.tsx • Edited components/pricing.tsx (+22 −0) • Running pnpm build ( 0 s • esc to interrupt)\ngpt-6.9 low · ~/acme-site\n main ~/acme-site\n16K / 500K │ 2 / 3 ✓ steps complete\nGrok Build Beta 0.2.93\nGrok 4.21 is here!\nGrok 4.21 is now available. Try it out in the /model picker.\nNew worktree ctrl+w\nResume session ctrl+s\nChangelog\nQuit ctrl+q\nTip: Use Shift+Tab to cycle between modes, like Plan mode.\n❯ put the brainless pricing block on the marketing page 4:38 PM\n◆ user_prompt_submit [hooks: 3 / 1 ]\n◆ Thought for 0.4s\nI'll open the marketing page, drop in the pricing block, then verify the build. 4:38 PM\nread app/(marketing)/page.tsx\n◆ Run Write components/pricing.tsx [hooks: 3 ]\n41 before: <Features />\n41 after: <Pricing tiers={TIERS} />\n◆ stop [hooks: 3 / 1 ]\nTurn completed in 9.2s .\nGrok 4.21 (xhigh) · always-approve",
+  "clean_text": "brainless\nClaude Code, Codex, and Grok interfaces as shadcn components.\nCopy agent prompt\n◆ @benswerd · freestyle\nClaude Code v2.1.206 Welcome back Ben !\nFable 7 with xhigh effort · Claude Max\nben@freestyle.sh's Organization\n~/acme-site\nTips for getting started\nAsk Claude to create a new app or clone a repo\nWhat's new\nAdded directory path suggestions to /cd\nAdded a /doctor check that proposes trims\n/release-notes for more\n❯ add the brainless pricing block to our landing page\n⏺ Bash ( bunx shadcn add brainless/pricing ) ⏺ ⎿ Added 1 block · 2 files ⏺ Update ( app/page.tsx )\n⏺ ⎿ Updated app/page.tsx with 3 additions\n41 <Features />\n42 + added: <Pricing tiers={TIERS} />\n43 <Footer />\n· Thinking … ( 0 s · ↑ 0 tokens · esc to interrupt)\n◉ xhigh · /effort\n⏵⏵ auto mode on (shift+tab to cycle) · ← for agents\n>_ OpenAI Codex ( v0.132.0 )\nmodel: gpt-6.9 low /model to change directory: ~/acme-site\n› add the brainless pricing section to the docs site\n• Read app/(marketing)/page.tsx • Edited components/pricing.tsx (+22 −0) • Running pnpm build ( 0 s • esc to interrupt)\ngpt-6.9 low · ~/acme-site\n main ~/acme-site\n16K / 500K │ 2 / 3 ✓ steps complete\nGrok Build Beta 0.2.93\nGrok 4.21 is here!\nGrok 4.21 is now available. Try it out in the /model picker.\nNew worktree ctrl+w\nResume session ctrl+s\nChangelog\nQuit ctrl+q\nTip: Use Shift+Tab to cycle between modes, like Plan mode.\n❯ put the brainless pricing block on the marketing page 4:38 PM\n◆ user_prompt_submit [hooks: 3 / 1 ]\n◆ Thought for 0.4s\nI'll open the marketing page, drop in the pricing block, then verify the build. 4:38 PM\nread app/(marketing)/page.tsx\n◆ Run Write components/pricing.tsx [hooks: 3 ]\n41 before: <Features />\n41 after: <Pricing tiers={TIERS} />\n◆ stop [hooks: 3 / 1 ]\nTurn completed in 9.2s .\nGrok 4.21 (xhigh) · always-approve",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-17/r-076-brainless-将-claude-code-codex-和-grok-界面复现为-shadcn-组件的开源项目.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-17/r-076-brainless-将-claude-code-codex-和-grok-界面复现为-shadcn-组件的开源项目.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "medium",
+  "extraction_method": "main",
+  "readability_score": 67,
+  "extractor_diagnostics": {
+    "readability_score": 67,
+    "text_length": 1806,
+    "paragraph_count": 36,
+    "sentence_count": 8,
+    "boilerplate_hits": 1,
+    "symbol_ratio": 0.0166,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 1806,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "6d37eb49c9ce570f",
+    "missing": []
+  },
+  "evidence_strength": "blocked",
+  "raw_qc_decision": "allow_with_degradation",
+  "raw_qc_downstream_use": "index_watchlist_or_feedback_only",
+  "degradation_reasons": [
+    "index_only_or_directory_page"
+  ],
+  "source_volatility": "high",
+  "community_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "user_feedback_signal",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "Brainless：将 Claude Code、Codex 和 Grok 界面复现为 shadcn 组件的开源项目",
+    "discovery_summary": "Brainless 是一个开源项目，将 Claude Code、Codex 和 Grok 的交互界面封装为 shadcn 组件，供开发者直接复用。该项目旨在降低构建 AI 对话式 UI 的门槛，让开发者无需从零设计即可快速集成类似主流 AI 产品的终端风格界面。",
+    "source_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+    "origin_url": "https://brainless.swerdlow.dev/",
+    "discovered_at": "2026-07-17T02:56:35.478Z",
+    "rank_on_page": 367,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "98a6a85447be2f33",
+  "content_hash": "6d37eb49c9ce570f",
+  "full_text_hash": "6d37eb49c9ce570f",
+  "semantic_hash": "32ce87cd25736efb",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-16T03:04:30.184Z",
+  "last_seen_at": "2026-07-17T03:06:12.553Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "product_update",
+      "text": "Brainless 是一个开源项目，将 Claude Code、Codex 和 Grok 的交互界面封装为 shadcn 组件，供开发者直接复用。该项目旨在降低构建 AI 对话式 UI 的门槛，让开发者无需从零设计即可快速集成类似主流 AI 产品的终端风格界面。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "brainless Claude Code, Codex, and Grok interfaces as shadcn components.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "Copy agent prompt ◆ @benswerd · freestyle Claude Code v2.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "206 Welcome back Ben !",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "Fable 7 with xhigh effort · Claude Max ben@freestyle.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "product_update",
+      "text": "sh's Organization ~/acme-site Tips for getting started Ask Claude to create a new app or clone a repo What's new Added directory path suggestions to /cd Added a /doctor check that proposes trims /release-notes for more ❯ add the brainless pricing block to our landing page ⏺ Bash ( bunx shadcn add brainless/pricing ) ⏺ ⎿ Added 1 block · 2 files ⏺ Update ( app/page.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-17T03:06:12.553Z",
+  "business_elements": {
+    "companies": [
+      "Hacker News 热门（buzzing.cc 中文翻译）",
+      "OpenAI"
+    ],
+    "products": [
+      "Claude",
+      "Codex",
+      "agent",
+      "agents"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "计费 / 预算管理",
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "定价 / 计费变化"
+    ],
+    "affected_departments": [
+      "IT / 安全"
+    ],
+    "numbers": [
+      "2.1",
+      "206",
+      "7",
+      "1 b",
+      "2",
+      "3",
+      "41",
+      "42"
+    ],
+    "quotes": []
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Brainless 是一个开源项目，将 Claude Code、Codex 和 Grok 的交互界面封装为 shadcn 组件，供开发者直接复用。该项目旨在降低构建 AI 对话式 UI 的门槛，让开发者无需从零设计即可快速集成类似主流 AI 产品的终端风格界面。",
+      "brainless Claude Code, Codex, and Grok interfaces as shadcn components.",
+      "Copy agent prompt ◆ @benswerd · freestyle Claude Code v2."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_product_or_service",
+    "importance_score": 5,
+    "importance_reason": "new product or service; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 4
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": false,
+    "business_change": false,
+    "relationship_graph_input": false,
+    "trend_candidate_context": false,
+    "signal_card_candidate": false,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": false
+  },
+  "pool_routes": [
+    "index_only"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "blocked",
+  "evidence_block_reason": "homepage_or_directory_observation",
+  "missing_information": [
+    "证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象",
+    "疑似官网首页、产品目录或导航页，只能索引留存",
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "indexed",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Brainless：将 Claude Code、Codex 和 Grok 界面复现为 shadcn 组件的开源项目\n\n- raw_id: R-076\n- title_zh: needs_ingestion_translation\n- title_translation_status: needs_ingestion_translation\n- title_translation_method: title_translation_generator_failed\n- original_url: https://brainless.swerdlow.dev/\n- source_name: Hacker News 热门（buzzing.cc 中文翻译）\n- collected_at: 2026-07-17T03:06:12.553Z\n\n## clean_text\n\nbrainless\nClaude Code, Codex, and Grok interfaces as shadcn components.\nCopy agent prompt\n◆ @benswerd · freestyle\nClaude Code v2.1.206 Welcome back Ben !\nFable 7 with xhigh effort · Claude Max\nben@freestyle.sh's Organization\n~/acme-site\nTips for getting started\nAsk Claude to create a new app or clone a repo\nWhat's new\nAdded directory path suggestions to /cd\nAdded a /doctor check that proposes trims\n/release-notes for more\n❯ add the brainless pricing block to our landing page\n⏺ Bash ( bunx shadcn add brainless/pricing ) ⏺ ⎿ Added 1 block · 2 files ⏺ Update ( app/page.tsx )\n⏺ ⎿ Updated app/page.tsx with 3 additions\n41 <Features />\n42 + added: <Pricing tiers={TIERS} />\n43 <Footer />\n· Thinking … ( 0 s · ↑ 0 tokens · esc to interrupt)\n◉ xhigh · /effort\n⏵⏵ auto mode on (shift+tab to cycle) · ← for agents\n>_ OpenAI Codex ( v0.132.0 )\nmodel: gpt-6.9 low /model to change directory: ~/acme-site\n› add the brainless pricing section to the docs site\n• Read app/(marketing)/page.tsx • Edited components/pricing.tsx (+22 −0) • Running pnpm build ( 0 s • esc to interrupt)\ngpt-6.9 low · ~/acme-site\n main ~/acme-site\n16K / 500K │ 2 / 3 ✓ steps complete\nGrok Build Beta 0.2.93\nGrok 4.21 is here!\nGrok 4.21 is now available. Try it out in the /model picker.\nNew worktree ctrl+w\nResume session ctrl+s\nChangelog\nQuit ctrl+q\nTip: Use Shift+Tab to cycle between modes, like Plan mode.\n❯ put the brainless pricing block on the marketing page 4:38 PM\n◆ user_prompt_submit [hooks: 3 / 1 ]\n◆ Thought for 0.4s\nI'll open the marketing page, drop in the pricing block, then verify the build. 4:38 PM\nread app/(marketing)/page.tsx\n◆ Run Write components/pricing.tsx [hooks: 3 ]\n41 before: <Features />\n41 after: <Pricing tiers={TIERS} />\n◆ stop [hooks: 3 / 1 ]\nTurn completed in 9.2s .\nGrok 4.21 (xhigh) · always-approve\n\n## full_text\n\nbrainless\nClaude Code, Codex, and Grok interfaces as shadcn components.\nCopy agent prompt\n◆ @benswerd · freestyle\nClaude Code v2.1.206 Welcome back Ben !\nFable 7 with xhigh effort · Claude Max\nben@freestyle.sh's Organization\n~/acme-site\nTips for getting started\nAsk Claude to create a new app or clone a repo\nWhat's new\nAdded directory path suggestions to /cd\nAdded a /doctor check that proposes trims\n/release-notes for more\n❯ add the brainless pricing block to our landing page\n⏺ Bash ( bunx shadcn add brainless/pricing ) ⏺ ⎿ Added 1 block · 2 files ⏺ Update ( app/page.tsx )\n⏺ ⎿ Updated app/page.tsx with 3 additions\n41 <Features />\n42 + added: <Pricing tiers={TIERS} />\n43 <Footer />\n· Thinking … ( 0 s · ↑ 0 tokens · esc to interrupt)\n◉ xhigh · /effort\n⏵⏵ auto mode on (shift+tab to cycle) · ← for agents\n>_ OpenAI Codex ( v0.132.0 )\nmodel: gpt-6.9 low /model to change directory: ~/acme-site\n› add the brainless pricing section to the docs site\n• Read app/(marketing)/page.tsx • Edited components/pricing.tsx (+22 −0) • Running pnpm build ( 0 s • esc to interrupt)\ngpt-6.9 low · ~/acme-site\n main ~/acme-site\n16K / 500K │ 2 / 3 ✓ steps complete\nGrok Build Beta 0.2.93\nGrok 4.21 is here!\nGrok 4.21 is now available. Try it out in the /model picker.\nNew worktree ctrl+w\nResume session ctrl+s\nChangelog\nQuit ctrl+q\nTip: Use Shift+Tab to cycle between modes, like Plan mode.\n❯ put the brainless pricing block on the marketing page 4:38 PM\n◆ user_prompt_submit [hooks: 3 / 1 ]\n◆ Thought for 0.4s\nI'll open the marketing page, drop in the pricing block, then verify the build. 4:38 PM\nread app/(marketing)/page.tsx\n◆ Run Write components/pricing.tsx [hooks: 3 ]\n41 before: <Features />\n41 after: <Pricing tiers={TIERS} />\n◆ stop [hooks: 3 / 1 ]\nTurn completed in 9.2s .\nGrok 4.21 (xhigh) · always-approve\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 67\n- fetch_status: fetched-readable-text-main\n- extraction_quality: medium\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [product_update / signal_card_candidate, relationship_graph_input, business_change / high] Brainless 是一个开源项目，将 Claude Code、Codex 和 Grok 的交互界面封装为 shadcn 组件，供开发者直接复用。该项目旨在降低构建 AI 对话式 UI 的门槛，让开发者无需从零设计即可快速集成类似主流 AI 产品的终端风格界面。\n2. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] brainless Claude Code, Codex, and Grok interfaces as shadcn components.\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] Copy agent prompt ◆ @benswerd · freestyle Claude Code v2.\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] 206 Welcome back Ben !\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] Fable 7 with xhigh effort · Claude Max ben@freestyle.\n6. [product_update / signal_card_candidate, relationship_graph_input, business_change / high] sh's Organization ~/acme-site Tips for getting started Ask Claude to create a new app or clone a repo What's new Added directory path suggestions to /cd Added a /doctor check that proposes trims /release-notes for more ❯ add the brainless pricing block to our landing page ⏺ Bash ( bunx shadcn add brainless/pricing ) ⏺ ⎿ Added 1 block · 2 files ⏺ Update ( app/page.\n"
+}
