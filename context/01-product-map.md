@@ -1,7 +1,7 @@
 ---
 status: current
 scope: product-map
-last_updated: 2026-07-16
+last_updated: 2026-07-17
 use_when:
   - product planning
   - page or navigation decisions
@@ -19,7 +19,7 @@ priority: current
 | Event Database | Normalized factual events with status, evidence, conflicts and revisions | Active data layer |
 | FDE Database | Source-bounded enterprise implementation projections | Active domain projection |
 | AI Hardware Database | Source-bounded hardware product, capacity, supply and deployment projections | Active domain projection |
-| Business Signals | V3 Cards plus separate hardware/FDE lenses | Frozen compatibility frontstage |
+| Business Signals | V3 Raw / Pool / Card / graph / trend-candidate chain | Internal compatibility data only; no public page |
 | First-Line Viewpoints | Builders public viewpoints, translated and organized independently | Active frontstage |
 | Relationship data | Source-backed event/claim/entity links only | Active factual data layer |
 | Trend / opportunity outputs | Downstream interpretation, excluded from V4 core | Legacy page compatibility |
@@ -28,12 +28,15 @@ priority: current
 ## Current Navigation
 
 ```text
-Business Signals
-First-Line Viewpoints
-Dashboard
+Data Center
+|- Commercial Events
+|- First-Line Viewpoints
+|- Community Intelligence
+`- Entity Index
+Industry Reports
 ```
 
-The V4 Data Center and Industry Reports sidebar plan is approved in `context/frontstage-page-contracts.md`. Remaining compatibility-page information architecture stays frozen until separately approved.
+The V4 Data Center and Industry Reports sidebar in `context/frontstage-page-contracts.md` is the only current public navigation contract. Dashboard remains an operations backend and is not part of public navigation.
 
 ## Asset Flow
 
@@ -74,9 +77,9 @@ Business-signal Cards only use three types:
 
 These types remain for frozen pages only. V4 uses the CanonicalEvent enum in `data-center-v4.schema.json`.
 
-## Frontstage Release Conditions
+## Compatibility Card Generation Conditions
 
-A Card can enter the frontstage only when it has:
+A Card can enter internal compatibility outputs only when it has:
 
 - original source URL;
 - readable full text or enough source excerpt;
