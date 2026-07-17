@@ -55,6 +55,7 @@ Do not scan all Markdown at task start. Read only this file, the required `conte
 - Current canonical event contract: EVENT-V1.0.
 - Current entity history contract: ENTITY-V1.0.
 - Current factual relationship contract: RELATION-V2.0.
+- Current targeted historical collection contract: BACKFILL-V1.0.
 - Current tag taxonomy version: TAG-V4.0.
 - Current data-center rule source: `context/12-data-center-v4.md`.
 - `context/07-v3-intelligence-generation-rules.md` governs frozen V3 page compatibility only.
@@ -135,6 +136,7 @@ Rules:
 - Missing and conflicting fields remain explicit.
 - Importance, value, opportunity, trend maturity, recommendation, advice, `why_watch`, and `business_meaning` are forbidden in V4 canonical outputs.
 - The V4 sidebar and Data Center / Industry Reports page plan are the only current public page contract.
+- Targeted company, product, funding, and deployment backfill is an operational discovery queue. Search results remain leads until original-source capture, exact-span Claim extraction, and the responsible V4 gate pass.
 
 ### Raw / Pool / Card Generation
 

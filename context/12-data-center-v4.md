@@ -35,6 +35,7 @@ Raw snapshots and exact Claim spans are the evidence layer. CanonicalEvent is th
 - Event: `EVENT-V1.0`
 - Entity history: `ENTITY-V1.0`
 - Factual relationships: `RELATION-V2.0`
+- Targeted historical collection: `BACKFILL-V1.0`
 - FDE: `FDE-V2.0`
 - Hardware: `HARDWARE-V1.0`
 - Tags and facets: `TAG-V4.0`
@@ -42,6 +43,8 @@ Raw snapshots and exact Claim spans are the evidence layer. CanonicalEvent is th
 - JSON Schema: `agent-workflow/product/data-center-v4.schema.json`
 - Entity history contract: `agent-workflow/product/entity-history-v1-contract.md`
 - Entity history schema: `agent-workflow/product/entity-history-v1.schema.json`
+- Targeted backfill contract: `agent-workflow/product/targeted-backfill-v1-contract.md`
+- Targeted backfill schema: `agent-workflow/product/targeted-backfill-v1.schema.json`
 - Tag taxonomy: `agent-workflow/product/tag-taxonomy-v4.json`
 
 ## Rules
@@ -82,6 +85,18 @@ npm run assert:entity-history
 The daily GitHub workflow runs these steps after Raw evidence supply passes and before legacy Card/page compatibility work.
 
 For a full historical reprojection of all accepted canonical data, run `npm run backfill:entity-history`. The generated coverage report must disclose boundary and source-batch gaps rather than manufacture records.
+
+## Targeted historical collection
+
+`BACKFILL-V1.0` is the internal cross-day discovery queue for public company and product history sweeps plus explicit funding and deployment fact gaps.
+
+```powershell
+npm run build:targeted-backfill
+npm run assert:targeted-backfill
+npm run manage:targeted-backfill -- --action=next
+```
+
+Search queries, result snippets, candidates, and no-findings runs cannot create facts. A candidate must return through SourceArtifact -> RawDocument -> exact-span Claim and the responsible Event/FDE build and gate. A missing event type in an entity timeline is not proof that an event occurred.
 
 ## Daily serving semantics
 

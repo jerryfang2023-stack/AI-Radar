@@ -1,0 +1,116 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wavesight.local/schemas/targeted-backfill-v1.schema.json",
+  "title": "WaveSight Targeted Backfill Queue V1",
+  "type": "object",
+  "required": ["manifest", "tasks", "resolvedTasks", "retiredTasks"],
+  "properties": {
+    "manifest": {
+      "type": "object",
+      "required": ["queueVersion", "generatedAt", "sourceProductVersion", "sourceEntityVersion", "coverageWindow", "counts"],
+      "properties": {
+        "queueVersion": { "const": "BACKFILL-V1.0" },
+        "generatedAt": { "type": "string", "minLength": 1 },
+        "sourceProductVersion": { "type": "string", "minLength": 1 },
+        "sourceEntityVersion": { "type": "string", "minLength": 1 },
+        "coverageWindow": { "$ref": "#/$defs/window" },
+        "counts": { "type": "object" }
+      },
+      "additionalProperties": false
+    },
+    "tasks": { "type": "array", "items": { "$ref": "#/$defs/task" } },
+    "resolvedTasks": { "type": "array", "items": { "$ref": "#/$defs/task" } },
+    "retiredTasks": { "type": "array", "items": { "$ref": "#/$defs/task" } }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "window": {
+      "type": "object",
+      "required": ["startDate", "endDate", "months"],
+      "properties": {
+        "startDate": { "type": "string", "format": "date" },
+        "endDate": { "type": "string", "format": "date" },
+        "months": { "type": "integer", "minimum": 1 }
+      },
+      "additionalProperties": false
+    },
+    "target": {
+      "type": "object",
+      "required": ["kind", "id", "name"],
+      "properties": {
+        "kind": { "enum": ["entity", "event"] },
+        "id": { "type": "string", "minLength": 1 },
+        "name": { "type": "string", "minLength": 1 },
+        "eventId": { "type": "string" },
+        "fdeId": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "state": {
+      "type": "object",
+      "required": ["status", "worker", "leaseExpiresAt", "attempts", "candidateSources", "captureRefs", "acceptedRefs", "runRefs", "lastAttemptAt", "nextReviewOn"],
+      "properties": {
+        "status": { "enum": ["open", "in_progress", "candidates_found", "evidence_captured", "accepted_pending_rebuild", "no_findings", "blocked", "resolved", "retired"] },
+        "worker": { "type": "string" },
+        "leaseExpiresAt": { "type": "string" },
+        "attempts": { "type": "array" },
+        "candidateSources": { "type": "array" },
+        "captureRefs": { "type": "array" },
+        "acceptedRefs": { "type": "array", "items": { "type": "string" } },
+        "runRefs": { "type": "array", "items": { "type": "string" } },
+        "lastAttemptAt": { "type": "string" },
+        "nextReviewOn": { "type": "string" },
+        "resolvedAt": { "type": "string" },
+        "retiredAt": { "type": "string" },
+        "retirementReason": { "const": "target_no_longer_canonical" }
+      },
+      "additionalProperties": false
+    },
+    "task": {
+      "type": "object",
+      "required": ["taskId", "taskType", "target", "detection", "coverageWindow", "searchPlan", "completion", "state"],
+      "properties": {
+        "taskId": { "type": "string", "pattern": "^BFQ-[a-f0-9]{16}$" },
+        "taskType": { "enum": ["company_history", "product_history", "funding_detail", "deployment_case"] },
+        "target": { "$ref": "#/$defs/target" },
+        "detection": {
+          "type": "object",
+          "required": ["gapKind", "missingFields", "detectedFromRefs", "detectedAt", "lastObservedAt"],
+          "properties": {
+            "gapKind": { "enum": ["coverage_sweep", "missing_fields"] },
+            "missingFields": { "type": "array", "items": { "type": "string" } },
+            "detectedFromRefs": { "type": "array", "items": { "type": "string" } },
+            "detectedAt": { "type": "string", "minLength": 1 },
+            "lastObservedAt": { "type": "string", "minLength": 1 }
+          },
+          "additionalProperties": false
+        },
+        "coverageWindow": { "$ref": "#/$defs/window" },
+        "searchPlan": {
+          "type": "object",
+          "required": ["paths", "queries", "knownSourceDomains", "preferredSourceClasses", "forbiddenAsFactEvidence"],
+          "properties": {
+            "paths": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+            "queries": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+            "knownSourceDomains": { "type": "array", "items": { "type": "string" } },
+            "preferredSourceClasses": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+            "forbiddenAsFactEvidence": { "type": "array", "minItems": 1, "items": { "type": "string" } }
+          },
+          "additionalProperties": false
+        },
+        "completion": {
+          "type": "object",
+          "required": ["requiredArtifacts", "targetProjection", "rule"],
+          "properties": {
+            "requiredArtifacts": { "type": "array", "minItems": 3, "items": { "type": "string" } },
+            "targetProjection": { "type": "string", "minLength": 1 },
+            "rule": { "type": "string", "minLength": 1 }
+          },
+          "additionalProperties": false
+        },
+        "state": { "$ref": "#/$defs/state" }
+      },
+      "additionalProperties": false
+    }
+  }
+}

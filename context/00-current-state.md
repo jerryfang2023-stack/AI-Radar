@@ -22,7 +22,7 @@ WaveSight AI is now on the `SITE-V4.2.0-entity-history` public website and data-
 - The production core turns external sources into SourceArtifacts, RawDocuments, Claims, Entities, CanonicalEvents, domain projections, and queryable exports.
 - Pool is an operational QA queue. Card, trend, opportunity, and report objects are internal compatibility or downstream application assets, not V4 truth assets.
 - Current column versions: First-Line Viewpoints `FLV-V1.0.2-supervision-idempotency`, Community Intelligence `CINT-V1.0.2-publication-waiting-gate`, Industry Reports `IMAP-V2.1.0-v4-unified-frontstage`.
-- Current data versions: `RAW-V3.0`, `EVENT-V1.0`, `ENTITY-V1.0`, `RELATION-V2.0`, `FDE-V2.0`, `HARDWARE-V1.0`, `TAG-V4.0`.
+- Current data versions: `RAW-V3.0`, `EVENT-V1.0`, `ENTITY-V1.0`, `RELATION-V2.0`, `BACKFILL-V1.0`, `FDE-V2.0`, `HARDWARE-V1.0`, `TAG-V4.0`.
 
 ## Current Entries
 
@@ -77,6 +77,7 @@ Old V2 and V3 public page rules are retired. If they conflict with SITE-V4.2.0, 
 - Companies, products/models/services, and people use stable `EN-*` IDs. Technology, use case, and industry remain TAG-V4 taxonomy nodes with `TX-*` IDs rather than factual entities.
 - RELATION-V2.0 permits only typed endpoints backed by an accepted event, Claim references, and SourceArtifact references. Tag co-occurrence cannot create a relationship.
 - `npm run backfill:entity-history` reprojects all accepted canonical history and records explicit source-coverage gaps; it must never invent missing historical events.
+- `npm run build:targeted-backfill` maintains the cross-day company, product, funding-detail, and deployment-case discovery queue. Its queries and candidates are operational metadata, not facts; only original-source capture and exact-span Claims may repair the canonical gap.
 - Historical bundles without product entities remain unchanged. `npm run backfill:data-center` rebuilds the full canonical bundle and must not be used for a product-only migration; historical product migration requires a dedicated, dry-run-validated projection migrator.
 
 ## Current Automation Goal
