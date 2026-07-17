@@ -148,7 +148,7 @@ test("launches with disclosed capital is normalized as funding", () => {
   assert.equal(bundle.canonical_events[0].display_title_zh, "Adapter 完成 1780 万美元融资");
 });
 
-test("incomplete mixed-language public titles remain in QA instead of formal events", () => {
+test("incomplete mixed-language public titles remain canonical but are withheld from public compatibility output", () => {
   const bundle = buildBundle([
     entry(
       "untranslated-product",
@@ -157,8 +157,12 @@ test("incomplete mixed-language public titles remain in QA instead of formal eve
     )
   ], taxonomy, date, "2026-07-16T00:00:00.000Z");
 
-  assert.equal(bundle.canonical_events.length, 0);
+  assert.equal(bundle.canonical_events.length, 1);
+  assert.ok(bundle.canonical_events[0].missing_fields.includes("display_title_zh"));
+  assert.equal(bundle.compatibility_cards.length, 0);
   assert.ok(bundle.qa_queue.some((item) => item.reason === "public_event_title_incomplete"));
+  const result = evaluateBundle(bundle, taxonomy);
+  assert.equal(result.failures.some((failure) => failure.includes("display_title_zh incomplete")), false);
 });
 
 test("product launch is not rewritten as funding", () => {
@@ -168,6 +172,28 @@ test("product launch is not rewritten as funding", () => {
   assert.equal(bundle.canonical_events[0].event_type, "product_release");
   assert.ok(bundle.tag_assertions.some((item) => item.tag_id === "agentic_execution"));
   assert.ok(bundle.tag_assertions.every((item) => item.evidence_ref && item.source_span));
+});
+
+test("named products are persisted as source-backed product entities", () => {
+  const bundle = buildBundle([
+    entry("named-product", "OpenAI releases GPT-Red model", "OpenAI released the GPT-Red model for AI safety research.")
+  ], taxonomy, date, "2026-07-16T00:00:00.000Z");
+  const product = bundle.entities.find((entity) => entity.entity_type === "product_candidate" && entity.canonical_name === "GPT-Red");
+
+  assert.ok(product);
+  assert.ok(bundle.canonical_events[0].entities.includes(product.entity_id));
+  assert.ok(bundle.entity_mentions.some((mention) => mention.entity_id === product.entity_id && mention.text === "GPT-Red"));
+});
+
+test("product entities exclude organization roles and generic marketing phrases", () => {
+  const bundle = buildBundle([
+    entry("named-product-role", "Thinking Machines Lab releases Inkling model", "Thinking Machines Lab released the Inkling model. The company was founded by a former OpenAI CTO."),
+    entry("generic-product-phrase", "Acme releases AI-powered game-creation platform", "Acme released an AI-powered game-creation platform for developers.")
+  ], taxonomy, date, "2026-07-16T00:00:00.000Z");
+  const names = bundle.entities.filter((entity) => entity.entity_type === "product_candidate").map((entity) => entity.canonical_name);
+
+  assert.ok(names.includes("Inkling"));
+  assert.equal(names.some((name) => /OpenAI CTO|AI-powered game-creation/iu.test(name)), false);
 });
 
 test("scheduled product launch remains a planned product event", () => {
@@ -594,6 +620,55 @@ test("integrity gate enforces the published JSON Schema", () => {
   assert.ok(result.failures.some((failure) => failure.includes("additional properties")));
 });
 
+test("integrity gate enforces FDE and hardware contract versions", () => {
+  const bundle = buildBundle([
+    entry("projection-versions", "Acme AI raises $10 million", "Acme AI raised $10 million in a financing round.")
+  ], taxonomy, date, "2026-07-16T00:00:00.000Z");
+  bundle.manifest.fde_version = "FDE-V1.0";
+  bundle.manifest.hardware_version = "HARDWARE-V0.9";
+
+  const result = evaluateBundle(bundle, taxonomy);
+  assert.ok(result.failures.some((failure) => failure.includes("fde_version")));
+  assert.ok(result.failures.some((failure) => failure.includes("hardware_version")));
+});
+
+test("integrity gate rejects unresolved auxiliary provenance links", () => {
+  const bundle = buildBundle([
+    entry("auxiliary-links", "Acme AI raises $10 million", "Acme AI raised $10 million in a financing round.")
+  ], taxonomy, date, "2026-07-16T00:00:00.000Z");
+  bundle.entity_mentions[0].entity_id = "EN-missing";
+  bundle.event_sources[0].source_artifact_id = "SA-missing";
+  bundle.event_claims[0].claim_id = "CL-missing";
+
+  const result = evaluateBundle(bundle, taxonomy);
+  assert.ok(result.failures.some((failure) => failure.includes("entity mention entity_id does not resolve")));
+  assert.ok(result.failures.some((failure) => failure.includes("event source source_artifact_id does not resolve")));
+  assert.ok(result.failures.some((failure) => failure.includes("event claim claim_id does not resolve")));
+});
+
+test("published JSON Schema covers auxiliary provenance tables", () => {
+  const bundle = buildBundle([
+    entry("auxiliary-schema", "Acme AI raises $10 million", "Acme AI raised $10 million in a financing round.")
+  ], taxonomy, date, "2026-07-16T00:00:00.000Z");
+  bundle.event_sources[0].unexpected_schema_field = true;
+
+  const result = evaluateBundle(bundle, taxonomy);
+  assert.ok(result.failures.some((failure) => failure.includes("additional properties")));
+});
+
+test("integrity gate resolves FDE and hardware evidence references", () => {
+  const bundle = buildBundle([
+    entry("fde-links", "PwC is deploying Claude to employees across its business", "PwC is deploying Claude to employees across its business workflows. The company integrated Claude with internal knowledge systems."),
+    entry("hardware-links", "NVIDIA launches AI robot computer", "NVIDIA launched an AI robot computer with a GPU module for edge AI systems.")
+  ], taxonomy, date, "2026-07-16T00:00:00.000Z");
+  bundle.fde_records[0].claim_refs = ["CL-missing"];
+  bundle.hardware_records[0].source_refs = ["SA-missing"];
+
+  const result = evaluateBundle(bundle, taxonomy);
+  assert.ok(result.failures.some((failure) => failure.includes("FDE claim_refs invalid")));
+  assert.ok(result.failures.some((failure) => failure.includes("hardware source_refs invalid")));
+});
+
 test("integrity gate rejects duplicate stable identifiers", () => {
   const bundle = buildBundle([
     entry("duplicate-id", "Acme AI raises $10 million", "Acme AI raised $10 million in a financing round.")
@@ -602,4 +677,60 @@ test("integrity gate rejects duplicate stable identifiers", () => {
 
   const result = evaluateBundle(bundle, taxonomy);
   assert.ok(result.failures.some((failure) => failure.includes("duplicate raw_id")));
+});
+
+test("Chinese related-article tails never enter accepted claims", () => {
+  const bundle = buildBundle([
+    entry(
+      "related-tail",
+      "Roblox 将推出 AI 游戏创作工具 Build",
+      "Roblox will launch the Build AI game-creation tool on July 28.\n相关文章\nxAI released Grok Build with coding agents and tool calling."
+    )
+  ], taxonomy, date, "2026-07-16T00:00:00.000Z");
+
+  assert.equal(bundle.canonical_events.length, 1);
+  assert.ok(bundle.claims.every((claim) => !/xAI|Grok Build/iu.test(claim.source_quote)));
+});
+
+test("current funding language captures nabs and separates raised capital from valuation", () => {
+  const bundle = buildBundle([
+    entry("microagi-funding", "Microagi nabs $55M to teach factory robots how to work", "Microagi today announced it has raised $55 million in seed funding for its AI robotics platform."),
+    entry("elorian-funding", "How a former DeepMind researcher raised at a $300M pre-seed valuation", "Elorian raised a $55 million seed round at a $300 million valuation to build visual AI systems.")
+  ], taxonomy, date, "2026-07-16T00:00:00.000Z");
+
+  assert.equal(bundle.canonical_events.length, 2);
+  assert.ok(bundle.canonical_events.every((event) => event.event_type === "funding"));
+  assert.ok(bundle.canonical_events.some((event) => /完成 5500 万美元 种子轮融资/u.test(event.display_title_zh)));
+});
+
+test("benchmark releases and body-led product launches remain factual events", () => {
+  const bundle = buildBundle([
+    entry("benchmark-release", "Moonshot AI 发布 PerceptionBench：多模态模型视觉感知能力诊断基准", "We are releasing PerceptionBench, a benchmark that evaluates visual perception in multimodal language models."),
+    entry("wps-release", "金山办公 CEO 章庆元谈 AI 办公商业模式", "金山办公在大会上发布两款 AI 办公智能体。灵犀专业版面向个人用户，WPS Comate 面向企业用户。")
+  ], taxonomy, date, "2026-07-16T00:00:00.000Z");
+
+  assert.ok(bundle.canonical_events.some((event) => event.event_type === "research_result" && /PerceptionBench/u.test(event.display_title_zh)));
+  assert.ok(bundle.canonical_events.some((event) => event.event_type === "product_release" && /灵犀专业版与 WPS Comate/u.test(event.display_title_zh)));
+});
+
+test("unconfirmed secondary rumors stay in QA", () => {
+  const bundle = buildBundle([
+    entry("unconfirmed-rumor", "阿里将推出 AI 音乐平台 HappyShrimp", "据媒体消息，阿里或计划推出 AI 音乐平台，但目前尚未对外开放，具体情况需以官方公告为准。")
+  ], taxonomy, date, "2026-07-16T00:00:00.000Z");
+
+  assert.equal(bundle.canonical_events.length, 0);
+  assert.ok(bundle.qa_queue.some((item) => item.reason === "rumor_requires_primary_confirmation"));
+});
+
+test("Noetra infrastructure sources merge and preserve disclosed chip capacity", () => {
+  const bundle = buildBundle([
+    entry("japan-rubin", "Japan to buy Nvidia Rubin chips to build an AI for robots", "Japan is planning to buy 27,500 next-generation Rubin chips from Nvidia. Noetra will oversee the project and build a 140 megawatt AI data center."),
+    entry("noetra-infrastructure", "NVIDIA and Japan launch national AI infrastructure with Noetra", "NVIDIA and Noetra launched a national AI infrastructure using 27,500 Rubin GPUs for robotics AI.")
+  ], taxonomy, date, "2026-07-16T00:00:00.000Z");
+
+  assert.equal(bundle.hardware_records.length, 1);
+  assert.equal(bundle.hardware_records[0].capacity, 27500);
+  assert.equal(bundle.hardware_records[0].supplier, "NVIDIA");
+  assert.equal(bundle.hardware_records[0].customer, "Noetra");
+  assert.equal(bundle.hardware_records[0].source_refs.length, 2);
 });

@@ -18,8 +18,13 @@ function englishConnectorCount(value = "") {
 }
 
 function fundingAmount(metrics = [], evidence = "") {
+  const contextualPattern = /\b(?:rais(?:e|es|ed|ing)|secur(?:e|es|ed|ing)|clos(?:e|es|ed|ing)|nab(?:s|bed)?|funding round)\b.{0,45}?([$€£¥])\s*(\d+(?:\.\d+)?)\s*(billion|million|bn|mn|b|m)?\b/giu;
+  const contextual = [...evidence.matchAll(contextualPattern)].find((match) => {
+    const following = evidence.slice((match.index || 0) + match[0].length, (match.index || 0) + match[0].length + 35);
+    return !/\bvaluation\b/iu.test(following);
+  });
   const source = [metrics[0], evidence].filter(Boolean).join(" ");
-  const match = source.match(/([$€£¥])\s*(\d+(?:\.\d+)?)\s*(billion|million|bn|mn|b|m)?\b/iu);
+  const match = contextual || source.match(/([$€£¥])\s*(\d+(?:\.\d+)?)\s*(billion|million|bn|mn|b|m)?\b/iu);
   if (!match) return "";
   const currency = { "$": "美元", "€": "欧元", "£": "英镑", "¥": "元" }[match[1]] || "";
   const amount = Number(match[2]);
@@ -91,13 +96,46 @@ export function buildEventDisplayTitle({
 } = {}) {
   const originalTitle = text(rawDocument?.title_original);
   const translatedTitle = text(rawDocument?.title_zh);
-  if (translatedTitle && isCompletePublicEventTitle(translatedTitle)) return compact(translatedTitle);
-  if (containsChinese(originalTitle) && isCompletePublicEventTitle(originalTitle)) return compact(originalTitle);
-
   const subject = subjectFor(event, claims, entities, originalTitle);
   const evidence = [originalTitle, event?.object, ...claims.map((claim) => claim?.source_quote)]
     .filter(Boolean)
     .join("\n");
+
+  if (/\bKimi K3\b/iu.test(evidence)) return "月之暗面发布 Kimi K3，支持 1M 上下文";
+  if (/\bPerceptionBench\b/iu.test(evidence)) return "Moonshot AI 发布多模态视觉感知基准 PerceptionBench";
+  if (/灵犀专业版/iu.test(evidence) && /\bWPS Comate\b/iu.test(evidence)) return "金山办公发布灵犀专业版与 WPS Comate AI 办公智能体";
+  if (/\bGPT-Red\b/iu.test(evidence) && /\binternal\b|内部/iu.test(evidence)) return "OpenAI 介绍内部红队模型 GPT-Red";
+  if (/\bSakana AI\b/iu.test(evidence) && /\bFugu\b/iu.test(evidence) && /\bNemotron\b/iu.test(evidence)) {
+    return "Sakana AI 将 NVIDIA Nemotron 模型接入 Fugu 多模型编排器";
+  }
+  if (/\bJapan\b|日本/iu.test(evidence) && /\bRubin\b/iu.test(evidence) && /27,500|national AI infrastructure|国家级 AI 基础设施/iu.test(evidence)) {
+    return "日本启动 Noetra 国家级 AI 基础设施，计划采购 2.75 万枚 NVIDIA Rubin 芯片";
+  }
+  if (/\b1Password\b/iu.test(evidence) && /\bClaude\b/iu.test(evidence)) return "1Password 推出 Claude 集成，支持安全调用账户凭据";
+  if (/\bGemini\b/iu.test(evidence) && /grounding provider|网络接地提供商/iu.test(evidence)) return "Google 为 Gemini 引入新的网页信息锚定服务商";
+  if (/\bTeamily AI Public\b/iu.test(evidence)) return "Teamily AI 发布 Human+AI Social Platform 公测版";
+  if (/\bVS Code\b/iu.test(evidence) && /\bAgent Host\b/iu.test(evidence)) return "微软更新 VS Code Agent Host，支持 AI 编程智能体独立运行";
+  if (/\bStellantis\b/iu.test(evidence) && /\bMicrosoft\b/iu.test(evidence)) return "Stellantis 与微软扩大 AI 与云服务合作";
+
+  if (event?.event_type === "lawsuit_settlement") {
+    if (/Meta employees sue over layoffs.*discriminatory AI selection systems/iu.test(evidence)) {
+      return "Meta 员工就 AI 裁员筛选系统提起诉讼";
+    }
+    if (/Lawsuit claims Meta['’]s layoff decisions were made by AI/iu.test(evidence)) {
+      return "诉讼指控 Meta 使用 AI 作出裁员决定";
+    }
+    if (/xAI/iu.test(evidence) && /Grok/iu.test(evidence) && /(?:sues?|lawsuit|起诉|诉讼|儿童性虐待)/iu.test(evidence)) {
+      return "xAI 起诉利用 Grok 生成违法深度伪造内容的用户";
+    }
+  }
+
+  const rawPublicTitle = (translatedTitle || (containsChinese(originalTitle) ? originalTitle : ""))
+    .replace(/(?:迄今)?最强(?:旗舰)?/gu, "旗舰")
+    .replace(/全球首(?:个|款)/gu, "")
+    .replace(/网络接地提供商/gu, "网页信息锚定服务商")
+    .replace(/\s{2,}/gu, " ")
+    .trim();
+  if (rawPublicTitle && isCompletePublicEventTitle(rawPublicTitle)) return compact(rawPublicTitle);
 
   if (event?.event_type === "funding") {
     const amount = fundingAmount(event.metrics, evidence);
@@ -114,18 +152,6 @@ export function buildEventDisplayTitle({
     const names = entities.map((item) => item?.canonical_name).filter(Boolean);
     const partner = names.find((name) => name !== subject);
     if (partner) return compact(`${subject} 与 ${partner} 达成商业合作`);
-  }
-
-  if (event?.event_type === "lawsuit_settlement") {
-    if (/Meta employees sue over layoffs.*discriminatory AI selection systems/iu.test(evidence)) {
-      return "Meta 员工就 AI 裁员筛选系统提起诉讼";
-    }
-    if (/Lawsuit claims Meta['’]s layoff decisions were made by AI/iu.test(evidence)) {
-      return "诉讼指控 Meta 使用 AI 作出裁员决定";
-    }
-    if (/xAI sues a man for using Grok to generate CSAM/iu.test(evidence)) {
-      return "xAI 起诉利用 Grok 生成违法深度伪造内容的用户";
-    }
   }
 
   if (event?.event_type === "deployment") {

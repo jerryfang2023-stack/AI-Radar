@@ -1,27 +1,68 @@
 [
   {
-    "hardware_record_id": "HW-236c96f75b806613",
-    "event_id": "EV-2f135a05898278c9",
+    "hardware_record_id": "HW-ceb55d9bc637c1d3",
+    "event_id": "EV-cafe435ddd007821",
     "hardware_event_type": "hardware_deployment",
-    "component_type": "data_center",
-    "compute_layer": "",
+    "component_type": "gpu",
+    "compute_layer": "data_center",
     "manufacturing_stage": "",
     "process_node": "",
-    "capacity": null,
-    "capacity_unit": "",
-    "supplier": "",
-    "customer": "",
+    "capacity": 27500,
+    "capacity_unit": "chips",
+    "supplier": "NVIDIA",
+    "customer": "Noetra",
     "deployment_site": "",
-    "region": "日本",
+    "region": "Japan",
     "contract_value": "",
     "shipment_date": "",
     "claim_refs": [
+      "CL-176677c024f3e985",
+      "CL-e292a578e476e3eb",
+      "CL-19945f47f219e22d",
+      "CL-75a18ba8cc46ac68",
+      "CL-ce346da4c89c45c7",
+      "CL-565fa3f4ef542476",
+      "CL-eee12d577a723c68",
+      "CL-ec2cedfe1a8f890f",
+      "CL-1499ebbbf4df4879",
+      "CL-e4d49e5c4c9a5499",
+      "CL-571abee0df5472ad",
+      "CL-8f7a1471a4f26c62",
       "CL-5eaac8da145a72c3",
       "CL-bbc6ad54b856c021",
       "CL-bbd9d103a53babb9"
     ],
     "source_refs": [
+      "SA-c96503681d5ed932",
+      "SA-1868f932b3c37795",
+      "SA-71a47d2d42aee3c3",
       "SA-a879d1565f82a147"
+    ]
+  },
+  {
+    "hardware_record_id": "HW-51034436efb8365e",
+    "event_id": "EV-69784fe31cfdfc44",
+    "hardware_event_type": "hardware_product",
+    "component_type": "ai_device",
+    "compute_layer": "",
+    "manufacturing_stage": "",
+    "process_node": "",
+    "capacity": 865,
+    "capacity_unit": "TFLOPS",
+    "supplier": "NVIDIA",
+    "customer": "",
+    "deployment_site": "",
+    "region": "",
+    "contract_value": "",
+    "shipment_date": "",
+    "claim_refs": [
+      "CL-72385600b60276cb",
+      "CL-ab9d7e2d65e55921",
+      "CL-d9b98f889c596c91",
+      "CL-c95397472a20fb3c"
+    ],
+    "source_refs": [
+      "SA-859d96ce9bf2a588"
     ]
   }
 ]

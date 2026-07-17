@@ -6,7 +6,6 @@ import { fileURLToPath } from "url";
 import Ajv2020 from "ajv/dist/2020.js";
 import addFormats from "ajv-formats";
 import { eventAiRelevanceEvidence, forbiddenKeys } from "./build-data-center-v4.mjs";
-import { isCompletePublicEventTitle } from "./event-public-title.mjs";
 import { validateTaxonomy } from "./assert-tag-taxonomy-v4.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
@@ -88,6 +87,7 @@ export function evaluateBundle(bundle, taxonomy) {
   failures.push(...duplicateIds(bundle.raw_documents, "raw_id", "raw_documents"));
   failures.push(...duplicateIds(bundle.claims, "claim_id", "claims"));
   failures.push(...duplicateIds(bundle.entities, "entity_id", "entities"));
+  failures.push(...duplicateIds(bundle.entity_mentions, "mention_id", "entity_mentions"));
   failures.push(...duplicateIds(bundle.canonical_events, "event_id", "canonical_events"));
   failures.push(...duplicateIds(bundle.compatibility_cards, "card_id", "compatibility_cards"));
   const sourceIds = new Set(bundle.source_artifacts.map((item) => item.source_artifact_id));
@@ -107,6 +107,8 @@ export function evaluateBundle(bundle, taxonomy) {
   if (bundle.manifest.product_version !== "SITE-V4.0-data-center") failures.push("manifest product_version mismatch");
   if (bundle.manifest.raw_version !== "RAW-V3.0") failures.push("manifest raw_version mismatch");
   if (bundle.manifest.event_version !== "EVENT-V1.0") failures.push("manifest event_version mismatch");
+  if (bundle.manifest.fde_version !== "FDE-V2.0") failures.push("manifest fde_version mismatch");
+  if (bundle.manifest.hardware_version !== "HARDWARE-V1.0") failures.push("manifest hardware_version mismatch");
   if (bundle.manifest.tag_version !== "TAG-V4.0") failures.push("manifest tag_version mismatch");
 
   const forbidden = forbiddenKeys(Object.fromEntries(Object.entries(bundle).filter(([name]) => name !== "manifest")));
@@ -135,11 +137,15 @@ export function evaluateBundle(bundle, taxonomy) {
     if (!claim.subject || !claim.predicate || !claim.object) failures.push(`${claim.claim_id}: subject/predicate/object incomplete`);
   }
 
+  for (const mention of bundle.entity_mentions) {
+    if (!entityById.has(mention.entity_id)) failures.push(`${mention.mention_id}: entity mention entity_id does not resolve`);
+    if (!rawById.has(mention.raw_id)) failures.push(`${mention.mention_id}: entity mention raw_id does not resolve`);
+  }
+
   let aiIndustryEventCount = 0;
   for (const event of bundle.canonical_events) {
     if (!event.source_refs.length || event.source_refs.some((id) => !sourceIds.has(id))) failures.push(`${event.event_id}: invalid source_refs`);
     if (!event.claim_refs.length || event.claim_refs.some((id) => !claimById.has(id))) failures.push(`${event.event_id}: invalid claim_refs`);
-    if (!isCompletePublicEventTitle(event.display_title_zh)) failures.push(`${event.event_id}: display_title_zh incomplete`);
     if (["verified", "partial"].includes(event.publication_status) && event.claim_refs.some((id) => claimById.get(id)?.verification_status === "disputed")) {
       failures.push(`${event.event_id}: disputed claim published as ${event.publication_status}`);
     }
@@ -163,6 +169,21 @@ export function evaluateBundle(bundle, taxonomy) {
     if (!card.title || !card.fact) failures.push(`${card.card_id}: compatibility card title/fact missing`);
     if (normalize(card.title) === normalize(card.fact)) failures.push(`${card.card_id}: compatibility card fact duplicates title`);
     if (!card.claim_refs.length || !card.source_refs.length) failures.push(`${card.card_id}: compatibility card evidence refs missing`);
+  }
+
+  for (const link of bundle.event_sources) {
+    if (!eventById.has(link.event_id)) failures.push(`${link.event_id}: event source event_id does not resolve`);
+    if (!sourceIds.has(link.source_artifact_id)) failures.push(`${link.event_id}: event source source_artifact_id does not resolve`);
+  }
+
+  for (const link of bundle.event_claims) {
+    if (!eventById.has(link.event_id)) failures.push(`${link.event_id}: event claim event_id does not resolve`);
+    if (!claimById.has(link.claim_id)) failures.push(`${link.event_id}: event claim claim_id does not resolve`);
+  }
+
+  for (const conflict of bundle.event_conflicts) {
+    if (!eventById.has(conflict.event_id)) failures.push(`${conflict.conflict_id}: event conflict event_id does not resolve`);
+    if (!conflict.source_refs.length || conflict.source_refs.some((id) => !sourceIds.has(id))) failures.push(`${conflict.conflict_id}: event conflict source_refs invalid`);
   }
 
   for (const assertion of bundle.tag_assertions) {
@@ -195,6 +216,8 @@ export function evaluateBundle(bundle, taxonomy) {
     if (!event) failures.push(`${record.fde_id}: event_id does not resolve`);
     else if (!["verified", "partial"].includes(event.publication_status)) failures.push(`${record.fde_id}: disputed/quarantined event projected to FDE`);
     if (!record.claim_refs.length || !record.source_refs.length) failures.push(`${record.fde_id}: evidence refs missing`);
+    if (record.claim_refs.some((id) => !claimById.has(id) || !event?.claim_refs.includes(id))) failures.push(`${record.fde_id}: FDE claim_refs invalid`);
+    if (record.source_refs.some((id) => !sourceIds.has(id) || !event?.source_refs.includes(id))) failures.push(`${record.fde_id}: FDE source_refs invalid`);
   }
 
   for (const record of bundle.hardware_records) {
@@ -203,6 +226,8 @@ export function evaluateBundle(bundle, taxonomy) {
     else if (!["verified", "partial"].includes(event.publication_status)) failures.push(`${record.hardware_record_id}: disputed/quarantined event projected to hardware`);
     if (!record.component_type) failures.push(`${record.hardware_record_id}: component_type missing`);
     if (!record.claim_refs.length || !record.source_refs.length) failures.push(`${record.hardware_record_id}: evidence refs missing`);
+    if (record.claim_refs.some((id) => !claimById.has(id) || !event?.claim_refs.includes(id))) failures.push(`${record.hardware_record_id}: hardware claim_refs invalid`);
+    if (record.source_refs.some((id) => !sourceIds.has(id) || !event?.source_refs.includes(id))) failures.push(`${record.hardware_record_id}: hardware source_refs invalid`);
   }
 
   const mappedEvents = bundle.legacy_asset_mappings.filter((item) => item.event_id).map((item) => item.event_id);
