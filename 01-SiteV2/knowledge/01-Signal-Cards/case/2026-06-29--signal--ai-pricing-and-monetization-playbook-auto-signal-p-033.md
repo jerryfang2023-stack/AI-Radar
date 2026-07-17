@@ -16,8 +16,9 @@ raw_refs: ["R-033"]
 pool_refs: ["P-033"]
 primary_raw:
   raw_ref: R-033
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-29/r-033-the-ai-pricing-and-monetization-playbook-bessemer-venture-partners.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-29/r-033-the-ai-pricing-and-monetization-playbook-bessemer-venture-partners.json"
+  raw_archive: ""
+  raw_json: ""
+  legacy_source_status: external_only
   source_url: "https://www.bvp.com/atlas/the-ai-pricing-and-monetization-playbook"
   full_text_hash: "ff6b5c5fe687fdff"
   source_level: B

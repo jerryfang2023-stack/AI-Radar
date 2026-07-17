@@ -17,8 +17,9 @@ raw_refs: ["R-012"]
 pool_refs: ["P-011"]
 primary_raw:
   raw_ref: R-012
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-04/r-012-ai-procurement-guide-2026-enterprise-contracts-pricing.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-04/r-012-ai-procurement-guide-2026-enterprise-contracts-pricing.json"
+  raw_archive: ""
+  raw_json: ""
+  legacy_source_status: external_only
   source_url: "https://atonementlicensing.com/blog/ai-procurement-guide/"
   full_text_hash: "ce230bbd0fe04beb"
   source_level: B

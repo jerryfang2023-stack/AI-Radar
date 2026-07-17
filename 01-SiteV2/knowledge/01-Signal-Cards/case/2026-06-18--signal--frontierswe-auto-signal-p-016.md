@@ -16,8 +16,9 @@ raw_refs: ["R-016"]
 pool_refs: ["P-016"]
 primary_raw:
   raw_ref: R-016
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-18/r-016-智谱ai发布glm-5-2-百万token上下文下的开源编码模型逼近闭源标杆.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-18/r-016-智谱ai发布glm-5-2-百万token上下文下的开源编码模型逼近闭源标杆.json"
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-18/r-017-智谱ai发布glm-5-2-百万token上下文下的开源编码模型逼近闭源标杆.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-18/r-017-智谱ai发布glm-5-2-百万token上下文下的开源编码模型逼近闭源标杆.json"
+  legacy_source_status: local_snapshot
   source_url: "https://the-decoder.com/zhipu-ais-glm-5-2-closes-in-on-closed-source-leaders-in-coding-marathons"
   full_text_hash: "0939ca3fe0229aa4"
   source_level: A

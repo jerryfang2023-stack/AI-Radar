@@ -16,8 +16,9 @@ raw_refs: ["R-029"]
 pool_refs: ["P-029"]
 primary_raw:
   raw_ref: R-029
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-29/r-029-movate-and-melodyarc-announce-applied-ai-partnership-to.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-29/r-029-movate-and-melodyarc-announce-applied-ai-partnership-to.json"
+  raw_archive: ""
+  raw_json: ""
+  legacy_source_status: external_only
   source_url: "https://www.prnewswire.com/in/news-releases/movate-and-melodyarc-announce-applied-ai-partnership-to-transform-cx-operations-with-ai-powered-workflow-orchestration-302808902.html"
   full_text_hash: "7d22b94caa3b75bb"
   source_level: B

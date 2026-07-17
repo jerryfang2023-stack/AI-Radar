@@ -16,8 +16,9 @@ raw_refs: ["R-158"]
 pool_refs: ["P-080"]
 primary_raw:
   raw_ref: R-158
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-14/r-158-三星打造50兆瓦海上浮动ai数据中心-获国际海事初步审批.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-14/r-158-三星打造50兆瓦海上浮动ai数据中心-获国际海事初步审批.json"
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-14/r-149-三星打造50兆瓦海上浮动ai数据中心-获国际海事初步审批.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-14/r-149-三星打造50兆瓦海上浮动ai数据中心-获国际海事初步审批.json"
+  legacy_source_status: local_snapshot
   source_url: "https://www.ithome.com/0/963/999.htm"
   full_text_hash: "3856899900b41b5d"
   source_level: B

@@ -1,25 +1,50 @@
 ---
 type: ai_hardware_daily
 date: 2026-06-25
-status: synced
-source: "01-SiteV2/site/data/v3-data-observation-desk.json"
-item_count: 1
+hardware_version: HARDWARE-V1.0
+status: current
+source: "01-SiteV2/content/11-databases/data-center-v4/2026-06-25/hardware-records.json"
+item_count: 2
 ---
 
 # 2026-06-25 AI Hardware
 
-本页归档 Business Signals 的独立 AI 硬件观察镜头。它保留投资融资、场景服务和趋势创新的来源证据，不新增第四类正式 Signal Card。
+> 本页直接投影自 Data Center V4 的 HardwareRecord，只记录来源支持的硬件事实。
 
-## 1. OpenAI、博通联手打造的 AI 芯片 Jalapeño 首秀，号称媲美英伟达 Blackwell
+- [当日 V4 CanonicalEvent](../../11-databases/data-center-v4/2026-06-25/canonical-events.json)
 
-- id: `AIHW-2026-06-25-P-065`
-- linked_card_id: ``
-- subject: OpenAI
-- source_title: OpenAI、博通联手打造的 AI 芯片 Jalapeño 首秀，号称媲美英伟达 Blackwell
-- source_url: https://www.ithome.com/0/968/175.htm
-- source_name: ithome.com
-- observation_track: 趋势创新
-- promotion_status: ai_hardware_lens_only
-- fact: OpenAI 首次对外展示与博通联合设计的定制 AI 推理芯片 Jalapeño，性能号称可媲美英伟达 Blackwell 和谷歌 TPU。该芯片专为大语言模型优化，计划今年年底前部署，不对外销售，仅供内部使用。样品搭配 GPT-5.3-Codex-Spark 测试达标，设计用时约 9 个月，由台积电制造，AI 辅助部分开发。博通 CEO 称定制 AI 芯片利润率受 HBM 内存成本影响。
-- raw_archive: [Raw 原文快照](../../01-raw/originals/2026-06-25/r-040-openai-博通联手打造的-ai-芯片-jalapen-o-首秀-号称媲美英伟达-blackwell.md) / [Raw JSON](../../01-raw/originals/2026-06-25/r-040-openai-博通联手打造的-ai-芯片-jalapen-o-首秀-号称媲美英伟达-blackwell.json)
-- signal_card: lens-only，未生成正式 Signal Card
+## 1. OpenAI 发布首款定制芯片 Jalapeño，由博通制造
+
+- hardware_record_id: `HW-d06521eb435c0f62`
+- event_id: `EV-6eb9a23be3117421`
+- event_time: 2026-06-24T18:36:44.457Z
+- event_type: hardware_product
+- hardware_type: semiconductor
+- compute_layer: 未披露
+- supplier: OpenAI
+- customer: 未披露
+- process_node: 未披露
+- capacity: 未披露
+- site: 未披露
+- region: 未披露
+- contract_value: 未披露
+- shipment_date: 未披露
+- source: [Hacker News 热门（buzzing.cc 中文翻译）](https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom)
+
+## 2. OpenAI与Broadcom发布首款定制芯片"Jalapeño"，专为LLM推理设计
+
+- hardware_record_id: `HW-ce02b000e0a8d19c`
+- event_id: `EV-1e7c76dae985100f`
+- event_time: 2026-06-24T13:50:56.000Z
+- event_type: hardware_product
+- hardware_type: ai_accelerator
+- compute_layer: 未披露
+- supplier: OpenAI
+- customer: 未披露
+- process_node: 未披露
+- capacity: 未披露
+- site: 未披露
+- region: 未披露
+- contract_value: 未披露
+- shipment_date: 未披露
+- source: [The Decoder：AI News（RSS）](https://the-decoder.com/openai-and-broadcom-unveil-jalapeno-a-custom-chip-built-for-llm-inference)

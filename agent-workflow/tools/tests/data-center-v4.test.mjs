@@ -4,7 +4,7 @@ import path from "node:path";
 import test from "node:test";
 import { fileURLToPath } from "node:url";
 import { buildBundle, eventAiRelevanceEvidence, findEventRule, normalizeEventTitle, trimBoilerplate } from "../build-data-center-v4.mjs";
-import { evaluateBundle } from "../assert-data-center-v4.mjs";
+import { evaluateBundle, evaluateBundleFiles } from "../assert-data-center-v4.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, "../../..");
@@ -586,6 +586,48 @@ test("generated bundle passes the V4 integrity gate", () => {
   assert.deepEqual(result.failures, []);
 });
 
+test("filesystem integrity gate requires resolvable snapshots and complete current-day Raw coverage", () => {
+  const workspaceRoot = fs.mkdtempSync(path.join(process.env.TEMP || process.cwd(), "wavesight-v4-gate-"));
+  const rawDir = path.join(workspaceRoot, "01-SiteV2/content/01-raw/originals", date);
+  fs.mkdirSync(rawDir, { recursive: true });
+  const rawPath = path.join(rawDir, "r-001.json");
+  fs.writeFileSync(rawPath, JSON.stringify({
+    raw_id: "legacy-raw-001",
+    original_url: "https://www.example.com/story/",
+    canonical_url: "https://example.com/story",
+    content_hash: "hash-001"
+  }), "utf8");
+  const relativeRawPath = path.relative(workspaceRoot, rawPath).replace(/\\/gu, "/");
+  const bundle = {
+    manifest: { date },
+    source_artifacts: [{
+      source_artifact_id: "SA-001",
+      source_url: "https://example.com/story",
+      canonical_url: "https://example.com/story",
+      snapshot_refs: [relativeRawPath],
+      content_hash: "hash-001"
+    }],
+    raw_documents: [{ raw_id: "RAW-001", source_url: "https://example.com/story", canonical_url: "https://example.com/story" }],
+    legacy_asset_mappings: [{ legacy_raw_id: "legacy-raw-001", legacy_path: relativeRawPath, raw_id: "RAW-001" }]
+  };
+
+  const passing = evaluateBundleFiles(bundle, { workspaceRoot, date });
+  assert.deepEqual(passing.failures, []);
+  assert.equal(passing.metrics.current_raw_snapshot_coverage, 1);
+
+  bundle.source_artifacts[0].snapshot_refs = ["outside/missing.json"];
+  bundle.legacy_asset_mappings[0].legacy_path = "outside/missing.json";
+  bundle.source_artifacts[0].source_url = "https://example.com/different";
+  bundle.source_artifacts[0].canonical_url = "https://example.com/different";
+  bundle.source_artifacts[0].content_hash = "different";
+  bundle.raw_documents[0].source_url = "https://example.com/different";
+  bundle.raw_documents[0].canonical_url = "https://example.com/different";
+  const failing = evaluateBundleFiles(bundle, { workspaceRoot, date });
+  assert.ok(failing.failures.some((failure) => failure.includes("snapshot_ref does not exist")));
+  assert.ok(failing.failures.some((failure) => failure.includes("legacy_path does not exist")));
+  assert.ok(failing.failures.some((failure) => failure.includes("not represented in the V4 bundle")));
+});
+
 test("integrity gate blocks a canonical event whose evidence is no longer AI-industry scoped", () => {
   const bundle = buildBundle([
     entry("tampered", "Acme launches AI agent platform", "Acme launched an AI agent platform for customer support.")
@@ -751,4 +793,38 @@ test("Noetra infrastructure sources merge and preserve disclosed chip capacity",
   assert.equal(bundle.hardware_records[0].supplier, "NVIDIA");
   assert.equal(bundle.hardware_records[0].customer, "Noetra");
   assert.equal(bundle.hardware_records[0].source_refs.length, 2);
+});
+
+test("legacy Card projection disambiguates physical files and resolves all mapped V4 events", () => {
+  const dataRoot = path.join(root, "01-SiteV2/content/11-databases/data-center-v4");
+  const projection = JSON.parse(fs.readFileSync(path.join(dataRoot, "legacy-card-event-mappings.json"), "utf8"));
+  assert.equal(projection.failures.length, 0);
+  assert.equal(projection.summary.card_instances, projection.mappings.length);
+  assert.equal(new Set(projection.mappings.map((item) => item.card_instance_id)).size, projection.mappings.length);
+  assert.equal(projection.summary.unresolved, 0);
+  assert.ok(projection.summary.raw_only > 0, "legacy Cards without a canonical event must remain explicit");
+
+  const eventIds = new Set();
+  for (const entry of fs.readdirSync(dataRoot, { withFileTypes: true })) {
+    if (!entry.isDirectory() || !/^\d{4}-\d{2}-\d{2}$/u.test(entry.name)) continue;
+    const events = JSON.parse(fs.readFileSync(path.join(dataRoot, entry.name, "canonical-events.json"), "utf8"));
+    for (const event of events) eventIds.add(event.event_id);
+  }
+  for (const item of projection.mappings) for (const eventId of item.event_ids) assert.ok(eventIds.has(eventId), `${eventId} must resolve`);
+});
+
+test("legacy Card local Raw links are either valid or explicitly retired", () => {
+  const projection = JSON.parse(fs.readFileSync(path.join(root, "01-SiteV2/content/11-databases/data-center-v4/legacy-card-event-mappings.json"), "utf8"));
+  for (const item of projection.mappings) {
+    const cardFile = path.join(root, item.legacy_path.replace(/\//gu, path.sep));
+    const text = fs.readFileSync(cardFile, "utf8");
+    const fm = text.match(/^---\s*\r?\n([\s\S]*?)\r?\n---/u)?.[1] || "";
+    const status = fm.match(/^\s+legacy_source_status:\s*(.+)$/mu)?.[1]?.trim() || "";
+    const paths = [...fm.matchAll(/^\s+(?:raw_archive|raw_json):\s*["']?([^"'\r\n]*)/gmu)].map((match) => match[1].trim()).filter(Boolean);
+    if (!paths.length) {
+      assert.ok(["external_only", "ambiguous_source"].includes(status), `${item.legacy_path} must explain retired local snapshots`);
+      continue;
+    }
+    for (const value of paths) assert.ok(fs.existsSync(path.join(root, value.replace(/\//gu, path.sep))), `${item.legacy_path} links missing ${value}`);
+  }
 });

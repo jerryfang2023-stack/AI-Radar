@@ -16,8 +16,9 @@ raw_refs: ["R-031"]
 pool_refs: ["P-031"]
 primary_raw:
   raw_ref: R-031
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-29/r-031-smartsheet-claude-platform-api-case-study-claude-by-anthropic.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-29/r-031-smartsheet-claude-platform-api-case-study-claude-by-anthropic.json"
+  raw_archive: ""
+  raw_json: ""
+  legacy_source_status: external_only
   source_url: "https://claude.com/customers/smartsheet"
   full_text_hash: "3a8578d28c080684"
   source_level: B

@@ -16,8 +16,9 @@ raw_refs: ["R-051"]
 pool_refs: ["P-048"]
 primary_raw:
   raw_ref: R-051
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-19/r-051-thoughtworks-launches-agent-workstm-to-govern-and-run-enterprise-ai-ag.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-19/r-051-thoughtworks-launches-agent-workstm-to-govern-and-run-enterprise-ai-ag.json"
+  raw_archive: ""
+  raw_json: ""
+  legacy_source_status: external_only
   source_url: "https://www.thoughtworks.com/en-us/about-us/news/2026/thoughtworks-launches-agent-works"
   full_text_hash: "cccc1c310e1c7f5e"
   source_level: B

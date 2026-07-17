@@ -16,8 +16,9 @@ raw_refs: ["R-056"]
 pool_refs: ["P-052"]
 primary_raw:
   raw_ref: R-056
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-18/r-056-voicerun-launches-full-stack-voice-ai-platform-for-enterprises-with.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-18/r-056-voicerun-launches-full-stack-voice-ai-platform-for-enterprises-with.json"
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-18/r-061-voicerun-launches-full-stack-voice-ai-platform-for-enterprises-with.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-18/r-061-voicerun-launches-full-stack-voice-ai-platform-for-enterprises-with.json"
+  legacy_source_status: local_snapshot
   source_url: "https://www.prnewswire.com/news-releases/voicerun-launches-full-stack-voice-ai-platform-for-enterprises-with-5-5-million-seed-round-302660750.html"
   full_text_hash: "61978eee58798328"
   source_level: B

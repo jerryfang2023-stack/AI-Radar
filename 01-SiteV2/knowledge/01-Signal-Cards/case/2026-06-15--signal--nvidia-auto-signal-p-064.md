@@ -16,8 +16,9 @@ raw_refs: ["R-087"]
 pool_refs: ["P-064"]
 primary_raw:
   raw_ref: R-087
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-15/r-087-applications-now-open-for-60-000-nvidia-graduate-fellowship-awards.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-15/r-087-applications-now-open-for-60-000-nvidia-graduate-fellowship-awards.json"
+  raw_archive: ""
+  raw_json: ""
+  legacy_source_status: external_only
   source_url: "https://blogs.nvidia.com/blog/applications-open-graduate-fellowship-awards-2025/"
   full_text_hash: "f1036e2b17c91477"
   source_level: S

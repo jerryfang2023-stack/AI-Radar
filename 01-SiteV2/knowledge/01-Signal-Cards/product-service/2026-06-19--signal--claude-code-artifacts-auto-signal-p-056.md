@@ -16,8 +16,9 @@ raw_refs: ["R-071"]
 pool_refs: ["P-056"]
 primary_raw:
   raw_ref: R-071
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-19/r-071-claude-code-现已支持-artifacts.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-19/r-071-claude-code-现已支持-artifacts.json"
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-19/r-082-claude-code-现已支持-artifacts.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-19/r-082-claude-code-现已支持-artifacts.json"
+  legacy_source_status: local_snapshot
   source_url: "https://claude.com/blog/artifacts-in-claude-code"
   full_text_hash: "6af93794ad3adc3e"
   source_level: B

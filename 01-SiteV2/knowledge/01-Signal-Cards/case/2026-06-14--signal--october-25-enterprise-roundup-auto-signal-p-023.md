@@ -16,8 +16,9 @@ raw_refs: ["R-023"]
 pool_refs: ["P-023"]
 primary_raw:
   raw_ref: R-023
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-14/r-023-october-25-enterprise-roundup-github.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-14/r-023-october-25-enterprise-roundup-github.json"
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-14/r-026-october-25-enterprise-roundup-github.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-14/r-026-october-25-enterprise-roundup-github.json"
+  legacy_source_status: local_snapshot
   source_url: "https://github.com/resources/insights/enterprise-content-roundup-october"
   full_text_hash: "f664bbb77f9c6741"
   source_level: B

@@ -16,8 +16,9 @@ raw_refs: ["R-153"]
 pool_refs: ["P-079"]
 primary_raw:
   raw_ref: R-153
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-14/r-153-毕马威因明显的模型幻觉撤回ai使用报告.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-14/r-153-毕马威因明显的模型幻觉撤回ai使用报告.json"
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-14/r-145-毕马威因明显的模型幻觉撤回ai使用报告.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-14/r-145-毕马威因明显的模型幻觉撤回ai使用报告.json"
+  legacy_source_status: local_snapshot
   source_url: "https://techcrunch.com/2026/06/13/kpmg-pulls-report-on-ai-usage-due-to-apparent-hallucinations"
   full_text_hash: "45bdc81a6a375c69"
   source_level: A

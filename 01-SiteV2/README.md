@@ -1,36 +1,31 @@
 ---
 title: WaveSight 01-SiteV2
-date: 2026-06-29
+date: 2026-07-17
 status: current
 encoding: UTF-8
 ---
 
-# 观澜AI｜WaveSight 01-SiteV2
+# WaveSight 01-SiteV2
 
-本目录是当前站点工程、内容生产过程和长期判断资产库的入口。
+本目录是 SITE-V4.1 站点、事实数据与本地 Obsidian 资产的统一入口。
 
-## 目录职责
+## 当前入口
 
-- `site/`：前台页面、运营后台和站点数据。
-- `content/`：每日生产过程层，保存 Raw、Pool、商业信号索引、栏目数据、周度雷达内容和配置。
-- `knowledge/`：Obsidian 长期判断资产库，保存正式商业信号卡、观点资产、后台候选和当前模板。
-
-## Obsidian 使用入口
-
-| 需要查看 | 进入目录 |
+| 需要查看 | 位置 |
 |---|---|
-| 当日原始材料 | `content/01-raw/originals/<date>/` |
-| 当日 Pool 候选 | `content/02-pool/` |
-| 当日商业信号索引 | `content/04-business-signals/signals/` |
-| 正式案例 / 融资 / 产品 Card | `knowledge/01-Signal-Cards/` |
-| First-Line Viewpoints 时间线 | `knowledge/02-Opinion-Timelines/` |
-| 变化 / 场景 / 趋势候选 | `knowledge/03-Asset-Candidates/` |
+| V4 网站 | `site/` |
+| V4 事实数据库索引 | `content/11-databases/data-center-v4/Data Center V4 Index.md` |
+| 每日 Raw 快照 | `content/01-raw/originals/<date>/` |
+| Enterprise AI / FDE | `content/09-fde/Enterprise AI FDE Index.md` |
+| AI Hardware | `content/10-ai-hardware/AI Hardware Index.md` |
+| 旧 Signal Card 兼容档案 | `knowledge/01-Signal-Cards/` |
+| First-Line Viewpoints | `knowledge/02-Opinion-Timelines/` |
 
-## 使用规则
+## 数据边界
 
-- 网站和后台代码只进入 `site/`。
-- 每日生产文件只进入 `content/`。
-- 长期判断资产只进入 `knowledge/`。
-- Raw / Pool / Card / 栏目数据必须保留可追溯来源。
-- 旧站点页面和旧内容路线只允许作为历史档案存在，不再作为当前执行依据。
-- 新窗口启动仍以项目根目录 `AGENTS.md` 和 `context/` 为入口。
+- RawDocument 保存来源材料；Claim 保存可核验原文片段；CanonicalEvent 保存通过 V4 合同的商业事实。
+- 旧 Markdown Signal Card 不是 CanonicalEvent，只能通过 `legacy-card-event-mappings.json` 判断两者关系。
+- `compatibility-cards.json` 是由 V4 CanonicalEvent 一对一生成的页面兼容投影，也不等于旧 Markdown Signal Card。
+- V3 Card、趋势、关系图与机会对象只可作为内部兼容或下游应用输入，不得回流 V4 事实表。
+
+当前规则入口是项目根目录 `AGENTS.md`、`context/12-data-center-v4.md` 与 `context/frontstage-page-contracts.md`。

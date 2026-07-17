@@ -16,8 +16,9 @@ raw_refs: ["R-073"]
 pool_refs: ["P-057"]
 primary_raw:
   raw_ref: R-073
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-18/r-073-governed-ai-agents-how-to-deploy-and-scale-with-confidence.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-18/r-073-governed-ai-agents-how-to-deploy-and-scale-with-confidence.json"
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-18/r-079-governed-ai-agents-how-to-deploy-and-scale-with-confidence.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-18/r-079-governed-ai-agents-how-to-deploy-and-scale-with-confidence.json"
+  legacy_source_status: local_snapshot
   source_url: "https://boomi.com/blog/ai-agents-deployment-and-governance/"
   full_text_hash: "a77b1e36a780aee8"
   source_level: B

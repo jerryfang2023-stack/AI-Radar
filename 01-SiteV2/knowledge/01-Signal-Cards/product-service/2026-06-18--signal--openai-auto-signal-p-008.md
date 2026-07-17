@@ -16,8 +16,9 @@ raw_refs: ["R-008"]
 pool_refs: ["P-008"]
 primary_raw:
   raw_ref: R-008
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-18/r-008-xdof获7000万美元融资-构建机器人训练数据基础设施.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-18/r-008-xdof获7000万美元融资-构建机器人训练数据基础设施.json"
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-18/r-010-xdof获7000万美元融资-构建机器人训练数据基础设施.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-18/r-010-xdof获7000万美元融资-构建机器人训练数据基础设施.json"
+  legacy_source_status: local_snapshot
   source_url: "https://techcrunch.com/2026/06/17/collecting-robot-training-data-is-dirty-unglamorous-work-some-ai-labs-are-already-paying-xdof-to-do-it"
   full_text_hash: "8391fcf4ac6f07f9"
   source_level: A

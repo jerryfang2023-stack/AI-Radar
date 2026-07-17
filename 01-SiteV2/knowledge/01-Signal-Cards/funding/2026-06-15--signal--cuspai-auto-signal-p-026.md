@@ -16,8 +16,9 @@ raw_refs: ["R-036"]
 pool_refs: ["P-026"]
 primary_raw:
   raw_ref: R-036
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-15/r-036-searching-the-space-of-all-possible-materials-prof-max-welling-cuspai.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-15/r-036-searching-the-space-of-all-possible-materials-prof-max-welling-cuspai.json"
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-15/r-042-searching-the-space-of-all-possible-materials-prof-max-welling-cuspai.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-15/r-042-searching-the-space-of-all-possible-materials-prof-max-welling-cuspai.json"
+  legacy_source_status: local_snapshot
   source_url: "https://www.latent.space/p/cuspai"
   full_text_hash: "8ae796085e22ed81"
   source_level: B

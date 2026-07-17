@@ -16,8 +16,9 @@ raw_refs: ["R-045"]
 pool_refs: ["P-042"]
 primary_raw:
   raw_ref: R-045
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-19/r-045-ai-jobs-forward-deployed-engineers-in-demand-the-straits-times.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-19/r-045-ai-jobs-forward-deployed-engineers-in-demand-the-straits-times.json"
+  raw_archive: ""
+  raw_json: ""
+  legacy_source_status: external_only
   source_url: "https://www.straitstimes.com/tech/the-hottest-new-ai-job-forward-deployed-engineers-are-in-demand-in-singapore"
   full_text_hash: "1073ef05380c6a96"
   source_level: B

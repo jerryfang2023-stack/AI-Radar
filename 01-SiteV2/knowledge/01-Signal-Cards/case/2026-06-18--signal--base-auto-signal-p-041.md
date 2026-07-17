@@ -16,8 +16,9 @@ raw_refs: ["R-041"]
 pool_refs: ["P-041"]
 primary_raw:
   raw_ref: R-041
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-18/r-041-introducing-amazon-bedrock-managed-knowledge-base-for-faster-more-accu.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-18/r-041-introducing-amazon-bedrock-managed-knowledge-base-for-faster-more-accu.json"
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-18/r-049-introducing-amazon-bedrock-managed-knowledge-base-for-faster-more-accu.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-18/r-049-introducing-amazon-bedrock-managed-knowledge-base-for-faster-more-accu.json"
+  legacy_source_status: local_snapshot
   source_url: "https://aws.amazon.com/blogs/aws/introducing-amazon-bedrock-managed-knowledge-base-for-faster-more-accurate-enterprise-ai-applications/"
   full_text_hash: "681e1b93502ddd7b"
   source_level: B

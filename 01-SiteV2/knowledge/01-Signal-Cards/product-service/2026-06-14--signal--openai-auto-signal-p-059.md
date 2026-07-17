@@ -16,8 +16,9 @@ raw_refs: ["R-093"]
 pool_refs: ["P-059"]
 primary_raw:
   raw_ref: R-093
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-14/r-093-openai-面临多州检察长调查.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-14/r-093-openai-面临多州检察长调查.json"
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-14/r-092-openai-面临多州检察长调查.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-14/r-092-openai-面临多州检察长调查.json"
+  legacy_source_status: local_snapshot
   source_url: "https://techcrunch.com/2026/06/13/openai-faces-investigation-from-state-attorneys-general"
   full_text_hash: "877478e2b4d30037"
   source_level: A

@@ -16,8 +16,9 @@ raw_refs: ["R-046"]
 pool_refs: ["P-036"]
 primary_raw:
   raw_ref: R-046
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-15/r-046-state-of-evals-lmarena-s-1-7b-vision-anastasios-angelopoulos-lmarena.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-15/r-046-state-of-evals-lmarena-s-1-7b-vision-anastasios-angelopoulos-lmarena.json"
+  raw_archive: ""
+  raw_json: ""
+  legacy_source_status: external_only
   source_url: "https://www.latent.space/p/state-of-evals-lmarenas-17b-vision"
   full_text_hash: "5b212ad1259fdb65"
   source_level: B

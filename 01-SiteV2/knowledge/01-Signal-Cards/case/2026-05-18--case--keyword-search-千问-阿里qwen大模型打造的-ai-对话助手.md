@@ -22,8 +22,9 @@ raw_refs: ["R-004"]
 pool_refs: ["P-003"]
 primary_raw:
   raw_ref: R-004
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-05-18/r-004-千问-阿里qwen大模型打造的-ai-对话助手.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-05-18/r-004-千问-阿里qwen大模型打造的-ai-对话助手.json"
+  raw_archive: ""
+  raw_json: ""
+  legacy_source_status: external_only
   source_url: "https://qianwen.aigc.cn/"
   full_text_hash: "7cb66fbf5c8ebd69"
   source_level: B

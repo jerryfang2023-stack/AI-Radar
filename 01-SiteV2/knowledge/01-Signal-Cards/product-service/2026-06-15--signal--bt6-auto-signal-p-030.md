@@ -16,8 +16,9 @@ raw_refs: ["R-040"]
 pool_refs: ["P-030"]
 primary_raw:
   raw_ref: R-040
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-15/r-040-jailbreaking-agi-pliny-the-liberator-amp-john-v-on-red-teaming-bt6-and.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-15/r-040-jailbreaking-agi-pliny-the-liberator-amp-john-v-on-red-teaming-bt6-and.json"
+  raw_archive: ""
+  raw_json: ""
+  legacy_source_status: external_only
   source_url: "https://www.latent.space/p/jailbreaking-agi-pliny-the-liberator"
   full_text_hash: "013b740a2d936966"
   source_level: B

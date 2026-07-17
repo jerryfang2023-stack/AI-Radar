@@ -17,8 +17,9 @@ raw_refs: ["R-010"]
 pool_refs: ["P-009"]
 primary_raw:
   raw_ref: R-010
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-04/r-010-2025-the-state-of-generative-ai-in-the-enterprise-menlo-ventures.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-04/r-010-2025-the-state-of-generative-ai-in-the-enterprise-menlo-ventures.json"
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-04/r-014-2025-the-state-of-generative-ai-in-the-enterprise-menlo-ventures.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-04/r-014-2025-the-state-of-generative-ai-in-the-enterprise-menlo-ventures.json"
+  legacy_source_status: local_snapshot
   source_url: "https://menlovc.com/perspective/2025-the-state-of-generative-ai-in-the-enterprise/"
   full_text_hash: "c32615b09b5a05ea"
   source_level: B

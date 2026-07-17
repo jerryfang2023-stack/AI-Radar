@@ -16,8 +16,9 @@ raw_refs: ["R-118"]
 pool_refs: ["P-071"]
 primary_raw:
   raw_ref: R-118
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-14/r-118-美国政府强制anthropic关闭面向全球用户的claude-fable-5和mythos-5.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-14/r-118-美国政府强制anthropic关闭面向全球用户的claude-fable-5和mythos-5.json"
+  raw_archive: ""
+  raw_json: ""
+  legacy_source_status: external_only
   source_url: "https://the-decoder.com/us-government-forces-anthropic-to-disable-claude-fable-5-and-mythos-5-for-all-customers-worldwide"
   full_text_hash: "23d435785f06df0b"
   source_level: A

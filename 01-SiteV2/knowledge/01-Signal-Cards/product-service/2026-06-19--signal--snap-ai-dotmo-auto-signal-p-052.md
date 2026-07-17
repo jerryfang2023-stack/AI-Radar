@@ -16,8 +16,9 @@ raw_refs: ["R-057"]
 pool_refs: ["P-052"]
 primary_raw:
   raw_ref: R-057
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-19/r-057-snap-剥离-ai-视频团队成立新公司-dotmo.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-19/r-057-snap-剥离-ai-视频团队成立新公司-dotmo.json"
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-19/r-070-snap-剥离-ai-视频团队成立新公司-dotmo.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-19/r-070-snap-剥离-ai-视频团队成立新公司-dotmo.json"
+  legacy_source_status: local_snapshot
   source_url: "https://techcrunch.com/2026/06/18/snap-spins-off-ai-video-team-into-new-company-dotmo-due-to-costs"
   full_text_hash: "33d3344406ed76a6"
   source_level: A

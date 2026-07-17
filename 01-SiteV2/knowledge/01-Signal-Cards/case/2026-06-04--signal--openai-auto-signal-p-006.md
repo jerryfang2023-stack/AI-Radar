@@ -17,8 +17,9 @@ raw_refs: ["R-007"]
 pool_refs: ["P-006"]
 primary_raw:
   raw_ref: R-007
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-04/r-007-here-s-the-full-list-of-49-us-ai-startups-that-have-raised-100m-or.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-04/r-007-here-s-the-full-list-of-49-us-ai-startups-that-have-raised-100m-or.json"
+  raw_archive: ""
+  raw_json: ""
+  legacy_source_status: external_only
   source_url: "https://techcrunch.com/2024/12/20/heres-the-full-list-of-49-us-ai-startups-that-have-raised-100m-or-more-in-2024/"
   full_text_hash: "0e25a30b3a68dd2f"
   source_level: A

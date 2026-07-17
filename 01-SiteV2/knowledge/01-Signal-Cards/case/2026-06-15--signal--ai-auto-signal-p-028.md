@@ -16,8 +16,9 @@ raw_refs: ["R-038"]
 pool_refs: ["P-028"]
 primary_raw:
   raw_ref: R-038
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-15/r-038-top-ai-researcher-on-gpt-4-5-deepseek-and-agentic-rag-douwe-kiela-ceo-.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-15/r-038-top-ai-researcher-on-gpt-4-5-deepseek-and-agentic-rag-douwe-kiela-ceo-.json"
+  raw_archive: ""
+  raw_json: ""
+  legacy_source_status: external_only
   source_url: "https://podcasters.spotify.com/pod/show/firstmark/episodes/Top-AI-Researcher-on-GPT-4-5--DeepSeek-and-Agentic-RAG--Douwe-Kiela--CEO--Contextual-AI-e2vpcmg"
   full_text_hash: "6744cbd7f7dc6c9f"
   source_level: B

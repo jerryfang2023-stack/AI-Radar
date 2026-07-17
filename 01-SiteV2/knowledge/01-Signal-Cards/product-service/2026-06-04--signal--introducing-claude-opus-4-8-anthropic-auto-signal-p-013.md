@@ -17,8 +17,9 @@ raw_refs: ["R-014"]
 pool_refs: ["P-013"]
 primary_raw:
   raw_ref: R-014
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-04/r-014-introducing-claude-opus-4-8-anthropic.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-04/r-014-introducing-claude-opus-4-8-anthropic.json"
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-04/r-010-introducing-claude-opus-4-8-anthropic.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-04/r-010-introducing-claude-opus-4-8-anthropic.json"
+  legacy_source_status: local_snapshot
   source_url: "https://www.anthropic.com/news/claude-opus-4-8?ct=13057"
   full_text_hash: "7d4cd4d313c33f6b"
   source_level: S

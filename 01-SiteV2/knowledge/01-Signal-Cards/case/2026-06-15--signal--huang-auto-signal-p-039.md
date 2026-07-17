@@ -16,8 +16,9 @@ raw_refs: ["R-049"]
 pool_refs: ["P-039"]
 primary_raw:
   raw_ref: R-049
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-15/r-049-nvidia-rubin-platform-open-models-autonomous-driving-nvidia-presents-b.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-15/r-049-nvidia-rubin-platform-open-models-autonomous-driving-nvidia-presents-b.json"
+  raw_archive: ""
+  raw_json: ""
+  legacy_source_status: external_only
   source_url: "https://blogs.nvidia.com/blog/2026-ces-special-presentation/"
   full_text_hash: "607c1fec5382c0c7"
   source_level: S

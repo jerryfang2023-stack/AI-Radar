@@ -17,8 +17,9 @@ raw_refs: ["R-006"]
 pool_refs: ["P-005"]
 primary_raw:
   raw_ref: R-006
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-04/r-006-洪水韧性新篇章-google-开源水文建模框架.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-04/r-006-洪水韧性新篇章-google-开源水文建模框架.json"
+  raw_archive: ""
+  raw_json: ""
+  legacy_source_status: external_only
   source_url: "https://research.google/blog/the-next-chapter-in-flood-resilience-open-sourcing-googles-hydrology-framework"
   full_text_hash: "7e26c489b6ba7489"
   source_level: S

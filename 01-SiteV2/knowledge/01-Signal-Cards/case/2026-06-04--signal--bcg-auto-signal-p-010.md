@@ -23,8 +23,9 @@ merged_updates:
 
 primary_raw:
   raw_ref: R-011
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-04/r-011-the-200-billion-ai-opportunity-in-tech-services-bcg.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-04/r-011-the-200-billion-ai-opportunity-in-tech-services-bcg.json"
+  raw_archive: ""
+  raw_json: ""
+  legacy_source_status: external_only
   source_url: "https://www.bcg.com/publications/2026/the-200-billion-dollar-ai-opportunity-in-tech-services"
   full_text_hash: "109d799d97647878"
   source_level: B

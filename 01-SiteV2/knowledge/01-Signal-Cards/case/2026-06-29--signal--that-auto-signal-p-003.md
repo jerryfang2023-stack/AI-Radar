@@ -16,8 +16,9 @@ raw_refs: ["R-003"]
 pool_refs: ["P-003"]
 primary_raw:
   raw_ref: R-003
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-29/r-003-best-ai-development-services-for-startups-and-enterprises.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-29/r-003-best-ai-development-services-for-startups-and-enterprises.json"
+  raw_archive: ""
+  raw_json: ""
+  legacy_source_status: external_only
   source_url: "https://www.cm-alliance.com/cybersecurity-blog/best-ai-development-services-for-startups-and-enterprises"
   full_text_hash: "d175577f34a7d281"
   source_level: B

@@ -16,8 +16,9 @@ raw_refs: ["R-004"]
 pool_refs: ["P-004"]
 primary_raw:
   raw_ref: R-004
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-18/r-004-世界模型公司odyssey完成3-1亿美元b轮融资-估值14-5亿美元.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-18/r-004-世界模型公司odyssey完成3-1亿美元b轮融资-估值14-5亿美元.json"
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-18/r-007-世界模型公司odyssey完成3-1亿美元b轮融资-估值14-5亿美元.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-18/r-007-世界模型公司odyssey完成3-1亿美元b轮融资-估值14-5亿美元.json"
+  legacy_source_status: local_snapshot
   source_url: "https://techcrunch.com/2026/06/17/world-model-maker-odyssey-nabs-1-45b-valuation-backed-by-amazon-and-other-big-names"
   full_text_hash: "c2a0609bc81915c9"
   source_level: A

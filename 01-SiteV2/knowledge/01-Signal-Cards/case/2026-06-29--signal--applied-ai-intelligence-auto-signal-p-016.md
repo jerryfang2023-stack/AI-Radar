@@ -16,8 +16,9 @@ raw_refs: ["R-016"]
 pool_refs: ["P-016"]
 primary_raw:
   raw_ref: R-016
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-29/r-016-applied-ai-intelligence-future-works.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-29/r-016-applied-ai-intelligence-future-works.json"
+  raw_archive: ""
+  raw_json: ""
+  legacy_source_status: external_only
   source_url: "https://future.works/applied-ai-intelligence/"
   full_text_hash: "25099df052a31e5d"
   source_level: B

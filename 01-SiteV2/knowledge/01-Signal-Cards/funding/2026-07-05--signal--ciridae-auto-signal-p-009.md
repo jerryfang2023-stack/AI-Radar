@@ -16,8 +16,9 @@ raw_refs: ["R-009"]
 pool_refs: ["P-009"]
 primary_raw:
   raw_ref: R-009
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-07-05/r-009-ciridae-secures-20m-led-by-accel-to-bring-ai-transformation-to-real-ec.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-07-05/r-009-ciridae-secures-20m-led-by-accel-to-bring-ai-transformation-to-real-ec.json"
+  raw_archive: ""
+  raw_json: ""
+  legacy_source_status: external_only
   source_url: "https://theaiinsider.tech/2026/05/13/ciridae-secures-20m-led-by-accel-to-bring-ai-transformation-to-real-economy-businesses/"
   full_text_hash: "82a1d6125f999156"
   source_level: B

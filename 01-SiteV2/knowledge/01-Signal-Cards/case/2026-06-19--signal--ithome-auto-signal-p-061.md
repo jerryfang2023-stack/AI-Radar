@@ -16,8 +16,9 @@ raw_refs: ["R-094"]
 pool_refs: ["P-061"]
 primary_raw:
   raw_ref: R-094
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-19/r-094-ai-账单失控-at-t-meta-等巨头急刹车-从-疯狂消耗-到-严苛限制.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-19/r-094-ai-账单失控-at-t-meta-等巨头急刹车-从-疯狂消耗-到-严苛限制.json"
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-19/r-103-ai-账单失控-at-t-meta-等巨头急刹车-从-疯狂消耗-到-严苛限制.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-19/r-103-ai-账单失控-at-t-meta-等巨头急刹车-从-疯狂消耗-到-严苛限制.json"
+  legacy_source_status: local_snapshot
   source_url: "https://www.ithome.com/0/966/306.htm"
   full_text_hash: "4d92d65f50a2ffa4"
   source_level: B

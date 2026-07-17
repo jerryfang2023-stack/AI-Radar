@@ -22,8 +22,9 @@ raw_refs: ["R-001"]
 pool_refs: ["P-001"]
 primary_raw:
   raw_ref: R-001
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-05-18/r-001-全球-ai-发展最新评估-斯坦福2026年-ai-指数报告解读-腾讯新闻.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-05-18/r-001-全球-ai-发展最新评估-斯坦福2026年-ai-指数报告解读-腾讯新闻.json"
+  raw_archive: ""
+  raw_json: ""
+  legacy_source_status: external_only
   source_url: "https://news.qq.com/rain/a/20260416A067T200"
   full_text_hash: "37d32f8d12344caf"
   source_level: B

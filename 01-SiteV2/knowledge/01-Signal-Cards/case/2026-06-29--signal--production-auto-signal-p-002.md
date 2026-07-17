@@ -16,8 +16,9 @@ raw_refs: ["R-002"]
 pool_refs: ["P-002"]
 primary_raw:
   raw_ref: R-002
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-29/r-002-production-grade-ai-agents-for-financial-compliance-lessons-from-strip.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-29/r-002-production-grade-ai-agents-for-financial-compliance-lessons-from-strip.json"
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-29/r-036-production-grade-ai-agents-for-financial-compliance-lessons-from-strip.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-29/r-036-production-grade-ai-agents-for-financial-compliance-lessons-from-strip.json"
+  legacy_source_status: local_snapshot
   source_url: "https://aws.amazon.com/blogs/machine-learning/production-grade-ai-agents-for-financial-compliance-lessons-from-stripe/"
   full_text_hash: "a532f599671811d0"
   source_level: B

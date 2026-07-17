@@ -16,8 +16,9 @@ raw_refs: ["R-051"]
 pool_refs: ["P-051"]
 primary_raw:
   raw_ref: R-051
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-29/r-051-8-ways-ai-agents-are-evolving-in-2026-salesforce.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-29/r-051-8-ways-ai-agents-are-evolving-in-2026-salesforce.json"
+  raw_archive: ""
+  raw_json: ""
+  legacy_source_status: external_only
   source_url: "https://www.salesforce.com/blog/ai-agent-trends-2026"
   full_text_hash: "f34b62c314216243"
   source_level: S

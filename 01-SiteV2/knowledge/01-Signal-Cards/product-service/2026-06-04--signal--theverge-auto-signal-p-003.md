@@ -17,8 +17,9 @@ raw_refs: ["R-004"]
 pool_refs: ["P-003"]
 primary_raw:
   raw_ref: R-004
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-04/r-004-google-gemini-ai-智能体-spark-上手体验-高效得令人不安-但也暴露了空洞的承诺.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-04/r-004-google-gemini-ai-智能体-spark-上手体验-高效得令人不安-但也暴露了空洞的承诺.json"
+  raw_archive: ""
+  raw_json: ""
+  legacy_source_status: external_only
   source_url: "https://www.theverge.com/ai-artificial-intelligence/942629/as-ai-gets-better-it-reveals-an-empty-promise"
   full_text_hash: "f0ecd25e63ba3760"
   source_level: B

@@ -16,8 +16,9 @@ raw_refs: ["R-057"]
 pool_refs: ["P-053"]
 primary_raw:
   raw_ref: R-057
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-18/r-057-applied-ai-case-studies-and-real-world-success-stories-gogloby.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-18/r-057-applied-ai-case-studies-and-real-world-success-stories-gogloby.json"
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-18/r-063-applied-ai-case-studies-and-real-world-success-stories-gogloby.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-18/r-063-applied-ai-case-studies-and-real-world-success-stories-gogloby.json"
+  legacy_source_status: local_snapshot
   source_url: "https://gogloby.com/insights/applied-ai-case-studies/"
   full_text_hash: "f5e5c799b82db41d"
   source_level: B

@@ -1,34 +1,31 @@
 ---
 type: enterprise_ai_fde_daily
 date: 2026-06-01
-enterprise_ai_lens_version: EAI-V1.2.0-raw-card-ingestion-boundary
-status: synced
-source: "01-SiteV2/site/data/v3-data-observation-desk.json"
+fde_version: FDE-V2.0
+status: current
+source: "01-SiteV2/content/11-databases/data-center-v4/2026-06-01/fde-records.json"
 item_count: 1
 ---
 
 # 2026-06-01 Enterprise AI / FDE
 
-本页是 Business Signals「企业 AI 化」二级镜头的 Obsidian 索引。原文不复制到本页，保留在 Raw 原文快照中；本页负责把前台条目、原文快照、JSON 快照和正式 Signal Card 串起来。
+> 本页直接投影自 Data Center V4 的 FDERecord。它是企业实施事实视图，不是第四类 Signal Card。
 
-## 1. 台湾产业巨头借助NVIDIA加速世界AI基础设施建设
+- [当日 V4 CanonicalEvent](../../11-databases/data-center-v4/2026-06-01/canonical-events.json)
 
-- card_id: `SIG-20260601-A03`
-- subject: NVIDIA
-- source_title: Taiwan’s Manufacturing Leaders Build the Future of AI, With NVIDIA AI
-- source_url: https://blogs.nvidia.com/blog/taiwan-ecosystem-ai-infrastructure
-- source_ref: n/a
-- title_translation_status: not_recorded
-- title_translation_method: not_recorded
-- fact_extraction_status: not_recorded
-- fact_extraction_method: not_recorded
-- raw_archive: [Raw 原文快照](../../01-raw/originals/2026-06-01/r-003-台湾产业巨头借助nvidia加速世界ai基础设施建设.md) / [Raw JSON](../../01-raw/originals/2026-06-01/r-003-台湾产业巨头借助nvidia加速世界ai基础设施建设.json)
-- signal_card: [Signal Card](../../../knowledge/01-Signal-Cards/case/2026-06-01--signal--nvidia-ai-auto-signal-p-003.md)
-- stage: 生产上线
-- scenario: 数据与知识工作
-- workflow: 企业数据接入与决策支持
-- demand: 发现的需求是企业数据、知识库或分析系统需要被 AI 调用，并在业务决策或工作流里形成可执行输出。
-- services: 提供的服务是面向企业数据接入与决策支持的平台或 Agent 系统，把数据、审批、工具调用和人工校验串成可运行流程。
-- result: 实施结果已经进入生产、部署或上线阶段；原文未披露可独立核验的 ROI 或长期运行指标。
-- source_basis: 台湾产业巨头借助NVIDIA加速世界AI基础设施建设
-- evidence_boundary: 已确认：台湾产业巨头借助NVIDIA加速世界AI基础设施建设；未确认：内部投入、ROI 与长期运行效果。
+## 1. Replit Expands Enterprise Leadership 与 Visa Investment and 达成商业合作
+
+- fde_id: `FDE-352f1b6aaa2066b8`
+- event_id: `EV-45be473baf6dfa4c`
+- event_time: 未披露
+- stage: announced
+- customer: 未披露
+- vendor: 未披露
+- industry: 未披露
+- use_case: , Payments Expansion, and Solution Partner Program
+- reported_need: 未披露
+- delivery_components: "The next generation of builders and companies is emerging within ecosystems like Replit has developed," said Rubail Birwadker, SVP, Head of Growth Products and Partnerships at Visa. "Our investment and partnership reflect a shared view that card payments should be native, secure and integrated directly into those experiences from the start, so developers can easily build commerce into applications and agents from day one."
+- reported_outcomes: 未披露
+- metrics: 50 million；85%
+- undisclosed_fields: customer；vendor；industry；workflow_before；workflow_after；delivery_model；team_composition；reported_need；systems_integrated；data_requirements；governance_controls；reported_outcomes
+- source: [keyword search / Anysearch](https://prnewswire.com/news-releases/replit-expands-enterprise-leadership-with-visa-investment-and-partnership-payments-expansion-and-solution-partner-program-302784366.html)

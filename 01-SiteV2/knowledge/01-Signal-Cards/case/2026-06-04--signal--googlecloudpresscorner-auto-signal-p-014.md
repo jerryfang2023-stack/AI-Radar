@@ -17,8 +17,9 @@ raw_refs: ["R-015"]
 pool_refs: ["P-014"]
 primary_raw:
   raw_ref: R-015
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-04/r-015-the-home-depot-delivers-customer-support-four-times-faster-using-googl.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-04/r-015-the-home-depot-delivers-customer-support-four-times-faster-using-googl.json"
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-04/r-009-the-home-depot-delivers-customer-support-four-times-faster-using-googl.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-04/r-009-the-home-depot-delivers-customer-support-four-times-faster-using-googl.json"
+  legacy_source_status: local_snapshot
   source_url: "https://www.googlecloudpresscorner.com/2026-04-22-The-Home-Depot-Delivers-Customer-Support-Four-Times-Faster-Using-Google-Clouds-Gemini-Enterprise-for-Customer-Experience"
   full_text_hash: "b677e6e048c7b8da"
   source_level: S

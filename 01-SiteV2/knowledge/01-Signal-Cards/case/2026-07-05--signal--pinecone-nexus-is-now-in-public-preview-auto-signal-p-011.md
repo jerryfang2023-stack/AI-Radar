@@ -16,8 +16,9 @@ raw_refs: ["R-011"]
 pool_refs: ["P-011"]
 primary_raw:
   raw_ref: R-011
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-07-05/r-011-pinecone-nexus-is-now-in-public-preview-pinecone.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-07-05/r-011-pinecone-nexus-is-now-in-public-preview-pinecone.json"
+  raw_archive: ""
+  raw_json: ""
+  legacy_source_status: external_only
   source_url: "https://www.pinecone.io/blog/pinecone-nexus-public-preview/"
   full_text_hash: "162fd52ced5fd0a3"
   source_level: B

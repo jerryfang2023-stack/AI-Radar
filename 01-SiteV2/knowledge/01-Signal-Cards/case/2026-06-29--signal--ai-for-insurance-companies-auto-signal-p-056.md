@@ -16,8 +16,9 @@ raw_refs: ["R-057"]
 pool_refs: ["P-056"]
 primary_raw:
   raw_ref: R-057
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-29/r-057-ai-for-insurance-companies-2026-costs-rules-and-roadmap.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-29/r-057-ai-for-insurance-companies-2026-costs-rules-and-roadmap.json"
+  raw_archive: ""
+  raw_json: ""
+  legacy_source_status: external_only
   source_url: "https://www.tommasomariaricci.com/blog/ai-for-insurance-companies"
   full_text_hash: "49a133d715d1424c"
   source_level: B

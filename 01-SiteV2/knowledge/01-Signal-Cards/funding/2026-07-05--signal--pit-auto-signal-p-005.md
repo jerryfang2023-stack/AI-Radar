@@ -16,8 +16,9 @@ raw_refs: ["R-005"]
 pool_refs: ["P-005"]
 primary_raw:
   raw_ref: R-005
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-07-05/r-005-pit-launches-with-16m-led-by-andreessen-horowitz-to-bring-ai-native-so.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-07-05/r-005-pit-launches-with-16m-led-by-andreessen-horowitz-to-bring-ai-native-so.json"
+  raw_archive: ""
+  raw_json: ""
+  legacy_source_status: external_only
   source_url: "https://pit.com/press/pit-launches-with-16m"
   full_text_hash: "94ec39a071a52a6c"
   source_level: B

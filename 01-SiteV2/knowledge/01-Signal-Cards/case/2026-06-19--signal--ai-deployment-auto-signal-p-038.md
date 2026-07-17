@@ -16,8 +16,9 @@ raw_refs: ["R-041"]
 pool_refs: ["P-038"]
 primary_raw:
   raw_ref: R-041
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-19/r-041-ai-deployment-the-definitive-guide-mirantis.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-19/r-041-ai-deployment-the-definitive-guide-mirantis.json"
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-19/r-054-ai-deployment-the-definitive-guide-mirantis.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-19/r-054-ai-deployment-the-definitive-guide-mirantis.json"
+  legacy_source_status: local_snapshot
   source_url: "https://www.mirantis.com/blog/ai-deployment-the-definitive-guide/"
   full_text_hash: "5fe33b20423c32e0"
   source_level: B

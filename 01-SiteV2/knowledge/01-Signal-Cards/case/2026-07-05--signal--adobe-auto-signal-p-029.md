@@ -16,8 +16,9 @@ raw_refs: ["R-029"]
 pool_refs: ["P-029"]
 primary_raw:
   raw_ref: R-029
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-07-05/r-029-adobe-expands-partner-ecosystem-to-deliver-frictionless-workflows.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-07-05/r-029-adobe-expands-partner-ecosystem-to-deliver-frictionless-workflows.json"
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-07-05/r-041-adobe-expands-partner-ecosystem-to-deliver-frictionless-workflows.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-07-05/r-041-adobe-expands-partner-ecosystem-to-deliver-frictionless-workflows.json"
+  legacy_source_status: local_snapshot
   source_url: "https://news.adobe.com/news/2026/04/adobe-expands-partner-ecosystem"
   full_text_hash: "ef266880d444dbf3"
   source_level: B

@@ -16,8 +16,9 @@ raw_refs: ["R-066"]
 pool_refs: ["P-053"]
 primary_raw:
   raw_ref: R-066
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-18/r-066-willow-launches-with-7m-to-build-the-future-of-enterprise-ai-agent-gov.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-18/r-066-willow-launches-with-7m-to-build-the-future-of-enterprise-ai-agent-gov.json"
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-18/r-072-willow-launches-with-7m-to-build-the-future-of-enterprise-ai-agent-gov.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-18/r-072-willow-launches-with-7m-to-build-the-future-of-enterprise-ai-agent-gov.json"
+  legacy_source_status: local_snapshot
   source_url: "https://withwillow.ai/blog/willow-7m-seed-funding"
   full_text_hash: "1813316511f838a0"
   source_level: B

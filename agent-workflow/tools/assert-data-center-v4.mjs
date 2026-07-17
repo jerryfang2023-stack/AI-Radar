@@ -37,6 +37,35 @@ function normalize(value) {
   return String(value ?? "").replace(/\s+/gu, " ").trim();
 }
 
+function normalizeUrl(value) {
+  const text = normalize(value);
+  if (!text) return "";
+  try {
+    const url = new URL(text);
+    url.hash = "";
+    url.hostname = url.hostname.toLowerCase().replace(/^www\./u, "");
+    url.pathname = url.pathname.replace(/\/+$/u, "") || "/";
+    return url.toString().replace(/\/$/u, "");
+  } catch {
+    return text.replace(/#.*$/u, "").replace(/\/$/u, "");
+  }
+}
+
+function relativeWorkspacePath(workspaceRoot, file) {
+  return path.relative(workspaceRoot, file).replace(/\\/gu, "/");
+}
+
+function resolveWorkspaceRef(workspaceRoot, ref) {
+  const text = normalize(ref);
+  if (!text) return { ok: false, reason: "empty" };
+  const file = path.resolve(workspaceRoot, text.replace(/\//gu, path.sep));
+  const relative = path.relative(workspaceRoot, file);
+  if (relative === "" || relative.startsWith(`..${path.sep}`) || path.isAbsolute(relative)) {
+    return { ok: false, reason: "outside workspace", file };
+  }
+  return { ok: true, file, relative: relative.replace(/\\/gu, "/") };
+}
+
 function validateSchema(bundle) {
   if (!schemaValidator) {
     const ajv = new Ajv2020({ allErrors: true, allowUnionTypes: true, strict: false });
@@ -251,6 +280,99 @@ export function evaluateBundle(bundle, taxonomy) {
   };
 }
 
+export function evaluateBundleFiles(bundle, options = {}) {
+  const workspaceRoot = path.resolve(options.workspaceRoot || root);
+  const date = normalize(options.date || bundle?.manifest?.date);
+  const rawRoot = path.join(workspaceRoot, "01-SiteV2/content/01-raw/originals", date);
+  const failures = [];
+  const warnings = [];
+  const sourceUrls = new Set();
+  const contentHashes = new Set();
+  const snapshotRefs = new Set();
+  const rawIds = new Set((bundle.raw_documents || []).map((item) => normalize(item.raw_id)).filter(Boolean));
+
+  for (const artifact of bundle.source_artifacts || []) {
+    const refs = Array.isArray(artifact.snapshot_refs) ? artifact.snapshot_refs.filter((value) => normalize(value)) : [];
+    if (!refs.length) failures.push(`${artifact.source_artifact_id}: snapshot_refs missing`);
+    for (const ref of refs) {
+      const resolved = resolveWorkspaceRef(workspaceRoot, ref);
+      if (!resolved.ok) {
+        failures.push(`${artifact.source_artifact_id}: snapshot_ref ${ref} is ${resolved.reason}`);
+        continue;
+      }
+      snapshotRefs.add(resolved.relative);
+      if (!fs.existsSync(resolved.file)) failures.push(`${artifact.source_artifact_id}: snapshot_ref does not exist: ${resolved.relative}`);
+    }
+    for (const value of [artifact.source_url, artifact.canonical_url]) {
+      const normalized = normalizeUrl(value);
+      if (normalized) sourceUrls.add(normalized);
+    }
+    if (normalize(artifact.content_hash)) contentHashes.add(normalize(artifact.content_hash));
+  }
+
+  for (const raw of bundle.raw_documents || []) {
+    for (const value of [raw.source_url, raw.canonical_url]) {
+      const normalized = normalizeUrl(value);
+      if (normalized) sourceUrls.add(normalized);
+    }
+    for (const value of [raw.content_hash, raw.evidence_hash]) {
+      if (normalize(value)) contentHashes.add(normalize(value));
+    }
+  }
+
+  for (const mapping of bundle.legacy_asset_mappings || []) {
+    if (!rawIds.has(normalize(mapping.raw_id))) failures.push(`${mapping.legacy_raw_id || mapping.legacy_path}: legacy mapping raw_id does not resolve`);
+    const resolved = resolveWorkspaceRef(workspaceRoot, mapping.legacy_path);
+    if (!resolved.ok) {
+      failures.push(`${mapping.legacy_raw_id || mapping.raw_id}: legacy_path ${mapping.legacy_path || "<empty>"} is ${resolved.reason}`);
+      continue;
+    }
+    snapshotRefs.add(resolved.relative);
+    if (!fs.existsSync(resolved.file)) failures.push(`${mapping.legacy_raw_id || mapping.raw_id}: legacy_path does not exist: ${resolved.relative}`);
+  }
+
+  const rawFiles = fs.existsSync(rawRoot)
+    ? fs.readdirSync(rawRoot, { withFileTypes: true }).filter((entry) => entry.isFile() && entry.name.endsWith(".json")).map((entry) => path.join(rawRoot, entry.name)).sort()
+    : [];
+  if (!fs.existsSync(rawRoot)) failures.push(`Raw snapshot directory does not exist: ${relativeWorkspacePath(workspaceRoot, rawRoot)}`);
+
+  let representedRawSnapshots = 0;
+  for (const file of rawFiles) {
+    const relative = relativeWorkspacePath(workspaceRoot, file);
+    if (snapshotRefs.has(relative)) {
+      representedRawSnapshots += 1;
+      continue;
+    }
+    let raw;
+    try {
+      raw = readJson(file);
+    } catch (error) {
+      failures.push(`${relative}: invalid Raw JSON (${error.message})`);
+      continue;
+    }
+    const urls = [raw.original_url, raw.source_url, raw.canonical_url].map(normalizeUrl).filter(Boolean);
+    const hashes = [raw.content_hash, raw.evidence_hash, raw.evidence_completeness?.evidence_hash].map(normalize).filter(Boolean);
+    if (urls.some((value) => sourceUrls.has(value)) || hashes.some((value) => contentHashes.has(value))) {
+      representedRawSnapshots += 1;
+      continue;
+    }
+    failures.push(`${relative}: current Raw snapshot is not represented in the V4 bundle`);
+  }
+
+  if (!rawFiles.length) warnings.push(`No Raw JSON snapshots found for ${date}.`);
+  return {
+    ok: failures.length === 0,
+    failures,
+    warnings,
+    metrics: {
+      current_raw_snapshot_count: rawFiles.length,
+      represented_raw_snapshot_count: representedRawSnapshots,
+      current_raw_snapshot_coverage: rawFiles.length ? representedRawSnapshots / rawFiles.length : 1,
+      existing_snapshot_ref_count: [...snapshotRefs].filter((ref) => fs.existsSync(path.join(workspaceRoot, ref.replace(/\//gu, path.sep)))).length
+    }
+  };
+}
+
 function markdownReport(date, result) {
   const lines = [
     `# Data Center V4 Integrity Gate — ${date}`,
@@ -267,6 +389,8 @@ function markdownReport(date, result) {
     `- ai_industry_scope_coverage: ${(result.metrics.ai_industry_scope_coverage * 100).toFixed(1)}%`,
     `- tag_evidence_coverage: ${(result.metrics.tag_evidence_coverage * 100).toFixed(1)}%`,
     `- facet_evidence_coverage: ${(result.metrics.facet_evidence_coverage * 100).toFixed(1)}%`,
+    `- current_raw_snapshot_coverage: ${((result.metrics.current_raw_snapshot_coverage ?? 1) * 100).toFixed(1)}%`,
+    `- current_raw_snapshots: ${result.metrics.current_raw_snapshot_count ?? "not checked"}`,
     "",
     "## Failures",
     "",
@@ -285,7 +409,15 @@ function main() {
   if (!date) throw new Error("No Data Center V4 bundle found. Pass --date=YYYY-MM-DD.");
   const bundle = readBundle(date);
   const taxonomy = readJson(taxonomyPath);
-  const result = evaluateBundle(bundle, taxonomy);
+  const dataResult = evaluateBundle(bundle, taxonomy);
+  const fileResult = evaluateBundleFiles(bundle, { date });
+  const result = {
+    ...dataResult,
+    ok: dataResult.ok && fileResult.ok,
+    failures: [...dataResult.failures, ...fileResult.failures],
+    warnings: [...dataResult.warnings, ...fileResult.warnings],
+    metrics: { ...dataResult.metrics, ...fileResult.metrics }
+  };
   const reportJson = path.join(reportRoot, `${date}-data-center-v4-integrity-gate.json`);
   const reportMd = path.join(reportRoot, `${date}-data-center-v4-integrity-gate.md`);
   writeJson(reportJson, { date, generated_at: new Date().toISOString(), ...result });

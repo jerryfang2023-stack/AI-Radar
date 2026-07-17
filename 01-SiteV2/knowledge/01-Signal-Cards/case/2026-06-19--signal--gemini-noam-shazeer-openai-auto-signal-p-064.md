@@ -16,8 +16,9 @@ raw_refs: ["R-109"]
 pool_refs: ["P-064"]
 primary_raw:
   raw_ref: R-109
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-19/r-109-gemini-联合负责人-noam-shazeer-加入-openai.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-19/r-109-gemini-联合负责人-noam-shazeer-加入-openai.json"
+  raw_archive: ""
+  raw_json: ""
+  legacy_source_status: external_only
   source_url: "https://the-decoder.com/googles-gemini-co-lead-noam-shazeer-joins-openai-after-two-year-return-stint"
   full_text_hash: "4d8c1b7cdd836908"
   source_level: A

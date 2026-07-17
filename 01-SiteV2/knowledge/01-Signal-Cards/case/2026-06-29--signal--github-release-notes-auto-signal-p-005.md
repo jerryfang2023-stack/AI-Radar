@@ -16,8 +16,9 @@ raw_refs: ["R-005"]
 pool_refs: ["P-005"]
 primary_raw:
   raw_ref: R-005
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-29/r-005-github-release-notes-june-2026-latest-updates-releasebot.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-29/r-005-github-release-notes-june-2026-latest-updates-releasebot.json"
+  raw_archive: ""
+  raw_json: ""
+  legacy_source_status: external_only
   source_url: "https://releasebot.io/updates/github"
   full_text_hash: "de517ba482d19e4b"
   source_level: B

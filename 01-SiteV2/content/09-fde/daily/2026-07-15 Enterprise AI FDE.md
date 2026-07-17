@@ -1,78 +1,99 @@
 ---
 type: enterprise_ai_fde_daily
 date: 2026-07-15
-enterprise_ai_lens_version: EAI-V1.2.0-raw-card-ingestion-boundary
-status: synced
-source: "01-SiteV2/site/data/v3-data-observation-desk.json"
-item_count: 3
+fde_version: FDE-V2.0
+status: current
+source: "01-SiteV2/content/11-databases/data-center-v4/2026-07-15/fde-records.json"
+item_count: 5
 ---
 
 # 2026-07-15 Enterprise AI / FDE
 
-本页是 Business Signals「企业 AI / FDE」二级镜头的 Obsidian 索引。原文不复制到本页，保留在 Raw 原文快照中；本页负责把前台条目、原文快照、JSON 快照和正式 Signal Card 串起来。
+> 本页直接投影自 Data Center V4 的 FDERecord。它是企业实施事实视图，不是第四类 Signal Card。
 
-## 1. Intercom 用 FDE 团队将 Fin 从 5 个设计伙伴扩展到 7000 个客户
+- [当日 V4 CanonicalEvent](../../11-databases/data-center-v4/2026-07-15/canonical-events.json)
 
-- card_id: `FDE-2026-07-15-P-026`
-- subject: Gainsight Software
-- source_title: How Forward Deployed Engineers Transformed Customer Outcomes for Intercom | Gainsight Software
-- source_url: https://www.gainsight.com/blog/how-forward-deployed-engineers-transformed-customer-outcomes-for-intercom/
-- source_ref: P-026
-- title_translation_status: translated
-- title_translation_method: fde_lens_source_rule
-- fact_extraction_status: extracted_at_fde_lens_pool_build
-- fact_extraction_method: pool_key_excerpts_and_fde_implementation_analysis
-- raw_archive: [Raw 原文快照](../../01-raw/originals/2026-07-15/r-026-how-forward-deployed-engineers-transformed-customer-outcomes-for-inter.md) / [Raw JSON](../../01-raw/originals/2026-07-15/r-026-how-forward-deployed-engineers-transformed-customer-outcomes-for-inter.json)
-- signal_card: lens-only，未生成正式 Signal Card
-- stage: 生产上线
-- scenario: 客户服务与销售
-- workflow: 客服响应、线索跟进与知识检索
-- demand: 企业客服 AI 需要在真实客户环境里解决知识接入、流程配置和上线扩展问题，而不是只交付通用模型能力。
-- services: FDE 团队嵌入 Intercom 的客户交付与工程流程，围绕 Fin 做客户需求拆解、系统适配、上线验证和扩展支持。
-- result: 来源披露 Fin 在 18 个月内从 5 个设计伙伴扩展到 7000 个客户，并达到 67% 的客户互动解决率；未披露独立 ROI。
-- source_basis: Gainsight 文章援引 Intercom 工程负责人 Diego Ballona 的案例：Intercom 的 Forward Deployed Engineering 团队帮助 AI 客服工具 Fin 在 18 个月内从 5 个设计伙伴扩展到 7000 个客户，并达到 67% 的客户互动解决率。
-- evidence_boundary: 已确认：Gainsight 文章援引 Intercom 工程负责人 Diego Ballona 的案例：Intercom 的 Forward Deployed Engineering 团队帮助 AI 客服工具 Fin 在 18 个月内从 5 个设计伙伴扩展到 7000 个客户，并达到 67% 的客户互动解决率。；未确认：内部投入、ROI 与长期运行效果。
+## 1. FuriosaAI 与 Broadcom 达成商业合作
 
-## 2. ServiceNow 与 Accenture 推出 FDE 项目，把 Agentic AI 工作流嵌入客户环境
+- fde_id: `FDE-08f12caedc3b2f13`
+- event_id: `EV-8fcb52bb6ec980af`
+- event_time: 2026-05-27T00:00:00.000Z
+- stage: announced
+- customer: 未披露
+- vendor: 未披露
+- industry: 未披露
+- use_case: Broadcom to build next-generation inference platform for the Agentic Era
+- reported_need: 未披露
+- delivery_components: The future of AI is not just about raw TFLOPS; it is about building a sustainable, efficient, and integrated infrastructure for all data centers. Through this partnership with Broadcom, and backed by the proven success of RNGD and our software stack, FuriosaAI is establishing the new standard for the world’s most demanding inference needs.
+- reported_outcomes: 未披露
+- metrics: 未披露
+- undisclosed_fields: customer；vendor；industry；workflow_before；workflow_after；delivery_model；team_composition；reported_need；systems_integrated；data_requirements；governance_controls；reported_outcomes
+- source: [keyword search / Anysearch](https://furiosa.ai/blog/furiosaai-partners-with-broadcom-to-build-next-generation-inference-platform-for-the-agentic-era)
 
-- card_id: `FDE-2026-07-15-P-058`
-- subject: ServiceNow and Accenture launch
-- source_title: ServiceNow and Accenture launch forward deployed engineering program to scale agentic AI across the enterprise – Company Announcement - FT.com
-- source_url: https://markets.ft.com/data/announce/full?dockey=600-202605061300BIZWIRE_USPRX____20260506_BW338822-1
-- source_ref: P-058
-- title_translation_status: translated
-- title_translation_method: fde_lens_source_rule
-- fact_extraction_status: extracted_at_fde_lens_pool_build
-- fact_extraction_method: pool_key_excerpts_and_fde_implementation_analysis
-- raw_archive: [Raw 原文快照](../../01-raw/originals/2026-07-15/r-058-servicenow-and-accenture-launch-forward-deployed-engineering-program-t.md) / [Raw JSON](../../01-raw/originals/2026-07-15/r-058-servicenow-and-accenture-launch-forward-deployed-engineering-program-t.json)
-- signal_card: lens-only，未生成正式 Signal Card
-- stage: 生产上线
-- scenario: 软件研发
-- workflow: 代码、审查与交付流程
-- demand: 企业希望把 agentic AI 从试点推进到生产工作流，需要行业工程师和平台工程师进入客户环境处理系统、数据和治理约束。
-- services: ServiceNow 与 Accenture 提供联合 FDE：在客户环境中组合 ServiceNow、客户和第三方 building blocks，构建原生运行在 ServiceNow AI Platform 上的 agentic workflows。
-- result: 来源披露客户可使用 300+ 预构建 AI agent skills/workflows，并由团队在 AI Control Tower 中展示价值指标；未披露具体客户名单或独立 ROI。
-- source_basis: ServiceNow 与 Accenture 公告称，双方推出 Forward Deployed Engineering 项目，ServiceNow AI-native FDE 团队与 Accenture 行业 FDE 进入共同客户环境，在 ServiceNow AI Platform 上构建 agentic AI 工作流，并通过 AI Control Tower 展示价值指标。
-- evidence_boundary: 已确认：ServiceNow 与 Accenture 公告称，双方推出 Forward Deployed Engineering 项目，ServiceNow AI-native FDE 团队与 Accenture 行业 FDE 进入共同客户环境，在 ServiceNow AI Platform 上构建 agentic AI 工作流，并通过 AI Control T...；未确...
+## 2. 支付宝与OPPO达成智能体跨端互联合作，小布可调用阿宝近200项服务
 
-## 3. IMS Gear 用 Synera Agentic AI 将 RFQ 从数周压缩到 10 分钟
+- fde_id: `FDE-a5d8dfac061bc21b`
+- event_id: `EV-02686922dd82c4aa`
+- event_time: 2026-07-15T02:10:51.000Z
+- stage: announced
+- customer: 未披露
+- vendor: 未披露
+- industry: 未披露
+- use_case: ，小布可调用阿宝近200项服务
+- reported_need: 未披露
+- delivery_components: 2026 年 7 月 7 日，支付宝正式上线 AI 开放平台，商家完成一次 AI 化接入后，可通过标准化 AHA 互联协议跨端分发至手机 AI 助手、智能车机、AI 眼镜、IoT 硬件等各类终端。
+- reported_outcomes: 未披露
+- metrics: 未披露
+- undisclosed_fields: customer；vendor；industry；workflow_before；workflow_after；delivery_model；team_composition；reported_need；systems_integrated；data_requirements；governance_controls；reported_outcomes
+- source: [IT之家（RSS）](https://ithome.com/0/976/823.htm)
 
-- card_id: `SIG-20260715-A04`
-- subject: IMS Gear
-- source_title: IMS Gear cuts RFQ to 10 minutes with agentic AI | Synera
-- source_url: https://www.synera.ai/news/ims-gear-agentic-rfq
-- source_ref: n/a
-- title_translation_status: translated
-- title_translation_method: fde_lens_source_rule
-- fact_extraction_status: extracted_at_fde_lens_pool_build
-- fact_extraction_method: known_fde_source_rule
-- raw_archive: [Raw 原文快照](../../01-raw/originals/2026-07-15/r-041-ims-gear-cuts-rfq-to-10-minutes-with-agentic-ai-synera.md) / [Raw JSON](../../01-raw/originals/2026-07-15/r-041-ims-gear-cuts-rfq-to-10-minutes-with-agentic-ai-synera.json)
-- signal_card: [Signal Card](../../../knowledge/01-Signal-Cards/case/2026-07-15--signal--ims-gear-auto-signal-p-041.md)
-- stage: 生产上线
-- scenario: 知识工作与协作
-- workflow: 会议记录、知识沉淀与团队协作
-- demand: 汽车零部件供应商的工程报价流程需要在多系统、多约束下快速完成 RFQ 分析和报价生成。
-- services: Synera 提供 agentic engineering workflow，IMS Gear 工程团队在其上构建 agent 团队，把客户需求、工程判断和报价步骤串成生产流程。
-- result: 来源披露该系统已在生产环境运行，处理 100+ 份报价，并把原本数周的 RFQ 流程缩短到 10 分钟。
-- source_basis: Synera 案例称，汽车 Tier 1 供应商 IMS Gear 在 Synera 上构建 agent 团队，把客户 RFQ 转成报价的流程从数周缩短到 10 分钟，系统已在生产中处理 100+ 份报价。
-- evidence_boundary: 已确认：Synera 案例称，汽车 Tier 1 供应商 IMS Gear 在 Synera 上构建 agent 团队，把客户 RFQ 转成报价的流程从数周缩短到 10 分钟，系统已在生产中处理 100+ 份报价。；未确认：内部投入、ROI 与长期运行效果。
+## 3. Canva Code 2.0 上线：代码生成提速 75%，从提示到发布提速 30%
+
+- fde_id: `FDE-7334c7781021c39a`
+- event_id: `EV-2d6d2dc0ead4be10`
+- event_time: 2026-07-15T01:03:34.000Z
+- stage: completed
+- customer: Canva
+- vendor: 未披露
+- industry: 未披露
+- use_case: ：代码生成提速 75%，从提示到发布提速 30%
+- reported_need: 未披露
+- delivery_components: AI 网页开发平台 Canva Code 2.0 上线：代码生成提速 75%，从提示到发布提速 30% - IT之家；AI 网页开发平台 Canva Code 2.0 上线：代码生成提速 75%，从提示到发布提速 30%；IT之家 7 月 15 日消息，Canva 昨日（7 月 14 日）发布公告， 宣布正式上线 Canva Code 2.0 版本，让完全不懂代码的用户通过聊天交互方式，直接做出互动网页、小游戏等。
+- reported_outcomes: 定位方面，Canva Code 2.0 是一款 AI 氛围编程（Vibe Coding）平台，让用户构建并可视化编辑网站、应用及交互体验，最新版本结合创意控制与最新 AI 编程模型，进一步降低交互体验设计门槛。
+- metrics: 75%；30%；75%；30%
+- undisclosed_fields: vendor；industry；workflow_before；workflow_after；delivery_model；team_composition；reported_need；systems_integrated；data_requirements；governance_controls
+- source: [IT之家（RSS）](https://ithome.com/0/976/803.htm)
+
+## 4. 软银与Sierra合作在日本推出AI客服服务
+
+- fde_id: `FDE-5eb94dcfc0585f6b`
+- event_id: `EV-76da9e22fccc8dff`
+- event_time: 2026-07-14T08:11:56.000Z
+- stage: completed
+- customer: 未披露
+- vendor: 未披露
+- industry: 未披露
+- use_case: 在日本推出AI客服服务
+- reported_need: 未披露
+- delivery_components: IT之家 7 月 14 日消息，软银公司今日宣布，在旗下纯线上移动通信品牌 LINEMO 部署美国 AI 初创公司 Sierra 的智能客服系统后，双方已达成合作，软银成为 Sierra 在日本的独家合作伙伴。
+- reported_outcomes: 未披露
+- metrics: 未披露
+- undisclosed_fields: customer；vendor；industry；workflow_before；workflow_after；delivery_model；team_composition；reported_need；systems_integrated；data_requirements；governance_controls；reported_outcomes
+- source: [IT之家（RSS）](https://ithome.com/0/976/568.htm)
+
+## 5. Sunrun 启动边缘 AI 推理节点部署试点，将分布式电力转化为算力
+
+- fde_id: `FDE-23584a4459506d65`
+- event_id: `EV-9f45aa7b5312420d`
+- event_time: 2026-07-14T06:54:17.000Z
+- stage: planned
+- customer: Sunrun
+- vendor: 未披露
+- industry: 未披露
+- use_case: 试点，将分布式电力转化为算力
+- reported_need: 未披露
+- delivery_components: 从分布式电力到分布式算力：Sunrun 在美启动边缘 AI 推理节点部署试点 - IT之家；从分布式电力到分布式算力：Sunrun 在美启动边缘 AI 推理节点部署试点；IT之家 7 月 14 日消息，自称美国最大家用电池储能、太阳能和家用并网电站供应商的 Sunrun 当地时间本月 8 日宣布启动一项边缘人工智能推理计算节点部署试点项目， 将分布式电力转化为分布式算力 。
+- reported_outcomes: 未披露
+- metrics: 未披露
+- undisclosed_fields: vendor；industry；workflow_before；workflow_after；delivery_model；team_composition；reported_need；systems_integrated；data_requirements；governance_controls；reported_outcomes
+- source: [IT之家（RSS）](https://ithome.com/0/976/491.htm)

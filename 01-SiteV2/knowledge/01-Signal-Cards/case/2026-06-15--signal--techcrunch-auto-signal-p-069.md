@@ -16,8 +16,9 @@ raw_refs: ["R-099"]
 pool_refs: ["P-069"]
 primary_raw:
   raw_ref: R-099
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-15/r-099-ai公司竞相上市-谁在搭便车.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-15/r-099-ai公司竞相上市-谁在搭便车.json"
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-15/r-098-ai公司竞相上市-谁在搭便车.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-15/r-098-ai公司竞相上市-谁在搭便车.json"
+  legacy_source_status: local_snapshot
   source_url: "https://techcrunch.com/2026/06/14/as-ai-companies-race-to-go-public-who-else-is-along-for-the-ride"
   full_text_hash: "4c80d6a5f4d59c3d"
   source_level: A

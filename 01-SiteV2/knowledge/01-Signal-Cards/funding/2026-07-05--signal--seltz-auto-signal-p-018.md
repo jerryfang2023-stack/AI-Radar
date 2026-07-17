@@ -16,8 +16,9 @@ raw_refs: ["R-018"]
 pool_refs: ["P-018"]
 primary_raw:
   raw_ref: R-018
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-07-05/r-018-seltz-raises-12-5m-seed-to-rebuild-web-search-for-ai-agents.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-07-05/r-018-seltz-raises-12-5m-seed-to-rebuild-web-search-for-ai-agents.json"
+  raw_archive: ""
+  raw_json: ""
+  legacy_source_status: external_only
   source_url: "https://fundraiseinsider.com/blog/seltz-raises-12-5m-seed-to-rebuild-web-search-for-ai-agents/"
   full_text_hash: "b45763e5a49e1ef1"
   source_level: B

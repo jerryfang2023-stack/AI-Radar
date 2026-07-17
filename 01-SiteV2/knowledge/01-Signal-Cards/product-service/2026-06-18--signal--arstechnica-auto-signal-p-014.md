@@ -16,8 +16,9 @@ raw_refs: ["R-014"]
 pool_refs: ["P-014"]
 primary_raw:
   raw_ref: R-014
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-18/r-014-anthropic-的-claude-fable-5-和-mythos-5-因美国出口管制下线.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-18/r-014-anthropic-的-claude-fable-5-和-mythos-5-因美国出口管制下线.json"
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-18/r-015-anthropic-的-claude-fable-5-和-mythos-5-因美国出口管制下线.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-18/r-015-anthropic-的-claude-fable-5-和-mythos-5-因美国出口管制下线.json"
+  legacy_source_status: local_snapshot
   source_url: "https://arstechnica.com/ai/2026/06/dangerous-ai-models-are-coming-no-matter-what"
   full_text_hash: "a08cee50d798634f"
   source_level: A

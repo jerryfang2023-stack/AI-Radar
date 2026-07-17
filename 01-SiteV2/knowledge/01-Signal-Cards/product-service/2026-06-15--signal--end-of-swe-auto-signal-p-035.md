@@ -16,8 +16,9 @@ raw_refs: ["R-045"]
 pool_refs: ["P-035"]
 primary_raw:
   raw_ref: R-045
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-15/r-045-the-end-of-swe-bench-verified-mia-glaese-amp-olivia-watkins-openai-fro.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-15/r-045-the-end-of-swe-bench-verified-mia-glaese-amp-olivia-watkins-openai-fro.json"
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-15/r-052-the-end-of-swe-bench-verified-mia-glaese-amp-olivia-watkins-openai-fro.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-15/r-052-the-end-of-swe-bench-verified-mia-glaese-amp-olivia-watkins-openai-fro.json"
+  legacy_source_status: local_snapshot
   source_url: "https://www.latent.space/p/swe-bench-dead"
   full_text_hash: "46f9c983b6a5af64"
   source_level: B

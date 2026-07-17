@@ -16,8 +16,9 @@ raw_refs: ["R-034"]
 pool_refs: ["P-034"]
 primary_raw:
   raw_ref: R-034
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-18/r-034-博客现状-2026年中.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-18/r-034-博客现状-2026年中.json"
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-18/r-038-博客现状-2026年中.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-18/r-038-博客现状-2026年中.json"
+  legacy_source_status: local_snapshot
   source_url: "https://www.interconnects.ai/p/state-of-the-blog-mid-2026"
   full_text_hash: "0f0e553cc9a93760"
   source_level: B

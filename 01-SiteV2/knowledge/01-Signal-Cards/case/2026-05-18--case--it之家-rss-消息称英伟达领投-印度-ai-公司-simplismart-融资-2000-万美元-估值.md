@@ -22,8 +22,9 @@ raw_refs: ["R-011"]
 pool_refs: ["P-006"]
 primary_raw:
   raw_ref: R-011
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-05-18/r-011-消息称英伟达领投-印度-ai-公司-simplismart-融资-2000-万美元-估值约-1-亿美元.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-05-18/r-011-消息称英伟达领投-印度-ai-公司-simplismart-融资-2000-万美元-估值约-1-亿美元.json"
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-05-18/r-008-消息称英伟达领投-印度-ai-公司-simplismart-融资-2000-万美元-估值约-1-亿美元.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-05-18/r-008-消息称英伟达领投-印度-ai-公司-simplismart-融资-2000-万美元-估值约-1-亿美元.json"
+  legacy_source_status: local_snapshot
   source_url: "https://www.ithome.com/0/951/600.htm"
   full_text_hash: "dd279e50d924db4e"
   source_level: B

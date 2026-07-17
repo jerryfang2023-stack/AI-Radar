@@ -1,31 +1,39 @@
 #!/usr/bin/env node
+
 import { execFileSync } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
 
 const root = process.cwd();
-const dataFile = path.join(root, "01-SiteV2", "site", "data", "v3-data-observation-desk.json");
-const payload = JSON.parse(fs.readFileSync(dataFile, "utf8"));
+const dataRoot = path.join(root, "01-SiteV2/content/11-databases/data-center-v4");
 const node = process.execPath;
 
-function datesFor(field) {
-  return [...new Set((payload[field] || []).map((item) => item.date).filter(Boolean))].sort().reverse();
+function datesFor(name) {
+  return fs.readdirSync(dataRoot, { withFileTypes: true })
+    .filter((entry) => entry.isDirectory() && /^\d{4}-\d{2}-\d{2}$/u.test(entry.name))
+    .map((entry) => entry.name)
+    .filter((date) => {
+      const file = path.join(dataRoot, date, `${name}.json`);
+      return fs.existsSync(file) && JSON.parse(fs.readFileSync(file, "utf8")).length > 0;
+    })
+    .sort().reverse();
 }
 
-function run(script, date) {
-  const output = execFileSync(node, [script, `--date=${date}`], {
-    cwd: root,
-    encoding: "utf8",
-    stdio: ["ignore", "pipe", "pipe"],
-  });
+function run(script, date, extraArgs = []) {
+  const output = execFileSync(node, [script, `--date=${date}`, ...extraArgs], { cwd: root, encoding: "utf8", stdio: ["ignore", "pipe", "pipe"] });
   return JSON.parse(output);
 }
 
-const fde = datesFor("enterpriseAiTransformation").map((date) => run("agent-workflow/tools/sync-enterprise-ai-fde-to-obsidian.mjs", date));
-const aiHardware = datesFor("aiHardwareSignals").map((date) => run("agent-workflow/tools/sync-ai-hardware-to-obsidian.mjs", date));
+const fdeDates = datesFor("fde-records");
+const hardwareDates = datesFor("hardware-records");
+const fde = fdeDates.map((date) => run("agent-workflow/tools/sync-enterprise-ai-fde-to-obsidian.mjs", date, ["--skip-index=true"]));
+const aiHardware = hardwareDates.map((date) => run("agent-workflow/tools/sync-ai-hardware-to-obsidian.mjs", date, ["--skip-index=true"]));
+if (fdeDates.length) run("agent-workflow/tools/sync-enterprise-ai-fde-to-obsidian.mjs", fdeDates[0]);
+if (hardwareDates.length) run("agent-workflow/tools/sync-ai-hardware-to-obsidian.mjs", hardwareDates[0]);
 
 console.log(JSON.stringify({
   ok: true,
+  source: "Data Center V4 daily bundles",
   fde: { dates: fde.length, items: fde.reduce((sum, result) => sum + result.items, 0) },
-  aiHardware: { dates: aiHardware.length, items: aiHardware.reduce((sum, result) => sum + result.items, 0), missingRaw: aiHardware.reduce((sum, result) => sum + result.missingRaw, 0) },
+  aiHardware: { dates: aiHardware.length, items: aiHardware.reduce((sum, result) => sum + result.items, 0), missingRaw: 0 }
 }, null, 2));

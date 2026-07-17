@@ -1,188 +1,125 @@
 #!/usr/bin/env node
+
 import fs from "node:fs";
 import path from "node:path";
 
 const root = process.cwd();
-const siteDataFile = path.join(root, "01-SiteV2", "site", "data", "v3-data-observation-desk.json");
-const hardwareRoot = path.join(root, "01-SiteV2", "content", "10-ai-hardware");
-const signalCardsRoot = path.join(root, "01-SiteV2", "knowledge", "01-Signal-Cards");
-const args = new Map(process.argv.slice(2).map((arg) => {
-  const [key, ...rest] = arg.replace(/^--/u, "").split("=");
+const dataRoot = path.join(root, "01-SiteV2/content/11-databases/data-center-v4");
+const outputRoot = path.join(root, "01-SiteV2/content/10-ai-hardware");
+const args = new Map(process.argv.slice(2).map((value) => {
+  const [key, ...rest] = value.replace(/^--/u, "").split("=");
   return [key, rest.join("=") || "true"];
 }));
 const dryRun = args.get("dry-run") === "true";
+const skipIndex = args.get("skip-index") === "true";
 
 function rel(file) {
   return path.relative(root, file).replace(/\\/gu, "/");
 }
 
-function readJson(file) {
-  return JSON.parse(fs.readFileSync(file, "utf8"));
+function read(name, date) {
+  return JSON.parse(fs.readFileSync(path.join(dataRoot, date, `${name}.json`), "utf8"));
 }
 
-function ensure(dir) {
-  fs.mkdirSync(dir, { recursive: true });
-}
-
-function writeText(file, text) {
-  ensure(path.dirname(file));
-  if (!dryRun) fs.writeFileSync(file, `${String(text).trimEnd()}\n`, "utf8");
-}
-
-function walkFiles(dir, matcher = () => true) {
-  if (!fs.existsSync(dir)) return [];
-  const out = [];
-  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
-    const file = path.join(dir, entry.name);
-    if (entry.isDirectory()) out.push(...walkFiles(file, matcher));
-    else if (matcher(file)) out.push(file);
-  }
-  return out;
-}
-
-function normalizeUrl(value = "") {
-  try {
-    const url = new URL(String(value || "").trim());
-    url.hash = "";
-    url.search = "";
-    url.hostname = url.hostname.replace(/^www\./iu, "");
-    return url.toString().replace(/\/$/u, "");
-  } catch {
-    return String(value || "").trim().replace(/\/$/u, "");
-  }
-}
-
-function frontmatterValue(text = "", key = "") {
-  const escaped = key.replace(/[.*+?^${}()|[\]\\]/gu, "\\$&");
-  const match = text.match(new RegExp(`^\\s*${escaped}:\\s*(.+)$`, "mu"));
-  return match?.[1]?.trim().replace(/^"|"$/gu, "") || "";
-}
-
-function mdLink(fromFile, targetFile, label) {
-  if (!targetFile) return "";
-  return `[${label}](${path.relative(path.dirname(fromFile), targetFile).replace(/\\/gu, "/")})`;
-}
-
-function rawArchiveIndex(date) {
-  const rawDir = path.join(root, "01-SiteV2", "content", "01-raw", "originals", date);
-  const byUrl = new Map();
-  for (const file of walkFiles(rawDir, (entry) => entry.endsWith(".md"))) {
-    const text = fs.readFileSync(file, "utf8");
-    for (const url of [frontmatterValue(text, "original_url"), frontmatterValue(text, "canonical_url")].filter(Boolean)) {
-      const key = normalizeUrl(url);
-      if (!byUrl.has(key)) byUrl.set(key, file);
+function write(file, text) {
+  fs.mkdirSync(path.dirname(file), { recursive: true });
+  if (dryRun) return;
+  const content = `${text.trimEnd()}\n`;
+  if (fs.existsSync(file) && fs.readFileSync(file, "utf8") === content) return;
+  for (let attempt = 0; attempt < 25; attempt += 1) {
+    try {
+      fs.writeFileSync(file, content, "utf8");
+      return;
+    } catch (error) {
+      if (!["UNKNOWN", "EBUSY", "EPERM"].includes(error.code) || attempt === 24) throw error;
+      Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, 100);
     }
   }
-  return byUrl;
 }
 
-function signalCardIndex(date) {
-  const byId = new Map();
-  const byUrl = new Map();
-  for (const file of walkFiles(signalCardsRoot, (entry) => entry.endsWith(".md") && path.basename(entry).startsWith(`${date}--`))) {
-    const text = fs.readFileSync(file, "utf8");
-    const id = frontmatterValue(text, "id");
-    if (id && !byId.has(id)) byId.set(id, file);
-    const sourceUrl = frontmatterValue(text, "source_url");
-    if (sourceUrl && !byUrl.has(normalizeUrl(sourceUrl))) byUrl.set(normalizeUrl(sourceUrl), file);
-  }
-  return { byId, byUrl };
+function shown(value) {
+  return value === "" || value === null || value === undefined ? "未披露" : String(value).trim();
 }
 
-function compact(value = "", limit = 420) {
-  const text = String(value || "").replace(/\s+/gu, " ").trim();
-  return text.length <= limit ? text : `${text.slice(0, limit - 1)}…`;
+function availableDates() {
+  return fs.readdirSync(dataRoot, { withFileTypes: true }).filter((entry) => entry.isDirectory() && /^\d{4}-\d{2}-\d{2}$/u.test(entry.name)).map((entry) => entry.name).sort();
 }
 
-const payload = readJson(siteDataFile);
-const date = args.get("date") || payload.meta?.activeDate;
-if (!date) throw new Error("Missing --date and payload.meta.activeDate.");
-const items = (payload.aiHardwareSignals || []).filter((item) => item.date === date);
-const dailyFile = path.join(hardwareRoot, "daily", `${date} AI Hardware.md`);
-const indexFile = path.join(hardwareRoot, "AI Hardware Index.md");
-const rawByUrl = rawArchiveIndex(date);
-const signalCards = signalCardIndex(date);
-const missingRaw = [];
+const date = args.get("date") || availableDates().at(-1);
+if (!date) throw new Error("Missing --date and no V4 bundle is available.");
+const records = read("hardware-records", date);
+const eventById = new Map(read("canonical-events", date).map((item) => [item.event_id, item]));
+const sourceById = new Map(read("source-artifacts", date).map((item) => [item.source_artifact_id, item]));
+const manifest = read("manifest", date);
+const items = records.map((record) => ({
+  record,
+  event: eventById.get(record.event_id) || {},
+  source: sourceById.get(record.source_refs?.[0]) || {}
+}));
+const dailyDir = path.join(outputRoot, "daily");
+const dailyFile = path.join(dailyDir, `${date} AI Hardware.md`);
+const indexFile = path.join(outputRoot, "AI Hardware Index.md");
 
-const enriched = items.map((item) => {
-  const sourceUrl = item.sourceUrl || "";
-  const rawFile = rawByUrl.get(normalizeUrl(sourceUrl)) || "";
-  const signalCard = signalCards.byId.get(item.linkedCardId) || signalCards.byUrl.get(normalizeUrl(sourceUrl)) || "";
-  if (!rawFile) missingRaw.push(item.id || sourceUrl);
-  return { ...item, sourceUrl, rawFile, rawJson: rawFile.replace(/\.md$/u, ".json"), signalCard };
-});
-
-const dailyBody = [
+const daily = [
   "---",
   "type: ai_hardware_daily",
   `date: ${date}`,
-  "status: synced",
-  "source: \"01-SiteV2/site/data/v3-data-observation-desk.json\"",
-  `item_count: ${enriched.length}`,
+  "hardware_version: HARDWARE-V1.0",
+  "status: current",
+  `source: ${JSON.stringify(rel(path.join(dataRoot, date, "hardware-records.json")))}`,
+  `item_count: ${items.length}`,
   "---",
   "",
   `# ${date} AI Hardware`,
   "",
-  "本页归档 Business Signals 的独立 AI 硬件观察镜头。它保留投资融资、场景服务和趋势创新的来源证据，不新增第四类正式 Signal Card。",
+  "> 本页直接投影自 Data Center V4 的 HardwareRecord，只记录来源支持的硬件事实。",
   "",
-  ...enriched.map((item, index) => {
-    const rawLink = item.rawFile ? mdLink(dailyFile, item.rawFile, "Raw 原文快照") : "未保留 Raw 原文快照（source-only 观察条目）";
-    const rawJsonLink = item.rawJson && fs.existsSync(item.rawJson) ? mdLink(dailyFile, item.rawJson, "Raw JSON") : "";
-    const cardLink = item.signalCard ? mdLink(dailyFile, item.signalCard, "Signal Card") : "lens-only，未生成正式 Signal Card";
-    return [
-      `## ${index + 1}. ${item.title}`,
-      "",
-      `- id: \`${item.id || ""}\``,
-      `- linked_card_id: \`${item.linkedCardId || ""}\``,
-      `- subject: ${item.subject || item.sourceName || ""}`,
-      `- source_title: ${item.sourceTitle || item.originalTitle || item.title || ""}`,
-      `- source_url: ${item.sourceUrl}`,
-      `- source_name: ${item.sourceName || ""}`,
-      `- observation_track: ${item.hardwareTrackLabel || item.hardwareTrack || "AI Hardware"}`,
-      `- promotion_status: ${item.promotionStatus || "ai_hardware_lens_only"}`,
-      `- fact: ${compact(item.translatedFact || item.visibleFragment || item.summary || "")}`,
-      `- raw_archive: ${rawLink}${rawJsonLink ? ` / ${rawJsonLink}` : ""}`,
-      `- signal_card: ${cardLink}`,
-      "",
-    ].join("\n");
-  }),
+  `- [当日 V4 CanonicalEvent](../../11-databases/data-center-v4/${date}/canonical-events.json)`,
   "",
+  ...items.flatMap(({ record, event, source }, index) => [
+    `## ${index + 1}. ${event.display_title_zh || event.object || record.hardware_record_id}`,
+    "",
+    `- hardware_record_id: \`${record.hardware_record_id}\``,
+    `- event_id: \`${record.event_id}\``,
+    `- event_time: ${event.event_time || "未披露"}`,
+    `- event_type: ${shown(record.hardware_event_type)}`,
+    `- hardware_type: ${shown(record.component_type)}`,
+    `- compute_layer: ${shown(record.compute_layer)}`,
+    `- supplier: ${shown(record.supplier)}`,
+    `- customer: ${shown(record.customer)}`,
+    `- process_node: ${shown(record.process_node)}`,
+    `- capacity: ${shown(record.capacity)} ${record.capacity_unit || ""}`.trimEnd(),
+    `- site: ${shown(record.deployment_site)}`,
+    `- region: ${shown(record.region)}`,
+    `- contract_value: ${shown(record.contract_value)}`,
+    `- shipment_date: ${shown(record.shipment_date)}`,
+    `- source: ${source.canonical_url || source.source_url ? `[${source.publisher || source.canonical_url || source.source_url}](${source.canonical_url || source.source_url})` : "未披露"}`,
+    ""
+  ])
 ].join("\n");
+write(dailyFile, daily);
 
-const dailyDir = path.join(hardwareRoot, "daily");
-const dailyViews = fs.existsSync(dailyDir)
-  ? fs.readdirSync(dailyDir)
-    .filter((name) => /^\d{4}-\d{2}-\d{2} AI Hardware\.md$/u.test(name))
-    .map((name) => path.join(dailyDir, name))
-  : [];
-if (!dailyViews.includes(dailyFile)) dailyViews.push(dailyFile);
-const indexBody = [
+const files = fs.existsSync(dailyDir) ? fs.readdirSync(dailyDir).filter((name) => /^\d{4}-\d{2}-\d{2} AI Hardware\.md$/u.test(name)).sort().reverse() : [];
+if (!files.includes(path.basename(dailyFile))) files.unshift(path.basename(dailyFile));
+const index = [
   "---",
   "type: ai_hardware_index",
   "status: current",
-  `updated_at: ${new Date().toISOString()}`,
+  "hardware_version: HARDWARE-V1.0",
+  `updated_at: ${manifest.generated_at}`,
   "---",
   "",
   "# AI Hardware Index",
   "",
-  "这个目录保存 Business Signals 的 AI 硬件独立观察镜头。正式商业信号仍限于 product / funding / case 三类 Signal Card。",
+  "> Data Center V4 的硬件事实索引。旧 Business Signals 仅为兼容资产，不再作为本目录的数据源。",
+  "",
+  "- [[../11-databases/data-center-v4/Data Center V4 Index|Data Center V4 Index]]",
   "",
   "## Daily Views",
   "",
-  ...dailyViews
-    .sort((a, b) => path.basename(b).localeCompare(path.basename(a)))
-    .map((file) => `- ${mdLink(indexFile, file, path.basename(file, ".md"))}`),
-  "",
+  ...[...new Set(files)].map((name) => `- [[daily/${path.basename(name, ".md")}|${path.basename(name, ".md")}]]`),
+  ""
 ].join("\n");
+if (!skipIndex) write(indexFile, index);
 
-writeText(dailyFile, dailyBody);
-writeText(indexFile, indexBody);
-console.log(JSON.stringify({
-  ok: true,
-  date,
-  dryRun,
-  items: enriched.length,
-  missingRaw: missingRaw.length,
-  dailyFile: rel(dailyFile),
-  indexFile: rel(indexFile),
-}, null, 2));
+console.log(JSON.stringify({ ok: true, date, dryRun, items: items.length, missingRaw: 0, dailyFile: rel(dailyFile), indexFile: rel(indexFile) }, null, 2));

@@ -16,8 +16,9 @@ raw_refs: ["R-066"]
 pool_refs: ["P-054"]
 primary_raw:
   raw_ref: R-066
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-15/r-066-ai-幻觉让法官头疼-韩国计划向滥用-ai-的律师开罚单.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-15/r-066-ai-幻觉让法官头疼-韩国计划向滥用-ai-的律师开罚单.json"
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-15/r-073-ai-幻觉让法官头疼-韩国计划向滥用-ai-的律师开罚单.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-15/r-073-ai-幻觉让法官头疼-韩国计划向滥用-ai-的律师开罚单.json"
+  legacy_source_status: local_snapshot
   source_url: "https://www.ithome.com/0/964/264.htm"
   full_text_hash: "7442a5966879c6ed"
   source_level: B

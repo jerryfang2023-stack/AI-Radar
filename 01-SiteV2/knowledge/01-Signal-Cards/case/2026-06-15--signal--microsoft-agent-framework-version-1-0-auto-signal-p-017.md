@@ -16,8 +16,9 @@ raw_refs: ["R-017"]
 pool_refs: ["P-017"]
 primary_raw:
   raw_ref: R-017
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-15/r-017-microsoft-agent-framework-version-1-0-microsoft-agent-framework.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-15/r-017-microsoft-agent-framework-version-1-0-microsoft-agent-framework.json"
+  raw_archive: ""
+  raw_json: ""
+  legacy_source_status: external_only
   source_url: "https://devblogs.microsoft.com/agent-framework/microsoft-agent-framework-version-1-0/"
   full_text_hash: "0fa32c22bc954236"
   source_level: S
