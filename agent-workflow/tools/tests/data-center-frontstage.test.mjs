@@ -295,15 +295,20 @@ test("commercial events prioritize financing and cases before products and other
   assert.match(script, /a\.index - b\.index/u);
 });
 
-test("company and product records share one entity index", () => {
+test("formal entities and classification nodes share one entity index", () => {
   const script = fs.readFileSync(path.join(root, "01-SiteV2/site/assets/data-center-v4.js"), "utf8");
 
   assert.match(script, /index: \{ title: "实体索引"/u);
   assert.match(script, /function entityIndexItems\(data\)/u);
-  assert.match(script, /\.\.\.data\.companies\.map/u);
-  assert.match(script, /\.\.\.data\.products\.map/u);
+  assert.match(script, /\.\.\.\(data\.companies \|\| \[\]\)\.map/u);
+  assert.match(script, /\.\.\.\(data\.products \|\| \[\]\)\.map/u);
+  assert.match(script, /\.\.\.\(data\.people \|\| \[\]\)\.map/u);
+  assert.match(script, /\.\.\.\(data\.taxonomyNodes \|\| \[\]\)\.map/u);
   assert.match(script, /label: "公司与机构"/u);
-  assert.match(script, /label: "产品与模型"/u);
+  assert.match(script, /label: "产品模型服务"/u);
+  assert.match(script, /label: "人物"/u);
+  assert.match(script, /label: "AI 技术"/u);
+  assert.match(script, /label: "场景与行业"/u);
   assert.match(script, /legacyView === "companies" \|\| legacyView === "products"/u);
   assert.match(script, /detailLink\("index", item\.detailKind, item\.id\)/u);
   assert.match(script, /isIndex && params\.get\("type"\)/u);

@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T15:01:31.906Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 748,
+    "quarantinedEventCount": 32
+  },
+  "entity": {
+    "id": "EN-ef8ef0d64526209a",
+    "name": "Gaode",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [
+      "高德"
+    ],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-ffc283de5ef01169",
+      "EV-f6ac2938949f74ec",
+      "EV-83c841a4c42cfdea"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-06",
+    "lastSeen": "2026-07-17",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [
+        "EV-ffc283de5ef01169"
+      ],
+      "partnerships": [],
+      "productsServices": [
+        "EV-f6ac2938949f74ec",
+        "EV-83c841a4c42cfdea"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-f6ac2938949f74ec",
+        "dataDate": "2026-07-17",
+        "date": "2026-07-16",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "阿里千问首款 AI 智能体耳机将在 WAIC 亮相",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "ai_device",
+            "dimensionName": "产品形态",
+            "name": "AI 设备"
+          },
+          {
+            "dimensionId": "product_form",
+            "id": "ai_application",
+            "dimensionName": "产品形态",
+            "name": "AI 应用"
+          }
+        ],
+        "entityIds": [
+          "EN-047364b9be67f665",
+          "EN-88e2cce43eeadb36",
+          "EN-ef8ef0d64526209a"
+        ]
+      },
+      {
+        "id": "EV-83c841a4c42cfdea",
+        "dataDate": "2026-07-15",
+        "date": "2026-07-14",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "高德发布通用世界模型工坊 ABot-WorldStudio，已开放测试",
+        "displayTags": [],
+        "entityIds": [
+          "EN-ef8ef0d64526209a",
+          "EN-047364b9be67f665"
+        ]
+      },
+      {
+        "id": "EV-ffc283de5ef01169",
+        "dataDate": "2026-07-07",
+        "date": "2026-07-06",
+        "eventType": "deployment",
+        "eventTypeLabel": "部署",
+        "eventGroup": "部署与案例",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "高德 AI 专车升级：一句话叫来个性化专车，首批上线北京、上海等",
+        "displayTags": [],
+        "entityIds": [
+          "EN-ef8ef0d64526209a"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [
+    {
+      "id": "FDE-4967e65118b5fa74",
+      "eventId": "EV-ffc283de5ef01169",
+      "dataDate": "2026-07-07",
+      "date": "2026-07-06",
+      "title": "高德 AI 专车升级：一句话叫来个性化专车，首批上线北京、上海等",
+      "stage": "completed",
+      "stageLabel": "已完成",
+      "customer": "Gaode",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "北京、上海等",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "目前，该能力已在高德地图上线， 服务覆盖北京、上海、杭州、成都等首批城市 ，用户更新至最新版本 App 即可体验。"
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/973/193.htm",
+      "entityIds": [
+        "EN-ef8ef0d64526209a"
+      ]
+    }
+  ],
+  "hardware": []
+}

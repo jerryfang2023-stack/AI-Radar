@@ -1,0 +1,279 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T15:01:31.906Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 748,
+    "quarantinedEventCount": 32
+  },
+  "entity": {
+    "id": "EN-a1b0d8a938903dc7",
+    "name": "Jetson Thor",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-69784fe31cfdfc44"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [
+      "EN-8d4321d936320802"
+    ],
+    "firstSeen": "2026-07-16",
+    "lastSeen": "2026-07-17",
+    "relationIds": [
+      "REL2-e450a1c99a5b2883"
+    ],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [
+        "EV-69784fe31cfdfc44",
+        "EV-303b418c63895ba6"
+      ],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-69784fe31cfdfc44",
+        "dataDate": "2026-07-17",
+        "date": "2026-07-16",
+        "eventType": "hardware_product",
+        "eventTypeLabel": "硬件产品",
+        "eventGroup": "AI 硬件",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "NVIDIA 扩展 Jetson Thor 计算机家族，新增 T3000、T2000 模组",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "compute_system",
+            "dimensionName": "产品形态",
+            "name": "计算系统"
+          }
+        ],
+        "entityIds": [
+          "EN-8d4321d936320802",
+          "EN-a1b0d8a938903dc7",
+          "EN-7d3c95ebe1221dbb"
+        ]
+      },
+      {
+        "id": "EV-303b418c63895ba6",
+        "dataDate": "2026-07-16",
+        "date": "2026-07-16",
+        "eventType": "hardware_product",
+        "eventTypeLabel": "硬件产品",
+        "eventGroup": "AI 硬件",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "NVIDIA 发布新款 Jetson Thor 计算机，推动机器人与边缘 AI 普及",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "chip_accelerator",
+            "dimensionName": "产品形态",
+            "name": "芯片与加速器"
+          },
+          {
+            "dimensionId": "use_case",
+            "id": "robotics_automation",
+            "dimensionName": "应用场景",
+            "name": "机器人与物理自动化"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体"
+          },
+          {
+            "dimensionId": "target_user",
+            "id": "developer",
+            "dimensionName": "目标用户",
+            "name": "开发者"
+          }
+        ],
+        "entityIds": [
+          "EN-8d4321d936320802",
+          "EN-cbc62794911ff31b"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [
+    {
+      "id": "EN-8d4321d936320802",
+      "name": "NVIDIA",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-4eaf3aabecae6016",
+        "EV-ed65f3187aa6aa40",
+        "EV-60b2d4d401bf5e97",
+        "EV-e41fc65eb014893f",
+        "EV-39894e375aacee77",
+        "EV-efca54f3b07072a6",
+        "EV-80e54c9a390da293",
+        "EV-d16fc5601c04a6a2",
+        "EV-236cbc2d64f0c455",
+        "EV-6180de2e02597d9d",
+        "EV-968709fe29b77eba",
+        "EV-adafffa563a53d49",
+        "EV-1f842e1dff69bb87",
+        "EV-9a7cd217a7a9a51c",
+        "EV-cafe435ddd007821",
+        "EV-283e88bdd15ed87e",
+        "EV-234ad54940674bf6",
+        "EV-5b16886442234f81",
+        "EV-ef6464cf7f764835",
+        "EV-b95539d17772a4ce",
+        "EV-f63462e34ea40699",
+        "EV-4faa2bcf2e42e60c",
+        "EV-9ee3c0ec243b6129",
+        "EV-58c1cc3749294649",
+        "EV-69784fe31cfdfc44",
+        "EV-c2800c1c5a3f568f",
+        "EV-303b418c63895ba6",
+        "EV-bb6d9e43c082fb47",
+        "EV-dfc634f28a70f423",
+        "EV-082314251be505e2",
+        "EV-0a5e65aa46b0d194",
+        "EV-53f881da31630a04",
+        "EV-3028dfadf94c8f4c",
+        "EV-412a140df8d75c45",
+        "EV-53564b1f0fd2214b",
+        "EV-09610316ac52221e",
+        "EV-c0f86afbefa2e0a6",
+        "EV-c718a5ff4b0acd66",
+        "EV-722c2a8dd6b70abd",
+        "EV-6eb9a23be3117421",
+        "EV-13f105479652938d",
+        "EV-3456f723929eff1b",
+        "EV-66338f5fb682617e",
+        "EV-568d2aeab5234e48",
+        "EV-305091abd41ad88d",
+        "EV-a24f9cba6b31439e",
+        "EV-b986a633cca27df9",
+        "EV-57597c92f7b183a9",
+        "EV-2258329f33d413cf",
+        "EV-19ea623bb5eabdd5",
+        "EV-309ea4fc27a66485",
+        "EV-4026c95d4c01b96e",
+        "EV-66970d4aea37111f",
+        "EV-aa63303570154a9b",
+        "EV-cbc8b53d4f4478b1",
+        "EV-d2a00623908ca15f",
+        "EV-d2ac9700c86913da",
+        "EV-d43a561da59b2897",
+        "EV-fc2164eb66e27f7e",
+        "EV-0b49d637d7c07ce0"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
+        "TX-use_case-robotics_automation",
+        "TX-industry-healthcare_life_sciences",
+        "TX-technology-long_context",
+        "TX-technology-mixture_of_experts",
+        "TX-technology-on_device",
+        "TX-use_case-cybersecurity",
+        "TX-industry-retail_ecommerce",
+        "TX-industry-telecommunications",
+        "TX-industry-technology",
+        "TX-use_case-customer_service",
+        "TX-technology-multimodal",
+        "TX-technology-embodied_ai",
+        "TX-technology-speech_audio",
+        "TX-technology-open_weights",
+        "TX-industry-media_entertainment",
+        "TX-technology-reasoning",
+        "TX-technology-inference_optimization"
+      ],
+      "relatedEntityIds": [
+        "EN-0f3360879e746531",
+        "EN-a1b0d8a938903dc7",
+        "EN-8395dc051feafc4c",
+        "EN-b5738c169b693bee",
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "firstSeen": "2026-05-18",
+      "lastSeen": "2026-07-17"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-e450a1c99a5b2883",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-8d4321d936320802",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-a1b0d8a938903dc7",
+      "object_type": "entity",
+      "event_id": "EV-303b418c63895ba6",
+      "claim_refs": [
+        "CL-dbbed563be597499",
+        "CL-4b65a9f9d61bb755",
+        "CL-2182dc15ee8cb7e8",
+        "CL-aa43b1006b63c793"
+      ],
+      "source_refs": [
+        "SA-976748d90721f77e"
+      ],
+      "data_date": "2026-07-16",
+      "status": "verified"
+    }
+  ],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [
+    {
+      "id": "HW-51034436efb8365e",
+      "eventId": "EV-69784fe31cfdfc44",
+      "dataDate": "2026-07-17",
+      "date": "2026-07-16",
+      "title": "NVIDIA 扩展 Jetson Thor 计算机家族，新增 T3000、T2000 模组",
+      "hardwareType": "ai_device",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "未披露",
+      "supplier": "NVIDIA",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": 865,
+      "capacityUnit": "TFLOPS",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/977/455.htm",
+      "sourceName": "IT之家（RSS）",
+      "sourceDate": "2026-07-16",
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-a1b0d8a938903dc7",
+        "EN-7d3c95ebe1221dbb"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,306 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T15:01:31.906Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 748,
+    "quarantinedEventCount": 32
+  },
+  "node": {
+    "id": "TX-technology-inference_optimization",
+    "name": "推理优化",
+    "nodeType": "technology",
+    "typeLabel": "技术",
+    "valueId": "inference_optimization",
+    "eventIds": [
+      "EV-0a5e65aa46b0d194"
+    ],
+    "entityIds": [
+      "EN-8d4321d936320802"
+    ],
+    "fdeIds": [],
+    "hardwareIds": [
+      "HW-de1b3c6ad39cc9bc"
+    ],
+    "firstSeen": "2026-07-10",
+    "lastSeen": "2026-07-11"
+  },
+  "events": [
+    {
+      "id": "EV-0a5e65aa46b0d194",
+      "dataDate": "2026-07-11",
+      "date": "2026-07-10",
+      "updatedDate": "2026-07-11",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "eventGroup": "AI 硬件",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "加速进化发布 Booster T2 具身开发旗舰平台：搭载英伟达 Thor 芯片，2070TFLOPS 算力",
+      "originalTitle": "",
+      "subject": "加速进化",
+      "action": "发布 Booster T2 具身开发旗舰平台：搭载英伟达 Thor 芯片",
+      "object": "，2070TFLOPS 算力",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "inference_optimization",
+          "name": "推理优化"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [
+          {
+            "dimensionId": "deployment_model",
+            "id": "edge_device",
+            "dimensionName": "部署形态",
+            "name": "边缘与端侧"
+          }
+        ],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "inference_optimization",
+          "name": "推理优化"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧"
+        },
+        {
+          "dimensionId": "deployment_model",
+          "id": "edge_device",
+          "dimensionName": "部署形态",
+          "name": "边缘与端侧"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "inference_optimization",
+          "name": "推理优化"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧"
+        },
+        {
+          "dimensionId": "deployment_model",
+          "id": "edge_device",
+          "dimensionName": "部署形态",
+          "name": "边缘与端侧"
+        }
+      ],
+      "entityIds": [
+        "EN-8d4321d936320802"
+      ],
+      "entityNames": [
+        "NVIDIA"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/975/340.htm",
+      "publisher": "IT之家（RSS）"
+    }
+  ],
+  "entities": [
+    {
+      "id": "EN-8d4321d936320802",
+      "name": "NVIDIA",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-4eaf3aabecae6016",
+        "EV-ed65f3187aa6aa40",
+        "EV-60b2d4d401bf5e97",
+        "EV-e41fc65eb014893f",
+        "EV-39894e375aacee77",
+        "EV-efca54f3b07072a6",
+        "EV-80e54c9a390da293",
+        "EV-d16fc5601c04a6a2",
+        "EV-236cbc2d64f0c455",
+        "EV-6180de2e02597d9d",
+        "EV-968709fe29b77eba",
+        "EV-adafffa563a53d49",
+        "EV-1f842e1dff69bb87",
+        "EV-9a7cd217a7a9a51c",
+        "EV-cafe435ddd007821",
+        "EV-283e88bdd15ed87e",
+        "EV-234ad54940674bf6",
+        "EV-5b16886442234f81",
+        "EV-ef6464cf7f764835",
+        "EV-b95539d17772a4ce",
+        "EV-f63462e34ea40699",
+        "EV-4faa2bcf2e42e60c",
+        "EV-9ee3c0ec243b6129",
+        "EV-58c1cc3749294649",
+        "EV-69784fe31cfdfc44",
+        "EV-c2800c1c5a3f568f",
+        "EV-303b418c63895ba6",
+        "EV-bb6d9e43c082fb47",
+        "EV-dfc634f28a70f423",
+        "EV-082314251be505e2",
+        "EV-0a5e65aa46b0d194",
+        "EV-53f881da31630a04",
+        "EV-3028dfadf94c8f4c",
+        "EV-412a140df8d75c45",
+        "EV-53564b1f0fd2214b",
+        "EV-09610316ac52221e",
+        "EV-c0f86afbefa2e0a6",
+        "EV-c718a5ff4b0acd66",
+        "EV-722c2a8dd6b70abd",
+        "EV-6eb9a23be3117421",
+        "EV-13f105479652938d",
+        "EV-3456f723929eff1b",
+        "EV-66338f5fb682617e",
+        "EV-568d2aeab5234e48",
+        "EV-305091abd41ad88d",
+        "EV-a24f9cba6b31439e",
+        "EV-b986a633cca27df9",
+        "EV-57597c92f7b183a9",
+        "EV-2258329f33d413cf",
+        "EV-19ea623bb5eabdd5",
+        "EV-309ea4fc27a66485",
+        "EV-4026c95d4c01b96e",
+        "EV-66970d4aea37111f",
+        "EV-aa63303570154a9b",
+        "EV-cbc8b53d4f4478b1",
+        "EV-d2a00623908ca15f",
+        "EV-d2ac9700c86913da",
+        "EV-d43a561da59b2897",
+        "EV-fc2164eb66e27f7e",
+        "EV-0b49d637d7c07ce0"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
+        "TX-use_case-robotics_automation",
+        "TX-industry-healthcare_life_sciences",
+        "TX-technology-long_context",
+        "TX-technology-mixture_of_experts",
+        "TX-technology-on_device",
+        "TX-use_case-cybersecurity",
+        "TX-industry-retail_ecommerce",
+        "TX-industry-telecommunications",
+        "TX-industry-technology",
+        "TX-use_case-customer_service",
+        "TX-technology-multimodal",
+        "TX-technology-embodied_ai",
+        "TX-technology-speech_audio",
+        "TX-technology-open_weights",
+        "TX-industry-media_entertainment",
+        "TX-technology-reasoning",
+        "TX-technology-inference_optimization"
+      ],
+      "relatedEntityIds": [
+        "EN-0f3360879e746531",
+        "EN-a1b0d8a938903dc7",
+        "EN-8395dc051feafc4c",
+        "EN-b5738c169b693bee",
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "firstSeen": "2026-05-18",
+      "lastSeen": "2026-07-17"
+    }
+  ],
+  "fde": [],
+  "hardware": [
+    {
+      "id": "HW-de1b3c6ad39cc9bc",
+      "eventId": "EV-0a5e65aa46b0d194",
+      "dataDate": "2026-07-11",
+      "date": "2026-07-10",
+      "title": "加速进化发布 Booster T2 具身开发旗舰平台：搭载英伟达 Thor 芯片，2070TFLOPS 算力",
+      "hardwareType": "semiconductor",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "edge",
+      "supplier": "NVIDIA",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "inference_optimization",
+          "name": "推理优化"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧"
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/975/340.htm",
+      "sourceName": "IT之家（RSS）",
+      "sourceDate": "2026-07-10",
+      "entityIds": [
+        "EN-8d4321d936320802"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "ok": true,
+  "generatedAt": "2026-07-17T15:01:32.757Z",
+  "versions": {
+    "product": "SITE-V4.2.0-entity-history",
+    "entity": "ENTITY-V1.0",
+    "relationship": "RELATION-V2.0"
+  },
+  "scope": "Reproject all accepted canonical events into entity profiles, timelines, taxonomy nodes, and evidence-backed relationships. This does not claim one accepted source batch for every calendar day.",
+  "targetWindow": {
+    "startDate": "2026-01-17",
+    "endDate": "2026-07-17",
+    "months": 6
+  },
+  "observedCoverage": {
+    "startDate": "2026-01-20",
+    "endDate": "2026-07-17",
+    "eventTimeCoverageDays": 178,
+    "boundaryGapDays": 3,
+    "acceptedDataBatchCount": 55,
+    "acceptedDataDates": [
+      "2026-05-18",
+      "2026-05-19",
+      "2026-05-20",
+      "2026-05-21",
+      "2026-05-22",
+      "2026-05-23",
+      "2026-05-24",
+      "2026-05-25",
+      "2026-06-01",
+      "2026-06-02",
+      "2026-06-03",
+      "2026-06-04",
+      "2026-06-05",
+      "2026-06-06",
+      "2026-06-07",
+      "2026-06-08",
+      "2026-06-09",
+      "2026-06-10",
+      "2026-06-11",
+      "2026-06-12",
+      "2026-06-13",
+      "2026-06-14",
+      "2026-06-15",
+      "2026-06-16",
+      "2026-06-17",
+      "2026-06-18",
+      "2026-06-19",
+      "2026-06-20",
+      "2026-06-21",
+      "2026-06-22",
+      "2026-06-23",
+      "2026-06-24",
+      "2026-06-25",
+      "2026-06-26",
+      "2026-06-27",
+      "2026-06-28",
+      "2026-06-29",
+      "2026-06-30",
+      "2026-07-01",
+      "2026-07-02",
+      "2026-07-03",
+      "2026-07-04",
+      "2026-07-05",
+      "2026-07-06",
+      "2026-07-07",
+      "2026-07-08",
+      "2026-07-09",
+      "2026-07-10",
+      "2026-07-11",
+      "2026-07-12",
+      "2026-07-13",
+      "2026-07-14",
+      "2026-07-15",
+      "2026-07-16",
+      "2026-07-17"
+    ]
+  },
+  "counts": {
+    "eventsInWindow": 748,
+    "entities": 328,
+    "taxonomyNodes": 42,
+    "relationships": 21
+  },
+  "monthlyEventCounts": [
+    {
+      "month": "2026-01",
+      "count": 1
+    },
+    {
+      "month": "2026-03",
+      "count": 1
+    },
+    {
+      "month": "2026-04",
+      "count": 2
+    },
+    {
+      "month": "2026-05",
+      "count": 43
+    },
+    {
+      "month": "2026-06",
+      "count": 405
+    },
+    {
+      "month": "2026-07",
+      "count": 296
+    }
+  ],
+  "unresolved": [
+    "The accepted event-time history begins 3 days after the six-calendar-month boundary. No event or source was invented to fill this boundary gap."
+  ]
+}

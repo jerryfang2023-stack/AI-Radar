@@ -1,0 +1,4325 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T15:01:31.906Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 748,
+    "quarantinedEventCount": 32
+  },
+  "node": {
+    "id": "TX-technology-multimodal",
+    "name": "多模态",
+    "nodeType": "technology",
+    "typeLabel": "技术",
+    "valueId": "multimodal",
+    "eventIds": [
+      "EV-44c9a50b99c76a70",
+      "EV-968709fe29b77eba",
+      "EV-cafe435ddd007821",
+      "EV-9f067d8f0d23eb48",
+      "EV-a9810b47e0408a05",
+      "EV-f169db2fb75a1371",
+      "EV-21caef1790021587",
+      "EV-70e3f88cb06a856c",
+      "EV-71f78f2026b54ba2",
+      "EV-9496f90f3e808992",
+      "EV-0a5e65aa46b0d194",
+      "EV-e42e55d1e11a2ba2",
+      "EV-53f881da31630a04",
+      "EV-d07906b648eec63f",
+      "EV-c410d77c8d531e5f",
+      "EV-5babb43f4b4d302f",
+      "EV-75b741c8c09d4384",
+      "EV-b88affdec306a75a",
+      "EV-e8bdeab9389a5f0c",
+      "EV-160a359d9406b69e",
+      "EV-61b97c0ee6ad83b3",
+      "EV-f68e00bb9fd49fac",
+      "EV-74b965de27bc0515",
+      "EV-2ca9d0a3ca53c3bf",
+      "EV-6b7917bd7edd4bde"
+    ],
+    "entityIds": [
+      "EN-245f1e177c5169cb",
+      "EN-968e2d5b08687bf4",
+      "EN-cbc62794911ff31b",
+      "EN-ea3bd73e2b506e00",
+      "EN-bbdefa2950f49882",
+      "EN-3a7bd3e2360a3d29",
+      "EN-8d4321d936320802",
+      "EN-59ae856cd788d0f5",
+      "EN-0f3360879e746531",
+      "EN-e3b1bf3dab957ffe",
+      "EN-9700d41909cf810f",
+      "EN-193d220b421d776e",
+      "EN-7d3194f79e645c42",
+      "EN-8f71c4871a160172",
+      "EN-78624f0a98e78301",
+      "EN-c608c4787821de1b",
+      "EN-c70eca6b0f88f44d",
+      "EN-2b6e51bec93e86c1",
+      "EN-b0532e1af75cc4ab",
+      "EN-e1517be14d06cdb7",
+      "EN-7ca2b7da6e0f8654",
+      "EN-047364b9be67f665",
+      "EN-b5251b35f15bedc4",
+      "EN-d831f1170590ddb1",
+      "EN-9c8ae69b84f21a2e"
+    ],
+    "fdeIds": [
+      "FDE-45ad6eae0d326429",
+      "FDE-4858cc86925e281a",
+      "FDE-5587adb203295543"
+    ],
+    "hardwareIds": [
+      "HW-ceb55d9bc637c1d3",
+      "HW-de1b3c6ad39cc9bc"
+    ],
+    "firstSeen": "2026-06-04",
+    "lastSeen": "2026-07-17"
+  },
+  "events": [
+    {
+      "id": "EV-44c9a50b99c76a70",
+      "dataDate": "2026-06-14",
+      "date": "2026-06-14",
+      "updatedDate": "2026-06-14",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Hark 完成 7 亿美元 A 轮融资",
+      "originalTitle": "Hark raises $700M Series A for its secretive 'universal' AI interface",
+      "subject": "Hark",
+      "action": "raises",
+      "object": "$700M Series A for its secretive 'universal' AI interface",
+      "metrics": [
+        "$700M",
+        "$6 billion",
+        "$100 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "robotics_automation",
+            "dimensionName": "应用场景",
+            "name": "机器人与物理自动化"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "entityIds": [
+        "EN-245f1e177c5169cb"
+      ],
+      "entityNames": [
+        "Hark"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/05/21/hark-raises-700m-series-a-for-its-secretive-universal-ai-interface",
+      "publisher": "techcrunch.com"
+    },
+    {
+      "id": "EV-968709fe29b77eba",
+      "dataDate": "2026-06-08",
+      "date": "2026-06-08",
+      "updatedDate": "2026-06-08",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Samsung 完成 830 万美元 种子轮融资",
+      "originalTitle": "Graphon AI raises $8.3M seed to build a pre-model intelligence layer for enterprise AI",
+      "subject": "Graphon AI",
+      "action": "raises",
+      "object": "$8.3M seed to build a pre-model intelligence layer for enterprise AI",
+      "metrics": [
+        "$8.3M",
+        "$8.3 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "entityIds": [
+        "EN-968e2d5b08687bf4",
+        "EN-cbc62794911ff31b",
+        "EN-ea3bd73e2b506e00",
+        "EN-bbdefa2950f49882",
+        "EN-3a7bd3e2360a3d29",
+        "EN-8d4321d936320802"
+      ],
+      "entityNames": [
+        "Samsung",
+        "Amazon",
+        "Meta",
+        "Google",
+        "Apple",
+        "NVIDIA"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://thenextweb.com/news/graphon-ai-pre-model-intelligence-layer-seed-funding",
+      "publisher": "thenextweb.com"
+    },
+    {
+      "id": "EV-cafe435ddd007821",
+      "dataDate": "2026-07-17",
+      "date": "2026-07-16",
+      "updatedDate": "2026-07-17",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "eventGroup": "AI 硬件",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "日本启动 Noetra 国家级 AI 基础设施，计划采购 2.75 万枚 NVIDIA Rubin 芯片",
+      "originalTitle": "NVIDIA 联手日本政经界发布全球首个国家级 AI 基础设施",
+      "subject": "Japan to",
+      "action": "buy Nvidia Rubin chips",
+      "object": "to build an AI for robots - The Japan Times",
+      "metrics": [
+        "$5 million",
+        "$7 million",
+        "$1.9 billion",
+        "$2.7 billion",
+        "$55,000 ",
+        "$1.5 billion"
+      ],
+      "locations": [
+        "Japan",
+        "日本"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          },
+          {
+            "dimensionId": "product_form",
+            "id": "data_infrastructure",
+            "dimensionName": "产品形态",
+            "name": "数据与模型基础设施"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "robotics_automation",
+            "dimensionName": "应用场景",
+            "name": "机器人与物理自动化"
+          }
+        ],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "manufacturing",
+            "dimensionName": "行业",
+            "name": "制造业"
+          },
+          {
+            "dimensionId": "industry",
+            "id": "healthcare_life_sciences",
+            "dimensionName": "行业",
+            "name": "医疗与生命科学"
+          },
+          {
+            "dimensionId": "industry",
+            "id": "telecommunications",
+            "dimensionName": "行业",
+            "name": "电信"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "data_infrastructure",
+          "dimensionName": "产品形态",
+          "name": "数据与模型基础设施"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "manufacturing",
+          "dimensionName": "行业",
+          "name": "制造业"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "healthcare_life_sciences",
+          "dimensionName": "行业",
+          "name": "医疗与生命科学"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "telecommunications",
+          "dimensionName": "行业",
+          "name": "电信"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "data_infrastructure",
+          "dimensionName": "产品形态",
+          "name": "数据与模型基础设施"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "manufacturing",
+          "dimensionName": "行业",
+          "name": "制造业"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "healthcare_life_sciences",
+          "dimensionName": "行业",
+          "name": "医疗与生命科学"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "telecommunications",
+          "dimensionName": "行业",
+          "name": "电信"
+        }
+      ],
+      "entityIds": [
+        "EN-59ae856cd788d0f5",
+        "EN-8d4321d936320802",
+        "EN-0f3360879e746531",
+        "EN-e3b1bf3dab957ffe",
+        "EN-9700d41909cf810f"
+      ],
+      "entityNames": [
+        "Japan",
+        "NVIDIA",
+        "Noetra",
+        "Japan Government",
+        "NVIDIA 联手日本政经界"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://japantimes.co.jp/business/2026/07/16/japan-nvidia-rubin-chips-robots",
+      "publisher": "japantimes.co.jp"
+    },
+    {
+      "id": "EV-9f067d8f0d23eb48",
+      "dataDate": "2026-07-13",
+      "date": "2026-07-08",
+      "updatedDate": "2026-07-13",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Simplexity Robotics 成立 11 个月即向生产线交付 100 台 i7 Pro 机器人，并部署于 Leaderdrive 与 AI 基础设施工厂",
+      "originalTitle": "Simplexity Robotics Ships 100 i7 Pro Robots to Production Lines at 11 Months Old, Deploys at Leaderdrive and AI Infrastructure Factories | RobotsBeat",
+      "subject": "Simplexity Robotics Ships 100 i7 Pro Robots to Production Lines at 11 Months Old,",
+      "action": "Deploys",
+      "object": "at Leaderdrive and AI Infrastructure Factories | RobotsBeat",
+      "metrics": [
+        "40%",
+        "99.9%"
+      ],
+      "locations": [
+        "China"
+      ],
+      "missingFields": [
+        "entities"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "data_infrastructure",
+            "dimensionName": "产品形态",
+            "name": "数据与模型基础设施"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "robotics_automation",
+            "dimensionName": "应用场景",
+            "name": "机器人与物理自动化"
+          }
+        ],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "manufacturing",
+            "dimensionName": "行业",
+            "name": "制造业"
+          },
+          {
+            "dimensionId": "industry",
+            "id": "retail_ecommerce",
+            "dimensionName": "行业",
+            "name": "零售与电商"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "data_infrastructure",
+          "dimensionName": "产品形态",
+          "name": "数据与模型基础设施"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "manufacturing",
+          "dimensionName": "行业",
+          "name": "制造业"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "retail_ecommerce",
+          "dimensionName": "行业",
+          "name": "零售与电商"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "data_infrastructure",
+          "dimensionName": "产品形态",
+          "name": "数据与模型基础设施"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "manufacturing",
+          "dimensionName": "行业",
+          "name": "制造业"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "retail_ecommerce",
+          "dimensionName": "行业",
+          "name": "零售与电商"
+        }
+      ],
+      "entityIds": [],
+      "entityNames": [],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://robotsbeat.com/simplexity-robotics-100-robots-i7-pro-leaderdrive-production-deployment",
+      "publisher": "robotsbeat.com"
+    },
+    {
+      "id": "EV-a9810b47e0408a05",
+      "dataDate": "2026-07-02",
+      "date": "2026-07-02",
+      "updatedDate": "2026-07-02",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "华为联合上海电信落地 5G-A×AI 大上行样板点：实测峰值速率 1Gbps，中心城区年底实现 20Mbps 上行连续覆盖",
+      "originalTitle": "",
+      "subject": "华为联合上海电信",
+      "action": "落地",
+      "object": "5G-A×AI 大上行样板点：实测峰值速率 1Gbps，中心城区年底实现 20Mbps 上行连续覆盖",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "entityIds": [
+        "EN-193d220b421d776e"
+      ],
+      "entityNames": [
+        "华为联合上海电信"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/971/407.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-f169db2fb75a1371",
+      "dataDate": "2026-06-23",
+      "date": "2026-06-22",
+      "updatedDate": "2026-06-23",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "生数 Vidu Q3 多模态视频大模型上线华为云 MaaS，主打文/图生视频一体化成片",
+      "originalTitle": "",
+      "subject": "生数 Vidu Q3 多模态视频大模型",
+      "action": "上线",
+      "object": "华为云 MaaS，主打文/图生视频一体化成片",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "entities"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成"
+        }
+      ],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成"
+        }
+      ],
+      "entityIds": [],
+      "entityNames": [],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/967/217.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-21caef1790021587",
+      "dataDate": "2026-06-21",
+      "date": "2026-06-20",
+      "updatedDate": "2026-06-21",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "LM Studio 与苹果合作，成功用四台 Mac Studio 运行万亿参数 Kimi K2.6 大模型",
+      "originalTitle": "",
+      "subject": "LM Studio 与苹果",
+      "action": "合作",
+      "object": "，成功用四台 Mac Studio 运行万亿参数 Kimi K2.6 大模型",
+      "metrics": [
+        "1 万",
+        "320 亿"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "long_context",
+          "name": "长上下文"
+        }
+      ],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "long_context",
+          "name": "长上下文"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "long_context",
+          "name": "长上下文"
+        }
+      ],
+      "entityIds": [
+        "EN-3a7bd3e2360a3d29"
+      ],
+      "entityNames": [
+        "Apple"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/966/539.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-70e3f88cb06a856c",
+      "dataDate": "2026-07-17",
+      "date": "2026-07-16",
+      "updatedDate": "2026-07-17",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "前 OpenAI CTO 穆拉蒂创立的 Thinking Machines Lab 发布 Inkling 多模态模型，975B 参数开源",
+      "originalTitle": "",
+      "subject": "前 OpenAI CTO 穆拉蒂创立的 Thinking Machines Lab",
+      "action": "发布 Inkling 多模态模型",
+      "object": "，975B 参数开源",
+      "metrics": [],
+      "locations": [
+        "美国",
+        "中国"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "long_context",
+          "name": "长上下文"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "long_context",
+          "name": "长上下文"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "long_context",
+          "name": "长上下文"
+        }
+      ],
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-8f71c4871a160172",
+        "EN-78624f0a98e78301"
+      ],
+      "entityNames": [
+        "OpenAI",
+        "Thinking Machines Lab",
+        "Inkling"
+      ],
+      "productName": "Inkling",
+      "products": [
+        {
+          "name": "Inkling",
+          "type": "模型",
+          "ownerNames": [
+            "Thinking Machines Lab"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/977/504.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-71f78f2026b54ba2",
+      "dataDate": "2026-07-16",
+      "date": "2026-07-15",
+      "updatedDate": "2026-07-16",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "小米开源 Xiaomi-Robotics-U0：380 亿参数多模态具身生成模型",
+      "originalTitle": "",
+      "subject": "小米",
+      "action": "开源 Xiaomi-Robotics-U0：380 亿参数多模态具身生成模型",
+      "object": "小米开源 Xiaomi-Robotics-U0：380 亿参数多模态具身生成模型",
+      "metrics": [
+        "380 亿"
+      ],
+      "locations": [],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "robotics_automation",
+            "dimensionName": "应用场景",
+            "name": "机器人与物理自动化"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "entityIds": [
+        "EN-c608c4787821de1b"
+      ],
+      "entityNames": [
+        "Xiaomi"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/977/012.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-9496f90f3e808992",
+      "dataDate": "2026-07-13",
+      "date": "2026-07-12",
+      "updatedDate": "2026-07-13",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Meta 发布多模态推理模型 Muse Spark 1.1，强化 AI 智能体任务能力",
+      "originalTitle": "",
+      "subject": "Meta",
+      "action": "发布多模态推理模型",
+      "object": "Muse Spark 1.1，强化 AI 智能体任务能力",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "tool_use",
+          "name": "工具调用"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "reasoning",
+          "name": "推理能力"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "software_development",
+            "dimensionName": "应用场景",
+            "name": "软件开发"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "tool_use",
+          "name": "工具调用"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "reasoning",
+          "name": "推理能力"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "software_development",
+          "dimensionName": "应用场景",
+          "name": "软件开发"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "software_development",
+          "dimensionName": "应用场景",
+          "name": "软件开发"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "tool_use",
+          "name": "工具调用"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "reasoning",
+          "name": "推理能力"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "entityIds": [
+        "EN-ea3bd73e2b506e00"
+      ],
+      "entityNames": [
+        "Meta"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/975/832.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-0a5e65aa46b0d194",
+      "dataDate": "2026-07-11",
+      "date": "2026-07-10",
+      "updatedDate": "2026-07-11",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "eventGroup": "AI 硬件",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "加速进化发布 Booster T2 具身开发旗舰平台：搭载英伟达 Thor 芯片，2070TFLOPS 算力",
+      "originalTitle": "",
+      "subject": "加速进化",
+      "action": "发布 Booster T2 具身开发旗舰平台：搭载英伟达 Thor 芯片",
+      "object": "，2070TFLOPS 算力",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "inference_optimization",
+          "name": "推理优化"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [
+          {
+            "dimensionId": "deployment_model",
+            "id": "edge_device",
+            "dimensionName": "部署形态",
+            "name": "边缘与端侧"
+          }
+        ],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "inference_optimization",
+          "name": "推理优化"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧"
+        },
+        {
+          "dimensionId": "deployment_model",
+          "id": "edge_device",
+          "dimensionName": "部署形态",
+          "name": "边缘与端侧"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "inference_optimization",
+          "name": "推理优化"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧"
+        },
+        {
+          "dimensionId": "deployment_model",
+          "id": "edge_device",
+          "dimensionName": "部署形态",
+          "name": "边缘与端侧"
+        }
+      ],
+      "entityIds": [
+        "EN-8d4321d936320802"
+      ],
+      "entityNames": [
+        "NVIDIA"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/975/340.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-e42e55d1e11a2ba2",
+      "dataDate": "2026-07-10",
+      "date": "2026-07-10",
+      "updatedDate": "2026-07-10",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Meta 发布 Muse Spark 1.1 多模态推理模型",
+      "originalTitle": "",
+      "subject": "Meta",
+      "action": "发布 Muse Spark 1.1 多模态推理模型",
+      "object": "Meta 发布 Muse Spark 1.1 多模态推理模型",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "computer_use",
+          "name": "计算机操作"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "reasoning",
+          "name": "推理能力"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "api_service",
+            "dimensionName": "产品形态",
+            "name": "API / 模型服务"
+          },
+          {
+            "dimensionId": "product_form",
+            "id": "ai_application",
+            "dimensionName": "产品形态",
+            "name": "AI 应用"
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "computer_use",
+          "name": "计算机操作"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "reasoning",
+          "name": "推理能力"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "api_service",
+          "dimensionName": "产品形态",
+          "name": "API / 模型服务"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "ai_application",
+          "dimensionName": "产品形态",
+          "name": "AI 应用"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "api_service",
+          "dimensionName": "产品形态",
+          "name": "API / 模型服务"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "ai_application",
+          "dimensionName": "产品形态",
+          "name": "AI 应用"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "computer_use",
+          "name": "计算机操作"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "reasoning",
+          "name": "推理能力"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "entityIds": [
+        "EN-ea3bd73e2b506e00"
+      ],
+      "entityNames": [
+        "Meta"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ai.meta.com/blog/introducing-muse-spark-meta-model-api",
+      "publisher": "Hacker News 热门（buzzing.cc 中文翻译）"
+    },
+    {
+      "id": "EV-53f881da31630a04",
+      "dataDate": "2026-07-08",
+      "date": "2026-07-08",
+      "updatedDate": "2026-07-08",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "NVIDIA 发布 Audex（Nemotron-Labs-Audex-30B-A3B）统一音频-文本大语言模型",
+      "originalTitle": "",
+      "subject": "NVIDIA",
+      "action": "发布",
+      "object": "Audex（Nemotron-Labs-Audex-30B-A3B）统一音频-文本大语言模型",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "mixture_of_experts",
+          "name": "混合专家模型"
+        }
+      ],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "mixture_of_experts",
+          "name": "混合专家模型"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "mixture_of_experts",
+          "name": "混合专家模型"
+        }
+      ],
+      "entityIds": [
+        "EN-8d4321d936320802"
+      ],
+      "entityNames": [
+        "NVIDIA"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://marktechpost.com/2026/07/07/nvidia-releases-audex-nemotron-labs-audex-30b-a3b-a-unified-audio-text-llm-that-preserves-the-text-intelligence-of-its-backbone",
+      "publisher": "MarkTechPost（RSS）"
+    },
+    {
+      "id": "EV-d07906b648eec63f",
+      "dataDate": "2026-07-08",
+      "date": "2026-07-07",
+      "updatedDate": "2026-07-08",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "OpenAI 发布 gpt-realtime-2.1 和 gpt-realtime-2.1-mini 低延迟语音模型",
+      "originalTitle": "",
+      "subject": "OpenAI",
+      "action": "发布",
+      "object": "gpt-realtime-2.1 和 gpt-realtime-2.1-mini 低延迟语音模型",
+      "metrics": [
+        "25%"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "reasoning",
+          "name": "推理能力"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "cybersecurity",
+            "dimensionName": "应用场景",
+            "name": "网络安全"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "reasoning",
+          "name": "推理能力"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "cybersecurity",
+          "dimensionName": "应用场景",
+          "name": "网络安全"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "cybersecurity",
+          "dimensionName": "应用场景",
+          "name": "网络安全"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "reasoning",
+          "name": "推理能力"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "entityIds": [
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://marktechpost.com/2026/07/06/openai-gpt-realtime-2-1-mini-reasoning-realtime-api",
+      "publisher": "MarkTechPost（RSS）"
+    },
+    {
+      "id": "EV-c410d77c8d531e5f",
+      "dataDate": "2026-07-07",
+      "date": "2026-07-07",
+      "updatedDate": "2026-07-07",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "rumored",
+      "statusLabel": "rumored",
+      "publicationStatus": "disputed",
+      "title": "谷歌 Gemini 3.5 Pro 模型爆料：7 月 17 日发布，支持 200 万上下文窗口",
+      "originalTitle": "",
+      "subject": "谷歌 Gemini 3.5 Pro 模型爆料：7 月 17 日",
+      "action": "发布",
+      "object": "，支持 200 万上下文窗口",
+      "metrics": [
+        "200 万"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "long_context",
+          "name": "长上下文"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "long_context",
+          "name": "长上下文"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "long_context",
+          "name": "长上下文"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "entityIds": [
+        "EN-bbdefa2950f49882",
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "Google",
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/973/334.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-5babb43f4b4d302f",
+      "dataDate": "2026-07-01",
+      "date": "2026-07-01",
+      "updatedDate": "2026-07-01",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Google DeepMind 发布 Nano Banana 2 Lite 和 Gemini Omni Flash",
+      "originalTitle": "",
+      "subject": "Google DeepMind",
+      "action": "发布",
+      "object": "Nano Banana 2 Lite 和 Gemini Omni Flash",
+      "metrics": [
+        "$0.10 "
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成"
+        }
+      ],
+      "entityIds": [
+        "EN-2b6e51bec93e86c1",
+        "EN-b0532e1af75cc4ab"
+      ],
+      "entityNames": [
+        "Google DeepMind",
+        "Rime"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://deepmind.google/blog/start-building-with-nano-banana-2-lite-and-gemini-omni-flash",
+      "publisher": "Google DeepMind：Blog（RSS）"
+    },
+    {
+      "id": "EV-75b741c8c09d4384",
+      "dataDate": "2026-06-16",
+      "date": "2026-06-16",
+      "updatedDate": "2026-06-16",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "MiniMax M3模型正式开源：原生多模态、百万上下文",
+      "originalTitle": "",
+      "subject": "MiniMax M3",
+      "action": "模型正式开源",
+      "object": "：原生多模态、百万上下文",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "entityIds": [
+        "EN-e1517be14d06cdb7"
+      ],
+      "entityNames": [
+        "MiniMax"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/964/622.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-b88affdec306a75a",
+      "dataDate": "2026-06-14",
+      "date": "2026-06-13",
+      "updatedDate": "2026-06-14",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "科大讯飞发布星火多模态大模型 X2-VL，当前唯一基于全国产算力训练的主流大模型",
+      "originalTitle": "",
+      "subject": "科大讯飞",
+      "action": "发布星火多模态大模型 X2-VL，当前唯一基于全国产算力训练的主流大模型",
+      "object": "科大讯飞发布星火多模态大模型 X2-VL，当前唯一基于全国产算力训练的主流大模型",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        }
+      ],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "robotics_automation",
+            "dimensionName": "应用场景",
+            "name": "机器人与物理自动化"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        }
+      ],
+      "entityIds": [
+        "EN-7ca2b7da6e0f8654"
+      ],
+      "entityNames": [
+        "科大讯飞"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/963/907.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-e8bdeab9389a5f0c",
+      "dataDate": "2026-06-13",
+      "date": "2026-06-13",
+      "updatedDate": "2026-06-13",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "华为云与 MiniMax 最新模型 M3 实现开源首发适配，提供 Tokens 算力支持",
+      "originalTitle": "",
+      "subject": "华为云与 MiniMax 最新",
+      "action": "模型 M3 实现开源",
+      "object": "首发适配，提供 Tokens 算力支持",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [
+          {
+            "dimensionId": "deployment_model",
+            "id": "cloud",
+            "dimensionName": "部署形态",
+            "name": "云端"
+          }
+        ],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "deployment_model",
+          "id": "cloud",
+          "dimensionName": "部署形态",
+          "name": "云端"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "deployment_model",
+          "id": "cloud",
+          "dimensionName": "部署形态",
+          "name": "云端"
+        }
+      ],
+      "entityIds": [
+        "EN-e1517be14d06cdb7"
+      ],
+      "entityNames": [
+        "MiniMax"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/963/764.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-160a359d9406b69e",
+      "dataDate": "2026-06-13",
+      "date": "2026-06-12",
+      "updatedDate": "2026-06-13",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "inclusionAI 发布 VISTA-4B GUI 定位视觉语言模型",
+      "originalTitle": "",
+      "subject": "inclusionAI",
+      "action": "发布 VISTA-4B GUI 定位视觉语言模型",
+      "object": "inclusionAI 发布 VISTA-4B GUI 定位视觉语言模型",
+      "metrics": [],
+      "locations": [
+        "US"
+      ],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "entityIds": [
+        "EN-047364b9be67f665"
+      ],
+      "entityNames": [
+        "Alibaba"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://huggingface.co/inclusionAI/VISTA-4B",
+      "publisher": "蚂蚁 inclusionAI：HuggingFace 新模型"
+    },
+    {
+      "id": "EV-61b97c0ee6ad83b3",
+      "dataDate": "2026-06-13",
+      "date": "2026-06-12",
+      "updatedDate": "2026-06-13",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Kimi K2.7-Code：具有更高模型 token 效率的开源编码模型",
+      "originalTitle": "",
+      "subject": "Kimi K2.7-Code：具有更高",
+      "action": "模型 token 效率的开源",
+      "object": "编码模型",
+      "metrics": [
+        "30%"
+      ],
+      "locations": [
+        "US"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "OpenAI",
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://huggingface.co/moonshotai/Kimi-K2.7-Code",
+      "publisher": "Hacker News 热门（buzzing.cc 中文翻译）"
+    },
+    {
+      "id": "EV-f68e00bb9fd49fac",
+      "dataDate": "2026-06-04",
+      "date": "2026-06-04",
+      "updatedDate": "2026-06-04",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Google DeepMind 发布 Gemma 4 12B：开源多模态模型，16GB 内存笔记本即可运行",
+      "originalTitle": "",
+      "subject": "Google DeepMind",
+      "action": "发布 Gemma 4 12B：开源多模态模型",
+      "object": "，16GB 内存笔记本即可运行",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "speech_audio",
+          "name": "语音与音频"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "software_development",
+            "dimensionName": "应用场景",
+            "name": "软件开发"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "speech_audio",
+          "name": "语音与音频"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "software_development",
+          "dimensionName": "应用场景",
+          "name": "软件开发"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "software_development",
+          "dimensionName": "应用场景",
+          "name": "软件开发"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "speech_audio",
+          "name": "语音与音频"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成"
+        }
+      ],
+      "entityIds": [
+        "EN-2b6e51bec93e86c1"
+      ],
+      "entityNames": [
+        "Google DeepMind"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://the-decoder.com/google-deepminds-gemma-4-12b-squeezes-multimodal-ai-onto-a-laptop-with-just-16-gb-of-ram",
+      "publisher": "The Decoder：AI News（RSS）"
+    },
+    {
+      "id": "EV-74b965de27bc0515",
+      "dataDate": "2026-07-17",
+      "date": "2026-07-17",
+      "updatedDate": "2026-07-17",
+      "eventType": "research_result",
+      "eventTypeLabel": "研究结果",
+      "eventGroup": "研究结果",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Moonshot AI 发布多模态视觉感知基准 PerceptionBench",
+      "originalTitle": "Moonshot AI 发布 PerceptionBench：多模态模型视觉感知能力诊断基准",
+      "subject": "Moonshot AI",
+      "action": "发布 PerceptionBench：多模态模型视觉感知能力诊断基准",
+      "object": "Moonshot AI 发布 PerceptionBench：多模态模型视觉感知能力诊断基准",
+      "metrics": [
+        "60%"
+      ],
+      "locations": [],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "vision_language",
+          "name": "视觉语言"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "vision_language",
+          "name": "视觉语言"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "vision_language",
+          "name": "视觉语言"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "entityIds": [
+        "EN-b5251b35f15bedc4",
+        "EN-d831f1170590ddb1"
+      ],
+      "entityNames": [
+        "Moonshot AI",
+        "PerceptionBench"
+      ],
+      "productName": "PerceptionBench",
+      "products": [
+        {
+          "name": "PerceptionBench",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Moonshot AI"
+          ]
+        }
+      ],
+      "sourceUrl": "https://kimi.com/blog/perception-bench",
+      "publisher": "Moonshot AI：Kimi Blog"
+    },
+    {
+      "id": "EV-2ca9d0a3ca53c3bf",
+      "dataDate": "2026-07-10",
+      "date": "2026-07-10",
+      "updatedDate": "2026-07-10",
+      "eventType": "organization_people",
+      "eventTypeLabel": "组织与人员",
+      "eventGroup": "组织、政策与法律",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Meta 发布 Muse Spark 1.1，加入 AI 编码模型竞争",
+      "originalTitle": "",
+      "subject": "Meta 发布 Muse Spark 1.1，",
+      "action": "加入",
+      "object": "AI 编码模型竞争",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "entityIds": [
+        "EN-ea3bd73e2b506e00",
+        "EN-7d3194f79e645c42",
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "Meta",
+        "OpenAI",
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/07/09/meta-enters-the-crowded-ai-coding-battle-with-muse-spark-1-1",
+      "publisher": "TechCrunch：AI（RSS）"
+    },
+    {
+      "id": "EV-6b7917bd7edd4bde",
+      "dataDate": "2026-07-08",
+      "date": "2026-07-08",
+      "updatedDate": "2026-07-08",
+      "eventType": "organization_people",
+      "eventTypeLabel": "组织与人员",
+      "eventGroup": "组织、政策与法律",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "OpenAI前研究员田永龙加入腾讯，将负责混元多模态模型方向",
+      "originalTitle": "",
+      "subject": "OpenAI前研究员田永龙",
+      "action": "加入",
+      "object": "腾讯，将负责混元多模态模型方向",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-9c8ae69b84f21a2e"
+      ],
+      "entityNames": [
+        "OpenAI",
+        "Tencent"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/973/892.htm",
+      "publisher": "IT之家（RSS）"
+    }
+  ],
+  "entities": [
+    {
+      "id": "EN-245f1e177c5169cb",
+      "name": "Hark",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-44c9a50b99c76a70"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-use_case-robotics_automation",
+        "TX-technology-multimodal"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-14",
+      "lastSeen": "2026-06-14"
+    },
+    {
+      "id": "EN-968e2d5b08687bf4",
+      "name": "Samsung",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "三星"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-ac6f75718393f2c4",
+        "EV-614fb5bb3cfc2519",
+        "EV-968709fe29b77eba",
+        "EV-9ab076d2fff77412",
+        "EV-4a4869273654c799",
+        "EV-d3528ccff1833385",
+        "EV-ef6464cf7f764835",
+        "EV-72d274f7fcd97151",
+        "EV-9b29acd28643e9d1",
+        "EV-b15c842ee1974890",
+        "EV-b9a009b48d4cbf85",
+        "EV-02186ed7885f68fe",
+        "EV-44a492c1688949cf"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
+        "TX-use_case-software_development",
+        "TX-technology-on_device",
+        "TX-technology-multimodal"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-05-22",
+      "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "EN-cbc62794911ff31b",
+      "name": "Amazon",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "Amazon Bedrock"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-5a26f343846cb8ad",
+        "EV-a9a40462f12bbbd3",
+        "EV-968709fe29b77eba",
+        "EV-7c646d3fbc3fbbf1",
+        "EV-ef6464cf7f764835",
+        "EV-de6682a190c78625",
+        "EV-3398ae53a199be16",
+        "EV-303b418c63895ba6",
+        "EV-918fc324de3117bd",
+        "EV-c0f86afbefa2e0a6",
+        "EV-072b7dabe8ea6032",
+        "EV-673435b5652e2ab4",
+        "EV-51cdc6a8928bdc56",
+        "EV-16ed97ffc0998d0a",
+        "EV-8ea138b78f24e910"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-use_case-robotics_automation",
+        "TX-industry-healthcare_life_sciences",
+        "TX-use_case-cybersecurity",
+        "TX-industry-retail_ecommerce",
+        "TX-use_case-customer_service",
+        "TX-technology-multimodal"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-01-20",
+      "lastSeen": "2026-07-16"
+    },
+    {
+      "id": "EN-ea3bd73e2b506e00",
+      "name": "Meta",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-02882e6f5e1902c6",
+        "EV-5df885dbd24b6d00",
+        "EV-427081ec574b43bb",
+        "EV-7f77e6a2d1698307",
+        "EV-b39d759a11086d41",
+        "EV-968709fe29b77eba",
+        "EV-724fc985c22215f3",
+        "EV-f64345af2affb07d",
+        "EV-1f842e1dff69bb87",
+        "EV-e58bd372c139073c",
+        "EV-cf176636839e45be",
+        "EV-9496f90f3e808992",
+        "EV-dce5de62b2e4b752",
+        "EV-ebe02c213368afae",
+        "EV-e42e55d1e11a2ba2",
+        "EV-f9eebe4e3b9b667c",
+        "EV-8f6cf12525556d0e",
+        "EV-40390136762c64d3",
+        "EV-07a5533c18e5a74e",
+        "EV-4a8dce3c9fec1bd3",
+        "EV-04873bbc8be8e70d",
+        "EV-4c0e7025692ab98c",
+        "EV-f34eec5df7f5bcb7",
+        "EV-d8f0f89fed45ae5b",
+        "EV-b78311001509be2c",
+        "EV-a4cd74ae97317e4e",
+        "EV-41e534c846124691",
+        "EV-7808c274ce0aa0bf",
+        "EV-c98d4ee7764d51b2",
+        "EV-01e414a25347cfd9",
+        "EV-ef823877347ff40f",
+        "EV-04cf95633b564f9a",
+        "EV-02b07069713d9a1c",
+        "EV-322796d9761a0824",
+        "EV-2d56dec8dfeb2b56",
+        "EV-2ca9d0a3ca53c3bf",
+        "EV-8fcecabca2e92b40"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
+        "TX-technology-computer_use",
+        "TX-technology-code_generation",
+        "TX-industry-healthcare_life_sciences",
+        "TX-use_case-software_development",
+        "TX-technology-long_context",
+        "TX-technology-multimodal",
+        "TX-technology-speech_audio",
+        "TX-industry-media_entertainment",
+        "TX-technology-tool_use",
+        "TX-technology-reasoning",
+        "TX-technology-guardrails_safety",
+        "TX-technology-image_generation"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-05-22",
+      "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "EN-bbdefa2950f49882",
+      "name": "Google",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "谷歌"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-10c70ced68ccb31b",
+        "EV-d4d7b019ff0015df",
+        "EV-21c2e81a7c073e04",
+        "EV-54e23045d3334e65",
+        "EV-43b56d49df9a73a2",
+        "EV-6180de2e02597d9d",
+        "EV-968709fe29b77eba",
+        "EV-dbbe3fd637be213f",
+        "EV-4a162c41bb82f325",
+        "EV-9fc8a84b3d0797d1",
+        "EV-57105df2fcada2e5",
+        "EV-36a9e4e908249381",
+        "EV-ef6464cf7f764835",
+        "EV-b95539d17772a4ce",
+        "EV-df5831ff5762432d",
+        "EV-f949fd95df58d42d",
+        "EV-a9a3b5b56befe593",
+        "EV-f7e41493addd1104",
+        "EV-3398ae53a199be16",
+        "EV-d53cd33e8f541a65",
+        "EV-810e5c71956fccbc",
+        "EV-04efb4eecbb8125f",
+        "EV-0ca3a9830e25f56b",
+        "EV-6359c9f6c2609a38",
+        "EV-04ee2bc4ac888358",
+        "EV-c2d784ef0a5376f8",
+        "EV-302018f2e960a8bf",
+        "EV-aa962ef7ec9a5c50",
+        "EV-db1d74f0bfcc1b04",
+        "EV-f05783f745bc7c2c",
+        "EV-52508b70ccd2cc0b",
+        "EV-f9eebe4e3b9b667c",
+        "EV-c410d77c8d531e5f",
+        "EV-268250d426c1a4a0",
+        "EV-04873bbc8be8e70d",
+        "EV-2059f42c7b2aff44",
+        "EV-9fac0983ab657689",
+        "EV-4c0e7025692ab98c",
+        "EV-b8bba030747fd3b6",
+        "EV-8daf217ff024ac4a",
+        "EV-2298304e18dbf493",
+        "EV-89b644ff05e6b93b",
+        "EV-8fad966ecb9b1d31",
+        "EV-9c4b862020202f6c",
+        "EV-d8c69ed782b73a34",
+        "EV-c0f86afbefa2e0a6",
+        "EV-abf0990dcaceb1ce",
+        "EV-c60208ea9b51f47a",
+        "EV-c6359191a071b538",
+        "EV-b860d46fee913f27",
+        "EV-09d3ce5611881ed4",
+        "EV-c033ae6f9784d674",
+        "EV-28145c97a7237d6d",
+        "EV-e6771f58d7c2a050",
+        "EV-b8b39e635aa7511f",
+        "EV-54c329f4c8e4227b",
+        "EV-7808c274ce0aa0bf",
+        "EV-c3cbf5d7f860c693",
+        "EV-009105cbcf82a638",
+        "EV-b9a009b48d4cbf85",
+        "EV-b3809ff557361cc2",
+        "EV-bc71b0ddefa209a9",
+        "EV-a85fe927f20c2595",
+        "EV-b4f3dcac8cc230d9",
+        "EV-175af8c7b8146340",
+        "EV-d2d1834222ab32d3",
+        "EV-22b8d155ce027905",
+        "EV-d6f638da9e1d3b46",
+        "EV-0ad758b04b9b5313",
+        "EV-3ed6744b43d9b8df",
+        "EV-c08837795f9e16d2",
+        "EV-4a3cb762183581cd",
+        "EV-59933d63c4051085",
+        "EV-588cf9609e44edc9",
+        "EV-7fa23cf0102a8f92",
+        "EV-c28e0d02272537d8",
+        "EV-d31057c6f6ec28ba",
+        "EV-342799d4e68e7416",
+        "EV-a4f052325d0ef230",
+        "EV-ef823877347ff40f",
+        "EV-3e9a0d1be6de5096",
+        "EV-70fd0c4e482a646e",
+        "EV-8cd7665e40729256",
+        "EV-2d56dec8dfeb2b56",
+        "EV-6266c73d470e8aef",
+        "EV-ad269fada2269f35",
+        "EV-bce258f8f915ff5f"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
+        "TX-technology-computer_use",
+        "TX-use_case-robotics_automation",
+        "TX-technology-code_generation",
+        "TX-use_case-enterprise_operations",
+        "TX-use_case-software_development",
+        "TX-technology-long_context",
+        "TX-technology-mixture_of_experts",
+        "TX-industry-financial_services",
+        "TX-technology-on_device",
+        "TX-use_case-cybersecurity",
+        "TX-industry-retail_ecommerce",
+        "TX-technology-human_in_loop",
+        "TX-industry-telecommunications",
+        "TX-industry-technology",
+        "TX-technology-multimodal",
+        "TX-technology-retrieval_augmented_generation",
+        "TX-use_case-knowledge_search",
+        "TX-technology-embodied_ai",
+        "TX-technology-speech_audio",
+        "TX-technology-open_weights",
+        "TX-industry-media_entertainment",
+        "TX-technology-video_generation",
+        "TX-technology-tool_use",
+        "TX-technology-reasoning",
+        "TX-technology-fine_tuning"
+      ],
+      "relatedEntityIds": [
+        "EN-96eebba49dbbf422"
+      ],
+      "firstSeen": "2026-05-22",
+      "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "EN-3a7bd3e2360a3d29",
+      "name": "Apple",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-f282ab8740ff0096",
+        "EV-968709fe29b77eba",
+        "EV-371a54f74b9d332c",
+        "EV-8a8e894a84768ea5",
+        "EV-f5a50f1fed72fec3",
+        "EV-d5419a74073b4508",
+        "EV-21caef1790021587",
+        "EV-302018f2e960a8bf",
+        "EV-aa962ef7ec9a5c50",
+        "EV-7cd4a5b931f0b667",
+        "EV-268250d426c1a4a0",
+        "EV-abf0990dcaceb1ce",
+        "EV-60c27ec9b857f5c2",
+        "EV-485670365d8edca2",
+        "EV-4cad63b0de20edb2",
+        "EV-85373b8ec9148127",
+        "EV-0b3d4c788a892787",
+        "EV-1ae8027c085679e9",
+        "EV-52e1ac21c25a0a09",
+        "EV-8361a47c70ecd243",
+        "EV-9f9bc7ffe6228281",
+        "EV-a5ba3797b38df125",
+        "EV-a9fe726c4ea2a17b",
+        "EV-c5b8faec223a4caf",
+        "EV-d40a1a873015ac98",
+        "EV-da062d02015f99fb",
+        "EV-eebe7dbf68b1e0b4",
+        "EV-fd527f43b5eb5f0a",
+        "EV-342799d4e68e7416",
+        "EV-ef823877347ff40f",
+        "EV-5cd10de5c12916f0",
+        "EV-5613946bdd578a26",
+        "EV-da6678e4e865e00e",
+        "EV-8cb2374f76202ecc",
+        "EV-b4203b10d6592bf2",
+        "EV-1b5db76949c2795c",
+        "EV-f2d29ca7b05c3dd9",
+        "EV-ea2b6ce4acd46366",
+        "EV-2821d0cef61b3c6a",
+        "EV-6f7c5f0abad3d4da",
+        "EV-8f497488d129fee5",
+        "EV-a8f1204b54ae6475"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-use_case-robotics_automation",
+        "TX-technology-long_context",
+        "TX-technology-on_device",
+        "TX-use_case-cybersecurity",
+        "TX-industry-retail_ecommerce",
+        "TX-technology-multimodal"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-04",
+      "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "EN-8d4321d936320802",
+      "name": "NVIDIA",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-4eaf3aabecae6016",
+        "EV-ed65f3187aa6aa40",
+        "EV-60b2d4d401bf5e97",
+        "EV-e41fc65eb014893f",
+        "EV-39894e375aacee77",
+        "EV-efca54f3b07072a6",
+        "EV-80e54c9a390da293",
+        "EV-d16fc5601c04a6a2",
+        "EV-236cbc2d64f0c455",
+        "EV-6180de2e02597d9d",
+        "EV-968709fe29b77eba",
+        "EV-adafffa563a53d49",
+        "EV-1f842e1dff69bb87",
+        "EV-9a7cd217a7a9a51c",
+        "EV-cafe435ddd007821",
+        "EV-283e88bdd15ed87e",
+        "EV-234ad54940674bf6",
+        "EV-5b16886442234f81",
+        "EV-ef6464cf7f764835",
+        "EV-b95539d17772a4ce",
+        "EV-f63462e34ea40699",
+        "EV-4faa2bcf2e42e60c",
+        "EV-9ee3c0ec243b6129",
+        "EV-58c1cc3749294649",
+        "EV-69784fe31cfdfc44",
+        "EV-c2800c1c5a3f568f",
+        "EV-303b418c63895ba6",
+        "EV-bb6d9e43c082fb47",
+        "EV-dfc634f28a70f423",
+        "EV-082314251be505e2",
+        "EV-0a5e65aa46b0d194",
+        "EV-53f881da31630a04",
+        "EV-3028dfadf94c8f4c",
+        "EV-412a140df8d75c45",
+        "EV-53564b1f0fd2214b",
+        "EV-09610316ac52221e",
+        "EV-c0f86afbefa2e0a6",
+        "EV-c718a5ff4b0acd66",
+        "EV-722c2a8dd6b70abd",
+        "EV-6eb9a23be3117421",
+        "EV-13f105479652938d",
+        "EV-3456f723929eff1b",
+        "EV-66338f5fb682617e",
+        "EV-568d2aeab5234e48",
+        "EV-305091abd41ad88d",
+        "EV-a24f9cba6b31439e",
+        "EV-b986a633cca27df9",
+        "EV-57597c92f7b183a9",
+        "EV-2258329f33d413cf",
+        "EV-19ea623bb5eabdd5",
+        "EV-309ea4fc27a66485",
+        "EV-4026c95d4c01b96e",
+        "EV-66970d4aea37111f",
+        "EV-aa63303570154a9b",
+        "EV-cbc8b53d4f4478b1",
+        "EV-d2a00623908ca15f",
+        "EV-d2ac9700c86913da",
+        "EV-d43a561da59b2897",
+        "EV-fc2164eb66e27f7e",
+        "EV-0b49d637d7c07ce0"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
+        "TX-use_case-robotics_automation",
+        "TX-industry-healthcare_life_sciences",
+        "TX-technology-long_context",
+        "TX-technology-mixture_of_experts",
+        "TX-technology-on_device",
+        "TX-use_case-cybersecurity",
+        "TX-industry-retail_ecommerce",
+        "TX-industry-telecommunications",
+        "TX-industry-technology",
+        "TX-use_case-customer_service",
+        "TX-technology-multimodal",
+        "TX-technology-embodied_ai",
+        "TX-technology-speech_audio",
+        "TX-technology-open_weights",
+        "TX-industry-media_entertainment",
+        "TX-technology-reasoning",
+        "TX-technology-inference_optimization"
+      ],
+      "relatedEntityIds": [
+        "EN-0f3360879e746531",
+        "EN-a1b0d8a938903dc7",
+        "EN-8395dc051feafc4c",
+        "EN-b5738c169b693bee",
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "firstSeen": "2026-05-18",
+      "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "EN-59ae856cd788d0f5",
+      "name": "Japan",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-cafe435ddd007821"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-manufacturing",
+        "TX-use_case-robotics_automation",
+        "TX-industry-healthcare_life_sciences",
+        "TX-industry-telecommunications",
+        "TX-technology-multimodal",
+        "TX-technology-embodied_ai"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-16",
+      "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "EN-0f3360879e746531",
+      "name": "Noetra",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-cafe435ddd007821"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-manufacturing",
+        "TX-use_case-robotics_automation",
+        "TX-industry-healthcare_life_sciences",
+        "TX-industry-telecommunications",
+        "TX-technology-multimodal",
+        "TX-technology-embodied_ai"
+      ],
+      "relatedEntityIds": [
+        "EN-8d4321d936320802"
+      ],
+      "firstSeen": "2026-07-16",
+      "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "EN-e3b1bf3dab957ffe",
+      "name": "Japan Government",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-cafe435ddd007821"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-manufacturing",
+        "TX-use_case-robotics_automation",
+        "TX-industry-healthcare_life_sciences",
+        "TX-industry-telecommunications",
+        "TX-technology-multimodal",
+        "TX-technology-embodied_ai"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-16",
+      "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "EN-9700d41909cf810f",
+      "name": "NVIDIA 联手日本政经界",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-cafe435ddd007821"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-manufacturing",
+        "TX-use_case-robotics_automation",
+        "TX-industry-healthcare_life_sciences",
+        "TX-industry-telecommunications",
+        "TX-technology-multimodal",
+        "TX-technology-embodied_ai"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-16",
+      "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "EN-193d220b421d776e",
+      "name": "华为联合上海电信",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-a9810b47e0408a05"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-multimodal"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-02",
+      "lastSeen": "2026-07-02"
+    },
+    {
+      "id": "EN-7d3194f79e645c42",
+      "name": "OpenAI",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "Codex",
+        "GPT-5.6"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-4da1a7c4d527eb69",
+        "EV-7f77e6a2d1698307",
+        "EV-c9af33ffe65d236b",
+        "EV-efca54f3b07072a6",
+        "EV-10c70ced68ccb31b",
+        "EV-adf92ecb7cd8714f",
+        "EV-384cc24be4b56cb5",
+        "EV-21c2e81a7c073e04",
+        "EV-edcb66d0401cfb8f",
+        "EV-b1138bccf5ccd86c",
+        "EV-ee0662b75588987e",
+        "EV-052d7d9120c683d1",
+        "EV-6180de2e02597d9d",
+        "EV-201b25d4f3cf696a",
+        "EV-853559d61ae2e313",
+        "EV-7dac684a33062b7f",
+        "EV-06fd0cc175652354",
+        "EV-1f842e1dff69bb87",
+        "EV-8a0866a27909f9d9",
+        "EV-e15ae1112294d59e",
+        "EV-62901df23f471eea",
+        "EV-4a4869273654c799",
+        "EV-d3528ccff1833385",
+        "EV-e1a4bc40db4a9d8f",
+        "EV-7f2811d2272cf4a3",
+        "EV-2fab4396000198d2",
+        "EV-3fb492fb45980541",
+        "EV-58614476c796a67a",
+        "EV-1060a8b37ddd87ac",
+        "EV-b716e560a685c41b",
+        "EV-1fbead21a2dd47a0",
+        "EV-0d5a32aca724d30e",
+        "EV-70e3f88cb06a856c",
+        "EV-7c899d5decafc42f",
+        "EV-cde5c3e5ef83bd51",
+        "EV-0ca3a9830e25f56b",
+        "EV-a3d022fa41708774",
+        "EV-cf5b2a0aff3914bd",
+        "EV-302018f2e960a8bf",
+        "EV-000f2abf549268a6",
+        "EV-519205eb50c83300",
+        "EV-ebe02c213368afae",
+        "EV-efee7c1ac4dc336f",
+        "EV-cf317dd1579a01bb",
+        "EV-d07906b648eec63f",
+        "EV-0510a983e120a381",
+        "EV-3cd088098be5d0d4",
+        "EV-268250d426c1a4a0",
+        "EV-51aed98773a9fca1",
+        "EV-2059f42c7b2aff44",
+        "EV-9fac0983ab657689",
+        "EV-af1d9851e91802af",
+        "EV-9c4b862020202f6c",
+        "EV-918fc324de3117bd",
+        "EV-c718a5ff4b0acd66",
+        "EV-860b90c017deaa59",
+        "EV-888b9eb73582e21c",
+        "EV-3f07de398af7a118",
+        "EV-722c2a8dd6b70abd",
+        "EV-abf0990dcaceb1ce",
+        "EV-b8bfab77707274b7",
+        "EV-6eb9a23be3117421",
+        "EV-9659eb492a9eea1b",
+        "EV-a0d3853dd41c8ef6",
+        "EV-cf883e02c693dfea",
+        "EV-fbde4dad2288059a",
+        "EV-1e7c76dae985100f",
+        "EV-09d3ce5611881ed4",
+        "EV-9110f23a7e60173e",
+        "EV-e792252690f98a22",
+        "EV-63a344522ee9e8d4",
+        "EV-28145c97a7237d6d",
+        "EV-8160e13555e65130",
+        "EV-f01d28aac73c3f9c",
+        "EV-e6771f58d7c2a050",
+        "EV-068a0671fa96b07d",
+        "EV-7f979d0a01e6dffa",
+        "EV-d50a2832bb30b287",
+        "EV-91d9e2c780593bbb",
+        "EV-6b74ed049774f0c5",
+        "EV-61b97c0ee6ad83b3",
+        "EV-b73c7096546b82e8",
+        "EV-2de6ff1a7aebd6e7",
+        "EV-59933d63c4051085",
+        "EV-fbdfb5888ad19663",
+        "EV-c28e0d02272537d8",
+        "EV-4a727d54055d6d0e",
+        "EV-e295f808713644c7",
+        "EV-d2a00623908ca15f",
+        "EV-01e414a25347cfd9",
+        "EV-a4f052325d0ef230",
+        "EV-4f4274fb5920a8b4",
+        "EV-0aa2e53c51b2b8e5",
+        "EV-5cd10de5c12916f0",
+        "EV-1a5628259e6ee487",
+        "EV-da6678e4e865e00e",
+        "EV-14b44a40808340f5",
+        "EV-2d56dec8dfeb2b56",
+        "EV-8cb2374f76202ecc",
+        "EV-917966af8545a380",
+        "EV-b4203b10d6592bf2",
+        "EV-1b5db76949c2795c",
+        "EV-f2d29ca7b05c3dd9",
+        "EV-ea2b6ce4acd46366",
+        "EV-2821d0cef61b3c6a",
+        "EV-6f7c5f0abad3d4da",
+        "EV-8f497488d129fee5",
+        "EV-a8f1204b54ae6475",
+        "EV-2ca9d0a3ca53c3bf",
+        "EV-6b7917bd7edd4bde",
+        "EV-e1ebf7d63e058a39",
+        "EV-9705a8de3c2e9653",
+        "EV-bce258f8f915ff5f",
+        "EV-4beb890f0879aeaf"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
+        "TX-technology-computer_use",
+        "TX-use_case-robotics_automation",
+        "TX-technology-code_generation",
+        "TX-industry-professional_services",
+        "TX-industry-healthcare_life_sciences",
+        "TX-use_case-enterprise_operations",
+        "TX-use_case-software_development",
+        "TX-technology-long_context",
+        "TX-industry-financial_services",
+        "TX-use_case-cybersecurity",
+        "TX-technology-human_in_loop",
+        "TX-industry-telecommunications",
+        "TX-use_case-customer_service",
+        "TX-technology-multimodal",
+        "TX-technology-retrieval_augmented_generation",
+        "TX-use_case-research_science",
+        "TX-technology-open_weights",
+        "TX-technology-tool_use",
+        "TX-technology-reasoning",
+        "TX-technology-model_context_protocol",
+        "TX-technology-fine_tuning"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-03-13",
+      "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "EN-8f71c4871a160172",
+      "name": "Thinking Machines Lab",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "tml"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-0af2872b513631d9",
+        "EV-80d4092a3df97198",
+        "EV-fa930fb25552f666",
+        "EV-70530734d19a478e",
+        "EV-70e3f88cb06a856c",
+        "EV-3aaff91528ca3d37",
+        "EV-cde5c3e5ef83bd51",
+        "EV-0ca3a9830e25f56b",
+        "EV-63b11635dd8d53a2",
+        "EV-b148f4df9dc65c3a",
+        "EV-3a888651e6ee5418",
+        "EV-9fac0983ab657689",
+        "EV-c6a50c6abc37378d"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-use_case-robotics_automation",
+        "TX-technology-code_generation",
+        "TX-technology-long_context",
+        "TX-technology-mixture_of_experts",
+        "TX-technology-multimodal",
+        "TX-technology-embodied_ai",
+        "TX-technology-open_weights",
+        "TX-technology-fine_tuning"
+      ],
+      "relatedEntityIds": [
+        "EN-78624f0a98e78301"
+      ],
+      "firstSeen": "2026-07-03",
+      "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "EN-78624f0a98e78301",
+      "name": "Inkling",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-70e3f88cb06a856c"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-long_context",
+        "TX-technology-multimodal"
+      ],
+      "relatedEntityIds": [
+        "EN-8f71c4871a160172"
+      ],
+      "firstSeen": "2026-07-16",
+      "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "EN-c608c4787821de1b",
+      "name": "Xiaomi",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-70530734d19a478e",
+        "EV-71f78f2026b54ba2",
+        "EV-28145c97a7237d6d",
+        "EV-45d7d42ef38e29bf",
+        "EV-f5dd192f6d4e04a3",
+        "EV-c7336cf617a545ce"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-robotics_automation",
+        "TX-technology-mixture_of_experts",
+        "TX-technology-multimodal",
+        "TX-technology-embodied_ai"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-09",
+      "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "EN-c70eca6b0f88f44d",
+      "name": "Anthropic",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "Claude Code",
+        "Claude"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-7f77e6a2d1698307",
+        "EV-10c70ced68ccb31b",
+        "EV-6fe0054517fdee98",
+        "EV-80e54c9a390da293",
+        "EV-5ca4c08ec3e2c3b7",
+        "EV-7aaed0a2ae5cf8b6",
+        "EV-21c2e81a7c073e04",
+        "EV-edcb66d0401cfb8f",
+        "EV-052d7d9120c683d1",
+        "EV-19d4c2ef8d9f338a",
+        "EV-6180de2e02597d9d",
+        "EV-f64345af2affb07d",
+        "EV-05be25222ebd2bc2",
+        "EV-201b25d4f3cf696a",
+        "EV-853559d61ae2e313",
+        "EV-7958f9adf8f62577",
+        "EV-06fd0cc175652354",
+        "EV-ed8260ee9a7a80af",
+        "EV-5964027086487940",
+        "EV-e1a4bc40db4a9d8f",
+        "EV-c81cb21337a9bb98",
+        "EV-7f2811d2272cf4a3",
+        "EV-6415a58637893b34",
+        "EV-ef6464cf7f764835",
+        "EV-727ba25770d1f897",
+        "EV-4b0a7d68040c37aa",
+        "EV-f949fd95df58d42d",
+        "EV-b240fb11e65b018e",
+        "EV-30e8529ddeb228c8",
+        "EV-3398ae53a199be16",
+        "EV-0d5a32aca724d30e",
+        "EV-a8a8f26c5128d894",
+        "EV-51645a3b1e730105",
+        "EV-7c899d5decafc42f",
+        "EV-c2800c1c5a3f568f",
+        "EV-26cd4d692404e5c6",
+        "EV-cde5c3e5ef83bd51",
+        "EV-0ca3a9830e25f56b",
+        "EV-84226288807f817b",
+        "EV-8bf42c1816e772ba",
+        "EV-0347414d81e7f02e",
+        "EV-917a138950a21f91",
+        "EV-fd303844e336b9ee",
+        "EV-2bd337245c920bc8",
+        "EV-302018f2e960a8bf",
+        "EV-000f2abf549268a6",
+        "EV-ebe02c213368afae",
+        "EV-d39b53ca7b84b9ca",
+        "EV-3e55e1cd1d54f6ef",
+        "EV-cedeae902fd1263d",
+        "EV-3cd088098be5d0d4",
+        "EV-c410d77c8d531e5f",
+        "EV-e130583e34ab9d4c",
+        "EV-e31f0616ad878b7d",
+        "EV-598888cce208de5c",
+        "EV-d40a4e1b7a53cabe",
+        "EV-268250d426c1a4a0",
+        "EV-2059f42c7b2aff44",
+        "EV-9fac0983ab657689",
+        "EV-9ab36b0012b5c8c1",
+        "EV-eb02b3d3b25fe584",
+        "EV-63fdf001c22a0ed4",
+        "EV-2f81b0d48d128f5c",
+        "EV-8daf217ff024ac4a",
+        "EV-01212a5ad9db6a20",
+        "EV-13e06fc12cc3fb7c",
+        "EV-1662a98c563d3dce",
+        "EV-3b5cb867fdaba28f",
+        "EV-761d76b722321673",
+        "EV-9c4b862020202f6c",
+        "EV-ff748f8529cd80e7",
+        "EV-09610316ac52221e",
+        "EV-918fc324de3117bd",
+        "EV-c0f86afbefa2e0a6",
+        "EV-87ad2bdf8cd4b0c8",
+        "EV-860b90c017deaa59",
+        "EV-445db243814e88d0",
+        "EV-722c2a8dd6b70abd",
+        "EV-abf0990dcaceb1ce",
+        "EV-46b9ae8e68164b93",
+        "EV-9659eb492a9eea1b",
+        "EV-cf883e02c693dfea",
+        "EV-3ff2a155035d01e7",
+        "EV-644337db309a1c82",
+        "EV-7e6e0470ea99a6eb",
+        "EV-cb08f263d23e6c00",
+        "EV-09d3ce5611881ed4",
+        "EV-9536c76cee278fcb",
+        "EV-ad2c8dc4a08de64c",
+        "EV-53f7c11bfe7b50d1",
+        "EV-28145c97a7237d6d",
+        "EV-491e7b4b506ab3e3",
+        "EV-2af2957a10b3c198",
+        "EV-67d9c51e97dfbb7b",
+        "EV-56f80f42cf6a7096",
+        "EV-60c27ec9b857f5c2",
+        "EV-745adb0e9f7a75a2",
+        "EV-d50a2832bb30b287",
+        "EV-832fa2db95cfea6e",
+        "EV-f2acdcbe3b644340",
+        "EV-91d9e2c780593bbb",
+        "EV-461b38cb8f56b067",
+        "EV-61b97c0ee6ad83b3",
+        "EV-57f083a39393d841",
+        "EV-6007062e7e4a6f5e",
+        "EV-adbdaa251b42ec79",
+        "EV-43fdb17a23e13f97",
+        "EV-689538e8159887de",
+        "EV-68fcce7fde89e5d7",
+        "EV-b0145ffd99b55e66",
+        "EV-c7a2774b07554f5d",
+        "EV-e09bff5515b1896b",
+        "EV-f107a073158480a9",
+        "EV-f1418d9e3b1413b7",
+        "EV-f5dd192f6d4e04a3",
+        "EV-ff3ae595bf49ccbf",
+        "EV-3371b45e53949464",
+        "EV-9127c613a365044b",
+        "EV-c5b8faec223a4caf",
+        "EV-fd527f43b5eb5f0a",
+        "EV-2de6ff1a7aebd6e7",
+        "EV-59933d63c4051085",
+        "EV-d83bfcd73c850580",
+        "EV-1d972159120db2fc",
+        "EV-4a727d54055d6d0e",
+        "EV-dbeae330706b53ca",
+        "EV-abaf05e513f88a4f",
+        "EV-d2a00623908ca15f",
+        "EV-4f4274fb5920a8b4",
+        "EV-0aa2e53c51b2b8e5",
+        "EV-2d56dec8dfeb2b56",
+        "EV-2ca9d0a3ca53c3bf",
+        "EV-aef95763358b4ec8",
+        "EV-6266c73d470e8aef",
+        "EV-d26ad59ffe89d45a",
+        "EV-9705a8de3c2e9653",
+        "EV-68edd592c36dccd3",
+        "EV-d49da50484ba781f",
+        "EV-ad269fada2269f35",
+        "EV-978474e4af50eb35"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
+        "TX-technology-code_generation",
+        "TX-industry-healthcare_life_sciences",
+        "TX-use_case-enterprise_operations",
+        "TX-use_case-software_development",
+        "TX-technology-long_context",
+        "TX-technology-mixture_of_experts",
+        "TX-industry-financial_services",
+        "TX-technology-on_device",
+        "TX-use_case-cybersecurity",
+        "TX-use_case-data_analysis",
+        "TX-industry-retail_ecommerce",
+        "TX-technology-human_in_loop",
+        "TX-industry-telecommunications",
+        "TX-use_case-customer_service",
+        "TX-technology-multimodal",
+        "TX-technology-retrieval_augmented_generation",
+        "TX-technology-embodied_ai",
+        "TX-technology-speech_audio",
+        "TX-technology-open_weights",
+        "TX-technology-tool_use",
+        "TX-technology-model_context_protocol",
+        "TX-industry-government_public_sector",
+        "TX-industry-education",
+        "TX-technology-fine_tuning"
+      ],
+      "relatedEntityIds": [
+        "EN-3a9b395103419892"
+      ],
+      "firstSeen": "2026-03-13",
+      "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "EN-2b6e51bec93e86c1",
+      "name": "Google DeepMind",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "谷歌 DeepMind"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-6f092cfc7a064d64",
+        "EV-1ac32035d5e425e1",
+        "EV-adafffa563a53d49",
+        "EV-ef7402351b6b37bd",
+        "EV-67ef7accd26a07a0",
+        "EV-a7e1ecd212474e00",
+        "EV-d961d3ad02f6ae14",
+        "EV-f9eebe4e3b9b667c",
+        "EV-5babb43f4b4d302f",
+        "EV-ff10670ad06959ec",
+        "EV-8ab21bf8e73cf44a",
+        "EV-568d2aeab5234e48",
+        "EV-d6f638da9e1d3b46",
+        "EV-f68e00bb9fd49fac",
+        "EV-3e9a0d1be6de5096",
+        "EV-68edd592c36dccd3",
+        "EV-d49da50484ba781f"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
+        "TX-technology-vision_language",
+        "TX-technology-code_generation",
+        "TX-industry-healthcare_life_sciences",
+        "TX-use_case-software_development",
+        "TX-technology-mixture_of_experts",
+        "TX-use_case-cybersecurity",
+        "TX-use_case-customer_service",
+        "TX-technology-multimodal",
+        "TX-technology-speech_audio",
+        "TX-use_case-research_science",
+        "TX-industry-media_entertainment",
+        "TX-technology-video_generation",
+        "TX-technology-fine_tuning"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-05-23",
+      "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "EN-b0532e1af75cc4ab",
+      "name": "Rime",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-64fb6d791e19d10a",
+        "EV-8bbe9b602c09273d",
+        "EV-19d26c4129df1cee",
+        "EV-a1552fec696f1a43",
+        "EV-5a26f343846cb8ad",
+        "EV-9326c7450f6c318d",
+        "EV-c808bd4cb76bda9e",
+        "EV-7aaed0a2ae5cf8b6",
+        "EV-c5abea15a56d035e",
+        "EV-05be25222ebd2bc2",
+        "EV-f8a79104a533422b",
+        "EV-f074a62a26f37ae3",
+        "EV-8a0866a27909f9d9",
+        "EV-b67b71905356837d",
+        "EV-a9f1e8662a1e22cf",
+        "EV-727ba25770d1f897",
+        "EV-000f2abf549268a6",
+        "EV-5babb43f4b4d302f",
+        "EV-14401cfc102c6511",
+        "EV-568d2aeab5234e48",
+        "EV-d6f638da9e1d3b46",
+        "EV-fbc5c65cc697c83b",
+        "EV-0ad758b04b9b5313",
+        "EV-0b3d4c788a892787",
+        "EV-d31057c6f6ec28ba"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-use_case-robotics_automation",
+        "TX-technology-code_generation",
+        "TX-use_case-software_development",
+        "TX-technology-mixture_of_experts",
+        "TX-industry-financial_services",
+        "TX-industry-retail_ecommerce",
+        "TX-technology-multimodal",
+        "TX-industry-media_entertainment",
+        "TX-technology-video_generation",
+        "TX-technology-fine_tuning"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-05-20",
+      "lastSeen": "2026-07-16"
+    },
+    {
+      "id": "EN-e1517be14d06cdb7",
+      "name": "MiniMax",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-9da9d755019f241f",
+        "EV-75b741c8c09d4384",
+        "EV-e8bdeab9389a5f0c"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-multimodal"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-13",
+      "lastSeen": "2026-07-09"
+    },
+    {
+      "id": "EN-7ca2b7da6e0f8654",
+      "name": "科大讯飞",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-b88affdec306a75a"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-robotics_automation",
+        "TX-technology-multimodal",
+        "TX-technology-embodied_ai"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-13",
+      "lastSeen": "2026-06-14"
+    },
+    {
+      "id": "EN-047364b9be67f665",
+      "name": "Alibaba",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "阿里巴巴"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-82020f9eaea90951",
+        "EV-9895cb57eb366680",
+        "EV-371a54f74b9d332c",
+        "EV-341e9759d2cd90f7",
+        "EV-e1a4bc40db4a9d8f",
+        "EV-ff8e19a80058c198",
+        "EV-f6ac2938949f74ec",
+        "EV-363fe72da52bdb86",
+        "EV-83c841a4c42cfdea",
+        "EV-6fea710316ebda18",
+        "EV-4532e847f78cde0d",
+        "EV-7a1cedd0530529a0",
+        "EV-9fac0983ab657689",
+        "EV-473f852b374d8b1c",
+        "EV-9202647c8ad8f11b",
+        "EV-197aac95e60671f7",
+        "EV-160a359d9406b69e",
+        "EV-c68a8af069f3ed1d",
+        "EV-01e414a25347cfd9",
+        "EV-aef95763358b4ec8"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
+        "TX-use_case-robotics_automation",
+        "TX-technology-code_generation",
+        "TX-technology-multimodal",
+        "TX-technology-embodied_ai",
+        "TX-technology-video_generation",
+        "TX-technology-tool_use",
+        "TX-technology-fine_tuning"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "EN-b5251b35f15bedc4",
+      "name": "Moonshot AI",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "月之暗面"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-0d5a32aca724d30e",
+        "EV-74b965de27bc0515"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-vision_language",
+        "TX-technology-long_context",
+        "TX-technology-multimodal"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "EN-d831f1170590ddb1",
+      "name": "PerceptionBench",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-74b965de27bc0515"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-vision_language",
+        "TX-technology-multimodal"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "EN-9c8ae69b84f21a2e",
+      "name": "Tencent",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "腾讯"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-ed65f3187aa6aa40",
+        "EV-427081ec574b43bb",
+        "EV-e0b0ab8dfcab20a5",
+        "EV-b0d008460e8f75fe",
+        "EV-f89d14f52c223a04",
+        "EV-242b4e0488296c1d",
+        "EV-c01b11eed792b3e8",
+        "EV-de54542fd7e2282c",
+        "EV-6fea710316ebda18",
+        "EV-5e5294fe06002bc1",
+        "EV-760d117b4d82fc97",
+        "EV-57e6392fe3bb69cd",
+        "EV-3526144877bc9400",
+        "EV-a498b12f3fa2197e",
+        "EV-c68a8af069f3ed1d",
+        "EV-6a6ff349579765ad",
+        "EV-6b7917bd7edd4bde"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-multimodal",
+        "TX-technology-quantization"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-05-18",
+      "lastSeen": "2026-07-15"
+    }
+  ],
+  "fde": [
+    {
+      "id": "FDE-45ad6eae0d326429",
+      "eventId": "EV-9f067d8f0d23eb48",
+      "dataDate": "2026-07-13",
+      "date": "2026-07-08",
+      "title": "Simplexity Robotics 成立 11 个月即向生产线交付 100 台 i7 Pro 机器人，并部署于 Leaderdrive 与 AI 基础设施工厂",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "at Leaderdrive and AI Infrastructure Factories | RobotsBeat",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [],
+      "outcomes": [],
+      "metrics": [
+        "40%",
+        "99.9%"
+      ],
+      "undisclosedFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "sourceUrl": "https://robotsbeat.com/simplexity-robotics-100-robots-i7-pro-leaderdrive-production-deployment",
+      "entityIds": []
+    },
+    {
+      "id": "FDE-4858cc86925e281a",
+      "eventId": "EV-f169db2fb75a1371",
+      "dataDate": "2026-06-23",
+      "date": "2026-06-22",
+      "title": "生数 Vidu Q3 多模态视频大模型上线华为云 MaaS，主打文/图生视频一体化成片",
+      "stage": "completed",
+      "stageLabel": "已完成",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "华为云 MaaS，主打文/图生视频一体化成片",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "为剧而生：生数 Vidu Q3 多模态大模型上线华为云，主打文 / 图生视频一体化成片能力 - IT之家",
+        "为剧而生：生数 Vidu Q3 多模态大模型上线华为云，主打文 / 图生视频一体化成片能力",
+        "IT之家 6 月 22 日消息，华为云刚刚宣布，生数科技新一代多模态视频生成大模型 Vidu Q3 上线华为云 MaaS 模型即服务。",
+        "IT之家注意到，Vidu Q3 本次有 2 个版本上线华为云 MaaS 平台："
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成"
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/967/217.htm",
+      "entityIds": []
+    },
+    {
+      "id": "FDE-5587adb203295543",
+      "eventId": "EV-21caef1790021587",
+      "dataDate": "2026-06-21",
+      "date": "2026-06-20",
+      "title": "LM Studio 与苹果合作，成功用四台 Mac Studio 运行万亿参数 Kimi K2.6 大模型",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "，成功用四台 Mac Studio 运行万亿参数 Kimi K2.6 大模型",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "LM Studio 作为本地 AI 模型运行平台，此次与苹果的合作进一步展示了在消费级硬件上部署大型开源模型的可能性。"
+      ],
+      "outcomes": [
+        "IT之家此前报道，Kimi K2.6 大模型总参数规模达到 1 万亿，采用 MoE 架构，激活参数为 320 亿，支持长上下文、多模态输入以及智能体任务处理。",
+        "据 LM Studio 官方介绍，在此次演示中，四台 Mac Studio 通过苹果的内存共享和互联技术形成集群，总统一内存容量达到约 1.5TB，能够承载这一前沿规模模型的推理需求。"
+      ],
+      "metrics": [
+        "1 万",
+        "320 亿"
+      ],
+      "undisclosedFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls"
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "long_context",
+          "name": "长上下文"
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/966/539.htm",
+      "entityIds": [
+        "EN-3a7bd3e2360a3d29"
+      ]
+    }
+  ],
+  "hardware": [
+    {
+      "id": "HW-ceb55d9bc637c1d3",
+      "eventId": "EV-cafe435ddd007821",
+      "dataDate": "2026-07-17",
+      "date": "2026-07-16",
+      "title": "日本启动 Noetra 国家级 AI 基础设施，计划采购 2.75 万枚 NVIDIA Rubin 芯片",
+      "hardwareType": "gpu",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "computeLayer": "data_center",
+      "supplier": "NVIDIA",
+      "customer": "Noetra",
+      "processNode": "未披露",
+      "capacity": 27500,
+      "capacityUnit": "chips",
+      "site": "未披露",
+      "region": "Japan",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "sourceUrl": "https://japantimes.co.jp/business/2026/07/16/japan-nvidia-rubin-chips-robots",
+      "sourceName": "japantimes.co.jp",
+      "sourceDate": "2026-07-16",
+      "entityIds": [
+        "EN-59ae856cd788d0f5",
+        "EN-8d4321d936320802",
+        "EN-0f3360879e746531",
+        "EN-e3b1bf3dab957ffe",
+        "EN-9700d41909cf810f"
+      ]
+    },
+    {
+      "id": "HW-de1b3c6ad39cc9bc",
+      "eventId": "EV-0a5e65aa46b0d194",
+      "dataDate": "2026-07-11",
+      "date": "2026-07-10",
+      "title": "加速进化发布 Booster T2 具身开发旗舰平台：搭载英伟达 Thor 芯片，2070TFLOPS 算力",
+      "hardwareType": "semiconductor",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "edge",
+      "supplier": "NVIDIA",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "inference_optimization",
+          "name": "推理优化"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧"
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/975/340.htm",
+      "sourceName": "IT之家（RSS）",
+      "sourceDate": "2026-07-10",
+      "entityIds": [
+        "EN-8d4321d936320802"
+      ]
+    }
+  ]
+}

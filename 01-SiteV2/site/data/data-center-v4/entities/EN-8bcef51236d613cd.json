@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T15:01:31.906Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 748,
+    "quarantinedEventCount": 32
+  },
+  "entity": {
+    "id": "EN-8bcef51236d613cd",
+    "name": "智谱",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-1e0871947289ab6e"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-technology-code_generation"
+    ],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-06-13",
+    "lastSeen": "2026-06-14",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-1e0871947289ab6e"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-1e0871947289ab6e",
+        "dataDate": "2026-06-14",
+        "date": "2026-06-13",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "智谱发布ZCode 3.0：搭载自研Agent内核，深度适配GLM-5.2",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "developer_tool",
+            "dimensionName": "产品形态",
+            "name": "开发者工具"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "code_generation",
+            "name": "代码生成"
+          }
+        ],
+        "entityIds": [
+          "EN-8bcef51236d613cd"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-technology-code_generation",
+      "name": "代码生成",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "code_generation",
+      "eventIds": [
+        "EV-1a6688afdfd108ef",
+        "EV-15cc72d7c78cad3d",
+        "EV-a1552fec696f1a43",
+        "EV-a1e3aeedc80c61b9",
+        "EV-3daefecd0453631a",
+        "EV-bb6bc8194a3a50c1",
+        "EV-edcb66d0401cfb8f",
+        "EV-ee0662b75588987e",
+        "EV-03f661e8dcdf1b58",
+        "EV-2d6d2dc0ead4be10",
+        "EV-e1a4bc40db4a9d8f",
+        "EV-80d4092a3df97198",
+        "EV-653cbce2ccc79f8b",
+        "EV-d53cd33e8f541a65",
+        "EV-a3d022fa41708774",
+        "EV-e0ca82d9c7351494",
+        "EV-53288fcf18e677e6",
+        "EV-bc71b0ddefa209a9",
+        "EV-1e0871947289ab6e",
+        "EV-6b74ed049774f0c5",
+        "EV-175af8c7b8146340",
+        "EV-7fd3102ac547cbda",
+        "EV-964971e83a649d4d",
+        "EV-343e0454586c58a9",
+        "EV-f68e00bb9fd49fac",
+        "EV-4f4274fb5920a8b4",
+        "EV-2ca9d0a3ca53c3bf",
+        "EV-6266c73d470e8aef",
+        "EV-4900ddf0686f4bbc"
+      ],
+      "entityIds": [
+        "EN-026c3bd4be5b91f3",
+        "EN-80d387ccb3289295",
+        "EN-3ccbd9105a45d8fc",
+        "EN-b0532e1af75cc4ab",
+        "EN-e78bdebae031095b",
+        "EN-6fcba5d96a4fadfd",
+        "EN-c70eca6b0f88f44d",
+        "EN-7d3194f79e645c42",
+        "EN-3db1f560db626918",
+        "EN-047364b9be67f665",
+        "EN-4094a2b7125c7564",
+        "EN-8f71c4871a160172",
+        "EN-f3cfedbe8428c9f7",
+        "EN-7df09a7717ef2feb",
+        "EN-c04bd5ebd10ab696",
+        "EN-50ba7ff15827787b",
+        "EN-bbdefa2950f49882",
+        "EN-ce635c4eabff5e4f",
+        "EN-1b924576e394e538",
+        "EN-4adc2faea521b1f1",
+        "EN-8bcef51236d613cd",
+        "EN-72e8088a05b38ae3",
+        "EN-2b6e51bec93e86c1",
+        "EN-ea3bd73e2b506e00",
+        "EN-0030f5adc7a3f4d7"
+      ],
+      "fdeIds": [
+        "FDE-7334c7781021c39a",
+        "FDE-86d6dab0d65ee69f",
+        "FDE-2081d000e8ad8e1c"
+      ],
+      "hardwareIds": [
+        "HW-103be168bfc1bff8"
+      ],
+      "firstSeen": "2026-05-19",
+      "lastSeen": "2026-07-17"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}

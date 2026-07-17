@@ -1,0 +1,563 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T15:01:31.906Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 748,
+    "quarantinedEventCount": 32
+  },
+  "node": {
+    "id": "TX-use_case-data_analysis",
+    "name": "数据分析",
+    "nodeType": "use_case",
+    "typeLabel": "应用场景",
+    "valueId": "data_analysis",
+    "eventIds": [
+      "EV-5f5f252c6a826599",
+      "EV-daf1e21f8ccbf839",
+      "EV-e09bff5515b1896b"
+    ],
+    "entityIds": [
+      "EN-122c0bebae950c77",
+      "EN-a89151ba4b5ac0f2",
+      "EN-f64f284f6c46b9b6",
+      "EN-2e610cbc4b309296",
+      "EN-33ea25778e18d372",
+      "EN-c70eca6b0f88f44d"
+    ],
+    "fdeIds": [],
+    "hardwareIds": [],
+    "firstSeen": "2026-06-10",
+    "lastSeen": "2026-07-17"
+  },
+  "events": [
+    {
+      "id": "EV-5f5f252c6a826599",
+      "dataDate": "2026-06-25",
+      "date": "2026-06-25",
+      "updatedDate": "2026-06-25",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "partial",
+      "title": "Fire AI 完成 种子前轮融资",
+      "originalTitle": "Fire AI Secures Pre-Seed Funding from Venture Catalysts",
+      "subject": "Fire AI",
+      "action": "Secures",
+      "object": "Pre-Seed Funding from Venture Catalysts",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "data_analysis",
+            "dimensionName": "应用场景",
+            "name": "数据分析"
+          },
+          {
+            "dimensionId": "use_case",
+            "id": "enterprise_operations",
+            "dimensionName": "应用场景",
+            "name": "企业运营自动化"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "id": "data_analysis",
+          "dimensionName": "应用场景",
+          "name": "数据分析"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "enterprise_operations",
+          "dimensionName": "应用场景",
+          "name": "企业运营自动化"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "data_analysis",
+          "dimensionName": "应用场景",
+          "name": "数据分析"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "enterprise_operations",
+          "dimensionName": "应用场景",
+          "name": "企业运营自动化"
+        }
+      ],
+      "entityIds": [
+        "EN-122c0bebae950c77"
+      ],
+      "entityNames": [
+        "Fire AI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://startuprise.org/fire-ai-secures-pre-seed-funding-from-venture-catalysts",
+      "publisher": "startuprise.org"
+    },
+    {
+      "id": "EV-daf1e21f8ccbf839",
+      "dataDate": "2026-07-17",
+      "date": "2026-07-16",
+      "updatedDate": "2026-07-17",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "百度文库、网盘升级 GenFlow，7 月底内测面向金融等行业推出独立客户端",
+      "originalTitle": "",
+      "subject": "百度文库、网盘升级 GenFlow，7 月底内测面向金融等行业",
+      "action": "推出",
+      "object": "独立客户端",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "data_analysis",
+            "dimensionName": "应用场景",
+            "name": "数据分析"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "id": "data_analysis",
+          "dimensionName": "应用场景",
+          "name": "数据分析"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "data_analysis",
+          "dimensionName": "应用场景",
+          "name": "数据分析"
+        }
+      ],
+      "entityIds": [
+        "EN-a89151ba4b5ac0f2",
+        "EN-f64f284f6c46b9b6",
+        "EN-2e610cbc4b309296",
+        "EN-33ea25778e18d372"
+      ],
+      "entityNames": [
+        "Baidu",
+        "百度文库",
+        "网盘升级 GenFlow",
+        "GenFlow"
+      ],
+      "productName": "GenFlow",
+      "products": [
+        {
+          "name": "GenFlow",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Baidu"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/977/460.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-e09bff5515b1896b",
+      "dataDate": "2026-06-10",
+      "date": "2026-06-10",
+      "updatedDate": "2026-06-10",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Anthropic 发布 Claude Fable 5 和 Mythos 5，编程和科学能力大幅提升",
+      "originalTitle": "",
+      "subject": "Anthropic",
+      "action": "发布",
+      "object": "Claude Fable 5 和 Mythos 5，编程和科学能力大幅提升",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "data_analysis",
+            "dimensionName": "应用场景",
+            "name": "数据分析"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "id": "data_analysis",
+          "dimensionName": "应用场景",
+          "name": "数据分析"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "data_analysis",
+          "dimensionName": "应用场景",
+          "name": "数据分析"
+        }
+      ],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://the-decoder.com/anthropic-releases-claude-fable-5-and-mythos-5-with-major-gains-in-coding-and-science",
+      "publisher": "The Decoder：AI News（RSS）"
+    }
+  ],
+  "entities": [
+    {
+      "id": "EN-122c0bebae950c77",
+      "name": "Fire AI",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-5f5f252c6a826599"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-enterprise_operations",
+        "TX-use_case-data_analysis"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-25",
+      "lastSeen": "2026-06-25"
+    },
+    {
+      "id": "EN-a89151ba4b5ac0f2",
+      "name": "Baidu",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "百度文库"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-daf1e21f8ccbf839"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-data_analysis"
+      ],
+      "relatedEntityIds": [
+        "EN-33ea25778e18d372"
+      ],
+      "firstSeen": "2026-07-16",
+      "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "EN-f64f284f6c46b9b6",
+      "name": "百度文库",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-daf1e21f8ccbf839"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-data_analysis"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-16",
+      "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "EN-2e610cbc4b309296",
+      "name": "网盘升级 GenFlow",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-daf1e21f8ccbf839"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-data_analysis"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-16",
+      "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "EN-33ea25778e18d372",
+      "name": "GenFlow",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-daf1e21f8ccbf839"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-data_analysis"
+      ],
+      "relatedEntityIds": [
+        "EN-a89151ba4b5ac0f2"
+      ],
+      "firstSeen": "2026-07-16",
+      "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "EN-c70eca6b0f88f44d",
+      "name": "Anthropic",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "Claude Code",
+        "Claude"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-7f77e6a2d1698307",
+        "EV-10c70ced68ccb31b",
+        "EV-6fe0054517fdee98",
+        "EV-80e54c9a390da293",
+        "EV-5ca4c08ec3e2c3b7",
+        "EV-7aaed0a2ae5cf8b6",
+        "EV-21c2e81a7c073e04",
+        "EV-edcb66d0401cfb8f",
+        "EV-052d7d9120c683d1",
+        "EV-19d4c2ef8d9f338a",
+        "EV-6180de2e02597d9d",
+        "EV-f64345af2affb07d",
+        "EV-05be25222ebd2bc2",
+        "EV-201b25d4f3cf696a",
+        "EV-853559d61ae2e313",
+        "EV-7958f9adf8f62577",
+        "EV-06fd0cc175652354",
+        "EV-ed8260ee9a7a80af",
+        "EV-5964027086487940",
+        "EV-e1a4bc40db4a9d8f",
+        "EV-c81cb21337a9bb98",
+        "EV-7f2811d2272cf4a3",
+        "EV-6415a58637893b34",
+        "EV-ef6464cf7f764835",
+        "EV-727ba25770d1f897",
+        "EV-4b0a7d68040c37aa",
+        "EV-f949fd95df58d42d",
+        "EV-b240fb11e65b018e",
+        "EV-30e8529ddeb228c8",
+        "EV-3398ae53a199be16",
+        "EV-0d5a32aca724d30e",
+        "EV-a8a8f26c5128d894",
+        "EV-51645a3b1e730105",
+        "EV-7c899d5decafc42f",
+        "EV-c2800c1c5a3f568f",
+        "EV-26cd4d692404e5c6",
+        "EV-cde5c3e5ef83bd51",
+        "EV-0ca3a9830e25f56b",
+        "EV-84226288807f817b",
+        "EV-8bf42c1816e772ba",
+        "EV-0347414d81e7f02e",
+        "EV-917a138950a21f91",
+        "EV-fd303844e336b9ee",
+        "EV-2bd337245c920bc8",
+        "EV-302018f2e960a8bf",
+        "EV-000f2abf549268a6",
+        "EV-ebe02c213368afae",
+        "EV-d39b53ca7b84b9ca",
+        "EV-3e55e1cd1d54f6ef",
+        "EV-cedeae902fd1263d",
+        "EV-3cd088098be5d0d4",
+        "EV-c410d77c8d531e5f",
+        "EV-e130583e34ab9d4c",
+        "EV-e31f0616ad878b7d",
+        "EV-598888cce208de5c",
+        "EV-d40a4e1b7a53cabe",
+        "EV-268250d426c1a4a0",
+        "EV-2059f42c7b2aff44",
+        "EV-9fac0983ab657689",
+        "EV-9ab36b0012b5c8c1",
+        "EV-eb02b3d3b25fe584",
+        "EV-63fdf001c22a0ed4",
+        "EV-2f81b0d48d128f5c",
+        "EV-8daf217ff024ac4a",
+        "EV-01212a5ad9db6a20",
+        "EV-13e06fc12cc3fb7c",
+        "EV-1662a98c563d3dce",
+        "EV-3b5cb867fdaba28f",
+        "EV-761d76b722321673",
+        "EV-9c4b862020202f6c",
+        "EV-ff748f8529cd80e7",
+        "EV-09610316ac52221e",
+        "EV-918fc324de3117bd",
+        "EV-c0f86afbefa2e0a6",
+        "EV-87ad2bdf8cd4b0c8",
+        "EV-860b90c017deaa59",
+        "EV-445db243814e88d0",
+        "EV-722c2a8dd6b70abd",
+        "EV-abf0990dcaceb1ce",
+        "EV-46b9ae8e68164b93",
+        "EV-9659eb492a9eea1b",
+        "EV-cf883e02c693dfea",
+        "EV-3ff2a155035d01e7",
+        "EV-644337db309a1c82",
+        "EV-7e6e0470ea99a6eb",
+        "EV-cb08f263d23e6c00",
+        "EV-09d3ce5611881ed4",
+        "EV-9536c76cee278fcb",
+        "EV-ad2c8dc4a08de64c",
+        "EV-53f7c11bfe7b50d1",
+        "EV-28145c97a7237d6d",
+        "EV-491e7b4b506ab3e3",
+        "EV-2af2957a10b3c198",
+        "EV-67d9c51e97dfbb7b",
+        "EV-56f80f42cf6a7096",
+        "EV-60c27ec9b857f5c2",
+        "EV-745adb0e9f7a75a2",
+        "EV-d50a2832bb30b287",
+        "EV-832fa2db95cfea6e",
+        "EV-f2acdcbe3b644340",
+        "EV-91d9e2c780593bbb",
+        "EV-461b38cb8f56b067",
+        "EV-61b97c0ee6ad83b3",
+        "EV-57f083a39393d841",
+        "EV-6007062e7e4a6f5e",
+        "EV-adbdaa251b42ec79",
+        "EV-43fdb17a23e13f97",
+        "EV-689538e8159887de",
+        "EV-68fcce7fde89e5d7",
+        "EV-b0145ffd99b55e66",
+        "EV-c7a2774b07554f5d",
+        "EV-e09bff5515b1896b",
+        "EV-f107a073158480a9",
+        "EV-f1418d9e3b1413b7",
+        "EV-f5dd192f6d4e04a3",
+        "EV-ff3ae595bf49ccbf",
+        "EV-3371b45e53949464",
+        "EV-9127c613a365044b",
+        "EV-c5b8faec223a4caf",
+        "EV-fd527f43b5eb5f0a",
+        "EV-2de6ff1a7aebd6e7",
+        "EV-59933d63c4051085",
+        "EV-d83bfcd73c850580",
+        "EV-1d972159120db2fc",
+        "EV-4a727d54055d6d0e",
+        "EV-dbeae330706b53ca",
+        "EV-abaf05e513f88a4f",
+        "EV-d2a00623908ca15f",
+        "EV-4f4274fb5920a8b4",
+        "EV-0aa2e53c51b2b8e5",
+        "EV-2d56dec8dfeb2b56",
+        "EV-2ca9d0a3ca53c3bf",
+        "EV-aef95763358b4ec8",
+        "EV-6266c73d470e8aef",
+        "EV-d26ad59ffe89d45a",
+        "EV-9705a8de3c2e9653",
+        "EV-68edd592c36dccd3",
+        "EV-d49da50484ba781f",
+        "EV-ad269fada2269f35",
+        "EV-978474e4af50eb35"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
+        "TX-technology-code_generation",
+        "TX-industry-healthcare_life_sciences",
+        "TX-use_case-enterprise_operations",
+        "TX-use_case-software_development",
+        "TX-technology-long_context",
+        "TX-technology-mixture_of_experts",
+        "TX-industry-financial_services",
+        "TX-technology-on_device",
+        "TX-use_case-cybersecurity",
+        "TX-use_case-data_analysis",
+        "TX-industry-retail_ecommerce",
+        "TX-technology-human_in_loop",
+        "TX-industry-telecommunications",
+        "TX-use_case-customer_service",
+        "TX-technology-multimodal",
+        "TX-technology-retrieval_augmented_generation",
+        "TX-technology-embodied_ai",
+        "TX-technology-speech_audio",
+        "TX-technology-open_weights",
+        "TX-technology-tool_use",
+        "TX-technology-model_context_protocol",
+        "TX-industry-government_public_sector",
+        "TX-industry-education",
+        "TX-technology-fine_tuning"
+      ],
+      "relatedEntityIds": [
+        "EN-3a9b395103419892"
+      ],
+      "firstSeen": "2026-03-13",
+      "lastSeen": "2026-07-17"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}

@@ -298,6 +298,17 @@ function collectFrontstageCards() {
   }));
 }
 
+function collectEntityHistoryRows(field) {
+  const file = path.join(root, "01-SiteV2/site/data/data-center-v4-frontstage.json");
+  if (!exists(file)) return [];
+  const data = readJson(file);
+  return Array.isArray(data[field]) ? data[field] : [];
+}
+
+function collectEntityRegistryRows() {
+  return collectEntityHistoryRows("entityProfiles").map(({ timeline, viewpoints, groupedEventIds, relationIds, ...entity }) => entity);
+}
+
 function collectDataCenterRows(fileName, idKey = "") {
   const dataCenterRoot = path.join(root, "01-SiteV2/content/11-databases/data-center-v4");
   if (!exists(dataCenterRoot)) return [];
@@ -436,6 +447,10 @@ function main() {
     facet_assertions: collectDataCenterRows("facet-assertions"),
     fde_records: collectDataCenterRows("fde-records", "fde_id"),
     hardware_records: collectDataCenterRows("hardware-records", "hardware_record_id"),
+    entity_registry: collectEntityRegistryRows(),
+    entity_profiles: collectEntityHistoryRows("entityProfiles"),
+    taxonomy_nodes: collectEntityHistoryRows("taxonomyNodes"),
+    entity_relationships: collectEntityHistoryRows("entityRelationships"),
     qa_queue: collectDataCenterRows("qa-queue", "qa_id"),
     legacy_asset_mappings: collectDataCenterRows("legacy-asset-mappings")
   };

@@ -1,0 +1,220 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T15:01:31.906Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 748,
+    "quarantinedEventCount": 32
+  },
+  "entity": {
+    "id": "EN-1b924576e394e538",
+    "name": "Context.dev（YC S26）",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-e0ca82d9c7351494"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-technology-code_generation",
+      "TX-use_case-software_development"
+    ],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-10",
+    "lastSeen": "2026-07-11",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-e0ca82d9c7351494"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-e0ca82d9c7351494",
+        "dataDate": "2026-07-11",
+        "date": "2026-07-10",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Context.dev（YC S26）推出面向AI智能体团队的Web上下文API",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "id": "software_development",
+            "dimensionName": "应用场景",
+            "name": "软件开发"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "code_generation",
+            "name": "代码生成"
+          }
+        ],
+        "entityIds": [
+          "EN-1b924576e394e538"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-technology-code_generation",
+      "name": "代码生成",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "code_generation",
+      "eventIds": [
+        "EV-1a6688afdfd108ef",
+        "EV-15cc72d7c78cad3d",
+        "EV-a1552fec696f1a43",
+        "EV-a1e3aeedc80c61b9",
+        "EV-3daefecd0453631a",
+        "EV-bb6bc8194a3a50c1",
+        "EV-edcb66d0401cfb8f",
+        "EV-ee0662b75588987e",
+        "EV-03f661e8dcdf1b58",
+        "EV-2d6d2dc0ead4be10",
+        "EV-e1a4bc40db4a9d8f",
+        "EV-80d4092a3df97198",
+        "EV-653cbce2ccc79f8b",
+        "EV-d53cd33e8f541a65",
+        "EV-a3d022fa41708774",
+        "EV-e0ca82d9c7351494",
+        "EV-53288fcf18e677e6",
+        "EV-bc71b0ddefa209a9",
+        "EV-1e0871947289ab6e",
+        "EV-6b74ed049774f0c5",
+        "EV-175af8c7b8146340",
+        "EV-7fd3102ac547cbda",
+        "EV-964971e83a649d4d",
+        "EV-343e0454586c58a9",
+        "EV-f68e00bb9fd49fac",
+        "EV-4f4274fb5920a8b4",
+        "EV-2ca9d0a3ca53c3bf",
+        "EV-6266c73d470e8aef",
+        "EV-4900ddf0686f4bbc"
+      ],
+      "entityIds": [
+        "EN-026c3bd4be5b91f3",
+        "EN-80d387ccb3289295",
+        "EN-3ccbd9105a45d8fc",
+        "EN-b0532e1af75cc4ab",
+        "EN-e78bdebae031095b",
+        "EN-6fcba5d96a4fadfd",
+        "EN-c70eca6b0f88f44d",
+        "EN-7d3194f79e645c42",
+        "EN-3db1f560db626918",
+        "EN-047364b9be67f665",
+        "EN-4094a2b7125c7564",
+        "EN-8f71c4871a160172",
+        "EN-f3cfedbe8428c9f7",
+        "EN-7df09a7717ef2feb",
+        "EN-c04bd5ebd10ab696",
+        "EN-50ba7ff15827787b",
+        "EN-bbdefa2950f49882",
+        "EN-ce635c4eabff5e4f",
+        "EN-1b924576e394e538",
+        "EN-4adc2faea521b1f1",
+        "EN-8bcef51236d613cd",
+        "EN-72e8088a05b38ae3",
+        "EN-2b6e51bec93e86c1",
+        "EN-ea3bd73e2b506e00",
+        "EN-0030f5adc7a3f4d7"
+      ],
+      "fdeIds": [
+        "FDE-7334c7781021c39a",
+        "FDE-86d6dab0d65ee69f",
+        "FDE-2081d000e8ad8e1c"
+      ],
+      "hardwareIds": [
+        "HW-103be168bfc1bff8"
+      ],
+      "firstSeen": "2026-05-19",
+      "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "TX-use_case-software_development",
+      "name": "软件开发",
+      "nodeType": "use_case",
+      "typeLabel": "应用场景",
+      "valueId": "software_development",
+      "eventIds": [
+        "EV-a1552fec696f1a43",
+        "EV-a1e3aeedc80c61b9",
+        "EV-f3bb064250dba2b2",
+        "EV-03f661e8dcdf1b58",
+        "EV-474d5a8ffca11ed9",
+        "EV-2d6d2dc0ead4be10",
+        "EV-d3528ccff1833385",
+        "EV-b2e374d54b10b9af",
+        "EV-d53cd33e8f541a65",
+        "EV-347d250e2769de9a",
+        "EV-9496f90f3e808992",
+        "EV-e0ca82d9c7351494",
+        "EV-13e06fc12cc3fb7c",
+        "EV-53288fcf18e677e6",
+        "EV-bc71b0ddefa209a9",
+        "EV-6b74ed049774f0c5",
+        "EV-175af8c7b8146340",
+        "EV-7fd3102ac547cbda",
+        "EV-964971e83a649d4d",
+        "EV-343e0454586c58a9",
+        "EV-f68e00bb9fd49fac",
+        "EV-e295f808713644c7"
+      ],
+      "entityIds": [
+        "EN-b0532e1af75cc4ab",
+        "EN-3ccbd9105a45d8fc",
+        "EN-15c785fe4bcb86f5",
+        "EN-e78bdebae031095b",
+        "EN-7d4e02d31a7eb0f8",
+        "EN-3db1f560db626918",
+        "EN-7d3194f79e645c42",
+        "EN-968e2d5b08687bf4",
+        "EN-f48a4090493d2b5e",
+        "EN-ce635c4eabff5e4f",
+        "EN-9fbf261b62c1d7c0",
+        "EN-6fcba5d96a4fadfd",
+        "EN-bbdefa2950f49882",
+        "EN-916a98f0fa2a39af",
+        "EN-ea3bd73e2b506e00",
+        "EN-1b924576e394e538",
+        "EN-c70eca6b0f88f44d",
+        "EN-4adc2faea521b1f1",
+        "EN-72e8088a05b38ae3",
+        "EN-2b6e51bec93e86c1"
+      ],
+      "fdeIds": [
+        "FDE-7334c7781021c39a",
+        "FDE-882a1d37049c58e1",
+        "FDE-8d7df617732e7c45"
+      ],
+      "hardwareIds": [],
+      "firstSeen": "2026-05-24",
+      "lastSeen": "2026-07-17"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}

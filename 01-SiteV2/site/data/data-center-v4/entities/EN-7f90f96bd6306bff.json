@@ -1,0 +1,113 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T15:01:31.906Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 748,
+    "quarantinedEventCount": 32
+  },
+  "entity": {
+    "id": "EN-7f90f96bd6306bff",
+    "name": "理想",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-baa76a4f03b84980"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-technology-tool_use"
+    ],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-06-15",
+    "lastSeen": "2026-06-16",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [
+        "EV-baa76a4f03b84980"
+      ],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-baa76a4f03b84980",
+        "dataDate": "2026-06-16",
+        "date": "2026-06-15",
+        "eventType": "deployment",
+        "eventTypeLabel": "部署",
+        "eventGroup": "部署与案例",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "理想：马赫 Mind-Pro 模型全面落地赋能 L9 Livis 车载智能系统",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "tool_use",
+            "name": "工具调用"
+          }
+        ],
+        "entityIds": [
+          "EN-7f90f96bd6306bff"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-technology-tool_use",
+      "name": "工具调用",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "tool_use",
+      "eventIds": [
+        "EV-baa76a4f03b84980",
+        "EV-d76dac938af08f62",
+        "EV-a8a8f26c5128d894",
+        "EV-653cbce2ccc79f8b",
+        "EV-363fe72da52bdb86",
+        "EV-9496f90f3e808992",
+        "EV-9c4b862020202f6c"
+      ],
+      "entityIds": [
+        "EN-7f90f96bd6306bff",
+        "EN-5388bc10736a0eff",
+        "EN-c70eca6b0f88f44d",
+        "EN-3a9b395103419892",
+        "EN-f3cfedbe8428c9f7",
+        "EN-7df09a7717ef2feb",
+        "EN-c04bd5ebd10ab696",
+        "EN-50ba7ff15827787b",
+        "EN-047364b9be67f665",
+        "EN-ea3bd73e2b506e00",
+        "EN-bbdefa2950f49882",
+        "EN-7d3194f79e645c42"
+      ],
+      "fdeIds": [
+        "FDE-21fb0ab2e92411f4"
+      ],
+      "hardwareIds": [],
+      "firstSeen": "2026-06-12",
+      "lastSeen": "2026-07-17"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}

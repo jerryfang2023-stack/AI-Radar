@@ -1,0 +1,559 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T15:01:31.906Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 748,
+    "quarantinedEventCount": 32
+  },
+  "hardware": [
+    {
+      "id": "HW-0ebffabe51a60966",
+      "eventId": "EV-303b418c63895ba6",
+      "dataDate": "2026-07-16",
+      "date": "2026-07-16",
+      "title": "NVIDIA 发布新款 Jetson Thor 计算机，推动机器人与边缘 AI 普及",
+      "hardwareType": "gpu",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "edge",
+      "supplier": "NVIDIA",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "2026-07-15",
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "sourceUrl": "https://blogs.nvidia.com/blog/jetson-thor-robotics-edge-ai-agent",
+      "sourceName": "blogs.nvidia.com",
+      "sourceDate": "2026-07-16",
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-cbc62794911ff31b"
+      ]
+    },
+    {
+      "id": "HW-51034436efb8365e",
+      "eventId": "EV-69784fe31cfdfc44",
+      "dataDate": "2026-07-17",
+      "date": "2026-07-16",
+      "title": "NVIDIA 扩展 Jetson Thor 计算机家族，新增 T3000、T2000 模组",
+      "hardwareType": "ai_device",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "未披露",
+      "supplier": "NVIDIA",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": 865,
+      "capacityUnit": "TFLOPS",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/977/455.htm",
+      "sourceName": "IT之家（RSS）",
+      "sourceDate": "2026-07-16",
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-a1b0d8a938903dc7",
+        "EN-7d3c95ebe1221dbb"
+      ]
+    },
+    {
+      "id": "HW-ceb55d9bc637c1d3",
+      "eventId": "EV-cafe435ddd007821",
+      "dataDate": "2026-07-17",
+      "date": "2026-07-16",
+      "title": "日本启动 Noetra 国家级 AI 基础设施，计划采购 2.75 万枚 NVIDIA Rubin 芯片",
+      "hardwareType": "gpu",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "computeLayer": "data_center",
+      "supplier": "NVIDIA",
+      "customer": "Noetra",
+      "processNode": "未披露",
+      "capacity": 27500,
+      "capacityUnit": "chips",
+      "site": "未披露",
+      "region": "Japan",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "sourceUrl": "https://japantimes.co.jp/business/2026/07/16/japan-nvidia-rubin-chips-robots",
+      "sourceName": "japantimes.co.jp",
+      "sourceDate": "2026-07-16",
+      "entityIds": [
+        "EN-59ae856cd788d0f5",
+        "EN-8d4321d936320802",
+        "EN-0f3360879e746531",
+        "EN-e3b1bf3dab957ffe",
+        "EN-9700d41909cf810f"
+      ]
+    },
+    {
+      "id": "HW-103be168bfc1bff8",
+      "eventId": "EV-a3d022fa41708774",
+      "dataDate": "2026-07-16",
+      "date": "2026-07-15",
+      "title": "OpenAI 发布 Codex Micro 键盘",
+      "hardwareType": "input_device",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "未披露",
+      "supplier": "OpenAI",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": 230,
+      "capacityUnit": "$",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "$230 ",
+      "shipmentDate": "未披露",
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成"
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/07/15/amid-hardware-legal-battle-openai-releases-a-230-keyboard-for-codex",
+      "sourceName": "TechCrunch AI",
+      "sourceDate": "2026-07-15",
+      "entityIds": [
+        "EN-7d3194f79e645c42"
+      ]
+    },
+    {
+      "id": "HW-ee4e70904c107cfc",
+      "eventId": "EV-ba28d2085f87b6f0",
+      "dataDate": "2026-07-16",
+      "date": "2026-07-15",
+      "title": "交友应用 Soul 将推出首款便携式 AI 智能硬件，搭载自研大模型 SoulX 亮相 WAIC 2026",
+      "hardwareType": "ai_device",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "未披露",
+      "supplier": "Soul",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/977/175.htm",
+      "sourceName": "IT之家（RSS）",
+      "sourceDate": "2026-07-15",
+      "entityIds": [
+        "EN-ae0facccf0a3723a"
+      ]
+    },
+    {
+      "id": "HW-8f63cf2364e0df35",
+      "eventId": "EV-4536910c045ae530",
+      "dataDate": "2026-07-11",
+      "date": "2026-07-10",
+      "title": "上纬新材将在 WAIC 2026 发布全球首款可变形个人机器人启元 T1",
+      "hardwareType": "robot",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "未披露",
+      "supplier": "未披露",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/975/318.htm",
+      "sourceName": "IT之家（RSS）",
+      "sourceDate": "2026-07-10",
+      "entityIds": []
+    },
+    {
+      "id": "HW-de1b3c6ad39cc9bc",
+      "eventId": "EV-0a5e65aa46b0d194",
+      "dataDate": "2026-07-11",
+      "date": "2026-07-10",
+      "title": "加速进化发布 Booster T2 具身开发旗舰平台：搭载英伟达 Thor 芯片，2070TFLOPS 算力",
+      "hardwareType": "semiconductor",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "edge",
+      "supplier": "NVIDIA",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "inference_optimization",
+          "name": "推理优化"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧"
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/975/340.htm",
+      "sourceName": "IT之家（RSS）",
+      "sourceDate": "2026-07-10",
+      "entityIds": [
+        "EN-8d4321d936320802"
+      ]
+    },
+    {
+      "id": "HW-d06521eb435c0f62",
+      "eventId": "EV-6eb9a23be3117421",
+      "dataDate": "2026-06-25",
+      "date": "2026-06-25",
+      "title": "OpenAI 发布首款定制芯片 Jalapeño，由博通制造",
+      "hardwareType": "semiconductor",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "未披露",
+      "supplier": "OpenAI",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom",
+      "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "sourceDate": "2026-06-25",
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-373ac021a2c0bb2c",
+        "EN-8d4321d936320802"
+      ]
+    },
+    {
+      "id": "HW-ce02b000e0a8d19c",
+      "eventId": "EV-1e7c76dae985100f",
+      "dataDate": "2026-06-25",
+      "date": "2026-06-24",
+      "title": "OpenAI与Broadcom发布首款定制芯片\"Jalapeño\"，专为LLM推理设计",
+      "hardwareType": "ai_accelerator",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "未披露",
+      "supplier": "OpenAI",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://the-decoder.com/openai-and-broadcom-unveil-jalapeno-a-custom-chip-built-for-llm-inference",
+      "sourceName": "The Decoder：AI News（RSS）",
+      "sourceDate": "2026-06-24",
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-373ac021a2c0bb2c"
+      ]
+    },
+    {
+      "id": "HW-e7d705ec84bd12c4",
+      "eventId": "EV-3456f723929eff1b",
+      "dataDate": "2026-06-24",
+      "date": "2026-06-23",
+      "title": "戴尔发布新一代超算 AI 服务器 PowerEdge XE8812：每机架 144 GPU，全液冷设计",
+      "hardwareType": "gpu",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "edge",
+      "supplier": "NVIDIA",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/967/661.htm",
+      "sourceName": "IT之家（RSS）",
+      "sourceDate": "2026-06-23",
+      "entityIds": [
+        "EN-8d4321d936320802"
+      ]
+    },
+    {
+      "id": "HW-dca442211b264bbe",
+      "eventId": "EV-49751dfc7d2f6d6c",
+      "dataDate": "2026-06-23",
+      "date": "2026-06-22",
+      "title": "优必选发布人形机器人Walker C1，可实现人机共舞",
+      "hardwareType": "robot",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "未披露",
+      "supplier": "优必选",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "中国",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/967/191.htm",
+      "sourceName": "IT之家（RSS）",
+      "sourceDate": "2026-06-22",
+      "entityIds": [
+        "EN-30081094f2a8c83d"
+      ]
+    },
+    {
+      "id": "HW-ec662a2d36b755fa",
+      "eventId": "EV-b15c842ee1974890",
+      "dataDate": "2026-06-17",
+      "date": "2026-06-17",
+      "title": "高通发布骁龙 Reality Elite 旗舰 XR 芯片，AI 算力提升 160%",
+      "hardwareType": "semiconductor",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "未披露",
+      "supplier": "Samsung",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": 160,
+      "capacityUnit": "%",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/965/137.htm",
+      "sourceName": "IT之家（RSS）",
+      "sourceDate": "2026-06-17",
+      "entityIds": [
+        "EN-968e2d5b08687bf4"
+      ]
+    },
+    {
+      "id": "HW-1450585d9cd5879f",
+      "eventId": "EV-e2d4132c671e3d41",
+      "dataDate": "2026-06-16",
+      "date": "2026-06-15",
+      "title": "理想马赫 M100 发布：全球首款动态数据流 AI 芯片，5nm 车规级工艺，单芯算力 1280 TOPS",
+      "hardwareType": "semiconductor",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "未披露",
+      "supplier": "理想马赫 M100",
+      "customer": "未披露",
+      "processNode": "5nm",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/964/513.htm",
+      "sourceName": "IT之家（RSS）",
+      "sourceDate": "2026-06-15",
+      "entityIds": [
+        "EN-89e3f0711b76932c"
+      ]
+    },
+    {
+      "id": "HW-1011bec4518f1128",
+      "eventId": "EV-b40efa1689aed2e5",
+      "dataDate": "2026-06-29",
+      "date": "2026-06-09",
+      "title": "Akamas 发布 Efficiency",
+      "hardwareType": "gpu",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "data_center",
+      "supplier": "Akamas",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://akamas.io/akamas-ai-infrastructure-optimization-launch",
+      "sourceName": "akamas.io",
+      "sourceDate": "2026-06-09",
+      "entityIds": [
+        "EN-b9e93f925b8d42c8"
+      ]
+    },
+    {
+      "id": "HW-1565758070e2b0e1",
+      "eventId": "EV-a24f9cba6b31439e",
+      "dataDate": "2026-06-10",
+      "date": "2026-06-09",
+      "title": "Cadence 携手 NVIDIA 发布业界首位全自主芯片设计 AI 虚拟工程师",
+      "hardwareType": "semiconductor",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "未披露",
+      "supplier": "NVIDIA",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": 2026,
+      "capacityUnit": "台",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/961/795.htm",
+      "sourceName": "IT之家（RSS）",
+      "sourceDate": "2026-06-09",
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-ce635c4eabff5e4f"
+      ]
+    },
+    {
+      "id": "HW-d37c3458323c3093",
+      "eventId": "EV-59933d63c4051085",
+      "dataDate": "2026-06-06",
+      "date": "2026-06-07",
+      "title": "Google 发布 Colab CLI，开发者与 AI 智能体可在终端中远程调用 Colab GPU 与 TPU 运行 Python 代码",
+      "hardwareType": "gpu",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "data_center",
+      "supplier": "Google",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "2026-06-06",
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "sourceUrl": "https://marktechpost.com/2026/06/06/googles-new-colab-cli-lets-developers-and-ai-agents-run-python-on-remote-colab-gpus-and-tpus-from-the-terminal",
+      "sourceName": "MarkTechPost（RSS）",
+      "sourceDate": "2026-06-07",
+      "entityIds": [
+        "EN-bbdefa2950f49882",
+        "EN-c70eca6b0f88f44d",
+        "EN-7d3194f79e645c42"
+      ]
+    },
+    {
+      "id": "HW-8b315346bce7a9f1",
+      "eventId": "EV-fc2164eb66e27f7e",
+      "dataDate": "2026-06-01",
+      "date": "2026-06-01",
+      "title": "英伟达 RTX Spark PC 处理器发布：集成 20 核 Grace CPU 与 Blackwell RTX GPU，首批电脑秋季推出",
+      "hardwareType": "gpu",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "未披露",
+      "supplier": "NVIDIA",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": 2026,
+      "capacityUnit": "台",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/958/088.htm",
+      "sourceName": "IT之家（RSS）",
+      "sourceDate": "2026-06-01",
+      "entityIds": [
+        "EN-8d4321d936320802"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T15:01:31.906Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 748,
+    "quarantinedEventCount": 32
+  },
+  "entity": {
+    "id": "EN-2b78da3dc866654e",
+    "name": "Spotify",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-20dea13a4e6100ea",
+      "EV-7cd4a5b931f0b667",
+      "EV-a0d3853dd41c8ef6",
+      "EV-4cad63b0de20edb2"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-technology-model_context_protocol"
+    ],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-06-12",
+    "lastSeen": "2026-07-15",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-20dea13a4e6100ea",
+        "EV-7cd4a5b931f0b667",
+        "EV-a0d3853dd41c8ef6",
+        "EV-4cad63b0de20edb2"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-20dea13a4e6100ea",
+        "dataDate": "2026-07-15",
+        "date": "2026-07-14",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Spotify 为 Premium 用户推出类 ChatGPT 音乐助手",
+        "displayTags": [],
+        "entityIds": [
+          "EN-2b78da3dc866654e"
+        ]
+      },
+      {
+        "id": "EV-7cd4a5b931f0b667",
+        "dataDate": "2026-07-08",
+        "date": "2026-07-07",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Savi Security 发布反 AI 诈骗 App，抵御语音/短信/电话骗局（如绑架勒索）",
+        "displayTags": [
+          {
+            "dimensionId": "target_user",
+            "id": "consumer",
+            "dimensionName": "目标用户",
+            "name": "个人用户"
+          }
+        ],
+        "entityIds": [
+          "EN-3a7bd3e2360a3d29",
+          "EN-2b78da3dc866654e"
+        ]
+      },
+      {
+        "id": "EV-a0d3853dd41c8ef6",
+        "dataDate": "2026-06-25",
+        "date": "2026-06-25",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "OpenAI 发布 OpenAI DevDay 2025",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "model_context_protocol",
+            "name": "MCP"
+          }
+        ],
+        "entityIds": [
+          "EN-7d3194f79e645c42",
+          "EN-3db1f560db626918",
+          "EN-2b78da3dc866654e"
+        ]
+      },
+      {
+        "id": "EV-4cad63b0de20edb2",
+        "dataDate": "2026-06-12",
+        "date": "2026-06-12",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "可检测 AI 音乐，Deezer 为 Spotify、Apple Music 等第三方平台推出免费工具",
+        "displayTags": [],
+        "entityIds": [
+          "EN-2b78da3dc866654e",
+          "EN-3a7bd3e2360a3d29"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-technology-model_context_protocol",
+      "name": "MCP",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "model_context_protocol",
+      "eventIds": [
+        "EV-a2c13c14efec9218",
+        "EV-9fb217d7e855c8f7",
+        "EV-a0d3853dd41c8ef6",
+        "EV-7449d239223d4928",
+        "EV-67d9c51e97dfbb7b"
+      ],
+      "entityIds": [
+        "EN-9fbf261b62c1d7c0",
+        "EN-7d3194f79e645c42",
+        "EN-3db1f560db626918",
+        "EN-2b78da3dc866654e",
+        "EN-916a98f0fa2a39af",
+        "EN-c70eca6b0f88f44d"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-06-17",
+      "lastSeen": "2026-07-13"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}

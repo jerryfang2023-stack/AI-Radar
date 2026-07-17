@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T15:01:31.906Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 748,
+    "quarantinedEventCount": 32
+  },
+  "entity": {
+    "id": "EN-dca6ec9510fc0176",
+    "name": "Sierra",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-76da9e22fccc8dff"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-use_case-customer_service"
+    ],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-14",
+    "lastSeen": "2026-07-15",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [
+        "EV-76da9e22fccc8dff"
+      ],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-76da9e22fccc8dff",
+        "dataDate": "2026-07-15",
+        "date": "2026-07-14",
+        "eventType": "partnership",
+        "eventTypeLabel": "合作",
+        "eventGroup": "商业合作",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "软银与Sierra合作在日本推出AI客服服务",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "id": "customer_service",
+            "dimensionName": "应用场景",
+            "name": "客户服务"
+          }
+        ],
+        "entityIds": [
+          "EN-80d387ccb3289295",
+          "EN-dca6ec9510fc0176"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-use_case-customer_service",
+      "name": "客户服务",
+      "nodeType": "use_case",
+      "typeLabel": "应用场景",
+      "valueId": "customer_service",
+      "eventIds": [
+        "EV-f020dd198aa2f952",
+        "EV-adafffa563a53d49",
+        "EV-76da9e22fccc8dff",
+        "EV-9659eb492a9eea1b",
+        "EV-fbde4dad2288059a",
+        "EV-51cdc6a8928bdc56"
+      ],
+      "entityIds": [
+        "EN-3ccbd9105a45d8fc",
+        "EN-8d4321d936320802",
+        "EN-2b6e51bec93e86c1",
+        "EN-80d387ccb3289295",
+        "EN-dca6ec9510fc0176",
+        "EN-c70eca6b0f88f44d",
+        "EN-7d3194f79e645c42",
+        "EN-cbc62794911ff31b"
+      ],
+      "fdeIds": [
+        "FDE-5eb94dcfc0585f6b"
+      ],
+      "hardwareIds": [],
+      "firstSeen": "2026-05-24",
+      "lastSeen": "2026-07-15"
+    }
+  ],
+  "fde": [
+    {
+      "id": "FDE-5eb94dcfc0585f6b",
+      "eventId": "EV-76da9e22fccc8dff",
+      "dataDate": "2026-07-15",
+      "date": "2026-07-14",
+      "title": "软银与Sierra合作在日本推出AI客服服务",
+      "stage": "completed",
+      "stageLabel": "已完成",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "在日本推出AI客服服务",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "IT之家 7 月 14 日消息，软银公司今日宣布，在旗下纯线上移动通信品牌 LINEMO 部署美国 AI 初创公司 Sierra 的智能客服系统后，双方已达成合作，软银成为 Sierra 在日本的独家合作伙伴。"
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/976/568.htm",
+      "entityIds": [
+        "EN-80d387ccb3289295",
+        "EN-dca6ec9510fc0176"
+      ]
+    }
+  ],
+  "hardware": []
+}

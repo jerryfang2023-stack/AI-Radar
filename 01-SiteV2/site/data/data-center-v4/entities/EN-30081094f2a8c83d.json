@@ -1,0 +1,314 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T15:01:31.906Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 748,
+    "quarantinedEventCount": 32
+  },
+  "entity": {
+    "id": "EN-30081094f2a8c83d",
+    "name": "优必选",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-49751dfc7d2f6d6c"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-use_case-robotics_automation",
+      "TX-technology-embodied_ai",
+      "TX-industry-media_entertainment"
+    ],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-06-22",
+    "lastSeen": "2026-06-23",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [
+        "EV-49751dfc7d2f6d6c"
+      ],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-49751dfc7d2f6d6c",
+        "dataDate": "2026-06-23",
+        "date": "2026-06-22",
+        "eventType": "hardware_product",
+        "eventTypeLabel": "硬件产品",
+        "eventGroup": "AI 硬件",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "优必选发布人形机器人Walker C1，可实现人机共舞",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "robot",
+            "dimensionName": "产品形态",
+            "name": "机器人"
+          },
+          {
+            "dimensionId": "use_case",
+            "id": "robotics_automation",
+            "dimensionName": "应用场景",
+            "name": "机器人与物理自动化"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "embodied_ai",
+            "name": "具身智能"
+          },
+          {
+            "dimensionId": "industry",
+            "id": "media_entertainment",
+            "dimensionName": "行业",
+            "name": "媒体与娱乐"
+          }
+        ],
+        "entityIds": [
+          "EN-30081094f2a8c83d"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-use_case-robotics_automation",
+      "name": "机器人与物理自动化",
+      "nodeType": "use_case",
+      "typeLabel": "应用场景",
+      "valueId": "robotics_automation",
+      "eventIds": [
+        "EV-59da4e6dc6b61c4a",
+        "EV-adf92ecb7cd8714f",
+        "EV-5a26f343846cb8ad",
+        "EV-9fa9822969d3c3fd",
+        "EV-44c9a50b99c76a70",
+        "EV-cafe435ddd007821",
+        "EV-434dcf1813a84ead",
+        "EV-9f067d8f0d23eb48",
+        "EV-f059fd80d668c6bc",
+        "EV-234ad54940674bf6",
+        "EV-2fab4396000198d2",
+        "EV-3fb492fb45980541",
+        "EV-39848cdd62c00e59",
+        "EV-4faa2bcf2e42e60c",
+        "EV-70530734d19a478e",
+        "EV-303b418c63895ba6",
+        "EV-71f78f2026b54ba2",
+        "EV-57565fc2e7502c59",
+        "EV-4536910c045ae530",
+        "EV-473f852b374d8b1c",
+        "EV-49751dfc7d2f6d6c",
+        "EV-66338f5fb682617e",
+        "EV-e6771f58d7c2a050",
+        "EV-b88affdec306a75a",
+        "EV-85373b8ec9148127",
+        "EV-52e1ac21c25a0a09",
+        "EV-ed58c2c69290ee4c",
+        "EV-66970d4aea37111f",
+        "EV-cbc8b53d4f4478b1",
+        "EV-4beb890f0879aeaf",
+        "EV-ad64347138da72bb"
+      ],
+      "entityIds": [
+        "EN-54cc885945b8f2f2",
+        "EN-96eebba49dbbf422",
+        "EN-9fbf261b62c1d7c0",
+        "EN-7d3194f79e645c42",
+        "EN-b0532e1af75cc4ab",
+        "EN-cbc62794911ff31b",
+        "EN-b51b27d89f9ea747",
+        "EN-245f1e177c5169cb",
+        "EN-59ae856cd788d0f5",
+        "EN-8d4321d936320802",
+        "EN-0f3360879e746531",
+        "EN-e3b1bf3dab957ffe",
+        "EN-9700d41909cf810f",
+        "EN-6f21a653c48f4f19",
+        "EN-4dbe391b8fcf977a",
+        "EN-72138e570e5103e2",
+        "EN-8147e6fed86d42c1",
+        "EN-522d3edeb64a7ca4",
+        "EN-c608c4787821de1b",
+        "EN-8f71c4871a160172",
+        "EN-2f795798add63d7f",
+        "EN-8afd897b5b887b06",
+        "EN-047364b9be67f665",
+        "EN-30081094f2a8c83d",
+        "EN-bbdefa2950f49882",
+        "EN-7ca2b7da6e0f8654",
+        "EN-3a7bd3e2360a3d29",
+        "EN-6fcba5d96a4fadfd"
+      ],
+      "fdeIds": [
+        "FDE-13cf52a1201f0544",
+        "FDE-45ad6eae0d326429",
+        "FDE-a28fee3a33c46db9",
+        "FDE-dadf0e9572889d3d",
+        "FDE-779bb70e06a29ed4",
+        "FDE-8669dbd3140ecd8e"
+      ],
+      "hardwareIds": [
+        "HW-ceb55d9bc637c1d3",
+        "HW-0ebffabe51a60966",
+        "HW-8f63cf2364e0df35",
+        "HW-dca442211b264bbe"
+      ],
+      "firstSeen": "2026-06-01",
+      "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "TX-technology-embodied_ai",
+      "name": "具身智能",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "embodied_ai",
+      "eventIds": [
+        "EV-43b56d49df9a73a2",
+        "EV-cafe435ddd007821",
+        "EV-9f067d8f0d23eb48",
+        "EV-234ad54940674bf6",
+        "EV-6415a58637893b34",
+        "EV-4faa2bcf2e42e60c",
+        "EV-70530734d19a478e",
+        "EV-473f852b374d8b1c",
+        "EV-49751dfc7d2f6d6c",
+        "EV-197aac95e60671f7",
+        "EV-e2d4132c671e3d41",
+        "EV-b88affdec306a75a",
+        "EV-305091abd41ad88d"
+      ],
+      "entityIds": [
+        "EN-bbdefa2950f49882",
+        "EN-59ae856cd788d0f5",
+        "EN-8d4321d936320802",
+        "EN-0f3360879e746531",
+        "EN-e3b1bf3dab957ffe",
+        "EN-9700d41909cf810f",
+        "EN-c70eca6b0f88f44d",
+        "EN-8147e6fed86d42c1",
+        "EN-522d3edeb64a7ca4",
+        "EN-c608c4787821de1b",
+        "EN-8f71c4871a160172",
+        "EN-2f795798add63d7f",
+        "EN-047364b9be67f665",
+        "EN-30081094f2a8c83d",
+        "EN-89e3f0711b76932c",
+        "EN-7ca2b7da6e0f8654"
+      ],
+      "fdeIds": [
+        "FDE-45ad6eae0d326429",
+        "FDE-dadf0e9572889d3d",
+        "FDE-a85c538af1b093ed"
+      ],
+      "hardwareIds": [
+        "HW-ceb55d9bc637c1d3",
+        "HW-dca442211b264bbe",
+        "HW-1450585d9cd5879f"
+      ],
+      "firstSeen": "2026-06-02",
+      "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "TX-industry-media_entertainment",
+      "name": "媒体与娱乐",
+      "nodeType": "industry",
+      "typeLabel": "行业",
+      "valueId": "media_entertainment",
+      "eventIds": [
+        "EV-2d6d2dc0ead4be10",
+        "EV-e7a6bcd24f4241d0",
+        "EV-aad2b98b8f25d64b",
+        "EV-07a5533c18e5a74e",
+        "EV-04873bbc8be8e70d",
+        "EV-4c0e7025692ab98c",
+        "EV-49751dfc7d2f6d6c",
+        "EV-9df93e714a75cd7c",
+        "EV-83acf26a011ef213",
+        "EV-568d2aeab5234e48",
+        "EV-b986a633cca27df9"
+      ],
+      "entityIds": [
+        "EN-3db1f560db626918",
+        "EN-5388bc10736a0eff",
+        "EN-f0edcf96f6fa2ccb",
+        "EN-d36e5a1a7a3c45ce",
+        "EN-397e5a2983130593",
+        "EN-dd172e183ec20177",
+        "EN-ea3bd73e2b506e00",
+        "EN-bbdefa2950f49882",
+        "EN-30081094f2a8c83d",
+        "EN-2dda21a47aaff47e",
+        "EN-2b6e51bec93e86c1",
+        "EN-8d4321d936320802",
+        "EN-b0532e1af75cc4ab"
+      ],
+      "fdeIds": [
+        "FDE-7334c7781021c39a",
+        "FDE-54a51e13cde024a8"
+      ],
+      "hardwareIds": [
+        "HW-dca442211b264bbe"
+      ],
+      "firstSeen": "2026-06-07",
+      "lastSeen": "2026-07-17"
+    }
+  ],
+  "fde": [],
+  "hardware": [
+    {
+      "id": "HW-dca442211b264bbe",
+      "eventId": "EV-49751dfc7d2f6d6c",
+      "dataDate": "2026-06-23",
+      "date": "2026-06-22",
+      "title": "优必选发布人形机器人Walker C1，可实现人机共舞",
+      "hardwareType": "robot",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "未披露",
+      "supplier": "优必选",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "中国",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/967/191.htm",
+      "sourceName": "IT之家（RSS）",
+      "sourceDate": "2026-06-22",
+      "entityIds": [
+        "EN-30081094f2a8c83d"
+      ]
+    }
+  ]
+}

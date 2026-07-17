@@ -13,7 +13,7 @@ priority: current
 
 # Frontstage Page Contracts
 
-SITE-V4.1.0 is the only current public page system. `data-center.html`, `intelligence-map.html`, and all weekly/monthly report details use the V4 logo header and shared sidebar. Legacy V3 column URLs are compatibility redirects only. These page contracts do not define V4 canonical data truth.
+SITE-V4.2.0 is the only current public page and entity-history system. `data-center.html`, `intelligence-map.html`, and all weekly/monthly report details use the V4 logo header and shared sidebar. Legacy V3 column URLs are compatibility redirects only. These page contracts do not define V4 canonical data truth.
 
 Read `context/version-ledger.md` first. This file defines what each current frontstage page must keep and what must not contaminate it.
 
@@ -33,7 +33,7 @@ The legacy Business Signals Card set remains an internal compatibility dataset f
 
 | Scope | Version | Meaning |
 |---|---|---|
-| Main website | `SITE-V4.1.0-unified-frontstage` | Data Center and Industry Reports are the only public page system; V3 URLs redirect into V4. |
+| Main website | `SITE-V4.2.0-entity-history` | Keeps the unified V4 shell and adds stable entity profiles, cross-day timelines, typed factual relationships, and split frontstage data loading. |
 | Business Signals compatibility lane | `BSIG-V2.2.0-pipeline-stage-ownership` | Internal Card/graph/trend compatibility data only; not a public page. |
 | First-Line Viewpoints column | `FLV-V1.0.2-supervision-idempotency` | Keeps morning RSS page-data production and afternoon follow-builders skill publication independent, with Obsidian person/date timeline sync idempotency and publication closure checks. |
 | Community Intelligence column | `CINT-V1.0.2-publication-waiting-gate` | Keeps local logged-in collection separate from GitHub publication and treats open PR / queued workflow states after healthy same-date data as Waiting, not Problems. |
@@ -47,7 +47,9 @@ The approved SITE-V4.0 navigation has two sidebar groups:
 - Data Center: Commercial Events, FDE, AI Hardware, Community Intelligence, First-Line Viewpoints, Entity Index.
 - Application Center: Industry Reports.
 
-Entity Index is the single list entrance for companies, organizations, models, products, and services. It must appear after First-Line Viewpoints; Company and Product must not return as separate sidebar entries. Company and product detail records remain independent and are opened from the shared index.
+Entity Index is the single list entrance for companies, organizations, models, products, services, people, AI technologies, use cases, and industries. Companies, products/models/services, and people open stable `EN-*` profiles; technology, use case, and industry open `TX-*` classification pages. It must appear after First-Line Viewpoints; Company and Product must not return as separate sidebar entries.
+
+Entity pages show only source-backed histories and relationships. The frontstage must not render a global relationship graph, infer edges from Tag co-occurrence, or turn viewpoints into canonical business facts. List and detail payloads load from the split `data/data-center-v4/` service; the full compatibility payload remains a transition artifact, not the preferred page fetch.
 
 `data-center.html`, `intelligence-map.html`, and every weekly/monthly detail page must use `assets/data-center-v4.css`, the official logo header, and the same sidebar structure. Weekly reports, monthly reports, and opportunity maps remain inside Industry Reports and must not return as separate application-center sidebar entries. Relation Paths has been removed and must not return.
 

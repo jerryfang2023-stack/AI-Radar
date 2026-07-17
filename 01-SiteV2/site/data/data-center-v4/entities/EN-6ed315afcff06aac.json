@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T15:01:31.906Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 748,
+    "quarantinedEventCount": 32
+  },
+  "entity": {
+    "id": "EN-6ed315afcff06aac",
+    "name": "微信 AI 助手\"小微\"灰度",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-3acfc96d99c32cf0"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-06-20",
+    "lastSeen": "2026-06-21",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [
+        "EV-3acfc96d99c32cf0"
+      ],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-3acfc96d99c32cf0",
+        "dataDate": "2026-06-21",
+        "date": "2026-06-20",
+        "eventType": "deployment",
+        "eventTypeLabel": "部署",
+        "eventGroup": "部署与案例",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "微信 AI 助手\"小微\"灰度上线，可通过文字或语音对话操作原生功能",
+        "displayTags": [],
+        "entityIds": [
+          "EN-6ed315afcff06aac"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [
+    {
+      "id": "FDE-2ecd6233112fcf0e",
+      "eventId": "EV-3acfc96d99c32cf0",
+      "dataDate": "2026-06-21",
+      "date": "2026-06-20",
+      "title": "微信 AI 助手\"小微\"灰度上线，可通过文字或语音对话操作原生功能",
+      "stage": "completed",
+      "stageLabel": "已完成",
+      "customer": "微信 AI 助手\"小微\"灰度",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "，可通过文字或语音对话操作原生功能",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "微信 AI 助手“小微”灰度上线，可通过文字或语音对话操作微信原生功能 - IT之家",
+        "微信 AI 助手“小微”灰度上线，可通过文字或语音对话操作微信原生功能"
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/966/534.htm",
+      "entityIds": [
+        "EN-6ed315afcff06aac"
+      ]
+    }
+  ],
+  "hardware": []
+}

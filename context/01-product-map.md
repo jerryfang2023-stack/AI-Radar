@@ -9,7 +9,7 @@ use_when:
 priority: current
 ---
 
-# 01 Product Map - SITE-V4.0 Data Center
+# 01 Product Map - SITE-V4.2 Entity History
 
 ## Current Product Structure
 
@@ -17,11 +17,13 @@ priority: current
 |---|---|---|
 | Data Center Core | SourceArtifact, RawDocument, Claim, Entity, CanonicalEvent, QA and serving tables | Active product core |
 | Event Database | Normalized factual events with status, evidence, conflicts and revisions | Active data layer |
+| Entity Registry | Stable company/organization, product/model/service, and person IDs with aliases and verification state | Active data layer |
+| Entity Profiles | Cross-day factual timelines and grouped event histories for stable entities | Active serving layer |
 | FDE Database | Source-bounded enterprise implementation projections | Active domain projection |
 | AI Hardware Database | Source-bounded hardware product, capacity, supply and deployment projections | Active domain projection |
 | Business Signals | V3 Raw / Pool / Card / graph / trend-candidate chain | Internal compatibility data only; no public page |
 | First-Line Viewpoints | Builders public viewpoints, translated and organized independently | Active frontstage |
-| Relationship data | Source-backed event/claim/entity links only | Active factual data layer |
+| Relationship data | RELATION-V2 typed endpoints backed by event, Claim, and source references only | Active factual data layer |
 | Trend / opportunity outputs | Downstream interpretation, excluded from V4 core | Legacy page compatibility |
 | Dashboard | Production-chain, source traceability, data quality, version governance, Skill Store, and release status | Active backend |
 
@@ -46,6 +48,7 @@ Monitor / Search / Source discovery
 -> RawDocument
 -> Claim / Entity
 -> CanonicalEvent
+-> Entity Registry / Entity Profiles / RELATION-V2
 -> FDE / Hardware projection
 -> JSON / JSONL / DuckDB
 -> downstream AIP / insight / decision-support applications
@@ -60,6 +63,7 @@ Legacy page data remains isolated from the canonical flow. Page JSON cannot be u
 - `01-SiteV2/content/01-raw/`: daily Raw candidates and original materials.
 - `01-SiteV2/content/11-databases/data-center-v4/`: daily canonical V4 bundles.
 - `data-lake/tables/`: materialized V4 and legacy JSONL serving tables.
+- `01-SiteV2/site/data/data-center-v4/`: split frontstage indexes, details, entity profiles, taxonomy nodes, and manifest.
 - `01-SiteV2/content/02-pool/`: screened evidence pool.
 - `01-SiteV2/content/04-business-signals/`: daily business-signal indexes.
 - `01-SiteV2/knowledge/01-Signal-Cards/`: persistent formal Card assets.
@@ -91,9 +95,10 @@ A Card can enter internal compatibility outputs only when it has:
 ## Relationship And Interpretation Boundaries
 
 - Core relationships are factual links with event, claim, and source references.
+- Formal entities are company/organization, product/model/service, and person. Technology, use case, and industry are classification nodes.
 - Tag co-occurrence cannot create relationship direction or hypotheses.
 - Trend, opportunity, value, advice, and recommendation logic belongs to downstream applications and legacy page compatibility only.
 
 ## Retired Outputs
 
-Legacy content-output routes, V2/V3 column pages, and old opinion sidebar logic are not current SITE-V4.1 public production goals.
+Legacy content-output routes, V2/V3 column pages, and old opinion sidebar logic are not current SITE-V4.2 public production goals.

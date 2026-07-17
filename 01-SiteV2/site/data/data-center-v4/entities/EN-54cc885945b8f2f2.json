@@ -1,0 +1,237 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T15:01:31.906Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 748,
+    "quarantinedEventCount": 32
+  },
+  "entity": {
+    "id": "EN-54cc885945b8f2f2",
+    "name": "Microagi",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-59da4e6dc6b61c4a"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-industry-manufacturing",
+      "TX-use_case-robotics_automation"
+    ],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-16",
+    "lastSeen": "2026-07-17",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-59da4e6dc6b61c4a"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-59da4e6dc6b61c4a",
+        "dataDate": "2026-07-17",
+        "date": "2026-07-16",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Microagi 完成 5500 万美元 种子轮融资",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "id": "robotics_automation",
+            "dimensionName": "应用场景",
+            "name": "机器人与物理自动化"
+          },
+          {
+            "dimensionId": "industry",
+            "id": "manufacturing",
+            "dimensionName": "行业",
+            "name": "制造业"
+          }
+        ],
+        "entityIds": [
+          "EN-54cc885945b8f2f2",
+          "EN-96eebba49dbbf422"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-industry-manufacturing",
+      "name": "制造业",
+      "nodeType": "industry",
+      "typeLabel": "行业",
+      "valueId": "manufacturing",
+      "eventIds": [
+        "EV-02882e6f5e1902c6",
+        "EV-59da4e6dc6b61c4a",
+        "EV-82020f9eaea90951",
+        "EV-a1e3aeedc80c61b9",
+        "EV-adf92ecb7cd8714f",
+        "EV-80e54c9a390da293",
+        "EV-384cc24be4b56cb5",
+        "EV-010946e35d35bb43",
+        "EV-21c2e81a7c073e04",
+        "EV-ef7402351b6b37bd",
+        "EV-1f842e1dff69bb87",
+        "EV-94b6fae7dd4e2b95",
+        "EV-9ab076d2fff77412",
+        "EV-a84ec4216d3ded6d",
+        "EV-cafe435ddd007821",
+        "EV-9f067d8f0d23eb48",
+        "EV-283e88bdd15ed87e",
+        "EV-5b16886442234f81",
+        "EV-4faa2bcf2e42e60c",
+        "EV-9ee3c0ec243b6129",
+        "EV-309ea4fc27a66485",
+        "EV-ec15684583d6f7a9"
+      ],
+      "entityIds": [
+        "EN-2a920347dfcf07a7",
+        "EN-d5edfd3c9768e212",
+        "EN-ea3bd73e2b506e00",
+        "EN-54cc885945b8f2f2",
+        "EN-96eebba49dbbf422",
+        "EN-047364b9be67f665",
+        "EN-3ccbd9105a45d8fc",
+        "EN-9fbf261b62c1d7c0",
+        "EN-7d3194f79e645c42",
+        "EN-8d4321d936320802",
+        "EN-c70eca6b0f88f44d",
+        "EN-b9b0702726f5be1c",
+        "EN-bbdefa2950f49882",
+        "EN-2b6e51bec93e86c1",
+        "EN-7706c3c94d5f9b59",
+        "EN-968e2d5b08687bf4",
+        "EN-ee04228c5c6d8b08",
+        "EN-59ae856cd788d0f5",
+        "EN-0f3360879e746531",
+        "EN-e3b1bf3dab957ffe",
+        "EN-9700d41909cf810f",
+        "EN-956b7280912ef1cc",
+        "EN-8147e6fed86d42c1",
+        "EN-ce635c4eabff5e4f"
+      ],
+      "fdeIds": [
+        "FDE-45ad6eae0d326429",
+        "FDE-ef57fbc39a8c11f6"
+      ],
+      "hardwareIds": [
+        "HW-ceb55d9bc637c1d3"
+      ],
+      "firstSeen": "2026-05-20",
+      "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "TX-use_case-robotics_automation",
+      "name": "机器人与物理自动化",
+      "nodeType": "use_case",
+      "typeLabel": "应用场景",
+      "valueId": "robotics_automation",
+      "eventIds": [
+        "EV-59da4e6dc6b61c4a",
+        "EV-adf92ecb7cd8714f",
+        "EV-5a26f343846cb8ad",
+        "EV-9fa9822969d3c3fd",
+        "EV-44c9a50b99c76a70",
+        "EV-cafe435ddd007821",
+        "EV-434dcf1813a84ead",
+        "EV-9f067d8f0d23eb48",
+        "EV-f059fd80d668c6bc",
+        "EV-234ad54940674bf6",
+        "EV-2fab4396000198d2",
+        "EV-3fb492fb45980541",
+        "EV-39848cdd62c00e59",
+        "EV-4faa2bcf2e42e60c",
+        "EV-70530734d19a478e",
+        "EV-303b418c63895ba6",
+        "EV-71f78f2026b54ba2",
+        "EV-57565fc2e7502c59",
+        "EV-4536910c045ae530",
+        "EV-473f852b374d8b1c",
+        "EV-49751dfc7d2f6d6c",
+        "EV-66338f5fb682617e",
+        "EV-e6771f58d7c2a050",
+        "EV-b88affdec306a75a",
+        "EV-85373b8ec9148127",
+        "EV-52e1ac21c25a0a09",
+        "EV-ed58c2c69290ee4c",
+        "EV-66970d4aea37111f",
+        "EV-cbc8b53d4f4478b1",
+        "EV-4beb890f0879aeaf",
+        "EV-ad64347138da72bb"
+      ],
+      "entityIds": [
+        "EN-54cc885945b8f2f2",
+        "EN-96eebba49dbbf422",
+        "EN-9fbf261b62c1d7c0",
+        "EN-7d3194f79e645c42",
+        "EN-b0532e1af75cc4ab",
+        "EN-cbc62794911ff31b",
+        "EN-b51b27d89f9ea747",
+        "EN-245f1e177c5169cb",
+        "EN-59ae856cd788d0f5",
+        "EN-8d4321d936320802",
+        "EN-0f3360879e746531",
+        "EN-e3b1bf3dab957ffe",
+        "EN-9700d41909cf810f",
+        "EN-6f21a653c48f4f19",
+        "EN-4dbe391b8fcf977a",
+        "EN-72138e570e5103e2",
+        "EN-8147e6fed86d42c1",
+        "EN-522d3edeb64a7ca4",
+        "EN-c608c4787821de1b",
+        "EN-8f71c4871a160172",
+        "EN-2f795798add63d7f",
+        "EN-8afd897b5b887b06",
+        "EN-047364b9be67f665",
+        "EN-30081094f2a8c83d",
+        "EN-bbdefa2950f49882",
+        "EN-7ca2b7da6e0f8654",
+        "EN-3a7bd3e2360a3d29",
+        "EN-6fcba5d96a4fadfd"
+      ],
+      "fdeIds": [
+        "FDE-13cf52a1201f0544",
+        "FDE-45ad6eae0d326429",
+        "FDE-a28fee3a33c46db9",
+        "FDE-dadf0e9572889d3d",
+        "FDE-779bb70e06a29ed4",
+        "FDE-8669dbd3140ecd8e"
+      ],
+      "hardwareIds": [
+        "HW-ceb55d9bc637c1d3",
+        "HW-0ebffabe51a60966",
+        "HW-8f63cf2364e0df35",
+        "HW-dca442211b264bbe"
+      ],
+      "firstSeen": "2026-06-01",
+      "lastSeen": "2026-07-17"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}
