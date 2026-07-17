@@ -63,6 +63,7 @@ async function main() {
     const results = [];
     for (const viewport of [
       { name: "desktop", width: 1440, height: 1000 },
+      { name: "laptop", width: 1280, height: 900 },
       { name: "mobile", width: 390, height: 844 },
     ]) {
       const context = await browser.newContext({ viewport });
