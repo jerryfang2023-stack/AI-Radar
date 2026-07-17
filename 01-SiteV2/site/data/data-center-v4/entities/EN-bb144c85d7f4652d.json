@@ -1,0 +1,113 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T15:01:31.906Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 748,
+    "quarantinedEventCount": 32
+  },
+  "entity": {
+    "id": "EN-bb144c85d7f4652d",
+    "name": "鸿海",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-451a70d4374c2818"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-06-15",
+    "lastSeen": "2026-06-16",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [
+        "EV-451a70d4374c2818"
+      ],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-451a70d4374c2818",
+        "dataDate": "2026-06-16",
+        "date": "2026-06-15",
+        "eventType": "partnership",
+        "eventTypeLabel": "合作",
+        "eventGroup": "商业合作",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "鸿海与施耐德电气围绕次世代 AI 数据中心展开战略合作，合作生产年内启动",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "compute_system",
+            "dimensionName": "产品形态",
+            "name": "计算系统"
+          }
+        ],
+        "entityIds": [
+          "EN-bb144c85d7f4652d"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [
+    {
+      "id": "FDE-b366647aabd8f450",
+      "eventId": "EV-451a70d4374c2818",
+      "dataDate": "2026-06-16",
+      "date": "2026-06-15",
+      "title": "鸿海与施耐德电气围绕次世代 AI 数据中心展开战略合作，合作生产年内启动",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "，合作生产年内启动",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "IT之家了解到，本次合作中双方将结合鸿海的制造优势和施耐德电气的能源智慧， 共同打造集成式、可实时部署的解决方案 ，协助客户在全球各地以更快的速度、更好的效率与更佳的预先规划，构建并运营 AI 基础设施。"
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/964/487.htm",
+      "entityIds": [
+        "EN-bb144c85d7f4652d"
+      ]
+    }
+  ],
+  "hardware": []
+}

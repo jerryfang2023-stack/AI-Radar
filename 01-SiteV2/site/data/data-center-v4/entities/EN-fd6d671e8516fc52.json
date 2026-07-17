@@ -1,0 +1,68 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T15:01:31.906Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 748,
+    "quarantinedEventCount": 32
+  },
+  "entity": {
+    "id": "EN-fd6d671e8516fc52",
+    "name": "Whatnot",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-5df885dbd24b6d00"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-15",
+    "lastSeen": "2026-07-16",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-5df885dbd24b6d00"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-5df885dbd24b6d00",
+        "dataDate": "2026-07-16",
+        "date": "2026-07-15",
+        "eventType": "acquisition",
+        "eventTypeLabel": "并购",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Whatnot 收购 Shaped",
+        "displayTags": [],
+        "entityIds": [
+          "EN-fd6d671e8516fc52",
+          "EN-ea3bd73e2b506e00"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

@@ -1,0 +1,135 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T15:01:31.906Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 748,
+    "quarantinedEventCount": 32
+  },
+  "node": {
+    "id": "TX-industry-automotive_transportation",
+    "name": "汽车与交通",
+    "nodeType": "industry",
+    "typeLabel": "行业",
+    "valueId": "automotive_transportation",
+    "eventIds": [
+      "EV-df8c2d52e43b5f0c"
+    ],
+    "entityIds": [
+      "EN-c04bd5ebd10ab696"
+    ],
+    "fdeIds": [],
+    "hardwareIds": [],
+    "firstSeen": "2026-06-02",
+    "lastSeen": "2026-06-15"
+  },
+  "events": [
+    {
+      "id": "EV-df8c2d52e43b5f0c",
+      "dataDate": "2026-06-15",
+      "date": "2026-06-02",
+      "updatedDate": "2026-06-15",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Mistral AI 完成 600 万欧元 种子前轮融资",
+      "originalTitle": "Backed by Mistral AI founders, NP Company secures €6M pre-seed to advance AI for engineering - Tech.eu",
+      "subject": "Backed by Mistral AI founders, NP Company",
+      "action": "secures",
+      "object": "€6M pre-seed to advance AI for engineering - Tech.eu",
+      "metrics": [
+        "€6M",
+        "€6 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "automotive_transportation",
+            "dimensionName": "行业",
+            "name": "汽车与交通"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "id": "automotive_transportation",
+          "dimensionName": "行业",
+          "name": "汽车与交通"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "id": "automotive_transportation",
+          "dimensionName": "行业",
+          "name": "汽车与交通"
+        }
+      ],
+      "entityIds": [
+        "EN-c04bd5ebd10ab696"
+      ],
+      "entityNames": [
+        "Mistral AI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://tech.eu/2026/06/02/backed-by-mistral-ai-founders-np-company-secures-eur6m-pre-seed-to-advance-ai-for-engineering",
+      "publisher": "tech.eu"
+    }
+  ],
+  "entities": [
+    {
+      "id": "EN-c04bd5ebd10ab696",
+      "name": "Mistral AI",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-0777508c03166846",
+        "EV-85506f9f86779a6d",
+        "EV-dc442b91a69fcc5a",
+        "EV-df8c2d52e43b5f0c",
+        "EV-653cbce2ccc79f8b",
+        "EV-4cc755eaf5070dd8",
+        "EV-dbc47d61f3e94306",
+        "EV-eb2584a4801eb1e6",
+        "EV-865af5f2f09605c4"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-code_generation",
+        "TX-technology-long_context",
+        "TX-technology-on_device",
+        "TX-industry-automotive_transportation",
+        "TX-technology-tool_use"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-02",
+      "lastSeen": "2026-07-17"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}

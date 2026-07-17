@@ -1,0 +1,125 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T15:01:31.906Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 748,
+    "quarantinedEventCount": 32
+  },
+  "entity": {
+    "id": "EN-eaa1c24270a0d057",
+    "name": "Y Combinator grad",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-e4b3a19529576778"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-industry-financial_services"
+    ],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-06-02",
+    "lastSeen": "2026-06-02",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-e4b3a19529576778"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-e4b3a19529576778",
+        "dataDate": "2026-06-02",
+        "date": "2026-06-02",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Y Combinator grad 完成 4700 万美元 A 轮融资",
+        "displayTags": [
+          {
+            "dimensionId": "industry",
+            "id": "financial_services",
+            "dimensionName": "行业",
+            "name": "金融服务"
+          }
+        ],
+        "entityIds": [
+          "EN-eaa1c24270a0d057",
+          "EN-d82ff987d73882b8"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-industry-financial_services",
+      "name": "金融服务",
+      "nodeType": "industry",
+      "typeLabel": "行业",
+      "valueId": "financial_services",
+      "eventIds": [
+        "EV-384cc24be4b56cb5",
+        "EV-21c2e81a7c073e04",
+        "EV-189e43cb9fea8e1a",
+        "EV-b1138bccf5ccd86c",
+        "EV-c0d19b8641a7a36c",
+        "EV-e4b3a19529576778",
+        "EV-57ab4ab35bcefe19",
+        "EV-94b6fae7dd4e2b95",
+        "EV-a84ec4216d3ded6d",
+        "EV-a9f1e8662a1e22cf",
+        "EV-33717672cb5e8004",
+        "EV-a9a3b5b56befe593",
+        "EV-30e8529ddeb228c8",
+        "EV-8f8f477441a23b7c",
+        "EV-5caf7f83664b1a2c"
+      ],
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-c70eca6b0f88f44d",
+        "EN-bbdefa2950f49882",
+        "EN-11507a0e2f5e69d5",
+        "EN-a972bc1b3220493e",
+        "EN-eaa1c24270a0d057",
+        "EN-d82ff987d73882b8",
+        "EN-4584b2d5819616b3",
+        "EN-7706c3c94d5f9b59",
+        "EN-ee04228c5c6d8b08",
+        "EN-b0532e1af75cc4ab",
+        "EN-5e757c7fc575c41e",
+        "EN-8147e6fed86d42c1",
+        "EN-4e721fae5963494d"
+      ],
+      "fdeIds": [
+        "FDE-4269000419db8e31",
+        "FDE-51d5310574bc443a"
+      ],
+      "hardwareIds": [],
+      "firstSeen": "2026-05-20",
+      "lastSeen": "2026-07-10"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}

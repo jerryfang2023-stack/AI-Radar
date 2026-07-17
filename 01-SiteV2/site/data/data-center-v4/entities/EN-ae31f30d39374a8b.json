@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T15:01:31.906Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 748,
+    "quarantinedEventCount": 32
+  },
+  "entity": {
+    "id": "EN-ae31f30d39374a8b",
+    "name": "Meta AI",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-cf176636839e45be"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-technology-guardrails_safety"
+    ],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-17",
+    "lastSeen": "2026-07-17",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-cf176636839e45be"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-cf176636839e45be",
+        "dataDate": "2026-07-17",
+        "date": "2026-07-17",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "Meta AI 上线新功能：青少年讨论自杀或自残话题时将自动通报家长",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "guardrails_safety",
+            "name": "安全护栏"
+          }
+        ],
+        "entityIds": [
+          "EN-ae31f30d39374a8b",
+          "EN-ea3bd73e2b506e00"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-technology-guardrails_safety",
+      "name": "安全护栏",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "guardrails_safety",
+      "eventIds": [
+        "EV-cf176636839e45be"
+      ],
+      "entityIds": [
+        "EN-ae31f30d39374a8b",
+        "EN-ea3bd73e2b506e00"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}

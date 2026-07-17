@@ -42,7 +42,7 @@ Do not scan all Markdown at task start. Read only this file, the required `conte
 
 ## Current Version
 
-- Current stage: SITE-V4.1.0 unified frontstage; V3 Card/trend data remains an internal compatibility and downstream-application input only.
+- Current stage: SITE-V4.2.0 entity history; the SITE-V4.1 unified shell remains, while stable entities, factual timelines, and evidence-backed relations are first-class data services. V3 Card/trend data remains an internal compatibility and downstream-application input only.
 - Current frontstage: `01-SiteV2/site/data-center.html`, `01-SiteV2/site/intelligence-map.html`, and their V4 report detail pages.
 - Current dashboard: `01-SiteV2/site/operations-console.html`.
 - Current Business Signals column version: BSIG-V2.2.0-pipeline-stage-ownership.
@@ -53,6 +53,8 @@ Do not scan all Markdown at task start. Read only this file, the required `conte
 - Current Industry Reports column version: IMAP-V2.1.0-v4-unified-frontstage.
 - Current Raw contract: RAW-V3.0.
 - Current canonical event contract: EVENT-V1.0.
+- Current entity history contract: ENTITY-V1.0.
+- Current factual relationship contract: RELATION-V2.0.
 - Current tag taxonomy version: TAG-V4.0.
 - Current data-center rule source: `context/12-data-center-v4.md`.
 - `context/07-v3-intelligence-generation-rules.md` governs frozen V3 page compatibility only.
@@ -91,7 +93,7 @@ All public pages and report details use the V4 logo header and shared Data Cente
 
 Follow-builders / builders viewpoints are active only as the independent First-Line Viewpoints column. They must not be used as business-signal facts, relationship-graph evidence, or trend-candidate evidence.
 
-If an old page rule conflicts with SITE-V4.1.0, delete or rebuild it instead of preserving V3 public compatibility.
+If an old page rule conflicts with SITE-V4.2.0, delete or rebuild it instead of preserving V3 public compatibility.
 
 ## Current Context
 
@@ -101,7 +103,7 @@ If an old page rule conflicts with SITE-V4.1.0, delete or rebuild it instead of 
 | `context/00-current-state.md` | current project state |
 | `context/version-ledger.md` | version baseline and freeze points |
 | `context/frontstage-page-contracts.md` | frontstage page contracts |
-| `context/01-product-map.md` | SITE-V4.1 product structure and data flow |
+| `context/01-product-map.md` | SITE-V4.2 product structure and data flow |
 | `context/02-vi-style.md` | VI, typography, visual rules |
 | `context/04-qc-rules.md` | general quality gates |
 | `context/05-daily-monitoring.md` | V3 Raw / Pool monitoring context |

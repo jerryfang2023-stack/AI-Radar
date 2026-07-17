@@ -1,0 +1,163 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T15:01:31.906Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 748,
+    "quarantinedEventCount": 32
+  },
+  "entity": {
+    "id": "EN-c5947269de664c47",
+    "name": "抖音电商",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-a3b006906f6d46a0"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-industry-retail_ecommerce"
+    ],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-01",
+    "lastSeen": "2026-07-02",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [
+        "EV-a3b006906f6d46a0"
+      ],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-a3b006906f6d46a0",
+        "dataDate": "2026-07-02",
+        "date": "2026-07-01",
+        "eventType": "deployment",
+        "eventTypeLabel": "部署",
+        "eventGroup": "部署与案例",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "抖音电商上线\"肖像保护功能\"，防范\"AI 仿冒带货达人\"侵权行为",
+        "displayTags": [
+          {
+            "dimensionId": "industry",
+            "id": "retail_ecommerce",
+            "dimensionName": "行业",
+            "name": "零售与电商"
+          }
+        ],
+        "entityIds": [
+          "EN-c5947269de664c47"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-industry-retail_ecommerce",
+      "name": "零售与电商",
+      "nodeType": "industry",
+      "typeLabel": "行业",
+      "valueId": "retail_ecommerce",
+      "eventIds": [
+        "EV-7aaed0a2ae5cf8b6",
+        "EV-7c646d3fbc3fbbf1",
+        "EV-434dcf1813a84ead",
+        "EV-9f067d8f0d23eb48",
+        "EV-a3b006906f6d46a0",
+        "EV-02686922dd82c4aa",
+        "EV-2ffc3377977da114",
+        "EV-89b644ff05e6b93b",
+        "EV-305091abd41ad88d",
+        "EV-52e1ac21c25a0a09",
+        "EV-ec15684583d6f7a9"
+      ],
+      "entityIds": [
+        "EN-b0532e1af75cc4ab",
+        "EN-c70eca6b0f88f44d",
+        "EN-cbc62794911ff31b",
+        "EN-6f21a653c48f4f19",
+        "EN-4dbe391b8fcf977a",
+        "EN-c5947269de664c47",
+        "EN-88e2cce43eeadb36",
+        "EN-8147e6fed86d42c1",
+        "EN-bbdefa2950f49882",
+        "EN-8d4321d936320802",
+        "EN-3a7bd3e2360a3d29",
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "fdeIds": [
+        "FDE-13cf52a1201f0544",
+        "FDE-45ad6eae0d326429",
+        "FDE-1153676717176305",
+        "FDE-a5d8dfac061bc21b"
+      ],
+      "hardwareIds": [],
+      "firstSeen": "2026-01-20",
+      "lastSeen": "2026-07-15"
+    }
+  ],
+  "fde": [
+    {
+      "id": "FDE-1153676717176305",
+      "eventId": "EV-a3b006906f6d46a0",
+      "dataDate": "2026-07-02",
+      "date": "2026-07-01",
+      "title": "抖音电商上线\"肖像保护功能\"，防范\"AI 仿冒带货达人\"侵权行为",
+      "stage": "completed",
+      "stageLabel": "已完成",
+      "customer": "抖音电商",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "\"肖像保护功能\"，防范\"AI 仿冒带货达人\"侵权行为",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "抖音电商上线“肖像保护功能”，防范“AI 仿冒带货达人”侵权行为 - IT之家",
+        "抖音电商上线“肖像保护功能”，防范“AI 仿冒带货达人”侵权行为",
+        "IT之家 7 月 1 日消息，抖音电商宣布上线“肖像保护功能”，目前部分带货达人已率先试用，该功能可帮助达人主动维护自身肖像权益，防范 AI 仿冒、素材盗用等侵权风险。",
+        "本轮上线的“肖像保护功能”已累计保护 180 余位头部达人，主动拦截侵权账号达 9.2 万个 。"
+      ],
+      "outcomes": [],
+      "metrics": [
+        "9.2 万"
+      ],
+      "undisclosedFields": [
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/971/329.htm",
+      "entityIds": [
+        "EN-c5947269de664c47"
+      ]
+    }
+  ],
+  "hardware": []
+}

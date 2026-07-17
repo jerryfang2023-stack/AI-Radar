@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T15:01:31.906Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 748,
+    "quarantinedEventCount": 32
+  },
+  "entity": {
+    "id": "EN-7117fa8d72fb99b9",
+    "name": "长安汽车",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-0259aae5ef9e83cd"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-technology-vision_language"
+    ],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-06-13",
+    "lastSeen": "2026-06-14",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-0259aae5ef9e83cd"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-0259aae5ef9e83cd",
+        "dataDate": "2026-06-14",
+        "date": "2026-06-13",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "长安汽车发布\"天枢领航\"自研辅助驾驶系统：长安启源 Q06 将全系搭载、9月上市",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "vision_language",
+            "name": "视觉语言"
+          }
+        ],
+        "entityIds": [
+          "EN-7117fa8d72fb99b9"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-technology-vision_language",
+      "name": "视觉语言",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "vision_language",
+      "eventIds": [
+        "EV-6f092cfc7a064d64",
+        "EV-0259aae5ef9e83cd",
+        "EV-74b965de27bc0515"
+      ],
+      "entityIds": [
+        "EN-e647c818ac38b6ca",
+        "EN-2b6e51bec93e86c1",
+        "EN-7117fa8d72fb99b9",
+        "EN-b5251b35f15bedc4",
+        "EN-d831f1170590ddb1"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-06-13",
+      "lastSeen": "2026-07-17"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}

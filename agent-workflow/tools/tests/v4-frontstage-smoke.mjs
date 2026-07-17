@@ -11,11 +11,16 @@ const siteDir = path.join(root, "01-SiteV2/site");
 const port = Number(process.env.WAVESIGHT_SMOKE_PORT || 4173);
 const baseUrl = `http://127.0.0.1:${port}`;
 const screenshotDir = path.join(os.tmpdir(), "wavesight-v4-smoke");
+const entityIndex = JSON.parse(fs.readFileSync(path.join(siteDir, "data/data-center-v4/indexes/entities.json"), "utf8"));
+const smokeEntity = entityIndex.companies?.[0] || entityIndex.products?.[0] || entityIndex.people?.[0];
+const smokeTaxonomy = entityIndex.taxonomyNodes?.[0];
 const cases = [
   ["data-center.html?view=events", "data-center.html?view=events"],
   ["data-center.html?view=community", "data-center.html?view=community"],
   ["data-center.html?view=viewpoints", "data-center.html?view=viewpoints"],
   ["data-center.html?view=index", "data-center.html?view=index"],
+  [`data-center.html?view=index&detail=entity&id=${encodeURIComponent(smokeEntity.id)}`, "data-center.html?view=index"],
+  [`data-center.html?view=index&detail=taxonomy&id=${encodeURIComponent(smokeTaxonomy.id)}`, "data-center.html?view=index"],
   ["intelligence-map.html", "intelligence-map.html"],
   ["weekly-ai-business-change-radar.html", "weekly-ai-business-change-radar.html"],
   ["monthly-business-structure-2026-06.html", "monthly-business-structure-2026-06.html"],

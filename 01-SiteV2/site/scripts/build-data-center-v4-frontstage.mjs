@@ -4,6 +4,7 @@ import crypto from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { buildEntityHistoryService } from "../../../agent-workflow/product/entity-history-v1.mjs";
 import { productEntityDisplayType } from "../../../agent-workflow/product/product-entity-normalizer.mjs";
 import { isCompletePublicEventTitle as isCompleteDataTitle } from "../../../agent-workflow/tools/event-public-title.mjs";
 
@@ -279,75 +280,6 @@ function buildEventRecords({ events, claims, rawDocuments, sourceArtifacts, enti
   });
 }
 
-function buildCompanies(entityRows, eventRecords) {
-  const eventsByEntity = new Map();
-  for (const event of eventRecords) {
-    for (const entityId of event.entityIds) {
-      if (!eventsByEntity.has(entityId)) eventsByEntity.set(entityId, []);
-      eventsByEntity.get(entityId).push(event);
-    }
-  }
-
-  return entityRows.filter((entity) => entity.entity_type === "organization_candidate" && entity.verification_status === "verified").map((entity) => {
-    const relatedEvents = eventsByEntity.get(entity.entity_id) || [];
-    return {
-      id: entity.entity_id,
-      name: entity.canonical_name || entity.entity_id,
-      type: "公司/机构",
-      sourceType: entity.entity_type || "",
-      aliases: safeArray(entity.aliases),
-      tags: unique(relatedEvents.flatMap((event) => event.tags.map((tag) => tag.name))).slice(0, 5),
-      eventIds: relatedEvents.map((event) => event.id),
-      productIds: []
-    };
-  }).filter((item) => item.name && item.eventIds.length > 0).sort((a, b) => a.name.localeCompare(b.name, "zh-CN"));
-}
-
-function buildProducts(eventRecords, companies) {
-  const companyById = new Map(companies.map((item) => [item.id, item]));
-  const companyByName = new Map(companies.map((item) => [item.name.toLocaleLowerCase(), item]));
-  const products = new Map();
-
-  for (const event of eventRecords) {
-    for (const productDefinition of safeArray(event.products)) {
-      const id = stableId("PD", productDefinition.name.toLowerCase());
-      if (!products.has(id)) {
-        products.set(id, {
-          id,
-          name: productDefinition.name,
-          companyIds: [],
-          companyNames: [],
-          type: productDefinition.type,
-          tags: [],
-          eventIds: []
-        });
-      }
-      const product = products.get(id);
-      const owners = safeArray(productDefinition.ownerNames)
-        .map((name) => companyByName.get(name.toLocaleLowerCase()))
-        .filter(Boolean);
-      product.eventIds.push(event.id);
-      product.tags.push(...event.tags.map((tag) => tag.name));
-      product.companyIds.push(...owners.map((item) => item.id));
-      product.companyNames.push(...safeArray(productDefinition.ownerNames));
-    }
-  }
-
-  for (const product of products.values()) {
-    product.eventIds = unique(product.eventIds);
-    product.tags = unique(product.tags).slice(0, 5);
-    product.companyIds = unique(product.companyIds);
-    product.companyNames = unique(product.companyNames);
-    for (const companyId of product.companyIds) {
-      const company = companyById.get(companyId);
-      if (company) company.productIds.push(product.id);
-    }
-  }
-
-  for (const company of companies) company.productIds = unique(company.productIds);
-  return [...products.values()].sort((a, b) => a.name.localeCompare(b.name, "zh-CN"));
-}
-
 function buildFdeRecords(rows, eventsById) {
   return rows.map((row) => {
     const event = eventsById.get(row.event_id);
@@ -424,9 +356,15 @@ function buildCommunity(root) {
   })).sort((a, b) => b.date.localeCompare(a.date) || a.id.localeCompare(b.id));
 }
 
-function buildViewpoints(root) {
+function buildViewpoints(root, entityProfiles = []) {
   const file = path.join(root, "01-SiteV2/site/data/first-line-viewpoints-v4.json");
   const data = readJson(file, { meta: {}, remarks: [] });
+  const peopleByKey = new Map();
+  for (const person of entityProfiles.filter((item) => item.entityType === "person_candidate")) {
+    for (const value of [person.handle, person.name, ...(person.aliases || [])]) {
+      if (value) peopleByKey.set(String(value).toLocaleLowerCase(), person.id);
+    }
+  }
   return safeArray(data.remarks).map((item, index) => ({
     id: stableId("VP", item.id || item.url || `${item.name}-${index}`),
     date: dateOnly(item.date || item.createdAt),
@@ -434,12 +372,69 @@ function buildViewpoints(root) {
     translatedContent: compactText(item.contentTranslation || item.translation || "", 2200),
     originalContent: compactText(item.content || item.text || "", 2200),
     person: item.name || item.handle || "未披露",
+    personEntityId: peopleByKey.get(String(item.handle || item.name || "").toLocaleLowerCase()) || "",
     handle: item.handle || "",
     role: item.role || "未披露",
     organization: item.organization || item.name || "未披露",
     tags: unique(safeArray(item.columnTags).map((tag) => tag.name || tag.id).concat(item.topic || [])).slice(0, 5),
     sourceUrl: item.url || item.id || ""
   })).sort((a, b) => b.date.localeCompare(a.date) || a.id.localeCompare(b.id));
+}
+
+function buildEntityCollections(service, eventsById) {
+  const nodeById = new Map(service.taxonomyNodes.map((item) => [item.id, item]));
+  const nameById = new Map(service.profiles.map((item) => [item.id, item.name]));
+  const productOwnerIds = new Map();
+  for (const relation of service.relationships) {
+    if (relation.predicate !== "publishes" || relation.object_type !== "entity") continue;
+    if (!productOwnerIds.has(relation.object_ref)) productOwnerIds.set(relation.object_ref, []);
+    productOwnerIds.get(relation.object_ref).push(relation.subject_ref);
+  }
+  const common = (profile) => ({
+    id: profile.id,
+    name: profile.name,
+    sourceType: profile.entityType,
+    aliases: profile.aliases || [],
+    tags: (profile.classificationRefs || []).map((id) => nodeById.get(id)?.name).filter(Boolean).slice(0, 5),
+    eventIds: profile.eventIds || [],
+    firstSeen: profile.firstSeen || "",
+    lastSeen: profile.lastSeen || "",
+    relatedEntityIds: profile.relatedEntityIds || [],
+    relationIds: profile.relationIds || []
+  });
+  const companies = service.profiles
+    .filter((profile) => profile.entityType === "organization_candidate" && profile.verificationStatus === "verified" && profile.eventIds.length)
+    .map((profile) => ({
+      ...common(profile),
+      type: "公司/机构",
+      productIds: service.relationships
+        .filter((relation) => relation.predicate === "publishes" && relation.subject_ref === profile.id)
+        .map((relation) => relation.object_ref)
+    }));
+  const products = service.profiles
+    .filter((profile) => profile.entityType === "product_candidate" && profile.verificationStatus === "verified" && profile.eventIds.length)
+    .map((profile) => {
+      const companyIds = unique(productOwnerIds.get(profile.id) || []);
+      const firstEvent = profile.eventIds.map((id) => eventsById.get(id)).find(Boolean);
+      return {
+        ...common(profile),
+        legacyIds: [stableId("PD", profile.name.toLowerCase())],
+        companyIds,
+        companyNames: companyIds.map((id) => nameById.get(id)).filter(Boolean),
+        type: productEntityDisplayType(firstEvent?.eventType || "product_release")
+      };
+    });
+  const people = service.profiles
+    .filter((profile) => profile.entityType === "person_candidate" && profile.verificationStatus === "verified" && profile.viewpointIds.length)
+    .map((profile) => ({
+      ...common(profile),
+      type: "人物",
+      handle: profile.handle || "",
+      role: profile.role || "",
+      organization: profile.organization || "",
+      viewpointIds: profile.viewpointIds || []
+    }));
+  return { companies, products, people };
 }
 
 export function buildFrontstageData(root = defaultRoot) {
@@ -472,14 +467,27 @@ export function buildFrontstageData(root = defaultRoot) {
   const eventRecords = allEventRecords.filter((item) => isCompletePublicEventTitle(item.title));
   const latestDataDate = eventRecords.map((item) => item.dataDate).filter(Boolean).sort().at(-1) || "";
   const currentDate = latestDataDate;
-  const companies = buildCompanies(readJsonl(path.join(tables, "entities.jsonl")), eventRecords);
-  const products = buildProducts(eventRecords, companies);
+  const entityRows = readJsonl(path.join(tables, "entities.jsonl"));
   const eventsById = new Map(eventRecords.map((item) => [item.id, item]));
+  const fde = buildFdeRecords(readJsonl(path.join(tables, "fde_records.jsonl")), eventsById);
+  const hardware = buildHardwareRecords(readJsonl(path.join(tables, "hardware_records.jsonl")), eventsById);
+  const viewpointData = readJson(path.join(root, "01-SiteV2/site/data/first-line-viewpoints-v4.json"), { meta: {}, builders: [], remarks: [] });
+  const entityHistory = buildEntityHistoryService({
+    entityRows,
+    events: eventRecords,
+    fdeRecords: fde,
+    hardwareRecords: hardware,
+    viewpointData
+  });
+  const entityCollections = buildEntityCollections(entityHistory, eventsById);
+  const viewpoints = buildViewpoints(root, entityHistory.profiles);
 
   return {
     meta: {
-      productVersion: "SITE-V4.1.0-unified-frontstage",
+      productVersion: "SITE-V4.2.0-entity-history",
       dataVersion: "SITE-V4.0-data-center",
+      entityVersion: entityHistory.manifest.entityVersion,
+      relationshipVersion: entityHistory.manifest.relationshipVersion,
       generatedAt: new Date().toISOString(),
       latestDataDate,
       currentDate,
@@ -488,12 +496,17 @@ export function buildFrontstageData(root = defaultRoot) {
     },
     eventTypes: eventTypeLabels,
     events: eventRecords,
-    companies,
-    products,
-    fde: buildFdeRecords(readJsonl(path.join(tables, "fde_records.jsonl")), eventsById),
-    hardware: buildHardwareRecords(readJsonl(path.join(tables, "hardware_records.jsonl")), eventsById),
+    companies: entityCollections.companies,
+    products: entityCollections.products,
+    people: entityCollections.people,
+    taxonomyNodes: entityHistory.taxonomyNodes,
+    entityProfiles: entityHistory.profiles,
+    entityRelationships: entityHistory.relationships,
+    entityHistoryManifest: entityHistory.manifest,
+    fde,
+    hardware,
     community: buildCommunity(root),
-    viewpoints: buildViewpoints(root)
+    viewpoints
   };
 }
 
@@ -502,7 +515,86 @@ export function writeFrontstageData(root = defaultRoot) {
   const output = path.join(root, "01-SiteV2/site/data/data-center-v4-frontstage.json");
   fs.mkdirSync(path.dirname(output), { recursive: true });
   fs.writeFileSync(output, `${JSON.stringify(data, null, 2)}\n`, "utf8");
-  return { output, data };
+  const splitRoot = path.join(root, "01-SiteV2/site/data/data-center-v4");
+  const indexesDir = path.join(splitRoot, "indexes");
+  const detailsDir = path.join(splitRoot, "details");
+  const entitiesDir = path.join(splitRoot, "entities");
+  const taxonomyDir = path.join(splitRoot, "taxonomy");
+  fs.rmSync(splitRoot, { recursive: true, force: true });
+  for (const dir of [splitRoot, indexesDir, detailsDir, entitiesDir, taxonomyDir]) fs.mkdirSync(dir, { recursive: true });
+  const writeJson = (file, value) => fs.writeFileSync(file, `${JSON.stringify(value, null, 2)}\n`, "utf8");
+  const compactEvents = data.events.map(({ claims, sources, sourceExcerpt, ...event }) => event);
+  writeJson(path.join(indexesDir, "events.json"), { meta: data.meta, eventTypes: data.eventTypes, events: compactEvents });
+  writeJson(path.join(indexesDir, "entities.json"), {
+    meta: { ...data.meta, entityHistory: data.entityHistoryManifest },
+    companies: data.companies,
+    products: data.products,
+    people: data.people,
+    taxonomyNodes: data.taxonomyNodes
+  });
+  writeJson(path.join(indexesDir, "fde.json"), { meta: data.meta, fde: data.fde });
+  writeJson(path.join(indexesDir, "hardware.json"), { meta: data.meta, hardware: data.hardware });
+  writeJson(path.join(detailsDir, "events.json"), { meta: data.meta, events: data.events });
+  writeJson(path.join(detailsDir, "fde.json"), { meta: data.meta, fde: data.fde, events: compactEvents });
+  writeJson(path.join(detailsDir, "hardware.json"), { meta: data.meta, hardware: data.hardware, events: compactEvents });
+
+  const profileById = new Map(data.entityProfiles.map((profile) => [profile.id, profile]));
+  const nodeById = new Map(data.taxonomyNodes.map((node) => [node.id, node]));
+  const relationById = new Map(data.entityRelationships.map((relation) => [relation.relationship_id, relation]));
+  for (const profile of data.entityProfiles) {
+    const payload = {
+      meta: data.meta,
+      entity: profile,
+      relatedEntities: (profile.relatedEntityIds || []).map((id) => profileById.get(id)).filter(Boolean).map(({ timeline, viewpoints, groupedEventIds, relationIds, ...item }) => item),
+      relationships: (profile.relationIds || []).map((id) => relationById.get(id)).filter(Boolean),
+      taxonomyNodes: (profile.classificationRefs || []).map((id) => nodeById.get(id)).filter(Boolean),
+      fde: data.fde.filter((item) => item.entityIds.includes(profile.id)),
+      hardware: data.hardware.filter((item) => item.entityIds.includes(profile.id))
+    };
+    writeJson(path.join(entitiesDir, `${profile.id}.json`), payload);
+  }
+  for (const node of data.taxonomyNodes) {
+    writeJson(path.join(taxonomyDir, `${node.id}.json`), {
+      meta: data.meta,
+      node,
+      events: node.eventIds.map((id) => compactEvents.find((event) => event.id === id)).filter(Boolean),
+      entities: node.entityIds.map((id) => profileById.get(id)).filter(Boolean).map(({ timeline, viewpoints, groupedEventIds, relationIds, ...item }) => item),
+      fde: data.fde.filter((item) => node.fdeIds.includes(item.id)),
+      hardware: data.hardware.filter((item) => node.hardwareIds.includes(item.id))
+    });
+  }
+  const manifest = {
+    productVersion: data.meta.productVersion,
+    dataVersion: data.meta.dataVersion,
+    entityVersion: data.meta.entityVersion,
+    relationshipVersion: data.meta.relationshipVersion,
+    generatedAt: data.meta.generatedAt,
+    currentDate: data.meta.currentDate,
+    coverage: data.entityHistoryManifest.coverage,
+    counts: {
+      events: data.events.length,
+      companies: data.companies.length,
+      products: data.products.length,
+      people: data.people.length,
+      taxonomyNodes: data.taxonomyNodes.length,
+      relationships: data.entityRelationships.length,
+      fde: data.fde.length,
+      hardware: data.hardware.length
+    },
+    paths: {
+      eventsIndex: "data/data-center-v4/indexes/events.json",
+      entitiesIndex: "data/data-center-v4/indexes/entities.json",
+      fdeIndex: "data/data-center-v4/indexes/fde.json",
+      hardwareIndex: "data/data-center-v4/indexes/hardware.json",
+      eventsDetail: "data/data-center-v4/details/events.json",
+      fdeDetail: "data/data-center-v4/details/fde.json",
+      hardwareDetail: "data/data-center-v4/details/hardware.json",
+      entityDetailPattern: "data/data-center-v4/entities/{id}.json",
+      taxonomyDetailPattern: "data/data-center-v4/taxonomy/{id}.json"
+    }
+  };
+  writeJson(path.join(splitRoot, "manifest.json"), manifest);
+  return { output, manifest: path.join(splitRoot, "manifest.json"), data };
 }
 
 function main() {

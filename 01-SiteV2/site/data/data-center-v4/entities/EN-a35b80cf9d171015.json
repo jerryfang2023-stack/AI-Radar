@@ -1,0 +1,132 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T15:01:31.906Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 748,
+    "quarantinedEventCount": 32
+  },
+  "entity": {
+    "id": "EN-a35b80cf9d171015",
+    "name": "高通官宣",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-a15da1b52d939967"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-technology-on_device"
+    ],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-06-24",
+    "lastSeen": "2026-06-25",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-a15da1b52d939967"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-a15da1b52d939967",
+        "dataDate": "2026-06-25",
+        "date": "2026-06-24",
+        "eventType": "acquisition",
+        "eventTypeLabel": "并购",
+        "eventGroup": "融资与并购",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "高通官宣将收购 AI 软件栈企业 Modular，交易预计 2026H2 完成",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "on_device",
+            "name": "端侧"
+          },
+          {
+            "dimensionId": "deployment_model",
+            "id": "edge_device",
+            "dimensionName": "部署形态",
+            "name": "边缘与端侧"
+          }
+        ],
+        "entityIds": [
+          "EN-a35b80cf9d171015"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-technology-on_device",
+      "name": "端侧",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "on_device",
+      "eventIds": [
+        "EV-d4d7b019ff0015df",
+        "EV-a15da1b52d939967",
+        "EV-283e88bdd15ed87e",
+        "EV-653cbce2ccc79f8b",
+        "EV-04efb4eecbb8125f",
+        "EV-712bb6241160c4c5",
+        "EV-0a5e65aa46b0d194",
+        "EV-52508b70ccd2cc0b",
+        "EV-c5b8faec223a4caf",
+        "EV-4026c95d4c01b96e",
+        "EV-0597e07d7e73051a",
+        "EV-02186ed7885f68fe",
+        "EV-5613946bdd578a26",
+        "EV-f4876d2e1a20d87b"
+      ],
+      "entityIds": [
+        "EN-6f7ac1823da81d2e",
+        "EN-bbdefa2950f49882",
+        "EN-a35b80cf9d171015",
+        "EN-8d4321d936320802",
+        "EN-9fbf261b62c1d7c0",
+        "EN-f3cfedbe8428c9f7",
+        "EN-7df09a7717ef2feb",
+        "EN-c04bd5ebd10ab696",
+        "EN-50ba7ff15827787b",
+        "EN-2c348893efb2316e",
+        "EN-3a7bd3e2360a3d29",
+        "EN-c70eca6b0f88f44d",
+        "EN-ce635c4eabff5e4f",
+        "EN-c3ce0cc92b48bbd6",
+        "EN-968e2d5b08687bf4",
+        "EN-0899bccb1b028521"
+      ],
+      "fdeIds": [
+        "FDE-ef57fbc39a8c11f6"
+      ],
+      "hardwareIds": [
+        "HW-de1b3c6ad39cc9bc"
+      ],
+      "firstSeen": "2026-05-25",
+      "lastSeen": "2026-07-17"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}

@@ -1,0 +1,113 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wavesight.local/schemas/entity-history-v1.schema.json",
+  "title": "WaveSight Entity History V1",
+  "type": "object",
+  "required": ["manifest", "registry", "profiles", "taxonomyNodes", "relationships"],
+  "properties": {
+    "manifest": {
+      "type": "object",
+      "required": ["entityVersion", "relationshipVersion", "generatedAt", "coverage", "counts"],
+      "properties": {
+        "entityVersion": { "const": "ENTITY-V1.0" },
+        "relationshipVersion": { "const": "RELATION-V2.0" },
+        "generatedAt": { "type": "string" },
+        "coverage": {
+          "type": "object",
+          "required": ["startDate", "endDate", "distinctDataDays"],
+          "properties": {
+            "startDate": { "type": "string" },
+            "endDate": { "type": "string" },
+            "distinctDataDays": { "type": "integer", "minimum": 0 }
+          },
+          "additionalProperties": false
+        },
+        "counts": { "type": "object" }
+      },
+      "additionalProperties": true
+    },
+    "registry": { "type": "array", "items": { "$ref": "#/$defs/entity" } },
+    "profiles": { "type": "array", "items": { "$ref": "#/$defs/profile" } },
+    "taxonomyNodes": { "type": "array", "items": { "$ref": "#/$defs/taxonomyNode" } },
+    "relationships": { "type": "array", "items": { "$ref": "#/$defs/relationship" } }
+  },
+  "$defs": {
+    "entity": {
+      "type": "object",
+      "required": ["id", "name", "entityType", "typeLabel", "aliases", "verificationStatus", "datasetScopes", "eventIds", "viewpointIds", "classificationRefs", "relatedEntityIds", "firstSeen", "lastSeen"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^EN-[a-f0-9]{16}$" },
+        "name": { "type": "string", "minLength": 1 },
+        "entityType": { "enum": ["organization_candidate", "product_candidate", "person_candidate"] },
+        "typeLabel": { "type": "string" },
+        "aliases": { "type": "array", "items": { "type": "string" } },
+        "verificationStatus": { "enum": ["candidate", "verified", "merged", "quarantined"] },
+        "datasetScopes": { "type": "array", "items": { "enum": ["canonical", "viewpoints"] } },
+        "eventIds": { "type": "array", "items": { "type": "string" } },
+        "viewpointIds": { "type": "array", "items": { "type": ["string", "number"] } },
+        "classificationRefs": { "type": "array", "items": { "type": "string" } },
+        "relatedEntityIds": { "type": "array", "items": { "type": "string" } },
+        "firstSeen": { "type": "string" },
+        "lastSeen": { "type": "string" },
+        "handle": { "type": "string" },
+        "role": { "type": "string" },
+        "organization": { "type": "string" },
+        "viewpointTags": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": true
+    },
+    "profile": {
+      "allOf": [
+        { "$ref": "#/$defs/entity" },
+        {
+          "type": "object",
+          "required": ["relationIds", "groupedEventIds", "timeline", "viewpoints"],
+          "properties": {
+            "relationIds": { "type": "array", "items": { "type": "string" } },
+            "groupedEventIds": { "type": "object" },
+            "timeline": { "type": "array", "items": { "type": "object" } },
+            "viewpoints": { "type": "array", "items": { "type": "object" } }
+          }
+        }
+      ]
+    },
+    "taxonomyNode": {
+      "type": "object",
+      "required": ["id", "name", "nodeType", "typeLabel", "valueId", "eventIds", "entityIds", "fdeIds", "hardwareIds", "firstSeen", "lastSeen"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^TX-(technology|use_case|industry)-" },
+        "name": { "type": "string", "minLength": 1 },
+        "nodeType": { "enum": ["technology", "use_case", "industry"] },
+        "typeLabel": { "type": "string" },
+        "valueId": { "type": "string" },
+        "eventIds": { "type": "array", "items": { "type": "string" } },
+        "entityIds": { "type": "array", "items": { "type": "string" } },
+        "fdeIds": { "type": "array", "items": { "type": "string" } },
+        "hardwareIds": { "type": "array", "items": { "type": "string" } },
+        "firstSeen": { "type": "string" },
+        "lastSeen": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "relationship": {
+      "type": "object",
+      "required": ["relationship_id", "relationship_version", "subject_ref", "subject_type", "predicate", "object_ref", "object_type", "event_id", "claim_refs", "source_refs", "data_date", "status"],
+      "properties": {
+        "relationship_id": { "type": "string", "pattern": "^REL2-" },
+        "relationship_version": { "const": "RELATION-V2.0" },
+        "subject_ref": { "type": "string" },
+        "subject_type": { "const": "entity" },
+        "predicate": { "enum": ["publishes", "partners_with", "acquires", "serves", "deployed_in", "supplies_hardware_to"] },
+        "object_ref": { "type": "string" },
+        "object_type": { "enum": ["entity", "taxonomy"] },
+        "event_id": { "type": "string" },
+        "claim_refs": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+        "source_refs": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+        "data_date": { "type": "string" },
+        "status": { "const": "verified" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

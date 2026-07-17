@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T15:01:31.906Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 748,
+    "quarantinedEventCount": 32
+  },
+  "entity": {
+    "id": "EN-2e610cbc4b309296",
+    "name": "网盘升级 GenFlow",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-daf1e21f8ccbf839"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-use_case-data_analysis"
+    ],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-16",
+    "lastSeen": "2026-07-17",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-daf1e21f8ccbf839"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-daf1e21f8ccbf839",
+        "dataDate": "2026-07-17",
+        "date": "2026-07-16",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "百度文库、网盘升级 GenFlow，7 月底内测面向金融等行业推出独立客户端",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "id": "data_analysis",
+            "dimensionName": "应用场景",
+            "name": "数据分析"
+          }
+        ],
+        "entityIds": [
+          "EN-a89151ba4b5ac0f2",
+          "EN-f64f284f6c46b9b6",
+          "EN-2e610cbc4b309296",
+          "EN-33ea25778e18d372"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-use_case-data_analysis",
+      "name": "数据分析",
+      "nodeType": "use_case",
+      "typeLabel": "应用场景",
+      "valueId": "data_analysis",
+      "eventIds": [
+        "EV-5f5f252c6a826599",
+        "EV-daf1e21f8ccbf839",
+        "EV-e09bff5515b1896b"
+      ],
+      "entityIds": [
+        "EN-122c0bebae950c77",
+        "EN-a89151ba4b5ac0f2",
+        "EN-f64f284f6c46b9b6",
+        "EN-2e610cbc4b309296",
+        "EN-33ea25778e18d372",
+        "EN-c70eca6b0f88f44d"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-06-10",
+      "lastSeen": "2026-07-17"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}

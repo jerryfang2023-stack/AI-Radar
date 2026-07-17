@@ -1,0 +1,148 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T15:01:31.906Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 748,
+    "quarantinedEventCount": 32
+  },
+  "entity": {
+    "id": "EN-2ab6d53e717a0e0d",
+    "name": "Nokia",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [
+      "诺基亚"
+    ],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-df5831ff5762432d",
+      "EV-bb6d9e43c082fb47",
+      "EV-dfc634f28a70f423"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-industry-telecommunications"
+    ],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-06-22",
+    "lastSeen": "2026-07-16",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [
+        "EV-df5831ff5762432d"
+      ],
+      "productsServices": [
+        "EV-bb6d9e43c082fb47",
+        "EV-dfc634f28a70f423"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-bb6d9e43c082fb47",
+        "dataDate": "2026-07-16",
+        "date": "2026-07-15",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "诺基亚推出基于英伟达的AI-RAN平台，声称业界首个",
+        "displayTags": [],
+        "entityIds": [
+          "EN-2ab6d53e717a0e0d",
+          "EN-8d4321d936320802"
+        ]
+      },
+      {
+        "id": "EV-dfc634f28a70f423",
+        "dataDate": "2026-07-16",
+        "date": "2026-07-15",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "诺基亚与英伟达推出全球首个商用 AI-RAN 平台，可提升现有频谱效率",
+        "displayTags": [
+          {
+            "dimensionId": "industry",
+            "id": "telecommunications",
+            "dimensionName": "行业",
+            "name": "电信"
+          }
+        ],
+        "entityIds": [
+          "EN-2ab6d53e717a0e0d",
+          "EN-8d4321d936320802"
+        ]
+      },
+      {
+        "id": "EV-df5831ff5762432d",
+        "dataDate": "2026-06-23",
+        "date": "2026-06-22",
+        "eventType": "partnership",
+        "eventTypeLabel": "合作",
+        "eventGroup": "商业合作",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "谷歌云与诺基亚扩大合作，将 Gemini 模型融入电信网络智能运维平台",
+        "displayTags": [],
+        "entityIds": [
+          "EN-bbdefa2950f49882",
+          "EN-2ab6d53e717a0e0d"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-industry-telecommunications",
+      "name": "电信",
+      "nodeType": "industry",
+      "typeLabel": "行业",
+      "valueId": "telecommunications",
+      "eventIds": [
+        "EV-21c2e81a7c073e04",
+        "EV-cafe435ddd007821",
+        "EV-dfc634f28a70f423",
+        "EV-ec15684583d6f7a9"
+      ],
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-c70eca6b0f88f44d",
+        "EN-bbdefa2950f49882",
+        "EN-59ae856cd788d0f5",
+        "EN-8d4321d936320802",
+        "EN-0f3360879e746531",
+        "EN-e3b1bf3dab957ffe",
+        "EN-9700d41909cf810f",
+        "EN-2ab6d53e717a0e0d",
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [
+        "HW-ceb55d9bc637c1d3"
+      ],
+      "firstSeen": "2026-05-20",
+      "lastSeen": "2026-07-17"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}

@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T15:01:31.906Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 748,
+    "quarantinedEventCount": 32
+  },
+  "entity": {
+    "id": "EN-ae0facccf0a3723a",
+    "name": "Soul",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-ba28d2085f87b6f0"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-15",
+    "lastSeen": "2026-07-16",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [
+        "EV-ba28d2085f87b6f0"
+      ],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-ba28d2085f87b6f0",
+        "dataDate": "2026-07-16",
+        "date": "2026-07-15",
+        "eventType": "hardware_product",
+        "eventTypeLabel": "硬件产品",
+        "eventGroup": "AI 硬件",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "交友应用 Soul 将推出首款便携式 AI 智能硬件，搭载自研大模型 SoulX 亮相 WAIC 2026",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "ai_device",
+            "dimensionName": "产品形态",
+            "name": "AI 设备"
+          },
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          }
+        ],
+        "entityIds": [
+          "EN-ae0facccf0a3723a"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [
+    {
+      "id": "HW-ee4e70904c107cfc",
+      "eventId": "EV-ba28d2085f87b6f0",
+      "dataDate": "2026-07-16",
+      "date": "2026-07-15",
+      "title": "交友应用 Soul 将推出首款便携式 AI 智能硬件，搭载自研大模型 SoulX 亮相 WAIC 2026",
+      "hardwareType": "ai_device",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "未披露",
+      "supplier": "Soul",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/977/175.htm",
+      "sourceName": "IT之家（RSS）",
+      "sourceDate": "2026-07-15",
+      "entityIds": [
+        "EN-ae0facccf0a3723a"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "productVersion": "SITE-V4.2.0-entity-history",
+  "dataVersion": "SITE-V4.0-data-center",
+  "entityVersion": "ENTITY-V1.0",
+  "relationshipVersion": "RELATION-V2.0",
+  "generatedAt": "2026-07-17T15:01:31.906Z",
+  "currentDate": "2026-07-17",
+  "coverage": {
+    "startDate": "2026-01-20",
+    "endDate": "2026-07-17",
+    "distinctDataDays": 55
+  },
+  "counts": {
+    "events": 748,
+    "companies": 73,
+    "products": 13,
+    "people": 12,
+    "taxonomyNodes": 42,
+    "relationships": 21,
+    "fde": 62,
+    "hardware": 17
+  },
+  "paths": {
+    "eventsIndex": "data/data-center-v4/indexes/events.json",
+    "entitiesIndex": "data/data-center-v4/indexes/entities.json",
+    "fdeIndex": "data/data-center-v4/indexes/fde.json",
+    "hardwareIndex": "data/data-center-v4/indexes/hardware.json",
+    "eventsDetail": "data/data-center-v4/details/events.json",
+    "fdeDetail": "data/data-center-v4/details/fde.json",
+    "hardwareDetail": "data/data-center-v4/details/hardware.json",
+    "entityDetailPattern": "data/data-center-v4/entities/{id}.json",
+    "taxonomyDetailPattern": "data/data-center-v4/taxonomy/{id}.json"
+  }
+}

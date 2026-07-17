@@ -1,0 +1,559 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T15:01:31.906Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 748,
+    "quarantinedEventCount": 32
+  },
+  "node": {
+    "id": "TX-use_case-knowledge_search",
+    "name": "知识与搜索",
+    "nodeType": "use_case",
+    "typeLabel": "应用场景",
+    "valueId": "knowledge_search",
+    "eventIds": [
+      "EV-54e23045d3334e65",
+      "EV-702ed039940800fb",
+      "EV-f064e5f05c36c404",
+      "EV-297b647e3787f3d6"
+    ],
+    "entityIds": [
+      "EN-bbdefa2950f49882",
+      "EN-3f726694f178ed7a",
+      "EN-2086d0f715be4a4d",
+      "EN-82eaaba81d9dcc54"
+    ],
+    "fdeIds": [],
+    "hardwareIds": [],
+    "firstSeen": "2026-06-13",
+    "lastSeen": "2026-07-16"
+  },
+  "events": [
+    {
+      "id": "EV-54e23045d3334e65",
+      "dataDate": "2026-06-13",
+      "date": "2026-06-13",
+      "updatedDate": "2026-06-13",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Google 完成 1000 万美元 种子轮融资",
+      "originalTitle": "Onyx Raises $10M To Help Teams Find Knowledge Faster with",
+      "subject": "Onyx",
+      "action": "Raises",
+      "object": "$10M To Help Teams Find Knowledge Faster with",
+      "metrics": [
+        "$10M"
+      ],
+      "locations": [
+        "US"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "knowledge_search",
+            "dimensionName": "应用场景",
+            "name": "知识与搜索"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "knowledge_search",
+          "dimensionName": "应用场景",
+          "name": "知识与搜索"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "knowledge_search",
+          "dimensionName": "应用场景",
+          "name": "知识与搜索"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "entityIds": [
+        "EN-bbdefa2950f49882"
+      ],
+      "entityNames": [
+        "Google"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://globenewswire.com/news-release/2025/03/12/3041638/0/en/Onyx-Raises-10M-To-Help-Teams-Find-Knowledge-Faster-with-Open-Source-AI-Agents.html",
+      "publisher": "globenewswire.com"
+    },
+    {
+      "id": "EV-702ed039940800fb",
+      "dataDate": "2026-07-16",
+      "date": "2026-07-15",
+      "updatedDate": "2026-07-16",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "金山办公推出 WPS Comate AI 办公客户端",
+      "originalTitle": "",
+      "subject": "金山办公",
+      "action": "推出",
+      "object": "WPS Comate AI 办公客户端",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "knowledge_search",
+            "dimensionName": "应用场景",
+            "name": "知识与搜索"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "id": "knowledge_search",
+          "dimensionName": "应用场景",
+          "name": "知识与搜索"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "knowledge_search",
+          "dimensionName": "应用场景",
+          "name": "知识与搜索"
+        }
+      ],
+      "entityIds": [
+        "EN-3f726694f178ed7a"
+      ],
+      "entityNames": [
+        "Kingsoft Office"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/977/105.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-f064e5f05c36c404",
+      "dataDate": "2026-07-06",
+      "date": "2026-07-05",
+      "updatedDate": "2026-07-06",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "LlamaIndex 发布 legal-kb：基于 Index v2 的智能体检索参考应用",
+      "originalTitle": "",
+      "subject": "LlamaIndex",
+      "action": "发布",
+      "object": "legal-kb：基于 Index v2 的智能体检索参考应用",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "knowledge_search",
+            "dimensionName": "应用场景",
+            "name": "知识与搜索"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "knowledge_search",
+          "dimensionName": "应用场景",
+          "name": "知识与搜索"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "knowledge_search",
+          "dimensionName": "应用场景",
+          "name": "知识与搜索"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "entityIds": [
+        "EN-2086d0f715be4a4d"
+      ],
+      "entityNames": [
+        "LlamaIndex"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://marktechpost.com/2026/07/05/llamaindex-legal-kb-agentic-retrieval-over-index-v2-with-retrieve-find-read-and-grep-tools",
+      "publisher": "MarkTechPost（RSS）"
+    },
+    {
+      "id": "EV-297b647e3787f3d6",
+      "dataDate": "2026-06-14",
+      "date": "2026-06-13",
+      "updatedDate": "2026-06-14",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "华为发布 DevEco Code 鸿蒙开发 AI Agent 工具",
+      "originalTitle": "",
+      "subject": "华为",
+      "action": "发布",
+      "object": "DevEco Code 鸿蒙开发 AI Agent 工具",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "knowledge_search",
+            "dimensionName": "应用场景",
+            "name": "知识与搜索"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "knowledge_search",
+          "dimensionName": "应用场景",
+          "name": "知识与搜索"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "knowledge_search",
+          "dimensionName": "应用场景",
+          "name": "知识与搜索"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "entityIds": [
+        "EN-82eaaba81d9dcc54"
+      ],
+      "entityNames": [
+        "华为"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/963/943.htm",
+      "publisher": "IT之家（RSS）"
+    }
+  ],
+  "entities": [
+    {
+      "id": "EN-bbdefa2950f49882",
+      "name": "Google",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "谷歌"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-10c70ced68ccb31b",
+        "EV-d4d7b019ff0015df",
+        "EV-21c2e81a7c073e04",
+        "EV-54e23045d3334e65",
+        "EV-43b56d49df9a73a2",
+        "EV-6180de2e02597d9d",
+        "EV-968709fe29b77eba",
+        "EV-dbbe3fd637be213f",
+        "EV-4a162c41bb82f325",
+        "EV-9fc8a84b3d0797d1",
+        "EV-57105df2fcada2e5",
+        "EV-36a9e4e908249381",
+        "EV-ef6464cf7f764835",
+        "EV-b95539d17772a4ce",
+        "EV-df5831ff5762432d",
+        "EV-f949fd95df58d42d",
+        "EV-a9a3b5b56befe593",
+        "EV-f7e41493addd1104",
+        "EV-3398ae53a199be16",
+        "EV-d53cd33e8f541a65",
+        "EV-810e5c71956fccbc",
+        "EV-04efb4eecbb8125f",
+        "EV-0ca3a9830e25f56b",
+        "EV-6359c9f6c2609a38",
+        "EV-04ee2bc4ac888358",
+        "EV-c2d784ef0a5376f8",
+        "EV-302018f2e960a8bf",
+        "EV-aa962ef7ec9a5c50",
+        "EV-db1d74f0bfcc1b04",
+        "EV-f05783f745bc7c2c",
+        "EV-52508b70ccd2cc0b",
+        "EV-f9eebe4e3b9b667c",
+        "EV-c410d77c8d531e5f",
+        "EV-268250d426c1a4a0",
+        "EV-04873bbc8be8e70d",
+        "EV-2059f42c7b2aff44",
+        "EV-9fac0983ab657689",
+        "EV-4c0e7025692ab98c",
+        "EV-b8bba030747fd3b6",
+        "EV-8daf217ff024ac4a",
+        "EV-2298304e18dbf493",
+        "EV-89b644ff05e6b93b",
+        "EV-8fad966ecb9b1d31",
+        "EV-9c4b862020202f6c",
+        "EV-d8c69ed782b73a34",
+        "EV-c0f86afbefa2e0a6",
+        "EV-abf0990dcaceb1ce",
+        "EV-c60208ea9b51f47a",
+        "EV-c6359191a071b538",
+        "EV-b860d46fee913f27",
+        "EV-09d3ce5611881ed4",
+        "EV-c033ae6f9784d674",
+        "EV-28145c97a7237d6d",
+        "EV-e6771f58d7c2a050",
+        "EV-b8b39e635aa7511f",
+        "EV-54c329f4c8e4227b",
+        "EV-7808c274ce0aa0bf",
+        "EV-c3cbf5d7f860c693",
+        "EV-009105cbcf82a638",
+        "EV-b9a009b48d4cbf85",
+        "EV-b3809ff557361cc2",
+        "EV-bc71b0ddefa209a9",
+        "EV-a85fe927f20c2595",
+        "EV-b4f3dcac8cc230d9",
+        "EV-175af8c7b8146340",
+        "EV-d2d1834222ab32d3",
+        "EV-22b8d155ce027905",
+        "EV-d6f638da9e1d3b46",
+        "EV-0ad758b04b9b5313",
+        "EV-3ed6744b43d9b8df",
+        "EV-c08837795f9e16d2",
+        "EV-4a3cb762183581cd",
+        "EV-59933d63c4051085",
+        "EV-588cf9609e44edc9",
+        "EV-7fa23cf0102a8f92",
+        "EV-c28e0d02272537d8",
+        "EV-d31057c6f6ec28ba",
+        "EV-342799d4e68e7416",
+        "EV-a4f052325d0ef230",
+        "EV-ef823877347ff40f",
+        "EV-3e9a0d1be6de5096",
+        "EV-70fd0c4e482a646e",
+        "EV-8cd7665e40729256",
+        "EV-2d56dec8dfeb2b56",
+        "EV-6266c73d470e8aef",
+        "EV-ad269fada2269f35",
+        "EV-bce258f8f915ff5f"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
+        "TX-technology-computer_use",
+        "TX-use_case-robotics_automation",
+        "TX-technology-code_generation",
+        "TX-use_case-enterprise_operations",
+        "TX-use_case-software_development",
+        "TX-technology-long_context",
+        "TX-technology-mixture_of_experts",
+        "TX-industry-financial_services",
+        "TX-technology-on_device",
+        "TX-use_case-cybersecurity",
+        "TX-industry-retail_ecommerce",
+        "TX-technology-human_in_loop",
+        "TX-industry-telecommunications",
+        "TX-industry-technology",
+        "TX-technology-multimodal",
+        "TX-technology-retrieval_augmented_generation",
+        "TX-use_case-knowledge_search",
+        "TX-technology-embodied_ai",
+        "TX-technology-speech_audio",
+        "TX-technology-open_weights",
+        "TX-industry-media_entertainment",
+        "TX-technology-video_generation",
+        "TX-technology-tool_use",
+        "TX-technology-reasoning",
+        "TX-technology-fine_tuning"
+      ],
+      "relatedEntityIds": [
+        "EN-96eebba49dbbf422"
+      ],
+      "firstSeen": "2026-05-22",
+      "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "EN-3f726694f178ed7a",
+      "name": "Kingsoft Office",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "金山办公"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-385dc1ac09a211bd",
+        "EV-702ed039940800fb",
+        "EV-d2c1c077a2102f35",
+        "EV-4e47da5d7d18c1c4"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-use_case-knowledge_search"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-20",
+      "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "EN-2086d0f715be4a4d",
+      "name": "LlamaIndex",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-f064e5f05c36c404"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-use_case-knowledge_search"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-05",
+      "lastSeen": "2026-07-06"
+    },
+    {
+      "id": "EN-82eaaba81d9dcc54",
+      "name": "华为",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-297b647e3787f3d6"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-use_case-knowledge_search"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-13",
+      "lastSeen": "2026-06-14"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}

@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T15:01:31.906Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 748,
+    "quarantinedEventCount": 32
+  },
+  "entity": {
+    "id": "EN-f97e56489ceee4ba",
+    "name": "Thibault Sottiaux",
+    "entityType": "person_candidate",
+    "typeLabel": "人物",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "viewpoints"
+    ],
+    "eventIds": [],
+    "viewpointIds": [
+      "2077632589498913087",
+      "2077630111499882637",
+      "2077627035418239230"
+    ],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-16",
+    "lastSeen": "2026-07-16",
+    "handle": "thsottiaux",
+    "role": "Codex & ChatGPT OpenAI",
+    "organization": "",
+    "viewpointTags": [
+      "产品与创业",
+      "产品策略观点",
+      "AI 应用与平台",
+      "Agent",
+      "Agent 工作流观点",
+      "Agentic AI"
+    ],
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [],
+    "viewpoints": [
+      {
+        "id": "2077632589498913087",
+        "date": "2026-07-16",
+        "title": "几天来，我们在CODEX PLUS和PRO中没有5小时的限制。您认为有效管理每周限额中包含的使用量是更好还是更困难？如果我们要让它与众不同，在一个理想的世界里，它应该是什么样子？",
+        "sourceUrl": "https://x.com/thsottiaux/status/2077632589498913087"
+      },
+      {
+        "id": "2077630111499882637",
+        "date": "2026-07-16",
+        "title": "关于文件删除。我们调查了一些报告，其中GPT-5.6意外删除了文件。我们发现，在以下情况下最常发生这种情况： -启用了完全访问模式，并且在没有沙盒保护的情况下运行codex ，包括没有启用自动审核-模型尝试覆盖$ HOME env var以定义临时目录。-模特犯了一个诚实的错误，错误地删除了$ HOME。 这当然不是我们希望系统的行为方式，即使用户在没有沙箱保护的情况下以完全访问模式操作模型，或者没有使用自动审核来检查此类高风险操作并拒绝它们。我们正在采取措施来降低这种风险，包括更新开发人员消息、引导更多用户转向更安全的权限模式以及添加额外的线束保护措施。 尽管这种情况极少发生，但我们将在未来几天分享详细的验尸报告，详细介绍我们正在采取哪些措施来进一步降低风险。",
+        "sourceUrl": "https://x.com/thsottiaux/status/2077630111499882637"
+      },
+      {
+        "id": "2077627035418239230",
+        "date": "2026-07-16",
+        "title": "现在我们合并了ChatGPT和Codex ，接下来我们应该合并什么？双重或无动于衷的动作是什么。",
+        "sourceUrl": "https://x.com/thsottiaux/status/2077627035418239230"
+      }
+    ]
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

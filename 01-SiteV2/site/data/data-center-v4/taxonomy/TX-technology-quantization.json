@@ -1,0 +1,139 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T15:01:31.906Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 748,
+    "quarantinedEventCount": 32
+  },
+  "node": {
+    "id": "TX-technology-quantization",
+    "name": "模型量化",
+    "nodeType": "technology",
+    "typeLabel": "技术",
+    "valueId": "quantization",
+    "eventIds": [
+      "EV-de54542fd7e2282c"
+    ],
+    "entityIds": [
+      "EN-9c8ae69b84f21a2e"
+    ],
+    "fdeIds": [],
+    "hardwareIds": [],
+    "firstSeen": "2026-07-14",
+    "lastSeen": "2026-07-15"
+  },
+  "events": [
+    {
+      "id": "EV-de54542fd7e2282c",
+      "dataDate": "2026-07-15",
+      "date": "2026-07-14",
+      "updatedDate": "2026-07-15",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "腾讯混元发布 1bit 与 4bit 量化版 Hy3 模型，旗舰 AI 模型可单卡本地运行",
+      "originalTitle": "",
+      "subject": "腾讯混元",
+      "action": "发布 1bit 与 4bit 量化版 Hy3 模型，旗舰 AI 模型",
+      "object": "可单卡本地运行",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "quantization",
+          "name": "模型量化"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "quantization",
+          "name": "模型量化"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "quantization",
+          "name": "模型量化"
+        }
+      ],
+      "entityIds": [
+        "EN-9c8ae69b84f21a2e"
+      ],
+      "entityNames": [
+        "Tencent"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/976/642.htm",
+      "publisher": "IT之家（RSS）"
+    }
+  ],
+  "entities": [
+    {
+      "id": "EN-9c8ae69b84f21a2e",
+      "name": "Tencent",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "腾讯"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-ed65f3187aa6aa40",
+        "EV-427081ec574b43bb",
+        "EV-e0b0ab8dfcab20a5",
+        "EV-b0d008460e8f75fe",
+        "EV-f89d14f52c223a04",
+        "EV-242b4e0488296c1d",
+        "EV-c01b11eed792b3e8",
+        "EV-de54542fd7e2282c",
+        "EV-6fea710316ebda18",
+        "EV-5e5294fe06002bc1",
+        "EV-760d117b4d82fc97",
+        "EV-57e6392fe3bb69cd",
+        "EV-3526144877bc9400",
+        "EV-a498b12f3fa2197e",
+        "EV-c68a8af069f3ed1d",
+        "EV-6a6ff349579765ad",
+        "EV-6b7917bd7edd4bde"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-multimodal",
+        "TX-technology-quantization"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-05-18",
+      "lastSeen": "2026-07-15"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}

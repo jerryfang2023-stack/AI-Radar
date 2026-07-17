@@ -1,0 +1,250 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T15:01:31.906Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 748,
+    "quarantinedEventCount": 32
+  },
+  "node": {
+    "id": "TX-technology-image_generation",
+    "name": "图像生成",
+    "nodeType": "technology",
+    "typeLabel": "技术",
+    "valueId": "image_generation",
+    "eventIds": [
+      "EV-dce5de62b2e4b752",
+      "EV-8f6cf12525556d0e"
+    ],
+    "entityIds": [
+      "EN-ea3bd73e2b506e00"
+    ],
+    "fdeIds": [],
+    "hardwareIds": [],
+    "firstSeen": "2026-07-09",
+    "lastSeen": "2026-07-13"
+  },
+  "events": [
+    {
+      "id": "EV-dce5de62b2e4b752",
+      "dataDate": "2026-07-13",
+      "date": "2026-07-11",
+      "updatedDate": "2026-07-13",
+      "eventType": "service_change",
+      "eventTypeLabel": "服务变更",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Meta 在用户反弹后下线 Instagram 争议 AI 图片生成功能",
+      "originalTitle": "Meta removes controversial AI feature on Instagram after backlash",
+      "subject": "Meta",
+      "action": "removes",
+      "object": "controversial AI feature on Instagram after backlash",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "image_generation",
+          "name": "图像生成"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "image_generation",
+          "name": "图像生成"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "image_generation",
+          "name": "图像生成"
+        }
+      ],
+      "entityIds": [
+        "EN-ea3bd73e2b506e00"
+      ],
+      "entityNames": [
+        "Meta"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/07/10/meta-removes-controversial-ai-feature-on-instagram-after-backlash",
+      "publisher": "TechCrunch AI"
+    },
+    {
+      "id": "EV-8f6cf12525556d0e",
+      "dataDate": "2026-07-09",
+      "date": "2026-07-09",
+      "updatedDate": "2026-07-09",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Meta 发布 a new AI generator",
+      "originalTitle": "Meta just launched a new AI generator, Muse Image, and users are already pushing back over use of their photos",
+      "subject": "Meta just",
+      "action": "launched",
+      "object": "a new AI generator, Muse Image, and users are already pushing back over use of their photos",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "image_generation",
+          "name": "图像生成"
+        }
+      ],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "ai_application",
+            "dimensionName": "产品形态",
+            "name": "AI 应用"
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "image_generation",
+          "name": "图像生成"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "ai_application",
+          "dimensionName": "产品形态",
+          "name": "AI 应用"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "ai_application",
+          "dimensionName": "产品形态",
+          "name": "AI 应用"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "image_generation",
+          "name": "图像生成"
+        }
+      ],
+      "entityIds": [
+        "EN-ea3bd73e2b506e00"
+      ],
+      "entityNames": [
+        "Meta"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/07/07/meta-rolls-out-muse-a-new-ai-image-generator",
+      "publisher": "TechCrunch AI"
+    }
+  ],
+  "entities": [
+    {
+      "id": "EN-ea3bd73e2b506e00",
+      "name": "Meta",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-02882e6f5e1902c6",
+        "EV-5df885dbd24b6d00",
+        "EV-427081ec574b43bb",
+        "EV-7f77e6a2d1698307",
+        "EV-b39d759a11086d41",
+        "EV-968709fe29b77eba",
+        "EV-724fc985c22215f3",
+        "EV-f64345af2affb07d",
+        "EV-1f842e1dff69bb87",
+        "EV-e58bd372c139073c",
+        "EV-cf176636839e45be",
+        "EV-9496f90f3e808992",
+        "EV-dce5de62b2e4b752",
+        "EV-ebe02c213368afae",
+        "EV-e42e55d1e11a2ba2",
+        "EV-f9eebe4e3b9b667c",
+        "EV-8f6cf12525556d0e",
+        "EV-40390136762c64d3",
+        "EV-07a5533c18e5a74e",
+        "EV-4a8dce3c9fec1bd3",
+        "EV-04873bbc8be8e70d",
+        "EV-4c0e7025692ab98c",
+        "EV-f34eec5df7f5bcb7",
+        "EV-d8f0f89fed45ae5b",
+        "EV-b78311001509be2c",
+        "EV-a4cd74ae97317e4e",
+        "EV-41e534c846124691",
+        "EV-7808c274ce0aa0bf",
+        "EV-c98d4ee7764d51b2",
+        "EV-01e414a25347cfd9",
+        "EV-ef823877347ff40f",
+        "EV-04cf95633b564f9a",
+        "EV-02b07069713d9a1c",
+        "EV-322796d9761a0824",
+        "EV-2d56dec8dfeb2b56",
+        "EV-2ca9d0a3ca53c3bf",
+        "EV-8fcecabca2e92b40"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
+        "TX-technology-computer_use",
+        "TX-technology-code_generation",
+        "TX-industry-healthcare_life_sciences",
+        "TX-use_case-software_development",
+        "TX-technology-long_context",
+        "TX-technology-multimodal",
+        "TX-technology-speech_audio",
+        "TX-industry-media_entertainment",
+        "TX-technology-tool_use",
+        "TX-technology-reasoning",
+        "TX-technology-guardrails_safety",
+        "TX-technology-image_generation"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-05-22",
+      "lastSeen": "2026-07-17"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}

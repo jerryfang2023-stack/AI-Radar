@@ -34,7 +34,7 @@
 
   const viewConfig = {
     events: { title: "商业事件", description: "AI 行业商业事件数据库", detail: "event", dataKey: "events", placeholder: "搜索商业事件标题、公司、产品或关键词" },
-    index: { title: "实体索引", description: "公司、机构、模型、产品与服务", placeholder: "搜索公司、机构、模型、产品或服务" },
+    index: { title: "实体索引", description: "公司、产品、人物、技术、场景与行业", placeholder: "搜索实体、技术、场景或行业" },
     fde: { title: "FDE 实施", description: "企业 AI 实施记录", detail: "fde", dataKey: "fde", placeholder: "搜索客户、服务商、行业或场景" },
     hardware: { title: "AI 硬件", description: "硬件产品、供应与部署记录", detail: "hardware", dataKey: "hardware", placeholder: "搜索硬件、供应方或客户" },
     community: { title: "社群情报", description: "社群来源的一线材料", detail: "community", dataKey: "community", placeholder: "搜索标题、正文关键词或作者" },
@@ -64,6 +64,7 @@
   const viewpointPageSize = 16;
   const viewpointState = {
     payload: null,
+    entityIndex: null,
     mode: params.get("mode") === "people" ? "people" : "feed",
     person: params.get("person") || "",
     page: Math.max(Number(params.get("page") || 1), 1),
@@ -107,6 +108,9 @@
   };
 
   const detailLink = (targetView, kind, id) => viewLink(targetView, { detail: kind, id });
+  const splitDataUrl = (section, id = "") => id
+    ? `data/data-center-v4/${section}/${encodeURIComponent(id)}.json`
+    : `data/data-center-v4/${section}.json`;
   const normalizeTags = (tags = []) => tags.map((tag) => typeof tag === "string" ? { id: tag, name: tag } : tag).filter((tag) => tag?.name);
   const taxonomyToken = (tag = {}) => tag.dimensionId && tag.id ? `${tag.dimensionId}:${tag.id}` : tag.id || tag.name || "";
   const tagLink = (tag) => {
@@ -163,19 +167,35 @@
 
   function entityIndexItems(data) {
     return [
-      ...data.companies.map((item) => ({
+      ...(data.companies || []).map((item) => ({
         ...item,
         indexType: "company",
         indexKind: "公司 / 机构",
-        indexSub: item.aliases.join("、"),
-        detailKind: "company"
+        indexSub: (item.aliases || []).join("、"),
+        detailKind: "entity"
       })),
-      ...data.products.map((item) => ({
+      ...(data.products || []).map((item) => ({
         ...item,
         indexType: "product",
         indexKind: item.type || "产品 / 模型",
-        indexSub: item.companyNames.join("、") || "所属公司未披露",
-        detailKind: "product"
+        indexSub: (item.companyNames || []).join("、") || "所属公司未披露",
+        detailKind: "entity"
+      })),
+      ...(data.people || []).map((item) => ({
+        ...item,
+        indexType: "person",
+        indexKind: "人物",
+        indexSub: [item.organization, item.role].filter(Boolean).join(" · "),
+        detailKind: "entity"
+      })),
+      ...(data.taxonomyNodes || []).map((item) => ({
+        ...item,
+        aliases: [],
+        tags: [],
+        indexType: item.nodeType === "technology" ? "technology" : "context",
+        indexKind: item.nodeType === "technology" ? "AI 技术" : item.nodeType === "use_case" ? "使用场景" : "行业",
+        indexSub: `${item.eventIds.length} 条关联事件`,
+        detailKind: "taxonomy"
       }))
     ].sort((a, b) => a.name.localeCompare(b.name, "zh-CN") || a.indexType.localeCompare(b.indexType));
   }
@@ -238,7 +258,7 @@
       items = sortEventsForDisplay(items);
     } else if (targetView === "index") {
       items = items.filter((item) => (
-        matchesQuery(item, ["name", "aliases", "companyNames", "type", "tags"], query)
+        matchesQuery(item, ["name", "aliases", "companyNames", "type", "indexKind", "indexSub", "tags"], query)
         && (!type || item.indexType === type)
         && (!tag || normalizeTags(item.tags).some((itemTag) => itemTag.name === tag || itemTag.id === tag))
       ));
@@ -351,13 +371,16 @@
     const tag = params.get("tag") || "";
     const selectedType = params.get("type") || "";
     const matching = entityIndexItems(data).filter((item) => (
-      matchesQuery(item, ["name", "aliases", "companyNames", "type", "tags"], query)
+      matchesQuery(item, ["name", "aliases", "companyNames", "type", "indexKind", "indexSub", "tags"], query)
       && (!tag || normalizeTags(item.tags).some((itemTag) => itemTag.name === tag || itemTag.id === tag))
     ));
     const choices = [
       { value: "", label: "全部", count: matching.length },
       { value: "company", label: "公司与机构", count: matching.filter((item) => item.indexType === "company").length },
-      { value: "product", label: "产品与模型", count: matching.filter((item) => item.indexType === "product").length }
+      { value: "product", label: "产品模型服务", count: matching.filter((item) => item.indexType === "product").length },
+      { value: "person", label: "人物", count: matching.filter((item) => item.indexType === "person").length },
+      { value: "technology", label: "AI 技术", count: matching.filter((item) => item.indexType === "technology").length },
+      { value: "context", label: "场景与行业", count: matching.filter((item) => item.indexType === "context").length }
     ];
     return `
       <nav class="dc-index-switch" aria-label="实体索引类型">
@@ -998,8 +1021,10 @@
     return [...grouped.entries()].map(([key, remarks]) => {
       const builder = builderMap.get(key) || {};
       const latest = remarks[0];
+      const entity = (viewpointState.entityIndex?.people || []).find((item) => [item.handle, item.name].filter(Boolean).some((value) => viewpointTidy(value).toLocaleLowerCase() === key.toLocaleLowerCase()));
       return {
         key,
+        entityId: entity?.id || "",
         name: latest?.name || builder.name || key,
         handle: latest?.handle || builder.handle || key,
         role: latest?.role || builder.role || "角色未披露",
@@ -1156,7 +1181,10 @@
           <div><dt>观点</dt><dd>${person.count}</dd></div>
           <div><dt>最近</dt><dd>${escapeHtml(viewpointDateLabel(person.latestDate))}</dd></div>
         </dl>
-        <a class="dc-viewpoint-person-link" href="${escapeHtml(viewpointUrl({ person: person.key, mode: "", page: "" }, ["mode", "page"]))}">查看时间线</a>
+        <div class="dc-viewpoint-person-actions">
+          <a class="dc-viewpoint-person-link" href="${escapeHtml(viewpointUrl({ person: person.key, mode: "", page: "" }, ["mode", "page"]))}">查看时间线</a>
+          ${person.entityId ? `<a class="dc-viewpoint-person-link is-secondary" href="${escapeHtml(detailLink("index", "entity", person.entityId))}">实体档案</a>` : ""}
+        </div>
       </article>
     `;
   }
@@ -1215,6 +1243,7 @@
           <span>${escapeHtml(person.handle ? `@${person.handle}` : "")}</span>
           <p>${escapeHtml(person.role)}</p>
           <div class="dc-viewpoint-tags">${person.topics.map((tag) => `<span>${escapeHtml(tag)}</span>`).join("")}</div>
+          ${person.entityId ? `<a class="dc-viewpoint-profile-entity" href="${escapeHtml(detailLink("index", "entity", person.entityId))}">打开统一人物档案</a>` : ""}
         </div>
         <dl>
           <div><dt>观点记录</dt><dd>${filtered.length}</dd></div>
@@ -1264,7 +1293,10 @@
   }
 
   async function renderViewpointsPage() {
-    viewpointState.payload = await communityFetchJson("data/first-line-viewpoints-v4.json");
+    [viewpointState.payload, viewpointState.entityIndex] = await Promise.all([
+      communityFetchJson("data/first-line-viewpoints-v4.json"),
+      communityFetchJson(splitDataUrl("indexes/entities")).catch(() => ({ people: [] }))
+    ]);
     const items = viewpointFilteredRemarks();
     const latestDate = viewpointRemarks().map(viewpointDate).filter(Boolean).sort().at(-1) || "";
     if (viewpointState.person) {
@@ -1420,6 +1452,96 @@
       </div>
       ${fde.length ? `<section class="dc-related-section"><h2>FDE 实施</h2>${relatedRows(fde, "fde")}</section>` : ""}
     `;
+  }
+
+  const relationshipLabels = {
+    publishes: "发布",
+    partners_with: "商业合作",
+    acquires: "收购",
+    serves: "服务",
+    deployed_in: "部署于",
+    supplies_hardware_to: "供应硬件"
+  };
+
+  function entityProfileDetail(payload) {
+    const entity = payload.entity;
+    const relatedById = new Map((payload.relatedEntities || []).map((item) => [item.id, item]));
+    const timeline = entity.timeline || [];
+    const relationRows = (payload.relationships || []).map((relation) => {
+      const otherId = relation.subject_ref === entity.id ? relation.object_ref : relation.subject_ref;
+      const other = relatedById.get(otherId);
+      const target = other
+        ? `<a href="${escapeHtml(detailLink("index", "entity", other.id))}">${escapeHtml(other.name)}</a>`
+        : relation.object_type === "taxonomy"
+          ? `<a href="${escapeHtml(detailLink("index", "taxonomy", relation.object_ref))}">${escapeHtml((payload.taxonomyNodes || []).find((item) => item.id === relation.object_ref)?.name || relation.object_ref)}</a>`
+          : escapeHtml(otherId);
+      return `<li><span>${escapeHtml(relationshipLabels[relation.predicate] || relation.predicate)}</span>${target}</li>`;
+    });
+    const aliases = (entity.aliases || []).join("、");
+    const viewpoints = entity.viewpoints || [];
+    return `
+      ${breadcrumb("index", entity.name)}
+      <header class="dc-detail-head dc-entity-head">
+        <h1>${escapeHtml(entity.name)}</h1>
+        <div class="dc-detail-meta">
+          <span>${escapeHtml(entity.typeLabel)}</span>
+          ${entity.firstSeen ? `<span>${escapeHtml(entity.firstSeen)} — ${escapeHtml(entity.lastSeen || entity.firstSeen)}</span>` : ""}
+        </div>
+      </header>
+      <div class="dc-detail-grid">
+        <article class="dc-detail-main">
+          <section class="dc-detail-section">
+            <h2>历史时间线</h2>
+            ${timeline.length ? relatedRows(timeline, "events", timeline.length) : '<p class="dc-prose">当前没有正式商业事件记录。</p>'}
+          </section>
+        </article>
+        <aside class="dc-detail-side">
+          <section class="dc-side-block"><h2>基本信息</h2><dl class="dc-facts">
+            ${fact("类型", entity.typeLabel)}
+            ${aliases ? fact("别名", aliases) : ""}
+            ${entity.handle ? fact("账号", `@${entity.handle}`) : ""}
+            ${entity.role ? fact("公开角色", entity.role) : ""}
+            ${entity.organization ? fact("公开机构", entity.organization) : ""}
+          </dl></section>
+          ${relationRows.length ? `<section class="dc-side-block"><h2>事实关系</h2><ul class="dc-entity-relations">${relationRows.join("")}</ul></section>` : ""}
+          ${(payload.taxonomyNodes || []).length ? `<section class="dc-side-block"><h2>关联分类</h2><div class="dc-side-list">${payload.taxonomyNodes.map((node) => `<a href="${escapeHtml(detailLink("index", "taxonomy", node.id))}">${escapeHtml(node.name)}</a>`).join("")}</div></section>` : ""}
+        </aside>
+      </div>
+      ${(payload.fde || []).length ? `<section class="dc-related-section"><h2>FDE 实施</h2>${relatedRows(payload.fde, "fde")}</section>` : ""}
+      ${(payload.hardware || []).length ? `<section class="dc-related-section"><h2>AI 硬件</h2>${relatedRows(payload.hardware, "hardware")}</section>` : ""}
+      ${viewpoints.length ? `<section class="dc-related-section dc-entity-viewpoints"><h2>一线观点</h2><div class="dc-list">${viewpoints.map((item) => `<div class="dc-list-row"><span class="dc-row-kind">${escapeHtml(item.date)}</span><span class="dc-row-title">${escapeHtml(item.title)}</span></div>`).join("")}</div></section>` : ""}
+    `;
+  }
+
+  function taxonomyNodeDetail(payload) {
+    const node = payload.node;
+    const entities = payload.entities || [];
+    return `
+      ${breadcrumb("index", node.name)}
+      <header class="dc-detail-head dc-entity-head">
+        <h1>${escapeHtml(node.name)}</h1>
+        <div class="dc-detail-meta"><span>${escapeHtml(node.typeLabel)}</span><span>${escapeHtml(node.firstSeen)} — ${escapeHtml(node.lastSeen)}</span></div>
+      </header>
+      <div class="dc-detail-grid">
+        <article class="dc-detail-main"><section class="dc-detail-section"><h2>相关事件</h2>${relatedRows(payload.events || [], "events", (payload.events || []).length)}</section></article>
+        <aside class="dc-detail-side">
+          ${entities.length ? `<section class="dc-side-block"><h2>相关实体</h2><div class="dc-side-list">${entities.slice(0, 30).map((item) => `<a href="${escapeHtml(detailLink("index", "entity", item.id))}">${escapeHtml(item.name)}</a>`).join("")}</div></section>` : ""}
+        </aside>
+      </div>
+      ${(payload.fde || []).length ? `<section class="dc-related-section"><h2>FDE 实施</h2>${relatedRows(payload.fde, "fde")}</section>` : ""}
+      ${(payload.hardware || []).length ? `<section class="dc-related-section"><h2>AI 硬件</h2>${relatedRows(payload.hardware, "hardware")}</section>` : ""}
+    `;
+  }
+
+  async function renderSplitEntityDetail(kind, id) {
+    let resolvedId = id;
+    if ((kind === "company" || kind === "product") && /^PD-/u.test(id)) {
+      const indexData = await communityFetchJson(splitDataUrl("indexes/entities"));
+      resolvedId = (indexData.products || []).find((item) => (item.legacyIds || []).includes(id))?.id || id;
+    }
+    const section = kind === "taxonomy" ? "taxonomy" : "entities";
+    const payload = await communityFetchJson(splitDataUrl(section, resolvedId));
+    root.innerHTML = kind === "taxonomy" ? taxonomyNodeDetail(payload) : entityProfileDetail(payload);
   }
 
   function fdeDetail(data, item) {
@@ -1585,6 +1707,26 @@
     });
   }
 
+  async function loadColumnData(targetView) {
+    const detail = params.get("detail");
+    if (targetView === "events" && detail === "event") {
+      const [eventData, entityData, fdeData, hardwareData] = await Promise.all([
+        communityFetchJson(splitDataUrl("details/events")),
+        communityFetchJson(splitDataUrl("indexes/entities")),
+        communityFetchJson(splitDataUrl("indexes/fde")),
+        communityFetchJson(splitDataUrl("indexes/hardware"))
+      ]);
+      return { ...eventData, ...entityData, ...fdeData, ...hardwareData, community: [], viewpoints: [] };
+    }
+    if (targetView === "fde" && detail === "fde") return { ...(await communityFetchJson(splitDataUrl("details/fde"))), companies: [], products: [], hardware: [], community: [], viewpoints: [] };
+    if (targetView === "hardware" && detail === "hardware") return { ...(await communityFetchJson(splitDataUrl("details/hardware"))), companies: [], products: [], fde: [], community: [], viewpoints: [] };
+    if (targetView === "events" && !detail) return { ...(await communityFetchJson(splitDataUrl("indexes/events"))), companies: [], products: [], people: [], taxonomyNodes: [], fde: [], hardware: [], community: [], viewpoints: [] };
+    if (targetView === "index" && !detail) return { ...(await communityFetchJson(splitDataUrl("indexes/entities"))), events: [], fde: [], hardware: [], community: [], viewpoints: [] };
+    if (targetView === "fde" && !detail) return { ...(await communityFetchJson(splitDataUrl("indexes/fde"))), events: [], companies: [], products: [], people: [], taxonomyNodes: [], hardware: [], community: [], viewpoints: [] };
+    if (targetView === "hardware" && !detail) return { ...(await communityFetchJson(splitDataUrl("indexes/hardware"))), events: [], companies: [], products: [], people: [], taxonomyNodes: [], fde: [], community: [], viewpoints: [] };
+    return communityFetchJson("data/data-center-v4-frontstage.json");
+  }
+
   async function start() {
     setActiveNavigation();
     try {
@@ -1600,9 +1742,14 @@
         document.title = `${viewpointState.person ? "人物观点时间线" : viewpointState.mode === "people" ? "人物索引" : "一线观点"}｜观澜 AI`;
         return;
       }
-      const response = await fetch("data/data-center-v4-frontstage.json", { cache: "no-store" });
-      if (!response.ok) throw new Error(`HTTP ${response.status}`);
-      const data = await response.json();
+      if (view === "index" && ["entity", "taxonomy", "company", "product"].includes(params.get("detail"))) {
+        const detailKind = params.get("detail");
+        await renderSplitEntityDetail(detailKind, params.get("id") || "");
+        loading.hidden = true;
+        document.title = `${detailKind === "taxonomy" ? "分类档案" : "实体档案"}｜观澜 AI`;
+        return;
+      }
+      const data = await loadColumnData(view);
       loading.hidden = true;
 
       if (view === "tag") renderTagPage(data);

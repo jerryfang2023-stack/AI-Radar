@@ -18,14 +18,14 @@ This file is the current version baseline. Closeout files prove what happened; t
 
 | Field | Value |
 |---|---|
-| Current version | V4.1.0-unified-frontstage |
-| Version name | WaveSight Unified V4 Frontstage |
+| Current version | V4.2.0-entity-history |
+| Version name | WaveSight Entity History |
 | Version layer | Minor |
 | Release date | 2026-07-17 |
-| Last modified at | 2026-07-17T10:30:00+08:00 |
-| Product version | V4.1 |
+| Last modified at | 2026-07-17T22:45:00+08:00 |
+| Product version | V4.2 |
 | Data center version | SITE-V4.0-data-center |
-| Main website version | SITE-V4.1.0-unified-frontstage |
+| Main website version | SITE-V4.2.0-entity-history |
 | Business Signals column version | BSIG-V2.2.0-pipeline-stage-ownership |
 | Tag taxonomy version | TAG-V4.0 |
 | First-Line Viewpoints column version | FLV-V1.0.2-supervision-idempotency |
@@ -35,19 +35,23 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Industry Reports column version | IMAP-V2.1.0-v4-unified-frontstage |
 | Data Center Raw contract | RAW-V3.0 |
 | Canonical event contract | EVENT-V1.0 |
+| Entity history contract | ENTITY-V1.0 |
+| Factual relationship contract | RELATION-V2.0 |
 | Legacy Business Signals contract | V3.3.6.3-business-source-artifact-aggregation |
 | Weekly Report content source | `01-SiteV2/content/08-report/` |
 | Monthly Report content source | `01-SiteV2/content/08-report/monthly/` |
 | Operations backend version | OPS-V1.2.3-content-factory-cleanout |
 | Skill Store version | v1.6.1 unified V4 report-page generation |
-| Git tag | `v4.1.0-unified-frontstage` |
+| Git tag | `v4.2.0-entity-history` |
 | Current entries | Data Center / Industry Reports; V3 column URLs redirect into V4; Dashboard retained as backend |
 
 ## Current Product Baseline
 
 - WaveSight AI is now an AI industry data center. It produces source-traceable structured facts, not decisions, recommendations, commercial judgments, or education.
 - The canonical chain is SourceArtifact -> RawDocument -> Claim / Entity -> CanonicalEvent -> FDE / hardware projections -> data service.
-- SITE-V4.1.0 is the only public page system. Data Center and Industry Reports share the V4 logo header and sidebar, including weekly and monthly report details.
+- SITE-V4.2.0 is the only public page and entity-history system. It keeps the V4 logo header and sidebar while adding stable entity profiles, cross-day timelines, factual relationship records, and split frontstage data loading.
+- ENTITY-V1.0 formalizes companies/organizations, products/models/services, and people with stable `EN-*` IDs. Technology, use case, and industry remain `TX-*` classification nodes.
+- RELATION-V2.0 accepts only verified typed endpoints with an accepted event, Claim references, and SourceArtifact references; no Tag co-occurrence edges are allowed.
 - `v3-data-observation.html`, `follow-builders.html`, `community-intelligence.html`, and `reports.html` are compatibility redirects into V4.
 - Business Signals continues internally as a Raw / Pool / Card / Relationship Graph / Trend Candidate compatibility chain, but it is not a public page.
 - Business Signals is versioned as `BSIG-V2.2.0-pipeline-stage-ownership` in this release and remains an internal compatibility chain. Business `formal_tags` only contains track / function / scenario / customer / evidence; source type, market region, and trend state are structured metadata; `opportunity_signals` remains the only Industry Reports opportunity-map input. Its internal Card projection retains qualified Raw / Pool business signals for compatibility consumers, keeps `business-signals-gate-v3.json` as the compatibility release gate, separates Card/editorial gates from V4 factual publication, judges Card eligibility from original-source evidence rather than discovery channel, and requires Chinese source-title translations during Raw/Card ingestion.
@@ -150,6 +154,7 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Freeze Point | Pages | Date | Updated at | Version | Must Not Return | Gates |
 |---|---|---|---|---|---|---|
+| `SITE-V4.2.0-freeze-entity-history-20260717` | Data Center Entity Index / entity details / taxonomy details / split data service | 2026-07-17 | 2026-07-17T22:45:00+08:00 | SITE-V4.2.0-entity-history / ENTITY-V1.0 / RELATION-V2.0 | unstable page-only product IDs; separate Company/Product sidebar entries; Tag-co-occurrence relationships; candidate endpoints in formal relations; global relationship graph; full compatibility payload as the preferred list fetch; historical records invented to fill source gaps | entity schema + relationship integrity gate + six-month backfill audit + Data Center tests + desktop/mobile smoke + GitHub Pages live verification |
 | `SITE-V4.1.0-freeze-unified-frontstage-20260717` | Data Center / Industry Reports / weekly and monthly details / compatibility redirects | 2026-07-17 | 2026-07-17T10:30:00+08:00 | SITE-V4.1.0-unified-frontstage / IMAP-V2.1.0-v4-unified-frontstage | V3 top navigation, V3 page CSS/JS, public fetches of `v3-data-observation-desk.json`, V3 column content returning at compatibility URLs, report detail pages detached from the V4 sidebar | Data Center tests + Industry Reports projection tests + frontstage regression + desktop/mobile visual smoke + GitHub Pages live verification |
 | `TAG-V2.0.0-freeze-semantic-boundaries-20260711` | Business Signals / Reports Center / First-Line Viewpoints / Community Intelligence | 2026-07-11 | 2026-07-11T18:00:00+08:00 | TAG-V2.0.0-semantic-boundaries | source / region / stage values returning to `formal_tags`; `customer-enterprise` used as a default; generic Agent tags added beside specific tracks; First-Line `formalTags` mixed with Business Signals; opportunity maps derived from tags | tag quality gate + tag audit + site data build + frontstage regression |
 | `SITE-V3.4.4-freeze-ai-hardware-lens-20260706` | Business Signals / AI Hardware lens | 2026-07-06 | 2026-07-06T18:21:08+08:00 | SITE-V3.4.4 / BSIG-V2.1.0-ai-hardware-lens | AI hardware becoming a fourth formal Card type; AI hardware source-only items entering the main Card mix without Card evidence gates; social/profile/forum-only hardware mentions, broad market lists, and search-query artifacts displayed as high-value lens items; `query_theme` alone determining funding classification; main-site or Business Signals column version drift | keyword source-only hardware run + site data build + Business frontstage gate + syntax checks + skill registry/audit |
@@ -193,7 +198,8 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Version | Updated at | Summary | Current Status |
 |---|---|---|---|
-| SITE-V4.1.0 / IMAP-V2.1.0-v4-unified-frontstage | 2026-07-17T10:30:00+08:00 | Makes the V4 Data Center / Application Center shell the only public page system, moves legacy column URLs to redirects, migrates all report details to the V4 sidebar, and isolates Industry Reports behind a dedicated application projection. | current |
+| SITE-V4.2.0 / ENTITY-V1.0 / RELATION-V2.0 | 2026-07-17T22:45:00+08:00 | Adds stable company/product/person profiles, technology/use-case/industry nodes, source-backed typed relationships, cross-day factual timelines, split index/detail payloads, and a six-month accepted-history reprojection with explicit coverage gaps. | current |
+| SITE-V4.1.0 / IMAP-V2.1.0-v4-unified-frontstage | 2026-07-17T10:30:00+08:00 | Makes the V4 Data Center / Application Center shell the only public page system, moves legacy column URLs to redirects, migrates all report details to the V4 sidebar, and isolates Industry Reports behind a dedicated application projection. | upgraded |
 | TAG-V2.0.0-semantic-boundaries | 2026-07-11T18:00:00+08:00 | Rebuilds the taxonomy around five Business Signal semantic groups, moves source / region / trend state to structured metadata, separates First-Line column tags, removes default enterprise and stale lifecycle tags, and adds migration plus contract gates. | current |
 | SITE-V3.4.5 / BSIG-V2.2.0-pipeline-stage-ownership | 2026-07-11T14:15:02+08:00 | Refactors Business Signals into evidence supply, Card quality, frontstage contract, and publication stages; removes duplicate collection and retired volume/provider blockers; and classifies publication waiting separately from data-production failure. | internal compatibility |
 | SITE-V3.4.5 / BSIG-V2.1.4-raw-card-rule-cleanout | 2026-07-09T18:23:50+08:00 | Removes retired Raw-to-Card QC/current-rule surfaces, replaces lingering Top10/Core Pool/Pool-only wording with the unified Raw-first Card set contract, and clarifies that source-title translation gaps fail in Raw/Card ingestion or the unified pre-publication gate instead of being hidden or rewritten by the frontstage selector. | upgraded |

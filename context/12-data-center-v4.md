@@ -21,6 +21,7 @@ SourceArtifact
 -> RawDocument
 -> Claim / Entity
 -> CanonicalEvent
+-> Entity Registry / Entity Profile / RELATION-V2
 -> FDE / Hardware projections
 -> JSON / JSONL / DuckDB
 -> downstream applications
@@ -32,11 +33,15 @@ Raw snapshots and exact Claim spans are the evidence layer. CanonicalEvent is th
 
 - Raw: `RAW-V3.0`
 - Event: `EVENT-V1.0`
+- Entity history: `ENTITY-V1.0`
+- Factual relationships: `RELATION-V2.0`
 - FDE: `FDE-V2.0`
 - Hardware: `HARDWARE-V1.0`
 - Tags and facets: `TAG-V4.0`
 - Contract: `agent-workflow/product/data-center-v4-contract.md`
 - JSON Schema: `agent-workflow/product/data-center-v4.schema.json`
+- Entity history contract: `agent-workflow/product/entity-history-v1-contract.md`
+- Entity history schema: `agent-workflow/product/entity-history-v1.schema.json`
 - Tag taxonomy: `agent-workflow/product/tag-taxonomy-v4.json`
 
 ## Rules
@@ -53,6 +58,9 @@ Raw snapshots and exact Claim spans are the evidence layer. CanonicalEvent is th
 - Technical Tags are evidence assertions on accepted Claims and never determine eligibility, ranking, relationships, or truth.
 - Product form, application scenario, industry, deployment model, and target user are evidence-backed structured Facets; they must not be duplicated into the technical Tag namespace.
 - Named products are persisted as source-backed `product_candidate` Entities. Public pages may read persisted product entities only and must not recreate products through page-specific inference or a manual whitelist.
+- Organizations, products/models/services, and people use stable `EN-*` IDs. Technology, use case, and industry remain `TX-*` classification nodes.
+- Every RELATION-V2 row resolves typed endpoints and an accepted CanonicalEvent, Claim references, and SourceArtifact references. Candidate or quarantined entity endpoints cannot enter a formal relationship.
+- Entity timelines may aggregate accepted events across data batches, but retain each event's factual date and source lineage. No daily completeness is implied.
 - FDE and hardware records cannot be created directly from source artifacts or page caches.
 - Importance, opportunity, trend maturity, business meaning, why-watch, recommendations, and advice are forbidden in V4 canonical outputs.
 
@@ -68,9 +76,12 @@ Raw snapshots and exact Claim spans are the evidence layer. CanonicalEvent is th
 npm run build:data-center -- --date=YYYY-MM-DD
 npm run assert:data-center -- --date=YYYY-MM-DD
 npm run sync:data-center
+npm run assert:entity-history
 ```
 
 The daily GitHub workflow runs these steps after Raw evidence supply passes and before legacy Card/page compatibility work.
+
+For a full historical reprojection of all accepted canonical data, run `npm run backfill:entity-history`. The generated coverage report must disclose boundary and source-batch gaps rather than manufacture records.
 
 ## Daily serving semantics
 

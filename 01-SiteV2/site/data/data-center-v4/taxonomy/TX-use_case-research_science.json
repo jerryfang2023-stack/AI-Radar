@@ -1,0 +1,463 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T15:01:31.906Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 748,
+    "quarantinedEventCount": 32
+  },
+  "node": {
+    "id": "TX-use_case-research_science",
+    "name": "科研与发现",
+    "nodeType": "use_case",
+    "typeLabel": "应用场景",
+    "valueId": "research_science",
+    "eventIds": [
+      "EV-1ac32035d5e425e1",
+      "EV-d961d3ad02f6ae14",
+      "EV-14b44a40808340f5"
+    ],
+    "entityIds": [
+      "EN-2b6e51bec93e86c1",
+      "EN-7d3194f79e645c42"
+    ],
+    "fdeIds": [],
+    "hardwareIds": [],
+    "firstSeen": "2026-06-02",
+    "lastSeen": "2026-07-15"
+  },
+  "events": [
+    {
+      "id": "EV-1ac32035d5e425e1",
+      "dataDate": "2026-06-02",
+      "date": "2026-06-02",
+      "updatedDate": "2026-06-02",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "partial",
+      "title": "Google DeepMind 完成 5000 万美元融资",
+      "originalTitle": "Ex-DeepMind researchers raised $50M to build AI that figures out which scientific questions are worth asking",
+      "subject": "Ex-DeepMind researchers",
+      "action": "raised",
+      "object": "$50M to build AI that figures out which scientific questions are worth asking",
+      "metrics": [
+        "$50M"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "research_science",
+            "dimensionName": "应用场景",
+            "name": "科研与发现"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "id": "research_science",
+          "dimensionName": "应用场景",
+          "name": "科研与发现"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "research_science",
+          "dimensionName": "应用场景",
+          "name": "科研与发现"
+        }
+      ],
+      "entityIds": [
+        "EN-2b6e51bec93e86c1"
+      ],
+      "entityNames": [
+        "Google DeepMind"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://thenextweb.com/news/inherent-ai-50-million-seed-deepmind-faraday-science",
+      "publisher": "thenextweb.com"
+    },
+    {
+      "id": "EV-d961d3ad02f6ae14",
+      "dataDate": "2026-06-17",
+      "date": "2026-06-17",
+      "updatedDate": "2026-06-17",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "Google DeepMind 基于 Gemini 与英国政府合作开发 AI 规划原型，目标将家庭申请处理时间减半",
+      "originalTitle": "",
+      "subject": "Google DeepMind 基于 Gemini 与英国政府",
+      "action": "合作",
+      "object": "开发 AI 规划原型，目标将家庭申请处理时间减半",
+      "metrics": [],
+      "locations": [
+        "US",
+        "U.S."
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "research_science",
+            "dimensionName": "应用场景",
+            "name": "科研与发现"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "id": "research_science",
+          "dimensionName": "应用场景",
+          "name": "科研与发现"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "research_science",
+          "dimensionName": "应用场景",
+          "name": "科研与发现"
+        }
+      ],
+      "entityIds": [
+        "EN-2b6e51bec93e86c1"
+      ],
+      "entityNames": [
+        "Google DeepMind"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://deepmind.google/blog/unlocking-uk-house-building-with-ai-accelerated-planning",
+      "publisher": "Google DeepMind：Blog（RSS）"
+    },
+    {
+      "id": "EV-14b44a40808340f5",
+      "dataDate": "2026-07-15",
+      "date": "2026-07-14",
+      "updatedDate": "2026-07-15",
+      "eventType": "organization_people",
+      "eventTypeLabel": "组织与人员",
+      "eventGroup": "组织、政策与法律",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "OpenAI 研究员 Miles Wang 将离职创办 AI 药物发现初创公司，估值 20 亿美元",
+      "originalTitle": "",
+      "subject": "OpenAI 研究员 Miles Wang 将",
+      "action": "离职",
+      "object": "创办 AI 药物发现初创公司，估值 20 亿美元",
+      "metrics": [
+        "$2B"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "research_science",
+            "dimensionName": "应用场景",
+            "name": "科研与发现"
+          }
+        ],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "healthcare_life_sciences",
+            "dimensionName": "行业",
+            "name": "医疗与生命科学"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "id": "research_science",
+          "dimensionName": "应用场景",
+          "name": "科研与发现"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "healthcare_life_sciences",
+          "dimensionName": "行业",
+          "name": "医疗与生命科学"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "research_science",
+          "dimensionName": "应用场景",
+          "name": "科研与发现"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "healthcare_life_sciences",
+          "dimensionName": "行业",
+          "name": "医疗与生命科学"
+        }
+      ],
+      "entityIds": [
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/07/14/openai-researcher-miles-wang-in-talks-to-launch-ai-drug-discovery-startup-valued-at-2b",
+      "publisher": "TechCrunch：AI（RSS）"
+    }
+  ],
+  "entities": [
+    {
+      "id": "EN-2b6e51bec93e86c1",
+      "name": "Google DeepMind",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "谷歌 DeepMind"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-6f092cfc7a064d64",
+        "EV-1ac32035d5e425e1",
+        "EV-adafffa563a53d49",
+        "EV-ef7402351b6b37bd",
+        "EV-67ef7accd26a07a0",
+        "EV-a7e1ecd212474e00",
+        "EV-d961d3ad02f6ae14",
+        "EV-f9eebe4e3b9b667c",
+        "EV-5babb43f4b4d302f",
+        "EV-ff10670ad06959ec",
+        "EV-8ab21bf8e73cf44a",
+        "EV-568d2aeab5234e48",
+        "EV-d6f638da9e1d3b46",
+        "EV-f68e00bb9fd49fac",
+        "EV-3e9a0d1be6de5096",
+        "EV-68edd592c36dccd3",
+        "EV-d49da50484ba781f"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
+        "TX-technology-vision_language",
+        "TX-technology-code_generation",
+        "TX-industry-healthcare_life_sciences",
+        "TX-use_case-software_development",
+        "TX-technology-mixture_of_experts",
+        "TX-use_case-cybersecurity",
+        "TX-use_case-customer_service",
+        "TX-technology-multimodal",
+        "TX-technology-speech_audio",
+        "TX-use_case-research_science",
+        "TX-industry-media_entertainment",
+        "TX-technology-video_generation",
+        "TX-technology-fine_tuning"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-05-23",
+      "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "EN-7d3194f79e645c42",
+      "name": "OpenAI",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "Codex",
+        "GPT-5.6"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-4da1a7c4d527eb69",
+        "EV-7f77e6a2d1698307",
+        "EV-c9af33ffe65d236b",
+        "EV-efca54f3b07072a6",
+        "EV-10c70ced68ccb31b",
+        "EV-adf92ecb7cd8714f",
+        "EV-384cc24be4b56cb5",
+        "EV-21c2e81a7c073e04",
+        "EV-edcb66d0401cfb8f",
+        "EV-b1138bccf5ccd86c",
+        "EV-ee0662b75588987e",
+        "EV-052d7d9120c683d1",
+        "EV-6180de2e02597d9d",
+        "EV-201b25d4f3cf696a",
+        "EV-853559d61ae2e313",
+        "EV-7dac684a33062b7f",
+        "EV-06fd0cc175652354",
+        "EV-1f842e1dff69bb87",
+        "EV-8a0866a27909f9d9",
+        "EV-e15ae1112294d59e",
+        "EV-62901df23f471eea",
+        "EV-4a4869273654c799",
+        "EV-d3528ccff1833385",
+        "EV-e1a4bc40db4a9d8f",
+        "EV-7f2811d2272cf4a3",
+        "EV-2fab4396000198d2",
+        "EV-3fb492fb45980541",
+        "EV-58614476c796a67a",
+        "EV-1060a8b37ddd87ac",
+        "EV-b716e560a685c41b",
+        "EV-1fbead21a2dd47a0",
+        "EV-0d5a32aca724d30e",
+        "EV-70e3f88cb06a856c",
+        "EV-7c899d5decafc42f",
+        "EV-cde5c3e5ef83bd51",
+        "EV-0ca3a9830e25f56b",
+        "EV-a3d022fa41708774",
+        "EV-cf5b2a0aff3914bd",
+        "EV-302018f2e960a8bf",
+        "EV-000f2abf549268a6",
+        "EV-519205eb50c83300",
+        "EV-ebe02c213368afae",
+        "EV-efee7c1ac4dc336f",
+        "EV-cf317dd1579a01bb",
+        "EV-d07906b648eec63f",
+        "EV-0510a983e120a381",
+        "EV-3cd088098be5d0d4",
+        "EV-268250d426c1a4a0",
+        "EV-51aed98773a9fca1",
+        "EV-2059f42c7b2aff44",
+        "EV-9fac0983ab657689",
+        "EV-af1d9851e91802af",
+        "EV-9c4b862020202f6c",
+        "EV-918fc324de3117bd",
+        "EV-c718a5ff4b0acd66",
+        "EV-860b90c017deaa59",
+        "EV-888b9eb73582e21c",
+        "EV-3f07de398af7a118",
+        "EV-722c2a8dd6b70abd",
+        "EV-abf0990dcaceb1ce",
+        "EV-b8bfab77707274b7",
+        "EV-6eb9a23be3117421",
+        "EV-9659eb492a9eea1b",
+        "EV-a0d3853dd41c8ef6",
+        "EV-cf883e02c693dfea",
+        "EV-fbde4dad2288059a",
+        "EV-1e7c76dae985100f",
+        "EV-09d3ce5611881ed4",
+        "EV-9110f23a7e60173e",
+        "EV-e792252690f98a22",
+        "EV-63a344522ee9e8d4",
+        "EV-28145c97a7237d6d",
+        "EV-8160e13555e65130",
+        "EV-f01d28aac73c3f9c",
+        "EV-e6771f58d7c2a050",
+        "EV-068a0671fa96b07d",
+        "EV-7f979d0a01e6dffa",
+        "EV-d50a2832bb30b287",
+        "EV-91d9e2c780593bbb",
+        "EV-6b74ed049774f0c5",
+        "EV-61b97c0ee6ad83b3",
+        "EV-b73c7096546b82e8",
+        "EV-2de6ff1a7aebd6e7",
+        "EV-59933d63c4051085",
+        "EV-fbdfb5888ad19663",
+        "EV-c28e0d02272537d8",
+        "EV-4a727d54055d6d0e",
+        "EV-e295f808713644c7",
+        "EV-d2a00623908ca15f",
+        "EV-01e414a25347cfd9",
+        "EV-a4f052325d0ef230",
+        "EV-4f4274fb5920a8b4",
+        "EV-0aa2e53c51b2b8e5",
+        "EV-5cd10de5c12916f0",
+        "EV-1a5628259e6ee487",
+        "EV-da6678e4e865e00e",
+        "EV-14b44a40808340f5",
+        "EV-2d56dec8dfeb2b56",
+        "EV-8cb2374f76202ecc",
+        "EV-917966af8545a380",
+        "EV-b4203b10d6592bf2",
+        "EV-1b5db76949c2795c",
+        "EV-f2d29ca7b05c3dd9",
+        "EV-ea2b6ce4acd46366",
+        "EV-2821d0cef61b3c6a",
+        "EV-6f7c5f0abad3d4da",
+        "EV-8f497488d129fee5",
+        "EV-a8f1204b54ae6475",
+        "EV-2ca9d0a3ca53c3bf",
+        "EV-6b7917bd7edd4bde",
+        "EV-e1ebf7d63e058a39",
+        "EV-9705a8de3c2e9653",
+        "EV-bce258f8f915ff5f",
+        "EV-4beb890f0879aeaf"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
+        "TX-technology-computer_use",
+        "TX-use_case-robotics_automation",
+        "TX-technology-code_generation",
+        "TX-industry-professional_services",
+        "TX-industry-healthcare_life_sciences",
+        "TX-use_case-enterprise_operations",
+        "TX-use_case-software_development",
+        "TX-technology-long_context",
+        "TX-industry-financial_services",
+        "TX-use_case-cybersecurity",
+        "TX-technology-human_in_loop",
+        "TX-industry-telecommunications",
+        "TX-use_case-customer_service",
+        "TX-technology-multimodal",
+        "TX-technology-retrieval_augmented_generation",
+        "TX-use_case-research_science",
+        "TX-technology-open_weights",
+        "TX-technology-tool_use",
+        "TX-technology-reasoning",
+        "TX-technology-model_context_protocol",
+        "TX-technology-fine_tuning"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-03-13",
+      "lastSeen": "2026-07-17"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}
