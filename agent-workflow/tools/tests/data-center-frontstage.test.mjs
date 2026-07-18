@@ -248,6 +248,10 @@ test("industry reports uses the V4 sidebar and contains reports only", () => {
   const html = fs.readFileSync(path.join(root, "01-SiteV2/site/intelligence-map.html"), "utf8");
   const viewpointPosition = html.indexOf("data-center.html?view=viewpoints");
   const indexPosition = html.indexOf("data-center.html?view=index");
+  const weeklyFeaturePosition = html.indexOf('class="report-feature-card is-weekly"');
+  const monthlyFeaturePosition = html.indexOf('class="report-feature-card is-monthly"');
+  const weeklyArchivePosition = html.indexOf('aria-labelledby="weekly-archive-title"');
+  const monthlyArchivePosition = html.indexOf('aria-labelledby="monthly-archive-title"');
 
   assert.match(html, /http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate"/u);
   assert.match(html, /assets\/data-center-v4\.css/u);
@@ -260,8 +264,10 @@ test("industry reports uses the V4 sidebar and contains reports only", () => {
   assert.match(html, /href="intelligence-map\.html" aria-current="page">行业报告</u);
   assert.match(html, /href="opportunity-map\.html">机会地图/u);
   assert.match(html, /class="report-feature-grid"/u);
+  assert.ok(weeklyFeaturePosition >= 0 && weeklyFeaturePosition < monthlyFeaturePosition);
   assert.match(html, /REPORTS-V1\.0\.0-periodic-report-center/u);
   assert.match(html, /class="report-archive-grid"/u);
+  assert.ok(weeklyArchivePosition >= 0 && weeklyArchivePosition < monthlyArchivePosition);
   assert.match(html, /最新月报/u);
   assert.match(html, /最新周报/u);
   assert.doesNotMatch(html, /data-map-panel|data-cell-modal|industry-reports-frontstage\.json/u);
