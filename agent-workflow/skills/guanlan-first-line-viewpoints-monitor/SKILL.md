@@ -1,26 +1,32 @@
 ---
 name: guanlan-first-line-viewpoints-monitor
-description: Use when supervising, running, repairing, or improving the WaveSight AI current SITE-V3.4.5 First-Line Viewpoints lane. Covers builders / follow-builders data refresh, Chinese translation gate, original URL and tag checks, fallback safety, Obsidian person/date timeline sync, idempotent morning/afternoon publication checks, Hermes repair closure, and lane-specific self-improvement. Do not use for Business Signals, Signal Cards, relationship graph evidence, trend candidates, or Community Intelligence.
+description: Use when supervising, running, repairing, backfilling, or improving the WaveSight AI SITE-V4.2.0 First-Line Viewpoints lane at FLV-V1.1.0-history-backfill. Covers current morning builders data, committed morning history, afternoon follow-builders intake, V4 projection, Chinese translation provenance, original-URL dedupe, AI relevance and opinion tags, Obsidian person/date timelines, publication closure, and Hermes repair. Do not use for Business Signals, Signal Cards, factual relationships, trend candidates, or Community Intelligence.
 metadata:
   guanlan:
-    version: "1.0.4"
+    version: "1.1.0"
     lane: "First-Line Viewpoints"
     status: "current lane owner"
     order: 20
-    responsibility: "Own First-Line Viewpoints supervision and repair: builders data, Chinese translation, formal tags, and Obsidian person/date timelines."
-    upstream: "follow-builders source data, builders workflow, Hermes inbox"
-    downstream: "follow-builders-daily.json, frontstage page data, Obsidian opinion timelines, PR publication"
-    gates: "builders data assertion, translation gate, URL/tag checks, sync idempotency"
-    recent_learning: "Production translation must use DeepSeek with source-hash and model provenance; missing credentials, incomplete translation, or legacy public-MT output blocks publication."
+    responsibility: "Own First-Line Viewpoints current and historical supervision: source-backed builders data, V4 projection, Chinese translation, formal tags, and Obsidian person/date timelines."
+    upstream: "current follow-builders data, committed morning snapshots, afternoon follow-builders archive, Hermes inbox"
+    downstream: "follow-builders-daily.json, first-line-viewpoints-history.json, first-line-viewpoints-v4.json, Obsidian opinion timelines, PR publication"
+    gates: "current builders assertion, historical provenance, translation/source-hash, AI relevance, opinion tags, original-URL dedupe, V4 projection, sync idempotency"
+    recent_learning: "Historical morning snapshots may extend the public timeline only through the same source, translation, AI-relevance, opinion-tag, and original-URL gates as current records; afternoon intake cannot bypass them."
     mirrored_in_skill_store: true
     memory_required: true
 ---
 
 # Guanlan First-Line Viewpoints Monitor
 
-This skill owns the First-Line Viewpoints lane. It supervises builders data generation, frontstage JSON, translation quality, formal tags, fallback behavior, Obsidian person/date timeline sync, and lane repair.
+This skill owns the First-Line Viewpoints lane. It supervises current and historical builders data, the V4 frontstage projection, translation quality, formal tags, fallback behavior, Obsidian person/date timeline sync, and lane repair.
 
-The lane has two production routes: the morning RSS / podcast refresh that feeds `follow-builders-daily.json`, and the afternoon local `follow-builders` skill publish that emits `01-SiteV2/content/07-points/<date>-builders-viewpoints.md`.
+The lane has three inputs with two independent production routes:
+
+- the current morning RSS / podcast refresh feeds `follow-builders-daily.json`;
+- accepted committed morning snapshots are materialized into `first-line-viewpoints-history.json`;
+- the afternoon local `follow-builders` skill emits `01-SiteV2/content/07-points/<date>-builders-viewpoints.md` as a separate archive/intake route.
+
+`first-line-viewpoints-v4.json` merges these inputs by original URL. Current morning records override historical copies; afternoon records add coverage metadata or remain intake-only and never bypass the morning public gate.
 
 It may call the generic `follow-builders` skill for source / digest behavior, but this skill is the WaveSight lane owner.
 
@@ -38,16 +44,20 @@ Read only what is needed:
 1. `AGENTS.md`
 2. `context/00-current-state.md`
 3. `context/version-ledger.md`
-4. `context/08-v3-3-automation.md`
-5. `context/09-v3-3-current-action-index.md`
-6. Relevant First-Line Viewpoints report, Hermes inbox item, workflow log, or gate output.
+4. `context/frontstage-page-contracts.md`
+5. `context/08-v3-3-automation.md`
+6. `context/09-v3-3-current-action-index.md`
+7. Relevant First-Line Viewpoints report, Hermes inbox item, workflow log, or gate output.
 
 For implementation detail, read:
 
 - `agent-workflow/skills/follow-builders/SKILL.md`
 - `agent-workflow/tools/assert-follow-builders-data.mjs`
+- `agent-workflow/tools/backfill-first-line-viewpoints-history.mjs`
+- `agent-workflow/tools/assert-first-line-viewpoints-v4-data.mjs`
 - `agent-workflow/tools/sync-follow-builders-to-opinion-timelines.mjs`
 - `01-SiteV2/site/scripts/build-follow-builders-page-data.mjs`
+- `01-SiteV2/site/scripts/build-first-line-viewpoints-v4-data.mjs`
 
 For regression prevention, read `evals/first-line-viewpoints-monitor-evals.md`. When repairing translation or timeline sync, also read `examples/good-timeline-entry.md` and `examples/bad-untranslated-remark.md`. Read `MEMORY.md` only when a failure resembles a previous incident or when updating this skill.
 When repairing repeated morning or afternoon monitoring failures, also read `examples/good-first-line-failure-router.md` and the latest first-line weekly failure review report.
@@ -56,14 +66,22 @@ When repairing repeated morning or afternoon monitoring failures, also read `exa
 
 1. Resolve the Asia/Shanghai production date unless the user gives another date.
 2. Check daily supervision and Hermes inbox for the First-Line Viewpoints lane.
-3. Build or inspect `01-SiteV2/site/data/follow-builders-daily.json`.
-4. Run or inspect `assert-follow-builders-data.mjs`.
-5. Sync gated run data into `01-SiteV2/knowledge/02-Opinion-Timelines/people/<person>/<original-date>.md`, then confirm a same-date dry run reports `added: 0`.
-6. Verify sync idempotency with a second run or dry run that adds `0` entries.
-7. Publish the afternoon follow-builders skill output through its branch / PR route and verify the local publish report.
+3. Build or inspect current `follow-builders-daily.json`; run `assert-follow-builders-data.mjs` for the active date.
+4. Inspect `first-line-viewpoints-history.json`. Rebuild it from committed morning snapshots only when a backfill or history repair is requested; do not translate historical records during routine supervision.
+5. Build `first-line-viewpoints-v4.json`, then run `assert-first-line-viewpoints-v4-data.mjs` and verify current/historical counts, date range, lane coverage, and original-URL dedupe.
+6. Sync gated run data into `01-SiteV2/knowledge/02-Opinion-Timelines/people/<person>/<original-date>.md`, then confirm a same-date dry run reports `added: 0`.
+7. Publish the afternoon follow-builders skill output through its independent branch / PR route and verify the local publish report.
 8. Stage / publish only first-line owned files through the automation PR route.
 9. Add or tighten evals before adding long prose when a failure recurs.
 10. Close Hermes inbox items only after validation and prevention are recorded.
+
+## History Backfill Contract
+
+- Reconstruct history only from committed snapshots of `follow-builders-daily.json`; a search result, local draft, or afternoon archive is not historical publication evidence.
+- Deduplicate by original URL. Keep the current morning copy when the same URL exists in current and historical data.
+- Historical records must retain the original URL, source snapshot, author, original date, complete approved Chinese translation, matching source hash, AI relevance, and at least one opinion tag.
+- Keep records that fail translation or another public gate out of the published feed and expose them as pending; never weaken a gate to increase history volume.
+- Treat the afternoon route as independently preserved intake. Its overlap can be recorded, but it cannot promote an item into the public viewpoint feed.
 
 ## Translation Provider Contract
 
@@ -82,6 +100,8 @@ Classify a failure before rerunning anything:
 - `local_rss_cron_missed`: the 08:30 local Codex RSS collection/build/sync did not run or left stale page data.
 - `github_rss_publication`: GitHub RSS build/gate/sync passed but commit, PR, merge, or Pages failed.
 - `data_gate_failure`: `assert-follow-builders-data.mjs` failed on freshness, count, translation, URL/id, dedupe, or formal tags.
+- `history_backfill_failure`: committed snapshot discovery, historical provenance, translation/source-hash, AI relevance, opinion tags, or original-URL dedupe failed.
+- `v4_projection_failure`: current, history, and afternoon inputs exist but `first-line-viewpoints-v4.json` counts, date range, lane coverage, or release gate are inconsistent.
 - `obsidian_sync_failure`: original-date person/date timeline files are missing or sync is not idempotent.
 - `prewindow_false_alarm`: Hermes checked before 09:30 for RSS or before 16:30 for the afternoon skill lane.
 - `afternoon_skill_runner`: the local `follow-builders` skill publisher failed or did not write its output/report after 16:30.
@@ -101,6 +121,8 @@ Use this path for the public First-Line Viewpoints page:
    - same-date `follow-builders-daily.json`;
    - remarks count greater than `0` and builders count at least `6`;
    - `assert-follow-builders-data.mjs --date=<date>` passes;
+   - accepted `first-line-viewpoints-history.json` remains available with source-snapshot provenance;
+   - rebuilt `first-line-viewpoints-v4.json` passes `assert-first-line-viewpoints-v4-data.mjs` and reports current plus historical published counts consistently;
    - gated records are present in person/date Obsidian timeline files keyed by original source date;
    - a second sync or dry run adds `0` entries;
    - frontstage data does not contain the generic tag `Builder viewpoint`.
@@ -136,6 +158,8 @@ If the report shows healthy feed/archive counts but a publish failure, repair th
 - Do not allow untranslated English as primary Chinese frontstage text.
 - Do not treat a report file's existence as publish success when its item count is zero or mismatched.
 - Do not let the afternoon skill lane block the morning public page when the RSS page-data gate and Obsidian sync are healthy.
+- Do not let historical snapshots bypass current translation, source, AI-relevance, opinion-tag, or original-URL gates.
+- Do not treat the afternoon archive as a substitute source for missing committed morning history.
 
 ## Reporting
 
@@ -143,7 +167,9 @@ When finishing, report:
 
 - lane status;
 - builders data date and item counts;
+- history date range, published/pending counts, current/historical split, and source snapshot count;
 - data gate result;
+- V4 projection gate result and morning/afternoon overlap counts;
 - Obsidian sync result and idempotency result;
 - files changed;
 - prevention artifact added or not needed;

@@ -1,4 +1,4 @@
 interface:
   display_name: "Guanlan First-Line Viewpoints Monitor"
-  short_description: "Supervise and repair the First-Line Viewpoints lane and Obsidian timeline sync."
-  default_prompt: "Supervise the First-Line Viewpoints lane for the active date, validate builders data, run or inspect Obsidian person/date timeline sync, and record prevention for recurring failures."
+  short_description: "Supervise current and historical First-Line Viewpoints data, V4 projection, and timeline sync."
+  default_prompt: "Supervise FLV-V1.1.0-history-backfill for the active date: validate current builders data, committed history provenance, the merged V4 projection, and Obsidian person/date timeline idempotency; keep afternoon intake independent and record prevention for recurring failures."
