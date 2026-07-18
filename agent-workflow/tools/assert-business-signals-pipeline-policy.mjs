@@ -118,6 +118,9 @@ if (/pending_qc/u.test(preGateEvals) || /at most 3 bounded refetch cycles/u.test
 if (/source_artifact_retry_refresh/u.test(dailyEvals)) problems.push("daily-monitor evals still require full source-artifact retry refresh");
 
 if (!/publication_waiting/u.test(workflow)) problems.push("production workflow does not classify merge conflicts as publication_waiting");
+if (!/if \[ "\$\{\{ github\.event_name \}\}" = "schedule" \] \|\| \[ "\$\{\{ github\.event_name \}\}" = "workflow_dispatch" \]; then/u.test(workflow)) {
+  problems.push("production workflow does not reuse healthy same-date assets for manual health dispatches");
+}
 if (!/publication_waiting/u.test(healthDispatch)) problems.push("health dispatch does not recognize an open publication branch/PR as waiting");
 if (!/classify-business-signals-production-state\.mjs/u.test(workflow) || !/classify-business-signals-production-state\.mjs/u.test(dryRunWorkflow)) {
   problems.push("production workflows do not share the stage-owned result classifier");
@@ -144,7 +147,7 @@ for (const [name, text] of [["production workflow", workflow], ["dry-run workflo
 const result = {
   ok: problems.length === 0,
   policy_version: config.schema_version || "unknown",
-  checks: 19,
+  checks: 20,
   problems,
 };
 

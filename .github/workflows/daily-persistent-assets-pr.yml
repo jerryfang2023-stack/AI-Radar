@@ -91,7 +91,7 @@ jobs:
             branch_exists=true
           fi
 
-          if [ "${{ github.event_name }}" = "schedule" ]; then
+          if [ "${{ github.event_name }}" = "schedule" ] || [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             if [ -f "$raw_file" ] && [ -f "$pool_file" ] && [ -f "$signal_file" ] && [ -f "$data_center_manifest" ] && [ "$signal_card_count" -ge 1 ]; then
               if node agent-workflow/tools/assert-business-signals-frontstage.mjs --date="${RUN_DATE}" >/tmp/business-frontstage-health.log 2>&1 \
                 && node agent-workflow/tools/assert-data-center-v4.mjs --date="${RUN_DATE}" >/tmp/data-center-v4-health.log 2>&1 \
