@@ -5,8 +5,10 @@ import { fileURLToPath } from "node:url";
 const siteRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const projectRoot = path.resolve(siteRoot, "../..");
 const morningFile = path.join(siteRoot, "data", "follow-builders-daily.json");
+const historyFile = path.join(siteRoot, "data", "first-line-viewpoints-history.json");
 const pointsDir = path.join(projectRoot, "01-SiteV2", "content", "07-points");
 const outputFile = path.join(siteRoot, "data", "first-line-viewpoints-v4.json");
+const approvedTranslationMethods = new Set(["deepseek_translation", "manual_reviewed_translation", "source_chinese"]);
 
 function readJson(file, fallback) {
   try {
@@ -66,12 +68,23 @@ function isAiRelevant(item = {}) {
   if (["Agent", "AI 编程", "AI 基础设施"].includes(item.topic)) return true;
   const text = [
     item.text,
-    item.translation,
     item.content,
-    item.contentTranslation,
     item.topic
   ].filter(Boolean).join(" ");
   return /\b(?:AI|AGI|LLM|GPT|Claude|Codex|Gemini|OpenAI|Anthropic|xAI|agent(?:ic|s)?|model(?:s)?|MCP|prompt(?:ing|s)?|inference|GPU|compute|token(?:s)?|sandbox|multimodal|open weights?|machine learning|deep learning|neural|vibe coding)\b|人工智能|大模型|智能体|模型推理|算力|多模态|提示词|机器学习|深度学习|AI编程|AI 编程/iu.test(text);
+}
+
+function hasChinese(value = "") {
+  return /[\u3400-\u9fff]/u.test(String(value || ""));
+}
+
+function publicReady(item = {}) {
+  if (!item.url || item.translationStatus !== "translated" || !approvedTranslationMethods.has(item.translationMethod)) return false;
+  if (item.translationMethod === "deepseek_translation" && !item.translationModel) return false;
+  if (!hasChinese(item.contentTranslation || item.translation)) return false;
+  return Array.isArray(item.columnTags)
+    && item.columnTags.some((tag) => tag?.group === "opinion" || String(tag?.id || tag).startsWith("opinion-"))
+    && isAiRelevant(item);
 }
 
 function pointBody(section = "") {
@@ -128,19 +141,24 @@ function parseAfternoonFile(fileName) {
 
 function buildData() {
   const morning = readJson(morningFile, { meta: {}, stats: {}, builders: [], remarks: [], podcasts: [] });
+  const history = readJson(historyFile, { meta: {}, stats: {}, remarks: [] });
   const afternoon = parseAfternoonFile(latestPointsFile());
   const afternoonByUrl = new Map(afternoon.items.map((item) => [item.url, item]));
-  const morningIntake = (morning.remarks || []).map((item) => {
+  const currentUrls = new Set((morning.remarks || []).map((item) => item.url).filter(Boolean));
+  const mergedMorningByUrl = new Map((history.remarks || []).map((item) => [item.url, { ...item, historical: true }]));
+  for (const item of morning.remarks || []) mergedMorningByUrl.set(item.url, { ...item, historical: false });
+  const morningIntake = [...mergedMorningByUrl.values()].map((item) => {
     const afternoonItem = afternoonByUrl.get(item.url);
     const aiRelevant = isAiRelevant(item);
+    const ready = publicReady(item);
     return {
       ...item,
       laneCoverage: afternoonItem ? ["morning-rss", "afternoon-skill"] : ["morning-rss"],
       afternoonStableId: afternoonItem?.id || "",
       aiRelevant,
-      publicationStatus: aiRelevant ? "published" : "intake_only_non_ai"
+      publicationStatus: ready ? "published" : aiRelevant ? "intake_only_gate_failed" : "intake_only_non_ai"
     };
-  });
+  }).sort((a, b) => String(b.date || "").localeCompare(String(a.date || "")) || String(b.createdAt || "").localeCompare(String(a.createdAt || "")) || String(a.url || "").localeCompare(String(b.url || "")));
   const remarks = morningIntake.filter((item) => item.publicationStatus === "published");
   const morningUrls = new Set(morningIntake.map((item) => item.url));
   const publishedUrls = new Set(remarks.map((item) => item.url));
@@ -156,20 +174,34 @@ function buildData() {
     role: item.role || "未披露",
     count: remarks.filter((remark) => (remark.handle || remark.name) === handle).length
   })).sort((a, b) => b.count - a.count || a.name.localeCompare(b.name, "zh-CN"));
+  const earliestDate = remarks.map((item) => item.date).filter(Boolean).sort().at(0) || "";
   const latestDate = remarks.map((item) => item.date).filter(Boolean).sort().at(-1) || "";
+  const currentMorningPublished = remarks.filter((item) => currentUrls.has(item.url)).length;
+  const historicalPublished = remarks.length - currentMorningPublished;
   const overlapCount = intake.filter((item) => item.coveredByMorning).length;
   return {
     meta: {
       generatedAt: new Date().toISOString(),
+      earliestDate,
       latestDate,
-      sourcePolicy: "Morning RSS/X data owns the Chinese translation and public-page gate. Afternoon follow-builders Skill intake is independently preserved, deduplicated by original URL, and cannot bypass the Chinese, AI-relevance, tag, or source gates.",
+      sourcePolicy: "Current and committed historical morning RSS/X records share the Chinese translation and public-page gate. Afternoon follow-builders Skill intake is independently preserved, deduplicated by original URL, and cannot bypass the Chinese, AI-relevance, tag, or source gates.",
+      history: {
+        dataFile: "01-SiteV2/site/data/first-line-viewpoints-history.json",
+        generatedAt: history.meta?.generatedAt || "",
+        sourceCommits: Number(history.meta?.sourceCommits || 0),
+        published: Number(history.stats?.published || 0),
+        pendingTranslation: Number(history.stats?.pendingTranslation || 0)
+      },
       lanes: {
         morning: {
           id: "morning-rss",
           dataFile: "01-SiteV2/site/data/follow-builders-daily.json",
+          historyFile: "01-SiteV2/site/data/first-line-viewpoints-history.json",
           generatedAt: morning.meta?.generatedAt || "",
           collected: morningIntake.length,
           published: remarks.length,
+          currentPublished: currentMorningPublished,
+          historicalPublished,
           builders: builders.length
         },
         afternoon: {
@@ -190,6 +222,8 @@ function buildData() {
       podcasts: (morning.podcasts || []).length,
       morningIntake: morningIntake.length,
       morningPublished: remarks.length,
+      currentMorningPublished,
+      historicalPublished,
       afternoonIntake: intake.length,
       dualCovered: overlapCount,
       intakeOnly: intake.length - overlapCount
@@ -217,6 +251,7 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
     remarks: data.stats.remarks,
     builders: data.stats.builders,
     morningIntake: data.stats.morningIntake,
+    historicalPublished: data.stats.historicalPublished,
     afternoonIntake: data.stats.afternoonIntake,
     dualCovered: data.stats.dualCovered,
     intakeOnly: data.stats.intakeOnly

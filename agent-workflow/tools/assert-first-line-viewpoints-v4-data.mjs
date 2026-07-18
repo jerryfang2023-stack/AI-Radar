@@ -10,6 +10,7 @@ const args = new Map(process.argv.slice(2).map((arg) => {
   return [key, rest.join("=") || "true"];
 }));
 const requireAfternoon = args.get("require-afternoon") !== "false";
+const approvedTranslationMethods = new Set(["deepseek_translation", "manual_reviewed_translation", "source_chinese"]);
 
 function readJson(file) {
   try {
@@ -22,6 +23,12 @@ function readJson(file) {
 
 function hasChinese(value = "") {
   return /[\u3400-\u9fff]/u.test(String(value || ""));
+}
+
+function containsKey(value, target) {
+  if (!value || typeof value !== "object") return false;
+  if (Array.isArray(value)) return value.some((item) => containsKey(item, target));
+  return Object.entries(value).some(([key, item]) => key === target || containsKey(item, target));
 }
 
 const data = readJson(dataFile);
@@ -37,6 +44,7 @@ const afternoon = meta.lanes?.afternoon || {};
 if (morning.id !== "morning-rss") problems.push("morning-rss lane metadata is missing");
 if (afternoon.id !== "afternoon-skill") problems.push("afternoon-skill lane metadata is missing");
 if (!morning.dataFile) problems.push("morning lane dataFile is missing");
+if (!morning.historyFile) problems.push("morning lane historyFile is missing");
 if (requireAfternoon && !afternoon.dataFile) problems.push("afternoon lane dataFile is missing");
 if (remarks.length === 0) problems.push("published remarks are empty");
 if (morningIntake.length === 0) problems.push("morning intake is empty");
@@ -48,6 +56,7 @@ if (Number(afternoon.declaredCount) !== intake.length) problems.push(`afternoon 
 if (Number(stats.afternoonIntake) !== intake.length) problems.push(`stats.afternoonIntake ${stats.afternoonIntake} does not match intake ${intake.length}`);
 if (Number(stats.morningIntake) !== morningIntake.length) problems.push(`stats.morningIntake ${stats.morningIntake} does not match morning intake ${morningIntake.length}`);
 if (Number(stats.morningPublished) !== remarks.length) problems.push(`stats.morningPublished ${stats.morningPublished} does not match published remarks ${remarks.length}`);
+if (Number(stats.currentMorningPublished || 0) + Number(stats.historicalPublished || 0) !== remarks.length) problems.push("current and historical published counts do not match published remarks");
 if (Number(stats.dualCovered) !== intake.filter((item) => item.coveredByMorning).length) problems.push("dualCovered count does not match afternoon overlap");
 if (Number(stats.intakeOnly) !== intake.filter((item) => !item.coveredByMorning).length) problems.push("intakeOnly count does not match afternoon-only intake");
 
@@ -58,7 +67,19 @@ for (const [index, item] of remarks.entries()) {
   else if (remarkUrls.has(item.url)) problems.push(`${prefix} duplicate URL`);
   else remarkUrls.add(item.url);
   if (item.translationStatus !== "translated") problems.push(`${prefix} is not translated`);
+  if (!approvedTranslationMethods.has(item.translationMethod)) problems.push(`${prefix} has unapproved translation method`);
+  if (item.translationMethod === "deepseek_translation" && !item.translationModel) problems.push(`${prefix} is missing DeepSeek translation model`);
+  if (item.historical === true && !item.translationSourceHash) problems.push(`${prefix} is missing historical title source hash`);
+  if (item.content) {
+    if (item.contentTranslationStatus !== "translated") problems.push(`${prefix} content is not translated`);
+    if (item.historical === true) {
+      if (!approvedTranslationMethods.has(item.contentTranslationMethod)) problems.push(`${prefix} has unapproved content translation method`);
+      if (item.contentTranslationMethod === "deepseek_translation" && !item.contentTranslationModel) problems.push(`${prefix} is missing DeepSeek content translation model`);
+      if (!item.contentTranslationSourceHash) problems.push(`${prefix} is missing historical content source hash`);
+    }
+  }
   if (!hasChinese(item.contentTranslation || item.translation)) problems.push(`${prefix} has no Chinese primary content`);
+  if (!Array.isArray(item.columnTags) || !item.columnTags.some((tag) => tag?.group === "opinion" || String(tag?.id || tag).startsWith("opinion-"))) problems.push(`${prefix} is missing opinion tag`);
   if (item.aiRelevant !== true) problems.push(`${prefix} did not pass AI relevance gate`);
   if (!Array.isArray(item.laneCoverage) || !item.laneCoverage.includes("morning-rss")) problems.push(`${prefix} bypassed the morning public gate`);
   if (item.publicationStatus !== "published") problems.push(`${prefix} publicationStatus must be published`);
@@ -67,7 +88,7 @@ for (const [index, item] of remarks.entries()) {
 for (const [index, item] of morningIntake.entries()) {
   const prefix = `morningIntake[${index}]`;
   if (!item.url) problems.push(`${prefix} missing original URL`);
-  if (!["published", "intake_only_non_ai"].includes(item.publicationStatus)) problems.push(`${prefix} has invalid publicationStatus`);
+  if (!["published", "intake_only_non_ai", "intake_only_gate_failed"].includes(item.publicationStatus)) problems.push(`${prefix} has invalid publicationStatus`);
 }
 
 const intakeUrls = new Set();
@@ -79,9 +100,8 @@ for (const [index, item] of intake.entries()) {
   if (!Array.isArray(item.laneCoverage) || !item.laneCoverage.includes("afternoon-skill")) problems.push(`${prefix} missing afternoon-skill coverage`);
 }
 
-const serialized = JSON.stringify(data);
 for (const forbidden of ["signal_card", "relationshipGraph", "trendCandidates", "recommendation", "business_meaning"]) {
-  if (serialized.includes(forbidden)) problems.push(`forbidden business-signal field marker: ${forbidden}`);
+  if (containsKey(data, forbidden)) problems.push(`forbidden business-signal field marker: ${forbidden}`);
 }
 
 console.log(JSON.stringify({
@@ -89,6 +109,7 @@ console.log(JSON.stringify({
   status: problems.length ? "failed" : "passed",
   problems,
   remarks: remarks.length,
+  historicalPublished: Number(stats.historicalPublished || 0),
   morningIntake: morningIntake.length,
   builders: builders.length,
   afternoonIntake: intake.length,

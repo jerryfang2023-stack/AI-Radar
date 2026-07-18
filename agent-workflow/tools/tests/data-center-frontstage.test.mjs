@@ -8,6 +8,23 @@ import { buildFrontstageData, isCompletePublicEventTitle, sourceDateOnly } from 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, "../../..");
 
+test("business-signal publishing persists the split V4 frontstage service", () => {
+  const workflow = fs.readFileSync(path.join(root, ".github/workflows/daily-persistent-assets-pr.yml"), "utf8");
+
+  assert.match(workflow, /01-SiteV2\/site\/data\/data-center-v4\/\*\*/u);
+  assert.match(workflow, /stage_if_exists "01-SiteV2\/site\/data\/data-center-v4"/u);
+});
+
+test("checked-in split frontstage data matches the monolithic adapter date", () => {
+  const full = JSON.parse(fs.readFileSync(path.join(root, "01-SiteV2/site/data/data-center-v4-frontstage.json"), "utf8"));
+  const manifest = JSON.parse(fs.readFileSync(path.join(root, "01-SiteV2/site/data/data-center-v4/manifest.json"), "utf8"));
+  const eventIndex = JSON.parse(fs.readFileSync(path.join(root, "01-SiteV2/site/data/data-center-v4/indexes/events.json"), "utf8"));
+
+  assert.equal(manifest.currentDate, full.meta.currentDate);
+  assert.equal(eventIndex.meta.currentDate, full.meta.currentDate);
+  assert.equal(eventIndex.meta.eventCount, full.meta.eventCount);
+});
+
 test("frontstage adapter builds real V4 data collections", () => {
   const data = buildFrontstageData(root);
 
@@ -194,12 +211,16 @@ test("first-line viewpoints uses both monitoring lanes and the three-level V4 pa
   assert.match(script, /data-viewpoint-open/u);
   assert.match(projection, /morning-rss/u);
   assert.match(projection, /afternoon-skill/u);
+  assert.match(projection, /first-line-viewpoints-history\.json/u);
   assert.match(projection, /coveredByMorning/u);
   assert.equal(data.meta.lanes.morning.id, "morning-rss");
   assert.equal(data.meta.lanes.afternoon.id, "afternoon-skill");
   assert.equal(data.meta.lanes.afternoon.declaredCount, data.intake.length);
   assert.ok(data.remarks.every((item) => item.laneCoverage.includes("morning-rss")));
   assert.ok(data.remarks.every((item) => item.aiRelevant === true));
+  assert.ok(data.remarks.some((item) => item.historical === true));
+  assert.ok(data.stats.historicalPublished > 0);
+  assert.ok(data.meta.earliestDate < data.meta.latestDate);
   assert.ok(data.morningIntake.some((item) => item.publicationStatus === "intake_only_non_ai"));
   assert.ok(data.intake.every((item) => item.laneCoverage.includes("afternoon-skill")));
 });

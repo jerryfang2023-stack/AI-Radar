@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T04:59:59.870Z",
+    "generatedAt": "2026-07-18T05:18:30.736Z",
     "latestDataDate": "2026-07-18",
     "currentDate": "2026-07-18",
     "eventCount": 1250,
@@ -23,11 +23,26 @@
     "eventIds": [],
     "viewpointIds": [
       "2077929404219474148",
-      "2077929390806073807"
+      "2077929390806073807",
+      "2074997570317779038",
+      "2074247226038063316",
+      "2072777472970563995",
+      "2072000214634742243",
+      "2071647677591466098",
+      "2069474688619958517",
+      "2069474689819480394",
+      "2069474691010707486",
+      "2067700226669060207",
+      "2064885111477219664",
+      "2064426115255730578",
+      "2064034799711588805",
+      "2063792263067754658",
+      "2063028956211867837",
+      "2063028954546733462"
     ],
     "classificationRefs": [],
     "relatedEntityIds": [],
-    "firstSeen": "2026-07-17",
+    "firstSeen": "2026-06-05",
     "lastSeen": "2026-07-17",
     "handle": "bcherny",
     "role": "Claude Code anthropicai",
@@ -38,7 +53,13 @@
       "AI 应用与平台",
       "Agent",
       "Agent 工作流观点",
-      "Agentic AI"
+      "Agentic AI",
+      "AI 编程",
+      "AI Coding 观点",
+      "AI Coding",
+      "企业工作流",
+      "AI 基础设施",
+      "模型基础设施观点"
     ],
     "relationIds": [],
     "groupedEventIds": {
@@ -63,6 +84,96 @@
         "date": "2026-07-17",
         "title": "在实践中，这意味着让 Claude 具备端到端验证自身工作的能力。这包括启用权限的自动模式，默认开启自动化代码审查和安全审查，并使用能同时管理多个代理的界面（如命令行工具中的代理视图、桌面应用、iOS 和 Android 应用以及标签功能）。要达到更高水平，还需要 /loop、/batch、动态工作流以及子代理的工作树隔离。这不是关于单一功能，而是结合恰当的功能与正确的防护措施，使 Claude 能够以团队可信赖的方式自动化处理整类工作。",
         "sourceUrl": "https://x.com/bcherny/status/2077929390806073807"
+      },
+      {
+        "id": "2074997570317779038",
+        "date": "2026-07-09",
+        "title": "Claude Code 新功能：/checkup 运行 /checkup 可执行以下操作：1. 清理未使用的技能/MCP/插件，节省上下文空间 2. 将本地 CLAUDE.md 与已检入的 CLAUDE.md 去重 3. 将根目录 CLAUDE.md 拆分为嵌套的 CLAUDE.md + 技能 4. 关闭缓慢的钩子 5. 将 Claude Code 更新至最新版本 6. 默认启用自动模式 7. 预批准频繁被拒绝的只读命令……还有其他一些实用功能。/checkup 会在进行任何更改前与你确认。尽情享用吧！",
+        "sourceUrl": "https://x.com/bcherny/status/2074997570317779038"
+      },
+      {
+        "id": "2074247226038063316",
+        "date": "2026-07-07",
+        "title": "这是我们首次讲述如何构建并推出Claude Code的故事，从它在Anthropic安全研究中的起源开始。前路漫漫，我们才完成了1%。https://t.co/QSkt89cB8q",
+        "sourceUrl": "https://x.com/bcherny/status/2074247226038063316"
+      },
+      {
+        "id": "2072777472970563995",
+        "date": "2026-07-03",
+        "title": "Claude Code 中的 Artifacts 功能彻底改变了我的工作方式。非常期待扩展到 Pro 和 Max 版本！https://t.co/JOD0KCPVuU",
+        "sourceUrl": "https://x.com/bcherny/status/2072777472970563995"
+      },
+      {
+        "id": "2072000214634742243",
+        "date": "2026-07-01",
+        "title": "您有所求，我们有所应。Claude Desktop Linux版现已上线！下载链接：https://t.co/gjgHZvbKyi https://t.co/O3P6B3fuGk",
+        "sourceUrl": "https://x.com/bcherny/status/2072000214634742243"
+      },
+      {
+        "id": "2071647677591466098",
+        "date": "2026-06-30",
+        "title": "在下一版Claude Code中：子代理默认在后台运行，这样当你的子代理工作时，你可以继续与Claude对话。如果你希望代理在前台运行，直接告诉Claude即可。",
+        "sourceUrl": "https://x.com/bcherny/status/2071647677591466098"
+      },
+      {
+        "id": "2069474688619958517",
+        "date": "2026-06-24",
+        "title": "我还让Claude监控Slack频道，主动回复人们的问题、起草PR，并在话题解决时用✅❌等特定表情符号回应。设置方法很简单：只需在频道中添加@.Claude，然后用自然语言告诉它执行上述操作即可。",
+        "sourceUrl": "https://x.com/bcherny/status/2069474688619958517"
+      },
+      {
+        "id": "2069474689819480394",
+        "date": "2026-06-24",
+        "title": "在频道中@Claude，它会启动一个带有独立沙箱的实例。该实例会在隔离环境中克隆仓库、编写代码、测试、编译，任务完成后沙箱即被销毁。每个线程对应一个实例，每个频道拥有独立的内存和权限。",
+        "sourceUrl": "https://x.com/bcherny/status/2069474689819480394"
+      },
+      {
+        "id": "2069474691010707486",
+        "date": "2026-06-24",
+        "title": "就是这样。把它指向一个频道，分配一个任务，然后让它开始工作。目前该功能在Slack上处于测试阶段，面向Claude Enterprise和Team客户。更多使用场景即将推出！了解更多：https://t.co/tcvNSCANlf",
+        "sourceUrl": "https://x.com/bcherny/status/2069474691010707486"
+      },
+      {
+        "id": "2067700226669060207",
+        "date": "2026-06-19",
+        "title": "我一直在Claude Code中使用Artifacts处理各种任务：复杂代码的可视化解释、系统架构图、几种动画方案的快速预览，以及与团队共享的数据分析和仪表盘。它们彻底改变了我与Claude协作的方式。期待听到你的想法！",
+        "sourceUrl": "https://x.com/bcherny/status/2067700226669060207"
+      },
+      {
+        "id": "2064885111477219664",
+        "date": "2026-06-11",
+        "title": "来自Code with Claude Tokyo的问候！！https://t.co/OGzffa1w58",
+        "sourceUrl": "https://x.com/bcherny/status/2064885111477219664"
+      },
+      {
+        "id": "2064426115255730578",
+        "date": "2026-06-09",
+        "title": "我们经常强调建立自我验证循环的重要性。尤其是在强大模型能够长时间运行的当下，自我验证是让模型持续运作更久、产出更贴近你预期结果的关键要素——这样你就能在无需频繁检查Claude工作状态的情况下完成更多任务。@delba_oliveira 对此进行了精彩解析，阐述了其具体形态与重要意义。",
+        "sourceUrl": "https://x.com/bcherny/status/2064426115255730578"
+      },
+      {
+        "id": "2064034799711588805",
+        "date": "2026-06-08",
+        "title": "当我们首次在内部演示Claude Code时，Slack上出现了两种截然不同的反应。正式发布一年后，@_catwu和我坐下来聊了聊发生了哪些变化：为什么我改用自动模式而非计划模式、例程如何在我发现bug之前就将其修复、为何我现在大部分编码工作都在手机上完成，以及这个产品未来的发展方向。",
+        "sourceUrl": "https://x.com/bcherny/status/2064034799711588805"
+      },
+      {
+        "id": "2063792263067754658",
+        "date": "2026-06-08",
+        "title": "看到多项基准测试显示，Opus 是长时间运行任务的最佳模型。以下是让 Opus 自主运行数小时/数天的五个技巧： 1. 使用自动模式处理权限，这样 Claude 就不会请求批准 2. 使用动态工作流，让 Claude 协调数百/数千个代理来完成任务 3. 使用 /goal 或 /loop，推动 Claude 持续运行直至完成 4. 在云端使用 Claude Code，这样你可以合上笔记本电脑（最简单的方式是通过桌面或移动应用） 5. 确保 Claude 有办法端到端地自我验证其工作：通过 Chrome 浏览器扩展让 Claude 处理网页端，通过 iOS/Android 模拟 MCP 处理移动端，通过启动完整 Web 服务器或服务处理后端工作",
+        "sourceUrl": "https://x.com/bcherny/status/2063792263067754658"
+      },
+      {
+        "id": "2063028956211867837",
+        "date": "2026-06-05",
+        "title": "Cowork 在处理那些不适合用聊天工具完成的工作时表现最佳：跨多个账户的研究、定期报告、整理收件箱并起草回复。如果你一直好奇，这个月正是了解它能帮你分担哪些工作的好时机。期待你的成果。",
+        "sourceUrl": "https://x.com/bcherny/status/2063028956211867837"
+      },
+      {
+        "id": "2063028954546733462",
+        "date": "2026-06-05",
+        "title": "未来一个月，我们将Claude Cowork的使用额度翻倍。此项调整适用于您的5小时速率限制。如果您一直在积攒一个庞大复杂的项目，现在正是时候。https://t.co/qwjn8cVTUk",
+        "sourceUrl": "https://x.com/bcherny/status/2063028954546733462"
       }
     ]
   },
