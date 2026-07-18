@@ -211,12 +211,16 @@ test("first-line viewpoints uses both monitoring lanes and the three-level V4 pa
   assert.match(script, /data-viewpoint-open/u);
   assert.match(projection, /morning-rss/u);
   assert.match(projection, /afternoon-skill/u);
+  assert.match(projection, /first-line-viewpoints-history\.json/u);
   assert.match(projection, /coveredByMorning/u);
   assert.equal(data.meta.lanes.morning.id, "morning-rss");
   assert.equal(data.meta.lanes.afternoon.id, "afternoon-skill");
   assert.equal(data.meta.lanes.afternoon.declaredCount, data.intake.length);
   assert.ok(data.remarks.every((item) => item.laneCoverage.includes("morning-rss")));
   assert.ok(data.remarks.every((item) => item.aiRelevant === true));
+  assert.ok(data.remarks.some((item) => item.historical === true));
+  assert.ok(data.stats.historicalPublished > 0);
+  assert.ok(data.meta.earliestDate < data.meta.latestDate);
   assert.ok(data.morningIntake.some((item) => item.publicationStatus === "intake_only_non_ai"));
   assert.ok(data.intake.every((item) => item.laneCoverage.includes("afternoon-skill")));
 });
