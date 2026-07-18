@@ -159,10 +159,10 @@ test("data center page uses the official logo and sidebar navigation", () => {
   assert.match(html, />数据中心</u);
   assert.match(html, />应用中心</u);
   assert.match(html, /href="intelligence-map\.html">行业报告</u);
+  assert.match(html, /href="opportunity-map\.html">机会地图</u);
   assert.doesNotMatch(html, />报告中心<\/a>/u);
   assert.doesNotMatch(html, /data-center\.html\?view=companies/u);
   assert.doesNotMatch(html, /data-center\.html\?view=products/u);
-  assert.doesNotMatch(html, />机会地图<\/a>/u);
   assert.doesNotMatch(html, />周报<\/a>/u);
   assert.doesNotMatch(html, />月报<\/a>/u);
   assert.doesNotMatch(html, /全局搜索/u);
@@ -227,7 +227,7 @@ test("first-line viewpoints uses both monitoring lanes and the three-level V4 pa
   assert.ok(data.intake.every((item) => item.laneCoverage.includes("afternoon-skill")));
 });
 
-test("industry reports uses the V4 sidebar and compact V4 headings", () => {
+test("industry reports uses the V4 sidebar and contains reports only", () => {
   const html = fs.readFileSync(path.join(root, "01-SiteV2/site/intelligence-map.html"), "utf8");
   const viewpointPosition = html.indexOf("data-center.html?view=viewpoints");
   const indexPosition = html.indexOf("data-center.html?view=index");
@@ -241,18 +241,35 @@ test("industry reports uses the V4 sidebar and compact V4 headings", () => {
   assert.doesNotMatch(html, /data-center\.html\?view=products/u);
   assert.match(html, /<title>行业报告｜观澜 AI<\/title>/u);
   assert.match(html, /href="intelligence-map\.html" aria-current="page">行业报告</u);
-  assert.match(html, /class="dc-page-head dc-report-page-head"/u);
-  assert.match(html, /<h1 id="page-title">行业报告<\/h1>/u);
-  assert.match(html, /class="dc-page-description">AI 行业周报、月报与机会地图/u);
-  assert.match(html, /class="monthly-group"/u);
-  assert.match(html, /class="weekly-group"/u);
-  assert.match(html, /id="maps-title">机会地图</u);
+  assert.match(html, /href="opportunity-map\.html">机会地图/u);
+  assert.match(html, /class="report-feature-grid"/u);
+  assert.match(html, /REPORTS-V1\.0\.0-periodic-report-center/u);
+  assert.match(html, /class="report-archive-grid"/u);
+  assert.match(html, /最新月报/u);
+  assert.match(html, /最新周报/u);
+  assert.doesNotMatch(html, /data-map-panel|data-cell-modal|industry-reports-frontstage\.json/u);
   assert.doesNotMatch(html, /Reports Center/iu);
   assert.doesNotMatch(html, /关联路径/u);
   assert.doesNotMatch(html, /data-network-list/u);
   assert.doesNotMatch(html, /relationSpecs|buildRelations|renderNetwork/u);
   assert.doesNotMatch(html, /class="wavesight-topbar"/u);
   assert.doesNotMatch(html, /class="wavesight-nav"/u);
+});
+
+test("opportunity map is an independent application-center column", () => {
+  const html = fs.readFileSync(path.join(root, "01-SiteV2/site/opportunity-map.html"), "utf8");
+
+  assert.match(html, /<title>机会地图｜观澜 AI<\/title>/u);
+  assert.match(html, /href="intelligence-map\.html">行业报告/u);
+  assert.match(html, /href="opportunity-map\.html" aria-current="page">机会地图/u);
+  assert.match(html, /id="entry-map"/u);
+  assert.match(html, /OMAP-V1\.0\.0-independent-column/u);
+  assert.match(html, /id="pain-map"/u);
+  assert.match(html, /data-map-panel="entry"/u);
+  assert.match(html, /data-map-panel="pain"/u);
+  assert.match(html, /data-cell-modal/u);
+  assert.match(html, /data\/industry-reports-frontstage\.json/u);
+  assert.doesNotMatch(html, /最新月报|最新周报|report-feature-grid/u);
 });
 
 test("event toolbar is wired to real query controls", () => {

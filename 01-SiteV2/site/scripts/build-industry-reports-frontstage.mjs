@@ -65,7 +65,8 @@ export function buildIndustryReportsData(root = defaultRoot) {
     meta: {
       schemaVersion: "INDUSTRY-REPORTS-FRONTSTAGE-V1.0",
       siteVersion: "SITE-V4.2.0-entity-history",
-      applicationVersion: "IMAP-V2.1.0-v4-unified-frontstage",
+      applicationVersion: "OMAP-V1.0.0-independent-column",
+      opportunityMapVersion: "OMAP-V1.0.0-independent-column",
       activeDate,
       generatedAt: payload.meta?.generatedAt || `${activeDate}T00:00:00.000Z`,
       windowDays: 30,

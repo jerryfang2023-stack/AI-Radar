@@ -43,14 +43,15 @@ Do not scan all Markdown at task start. Read only this file, the required `conte
 ## Current Version
 
 - Current stage: SITE-V4.2.0 entity history; the SITE-V4.1 unified shell remains, while stable entities, factual timelines, and evidence-backed relations are first-class data services. V3 Card/trend data remains an internal compatibility and downstream-application input only.
-- Current frontstage: `01-SiteV2/site/data-center.html`, `01-SiteV2/site/intelligence-map.html`, and their V4 report detail pages.
+- Current frontstage: `01-SiteV2/site/data-center.html`, `01-SiteV2/site/intelligence-map.html`, `01-SiteV2/site/opportunity-map.html`, and the V4 report detail pages.
 - Current dashboard: `01-SiteV2/site/operations-console.html`.
 - Current Business Signals column version: BSIG-V2.2.0-pipeline-stage-ownership.
 - Current First-Line Viewpoints column version: FLV-V1.1.0-history-backfill.
 - Current Community Intelligence column version: CINT-V1.0.2-publication-waiting-gate.
 - Current Enterprise AI / FDE data version: FDE-V2.0.
 - Current AI Hardware data version: HARDWARE-V1.0.
-- Current Industry Reports column version: IMAP-V2.1.0-v4-unified-frontstage.
+- Current Reports Center column version: REPORTS-V1.0.0-periodic-report-center.
+- Current Opportunity Map column version: OMAP-V1.0.0-independent-column.
 - Current Raw contract: RAW-V3.0.
 - Current canonical event contract: EVENT-V1.1.
 - Current entity history contract: ENTITY-V1.0.
@@ -80,7 +81,8 @@ First-line viewpoints are a separate builders column. They are useful for readin
 | Entry | File | Role |
 |---|---|---|
 | Commercial Events / 商业事件 | `01-SiteV2/site/data-center.html?view=events` | source-traceable canonical commercial events |
-| Industry Reports / 行业报告 | `01-SiteV2/site/intelligence-map.html` | monthly / weekly reports and source-backed opportunity maps |
+| Industry Reports / 行业报告 | `01-SiteV2/site/intelligence-map.html` | monthly / weekly reports and report archives |
+| Opportunity Map / 机会地图 | `01-SiteV2/site/opportunity-map.html` | source-backed Entry Point Map and Product Pain Map with evidence modals |
 | Weekly AI Business Change Radar / 周报 | `01-SiteV2/site/weekly-ai-business-change-radar.html` | weekly report detail page, entered from Intelligence Map |
 | First-Line Viewpoints / 一线观点 | `01-SiteV2/site/data-center.html?view=viewpoints` | independent builders viewpoints |
 | Community Intelligence / 社群情报 | `01-SiteV2/site/data-center.html?view=community` | community-sourced cases, tool tactics, opportunities, and document links |
@@ -135,7 +137,7 @@ Rules:
 - FDE, hardware, and tags are projections/assertions from accepted evidence only.
 - Missing and conflicting fields remain explicit.
 - Importance, value, opportunity, trend maturity, recommendation, advice, `why_watch`, and `business_meaning` are forbidden in V4 canonical outputs.
-- The V4 sidebar and Data Center / Industry Reports page plan are the only current public page contract.
+- The V4 sidebar and Data Center / Application Center page plan are the only current public page contract.
 - Targeted company, product, funding, and deployment backfill is an operational discovery queue. Search results remain leads until original-source capture, exact-span Claim extraction, and the responsible V4 gate pass.
 
 ### Raw / Pool / Card Generation

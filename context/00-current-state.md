@@ -21,7 +21,7 @@ WaveSight AI is now on the `SITE-V4.2.0-entity-history` public website and data-
 - The current backend entry is the operations dashboard.
 - The production core turns external sources into SourceArtifacts, RawDocuments, Claims, Entities, CanonicalEvents, domain projections, and queryable exports.
 - Pool is an operational QA queue. Card, trend, opportunity, and report objects are internal compatibility or downstream application assets, not V4 truth assets.
-- Current column versions: First-Line Viewpoints `FLV-V1.1.0-history-backfill`, Community Intelligence `CINT-V1.0.2-publication-waiting-gate`, Industry Reports `IMAP-V2.1.0-v4-unified-frontstage`.
+- Current column versions: First-Line Viewpoints `FLV-V1.1.0-history-backfill`, Community Intelligence `CINT-V1.0.2-publication-waiting-gate`, Reports Center `REPORTS-V1.0.0-periodic-report-center`, Opportunity Map `OMAP-V1.0.0-independent-column`.
 - Current data versions: `RAW-V3.0`, `EVENT-V1.1`, `ENTITY-V1.0`, `RELATION-V2.0`, `BACKFILL-V1.0`, `FDE-V2.0`, `HARDWARE-V1.0`, `TAG-V4.0`.
 
 ## Current Entries
@@ -29,7 +29,8 @@ WaveSight AI is now on the `SITE-V4.2.0-entity-history` public website and data-
 | Entry | File | Role |
 |---|---|---|
 | Data Center | `01-SiteV2/site/data-center.html` | V4 public data layer for Commercial Events, FDE, AI hardware, community intelligence, first-line viewpoints, and a unified Entity Index for companies, products, people, technologies, use cases, and industries |
-| Industry Reports | `01-SiteV2/site/intelligence-map.html` | V4 application-center entry with the shared sidebar; retains Monthly / Weekly reports and source-backed Entry Point Map and Product Pain Map |
+| Industry Reports | `01-SiteV2/site/intelligence-map.html` | V4 application-center entry for latest Monthly / Weekly reports and their archives |
+| Opportunity Map | `01-SiteV2/site/opportunity-map.html` | Independent application-center entry for the source-backed Entry Point Map and Product Pain Map, with click-to-open evidence modals |
 | First-Line Viewpoints | `01-SiteV2/site/data-center.html?view=viewpoints` | Independent builders viewpoint feed, people index, and person timeline |
 | Community Intelligence | `01-SiteV2/site/data-center.html?view=community` | Community-sourced cases, AI tool tactics, commercial opportunities, and document links |
 | Dashboard | `01-SiteV2/site/operations-console.html` | Operations backend and production-chain dashboard |
@@ -85,9 +86,10 @@ Old V2 and V3 public page rules are retired. If they conflict with SITE-V4.2.0, 
 1. Run source capture and the V4 Raw / Claim / Event integrity chain.
 2. Run First-Line Viewpoints through its own builders data lane.
 3. Run Community Intelligence through its local logged-in collection lane and independent GitHub publish PR lane.
-4. Keep Industry Reports as a downstream V4 application and Dashboard as an independent backend; do not write their judgments into V4 canonical data.
-   - Industry Reports opportunity maps update weekly from source-backed `opportunity_signals`, not old `formal_tags`.
-   - Weekly report content must be sourced from `01-SiteV2/content/08-report/`; monthly report content must be sourced from `01-SiteV2/content/08-report/monthly/`.
+4. Keep Industry Reports and Opportunity Map as downstream V4 applications and Dashboard as an independent backend; do not write their judgments into V4 canonical data.
+   - Opportunity Map updates weekly from source-backed `opportunity_signals`, not old `formal_tags`, and publishes under `OMAP-V1.0.0-independent-column`.
+   - Reports Center publishes under `REPORTS-V1.0.0-periodic-report-center`. Weekly report content comes from `01-SiteV2/content/08-report/`; monthly report content comes from `01-SiteV2/content/08-report/monthly/`.
+   - `.github/workflows/periodic-reports-pr.yml` invokes DeepSeek for Markdown only, runs the content acceptance gate, and delegates all HTML/navigation/version writing to `render-periodic-report-pages.mjs` under the monthly and weekly report page-generator Skills.
 5. Persist each producing lane through its own commit / PR boundary.
 6. Publish the site only after merged changes reach `main` and GitHub Pages runs.
 7. Sync merged assets to local Obsidian when the local machine is online.

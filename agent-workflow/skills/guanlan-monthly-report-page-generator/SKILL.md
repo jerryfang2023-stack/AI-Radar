@@ -3,15 +3,16 @@ name: guanlan-monthly-report-page-generator
 description: Use when creating, updating, or repairing WaveSight AI monthly report frontstage pages from `01-SiteV2/content/08-report/monthly/`. Applies to monthly report detail pages, Industry Reports monthly entries and wiring, Guanlan VI page styling, longform report layout, charts/tables/visual modules, and responsive local validation. Do not use for writing the monthly report judgment itself; use `guanlan-monthly-business-structure-report` first.
 metadata:
   guanlan:
-    version: "1.0.2"
-    lane: "Industry Reports"
+    version: "1.1.0"
+    column_version: "REPORTS-V1.0.0-periodic-report-center"
+    lane: "Reports Center"
     status: "current sub-skill"
     order: 96
-    responsibility: "Generate and maintain monthly report frontstage pages from accepted monthly report Markdown."
-    upstream: "monthly report Markdown, Industry Reports page, Guanlan VI rules"
-    downstream: "monthly report detail page, Industry Reports monthly entry, page styles, version metadata"
-    gates: "content-source discipline, full-report rendering, Guanlan VI fit, table readability, responsive visual smoke, frontstage regression, skill self-iteration"
-    recent_learning: "Monthly detail pages must show the full report with rich visual reading structure; nonessential data-boundary fields should be compressed into the appendix, hero helper copy should be removed when the title and core statement already explain the page, and all tables need editorial styling rather than raw grid rendering."
+    responsibility: "Generate and maintain monthly report frontstage pages from accepted monthly report Markdown under the independent Reports Center version."
+    upstream: "accepted monthly report Markdown, Reports Center page, Guanlan VI rules"
+    downstream: "monthly report detail page, Reports Center monthly entry, page styles, REPORTS version metadata"
+    gates: "content acceptance, content-source discipline, REPORTS version boundary, full-report rendering, Guanlan VI fit, table readability, responsive visual smoke, frontstage regression, skill self-iteration"
+    recent_learning: "Monthly detail pages must show the full report with rich visual reading structure; the content gate must pass before the deterministic renderer writes HTML; generated pages and report-center wiring use REPORTS-V1.0.0, while Opportunity Map remains an independent OMAP application."
     mirrored_in_skill_store: true
     memory_required: true
 ---
@@ -20,7 +21,7 @@ metadata:
 
 ## Purpose
 
-Turn an accepted monthly report Markdown file into a WaveSight frontstage reading experience. This skill handles page structure, Industry Reports wiring, visual modules, table treatment, responsive validation, and iterative skill hygiene. It does not decide the monthly business judgment.
+Turn an accepted monthly report Markdown file into a WaveSight Reports Center reading experience. This skill handles page structure, report-center wiring, visual modules, table treatment, responsive validation, and iterative skill hygiene. It does not decide the monthly business judgment or own Opportunity Map.
 
 The periodic controller may invoke this skill only after the monthly content acceptance gate passes. Page generation and page regression are the second gate; a failed content gate must leave the frontstage unchanged.
 
@@ -61,6 +62,7 @@ For detailed rules, load:
    - Use `intelligence-map.html` as the only Industry Reports entrance; `reports.html` remains a compatibility redirect.
    - Show monthly and weekly reports as subcolumns in its report-first area.
    - Keep Industry Reports links compact; avoid duplicate standalone buttons when the time selector already occupies the action area.
+   - Write `REPORTS-V1.0.0-periodic-report-center` into the landing page and monthly detail metadata. Never emit the Opportunity Map column version from this Skill.
 
 4. Build the monthly detail page.
    - Use the same V4 logo header, Data Center / Application Center sidebar, and mobile sidebar behavior as the Data Center and Industry Reports pages.
@@ -80,6 +82,7 @@ For detailed rules, load:
    - Use Playwright visual smoke on desktop and mobile for the detail page and Industry Reports entry.
    - Run `node agent-workflow/tools/frontstage-regression-gate.mjs`.
    - Confirm no mobile horizontal overflow and no console errors.
+   - Confirm the Reports Center landing page and every generated monthly detail use the current REPORTS version from `context/version-ledger.md`.
 
 7. Self-iterate the skill.
    - If a user corrects a repeated monthly-page failure, update `MEMORY.md`, `evals/`, or `examples/` before adding long prose.
@@ -93,6 +96,7 @@ For detailed rules, load:
 - Do not re-add user-deleted fields, helper copy, report-type subtitles, return buttons, hero stat cards, or unnecessary navigation unless explicitly requested.
 - Do not create a second report navigation or restore retired V3 navigation above the Industry Reports content.
 - Do not restore `wavesight-nav.css`, `wavesight-topbar`, or links to the retired V3 column pages.
+- Do not restore the shared `IMAP-V2.1.0` metadata or write the Opportunity Map version into report pages.
 
 ## Output
 
