@@ -1,0 +1,229 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-071
+title: "优酷总裁吴倩：积极拥抱 AI，但 AI 无法取代真人演员"
+title_zh: "优酷总裁吴倩：积极拥抱 AI，但 AI 无法取代真人演员"
+title_translation_status: not_required
+title_translation_method: source_title
+title_translation_model: not_applicable
+original_url: "https://www.ithome.com/0/978/040.htm"
+canonical_url: "https://ithome.com/0/978/040.htm"
+source_name: "IT之家（RSS）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-17T06:37:20.000Z"
+collected_at: 2026-07-18T01:54:58.721Z
+language: mixed
+full_text_hash: a15ea8342b92d2be
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-18/r-071-优酷总裁吴倩-积极拥抱-ai-但-ai-无法取代真人演员.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-18/r-071-优酷总裁吴倩-积极拥抱-ai-但-ai-无法取代真人演员.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: medium
+extraction_method: "content-container"
+readability_score: 64
+extractor_diagnostics: {"readability_score":64,"text_length":1353,"paragraph_count":14,"sentence_count":10,"boilerplate_hits":1,"symbol_ratio":0.0007,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 1353
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"a15ea8342b92d2be","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"优酷总裁吴倩：积极拥抱 AI，但 AI 无法取代真人演员","discovery_summary":"优酷总裁吴倩在\"HorsePower·AI 影像大赛\"开营仪式上表示，AI 正加速影响影视行业，但无法取代真人演员。她认为，AI 能提升创作效率和工业化流程，但真人演员的共情能力、生活经验和情感洞察是作品打动人心的根基。行业未来将走向\"人机协同\"，让 AI 负责效率，创作者和演员掌握\"内容溢价\"的定价权。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/978/040.htm","discovered_at":"2026-07-18T01:46:31.847Z","rank_on_page":247,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 0a07724e9d95c3c1
+content_hash: a15ea8342b92d2be
+semantic_hash: 5f873a36a33b8905
+duplicate_of: ""
+first_seen_at: "2026-07-17T06:37:20.000Z"
+last_seen_at: 2026-07-18T01:54:58.721Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":true,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":5,"importance_reason":"vertical industry solution; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context"],"novelty":3,"evidence_strength":4,"case_richness":4,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["IT之家（RSS）"],"products":[],"people":[],"industries":["制造 / 工业"],"roles":[],"workflows":["计费 / 预算管理"],"business_actions":["发布 / 推出","合作 / 联盟","部署 / 上线","定价 / 计费变化"],"affected_departments":["IT / 安全","财务 / 预算"],"numbers":["7","17","6","22","1.1","8","20","70%"],"quotes":["HorsePower·AI 影像大赛","，让 AI 负责效率，创作者和演员掌握","的定价权。\nIT之家 7 月 17 日消息，由阿里 HappyHorse 与虎鲸文娱集团联合主办的“HorsePower·AI 影像大赛","HappyHorse AI 影视实战营","能否用 AI 替代演员"]}
+evidence_seed: {"company_actions":["虎鲸文娱集团首席运营官兼优酷总裁吴倩在开营仪式上发表致辞。","她指出，AI 正以前所未有的速度影响影视行业，从灵感落地、视觉呈现到分镜设计、后期制作，过去需要大量时间、预算和团队协作才能完成的工作正在被 AI 改写。","但影视作品之所以打动人，从来不只是因为画面新奇或技术先进，更是因为作品有人的温度、能回应人心。"],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"quote","text":"优酷总裁吴倩在\"HorsePower·AI 影像大赛\"开营仪式上表示，AI 正加速影响影视行业，但无法取代真人演员。她认为，AI 能提升创作效率和工业化流程，但真人演员的共情能力、生活经验和情感洞察是作品打动人心的根基。行业未来将走向\"人机协同\"，让 AI 负责效率，创作者和演员掌握\"内容溢价\"的定价权。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"medium"},{"type":"quote","text":"IT之家 7 月 17 日消息，由阿里 HappyHorse 与虎鲸文娱集团联合主办的“HorsePower·AI 影像大赛”今日正式启动了“HappyHorse AI 影视实战营”。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"虎鲸文娱集团首席运营官兼优酷总裁吴倩在开营仪式上发表致辞。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"opinion","text":"吴倩表示，希望所有创作者都能积极拥抱 AI，但不盲目迷信技术。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"她指出，AI 正以前所未有的速度影响影视行业，从灵感落地、视觉呈现到分镜设计、后期制作，过去需要大量时间、预算和团队协作才能完成的工作正在被 AI 改写。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"但影视作品之所以打动人，从来不只是因为画面新奇或技术先进，更是因为作品有人的温度、能回应人心。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-18T01:54:58.721Z
+theme: mature-commercial-signal
+keyword_group: mature-commercial-signal
+copyright_note: local research archive only
+---
+
+# 优酷总裁吴倩：积极拥抱 AI，但 AI 无法取代真人演员
+
+## clean_text
+
+IT之家 7 月 17 日消息，由阿里 HappyHorse 与虎鲸文娱集团联合主办的“HorsePower·AI 影像大赛”今日正式启动了“HappyHorse AI 影视实战营”。虎鲸文娱集团首席运营官兼优酷总裁吴倩在开营仪式上发表致辞。
+吴倩表示，希望所有创作者都能积极拥抱 AI，但不盲目迷信技术。她指出，AI 正以前所未有的速度影响影视行业，从灵感落地、视觉呈现到分镜设计、后期制作，过去需要大量时间、预算和团队协作才能完成的工作正在被 AI 改写。但影视作品之所以打动人，从来不只是因为画面新奇或技术先进，更是因为作品有人的温度、能回应人心。
+面对行业中“能否用 AI 替代演员”的争议话题，吴倩明确表示，AI 无法取代真人演员，优酷将坚持培养和使用真人演员。
+在她看来，影视作品中一个角色的复杂性、一次沉默的重量、一段关系中的克制与爆发，都来自人的理解。真人演员的价值，正是因为他们能够把剧本里的文字转化为有温度、有层次、有生命力的存在。
+吴倩进一步阐释道，AI 带来的是创作能力的延展和创作门槛的降低，可以帮助创作者更快地验证灵感、更大胆地搭建世界，但它无法替代人的生活经验和对情感的洞察，更无法替代真人演员用身体、眼神、呼吸和情绪传递出的真实质感。
+她认为，AI 越是加速内容生产，行业越要重视“人”的价值，人始终是影视内容的根基。创作者的审美、共情能力和讲故事的初心，才是作品穿越周期的底色。在她看来，AI 时代真正稀缺的，是既能驾驭创意、又能掌控技术的“超级创作者”。
+吴倩在谈到影视行业的发展方向时指出，行业未来将走向“人机协同”的精细化分工。她表示，应该让 AI 去提升影视工业化的效率，而让“内容溢价”的定价权掌握在创作者和演员手中。真人负责温度与灵魂，技术负责效率与流程。
+IT之家此前报道，阿里巴巴在今年 6 月 22 日发布了视频生成模型 HappyHorse 1.1，与此同时，“HorsePower·AI 影像大赛”正式启动。
+此次大赛面向全球 AIGC 视频创作者开放，作品征集时间持续至 8 月 20 日。参赛者可在 HappyHorse 官方网站、虎鲸文娱赛事专用创作平台或 updream 官网进行 AI 视频创作并投稿。投稿作品需满足全片 AI 生成画面时长占比不低于 70%、其中基于 HappyHorse 生成的画面时长占比不低于 50% 的要求。大赛优胜者将获得赛事现金奖励、AI 算力积分激励，以及最高价值 100 万元的商单合作机会，并有机会受邀加入张纪中导演《镜花奇缘》剧组。
+相关阅读：
+《 阿里巴巴发布视频生成模型 HappyHorse 1.1：更强动态表现力、更高生成一致性、更优视觉质感 》
+《 阿里霸榜的 AI 视频模型“欢乐马”HappyHorse 将于 4 月 27 日开放测试 》
+《 阿里：视频生成模型 HappyHorse1.0 开启灰测，千问 App 首发支持 15 秒多镜头叙事 》
+《 阿里认领神秘 AI 视频模型“欢乐马”，“HappyHorse_AI”官微上线 》
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## full_text
+
+IT之家 7 月 17 日消息，由阿里 HappyHorse 与虎鲸文娱集团联合主办的“HorsePower·AI 影像大赛”今日正式启动了“HappyHorse AI 影视实战营”。虎鲸文娱集团首席运营官兼优酷总裁吴倩在开营仪式上发表致辞。
+吴倩表示，希望所有创作者都能积极拥抱 AI，但不盲目迷信技术。她指出，AI 正以前所未有的速度影响影视行业，从灵感落地、视觉呈现到分镜设计、后期制作，过去需要大量时间、预算和团队协作才能完成的工作正在被 AI 改写。但影视作品之所以打动人，从来不只是因为画面新奇或技术先进，更是因为作品有人的温度、能回应人心。
+面对行业中“能否用 AI 替代演员”的争议话题，吴倩明确表示，AI 无法取代真人演员，优酷将坚持培养和使用真人演员。
+在她看来，影视作品中一个角色的复杂性、一次沉默的重量、一段关系中的克制与爆发，都来自人的理解。真人演员的价值，正是因为他们能够把剧本里的文字转化为有温度、有层次、有生命力的存在。
+吴倩进一步阐释道，AI 带来的是创作能力的延展和创作门槛的降低，可以帮助创作者更快地验证灵感、更大胆地搭建世界，但它无法替代人的生活经验和对情感的洞察，更无法替代真人演员用身体、眼神、呼吸和情绪传递出的真实质感。
+她认为，AI 越是加速内容生产，行业越要重视“人”的价值，人始终是影视内容的根基。创作者的审美、共情能力和讲故事的初心，才是作品穿越周期的底色。在她看来，AI 时代真正稀缺的，是既能驾驭创意、又能掌控技术的“超级创作者”。
+吴倩在谈到影视行业的发展方向时指出，行业未来将走向“人机协同”的精细化分工。她表示，应该让 AI 去提升影视工业化的效率，而让“内容溢价”的定价权掌握在创作者和演员手中。真人负责温度与灵魂，技术负责效率与流程。
+IT之家此前报道，阿里巴巴在今年 6 月 22 日发布了视频生成模型 HappyHorse 1.1，与此同时，“HorsePower·AI 影像大赛”正式启动。
+此次大赛面向全球 AIGC 视频创作者开放，作品征集时间持续至 8 月 20 日。参赛者可在 HappyHorse 官方网站、虎鲸文娱赛事专用创作平台或 updream 官网进行 AI 视频创作并投稿。投稿作品需满足全片 AI 生成画面时长占比不低于 70%、其中基于 HappyHorse 生成的画面时长占比不低于 50% 的要求。大赛优胜者将获得赛事现金奖励、AI 算力积分激励，以及最高价值 100 万元的商单合作机会，并有机会受邀加入张纪中导演《镜花奇缘》剧组。
+相关阅读：
+《 阿里巴巴发布视频生成模型 HappyHorse 1.1：更强动态表现力、更高生成一致性、更优视觉质感 》
+《 阿里霸榜的 AI 视频模型“欢乐马”HappyHorse 将于 4 月 27 日开放测试 》
+《 阿里：视频生成模型 HappyHorse1.0 开启灰测，千问 App 首发支持 15 秒多镜头叙事 》
+《 阿里认领神秘 AI 视频模型“欢乐马”，“HappyHorse_AI”官微上线 》
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 64
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: medium
+- diagnostics: {"readability_score":64,"text_length":1353,"paragraph_count":14,"sentence_count":10,"boilerplate_hits":1,"symbol_ratio":0.0007,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **quote**｜supports=signal_card_candidate, relationship_graph_input, viewpoint｜importance=high｜confidence=medium
+   优酷总裁吴倩在"HorsePower·AI 影像大赛"开营仪式上表示，AI 正加速影响影视行业，但无法取代真人演员。她认为，AI 能提升创作效率和工业化流程，但真人演员的共情能力、生活经验和情感洞察是作品打动人心的根基。行业未来将走向"人机协同"，让 AI 负责效率，创作者和演员掌握"内容溢价"的定价权。
+
+2. **quote**｜supports=signal_card_candidate, relationship_graph_input, viewpoint｜importance=high｜confidence=medium
+   IT之家 7 月 17 日消息，由阿里 HappyHorse 与虎鲸文娱集团联合主办的“HorsePower·AI 影像大赛”今日正式启动了“HappyHorse AI 影视实战营”。
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   虎鲸文娱集团首席运营官兼优酷总裁吴倩在开营仪式上发表致辞。
+
+4. **opinion**｜supports=signal_card_candidate, relationship_graph_input, viewpoint｜importance=high｜confidence=medium
+   吴倩表示，希望所有创作者都能积极拥抱 AI，但不盲目迷信技术。
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   她指出，AI 正以前所未有的速度影响影视行业，从灵感落地、视觉呈现到分镜设计、后期制作，过去需要大量时间、预算和团队协作才能完成的工作正在被 AI 改写。
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   但影视作品之所以打动人，从来不只是因为画面新奇或技术先进，更是因为作品有人的温度、能回应人心。
+
+## business_elements
+
+- companies: IT之家（RSS）
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 制造 / 工业
+- roles: 暂无公开信息
+- workflows: 计费 / 预算管理
+- business_actions: 发布 / 推出, 合作 / 联盟, 部署 / 上线, 定价 / 计费变化
+- affected_departments: IT / 安全, 财务 / 预算
+- numbers: 7, 17, 6, 22, 1.1, 8, 20, 70%
+- quotes: HorsePower·AI 影像大赛 / ，让 AI 负责效率，创作者和演员掌握 / 的定价权。
+IT之家 7 月 17 日消息，由阿里 HappyHorse 与虎鲸文娱集团联合主办的“HorsePower·AI 影像大赛 / HappyHorse AI 影视实战营 / 能否用 AI 替代演员
+
+## evidence_seed
+
+- company_actions: 虎鲸文娱集团首席运营官兼优酷总裁吴倩在开营仪式上发表致辞。 / 她指出，AI 正以前所未有的速度影响影视行业，从灵感落地、视觉呈现到分镜设计、后期制作，过去需要大量时间、预算和团队协作才能完成的工作正在被 AI 改写。 / 但影视作品之所以打动人，从来不只是因为画面新奇或技术先进，更是因为作品有人的温度、能回应人心。
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_vertical_solution
+- importance_score: 5
+- importance_reason: vertical industry solution; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 4
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: true
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"优酷总裁吴倩：积极拥抱 AI，但 AI 无法取代真人演员","discovery_summary":"优酷总裁吴倩在\"HorsePower·AI 影像大赛\"开营仪式上表示，AI 正加速影响影视行业，但无法取代真人演员。她认为，AI 能提升创作效率和工业化流程，但真人演员的共情能力、生活经验和情感洞察是作品打动人心的根基。行业未来将走向\"人机协同\"，让 AI 负责效率，创作者和演员掌握\"内容溢价\"的定价权。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/978/040.htm","discovered_at":"2026-07-18T01:46:31.847Z","rank_on_page":247,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+优酷总裁吴倩在"HorsePower·AI 影像大赛"开营仪式上表示，AI 正加速影响影视行业，但无法取代真人演员。她认为，AI 能提升创作效率和工业化流程，但真人演员的共情能力、生活经验和情感洞察是作品打动人心的根基。行业未来将走向"人机协同"，让 AI 负责效率，创作者和演员掌握"内容溢价"的定价权。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

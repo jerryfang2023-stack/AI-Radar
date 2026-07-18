@@ -1,0 +1,389 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-090
+title: "Hegseth wants a \"High-T\" military; doctors call it a clinical minefield"
+title_zh: "赫格塞斯希望打造“高睾酮”军队；医生称其为临床雷区"
+title_translation_status: translated
+title_translation_method: deepseek_title_translation
+title_translation_model: deepseek-v4-flash
+original_url: "https://arstechnica.com/health/2026/07/hegseth-wants-a-high-t-military-doctors-call-it-a-clinical-minefield/"
+canonical_url: "https://arstechnica.com/health/2026/07/hegseth-wants-a-high-t-military-doctors-call-it-a-clinical-minefield"
+source_name: "Ars Technica AI"
+source_type: operators
+source_level: C
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: rss-feed
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-17T18:53:11.000Z"
+collected_at: 2026-07-18T01:55:05.531Z
+language: mixed
+full_text_hash: e0aebefce6a624d2
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-18/r-090-hegseth-wants-a-high-t-military-doctors-call-it-a-clinical-minefield.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-18/r-090-hegseth-wants-a-high-t-military-doctors-call-it-a-clinical-minefield.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 91
+extractor_diagnostics: {"readability_score":91,"text_length":14598,"paragraph_count":60,"sentence_count":120,"boilerplate_hits":2,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 14598
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"e0aebefce6a624d2","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 12abbd5582d8263a
+content_hash: e0aebefce6a624d2
+semantic_hash: 5aadc7461c40ab2b
+duplicate_of: ""
+first_seen_at: "2026-07-17T18:53:11.000Z"
+last_seen_at: 2026-07-18T01:55:05.531Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":true,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_technical_trend","importance_score":5,"importance_reason":"technical trend or capability shift; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","commercial_or_risk_context"],"novelty":2,"evidence_strength":4,"case_richness":5,"trend_relevance":5,"guanlan_relevance":4,"emerging_signal_score":3}
+business_elements: {"companies":["Ars Technica AI"],"products":[],"people":[],"industries":["医疗","开发者工具"],"roles":["CIO / IT 负责人"],"workflows":["计费 / 预算管理","采购 / 招投标"],"business_actions":["发布 / 推出","融资 / 投资"],"affected_departments":["IT / 安全","财务 / 预算","销售 / 客服"],"numbers":["30","1","300","260","489","700","27","50"],"quotes":[" military; doctors call it a clinical minefield\n","optimize your performance, your resilience, and your long-term health.","artificial enhancement","restoring and optimizing","longevity,"]}
+evidence_seed: {"company_actions":["Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav On Wednesday, Defense Secretary Pete Hegseth made the startling announcement that the US military would begin requiring all active duty and reserve personnel aged 30 and older to undergo mandatory screening for testosterone deficiency.","The screenings will take place during yearly health assessments.","Those under age 30 can also get screened on request."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 采购 / 招投标 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"quote","text":"\"We're turning the clock back on rational healthcare.\"","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"high"},{"type":"product_update","text":"Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav On Wednesday, Defense Secretary Pete Hegseth made the startling announcement that the US military would begin requiring all active duty and reserve personnel aged 30 and older to undergo mandatory screening for testosterone deficiency.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"The screenings will take place during yearly health assessments.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Those under age 30 can also get screened on request.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"In a short video posted on social media , Hegseth explained to the military community that the screenings and possible subsequent treatments are intended to “optimize your performance, your resilience, and your long-term health.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"quote","text":"” While saying that the initiative wasn’t about “artificial enhancement” and that members could decline treatment, Hegseth claimed that the testing and potential treatment was for “restoring and optimizing” capabilities, protecting “longevity,” and “ensuring you have the biological foundation required to sustain the fight.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-18T01:55:05.531Z
+theme: uncategorized
+keyword_group: uncategorized
+copyright_note: local research archive only
+---
+
+# Hegseth wants a "High-T" military; doctors call it a clinical minefield
+
+## clean_text
+
+Skip to content
+Text
+settings
+Story text
+Size
+Small
+Standard
+Large
+Width
+Standard
+Wide
+Links
+Standard
+Orange
+* Subscribers only
+Learn more
+Minimize to nav
+On Wednesday, Defense Secretary Pete Hegseth made the startling announcement that the US military would begin requiring all active duty and reserve personnel aged 30 and older to undergo mandatory screening for testosterone deficiency. The screenings will take place during yearly health assessments. Those under age 30 can also get screened on request.
+In a short video posted on social media , Hegseth explained to the military community that the screenings and possible subsequent treatments are intended to “optimize your performance, your resilience, and your long-term health.” While saying that the initiative wasn’t about “artificial enhancement” and that members could decline treatment, Hegseth claimed that the testing and potential treatment was for “restoring and optimizing” capabilities, protecting “longevity,” and “ensuring you have the biological foundation required to sustain the fight.”
+But will testosterone screening and treatment actually “optimize” our “warfighters”? Will it help most of them live longer? Should everyone else get screened and treated, too?
+“A big fat ‘Oh, no'”
+Screening people widely for medical conditions and then treating those who need it may sound like a huge social positive. But issues around male hypogonadism—the condition in which the body doesn’t produce enough testosterone—can be complex.
+That’s why the Endocrine Society—made up of experts in the complex systems that release hormones in the body— posted a statement on the topic in the wake of Hegseth’s announcement. The document notes that “there is insufficient evidence to support a general recommendation to perform population-level screening for hypogonadism in asymptomatic men with measurement of blood testosterone level.”
+To find out why, Ars Technica spoke with Professor Bradley Anawalt, chief of medicine at the University of Washington Medical Center. He specializes in endocrinology and men’s health.
+“This is a great big fat ‘Oh, no,’” Anawalt said in reaction to Hegseth’s announcement. “We’re turning the clock back on rational healthcare. … I’m worried about the ethics. I’m worried about the health consequences. I’m worried about unnecessary evaluations, incorrect assessments, and incorrect diagnoses that lead to inappropriate prescriptions of testosterone.”
+To understand why, let’s start with the basic question: Why might someone have low testosterone?
+Causes of “low T”
+Disease states that can cause low testosterone include genetic conditions, such as Klinefelter syndrome (when a male has an extra X chromosome) or a problem with the brain’s pituitary gland, which controls hormone levels in the body. Pituitary problems may come from damage, dysfunction, or tumors (which are often noncancerous).
+For these patients, “It’s not difficult to make the diagnosis,” Anawalt said. Genetic tests can detect Klinefelter disease, for instance, confirming an explanation for low testosterone levels. Similarly, in patients with pituitary problems, tests for other blood hormones (such as luteinizing hormone and follicle-stimulating hormone) can confirm the source of the problem.
+But these conditions are uncommon, affecting maybe 1 percent of men at most, Anawalt said.
+Meanwhile, many other things can lower testosterone levels, such as: cancer treatments, medications (such as corticosteroids or opioids), anabolic steroids, obesity, HIV, surgery, trauma, stress, sleep deprivation, and the natural process of aging. Many of these causes would not necessitate testosterone replacement therapy. For someone with sleep deprivation, the best treatment would be rest, for instance.
+Symptoms
+In patients with true hypogonadism, the primary symptoms are lower libido, erectile dysfunction, lowered sperm count, breast enlargement or tenderness, reduced energy, reduced muscle mass, shrinkage of testes, mood changes (such as irritability or depressed mood), and hot flashes. Over time, low testosterone can cause loss of body hair, muscle bulk, and bone density, and it can reduce red blood cell counts.
+In clear cases of disease, these symptoms are easy to spot. In the general population, it’s much harder.
+“What’s more difficult to suss out is the men that have vague symptoms,” Anawalt said. “‘I don’t feel so good. I’m tired. My energy’s not so good. My erections aren’t what they used to be. My mood is not very good. I’m not concentrating well.’ These are all common things that people are concerned about, but they’re neither specific nor particularly common symptoms of testosterone deficiency.”
+The testing process
+The actual testing mechanics can also be tricky.
+“Tests that measure testosterone are a disaster unless you use a CDC validated or certified testosterone assay,” Anawalt said.
+In recent years, the Centers for Disease Control and Prevention began certifying testosterone blood tests for quality, accuracy, and reliability. Still, not all laboratories use certified tests. This can lead to unusual results. In addition, some laboratories use nonstandard reference ranges for what they consider “normal.”
+The Endocrine Society reports that a common, generally accepted clinical threshold is near 300 ng/dL, though some clinicians may consider the threshold slightly lower, such as in the 260s.
+Anawalt recalled a patient who had been diagnosed with low testosterone based on a normal testosterone test result of 489 ng/dL. The patient’s previous doctor had used a lab that considered the minimum threshold for normal to be 700 ng/dL.
+“It’s a whole other topic to get into the ‘whys’ and the ‘wherefores’ of that, but it’s largely to promote prescriptions of testosterone,” Anawalt said.
+Even if you use an accurate test with a high-quality reference range, testing for testosterone isn’t simple. Hormone levels fluctuate and tend to be highest in the morning. Thus, experts say the testing must be done early in the morning before eating breakfast to get morning fasting levels. They also recommend doing repeat early morning tests to confirm that a low level is consistent and not a one-off.
+Standard testosterone tests also look for levels of total testosterone. “But the evidence indicates that the active form of testosterone hormone is the hormone that is not bound to anything. It’s called free testosterone,” Anawalt explained. (A key binding protein for testosterone is called the “sex hormone binding globulin.”)
+This is critical because some patients may have lab results indicating a low level of total testosterone but still have completely normal levels of free testosterone—the form that seems to matter most.
+This is sometimes the case for men with excess weight (a body mass index of 27 or higher). Evidence suggests that these patients have a decline in sex hormone binding globulin and that their levels of total testosterone will be low. But their levels of free testosterone may be completely fine. This can also be the case for patients with diabetes.
+Even if all these issues are accounted for, testosterone replacement therapy may not be recommended. For instance, if a patient with obesity is diagnosed with hypogonadism and no other condition explains the low testosterone levels (such as a pituitary tumor), the first-line treatment is weight loss.
+Testosterone replacement therapy (TRT)
+Assuming a clear diagnosis of hypogonadism, TRT can reverse some of the dramatic effects of disease. Anawalt gave the example of a man with cancer who has his testicles removed. That man will face decreased bone density, muscle mass, strength, libido, and probably a shorter life expectancy.
+“If you give testosterone therapy to restore that man into the normal range, you will bring bone density and bone mass up, and muscle mass and muscle strength up,” he said. “And it’s possible that it might address the concern of a shortened lifespan by a couple of years.”
+For people without such a clear need, though, benefits may be nonexistent.
+If you give a man with normal testosterone levels a TRT dose intended for someone who has testosterone deficiency, “You’re not going to do anything for performance,” Anawalt said.
+Generally, the benefits of TRT will depend on the severity of the deficiency. But “for a 50-year-old soldier who comes back with a testosterone that is just a little low, most of these men are not going to have any substantial benefit with testosterone therapy,” Anawalt added.
+The benefits Hegseth mentioned in his social media video do not appear to be widely supported by evidence. There’s no evidence testosterone will extend a healthy person’s life, for instance—though it may restore natural longevity in people with clear disease. Additionally, studies looking into the effects of TRT on cognition have found no measurable benefit.
+Risks of TRT
+One of the obvious concerns about Hegseth’s plan to screen young men—those in their 30s or even younger—is that TRT has real side effects.
+TRT shuts down sperm production, for instance, which can thwart plans to start a family. Sperm counts can rebound once off the therapy, but the higher the dose and longer the treatment, the longer it takes to recover. After TRT treatment for a year or two, it may take six months to a year until sperm counts are back to normal.
+Other risks include high red blood cell counts, acne, increased prostate size, and sleep apnea.
+Some evidence of harms from testosterone stem from people who abuse the hormone, taking levels well above what would be used to bring a patient with hypogonadism into a normal range. Such doses are used based on claims that they can increase strength, particularly in athletes. Those claims were echoed by Hegseth in his announcement this week mentioning enhancement and optimization.
+To test if these claims are real, a 1996 randomized controlled trial examined the use of testosterone doses at least six times higher than a normal TRT dose, and it gave them to healthy men. The trial found that the high dose did, in fact, improve strength when combined with standardized strength training.
+But data from elsewhere has raised concerns about the risks of such high doses, including higher risks of cardiovascular disease and prostate cancer. The authors of that 1996 trial were themselves cautious in their conclusions. “Our results in no way justify the use of anabolic–androgenic steroids in sports, because, with extended use, such drugs have potentially serious adverse effects on the cardiovascular system, prostate, lipid metabolism, and insulin sensitivity,” they noted.
+That trial only lasted for three months, so there was no data on possible long-term effects.
+The Endocrine Society similarly warns that TRT is only meant for hypogonadism. “Boosting testosterone is NOT approved by the US Food and Drug Administration to help improve your strength, athletic performance, physical appearance, or to treat or prevent problems associated with aging,” the society warns. “Using testosterone for these purposes may be harmful to your health.”
+Given concerns over increased cardiovascular risk, another randomized and controlled trial called TRAVERSE looked for such problems with standard TRT. The trial enrolled middle-aged and older men with hypogonadism who already had cardiovascular disease or were at high risk. The study found that conventional TRT did not raise the risk further for cardiovascular disease. But the study did signal that TRT could raise the risk of blood clots in the lungs, which is potentially life-threatening. The Endocrine Society flagged this risk in their statement this week.
+Another, potentially overlooked risk that Anawalt noted is about coming off testosterone. People with clear disease will be on the hormone for the rest of their life, he said. But for those who are taking it without such a need, they may go off the therapy at some point. If they do, they will go through a withdrawal syndrome that is generally miserable.
+“They feel crappy,” Anawalt said. “They won’t be making their own testosterone for months or even longer than a year.”
+Screening in the military
+Given the complexity of diagnosing and treating hypogonadism, Anawalt is gravely concerned about Hegseth’s plan to make screening mandatory.
+“This is basically one giant experiment without consent,” he said. “It is going to lead to inappropriate evaluations, inappropriate diagnoses of testosterone deficiency, and likely going to lead to the prescription of testosterone to a number of young men.”
+Further, he worries that testosterone is being seen as “magic,” driving people beyond the military to get screened unnecessarily. Anawalt himself has a six-month-long waiting list for patients looking to have their testosterone checked. One of his own family members in his 40s recently called and asked if he and his friends should go on TRT.
+But the endocrine system is complex, and “simple” solutions can lead to problems. To illustrate the point, Anawalt pointed to a prior hypothesis that testosterone could be used to help people lose weight because it could boost their metabolism. At the time, this made total sense. In trials, testosterone did help people lose weight—but it also made their bone density decline. Their muscle mass also declined relative to their fat mass, and they developed irregular heartbeats.
+“It seemed like a great idea, seemed intuitive,” he said. “And it was wrong.”
+“We doctors, we’re not a cabal trying to withhold some secret recipe,” Anawalt said. “If testosterone was good for all men, we’d be telling everybody that. We’re not withholding information. What we’re saying is that the information available and prior experience suggests we should be cautious and do studies.”
+Beth Mole
+Senior Health Reporter
+Beth Mole
+Senior Health Reporter
+Beth is Ars Technica’s Senior Health Reporter. Beth has a Ph.D. in microbiology from the University of North Carolina at Chapel Hill and attended the Science Communication program at the University of California, Santa Cruz. She specializes in covering infectious diseases, public health, and microbes.
+148 Comments
+Comments
+Forum view
+Loading comments...
+Prev story
+Next story
+1.
+SpaceX scrubs Starship launch after some of its engines didn't start
+2.
+Two Trump health nominees crash and burn in tense Senate hearing
+3.
+Sheetz is quitting VMware, migrating 11,000 virtual machines
+4.
+Linus Torvalds to critics of AI coding in Linux: "Fork it. Or just walk away."
+5.
+2026 Toyota RAV4 plug-in: Big battery means daily drives are all-electric
+Customize
+
+## full_text
+
+Skip to content
+Text
+settings
+Story text
+Size
+Small
+Standard
+Large
+Width
+Standard
+Wide
+Links
+Standard
+Orange
+* Subscribers only
+Learn more
+Minimize to nav
+On Wednesday, Defense Secretary Pete Hegseth made the startling announcement that the US military would begin requiring all active duty and reserve personnel aged 30 and older to undergo mandatory screening for testosterone deficiency. The screenings will take place during yearly health assessments. Those under age 30 can also get screened on request.
+In a short video posted on social media , Hegseth explained to the military community that the screenings and possible subsequent treatments are intended to “optimize your performance, your resilience, and your long-term health.” While saying that the initiative wasn’t about “artificial enhancement” and that members could decline treatment, Hegseth claimed that the testing and potential treatment was for “restoring and optimizing” capabilities, protecting “longevity,” and “ensuring you have the biological foundation required to sustain the fight.”
+But will testosterone screening and treatment actually “optimize” our “warfighters”? Will it help most of them live longer? Should everyone else get screened and treated, too?
+“A big fat ‘Oh, no'”
+Screening people widely for medical conditions and then treating those who need it may sound like a huge social positive. But issues around male hypogonadism—the condition in which the body doesn’t produce enough testosterone—can be complex.
+That’s why the Endocrine Society—made up of experts in the complex systems that release hormones in the body— posted a statement on the topic in the wake of Hegseth’s announcement. The document notes that “there is insufficient evidence to support a general recommendation to perform population-level screening for hypogonadism in asymptomatic men with measurement of blood testosterone level.”
+To find out why, Ars Technica spoke with Professor Bradley Anawalt, chief of medicine at the University of Washington Medical Center. He specializes in endocrinology and men’s health.
+“This is a great big fat ‘Oh, no,’” Anawalt said in reaction to Hegseth’s announcement. “We’re turning the clock back on rational healthcare. … I’m worried about the ethics. I’m worried about the health consequences. I’m worried about unnecessary evaluations, incorrect assessments, and incorrect diagnoses that lead to inappropriate prescriptions of testosterone.”
+To understand why, let’s start with the basic question: Why might someone have low testosterone?
+Causes of “low T”
+Disease states that can cause low testosterone include genetic conditions, such as Klinefelter syndrome (when a male has an extra X chromosome) or a problem with the brain’s pituitary gland, which controls hormone levels in the body. Pituitary problems may come from damage, dysfunction, or tumors (which are often noncancerous).
+For these patients, “It’s not difficult to make the diagnosis,” Anawalt said. Genetic tests can detect Klinefelter disease, for instance, confirming an explanation for low testosterone levels. Similarly, in patients with pituitary problems, tests for other blood hormones (such as luteinizing hormone and follicle-stimulating hormone) can confirm the source of the problem.
+But these conditions are uncommon, affecting maybe 1 percent of men at most, Anawalt said.
+Meanwhile, many other things can lower testosterone levels, such as: cancer treatments, medications (such as corticosteroids or opioids), anabolic steroids, obesity, HIV, surgery, trauma, stress, sleep deprivation, and the natural process of aging. Many of these causes would not necessitate testosterone replacement therapy. For someone with sleep deprivation, the best treatment would be rest, for instance.
+Symptoms
+In patients with true hypogonadism, the primary symptoms are lower libido, erectile dysfunction, lowered sperm count, breast enlargement or tenderness, reduced energy, reduced muscle mass, shrinkage of testes, mood changes (such as irritability or depressed mood), and hot flashes. Over time, low testosterone can cause loss of body hair, muscle bulk, and bone density, and it can reduce red blood cell counts.
+In clear cases of disease, these symptoms are easy to spot. In the general population, it’s much harder.
+“What’s more difficult to suss out is the men that have vague symptoms,” Anawalt said. “‘I don’t feel so good. I’m tired. My energy’s not so good. My erections aren’t what they used to be. My mood is not very good. I’m not concentrating well.’ These are all common things that people are concerned about, but they’re neither specific nor particularly common symptoms of testosterone deficiency.”
+The testing process
+The actual testing mechanics can also be tricky.
+“Tests that measure testosterone are a disaster unless you use a CDC validated or certified testosterone assay,” Anawalt said.
+In recent years, the Centers for Disease Control and Prevention began certifying testosterone blood tests for quality, accuracy, and reliability. Still, not all laboratories use certified tests. This can lead to unusual results. In addition, some laboratories use nonstandard reference ranges for what they consider “normal.”
+The Endocrine Society reports that a common, generally accepted clinical threshold is near 300 ng/dL, though some clinicians may consider the threshold slightly lower, such as in the 260s.
+Anawalt recalled a patient who had been diagnosed with low testosterone based on a normal testosterone test result of 489 ng/dL. The patient’s previous doctor had used a lab that considered the minimum threshold for normal to be 700 ng/dL.
+“It’s a whole other topic to get into the ‘whys’ and the ‘wherefores’ of that, but it’s largely to promote prescriptions of testosterone,” Anawalt said.
+Even if you use an accurate test with a high-quality reference range, testing for testosterone isn’t simple. Hormone levels fluctuate and tend to be highest in the morning. Thus, experts say the testing must be done early in the morning before eating breakfast to get morning fasting levels. They also recommend doing repeat early morning tests to confirm that a low level is consistent and not a one-off.
+Standard testosterone tests also look for levels of total testosterone. “But the evidence indicates that the active form of testosterone hormone is the hormone that is not bound to anything. It’s called free testosterone,” Anawalt explained. (A key binding protein for testosterone is called the “sex hormone binding globulin.”)
+This is critical because some patients may have lab results indicating a low level of total testosterone but still have completely normal levels of free testosterone—the form that seems to matter most.
+This is sometimes the case for men with excess weight (a body mass index of 27 or higher). Evidence suggests that these patients have a decline in sex hormone binding globulin and that their levels of total testosterone will be low. But their levels of free testosterone may be completely fine. This can also be the case for patients with diabetes.
+Even if all these issues are accounted for, testosterone replacement therapy may not be recommended. For instance, if a patient with obesity is diagnosed with hypogonadism and no other condition explains the low testosterone levels (such as a pituitary tumor), the first-line treatment is weight loss.
+Testosterone replacement therapy (TRT)
+Assuming a clear diagnosis of hypogonadism, TRT can reverse some of the dramatic effects of disease. Anawalt gave the example of a man with cancer who has his testicles removed. That man will face decreased bone density, muscle mass, strength, libido, and probably a shorter life expectancy.
+“If you give testosterone therapy to restore that man into the normal range, you will bring bone density and bone mass up, and muscle mass and muscle strength up,” he said. “And it’s possible that it might address the concern of a shortened lifespan by a couple of years.”
+For people without such a clear need, though, benefits may be nonexistent.
+If you give a man with normal testosterone levels a TRT dose intended for someone who has testosterone deficiency, “You’re not going to do anything for performance,” Anawalt said.
+Generally, the benefits of TRT will depend on the severity of the deficiency. But “for a 50-year-old soldier who comes back with a testosterone that is just a little low, most of these men are not going to have any substantial benefit with testosterone therapy,” Anawalt added.
+The benefits Hegseth mentioned in his social media video do not appear to be widely supported by evidence. There’s no evidence testosterone will extend a healthy person’s life, for instance—though it may restore natural longevity in people with clear disease. Additionally, studies looking into the effects of TRT on cognition have found no measurable benefit.
+Risks of TRT
+One of the obvious concerns about Hegseth’s plan to screen young men—those in their 30s or even younger—is that TRT has real side effects.
+TRT shuts down sperm production, for instance, which can thwart plans to start a family. Sperm counts can rebound once off the therapy, but the higher the dose and longer the treatment, the longer it takes to recover. After TRT treatment for a year or two, it may take six months to a year until sperm counts are back to normal.
+Other risks include high red blood cell counts, acne, increased prostate size, and sleep apnea.
+Some evidence of harms from testosterone stem from people who abuse the hormone, taking levels well above what would be used to bring a patient with hypogonadism into a normal range. Such doses are used based on claims that they can increase strength, particularly in athletes. Those claims were echoed by Hegseth in his announcement this week mentioning enhancement and optimization.
+To test if these claims are real, a 1996 randomized controlled trial examined the use of testosterone doses at least six times higher than a normal TRT dose, and it gave them to healthy men. The trial found that the high dose did, in fact, improve strength when combined with standardized strength training.
+But data from elsewhere has raised concerns about the risks of such high doses, including higher risks of cardiovascular disease and prostate cancer. The authors of that 1996 trial were themselves cautious in their conclusions. “Our results in no way justify the use of anabolic–androgenic steroids in sports, because, with extended use, such drugs have potentially serious adverse effects on the cardiovascular system, prostate, lipid metabolism, and insulin sensitivity,” they noted.
+That trial only lasted for three months, so there was no data on possible long-term effects.
+The Endocrine Society similarly warns that TRT is only meant for hypogonadism. “Boosting testosterone is NOT approved by the US Food and Drug Administration to help improve your strength, athletic performance, physical appearance, or to treat or prevent problems associated with aging,” the society warns. “Using testosterone for these purposes may be harmful to your health.”
+Given concerns over increased cardiovascular risk, another randomized and controlled trial called TRAVERSE looked for such problems with standard TRT. The trial enrolled middle-aged and older men with hypogonadism who already had cardiovascular disease or were at high risk. The study found that conventional TRT did not raise the risk further for cardiovascular disease. But the study did signal that TRT could raise the risk of blood clots in the lungs, which is potentially life-threatening. The Endocrine Society flagged this risk in their statement this week.
+Another, potentially overlooked risk that Anawalt noted is about coming off testosterone. People with clear disease will be on the hormone for the rest of their life, he said. But for those who are taking it without such a need, they may go off the therapy at some point. If they do, they will go through a withdrawal syndrome that is generally miserable.
+“They feel crappy,” Anawalt said. “They won’t be making their own testosterone for months or even longer than a year.”
+Screening in the military
+Given the complexity of diagnosing and treating hypogonadism, Anawalt is gravely concerned about Hegseth’s plan to make screening mandatory.
+“This is basically one giant experiment without consent,” he said. “It is going to lead to inappropriate evaluations, inappropriate diagnoses of testosterone deficiency, and likely going to lead to the prescription of testosterone to a number of young men.”
+Further, he worries that testosterone is being seen as “magic,” driving people beyond the military to get screened unnecessarily. Anawalt himself has a six-month-long waiting list for patients looking to have their testosterone checked. One of his own family members in his 40s recently called and asked if he and his friends should go on TRT.
+But the endocrine system is complex, and “simple” solutions can lead to problems. To illustrate the point, Anawalt pointed to a prior hypothesis that testosterone could be used to help people lose weight because it could boost their metabolism. At the time, this made total sense. In trials, testosterone did help people lose weight—but it also made their bone density decline. Their muscle mass also declined relative to their fat mass, and they developed irregular heartbeats.
+“It seemed like a great idea, seemed intuitive,” he said. “And it was wrong.”
+“We doctors, we’re not a cabal trying to withhold some secret recipe,” Anawalt said. “If testosterone was good for all men, we’d be telling everybody that. We’re not withholding information. What we’re saying is that the information available and prior experience suggests we should be cautious and do studies.”
+Beth Mole
+Senior Health Reporter
+Beth Mole
+Senior Health Reporter
+Beth is Ars Technica’s Senior Health Reporter. Beth has a Ph.D. in microbiology from the University of North Carolina at Chapel Hill and attended the Science Communication program at the University of California, Santa Cruz. She specializes in covering infectious diseases, public health, and microbes.
+148 Comments
+Comments
+Forum view
+Loading comments...
+Prev story
+Next story
+1.
+SpaceX scrubs Starship launch after some of its engines didn't start
+2.
+Two Trump health nominees crash and burn in tense Senate hearing
+3.
+Sheetz is quitting VMware, migrating 11,000 virtual machines
+4.
+Linus Torvalds to critics of AI coding in Linux: "Fork it. Or just walk away."
+5.
+2026 Toyota RAV4 plug-in: Big battery means daily drives are all-electric
+Customize
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 91
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":91,"text_length":14598,"paragraph_count":60,"sentence_count":120,"boilerplate_hits":2,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **quote**｜supports=signal_card_candidate, relationship_graph_input, viewpoint｜importance=medium｜confidence=high
+   "We're turning the clock back on rational healthcare."
+
+2. **product_update**｜supports=signal_card_candidate, relationship_graph_input, business_change｜importance=medium｜confidence=high
+   Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav On Wednesday, Defense Secretary Pete Hegseth made the startling announcement that the US military would begin requiring all active duty and reserve personnel aged 30 and older to undergo mandatory screening for testosterone deficiency.
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   The screenings will take place during yearly health assessments.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Those under age 30 can also get screened on request.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   In a short video posted on social media , Hegseth explained to the military community that the screenings and possible subsequent treatments are intended to “optimize your performance, your resilience, and your long-term health.
+
+6. **quote**｜supports=signal_card_candidate, relationship_graph_input, viewpoint｜importance=medium｜confidence=high
+   ” While saying that the initiative wasn’t about “artificial enhancement” and that members could decline treatment, Hegseth claimed that the testing and potential treatment was for “restoring and optimizing” capabilities, protecting “longevity,” and “ensuring you have the biological foundation required to sustain the fight.
+
+## business_elements
+
+- companies: Ars Technica AI
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 医疗, 开发者工具
+- roles: CIO / IT 负责人
+- workflows: 计费 / 预算管理, 采购 / 招投标
+- business_actions: 发布 / 推出, 融资 / 投资
+- affected_departments: IT / 安全, 财务 / 预算, 销售 / 客服
+- numbers: 30, 1, 300, 260, 489, 700, 27, 50
+- quotes:  military; doctors call it a clinical minefield
+ / optimize your performance, your resilience, and your long-term health. / artificial enhancement / restoring and optimizing / longevity,
+
+## evidence_seed
+
+- company_actions: Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav On Wednesday, Defense Secretary Pete Hegseth made the startling announcement that the US military would begin requiring all active duty and reserve personnel aged 30 and older to undergo mandatory screening for testosterone deficiency. / The screenings will take place during yearly health assessments. / Those under age 30 can also get screened on request.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 采购 / 招投标 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_technical_trend
+- importance_score: 5
+- importance_reason: technical trend or capability shift; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,commercial_or_risk_context
+- novelty: 2
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 5
+- guanlan_relevance: 4
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: true
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+"We're turning the clock back on rational healthcare."
+
+## 采集备注
+
+该条目由 rss-feed 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

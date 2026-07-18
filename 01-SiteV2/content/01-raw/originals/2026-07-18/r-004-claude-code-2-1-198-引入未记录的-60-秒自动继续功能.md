@@ -1,0 +1,790 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-004
+title: "Claude Code 2.1.198 引入未记录的 60 秒自动继续功能"
+title_zh: "Claude Code 2.1.198 引入未记录的 60 秒自动继续功能"
+title_translation_status: not_required
+title_translation_method: source_title
+title_translation_model: not_applicable
+original_url: "https://www.olafalders.com/2026/07/17/claude-code-anatomy-of-a-misfeature"
+canonical_url: "https://olafalders.com/2026/07/17/claude-code-anatomy-of-a-misfeature"
+source_name: "Hacker News 热门（buzzing.cc 中文翻译）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: changelog_or_release
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-17T00:00:00.000Z"
+collected_at: 2026-07-18T01:54:19.743Z
+language: mixed
+full_text_hash: 621baf402989c2bf
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-18/r-004-claude-code-2-1-198-引入未记录的-60-秒自动继续功能.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-18/r-004-claude-code-2-1-198-引入未记录的-60-秒自动继续功能.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":40014,"paragraph_count":365,"sentence_count":278,"boilerplate_hits":0,"symbol_ratio":0.0082,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+has_full_text: true
+content_length: 40014
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"621baf402989c2bf","missing":[]}
+source_volatility: high
+community_name: "Hacker News 热门（buzzing.cc 中文翻译）"
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: user_feedback_signal
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"Claude Code 2.1.198 引入未记录的 60 秒自动继续功能","discovery_summary":"Anthropic 在 2026 年 7 月 1 日发布的 Claude Code 2.1.198 中，未在更新日志说明便加入了智能体在用户 60 秒无输入后自动按最佳判断继续执行的功能。该行为可通过环境变量 `CLAUDE_AFK_TIMEOUT_MS` 控制，并在 7 月 3 日的 2.1.200 版本中被修复，但事件已引发对用户信任和发布流程的质疑。","source_name":"Hacker News 热门（buzzing.cc 中文翻译）","origin_url":"https://www.olafalders.com/2026/07/17/claude-code-anatomy-of-a-misfeature","discovered_at":"2026-07-18T01:46:31.819Z","rank_on_page":130,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: bdf2300c4ca03c94
+content_hash: 46e70e132de521ff
+semantic_hash: d57e56704be1a8a5
+duplicate_of: ""
+first_seen_at: "2026-07-17T00:00:00.000Z"
+last_seen_at: 2026-07-18T01:54:19.743Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":true,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["Hacker News 热门（buzzing.cc 中文翻译）","Anthropic","GitHub","AWS"],"products":["Claude","agents","claude","agent","MCP"],"people":[],"industries":["开发者工具"],"roles":["CIO / IT 负责人"],"workflows":["合同审阅 / 法律研究","权限 / 安全治理","部署 / 集成交付"],"business_actions":["发布 / 推出","部署 / 上线"],"affected_departments":["IT / 安全"],"numbers":["2.1","198","60","2026","7","1","3","200"],"quotes":[" Mechanical egg timer ","some answers exist","continued with the answers selected so far","continued without an answer","auto-continue in "]}
+evidence_seed: {"company_actions":["Padded to a wider frame; this adaptation is likewise licensed CC BY-SA 3.","On Canada Day (July 1), 2026, Anthropic shipped a surprising &ldquo;easter egg&rdquo; to users of Claude Code: 2.","198 includes an efficiency bypass which allows agents to continue on without being blocked on direction from a human."],"case_details":[],"workflow_changes":["Anthropic 在 2026 年 7 月 1 日发布的 Claude Code 2.1.198 中，未在更新日志说明便加入了智能体在用户 60 秒无输入后自动按最佳判断继续执行的功能。该行为可通过环境变量 `CLAUDE_AFK_TIMEOUT_MS` 控制，并在 7 月 3 日的 2.1.200 版本中被修复，但事件已引发对用户信任和发布流程的质疑。"],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"workflow_change","text":"Anthropic 在 2026 年 7 月 1 日发布的 Claude Code 2.1.198 中，未在更新日志说明便加入了智能体在用户 60 秒无输入后自动按最佳判断继续执行的功能。该行为可通过环境变量 `CLAUDE_AFK_TIMEOUT_MS` 控制，并在 7 月 3 日的 2.1.200 版本中被修复，但事件已引发对用户信任和发布流程的质疑。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"quote","text":"#AI #security #cli #automation Claude Code: Anatomy of a Misfeature by Olaf Alders July 17, 2026 · 29 min read · 6,163 words contents \" Mechanical egg timer \" by Hustvedt is licensed under CC BY-SA 3.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Padded to a wider frame; this adaptation is likewise licensed CC BY-SA 3.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"On Canada Day (July 1), 2026, Anthropic shipped a surprising &ldquo;easter egg&rdquo; to users of Claude Code: 2.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"198 includes an efficiency bypass which allows agents to continue on without being blocked on direction from a human.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"You essentially get a 60 second timer after Claude Code asks for input.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-18T01:54:19.743Z
+theme: outside-core-exploration
+keyword_group: outside-core-exploration
+copyright_note: local research archive only
+---
+
+# Claude Code 2.1.198 引入未记录的 60 秒自动继续功能
+
+## clean_text
+
+#AI #security #cli #automation
+Claude Code: Anatomy of a Misfeature
+by Olaf Alders
+July 17, 2026
+· 29 min read
+· 6,163 words
+contents
+" Mechanical egg timer " by Hustvedt is licensed under CC BY-SA 3.0 . Padded to a wider frame; this adaptation is likewise licensed CC BY-SA 3.0.
+On Canada Day (July 1), 2026, Anthropic shipped a surprising &ldquo;easter egg&rdquo; to
+users of Claude Code: 2.1.198 includes an efficiency bypass which allows
+agents to continue on without being blocked on direction from a human. You
+essentially get a 60 second timer after Claude Code asks for input. If you miss
+the window, Claude Code helpfully does what it thinks is best and continues on
+its way. It looks like this:
+● Claude asked:
+⎿ …
+● No response after 60s — continued without an answer
+● The user stepped away. I'll proceed with best judgment. My plan:
+Note: the above is taken verbatim from one of my own claude sessions, with the questions having been trimmed.
+If you find this behaviour surprising, you&rsquo;re not alone. Let&rsquo;s consider the possible consequences:
+Do you have to take your laptop to the kitchen with you when you&rsquo;re making a sandwich? What happens if you are afk during this window?
+How many agents are you running at once? Can you possibly observe them all at the same time? What if two or more agents ask for your input during the same 60 second window?
+What if the agent makes the wrong choice? How many tokens have been burned in the meantime?
+What if you are using agents for deployments? (Yes, I know, but what if )
+These are reasonable things you might consider when shipping this feature and maybe you&rsquo;d document your reasoning in the changelog. But what if you never mentioned the new defaults in the changelog at all? Wouldn&rsquo;t that be even more surprising? (Spoiler: it was!)
+The story has a (sort of) happy ending. Move fast and break things does not necessarily preclude move fast and fix things. Within a couple of days a fix was shipped, but where does that leave user trust in this product?
+We&rsquo;ve learned a few things:
+Surprising features in Claude Code can in theory (and in practice) be shipped by Anthropic on a daily cadence
+Not every feature will necessarily appear in the changelog
+Things that should not be defaults may not have a documented off switch
+Claude Code&rsquo;s auto update feature feels more like YOLO mode than we might have suspected early on
+There are a few things I don&rsquo;t know if we have learned:
+How do humans fit into this equation?
+Did a human dream up the feature?
+Did a human write (or have an agent write) this feature?
+Did a human review the feature?
+Did a human sign off on the feature?
+Did a human merge the feature?
+Did a human opt out of documenting the feature or adding it to the changelog?
+Did a human release manager diff the release with the previous release and give it their seal of approval before it went out the door?
+Personally I would find it hard to believe that a human was gating all of these
+steps without asking &ldquo;is this a good idea?&rdquo;. If you told me that Claude Code
+actually built the feature, shipped it, signed off on it and then deemed it
+unworthy of documentation, that&rsquo;s something I&rsquo;m more inclined to believe, but I
+just don&rsquo;t know. Maybe it&rsquo;s some combination of those two things. Maybe a
+number of things went wrong, but I think it&rsquo;s clear that this never should have
+happened. And I say this as someone who has had at least one performance review
+where my manager said &ldquo;well, you did put a serious bug into production&rdquo;.
+I&rsquo;ve wondered a bit about how this happened and what kind of post-mortem is
+available in the public record. So, I&rsquo;ve asked Claude Code to investigate
+itself. To Claude&rsquo;s credit, it seems to have no filter that prevents
+self-reflection regarding this code. So, full disclosure, what follows is
+mostly Claude&rsquo;s work, so take that for what it&rsquo;s worth and if you rely on any
+key assumptions, it&rsquo;s worth reproducing them in isolation.
+Claude&rsquo;s research begins here.
+# Timeline
+2026-06-29 — 2.1.196 released; the reporter&rsquo;s &ldquo;last working version (I am guessing)&rdquo;
+2026-06-30 — 2.1.197 released; one changelog line, the Sonnet 5 launch
+2026-07-01 — 2.1.198 released — the version the reporter pins the regression to. No public commit shows the change; the only public trace of this release is the bot commit publishing its notes ( 75709ea ), which touches nothing but CHANGELOG.md and feed.xml
+2026-07-02 02:54 UTC — issue #73125 filed by Aleksey Nogin
+2026-07-02 03:45 UTC — a commenter surfaces the escape hatch : CLAUDE_AFK_TIMEOUT_MS . Traded peer-to-peer in the thread, not pointed to from any release note
+2026-07-02 — 2.1.199 ships 24 entries while the issue is open. Still no mention.
+2026-07-03 — 2.1.200 reverses the behaviour; again the only public trace is the notes commit ( 1322e9b )
+2026-07-04 18:04 UTC — issue closed
+Reaction/scale on the issue: 384 👍 , 143 comments — not a niche complaint
+Reporter&rsquo;s environment: 2.1.198 , &ldquo;last working 2.1.196 (guessing)&rdquo;, Opus, AWS Bedrock, VS Code terminal
+git clone https://github.com/anthropics/claude-code.git
+cd claude-code
+# When did the fix land, and in which version?
+git log -1 --format = '%h %ai' -S 'no longer auto-continue by default' -- CHANGELOG.md
+# 1322e9ba 2026-07-03 16:52:26 +0000
+# When did the version that shipped the bug land?
+git log -1 --format = '%h %ai' -S '## 2.1.198' -- CHANGELOG.md
+# 75709eac 2026-07-01 20:45:29 +0000
+# The misfeature
+AskUserQuestion is the tool Claude Code uses to stop and ask the human a question mid-task
+New behaviour: after 60 seconds of inactivity , the tool auto-returns a &ldquo;proceed anyway&rdquo; result instead of blocking
+The message handed back to the model — this is the template, rendered here at the 60-second default:
+// v2.1.198, verbatim. `Thl` is the minifier's name; the prose is the binary's own.
+// Note "60s" is interpolated, not a literal in the file:
+function Thl ( e ){ return `No response after ${ Math . round ( e / 1000 ) } s — the user may be
+away from keyboard. Proceed using your best judgment based on the context so far;
+you can re-ask this question later if it's still relevant.` }
+The &ldquo;re-ask later&rdquo; escape hatch is circular: the re-asked question hits the same timeout. Aleksey Nogin made this point in the issue thread within minutes of filing it
+The transcript line has two variants — the binary picks between them on whether you&rsquo;d started answering:
+// v2.1.198, verbatim. `a` is the minifier's name for "some answers exist"
+// (`s=Object.entries(r)` over the answers, `a=s.length>0`); both string values
+// are the binary's own.
+let d = a ? "continued with the answers selected so far" : "continued without an answer"
+So a half-answered dialog does not discard the partial input — it submits it . Answer question one of three, step away, and the timeout commits your one answer plus whatever the model picks for the other two
+Both strings are absent from 2.1.197 and present in 2.1.198
+In fairness: it was not silent on screen. The dialog rendered a live countdown, and a keypress restarted the timer. Assembled at runtime rather than stored as one string, so this is the rendered form, not a literal grep hit:
+// v2.1.198, verbatim — the pieces. `s` is the remaining-seconds value.
+children : [ "auto-continue in " , s , "s \xB7 any key to stay" ]
+// renders as: auto-continue in 12s · any key to stay
+Which cuts less far than it looks. The countdown only reaches someone watching the screen, and the premise of the feature is that you aren&rsquo;t: the internal name is AFK ; the message says &ldquo;the user may be away from keyboard&rdquo;
+running several agents at once, &ldquo;watching the screen&rdquo; is not one place — the countdown you needed was on another tab
+And the countdown is late. The threshold defaults to 20 seconds ( CLAUDE_AFK_COUNTDOWN_MS ), and it gates on remaining time, not elapsed — so for the first 40 seconds the dialog looks like an ordinary blocking question. It is on screen, but nothing on it says a timer is running:
+// v2.1.198 ships this minified — the locals are mangled, but the property
+// names survive, so `showCountdown` and `remainingSeconds` are its own words:
+let u = i * 1000 <= n ; return { remainingSeconds : i , showCountdown : u , timeoutMs : t }
+// ...which reads, with n at its default of 20000:
+showCountdown = remainingSeconds * 1000 <= 20000
+The warning arrives in the last third
+What it does not touch: the timeout applies only to AskUserQuestion . Anthropic&rsquo;s tools reference says &ldquo;permission prompts, including plan approval, never auto-resolve on idle&rdquo; — and unlike the docs claims elsewhere in this post, this one is checkable against the shipped 2.1.198 code rather than a page written after the fix: the countdown component ( q0m ) has exactly one call site in the entire bundle, and its timer hook ( _Rc ) has exactly one caller — q0m itself. The timer exists in one component
+that component&rsquo;s props identify it past argument: jsx(dRc,{question:V, questions:s, currentQuestionIndex:$, answers:R, questionStates:O, onAnswer:be, onSubmit:N, …}) . Its timeout handler is what fires tengu_ask_user_question_afk_auto_advance
+the permission prompt ( Do you want to proceed , Do you want to allow … ) is a separate component with no timer attached
+But the exemption only protects you if a permission prompt appears at all. 2.1.198 ships bypassPermissions , acceptEdits , allowedTools , --dangerously-skip-permissions and PreToolUse hooks. Anyone running agents against deployments has plausibly allowlisted the deploy command or turned prompts off — that is what automating it means . For them the permission layer was never going to fire, so its immunity to the timer buys nothing
+The narrower claim, and the one that bites: the timer could not grant permission, but it could make the choice. AskUserQuestion doesn&rsquo;t ask permission, it asks you to decide — &ldquo;staging or production?&rdquo;, &ldquo;which config?&rdquo; On timeout the model is told to proceed using your best judgment , and the partial-answers path continues &ldquo;with the answers selected so far&rdquo;. If permission was already granted by allowlist or bypass, the choice was the only gate left
+No timeout parameter exists in the tool schema — the model can neither set nor control it. Verified in the binary ( U_f=…H.strictObject({questions:…}) ), not taken from the issue thread. The input params are only:
+questions, answers, annotations, metadata
+So the model is truthful when it says it didn&rsquo;t skip anything — the harness returned the answer, not the model
+# The fix
+2.1.200 made auto-continue off by default
+Idle timeout is now opt-in via /config , not forced on everyone
+Note the changelog&rsquo;s verb: &ldquo;no longer auto-continue by default &rdquo; . Nothing was removed — the default flipped.
+The /config setting the note points you to did not exist before the fix . Grep 2.1.198 for askUserQuestionTimeout and you get zero hits: when this shipped, the only way to escape it was an env var — and the release notes never named it.
+You can confirm the rest in the current binary ( 2.1.211 , eleven releases later). The machinery is entirely intact: the setting is askUserQuestionTimeout , surfaced in /config as &ldquo;Question auto-continue timeout&rdquo;
+accepted values are 60s , 5m , 10m , never — and unset resolves to never , which is what makes it opt-in
+the hook&rsquo;s default timeout constant is still 60000 ; the countdown threshold is 20000
+two env vars still override the setting — CLAUDE_AFK_TIMEOUT_MS and CLAUDE_AFK_COUNTDOWN_MS
+So the fix is a one-line change in a gate, not a deletion:
+// v2.1.211, verbatim — only whitespace added. `Upf` is the minifier's name for it;
+// everything else here is the binary's own, string values included.
+function Upf ( e ){ switch ( e ){
+case "60s" : return 60000 ; case "5m" : return 300000 ;
+case "10m" : return 600000 ; case "never" : case void 0 : return null ; } }
+// ^^^^^^^^^^^^ unset => null => disabled
+Fair reading: this is the right fix. Opt-in is what it should have been on day one, and the capability is legitimately useful to someone.
+Less comfortable reading: the same code that auto-answered for you is still shipping, one config value away, governed by the same process that turned it on silently the first time.
+Pre-fix stopgap (from the thread), for anyone pinned to an affected version:
+// settings.json — disable the auto-continue by setting a huge AFK window
+"env" : {
+"CLAUDE_AFK_TIMEOUT_MS" : "<massive number>"
+Turnaround was fast — roughly two days from report to reversal (credit where due)
+# Which release shipped it — and what the notes said
+Two places publish release notes: the official changelog and CHANGELOG.md in the repo (same content)
+Links below are pinned to commit 1322e9b so they show what the notes said at the time, not as edited later
+2.1.197 changelog: one line , Claude Sonnet 5 launch. Nothing about question timeouts.
+2.1.198 changelog: ~30 entries . Nothing about AskUserQuestion auto-continuing.
+2.1.199 changelog: 24 entries , published while the issue was already open. Still nothing.
+The 60s auto-continue was never announced in any release note when it was added
+AskUserQuestion is not a stranger to the changelog — it appears 15 times across 13 versions, going back to 2.0.55 . It is a tool Anthropic documents changes to, routinely:
+git show 1322e9b:CHANGELOG.md | grep -c 'AskUserQuestion'
+# 15
+git show 1322e9b:CHANGELOG.md | awk '/^## /{v=$2} /AskUserQuestion/{print v}' | sort -u | tr '\n' ' '
+# 2.0.55 2.1.136 2.1.141 2.1.144 2.1.147 2.1.181 2.1.200 2.1.47 2.1.69 2.1.70 2.1.83 2.1.85 2.1.9
+Which makes the gap the story. Between 2.1.181 and 2.1.200 — the window containing the change — it appears nowhere . The behaviour changed twice, on and then off, and the notes record only the second
+The only changelog line that ever mentions the auto-continue is the one that removes it, in 2.1.200 :
+## 2.1.200
+- Changed `AskUserQuestion` dialogs to no longer auto-continue by default;
+opt into an idle timeout via `/config`
+The controlling env var CLAUDE_AFK_TIMEOUT_MS appears nowhere in the changelog or README
+# The docs caught up. Afterwards.
+Today, both env vars are documented, in the environment variables reference . The entry is candid about the episode:
+CLAUDE_AFK_TIMEOUT_MS — How many milliseconds of idle time before an unanswered
+AskUserQuestion dialog auto-continues without you. Auto-continue is off by
+default; opt in with the askUserQuestionTimeout setting. [...] In v2.1.198 and
+v2.1.199, auto-continue was on by default with a 60000 (60 seconds) timeout.
+But that text cannot be what was there on 1 July , and the binary says so on its own: it points you to askUserQuestionTimeout as the opt-in, and that setting has zero occurrences in the 2.1.198 binary. It also narrates 2.1.198 and 2.1.199 in the past tense, as a closed range
+And the Wayback Machine settles it outright. The docs have no public repo, so I assumed their past was unknowable. It isn&rsquo;t — the page is archived, repeatedly, straight through the window:
+# every archived capture of the env var reference, 23 Jun - 11 Jul 2026
+curl -s "https://web.archive.org/cdx/search/cdx?url=code.claude.com/docs/en/env-vars\
+&output=json&filter=statuscode:200&fl=timestamp&from=20260601&to=20260718"
+# fetch each one and count mentions of the feature
+# (DISABLE_AUTOUPDATER is the control: it should hit on every capture)
+for ts in 20260623083334 20260701121132 20260701213540 20260705135805 ; do
+curl -s "https://web.archive.org/web/ ${ ts } id_/https://code.claude.com/docs/en/env-vars" \
+| gunzip -c | grep -c -i 'CLAUDE_AFK'
+done
+capture (UTC) CLAUDE_AFK AskUserQuestion DISABLE_AUTOUPDATER (control)
+23 Jun 0 0 2
+1 Jul 12:11 0 0 2
+1 Jul 21:35 0 0 2
+5 Jul 2 2 2
+2.1.198 was published to npm at 2026-07-01T16:50:16Z . The 21:35 capture is four hours and forty-five minutes later — and the page does not mention the feature under any name: not afk , not auto-continue , not AskUserQuestion , not COUNTDOWN . ( idle appears twice, both unrelated: API_FORCE_IDLE_TIMEOUT and the MCP tool timeout.) The control hits on every capture, so this is absence, not a broken grep
+So the two questions collapse into one answer. On the day it shipped, the feature was in neither the release notes nor the docs. There was no channel through which a user could have been told
+The documentation appears between 1 July 21:35 and 5 July 13:58 — a window containing the 2.1.200 reversal ( 2026-07-03T04:33:49Z ). And the entry that shows up describes auto-continue as &ldquo;off by default&rdquo; , which was only true after the fix. The docs never described the world as it actually was on 1 and 2 July. They arrived with the reversal and documented the reversed behaviour
+The tidy phrase for this is that the docs caught up. What they actually did was skip the part where it was on
+# So where&rsquo;s the commit?
+The obvious next move: open the commit that introduced it and read the reasoning
+There isn&rsquo;t one. Not &ldquo;hard to find&rdquo; — it does not exist publicly
+Neither does a revert commit. The reversal in 2.1.200 has no public commit either.
+The only git artifacts either release left behind are two automated changelog commits, both titled chore: Update CHANGELOG.md and feed.xml — notes about a release, never the release:
+75709ea — publishes the 2.1.198 notes (the release that shipped it, unmentioned)
+1322e9b — publishes the 2.1.200 notes (the reversal)
+Fine — then diff the source between releases. There is no source to diff
+anthropics/claude-code is not the product. It is the changelog, the docs, plugin examples, a couple of example infra configs, and the bots that triage the issue tracker:
+git ls-files | wc -l # 216 tracked files
+git ls-files '*.md' | wc -l # 104 of them markd
+
+## full_text
+
+#AI #security #cli #automation
+Claude Code: Anatomy of a Misfeature
+by Olaf Alders
+July 17, 2026
+· 29 min read
+· 6,163 words
+contents
+" Mechanical egg timer " by Hustvedt is licensed under CC BY-SA 3.0 . Padded to a wider frame; this adaptation is likewise licensed CC BY-SA 3.0.
+On Canada Day (July 1), 2026, Anthropic shipped a surprising &ldquo;easter egg&rdquo; to
+users of Claude Code: 2.1.198 includes an efficiency bypass which allows
+agents to continue on without being blocked on direction from a human. You
+essentially get a 60 second timer after Claude Code asks for input. If you miss
+the window, Claude Code helpfully does what it thinks is best and continues on
+its way. It looks like this:
+● Claude asked:
+⎿ …
+● No response after 60s — continued without an answer
+● The user stepped away. I'll proceed with best judgment. My plan:
+Note: the above is taken verbatim from one of my own claude sessions, with the questions having been trimmed.
+If you find this behaviour surprising, you&rsquo;re not alone. Let&rsquo;s consider the possible consequences:
+Do you have to take your laptop to the kitchen with you when you&rsquo;re making a sandwich? What happens if you are afk during this window?
+How many agents are you running at once? Can you possibly observe them all at the same time? What if two or more agents ask for your input during the same 60 second window?
+What if the agent makes the wrong choice? How many tokens have been burned in the meantime?
+What if you are using agents for deployments? (Yes, I know, but what if )
+These are reasonable things you might consider when shipping this feature and maybe you&rsquo;d document your reasoning in the changelog. But what if you never mentioned the new defaults in the changelog at all? Wouldn&rsquo;t that be even more surprising? (Spoiler: it was!)
+The story has a (sort of) happy ending. Move fast and break things does not necessarily preclude move fast and fix things. Within a couple of days a fix was shipped, but where does that leave user trust in this product?
+We&rsquo;ve learned a few things:
+Surprising features in Claude Code can in theory (and in practice) be shipped by Anthropic on a daily cadence
+Not every feature will necessarily appear in the changelog
+Things that should not be defaults may not have a documented off switch
+Claude Code&rsquo;s auto update feature feels more like YOLO mode than we might have suspected early on
+There are a few things I don&rsquo;t know if we have learned:
+How do humans fit into this equation?
+Did a human dream up the feature?
+Did a human write (or have an agent write) this feature?
+Did a human review the feature?
+Did a human sign off on the feature?
+Did a human merge the feature?
+Did a human opt out of documenting the feature or adding it to the changelog?
+Did a human release manager diff the release with the previous release and give it their seal of approval before it went out the door?
+Personally I would find it hard to believe that a human was gating all of these
+steps without asking &ldquo;is this a good idea?&rdquo;. If you told me that Claude Code
+actually built the feature, shipped it, signed off on it and then deemed it
+unworthy of documentation, that&rsquo;s something I&rsquo;m more inclined to believe, but I
+just don&rsquo;t know. Maybe it&rsquo;s some combination of those two things. Maybe a
+number of things went wrong, but I think it&rsquo;s clear that this never should have
+happened. And I say this as someone who has had at least one performance review
+where my manager said &ldquo;well, you did put a serious bug into production&rdquo;.
+I&rsquo;ve wondered a bit about how this happened and what kind of post-mortem is
+available in the public record. So, I&rsquo;ve asked Claude Code to investigate
+itself. To Claude&rsquo;s credit, it seems to have no filter that prevents
+self-reflection regarding this code. So, full disclosure, what follows is
+mostly Claude&rsquo;s work, so take that for what it&rsquo;s worth and if you rely on any
+key assumptions, it&rsquo;s worth reproducing them in isolation.
+Claude&rsquo;s research begins here.
+# Timeline
+2026-06-29 — 2.1.196 released; the reporter&rsquo;s &ldquo;last working version (I am guessing)&rdquo;
+2026-06-30 — 2.1.197 released; one changelog line, the Sonnet 5 launch
+2026-07-01 — 2.1.198 released — the version the reporter pins the regression to. No public commit shows the change; the only public trace of this release is the bot commit publishing its notes ( 75709ea ), which touches nothing but CHANGELOG.md and feed.xml
+2026-07-02 02:54 UTC — issue #73125 filed by Aleksey Nogin
+2026-07-02 03:45 UTC — a commenter surfaces the escape hatch : CLAUDE_AFK_TIMEOUT_MS . Traded peer-to-peer in the thread, not pointed to from any release note
+2026-07-02 — 2.1.199 ships 24 entries while the issue is open. Still no mention.
+2026-07-03 — 2.1.200 reverses the behaviour; again the only public trace is the notes commit ( 1322e9b )
+2026-07-04 18:04 UTC — issue closed
+Reaction/scale on the issue: 384 👍 , 143 comments — not a niche complaint
+Reporter&rsquo;s environment: 2.1.198 , &ldquo;last working 2.1.196 (guessing)&rdquo;, Opus, AWS Bedrock, VS Code terminal
+git clone https://github.com/anthropics/claude-code.git
+cd claude-code
+# When did the fix land, and in which version?
+git log -1 --format = '%h %ai' -S 'no longer auto-continue by default' -- CHANGELOG.md
+# 1322e9ba 2026-07-03 16:52:26 +0000
+# When did the version that shipped the bug land?
+git log -1 --format = '%h %ai' -S '## 2.1.198' -- CHANGELOG.md
+# 75709eac 2026-07-01 20:45:29 +0000
+# The misfeature
+AskUserQuestion is the tool Claude Code uses to stop and ask the human a question mid-task
+New behaviour: after 60 seconds of inactivity , the tool auto-returns a &ldquo;proceed anyway&rdquo; result instead of blocking
+The message handed back to the model — this is the template, rendered here at the 60-second default:
+// v2.1.198, verbatim. `Thl` is the minifier's name; the prose is the binary's own.
+// Note "60s" is interpolated, not a literal in the file:
+function Thl ( e ){ return `No response after ${ Math . round ( e / 1000 ) } s — the user may be
+away from keyboard. Proceed using your best judgment based on the context so far;
+you can re-ask this question later if it's still relevant.` }
+The &ldquo;re-ask later&rdquo; escape hatch is circular: the re-asked question hits the same timeout. Aleksey Nogin made this point in the issue thread within minutes of filing it
+The transcript line has two variants — the binary picks between them on whether you&rsquo;d started answering:
+// v2.1.198, verbatim. `a` is the minifier's name for "some answers exist"
+// (`s=Object.entries(r)` over the answers, `a=s.length>0`); both string values
+// are the binary's own.
+let d = a ? "continued with the answers selected so far" : "continued without an answer"
+So a half-answered dialog does not discard the partial input — it submits it . Answer question one of three, step away, and the timeout commits your one answer plus whatever the model picks for the other two
+Both strings are absent from 2.1.197 and present in 2.1.198
+In fairness: it was not silent on screen. The dialog rendered a live countdown, and a keypress restarted the timer. Assembled at runtime rather than stored as one string, so this is the rendered form, not a literal grep hit:
+// v2.1.198, verbatim — the pieces. `s` is the remaining-seconds value.
+children : [ "auto-continue in " , s , "s \xB7 any key to stay" ]
+// renders as: auto-continue in 12s · any key to stay
+Which cuts less far than it looks. The countdown only reaches someone watching the screen, and the premise of the feature is that you aren&rsquo;t: the internal name is AFK ; the message says &ldquo;the user may be away from keyboard&rdquo;
+running several agents at once, &ldquo;watching the screen&rdquo; is not one place — the countdown you needed was on another tab
+And the countdown is late. The threshold defaults to 20 seconds ( CLAUDE_AFK_COUNTDOWN_MS ), and it gates on remaining time, not elapsed — so for the first 40 seconds the dialog looks like an ordinary blocking question. It is on screen, but nothing on it says a timer is running:
+// v2.1.198 ships this minified — the locals are mangled, but the property
+// names survive, so `showCountdown` and `remainingSeconds` are its own words:
+let u = i * 1000 <= n ; return { remainingSeconds : i , showCountdown : u , timeoutMs : t }
+// ...which reads, with n at its default of 20000:
+showCountdown = remainingSeconds * 1000 <= 20000
+The warning arrives in the last third
+What it does not touch: the timeout applies only to AskUserQuestion . Anthropic&rsquo;s tools reference says &ldquo;permission prompts, including plan approval, never auto-resolve on idle&rdquo; — and unlike the docs claims elsewhere in this post, this one is checkable against the shipped 2.1.198 code rather than a page written after the fix: the countdown component ( q0m ) has exactly one call site in the entire bundle, and its timer hook ( _Rc ) has exactly one caller — q0m itself. The timer exists in one component
+that component&rsquo;s props identify it past argument: jsx(dRc,{question:V, questions:s, currentQuestionIndex:$, answers:R, questionStates:O, onAnswer:be, onSubmit:N, …}) . Its timeout handler is what fires tengu_ask_user_question_afk_auto_advance
+the permission prompt ( Do you want to proceed , Do you want to allow … ) is a separate component with no timer attached
+But the exemption only protects you if a permission prompt appears at all. 2.1.198 ships bypassPermissions , acceptEdits , allowedTools , --dangerously-skip-permissions and PreToolUse hooks. Anyone running agents against deployments has plausibly allowlisted the deploy command or turned prompts off — that is what automating it means . For them the permission layer was never going to fire, so its immunity to the timer buys nothing
+The narrower claim, and the one that bites: the timer could not grant permission, but it could make the choice. AskUserQuestion doesn&rsquo;t ask permission, it asks you to decide — &ldquo;staging or production?&rdquo;, &ldquo;which config?&rdquo; On timeout the model is told to proceed using your best judgment , and the partial-answers path continues &ldquo;with the answers selected so far&rdquo;. If permission was already granted by allowlist or bypass, the choice was the only gate left
+No timeout parameter exists in the tool schema — the model can neither set nor control it. Verified in the binary ( U_f=…H.strictObject({questions:…}) ), not taken from the issue thread. The input params are only:
+questions, answers, annotations, metadata
+So the model is truthful when it says it didn&rsquo;t skip anything — the harness returned the answer, not the model
+# The fix
+2.1.200 made auto-continue off by default
+Idle timeout is now opt-in via /config , not forced on everyone
+Note the changelog&rsquo;s verb: &ldquo;no longer auto-continue by default &rdquo; . Nothing was removed — the default flipped.
+The /config setting the note points you to did not exist before the fix . Grep 2.1.198 for askUserQuestionTimeout and you get zero hits: when this shipped, the only way to escape it was an env var — and the release notes never named it.
+You can confirm the rest in the current binary ( 2.1.211 , eleven releases later). The machinery is entirely intact: the setting is askUserQuestionTimeout , surfaced in /config as &ldquo;Question auto-continue timeout&rdquo;
+accepted values are 60s , 5m , 10m , never — and unset resolves to never , which is what makes it opt-in
+the hook&rsquo;s default timeout constant is still 60000 ; the countdown threshold is 20000
+two env vars still override the setting — CLAUDE_AFK_TIMEOUT_MS and CLAUDE_AFK_COUNTDOWN_MS
+So the fix is a one-line change in a gate, not a deletion:
+// v2.1.211, verbatim — only whitespace added. `Upf` is the minifier's name for it;
+// everything else here is the binary's own, string values included.
+function Upf ( e ){ switch ( e ){
+case "60s" : return 60000 ; case "5m" : return 300000 ;
+case "10m" : return 600000 ; case "never" : case void 0 : return null ; } }
+// ^^^^^^^^^^^^ unset => null => disabled
+Fair reading: this is the right fix. Opt-in is what it should have been on day one, and the capability is legitimately useful to someone.
+Less comfortable reading: the same code that auto-answered for you is still shipping, one config value away, governed by the same process that turned it on silently the first time.
+Pre-fix stopgap (from the thread), for anyone pinned to an affected version:
+// settings.json — disable the auto-continue by setting a huge AFK window
+"env" : {
+"CLAUDE_AFK_TIMEOUT_MS" : "<massive number>"
+Turnaround was fast — roughly two days from report to reversal (credit where due)
+# Which release shipped it — and what the notes said
+Two places publish release notes: the official changelog and CHANGELOG.md in the repo (same content)
+Links below are pinned to commit 1322e9b so they show what the notes said at the time, not as edited later
+2.1.197 changelog: one line , Claude Sonnet 5 launch. Nothing about question timeouts.
+2.1.198 changelog: ~30 entries . Nothing about AskUserQuestion auto-continuing.
+2.1.199 changelog: 24 entries , published while the issue was already open. Still nothing.
+The 60s auto-continue was never announced in any release note when it was added
+AskUserQuestion is not a stranger to the changelog — it appears 15 times across 13 versions, going back to 2.0.55 . It is a tool Anthropic documents changes to, routinely:
+git show 1322e9b:CHANGELOG.md | grep -c 'AskUserQuestion'
+# 15
+git show 1322e9b:CHANGELOG.md | awk '/^## /{v=$2} /AskUserQuestion/{print v}' | sort -u | tr '\n' ' '
+# 2.0.55 2.1.136 2.1.141 2.1.144 2.1.147 2.1.181 2.1.200 2.1.47 2.1.69 2.1.70 2.1.83 2.1.85 2.1.9
+Which makes the gap the story. Between 2.1.181 and 2.1.200 — the window containing the change — it appears nowhere . The behaviour changed twice, on and then off, and the notes record only the second
+The only changelog line that ever mentions the auto-continue is the one that removes it, in 2.1.200 :
+## 2.1.200
+- Changed `AskUserQuestion` dialogs to no longer auto-continue by default;
+opt into an idle timeout via `/config`
+The controlling env var CLAUDE_AFK_TIMEOUT_MS appears nowhere in the changelog or README
+# The docs caught up. Afterwards.
+Today, both env vars are documented, in the environment variables reference . The entry is candid about the episode:
+CLAUDE_AFK_TIMEOUT_MS — How many milliseconds of idle time before an unanswered
+AskUserQuestion dialog auto-continues without you. Auto-continue is off by
+default; opt in with the askUserQuestionTimeout setting. [...] In v2.1.198 and
+v2.1.199, auto-continue was on by default with a 60000 (60 seconds) timeout.
+But that text cannot be what was there on 1 July , and the binary says so on its own: it points you to askUserQuestionTimeout as the opt-in, and that setting has zero occurrences in the 2.1.198 binary. It also narrates 2.1.198 and 2.1.199 in the past tense, as a closed range
+And the Wayback Machine settles it outright. The docs have no public repo, so I assumed their past was unknowable. It isn&rsquo;t — the page is archived, repeatedly, straight through the window:
+# every archived capture of the env var reference, 23 Jun - 11 Jul 2026
+curl -s "https://web.archive.org/cdx/search/cdx?url=code.claude.com/docs/en/env-vars\
+&output=json&filter=statuscode:200&fl=timestamp&from=20260601&to=20260718"
+# fetch each one and count mentions of the feature
+# (DISABLE_AUTOUPDATER is the control: it should hit on every capture)
+for ts in 20260623083334 20260701121132 20260701213540 20260705135805 ; do
+curl -s "https://web.archive.org/web/ ${ ts } id_/https://code.claude.com/docs/en/env-vars" \
+| gunzip -c | grep -c -i 'CLAUDE_AFK'
+done
+capture (UTC) CLAUDE_AFK AskUserQuestion DISABLE_AUTOUPDATER (control)
+23 Jun 0 0 2
+1 Jul 12:11 0 0 2
+1 Jul 21:35 0 0 2
+5 Jul 2 2 2
+2.1.198 was published to npm at 2026-07-01T16:50:16Z . The 21:35 capture is four hours and forty-five minutes later — and the page does not mention the feature under any name: not afk , not auto-continue , not AskUserQuestion , not COUNTDOWN . ( idle appears twice, both unrelated: API_FORCE_IDLE_TIMEOUT and the MCP tool timeout.) The control hits on every capture, so this is absence, not a broken grep
+So the two questions collapse into one answer. On the day it shipped, the feature was in neither the release notes nor the docs. There was no channel through which a user could have been told
+The documentation appears between 1 July 21:35 and 5 July 13:58 — a window containing the 2.1.200 reversal ( 2026-07-03T04:33:49Z ). And the entry that shows up describes auto-continue as &ldquo;off by default&rdquo; , which was only true after the fix. The docs never described the world as it actually was on 1 and 2 July. They arrived with the reversal and documented the reversed behaviour
+The tidy phrase for this is that the docs caught up. What they actually did was skip the part where it was on
+# So where&rsquo;s the commit?
+The obvious next move: open the commit that introduced it and read the reasoning
+There isn&rsquo;t one. Not &ldquo;hard to find&rdquo; — it does not exist publicly
+Neither does a revert commit. The reversal in 2.1.200 has no public commit either.
+The only git artifacts either release left behind are two automated changelog commits, both titled chore: Update CHANGELOG.md and feed.xml — notes about a release, never the release:
+75709ea — publishes the 2.1.198 notes (the release that shipped it, unmentioned)
+1322e9b — publishes the 2.1.200 notes (the reversal)
+Fine — then diff the source between releases. There is no source to diff
+anthropics/claude-code is not the product. It is the changelog, the docs, plugin examples, a couple of example infra configs, and the bots that triage the issue tracker:
+git ls-files | wc -l # 216 tracked files
+git ls-files '*.md' | wc -l # 104 of them markdown
+git ls-files | cut -d/ -f1 | sort -u | grep -v '^\.'
+# CHANGELOG.md demo.gif examples feed.xml LICENSE.md
+# plugins README.md Script scripts SECURITY.md
+Every executable file in there is an example or a maintenance script. plugins/ holds sample plugins, examples/ holds a GCP gateway Terraform config and an MDM profile, scripts/ is eight files of issue-tracker automation ( auto-close-duplicates.ts , sweep.ts , gh.sh ). Nothing in it ships to you
+The repo does tag releases, so the tags at least look diffable. They aren&rsquo;t, in the way that matters:
+git diff --stat v2.1.197..v2.1.198
+# CHANGELOG.md | 35 +++++++++++++++++++++++++++
+# feed.xml | 77 +++++++++++++++++---------------------------------
+# 2 files changed, 74 insertions(+), 38 deletions(-)
+feed.xml is the changelog restated as RSS, so that diff is the changelog twice. Across ten consecutive releases ( 2.1.196 → 2.1.206 ), every tag-to-tag diff touches those two files and nothing else
+The punchline: a release tag diff is the release notes. These are release-note tags, not source tags — there is no version of the code to check out
+So &ldquo;read the release notes&rdquo; fails (silent change), &ldquo;diff the repo&rdquo; fails (no source), and &ldquo;diff the tags&rdquo; fails (the tags are the notes). Three dead ends, one cause: nothing Anthropic publishes to git is the thing they ship you
+The authored source is published nowhere; the behaviour ships only inside the compiled binary
+So the sum of public evidence that this feature ever existed is:
+the message it printed into people&rsquo;s terminals
+an env var ( CLAUDE_AFK_TIMEOUT_MS ) that users found by asking each other, no release note having named it
+one changelog line, three days later, announcing its removal
+The feature&rsquo;s introduction left no trace in the release notes or in git. Its deletion is the first time the notes ever mentioned it.
+Worth separating two claims that are easy to conflate:
+there is no public source repository — true, and that&rsquo;s the governance problem
+there is no way to see what shipped — false, and that turns out to matter enormously (below)
+Skip ahead if you like: the shipped binary settles the question that git can&rsquo;t. The feature is provably absent from 2.1.197 and present in 2.1.198 , and you can check that yourself in about five minutes.
+# Why was it added? (evidence, not confirmation)
+No official rationale was ever published (no design doc, no changelog line, no PR — see below)
+Circumstantial evidence of intent, all from naming and the message text: Internal name is AFK — &ldquo;away from keyboard&rdquo; ( CLAUDE_AFK_TIMEOUT_MS )
+The message assumes an absent human: &ldquo;the user may be away from keyboard&rdquo;
+Plausible target: unattended / many-parallel-agent runs that would otherwise block forever on an absent human
+Users in the thread describe exactly the workflow it breaks: dozens of agents, some parked for days, waiting on a human by design ( earlye )
+Tension: the same design that unblocks an absent human also lets an agent pick a fork in the road you explicitly reserved for yourself
+The strongest evidence is inside the binary, and it&rsquo;s present in 2.1.198 itself. Two separate things, worth keeping apart:
+1. A field on the tool&rsquo;s own schema — this one stays local. It rides along in the tool result, tells the model the answer was auto-resolved rather than chosen, and picks which component renders the transcript line:
+// v2.1.198, verbatim. `H` is the minifier's name for the schema library
+// (Zod); the field name and the description text are the binary's own.
+afkTimeoutMs : H . number (). int (). positive (). optional (). describe ( "Set when the dialog
+auto-resolved after this many milliseconds of idle (user away from keyboard).
+Absent on every human-resolved path." )
+2. An analytics event — this one leaves your machine. Fired at the moment the dialog auto-advances:
+// v2.1.198, verbatim. The mangled names (q, ld, It, R, I, s) are the
+// minifier's; the event name and every property key are the binary's own.
+q ( "tengu_ask_user_question_afk_auto_advance" ,{... i && { source_hash : ld ( i )},
+timeoutMs : It , questionCount : s . length ,
+hadPartialAnswers : Object . keys ( R ). length > 0 , isInPlanMode : I })
+tengu_* is the naming convention for Claude Code&rsquo;s analytics events throughout the binary. The question text isn&rsquo;t sent; source_hash is a hash, and the rest is counters
+Absent from 2.1.197 . It arrived with the feature, in the same release
+Read the payload for what it is: an instrument for counting how often the dialog resolved without a human — how many questions were pending, whether it happened mid-plan, and whether you had partially answered
+That last one is hadPartialAnswers . The half-answered case wasn&rsquo;t an oversight that nobody saw coming — it has a code path, and that path is counted separately from the rest
+So: this was built , not stumbled into. The behaviour, the countdown, the schema field and the analytics all landed in the same release — that&rsquo;s a feature with a measurement rig attached, not a stray default
+Note what that does not establish. It says nothing about who, or whether a who was involved at all. The questions at the top of this post stay open; all the binary proves is that the work was coherent and deliberate, not who or what did it
+Same release, the countdown it printed at you: auto-continue in {n}s · any key to stay
+So the capability was designed, instrumented, and given UI — and still never made the notes. That&rsquo;s the gap the post is about: this wasn&rsquo;t too small to mention. Someone built a measurement rig for it.
+What none of it tells us is who signed it off, or whether anyone weighed the failure mode against the upside. Still inference; still no published rationale.
+# Can you even diff it?
+Everything above says no . Then you look at what&rsquo;s actually installed and the answer changes.
+It&rsquo;s a ~250MB native executable — and, crucially, not stripped :
+file ~/.local/share/claude/versions/2.1.211
+# ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked,
+# interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=..., not stripped
+It&rsquo;s a Bun-compiled binary. Bun&rsquo;s single-file executables append a module graph to the end of the runtime, behind a magic marker — and it&rsquo;s right there:
+grep -abo -- '---- Bun! ----' ~/.local/share/claude/versions/2.1.211 | tail -1
+# 261973153 <-- ~50KB from the end of a 262MB file
+Bun compiles by embedding the JS bundle inside the executable , so the shipped JavaScript is sitting in the file. strings reads it:
+strings -n 3 ~/.local/share/claude/versions/2.1.211 | grep -c 'CLAUDE_AFK_TIMEOUT_MS'
+# 4
+Every claim in &ldquo;The fix&rdquo; above was read straight out of that binary — the setting name, the 60s/5m/10m/never values, the analytics event, the countdown env var
+The installer keeps recent versions on disk ( ls ~/.local/share/claude/versions/ ), but only the last few — not enough to reach back to July
+Any version you like is on npm, though. The catch: @anthropic-ai/claude-code is a ~152KB installer stub (7 files, dist.unpackedSize 155,204) — no product in it. The binary lives in per-platform packages:
+npm view @anthropic-ai/claude-code-linux-x64@2.1.198 dist.unpackedSize
+# 248900994 <-- ~249MB, the actual thing
+So: closed source, but not a black box. Every release is fetchable and every release is legible. The distinction matters.
+# So let&rsquo;s actually diff it
+So let&rsquo;s stop theorising and actually do it: pull 2.1.197 and 2.1.198 off npm and diff them.
+The feature has a distinctive internal name — AFK . Grep both binaries for it:
+for v in 2.1.197 2.1.198 ; do
+echo "=== $v ==="
+for s in "away from keyboard" "CLAUDE_AFK_TIMEOUT_MS" "CLAUDE_AFK_COUNTDOWN_MS" ; do
+printf ' %-26s ' " $s " ; strings -n 3 "b- $v /package/claude" | grep -c -- " $s "
+done
+done
+# === 2.1.197 ===
+# away from keyboard 0
+# CLAUDE_AFK_TIMEOUT_MS 0
+# CLAUDE_AFK_COUNTDOWN_MS 0
+# === 2.1.198 ===
+# away from keyboard 2
+# CLAUDE_AFK_TIMEOUT_MS 3
+# CLAUDE_AFK_COUNTDOWN_MS 3
+Zero to non-zero, across exactly the boundary the reporter named. No commit, no changelog line, no PR — but the artifact is unambiguous about when it landed.
+This is the record that doesn&rsquo;t exist in git. It was always in the thing they shipped you.
+And it settles what the release actually did. The gate that decides whether the dialog gets a timer at all, in both versions, side by side:
+// Both verbatim, only whitespace added. The mangled names (ke, Ie, li, OOb, Rpf,
+// Di, Jyn) are the minifier's; `hasExternalRacer` and the env var are the binary's.
+// v2.1.198
+ke = ! Ie && ! n . hasExternalRacer && ! li ()
+// v2.1.211 — same three conditions, plus one
+OOb = ! Rpf && ! Xde . hasExternalRacer && ! Di () && ( Jyn !== null || ye . CLAUDE_AFK_TIMEOUT_MS !== void 0 )
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ the entire fix
+Jyn there is the afkTimeoutMs prop — the /config setting, resolved through the switch above. That&rsquo;s the whole difference: in 2.1.198 the gate existed, but nothing you could set was allowed to close it. In 2.1.211 it asks your permission first
+Worth being precise, because it&rsquo;s the sort of thing that gets overstated: it isn&rsquo;t that 2.1.198 had no gate. It had this one, and it turned on whenever the dialog had no external racer. What it lacked was any condition a user could influence
+Two days of outcry, and the remedy is one && clause. Which is also the point: it was one && clause away from never having happened.
+But notice what that grep needed: the reporter handed us the version, and the feature has a name to grep for. Neither is true on an ordinary Wednesday. So the real question is whether you&rsquo;d have found this cold, knowing neither
+A blind string-level diff of 2.1.197 → 2.1.198 :
+for v in 2.1.197 2.1.198 ; do strings -n 8 "b- $v /package/claude" | sort -u > "s- $v .txt" ; done
+diff s-2.1.197.txt s-2.1.198.txt | grep -c '^[<>]'
+# 21903
+21,903 changed strings for one release. The minifier renames every identifier on every build, so nearly all of it is churn, not change. CLAUDE_AFK_TIMEOUT_MS is in there — buried in 21,902 lines of noise
+One caveat on that number, since it looks more solid than it is: it&rsquo;s a property of the invocation , not of the release. strings -n 3 gives 81,289; the default -n 4 gives 29,910; -n 8 gives 21,903. The shape of the argument survives any of them — tens of thousands of lines, overwhelmingly noise — but don&rsquo;t read 21,903 as a constant
+Now filter to things that look like English sentences. Keep only added lines, made of letters and ordinary punctuation, starting with a capital, at least five words long. That drops every mangled identifier, path, and code fragment:
+# added strings only: present in 198, absent from 197
+diff s-2.1.197.txt s-2.1.198.txt | grep '^>' | sed 's/^> //' > added.txt
+wc -l < added.txt
+# 16255
+# ...that read like English sentences
+grep -E '^[A-Z][a-zA-Z0-9 ,.:;' "'" '-]+$' added.txt | awk 'NF>=5' > prose.txt
+wc -l < prose.txt
+# 156
+156 lines. That&rsquo;s the whole surface of new human-readable text in the release — small enough to read over coffee. And the feature is in there, in plain language:
+Before going idle the user had selected:
+That&rsquo;s the string injected back into the conversation when the dialog answers for you. Read that line cold, knowing nothing, and you&rsquo;d stop
+It lands at line 11 of the 156, which sounds like a lucky break and isn&rsquo;t: s-*.txt was sort -u &rsquo;d, so the list is alphabetical. Ten lines starting with &ldquo;A&rdquo; precede it, and it starts with &ldquo;B&rdquo;. Position tells you nothing here — the point is that 156 lines is a five-minute read, not that the alphabet was kind
+# What it costs to find that
+So the diff works. A person doing this ritual on 1 July, with no privileged information, would have caught it on the day it shipped — before the issue was filed.
+Tempting conclusion, then: &ldquo;so just diff every release.&rdquo;
+Which answers one of the questions from the top of this post — did a human release manager diff the release against the previous one before it went out the door? Whoever shipped 2.1.198 had every advantage I didn&rsquo;t: the source, the build, the diff, the review, the authors to ask
+I had a curl and a grep , and it took about five minutes
+So: either nobody looked, or someone looked and shipped it anyway. Both are answers. Neither is good.
+The rest of those questions — who wrote it, who reviewed it, who signed it off — stay unanswerable, because the public record where that would live does not exist. That&rsquo;s the same absence as the missing commit, wearing a different hat.
+Which is the uncomfortable finding, not a reassuring one: Can you? Yes. Demonstrably. It took a curl , a strings , and a diff .
+Should you have to? 156 lines per release, forever, across every tool that auto-updates, to learn what a one-line release note would have told you.
+Nobody is going to do this. The people most exposed — the ones running unattended agents at scale — are the least likely to be grepping binaries at 2am.
+The capability is a workaround, not a remedy. That it works is what makes its necessity hard to accept.
+# Why this is more than burned tokens
+Cost angle: an unattended agent auto-answering its own questions can burn tokens on the wrong path
+Safety angle is worse than cost: AskUserQuestion is used as an explicit safety gate — hooks/rules built on it assume it blocks
+Turning a blocking gate into a 60s countdown silently voids that assumption
+People run Claude Code in genuinely risky contexts — deployments, infra, prod-adjacent scripts
+Compounding factor: Claude Code auto-updates by default A silent behaviour change + auto-update = the gate can change under you without a single action on your part
+Ties back to On Cooldowns and Dependabot Tuning — why &ldquo;newest immediately&rdquo; is a risk posture
+# Turning auto-update off
+Three env vars. The resolver checks them in this order, first match wins — note it is not the order you&rsquo;d guess: DISABLE_UPDATES=1 — checked first. The strictest: blocks all update paths, including a manual claude update
+DISABLE_AUTOUPDATER=1 — stops the background check only; claude update still works. Takes precedence over the autoUpdates config setting
+CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC=1 — the big hammer: equivalent to DISABLE_AUTOUPDATER + DISABLE_FEEDBACK_COMMAND + DISABLE_ERROR_REPORTING + DISABLE_TELEMETRY ( DISABLE_BUG_COMMAND is the older name, still accepted)
+All of them freeze your plugins too. That&rsquo;s documented for exactly one of the three — see below
+The &ldquo;set it everywhere&rdquo; problem has a fix : don&rsquo;t export the var from a shell profile — put it in the env block of settings.json , documented as &ldquo;environment variables that will be applied to every session&rdquo; . One file, every invocation — CI, cron, systemd, IDE-spawned terminals included.
+// ~/.claude/settings.json — user-wide, survives every shell/IDE/CI invocation
+"env" : {
+"DISABLE_AUTOUPDATER" : "1"
+Scopes, least to most durable: shell profile export → per-shell, easy to miss an environment (the trap)
+~/.claude/settings.json → user-wide, one place
+.claude/settings.json in a repo → team-wide, checked into source control
+managed-settings.json → enterprise policy, highest precedence , centrally enforced:
+macOS: /Library/Application Support/ClaudeCode/managed-settings.json
+Linux/WSL: /etc/claude-code/managed-settings.json
+Windows: C:\Program Files\ClaudeCode\managed-settings.json
+(C:\ProgramData\ClaudeCode is the legacy path and is no longer read.)
+No CLI flag exists to disable auto-update; claude update is manual, /doctor reports the update channel and install type
+# The catch: this also stops updating your plugins
+Turn off the auto-updater by any of the means above and plugin auto-updates stop as well
+This one is documented — but on the plugin discovery page , under &ldquo;Configure auto-updates&rdquo;, which is not where you are standing when you disable auto-updates:
+To disable all automatic updates entirely for both Claude Code and all plugins,
+set the DISABLE_AUTOUPDATER environment variable.
+To keep plugin auto-updates enabled while disabling Claude Code auto-updates,
+set FORCE_AUTOUPDATE_PLUGINS=1 along with DISABLE_AUTOUPDATER.
+Where it isn&rsquo;t : /setup → Disable auto-updates , the page that tells you how to do this, mentions neither plugins nor FORCE_AUTOUPDATE_PLUGINS . Nor does the settings env var table. Follow the docs for the task you&rsquo;re actually doing and you never learn about it
+And the docs only ever say DISABLE_AUTOUPDATER . The binary shows four paths freeze plugins — DISABLE_UPDATES , CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC and autoUpdates: false do it too, and that part is undocumented. It&rsquo;s a single gate on &ldquo;is the updater off for any reason&rdquo;:
+// v2.1.211, verbatim. The names are meaningless because the minifier ate them —
+// the env var and the log string survive, being strings rather than identifiers.
+function u_e (){ return h$e () !== null }
+function blt (){ return u_e () &&! ut ( process . env . FORCE_AUTOUPDATE_PLUGINS )}
+// ...and at the plugin auto-update entry point:
+if ( blt ()){ w ( "Plugin autoupdate: skipped (auto-updater disabled)" ); return }
+Unreadable, so here it is again with the five functions renamed by me — h$e → disabledReason , u_e → updatesAreDisabled , blt → pluginUpdatesBlocked , ut → truthy , w → debugLog . The logic is untouched; the names are my guesses at intent, not the authors':
+// NOT the shipped code — function names below are mine, invented for legibility.
+// The control flow, the env var and the log string are verbatim from v2.1.211.
+function updatesAreDisabled (){ return disabledReason () !== null }
+function pluginUpdatesBlocked (){
+return updatesAreDisabled () && ! truthy ( process . env . FORCE_AUTOUPDATE_PLUGINS )
+if ( pluginUpdatesBlocked ()) { debugLog ( "Plugin autoupdate: skipped (auto-updater disabled)" ); return }
+At runtime the skip is nearly invisible — it&rsquo;s a debug log line, not a warning. Documented or not, nothing in the session tells you your plugins have frozen.
+The fix is one more env var — the documented, supported one. It restores plugin updates while leaving the CLI pinned:
+// ~/.claude/settings.json — pin the CLI, keep plugins current
+"env" : {
+"DISABLE_AUTOUPDATER" : "1" ,
+"FORCE_AUTOUPDATE_PLUGINS" : "1"
+FORCE_AUTOUPDATE_PLUGINS , DISABLE_AUTOUPDATER and DISABLE_UPDATES are parsed properly: the parser accepts 1 , true , yes , or on (case-insensitive), so =1 does what you&rsquo;d hope and =0 correctly reads as false
+CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC is not. It&rsquo;s presence-detected, so any non-empty value switches it on — =0 included, which means CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC=0 disables your auto-updater and freezes your plugins:
+// v2.1.211, verbatim. `Z3t` is the minifier's name; the env var is the binary's.
+// Note the bare `process.env.X` — the value is never read, only its presence.
+function Z3t (){ if ( process . env . CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC ) return "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC" ; return null }
+Note the shape of this: a var whose name begins with FORCE_ is the supported way to get the ordinary behaviour of keeping plugins current. It reads like an escape hatch someone added on the way past.
+# Sharp edges
+Reading the resolver in 2.1.211 , four things disable updates — the three env vars above, plus autoUpdates: false in config. All four also stop plugin updates.
+CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC is the surprising one: reach for it as a privacy/egress control and you have silently pinned your CLI and frozen your plugins
+autoUpdates: false can be ignored outright. The config path is gated on an extra condition:
+// v2.1.211, verbatim — `t` is the minified name for the settings object; every
+// key on it is real, because property names survive. `!1`/`!0` are false/true.
+if ( t . autoUpdates ===! 1 && ( t . installMethod !== "native" || t . autoUpdatesProtectedForNative !==! 0 )) return { type : "config" }
+// ^ on a native install with autoUpdatesProtectedForNative,
+// your `autoUpdates: false` does nothing at all
+So the config key is both undocumented — autoUpdates , as distinct from autoUpdatesChannel , appears nowhere in the docs — and conditionally overridden . Prefer the env vars: they&rsquo;re checked before it, and unconditionally.
+2.1.98 fixed DISABLE_AUTOUPDATER not fully suppressing the npm registry version check and symlink modification on npm-based installs — for a long stretch, &ldquo;disabled&rdquo; wasn&rsquo;t entirely disabled
+The auto-updater has overwritten a custom launcher/symlink at ~/.local/bin/claude on every release (since fixed; /doctor now flags externally managed launchers)
+Which install methods self-update matters: native and npm auto-update by default ; Homebrew, WinGet, apt, dnf and apk do not (Homebrew and WinGet can opt in via CLAUDE_CODE_PACKAGE_MANAGER_AUTO_UPDATE=1 ). If you&rsquo;re on native or npm, you are on the daily-cadence treadmill unless you say otherwise
+Claude&rsquo;s research ends here.
+# Wrap-up
+Even though the source code is not properly public, I was surprised at how much we could learn from it. Having some clues as to what to look for certainly helped, but it&rsquo;s still not a replacement for a well edited and accurate changelog.
+This wasn&rsquo;t a stray line of code that slipped through. It looks like an actual feature. Why it got shipped completely under the radar remains baffling.
+I&rsquo;m not assuming bad faith on the part of Anthropic. Things happen. Whether or not things like this continue to happen will help us to understand what Anthropic did or did not learn from this misfeature.
+# Related posts
+On Cooldowns and Dependabot Tuning
+The dot claude Attack Surface
+Claude Will Find a Way
+$ share
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 97
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":40014,"paragraph_count":365,"sentence_count":278,"boilerplate_hits":0,"symbol_ratio":0.0082,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Anthropic 在 2026 年 7 月 1 日发布的 Claude Code 2.1.198 中，未在更新日志说明便加入了智能体在用户 60 秒无输入后自动按最佳判断继续执行的功能。该行为可通过环境变量 `CLAUDE_AFK_TIMEOUT_MS` 控制，并在 7 月 3 日的 2.1.200 版本中被修复，但事件已引发对用户信任和发布流程的质疑。
+
+2. **quote**｜supports=signal_card_candidate, relationship_graph_input, viewpoint｜importance=high｜confidence=high
+   #AI #security #cli #automation Claude Code: Anatomy of a Misfeature by Olaf Alders July 17, 2026 · 29 min read · 6,163 words contents " Mechanical egg timer " by Hustvedt is licensed under CC BY-SA 3.
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Padded to a wider frame; this adaptation is likewise licensed CC BY-SA 3.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   On Canada Day (July 1), 2026, Anthropic shipped a surprising &ldquo;easter egg&rdquo; to users of Claude Code: 2.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   198 includes an efficiency bypass which allows agents to continue on without being blocked on direction from a human.
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   You essentially get a 60 second timer after Claude Code asks for input.
+
+## business_elements
+
+- companies: Hacker News 热门（buzzing.cc 中文翻译）, Anthropic, GitHub, AWS
+- products: Claude, agents, claude, agent, MCP
+- people: 暂无公开信息
+- industries: 开发者工具
+- roles: CIO / IT 负责人
+- workflows: 合同审阅 / 法律研究, 权限 / 安全治理, 部署 / 集成交付
+- business_actions: 发布 / 推出, 部署 / 上线
+- affected_departments: IT / 安全
+- numbers: 2.1, 198, 60, 2026, 7, 1, 3, 200
+- quotes:  Mechanical egg timer  / some answers exist / continued with the answers selected so far / continued without an answer / auto-continue in 
+
+## evidence_seed
+
+- company_actions: Padded to a wider frame; this adaptation is likewise licensed CC BY-SA 3. / On Canada Day (July 1), 2026, Anthropic shipped a surprising &ldquo;easter egg&rdquo; to users of Claude Code: 2. / 198 includes an efficiency bypass which allows agents to continue on without being blocked on direction from a human.
+- case_details: 暂无公开信息
+- workflow_changes: Anthropic 在 2026 年 7 月 1 日发布的 Claude Code 2.1.198 中，未在更新日志说明便加入了智能体在用户 60 秒无输入后自动按最佳判断继续执行的功能。该行为可通过环境变量 `CLAUDE_AFK_TIMEOUT_MS` 控制，并在 7 月 3 日的 2.1.200 版本中被修复，但事件已引发对用户信任和发布流程的质疑。
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: true
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: high
+- community_name: Hacker News 热门（buzzing.cc 中文翻译）
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: user_feedback_signal
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"Claude Code 2.1.198 引入未记录的 60 秒自动继续功能","discovery_summary":"Anthropic 在 2026 年 7 月 1 日发布的 Claude Code 2.1.198 中，未在更新日志说明便加入了智能体在用户 60 秒无输入后自动按最佳判断继续执行的功能。该行为可通过环境变量 `CLAUDE_AFK_TIMEOUT_MS` 控制，并在 7 月 3 日的 2.1.200 版本中被修复，但事件已引发对用户信任和发布流程的质疑。","source_name":"Hacker News 热门（buzzing.cc 中文翻译）","origin_url":"https://www.olafalders.com/2026/07/17/claude-code-anatomy-of-a-misfeature","discovered_at":"2026-07-18T01:46:31.819Z","rank_on_page":130,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+Anthropic 在 2026 年 7 月 1 日发布的 Claude Code 2.1.198 中，未在更新日志说明便加入了智能体在用户 60 秒无输入后自动按最佳判断继续执行的功能。该行为可通过环境变量 `CLAUDE_AFK_TIMEOUT_MS` 控制，并在 7 月 3 日的 2.1.200 版本中被修复，但事件已引发对用户信任和发布流程的质疑。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

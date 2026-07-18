@@ -382,6 +382,20 @@ test("organization extraction excludes people and title fragments", () => {
   assert.ok(names.every((name) => !/员工|2026|大模型/u.test(name)));
 });
 
+test("organization aliases resolve Chinese commercial-event title structures", () => {
+  const bundle = buildBundle([
+    entry("databricks-funding", "Databricks 估值达 1880 亿美元，Coatue 领投新一轮融资", "Databricks raised $3 billion in a new funding round as the company expands its AI platform.", { language: "zh" }),
+    entry("huawei-deployment", "华为昇腾 950 超节点真机首展，昇腾 384 超节点已商用落地 750 多套", "华为昇腾 384 超节点已商用落地 750 多套，用于大模型训练和推理。", { language: "zh" }),
+    entry("baidu-allowance", "百度沈抖：为每位员工每月发放1000元额度，体验市面主流大模型产品", "百度推出常态化员工福利政策，为每位员工发放主流大模型产品使用额度。", { language: "zh" })
+  ], taxonomy, date, "2026-07-18T00:00:00.000Z");
+  const names = new Set(bundle.entities.filter((item) => item.entity_type === "organization_candidate").map((item) => item.canonical_name));
+
+  assert.ok(names.has("Databricks"));
+  assert.ok(names.has("Huawei"));
+  assert.ok(names.has("Baidu"));
+  assert.ok(bundle.canonical_events.every((event) => event.entities.length > 0));
+});
+
 test("boilerplate is removed before claim extraction", () => {
   const cleaned = trimBoilerplate("Acme launched a model.\nMost Popular\nUnrelated lawsuit story");
   assert.equal(cleaned, "Acme launched a model.");

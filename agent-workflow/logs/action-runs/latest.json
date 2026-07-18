@@ -1,48 +1,41 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-15T17:00:37.223Z",
-  "date": "2026-07-16",
-  "action": "Skill Ops final path and mixed-error closure",
-  "action_status": "unregistered",
+  "generated_at": "2026-07-18T02:57:21.600Z",
+  "date": "2026-07-18",
+  "action": "Daily Data Center V4 production",
+  "action_status": "current",
   "record_level": "required",
-  "trigger": "code-review",
+  "trigger": "manual-repair",
   "status": "success",
-  "summary": "Closed mixed semantic-error plus drift repair, canonicalized destructive roots, and moved hidden trash inside the Store filesystem.",
-  "contexts": [
-    "code-review final Standards",
-    "code-review final Spec",
-    "guanlan-code-rule-auditor",
-    "tdd"
-  ],
+  "summary": "Reused the same-date Raw/Pool artifact, repaired truncated source-title recovery, enforced DeepSeek-only title provenance, removed duplicated card facts, expanded entity aliases, rebuilt and gated the 2026-07-18 V4 publication.",
+  "contexts": [],
   "changed_files": [
-    "agent-workflow/tools/lib/daily-self-check-policy.mjs",
-    "agent-workflow/tools/write-daily-supervision-report.mjs",
-    "agent-workflow/tools/lib/skill-store-paths.mjs",
-    "agent-workflow/tools/tests/skill-ops-audit.test.mjs"
+    "agent-workflow/tools/run-guanlan-daily-monitor.mjs",
+    "agent-workflow/tools/generate-asset-cards-from-pool.mjs",
+    "01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs",
+    "agent-workflow/tools/build-data-center-v4.mjs",
+    "agent-workflow/tools/frontstage-regression-gate.mjs"
   ],
-  "outputs": [],
+  "outputs": [
+    "2026-07-18 Raw/Pool/Card/V4 assets",
+    "Data Center serving projections"
+  ],
   "checks": [
-    "15 Skill Ops tests passed",
-    "canonical home alias rejection passed",
-    "mixed-error repair policy passed",
-    "Node syntax checks passed"
+    "test:data-center 88/88",
+    "test:data-center-site 24/24",
+    "source-title integrity 0 violations",
+    "V4 integrity passed",
+    "projection coverage 100%",
+    "daily production chain passed"
   ],
-  "issues": [
-    "mixed dashboard errors skipped rebuild",
-    "home aliases bypassed root guard",
-    "sibling trash could cross mount boundaries"
-  ],
-  "risks": [
-    "none in committed scope"
-  ],
+  "issues": [],
+  "risks": [],
   "lessons": [
-    "classify mirror-only errors separately from semantic contract errors",
-    "destructive roots require canonical identity checks"
+    "Recover a complete captured source headline before title translation",
+    "Do not publish title-derived facts when no independent source span exists"
   ],
   "reusable_rules": [
-    "canonicalize configured roots before safety comparison",
-    "keep trash inside its owning Store",
-    "rebuild mixed semantic failures without implicitly syncing drift"
+    "Only DeepSeek or manual-reviewed source-title translations may enter the compatibility registry"
   ],
   "retired_flags": [],
   "notes": []

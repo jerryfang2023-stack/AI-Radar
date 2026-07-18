@@ -1,0 +1,283 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-087
+title: "Amazon challenges competitors with on-premises Nvidia 'AI Factories'"
+title_zh: "亚马逊推出本地部署的英伟达‘AI 工厂’挑战竞争对手"
+title_translation_status: translated
+title_translation_method: deepseek_title_translation
+title_translation_model: deepseek-v4-flash
+original_url: "https://techcrunch.com/2025/12/02/amazon-challenges-competitors-with-on-premises-nvidia-ai-factories/"
+canonical_url: "https://techcrunch.com/2025/12/02/amazon-challenges-competitors-with-on-premises-nvidia-ai-factories"
+source_name: "keyword search / Anysearch"
+source_type: operators
+source_level: C
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: gdelt
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2025-12-02T00:00:00.000Z"
+collected_at: 2026-07-18T01:55:02.637Z
+language: mixed
+full_text_hash: 0f82c3a2ab730c0a
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-18/r-087-amazon-challenges-competitors-with-on-premises-nvidia-ai-factories.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-18/r-087-amazon-challenges-competitors-with-on-premises-nvidia-ai-factories.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 94
+extractor_diagnostics: {"readability_score":94,"text_length":3792,"paragraph_count":25,"sentence_count":25,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 3792
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"0f82c3a2ab730c0a","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: primary_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 6a335236650ac48b
+content_hash: 0f82c3a2ab730c0a
+semantic_hash: c7416b60fc7e0627
+duplicate_of: ""
+first_seen_at: "2025-12-02T00:00:00.000Z"
+last_seen_at: 2026-07-18T01:55:02.637Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":true,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_market_structure","importance_score":5,"importance_reason":"market-structure commercial event; rubric=5 major/platform/industry-shaping","supporting_signals":["ai_hardware_lens","commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["keyword search","Anysearch","OpenAI","Anthropic","Microsoft","Amazon","AWS","Nvidia","Apple"],"products":["Codex","Claude"],"people":[],"industries":["法律 / 法务","制造 / 工业","开发者工具","企业服务"],"roles":["CIO / IT 负责人","法务 / 律师"],"workflows":["计费 / 预算管理","权限 / 安全治理"],"business_actions":["发布 / 推出","部署 / 上线","定价 / 计费变化"],"affected_departments":["IT / 安全","法务"],"numbers":["4","43","2","2025","3","2009","188","4\nB"],"quotes":["AI Factories","AI Superfactories,","Azure Local,"]}
+evidence_seed: {"company_actions":["Amazon challenges competitors with on-premises Nvidia 'AI Factories' | TechCrunch Image Credits:Amazon Share on Facebook Share on X Share on LinkedIn Share on Reddit Share over Email Copy Share Link # Amazon challenges competitors with on-premises Nvidia ‘AI Factories’ 4:43 PM PST · December 2, ...","The idea is to cater to companies and governments concerned with data sovereignty, or absolute control over their data so it can’t wind up in a competitor’s or foreign adversary’s hands.","An on-prem AI Factory means not sending their data to a model maker and not even sharing the hardware."],"case_details":["Or as AWS puts it: Customers supply the power and the data center, and AWS plunks in the AI system, manages it, and can tie it into other AWS cloud services."],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","法务 / 律师"],"risks_or_constraints":[]}
+missing_information: []
+key_excerpts: [{"type":"company_action","text":"Amazon challenges competitors with on-premises Nvidia 'AI Factories' | TechCrunch Image Credits:Amazon Share on Facebook Share on X Share on LinkedIn Share on Reddit Share over Email Copy Share Link # Amazon challenges competitors with on-premises Nvidia ‘AI Factories’ 4:43 PM PST · December 2, ...","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"quote","text":"Image Credits: Amazon Enterprise Amazon challenges competitors with on-premises Nvidia ‘AI Factories’ Julie Bort 4:43 PM PST · December 2, 2025 Amazon announced a new product Tuesday called “AI Factories” that allows big corporations and governments to run its AI systems in their own data centers.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"high"},{"type":"case_detail","text":"Or as AWS puts it: Customers supply the power and the data center, and AWS plunks in the AI system, manages it, and can tie it into other AWS cloud services.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The idea is to cater to companies and governments concerned with data sovereignty, or absolute control over their data so it can’t wind up in a competitor’s or foreign adversary’s hands.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"An on-prem AI Factory means not sending their data to a model maker and not even sharing the hardware.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"If that product name sounds familiar, it should.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-18T01:55:02.637Z
+theme: ai-hardware-scenario-service-signal
+keyword_group: ai-hardware-scenario-service-signal
+copyright_note: local research archive only
+---
+
+# Amazon challenges competitors with on-premises Nvidia 'AI Factories'
+
+## clean_text
+
+Image Credits: Amazon
+Enterprise
+Amazon challenges competitors with on-premises Nvidia ‘AI Factories’
+Julie Bort
+4:43 PM PST · December 2, 2025
+Amazon announced a new product Tuesday called “AI Factories” that allows big corporations and governments to run its AI systems in their own data centers. Or as AWS puts it: Customers supply the power and the data center, and AWS plunks in the AI system, manages it, and can tie it into other AWS cloud services.
+The idea is to cater to companies and governments concerned with data sovereignty, or absolute control over their data so it can’t wind up in a competitor’s or foreign adversary’s hands. An on-prem AI Factory means not sending their data to a model maker and not even sharing the hardware.
+If that product name sounds familiar, it should. That’s what Nvidia calls its hardware systems that are chock-full of tools needed to run AI, from its GPU chips to its networking tech. This AWS AI Factory is, in fact, a collaboration with Nvidia, both companies say .
+In this case, the AWS Factory will use a combination of AWS and Nvidia technology. Companies that deploy these systems can opt for Nvidia’s latest Blackwell GPUs or Amazon’s new Trainium3 chip. It uses AWS’ homegrown networking, storage, databases, and security and can tap into Amazon Bedrock — the AI model selection and management service, and AWS SageMaker AI, the model building and training tool.
+Interestingly, AWS is far from the only giant cloud provider installing Nvidia AI Factories. In October, Microsoft showed off its first of many-to-come AI Factories rolling out into its global data centers to run OpenAI workloads. Microsoft didn’t announce at the time that these extreme machines would be available for private clouds. Instead, Microsoft highlighted how it was leaning on a host of Nvidia AI Factory data center tech to build and connect its new “AI Superfactories,” aka new state-of-the-art data centers being built in Wisconsin and Georgia.
+Last month, Microsoft also outlined the data centers and cloud services that would be built in local countries to address the data sovereignty issue. To be fair, its options also include “Azure Local,” Microsoft’s own managed hardware that could be installed on customer sites.
+Still, it is a bit ironic that AI is causing the biggest cloud providers to invest so heavily in corporate private data centers and hybrid clouds like it’s 2009 all over again.
+Topics
+AI , ai factory , Amazon Web Services , AWS , AWS reinvent 2025 , Enterprise , hybrid cloud , Microsoft , nvidia , private cloud
+When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.
+Julie Bort
+Venture Editor
+Julie Bort is the Startups/Venture Desk editor for TechCrunch.
+You can contact or verify outreach from Julie by emailing julie.bort@techcrunch.com or via @Julie188 on X.
+View Bio
+November 4
+Boston
+Last chance to save up to $190 on TechCrunch Founder Summit. Join 1,000+ founders and VCs at all stages for real-world scaling insights and connections that move the needle.
+Savings end June 26, 11:59 p.m. PT .
+REGISTER NOW
+Most Popular
+Tesla driver in fatal Texas crash pressed accelerator 100%, NTSB confirms
+Sean O'Kane
+Amid hardware legal battle, OpenAI releases a $230 keyboard for Codex
+Lucas Ropek
+OpenAI’s first hardware device is reportedly a screenless speaker that can move
+Lucas Ropek
+Anthropic’s newest ad is creeping people out
+Lucas Ropek
+Satya Nadella has issued a shocking warning to companies using AI
+Julie Bort
+The wildest allegations in Apple’s trade secrets lawsuit against OpenAI
+Sarah Perez
+Anthropic starts localizing Claude pricing for India, its biggest market after the US
+Jagmeet Singh
+Loading the next article
+Error loading the next article
+
+## full_text
+
+Image Credits: Amazon
+Enterprise
+Amazon challenges competitors with on-premises Nvidia ‘AI Factories’
+Julie Bort
+4:43 PM PST · December 2, 2025
+Amazon announced a new product Tuesday called “AI Factories” that allows big corporations and governments to run its AI systems in their own data centers. Or as AWS puts it: Customers supply the power and the data center, and AWS plunks in the AI system, manages it, and can tie it into other AWS cloud services.
+The idea is to cater to companies and governments concerned with data sovereignty, or absolute control over their data so it can’t wind up in a competitor’s or foreign adversary’s hands. An on-prem AI Factory means not sending their data to a model maker and not even sharing the hardware.
+If that product name sounds familiar, it should. That’s what Nvidia calls its hardware systems that are chock-full of tools needed to run AI, from its GPU chips to its networking tech. This AWS AI Factory is, in fact, a collaboration with Nvidia, both companies say .
+In this case, the AWS Factory will use a combination of AWS and Nvidia technology. Companies that deploy these systems can opt for Nvidia’s latest Blackwell GPUs or Amazon’s new Trainium3 chip. It uses AWS’ homegrown networking, storage, databases, and security and can tap into Amazon Bedrock — the AI model selection and management service, and AWS SageMaker AI, the model building and training tool.
+Interestingly, AWS is far from the only giant cloud provider installing Nvidia AI Factories. In October, Microsoft showed off its first of many-to-come AI Factories rolling out into its global data centers to run OpenAI workloads. Microsoft didn’t announce at the time that these extreme machines would be available for private clouds. Instead, Microsoft highlighted how it was leaning on a host of Nvidia AI Factory data center tech to build and connect its new “AI Superfactories,” aka new state-of-the-art data centers being built in Wisconsin and Georgia.
+Last month, Microsoft also outlined the data centers and cloud services that would be built in local countries to address the data sovereignty issue. To be fair, its options also include “Azure Local,” Microsoft’s own managed hardware that could be installed on customer sites.
+Still, it is a bit ironic that AI is causing the biggest cloud providers to invest so heavily in corporate private data centers and hybrid clouds like it’s 2009 all over again.
+Topics
+AI , ai factory , Amazon Web Services , AWS , AWS reinvent 2025 , Enterprise , hybrid cloud , Microsoft , nvidia , private cloud
+When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.
+Julie Bort
+Venture Editor
+Julie Bort is the Startups/Venture Desk editor for TechCrunch.
+You can contact or verify outreach from Julie by emailing julie.bort@techcrunch.com or via @Julie188 on X.
+View Bio
+November 4
+Boston
+Last chance to save up to $190 on TechCrunch Founder Summit. Join 1,000+ founders and VCs at all stages for real-world scaling insights and connections that move the needle.
+Savings end June 26, 11:59 p.m. PT .
+REGISTER NOW
+Most Popular
+Tesla driver in fatal Texas crash pressed accelerator 100%, NTSB confirms
+Sean O'Kane
+Amid hardware legal battle, OpenAI releases a $230 keyboard for Codex
+Lucas Ropek
+OpenAI’s first hardware device is reportedly a screenless speaker that can move
+Lucas Ropek
+Anthropic’s newest ad is creeping people out
+Lucas Ropek
+Satya Nadella has issued a shocking warning to companies using AI
+Julie Bort
+The wildest allegations in Apple’s trade secrets lawsuit against OpenAI
+Sarah Perez
+Anthropic starts localizing Claude pricing for India, its biggest market after the US
+Jagmeet Singh
+Loading the next article
+Error loading the next article
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 94
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":94,"text_length":3792,"paragraph_count":25,"sentence_count":25,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Amazon challenges competitors with on-premises Nvidia 'AI Factories' | TechCrunch Image Credits:Amazon Share on Facebook Share on X Share on LinkedIn Share on Reddit Share over Email Copy Share Link # Amazon challenges competitors with on-premises Nvidia ‘AI Factories’ 4:43 PM PST · December 2, ...
+
+2. **quote**｜supports=signal_card_candidate, relationship_graph_input, viewpoint｜importance=medium｜confidence=high
+   Image Credits: Amazon Enterprise Amazon challenges competitors with on-premises Nvidia ‘AI Factories’ Julie Bort 4:43 PM PST · December 2, 2025 Amazon announced a new product Tuesday called “AI Factories” that allows big corporations and governments to run its AI systems in their own data centers.
+
+3. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=high
+   Or as AWS puts it: Customers supply the power and the data center, and AWS plunks in the AI system, manages it, and can tie it into other AWS cloud services.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   The idea is to cater to companies and governments concerned with data sovereignty, or absolute control over their data so it can’t wind up in a competitor’s or foreign adversary’s hands.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   An on-prem AI Factory means not sending their data to a model maker and not even sharing the hardware.
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   If that product name sounds familiar, it should.
+
+## business_elements
+
+- companies: keyword search, Anysearch, OpenAI, Anthropic, Microsoft, Amazon, AWS, Nvidia, Apple
+- products: Codex, Claude
+- people: 暂无公开信息
+- industries: 法律 / 法务, 制造 / 工业, 开发者工具, 企业服务
+- roles: CIO / IT 负责人, 法务 / 律师
+- workflows: 计费 / 预算管理, 权限 / 安全治理
+- business_actions: 发布 / 推出, 部署 / 上线, 定价 / 计费变化
+- affected_departments: IT / 安全, 法务
+- numbers: 4, 43, 2, 2025, 3, 2009, 188, 4
+B
+- quotes: AI Factories / AI Superfactories, / Azure Local,
+
+## evidence_seed
+
+- company_actions: Amazon challenges competitors with on-premises Nvidia 'AI Factories' | TechCrunch Image Credits:Amazon Share on Facebook Share on X Share on LinkedIn Share on Reddit Share over Email Copy Share Link # Amazon challenges competitors with on-premises Nvidia ‘AI Factories’ 4:43 PM PST · December 2, ... / The idea is to cater to companies and governments concerned with data sovereignty, or absolute control over their data so it can’t wind up in a competitor’s or foreign adversary’s hands. / An on-prem AI Factory means not sending their data to a model maker and not even sharing the hardware.
+- case_details: Or as AWS puts it: Customers supply the power and the data center, and AWS plunks in the AI system, manages it, and can tie it into other AWS cloud services.
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 法务 / 律师
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_market_structure
+- importance_score: 5
+- importance_reason: market-structure commercial event; rubric=5 major/platform/industry-shaping
+- supporting_signals: ai_hardware_lens,commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: true
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- watchlist
+
+## missing_information
+
+- none
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: primary_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Amazon challenges competitors with on-premises Nvidia 'AI Factories' | TechCrunch Image Credits:Amazon Share on Facebook Share on X Share on LinkedIn Share on Reddit Share over Email Copy Share Link # Amazon challenges competitors with on-premises Nvidia ‘AI Factories’ 4:43 PM PST · December 2, ...
+
+## 采集备注
+
+该条目由 gdelt 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

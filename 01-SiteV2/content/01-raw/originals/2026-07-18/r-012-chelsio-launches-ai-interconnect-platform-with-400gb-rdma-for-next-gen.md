@@ -1,0 +1,354 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-012
+title: "CHELSIO LAUNCHES AI INTERCONNECT PLATFORM WITH 400Gb RDMA FOR NEXT-GENERATION DATA CENTER, STORAGE, AND AI INFRASTRUCTURE"
+title_zh: "CHELSIO 推出支持 400Gb RDMA 的 AI 互连平台，面向下一代数据中心、存储及 AI 基础设施"
+title_translation_status: translated
+title_translation_method: deepseek_title_translation
+title_translation_model: deepseek-v4-flash
+original_url: "https://www.prnewswire.com/news-releases/chelsio-launches-ai-interconnect-platform-with-400gb-rdma-for-next-generation-data-center-storage-and-ai-infrastructure-302827141.html"
+canonical_url: "https://prnewswire.com/news-releases/chelsio-launches-ai-interconnect-platform-with-400gb-rdma-for-next-generation-data-center-storage-and-ai-infrastructure-302827141.html"
+source_name: "keyword search / Anysearch"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_original_source"
+search_path: "ai_hardware_original"
+search_path_label: "AI hardware original-source path"
+author: ""
+published_at: "2026-07-16T00:00:00.000Z"
+collected_at: 2026-07-18T01:54:23.040Z
+language: mixed
+full_text_hash: e58082f6a33fba44
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-18/r-012-chelsio-launches-ai-interconnect-platform-with-400gb-rdma-for-next-gen.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-18/r-012-chelsio-launches-ai-interconnect-platform-with-400gb-rdma-for-next-gen.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":9959,"paragraph_count":64,"sentence_count":38,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+has_full_text: true
+content_length: 9959
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"e58082f6a33fba44","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 44fafb25d1b311ab
+content_hash: e58082f6a33fba44
+semantic_hash: 7a4b659f5f907e0f
+duplicate_of: ""
+first_seen_at: "2026-07-16T00:00:00.000Z"
+last_seen_at: 2026-07-18T01:54:23.040Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":5,"importance_reason":"AI hardware scenario or service deployment; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","ai_hardware_lens","commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["keyword search","Anysearch"],"products":[],"people":[],"industries":["企业服务"],"roles":["CIO / IT 负责人"],"workflows":["计费 / 预算管理","权限 / 安全治理","部署 / 集成交付"],"business_actions":["发布 / 推出","合作 / 联盟","部署 / 上线"],"affected_departments":["IT / 安全","财务 / 预算","销售 / 客服"],"numbers":["400","16","2026","1","10","25","40","50"],"quotes":[" said Kianoosh Naghshineh, CEO of Chelsio Communications . ","\n— Rob Scidmore, CEO , X-ES\n","\nBrandon Hoff , Executive Analyst at IDC.\n"]}
+evidence_seed: {"company_actions":["CHELSIO LAUNCHES AI INTERCONNECT PLATFORM WITH 400Gb RDMA FOR NEXT-GENERATION DATA CENTER, STORAGE, AND AI INFRASTRUCTURE Accessibility Statement Skip Navigation Seventh-generation Ethernet-based AI interconnect platform accelerates AI training, inference, storage, and data center networking worklo.... / query=AI server product launch enterprise inference / intent=find_original_source / path=ai_hardware_original","Seventh-generation Ethernet-based AI interconnect platform accelerates AI training, inference, storage, and data center networking workloads with high efficiency and software continuity SUNNYVALE, Calif.",", July 16, 2026 /PRNewswire/ -- Chelsio Communications, Inc."],"case_details":["Built on Chelsio seventh-generation Unified Wire architecture, the platform delivers native 400Gb Ethernet, Unified RDMA (iWARP and RoCEv2), storage acceleration, and AI infrastructure optimization for cloud, enterprise, storage, and hyperscale deployments."],"workflow_changes":[", a leading provider of high-performance (1/10/25/40/50/100/200/400Gb) Ethernet Unified Wire Adapters and ASICs, today announced its seventh-generation AI Interconnect Platform, comprising SmartNICs, Storage Controllers, and Data Processing Units (DPUs) ."],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":[]}
+missing_information: []
+key_excerpts: [{"type":"product_update","text":"CHELSIO LAUNCHES AI INTERCONNECT PLATFORM WITH 400Gb RDMA FOR NEXT-GENERATION DATA CENTER, STORAGE, AND AI INFRASTRUCTURE Accessibility Statement Skip Navigation Seventh-generation Ethernet-based AI interconnect platform accelerates AI training, inference, storage, and data center networking worklo.... / query=AI server product launch enterprise inference / intent=find_original_source / path=ai_hardware_original","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Seventh-generation Ethernet-based AI interconnect platform accelerates AI training, inference, storage, and data center networking workloads with high efficiency and software continuity SUNNYVALE, Calif.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":", July 16, 2026 /PRNewswire/ -- Chelsio Communications, Inc.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":", a leading provider of high-performance (1/10/25/40/50/100/200/400Gb) Ethernet Unified Wire Adapters and ASICs, today announced its seventh-generation AI Interconnect Platform, comprising SmartNICs, Storage Controllers, and Data Processing Units (DPUs) .","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Built on Chelsio seventh-generation Unified Wire architecture, the platform delivers native 400Gb Ethernet, Unified RDMA (iWARP and RoCEv2), storage acceleration, and AI infrastructure optimization for cloud, enterprise, storage, and hyperscale deployments.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"SmartNICs and Storage Controllers are available immediately, while DPUs are available today as an evaluation platform, with production availability planned for December 2026.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-18T01:54:23.040Z
+theme: ai-hardware-trend-innovation-signal
+keyword_group: ai-hardware-trend-innovation-signal
+copyright_note: local research archive only
+---
+
+# CHELSIO LAUNCHES AI INTERCONNECT PLATFORM WITH 400Gb RDMA FOR NEXT-GENERATION DATA CENTER, STORAGE, AND AI INFRASTRUCTURE
+
+## clean_text
+
+Seventh-generation Ethernet-based AI interconnect platform accelerates AI training, inference, storage, and data center networking workloads with high efficiency and software continuity
+SUNNYVALE, Calif. , July 16, 2026 /PRNewswire/ -- Chelsio Communications, Inc., a leading provider of high-performance (1/10/25/40/50/100/200/400Gb) Ethernet Unified Wire Adapters and ASICs, today announced its seventh-generation AI Interconnect Platform, comprising SmartNICs, Storage Controllers, and Data Processing Units (DPUs) . Built on Chelsio seventh-generation Unified Wire architecture, the platform delivers native 400Gb Ethernet, Unified RDMA (iWARP and RoCEv2), storage acceleration, and AI infrastructure optimization for cloud, enterprise, storage, and hyperscale deployments. SmartNICs and Storage Controllers are available immediately, while DPUs are available today as an evaluation platform, with production availability planned for December 2026.
+Designed for AI training and inference clusters, disaggregated storage, and high-performance networking, the platform combines SmartNICs for high-volume cloud and AI deployments, Storage Controllers for storage acceleration, and DPUs for advanced networking, storage, and security acceleration. Together, they share a common hardware and software architecture that preserves software continuity while enabling scalable, standards-based AI infrastructure.
+Building on the proven success of Chelsio T5 and T6 families, the seventh-generation platform extends the company's leadership in Ethernet networking, delivering higher throughput, lower latency, improved efficiency, and software continuity across SmartNIC, DPU, and storage controller deployments.
+With this launch , Chelsio extends its leadership in Ethernet offload for AI, storage, and high-performance networking, enabling CPU-efficient, high-throughput connectivity across GPU clusters, storage, and network fabrics. By combining advanced congestion management, hardware offloads, and a programmable data path, T7 helps eliminate I/O bottlenecks across modern data center infrastructures. This positions Ethernet as a scalable, standards-based alternative to proprietary AI interconnects at 400Gb speeds.
+"Chelsio seventh-generation AI Interconnect Platform represents a milestone in Ethernet evolution, combining programmable flexibility with the proven performance our customers depend on, " said Kianoosh Naghshineh, CEO of Chelsio Communications . "With T7, we are positioning Ethernet as a scalable, standards-based AI interconnect—delivering the performance required for large-scale AI training while preserving the flexibility and cost advantages of open networking."
+AI Interconnect Platform – Key Features & Highlights
+Ethernet Performance: Supports 1/10/25/40/50/100/200/400GbE with sustained line-rate throughput
+AI & HPC Optimization: Lossless Ethernet, advanced congestion management, and GPU-optimized data paths for large-scale AI training and real-time inference
+400Gb RDMA Acceleration: Native iWARP and RoCEv2 support enables ultra-low latency, high-bandwidth communication for AI training, HPC, and disaggregated infrastructure
+Storage Acceleration: Hardware offloads for NVMe/TCP, iSCSI, RDMA, and TOE, delivering peak efficiency for JBOFs and enterprise storage
+Programmable Data Path: Workload-specific acceleration, including AI data pipeline optimization and inline processing
+Security: On-chip crypto engines for QUIC, kTLS, and IPsec/TLS/kTLS.
+Virtualization & Cloud: SR-IOV, vSwitch, and container offloads for multi-tenant performance isolation
+Energy Efficiency: Industry-leading performance-per-watt
+Deployment Flexibility: PCIe Gen5, OCP 3.0, and mezzanine form factors
+Three Product Families
+SmartNICs – S7xx adapters based on S7x silicon, a memory-free single-chip , cost-optimized SmartNIC for cloud and AI deployments
+Storage Controllers – Dedicated storage acceleration controller adapters based on N7 Storage Controller silicon
+T7 DPUs – Fully programmable DPU adapters for AI networking, storage and security acceleration based on the T7 silicon.
+Built on the seventh-generation Unified Wire architecture, the AI Interconnect platform introduces unified data paths that integrate networking, storage, and compute acceleration, creating purpose-built pipelines optimized for AI data movement, storage access, and distributed computing. With full software compatibility from T4 through T6, the platform protects existing software investments while enabling seamless migration to next-generation Ethernet and PCIe speeds.
+Expanded AI Interconnect Product Family
+The AI Interconnect Platform includes a broad range of SmartNICs, Storage Controllers, and DPU adapters built on Chelsio seventh-generation offload architecture:
+Available Now
+S7250 / S7450 / S7450-OCP SmartNICs — Dual- and quad-port 1/10/25/50 GbE SmartNICs based on the S7 architecture, optimized for virtualization, embedded systems, and edge deployments.
+S72200 / S72200-OCP SmartNICs — Dual-port 40/50/100/200 GbE SmartNICs using the S7 silicon, ideal for high-volume cloud, HPC, and AI infrastructure.
+S71400 SmartNIC — Single-port 400 GbE SmartNIC supporting flexible 4×100 G and 2×200 G modes for ultra-scale fabrics.
+T72200/T7450 Storage Controllers — Dedicated storage acceleration controllers delivering hardware offloads for NVMe/TCP, NVMe-oF, iSCSI, RDMA, and enterprise storage workloads. Available in PCIe and OCP form factors.
+T72200 / T7450 Storage Controller Adapters — Dual- and quad-port T7 DPU adapters featuring hardware NVMe/TCP and RDMA offloads, zero-copy, and kernel-bypass acceleration for AI and storage workloads.
+Early Access
+T72200-DPU / T7450-DPU DPU Adapters — Fully programmable T7 DPUs providing per-connection offload, direct data placement, and mixed stateful/stateless acceleration.
+Each adapter supports TCP/IP, UDP/IP, Unified RDMA (RoCEv2 & iWARP), iSCSI, NVMe-oF, NVMe/TCP, NVGRE, VXLAN, and TLS/IPsec/kTLS/QUIC/RSA offloads, providing unmatched flexibility across traditional and AI-driven data-center workloads.
+AI Interconnect for Training and Inference
+With 400Gb RDMA, the Chelsio T7 DPU platform enables high-bandwidth, low-latency communication for distributed AI training and HPC workloads—reducing synchronization overhead, improving GPU utilization, and enabling efficient scaling of large clusters.
+By combining lossless Ethernet, advanced congestion management, and full protocol offload, T7 delivers:
+400Gb RDMA communication for distributed AI training and HPC scaling
+High-throughput, GPU-to-GPU and GPU-to-storage data movement for large-scale training clusters
+Ultra-low latency communication optimized for real-time inference and microservices
+Improved GPU and storage utilization through CPU bypass and full protocol offload
+Seamless scaling using standards-based Ethernet as an alternative to proprietary AI interconnects
+Industry Perspectives
+"Our customers need compact, ruggedized servers that deliver deterministic performance, fast provisioning, and secure high-speed connectivity. Chelsio S7 provides the performance headroom and platform flexibility to support demanding workloads in constrained edge and embedded environments. It's a strong foundation for next-generation systems that must scale capability without adding complexity."
+— Rob Scidmore, CEO , X-ES
+"As organizations scale AI and cloud deployments, DPUs provide a clear path to efficient, standards-based acceleration. Chelsio T7 DPU builds on proven architecture and open protocols to deliver performance and software continuity across generations."
+Brandon Hoff , Executive Analyst at IDC.
+"Chelsio T7 DPU is among the most advanced Ethernet-based acceleration platforms on the market. By combining protocol offloads, programmable flexibility, and high-speed Ethernet in a single architecture, Chelsio is addressing critical infrastructure challenges for storage, cloud, and AI workloads. We expect strong adoption across hyperscalers, OEMs, and service providers."
+Greg Schulz , Server StorageIO™
+Availability
+The SmartNIC and storage controllers adapter and silicon families are available through Chelsio global OEM, ODM, and distribution partners. The T7 DPU is available as an evaluation platform for early customer engagements, with production availability planned for December 2026.
+Additional Resources
+T7 and S7 Adapter Selector Guide
+T7 DPU Product Brief
+S7 SmartNIC Product Brief
+AI Networking Solution: Chelsio T7 DPU and S7/T6 SmartNICs (Chelsio Solution Brief)
+DPUs Enable Secure, Flexible, and Efficient Semiconductor Solutions in the Datacenter and at the Heavy Edge (IDC Analyst Brief)
+T7 L2 NIC performance
+T7 IPSec offload performance
+T7 kTLS offload performance
+About Chelsio Communications
+Chelsio is a recognized leader in high-performance (1/10/25/40/50/100/200/400Gb) Ethernet adapters for networking, storage and AI infrastructure acceleration within virtualized enterprise data centers, public and private hyperscale clouds, and embedded and cluster computing environments. With a clear emphasis on performance and delivering the only robust offload solution, as opposed to simple speeds and feeds, Chelsio has set itself apart from the competition. The Chelsio Unified Wire and DPU solutions fully offload all protocol traffic, providing no-compromise performance with high packet processing capacity, sub-microsecond hardware latency, and high bandwidth. Visit the company at www.chelsio.com and follow the company on X and Facebook .
+SOURCE Chelsio Communications, Inc.
+21 %
+more press release views with
+Request a Demo
+&times;
+Modal title
+Also from this source
+CHELSIO ANNOUNCES BROAD SAMPLING OF T7 DPU PLATFORM
+Chelsio Communications, Inc., a leading provider of high-performance (1/10/25/40/50/100/200/400Gb) Ethernet Unified Wire ASICs and Adapters for...
+More Releases From This Source
+Explore
+Computer Hardware
+Computer Hardware
+Networks
+Networks
+News Releases in Similar Topics
+
+## full_text
+
+Seventh-generation Ethernet-based AI interconnect platform accelerates AI training, inference, storage, and data center networking workloads with high efficiency and software continuity
+SUNNYVALE, Calif. , July 16, 2026 /PRNewswire/ -- Chelsio Communications, Inc., a leading provider of high-performance (1/10/25/40/50/100/200/400Gb) Ethernet Unified Wire Adapters and ASICs, today announced its seventh-generation AI Interconnect Platform, comprising SmartNICs, Storage Controllers, and Data Processing Units (DPUs) . Built on Chelsio seventh-generation Unified Wire architecture, the platform delivers native 400Gb Ethernet, Unified RDMA (iWARP and RoCEv2), storage acceleration, and AI infrastructure optimization for cloud, enterprise, storage, and hyperscale deployments. SmartNICs and Storage Controllers are available immediately, while DPUs are available today as an evaluation platform, with production availability planned for December 2026.
+Designed for AI training and inference clusters, disaggregated storage, and high-performance networking, the platform combines SmartNICs for high-volume cloud and AI deployments, Storage Controllers for storage acceleration, and DPUs for advanced networking, storage, and security acceleration. Together, they share a common hardware and software architecture that preserves software continuity while enabling scalable, standards-based AI infrastructure.
+Building on the proven success of Chelsio T5 and T6 families, the seventh-generation platform extends the company's leadership in Ethernet networking, delivering higher throughput, lower latency, improved efficiency, and software continuity across SmartNIC, DPU, and storage controller deployments.
+With this launch , Chelsio extends its leadership in Ethernet offload for AI, storage, and high-performance networking, enabling CPU-efficient, high-throughput connectivity across GPU clusters, storage, and network fabrics. By combining advanced congestion management, hardware offloads, and a programmable data path, T7 helps eliminate I/O bottlenecks across modern data center infrastructures. This positions Ethernet as a scalable, standards-based alternative to proprietary AI interconnects at 400Gb speeds.
+"Chelsio seventh-generation AI Interconnect Platform represents a milestone in Ethernet evolution, combining programmable flexibility with the proven performance our customers depend on, " said Kianoosh Naghshineh, CEO of Chelsio Communications . "With T7, we are positioning Ethernet as a scalable, standards-based AI interconnect—delivering the performance required for large-scale AI training while preserving the flexibility and cost advantages of open networking."
+AI Interconnect Platform – Key Features & Highlights
+Ethernet Performance: Supports 1/10/25/40/50/100/200/400GbE with sustained line-rate throughput
+AI & HPC Optimization: Lossless Ethernet, advanced congestion management, and GPU-optimized data paths for large-scale AI training and real-time inference
+400Gb RDMA Acceleration: Native iWARP and RoCEv2 support enables ultra-low latency, high-bandwidth communication for AI training, HPC, and disaggregated infrastructure
+Storage Acceleration: Hardware offloads for NVMe/TCP, iSCSI, RDMA, and TOE, delivering peak efficiency for JBOFs and enterprise storage
+Programmable Data Path: Workload-specific acceleration, including AI data pipeline optimization and inline processing
+Security: On-chip crypto engines for QUIC, kTLS, and IPsec/TLS/kTLS.
+Virtualization & Cloud: SR-IOV, vSwitch, and container offloads for multi-tenant performance isolation
+Energy Efficiency: Industry-leading performance-per-watt
+Deployment Flexibility: PCIe Gen5, OCP 3.0, and mezzanine form factors
+Three Product Families
+SmartNICs – S7xx adapters based on S7x silicon, a memory-free single-chip , cost-optimized SmartNIC for cloud and AI deployments
+Storage Controllers – Dedicated storage acceleration controller adapters based on N7 Storage Controller silicon
+T7 DPUs – Fully programmable DPU adapters for AI networking, storage and security acceleration based on the T7 silicon.
+Built on the seventh-generation Unified Wire architecture, the AI Interconnect platform introduces unified data paths that integrate networking, storage, and compute acceleration, creating purpose-built pipelines optimized for AI data movement, storage access, and distributed computing. With full software compatibility from T4 through T6, the platform protects existing software investments while enabling seamless migration to next-generation Ethernet and PCIe speeds.
+Expanded AI Interconnect Product Family
+The AI Interconnect Platform includes a broad range of SmartNICs, Storage Controllers, and DPU adapters built on Chelsio seventh-generation offload architecture:
+Available Now
+S7250 / S7450 / S7450-OCP SmartNICs — Dual- and quad-port 1/10/25/50 GbE SmartNICs based on the S7 architecture, optimized for virtualization, embedded systems, and edge deployments.
+S72200 / S72200-OCP SmartNICs — Dual-port 40/50/100/200 GbE SmartNICs using the S7 silicon, ideal for high-volume cloud, HPC, and AI infrastructure.
+S71400 SmartNIC — Single-port 400 GbE SmartNIC supporting flexible 4×100 G and 2×200 G modes for ultra-scale fabrics.
+T72200/T7450 Storage Controllers — Dedicated storage acceleration controllers delivering hardware offloads for NVMe/TCP, NVMe-oF, iSCSI, RDMA, and enterprise storage workloads. Available in PCIe and OCP form factors.
+T72200 / T7450 Storage Controller Adapters — Dual- and quad-port T7 DPU adapters featuring hardware NVMe/TCP and RDMA offloads, zero-copy, and kernel-bypass acceleration for AI and storage workloads.
+Early Access
+T72200-DPU / T7450-DPU DPU Adapters — Fully programmable T7 DPUs providing per-connection offload, direct data placement, and mixed stateful/stateless acceleration.
+Each adapter supports TCP/IP, UDP/IP, Unified RDMA (RoCEv2 & iWARP), iSCSI, NVMe-oF, NVMe/TCP, NVGRE, VXLAN, and TLS/IPsec/kTLS/QUIC/RSA offloads, providing unmatched flexibility across traditional and AI-driven data-center workloads.
+AI Interconnect for Training and Inference
+With 400Gb RDMA, the Chelsio T7 DPU platform enables high-bandwidth, low-latency communication for distributed AI training and HPC workloads—reducing synchronization overhead, improving GPU utilization, and enabling efficient scaling of large clusters.
+By combining lossless Ethernet, advanced congestion management, and full protocol offload, T7 delivers:
+400Gb RDMA communication for distributed AI training and HPC scaling
+High-throughput, GPU-to-GPU and GPU-to-storage data movement for large-scale training clusters
+Ultra-low latency communication optimized for real-time inference and microservices
+Improved GPU and storage utilization through CPU bypass and full protocol offload
+Seamless scaling using standards-based Ethernet as an alternative to proprietary AI interconnects
+Industry Perspectives
+"Our customers need compact, ruggedized servers that deliver deterministic performance, fast provisioning, and secure high-speed connectivity. Chelsio S7 provides the performance headroom and platform flexibility to support demanding workloads in constrained edge and embedded environments. It's a strong foundation for next-generation systems that must scale capability without adding complexity."
+— Rob Scidmore, CEO , X-ES
+"As organizations scale AI and cloud deployments, DPUs provide a clear path to efficient, standards-based acceleration. Chelsio T7 DPU builds on proven architecture and open protocols to deliver performance and software continuity across generations."
+Brandon Hoff , Executive Analyst at IDC.
+"Chelsio T7 DPU is among the most advanced Ethernet-based acceleration platforms on the market. By combining protocol offloads, programmable flexibility, and high-speed Ethernet in a single architecture, Chelsio is addressing critical infrastructure challenges for storage, cloud, and AI workloads. We expect strong adoption across hyperscalers, OEMs, and service providers."
+Greg Schulz , Server StorageIO™
+Availability
+The SmartNIC and storage controllers adapter and silicon families are available through Chelsio global OEM, ODM, and distribution partners. The T7 DPU is available as an evaluation platform for early customer engagements, with production availability planned for December 2026.
+Additional Resources
+T7 and S7 Adapter Selector Guide
+T7 DPU Product Brief
+S7 SmartNIC Product Brief
+AI Networking Solution: Chelsio T7 DPU and S7/T6 SmartNICs (Chelsio Solution Brief)
+DPUs Enable Secure, Flexible, and Efficient Semiconductor Solutions in the Datacenter and at the Heavy Edge (IDC Analyst Brief)
+T7 L2 NIC performance
+T7 IPSec offload performance
+T7 kTLS offload performance
+About Chelsio Communications
+Chelsio is a recognized leader in high-performance (1/10/25/40/50/100/200/400Gb) Ethernet adapters for networking, storage and AI infrastructure acceleration within virtualized enterprise data centers, public and private hyperscale clouds, and embedded and cluster computing environments. With a clear emphasis on performance and delivering the only robust offload solution, as opposed to simple speeds and feeds, Chelsio has set itself apart from the competition. The Chelsio Unified Wire and DPU solutions fully offload all protocol traffic, providing no-compromise performance with high packet processing capacity, sub-microsecond hardware latency, and high bandwidth. Visit the company at www.chelsio.com and follow the company on X and Facebook .
+SOURCE Chelsio Communications, Inc.
+21 %
+more press release views with
+Request a Demo
+&times;
+Modal title
+Also from this source
+CHELSIO ANNOUNCES BROAD SAMPLING OF T7 DPU PLATFORM
+Chelsio Communications, Inc., a leading provider of high-performance (1/10/25/40/50/100/200/400Gb) Ethernet Unified Wire ASICs and Adapters for...
+More Releases From This Source
+Explore
+Computer Hardware
+Computer Hardware
+Networks
+Networks
+News Releases in Similar Topics
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 97
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":9959,"paragraph_count":64,"sentence_count":38,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **product_update**｜supports=signal_card_candidate, relationship_graph_input, business_change｜importance=high｜confidence=high
+   CHELSIO LAUNCHES AI INTERCONNECT PLATFORM WITH 400Gb RDMA FOR NEXT-GENERATION DATA CENTER, STORAGE, AND AI INFRASTRUCTURE Accessibility Statement Skip Navigation Seventh-generation Ethernet-based AI interconnect platform accelerates AI training, inference, storage, and data center networking worklo.... / query=AI server product launch enterprise inference / intent=find_original_source / path=ai_hardware_original
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Seventh-generation Ethernet-based AI interconnect platform accelerates AI training, inference, storage, and data center networking workloads with high efficiency and software continuity SUNNYVALE, Calif.
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   , July 16, 2026 /PRNewswire/ -- Chelsio Communications, Inc.
+
+4. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   , a leading provider of high-performance (1/10/25/40/50/100/200/400Gb) Ethernet Unified Wire Adapters and ASICs, today announced its seventh-generation AI Interconnect Platform, comprising SmartNICs, Storage Controllers, and Data Processing Units (DPUs) .
+
+5. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=high
+   Built on Chelsio seventh-generation Unified Wire architecture, the platform delivers native 400Gb Ethernet, Unified RDMA (iWARP and RoCEv2), storage acceleration, and AI infrastructure optimization for cloud, enterprise, storage, and hyperscale deployments.
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   SmartNICs and Storage Controllers are available immediately, while DPUs are available today as an evaluation platform, with production availability planned for December 2026.
+
+## business_elements
+
+- companies: keyword search, Anysearch
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 企业服务
+- roles: CIO / IT 负责人
+- workflows: 计费 / 预算管理, 权限 / 安全治理, 部署 / 集成交付
+- business_actions: 发布 / 推出, 合作 / 联盟, 部署 / 上线
+- affected_departments: IT / 安全, 财务 / 预算, 销售 / 客服
+- numbers: 400, 16, 2026, 1, 10, 25, 40, 50
+- quotes:  said Kianoosh Naghshineh, CEO of Chelsio Communications .  / 
+— Rob Scidmore, CEO , X-ES
+ / 
+Brandon Hoff , Executive Analyst at IDC.
+
+
+## evidence_seed
+
+- company_actions: CHELSIO LAUNCHES AI INTERCONNECT PLATFORM WITH 400Gb RDMA FOR NEXT-GENERATION DATA CENTER, STORAGE, AND AI INFRASTRUCTURE Accessibility Statement Skip Navigation Seventh-generation Ethernet-based AI interconnect platform accelerates AI training, inference, storage, and data center networking worklo.... / query=AI server product launch enterprise inference / intent=find_original_source / path=ai_hardware_original / Seventh-generation Ethernet-based AI interconnect platform accelerates AI training, inference, storage, and data center networking workloads with high efficiency and software continuity SUNNYVALE, Calif. / , July 16, 2026 /PRNewswire/ -- Chelsio Communications, Inc.
+- case_details: Built on Chelsio seventh-generation Unified Wire architecture, the platform delivers native 400Gb Ethernet, Unified RDMA (iWARP and RoCEv2), storage acceleration, and AI infrastructure optimization for cloud, enterprise, storage, and hyperscale deployments.
+- workflow_changes: , a leading provider of high-performance (1/10/25/40/50/100/200/400Gb) Ethernet Unified Wire Adapters and ASICs, today announced its seventh-generation AI Interconnect Platform, comprising SmartNICs, Storage Controllers, and Data Processing Units (DPUs) .
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_vertical_solution
+- importance_score: 5
+- importance_reason: AI hardware scenario or service deployment; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,ai_hardware_lens,commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- none
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+CHELSIO LAUNCHES AI INTERCONNECT PLATFORM WITH 400Gb RDMA FOR NEXT-GENERATION DATA CENTER, STORAGE, AND AI INFRASTRUCTURE Accessibility Statement Skip Navigation Seventh-generation Ethernet-based AI interconnect platform accelerates AI training, inference, storage, and data center networking worklo.... / query=AI server product launch enterprise inference / intent=find_original_source / path=ai_hardware_original
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

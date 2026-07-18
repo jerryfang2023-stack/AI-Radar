@@ -25,11 +25,16 @@ test("frontstage adapter builds real V4 data collections", () => {
 test("current commercial event titles are complete and evidence-specific", () => {
   const data = buildFrontstageData(root);
   const currentEvents = data.events.filter((event) => event.dataDate === data.meta.currentDate);
-  const aina = currentEvents.find((event) => event.originalTitle === "Aina Raises $5.5 Mn From Info Edge, Others To Build AI Hardware Interface");
+  const sourceTitle = "Aina raises $5.5M with new hardware interface for the age of AI beyond touchscreens and keyboards";
+  const aina = currentEvents.find((event) => event.originalTitle === sourceTitle);
+  const translationStore = JSON.parse(fs.readFileSync(path.join(root, "01-SiteV2/content/11-databases/source-title-translations.json"), "utf8"));
+  const approvedTranslation = translationStore.translations.find((item) => item.sourceTitle === sourceTitle);
 
   assert.ok(currentEvents.every((event) => isCompletePublicEventTitle(event.title)));
   assert.equal(currentEvents.some((event) => /模型券即时补贴平台/u.test(event.title)), false);
-  assert.equal(aina?.title, "Aina 从 Info Edge 等投资方获得 550 万美元融资，用于打造 AI 硬件界面");
+  assert.ok(aina, "a truncated discovery title is repaired from the captured source headline before publication");
+  assert.ok(approvedTranslation?.zhTitle, "the source-title translation registry contains the approved Aina title");
+  assert.equal(aina.title, approvedTranslation.zhTitle);
 });
 
 test("default event date follows the latest accepted data batch", () => {

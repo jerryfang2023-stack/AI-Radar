@@ -1,0 +1,244 @@
+# 2026-07-18 Pool-to-Card Handoff
+
+- generated_at: 2026-07-18T02:44:17.422Z
+- raw_input_count: 150
+- pool_input_count: 140
+- written_count: 37
+- merged_count: 0
+- skipped_count: 0
+- signal_asset_count: 36
+- not_promoted_candidate_count: 103
+- asset_generation_limit: all_cardable_raw_pool
+- signal_asset_mode: all cardable Raw / Pool business signals
+
+## Signal Card Assets
+
+- SIG-20260718-A01｜P-001｜Databricks 估值达 1880 亿美元，Coatue 领投新一轮融资
+- SIG-20260718-A02｜P-009｜Sable 从红杉资本融资 4500 万美元，打造替代人类运行产品演示的 AI 智能体
+- SIG-20260718-A03｜P-013｜Reo.Dev 完成 1130 万美元 A 轮融资，扩大面向工程团队的 AI 信号服务
+- SIG-20260718-A04｜P-023｜Whale 完成 4000 万美元 C3 轮扩展融资，C 轮总融资额达 1 亿美元，用于扩大全球企业 AI 运营规模
+- SIG-20260718-A05｜P-043｜Aina 融资 550 万美元，推出超越触摸屏与键盘的 AI 时代新型硬件接口
+- SIG-20260718-A06｜P-064｜热门开源AI开发者工具Ollama融资6500万美元...
+- SIG-20260718-A07｜P-002｜Agility Robotics 在特斯拉后院开设人形机器人训练设施，Digit 已创收并获 3 亿美元订单
+- SIG-20260718-A08｜P-016｜日本机器人与制造业领军企业基于NVIDIA技术持续发展
+- SIG-20260718-A09｜P-003｜Claude Code v2.1.214 发布：修复权限绕过、添加 EndConversation 工具与多项 Bash 权限检查改进
+- SIG-20260718-A10｜P-031｜Vertu Alphafold 评测：6880美元AI智能体手机实测
+- SIG-20260718-A11｜P-032｜Runway Agent 构建方法内幕
+- SIG-20260718-A12｜P-034｜Zyphra 发布 ZUNA1.1：Apache 2.0 许可的 EEG 基础模型，支持 0.5 至 30 秒可变长度输入
+- SIG-20260718-A13｜P-036｜阿里通义实验室发布 Wan-Streamer v0.2，AI 视频电话响应延迟仅 550ms
+- SIG-20260718-A14｜P-063｜Launch HN：Coasty (YC S26) – 计算机操作智能体 API
+- SIG-20260718-A15｜P-079｜我国首个全国产10万卡AI超集群"曙光8000（登峰）"亮相WAIC 2026
+- SIG-20260718-A16｜P-007｜首家GPU金融商转向推理芯片：General Compute获4亿美元贷款，以SN50芯片为抵押
+- SIG-20260718-A17｜P-026｜Auger 获 5000 万美元 B 轮融资，用于 AI 供应链自动化
+- SIG-20260718-A18｜P-105｜TikTok 正在测试 AI 肖像检测工具
+- SIG-20260718-A19｜P-109｜国家超算互联网发布科学智能体开发者招募计划，可享全国首个十万卡AI超集群算力
+- SIG-20260718-A20｜P-051｜OpenAI 奥尔特曼调侃 Anthropic 最新广告：我还以为这是讽刺短片
+- SIG-20260718-A21｜P-059｜谷歌 Google Vids 新增数字分身功能，Gemini Omni 模型同步登陆
+- SIG-20260718-A22｜P-062｜如同Deepseek，中国的Kimi K3正迫使西方AI实验室质疑其算力优势
+- SIG-20260718-A23｜P-073｜微软 9 月停运 Outlook 会议洞察功能，Copilot AI 接棒
+- SIG-20260718-A24｜P-082｜使用 NVIDIA NeMo Automodel 和 🤗 Diffusers 大规模微调视频与图像模型
+- SIG-20260718-A25｜P-102｜OpenAI 回应 GPT-5.6 Sol 意外删除用户文件：已采取措施降低风险
+- SIG-20260718-A26｜P-078｜中国气象局发布"妈祖"风云卫星 AI 工具箱
+- SIG-20260718-A27｜P-030｜Bunkerhill Health 完成5500万美元B轮融资，用于扩展其AI智能体平台Carebricks
+- SIG-20260718-A28｜P-093｜俄罗斯版的猎鹰9号火箭能否升空？
+- SIG-20260718-A29｜P-107｜BrainCo 强脑科技发布全球首个脑控机器人训练平台，10 分钟解锁意念控制
+- SIG-20260718-A30｜P-108｜宝马推出 ChatGPT 插件，让 AI 帮你选车
+- SIG-20260718-A31｜P-111｜阿里千问输入法移动版上线：无广告无弹窗无需注册，支持 AI 自动润色
+- SIG-20260718-A32｜P-114｜Netflix 的 300 部 AI 制作展示该技术在娱乐领域的快速普及
+- SIG-20260718-A33｜P-045｜嵌入式路由栈：让客户掌控模型路由
+- SIG-20260718-A34｜P-011｜英伟达与日本发布全球首个国家级AI基础设施——Noetra联盟将建设140MW Rubin AI工厂，配备27,500块GPU
+- SIG-20260718-A35｜P-094｜Fubo 恢复11月失去的部分NBCU频道后，将价格上调15美元
+- SIG-20260718-A36｜P-113｜GPT-5.6 在获得完全访问权限时删除用户文件，OpenAI 称不应发生但确实发生了
+
+## Cluster / Dedupe Rows
+
+- P-001｜event:funding:a company to:188b｜accepted
+- P-009｜event:funding:sable:$45m｜accepted
+- P-013｜event:funding:reo dev:$11.3m｜accepted
+- P-023｜event:funding:whale:$40m｜accepted
+- P-043｜event:funding:aina:$5.5m｜accepted
+- P-064｜event:funding:ollama:$65m｜accepted
+- P-002｜event:case:tesla:3亿｜accepted
+- P-016｜event:case:nvidia:2026｜accepted
+- P-003｜event:product_service:anthropic claude code:2.1｜accepted
+- P-031｜event:product_service:alphafold:6880｜accepted
+- P-032｜event:product_service:runwayml:product service inside our approach to building runway agent｜accepted
+- P-034｜event:product_service:zyphra:1.1｜accepted
+- P-036｜event:product_service:阿里通义实验室:0.2｜accepted
+- P-063｜event:product_service:coasty:26｜accepted
+- P-079｜event:case:我国首个全国产10万卡ai超集群曙光8000 登峰亮相waic 2026:10万｜accepted
+- P-007｜event:funding:founded by:4亿｜accepted
+- P-026｜event:funding:auger:$50m｜accepted
+- P-105｜event:product_service:theverge:967486｜accepted
+- P-109｜event:product_service:国家超算互联网:0｜accepted
+- P-051｜event:product_service:openai:0｜accepted
+- P-059｜event:product_service:谷歌 google vids 新增数字分身功能 gemini omni 模型同步登陆:0｜accepted
+- P-062｜event:product_service:k3:039｜accepted
+- P-073｜event:product_service:微软 9 月停运 outlook 会议洞察功能 copilot ai 接棒:9｜accepted
+- P-082｜event:product_service:fine:product service fine tune video and image models at scale with nvidia nemo automodel and diffuse｜accepted
+- P-102｜event:product_service:openai 回应 gpt:5.6｜accepted
+- P-078｜event:product_service:中国气象局:0｜accepted
+- P-030｜event:funding:work bunkerhill health:55m｜accepted
+- P-093｜event:product_service:spacex:9｜accepted
+- P-107｜event:product_service:brainco 强脑科技:10｜accepted
+- P-108｜event:product_service:宝马:0｜accepted
+- P-111｜event:product_service:阿里千问输入法移动版:0｜accepted
+- P-114｜event:case:the decoder:039｜accepted
+- P-045｜event:case:embedded routing stack:case embedded routing stack give your customers control over model routing｜accepted
+- P-011｜event:case:nvidia and japan:140m｜accepted
+- P-094｜event:case:fubo:$15｜accepted
+- P-113｜event:product_service:gpt:5.6｜accepted
+
+## Written
+
+- 01-SiteV2/knowledge/01-Signal-Cards/funding/2026-07-18--signal--a-company-to-auto-signal-p-001.md
+- 01-SiteV2/knowledge/01-Signal-Cards/funding/2026-07-18--signal--sable-auto-signal-p-009.md
+- 01-SiteV2/knowledge/01-Signal-Cards/funding/2026-07-18--signal--reo-dev-auto-signal-p-013.md
+- 01-SiteV2/knowledge/01-Signal-Cards/funding/2026-07-18--signal--whale-auto-signal-p-023.md
+- 01-SiteV2/knowledge/01-Signal-Cards/funding/2026-07-18--signal--aina-auto-signal-p-043.md
+- 01-SiteV2/knowledge/01-Signal-Cards/funding/2026-07-18--signal--ollama-auto-signal-p-064.md
+- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-07-18--signal--tesla-auto-signal-p-002.md
+- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-07-18--signal--nvidia-auto-signal-p-016.md
+- 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-07-18--signal--anthropic-claude-code-auto-signal-p-003.md
+- 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-07-18--signal--alphafold-auto-signal-p-031.md
+- 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-07-18--signal--runwayml-auto-signal-p-032.md
+- 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-07-18--signal--zyphra-auto-signal-p-034.md
+- 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-07-18--signal--wan-streamer-v0-2-ai-550ms-auto-signal-p-036.md
+- 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-07-18--signal--coasty-auto-signal-p-063.md
+- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-07-18--signal--10-ai-8000-waic-2026-auto-signal-p-079.md
+- 01-SiteV2/knowledge/01-Signal-Cards/funding/2026-07-18--signal--founded-by-auto-signal-p-007.md
+- 01-SiteV2/knowledge/01-Signal-Cards/funding/2026-07-18--signal--auger-auto-signal-p-026.md
+- 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-07-18--signal--theverge-auto-signal-p-105.md
+- 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-07-18--signal--ai-auto-signal-p-109.md
+- 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-07-18--signal--openai-auto-signal-p-051.md
+- 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-07-18--signal--google-vids-gemini-omni-auto-signal-p-059.md
+- 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-07-18--signal--k3-auto-signal-p-062.md
+- 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-07-18--signal--9-outlook-copilot-ai-auto-signal-p-073.md
+- 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-07-18--signal--fine-auto-signal-p-082.md
+- 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-07-18--signal--openai-gpt-auto-signal-p-102.md
+- 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-07-18--signal--ai-auto-signal-p-078.md
+- 01-SiteV2/knowledge/01-Signal-Cards/funding/2026-07-18--signal--work-bunkerhill-health-auto-signal-p-030.md
+- 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-07-18--signal--spacex-auto-signal-p-093.md
+- 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-07-18--signal--brainco-auto-signal-p-107.md
+- 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-07-18--signal--chatgpt-ai-auto-signal-p-108.md
+- 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-07-18--signal--ai-auto-signal-p-111.md
+- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-07-18--signal--the-decoder-auto-signal-p-114.md
+- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-07-18--signal--embedded-routing-stack-auto-signal-p-045.md
+- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-07-18--signal--nvidia-and-japan-auto-signal-p-011.md
+- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-07-18--signal--fubo-auto-signal-p-094.md
+- 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-07-18--signal--gpt-auto-signal-p-113.md
+- 01-SiteV2/content/04-business-signals/signals/2026-07-18-signals.md
+
+## Merged
+
+- none
+
+## Skipped
+
+- none
+
+## Not Promoted Candidates
+
+- P-005: valid_page_type:technical_article_without_business_event, valid_page_type:generic_fde_explainer_or_service_page_without_customer_event, business_signal_scope:missing_concrete_funding_product_or_case_event; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Anthropic 副首席信息安全官发布智能体 AI 风险评估框架：零风险不是目标
+- P-006: valid_page_type:research_benchmark_without_commercial_event; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Cursor 评估负责人确认 Claude Fable 5 在 CursorBench 达 72.9% 新高
+- P-008: valid_page_type:generic_fde_explainer_or_service_page_without_customer_event; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=NVIDIA 发布 Nemotron 3 Embed 系列，8B 版本在 RTEB 基准上排名第一
+- P-010: evidence_quality:missing_source_date, valid_page_type:generic_fde_explainer_or_service_page_without_customer_event, valid_page_type:job_listing_not_formal_signal_card; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Forward Deployed Engineer Roadmap: From SWE to Customer-Facing AI Engineer
+- P-012: valid_page_type:research_benchmark_without_commercial_event; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=CHELSIO LAUNCHES AI INTERCONNECT PLATFORM WITH 400Gb RDMA FOR NEXT-GENERATION DATA CENTER, STORAGE, AND AI INFRASTRUCTURE
+- P-014: fact_type_constraints:corporate_capex_or_community_investment_not_signal_card; repair=Keep corporate regional capex, data-center, or community investment announcements as Pool context unless a separate product, customer, or financing event is sourced.; priority=low; title=Japan to build 140 MW national AI factory with 27,500 Rubin GPUs - The Data Center Engineer
+- P-015: fact_type_constraints:corporate_capex_or_community_investment_not_signal_card; repair=Keep corporate regional capex, data-center, or community investment announcements as Pool context unless a separate product, customer, or financing event is sourced.; priority=low; title=NVIDIA and Japan Launch 27,500-GPU Vera Rubin AI Factory as Physical AI Push Spans Every Industry - StorageReview.com
+- P-017: valid_page_type:generic_report_or_list_not_fact_signal, valid_page_type:repository_catalog_or_directory_page, evidence_quality:missing_source_date; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=FavioVazquez/learnship
+- P-018: evidence_quality:stale_source_date; repair=Find a fresh same-event source or keep as backend audit evidence.; priority=low; title=NVIDIA Brings Robot AI On-Device as Japan's Top Manufacturers Join Cosmos Coalition
+- P-019: evidence_quality:stale_source_date; repair=Find a fresh same-event source or keep as backend audit evidence.; priority=low; title=Scaling AI success: From fragmented efforts to enterprise-wide value
+- P-020: evidence_quality:stale_source_date, valid_page_type:research_benchmark_without_commercial_event; repair=Find a fresh same-event source or keep as backend audit evidence.; priority=low; title=Research: Quantifying GitHub Copilot’s impact in the enterprise with Accenture - The GitHub Blog
+- P-021: evidence_quality:stale_source_date; repair=Find a fresh same-event source or keep as backend audit evidence.; priority=low; title=UiPath Automation Suite™ Delivers On-Premises Agentic AI for the Public Sector – Company Announcement - FT.com
+- P-022: evidence_quality:stale_source_date; repair=Find a fresh same-event source or keep as backend audit evidence.; priority=low; title=Singtel Group partners with Sierra to transform customer engagement with AI | Sierra
+- P-024: valid_page_type:generic_report_or_list_not_fact_signal; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=AI Workflow Automation Funding Trends (2026) – New Market Pitch
+- P-025: evidence_quality:stale_source_date; repair=Find a fresh same-event source or keep as backend audit evidence.; priority=low; title=AI Startups Raised $221 Billion in Q1 as Venture Funding Shows ...
+- P-027: evidence_quality:missing_chinese_fact_translation, business_signal_scope:unsupported_importance_type:supporting_signal, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score; repair=Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.; priority=medium; title=AI Agent Startup Funding July 2026: Trends & Analysis
+- P-028: evidence_quality:stale_source_date; repair=Find a fresh same-event source or keep as backend audit evidence.; priority=low; title=AI Workflow Automation Startup n8n Raises $180M, Valued At $2.5B
+- P-029: evidence_quality:stale_source_date; repair=Find a fresh same-event source or keep as backend audit evidence.; priority=low; title=n8n Secures $60M to Advance AI-Powered Workflow Automation - Startup Ecosystem Canada
+- P-033: business_signal_scope:unsupported_importance_type:supporting_signal, valid_page_type:research_benchmark_without_commercial_event, business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score, valid_page_type:pool_route_index_only_not_formal_card; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=AI 内存需求冲击印度智能手机市场，出货量创六年最大降幅
+- P-035: evidence_quality:missing_source_material, valid_page_type:index_or_directory_url, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only, valid_page_type:pool_route_index_only_not_formal_card; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Mozilla：开源AI能力差距缩小至3.3%，推理成本降50倍
+- P-037: valid_page_type:technical_article_without_business_event; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=文远知行发布物理 AI 大模型 WITT，引入"最小物理事实单元"概念
+- P-038: fact_type_constraints:trade_secret_lawsuit_without_product_funding_or_case_event; repair=Keep trade-secret or employee dispute litigation as risk context unless it includes a separate product, funding, customer, procurement, or settlement event.; priority=low; title=How Apple&#8217;s big lawsuit could disrupt OpenAI&#8217;s IPO plans
+- P-039: fact_type_constraints:trade_secret_lawsuit_without_product_funding_or_case_event; repair=Keep trade-secret or employee dispute litigation as risk context unless it includes a separate product, funding, customer, procurement, or settlement event.; priority=low; title=Apple’s plot to crush OpenAI
+- P-040: fact_type_constraints:trade_secret_lawsuit_without_product_funding_or_case_event; repair=Keep trade-secret or employee dispute litigation as risk context unless it includes a separate product, funding, customer, procurement, or settlement event.; priority=low; title=Apple&#8217;s lawsuit couldn&#8217;t come at a worse time for OpenAI
+- P-041: business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal; repair=Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.; priority=review; title=Google-backed satellites for wildfire detection launch as smoke chokes US, Canada
+- P-042: evidence_quality:stale_source_date; repair=Find a fresh same-event source or keep as backend audit evidence.; priority=low; title=Gumloop lands $50M from Benchmark to turn every ...
+- P-044: valid_page_type:job_listing_not_formal_signal_card; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=The Maybern MCP is Live | Maybern
+- P-046: valid_page_type:generic_report_or_list_not_fact_signal, valid_page_type:repository_catalog_or_directory_page, evidence_quality:stale_source_date, valid_page_type:index_or_directory_url, fact_type_constraints:secondary_review_or_rumor_not_original_event, valid_page_type:docs_or_catalog_or_investing_thesis; repair=Find a fresh same-event source or keep as backend audit evidence.; priority=low; title=Retrofit-recommender/docs/gtm_strategy.md at master
+- P-047: valid_page_type:generic_report_or_list_not_fact_signal, valid_page_type:repository_catalog_or_directory_page, evidence_quality:missing_source_date, valid_page_type:index_or_directory_url, valid_page_type:text_indicates_index_only, valid_page_type:docs_or_catalog_or_investing_thesis; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=awesome-copilot/docs/README.skills.md at main
+- P-048: valid_page_type:generic_report_or_list_not_fact_signal, valid_page_type:repository_catalog_or_directory_page, evidence_quality:missing_source_date, valid_page_type:index_or_directory_url, valid_page_type:docs_or_catalog_or_investing_thesis; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=cloud-adoption-framework/docs/ai-agents/governance ...
+- P-049: evidence_quality:missing_source_date, business_signal_scope:missing_concrete_funding_product_or_case_event; repair=Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.; priority=medium; title=Press & Media Kit | Phot.AI's Official Newsroom
+- P-050: valid_page_type:job_listing_not_formal_signal_card; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Anthropic 为 IPO 铺路，以最高 60 万美元年薪重金招聘投资者关系总监
+- P-052: fact_type_constraints:unconfirmed_product_rumor_or_plan, business_signal_scope:missing_concrete_funding_product_or_case_event; repair=Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.; priority=low; title=消息称 Anthropic 拟 2 年 100 亿美元租赁 Meta 的 AI 算力
+- P-053: fact_type_constraints:trade_secret_lawsuit_without_product_funding_or_case_event; repair=Keep trade-secret or employee dispute litigation as risk context unless it includes a separate product, funding, customer, procurement, or settlement event.; priority=low; title=苹果与 OpenAI 法律战升级：约 40 名前员工收到苹果律师函
+- P-054: fact_type_constraints:consumer_feature_without_enterprise_or_monetization_signal; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=low; title=华为昇腾 950 超节点荣获 2026 世界人工智能大会最高荣誉 SAIL 奖
+- P-055: fact_type_constraints:consumer_feature_without_enterprise_or_monetization_signal; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=low; title=智元联合京东物流发布精灵 G2 Max 人形机器人，首次在真实仓储生产场景部署落地
+- P-056: valid_page_type:technical_model_or_device_spec_without_commercial_event; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=英伟达开源 Nemotron 3 Embed 系列 AI 模型，8B 版斩获 RTEB 榜首
+- P-057: business_signal_scope:missing_concrete_funding_product_or_case_event; repair=Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.; priority=review; title=英特尔扩大与 Google Cloud 合作，为全球员工提供 Gemini Enterprise 并加速芯片开发
+- P-058: fact_type_constraints:viewpoint_without_confirmed_commercial_event; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=low; title=SpaceX 正与五角大楼洽谈 AI 算力供应，拟以低价与 CoreWeave 等竞争
+- P-060: fact_type_constraints:unconfirmed_funding_or_ipo_process; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=low; title=华为昇腾 950 超节点真机首展，昇腾 384 超节点已商用落地 750 多套
+- P-061: fact_type_constraints:unconfirmed_funding_or_ipo_process; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=low; title=The Pentagon's Space Development Agency hasn't moved as fast as anyone would like
+- P-065: fact_type_constraints:viewpoint_without_confirmed_commercial_event, fact_type_constraints:secondary_review_or_rumor_not_original_event; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=low; title=反 AI 情绪升级为暴力威胁，OpenAI、Anthropic 等公司加强高管安保
+- P-066: fact_type_constraints:unconfirmed_funding_or_ipo_process; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=low; title=腾讯 Robotics X 实验室新一代机器人"小六"首次公开亮相，系"小五"迭代之作
+- P-067: fact_type_constraints:secondary_review_or_rumor_not_original_event; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=low; title=抖音严打 AI 生成虚假灾害画面，发布防汛期涉灾信息治理公告
+- P-068: business_signal_scope:missing_concrete_funding_product_or_case_event; repair=Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.; priority=review; title=智能体互信互联互操作全球合作倡议发布，中国网信办提出十大行动方向
+- P-069: valid_page_type:technical_model_or_device_spec_without_commercial_event; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=阿里千问 AI 眼镜将升级为智能体眼镜，联合 Bose 打造首款 AI 智能体耳机
+- P-070: fact_type_constraints:consumer_feature_without_enterprise_or_monetization_signal; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=low; title=阶跃终端首款智能体手机 STEPX Neo 现场实拍，Amoo 助手可与飞书等 App 深度联动
+- P-071: source_auditability:source_identity_unusable_for_formal_card; repair=Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.; priority=medium; title=优酷总裁吴倩：积极拥抱 AI，但 AI 无法取代真人演员
+- P-072: fact_type_constraints:consumer_feature_without_enterprise_or_monetization_signal; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=low; title=AMD 在 ROCm 7.14 中新增支持 Ryzen AI MAX PRO 400 系列处理器
+- P-074: fact_type_constraints:unconfirmed_product_rumor_or_plan, business_signal_scope:missing_concrete_funding_product_or_case_event; repair=Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.; priority=low; title=中国气象局启动"风和"千亿参数气象大模型全球开源计划
+- P-075: valid_page_type:generic_report_or_list_not_fact_signal, valid_page_type:repository_catalog_or_directory_page, business_signal_scope:source_event_missing_ai_anchor; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=强化学习小书》发布，从基础到PPO的PyTorch实现开源
+- P-076: fact_type_constraints:unconfirmed_product_rumor_or_plan, business_signal_scope:missing_concrete_funding_product_or_case_event; repair=Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.; priority=low; title=人工智能合作发展行动计划》《国际人工智能伦理治理行动计划》在上海发布
+- P-077: fact_type_constraints:consumer_feature_without_enterprise_or_monetization_signal; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=low; title=字节新一代豆包手机备货数十万台，AI 不再直接操作头部应用
+- P-080: fact_type_constraints:viewpoint_without_confirmed_commercial_event, fact_type_constraints:non_commercial_policy_or_ethics_signal; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=low; title=旧金山要求苹果和谷歌从应用商店下架"脱衣"AI应用
+- P-081: evidence_quality:stale_source_date; repair=Find a fresh same-event source or keep as backend audit evidence.; priority=low; title=人机协同"模式已显疲态：AI 辅助编程正在消耗开发者的认知与满足感
+- P-083: business_signal_scope:missing_concrete_funding_product_or_case_event; repair=Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.; priority=review; title=风投用Zoom改名抗议AI笔记应用泛滥
+- P-084: evidence_quality:stale_source_date, business_signal_scope:unsupported_importance_type:supporting_signal, valid_page_type:technical_article_without_business_event, valid_page_type:generic_fde_explainer_or_service_page_without_customer_event, business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score; repair=Find a fresh same-event source or keep as backend audit evidence.; priority=low; title=AI Startup Funding Stages in 2026: A Stage-by-Stage Guide
+- P-085: valid_page_type:generic_report_or_list_not_fact_signal, valid_page_type:repository_catalog_or_directory_page, evidence_quality:stale_source_date; repair=Find a fresh same-event source or keep as backend audit evidence.; priority=low; title=alirezarezvani/claude-skills - Chief AI Officer Advisor
+- P-086: evidence_quality:missing_source_date; repair=Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.; priority=medium; title=zeb: Putting agentic AI into action as an active participant in consulting workflows
+- P-087: evidence_quality:stale_source_date, fact_type_constraints:corporate_capex_or_community_investment_not_signal_card; repair=Find a fresh same-event source or keep as backend audit evidence.; priority=low; title=Amazon challenges competitors with on-premises Nvidia 'AI Factories'
+- P-088: evidence_quality:source_event_line_unusable; repair=Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.; priority=medium; title=The cost of saying yes has changed
+- P-089: source_auditability:source_identity_unusable_for_formal_card; repair=Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.; priority=medium; title=Patreon stops asking AI bots not to scrape — and starts blocking them
+- P-090: evidence_quality:missing_chinese_fact_translation, business_signal_scope:unsupported_importance_type:important_technical_trend, business_signal_scope:technical_trend_is_context_not_signal_card, business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal, business_signal_scope:missing_concrete_funding_product_or_case_event; repair=Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.; priority=medium; title=Hegseth wants a "High-T" military; doctors call it a clinical minefield
+- P-091: source_auditability:source_identity_unusable_for_formal_card; repair=Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.; priority=medium; title=Taco Bell iceberg lettuce identified as source of cyclosporiasis in 5 states
+- P-092: evidence_quality:missing_chinese_fact_translation, business_signal_scope:unsupported_importance_type:important_technical_trend, business_signal_scope:technical_trend_is_context_not_signal_card, valid_page_type:research_benchmark_without_commercial_event, business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal, business_signal_scope:missing_concrete_funding_product_or_case_event, fact_type_constraints:non_commercial_policy_or_ethics_signal; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Troubling new details emerge on diabetes ouster controversy
+- P-095: fact_type_constraints:builder_or_opinion_source_not_business_fact, valid_page_type:newsletter_roundup_requires_original_event_source, business_signal_scope:missing_concrete_funding_product_or_case_event; repair=Use the newsletter only as discovery context; recapture the original dated event source before promoting.; priority=low; title=Kimi K3 🌕, Gemini 3.5 delayed ⏳, crushing ARC-AGI 3 🤖
+- P-096: business_signal_scope:not_routed_for_signal_card_candidate; repair=Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.; priority=review; title=OpenAI 更新 Mac 端 ChatGPT 应用，整合 Chat、Work 和 Codex 模式
+- P-097: fact_type_constraints:unconfirmed_funding_or_ipo_process; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=low; title=微软正开发AI漏洞检测工具"感知项目"，类似Anthropic Mythos模型，最快7月发布
+- P-098: business_signal_scope:unsupported_importance_type:supporting_signal, fact_type_constraints:viewpoint_without_confirmed_commercial_event, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score, valid_page_type:pool_route_index_only_not_formal_card; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=图灵奖得主理查德·萨顿 WAIC 2026 发言：AI 还"比较弱小且不可靠"
+- P-099: business_signal_scope:missing_concrete_funding_product_or_case_event; repair=Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.; priority=review; title=支付宝与阶跃达成系统级合作，AI版"阿宝"首期接入点外卖、出行等高频服务
+- P-100: fact_type_constraints:unconfirmed_funding_or_ipo_process; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=low; title=Meta 拟聘请亚马逊 AWS 高管戴夫·布朗，筹备进军云市场
+- P-101: business_signal_scope:unsupported_importance_type:important_technical_trend, business_signal_scope:technical_trend_is_context_not_signal_card, fact_type_constraints:unconfirmed_product_rumor_or_plan, business_signal_scope:missing_concrete_funding_product_or_case_event; repair=Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.; priority=low; title=银河通用机器人创始人王鹤：具身智能的"ChatGPT 时刻"2028年有望到来
+- P-103: fact_type_constraints:builder_or_opinion_source_not_business_fact, valid_page_type:research_benchmark_without_commercial_event, fact_type_constraints:unconfirmed_product_rumor_or_plan, fact_type_constraints:secondary_review_or_rumor_not_original_event, business_signal_scope:missing_concrete_funding_product_or_case_event; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Kimi K3 拒绝泄露系统提示词，反问用户"今天有什么我能帮你的吗？"
+- P-104: fact_type_constraints:secondary_review_or_rumor_not_original_event; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=low; title=Linus Torvalds tells AI critics in the Linux kernel community to fork off
+- P-106: business_signal_scope:source_event_missing_ai_anchor; repair=Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.; priority=review; title=腾讯发布具身 VLM 基座模型 Hy-Embodied-VLM-1.0，A3B 规模性能接近上一代 A32B 模型
+- P-110: valid_page_type:research_prototype_without_commercial_event, business_signal_scope:unsupported_importance_type:important_technical_trend, business_signal_scope:technical_trend_is_context_not_signal_card, fact_type_constraints:viewpoint_without_confirmed_commercial_event, business_signal_scope:missing_concrete_funding_product_or_case_event, fact_type_constraints:non_commercial_policy_or_ethics_signal; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=研究警告：欧盟 AI"护栏"机制过于僵化，难以适应技术变革
+- P-112: business_signal_scope:unsupported_importance_type:important_technical_trend, business_signal_scope:technical_trend_is_context_not_signal_card, valid_page_type:research_benchmark_without_commercial_event, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:pool_route_index_only_not_formal_card, fact_type_constraints:corporate_capex_or_community_investment_not_signal_card; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Zuckerberg&#039;s plan to sell excess AI compute could finds its first big customer in Anthropic
+- P-115: fact_type_constraints:builder_or_opinion_source_not_business_fact, business_signal_scope:missing_concrete_funding_product_or_case_event; repair=Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.; priority=low; title=lt;p&gt;&lt;strong&gt;Tool:&lt;/strong&gt; &lt;a href="https://tools.simonwillison.net/llm-cliche-highlighter"&gt;LLM cliché highlighter&lt;/a&gt;&lt;/p&gt; &lt;p&gt;I got frustrated reading &lt;em&gt;yet another&lt;/em&gt; article that was crammed with the clichés of LLM-generated writing - "no fluff, no filler, no jargon" type stuff - so I had Fable 5 vibe code up this app for highlighting ten common patterns that show up in that sort of writing.&lt;/p&gt; &lt;p&gt;&lt;img alt="Screen
+- P-116: business_signal_scope:not_routed_for_signal_card_candidate; repair=Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.; priority=review; title=九识智能实现全球首个L4级无图方案规模化量产，无人驾驶进入"无图时代"
+- P-117: fact_type_constraints:unconfirmed_product_rumor_or_plan, fact_type_constraints:secondary_review_or_rumor_not_original_event, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:pool_route_index_only_not_formal_card; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=新 AI 漏洞披露：可从 Claude 记忆中泄露姓名与工作单位等信息
+- P-118: valid_page_type:technical_model_or_device_spec_without_commercial_event; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=百度沈抖：为每位员工每月发放1000元额度，体验市面主流大模型产品
+- P-119: evidence_quality:missing_source_material, source_auditability:missing_source_url, evidence_quality:missing_source_date, source_auditability:discovery_source_not_resolved, fact_type_constraints:trade_secret_lawsuit_without_product_funding_or_case_event, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only, valid_page_type:pool_route_index_only_not_formal_card; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Apple 起诉 OpenAI：诉讼背后是竞争焦虑还是时机博弈？
+- P-120: evidence_quality:missing_source_material, source_auditability:missing_source_url, evidence_quality:missing_source_date, valid_page_type:index_only_evidence, source_auditability:discovery_source_not_resolved, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only, valid_page_type:pool_route_index_only_not_formal_card; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=八天四款前沿模型发布，Kimi K3 跻身第三
+- P-121: evidence_quality:missing_source_material, source_auditability:missing_source_url, evidence_quality:missing_source_date, valid_page_type:index_only_evidence, source_auditability:discovery_source_not_resolved, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only, valid_page_type:pool_route_index_only_not_formal_card, business_signal_scope:source_event_missing_ai_anchor; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=NVIDIA 发布 Nemotron 3 Embed 系列，8B 版本在 RTEB 基准上排名第一
+- P-122: evidence_quality:missing_source_material, source_auditability:missing_source_url, evidence_quality:missing_source_date, valid_page_type:index_only_evidence, source_auditability:discovery_source_not_resolved, business_signal_scope:unsupported_importance_type:important_technical_trend, business_signal_scope:technical_trend_is_context_not_signal_card, fact_type_constraints:trade_secret_lawsuit_without_product_funding_or_case_event, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only, valid_page_type:pool_route_index_only_not_formal_card, fact_type_constraints:non_commercial_policy_or_ethics_signal; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=苹果与 OpenAI 法律战升级：约 40 名前员工收到苹果律师函
+- P-123: evidence_quality:missing_source_material, source_auditability:missing_source_url, fact_type_constraints:social_or_community_source_not_verified_fact, evidence_quality:missing_source_date, source_auditability:discovery_source_not_resolved, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only, valid_page_type:pool_route_index_only_not_formal_card; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=生成式人工智能是一场工程灾难：AI公司抢购70%高端内存，推高电脑价格
+- P-124: evidence_quality:missing_source_material, source_auditability:missing_source_url, evidence_quality:missing_source_date, valid_page_type:index_only_evidence, source_auditability:discovery_source_not_resolved, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only, valid_page_type:pool_route_index_only_not_formal_card; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=美团LongCat发布LoHoSearch：更难搜索智能体基准
+- P-125: evidence_quality:missing_source_material, source_auditability:missing_source_url, evidence_quality:missing_source_date, source_auditability:discovery_source_not_resolved, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only, valid_page_type:pool_route_index_only_not_formal_card; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Anthropic 副首席信息安全官发布智能体 AI 风险评估框架：零风险不是目标
+- P-126: evidence_quality:missing_source_material, source_auditability:discovery_source_not_resolved, business_signal_scope:source_event_missing_ai_anchor; repair=Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.; priority=medium; title=面壁智能在 WAIC 2026 发布具身智能模型 MiniCPM-Robot
+- P-127: evidence_quality:missing_source_material, source_auditability:missing_source_url, evidence_quality:missing_source_date, source_auditability:discovery_source_not_resolved, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only, valid_page_type:pool_route_index_only_not_formal_card; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=OpenAI 提出 AI 时代记分卡：“有用智能每美元”衡量实际工作价值
+- P-128: evidence_quality:missing_source_material, source_auditability:missing_source_url, evidence_quality:missing_source_date, valid_page_type:index_only_evidence, source_auditability:discovery_source_not_resolved, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only, valid_page_type:pool_route_index_only_not_formal_card; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Kimi K3 登顶前端编码榜，开放权重挑战闭源双巨头
+- P-129: evidence_quality:missing_source_material, source_auditability:missing_source_url, evidence_quality:missing_source_date, valid_page_type:index_only_evidence, source_auditability:discovery_source_not_resolved, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only, valid_page_type:pool_route_index_only_not_formal_card, business_signal_scope:source_event_missing_ai_anchor; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=通义实验室发布 Wan-Streamer v0.2，端到端响应延迟仅 550ms
+- P-130: evidence_quality:missing_source_material, source_auditability:missing_source_url, evidence_quality:missing_source_date, valid_page_type:index_only_evidence, source_auditability:discovery_source_not_resolved, business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only, valid_page_type:pool_route_index_only_not_formal_card; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Claude Code v2.1.212 发布
+- P-131: evidence_quality:missing_source_material, source_auditability:missing_source_url, evidence_quality:missing_source_date, source_auditability:discovery_source_not_resolved, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only, valid_page_type:pool_route_index_only_not_formal_card; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=月之暗面在GTC 2026披露Kimi K2.5技术路线：用MuonClip、线性注意力与Agent Swarm重构三大基础组件
+- P-132: evidence_quality:missing_source_material, source_auditability:missing_source_url, evidence_quality:missing_source_date, valid_page_type:research_prototype_without_commercial_event, valid_page_type:index_only_evidence, source_auditability:discovery_source_not_resolved, business_signal_scope:unsupported_importance_type:important_technical_trend, business_signal_scope:technical_trend_is_context_not_signal_card, valid_page_type:technical_article_without_business_event, valid_page_type:research_benchmark_without_commercial_event, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only, valid_page_type:pool_route_index_only_not_formal_card; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Apple 研究：Show Me Examples — 从图像集推断视觉概念
+- P-133: evidence_quality:missing_source_material, source_auditability:missing_source_url, evidence_quality:missing_source_date, valid_page_type:index_only_evidence, source_auditability:discovery_source_not_resolved, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only, valid_page_type:pool_route_index_only_not_formal_card, business_signal_scope:source_event_missing_ai_anchor; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=首届“小有可为”大赛乡村教育一等奖作品“智绘科普”技术拆解
+- P-134: evidence_quality:missing_source_material, source_auditability:missing_source_url, evidence_quality:missing_source_date, valid_page_type:index_only_evidence, source_auditability:discovery_source_not_resolved, business_signal_scope:unsupported_importance_type:important_technical_trend, business_signal_scope:technical_trend_is_context_not_signal_card, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only, valid_page_type:pool_route_index_only_not_formal_card; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Cursor 评估负责人确认 Claude Fable 5 在 CursorBench 达 72.9% 新高
+- P-135: evidence_quality:summary_without_formal_event, source_auditability:discovery_source_not_resolved, business_signal_scope:unsupported_importance_type:important_technical_trend, business_signal_scope:technical_trend_is_context_not_signal_card, business_signal_scope:missing_concrete_funding_product_or_case_event; repair=Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.; priority=medium; title=面壁智能 MiniCPM 端侧模型落地三星盖乐世 AI
+- P-136: evidence_quality:missing_source_material, source_auditability:discovery_source_not_resolved; repair=Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.; priority=medium; title=千问AI智能体眼镜与首款AI智能体耳机亮相WAIC 2026
+- P-137: evidence_quality:missing_source_material, source_auditability:discovery_source_not_resolved; repair=Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.; priority=medium; title=百度智能云发布"AI+时尚"全链路方案，百度搭子串联设计、生产与营销
+- P-138: evidence_quality:missing_source_material, source_auditability:missing_source_url, evidence_quality:missing_source_date, valid_page_type:index_only_evidence, source_auditability:discovery_source_not_resolved, business_signal_scope:unsupported_importance_type:none, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only, valid_page_type:pool_route_index_only_not_formal_card, business_signal_scope:source_event_missing_ai_anchor; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Sora 2 视频克隆效果惊人，真假难辨
+- P-139: evidence_quality:missing_source_material, source_auditability:missing_source_url, fact_type_constraints:social_or_community_source_not_verified_fact, evidence_quality:missing_source_date, valid_page_type:index_only_evidence, source_auditability:discovery_source_not_resolved, business_signal_scope:unsupported_importance_type:none, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only, valid_page_type:pool_route_index_only_not_formal_card; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Schema Harness 在 ARC-AGI-3 公开集上取得约 99% 成绩
+- P-140: evidence_quality:missing_source_material, source_auditability:missing_source_url, evidence_quality:missing_source_date, valid_page_type:index_only_evidence, source_auditability:discovery_source_not_resolved, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only, valid_page_type:pool_route_index_only_not_formal_card; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=AI 时代“小需求”的成本逻辑变了：GitHub 博客谈工程决策新范式

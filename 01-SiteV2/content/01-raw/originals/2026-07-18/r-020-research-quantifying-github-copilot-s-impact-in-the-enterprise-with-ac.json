@@ -1,0 +1,270 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-020",
+  "title": "Research: Quantifying GitHub Copilot’s impact in the enterprise with Accenture - The GitHub Blog",
+  "title_zh": "研究：与埃森哲合作量化GitHub Copilot在企业中的影响",
+  "title_translation_status": "translated",
+  "title_translation_method": "deepseek_title_translation",
+  "title_translation_model": "deepseek-v4-flash",
+  "original_url": "https://github.blog/news-insights/research/research-quantifying-github-copilots-impact-in-the-enterprise-with-accenture/",
+  "canonical_url": "https://github.blog/news-insights/research/research-quantifying-github-copilots-impact-in-the-enterprise-with-accenture",
+  "source_name": "keyword search / Anysearch",
+  "source_type": "developer",
+  "source_level": "S",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "case_or_customer",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_customer_case",
+  "search_path": "official_original",
+  "search_path_label": "官方原始路径",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "platform_enablement",
+  "enterprise_ai_transformation_reason": "enterprise_ai_implementation_signal",
+  "author": "",
+  "published_at": "2024-05-13T00:00:00.000Z",
+  "collected_at": "2026-07-18T01:54:30.776Z",
+  "language": "mixed",
+  "full_text": "Ya Gao & GitHub Customer Research\nMay 13, 2024\n9 minutes\nShare:\nSince bringing GitHub Copilot to market, we&rsquo;ve conducted several lab studies to discover its impact on developer efficiency, developer satisfaction, and overall code quality. We found that our AI pair programmer helps developers code up to 55% faster and that it made 85% of developers feel more confident in their code quality. With the introduction of our first GitHub Copilot offering for businesses and organizations in 2023 &mdash;and more recently GitHub Copilot Enterprise &mdash;it&rsquo;s become increasingly important for us to measure the impact of GitHub Copilot across real-world, large engineering organizations.\nTo learn more, we partnered with Accenture to study how developers integrated GitHub Copilot into their daily workflows , and we found significant improvements in several areas, including:\nImproved developer satisfaction. 90% of developers found they were more fulfilled with their job when using GitHub Copilot, and 95% said they enjoyed coding more with Copilot&rsquo;s help.\nQuickly adopted by developers. Over 80% of Accenture participants successfully adopted GitHub Copilot with a 96% success rate among initial users. 43% found it &ldquo;extremely easy to use.&rdquo; Additionally, 67% of total participants used GitHub Copilot at least 5 days per week, averaging 3.4 days of usage weekly.\nMethodology\nIn this study, we collaborated with Accenture to conduct an extensive, randomized controlled trial (RCT). Participants included developers who engage in a variety of software development tasks daily, including engineering, design, and testing across a spectrum of software products and services. They hold various positions within their organizations from entry-level roles to team management positions, and may work collaboratively or independently depending on the project and team dynamics.\nFor the trial, developers were randomly assigned to two groups. One group of developers was given access to GitHub Copilot, while the other group was not. Our objective was to assess the influence of GitHub Copilot on developers&rsquo; experience within the enterprise setting, where they collaborate on multifaceted projects. We collected DevOps telemetry on several output performance metrics that reflect insights into developers&rsquo; regular coding activity.\nBeyond the initial experiment, we conducted a company-wide adoption analysis, which explored installation rates, generated code acceptance rates, and the time it took developers to accept GitHub Copilot&rsquo;s first coding suggestion. Success was determined by whether they accepted a suggestion from GitHub Copilot or not.\nIn addition, we surveyed the GitHub Copilot users at Accenture to gain a better understanding of how developers perceived the impact of GitHub Copilot on their workflows. Not only did this survey uncover insights into how and when developers are using GitHub Copilot, but it also indicated an overwhelming improvement in developer satisfaction, which we know to be a key component of the developer experience (DevEx) . The combination of both telemetry data and the information from the survey provides a full picture for us to understand GitHub Copilot&rsquo;s impact at the enterprise level.\nOur findings\nDevelopers quickly found value in GitHub Copilot and adopted it as part of their daily toolkit\nMore than 50,000 organizations have adopted GitHub Copilot so far , but we haven&rsquo;t yet had a clear view into what those adoption rates look like on the individual level. When we dug deeper into the usage patterns of GitHub Copilot among Accenture developers, 67% of respondents reported utilizing GitHub Copilot at least 5 days per week , with an average usage frequency of 3.4 days per week. Moreover, a substantial 70% of respondents relied on GitHub Copilot for coding tasks in a familiar programming language. This indicates a high level of integration of GitHub Copilot into developers&rsquo; daily workflows, highlighting its importance as a valuable engineering tool and resource.\nWe also observed that developers were excited to use GitHub Copilot. 81.4% of developers installed the GitHub Copilot IDE extension on the same day that they received a license. And not only were they excited to use it, but getting started was simple and did not provide a barrier to entry.\nIn fact, 96% of those who installed the IDE extension started receiving and accepting suggestions on the same day. On average, developers took just one minute from seeing their first suggestion to accepting one, too. This was further validated in user surveys, with 43% finding GitHub Copilot &ldquo;extremely easy to use&rdquo; and 51% rating it as &ldquo;extremely useful.&rdquo;\nDevelopers improved code quality using GitHub Copilot\nBy convention, pull requests represent a ready-to-deploy code change (for example, a new feature, bug fix, or code refactoring). When measured in aggregate, the number of pull requests per developer can be used to measure a team&rsquo;s throughput or velocity. Ultimately, an increase in pull requests represents an increase in value delivered, and Accenture developers saw an 8.69% increase in pull requests. Because each pull request must pass through a code review, the pull request merge rate is an excellent measure of code quality as seen through the eyes of a maintainer or coworker. Accenture saw a 15% increase to the pull request merge rate, which means that as the volume of pull requests increased, so did the number of pull requests passing code review.\nBut we don&rsquo;t want to just shift issues downstream and overburden the system with low-quality code. It&rsquo;s one thing for a teammate to assess quality and yet another for new code to successfully complete CI runs where test automation evaluates code quality against deterministic measures. At Accenture, we saw an 84% increase in successful builds suggesting not only that more pull requests were passing through the system, but they were also of higher quality as assessed by both human reviewers and test automation.\nBy enabling developers to maintain focus and stay in the flow, GitHub Copilot doesn&rsquo;t sacrifice quality for speed. And our findings provide evidence for exactly that.\nIn our study, developers accepted around 30% of GitHub Copilot&rsquo;s suggestions . And 90% of the developers reported that they committed code suggested by GitHub Copilot, while 91% of the developers reported that their teams had merged pull requests containing code suggested by GitHub Copilot . Analysis also showed high usage rates with the accepted code&mdash;for example, developers retained 88% of GitHub Copilot-generated characters in their editor .\nBy experiencing improved success rates in builds, developers can reduce the likelihood of errors.\nGitHub Copilot improved the overall developer experience\nOur survey among Accenture developers unveiled compelling findings indicating a significant boost in overall developer satisfaction with GitHub Copilot. An impressive 90% of developers expressed feeling more fulfilled with their jobs when utilizing GitHub Copilot, and a staggering 95% of developers reported enjoying coding more when leveraging GitHub Copilot&rsquo;s capabilities .\nThis enhancement in job satisfaction could allow developers to allocate their focus toward tasks most fulfilling to them, like solutions design or collaboration. Furthermore, our analysis revealed that developers&rsquo; heightened fulfillment correlated directly with their engagement with GitHub Copilot. When using GitHub Copilot less than two days per week, fulfillment only increased &ldquo;a little.&rdquo; But when using GitHub Copilot more than 2 days per week, fulfillment increases &ldquo;quite a bit.&rdquo;\n70% of developers also reported quite a bit less mental effort was expended on repetitive tasks, and 54% spent less time searching for information or examples when utilizing GitHub Copilot. This reduction in cognitive load could enable developers to allocate their cognitive resources more efficiently, reducing burnout. GitHub Copilot also allowed developers to maintain uninterrupted focus, with a majority indicating that they could maintain flow state while using the tool, a hallmark of good DevEx. These impacts extend beyond mere task optimization, which offers enterprises a competitive edge by maximizing developer resources and fostering a conducive environment for innovation and growth.\nFrom the lab to the real world\nAfter conducting multiple lab studies on the impact of GitHub Copilot, we are now working to understand how GitHub Copilot affected developers&rsquo; workdays in real-world environments&mdash;and that&rsquo;s been made possible by the tremendous adoption we&rsquo;ve seen among businesses and enterprise organizations alike.\nWith this study, we have uncovered compelling evidence that GitHub Copilot significantly enhances developer experience, satisfaction, and overall job fulfillment in real-world enterprise settings. With GitHub Copilot in their toolkits, developers can also enhance their skill sets and gain greater proficiency in their organization&rsquo;s codebase, which ultimately leads to heightened contribution levels across teams, all without sacrificing the quality of code.\nAcknowledgments\nWe are very grateful to all the developers who participated in the GitHub Copilot adoption experiment and survey. Ya Gao from GitHub Customer Research led the experiment in partnership with Accenture, the Microsoft Office of the Chief Economist, and the GitHub Copilot Quality Measurement team, specifically in collaboration with Phillip Coppney and Daniel A. Schocke at Accenture; Sida Peng, Dan Tetrick, and Jeff Wilcox at Microsoft; and Erik Polzin and Lizzie Redford at GitHub.",
+  "clean_text": "Ya Gao & GitHub Customer Research\nMay 13, 2024\n9 minutes\nShare:\nSince bringing GitHub Copilot to market, we&rsquo;ve conducted several lab studies to discover its impact on developer efficiency, developer satisfaction, and overall code quality. We found that our AI pair programmer helps developers code up to 55% faster and that it made 85% of developers feel more confident in their code quality. With the introduction of our first GitHub Copilot offering for businesses and organizations in 2023 &mdash;and more recently GitHub Copilot Enterprise &mdash;it&rsquo;s become increasingly important for us to measure the impact of GitHub Copilot across real-world, large engineering organizations.\nTo learn more, we partnered with Accenture to study how developers integrated GitHub Copilot into their daily workflows , and we found significant improvements in several areas, including:\nImproved developer satisfaction. 90% of developers found they were more fulfilled with their job when using GitHub Copilot, and 95% said they enjoyed coding more with Copilot&rsquo;s help.\nQuickly adopted by developers. Over 80% of Accenture participants successfully adopted GitHub Copilot with a 96% success rate among initial users. 43% found it &ldquo;extremely easy to use.&rdquo; Additionally, 67% of total participants used GitHub Copilot at least 5 days per week, averaging 3.4 days of usage weekly.\nMethodology\nIn this study, we collaborated with Accenture to conduct an extensive, randomized controlled trial (RCT). Participants included developers who engage in a variety of software development tasks daily, including engineering, design, and testing across a spectrum of software products and services. They hold various positions within their organizations from entry-level roles to team management positions, and may work collaboratively or independently depending on the project and team dynamics.\nFor the trial, developers were randomly assigned to two groups. One group of developers was given access to GitHub Copilot, while the other group was not. Our objective was to assess the influence of GitHub Copilot on developers&rsquo; experience within the enterprise setting, where they collaborate on multifaceted projects. We collected DevOps telemetry on several output performance metrics that reflect insights into developers&rsquo; regular coding activity.\nBeyond the initial experiment, we conducted a company-wide adoption analysis, which explored installation rates, generated code acceptance rates, and the time it took developers to accept GitHub Copilot&rsquo;s first coding suggestion. Success was determined by whether they accepted a suggestion from GitHub Copilot or not.\nIn addition, we surveyed the GitHub Copilot users at Accenture to gain a better understanding of how developers perceived the impact of GitHub Copilot on their workflows. Not only did this survey uncover insights into how and when developers are using GitHub Copilot, but it also indicated an overwhelming improvement in developer satisfaction, which we know to be a key component of the developer experience (DevEx) . The combination of both telemetry data and the information from the survey provides a full picture for us to understand GitHub Copilot&rsquo;s impact at the enterprise level.\nOur findings\nDevelopers quickly found value in GitHub Copilot and adopted it as part of their daily toolkit\nMore than 50,000 organizations have adopted GitHub Copilot so far , but we haven&rsquo;t yet had a clear view into what those adoption rates look like on the individual level. When we dug deeper into the usage patterns of GitHub Copilot among Accenture developers, 67% of respondents reported utilizing GitHub Copilot at least 5 days per week , with an average usage frequency of 3.4 days per week. Moreover, a substantial 70% of respondents relied on GitHub Copilot for coding tasks in a familiar programming language. This indicates a high level of integration of GitHub Copilot into developers&rsquo; daily workflows, highlighting its importance as a valuable engineering tool and resource.\nWe also observed that developers were excited to use GitHub Copilot. 81.4% of developers installed the GitHub Copilot IDE extension on the same day that they received a license. And not only were they excited to use it, but getting started was simple and did not provide a barrier to entry.\nIn fact, 96% of those who installed the IDE extension started receiving and accepting suggestions on the same day. On average, developers took just one minute from seeing their first suggestion to accepting one, too. This was further validated in user surveys, with 43% finding GitHub Copilot &ldquo;extremely easy to use&rdquo; and 51% rating it as &ldquo;extremely useful.&rdquo;\nDevelopers improved code quality using GitHub Copilot\nBy convention, pull requests represent a ready-to-deploy code change (for example, a new feature, bug fix, or code refactoring). When measured in aggregate, the number of pull requests per developer can be used to measure a team&rsquo;s throughput or velocity. Ultimately, an increase in pull requests represents an increase in value delivered, and Accenture developers saw an 8.69% increase in pull requests. Because each pull request must pass through a code review, the pull request merge rate is an excellent measure of code quality as seen through the eyes of a maintainer or coworker. Accenture saw a 15% increase to the pull request merge rate, which means that as the volume of pull requests increased, so did the number of pull requests passing code review.\nBut we don&rsquo;t want to just shift issues downstream and overburden the system with low-quality code. It&rsquo;s one thing for a teammate to assess quality and yet another for new code to successfully complete CI runs where test automation evaluates code quality against deterministic measures. At Accenture, we saw an 84% increase in successful builds suggesting not only that more pull requests were passing through the system, but they were also of higher quality as assessed by both human reviewers and test automation.\nBy enabling developers to maintain focus and stay in the flow, GitHub Copilot doesn&rsquo;t sacrifice quality for speed. And our findings provide evidence for exactly that.\nIn our study, developers accepted around 30% of GitHub Copilot&rsquo;s suggestions . And 90% of the developers reported that they committed code suggested by GitHub Copilot, while 91% of the developers reported that their teams had merged pull requests containing code suggested by GitHub Copilot . Analysis also showed high usage rates with the accepted code&mdash;for example, developers retained 88% of GitHub Copilot-generated characters in their editor .\nBy experiencing improved success rates in builds, developers can reduce the likelihood of errors.\nGitHub Copilot improved the overall developer experience\nOur survey among Accenture developers unveiled compelling findings indicating a significant boost in overall developer satisfaction with GitHub Copilot. An impressive 90% of developers expressed feeling more fulfilled with their jobs when utilizing GitHub Copilot, and a staggering 95% of developers reported enjoying coding more when leveraging GitHub Copilot&rsquo;s capabilities .\nThis enhancement in job satisfaction could allow developers to allocate their focus toward tasks most fulfilling to them, like solutions design or collaboration. Furthermore, our analysis revealed that developers&rsquo; heightened fulfillment correlated directly with their engagement with GitHub Copilot. When using GitHub Copilot less than two days per week, fulfillment only increased &ldquo;a little.&rdquo; But when using GitHub Copilot more than 2 days per week, fulfillment increases &ldquo;quite a bit.&rdquo;\n70% of developers also reported quite a bit less mental effort was expended on repetitive tasks, and 54% spent less time searching for information or examples when utilizing GitHub Copilot. This reduction in cognitive load could enable developers to allocate their cognitive resources more efficiently, reducing burnout. GitHub Copilot also allowed developers to maintain uninterrupted focus, with a majority indicating that they could maintain flow state while using the tool, a hallmark of good DevEx. These impacts extend beyond mere task optimization, which offers enterprises a competitive edge by maximizing developer resources and fostering a conducive environment for innovation and growth.\nFrom the lab to the real world\nAfter conducting multiple lab studies on the impact of GitHub Copilot, we are now working to understand how GitHub Copilot affected developers&rsquo; workdays in real-world environments&mdash;and that&rsquo;s been made possible by the tremendous adoption we&rsquo;ve seen among businesses and enterprise organizations alike.\nWith this study, we have uncovered compelling evidence that GitHub Copilot significantly enhances developer experience, satisfaction, and overall job fulfillment in real-world enterprise settings. With GitHub Copilot in their toolkits, developers can also enhance their skill sets and gain greater proficiency in their organization&rsquo;s codebase, which ultimately leads to heightened contribution levels across teams, all without sacrificing the quality of code.\nAcknowledgments\nWe are very grateful to all the developers who participated in the GitHub Copilot adoption experiment and survey. Ya Gao from GitHub Customer Research led the experiment in partnership with Accenture, the Microsoft Office of the Chief Economist, and the GitHub Copilot Quality Measurement team, specifically in collaboration with Phillip Coppney and Daniel A. Schocke at Accenture; Sida Peng, Dan Tetrick, and Jeff Wilcox at Microsoft; and Erik Polzin and Lizzie Redford at GitHub.",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-18/r-020-research-quantifying-github-copilot-s-impact-in-the-enterprise-with-ac.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-18/r-020-research-quantifying-github-copilot-s-impact-in-the-enterprise-with-ac.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-content-container",
+  "extraction_quality": "high",
+  "extraction_method": "content-container",
+  "readability_score": 97,
+  "extractor_diagnostics": {
+    "readability_score": 97,
+    "text_length": 9815,
+    "paragraph_count": 27,
+    "sentence_count": 57,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "content-container"
+  },
+  "has_full_text": true,
+  "content_length": 9815,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "33a61773cbfb9991",
+    "missing": []
+  },
+  "evidence_strength": "rich_evidence",
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "ba3cd7aa29401e0d",
+  "content_hash": "33a61773cbfb9991",
+  "full_text_hash": "33a61773cbfb9991",
+  "semantic_hash": "a85813b01470ff06",
+  "duplicate_of": "",
+  "first_seen_at": "2024-05-13T00:00:00.000Z",
+  "last_seen_at": "2026-07-18T01:54:30.776Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "case_detail",
+      "text": "Research: Quantifying GitHub Copilot’s impact in the enterprise with Accenture - The GitHub Blog & May 13, 2024 | 9 minutes - Share: - Share on X - Share on Facebook - Share on LinkedIn Since bringing GitHub Copilot to market, we’ve conducted several lab studies to discover its impact on develo... / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=official_original",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "case_detail",
+      "text": "Ya Gao & GitHub Customer Research May 13, 2024 9 minutes Share: Since bringing GitHub Copilot to market, we&rsquo;ve conducted several lab studies to discover its impact on developer efficiency, developer satisfaction, and overall code quality.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "number",
+      "text": "We found that our AI pair programmer helps developers code up to 55% faster and that it made 85% of developers feel more confident in their code quality.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "case_detail",
+      "text": "With the introduction of our first GitHub Copilot offering for businesses and organizations in 2023 &mdash;and more recently GitHub Copilot Enterprise &mdash;it&rsquo;s become increasingly important for us to measure the impact of GitHub Copilot across real-world, large engineering organizations.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "case_detail",
+      "text": "To learn more, we partnered with Accenture to study how developers integrated GitHub Copilot into their daily workflows , and we found significant improvements in several areas, including: Improved developer satisfaction.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "number",
+      "text": "90% of developers found they were more fulfilled with their job when using GitHub Copilot, and 95% said they enjoyed coding more with Copilot&rsquo;s help.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-18T01:54:30.776Z",
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Anysearch",
+      "Microsoft",
+      "GitHub"
+    ],
+    "products": [
+      "Copilot",
+      "agent"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具",
+      "企业服务"
+    ],
+    "roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "合同审阅 / 法律研究",
+      "计费 / 预算管理",
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "合作 / 联盟",
+      "部署 / 上线"
+    ],
+    "affected_departments": [
+      "IT / 安全"
+    ],
+    "numbers": [
+      "13",
+      "2024",
+      "9 m",
+      "55%",
+      "85%",
+      "2023",
+      "90%",
+      "95%"
+    ],
+    "quotes": []
+  },
+  "evidence_seed": {
+    "company_actions": [],
+    "case_details": [
+      "Research: Quantifying GitHub Copilot’s impact in the enterprise with Accenture - The GitHub Blog & May 13, 2024 | 9 minutes - Share: - Share on X - Share on Facebook - Share on LinkedIn Since bringing GitHub Copilot to market, we’ve conducted several lab studies to discover its impact on develo... / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=official_original",
+      "Ya Gao & GitHub Customer Research May 13, 2024 9 minutes Share: Since bringing GitHub Copilot to market, we&rsquo;ve conducted several lab studies to discover its impact on developer efficiency, developer satisfaction, and overall code quality.",
+      "With the introduction of our first GitHub Copilot offering for businesses and organizations in 2023 &mdash;and more recently GitHub Copilot Enterprise &mdash;it&rsquo;s become increasingly important for us to measure the impact of GitHub Copilot across real-world, large engineering organizations."
+    ],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_case",
+    "importance_score": 5,
+    "importance_reason": "real customer or adoption case; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "enterprise_ai_transformation_lens",
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "business_change": false,
+    "relationship_graph_input": true,
+    "trend_candidate_context": true,
+    "signal_card_candidate": true,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Research: Quantifying GitHub Copilot’s impact in the enterprise with Accenture - The GitHub Blog\n\n- raw_id: R-020\n- title_zh: 研究：与埃森哲合作量化GitHub Copilot在企业中的影响\n- title_translation_status: translated\n- title_translation_method: deepseek_title_translation\n- original_url: https://github.blog/news-insights/research/research-quantifying-github-copilots-impact-in-the-enterprise-with-accenture/\n- source_name: keyword search / Anysearch\n- collected_at: 2026-07-18T01:54:30.776Z\n\n## clean_text\n\nYa Gao & GitHub Customer Research\nMay 13, 2024\n9 minutes\nShare:\nSince bringing GitHub Copilot to market, we&rsquo;ve conducted several lab studies to discover its impact on developer efficiency, developer satisfaction, and overall code quality. We found that our AI pair programmer helps developers code up to 55% faster and that it made 85% of developers feel more confident in their code quality. With the introduction of our first GitHub Copilot offering for businesses and organizations in 2023 &mdash;and more recently GitHub Copilot Enterprise &mdash;it&rsquo;s become increasingly important for us to measure the impact of GitHub Copilot across real-world, large engineering organizations.\nTo learn more, we partnered with Accenture to study how developers integrated GitHub Copilot into their daily workflows , and we found significant improvements in several areas, including:\nImproved developer satisfaction. 90% of developers found they were more fulfilled with their job when using GitHub Copilot, and 95% said they enjoyed coding more with Copilot&rsquo;s help.\nQuickly adopted by developers. Over 80% of Accenture participants successfully adopted GitHub Copilot with a 96% success rate among initial users. 43% found it &ldquo;extremely easy to use.&rdquo; Additionally, 67% of total participants used GitHub Copilot at least 5 days per week, averaging 3.4 days of usage weekly.\nMethodology\nIn this study, we collaborated with Accenture to conduct an extensive, randomized controlled trial (RCT). Participants included developers who engage in a variety of software development tasks daily, including engineering, design, and testing across a spectrum of software products and services. They hold various positions within their organizations from entry-level roles to team management positions, and may work collaboratively or independently depending on the project and team dynamics.\nFor the trial, developers were randomly assigned to two groups. One group of developers was given access to GitHub Copilot, while the other group was not. Our objective was to assess the influence of GitHub Copilot on developers&rsquo; experience within the enterprise setting, where they collaborate on multifaceted projects. We collected DevOps telemetry on several output performance metrics that reflect insights into developers&rsquo; regular coding activity.\nBeyond the initial experiment, we conducted a company-wide adoption analysis, which explored installation rates, generated code acceptance rates, and the time it took developers to accept GitHub Copilot&rsquo;s first coding suggestion. Success was determined by whether they accepted a suggestion from GitHub Copilot or not.\nIn addition, we surveyed the GitHub Copilot users at Accenture to gain a better understanding of how developers perceived the impact of GitHub Copilot on their workflows. Not only did this survey uncover insights into how and when developers are using GitHub Copilot, but it also indicated an overwhelming improvement in developer satisfaction, which we know to be a key component of the developer experience (DevEx) . The combination of both telemetry data and the information from the survey provides a full picture for us to understand GitHub Copilot&rsquo;s impact at the enterprise level.\nOur findings\nDevelopers quickly found value in GitHub Copilot and adopted it as part of their daily toolkit\nMore than 50,000 organizations have adopted GitHub Copilot so far , but we haven&rsquo;t yet had a clear view into what those adoption rates look like on the individual level. When we dug deeper into the usage patterns of GitHub Copilot among Accenture developers, 67% of respondents reported utilizing GitHub Copilot at least 5 days per week , with an average usage frequency of 3.4 days per week. Moreover, a substantial 70% of respondents relied on GitHub Copilot for coding tasks in a familiar programming language. This indicates a high level of integration of GitHub Copilot into developers&rsquo; daily workflows, highlighting its importance as a valuable engineering tool and resource.\nWe also observed that developers were excited to use GitHub Copilot. 81.4% of developers installed the GitHub Copilot IDE extension on the same day that they received a license. And not only were they excited to use it, but getting started was simple and did not provide a barrier to entry.\nIn fact, 96% of those who installed the IDE extension started receiving and accepting suggestions on the same day. On average, developers took just one minute from seeing their first suggestion to accepting one, too. This was further validated in user surveys, with 43% finding GitHub Copilot &ldquo;extremely easy to use&rdquo; and 51% rating it as &ldquo;extremely useful.&rdquo;\nDevelopers improved code quality using GitHub Copilot\nBy convention, pull requests represent a ready-to-deploy code change (for example, a new feature, bug fix, or code refactoring). When measured in aggregate, the number of pull requests per developer can be used to measure a team&rsquo;s throughput or velocity. Ultimately, an increase in pull requests represents an increase in value delivered, and Accenture developers saw an 8.69% increase in pull requests. Because each pull request must pass through a code review, the pull request merge rate is an excellent measure of code quality as seen through the eyes of a maintainer or coworker. Accenture saw a 15% increase to the pull request merge rate, which means that as the volume of pull requests increased, so did the number of pull requests passing code review.\nBut we don&rsquo;t want to just shift issues downstream and overburden the system with low-quality code. It&rsquo;s one thing for a teammate to assess quality and yet another for new code to successfully complete CI runs where test automation evaluates code quality against deterministic measures. At Accenture, we saw an 84% increase in successful builds suggesting not only that more pull requests were passing through the system, but they were also of higher quality as assessed by both human reviewers and test automation.\nBy enabling developers to maintain focus and stay in the flow, GitHub Copilot doesn&rsquo;t sacrifice quality for speed. And our findings provide evidence for exactly that.\nIn our study, developers accepted around 30% of GitHub Copilot&rsquo;s suggestions . And 90% of the developers reported that they committed code suggested by GitHub Copilot, while 91% of the developers reported that their teams had merged pull requests containing code suggested by GitHub Copilot . Analysis also showed high usage rates with the accepted code&mdash;for example, developers retained 88% of GitHub Copilot-generated characters in their editor .\nBy experiencing improved success rates in builds, developers can reduce the likelihood of errors.\nGitHub Copilot improved the overall developer experience\nOur survey among Accenture developers unveiled compelling findings indicating a significant boost in overall developer satisfaction with GitHub Copilot. An impressive 90% of developers expressed feeling more fulfilled with their jobs when utilizing GitHub Copilot, and a staggering 95% of developers reported enjoying coding more when leveraging GitHub Copilot&rsquo;s capabilities .\nThis enhancement in job satisfaction could allow developers to allocate their focus toward tasks most fulfilling to them, like solutions design or collaboration. Furthermore, our analysis revealed that developers&rsquo; heightened fulfillment correlated directly with their engagement with GitHub Copilot. When using GitHub Copilot less than two days per week, fulfillment only increased &ldquo;a little.&rdquo; But when using GitHub Copilot more than 2 days per week, fulfillment increases &ldquo;quite a bit.&rdquo;\n70% of developers also reported quite a bit less mental effort was expended on repetitive tasks, and 54% spent less time searching for information or examples when utilizing GitHub Copilot. This reduction in cognitive load could enable developers to allocate their cognitive resources more efficiently, reducing burnout. GitHub Copilot also allowed developers to maintain uninterrupted focus, with a majority indicating that they could maintain flow state while using the tool, a hallmark of good DevEx. These impacts extend beyond mere task optimization, which offers enterprises a competitive edge by maximizing developer resources and fostering a conducive environment for innovation and growth.\nFrom the lab to the real world\nAfter conducting multiple lab studies on the impact of GitHub Copilot, we are now working to understand how GitHub Copilot affected developers&rsquo; workdays in real-world environments&mdash;and that&rsquo;s been made possible by the tremendous adoption we&rsquo;ve seen among businesses and enterprise organizations alike.\nWith this study, we have uncovered compelling evidence that GitHub Copilot significantly enhances developer experience, satisfaction, and overall job fulfillment in real-world enterprise settings. With GitHub Copilot in their toolkits, developers can also enhance their skill sets and gain greater proficiency in their organization&rsquo;s codebase, which ultimately leads to heightened contribution levels across teams, all without sacrificing the quality of code.\nAcknowledgments\nWe are very grateful to all the developers who participated in the GitHub Copilot adoption experiment and survey. Ya Gao from GitHub Customer Research led the experiment in partnership with Accenture, the Microsoft Office of the Chief Economist, and the GitHub Copilot Quality Measurement team, specifically in collaboration with Phillip Coppney and Daniel A. Schocke at Accenture; Sida Peng, Dan Tetrick, and Jeff Wilcox at Microsoft; and Erik Polzin and Lizzie Redford at GitHub.\n\n## full_text\n\nYa Gao & GitHub Customer Research\nMay 13, 2024\n9 minutes\nShare:\nSince bringing GitHub Copilot to market, we&rsquo;ve conducted several lab studies to discover its impact on developer efficiency, developer satisfaction, and overall code quality. We found that our AI pair programmer helps developers code up to 55% faster and that it made 85% of developers feel more confident in their code quality. With the introduction of our first GitHub Copilot offering for businesses and organizations in 2023 &mdash;and more recently GitHub Copilot Enterprise &mdash;it&rsquo;s become increasingly important for us to measure the impact of GitHub Copilot across real-world, large engineering organizations.\nTo learn more, we partnered with Accenture to study how developers integrated GitHub Copilot into their daily workflows , and we found significant improvements in several areas, including:\nImproved developer satisfaction. 90% of developers found they were more fulfilled with their job when using GitHub Copilot, and 95% said they enjoyed coding more with Copilot&rsquo;s help.\nQuickly adopted by developers. Over 80% of Accenture participants successfully adopted GitHub Copilot with a 96% success rate among initial users. 43% found it &ldquo;extremely easy to use.&rdquo; Additionally, 67% of total participants used GitHub Copilot at least 5 days per week, averaging 3.4 days of usage weekly.\nMethodology\nIn this study, we collaborated with Accenture to conduct an extensive, randomized controlled trial (RCT). Participants included developers who engage in a variety of software development tasks daily, including engineering, design, and testing across a spectrum of software products and services. They hold various positions within their organizations from entry-level roles to team management positions, and may work collaboratively or independently depending on the project and team dynamics.\nFor the trial, developers were randomly assigned to two groups. One group of developers was given access to GitHub Copilot, while the other group was not. Our objective was to assess the influence of GitHub Copilot on developers&rsquo; experience within the enterprise setting, where they collaborate on multifaceted projects. We collected DevOps telemetry on several output performance metrics that reflect insights into developers&rsquo; regular coding activity.\nBeyond the initial experiment, we conducted a company-wide adoption analysis, which explored installation rates, generated code acceptance rates, and the time it took developers to accept GitHub Copilot&rsquo;s first coding suggestion. Success was determined by whether they accepted a suggestion from GitHub Copilot or not.\nIn addition, we surveyed the GitHub Copilot users at Accenture to gain a better understanding of how developers perceived the impact of GitHub Copilot on their workflows. Not only did this survey uncover insights into how and when developers are using GitHub Copilot, but it also indicated an overwhelming improvement in developer satisfaction, which we know to be a key component of the developer experience (DevEx) . The combination of both telemetry data and the information from the survey provides a full picture for us to understand GitHub Copilot&rsquo;s impact at the enterprise level.\nOur findings\nDevelopers quickly found value in GitHub Copilot and adopted it as part of their daily toolkit\nMore than 50,000 organizations have adopted GitHub Copilot so far , but we haven&rsquo;t yet had a clear view into what those adoption rates look like on the individual level. When we dug deeper into the usage patterns of GitHub Copilot among Accenture developers, 67% of respondents reported utilizing GitHub Copilot at least 5 days per week , with an average usage frequency of 3.4 days per week. Moreover, a substantial 70% of respondents relied on GitHub Copilot for coding tasks in a familiar programming language. This indicates a high level of integration of GitHub Copilot into developers&rsquo; daily workflows, highlighting its importance as a valuable engineering tool and resource.\nWe also observed that developers were excited to use GitHub Copilot. 81.4% of developers installed the GitHub Copilot IDE extension on the same day that they received a license. And not only were they excited to use it, but getting started was simple and did not provide a barrier to entry.\nIn fact, 96% of those who installed the IDE extension started receiving and accepting suggestions on the same day. On average, developers took just one minute from seeing their first suggestion to accepting one, too. This was further validated in user surveys, with 43% finding GitHub Copilot &ldquo;extremely easy to use&rdquo; and 51% rating it as &ldquo;extremely useful.&rdquo;\nDevelopers improved code quality using GitHub Copilot\nBy convention, pull requests represent a ready-to-deploy code change (for example, a new feature, bug fix, or code refactoring). When measured in aggregate, the number of pull requests per developer can be used to measure a team&rsquo;s throughput or velocity. Ultimately, an increase in pull requests represents an increase in value delivered, and Accenture developers saw an 8.69% increase in pull requests. Because each pull request must pass through a code review, the pull request merge rate is an excellent measure of code quality as seen through the eyes of a maintainer or coworker. Accenture saw a 15% increase to the pull request merge rate, which means that as the volume of pull requests increased, so did the number of pull requests passing code review.\nBut we don&rsquo;t want to just shift issues downstream and overburden the system with low-quality code. It&rsquo;s one thing for a teammate to assess quality and yet another for new code to successfully complete CI runs where test automation evaluates code quality against deterministic measures. At Accenture, we saw an 84% increase in successful builds suggesting not only that more pull requests were passing through the system, but they were also of higher quality as assessed by both human reviewers and test automation.\nBy enabling developers to maintain focus and stay in the flow, GitHub Copilot doesn&rsquo;t sacrifice quality for speed. And our findings provide evidence for exactly that.\nIn our study, developers accepted around 30% of GitHub Copilot&rsquo;s suggestions . And 90% of the developers reported that they committed code suggested by GitHub Copilot, while 91% of the developers reported that their teams had merged pull requests containing code suggested by GitHub Copilot . Analysis also showed high usage rates with the accepted code&mdash;for example, developers retained 88% of GitHub Copilot-generated characters in their editor .\nBy experiencing improved success rates in builds, developers can reduce the likelihood of errors.\nGitHub Copilot improved the overall developer experience\nOur survey among Accenture developers unveiled compelling findings indicating a significant boost in overall developer satisfaction with GitHub Copilot. An impressive 90% of developers expressed feeling more fulfilled with their jobs when utilizing GitHub Copilot, and a staggering 95% of developers reported enjoying coding more when leveraging GitHub Copilot&rsquo;s capabilities .\nThis enhancement in job satisfaction could allow developers to allocate their focus toward tasks most fulfilling to them, like solutions design or collaboration. Furthermore, our analysis revealed that developers&rsquo; heightened fulfillment correlated directly with their engagement with GitHub Copilot. When using GitHub Copilot less than two days per week, fulfillment only increased &ldquo;a little.&rdquo; But when using GitHub Copilot more than 2 days per week, fulfillment increases &ldquo;quite a bit.&rdquo;\n70% of developers also reported quite a bit less mental effort was expended on repetitive tasks, and 54% spent less time searching for information or examples when utilizing GitHub Copilot. This reduction in cognitive load could enable developers to allocate their cognitive resources more efficiently, reducing burnout. GitHub Copilot also allowed developers to maintain uninterrupted focus, with a majority indicating that they could maintain flow state while using the tool, a hallmark of good DevEx. These impacts extend beyond mere task optimization, which offers enterprises a competitive edge by maximizing developer resources and fostering a conducive environment for innovation and growth.\nFrom the lab to the real world\nAfter conducting multiple lab studies on the impact of GitHub Copilot, we are now working to understand how GitHub Copilot affected developers&rsquo; workdays in real-world environments&mdash;and that&rsquo;s been made possible by the tremendous adoption we&rsquo;ve seen among businesses and enterprise organizations alike.\nWith this study, we have uncovered compelling evidence that GitHub Copilot significantly enhances developer experience, satisfaction, and overall job fulfillment in real-world enterprise settings. With GitHub Copilot in their toolkits, developers can also enhance their skill sets and gain greater proficiency in their organization&rsquo;s codebase, which ultimately leads to heightened contribution levels across teams, all without sacrificing the quality of code.\nAcknowledgments\nWe are very grateful to all the developers who participated in the GitHub Copilot adoption experiment and survey. Ya Gao from GitHub Customer Research led the experiment in partnership with Accenture, the Microsoft Office of the Chief Economist, and the GitHub Copilot Quality Measurement team, specifically in collaboration with Phillip Coppney and Daniel A. Schocke at Accenture; Sida Peng, Dan Tetrick, and Jeff Wilcox at Microsoft; and Erik Polzin and Lizzie Redford at GitHub.\n\n## extraction_diagnostics\n\n- extraction_method: content-container\n- readability_score: 97\n- fetch_status: fetched-readable-text-content-container\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [case_detail / signal_card_candidate, relationship_graph_input, case / high] Research: Quantifying GitHub Copilot’s impact in the enterprise with Accenture - The GitHub Blog & May 13, 2024 | 9 minutes - Share: - Share on X - Share on Facebook - Share on LinkedIn Since bringing GitHub Copilot to market, we’ve conducted several lab studies to discover its impact on develo... / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=official_original\n2. [case_detail / signal_card_candidate, relationship_graph_input, case / high] Ya Gao & GitHub Customer Research May 13, 2024 9 minutes Share: Since bringing GitHub Copilot to market, we&rsquo;ve conducted several lab studies to discover its impact on developer efficiency, developer satisfaction, and overall code quality.\n3. [number / signal_card_candidate, relationship_graph_input, case, trend_candidate_context / high] We found that our AI pair programmer helps developers code up to 55% faster and that it made 85% of developers feel more confident in their code quality.\n4. [case_detail / signal_card_candidate, relationship_graph_input, case / high] With the introduction of our first GitHub Copilot offering for businesses and organizations in 2023 &mdash;and more recently GitHub Copilot Enterprise &mdash;it&rsquo;s become increasingly important for us to measure the impact of GitHub Copilot across real-world, large engineering organizations.\n5. [case_detail / signal_card_candidate, relationship_graph_input, case / high] To learn more, we partnered with Accenture to study how developers integrated GitHub Copilot into their daily workflows , and we found significant improvements in several areas, including: Improved developer satisfaction.\n6. [number / signal_card_candidate, relationship_graph_input, case, trend_candidate_context / high] 90% of developers found they were more fulfilled with their job when using GitHub Copilot, and 95% said they enjoyed coding more with Copilot&rsquo;s help.\n"
+}

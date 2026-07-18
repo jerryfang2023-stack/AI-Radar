@@ -3,7 +3,7 @@ import path from "node:path";
 import { execFile } from "node:child_process";
 import { promisify } from "node:util";
 import crypto from "node:crypto";
-import { resolveSourceTitleTranslation } from "./source-title-translation-generator.mjs";
+import { resolveSourceTitleTranslation, sourceTitleNeedsChineseTranslation } from "./source-title-translation-generator.mjs";
 
 const root = process.cwd();
 const execFileAsync = promisify(execFile);
@@ -1274,6 +1274,26 @@ function extractPublishedAtFromHtml(html = "") {
   return normalizePublishedAt(candidates);
 }
 
+function recoverCompleteSourceTitle(sourceTitle = "", snapshot = {}) {
+  const current = decodeHtmlEntities(sourceTitle).replace(/\s+/gu, " ").trim();
+  if (!current || !sourceTitleNeedsChineseTranslation(current)) return current;
+
+  const captured = String(snapshot.text || snapshot.full_text || "").slice(0, 1200);
+  const candidates = captured
+    .split(/\r?\n/gu)
+    .map((line) => decodeHtmlEntities(line).replace(/^\s*#{1,6}\s*/u, "").replace(/\s+/gu, " ").trim())
+    .filter((line) => line && !/^accessibility\s*:/iu.test(line))
+    .slice(0, 6);
+  const currentLower = current.toLocaleLowerCase("en-US");
+  const completed = candidates.find((line) => {
+    if (line.length <= current.length || line.length > 240) return false;
+    if (!line.toLocaleLowerCase("en-US").startsWith(currentLower)) return false;
+    const suffix = line.slice(current.length);
+    return /^\s+[\p{L}\p{N}$]/u.test(suffix) && suffix.length <= 140;
+  });
+  return completed || current;
+}
+
 async function runMetadataRegressionFixtures() {
   const jsonLd = '<script type="application/ld+json">{"@type":"NewsArticle","datePublished":"2026-06-22"}</script>';
   const meta = '<meta property="article:published_time" content="2026-07-12T03:30:00Z">';
@@ -1291,6 +1311,13 @@ async function runMetadataRegressionFixtures() {
   }
   if (!activeCuratedOriginalSourceItems().some((item) => /supermicro-simplifies-edge-ai-deployments/iu.test(item.url))) {
     throw new Error("active curated original source did not enter the direct-source recall lane");
+  }
+  const recoveredTitle = recoverCompleteSourceTitle(
+    "Aina raises $5.5M with new hardware interface for the age",
+    { text: "Accessibility: Skip TopNav\nAina raises $5.5M with new hardware interface for the age of AI beyond touchscreens and keyboards\nConsumer hardware company Aina is building a general purpose interface." }
+  );
+  if (recoveredTitle !== "Aina raises $5.5M with new hardware interface for the age of AI beyond touchscreens and keyboards") {
+    throw new Error("source snapshot headline did not repair a truncated discovery title");
   }
   console.log(JSON.stringify({ ok: true, fixture: "source-publication-metadata" }, null, 2));
 }
@@ -2960,6 +2987,7 @@ async function enrichSnapshots(items) {
       const snapshot = items[index].carry_forward_snapshot || await fetchSourceSnapshot(items[index]);
       enriched[index] = {
         ...items[index],
+        title: recoverCompleteSourceTitle(items[index].title, snapshot),
         published_at: preferredPublishedAt(items[index].published_at, snapshot.published_at),
         snapshot,
       };
