@@ -24,7 +24,7 @@
 
 ## Detail Page Structure
 
-- Use the report title as the H1.
+- Use the accepted report title unchanged as the H1, browser title, and Industry Reports card title.
 - Put the time-window selector on the H1 row when space allows.
 - Start with fast-scan editorial modules, not a methodology or data-scope section.
 - Put data scope and evidence boundaries near the end unless the user asks otherwise.

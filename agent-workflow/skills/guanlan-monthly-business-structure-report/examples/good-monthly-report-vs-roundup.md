@@ -5,6 +5,12 @@
 A good monthly report makes one structural judgment, then tests it through trends and opportunities.
 
 ```markdown
+# 模型继续制造注意力，真正接近预算的是部署交付层
+```
+
+The headline isolates the strongest structural judgment and makes the budget consequence explicit.
+
+```markdown
 ## 1. 本月结构判断
 
 2026 年 6 月，AI 商业系统的核心变化不是“Agent 更热”，而是企业 AI 的价值重心从模型、工具和单点插件，向“部署交付层”迁移。
@@ -52,4 +58,3 @@ Problems:
 - 证据链：Signals 提供企业流程化部署事实；Community Intelligence 提供获客、交付、知识沉淀等需求温度；First-Line Viewpoints 只用于解释市场预期变化。
 - 下月验证：若更多企业服务商开始把 AI 项目包装成流程托管、治理、集成和运营方案，则机会升级；若需求仍停留在工具教学和内容生产，则维持观察。
 ```
-

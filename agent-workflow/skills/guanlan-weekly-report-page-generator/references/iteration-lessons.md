@@ -5,7 +5,7 @@
 - Weekly report belongs under the relationship network on Intelligence Map, not in the first viewport.
 - The time window should be a selector on both Intelligence Map and detail page.
 - Counts should be tags under the judgment summary, not three KPI boxes.
-- The detail title should be content-derived: `AI 从工具试用转向业务流程重构`, not generic.
+- The detail title should preserve the accepted evidence-bounded headline, such as `别再问买哪个 AI 工具：下一轮机会是重做业务流程`, rather than abbreviating it into a generic transition summary.
 - The detail page should start with fast read and action judgment modules.
 - Data scope works better as an evidence appendix near the end.
 - Trend heatmap works better as ranked cards.

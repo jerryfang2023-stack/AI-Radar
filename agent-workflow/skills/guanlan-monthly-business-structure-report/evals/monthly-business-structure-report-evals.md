@@ -2,6 +2,14 @@
 
 ## Pass Cases
 
+### Case 0: Structural headline
+
+Expected:
+
+- Selects one strongest structural judgment instead of summarizing the full report.
+- Uses cognitive tension and names a concrete budget, procurement, cost, delivery, responsibility, or opportunity consequence.
+- Keeps the date and report type in metadata rather than the headline.
+
 ### Case 1: Structure-first monthly report
 
 Input: A user asks for a monthly report using Business Signals, Community Intelligence, First-Line Viewpoints, and weekly reports.
@@ -45,6 +53,10 @@ Expected:
 - Passes the content acceptance gate before monthly page generation.
 
 ## Fail Cases
+
+### Fail 0: Generic or abstract headline
+
+Fails if the title is only a dated monthly-report label or stacks `浮现 / 进入 / 转向 / 升温` without one clear business consequence.
 
 ### Fail 6: Partial month or early page generation
 

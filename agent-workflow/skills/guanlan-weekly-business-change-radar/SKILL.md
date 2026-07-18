@@ -3,15 +3,15 @@ name: guanlan-weekly-business-change-radar
 description: 观澜AI周度商业变化判断。从 Signals / Opinions / Community 三方数据中提取趋势链、机会卡、反共识判断和热力图，输出面向企业老板和创业者的周度 AI 商业机会雷达报告。
 metadata:
   guanlan:
-    version: "1.0.1"
+    version: "1.1.0"
     lane: "Business Signals"
     status: "downstream application"
     order: 90
     responsibility: "从 S×O×C 三方数据生成周度 AI 商业变化判断报告：趋势链五步法、100分机会评分、反共识判断、行业影响热力图。"
     upstream: "Business Signal Cards, First-Line Viewpoints data, Community Intelligence data"
     downstream: "weekly business change radar report, opportunity cards, trend chains"
-    gates: "data completeness (exact counts), cross-verification (S×O×C), trend chain evidence threshold (≥2 Signals each), opportunity card scoring (100-point), quality gates (8 checks)"
-    recent_learning: "报告质量差异在于：是否用精确数字而非估计、是否点名具体公司/产品/金额、是否对不同角色给不同建议。agent-workflow 版强在具体数据，需补趋势链五步法和机会卡打分。"
+    gates: "headline tension and business consequence, data completeness (exact counts), cross-verification (S×O×C), trend chain evidence threshold (≥2 Signals each), opportunity card scoring (100-point), quality gates"
+    recent_learning: "标题不能复述整份报告或连续使用‘进入/转向/升温’等抽象变化词。应从核心结论、反共识判断或最高确定性机会中选择一个最强判断，并同时点明认知张力与商业后果。"
     mirrored_in_skill_store: true
     memory_required: false
 ---
@@ -73,6 +73,29 @@ Cross-verification rules:
 3. Which industry / role / workflow does it affect?
 4. Do real users have demand and willingness to pay?
 5. Is there a supply gap that can become a product, service, or content business?
+
+## Headline Contract
+
+The title is the report's strongest judgment, not a compressed table of contents.
+
+- Use 14-42 visible characters and keep only one central claim.
+- Create a clear tension with a form such as `不是 / 却 / 反而 / 真正 / 别再 / 缺的是 / 越...越...` or a colon-led consequence.
+- Name a concrete business consequence such as budget, procurement, cost, responsibility, results, willingness to pay, scarcity, risk, delivery, demand, or opportunity.
+- Prefer the strongest conclusion from §1, §6, or the highest-certainty opportunity in §5.
+- Do not use a generic report label or stack abstract phrases such as `从 A 进入 B`, `同步升温`, or `加速落地`.
+- Do not claim that a purchase, revenue result, layoff, or incident has happened unless accepted evidence proves it.
+
+Good patterns:
+
+- `别再问买哪个 AI 工具：下一轮机会是重做业务流程`
+- `Agent 已进入科研、采购和支付，企业却先追问成本与责任`
+- `AI Coding 越便宜，软件需求反而越多：真正稀缺的是交付责任`
+
+Bad patterns:
+
+- `本周 AI 商业变化判断`
+- `企业 AI 进入组织级工作流，Agent 从能力演示转向流程接管`
+- `Agentic AI 进入流程落地，算力成本与信任边界同步升温`
 
 ## Report Structure
 
@@ -182,14 +205,15 @@ Role-specific actions:
 ## Quality Gates
 
 Before finalizing, verify:
-1. Every trend chain has ≥2 specific Signal citations
-2. Every opportunity card cites ≥1 Community signal
-3. The contrarian view challenges a named mainstream narrative
-4. §8 gives different advice to different roles (not generic "you should")
-5. All numbers in §0 are exact counts from data files, not estimates
-6. No section is pure methodology — every section delivers judgment
-7. Trend chains follow the five-step method (tech→product→user→business→opportunity)
-8. Opportunity cards include itemized 100-point scoring breakdown
+1. The title passes the Headline Contract and states one evidence-bounded judgment with a concrete business consequence.
+2. Every trend chain has ≥2 specific Signal citations.
+3. Every opportunity card cites ≥1 Community signal.
+4. The contrarian view challenges a named mainstream narrative.
+5. §8 gives different advice to different roles (not generic "you should").
+6. All numbers in §0 are exact counts from data files, not estimates.
+7. No section is pure methodology — every section delivers judgment.
+8. Trend chains follow the five-step method (tech→product→user→business→opportunity).
+9. Opportunity cards include itemized 100-point scoring breakdown.
 
 ## Output Path
 

@@ -1,5 +1,5 @@
 ---
-title: 企业 Agent 进入行业流程验证，成本和治理成为采购前置条件
+title: Agent 已进入科研、采购和支付，企业却先追问成本与责任
 date: 2026-07-06
 week: "2026-W27"
 window: 2026-06-29 to 2026-07-05
@@ -11,7 +11,7 @@ version: v3.4.3-report-center
 method: SxOxC cross-check + trend-chain five-step method + 100-point opportunity scoring
 ---
 
-# 企业 Agent 进入行业流程验证，成本和治理成为采购前置条件
+# Agent 已进入科研、采购和支付，企业却先追问成本与责任
 
 ## 0. 数据口径
 

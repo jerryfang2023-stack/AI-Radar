@@ -2,6 +2,14 @@
 
 Anti-patterns to avoid:
 
+## Headline (bad)
+
+```markdown
+# Agentic AI 进入流程落地，算力成本与信任边界同步升温
+```
+
+Problem: summarizes several abstract themes, stacks transition language, and gives the reader no single consequence worth opening.
+
 ## §0 Data Scope (bad)
 ```markdown
 本周收集了大约100多条信息，涵盖各个AI领域的重要动态。

@@ -3,15 +3,15 @@ name: guanlan-monthly-business-structure-report
 description: Produce WaveSight AI monthly business structure and opportunity reports. Use when writing, revising, or auditing a monthly report from Business compatibility Cards, weekly reports, Community Intelligence, First-Line Viewpoints, Industry Reports context, trend candidates, or opportunity maps. The report must diagnose industry-structure change, adjudicate trends, build an opportunity map, and define next-month verification conditions. Do not use for daily Cards, weekly reports, frontstage page generation, or business-signal fact creation.
 metadata:
   guanlan:
-    version: "0.1.2"
+    version: "0.2.0"
     lane: "Business Signals"
     status: "downstream application"
     order: 95
     responsibility: "Write monthly AI business structure and opportunity reports from compatibility Cards, weekly reports, Community Intelligence, First-Line Viewpoints, and Industry Reports context."
     upstream: "Business compatibility Cards, weekly business change radar reports, Community Intelligence demand signals, First-Line Viewpoints expectation shifts, Industry Reports context"
     downstream: "monthly business structure report, trend adjudication table, opportunity map, next-month verification list"
-    gates: "source-backed fact boundary, no weekly-roundup structure, multi-signal trend threshold, opportunity buyer/workflow/trigger completeness, next-month verification conditions"
-    recent_learning: "A strong monthly report should merge the expressive structure of the DeepSeek draft with WaveSight evidence discipline: keep deployment-delivery-layer judgment, but remove or mark unverified external macro numbers."
+    gates: "headline tension and structural consequence, source-backed fact boundary, no weekly-roundup structure, multi-signal trend threshold, opportunity buyer/workflow/trigger completeness, next-month verification conditions"
+    recent_learning: "月报标题应选择一个最强结构判断，并写清它如何改变预算、采购、成本、交付或竞争位置；不要把日期、报告类型和多个趋势压进标题。"
     mirrored_in_skill_store: true
 ---
 
@@ -69,6 +69,22 @@ The report must answer:
 2. Which trends should be upgraded, newly added, watched, downgraded, or removed?
 3. Which opportunities became actionable because of the structural change?
 4. What evidence would upgrade or downgrade each trend next month?
+
+## Headline Contract
+
+The title must express one structural judgment and its business consequence. Date, month, and report type belong in metadata and page context, not in the headline.
+
+- Use 14-42 visible characters.
+- Build tension with `不是 / 却 / 反而 / 真正 / 缺的是 / 越...越...` or a colon-led consequence.
+- Name the changed value position, budget destination, procurement gate, cost structure, delivery responsibility, or opportunity boundary.
+- Prefer the strongest structural judgment in §1 or the most consequential contradiction in §6.
+- Avoid generic labels such as `2026 年 6 月 AI 商业结构与机会月报`.
+- Avoid stacking abstract transitions such as `浮现 / 进入 / 转向 / 升温` in one title.
+- Keep every claim within accepted report evidence.
+
+Good: `模型继续制造注意力，真正接近预算的是部署交付层`
+
+Bad: `部署交付层浮现，企业 AI 从工具采用进入流程接管`
 
 ## Evidence Boundaries
 
@@ -134,14 +150,15 @@ Do not present a community-only idea as high certainty. Mark it as early or obse
 
 Before finalizing:
 
-1. Data scope includes exact files, counts, and boundary notes.
-2. The report is not a four-week news or weekly-report digest.
-3. Every core claim is traceable to compatibility Cards, weekly reports, Community, Viewpoints, or Industry Reports inputs.
-4. Community and Viewpoints are not used as fact evidence.
-5. At least one trend is downgraded or removed when evidence is weak.
-6. Opportunity cards include buyer, pain, supply gap, path, risk, and verification signal.
-7. Every next-month watch item has an observable trigger.
-8. Unsupported external numbers are removed or marked `待复核`.
+1. The title passes the Headline Contract and states one evidence-bounded structural consequence.
+2. Data scope includes exact files, counts, and boundary notes.
+3. The report is not a four-week news or weekly-report digest.
+4. Every core claim is traceable to compatibility Cards, weekly reports, Community, Viewpoints, or Industry Reports inputs.
+5. Community and Viewpoints are not used as fact evidence.
+6. At least one trend is downgraded or removed when evidence is weak.
+7. Opportunity cards include buyer, pain, supply gap, path, risk, and verification signal.
+8. Every next-month watch item has an observable trigger.
+9. Unsupported external numbers are removed or marked `待复核`.
 
 ## Handoff
 

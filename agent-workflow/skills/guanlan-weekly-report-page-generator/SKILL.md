@@ -3,7 +3,7 @@ name: guanlan-weekly-report-page-generator
 description: Use when creating, updating, or repairing WaveSight AI weekly report frontstage pages from `01-SiteV2/content/08-report/`. Applies to Industry Reports weekly entries, weekly report detail pages, time-window selectors, report archive wiring, Guanlan VI page styling, and converting weekly report Markdown into editorial page modules. Do not use for writing the weekly report judgment itself; use `guanlan-weekly-business-change-radar` first.
 metadata:
   guanlan:
-    version: "1.0.4"
+    version: "1.0.5"
     lane: "Industry Reports"
     status: "current sub-skill"
     order: 91
@@ -11,7 +11,7 @@ metadata:
     upstream: "weekly report Markdown, Industry Reports page, Guanlan VI rules"
     downstream: "weekly report detail page, Industry Reports weekly entry, page styles, version metadata"
     gates: "content-source discipline, user preference memory, Guanlan VI fit, no table-heavy rendering, responsive visual smoke, frontstage regression"
-    recent_learning: "User preference is explicit: delete generic helper/navigation copy, avoid static date text, avoid raw tables, and keep weekly modules flexible except the watchlist anchor."
+    recent_learning: "Use the accepted evidence-bounded headline unchanged across the H1, browser title, and Industry Reports card. Do not abbreviate it back into a generic ‘AI/Agent enters...’ summary."
     mirrored_in_skill_store: true
     memory_required: true
 ---

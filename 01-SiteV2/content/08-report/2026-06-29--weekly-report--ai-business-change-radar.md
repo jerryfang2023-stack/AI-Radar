@@ -1,5 +1,5 @@
 ---
-title: 企业 AI 进入组织级工作流，Agent 从能力演示转向流程接管
+title: 97 个商业信号指向同一件事：企业 AI 的主战场不再是聊天框
 date: 2026-06-29
 week: "2026-W26"
 window: 2026-06-22 to 2026-06-28
@@ -11,7 +11,7 @@ version: v3.3-merged
 method: SxOxC cross-check + trend-chain five-step method + 100-point opportunity scoring
 ---
 
-# 企业 AI 进入组织级工作流，Agent 从能力演示转向流程接管
+# 97 个商业信号指向同一件事：企业 AI 的主战场不再是聊天框
 
 ## 0. 数据口径
 

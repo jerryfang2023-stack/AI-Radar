@@ -3,6 +3,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { deepSeekJsonCompletion, deepSeekModels } from "./deepseek-translation-client.mjs";
+import { periodicReportTitleProblems, periodicReportTitlePromptRules } from "./periodic-report-title.mjs";
 
 const root = process.cwd();
 const args = new Map(process.argv.slice(2).map((arg) => {
@@ -62,6 +63,7 @@ function prompt(manifest) {
     "商业事件是事实证据；一线观点和社群材料只能分别作为观点与社群观察，不得写成事实。",
     "每个具体判断末尾必须引用至少一个原始 ID，格式为 [E:事件ID]、[O:观点ID] 或 [C:社群ID]。不得伪造 ID。",
     "没有足够交叉证据时明确写证据不足。机会评分使用 100 分制并说明它是下游研究判断，不进入 V4 事实表。",
+    `标题规则：\n${periodicReportTitlePromptRules}`,
     `报告类型：${kind}；窗口：${windowStart} to ${windowEnd}；精确计数：${JSON.stringify(manifest.counts)}。`,
     `返回 JSON：{"title":string,"sections":[${sectionNames.map((name, index) => `{"number":${index},"title":"${name}","content":string}`).join(",")}]}`,
     "content 使用简体中文 Markdown，可包含短列表；不要返回 frontmatter，不要返回代码围栏。",
@@ -72,6 +74,7 @@ function prompt(manifest) {
 function validateReport(payload, allowedIds, sectionCount) {
   const problems = [];
   if (!payload?.title || !Array.isArray(payload?.sections) || payload.sections.length !== sectionCount) problems.push("report_shape_invalid");
+  problems.push(...periodicReportTitleProblems(payload?.title));
   for (let index = 0; index < sectionCount; index += 1) {
     const section = payload?.sections?.[index];
     if (section?.number !== index || !section?.title || !section?.content) problems.push(`section_${index}_invalid`);

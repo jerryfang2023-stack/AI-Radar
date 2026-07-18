@@ -4,7 +4,7 @@ Use this template for WaveSight AI monthly reports.
 
 ```md
 ---
-title: YYYY 年 MM 月 AI 商业结构与机会月报：<核心判断>
+title: <一个带认知张力和商业后果的核心结构判断>
 date: YYYY-MM-DD
 month: "YYYY-MM"
 window: YYYY-MM-01 to YYYY-MM-DD
@@ -16,7 +16,7 @@ version: v0.1
 method: 产业结构变化诊断 + 趋势裁决 + 机会地图
 ---
 
-# YYYY 年 MM 月 AI 商业结构与机会月报：<核心判断>
+# <一个带认知张力和商业后果的核心结构判断>
 
 > 月报不回答“这个月 AI 发生了什么”，而回答“这个月之后，AI 商业系统的结构哪里变了，哪些趋势被证据增强或削弱，哪些机会因此变得可以行动”。
 

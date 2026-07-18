@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import fs from "node:fs";
 import path from "node:path";
+import { periodicReportTitleProblems } from "./periodic-report-title.mjs";
 
 const root = process.cwd();
 const args = new Map(process.argv.slice(2).map((arg) => {
@@ -51,6 +52,7 @@ function checkWeekly(content, archive, options) {
   if (!fm.slug) failures.push("weekly slug is missing");
   if (fm.status !== "draft") failures.push("weekly status must be draft before page acceptance");
   if (fm.model_provider !== "deepseek" || !fm.model) failures.push("weekly DeepSeek model provenance is missing");
+  failures.push(...periodicReportTitleProblems(fm.title));
   for (let index = 0; index <= 8; index += 1) if (!sections.has(index)) failures.push(`weekly section ${index} is missing`);
   for (const label of ["Signals", "Opinions", "Community"]) {
     if (!new RegExp(`${label}[^\\d]{0,80}\\d+`, "iu").test(content)) failures.push(`${label} exact count is missing`);
@@ -73,6 +75,7 @@ function checkMonthly(content, options) {
   if (!fm.slug) failures.push("monthly slug is missing");
   if (fm.status !== "draft") failures.push("monthly status must be draft before page acceptance");
   if (fm.model_provider !== "deepseek" || !fm.model) failures.push("monthly DeepSeek model provenance is missing");
+  failures.push(...periodicReportTitleProblems(fm.title));
   if (sections.size < 8) failures.push("monthly report must contain at least eight numbered sections");
   const requiredConcepts = [
     ["data boundary", /\u6570\u636e\u8fb9\u754c|\u6570\u636e\u8303\u56f4|data boundary/iu],
@@ -141,19 +144,21 @@ function writeReport(result, inputPaths) {
 
 function runFixtures() {
   const weeklyFrontmatter = [
-    "---", "title: Weekly", "date: 2026-07-13", "week: 2026-W28",
+    "---", "title: AI Coding 越便宜，软件需求反而越多：真正稀缺的是交付责任", "date: 2026-07-13", "week: 2026-W28",
     "window: 2026-07-06 to 2026-07-12", "content_type: weekly-report", "slug: weekly-2026-w28", "status: draft", "model_provider: deepseek", "model: deepseek-v4-pro", "---",
   ].join("\n");
   const weeklyBody = `${weeklyFrontmatter}\n${Array.from({ length: 9 }, (_, index) => `## ${index}. Section ${index}`).join("\n")}\nSignals: 10\nOpinions: 3\nCommunity: 4\nScore: 82 / 100 [E:EVT-test]`;
   const weekly = evaluatePeriodicContent({ kind: "weekly", content: weeklyBody, archive: weeklyBody, date: "2026-07-13", windowStart: "2026-07-06", windowEnd: "2026-07-12" });
   const monthlyBody = [
-    "---", "title: Monthly", "date: 2026-06-30", "month: 2026-06",
+    "---", "title: 模型继续制造注意力，真正接近预算的是部署交付层", "date: 2026-06-30", "month: 2026-06",
     "window: 2026-06-01 to 2026-06-30", "content_type: monthly-report", "slug: monthly-2026-06", "status: draft", "model_provider: deepseek", "model: deepseek-v4-pro", "---",
     ...Array.from({ length: 9 }, (_, index) => `## ${index + 1}. Section ${index + 1}`),
     "\u6570\u636e\u8fb9\u754c \u7ed3\u6784\u5224\u65ad \u8d8b\u52bf\u88c1\u51b3 \u673a\u4f1a\u5730\u56fe \u5173\u952e\u77db\u76fe \u4e0b\u6708\u9a8c\u8bc1 [E:EVT-test]",
   ].join("\n");
   const monthly = evaluatePeriodicContent({ kind: "monthly", content: monthlyBody, date: "2026-06-30", windowStart: "2026-06-01", windowEnd: "2026-06-30" });
-  if (!weekly.ok || !monthly.ok) throw new Error(`periodic content fixtures failed: ${JSON.stringify({ weekly, monthly })}`);
+  const weakWeekly = evaluatePeriodicContent({ kind: "weekly", content: weeklyBody.replace("AI Coding 越便宜，软件需求反而越多：真正稀缺的是交付责任", "企业 Agent 进入行业流程验证，成本和治理成为采购前置条件"), archive: weeklyBody, date: "2026-07-13", windowStart: "2026-07-06", windowEnd: "2026-07-12" });
+  const weakMonthly = evaluatePeriodicContent({ kind: "monthly", content: monthlyBody.replace("模型继续制造注意力，真正接近预算的是部署交付层", "2026年6月 AI 商业结构与机会月报"), date: "2026-06-30", windowStart: "2026-06-01", windowEnd: "2026-06-30" });
+  if (!weekly.ok || !monthly.ok || weakWeekly.ok || weakMonthly.ok) throw new Error(`periodic content fixtures failed: ${JSON.stringify({ weekly, monthly, weakWeekly, weakMonthly })}`);
   console.log(JSON.stringify({ ok: true, fixture: "periodic-report-content" }, null, 2));
 }
 

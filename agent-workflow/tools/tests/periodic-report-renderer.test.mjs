@@ -1,6 +1,14 @@
 import assert from "node:assert/strict";
 import test from "node:test";
+import { periodicReportTitleProblems } from "../periodic-report-title.mjs";
 import { escapeHtml, parseFrontmatter, renderBody } from "../render-periodic-report-pages.mjs";
+
+test("periodic report titles carry tension and a business consequence", () => {
+  assert.deepEqual(periodicReportTitleProblems("AI Coding 越便宜，软件需求反而越多：真正稀缺的是交付责任"), []);
+  assert.deepEqual(periodicReportTitleProblems("模型继续制造注意力，真正接近预算的是部署交付层"), []);
+  assert.ok(periodicReportTitleProblems("企业 AI 进入组织级工作流，Agent 从能力演示转向流程接管").length > 0);
+  assert.ok(periodicReportTitleProblems("2026年6月 AI 商业结构与机会月报").length > 0);
+});
 
 test("periodic renderer parses accepted metadata and preserves evidence IDs", () => {
   const source = "---\ntitle: Test\nstatus: draft\nwindow: 2026-07-06 to 2026-07-12\n---\n## 0. 数据边界\n\n- 判断 [E:EVT-1]";

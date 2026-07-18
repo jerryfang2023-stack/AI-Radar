@@ -1,5 +1,5 @@
 ---
-title: 企业 Agent 从工具采用进入部署服务化
+title: 企业不缺 Agent，缺的是能把它接进流程并对结果负责的人
 date: 2026-06-22
 week: "2026-W25"
 window: 2026-06-15 to 2026-06-21
@@ -11,7 +11,7 @@ version: v3.3-merged
 method: SxOxC cross-check + trend-chain five-step method + 100-point opportunity scoring
 ---
 
-# 企业 Agent 从工具采用进入部署服务化
+# 企业不缺 Agent，缺的是能把它接进流程并对结果负责的人
 
 ## 0. 数据口径
 

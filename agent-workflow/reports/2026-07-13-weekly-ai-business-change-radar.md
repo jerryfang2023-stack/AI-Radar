@@ -11,7 +11,7 @@ Generated from Guanlan weekly business change radar skill and weekly report page
 
 ## Title
 
-Agentic AI 进入流程落地，算力成本与信任边界同步升温
+AI Coding 越便宜，软件需求反而越多：真正稀缺的是交付责任
 
 ## Summary
 

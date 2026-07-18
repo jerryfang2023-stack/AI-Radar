@@ -2,6 +2,14 @@
 
 Key characteristics of a well-executed weekly radar:
 
+## Headline (good)
+
+```markdown
+# AI Coding 越便宜，软件需求反而越多：真正稀缺的是交付责任
+```
+
+Good: one evidence-bounded judgment, a counter-intuitive tension, and a concrete business consequence.
+
 ## §0 Data Scope (good)
 ```markdown
 - Signals：`v3-data-observation-desk.json`，窗口内 101 张 Business Signal Cards，其中案例 44、产品 38、融资 19。

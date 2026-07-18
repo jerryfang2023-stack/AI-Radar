@@ -1,5 +1,5 @@
 ---
-title: 本周 AI 商业变化判断
+title: 别再问买哪个 AI 工具：下一轮机会是重做业务流程
 date: 2026-06-15
 window: 2026-06-09 to 2026-06-15
 scope: Signals + First-Line Viewpoints + Community Intelligence
@@ -8,7 +8,7 @@ version: v3.3-merged
 method: S×O×C 三方交叉验证 + 趋势链五步法 + 100分机会评分
 ---
 
-# 本周 AI 商业变化判断
+# 别再问买哪个 AI 工具：下一轮机会是重做业务流程
 
 ## 0. 数据口径
 

@@ -1,5 +1,5 @@
 ---
-title: Agentic AI 进入流程落地，算力成本与信任边界同步升温
+title: AI Coding 越便宜，软件需求反而越多：真正稀缺的是交付责任
 date: 2026-07-13
 week: "2026-W28"
 window: 2026-07-06 to 2026-07-12
@@ -8,7 +8,7 @@ slug: ai-business-change-radar
 status: published
 ---
 
-# Agentic AI 进入流程落地，算力成本与信任边界同步升温
+# AI Coding 越便宜，软件需求反而越多：真正稀缺的是交付责任
 
 ## 0. 数据口径与边界
 
