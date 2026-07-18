@@ -72,6 +72,10 @@ key_excerpts: [{"type":"supporting_context","text":"That’s not a hypothetical 
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "恶意智能体与影子AI：风投为何重注AI安全领域"
+title_translation_status: "translated"
+title_translation_method: "deepseek_title_translation"
+title_translation_model: "deepseek-v4-flash"
 ---
 
 # Rogue agents and shadow AI: Why VCs are betting big on AI security

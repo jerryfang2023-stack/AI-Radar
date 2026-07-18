@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"# AI Agent Startups 2026: Top 25 Compan
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "2026年顶级AI智能体初创公司（融资与估值）"
+title_translation_status: "translated"
+title_translation_method: "deepseek_title_translation"
+title_translation_model: "deepseek-v4-flash"
 ---
 
 # Top AI Agent Startups 2026 (Funding & Valuation)

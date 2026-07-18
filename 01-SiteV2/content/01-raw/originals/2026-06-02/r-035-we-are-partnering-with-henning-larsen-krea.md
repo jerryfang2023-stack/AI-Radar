@@ -72,6 +72,10 @@ key_excerpts: [{"type":"company_action","text":"We are partnering with Henning L
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "我们正与Henning Larsen - Krea合作"
+title_translation_status: "translated"
+title_translation_method: "deepseek_title_translation"
+title_translation_model: "deepseek-v4-flash"
 ---
 
 # We are partnering with Henning Larsen - Krea

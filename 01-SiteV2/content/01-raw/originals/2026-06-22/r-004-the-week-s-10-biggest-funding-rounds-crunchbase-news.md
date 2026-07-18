@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"9. AlphaSense, $350M, AI enterprise sof
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only
+title_zh: "本周十大融资轮次 - Crunchbase News"
+title_translation_status: "translated"
+title_translation_method: "deepseek_title_translation"
+title_translation_model: "deepseek-v4-flash"
 ---
 
 # The Week's 10 Biggest Funding Rounds - Crunchbase News
