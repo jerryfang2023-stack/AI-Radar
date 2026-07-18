@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T01:48:05.545Z",
+    "generatedAt": "2026-07-18T01:57:40.269Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 823,
-    "quarantinedEventCount": 69
+    "eventCount": 832,
+    "quarantinedEventCount": 60
   },
   "entity": {
     "id": "EN-07c370b082ffd370",
@@ -20,15 +20,19 @@
     "datasetScopes": [
       "canonical"
     ],
-    "eventIds": [],
+    "eventIds": [
+      "EV-29eea3f4a8fcd6f5"
+    ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
-    "firstSeen": "",
-    "lastSeen": "",
+    "firstSeen": "2026-06-06",
+    "lastSeen": "2026-06-07",
     "relationIds": [],
     "groupedEventIds": {
-      "fundingAcquisition": [],
+      "fundingAcquisition": [
+        "EV-29eea3f4a8fcd6f5"
+      ],
       "deployments": [],
       "partnerships": [],
       "productsServices": [],
@@ -36,7 +40,23 @@
       "organizationPeople": [],
       "other": []
     },
-    "timeline": [],
+    "timeline": [
+      {
+        "id": "EV-29eea3f4a8fcd6f5",
+        "dataDate": "2026-06-06",
+        "date": "2026-06-07",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Inference.ai 将 AI 工作负载与云端 GPU 算力匹配",
+        "displayTags": [],
+        "entityIds": [
+          "EN-07c370b082ffd370"
+        ]
+      }
+    ],
     "viewpoints": []
   },
   "relatedEntities": [],

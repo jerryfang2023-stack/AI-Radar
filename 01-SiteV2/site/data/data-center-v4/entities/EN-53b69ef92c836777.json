@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T01:48:05.545Z",
+    "generatedAt": "2026-07-18T01:57:40.269Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 823,
-    "quarantinedEventCount": 69
+    "eventCount": 832,
+    "quarantinedEventCount": 60
   },
   "entity": {
     "id": "EN-53b69ef92c836777",
@@ -20,15 +20,19 @@
     "datasetScopes": [
       "canonical"
     ],
-    "eventIds": [],
+    "eventIds": [
+      "EV-8eb0acb180b7ad9d"
+    ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
-    "firstSeen": "",
-    "lastSeen": "",
+    "firstSeen": "2026-06-01",
+    "lastSeen": "2026-06-01",
     "relationIds": [],
     "groupedEventIds": {
-      "fundingAcquisition": [],
+      "fundingAcquisition": [
+        "EV-8eb0acb180b7ad9d"
+      ],
       "deployments": [],
       "partnerships": [],
       "productsServices": [],
@@ -36,7 +40,23 @@
       "organizationPeople": [],
       "other": []
     },
-    "timeline": [],
+    "timeline": [
+      {
+        "id": "EV-8eb0acb180b7ad9d",
+        "dataDate": "2026-06-01",
+        "date": "2026-06-01",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "2026年顶级AI智能体初创公司（融资与估值）",
+        "displayTags": [],
+        "entityIds": [
+          "EN-53b69ef92c836777"
+        ]
+      }
+    ],
     "viewpoints": []
   },
   "relatedEntities": [],

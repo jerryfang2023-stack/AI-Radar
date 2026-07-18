@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T01:48:05.545Z",
+    "generatedAt": "2026-07-18T01:57:40.269Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 823,
-    "quarantinedEventCount": 69
+    "eventCount": 832,
+    "quarantinedEventCount": 60
   },
   "entity": {
     "id": "EN-8e8cc11d1475231b",
@@ -20,15 +20,19 @@
     "datasetScopes": [
       "canonical"
     ],
-    "eventIds": [],
+    "eventIds": [
+      "EV-fdfd4bf00571bb35"
+    ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
-    "firstSeen": "",
-    "lastSeen": "",
+    "firstSeen": "2026-06-04",
+    "lastSeen": "2026-06-04",
     "relationIds": [],
     "groupedEventIds": {
-      "fundingAcquisition": [],
+      "fundingAcquisition": [
+        "EV-fdfd4bf00571bb35"
+      ],
       "deployments": [],
       "partnerships": [],
       "productsServices": [],
@@ -36,7 +40,23 @@
       "organizationPeople": [],
       "other": []
     },
-    "timeline": [],
+    "timeline": [
+      {
+        "id": "EV-fdfd4bf00571bb35",
+        "dataDate": "2026-06-04",
+        "date": "2026-06-04",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "恶意智能体与影子AI：风投为何重注AI安全领域",
+        "displayTags": [],
+        "entityIds": [
+          "EN-8e8cc11d1475231b"
+        ]
+      }
+    ],
     "viewpoints": []
   },
   "relatedEntities": [],

@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T01:48:05.545Z",
+    "generatedAt": "2026-07-18T01:57:40.269Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 823,
-    "quarantinedEventCount": 69
+    "eventCount": 832,
+    "quarantinedEventCount": 60
   },
   "events": [
     {
@@ -4792,6 +4792,89 @@
       "sourceExcerpt": "Enterprise AI Series B Funding Concentration Q1 2026"
     },
     {
+      "id": "EV-78a11d309c3d4e97",
+      "dataDate": "2026-07-05",
+      "date": "2026-07-05",
+      "updatedDate": "2026-07-05",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "科技初创公司融资轮次：过去30天，每周更新",
+      "originalTitle": "Tech Startup Funding Rounds: Last 30 Days, Updated Weekly",
+      "subject": "Anthropic",
+      "action": "funding",
+      "object": "$3.5B Series E",
+      "metrics": [
+        "$3.5B",
+        "$5B",
+        "$134B",
+        "$7B",
+        "$2B",
+        "$2 billion",
+        "$500M"
+      ],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-7d3194f79e645c42",
+        "EN-bbdefa2950f49882"
+      ],
+      "entityNames": [
+        "Anthropic",
+        "OpenAI",
+        "Google"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-76d7bc75c2a01608",
+          "subject": "Anthropic",
+          "object": "$3.5B Series E",
+          "quote": "Anthropic | $3.5B Series E. The latest round confirms Anthropic’s seat at the table alongside OpenAI and Google."
+        },
+        {
+          "id": "CL-9515eba2b61b3211",
+          "subject": "Databricks",
+          "object": "$5B Late-Stage ($134B Valuation)",
+          "quote": "Databricks | $5B Late-Stage ($134B Valuation) Databricks has officially signaled its IPO readiness with a massive $7B capital injection ($5B equity + $2B debt)."
+        },
+        {
+          "id": "CL-96f6743e385425fb",
+          "subject": "Shield AI",
+          "object": "$2 billion in Series G + Preferred Equity",
+          "quote": "Shield AI | raised $2 billion in Series G + Preferred Equity. Advent International and JPMorgan Chase co-led the round, joined by Blackstone ($500M preferred), Snowpoint, InnovationX, and Riot Ventures."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-a55430d2409741e9",
+          "publisher": "techbible.ai",
+          "url": "https://techbible.ai/learn/tech-startup-funding-rounds"
+        }
+      ],
+      "sourceUrl": "https://techbible.ai/learn/tech-startup-funding-rounds",
+      "publisher": "techbible.ai",
+      "sourceExcerpt": "Anthropic | $3.5B Series E. The latest round confirms Anthropic’s seat at the table alongside OpenAI and Google."
+    },
+    {
       "id": "EV-52115fee0e716170",
       "dataDate": "2026-07-05",
       "date": "2026-07-04",
@@ -5537,6 +5620,120 @@
       "sourceUrl": "https://siliconangle.com/2026/06/24/agentic-infrastructure-startup-seltz-raises-12-5m-help-ai-agents-search-web-answers",
       "publisher": "siliconangle.com",
       "sourceExcerpt": "Agentic infrastructure startup Seltz raises $12.5M to help AI agents search the web for answers"
+    },
+    {
+      "id": "EV-7b7f0cdf219434f6",
+      "dataDate": "2026-07-02",
+      "date": "2026-07-02",
+      "updatedDate": "2026-07-02",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "美国种子轮每周融资汇总（2026年3月17日-24日）",
+      "originalTitle": "US Seed Weekly Funding Roundup (Mar 17-24, 2026) - Qubit Capital",
+      "subject": "Manifold",
+      "action": "funding",
+      "object": "$8M seed round",
+      "metrics": [
+        "$8M",
+        "$7M"
+      ],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "security_product",
+            "dimensionName": "产品形态",
+            "name": "AI 安全产品"
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "security_product",
+          "dimensionName": "产品形态",
+          "name": "AI 安全产品"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "security_product",
+          "dimensionName": "产品形态",
+          "name": "AI 安全产品"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "entityIds": [
+        "EN-4dd5b6e2bf3bfd4f"
+      ],
+      "entityNames": [
+        "Manifold"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-8f30a944354ecb15",
+          "subject": "Manifold",
+          "object": "$8M seed round",
+          "quote": "Manifold Raises $8M For AI Agent Security"
+        },
+        {
+          "id": "CL-a2d386a8bc0c519a",
+          "subject": "Obin AI",
+          "object": "$7M seed round",
+          "quote": "Obin AI Raises $7M For Agentic Finance Workflows"
+        },
+        {
+          "id": "CL-06d47cbf7a4f1f5d",
+          "subject": "Costanoa Ventures",
+          "object": "led Manifold seed round",
+          "quote": "Costanoa Ventures led the round with participation from Cherry Ventures, Rain Capital, and Modern Technical Fund."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-72873a2426431b5e",
+          "publisher": "qubit.capital",
+          "url": "https://qubit.capital/blog/us-seed-weekly-funding-roundup-week-4-march-2026"
+        }
+      ],
+      "sourceUrl": "https://qubit.capital/blog/us-seed-weekly-funding-roundup-week-4-march-2026",
+      "publisher": "qubit.capital",
+      "sourceExcerpt": "Manifold Raises $8M For AI Agent Security"
     },
     {
       "id": "EV-80e54c9a390da293",
@@ -9196,6 +9393,114 @@
       "sourceUrl": "https://coverager.com/dodoai-raises-%c2%a5280m-seed-for-enterprise-ai-governance-platform",
       "publisher": "coverager.com",
       "sourceExcerpt": "dodoAI raises ¥280M seed for enterprise AI governance platform"
+    },
+    {
+      "id": "EV-9486e14e99499e3b",
+      "dataDate": "2026-06-22",
+      "date": "2026-06-22",
+      "updatedDate": "2026-06-22",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "本周十大融资轮次 - Crunchbase News",
+      "originalTitle": "The Week's 10 Biggest Funding Rounds - Crunchbase News",
+      "subject": "Impulse Space",
+      "action": "funding",
+      "object": "$500 million Series D funding led by 137 Ventures and Banner VC",
+      "metrics": [
+        "$500 million",
+        "$10.5 billion"
+      ],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "ai_application",
+            "dimensionName": "产品形态",
+            "name": "AI 应用"
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "id": "developer",
+            "dimensionName": "目标用户",
+            "name": "开发者"
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "id": "ai_application",
+          "dimensionName": "产品形态",
+          "name": "AI 应用"
+        },
+        {
+          "dimensionId": "target_user",
+          "id": "developer",
+          "dimensionName": "目标用户",
+          "name": "开发者"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "ai_application",
+          "dimensionName": "产品形态",
+          "name": "AI 应用"
+        },
+        {
+          "dimensionId": "target_user",
+          "id": "developer",
+          "dimensionName": "目标用户",
+          "name": "开发者"
+        }
+      ],
+      "entityIds": [
+        "EN-05f6ecf01ac4ebec"
+      ],
+      "entityNames": [
+        "Impulse Space"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-384e4fad1d1da5ff",
+          "subject": "Impulse Space",
+          "object": "$500 million Series D funding led by 137 Ventures and Banner VC",
+          "quote": "Redondo Beach, California-based Impulse Space, a developer of spacecraft and propulsion systems for transport, moving and orbital repositioning in space, raised $500 million in Series D funding. 137 Ventures and Banner VC led the financing"
+        },
+        {
+          "id": "CL-1397a1885185d731",
+          "subject": "Supabase",
+          "object": "$500 million funding led by GIC at a $10.5 billion valuation",
+          "quote": "Supabase, provider of an open source platform for developers and AI app builders, closed on $500 million in fresh funding. GIC led the financing, which set a $10.5 billion valuation for the 6-year-old, San Francisco-based company."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-df04118adbebb1cd",
+          "publisher": "news.crunchbase.com",
+          "url": "https://news.crunchbase.com/venture/biggest-funding-rounds-june-5-2026"
+        }
+      ],
+      "sourceUrl": "https://news.crunchbase.com/venture/biggest-funding-rounds-june-5-2026",
+      "publisher": "news.crunchbase.com",
+      "sourceExcerpt": "Redondo Beach, California-based Impulse Space, a developer of spacecraft and propulsion systems for transport, moving and orbital repositioning in space, raised $500 million in Series D funding. 137 Ventures and Banner VC led the financing"
     },
     {
       "id": "EV-9de19f01ac4771fa",
@@ -13619,6 +13924,67 @@
       "sourceExcerpt": "Graphon AI, which emerged from stealth on Wednesday with $8.3 million in seed funding"
     },
     {
+      "id": "EV-29eea3f4a8fcd6f5",
+      "dataDate": "2026-06-06",
+      "date": "2026-06-07",
+      "updatedDate": "2026-06-07",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Inference.ai 将 AI 工作负载与云端 GPU 算力匹配",
+      "originalTitle": "Inference.ai matches AI workloads with cloud GPU compute",
+      "subject": "Inference.ai",
+      "action": "funding",
+      "object": "$4 million",
+      "metrics": [
+        "$4 million"
+      ],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-07c370b082ffd370"
+      ],
+      "entityNames": [
+        "Inference.ai"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-3a7a84428bc5fb3d",
+          "subject": "Inference.ai",
+          "object": "$4 million",
+          "quote": "The startup recently closed a $4 million round from Cherubic Ventures, Maple VC and Fusion Fund"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-4e079c5ff3c5f2aa",
+          "publisher": "techcrunch.com",
+          "url": "https://techcrunch.com/2024/01/30/inference-ai-matches-ai-workloads-with-cloud-gpu-compute"
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2024/01/30/inference-ai-matches-ai-workloads-with-cloud-gpu-compute",
+      "publisher": "techcrunch.com",
+      "sourceExcerpt": "The startup recently closed a $4 million round from Cherubic Ventures, Maple VC and Fusion Fund"
+    },
+    {
       "id": "EV-9e678b626c2a5c83",
       "dataDate": "2026-06-06",
       "date": "2026-06-07",
@@ -14624,6 +14990,68 @@
       "sourceUrl": "https://bloomberg.com/news/articles/2026-06-03/spacex-seeks-75-billion-in-record-ipo-plan-to-fund-ai-launch",
       "publisher": "Bloomberg：Technology（RSS）",
       "sourceExcerpt": "SpaceX Seeks to Raise $75 Billion in IPO Plan"
+    },
+    {
+      "id": "EV-fdfd4bf00571bb35",
+      "dataDate": "2026-06-04",
+      "date": "2026-06-04",
+      "updatedDate": "2026-06-04",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "恶意智能体与影子AI：风投为何重注AI安全领域",
+      "originalTitle": "Rogue agents and shadow AI: Why VCs are betting big on AI security",
+      "subject": "Witness AI",
+      "action": "funding",
+      "object": "$58 million",
+      "metrics": [
+        "$58 million",
+        "500%"
+      ],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-8e8cc11d1475231b"
+      ],
+      "entityNames": [
+        "Witness AI"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-a68736109ad6373a",
+          "subject": "Witness AI",
+          "object": "$58 million",
+          "quote": "Witness AI this week raised $58 million off the back of over 500% growth in ARR and scaled employee headcount by 5x over the last year"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-2e166e6725951066",
+          "publisher": "techcrunch.com",
+          "url": "https://techcrunch.com/2026/01/19/rogue-agents-and-shadow-ai-why-vcs-are-betting-big-on-ai-security"
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/01/19/rogue-agents-and-shadow-ai-why-vcs-are-betting-big-on-ai-security",
+      "publisher": "techcrunch.com",
+      "sourceExcerpt": "Witness AI this week raised $58 million off the back of over 500% growth in ARR and scaled employee headcount by 5x over the last year"
     },
     {
       "id": "EV-86489eda802ffc19",
@@ -15642,6 +16070,82 @@
       "sourceExcerpt": "Y Combinator grad and AI insurance brokerage Harper raises $47M"
     },
     {
+      "id": "EV-8eb0acb180b7ad9d",
+      "dataDate": "2026-06-01",
+      "date": "2026-06-01",
+      "updatedDate": "2026-06-01",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "2026年顶级AI智能体初创公司（融资与估值）",
+      "originalTitle": "Top AI Agent Startups 2026 (Funding & Valuation)",
+      "subject": "Replit",
+      "action": "funding",
+      "object": "$400M funding round",
+      "metrics": [
+        "$400M",
+        "$80M",
+        "$605M",
+        "$350M"
+      ],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-53b69ef92c836777"
+      ],
+      "entityNames": [
+        "Replit"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-46605da9bad02a41",
+          "subject": "Replit",
+          "object": "$400M funding round",
+          "quote": "Latest Round: $400M (January 2026)"
+        },
+        {
+          "id": "CL-076ca5ae448cb69c",
+          "subject": "Corti",
+          "object": "$80M Series C",
+          "quote": "Corti – $80M Series C, $605M valuation (July 2025)"
+        },
+        {
+          "id": "CL-8026cf7c87a7dd2c",
+          "subject": "Sierra",
+          "object": "$350M Series C",
+          "quote": "Latest Round: $350M Series C (September 2025)"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-43cefbe4eab62f4a",
+          "publisher": "aifundingtracker.com",
+          "url": "https://aifundingtracker.com/top-ai-agent-startups"
+        }
+      ],
+      "sourceUrl": "https://aifundingtracker.com/top-ai-agent-startups",
+      "publisher": "aifundingtracker.com",
+      "sourceExcerpt": "Latest Round: $400M (January 2026)"
+    },
+    {
       "id": "EV-ebe9ed3158df619b",
       "dataDate": "2026-06-15",
       "date": "2026-05-29",
@@ -16461,6 +16965,83 @@
       "sourceExcerpt": "Multiplayer AI startup Dust raises $40M to help enterprises move beyond isolated AI assistants"
     },
     {
+      "id": "EV-3f8f6a578be79988",
+      "dataDate": "2026-05-23",
+      "date": "2026-05-23",
+      "updatedDate": "2026-05-23",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Tribal AI获1000万美元种子轮融资，为企业带来元数据原生代理",
+      "originalTitle": "Tribal AI lands $10M in seed funding to bring metadata-native agents to the enterprise - SiliconANGLE",
+      "subject": "Tribal AI Inc.",
+      "action": "funding",
+      "object": "$10 million in seed funding",
+      "metrics": [
+        "$10 million"
+      ],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-c8a41fd9300cfe54",
+        "EN-ea3bd73e2b506e00",
+        "EN-3ccbd9105a45d8fc"
+      ],
+      "entityNames": [
+        "Tribal AI Inc.",
+        "Meta",
+        "Salesforce"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-c9a25406a70f51bb",
+          "subject": "Tribal AI Inc.",
+          "object": "$10 million in seed funding",
+          "quote": "a new startup called Tribal AI Inc. is trying to solve after raising $10 million in funding today."
+        },
+        {
+          "id": "CL-511f574c1af09eb7",
+          "subject": "Team8",
+          "object": "led seed funding round",
+          "quote": "The seed funding round was led by Team8"
+        },
+        {
+          "id": "CL-31eacd9c859d1156",
+          "subject": "DYDX Capital and unnamed enterprise software founders",
+          "object": "participated in seed funding round",
+          "quote": "and saw participation from DYDX Capital and a group of unnamed enterprise software founders behind multiple exits in the Salesforce ecosystem, who participated as angels."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-83390e2f7aae849d",
+          "publisher": "siliconangle.com",
+          "url": "https://siliconangle.com/2026/05/20/tribal-ai-lands-10m-seed-funding-bring-metadata-native-agents-enterprise"
+        }
+      ],
+      "sourceUrl": "https://siliconangle.com/2026/05/20/tribal-ai-lands-10m-seed-funding-bring-metadata-native-agents-enterprise",
+      "publisher": "siliconangle.com",
+      "sourceExcerpt": "a new startup called Tribal AI Inc. is trying to solve after raising $10 million in funding today."
+    },
+    {
       "id": "EV-4596181c26d7f672",
       "dataDate": "2026-05-23",
       "date": "2026-05-23",
@@ -17172,6 +17753,74 @@
       "sourceUrl": "https://www.prnewswire.com/news-releases/wonderful-raises-150m-series-b-to-accelerate-enterprise-ai-adoption-in-30-markets-302712238.html",
       "publisher": "prnewswire.com",
       "sourceExcerpt": "AMSTERDAM , March 12, 2026 /PRNewswire/ -- Wonderful , the enterprise AI agent platform, today announced it has raised $150 million in a Series B funding round led by global software investor Insight Partners, with participation from existing investors Index Ventures, IVP, Bessemer Venture Partners, and Vine Ventures. The new capital will enable Wonderful to continue investing in its agentic platform and accelerate global expansion, scaling headcount from 350 to approximately 900 by year-end to serve more enterprises with locally embedded deployment teams."
+    },
+    {
+      "id": "EV-f247eff115e840af",
+      "dataDate": "2026-05-22",
+      "date": "2026-05-22",
+      "updatedDate": "2026-05-22",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "partial",
+      "title": "彭博社报道：Anthropic 超 200 亿美元融资最早下周完成",
+      "originalTitle": "Anthropic’s more than $20 billion funding to close as soon as next week, Bloomberg News reports | Reuters",
+      "subject": "Anthropic",
+      "action": "funding",
+      "object": "more than $20 billion funding round",
+      "metrics": [
+        "$20 billion",
+        "$350 billion"
+      ],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-b3b5276f20b71ef6",
+          "subject": "Anthropic",
+          "object": "more than $20 billion funding round",
+          "quote": "AI startup Anthropic is ironing out the final details on a funding round likely to raise more than $20 billion and slated to close as soon as next week"
+        },
+        {
+          "id": "CL-f5f8207d72754388",
+          "subject": "Anthropic",
+          "object": "$350 billion valuation",
+          "quote": "now on track to raise more than double that amount at a $350 billion valuation"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-6ef986f3618bdbe2",
+          "publisher": "today.reuters.com",
+          "url": "http://today.reuters.com/technology/anthropics-more-than-20-billion-funding-close-soon-next-week-bloomberg-news-2026-02-07"
+        }
+      ],
+      "sourceUrl": "http://today.reuters.com/technology/anthropics-more-than-20-billion-funding-close-soon-next-week-bloomberg-news-2026-02-07",
+      "publisher": "today.reuters.com",
+      "sourceExcerpt": "AI startup Anthropic is ironing out the final details on a funding round likely to raise more than $20 billion and slated to close as soon as next week"
     },
     {
       "id": "EV-c8928410f6c145eb",
@@ -31330,6 +31979,65 @@
       "sourceUrl": "https://blogs.nvidia.com/blog/microsoft-build-windows-local-cloud-devices",
       "publisher": "NVIDIA AI Blog",
       "sourceExcerpt": "At Microsoft Build, NVIDIA founder and CEO Jensen Huang joined Microsoft chairman and CEO Satya Nadella’s keynote via livestream from Taipei to discuss the expanded partnership: NVIDIA RTX Spark and DGX Station for Windows , NVIDIA GPU-accelerated Microsoft Fabric, NVIDIA open models on Microsoft Foundry, the NVIDIA OpenShell secure runtime in GitHub Copilot and the next generation of NVIDIA-powered AI factories."
+    },
+    {
+      "id": "EV-39cd1bd5a56f208f",
+      "dataDate": "2026-06-02",
+      "date": "2026-06-02",
+      "updatedDate": "2026-06-02",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "我们正与Henning Larsen - Krea合作",
+      "originalTitle": "We are partnering with Henning Larsen - Krea",
+      "subject": "Krea",
+      "action": "partnership",
+      "object": "Henning Larsen Architects",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-d61752abfdf7c0a1"
+      ],
+      "entityNames": [
+        "Krea"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-cbd5018d8f8d5b55",
+          "subject": "Krea",
+          "object": "Henning Larsen Architects",
+          "quote": "Today, we’re announcing a partnership with Henning Larsen Architects to build better AI creative tools for architecture."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-1a277726d1d4621b",
+          "publisher": "krea.ai",
+          "url": "https://krea.ai/index/we-are-partnering-with-henning-larsen"
+        }
+      ],
+      "sourceUrl": "https://krea.ai/index/we-are-partnering-with-henning-larsen",
+      "publisher": "krea.ai",
+      "sourceExcerpt": "Today, we’re announcing a partnership with Henning Larsen Architects to build better AI creative tools for architecture."
     },
     {
       "id": "EV-45be473baf6dfa4c",
