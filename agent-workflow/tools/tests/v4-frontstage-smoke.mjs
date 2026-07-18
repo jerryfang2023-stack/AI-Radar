@@ -88,6 +88,17 @@ async function main() {
           scrollWidth: document.documentElement.scrollWidth,
           h1: document.querySelector("h1")?.textContent?.trim() || "",
           v4Sidebar: Boolean(document.querySelector(".dc-sidebar")),
+          reportFeatureAlignment: (() => {
+            if (window.innerWidth <= 1000) return null;
+            const cards = [...document.querySelectorAll(".report-feature-card")];
+            if (cards.length !== 2) return null;
+            const cardBottoms = cards.map((card) => card.getBoundingClientRect().bottom);
+            const linkBottoms = cards.map((card) => card.querySelector(".report-link")?.getBoundingClientRect().bottom || 0);
+            return {
+              cardBottomDelta: Math.abs(cardBottoms[0] - cardBottoms[1]),
+              linkBottomDelta: Math.abs(linkBottoms[0] - linkBottoms[1]),
+            };
+          })(),
           overflowers: [...document.querySelectorAll("body *")]
             .map((element) => {
               const rect = element.getBoundingClientRect();
@@ -119,6 +130,7 @@ async function main() {
         const ok = response?.ok() !== false
           && page.url().includes(expected)
           && metrics.scrollWidth <= metrics.width + 1
+          && (!metrics.reportFeatureAlignment || (metrics.reportFeatureAlignment.cardBottomDelta <= 1 && metrics.reportFeatureAlignment.linkBottomDelta <= 1))
           && errors.length === 0;
         results.push({ viewport: viewport.name, route, finalUrl: page.url(), status: response?.status(), ...metrics, errors, ok });
 
