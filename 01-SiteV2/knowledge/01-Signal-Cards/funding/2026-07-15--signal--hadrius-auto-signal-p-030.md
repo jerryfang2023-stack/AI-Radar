@@ -2,7 +2,7 @@
 id: SIG-20260715-A01
 type: signal_card
 signal_type: funding
-title: "Hadrius 获得 2200 万美元 A 轮融资"
+title: "宣布完成2200万美元A轮融资"
 date: 2026-07-15
 status: published
 source_title: "Announcing our $22 Million Series A"
@@ -59,12 +59,12 @@ opportunity_signals:
 signal_owner: "Hadrius"
 
 frontend:
-  displayTitle: "Hadrius 获得 2200 万美元 A 轮融资"
+  displayTitle: "宣布完成2200万美元A轮融资"
   sourceLinks:
     - "https://www.hadrius.com/insights/series-a"
 ---
 
-# Hadrius 获得 2200 万美元 A 轮融资
+# 宣布完成2200万美元A轮融资
 
 ## 新闻事实
 

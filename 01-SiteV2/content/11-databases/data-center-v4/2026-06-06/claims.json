@@ -588,6 +588,28 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-3a7a84428bc5fb3d",
+    "raw_id": "RAW-c69edca299c9008c",
+    "claim_type": "funding",
+    "subject": "Inference.ai",
+    "predicate": "funding",
+    "object": "$4 million",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-f82680f65bb25a33"
+    },
+    "source_span": {
+      "raw_id": "RAW-c69edca299c9008c",
+      "start": 3012,
+      "end": 3107
+    },
+    "source_quote": "The startup recently closed a $4 million round from Cherubic Ventures, Maple VC and Fusion Fund",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-91a7708cf76d7c57",
     "raw_id": "RAW-2de12d7dd2377840",
     "claim_type": "funding",
@@ -1068,6 +1090,50 @@
     "source_quote": "IT之家 6 月 7 日消息，2026 年全国高考今日开考，据 vivo 官方微博，vivo 目前已上线高考通“AI 志愿助手”功能，提供从高考日程到志愿填报一站式全程服务。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-17844e6ec56dc47d",
+    "raw_id": "RAW-e8d4379d0fe9bbb9",
+    "claim_type": "funding",
+    "subject": "Hugging Face",
+    "predicate": "funding",
+    "object": "$235 million Series D",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-b44ea8f253a026ff"
+    },
+    "source_span": {
+      "raw_id": "RAW-e8d4379d0fe9bbb9",
+      "start": 10347,
+      "end": 10536
+    },
+    "source_quote": "Hugging Face closed a $235 million Series D in August 2023, bringing total funding to approximately $400 million and establishing a $4.5 billion valuation according to PitchBook and Sacra .",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-29547199013ca4ca",
+    "raw_id": "RAW-e8d4379d0fe9bbb9",
+    "claim_type": "acquisition",
+    "subject": "Hugging Face",
+    "predicate": "acquisition",
+    "object": "Pollen Robotics",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-b44ea8f253a026ff"
+    },
+    "source_span": {
+      "raw_id": "RAW-e8d4379d0fe9bbb9",
+      "start": 4040,
+      "end": 4144
+    },
+    "source_quote": "In April 2025, Hugging Face acquired Pollen Robotics, signaling expansion beyond software-only AI tools.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {

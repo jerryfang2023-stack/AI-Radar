@@ -1,0 +1,1408 @@
+{
+  "schema_version": "MODEL-ASSIST-V1.0",
+  "generated_at": "2026-07-18T01:41:55.809Z",
+  "data_date": "2026-06-01",
+  "prompt_version": "model-assist-2026-07-18.1",
+  "source_count": 80,
+  "candidates": [
+    {
+      "candidate_id": "MAC-089ba007331db7b3",
+      "task_type": "qa_repair",
+      "asset_id": "QA-50fb49c3faee65fd",
+      "raw_id": "RAW-e404167aaf90aa7c",
+      "source_ref": "SA-871426a3c991d361",
+      "source_hash": "9a8686c3019ac83f",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "requires_review",
+      "proposal": {
+        "action": "recollect_original",
+        "reason": "The QA_REASON states 'event_not_ai_relevant', but the SOURCE_TEXT describes a humanoid robot reference design integrating NVIDIA Jetson Thor and Isaac GR00T software for AI development, which is directly relevant to AI industry factual data."
+      },
+      "evidence": [
+        {
+          "start": 125,
+          "end": 260,
+          "quote": "NVIDIA Isaac GR00T 人形机器人将 宇树 H2 Plus 人形机器人和 Sharpa Wave 触觉五指灵巧手 与 NVIDIA Jetson Thor 驱动的板载计算以及 Isaac GR00T 软件和工作流程（“大脑”）整合到一个单一的集成参考设计中"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:45.955Z"
+    },
+    {
+      "candidate_id": "MAC-17932b5ea4394c96",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-f67676350b89f220",
+      "raw_id": "RAW-6ea360a789f94cc5",
+      "source_ref": "SA-2a9db1604318c4d1",
+      "source_hash": "27819f3e4f679cdb",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "Replit Expands Enterprise Leadership",
+        "rationale": "The candidate name 'Replit Expands Enterprise Leadership' appears to describe an initiative or announcement rather than a distinct organization. The source text discusses Replit's enterprise push, including a partnership with Visa, self-serve enterprise access, and a Solution Partner Program, but does not define 'Replit Expands Enterprise Leadership' as a named entity. The relationship to the known entity 'Replit' cannot be conclusively determined from the provided text alone.",
+        "candidate_name": "Replit Expands Enterprise Leadership"
+      },
+      "evidence": [
+        {
+          "start": 858,
+          "end": 1071,
+          "quote": "The announcements mark a significant step in Replit's further push into the enterprise, building on an existing community of more than 50 million users and a customer base that has users in 85% of the Fortune 500."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "entity_resolution_must_require_review"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:45.683Z"
+    },
+    {
+      "candidate_id": "MAC-2296ccf3a1e3b2a4",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-33470cdd3e477691",
+      "raw_id": "RAW-cc2fbf9ff56ec024",
+      "source_ref": "SA-0a414e66e88cb408",
+      "source_hash": "17abdd126e7370d9",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "missing_claim_proposal"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:38.729Z"
+    },
+    {
+      "candidate_id": "MAC-277c4893d558ce79",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-8941d14fe851d732",
+      "raw_id": "RAW-904097e1849f4eaf",
+      "source_ref": "SA-b74ed4d2a25dc3b4",
+      "source_hash": "032136b4ce90521d",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "decision": "same_entity",
+        "canonical_name": "英伟达 Vera 处理器",
+        "rationale": "SOURCE_TEXT 中明确提及“英伟达 CEO 黄仁勋宣布正式推出 Vera 处理器”及“英伟达 Vera 是一款专为 AI 智能体打造的 CPU”，与候选实体的名称和类型完全匹配。",
+        "candidate_name": "英伟达 Vera 处理器"
+      },
+      "evidence": [
+        {
+          "start": 38,
+          "end": 64,
+          "quote": "英伟达 CEO 黄仁勋宣布正式推出 Vera 处理器"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "entity_resolution_must_require_review"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:43.485Z"
+    },
+    {
+      "candidate_id": "MAC-28e9ae5e5e22dd78",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-31b4809aa52a33cc",
+      "raw_id": "RAW-2cebdd793b944903",
+      "source_ref": "SA-9ce0ff5001a165fe",
+      "source_hash": "abde79e75d6f4b09",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "missing_claim_proposal"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:38.692Z"
+    },
+    {
+      "candidate_id": "MAC-2e7bd7c6524e11d7",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-a0893d44413aca35",
+      "raw_id": "RAW-e81bbabf3dfc87b7",
+      "source_ref": "SA-43cefbe4eab62f4a",
+      "source_hash": "ffcc891136474a1d",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Replit",
+            "object": "$400M funding round",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "funding",
+            "subject": "Corti",
+            "object": "$80M Series C",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "funding",
+            "subject": "Sierra",
+            "object": "$350M Series C",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 5068,
+          "end": 5102,
+          "quote": "Latest Round: $400M (January 2026)"
+        },
+        {
+          "start": 8844,
+          "end": 8894,
+          "quote": "Corti – $80M Series C, $605M valuation (July 2025)"
+        },
+        {
+          "start": 1781,
+          "end": 1826,
+          "quote": "Latest Round: $350M Series C (September 2025)"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:42.908Z"
+    },
+    {
+      "candidate_id": "MAC-33d88c731e714cca",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-9432c280aa71671e",
+      "raw_id": "RAW-589d16513ed85539",
+      "source_ref": "SA-bbb7dd25de7e00b8",
+      "source_hash": "1b45f8258b1fba79",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "commercial",
+            "subject": "MiniMax",
+            "object": "M3 model",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "commercial",
+            "subject": "MiniMax",
+            "object": "M3 API",
+            "evidence_index": 1
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 40,
+          "quote": "MiniMax M3 is officially released today."
+        },
+        {
+          "start": 13364,
+          "end": 13392,
+          "quote": "The M3 API is now available."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "failed",
+          "detail": "unsupported_numeric_fact:3m"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "unsupported_claim_event_type:0, unsupported_claim_event_type:1"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:41.825Z"
+    },
+    {
+      "candidate_id": "MAC-36f740b18401e10e",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-3c567a300232d3bb",
+      "raw_id": "RAW-294ba5f128da702e",
+      "source_ref": "SA-ea8d458f9508545a",
+      "source_hash": "236666e8cd70d595",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "Coupa's M&A Spree Continues",
+        "rationale": "The ENTITY_CANDIDATE name 'Coupa's M&A Spree Continues' appears to be a news article title or headline describing Coupa's acquisition activity, not a distinct organization. The SOURCE_TEXT discusses Coupa (the company) acquiring Tonkean, but does not mention any entity named 'Coupa's M&A Spree Continues'. The relationship between this candidate and the actual organization 'Coupa' cannot be determined from the source.",
+        "candidate_name": "Coupa's M&A Spree Continues"
+      },
+      "evidence": [
+        {
+          "start": 206,
+          "end": 412,
+          "quote": "American software company Coupa is acquiring Israeli startup Tonkean, a developer of AI-based workflow automation and orchestration software, in a deal estimated to be worth hundreds of millions of dollars."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "entity_resolution_must_require_review"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:43.839Z"
+    },
+    {
+      "candidate_id": "MAC-3f9c42b227ca249d",
+      "task_type": "qa_repair",
+      "asset_id": "QA-8067b2b163927cd5",
+      "raw_id": "RAW-10c172422feb8ddc",
+      "source_ref": "SA-832d91e6b18fa5c5",
+      "source_hash": "e5a737989418e6fa",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "requires_review",
+      "proposal": {
+        "action": "recollect_original",
+        "reason": "The QA_REASON states 'event_not_ai_relevant', but the SOURCE_TEXT explicitly states 'data shows a preponderance of early-stage mega-rounds are going to AI startups' and lists multiple AI companies as examples of this funding trend."
+      },
+      "evidence": [
+        {
+          "start": 1861,
+          "end": 1980,
+          "quote": "In a finding that will surprise no one, data shows a preponderance of early-stage mega-rounds are going to AI startups."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:47.286Z"
+    },
+    {
+      "candidate_id": "MAC-4329126a0465903a",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-3f251a07a553df2b",
+      "raw_id": "RAW-ce455f4e390580f9",
+      "source_ref": "SA-bee8e60a01b42453",
+      "source_hash": "f048920816eaaeb6",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "missing_claim_proposal"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:39.239Z"
+    },
+    {
+      "candidate_id": "MAC-452a9711cd5e94fc",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-cd496aee616b7e9b",
+      "raw_id": "RAW-6ea360a789f94cc5",
+      "source_ref": "SA-2a9db1604318c4d1",
+      "source_hash": "27819f3e4f679cdb",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "Visa",
+        "rationale": "The candidate entity 'Visa Investment and' appears to be a malformed extraction from the phrase 'Visa Investment and Partnership' in the title. The source text consistently refers to the investing entity simply as 'Visa', a world leader in digital payments, which is a distinct legal entity from the candidate's partial name.",
+        "candidate_name": "Visa Investment and"
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 40,
+          "quote": "Visa invests in and partners with Replit"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "entity_resolution_must_require_review"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:45.179Z"
+    },
+    {
+      "candidate_id": "MAC-45e7a61ae62d4cf5",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-00ff09b323f7b0aa",
+      "raw_id": "RAW-2aaf971f5cd2044f",
+      "source_ref": "SA-126fe855998bdf0c",
+      "source_hash": "c833e52b27be83f9",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "missing_claim_proposal"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:37.439Z"
+    },
+    {
+      "candidate_id": "MAC-473a1123fc96dec5",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-6341a6ed0084f0db",
+      "raw_id": "RAW-f50ac354e999b977",
+      "source_ref": "SA-d5428dacbf7c81d9",
+      "source_hash": "ff34b7ff669982d0",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "product",
+            "subject": "Nvidia",
+            "object": "RTX Spark",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 70,
+          "end": 226,
+          "quote": "Nvidia is announcing the RTX Spark, the first in a family of chips that will meet or beat the most powerful thin-and-light Windows machines ever, it claims."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "unsupported_claim_event_type:0"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:40.971Z"
+    },
+    {
+      "candidate_id": "MAC-4efc7f58f8861d7a",
+      "task_type": "fde_enrichment",
+      "asset_id": "FDE-352f1b6aaa2066b8",
+      "raw_id": "RAW-6ea360a789f94cc5",
+      "source_ref": "SA-2a9db1604318c4d1",
+      "source_hash": "27819f3e4f679cdb",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "fields": [
+          {
+            "field": "industry",
+            "value": "Digital payments",
+            "evidence_index": 0
+          },
+          {
+            "field": "workflow_before",
+            "value": "Enterprise customers previously needed to engage with sales to purchase Replit",
+            "evidence_index": 1
+          },
+          {
+            "field": "workflow_after",
+            "value": "Any organization can purchase Replit Enterprise directly for contract values up to $200,000, receiving enterprise-grade compliance and controls within minutes",
+            "evidence_index": 2
+          },
+          {
+            "field": "delivery_model",
+            "value": "Self-serve enterprise access",
+            "evidence_index": 3
+          },
+          {
+            "field": "team_composition",
+            "value": "More than 1,000 employees across the organization",
+            "evidence_index": 4
+          },
+          {
+            "field": "reported_need",
+            "value": "Help connecting Replit to existing systems and training teams, along with meeting internal security and compliance standards",
+            "evidence_index": 5
+          },
+          {
+            "field": "systems_integrated",
+            "value": [
+              "Visa Intelligent Commerce",
+              "Okta",
+              "Azure AD",
+              "Google Workspace",
+              "OneLogin"
+            ],
+            "evidence_index": 6
+          },
+          {
+            "field": "governance_controls",
+            "value": [
+              "SOC-2 compliance",
+              "Role-based access control (RBAC) for granular permissions management",
+              "SSO",
+              "Audit logs",
+              "Advanced permissions"
+            ],
+            "evidence_index": 7
+          },
+          {
+            "field": "reported_outcomes",
+            "value": [
+              "More than 1,000 employees across the organization using the platform",
+              "Users in 85% of the Fortune 500"
+            ],
+            "evidence_index": 4
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 223,
+          "end": 263,
+          "quote": "Visa, a world leader in digital payments"
+        },
+        {
+          "start": 4121,
+          "end": 4211,
+          "quote": "Enterprise customers are now able to start out with Replit without talking to a sales rep."
+        },
+        {
+          "start": 4212,
+          "end": 4453,
+          "quote": "Starting this month, any organization can purchase Replit Enterprise directly for contract values up to $200,000. Customers receive enterprise-grade compliance and controls, including SSO, audit logs, and advanced permissions within minutes."
+        },
+        {
+          "start": 723,
+          "end": 857,
+          "quote": "Replit launched self-serve enterprise access, offering enterprise-grade compliance and controls without the need for sales engagement."
+        },
+        {
+          "start": 2033,
+          "end": 2112,
+          "quote": "today the platform is used by more than 1,000 employees across the organization"
+        },
+        {
+          "start": 5628,
+          "end": 5783,
+          "quote": "those companies have asked for help connecting Replit to existing systems and training teams, along with meeting internal security and compliance standards"
+        },
+        {
+          "start": 437,
+          "end": 533,
+          "quote": "the companies are working together to integrate Visa Intelligent Commerce into Replit's platform"
+        },
+        {
+          "start": 4326,
+          "end": 4453,
+          "quote": "Customers receive enterprise-grade compliance and controls, including SSO, audit logs, and advanced permissions within minutes."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "failed",
+          "detail": "unsupported_numeric_fact:2, unsupported_numeric_fact:85%, unsupported_numeric_fact:500"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:49.839Z"
+    },
+    {
+      "candidate_id": "MAC-518511232722aefa",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-13ffa34ce8fbd1db",
+      "raw_id": "RAW-2933cc6aa18a82ae",
+      "source_ref": "SA-1951162200d81e2e",
+      "source_hash": "d9c1e962fbd7f8ef",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "missing_claim_proposal"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:37.573Z"
+    },
+    {
+      "candidate_id": "MAC-6c0d58a38c5c8cb3",
+      "task_type": "qa_repair",
+      "asset_id": "QA-7fbe566ae0536863",
+      "raw_id": "RAW-56a74adde88456b4",
+      "source_ref": "SA-f06194befcba1dde",
+      "source_hash": "86e2724f4d8a1540",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "requires_review",
+      "proposal": {
+        "action": "recollect_original",
+        "reason": "The QA_REASON states 'event_not_ai_relevant', but the SOURCE_TEXT explicitly mentions AI performance metrics and AI-related capabilities of the processor."
+      },
+      "evidence": [
+        {
+          "start": 536,
+          "end": 553,
+          "quote": "AI 性能达到 1petaFLOP"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:45.519Z"
+    },
+    {
+      "candidate_id": "MAC-6e8c5a92c20eb87d",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-3063188cff7efb2d",
+      "raw_id": "RAW-b189d22327cdbf00",
+      "source_ref": "SA-2db7e52381d6b966",
+      "source_hash": "6d06bdb831d2361b",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "missing_claim_proposal"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:38.285Z"
+    },
+    {
+      "candidate_id": "MAC-8828bbfce576c15c",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-1af8d982a54d9351",
+      "raw_id": "RAW-4894cca65a35fe00",
+      "source_ref": "SA-dded5511c04dbfac",
+      "source_hash": "84b48b7f99275213",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "missing_claim_proposal"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:38.178Z"
+    },
+    {
+      "candidate_id": "MAC-9aefa5bcd51ffe20",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-60094bcf5292c490",
+      "raw_id": "RAW-05fb0e6b8c89df37",
+      "source_ref": "SA-4dcdfe948f82b975",
+      "source_hash": "bd194f95c61cfa77",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "decision": "same_entity",
+        "canonical_name": "英伟达",
+        "rationale": "ENTITY_CANDIDATE的canonical_name为“英伟达”，与SOURCE_TEXT中发布Alpamayo 2 Super模型的主体“英伟达”完全一致，属于同一实体。",
+        "candidate_name": "英伟达"
+      },
+      "evidence": [
+        {
+          "start": 339,
+          "end": 408,
+          "quote": "英伟达今日正式推出了 Alpamayo 2 Super，这是一款拥有 320 亿参数、基于推理能力的视觉 - 语言 - 动作（VLA）模型"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "entity_resolution_must_require_review"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:43.282Z"
+    },
+    {
+      "candidate_id": "MAC-9b263aab60692e82",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-3ab8704a676ee60f",
+      "raw_id": "RAW-89c0423496d4b239",
+      "source_ref": "SA-635a626285a6d697",
+      "source_hash": "22aa208378735647",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "missing_claim_proposal"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:38.870Z"
+    },
+    {
+      "candidate_id": "MAC-9c697b9c2449b8ea",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-89d806f93e9ca1ba",
+      "raw_id": "RAW-168aa47321a980e1",
+      "source_ref": "SA-0dfc3711b935b5ba",
+      "source_hash": "03cd7a1c7ddcfabc",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "commercial",
+            "subject": "OpenAI",
+            "object": "部分日本金融机构",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "policy",
+            "subject": "日本政府及各类金融机构",
+            "object": "Claude Mythos 模型",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "policy",
+            "subject": "日本",
+            "object": "政企联合工作组",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 49,
+          "end": 90,
+          "quote": "OpenAI 已向部分日本金融机构开放 GPT-5.5 Cyber 模型的使用权限"
+        },
+        {
+          "start": 426,
+          "end": 460,
+          "quote": "日本政府及各类金融机构后续也将接入 Claude Mythos 模型"
+        },
+        {
+          "start": 489,
+          "end": 539,
+          "quote": "日本于本月成立政企联合工作组，专门研判 Claude Mythos 模型给金融体系带来的网络安全风险"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "unsupported_claim_event_type:0, unsupported_claim_event_type:1, unsupported_claim_event_type:2"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:40.768Z"
+    },
+    {
+      "candidate_id": "MAC-ad5aaa0ea8cb27e8",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-3110777d7a5db404",
+      "raw_id": "RAW-8c5a0fa27152a2e4",
+      "source_ref": "SA-a4512a0a1ea7fc98",
+      "source_hash": "23e006978c41f9fd",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "commercial",
+            "subject": "NVIDIA",
+            "object": "NVIDIA Factory Operations Blueprint (FOX)",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "commercial",
+            "subject": "Pegatron",
+            "object": "factory manager agent",
+            "evidence_index": 1
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 245,
+          "end": 570,
+          "quote": "Today at GTC Taipei at COMPUTEX, NVIDIA announced the NVIDIA Factory Operations Blueprint (FOX) — a reference design for building an autonomous factory manager agent that continuously monitors and reasons across the real-time data and orchestrates a fleet of speciality agents and machines to quickly resolve issues at scale."
+        },
+        {
+          "start": 3584,
+          "end": 3816,
+          "quote": "Pegatron is using the FOX blueprint and NemoClaw to build a factory manager agent that orchestrates specialized agents for material transport, AI inspection, standard operating procedure guidance and machine-to-machine coordination."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "unsupported_claim_event_type:0, unsupported_claim_event_type:1"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:40.552Z"
+    },
+    {
+      "candidate_id": "MAC-b2ad622627cfc7fc",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-10535ca23448d8bb",
+      "raw_id": "RAW-294ba5f128da702e",
+      "source_ref": "SA-ea8d458f9508545a",
+      "source_hash": "236666e8cd70d595",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "decision": "same_entity",
+        "canonical_name": "Tonkean AI",
+        "rationale": "The SOURCE_TEXT refers to 'Tonkean' as an Israeli AI startup being acquired by Coupa, which matches the ENTITY_CANDIDATE 'Tonkean AI'. The text describes it as 'a developer of AI-based workflow automation and orchestration software', confirming it is the same organization.",
+        "candidate_name": "Tonkean AI"
+      },
+      "evidence": [
+        {
+          "start": 206,
+          "end": 412,
+          "quote": "American software company Coupa is acquiring Israeli startup Tonkean, a developer of AI-based workflow automation and orchestration software, in a deal estimated to be worth hundreds of millions of dollars."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "entity_resolution_must_require_review"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:42.824Z"
+    },
+    {
+      "candidate_id": "MAC-c6063b860d13d9da",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-9b726ac1ff371766",
+      "raw_id": "RAW-cebd903b30690052",
+      "source_ref": "SA-4f8b442aa3f38101",
+      "source_hash": "deb0a37e256953d0",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "missing_claim_proposal"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:40.779Z"
+    },
+    {
+      "candidate_id": "MAC-ccf834db3494aaf5",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-6eadeb2904b5ad55",
+      "raw_id": "RAW-959deec38df8d776",
+      "source_ref": "SA-c8615db94762e762",
+      "source_hash": "66f43d568c7662c8",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "missing_claim_proposal"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:39.680Z"
+    },
+    {
+      "candidate_id": "MAC-d1c34ee503f4474e",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-94186db6f63cfbc6",
+      "raw_id": "RAW-2cea1d8246ac680d",
+      "source_ref": "SA-c10a82f9a8a1df71",
+      "source_hash": "ae4fbbe599a44ccd",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Anthropic",
+            "object": "$30 billion Series G at $380 billion post-money valuation",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "funding",
+            "subject": "xAI",
+            "object": "$20 billion Series E",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "funding",
+            "subject": "Lovable",
+            "object": "$400 million in January 2026, reaching unicorn status",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 50,
+          "end": 129,
+          "quote": "Anthropic closed a $30 billion Series G at a $380 billion post-money valuation."
+        },
+        {
+          "start": 130,
+          "end": 178,
+          "quote": "xAI opened the year with a $20 billion Series E."
+        },
+        {
+          "start": 3227,
+          "end": 3364,
+          "quote": "Lovable closed $400 million in January 2026, reaching unicorn status on the back of its browser-native, AI-first development environment."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:41.293Z"
+    },
+    {
+      "candidate_id": "MAC-eed9ef42eada8126",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-42375a8003f17c95",
+      "raw_id": "RAW-2ae5944b97590e48",
+      "source_ref": "SA-471f373438651acc",
+      "source_hash": "2474029b7c0a2ffb",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "让机器人看懂世界",
+        "rationale": "The source text is an article about NVIDIA's Cosmos 3 model. The entity candidate '让机器人看懂世界' appears to be a Chinese phrase meaning 'Let robots understand the world', which is part of the article's title but is not explicitly defined as an organization in the source. No contiguous quote identifies this phrase as an organization entity.",
+        "candidate_name": "让机器人看懂世界"
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "failed",
+          "detail": "unsupported_numeric_fact:3m"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "entity_resolution_must_require_review"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:45.663Z"
+    }
+  ]
+}

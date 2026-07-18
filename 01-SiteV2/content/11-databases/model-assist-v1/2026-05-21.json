@@ -1,0 +1,428 @@
+{
+  "schema_version": "MODEL-ASSIST-V1.0",
+  "generated_at": "2026-07-18T01:41:55.794Z",
+  "data_date": "2026-05-21",
+  "prompt_version": "model-assist-2026-07-18.1",
+  "source_count": 86,
+  "candidates": [
+    {
+      "candidate_id": "MAC-1471088a648c7e21",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-8f0a8a494b20ece7",
+      "raw_id": "RAW-136132226cfaeb82",
+      "source_ref": "SA-e4685feecbde4d2e",
+      "source_hash": "6c9cb39656402d6e",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "missing_claim_proposal"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:05.204Z"
+    },
+    {
+      "candidate_id": "MAC-3908a9a5522bf989",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-ec2c996ed2bacd45",
+      "raw_id": "RAW-c9fe80e0471203a7",
+      "source_ref": "SA-47fdfc41db33efbc",
+      "source_hash": "6913556dea92b9e4",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "missing_claim_proposal"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:06.369Z"
+    },
+    {
+      "candidate_id": "MAC-62d989c187e243a3",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-59252a8a852c6c23",
+      "raw_id": "RAW-ab827b552075db19",
+      "source_ref": "SA-51e0ed0b29d3db3d",
+      "source_hash": "ceed7d3add4af466",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "AI Enterprise Software",
+        "rationale": "The source text describes a company that acquires enterprise software companies, but does not mention 'AI Enterprise Software' or provide any information that would confirm or refute whether this entity is the same as, distinct from, a publisher of, or a component supplier to the candidate entity.",
+        "candidate_name": "AI Enterprise Software"
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 66,
+          "quote": "We specialize in the acquisition of enterprise software companies."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "entity_resolution_must_require_review"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:08.686Z"
+    },
+    {
+      "candidate_id": "MAC-653df4e4dc69473c",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-aeb5aa53da40c6cd",
+      "raw_id": "RAW-78a1488ca0a840ea",
+      "source_ref": "SA-f711621802c228f4",
+      "source_hash": "9fa89895615cc3cc",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "commercial",
+            "subject": "Augment Code",
+            "object": "ISO/IEC 42001 certification",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "commercial",
+            "subject": "GitHub Copilot",
+            "object": "cloud-only SaaS deployment",
+            "evidence_index": 1
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 3528,
+          "end": 3642,
+          "quote": "Augment Code holds ISO/IEC 42001 certification, reportedly the first AI coding assistant to achieve this standard."
+        },
+        {
+          "start": 5704,
+          "end": 5747,
+          "quote": "GitHub Copilot operates as cloud-only SaaS."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "unsupported_claim_event_type:0, unsupported_claim_event_type:1"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:07.223Z"
+    },
+    {
+      "candidate_id": "MAC-6963125d5b8c5072",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-ea428218c7bedd22",
+      "raw_id": "RAW-690b578b0cca98c5",
+      "source_ref": "SA-aac901a555368290",
+      "source_hash": "5ca227132ffe0b90",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "missing_claim_proposal"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:06.329Z"
+    },
+    {
+      "candidate_id": "MAC-6aca3b1d4c02bcd3",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-9204dc2e031765cf",
+      "raw_id": "RAW-ab7f5c6c5a4240d1",
+      "source_ref": "SA-3af257461b183cd7",
+      "source_hash": "8aa1752d53636f26",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "commercial",
+            "subject": "OpenAI",
+            "object": "Frontier platform",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "commercial",
+            "subject": "HP, Intuit, Oracle, State Farm, Thermo Fisher, and Uber",
+            "object": "Frontier platform",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "hardware",
+            "subject": "GPT-5.3 Codex",
+            "object": "Frontier platform",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 881,
+          "end": 1033,
+          "quote": "OpenAI launched Frontier on February 5, 2026 — an enterprise-grade platform designed to help organizations build, deploy, and manage AI agents at scale."
+        },
+        {
+          "start": 1288,
+          "end": 1464,
+          "quote": "The platform launched with six confirmed enterprise customers — HP, Intuit, Oracle, State Farm, Thermo Fisher, and Uber — alongside pilot programs at BBVA, Cisco, and T-Mobile."
+        },
+        {
+          "start": 9553,
+          "end": 9719,
+          "quote": "The underlying models powering Frontier agents are from OpenAI's GPT-5.x family, with GPT-5.3 Codex serving as the primary reasoning engine for complex agentic tasks."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "unsupported_claim_event_type:0, unsupported_claim_event_type:1, unsupported_claim_event_type:2"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:06.975Z"
+    },
+    {
+      "candidate_id": "MAC-8d9f1a9dd7ea8e65",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-c8d740d3eb6604c6",
+      "raw_id": "RAW-78c9735c2e28492e",
+      "source_ref": "SA-c249507713a8a7ad",
+      "source_hash": "65cb2c6731e219d6",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "missing_claim_proposal"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:05.326Z"
+    },
+    {
+      "candidate_id": "MAC-d73eed291ad23ae5",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-568b3c4cfc03f587",
+      "raw_id": "RAW-b57efb1e05c08dc0",
+      "source_ref": "SA-f6fb7ff9c98357e0",
+      "source_hash": "10e29626b0555ca6",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "missing_claim_proposal"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:04.537Z"
+    },
+    {
+      "candidate_id": "MAC-dafa5e63fd8ef0fe",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-4f7afd98c00f0abb",
+      "raw_id": "RAW-efbffa30eabd2565",
+      "source_ref": "SA-35b647e0cecf449a",
+      "source_hash": "45035d5547ffe883",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "missing_claim_proposal"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:04.496Z"
+    }
+  ]
+}

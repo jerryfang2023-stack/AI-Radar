@@ -2,7 +2,7 @@
 id: SIG-20260715-A24
 type: signal_card
 signal_type: funding
-title: "Back-Office Platform Thira 获得 2100 万美元 种子轮融资，用于构建 AI 服务"
+title: "Thira 获 2100 万美元种子轮融资，打造自学习 AI 后台办公平台"
 date: 2026-07-15
 status: published
 source_title: "Thira Raises $21 Million Seed To Build Self-Learning AI Back-Office Platform"
@@ -59,12 +59,12 @@ opportunity_signals:
 signal_owner: "Back-Office Platform Thira"
 
 frontend:
-  displayTitle: "Back-Office Platform Thira 获得 2100 万美元 种子轮融资，用于构建 AI 服务"
+  displayTitle: "Thira 获 2100 万美元种子轮融资，打造自学习 AI 后台办公平台"
   sourceLinks:
     - "https://pulse2.com/thira-raises-21-million-seed-to-build-self-learning-ai-back-office-platform/"
 ---
 
-# Back-Office Platform Thira 获得 2100 万美元 种子轮融资，用于构建 AI 服务
+# Thira 获 2100 万美元种子轮融资，打造自学习 AI 后台办公平台
 
 ## 新闻事实
 

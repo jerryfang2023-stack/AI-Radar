@@ -2,7 +2,7 @@
 schema_version: raw-evidence-v2
 raw_id: R-037
 title: "Thira Raises $21 Million Seed To Build Self-Learning AI Back-Office Platform"
-title_zh: "Back-Office Platform Thira 获得 2100 万美元 种子轮融资，用于构建 AI 服务"
+title_zh: "Thira 获 2100 万美元种子轮融资，打造自学习 AI 后台办公平台"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 original_url: "https://pulse2.com/thira-raises-21-million-seed-to-build-self-learning-ai-back-office-platform/"

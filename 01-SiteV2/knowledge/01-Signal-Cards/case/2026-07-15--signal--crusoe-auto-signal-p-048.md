@@ -2,7 +2,7 @@
 id: SIG-20260715-A09
 type: signal_card
 signal_type: case
-title: "Crusoe 发布 Serverless Fine-Tuning 与 Self-Serve Inference 部署，推动模型进入生产"
+title: "Crusoe 推出无服务器微调与自助推理部署，加速开放模型从实验到生产的开发进程"
 date: 2026-07-15
 status: published
 source_title: "Crusoe Launches Serverless Fine-Tuning and Self-Serve Inference Deployments, Accelerating Open-Model Development From Experiment to Production"
@@ -58,12 +58,12 @@ opportunity_signals:
 signal_owner: "Crusoe"
 
 frontend:
-  displayTitle: "Crusoe 发布 Serverless Fine-Tuning 与 Self-Serve Inference 部署，推动模型进入生产"
+  displayTitle: "Crusoe 推出无服务器微调与自助推理部署，加速开放模型从实验到生产的开发进程"
   sourceLinks:
     - "https://www.crusoe.ai/resources/newsroom/crusoe-launches-serverless-fine-tuning-and-self-serve-inference-deployments"
 ---
 
-# Crusoe 发布 Serverless Fine-Tuning 与 Self-Serve Inference 部署，推动模型进入生产
+# Crusoe 推出无服务器微调与自助推理部署，加速开放模型从实验到生产的开发进程
 
 ## 新闻事实
 

@@ -2,7 +2,7 @@
 schema_version: raw-evidence-v2
 raw_id: R-027
 title: "TYLsemi Raises $43 Million to Launch First Full-Stack Chiplet Platform for Custom AI Silicon - TYLsemi"
-title_zh: "TYLsemi 获得 4300 万美元融资，用于推出全栈 Chiplet 平台与定制 AI 芯片"
+title_zh: "TYLsemi 获 4300 万美元融资，推出首个全栈芯粒平台用于定制 AI 芯片"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 original_url: "https://www.tylsemi.ai/press-releases/tylsemi-raises-43-million-to-launch-first-full-stack-chipletplatform-for-custom-ai-silicon/"

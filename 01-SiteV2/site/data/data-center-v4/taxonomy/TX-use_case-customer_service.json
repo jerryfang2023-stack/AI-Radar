@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-17T21:25:16.366Z",
+    "generatedAt": "2026-07-18T01:48:05.545Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 818,
-    "quarantinedEventCount": 58
+    "eventCount": 823,
+    "quarantinedEventCount": 69
   },
   "node": {
     "id": "TX-use_case-customer_service",
@@ -1033,6 +1033,7 @@
         "EV-48075ca70a5458ec",
         "EV-7b1c734882fa1ea6",
         "EV-b3c7c4bff17063d8",
+        "EV-81bd541510a530f0",
         "EV-2bb63a3015195f9b",
         "EV-d4e44892226be468",
         "EV-921c843ad32c993c",
@@ -1048,6 +1049,7 @@
         "EV-c0d19b8641a7a36c",
         "EV-ee0662b75588987e",
         "EV-e941c32639167c23",
+        "EV-e8d1de5c77f32b9c",
         "EV-6ae3594aadfcd3d8",
         "EV-bc4ac955cd26b969",
         "EV-88f4ee8cd57bdf42",
@@ -1487,6 +1489,7 @@
         "EN-db68703d8d719bd0",
         "EN-272d6a7a0db89710",
         "EN-5ce177312903c604",
+        "EN-373ac021a2c0bb2c",
         "EN-bd2bfbea5911ec7a",
         "EN-af53dbc3e443f7a9",
         "EN-b269456229397ef3",
@@ -1721,8 +1724,8 @@
       "stage": "announced",
       "stageLabel": "已公布",
       "customer": "Talkdesk ends the guesswork in",
-      "vendor": "未披露",
-      "industry": "未披露",
+      "vendor": "Talkdesk",
+      "industry": "Customer Experience Automation",
       "useCase": "customer-facing AI",
       "reportedNeed": "未披露",
       "deliveryComponents": [
@@ -1730,20 +1733,19 @@
         "By functioning as a specialized agent-building agent, the platform automatically ingests an enterprise’s existing raw assets, such as standard operating procedures and policies, and translates them into high-precision logical instructions and structured guardrails. Once new AI Agents are approved by a human operator and deployed, they’re continuously monitored, evaluated, and governed through the CXA Operations Center . This complete framework helps organizations grow their AI workforce without multiplying their operational risk.",
         "PALO ALTO, Calif., June 23, 2026 (GLOBE NEWSWIRE) -- Talkdesk®, Inc. , a leader in Customer Experience Automation (CXA) , today announced Talkdesk Agent Builder, a natural language-driven tool that enables both business users and technical teams to oversee the complete lifecycle of their customer service AI agents . Customer experience (CX) leaders describe the outcome they want to achieve with natural language, and Agent Builder creates, tests, diagnoses, and validates the AI agent before it ever interacts with a customer. The result is a faster path to production, lower deployment risk, and the ability to build a trusted AI workforce in hours instead of weeks."
       ],
-      "outcomes": [],
+      "outcomes": [
+        "faster path to production",
+        "lower deployment risk",
+        "ability to build a trusted AI workforce in hours instead of weeks"
+      ],
       "metrics": [],
       "undisclosedFields": [
-        "vendor",
-        "industry",
         "workflow_before",
         "workflow_after",
-        "delivery_model",
-        "team_composition",
         "reported_need",
         "systems_integrated",
         "data_requirements",
-        "governance_controls",
-        "reported_outcomes"
+        "governance_controls"
       ],
       "tags": [
         {
@@ -1767,15 +1769,18 @@
       "stage": "announced",
       "stageLabel": "已公布",
       "customer": "Parloa",
-      "vendor": "未披露",
-      "industry": "未披露",
+      "vendor": "Parloa",
+      "industry": "enterprise customer service",
       "useCase": "$350M with SAP, Microsoft, OpenAI partnerships",
       "reportedNeed": "未披露",
       "deliveryComponents": [
         "The company has also signed partnerships with Five9, the cloud contact centre provider, and Epic, the healthcare software company, to bring HIPAA-ready AI agents into clinical and patient support workflows. Outsourcing giants TP, Concentrix, and Foundever are deploying Parloa agents within their own operations, a sign that the business process outsourcing industry sees agentic AI as augmentation rather than replacement.",
         "Parloa’s pitch is that it sits at a different layer. Rather than being a contact centre platform that added AI, or an AI model provider that added customer service, Parloa positions itself as the management layer for deploying, testing, and optimising AI agents across whatever infrastructure an enterprise already runs. Its Agent Management Platform handles the full lifecycle from simulation to production, with what the company calls “build once, deploy anywhere” agent composition."
       ],
-      "outcomes": [],
+      "outcomes": [
+        "surpassed $50 million in annual recurring revenue",
+        "150% net revenue retention"
+      ],
       "metrics": [
         "$350 million",
         "$50 million",
@@ -1784,17 +1789,11 @@
         "150%"
       ],
       "undisclosedFields": [
-        "vendor",
-        "industry",
-        "workflow_before",
-        "workflow_after",
         "delivery_model",
         "team_composition",
         "reported_need",
         "systems_integrated",
-        "data_requirements",
-        "governance_controls",
-        "reported_outcomes"
+        "data_requirements"
       ],
       "tags": [
         {
