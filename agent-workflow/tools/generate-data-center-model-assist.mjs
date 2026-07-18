@@ -227,23 +227,30 @@ async function main() {
   const rawDocumentsScanned = dates.reduce((sum, item) => sum + bundle(item, "raw-documents").length, 0);
   let jobs = dates.flatMap(buildJobs).sort((a, b) => jobKey(a).localeCompare(jobKey(b)));
   const scannedJobs = jobs.length;
+  const regatedByDate = new Map();
   if (reuseExisting) {
-    const existingCandidateIds = new Set(dates.flatMap((date) => {
+    const existingCandidates = new Map(dates.flatMap((date) => {
       const store = readJson(path.join(outputRoot, `${date}.json`), candidateStore(date));
-      return (store.candidates || []).map((candidate) => candidate.candidate_id);
+      return (store.candidates || []).map((candidate) => [candidate.candidate_id, candidate]);
     }));
-    jobs = jobs.filter((job) => !existingCandidateIds.has(stableModelAssistId(
-      job.date,
-      job.taskType,
-      job.assetId,
-      sourceTextHash(String(job.raw.body_clean || "")),
-      MODEL_ASSIST_PROMPT_VERSION,
-    )));
+    jobs = jobs.filter((job) => {
+      const body = String(job.raw.body_clean || "");
+      const candidateId = stableModelAssistId(job.date, job.taskType, job.assetId, sourceTextHash(body), MODEL_ASSIST_PROMPT_VERSION);
+      const existing = existingCandidates.get(candidateId);
+      if (!existing) return true;
+      const regated = withGateResult(existing, body);
+      if (JSON.stringify(regated) !== JSON.stringify(existing)) {
+        if (!regatedByDate.has(job.date)) regatedByDate.set(job.date, []);
+        regatedByDate.get(job.date).push(regated);
+      }
+      return false;
+    });
   }
   const reusedJobs = scannedJobs - jobs.length;
+  const regatedExisting = [...regatedByDate.values()].reduce((sum, items) => sum + items.length, 0);
   jobs = jobs.slice(offset, limit ? offset + limit : undefined);
   if (!write) {
-    console.log(JSON.stringify({ ok: true, mode: "dry-run", dates: dates.length, raw_documents_scanned: rawDocumentsScanned, scanned_jobs: scannedJobs, reused_jobs: reusedJobs, selected_jobs: jobs.length, by_task: Object.fromEntries([...requestedTasks].map((task) => [task, jobs.filter((job) => job.taskType === task).length])) }, null, 2));
+    console.log(JSON.stringify({ ok: true, mode: "dry-run", dates: dates.length, raw_documents_scanned: rawDocumentsScanned, scanned_jobs: scannedJobs, reused_jobs: reusedJobs, regated_existing: regatedExisting, selected_jobs: jobs.length, by_task: Object.fromEntries([...requestedTasks].map((task) => [task, jobs.filter((job) => job.taskType === task).length])) }, null, 2));
     return;
   }
   if (jobs.length && !process.env.DEEPSEEK_API_KEY) throw new Error("deepseek_key_missing_for_required_model_task");
@@ -265,7 +272,7 @@ async function main() {
   for (const date of dates) {
     const file = path.join(outputRoot, `${date}.json`);
     const previous = readJson(file, candidateStore(date));
-    const generated = byDate.get(date) || [];
+    const generated = [...(regatedByDate.get(date) || []), ...(byDate.get(date) || [])];
     if (reuseExisting && !generated.length && fs.existsSync(file)) continue;
     const merged = new Map((previous.candidates || []).map((candidate) => [candidate.candidate_id, candidate]));
     for (const candidate of generated) {
@@ -282,6 +289,7 @@ async function main() {
     scanned_jobs: scannedJobs,
     reuse_existing: reuseExisting,
     reused_jobs: reusedJobs,
+    regated_existing: regatedExisting,
     offset,
     selected_jobs: jobs.length,
     completed: results.length - failures.length,

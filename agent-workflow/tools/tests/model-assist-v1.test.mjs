@@ -49,9 +49,10 @@ test("entity resolution can never auto-promote", () => {
     task_type: "entity_resolution",
     proposal: { decision: "same_entity", candidate_name: "Acme", canonical_name: "Acme Inc." },
     evidence: [{ start: 0, end: body.length, quote: body }],
-    status: "requires_review",
+    status: "pending",
   }, body);
   assert.equal(candidate.status, "requires_review");
+  assert.deepEqual(evaluateModelAssistCandidate(candidate, body), []);
 });
 
 test("community translation detection targets English, not Chinese mixed with product names", () => {
