@@ -1,7 +1,7 @@
 ---
 status: current
 scope: version-ledger
-last_updated: 2026-07-17
+last_updated: 2026-07-18
 use_when:
   - task startup
   - page change
@@ -22,13 +22,13 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Version name | WaveSight Entity History |
 | Version layer | Minor |
 | Release date | 2026-07-17 |
-| Last modified at | 2026-07-17T22:45:00+08:00 |
+| Last modified at | 2026-07-18T13:08:53+08:00 |
 | Product version | V4.2 |
 | Data center version | SITE-V4.0-data-center |
 | Main website version | SITE-V4.2.0-entity-history |
 | Business Signals column version | BSIG-V2.2.0-pipeline-stage-ownership |
 | Tag taxonomy version | TAG-V4.0 |
-| First-Line Viewpoints column version | FLV-V1.0.2-supervision-idempotency |
+| First-Line Viewpoints column version | FLV-V1.1.0-history-backfill |
 | Community Intelligence column version | CINT-V1.0.2-publication-waiting-gate |
 | Enterprise AI lens version | FDE-V2.0 |
 | AI Hardware data version | HARDWARE-V1.0 |
@@ -55,7 +55,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 - `v3-data-observation.html`, `follow-builders.html`, `community-intelligence.html`, and `reports.html` are compatibility redirects into V4.
 - Business Signals continues internally as a Raw / Pool / Card / Relationship Graph / Trend Candidate compatibility chain, but it is not a public page.
 - Business Signals is versioned as `BSIG-V2.2.0-pipeline-stage-ownership` in this release and remains an internal compatibility chain. Business `formal_tags` only contains track / function / scenario / customer / evidence; source type, market region, and trend state are structured metadata; `opportunity_signals` remains the only Industry Reports opportunity-map input. Its internal Card projection retains qualified Raw / Pool business signals for compatibility consumers, keeps `business-signals-gate-v3.json` as the compatibility release gate, separates Card/editorial gates from V4 factual publication, judges Card eligibility from original-source evidence rather than discovery channel, and requires Chinese source-title translations during Raw/Card ingestion.
-- First-Line Viewpoints is versioned as `FLV-V1.0.2-supervision-idempotency` in this release. It keeps the morning RSS page-data lane and afternoon local `follow-builders` publish lane independent, requires Obsidian person/date timeline sync idempotency, and separates healthy local data from publication-state warnings.
+- First-Line Viewpoints is versioned as `FLV-V1.1.0-history-backfill` in this release. It materializes accepted committed morning snapshots into a historical dataset, merges current morning, historical morning, and afternoon intake by original URL, and admits only AI-relevant records with approved Chinese translation provenance and opinion tags. The morning RSS and afternoon local `follow-builders` lanes remain independent, and Obsidian person/date timeline sync remains idempotent.
 - Community Intelligence is versioned as `CINT-V1.0.2-publication-waiting-gate` in this release. It keeps logged-in local collection as the only collection route, uses GitHub only to publish already-generated validated files, and treats open PR / queued workflow states after healthy same-date data as Waiting rather than repair Problems.
 - Enterprise AI / FDE is versioned as `EAI-V1.2.0-raw-card-ingestion-boundary`. It is a frontstage interpretation and monitoring lens backed by an independent FDE Lens Pool, not a fourth Card type. English title translation and source-backed fact extraction belong to Raw / Card / FDE Lens Pool asset generation before frontstage rendering; public FDE items still require concrete implementation evidence, detail openability, and source-bounded demand / service / result analysis.
 - Business Signals now defaults to independent source artifact collection before unified Raw / Pool normalization: `aihot`, `keyword`, `gdelt`, and `rss` each preserve source-discovered items, while the unified monitor decides final eligibility and release gates.
@@ -99,6 +99,7 @@ Local V2 archive: `agent-workflow/backups/v2-static-pages-20260604.zip`. It is f
 |---|---|---|---|---|
 | Operations Backend / 运营大后台 | `OPS-V1.2.3-content-factory-cleanout` | Unified backend shell version for `operations-console.html`; released through GitHub Pages after merge | Data Observation governance loop navigation, issue center, task chain, data quality, version governance, independent Skill Store, settings, and backend-facing generated ops data. Topic Center, Content Factory, Publishing Queue, and AIP topic export are retired from the operations backend. | HTML meta `wavesight-ops-console-version`, visible sidebar version, generated `ops-console` data, version ledger |
 | Business Signals compatibility lane | `BSIG-V2.2.0-pipeline-stage-ownership` | Internal compatibility data only; no public V3 page | V3.3.6.3 Card contract, source-first gates, graph/trend analytics, and downstream application adapters | `v3-data-observation-desk.json`, `intelligence-graph-index.json`, Obsidian compatibility outputs |
+| First-Line Viewpoints column | `FLV-V1.1.0-history-backfill` | Published in the V4 Data Center shell through the independent First-Line PR lane and GitHub Pages | Current morning RSS/X data, accepted committed morning snapshots, afternoon follow-builders intake, translation provenance, original-URL dedupe, and opinion timeline idempotency | `first-line-viewpoints-history.json`, `first-line-viewpoints-v4.json`, `data-center.html?view=viewpoints`, Obsidian opinion timelines |
 | Industry Reports / 行业报告 column | `IMAP-V2.1.0-v4-unified-frontstage` | Published in the shared V4 shell. Reports lead the page; opportunity maps read the independent application projection; all report details use the V4 sidebar. | `industry-reports-frontstage.json` + Weekly Business Change Radar content + Monthly Business Structure Report content | `intelligence-map.html`, `monthly-business-structure-2026-06.html`, `weekly-ai-business-change-radar*.html`, report page generator skills, `01-SiteV2/content/08-report/` |
 
 ## Current Enterprise AI / FDE Version
@@ -154,6 +155,7 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Freeze Point | Pages | Date | Updated at | Version | Must Not Return | Gates |
 |---|---|---|---|---|---|---|
+| `FLV-V1.1.0-freeze-history-backfill-20260718` | First-Line Viewpoints feed / people index / person timelines | 2026-07-18 | 2026-07-18T13:08:53+08:00 | FLV-V1.1.0-history-backfill | current-day-only viewpoint feed; historical snapshots bypassing approved Chinese translation provenance, original-source URL, AI-relevance, or opinion-tag gates; translation text determining AI relevance; duplicate original URLs; builders viewpoints entering Business Signals, factual relationships, or trend evidence | history backfill stats + First-Line V4 data gate + current builders gate + focused frontstage regression + GitHub Pages live verification |
 | `SITE-V4.2.0-freeze-entity-history-20260717` | Data Center Entity Index / entity details / taxonomy details / split data service | 2026-07-17 | 2026-07-17T22:45:00+08:00 | SITE-V4.2.0-entity-history / ENTITY-V1.0 / RELATION-V2.0 | unstable page-only product IDs; separate Company/Product sidebar entries; Tag-co-occurrence relationships; candidate endpoints in formal relations; global relationship graph; full compatibility payload as the preferred list fetch; historical records invented to fill source gaps | entity schema + relationship integrity gate + six-month backfill audit + Data Center tests + desktop/mobile smoke + GitHub Pages live verification |
 | `SITE-V4.1.0-freeze-unified-frontstage-20260717` | Data Center / Industry Reports / weekly and monthly details / compatibility redirects | 2026-07-17 | 2026-07-17T10:30:00+08:00 | SITE-V4.1.0-unified-frontstage / IMAP-V2.1.0-v4-unified-frontstage | V3 top navigation, V3 page CSS/JS, public fetches of `v3-data-observation-desk.json`, V3 column content returning at compatibility URLs, report detail pages detached from the V4 sidebar | Data Center tests + Industry Reports projection tests + frontstage regression + desktop/mobile visual smoke + GitHub Pages live verification |
 | `TAG-V2.0.0-freeze-semantic-boundaries-20260711` | Business Signals / Reports Center / First-Line Viewpoints / Community Intelligence | 2026-07-11 | 2026-07-11T18:00:00+08:00 | TAG-V2.0.0-semantic-boundaries | source / region / stage values returning to `formal_tags`; `customer-enterprise` used as a default; generic Agent tags added beside specific tracks; First-Line `formalTags` mixed with Business Signals; opportunity maps derived from tags | tag quality gate + tag audit + site data build + frontstage regression |
@@ -198,6 +200,7 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Version | Updated at | Summary | Current Status |
 |---|---|---|---|
+| FLV-V1.1.0-history-backfill | 2026-07-18T13:08:53+08:00 | Materializes accepted committed morning snapshots, merges current and historical morning records plus afternoon intake by original URL, and keeps only source-backed, AI-relevant viewpoints with approved Chinese translation provenance and opinion tags in the V4 public feed. | current |
 | SITE-V4.2.0 / ENTITY-V1.0 / RELATION-V2.0 | 2026-07-17T22:45:00+08:00 | Adds stable company/product/person profiles, technology/use-case/industry nodes, source-backed typed relationships, cross-day factual timelines, split index/detail payloads, and a six-month accepted-history reprojection with explicit coverage gaps. | current |
 | SITE-V4.1.0 / IMAP-V2.1.0-v4-unified-frontstage | 2026-07-17T10:30:00+08:00 | Makes the V4 Data Center / Application Center shell the only public page system, moves legacy column URLs to redirects, migrates all report details to the V4 sidebar, and isolates Industry Reports behind a dedicated application projection. | upgraded |
 | TAG-V2.0.0-semantic-boundaries | 2026-07-11T18:00:00+08:00 | Rebuilds the taxonomy around five Business Signal semantic groups, moves source / region / trend state to structured metadata, separates First-Line column tags, removes default enterprise and stale lifecycle tags, and adds migration plus contract gates. | current |
