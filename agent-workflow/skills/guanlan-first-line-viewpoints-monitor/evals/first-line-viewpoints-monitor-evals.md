@@ -41,7 +41,7 @@ Run these pass/fail checks when supervising, repairing, or updating the First-Li
     - Fail when the afternoon skill route is judged from morning RSS data only, when a missing 16:30 publish report is ignored, when Obsidian sync counts are missing from the report, or when feed/archive generation success is treated as full publication success without branch / PR / Pages closure.
 
 11. `first_line_failure_router`
-    - Pass when a failure is categorized as `supervision_observability`, `local_rss_cron_missed`, `github_rss_publication`, `data_gate_failure`, `obsidian_sync_failure`, `prewindow_false_alarm`, `afternoon_skill_runner`, `afternoon_count_mismatch`, or `afternoon_publication_failure`.
+    - Pass when a failure is categorized as `supervision_observability`, `local_rss_cron_missed`, `github_rss_publication`, `data_gate_failure`, `history_backfill_failure`, `v4_projection_failure`, `obsidian_sync_failure`, `prewindow_false_alarm`, `afternoon_skill_runner`, `afternoon_count_mismatch`, or `afternoon_publication_failure`.
     - Pass when the repair targets the earliest category and reruns the smallest relevant validation.
     - Fail when RSS collection, Obsidian sync, GitHub publication, and afternoon skill publish are treated as one generic rerun problem.
 
@@ -84,6 +84,26 @@ Run these pass/fail checks when supervising, repairing, or updating the First-Li
     - Pass when a missing `DEEPSEEK_API_KEY` or failed/incomplete translation blocks publication before page-data generation is accepted.
     - Fail when the lane silently falls back to untranslated English or generic public machine translation.
 
+20. `history_snapshot_provenance`
+    - Pass when `first-line-viewpoints-history.json` is reconstructed only from committed `follow-builders-daily.json` snapshots and records source commit/snapshot counts plus each record's original URL and source snapshot.
+    - Fail when search results, local drafts, or the afternoon archive are inserted as historical public records without committed morning evidence.
+
+21. `history_gate_parity`
+    - Pass when every published historical record passes the same complete Chinese translation, approved method/model, matching source hash, AI-relevance, opinion-tag, author, original-date, and original-URL requirements as current morning records.
+    - Fail when a historical record bypasses any current public gate or when pending translations are published to increase volume.
+
+22. `three_input_original_url_merge`
+    - Pass when `first-line-viewpoints-v4.json` merges current morning, committed morning history, and afternoon intake by original URL; the current morning copy overrides history, and afternoon overlap changes coverage metadata without bypassing the morning public gate.
+    - Fail when the same original URL appears twice, a historical copy overrides the current copy, or an afternoon-only item becomes public without passing the morning gate.
+
+23. `history_release_closure`
+    - Pass when the V4 gate confirms `currentMorningPublished + historicalPublished = remarks`, a non-empty historical segment for FLV-V1.1.0, a valid earliest/latest date range, morning and afternoon lane metadata, and consistent overlap counts.
+    - Fail when only `follow-builders-daily.json` passes while the V4 projection is stale, history is absent, or published/current/historical counts disagree.
+
+24. `history_backfill_is_not_routine_collection`
+    - Pass when routine daily supervision reuses the accepted committed history asset and only rebuilds/translates history for an explicit backfill or repair.
+    - Fail when every daily run performs an unnecessary network translation backfill or substitutes history generation for the current morning refresh.
+
 ## Repair Loop
 
-When a check fails, repair the builder data source, build script, gate, or timeline sync path. Do not unblock the lane by weakening translation, source URL, or idempotency requirements.
+When a check fails, repair the current source, historical backfill, V4 projection, gate, or timeline sync path. Do not unblock the lane by weakening translation, source URL, AI relevance, opinion tags, dedupe, or idempotency requirements.
