@@ -63,6 +63,17 @@ function acceptedReviewDecisions(reviewDecisions = {}) {
   return rows.filter((decision) => decision?.review_status === "accepted" && clean(decision.reviewer));
 }
 
+export function mergeEntityReviewDecisionSets(...reviewDecisionSets) {
+  const merged = new Map();
+  for (const reviewDecisions of reviewDecisionSets) {
+    const rows = Array.isArray(reviewDecisions) ? reviewDecisions : reviewDecisions?.decisions || [];
+    for (const decision of rows) {
+      if (decision?.entity_id) merged.set(decision.entity_id, decision);
+    }
+  }
+  return { decisions: [...merged.values()] };
+}
+
 function applyEntityReviewDecisions(entityRows, events, reviewDecisions) {
   const decisions = acceptedReviewDecisions(reviewDecisions);
   if (!decisions.length) {
@@ -115,6 +126,7 @@ function applyEntityReviewDecisions(entityRows, events, reviewDecisions) {
     if (preparedIds.has(decision.entity_id) || ["quarantine", "merge"].includes(decision.action)) continue;
     const entityType = REVIEW_TYPE_TO_ENTITY_TYPE[decision.canonical?.catalog_type];
     if (!entityType || !clean(decision.canonical?.name)) continue;
+    if (entityType === "person_candidate") continue;
     preparedRows.push({
       entity_id: decision.entity_id,
       canonical_name: clean(decision.canonical.name),
@@ -443,7 +455,8 @@ function buildCanonicalRegistry(entityRows, events) {
   return registry;
 }
 
-function mergeViewpointPeople(registry, viewpointData = {}) {
+function mergeViewpointPeople(registry, viewpointData = {}, reviewDecisions = {}) {
+  const decisionById = new Map(acceptedReviewDecisions(reviewDecisions).map((decision) => [decision.entity_id, decision]));
   const personLookup = new Map();
   for (const entity of registry.values()) {
     if (entity.entityType !== "person_candidate") continue;
@@ -465,13 +478,16 @@ function mergeViewpointPeople(registry, viewpointData = {}) {
     const builder = builderByKey.get(personKey) || {};
     const displayName = clean(latest.name || builder.name || latest.handle || builder.handle);
     const id = personLookup.get(key(displayName)) || personId(latest.handle || builder.handle, displayName);
+    const decision = decisionById.get(id);
+    if (decision?.action === "quarantine" || decision?.canonical?.catalog_type === "other") continue;
+    const canonicalName = decision?.canonical?.catalog_type === "person" ? clean(decision.canonical.name) : displayName;
     const existing = registry.get(id) || {
       id,
-      name: displayName,
+      name: canonicalName,
       entityType: "person_candidate",
       typeLabel: ENTITY_TYPE_LABELS.person_candidate,
-      aliases: [],
-      verificationStatus: "verified",
+      aliases: canonicalName && key(canonicalName) !== key(displayName) ? [displayName] : [],
+      verificationStatus: decision?.canonical?.catalog_type === "person" ? "verified" : "candidate",
       datasetScopes: [],
       eventIds: [],
       viewpointIds: [],
@@ -715,7 +731,7 @@ export function buildEntityHistoryService({
 } = {}) {
   const reviewed = applyEntityReviewDecisions(entityRows, events, reviewDecisions);
   const registry = buildCanonicalRegistry(reviewed.entityRows, reviewed.events);
-  mergeViewpointPeople(registry, viewpointData);
+  mergeViewpointPeople(registry, viewpointData, reviewDecisions);
   const taxonomyNodes = buildTaxonomyNodes(reviewed.events, fdeRecords, hardwareRecords);
   const relationships = buildTypedRelationships({ registry, events: reviewed.events, fdeRecords, hardwareRecords, taxonomyNodes, reviewDecisions: reviewed.decisions, entityIdRemap: reviewed.remap });
   const profiles = buildProfiles({ registry, events: reviewed.events, relationships, taxonomyNodes, viewpointData });
