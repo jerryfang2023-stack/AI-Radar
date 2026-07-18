@@ -341,6 +341,23 @@ test("FDE and hardware projections preserve the daily batch date", () => {
   assert.ok(data.hardware.some((item) => item.dataDate === data.meta.currentDate));
 });
 
+test("FDE and hardware default to the current month while commercial events remain daily", () => {
+  const script = fs.readFileSync(path.join(root, "01-SiteV2/site/assets/data-center-v4.js"), "utf8");
+  const data = buildFrontstageData(root);
+  const currentMonth = data.meta.currentDate.slice(0, 7);
+  const fdeToday = data.fde.filter((item) => item.dataDate === data.meta.currentDate).length;
+  const hardwareToday = data.hardware.filter((item) => item.dataDate === data.meta.currentDate).length;
+  const fdeMonth = data.fde.filter((item) => item.dataDate.startsWith(`${currentMonth}-`)).length;
+  const hardwareMonth = data.hardware.filter((item) => item.dataDate.startsWith(`${currentMonth}-`)).length;
+
+  assert.match(script, /targetView === "events" && !\["from", "to"\]/u);
+  assert.match(script, /function monthlyProjectionMode\(targetView = view\)/u);
+  assert.match(script, /item\.dataDate\.startsWith\(`\$\{currentDataMonth\(data\)\}-`\)/u);
+  assert.match(script, /数据月份/u);
+  assert.ok(fdeMonth > fdeToday);
+  assert.ok(hardwareMonth > hardwareToday);
+});
+
 test("public event sources expose original publishers instead of discovery channels", () => {
   const data = buildFrontstageData(root);
 

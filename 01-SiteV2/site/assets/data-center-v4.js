@@ -162,7 +162,15 @@
   }
 
   function eventCurrentBatchMode(targetView = view) {
-    return ["events", "fde", "hardware"].includes(targetView) && !["from", "to"].some((key) => params.get(key));
+    return targetView === "events" && !["from", "to"].some((key) => params.get(key));
+  }
+
+  function monthlyProjectionMode(targetView = view) {
+    return ["fde", "hardware"].includes(targetView) && !["from", "to"].some((key) => params.get(key));
+  }
+
+  function currentDataMonth(data) {
+    return String(data.meta.currentDate || "").slice(0, 7);
   }
 
   function entityIndexItems(data) {
@@ -263,7 +271,7 @@
         && (!tag || normalizeTags(item.tags).some((itemTag) => itemTag.name === tag || itemTag.id === tag))
       ));
     } else if (targetView === "fde") {
-      if (eventCurrentBatchMode(targetView)) items = items.filter((item) => item.dataDate === data.meta.currentDate);
+      if (monthlyProjectionMode(targetView)) items = items.filter((item) => item.dataDate.startsWith(`${currentDataMonth(data)}-`));
       items = items.filter((item) => (
         matchesQuery(item, ["title", "customer", "vendor", "industry", "useCase", "reportedNeed"], query)
         && (!stage || item.stage === stage)
@@ -273,7 +281,7 @@
         && (!to || item.dataDate <= to)
       ));
     } else if (targetView === "hardware") {
-      if (eventCurrentBatchMode(targetView)) items = items.filter((item) => item.dataDate === data.meta.currentDate);
+      if (monthlyProjectionMode(targetView)) items = items.filter((item) => item.dataDate.startsWith(`${currentDataMonth(data)}-`));
       items = items.filter((item) => (
         matchesQuery(item, ["title", "hardwareType", "supplier", "customer", "region"], query)
         && (!type || item.hardwareType === type)
@@ -398,7 +406,9 @@
     const config = viewConfig[targetView];
     const auxiliaryDate = eventCurrentBatchMode(targetView)
       ? `<span class="dc-data-date">数据日期 ${escapeHtml(data.meta.currentDate || "未披露")}</span>`
-      : "";
+      : monthlyProjectionMode(targetView)
+        ? `<span class="dc-data-date">数据月份 ${escapeHtml(currentDataMonth(data) || "未披露")}</span>`
+        : "";
     return `
       <div class="dc-page-head">
         <h1>${escapeHtml(config.title)}</h1>
@@ -445,7 +455,13 @@
   function renderRows(items, targetView, showDate = true) {
     if (!items.length) {
       const query = params.get("q");
-      const message = query ? `未找到“${escapeHtml(query)}”相关数据` : targetView === "events" && eventCurrentBatchMode() ? "当日暂无商业事件" : "未找到符合当前条件的数据";
+      const message = query
+        ? `未找到“${escapeHtml(query)}”相关数据`
+        : targetView === "events" && eventCurrentBatchMode()
+          ? "当日暂无商业事件"
+          : monthlyProjectionMode(targetView)
+            ? `本月暂无${targetView === "fde" ? " FDE 实施" : " AI 硬件"}记录`
+            : "未找到符合当前条件的数据";
       return `<div class="dc-empty">${message}<a href="${escapeHtml(viewLink(targetView))}">返回全部</a></div>`;
     }
     return `<div class="dc-list">${items.map((item) => {
