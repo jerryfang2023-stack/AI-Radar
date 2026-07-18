@@ -22,7 +22,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Version name | WaveSight Entity History |
 | Version layer | Minor |
 | Release date | 2026-07-17 |
-| Last modified at | 2026-07-18T13:08:53+08:00 |
+| Last modified at | 2026-07-18T13:17:22+08:00 |
 | Product version | V4.2 |
 | Data center version | SITE-V4.0-data-center |
 | Main website version | SITE-V4.2.0-entity-history |
@@ -32,7 +32,8 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Community Intelligence column version | CINT-V1.0.2-publication-waiting-gate |
 | Enterprise AI lens version | FDE-V2.0 |
 | AI Hardware data version | HARDWARE-V1.0 |
-| Industry Reports column version | IMAP-V2.1.0-v4-unified-frontstage |
+| Reports Center column version | REPORTS-V1.0.0-periodic-report-center |
+| Opportunity Map column version | OMAP-V1.0.0-independent-column |
 | Data Center Raw contract | RAW-V3.0 |
 | Canonical event contract | EVENT-V1.1 |
 | Entity history contract | ENTITY-V1.0 |
@@ -40,10 +41,12 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Legacy Business Signals contract | V3.3.6.3-business-source-artifact-aggregation |
 | Weekly Report content source | `01-SiteV2/content/08-report/` |
 | Monthly Report content source | `01-SiteV2/content/08-report/monthly/` |
+| Weekly report page-generator Skill | guanlan-weekly-report-page-generator v1.1.0 |
+| Monthly report page-generator Skill | guanlan-monthly-report-page-generator v1.1.0 |
 | Operations backend version | OPS-V1.2.3-content-factory-cleanout |
-| Skill Store version | v1.6.1 unified V4 report-page generation |
+| Skill Store version | v1.6.2 independent Reports Center generation |
 | Git tag | `v4.2.0-entity-history` |
-| Current entries | Data Center / Industry Reports; V3 column URLs redirect into V4; Dashboard retained as backend |
+| Current entries | Data Center / Industry Reports / Opportunity Map; V3 column URLs redirect into V4; Dashboard retained as backend |
 
 ## Current Product Baseline
 
@@ -54,7 +57,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 - RELATION-V2.0 accepts only verified typed endpoints with an accepted event, Claim references, and SourceArtifact references; no Tag co-occurrence edges are allowed.
 - `v3-data-observation.html`, `follow-builders.html`, `community-intelligence.html`, and `reports.html` are compatibility redirects into V4.
 - Business Signals continues internally as a Raw / Pool / Card / Relationship Graph / Trend Candidate compatibility chain, but it is not a public page.
-- Business Signals is versioned as `BSIG-V2.2.0-pipeline-stage-ownership` in this release and remains an internal compatibility chain. Business `formal_tags` only contains track / function / scenario / customer / evidence; source type, market region, and trend state are structured metadata; `opportunity_signals` remains the only Industry Reports opportunity-map input. Its internal Card projection retains qualified Raw / Pool business signals for compatibility consumers, keeps `business-signals-gate-v3.json` as the compatibility release gate, separates Card/editorial gates from V4 factual publication, judges Card eligibility from original-source evidence rather than discovery channel, and requires Chinese source-title translations during Raw/Card ingestion.
+- Business Signals is versioned as `BSIG-V2.2.0-pipeline-stage-ownership` in this release and remains an internal compatibility chain. Business `formal_tags` only contains track / function / scenario / customer / evidence; source type, market region, and trend state are structured metadata; `opportunity_signals` remains the only Opportunity Map input. Its internal Card projection retains qualified Raw / Pool business signals for compatibility consumers, keeps `business-signals-gate-v3.json` as the compatibility release gate, separates Card/editorial gates from V4 factual publication, judges Card eligibility from original-source evidence rather than discovery channel, and requires Chinese source-title translations during Raw/Card ingestion.
 - First-Line Viewpoints is versioned as `FLV-V1.1.0-history-backfill` in this release. It materializes accepted committed morning snapshots into a historical dataset, merges current morning, historical morning, and afternoon intake by original URL, and admits only AI-relevant records with approved Chinese translation provenance and opinion tags. The morning RSS and afternoon local `follow-builders` lanes remain independent, and Obsidian person/date timeline sync remains idempotent.
 - Community Intelligence is versioned as `CINT-V1.0.2-publication-waiting-gate` in this release. It keeps logged-in local collection as the only collection route, uses GitHub only to publish already-generated validated files, and treats open PR / queued workflow states after healthy same-date data as Waiting rather than repair Problems.
 - Enterprise AI / FDE is versioned as `EAI-V1.2.0-raw-card-ingestion-boundary`. It is a frontstage interpretation and monitoring lens backed by an independent FDE Lens Pool, not a fourth Card type. English title translation and source-backed fact extraction belong to Raw / Card / FDE Lens Pool asset generation before frontstage rendering; public FDE items still require concrete implementation evidence, detail openability, and source-bounded demand / service / result analysis.
@@ -68,14 +71,15 @@ This file is the current version baseline. Closeout files prove what happened; t
 - Business Signals blocks social/community posts, repo/catalog pages, marketplace/package/model pages, generic funding lists, funding roundups, generic funding commentary, generic FDE role/service pages, job posts, role explainers, consulting/service landing pages, old evergreen technical posts, and search-query artifacts from formal Card promotion unless the same original source contains a concrete dated product/service, funding, customer deployment, procurement, partnership, or production rollout event.
 - Hermes no longer runs early handoff or morning recovery. The only Hermes problem-monitoring workflow is Daily Problem Watchdog, which writes reports and Hermes inbox items without dispatching recovery or full-chain reruns.
 - Production failures must be repaired from the earliest failed gate or report. If same-date artifacts are sufficient, use targeted repair and publication instead of restarting the lane.
-- Industry Reports reads the dedicated downstream application projection `industry-reports-frontstage.json`; it no longer fetches the public V3 desk JSON. Dashboard remains an independent backend consumer.
-- Industry Reports is versioned as `IMAP-V2.1.0-v4-unified-frontstage`. It leads with Monthly / Weekly reports, renders Entry Point Map and Product Pain Map from source-backed `opportunity_signals`, and uses the shared V4 shell on all detail pages.
+- Opportunity Map reads the dedicated downstream application projection `industry-reports-frontstage.json`; neither application-center page fetches the public V3 desk JSON. Dashboard remains an independent backend consumer.
+- Reports Center is versioned independently as `REPORTS-V1.0.0-periodic-report-center`. It contains Monthly / Weekly reports and archives; `.github/workflows/periodic-reports-pr.yml` invokes DeepSeek for source-ID-cited Markdown only, `assert-periodic-report-content.mjs` gates the content, and `render-periodic-report-pages.mjs` is the sole HTML/navigation/version writer under the monthly and weekly page-generator Skills.
+- Opportunity Map is versioned independently as `OMAP-V1.0.0-independent-column`. It reads `industry-reports-frontstage.json` and renders Entry Point Map and Product Pain Map from source-backed `opportunity_signals` without owning report content or report-page generation.
 - Site output remains unified on GitHub Pages, but each producing lane can independently pass gates, open a PR, merge to `main`, and trigger publication without waiting for other lanes.
 - Internal V3 compatibility data may continue for opportunity-map projection, historical analytics, and Obsidian sync, but no public page may load its V3 CSS, JavaScript, navigation, or desk JSON.
 - The three column monitor skills are current execution entries and must include self-improvement after recurring production failures.
 - Hermes daily supervision is now routed through the unified supervision report and the Hermes -> Codex inbox.
 - Project health automation now has daily, weekly, and monthly read-only report commands for supervision coverage, recurring issue review, Git hygiene, large-file review, runtime checks, and deployment-service residue.
-- Skill Store governance is versioned separately as `v1.6.0`, adding explicit Data Center supervisor, source ingestion, event normalization, integrity, FDE, hardware, and TAG-V4 owners while isolating legacy page and judgment skills as compatibility or downstream applications.
+- Skill Store governance is versioned separately as `v1.6.2`. Monthly and weekly report page generation now share the independent Reports Center version boundary while preserving their separate content sources and layout rules; Opportunity Map remains outside those report-page Skills.
 - Deployment path is GitHub Pages only. Netlify is retired and must not be used for future website deployment.
 
 ## Current Pages
@@ -83,7 +87,8 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Page | File | Current Role |
 |---|---|---|
 | Data Center | `01-SiteV2/site/data-center.html` | Unified V4 entry for Commercial Events, FDE, AI Hardware, Community Intelligence, First-Line Viewpoints, and Entity Index |
-| Industry Reports | `01-SiteV2/site/intelligence-map.html` | V4 sidebar application entry containing Monthly / Weekly reports, source-backed Entry Point Map and Product Pain Map, and click-to-open evidence modals |
+| Industry Reports | `01-SiteV2/site/intelligence-map.html` | V4 sidebar application entry containing latest Monthly / Weekly reports and report archives |
+| Opportunity Map | `01-SiteV2/site/opportunity-map.html` | Independent V4 sidebar application entry containing source-backed Entry Point Map, Product Pain Map, and click-to-open evidence modals |
 | First-Line Viewpoints | `01-SiteV2/site/data-center.html?view=viewpoints` | Independent builders viewpoint feed, people index, and timelines in the V4 shell |
 | Community Intelligence | `01-SiteV2/site/data-center.html?view=community` | Logged-in community cases, AI tool tactics, opportunities, and document links in the V4 shell |
 | Dashboard | `01-SiteV2/site/operations-console.html` | Data Observation operations governance backend |
@@ -100,7 +105,8 @@ Local V2 archive: `agent-workflow/backups/v2-static-pages-20260604.zip`. It is f
 | Operations Backend / 运营大后台 | `OPS-V1.2.3-content-factory-cleanout` | Unified backend shell version for `operations-console.html`; released through GitHub Pages after merge | Data Observation governance loop navigation, issue center, task chain, data quality, version governance, independent Skill Store, settings, and backend-facing generated ops data. Topic Center, Content Factory, Publishing Queue, and AIP topic export are retired from the operations backend. | HTML meta `wavesight-ops-console-version`, visible sidebar version, generated `ops-console` data, version ledger |
 | Business Signals compatibility lane | `BSIG-V2.2.0-pipeline-stage-ownership` | Internal compatibility data only; no public V3 page | V3.3.6.3 Card contract, source-first gates, graph/trend analytics, and downstream application adapters | `v3-data-observation-desk.json`, `intelligence-graph-index.json`, Obsidian compatibility outputs |
 | First-Line Viewpoints column | `FLV-V1.1.0-history-backfill` | Published in the V4 Data Center shell through the independent First-Line PR lane and GitHub Pages | Current morning RSS/X data, accepted committed morning snapshots, afternoon follow-builders intake, translation provenance, original-URL dedupe, and opinion timeline idempotency | `first-line-viewpoints-history.json`, `first-line-viewpoints-v4.json`, `data-center.html?view=viewpoints`, Obsidian opinion timelines |
-| Industry Reports / 行业报告 column | `IMAP-V2.1.0-v4-unified-frontstage` | Published in the shared V4 shell. Reports lead the page; opportunity maps read the independent application projection; all report details use the V4 sidebar. | `industry-reports-frontstage.json` + Weekly Business Change Radar content + Monthly Business Structure Report content | `intelligence-map.html`, `monthly-business-structure-2026-06.html`, `weekly-ai-business-change-radar*.html`, report page generator skills, `01-SiteV2/content/08-report/` |
+| Reports Center / 行业报告 | `REPORTS-V1.0.0-periodic-report-center` | Published as the first Application Center entry. Owns accepted Monthly / Weekly Markdown, deterministic page rendering, archives, and page-generator Skill validation. | `.github/workflows/periodic-reports-pr.yml` + `assert-periodic-report-content.mjs` + `render-periodic-report-pages.mjs` + Monthly/Weekly report content | `intelligence-map.html`, `monthly-business-structure-*.html`, `weekly-ai-business-change-radar*.html`, monthly/weekly report page-generator Skills, `01-SiteV2/content/08-report/` |
+| Opportunity Map / 机会地图 | `OMAP-V1.0.0-independent-column` | Published as the second Application Center entry. Owns the dedicated downstream projection, two source-backed matrices, and evidence modal. | `industry-reports-frontstage.json` + source-backed `opportunity_signals` | `opportunity-map.html`, `build-industry-reports-frontstage.mjs`, opportunity radar updater Skill |
 
 ## Current Enterprise AI / FDE Version
 
@@ -155,6 +161,7 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Freeze Point | Pages | Date | Updated at | Version | Must Not Return | Gates |
 |---|---|---|---|---|---|---|
+| `REPORTS-OMAP-freeze-independent-columns-20260718` | Reports Center / Monthly and Weekly details / Opportunity Map / report generation Skills | 2026-07-18 | 2026-07-18T13:17:22+08:00 | REPORTS-V1.0.0-periodic-report-center / OMAP-V1.0.0-independent-column / Skill Store v1.6.2 | shared `IMAP-V2.1.0` metadata returning; opportunity matrices returning to Reports Center; report cards entering Opportunity Map; DeepSeek editing HTML/navigation; page generation before the content gate; report detail pages emitting the Opportunity Map version | periodic renderer tests + report data tests + Skill validation/sync/registry rebuild + frontstage regression + desktop/mobile smoke + GitHub Pages live verification |
 | `FLV-V1.1.0-freeze-history-backfill-20260718` | First-Line Viewpoints feed / people index / person timelines | 2026-07-18 | 2026-07-18T13:08:53+08:00 | FLV-V1.1.0-history-backfill | current-day-only viewpoint feed; historical snapshots bypassing approved Chinese translation provenance, original-source URL, AI-relevance, or opinion-tag gates; translation text determining AI relevance; duplicate original URLs; builders viewpoints entering Business Signals, factual relationships, or trend evidence | history backfill stats + First-Line V4 data gate + current builders gate + focused frontstage regression + GitHub Pages live verification |
 | `SITE-V4.2.0-freeze-entity-history-20260717` | Data Center Entity Index / entity details / taxonomy details / split data service | 2026-07-17 | 2026-07-17T22:45:00+08:00 | SITE-V4.2.0-entity-history / ENTITY-V1.0 / RELATION-V2.0 | unstable page-only product IDs; separate Company/Product sidebar entries; Tag-co-occurrence relationships; candidate endpoints in formal relations; global relationship graph; full compatibility payload as the preferred list fetch; historical records invented to fill source gaps | entity schema + relationship integrity gate + six-month backfill audit + Data Center tests + desktop/mobile smoke + GitHub Pages live verification |
 | `SITE-V4.1.0-freeze-unified-frontstage-20260717` | Data Center / Industry Reports / weekly and monthly details / compatibility redirects | 2026-07-17 | 2026-07-17T10:30:00+08:00 | SITE-V4.1.0-unified-frontstage / IMAP-V2.1.0-v4-unified-frontstage | V3 top navigation, V3 page CSS/JS, public fetches of `v3-data-observation-desk.json`, V3 column content returning at compatibility URLs, report detail pages detached from the V4 sidebar | Data Center tests + Industry Reports projection tests + frontstage regression + desktop/mobile visual smoke + GitHub Pages live verification |
@@ -200,6 +207,7 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Version | Updated at | Summary | Current Status |
 |---|---|---|---|
+| REPORTS-V1.0.0 / OMAP-V1.0.0 / Skill Store v1.6.2 | 2026-07-18T13:17:22+08:00 | Splits Reports Center and Opportunity Map into independently versioned Application Center columns. The report release owns gated Markdown-to-page generation through the monthly/weekly page-generator Skills; the map release owns the dedicated source-backed projection and two evidence-backed matrices. | current applications |
 | FLV-V1.1.0-history-backfill | 2026-07-18T13:08:53+08:00 | Materializes accepted committed morning snapshots, merges current and historical morning records plus afternoon intake by original URL, and keeps only source-backed, AI-relevant viewpoints with approved Chinese translation provenance and opinion tags in the V4 public feed. | current |
 | SITE-V4.2.0 / ENTITY-V1.0 / RELATION-V2.0 | 2026-07-17T22:45:00+08:00 | Adds stable company/product/person profiles, technology/use-case/industry nodes, source-backed typed relationships, cross-day factual timelines, split index/detail payloads, and a six-month accepted-history reprojection with explicit coverage gaps. | current |
 | SITE-V4.1.0 / IMAP-V2.1.0-v4-unified-frontstage | 2026-07-17T10:30:00+08:00 | Makes the V4 Data Center / Application Center shell the only public page system, moves legacy column URLs to redirects, migrates all report details to the V4 sidebar, and isolates Industry Reports behind a dedicated application projection. | upgraded |

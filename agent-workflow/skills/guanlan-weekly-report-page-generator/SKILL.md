@@ -3,15 +3,16 @@ name: guanlan-weekly-report-page-generator
 description: Use when creating, updating, or repairing WaveSight AI weekly report frontstage pages from `01-SiteV2/content/08-report/`. Applies to Industry Reports weekly entries, weekly report detail pages, time-window selectors, report archive wiring, Guanlan VI page styling, and converting weekly report Markdown into editorial page modules. Do not use for writing the weekly report judgment itself; use `guanlan-weekly-business-change-radar` first.
 metadata:
   guanlan:
-    version: "1.0.6"
-    lane: "Industry Reports"
+    version: "1.1.0"
+    column_version: "REPORTS-V1.0.0-periodic-report-center"
+    lane: "Reports Center"
     status: "current sub-skill"
     order: 91
-    responsibility: "Generate and maintain weekly report frontstage pages from the Obsidian content source under `01-SiteV2/content/08-report/`."
-    upstream: "weekly report Markdown, Industry Reports page, Guanlan VI rules"
-    downstream: "weekly report detail page, Industry Reports weekly entry, page styles, version metadata"
-    gates: "content-source discipline, user preference memory, Guanlan VI fit, no table-heavy rendering, responsive visual smoke, frontstage regression"
-    recent_learning: "Use the accepted evidence-bounded headline unchanged across the H1, browser title, and Industry Reports card. Do not abbreviate it back into a generic ‘AI/Agent enters...’ summary."
+    responsibility: "Generate and maintain weekly report frontstage pages from accepted content under the independent Reports Center version."
+    upstream: "accepted weekly report Markdown, Reports Center page, Guanlan VI rules"
+    downstream: "weekly report detail page, Reports Center weekly entry, page styles, REPORTS version metadata"
+    gates: "content acceptance, content-source discipline, REPORTS version boundary, user preference memory, Guanlan VI fit, no table-heavy rendering, responsive visual smoke, frontstage regression"
+    recent_learning: "Use the accepted evidence-bounded headline unchanged across the H1, browser title, and Reports Center card; the content gate must pass before the deterministic renderer writes HTML; generated report pages use REPORTS-V1.0.0 while Opportunity Map remains an independent OMAP application."
     mirrored_in_skill_store: true
     memory_required: true
 ---
@@ -20,7 +21,7 @@ metadata:
 
 ## Purpose
 
-Turn accepted weekly report Markdown into a WaveSight frontstage experience. This skill handles page structure, visual modules, Industry Reports wiring, version metadata, and validation. It does not decide the weekly business judgment.
+Turn accepted weekly report Markdown into a WaveSight Reports Center experience. This skill handles page structure, visual modules, report-center wiring, version metadata, and validation. It does not decide the weekly business judgment or own Opportunity Map.
 
 The periodic controller may invoke this skill only after the weekly content acceptance gate passes. Page generation and page regression are the second gate; a failed content gate must leave the frontstage unchanged.
 
@@ -75,9 +76,10 @@ For detailed rules, load:
 
 5. Update version metadata when releasing.
    - Main site version lives in `meta[name="wavesight-version"]` and must match the current public website version in `context/version-ledger.md` (`SITE-V4.2.0-entity-history` for this release).
-   - Industry Reports column version lives in `meta[name="wavesight-column-version"]`.
+   - Reports Center column version lives in `meta[name="wavesight-column-version"]` and must be `REPORTS-V1.0.0-periodic-report-center` for this release.
    - Weekly source path lives in `meta[name="weekly-report-source"]`.
    - Update `context/version-ledger.md` only for accepted release changes.
+   - Never emit `OMAP-V1.0.0-independent-column` from weekly report pages; that version belongs only to Opportunity Map.
 
 6. Validate.
    - Run syntax checks for touched JS if any.
@@ -94,6 +96,7 @@ For detailed rules, load:
 - Do not use table grids as the default rendering for trend heatmaps, opportunity cards, scoring, or watchlists.
 - Do not re-add previously deleted helper copy, return buttons, action-jump buttons, hero deck paragraphs, or static date text without explicit user approval.
 - Do not restore `wavesight-nav.css`, `wavesight-topbar`, or links to the retired V3 column pages.
+- Do not restore the shared `IMAP-V2.1.0` metadata or write the Opportunity Map version into report pages.
 
 ## Output
 

@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <meta name="wavesight-version" content="SITE-V4.2.0-entity-history">
+  <meta name="wavesight-column-version" content="OMAP-V1.0.0-independent-column">
+  <meta name="weekly-report-source" content="01-SiteV2/content/08-report/">
+  <meta name="monthly-report-source" content="01-SiteV2/content/08-report/monthly/">
+  <title>机会地图｜观澜 AI</title>
+  <link rel="icon" href="assets/brand/logo-wavesight-reference-symbol.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/data-center-v4.css?v=20260718-application-center-split">
+  <style>
+    @import url("assets/brand/brand-tokens.css");
+    :root {
+      --paper: var(--gl-bg-page, #fffdf8);
+      --ink: var(--gl-ink, #071827);
+      --blue: var(--gl-blue, #0d355c);
+      --gold: #b99551;
+      --green: #416f58;
+      --red: #9a625c;
+      --ochre: #9b7a3f;
+      --muted: rgba(7, 24, 39, .62);
+      --faint: rgba(7, 24, 39, .4);
+      --line: rgba(86, 69, 45, .16);
+      --soft-line: rgba(86, 69, 45, .09);
+      --surface: rgba(255, 253, 248, .74);
+      --sans: var(--gl-font-sans-cn, "Noto Sans SC", "Microsoft YaHei", sans-serif);
+      --serif: var(--gl-font-serif-cn, "Noto Serif SC", "Songti SC", serif);
+      --mono: var(--gl-font-mono, "IBM Plex Mono", Consolas, monospace);
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background:
+        linear-gradient(180deg, rgba(247, 244, 239, .88), rgba(255, 253, 248, 0) 500px),
+        linear-gradient(90deg, rgba(200, 167, 102, .06), transparent 34%, rgba(13, 53, 92, .035)),
+        var(--paper);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: var(--gl-type-body-size, 16px);
+      line-height: var(--gl-type-body-line, 28px);
+    }
+    .dc-report-main { width: 100%; padding: 0; }
+    a { color: inherit; }
+    button { font: inherit; cursor: pointer; }
+    .shell { width: min(1320px, calc(100% - 48px)); margin: 0 auto; padding: 24px 0 48px; }
+    .kicker {
+      margin: 0 0 8px;
+      color: var(--gold);
+      font-family: var(--mono);
+      font-size: 12px;
+      font-weight: var(--gl-weight-label, 600);
+      letter-spacing: .12em;
+      line-height: 18px;
+      text-transform: uppercase;
+    }
+    h1, h2, h3 { margin: 0; font-family: var(--gl-font-heading-cn, var(--serif)); letter-spacing: var(--gl-letter-heading, 0); }
+    h3 { font-weight: var(--gl-weight-title, 600); }
+    .cell-modal h3 { font-weight: var(--gl-weight-heading, 400); }
+    h1, h2, .map-block-head h3 { font-weight: var(--gl-weight-column-title, var(--gl-weight-title, 600)); }
+    h2 { font-size: var(--gl-type-module-title-size, 28px); line-height: var(--gl-type-module-title-line, 40px); }
+    h3 { font-size: 20px; line-height: 30px; }
+    .report-overview {
+      padding-bottom: 22px;
+      border-bottom: 1px solid var(--soft-line);
+    }
+    .dc-report-page-head { margin-bottom: 10px; }
+    .map-meta { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px 24px; padding: 8px 0 15px; border-bottom: 1px solid var(--soft-line); }
+    .map-updated { margin: 0; color: var(--gold); font-family: var(--mono); font-size: 12px; letter-spacing: .04em; line-height: 20px; }
+    .map-jumps { min-height: 48px; display: flex; align-items: stretch; gap: 30px; border-bottom: 1px solid var(--soft-line); }
+    .map-jumps a { position: relative; padding: 12px 2px 10px; color: var(--muted); font-size: 14px; font-weight: 600; text-decoration: none; }
+    .map-jumps a:first-child { color: var(--ink); }
+    .map-jumps a:first-child::after { position: absolute; right: 0; bottom: -1px; left: 0; height: 2px; background: var(--gold); content: ""; }
+    .map-jumps a:hover { color: var(--blue); }
+    .metrics { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+    .metric, .report-card, .weekly-card, .panel, .cell-modal {
+      border: 1px solid var(--line);
+      background: var(--surface);
+    }
+    .metric { min-height: 82px; padding: 14px 15px; }
+    .metric span, .fine { color: var(--faint); font-family: var(--mono); font-size: 12px; line-height: 18px; }
+    .metric strong { display: block; margin-top: 5px; font-family: var(--mono); font-size: 18px; font-weight: 600; line-height: 22px; }
+    .report-stack { display: grid; gap: 10px; }
+    .report-card { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 18px; align-items: center; min-height: 106px; padding: 14px 20px; border-left: 4px solid var(--gold); }
+    .report-card h2 { font-size: 24px; font-weight: var(--gl-weight-news-title, var(--gl-weight-heading, 400)); line-height: 34px; white-space: nowrap; }
+    .report-card p { margin: 5px 0 0; color: var(--muted); font-size: var(--gl-type-caption-size, 14px); line-height: var(--gl-type-caption-line, 24px); }
+    .link-button { display: inline-flex; align-items: center; justify-content: center; min-height: 38px; padding: 0 14px; background: var(--blue); color: var(--paper); font-size: 13px; font-weight: 600; line-height: 20px; text-decoration: none; white-space: nowrap; }
+    .weekly-strip { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+    .monthly-group > .kicker,
+    .weekly-group > .kicker { margin-bottom: 6px; }
+    .weekly-card { min-height: 112px; padding: 12px 14px; display: flex; flex-direction: column; justify-content: space-between; gap: 10px; text-decoration: none; }
+    .weekly-card b { display: block; margin-top: 5px; font-family: var(--gl-font-heading-cn, var(--serif)); font-size: 18px; font-weight: var(--gl-weight-news-title, var(--gl-weight-heading, 400)); line-height: 28px; }
+    .weekly-card-action { display: inline-flex; align-items: center; align-self: flex-end; min-height: 28px; padding: 0 10px; background: var(--blue); color: var(--paper); font-size: 12px; font-weight: 600; line-height: 28px; }
+    .section { padding: 32px 0; border-bottom: 1px solid var(--soft-line); }
+    .section-head { display: flex; align-items: baseline; justify-content: space-between; gap: 24px; margin-bottom: 18px; }
+    .section-head p { max-width: 620px; margin: 0; color: var(--muted); line-height: 1.75; }
+    .section-title, .map-block-title { display: flex; align-items: baseline; flex-wrap: wrap; gap: 10px 14px; }
+    .section-title span, .map-block-title span { color: var(--muted); font-size: 14px; line-height: 24px; }
+    .toolbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: 10px; }
+    .legend { display: inline-flex; flex-wrap: wrap; gap: 7px; color: var(--muted); font-family: var(--mono); font-size: 11px; font-weight: 600; }
+    .legend span, .pill { display: inline-flex; align-items: center; min-height: 24px; padding: 0 8px; border: 1px solid var(--line); background: rgba(255, 253, 248, .76); line-height: 18px; white-space: normal; }
+    .status-warming { border-color: rgba(185,149,81,.48) !important; background: rgba(185,149,81,.13) !important; color: var(--ochre) !important; }
+    .status-stable { border-color: rgba(65,111,88,.34) !important; background: rgba(65,111,88,.09) !important; color: var(--green) !important; }
+    .status-noise { border-color: rgba(154,98,92,.32) !important; background: rgba(154,98,92,.09) !important; color: var(--red) !important; }
+    .status-watch { border-style: dashed !important; color: var(--muted) !important; }
+    .map-layout { display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px; align-items: stretch; }
+    .panel { min-width: 0; border: 0; background: transparent; }
+    .map-block { display: grid; gap: 12px; }
+    .map-block + .map-block { margin-top: 22px; padding-top: 22px; border-top: 1px solid var(--soft-line); }
+    .map-block-head { display: flex; align-items: end; justify-content: space-between; gap: 18px; }
+    .map-block-head h3 { font-size: 20px; line-height: 30px; }
+    .matrix-scroll { overflow-x: auto; }
+    .matrix { display: grid; min-width: 820px; border: 1px solid var(--line); background: rgba(255, 253, 248, .62); }
+    .matrix.entry { grid-template-columns: 118px repeat(6, minmax(112px, 1fr)); }
+    .matrix.pain { grid-template-columns: 118px repeat(7, minmax(106px, 1fr)); }
+    .matrix > div, .cell { min-height: 70px; padding: 10px; border-right: 1px solid var(--soft-line); border-bottom: 1px solid var(--soft-line); }
+    .matrix.entry > :nth-child(7n), .matrix.pain > :nth-child(8n) { border-right: 0; }
+    .axis { color: var(--faint); font-size: 12px; font-weight: 600; line-height: 18px; background: rgba(247, 244, 239, .74); }
+    .cell { display: grid; align-content: space-between; gap: 8px; width: 100%; border-top: 0; border-left: 0; background: rgba(255, 253, 248, .58); color: var(--ink); text-align: left; }
+    .cell.has-data { cursor: pointer; background: color-mix(in srgb, var(--cell-color, rgba(185,149,81,.16)) calc(12% + var(--heat, 0) * 22%), rgba(255,253,248,.78)); }
+    .cell.is-active { outline: 2px solid var(--blue); outline-offset: -2px; }
+    .cell strong { display: block; font-family: var(--mono); font-size: 18px; font-weight: 600; line-height: 18px; }
+    .cell em { display: block; color: var(--muted); font-style: normal; font-size: 12px; line-height: 18px; }
+    .cell small { display: inline-flex; width: max-content; max-width: 100%; min-height: 20px; padding: 0 6px; border: 1px solid currentColor; font-size: 11px; font-weight: 600; line-height: 18px; }
+    .cell-modal-backdrop {
+      position: fixed;
+      inset: 0;
+      z-index: 40;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      background: rgba(7, 24, 39, .38);
+    }
+    .cell-modal-backdrop[hidden] { display: none; }
+    .cell-modal {
+      width: min(760px, 100%);
+      max-height: min(78vh, 720px);
+      padding: 20px;
+      overflow: auto;
+      background: linear-gradient(180deg, rgba(255, 253, 248, .98), rgba(247, 244, 239, .96));
+      border-left: 4px solid var(--gold);
+    }
+    .cell-modal p { margin: 10px 0 0; color: var(--muted); font-size: var(--gl-type-caption-size, 14px); line-height: var(--gl-type-caption-line, 24px); }
+    .cell-modal-head { display: flex; align-items: start; justify-content: space-between; gap: 18px; }
+    .modal-close {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 32px;
+      min-height: 32px;
+      border: 1px solid var(--line);
+      background: rgba(247, 244, 239, .82);
+      color: var(--blue);
+      font-size: 18px;
+      line-height: 1;
+    }
+    .item-list { display: grid; gap: 9px; margin-top: 14px; }
+    .evidence { display: block; padding: 10px; border: 1px solid var(--soft-line); background: rgba(255, 253, 248, .78); text-decoration: none; }
+    a.evidence:hover { border-color: rgba(13, 53, 92, .32); background: rgba(255, 253, 248, .96); }
+    .evidence b { display: block; font-size: 14px; font-weight: 600; line-height: 22px; }
+    .evidence span { display: block; margin-top: 4px; color: var(--faint); font-family: var(--mono); font-size: 11px; line-height: 18px; }
+    .top-cells { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; margin-top: 12px; }
+    .top-cell { min-height: 132px; padding: 13px; border: 1px solid var(--line); background: rgba(255, 253, 248, .64); }
+    .top-cell b { display: block; font-family: var(--serif); font-size: 17px; font-weight: 600; line-height: 26px; }
+    .top-cell span { display: block; margin-top: 8px; color: var(--muted); font-size: 12px; line-height: 18px; }
+    @media (max-width: 1120px) {
+      .map-layout { grid-template-columns: 1fr; min-height: auto; }
+      .weekly-strip, .top-cells { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 760px) {
+      .shell { width: min(100% - 28px, 1320px); padding-top: 22px; }
+      body { font-size: 15px; line-height: 26px; }
+      h2 { font-size: 22px; line-height: 32px; }
+      h3, .map-block-head h3 { font-size: 20px; line-height: 30px; }
+      .metrics, .weekly-strip, .top-cells, .report-card { grid-template-columns: 1fr; }
+      .report-card h2 { font-size: 22px; line-height: 32px; white-space: normal; }
+      .report-card p { font-size: 13px; line-height: 22px; }
+      .section-title, .map-block-title { display: grid; gap: 2px; }
+      .link-button { justify-self: start; }
+      .matrix.entry, .matrix.pain { min-width: 760px; }
+    }
+  </style>
+</head>
+<body class="dc-report-page">
+  <header class="dc-header">
+    <a class="dc-brand" href="data-center.html" aria-label="观澜 AI 数据中心">
+      <img src="assets/brand/logo-wavesight-reference-horizontal.svg" alt="观澜 AI Wavesight AI">
+    </a>
+    <button class="dc-nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="dc-sidebar">栏目</button>
+  </header>
+
+  <div class="dc-layout">
+    <aside class="dc-sidebar" id="dc-sidebar" data-sidebar>
+      <nav aria-label="数据中心与应用中心">
+        <section class="dc-nav-group" aria-labelledby="data-center-nav-title">
+          <h2 id="data-center-nav-title">数据中心</h2>
+          <a href="data-center.html?view=events">商业事件</a>
+          <a href="data-center.html?view=fde">FDE 实施</a>
+          <a href="data-center.html?view=hardware">AI 硬件</a>
+          <a href="data-center.html?view=community">社群情报</a>
+          <a href="data-center.html?view=viewpoints">一线观点</a>
+          <a href="data-center.html?view=index">实体索引</a>
+        </section>
+
+        <section class="dc-nav-group dc-nav-apps" aria-labelledby="app-center-nav-title">
+          <h2 id="app-center-nav-title">应用中心</h2>
+          <a href="intelligence-map.html">行业报告</a>
+          <a href="opportunity-map.html" aria-current="page">机会地图</a>
+        </section>
+      </nav>
+    </aside>
+
+    <main class="dc-main dc-report-main" id="main-content" tabindex="-1">
+      <div class="shell">
+    <section class="report-overview" aria-labelledby="page-title">
+      <div class="dc-page-head dc-report-page-head">
+        <h1 id="page-title">机会地图</h1>
+        <span class="dc-page-description">切入点、产品痛点与当前证据状态</span>
+      </div>
+      <div class="map-meta">
+        <p class="map-updated">更新于 <span data-map-updated>读取中</span></p>
+        <div class="legend" aria-label="变化状态">
+          <span class="status-warming">升温</span><span class="status-stable">稳定</span><span class="status-noise">噪音</span><span class="status-watch">待验证</span>
+        </div>
+      </div>
+      <nav class="map-jumps" aria-label="机会地图页内导航"><a href="#entry-map">切入点地图</a><a href="#pain-map">痛点地图</a></nav>
+    </section>
+
+    <section class="section" aria-label="机会地图双图纵览">
+      <div class="map-layout">
+        <div class="panel">
+          <article class="map-block" id="entry-map" aria-labelledby="entry-map-title">
+            <div class="map-block-head">
+              <div class="map-block-title">
+                <h3 id="entry-map-title">切入点地图</h3>
+                <span>买方与任务的交叉索引</span>
+              </div>
+            </div>
+            <div class="matrix-scroll">
+              <div class="matrix entry" data-map-panel="entry" aria-label="切入点地图"></div>
+            </div>
+          </article>
+          <article class="map-block" id="pain-map" aria-labelledby="pain-map-title">
+            <div class="map-block-head">
+              <div class="map-block-title">
+                <h3 id="pain-map-title">痛点地图</h3>
+                <span>约束与产品形态的交叉索引</span>
+              </div>
+            </div>
+            <div class="matrix-scroll">
+              <div class="matrix pain" data-map-panel="pain" aria-label="痛点地图"></div>
+            </div>
+          </article>
+          <div class="top-cells" data-top-cells></div>
+        </div>
+      </div>
+    </section>
+
+      </div>
+    </main>
+  </div>
+
+  <div class="cell-modal-backdrop" data-cell-modal hidden>
+    <div class="cell-modal" role="dialog" aria-modal="true" aria-labelledby="cell-modal-title">
+      <div class="cell-modal-head">
+        <div data-cell-inspector></div>
+        <button class="modal-close" type="button" data-modal-close aria-label="关闭">×</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const reportNavToggle = document.querySelector("[data-nav-toggle]");
+    const reportSidebar = document.querySelector("[data-sidebar]");
+    reportNavToggle?.addEventListener("click", () => {
+      const open = reportSidebar.dataset.open !== "true";
+      reportSidebar.dataset.open = String(open);
+      reportNavToggle.setAttribute("aria-expanded", String(open));
+    });
+    reportSidebar?.addEventListener("click", (event) => {
+      if (event.target.closest("a")) {
+        reportSidebar.dataset.open = "false";
+        reportNavToggle?.setAttribute("aria-expanded", "false");
+      }
+    });
+
+    const state = { entryCells: [], painCells: [] };
+    const entryRows = [
+      { label:"企业 AI 负责人", fields:["buyer_or_user","team_or_function"], values:["enterprise_ai_owner","it_security","it_security_team"] },
+      { label:"研发团队", fields:["buyer_or_user","team_or_function"], values:["engineering_team","engineering"] },
+      { label:"销售团队", fields:["buyer_or_user","team_or_function"], values:["sales_team","sales"] },
+      { label:"客服团队", fields:["buyer_or_user","team_or_function"], values:["customer_support_team","customer_support"] },
+      { label:"运营团队", fields:["buyer_or_user","team_or_function"], values:["operations_team","operations"] },
+      { label:"法务 / 采购", fields:["buyer_or_user","team_or_function"], values:["legal_team","legal_compliance","procurement_team","procurement"] },
+    ];
+    const entryCols = [
+      { label:"内部工具", values:["internal_tool_building"] },
+      { label:"账户研究", values:["sales_lead_research","sales_briefing"] },
+      { label:"工作流自动化", values:["model_deployment","logistics_coordination","data_analysis_query"] },
+      { label:"知识库问答", values:["knowledge_base_qa"] },
+      { label:"审查 / 复核", values:["contract_review","code_review","permission_audit","human_review_required"] },
+      { label:"文档 / 转写", values:["medical_documentation","call_transcription","content_workflow","rfp_response"] },
+    ];
+    const painRows = [
+      { label:"工作流集成", values:["workflow_integration","model_routing_complexity"] },
+      { label:"评测缺口", values:["evaluation_gap","hallucination_risk"] },
+      { label:"数据孤岛", values:["data_silo","context_management"] },
+      { label:"权限治理", values:["permission_boundary","audit_log_required"] },
+      { label:"安全合规", values:["security_compliance"] },
+      { label:"成本 / 稳定性", values:["api_cost_spike","latency_sensitive","deployment_failure"] },
+    ];
+    const painCols = [
+      { label:"API / SDK", values:["api","api_usage_based"] },
+      { label:"开发工具", values:["developer_tool","browser_or_desktop_tool"] },
+      { label:"Agent 工作台", values:["agent_workbench"] },
+      { label:"Copilot", values:["copilot"] },
+      { label:"流程自动化", values:["workflow_automation","vertical_saas"] },
+      { label:"FDE / 托管", values:["fde_service","fde_delivery","managed_service","project_based_service"] },
+      { label:"评测平台", values:["evaluation_platform","model_gateway"] },
+    ];
+    const strongActions = new Set(["customer_deployment","procurement_signal","pricing_change","funding_round","partnership_integration","acquisition"]);
+    const launchActions = new Set(["product_launch","open_source_release","research_benchmark"]);
+    const $ = (s, r=document) => r.querySelector(s);
+    const $$ = (s, r=document) => Array.from(r.querySelectorAll(s));
+    const uniq = (items) => Array.from(new Set(items.filter(Boolean)));
+    const daysBetween = (later, earlier) => Math.floor((new Date(`${later}T00:00:00`) - new Date(`${earlier}T00:00:00`)) / 86400000);
+    function vals(card, field) {
+      const raw = card.opportunitySignals?.labels?.[field] || card.opportunitySignals?.[field] || card.opportunitySignals?.[field.replace(/_([a-z])/g, (_, c) => c.toUpperCase())] || [];
+      return Array.isArray(raw) ? raw.map((x) => x.id || x).filter(Boolean) : [];
+    }
+    function hasAny(card, fields, values) { const wanted = new Set(values); return fields.some((f) => vals(card, f).some((v) => wanted.has(v))); }
+    function hasVal(card, field, values) { return hasAny(card, [field], values); }
+    function windowCards(cards, activeDate, days, offset=0) {
+      return cards.filter((card) => { const diff = daysBetween(activeDate, card.date); return diff >= offset && diff < days + offset; });
+    }
+    function evidenceStats(cards) {
+      const strong = cards.filter((card) => vals(card, "business_action").some((v) => strongActions.has(v))).length;
+      const launch = cards.filter((card) => vals(card, "business_action").some((v) => launchActions.has(v))).length;
+      const subjects = uniq(cards.map((c) => c.subject || c.sourceName || c.title)).slice(0, 4);
+      return { strong, launch, subjects };
+    }
+    function statusFor(current, previous) {
+      if (!current.length) return "";
+      const s = evidenceStats(current);
+      if (s.launch / current.length >= .55 && s.strong / current.length < .28) return "noise";
+      if (current.length >= 3 && (previous.length === 0 || current.length >= previous.length * .55)) return "warming";
+      if (s.strong > 0) return "stable";
+      return "watch";
+    }
+    function statusText(s) { return ({ warming:"升温", stable:"稳定", noise:"噪音", watch:"待验证" })[s] || ""; }
+    function statusClass(s) { return ({ warming:"status-warming", stable:"status-stable", noise:"status-noise", watch:"status-watch" })[s] || ""; }
+    function statusColor(s) { return ({ warming:"rgba(185,149,81,.52)", stable:"rgba(65,111,88,.42)", noise:"rgba(154,98,92,.36)", watch:"rgba(86,69,45,.2)" })[s] || "rgba(86,69,45,.14)"; }
+    function buildCells(cards, activeDate, rows, cols, type) {
+      const cur = windowCards(cards, activeDate, 7), prev = windowCards(cards, activeDate, 23, 7);
+      const cells = rows.flatMap((row) => cols.map((col) => {
+        const match = (card) => type === "entry"
+          ? hasAny(card, row.fields, row.values) && hasVal(card, "specific_task", col.values)
+          : hasVal(card, "pain_or_constraint", row.values) && (hasVal(card, "product_form", col.values) || hasVal(card, "delivery_model", col.values));
+        const current = cur.filter(match), previous = prev.filter(match), status = statusFor(current, previous);
+        return { type, row: row.label, col: col.label, count: current.length, baseline: previous.length, status, cards: current, stats: evidenceStats(current) };
+      }));
+      const max = Math.max(...cells.map((c) => c.count), 1);
+      return cells.map((c) => ({ ...c, heat: c.count ? Math.max(.18, c.count / max) : 0 }));
+    }
+    function renderMatrix(root, rows, cols, cells, type) {
+      root.innerHTML = [`<div class="axis">${type === "entry" ? "买方 / 任务" : "痛点 / 产品形态"}</div>`, ...cols.map((c) => `<div class="axis">${c.label}</div>`), ...rows.flatMap((row) => [`<div class="axis">${row.label}</div>`, ...cols.map((col) => {
+        const cell = cells.find((x) => x.row === row.label && x.col === col.label), st = cell?.status || "";
+        return `<button type="button" class="cell ${cell?.count ? "has-data" : ""} ${statusClass(st)}" data-cell-type="${type}" data-cell-key="${row.label}||${col.label}" style="--heat:${cell?.heat || 0};--cell-color:${statusColor(st)}" ${cell?.count ? "" : "disabled"}><span><strong>${cell?.count || ""}</strong><em>${cell?.count ? `${cell.baseline} 条 30 日基线` : "无可靠证据"}</em></span>${st ? `<small>${statusText(st)}</small>` : ""}</button>`;
+      })])].join("");
+    }
+    function renderInspector(cell) {
+      const root = $("[data-cell-inspector]");
+      if (!cell?.count) { return; }
+      const boundary = cell.stats.strong ? `强证据 ${cell.stats.strong} 条，包含部署、融资、采购、合作或定价信号。` : cell.stats.launch ? "证据偏供给侧，主要来自产品发布、开源或技术材料，需要继续补客户结果。" : "有重复信号，但客户部署、采购或结果数据仍不足。";
+      root.innerHTML = `<p class="kicker">${cell.type === "entry" ? "Entry Point Cell" : "Product Pain Cell"}</p><h3 id="cell-modal-title">${cell.row} × ${cell.col}</h3><p>${cell.count} 条 7 日 Cards，30 日基线 ${cell.baseline} 条；状态为 <b>${statusText(cell.status)}</b>。${boundary}</p><div class="legend" style="margin-top:12px"><span class="${statusClass(cell.status)}">${statusText(cell.status)}</span><span>代表主体：${cell.stats.subjects.join(" / ") || "未提取"}</span></div><div class="item-list">${cell.cards.slice(0,5).map((card) => `<article class="evidence"><b>${card.title}</b><span>${card.id} · ${card.categoryLabel || card.category || "Card"} · ${card.date} · ${card.sourceName || ""}</span></article>`).join("")}</div>`;
+      $("[data-cell-modal]").hidden = false;
+      $("[data-modal-close]").focus();
+    }
+    function renderTop(cells) {
+      $("[data-top-cells]").innerHTML = cells.filter((c) => c.count).sort((a,b) => b.count - a.count).slice(0,4).map((cell) => `<article class="top-cell"><p class="kicker">${statusText(cell.status)}</p><b>${cell.row} × ${cell.col}</b><span>${cell.count} 条 7 日 Cards，代表主体：${cell.stats.subjects.slice(0,3).join(" / ") || "未提取"}</span></article>`).join("");
+    }
+    function bind() {
+      document.addEventListener("click", (event) => {
+        const btn = event.target.closest("[data-cell-key]");
+        if (!btn) return;
+        const cells = btn.dataset.cellType === "entry" ? state.entryCells : state.painCells;
+        const [row, col] = btn.dataset.cellKey.split("||");
+        const cell = cells.find((x) => x.row === row && x.col === col);
+        $$("[data-cell-key]").forEach((x) => x.classList.toggle("is-active", x === btn));
+        renderInspector(cell);
+      });
+      $("[data-modal-close]").addEventListener("click", closeModal);
+      $("[data-cell-modal]").addEventListener("click", (event) => {
+        if (event.target === event.currentTarget) closeModal();
+      });
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && !$("[data-cell-modal]").hidden) closeModal();
+      });
+    }
+    function closeModal() {
+      $("[data-cell-modal]").hidden = true;
+      $$("[data-cell-key]").forEach((x) => x.classList.remove("is-active"));
+    }
+    async function init() {
+      const payload = await fetch("data/industry-reports-frontstage.json", { cache: "no-store" }).then((r) => r.json());
+      const cards = (payload.cards || []).filter((c) => c.category !== "opinion");
+      const activeDate = payload.meta?.activeDate || cards.map((c) => c.date).sort().at(-1);
+      $("[data-map-updated]").textContent = activeDate || "未提供";
+      state.entryCells = buildCells(cards, activeDate, entryRows, entryCols, "entry");
+      state.painCells = buildCells(cards, activeDate, painRows, painCols, "pain");
+      renderMatrix($("[data-map-panel='entry']"), entryRows, entryCols, state.entryCells, "entry");
+      renderMatrix($("[data-map-panel='pain']"), painRows, painCols, state.painCells, "pain");
+      renderTop([...state.entryCells, ...state.painCells]);
+      bind();
+    }
+    init().catch((error) => { console.error(error); document.body.insertAdjacentHTML("beforeend", `<div style="position:fixed;left:16px;right:16px;bottom:16px;padding:16px;background:#fff;border:1px solid #a85a54">真实数据读取失败：${error.message}</div>`); });
+  </script>
+</body>
+</html>

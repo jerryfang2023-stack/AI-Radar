@@ -6,9 +6,9 @@
    - Pass when the page is generated from a file under `01-SiteV2/content/08-report/`.
    - Pass when the operational archive under `agent-workflow/reports/` is not the only source.
 
-2. Intelligence Map placement
-   - Pass when the weekly report subcolumn appears below the relationship network.
-   - Pass when Trend Candidates and History are absent from `intelligence-map.html`.
+2. Reports Center placement
+   - Pass when the latest weekly report and weekly archive appear in the report-first `intelligence-map.html` surface.
+   - Pass when Opportunity Map, relationship network, Trend Candidates, and History are absent from `intelligence-map.html`.
 
 3. Detail page rendering
    - Pass when trend heatmaps, opportunity cards, scoring, impact heatmaps, and watchlists are rendered as editorial modules instead of raw tables.
@@ -21,7 +21,7 @@
 
 5. Version metadata
    - Pass when release pages include main site version metadata.
-   - Pass when Intelligence Map and weekly detail pages include column version and weekly source metadata.
+   - Pass when Reports Center and weekly detail pages include `REPORTS-V1.0.0-periodic-report-center` plus weekly source metadata, and do not emit the Opportunity Map version.
 
 6. User preference memory
    - Pass when user-deleted elements are absent unless the current user request explicitly reintroduces them.
@@ -43,3 +43,4 @@
 8. Fail if the detail hero has a long deck paragraph after the user has asked to remove it.
 9. Fail if the Industry Reports weekly entry shows three boxed KPI count cards instead of compact tags.
 10. Fail if page generation runs before the content acceptance gate.
+11. Fail if a weekly report page restores shared `IMAP-V2.1.0` metadata or emits `OMAP-V1.0.0-independent-column`.

@@ -10,16 +10,21 @@ const root = path.resolve(__dirname, "../../..");
 
 test("industry reports projection isolates the public application from the V3 desk", () => {
   const data = buildIndustryReportsData(root);
-  const html = fs.readFileSync(path.join(root, "01-SiteV2/site/intelligence-map.html"), "utf8");
+  const reportsHtml = fs.readFileSync(path.join(root, "01-SiteV2/site/intelligence-map.html"), "utf8");
+  const opportunityHtml = fs.readFileSync(path.join(root, "01-SiteV2/site/opportunity-map.html"), "utf8");
 
   assert.equal(data.meta.siteVersion, "SITE-V4.2.0-entity-history");
-  assert.equal(data.meta.applicationVersion, "IMAP-V2.1.0-v4-unified-frontstage");
+  assert.equal(data.meta.applicationVersion, "OMAP-V1.0.0-independent-column");
+  assert.equal(data.meta.opportunityMapVersion, "OMAP-V1.0.0-independent-column");
   assert.match(data.meta.activeDate, /^\d{4}-\d{2}-\d{2}$/u);
   assert.ok(data.cards.length > 0);
   assert.ok(data.cards.every((card) => card.id && card.title && card.date));
   assert.ok(data.cards.every((card) => Object.keys(card.opportunitySignals.labels).length === 7));
-  assert.doesNotMatch(html, /data\/v3-data-observation-desk\.json/u);
-  assert.match(html, /data\/industry-reports-frontstage\.json/u);
+  assert.doesNotMatch(reportsHtml, /data\/v3-data-observation-desk\.json|data\/industry-reports-frontstage\.json/u);
+  assert.match(reportsHtml, /REPORTS-V1\.0\.0-periodic-report-center/u);
+  assert.doesNotMatch(opportunityHtml, /data\/v3-data-observation-desk\.json/u);
+  assert.match(opportunityHtml, /data\/industry-reports-frontstage\.json/u);
+  assert.match(opportunityHtml, /OMAP-V1\.0\.0-independent-column/u);
 });
 
 test("legacy public routes are redirects and report detail pages use the V4 shell", () => {
@@ -42,9 +47,11 @@ test("legacy public routes are redirects and report detail pages use the V4 shel
   for (const file of reportPages) {
     const html = fs.readFileSync(path.join(root, "01-SiteV2/site", file), "utf8");
     assert.match(html, /SITE-V4\.2\.0-entity-history/u);
+    assert.match(html, /REPORTS-V1\.0\.0-periodic-report-center/u);
     assert.match(html, /assets\/data-center-v4\.css/u);
     assert.match(html, /class="dc-sidebar"/u);
     assert.match(html, /href="intelligence-map\.html" aria-current="page">行业报告/u);
+    assert.match(html, /href="opportunity-map\.html">机会地图/u);
     assert.doesNotMatch(html, /wavesight-nav\.css|wavesight-topbar|v3-data-observation\.html|follow-builders\.html|community-intelligence\.html/u);
   }
 });

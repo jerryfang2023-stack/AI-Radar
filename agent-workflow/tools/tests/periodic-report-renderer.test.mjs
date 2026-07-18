@@ -1,7 +1,11 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { periodicReportTitleProblems } from "../periodic-report-title.mjs";
-import { escapeHtml, parseFrontmatter, renderBody } from "../render-periodic-report-pages.mjs";
+import { escapeHtml, parseFrontmatter, renderBody, REPORTS_CENTER_VERSION } from "../render-periodic-report-pages.mjs";
+
+test("periodic renderer owns the report-center release version", () => {
+  assert.equal(REPORTS_CENTER_VERSION, "REPORTS-V1.0.0-periodic-report-center");
+});
 
 test("periodic report titles carry tension and a business consequence", () => {
   assert.deepEqual(periodicReportTitleProblems("AI Coding 越便宜，软件需求反而越多：真正稀缺的是交付责任"), []);

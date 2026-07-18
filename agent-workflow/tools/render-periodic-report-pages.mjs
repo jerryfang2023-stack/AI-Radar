@@ -10,6 +10,7 @@ const args = new Map(process.argv.slice(2).map((arg) => {
 }));
 const kind = args.get("kind") || "weekly";
 const date = args.get("date") || "";
+export const REPORTS_CENTER_VERSION = "REPORTS-V1.0.0-periodic-report-center";
 
 export function escapeHtml(value = "") {
   return String(value).replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;");
@@ -57,13 +58,14 @@ export function renderBody(markdown) {
 
 function shell(metadata, content) {
   const typeLabel = kind === "weekly" ? "周报" : "月报";
+  const sourceMetaName = kind === "weekly" ? "weekly-report-source" : "monthly-report-source";
   return `<!doctype html>
 <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="wavesight-version" content="SITE-V4.2.0-entity-history"><meta name="wavesight-column-version" content="IMAP-V2.1.0-v4-unified-frontstage">
-<meta name="periodic-report-source" content="${escapeHtml(metadata.source)}"><title>${escapeHtml(metadata.title)}｜观澜 AI</title>
+<meta name="wavesight-version" content="SITE-V4.2.0-entity-history"><meta name="wavesight-column-version" content="${REPORTS_CENTER_VERSION}">
+<meta name="${sourceMetaName}" content="${escapeHtml(metadata.source)}"><title>${escapeHtml(metadata.title)}｜观澜 AI</title>
 <link rel="icon" href="assets/brand/logo-wavesight-reference-symbol.svg" type="image/svg+xml"><link rel="stylesheet" href="assets/data-center-v4.css"><link rel="stylesheet" href="assets/weekly-report.css"></head>
 <body class="weekly-report-page dc-report-page"><header class="dc-header"><a class="dc-brand" href="data-center.html" aria-label="观澜 AI 数据中心"><img src="assets/brand/logo-wavesight-reference-horizontal.svg" alt="观澜 AI Wavesight AI"></a><button class="dc-nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="dc-sidebar">栏目</button></header>
-<div class="dc-layout"><aside class="dc-sidebar" id="dc-sidebar" data-sidebar><nav aria-label="数据中心与应用中心"><section class="dc-nav-group"><h2>数据中心</h2><a href="data-center.html?view=events">商业事件</a><a href="data-center.html?view=fde">FDE 实施</a><a href="data-center.html?view=hardware">AI 硬件</a><a href="data-center.html?view=community">社群情报</a><a href="data-center.html?view=viewpoints">一线观点</a><a href="data-center.html?view=index">实体索引</a></section><section class="dc-nav-group dc-nav-apps"><h2>应用中心</h2><a href="intelligence-map.html" aria-current="page">行业报告</a></section></nav></aside>
+<div class="dc-layout"><aside class="dc-sidebar" id="dc-sidebar" data-sidebar><nav aria-label="数据中心与应用中心"><section class="dc-nav-group"><h2>数据中心</h2><a href="data-center.html?view=events">商业事件</a><a href="data-center.html?view=fde">FDE 实施</a><a href="data-center.html?view=hardware">AI 硬件</a><a href="data-center.html?view=community">社群情报</a><a href="data-center.html?view=viewpoints">一线观点</a><a href="data-center.html?view=index">实体索引</a></section><section class="dc-nav-group dc-nav-apps"><h2>应用中心</h2><a href="intelligence-map.html" aria-current="page">行业报告</a><a href="opportunity-map.html">机会地图</a></section></nav></aside>
 <main class="weekly-report-shell dc-main dc-report-detail-main" id="main-content"><section class="weekly-report-hero"><div><p class="weekly-report-kicker">${typeLabel} · ${escapeHtml(metadata.window || metadata.month || "")}</p><h1>${escapeHtml(metadata.title)}</h1></div></section><article class="weekly-report-reader" aria-label="${typeLabel}正文">${content}</article></main></div><script src="assets/v4-report-shell.js"></script></body></html>\n`;
 }
 
@@ -75,8 +77,8 @@ function updateIntelligenceMap(metadata, route) {
   const file = path.join(root, "01-SiteV2", "site", "intelligence-map.html");
   let html = fs.readFileSync(file, "utf8");
   if (kind === "weekly") {
-    const card = `<a class="weekly-card" href="${route}"><span><span class="fine">${escapeHtml(metadata.window.replace(" to ", " - "))}</span><b>${escapeHtml(metadata.title)}</b></span><span class="weekly-card-action">打开周报</span></a>`;
-    if (!html.includes(`href="${route}"`)) html = html.replace(/(<div class="weekly-list"[^>]*>)/u, `$1\n            ${card}`);
+    const card = `<a href="${route}"><time>${escapeHtml(metadata.window.replace(" to ", " - "))}</time><strong>${escapeHtml(metadata.title)}</strong><span>阅读</span></a>`;
+    if (!html.includes(`href="${route}"`)) html = html.replace(/(<div class="report-list weekly-list"[^>]*>)/u, `$1\n                ${card}`);
   } else {
     html = html.replace(/href="monthly-business-structure-\d{4}-\d{2}\.html"/u, `href="${route}"`);
   }
