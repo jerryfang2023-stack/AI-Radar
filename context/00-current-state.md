@@ -1,7 +1,7 @@
 ﻿---
 status: current
 scope: project-state
-last_updated: 2026-07-17
+last_updated: 2026-07-18
 use_when:
   - large task startup
   - dispatch planning
@@ -21,7 +21,7 @@ WaveSight AI is now on the `SITE-V4.2.0-entity-history` public website and data-
 - The current backend entry is the operations dashboard.
 - The production core turns external sources into SourceArtifacts, RawDocuments, Claims, Entities, CanonicalEvents, domain projections, and queryable exports.
 - Pool is an operational QA queue. Card, trend, opportunity, and report objects are internal compatibility or downstream application assets, not V4 truth assets.
-- Current column versions: First-Line Viewpoints `FLV-V1.0.2-supervision-idempotency`, Community Intelligence `CINT-V1.0.2-publication-waiting-gate`, Industry Reports `IMAP-V2.1.0-v4-unified-frontstage`.
+- Current column versions: First-Line Viewpoints `FLV-V1.1.0-history-backfill`, Community Intelligence `CINT-V1.0.2-publication-waiting-gate`, Industry Reports `IMAP-V2.1.0-v4-unified-frontstage`.
 - Current data versions: `RAW-V3.0`, `EVENT-V1.0`, `ENTITY-V1.0`, `RELATION-V2.0`, `BACKFILL-V1.0`, `FDE-V2.0`, `HARDWARE-V1.0`, `TAG-V4.0`.
 
 ## Current Entries
