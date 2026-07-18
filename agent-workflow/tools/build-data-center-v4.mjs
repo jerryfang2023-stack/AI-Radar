@@ -311,7 +311,7 @@ function sourceArtifact(raw, file) {
     publisher: cleanString(raw.source_name),
     capture_method: cleanString(raw.extraction_method || raw.fetch_status),
     captured_at: cleanString(raw.collected_at || raw.last_seen_at),
-    snapshot_refs: [raw.markdown_snapshot_path, raw.json_snapshot_path, raw.html_snapshot_path, raw.screenshot_path]
+    snapshot_refs: [raw.markdown_snapshot_path, raw.json_snapshot_path, raw.html_snapshot_path, raw.screenshot_path, rel(file)]
       .map(cleanString).filter(Boolean),
     content_hash: contentHash,
     _legacy_path: rel(file)
