@@ -1,6 +1,6 @@
 {
   "schema_version": "MODEL-ASSIST-V1.0",
-  "generated_at": "2026-07-18T01:41:55.809Z",
+  "generated_at": "2026-07-18T01:56:32.997Z",
   "data_date": "2026-06-01",
   "prompt_version": "model-assist-2026-07-18.1",
   "source_count": 80,
@@ -61,7 +61,7 @@
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
       "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
+      "status": "requires_review",
       "proposal": {
         "decision": "unknown",
         "canonical_name": "Replit Expands Enterprise Leadership",
@@ -93,8 +93,8 @@
         },
         {
           "gate": "task_contract",
-          "status": "failed",
-          "detail": "entity_resolution_must_require_review"
+          "status": "passed",
+          "detail": "task contract passed"
         }
       ],
       "generated_at": "2026-07-18T01:29:45.683Z"
@@ -148,7 +148,7 @@
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
       "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
+      "status": "requires_review",
       "proposal": {
         "decision": "same_entity",
         "canonical_name": "英伟达 Vera 处理器",
@@ -180,8 +180,8 @@
         },
         {
           "gate": "task_contract",
-          "status": "failed",
-          "detail": "entity_resolution_must_require_review"
+          "status": "passed",
+          "detail": "task contract passed"
         }
       ],
       "generated_at": "2026-07-18T01:29:43.485Z"
@@ -372,7 +372,7 @@
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
       "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
+      "status": "requires_review",
       "proposal": {
         "decision": "unknown",
         "canonical_name": "Coupa's M&A Spree Continues",
@@ -404,8 +404,8 @@
         },
         {
           "gate": "task_contract",
-          "status": "failed",
-          "detail": "entity_resolution_must_require_review"
+          "status": "passed",
+          "detail": "task contract passed"
         }
       ],
       "generated_at": "2026-07-18T01:29:43.839Z"
@@ -505,7 +505,7 @@
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
       "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
+      "status": "requires_review",
       "proposal": {
         "decision": "distinct_entity",
         "canonical_name": "Visa",
@@ -537,8 +537,8 @@
         },
         {
           "gate": "task_contract",
-          "status": "failed",
-          "detail": "entity_resolution_must_require_review"
+          "status": "passed",
+          "detail": "task contract passed"
         }
       ],
       "generated_at": "2026-07-18T01:29:45.179Z"
@@ -776,6 +776,54 @@
       "generated_at": "2026-07-18T01:29:49.839Z"
     },
     {
+      "candidate_id": "MAC-501f4080d8045867",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-53b69ef92c836777",
+      "raw_id": "RAW-e81bbabf3dfc87b7",
+      "source_ref": "SA-43cefbe4eab62f4a",
+      "source_hash": "ffcc891136474a1d",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "decision": "same_entity",
+        "canonical_name": "Replit",
+        "rationale": "The SOURCE_TEXT contains a section for 'Replit' under the 'Top 25 AI Agent Startups by Valuation & Funding' list, and the entity candidate 'Replit' matches this name exactly.",
+        "candidate_name": "Replit"
+      },
+      "evidence": [
+        {
+          "start": 4991,
+          "end": 5031,
+          "quote": "6. Replit – $9B Valuation (January 2026)"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "failed",
+          "detail": "unsupported_numeric_fact:25"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T01:56:28.015Z"
+    },
+    {
       "candidate_id": "MAC-518511232722aefa",
       "task_type": "claim_extraction",
       "asset_id": "QA-13ffa34ce8fbd1db",
@@ -948,7 +996,7 @@
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
       "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
+      "status": "requires_review",
       "proposal": {
         "decision": "same_entity",
         "canonical_name": "英伟达",
@@ -980,8 +1028,8 @@
         },
         {
           "gate": "task_contract",
-          "status": "failed",
-          "detail": "entity_resolution_must_require_review"
+          "status": "passed",
+          "detail": "task contract passed"
         }
       ],
       "generated_at": "2026-07-18T01:29:43.282Z"
@@ -1172,7 +1220,7 @@
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
       "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
+      "status": "requires_review",
       "proposal": {
         "decision": "same_entity",
         "canonical_name": "Tonkean AI",
@@ -1204,8 +1252,8 @@
         },
         {
           "gate": "task_contract",
-          "status": "failed",
-          "detail": "entity_resolution_must_require_review"
+          "status": "passed",
+          "detail": "task contract passed"
         }
       ],
       "generated_at": "2026-07-18T01:29:42.824Z"
@@ -1398,8 +1446,8 @@
         },
         {
           "gate": "task_contract",
-          "status": "failed",
-          "detail": "entity_resolution_must_require_review"
+          "status": "passed",
+          "detail": "task contract passed"
         }
       ],
       "generated_at": "2026-07-18T01:29:45.663Z"

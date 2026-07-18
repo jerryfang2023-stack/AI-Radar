@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Tribal AI lands $10M in seed funding to
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Tribal AI获1000万美元种子轮融资，为企业带来元数据原生代理"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Tribal AI lands $10M in seed funding to bring metadata-native agents to the enterprise - SiliconANGLE

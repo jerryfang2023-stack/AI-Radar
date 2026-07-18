@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T01:48:05.545Z",
+    "generatedAt": "2026-07-18T01:57:40.269Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 823,
-    "quarantinedEventCount": 69
+    "eventCount": 832,
+    "quarantinedEventCount": 60
   },
   "entity": {
     "id": "EN-05f6ecf01ac4ebec",
@@ -20,15 +20,19 @@
     "datasetScopes": [
       "canonical"
     ],
-    "eventIds": [],
+    "eventIds": [
+      "EV-9486e14e99499e3b"
+    ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
-    "firstSeen": "",
-    "lastSeen": "",
+    "firstSeen": "2026-06-22",
+    "lastSeen": "2026-06-22",
     "relationIds": [],
     "groupedEventIds": {
-      "fundingAcquisition": [],
+      "fundingAcquisition": [
+        "EV-9486e14e99499e3b"
+      ],
       "deployments": [],
       "partnerships": [],
       "productsServices": [],
@@ -36,7 +40,36 @@
       "organizationPeople": [],
       "other": []
     },
-    "timeline": [],
+    "timeline": [
+      {
+        "id": "EV-9486e14e99499e3b",
+        "dataDate": "2026-06-22",
+        "date": "2026-06-22",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "本周十大融资轮次 - Crunchbase News",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "ai_application",
+            "dimensionName": "产品形态",
+            "name": "AI 应用"
+          },
+          {
+            "dimensionId": "target_user",
+            "id": "developer",
+            "dimensionName": "目标用户",
+            "name": "开发者"
+          }
+        ],
+        "entityIds": [
+          "EN-05f6ecf01ac4ebec"
+        ]
+      }
+    ],
     "viewpoints": []
   },
   "relatedEntities": [],

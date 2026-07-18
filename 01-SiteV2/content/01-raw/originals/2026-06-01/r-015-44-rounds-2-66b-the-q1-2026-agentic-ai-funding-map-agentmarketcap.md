@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"On the second track: a maturing applica
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "44 轮融资，26.6 亿美元：2026 年第一季度 AI 智能体融资地图 | AgentMarketCap"
+title_translation_status: "translated"
+title_translation_method: "deepseek_title_translation"
+title_translation_model: "deepseek-v4-flash"
 ---
 
 # 44 Rounds, $2.66B: The Q1 2026 Agentic AI Funding Map | AgentMarketCap

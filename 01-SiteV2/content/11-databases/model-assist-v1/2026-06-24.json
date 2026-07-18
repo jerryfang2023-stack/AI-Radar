@@ -1,6 +1,6 @@
 {
   "schema_version": "MODEL-ASSIST-V1.0",
-  "generated_at": "2026-07-18T01:41:55.970Z",
+  "generated_at": "2026-07-18T01:56:33.150Z",
   "data_date": "2026-06-24",
   "prompt_version": "model-assist-2026-07-18.1",
   "source_count": 190,
@@ -61,7 +61,7 @@
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
       "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
+      "status": "requires_review",
       "proposal": {
         "decision": "same_entity",
         "canonical_name": "Cursor",
@@ -93,8 +93,8 @@
         },
         {
           "gate": "task_contract",
-          "status": "failed",
-          "detail": "entity_resolution_must_require_review"
+          "status": "passed",
+          "detail": "task contract passed"
         }
       ],
       "generated_at": "2026-07-18T01:34:41.265Z"
@@ -365,7 +365,7 @@
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
       "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
+      "status": "requires_review",
       "proposal": {
         "decision": "same_entity",
         "canonical_name": "JustAI",
@@ -397,8 +397,8 @@
         },
         {
           "gate": "task_contract",
-          "status": "failed",
-          "detail": "entity_resolution_must_require_review"
+          "status": "passed",
+          "detail": "task contract passed"
         }
       ],
       "generated_at": "2026-07-18T01:34:43.589Z"
@@ -465,7 +465,7 @@
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
       "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
+      "status": "requires_review",
       "proposal": {
         "decision": "same_entity",
         "canonical_name": "微信",
@@ -497,8 +497,8 @@
         },
         {
           "gate": "task_contract",
-          "status": "failed",
-          "detail": "entity_resolution_must_require_review"
+          "status": "passed",
+          "detail": "task contract passed"
         }
       ],
       "generated_at": "2026-07-18T01:34:41.827Z"
@@ -513,7 +513,7 @@
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
       "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
+      "status": "requires_review",
       "proposal": {
         "decision": "same_entity",
         "canonical_name": "豆包正式",
@@ -545,8 +545,8 @@
         },
         {
           "gate": "task_contract",
-          "status": "failed",
-          "detail": "entity_resolution_must_require_review"
+          "status": "passed",
+          "detail": "task contract passed"
         }
       ],
       "generated_at": "2026-07-18T01:34:43.448Z"
@@ -600,7 +600,7 @@
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
       "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
+      "status": "requires_review",
       "proposal": {
         "decision": "same_entity",
         "canonical_name": "QQ邮箱",
@@ -632,8 +632,8 @@
         },
         {
           "gate": "task_contract",
-          "status": "failed",
-          "detail": "entity_resolution_must_require_review"
+          "status": "passed",
+          "detail": "task contract passed"
         }
       ],
       "generated_at": "2026-07-18T01:34:39.870Z"
@@ -648,7 +648,7 @@
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
       "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
+      "status": "requires_review",
       "proposal": {
         "decision": "same_entity",
         "canonical_name": "Groq",
@@ -680,8 +680,8 @@
         },
         {
           "gate": "task_contract",
-          "status": "failed",
-          "detail": "entity_resolution_must_require_review"
+          "status": "passed",
+          "detail": "task contract passed"
         }
       ],
       "generated_at": "2026-07-18T01:34:40.431Z"
@@ -835,6 +835,54 @@
       "generated_at": "2026-07-18T01:34:39.286Z"
     },
     {
+      "candidate_id": "MAC-9737d67bcd8b6913",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-aa06a7dba2266341",
+      "raw_id": "RAW-33945c63dd0020a9",
+      "source_ref": "SA-fb309372649c99dc",
+      "source_hash": "776c62cfdeacb511",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "same_entity",
+        "canonical_name": "Modiqo",
+        "rationale": "The ENTITY_CANDIDATE canonical_name 'Modiqo' matches the company name in the SOURCE_TEXT, which describes it as 'an AI infrastructure company' that announced pre-seed funding and launched the Rote platform.",
+        "candidate_name": "Modiqo"
+      },
+      "evidence": [
+        {
+          "start": 215,
+          "end": 300,
+          "quote": "Modiqo , an AI infrastructure company, today announced $3 million in pre-seed funding"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T01:56:32.370Z"
+    },
+    {
       "candidate_id": "MAC-9ccff6e0e2d44f50",
       "task_type": "entity_resolution",
       "asset_id": "EN-85c88a8dfc71d9fc",
@@ -844,7 +892,7 @@
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
       "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
+      "status": "requires_review",
       "proposal": {
         "decision": "same_entity",
         "canonical_name": "Anthropic",
@@ -876,8 +924,8 @@
         },
         {
           "gate": "task_contract",
-          "status": "failed",
-          "detail": "entity_resolution_must_require_review"
+          "status": "passed",
+          "detail": "task contract passed"
         }
       ],
       "generated_at": "2026-07-18T01:34:42.879Z"
@@ -970,7 +1018,7 @@
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
       "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
+      "status": "requires_review",
       "proposal": {
         "decision": "same_entity",
         "canonical_name": "戴尔",
@@ -1002,8 +1050,8 @@
         },
         {
           "gate": "task_contract",
-          "status": "failed",
-          "detail": "entity_resolution_must_require_review"
+          "status": "passed",
+          "detail": "task contract passed"
         }
       ],
       "generated_at": "2026-07-18T01:34:42.460Z"
@@ -1018,7 +1066,7 @@
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
       "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
+      "status": "requires_review",
       "proposal": {
         "decision": "same_entity",
         "canonical_name": "Convey",
@@ -1050,8 +1098,8 @@
         },
         {
           "gate": "task_contract",
-          "status": "failed",
-          "detail": "entity_resolution_must_require_review"
+          "status": "passed",
+          "detail": "task contract passed"
         }
       ],
       "generated_at": "2026-07-18T01:34:42.173Z"

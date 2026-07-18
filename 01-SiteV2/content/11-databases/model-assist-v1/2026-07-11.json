@@ -1,6 +1,6 @@
 {
   "schema_version": "MODEL-ASSIST-V1.0",
-  "generated_at": "2026-07-18T01:41:56.104Z",
+  "generated_at": "2026-07-18T01:56:33.294Z",
   "data_date": "2026-07-11",
   "prompt_version": "model-assist-2026-07-18.1",
   "source_count": 85,
@@ -615,7 +615,7 @@
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
       "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
+      "status": "requires_review",
       "proposal": {
         "decision": "distinct_entity",
         "canonical_name": "苹果",
@@ -647,8 +647,8 @@
         },
         {
           "gate": "task_contract",
-          "status": "failed",
-          "detail": "entity_resolution_must_require_review"
+          "status": "passed",
+          "detail": "task contract passed"
         }
       ],
       "generated_at": "2026-07-18T01:39:45.194Z"
@@ -663,7 +663,7 @@
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
       "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
+      "status": "requires_review",
       "proposal": {
         "decision": "same_entity",
         "canonical_name": "SK Hynix 美国 IPO",
@@ -695,8 +695,8 @@
         },
         {
           "gate": "task_contract",
-          "status": "failed",
-          "detail": "entity_resolution_must_require_review"
+          "status": "passed",
+          "detail": "task contract passed"
         }
       ],
       "generated_at": "2026-07-18T01:39:45.865Z"
@@ -1339,7 +1339,7 @@
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
       "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
+      "status": "requires_review",
       "proposal": {
         "decision": "unknown",
         "canonical_name": "腾讯洽谈",
@@ -1371,8 +1371,8 @@
         },
         {
           "gate": "task_contract",
-          "status": "failed",
-          "detail": "entity_resolution_must_require_review"
+          "status": "passed",
+          "detail": "task contract passed"
         }
       ],
       "generated_at": "2026-07-18T01:39:45.161Z"
@@ -1387,7 +1387,7 @@
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
       "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
+      "status": "requires_review",
       "proposal": {
         "decision": "same_entity",
         "canonical_name": "加速进化",
@@ -1419,8 +1419,8 @@
         },
         {
           "gate": "task_contract",
-          "status": "failed",
-          "detail": "entity_resolution_must_require_review"
+          "status": "passed",
+          "detail": "task contract passed"
         }
       ],
       "generated_at": "2026-07-18T01:39:46.705Z"

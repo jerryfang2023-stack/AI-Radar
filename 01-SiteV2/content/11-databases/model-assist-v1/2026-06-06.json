@@ -1,6 +1,6 @@
 {
   "schema_version": "MODEL-ASSIST-V1.0",
-  "generated_at": "2026-07-18T01:41:55.837Z",
+  "generated_at": "2026-07-18T01:56:33.025Z",
   "data_date": "2026-06-06",
   "prompt_version": "model-assist-2026-07-18.1",
   "source_count": 190,
@@ -401,6 +401,102 @@
       "generated_at": "2026-07-18T01:30:31.333Z"
     },
     {
+      "candidate_id": "MAC-33462a086000b941",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-e3ce9cc5efa9354c",
+      "raw_id": "RAW-e8d4379d0fe9bbb9",
+      "source_ref": "SA-9fa0359e3516c38f",
+      "source_hash": "373c87b41ddb8126",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "same_entity",
+        "canonical_name": "Hugging Face",
+        "rationale": "The ENTITY_CANDIDATE canonical_name 'Hugging Face' matches the organization described in the SOURCE_TEXT, which details the company's platform, services, and operations.",
+        "candidate_name": "Hugging Face"
+      },
+      "evidence": [
+        {
+          "start": 27,
+          "end": 257,
+          "quote": "Hugging Face operates a collaborative AI development platform hosting over 2 million models and 550,000 datasets, serving enterprise customers with infrastructure for building, deploying, and scaling machine learning applications."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T01:56:29.800Z"
+    },
+    {
+      "candidate_id": "MAC-336bd6dfdf78fe0a",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-07c370b082ffd370",
+      "raw_id": "RAW-c69edca299c9008c",
+      "source_ref": "SA-4e079c5ff3c5f2aa",
+      "source_hash": "f5d12aa282c1d32e",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "same_entity",
+        "canonical_name": "Inference.ai",
+        "rationale": "The ENTITY_CANDIDATE canonical_name 'Inference.ai' matches the company name used throughout the SOURCE_TEXT, which describes the same platform co-founded by John Yue and Michael Yu that provides cloud GPU compute matching services.",
+        "candidate_name": "Inference.ai"
+      },
+      "evidence": [
+        {
+          "start": 1117,
+          "end": 1288,
+          "quote": "Yue and Yu are the co-founders of Inference.ai , a platform that provides infrastructure-as-a-service cloud GPU compute through partnerships with third-party data centers."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T01:56:28.017Z"
+    },
+    {
       "candidate_id": "MAC-370e693286fcbd49",
       "task_type": "entity_resolution",
       "asset_id": "EN-26d6a1ef9f111518",
@@ -410,7 +506,7 @@
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
       "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
+      "status": "requires_review",
       "proposal": {
         "decision": "same_entity",
         "canonical_name": "Audio Interaction",
@@ -442,8 +538,8 @@
         },
         {
           "gate": "task_contract",
-          "status": "failed",
-          "detail": "entity_resolution_must_require_review"
+          "status": "passed",
+          "detail": "task contract passed"
         }
       ],
       "generated_at": "2026-07-18T01:30:32.862Z"
@@ -560,7 +656,7 @@
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
       "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
+      "status": "requires_review",
       "proposal": {
         "decision": "same_entity",
         "canonical_name": "Meta",
@@ -592,8 +688,8 @@
         },
         {
           "gate": "task_contract",
-          "status": "failed",
-          "detail": "entity_resolution_must_require_review"
+          "status": "passed",
+          "detail": "task contract passed"
         }
       ],
       "generated_at": "2026-07-18T01:30:34.139Z"
@@ -608,7 +704,7 @@
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
       "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
+      "status": "requires_review",
       "proposal": {
         "decision": "same_entity",
         "canonical_name": "Contrario",
@@ -640,8 +736,8 @@
         },
         {
           "gate": "task_contract",
-          "status": "failed",
-          "detail": "entity_resolution_must_require_review"
+          "status": "passed",
+          "detail": "task contract passed"
         }
       ],
       "generated_at": "2026-07-18T01:30:32.854Z"
@@ -960,6 +1056,52 @@
       "generated_at": "2026-07-18T01:30:31.719Z"
     },
     {
+      "candidate_id": "MAC-7a3e74a7f5ddc1f0",
+      "task_type": "qa_repair",
+      "asset_id": "QA-c09eade1bcc677d0",
+      "raw_id": "RAW-5abcafa1671ab673",
+      "source_ref": "SA-402ff9ab4440dc11",
+      "source_hash": "0f99cfb6ed9d5477",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "requires_review",
+      "proposal": {
+        "action": "recollect_original",
+        "reason": "The QA_REASON states 'event_not_ai_relevant', but the source text explicitly describes Enjamb as building 'autonomous AI agents' and an 'AI-native research workspace', making it directly relevant to AI industry facts."
+      },
+      "evidence": [
+        {
+          "start": 385,
+          "end": 696,
+          "quote": "Enjamb is the first agentic research workspace for R&D teams. We build autonomous AI agents that execute the full research lifecycle — literature review, methodology design, data analysis, grant discovery, and manuscript drafting — inside a single collaborative platform built for how research actually happens."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T01:56:30.177Z"
+    },
+    {
       "candidate_id": "MAC-88d5d1cfabadbbcc",
       "task_type": "entity_resolution",
       "asset_id": "EN-7814459b3f23f455",
@@ -1001,8 +1143,8 @@
         },
         {
           "gate": "task_contract",
-          "status": "failed",
-          "detail": "entity_resolution_must_require_review"
+          "status": "passed",
+          "detail": "task contract passed"
         }
       ],
       "generated_at": "2026-07-18T01:30:33.359Z"
@@ -1095,7 +1237,7 @@
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
       "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
+      "status": "requires_review",
       "proposal": {
         "decision": "distinct_entity",
         "canonical_name": "Entire",
@@ -1127,8 +1269,8 @@
         },
         {
           "gate": "task_contract",
-          "status": "failed",
-          "detail": "entity_resolution_must_require_review"
+          "status": "passed",
+          "detail": "task contract passed"
         }
       ],
       "generated_at": "2026-07-18T01:30:35.652Z"
@@ -1483,7 +1625,7 @@
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
       "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
+      "status": "requires_review",
       "proposal": {
         "decision": "same_entity",
         "canonical_name": "Travelers",
@@ -1515,8 +1657,8 @@
         },
         {
           "gate": "task_contract",
-          "status": "failed",
-          "detail": "entity_resolution_must_require_review"
+          "status": "passed",
+          "detail": "task contract passed"
         }
       ],
       "generated_at": "2026-07-18T01:30:34.141Z"
@@ -1883,7 +2025,7 @@
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
       "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
+      "status": "requires_review",
       "proposal": {
         "decision": "same_entity",
         "canonical_name": "Mandel AI",
@@ -1915,8 +2057,8 @@
         },
         {
           "gate": "task_contract",
-          "status": "failed",
-          "detail": "entity_resolution_must_require_review"
+          "status": "passed",
+          "detail": "task contract passed"
         }
       ],
       "generated_at": "2026-07-18T01:30:33.465Z"

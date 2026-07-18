@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Anthropic’s more than $20 billion fun
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "彭博社报道：Anthropic 超 200 亿美元融资最早下周完成"
+title_translation_status: "translated"
+title_translation_method: "deepseek_title_translation"
+title_translation_model: "deepseek-v4-flash"
 ---
 
 # Anthropic’s more than $20 billion funding to close as soon as next week, Bloomberg News reports | Reuters

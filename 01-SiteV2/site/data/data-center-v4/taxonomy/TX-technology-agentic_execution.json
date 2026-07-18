@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T01:48:05.545Z",
+    "generatedAt": "2026-07-18T01:57:40.269Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 823,
-    "quarantinedEventCount": 69
+    "eventCount": 832,
+    "quarantinedEventCount": 60
   },
   "node": {
     "id": "TX-technology-agentic_execution",
@@ -36,6 +36,7 @@
       "EV-52115fee0e716170",
       "EV-f0fee44c1dfdcb09",
       "EV-2bb63a3015195f9b",
+      "EV-7b7f0cdf219434f6",
       "EV-aa33ca051f3a7f78",
       "EV-9ddcfd9f61c25158",
       "EV-f54ec32c67e9447c",
@@ -276,6 +277,7 @@
       "EN-0cc3af265406c202",
       "EN-cfd62617fdedfdf4",
       "EN-bbdefa2950f49882",
+      "EN-4dd5b6e2bf3bfd4f",
       "EN-1bd14cd1a58c5708",
       "EN-7d3194f79e645c42",
       "EN-871e6f4bf723cb1b",
@@ -2241,6 +2243,92 @@
       "products": [],
       "sourceUrl": "https://siliconangle.com/2026/06/24/agentic-infrastructure-startup-seltz-raises-12-5m-help-ai-agents-search-web-answers",
       "publisher": "siliconangle.com"
+    },
+    {
+      "id": "EV-7b7f0cdf219434f6",
+      "dataDate": "2026-07-02",
+      "date": "2026-07-02",
+      "updatedDate": "2026-07-02",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "美国种子轮每周融资汇总（2026年3月17日-24日）",
+      "originalTitle": "US Seed Weekly Funding Roundup (Mar 17-24, 2026) - Qubit Capital",
+      "subject": "Manifold",
+      "action": "funding",
+      "object": "$8M seed round",
+      "metrics": [
+        "$8M",
+        "$7M"
+      ],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "security_product",
+            "dimensionName": "产品形态",
+            "name": "AI 安全产品"
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "security_product",
+          "dimensionName": "产品形态",
+          "name": "AI 安全产品"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "security_product",
+          "dimensionName": "产品形态",
+          "name": "AI 安全产品"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "entityIds": [
+        "EN-4dd5b6e2bf3bfd4f"
+      ],
+      "entityNames": [
+        "Manifold"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://qubit.capital/blog/us-seed-weekly-funding-roundup-week-4-march-2026",
+      "publisher": "qubit.capital"
     },
     {
       "id": "EV-aa33ca051f3a7f78",
@@ -20914,6 +21002,7 @@
         "EV-e41fc65eb014893f",
         "EV-974a6b7d0e0efef2",
         "EV-917a390341b9fce6",
+        "EV-3f8f6a578be79988",
         "EV-9efcf6480f6c6f48",
         "EV-cf76f090a1a20a36",
         "EV-fd7e79d3cb9cdb69",
@@ -20969,7 +21058,7 @@
         "EN-5fa6f727c9e3afe0",
         "EN-e71558a14e7ed6ab"
       ],
-      "firstSeen": "2026-05-27",
+      "firstSeen": "2026-05-23",
       "lastSeen": "2026-07-17"
     },
     {
@@ -21805,6 +21894,7 @@
       "eventIds": [
         "EV-e41fc65eb014893f",
         "EV-dfddbb260b3d1c77",
+        "EV-78a11d309c3d4e97",
         "EV-2bb63a3015195f9b",
         "EV-43b56d49df9a73a2",
         "EV-0e84a2f49d765ce3",
@@ -21934,6 +22024,27 @@
       "lastSeen": "2026-07-17"
     },
     {
+      "id": "EN-4dd5b6e2bf3bfd4f",
+      "name": "Manifold",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-7b7f0cdf219434f6"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-02",
+      "lastSeen": "2026-07-02"
+    },
+    {
       "id": "EN-1bd14cd1a58c5708",
       "name": "Enterprise AI Agent",
       "entityType": "organization_candidate",
@@ -21976,6 +22087,7 @@
         "EV-e41fc65eb014893f",
         "EV-974a6b7d0e0efef2",
         "EV-dfddbb260b3d1c77",
+        "EV-78a11d309c3d4e97",
         "EV-20d762872664fddb",
         "EV-aa33ca051f3a7f78",
         "EV-d4e44892226be468",
@@ -22379,6 +22491,7 @@
         "EV-e41fc65eb014893f",
         "EV-974a6b7d0e0efef2",
         "EV-dfddbb260b3d1c77",
+        "EV-78a11d309c3d4e97",
         "EV-80e54c9a390da293",
         "EV-d4e44892226be468",
         "EV-e7dcecaed5a0ee5b",
@@ -22390,6 +22503,7 @@
         "EV-201b25d4f3cf696a",
         "EV-cbc0b7a7d21a29e2",
         "EV-1abf0d076d30ec6d",
+        "EV-f247eff115e840af",
         "EV-ed8260ee9a7a80af",
         "EV-47a16db069ed320e",
         "EV-49c6291694fb6c7b",
@@ -22666,6 +22780,7 @@
         "EV-14a666fc27d73a80",
         "EV-fb5d2ae875255804",
         "EV-f020dd198aa2f952",
+        "EV-3f8f6a578be79988",
         "EV-8b73e88ffd3569b2",
         "EV-30d7f1c5dc8ea464",
         "EV-9009adaed650ddde",

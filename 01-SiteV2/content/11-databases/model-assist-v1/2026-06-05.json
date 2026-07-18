@@ -1,6 +1,6 @@
 {
   "schema_version": "MODEL-ASSIST-V1.0",
-  "generated_at": "2026-07-18T01:41:55.831Z",
+  "generated_at": "2026-07-18T01:56:33.017Z",
   "data_date": "2026-06-05",
   "prompt_version": "model-assist-2026-07-18.1",
   "source_count": 111,
@@ -132,7 +132,7 @@
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
       "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
+      "status": "requires_review",
       "proposal": {
         "decision": "same_entity",
         "canonical_name": "DataRobot AI Cloud",
@@ -164,8 +164,8 @@
         },
         {
           "gate": "task_contract",
-          "status": "failed",
-          "detail": "entity_resolution_must_require_review"
+          "status": "passed",
+          "detail": "task contract passed"
         }
       ],
       "generated_at": "2026-07-18T01:30:22.426Z"
@@ -432,7 +432,7 @@
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
       "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
+      "status": "requires_review",
       "proposal": {
         "decision": "same_entity",
         "canonical_name": "NVIDIA AI",
@@ -464,8 +464,8 @@
         },
         {
           "gate": "task_contract",
-          "status": "failed",
-          "detail": "entity_resolution_must_require_review"
+          "status": "passed",
+          "detail": "task contract passed"
         }
       ],
       "generated_at": "2026-07-18T01:30:20.700Z"
@@ -558,7 +558,7 @@
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
       "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
+      "status": "requires_review",
       "proposal": {
         "decision": "publisher_of",
         "canonical_name": "Google Research",
@@ -590,8 +590,8 @@
         },
         {
           "gate": "task_contract",
-          "status": "failed",
-          "detail": "entity_resolution_must_require_review"
+          "status": "passed",
+          "detail": "task contract passed"
         }
       ],
       "generated_at": "2026-07-18T01:30:20.701Z"
@@ -719,7 +719,7 @@
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
       "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
+      "status": "requires_review",
       "proposal": {
         "decision": "unknown",
         "canonical_name": "Ex-Goldman Sachs",
@@ -751,8 +751,8 @@
         },
         {
           "gate": "task_contract",
-          "status": "failed",
-          "detail": "entity_resolution_must_require_review"
+          "status": "passed",
+          "detail": "task contract passed"
         }
       ],
       "generated_at": "2026-07-18T01:30:21.311Z"
@@ -767,7 +767,7 @@
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
       "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
+      "status": "requires_review",
       "proposal": {
         "decision": "same_entity",
         "canonical_name": "Archestra Inc.",
@@ -799,8 +799,8 @@
         },
         {
           "gate": "task_contract",
-          "status": "failed",
-          "detail": "entity_resolution_must_require_review"
+          "status": "passed",
+          "detail": "task contract passed"
         }
       ],
       "generated_at": "2026-07-18T01:30:21.614Z"
@@ -1190,7 +1190,7 @@
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
       "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
+      "status": "requires_review",
       "proposal": {
         "decision": "unknown",
         "canonical_name": "The best",
@@ -1222,8 +1222,8 @@
         },
         {
           "gate": "task_contract",
-          "status": "failed",
-          "detail": "entity_resolution_must_require_review"
+          "status": "passed",
+          "detail": "task contract passed"
         }
       ],
       "generated_at": "2026-07-18T01:30:23.560Z"

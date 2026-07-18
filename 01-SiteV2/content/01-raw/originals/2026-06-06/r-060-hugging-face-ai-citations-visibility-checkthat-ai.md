@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Hugging Face operates a freemium model 
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Hugging Face：AI 引用与可见性 | CheckThat.ai"
+title_translation_status: "translated"
+title_translation_method: "deepseek_title_translation"
+title_translation_model: "deepseek-v4-flash"
 ---
 
 # Hugging Face: AI Citations & Visibility | CheckThat.ai

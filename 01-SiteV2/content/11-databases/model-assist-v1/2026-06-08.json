@@ -1,6 +1,6 @@
 {
   "schema_version": "MODEL-ASSIST-V1.0",
-  "generated_at": "2026-07-18T01:41:55.846Z",
+  "generated_at": "2026-07-18T01:56:33.034Z",
   "data_date": "2026-06-08",
   "prompt_version": "model-assist-2026-07-18.1",
   "source_count": 139,
@@ -393,7 +393,7 @@
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
       "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
+      "status": "requires_review",
       "proposal": {
         "decision": "same_entity",
         "canonical_name": "NC",
@@ -425,8 +425,8 @@
         },
         {
           "gate": "task_contract",
-          "status": "failed",
-          "detail": "entity_resolution_must_require_review"
+          "status": "passed",
+          "detail": "task contract passed"
         }
       ],
       "generated_at": "2026-07-18T01:30:51.171Z"
@@ -586,8 +586,8 @@
         },
         {
           "gate": "task_contract",
-          "status": "failed",
-          "detail": "entity_resolution_must_require_review"
+          "status": "passed",
+          "detail": "task contract passed"
         }
       ],
       "generated_at": "2026-07-18T01:30:54.082Z"
@@ -602,7 +602,7 @@
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
       "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
+      "status": "requires_review",
       "proposal": {
         "decision": "same_entity",
         "canonical_name": "极摩客 EVO-X3 迷你主机",
@@ -634,8 +634,8 @@
         },
         {
           "gate": "task_contract",
-          "status": "failed",
-          "detail": "entity_resolution_must_require_review"
+          "status": "passed",
+          "detail": "task contract passed"
         }
       ],
       "generated_at": "2026-07-18T01:30:53.138Z"
@@ -689,7 +689,7 @@
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
       "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
+      "status": "requires_review",
       "proposal": {
         "decision": "same_entity",
         "canonical_name": "Factorial",
@@ -721,8 +721,8 @@
         },
         {
           "gate": "task_contract",
-          "status": "failed",
-          "detail": "entity_resolution_must_require_review"
+          "status": "passed",
+          "detail": "task contract passed"
         }
       ],
       "generated_at": "2026-07-18T01:30:50.803Z"
@@ -800,7 +800,7 @@
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
       "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
+      "status": "requires_review",
       "proposal": {
         "decision": "same_entity",
         "canonical_name": "斗山集团",
@@ -832,8 +832,8 @@
         },
         {
           "gate": "task_contract",
-          "status": "failed",
-          "detail": "entity_resolution_must_require_review"
+          "status": "passed",
+          "detail": "task contract passed"
         }
       ],
       "generated_at": "2026-07-18T01:30:53.816Z"
@@ -889,6 +889,52 @@
         }
       ],
       "generated_at": "2026-07-18T01:30:47.506Z"
+    },
+    {
+      "candidate_id": "MAC-981c4a659846bd1d",
+      "task_type": "qa_repair",
+      "asset_id": "QA-b1c9c537c520f622",
+      "raw_id": "RAW-6f2b3ae610b36dce",
+      "source_ref": "SA-ea98e537c778cd5d",
+      "source_hash": "9620b9c3820f19e4",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "requires_review",
+      "proposal": {
+        "action": "recollect_original",
+        "reason": "The QA_REASON states 'event_not_ai_relevant', but the source text is entirely about an AI agent company (Sierra), its AI platform, AI agents, and its funding to expand AI capabilities. The content is directly relevant to the AI industry."
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 97,
+          "quote": "Starting Sierra was an early bet that AI agents would transform the enterprise software industry."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T01:56:30.168Z"
     },
     {
       "candidate_id": "MAC-a5453e929be50be0",
@@ -1000,8 +1046,8 @@
         },
         {
           "gate": "task_contract",
-          "status": "failed",
-          "detail": "entity_resolution_must_require_review"
+          "status": "passed",
+          "detail": "task contract passed"
         }
       ],
       "generated_at": "2026-07-18T01:30:52.658Z"
@@ -1133,7 +1179,7 @@
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
       "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
+      "status": "requires_review",
       "proposal": {
         "decision": "unknown",
         "canonical_name": "警惕\"AI 中转站\"数据安全风险",
@@ -1165,8 +1211,8 @@
         },
         {
           "gate": "task_contract",
-          "status": "failed",
-          "detail": "entity_resolution_must_require_review"
+          "status": "passed",
+          "detail": "task contract passed"
         }
       ],
       "generated_at": "2026-07-18T01:30:51.922Z"
@@ -1255,7 +1301,7 @@
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
       "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
+      "status": "requires_review",
       "proposal": {
         "decision": "same_entity",
         "canonical_name": "英国政府",
@@ -1287,11 +1333,59 @@
         },
         {
           "gate": "task_contract",
-          "status": "failed",
-          "detail": "entity_resolution_must_require_review"
+          "status": "passed",
+          "detail": "task contract passed"
         }
       ],
       "generated_at": "2026-07-18T01:30:53.990Z"
+    },
+    {
+      "candidate_id": "MAC-e2d9c73c20b8136d",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-67e05af6c6502566",
+      "raw_id": "RAW-5100b03136925b0f",
+      "source_ref": "SA-ba11d547bd047e7c",
+      "source_hash": "941bad55959a928e",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "same_entity",
+        "canonical_name": "Graphon AI",
+        "rationale": "The ENTITY_CANDIDATE name 'Graphon AI' matches the company name used throughout the SOURCE_TEXT. The source describes the company's seed funding, founding team, product, and investors, all consistent with the candidate being the same organization.",
+        "candidate_name": "Graphon AI"
+      },
+      "evidence": [
+        {
+          "start": 104,
+          "end": 326,
+          "quote": "Graphon AI, which emerged from stealth on Wednesday with $8.3 million in seed funding, is named after a mathematical object that most people in AI have never heard of and that its two most prominent advisors helped invent."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T01:56:30.649Z"
     },
     {
       "candidate_id": "MAC-e4112cf1353e6906",
@@ -1303,7 +1397,7 @@
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
       "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
+      "status": "requires_review",
       "proposal": {
         "decision": "publisher_of",
         "canonical_name": "英伟达",
@@ -1335,8 +1429,8 @@
         },
         {
           "gate": "task_contract",
-          "status": "failed",
-          "detail": "entity_resolution_must_require_review"
+          "status": "passed",
+          "detail": "task contract passed"
         }
       ],
       "generated_at": "2026-07-18T01:30:52.421Z"
@@ -1351,7 +1445,7 @@
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
       "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
+      "status": "requires_review",
       "proposal": {
         "decision": "distinct_entity",
         "canonical_name": "SK 海力士",
@@ -1383,8 +1477,8 @@
         },
         {
           "gate": "task_contract",
-          "status": "failed",
-          "detail": "entity_resolution_must_require_review"
+          "status": "passed",
+          "detail": "task contract passed"
         }
       ],
       "generated_at": "2026-07-18T01:30:51.771Z"
@@ -1399,7 +1493,7 @@
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
       "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
+      "status": "requires_review",
       "proposal": {
         "decision": "same_entity",
         "canonical_name": "OpenRouter",
@@ -1431,8 +1525,8 @@
         },
         {
           "gate": "task_contract",
-          "status": "failed",
-          "detail": "entity_resolution_must_require_review"
+          "status": "passed",
+          "detail": "task contract passed"
         }
       ],
       "generated_at": "2026-07-18T01:30:53.188Z"

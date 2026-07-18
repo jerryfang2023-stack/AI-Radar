@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Two US seed deals raised $15M this week
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_zh: "美国种子轮每周融资汇总（2026年3月17日-24日）"
+title_translation_status: "translated"
+title_translation_method: "deepseek_title_translation"
+title_translation_model: "deepseek-v4-flash"
 ---
 
 # US Seed Weekly Funding Roundup (Mar 17-24, 2026) - Qubit Capital
