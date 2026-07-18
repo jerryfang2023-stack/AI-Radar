@@ -16,6 +16,8 @@ const smokeEntity = entityIndex.companies?.[0] || entityIndex.products?.[0] || e
 const smokeTaxonomy = entityIndex.taxonomyNodes?.[0];
 const cases = [
   ["data-center.html?view=events", "data-center.html?view=events"],
+  ["data-center.html?view=fde", "data-center.html?view=fde"],
+  ["data-center.html?view=hardware", "data-center.html?view=hardware"],
   ["data-center.html?view=community", "data-center.html?view=community"],
   ["data-center.html?view=viewpoints", "data-center.html?view=viewpoints"],
   ["data-center.html?view=index", "data-center.html?view=index"],
