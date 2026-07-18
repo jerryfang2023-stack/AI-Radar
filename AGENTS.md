@@ -46,7 +46,7 @@ Do not scan all Markdown at task start. Read only this file, the required `conte
 - Current frontstage: `01-SiteV2/site/data-center.html`, `01-SiteV2/site/intelligence-map.html`, and their V4 report detail pages.
 - Current dashboard: `01-SiteV2/site/operations-console.html`.
 - Current Business Signals column version: BSIG-V2.2.0-pipeline-stage-ownership.
-- Current First-Line Viewpoints column version: FLV-V1.0.2-supervision-idempotency.
+- Current First-Line Viewpoints column version: FLV-V1.1.0-history-backfill.
 - Current Community Intelligence column version: CINT-V1.0.2-publication-waiting-gate.
 - Current Enterprise AI / FDE data version: FDE-V2.0.
 - Current AI Hardware data version: HARDWARE-V1.0.
