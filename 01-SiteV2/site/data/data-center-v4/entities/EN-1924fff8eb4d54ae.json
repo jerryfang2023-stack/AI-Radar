@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T01:57:40.269Z",
-    "latestDataDate": "2026-07-17",
-    "currentDate": "2026-07-17",
-    "eventCount": 832,
-    "quarantinedEventCount": 60
+    "generatedAt": "2026-07-18T04:18:28.002Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 870,
+    "quarantinedEventCount": 59
   },
   "entity": {
     "id": "EN-1924fff8eb4d54ae",
@@ -29,10 +29,14 @@
     "classificationRefs": [
       "TX-industry-retail_ecommerce"
     ],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-3a7bd3e2360a3d29"
+    ],
     "firstSeen": "2026-06-09",
     "lastSeen": "2026-06-20",
-    "relationIds": [],
+    "relationIds": [
+      "REL2-3d00d7538e09943f"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -107,8 +111,139 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-3a7bd3e2360a3d29",
+      "name": "Apple",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "苹果"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-f282ab8740ff0096",
+        "EV-53f08daddd011dbb",
+        "EV-8a8e894a84768ea5",
+        "EV-afcd5426f5c01dc7",
+        "EV-f5a50f1fed72fec3",
+        "EV-e857f9d1c1478c70",
+        "EV-fd21441fb6e143c3",
+        "EV-c237f5dc53f0a923",
+        "EV-3a74e4995b590507",
+        "EV-8a9b12665a3e40a0",
+        "EV-70cbf25f7ec2cc3a",
+        "EV-8b9e4428074bde60",
+        "EV-967239f907803753",
+        "EV-113899096a32165a",
+        "EV-cabc88e1d09dec80",
+        "EV-cc3b92fe233953cf",
+        "EV-8aead769e84de342",
+        "EV-abf0990dcaceb1ce",
+        "EV-89930fa8d1db98eb",
+        "EV-60c27ec9b857f5c2",
+        "EV-eeb687002cac5f4e",
+        "EV-99e5df844a1bd670",
+        "EV-0b2bfd57923cedd3",
+        "EV-3c51bcb5e99d2b68",
+        "EV-a736c6c64d106475",
+        "EV-dad8c827d14f2799",
+        "EV-4e6dc3ec2b3f0bd6",
+        "EV-634ce5b42f6d32f6",
+        "EV-85373b8ec9148127",
+        "EV-1ae8027c085679e9",
+        "EV-21c749570133c786",
+        "EV-52e1ac21c25a0a09",
+        "EV-591542ccc2de5be8",
+        "EV-5a1422a9929c582e",
+        "EV-8361a47c70ecd243",
+        "EV-9f9bc7ffe6228281",
+        "EV-a5ba3797b38df125",
+        "EV-a9fe726c4ea2a17b",
+        "EV-bff418b2959f58fb",
+        "EV-c5b8faec223a4caf",
+        "EV-d40a1a873015ac98",
+        "EV-da062d02015f99fb",
+        "EV-f6611268f119a172",
+        "EV-0d1980baa83e1e6c",
+        "EV-2f7e6d3a68bbf08f",
+        "EV-ef823877347ff40f",
+        "EV-5cd10de5c12916f0",
+        "EV-5613946bdd578a26",
+        "EV-dd902b603e2e3dbc",
+        "EV-da6678e4e865e00e",
+        "EV-8cb2374f76202ecc",
+        "EV-946569cccbd9222f",
+        "EV-b4203b10d6592bf2",
+        "EV-5eb23cdd9c14c6ea",
+        "EV-7d4b4b8d4e3599d4",
+        "EV-10e841ab47d2b1f1",
+        "EV-f2d29ca7b05c3dd9",
+        "EV-ea2b6ce4acd46366",
+        "EV-2821d0cef61b3c6a",
+        "EV-6f7c5f0abad3d4da",
+        "EV-8f497488d129fee5",
+        "EV-a8f1204b54ae6475"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-retail_ecommerce",
+        "TX-industry-manufacturing",
+        "TX-technology-code_generation",
+        "TX-technology-long_context",
+        "TX-use_case-cybersecurity",
+        "TX-technology-on_device",
+        "TX-technology-multimodal",
+        "TX-industry-media_entertainment",
+        "TX-technology-tool_use",
+        "TX-technology-fine_tuning",
+        "TX-use_case-content_creation",
+        "TX-technology-quantization",
+        "TX-technology-speech_audio"
+      ],
+      "relatedEntityIds": [
+        "EN-e463d05a14e8697f",
+        "EN-af3ceabbe048a291",
+        "EN-1924fff8eb4d54ae",
+        "EN-41dcc2d4951f337b",
+        "EN-1acf3a98930680ec",
+        "EN-45b5216872656eb3",
+        "EN-dfabe4215e8c07cb",
+        "EN-729324072d368379",
+        "EN-40e307d789f77264",
+        "EN-0502bb9ed34980aa"
+      ],
+      "firstSeen": "2026-06-04",
+      "lastSeen": "2026-07-18"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-3d00d7538e09943f",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-3a7bd3e2360a3d29",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-1924fff8eb4d54ae",
+      "object_type": "entity",
+      "event_id": "EV-52e1ac21c25a0a09",
+      "claim_refs": [
+        "CL-200387b333a63bec",
+        "CL-563ecffd6de962e3",
+        "CL-dd8a0674c31cfc53",
+        "CL-826dd4d2f9e003bc"
+      ],
+      "source_refs": [
+        "SA-07362e7a0eeb27d0"
+      ],
+      "data_date": "2026-06-09",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [
     {
       "id": "TX-industry-retail_ecommerce",
@@ -117,6 +252,7 @@
       "typeLabel": "行业",
       "valueId": "retail_ecommerce",
       "eventIds": [
+        "EV-f6a72cddbda748b3",
         "EV-e7dcecaed5a0ee5b",
         "EV-8b0f056571d68269",
         "EV-434dcf1813a84ead",
@@ -134,8 +270,9 @@
         "EV-dd62847548bb6ae3"
       ],
       "entityIds": [
-        "EN-f346eaca864441f9",
+        "EN-a5d2ae286d0d9e45",
         "EN-96eebba49dbbf422",
+        "EN-f346eaca864441f9",
         "EN-c70eca6b0f88f44d",
         "EN-b0532e1af75cc4ab",
         "EN-e5cc9e38970eacb5",
@@ -179,7 +316,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-01-20",
-      "lastSeen": "2026-07-15"
+      "lastSeen": "2026-07-18"
     }
   ],
   "fde": [],

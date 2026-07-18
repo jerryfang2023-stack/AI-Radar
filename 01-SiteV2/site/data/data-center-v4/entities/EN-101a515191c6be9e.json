@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T01:57:40.269Z",
-    "latestDataDate": "2026-07-17",
-    "currentDate": "2026-07-17",
-    "eventCount": 832,
-    "quarantinedEventCount": 60
+    "generatedAt": "2026-07-18T04:18:28.002Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 870,
+    "quarantinedEventCount": 59
   },
   "entity": {
     "id": "EN-101a515191c6be9e",
@@ -25,8 +25,8 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [
-      "TX-use_case-robotics_automation",
-      "TX-technology-multimodal"
+      "TX-technology-multimodal",
+      "TX-use_case-robotics_automation"
     ],
     "relatedEntityIds": [
       "EN-c608c4787821de1b"
@@ -101,6 +101,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-53f08daddd011dbb",
         "EV-3353bd96728c99e2",
         "EV-8a9b12665a3e40a0",
         "EV-28145c97a7237d6d",
@@ -118,8 +119,8 @@
         "TX-technology-long_context",
         "TX-technology-on_device",
         "TX-technology-open_weights",
-        "TX-use_case-robotics_automation",
-        "TX-technology-multimodal"
+        "TX-technology-multimodal",
+        "TX-use_case-robotics_automation"
       ],
       "relatedEntityIds": [
         "EN-101a515191c6be9e",
@@ -128,7 +129,7 @@
         "EN-3aca03b9bb50f158"
       ],
       "firstSeen": "2026-06-10",
-      "lastSeen": "2026-07-16"
+      "lastSeen": "2026-07-18"
     }
   ],
   "relationships": [
@@ -156,79 +157,17 @@
   ],
   "taxonomyNodes": [
     {
-      "id": "TX-use_case-robotics_automation",
-      "name": "机器人与物理自动化",
-      "nodeType": "use_case",
-      "typeLabel": "应用场景",
-      "valueId": "robotics_automation",
-      "eventIds": [
-        "EV-434dcf1813a84ead",
-        "EV-f059fd80d668c6bc",
-        "EV-234ad54940674bf6",
-        "EV-39848cdd62c00e59",
-        "EV-4faa2bcf2e42e60c",
-        "EV-6b51b1b6fe22c540",
-        "EV-3353bd96728c99e2",
-        "EV-57565fc2e7502c59",
-        "EV-49751dfc7d2f6d6c",
-        "EV-69fbe85ca4ac81cd",
-        "EV-e1a7e7dcb19bfc70",
-        "EV-c834a9d33a86373c",
-        "EV-3f8ba5855b64dd1a",
-        "EV-7da59380bb30e76a",
-        "EV-67f32771d69084d6",
-        "EV-df3f5cf6bc985a9c",
-        "EV-ad64347138da72bb"
-      ],
-      "entityIds": [
-        "EN-6f21a653c48f4f19",
-        "EN-4dbe391b8fcf977a",
-        "EN-8d4321d936320802",
-        "EN-72138e570e5103e2",
-        "EN-60094bcf5292c490",
-        "EN-aa75c47729b4a292",
-        "EN-8147e6fed86d42c1",
-        "EN-96eebba49dbbf422",
-        "EN-e3b1bf3dab957ffe",
-        "EN-0f3360879e746531",
-        "EN-522d3edeb64a7ca4",
-        "EN-c608c4787821de1b",
-        "EN-101a515191c6be9e",
-        "EN-8afd897b5b887b06",
-        "EN-4d8ee3ec190ebf35",
-        "EN-30081094f2a8c83d",
-        "EN-d558e1de958b9d05",
-        "EN-4e7e886400fe6a83",
-        "EN-75fe8aaf5a7e3a7e",
-        "EN-6fcba5d96a4fadfd",
-        "EN-7d5f17368c04f04c",
-        "EN-0d049cd1e9f619f9",
-        "EN-5e1fcba4c9f1cf69",
-        "EN-7d3194f79e645c42",
-        "EN-94ff75465b1afa65",
-        "EN-42375a8003f17c95",
-        "EN-171fa23d27b5894b",
-        "EN-80ea42a231357d12"
-      ],
-      "fdeIds": [
-        "FDE-dadf0e9572889d3d"
-      ],
-      "hardwareIds": [
-        "HW-dca442211b264bbe"
-      ],
-      "firstSeen": "2026-05-24",
-      "lastSeen": "2026-07-17"
-    },
-    {
       "id": "TX-technology-multimodal",
       "name": "多模态",
       "nodeType": "technology",
       "typeLabel": "技术",
       "valueId": "multimodal",
       "eventIds": [
+        "EV-cafe435ddd007821",
         "EV-a9810b47e0408a05",
         "EV-f169db2fb75a1371",
         "EV-fd21441fb6e143c3",
+        "EV-ba89f9414be0b041",
         "EV-6b51b1b6fe22c540",
         "EV-70e3f88cb06a856c",
         "EV-3353bd96728c99e2",
@@ -250,14 +189,17 @@
         "EV-6b7917bd7edd4bde"
       ],
       "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-59ae856cd788d0f5",
+        "EN-0f3360879e746531",
+        "EN-80d387ccb3289295",
         "EN-193d220b421d776e",
         "EN-7df09a7717ef2feb",
         "EN-3a7bd3e2360a3d29",
         "EN-50537dab76505dfc",
         "EN-b5251b35f15bedc4",
+        "EN-3c6d89173e6636d7",
         "EN-e3b1bf3dab957ffe",
-        "EN-8d4321d936320802",
-        "EN-0f3360879e746531",
         "EN-7d3194f79e645c42",
         "EN-8f71c4871a160172",
         "EN-78624f0a98e78301",
@@ -295,9 +237,82 @@
         "EN-9c8ae69b84f21a2e"
       ],
       "fdeIds": [],
-      "hardwareIds": [],
+      "hardwareIds": [
+        "HW-ceb55d9bc637c1d3"
+      ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-07-18"
+    },
+    {
+      "id": "TX-use_case-robotics_automation",
+      "name": "机器人与物理自动化",
+      "nodeType": "use_case",
+      "typeLabel": "应用场景",
+      "valueId": "robotics_automation",
+      "eventIds": [
+        "EV-cafe435ddd007821",
+        "EV-434dcf1813a84ead",
+        "EV-f059fd80d668c6bc",
+        "EV-234ad54940674bf6",
+        "EV-39848cdd62c00e59",
+        "EV-4faa2bcf2e42e60c",
+        "EV-d1e8407177e11fdc",
+        "EV-6b51b1b6fe22c540",
+        "EV-3353bd96728c99e2",
+        "EV-57565fc2e7502c59",
+        "EV-49751dfc7d2f6d6c",
+        "EV-69fbe85ca4ac81cd",
+        "EV-e1a7e7dcb19bfc70",
+        "EV-c834a9d33a86373c",
+        "EV-3f8ba5855b64dd1a",
+        "EV-7da59380bb30e76a",
+        "EV-67f32771d69084d6",
+        "EV-df3f5cf6bc985a9c",
+        "EV-ad64347138da72bb"
+      ],
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-59ae856cd788d0f5",
+        "EN-0f3360879e746531",
+        "EN-80d387ccb3289295",
+        "EN-6f21a653c48f4f19",
+        "EN-4dbe391b8fcf977a",
+        "EN-72138e570e5103e2",
+        "EN-60094bcf5292c490",
+        "EN-aa75c47729b4a292",
+        "EN-8147e6fed86d42c1",
+        "EN-96eebba49dbbf422",
+        "EN-c51e27d8efcff21f",
+        "EN-dbd6a2f6ddb95ca7",
+        "EN-e3b1bf3dab957ffe",
+        "EN-522d3edeb64a7ca4",
+        "EN-c608c4787821de1b",
+        "EN-101a515191c6be9e",
+        "EN-8afd897b5b887b06",
+        "EN-4d8ee3ec190ebf35",
+        "EN-30081094f2a8c83d",
+        "EN-d558e1de958b9d05",
+        "EN-4e7e886400fe6a83",
+        "EN-75fe8aaf5a7e3a7e",
+        "EN-6fcba5d96a4fadfd",
+        "EN-7d5f17368c04f04c",
+        "EN-0d049cd1e9f619f9",
+        "EN-5e1fcba4c9f1cf69",
+        "EN-7d3194f79e645c42",
+        "EN-94ff75465b1afa65",
+        "EN-42375a8003f17c95",
+        "EN-171fa23d27b5894b",
+        "EN-80ea42a231357d12"
+      ],
+      "fdeIds": [
+        "FDE-dadf0e9572889d3d"
+      ],
+      "hardwareIds": [
+        "HW-ceb55d9bc637c1d3",
+        "HW-dca442211b264bbe"
+      ],
+      "firstSeen": "2026-05-24",
+      "lastSeen": "2026-07-18"
     }
   ],
   "fde": [],

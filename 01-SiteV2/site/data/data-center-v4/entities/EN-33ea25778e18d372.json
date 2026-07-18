@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T01:57:40.269Z",
-    "latestDataDate": "2026-07-17",
-    "currentDate": "2026-07-17",
-    "eventCount": 832,
-    "quarantinedEventCount": 60
+    "generatedAt": "2026-07-18T04:18:28.002Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 870,
+    "quarantinedEventCount": 59
   },
   "entity": {
     "id": "EN-33ea25778e18d372",
@@ -27,14 +27,10 @@
     "classificationRefs": [
       "TX-use_case-data_analysis"
     ],
-    "relatedEntityIds": [
-      "EN-a89151ba4b5ac0f2"
-    ],
+    "relatedEntityIds": [],
     "firstSeen": "2026-07-16",
     "lastSeen": "2026-07-17",
-    "relationIds": [
-      "REL2-0bf66d98de87a2bb"
-    ],
+    "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -75,56 +71,8 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [
-    {
-      "id": "EN-a89151ba4b5ac0f2",
-      "name": "Baidu",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [
-        "百度文库"
-      ],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-daf1e21f8ccbf839"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-use_case-data_analysis"
-      ],
-      "relatedEntityIds": [
-        "EN-33ea25778e18d372"
-      ],
-      "firstSeen": "2026-07-16",
-      "lastSeen": "2026-07-17"
-    }
-  ],
-  "relationships": [
-    {
-      "relationship_id": "REL2-0bf66d98de87a2bb",
-      "relationship_version": "RELATION-V2.0",
-      "subject_ref": "EN-a89151ba4b5ac0f2",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-33ea25778e18d372",
-      "object_type": "entity",
-      "event_id": "EV-daf1e21f8ccbf839",
-      "claim_refs": [
-        "CL-79f2d88b4a79b4af",
-        "CL-bb399a6fc1e5aef6",
-        "CL-4220995c2d9a7652",
-        "CL-772290ad6669ce52"
-      ],
-      "source_refs": [
-        "SA-ed25964e615b6835"
-      ],
-      "data_date": "2026-07-17",
-      "status": "verified"
-    }
-  ],
+  "relatedEntities": [],
+  "relationships": [],
   "taxonomyNodes": [
     {
       "id": "TX-use_case-data_analysis",

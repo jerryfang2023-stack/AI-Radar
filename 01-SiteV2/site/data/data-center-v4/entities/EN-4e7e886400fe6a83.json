@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T01:57:40.269Z",
-    "latestDataDate": "2026-07-17",
-    "currentDate": "2026-07-17",
-    "eventCount": 832,
-    "quarantinedEventCount": 60
+    "generatedAt": "2026-07-18T04:18:28.002Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 870,
+    "quarantinedEventCount": 59
   },
   "entity": {
     "id": "EN-4e7e886400fe6a83",
@@ -28,10 +28,14 @@
       "TX-use_case-robotics_automation",
       "TX-technology-guardrails_safety"
     ],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-8d4321d936320802"
+    ],
     "firstSeen": "2026-06-22",
     "lastSeen": "2026-06-23",
-    "relationIds": [],
+    "relationIds": [
+      "REL2-90fe6f189b5ac87d"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -83,8 +87,157 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-8d4321d936320802",
+      "name": "NVIDIA",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "英伟达"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-8b7cbb66a33a945d",
+        "EV-4eaf3aabecae6016",
+        "EV-87432dbb99cd6033",
+        "EV-6e516b6e68def9cf",
+        "EV-e41fc65eb014893f",
+        "EV-040fc355bc12a750",
+        "EV-80e54c9a390da293",
+        "EV-4118202ed0f91895",
+        "EV-236cbc2d64f0c455",
+        "EV-0e84a2f49d765ce3",
+        "EV-cafe435ddd007821",
+        "EV-36d484148fbd3424",
+        "EV-47a16db069ed320e",
+        "EV-cf76f090a1a20a36",
+        "EV-7263caa45bbf168e",
+        "EV-234ad54940674bf6",
+        "EV-5b16886442234f81",
+        "EV-ef6464cf7f764835",
+        "EV-b95539d17772a4ce",
+        "EV-f63462e34ea40699",
+        "EV-4faa2bcf2e42e60c",
+        "EV-9ee3c0ec243b6129",
+        "EV-58c1cc3749294649",
+        "EV-950237c6b3eb6343",
+        "EV-6b51b1b6fe22c540",
+        "EV-c2800c1c5a3f568f",
+        "EV-1ff169120ed385f6",
+        "EV-47d14d0aa4d4414e",
+        "EV-f7b60c0c63403f8c",
+        "EV-6139380f3362803b",
+        "EV-96c8ce4ee89adb84",
+        "EV-53f881da31630a04",
+        "EV-6a2f3e9a22edff64",
+        "EV-f784003febc1d9eb",
+        "EV-587c18cb1837c74f",
+        "EV-bd66e5b45a6a577e",
+        "EV-53564b1f0fd2214b",
+        "EV-7fb25ff3d853c314",
+        "EV-8a91e14f37d32b4d",
+        "EV-13f0b515194f3245",
+        "EV-5d50eb202b478bd4",
+        "EV-e2db9c4e7c16ae7a",
+        "EV-69fbe85ca4ac81cd",
+        "EV-b7ba9acba80a852e",
+        "EV-4bb5b24400e49ea4",
+        "EV-568d2aeab5234e48",
+        "EV-b986a633cca27df9",
+        "EV-2258329f33d413cf",
+        "EV-4bf0e4043c3562f2",
+        "EV-309ea4fc27a66485",
+        "EV-fa1b1efd77f36d56",
+        "EV-4026c95d4c01b96e",
+        "EV-631197767a45d34c",
+        "EV-67f32771d69084d6",
+        "EV-d2ac9700c86913da",
+        "EV-d43a561da59b2897",
+        "EV-f5755fccd5731063",
+        "EV-8993e021ac17df4a",
+        "EV-34929bdd016dc8d6",
+        "EV-08f736f61f2b46f3",
+        "EV-710b145230faa692",
+        "EV-0b49d637d7c07ce0"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
+        "TX-industry-automotive_transportation",
+        "TX-technology-code_generation",
+        "TX-industry-healthcare_life_sciences",
+        "TX-technology-long_context",
+        "TX-technology-mixture_of_experts",
+        "TX-use_case-cybersecurity",
+        "TX-technology-on_device",
+        "TX-technology-retrieval_augmented_generation",
+        "TX-technology-embodied_ai",
+        "TX-technology-open_weights",
+        "TX-technology-multimodal",
+        "TX-use_case-robotics_automation",
+        "TX-industry-telecommunications",
+        "TX-industry-media_entertainment",
+        "TX-technology-guardrails_safety",
+        "TX-technology-reasoning",
+        "TX-technology-fine_tuning",
+        "TX-technology-image_generation",
+        "TX-technology-inference_optimization",
+        "TX-technology-speech_audio"
+      ],
+      "relatedEntityIds": [
+        "EN-8395dc051feafc4c",
+        "EN-aa15d891a32a51b8",
+        "EN-0f3360879e746531",
+        "EN-51fd7dc086fcb858",
+        "EN-9e193e1ec8d75d41",
+        "EN-3ae50afab3e392b8",
+        "EN-936f01f91fdadf69",
+        "EN-2f354de778e6a6da",
+        "EN-b5738c169b693bee",
+        "EN-4e7e886400fe6a83",
+        "EN-1dc405a4cda895d0",
+        "EN-12ab68e37d104d27",
+        "EN-a3266ab9e10d6105",
+        "EN-ab9e3beebd83960d",
+        "EN-9fbf261b62c1d7c0",
+        "EN-11ef7b03c79c9bbd",
+        "EN-0b9ca57f53ba758b",
+        "EN-9bc22dcabf7f45b3",
+        "EN-171fa23d27b5894b",
+        "EN-e246a1f9a090075b"
+      ],
+      "firstSeen": "2025-03-18",
+      "lastSeen": "2026-07-18"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-90fe6f189b5ac87d",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-8d4321d936320802",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-4e7e886400fe6a83",
+      "object_type": "entity",
+      "event_id": "EV-69fbe85ca4ac81cd",
+      "claim_refs": [
+        "CL-0483c6335106b004",
+        "CL-287834de91975334",
+        "CL-8517d0048a510f14",
+        "CL-c0f347c7cb4fbb35"
+      ],
+      "source_refs": [
+        "SA-a222a969147a5044"
+      ],
+      "data_date": "2026-06-23",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [
     {
       "id": "TX-use_case-robotics_automation",
@@ -93,11 +246,13 @@
       "typeLabel": "应用场景",
       "valueId": "robotics_automation",
       "eventIds": [
+        "EV-cafe435ddd007821",
         "EV-434dcf1813a84ead",
         "EV-f059fd80d668c6bc",
         "EV-234ad54940674bf6",
         "EV-39848cdd62c00e59",
         "EV-4faa2bcf2e42e60c",
+        "EV-d1e8407177e11fdc",
         "EV-6b51b1b6fe22c540",
         "EV-3353bd96728c99e2",
         "EV-57565fc2e7502c59",
@@ -112,16 +267,20 @@
         "EV-ad64347138da72bb"
       ],
       "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-59ae856cd788d0f5",
+        "EN-0f3360879e746531",
+        "EN-80d387ccb3289295",
         "EN-6f21a653c48f4f19",
         "EN-4dbe391b8fcf977a",
-        "EN-8d4321d936320802",
         "EN-72138e570e5103e2",
         "EN-60094bcf5292c490",
         "EN-aa75c47729b4a292",
         "EN-8147e6fed86d42c1",
         "EN-96eebba49dbbf422",
+        "EN-c51e27d8efcff21f",
+        "EN-dbd6a2f6ddb95ca7",
         "EN-e3b1bf3dab957ffe",
-        "EN-0f3360879e746531",
         "EN-522d3edeb64a7ca4",
         "EN-c608c4787821de1b",
         "EN-101a515191c6be9e",
@@ -145,10 +304,11 @@
         "FDE-dadf0e9572889d3d"
       ],
       "hardwareIds": [
+        "HW-ceb55d9bc637c1d3",
         "HW-dca442211b264bbe"
       ],
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-07-18"
     },
     {
       "id": "TX-technology-guardrails_safety",

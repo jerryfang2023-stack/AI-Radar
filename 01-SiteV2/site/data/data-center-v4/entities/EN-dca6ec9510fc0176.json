@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T01:57:40.269Z",
-    "latestDataDate": "2026-07-17",
-    "currentDate": "2026-07-17",
-    "eventCount": 832,
-    "quarantinedEventCount": 60
+    "generatedAt": "2026-07-18T04:18:28.002Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 870,
+    "quarantinedEventCount": 59
   },
   "entity": {
     "id": "EN-dca6ec9510fc0176",
@@ -23,6 +23,7 @@
     "eventIds": [
       "EV-64fb6d791e19d10a",
       "EV-736404028b8ad33e",
+      "EV-05a87b578967c83e",
       "EV-11a8e196deb21300"
     ],
     "viewpointIds": [],
@@ -32,8 +33,8 @@
       "TX-technology-on_device"
     ],
     "relatedEntityIds": [],
-    "firstSeen": "2026-06-04",
-    "lastSeen": "2026-07-16",
+    "firstSeen": "2026-03-04",
+    "lastSeen": "2026-07-18",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
@@ -41,7 +42,9 @@
         "EV-736404028b8ad33e"
       ],
       "deployments": [],
-      "partnerships": [],
+      "partnerships": [
+        "EV-05a87b578967c83e"
+      ],
       "productsServices": [
         "EV-11a8e196deb21300"
       ],
@@ -50,6 +53,47 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-05a87b578967c83e",
+        "dataDate": "2026-07-18",
+        "date": "2026-03-04",
+        "eventType": "partnership",
+        "eventTypeLabel": "合作",
+        "eventGroup": "商业合作",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Singtel Group 与 Sierra 合作，借助 AI 智能体革新客户互动体验",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "enterprise_platform",
+            "dimensionName": "产品形态",
+            "name": "企业 AI 平台"
+          },
+          {
+            "dimensionId": "product_form",
+            "id": "ai_application",
+            "dimensionName": "产品形态",
+            "name": "AI 应用"
+          },
+          {
+            "dimensionId": "use_case",
+            "id": "customer_service",
+            "dimensionName": "应用场景",
+            "name": "客户服务"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体"
+          }
+        ],
+        "entityIds": [
+          "EN-19e41212c0556603",
+          "EN-dca6ec9510fc0176"
+        ]
+      },
       {
         "id": "EV-64fb6d791e19d10a",
         "dataDate": "2026-07-16",
@@ -174,7 +218,8 @@
       "typeLabel": "技术",
       "valueId": "agentic_execution",
       "eventIds": [
-        "EV-02882e6f5e1902c6",
+        "EV-1da2e46e39a57d33",
+        "EV-8b7cbb66a33a945d",
         "EV-38cce1b72977ff2b",
         "EV-427081ec574b43bb",
         "EV-095e1a90f14ccdb9",
@@ -263,6 +308,7 @@
         "EV-bbc1042dcf5ad317",
         "EV-01df8e489a34893b",
         "EV-afd0332ad8f5f05b",
+        "EV-0cce336f720bb7b7",
         "EV-36a9e4e908249381",
         "EV-02686922dd82c4aa",
         "EV-2fab4396000198d2",
@@ -285,6 +331,10 @@
         "EV-45be473baf6dfa4c",
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
+        "EV-05a87b578967c83e",
+        "EV-950237c6b3eb6343",
+        "EV-82e68f59d8584e4e",
+        "EV-a2dfe20983c8d6e4",
         "EV-385dc1ac09a211bd",
         "EV-a8a8f26c5128d894",
         "EV-653cbce2ccc79f8b",
@@ -407,12 +457,13 @@
         "EV-cf0551afe16562ef"
       ],
       "entityIds": [
-        "EN-2a920347dfcf07a7",
-        "EN-d5edfd3c9768e212",
-        "EN-ea3bd73e2b506e00",
+        "EN-cfd90af8403941bf",
+        "EN-366289432b214eda",
+        "EN-8d4321d936320802",
         "EN-fdcd4ec7d0546e95",
         "EN-9c8ae69b84f21a2e",
         "EN-45a46e581e91ce79",
+        "EN-ea3bd73e2b506e00",
         "EN-96eebba49dbbf422",
         "EN-4d748ebd71af03a7",
         "EN-7a9c94a8c201bcc2",
@@ -465,6 +516,7 @@
         "EN-befc92b3a019d04c",
         "EN-b10da733dff99be1",
         "EN-049b3253f4a8e2eb",
+        "EN-2a920347dfcf07a7",
         "EN-58b507456c52c9b3",
         "EN-10fd89e7d8a1c7c4",
         "EN-52f1bab72d488823",
@@ -494,11 +546,11 @@
         "EN-44512ea2b55bf535",
         "EN-d8cb1acd1b39854a",
         "EN-16fd849ce27f115b",
-        "EN-8d4321d936320802",
         "EN-f5791343a13abc71",
         "EN-28d0bd981118a907",
         "EN-916a98f0fa2a39af",
         "EN-8d291c7017252b07",
+        "EN-ceef9085ddc3348c",
         "EN-d9b1d7819af92e77",
         "EN-88e2cce43eeadb36",
         "EN-276a8bc458036a1a",
@@ -531,6 +583,11 @@
         "EN-373ac021a2c0bb2c",
         "EN-c13e2f4a44bb01ed",
         "EN-de5a1adf4fedcce1",
+        "EN-19e41212c0556603",
+        "EN-dca6ec9510fc0176",
+        "EN-60094bcf5292c490",
+        "EN-aa15d891a32a51b8",
+        "EN-eaaf22a384c26014",
         "EN-3f726694f178ed7a",
         "EN-3a9b395103419892",
         "EN-f3cfedbe8428c9f7",
@@ -628,7 +685,6 @@
         "EN-34e408ff65178379",
         "EN-2a817d99285e12c4",
         "EN-34da56029403e6f7",
-        "EN-dca6ec9510fc0176",
         "EN-623fbff8d5179d4e",
         "EN-fef851474e3c4311",
         "EN-19018cddd8946526",
@@ -725,7 +781,6 @@
         "EN-8941d14fe851d732",
         "EN-6fcba5d96a4fadfd",
         "EN-11ef7b03c79c9bbd",
-        "EN-60094bcf5292c490",
         "EN-a3266ab9e10d6105",
         "EN-9bc22dcabf7f45b3",
         "EN-10fce287b4b1464c",
@@ -772,14 +827,15 @@
         "FDE-ef9fdaf8134b8c2f",
         "FDE-352f1b6aaa2066b8",
         "FDE-08f12caedc3b2f13",
-        "FDE-27308b0a6cb2321a"
+        "FDE-27308b0a6cb2321a",
+        "FDE-3665b073634d4b9d"
       ],
       "hardwareIds": [
         "HW-2ce4c2fb193555e3",
         "HW-25ce41fab12d9ef2"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-07-18"
     },
     {
       "id": "TX-use_case-customer_service",
@@ -794,6 +850,7 @@
         "EV-e869f17214557633",
         "EV-8abf5adc3e72fbb8",
         "EV-3fb492fb45980541",
+        "EV-05a87b578967c83e",
         "EV-11a8e196deb21300",
         "EV-94d9c8d5ac1e10de"
       ],
@@ -809,6 +866,7 @@
         "EN-28d0bd981118a907",
         "EN-7d3194f79e645c42",
         "EN-88e2cce43eeadb36",
+        "EN-19e41212c0556603",
         "EN-34da56029403e6f7",
         "EN-623fbff8d5179d4e",
         "EN-fef851474e3c4311",
@@ -819,11 +877,12 @@
       ],
       "fdeIds": [
         "FDE-3e499215265a81d5",
-        "FDE-d08fed45110ab44b"
+        "FDE-d08fed45110ab44b",
+        "FDE-3665b073634d4b9d"
       ],
       "hardwareIds": [],
-      "firstSeen": "2026-06-02",
-      "lastSeen": "2026-07-16"
+      "firstSeen": "2026-03-04",
+      "lastSeen": "2026-07-18"
     },
     {
       "id": "TX-technology-on_device",
@@ -846,6 +905,7 @@
         "EV-c5b8faec223a4caf",
         "EV-4026c95d4c01b96e",
         "EV-0597e07d7e73051a",
+        "EV-08f736f61f2b46f3",
         "EV-02186ed7885f68fe",
         "EV-5613946bdd578a26",
         "EV-dd902b603e2e3dbc",
@@ -893,6 +953,7 @@
         "EN-1dc405a4cda895d0",
         "EN-c3ce0cc92b48bbd6",
         "EN-54ef981ab82586b5",
+        "EN-80d387ccb3289295",
         "EN-0899bccb1b028521",
         "EN-3dd90c2e1bf28b32",
         "EN-5d7b7e77768bfdfc"
@@ -900,9 +961,54 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-07-18"
     }
   ],
-  "fde": [],
+  "fde": [
+    {
+      "id": "FDE-3665b073634d4b9d",
+      "eventId": "EV-05a87b578967c83e",
+      "dataDate": "2026-07-18",
+      "date": "2026-03-04",
+      "title": "Singtel Group 与 Sierra 合作，借助 AI 智能体革新客户互动体验",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Sierra",
+      "vendor": "Singtel Group",
+      "industry": "未披露",
+      "useCase": "Sierra to transform customer engagement with AI | Sierra",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "Mr Ng Tian Chong, Chief Executive Officer, Singtel Singapore, said: “Putting our customers first has always been at the heart of what we do. The deployment of agentic AI across chat and voice is about delivering real value — more personalised experiences, greater convenience and faster, more responsive service. By using AI to support our customer service teams, we can ensure customers are promptly and well assisted, while empowering our agents to focus on more complex cases where human expertise matters most. Our AI agents are designed to understand local expressions and even Singlish, reflecting our roots as a homegrown company serving a diverse nation. This marks an important step in redefining how we build and sustain customer relationships in the AI era.”"
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "sourceUrl": "https://sierra.ai/customers/singtel",
+      "entityIds": [
+        "EN-19e41212c0556603",
+        "EN-dca6ec9510fc0176"
+      ]
+    }
+  ],
   "hardware": []
 }

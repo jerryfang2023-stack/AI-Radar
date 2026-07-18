@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T01:57:40.269Z",
-    "latestDataDate": "2026-07-17",
-    "currentDate": "2026-07-17",
-    "eventCount": 832,
-    "quarantinedEventCount": 60
+    "generatedAt": "2026-07-18T04:18:28.002Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 870,
+    "quarantinedEventCount": 59
   },
   "entity": {
     "id": "EN-41dcc2d4951f337b",
@@ -100,18 +100,23 @@
       "name": "Apple",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "苹果"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
         "EV-f282ab8740ff0096",
+        "EV-53f08daddd011dbb",
         "EV-8a8e894a84768ea5",
         "EV-afcd5426f5c01dc7",
         "EV-f5a50f1fed72fec3",
         "EV-e857f9d1c1478c70",
         "EV-fd21441fb6e143c3",
+        "EV-c237f5dc53f0a923",
+        "EV-3a74e4995b590507",
         "EV-8a9b12665a3e40a0",
         "EV-70cbf25f7ec2cc3a",
         "EV-8b9e4428074bde60",
@@ -147,6 +152,7 @@
         "EV-da062d02015f99fb",
         "EV-f6611268f119a172",
         "EV-0d1980baa83e1e6c",
+        "EV-2f7e6d3a68bbf08f",
         "EV-ef823877347ff40f",
         "EV-5cd10de5c12916f0",
         "EV-5613946bdd578a26",
@@ -168,13 +174,14 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
+        "TX-technology-code_generation",
         "TX-technology-long_context",
         "TX-use_case-cybersecurity",
-        "TX-industry-retail_ecommerce",
         "TX-technology-on_device",
-        "TX-industry-media_entertainment",
         "TX-technology-multimodal",
+        "TX-industry-media_entertainment",
         "TX-technology-tool_use",
         "TX-technology-fine_tuning",
         "TX-use_case-content_creation",
@@ -182,13 +189,19 @@
         "TX-technology-speech_audio"
       ],
       "relatedEntityIds": [
+        "EN-e463d05a14e8697f",
         "EN-af3ceabbe048a291",
+        "EN-1924fff8eb4d54ae",
         "EN-41dcc2d4951f337b",
+        "EN-1acf3a98930680ec",
+        "EN-45b5216872656eb3",
         "EN-dfabe4215e8c07cb",
-        "EN-729324072d368379"
+        "EN-729324072d368379",
+        "EN-40e307d789f77264",
+        "EN-0502bb9ed34980aa"
       ],
       "firstSeen": "2026-06-04",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-07-18"
     }
   ],
   "relationships": [
@@ -236,6 +249,7 @@
         "EV-c5b8faec223a4caf",
         "EV-4026c95d4c01b96e",
         "EV-0597e07d7e73051a",
+        "EV-08f736f61f2b46f3",
         "EV-02186ed7885f68fe",
         "EV-5613946bdd578a26",
         "EV-dd902b603e2e3dbc",
@@ -283,6 +297,7 @@
         "EN-1dc405a4cda895d0",
         "EN-c3ce0cc92b48bbd6",
         "EN-54ef981ab82586b5",
+        "EN-80d387ccb3289295",
         "EN-0899bccb1b028521",
         "EN-3dd90c2e1bf28b32",
         "EN-5d7b7e77768bfdfc"
@@ -290,7 +305,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-07-18"
     },
     {
       "id": "TX-technology-tool_use",

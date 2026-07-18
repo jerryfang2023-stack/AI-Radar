@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T01:57:40.269Z",
-    "latestDataDate": "2026-07-17",
-    "currentDate": "2026-07-17",
-    "eventCount": 832,
-    "quarantinedEventCount": 60
+    "generatedAt": "2026-07-18T04:18:28.002Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 870,
+    "quarantinedEventCount": 59
   },
   "entity": {
     "id": "EN-de6b71bf77ff4299",
@@ -114,6 +114,7 @@
         "EV-c5b8faec223a4caf",
         "EV-4026c95d4c01b96e",
         "EV-0597e07d7e73051a",
+        "EV-08f736f61f2b46f3",
         "EV-02186ed7885f68fe",
         "EV-5613946bdd578a26",
         "EV-dd902b603e2e3dbc",
@@ -161,6 +162,7 @@
         "EN-1dc405a4cda895d0",
         "EN-c3ce0cc92b48bbd6",
         "EN-54ef981ab82586b5",
+        "EN-80d387ccb3289295",
         "EN-0899bccb1b028521",
         "EN-3dd90c2e1bf28b32",
         "EN-5d7b7e77768bfdfc"
@@ -168,7 +170,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-07-18"
     },
     {
       "id": "TX-technology-multimodal",
@@ -177,9 +179,11 @@
       "typeLabel": "技术",
       "valueId": "multimodal",
       "eventIds": [
+        "EV-cafe435ddd007821",
         "EV-a9810b47e0408a05",
         "EV-f169db2fb75a1371",
         "EV-fd21441fb6e143c3",
+        "EV-ba89f9414be0b041",
         "EV-6b51b1b6fe22c540",
         "EV-70e3f88cb06a856c",
         "EV-3353bd96728c99e2",
@@ -201,14 +205,17 @@
         "EV-6b7917bd7edd4bde"
       ],
       "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-59ae856cd788d0f5",
+        "EN-0f3360879e746531",
+        "EN-80d387ccb3289295",
         "EN-193d220b421d776e",
         "EN-7df09a7717ef2feb",
         "EN-3a7bd3e2360a3d29",
         "EN-50537dab76505dfc",
         "EN-b5251b35f15bedc4",
+        "EN-3c6d89173e6636d7",
         "EN-e3b1bf3dab957ffe",
-        "EN-8d4321d936320802",
-        "EN-0f3360879e746531",
         "EN-7d3194f79e645c42",
         "EN-8f71c4871a160172",
         "EN-78624f0a98e78301",
@@ -246,9 +253,11 @@
         "EN-9c8ae69b84f21a2e"
       ],
       "fdeIds": [],
-      "hardwareIds": [],
+      "hardwareIds": [
+        "HW-ceb55d9bc637c1d3"
+      ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-07-18"
     },
     {
       "id": "TX-technology-inference_optimization",

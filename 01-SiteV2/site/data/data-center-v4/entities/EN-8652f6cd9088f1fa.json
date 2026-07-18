@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T01:57:40.269Z",
-    "latestDataDate": "2026-07-17",
-    "currentDate": "2026-07-17",
-    "eventCount": 832,
-    "quarantinedEventCount": 60
+    "generatedAt": "2026-07-18T04:18:28.002Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 870,
+    "quarantinedEventCount": 59
   },
   "entity": {
     "id": "EN-8652f6cd9088f1fa",
@@ -26,8 +26,8 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [
-      "TX-use_case-cybersecurity",
-      "TX-industry-automotive_transportation"
+      "TX-industry-automotive_transportation",
+      "TX-use_case-cybersecurity"
     ],
     "relatedEntityIds": [
       "EN-9fbf261b62c1d7c0"
@@ -141,6 +141,7 @@
         "EV-58c1cc3749294649",
         "EV-c0a65877001ed413",
         "EV-bd508dbe4205774f",
+        "EV-7963d8c78531f12d",
         "EV-7c899d5decafc42f",
         "EV-b920999c64aa9ef6",
         "EV-33292a33d0f4d599",
@@ -173,16 +174,16 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
+        "TX-industry-automotive_transportation",
         "TX-technology-code_generation",
         "TX-use_case-customer_service",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-software_development",
         "TX-use_case-cybersecurity",
-        "TX-industry-retail_ecommerce",
         "TX-technology-on_device",
         "TX-industry-technology",
-        "TX-industry-automotive_transportation",
         "TX-technology-model_context_protocol",
         "TX-industry-telecommunications",
         "TX-technology-reasoning",
@@ -203,7 +204,7 @@
         "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-04-16",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-07-18"
     }
   ],
   "relationships": [
@@ -251,6 +252,42 @@
     }
   ],
   "taxonomyNodes": [
+    {
+      "id": "TX-industry-automotive_transportation",
+      "name": "汽车与交通",
+      "nodeType": "industry",
+      "typeLabel": "行业",
+      "valueId": "automotive_transportation",
+      "eventIds": [
+        "EV-f6a72cddbda748b3",
+        "EV-d292329c0ec64c8f",
+        "EV-cafe435ddd007821",
+        "EV-9dab7fa55702e561",
+        "EV-6a2f3e9a22edff64"
+      ],
+      "entityIds": [
+        "EN-a5d2ae286d0d9e45",
+        "EN-96eebba49dbbf422",
+        "EN-f2476f180c07c1c6",
+        "EN-c04bd5ebd10ab696",
+        "EN-8d4321d936320802",
+        "EN-59ae856cd788d0f5",
+        "EN-0f3360879e746531",
+        "EN-80d387ccb3289295",
+        "EN-a23572554f6c861e",
+        "EN-8652f6cd9088f1fa",
+        "EN-fb2a436a76aa9fde",
+        "EN-9fbf261b62c1d7c0",
+        "EN-2f354de778e6a6da",
+        "EN-936f01f91fdadf69"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [
+        "HW-ceb55d9bc637c1d3"
+      ],
+      "firstSeen": "2026-06-02",
+      "lastSeen": "2026-07-18"
+    },
     {
       "id": "TX-use_case-cybersecurity",
       "name": "网络安全",
@@ -335,33 +372,6 @@
       "hardwareIds": [],
       "firstSeen": "2026-04-16",
       "lastSeen": "2026-07-17"
-    },
-    {
-      "id": "TX-industry-automotive_transportation",
-      "name": "汽车与交通",
-      "nodeType": "industry",
-      "typeLabel": "行业",
-      "valueId": "automotive_transportation",
-      "eventIds": [
-        "EV-d292329c0ec64c8f",
-        "EV-9dab7fa55702e561",
-        "EV-6a2f3e9a22edff64"
-      ],
-      "entityIds": [
-        "EN-f2476f180c07c1c6",
-        "EN-c04bd5ebd10ab696",
-        "EN-a23572554f6c861e",
-        "EN-8652f6cd9088f1fa",
-        "EN-fb2a436a76aa9fde",
-        "EN-9fbf261b62c1d7c0",
-        "EN-8d4321d936320802",
-        "EN-2f354de778e6a6da",
-        "EN-936f01f91fdadf69"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [],
-      "firstSeen": "2026-06-02",
-      "lastSeen": "2026-07-07"
     }
   ],
   "fde": [],

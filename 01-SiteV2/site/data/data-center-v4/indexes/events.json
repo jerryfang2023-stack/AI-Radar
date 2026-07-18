@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T01:57:40.269Z",
-    "latestDataDate": "2026-07-17",
-    "currentDate": "2026-07-17",
-    "eventCount": 832,
-    "quarantinedEventCount": 60
+    "generatedAt": "2026-07-18T04:18:28.002Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 870,
+    "quarantinedEventCount": 59
   },
   "eventTypes": {
     "model_release": {
@@ -82,27 +82,188 @@
   },
   "events": [
     {
-      "id": "EV-02882e6f5e1902c6",
-      "dataDate": "2026-07-17",
-      "date": "2026-07-16",
-      "updatedDate": "2026-07-17",
+      "id": "EV-0d4e656aa51f9a46",
+      "dataDate": "2026-07-18",
+      "date": "2026-07-17",
+      "updatedDate": "2026-07-18",
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
       "status": "completed",
       "statusLabel": "已完成",
       "publicationStatus": "verified",
-      "title": "Aina 从 Info Edge 等机构融资 550 万美元，用于构建 AI 硬件接口",
-      "originalTitle": "Aina Raises $5.5 Mn From Info Edge, Others To Build AI Hardware Interface",
-      "subject": "Aina",
-      "action": "Raises",
-      "object": "$5.5 Mn From Info Edge, Others To Build AI Hardware Interface",
+      "title": "Databricks 估值达 1880 亿美元，Coatue 领投新一轮融资",
+      "originalTitle": "",
+      "subject": "Databricks 估值达 1880 亿美元，Coatue 领投新一轮",
+      "action": "融资",
+      "object": "Databricks 估值达 1880 亿美元，Coatue 领投新一轮融资",
       "metrics": [
-        "$5.5 M",
-        "$5.5M",
-        "$5.5 million"
+        "$3 billion",
+        "$5 billion",
+        "$134 billion",
+        "$1B",
+        "$100 billion",
+        "$10 billion",
+        "$62 billion"
+      ],
+      "locations": [],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-2dc010636b9dce91"
+      ],
+      "entityNames": [
+        "Databricks"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/07/17/databricks-hits-188b-valuation-extending-its-run-as-ais-favorite-second-act",
+      "publisher": "TechCrunch：AI（RSS）"
+    },
+    {
+      "id": "EV-02882e6f5e1902c6",
+      "dataDate": "2026-07-18",
+      "date": "2026-07-16",
+      "updatedDate": "2026-07-18",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Aina 融资 550 万美元，推出超越触摸屏与键盘的 AI 时代新型硬件接口",
+      "originalTitle": "Aina raises $5.5M with new hardware interface for the age of AI beyond touchscreens and keyboards",
+      "subject": "Aina",
+      "action": "raises",
+      "object": "$5.5M with new hardware interface for the age of AI beyond touchscreens and keyboards",
+      "metrics": [
+        "$5.5M"
       ],
       "locations": [
+        "India"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-2a920347dfcf07a7"
+      ],
+      "entityNames": [
+        "Aina"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://globenewswire.com/news-release/2026/07/16/3328464/0/en/Aina-raises-5-5M-with-new-hardware-interface-for-the-age-of-AI-beyond-touchscreens-and-keyboards.html",
+      "publisher": "globenewswire.com"
+    },
+    {
+      "id": "EV-1da2e46e39a57d33",
+      "dataDate": "2026-07-18",
+      "date": "2026-07-16",
+      "updatedDate": "2026-07-18",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Sable 从红杉资本融资 4500 万美元，打造替代人类运行产品演示的 AI 智能体",
+      "originalTitle": "Sable raised $45 million from Sequoia to build an AI that runs product demos instead of humans",
+      "subject": "Sable",
+      "action": "raised",
+      "object": "$45 million from Sequoia to build an AI that runs product demos instead of humans",
+      "metrics": [
+        "$45 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "entityIds": [
+        "EN-cfd90af8403941bf"
+      ],
+      "entityNames": [
+        "Sable"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://thenextweb.com/news/sable-aidan-ai-employee-sequoia-45-million",
+      "publisher": "thenextweb.com"
+    },
+    {
+      "id": "EV-8b7cbb66a33a945d",
+      "dataDate": "2026-07-18",
+      "date": "2026-07-16",
+      "updatedDate": "2026-07-18",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Reo.Dev 完成 1130 万美元 A 轮融资，扩大面向工程团队的 AI 信号服务",
+      "originalTitle": "Reo.Dev raises $11.3M Series A to scale AI signals for Companies Selling to Engineering Teams",
+      "subject": "Reo.Dev",
+      "action": "raises",
+      "object": "$11.3M Series A to scale AI signals for Companies Selling to Engineering Teams",
+      "metrics": [
+        "$11.3 million",
+        "$15.3 million",
+        "100 million"
+      ],
+      "locations": [
+        "US",
         "India"
       ],
       "missingFields": [],
@@ -118,14 +279,7 @@
       "facets": {
         "product_form": [],
         "use_case": [],
-        "industry": [
-          {
-            "dimensionId": "industry",
-            "id": "manufacturing",
-            "dimensionName": "行业",
-            "name": "制造业"
-          }
-        ],
+        "industry": [],
         "deployment_model": [],
         "target_user": []
       },
@@ -135,12 +289,6 @@
           "dimensionName": "技术",
           "id": "agentic_execution",
           "name": "智能体"
-        },
-        {
-          "dimensionId": "industry",
-          "id": "manufacturing",
-          "dimensionName": "行业",
-          "name": "制造业"
         }
       ],
       "displayTags": [
@@ -149,28 +297,183 @@
           "dimensionName": "技术",
           "id": "agentic_execution",
           "name": "智能体"
+        }
+      ],
+      "entityIds": [
+        "EN-366289432b214eda",
+        "EN-8d4321d936320802"
+      ],
+      "entityNames": [
+        "Reo.Dev",
+        "NVIDIA"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://reo.dev/blog/reo-dev-series-a",
+      "publisher": "reo.dev"
+    },
+    {
+      "id": "EV-f6a72cddbda748b3",
+      "dataDate": "2026-07-18",
+      "date": "2026-07-16",
+      "updatedDate": "2026-07-18",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Whale 完成 4000 万美元 C3 轮扩展融资，C 轮总融资额达 1 亿美元，用于扩大全球企业 AI 运营规模",
+      "originalTitle": "Whale Raises $40M Series C3 Extension, Bringing Total Series C to $100M, to Scale Global Enterprise AI Operations",
+      "subject": "Whale",
+      "action": "Raises",
+      "object": "$40M Series C3 Extension, Bringing Total Series C to $100M, to Scale Global Enterprise AI Operations",
+      "metrics": [
+        "$100 million",
+        "$40 million"
+      ],
+      "locations": [
+        "Europe",
+        "Japan",
+        "Singapore"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "enterprise_operations",
+            "dimensionName": "应用场景",
+            "name": "企业运营自动化"
+          }
+        ],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "financial_services",
+            "dimensionName": "行业",
+            "name": "金融服务"
+          },
+          {
+            "dimensionId": "industry",
+            "id": "retail_ecommerce",
+            "dimensionName": "行业",
+            "name": "零售与电商"
+          },
+          {
+            "dimensionId": "industry",
+            "id": "manufacturing",
+            "dimensionName": "行业",
+            "name": "制造业"
+          },
+          {
+            "dimensionId": "industry",
+            "id": "automotive_transportation",
+            "dimensionName": "行业",
+            "name": "汽车与交通"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "id": "financial_services",
+          "dimensionName": "行业",
+          "name": "金融服务"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "enterprise_operations",
+          "dimensionName": "应用场景",
+          "name": "企业运营自动化"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "retail_ecommerce",
+          "dimensionName": "行业",
+          "name": "零售与电商"
         },
         {
           "dimensionId": "industry",
           "id": "manufacturing",
           "dimensionName": "行业",
           "name": "制造业"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "automotive_transportation",
+          "dimensionName": "行业",
+          "name": "汽车与交通"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "enterprise_operations",
+          "dimensionName": "应用场景",
+          "name": "企业运营自动化"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "financial_services",
+          "dimensionName": "行业",
+          "name": "金融服务"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "retail_ecommerce",
+          "dimensionName": "行业",
+          "name": "零售与电商"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "manufacturing",
+          "dimensionName": "行业",
+          "name": "制造业"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "automotive_transportation",
+          "dimensionName": "行业",
+          "name": "汽车与交通"
         }
       ],
       "entityIds": [
-        "EN-2a920347dfcf07a7",
-        "EN-d5edfd3c9768e212",
-        "EN-ea3bd73e2b506e00"
+        "EN-a5d2ae286d0d9e45",
+        "EN-96eebba49dbbf422"
       ],
       "entityNames": [
-        "Aina",
-        "Ultrahuman's former hardware VP",
-        "Meta"
+        "Whale",
+        "Intel"
       ],
       "productName": "",
       "products": [],
-      "sourceUrl": "https://inc42.com/buzz/aina-raises-5-5-mn-from-info-edge-ventures-360-one-asset-to-build-ai-native-interfaces",
-      "publisher": "inc42.com"
+      "sourceUrl": "https://prnewswire.com/news-releases/whale-raises-40m-series-c3-extension-bringing-total-series-c-to-100m-to-scale-global-enterprise-ai-operations-302827069.html",
+      "publisher": "prnewswire.com"
     },
     {
       "id": "EV-4eaf3aabecae6016",
@@ -1027,6 +1330,55 @@
       "products": [],
       "sourceUrl": "https://hadrius.com/insights/series-a",
       "publisher": "hadrius.com"
+    },
+    {
+      "id": "EV-dcbe916c6138e5cb",
+      "dataDate": "2026-07-18",
+      "date": "2026-07-12",
+      "updatedDate": "2026-07-18",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Auger 获 5000 万美元 B 轮融资，用于 AI 供应链自动化",
+      "originalTitle": "Auger secures $50M Series B for AI supply‑chain automation | SaaS M&A and VC Deals",
+      "subject": "Auger",
+      "action": "secures",
+      "object": "$50M Series B for AI supply‑chain automation | SaaS M&A and VC Deals",
+      "metrics": [
+        "$50M",
+        "$50 million",
+        "$150 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-814669895ed30dff",
+        "EN-cbc62794911ff31b",
+        "EN-ea3bd73e2b506e00"
+      ],
+      "entityNames": [
+        "Auger",
+        "Amazon",
+        "Meta"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://saasrise.com/deals/auger-raises-50m-series-b-funding-fd3edcf9-52ca-498b-8e30-2ce206f57550",
+      "publisher": "saasrise.com"
     },
     {
       "id": "EV-38cce1b72977ff2b",
@@ -12587,6 +12939,73 @@
       "publisher": "cybernewscentre.com"
     },
     {
+      "id": "EV-286846e21412f3c7",
+      "dataDate": "2026-07-18",
+      "date": "2025-10-09",
+      "updatedDate": "2026-07-18",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "AI 工作流自动化初创公司 n8n 获 1.8 亿美元融资，估值达 25 亿美元",
+      "originalTitle": "AI Workflow Automation Startup n8n Raises $180M, Valued At $2.5B",
+      "subject": "AI Workflow Automation Startup n8n",
+      "action": "Raises",
+      "object": "$180M, Valued At $2.5B",
+      "metrics": [
+        "$180M",
+        "$2.5B",
+        "$240M",
+        "$60M"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "enterprise_operations",
+            "dimensionName": "应用场景",
+            "name": "企业运营自动化"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "id": "enterprise_operations",
+          "dimensionName": "应用场景",
+          "name": "企业运营自动化"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "enterprise_operations",
+          "dimensionName": "应用场景",
+          "name": "企业运营自动化"
+        }
+      ],
+      "entityIds": [
+        "EN-636396f02b6571e4"
+      ],
+      "entityNames": [
+        "n8n"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://startuprise.co.uk/ai-workflow-automation-startup-n8n-raises-180m-valued-at-2-5b",
+      "publisher": "startuprise.co.uk"
+    },
+    {
       "id": "EV-23ae55daa341be06",
       "dataDate": "2026-07-14",
       "date": "2025-08-01",
@@ -12652,29 +13071,222 @@
       "publisher": "techcrunch.com"
     },
     {
+      "id": "EV-12ca2aae7bfcd080",
+      "dataDate": "2026-07-18",
+      "date": "2025-03-25",
+      "updatedDate": "2026-07-18",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "n8n 获 6000 万美元融资，推动 AI 驱动工作流自动化发展",
+      "originalTitle": "n8n Secures $60M to Advance AI-Powered Workflow Automation - Startup Ecosystem Canada",
+      "subject": "n8n",
+      "action": "Secures",
+      "object": "$60M to Advance AI-Powered Workflow Automation - Startup Ecosystem Canada",
+      "metrics": [
+        "$60M",
+        "$60 million",
+        "$270 million"
+      ],
+      "locations": [
+        "U.S.",
+        "Europe"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "enterprise_operations",
+            "dimensionName": "应用场景",
+            "name": "企业运营自动化"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "id": "enterprise_operations",
+          "dimensionName": "应用场景",
+          "name": "企业运营自动化"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "enterprise_operations",
+          "dimensionName": "应用场景",
+          "name": "企业运营自动化"
+        }
+      ],
+      "entityIds": [
+        "EN-636396f02b6571e4"
+      ],
+      "entityNames": [
+        "n8n"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://startupecosystem.ca/news/n8n-secures-60m-to-advance-ai-powered-workflow-automation",
+      "publisher": "startupecosystem.ca"
+    },
+    {
+      "id": "EV-53f08daddd011dbb",
+      "dataDate": "2026-07-18",
+      "date": "2026-07-17",
+      "updatedDate": "2026-07-18",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "withdrawn",
+      "statusLabel": "已撤回",
+      "publicationStatus": "withdrawn",
+      "title": "阿里千问输入法移动版上线：无广告无弹窗无需注册，支持 AI 自动润色",
+      "originalTitle": "",
+      "subject": "阿里千问输入法移动版",
+      "action": "上线",
+      "object": "：无广告无弹窗无需注册，支持 AI 自动润色",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-22e37dd5df0e9bea",
+        "EN-047364b9be67f665",
+        "EN-3a7bd3e2360a3d29",
+        "EN-8147e6fed86d42c1",
+        "EN-c608c4787821de1b"
+      ],
+      "entityNames": [
+        "阿里千问输入法移动版",
+        "Alibaba",
+        "Apple",
+        "OPPO",
+        "Xiaomi"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/978/194.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-9563aa162529aab0",
+      "dataDate": "2026-07-18",
+      "date": "2026-07-17",
+      "updatedDate": "2026-07-18",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "华为昇腾 950 超节点真机首展，昇腾 384 超节点已商用落地 750 多套",
+      "originalTitle": "",
+      "subject": "华为昇腾 950 超节点真机首展，昇腾 384 超节点已商用",
+      "action": "落地",
+      "object": "750 多套",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "healthcare_life_sciences",
+            "dimensionName": "行业",
+            "name": "医疗与生命科学"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "id": "healthcare_life_sciences",
+          "dimensionName": "行业",
+          "name": "医疗与生命科学"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "id": "healthcare_life_sciences",
+          "dimensionName": "行业",
+          "name": "医疗与生命科学"
+        }
+      ],
+      "entityIds": [
+        "EN-b81c8201acfc7639"
+      ],
+      "entityNames": [
+        "Huawei"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/978/019.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
       "id": "EV-cafe435ddd007821",
-      "dataDate": "2026-07-17",
+      "dataDate": "2026-07-18",
       "date": "2026-07-16",
-      "updatedDate": "2026-07-17",
+      "updatedDate": "2026-07-18",
       "eventType": "hardware_deployment",
       "eventTypeLabel": "硬件部署",
       "eventGroup": "AI 硬件",
       "status": "announced",
       "statusLabel": "已公布",
       "publicationStatus": "verified",
-      "title": "日本将购买英伟达Rubin芯片，用于构建机器人AI——《日本时报》",
-      "originalTitle": "Japan to buy Nvidia Rubin chips to build an AI for robots - The Japan Times",
-      "subject": "Japan to",
-      "action": "buy Nvidia Rubin chips",
-      "object": "to build an AI for robots - The Japan Times",
-      "metrics": [],
+      "title": "英伟达与日本发布全球首个国家级AI基础设施——Noetra联盟将建设140MW Rubin AI工厂，配备27,500块GPU",
+      "originalTitle": "Nvidia and Japan unveil world's first national AI infrastructure — Noetra consortium to build a 140MW Rubin AI factory with 27,500 GPUs | Tom's Hardware",
+      "subject": "Nvidia and Japan",
+      "action": "unveil world's first national AI infrastructure — Noetra consortium to build a 140MW Rubin AI factory",
+      "object": "with 27,500 GPUs | Tom's Hardware",
+      "metrics": [
+        "$5 million",
+        "$7 million",
+        "$1.9 billion",
+        "$2.7 billion",
+        "$55,000 ",
+        "$1.5 billion",
+        "140 MW"
+      ],
       "locations": [
-        "Japan",
-        "日本"
+        "Japan"
       ],
       "missingFields": [],
       "conflicts": [],
       "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
@@ -12695,9 +13307,22 @@
             "id": "data_infrastructure",
             "dimensionName": "产品形态",
             "name": "数据与模型基础设施"
+          },
+          {
+            "dimensionId": "product_form",
+            "id": "chip_accelerator",
+            "dimensionName": "产品形态",
+            "name": "芯片与加速器"
           }
         ],
-        "use_case": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "robotics_automation",
+            "dimensionName": "应用场景",
+            "name": "机器人与物理自动化"
+          }
+        ],
         "industry": [
           {
             "dimensionId": "industry",
@@ -12716,6 +13341,12 @@
             "id": "telecommunications",
             "dimensionName": "行业",
             "name": "电信"
+          },
+          {
+            "dimensionId": "industry",
+            "id": "automotive_transportation",
+            "dimensionName": "行业",
+            "name": "汽车与交通"
           }
         ],
         "deployment_model": [],
@@ -12725,8 +13356,26 @@
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
           "id": "embodied_ai",
           "name": "具身智能"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "manufacturing",
+          "dimensionName": "行业",
+          "name": "制造业"
         },
         {
           "dimensionId": "product_form",
@@ -12741,10 +13390,10 @@
           "name": "数据与模型基础设施"
         },
         {
-          "dimensionId": "industry",
-          "id": "manufacturing",
-          "dimensionName": "行业",
-          "name": "制造业"
+          "dimensionId": "product_form",
+          "id": "chip_accelerator",
+          "dimensionName": "产品形态",
+          "name": "芯片与加速器"
         },
         {
           "dimensionId": "industry",
@@ -12757,6 +13406,12 @@
           "id": "telecommunications",
           "dimensionName": "行业",
           "name": "电信"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "automotive_transportation",
+          "dimensionName": "行业",
+          "name": "汽车与交通"
         }
       ],
       "displayTags": [
@@ -12773,6 +13428,24 @@
           "name": "数据与模型基础设施"
         },
         {
+          "dimensionId": "product_form",
+          "id": "chip_accelerator",
+          "dimensionName": "产品形态",
+          "name": "芯片与加速器"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "embodied_ai",
@@ -12795,26 +13468,30 @@
           "id": "telecommunications",
           "dimensionName": "行业",
           "name": "电信"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "automotive_transportation",
+          "dimensionName": "行业",
+          "name": "汽车与交通"
         }
       ],
       "entityIds": [
-        "EN-59ae856cd788d0f5",
         "EN-8d4321d936320802",
+        "EN-59ae856cd788d0f5",
         "EN-0f3360879e746531",
-        "EN-e3b1bf3dab957ffe",
-        "EN-9700d41909cf810f"
+        "EN-80d387ccb3289295"
       ],
       "entityNames": [
-        "Japan",
         "NVIDIA",
+        "Japan",
         "Noetra",
-        "Japan Government",
-        "NVIDIA 联手日本政经界"
+        "SoftBank"
       ],
       "productName": "",
       "products": [],
-      "sourceUrl": "https://japantimes.co.jp/business/2026/07/16/japan-nvidia-rubin-chips-robots",
-      "publisher": "japantimes.co.jp"
+      "sourceUrl": "https://tomshardware.com/pc-components/gpus/nvidia-and-japans-noetra-consortium-to-build-140mw-rubin-ai-factory-with-27500-gpus",
+      "publisher": "tomshardware.com"
     },
     {
       "id": "EV-2d6d2dc0ead4be10",
@@ -18051,6 +18728,247 @@
       "publisher": "code200.io"
     },
     {
+      "id": "EV-0cce336f720bb7b7",
+      "dataDate": "2026-07-18",
+      "date": "2026-07-17",
+      "updatedDate": "2026-07-18",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "智能体互信互联互操作全球合作倡议发布，中国网信办提出十大行动方向",
+      "originalTitle": "",
+      "subject": "智能体互信互联互操作全球",
+      "action": "合作",
+      "object": "倡议发布，中国网信办提出十大行动方向",
+      "metrics": [],
+      "locations": [
+        "中国"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "entityIds": [
+        "EN-ceef9085ddc3348c"
+      ],
+      "entityNames": [
+        "智能体互信互联互操作全球"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/978/197.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-584212d254d882bc",
+      "dataDate": "2026-07-18",
+      "date": "2026-07-17",
+      "updatedDate": "2026-07-18",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "支付宝与阶跃达成系统级合作，AI版\"阿宝\"首期接入点外卖、出行等高频服务",
+      "originalTitle": "",
+      "subject": "支付宝与阶跃达成系统级",
+      "action": "合作",
+      "object": "，AI版\"阿宝\"首期接入点外卖、出行等高频服务",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        }
+      ],
+      "entityIds": [
+        "EN-88e2cce43eeadb36",
+        "EN-276a8bc458036a1a",
+        "EN-5865129ab91ef82e",
+        "EN-2c348893efb2316e"
+      ],
+      "entityNames": [
+        "Alipay",
+        "支付宝",
+        "阶跃达成系统级",
+        "StepFun"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/978/209.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-b4b5d141dac164c2",
+      "dataDate": "2026-07-18",
+      "date": "2026-07-17",
+      "updatedDate": "2026-07-18",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "英特尔扩大与 Google Cloud 合作，为全球员工提供 Gemini Enterprise 并加速芯片开发",
+      "originalTitle": "",
+      "subject": "英特尔扩大与 Google Cloud",
+      "action": "合作",
+      "object": "，为全球员工提供 Gemini Enterprise 并加速芯片开发",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [
+          {
+            "dimensionId": "deployment_model",
+            "id": "cloud",
+            "dimensionName": "部署形态",
+            "name": "云端"
+          }
+        ],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "deployment_model",
+          "id": "cloud",
+          "dimensionName": "部署形态",
+          "name": "云端"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "deployment_model",
+          "id": "cloud",
+          "dimensionName": "部署形态",
+          "name": "云端"
+        }
+      ],
+      "entityIds": [
+        "EN-c469eed207174c50",
+        "EN-d9b1d7819af92e77",
+        "EN-bbdefa2950f49882",
+        "EN-96eebba49dbbf422"
+      ],
+      "entityNames": [
+        "英特尔扩大",
+        "Google Cloud",
+        "Google",
+        "Intel"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/978/036.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-d5d0df6a3604eb4d",
+      "dataDate": "2026-07-18",
+      "date": "2026-07-17",
+      "updatedDate": "2026-07-18",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "《人工智能合作发展行动计划》《国际人工智能伦理治理行动计划》在上海发布",
+      "originalTitle": "",
+      "subject": "《人工智能",
+      "action": "合作",
+      "object": "发展行动计划》《国际人工智能伦理治理行动计划》在上海发布",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-52780324e0510436"
+      ],
+      "entityNames": [
+        "《人工智能"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/978/030.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
       "id": "EV-36a9e4e908249381",
       "dataDate": "2026-07-17",
       "date": "2026-07-16",
@@ -22201,6 +23119,1423 @@
       "publisher": "markets.ft.com"
     },
     {
+      "id": "EV-05a87b578967c83e",
+      "dataDate": "2026-07-18",
+      "date": "2026-03-04",
+      "updatedDate": "2026-07-18",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Singtel Group 与 Sierra 合作，借助 AI 智能体革新客户互动体验",
+      "originalTitle": "Singtel Group partners with Sierra to transform customer engagement with AI | Sierra",
+      "subject": "Singtel Group",
+      "action": "partners with",
+      "object": "Sierra to transform customer engagement with AI | Sierra",
+      "metrics": [],
+      "locations": [
+        "Singapore"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "enterprise_platform",
+            "dimensionName": "产品形态",
+            "name": "企业 AI 平台"
+          },
+          {
+            "dimensionId": "product_form",
+            "id": "ai_application",
+            "dimensionName": "产品形态",
+            "name": "AI 应用"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "customer_service",
+            "dimensionName": "应用场景",
+            "name": "客户服务"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "enterprise_platform",
+          "dimensionName": "产品形态",
+          "name": "企业 AI 平台"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "ai_application",
+          "dimensionName": "产品形态",
+          "name": "AI 应用"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "customer_service",
+          "dimensionName": "应用场景",
+          "name": "客户服务"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "enterprise_platform",
+          "dimensionName": "产品形态",
+          "name": "企业 AI 平台"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "ai_application",
+          "dimensionName": "产品形态",
+          "name": "AI 应用"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "customer_service",
+          "dimensionName": "应用场景",
+          "name": "客户服务"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "entityIds": [
+        "EN-19e41212c0556603",
+        "EN-dca6ec9510fc0176"
+      ],
+      "entityNames": [
+        "Singtel Group",
+        "Sierra"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://sierra.ai/customers/singtel",
+      "publisher": "sierra.ai"
+    },
+    {
+      "id": "EV-5b0734f2957b256d",
+      "dataDate": "2026-07-18",
+      "date": "2026-07-18",
+      "updatedDate": "2026-07-18",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Zyphra 发布 ZUNA1.1：Apache 2.0 许可的 EEG 基础模型，支持 0.5 至 30 秒可变长度输入",
+      "originalTitle": "",
+      "subject": "Zyphra",
+      "action": "发布 ZUNA1.1：Apache 2.0 许可的 EEG 基础模型",
+      "object": "，支持 0.5 至 30 秒可变长度输入",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-f956529816676cd1",
+        "EN-20ca085ff30e9339"
+      ],
+      "entityNames": [
+        "Zyphra",
+        "ZUNA1.1"
+      ],
+      "productName": "ZUNA1.1",
+      "products": [
+        {
+          "name": "ZUNA1.1",
+          "type": "模型",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://marktechpost.com/2026/07/17/zyphra-releases-zuna1-1-an-apache-2-0-eeg-foundation-model-with-variable-length-inputs-from-0-5-to-30-seconds",
+      "publisher": "MarkTechPost（RSS）"
+    },
+    {
+      "id": "EV-950237c6b3eb6343",
+      "dataDate": "2026-07-18",
+      "date": "2026-07-18",
+      "updatedDate": "2026-07-18",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "英伟达开源 Nemotron 3 Embed 系列 AI 模型，8B 版斩获 RTEB 榜首",
+      "originalTitle": "",
+      "subject": "英伟达",
+      "action": "开源 Nemotron 3 Embed 系列 AI 模型",
+      "object": "，8B 版斩获 RTEB 榜首",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "retrieval_augmented_generation",
+          "name": "RAG"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "retrieval_augmented_generation",
+          "name": "RAG"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "retrieval_augmented_generation",
+          "name": "RAG"
+        }
+      ],
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-60094bcf5292c490",
+        "EN-aa15d891a32a51b8"
+      ],
+      "entityNames": [
+        "NVIDIA",
+        "英伟达",
+        "Nemotron 3 Embed"
+      ],
+      "productName": "Nemotron 3 Embed",
+      "products": [
+        {
+          "name": "Nemotron 3 Embed",
+          "type": "模型",
+          "ownerNames": [
+            "NVIDIA"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/978/334.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-a68475d82ec939b5",
+      "dataDate": "2026-07-18",
+      "date": "2026-07-18",
+      "updatedDate": "2026-07-18",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "OpenAI 回应 GPT-5.6 Sol 意外删除用户文件：已采取措施降低风险",
+      "originalTitle": "",
+      "subject": "OpenAI",
+      "action": "product_release",
+      "object": "OpenAI 回应 GPT-5.6 Sol 意外删除用户文件：已采取措施降低风险",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-7839fb10a8f14c70"
+      ],
+      "entityNames": [
+        "OpenAI",
+        "GPT-5.6 Sol"
+      ],
+      "productName": "GPT-5.6 Sol",
+      "products": [
+        {
+          "name": "GPT-5.6 Sol",
+          "type": "产品/服务",
+          "ownerNames": [
+            "OpenAI"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/978/347.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-b925f50b55d3aa00",
+      "dataDate": "2026-07-18",
+      "date": "2026-07-18",
+      "updatedDate": "2026-07-18",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "宝马推出 ChatGPT 插件，让 AI 帮你选车",
+      "originalTitle": "",
+      "subject": "宝马",
+      "action": "推出",
+      "object": "ChatGPT 插件，让 AI 帮你选车",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "knowledge_search",
+            "dimensionName": "应用场景",
+            "name": "知识与搜索"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "id": "knowledge_search",
+          "dimensionName": "应用场景",
+          "name": "知识与搜索"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "knowledge_search",
+          "dimensionName": "应用场景",
+          "name": "知识与搜索"
+        }
+      ],
+      "entityIds": [
+        "EN-e5695af6f033f56e",
+        "EN-d1ad14d4ad57d207"
+      ],
+      "entityNames": [
+        "宝马",
+        "ChatGPT"
+      ],
+      "productName": "ChatGPT",
+      "products": [
+        {
+          "name": "ChatGPT",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/978/353.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-c237f5dc53f0a923",
+      "dataDate": "2026-07-18",
+      "date": "2026-07-18",
+      "updatedDate": "2026-07-18",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "OpenAI 更新 Mac 端 ChatGPT 应用，整合 Chat、Work 和 Codex 模式",
+      "originalTitle": "",
+      "subject": "OpenAI",
+      "action": "product_release",
+      "object": "OpenAI 更新 Mac 端 ChatGPT 应用，整合 Chat、Work 和 Codex 模式",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成"
+        }
+      ],
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-3a7bd3e2360a3d29",
+        "EN-d1ad14d4ad57d207"
+      ],
+      "entityNames": [
+        "OpenAI",
+        "Apple",
+        "ChatGPT"
+      ],
+      "productName": "ChatGPT",
+      "products": [
+        {
+          "name": "ChatGPT",
+          "type": "产品/服务",
+          "ownerNames": [
+            "OpenAI"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/978/358.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-debecca007e547d2",
+      "dataDate": "2026-07-18",
+      "date": "2026-07-18",
+      "updatedDate": "2026-07-18",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Claude Code v2.1.214 发布：修复权限绕过、添加 EndConversation 工具与多项 Bash 权限检查改进",
+      "originalTitle": "",
+      "subject": "Claude Code v2.1.214",
+      "action": "发布",
+      "object": "：修复权限绕过、添加 EndConversation 工具与多项 Bash 权限检查改进",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-9d40760b37c15a83",
+        "EN-855bed02b965c12c"
+      ],
+      "entityNames": [
+        "Anthropic",
+        "Claude Code v2.1.214",
+        "EndConversation"
+      ],
+      "productName": "Claude Code v2.1.214",
+      "products": [
+        {
+          "name": "Claude Code v2.1.214",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Anthropic"
+          ]
+        },
+        {
+          "name": "EndConversation",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Anthropic"
+          ]
+        }
+      ],
+      "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.214",
+      "publisher": "Claude Code：GitHub Releases（RSS）"
+    },
+    {
+      "id": "EV-3a74e4995b590507",
+      "dataDate": "2026-07-18",
+      "date": "2026-07-17",
+      "updatedDate": "2026-07-18",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "苹果与 OpenAI 法律战升级：约 40 名前员工收到苹果律师函",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "苹果与 OpenAI 法律战升级：约 40 名前员工收到苹果律师函",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-3a7bd3e2360a3d29"
+      ],
+      "entityNames": [
+        "OpenAI",
+        "Apple"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/978/277.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-6312476cc533b603",
+      "dataDate": "2026-07-18",
+      "date": "2026-07-17",
+      "updatedDate": "2026-07-18",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "中国气象局发布\"妈祖\"风云卫星 AI 工具箱",
+      "originalTitle": "",
+      "subject": "中国气象局",
+      "action": "发布",
+      "object": "\"妈祖\"风云卫星 AI 工具箱",
+      "metrics": [],
+      "locations": [
+        "中国"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-d90a8e9b152bf236"
+      ],
+      "entityNames": [
+        "妈祖"
+      ],
+      "productName": "妈祖",
+      "products": [
+        {
+          "name": "妈祖",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/978/103.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-6fbbbfcdcec81df4",
+      "dataDate": "2026-07-18",
+      "date": "2026-07-17",
+      "updatedDate": "2026-07-18",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "阿里通义实验室发布 Wan-Streamer v0.2，AI 视频电话响应延迟仅 550ms",
+      "originalTitle": "",
+      "subject": "阿里通义实验室",
+      "action": "发布",
+      "object": "Wan-Streamer v0.2，AI 视频电话响应延迟仅 550ms",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成"
+        }
+      ],
+      "entityIds": [
+        "EN-ec1c8f558ff61e34",
+        "EN-047364b9be67f665",
+        "EN-d83624eb3ab9192e",
+        "EN-925a688403e10965"
+      ],
+      "entityNames": [
+        "阿里通义实验室",
+        "Alibaba",
+        "Wan-Streamer",
+        "Wan-Streamer v0.2"
+      ],
+      "productName": "Wan-Streamer",
+      "products": [
+        {
+          "name": "Wan-Streamer",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Alibaba"
+          ]
+        },
+        {
+          "name": "Wan-Streamer v0.2",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Alibaba"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/978/125.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-7963d8c78531f12d",
+      "dataDate": "2026-07-18",
+      "date": "2026-07-17",
+      "updatedDate": "2026-07-18",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "微软正开发AI漏洞检测工具\"感知项目\"，类似Anthropic Mythos模型，最快7月发布",
+      "originalTitle": "",
+      "subject": "微软正开发AI漏洞检测工具\"感知项目\"，类似Anthropic Mythos模型，最快7月",
+      "action": "发布",
+      "object": "微软正开发AI漏洞检测工具\"感知项目\"，类似Anthropic Mythos模型，最快7月发布",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-9fbf261b62c1d7c0",
+        "EN-c70eca6b0f88f44d",
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "Microsoft",
+        "Anthropic",
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/978/292.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-82e68f59d8584e4e",
+      "dataDate": "2026-07-18",
+      "date": "2026-07-17",
+      "updatedDate": "2026-07-18",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "阿里千问 AI 眼镜将升级为智能体眼镜，联合 Bose 打造首款 AI 智能体耳机",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "阿里千问 AI 眼镜将升级为智能体眼镜，联合 Bose 打造首款 AI 智能体耳机",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "ai_device",
+            "dimensionName": "产品形态",
+            "name": "AI 设备"
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "ai_device",
+          "dimensionName": "产品形态",
+          "name": "AI 设备"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "ai_device",
+          "dimensionName": "产品形态",
+          "name": "AI 设备"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "entityIds": [
+        "EN-047364b9be67f665"
+      ],
+      "entityNames": [
+        "Alibaba"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/978/215.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-a255cfc0dab44564",
+      "dataDate": "2026-07-18",
+      "date": "2026-07-17",
+      "updatedDate": "2026-07-18",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "谷歌 Google Vids 新增数字分身功能，Gemini Omni 模型同步登陆",
+      "originalTitle": "",
+      "subject": "谷歌 Google Vids",
+      "action": "新增",
+      "object": "数字分身功能，Gemini Omni 模型同步登陆",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-bfcfd9c3adf5ab28",
+        "EN-bbdefa2950f49882",
+        "EN-c4593a0a1bbaf20b"
+      ],
+      "entityNames": [
+        "谷歌 Google Vids",
+        "Google",
+        "Vids"
+      ],
+      "productName": "Vids",
+      "products": [
+        {
+          "name": "Vids",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Google"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/978/022.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-a2dfe20983c8d6e4",
+      "dataDate": "2026-07-18",
+      "date": "2026-07-17",
+      "updatedDate": "2026-07-18",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "国家超算互联网发布科学智能体开发者招募计划，可享全国首个十万卡AI超集群算力",
+      "originalTitle": "",
+      "subject": "国家超算互联网",
+      "action": "发布",
+      "object": "科学智能体开发者招募计划，可享全国首个十万卡AI超集群算力",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "entityIds": [
+        "EN-eaaf22a384c26014"
+      ],
+      "entityNames": [
+        "国家超算互联网"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/978/307.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-ba89f9414be0b041",
+      "dataDate": "2026-07-18",
+      "date": "2026-07-17",
+      "updatedDate": "2026-07-18",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "文远知行发布物理 AI 大模型 WITT，引入\"最小物理事实单元\"概念",
+      "originalTitle": "",
+      "subject": "文远知行",
+      "action": "发布物理 AI 大模型",
+      "object": "WITT，引入\"最小物理事实单元\"概念",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "vision_language",
+          "name": "视觉语言"
+        }
+      ],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          }
+        ],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "technology",
+            "dimensionName": "行业",
+            "name": "科技与软件"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "vision_language",
+          "name": "视觉语言"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "technology",
+          "dimensionName": "行业",
+          "name": "科技与软件"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "vision_language",
+          "name": "视觉语言"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "technology",
+          "dimensionName": "行业",
+          "name": "科技与软件"
+        }
+      ],
+      "entityIds": [
+        "EN-3c6d89173e6636d7"
+      ],
+      "entityNames": [
+        "文远知行"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/978/055.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-ca0beb75aaf1c156",
+      "dataDate": "2026-07-18",
+      "date": "2026-07-17",
+      "updatedDate": "2026-07-18",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "百度沈抖：为每位员工每月发放1000元额度，体验市面主流大模型产品",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "百度沈抖：为每位员工每月发放1000元额度，体验市面主流大模型产品",
+      "metrics": [
+        "49%",
+        "52%"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        }
+      ],
+      "entityIds": [
+        "EN-a89151ba4b5ac0f2"
+      ],
+      "entityNames": [
+        "Baidu"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/978/016.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-d1e8407177e11fdc",
+      "dataDate": "2026-07-18",
+      "date": "2026-07-17",
+      "updatedDate": "2026-07-18",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "BrainCo 强脑科技发布全球首个脑控机器人训练平台，10 分钟解锁意念控制",
+      "originalTitle": "",
+      "subject": "BrainCo 强脑科技",
+      "action": "发布",
+      "object": "全球首个脑控机器人训练平台，10 分钟解锁意念控制",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "robotics_automation",
+            "dimensionName": "应用场景",
+            "name": "机器人与物理自动化"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        }
+      ],
+      "entityIds": [
+        "EN-c51e27d8efcff21f",
+        "EN-dbd6a2f6ddb95ca7"
+      ],
+      "entityNames": [
+        "BrainCo 强脑科技",
+        "BrainCo"
+      ],
+      "productName": "BrainCo",
+      "products": [
+        {
+          "name": "BrainCo",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/978/289.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-e62f69c0601488d1",
+      "dataDate": "2026-07-18",
+      "date": "2026-07-17",
+      "updatedDate": "2026-07-18",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "AMD 在 ROCm 7.14 中新增支持 Ryzen AI MAX PRO 400 系列处理器",
+      "originalTitle": "",
+      "subject": "AMD 在 ROCm 7.14 中",
+      "action": "新增",
+      "object": "支持 Ryzen AI MAX PRO 400 系列处理器",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-8b0a3af52a26dde3",
+        "EN-630d75372b4d1eb5",
+        "EN-6066d80012446517"
+      ],
+      "entityNames": [
+        "AI MAX PRO 400",
+        "Ryzen AI MAX PRO",
+        "ROCm 7.14"
+      ],
+      "productName": "AI MAX PRO 400",
+      "products": [
+        {
+          "name": "AI MAX PRO 400",
+          "type": "产品/服务",
+          "ownerNames": []
+        },
+        {
+          "name": "Ryzen AI MAX PRO",
+          "type": "产品/服务",
+          "ownerNames": []
+        },
+        {
+          "name": "ROCm 7.14",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/978/028.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-fafd5ad8c5d0422e",
+      "dataDate": "2026-07-18",
+      "date": "2026-07-17",
+      "updatedDate": "2026-07-18",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "抖音严打 AI 生成虚假灾害画面，发布防汛期涉灾信息治理公告",
+      "originalTitle": "",
+      "subject": "抖音严打 AI 生成虚假灾害画面，",
+      "action": "发布",
+      "object": "防汛期涉灾信息治理公告",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-eabfeb57c12fb236"
+      ],
+      "entityNames": [
+        "抖音严打 AI 生成虚假灾害画面"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/978/291.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-fd8ecce5de2f667d",
+      "dataDate": "2026-07-18",
+      "date": "2026-07-17",
+      "updatedDate": "2026-07-18",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "优酷总裁吴倩：积极拥抱 AI，但 AI 无法取代真人演员",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "优酷总裁吴倩：积极拥抱 AI，但 AI 无法取代真人演员",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成"
+        }
+      ],
+      "entityIds": [
+        "EN-047364b9be67f665"
+      ],
+      "entityNames": [
+        "Alibaba"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/978/040.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-fec9e1b9ae2955ee",
+      "dataDate": "2026-07-18",
+      "date": "2026-07-17",
+      "updatedDate": "2026-07-18",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "中国气象局启动\"风和\"千亿参数气象大模型全球开源计划",
+      "originalTitle": "",
+      "subject": "中国气象局启动\"风和\"千亿参数气象",
+      "action": "大模型全球开源",
+      "object": "计划",
+      "metrics": [],
+      "locations": [
+        "中国"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [
+          {
+            "dimensionId": "deployment_model",
+            "id": "cloud",
+            "dimensionName": "部署形态",
+            "name": "云端"
+          }
+        ],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "deployment_model",
+          "id": "cloud",
+          "dimensionName": "部署形态",
+          "name": "云端"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "deployment_model",
+          "id": "cloud",
+          "dimensionName": "部署形态",
+          "name": "云端"
+        }
+      ],
+      "entityIds": [
+        "EN-2613d360c34cdc8c"
+      ],
+      "entityNames": [
+        "千亿参数气象"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/978/082.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
       "id": "EV-0d5a32aca724d30e",
       "dataDate": "2026-07-17",
       "date": "2026-07-17",
@@ -22546,6 +24881,110 @@
       "products": [],
       "sourceUrl": "https://ithome.com/0/977/841.htm",
       "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-4b18cefe4ac0c15c",
+      "dataDate": "2026-07-18",
+      "date": "2026-07-16",
+      "updatedDate": "2026-07-18",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "CHELSIO 推出支持 400Gb RDMA 的 AI 互连平台，面向下一代数据中心、存储及 AI 基础设施",
+      "originalTitle": "CHELSIO LAUNCHES AI INTERCONNECT PLATFORM WITH 400Gb RDMA FOR NEXT-GENERATION DATA CENTER, STORAGE, AND AI INFRASTRUCTURE",
+      "subject": "CHELSIO",
+      "action": "LAUNCHES",
+      "object": "AI INTERCONNECT PLATFORM WITH 400Gb RDMA FOR NEXT-GENERATION DATA CENTER, STORAGE, AND AI INFRASTRUCTURE",
+      "metrics": [
+        "400Gb"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "chip_accelerator",
+            "dimensionName": "产品形态",
+            "name": "芯片与加速器"
+          },
+          {
+            "dimensionId": "product_form",
+            "id": "data_infrastructure",
+            "dimensionName": "产品形态",
+            "name": "数据与模型基础设施"
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "id": "chip_accelerator",
+          "dimensionName": "产品形态",
+          "name": "芯片与加速器"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "data_infrastructure",
+          "dimensionName": "产品形态",
+          "name": "数据与模型基础设施"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "chip_accelerator",
+          "dimensionName": "产品形态",
+          "name": "芯片与加速器"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "data_infrastructure",
+          "dimensionName": "产品形态",
+          "name": "数据与模型基础设施"
+        }
+      ],
+      "entityIds": [
+        "EN-6c82c31832e9c3e9",
+        "EN-b0eea3ad7b0d0a48",
+        "EN-9cc48d787f521562",
+        "EN-9c515f4c878bdb2e"
+      ],
+      "entityNames": [
+        "CHELSIO",
+        "NEXT-GENERATION DATA CENTER",
+        "AI INTERCONNECT PLATFORM WITH",
+        "RDMA FOR NEXT-GENERATION DATA"
+      ],
+      "productName": "NEXT-GENERATION DATA CENTER",
+      "products": [
+        {
+          "name": "NEXT-GENERATION DATA CENTER",
+          "type": "产品/服务",
+          "ownerNames": []
+        },
+        {
+          "name": "AI INTERCONNECT PLATFORM WITH",
+          "type": "产品/服务",
+          "ownerNames": []
+        },
+        {
+          "name": "RDMA FOR NEXT-GENERATION DATA",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://prnewswire.com/news-releases/chelsio-launches-ai-interconnect-platform-with-400gb-rdma-for-next-generation-data-center-storage-and-ai-infrastructure-302827141.html",
+      "publisher": "prnewswire.com"
     },
     {
       "id": "EV-51645a3b1e730105",
@@ -36540,12 +38979,16 @@
         {
           "name": "Genie One",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Databricks"
+          ]
         },
         {
           "name": "Launches Genie One",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Databricks"
+          ]
         }
       ],
       "sourceUrl": "https://databricks.com/company/newsroom/press-releases/databricks-launches-genie-one-all-new-agentic-coworker-every-team",
@@ -55925,6 +58368,99 @@
       "publisher": "supermicro.com"
     },
     {
+      "id": "EV-8993e021ac17df4a",
+      "dataDate": "2026-07-18",
+      "date": "2025-12-02",
+      "updatedDate": "2026-07-18",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "亚马逊推出本地部署的英伟达‘AI 工厂’挑战竞争对手",
+      "originalTitle": "Amazon challenges competitors with on-premises Nvidia 'AI Factories'",
+      "subject": "Amazon",
+      "action": "product_release",
+      "object": "Amazon challenges competitors with on-premises Nvidia 'AI Factories'",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "chip_accelerator",
+            "dimensionName": "产品形态",
+            "name": "芯片与加速器"
+          }
+        ],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "manufacturing",
+            "dimensionName": "行业",
+            "name": "制造业"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "id": "manufacturing",
+          "dimensionName": "行业",
+          "name": "制造业"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "chip_accelerator",
+          "dimensionName": "产品形态",
+          "name": "芯片与加速器"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "chip_accelerator",
+          "dimensionName": "产品形态",
+          "name": "芯片与加速器"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "manufacturing",
+          "dimensionName": "行业",
+          "name": "制造业"
+        }
+      ],
+      "entityIds": [
+        "EN-cbc62794911ff31b",
+        "EN-8d4321d936320802",
+        "EN-a614180064f7ef60"
+      ],
+      "entityNames": [
+        "Amazon",
+        "NVIDIA",
+        "AI Factories"
+      ],
+      "productName": "AI Factories",
+      "products": [
+        {
+          "name": "AI Factories",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Amazon"
+          ]
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2025/12/02/amazon-challenges-competitors-with-on-premises-nvidia-ai-factories",
+      "publisher": "techcrunch.com"
+    },
+    {
       "id": "EV-f1912ab7c46288f3",
       "dataDate": "2026-07-14",
       "date": "2025-09-26",
@@ -56212,6 +58748,192 @@
       ],
       "sourceUrl": "https://techcrunch.com/2025/02/11/mattoboard-picks-up-2m-to-bring-ai-visual-search-to-its-3d-mood-board-for-designers",
       "publisher": "techcrunch.com"
+    },
+    {
+      "id": "EV-08f736f61f2b46f3",
+      "dataDate": "2026-07-18",
+      "date": "2026-07-17",
+      "updatedDate": "2026-07-18",
+      "eventType": "organization_people",
+      "eventTypeLabel": "组织与人员",
+      "eventGroup": "组织、政策与法律",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "英伟达将机器人AI引入设备端，日本顶级制造商加入Cosmos联盟",
+      "originalTitle": "NVIDIA Brings Robot AI On-Device as Japan's Top Manufacturers Join Cosmos Coalition",
+      "subject": "NVIDIA Brings Robot AI On-Device as Japan's Top Manufacturers",
+      "action": "Join",
+      "object": "Cosmos Coalition",
+      "metrics": [
+        "65 billion"
+      ],
+      "locations": [
+        "Japan"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        }
+      ],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          }
+        ],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "manufacturing",
+            "dimensionName": "行业",
+            "name": "制造业"
+          }
+        ],
+        "deployment_model": [
+          {
+            "dimensionId": "deployment_model",
+            "id": "edge_device",
+            "dimensionName": "部署形态",
+            "name": "边缘与端侧"
+          }
+        ],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        },
+        {
+          "dimensionId": "deployment_model",
+          "id": "edge_device",
+          "dimensionName": "部署形态",
+          "name": "边缘与端侧"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "manufacturing",
+          "dimensionName": "行业",
+          "name": "制造业"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        },
+        {
+          "dimensionId": "deployment_model",
+          "id": "edge_device",
+          "dimensionName": "部署形态",
+          "name": "边缘与端侧"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "manufacturing",
+          "dimensionName": "行业",
+          "name": "制造业"
+        }
+      ],
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-80d387ccb3289295"
+      ],
+      "entityNames": [
+        "NVIDIA",
+        "SoftBank"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techtimes.com/articles/320801/20260717/nvidia-brings-robot-ai-device-japans-top-manufacturers-join-cosmos-coalition.htm",
+      "publisher": "techtimes.com"
+    },
+    {
+      "id": "EV-2f7e6d3a68bbf08f",
+      "dataDate": "2026-07-18",
+      "date": "2026-07-17",
+      "updatedDate": "2026-07-18",
+      "eventType": "lawsuit_settlement",
+      "eventTypeLabel": "诉讼与和解",
+      "eventGroup": "组织、政策与法律",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "苹果对OpenAI的诉讼来得不是时候",
+      "originalTitle": "Apple&#8217;s lawsuit couldn&#8217;t come at a worse time for OpenAI",
+      "subject": "Apple&#8217;s",
+      "action": "lawsuit",
+      "object": "couldn&#8217;t come at a worse time for OpenAI",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-3a7bd3e2360a3d29",
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "Apple",
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/podcast/apples-lawsuit-couldnt-come-at-a-worse-time-for-openai",
+      "publisher": "TechCrunch AI"
     },
     {
       "id": "EV-11a3893cb86fef69",

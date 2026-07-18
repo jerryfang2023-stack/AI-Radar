@@ -4,27 +4,27 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T01:57:40.269Z",
-    "latestDataDate": "2026-07-17",
-    "currentDate": "2026-07-17",
-    "eventCount": 832,
-    "quarantinedEventCount": 60,
+    "generatedAt": "2026-07-18T04:18:28.002Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 870,
+    "quarantinedEventCount": 59,
     "entityHistory": {
       "entityVersion": "ENTITY-V1.0",
       "relationshipVersion": "RELATION-V2.0",
-      "generatedAt": "2026-07-18T01:57:40.262Z",
+      "generatedAt": "2026-07-18T04:18:27.942Z",
       "coverage": {
         "startDate": "2020-08-25",
-        "endDate": "2026-07-17",
-        "distinctDataDays": 55
+        "endDate": "2026-07-18",
+        "distinctDataDays": 56
       },
       "counts": {
-        "entities": 967,
-        "organizations": 550,
-        "products": 403,
+        "entities": 1004,
+        "organizations": 571,
+        "products": 419,
         "people": 14,
         "taxonomyNodes": 43,
-        "relationships": 365
+        "relationships": 374
       }
     }
   },
@@ -52,8 +52,8 @@
       "aliases": [],
       "tags": [
         "智能体",
-        "医疗与生命科学",
         "金融服务",
+        "医疗与生命科学",
         "推理能力"
       ],
       "eventIds": [
@@ -97,9 +97,9 @@
       "aliases": [],
       "tags": [
         "智能体",
+        "零售与电商",
         "制造业",
         "医疗与生命科学",
-        "零售与电商",
         "电信"
       ],
       "eventIds": [
@@ -113,7 +113,7 @@
         "EV-ad269fada2269f35"
       ],
       "firstSeen": "2026-05-20",
-      "lastSeen": "2026-07-17",
+      "lastSeen": "2026-07-18",
       "relatedEntityIds": [],
       "relationIds": [],
       "type": "公司/机构",
@@ -124,6 +124,7 @@
       "name": "Alibaba",
       "sourceType": "organization_candidate",
       "aliases": [
+        "阿里",
         "阿里巴巴"
       ],
       "tags": [
@@ -136,7 +137,11 @@
       "eventIds": [
         "EV-43b7f45e9bd7ec9b",
         "EV-3d93d1da8cb64462",
+        "EV-53f08daddd011dbb",
         "EV-e1a4bc40db4a9d8f",
+        "EV-6fbbbfcdcec81df4",
+        "EV-82e68f59d8584e4e",
+        "EV-fd8ecce5de2f667d",
         "EV-f6ac2938949f74ec",
         "EV-70cbf25f7ec2cc3a",
         "EV-8b9e4428074bde60",
@@ -157,7 +162,7 @@
         "EV-710b145230faa692"
       ],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-07-17",
+      "lastSeen": "2026-07-18",
       "relatedEntityIds": [
         "EN-2daac3672aeafcbd"
       ],
@@ -178,10 +183,11 @@
       ],
       "tags": [
         "智能体",
-        "客户服务",
-        "零售与电商"
+        "零售与电商",
+        "客户服务"
       ],
       "eventIds": [
+        "EV-584212d254d882bc",
         "EV-02686922dd82c4aa",
         "EV-3fb492fb45980541",
         "EV-2ffc3377977da114",
@@ -189,7 +195,7 @@
         "EV-2c1fc2143d7d4a6a"
       ],
       "firstSeen": "2026-07-07",
-      "lastSeen": "2026-07-17",
+      "lastSeen": "2026-07-18",
       "relatedEntityIds": [],
       "relationIds": [],
       "type": "公司/机构",
@@ -199,17 +205,16 @@
       "id": "EN-cbc62794911ff31b",
       "name": "Amazon",
       "sourceType": "organization_candidate",
-      "aliases": [
-        "Amazon Bedrock"
-      ],
+      "aliases": [],
       "tags": [
         "智能体",
+        "零售与电商",
+        "制造业",
         "客户服务",
-        "医疗与生命科学",
-        "网络安全",
-        "零售与电商"
+        "医疗与生命科学"
       ],
       "eventIds": [
+        "EV-dcbe916c6138e5cb",
         "EV-02548003157849bb",
         "EV-8b0f056571d68269",
         "EV-49c6291694fb6c7b",
@@ -226,33 +231,37 @@
         "EV-c108e7cc2df7faf4",
         "EV-4e55361d8324dd49",
         "EV-94d9c8d5ac1e10de",
-        "EV-b4e7187a9bd1de0e"
+        "EV-b4e7187a9bd1de0e",
+        "EV-8993e021ac17df4a"
       ],
-      "firstSeen": "2026-01-20",
-      "lastSeen": "2026-07-16",
+      "firstSeen": "2025-12-02",
+      "lastSeen": "2026-07-18",
       "relatedEntityIds": [
+        "EN-a614180064f7ef60",
         "EN-9fbf261b62c1d7c0"
       ],
       "relationIds": [
+        "REL2-616077a1ca249bdd",
         "REL2-96579082da72d315"
       ],
       "type": "公司/机构",
-      "productIds": []
+      "productIds": [
+        "EN-a614180064f7ef60"
+      ]
     },
     {
       "id": "EN-c70eca6b0f88f44d",
       "name": "Anthropic",
       "sourceType": "organization_candidate",
       "aliases": [
-        "Claude Code",
-        "Claude"
+        "Claude Code"
       ],
       "tags": [
         "智能体",
-        "制造业",
-        "代码生成",
-        "医疗与生命科学",
-        "企业运营自动化"
+        "金融服务",
+        "企业运营自动化",
+        "零售与电商",
+        "制造业"
       ],
       "eventIds": [
         "EV-e41fc65eb014893f",
@@ -289,6 +298,8 @@
         "EV-b240fb11e65b018e",
         "EV-bad301e14b034fbd",
         "EV-c0a65877001ed413",
+        "EV-debecca007e547d2",
+        "EV-7963d8c78531f12d",
         "EV-0d5a32aca724d30e",
         "EV-a8a8f26c5128d894",
         "EV-51645a3b1e730105",
@@ -414,11 +425,13 @@
         "EV-77ddb45e31018552"
       ],
       "firstSeen": "2026-05-14",
-      "lastSeen": "2026-07-17",
+      "lastSeen": "2026-07-18",
       "relatedEntityIds": [
         "EN-cb4754c48f8023d0",
-        "EN-3a9b395103419892",
         "EN-729324072d368379",
+        "EN-9d40760b37c15a83",
+        "EN-855bed02b965c12c",
+        "EN-3a9b395103419892",
         "EN-7d3194f79e645c42",
         "EN-9612b6f6884e062f",
         "EN-ef11a801c5bd3673",
@@ -428,11 +441,9 @@
         "EN-40bad8003c5ee358",
         "EN-85a7b756f3a700d0",
         "EN-fab30471ea65d627",
-        "EN-b8c236d640d6a5fb",
-        "EN-db68703d8d719bd0",
-        "EN-9f15bb7e29e191eb",
         "EN-3a13916345b60fad",
         "EN-77fe4e790d5bc756",
+        "EN-9f15bb7e29e191eb",
         "EN-5a4c2be958c0af72",
         "EN-a18162bf7228289d",
         "EN-8218ed4e007b0ad1",
@@ -444,10 +455,10 @@
         "EN-5fc6493a57c5f14e",
         "EN-ad2cec837f9cb98f",
         "EN-29eb5745fdfcb027",
-        "EN-7ec0224e483d913b",
         "EN-e61ac98ebb45d0db",
         "EN-e4ffb7bd879b89da",
         "EN-1e4fdc17666edc33",
+        "EN-db68703d8d719bd0",
         "EN-c8185a1a8a6595ad",
         "EN-d65f09457cc098a8",
         "EN-ea4ea767088c4a22",
@@ -456,6 +467,7 @@
         "EN-b59c577ed73536c6",
         "EN-4db5fd308d379cab",
         "EN-96eebba49dbbf422",
+        "EN-b8c236d640d6a5fb",
         "EN-d8494bb34d6ddc43",
         "EN-540dfc8c5e1b1136",
         "EN-9ab4135a1cdb0a8c",
@@ -464,6 +476,10 @@
         "EN-f1360a6b087edd47"
       ],
       "relationIds": [
+        "REL2-024d68c4c3b28df4",
+        "REL2-51a19bbdb9ca6c04",
+        "REL2-7c1b64878b8c0916",
+        "REL2-83d179c5c9172e99",
         "REL2-0cb62fd98fddc0c2",
         "REL2-b57989ec1fbf9442",
         "REL2-f1dcfa6f5b5a61d1",
@@ -492,18 +508,12 @@
         "REL2-50a48b48e37ac5d6",
         "REL2-f85747f8bd77d623",
         "REL2-12eaf5c2c27cba5d",
-        "REL2-484ed3617e7af912",
-        "REL2-7d031f47ccd2e11e",
-        "REL2-9a7c139f77979c7d",
         "REL2-d732460240ae0fca",
-        "REL2-0bd9ac4ccd97ebc4",
-        "REL2-113686cc75d37b0f",
         "REL2-2a47bb839eee70c5",
         "REL2-4a1d4b369fcb4e01",
         "REL2-886a4967fdb3dc93",
         "REL2-998379aeafd7d0d2",
         "REL2-a3a6bf494b1a1a36",
-        "REL2-b5f95a4bf76881e0",
         "REL2-dab817e33be8bb4a",
         "REL2-e982c4ff256825bb",
         "REL2-2942b0593c04c0e0",
@@ -541,13 +551,9 @@
         "REL2-03a9fee9f0f0adc9",
         "REL2-2aa854ad8fe0b270",
         "REL2-7a9d57e6c56ce06a",
-        "REL2-a0b5b92e12c2fe06",
-        "REL2-28de794251f86cd7",
-        "REL2-2f06b45ec0e97621",
         "REL2-31c5e5852137b7ce",
         "REL2-7ff3a4fe80072755",
         "REL2-98d3a14eddaaeb6f",
-        "REL2-98fd209d09005a1c",
         "REL2-fd71230f58245d0a",
         "REL2-033a94af457640ca",
         "REL2-11a2008dc241f658",
@@ -580,7 +586,6 @@
         "REL2-1f7f0f143aeb3e68",
         "REL2-2993f4f400172e9c",
         "REL2-2f5dbd3362cdb904",
-        "REL2-30448a7da675c5ae",
         "REL2-3497f48813b3f63c",
         "REL2-3a1d014891c1856b",
         "REL2-3ee2424266e0f256",
@@ -616,6 +621,10 @@
       "type": "公司/机构",
       "productIds": [
         "EN-cb4754c48f8023d0",
+        "EN-729324072d368379",
+        "EN-9d40760b37c15a83",
+        "EN-855bed02b965c12c",
+        "EN-cb4754c48f8023d0",
         "EN-3a9b395103419892",
         "EN-729324072d368379",
         "EN-729324072d368379",
@@ -643,16 +652,10 @@
         "EN-cb4754c48f8023d0",
         "EN-fab30471ea65d627",
         "EN-729324072d368379",
-        "EN-b8c236d640d6a5fb",
-        "EN-db68703d8d719bd0",
-        "EN-729324072d368379",
-        "EN-9f15bb7e29e191eb",
-        "EN-3a13916345b60fad",
         "EN-729324072d368379",
         "EN-3a13916345b60fad",
         "EN-77fe4e790d5bc756",
         "EN-9f15bb7e29e191eb",
-        "EN-729324072d368379",
         "EN-729324072d368379",
         "EN-5a4c2be958c0af72",
         "EN-a18162bf7228289d",
@@ -691,12 +694,8 @@
         "EN-729324072d368379",
         "EN-cb4754c48f8023d0",
         "EN-29eb5745fdfcb027",
-        "EN-729324072d368379",
-        "EN-7ec0224e483d913b",
-        "EN-cb4754c48f8023d0",
         "EN-cb4754c48f8023d0",
         "EN-e61ac98ebb45d0db",
-        "EN-729324072d368379",
         "EN-729324072d368379",
         "EN-cb4754c48f8023d0",
         "EN-1e4fdc17666edc33",
@@ -728,7 +727,6 @@
         "EN-729324072d368379",
         "EN-729324072d368379",
         "EN-db68703d8d719bd0",
-        "EN-729324072d368379",
         "EN-b59c577ed73536c6",
         "EN-b59c577ed73536c6",
         "EN-729324072d368379",
@@ -766,21 +764,26 @@
       "id": "EN-3a7bd3e2360a3d29",
       "name": "Apple",
       "sourceType": "organization_candidate",
-      "aliases": [],
+      "aliases": [
+        "苹果"
+      ],
       "tags": [
         "智能体",
+        "零售与电商",
         "制造业",
-        "长上下文",
-        "网络安全",
-        "零售与电商"
+        "代码生成",
+        "长上下文"
       ],
       "eventIds": [
         "EV-f282ab8740ff0096",
+        "EV-53f08daddd011dbb",
         "EV-8a8e894a84768ea5",
         "EV-afcd5426f5c01dc7",
         "EV-f5a50f1fed72fec3",
         "EV-e857f9d1c1478c70",
         "EV-fd21441fb6e143c3",
+        "EV-c237f5dc53f0a923",
+        "EV-3a74e4995b590507",
         "EV-8a9b12665a3e40a0",
         "EV-70cbf25f7ec2cc3a",
         "EV-8b9e4428074bde60",
@@ -816,6 +819,7 @@
         "EV-da062d02015f99fb",
         "EV-f6611268f119a172",
         "EV-0d1980baa83e1e6c",
+        "EV-2f7e6d3a68bbf08f",
         "EV-ef823877347ff40f",
         "EV-5cd10de5c12916f0",
         "EV-5613946bdd578a26",
@@ -835,35 +839,59 @@
         "EV-a8f1204b54ae6475"
       ],
       "firstSeen": "2026-06-04",
-      "lastSeen": "2026-07-17",
+      "lastSeen": "2026-07-18",
       "relatedEntityIds": [
+        "EN-e463d05a14e8697f",
         "EN-af3ceabbe048a291",
+        "EN-1924fff8eb4d54ae",
         "EN-41dcc2d4951f337b",
+        "EN-1acf3a98930680ec",
+        "EN-45b5216872656eb3",
         "EN-dfabe4215e8c07cb",
-        "EN-729324072d368379"
+        "EN-729324072d368379",
+        "EN-40e307d789f77264",
+        "EN-0502bb9ed34980aa"
       ],
       "relationIds": [
+        "REL2-2c82bf25c532a4e1",
         "REL2-04014818e378c5b2",
         "REL2-13cc501e416c5363",
         "REL2-1f4fedf249db5eac",
+        "REL2-27b659bc5e5fe00b",
+        "REL2-3d00d7538e09943f",
         "REL2-4c312f21ff8a7d97",
+        "REL2-63b9531c409ae293",
+        "REL2-74ad6f207729d6ae",
         "REL2-7e8e744c63046bed",
         "REL2-937c0d5c5660f23a",
         "REL2-98975e70ea79d2d8",
+        "REL2-aad42c03de906e55",
         "REL2-c4a43c83788c77f4",
-        "REL2-f5b7bf87ac9c1791"
+        "REL2-ced495a5aea356e0",
+        "REL2-ea61135fcfa1e38f",
+        "REL2-f5b7bf87ac9c1791",
+        "REL2-fe1b4cdbd7469d6e"
       ],
       "type": "公司/机构",
       "productIds": [
+        "EN-e463d05a14e8697f",
         "EN-af3ceabbe048a291",
         "EN-af3ceabbe048a291",
         "EN-af3ceabbe048a291",
+        "EN-af3ceabbe048a291",
+        "EN-1924fff8eb4d54ae",
         "EN-41dcc2d4951f337b",
+        "EN-1acf3a98930680ec",
+        "EN-45b5216872656eb3",
         "EN-dfabe4215e8c07cb",
         "EN-729324072d368379",
         "EN-dfabe4215e8c07cb",
+        "EN-40e307d789f77264",
         "EN-dfabe4215e8c07cb",
-        "EN-af3ceabbe048a291"
+        "EN-0502bb9ed34980aa",
+        "EN-af3ceabbe048a291",
+        "EN-af3ceabbe048a291",
+        "EN-40e307d789f77264"
       ]
     },
     {
@@ -887,26 +915,21 @@
       "name": "Baidu",
       "sourceType": "organization_candidate",
       "aliases": [
-        "百度文库"
+        "百度"
       ],
       "tags": [
         "数据分析"
       ],
       "eventIds": [
+        "EV-ca0beb75aaf1c156",
         "EV-daf1e21f8ccbf839"
       ],
       "firstSeen": "2026-07-16",
-      "lastSeen": "2026-07-17",
-      "relatedEntityIds": [
-        "EN-33ea25778e18d372"
-      ],
-      "relationIds": [
-        "REL2-0bf66d98de87a2bb"
-      ],
+      "lastSeen": "2026-07-18",
+      "relatedEntityIds": [],
+      "relationIds": [],
       "type": "公司/机构",
-      "productIds": [
-        "EN-33ea25778e18d372"
-      ]
+      "productIds": []
     },
     {
       "id": "EN-0899bccb1b028521",
@@ -1094,6 +1117,37 @@
       ]
     },
     {
+      "id": "EN-2dc010636b9dce91",
+      "name": "Databricks",
+      "sourceType": "organization_candidate",
+      "aliases": [],
+      "tags": [
+        "智能体"
+      ],
+      "eventIds": [
+        "EV-0d4e656aa51f9a46",
+        "EV-226a363f84676808"
+      ],
+      "firstSeen": "2026-06-29",
+      "lastSeen": "2026-07-18",
+      "relatedEntityIds": [
+        "EN-9e5d9b729e161734",
+        "EN-a42d5d95234db6c4",
+        "EN-77fe4e790d5bc756"
+      ],
+      "relationIds": [
+        "REL2-29ff756a63e2680a",
+        "REL2-61089e71e75b311e",
+        "REL2-d3912411ad14ed94"
+      ],
+      "type": "公司/机构",
+      "productIds": [
+        "EN-9e5d9b729e161734",
+        "EN-a42d5d95234db6c4",
+        "EN-77fe4e790d5bc756"
+      ]
+    },
+    {
       "id": "EN-6f7ac1823da81d2e",
       "name": "DeepSeek",
       "sourceType": "organization_candidate",
@@ -1232,15 +1286,13 @@
       "id": "EN-bbdefa2950f49882",
       "name": "Google",
       "sourceType": "organization_candidate",
-      "aliases": [
-        "谷歌"
-      ],
+      "aliases": [],
       "tags": [
         "智能体",
-        "代码生成",
+        "金融服务",
         "企业运营自动化",
-        "软件开发",
-        "混合专家模型"
+        "零售与电商",
+        "代码生成"
       ],
       "eventIds": [
         "EV-e41fc65eb014893f",
@@ -1252,6 +1304,7 @@
         "EV-dbbe3fd637be213f",
         "EV-4a162c41bb82f325",
         "EV-cf76f090a1a20a36",
+        "EV-b4b5d141dac164c2",
         "EV-36a9e4e908249381",
         "EV-ef6464cf7f764835",
         "EV-b95539d17772a4ce",
@@ -1259,6 +1312,7 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
+        "EV-a255cfc0dab44564",
         "EV-04efb4eecbb8125f",
         "EV-6359c9f6c2609a38",
         "EV-c2d784ef0a5376f8",
@@ -1325,7 +1379,7 @@
         "EV-39460c022e56badd"
       ],
       "firstSeen": "2026-05-22",
-      "lastSeen": "2026-07-17",
+      "lastSeen": "2026-07-18",
       "relatedEntityIds": [
         "EN-96eebba49dbbf422",
         "EN-81e577740888ca6d",
@@ -1343,7 +1397,6 @@
         "EN-0e008e2c06144ec8",
         "EN-f2c032b19edb7900",
         "EN-d4c56709df757c56",
-        "EN-6470c8584a9d35d3",
         "EN-b5c336c0dd1ff29c",
         "EN-eb0cc8fb584389db",
         "EN-d56aa2f9908f566a",
@@ -1364,20 +1417,14 @@
         "REL2-f92ce4e61c880fbe",
         "REL2-c2d351d111dce63d",
         "REL2-1967b453be7e7724",
-        "REL2-638b55900181fbf2",
         "REL2-c1743ef4560536bd",
-        "REL2-d1256a41edab3bfb",
         "REL2-eba841d5627207a4",
         "REL2-c93d8383872437bb",
-        "REL2-aee904f23d9a2e04",
         "REL2-3831db0cf6e33a54",
         "REL2-d2c9607aa40e247c",
         "REL2-eab334edbd3e9d50",
-        "REL2-44ebd8a7378accce",
         "REL2-d205049958061bb1",
-        "REL2-219aab1487d17fc3",
         "REL2-572d299c04663eb3",
-        "REL2-653e76cf1e48b6fd",
         "REL2-5dd04feec47dcb54"
       ],
       "type": "公司/机构",
@@ -1394,19 +1441,13 @@
         "EN-8d323d8bba783aa3",
         "EN-9ff1a58a589bc318",
         "EN-01f1074bb52ff605",
-        "EN-01f1074bb52ff605",
-        "EN-0e008e2c06144ec8",
         "EN-0e008e2c06144ec8",
         "EN-f2c032b19edb7900",
         "EN-d4c56709df757c56",
-        "EN-6470c8584a9d35d3",
         "EN-b5c336c0dd1ff29c",
         "EN-eb0cc8fb584389db",
         "EN-8d323d8bba783aa3",
         "EN-d56aa2f9908f566a",
-        "EN-d56aa2f9908f566a",
-        "EN-4baef0e41cbd7ae2",
-        "EN-4baef0e41cbd7ae2",
         "EN-4baef0e41cbd7ae2",
         "EN-e3db3da2b7dc6057"
       ]
@@ -1486,9 +1527,9 @@
       "aliases": [],
       "tags": [
         "智能体",
+        "金融服务",
         "制造业",
-        "医疗与生命科学",
-        "金融服务"
+        "医疗与生命科学"
       ],
       "eventIds": [
         "EV-df789745fb926bfd",
@@ -1496,6 +1537,26 @@
       ],
       "firstSeen": "2026-05-22",
       "lastSeen": "2026-07-15",
+      "relatedEntityIds": [],
+      "relationIds": [],
+      "type": "公司/机构",
+      "productIds": []
+    },
+    {
+      "id": "EN-b81c8201acfc7639",
+      "name": "Huawei",
+      "sourceType": "organization_candidate",
+      "aliases": [
+        "华为"
+      ],
+      "tags": [
+        "医疗与生命科学"
+      ],
+      "eventIds": [
+        "EV-9563aa162529aab0"
+      ],
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-18",
       "relatedEntityIds": [],
       "relationIds": [],
       "type": "公司/机构",
@@ -1579,12 +1640,13 @@
       "aliases": [],
       "tags": [
         "智能体",
-        "制造业",
-        "代码生成",
-        "客户服务",
-        "医疗与生命科学"
+        "金融服务",
+        "企业运营自动化",
+        "零售与电商",
+        "制造业"
       ],
       "eventIds": [
+        "EV-f6a72cddbda748b3",
         "EV-4eaf3aabecae6016",
         "EV-2dff32c1b6f813e4",
         "EV-305ec93673f4f12e",
@@ -1627,6 +1689,7 @@
         "EV-4dd25589d834060d",
         "EV-6617850e0b014051",
         "EV-c81cb21337a9bb98",
+        "EV-b4b5d141dac164c2",
         "EV-36a9e4e908249381",
         "EV-181b425d2a600cad",
         "EV-2c87c8ea47cbd1b6",
@@ -1679,7 +1742,7 @@
         "EV-9705a8de3c2e9653"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-17",
+      "lastSeen": "2026-07-18",
       "relatedEntityIds": [
         "EN-bbdefa2950f49882",
         "EN-c70eca6b0f88f44d"
@@ -1788,14 +1851,14 @@
       "aliases": [],
       "tags": [
         "智能体",
-        "制造业",
         "医疗与生命科学",
+        "多模态",
         "媒体与娱乐",
-        "多模态"
+        "安全护栏"
       ],
       "eventIds": [
-        "EV-02882e6f5e1902c6",
         "EV-5df885dbd24b6d00",
+        "EV-dcbe916c6138e5cb",
         "EV-427081ec574b43bb",
         "EV-e41fc65eb014893f",
         "EV-974a6b7d0e0efef2",
@@ -1833,7 +1896,7 @@
         "EV-8fcecabca2e92b40"
       ],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-07-17",
+      "lastSeen": "2026-07-18",
       "relatedEntityIds": [
         "EN-e3863f813fe47240",
         "EN-de1afc61dd4d2cea",
@@ -1890,10 +1953,10 @@
       ],
       "tags": [
         "智能体",
+        "零售与电商",
         "制造业",
-        "代码生成",
-        "客户服务",
-        "医疗与生命科学"
+        "汽车与交通",
+        "代码生成"
       ],
       "eventIds": [
         "EV-52115fee0e716170",
@@ -1913,6 +1976,7 @@
         "EV-58c1cc3749294649",
         "EV-c0a65877001ed413",
         "EV-bd508dbe4205774f",
+        "EV-7963d8c78531f12d",
         "EV-7c899d5decafc42f",
         "EV-b920999c64aa9ef6",
         "EV-33292a33d0f4d599",
@@ -1943,7 +2007,7 @@
         "EV-62df953d81def866"
       ],
       "firstSeen": "2026-04-16",
-      "lastSeen": "2026-07-17",
+      "lastSeen": "2026-07-18",
       "relatedEntityIds": [
         "EN-8652f6cd9088f1fa",
         "EN-597d8c4afa5fe3d6",
@@ -2025,10 +2089,10 @@
       "aliases": [],
       "tags": [
         "智能体",
+        "汽车与交通",
         "代码生成",
         "长上下文",
-        "端侧",
-        "汽车与交通"
+        "端侧"
       ],
       "eventIds": [
         "EV-d4e44892226be468",
@@ -2092,10 +2156,10 @@
       ],
       "tags": [
         "智能体",
+        "金融服务",
         "视觉语言",
         "代码生成",
-        "软件开发",
-        "长上下文"
+        "软件开发"
       ],
       "eventIds": [
         "EV-fd21441fb6e143c3",
@@ -2138,17 +2202,17 @@
       "aliases": [],
       "tags": [
         "制造业",
+        "汽车与交通",
         "医疗与生命科学",
         "具身智能",
-        "电信",
-        "机器人与物理自动化"
+        "多模态"
       ],
       "eventIds": [
         "EV-cafe435ddd007821",
         "EV-6b51b1b6fe22c540"
       ],
       "firstSeen": "2026-07-16",
-      "lastSeen": "2026-07-17",
+      "lastSeen": "2026-07-18",
       "relatedEntityIds": [
         "EN-8d4321d936320802"
       ],
@@ -2214,15 +2278,18 @@
       "id": "EN-8d4321d936320802",
       "name": "NVIDIA",
       "sourceType": "organization_candidate",
-      "aliases": [],
+      "aliases": [
+        "英伟达"
+      ],
       "tags": [
         "智能体",
         "制造业",
+        "汽车与交通",
         "代码生成",
-        "医疗与生命科学",
-        "长上下文"
+        "医疗与生命科学"
       ],
       "eventIds": [
+        "EV-8b7cbb66a33a945d",
         "EV-4eaf3aabecae6016",
         "EV-87432dbb99cd6033",
         "EV-6e516b6e68def9cf",
@@ -2245,6 +2312,7 @@
         "EV-4faa2bcf2e42e60c",
         "EV-9ee3c0ec243b6129",
         "EV-58c1cc3749294649",
+        "EV-950237c6b3eb6343",
         "EV-6b51b1b6fe22c540",
         "EV-c2800c1c5a3f568f",
         "EV-1ff169120ed385f6",
@@ -2278,38 +2346,52 @@
         "EV-d2ac9700c86913da",
         "EV-d43a561da59b2897",
         "EV-f5755fccd5731063",
+        "EV-8993e021ac17df4a",
         "EV-34929bdd016dc8d6",
+        "EV-08f736f61f2b46f3",
         "EV-710b145230faa692",
         "EV-0b49d637d7c07ce0"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-17",
+      "lastSeen": "2026-07-18",
       "relatedEntityIds": [
+        "EN-8395dc051feafc4c",
+        "EN-aa15d891a32a51b8",
         "EN-0f3360879e746531",
         "EN-51fd7dc086fcb858",
         "EN-9e193e1ec8d75d41",
-        "EN-8395dc051feafc4c",
+        "EN-3ae50afab3e392b8",
         "EN-936f01f91fdadf69",
         "EN-2f354de778e6a6da",
         "EN-b5738c169b693bee",
+        "EN-4e7e886400fe6a83",
         "EN-1dc405a4cda895d0",
         "EN-12ab68e37d104d27",
         "EN-a3266ab9e10d6105",
         "EN-ab9e3beebd83960d",
         "EN-9fbf261b62c1d7c0",
+        "EN-11ef7b03c79c9bbd",
+        "EN-0b9ca57f53ba758b",
+        "EN-9bc22dcabf7f45b3",
+        "EN-171fa23d27b5894b",
         "EN-e246a1f9a090075b"
       ],
       "relationIds": [
+        "REL2-7f816066d001139c",
+        "REL2-cd31c7f1b13d1c27",
         "REL2-d2669b3b21d3263a",
         "REL2-1408b94e058f06a8",
         "REL2-bcb7c3de6286e47d",
         "REL2-e4812cbfd6a3e864",
+        "REL2-4a2775d9b6cc170e",
+        "REL2-7d68b1ea85abc4f5",
         "REL2-a4891d1374721693",
         "REL2-e99366da7529db53",
         "REL2-484ba978461cb818",
         "REL2-ae83b89a043b00cb",
         "REL2-b1345cf8cfaa1fc3",
         "REL2-f7a741b4f3ac69a1",
+        "REL2-90fe6f189b5ac87d",
         "REL2-91990e036fb085fd",
         "REL2-acf63709fbb86f09",
         "REL2-ef91b4f5f5b2e805",
@@ -2317,23 +2399,38 @@
         "REL2-c03f8010834c7954",
         "REL2-8405910e0468b2a8",
         "REL2-e9ef6e697ef06f93",
+        "REL2-4ba72572dcf15f72",
+        "REL2-8d172c1dd8efb325",
+        "REL2-bb89bf36d71b6905",
+        "REL2-cd95b9638b93b057",
         "REL2-f07aa4dea6ae17e2",
+        "REL2-f1a8de714fc4b399",
         "REL2-f2b2168c03c2eef8"
       ],
       "type": "公司/机构",
       "productIds": [
+        "EN-8395dc051feafc4c",
+        "EN-aa15d891a32a51b8",
         "EN-51fd7dc086fcb858",
         "EN-9e193e1ec8d75d41",
         "EN-8395dc051feafc4c",
+        "EN-8395dc051feafc4c",
+        "EN-3ae50afab3e392b8",
         "EN-936f01f91fdadf69",
         "EN-2f354de778e6a6da",
+        "EN-4e7e886400fe6a83",
         "EN-1dc405a4cda895d0",
         "EN-12ab68e37d104d27",
         "EN-8395dc051feafc4c",
         "EN-8395dc051feafc4c",
         "EN-a3266ab9e10d6105",
         "EN-ab9e3beebd83960d",
+        "EN-11ef7b03c79c9bbd",
+        "EN-0b9ca57f53ba758b",
+        "EN-9bc22dcabf7f45b3",
+        "EN-171fa23d27b5894b",
         "EN-1dc405a4cda895d0",
+        "EN-a3266ab9e10d6105",
         "EN-e246a1f9a090075b"
       ]
     },
@@ -2342,15 +2439,14 @@
       "name": "OpenAI",
       "sourceType": "organization_candidate",
       "aliases": [
-        "Codex",
         "GPT-5.6"
       ],
       "tags": [
         "智能体",
-        "制造业",
-        "代码生成",
-        "客户服务",
-        "医疗与生命科学"
+        "金融服务",
+        "企业运营自动化",
+        "零售与电商",
+        "制造业"
       ],
       "eventIds": [
         "EV-4da1a7c4d527eb69",
@@ -2389,6 +2485,10 @@
         "EV-3fbfb89a10efd42f",
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
+        "EV-a68475d82ec939b5",
+        "EV-c237f5dc53f0a923",
+        "EV-3a74e4995b590507",
+        "EV-7963d8c78531f12d",
         "EV-0d5a32aca724d30e",
         "EV-70e3f88cb06a856c",
         "EV-7c899d5decafc42f",
@@ -2469,6 +2569,7 @@
         "EV-a4f052325d0ef230",
         "EV-ca420d07e12369f1",
         "EV-773ffcc6e1df56fa",
+        "EV-2f7e6d3a68bbf08f",
         "EV-5cd10de5c12916f0",
         "EV-067f57f6e6ffa6ce",
         "EV-da6678e4e865e00e",
@@ -2495,15 +2596,15 @@
         "EV-4900ddf0686f4bbc"
       ],
       "firstSeen": "2026-05-19",
-      "lastSeen": "2026-07-17",
+      "lastSeen": "2026-07-18",
       "relatedEntityIds": [
-        "EN-c70eca6b0f88f44d",
-        "EN-52fc33ae4d101a5d",
         "EN-7839fb10a8f14c70",
+        "EN-d1ad14d4ad57d207",
+        "EN-52fc33ae4d101a5d",
+        "EN-c70eca6b0f88f44d",
         "EN-9f15bb7e29e191eb",
         "EN-047bdfce48c28cfc",
         "EN-6a50fbf0b970c03a",
-        "EN-d1ad14d4ad57d207",
         "EN-536c4035ba0c7047",
         "EN-3c92cc7e49924a6f",
         "EN-77fe4e790d5bc756",
@@ -2525,6 +2626,9 @@
         "EN-7bf321fa55418fba"
       ],
       "relationIds": [
+        "REL2-3a1dd102da0a9eae",
+        "REL2-4bb082b8b58f1dd4",
+        "REL2-f4121cb0a9227f32",
         "REL2-eb207e765a12cfae",
         "REL2-a3dcecd79dc90f51",
         "REL2-f3929ca395b55ae2",
@@ -2582,6 +2686,9 @@
       ],
       "type": "公司/机构",
       "productIds": [
+        "EN-7839fb10a8f14c70",
+        "EN-d1ad14d4ad57d207",
+        "EN-52fc33ae4d101a5d",
         "EN-52fc33ae4d101a5d",
         "EN-7839fb10a8f14c70",
         "EN-9f15bb7e29e191eb",
@@ -2643,14 +2750,15 @@
       "aliases": [],
       "tags": [
         "智能体",
+        "零售与电商",
         "制造业",
         "客户服务",
-        "医疗与生命科学",
-        "零售与电商"
+        "医疗与生命科学"
       ],
       "eventIds": [
         "EV-f020dd198aa2f952",
         "EV-736404028b8ad33e",
+        "EV-53f08daddd011dbb",
         "EV-0592458e094f26cc",
         "EV-33b218942b1deab7",
         "EV-afd0332ad8f5f05b",
@@ -2663,7 +2771,7 @@
         "EV-dab4d3f2059e8880"
       ],
       "firstSeen": "2026-04-28",
-      "lastSeen": "2026-07-16",
+      "lastSeen": "2026-07-18",
       "relatedEntityIds": [],
       "relationIds": [],
       "type": "公司/机构",
@@ -2737,10 +2845,10 @@
       "aliases": [],
       "tags": [
         "智能体",
+        "零售与电商",
         "代码生成",
         "客户服务",
-        "软件开发",
-        "混合专家模型"
+        "软件开发"
       ],
       "eventIds": [
         "EV-64fb6d791e19d10a",
@@ -3070,10 +3178,11 @@
       "eventIds": [
         "EV-64fb6d791e19d10a",
         "EV-736404028b8ad33e",
+        "EV-05a87b578967c83e",
         "EV-11a8e196deb21300"
       ],
-      "firstSeen": "2026-06-04",
-      "lastSeen": "2026-07-16",
+      "firstSeen": "2026-03-04",
+      "lastSeen": "2026-07-18",
       "relatedEntityIds": [],
       "relationIds": [],
       "type": "公司/机构",
@@ -3085,13 +3194,19 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "代码生成"
+        "制造业",
+        "汽车与交通",
+        "代码生成",
+        "医疗与生命科学",
+        "端侧"
       ],
       "eventIds": [
-        "EV-1a6688afdfd108ef"
+        "EV-1a6688afdfd108ef",
+        "EV-cafe435ddd007821",
+        "EV-08f736f61f2b46f3"
       ],
       "firstSeen": "2026-07-15",
-      "lastSeen": "2026-07-16",
+      "lastSeen": "2026-07-18",
       "relatedEntityIds": [],
       "relationIds": [],
       "type": "公司/机构",
@@ -3200,8 +3315,8 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "网络安全",
-        "汽车与交通"
+        "汽车与交通",
+        "网络安全"
       ],
       "eventIds": [
         "EV-9dab7fa55702e561",
@@ -3224,7 +3339,6 @@
       "name": "StepFun",
       "sourceType": "organization_candidate",
       "aliases": [
-        "阶跃星辰",
         "阶跃"
       ],
       "tags": [
@@ -3233,6 +3347,7 @@
         "语音与音频"
       ],
       "eventIds": [
+        "EV-584212d254d882bc",
         "EV-2c1fc2143d7d4a6a",
         "EV-6824e76c4aa69a71",
         "EV-ee363e679d12329c",
@@ -3240,23 +3355,11 @@
         "EV-d99037f2ed8db897"
       ],
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-07-14",
-      "relatedEntityIds": [
-        "EN-8b619895a83e35c8",
-        "EN-44a9bf3b11abea5c",
-        "EN-ed501d3e2d977553"
-      ],
-      "relationIds": [
-        "REL2-c7ea5e2310cc1af1",
-        "REL2-a243d283b580493c",
-        "REL2-b2812101f3a49110"
-      ],
+      "lastSeen": "2026-07-18",
+      "relatedEntityIds": [],
+      "relationIds": [],
       "type": "公司/机构",
-      "productIds": [
-        "EN-8b619895a83e35c8",
-        "EN-44a9bf3b11abea5c",
-        "EN-ed501d3e2d977553"
-      ]
+      "productIds": []
     },
     {
       "id": "EN-1477cddb70657ceb",
@@ -3285,8 +3388,8 @@
         "智能体",
         "长上下文",
         "开放权重",
-        "媒体与娱乐",
-        "多模态"
+        "多模态",
+        "媒体与娱乐"
       ],
       "eventIds": [
         "EV-87432dbb99cd6033",
@@ -3561,6 +3664,7 @@
         "开放权重"
       ],
       "eventIds": [
+        "EV-53f08daddd011dbb",
         "EV-3353bd96728c99e2",
         "EV-8a9b12665a3e40a0",
         "EV-28145c97a7237d6d",
@@ -3572,7 +3676,7 @@
         "EV-dd902b603e2e3dbc"
       ],
       "firstSeen": "2026-06-10",
-      "lastSeen": "2026-07-16",
+      "lastSeen": "2026-07-18",
       "relatedEntityIds": [
         "EN-101a515191c6be9e",
         "EN-b644c0a9d493976a",
@@ -3717,6 +3821,26 @@
       "relationIds": [],
       "legacyIds": [
         "PD-5ef23a6d776d61"
+      ],
+      "companyIds": [],
+      "companyNames": [],
+      "type": "产品/服务"
+    },
+    {
+      "id": "EN-d90a8e9b152bf236",
+      "name": "妈祖",
+      "sourceType": "product_candidate",
+      "aliases": [],
+      "tags": [],
+      "eventIds": [
+        "EV-6312476cc533b603"
+      ],
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-18",
+      "relatedEntityIds": [],
+      "relationIds": [],
+      "legacyIds": [
+        "PD-c5a8672ce8143b"
       ],
       "companyIds": [],
       "companyNames": [],
@@ -3978,8 +4102,8 @@
       "sourceType": "product_candidate",
       "aliases": [],
       "tags": [
-        "具身智能",
-        "汽车与交通"
+        "汽车与交通",
+        "具身智能"
       ],
       "eventIds": [
         "EV-6a2f3e9a22edff64"
@@ -4459,6 +4583,36 @@
       "type": "产品/服务"
     },
     {
+      "id": "EN-a614180064f7ef60",
+      "name": "AI Factories",
+      "sourceType": "product_candidate",
+      "aliases": [],
+      "tags": [
+        "制造业"
+      ],
+      "eventIds": [
+        "EV-8993e021ac17df4a"
+      ],
+      "firstSeen": "2025-12-02",
+      "lastSeen": "2026-07-18",
+      "relatedEntityIds": [
+        "EN-cbc62794911ff31b"
+      ],
+      "relationIds": [
+        "REL2-616077a1ca249bdd"
+      ],
+      "legacyIds": [
+        "PD-9a9b78d983b018"
+      ],
+      "companyIds": [
+        "EN-cbc62794911ff31b"
+      ],
+      "companyNames": [
+        "Amazon"
+      ],
+      "type": "产品/服务"
+    },
+    {
       "id": "EN-de1afc61dd4d2cea",
       "name": "AI generator",
       "sourceType": "product_candidate",
@@ -4525,6 +4679,46 @@
       "relationIds": [],
       "legacyIds": [
         "PD-366a9e50e4ff06"
+      ],
+      "companyIds": [],
+      "companyNames": [],
+      "type": "产品/服务"
+    },
+    {
+      "id": "EN-9cc48d787f521562",
+      "name": "AI INTERCONNECT PLATFORM WITH",
+      "sourceType": "product_candidate",
+      "aliases": [],
+      "tags": [],
+      "eventIds": [
+        "EV-4b18cefe4ac0c15c"
+      ],
+      "firstSeen": "2026-07-16",
+      "lastSeen": "2026-07-18",
+      "relatedEntityIds": [],
+      "relationIds": [],
+      "legacyIds": [
+        "PD-39030e07e661fb"
+      ],
+      "companyIds": [],
+      "companyNames": [],
+      "type": "产品/服务"
+    },
+    {
+      "id": "EN-8b0a3af52a26dde3",
+      "name": "AI MAX PRO 400",
+      "sourceType": "product_candidate",
+      "aliases": [],
+      "tags": [],
+      "eventIds": [
+        "EV-e62f69c0601488d1"
+      ],
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-18",
+      "relatedEntityIds": [],
+      "relationIds": [],
+      "legacyIds": [
+        "PD-2b2a2ac773ae85"
       ],
       "companyIds": [],
       "companyNames": [],
@@ -4908,13 +5102,21 @@
       ],
       "firstSeen": "2026-06-01",
       "lastSeen": "2026-06-01",
-      "relatedEntityIds": [],
-      "relationIds": [],
+      "relatedEntityIds": [
+        "EN-8d4321d936320802"
+      ],
+      "relationIds": [
+        "REL2-bb89bf36d71b6905"
+      ],
       "legacyIds": [
         "PD-5c451d38622691"
       ],
-      "companyIds": [],
-      "companyNames": [],
+      "companyIds": [
+        "EN-8d4321d936320802"
+      ],
+      "companyNames": [
+        "NVIDIA"
+      ],
       "type": "模型"
     },
     {
@@ -5271,13 +5473,22 @@
       ],
       "firstSeen": "2026-06-09",
       "lastSeen": "2026-06-09",
-      "relatedEntityIds": [],
-      "relationIds": [],
+      "relatedEntityIds": [
+        "EN-3a7bd3e2360a3d29"
+      ],
+      "relationIds": [
+        "REL2-aad42c03de906e55",
+        "REL2-fe1b4cdbd7469d6e"
+      ],
       "legacyIds": [
         "PD-211d490dc72189"
       ],
-      "companyIds": [],
-      "companyNames": [],
+      "companyIds": [
+        "EN-3a7bd3e2360a3d29"
+      ],
+      "companyNames": [
+        "Apple"
+      ],
       "type": "产品/服务"
     },
     {
@@ -5467,6 +5678,28 @@
       "type": "产品/服务"
     },
     {
+      "id": "EN-dbd6a2f6ddb95ca7",
+      "name": "BrainCo",
+      "sourceType": "product_candidate",
+      "aliases": [],
+      "tags": [
+        "机器人与物理自动化"
+      ],
+      "eventIds": [
+        "EV-d1e8407177e11fdc"
+      ],
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-18",
+      "relatedEntityIds": [],
+      "relationIds": [],
+      "legacyIds": [
+        "PD-ea6324b492dd0c"
+      ],
+      "companyIds": [],
+      "companyNames": [],
+      "type": "产品/服务"
+    },
+    {
       "id": "EN-dd172e183ec20177",
       "name": "Build",
       "sourceType": "product_candidate",
@@ -5621,9 +5854,12 @@
       "sourceType": "product_candidate",
       "aliases": [],
       "tags": [
-        "代码生成"
+        "代码生成",
+        "知识与搜索"
       ],
       "eventIds": [
+        "EV-b925f50b55d3aa00",
+        "EV-c237f5dc53f0a923",
         "EV-20dea13a4e6100ea",
         "EV-0dbc7b904378f713",
         "EV-0b6992ae74184d13",
@@ -5631,12 +5867,13 @@
         "EV-519537a36355d82e"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-07-15",
+      "lastSeen": "2026-07-18",
       "relatedEntityIds": [
-        "EN-2b78da3dc866654e",
-        "EN-7d3194f79e645c42"
+        "EN-7d3194f79e645c42",
+        "EN-2b78da3dc866654e"
       ],
       "relationIds": [
+        "REL2-4bb082b8b58f1dd4",
         "REL2-d6b72732c7eb9192",
         "REL2-c56a1badc060dbab",
         "REL2-24a07e3fde560a53",
@@ -5649,12 +5886,12 @@
         "PD-ab0ddc029a7ee6"
       ],
       "companyIds": [
-        "EN-2b78da3dc866654e",
-        "EN-7d3194f79e645c42"
+        "EN-7d3194f79e645c42",
+        "EN-2b78da3dc866654e"
       ],
       "companyNames": [
-        "Spotify",
-        "OpenAI"
+        "OpenAI",
+        "Spotify"
       ],
       "type": "产品/服务"
     },
@@ -5767,6 +6004,7 @@
         "EN-3a7bd3e2360a3d29"
       ],
       "relationIds": [
+        "REL2-51a19bbdb9ca6c04",
         "REL2-f1dcfa6f5b5a61d1",
         "REL2-59bae0716fb5568d",
         "REL2-0e0ef4c13fd83477",
@@ -5777,11 +6015,9 @@
         "REL2-6e39a930f3aa1688",
         "REL2-b5e7fc6aebb74f2d",
         "REL2-33045ca6da0f1758",
-        "REL2-484ed3617e7af912",
         "REL2-d732460240ae0fca",
         "REL2-2a47bb839eee70c5",
         "REL2-a3a6bf494b1a1a36",
-        "REL2-b5f95a4bf76881e0",
         "REL2-2942b0593c04c0e0",
         "REL2-bff72a2a7e329405",
         "REL2-0636bdcd705d71c5",
@@ -5798,9 +6034,7 @@
         "REL2-33e373a9dd84ecd2",
         "REL2-134368b43c17c946",
         "REL2-03a9fee9f0f0adc9",
-        "REL2-a0b5b92e12c2fe06",
         "REL2-98d3a14eddaaeb6f",
-        "REL2-98fd209d09005a1c",
         "REL2-4ad53e05ce3fda29",
         "REL2-0efe853421b84beb",
         "REL2-c471780ab055c67c",
@@ -5808,7 +6042,6 @@
         "REL2-7eb22c82dc9fc8a2",
         "REL2-1f7f0f143aeb3e68",
         "REL2-2993f4f400172e9c",
-        "REL2-30448a7da675c5ae",
         "REL2-3ee2424266e0f256",
         "REL2-8b46e6332bf1ea1b",
         "REL2-e8f23c5396109c3b",
@@ -5854,6 +6087,7 @@
         "EN-c70eca6b0f88f44d"
       ],
       "relationIds": [
+        "REL2-024d68c4c3b28df4",
         "REL2-0cb62fd98fddc0c2",
         "REL2-d3a5b39a67e4dc3b",
         "REL2-95b6dd5a58283577",
@@ -5867,7 +6101,6 @@
         "REL2-bf6d6d56e81f5111",
         "REL2-600fa7d8ddd1b719",
         "REL2-2aa854ad8fe0b270",
-        "REL2-2f06b45ec0e97621",
         "REL2-31c5e5852137b7ce",
         "REL2-033a94af457640ca",
         "REL2-185c8c8bc56b8ef1",
@@ -6487,6 +6720,34 @@
       "type": "产品/服务"
     },
     {
+      "id": "EN-9d40760b37c15a83",
+      "name": "Claude Code v2.1.214",
+      "sourceType": "product_candidate",
+      "aliases": [],
+      "tags": [],
+      "eventIds": [
+        "EV-debecca007e547d2"
+      ],
+      "firstSeen": "2026-07-18",
+      "lastSeen": "2026-07-18",
+      "relatedEntityIds": [
+        "EN-c70eca6b0f88f44d"
+      ],
+      "relationIds": [
+        "REL2-7c1b64878b8c0916"
+      ],
+      "legacyIds": [
+        "PD-61fde02d508b57"
+      ],
+      "companyIds": [
+        "EN-c70eca6b0f88f44d"
+      ],
+      "companyNames": [
+        "Anthropic"
+      ],
+      "type": "产品/服务"
+    },
+    {
       "id": "EN-3a13916345b60fad",
       "name": "Claude Fable 5",
       "sourceType": "product_candidate",
@@ -6515,7 +6776,6 @@
         "EN-c70eca6b0f88f44d"
       ],
       "relationIds": [
-        "REL2-113686cc75d37b0f",
         "REL2-4a1d4b369fcb4e01",
         "REL2-48cdf6bd8d397fed",
         "REL2-02309f1dd31d167e",
@@ -6609,11 +6869,10 @@
       "firstSeen": "2026-06-28",
       "lastSeen": "2026-06-28",
       "relatedEntityIds": [
-        "EN-c70eca6b0f88f44d",
-        "EN-7d3194f79e645c42"
+        "EN-7d3194f79e645c42",
+        "EN-c70eca6b0f88f44d"
       ],
       "relationIds": [
-        "REL2-7d031f47ccd2e11e",
         "REL2-928c0091e9a7fd66",
         "REL2-efc3f59fe7802666",
         "REL2-9f78cb0addb41afb"
@@ -6622,12 +6881,12 @@
         "PD-04673a632f5867"
       ],
       "companyIds": [
-        "EN-c70eca6b0f88f44d",
-        "EN-7d3194f79e645c42"
+        "EN-7d3194f79e645c42",
+        "EN-c70eca6b0f88f44d"
       ],
       "companyNames": [
-        "Anthropic",
-        "OpenAI"
+        "OpenAI",
+        "Anthropic"
       ],
       "type": "产品/服务"
     },
@@ -6938,21 +7197,13 @@
       ],
       "firstSeen": "2026-06-17",
       "lastSeen": "2026-06-18",
-      "relatedEntityIds": [
-        "EN-c70eca6b0f88f44d"
-      ],
-      "relationIds": [
-        "REL2-28de794251f86cd7"
-      ],
+      "relatedEntityIds": [],
+      "relationIds": [],
       "legacyIds": [
         "PD-e6fb06210fafc0"
       ],
-      "companyIds": [
-        "EN-c70eca6b0f88f44d"
-      ],
-      "companyNames": [
-        "Anthropic"
-      ],
+      "companyIds": [],
+      "companyNames": [],
       "type": "产品/服务"
     },
     {
@@ -7092,9 +7343,9 @@
       "sourceType": "product_candidate",
       "aliases": [],
       "tags": [
+        "零售与电商",
         "制造业",
-        "医疗与生命科学",
-        "零售与电商"
+        "医疗与生命科学"
       ],
       "eventIds": [
         "EV-dd62847548bb6ae3"
@@ -7229,13 +7480,21 @@
       ],
       "firstSeen": "2026-06-09",
       "lastSeen": "2026-06-09",
-      "relatedEntityIds": [],
-      "relationIds": [],
+      "relatedEntityIds": [
+        "EN-3a7bd3e2360a3d29"
+      ],
+      "relationIds": [
+        "REL2-74ad6f207729d6ae"
+      ],
       "legacyIds": [
         "PD-669a3d4496b624"
       ],
-      "companyIds": [],
-      "companyNames": [],
+      "companyIds": [
+        "EN-3a7bd3e2360a3d29"
+      ],
+      "companyNames": [
+        "Apple"
+      ],
       "type": "产品/服务"
     },
     {
@@ -7273,13 +7532,21 @@
       ],
       "firstSeen": "2026-06-01",
       "lastSeen": "2026-06-01",
-      "relatedEntityIds": [],
-      "relationIds": [],
+      "relatedEntityIds": [
+        "EN-8d4321d936320802"
+      ],
+      "relationIds": [
+        "REL2-cd95b9638b93b057"
+      ],
       "legacyIds": [
         "PD-d786a3df7b7eb3"
       ],
-      "companyIds": [],
-      "companyNames": [],
+      "companyIds": [
+        "EN-8d4321d936320802"
+      ],
+      "companyNames": [
+        "NVIDIA"
+      ],
       "type": "模型"
     },
     {
@@ -7403,8 +7670,8 @@
         "代码生成",
         "软件开发",
         "混合专家模型",
-        "媒体与娱乐",
-        "多模态"
+        "多模态",
+        "媒体与娱乐"
       ],
       "eventIds": [
         "EV-5babb43f4b4d302f",
@@ -7594,7 +7861,6 @@
       ],
       "relationIds": [
         "REL2-1bac7c6922a7a98b",
-        "REL2-44ebd8a7378accce",
         "REL2-d205049958061bb1"
       ],
       "legacyIds": [
@@ -7630,6 +7896,34 @@
       ],
       "companyIds": [],
       "companyNames": [],
+      "type": "产品/服务"
+    },
+    {
+      "id": "EN-855bed02b965c12c",
+      "name": "EndConversation",
+      "sourceType": "product_candidate",
+      "aliases": [],
+      "tags": [],
+      "eventIds": [
+        "EV-debecca007e547d2"
+      ],
+      "firstSeen": "2026-07-18",
+      "lastSeen": "2026-07-18",
+      "relatedEntityIds": [
+        "EN-c70eca6b0f88f44d"
+      ],
+      "relationIds": [
+        "REL2-83d179c5c9172e99"
+      ],
+      "legacyIds": [
+        "PD-451cc6133466bd"
+      ],
+      "companyIds": [
+        "EN-c70eca6b0f88f44d"
+      ],
+      "companyNames": [
+        "Anthropic"
+      ],
       "type": "产品/服务"
     },
     {
@@ -7776,7 +8070,6 @@
       ],
       "relationIds": [
         "REL2-202c0b44c7731f13",
-        "REL2-0bd9ac4ccd97ebc4",
         "REL2-998379aeafd7d0d2",
         "REL2-abc9123bc86465ad",
         "REL2-4fba2f5849a6ac1c",
@@ -8314,9 +8607,7 @@
         "EN-bbdefa2950f49882"
       ],
       "relationIds": [
-        "REL2-219aab1487d17fc3",
-        "REL2-572d299c04663eb3",
-        "REL2-653e76cf1e48b6fd"
+        "REL2-572d299c04663eb3"
       ],
       "legacyIds": [
         "PD-8b11ecdb21606c"
@@ -8501,21 +8792,13 @@
       ],
       "firstSeen": "2026-07-16",
       "lastSeen": "2026-07-17",
-      "relatedEntityIds": [
-        "EN-a89151ba4b5ac0f2"
-      ],
-      "relationIds": [
-        "REL2-0bf66d98de87a2bb"
-      ],
+      "relatedEntityIds": [],
+      "relationIds": [],
       "legacyIds": [
         "PD-4cddaaaa185365"
       ],
-      "companyIds": [
-        "EN-a89151ba4b5ac0f2"
-      ],
-      "companyNames": [
-        "Baidu"
-      ],
+      "companyIds": [],
+      "companyNames": [],
       "type": "产品/服务"
     },
     {
@@ -8531,13 +8814,21 @@
       ],
       "firstSeen": "2026-06-29",
       "lastSeen": "2026-06-29",
-      "relatedEntityIds": [],
-      "relationIds": [],
+      "relatedEntityIds": [
+        "EN-2dc010636b9dce91"
+      ],
+      "relationIds": [
+        "REL2-61089e71e75b311e"
+      ],
       "legacyIds": [
         "PD-41b841e5d5d5ac"
       ],
-      "companyIds": [],
-      "companyNames": [],
+      "companyIds": [
+        "EN-2dc010636b9dce91"
+      ],
+      "companyNames": [
+        "Databricks"
+      ],
       "type": "产品/服务"
     },
     {
@@ -8696,6 +8987,7 @@
         "EN-7d3194f79e645c42"
       ],
       "relationIds": [
+        "REL2-f4121cb0a9227f32",
         "REL2-a3dcecd79dc90f51",
         "REL2-63b189d7671db053",
         "REL2-429abbdb6fe85242",
@@ -8760,6 +9052,7 @@
         "网络安全"
       ],
       "eventIds": [
+        "EV-a68475d82ec939b5",
         "EV-167f50a6f3134bd5",
         "EV-969ed3078d10f0c9",
         "EV-6e7b632ee0b3410d",
@@ -8767,11 +9060,12 @@
         "EV-860b90c017deaa59"
       ],
       "firstSeen": "2026-06-28",
-      "lastSeen": "2026-07-15",
+      "lastSeen": "2026-07-18",
       "relatedEntityIds": [
         "EN-7d3194f79e645c42"
       ],
       "relationIds": [
+        "REL2-3a1dd102da0a9eae",
         "REL2-f3929ca395b55ae2",
         "REL2-21fefb0e144373a5",
         "REL2-56379993cdd4f6ea",
@@ -8998,13 +9292,21 @@
       ],
       "firstSeen": "2026-06-22",
       "lastSeen": "2026-06-23",
-      "relatedEntityIds": [],
-      "relationIds": [],
+      "relatedEntityIds": [
+        "EN-8d4321d936320802"
+      ],
+      "relationIds": [
+        "REL2-90fe6f189b5ac87d"
+      ],
       "legacyIds": [
         "PD-ff3d22ce9d9ed8"
       ],
-      "companyIds": [],
-      "companyNames": [],
+      "companyIds": [
+        "EN-8d4321d936320802"
+      ],
+      "companyNames": [
+        "NVIDIA"
+      ],
       "type": "产品/服务"
     },
     {
@@ -9169,21 +9471,13 @@
       ],
       "firstSeen": "2026-06-17",
       "lastSeen": "2026-06-18",
-      "relatedEntityIds": [
-        "EN-bbdefa2950f49882"
-      ],
-      "relationIds": [
-        "REL2-aee904f23d9a2e04"
-      ],
+      "relatedEntityIds": [],
+      "relationIds": [],
       "legacyIds": [
         "PD-e83249bd3ba799"
       ],
-      "companyIds": [
-        "EN-bbdefa2950f49882"
-      ],
-      "companyNames": [
-        "Google"
-      ],
+      "companyIds": [],
+      "companyNames": [],
       "type": "产品/服务"
     },
     {
@@ -9452,9 +9746,9 @@
       "sourceType": "product_candidate",
       "aliases": [],
       "tags": [
+        "零售与电商",
         "制造业",
-        "医疗与生命科学",
-        "零售与电商"
+        "医疗与生命科学"
       ],
       "eventIds": [
         "EV-dd62847548bb6ae3"
@@ -9834,7 +10128,8 @@
         "EN-7d3194f79e645c42",
         "EN-9fbf261b62c1d7c0",
         "EN-c70eca6b0f88f44d",
-        "EN-ea3bd73e2b506e00"
+        "EN-ea3bd73e2b506e00",
+        "EN-2dc010636b9dce91"
       ],
       "relationIds": [
         "REL2-1450a4c5e3a012fb",
@@ -9846,6 +10141,7 @@
         "REL2-a7e83691e8c372f0",
         "REL2-b1431081f63b39e0",
         "REL2-42701abf352a4423",
+        "REL2-d3912411ad14ed94",
         "REL2-f61b464d46869825",
         "REL2-8b6d22db77bb11e3",
         "REL2-989027a952a65c2f",
@@ -9861,7 +10157,8 @@
         "EN-7d3194f79e645c42",
         "EN-9fbf261b62c1d7c0",
         "EN-c70eca6b0f88f44d",
-        "EN-ea3bd73e2b506e00"
+        "EN-ea3bd73e2b506e00",
+        "EN-2dc010636b9dce91"
       ],
       "companyNames": [
         "Crusoe",
@@ -9870,7 +10167,8 @@
         "OpenAI",
         "Microsoft",
         "Anthropic",
-        "Meta"
+        "Meta",
+        "Databricks"
       ],
       "type": "产品/服务"
     },
@@ -9973,13 +10271,21 @@
       ],
       "firstSeen": "2026-06-29",
       "lastSeen": "2026-06-29",
-      "relatedEntityIds": [],
-      "relationIds": [],
+      "relatedEntityIds": [
+        "EN-2dc010636b9dce91"
+      ],
+      "relationIds": [
+        "REL2-29ff756a63e2680a"
+      ],
       "legacyIds": [
         "PD-4987fa4cd79669"
       ],
-      "companyIds": [],
-      "companyNames": [],
+      "companyIds": [
+        "EN-2dc010636b9dce91"
+      ],
+      "companyNames": [
+        "Databricks"
+      ],
       "type": "产品/服务"
     },
     {
@@ -10467,9 +10773,9 @@
       "sourceType": "product_candidate",
       "aliases": [],
       "tags": [
+        "零售与电商",
         "制造业",
         "医疗与生命科学",
-        "零售与电商",
         "电信"
       ],
       "eventIds": [
@@ -10765,11 +11071,10 @@
       "firstSeen": "2026-06-10",
       "lastSeen": "2026-06-28",
       "relatedEntityIds": [
-        "EN-c70eca6b0f88f44d",
-        "EN-7d3194f79e645c42"
+        "EN-7d3194f79e645c42",
+        "EN-c70eca6b0f88f44d"
       ],
       "relationIds": [
-        "REL2-9a7c139f77979c7d",
         "REL2-d9f713a9d3c0e6d7",
         "REL2-c2297f7940ae367c",
         "REL2-81da33c59ad6b616",
@@ -10785,12 +11090,12 @@
         "PD-5f9e748257611c"
       ],
       "companyIds": [
-        "EN-c70eca6b0f88f44d",
-        "EN-7d3194f79e645c42"
+        "EN-7d3194f79e645c42",
+        "EN-c70eca6b0f88f44d"
       ],
       "companyNames": [
-        "Anthropic",
-        "OpenAI"
+        "OpenAI",
+        "Anthropic"
       ],
       "type": "产品/服务"
     },
@@ -10921,8 +11226,7 @@
       ],
       "relationIds": [
         "REL2-125e92100f14f132",
-        "REL2-c1743ef4560536bd",
-        "REL2-d1256a41edab3bfb"
+        "REL2-c1743ef4560536bd"
       ],
       "legacyIds": [
         "PD-f2e22fca11bb87"
@@ -10960,8 +11264,7 @@
       ],
       "relationIds": [
         "REL2-1967b453be7e7724",
-        "REL2-33886390782fa429",
-        "REL2-638b55900181fbf2"
+        "REL2-33886390782fa429"
       ],
       "legacyIds": [
         "PD-fc7a6314b246f7"
@@ -11024,7 +11327,9 @@
         "EN-8d4321d936320802"
       ],
       "relationIds": [
+        "REL2-7f816066d001139c",
         "REL2-e4812cbfd6a3e864",
+        "REL2-4a2775d9b6cc170e",
         "REL2-ef91b4f5f5b2e805",
         "REL2-594da80406279eb3"
       ],
@@ -11038,6 +11343,37 @@
         "NVIDIA"
       ],
       "type": "产品/服务"
+    },
+    {
+      "id": "EN-aa15d891a32a51b8",
+      "name": "Nemotron 3 Embed",
+      "sourceType": "product_candidate",
+      "aliases": [],
+      "tags": [
+        "智能体",
+        "RAG"
+      ],
+      "eventIds": [
+        "EV-950237c6b3eb6343"
+      ],
+      "firstSeen": "2026-07-18",
+      "lastSeen": "2026-07-18",
+      "relatedEntityIds": [
+        "EN-8d4321d936320802"
+      ],
+      "relationIds": [
+        "REL2-cd31c7f1b13d1c27"
+      ],
+      "legacyIds": [
+        "PD-833fc115c730ec"
+      ],
+      "companyIds": [
+        "EN-8d4321d936320802"
+      ],
+      "companyNames": [
+        "NVIDIA"
+      ],
+      "type": "模型"
     },
     {
       "id": "EN-a3266ab9e10d6105",
@@ -11057,7 +11393,8 @@
         "EN-8d4321d936320802"
       ],
       "relationIds": [
-        "REL2-c03f8010834c7954"
+        "REL2-c03f8010834c7954",
+        "REL2-f1a8de714fc4b399"
       ],
       "legacyIds": [
         "PD-46986ddee34da1"
@@ -11145,13 +11482,21 @@
       ],
       "firstSeen": "2026-07-03",
       "lastSeen": "2026-07-04",
-      "relatedEntityIds": [],
-      "relationIds": [],
+      "relatedEntityIds": [
+        "EN-8d4321d936320802"
+      ],
+      "relationIds": [
+        "REL2-7d68b1ea85abc4f5"
+      ],
       "legacyIds": [
         "PD-9aea46c14cd700"
       ],
-      "companyIds": [],
-      "companyNames": [],
+      "companyIds": [
+        "EN-8d4321d936320802"
+      ],
+      "companyNames": [
+        "NVIDIA"
+      ],
       "type": "模型"
     },
     {
@@ -11174,6 +11519,26 @@
       "relationIds": [],
       "legacyIds": [
         "PD-d83450cc361d2b"
+      ],
+      "companyIds": [],
+      "companyNames": [],
+      "type": "产品/服务"
+    },
+    {
+      "id": "EN-b0eea3ad7b0d0a48",
+      "name": "NEXT-GENERATION DATA CENTER",
+      "sourceType": "product_candidate",
+      "aliases": [],
+      "tags": [],
+      "eventIds": [
+        "EV-4b18cefe4ac0c15c"
+      ],
+      "firstSeen": "2026-07-16",
+      "lastSeen": "2026-07-18",
+      "relatedEntityIds": [],
+      "relationIds": [],
+      "legacyIds": [
+        "PD-3d738f4e93bfc3"
       ],
       "companyIds": [],
       "companyNames": [],
@@ -11824,9 +12189,9 @@
       "sourceType": "product_candidate",
       "aliases": [],
       "tags": [
+        "零售与电商",
         "制造业",
         "医疗与生命科学",
-        "零售与电商",
         "电信"
       ],
       "eventIds": [
@@ -11884,6 +12249,26 @@
       "relationIds": [],
       "legacyIds": [
         "PD-badeb4c6662976"
+      ],
+      "companyIds": [],
+      "companyNames": [],
+      "type": "产品/服务"
+    },
+    {
+      "id": "EN-9c515f4c878bdb2e",
+      "name": "RDMA FOR NEXT-GENERATION DATA",
+      "sourceType": "product_candidate",
+      "aliases": [],
+      "tags": [],
+      "eventIds": [
+        "EV-4b18cefe4ac0c15c"
+      ],
+      "firstSeen": "2026-07-16",
+      "lastSeen": "2026-07-18",
+      "relatedEntityIds": [],
+      "relationIds": [],
+      "legacyIds": [
+        "PD-ac2ccda1c40e33"
       ],
       "companyIds": [],
       "companyNames": [],
@@ -12002,8 +12387,8 @@
       "sourceType": "product_candidate",
       "aliases": [],
       "tags": [
-        "具身智能",
-        "汽车与交通"
+        "汽车与交通",
+        "具身智能"
       ],
       "eventIds": [
         "EV-6a2f3e9a22edff64"
@@ -12053,6 +12438,26 @@
       "companyNames": [
         "Google"
       ],
+      "type": "产品/服务"
+    },
+    {
+      "id": "EN-6066d80012446517",
+      "name": "ROCm 7.14",
+      "sourceType": "product_candidate",
+      "aliases": [],
+      "tags": [],
+      "eventIds": [
+        "EV-e62f69c0601488d1"
+      ],
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-18",
+      "relatedEntityIds": [],
+      "relationIds": [],
+      "legacyIds": [
+        "PD-2f491c9bb991bd"
+      ],
+      "companyIds": [],
+      "companyNames": [],
       "type": "产品/服务"
     },
     {
@@ -12130,6 +12535,26 @@
       "relationIds": [],
       "legacyIds": [
         "PD-efb0c46e8ab16c"
+      ],
+      "companyIds": [],
+      "companyNames": [],
+      "type": "产品/服务"
+    },
+    {
+      "id": "EN-630d75372b4d1eb5",
+      "name": "Ryzen AI MAX PRO",
+      "sourceType": "product_candidate",
+      "aliases": [],
+      "tags": [],
+      "eventIds": [
+        "EV-e62f69c0601488d1"
+      ],
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-18",
+      "relatedEntityIds": [],
+      "relationIds": [],
+      "legacyIds": [
+        "PD-60470d4c78fc42"
       ],
       "companyIds": [],
       "companyNames": [],
@@ -12364,13 +12789,21 @@
       ],
       "firstSeen": "2026-06-09",
       "lastSeen": "2026-06-20",
-      "relatedEntityIds": [],
-      "relationIds": [],
+      "relatedEntityIds": [
+        "EN-3a7bd3e2360a3d29"
+      ],
+      "relationIds": [
+        "REL2-3d00d7538e09943f"
+      ],
       "legacyIds": [
         "PD-3995a3476470ce"
       ],
-      "companyIds": [],
-      "companyNames": [],
+      "companyIds": [
+        "EN-3a7bd3e2360a3d29"
+      ],
+      "companyNames": [
+        "Apple"
+      ],
       "type": "产品/服务"
     },
     {
@@ -12397,6 +12830,8 @@
         "REL2-04014818e378c5b2",
         "REL2-13cc501e416c5363",
         "REL2-1f4fedf249db5eac",
+        "REL2-27b659bc5e5fe00b",
+        "REL2-ea61135fcfa1e38f",
         "REL2-f5b7bf87ac9c1791"
       ],
       "legacyIds": [
@@ -12494,21 +12929,25 @@
       "firstSeen": "2026-06-20",
       "lastSeen": "2026-06-21",
       "relatedEntityIds": [
-        "EN-6fcba5d96a4fadfd"
+        "EN-6fcba5d96a4fadfd",
+        "EN-8d4321d936320802"
       ],
       "relationIds": [
         "REL2-8568d8d58f29ad46",
         "REL2-685f541671c53e57",
-        "REL2-b8c7d749ab97ce9c"
+        "REL2-b8c7d749ab97ce9c",
+        "REL2-8d172c1dd8efb325"
       ],
       "legacyIds": [
         "PD-1c9c96b418c091"
       ],
       "companyIds": [
-        "EN-6fcba5d96a4fadfd"
+        "EN-6fcba5d96a4fadfd",
+        "EN-8d4321d936320802"
       ],
       "companyNames": [
-        "xAI"
+        "xAI",
+        "NVIDIA"
       ],
       "type": "产品/服务"
     },
@@ -12567,21 +13006,13 @@
       ],
       "firstSeen": "2026-07-12",
       "lastSeen": "2026-07-12",
-      "relatedEntityIds": [
-        "EN-2c348893efb2316e"
-      ],
-      "relationIds": [
-        "REL2-a243d283b580493c"
-      ],
+      "relatedEntityIds": [],
+      "relationIds": [],
       "legacyIds": [
         "PD-be5a1c21441b65"
       ],
-      "companyIds": [
-        "EN-2c348893efb2316e"
-      ],
-      "companyNames": [
-        "StepFun"
-      ],
+      "companyIds": [],
+      "companyNames": [],
       "type": "模型"
     },
     {
@@ -12597,21 +13028,13 @@
       ],
       "firstSeen": "2026-05-25",
       "lastSeen": "2026-05-25",
-      "relatedEntityIds": [
-        "EN-2c348893efb2316e"
-      ],
-      "relationIds": [
-        "REL2-b2812101f3a49110"
-      ],
+      "relatedEntityIds": [],
+      "relationIds": [],
       "legacyIds": [
         "PD-af95213596c1b2"
       ],
-      "companyIds": [
-        "EN-2c348893efb2316e"
-      ],
-      "companyNames": [
-        "StepFun"
-      ],
+      "companyIds": [],
+      "companyNames": [],
       "type": "产品/服务"
     },
     {
@@ -12628,21 +13051,13 @@
       ],
       "firstSeen": "2026-07-13",
       "lastSeen": "2026-07-14",
-      "relatedEntityIds": [
-        "EN-2c348893efb2316e"
-      ],
-      "relationIds": [
-        "REL2-c7ea5e2310cc1af1"
-      ],
+      "relatedEntityIds": [],
+      "relationIds": [],
       "legacyIds": [
         "PD-bcc8014e2c2a7f"
       ],
-      "companyIds": [
-        "EN-2c348893efb2316e"
-      ],
-      "companyNames": [
-        "StepFun"
-      ],
+      "companyIds": [],
+      "companyNames": [],
       "type": "产品/服务"
     },
     {
@@ -12995,9 +13410,9 @@
       "sourceType": "product_candidate",
       "aliases": [],
       "tags": [
+        "零售与电商",
         "制造业",
         "医疗与生命科学",
-        "零售与电商",
         "电信"
       ],
       "eventIds": [
@@ -13027,13 +13442,21 @@
       ],
       "firstSeen": "2026-06-01",
       "lastSeen": "2026-06-01",
-      "relatedEntityIds": [],
-      "relationIds": [],
+      "relatedEntityIds": [
+        "EN-8d4321d936320802"
+      ],
+      "relationIds": [
+        "REL2-4ba72572dcf15f72"
+      ],
       "legacyIds": [
         "PD-886fed01789257"
       ],
-      "companyIds": [],
-      "companyNames": [],
+      "companyIds": [
+        "EN-8d4321d936320802"
+      ],
+      "companyNames": [
+        "NVIDIA"
+      ],
       "type": "产品/服务"
     },
     {
@@ -13075,6 +13498,26 @@
       "relationIds": [],
       "legacyIds": [
         "PD-4ae79b6a3a4023"
+      ],
+      "companyIds": [],
+      "companyNames": [],
+      "type": "产品/服务"
+    },
+    {
+      "id": "EN-c4593a0a1bbaf20b",
+      "name": "Vids",
+      "sourceType": "product_candidate",
+      "aliases": [],
+      "tags": [],
+      "eventIds": [
+        "EV-a255cfc0dab44564"
+      ],
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-18",
+      "relatedEntityIds": [],
+      "relationIds": [],
+      "legacyIds": [
+        "PD-864e95eba02f61"
       ],
       "companyIds": [],
       "companyNames": [],
@@ -13137,8 +13580,8 @@
       "aliases": [],
       "tags": [
         "具身智能",
-        "媒体与娱乐",
-        "机器人与物理自动化"
+        "机器人与物理自动化",
+        "媒体与娱乐"
       ],
       "eventIds": [
         "EV-49751dfc7d2f6d6c"
@@ -13153,6 +13596,50 @@
       "companyIds": [],
       "companyNames": [],
       "type": "AI 硬件"
+    },
+    {
+      "id": "EN-d83624eb3ab9192e",
+      "name": "Wan-Streamer",
+      "sourceType": "product_candidate",
+      "aliases": [],
+      "tags": [
+        "视频生成"
+      ],
+      "eventIds": [
+        "EV-6fbbbfcdcec81df4"
+      ],
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-18",
+      "relatedEntityIds": [],
+      "relationIds": [],
+      "legacyIds": [
+        "PD-56b997a3f5f128"
+      ],
+      "companyIds": [],
+      "companyNames": [],
+      "type": "产品/服务"
+    },
+    {
+      "id": "EN-925a688403e10965",
+      "name": "Wan-Streamer v0.2",
+      "sourceType": "product_candidate",
+      "aliases": [],
+      "tags": [
+        "视频生成"
+      ],
+      "eventIds": [
+        "EV-6fbbbfcdcec81df4"
+      ],
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-18",
+      "relatedEntityIds": [],
+      "relationIds": [],
+      "legacyIds": [
+        "PD-c186ca114b0a93"
+      ],
+      "companyIds": [],
+      "companyNames": [],
+      "type": "产品/服务"
     },
     {
       "id": "EN-10e5255f25e37ceb",
@@ -13335,13 +13822,21 @@
       ],
       "firstSeen": "2026-06-26",
       "lastSeen": "2026-06-26",
-      "relatedEntityIds": [],
-      "relationIds": [],
+      "relatedEntityIds": [
+        "EN-3a7bd3e2360a3d29"
+      ],
+      "relationIds": [
+        "REL2-2c82bf25c532a4e1"
+      ],
       "legacyIds": [
         "PD-4b80b29af2f4bd"
       ],
-      "companyIds": [],
-      "companyNames": [],
+      "companyIds": [
+        "EN-3a7bd3e2360a3d29"
+      ],
+      "companyNames": [
+        "Apple"
+      ],
       "type": "产品/服务"
     },
     {
@@ -13357,13 +13852,21 @@
       ],
       "firstSeen": "2026-06-18",
       "lastSeen": "2026-06-18",
-      "relatedEntityIds": [],
-      "relationIds": [],
+      "relatedEntityIds": [
+        "EN-3a7bd3e2360a3d29"
+      ],
+      "relationIds": [
+        "REL2-ced495a5aea356e0"
+      ],
       "legacyIds": [
         "PD-40624d0771ffbe"
       ],
-      "companyIds": [],
-      "companyNames": [],
+      "companyIds": [
+        "EN-3a7bd3e2360a3d29"
+      ],
+      "companyNames": [
+        "Apple"
+      ],
       "type": "产品/服务"
     },
     {
@@ -13379,13 +13882,21 @@
       ],
       "firstSeen": "2026-06-09",
       "lastSeen": "2026-06-09",
-      "relatedEntityIds": [],
-      "relationIds": [],
+      "relatedEntityIds": [
+        "EN-3a7bd3e2360a3d29"
+      ],
+      "relationIds": [
+        "REL2-63b9531c409ae293"
+      ],
       "legacyIds": [
         "PD-e18be55263bfa0"
       ],
-      "companyIds": [],
-      "companyNames": [],
+      "companyIds": [
+        "EN-3a7bd3e2360a3d29"
+      ],
+      "companyNames": [
+        "Apple"
+      ],
       "type": "产品/服务"
     },
     {
@@ -13394,8 +13905,8 @@
       "sourceType": "product_candidate",
       "aliases": [],
       "tags": [
-        "机器人与物理自动化",
-        "多模态"
+        "多模态",
+        "机器人与物理自动化"
       ],
       "eventIds": [
         "EV-3353bd96728c99e2"
@@ -13483,6 +13994,26 @@
       "companyIds": [],
       "companyNames": [],
       "type": "产品/服务"
+    },
+    {
+      "id": "EN-20ca085ff30e9339",
+      "name": "ZUNA1.1",
+      "sourceType": "product_candidate",
+      "aliases": [],
+      "tags": [],
+      "eventIds": [
+        "EV-5b0734f2957b256d"
+      ],
+      "firstSeen": "2026-07-18",
+      "lastSeen": "2026-07-18",
+      "relatedEntityIds": [],
+      "relationIds": [],
+      "legacyIds": [
+        "PD-5751fe1f50f083"
+      ],
+      "companyIds": [],
+      "companyNames": [],
+      "type": "模型"
     }
   ],
   "people": [
@@ -13823,6 +14354,7 @@
         "EV-2d6d2dc0ead4be10",
         "EV-e1a4bc40db4a9d8f",
         "EV-d5f276ad6b2ac9de",
+        "EV-c237f5dc53f0a923",
         "EV-653cbce2ccc79f8b",
         "EV-74dfbd82b47dc626",
         "EV-0dbc7b904378f713",
@@ -13860,12 +14392,13 @@
         "EN-86ca9936019f1039",
         "EN-4094a2b7125c7564",
         "EN-8f71c4871a160172",
+        "EN-3a7bd3e2360a3d29",
+        "EN-d1ad14d4ad57d207",
         "EN-f3cfedbe8428c9f7",
         "EN-7df09a7717ef2feb",
         "EN-c04bd5ebd10ab696",
         "EN-50ba7ff15827787b",
         "EN-1076719c4826c477",
-        "EN-d1ad14d4ad57d207",
         "EN-0a1750ec669a270c",
         "EN-c141d2237427f30d",
         "EN-8d4321d936320802",
@@ -13910,7 +14443,7 @@
         "HW-b1302168a9ab18e8"
       ],
       "firstSeen": "2026-05-19",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-07-18"
     },
     {
       "id": "TX-industry-telecommunications",
@@ -13925,11 +14458,11 @@
         "EV-6ce6b9c9780b97d9"
       ],
       "entityIds": [
-        "EN-59ae856cd788d0f5",
         "EN-8d4321d936320802",
+        "EN-59ae856cd788d0f5",
         "EN-0f3360879e746531",
+        "EN-80d387ccb3289295",
         "EN-e3b1bf3dab957ffe",
-        "EN-9700d41909cf810f",
         "EN-2ab6d53e717a0e0d",
         "EN-accf304851de0ad2",
         "EN-f0fa30cd90f406c8",
@@ -13947,7 +14480,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-05-20",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-07-18"
     },
     {
       "id": "TX-technology-on_device",
@@ -13970,6 +14503,7 @@
         "EV-c5b8faec223a4caf",
         "EV-4026c95d4c01b96e",
         "EV-0597e07d7e73051a",
+        "EV-08f736f61f2b46f3",
         "EV-02186ed7885f68fe",
         "EV-5613946bdd578a26",
         "EV-dd902b603e2e3dbc",
@@ -14017,6 +14551,7 @@
         "EN-1dc405a4cda895d0",
         "EN-c3ce0cc92b48bbd6",
         "EN-54ef981ab82586b5",
+        "EN-80d387ccb3289295",
         "EN-0899bccb1b028521",
         "EN-3dd90c2e1bf28b32",
         "EN-5d7b7e77768bfdfc"
@@ -14024,7 +14559,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-07-18"
     },
     {
       "id": "TX-technology-multimodal",
@@ -14033,9 +14568,11 @@
       "typeLabel": "技术",
       "valueId": "multimodal",
       "eventIds": [
+        "EV-cafe435ddd007821",
         "EV-a9810b47e0408a05",
         "EV-f169db2fb75a1371",
         "EV-fd21441fb6e143c3",
+        "EV-ba89f9414be0b041",
         "EV-6b51b1b6fe22c540",
         "EV-70e3f88cb06a856c",
         "EV-3353bd96728c99e2",
@@ -14057,14 +14594,17 @@
         "EV-6b7917bd7edd4bde"
       ],
       "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-59ae856cd788d0f5",
+        "EN-0f3360879e746531",
+        "EN-80d387ccb3289295",
         "EN-193d220b421d776e",
         "EN-7df09a7717ef2feb",
         "EN-3a7bd3e2360a3d29",
         "EN-50537dab76505dfc",
         "EN-b5251b35f15bedc4",
+        "EN-3c6d89173e6636d7",
         "EN-e3b1bf3dab957ffe",
-        "EN-8d4321d936320802",
-        "EN-0f3360879e746531",
         "EN-7d3194f79e645c42",
         "EN-8f71c4871a160172",
         "EN-78624f0a98e78301",
@@ -14102,9 +14642,11 @@
         "EN-9c8ae69b84f21a2e"
       ],
       "fdeIds": [],
-      "hardwareIds": [],
+      "hardwareIds": [
+        "HW-ceb55d9bc637c1d3"
+      ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-07-18"
     },
     {
       "id": "TX-technology-tool_use",
@@ -14195,11 +14737,13 @@
       "typeLabel": "应用场景",
       "valueId": "robotics_automation",
       "eventIds": [
+        "EV-cafe435ddd007821",
         "EV-434dcf1813a84ead",
         "EV-f059fd80d668c6bc",
         "EV-234ad54940674bf6",
         "EV-39848cdd62c00e59",
         "EV-4faa2bcf2e42e60c",
+        "EV-d1e8407177e11fdc",
         "EV-6b51b1b6fe22c540",
         "EV-3353bd96728c99e2",
         "EV-57565fc2e7502c59",
@@ -14214,16 +14758,20 @@
         "EV-ad64347138da72bb"
       ],
       "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-59ae856cd788d0f5",
+        "EN-0f3360879e746531",
+        "EN-80d387ccb3289295",
         "EN-6f21a653c48f4f19",
         "EN-4dbe391b8fcf977a",
-        "EN-8d4321d936320802",
         "EN-72138e570e5103e2",
         "EN-60094bcf5292c490",
         "EN-aa75c47729b4a292",
         "EN-8147e6fed86d42c1",
         "EN-96eebba49dbbf422",
+        "EN-c51e27d8efcff21f",
+        "EN-dbd6a2f6ddb95ca7",
         "EN-e3b1bf3dab957ffe",
-        "EN-0f3360879e746531",
         "EN-522d3edeb64a7ca4",
         "EN-c608c4787821de1b",
         "EN-101a515191c6be9e",
@@ -14247,10 +14795,11 @@
         "FDE-dadf0e9572889d3d"
       ],
       "hardwareIds": [
+        "HW-ceb55d9bc637c1d3",
         "HW-dca442211b264bbe"
       ],
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-07-18"
     },
     {
       "id": "TX-technology-computer_use",
@@ -14310,6 +14859,7 @@
       "typeLabel": "行业",
       "valueId": "financial_services",
       "eventIds": [
+        "EV-f6a72cddbda748b3",
         "EV-aa33ca051f3a7f78",
         "EV-189e43cb9fea8e1a",
         "EV-a42e51959c627554",
@@ -14327,12 +14877,13 @@
         "EV-5caf7f83664b1a2c"
       ],
       "entityIds": [
+        "EN-a5d2ae286d0d9e45",
+        "EN-96eebba49dbbf422",
         "EN-1bd14cd1a58c5708",
         "EN-7d3194f79e645c42",
         "EN-11507a0e2f5e69d5",
         "EN-b314f58f5f506fd2",
         "EN-a972bc1b3220493e",
-        "EN-96eebba49dbbf422",
         "EN-eaa1c24270a0d057",
         "EN-d82ff987d73882b8",
         "EN-ee04228c5c6d8b08",
@@ -14360,7 +14911,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-05-22",
-      "lastSeen": "2026-07-10"
+      "lastSeen": "2026-07-18"
     },
     {
       "id": "TX-technology-embodied_ai",
@@ -14379,21 +14930,22 @@
         "EV-6a2f3e9a22edff64",
         "EV-49751dfc7d2f6d6c",
         "EV-e2d4132c671e3d41",
-        "EV-3f8ba5855b64dd1a"
+        "EV-3f8ba5855b64dd1a",
+        "EV-08f736f61f2b46f3"
       ],
       "entityIds": [
         "EN-bbdefa2950f49882",
-        "EN-59ae856cd788d0f5",
         "EN-8d4321d936320802",
+        "EN-59ae856cd788d0f5",
         "EN-0f3360879e746531",
-        "EN-e3b1bf3dab957ffe",
-        "EN-9700d41909cf810f",
+        "EN-80d387ccb3289295",
         "EN-c70eca6b0f88f44d",
         "EN-1f1cfc1d441be41f",
         "EN-60094bcf5292c490",
         "EN-aa75c47729b4a292",
         "EN-8147e6fed86d42c1",
         "EN-96eebba49dbbf422",
+        "EN-e3b1bf3dab957ffe",
         "EN-754c490bd199c21a",
         "EN-7a3ecc54829211df",
         "EN-2f354de778e6a6da",
@@ -14416,7 +14968,7 @@
         "HW-1450585d9cd5879f"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-07-18"
     },
     {
       "id": "TX-technology-open_weights",
@@ -14470,6 +15022,7 @@
         "EV-e1e0a38da122caed",
         "EV-ebe9ed3158df619b",
         "EV-8abf5adc3e72fbb8",
+        "EV-ba89f9414be0b041",
         "EV-42f0dcfbb70ce73e",
         "EV-a9e22f22b7a2ec53"
       ],
@@ -14479,6 +15032,7 @@
         "EN-28d0bd981118a907",
         "EN-9fbf261b62c1d7c0",
         "EN-7d3194f79e645c42",
+        "EN-3c6d89173e6636d7",
         "EN-e2a93bc5095dec6c",
         "EN-0decbc3b45f73b2b",
         "EN-a6f7e7d15269ba2d",
@@ -14489,7 +15043,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-05-29",
-      "lastSeen": "2026-06-24"
+      "lastSeen": "2026-07-18"
     },
     {
       "id": "TX-use_case-research_science",
@@ -14523,6 +15077,7 @@
         "EV-e869f17214557633",
         "EV-8abf5adc3e72fbb8",
         "EV-3fb492fb45980541",
+        "EV-05a87b578967c83e",
         "EV-11a8e196deb21300",
         "EV-94d9c8d5ac1e10de"
       ],
@@ -14538,6 +15093,7 @@
         "EN-28d0bd981118a907",
         "EN-7d3194f79e645c42",
         "EN-88e2cce43eeadb36",
+        "EN-19e41212c0556603",
         "EN-34da56029403e6f7",
         "EN-623fbff8d5179d4e",
         "EN-fef851474e3c4311",
@@ -14548,11 +15104,12 @@
       ],
       "fdeIds": [
         "FDE-3e499215265a81d5",
-        "FDE-d08fed45110ab44b"
+        "FDE-d08fed45110ab44b",
+        "FDE-3665b073634d4b9d"
       ],
       "hardwareIds": [],
-      "firstSeen": "2026-06-02",
-      "lastSeen": "2026-07-16"
+      "firstSeen": "2026-03-04",
+      "lastSeen": "2026-07-18"
     },
     {
       "id": "TX-industry-retail_ecommerce",
@@ -14561,6 +15118,7 @@
       "typeLabel": "行业",
       "valueId": "retail_ecommerce",
       "eventIds": [
+        "EV-f6a72cddbda748b3",
         "EV-e7dcecaed5a0ee5b",
         "EV-8b0f056571d68269",
         "EV-434dcf1813a84ead",
@@ -14578,8 +15136,9 @@
         "EV-dd62847548bb6ae3"
       ],
       "entityIds": [
-        "EN-f346eaca864441f9",
+        "EN-a5d2ae286d0d9e45",
         "EN-96eebba49dbbf422",
+        "EN-f346eaca864441f9",
         "EN-c70eca6b0f88f44d",
         "EN-b0532e1af75cc4ab",
         "EN-e5cc9e38970eacb5",
@@ -14623,7 +15182,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-01-20",
-      "lastSeen": "2026-07-15"
+      "lastSeen": "2026-07-18"
     },
     {
       "id": "TX-industry-media_entertainment",
@@ -14800,16 +15359,21 @@
       "typeLabel": "应用场景",
       "valueId": "enterprise_operations",
       "eventIds": [
+        "EV-f6a72cddbda748b3",
         "EV-6e06cfa28f76a76f",
         "EV-dfddbb260b3d1c77",
         "EV-89351585b44f8e9c",
         "EV-1306e17cf1f3553e",
         "EV-5f5f252c6a826599",
+        "EV-286846e21412f3c7",
+        "EV-12ca2aae7bfcd080",
         "EV-3a7128e2d7ff149e",
         "EV-779b733110003284",
         "EV-f50752717e2a8536"
       ],
       "entityIds": [
+        "EN-a5d2ae286d0d9e45",
+        "EN-96eebba49dbbf422",
         "EN-caaa8e02be54cfc9",
         "EN-d2d165dff04ba225",
         "EN-7d3194f79e645c42",
@@ -14817,7 +15381,7 @@
         "EN-bbdefa2950f49882",
         "EN-4728b0c37dc84206",
         "EN-122c0bebae950c77",
-        "EN-96eebba49dbbf422",
+        "EN-636396f02b6571e4",
         "EN-e395d03e988d30a9",
         "EN-0dba03107c52ed3e",
         "EN-51a5b811990f2a2a",
@@ -14827,8 +15391,8 @@
       ],
       "fdeIds": [],
       "hardwareIds": [],
-      "firstSeen": "2026-06-25",
-      "lastSeen": "2026-07-08"
+      "firstSeen": "2025-03-25",
+      "lastSeen": "2026-07-18"
     },
     {
       "id": "TX-industry-automotive_transportation",
@@ -14837,25 +15401,34 @@
       "typeLabel": "行业",
       "valueId": "automotive_transportation",
       "eventIds": [
+        "EV-f6a72cddbda748b3",
         "EV-d292329c0ec64c8f",
+        "EV-cafe435ddd007821",
         "EV-9dab7fa55702e561",
         "EV-6a2f3e9a22edff64"
       ],
       "entityIds": [
+        "EN-a5d2ae286d0d9e45",
+        "EN-96eebba49dbbf422",
         "EN-f2476f180c07c1c6",
         "EN-c04bd5ebd10ab696",
+        "EN-8d4321d936320802",
+        "EN-59ae856cd788d0f5",
+        "EN-0f3360879e746531",
+        "EN-80d387ccb3289295",
         "EN-a23572554f6c861e",
         "EN-8652f6cd9088f1fa",
         "EN-fb2a436a76aa9fde",
         "EN-9fbf261b62c1d7c0",
-        "EN-8d4321d936320802",
         "EN-2f354de778e6a6da",
         "EN-936f01f91fdadf69"
       ],
       "fdeIds": [],
-      "hardwareIds": [],
+      "hardwareIds": [
+        "HW-ceb55d9bc637c1d3"
+      ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-07-07"
+      "lastSeen": "2026-07-18"
     },
     {
       "id": "TX-technology-human_in_loop",
@@ -14964,12 +15537,14 @@
       "valueId": "vision_language",
       "eventIds": [
         "EV-6f092cfc7a064d64",
+        "EV-ba89f9414be0b041",
         "EV-0259aae5ef9e83cd",
         "EV-74b965de27bc0515"
       ],
       "entityIds": [
         "EN-e647c818ac38b6ca",
         "EN-2b6e51bec93e86c1",
+        "EN-3c6d89173e6636d7",
         "EN-7117fa8d72fb99b9",
         "EN-24dcf762a3ebce39",
         "EN-b5251b35f15bedc4",
@@ -14978,7 +15553,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-06-13",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-07-18"
     },
     {
       "id": "TX-technology-video_generation",
@@ -14988,6 +15563,8 @@
       "valueId": "video_generation",
       "eventIds": [
         "EV-f169db2fb75a1371",
+        "EV-6fbbbfcdcec81df4",
+        "EV-fd8ecce5de2f667d",
         "EV-5babb43f4b4d302f",
         "EV-d8c69ed782b73a34",
         "EV-c7404765df94a3b4",
@@ -14995,6 +15572,10 @@
         "EV-887d47bb477e2142"
       ],
       "entityIds": [
+        "EN-ec1c8f558ff61e34",
+        "EN-047364b9be67f665",
+        "EN-d83624eb3ab9192e",
+        "EN-925a688403e10965",
         "EN-2b6e51bec93e86c1",
         "EN-b0532e1af75cc4ab",
         "EN-01f1074bb52ff605",
@@ -15004,7 +15585,6 @@
         "EN-6e7e64cf66f76a04",
         "EN-5388bc10736a0eff",
         "EN-43a340bb75b45f02",
-        "EN-047364b9be67f665",
         "EN-47c1e53c427aafb4",
         "EN-2daac3672aeafcbd",
         "EN-e9857f381893dd05",
@@ -15013,7 +15593,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-06-16",
-      "lastSeen": "2026-07-01"
+      "lastSeen": "2026-07-18"
     },
     {
       "id": "TX-use_case-data_analysis",
@@ -15238,6 +15818,7 @@
         "EV-a42e51959c627554",
         "EV-a84ec4216d3ded6d",
         "EV-8b0f056571d68269",
+        "EV-9563aa162529aab0",
         "EV-cafe435ddd007821",
         "EV-4db890779221bd9a",
         "EV-d1e2a7c6d314612c",
@@ -15268,11 +15849,11 @@
         "EN-7706c3c94d5f9b59",
         "EN-e5cc9e38970eacb5",
         "EN-cbc62794911ff31b",
-        "EN-59ae856cd788d0f5",
+        "EN-b81c8201acfc7639",
         "EN-8d4321d936320802",
+        "EN-59ae856cd788d0f5",
         "EN-0f3360879e746531",
-        "EN-e3b1bf3dab957ffe",
-        "EN-9700d41909cf810f",
+        "EN-80d387ccb3289295",
         "EN-27032b3c60ab2a95",
         "EN-43381465c2b7d64e",
         "EN-c70eca6b0f88f44d",
@@ -15287,6 +15868,7 @@
         "EN-06b5472c16feae4c",
         "EN-12b0c8b376b8375e",
         "EN-bab9670e68265ab1",
+        "EN-e3b1bf3dab957ffe",
         "EN-a93bc1dfeb147c54",
         "EN-6f7ac1823da81d2e",
         "EN-86acdf589a6723d5",
@@ -15315,7 +15897,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-01-20",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-07-18"
     },
     {
       "id": "TX-technology-speech_audio",
@@ -15439,11 +16021,14 @@
       "typeLabel": "应用场景",
       "valueId": "knowledge_search",
       "eventIds": [
+        "EV-b925f50b55d3aa00",
         "EV-702ed039940800fb",
         "EV-297b647e3787f3d6",
         "EV-ae4561a4a9ebe17f"
       ],
       "entityIds": [
+        "EN-e5695af6f033f56e",
+        "EN-d1ad14d4ad57d207",
         "EN-3f726694f178ed7a",
         "EN-45e0ade11fed1e44",
         "EN-1e68d267df86aa4c",
@@ -15455,7 +16040,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-06-11",
-      "lastSeen": "2026-07-16"
+      "lastSeen": "2026-07-18"
     },
     {
       "id": "TX-industry-manufacturing",
@@ -15464,7 +16049,7 @@
       "typeLabel": "行业",
       "valueId": "manufacturing",
       "eventIds": [
-        "EV-02882e6f5e1902c6",
+        "EV-f6a72cddbda748b3",
         "EV-80e54c9a390da293",
         "EV-aa33ca051f3a7f78",
         "EV-a84ec4216d3ded6d",
@@ -15480,12 +16065,13 @@
         "EV-309ea4fc27a66485",
         "EV-6ce6b9c9780b97d9",
         "EV-dd62847548bb6ae3",
+        "EV-8993e021ac17df4a",
+        "EV-08f736f61f2b46f3",
         "EV-946569cccbd9222f"
       ],
       "entityIds": [
-        "EN-2a920347dfcf07a7",
-        "EN-d5edfd3c9768e212",
-        "EN-ea3bd73e2b506e00",
+        "EN-a5d2ae286d0d9e45",
+        "EN-96eebba49dbbf422",
         "EN-8d4321d936320802",
         "EN-c70eca6b0f88f44d",
         "EN-1bd14cd1a58c5708",
@@ -15494,11 +16080,9 @@
         "EN-7706c3c94d5f9b59",
         "EN-59ae856cd788d0f5",
         "EN-0f3360879e746531",
-        "EN-e3b1bf3dab957ffe",
-        "EN-9700d41909cf810f",
+        "EN-80d387ccb3289295",
         "EN-2fc9fff8ab7f35aa",
         "EN-8efebac68a48c369",
-        "EN-96eebba49dbbf422",
         "EN-16fd849ce27f115b",
         "EN-f5791343a13abc71",
         "EN-9fbf261b62c1d7c0",
@@ -15509,6 +16093,7 @@
         "EN-aa75c47729b4a292",
         "EN-8147e6fed86d42c1",
         "EN-51188f73e8dfbfee",
+        "EN-e3b1bf3dab957ffe",
         "EN-cf9488537f777c1a",
         "EN-38f4d27a18084522",
         "EN-74beb25bdfe7bdd1",
@@ -15516,12 +16101,15 @@
         "EN-ce635c4eabff5e4f",
         "EN-ab9e3beebd83960d",
         "EN-61cce404a45c3545",
+        "EN-2a920347dfcf07a7",
         "EN-23b979df49741c93",
         "EN-02072c80a8386e8d",
         "EN-2eb073b22916de55",
         "EN-4a639cb888a15d75",
         "EN-56ee86045cfb0ddd",
         "EN-9dde0c2d375060f6",
+        "EN-cbc62794911ff31b",
+        "EN-a614180064f7ef60",
         "EN-3a7bd3e2360a3d29"
       ],
       "fdeIds": [
@@ -15530,8 +16118,8 @@
       "hardwareIds": [
         "HW-ceb55d9bc637c1d3"
       ],
-      "firstSeen": "2026-04-13",
-      "lastSeen": "2026-07-17"
+      "firstSeen": "2025-12-02",
+      "lastSeen": "2026-07-18"
     },
     {
       "id": "TX-technology-agentic_execution",
@@ -15540,7 +16128,8 @@
       "typeLabel": "技术",
       "valueId": "agentic_execution",
       "eventIds": [
-        "EV-02882e6f5e1902c6",
+        "EV-1da2e46e39a57d33",
+        "EV-8b7cbb66a33a945d",
         "EV-38cce1b72977ff2b",
         "EV-427081ec574b43bb",
         "EV-095e1a90f14ccdb9",
@@ -15629,6 +16218,7 @@
         "EV-bbc1042dcf5ad317",
         "EV-01df8e489a34893b",
         "EV-afd0332ad8f5f05b",
+        "EV-0cce336f720bb7b7",
         "EV-36a9e4e908249381",
         "EV-02686922dd82c4aa",
         "EV-2fab4396000198d2",
@@ -15651,6 +16241,10 @@
         "EV-45be473baf6dfa4c",
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
+        "EV-05a87b578967c83e",
+        "EV-950237c6b3eb6343",
+        "EV-82e68f59d8584e4e",
+        "EV-a2dfe20983c8d6e4",
         "EV-385dc1ac09a211bd",
         "EV-a8a8f26c5128d894",
         "EV-653cbce2ccc79f8b",
@@ -15773,12 +16367,13 @@
         "EV-cf0551afe16562ef"
       ],
       "entityIds": [
-        "EN-2a920347dfcf07a7",
-        "EN-d5edfd3c9768e212",
-        "EN-ea3bd73e2b506e00",
+        "EN-cfd90af8403941bf",
+        "EN-366289432b214eda",
+        "EN-8d4321d936320802",
         "EN-fdcd4ec7d0546e95",
         "EN-9c8ae69b84f21a2e",
         "EN-45a46e581e91ce79",
+        "EN-ea3bd73e2b506e00",
         "EN-96eebba49dbbf422",
         "EN-4d748ebd71af03a7",
         "EN-7a9c94a8c201bcc2",
@@ -15831,6 +16426,7 @@
         "EN-befc92b3a019d04c",
         "EN-b10da733dff99be1",
         "EN-049b3253f4a8e2eb",
+        "EN-2a920347dfcf07a7",
         "EN-58b507456c52c9b3",
         "EN-10fd89e7d8a1c7c4",
         "EN-52f1bab72d488823",
@@ -15860,11 +16456,11 @@
         "EN-44512ea2b55bf535",
         "EN-d8cb1acd1b39854a",
         "EN-16fd849ce27f115b",
-        "EN-8d4321d936320802",
         "EN-f5791343a13abc71",
         "EN-28d0bd981118a907",
         "EN-916a98f0fa2a39af",
         "EN-8d291c7017252b07",
+        "EN-ceef9085ddc3348c",
         "EN-d9b1d7819af92e77",
         "EN-88e2cce43eeadb36",
         "EN-276a8bc458036a1a",
@@ -15897,6 +16493,11 @@
         "EN-373ac021a2c0bb2c",
         "EN-c13e2f4a44bb01ed",
         "EN-de5a1adf4fedcce1",
+        "EN-19e41212c0556603",
+        "EN-dca6ec9510fc0176",
+        "EN-60094bcf5292c490",
+        "EN-aa15d891a32a51b8",
+        "EN-eaaf22a384c26014",
         "EN-3f726694f178ed7a",
         "EN-3a9b395103419892",
         "EN-f3cfedbe8428c9f7",
@@ -15994,7 +16595,6 @@
         "EN-34e408ff65178379",
         "EN-2a817d99285e12c4",
         "EN-34da56029403e6f7",
-        "EN-dca6ec9510fc0176",
         "EN-623fbff8d5179d4e",
         "EN-fef851474e3c4311",
         "EN-19018cddd8946526",
@@ -16091,7 +16691,6 @@
         "EN-8941d14fe851d732",
         "EN-6fcba5d96a4fadfd",
         "EN-11ef7b03c79c9bbd",
-        "EN-60094bcf5292c490",
         "EN-a3266ab9e10d6105",
         "EN-9bc22dcabf7f45b3",
         "EN-10fce287b4b1464c",
@@ -16138,14 +16737,15 @@
         "FDE-ef9fdaf8134b8c2f",
         "FDE-352f1b6aaa2066b8",
         "FDE-08f12caedc3b2f13",
-        "FDE-27308b0a6cb2321a"
+        "FDE-27308b0a6cb2321a",
+        "FDE-3665b073634d4b9d"
       ],
       "hardwareIds": [
         "HW-2ce4c2fb193555e3",
         "HW-25ce41fab12d9ef2"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-07-18"
     },
     {
       "id": "TX-industry-professional_services",
@@ -16218,6 +16818,7 @@
       "valueId": "retrieval_augmented_generation",
       "eventIds": [
         "EV-30466ebe86779a64",
+        "EV-950237c6b3eb6343",
         "EV-3011ea85c51a3ee0",
         "EV-f50752717e2a8536",
         "EV-7449d239223d4928",
@@ -16227,6 +16828,9 @@
       ],
       "entityIds": [
         "EN-a9aff9e0737a5d4a",
+        "EN-8d4321d936320802",
+        "EN-60094bcf5292c490",
+        "EN-aa15d891a32a51b8",
         "EN-754b113d548b4469",
         "EN-d87e6bf7aa180a4a",
         "EN-23fa906ab8df13d6",
@@ -16249,7 +16853,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-06-11",
-      "lastSeen": "2026-07-08"
+      "lastSeen": "2026-07-18"
     }
   ]
 }

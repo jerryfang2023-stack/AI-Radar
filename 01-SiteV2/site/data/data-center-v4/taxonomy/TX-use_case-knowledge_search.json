@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T01:57:40.269Z",
-    "latestDataDate": "2026-07-17",
-    "currentDate": "2026-07-17",
-    "eventCount": 832,
-    "quarantinedEventCount": 60
+    "generatedAt": "2026-07-18T04:18:28.002Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 870,
+    "quarantinedEventCount": 59
   },
   "node": {
     "id": "TX-use_case-knowledge_search",
@@ -17,11 +17,14 @@
     "typeLabel": "应用场景",
     "valueId": "knowledge_search",
     "eventIds": [
+      "EV-b925f50b55d3aa00",
       "EV-702ed039940800fb",
       "EV-297b647e3787f3d6",
       "EV-ae4561a4a9ebe17f"
     ],
     "entityIds": [
+      "EN-e5695af6f033f56e",
+      "EN-d1ad14d4ad57d207",
       "EN-3f726694f178ed7a",
       "EN-45e0ade11fed1e44",
       "EN-1e68d267df86aa4c",
@@ -33,9 +36,79 @@
     "fdeIds": [],
     "hardwareIds": [],
     "firstSeen": "2026-06-11",
-    "lastSeen": "2026-07-16"
+    "lastSeen": "2026-07-18"
   },
   "events": [
+    {
+      "id": "EV-b925f50b55d3aa00",
+      "dataDate": "2026-07-18",
+      "date": "2026-07-18",
+      "updatedDate": "2026-07-18",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "宝马推出 ChatGPT 插件，让 AI 帮你选车",
+      "originalTitle": "",
+      "subject": "宝马",
+      "action": "推出",
+      "object": "ChatGPT 插件，让 AI 帮你选车",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "knowledge_search",
+            "dimensionName": "应用场景",
+            "name": "知识与搜索"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "id": "knowledge_search",
+          "dimensionName": "应用场景",
+          "name": "知识与搜索"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "knowledge_search",
+          "dimensionName": "应用场景",
+          "name": "知识与搜索"
+        }
+      ],
+      "entityIds": [
+        "EN-e5695af6f033f56e",
+        "EN-d1ad14d4ad57d207"
+      ],
+      "entityNames": [
+        "宝马",
+        "ChatGPT"
+      ],
+      "productName": "ChatGPT",
+      "products": [
+        {
+          "name": "ChatGPT",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/978/353.htm",
+      "publisher": "IT之家（RSS）"
+    },
     {
       "id": "EV-702ed039940800fb",
       "dataDate": "2026-07-16",
@@ -293,6 +366,58 @@
     }
   ],
   "entities": [
+    {
+      "id": "EN-e5695af6f033f56e",
+      "name": "宝马",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-b925f50b55d3aa00"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-knowledge_search"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-18",
+      "lastSeen": "2026-07-18"
+    },
+    {
+      "id": "EN-d1ad14d4ad57d207",
+      "name": "ChatGPT",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-b925f50b55d3aa00",
+        "EV-c237f5dc53f0a923",
+        "EV-20dea13a4e6100ea",
+        "EV-0dbc7b904378f713",
+        "EV-0b6992ae74184d13",
+        "EV-f3e11eadfb7c6a4b",
+        "EV-519537a36355d82e"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-code_generation",
+        "TX-use_case-knowledge_search"
+      ],
+      "relatedEntityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-2b78da3dc866654e"
+      ],
+      "firstSeen": "2026-06-02",
+      "lastSeen": "2026-07-18"
+    },
     {
       "id": "EN-3f726694f178ed7a",
       "name": "Kingsoft Office",

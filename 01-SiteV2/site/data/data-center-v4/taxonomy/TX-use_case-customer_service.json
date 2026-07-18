@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T01:57:40.269Z",
-    "latestDataDate": "2026-07-17",
-    "currentDate": "2026-07-17",
-    "eventCount": 832,
-    "quarantinedEventCount": 60
+    "generatedAt": "2026-07-18T04:18:28.002Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 870,
+    "quarantinedEventCount": 59
   },
   "node": {
     "id": "TX-use_case-customer_service",
@@ -23,6 +23,7 @@
       "EV-e869f17214557633",
       "EV-8abf5adc3e72fbb8",
       "EV-3fb492fb45980541",
+      "EV-05a87b578967c83e",
       "EV-11a8e196deb21300",
       "EV-94d9c8d5ac1e10de"
     ],
@@ -38,6 +39,7 @@
       "EN-28d0bd981118a907",
       "EN-7d3194f79e645c42",
       "EN-88e2cce43eeadb36",
+      "EN-19e41212c0556603",
       "EN-34da56029403e6f7",
       "EN-623fbff8d5179d4e",
       "EN-fef851474e3c4311",
@@ -48,11 +50,12 @@
     ],
     "fdeIds": [
       "FDE-3e499215265a81d5",
-      "FDE-d08fed45110ab44b"
+      "FDE-d08fed45110ab44b",
+      "FDE-3665b073634d4b9d"
     ],
     "hardwareIds": [],
-    "firstSeen": "2026-06-02",
-    "lastSeen": "2026-07-16"
+    "firstSeen": "2026-03-04",
+    "lastSeen": "2026-07-18"
   },
   "events": [
     {
@@ -615,6 +618,128 @@
       "publisher": "IT之家（RSS）"
     },
     {
+      "id": "EV-05a87b578967c83e",
+      "dataDate": "2026-07-18",
+      "date": "2026-03-04",
+      "updatedDate": "2026-07-18",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Singtel Group 与 Sierra 合作，借助 AI 智能体革新客户互动体验",
+      "originalTitle": "Singtel Group partners with Sierra to transform customer engagement with AI | Sierra",
+      "subject": "Singtel Group",
+      "action": "partners with",
+      "object": "Sierra to transform customer engagement with AI | Sierra",
+      "metrics": [],
+      "locations": [
+        "Singapore"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "enterprise_platform",
+            "dimensionName": "产品形态",
+            "name": "企业 AI 平台"
+          },
+          {
+            "dimensionId": "product_form",
+            "id": "ai_application",
+            "dimensionName": "产品形态",
+            "name": "AI 应用"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "customer_service",
+            "dimensionName": "应用场景",
+            "name": "客户服务"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "enterprise_platform",
+          "dimensionName": "产品形态",
+          "name": "企业 AI 平台"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "ai_application",
+          "dimensionName": "产品形态",
+          "name": "AI 应用"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "customer_service",
+          "dimensionName": "应用场景",
+          "name": "客户服务"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "enterprise_platform",
+          "dimensionName": "产品形态",
+          "name": "企业 AI 平台"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "ai_application",
+          "dimensionName": "产品形态",
+          "name": "AI 应用"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "customer_service",
+          "dimensionName": "应用场景",
+          "name": "客户服务"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "entityIds": [
+        "EN-19e41212c0556603",
+        "EN-dca6ec9510fc0176"
+      ],
+      "entityNames": [
+        "Singtel Group",
+        "Sierra"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://sierra.ai/customers/singtel",
+      "publisher": "sierra.ai"
+    },
+    {
       "id": "EV-11a8e196deb21300",
       "dataDate": "2026-06-26",
       "date": "2026-06-26",
@@ -881,11 +1006,11 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-retail_ecommerce",
         "TX-technology-code_generation",
         "TX-use_case-customer_service",
         "TX-use_case-software_development",
         "TX-technology-mixture_of_experts",
-        "TX-industry-retail_ecommerce",
         "TX-technology-on_device",
         "TX-technology-open_weights",
         "TX-technology-multimodal",
@@ -909,6 +1034,7 @@
       "eventIds": [
         "EV-64fb6d791e19d10a",
         "EV-736404028b8ad33e",
+        "EV-05a87b578967c83e",
         "EV-11a8e196deb21300"
       ],
       "viewpointIds": [],
@@ -918,8 +1044,8 @@
         "TX-technology-on_device"
       ],
       "relatedEntityIds": [],
-      "firstSeen": "2026-06-04",
-      "lastSeen": "2026-07-16"
+      "firstSeen": "2026-03-04",
+      "lastSeen": "2026-07-18"
     },
     {
       "id": "EN-3ccbd9105a45d8fc",
@@ -966,6 +1092,7 @@
       "eventIds": [
         "EV-f020dd198aa2f952",
         "EV-736404028b8ad33e",
+        "EV-53f08daddd011dbb",
         "EV-0592458e094f26cc",
         "EV-33b218942b1deab7",
         "EV-afd0332ad8f5f05b",
@@ -980,17 +1107,17 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
         "TX-use_case-customer_service",
         "TX-industry-healthcare_life_sciences",
-        "TX-industry-retail_ecommerce",
         "TX-technology-on_device",
         "TX-technology-embodied_ai",
         "TX-use_case-robotics_automation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-04-28",
-      "lastSeen": "2026-07-16"
+      "lastSeen": "2026-07-18"
     },
     {
       "id": "EN-29e1a488361f12d3",
@@ -1024,6 +1151,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-f6a72cddbda748b3",
         "EV-4eaf3aabecae6016",
         "EV-2dff32c1b6f813e4",
         "EV-305ec93673f4f12e",
@@ -1066,6 +1194,7 @@
         "EV-4dd25589d834060d",
         "EV-6617850e0b014051",
         "EV-c81cb21337a9bb98",
+        "EV-b4b5d141dac164c2",
         "EV-36a9e4e908249381",
         "EV-181b425d2a600cad",
         "EV-2c87c8ea47cbd1b6",
@@ -1120,25 +1249,26 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-financial_services",
+        "TX-use_case-enterprise_operations",
+        "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
+        "TX-industry-automotive_transportation",
         "TX-technology-code_generation",
         "TX-use_case-customer_service",
         "TX-industry-healthcare_life_sciences",
-        "TX-use_case-enterprise_operations",
         "TX-technology-mixture_of_experts",
-        "TX-industry-financial_services",
         "TX-use_case-cybersecurity",
         "TX-use_case-data_analysis",
-        "TX-industry-retail_ecommerce",
         "TX-technology-on_device",
         "TX-industry-professional_services",
         "TX-industry-technology",
         "TX-technology-embodied_ai",
         "TX-technology-open_weights",
+        "TX-technology-multimodal",
+        "TX-use_case-robotics_automation",
         "TX-industry-telecommunications",
         "TX-industry-media_entertainment",
-        "TX-use_case-robotics_automation",
-        "TX-technology-multimodal",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
         "TX-industry-government_public_sector",
@@ -1151,7 +1281,7 @@
         "EN-c70eca6b0f88f44d"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-07-18"
     },
     {
       "id": "EN-9fbf261b62c1d7c0",
@@ -1183,6 +1313,7 @@
         "EV-58c1cc3749294649",
         "EV-c0a65877001ed413",
         "EV-bd508dbe4205774f",
+        "EV-7963d8c78531f12d",
         "EV-7c899d5decafc42f",
         "EV-b920999c64aa9ef6",
         "EV-33292a33d0f4d599",
@@ -1215,16 +1346,16 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
+        "TX-industry-automotive_transportation",
         "TX-technology-code_generation",
         "TX-use_case-customer_service",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-software_development",
         "TX-use_case-cybersecurity",
-        "TX-industry-retail_ecommerce",
         "TX-technology-on_device",
         "TX-industry-technology",
-        "TX-industry-automotive_transportation",
         "TX-technology-model_context_protocol",
         "TX-industry-telecommunications",
         "TX-technology-reasoning",
@@ -1245,7 +1376,7 @@
         "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-04-16",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-07-18"
     },
     {
       "id": "EN-3474e24464fc25a7",
@@ -1299,7 +1430,6 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "Codex",
         "GPT-5.6"
       ],
       "verificationStatus": "verified",
@@ -1343,6 +1473,10 @@
         "EV-3fbfb89a10efd42f",
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
+        "EV-a68475d82ec939b5",
+        "EV-c237f5dc53f0a923",
+        "EV-3a74e4995b590507",
+        "EV-7963d8c78531f12d",
         "EV-0d5a32aca724d30e",
         "EV-70e3f88cb06a856c",
         "EV-7c899d5decafc42f",
@@ -1423,6 +1557,7 @@
         "EV-a4f052325d0ef230",
         "EV-ca420d07e12369f1",
         "EV-773ffcc6e1df56fa",
+        "EV-2f7e6d3a68bbf08f",
         "EV-5cd10de5c12916f0",
         "EV-067f57f6e6ffa6ce",
         "EV-da6678e4e865e00e",
@@ -1451,24 +1586,24 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-financial_services",
+        "TX-use_case-enterprise_operations",
+        "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
         "TX-technology-code_generation",
         "TX-use_case-customer_service",
         "TX-industry-healthcare_life_sciences",
-        "TX-use_case-enterprise_operations",
         "TX-use_case-software_development",
         "TX-technology-long_context",
-        "TX-industry-financial_services",
         "TX-use_case-cybersecurity",
         "TX-use_case-data_analysis",
-        "TX-industry-retail_ecommerce",
         "TX-industry-professional_services",
         "TX-industry-technology",
         "TX-technology-embodied_ai",
         "TX-technology-open_weights",
         "TX-technology-model_context_protocol",
-        "TX-use_case-robotics_automation",
         "TX-technology-multimodal",
+        "TX-use_case-robotics_automation",
         "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
@@ -1476,13 +1611,13 @@
         "TX-technology-computer_use"
       ],
       "relatedEntityIds": [
-        "EN-c70eca6b0f88f44d",
-        "EN-52fc33ae4d101a5d",
         "EN-7839fb10a8f14c70",
+        "EN-d1ad14d4ad57d207",
+        "EN-52fc33ae4d101a5d",
+        "EN-c70eca6b0f88f44d",
         "EN-9f15bb7e29e191eb",
         "EN-047bdfce48c28cfc",
         "EN-6a50fbf0b970c03a",
-        "EN-d1ad14d4ad57d207",
         "EN-536c4035ba0c7047",
         "EN-3c92cc7e49924a6f",
         "EN-77fe4e790d5bc756",
@@ -1504,7 +1639,7 @@
         "EN-7bf321fa55418fba"
       ],
       "firstSeen": "2026-05-19",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-07-18"
     },
     {
       "id": "EN-88e2cce43eeadb36",
@@ -1519,6 +1654,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-584212d254d882bc",
         "EV-02686922dd82c4aa",
         "EV-3fb492fb45980541",
         "EV-2ffc3377977da114",
@@ -1528,12 +1664,34 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-use_case-customer_service",
-        "TX-industry-retail_ecommerce"
+        "TX-industry-retail_ecommerce",
+        "TX-use_case-customer_service"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-07",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-07-18"
+    },
+    {
+      "id": "EN-19e41212c0556603",
+      "name": "Singtel Group",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-05a87b578967c83e"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-use_case-customer_service"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-03-04",
+      "lastSeen": "2026-07-18"
     },
     {
       "id": "EN-34da56029403e6f7",
@@ -1653,14 +1811,13 @@
       "name": "Amazon",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "Amazon Bedrock"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
+        "EV-dcbe916c6138e5cb",
         "EV-02548003157849bb",
         "EV-8b0f056571d68269",
         "EV-49c6291694fb6c7b",
@@ -1677,21 +1834,24 @@
         "EV-c108e7cc2df7faf4",
         "EV-4e55361d8324dd49",
         "EV-94d9c8d5ac1e10de",
-        "EV-b4e7187a9bd1de0e"
+        "EV-b4e7187a9bd1de0e",
+        "EV-8993e021ac17df4a"
       ],
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-retail_ecommerce",
+        "TX-industry-manufacturing",
         "TX-use_case-customer_service",
         "TX-industry-healthcare_life_sciences",
-        "TX-use_case-cybersecurity",
-        "TX-industry-retail_ecommerce"
+        "TX-use_case-cybersecurity"
       ],
       "relatedEntityIds": [
+        "EN-a614180064f7ef60",
         "EN-9fbf261b62c1d7c0"
       ],
-      "firstSeen": "2026-01-20",
-      "lastSeen": "2026-07-16"
+      "firstSeen": "2025-12-02",
+      "lastSeen": "2026-07-18"
     },
     {
       "id": "EN-dba61afed18c85d6",
@@ -1810,6 +1970,50 @@
         "EN-28d0bd981118a907",
         "EN-9fbf261b62c1d7c0",
         "EN-7d3194f79e645c42"
+      ]
+    },
+    {
+      "id": "FDE-3665b073634d4b9d",
+      "eventId": "EV-05a87b578967c83e",
+      "dataDate": "2026-07-18",
+      "date": "2026-03-04",
+      "title": "Singtel Group 与 Sierra 合作，借助 AI 智能体革新客户互动体验",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Sierra",
+      "vendor": "Singtel Group",
+      "industry": "未披露",
+      "useCase": "Sierra to transform customer engagement with AI | Sierra",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "Mr Ng Tian Chong, Chief Executive Officer, Singtel Singapore, said: “Putting our customers first has always been at the heart of what we do. The deployment of agentic AI across chat and voice is about delivering real value — more personalised experiences, greater convenience and faster, more responsive service. By using AI to support our customer service teams, we can ensure customers are promptly and well assisted, while empowering our agents to focus on more complex cases where human expertise matters most. Our AI agents are designed to understand local expressions and even Singlish, reflecting our roots as a homegrown company serving a diverse nation. This marks an important step in redefining how we build and sustain customer relationships in the AI era.”"
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "sourceUrl": "https://sierra.ai/customers/singtel",
+      "entityIds": [
+        "EN-19e41212c0556603",
+        "EN-dca6ec9510fc0176"
       ]
     }
   ],

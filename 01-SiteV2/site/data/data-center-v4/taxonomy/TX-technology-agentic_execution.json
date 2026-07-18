@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T01:57:40.269Z",
-    "latestDataDate": "2026-07-17",
-    "currentDate": "2026-07-17",
-    "eventCount": 832,
-    "quarantinedEventCount": 60
+    "generatedAt": "2026-07-18T04:18:28.002Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 870,
+    "quarantinedEventCount": 59
   },
   "node": {
     "id": "TX-technology-agentic_execution",
@@ -17,7 +17,8 @@
     "typeLabel": "技术",
     "valueId": "agentic_execution",
     "eventIds": [
-      "EV-02882e6f5e1902c6",
+      "EV-1da2e46e39a57d33",
+      "EV-8b7cbb66a33a945d",
       "EV-38cce1b72977ff2b",
       "EV-427081ec574b43bb",
       "EV-095e1a90f14ccdb9",
@@ -106,6 +107,7 @@
       "EV-bbc1042dcf5ad317",
       "EV-01df8e489a34893b",
       "EV-afd0332ad8f5f05b",
+      "EV-0cce336f720bb7b7",
       "EV-36a9e4e908249381",
       "EV-02686922dd82c4aa",
       "EV-2fab4396000198d2",
@@ -128,6 +130,10 @@
       "EV-45be473baf6dfa4c",
       "EV-8fcb52bb6ec980af",
       "EV-c0a65877001ed413",
+      "EV-05a87b578967c83e",
+      "EV-950237c6b3eb6343",
+      "EV-82e68f59d8584e4e",
+      "EV-a2dfe20983c8d6e4",
       "EV-385dc1ac09a211bd",
       "EV-a8a8f26c5128d894",
       "EV-653cbce2ccc79f8b",
@@ -250,12 +256,13 @@
       "EV-cf0551afe16562ef"
     ],
     "entityIds": [
-      "EN-2a920347dfcf07a7",
-      "EN-d5edfd3c9768e212",
-      "EN-ea3bd73e2b506e00",
+      "EN-cfd90af8403941bf",
+      "EN-366289432b214eda",
+      "EN-8d4321d936320802",
       "EN-fdcd4ec7d0546e95",
       "EN-9c8ae69b84f21a2e",
       "EN-45a46e581e91ce79",
+      "EN-ea3bd73e2b506e00",
       "EN-96eebba49dbbf422",
       "EN-4d748ebd71af03a7",
       "EN-7a9c94a8c201bcc2",
@@ -308,6 +315,7 @@
       "EN-befc92b3a019d04c",
       "EN-b10da733dff99be1",
       "EN-049b3253f4a8e2eb",
+      "EN-2a920347dfcf07a7",
       "EN-58b507456c52c9b3",
       "EN-10fd89e7d8a1c7c4",
       "EN-52f1bab72d488823",
@@ -337,11 +345,11 @@
       "EN-44512ea2b55bf535",
       "EN-d8cb1acd1b39854a",
       "EN-16fd849ce27f115b",
-      "EN-8d4321d936320802",
       "EN-f5791343a13abc71",
       "EN-28d0bd981118a907",
       "EN-916a98f0fa2a39af",
       "EN-8d291c7017252b07",
+      "EN-ceef9085ddc3348c",
       "EN-d9b1d7819af92e77",
       "EN-88e2cce43eeadb36",
       "EN-276a8bc458036a1a",
@@ -374,6 +382,11 @@
       "EN-373ac021a2c0bb2c",
       "EN-c13e2f4a44bb01ed",
       "EN-de5a1adf4fedcce1",
+      "EN-19e41212c0556603",
+      "EN-dca6ec9510fc0176",
+      "EN-60094bcf5292c490",
+      "EN-aa15d891a32a51b8",
+      "EN-eaaf22a384c26014",
       "EN-3f726694f178ed7a",
       "EN-3a9b395103419892",
       "EN-f3cfedbe8428c9f7",
@@ -471,7 +484,6 @@
       "EN-34e408ff65178379",
       "EN-2a817d99285e12c4",
       "EN-34da56029403e6f7",
-      "EN-dca6ec9510fc0176",
       "EN-623fbff8d5179d4e",
       "EN-fef851474e3c4311",
       "EN-19018cddd8946526",
@@ -568,7 +580,6 @@
       "EN-8941d14fe851d732",
       "EN-6fcba5d96a4fadfd",
       "EN-11ef7b03c79c9bbd",
-      "EN-60094bcf5292c490",
       "EN-a3266ab9e10d6105",
       "EN-9bc22dcabf7f45b3",
       "EN-10fce287b4b1464c",
@@ -615,38 +626,104 @@
       "FDE-ef9fdaf8134b8c2f",
       "FDE-352f1b6aaa2066b8",
       "FDE-08f12caedc3b2f13",
-      "FDE-27308b0a6cb2321a"
+      "FDE-27308b0a6cb2321a",
+      "FDE-3665b073634d4b9d"
     ],
     "hardwareIds": [
       "HW-2ce4c2fb193555e3",
       "HW-25ce41fab12d9ef2"
     ],
     "firstSeen": "2025-03-18",
-    "lastSeen": "2026-07-17"
+    "lastSeen": "2026-07-18"
   },
   "events": [
     {
-      "id": "EV-02882e6f5e1902c6",
-      "dataDate": "2026-07-17",
+      "id": "EV-1da2e46e39a57d33",
+      "dataDate": "2026-07-18",
       "date": "2026-07-16",
-      "updatedDate": "2026-07-17",
+      "updatedDate": "2026-07-18",
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
       "status": "completed",
       "statusLabel": "已完成",
       "publicationStatus": "verified",
-      "title": "Aina 从 Info Edge 等机构融资 550 万美元，用于构建 AI 硬件接口",
-      "originalTitle": "Aina Raises $5.5 Mn From Info Edge, Others To Build AI Hardware Interface",
-      "subject": "Aina",
-      "action": "Raises",
-      "object": "$5.5 Mn From Info Edge, Others To Build AI Hardware Interface",
+      "title": "Sable 从红杉资本融资 4500 万美元，打造替代人类运行产品演示的 AI 智能体",
+      "originalTitle": "Sable raised $45 million from Sequoia to build an AI that runs product demos instead of humans",
+      "subject": "Sable",
+      "action": "raised",
+      "object": "$45 million from Sequoia to build an AI that runs product demos instead of humans",
       "metrics": [
-        "$5.5 M",
-        "$5.5M",
-        "$5.5 million"
+        "$45 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "entityIds": [
+        "EN-cfd90af8403941bf"
+      ],
+      "entityNames": [
+        "Sable"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://thenextweb.com/news/sable-aidan-ai-employee-sequoia-45-million",
+      "publisher": "thenextweb.com"
+    },
+    {
+      "id": "EV-8b7cbb66a33a945d",
+      "dataDate": "2026-07-18",
+      "date": "2026-07-16",
+      "updatedDate": "2026-07-18",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Reo.Dev 完成 1130 万美元 A 轮融资，扩大面向工程团队的 AI 信号服务",
+      "originalTitle": "Reo.Dev raises $11.3M Series A to scale AI signals for Companies Selling to Engineering Teams",
+      "subject": "Reo.Dev",
+      "action": "raises",
+      "object": "$11.3M Series A to scale AI signals for Companies Selling to Engineering Teams",
+      "metrics": [
+        "$11.3 million",
+        "$15.3 million",
+        "100 million"
       ],
       "locations": [
+        "US",
         "India"
       ],
       "missingFields": [],
@@ -662,14 +739,7 @@
       "facets": {
         "product_form": [],
         "use_case": [],
-        "industry": [
-          {
-            "dimensionId": "industry",
-            "id": "manufacturing",
-            "dimensionName": "行业",
-            "name": "制造业"
-          }
-        ],
+        "industry": [],
         "deployment_model": [],
         "target_user": []
       },
@@ -679,12 +749,6 @@
           "dimensionName": "技术",
           "id": "agentic_execution",
           "name": "智能体"
-        },
-        {
-          "dimensionId": "industry",
-          "id": "manufacturing",
-          "dimensionName": "行业",
-          "name": "制造业"
         }
       ],
       "displayTags": [
@@ -693,28 +757,20 @@
           "dimensionName": "技术",
           "id": "agentic_execution",
           "name": "智能体"
-        },
-        {
-          "dimensionId": "industry",
-          "id": "manufacturing",
-          "dimensionName": "行业",
-          "name": "制造业"
         }
       ],
       "entityIds": [
-        "EN-2a920347dfcf07a7",
-        "EN-d5edfd3c9768e212",
-        "EN-ea3bd73e2b506e00"
+        "EN-366289432b214eda",
+        "EN-8d4321d936320802"
       ],
       "entityNames": [
-        "Aina",
-        "Ultrahuman's former hardware VP",
-        "Meta"
+        "Reo.Dev",
+        "NVIDIA"
       ],
       "productName": "",
       "products": [],
-      "sourceUrl": "https://inc42.com/buzz/aina-raises-5-5-mn-from-info-edge-ventures-360-one-asset-to-build-ai-native-interfaces",
-      "publisher": "inc42.com"
+      "sourceUrl": "https://reo.dev/blog/reo-dev-series-a",
+      "publisher": "reo.dev"
     },
     {
       "id": "EV-38cce1b72977ff2b",
@@ -7853,6 +7909,70 @@
       "publisher": "fiercehealthcare.com"
     },
     {
+      "id": "EV-0cce336f720bb7b7",
+      "dataDate": "2026-07-18",
+      "date": "2026-07-17",
+      "updatedDate": "2026-07-18",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "智能体互信互联互操作全球合作倡议发布，中国网信办提出十大行动方向",
+      "originalTitle": "",
+      "subject": "智能体互信互联互操作全球",
+      "action": "合作",
+      "object": "倡议发布，中国网信办提出十大行动方向",
+      "metrics": [],
+      "locations": [
+        "中国"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "entityIds": [
+        "EN-ceef9085ddc3348c"
+      ],
+      "entityNames": [
+        "智能体互信互联互操作全球"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/978/197.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
       "id": "EV-36a9e4e908249381",
       "dataDate": "2026-07-17",
       "date": "2026-07-16",
@@ -9735,6 +9855,363 @@
       "products": [],
       "sourceUrl": "https://www.anthropic.com/news/snowflake-anthropic-expanded-partnership",
       "publisher": "anthropic.com"
+    },
+    {
+      "id": "EV-05a87b578967c83e",
+      "dataDate": "2026-07-18",
+      "date": "2026-03-04",
+      "updatedDate": "2026-07-18",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Singtel Group 与 Sierra 合作，借助 AI 智能体革新客户互动体验",
+      "originalTitle": "Singtel Group partners with Sierra to transform customer engagement with AI | Sierra",
+      "subject": "Singtel Group",
+      "action": "partners with",
+      "object": "Sierra to transform customer engagement with AI | Sierra",
+      "metrics": [],
+      "locations": [
+        "Singapore"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "enterprise_platform",
+            "dimensionName": "产品形态",
+            "name": "企业 AI 平台"
+          },
+          {
+            "dimensionId": "product_form",
+            "id": "ai_application",
+            "dimensionName": "产品形态",
+            "name": "AI 应用"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "customer_service",
+            "dimensionName": "应用场景",
+            "name": "客户服务"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "enterprise_platform",
+          "dimensionName": "产品形态",
+          "name": "企业 AI 平台"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "ai_application",
+          "dimensionName": "产品形态",
+          "name": "AI 应用"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "customer_service",
+          "dimensionName": "应用场景",
+          "name": "客户服务"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "enterprise_platform",
+          "dimensionName": "产品形态",
+          "name": "企业 AI 平台"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "ai_application",
+          "dimensionName": "产品形态",
+          "name": "AI 应用"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "customer_service",
+          "dimensionName": "应用场景",
+          "name": "客户服务"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "entityIds": [
+        "EN-19e41212c0556603",
+        "EN-dca6ec9510fc0176"
+      ],
+      "entityNames": [
+        "Singtel Group",
+        "Sierra"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://sierra.ai/customers/singtel",
+      "publisher": "sierra.ai"
+    },
+    {
+      "id": "EV-950237c6b3eb6343",
+      "dataDate": "2026-07-18",
+      "date": "2026-07-18",
+      "updatedDate": "2026-07-18",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "英伟达开源 Nemotron 3 Embed 系列 AI 模型，8B 版斩获 RTEB 榜首",
+      "originalTitle": "",
+      "subject": "英伟达",
+      "action": "开源 Nemotron 3 Embed 系列 AI 模型",
+      "object": "，8B 版斩获 RTEB 榜首",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "retrieval_augmented_generation",
+          "name": "RAG"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "retrieval_augmented_generation",
+          "name": "RAG"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "retrieval_augmented_generation",
+          "name": "RAG"
+        }
+      ],
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-60094bcf5292c490",
+        "EN-aa15d891a32a51b8"
+      ],
+      "entityNames": [
+        "NVIDIA",
+        "英伟达",
+        "Nemotron 3 Embed"
+      ],
+      "productName": "Nemotron 3 Embed",
+      "products": [
+        {
+          "name": "Nemotron 3 Embed",
+          "type": "模型",
+          "ownerNames": [
+            "NVIDIA"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/978/334.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-82e68f59d8584e4e",
+      "dataDate": "2026-07-18",
+      "date": "2026-07-17",
+      "updatedDate": "2026-07-18",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "阿里千问 AI 眼镜将升级为智能体眼镜，联合 Bose 打造首款 AI 智能体耳机",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "阿里千问 AI 眼镜将升级为智能体眼镜，联合 Bose 打造首款 AI 智能体耳机",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "ai_device",
+            "dimensionName": "产品形态",
+            "name": "AI 设备"
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "ai_device",
+          "dimensionName": "产品形态",
+          "name": "AI 设备"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "ai_device",
+          "dimensionName": "产品形态",
+          "name": "AI 设备"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "entityIds": [
+        "EN-047364b9be67f665"
+      ],
+      "entityNames": [
+        "Alibaba"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/978/215.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-a2dfe20983c8d6e4",
+      "dataDate": "2026-07-18",
+      "date": "2026-07-17",
+      "updatedDate": "2026-07-18",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "国家超算互联网发布科学智能体开发者招募计划，可享全国首个十万卡AI超集群算力",
+      "originalTitle": "",
+      "subject": "国家超算互联网",
+      "action": "发布",
+      "object": "科学智能体开发者招募计划，可享全国首个十万卡AI超集群算力",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "entityIds": [
+        "EN-eaaf22a384c26014"
+      ],
+      "entityNames": [
+        "国家超算互联网"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/978/307.htm",
+      "publisher": "IT之家（RSS）"
     },
     {
       "id": "EV-385dc1ac09a211bd",
@@ -14702,12 +15179,16 @@
         {
           "name": "Genie One",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Databricks"
+          ]
         },
         {
           "name": "Launches Genie One",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Databricks"
+          ]
         }
       ],
       "sourceUrl": "https://databricks.com/company/newsroom/press-releases/databricks-launches-genie-one-all-new-agentic-coworker-every-team",
@@ -20932,40 +21413,8 @@
   ],
   "entities": [
     {
-      "id": "EN-2a920347dfcf07a7",
-      "name": "Aina",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-02882e6f5e1902c6",
-        "EV-7e1624d7df300713",
-        "EV-3902d8bd5da40a20",
-        "EV-01b003fbae67ae91",
-        "EV-8fcb52bb6ec980af",
-        "EV-860b90c017deaa59",
-        "EV-6ce6b9c9780b97d9",
-        "EV-ad269fada2269f35"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-industry-manufacturing",
-        "TX-industry-healthcare_life_sciences",
-        "TX-industry-retail_ecommerce",
-        "TX-industry-telecommunications"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-05-20",
-      "lastSeen": "2026-07-17"
-    },
-    {
-      "id": "EN-d5edfd3c9768e212",
-      "name": "Ultrahuman's former hardware VP",
+      "id": "EN-cfd90af8403941bf",
+      "name": "Sable",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [],
@@ -20974,92 +21423,162 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-02882e6f5e1902c6"
+        "EV-1da2e46e39a57d33"
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-industry-manufacturing"
+        "TX-technology-agentic_execution"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-16",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-07-18"
     },
     {
-      "id": "EN-ea3bd73e2b506e00",
-      "name": "Meta",
+      "id": "EN-366289432b214eda",
+      "name": "Reo.Dev",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-8b7cbb66a33a945d"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-16",
+      "lastSeen": "2026-07-18"
+    },
+    {
+      "id": "EN-8d4321d936320802",
+      "name": "NVIDIA",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "英伟达"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
-        "EV-02882e6f5e1902c6",
-        "EV-5df885dbd24b6d00",
-        "EV-427081ec574b43bb",
+        "EV-8b7cbb66a33a945d",
+        "EV-4eaf3aabecae6016",
+        "EV-87432dbb99cd6033",
+        "EV-6e516b6e68def9cf",
         "EV-e41fc65eb014893f",
-        "EV-974a6b7d0e0efef2",
-        "EV-917a390341b9fce6",
-        "EV-3f8f6a578be79988",
-        "EV-9efcf6480f6c6f48",
+        "EV-040fc355bc12a750",
+        "EV-80e54c9a390da293",
+        "EV-4118202ed0f91895",
+        "EV-236cbc2d64f0c455",
+        "EV-0e84a2f49d765ce3",
+        "EV-cafe435ddd007821",
+        "EV-36d484148fbd3424",
+        "EV-47a16db069ed320e",
         "EV-cf76f090a1a20a36",
-        "EV-fd7e79d3cb9cdb69",
-        "EV-43301de739fe560e",
-        "EV-cf176636839e45be",
-        "EV-9496f90f3e808992",
-        "EV-dce5de62b2e4b752",
-        "EV-ae736eb124d7163a",
-        "EV-e42e55d1e11a2ba2",
-        "EV-41baa43cf05d4288",
-        "EV-40390136762c64d3",
-        "EV-07a5533c18e5a74e",
-        "EV-56b9643b245a5ff4",
-        "EV-0edb0a592ca1fd67",
-        "EV-20ffa968bcbc4729",
-        "EV-7e52d691a0553667",
-        "EV-f34eec5df7f5bcb7",
-        "EV-c996e56f7f4bdc49",
-        "EV-b60df35d168fe6b7",
-        "EV-c846e768dad05441",
-        "EV-cea99e5d7f93d56a",
-        "EV-29f130674dbbb59e",
-        "EV-a39ca82d354c7197",
-        "EV-657837763764c869",
-        "EV-ef823877347ff40f",
-        "EV-04cf95633b564f9a",
-        "EV-02b07069713d9a1c",
-        "EV-322796d9761a0824",
-        "EV-2d56dec8dfeb2b56",
-        "EV-8fcecabca2e92b40"
+        "EV-7263caa45bbf168e",
+        "EV-234ad54940674bf6",
+        "EV-5b16886442234f81",
+        "EV-ef6464cf7f764835",
+        "EV-b95539d17772a4ce",
+        "EV-f63462e34ea40699",
+        "EV-4faa2bcf2e42e60c",
+        "EV-9ee3c0ec243b6129",
+        "EV-58c1cc3749294649",
+        "EV-950237c6b3eb6343",
+        "EV-6b51b1b6fe22c540",
+        "EV-c2800c1c5a3f568f",
+        "EV-1ff169120ed385f6",
+        "EV-47d14d0aa4d4414e",
+        "EV-f7b60c0c63403f8c",
+        "EV-6139380f3362803b",
+        "EV-96c8ce4ee89adb84",
+        "EV-53f881da31630a04",
+        "EV-6a2f3e9a22edff64",
+        "EV-f784003febc1d9eb",
+        "EV-587c18cb1837c74f",
+        "EV-bd66e5b45a6a577e",
+        "EV-53564b1f0fd2214b",
+        "EV-7fb25ff3d853c314",
+        "EV-8a91e14f37d32b4d",
+        "EV-13f0b515194f3245",
+        "EV-5d50eb202b478bd4",
+        "EV-e2db9c4e7c16ae7a",
+        "EV-69fbe85ca4ac81cd",
+        "EV-b7ba9acba80a852e",
+        "EV-4bb5b24400e49ea4",
+        "EV-568d2aeab5234e48",
+        "EV-b986a633cca27df9",
+        "EV-2258329f33d413cf",
+        "EV-4bf0e4043c3562f2",
+        "EV-309ea4fc27a66485",
+        "EV-fa1b1efd77f36d56",
+        "EV-4026c95d4c01b96e",
+        "EV-631197767a45d34c",
+        "EV-67f32771d69084d6",
+        "EV-d2ac9700c86913da",
+        "EV-d43a561da59b2897",
+        "EV-f5755fccd5731063",
+        "EV-8993e021ac17df4a",
+        "EV-34929bdd016dc8d6",
+        "EV-08f736f61f2b46f3",
+        "EV-710b145230faa692",
+        "EV-0b49d637d7c07ce0"
       ],
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
+        "TX-industry-automotive_transportation",
+        "TX-technology-code_generation",
         "TX-industry-healthcare_life_sciences",
-        "TX-industry-media_entertainment",
+        "TX-technology-long_context",
+        "TX-technology-mixture_of_experts",
+        "TX-use_case-cybersecurity",
+        "TX-technology-on_device",
+        "TX-technology-retrieval_augmented_generation",
+        "TX-technology-embodied_ai",
+        "TX-technology-open_weights",
         "TX-technology-multimodal",
+        "TX-use_case-robotics_automation",
+        "TX-industry-telecommunications",
+        "TX-industry-media_entertainment",
         "TX-technology-guardrails_safety",
-        "TX-technology-tool_use",
         "TX-technology-reasoning",
+        "TX-technology-fine_tuning",
         "TX-technology-image_generation",
-        "TX-technology-computer_use"
+        "TX-technology-inference_optimization",
+        "TX-technology-speech_audio"
       ],
       "relatedEntityIds": [
-        "EN-e3863f813fe47240",
-        "EN-de1afc61dd4d2cea",
-        "EN-d85ad5e8ff8e2889",
-        "EN-a2fa009495c3bb3a",
-        "EN-77fe4e790d5bc756",
-        "EN-2ba325ce6f8e3dc9",
-        "EN-557203e8cc173124",
-        "EN-5fa6f727c9e3afe0",
-        "EN-e71558a14e7ed6ab"
+        "EN-8395dc051feafc4c",
+        "EN-aa15d891a32a51b8",
+        "EN-0f3360879e746531",
+        "EN-51fd7dc086fcb858",
+        "EN-9e193e1ec8d75d41",
+        "EN-3ae50afab3e392b8",
+        "EN-936f01f91fdadf69",
+        "EN-2f354de778e6a6da",
+        "EN-b5738c169b693bee",
+        "EN-4e7e886400fe6a83",
+        "EN-1dc405a4cda895d0",
+        "EN-12ab68e37d104d27",
+        "EN-a3266ab9e10d6105",
+        "EN-ab9e3beebd83960d",
+        "EN-9fbf261b62c1d7c0",
+        "EN-11ef7b03c79c9bbd",
+        "EN-0b9ca57f53ba758b",
+        "EN-9bc22dcabf7f45b3",
+        "EN-171fa23d27b5894b",
+        "EN-e246a1f9a090075b"
       ],
-      "firstSeen": "2026-05-23",
-      "lastSeen": "2026-07-17"
+      "firstSeen": "2025-03-18",
+      "lastSeen": "2026-07-18"
     },
     {
       "id": "EN-fdcd4ec7d0546e95",
@@ -21121,8 +21640,8 @@
         "TX-technology-agentic_execution",
         "TX-technology-long_context",
         "TX-technology-open_weights",
-        "TX-industry-media_entertainment",
-        "TX-technology-multimodal"
+        "TX-technology-multimodal",
+        "TX-industry-media_entertainment"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-18",
@@ -21150,6 +21669,81 @@
       "lastSeen": "2026-07-11"
     },
     {
+      "id": "EN-ea3bd73e2b506e00",
+      "name": "Meta",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-5df885dbd24b6d00",
+        "EV-dcbe916c6138e5cb",
+        "EV-427081ec574b43bb",
+        "EV-e41fc65eb014893f",
+        "EV-974a6b7d0e0efef2",
+        "EV-917a390341b9fce6",
+        "EV-3f8f6a578be79988",
+        "EV-9efcf6480f6c6f48",
+        "EV-cf76f090a1a20a36",
+        "EV-fd7e79d3cb9cdb69",
+        "EV-43301de739fe560e",
+        "EV-cf176636839e45be",
+        "EV-9496f90f3e808992",
+        "EV-dce5de62b2e4b752",
+        "EV-ae736eb124d7163a",
+        "EV-e42e55d1e11a2ba2",
+        "EV-41baa43cf05d4288",
+        "EV-40390136762c64d3",
+        "EV-07a5533c18e5a74e",
+        "EV-56b9643b245a5ff4",
+        "EV-0edb0a592ca1fd67",
+        "EV-20ffa968bcbc4729",
+        "EV-7e52d691a0553667",
+        "EV-f34eec5df7f5bcb7",
+        "EV-c996e56f7f4bdc49",
+        "EV-b60df35d168fe6b7",
+        "EV-c846e768dad05441",
+        "EV-cea99e5d7f93d56a",
+        "EV-29f130674dbbb59e",
+        "EV-a39ca82d354c7197",
+        "EV-657837763764c869",
+        "EV-ef823877347ff40f",
+        "EV-04cf95633b564f9a",
+        "EV-02b07069713d9a1c",
+        "EV-322796d9761a0824",
+        "EV-2d56dec8dfeb2b56",
+        "EV-8fcecabca2e92b40"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-healthcare_life_sciences",
+        "TX-technology-multimodal",
+        "TX-industry-media_entertainment",
+        "TX-technology-guardrails_safety",
+        "TX-technology-tool_use",
+        "TX-technology-reasoning",
+        "TX-technology-image_generation",
+        "TX-technology-computer_use"
+      ],
+      "relatedEntityIds": [
+        "EN-e3863f813fe47240",
+        "EN-de1afc61dd4d2cea",
+        "EN-d85ad5e8ff8e2889",
+        "EN-a2fa009495c3bb3a",
+        "EN-77fe4e790d5bc756",
+        "EN-2ba325ce6f8e3dc9",
+        "EN-557203e8cc173124",
+        "EN-5fa6f727c9e3afe0",
+        "EN-e71558a14e7ed6ab"
+      ],
+      "firstSeen": "2026-05-23",
+      "lastSeen": "2026-07-18"
+    },
+    {
       "id": "EN-96eebba49dbbf422",
       "name": "Intel",
       "entityType": "organization_candidate",
@@ -21160,6 +21754,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-f6a72cddbda748b3",
         "EV-4eaf3aabecae6016",
         "EV-2dff32c1b6f813e4",
         "EV-305ec93673f4f12e",
@@ -21202,6 +21797,7 @@
         "EV-4dd25589d834060d",
         "EV-6617850e0b014051",
         "EV-c81cb21337a9bb98",
+        "EV-b4b5d141dac164c2",
         "EV-36a9e4e908249381",
         "EV-181b425d2a600cad",
         "EV-2c87c8ea47cbd1b6",
@@ -21256,25 +21852,26 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-financial_services",
+        "TX-use_case-enterprise_operations",
+        "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
+        "TX-industry-automotive_transportation",
         "TX-technology-code_generation",
         "TX-use_case-customer_service",
         "TX-industry-healthcare_life_sciences",
-        "TX-use_case-enterprise_operations",
         "TX-technology-mixture_of_experts",
-        "TX-industry-financial_services",
         "TX-use_case-cybersecurity",
         "TX-use_case-data_analysis",
-        "TX-industry-retail_ecommerce",
         "TX-technology-on_device",
         "TX-industry-professional_services",
         "TX-industry-technology",
         "TX-technology-embodied_ai",
         "TX-technology-open_weights",
+        "TX-technology-multimodal",
+        "TX-use_case-robotics_automation",
         "TX-industry-telecommunications",
         "TX-industry-media_entertainment",
-        "TX-use_case-robotics_automation",
-        "TX-technology-multimodal",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
         "TX-industry-government_public_sector",
@@ -21287,7 +21884,7 @@
         "EN-c70eca6b0f88f44d"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-07-18"
     },
     {
       "id": "EN-4d748ebd71af03a7",
@@ -21311,8 +21908,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-industry-healthcare_life_sciences",
         "TX-industry-financial_services",
+        "TX-industry-healthcare_life_sciences",
         "TX-technology-reasoning"
       ],
       "relatedEntityIds": [],
@@ -21536,8 +22133,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-industry-healthcare_life_sciences",
-        "TX-use_case-enterprise_operations"
+        "TX-use_case-enterprise_operations",
+        "TX-industry-healthcare_life_sciences"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-07",
@@ -21609,11 +22206,11 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-retail_ecommerce",
         "TX-technology-code_generation",
         "TX-use_case-customer_service",
         "TX-use_case-software_development",
         "TX-technology-mixture_of_experts",
-        "TX-industry-retail_ecommerce",
         "TX-technology-on_device",
         "TX-technology-open_weights",
         "TX-technology-multimodal",
@@ -21651,6 +22248,7 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
+        "阿里",
         "阿里巴巴"
       ],
       "verificationStatus": "verified",
@@ -21660,7 +22258,11 @@
       "eventIds": [
         "EV-43b7f45e9bd7ec9b",
         "EV-3d93d1da8cb64462",
+        "EV-53f08daddd011dbb",
         "EV-e1a4bc40db4a9d8f",
+        "EV-6fbbbfcdcec81df4",
+        "EV-82e68f59d8584e4e",
+        "EV-fd8ecce5de2f667d",
         "EV-f6ac2938949f74ec",
         "EV-70cbf25f7ec2cc3a",
         "EV-8b9e4428074bde60",
@@ -21696,7 +22298,7 @@
         "EN-2daac3672aeafcbd"
       ],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-07-18"
     },
     {
       "id": "EN-693b1c2b5c9e35f4",
@@ -21771,6 +22373,7 @@
         "EV-58c1cc3749294649",
         "EV-c0a65877001ed413",
         "EV-bd508dbe4205774f",
+        "EV-7963d8c78531f12d",
         "EV-7c899d5decafc42f",
         "EV-b920999c64aa9ef6",
         "EV-33292a33d0f4d599",
@@ -21803,16 +22406,16 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
+        "TX-industry-automotive_transportation",
         "TX-technology-code_generation",
         "TX-use_case-customer_service",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-software_development",
         "TX-use_case-cybersecurity",
-        "TX-industry-retail_ecommerce",
         "TX-technology-on_device",
         "TX-industry-technology",
-        "TX-industry-automotive_transportation",
         "TX-technology-model_context_protocol",
         "TX-industry-telecommunications",
         "TX-technology-reasoning",
@@ -21833,7 +22436,7 @@
         "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-04-16",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-07-18"
     },
     {
       "id": "EN-0cc3af265406c202",
@@ -21884,9 +22487,7 @@
       "name": "Google",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "谷歌"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -21901,6 +22502,7 @@
         "EV-dbbe3fd637be213f",
         "EV-4a162c41bb82f325",
         "EV-cf76f090a1a20a36",
+        "EV-b4b5d141dac164c2",
         "EV-36a9e4e908249381",
         "EV-ef6464cf7f764835",
         "EV-b95539d17772a4ce",
@@ -21908,6 +22510,7 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
+        "EV-a255cfc0dab44564",
         "EV-04efb4eecbb8125f",
         "EV-6359c9f6c2609a38",
         "EV-c2d784ef0a5376f8",
@@ -21976,18 +22579,18 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-technology-code_generation",
+        "TX-industry-financial_services",
         "TX-use_case-enterprise_operations",
+        "TX-industry-retail_ecommerce",
+        "TX-technology-code_generation",
         "TX-use_case-software_development",
         "TX-technology-mixture_of_experts",
-        "TX-industry-financial_services",
         "TX-use_case-cybersecurity",
-        "TX-industry-retail_ecommerce",
         "TX-technology-on_device",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-embodied_ai",
-        "TX-industry-media_entertainment",
         "TX-technology-multimodal",
+        "TX-industry-media_entertainment",
         "TX-technology-video_generation",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
@@ -22013,7 +22616,6 @@
         "EN-0e008e2c06144ec8",
         "EN-f2c032b19edb7900",
         "EN-d4c56709df757c56",
-        "EN-6470c8584a9d35d3",
         "EN-b5c336c0dd1ff29c",
         "EN-eb0cc8fb584389db",
         "EN-d56aa2f9908f566a",
@@ -22021,7 +22623,7 @@
         "EN-e3db3da2b7dc6057"
       ],
       "firstSeen": "2026-05-22",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-07-18"
     },
     {
       "id": "EN-4dd5b6e2bf3bfd4f",
@@ -22061,9 +22663,9 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-financial_services",
         "TX-industry-manufacturing",
-        "TX-industry-healthcare_life_sciences",
-        "TX-industry-financial_services"
+        "TX-industry-healthcare_life_sciences"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-26",
@@ -22075,7 +22677,6 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "Codex",
         "GPT-5.6"
       ],
       "verificationStatus": "verified",
@@ -22119,6 +22720,10 @@
         "EV-3fbfb89a10efd42f",
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
+        "EV-a68475d82ec939b5",
+        "EV-c237f5dc53f0a923",
+        "EV-3a74e4995b590507",
+        "EV-7963d8c78531f12d",
         "EV-0d5a32aca724d30e",
         "EV-70e3f88cb06a856c",
         "EV-7c899d5decafc42f",
@@ -22199,6 +22804,7 @@
         "EV-a4f052325d0ef230",
         "EV-ca420d07e12369f1",
         "EV-773ffcc6e1df56fa",
+        "EV-2f7e6d3a68bbf08f",
         "EV-5cd10de5c12916f0",
         "EV-067f57f6e6ffa6ce",
         "EV-da6678e4e865e00e",
@@ -22227,24 +22833,24 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-financial_services",
+        "TX-use_case-enterprise_operations",
+        "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
         "TX-technology-code_generation",
         "TX-use_case-customer_service",
         "TX-industry-healthcare_life_sciences",
-        "TX-use_case-enterprise_operations",
         "TX-use_case-software_development",
         "TX-technology-long_context",
-        "TX-industry-financial_services",
         "TX-use_case-cybersecurity",
         "TX-use_case-data_analysis",
-        "TX-industry-retail_ecommerce",
         "TX-industry-professional_services",
         "TX-industry-technology",
         "TX-technology-embodied_ai",
         "TX-technology-open_weights",
         "TX-technology-model_context_protocol",
-        "TX-use_case-robotics_automation",
         "TX-technology-multimodal",
+        "TX-use_case-robotics_automation",
         "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
@@ -22252,13 +22858,13 @@
         "TX-technology-computer_use"
       ],
       "relatedEntityIds": [
-        "EN-c70eca6b0f88f44d",
-        "EN-52fc33ae4d101a5d",
         "EN-7839fb10a8f14c70",
+        "EN-d1ad14d4ad57d207",
+        "EN-52fc33ae4d101a5d",
+        "EN-c70eca6b0f88f44d",
         "EN-9f15bb7e29e191eb",
         "EN-047bdfce48c28cfc",
         "EN-6a50fbf0b970c03a",
-        "EN-d1ad14d4ad57d207",
         "EN-536c4035ba0c7047",
         "EN-3c92cc7e49924a6f",
         "EN-77fe4e790d5bc756",
@@ -22280,7 +22886,7 @@
         "EN-7bf321fa55418fba"
       ],
       "firstSeen": "2026-05-19",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-07-18"
     },
     {
       "id": "EN-871e6f4bf723cb1b",
@@ -22480,8 +23086,7 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "Claude Code",
-        "Claude"
+        "Claude Code"
       ],
       "verificationStatus": "verified",
       "datasetScopes": [
@@ -22522,6 +23127,8 @@
         "EV-b240fb11e65b018e",
         "EV-bad301e14b034fbd",
         "EV-c0a65877001ed413",
+        "EV-debecca007e547d2",
+        "EV-7963d8c78531f12d",
         "EV-0d5a32aca724d30e",
         "EV-a8a8f26c5128d894",
         "EV-51645a3b1e730105",
@@ -22649,17 +23256,17 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-financial_services",
+        "TX-use_case-enterprise_operations",
+        "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
         "TX-technology-code_generation",
         "TX-industry-healthcare_life_sciences",
-        "TX-use_case-enterprise_operations",
         "TX-use_case-software_development",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
-        "TX-industry-financial_services",
         "TX-use_case-cybersecurity",
         "TX-use_case-data_analysis",
-        "TX-industry-retail_ecommerce",
         "TX-technology-on_device",
         "TX-technology-embodied_ai",
         "TX-technology-open_weights",
@@ -22673,8 +23280,10 @@
       ],
       "relatedEntityIds": [
         "EN-cb4754c48f8023d0",
-        "EN-3a9b395103419892",
         "EN-729324072d368379",
+        "EN-9d40760b37c15a83",
+        "EN-855bed02b965c12c",
+        "EN-3a9b395103419892",
         "EN-7d3194f79e645c42",
         "EN-9612b6f6884e062f",
         "EN-ef11a801c5bd3673",
@@ -22684,11 +23293,9 @@
         "EN-40bad8003c5ee358",
         "EN-85a7b756f3a700d0",
         "EN-fab30471ea65d627",
-        "EN-b8c236d640d6a5fb",
-        "EN-db68703d8d719bd0",
-        "EN-9f15bb7e29e191eb",
         "EN-3a13916345b60fad",
         "EN-77fe4e790d5bc756",
+        "EN-9f15bb7e29e191eb",
         "EN-5a4c2be958c0af72",
         "EN-a18162bf7228289d",
         "EN-8218ed4e007b0ad1",
@@ -22700,10 +23307,10 @@
         "EN-5fc6493a57c5f14e",
         "EN-ad2cec837f9cb98f",
         "EN-29eb5745fdfcb027",
-        "EN-7ec0224e483d913b",
         "EN-e61ac98ebb45d0db",
         "EN-e4ffb7bd879b89da",
         "EN-1e4fdc17666edc33",
+        "EN-db68703d8d719bd0",
         "EN-c8185a1a8a6595ad",
         "EN-d65f09457cc098a8",
         "EN-ea4ea767088c4a22",
@@ -22712,6 +23319,7 @@
         "EN-b59c577ed73536c6",
         "EN-4db5fd308d379cab",
         "EN-96eebba49dbbf422",
+        "EN-b8c236d640d6a5fb",
         "EN-d8494bb34d6ddc43",
         "EN-540dfc8c5e1b1136",
         "EN-9ab4135a1cdb0a8c",
@@ -22720,7 +23328,7 @@
         "EN-f1360a6b087edd47"
       ],
       "firstSeen": "2026-05-14",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-07-18"
     },
     {
       "id": "EN-37a54e5c414654d8",
@@ -22937,6 +23545,7 @@
       "eventIds": [
         "EV-f020dd198aa2f952",
         "EV-736404028b8ad33e",
+        "EV-53f08daddd011dbb",
         "EV-0592458e094f26cc",
         "EV-33b218942b1deab7",
         "EV-afd0332ad8f5f05b",
@@ -22951,17 +23560,17 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
         "TX-use_case-customer_service",
         "TX-industry-healthcare_life_sciences",
-        "TX-industry-retail_ecommerce",
         "TX-technology-on_device",
         "TX-technology-embodied_ai",
         "TX-use_case-robotics_automation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-04-28",
-      "lastSeen": "2026-07-16"
+      "lastSeen": "2026-07-18"
     },
     {
       "id": "EN-a9aff9e0737a5d4a",
@@ -23065,8 +23674,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-industry-healthcare_life_sciences",
-        "TX-industry-financial_services"
+        "TX-industry-financial_services",
+        "TX-industry-healthcare_life_sciences"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-12",
@@ -23134,6 +23743,38 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-06-08",
       "lastSeen": "2026-06-08"
+    },
+    {
+      "id": "EN-2a920347dfcf07a7",
+      "name": "Aina",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-02882e6f5e1902c6",
+        "EV-7e1624d7df300713",
+        "EV-3902d8bd5da40a20",
+        "EV-01b003fbae67ae91",
+        "EV-8fcb52bb6ec980af",
+        "EV-860b90c017deaa59",
+        "EV-6ce6b9c9780b97d9",
+        "EV-ad269fada2269f35"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-retail_ecommerce",
+        "TX-industry-manufacturing",
+        "TX-industry-healthcare_life_sciences",
+        "TX-industry-telecommunications"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-05-20",
+      "lastSeen": "2026-07-18"
     },
     {
       "id": "EN-58b507456c52c9b3",
@@ -23363,9 +24004,9 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-financial_services",
         "TX-industry-manufacturing",
-        "TX-industry-healthcare_life_sciences",
-        "TX-industry-financial_services"
+        "TX-industry-healthcare_life_sciences"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-22",
@@ -23388,9 +24029,9 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-financial_services",
         "TX-industry-manufacturing",
-        "TX-industry-healthcare_life_sciences",
-        "TX-industry-financial_services"
+        "TX-industry-healthcare_life_sciences"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-22",
@@ -23505,18 +24146,23 @@
       "name": "Apple",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "苹果"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
         "EV-f282ab8740ff0096",
+        "EV-53f08daddd011dbb",
         "EV-8a8e894a84768ea5",
         "EV-afcd5426f5c01dc7",
         "EV-f5a50f1fed72fec3",
         "EV-e857f9d1c1478c70",
         "EV-fd21441fb6e143c3",
+        "EV-c237f5dc53f0a923",
+        "EV-3a74e4995b590507",
         "EV-8a9b12665a3e40a0",
         "EV-70cbf25f7ec2cc3a",
         "EV-8b9e4428074bde60",
@@ -23552,6 +24198,7 @@
         "EV-da062d02015f99fb",
         "EV-f6611268f119a172",
         "EV-0d1980baa83e1e6c",
+        "EV-2f7e6d3a68bbf08f",
         "EV-ef823877347ff40f",
         "EV-5cd10de5c12916f0",
         "EV-5613946bdd578a26",
@@ -23573,13 +24220,14 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
+        "TX-technology-code_generation",
         "TX-technology-long_context",
         "TX-use_case-cybersecurity",
-        "TX-industry-retail_ecommerce",
         "TX-technology-on_device",
-        "TX-industry-media_entertainment",
         "TX-technology-multimodal",
+        "TX-industry-media_entertainment",
         "TX-technology-tool_use",
         "TX-technology-fine_tuning",
         "TX-use_case-content_creation",
@@ -23587,13 +24235,19 @@
         "TX-technology-speech_audio"
       ],
       "relatedEntityIds": [
+        "EN-e463d05a14e8697f",
         "EN-af3ceabbe048a291",
+        "EN-1924fff8eb4d54ae",
         "EN-41dcc2d4951f337b",
+        "EN-1acf3a98930680ec",
+        "EN-45b5216872656eb3",
         "EN-dfabe4215e8c07cb",
-        "EN-729324072d368379"
+        "EN-729324072d368379",
+        "EN-40e307d789f77264",
+        "EN-0502bb9ed34980aa"
       ],
       "firstSeen": "2026-06-04",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-07-18"
     },
     {
       "id": "EN-75857a45899985be",
@@ -23866,118 +24520,6 @@
       "lastSeen": "2026-06-03"
     },
     {
-      "id": "EN-8d4321d936320802",
-      "name": "NVIDIA",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-4eaf3aabecae6016",
-        "EV-87432dbb99cd6033",
-        "EV-6e516b6e68def9cf",
-        "EV-e41fc65eb014893f",
-        "EV-040fc355bc12a750",
-        "EV-80e54c9a390da293",
-        "EV-4118202ed0f91895",
-        "EV-236cbc2d64f0c455",
-        "EV-0e84a2f49d765ce3",
-        "EV-cafe435ddd007821",
-        "EV-36d484148fbd3424",
-        "EV-47a16db069ed320e",
-        "EV-cf76f090a1a20a36",
-        "EV-7263caa45bbf168e",
-        "EV-234ad54940674bf6",
-        "EV-5b16886442234f81",
-        "EV-ef6464cf7f764835",
-        "EV-b95539d17772a4ce",
-        "EV-f63462e34ea40699",
-        "EV-4faa2bcf2e42e60c",
-        "EV-9ee3c0ec243b6129",
-        "EV-58c1cc3749294649",
-        "EV-6b51b1b6fe22c540",
-        "EV-c2800c1c5a3f568f",
-        "EV-1ff169120ed385f6",
-        "EV-47d14d0aa4d4414e",
-        "EV-f7b60c0c63403f8c",
-        "EV-6139380f3362803b",
-        "EV-96c8ce4ee89adb84",
-        "EV-53f881da31630a04",
-        "EV-6a2f3e9a22edff64",
-        "EV-f784003febc1d9eb",
-        "EV-587c18cb1837c74f",
-        "EV-bd66e5b45a6a577e",
-        "EV-53564b1f0fd2214b",
-        "EV-7fb25ff3d853c314",
-        "EV-8a91e14f37d32b4d",
-        "EV-13f0b515194f3245",
-        "EV-5d50eb202b478bd4",
-        "EV-e2db9c4e7c16ae7a",
-        "EV-69fbe85ca4ac81cd",
-        "EV-b7ba9acba80a852e",
-        "EV-4bb5b24400e49ea4",
-        "EV-568d2aeab5234e48",
-        "EV-b986a633cca27df9",
-        "EV-2258329f33d413cf",
-        "EV-4bf0e4043c3562f2",
-        "EV-309ea4fc27a66485",
-        "EV-fa1b1efd77f36d56",
-        "EV-4026c95d4c01b96e",
-        "EV-631197767a45d34c",
-        "EV-67f32771d69084d6",
-        "EV-d2ac9700c86913da",
-        "EV-d43a561da59b2897",
-        "EV-f5755fccd5731063",
-        "EV-34929bdd016dc8d6",
-        "EV-710b145230faa692",
-        "EV-0b49d637d7c07ce0"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-industry-manufacturing",
-        "TX-technology-code_generation",
-        "TX-industry-healthcare_life_sciences",
-        "TX-technology-long_context",
-        "TX-technology-mixture_of_experts",
-        "TX-use_case-cybersecurity",
-        "TX-technology-on_device",
-        "TX-technology-embodied_ai",
-        "TX-industry-automotive_transportation",
-        "TX-technology-open_weights",
-        "TX-industry-telecommunications",
-        "TX-industry-media_entertainment",
-        "TX-use_case-robotics_automation",
-        "TX-technology-multimodal",
-        "TX-technology-guardrails_safety",
-        "TX-technology-reasoning",
-        "TX-technology-fine_tuning",
-        "TX-technology-image_generation",
-        "TX-technology-inference_optimization",
-        "TX-technology-speech_audio"
-      ],
-      "relatedEntityIds": [
-        "EN-0f3360879e746531",
-        "EN-51fd7dc086fcb858",
-        "EN-9e193e1ec8d75d41",
-        "EN-8395dc051feafc4c",
-        "EN-936f01f91fdadf69",
-        "EN-2f354de778e6a6da",
-        "EN-b5738c169b693bee",
-        "EN-1dc405a4cda895d0",
-        "EN-12ab68e37d104d27",
-        "EN-a3266ab9e10d6105",
-        "EN-ab9e3beebd83960d",
-        "EN-9fbf261b62c1d7c0",
-        "EN-e246a1f9a090075b"
-      ],
-      "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-17"
-    },
-    {
       "id": "EN-f5791343a13abc71",
       "name": "微软展示 AI 智能体完整",
       "entityType": "organization_candidate",
@@ -24082,6 +24624,27 @@
       "lastSeen": "2026-06-29"
     },
     {
+      "id": "EN-ceef9085ddc3348c",
+      "name": "智能体互信互联互操作全球",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-0cce336f720bb7b7"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-18"
+    },
+    {
       "id": "EN-d9b1d7819af92e77",
       "name": "Google Cloud",
       "entityType": "organization_candidate",
@@ -24092,6 +24655,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-b4b5d141dac164c2",
         "EV-36a9e4e908249381",
         "EV-d12aa40eff40c97e",
         "EV-96c8ce4ee89adb84",
@@ -24104,7 +24668,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-16",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-07-18"
     },
     {
       "id": "EN-88e2cce43eeadb36",
@@ -24119,6 +24683,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-584212d254d882bc",
         "EV-02686922dd82c4aa",
         "EV-3fb492fb45980541",
         "EV-2ffc3377977da114",
@@ -24128,12 +24693,12 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-use_case-customer_service",
-        "TX-industry-retail_ecommerce"
+        "TX-industry-retail_ecommerce",
+        "TX-use_case-customer_service"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-07",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-07-18"
     },
     {
       "id": "EN-276a8bc458036a1a",
@@ -24146,6 +24711,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-584212d254d882bc",
         "EV-02686922dd82c4aa"
       ],
       "viewpointIds": [],
@@ -24155,7 +24721,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-15",
-      "lastSeen": "2026-07-15"
+      "lastSeen": "2026-07-18"
     },
     {
       "id": "EN-5239a379b6326549",
@@ -24284,8 +24850,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-industry-healthcare_life_sciences",
-        "TX-industry-financial_services"
+        "TX-industry-financial_services",
+        "TX-industry-healthcare_life_sciences"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-09",
@@ -24487,11 +25053,11 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-financial_services",
         "TX-technology-vision_language",
         "TX-technology-code_generation",
         "TX-use_case-software_development",
         "TX-technology-long_context",
-        "TX-industry-financial_services",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-multimodal"
       ],
@@ -24531,14 +25097,13 @@
       "name": "Amazon",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "Amazon Bedrock"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
+        "EV-dcbe916c6138e5cb",
         "EV-02548003157849bb",
         "EV-8b0f056571d68269",
         "EV-49c6291694fb6c7b",
@@ -24555,21 +25120,24 @@
         "EV-c108e7cc2df7faf4",
         "EV-4e55361d8324dd49",
         "EV-94d9c8d5ac1e10de",
-        "EV-b4e7187a9bd1de0e"
+        "EV-b4e7187a9bd1de0e",
+        "EV-8993e021ac17df4a"
       ],
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-retail_ecommerce",
+        "TX-industry-manufacturing",
         "TX-use_case-customer_service",
         "TX-industry-healthcare_life_sciences",
-        "TX-use_case-cybersecurity",
-        "TX-industry-retail_ecommerce"
+        "TX-use_case-cybersecurity"
       ],
       "relatedEntityIds": [
+        "EN-a614180064f7ef60",
         "EN-9fbf261b62c1d7c0"
       ],
-      "firstSeen": "2026-01-20",
-      "lastSeen": "2026-07-16"
+      "firstSeen": "2025-12-02",
+      "lastSeen": "2026-07-18"
     },
     {
       "id": "EN-e759968ca9278b8d",
@@ -24882,6 +25450,137 @@
       "lastSeen": "2026-05-22"
     },
     {
+      "id": "EN-19e41212c0556603",
+      "name": "Singtel Group",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-05a87b578967c83e"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-use_case-customer_service"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-03-04",
+      "lastSeen": "2026-07-18"
+    },
+    {
+      "id": "EN-dca6ec9510fc0176",
+      "name": "Sierra",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-64fb6d791e19d10a",
+        "EV-736404028b8ad33e",
+        "EV-05a87b578967c83e",
+        "EV-11a8e196deb21300"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-use_case-customer_service",
+        "TX-technology-on_device"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-03-04",
+      "lastSeen": "2026-07-18"
+    },
+    {
+      "id": "EN-60094bcf5292c490",
+      "name": "英伟达",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-5b16886442234f81",
+        "EV-4faa2bcf2e42e60c",
+        "EV-9ee3c0ec243b6129",
+        "EV-950237c6b3eb6343",
+        "EV-1ff169120ed385f6",
+        "EV-bd66e5b45a6a577e",
+        "EV-53564b1f0fd2214b",
+        "EV-69fbe85ca4ac81cd",
+        "EV-d43a561da59b2897",
+        "EV-f5755fccd5731063"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
+        "TX-technology-retrieval_augmented_generation",
+        "TX-technology-embodied_ai",
+        "TX-technology-open_weights",
+        "TX-use_case-robotics_automation",
+        "TX-industry-telecommunications",
+        "TX-technology-guardrails_safety",
+        "TX-technology-reasoning"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-01",
+      "lastSeen": "2026-07-18"
+    },
+    {
+      "id": "EN-aa15d891a32a51b8",
+      "name": "Nemotron 3 Embed",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-950237c6b3eb6343"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-retrieval_augmented_generation"
+      ],
+      "relatedEntityIds": [
+        "EN-8d4321d936320802"
+      ],
+      "firstSeen": "2026-07-18",
+      "lastSeen": "2026-07-18"
+    },
+    {
+      "id": "EN-eaaf22a384c26014",
+      "name": "国家超算互联网",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-a2dfe20983c8d6e4"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-18"
+    },
+    {
       "id": "EN-3f726694f178ed7a",
       "name": "Kingsoft Office",
       "entityType": "organization_candidate",
@@ -24988,10 +25687,10 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-automotive_transportation",
         "TX-technology-code_generation",
         "TX-technology-long_context",
         "TX-technology-on_device",
-        "TX-industry-automotive_transportation",
         "TX-technology-tool_use"
       ],
       "relatedEntityIds": [
@@ -25524,7 +26223,6 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "阶跃星辰",
         "阶跃"
       ],
       "verificationStatus": "verified",
@@ -25532,6 +26230,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-584212d254d882bc",
         "EV-2c1fc2143d7d4a6a",
         "EV-6824e76c4aa69a71",
         "EV-ee363e679d12329c",
@@ -25544,13 +26243,9 @@
         "TX-technology-on_device",
         "TX-technology-speech_audio"
       ],
-      "relatedEntityIds": [
-        "EN-8b619895a83e35c8",
-        "EN-44a9bf3b11abea5c",
-        "EN-ed501d3e2d977553"
-      ],
+      "relatedEntityIds": [],
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-07-14"
+      "lastSeen": "2026-07-18"
     },
     {
       "id": "EN-ef8ef0d64526209a",
@@ -25598,9 +26293,7 @@
       "classificationRefs": [
         "TX-technology-agentic_execution"
       ],
-      "relatedEntityIds": [
-        "EN-2c348893efb2316e"
-      ],
+      "relatedEntityIds": [],
       "firstSeen": "2026-07-13",
       "lastSeen": "2026-07-14"
     },
@@ -25984,6 +26677,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-a68475d82ec939b5",
         "EV-167f50a6f3134bd5",
         "EV-969ed3078d10f0c9",
         "EV-6e7b632ee0b3410d",
@@ -25999,7 +26693,7 @@
         "EN-7d3194f79e645c42"
       ],
       "firstSeen": "2026-06-28",
-      "lastSeen": "2026-07-15"
+      "lastSeen": "2026-07-18"
     },
     {
       "id": "EN-954dc5d6516f127c",
@@ -26948,20 +27642,25 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [],
-      "verificationStatus": "candidate",
+      "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
+        "EV-0d4e656aa51f9a46",
         "EV-226a363f84676808"
       ],
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-9e5d9b729e161734",
+        "EN-a42d5d95234db6c4",
+        "EN-77fe4e790d5bc756"
+      ],
       "firstSeen": "2026-06-29",
-      "lastSeen": "2026-06-29"
+      "lastSeen": "2026-07-18"
     },
     {
       "id": "EN-a42d5d95234db6c4",
@@ -26980,7 +27679,9 @@
       "classificationRefs": [
         "TX-technology-agentic_execution"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-2dc010636b9dce91"
+      ],
       "firstSeen": "2026-06-29",
       "lastSeen": "2026-06-29"
     },
@@ -27001,7 +27702,9 @@
       "classificationRefs": [
         "TX-technology-agentic_execution"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-2dc010636b9dce91"
+      ],
       "firstSeen": "2026-06-29",
       "lastSeen": "2026-06-29"
     },
@@ -27187,31 +27890,6 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-06-26",
       "lastSeen": "2026-06-26"
-    },
-    {
-      "id": "EN-dca6ec9510fc0176",
-      "name": "Sierra",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-64fb6d791e19d10a",
-        "EV-736404028b8ad33e",
-        "EV-11a8e196deb21300"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-use_case-customer_service",
-        "TX-technology-on_device"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-06-04",
-      "lastSeen": "2026-07-16"
     },
     {
       "id": "EN-623fbff8d5179d4e",
@@ -28119,7 +28797,9 @@
       "classificationRefs": [
         "TX-technology-agentic_execution"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-3a7bd3e2360a3d29"
+      ],
       "firstSeen": "2026-06-18",
       "lastSeen": "2026-06-18"
     },
@@ -28167,9 +28847,7 @@
         "TX-technology-code_generation",
         "TX-use_case-software_development"
       ],
-      "relatedEntityIds": [
-        "EN-c70eca6b0f88f44d"
-      ],
+      "relatedEntityIds": [],
       "firstSeen": "2026-06-17",
       "lastSeen": "2026-06-18"
     },
@@ -28692,8 +29370,8 @@
         "TX-technology-mixture_of_experts",
         "TX-technology-retrieval_augmented_generation",
         "TX-use_case-research_science",
-        "TX-industry-media_entertainment",
         "TX-technology-multimodal",
+        "TX-industry-media_entertainment",
         "TX-technology-video_generation",
         "TX-technology-image_generation",
         "TX-technology-speech_audio"
@@ -28841,8 +29519,8 @@
         "TX-use_case-cybersecurity"
       ],
       "relatedEntityIds": [
-        "EN-c70eca6b0f88f44d",
-        "EN-7d3194f79e645c42"
+        "EN-7d3194f79e645c42",
+        "EN-c70eca6b0f88f44d"
       ],
       "firstSeen": "2026-06-10",
       "lastSeen": "2026-06-28"
@@ -28864,7 +29542,9 @@
       "classificationRefs": [
         "TX-technology-agentic_execution"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-3a7bd3e2360a3d29"
+      ],
       "firstSeen": "2026-06-09",
       "lastSeen": "2026-06-09"
     },
@@ -28885,7 +29565,9 @@
       "classificationRefs": [
         "TX-technology-agentic_execution"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-3a7bd3e2360a3d29"
+      ],
       "firstSeen": "2026-06-09",
       "lastSeen": "2026-06-09"
     },
@@ -29408,45 +30090,11 @@
       "classificationRefs": [
         "TX-technology-agentic_execution"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-8d4321d936320802"
+      ],
       "firstSeen": "2026-06-01",
       "lastSeen": "2026-06-01"
-    },
-    {
-      "id": "EN-60094bcf5292c490",
-      "name": "英伟达",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "candidate",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-5b16886442234f81",
-        "EV-4faa2bcf2e42e60c",
-        "EV-9ee3c0ec243b6129",
-        "EV-1ff169120ed385f6",
-        "EV-bd66e5b45a6a577e",
-        "EV-53564b1f0fd2214b",
-        "EV-69fbe85ca4ac81cd",
-        "EV-d43a561da59b2897",
-        "EV-f5755fccd5731063"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-industry-manufacturing",
-        "TX-technology-embodied_ai",
-        "TX-technology-open_weights",
-        "TX-industry-telecommunications",
-        "TX-use_case-robotics_automation",
-        "TX-technology-guardrails_safety",
-        "TX-technology-reasoning"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-06-01",
-      "lastSeen": "2026-07-16"
     },
     {
       "id": "EN-a3266ab9e10d6105",
@@ -29490,7 +30138,9 @@
         "TX-technology-agentic_execution",
         "TX-technology-reasoning"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-8d4321d936320802"
+      ],
       "firstSeen": "2026-06-01",
       "lastSeen": "2026-06-01"
     },
@@ -29535,9 +30185,9 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
         "TX-industry-healthcare_life_sciences",
-        "TX-industry-retail_ecommerce",
         "TX-technology-fine_tuning"
       ],
       "relatedEntityIds": [],
@@ -29644,6 +30294,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-53f08daddd011dbb",
         "EV-3353bd96728c99e2",
         "EV-8a9b12665a3e40a0",
         "EV-28145c97a7237d6d",
@@ -29661,8 +30312,8 @@
         "TX-technology-long_context",
         "TX-technology-on_device",
         "TX-technology-open_weights",
-        "TX-use_case-robotics_automation",
-        "TX-technology-multimodal"
+        "TX-technology-multimodal",
+        "TX-use_case-robotics_automation"
       ],
       "relatedEntityIds": [
         "EN-101a515191c6be9e",
@@ -29671,7 +30322,7 @@
         "EN-3aca03b9bb50f158"
       ],
       "firstSeen": "2026-06-10",
-      "lastSeen": "2026-07-16"
+      "lastSeen": "2026-07-18"
     },
     {
       "id": "EN-6ac6ad44bb9995ca",
@@ -31252,6 +31903,50 @@
       "entityIds": [
         "EN-8d291c7017252b07",
         "EN-8147e6fed86d42c1"
+      ]
+    },
+    {
+      "id": "FDE-3665b073634d4b9d",
+      "eventId": "EV-05a87b578967c83e",
+      "dataDate": "2026-07-18",
+      "date": "2026-03-04",
+      "title": "Singtel Group 与 Sierra 合作，借助 AI 智能体革新客户互动体验",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Sierra",
+      "vendor": "Singtel Group",
+      "industry": "未披露",
+      "useCase": "Sierra to transform customer engagement with AI | Sierra",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "Mr Ng Tian Chong, Chief Executive Officer, Singtel Singapore, said: “Putting our customers first has always been at the heart of what we do. The deployment of agentic AI across chat and voice is about delivering real value — more personalised experiences, greater convenience and faster, more responsive service. By using AI to support our customer service teams, we can ensure customers are promptly and well assisted, while empowering our agents to focus on more complex cases where human expertise matters most. Our AI agents are designed to understand local expressions and even Singlish, reflecting our roots as a homegrown company serving a diverse nation. This marks an important step in redefining how we build and sustain customer relationships in the AI era.”"
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "sourceUrl": "https://sierra.ai/customers/singtel",
+      "entityIds": [
+        "EN-19e41212c0556603",
+        "EN-dca6ec9510fc0176"
       ]
     }
   ],

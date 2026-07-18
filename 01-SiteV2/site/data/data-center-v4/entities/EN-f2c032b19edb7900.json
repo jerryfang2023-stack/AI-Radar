@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T01:57:40.269Z",
-    "latestDataDate": "2026-07-17",
-    "currentDate": "2026-07-17",
-    "eventCount": 832,
-    "quarantinedEventCount": 60
+    "generatedAt": "2026-07-18T04:18:28.002Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 870,
+    "quarantinedEventCount": 59
   },
   "entity": {
     "id": "EN-f2c032b19edb7900",
@@ -71,9 +71,7 @@
       "name": "Google",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "谷歌"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -88,6 +86,7 @@
         "EV-dbbe3fd637be213f",
         "EV-4a162c41bb82f325",
         "EV-cf76f090a1a20a36",
+        "EV-b4b5d141dac164c2",
         "EV-36a9e4e908249381",
         "EV-ef6464cf7f764835",
         "EV-b95539d17772a4ce",
@@ -95,6 +94,7 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
+        "EV-a255cfc0dab44564",
         "EV-04efb4eecbb8125f",
         "EV-6359c9f6c2609a38",
         "EV-c2d784ef0a5376f8",
@@ -163,18 +163,18 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-technology-code_generation",
+        "TX-industry-financial_services",
         "TX-use_case-enterprise_operations",
+        "TX-industry-retail_ecommerce",
+        "TX-technology-code_generation",
         "TX-use_case-software_development",
         "TX-technology-mixture_of_experts",
-        "TX-industry-financial_services",
         "TX-use_case-cybersecurity",
-        "TX-industry-retail_ecommerce",
         "TX-technology-on_device",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-embodied_ai",
-        "TX-industry-media_entertainment",
         "TX-technology-multimodal",
+        "TX-industry-media_entertainment",
         "TX-technology-video_generation",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
@@ -200,7 +200,6 @@
         "EN-0e008e2c06144ec8",
         "EN-f2c032b19edb7900",
         "EN-d4c56709df757c56",
-        "EN-6470c8584a9d35d3",
         "EN-b5c336c0dd1ff29c",
         "EN-eb0cc8fb584389db",
         "EN-d56aa2f9908f566a",
@@ -208,7 +207,7 @@
         "EN-e3db3da2b7dc6057"
       ],
       "firstSeen": "2026-05-22",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-07-18"
     }
   ],
   "relationships": [
