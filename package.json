@@ -57,6 +57,7 @@
     "backfill:entity-history": "node agent-workflow/tools/backfill-entity-history-v1.mjs && npm run materialize:entity-history",
     "assert:entity-history": "node agent-workflow/tools/assert-entity-history-v1.mjs",
     "review:entity-catalog": "node agent-workflow/tools/finalize-entity-catalog-review.mjs --write=true",
+    "review:person-accounts": "node agent-workflow/tools/build-person-account-review.mjs --write=true",
     "assert:entity-catalog-review": "node agent-workflow/tools/assert-entity-catalog-review.mjs",
     "build:targeted-backfill": "node agent-workflow/tools/build-targeted-backfill-queue.mjs",
     "manage:targeted-backfill": "node agent-workflow/tools/manage-targeted-backfill-queue.mjs",

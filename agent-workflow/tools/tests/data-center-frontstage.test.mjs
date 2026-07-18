@@ -39,6 +39,23 @@ test("frontstage adapter builds real V4 data collections", () => {
   assert.ok(data.events.every((event) => Array.isArray(event.tags) && Array.isArray(event.sources)));
 });
 
+test("person index contains reviewed natural people while preserving all viewpoint records", () => {
+  const data = buildFrontstageData(root);
+  const source = JSON.parse(fs.readFileSync(path.join(root, "01-SiteV2/site/data/first-line-viewpoints-v4.json"), "utf8"));
+  const peopleByName = new Map(data.people.map((person) => [person.name, person]));
+  const forbiddenAccounts = ["Ben's Bites AI Newsletter", "Claude", "Dataiku Blog", "Google Labs", "Tigera Blog (Calico / AI Security)", "TLDR AI Newsletter"];
+
+  assert.equal(data.people.length, 31);
+  assert.equal(data.viewpoints.length, source.remarks.length);
+  assert.ok(forbiddenAccounts.every((name) => !peopleByName.has(name)));
+  assert.ok(peopleByName.get("Jack Clark")?.aliases.includes("Import AI (Jack Clark)"));
+  assert.ok(peopleByName.get("Nathan Lambert")?.aliases.includes("Interconnects (Nathan Lambert)"));
+  assert.ok(peopleByName.get("Lilian Weng")?.aliases.includes("Lilian Weng's Blog (OpenAI)"));
+  assert.ok(peopleByName.get("Simon Willison")?.aliases.includes("Simon Willison's Blog"));
+  assert.ok(data.viewpoints.some((item) => item.person === "Claude" && !item.personEntityId));
+  assert.ok(data.viewpoints.some((item) => item.person === "Import AI (Jack Clark)" && item.personEntityId === peopleByName.get("Jack Clark")?.id));
+});
+
 test("current commercial event titles are complete and evidence-specific", () => {
   const data = buildFrontstageData(root);
   const currentEvents = data.events.filter((event) => event.dataDate === data.meta.currentDate);

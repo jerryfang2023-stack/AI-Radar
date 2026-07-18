@@ -4,7 +4,10 @@ import crypto from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { buildEntityHistoryService } from "../../../agent-workflow/product/entity-history-v1.mjs";
+import {
+  buildEntityHistoryService,
+  mergeEntityReviewDecisionSets
+} from "../../../agent-workflow/product/entity-history-v1.mjs";
 import { productEntityDisplayType } from "../../../agent-workflow/product/product-entity-normalizer.mjs";
 import { isCompletePublicEventTitle as isCompleteDataTitle } from "../../../agent-workflow/tools/event-public-title.mjs";
 
@@ -481,7 +484,10 @@ export function buildFrontstageData(root = defaultRoot) {
   const fde = buildFdeRecords(readJsonl(path.join(tables, "fde_records.jsonl")), eventsById);
   const hardware = buildHardwareRecords(readJsonl(path.join(tables, "hardware_records.jsonl")), eventsById);
   const viewpointData = readJson(path.join(root, "01-SiteV2/site/data/first-line-viewpoints-v4.json"), { meta: {}, builders: [], remarks: [] });
-  const reviewDecisions = readJson(path.join(root, "01-SiteV2/content/11-databases/entity-history-v1/entity-catalog-review-decisions.json"), { decisions: [] });
+  const reviewDecisions = mergeEntityReviewDecisionSets(
+    readJson(path.join(root, "01-SiteV2/content/11-databases/entity-history-v1/entity-catalog-review-decisions.json"), { decisions: [] }),
+    readJson(path.join(root, "01-SiteV2/content/11-databases/entity-history-v1/person-account-review-decisions.json"), { decisions: [] })
+  );
   const entityHistory = buildEntityHistoryService({
     entityRows,
     events: eventRecords,

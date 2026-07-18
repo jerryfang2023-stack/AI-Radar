@@ -55,7 +55,7 @@ test("technology and use case remain taxonomy nodes instead of entities", () => 
   assert.equal(service.profiles.some((item) => ["technology", "use_case", "industry"].includes(item.entityType)), false);
 });
 
-test("viewpoint people enter the unified index without entering canonical events", () => {
+test("unreviewed viewpoint identities remain candidates outside canonical events", () => {
   const service = buildEntityHistoryService({
     viewpointData: {
       builders: [{ name: "Jane Doe", handle: "janedoe", role: "Builder" }],
@@ -68,6 +68,51 @@ test("viewpoint people enter the unified index without entering canonical events
   assert.deepEqual(person.datasetScopes, ["viewpoints"]);
   assert.deepEqual(person.eventIds, []);
   assert.deepEqual(person.viewpointIds, ["VP-1"]);
+  assert.equal(person.verificationStatus, "candidate");
+});
+
+test("person review canonicalizes named authors and quarantines non-natural accounts", () => {
+  const service = buildEntityHistoryService({
+    viewpointData: {
+      builders: [
+        { name: "Writer's Blog", handle: "writersblog", role: "Personal publication" },
+        { name: "Brand Account", handle: "brandaccount", role: "Product updates" }
+      ],
+      remarks: [
+        { id: "VP-WRITER", name: "Writer's Blog", handle: "writersblog", date: "2026-07-17", url: "https://example.com/writer" },
+        { id: "VP-BRAND", name: "Brand Account", handle: "brandaccount", date: "2026-07-17", url: "https://example.com/brand" }
+      ]
+    },
+    reviewDecisions: {
+      decisions: [
+        {
+          entity_id: "EN-56169569c5af5ba5",
+          current: { name: "Writer's Blog", catalog_type: "person", company_names: [] },
+          action: "correct",
+          canonical: { name: "Writer Name", catalog_type: "person", company_names: [] },
+          evidence: { claim_refs: [], secondary_sources: [] },
+          review_status: "accepted",
+          reviewer: "person-review"
+        },
+        {
+          entity_id: "EN-a16ee5eb64aebdfb",
+          current: { name: "Brand Account", catalog_type: "person", company_names: [] },
+          action: "quarantine",
+          canonical: { name: "Brand Account", catalog_type: "other", company_names: [] },
+          evidence: { claim_refs: [], secondary_sources: [] },
+          review_status: "accepted",
+          reviewer: "person-review"
+        }
+      ]
+    }
+  });
+  const writer = service.profiles.find((item) => item.id === "EN-56169569c5af5ba5");
+
+  assert.equal(writer?.name, "Writer Name");
+  assert.deepEqual(writer?.aliases, ["Writer's Blog"]);
+  assert.deepEqual(writer?.viewpointIds, ["VP-WRITER"]);
+  assert.equal(writer?.verificationStatus, "verified");
+  assert.equal(service.profiles.some((item) => item.id === "EN-a16ee5eb64aebdfb"), false);
 });
 
 test("RELATION-V2 rows require event, Claim, source, and stable endpoints", () => {
