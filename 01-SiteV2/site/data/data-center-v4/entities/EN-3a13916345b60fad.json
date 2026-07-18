@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T01:57:40.269Z",
-    "latestDataDate": "2026-07-17",
-    "currentDate": "2026-07-17",
-    "eventCount": 832,
-    "quarantinedEventCount": 60
+    "generatedAt": "2026-07-18T04:18:28.002Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 870,
+    "quarantinedEventCount": 59
   },
   "entity": {
     "id": "EN-3a13916345b60fad",
@@ -45,7 +45,6 @@
     "firstSeen": "2026-06-10",
     "lastSeen": "2026-07-12",
     "relationIds": [
-      "REL2-113686cc75d37b0f",
       "REL2-4a1d4b369fcb4e01",
       "REL2-48cdf6bd8d397fed",
       "REL2-02309f1dd31d167e",
@@ -62,7 +61,6 @@
         "EV-730a2f95a698a96d",
         "EV-8b5801b69eb1781b",
         "EV-bf6f67c47c6b0d7c",
-        "EV-9c0552732b34f278",
         "EV-f0caa4082916d619",
         "EV-ab3586268ebfab38",
         "EV-689538e8159887de",
@@ -123,30 +121,6 @@
         "entityIds": [
           "EN-c70eca6b0f88f44d",
           "EN-3a13916345b60fad"
-        ]
-      },
-      {
-        "id": "EV-9c0552732b34f278",
-        "dataDate": "2026-07-04",
-        "date": "2026-07-03",
-        "eventType": "product_release",
-        "eventTypeLabel": "产品发布",
-        "eventGroup": "模型、产品与服务",
-        "status": "announced",
-        "statusLabel": "已公布",
-        "title": "Claude Fable 5 在 RLI 基准测试中达成 16.1% 自动化率，刷新纪录",
-        "displayTags": [
-          {
-            "dimensionId": "technology",
-            "dimensionName": "技术",
-            "id": "guardrails_safety",
-            "name": "安全护栏"
-          }
-        ],
-        "entityIds": [
-          "EN-c70eca6b0f88f44d",
-          "EN-c857d09db23e6822",
-          "EN-9f15bb7e29e191eb"
         ]
       },
       {
@@ -367,8 +341,7 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "Claude Code",
-        "Claude"
+        "Claude Code"
       ],
       "verificationStatus": "verified",
       "datasetScopes": [
@@ -409,6 +382,8 @@
         "EV-b240fb11e65b018e",
         "EV-bad301e14b034fbd",
         "EV-c0a65877001ed413",
+        "EV-debecca007e547d2",
+        "EV-7963d8c78531f12d",
         "EV-0d5a32aca724d30e",
         "EV-a8a8f26c5128d894",
         "EV-51645a3b1e730105",
@@ -536,17 +511,17 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-financial_services",
+        "TX-use_case-enterprise_operations",
+        "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
         "TX-technology-code_generation",
         "TX-industry-healthcare_life_sciences",
-        "TX-use_case-enterprise_operations",
         "TX-use_case-software_development",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
-        "TX-industry-financial_services",
         "TX-use_case-cybersecurity",
         "TX-use_case-data_analysis",
-        "TX-industry-retail_ecommerce",
         "TX-technology-on_device",
         "TX-technology-embodied_ai",
         "TX-technology-open_weights",
@@ -560,8 +535,10 @@
       ],
       "relatedEntityIds": [
         "EN-cb4754c48f8023d0",
-        "EN-3a9b395103419892",
         "EN-729324072d368379",
+        "EN-9d40760b37c15a83",
+        "EN-855bed02b965c12c",
+        "EN-3a9b395103419892",
         "EN-7d3194f79e645c42",
         "EN-9612b6f6884e062f",
         "EN-ef11a801c5bd3673",
@@ -571,11 +548,9 @@
         "EN-40bad8003c5ee358",
         "EN-85a7b756f3a700d0",
         "EN-fab30471ea65d627",
-        "EN-b8c236d640d6a5fb",
-        "EN-db68703d8d719bd0",
-        "EN-9f15bb7e29e191eb",
         "EN-3a13916345b60fad",
         "EN-77fe4e790d5bc756",
+        "EN-9f15bb7e29e191eb",
         "EN-5a4c2be958c0af72",
         "EN-a18162bf7228289d",
         "EN-8218ed4e007b0ad1",
@@ -587,10 +562,10 @@
         "EN-5fc6493a57c5f14e",
         "EN-ad2cec837f9cb98f",
         "EN-29eb5745fdfcb027",
-        "EN-7ec0224e483d913b",
         "EN-e61ac98ebb45d0db",
         "EN-e4ffb7bd879b89da",
         "EN-1e4fdc17666edc33",
+        "EN-db68703d8d719bd0",
         "EN-c8185a1a8a6595ad",
         "EN-d65f09457cc098a8",
         "EN-ea4ea767088c4a22",
@@ -599,6 +574,7 @@
         "EN-b59c577ed73536c6",
         "EN-4db5fd308d379cab",
         "EN-96eebba49dbbf422",
+        "EN-b8c236d640d6a5fb",
         "EN-d8494bb34d6ddc43",
         "EN-540dfc8c5e1b1136",
         "EN-9ab4135a1cdb0a8c",
@@ -607,31 +583,10 @@
         "EN-f1360a6b087edd47"
       ],
       "firstSeen": "2026-05-14",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-07-18"
     }
   ],
   "relationships": [
-    {
-      "relationship_id": "REL2-113686cc75d37b0f",
-      "relationship_version": "RELATION-V2.0",
-      "subject_ref": "EN-c70eca6b0f88f44d",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-3a13916345b60fad",
-      "object_type": "entity",
-      "event_id": "EV-9c0552732b34f278",
-      "claim_refs": [
-        "CL-af2b034f0eb6aa26",
-        "CL-308882ef1d436dbd",
-        "CL-67ab3b5eb0dac08c",
-        "CL-d88322cbdb52c4eb"
-      ],
-      "source_refs": [
-        "SA-96cf95551f37ccd7"
-      ],
-      "data_date": "2026-07-04",
-      "status": "verified"
-    },
     {
       "relationship_id": "REL2-4a1d4b369fcb4e01",
       "relationship_version": "RELATION-V2.0",
@@ -788,7 +743,8 @@
       "typeLabel": "技术",
       "valueId": "agentic_execution",
       "eventIds": [
-        "EV-02882e6f5e1902c6",
+        "EV-1da2e46e39a57d33",
+        "EV-8b7cbb66a33a945d",
         "EV-38cce1b72977ff2b",
         "EV-427081ec574b43bb",
         "EV-095e1a90f14ccdb9",
@@ -877,6 +833,7 @@
         "EV-bbc1042dcf5ad317",
         "EV-01df8e489a34893b",
         "EV-afd0332ad8f5f05b",
+        "EV-0cce336f720bb7b7",
         "EV-36a9e4e908249381",
         "EV-02686922dd82c4aa",
         "EV-2fab4396000198d2",
@@ -899,6 +856,10 @@
         "EV-45be473baf6dfa4c",
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
+        "EV-05a87b578967c83e",
+        "EV-950237c6b3eb6343",
+        "EV-82e68f59d8584e4e",
+        "EV-a2dfe20983c8d6e4",
         "EV-385dc1ac09a211bd",
         "EV-a8a8f26c5128d894",
         "EV-653cbce2ccc79f8b",
@@ -1021,12 +982,13 @@
         "EV-cf0551afe16562ef"
       ],
       "entityIds": [
-        "EN-2a920347dfcf07a7",
-        "EN-d5edfd3c9768e212",
-        "EN-ea3bd73e2b506e00",
+        "EN-cfd90af8403941bf",
+        "EN-366289432b214eda",
+        "EN-8d4321d936320802",
         "EN-fdcd4ec7d0546e95",
         "EN-9c8ae69b84f21a2e",
         "EN-45a46e581e91ce79",
+        "EN-ea3bd73e2b506e00",
         "EN-96eebba49dbbf422",
         "EN-4d748ebd71af03a7",
         "EN-7a9c94a8c201bcc2",
@@ -1079,6 +1041,7 @@
         "EN-befc92b3a019d04c",
         "EN-b10da733dff99be1",
         "EN-049b3253f4a8e2eb",
+        "EN-2a920347dfcf07a7",
         "EN-58b507456c52c9b3",
         "EN-10fd89e7d8a1c7c4",
         "EN-52f1bab72d488823",
@@ -1108,11 +1071,11 @@
         "EN-44512ea2b55bf535",
         "EN-d8cb1acd1b39854a",
         "EN-16fd849ce27f115b",
-        "EN-8d4321d936320802",
         "EN-f5791343a13abc71",
         "EN-28d0bd981118a907",
         "EN-916a98f0fa2a39af",
         "EN-8d291c7017252b07",
+        "EN-ceef9085ddc3348c",
         "EN-d9b1d7819af92e77",
         "EN-88e2cce43eeadb36",
         "EN-276a8bc458036a1a",
@@ -1145,6 +1108,11 @@
         "EN-373ac021a2c0bb2c",
         "EN-c13e2f4a44bb01ed",
         "EN-de5a1adf4fedcce1",
+        "EN-19e41212c0556603",
+        "EN-dca6ec9510fc0176",
+        "EN-60094bcf5292c490",
+        "EN-aa15d891a32a51b8",
+        "EN-eaaf22a384c26014",
         "EN-3f726694f178ed7a",
         "EN-3a9b395103419892",
         "EN-f3cfedbe8428c9f7",
@@ -1242,7 +1210,6 @@
         "EN-34e408ff65178379",
         "EN-2a817d99285e12c4",
         "EN-34da56029403e6f7",
-        "EN-dca6ec9510fc0176",
         "EN-623fbff8d5179d4e",
         "EN-fef851474e3c4311",
         "EN-19018cddd8946526",
@@ -1339,7 +1306,6 @@
         "EN-8941d14fe851d732",
         "EN-6fcba5d96a4fadfd",
         "EN-11ef7b03c79c9bbd",
-        "EN-60094bcf5292c490",
         "EN-a3266ab9e10d6105",
         "EN-9bc22dcabf7f45b3",
         "EN-10fce287b4b1464c",
@@ -1386,14 +1352,15 @@
         "FDE-ef9fdaf8134b8c2f",
         "FDE-352f1b6aaa2066b8",
         "FDE-08f12caedc3b2f13",
-        "FDE-27308b0a6cb2321a"
+        "FDE-27308b0a6cb2321a",
+        "FDE-3665b073634d4b9d"
       ],
       "hardwareIds": [
         "HW-2ce4c2fb193555e3",
         "HW-25ce41fab12d9ef2"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-07-18"
     },
     {
       "id": "TX-use_case-cybersecurity",

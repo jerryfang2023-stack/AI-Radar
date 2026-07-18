@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T01:57:40.269Z",
-    "latestDataDate": "2026-07-17",
-    "currentDate": "2026-07-17",
-    "eventCount": 832,
-    "quarantinedEventCount": 60
+    "generatedAt": "2026-07-18T04:18:28.002Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 870,
+    "quarantinedEventCount": 59
   },
   "entity": {
     "id": "EN-60094bcf5292c490",
@@ -24,6 +24,7 @@
       "EV-5b16886442234f81",
       "EV-4faa2bcf2e42e60c",
       "EV-9ee3c0ec243b6129",
+      "EV-950237c6b3eb6343",
       "EV-1ff169120ed385f6",
       "EV-bd66e5b45a6a577e",
       "EV-53564b1f0fd2214b",
@@ -35,16 +36,17 @@
     "classificationRefs": [
       "TX-technology-agentic_execution",
       "TX-industry-manufacturing",
+      "TX-technology-retrieval_augmented_generation",
       "TX-technology-embodied_ai",
       "TX-technology-open_weights",
-      "TX-industry-telecommunications",
       "TX-use_case-robotics_automation",
+      "TX-industry-telecommunications",
       "TX-technology-guardrails_safety",
       "TX-technology-reasoning"
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-01",
-    "lastSeen": "2026-07-16",
+    "lastSeen": "2026-07-18",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -55,6 +57,7 @@
         "EV-9ee3c0ec243b6129"
       ],
       "productsServices": [
+        "EV-950237c6b3eb6343",
         "EV-1ff169120ed385f6",
         "EV-bd66e5b45a6a577e",
         "EV-53564b1f0fd2214b",
@@ -67,6 +70,36 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-950237c6b3eb6343",
+        "dataDate": "2026-07-18",
+        "date": "2026-07-18",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "英伟达开源 Nemotron 3 Embed 系列 AI 模型，8B 版斩获 RTEB 榜首",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "retrieval_augmented_generation",
+            "name": "RAG"
+          }
+        ],
+        "entityIds": [
+          "EN-8d4321d936320802",
+          "EN-60094bcf5292c490",
+          "EN-aa15d891a32a51b8"
+        ]
+      },
       {
         "id": "EV-1ff169120ed385f6",
         "dataDate": "2026-07-16",
@@ -341,7 +374,8 @@
       "typeLabel": "技术",
       "valueId": "agentic_execution",
       "eventIds": [
-        "EV-02882e6f5e1902c6",
+        "EV-1da2e46e39a57d33",
+        "EV-8b7cbb66a33a945d",
         "EV-38cce1b72977ff2b",
         "EV-427081ec574b43bb",
         "EV-095e1a90f14ccdb9",
@@ -430,6 +464,7 @@
         "EV-bbc1042dcf5ad317",
         "EV-01df8e489a34893b",
         "EV-afd0332ad8f5f05b",
+        "EV-0cce336f720bb7b7",
         "EV-36a9e4e908249381",
         "EV-02686922dd82c4aa",
         "EV-2fab4396000198d2",
@@ -452,6 +487,10 @@
         "EV-45be473baf6dfa4c",
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
+        "EV-05a87b578967c83e",
+        "EV-950237c6b3eb6343",
+        "EV-82e68f59d8584e4e",
+        "EV-a2dfe20983c8d6e4",
         "EV-385dc1ac09a211bd",
         "EV-a8a8f26c5128d894",
         "EV-653cbce2ccc79f8b",
@@ -574,12 +613,13 @@
         "EV-cf0551afe16562ef"
       ],
       "entityIds": [
-        "EN-2a920347dfcf07a7",
-        "EN-d5edfd3c9768e212",
-        "EN-ea3bd73e2b506e00",
+        "EN-cfd90af8403941bf",
+        "EN-366289432b214eda",
+        "EN-8d4321d936320802",
         "EN-fdcd4ec7d0546e95",
         "EN-9c8ae69b84f21a2e",
         "EN-45a46e581e91ce79",
+        "EN-ea3bd73e2b506e00",
         "EN-96eebba49dbbf422",
         "EN-4d748ebd71af03a7",
         "EN-7a9c94a8c201bcc2",
@@ -632,6 +672,7 @@
         "EN-befc92b3a019d04c",
         "EN-b10da733dff99be1",
         "EN-049b3253f4a8e2eb",
+        "EN-2a920347dfcf07a7",
         "EN-58b507456c52c9b3",
         "EN-10fd89e7d8a1c7c4",
         "EN-52f1bab72d488823",
@@ -661,11 +702,11 @@
         "EN-44512ea2b55bf535",
         "EN-d8cb1acd1b39854a",
         "EN-16fd849ce27f115b",
-        "EN-8d4321d936320802",
         "EN-f5791343a13abc71",
         "EN-28d0bd981118a907",
         "EN-916a98f0fa2a39af",
         "EN-8d291c7017252b07",
+        "EN-ceef9085ddc3348c",
         "EN-d9b1d7819af92e77",
         "EN-88e2cce43eeadb36",
         "EN-276a8bc458036a1a",
@@ -698,6 +739,11 @@
         "EN-373ac021a2c0bb2c",
         "EN-c13e2f4a44bb01ed",
         "EN-de5a1adf4fedcce1",
+        "EN-19e41212c0556603",
+        "EN-dca6ec9510fc0176",
+        "EN-60094bcf5292c490",
+        "EN-aa15d891a32a51b8",
+        "EN-eaaf22a384c26014",
         "EN-3f726694f178ed7a",
         "EN-3a9b395103419892",
         "EN-f3cfedbe8428c9f7",
@@ -795,7 +841,6 @@
         "EN-34e408ff65178379",
         "EN-2a817d99285e12c4",
         "EN-34da56029403e6f7",
-        "EN-dca6ec9510fc0176",
         "EN-623fbff8d5179d4e",
         "EN-fef851474e3c4311",
         "EN-19018cddd8946526",
@@ -892,7 +937,6 @@
         "EN-8941d14fe851d732",
         "EN-6fcba5d96a4fadfd",
         "EN-11ef7b03c79c9bbd",
-        "EN-60094bcf5292c490",
         "EN-a3266ab9e10d6105",
         "EN-9bc22dcabf7f45b3",
         "EN-10fce287b4b1464c",
@@ -939,14 +983,15 @@
         "FDE-ef9fdaf8134b8c2f",
         "FDE-352f1b6aaa2066b8",
         "FDE-08f12caedc3b2f13",
-        "FDE-27308b0a6cb2321a"
+        "FDE-27308b0a6cb2321a",
+        "FDE-3665b073634d4b9d"
       ],
       "hardwareIds": [
         "HW-2ce4c2fb193555e3",
         "HW-25ce41fab12d9ef2"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-07-18"
     },
     {
       "id": "TX-industry-manufacturing",
@@ -955,7 +1000,7 @@
       "typeLabel": "行业",
       "valueId": "manufacturing",
       "eventIds": [
-        "EV-02882e6f5e1902c6",
+        "EV-f6a72cddbda748b3",
         "EV-80e54c9a390da293",
         "EV-aa33ca051f3a7f78",
         "EV-a84ec4216d3ded6d",
@@ -971,12 +1016,13 @@
         "EV-309ea4fc27a66485",
         "EV-6ce6b9c9780b97d9",
         "EV-dd62847548bb6ae3",
+        "EV-8993e021ac17df4a",
+        "EV-08f736f61f2b46f3",
         "EV-946569cccbd9222f"
       ],
       "entityIds": [
-        "EN-2a920347dfcf07a7",
-        "EN-d5edfd3c9768e212",
-        "EN-ea3bd73e2b506e00",
+        "EN-a5d2ae286d0d9e45",
+        "EN-96eebba49dbbf422",
         "EN-8d4321d936320802",
         "EN-c70eca6b0f88f44d",
         "EN-1bd14cd1a58c5708",
@@ -985,11 +1031,9 @@
         "EN-7706c3c94d5f9b59",
         "EN-59ae856cd788d0f5",
         "EN-0f3360879e746531",
-        "EN-e3b1bf3dab957ffe",
-        "EN-9700d41909cf810f",
+        "EN-80d387ccb3289295",
         "EN-2fc9fff8ab7f35aa",
         "EN-8efebac68a48c369",
-        "EN-96eebba49dbbf422",
         "EN-16fd849ce27f115b",
         "EN-f5791343a13abc71",
         "EN-9fbf261b62c1d7c0",
@@ -1000,6 +1044,7 @@
         "EN-aa75c47729b4a292",
         "EN-8147e6fed86d42c1",
         "EN-51188f73e8dfbfee",
+        "EN-e3b1bf3dab957ffe",
         "EN-cf9488537f777c1a",
         "EN-38f4d27a18084522",
         "EN-74beb25bdfe7bdd1",
@@ -1007,12 +1052,15 @@
         "EN-ce635c4eabff5e4f",
         "EN-ab9e3beebd83960d",
         "EN-61cce404a45c3545",
+        "EN-2a920347dfcf07a7",
         "EN-23b979df49741c93",
         "EN-02072c80a8386e8d",
         "EN-2eb073b22916de55",
         "EN-4a639cb888a15d75",
         "EN-56ee86045cfb0ddd",
         "EN-9dde0c2d375060f6",
+        "EN-cbc62794911ff31b",
+        "EN-a614180064f7ef60",
         "EN-3a7bd3e2360a3d29"
       ],
       "fdeIds": [
@@ -1021,8 +1069,53 @@
       "hardwareIds": [
         "HW-ceb55d9bc637c1d3"
       ],
-      "firstSeen": "2026-04-13",
-      "lastSeen": "2026-07-17"
+      "firstSeen": "2025-12-02",
+      "lastSeen": "2026-07-18"
+    },
+    {
+      "id": "TX-technology-retrieval_augmented_generation",
+      "name": "RAG",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "retrieval_augmented_generation",
+      "eventIds": [
+        "EV-30466ebe86779a64",
+        "EV-950237c6b3eb6343",
+        "EV-3011ea85c51a3ee0",
+        "EV-f50752717e2a8536",
+        "EV-7449d239223d4928",
+        "EV-adc7c7865f4e9e64",
+        "EV-1b03e5dff76a50a1",
+        "EV-8eed6489ab514823"
+      ],
+      "entityIds": [
+        "EN-a9aff9e0737a5d4a",
+        "EN-8d4321d936320802",
+        "EN-60094bcf5292c490",
+        "EN-aa15d891a32a51b8",
+        "EN-754b113d548b4469",
+        "EN-d87e6bf7aa180a4a",
+        "EN-23fa906ab8df13d6",
+        "EN-feecb1b1adc8584d",
+        "EN-ae4ea495016fb286",
+        "EN-916a98f0fa2a39af",
+        "EN-d6d6e4e33c59b45e",
+        "EN-716f0a8b380bb7d0",
+        "EN-ddc6bcfaf931295c",
+        "EN-d31a4982f920e657",
+        "EN-576c367dfd7686e8",
+        "EN-2d87f3d38782aa14",
+        "EN-bbdefa2950f49882",
+        "EN-b5251b35f15bedc4",
+        "EN-0db2d631b42da133",
+        "EN-3eee4f30151db45a",
+        "EN-2b6e51bec93e86c1",
+        "EN-c18179b68329b054"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-06-11",
+      "lastSeen": "2026-07-18"
     },
     {
       "id": "TX-technology-embodied_ai",
@@ -1041,21 +1134,22 @@
         "EV-6a2f3e9a22edff64",
         "EV-49751dfc7d2f6d6c",
         "EV-e2d4132c671e3d41",
-        "EV-3f8ba5855b64dd1a"
+        "EV-3f8ba5855b64dd1a",
+        "EV-08f736f61f2b46f3"
       ],
       "entityIds": [
         "EN-bbdefa2950f49882",
-        "EN-59ae856cd788d0f5",
         "EN-8d4321d936320802",
+        "EN-59ae856cd788d0f5",
         "EN-0f3360879e746531",
-        "EN-e3b1bf3dab957ffe",
-        "EN-9700d41909cf810f",
+        "EN-80d387ccb3289295",
         "EN-c70eca6b0f88f44d",
         "EN-1f1cfc1d441be41f",
         "EN-60094bcf5292c490",
         "EN-aa75c47729b4a292",
         "EN-8147e6fed86d42c1",
         "EN-96eebba49dbbf422",
+        "EN-e3b1bf3dab957ffe",
         "EN-754c490bd199c21a",
         "EN-7a3ecc54829211df",
         "EN-2f354de778e6a6da",
@@ -1078,7 +1172,7 @@
         "HW-1450585d9cd5879f"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-07-18"
     },
     {
       "id": "TX-technology-open_weights",
@@ -1123,54 +1217,19 @@
       "lastSeen": "2026-07-16"
     },
     {
-      "id": "TX-industry-telecommunications",
-      "name": "电信",
-      "nodeType": "industry",
-      "typeLabel": "行业",
-      "valueId": "telecommunications",
-      "eventIds": [
-        "EV-cafe435ddd007821",
-        "EV-6b51b1b6fe22c540",
-        "EV-1ff169120ed385f6",
-        "EV-6ce6b9c9780b97d9"
-      ],
-      "entityIds": [
-        "EN-59ae856cd788d0f5",
-        "EN-8d4321d936320802",
-        "EN-0f3360879e746531",
-        "EN-e3b1bf3dab957ffe",
-        "EN-9700d41909cf810f",
-        "EN-2ab6d53e717a0e0d",
-        "EN-accf304851de0ad2",
-        "EN-f0fa30cd90f406c8",
-        "EN-60094bcf5292c490",
-        "EN-61cce404a45c3545",
-        "EN-2a920347dfcf07a7",
-        "EN-96eebba49dbbf422",
-        "EN-9fbf261b62c1d7c0",
-        "EN-23b979df49741c93",
-        "EN-02072c80a8386e8d",
-        "EN-2eb073b22916de55"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [
-        "HW-ceb55d9bc637c1d3"
-      ],
-      "firstSeen": "2026-05-20",
-      "lastSeen": "2026-07-17"
-    },
-    {
       "id": "TX-use_case-robotics_automation",
       "name": "机器人与物理自动化",
       "nodeType": "use_case",
       "typeLabel": "应用场景",
       "valueId": "robotics_automation",
       "eventIds": [
+        "EV-cafe435ddd007821",
         "EV-434dcf1813a84ead",
         "EV-f059fd80d668c6bc",
         "EV-234ad54940674bf6",
         "EV-39848cdd62c00e59",
         "EV-4faa2bcf2e42e60c",
+        "EV-d1e8407177e11fdc",
         "EV-6b51b1b6fe22c540",
         "EV-3353bd96728c99e2",
         "EV-57565fc2e7502c59",
@@ -1185,16 +1244,20 @@
         "EV-ad64347138da72bb"
       ],
       "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-59ae856cd788d0f5",
+        "EN-0f3360879e746531",
+        "EN-80d387ccb3289295",
         "EN-6f21a653c48f4f19",
         "EN-4dbe391b8fcf977a",
-        "EN-8d4321d936320802",
         "EN-72138e570e5103e2",
         "EN-60094bcf5292c490",
         "EN-aa75c47729b4a292",
         "EN-8147e6fed86d42c1",
         "EN-96eebba49dbbf422",
+        "EN-c51e27d8efcff21f",
+        "EN-dbd6a2f6ddb95ca7",
         "EN-e3b1bf3dab957ffe",
-        "EN-0f3360879e746531",
         "EN-522d3edeb64a7ca4",
         "EN-c608c4787821de1b",
         "EN-101a515191c6be9e",
@@ -1218,10 +1281,48 @@
         "FDE-dadf0e9572889d3d"
       ],
       "hardwareIds": [
+        "HW-ceb55d9bc637c1d3",
         "HW-dca442211b264bbe"
       ],
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-07-18"
+    },
+    {
+      "id": "TX-industry-telecommunications",
+      "name": "电信",
+      "nodeType": "industry",
+      "typeLabel": "行业",
+      "valueId": "telecommunications",
+      "eventIds": [
+        "EV-cafe435ddd007821",
+        "EV-6b51b1b6fe22c540",
+        "EV-1ff169120ed385f6",
+        "EV-6ce6b9c9780b97d9"
+      ],
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-59ae856cd788d0f5",
+        "EN-0f3360879e746531",
+        "EN-80d387ccb3289295",
+        "EN-e3b1bf3dab957ffe",
+        "EN-2ab6d53e717a0e0d",
+        "EN-accf304851de0ad2",
+        "EN-f0fa30cd90f406c8",
+        "EN-60094bcf5292c490",
+        "EN-61cce404a45c3545",
+        "EN-2a920347dfcf07a7",
+        "EN-96eebba49dbbf422",
+        "EN-9fbf261b62c1d7c0",
+        "EN-23b979df49741c93",
+        "EN-02072c80a8386e8d",
+        "EN-2eb073b22916de55"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [
+        "HW-ceb55d9bc637c1d3"
+      ],
+      "firstSeen": "2026-05-20",
+      "lastSeen": "2026-07-18"
     },
     {
       "id": "TX-technology-guardrails_safety",

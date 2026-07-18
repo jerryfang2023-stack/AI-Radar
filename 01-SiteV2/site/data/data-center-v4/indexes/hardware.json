@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T01:57:40.269Z",
-    "latestDataDate": "2026-07-17",
-    "currentDate": "2026-07-17",
-    "eventCount": 832,
-    "quarantinedEventCount": 60
+    "generatedAt": "2026-07-18T04:18:28.002Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 870,
+    "quarantinedEventCount": 59
   },
   "hardware": [
     {
@@ -78,18 +78,18 @@
     {
       "id": "HW-ceb55d9bc637c1d3",
       "eventId": "EV-cafe435ddd007821",
-      "dataDate": "2026-07-17",
+      "dataDate": "2026-07-18",
       "date": "2026-07-16",
-      "title": "日本将购买英伟达Rubin芯片，用于构建机器人AI——《日本时报》",
+      "title": "英伟达与日本发布全球首个国家级AI基础设施——Noetra联盟将建设140MW Rubin AI工厂，配备27,500块GPU",
       "hardwareType": "gpu",
       "eventType": "hardware_deployment",
       "eventTypeLabel": "硬件部署",
-      "computeLayer": "data_center",
+      "computeLayer": "edge",
       "supplier": "NVIDIA",
       "customer": "Noetra",
       "processNode": "未披露",
       "capacity": 27500,
-      "capacityUnit": "chips",
+      "capacityUnit": "GPUs",
       "site": "未披露",
       "region": "Japan",
       "contractValue": "未披露",
@@ -98,19 +98,24 @@
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
           "id": "embodied_ai",
           "name": "具身智能"
         }
       ],
-      "sourceUrl": "https://japantimes.co.jp/business/2026/07/16/japan-nvidia-rubin-chips-robots",
-      "sourceName": "japantimes.co.jp",
+      "sourceUrl": "https://tomshardware.com/pc-components/gpus/nvidia-and-japans-noetra-consortium-to-build-140mw-rubin-ai-factory-with-27500-gpus",
+      "sourceName": "tomshardware.com",
       "sourceDate": "2026-07-16",
       "entityIds": [
-        "EN-59ae856cd788d0f5",
         "EN-8d4321d936320802",
+        "EN-59ae856cd788d0f5",
         "EN-0f3360879e746531",
-        "EN-e3b1bf3dab957ffe",
-        "EN-9700d41909cf810f"
+        "EN-80d387ccb3289295"
       ]
     },
     {

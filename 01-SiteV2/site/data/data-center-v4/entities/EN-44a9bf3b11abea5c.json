@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T01:57:40.269Z",
-    "latestDataDate": "2026-07-17",
-    "currentDate": "2026-07-17",
-    "eventCount": 832,
-    "quarantinedEventCount": 60
+    "generatedAt": "2026-07-18T04:18:28.002Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 870,
+    "quarantinedEventCount": 59
   },
   "entity": {
     "id": "EN-44a9bf3b11abea5c",
@@ -27,14 +27,10 @@
     "classificationRefs": [
       "TX-technology-on_device"
     ],
-    "relatedEntityIds": [
-      "EN-2c348893efb2316e"
-    ],
+    "relatedEntityIds": [],
     "firstSeen": "2026-07-12",
     "lastSeen": "2026-07-12",
-    "relationIds": [
-      "REL2-a243d283b580493c"
-    ],
+    "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -86,65 +82,8 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [
-    {
-      "id": "EN-2c348893efb2316e",
-      "name": "StepFun",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [
-        "阶跃星辰",
-        "阶跃"
-      ],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-2c1fc2143d7d4a6a",
-        "EV-6824e76c4aa69a71",
-        "EV-ee363e679d12329c",
-        "EV-712bb6241160c4c5",
-        "EV-d99037f2ed8db897"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-technology-on_device",
-        "TX-technology-speech_audio"
-      ],
-      "relatedEntityIds": [
-        "EN-8b619895a83e35c8",
-        "EN-44a9bf3b11abea5c",
-        "EN-ed501d3e2d977553"
-      ],
-      "firstSeen": "2026-05-25",
-      "lastSeen": "2026-07-14"
-    }
-  ],
-  "relationships": [
-    {
-      "relationship_id": "REL2-a243d283b580493c",
-      "relationship_version": "RELATION-V2.0",
-      "subject_ref": "EN-2c348893efb2316e",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-44a9bf3b11abea5c",
-      "object_type": "entity",
-      "event_id": "EV-712bb6241160c4c5",
-      "claim_refs": [
-        "CL-257e63d8454919b6",
-        "CL-8306c7840f559010",
-        "CL-cac59cf17d5304e8",
-        "CL-f9fe92db57e2480f"
-      ],
-      "source_refs": [
-        "SA-8d4d62cfcc68a7b4"
-      ],
-      "data_date": "2026-07-12",
-      "status": "verified"
-    }
-  ],
+  "relatedEntities": [],
+  "relationships": [],
   "taxonomyNodes": [
     {
       "id": "TX-technology-on_device",
@@ -167,6 +106,7 @@
         "EV-c5b8faec223a4caf",
         "EV-4026c95d4c01b96e",
         "EV-0597e07d7e73051a",
+        "EV-08f736f61f2b46f3",
         "EV-02186ed7885f68fe",
         "EV-5613946bdd578a26",
         "EV-dd902b603e2e3dbc",
@@ -214,6 +154,7 @@
         "EN-1dc405a4cda895d0",
         "EN-c3ce0cc92b48bbd6",
         "EN-54ef981ab82586b5",
+        "EN-80d387ccb3289295",
         "EN-0899bccb1b028521",
         "EN-3dd90c2e1bf28b32",
         "EN-5d7b7e77768bfdfc"
@@ -221,7 +162,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-07-18"
     }
   ],
   "fde": [],

@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T01:57:40.269Z",
-    "latestDataDate": "2026-07-17",
-    "currentDate": "2026-07-17",
-    "eventCount": 832,
-    "quarantinedEventCount": 60
+    "generatedAt": "2026-07-18T04:18:28.002Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 870,
+    "quarantinedEventCount": 59
   },
   "node": {
     "id": "TX-technology-video_generation",
@@ -18,6 +18,8 @@
     "valueId": "video_generation",
     "eventIds": [
       "EV-f169db2fb75a1371",
+      "EV-6fbbbfcdcec81df4",
+      "EV-fd8ecce5de2f667d",
       "EV-5babb43f4b4d302f",
       "EV-d8c69ed782b73a34",
       "EV-c7404765df94a3b4",
@@ -25,6 +27,10 @@
       "EV-887d47bb477e2142"
     ],
     "entityIds": [
+      "EN-ec1c8f558ff61e34",
+      "EN-047364b9be67f665",
+      "EN-d83624eb3ab9192e",
+      "EN-925a688403e10965",
       "EN-2b6e51bec93e86c1",
       "EN-b0532e1af75cc4ab",
       "EN-01f1074bb52ff605",
@@ -34,7 +40,6 @@
       "EN-6e7e64cf66f76a04",
       "EN-5388bc10736a0eff",
       "EN-43a340bb75b45f02",
-      "EN-047364b9be67f665",
       "EN-47c1e53c427aafb4",
       "EN-2daac3672aeafcbd",
       "EN-e9857f381893dd05",
@@ -43,7 +48,7 @@
     "fdeIds": [],
     "hardwareIds": [],
     "firstSeen": "2026-06-16",
-    "lastSeen": "2026-07-01"
+    "lastSeen": "2026-07-18"
   },
   "events": [
     {
@@ -141,6 +146,151 @@
       "productName": "",
       "products": [],
       "sourceUrl": "https://ithome.com/0/967/217.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-6fbbbfcdcec81df4",
+      "dataDate": "2026-07-18",
+      "date": "2026-07-17",
+      "updatedDate": "2026-07-18",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "阿里通义实验室发布 Wan-Streamer v0.2，AI 视频电话响应延迟仅 550ms",
+      "originalTitle": "",
+      "subject": "阿里通义实验室",
+      "action": "发布",
+      "object": "Wan-Streamer v0.2，AI 视频电话响应延迟仅 550ms",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成"
+        }
+      ],
+      "entityIds": [
+        "EN-ec1c8f558ff61e34",
+        "EN-047364b9be67f665",
+        "EN-d83624eb3ab9192e",
+        "EN-925a688403e10965"
+      ],
+      "entityNames": [
+        "阿里通义实验室",
+        "Alibaba",
+        "Wan-Streamer",
+        "Wan-Streamer v0.2"
+      ],
+      "productName": "Wan-Streamer",
+      "products": [
+        {
+          "name": "Wan-Streamer",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Alibaba"
+          ]
+        },
+        {
+          "name": "Wan-Streamer v0.2",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Alibaba"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/978/125.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-fd8ecce5de2f667d",
+      "dataDate": "2026-07-18",
+      "date": "2026-07-17",
+      "updatedDate": "2026-07-18",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "优酷总裁吴倩：积极拥抱 AI，但 AI 无法取代真人演员",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "优酷总裁吴倩：积极拥抱 AI，但 AI 无法取代真人演员",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成"
+        }
+      ],
+      "entityIds": [
+        "EN-047364b9be67f665"
+      ],
+      "entityNames": [
+        "Alibaba"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/978/040.htm",
       "publisher": "IT之家（RSS）"
     },
     {
@@ -589,6 +739,127 @@
   ],
   "entities": [
     {
+      "id": "EN-ec1c8f558ff61e34",
+      "name": "阿里通义实验室",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-6fbbbfcdcec81df4"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-video_generation"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-18"
+    },
+    {
+      "id": "EN-047364b9be67f665",
+      "name": "Alibaba",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "阿里",
+        "阿里巴巴"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-43b7f45e9bd7ec9b",
+        "EV-3d93d1da8cb64462",
+        "EV-53f08daddd011dbb",
+        "EV-e1a4bc40db4a9d8f",
+        "EV-6fbbbfcdcec81df4",
+        "EV-82e68f59d8584e4e",
+        "EV-fd8ecce5de2f667d",
+        "EV-f6ac2938949f74ec",
+        "EV-70cbf25f7ec2cc3a",
+        "EV-8b9e4428074bde60",
+        "EV-83c841a4c42cfdea",
+        "EV-3167e6eed75597e9",
+        "EV-76aa77f5a2e7c661",
+        "EV-77662aa9bef9efbe",
+        "EV-c7f274c3aadece12",
+        "EV-333851b077b606c8",
+        "EV-6712f8ac1f00fe85",
+        "EV-c54172bf4e0c1068",
+        "EV-473f852b374d8b1c",
+        "EV-4e6dc3ec2b3f0bd6",
+        "EV-bbc34d7bc9c02b6f",
+        "EV-c11ee0da38376254",
+        "EV-657837763764c869",
+        "EV-a4f052325d0ef230",
+        "EV-710b145230faa692"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-code_generation",
+        "TX-technology-long_context",
+        "TX-use_case-data_analysis",
+        "TX-technology-on_device",
+        "TX-technology-video_generation",
+        "TX-technology-fine_tuning",
+        "TX-technology-quantization",
+        "TX-technology-computer_use"
+      ],
+      "relatedEntityIds": [
+        "EN-2daac3672aeafcbd"
+      ],
+      "firstSeen": "2026-05-23",
+      "lastSeen": "2026-07-18"
+    },
+    {
+      "id": "EN-d83624eb3ab9192e",
+      "name": "Wan-Streamer",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-6fbbbfcdcec81df4"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-video_generation"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-18"
+    },
+    {
+      "id": "EN-925a688403e10965",
+      "name": "Wan-Streamer v0.2",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-6fbbbfcdcec81df4"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-video_generation"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-18"
+    },
+    {
       "id": "EN-2b6e51bec93e86c1",
       "name": "Google DeepMind",
       "entityType": "organization_candidate",
@@ -628,8 +899,8 @@
         "TX-technology-mixture_of_experts",
         "TX-technology-retrieval_augmented_generation",
         "TX-use_case-research_science",
-        "TX-industry-media_entertainment",
         "TX-technology-multimodal",
+        "TX-industry-media_entertainment",
         "TX-technology-video_generation",
         "TX-technology-image_generation",
         "TX-technology-speech_audio"
@@ -691,11 +962,11 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-retail_ecommerce",
         "TX-technology-code_generation",
         "TX-use_case-customer_service",
         "TX-use_case-software_development",
         "TX-technology-mixture_of_experts",
-        "TX-industry-retail_ecommerce",
         "TX-technology-on_device",
         "TX-technology-open_weights",
         "TX-technology-multimodal",
@@ -778,8 +1049,8 @@
         "TX-technology-code_generation",
         "TX-use_case-software_development",
         "TX-technology-mixture_of_experts",
-        "TX-industry-media_entertainment",
         "TX-technology-multimodal",
+        "TX-industry-media_entertainment",
         "TX-technology-video_generation",
         "TX-technology-image_generation",
         "TX-technology-speech_audio"
@@ -795,9 +1066,7 @@
       "name": "Google",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "谷歌"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -812,6 +1081,7 @@
         "EV-dbbe3fd637be213f",
         "EV-4a162c41bb82f325",
         "EV-cf76f090a1a20a36",
+        "EV-b4b5d141dac164c2",
         "EV-36a9e4e908249381",
         "EV-ef6464cf7f764835",
         "EV-b95539d17772a4ce",
@@ -819,6 +1089,7 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
+        "EV-a255cfc0dab44564",
         "EV-04efb4eecbb8125f",
         "EV-6359c9f6c2609a38",
         "EV-c2d784ef0a5376f8",
@@ -887,18 +1158,18 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-technology-code_generation",
+        "TX-industry-financial_services",
         "TX-use_case-enterprise_operations",
+        "TX-industry-retail_ecommerce",
+        "TX-technology-code_generation",
         "TX-use_case-software_development",
         "TX-technology-mixture_of_experts",
-        "TX-industry-financial_services",
         "TX-use_case-cybersecurity",
-        "TX-industry-retail_ecommerce",
         "TX-technology-on_device",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-embodied_ai",
-        "TX-industry-media_entertainment",
         "TX-technology-multimodal",
+        "TX-industry-media_entertainment",
         "TX-technology-video_generation",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
@@ -924,7 +1195,6 @@
         "EN-0e008e2c06144ec8",
         "EN-f2c032b19edb7900",
         "EN-d4c56709df757c56",
-        "EN-6470c8584a9d35d3",
         "EN-b5c336c0dd1ff29c",
         "EN-eb0cc8fb584389db",
         "EN-d56aa2f9908f566a",
@@ -932,7 +1202,7 @@
         "EN-e3db3da2b7dc6057"
       ],
       "firstSeen": "2026-05-22",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-07-18"
     },
     {
       "id": "EN-6e7e64cf66f76a04",
@@ -1029,59 +1299,6 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-06-10",
       "lastSeen": "2026-07-13"
-    },
-    {
-      "id": "EN-047364b9be67f665",
-      "name": "Alibaba",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [
-        "阿里巴巴"
-      ],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-43b7f45e9bd7ec9b",
-        "EV-3d93d1da8cb64462",
-        "EV-e1a4bc40db4a9d8f",
-        "EV-f6ac2938949f74ec",
-        "EV-70cbf25f7ec2cc3a",
-        "EV-8b9e4428074bde60",
-        "EV-83c841a4c42cfdea",
-        "EV-3167e6eed75597e9",
-        "EV-76aa77f5a2e7c661",
-        "EV-77662aa9bef9efbe",
-        "EV-c7f274c3aadece12",
-        "EV-333851b077b606c8",
-        "EV-6712f8ac1f00fe85",
-        "EV-c54172bf4e0c1068",
-        "EV-473f852b374d8b1c",
-        "EV-4e6dc3ec2b3f0bd6",
-        "EV-bbc34d7bc9c02b6f",
-        "EV-c11ee0da38376254",
-        "EV-657837763764c869",
-        "EV-a4f052325d0ef230",
-        "EV-710b145230faa692"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-technology-code_generation",
-        "TX-technology-long_context",
-        "TX-use_case-data_analysis",
-        "TX-technology-on_device",
-        "TX-technology-video_generation",
-        "TX-technology-fine_tuning",
-        "TX-technology-quantization",
-        "TX-technology-computer_use"
-      ],
-      "relatedEntityIds": [
-        "EN-2daac3672aeafcbd"
-      ],
-      "firstSeen": "2026-05-23",
-      "lastSeen": "2026-07-17"
     },
     {
       "id": "EN-47c1e53c427aafb4",

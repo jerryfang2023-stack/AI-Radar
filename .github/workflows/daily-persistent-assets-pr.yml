@@ -597,6 +597,7 @@ jobs:
             data-lake/tables/qa_queue.jsonl
             data-lake/tables/legacy_asset_mappings.jsonl
             01-SiteV2/site/data/data-center-v4-frontstage.json
+            01-SiteV2/site/data/data-center-v4/**
             01-SiteV2/content/04-business-signals/signals/${{ steps.run-date.outputs.date }}-signals.md
             01-SiteV2/knowledge/01-Signal-Cards/**/${{ steps.run-date.outputs.date }}--signal--*.md
             01-SiteV2/content/06-asset-candidates/trend/${{ steps.run-date.outputs.date }}--trend-candidate--*.md
@@ -654,6 +655,7 @@ jobs:
             stage_if_exists "01-SiteV2/content/11-databases/model-assist-v1/${RUN_DATE}.json"
             stage_if_exists "01-SiteV2/content/11-databases/model-assist-v1/checkpoint.json"
             stage_if_exists "01-SiteV2/site/data/data-center-v4-frontstage.json"
+            stage_if_exists "01-SiteV2/site/data/data-center-v4"
           fi
 
           if [ "${{ steps.pre-commit-gate.outcome }}" = "success" ] && [ "${{ steps.assets.outcome }}" = "success" ]; then

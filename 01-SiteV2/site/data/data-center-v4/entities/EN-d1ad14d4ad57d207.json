@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T01:57:40.269Z",
-    "latestDataDate": "2026-07-17",
-    "currentDate": "2026-07-17",
-    "eventCount": 832,
-    "quarantinedEventCount": 60
+    "generatedAt": "2026-07-18T04:18:28.002Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 870,
+    "quarantinedEventCount": 59
   },
   "entity": {
     "id": "EN-d1ad14d4ad57d207",
@@ -21,6 +21,8 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-b925f50b55d3aa00",
+      "EV-c237f5dc53f0a923",
       "EV-20dea13a4e6100ea",
       "EV-0dbc7b904378f713",
       "EV-0b6992ae74184d13",
@@ -29,15 +31,17 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [
-      "TX-technology-code_generation"
+      "TX-technology-code_generation",
+      "TX-use_case-knowledge_search"
     ],
     "relatedEntityIds": [
-      "EN-2b78da3dc866654e",
-      "EN-7d3194f79e645c42"
+      "EN-7d3194f79e645c42",
+      "EN-2b78da3dc866654e"
     ],
     "firstSeen": "2026-06-02",
-    "lastSeen": "2026-07-15",
+    "lastSeen": "2026-07-18",
     "relationIds": [
+      "REL2-4bb082b8b58f1dd4",
       "REL2-d6b72732c7eb9192",
       "REL2-c56a1badc060dbab",
       "REL2-24a07e3fde560a53",
@@ -51,6 +55,8 @@
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-b925f50b55d3aa00",
+        "EV-c237f5dc53f0a923",
         "EV-20dea13a4e6100ea",
         "EV-efee7c1ac4dc336f",
         "EV-0dbc7b904378f713",
@@ -64,6 +70,53 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-b925f50b55d3aa00",
+        "dataDate": "2026-07-18",
+        "date": "2026-07-18",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "宝马推出 ChatGPT 插件，让 AI 帮你选车",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "id": "knowledge_search",
+            "dimensionName": "应用场景",
+            "name": "知识与搜索"
+          }
+        ],
+        "entityIds": [
+          "EN-e5695af6f033f56e",
+          "EN-d1ad14d4ad57d207"
+        ]
+      },
+      {
+        "id": "EV-c237f5dc53f0a923",
+        "dataDate": "2026-07-18",
+        "date": "2026-07-18",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "OpenAI 更新 Mac 端 ChatGPT 应用，整合 Chat、Work 和 Codex 模式",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "code_generation",
+            "name": "代码生成"
+          }
+        ],
+        "entityIds": [
+          "EN-7d3194f79e645c42",
+          "EN-3a7bd3e2360a3d29",
+          "EN-d1ad14d4ad57d207"
+        ]
+      },
       {
         "id": "EV-20dea13a4e6100ea",
         "dataDate": "2026-07-15",
@@ -206,39 +259,11 @@
   },
   "relatedEntities": [
     {
-      "id": "EN-2b78da3dc866654e",
-      "name": "Spotify",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-20dea13a4e6100ea",
-        "EV-113899096a32165a",
-        "EV-a0d3853dd41c8ef6",
-        "EV-dad8c827d14f2799"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-model_context_protocol",
-        "TX-technology-speech_audio"
-      ],
-      "relatedEntityIds": [
-        "EN-d1ad14d4ad57d207"
-      ],
-      "firstSeen": "2026-06-12",
-      "lastSeen": "2026-07-15"
-    },
-    {
       "id": "EN-7d3194f79e645c42",
       "name": "OpenAI",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "Codex",
         "GPT-5.6"
       ],
       "verificationStatus": "verified",
@@ -282,6 +307,10 @@
         "EV-3fbfb89a10efd42f",
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
+        "EV-a68475d82ec939b5",
+        "EV-c237f5dc53f0a923",
+        "EV-3a74e4995b590507",
+        "EV-7963d8c78531f12d",
         "EV-0d5a32aca724d30e",
         "EV-70e3f88cb06a856c",
         "EV-7c899d5decafc42f",
@@ -362,6 +391,7 @@
         "EV-a4f052325d0ef230",
         "EV-ca420d07e12369f1",
         "EV-773ffcc6e1df56fa",
+        "EV-2f7e6d3a68bbf08f",
         "EV-5cd10de5c12916f0",
         "EV-067f57f6e6ffa6ce",
         "EV-da6678e4e865e00e",
@@ -390,24 +420,24 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-financial_services",
+        "TX-use_case-enterprise_operations",
+        "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
         "TX-technology-code_generation",
         "TX-use_case-customer_service",
         "TX-industry-healthcare_life_sciences",
-        "TX-use_case-enterprise_operations",
         "TX-use_case-software_development",
         "TX-technology-long_context",
-        "TX-industry-financial_services",
         "TX-use_case-cybersecurity",
         "TX-use_case-data_analysis",
-        "TX-industry-retail_ecommerce",
         "TX-industry-professional_services",
         "TX-industry-technology",
         "TX-technology-embodied_ai",
         "TX-technology-open_weights",
         "TX-technology-model_context_protocol",
-        "TX-use_case-robotics_automation",
         "TX-technology-multimodal",
+        "TX-use_case-robotics_automation",
         "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
@@ -415,13 +445,13 @@
         "TX-technology-computer_use"
       ],
       "relatedEntityIds": [
-        "EN-c70eca6b0f88f44d",
-        "EN-52fc33ae4d101a5d",
         "EN-7839fb10a8f14c70",
+        "EN-d1ad14d4ad57d207",
+        "EN-52fc33ae4d101a5d",
+        "EN-c70eca6b0f88f44d",
         "EN-9f15bb7e29e191eb",
         "EN-047bdfce48c28cfc",
         "EN-6a50fbf0b970c03a",
-        "EN-d1ad14d4ad57d207",
         "EN-536c4035ba0c7047",
         "EN-3c92cc7e49924a6f",
         "EN-77fe4e790d5bc756",
@@ -443,10 +473,58 @@
         "EN-7bf321fa55418fba"
       ],
       "firstSeen": "2026-05-19",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-07-18"
+    },
+    {
+      "id": "EN-2b78da3dc866654e",
+      "name": "Spotify",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-20dea13a4e6100ea",
+        "EV-113899096a32165a",
+        "EV-a0d3853dd41c8ef6",
+        "EV-dad8c827d14f2799"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-model_context_protocol",
+        "TX-technology-speech_audio"
+      ],
+      "relatedEntityIds": [
+        "EN-d1ad14d4ad57d207"
+      ],
+      "firstSeen": "2026-06-12",
+      "lastSeen": "2026-07-15"
     }
   ],
   "relationships": [
+    {
+      "relationship_id": "REL2-4bb082b8b58f1dd4",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-7d3194f79e645c42",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-d1ad14d4ad57d207",
+      "object_type": "entity",
+      "event_id": "EV-c237f5dc53f0a923",
+      "claim_refs": [
+        "CL-bbdbf1545578f4dd",
+        "CL-9b8791131a08ab99",
+        "CL-4854bf64928f3407",
+        "CL-4d45b80bd00f83b3"
+      ],
+      "source_refs": [
+        "SA-dae4d8e20749ef4b"
+      ],
+      "data_date": "2026-07-18",
+      "status": "verified"
+    },
     {
       "relationship_id": "REL2-d6b72732c7eb9192",
       "relationship_version": "RELATION-V2.0",
@@ -615,6 +693,7 @@
         "EV-2d6d2dc0ead4be10",
         "EV-e1a4bc40db4a9d8f",
         "EV-d5f276ad6b2ac9de",
+        "EV-c237f5dc53f0a923",
         "EV-653cbce2ccc79f8b",
         "EV-74dfbd82b47dc626",
         "EV-0dbc7b904378f713",
@@ -652,12 +731,13 @@
         "EN-86ca9936019f1039",
         "EN-4094a2b7125c7564",
         "EN-8f71c4871a160172",
+        "EN-3a7bd3e2360a3d29",
+        "EN-d1ad14d4ad57d207",
         "EN-f3cfedbe8428c9f7",
         "EN-7df09a7717ef2feb",
         "EN-c04bd5ebd10ab696",
         "EN-50ba7ff15827787b",
         "EN-1076719c4826c477",
-        "EN-d1ad14d4ad57d207",
         "EN-0a1750ec669a270c",
         "EN-c141d2237427f30d",
         "EN-8d4321d936320802",
@@ -702,7 +782,35 @@
         "HW-b1302168a9ab18e8"
       ],
       "firstSeen": "2026-05-19",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-07-18"
+    },
+    {
+      "id": "TX-use_case-knowledge_search",
+      "name": "知识与搜索",
+      "nodeType": "use_case",
+      "typeLabel": "应用场景",
+      "valueId": "knowledge_search",
+      "eventIds": [
+        "EV-b925f50b55d3aa00",
+        "EV-702ed039940800fb",
+        "EV-297b647e3787f3d6",
+        "EV-ae4561a4a9ebe17f"
+      ],
+      "entityIds": [
+        "EN-e5695af6f033f56e",
+        "EN-d1ad14d4ad57d207",
+        "EN-3f726694f178ed7a",
+        "EN-45e0ade11fed1e44",
+        "EN-1e68d267df86aa4c",
+        "EN-9d93b78264eb6acb",
+        "EN-82eaaba81d9dcc54",
+        "EN-b42e5eda1d1a3720",
+        "EN-9a6ee79873b1fb7b"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-06-11",
+      "lastSeen": "2026-07-18"
     }
   ],
   "fde": [],

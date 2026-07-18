@@ -4,25 +4,24 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T01:57:40.269Z",
-    "latestDataDate": "2026-07-17",
-    "currentDate": "2026-07-17",
-    "eventCount": 832,
-    "quarantinedEventCount": 60
+    "generatedAt": "2026-07-18T04:18:28.002Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 870,
+    "quarantinedEventCount": 59
   },
   "entity": {
     "id": "EN-cbc62794911ff31b",
     "name": "Amazon",
     "entityType": "organization_candidate",
     "typeLabel": "公司与机构",
-    "aliases": [
-      "Amazon Bedrock"
-    ],
+    "aliases": [],
     "verificationStatus": "verified",
     "datasetScopes": [
       "canonical"
     ],
     "eventIds": [
+      "EV-dcbe916c6138e5cb",
       "EV-02548003157849bb",
       "EV-8b0f056571d68269",
       "EV-49c6291694fb6c7b",
@@ -39,26 +38,31 @@
       "EV-c108e7cc2df7faf4",
       "EV-4e55361d8324dd49",
       "EV-94d9c8d5ac1e10de",
-      "EV-b4e7187a9bd1de0e"
+      "EV-b4e7187a9bd1de0e",
+      "EV-8993e021ac17df4a"
     ],
     "viewpointIds": [],
     "classificationRefs": [
       "TX-technology-agentic_execution",
+      "TX-industry-retail_ecommerce",
+      "TX-industry-manufacturing",
       "TX-use_case-customer_service",
       "TX-industry-healthcare_life_sciences",
-      "TX-use_case-cybersecurity",
-      "TX-industry-retail_ecommerce"
+      "TX-use_case-cybersecurity"
     ],
     "relatedEntityIds": [
+      "EN-a614180064f7ef60",
       "EN-9fbf261b62c1d7c0"
     ],
-    "firstSeen": "2026-01-20",
-    "lastSeen": "2026-07-16",
+    "firstSeen": "2025-12-02",
+    "lastSeen": "2026-07-18",
     "relationIds": [
+      "REL2-616077a1ca249bdd",
       "REL2-96579082da72d315"
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-dcbe916c6138e5cb",
         "EV-8b0f056571d68269",
         "EV-02548003157849bb"
       ],
@@ -73,6 +77,7 @@
         "EV-c0a65877001ed413"
       ],
       "productsServices": [
+        "EV-8993e021ac17df4a",
         "EV-b93b5cc15823e9c3",
         "EV-918fc324de3117bd",
         "EV-f953555178744c22",
@@ -88,6 +93,53 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-dcbe916c6138e5cb",
+        "dataDate": "2026-07-18",
+        "date": "2026-07-12",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Auger 获 5000 万美元 B 轮融资，用于 AI 供应链自动化",
+        "displayTags": [],
+        "entityIds": [
+          "EN-814669895ed30dff",
+          "EN-cbc62794911ff31b",
+          "EN-ea3bd73e2b506e00"
+        ]
+      },
+      {
+        "id": "EV-8993e021ac17df4a",
+        "dataDate": "2026-07-18",
+        "date": "2025-12-02",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "亚马逊推出本地部署的英伟达‘AI 工厂’挑战竞争对手",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "chip_accelerator",
+            "dimensionName": "产品形态",
+            "name": "芯片与加速器"
+          },
+          {
+            "dimensionId": "industry",
+            "id": "manufacturing",
+            "dimensionName": "行业",
+            "name": "制造业"
+          }
+        ],
+        "entityIds": [
+          "EN-cbc62794911ff31b",
+          "EN-8d4321d936320802",
+          "EN-a614180064f7ef60"
+        ]
+      },
       {
         "id": "EV-53f4f2a34b3ce1b4",
         "dataDate": "2026-07-16",
@@ -501,6 +553,29 @@
   },
   "relatedEntities": [
     {
+      "id": "EN-a614180064f7ef60",
+      "name": "AI Factories",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-8993e021ac17df4a"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-manufacturing"
+      ],
+      "relatedEntityIds": [
+        "EN-cbc62794911ff31b"
+      ],
+      "firstSeen": "2025-12-02",
+      "lastSeen": "2026-07-18"
+    },
+    {
       "id": "EN-9fbf261b62c1d7c0",
       "name": "Microsoft",
       "entityType": "organization_candidate",
@@ -530,6 +605,7 @@
         "EV-58c1cc3749294649",
         "EV-c0a65877001ed413",
         "EV-bd508dbe4205774f",
+        "EV-7963d8c78531f12d",
         "EV-7c899d5decafc42f",
         "EV-b920999c64aa9ef6",
         "EV-33292a33d0f4d599",
@@ -562,16 +638,16 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
+        "TX-industry-automotive_transportation",
         "TX-technology-code_generation",
         "TX-use_case-customer_service",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-software_development",
         "TX-use_case-cybersecurity",
-        "TX-industry-retail_ecommerce",
         "TX-technology-on_device",
         "TX-industry-technology",
-        "TX-industry-automotive_transportation",
         "TX-technology-model_context_protocol",
         "TX-industry-telecommunications",
         "TX-technology-reasoning",
@@ -592,10 +668,31 @@
         "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-04-16",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-07-18"
     }
   ],
   "relationships": [
+    {
+      "relationship_id": "REL2-616077a1ca249bdd",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-cbc62794911ff31b",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-a614180064f7ef60",
+      "object_type": "entity",
+      "event_id": "EV-8993e021ac17df4a",
+      "claim_refs": [
+        "CL-073d7041514940e9",
+        "CL-fae9365299dbe5bb",
+        "CL-6a466ff6af337ecf",
+        "CL-86601bb1a02ec3d6"
+      ],
+      "source_refs": [
+        "SA-f21fed1efc1641c8"
+      ],
+      "data_date": "2026-07-18",
+      "status": "verified"
+    },
     {
       "relationship_id": "REL2-96579082da72d315",
       "relationship_version": "RELATION-V2.0",
@@ -625,7 +722,8 @@
       "typeLabel": "技术",
       "valueId": "agentic_execution",
       "eventIds": [
-        "EV-02882e6f5e1902c6",
+        "EV-1da2e46e39a57d33",
+        "EV-8b7cbb66a33a945d",
         "EV-38cce1b72977ff2b",
         "EV-427081ec574b43bb",
         "EV-095e1a90f14ccdb9",
@@ -714,6 +812,7 @@
         "EV-bbc1042dcf5ad317",
         "EV-01df8e489a34893b",
         "EV-afd0332ad8f5f05b",
+        "EV-0cce336f720bb7b7",
         "EV-36a9e4e908249381",
         "EV-02686922dd82c4aa",
         "EV-2fab4396000198d2",
@@ -736,6 +835,10 @@
         "EV-45be473baf6dfa4c",
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
+        "EV-05a87b578967c83e",
+        "EV-950237c6b3eb6343",
+        "EV-82e68f59d8584e4e",
+        "EV-a2dfe20983c8d6e4",
         "EV-385dc1ac09a211bd",
         "EV-a8a8f26c5128d894",
         "EV-653cbce2ccc79f8b",
@@ -858,12 +961,13 @@
         "EV-cf0551afe16562ef"
       ],
       "entityIds": [
-        "EN-2a920347dfcf07a7",
-        "EN-d5edfd3c9768e212",
-        "EN-ea3bd73e2b506e00",
+        "EN-cfd90af8403941bf",
+        "EN-366289432b214eda",
+        "EN-8d4321d936320802",
         "EN-fdcd4ec7d0546e95",
         "EN-9c8ae69b84f21a2e",
         "EN-45a46e581e91ce79",
+        "EN-ea3bd73e2b506e00",
         "EN-96eebba49dbbf422",
         "EN-4d748ebd71af03a7",
         "EN-7a9c94a8c201bcc2",
@@ -916,6 +1020,7 @@
         "EN-befc92b3a019d04c",
         "EN-b10da733dff99be1",
         "EN-049b3253f4a8e2eb",
+        "EN-2a920347dfcf07a7",
         "EN-58b507456c52c9b3",
         "EN-10fd89e7d8a1c7c4",
         "EN-52f1bab72d488823",
@@ -945,11 +1050,11 @@
         "EN-44512ea2b55bf535",
         "EN-d8cb1acd1b39854a",
         "EN-16fd849ce27f115b",
-        "EN-8d4321d936320802",
         "EN-f5791343a13abc71",
         "EN-28d0bd981118a907",
         "EN-916a98f0fa2a39af",
         "EN-8d291c7017252b07",
+        "EN-ceef9085ddc3348c",
         "EN-d9b1d7819af92e77",
         "EN-88e2cce43eeadb36",
         "EN-276a8bc458036a1a",
@@ -982,6 +1087,11 @@
         "EN-373ac021a2c0bb2c",
         "EN-c13e2f4a44bb01ed",
         "EN-de5a1adf4fedcce1",
+        "EN-19e41212c0556603",
+        "EN-dca6ec9510fc0176",
+        "EN-60094bcf5292c490",
+        "EN-aa15d891a32a51b8",
+        "EN-eaaf22a384c26014",
         "EN-3f726694f178ed7a",
         "EN-3a9b395103419892",
         "EN-f3cfedbe8428c9f7",
@@ -1079,7 +1189,6 @@
         "EN-34e408ff65178379",
         "EN-2a817d99285e12c4",
         "EN-34da56029403e6f7",
-        "EN-dca6ec9510fc0176",
         "EN-623fbff8d5179d4e",
         "EN-fef851474e3c4311",
         "EN-19018cddd8946526",
@@ -1176,7 +1285,6 @@
         "EN-8941d14fe851d732",
         "EN-6fcba5d96a4fadfd",
         "EN-11ef7b03c79c9bbd",
-        "EN-60094bcf5292c490",
         "EN-a3266ab9e10d6105",
         "EN-9bc22dcabf7f45b3",
         "EN-10fce287b4b1464c",
@@ -1223,14 +1331,167 @@
         "FDE-ef9fdaf8134b8c2f",
         "FDE-352f1b6aaa2066b8",
         "FDE-08f12caedc3b2f13",
-        "FDE-27308b0a6cb2321a"
+        "FDE-27308b0a6cb2321a",
+        "FDE-3665b073634d4b9d"
       ],
       "hardwareIds": [
         "HW-2ce4c2fb193555e3",
         "HW-25ce41fab12d9ef2"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-07-18"
+    },
+    {
+      "id": "TX-industry-retail_ecommerce",
+      "name": "零售与电商",
+      "nodeType": "industry",
+      "typeLabel": "行业",
+      "valueId": "retail_ecommerce",
+      "eventIds": [
+        "EV-f6a72cddbda748b3",
+        "EV-e7dcecaed5a0ee5b",
+        "EV-8b0f056571d68269",
+        "EV-434dcf1813a84ead",
+        "EV-a3b006906f6d46a0",
+        "EV-046caa2b3d6fbdde",
+        "EV-02686922dd82c4aa",
+        "EV-99a0cb6bac516bdd",
+        "EV-2ffc3377977da114",
+        "EV-d12aa40eff40c97e",
+        "EV-89b644ff05e6b93b",
+        "EV-c7404765df94a3b4",
+        "EV-3f8ba5855b64dd1a",
+        "EV-52e1ac21c25a0a09",
+        "EV-6ce6b9c9780b97d9",
+        "EV-dd62847548bb6ae3"
+      ],
+      "entityIds": [
+        "EN-a5d2ae286d0d9e45",
+        "EN-96eebba49dbbf422",
+        "EN-f346eaca864441f9",
+        "EN-c70eca6b0f88f44d",
+        "EN-b0532e1af75cc4ab",
+        "EN-e5cc9e38970eacb5",
+        "EN-cbc62794911ff31b",
+        "EN-6f21a653c48f4f19",
+        "EN-4dbe391b8fcf977a",
+        "EN-c5947269de664c47",
+        "EN-88e2cce43eeadb36",
+        "EN-276a8bc458036a1a",
+        "EN-5239a379b6326549",
+        "EN-8147e6fed86d42c1",
+        "EN-e274048227f164dc",
+        "EN-1bf93b12e68cac56",
+        "EN-d9b1d7819af92e77",
+        "EN-bbdefa2950f49882",
+        "EN-242e21e3dc6869a9",
+        "EN-ffc6caa049c23d48",
+        "EN-151013fb8438c046",
+        "EN-01f1074bb52ff605",
+        "EN-5388bc10736a0eff",
+        "EN-43a340bb75b45f02",
+        "EN-5e1fcba4c9f1cf69",
+        "EN-7d3194f79e645c42",
+        "EN-94ff75465b1afa65",
+        "EN-3a7bd3e2360a3d29",
+        "EN-40e307d789f77264",
+        "EN-1924fff8eb4d54ae",
+        "EN-61cce404a45c3545",
+        "EN-2a920347dfcf07a7",
+        "EN-9fbf261b62c1d7c0",
+        "EN-23b979df49741c93",
+        "EN-02072c80a8386e8d",
+        "EN-2eb073b22916de55",
+        "EN-4a639cb888a15d75",
+        "EN-56ee86045cfb0ddd",
+        "EN-9dde0c2d375060f6"
+      ],
+      "fdeIds": [
+        "FDE-62f660a9a90bc3f6",
+        "FDE-309bc49d109029a3"
+      ],
+      "hardwareIds": [],
+      "firstSeen": "2026-01-20",
+      "lastSeen": "2026-07-18"
+    },
+    {
+      "id": "TX-industry-manufacturing",
+      "name": "制造业",
+      "nodeType": "industry",
+      "typeLabel": "行业",
+      "valueId": "manufacturing",
+      "eventIds": [
+        "EV-f6a72cddbda748b3",
+        "EV-80e54c9a390da293",
+        "EV-aa33ca051f3a7f78",
+        "EV-a84ec4216d3ded6d",
+        "EV-cafe435ddd007821",
+        "EV-4dd25589d834060d",
+        "EV-7263caa45bbf168e",
+        "EV-5b16886442234f81",
+        "EV-39848cdd62c00e59",
+        "EV-4faa2bcf2e42e60c",
+        "EV-9ee3c0ec243b6129",
+        "EV-6b51b1b6fe22c540",
+        "EV-5f718c76c285ac9b",
+        "EV-309ea4fc27a66485",
+        "EV-6ce6b9c9780b97d9",
+        "EV-dd62847548bb6ae3",
+        "EV-8993e021ac17df4a",
+        "EV-08f736f61f2b46f3",
+        "EV-946569cccbd9222f"
+      ],
+      "entityIds": [
+        "EN-a5d2ae286d0d9e45",
+        "EN-96eebba49dbbf422",
+        "EN-8d4321d936320802",
+        "EN-c70eca6b0f88f44d",
+        "EN-1bd14cd1a58c5708",
+        "EN-7d3194f79e645c42",
+        "EN-ee04228c5c6d8b08",
+        "EN-7706c3c94d5f9b59",
+        "EN-59ae856cd788d0f5",
+        "EN-0f3360879e746531",
+        "EN-80d387ccb3289295",
+        "EN-2fc9fff8ab7f35aa",
+        "EN-8efebac68a48c369",
+        "EN-16fd849ce27f115b",
+        "EN-f5791343a13abc71",
+        "EN-9fbf261b62c1d7c0",
+        "EN-60094bcf5292c490",
+        "EN-956b7280912ef1cc",
+        "EN-18ada5002dd89e01",
+        "EN-72138e570e5103e2",
+        "EN-aa75c47729b4a292",
+        "EN-8147e6fed86d42c1",
+        "EN-51188f73e8dfbfee",
+        "EN-e3b1bf3dab957ffe",
+        "EN-cf9488537f777c1a",
+        "EN-38f4d27a18084522",
+        "EN-74beb25bdfe7bdd1",
+        "EN-94c93b5ab886f2d9",
+        "EN-ce635c4eabff5e4f",
+        "EN-ab9e3beebd83960d",
+        "EN-61cce404a45c3545",
+        "EN-2a920347dfcf07a7",
+        "EN-23b979df49741c93",
+        "EN-02072c80a8386e8d",
+        "EN-2eb073b22916de55",
+        "EN-4a639cb888a15d75",
+        "EN-56ee86045cfb0ddd",
+        "EN-9dde0c2d375060f6",
+        "EN-cbc62794911ff31b",
+        "EN-a614180064f7ef60",
+        "EN-3a7bd3e2360a3d29"
+      ],
+      "fdeIds": [
+        "FDE-9f64e1521dd2dea0"
+      ],
+      "hardwareIds": [
+        "HW-ceb55d9bc637c1d3"
+      ],
+      "firstSeen": "2025-12-02",
+      "lastSeen": "2026-07-18"
     },
     {
       "id": "TX-use_case-customer_service",
@@ -1245,6 +1506,7 @@
         "EV-e869f17214557633",
         "EV-8abf5adc3e72fbb8",
         "EV-3fb492fb45980541",
+        "EV-05a87b578967c83e",
         "EV-11a8e196deb21300",
         "EV-94d9c8d5ac1e10de"
       ],
@@ -1260,6 +1522,7 @@
         "EN-28d0bd981118a907",
         "EN-7d3194f79e645c42",
         "EN-88e2cce43eeadb36",
+        "EN-19e41212c0556603",
         "EN-34da56029403e6f7",
         "EN-623fbff8d5179d4e",
         "EN-fef851474e3c4311",
@@ -1270,11 +1533,12 @@
       ],
       "fdeIds": [
         "FDE-3e499215265a81d5",
-        "FDE-d08fed45110ab44b"
+        "FDE-d08fed45110ab44b",
+        "FDE-3665b073634d4b9d"
       ],
       "hardwareIds": [],
-      "firstSeen": "2026-06-02",
-      "lastSeen": "2026-07-16"
+      "firstSeen": "2026-03-04",
+      "lastSeen": "2026-07-18"
     },
     {
       "id": "TX-industry-healthcare_life_sciences",
@@ -1291,6 +1555,7 @@
         "EV-a42e51959c627554",
         "EV-a84ec4216d3ded6d",
         "EV-8b0f056571d68269",
+        "EV-9563aa162529aab0",
         "EV-cafe435ddd007821",
         "EV-4db890779221bd9a",
         "EV-d1e2a7c6d314612c",
@@ -1321,11 +1586,11 @@
         "EN-7706c3c94d5f9b59",
         "EN-e5cc9e38970eacb5",
         "EN-cbc62794911ff31b",
-        "EN-59ae856cd788d0f5",
+        "EN-b81c8201acfc7639",
         "EN-8d4321d936320802",
+        "EN-59ae856cd788d0f5",
         "EN-0f3360879e746531",
-        "EN-e3b1bf3dab957ffe",
-        "EN-9700d41909cf810f",
+        "EN-80d387ccb3289295",
         "EN-27032b3c60ab2a95",
         "EN-43381465c2b7d64e",
         "EN-c70eca6b0f88f44d",
@@ -1340,6 +1605,7 @@
         "EN-06b5472c16feae4c",
         "EN-12b0c8b376b8375e",
         "EN-bab9670e68265ab1",
+        "EN-e3b1bf3dab957ffe",
         "EN-a93bc1dfeb147c54",
         "EN-6f7ac1823da81d2e",
         "EN-86acdf589a6723d5",
@@ -1368,7 +1634,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-01-20",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-07-18"
     },
     {
       "id": "TX-use_case-cybersecurity",
@@ -1454,77 +1720,6 @@
       "hardwareIds": [],
       "firstSeen": "2026-04-16",
       "lastSeen": "2026-07-17"
-    },
-    {
-      "id": "TX-industry-retail_ecommerce",
-      "name": "零售与电商",
-      "nodeType": "industry",
-      "typeLabel": "行业",
-      "valueId": "retail_ecommerce",
-      "eventIds": [
-        "EV-e7dcecaed5a0ee5b",
-        "EV-8b0f056571d68269",
-        "EV-434dcf1813a84ead",
-        "EV-a3b006906f6d46a0",
-        "EV-046caa2b3d6fbdde",
-        "EV-02686922dd82c4aa",
-        "EV-99a0cb6bac516bdd",
-        "EV-2ffc3377977da114",
-        "EV-d12aa40eff40c97e",
-        "EV-89b644ff05e6b93b",
-        "EV-c7404765df94a3b4",
-        "EV-3f8ba5855b64dd1a",
-        "EV-52e1ac21c25a0a09",
-        "EV-6ce6b9c9780b97d9",
-        "EV-dd62847548bb6ae3"
-      ],
-      "entityIds": [
-        "EN-f346eaca864441f9",
-        "EN-96eebba49dbbf422",
-        "EN-c70eca6b0f88f44d",
-        "EN-b0532e1af75cc4ab",
-        "EN-e5cc9e38970eacb5",
-        "EN-cbc62794911ff31b",
-        "EN-6f21a653c48f4f19",
-        "EN-4dbe391b8fcf977a",
-        "EN-c5947269de664c47",
-        "EN-88e2cce43eeadb36",
-        "EN-276a8bc458036a1a",
-        "EN-5239a379b6326549",
-        "EN-8147e6fed86d42c1",
-        "EN-e274048227f164dc",
-        "EN-1bf93b12e68cac56",
-        "EN-d9b1d7819af92e77",
-        "EN-bbdefa2950f49882",
-        "EN-242e21e3dc6869a9",
-        "EN-ffc6caa049c23d48",
-        "EN-151013fb8438c046",
-        "EN-01f1074bb52ff605",
-        "EN-5388bc10736a0eff",
-        "EN-43a340bb75b45f02",
-        "EN-5e1fcba4c9f1cf69",
-        "EN-7d3194f79e645c42",
-        "EN-94ff75465b1afa65",
-        "EN-3a7bd3e2360a3d29",
-        "EN-40e307d789f77264",
-        "EN-1924fff8eb4d54ae",
-        "EN-61cce404a45c3545",
-        "EN-2a920347dfcf07a7",
-        "EN-9fbf261b62c1d7c0",
-        "EN-23b979df49741c93",
-        "EN-02072c80a8386e8d",
-        "EN-2eb073b22916de55",
-        "EN-4a639cb888a15d75",
-        "EN-56ee86045cfb0ddd",
-        "EN-9dde0c2d375060f6"
-      ],
-      "fdeIds": [
-        "FDE-62f660a9a90bc3f6",
-        "FDE-309bc49d109029a3"
-      ],
-      "hardwareIds": [],
-      "firstSeen": "2026-01-20",
-      "lastSeen": "2026-07-15"
     }
   ],
   "fde": [
