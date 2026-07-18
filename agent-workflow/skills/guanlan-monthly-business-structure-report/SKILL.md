@@ -50,6 +50,8 @@ Use `status: draft` unless the user explicitly asks to publish and validation is
 
 Run at 14:00 Asia/Shanghai on the first Monday-Friday weekday of each month and cover the previous complete calendar month. The same controller also creates the monthly maintenance report. After the monthly Markdown is written, `assert-periodic-report-content.mjs` must pass before the monthly page-generator skill may run.
 
+Production generation uses DeepSeek Pro and first writes `status: draft`. Concrete judgments cite only manifest IDs in `[E:]`, `[O:]`, or `[C:]` form. After the content gate passes, the deterministic renderer promotes the accepted Markdown and updates the V4 page; the model never edits HTML or canonical facts.
+
 ## Core Method
 
 Monthly reports follow this causal chain:

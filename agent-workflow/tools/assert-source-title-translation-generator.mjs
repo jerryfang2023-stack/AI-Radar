@@ -1,157 +1,42 @@
+import assert from "node:assert/strict";
 import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
 import {
   generateSourceTitleTranslation,
+  isApprovedSourceTitleTranslation,
   loadSourceTitleTranslations,
-  resolveSourceTitleTranslation,
-  sourceTitleNeedsChineseTranslation,
-  titleTranslationKey,
+  sourceTitleFactsPreserved,
+  upsertSourceTitleTranslation,
 } from "./source-title-translation-generator.mjs";
 
-const tempDir = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-title-translation-"));
+const previousKey = process.env.DEEPSEEK_API_KEY;
+const previousModel = process.env.DEEPSEEK_FLASH_MODEL;
+const previousFetch = globalThis.fetch;
+const tempDir = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-deepseek-title-"));
 const translationFile = path.join(tempDir, "source-title-translations.json");
-fs.writeFileSync(translationFile, JSON.stringify({
-  version: "source-title-translations-v1",
-  translations: [],
-}, null, 2), "utf8");
 
-const sourceTitle = "ExampleAI raises $12M Series A to expand enterprise agent platform";
-const expectedZh = "ExampleAI 完成 1200 万美元 A 轮融资，用于扩展企业智能体平台";
-
-const result = await resolveSourceTitleTranslation(sourceTitle, {
-  translationFile,
-  sourceUrl: "https://example.com/exampleai-series-a",
-  allowNetwork: true,
-  generator: async () => ({
-    titleZh: expectedZh,
-    status: "translated",
-    method: "controlled_model_prompt_title_translation",
-  }),
-});
-
-const translations = loadSourceTitleTranslations(translationFile);
-const cached = translations.get(titleTranslationKey(sourceTitle));
-
-const taskade = await generateSourceTitleTranslation(
-  "Introducing Taskade TSK-1: The Taskade System Kernel (2026) | Taskade Blog",
-  { provider: "business-rule", allowNetwork: true }
-);
-const stigg = await generateSourceTitleTranslation(
-  "Announcing Stigg 2.0 - The Usage Runtime for AI Products",
-  { provider: "business-rule", allowNetwork: true }
-);
-const primeIntellect = await generateSourceTitleTranslation(
-  "Prime Intellect raises $130M at $1B valuation for its AI training platform - SiliconANGLE",
-  { provider: "business-rule", allowNetwork: true }
-);
-const neuralTrust = await generateSourceTitleTranslation(
-  "NeuralTrust raises $20M to secure the growing swarm of AI agents in the enterprise | NeuralTrust",
-  { provider: "business-rule", allowNetwork: true }
-);
-const talp = await generateSourceTitleTranslation(
-  "Meet Talp: AI startup with Turkish roots raising $20M pre-seed valuation to simulate customers with AI personas — TFN",
-  { provider: "business-rule", allowNetwork: true }
-);
-const lyzr = await generateSourceTitleTranslation(
-  "Lyzr AI Raises $100 Million Series B After Its Own AI Agent SivaClaw Fielded 130-Plus Investors And Generated $400 Million In Interest",
-  { provider: "business-rule", allowNetwork: true }
-);
-const alta = await generateSourceTitleTranslation(
-  "Alta Raises $25M to Redefine the Go-to-Market Architecture for Revenue Teams",
-  { provider: "business-rule", allowNetwork: true }
-);
-const githubSecretScanning = await generateSourceTitleTranslation(
-  "How GitHub used secret scanning to reach inbox zero",
-  { provider: "business-rule", allowNetwork: true }
-);
-const lyzrFundraiseProcess = await generateSourceTitleTranslation(
-  "Lyzr's AI agent ran its own $100M Series B fundraise — AI Chat Daily",
-  { provider: "business-rule", allowNetwork: true }
-);
-const claudeCodeBrowser = await generateSourceTitleTranslation(
-  "Claude Code now has a built-in browser that lets the AI read, click, and type on external websites",
-  { provider: "business-rule", allowNetwork: true }
-);
-const metaFeatureRemoval = await generateSourceTitleTranslation(
-  "Meta removes controversial AI feature on Instagram after backlash",
-  { provider: "business-rule", allowNetwork: true }
-);
-const supermicroEdgeAi = await generateSourceTitleTranslation(
-  "Supermicro Simplifies Edge AI Deployments with Validated Kubernetes Appliances with Red Hat and Everpure — Company Announcement - FT.com",
-  { provider: "business-rule", allowNetwork: true }
-);
-const ainaFunding = await generateSourceTitleTranslation(
-  "Aina Raises $5.5 Mn From Info Edge, Others To Build AI Hardware Interface",
-  { provider: "business-rule", allowNetwork: true }
-);
-
-const legacyMachineTranslationFile = path.join(tempDir, "legacy-machine-translations.json");
-fs.writeFileSync(legacyMachineTranslationFile, JSON.stringify({
-  version: "source-title-translations-v1",
-  translations: [{
-    sourceTitle: "Hippocratic AI: A Safety-First LLM for Healthcare",
-    zhTitle: "Hippocratic AI：医疗保健安全第一法学硕士",
-    generatedBy: "mymemory_title_translation",
-  }, {
-    sourceTitle: "Would you host part of an AI data center in your home?",
-    zhTitle: "Sunrun 启动家庭分布式 AI 算力试点",
-  }],
-}, null, 2), "utf8");
-const legacyMachineTranslations = loadSourceTitleTranslations(legacyMachineTranslationFile);
-
-const ok =
-  result.status === "translated" &&
-  result.titleZh === expectedZh &&
-  result.method === "controlled_model_prompt_title_translation" &&
-  cached === expectedZh &&
-  taskade.titleZh === "Taskade 发布 TSK-1：Taskade 系统内核（2026）" &&
-  stigg.titleZh === "Stigg 发布 2.0：面向 AI 产品的用量运行时" &&
-  primeIntellect.titleZh === "Prime Intellect 完成 1.3 亿美元融资，估值 10 亿美元，用于 AI 训练平台" &&
-  neuralTrust.titleZh === "NeuralTrust 完成 2000 万美元融资，用于保护企业不断增长的 AI 智能体集群" &&
-  talp.titleZh === "Talp 以 2000 万美元估值完成种子前轮融资，用于通过 AI 虚拟用户模拟客户反应" &&
-  lyzr.titleZh === "Lyzr AI 完成 1 亿美元 B 轮融资，其 AI 智能体 SivaClaw 接洽 130 多名投资者并获得 4 亿美元投资意向" &&
-  alta.titleZh === "Alta 完成 2500 万美元融资，用于重塑收入团队的市场进入架构" &&
-  githubSecretScanning.titleZh === "GitHub 使用秘密扫描清零安全告警积压" &&
-  lyzrFundraiseProcess.titleZh === "Lyzr 的 AI 智能体参与其 1 亿美元 B 轮融资流程" &&
-  claudeCodeBrowser.titleZh === "Claude Code 新增内置浏览器，可直接读取、点击并操作外部网页" &&
-  metaFeatureRemoval.titleZh === "Meta 在用户反弹后下线 Instagram 争议 AI 图片生成功能" &&
-  supermicroEdgeAi.titleZh === "Supermicro 联合 Red Hat 和 Everpure 推出经验证的边缘 AI Kubernetes 一体机" &&
-  ainaFunding.titleZh === "Aina 从 Info Edge 等投资方获得 550 万美元融资，用于打造 AI 硬件界面" &&
-  sourceTitleNeedsChineseTranslation("Taskade TSK-1 内核") &&
-  sourceTitleNeedsChineseTranslation("Tencent officially releases Hy3 并开放 API") &&
-  !sourceTitleNeedsChineseTranslation("Taskade 发布 TSK-1 系统内核") &&
-  legacyMachineTranslations.size === 0;
-
-fs.rmSync(tempDir, { recursive: true, force: true });
-
-if (!ok) {
-  console.error(JSON.stringify({
-    ok: false,
-    result,
-    cached,
-    taskade,
-    stigg,
-    primeIntellect,
-    neuralTrust,
-    talp,
-    lyzr,
-    alta,
-    githubSecretScanning,
-    lyzrFundraiseProcess,
-    claudeCodeBrowser,
-    metaFeatureRemoval,
-    supermicroEdgeAi,
-    ainaFunding,
-    legacyMachineTranslationCount: legacyMachineTranslations.size,
-    reason: "English source title was not generated and persisted when the exact translation DB entry was missing.",
-  }, null, 2));
-  process.exit(1);
+try {
+  process.env.DEEPSEEK_API_KEY = "test-key";
+  process.env.DEEPSEEK_FLASH_MODEL = "deepseek-v4-flash";
+  globalThis.fetch = async () => ({
+    ok: true,
+    json: async () => ({ choices: [{ message: { content: "Aina 从 Info Edge 等投资方获得 550 万美元融资，用于打造 AI 硬件界面" } }] }),
+  });
+  const sourceTitle = "Aina Raises $5.5 Mn From Info Edge, Others To Build AI Hardware Interface";
+  const result = await generateSourceTitleTranslation(sourceTitle, { provider: "deepseek" });
+  assert.equal(result.status, "translated");
+  assert.equal(result.method, "deepseek_title_translation");
+  assert.equal(sourceTitleFactsPreserved(sourceTitle, result.titleZh), true);
+  assert.equal(isApprovedSourceTitleTranslation({ generatedBy: result.method }), true);
+  assert.equal(isApprovedSourceTitleTranslation({ generatedBy: "business-rule_title_translation" }), false);
+  assert.equal(isApprovedSourceTitleTranslation({ generatedBy: "mymemory_title_translation" }), false);
+  upsertSourceTitleTranslation(translationFile, { sourceTitle, zhTitle: result.titleZh, method: result.method, model: result.model });
+  assert.equal(loadSourceTitleTranslations(translationFile).get(sourceTitle.toLowerCase()), result.titleZh);
+  console.log(JSON.stringify({ ok: true, provider: "deepseek", protected_facts: "passed" }, null, 2));
+} finally {
+  globalThis.fetch = previousFetch;
+  if (previousKey === undefined) delete process.env.DEEPSEEK_API_KEY; else process.env.DEEPSEEK_API_KEY = previousKey;
+  if (previousModel === undefined) delete process.env.DEEPSEEK_FLASH_MODEL; else process.env.DEEPSEEK_FLASH_MODEL = previousModel;
+  fs.rmSync(tempDir, { recursive: true, force: true });
 }
-
-console.log(JSON.stringify({
-  ok: true,
-  status: "passed",
-  checked: "raw_source_title_translation_generator",
-  method: result.method,
-}, null, 2));

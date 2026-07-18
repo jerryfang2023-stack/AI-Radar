@@ -480,7 +480,9 @@ npm run install:periodic-automation-tasks
 | Sunday 18:00 | `weekly-health` | Run `health:weekly`; when repeated failures are present, create a Hermes inbox item requiring a durable gate, eval, or MEMORY prevention artifact. |
 | Daily 14:00 with first-weekday guard | `monthly` | On the first Monday-Friday weekday only, generate the previous calendar month's structure report and monthly maintenance report, pass the content gate, then generate and test the monthly page. |
 
-Weekly and monthly report production runs in an isolated Git worktree and creates a local `codex/automation-*` branch. It does not push, merge, or deploy automatically. Content acceptance and page publication are separate gates; page generation never runs after a failed content gate.
+Weekly and monthly production is owned by `.github/workflows/periodic-reports-pr.yml`. DeepSeek Pro writes a source-ID-cited draft, the content gate validates it, and a deterministic renderer updates the report page only after acceptance. The workflow opens and merges a PR; GitHub Pages deploys from `main`. Local periodic tasks are disabled by default to avoid duplicate production and may be installed only as an explicit recovery lane.
+
+Historical model-assisted extraction is owned by `.github/workflows/model-assist-historical-backfill-pr.yml`. It scans every Raw batch in the selected range, sends only eligible gaps to DeepSeek Pro, auto-promotes exact-span Claim/FDE/hardware candidates after deterministic gates, and keeps entity resolution plus QA repair review-only.
 
 The daily 09:50 closure also runs `assert-data-center-projection-coverage.mjs`. It checks Entity/EntityMention references, accepted-event entity references, Entity Index organization/product projection, and current-batch FDE/hardware projection. A batch with zero FDE or hardware records is warning-only; the gate never invents records to satisfy a quota.
 

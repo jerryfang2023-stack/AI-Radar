@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { sourceTextHash } from "./deepseek-translation-client.mjs";
 
 const root = process.cwd();
 const dataFile = path.join(root, "01-SiteV2", "site", "data", "community-intelligence.json");
@@ -29,6 +30,29 @@ function readJson(file) {
 
 function exists(file) {
   return fs.existsSync(file);
+}
+
+function needsChineseTranslation(value = "") {
+  const text = String(value || "").trim();
+  const chinese = (text.match(/[\u3400-\u9fff]/gu) || []).length;
+  const latinWords = (text.match(/\b[A-Za-z][A-Za-z'-]{1,}\b/gu) || []).length;
+  return text.length >= 12 && chinese < 4 && latinWords >= 3;
+}
+
+function translationProblems(items = []) {
+  const problems = [];
+  for (const item of items) {
+    const translatedFields = ["title", "summary", "excerpt"].filter((field) => item[`${field}Original`]);
+    const stillEnglish = ["title", "summary", "excerpt"].filter((field) => needsChineseTranslation(item[field]));
+    if (stillEnglish.length) problems.push(`${item.id}:untranslated:${stillEnglish.join(",")}`);
+    if (!translatedFields.length) continue;
+    const source = translatedFields.map((field) => `${field}:\n${item[`${field}Original`]}`).join("\n\n");
+    if (item.translationStatus !== "translated") problems.push(`${item.id}:translation_status`);
+    if (item.translationProvider !== "deepseek" || item.translationMethod !== "deepseek_translation") problems.push(`${item.id}:translation_provider`);
+    if (!item.translationModel) problems.push(`${item.id}:translation_model`);
+    if (item.translationSourceHash !== sourceTextHash(source)) problems.push(`${item.id}:translation_source_hash`);
+  }
+  return problems;
 }
 
 function writeReport(date, status, checks, details) {
@@ -100,6 +124,8 @@ function main() {
   add(links.length >= minLinks, "deduped links meet minimum", `${links.length}/${minLinks}`);
   add(selectedKeywords.length > 0, "selected keyword rotation is recorded", String(selectedKeywords.length));
   add(errors.length === 0, "collector recorded no blocking errors", errorDetails);
+  const translationErrors = translationProblems(items);
+  add(translationErrors.length === 0, "English community content is translated with current-source DeepSeek provenance", translationErrors.slice(0, 10).join("; "));
 
   const dailyArchive = path.join(archiveRoot, "daily", `${date} Community Intelligence.md`);
   const indexFile = path.join(archiveRoot, "Community Intelligence Index.md");

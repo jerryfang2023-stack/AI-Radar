@@ -2,7 +2,8 @@ param(
   [string]$RepoPath = "",
   [string]$WeeklyReportAt = "10:30",
   [string]$WeeklyHealthAt = "18:00",
-  [string]$MonthlyAt = "14:00"
+  [string]$MonthlyAt = "14:00",
+  [switch]$InstallLocalRecovery
 )
 
 $ErrorActionPreference = "Stop"
@@ -27,7 +28,7 @@ function Register-PeriodicTask {
   )
 
   $time = [DateTime]::ParseExact($At, "HH:mm", [Globalization.CultureInfo]::InvariantCulture)
-  $argument = '"' + $Runner + '" --phase=' + $Phase + ' --invoke-codex=true'
+  $argument = '"' + $Runner + '" --phase=' + $Phase
   $action = New-ScheduledTaskAction -Execute "node.exe" -Argument $argument -WorkingDirectory $WorkingDirectory
   if ($Schedule -eq "Daily") {
     $trigger = New-ScheduledTaskTrigger -Daily -At $time
@@ -54,8 +55,21 @@ $repo = Resolve-RepoPath -InputPath $RepoPath
 $runner = Join-Path $repo "agent-workflow\tools\run-periodic-automation-controller.mjs"
 if (-not (Test-Path -LiteralPath $runner)) { throw "Periodic controller not found: $runner" }
 
+if (-not $InstallLocalRecovery) {
+  @(
+    "WaveSight Weekly Report and Opportunity Map",
+    "WaveSight Weekly Health Learning Loop",
+    "WaveSight Monthly Report and Maintenance"
+  ) | ForEach-Object {
+    $task = Get-ScheduledTask -TaskName $_ -ErrorAction SilentlyContinue
+    if ($task) { Disable-ScheduledTask -TaskName $_ | Out-Null; Write-Host "Disabled local duplicate: $_" }
+  }
+  Write-Host "GitHub Actions owns periodic schedules. Use -InstallLocalRecovery only for an explicit local recovery lane."
+  exit 0
+}
+
 Register-PeriodicTask -Name "WaveSight Weekly Report and Opportunity Map" -At $WeeklyReportAt -Phase "weekly-report" -Schedule "Monday" -Runner $runner -WorkingDirectory $repo
 Register-PeriodicTask -Name "WaveSight Weekly Health Learning Loop" -At $WeeklyHealthAt -Phase "weekly-health" -Schedule "Sunday" -Runner $runner -WorkingDirectory $repo
 Register-PeriodicTask -Name "WaveSight Monthly Report and Maintenance" -At $MonthlyAt -Phase "monthly" -Schedule "Daily" -Runner $runner -WorkingDirectory $repo
 
-Write-Host "Monthly task wakes daily; the controller runs only on the first Monday-Friday weekday of each month."
+Write-Host "Local recovery tasks installed. GitHub Actions remains the primary production scheduler."

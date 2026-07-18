@@ -23,6 +23,9 @@ jobs:
     timeout-minutes: 25
     env:
       TZ: Asia/Shanghai
+      DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+      DEEPSEEK_FLASH_MODEL: deepseek-v4-flash
+      DEEPSEEK_PRO_MODEL: deepseek-v4-pro
 
     steps:
       - name: Check out repository
@@ -118,6 +121,12 @@ jobs:
         run: |
           node --check agent-workflow/tools/assert-community-intelligence-data.mjs
           gh --version
+
+      - name: Translate English community content
+        shell: bash
+        run: |
+          npm run translate:community-intelligence -- --date="${RUN_DATE}"
+          npm run archive:community-intelligence
 
       - name: Run community intelligence gate
         id: community-gate

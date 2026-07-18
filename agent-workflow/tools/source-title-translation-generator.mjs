@@ -8,9 +8,6 @@ export function hasCjk(value = "") {
 
 const approvedTranslationMethods = new Set([
   "deepseek_title_translation",
-  "openai_title_translation",
-  "business-rule_title_translation",
-  "controlled_model_prompt_title_translation",
   "manual_reviewed_source_title_translation",
 ]);
 
@@ -313,56 +310,6 @@ export function upsertSourceTitleTranslation(file, update = {}) {
   return upsertSourceTitleTranslations(file, [update]) > 0;
 }
 
-async function translateTitleWithOpenAICompatible(sourceTitle = "", {
-  apiKey = "",
-  baseUrl = "",
-  model = "",
-  timeoutMs = 12000,
-  extraBody = {},
-  retryInstruction = "",
-} = {}) {
-  if (!apiKey || !baseUrl || !model) return "";
-  const response = await fetch(`${baseUrl.replace(/\/+$/u, "")}/chat/completions`, {
-    method: "POST",
-    headers: {
-      "content-type": "application/json",
-      authorization: `Bearer ${apiKey}`,
-    },
-    body: JSON.stringify({
-      model,
-      temperature: 0.1,
-      max_tokens: 120,
-      ...extraBody,
-      messages: [
-        {
-          role: "system",
-          content: [
-            "Translate business-news source titles into concise Simplified Chinese.",
-            "Preserve company names, product names, funding amounts, round names, dates, and named customers exactly.",
-            "Never calculate, round, change, omit, or add any number or monetary amount.",
-            "Do not add facts that are not present in the source title.",
-            "Return only the translated title.",
-          ].join(" "),
-        },
-        {
-          role: "user",
-          content: [
-            `SOURCE TITLE:\n${sourceTitle}`,
-            sourceTitleNumericFacts(sourceTitle).length
-              ? `NUMERIC FACTS THAT MUST REMAIN EQUIVALENT:\n${sourceTitleNumericFacts(sourceTitle).join("; ")}`
-              : "",
-            retryInstruction,
-          ].filter(Boolean).join("\n\n"),
-        },
-      ],
-    }),
-    signal: AbortSignal.timeout(timeoutMs),
-  });
-  if (!response.ok) return "";
-  const data = await response.json();
-  return stripGeneratorNoise(data?.choices?.[0]?.message?.content || "");
-}
-
 async function translateTitleWithDeepSeek(sourceTitle = "", {
   apiKey = process.env.DEEPSEEK_API_KEY || process.env.DEEPSEEK_TITLE_TRANSLATION_API_KEY || "",
   baseUrl = process.env.DEEPSEEK_BASE_URL || "https://api.deepseek.com",
@@ -412,15 +359,6 @@ async function translateTitleWithDeepSeek(sourceTitle = "", {
     messages: messages("A previous translation was rejected. Preserve every amount, date, quarter, version, and count. If an amount such as $12.5 has no unit, keep the literal $12.5 and never infer million or billion. Keep tokens such as Q1 and model versions semantically exact."),
   }));
   return { text: retry, model: retryModel };
-}
-
-async function translateTitleWithOpenAI(sourceTitle = "", {
-  apiKey = process.env.OPENAI_API_KEY || process.env.OPENAI_TITLE_TRANSLATION_API_KEY || "",
-  baseUrl = process.env.OPENAI_BASE_URL || "https://api.openai.com/v1",
-  model = process.env.OPENAI_TITLE_TRANSLATION_MODEL || process.env.OPENAI_MODEL || process.env.TITLE_TRANSLATION_MODEL || "gpt-4.1-mini",
-  timeoutMs = 12000,
-} = {}) {
-  return translateTitleWithOpenAICompatible(sourceTitle, { apiKey, baseUrl, model, timeoutMs });
 }
 
 function translateMoneyAmount(value = "") {
@@ -660,16 +598,6 @@ function translateTitleWithBusinessRules(sourceTitle = "") {
   return "";
 }
 
-async function translateTitleWithMyMemory(sourceTitle = "", { timeoutMs = 12000 } = {}) {
-  const text = decodeHtmlEntities(sourceTitle).replace(/\s+/gu, " ").trim();
-  if (!text) return "";
-  const url = `https://api.mymemory.translated.net/get?q=${encodeURIComponent(text)}&langpair=en|zh-CN`;
-  const response = await fetch(url, { signal: AbortSignal.timeout(timeoutMs) });
-  if (!response.ok) return "";
-  const data = await response.json();
-  return stripGeneratorNoise(data?.responseData?.translatedText || "");
-}
-
 export async function generateSourceTitleTranslation(sourceTitle = "", {
   provider = process.env.TITLE_TRANSLATION_PROVIDER || "auto",
   timeoutMs = Number(process.env.TITLE_TRANSLATION_TIMEOUT_MS || 12000),
@@ -683,23 +611,14 @@ export async function generateSourceTitleTranslation(sourceTitle = "", {
     return { titleZh: "", status: "needs_ingestion_translation", method: "title_translation_disabled" };
   }
 
-  // Generic public machine translation has repeatedly mistranslated protected
-  // product names (for example LLM, Cursor and Anthropic). In production auto
-  // mode, use the controlled model prompt when configured, then deterministic
-  // business-event rules. An unresolved title must remain blocking instead of
-  // being persisted as a plausible-looking but wrong Chinese title.
-  const providers = provider === "auto" ? ["deepseek", "openai", "business-rule"] : [provider];
+  // Production translation is DeepSeek-only. Deterministic rules remain
+  // validators and protected-fact repair helpers, never translation providers.
+  const providers = provider === "auto" ? ["deepseek"] : [provider];
   for (const item of providers) {
     try {
       const generated = item === "deepseek"
         ? await translateTitleWithDeepSeek(title, { timeoutMs })
-        : item === "openai"
-          ? await translateTitleWithOpenAI(title, { timeoutMs })
-          : item === "business-rule"
-            ? translateTitleWithBusinessRules(title)
-            : item === "mymemory"
-              ? await translateTitleWithMyMemory(title, { timeoutMs })
-              : "";
+        : "";
       const translated = typeof generated === "object" ? generated.text : generated;
       if (generatedTitleTranslationLooksUsable(title, translated)) {
         return {

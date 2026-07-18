@@ -192,8 +192,9 @@ try {
 
       $env:COMMUNITY_CDP_URL = $CdpUrl
       Invoke-NpmStep -Name "collect" -Arguments @("run", "collect:community-intelligence")
-      Invoke-NpmStep -Name "archive" -Arguments @("run", "archive:community-intelligence")
       $today = Get-BeijingDate
+      Invoke-NpmStep -Name "translate" -Arguments @("run", "translate:community-intelligence", "--", "--date=$today")
+      Invoke-NpmStep -Name "archive" -Arguments @("run", "archive:community-intelligence")
       Invoke-NpmStep -Name "assert" -Arguments @("run", "assert:community-intelligence", "--", "--date=$today")
 
       $dataPath = Join-Path $repo "01-SiteV2\site\data\community-intelligence.json"

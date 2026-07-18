@@ -64,7 +64,7 @@ if (args.has("help") || args.has("h")) {
       "  --source-only=aihot|keyword|gdelt|rss",
       "  --use-source-artifacts=true",
       "  --source-artifact-dir=agent-workflow/reports/source-runs/YYYY-MM-DD",
-      "  --title-translation-provider=auto|openai|business-rule|mymemory|none",
+      "  --title-translation-provider=auto|deepseek|none",
       "  --disable-title-translation=true",
       "  --dry-run=true",
       "",
@@ -1288,20 +1288,6 @@ async function runMetadataRegressionFixtures() {
   }
   if (preferredPublishedAt("2026-07-07T00:00:00Z", "2026-05-27T00:00:00Z") !== "2026-05-27T00:00:00.000Z") {
     throw new Error("captured source publication date did not override provider-inferred freshness");
-  }
-  const partnershipTitle = await resolveSourceTitleTranslation(
-    "Flex and Cerebras Expand Partnership to Scale American Manufacturing of Cerebras AI Supercomputers",
-    { provider: "business-rule" },
-  );
-  if (partnershipTitle.titleZh !== "Flex 与 Cerebras 扩大合作，用于扩大 Cerebras AI 超级计算机在美国的制造规模") {
-    throw new Error(`partnership expansion title was not localized: ${JSON.stringify(partnershipTitle)}`);
-  }
-  const shipmentTitle = await resolveSourceTitleTranslation(
-    "Simplexity Robotics Ships 100 i7 Pro Robots to Production Lines at 11 Months Old, Deploys at Leaderdrive and AI Infrastructure Factories | RobotsBeat",
-    { provider: "business-rule" },
-  );
-  if (shipmentTitle.titleZh !== "Simplexity Robotics 成立 11 个月即向生产线交付 100 台 i7 Pro 机器人，并部署于 Leaderdrive 与 AI 基础设施工厂") {
-    throw new Error(`shipment and deployment title was not localized: ${JSON.stringify(shipmentTitle)}`);
   }
   if (!activeCuratedOriginalSourceItems().some((item) => /supermicro-simplifies-edge-ai-deployments/iu.test(item.url))) {
     throw new Error("active curated original source did not enter the direct-source recall lane");

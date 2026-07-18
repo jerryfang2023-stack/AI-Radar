@@ -52,6 +52,7 @@ For regression prevention, read `evals/community-intelligence-monitor-evals.md`.
 
 ## Workflow
 
+0. After local collection and before archive generation, run `npm run translate:community-intelligence -- --date=<YYYY-MM-DD>`. English title, summary, and excerpt fields use DeepSeek Flash by default and Pro for long text or quality retry. Preserve `*Original`, model provenance, and `translationSourceHash`; failed translation blocks publication.
 1. Resolve the Asia/Shanghai production date unless the user gives another date.
 2. Check daily supervision and Hermes inbox for the Community Intelligence lane.
 3. Confirm whether local collection ran and whether the local Chrome / login state was available.
@@ -62,6 +63,7 @@ For regression prevention, read `evals/community-intelligence-monitor-evals.md`.
 8. When same-date data, archive, and gate are healthy, report open PRs or queued / in-progress publish workflows under Waiting, not Problems.
 9. Add or tighten evals before adding long prose when a failure recurs.
 10. Close Hermes inbox items only after validation and prevention are recorded.
+11. Reject any English primary field, stale source hash, missing DeepSeek model provenance, or translated record whose original was discarded.
 
 ## Failure Router
 

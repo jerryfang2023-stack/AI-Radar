@@ -12,7 +12,7 @@ const root = path.resolve(__dirname, "../../..");
 const taxonomy = JSON.parse(fs.readFileSync(path.join(root, "agent-workflow/product/tag-taxonomy-v4.json"), "utf8"));
 const date = "2026-07-16";
 
-test("DeepSeek V4 translates source titles through the OpenAI-compatible endpoint", async (t) => {
+test("DeepSeek V4 translates source titles through its chat completion endpoint", async (t) => {
   const originalFetch = globalThis.fetch;
   const originalKey = process.env.DEEPSEEK_API_KEY;
   const originalModel = process.env.DEEPSEEK_MODEL;

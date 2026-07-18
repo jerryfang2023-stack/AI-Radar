@@ -35,7 +35,6 @@ jobs:
       DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
       DEEPSEEK_FLASH_MODEL: deepseek-v4-flash
       DEEPSEEK_PRO_MODEL: deepseek-v4-pro
-      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
       FEISHU_WEBHOOK_SECRET: ${{ secrets.FEISHU_WEBHOOK_SECRET }}
 
@@ -136,7 +135,6 @@ jobs:
             echo "- tavily_secret: $([ "$TAVILY_DISABLED" = "true" ] && echo disabled || ([ -n "$TAVILY_API_KEY" ] && echo configured || echo missing))"
             echo "- exa_secret: $([ -n "$EXA_API_KEY" ] && echo configured || echo missing)"
             echo "- deepseek_v4_title_translation: $([ -n "$DEEPSEEK_API_KEY" ] && echo configured || echo missing)"
-            echo "- openai_title_translation_fallback: $([ -n "$OPENAI_API_KEY" ] && echo configured || echo optional-missing-with-deterministic-rules-only)"
             echo
             echo "This V4 workflow commits the Data Center factual bundle plus frozen V3 page-compatibility assets to an automation branch, opens or updates a PR, and auto-merges only after factual-integrity and compatibility gates pass."
             echo "Raw / Pool are persisted after V3 monitor hard gates pass. Card assets are persisted after asset generation. Site data is persisted only after Card/source-first/frontstage gates pass."
@@ -297,9 +295,31 @@ jobs:
             --date="${RUN_DATE}" \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-data-center-v4.log"
 
+      - name: Generate evidence-bounded DeepSeek candidates
+        id: data-center-v4-model-assist
+        if: steps.data-center-v4.outcome == 'success'
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -o pipefail
+          node agent-workflow/tools/generate-data-center-model-assist.mjs \
+            --date="${RUN_DATE}" --write=true --concurrency=2 \
+            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-model-assist.log"
+          node agent-workflow/tools/assert-data-center-model-assist.mjs --date="${RUN_DATE}"
+
+      - name: Rebuild Data Center V4 with accepted model candidates
+        id: data-center-v4-model-rebuild
+        if: steps.data-center-v4-model-assist.outcome == 'success'
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -o pipefail
+          node agent-workflow/tools/build-data-center-v4.mjs --date="${RUN_DATE}" \
+            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-data-center-v4-model-rebuild.log"
+
       - name: Run Data Center V4 integrity gate
         id: data-center-v4-gate
-        if: steps.data-center-v4.outcome == 'success'
+        if: always() && steps.data-center-v4.outcome == 'success' && steps.data-center-v4-model-rebuild.outcome != 'failure'
         continue-on-error: true
         shell: bash
         run: |
@@ -631,6 +651,8 @@ jobs:
             stage_if_exists "01-SiteV2/content/01-raw/originals/${RUN_DATE}"
             stage_if_exists "01-SiteV2/content/02-pool/${RUN_DATE}-pool-candidates.md"
             stage_if_exists "01-SiteV2/content/11-databases/data-center-v4/${RUN_DATE}"
+            stage_if_exists "01-SiteV2/content/11-databases/model-assist-v1/${RUN_DATE}.json"
+            stage_if_exists "01-SiteV2/content/11-databases/model-assist-v1/checkpoint.json"
             stage_if_exists "01-SiteV2/site/data/data-center-v4-frontstage.json"
           fi
 

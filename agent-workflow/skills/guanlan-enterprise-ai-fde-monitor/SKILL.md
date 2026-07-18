@@ -55,6 +55,7 @@ For regression prevention, read `evals/enterprise-ai-fde-monitor-evals.md`. When
    - implementation analysis with `demand`, `services`, and `result`;
    - source-backed text in `sourceBasis` or the linked detail item.
 5. Treat missing title translation or weak fact extraction as an upstream asset-generation repair. Do not use the generic frontstage selector or source-title translation registry as the place to hide an otherwise generated formal Signal Card.
+6. When deterministic extraction leaves fields undisclosed, DeepSeek Pro may propose exact-span FDE fields. Auto-promotion requires that the quoted span match an accepted Claim for the same event; otherwise retain `undisclosed` or isolate the candidate in QA.
 6. If result evidence is not in the source, state that the final implementation result is not disclosed; do not invent ROI, adoption, deployment success, or production metrics.
 7. Sync valid compatibility items into `01-SiteV2/content/09-fde/` after the compatibility data gate passes.
 8. Repair the smallest responsible layer: source discovery, title/fact ingestion, pool precision, analysis generation, frontstage detail rendering, gate, or Obsidian sync.

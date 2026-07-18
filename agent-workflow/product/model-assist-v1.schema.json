@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wavesight.local/schemas/model-assist-v1.schema.json",
+  "title": "WaveSight Model Assist Candidate Store",
+  "type": "object",
+  "required": ["schema_version", "generated_at", "data_date", "prompt_version", "source_count", "candidates"],
+  "properties": {
+    "schema_version": { "const": "MODEL-ASSIST-V1.0" },
+    "generated_at": { "type": "string", "minLength": 1 },
+    "data_date": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+    "prompt_version": { "type": "string", "minLength": 1 },
+    "source_count": { "type": "integer", "minimum": 0 },
+    "candidates": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/candidate" }
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "candidate": {
+      "type": "object",
+      "required": ["candidate_id", "task_type", "asset_id", "raw_id", "source_ref", "source_hash", "provider", "model", "prompt_version", "status", "proposal", "evidence", "gate_results", "generated_at"],
+      "properties": {
+        "candidate_id": { "type": "string", "pattern": "^MAC-[a-f0-9]{16}$" },
+        "task_type": {
+          "enum": ["claim_extraction", "fde_enrichment", "hardware_enrichment", "entity_resolution", "community_translation", "qa_repair"]
+        },
+        "asset_id": { "type": "string", "minLength": 1 },
+        "raw_id": { "type": "string" },
+        "source_ref": { "type": "string", "minLength": 1 },
+        "source_hash": { "type": "string", "pattern": "^[a-f0-9]{16}$" },
+        "provider": { "const": "deepseek" },
+        "model": { "type": "string", "minLength": 1 },
+        "prompt_version": { "type": "string", "minLength": 1 },
+        "status": { "enum": ["pending", "accepted", "requires_review", "rejected", "stale"] },
+        "proposal": { "type": "object" },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["start", "end", "quote"],
+            "properties": {
+              "start": { "type": "integer", "minimum": 0 },
+              "end": { "type": "integer", "minimum": 1 },
+              "quote": { "type": "string", "minLength": 1 },
+              "claim_ref": { "type": "string" }
+            },
+            "additionalProperties": false
+          }
+        },
+        "gate_results": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["gate", "status", "detail"],
+            "properties": {
+              "gate": { "type": "string", "minLength": 1 },
+              "status": { "enum": ["passed", "failed", "pending"] },
+              "detail": { "type": "string" }
+            },
+            "additionalProperties": false
+          }
+        },
+        "review": {
+          "type": "object",
+          "properties": {
+            "decision": { "enum": ["accept", "reject"] },
+            "reviewer": { "type": "string", "minLength": 1 },
+            "reviewed_at": { "type": "string", "minLength": 1 },
+            "note": { "type": "string" }
+          },
+          "required": ["decision", "reviewer", "reviewed_at"],
+          "additionalProperties": false
+        },
+        "generated_at": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": false
+    }
+  }
+}

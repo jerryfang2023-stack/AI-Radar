@@ -12,6 +12,7 @@ const __dirname = path.dirname(__filename);
 const root = path.resolve(__dirname, "../..");
 const rawRoot = path.join(root, "01-SiteV2/content/01-raw/originals");
 const outputRoot = path.join(root, "01-SiteV2/content/11-databases/data-center-v4");
+const modelAssistRoot = path.join(root, "01-SiteV2/content/11-databases/model-assist-v1");
 const taxonomyPath = path.join(root, "agent-workflow/product/tag-taxonomy-v4.json");
 
 const VERSION = Object.freeze({
@@ -269,7 +270,8 @@ function rel(file) {
   return path.relative(root, file).replace(/\\/gu, "/");
 }
 
-function readJson(file) {
+function readJson(file, fallback) {
+  if (!fs.existsSync(file) && arguments.length > 1) return fallback;
   return JSON.parse(fs.readFileSync(file, "utf8").replace(/^\uFEFF/u, ""));
 }
 
@@ -503,6 +505,23 @@ function buildClaim(rawId, eventType, source, parsed, index, status) {
     source_quote: source.quote,
     extraction_method: "deterministic_source_span",
     extraction_confidence: index === 0 ? 0.9 : 0.82,
+    verification_status: ["rumored", "disputed"].includes(status) ? "disputed" : "accepted"
+  };
+}
+
+function buildModelClaim(rawId, proposed, evidence, index, status) {
+  return {
+    claim_id: `CL-${hash(`${rawId}|model|${evidence.start}|${evidence.quote}`)}`,
+    raw_id: rawId,
+    claim_type: proposed.event_type,
+    subject: cleanString(proposed.subject),
+    predicate: proposed.event_type,
+    object: cleanString(proposed.object),
+    qualifiers: { event_status: status, sequence: index + 1, model_candidate_id: proposed.model_candidate_id },
+    source_span: { raw_id: rawId, start: evidence.start, end: evidence.end },
+    source_quote: evidence.quote,
+    extraction_method: "model_source_span",
+    extraction_confidence: 0.72,
     verification_status: ["rumored", "disputed"].includes(status) ? "disputed" : "accepted"
   };
 }
@@ -774,6 +793,25 @@ function fdeProjection(event, claims, entities) {
   return record;
 }
 
+function applyProjectionAssist(record, taskType, candidates, eventClaims) {
+  if (!record) return record;
+  const candidate = candidates.find((item) => item.task_type === taskType && item.asset_id === (record.fde_id || record.hardware_record_id));
+  if (!candidate) return record;
+  for (const field of candidate.proposal?.fields || []) {
+    const evidence = candidate.evidence?.[field.evidence_index];
+    if (!evidence) continue;
+    const supportingClaim = eventClaims.find((claim) => claim.source_quote.includes(evidence.quote) || evidence.quote.includes(claim.source_quote));
+    if (!supportingClaim) continue;
+    const current = record[field.field];
+    const missing = current === "" || current === null || (Array.isArray(current) && !current.length)
+      || record.undisclosed_fields?.includes(field.field);
+    if (!missing) continue;
+    record[field.field] = field.value;
+    if (Array.isArray(record.undisclosed_fields)) record.undisclosed_fields = record.undisclosed_fields.filter((name) => name !== field.field);
+  }
+  return record;
+}
+
 function cleanForCluster(value) {
   return normalizeSpace(value).toLowerCase().replace(/\b(?:announces?|launches?|releases?|introduces?|the|a|an|new)\b/gu, " ").replace(/[^\p{L}\p{N}]+/gu, " ").trim().split(" ").slice(0, 14).join(" ");
 }
@@ -899,6 +937,17 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
   const legacyMappings = [];
   const matchers = taxonomyMatchers(taxonomy);
   const structuredMatchers = facetMatchers(taxonomy);
+  const modelAssist = readJson(path.join(modelAssistRoot, `${date}.json`), { candidates: [] });
+  const entityResolutionDecisions = readJson(path.join(modelAssistRoot, "entity-resolution-decisions.json"), { decisions: [] });
+  const reviewedEntityAliases = new Map((entityResolutionDecisions.decisions || [])
+    .filter((decision) => decision.resolution === "same_entity" && decision.candidate_name && decision.canonical_name)
+    .map((decision) => [decision.candidate_name.toLocaleLowerCase(), decision.canonical_name]));
+  const acceptedAssistByRaw = new Map();
+  for (const candidate of modelAssist.candidates || []) {
+    if (candidate.status !== "accepted") continue;
+    if (!acceptedAssistByRaw.has(candidate.raw_id)) acceptedAssistByRaw.set(candidate.raw_id, []);
+    acceptedAssistByRaw.get(candidate.raw_id).push(candidate);
+  }
 
   const uniqueEntries = new Map();
   for (const { raw, file } of rawEntries) {
@@ -925,7 +974,10 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
     const titleOriginal = cleanString(raw.title || raw.title_zh);
     const title = normalizeEventTitle(titleOriginal);
     const sourceEligibility = eventSourceEligibility(raw, artifact, title);
-    const rule = sourceEligibility.accepted ? findEventRule(title, bodyClean.slice(0, 1200)) : null;
+    const deterministicRule = sourceEligibility.accepted ? findEventRule(title, bodyClean.slice(0, 1200)) : null;
+    const modelClaimCandidate = (acceptedAssistByRaw.get(rawId) || []).find((candidate) => candidate.task_type === "claim_extraction" && candidate.proposal?.claims?.length);
+    const proposedModelClaim = modelClaimCandidate?.proposal?.claims?.find((claim) => EVENT_RULES.some(([eventType]) => eventType === claim.event_type));
+    const rule = deterministicRule || (sourceEligibility.accepted && proposedModelClaim ? { eventType: proposedModelClaim.event_type, pattern: /$^/u } : null);
     const opinionOnly = (OPINION_ONLY.test(title) && !rule) || PROPOSAL_ONLY.test(title);
     const extractionStatus = !artifact.source_url || bodyClean.length < 20 || /\ufffd/gu.test(bodyClean) ? "quarantined" : bodyClean.length < 300 ? "partial" : "accepted";
     const doc = {
@@ -966,10 +1018,20 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
           : "no_source_bounded_event";
       qaQueue.push({ qa_id: `QA-${hash(`${rawId}|no-event`)}`, asset_id: rawId, reason, status: "review_optional", source_ref: artifact.source_artifact_id });
     } else {
-      const parsed = actionMatch(title, rule.pattern);
+      const parsed = deterministicRule
+        ? actionMatch(title, rule.pattern)
+        : { subject: cleanString(proposedModelClaim.subject), action: proposedModelClaim.event_type, object: cleanString(proposedModelClaim.object) };
       const status = eventStatus(title, bodyClean.slice(0, 1600), rule.eventType);
-      const spans = claimCandidates(bodyClean, title, rule, parsed.subject);
-      const eventClaimRows = spans.map((span, index) => buildClaim(rawId, rule.eventType, span, parsed, index, status));
+      let spans = deterministicRule ? claimCandidates(bodyClean, title, rule, parsed.subject) : [];
+      let eventClaimRows = spans.map((span, index) => buildClaim(rawId, rule.eventType, span, parsed, index, status));
+      if (!eventClaimRows.length && modelClaimCandidate) {
+        eventClaimRows = modelClaimCandidate.proposal.claims.flatMap((claim, index) => {
+          const evidence = modelClaimCandidate.evidence?.[claim.evidence_index];
+          if (!evidence || bodyClean.slice(evidence.start, evidence.end) !== evidence.quote) return [];
+          return [buildModelClaim(rawId, { ...claim, model_candidate_id: modelClaimCandidate.candidate_id }, evidence, index, status)];
+        });
+        spans = eventClaimRows.map((claim) => ({ ...claim.source_span, quote: claim.source_quote }));
+      }
       if (!eventClaimRows.length) {
         qaQueue.push({
           qa_id: `QA-${hash(`${rawId}|no-claim`)}`,
@@ -987,7 +1049,10 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
         parsed,
         rule.eventType,
         eventClaimRows.map((claim) => claim.source_quote).join("\n")
-      );
+      ).map((entityMatch) => {
+        const reviewedName = reviewedEntityAliases.get(entityMatch.canonicalName.toLocaleLowerCase());
+        return reviewedName ? { ...entityMatch, canonicalName: reviewedName, verified: true } : entityMatch;
+      });
       const aiRelevance = eventAiRelevanceEvidence({
         title,
         claims: eventClaimRows,
@@ -1163,11 +1228,12 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
   }
   const fdeRecords = [];
   const hardwareRecords = [];
+  const acceptedAssist = [...acceptedAssistByRaw.values()].flat();
   for (const event of canonicalEvents) {
     const eventClaims = event.claim_refs.map((id) => claimsById.get(id)).filter(Boolean);
     const eventEntities = event.entities.map((id) => entitiesById.get(id)).filter(Boolean);
-    const fde = fdeProjection(event, eventClaims, eventEntities);
-    const hardware = hardwareProjection(event, eventClaims, eventEntities);
+    const fde = applyProjectionAssist(fdeProjection(event, eventClaims, eventEntities), "fde_enrichment", acceptedAssist, eventClaims);
+    const hardware = applyProjectionAssist(hardwareProjection(event, eventClaims, eventEntities), "hardware_enrichment", acceptedAssist, eventClaims);
     if (fde) fdeRecords.push(fde);
     if (hardware) hardwareRecords.push(hardware);
   }
