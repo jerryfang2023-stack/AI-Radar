@@ -1,14 +1,15 @@
 ---
 type: opinion_person_timeline
 person_name: "Amjad Masad"
-opinion_count: 53
-latest_date: 2026-07-17
+opinion_count: 54
+latest_date: 2026-07-18
 ---
 
 # Amjad Masad 观点时间线
-共 53 条观点，按人物 + 日期文件聚合。
+共 54 条观点，按人物 + 日期文件聚合。
 ## 日期
 
+- [2026-07-18](./2026-07-18.md)
 - [2026-07-17](./2026-07-17.md)
 - [2026-07-14](./2026-07-14.md)
 - [2026-07-13](./2026-07-13.md)
