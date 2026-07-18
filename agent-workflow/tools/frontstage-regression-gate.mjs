@@ -13,6 +13,7 @@ const reportsDir = path.join(root, "agent-workflow", "reports");
 const expectedDate = args.get("date") || "";
 const expectedVersion = "V3.3.6.3-business-source-artifact-aggregation";
 const expectedSiteVersion = "SITE-V4.1.0-unified-frontstage";
+const expectedDataCenterProductVersion = "SITE-V4.2.0-entity-history";
 const expectedLegacySiteVersion = "SITE-V3.4.5";
 const expectedBusinessSignalsColumnVersion = "BSIG-V2.2.0-pipeline-stage-ownership";
 const expectedEnterpriseAiLensVersion = "EAI-V1.2.0-raw-card-ingestion-boundary";
@@ -385,7 +386,7 @@ function hasConcreteEnterpriseImplementationEvidence(text = "") {
 
   const weakPlaceholder = /原文未提供更多可拆分事实点|是否进入具体企业工作流|signal value is to observe|need to continue verifying/iu.test(source);
   if (weakPlaceholder && !explicitFde && !(productionDelivery && customerOrVertical)) return false;
-  if (!explicitFde && (researchOnly || consumerOnly || platformOnly || broadGovernance)) return false;
+  if (!explicitFde && ((researchOnly && !(productionDelivery && customerOrVertical)) || consumerOnly || platformOnly || broadGovernance)) return false;
   return explicitFde || (productionDelivery && customerOrVertical) || (adoptionTag && productionDelivery && customerOrVertical && businessMetric);
 }
 
@@ -430,8 +431,8 @@ function collectV4FrontstageDataIssues() {
   const issues = [];
   try {
     const data = JSON.parse(text);
-    if (data?.meta?.productVersion !== expectedSiteVersion) {
-      issues.push(issue(file, "data_center_public_version_mismatch", `${data?.meta?.productVersion || "missing"}; expected ${expectedSiteVersion}`));
+    if (data?.meta?.productVersion !== expectedDataCenterProductVersion) {
+      issues.push(issue(file, "data_center_public_version_mismatch", `${data?.meta?.productVersion || "missing"}; expected ${expectedDataCenterProductVersion}`));
     }
     const latestDate = latestContentDate();
     if (latestDate && data?.meta?.currentDate !== latestDate) {

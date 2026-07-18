@@ -1,0 +1,334 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-092
+title: "Troubling new details emerge on diabetes ouster controversy"
+title_zh: "糖尿病解雇争议浮现令人不安的新细节"
+title_translation_status: translated
+title_translation_method: deepseek_title_translation
+title_translation_model: deepseek-v4-flash
+original_url: "https://arstechnica.com/science/2026/07/troubling-new-details-emerge-on-diabetes-ouster-controversy/"
+canonical_url: "https://arstechnica.com/science/2026/07/troubling-new-details-emerge-on-diabetes-ouster-controversy"
+source_name: "Ars Technica AI"
+source_type: media
+source_level: A
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: rss-feed
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-17T17:08:05.000Z"
+collected_at: 2026-07-18T01:55:07.641Z
+language: mixed
+full_text_hash: 215b8c36a6617bce
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-18/r-092-troubling-new-details-emerge-on-diabetes-ouster-controversy.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-18/r-092-troubling-new-details-emerge-on-diabetes-ouster-controversy.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 91
+extractor_diagnostics: {"readability_score":91,"text_length":13532,"paragraph_count":35,"sentence_count":82,"boilerplate_hits":2,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 13532
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"215b8c36a6617bce","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: d57c04937958f19c
+content_hash: 215b8c36a6617bce
+semantic_hash: a9fa817812272780
+duplicate_of: ""
+first_seen_at: "2026-07-17T17:08:05.000Z"
+last_seen_at: 2026-07-18T01:55:07.641Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_technical_trend","importance_score":5,"importance_reason":"technical trend or capability shift; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context"],"novelty":2,"evidence_strength":4,"case_richness":5,"trend_relevance":5,"guanlan_relevance":4,"emerging_signal_score":3}
+business_elements: {"companies":["Ars Technica AI"],"products":[],"people":[],"industries":["法律 / 法务","医疗","开发者工具"],"roles":[],"workflows":["合同审阅 / 法律研究","计费 / 预算管理","权限 / 安全治理"],"business_actions":["发布 / 推出","融资 / 投资"],"affected_departments":["IT / 安全","法务","财务 / 预算"],"numbers":["5","40","7","500","501","3","90","2025"],"quotes":["The ADA’s response was to refuse to publish these articles,","The applause was deafening, not for the speech, but for Steven and standing up for science,","outrageous","unpersuasive","fatuous nonsense,"]}
+evidence_seed: {"company_actions":["American Diabetes Association blocked publication of op-ed articles so the authors posted them as a preprint.","On June 5, five leading scientists were ousted for handing out copies of an editorial, published in the journal Diabetes Care (an ADA journal) in April, sharply criticizing the Trump administration’s ongoing attacks on scientific research.","There was a public outcry and (eventually) a personal apology from the ADA’s CEO for the heavy-handed response, but it seems the organization has not yet learned its lesson."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":["Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav Last month, we reported on a troubling incident at the annual meeting of the American Diabetes Association (ADA) in New Orleans.","Several troubling new details are included in the articles, including an accusation that ADA leadership knew in advance that members would be handing out copies of the editorial and deliberately set up an ambush by venue security and local police."]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"company_action","text":"American Diabetes Association blocked publication of op-ed articles so the authors posted them as a preprint.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"supporting_context","text":"Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav Last month, we reported on a troubling incident at the annual meeting of the American Diabetes Association (ADA) in New Orleans.","supports":["signal_card_candidate","relationship_graph_input"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"On June 5, five leading scientists were ousted for handing out copies of an editorial, published in the journal Diabetes Care (an ADA journal) in April, sharply criticizing the Trump administration’s ongoing attacks on scientific research.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"There was a public outcry and (eventually) a personal apology from the ADA’s CEO for the heavy-handed response, but it seems the organization has not yet learned its lesson.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"The deputy editors of Diabetes Care have posted an editorial and seven accompanying opinion articles to a preprint server—handily contained in a single PDF file—that they say the ADA has refused to publish.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"supporting_context","text":"Several troubling new details are included in the articles, including an accusation that ADA leadership knew in advance that members would be handing out copies of the editorial and deliberately set up an ambush by venue security and local police.","supports":["signal_card_candidate","relationship_graph_input"],"importance":"medium","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-18T01:55:07.641Z
+theme: uncategorized
+keyword_group: uncategorized
+copyright_note: local research archive only
+---
+
+# Troubling new details emerge on diabetes ouster controversy
+
+## clean_text
+
+Skip to content
+Text
+settings
+Story text
+Size
+Small
+Standard
+Large
+Width
+Standard
+Wide
+Links
+Standard
+Orange
+* Subscribers only
+Learn more
+Minimize to nav
+Last month, we reported on a troubling incident at the annual meeting of the American Diabetes Association (ADA) in New Orleans. On June 5, five leading scientists were ousted for handing out copies of an editorial, published in the journal Diabetes Care (an ADA journal) in April, sharply criticizing the Trump administration’s ongoing attacks on scientific research. There was a public outcry and (eventually) a personal apology from the ADA’s CEO for the heavy-handed response, but it seems the organization has not yet learned its lesson.
+The deputy editors of Diabetes Care have posted an editorial and seven accompanying opinion articles to a preprint server—handily contained in a single PDF file—that they say the ADA has refused to publish. Several troubling new details are included in the articles, including an accusation that ADA leadership knew in advance that members would be handing out copies of the editorial and deliberately set up an ambush by venue security and local police. That decision, in turn, might be due to a simmering tensions connected to a session organized the year before.
+ADA leadership was provided with the articles in advance of publication with an invitation to simultaneously publish their response.
+“The ADA’s response was to refuse to publish these articles,” the deputy editors wrote. “We are speaking out because it is unusual and unacceptable for a medical society to work at cross purposes with its members and its editors. The ADA has already tried to restrict editorial freedom once before related to our raising awareness of what is happening in Washington, DC, and, in particular, with the dismantling of the National Institutes of Health. … A wrong occurred in New Orleans that the ADA has not addressed. There remain open questions surrounding the events of June 5th. It is because we wish to heal and come together following this difficult situation that we believe it is important that these articles be read and these voices heard.”
+It’s a complicated story, so it’s worth recapping what’s occurred so far, followed by the most relevant details from the newly published articles.
+The New Orleans Five controversy
+The five ousted scientists included Steven Kahn, professor of medicine at the University of Washington, who is the editor-in-chief of Diabetes Care and a co-author of the editorial. It also included former ADA President Desmond Schatz of the University of Florida, Aaron Kelly, pediatrics professor at the University of Minnesota; Justin Ryder of Northwestern University; Irl Hirsch, also of the University of Washington; and Maureen Gannon of Vanderbilt University Medical Center.
+The scientists were distributing the editorial outside the conference’s opening speech, which was originally scheduled to be given by Jay Bhattacharya, head of the National Institutes of Health under Trump. Bhattacharya canceled at the last minute, and senior NIH official Rick Woychik took his place.
+Within minutes of handing out the editorial, police reportedly escorted the scientists out of the conference in New Orleans. The police reportedly shoved at least one scientist, took all of their conference badges, and threatened to arrest them if they tried to return. Louisiana State Police later told media that they acted at the request of the ADA. The ADA subsequently barred the five scientists from the rest of the conference.
+Kahn had been slated to chair a symposium. John Buse of the University of North Carolina School of Medicine in Chapel Hill took his place, explaining the situation to attendees in remarks critical of the ADA’s actions. “The applause was deafening, not for the speech, but for Steven and standing up for science,” Buse wrote in his preprint article, which included a draft of those remarks.
+Backlash to the ADA’s actions spread rapidly on Twitter/X and BlueSky and sharply increased the number of page views for the April editorial. Several ADA leaders have resigned , and a fiery letter signed by more than 40 ADA officials blasted the decision as “outrageous” and the justifications as “unpersuasive” and “fatuous nonsense,” stating that the community was “overwhelmingly repulsed by the way this unfortunate event has occurred and been excused and justified by the Association leadership.” The officials demanded “an immediate and unconditional public apology,” as well as a review of the incident. An open letter to the ADA, titled “Shame on You,” similarly called for an apology. It has gathered over 7,500 signatures at the time of this publication.
+At first, the ADA tried to justify its decision. A media team initially told MedPage Today that the five scientists had violated the conference code of conduct. In an email to ADA members that Saturday, the association said the scientists were removed because they didn’t have prior approval to distribute material at the conference and that it was “not because of the viewpoints expressed in those materials,” according to reporting from Science .
+In a statement Sunday , the organization, which is a nonprofit, said it removed the scientists because it was complying with federal regulations for 501(c)(3) nonprofits, which require “maintaining a strictly nonpartisan environment at all organizational events and functions while engaging across party affiliations to advance our mission.” However, the federal regulations do not restrict leaders of organizations from sharing political views in a personal capacity or from speaking on important public policy issues.
+After several days of controversy and much negative media coverage, ADA CEO Charles Henderson posted a video statement apologizing for the organization’s decision. “What transpired is not reflective of who I am, the values I hold, or the way I was raised,” Henderson said. “I will work hard to bring our community back together to build on the progress we have collectively made for those affected by diabetes.” Henderson also said that the ADA would commission a “thorough independent review of the events that occurred as well as the policies, procedures, and decision-making process that guided our actions.”
+Troubling new details
+That should have settled the matter, but in their article, the original New Orleans Five claim that little has happened in the month since the incident: no meeting with the ADA leadership, no official apology (beyond Henderson’s video), and no exoneration. There have been no corrective actions, no resignations of the ADA staff who were involved—and no identification of the person(s) responsible for the decision to forcibly remove the scientists in the first place.
+The five are requesting the promised thorough investigation, the establishment of a formal process to identify professional membership concerns, and greater visibility in its patient advocacy and advocacy for research funding. That includes standing behind its journal editors and their publication decisions. “Any disclaimers need to be removed from the published editorials,” they wrote.
+Per deputy editors Elizabeth Selvin and Cheryl A.M. Anderson, the roots of the current conflict date back to a 90-minute 2025 session they organized on the topic, “How Do We Fix a Broken Health Care System?” Among the panelists was Washington state congresswoman Kim Schrier, a pediatrician who also has Type 1 diabetes. Months prior, ADA leadership had objected that the session was “unbalanced” and asked that “a congressperson from across the aisle” be invited as well as other speakers who could provide “opposing views.” Since this was impractical, the ADA approved the original session but did not advertise it.
+In their article, Selvin and Anderson insisted that the session was not partisan in nature. They said that Schrier’s comments focused on a video of congressional testimonies, her own experiences with Type 1 diabetes, her bipartisan work to reduce drug costs and with the Congressional Diabetes Caucus, and a warning of the likely harm NIH funding cuts would have on diabetes research. Selvin and Anderson also said that, in the wake of the June 5 ousters, ADA leadership canceled the scheduled annual in-person meetings with the Diabetes Care editorial board and associate editors—“the only opportunity we have all year to connect face-to-face with the full editorial team.”
+“Now, with a public relations crisis firm in tow, the ADA has emailed advocacy messages opposing federal policies and is taking strong stances on proposed changes that would be harmful to diabetes patients and research,” Selvin and Anderson wrote in their article. “These are the very things we have been writing about in the journal. The irony is not lost on us.”
+Mark Atkinson, chair of the Scientific Sessions Meeting Planning Committee, penned another opinion piece detailing his reasons for resigning from that position in the wake of the June 5 events. (The ADA president-elect also resigned but has not said anything about her reasons.) Atkinson was among the signatories of the June 6 ADA letter—except he says he never agreed to sign onto the text that was ultimately sent out. He was involved in face-to-face discussions in which he argued that an apology, and not just a defense of the ADA’s decisions, was necessary.
+Atkinson had to leave the meeting early, assuming that he would have a chance to review any final version before it was sent out. Instead, “a substantially different letter was released, bearing my name and that of the ADA’s chief executive officer,” he wrote. “Had I been given the opportunity, I would not have agreed to have my name associated with it. I realized that remaining as chair… would imply confidence in a process that I no longer had confidence in.” He called his resignation “among the most difficult professional decisions I have ever made,” adding, “I do not regret resigning. I regret the circumstances that made my resignation necessary.”
+A deliberate ambush?
+The most serious allegation in the preprint comes from Buse, who claims that he now believes that “the ADA actions were a premeditated attack on Steven Kahn and other attendees” that present “an existential threat to the ADA.”
+The New Orleans Five wrote in their piece that the ADA leadership was aware that people would be handing out the editorial at the conference. Desmond Schatz even texted Chief Scientific and Medical Officer Rita Kalyani before the meeting, advising that she call Kahn and let him know where he could and could not hand out copies, adding that the activity “should not in any way be disruptive.” Kalyani responded that she was on a plane and would find out those details once she landed.
+Kalyani never followed up, so the five stuck with their original plan to hand out copies to those entering the hall for the keynote, leading to their ouster. But as Kahn, Kelly, Ryder, and Schatz were being removed, a police officer asked the head of conference security whether “that was sufficient.” The security officer said he needed “one more badge,” and directed them to remove Gannon, who had been part of a group of women handing out flyers (which by then had been confiscated). Gannon asked if they could speak to ADA leadership to clear up any misunderstanding. The head of security said this was what “the client” (i.e., ADA) had told them to do.
+“It was an ambush,” Buse wrote. “ADA leadership knew exactly what was going to happen and when. They could have contacted Steven and tried to come to some accommodation. Instead they set in place armed law enforcement officers to disrupt the activity, apparently with a quota for the number of people to be hustled out of the meeting. The ADA actions are not dissimilar in nature to the efforts of our federal government to quell protests—force against people exercising constitutional rights as an act of both retribution and a display of power. We are lucky this event did not have even greater consequences.”
+Despite his clear indignation, Buse ended his editorial on a note of hope that ADA leadership would apologize for their actions and “people will be held to account,” he wrote. “Processes to ensure our rights as members of the ADA will be restored. The ADA will stand up for science. But the opportunity will come from an awakening of the spirit of the science and medicine community who founded this organization 85 years ago and the struggle that will emerge. With new focus, the ADA can emerge stronger. That will require a reworking of governance and engagement to align strategy with mission.”
+Zenodo, 2026. DOI: 10.5281/zenodo.21300053 ( About DOIs ).
+Jennifer Ouellette
+Senior Writer
+Jennifer Ouellette
+Senior Writer
+Jennifer is a senior writer at Ars Technica with a particular focus on where science meets culture, covering everything from physics and related interdisciplinary topics to her favorite films and TV series. Jennifer lives in Baltimore with her spouse, physicist Sean M. Carroll, and their two cats, Ariel and Caliban.
+65 Comments
+Comments
+Forum view
+Loading comments...
+Prev story
+Next story
+1.
+SpaceX scrubs Starship launch after some of its engines didn't start
+2.
+Two Trump health nominees crash and burn in tense Senate hearing
+3.
+Sheetz is quitting VMware, migrating 11,000 virtual machines
+4.
+Linus Torvalds to critics of AI coding in Linux: "Fork it. Or just walk away."
+5.
+2026 Toyota RAV4 plug-in: Big battery means daily drives are all-electric
+Customize
+
+## full_text
+
+Skip to content
+Text
+settings
+Story text
+Size
+Small
+Standard
+Large
+Width
+Standard
+Wide
+Links
+Standard
+Orange
+* Subscribers only
+Learn more
+Minimize to nav
+Last month, we reported on a troubling incident at the annual meeting of the American Diabetes Association (ADA) in New Orleans. On June 5, five leading scientists were ousted for handing out copies of an editorial, published in the journal Diabetes Care (an ADA journal) in April, sharply criticizing the Trump administration’s ongoing attacks on scientific research. There was a public outcry and (eventually) a personal apology from the ADA’s CEO for the heavy-handed response, but it seems the organization has not yet learned its lesson.
+The deputy editors of Diabetes Care have posted an editorial and seven accompanying opinion articles to a preprint server—handily contained in a single PDF file—that they say the ADA has refused to publish. Several troubling new details are included in the articles, including an accusation that ADA leadership knew in advance that members would be handing out copies of the editorial and deliberately set up an ambush by venue security and local police. That decision, in turn, might be due to a simmering tensions connected to a session organized the year before.
+ADA leadership was provided with the articles in advance of publication with an invitation to simultaneously publish their response.
+“The ADA’s response was to refuse to publish these articles,” the deputy editors wrote. “We are speaking out because it is unusual and unacceptable for a medical society to work at cross purposes with its members and its editors. The ADA has already tried to restrict editorial freedom once before related to our raising awareness of what is happening in Washington, DC, and, in particular, with the dismantling of the National Institutes of Health. … A wrong occurred in New Orleans that the ADA has not addressed. There remain open questions surrounding the events of June 5th. It is because we wish to heal and come together following this difficult situation that we believe it is important that these articles be read and these voices heard.”
+It’s a complicated story, so it’s worth recapping what’s occurred so far, followed by the most relevant details from the newly published articles.
+The New Orleans Five controversy
+The five ousted scientists included Steven Kahn, professor of medicine at the University of Washington, who is the editor-in-chief of Diabetes Care and a co-author of the editorial. It also included former ADA President Desmond Schatz of the University of Florida, Aaron Kelly, pediatrics professor at the University of Minnesota; Justin Ryder of Northwestern University; Irl Hirsch, also of the University of Washington; and Maureen Gannon of Vanderbilt University Medical Center.
+The scientists were distributing the editorial outside the conference’s opening speech, which was originally scheduled to be given by Jay Bhattacharya, head of the National Institutes of Health under Trump. Bhattacharya canceled at the last minute, and senior NIH official Rick Woychik took his place.
+Within minutes of handing out the editorial, police reportedly escorted the scientists out of the conference in New Orleans. The police reportedly shoved at least one scientist, took all of their conference badges, and threatened to arrest them if they tried to return. Louisiana State Police later told media that they acted at the request of the ADA. The ADA subsequently barred the five scientists from the rest of the conference.
+Kahn had been slated to chair a symposium. John Buse of the University of North Carolina School of Medicine in Chapel Hill took his place, explaining the situation to attendees in remarks critical of the ADA’s actions. “The applause was deafening, not for the speech, but for Steven and standing up for science,” Buse wrote in his preprint article, which included a draft of those remarks.
+Backlash to the ADA’s actions spread rapidly on Twitter/X and BlueSky and sharply increased the number of page views for the April editorial. Several ADA leaders have resigned , and a fiery letter signed by more than 40 ADA officials blasted the decision as “outrageous” and the justifications as “unpersuasive” and “fatuous nonsense,” stating that the community was “overwhelmingly repulsed by the way this unfortunate event has occurred and been excused and justified by the Association leadership.” The officials demanded “an immediate and unconditional public apology,” as well as a review of the incident. An open letter to the ADA, titled “Shame on You,” similarly called for an apology. It has gathered over 7,500 signatures at the time of this publication.
+At first, the ADA tried to justify its decision. A media team initially told MedPage Today that the five scientists had violated the conference code of conduct. In an email to ADA members that Saturday, the association said the scientists were removed because they didn’t have prior approval to distribute material at the conference and that it was “not because of the viewpoints expressed in those materials,” according to reporting from Science .
+In a statement Sunday , the organization, which is a nonprofit, said it removed the scientists because it was complying with federal regulations for 501(c)(3) nonprofits, which require “maintaining a strictly nonpartisan environment at all organizational events and functions while engaging across party affiliations to advance our mission.” However, the federal regulations do not restrict leaders of organizations from sharing political views in a personal capacity or from speaking on important public policy issues.
+After several days of controversy and much negative media coverage, ADA CEO Charles Henderson posted a video statement apologizing for the organization’s decision. “What transpired is not reflective of who I am, the values I hold, or the way I was raised,” Henderson said. “I will work hard to bring our community back together to build on the progress we have collectively made for those affected by diabetes.” Henderson also said that the ADA would commission a “thorough independent review of the events that occurred as well as the policies, procedures, and decision-making process that guided our actions.”
+Troubling new details
+That should have settled the matter, but in their article, the original New Orleans Five claim that little has happened in the month since the incident: no meeting with the ADA leadership, no official apology (beyond Henderson’s video), and no exoneration. There have been no corrective actions, no resignations of the ADA staff who were involved—and no identification of the person(s) responsible for the decision to forcibly remove the scientists in the first place.
+The five are requesting the promised thorough investigation, the establishment of a formal process to identify professional membership concerns, and greater visibility in its patient advocacy and advocacy for research funding. That includes standing behind its journal editors and their publication decisions. “Any disclaimers need to be removed from the published editorials,” they wrote.
+Per deputy editors Elizabeth Selvin and Cheryl A.M. Anderson, the roots of the current conflict date back to a 90-minute 2025 session they organized on the topic, “How Do We Fix a Broken Health Care System?” Among the panelists was Washington state congresswoman Kim Schrier, a pediatrician who also has Type 1 diabetes. Months prior, ADA leadership had objected that the session was “unbalanced” and asked that “a congressperson from across the aisle” be invited as well as other speakers who could provide “opposing views.” Since this was impractical, the ADA approved the original session but did not advertise it.
+In their article, Selvin and Anderson insisted that the session was not partisan in nature. They said that Schrier’s comments focused on a video of congressional testimonies, her own experiences with Type 1 diabetes, her bipartisan work to reduce drug costs and with the Congressional Diabetes Caucus, and a warning of the likely harm NIH funding cuts would have on diabetes research. Selvin and Anderson also said that, in the wake of the June 5 ousters, ADA leadership canceled the scheduled annual in-person meetings with the Diabetes Care editorial board and associate editors—“the only opportunity we have all year to connect face-to-face with the full editorial team.”
+“Now, with a public relations crisis firm in tow, the ADA has emailed advocacy messages opposing federal policies and is taking strong stances on proposed changes that would be harmful to diabetes patients and research,” Selvin and Anderson wrote in their article. “These are the very things we have been writing about in the journal. The irony is not lost on us.”
+Mark Atkinson, chair of the Scientific Sessions Meeting Planning Committee, penned another opinion piece detailing his reasons for resigning from that position in the wake of the June 5 events. (The ADA president-elect also resigned but has not said anything about her reasons.) Atkinson was among the signatories of the June 6 ADA letter—except he says he never agreed to sign onto the text that was ultimately sent out. He was involved in face-to-face discussions in which he argued that an apology, and not just a defense of the ADA’s decisions, was necessary.
+Atkinson had to leave the meeting early, assuming that he would have a chance to review any final version before it was sent out. Instead, “a substantially different letter was released, bearing my name and that of the ADA’s chief executive officer,” he wrote. “Had I been given the opportunity, I would not have agreed to have my name associated with it. I realized that remaining as chair… would imply confidence in a process that I no longer had confidence in.” He called his resignation “among the most difficult professional decisions I have ever made,” adding, “I do not regret resigning. I regret the circumstances that made my resignation necessary.”
+A deliberate ambush?
+The most serious allegation in the preprint comes from Buse, who claims that he now believes that “the ADA actions were a premeditated attack on Steven Kahn and other attendees” that present “an existential threat to the ADA.”
+The New Orleans Five wrote in their piece that the ADA leadership was aware that people would be handing out the editorial at the conference. Desmond Schatz even texted Chief Scientific and Medical Officer Rita Kalyani before the meeting, advising that she call Kahn and let him know where he could and could not hand out copies, adding that the activity “should not in any way be disruptive.” Kalyani responded that she was on a plane and would find out those details once she landed.
+Kalyani never followed up, so the five stuck with their original plan to hand out copies to those entering the hall for the keynote, leading to their ouster. But as Kahn, Kelly, Ryder, and Schatz were being removed, a police officer asked the head of conference security whether “that was sufficient.” The security officer said he needed “one more badge,” and directed them to remove Gannon, who had been part of a group of women handing out flyers (which by then had been confiscated). Gannon asked if they could speak to ADA leadership to clear up any misunderstanding. The head of security said this was what “the client” (i.e., ADA) had told them to do.
+“It was an ambush,” Buse wrote. “ADA leadership knew exactly what was going to happen and when. They could have contacted Steven and tried to come to some accommodation. Instead they set in place armed law enforcement officers to disrupt the activity, apparently with a quota for the number of people to be hustled out of the meeting. The ADA actions are not dissimilar in nature to the efforts of our federal government to quell protests—force against people exercising constitutional rights as an act of both retribution and a display of power. We are lucky this event did not have even greater consequences.”
+Despite his clear indignation, Buse ended his editorial on a note of hope that ADA leadership would apologize for their actions and “people will be held to account,” he wrote. “Processes to ensure our rights as members of the ADA will be restored. The ADA will stand up for science. But the opportunity will come from an awakening of the spirit of the science and medicine community who founded this organization 85 years ago and the struggle that will emerge. With new focus, the ADA can emerge stronger. That will require a reworking of governance and engagement to align strategy with mission.”
+Zenodo, 2026. DOI: 10.5281/zenodo.21300053 ( About DOIs ).
+Jennifer Ouellette
+Senior Writer
+Jennifer Ouellette
+Senior Writer
+Jennifer is a senior writer at Ars Technica with a particular focus on where science meets culture, covering everything from physics and related interdisciplinary topics to her favorite films and TV series. Jennifer lives in Baltimore with her spouse, physicist Sean M. Carroll, and their two cats, Ariel and Caliban.
+65 Comments
+Comments
+Forum view
+Loading comments...
+Prev story
+Next story
+1.
+SpaceX scrubs Starship launch after some of its engines didn't start
+2.
+Two Trump health nominees crash and burn in tense Senate hearing
+3.
+Sheetz is quitting VMware, migrating 11,000 virtual machines
+4.
+Linus Torvalds to critics of AI coding in Linux: "Fork it. Or just walk away."
+5.
+2026 Toyota RAV4 plug-in: Big battery means daily drives are all-electric
+Customize
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 91
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":91,"text_length":13532,"paragraph_count":35,"sentence_count":82,"boilerplate_hits":2,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   American Diabetes Association blocked publication of op-ed articles so the authors posted them as a preprint.
+
+2. **supporting_context**｜supports=signal_card_candidate, relationship_graph_input｜importance=medium｜confidence=high
+   Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav Last month, we reported on a troubling incident at the annual meeting of the American Diabetes Association (ADA) in New Orleans.
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   On June 5, five leading scientists were ousted for handing out copies of an editorial, published in the journal Diabetes Care (an ADA journal) in April, sharply criticizing the Trump administration’s ongoing attacks on scientific research.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   There was a public outcry and (eventually) a personal apology from the ADA’s CEO for the heavy-handed response, but it seems the organization has not yet learned its lesson.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   The deputy editors of Diabetes Care have posted an editorial and seven accompanying opinion articles to a preprint server—handily contained in a single PDF file—that they say the ADA has refused to publish.
+
+6. **supporting_context**｜supports=signal_card_candidate, relationship_graph_input｜importance=medium｜confidence=high
+   Several troubling new details are included in the articles, including an accusation that ADA leadership knew in advance that members would be handing out copies of the editorial and deliberately set up an ambush by venue security and local police.
+
+## business_elements
+
+- companies: Ars Technica AI
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 法律 / 法务, 医疗, 开发者工具
+- roles: 暂无公开信息
+- workflows: 合同审阅 / 法律研究, 计费 / 预算管理, 权限 / 安全治理
+- business_actions: 发布 / 推出, 融资 / 投资
+- affected_departments: IT / 安全, 法务, 财务 / 预算
+- numbers: 5, 40, 7, 500, 501, 3, 90, 2025
+- quotes: The ADA’s response was to refuse to publish these articles, / The applause was deafening, not for the speech, but for Steven and standing up for science, / outrageous / unpersuasive / fatuous nonsense,
+
+## evidence_seed
+
+- company_actions: American Diabetes Association blocked publication of op-ed articles so the authors posted them as a preprint. / On June 5, five leading scientists were ousted for handing out copies of an editorial, published in the journal Diabetes Care (an ADA journal) in April, sharply criticizing the Trump administration’s ongoing attacks on scientific research. / There was a public outcry and (eventually) a personal apology from the ADA’s CEO for the heavy-handed response, but it seems the organization has not yet learned its lesson.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 暂无公开信息
+- risks_or_constraints: Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav Last month, we reported on a troubling incident at the annual meeting of the American Diabetes Association (ADA) in New Orleans. / Several troubling new details are included in the articles, including an accusation that ADA leadership knew in advance that members would be handing out copies of the editorial and deliberately set up an ambush by venue security and local police.
+
+## guanlan_scores
+
+- importance_type: important_technical_trend
+- importance_score: 5
+- importance_reason: technical trend or capability shift; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context
+- novelty: 2
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 5
+- guanlan_relevance: 4
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+American Diabetes Association blocked publication of op-ed articles so the authors posted them as a preprint.
+
+## 采集备注
+
+该条目由 rss-feed 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

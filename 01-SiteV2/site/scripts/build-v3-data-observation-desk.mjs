@@ -89,7 +89,7 @@ function loadSourceTitleTranslations() {
     const entries = Array.isArray(json) ? json : (Array.isArray(json.translations) ? json.translations : []);
     const map = new Map();
     for (const entry of entries) {
-      if (!["openai_title_translation", "business-rule_title_translation", "controlled_model_prompt_title_translation", "manual_reviewed_source_title_translation"].includes(entry?.generatedBy)) continue;
+      if (!["deepseek_title_translation", "manual_reviewed_source_title_translation"].includes(entry?.generatedBy)) continue;
       const sourceTitle = String(entry?.sourceTitle || "").trim();
       const zhTitle = String(entry?.zhTitle || entry?.translation || "").trim();
       if (!sourceTitle || !zhTitle || publicTextLooksGarbled(sourceTitle) || publicTextLooksGarbled(zhTitle)) continue;
@@ -106,9 +106,35 @@ function loadSourceTitleTranslations() {
   }
 }
 
+function rawTitleTranslationForCard(card = {}) {
+  const dir = path.join(root, "01-SiteV2", "content", "01-raw", "originals", card.date || "");
+  if (!fs.existsSync(dir)) return null;
+  const targetUrl = canonicalUrl(card.sourceUrl || "");
+  const targetTitleKeys = new Set([card.sourceTitle, card.originalTitle].map(titleTranslationKey).filter(Boolean));
+  for (const name of fs.readdirSync(dir).filter((item) => item.endsWith(".json"))) {
+    try {
+      const raw = JSON.parse(read(path.join(dir, name)));
+      const rawUrl = canonicalUrl(raw.original_url || raw.canonical_url || "");
+      const rawTitleKey = titleTranslationKey(raw.title || "");
+      if ((targetUrl && rawUrl === targetUrl) || (rawTitleKey && targetTitleKeys.has(rawTitleKey))) {
+        if (raw.title_translation_method !== "deepseek_title_translation") return null;
+        return {
+          sourceTitle: String(raw.title || "").trim(),
+          zhTitle: String(raw.title_zh || "").trim(),
+          generatedBy: "deepseek_title_translation",
+          generatedAt: raw.collected_at || `${card.date}T00:00:00.000Z`,
+          generatedModel: raw.title_translation_model || "",
+          sourceUrl: rawUrl || card.sourceUrl || "",
+        };
+      }
+    } catch {
+      // Malformed Raw candidates cannot authorize a translation-registry write.
+    }
+  }
+  return null;
+}
+
 function syncSourceTitleTranslationsFromCards(rawCards = [], activeDate = "") {
-  const generatedBy = "business-rule_title_translation";
-  const generatedAt = activeDate ? `${activeDate}T00:00:00.000Z` : new Date().toISOString();
   let json = {
     version: "source-title-translations-v1",
     description: "Business Signals frontstage title translations. Keys are original source titles only; do not add URL, keyword, company-name, or AI-generated title rules here.",
@@ -138,31 +164,40 @@ function syncSourceTitleTranslationsFromCards(rawCards = [], activeDate = "") {
   let updated = 0;
   for (const card of rawCards) {
     if (!card || card.date !== activeDate) continue;
-    const zhTitle = String(card.title || "").trim();
+    const provenance = rawTitleTranslationForCard(card);
+    if (!provenance) continue;
+    const zhTitle = provenance.zhTitle;
     if (!zhTitle || !hasCjk(zhTitle) || titleLooksLikeGeneratedTemplate(zhTitle) || publicTextLooksGarbled(zhTitle)) continue;
-    for (const sourceTitle of [card.sourceTitle, card.originalTitle].map(cleanEnglishTitleForDisplay).filter(Boolean)) {
+    for (const sourceTitle of [provenance.sourceTitle, card.sourceTitle, card.originalTitle].map(cleanEnglishTitleForDisplay).filter(Boolean)) {
       if (!titleNeedsChineseTranslation(sourceTitle)) continue;
       if (!translationPreservesSourceTitlePayload(sourceTitle, zhTitle)) continue;
       const key = titleTranslationKey(sourceTitle);
       if (!key) continue;
       if (seen.has(key)) {
         const entry = existingByKey.get(key);
-        if (entry && !["openai_title_translation", "business-rule_title_translation", "controlled_model_prompt_title_translation", "manual_reviewed_source_title_translation"].includes(entry.generatedBy)) {
-          entry.generatedBy = generatedBy;
-          entry.generatedAt = entry.generatedAt || generatedAt;
-          sourceTitleTranslations.set(key, zhTitle);
-          updated += 1;
-        }
-        if (entry && titleLooksLikeAutoSignalFallback(entry.zhTitle || entry.translation || "") && entry.zhTitle !== zhTitle) {
+        if (entry && entry.generatedBy !== "manual_reviewed_source_title_translation" && (
+          entry.generatedBy !== provenance.generatedBy
+          || entry.zhTitle !== zhTitle
+          || entry.generatedModel !== provenance.generatedModel
+        )) {
           entry.zhTitle = zhTitle;
-          entry.generatedBy = generatedBy;
-          entry.generatedAt = entry.generatedAt || generatedAt;
+          entry.generatedBy = provenance.generatedBy;
+          entry.generatedAt = provenance.generatedAt;
+          entry.generatedModel = provenance.generatedModel;
+          entry.sourceUrl = provenance.sourceUrl;
           sourceTitleTranslations.set(key, zhTitle);
           updated += 1;
         }
         continue;
       }
-      translations.push({ sourceTitle, zhTitle, generatedBy, generatedAt });
+      translations.push({
+        sourceTitle,
+        zhTitle,
+        generatedBy: provenance.generatedBy,
+        generatedAt: provenance.generatedAt,
+        generatedModel: provenance.generatedModel,
+        sourceUrl: provenance.sourceUrl,
+      });
       seen.add(key);
       sourceTitleTranslations.set(key, zhTitle);
       added += 1;
@@ -1334,11 +1369,11 @@ function sourceTitlePayloadHints(title = "") {
     [/manufacturing/u, /制造/u],
     [/web search/u, /网页搜索|网络搜索|Web Search/u],
     [/agents?/u, /智能体|Agent/u],
-    [/to build/u, /用于|构建|建设/u],
+    [/to build/u, /用于|构建|建设|打造/u],
     [/dating service/u, /约会服务|dating service/u],
     [/chiplet|custom ai silicon|full-stack/u, /Chiplet|芯粒|Custom AI Silicon|定制 AI 芯片|全栈/u],
     [/rfq|10 minutes?|cuts?/u, /RFQ|10 分钟|缩短|cuts?|minutes?/u],
-    [/customer|workflow|production|deployment/u, /客户|工作流|生产|部署|落地|customer|workflow|production|deployment/u],
+    [/customer|workflow|production|deployment/u, /客户|工作流|生产|制作|部署|落地|customer|workflow|production|deployment/u],
   ];
   for (const [sourcePattern, translationPattern] of rules) {
     if (sourcePattern.test(text)) hints.push(translationPattern);

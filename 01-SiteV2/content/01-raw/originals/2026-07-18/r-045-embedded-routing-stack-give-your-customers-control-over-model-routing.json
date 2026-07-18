@@ -1,0 +1,270 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-045",
+  "title": "Embedded Routing Stack: Give your customers control over model routing",
+  "title_zh": "嵌入式路由栈：让客户掌控模型路由",
+  "title_translation_status": "translated",
+  "title_translation_method": "deepseek_title_translation",
+  "title_translation_model": "deepseek-v4-flash",
+  "original_url": "https://www.merge.dev/blog/embedded-routing-stack",
+  "canonical_url": "https://merge.dev/blog/embedded-routing-stack",
+  "source_name": "keyword search / Anysearch",
+  "source_type": "web",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "case_or_customer",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_startups",
+  "search_path": "official_original",
+  "search_path_label": "官方原始路径",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "pilot",
+  "enterprise_ai_transformation_reason": "enterprise_ai_implementation_signal",
+  "author": "",
+  "published_at": "2026-07-16T16:00:00.000Z",
+  "collected_at": "2026-07-18T01:54:49.961Z",
+  "language": "mixed",
+  "full_text": "Merge’s Cookie Policy\nWe use cookies to improve your experience on our site. By clicking “Accept”, you are agreeing to the collection and use of data as described in our Privacy Policy .\nAccept all cookies\nCookie settings\nWe use cookies to improve your experience on our site. By using our site, you are agreeing to the collection and use of data as described in our Privacy Policy .\nCookie Settings ×\nTable of contents\nThousands of companies trust Merge to accelerate AI from PoC to production. Get a demo\nJust for you Gateway's Build Your Own Router: define exactly how Gateway picks your LLMs\nEvaluating the cost of Merge Gateway\nEmbedded Routing Stack: Give your customers control over model routing\nYash Gogri\nProduct Manager\nat Merge\nToday we’re launching Embedded Routing Stack in Merge Gateway . It gives your customers dedicated LLM routing controls to manage their own keys, budgets, usage data and policies like fallback rules, model allowlists and more, all through a single API.\nUsers and companies increasingly want full control over the AI models running in your product. They know their own workloads better than anyone else, and want to optimize every dollar of token spend.\nEmbedded Routing Stack is built to solve this.\nWhy we built Embedded Routing Stack\nModel choice is now table stakes for any AI product. Open-source models keep closing the gap on the frontier, and our benchmarking shows them matching frontier models on correctness at up to 65% less cost . With no single model clearly ahead, customers expect to pick what fits, bring their own, and pay less doing it.\nEnterprises feel this most. They want to own the model layer for cost, security, scale, and the freedom to fine-tune models to fit their use cases. That pushes them to self-host, and to buy products that let them run AI on their own terms: to pick their own models and routing, bring their own API keys, and get billed for the tokens they actually used.\nProducts that fight their customers' model strategy will lose to products that fit it. Embedded Routing Stack lets yours fit, with a single set of APIs.\nHow it works\nEmbedded Routing Stack gives each customer their own setup in your Gateway account. You create it from your backend with your production key, then manage it all via API or in the dashboard.\nThis includes:\nRouting policies: set model routing for a customer, or let them choose their own models and criteria\nBYOK: let customers bring their own LLM keys. Merge Gateway tries the customer’s key first, then yours, and then a Merge-managed key if you allow it\nBudgets: set hard or soft budget limits per customer and enforce them from your backend\nUsage reporting: read each customer's usage and cost by model, provider, and key tier, then send it straight to billing\nStart giving customers their own AI controls\nIf you’re building AI into a product other companies pay for, this is the layer that gives them control without rebuilding your backend around it.\nYou can talk to our team about Embedded Routing Stack by scheduling a demo , or you can read our docs to get started.\nYash Gogri\nProduct Manager\n@Merge\nRead more\nGLM-5.2 vs Claude Sonnet 5: how they compare on coding\nHow to connect a Gamma MCP with Codex (4 steps)\nInsights\nClaude Fable 5 vs GPT-5.6 Sol: how they compare on coding\nAI\nSubscribe to the Merge Blog\nGet stories from Merge straight to your inbox\nSubscribe\nRelated\n3 ways to drive business results with your new Merge integrations\nRelated\n3 ways to drive business results with your new Merge integrations\nBut Merge isn’t just a Unified  API product. Merge is an integration platform to also manage customer integrations. gradient text\nBut Merge isn’t just a Unified  API product. Merge is an integration platform to also manage customer integrations. gradient text\nBut Merge isn’t just a Unified  API product. Merge is an integration platform to also manage customer integrations. gradient text\nBut Merge isn’t just a Unified  API product. Merge is an integration platform to also manage customer integrations. gradient text",
+  "clean_text": "Merge’s Cookie Policy\nWe use cookies to improve your experience on our site. By clicking “Accept”, you are agreeing to the collection and use of data as described in our Privacy Policy .\nAccept all cookies\nCookie settings\nWe use cookies to improve your experience on our site. By using our site, you are agreeing to the collection and use of data as described in our Privacy Policy .\nCookie Settings ×\nTable of contents\nThousands of companies trust Merge to accelerate AI from PoC to production. Get a demo\nJust for you Gateway's Build Your Own Router: define exactly how Gateway picks your LLMs\nEvaluating the cost of Merge Gateway\nEmbedded Routing Stack: Give your customers control over model routing\nYash Gogri\nProduct Manager\nat Merge\nToday we’re launching Embedded Routing Stack in Merge Gateway . It gives your customers dedicated LLM routing controls to manage their own keys, budgets, usage data and policies like fallback rules, model allowlists and more, all through a single API.\nUsers and companies increasingly want full control over the AI models running in your product. They know their own workloads better than anyone else, and want to optimize every dollar of token spend.\nEmbedded Routing Stack is built to solve this.\nWhy we built Embedded Routing Stack\nModel choice is now table stakes for any AI product. Open-source models keep closing the gap on the frontier, and our benchmarking shows them matching frontier models on correctness at up to 65% less cost . With no single model clearly ahead, customers expect to pick what fits, bring their own, and pay less doing it.\nEnterprises feel this most. They want to own the model layer for cost, security, scale, and the freedom to fine-tune models to fit their use cases. That pushes them to self-host, and to buy products that let them run AI on their own terms: to pick their own models and routing, bring their own API keys, and get billed for the tokens they actually used.\nProducts that fight their customers' model strategy will lose to products that fit it. Embedded Routing Stack lets yours fit, with a single set of APIs.\nHow it works\nEmbedded Routing Stack gives each customer their own setup in your Gateway account. You create it from your backend with your production key, then manage it all via API or in the dashboard.\nThis includes:\nRouting policies: set model routing for a customer, or let them choose their own models and criteria\nBYOK: let customers bring their own LLM keys. Merge Gateway tries the customer’s key first, then yours, and then a Merge-managed key if you allow it\nBudgets: set hard or soft budget limits per customer and enforce them from your backend\nUsage reporting: read each customer's usage and cost by model, provider, and key tier, then send it straight to billing\nStart giving customers their own AI controls\nIf you’re building AI into a product other companies pay for, this is the layer that gives them control without rebuilding your backend around it.\nYou can talk to our team about Embedded Routing Stack by scheduling a demo , or you can read our docs to get started.\nYash Gogri\nProduct Manager\n@Merge\nRead more\nGLM-5.2 vs Claude Sonnet 5: how they compare on coding\nHow to connect a Gamma MCP with Codex (4 steps)\nInsights\nClaude Fable 5 vs GPT-5.6 Sol: how they compare on coding\nAI\nSubscribe to the Merge Blog\nGet stories from Merge straight to your inbox\nSubscribe\nRelated\n3 ways to drive business results with your new Merge integrations\nRelated\n3 ways to drive business results with your new Merge integrations\nBut Merge isn’t just a Unified  API product. Merge is an integration platform to also manage customer integrations. gradient text\nBut Merge isn’t just a Unified  API product. Merge is an integration platform to also manage customer integrations. gradient text\nBut Merge isn’t just a Unified  API product. Merge is an integration platform to also manage customer integrations. gradient text\nBut Merge isn’t just a Unified  API product. Merge is an integration platform to also manage customer integrations. gradient text",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-18/r-045-embedded-routing-stack-give-your-customers-control-over-model-routing.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-18/r-045-embedded-routing-stack-give-your-customers-control-over-model-routing.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-content-container",
+  "extraction_quality": "high",
+  "extraction_method": "content-container",
+  "readability_score": 72,
+  "extractor_diagnostics": {
+    "readability_score": 72,
+    "text_length": 4055,
+    "paragraph_count": 33,
+    "sentence_count": 31,
+    "boilerplate_hits": 10,
+    "symbol_ratio": 0,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "content-container"
+  },
+  "has_full_text": true,
+  "content_length": 4055,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "f7356e5154580d13",
+    "missing": []
+  },
+  "evidence_strength": "rich_evidence",
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "low",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "34159dcb4e98daa5",
+  "content_hash": "f7356e5154580d13",
+  "full_text_hash": "f7356e5154580d13",
+  "semantic_hash": "292e20386236138c",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-16T16:00:00.000Z",
+  "last_seen_at": "2026-07-18T01:54:49.961Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "case_detail",
+      "text": "Embedded Routing Stack: Give your customers control over model routing Table of contents ###### Thousands of companies trust Merge to accelerate AI from PoC to production. Get a demo ##### Just for you ###### Gateway's Build Your Own Router: define exactly how Gateway picks your LLMs ###### Ev... / query=AI implementation startup design partner pilot customer / intent=find_startups / path=official_original",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Merge’s Cookie Policy We use cookies to improve your experience on our site.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "supporting_context",
+      "text": "By clicking “Accept”, you are agreeing to the collection and use of data as described in our Privacy Policy .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Accept all cookies Cookie settings We use cookies to improve your experience on our site.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "supporting_context",
+      "text": "By using our site, you are agreeing to the collection and use of data as described in our Privacy Policy .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Cookie Settings × Table of contents Thousands of companies trust Merge to accelerate AI from PoC to production.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-18T01:54:49.961Z",
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Anysearch"
+    ],
+    "products": [
+      "Claude",
+      "MCP",
+      "Codex",
+      "GPT-5"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具",
+      "企业服务"
+    ],
+    "roles": [],
+    "workflows": [
+      "计费 / 预算管理",
+      "权限 / 安全治理",
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "合作 / 联盟",
+      "定价 / 计费变化"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "财务 / 预算"
+    ],
+    "numbers": [
+      "65%",
+      "5.2",
+      "5",
+      "4",
+      "5.6",
+      "3"
+    ],
+    "quotes": []
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Merge’s Cookie Policy We use cookies to improve your experience on our site.",
+      "Accept all cookies Cookie settings We use cookies to improve your experience on our site.",
+      "Cookie Settings × Table of contents Thousands of companies trust Merge to accelerate AI from PoC to production."
+    ],
+    "case_details": [
+      "Embedded Routing Stack: Give your customers control over model routing Table of contents ###### Thousands of companies trust Merge to accelerate AI from PoC to production. Get a demo ##### Just for you ###### Gateway's Build Your Own Router: define exactly how Gateway picks your LLMs ###### Ev... / query=AI implementation startup design partner pilot customer / intent=find_startups / path=official_original"
+    ],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [],
+    "risks_or_constraints": [
+      "By clicking “Accept”, you are agreeing to the collection and use of data as described in our Privacy Policy .",
+      "By using our site, you are agreeing to the collection and use of data as described in our Privacy Policy ."
+    ]
+  },
+  "guanlan_scores": {
+    "importance_type": "supporting_signal",
+    "importance_score": 2,
+    "importance_reason": "consumer entertainment or minor platform policy feature; AI-adjacent but not a core business signal",
+    "supporting_signals": [
+      "low_value_ai_adjacent_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 2,
+    "guanlan_relevance": 2,
+    "emerging_signal_score": 4
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": false,
+    "trend_candidate_context": false,
+    "signal_card_candidate": false,
+    "emerging_pool": true,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "emerging_pool",
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Embedded Routing Stack: Give your customers control over model routing\n\n- raw_id: R-045\n- title_zh: 嵌入式路由栈：让客户掌控模型路由\n- title_translation_status: translated\n- title_translation_method: deepseek_title_translation\n- original_url: https://www.merge.dev/blog/embedded-routing-stack\n- source_name: keyword search / Anysearch\n- collected_at: 2026-07-18T01:54:49.961Z\n\n## clean_text\n\nMerge’s Cookie Policy\nWe use cookies to improve your experience on our site. By clicking “Accept”, you are agreeing to the collection and use of data as described in our Privacy Policy .\nAccept all cookies\nCookie settings\nWe use cookies to improve your experience on our site. By using our site, you are agreeing to the collection and use of data as described in our Privacy Policy .\nCookie Settings ×\nTable of contents\nThousands of companies trust Merge to accelerate AI from PoC to production. Get a demo\nJust for you Gateway's Build Your Own Router: define exactly how Gateway picks your LLMs\nEvaluating the cost of Merge Gateway\nEmbedded Routing Stack: Give your customers control over model routing\nYash Gogri\nProduct Manager\nat Merge\nToday we’re launching Embedded Routing Stack in Merge Gateway . It gives your customers dedicated LLM routing controls to manage their own keys, budgets, usage data and policies like fallback rules, model allowlists and more, all through a single API.\nUsers and companies increasingly want full control over the AI models running in your product. They know their own workloads better than anyone else, and want to optimize every dollar of token spend.\nEmbedded Routing Stack is built to solve this.\nWhy we built Embedded Routing Stack\nModel choice is now table stakes for any AI product. Open-source models keep closing the gap on the frontier, and our benchmarking shows them matching frontier models on correctness at up to 65% less cost . With no single model clearly ahead, customers expect to pick what fits, bring their own, and pay less doing it.\nEnterprises feel this most. They want to own the model layer for cost, security, scale, and the freedom to fine-tune models to fit their use cases. That pushes them to self-host, and to buy products that let them run AI on their own terms: to pick their own models and routing, bring their own API keys, and get billed for the tokens they actually used.\nProducts that fight their customers' model strategy will lose to products that fit it. Embedded Routing Stack lets yours fit, with a single set of APIs.\nHow it works\nEmbedded Routing Stack gives each customer their own setup in your Gateway account. You create it from your backend with your production key, then manage it all via API or in the dashboard.\nThis includes:\nRouting policies: set model routing for a customer, or let them choose their own models and criteria\nBYOK: let customers bring their own LLM keys. Merge Gateway tries the customer’s key first, then yours, and then a Merge-managed key if you allow it\nBudgets: set hard or soft budget limits per customer and enforce them from your backend\nUsage reporting: read each customer's usage and cost by model, provider, and key tier, then send it straight to billing\nStart giving customers their own AI controls\nIf you’re building AI into a product other companies pay for, this is the layer that gives them control without rebuilding your backend around it.\nYou can talk to our team about Embedded Routing Stack by scheduling a demo , or you can read our docs to get started.\nYash Gogri\nProduct Manager\n@Merge\nRead more\nGLM-5.2 vs Claude Sonnet 5: how they compare on coding\nHow to connect a Gamma MCP with Codex (4 steps)\nInsights\nClaude Fable 5 vs GPT-5.6 Sol: how they compare on coding\nAI\nSubscribe to the Merge Blog\nGet stories from Merge straight to your inbox\nSubscribe\nRelated\n3 ways to drive business results with your new Merge integrations\nRelated\n3 ways to drive business results with your new Merge integrations\nBut Merge isn’t just a Unified  API product. Merge is an integration platform to also manage customer integrations. gradient text\nBut Merge isn’t just a Unified  API product. Merge is an integration platform to also manage customer integrations. gradient text\nBut Merge isn’t just a Unified  API product. Merge is an integration platform to also manage customer integrations. gradient text\nBut Merge isn’t just a Unified  API product. Merge is an integration platform to also manage customer integrations. gradient text\n\n## full_text\n\nMerge’s Cookie Policy\nWe use cookies to improve your experience on our site. By clicking “Accept”, you are agreeing to the collection and use of data as described in our Privacy Policy .\nAccept all cookies\nCookie settings\nWe use cookies to improve your experience on our site. By using our site, you are agreeing to the collection and use of data as described in our Privacy Policy .\nCookie Settings ×\nTable of contents\nThousands of companies trust Merge to accelerate AI from PoC to production. Get a demo\nJust for you Gateway's Build Your Own Router: define exactly how Gateway picks your LLMs\nEvaluating the cost of Merge Gateway\nEmbedded Routing Stack: Give your customers control over model routing\nYash Gogri\nProduct Manager\nat Merge\nToday we’re launching Embedded Routing Stack in Merge Gateway . It gives your customers dedicated LLM routing controls to manage their own keys, budgets, usage data and policies like fallback rules, model allowlists and more, all through a single API.\nUsers and companies increasingly want full control over the AI models running in your product. They know their own workloads better than anyone else, and want to optimize every dollar of token spend.\nEmbedded Routing Stack is built to solve this.\nWhy we built Embedded Routing Stack\nModel choice is now table stakes for any AI product. Open-source models keep closing the gap on the frontier, and our benchmarking shows them matching frontier models on correctness at up to 65% less cost . With no single model clearly ahead, customers expect to pick what fits, bring their own, and pay less doing it.\nEnterprises feel this most. They want to own the model layer for cost, security, scale, and the freedom to fine-tune models to fit their use cases. That pushes them to self-host, and to buy products that let them run AI on their own terms: to pick their own models and routing, bring their own API keys, and get billed for the tokens they actually used.\nProducts that fight their customers' model strategy will lose to products that fit it. Embedded Routing Stack lets yours fit, with a single set of APIs.\nHow it works\nEmbedded Routing Stack gives each customer their own setup in your Gateway account. You create it from your backend with your production key, then manage it all via API or in the dashboard.\nThis includes:\nRouting policies: set model routing for a customer, or let them choose their own models and criteria\nBYOK: let customers bring their own LLM keys. Merge Gateway tries the customer’s key first, then yours, and then a Merge-managed key if you allow it\nBudgets: set hard or soft budget limits per customer and enforce them from your backend\nUsage reporting: read each customer's usage and cost by model, provider, and key tier, then send it straight to billing\nStart giving customers their own AI controls\nIf you’re building AI into a product other companies pay for, this is the layer that gives them control without rebuilding your backend around it.\nYou can talk to our team about Embedded Routing Stack by scheduling a demo , or you can read our docs to get started.\nYash Gogri\nProduct Manager\n@Merge\nRead more\nGLM-5.2 vs Claude Sonnet 5: how they compare on coding\nHow to connect a Gamma MCP with Codex (4 steps)\nInsights\nClaude Fable 5 vs GPT-5.6 Sol: how they compare on coding\nAI\nSubscribe to the Merge Blog\nGet stories from Merge straight to your inbox\nSubscribe\nRelated\n3 ways to drive business results with your new Merge integrations\nRelated\n3 ways to drive business results with your new Merge integrations\nBut Merge isn’t just a Unified  API product. Merge is an integration platform to also manage customer integrations. gradient text\nBut Merge isn’t just a Unified  API product. Merge is an integration platform to also manage customer integrations. gradient text\nBut Merge isn’t just a Unified  API product. Merge is an integration platform to also manage customer integrations. gradient text\nBut Merge isn’t just a Unified  API product. Merge is an integration platform to also manage customer integrations. gradient text\n\n## extraction_diagnostics\n\n- extraction_method: content-container\n- readability_score: 72\n- fetch_status: fetched-readable-text-content-container\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [case_detail / signal_card_candidate, relationship_graph_input, case / high] Embedded Routing Stack: Give your customers control over model routing Table of contents ###### Thousands of companies trust Merge to accelerate AI from PoC to production. Get a demo ##### Just for you ###### Gateway's Build Your Own Router: define exactly how Gateway picks your LLMs ###### Ev... / query=AI implementation startup design partner pilot customer / intent=find_startups / path=official_original\n2. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Merge’s Cookie Policy We use cookies to improve your experience on our site.\n3. [supporting_context / signal_card_candidate, relationship_graph_input / medium] By clicking “Accept”, you are agreeing to the collection and use of data as described in our Privacy Policy .\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Accept all cookies Cookie settings We use cookies to improve your experience on our site.\n5. [supporting_context / signal_card_candidate, relationship_graph_input / medium] By using our site, you are agreeing to the collection and use of data as described in our Privacy Policy .\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Cookie Settings × Table of contents Thousands of companies trust Merge to accelerate AI from PoC to production.\n"
+}

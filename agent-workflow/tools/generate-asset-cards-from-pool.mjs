@@ -1737,7 +1737,7 @@ function isGenericReportOrListSection(section) {
     return true;
   }
   if (isRepositoryOrCatalogSection(section)) return true;
-  return /startup ideas|buying criteria|adoption 2026|massive ai deals|funding record|pre-seed slowdown|fund focused on ai|ranked by funding|top ai pre-seed investors|pre-seed investors|top ai agent startups|ai agent marketplace|marketplaces landscape|procurement guide|procurement playbook|enterprise business model shift|enterprise ai adoption stalls|agentic ai tools mapped|artificial intelligence startups funded by y combinator|funded companies|companies\s*&\s*verified leads|complete batch breakdown|market report|implementation report|complete guide|framework for investors|vertical report|fastest growing|venture funding quarter|building vertical ai|\btop\s+\d+\b|\buse cases\b|future of ai is vertical|hallucination tax|y combinator w26 batch|field guide|glossary|open source toolkit|ai in procurement orchestration|ai citations\s*&\s*visibility|about github copilot cloud agent|series-b-enterprise-ai-agents|ai agent startups insight partners funding/iu.test(titleUrlSource);
+  return /startup ideas|buying criteria|adoption 2026|massive ai deals|funding record|funding trends?|funding analysis|pre-seed slowdown|fund focused on ai|ranked by funding|top ai pre-seed investors|pre-seed investors|top ai agent startups|ai agent marketplace|marketplaces landscape|procurement guide|procurement playbook|enterprise business model shift|enterprise ai adoption stalls|agentic ai tools mapped|artificial intelligence startups funded by y combinator|funded companies|companies\s*&\s*verified leads|complete batch breakdown|market report|implementation report|complete guide|framework for investors|vertical report|fastest growing|venture funding quarter|building vertical ai|\btop\s+\d+\b|\buse cases\b|future of ai is vertical|hallucination tax|y combinator w26 batch|field guide|glossary|open source toolkit|ai in procurement orchestration|ai citations\s*&\s*visibility|about github copilot cloud agent|series-b-enterprise-ai-agents|ai agent startups insight partners funding/iu.test(titleUrlSource);
 }
 
 function hasMojibakeMarker(value = "") {
@@ -3452,7 +3452,9 @@ function signalCard(spec, section) {
       sourceFact = fallbackFact;
     }
   }
-  if (!sourceFact) sourceFact = spec.title;
+  if (!sourceFact || isSameSourcePoint(sourceFact, spec.title) || isSameSourcePoint(sourceFact, titleFact)) {
+    sourceFact = "原文未披露可与标题独立核对的事件细节。";
+  }
   const rawValuePoint = localizedRawSourcePointsFromSection(section, sourcePointContext, [sourceFact, spec.title, titleFact])[0] || "";
   let valueSummary =
     [spec.businessMeaning, spec.whyWatch, ...sourcePoints]
@@ -3511,7 +3513,7 @@ function signalCard(spec, section) {
       .filter((item) => ![sourceFact, valueSummary, spec.title].some((excludedItem) => isSameSourcePoint(item, excludedItem)));
     if (localizedOriginalPoints.length) originalPoints = [...new Set(localizedOriginalPoints)].slice(0, 4);
   }
-  if (cardDetailsTooSimilar(originalPoints.join(" "), valueSummary)) {
+  if (cardDetailsTooSimilar(sourceFact, valueSummary) || cardDetailsTooSimilar(originalPoints.join(" "), valueSummary)) {
     valueSummary = generatedCommercialValue(spec);
   }
   const evidenceBoundary = spec.evidenceBoundary || value(section, "missing_information") || "未记录额外缺失项。";

@@ -1,0 +1,235 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-009
+title: "Sable raised $45 million from Sequoia to build an AI that runs product demos instead of humans"
+title_zh: "Sable 从红杉资本融资 4500 万美元，打造替代人类运行产品演示的 AI 智能体"
+title_translation_status: translated
+title_translation_method: deepseek_title_translation
+title_translation_model: deepseek-v4-flash
+original_url: "https://thenextweb.com/news/sable-aidan-ai-employee-sequoia-45-million"
+canonical_url: "https://thenextweb.com/news/sable-aidan-ai-employee-sequoia-45-million"
+source_name: "keyword search / Anysearch"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_startups"
+search_path: "capital_startup"
+search_path_label: "资本与创业公司路径"
+author: ""
+published_at: "2026-07-16T08:25:42.000Z"
+collected_at: 2026-07-18T01:54:19.783Z
+language: mixed
+full_text_hash: bc538fe3e503f8f8
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-18/r-009-sable-raised-45-million-from-sequoia-to-build-an-ai-that-runs-product-.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-18/r-009-sable-raised-45-million-from-sequoia-to-build-an-ai-that-runs-product-.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-json-ld
+extraction_quality: high
+extraction_method: "json-ld"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":7143,"paragraph_count":18,"sentence_count":40,"boilerplate_hits":0,"symbol_ratio":0.0006,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"json-ld"}
+has_full_text: true
+content_length: 7143
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"bc538fe3e503f8f8","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: merged_provider_duplicates
+url_hash: b95b1b353d05702f
+content_hash: bc538fe3e503f8f8
+semantic_hash: 19b775c07b80879b
+duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
+first_seen_at: "2026-07-16T08:25:42.000Z"
+last_seen_at: 2026-07-18T01:54:19.783Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool","emerging_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":4}
+business_elements: {"companies":["keyword search","Anysearch"],"products":["agent","agents"],"people":[],"industries":["企业服务"],"roles":["开发者 / 工程团队","销售 / 客服"],"workflows":["部署 / 集成交付"],"business_actions":["合作 / 联盟","部署 / 上线","融资 / 投资"],"affected_departments":["IT / 安全","销售 / 客服"],"numbers":["$45 million","8","$9 billion","$10 billion","2026","$57 billion","2031","$7 billion"],"quotes":["reminded me of what Stripe did for payments","reminded me of what Stripe did for payments"]}
+evidence_seed: {"company_actions":["Sable raised $45 million from Sequoia to build an AI that runs product demos instead of humans Image by: Sable #### TL;DR Sable raised $45 million from Sequoia and 8VC for Aidan, an AI that runs live product demos and replaces sales development workflows. Sable has raised $45 million from Sequoi... / query=enterprise AI deployment startup funding customer engineering / intent=find_startups / path=capital_startup","Sable raised $45 million from Sequoia to build an AI that runs product demos instead of humans Sable has raised $45 million from Sequoia Capital and 8VC to build an AI system called Aidan that runs live product demonstrations, answers customer questions in real time, and switches between languages mid-conversation.","The company, which is less than a year old, calls Aidan an AI employee designed to replace not just chat support but […] TL;DRSable raised $45 million from Sequoia and 8VC for Aidan, an AI that runs live product demos and replaces sales development workflows."],"case_details":[],"workflow_changes":["The company, which is less than a year old, calls Aidan an AI employee designed to replace not just chat support but the entire demo-to-onboarding pipeline."],"before_after_clues":["可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"funding","text":"Sable raised $45 million from Sequoia to build an AI that runs product demos instead of humans Image by: Sable #### TL;DR Sable raised $45 million from Sequoia and 8VC for Aidan, an AI that runs live product demos and replaces sales development workflows. Sable has raised $45 million from Sequoi... / query=enterprise AI deployment startup funding customer engineering / intent=find_startups / path=capital_startup","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"Sable raised $45 million from Sequoia to build an AI that runs product demos instead of humans Sable has raised $45 million from Sequoia Capital and 8VC to build an AI system called Aidan that runs live product demonstrations, answers customer questions in real time, and switches between languages mid-conversation.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"The company, which is less than a year old, calls Aidan an AI employee designed to replace not just chat support but […] TL;DRSable raised $45 million from Sequoia and 8VC for Aidan, an AI that runs live product demos and replaces sales development workflows.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"Sable has raised $45 million from Sequoia Capital and 8VC to build an AI system called Aidan that runs live product demonstrations, answers customer questions in real time, and switches between languages mid-conversation.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"The company, which is less than a year old, calls Aidan an AI employee designed to replace not just chat support but the entire demo-to-onboarding pipeline.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"Fortune reported the funding exclusively on Wednesday.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-18T01:54:19.783Z
+theme: capital-market-signal
+keyword_group: capital-market-signal
+copyright_note: local research archive only
+---
+
+# Sable raised $45 million from Sequoia to build an AI that runs product demos instead of humans
+
+## clean_text
+
+Sable raised $45 million from Sequoia to build an AI that runs product demos instead of humans
+Sable has raised $45 million from Sequoia Capital and 8VC to build an AI system called Aidan that runs live product demonstrations, answers customer questions in real time, and switches between languages mid-conversation. The company, which is less than a year old, calls Aidan an AI employee designed to replace not just chat support but […]
+TL;DRSable raised $45 million from Sequoia and 8VC for Aidan, an AI that runs live product demos and replaces sales development workflows.
+Sable has raised $45 million from Sequoia Capital and 8VC to build an AI system called Aidan that runs live product demonstrations, answers customer questions in real time, and switches between languages mid-conversation. The company, which is less than a year old, calls Aidan an AI employee designed to replace not just chat support but the entire demo-to-onboarding pipeline. Fortune reported the funding exclusively on Wednesday.
+Unlike the chat widgets that sit in the corner of most websites, Aidan appears in a shared browser window and actively drives the product while the buyer watches and clicks alongside it. Sable trains the system by feeding it recordings of a company’s best sales calls, internal documentation, and marketing materials, building what it calls a reusable brain for each customer. CEO Nim Ravid argues that the result feels closer to a human sales engineer than a scripted bot, because the system can see changes on the page and adjust its presentation mid-conversation.
+Notion and Decagon, the AI customer-service startup, are already using Aidan in production. The approach echoes what BCG has done with its AI sales agent Jamie, which learns from a firm’s best and worst sellers, though Sable is targeting the customer-facing side of the funnel rather than internal coaching. Sable’s pitch is that Aidan can absorb four human roles at once: sales development, demo specialist, solutions engineer, and customer-success onboarding.
+Sequoia partner Shaun Maguire said the demo “reminded me of what Stripe did for payments” after watching Aidan switch between English, Mandarin, and Spanish while walking a buyer through a product. Joe Lonsdale, co-founder of Palantir and founder of 8VC, joins Maguire on the board. Angel investors include HubSpot co-founders Brian Halligan and Dharmesh Shah, Valor’s Antonio Gracias, and Cognition CEO Scott Wu.
+The funding arrives as the agentic AI market, software that takes actions rather than just generating text, has grown to roughly $9 billion to $10 billion globally in 2026, with forecasts reaching $57 billion by 2031 according to Mordor Intelligence and Coherent Market Insights. Sequoia raised $7 billion for its largest-ever late-stage fund earlier this year, positioning AI as the firm’s central thesis under new leadership. Sable fits that thesis directly, betting that interactive AI can close the gap between what products can do and what buyers understand about them.
+Whether Aidan can overcome the skepticism that years of mediocre chatbots have created is an open question that Ravid himself acknowledges. Trust, job displacement, and competition from platforms like Notion’s own AI agents remain real obstacles for a company asking enterprise buyers to hand their sales process to a machine. Sable is less than a year old, and the distance between a compelling demo and a product that reliably replaces human sales engineers at scale is one that many AI startups have promised to close and few have managed.
+Sable raised $45 million from Sequoia to build an AI that runs product demos instead of humans
+Sable has raised $45 million from Sequoia Capital and 8VC to build an AI system called Aidan that runs live product demonstrations, answers customer questions in real time, and switches between languages mid-conversation. The company, which is less than a year old, calls Aidan an AI employee designed to replace not just chat support but […]
+TL;DRSable raised $45 million from Sequoia and 8VC for Aidan, an AI that runs live product demos and replaces sales development workflows.
+Sable has raised $45 million from Sequoia Capital and 8VC to build an AI system called Aidan that runs live product demonstrations, answers customer questions in real time, and switches between languages mid-conversation. The company, which is less than a year old, calls Aidan an AI employee designed to replace not just chat support but the entire demo-to-onboarding pipeline. Fortune reported the funding exclusively on Wednesday.
+Unlike the chat widgets that sit in the corner of most websites, Aidan appears in a shared browser window and actively drives the product while the buyer watches and clicks alongside it. Sable trains the system by feeding it recordings of a company’s best sales calls, internal documentation, and marketing materials, building what it calls a reusable brain for each customer. CEO Nim Ravid argues that the result feels closer to a human sales engineer than a scripted bot, because the system can see changes on the page and adjust its presentation mid-conversation.
+Notion and Decagon, the AI customer-service startup, are already using Aidan in production. The approach echoes what BCG has done with its AI sales agent Jamie, which learns from a firm’s best and worst sellers, though Sable is targeting the customer-facing side of the funnel rather than internal coaching. Sable’s pitch is that Aidan can absorb four human roles at once: sales development, demo specialist, solutions engineer, and customer-success onboarding.
+Sequoia partner Shaun Maguire said the demo “reminded me of what Stripe did for payments” after watching Aidan switch between English, Mandarin, and Spanish while walking a buyer through a product. Joe Lonsdale, co-founder of Palantir and founder of 8VC, joins Maguire on the board. Angel investors include HubSpot co-founders Brian Halligan and Dharmesh Shah, Valor’s Antonio Gracias, and Cognition CEO Scott Wu.
+The funding arrives as the agentic AI market, software that takes actions rather than just generating text, has grown to roughly $9 billion to $10 billion globally in 2026, with forecasts reaching $57 billion by 2031 according to Mordor Intelligence and Coherent Market Insights. Sequoia raised $7 billion for its largest-ever late-stage fund earlier this year, positioning AI as the firm’s central thesis under new leadership. Sable fits that thesis directly, betting that interactive AI can close the gap between what products can do and what buyers understand about them.
+Whether Aidan can overcome the skepticism that years of mediocre chatbots have created is an open question that Ravid himself acknowledges. Trust, job displacement, and competition from platforms like Notion’s own AI agents remain real obstacles for a company asking enterprise buyers to hand their sales process to a machine. Sable is less than a year old, and the distance between a compelling demo and a product that reliably replaces human sales engineers at scale is one that many AI startups have promised to close and few have managed.
+
+## full_text
+
+Sable raised $45 million from Sequoia to build an AI that runs product demos instead of humans
+Sable has raised $45 million from Sequoia Capital and 8VC to build an AI system called Aidan that runs live product demonstrations, answers customer questions in real time, and switches between languages mid-conversation. The company, which is less than a year old, calls Aidan an AI employee designed to replace not just chat support but […]
+TL;DRSable raised $45 million from Sequoia and 8VC for Aidan, an AI that runs live product demos and replaces sales development workflows.
+Sable has raised $45 million from Sequoia Capital and 8VC to build an AI system called Aidan that runs live product demonstrations, answers customer questions in real time, and switches between languages mid-conversation. The company, which is less than a year old, calls Aidan an AI employee designed to replace not just chat support but the entire demo-to-onboarding pipeline. Fortune reported the funding exclusively on Wednesday.
+Unlike the chat widgets that sit in the corner of most websites, Aidan appears in a shared browser window and actively drives the product while the buyer watches and clicks alongside it. Sable trains the system by feeding it recordings of a company’s best sales calls, internal documentation, and marketing materials, building what it calls a reusable brain for each customer. CEO Nim Ravid argues that the result feels closer to a human sales engineer than a scripted bot, because the system can see changes on the page and adjust its presentation mid-conversation.
+Notion and Decagon, the AI customer-service startup, are already using Aidan in production. The approach echoes what BCG has done with its AI sales agent Jamie, which learns from a firm’s best and worst sellers, though Sable is targeting the customer-facing side of the funnel rather than internal coaching. Sable’s pitch is that Aidan can absorb four human roles at once: sales development, demo specialist, solutions engineer, and customer-success onboarding.
+Sequoia partner Shaun Maguire said the demo “reminded me of what Stripe did for payments” after watching Aidan switch between English, Mandarin, and Spanish while walking a buyer through a product. Joe Lonsdale, co-founder of Palantir and founder of 8VC, joins Maguire on the board. Angel investors include HubSpot co-founders Brian Halligan and Dharmesh Shah, Valor’s Antonio Gracias, and Cognition CEO Scott Wu.
+The funding arrives as the agentic AI market, software that takes actions rather than just generating text, has grown to roughly $9 billion to $10 billion globally in 2026, with forecasts reaching $57 billion by 2031 according to Mordor Intelligence and Coherent Market Insights. Sequoia raised $7 billion for its largest-ever late-stage fund earlier this year, positioning AI as the firm’s central thesis under new leadership. Sable fits that thesis directly, betting that interactive AI can close the gap between what products can do and what buyers understand about them.
+Whether Aidan can overcome the skepticism that years of mediocre chatbots have created is an open question that Ravid himself acknowledges. Trust, job displacement, and competition from platforms like Notion’s own AI agents remain real obstacles for a company asking enterprise buyers to hand their sales process to a machine. Sable is less than a year old, and the distance between a compelling demo and a product that reliably replaces human sales engineers at scale is one that many AI startups have promised to close and few have managed.
+Sable raised $45 million from Sequoia to build an AI that runs product demos instead of humans
+Sable has raised $45 million from Sequoia Capital and 8VC to build an AI system called Aidan that runs live product demonstrations, answers customer questions in real time, and switches between languages mid-conversation. The company, which is less than a year old, calls Aidan an AI employee designed to replace not just chat support but […]
+TL;DRSable raised $45 million from Sequoia and 8VC for Aidan, an AI that runs live product demos and replaces sales development workflows.
+Sable has raised $45 million from Sequoia Capital and 8VC to build an AI system called Aidan that runs live product demonstrations, answers customer questions in real time, and switches between languages mid-conversation. The company, which is less than a year old, calls Aidan an AI employee designed to replace not just chat support but the entire demo-to-onboarding pipeline. Fortune reported the funding exclusively on Wednesday.
+Unlike the chat widgets that sit in the corner of most websites, Aidan appears in a shared browser window and actively drives the product while the buyer watches and clicks alongside it. Sable trains the system by feeding it recordings of a company’s best sales calls, internal documentation, and marketing materials, building what it calls a reusable brain for each customer. CEO Nim Ravid argues that the result feels closer to a human sales engineer than a scripted bot, because the system can see changes on the page and adjust its presentation mid-conversation.
+Notion and Decagon, the AI customer-service startup, are already using Aidan in production. The approach echoes what BCG has done with its AI sales agent Jamie, which learns from a firm’s best and worst sellers, though Sable is targeting the customer-facing side of the funnel rather than internal coaching. Sable’s pitch is that Aidan can absorb four human roles at once: sales development, demo specialist, solutions engineer, and customer-success onboarding.
+Sequoia partner Shaun Maguire said the demo “reminded me of what Stripe did for payments” after watching Aidan switch between English, Mandarin, and Spanish while walking a buyer through a product. Joe Lonsdale, co-founder of Palantir and founder of 8VC, joins Maguire on the board. Angel investors include HubSpot co-founders Brian Halligan and Dharmesh Shah, Valor’s Antonio Gracias, and Cognition CEO Scott Wu.
+The funding arrives as the agentic AI market, software that takes actions rather than just generating text, has grown to roughly $9 billion to $10 billion globally in 2026, with forecasts reaching $57 billion by 2031 according to Mordor Intelligence and Coherent Market Insights. Sequoia raised $7 billion for its largest-ever late-stage fund earlier this year, positioning AI as the firm’s central thesis under new leadership. Sable fits that thesis directly, betting that interactive AI can close the gap between what products can do and what buyers understand about them.
+Whether Aidan can overcome the skepticism that years of mediocre chatbots have created is an open question that Ravid himself acknowledges. Trust, job displacement, and competition from platforms like Notion’s own AI agents remain real obstacles for a company asking enterprise buyers to hand their sales process to a machine. Sable is less than a year old, and the distance between a compelling demo and a product that reliably replaces human sales engineers at scale is one that many AI startups have promised to close and few have managed.
+
+## extraction_diagnostics
+
+- extraction_method: json-ld
+- readability_score: 97
+- fetch_status: fetched-readable-text-json-ld
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":7143,"paragraph_count":18,"sentence_count":40,"boilerplate_hits":0,"symbol_ratio":0.0006,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"json-ld"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=high
+   Sable raised $45 million from Sequoia to build an AI that runs product demos instead of humans Image by: Sable #### TL;DR Sable raised $45 million from Sequoia and 8VC for Aidan, an AI that runs live product demos and replaces sales development workflows. Sable has raised $45 million from Sequoi... / query=enterprise AI deployment startup funding customer engineering / intent=find_startups / path=capital_startup
+
+2. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=high
+   Sable raised $45 million from Sequoia to build an AI that runs product demos instead of humans Sable has raised $45 million from Sequoia Capital and 8VC to build an AI system called Aidan that runs live product demonstrations, answers customer questions in real time, and switches between languages mid-conversation.
+
+3. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=high
+   The company, which is less than a year old, calls Aidan an AI employee designed to replace not just chat support but […] TL;DRSable raised $45 million from Sequoia and 8VC for Aidan, an AI that runs live product demos and replaces sales development workflows.
+
+4. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=high
+   Sable has raised $45 million from Sequoia Capital and 8VC to build an AI system called Aidan that runs live product demonstrations, answers customer questions in real time, and switches between languages mid-conversation.
+
+5. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   The company, which is less than a year old, calls Aidan an AI employee designed to replace not just chat support but the entire demo-to-onboarding pipeline.
+
+6. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=high
+   Fortune reported the funding exclusively on Wednesday.
+
+## business_elements
+
+- companies: keyword search, Anysearch
+- products: agent, agents
+- people: 暂无公开信息
+- industries: 企业服务
+- roles: 开发者 / 工程团队, 销售 / 客服
+- workflows: 部署 / 集成交付
+- business_actions: 合作 / 联盟, 部署 / 上线, 融资 / 投资
+- affected_departments: IT / 安全, 销售 / 客服
+- numbers: $45 million, 8, $9 billion, $10 billion, 2026, $57 billion, 2031, $7 billion
+- quotes: reminded me of what Stripe did for payments / reminded me of what Stripe did for payments
+
+## evidence_seed
+
+- company_actions: Sable raised $45 million from Sequoia to build an AI that runs product demos instead of humans Image by: Sable #### TL;DR Sable raised $45 million from Sequoia and 8VC for Aidan, an AI that runs live product demos and replaces sales development workflows. Sable has raised $45 million from Sequoi... / query=enterprise AI deployment startup funding customer engineering / intent=find_startups / path=capital_startup / Sable raised $45 million from Sequoia to build an AI that runs product demos instead of humans Sable has raised $45 million from Sequoia Capital and 8VC to build an AI system called Aidan that runs live product demonstrations, answers customer questions in real time, and switches between languages mid-conversation. / The company, which is less than a year old, calls Aidan an AI employee designed to replace not just chat support but […] TL;DRSable raised $45 million from Sequoia and 8VC for Aidan, an AI that runs live product demos and replaces sales development workflows.
+- case_details: 暂无公开信息
+- workflow_changes: The company, which is less than a year old, calls Aidan an AI employee designed to replace not just chat support but the entire demo-to-onboarding pipeline.
+- before_after_clues: 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 开发者 / 工程团队, 销售 / 客服
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 4
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: true
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+- emerging_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Sable raised $45 million from Sequoia to build an AI that runs product demos instead of humans Image by: Sable #### TL;DR Sable raised $45 million from Sequoia and 8VC for Aidan, an AI that runs live product demos and replaces sales development workflows. Sable has raised $45 million from Sequoi... / query=enterprise AI deployment startup funding customer engineering / intent=find_startups / path=capital_startup
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

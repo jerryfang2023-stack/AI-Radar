@@ -1,0 +1,294 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-008",
+  "title": "NVIDIA 发布 Nemotron 3 Embed 系列，8B 版本在 RTEB 基准上排名第一",
+  "title_zh": "NVIDIA 发布 Nemotron 3 Embed 系列，8B 版本在 RTEB 基准上排名第一",
+  "title_translation_status": "not_required",
+  "title_translation_method": "source_title",
+  "title_translation_model": "",
+  "original_url": "https://www.marktechpost.com/2026/07/17/nvidia-ai-releases-nemotron-3-embed-an-open-embedding-collection-whose-8b-checkpoint-ranks-1-on-rteb",
+  "canonical_url": "https://marktechpost.com/2026/07/17/nvidia-ai-releases-nemotron-3-embed-an-open-embedding-collection-whose-8b-checkpoint-ranks-1-on-rteb",
+  "source_name": "MarkTechPost（RSS）",
+  "source_type": "web",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "changelog_or_release",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "platform_enablement",
+  "enterprise_ai_transformation_reason": "enterprise_ai_implementation_signal",
+  "author": "",
+  "published_at": "2026-07-17T00:00:00.000Z",
+  "collected_at": "2026-07-18T01:54:19.776Z",
+  "language": "mixed",
+  "full_text": "Technology\nAI Shorts\nArtificial Intelligence\nApplications\nEditors Pick\nLanguage Model\nEmbedding Model\nLarge Language Model\nMachine Learning\nNew Releases\nOpen Source\nStaff\nTech News\nEmbedding models decide which passages an agent ever sees. NVIDIA released Nemotron 3 Embed model to work on that layer. It targets production-scale RAG, agentic retrieval, code retrieval, and agent memory.\nWhat is Nemotron 3 Embed?\nThe model collection includes three open checkpoints. Nemotron-3-Embed-8B-BF16 is the accuracy-first option. Nemotron-3-Embed-1B-BF16 carries the same design into a smaller footprint. Nemotron-3-Embed-1B-NVFP4 is the Blackwell-optimized 4-bit path.\nAll three are transformer encoders trained with bidirectional attention masking . The final embedding comes from average pooling over token-level representations. Maximum sequence length is 32,768 tokens on every checkpoint.\nEach model was evaluated across 34 languages. All three carry the OpenMDW License Agreement, version 1.1 (OpenMDW-1.1) . Notably, the bases are Mistral models. The 8B is built with Ministral-3-8B-Instruct-2512 . Both 1B variants use Ministral-3-3B-Instruct-2512 .\nPerformance\nNemotron-3-Embed-8B-BF16 ranks #1 overall on RTEB (as of July 17 2026), the Retrieval Embedding Benchmark. Evaluation covers its 16 public tasks. Every figure below is average NDCG@10, at model sequence length 4096.\nModel Params Emb dim RTEB ViDoRe-V3 text MMTEB (Retrieval)\nNemotron-3-Embed-8B-BF16 ~8B 4096 78.46 60.60 75.45\nNemotron-3-Embed-1B-BF16 1.14B 2048 72.38 57.74 71.04\nNemotron-3-Embed-1B-NVFP4 1.14B 2048 72.00 — —\nllama-nemotron-embed-vl-1b-v2 — — 61.98 52.54 59.71\nllama-nemotron-embed-1b-v2 — — 60.47 52.10 59.58\nTwo gaps are worth noting. The 1B gains 10.4 RTEB points over llama-nemotron-embed-vl-1b-v2 , the prior-generation baseline. Separately, NVFP4 costs 0.38 RTEB points against its BF16 parent, or 99.5% retention.\nHow the 1B Model was Built ?\nThose 1B scores come from a compression pipeline, not a smaller training run. The parent was nemotron-3-embed-3b , pruned and distilled across two iterative rounds.\nFirst, the 3B parent was pruned to 2B using NVIDIA ModelOpt mcore_minitron Neural Architecture Search (NAS) . The search covers hidden width, FFN size, attention heads, and depth. It then picks the best candidate from the top-10 Pareto front. A 50k in-domain calibration corpus scored those candidates.\nNext, the 2B model was distilled from the fine-tuned 8B embedding teacher. Distillation combined cosine distance loss (COS) and mean squared error (MSE) loss. The data blend was multilingual and in-domain. Finally, the same procedure repeated to produce the 1.14B checkpoint.\nThe NVFP4 Serving Tradeoff\nCompression then continues into the serving format. Quantization hit weights and activations of linear layers only, targeting the NVFP4 data type. The research team used nvidia-modelopt v0.45.0 . Quantization-Aware Distillation (QAD) followed, primarily to recover accuracy on long inputs.\nCalibration used 512 samples: 256 queries and 256 passages from abisee/cnn_dailymail . QAD training used 20k samples.\nThe rsesearch team reports NVFP4 on Blackwell delivers up to 2x higher throughput than BF16 . It retains 99%+ of BF16 retrieval accuracy . The NVFP4 card also documents dynamic embedding sizes. You can slice the 2048-d vector from the start to 1024 or 512 dimensions. Re-normalize afterward.\nInteractive Explainer: The Five-Stage Retrieval Path\nBefore touching code, watch the path run. It animates prefixing, bidirectional encoding, average pooling, L2 normalization, and dot-product scoring. Scores come from each card’s published expected output.\nDeployment Matrix\nAs that walkthrough implies, the checkpoints do not share runtime paths.\nFeature 8B-BF16 1B-BF16 1B-NVFP4\nTransformers / Sentence Transformers Yes Yes No\nvLLM for /v2/embed 0.25.0 0.25.0 0.25.0\nMicroarchitectures Ampere, Hopper, Blackwell Ampere, Hopper, Blackwell Ampere, Hopper, Lovelace, Blackwell\nTest hardware A100 80GB, H100 80GB A100 80GB, H100 80GB GB200, RTX 6000 PRO, A100, H100, L40, L4\nTraining data 50M+ samples 8.5M+ (distillation) 20k (QAD)\nAlongside the checkpoints, NVIDIA research team released an optimized NIM microservice for the 1B model. The Rust-based NIM matches or outperforms the vLLM checkpoint on GB200 and RTX PRO 6000. NVIDIA tested input sequence lengths of 256 and 1024. Separately, NVIDIA NeMo AutoModel recipes cover fine-tuning and distillation.\nUsing It in Code\nWith those paths in mind, prefixes come first. Queries take query: and documents take passage: . Embeddings are L2-normalized, so dot product equals cosine similarity.\nCopy Code Copied Use a different Browser\n# pip install --upgrade \"transformers>=5.2.0\" \"sentence-transformers>=5.4.1\"\nimport torch\nfrom sentence_transformers import SentenceTransformer\nQUERIES = [\"How can someone reduce exposure to pollen during allergy season?\"]\nDOCUMENTS = [\"People with pollen allergy can reduce exposure by staying indoors \"\n\"on dry, windy days, avoiding early-morning outdoor activity, and \"\n\"going outside after rain when pollen levels are lower.\"]\nmodel = SentenceTransformer(\n\"nvidia/Nemotron-3-Embed-8B-BF16\",\ndevice=\"cuda\",\nmodel_kwargs={\"dtype\": torch.bfloat16,\n# use \"sdpa\" if FlashAttention-2 is unavailable\n\"attn_implementation\": \"flash_attention_2\"},\nprocessor_kwargs={\"padding_side\": \"left\"},\nmodel.max_seq_length = 32768\nq = model.encode_query(QUERIES, batch_size=1, convert_to_tensor=True)\nd = model.encode_document(DOCUMENTS, batch_size=1, convert_to_tensor=True)\nprint(model.similarity(q, d)) # card's published q[3]/d[3] score: 0.8008\nencode_query and encode_document read the saved prompts. So you never add prefixes by hand. For serving, /v2/embed applies them from input_type instead:\nCopy Code Copied Use a different Browser\nvllm serve nvidia/Nemotron-3-Embed-1B-NVFP4 \\\n--max-model-len 4096 \\\n--max-num-batched-tokens 4096 \\\n--max-cudagraph-capture-size 4096\nCopy Code Copied Use a different Browser\nimport numpy as np, requests\ndef embed(input_type: str, texts: list[str]) -> np.ndarray:\nr = requests.post(\n\"http://localhost:8000/v2/embed\",\njson={\"model\": \"nvidia/Nemotron-3-Embed-1B-NVFP4\",\n\"input_type\": input_type, # \"query\" or \"document\"\n\"texts\": texts,\n\"embedding_types\": [\"float\"],\n\"truncate\": \"END\"},\ntimeout=120,\nr.raise_for_status()\nreturn np.array(r.json()[\"embeddings\"][\"float\"], dtype=np.float32)\nscores = embed(\"query\", QUERIES) @ embed(\"document\", DOCUMENTS).T\nUse Cases With Examples\nMultilingual enterprise search : A support team indexes Hindi, Japanese, and English tickets together. Because retrieval is cross-lingual, a German query can surface a Japanese resolution note.\nCode retrieval : Training included coir_apps , coir_cosqa , synthetic_text2sql , and SWE-bench. Natural-language-to-code lookup is therefore closer to in-distribution.\nAgent memory : The 32,768-token limit lets an agent embed long conversation summaries without aggressive chunking.\nCost-tiered RAG : Serve 1B-NVFP4 for high-volume recall, and route hard queries to the 8B. Because widths differ, this needs two indexes.\nKey Takeaways\nNemotron-3-Embed-8B-BF16 ranks #1 on RTEB at 78.46 avg NDCG@10.\nThree open checkpoints span 8B BF16, 1B BF16, and 1B NVFP4.\nNVFP4 retains 99%+ of BF16 accuracy at up to 2x Blackwell throughput.\nThe 1B came from ModelOpt NAS pruning plus COS+MSE distillation from the 8B.\nAll checkpoints use OpenMDW-1.1 and support 32,768-token inputs.\nCheck out the NVIDIA launch post on Hugging Face , Nemotron 3 Embed collection , 8B-BF16 card , 1B-BF16 card and 1B-NVFP4 card . Also, feel free to follow us on Twitter and don’t forget to join our 150k+ML SubReddit and Subscribe to our Newsletter . Wait! are you on telegram? now you can join us on telegram as well.\nNeed to partner with us for promoting your GitHub Repo OR Hugging Face Page OR Product Release OR Webinar etc.? Connect with us\nAsif Razzaq\nWebsite | + posts Bio\nAsif Razzaq is the CEO of Marktechpost Media Inc.. As a visionary entrepreneur and engineer, Asif is committed to harnessing the potential of Artificial Intelligence for social good. His most recent endeavor is the launch of an Artificial Intelligence Media Platform, Marktechpost, which stands out for its in-depth coverage of machine learning and deep learning news that is both technically sound and easily understandable by a wide audience. The platform boasts of over 2 million monthly views, illustrating its popularity among audiences.\nAsif Razzaq\nZyphra Releases ZUNA1.1: An Apache 2.0 EEG Foundation Model With Variable-Length Inputs From 0.5 To 30 Seconds\nAsif Razzaq\nMoonshot AI Releases Kimi K3: A 2.8 Trillion Parameter Open MoE Model With Kimi Delta Attention and 1M Context\nAsif Razzaq\nOpenAI Details GPT-Red: An Internal Automated Red-Teaming Model That Beat Human Red-Teamers 84% To 13% On Prompt Injection\nAsif Razzaq\nThinking Machines Lab Releases Inkling: A 975B-Parameter Open-Weights Multimodal MoE With 41B Active Parameters And Controllable Thinking Effort",
+  "clean_text": "Technology\nAI Shorts\nArtificial Intelligence\nApplications\nEditors Pick\nLanguage Model\nEmbedding Model\nLarge Language Model\nMachine Learning\nNew Releases\nOpen Source\nStaff\nTech News\nEmbedding models decide which passages an agent ever sees. NVIDIA released Nemotron 3 Embed model to work on that layer. It targets production-scale RAG, agentic retrieval, code retrieval, and agent memory.\nWhat is Nemotron 3 Embed?\nThe model collection includes three open checkpoints. Nemotron-3-Embed-8B-BF16 is the accuracy-first option. Nemotron-3-Embed-1B-BF16 carries the same design into a smaller footprint. Nemotron-3-Embed-1B-NVFP4 is the Blackwell-optimized 4-bit path.\nAll three are transformer encoders trained with bidirectional attention masking . The final embedding comes from average pooling over token-level representations. Maximum sequence length is 32,768 tokens on every checkpoint.\nEach model was evaluated across 34 languages. All three carry the OpenMDW License Agreement, version 1.1 (OpenMDW-1.1) . Notably, the bases are Mistral models. The 8B is built with Ministral-3-8B-Instruct-2512 . Both 1B variants use Ministral-3-3B-Instruct-2512 .\nPerformance\nNemotron-3-Embed-8B-BF16 ranks #1 overall on RTEB (as of July 17 2026), the Retrieval Embedding Benchmark. Evaluation covers its 16 public tasks. Every figure below is average NDCG@10, at model sequence length 4096.\nModel Params Emb dim RTEB ViDoRe-V3 text MMTEB (Retrieval)\nNemotron-3-Embed-8B-BF16 ~8B 4096 78.46 60.60 75.45\nNemotron-3-Embed-1B-BF16 1.14B 2048 72.38 57.74 71.04\nNemotron-3-Embed-1B-NVFP4 1.14B 2048 72.00 — —\nllama-nemotron-embed-vl-1b-v2 — — 61.98 52.54 59.71\nllama-nemotron-embed-1b-v2 — — 60.47 52.10 59.58\nTwo gaps are worth noting. The 1B gains 10.4 RTEB points over llama-nemotron-embed-vl-1b-v2 , the prior-generation baseline. Separately, NVFP4 costs 0.38 RTEB points against its BF16 parent, or 99.5% retention.\nHow the 1B Model was Built ?\nThose 1B scores come from a compression pipeline, not a smaller training run. The parent was nemotron-3-embed-3b , pruned and distilled across two iterative rounds.\nFirst, the 3B parent was pruned to 2B using NVIDIA ModelOpt mcore_minitron Neural Architecture Search (NAS) . The search covers hidden width, FFN size, attention heads, and depth. It then picks the best candidate from the top-10 Pareto front. A 50k in-domain calibration corpus scored those candidates.\nNext, the 2B model was distilled from the fine-tuned 8B embedding teacher. Distillation combined cosine distance loss (COS) and mean squared error (MSE) loss. The data blend was multilingual and in-domain. Finally, the same procedure repeated to produce the 1.14B checkpoint.\nThe NVFP4 Serving Tradeoff\nCompression then continues into the serving format. Quantization hit weights and activations of linear layers only, targeting the NVFP4 data type. The research team used nvidia-modelopt v0.45.0 . Quantization-Aware Distillation (QAD) followed, primarily to recover accuracy on long inputs.\nCalibration used 512 samples: 256 queries and 256 passages from abisee/cnn_dailymail . QAD training used 20k samples.\nThe rsesearch team reports NVFP4 on Blackwell delivers up to 2x higher throughput than BF16 . It retains 99%+ of BF16 retrieval accuracy . The NVFP4 card also documents dynamic embedding sizes. You can slice the 2048-d vector from the start to 1024 or 512 dimensions. Re-normalize afterward.\nInteractive Explainer: The Five-Stage Retrieval Path\nBefore touching code, watch the path run. It animates prefixing, bidirectional encoding, average pooling, L2 normalization, and dot-product scoring. Scores come from each card’s published expected output.\nDeployment Matrix\nAs that walkthrough implies, the checkpoints do not share runtime paths.\nFeature 8B-BF16 1B-BF16 1B-NVFP4\nTransformers / Sentence Transformers Yes Yes No\nvLLM for /v2/embed 0.25.0 0.25.0 0.25.0\nMicroarchitectures Ampere, Hopper, Blackwell Ampere, Hopper, Blackwell Ampere, Hopper, Lovelace, Blackwell\nTest hardware A100 80GB, H100 80GB A100 80GB, H100 80GB GB200, RTX 6000 PRO, A100, H100, L40, L4\nTraining data 50M+ samples 8.5M+ (distillation) 20k (QAD)\nAlongside the checkpoints, NVIDIA research team released an optimized NIM microservice for the 1B model. The Rust-based NIM matches or outperforms the vLLM checkpoint on GB200 and RTX PRO 6000. NVIDIA tested input sequence lengths of 256 and 1024. Separately, NVIDIA NeMo AutoModel recipes cover fine-tuning and distillation.\nUsing It in Code\nWith those paths in mind, prefixes come first. Queries take query: and documents take passage: . Embeddings are L2-normalized, so dot product equals cosine similarity.\nCopy Code Copied Use a different Browser\n# pip install --upgrade \"transformers>=5.2.0\" \"sentence-transformers>=5.4.1\"\nimport torch\nfrom sentence_transformers import SentenceTransformer\nQUERIES = [\"How can someone reduce exposure to pollen during allergy season?\"]\nDOCUMENTS = [\"People with pollen allergy can reduce exposure by staying indoors \"\n\"on dry, windy days, avoiding early-morning outdoor activity, and \"\n\"going outside after rain when pollen levels are lower.\"]\nmodel = SentenceTransformer(\n\"nvidia/Nemotron-3-Embed-8B-BF16\",\ndevice=\"cuda\",\nmodel_kwargs={\"dtype\": torch.bfloat16,\n# use \"sdpa\" if FlashAttention-2 is unavailable\n\"attn_implementation\": \"flash_attention_2\"},\nprocessor_kwargs={\"padding_side\": \"left\"},\nmodel.max_seq_length = 32768\nq = model.encode_query(QUERIES, batch_size=1, convert_to_tensor=True)\nd = model.encode_document(DOCUMENTS, batch_size=1, convert_to_tensor=True)\nprint(model.similarity(q, d)) # card's published q[3]/d[3] score: 0.8008\nencode_query and encode_document read the saved prompts. So you never add prefixes by hand. For serving, /v2/embed applies them from input_type instead:\nCopy Code Copied Use a different Browser\nvllm serve nvidia/Nemotron-3-Embed-1B-NVFP4 \\\n--max-model-len 4096 \\\n--max-num-batched-tokens 4096 \\\n--max-cudagraph-capture-size 4096\nCopy Code Copied Use a different Browser\nimport numpy as np, requests\ndef embed(input_type: str, texts: list[str]) -> np.ndarray:\nr = requests.post(\n\"http://localhost:8000/v2/embed\",\njson={\"model\": \"nvidia/Nemotron-3-Embed-1B-NVFP4\",\n\"input_type\": input_type, # \"query\" or \"document\"\n\"texts\": texts,\n\"embedding_types\": [\"float\"],\n\"truncate\": \"END\"},\ntimeout=120,\nr.raise_for_status()\nreturn np.array(r.json()[\"embeddings\"][\"float\"], dtype=np.float32)\nscores = embed(\"query\", QUERIES) @ embed(\"document\", DOCUMENTS).T\nUse Cases With Examples\nMultilingual enterprise search : A support team indexes Hindi, Japanese, and English tickets together. Because retrieval is cross-lingual, a German query can surface a Japanese resolution note.\nCode retrieval : Training included coir_apps , coir_cosqa , synthetic_text2sql , and SWE-bench. Natural-language-to-code lookup is therefore closer to in-distribution.\nAgent memory : The 32,768-token limit lets an agent embed long conversation summaries without aggressive chunking.\nCost-tiered RAG : Serve 1B-NVFP4 for high-volume recall, and route hard queries to the 8B. Because widths differ, this needs two indexes.\nKey Takeaways\nNemotron-3-Embed-8B-BF16 ranks #1 on RTEB at 78.46 avg NDCG@10.\nThree open checkpoints span 8B BF16, 1B BF16, and 1B NVFP4.\nNVFP4 retains 99%+ of BF16 accuracy at up to 2x Blackwell throughput.\nThe 1B came from ModelOpt NAS pruning plus COS+MSE distillation from the 8B.\nAll checkpoints use OpenMDW-1.1 and support 32,768-token inputs.\nCheck out the NVIDIA launch post on Hugging Face , Nemotron 3 Embed collection , 8B-BF16 card , 1B-BF16 card and 1B-NVFP4 card . Also, feel free to follow us on Twitter and don’t forget to join our 150k+ML SubReddit and Subscribe to our Newsletter . Wait! are you on telegram? now you can join us on telegram as well.\nNeed to partner with us for promoting your GitHub Repo OR Hugging Face Page OR Product Release OR Webinar etc.? Connect with us\nAsif Razzaq\nWebsite | + posts Bio\nAsif Razzaq is the CEO of Marktechpost Media Inc.. As a visionary entrepreneur and engineer, Asif is committed to harnessing the potential of Artificial Intelligence for social good. His most recent endeavor is the launch of an Artificial Intelligence Media Platform, Marktechpost, which stands out for its in-depth coverage of machine learning and deep learning news that is both technically sound and easily understandable by a wide audience. The platform boasts of over 2 million monthly views, illustrating its popularity among audiences.\nAsif Razzaq\nZyphra Releases ZUNA1.1: An Apache 2.0 EEG Foundation Model With Variable-Length Inputs From 0.5 To 30 Seconds\nAsif Razzaq\nMoonshot AI Releases Kimi K3: A 2.8 Trillion Parameter Open MoE Model With Kimi Delta Attention and 1M Context\nAsif Razzaq\nOpenAI Details GPT-Red: An Internal Automated Red-Teaming Model That Beat Human Red-Teamers 84% To 13% On Prompt Injection\nAsif Razzaq\nThinking Machines Lab Releases Inkling: A 975B-Parameter Open-Weights Multimodal MoE With 41B Active Parameters And Controllable Thinking Effort",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-18/r-008-nvidia-发布-nemotron-3-embed-系列-8b-版本在-rteb-基准上排名第一.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-18/r-008-nvidia-发布-nemotron-3-embed-系列-8b-版本在-rteb-基准上排名第一.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-article",
+  "extraction_quality": "high",
+  "extraction_method": "article",
+  "readability_score": 88,
+  "extractor_diagnostics": {
+    "readability_score": 88,
+    "text_length": 9015,
+    "paragraph_count": 85,
+    "sentence_count": 79,
+    "boilerplate_hits": 3,
+    "symbol_ratio": 0.0087,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "article"
+  },
+  "has_full_text": true,
+  "content_length": 9015,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "e5ac1816eba5360e",
+    "missing": []
+  },
+  "evidence_strength": "rich_evidence",
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "NVIDIA 发布 Nemotron 3 Embed 系列，8B 版本在 RTEB 基准上排名第一",
+    "discovery_summary": "NVIDIA 发布 Nemotron 3 Embed 系列，包含三个开源 checkpoint，其中 8B-BF16 版本在 RTEB 基准上以 78.46 的平均 NDCG@10 排名第一。1B-NVFP4 版本在 Blackwell 上吞吐量比 BF16 高 2 倍，精度保留 99.5%，所有模型最大序列长度 32，768 tokens。",
+    "source_name": "MarkTechPost（RSS）",
+    "origin_url": "https://www.marktechpost.com/2026/07/17/nvidia-ai-releases-nemotron-3-embed-an-open-embedding-collection-whose-8b-checkpoint-ranks-1-on-rteb",
+    "discovered_at": "2026-07-18T01:46:31.843Z",
+    "rank_on_page": 229,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "ee50606392122394",
+  "content_hash": "e5ac1816eba5360e",
+  "full_text_hash": "e5ac1816eba5360e",
+  "semantic_hash": "894b057a7c3d54ee",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-17T00:00:00.000Z",
+  "last_seen_at": "2026-07-18T01:54:19.776Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "number",
+      "text": "NVIDIA 发布 Nemotron 3 Embed 系列，包含三个开源 checkpoint，其中 8B-BF16 版本在 RTEB 基准上以 78.46 的平均 NDCG@10 排名第一。1B-NVFP4 版本在 Blackwell 上吞吐量比 BF16 高 2 倍，精度保留 99.5%，所有模型最大序列长度 32，768 tokens。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "product_update",
+      "text": "Technology AI Shorts Artificial Intelligence Applications Editors Pick Language Model Embedding Model Large Language Model Machine Learning New Releases Open Source Staff Tech News Embedding models decide which passages an agent ever sees.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "product_update",
+      "text": "NVIDIA released Nemotron 3 Embed model to work on that layer.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "It targets production-scale RAG, agentic retrieval, code retrieval, and agent memory.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "What is Nemotron 3 Embed?",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "The model collection includes three open checkpoints.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-18T01:54:19.776Z",
+  "business_elements": {
+    "companies": [
+      "MarkTechPost（RSS）",
+      "OpenAI",
+      "GitHub",
+      "Nvidia",
+      "Mistral"
+    ],
+    "products": [
+      "agent",
+      "Agent"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具",
+      "企业服务"
+    ],
+    "roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "计费 / 预算管理",
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "合作 / 联盟",
+      "部署 / 上线",
+      "融资 / 投资"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "财务 / 预算",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "3",
+      "8B",
+      "16",
+      "78.46",
+      "10",
+      "1B",
+      "4",
+      "2 倍"
+    ],
+    "quotes": [
+      "transformers>=5.2.0",
+      "sentence-transformers>=5.4.1",
+      "How can someone reduce exposure to pollen during allergy season?",
+      "People with pollen allergy can reduce exposure by staying indoors ",
+      "on dry, windy days, avoiding early-morning outdoor activity, and "
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Technology AI Shorts Artificial Intelligence Applications Editors Pick Language Model Embedding Model Large Language Model Machine Learning New Releases Open Source Staff Tech News Embedding models decide which passages an agent ever sees.",
+      "NVIDIA released Nemotron 3 Embed model to work on that layer.",
+      "It targets production-scale RAG, agentic retrieval, code retrieval, and agent memory."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_product_or_service",
+    "importance_score": 5,
+    "importance_reason": "new product or service; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "enterprise_ai_transformation_lens",
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": true,
+    "trend_candidate_context": true,
+    "signal_card_candidate": true,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "core_pool"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# NVIDIA 发布 Nemotron 3 Embed 系列，8B 版本在 RTEB 基准上排名第一\n\n- raw_id: R-008\n- title_zh: NVIDIA 发布 Nemotron 3 Embed 系列，8B 版本在 RTEB 基准上排名第一\n- title_translation_status: not_required\n- title_translation_method: source_title\n- original_url: https://www.marktechpost.com/2026/07/17/nvidia-ai-releases-nemotron-3-embed-an-open-embedding-collection-whose-8b-checkpoint-ranks-1-on-rteb\n- source_name: MarkTechPost（RSS）\n- collected_at: 2026-07-18T01:54:19.776Z\n\n## clean_text\n\nTechnology\nAI Shorts\nArtificial Intelligence\nApplications\nEditors Pick\nLanguage Model\nEmbedding Model\nLarge Language Model\nMachine Learning\nNew Releases\nOpen Source\nStaff\nTech News\nEmbedding models decide which passages an agent ever sees. NVIDIA released Nemotron 3 Embed model to work on that layer. It targets production-scale RAG, agentic retrieval, code retrieval, and agent memory.\nWhat is Nemotron 3 Embed?\nThe model collection includes three open checkpoints. Nemotron-3-Embed-8B-BF16 is the accuracy-first option. Nemotron-3-Embed-1B-BF16 carries the same design into a smaller footprint. Nemotron-3-Embed-1B-NVFP4 is the Blackwell-optimized 4-bit path.\nAll three are transformer encoders trained with bidirectional attention masking . The final embedding comes from average pooling over token-level representations. Maximum sequence length is 32,768 tokens on every checkpoint.\nEach model was evaluated across 34 languages. All three carry the OpenMDW License Agreement, version 1.1 (OpenMDW-1.1) . Notably, the bases are Mistral models. The 8B is built with Ministral-3-8B-Instruct-2512 . Both 1B variants use Ministral-3-3B-Instruct-2512 .\nPerformance\nNemotron-3-Embed-8B-BF16 ranks #1 overall on RTEB (as of July 17 2026), the Retrieval Embedding Benchmark. Evaluation covers its 16 public tasks. Every figure below is average NDCG@10, at model sequence length 4096.\nModel Params Emb dim RTEB ViDoRe-V3 text MMTEB (Retrieval)\nNemotron-3-Embed-8B-BF16 ~8B 4096 78.46 60.60 75.45\nNemotron-3-Embed-1B-BF16 1.14B 2048 72.38 57.74 71.04\nNemotron-3-Embed-1B-NVFP4 1.14B 2048 72.00 — —\nllama-nemotron-embed-vl-1b-v2 — — 61.98 52.54 59.71\nllama-nemotron-embed-1b-v2 — — 60.47 52.10 59.58\nTwo gaps are worth noting. The 1B gains 10.4 RTEB points over llama-nemotron-embed-vl-1b-v2 , the prior-generation baseline. Separately, NVFP4 costs 0.38 RTEB points against its BF16 parent, or 99.5% retention.\nHow the 1B Model was Built ?\nThose 1B scores come from a compression pipeline, not a smaller training run. The parent was nemotron-3-embed-3b , pruned and distilled across two iterative rounds.\nFirst, the 3B parent was pruned to 2B using NVIDIA ModelOpt mcore_minitron Neural Architecture Search (NAS) . The search covers hidden width, FFN size, attention heads, and depth. It then picks the best candidate from the top-10 Pareto front. A 50k in-domain calibration corpus scored those candidates.\nNext, the 2B model was distilled from the fine-tuned 8B embedding teacher. Distillation combined cosine distance loss (COS) and mean squared error (MSE) loss. The data blend was multilingual and in-domain. Finally, the same procedure repeated to produce the 1.14B checkpoint.\nThe NVFP4 Serving Tradeoff\nCompression then continues into the serving format. Quantization hit weights and activations of linear layers only, targeting the NVFP4 data type. The research team used nvidia-modelopt v0.45.0 . Quantization-Aware Distillation (QAD) followed, primarily to recover accuracy on long inputs.\nCalibration used 512 samples: 256 queries and 256 passages from abisee/cnn_dailymail . QAD training used 20k samples.\nThe rsesearch team reports NVFP4 on Blackwell delivers up to 2x higher throughput than BF16 . It retains 99%+ of BF16 retrieval accuracy . The NVFP4 card also documents dynamic embedding sizes. You can slice the 2048-d vector from the start to 1024 or 512 dimensions. Re-normalize afterward.\nInteractive Explainer: The Five-Stage Retrieval Path\nBefore touching code, watch the path run. It animates prefixing, bidirectional encoding, average pooling, L2 normalization, and dot-product scoring. Scores come from each card’s published expected output.\nDeployment Matrix\nAs that walkthrough implies, the checkpoints do not share runtime paths.\nFeature 8B-BF16 1B-BF16 1B-NVFP4\nTransformers / Sentence Transformers Yes Yes No\nvLLM for /v2/embed 0.25.0 0.25.0 0.25.0\nMicroarchitectures Ampere, Hopper, Blackwell Ampere, Hopper, Blackwell Ampere, Hopper, Lovelace, Blackwell\nTest hardware A100 80GB, H100 80GB A100 80GB, H100 80GB GB200, RTX 6000 PRO, A100, H100, L40, L4\nTraining data 50M+ samples 8.5M+ (distillation) 20k (QAD)\nAlongside the checkpoints, NVIDIA research team released an optimized NIM microservice for the 1B model. The Rust-based NIM matches or outperforms the vLLM checkpoint on GB200 and RTX PRO 6000. NVIDIA tested input sequence lengths of 256 and 1024. Separately, NVIDIA NeMo AutoModel recipes cover fine-tuning and distillation.\nUsing It in Code\nWith those paths in mind, prefixes come first. Queries take query: and documents take passage: . Embeddings are L2-normalized, so dot product equals cosine similarity.\nCopy Code Copied Use a different Browser\n# pip install --upgrade \"transformers>=5.2.0\" \"sentence-transformers>=5.4.1\"\nimport torch\nfrom sentence_transformers import SentenceTransformer\nQUERIES = [\"How can someone reduce exposure to pollen during allergy season?\"]\nDOCUMENTS = [\"People with pollen allergy can reduce exposure by staying indoors \"\n\"on dry, windy days, avoiding early-morning outdoor activity, and \"\n\"going outside after rain when pollen levels are lower.\"]\nmodel = SentenceTransformer(\n\"nvidia/Nemotron-3-Embed-8B-BF16\",\ndevice=\"cuda\",\nmodel_kwargs={\"dtype\": torch.bfloat16,\n# use \"sdpa\" if FlashAttention-2 is unavailable\n\"attn_implementation\": \"flash_attention_2\"},\nprocessor_kwargs={\"padding_side\": \"left\"},\nmodel.max_seq_length = 32768\nq = model.encode_query(QUERIES, batch_size=1, convert_to_tensor=True)\nd = model.encode_document(DOCUMENTS, batch_size=1, convert_to_tensor=True)\nprint(model.similarity(q, d)) # card's published q[3]/d[3] score: 0.8008\nencode_query and encode_document read the saved prompts. So you never add prefixes by hand. For serving, /v2/embed applies them from input_type instead:\nCopy Code Copied Use a different Browser\nvllm serve nvidia/Nemotron-3-Embed-1B-NVFP4 \\\n--max-model-len 4096 \\\n--max-num-batched-tokens 4096 \\\n--max-cudagraph-capture-size 4096\nCopy Code Copied Use a different Browser\nimport numpy as np, requests\ndef embed(input_type: str, texts: list[str]) -> np.ndarray:\nr = requests.post(\n\"http://localhost:8000/v2/embed\",\njson={\"model\": \"nvidia/Nemotron-3-Embed-1B-NVFP4\",\n\"input_type\": input_type, # \"query\" or \"document\"\n\"texts\": texts,\n\"embedding_types\": [\"float\"],\n\"truncate\": \"END\"},\ntimeout=120,\nr.raise_for_status()\nreturn np.array(r.json()[\"embeddings\"][\"float\"], dtype=np.float32)\nscores = embed(\"query\", QUERIES) @ embed(\"document\", DOCUMENTS).T\nUse Cases With Examples\nMultilingual enterprise search : A support team indexes Hindi, Japanese, and English tickets together. Because retrieval is cross-lingual, a German query can surface a Japanese resolution note.\nCode retrieval : Training included coir_apps , coir_cosqa , synthetic_text2sql , and SWE-bench. Natural-language-to-code lookup is therefore closer to in-distribution.\nAgent memory : The 32,768-token limit lets an agent embed long conversation summaries without aggressive chunking.\nCost-tiered RAG : Serve 1B-NVFP4 for high-volume recall, and route hard queries to the 8B. Because widths differ, this needs two indexes.\nKey Takeaways\nNemotron-3-Embed-8B-BF16 ranks #1 on RTEB at 78.46 avg NDCG@10.\nThree open checkpoints span 8B BF16, 1B BF16, and 1B NVFP4.\nNVFP4 retains 99%+ of BF16 accuracy at up to 2x Blackwell throughput.\nThe 1B came from ModelOpt NAS pruning plus COS+MSE distillation from the 8B.\nAll checkpoints use OpenMDW-1.1 and support 32,768-token inputs.\nCheck out the NVIDIA launch post on Hugging Face , Nemotron 3 Embed collection , 8B-BF16 card , 1B-BF16 card and 1B-NVFP4 card . Also, feel free to follow us on Twitter and don’t forget to join our 150k+ML SubReddit and Subscribe to our Newsletter . Wait! are you on telegram? now you can join us on telegram as well.\nNeed to partner with us for promoting your GitHub Repo OR Hugging Face Page OR Product Release OR Webinar etc.? Connect with us\nAsif Razzaq\nWebsite | + posts Bio\nAsif Razzaq is the CEO of Marktechpost Media Inc.. As a visionary entrepreneur and engineer, Asif is committed to harnessing the potential of Artificial Intelligence for social good. His most recent endeavor is the launch of an Artificial Intelligence Media Platform, Marktechpost, which stands out for its in-depth coverage of machine learning and deep learning news that is both technically sound and easily understandable by a wide audience. The platform boasts of over 2 million monthly views, illustrating its popularity among audiences.\nAsif Razzaq\nZyphra Releases ZUNA1.1: An Apache 2.0 EEG Foundation Model With Variable-Length Inputs From 0.5 To 30 Seconds\nAsif Razzaq\nMoonshot AI Releases Kimi K3: A 2.8 Trillion Parameter Open MoE Model With Kimi Delta Attention and 1M Context\nAsif Razzaq\nOpenAI Details GPT-Red: An Internal Automated Red-Teaming Model That Beat Human Red-Teamers 84% To 13% On Prompt Injection\nAsif Razzaq\nThinking Machines Lab Releases Inkling: A 975B-Parameter Open-Weights Multimodal MoE With 41B Active Parameters And Controllable Thinking Effort\n\n## full_text\n\nTechnology\nAI Shorts\nArtificial Intelligence\nApplications\nEditors Pick\nLanguage Model\nEmbedding Model\nLarge Language Model\nMachine Learning\nNew Releases\nOpen Source\nStaff\nTech News\nEmbedding models decide which passages an agent ever sees. NVIDIA released Nemotron 3 Embed model to work on that layer. It targets production-scale RAG, agentic retrieval, code retrieval, and agent memory.\nWhat is Nemotron 3 Embed?\nThe model collection includes three open checkpoints. Nemotron-3-Embed-8B-BF16 is the accuracy-first option. Nemotron-3-Embed-1B-BF16 carries the same design into a smaller footprint. Nemotron-3-Embed-1B-NVFP4 is the Blackwell-optimized 4-bit path.\nAll three are transformer encoders trained with bidirectional attention masking . The final embedding comes from average pooling over token-level representations. Maximum sequence length is 32,768 tokens on every checkpoint.\nEach model was evaluated across 34 languages. All three carry the OpenMDW License Agreement, version 1.1 (OpenMDW-1.1) . Notably, the bases are Mistral models. The 8B is built with Ministral-3-8B-Instruct-2512 . Both 1B variants use Ministral-3-3B-Instruct-2512 .\nPerformance\nNemotron-3-Embed-8B-BF16 ranks #1 overall on RTEB (as of July 17 2026), the Retrieval Embedding Benchmark. Evaluation covers its 16 public tasks. Every figure below is average NDCG@10, at model sequence length 4096.\nModel Params Emb dim RTEB ViDoRe-V3 text MMTEB (Retrieval)\nNemotron-3-Embed-8B-BF16 ~8B 4096 78.46 60.60 75.45\nNemotron-3-Embed-1B-BF16 1.14B 2048 72.38 57.74 71.04\nNemotron-3-Embed-1B-NVFP4 1.14B 2048 72.00 — —\nllama-nemotron-embed-vl-1b-v2 — — 61.98 52.54 59.71\nllama-nemotron-embed-1b-v2 — — 60.47 52.10 59.58\nTwo gaps are worth noting. The 1B gains 10.4 RTEB points over llama-nemotron-embed-vl-1b-v2 , the prior-generation baseline. Separately, NVFP4 costs 0.38 RTEB points against its BF16 parent, or 99.5% retention.\nHow the 1B Model was Built ?\nThose 1B scores come from a compression pipeline, not a smaller training run. The parent was nemotron-3-embed-3b , pruned and distilled across two iterative rounds.\nFirst, the 3B parent was pruned to 2B using NVIDIA ModelOpt mcore_minitron Neural Architecture Search (NAS) . The search covers hidden width, FFN size, attention heads, and depth. It then picks the best candidate from the top-10 Pareto front. A 50k in-domain calibration corpus scored those candidates.\nNext, the 2B model was distilled from the fine-tuned 8B embedding teacher. Distillation combined cosine distance loss (COS) and mean squared error (MSE) loss. The data blend was multilingual and in-domain. Finally, the same procedure repeated to produce the 1.14B checkpoint.\nThe NVFP4 Serving Tradeoff\nCompression then continues into the serving format. Quantization hit weights and activations of linear layers only, targeting the NVFP4 data type. The research team used nvidia-modelopt v0.45.0 . Quantization-Aware Distillation (QAD) followed, primarily to recover accuracy on long inputs.\nCalibration used 512 samples: 256 queries and 256 passages from abisee/cnn_dailymail . QAD training used 20k samples.\nThe rsesearch team reports NVFP4 on Blackwell delivers up to 2x higher throughput than BF16 . It retains 99%+ of BF16 retrieval accuracy . The NVFP4 card also documents dynamic embedding sizes. You can slice the 2048-d vector from the start to 1024 or 512 dimensions. Re-normalize afterward.\nInteractive Explainer: The Five-Stage Retrieval Path\nBefore touching code, watch the path run. It animates prefixing, bidirectional encoding, average pooling, L2 normalization, and dot-product scoring. Scores come from each card’s published expected output.\nDeployment Matrix\nAs that walkthrough implies, the checkpoints do not share runtime paths.\nFeature 8B-BF16 1B-BF16 1B-NVFP4\nTransformers / Sentence Transformers Yes Yes No\nvLLM for /v2/embed 0.25.0 0.25.0 0.25.0\nMicroarchitectures Ampere, Hopper, Blackwell Ampere, Hopper, Blackwell Ampere, Hopper, Lovelace, Blackwell\nTest hardware A100 80GB, H100 80GB A100 80GB, H100 80GB GB200, RTX 6000 PRO, A100, H100, L40, L4\nTraining data 50M+ samples 8.5M+ (distillation) 20k (QAD)\nAlongside the checkpoints, NVIDIA research team released an optimized NIM microservice for the 1B model. The Rust-based NIM matches or outperforms the vLLM checkpoint on GB200 and RTX PRO 6000. NVIDIA tested input sequence lengths of 256 and 1024. Separately, NVIDIA NeMo AutoModel recipes cover fine-tuning and distillation.\nUsing It in Code\nWith those paths in mind, prefixes come first. Queries take query: and documents take passage: . Embeddings are L2-normalized, so dot product equals cosine similarity.\nCopy Code Copied Use a different Browser\n# pip install --upgrade \"transformers>=5.2.0\" \"sentence-transformers>=5.4.1\"\nimport torch\nfrom sentence_transformers import SentenceTransformer\nQUERIES = [\"How can someone reduce exposure to pollen during allergy season?\"]\nDOCUMENTS = [\"People with pollen allergy can reduce exposure by staying indoors \"\n\"on dry, windy days, avoiding early-morning outdoor activity, and \"\n\"going outside after rain when pollen levels are lower.\"]\nmodel = SentenceTransformer(\n\"nvidia/Nemotron-3-Embed-8B-BF16\",\ndevice=\"cuda\",\nmodel_kwargs={\"dtype\": torch.bfloat16,\n# use \"sdpa\" if FlashAttention-2 is unavailable\n\"attn_implementation\": \"flash_attention_2\"},\nprocessor_kwargs={\"padding_side\": \"left\"},\nmodel.max_seq_length = 32768\nq = model.encode_query(QUERIES, batch_size=1, convert_to_tensor=True)\nd = model.encode_document(DOCUMENTS, batch_size=1, convert_to_tensor=True)\nprint(model.similarity(q, d)) # card's published q[3]/d[3] score: 0.8008\nencode_query and encode_document read the saved prompts. So you never add prefixes by hand. For serving, /v2/embed applies them from input_type instead:\nCopy Code Copied Use a different Browser\nvllm serve nvidia/Nemotron-3-Embed-1B-NVFP4 \\\n--max-model-len 4096 \\\n--max-num-batched-tokens 4096 \\\n--max-cudagraph-capture-size 4096\nCopy Code Copied Use a different Browser\nimport numpy as np, requests\ndef embed(input_type: str, texts: list[str]) -> np.ndarray:\nr = requests.post(\n\"http://localhost:8000/v2/embed\",\njson={\"model\": \"nvidia/Nemotron-3-Embed-1B-NVFP4\",\n\"input_type\": input_type, # \"query\" or \"document\"\n\"texts\": texts,\n\"embedding_types\": [\"float\"],\n\"truncate\": \"END\"},\ntimeout=120,\nr.raise_for_status()\nreturn np.array(r.json()[\"embeddings\"][\"float\"], dtype=np.float32)\nscores = embed(\"query\", QUERIES) @ embed(\"document\", DOCUMENTS).T\nUse Cases With Examples\nMultilingual enterprise search : A support team indexes Hindi, Japanese, and English tickets together. Because retrieval is cross-lingual, a German query can surface a Japanese resolution note.\nCode retrieval : Training included coir_apps , coir_cosqa , synthetic_text2sql , and SWE-bench. Natural-language-to-code lookup is therefore closer to in-distribution.\nAgent memory : The 32,768-token limit lets an agent embed long conversation summaries without aggressive chunking.\nCost-tiered RAG : Serve 1B-NVFP4 for high-volume recall, and route hard queries to the 8B. Because widths differ, this needs two indexes.\nKey Takeaways\nNemotron-3-Embed-8B-BF16 ranks #1 on RTEB at 78.46 avg NDCG@10.\nThree open checkpoints span 8B BF16, 1B BF16, and 1B NVFP4.\nNVFP4 retains 99%+ of BF16 accuracy at up to 2x Blackwell throughput.\nThe 1B came from ModelOpt NAS pruning plus COS+MSE distillation from the 8B.\nAll checkpoints use OpenMDW-1.1 and support 32,768-token inputs.\nCheck out the NVIDIA launch post on Hugging Face , Nemotron 3 Embed collection , 8B-BF16 card , 1B-BF16 card and 1B-NVFP4 card . Also, feel free to follow us on Twitter and don’t forget to join our 150k+ML SubReddit and Subscribe to our Newsletter . Wait! are you on telegram? now you can join us on telegram as well.\nNeed to partner with us for promoting your GitHub Repo OR Hugging Face Page OR Product Release OR Webinar etc.? Connect with us\nAsif Razzaq\nWebsite | + posts Bio\nAsif Razzaq is the CEO of Marktechpost Media Inc.. As a visionary entrepreneur and engineer, Asif is committed to harnessing the potential of Artificial Intelligence for social good. His most recent endeavor is the launch of an Artificial Intelligence Media Platform, Marktechpost, which stands out for its in-depth coverage of machine learning and deep learning news that is both technically sound and easily understandable by a wide audience. The platform boasts of over 2 million monthly views, illustrating its popularity among audiences.\nAsif Razzaq\nZyphra Releases ZUNA1.1: An Apache 2.0 EEG Foundation Model With Variable-Length Inputs From 0.5 To 30 Seconds\nAsif Razzaq\nMoonshot AI Releases Kimi K3: A 2.8 Trillion Parameter Open MoE Model With Kimi Delta Attention and 1M Context\nAsif Razzaq\nOpenAI Details GPT-Red: An Internal Automated Red-Teaming Model That Beat Human Red-Teamers 84% To 13% On Prompt Injection\nAsif Razzaq\nThinking Machines Lab Releases Inkling: A 975B-Parameter Open-Weights Multimodal MoE With 41B Active Parameters And Controllable Thinking Effort\n\n## extraction_diagnostics\n\n- extraction_method: article\n- readability_score: 88\n- fetch_status: fetched-readable-text-article\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [number / signal_card_candidate, relationship_graph_input, case, trend_candidate_context / high] NVIDIA 发布 Nemotron 3 Embed 系列，包含三个开源 checkpoint，其中 8B-BF16 版本在 RTEB 基准上以 78.46 的平均 NDCG@10 排名第一。1B-NVFP4 版本在 Blackwell 上吞吐量比 BF16 高 2 倍，精度保留 99.5%，所有模型最大序列长度 32，768 tokens。\n2. [product_update / signal_card_candidate, relationship_graph_input, business_change / high] Technology AI Shorts Artificial Intelligence Applications Editors Pick Language Model Embedding Model Large Language Model Machine Learning New Releases Open Source Staff Tech News Embedding models decide which passages an agent ever sees.\n3. [product_update / signal_card_candidate, relationship_graph_input, business_change / high] NVIDIA released Nemotron 3 Embed model to work on that layer.\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] It targets production-scale RAG, agentic retrieval, code retrieval, and agent memory.\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] What is Nemotron 3 Embed?\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] The model collection includes three open checkpoints.\n"
+}

@@ -1,0 +1,252 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-022
+title: "Singtel Group partners with Sierra to transform customer engagement with AI | Sierra"
+title_zh: "Singtel Group 与 Sierra 合作，借助 AI 智能体革新客户互动体验"
+title_translation_status: translated
+title_translation_method: deepseek_title_translation
+title_translation_model: deepseek-v4-flash
+original_url: "https://sierra.ai/customers/singtel"
+canonical_url: "https://sierra.ai/customers/singtel"
+source_name: "keyword search / Anysearch"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_customer_case"
+search_path: "official_original"
+search_path_label: "官方原始路径"
+author: ""
+published_at: "2026-03-04T12:00:32.172Z"
+collected_at: 2026-07-18T01:54:33.010Z
+language: mixed
+full_text_hash: c7d291f12737574d
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-18/r-022-singtel-group-partners-with-sierra-to-transform-customer-engagement-wi.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-18/r-022-singtel-group-partners-with-sierra-to-transform-customer-engagement-wi.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":5224,"paragraph_count":24,"sentence_count":34,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+has_full_text: true
+content_length: 5224
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"c7d291f12737574d","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 72077a1b9e2526a7
+content_hash: c7d291f12737574d
+semantic_hash: c630cdd0ddd4157b
+duplicate_of: ""
+first_seen_at: "2026-03-04T12:00:32.172Z"
+last_seen_at: 2026-07-18T01:54:33.010Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":false,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_case","importance_score":5,"importance_reason":"real customer or adoption case; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","market_shaping_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["keyword search","Anysearch"],"products":["agent","agents"],"people":[],"industries":["企业服务"],"roles":["销售 / 客服"],"workflows":["权限 / 安全治理","部署 / 集成交付"],"business_actions":["发布 / 推出","合作 / 联盟","部署 / 上线"],"affected_departments":["IT / 安全","销售 / 客服"],"numbers":["2026","10","70","000","73%","76%","200","820 million"],"quotes":[]}
+evidence_seed: {"company_actions":[],"case_details":["Singtel Group partners with Sierra to transform customer engagement with AI | Sierra Skip to main content The Singtel Group today announced a strategic partnership with Sierra, the leading conversational AI platform, to enhance its customer engagement experience across the Group. This is in line w..... / query=enterprise AI agent customer story deployment announced 2026 / intent=find_customer_case / path=official_original","The Singtel Group today announced a strategic partnership with Sierra, the leading conversational AI platform, to enhance its customer engagement experience across the Group.","This is in line with its commitment to elevating its services and providing more value to its customers."],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["销售 / 客服"],"risks_or_constraints":[]}
+missing_information: []
+key_excerpts: [{"type":"case_detail","text":"Singtel Group partners with Sierra to transform customer engagement with AI | Sierra Skip to main content The Singtel Group today announced a strategic partnership with Sierra, the leading conversational AI platform, to enhance its customer engagement experience across the Group. This is in line w..... / query=enterprise AI agent customer story deployment announced 2026 / intent=find_customer_case / path=official_original","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"The Singtel Group today announced a strategic partnership with Sierra, the leading conversational AI platform, to enhance its customer engagement experience across the Group.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"This is in line with its commitment to elevating its services and providing more value to its customers.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"The collaboration started late January with a pilot involving Singtel Singapore’s customer care ecosystem, in particular its AI assistant “Shirley”.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"More natural, conversational and prompt functions were incorporated into “Shirley” to enable customers to independently resolve queries and complete transactions with ease.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"“Shirley” is designed to understand local expressions and colloquialisms, including Singlish, enabling more intuitive and relatable interactions for customers in Singapore.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-18T01:54:33.010Z
+theme: targeted-pool-gap-refill
+keyword_group: targeted-pool-gap-refill
+copyright_note: local research archive only
+---
+
+# Singtel Group partners with Sierra to transform customer engagement with AI | Sierra
+
+## clean_text
+
+The Singtel Group today announced a strategic partnership with Sierra, the leading conversational AI platform, to enhance its customer engagement experience across the Group. This is in line with its commitment to elevating its services and providing more value to its customers.
+The collaboration started late January with a pilot involving Singtel Singapore’s customer care ecosystem, in particular its AI assistant “Shirley”. More natural, conversational and prompt functions were incorporated into “Shirley” to enable customers to independently resolve queries and complete transactions with ease. “Shirley” is designed to understand local expressions and colloquialisms, including Singlish, enabling more intuitive and relatable interactions for customers in Singapore. Singtel is working on adding more languages to its capabilities to connect better with the local communities.
+Mr Ng Tian Chong, Chief Executive Officer, Singtel Singapore, said: “Putting our customers first has always been at the heart of what we do. The deployment of agentic AI across chat and voice is about delivering real value — more personalised experiences, greater convenience and faster, more responsive service. By using AI to support our customer service teams, we can ensure customers are promptly and well assisted, while empowering our agents to focus on more complex cases where human expertise matters most. Our AI agents are designed to understand local expressions and even Singlish, reflecting our roots as a homegrown company serving a diverse nation. This marks an important step in redefining how we build and sustain customer relationships in the AI era.”
+In addition, Singtel Singapore will deploy voice-based AI agents for outbound sales calls to customers to support sales transactions within clearly defined compliance and governance standards. Singtel Singapore also plans to extend these capabilities across its other departments as well as to its enterprise clients for use in their businesses.
+Bret Taylor, CEO and Co-Founder of Sierra, said: “We founded Sierra in the belief that AI can create better, more human customer experiences. Our partnership with Singtel — Asia’s leading communications technology group — is helping make that a reality, deepening their relationship with customers, while also growing their business. Singtel is a pioneer in applied AI and we’re so excited to be working with them.”
+Driving positive customer engagements
+To enable customers to independently resolve simple requests, Sierra’s agentic AI technology verifies customers’ details, and provides relevant product and service information, via Singtel Singapore’s virtual customer service platforms, including “Shirley”. These platforms are also designed to ensure interactions remain accurate, secure, and with human oversight.
+Singtel went live in less than 10 weeks, and in the first six weeks since launch, ”Shirley” handled over 70,000 customer cases involving high volume requests in areas such as mobile issues and roaming services.
+Initial results have been positive:
+73% of mobile and home troubleshooting cases were resolved without requiring a Customer Care officer.
+76% of roaming sign-up requests were completed successfully without requiring a Customer Care officer.
+More than 200 roaming add-ons were purchased independently.
+The findings reflect how well “Shirley” was able to support customers without the need for human intervention. This also reduces manual workloads on Customer Care officers, so they can focus on more complex, higher-value engagements. This approach improves overall productivity and strengthens brand affinity.
+Building the world’s most intelligent connectivity company
+The Singtel Group is uniquely positioned as Adopter, Provider, and Enabler of AI.
+Adopter: AI is applied across business functions and corporate units to drive efficiency, improve customer experience, and unlock new sources of value.
+Provider: Designs, develops, and commercialises AI solutions, extending the Group’s capabilities to serve internal needs and external markets.
+Enabler: Provides the critical connectivity, infrastructure, and platforms that make AI adoption possible at scale.
+###
+About Singtel Group
+Singtel Group is a leading Asian communications technology group, operating next-generation connectivity, digital infrastructure and digital businesses including regional data centre arm Nxera and regional IT services arm NCS. The Group has presence in Asia, Australia and Africa and reaches over 820 million mobile customers in 20 countries.
+For consumers, Singtel delivers a complete and integrated suite of services, including mobile, broadband and TV. For enterprises, Singtel offers a complementary array of workforce mobility solutions, data hosting, cloud, network infrastructure, analytics and cyber security capabilities.
+Singtel is dedicated to continuous innovation, harnessing technology to create new and exciting customer experiences, support enterprises in their digital transformation and shape a more sustainable, digital future.
+For more information, visit www.singtel.com .
+Discover what Sierra can do for you
+Find out how Sierra can help you deliver better outcomes with AI.
+Learn more
+
+## full_text
+
+The Singtel Group today announced a strategic partnership with Sierra, the leading conversational AI platform, to enhance its customer engagement experience across the Group. This is in line with its commitment to elevating its services and providing more value to its customers.
+The collaboration started late January with a pilot involving Singtel Singapore’s customer care ecosystem, in particular its AI assistant “Shirley”. More natural, conversational and prompt functions were incorporated into “Shirley” to enable customers to independently resolve queries and complete transactions with ease. “Shirley” is designed to understand local expressions and colloquialisms, including Singlish, enabling more intuitive and relatable interactions for customers in Singapore. Singtel is working on adding more languages to its capabilities to connect better with the local communities.
+Mr Ng Tian Chong, Chief Executive Officer, Singtel Singapore, said: “Putting our customers first has always been at the heart of what we do. The deployment of agentic AI across chat and voice is about delivering real value — more personalised experiences, greater convenience and faster, more responsive service. By using AI to support our customer service teams, we can ensure customers are promptly and well assisted, while empowering our agents to focus on more complex cases where human expertise matters most. Our AI agents are designed to understand local expressions and even Singlish, reflecting our roots as a homegrown company serving a diverse nation. This marks an important step in redefining how we build and sustain customer relationships in the AI era.”
+In addition, Singtel Singapore will deploy voice-based AI agents for outbound sales calls to customers to support sales transactions within clearly defined compliance and governance standards. Singtel Singapore also plans to extend these capabilities across its other departments as well as to its enterprise clients for use in their businesses.
+Bret Taylor, CEO and Co-Founder of Sierra, said: “We founded Sierra in the belief that AI can create better, more human customer experiences. Our partnership with Singtel — Asia’s leading communications technology group — is helping make that a reality, deepening their relationship with customers, while also growing their business. Singtel is a pioneer in applied AI and we’re so excited to be working with them.”
+Driving positive customer engagements
+To enable customers to independently resolve simple requests, Sierra’s agentic AI technology verifies customers’ details, and provides relevant product and service information, via Singtel Singapore’s virtual customer service platforms, including “Shirley”. These platforms are also designed to ensure interactions remain accurate, secure, and with human oversight.
+Singtel went live in less than 10 weeks, and in the first six weeks since launch, ”Shirley” handled over 70,000 customer cases involving high volume requests in areas such as mobile issues and roaming services.
+Initial results have been positive:
+73% of mobile and home troubleshooting cases were resolved without requiring a Customer Care officer.
+76% of roaming sign-up requests were completed successfully without requiring a Customer Care officer.
+More than 200 roaming add-ons were purchased independently.
+The findings reflect how well “Shirley” was able to support customers without the need for human intervention. This also reduces manual workloads on Customer Care officers, so they can focus on more complex, higher-value engagements. This approach improves overall productivity and strengthens brand affinity.
+Building the world’s most intelligent connectivity company
+The Singtel Group is uniquely positioned as Adopter, Provider, and Enabler of AI.
+Adopter: AI is applied across business functions and corporate units to drive efficiency, improve customer experience, and unlock new sources of value.
+Provider: Designs, develops, and commercialises AI solutions, extending the Group’s capabilities to serve internal needs and external markets.
+Enabler: Provides the critical connectivity, infrastructure, and platforms that make AI adoption possible at scale.
+###
+About Singtel Group
+Singtel Group is a leading Asian communications technology group, operating next-generation connectivity, digital infrastructure and digital businesses including regional data centre arm Nxera and regional IT services arm NCS. The Group has presence in Asia, Australia and Africa and reaches over 820 million mobile customers in 20 countries.
+For consumers, Singtel delivers a complete and integrated suite of services, including mobile, broadband and TV. For enterprises, Singtel offers a complementary array of workforce mobility solutions, data hosting, cloud, network infrastructure, analytics and cyber security capabilities.
+Singtel is dedicated to continuous innovation, harnessing technology to create new and exciting customer experiences, support enterprises in their digital transformation and shape a more sustainable, digital future.
+For more information, visit www.singtel.com .
+Discover what Sierra can do for you
+Find out how Sierra can help you deliver better outcomes with AI.
+Learn more
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 97
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":5224,"paragraph_count":24,"sentence_count":34,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=high
+   Singtel Group partners with Sierra to transform customer engagement with AI | Sierra Skip to main content The Singtel Group today announced a strategic partnership with Sierra, the leading conversational AI platform, to enhance its customer engagement experience across the Group. This is in line w..... / query=enterprise AI agent customer story deployment announced 2026 / intent=find_customer_case / path=official_original
+
+2. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=high
+   The Singtel Group today announced a strategic partnership with Sierra, the leading conversational AI platform, to enhance its customer engagement experience across the Group.
+
+3. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=high
+   This is in line with its commitment to elevating its services and providing more value to its customers.
+
+4. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=high
+   The collaboration started late January with a pilot involving Singtel Singapore’s customer care ecosystem, in particular its AI assistant “Shirley”.
+
+5. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=high
+   More natural, conversational and prompt functions were incorporated into “Shirley” to enable customers to independently resolve queries and complete transactions with ease.
+
+6. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=high
+   “Shirley” is designed to understand local expressions and colloquialisms, including Singlish, enabling more intuitive and relatable interactions for customers in Singapore.
+
+## business_elements
+
+- companies: keyword search, Anysearch
+- products: agent, agents
+- people: 暂无公开信息
+- industries: 企业服务
+- roles: 销售 / 客服
+- workflows: 权限 / 安全治理, 部署 / 集成交付
+- business_actions: 发布 / 推出, 合作 / 联盟, 部署 / 上线
+- affected_departments: IT / 安全, 销售 / 客服
+- numbers: 2026, 10, 70, 000, 73%, 76%, 200, 820 million
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: 暂无公开信息
+- case_details: Singtel Group partners with Sierra to transform customer engagement with AI | Sierra Skip to main content The Singtel Group today announced a strategic partnership with Sierra, the leading conversational AI platform, to enhance its customer engagement experience across the Group. This is in line w..... / query=enterprise AI agent customer story deployment announced 2026 / intent=find_customer_case / path=official_original / The Singtel Group today announced a strategic partnership with Sierra, the leading conversational AI platform, to enhance its customer engagement experience across the Group. / This is in line with its commitment to elevating its services and providing more value to its customers.
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 销售 / 客服
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_case
+- importance_score: 5
+- importance_reason: real customer or adoption case; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,market_shaping_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: false
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- watchlist
+
+## missing_information
+
+- none
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Singtel Group partners with Sierra to transform customer engagement with AI | Sierra Skip to main content The Singtel Group today announced a strategic partnership with Sierra, the leading conversational AI platform, to enhance its customer engagement experience across the Group. This is in line w..... / query=enterprise AI agent customer story deployment announced 2026 / intent=find_customer_case / path=official_original
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。
