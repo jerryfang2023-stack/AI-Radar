@@ -1,5 +1,9 @@
 ---
-title: 模型继续制造注意力，真正接近预算的是部署交付层
+title: 企业真正采购的不是模型能力，而是流程结果与交付责任
+title_generation_skill: "guanlan-monthly-business-structure-report@0.2.1"
+title_model_provider: deepseek
+title_model: deepseek-v4-pro
+title_generated_at: 2026-07-18T09:59:06.159Z
 date: 2026-06-30
 month: "2026-06"
 window: 2026-06-01 to 2026-06-30
@@ -11,7 +15,7 @@ version: v0.2-merged
 method: 产业结构变化诊断 + 趋势裁决 + 机会地图
 ---
 
-# 模型继续制造注意力，真正接近预算的是部署交付层
+# 企业真正采购的不是模型能力，而是流程结果与交付责任
 
 > 月报不回答“这个月 AI 发生了什么”，而回答“这个月之后，AI 商业系统的结构哪里变了，哪些趋势被证据增强或削弱，哪些机会因此变得可以行动”。
 
