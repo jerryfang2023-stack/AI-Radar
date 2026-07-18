@@ -121,10 +121,18 @@ export function evaluateModelAssistCandidate(candidate, body = "") {
 }
 
 export function withGateResult(candidate, body = "") {
-  const problems = evaluateModelAssistCandidate(candidate, body);
+  const reviewedAccepted = candidate?.task_type === "entity_resolution"
+    && candidate?.status === "accepted"
+    && candidate?.review?.decision === "accept"
+    && candidate?.review?.reviewer;
+  const evaluationCandidate = candidate?.task_type === "entity_resolution" && !reviewedAccepted
+    ? { ...candidate, status: "requires_review" }
+    : candidate;
+  const problems = evaluateModelAssistCandidate(evaluationCandidate, body);
   const status = problems.length
     ? (problems.includes("stale_source_hash") ? "stale" : "rejected")
-    : AUTO_PROMOTABLE_TASKS.has(candidate.task_type) ? "accepted" : "requires_review";
+    : reviewedAccepted ? "accepted"
+      : AUTO_PROMOTABLE_TASKS.has(candidate.task_type) ? "accepted" : "requires_review";
   return {
     ...candidate,
     status,
