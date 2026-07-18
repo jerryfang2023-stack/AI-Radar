@@ -4,7 +4,7 @@ raw_id: R-048
 title: "Crusoe Launches Serverless Fine-Tuning and Self-Serve Inference Deployments, Accelerating Open-Model Development From Experiment to Production"
 title_zh: "Crusoe 推出无服务器微调与自助推理部署，加速开放模型从实验到生产的开发进程"
 title_translation_status: "translated"
-title_translation_method: "deepseek_title_translation"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.crusoe.ai/resources/newsroom/crusoe-launches-serverless-fine-tuning-and-self-serve-inference-deployments"
 canonical_url: "https://crusoe.ai/resources/newsroom/crusoe-launches-serverless-fine-tuning-and-self-serve-inference-deployments"
 source_name: "keyword search / Anysearch"
@@ -79,7 +79,7 @@ fact_extraction_completed_at: 2026-07-15T04:28:37.874Z
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
-title_translation_model: "deepseek-v4-flash"
+title_translation_model: "not_applicable"
 ---
 
 # Crusoe Launches Serverless Fine-Tuning and Self-Serve Inference Deployments, Accelerating Open-Model Development From Experiment to Production

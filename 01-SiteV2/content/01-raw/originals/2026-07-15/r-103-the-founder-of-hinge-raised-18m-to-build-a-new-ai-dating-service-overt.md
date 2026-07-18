@@ -4,7 +4,7 @@ raw_id: R-103
 title: "The founder of Hinge raised $18M to build a new AI dating service, Overtone"
 title_zh: "Hinge 创始人筹集 1800 万美元打造新 AI 约会服务 Overtone"
 title_translation_status: "translated"
-title_translation_method: "deepseek_title_translation"
+title_translation_method: "source_title_translation_db"
 original_url: "https://techcrunch.com/2026/07/14/the-founder-of-hinge-raised-18m-to-build-a-new-ai-dating-service-overtone/"
 canonical_url: "https://techcrunch.com/2026/07/14/the-founder-of-hinge-raised-18m-to-build-a-new-ai-dating-service-overtone"
 source_name: "TechCrunch AI"
@@ -79,7 +79,7 @@ fact_extraction_completed_at: 2026-07-15T04:28:38.145Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
-title_translation_model: "deepseek-v4-flash"
+title_translation_model: "not_applicable"
 ---
 
 # The founder of Hinge raised $18M to build a new AI dating service, Overtone
