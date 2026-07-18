@@ -16,6 +16,8 @@ on:
       - WaveSight Business Signals PR
       - WaveSight First-Line Viewpoints PR
       - WaveSight Community Intelligence PR
+      - WaveSight Periodic Reports PR
+      - WaveSight Model Assist Historical Backfill PR
     types:
       - completed
   workflow_dispatch:
@@ -91,7 +93,9 @@ jobs:
             const expectedPrefix = {
               "WaveSight Business Signals PR": "automation/business-signals-",
               "WaveSight First-Line Viewpoints PR": "automation/first-line-viewpoints-",
-              "WaveSight Community Intelligence PR": "automation/community-intelligence-"
+              "WaveSight Community Intelligence PR": "automation/community-intelligence-",
+              "WaveSight Periodic Reports PR": "automation/periodic-reports-",
+              "WaveSight Model Assist Historical Backfill PR": "automation/model-assist-backfill-"
             }[process.env.SOURCE_WORKFLOW];
             const startedAt = Date.parse(process.env.SOURCE_CREATED_AT || "");
             const completedAt = Date.parse(process.env.SOURCE_UPDATED_AT || "");

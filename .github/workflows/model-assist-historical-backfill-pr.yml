@@ -59,6 +59,21 @@ jobs:
           echo "FROM_DATE=$from" >> "$GITHUB_ENV"
           echo "TO_DATE=$to" >> "$GITHUB_ENV"
 
+      - name: Resume or create the checkpoint branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          branch="automation/model-assist-backfill-${FROM_DATE}-${TO_DATE}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git ls-remote --exit-code --heads origin "$branch" >/dev/null 2>&1; then
+            git fetch origin "$branch"
+            git checkout -B "$branch" "origin/$branch"
+          else
+            git checkout -B "$branch"
+          fi
+          echo "BACKFILL_BRANCH=$branch" >> "$GITHUB_ENV"
+
       - name: Scan every Raw and generate eligible candidates
         shell: bash
         run: |
@@ -66,8 +81,18 @@ jobs:
           node agent-workflow/tools/backfill-source-title-translations.mjs --write=true --concurrency="${{ github.event.inputs.concurrency }}"
           node agent-workflow/tools/generate-data-center-model-assist.mjs \
             --from="$FROM_DATE" --to="$TO_DATE" --write=true \
-            --concurrency="${{ github.event.inputs.concurrency }}"
+            --reuse-existing=true --concurrency="${{ github.event.inputs.concurrency }}"
           node agent-workflow/tools/assert-data-center-model-assist.mjs
+
+      - name: Save generated candidates as a resumable checkpoint
+        shell: bash
+        run: |
+          set -euo pipefail
+          git add 01-SiteV2/content/11-databases/model-assist-v1 01-SiteV2/content/11-databases/source-title-translations.json 01-SiteV2/content/01-raw/originals 01-SiteV2/knowledge/01-Signal-Cards agent-workflow/reports/source-title-translation-backfill-write.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Checkpoint model-assist backfill ${FROM_DATE} to ${TO_DATE}"
+          fi
+          git push origin "$BACKFILL_BRANCH"
 
       - name: Rebuild and gate every affected V4 batch
         shell: bash
@@ -92,16 +117,17 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add 01-SiteV2/content/11-databases/model-assist-v1 01-SiteV2/content/11-databases/data-center-v4 01-SiteV2/content/11-databases/source-title-translations.json 01-SiteV2/content/01-raw/originals 01-SiteV2/knowledge/01-Signal-Cards 01-SiteV2/site/data/data-center-v4 01-SiteV2/site/data/data-center-v4-frontstage.json agent-workflow/reports/source-title-translation-backfill-write.json
-          git diff --cached --quiet && { echo "changed=false" >> "$GITHUB_OUTPUT"; exit 0; }
-          branch="automation/model-assist-backfill-${FROM_DATE}-${TO_DATE}"
-          git checkout -B "$branch"
-          git commit -m "Backfill evidence-bounded model candidates ${FROM_DATE} to ${TO_DATE}"
-          git push --force-with-lease origin "$branch"
-          echo "changed=true" >> "$GITHUB_OUTPUT"
-          echo "branch=$branch" >> "$GITHUB_OUTPUT"
+          if ! git diff --cached --quiet; then
+            git commit -m "Materialize model-assist backfill ${FROM_DATE} to ${TO_DATE}"
+          fi
+          git push origin "$BACKFILL_BRANCH"
+          if git diff --quiet origin/main...HEAD; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+          echo "branch=$BACKFILL_BRANCH" >> "$GITHUB_OUTPUT"
 
       - name: Open and merge data PR
         if: steps.commit.outputs.changed == 'true'
@@ -109,6 +135,9 @@ jobs:
         run: |
           set -euo pipefail
           branch="${{ steps.commit.outputs.branch }}"
-          gh pr create --base main --head "$branch" --title "Model-assist historical backfill ${FROM_DATE} to ${TO_DATE}" --body "Scanned every V4 Raw batch in range. Exact-span Claim/FDE/hardware candidates passed deterministic gates; entity and QA candidates remain review-only."
           pr="$(gh pr list --base main --head "$branch" --state open --json number --jq '.[0].number')"
+          if [ -z "$pr" ]; then
+            gh pr create --base main --head "$branch" --title "Model-assist historical backfill ${FROM_DATE} to ${TO_DATE}" --body "Scanned every V4 Raw batch in range. Exact-span Claim/FDE/hardware candidates passed deterministic gates; entity and QA candidates remain review-only."
+            pr="$(gh pr list --base main --head "$branch" --state open --json number --jq '.[0].number')"
+          fi
           if ! gh pr merge "$pr" --squash --auto --delete-branch; then gh pr merge "$pr" --squash --delete-branch; fi

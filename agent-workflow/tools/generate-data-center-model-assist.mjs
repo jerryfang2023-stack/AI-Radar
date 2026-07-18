@@ -22,6 +22,7 @@ const write = args.get("write") === "true";
 const concurrency = Math.max(1, Number(args.get("concurrency") || 2));
 const limit = Math.max(0, Number(args.get("limit") || 0));
 const offset = Math.max(0, Number(args.get("offset") || 0));
+const reuseExisting = args.get("reuse-existing") === "true";
 const requestedTasks = new Set(String(args.get("tasks") || "claim_extraction,fde_enrichment,hardware_enrichment,entity_resolution,qa_repair").split(",").filter(Boolean));
 
 function availableDates() {
@@ -226,12 +227,26 @@ async function main() {
   const rawDocumentsScanned = dates.reduce((sum, item) => sum + bundle(item, "raw-documents").length, 0);
   let jobs = dates.flatMap(buildJobs).sort((a, b) => jobKey(a).localeCompare(jobKey(b)));
   const scannedJobs = jobs.length;
+  if (reuseExisting) {
+    const existingCandidateIds = new Set(dates.flatMap((date) => {
+      const store = readJson(path.join(outputRoot, `${date}.json`), candidateStore(date));
+      return (store.candidates || []).map((candidate) => candidate.candidate_id);
+    }));
+    jobs = jobs.filter((job) => !existingCandidateIds.has(stableModelAssistId(
+      job.date,
+      job.taskType,
+      job.assetId,
+      sourceTextHash(String(job.raw.body_clean || "")),
+      MODEL_ASSIST_PROMPT_VERSION,
+    )));
+  }
+  const reusedJobs = scannedJobs - jobs.length;
   jobs = jobs.slice(offset, limit ? offset + limit : undefined);
   if (!write) {
-    console.log(JSON.stringify({ ok: true, mode: "dry-run", dates: dates.length, raw_documents_scanned: rawDocumentsScanned, scanned_jobs: scannedJobs, selected_jobs: jobs.length, by_task: Object.fromEntries([...requestedTasks].map((task) => [task, jobs.filter((job) => job.taskType === task).length])) }, null, 2));
+    console.log(JSON.stringify({ ok: true, mode: "dry-run", dates: dates.length, raw_documents_scanned: rawDocumentsScanned, scanned_jobs: scannedJobs, reused_jobs: reusedJobs, selected_jobs: jobs.length, by_task: Object.fromEntries([...requestedTasks].map((task) => [task, jobs.filter((job) => job.taskType === task).length])) }, null, 2));
     return;
   }
-  if (!process.env.DEEPSEEK_API_KEY) throw new Error("deepseek_key_missing_for_required_model_task");
+  if (jobs.length && !process.env.DEEPSEEK_API_KEY) throw new Error("deepseek_key_missing_for_required_model_task");
   const results = await mapConcurrent(jobs, generate, concurrency);
   for (let retry = 0; retry < 2; retry += 1) {
     const failedIndexes = results.map((result, index) => result?.error ? index : -1).filter((index) => index >= 0);
@@ -251,6 +266,7 @@ async function main() {
     const file = path.join(outputRoot, `${date}.json`);
     const previous = readJson(file, candidateStore(date));
     const generated = byDate.get(date) || [];
+    if (reuseExisting && !generated.length && fs.existsSync(file)) continue;
     const merged = new Map((previous.candidates || []).map((candidate) => [candidate.candidate_id, candidate]));
     for (const candidate of generated) {
       const existing = merged.get(candidate.candidate_id);
@@ -264,6 +280,8 @@ async function main() {
     dates,
     raw_documents_scanned: rawDocumentsScanned,
     scanned_jobs: scannedJobs,
+    reuse_existing: reuseExisting,
+    reused_jobs: reusedJobs,
     offset,
     selected_jobs: jobs.length,
     completed: results.length - failures.length,
