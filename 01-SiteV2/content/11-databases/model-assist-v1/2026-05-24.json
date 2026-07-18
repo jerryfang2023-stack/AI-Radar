@@ -1,0 +1,1195 @@
+{
+  "schema_version": "MODEL-ASSIST-V1.0",
+  "generated_at": "2026-07-18T01:41:55.802Z",
+  "data_date": "2026-05-24",
+  "prompt_version": "model-assist-2026-07-18.1",
+  "source_count": 80,
+  "candidates": [
+    {
+      "candidate_id": "MAC-182055532f23acb0",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-9bbac21749290247",
+      "raw_id": "RAW-baeb425151e7d767",
+      "source_ref": "SA-a5e9557636b7a41c",
+      "source_hash": "01f56df493905cb6",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "commercial",
+            "subject": "AWS",
+            "object": "AI Agents and Tools in AWS Marketplace",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "commercial",
+            "subject": "AWS",
+            "object": "API-based delivery method and container-based delivery method",
+            "evidence_index": 1
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 1014,
+          "end": 1094,
+          "quote": "At AWS Summit New York City, we announced AI Agents and Tools in AWS Marketplace"
+        },
+        {
+          "start": 2775,
+          "end": 3025,
+          "quote": "We also announced two new delivery methods in AWS Marketplace that enable Partners to provide a variety of agentic solutions in AWS Marketplace, including those implementing Model Context Protocol (MCP) or Agent-to-Agent (A2A) communication patterns."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "unsupported_claim_event_type:0, unsupported_claim_event_type:1"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:26.294Z"
+    },
+    {
+      "candidate_id": "MAC-18906ae15b86b733",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-718cbf1faad0dc4d",
+      "raw_id": "RAW-72668d8864402532",
+      "source_ref": "SA-83390e2f7aae849d",
+      "source_hash": "8e7deeb48af023ce",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Tribal AI Inc.",
+            "object": "$10 million seed funding",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "funding",
+            "subject": "Team8",
+            "object": "led seed funding round for Tribal AI",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "people",
+            "subject": "Yoav Kolodner",
+            "object": "Chief Executive of Tribal AI",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 423,
+          "end": 521,
+          "quote": "a new startup called Tribal AI Inc. is trying to solve after raising $10 million in funding today."
+        },
+        {
+          "start": 522,
+          "end": 653,
+          "quote": "The seed funding round was led by Team8 and saw participation from DYDX Capital and a group of unnamed enterprise software founders"
+        },
+        {
+          "start": 2020,
+          "end": 2134,
+          "quote": "Chief Executive Yoav Kolodner (pictured, center) served as a vice president of engineering at Salesforce for years"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "unsupported_claim_event_type:2"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:25.795Z"
+    },
+    {
+      "candidate_id": "MAC-2e3406408879c47e",
+      "task_type": "qa_repair",
+      "asset_id": "QA-97d893827a3d8098",
+      "raw_id": "RAW-0a86b9839f9a500a",
+      "source_ref": "SA-bc746d9a07e7f657",
+      "source_hash": "a36f27b54483eadd",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "requires_review",
+      "proposal": {
+        "action": "recollect_original",
+        "reason": "The QA_REASON states 'event_not_ai_relevant', but the source text explicitly describes Zalos as building 'Computer Agents' using AI technology, including references to generative AI, multi-modal AI, reasoning, and agentic software. The event is directly relevant to AI."
+      },
+      "evidence": [
+        {
+          "start": 1287,
+          "end": 1464,
+          "quote": "Computer Agents are the defining AI technology for 2026. 2023 was generative AI, 2024 brought multi-modal, and in 2025, AI learnt reasoning. Now AI will take over our computers."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:31.598Z"
+    },
+    {
+      "candidate_id": "MAC-30fc087e88d2b671",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-21f69a621a1146db",
+      "raw_id": "RAW-2654c36518217ebc",
+      "source_ref": "SA-0c21113aaf1929e2",
+      "source_hash": "dd991de8fbca3bae",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "commercial",
+            "subject": "Courtroom5",
+            "object": "Claude",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 1360,
+          "end": 1452,
+          "quote": "Some Courtroom5 tools are now available for Claude users following this week's announcement."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "unsupported_claim_event_type:0"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:24.379Z"
+    },
+    {
+      "candidate_id": "MAC-3ad3bbabe7c8d2dc",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-087cc8f1fd638ab5",
+      "raw_id": "RAW-512e9cd4a2c28f0c",
+      "source_ref": "SA-b9137fd0e3c0a23c",
+      "source_hash": "4c5e49a3064cddcd",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "missing_claim_proposal"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:23.102Z"
+    },
+    {
+      "candidate_id": "MAC-4041951f8cf5f396",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-44cbf228070c802f",
+      "raw_id": "RAW-716cc0352788ff25",
+      "source_ref": "SA-63cca4c39a999bb3",
+      "source_hash": "9fc07709e89b11cc",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "missing_claim_proposal"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:24.098Z"
+    },
+    {
+      "candidate_id": "MAC-4aba833de7cd427d",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-d8e4a08dca885238",
+      "raw_id": "RAW-8464b7af313ac39e",
+      "source_ref": "SA-60a0080e38e0a65c",
+      "source_hash": "a6371829563996e2",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "commercial",
+            "subject": "SnapLogic",
+            "object": "Jean-Paul AI agent",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "commercial",
+            "subject": "SnapLogic",
+            "object": "Jean-Paul AI agent",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "commercial",
+            "subject": "SnapLogic",
+            "object": "Jean-Paul AI agent",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 11304,
+          "end": 11527,
+          "quote": "Over 4 months of deployment, Jean-Paul delivered more than $3M in total estimated value, calculated from platform audit logs across 17 departments , including $1M+ in productivity gains and $1M+ in customer revenue impact ."
+        },
+        {
+          "start": 11544,
+          "end": 11741,
+          "quote": "2,141 hours saved in a single 30-day period. Equivalent to approximately 12.5 FTEs across Sales, Customer Success, Marketing, Engineering, Finance, HR, Professional Services, and other departments."
+        },
+        {
+          "start": 12024,
+          "end": 12187,
+          "quote": "$380-540K per year in realized cost avoidance. Analytics tooling and consultant engagements were eliminated as Jean-Paul generates reports directly from live data."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "unsupported_claim_event_type:0, unsupported_claim_event_type:1, unsupported_claim_event_type:2"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:27.395Z"
+    },
+    {
+      "candidate_id": "MAC-549088bfaae0a8a2",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-3e665817a41133c2",
+      "raw_id": "RAW-36ee230eb2a8d19e",
+      "source_ref": "SA-11d41090259ea6b3",
+      "source_hash": "1141fe673a571f63",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "Former Coatue partner",
+        "rationale": "The entity candidate is 'Former Coatue partner' as an organization. The source text mentions 'Sri Viswanath, a former Coatue investor' who left his VC role to launch Sycamore. The text does not describe 'Former Coatue partner' as an organization, nor does it provide enough information to determine if this refers to the same entity as Sycamore, a distinct entity, a publisher, or a component supplier.",
+        "candidate_name": "Former Coatue partner"
+      },
+      "evidence": [
+        {
+          "start": 711,
+          "end": 830,
+          "quote": "Sri Viswanath, a former Coatue investor. He left the full-time VC role in the fall to launch Sycamore, where he is CEO."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "entity_resolution_must_require_review"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:28.915Z"
+    },
+    {
+      "candidate_id": "MAC-5b179e4294e51d5b",
+      "task_type": "fde_enrichment",
+      "asset_id": "FDE-a63e80944be39019",
+      "raw_id": "RAW-9703462172caf365",
+      "source_ref": "SA-2b8f4a88ab8804a1",
+      "source_hash": "b871b18b4e229b09",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "fields": [
+          {
+            "field": "vendor",
+            "value": "Anthropic",
+            "evidence_index": 0
+          },
+          {
+            "field": "industry",
+            "value": [
+              "financial services",
+              "healthcare",
+              "life sciences",
+              "cybersecurity",
+              "professional sports",
+              "insurance",
+              "consumer markets",
+              "pharma",
+              "private equity",
+              "supply chain",
+              "HR",
+              "industrial",
+              "technology"
+            ],
+            "evidence_index": 1
+          },
+          {
+            "field": "delivery_model",
+            "value": "Joint Center of Excellence with training and certification program",
+            "evidence_index": 2
+          },
+          {
+            "field": "team_composition",
+            "value": "PwC professionals across U.S. teams expanding toward global workforce of hundreds of thousands; 30,000 US professionals to be trained and certified",
+            "evidence_index": 3
+          },
+          {
+            "field": "reported_need",
+            "value": "Most enterprises are still running on systems and processes built for a pre-AI world",
+            "evidence_index": 4
+          },
+          {
+            "field": "reported_outcomes",
+            "value": [
+              "Insurance underwriting cycles compressed from ten weeks to ten days",
+              "Cybersecurity incident response accelerated from hours to minutes",
+              "HR transformation: working prototype in one week, full application in under two months, now running thousands of daily transactions",
+              "Mainframe modernization: COBOL codebase four times larger than scoped, tracking on time and under budget",
+              "Clients reporting delivery improvements of up to 70%"
+            ],
+            "evidence_index": 5
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 133,
+          "end": 353,
+          "quote": "Anthropic and PwC today announced an expansion of their strategic alliance, deepening how PwC uses Claude to build technology, execute deals, and reinvent enterprise functions for clients across every industry it serves."
+        },
+        {
+          "start": 1414,
+          "end": 1617,
+          "quote": "PwC has been leading AI's expansion into the parts of the economy where accuracy and reliability are non-negotiable—financial services, healthcare, life sciences, cybersecurity—and the results are clear."
+        },
+        {
+          "start": 769,
+          "end": 899,
+          "quote": "The companies are establishing a joint Center of Excellence and a program to train and certify 30,000 PwC professionals on Claude."
+        },
+        {
+          "start": 620,
+          "end": 768,
+          "quote": "PwC will roll out Claude Code and Cowork starting with U.S. teams and expanding toward a global workforce of hundreds of thousands of professionals."
+        },
+        {
+          "start": 354,
+          "end": 492,
+          "quote": "Most enterprises are still running on systems and processes built for a pre-AI world—a drag that is estimated to be more than $2 trillion."
+        },
+        {
+          "start": 1618,
+          "end": 1727,
+          "quote": "Insurance underwriting that took 10 weeks now takes 10 days. Security work that took hours now takes minutes."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "failed",
+          "detail": "unsupported_numeric_fact:70%"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "invalid_fde_field_type:1"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:34.415Z"
+    },
+    {
+      "candidate_id": "MAC-64fcd3e632decd83",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-38a3c50b7c1f9635",
+      "raw_id": "RAW-f434a60e105c18f7",
+      "source_ref": "SA-ab7bd303af033e6e",
+      "source_hash": "a51fd701ac4ec6af",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "Texture",
+        "rationale": "The source text describes Texture as a company that raised funding and provides grid management software, but it does not explicitly state its relationship to any other entity in a way that maps to the defined relationship types (same_entity, distinct_entity, publisher_of, component_supplier). It is not compared to another entity, nor is it stated to be a publisher or component supplier of a specific parent entity.",
+        "candidate_name": "Texture"
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 77,
+          "quote": "Texture Raises $12.5M to Tackle the Operational Complexity of the Modern Grid"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "entity_resolution_must_require_review"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:28.256Z"
+    },
+    {
+      "candidate_id": "MAC-7119bfa4a1ce9653",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-1050efc9e13624b2",
+      "raw_id": "RAW-4bb7e9b2577b05d8",
+      "source_ref": "SA-67f4d2fab913a648",
+      "source_hash": "fc9f406ab2427abb",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "decision": "same_entity",
+        "canonical_name": "General Analysis",
+        "rationale": "The ENTITY_CANDIDATE canonical_name 'General Analysis' matches the company name used throughout the SOURCE_TEXT, which describes the same organization raising seed funding.",
+        "candidate_name": "General Analysis"
+      },
+      "evidence": [
+        {
+          "start": 477,
+          "end": 598,
+          "quote": "General Analysis , a company building security infrastructure for agentic AI, today announced $10 million in seed funding"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "entity_resolution_must_require_review"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:27.463Z"
+    },
+    {
+      "candidate_id": "MAC-7dadb7067df38588",
+      "task_type": "qa_repair",
+      "asset_id": "QA-97cb5e67629dc2f4",
+      "raw_id": "RAW-41c8e848b859b645",
+      "source_ref": "SA-35fe1d6a336e5eeb",
+      "source_hash": "f3802d64356da01f",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "requires_review",
+      "proposal": {
+        "action": "recollect_original",
+        "reason": "The QA_REASON 'event_not_ai_relevant' is incorrect. The source text explicitly describes an AI company (Nexus) raising funding for an AI agent platform (Cue) that builds, deploys, and governs AI agents for enterprises."
+      },
+      "evidence": [
+        {
+          "start": 1953,
+          "end": 2278,
+          "quote": "Cue is the autonomous build loop you can watch above. It scopes the use case with the user, asks the right clarifying questions, connects to internal data with the correct permissions, builds the automation, tests it against realistic scenarios, and publishes it to the team — all in one to two hours, end to end, on its own."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:31.460Z"
+    },
+    {
+      "candidate_id": "MAC-adbc34af0009e906",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-ce65fa41b16c33ff",
+      "raw_id": "RAW-cc230c84b5f70016",
+      "source_ref": "SA-bb60bd6828830f8f",
+      "source_hash": "91caad8a48c957f6",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "decision": "same_entity",
+        "canonical_name": "Viktor",
+        "rationale": "The candidate entity 'Viktor' matches the AI startup described in the source text, which is explicitly named 'Viktor' and develops an AI coworker.",
+        "candidate_name": "Viktor"
+      },
+      "evidence": [
+        {
+          "start": 320,
+          "end": 544,
+          "quote": "Viktor , a Warsaw and Munich-based AI startup that develops an AI coworker that lives in Slack and Microsoft Teams and works across the tools companies already use, has raised €64.7 million ($75 million) in Series A funding."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "entity_resolution_must_require_review"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:29.515Z"
+    },
+    {
+      "candidate_id": "MAC-b6df137a4fa6dd5a",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-08ff6997681fad41",
+      "raw_id": "RAW-ae51189a83ddf73d",
+      "source_ref": "SA-e51a2253b8d16bce",
+      "source_hash": "295fb65a11a09075",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "decision": "same_entity",
+        "canonical_name": "Zenskar",
+        "rationale": "The ENTITY_CANDIDATE canonical_name 'Zenskar' matches the subject organization described throughout the SOURCE_TEXT, which is the AI-native billing and revenue automation platform announcing its $15 million Series A funding.",
+        "candidate_name": "Zenskar"
+      },
+      "evidence": [
+        {
+          "start": 264,
+          "end": 420,
+          "quote": "Zenskar, the AI-native billing and revenue automation platform powering Zero-Touch Finance for real-world complexity, today announced a $15 million Series A"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "entity_resolution_must_require_review"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:27.543Z"
+    },
+    {
+      "candidate_id": "MAC-b756ab5c3c9e22a8",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-ef2bee7868007cd4",
+      "raw_id": "RAW-1396229f98e929f1",
+      "source_ref": "SA-a5837f123c0e99ad",
+      "source_hash": "78a73021843aa883",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "decision": "same_entity",
+        "canonical_name": "Lio",
+        "rationale": "The ENTITY_CANDIDATE canonical_name 'Lio' matches the company name 'Lio' described in the SOURCE_TEXT. The text confirms Lio is an organization and provides its former name 'askLio', which aligns with the candidate's entity_type 'organization_candidate'.",
+        "candidate_name": "Lio"
+      },
+      "evidence": [
+        {
+          "start": 181,
+          "end": 283,
+          "quote": "Lio (formerly known as askLio), the company building an agentic AI platform for enterprise procurement"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "entity_resolution_must_require_review"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:30.594Z"
+    },
+    {
+      "candidate_id": "MAC-cf8cca68354fc164",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-7d4e02d31a7eb0f8",
+      "raw_id": "RAW-06e79d2447d8e36b",
+      "source_ref": "SA-804f40656ea27c50",
+      "source_hash": "4a8f131fc27d204e",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "decision": "same_entity",
+        "canonical_name": "Realm",
+        "rationale": "The ENTITY_CANDIDATE canonical_name 'Realm' matches the organization described in the SOURCE_TEXT, which is a company that raised a $4.5M Seed round, builds a platform for enterprise sales, and is headquartered in Helsinki.",
+        "candidate_name": "Realm"
+      },
+      "evidence": [
+        {
+          "start": 42,
+          "end": 121,
+          "quote": "Realm has raised a $4.5 million Seed round to speed up enterprise sales cycles."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "entity_resolution_must_require_review"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:29.038Z"
+    },
+    {
+      "candidate_id": "MAC-d3e97691ddf8a564",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-864e7f949b17c9b1",
+      "raw_id": "RAW-6877435db69e9ebd",
+      "source_ref": "SA-2b810e0c08df3b1f",
+      "source_hash": "f1b00ff6ee0ad7a5",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "decision": "same_entity",
+        "canonical_name": "Netomi",
+        "rationale": "The ENTITY_CANDIDATE canonical_name 'Netomi' matches the company described throughout the SOURCE_TEXT, which is identified as an enterprise agentic CX platform and the subject of the funding announcement.",
+        "candidate_name": "Netomi"
+      },
+      "evidence": [
+        {
+          "start": 850,
+          "end": 1026,
+          "quote": "Netomi is the enterprise agentic CX platform built for the highest-stakes environments — operating at massive scale, under regulatory oversight, where failure is not an option."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "entity_resolution_must_require_review"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:29.527Z"
+    },
+    {
+      "candidate_id": "MAC-d622dff070ddb301",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-8cfca69b373cc0d6",
+      "raw_id": "RAW-51e4da9258d0f9d5",
+      "source_ref": "SA-9fd51fa356be563e",
+      "source_hash": "6f8ff74465cd84b6",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "commercial",
+            "subject": "Conversion",
+            "object": "Conversion Agents",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 57,
+          "end": 164,
+          "quote": "Today we ship Conversion Agents: the first agent layer built natively into a marketing automation platform."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "unsupported_claim_event_type:0"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:25.564Z"
+    },
+    {
+      "candidate_id": "MAC-db914b9a3e498bb2",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-0cfee4dea43abeae",
+      "raw_id": "RAW-29588131c4d69b2c",
+      "source_ref": "SA-198a55599ae6f037",
+      "source_hash": "e3e299ed071756be",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "commercial",
+            "subject": "C.H. Robinson",
+            "object": "AI agents using LangChain and LangGraph to automate email-based shipment orders end-to-end",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "commercial",
+            "subject": "C.H. Robinson",
+            "object": "approximately 5,500 orders processed automatically per day",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "commercial",
+            "subject": "C.H. Robinson",
+            "object": "more than 600 hours of manual email handling saved per day",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 199,
+          "quote": "C.H. Robinson, one of the world's largest logistics providers managing 37 million shipments annually, built AI agents using LangChain and LangGraph to automate email-based shipment orders end-to-end."
+        },
+        {
+          "start": 3701,
+          "end": 3852,
+          "quote": "Approximately 5,500 orders are now processed automatically every day — end-to-end, from email ingestion through order creation and tracking initiation."
+        },
+        {
+          "start": 3853,
+          "end": 3943,
+          "quote": "The shift saves more than 600 hours of manual email handling per day across the operation."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "unsupported_claim_event_type:0, unsupported_claim_event_type:1, unsupported_claim_event_type:2"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:25.518Z"
+    },
+    {
+      "candidate_id": "MAC-f0764d7d240d7246",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-abb32701117d50a9",
+      "raw_id": "RAW-6c853fc19efac99b",
+      "source_ref": "SA-a5bafe6cdb95baf2",
+      "source_hash": "47850e45325fc87b",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "decision": "same_entity",
+        "canonical_name": "Dust",
+        "rationale": "The source text describes Dust as an organization that raised a $40M Series B, has over 3,000 organizational customers, and offers an AI platform. This matches the candidate entity type 'organization_candidate' and the canonical name 'Dust'.",
+        "candidate_name": "Dust"
+      },
+      "evidence": [
+        {
+          "start": 755,
+          "end": 877,
+          "quote": "Today, we’re announcing a $40M Series B with Abstract, Sequoia, Snowflake Ventures, and Datadog to accelerate building it."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "failed",
+          "detail": "unsupported_numeric_fact:3000"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "entity_resolution_must_require_review"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:29.655Z"
+    },
+    {
+      "candidate_id": "MAC-f436b3adb4716ae4",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-a5e812741e4c16c7",
+      "raw_id": "RAW-46ecb622ada7a622",
+      "source_ref": "SA-4e862ff646bb4f89",
+      "source_hash": "388b8634b81a66c4",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "research preview launch",
+            "subject": "Anthropic",
+            "object": "dreaming in Claude Managed Agents",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "public beta launch",
+            "subject": "Anthropic",
+            "object": "outcomes, multiagent orchestration, and webhooks in Claude Managed Agents",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "commercial deployment",
+            "subject": "Harvey",
+            "object": "Managed Agents with dreaming for legal work",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 78,
+          "quote": "Today we're launching dreaming in Claude Managed Agents as a research preview."
+        },
+        {
+          "start": 177,
+          "end": 297,
+          "quote": "We're also making outcomes, multiagent orchestration, and webhooks available to developers building with Managed Agents."
+        },
+        {
+          "start": 3674,
+          "end": 3957,
+          "quote": "Harvey uses Managed Agents to coordinate complex legal work like long-form drafting and document creation. With dreaming, their agents remember what they learned between sessions, including filetype workarounds and tool-specific patterns. Completion rates went up ~6x in their tests."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "unsupported_claim_event_type:0, unsupported_claim_event_type:1, unsupported_claim_event_type:2"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:26.985Z"
+    }
+  ]
+}

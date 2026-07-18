@@ -2,7 +2,7 @@
 id: SIG-20260715-A02
 type: signal_card
 signal_type: funding
-title: "Overtone 获得 1800 万美元融资，用于 AI 约会服务"
+title: "Hinge 创始人筹集 1800 万美元打造新 AI 约会服务 Overtone"
 date: 2026-07-15
 status: published
 source_title: "The founder of Hinge raised $18M to build a new AI dating service, Overtone"
@@ -58,12 +58,12 @@ opportunity_signals:
 signal_owner: "Overtone"
 
 frontend:
-  displayTitle: "Overtone 获得 1800 万美元融资，用于 AI 约会服务"
+  displayTitle: "Hinge 创始人筹集 1800 万美元打造新 AI 约会服务 Overtone"
   sourceLinks:
     - "https://techcrunch.com/2026/07/14/the-founder-of-hinge-raised-18m-to-build-a-new-ai-dating-service-overtone/"
 ---
 
-# Overtone 获得 1800 万美元融资，用于 AI 约会服务
+# Hinge 创始人筹集 1800 万美元打造新 AI 约会服务 Overtone
 
 ## 新闻事实
 

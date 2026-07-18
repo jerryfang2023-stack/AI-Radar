@@ -2,7 +2,7 @@
 id: SIG-20260715-A07
 type: signal_card
 signal_type: funding
-title: "TYLsemi 获得 4300 万美元融资，用于推出全栈 Chiplet 平台与定制 AI 芯片"
+title: "TYLsemi 获 4300 万美元融资，推出首个全栈芯粒平台用于定制 AI 芯片"
 date: 2026-07-15
 status: published
 source_title: "TYLsemi Raises $43 Million to Launch First Full-Stack Chiplet Platform for Custom AI Silicon - TYLsemi"
@@ -58,12 +58,12 @@ opportunity_signals:
 signal_owner: "TYLsemi"
 
 frontend:
-  displayTitle: "TYLsemi 获得 4300 万美元融资，用于推出全栈 Chiplet 平台与定制 AI 芯片"
+  displayTitle: "TYLsemi 获 4300 万美元融资，推出首个全栈芯粒平台用于定制 AI 芯片"
   sourceLinks:
     - "https://www.tylsemi.ai/press-releases/tylsemi-raises-43-million-to-launch-first-full-stack-chipletplatform-for-custom-ai-silicon/"
 ---
 
-# TYLsemi 获得 4300 万美元融资，用于推出全栈 Chiplet 平台与定制 AI 芯片
+# TYLsemi 获 4300 万美元融资，推出首个全栈芯粒平台用于定制 AI 芯片
 
 ## 新闻事实
 

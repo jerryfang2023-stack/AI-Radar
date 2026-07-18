@@ -1,0 +1,1605 @@
+{
+  "schema_version": "MODEL-ASSIST-V1.0",
+  "generated_at": "2026-07-18T01:41:55.799Z",
+  "data_date": "2026-05-23",
+  "prompt_version": "model-assist-2026-07-18.1",
+  "source_count": 120,
+  "candidates": [
+    {
+      "candidate_id": "MAC-066daaf3dab5e5f1",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-ef2bee7868007cd4",
+      "raw_id": "RAW-9f0fea681194d5e6",
+      "source_ref": "SA-a5837f123c0e99ad",
+      "source_hash": "78a73021843aa883",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "decision": "same_entity",
+        "canonical_name": "Lio",
+        "rationale": "The ENTITY_CANDIDATE canonical_name 'Lio' matches the company name in the SOURCE_TEXT. The text states 'Lio (formerly known as askLio)' and describes it as 'the company building an agentic AI platform for enterprise procurement', confirming it is the same organization.",
+        "candidate_name": "Lio"
+      },
+      "evidence": [
+        {
+          "start": 181,
+          "end": 283,
+          "quote": "Lio (formerly known as askLio), the company building an agentic AI platform for enterprise procurement"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "entity_resolution_must_require_review"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:23.275Z"
+    },
+    {
+      "candidate_id": "MAC-11587e24896cc454",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-d4aa64501c5bab1d",
+      "raw_id": "RAW-e55a6c2782377bfc",
+      "source_ref": "SA-93e8ea1570ff076b",
+      "source_hash": "163540ee9a5cf2c5",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "missing_claim_proposal"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:16.217Z"
+    },
+    {
+      "candidate_id": "MAC-125faecd37f8ef9b",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-46f913d1c422dc24",
+      "raw_id": "RAW-426e921a6345fd37",
+      "source_ref": "SA-198bee18fd95bf7e",
+      "source_hash": "5c9e1823e74e7994",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "missing_claim_proposal"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:13.241Z"
+    },
+    {
+      "candidate_id": "MAC-17885a23496d286b",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-7cf64a9e86cfa26b",
+      "raw_id": "RAW-5ce887288fa4f2ba",
+      "source_ref": "SA-bbc32774145841cd",
+      "source_hash": "da5b3769b7b2c980",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "missing_claim_proposal"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:14.262Z"
+    },
+    {
+      "candidate_id": "MAC-17c6d8bef91b2fe0",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-240389f4b730bad4",
+      "raw_id": "RAW-9ca0e17fb4891fd6",
+      "source_ref": "SA-83b92b4b4df84ab0",
+      "source_hash": "cada251e95c24533",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "decision": "component_supplier",
+        "canonical_name": "AMD",
+        "rationale": "The source states AMD Ventures co-led the Series A funding round and that Featherless.ai ensures models run natively on AMD's ROCm platform, providing a competitive alternative to Nvidia's ecosystem. This indicates a supplier relationship where AMD provides hardware and investment.",
+        "candidate_name": "AMD"
+      },
+      "evidence": [
+        {
+          "start": 2430,
+          "end": 2619,
+          "quote": "AMD’s involvement is strategically specific: Featherless ensures the most popular open models run natively on AMD’s ROCm platform, providing a competitive alternative to Nvidia’s ecosystem."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "entity_resolution_must_require_review"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:19.498Z"
+    },
+    {
+      "candidate_id": "MAC-18189dd2fafb5883",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-58433553ed68884b",
+      "raw_id": "RAW-c577493c820dfdf1",
+      "source_ref": "SA-52f8cda089ab8f85",
+      "source_hash": "fe30f812c660ac48",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "decision": "same_entity",
+        "canonical_name": "Dust",
+        "rationale": "The entity candidate 'Multiplayer AI startup Dust' matches the entity described in the source text. The source refers to the company as 'Dust' and states it is officially known as 'Permutation Labs SAS', confirming it is the same organization.",
+        "candidate_name": "Multiplayer AI startup Dust"
+      },
+      "evidence": [
+        {
+          "start": 640,
+          "end": 765,
+          "quote": "Dust, officially known as Permutation Labs SAS, believes that most enterprises today are stuck playing a “single-player” game"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "entity_resolution_must_require_review"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:21.102Z"
+    },
+    {
+      "candidate_id": "MAC-25b7589492a2b9b4",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-749f7b0c42646853",
+      "raw_id": "RAW-12e7a18d71cab0c9",
+      "source_ref": "SA-a0e6abf83d53882d",
+      "source_hash": "13b618d131a8d1bb",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "decision": "same_entity",
+        "canonical_name": "FORMAS.AI",
+        "rationale": "The ENTITY_CANDIDATE canonical_name 'FORMAS.AI' exactly matches the company name used throughout the SOURCE_TEXT, which describes the same organization raising a pre-seed round.",
+        "candidate_name": "FORMAS.AI"
+      },
+      "evidence": [
+        {
+          "start": 192,
+          "end": 372,
+          "quote": "FORMAS.AI, the AI-native creative and design workspace for architecture, engineering, and construction (AEC), has raised US$3.98 million in an oversubscribed pre-seed funding round"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "entity_resolution_must_require_review"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:21.623Z"
+    },
+    {
+      "candidate_id": "MAC-298db40e14495b71",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-557950f7a5827e6c",
+      "raw_id": "RAW-984f16d48d2d37a3",
+      "source_ref": "SA-46848e7932902ed9",
+      "source_hash": "a68cb7320b03c06d",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "commercial",
+            "subject": "OpenAI",
+            "object": "Latham & Watkins",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "litigation",
+            "subject": "OpenAI",
+            "object": "Nippon Life Insurance Company lawsuit",
+            "evidence_index": 1
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 1533,
+          "end": 1658,
+          "quote": "Latham & Watkins has handled several deals for the company, including securing a new $4 billion revolving credit line in 2024"
+        },
+        {
+          "start": 2052,
+          "end": 2212,
+          "quote": "OpenAI turned to Wilson Sonsini Goodrich & Rosati in a case brought by Nippon Life Insurance Company, which alleges ChatGPT practiced law without a U.S. license"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "unsupported_claim_event_type:0, unsupported_claim_event_type:1"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:15.308Z"
+    },
+    {
+      "candidate_id": "MAC-3c97ec612d0611f8",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-ba747b9415290627",
+      "raw_id": "RAW-71e79b731006e384",
+      "source_ref": "SA-43990adf26111d90",
+      "source_hash": "55c1593d0faa0550",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "commercial",
+            "subject": "Supermetrics",
+            "object": "rolled out Ollie globally to 50 sellers across EMEA, Americas, and JAPAC",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "commercial",
+            "subject": "Supermetrics",
+            "object": "reactivated 72 stale deals in the first 30 days",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "commercial",
+            "subject": "Supermetrics",
+            "object": "rolled out Optivian's Claude connector to their entire team",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 1754,
+          "end": 1901,
+          "quote": "Supermetrics rolled Ollie out globally. Within 30 days: 96% of the team active weekly and thousands of customer interactions analyzed and acted on."
+        },
+        {
+          "start": 557,
+          "end": 653,
+          "quote": "72 stale deals reactivated in the first 30 days by 33 reps completing 80 Ollie-prepared actions."
+        },
+        {
+          "start": 13029,
+          "end": 13327,
+          "quote": "Supermetrics has since rolled the connector out to their entire team, with product knowledge and other internal systems connected to Claude alongside Optivian, giving every rep and manager a single AI session that combines deal-specific intelligence with the company's full institutional knowledge."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "failed",
+          "detail": "unsupported_numeric_fact:50"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "unsupported_claim_event_type:0, unsupported_claim_event_type:1, unsupported_claim_event_type:2"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:17.569Z"
+    },
+    {
+      "candidate_id": "MAC-40e50f2d983cef69",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-6c7b80cb2aacd55d",
+      "raw_id": "RAW-a17eae320849f854",
+      "source_ref": "SA-83390e2f7aae849d",
+      "source_hash": "8e7deeb48af023ce",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Tribal AI Inc.",
+            "object": "$10 million in seed funding",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "funding",
+            "subject": "Team8",
+            "object": "led seed funding round",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "funding",
+            "subject": "DYDX Capital and unnamed enterprise software founders",
+            "object": "participated in seed funding round",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 423,
+          "end": 521,
+          "quote": "a new startup called Tribal AI Inc. is trying to solve after raising $10 million in funding today."
+        },
+        {
+          "start": 522,
+          "end": 561,
+          "quote": "The seed funding round was led by Team8"
+        },
+        {
+          "start": 562,
+          "end": 732,
+          "quote": "and saw participation from DYDX Capital and a group of unnamed enterprise software founders behind multiple exits in the Salesforce ecosystem, who participated as angels."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:14.802Z"
+    },
+    {
+      "candidate_id": "MAC-6308ee0e3f4be222",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-6bd8fab90eb8e022",
+      "raw_id": "RAW-9472879ee49270b9",
+      "source_ref": "SA-bcb292334e98c350",
+      "source_hash": "e632ba7873dc3405",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "decision": "publisher_of",
+        "canonical_name": "Poplab",
+        "rationale": "The source text describes a 'Retainer Partnership' service offering fractional product and UX design. The entity 'Retainer' is the name of the service package, and the text identifies 'Poplab' as the provider of this service, as seen in the section 'Choose how embedded you want Poplab to be'.",
+        "candidate_name": "Retainer"
+      },
+      "evidence": [
+        {
+          "start": 3226,
+          "end": 3267,
+          "quote": "Choose how embedded you want Poplab to be"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "entity_resolution_must_require_review"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:21.702Z"
+    },
+    {
+      "candidate_id": "MAC-651e1021d8a30e73",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-4458e908dd9a5440",
+      "raw_id": "RAW-4be80ad69999547f",
+      "source_ref": "SA-bf211b03e67dff64",
+      "source_hash": "e0d1baa182929cff",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "decision": "publisher_of",
+        "canonical_name": "Balderton",
+        "rationale": "The source is a portfolio news article published on Balderton's website announcing that Davis raised a pre-seed round. Balderton is identified as a co-lead investor in the round, and the article is categorized under 'Portfolio News', indicating Balderton is the publisher reporting on its portfolio company Davis.",
+        "candidate_name": "Davis"
+      },
+      "evidence": [
+        {
+          "start": 301,
+          "end": 353,
+          "quote": "The round was led by Heartcore Capital and Balderton"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "entity_resolution_must_require_review"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:21.211Z"
+    },
+    {
+      "candidate_id": "MAC-740e3365656e5080",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-b8f35668f063352b",
+      "raw_id": "RAW-3817431cdeeafd03",
+      "source_ref": "SA-07a9822fe99139a0",
+      "source_hash": "865523a27d77fbfe",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "missing_claim_proposal"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:15.317Z"
+    },
+    {
+      "candidate_id": "MAC-753a8018092c2ccc",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-3e665817a41133c2",
+      "raw_id": "RAW-8f256c93226ef598",
+      "source_ref": "SA-11d41090259ea6b3",
+      "source_hash": "1141fe673a571f63",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "Former Coatue partner",
+        "rationale": "The entity candidate is 'Former Coatue partner'. The source text mentions 'Sri Viswanath, a former Coatue investor' who left his VC role to launch Sycamore. This confirms the candidate refers to a person, not an organization. However, the candidate's entity_type is 'organization_candidate', which conflicts with the source. The source does not provide enough information to determine if this refers to the same entity as an organization or a distinct entity, nor does it indicate a publisher_of or component_supplier relationship.",
+        "candidate_name": "Former Coatue partner"
+      },
+      "evidence": [
+        {
+          "start": 711,
+          "end": 830,
+          "quote": "Sri Viswanath, a former Coatue investor. He left the full-time VC role in the fall to launch Sycamore, where he is CEO."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "entity_resolution_must_require_review"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:21.028Z"
+    },
+    {
+      "candidate_id": "MAC-76ae66e29de5289c",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-fbbc55cd15622cf6",
+      "raw_id": "RAW-753f5c0bb326b873",
+      "source_ref": "SA-ec360aa33953e7e2",
+      "source_hash": "9c7cbfb4449e6bc7",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "commercial",
+            "subject": "Gemini 3.1 Flash-Lite",
+            "object": "generally available on Gemini Enterprise Agent Platform",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "commercial",
+            "subject": "Gladly",
+            "object": "achieved roughly 60% lower costs than comparable thinking-tier models on the same token mix",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "commercial",
+            "subject": "OffDeal",
+            "object": "uses Flash-Lite to power “Archie,” an AI agent that investment bankers use for real-time research, data lookups, and task execution during Zoom calls",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 71,
+          "end": 155,
+          "quote": "Gemini 3.1 Flash-Lite is now generally available on Gemini Enterprise Agent Platform"
+        },
+        {
+          "start": 1310,
+          "end": 1406,
+          "quote": "they achieved roughly 60% lower costs than comparable thinking-tier models on the same token mix"
+        },
+        {
+          "start": 2078,
+          "end": 2235,
+          "quote": "OffDeal uses Flash-Lite to power “Archie,” an AI agent that investment bankers use for real-time research, data lookups, and task execution during Zoom calls"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "unsupported_claim_event_type:0, unsupported_claim_event_type:1, unsupported_claim_event_type:2"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:19.747Z"
+    },
+    {
+      "candidate_id": "MAC-91a7784e9c21bbf7",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-22d912175672e490",
+      "raw_id": "RAW-96d746ecfe6e3099",
+      "source_ref": "SA-0c21113aaf1929e2",
+      "source_hash": "dd991de8fbca3bae",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "commercial",
+            "subject": "Courtroom5",
+            "object": "Claude",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 1360,
+          "end": 1452,
+          "quote": "Some Courtroom5 tools are now available for Claude users following this week's announcement."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "unsupported_claim_event_type:0"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:13.256Z"
+    },
+    {
+      "candidate_id": "MAC-94cea95b18f7f55a",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-f3a05f73fae6f94d",
+      "raw_id": "RAW-02a0aab8131f86ed",
+      "source_ref": "SA-1a964fd845eb5555",
+      "source_hash": "4b87c700f341b662",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "missing_claim_proposal"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:17.191Z"
+    },
+    {
+      "candidate_id": "MAC-a0833ad370ea85b9",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-8ed0079f3d088139",
+      "raw_id": "RAW-a72d66cd30b48803",
+      "source_ref": "SA-4d7b384317ba2fc0",
+      "source_hash": "a0b2e8e80f82d1fd",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "missing_claim_proposal"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:14.336Z"
+    },
+    {
+      "candidate_id": "MAC-a44d1c3c71766409",
+      "task_type": "qa_repair",
+      "asset_id": "QA-6820e4075c0161e6",
+      "raw_id": "RAW-b37af7f4dc6d0dc9",
+      "source_ref": "SA-35fe1d6a336e5eeb",
+      "source_hash": "f3802d64356da01f",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "requires_review",
+      "proposal": {
+        "action": "recollect_original",
+        "reason": "The QA_REASON 'event_not_ai_relevant' is incorrect. The source text explicitly describes an AI company (Nexus) raising funding to build and deploy autonomous AI agents for enterprises, which is directly relevant to the AI industry."
+      },
+      "evidence": [
+        {
+          "start": 1953,
+          "end": 2278,
+          "quote": "Cue is the autonomous build loop you can watch above. It scopes the use case with the user, asks the right clarifying questions, connects to internal data with the correct permissions, builds the automation, tests it against realistic scenarios, and publishes it to the team — all in one to two hours, end to end, on its own."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:23.980Z"
+    },
+    {
+      "candidate_id": "MAC-a60f054c0f2e1e30",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-38a3c50b7c1f9635",
+      "raw_id": "RAW-644d77ce6b4e6b19",
+      "source_ref": "SA-ab7bd303af033e6e",
+      "source_hash": "a51fd701ac4ec6af",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "Texture",
+        "rationale": "The source text describes Texture as a company that raised funding and provides grid management software, but it does not explicitly state its relationship to the entity candidate 'Texture' with entity_id 'EN-38a3c50b7c1f9635'. There is no information about whether this is the same entity, a distinct entity, a publisher, or a component supplier relative to any other entity.",
+        "candidate_name": "Texture"
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 77,
+          "quote": "Texture Raises $12.5M to Tackle the Operational Complexity of the Modern Grid"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "failed",
+          "detail": "unsupported_numeric_fact:38, unsupported_numeric_fact:3, unsupported_numeric_fact:50b, unsupported_numeric_fact:7, unsupported_numeric_fact:1, unsupported_numeric_fact:9635"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "entity_resolution_must_require_review"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:19.986Z"
+    },
+    {
+      "candidate_id": "MAC-aed812c4117d0354",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-d5b12c2ce30c8533",
+      "raw_id": "RAW-ecb8efeea3faae73",
+      "source_ref": "SA-836b93b7fa5edfb3",
+      "source_hash": "2df8d2fd18cb471a",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "commercial",
+            "subject": "Inferact",
+            "object": "$150 million seed funding",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "commercial",
+            "subject": "Inferact",
+            "object": "$800 million valuation",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "commercial",
+            "subject": "Andreessen Horowitz and Lightspeed Venture Partners",
+            "object": "co-led Inferact seed round",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 62,
+          "end": 122,
+          "quote": "Inference startup Inferact lands $150M to commercialize vLLM"
+        },
+        {
+          "start": 259,
+          "end": 324,
+          "quote": "raising $150 million in seed funding at an $800 million valuation"
+        },
+        {
+          "start": 326,
+          "end": 401,
+          "quote": "The round was co-led by Andreessen Horowitz and Lightspeed Venture Partners"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "unsupported_claim_event_type:0, unsupported_claim_event_type:1, unsupported_claim_event_type:2"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:17.497Z"
+    },
+    {
+      "candidate_id": "MAC-cecb1b7ca83587b5",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-12b0c8b376b8375e",
+      "raw_id": "RAW-01ae0390f941f716",
+      "source_ref": "SA-af9b5cefb039de38",
+      "source_hash": "8271704786063663",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "decision": "publisher_of",
+        "canonical_name": "微软",
+        "rationale": "SOURCE_TEXT states '微软研究院 AI Frontiers 实验室最新发布 Fara1.5 系列模型', indicating the entity '微软' (through its research lab) published the Fara1.5 models.",
+        "candidate_name": "微软"
+      },
+      "evidence": [
+        {
+          "start": 16,
+          "end": 55,
+          "quote": "微软研究院 AI Frontiers 实验室最新发布 Fara1.5 系列模型"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "failed",
+          "detail": "unsupported_numeric_fact:1.5m"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "entity_resolution_must_require_review"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:18.991Z"
+    },
+    {
+      "candidate_id": "MAC-d39202990519e354",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-c6da1fc693a0d2c6",
+      "raw_id": "RAW-10af63a0aee12045",
+      "source_ref": "SA-7a92782af9cf244d",
+      "source_hash": "3295026b10f897ec",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "missing_claim_proposal"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:15.909Z"
+    },
+    {
+      "candidate_id": "MAC-dc55f2fddce9faa4",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-8dfa7ee544d661eb",
+      "raw_id": "RAW-4840500c4a856637",
+      "source_ref": "SA-c25b090ab1874018",
+      "source_hash": "36707f31f2817c6d",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "decision": "same_entity",
+        "canonical_name": "Illoca",
+        "rationale": "The entity candidate 'Illoca' matches the organization described in the source text, which refers to itself as 'Illoca' and 'Illoca, Inc.'",
+        "candidate_name": "Illoca"
+      },
+      "evidence": [
+        {
+          "start": 442,
+          "end": 597,
+          "quote": "Illoca, an AI-native design engine that returns creative agency to the architect, has closed $13 million in Seed financing led by Bessemer Venture Partners"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "entity_resolution_must_require_review"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:22.657Z"
+    },
+    {
+      "candidate_id": "MAC-dd2975e863a7da63",
+      "task_type": "qa_repair",
+      "asset_id": "QA-8c3ff4c796b7fc5a",
+      "raw_id": "RAW-f9162c66d82f80ef",
+      "source_ref": "SA-12dca642b75b743a",
+      "source_hash": "c1a72972da85b107",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "action": "recollect_original",
+        "reason": "The QA_REASON is 'event_not_ai_relevant', but the SOURCE_TEXT is entirely about deploying AI models (Microsoft Foundry Models, NVIDIA NIMs, Cohere, etc.) on managed compute, which is directly relevant to AI industry factual data."
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:24.037Z"
+    },
+    {
+      "candidate_id": "MAC-de3eeb6ffae7f871",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-2ebd8c3f48790665",
+      "raw_id": "RAW-8703992e39c4c969",
+      "source_ref": "SA-339482f06c0d532c",
+      "source_hash": "4b45f40b77306fff",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "commercial",
+            "subject": "Cato",
+            "object": "€1.6 million pre-seed round",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "commercial",
+            "subject": "Cato",
+            "object": "first paying client",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "commercial",
+            "subject": "Cato",
+            "object": "tripled client base from 11 to over 35",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 2905,
+          "end": 2964,
+          "quote": "By December, they had closed a €1.6 million pre-seed round."
+        },
+        {
+          "start": 2855,
+          "end": 2904,
+          "quote": "Their first paying client came aboard in October."
+        },
+        {
+          "start": 2965,
+          "end": 3042,
+          "quote": "By the end of Q1 2026, they had tripled their client base from 11 to over 35."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "unsupported_claim_event_type:0, unsupported_claim_event_type:1, unsupported_claim_event_type:2"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:14.356Z"
+    },
+    {
+      "candidate_id": "MAC-defcc7e29d98dbf6",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-8da5eafb322ee86e",
+      "raw_id": "RAW-6f3ceb7893d37255",
+      "source_ref": "SA-8cb198de0dd42cde",
+      "source_hash": "49c881bff41c0376",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "decision": "same_entity",
+        "canonical_name": "Fractile",
+        "rationale": "The ENTITY_CANDIDATE canonical_name 'Fractile' matches the company name used throughout the SOURCE_TEXT, which describes the company's founding, mission, and funding round.",
+        "candidate_name": "Fractile"
+      },
+      "evidence": [
+        {
+          "start": 96,
+          "end": 281,
+          "quote": "Fractile was founded in 2022 on the bet that, eventually, the world’s most capable AI systems would be limited in their impact by the amount of time they take to produce useful outputs."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "entity_resolution_must_require_review"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:22.988Z"
+    },
+    {
+      "candidate_id": "MAC-e3c9bb48f6ae8171",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-864e7f949b17c9b1",
+      "raw_id": "RAW-5218d014ce9e072e",
+      "source_ref": "SA-2b810e0c08df3b1f",
+      "source_hash": "f1b00ff6ee0ad7a5",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "decision": "same_entity",
+        "canonical_name": "Netomi",
+        "rationale": "The ENTITY_CANDIDATE canonical_name 'Netomi' matches the subject of the SOURCE_TEXT, which is a press release about Netomi's funding round, platform, and partnerships.",
+        "candidate_name": "Netomi"
+      },
+      "evidence": [
+        {
+          "start": 561,
+          "end": 740,
+          "quote": "Netomi today announced $110 million in new funding led by Accenture Ventures, with participation from Adobe Ventures, WndrCo, SLW, NAVER Ventures, Metis Strategy, and Fin Capital."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "entity_resolution_must_require_review"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:21.990Z"
+    },
+    {
+      "candidate_id": "MAC-f32c500aa8b28c28",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-eb06d3b91ffc7cd8",
+      "raw_id": "RAW-83ca455651ef7f03",
+      "source_ref": "SA-522fb822589894a6",
+      "source_hash": "fac579a5d106bcaa",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Fazeshift",
+            "object": "$17 million Series A round",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "commercial",
+            "subject": "Fazeshift",
+            "object": "revenue grew 12x in a single year",
+            "evidence_index": 1
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 351,
+          "end": 479,
+          "quote": "Fazeshift , a startup that uses AI agents to automate accounts receivable, has raised $17 million in a Series A round of funding"
+        },
+        {
+          "start": 3132,
+          "end": 3309,
+          "quote": "Fazeshift has seen its revenue grow 12x in a single year, attracting dozens of enterprise customers, including eight unicorns and its first public company, according to Leksana."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "unsupported_claim_event_type:1"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:18.953Z"
+    },
+    {
+      "candidate_id": "MAC-f44fda6dc0ef2ce4",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-1405a1b7245c4536",
+      "raw_id": "RAW-7bc23236deb221f4",
+      "source_ref": "SA-5144d63c8a9f6755",
+      "source_hash": "8d6d58b221ef94e8",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "missing_claim_proposal"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:12.406Z"
+    },
+    {
+      "candidate_id": "MAC-fa3de031340dd656",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-c598d170cbe3b50e",
+      "raw_id": "RAW-337e27c4817a8531",
+      "source_ref": "SA-60a0080e38e0a65c",
+      "source_hash": "a6371829563996e2",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.1",
+      "status": "rejected",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "commercial",
+            "subject": "SnapLogic",
+            "object": "Jean-Paul AI agent",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "commercial",
+            "subject": "SnapLogic",
+            "object": "Jean-Paul AI agent",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "commercial",
+            "subject": "SnapLogic",
+            "object": "Jean-Paul AI agent",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 11304,
+          "end": 11450,
+          "quote": "Over 4 months of deployment, Jean-Paul delivered more than $3M in total estimated value, calculated from platform audit logs across 17 departments"
+        },
+        {
+          "start": 11544,
+          "end": 11741,
+          "quote": "2,141 hours saved in a single 30-day period. Equivalent to approximately 12.5 FTEs across Sales, Customer Success, Marketing, Engineering, Finance, HR, Professional Services, and other departments."
+        },
+        {
+          "start": 12024,
+          "end": 12187,
+          "quote": "$380-540K per year in realized cost avoidance. Analytics tooling and consultant engagements were eliminated as Jean-Paul generates reports directly from live data."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "unsupported_claim_event_type:0, unsupported_claim_event_type:1, unsupported_claim_event_type:2"
+        }
+      ],
+      "generated_at": "2026-07-18T01:29:16.988Z"
+    }
+  ]
+}

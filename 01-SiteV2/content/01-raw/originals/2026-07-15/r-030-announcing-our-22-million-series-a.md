@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-030
 title: "Announcing our $22 Million Series A"
-title_zh: "Hadrius 获得 2200 万美元 A 轮融资"
+title_zh: "宣布完成2200万美元A轮融资"
 title_translation_status: "translated"
-title_translation_method: "source_title_translation_db"
+title_translation_method: "deepseek_title_translation"
 original_url: "https://www.hadrius.com/insights/series-a"
 canonical_url: "https://hadrius.com/insights/series-a"
 source_name: "keyword search / Anysearch"
@@ -79,7 +79,7 @@ fact_extraction_completed_at: 2026-07-15T04:28:37.726Z
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only
-title_translation_model: "not_applicable"
+title_translation_model: "deepseek-v4-flash"
 ---
 
 # Announcing our $22 Million Series A
