@@ -53,7 +53,7 @@ function main() {
     "status: current",
     `updated_at: ${current.manifest.generated_at}`,
     `current_date: ${current.date}`,
-    "product_version: SITE-V4.1.0",
+    "product_version: SITE-V4.2.0-entity-history",
     "raw_version: RAW-V3.0",
     "event_version: EVENT-V1.1",
     "---",

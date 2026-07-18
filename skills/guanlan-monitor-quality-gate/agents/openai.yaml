@@ -1,3 +1,0 @@
-display_name: "观澜监测预闸门"
-short_description: "运行每日监测脚本评分、补采重跑和 QC 交接。"
-default_prompt: "Use $guanlan-monitor-quality-gate to run the Guanlan daily-monitor script pre-gate. Check Raw / Pool counts, non-community search paths, usable original-evidence core items, six required importance_type lanes, homepage/index-only leakage, M-source misuse, then hand off to $guanlan-daily-monitor-qc for final permission."

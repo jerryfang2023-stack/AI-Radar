@@ -10,11 +10,11 @@ use_when:
 priority: current
 ---
 
-# SITE-V4.1 Data Center Automation Loop
+# SITE-V4.2 Data Center Automation Loop
 
 The daily production workflow builds the Data Center V4 factual bundle after Raw evidence supply, then builds frozen V3 Card / graph / trend assets only as internal compatibility and downstream-application input. V4 build, integrity gate, and JSONL materialization are release-blocking. Retired V3 page assets are not generated or deployed.
 
-SITE-V4.1 automation is lane-independent for production and site-unified for publication. First-Line Viewpoints and Community Intelligence keep independent data gates and are projected into the V4 Data Center shell. Business Signals continues as an internal V3.3.6.3 compatibility lane after the V4 integrity gate. Reports Center (`REPORTS-V1.0.0-periodic-report-center`) publishes monthly / weekly reports through the periodic content gate and deterministic renderer. Opportunity Map (`OMAP-V1.0.0-independent-column`) independently reads source-backed opportunity signals from `industry-reports-frontstage.json`; no public page reads the V3 desk JSON. Hermes remains a problem monitor: failed production runs are recorded by Daily Problem Watchdog for targeted Codex repair.
+SITE-V4.2 automation is lane-independent for production and site-unified for publication. First-Line Viewpoints and Community Intelligence keep independent data gates and are projected into the V4 Data Center shell. Business Signals continues as an internal V3.3.6.3 compatibility lane after the V4 integrity gate. Reports Center (`REPORTS-V1.0.0-periodic-report-center`) publishes monthly / weekly reports through the periodic content gate and deterministic renderer. Opportunity Map (`OMAP-V1.0.0-independent-column`) independently reads source-backed opportunity signals from `industry-reports-frontstage.json`; no public page reads the V3 desk JSON. Hermes remains a problem monitor: failed production runs are recorded by Daily Problem Watchdog for targeted Codex repair.
 
 ## Business Signals GitHub Chain
 

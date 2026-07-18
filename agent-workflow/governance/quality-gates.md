@@ -3,7 +3,7 @@
 Status: current
 Updated: 2026-07-17
 
-This governance note lists active SITE-V4.1 public checks and the remaining V3 internal compatibility checks. Retired V1/V2 outputs and retired V3 page CSS/JS are not active release gates.
+This governance note lists active SITE-V4.2 public checks and the remaining V3 internal compatibility checks. Retired V1/V2 outputs and retired V3 page CSS/JS are not active release gates.
 
 ## General Completion Rule
 

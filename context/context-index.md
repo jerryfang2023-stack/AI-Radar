@@ -27,7 +27,7 @@ This file is the reading router. Do not use old closeout files as current truth.
 | `context/05-daily-monitoring.md` | Daily monitoring minimum context | Raw / Pool / monitoring QC |
 | `context/06-execution-harness.md` | High-risk execution harness | Monitoring, Raw / Pool / Card, page changes |
 | `context/07-v3-intelligence-generation-rules.md` | Internal V3 Card / graph / trend compatibility rules | Legacy data compatibility and downstream application changes |
-| `context/08-v3-3-automation.md` | SITE-V4.1 GitHub / site / local Obsidian automation loop | GitHub Actions, data sync, local sync |
+| `context/08-v3-3-automation.md` | SITE-V4.2 GitHub / site / local Obsidian automation loop | GitHub Actions, data sync, local sync |
 | `context/09-v3-3-current-action-index.md` | Current action registry, including internal compatibility actions | Action dispatch and automation recovery |
 | `context/10-v3-3-experience-automation.md` | Action logging and retrospective automation | Record meaningful actions, summarize mistakes and lessons |
 | `context/11-hermes-daily-supervision-instructions.md` | Hermes daily supervision instructions | Daily monitoring supervision, Codex repair handoff |
@@ -51,7 +51,7 @@ This file is the reading router. Do not use old closeout files as current truth.
 | `agent-workflow/skills/guanlan-business-signals-monitor/SKILL.md` | Business Signals lane supervision and repair |
 | `agent-workflow/skills/guanlan-first-line-viewpoints-monitor/SKILL.md` | First-Line Viewpoints lane supervision and repair |
 | `agent-workflow/skills/guanlan-community-intelligence-monitor/SKILL.md` | Community Intelligence lane supervision and repair |
-| `agent-workflow/skills/guanlan-opportunity-radar-updater/SKILL.md` | Industry Reports opportunity maps weekly update and evidence-boundary repair |
+| `agent-workflow/skills/guanlan-opportunity-radar-updater/SKILL.md` | Independent Opportunity Map weekly update and evidence-boundary repair |
 
 ## Active Frontstage
 
@@ -63,7 +63,7 @@ This file is the reading router. Do not use old closeout files as current truth.
 
 ## Paused Or Retired
 
-- Legacy content-output routes are not SITE-V4.1 required outputs.
+- Legacy content-output routes are not SITE-V4.2 required outputs.
 - Legacy copy gates are not publication blockers.
 - Follow-builders / builders viewpoints are active only as the independent first-line viewpoints column. They must not be used as business-signal facts, relationship-graph evidence, or trend-candidate evidence.
 

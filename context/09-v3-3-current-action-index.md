@@ -5,7 +5,7 @@ last_updated: 2026-07-16
 use_when:
   - choose current action
   - recover missing actions
-  - dispatch SITE-V4.1 production and internal compatibility work
+  - dispatch SITE-V4.2 production and internal compatibility work
   - distinguish current actions from historical tasks
 priority: current
 ---
@@ -22,7 +22,7 @@ Every action, old or new, must be treated as one of these classes:
 
 | Status | Meaning | Codex Behavior |
 |---|---|---|
-| `current` | Active SITE-V4.1 or internal compatibility production action. | May be used as a default execution route. |
+| `current` | Active SITE-V4.2 or internal compatibility production action. | May be used as a default execution route. |
 | `compatibility/downstream` | Frozen page support or interpretation outside the V4 data core. | May run only for its downstream consumer and must not write V4 canonical tables. |
 | `manual/archive` | Historical or diagnostic action with reference value. | May be read or manually consulted, but must not run by default. |
 | `retired` | Explicitly stopped action or output. | Must not be restored, required, or used as a blocker. |
@@ -31,7 +31,7 @@ Do not mark an old action as `current` just because it existed before. Only a ro
 
 ## Current Actions
 
-Only these actions are `current` for SITE-V4.1 and retained compatibility lanes:
+Only these actions are `current` for SITE-V4.2 and retained compatibility lanes:
 
 | Action | Status | Current Role |
 |---|---|---|
@@ -45,7 +45,7 @@ Only these actions are `current` for SITE-V4.1 and retained compatibility lanes:
 | Source-first check | `current` | Ensure frontstage facts are original-source backed. |
 | Pool-to-Card dedupe | `current` | Prevent duplicate evidence from becoming duplicate Cards. |
 | Factual relationship build | `current` | Build event/claim/entity/source links without tag-derived direction or hypotheses. |
-| Industry Reports opportunity maps | `compatibility/downstream` | Feed the V4 Industry Reports application projection; outputs cannot enter V4 canonical data. |
+| Opportunity Map | `compatibility/downstream` | Feed the independent OMAP application projection; outputs cannot enter V4 canonical data. |
 | Industry Reports reports | `compatibility/downstream` | Keep V4 report pages working as downstream interpretation. |
 | Trend candidate judgment | `compatibility/downstream` | Keep frozen pages working; trend judgment cannot enter V4 canonical data. |
 | First-line viewpoints RSS update | `current` | Update builders viewpoints from the morning RSS / podcast route independently from business signals. |
@@ -208,11 +208,11 @@ Boundaries:
 - Do not include builders viewpoints or opinion-only materials.
 - Do not replace the graph with long prose cards.
 
-### 5.1 Industry Reports Opportunity Maps
+### 5.1 Opportunity Map
 
 Purpose:
 
-- Refresh the Industry Reports page's two startup-oriented opportunity maps once per week:
+- Refresh the independent Opportunity Map's two source-backed matrices once per week:
   - Entry Point Map / 切入点图: buyer or user x concrete task.
   - Product Pain Map / 产品痛点图: pain or constraint x product form / delivery model.
 
@@ -235,7 +235,7 @@ Cadence:
 Outputs:
 
 - refreshed `opportunity_signals` when source-near fields need repair.
-- updated Industry Reports opportunity map panels.
+- updated `opportunity-map.html` matrices and evidence modals.
 - validation report from frontstage regression when page or data output changes.
 
 Boundaries:
@@ -383,7 +383,7 @@ Outputs:
 Boundaries:
 
 - Business Signals keeps one active-date unified Card set as the primary view.
-- Industry Reports maps follow the internal compatibility Card chain. Report pages update through V4 Industry Reports page work.
+- Opportunity Map follows the internal compatibility Card chain through source-backed `opportunity_signals`. Report pages remain independently owned by Reports Center.
 - First-Line Viewpoints keeps the same topbar height and structure.
 - First-Line Viewpoints data must be produced and gated by its independent workflow, not by the Business Signals PR.
 - First-Line Viewpoints Obsidian timelines must be produced from the same gated `follow-builders-daily.json`, not from retired `05-frontier-opinions`.
@@ -502,11 +502,11 @@ Boundaries:
 
 ## Retired Actions
 
-The following action groups are `retired` for SITE-V4.1:
+The following action groups are `retired` for SITE-V4.2:
 
 | Action Group | Status | Reason |
 |---|---|---|
-| legacy content-output routes | `retired` | SITE-V4.1 is a factual data center, not an old content-production lane. |
+| legacy content-output routes | `retired` | SITE-V4.2 is a factual data center, not an old content-production lane. |
 | V2 four-column website page production | `retired` | V2 homepage and four-column public site routes are retired. |
 | legacy copy gates | `retired` | Not current publication blockers. |
 | opinion lane as business-signal evidence | `retired` | First-line viewpoints are independent and cannot feed signal, graph, or trend evidence. |

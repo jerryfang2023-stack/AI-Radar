@@ -42,7 +42,7 @@ Do not scan all Markdown at task start. Read only this file, the required `conte
 
 ## Current Version
 
-- Current stage: SITE-V4.2.0 entity history; the SITE-V4.1 unified shell remains, while stable entities, factual timelines, and evidence-backed relations are first-class data services. V3 Card/trend data remains an internal compatibility and downstream-application input only.
+- Current stage: SITE-V4.2.0 entity history; the unified V4 shell remains, while stable entities, factual timelines, and evidence-backed relations are first-class data services. V3 Card/trend data remains an internal compatibility and downstream-application input only.
 - Current frontstage: `01-SiteV2/site/data-center.html`, `01-SiteV2/site/intelligence-map.html`, `01-SiteV2/site/opportunity-map.html`, and the V4 report detail pages.
 - Current dashboard: `01-SiteV2/site/operations-console.html`.
 - Current Business Signals column version: BSIG-V2.2.0-pipeline-stage-ownership.
@@ -55,6 +55,7 @@ Do not scan all Markdown at task start. Read only this file, the required `conte
 - Current Raw contract: RAW-V3.0.
 - Current canonical event contract: EVENT-V1.1.
 - Current entity history contract: ENTITY-V1.0.
+- Current person-account review contract: PERSON-REVIEW-V1.0.
 - Current factual relationship contract: RELATION-V2.0.
 - Current targeted historical collection contract: BACKFILL-V1.0.
 - Current tag taxonomy version: TAG-V4.0.
@@ -112,7 +113,7 @@ If an old page rule conflicts with SITE-V4.2.0, delete or rebuild it instead of 
 | `context/05-daily-monitoring.md` | V3 Raw / Pool monitoring context |
 | `context/06-execution-harness.md` | high-risk execution harness |
 | `context/07-v3-intelligence-generation-rules.md` | Raw / Pool / Card / relation / trend-candidate truth source |
-| `context/08-v3-3-automation.md` | SITE-V4.1 GitHub / site / Obsidian sync automation loop |
+| `context/08-v3-3-automation.md` | SITE-V4.2 GitHub / site / Obsidian sync automation loop |
 | `context/09-v3-3-current-action-index.md` | current V4 and compatibility action registry |
 | `context/10-v3-3-experience-automation.md` | action logging and retrospective automation |
 | `context/11-hermes-daily-supervision-instructions.md` | Hermes daily supervision and Codex repair handoff |

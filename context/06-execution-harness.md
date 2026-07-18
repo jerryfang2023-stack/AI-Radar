@@ -5,7 +5,7 @@ last_updated: 2026-07-17
 priority: current
 ---
 
-# SITE-V4.1 Execution Harness
+# SITE-V4.2 Execution Harness
 
 Use this harness for Data Center V4 production, monitoring, V3 internal Card compatibility, first-line viewpoints data, relationship graph, trend-candidate analysis, and site data sync.
 

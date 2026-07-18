@@ -22,7 +22,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Version name | WaveSight Entity History |
 | Version layer | Minor |
 | Release date | 2026-07-17 |
-| Last modified at | 2026-07-18T13:17:22+08:00 |
+| Last modified at | 2026-07-18T17:19:02+08:00 |
 | Product version | V4.2 |
 | Data center version | SITE-V4.0-data-center |
 | Main website version | SITE-V4.2.0-entity-history |
@@ -30,22 +30,29 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Tag taxonomy version | TAG-V4.0 |
 | First-Line Viewpoints column version | FLV-V1.1.0-history-backfill |
 | Community Intelligence column version | CINT-V1.0.2-publication-waiting-gate |
-| Enterprise AI lens version | FDE-V2.0 |
+| Enterprise AI / FDE data contract | FDE-V2.0 |
+| Enterprise AI compatibility lens version | EAI-V1.2.0-raw-card-ingestion-boundary |
 | AI Hardware data version | HARDWARE-V1.0 |
 | Reports Center column version | REPORTS-V1.0.0-periodic-report-center |
 | Opportunity Map column version | OMAP-V1.0.0-independent-column |
 | Data Center Raw contract | RAW-V3.0 |
 | Canonical event contract | EVENT-V1.1 |
 | Entity history contract | ENTITY-V1.0 |
+| Person-account review contract | PERSON-REVIEW-V1.0 |
 | Factual relationship contract | RELATION-V2.0 |
+| Targeted historical collection contract | BACKFILL-V1.0 |
 | Legacy Business Signals contract | V3.3.6.3-business-source-artifact-aggregation |
 | Weekly Report content source | `01-SiteV2/content/08-report/` |
 | Monthly Report content source | `01-SiteV2/content/08-report/monthly/` |
-| Weekly report page-generator Skill | guanlan-weekly-report-page-generator v1.1.0 |
+| Weekly report page-generator Skill | guanlan-weekly-report-page-generator v1.1.1 |
 | Monthly report page-generator Skill | guanlan-monthly-report-page-generator v1.1.0 |
+| Opportunity Map updater Skill | guanlan-opportunity-radar-updater v1.2.0 |
+| Community Intelligence monitor Skill | guanlan-community-intelligence-monitor v1.0.4 |
+| Monthly business-structure content Skill | guanlan-monthly-business-structure-report v0.2.1 |
+| Skill governance editor | guanlan-skill-editor v1.0.1 |
 | Operations backend version | OPS-V1.2.3-content-factory-cleanout |
-| Skill Store version | v1.6.2 independent Reports Center generation |
-| Git tag | `v4.2.0-entity-history` |
+| Skill Store version | v1.6.3 V4 governance alignment |
+| Git tag | `v4.2.1-governance-alignment` |
 | Current entries | Data Center / Industry Reports / Opportunity Map; V3 column URLs redirect into V4; Dashboard retained as backend |
 
 ## Current Product Baseline
@@ -54,6 +61,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 - The canonical chain is SourceArtifact -> RawDocument -> Claim / Entity -> CanonicalEvent -> FDE / hardware projections -> data service.
 - SITE-V4.2.0 is the only public page and entity-history system. It keeps the V4 logo header and sidebar while adding stable entity profiles, cross-day timelines, factual relationship records, and split frontstage data loading.
 - ENTITY-V1.0 formalizes companies/organizations, products/models/services, and people with stable `EN-*` IDs. Technology, use case, and industry remain `TX-*` classification nodes.
+- PERSON-REVIEW-V1.0 reviews all 37 unified person/account candidates, publishes 31 accepted natural people, quarantines 6 non-natural accounts from the person index, and preserves every source viewpoint record.
 - RELATION-V2.0 accepts only verified typed endpoints with an accepted event, Claim references, and SourceArtifact references; no Tag co-occurrence edges are allowed.
 - `v3-data-observation.html`, `follow-builders.html`, `community-intelligence.html`, and `reports.html` are compatibility redirects into V4.
 - Business Signals continues internally as a Raw / Pool / Card / Relationship Graph / Trend Candidate compatibility chain, but it is not a public page.
@@ -79,7 +87,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 - The three column monitor skills are current execution entries and must include self-improvement after recurring production failures.
 - Hermes daily supervision is now routed through the unified supervision report and the Hermes -> Codex inbox.
 - Project health automation now has daily, weekly, and monthly read-only report commands for supervision coverage, recurring issue review, Git hygiene, large-file review, runtime checks, and deployment-service residue.
-- Skill Store governance is versioned separately as `v1.6.2`. Monthly and weekly report page generation now share the independent Reports Center version boundary while preserving their separate content sources and layout rules; Opportunity Map remains outside those report-page Skills.
+- Skill Store governance is versioned separately as `v1.6.3`. Current Skill metadata, evals, registry entries, and mirrors align Opportunity Map, Reports Center, Community Intelligence, and governance rules with their independent V4 boundaries.
 - Deployment path is GitHub Pages only. Netlify is retired and must not be used for future website deployment.
 
 ## Current Pages
@@ -105,6 +113,7 @@ Local V2 archive: `agent-workflow/backups/v2-static-pages-20260604.zip`. It is f
 | Operations Backend / 运营大后台 | `OPS-V1.2.3-content-factory-cleanout` | Unified backend shell version for `operations-console.html`; released through GitHub Pages after merge | Data Observation governance loop navigation, issue center, task chain, data quality, version governance, independent Skill Store, settings, and backend-facing generated ops data. Topic Center, Content Factory, Publishing Queue, and AIP topic export are retired from the operations backend. | HTML meta `wavesight-ops-console-version`, visible sidebar version, generated `ops-console` data, version ledger |
 | Business Signals compatibility lane | `BSIG-V2.2.0-pipeline-stage-ownership` | Internal compatibility data only; no public V3 page | V3.3.6.3 Card contract, source-first gates, graph/trend analytics, and downstream application adapters | `v3-data-observation-desk.json`, `intelligence-graph-index.json`, Obsidian compatibility outputs |
 | First-Line Viewpoints column | `FLV-V1.1.0-history-backfill` | Published in the V4 Data Center shell through the independent First-Line PR lane and GitHub Pages | Current morning RSS/X data, accepted committed morning snapshots, afternoon follow-builders intake, translation provenance, original-URL dedupe, and opinion timeline idempotency | `first-line-viewpoints-history.json`, `first-line-viewpoints-v4.json`, `data-center.html?view=viewpoints`, Obsidian opinion timelines |
+| Person-account review | `PERSON-REVIEW-V1.0` | Serving-layer admission contract for the Entity Index people view | Canonical entity candidates plus First-Line authors and accepted review evidence | 31 public natural-person profiles, 6 quarantined non-natural accounts, preserved viewpoint records |
 | Reports Center / 行业报告 | `REPORTS-V1.0.0-periodic-report-center` | Published as the first Application Center entry. Owns accepted Monthly / Weekly Markdown, deterministic page rendering, archives, and page-generator Skill validation. | `.github/workflows/periodic-reports-pr.yml` + `assert-periodic-report-content.mjs` + `render-periodic-report-pages.mjs` + Monthly/Weekly report content | `intelligence-map.html`, `monthly-business-structure-*.html`, `weekly-ai-business-change-radar*.html`, monthly/weekly report page-generator Skills, `01-SiteV2/content/08-report/` |
 | Opportunity Map / 机会地图 | `OMAP-V1.0.0-independent-column` | Published as the second Application Center entry. Owns the dedicated downstream projection, two source-backed matrices, and evidence modal. | `industry-reports-frontstage.json` + source-backed `opportunity_signals` | `opportunity-map.html`, `build-industry-reports-frontstage.mjs`, opportunity radar updater Skill |
 
@@ -161,6 +170,7 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Freeze Point | Pages | Date | Updated at | Version | Must Not Return | Gates |
 |---|---|---|---|---|---|---|
+| `V4.2-governance-alignment-20260718` | Current V4 pages / Operations Backend / column Skills / version gates | 2026-07-18 | 2026-07-18T17:19:02+08:00 | SITE-V4.2.0-entity-history / PERSON-REVIEW-V1.0 / Skill Store v1.6.3 / Git tag v4.2.1-governance-alignment | stale SITE-V3.4.5 dashboard metadata; shared IMAP preflight; Opportunity Map nested under Reports Center; duplicate root Skill sources; V3 taxonomy declared as V4 truth; unreviewed or non-natural accounts in the public person index | version consistency gate + V4 data/entity/tag tests + Skill validation/sync/audit + frontstage regression + GitHub Pages live verification |
 | `REPORTS-OMAP-freeze-independent-columns-20260718` | Reports Center / Monthly and Weekly details / Opportunity Map / report generation Skills | 2026-07-18 | 2026-07-18T13:17:22+08:00 | REPORTS-V1.0.0-periodic-report-center / OMAP-V1.0.0-independent-column / Skill Store v1.6.2 | shared `IMAP-V2.1.0` metadata returning; opportunity matrices returning to Reports Center; report cards entering Opportunity Map; DeepSeek editing HTML/navigation; page generation before the content gate; report detail pages emitting the Opportunity Map version | periodic renderer tests + report data tests + Skill validation/sync/registry rebuild + frontstage regression + desktop/mobile smoke + GitHub Pages live verification |
 | `FLV-V1.1.0-freeze-history-backfill-20260718` | First-Line Viewpoints feed / people index / person timelines | 2026-07-18 | 2026-07-18T13:08:53+08:00 | FLV-V1.1.0-history-backfill | current-day-only viewpoint feed; historical snapshots bypassing approved Chinese translation provenance, original-source URL, AI-relevance, or opinion-tag gates; translation text determining AI relevance; duplicate original URLs; builders viewpoints entering Business Signals, factual relationships, or trend evidence | history backfill stats + First-Line V4 data gate + current builders gate + focused frontstage regression + GitHub Pages live verification |
 | `SITE-V4.2.0-freeze-entity-history-20260717` | Data Center Entity Index / entity details / taxonomy details / split data service | 2026-07-17 | 2026-07-17T22:45:00+08:00 | SITE-V4.2.0-entity-history / ENTITY-V1.0 / RELATION-V2.0 | unstable page-only product IDs; separate Company/Product sidebar entries; Tag-co-occurrence relationships; candidate endpoints in formal relations; global relationship graph; full compatibility payload as the preferred list fetch; historical records invented to fill source gaps | entity schema + relationship integrity gate + six-month backfill audit + Data Center tests + desktop/mobile smoke + GitHub Pages live verification |
@@ -207,6 +217,7 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Version | Updated at | Summary | Current Status |
 |---|---|---|---|
+| V4.2 governance alignment / PERSON-REVIEW-V1.0 / Skill Store v1.6.3 | 2026-07-18T17:19:02+08:00 | Aligns the current version ledger, dashboard, supervision, column Skills, taxonomy routing, and release gates while preserving SITE-V4.2.0 canonical data and 31 reviewed natural-person profiles. | current governance |
 | REPORTS-V1.0.0 / OMAP-V1.0.0 / Skill Store v1.6.2 | 2026-07-18T13:17:22+08:00 | Splits Reports Center and Opportunity Map into independently versioned Application Center columns. The report release owns gated Markdown-to-page generation through the monthly/weekly page-generator Skills; the map release owns the dedicated source-backed projection and two evidence-backed matrices. | current applications |
 | FLV-V1.1.0-history-backfill | 2026-07-18T13:08:53+08:00 | Materializes accepted committed morning snapshots, merges current and historical morning records plus afternoon intake by original URL, and keeps only source-backed, AI-relevant viewpoints with approved Chinese translation provenance and opinion tags in the V4 public feed. | current |
 | SITE-V4.2.0 / ENTITY-V1.0 / RELATION-V2.0 | 2026-07-17T22:45:00+08:00 | Adds stable company/product/person profiles, technology/use-case/industry nodes, source-backed typed relationships, cross-day factual timelines, split index/detail payloads, and a six-month accepted-history reprojection with explicit coverage gaps. | current |

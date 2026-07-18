@@ -30,7 +30,7 @@ This file records stable project memory for WaveSight AI / Guanlan AI. It is not
 - Do not restore legacy copy gates as publication blockers.
 - Builders / First-Line Viewpoints must not be used as business-signal facts, relationship-graph evidence, or trend-candidate evidence.
 - Community posts are demand signals unless recaptured through source-backed business evidence.
-- If an old rule conflicts with the current SITE-V4.1.0 public contract, rebuild or delete the old route instead of restoring V3 page content.
+- If an old rule conflicts with the current SITE-V4.2.0 public contract, rebuild or delete the old route instead of restoring V3 page content.
 - Legacy V3 column URLs remain redirects only; no public page may load V3 navigation, V3 page assets, or the V3 desk JSON.
 
 ## Operating Model

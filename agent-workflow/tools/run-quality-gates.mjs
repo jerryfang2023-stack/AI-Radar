@@ -188,7 +188,7 @@ function writeReport(runs) {
     "",
     "## Current Scope",
     "",
-    "- SITE-V4.1 public frontstage plus V3 internal compatibility only.",
+    "- SITE-V4.2 public frontstage plus V3 internal compatibility only.",
     "- Retired V1/V2 daily observation, business brief, publiccopy, cardcopy, writer-style, V2 typography, and V2 raw/source gates are not active quality gates.",
     "- Use Data Center V4 integrity/frontstage gates for public output; use V3 Card, source-first, and freshness gates only for the internal compatibility lane.",
     "",

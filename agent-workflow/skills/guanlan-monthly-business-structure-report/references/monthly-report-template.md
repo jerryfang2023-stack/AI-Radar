@@ -10,7 +10,7 @@ month: "YYYY-MM"
 window: YYYY-MM-01 to YYYY-MM-DD
 content_type: monthly-report
 slug: ai-business-structure-opportunity-monthly-YYYY-MM
-scope: Business Signals + Weekly Reports + Community Intelligence + First-Line Viewpoints + Intelligence Map
+scope: Business Signals + Weekly Reports + Community Intelligence + First-Line Viewpoints + Opportunity Map
 status: draft
 version: v0.1
 method: 产业结构变化诊断 + 趋势裁决 + 机会地图
@@ -26,7 +26,7 @@ method: 产业结构变化诊断 + 趋势裁决 + 机会地图
 - Weekly Reports:
 - Community Intelligence:
 - First-Line Viewpoints:
-- Intelligence Map / Trend Candidates:
+- Opportunity Map / internal Trend Candidates:
 
 证据边界：
 

@@ -50,6 +50,6 @@ Use this checklist for full audits. Each item is pass/fail.
 
 ## Validation
 
-- YAML frontmatter has only `name` and `description`.
+- YAML frontmatter has `name` and `description`; governed Guanlan skills also keep the validator-approved `metadata.guanlan` version, lane, responsibility, boundary, gate, and mirror fields.
 - The skill folder validates with `quick_validate.py`.
 - `agents/openai.yaml` matches the current skill purpose if present.

@@ -21,7 +21,7 @@ Hermes is the daily supervisor for WaveSight AI. It should observe, classify, an
 - Current Enterprise AI / FDE lens version: `EAI-V1.2.0-raw-card-ingestion-boundary`.
 - Current Business Signals data contract: `V3.3.6.3-business-source-artifact-aggregation`.
 - Version ledger: `context/version-ledger.md`.
-- SITE-V4.1 keeps independent First-Line Viewpoints and Community Intelligence production, V4 factual events/FDE/hardware, and Industry Reports downstream application data. Business Signals Cards and graph/trend data remain internal compatibility assets only. Hermes observes and records problems; it does not run early handoff, bounded recovery, or automatic full-chain reruns.
+- SITE-V4.2 keeps independent First-Line Viewpoints and Community Intelligence production, V4 factual events/FDE/hardware, and Industry Reports downstream application data. Business Signals Cards and graph/trend data remain internal compatibility assets only. Hermes observes and records problems; it does not run early handoff, bounded recovery, or automatic full-chain reruns.
 - Hermes must treat old month timeline files such as `YYYY-MM.md` as legacy / cleanup candidates, not as proof that current sync is healthy.
 - Do not judge Codex work by commit author name. In this repository Codex commits may use the configured Git identity.
 
@@ -42,7 +42,7 @@ Hermes should do this every Asia/Shanghai production day:
 
 Use this order every day to avoid duplicate checks and blind reruns:
 
-1. Version preflight: confirm public pages agree on `SITE-V4.2.0-entity-history` and `IMAP-V2.1.0-v4-unified-frontstage`; internal compatibility files may retain `SITE-V3.4.5` and `BSIG-V2.2.0-pipeline-stage-ownership`. Treat ledger history as history.
+1. Version preflight: confirm public pages agree on `SITE-V4.2.0-entity-history`; Industry Reports uses `REPORTS-V1.0.0-periodic-report-center`, Opportunity Map uses `OMAP-V1.0.0-independent-column`, and no current page emits shared IMAP metadata. Internal compatibility files may retain `SITE-V3.4.5` and `BSIG-V2.2.0-pipeline-stage-ownership`. Treat ledger history as history.
 2. Lane readiness: check whether each producing lane has same-date output or an active same-date run before declaring missing data.
 3. Data quality: check the lane-specific public contract, not generic volume alone.
    - Business Signals: unified `BSIG-V2.2.0-pipeline-stage-ownership` Cards, separate AI Hardware lens-only items, source-first titles/facts, no Top10/candidate split, no backend-only / low-value items.

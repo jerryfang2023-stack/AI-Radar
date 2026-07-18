@@ -1,8 +1,0 @@
-display_name: "观澜每日监测 QC"
-short_description: "质检每日监测 Raw / Pool 的原文证据、页面类型、信号覆盖和下游放行状态。"
-default_prompt: "Use $guanlan-daily-monitor-qc to audit a Guanlan daily-monitor run. Check original evidence, page-type routing, AI HOT daily and provider source separation, six required importance_type lanes, and output allow / allow_with_degradation / block with a Markdown QC report."
-
-
-## Opinion lane paused
-
-The previous viewpoint / opinion-card lane is not part of current Raw / Pool / business-signal Card generation. Do not generate, stage, or publish opinion cards from the business-signal chain until the column is rebuilt.

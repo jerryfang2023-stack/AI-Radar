@@ -1,6 +1,6 @@
 # Tag Taxonomy｜标签体系
 
-Compatibility notice: this TAG-V2 taxonomy is retained only for frozen V3 Cards and downstream Industry Reports projections. Data Center V4 uses `tag-taxonomy-v3.json`; V4 tags are Claim-level evidence assertions and cannot represent structured fields, ranking, eligibility, opportunity, or trend judgment.
+Compatibility notice: this TAG-V2 Markdown taxonomy is retained only for frozen V3 Cards and downstream compatibility projections. Data Center V4 uses `tag-taxonomy-v4.json` as the sole current taxonomy; `tag-taxonomy-v3.json` is migration input only. V4 tags are Claim-level evidence assertions and cannot represent structured fields, ranking, eligibility, opportunity, or trend judgment.
 
 更新时间：2026-07-11
 version：TAG-V2.0.0-semantic-boundaries
