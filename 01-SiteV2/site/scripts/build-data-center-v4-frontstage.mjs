@@ -88,9 +88,10 @@ function dateOnly(value = "") {
 
 export function sourceDateOnly(value = "") {
   const text = String(value || "");
-  if (!text.includes("T")) return dateOnly(text);
+  const directDate = dateOnly(text);
+  if (directDate && !text.includes("T")) return directDate;
   const parsed = new Date(text);
-  if (Number.isNaN(parsed.getTime())) return dateOnly(text);
+  if (Number.isNaN(parsed.getTime())) return directDate;
   const parts = new Intl.DateTimeFormat("en-CA", {
     timeZone: "Asia/Shanghai",
     year: "numeric",
@@ -219,8 +220,8 @@ export function buildEventRecords({ events, claims, rawDocuments, sourceArtifact
     return {
       id: event.event_id,
       dataDate: event.data_date,
-      date: sourceDateOnly(event.event_time || event.disclosed_at || event.data_date),
-      updatedDate: sourceDateOnly(primaryRaw?.updated_at || event.disclosed_at || event.data_date),
+      date: sourceDateOnly(event.event_time) || sourceDateOnly(event.disclosed_at) || sourceDateOnly(event.data_date),
+      updatedDate: sourceDateOnly(primaryRaw?.updated_at) || sourceDateOnly(event.disclosed_at) || sourceDateOnly(event.data_date),
       eventType: event.event_type,
       eventTypeLabel: label.exact,
       eventGroup: label.group,
