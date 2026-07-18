@@ -41,38 +41,62 @@
       font-size: var(--gl-type-body-size, 16px);
       line-height: var(--gl-type-body-line, 28px);
     }
-    .dc-report-main { width: 100%; padding: 0; }
-    .report-shell { width: min(1180px, calc(100% - 48px)); margin: 0 auto; padding: 30px 0 64px; }
-    .report-page-head { margin-bottom: 28px; padding-bottom: 20px; border-bottom: 1px solid var(--soft-line); }
-    .report-page-head .dc-page-head { margin-bottom: 6px; }
-    .report-page-intro { max-width: 720px; margin: 0; color: var(--muted); font-size: 14px; line-height: 24px; }
-    .report-feature-grid { display: grid; grid-template-columns: minmax(0, 1.14fr) minmax(0, .86fr); gap: 14px; }
-    .report-feature-card { min-height: 326px; padding: 24px; display: flex; flex-direction: column; justify-content: space-between; gap: 28px; border: 1px solid var(--line); background: var(--surface); }
-    .report-feature-card.is-monthly { border-left: 4px solid var(--gold); }
-    .report-label { margin: 0 0 10px; color: var(--gold); font-family: var(--mono); font-size: 12px; font-weight: 600; letter-spacing: .12em; line-height: 18px; }
-    .report-date { margin: 0 0 12px; color: var(--faint); font-family: var(--mono); font-size: 12px; line-height: 18px; }
-    .report-feature-card h2 { margin: 0; font-family: var(--serif); font-size: 28px; font-weight: var(--gl-weight-heading, 400); line-height: 1.55; }
-    .report-feature-card p { margin: 14px 0 0; color: var(--muted); font-size: 14px; line-height: 25px; }
-    .report-link { display: inline-flex; align-items: center; align-self: flex-start; min-height: 38px; padding: 0 14px; background: var(--blue); color: var(--paper); font-size: 13px; font-weight: 600; line-height: 20px; text-decoration: none; }
-    .report-archives { margin-top: 40px; padding-top: 30px; border-top: 1px solid var(--soft-line); }
-    .report-archives-head { display: flex; align-items: baseline; flex-wrap: wrap; gap: 10px 16px; margin-bottom: 16px; }
-    .report-archives-head h2 { margin: 0; font-family: var(--serif); font-size: 28px; font-weight: 600; line-height: 40px; }
-    .report-archives-head span { color: var(--muted); font-size: 14px; }
-    .report-archive-grid { display: grid; grid-template-columns: minmax(0, .72fr) minmax(0, 1.28fr); gap: 28px; }
-    .report-archive-group h3 { margin: 0 0 8px; color: var(--gold); font-family: var(--mono); font-size: 12px; font-weight: 600; letter-spacing: .12em; line-height: 18px; }
+    .dc-report-main { width: 100%; padding: 34px 46px 72px; }
+    .report-shell { width: 100%; max-width: 1280px; margin: 0; padding: 0; }
+    .report-page-head { margin-bottom: 34px; padding-bottom: 28px; border-bottom: 1px solid var(--soft-line); }
+    .report-page-head .dc-page-head { min-height: 0; display: grid; gap: 8px; margin-bottom: 0; }
+    .report-page-head .dc-page-head h1 { font-size: var(--gl-type-page-title-size, 44px); line-height: var(--gl-type-page-title-line, 58px); }
+    .report-page-head .dc-page-description { max-width: 720px; color: var(--muted); font-size: 16px; line-height: 28px; }
+    .report-feature-grid { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(300px, .9fr); gap: 24px; align-items: start; }
+    .report-feature-card { min-width: 0; padding: 28px 26px 24px; display: flex; flex-direction: column; justify-content: space-between; gap: 28px; border-top: 3px solid var(--gold); border-bottom: 1px solid var(--line); background: var(--surface); }
+    .report-feature-card.is-weekly { border-top-color: var(--blue); background: linear-gradient(145deg, rgba(13, 53, 92, .065), rgba(255, 253, 248, .82) 60%); }
+    .report-feature-card.is-monthly { background: linear-gradient(145deg, rgba(200, 167, 102, .075), rgba(255, 253, 248, .82) 64%); }
+    .report-meta { display: flex; align-items: baseline; justify-content: space-between; gap: 12px 20px; margin-bottom: 14px; }
+    .report-label { margin: 0; color: var(--gold); font-family: var(--mono); font-size: var(--gl-type-label-size, 12px); font-weight: 600; letter-spacing: .12em; line-height: var(--gl-type-label-line, 18px); }
+    .report-date { margin: 0; color: var(--faint); font-family: var(--mono); font-size: var(--gl-type-label-size, 12px); font-weight: 500; line-height: var(--gl-type-label-line, 18px); white-space: nowrap; }
+    .report-feature-card h2 { margin: 0; font-family: var(--serif); font-weight: var(--gl-weight-title, 600); }
+    .report-feature-card.is-weekly h2 { max-width: 760px; font-size: 24px; line-height: 34px; }
+    .report-feature-card.is-monthly h2 { font-size: var(--gl-type-card-title-size, 20px); line-height: var(--gl-type-card-title-line, 30px); }
+    .report-feature-card .report-summary { max-width: 680px; margin: 14px 0 0; color: var(--muted); font-size: 14px; line-height: 24px; }
+    .report-link { display: inline-flex; align-items: center; align-self: flex-start; gap: 10px; min-height: 32px; padding: 0 0 3px; border-bottom: 1px solid rgba(13, 53, 92, .3); color: var(--blue); font-size: 14px; font-weight: 600; line-height: 20px; text-decoration: none; }
+    .report-link::after { content: "→"; transition: transform .16s ease; }
+    .report-link:hover::after { transform: translateX(4px); }
+    .report-link:focus-visible, .report-list a:focus-visible { outline: 2px solid var(--gold); outline-offset: 4px; }
+    .report-archives { margin-top: 56px; padding-top: 32px; border-top: 1px solid var(--soft-line); }
+    .report-archives-head { display: flex; align-items: baseline; flex-wrap: wrap; gap: 10px 16px; margin-bottom: 24px; }
+    .report-archives-head h2 { margin: 0; font-family: var(--serif); font-size: var(--gl-type-module-title-size, 28px); font-weight: var(--gl-weight-title, 600); line-height: var(--gl-type-module-title-line, 40px); }
+    .report-archives-head span { color: var(--muted); font-size: 14px; line-height: 24px; }
+    .report-archive-grid { display: grid; gap: 30px; }
+    .report-archive-group { display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 24px; align-items: start; }
+    .report-archive-group + .report-archive-group { padding-top: 30px; border-top: 1px solid var(--soft-line); }
+    .report-archive-group h3 { margin: 0; color: var(--ink); font-family: var(--serif); font-size: 20px; font-weight: 600; line-height: 30px; }
     .report-list { border-top: 1px solid var(--line); }
-    .report-list a { min-height: 76px; padding: 14px 4px; display: grid; grid-template-columns: 136px minmax(0, 1fr) auto; align-items: center; gap: 18px; border-bottom: 1px solid var(--line); color: inherit; text-decoration: none; }
-    .report-list a:hover { background: rgba(247, 244, 239, .48); }
-    .report-list time { color: var(--faint); font-family: var(--mono); font-size: 11px; line-height: 18px; }
-    .report-list strong { font-family: var(--serif); font-size: 17px; font-weight: 500; line-height: 27px; }
+    .report-list a { min-height: 72px; padding: 14px 10px; display: grid; grid-template-columns: 150px minmax(0, 1fr) auto; align-items: center; gap: 18px; border-bottom: 1px solid var(--line); color: inherit; text-decoration: none; transition: background-color .16s ease; }
+    .report-list a:hover { background: rgba(247, 244, 239, .64); }
+    .report-list time { color: var(--faint); font-family: var(--mono); font-size: var(--gl-type-label-size, 12px); font-weight: 500; line-height: var(--gl-type-label-line, 18px); }
+    .report-list strong { font-family: var(--sans); font-size: 18px; font-weight: 600; line-height: 28px; }
     .report-list span { color: var(--blue); font-size: 12px; font-weight: 600; white-space: nowrap; }
-    @media (max-width: 1000px) { .report-feature-grid, .report-archive-grid { grid-template-columns: 1fr; } .report-feature-card { min-height: 0; } }
+    @media (max-width: 1080px) { .dc-report-main { padding-right: 28px; padding-left: 28px; } }
+    @media (max-width: 1000px) { .report-feature-grid { grid-template-columns: 1fr; } }
     @media (max-width: 760px) {
-      .report-shell { width: min(100% - 28px, 1180px); padding-top: 22px; }
-      .report-feature-card { padding: 20px 18px; }
-      .report-feature-card h2 { font-size: 23px; line-height: 1.5; }
+      .dc-report-main { padding: 24px 16px 56px; }
+      .report-page-head { margin-bottom: 24px; padding-bottom: 20px; }
+      .report-page-head .dc-page-head h1 { font-size: 30px; line-height: 42px; }
+      .report-page-head .dc-page-description { font-size: 14px; line-height: 24px; }
+      .report-feature-grid { gap: 14px; }
+      .report-feature-card { padding: 22px 18px 20px; gap: 22px; }
+      .report-meta { align-items: flex-start; flex-direction: column; gap: 4px; margin-bottom: 12px; }
+      .report-feature-card.is-weekly h2, .report-feature-card.is-monthly h2 { font-size: 18px; line-height: 28px; }
+      .report-feature-card .report-summary { font-size: 13px; line-height: 22px; }
+      .report-archives { margin-top: 40px; padding-top: 24px; }
+      .report-archives-head { display: grid; gap: 2px; margin-bottom: 18px; }
+      .report-archives-head h2 { font-size: 22px; line-height: 32px; }
+      .report-archive-grid { gap: 24px; }
+      .report-archive-group { grid-template-columns: 1fr; gap: 8px; }
+      .report-archive-group + .report-archive-group { padding-top: 24px; }
       .report-list a { grid-template-columns: 1fr auto; gap: 4px 12px; }
       .report-list time { grid-column: 1 / -1; }
+      .report-list strong { font-size: 18px; line-height: 28px; }
     }
   </style>
 </head>
@@ -99,25 +123,28 @@
       <div class="report-shell">
         <header class="report-page-head">
           <div class="dc-page-head"><h1>行业报告</h1><span class="dc-page-description">月度结构判断与每周商业变化追踪</span></div>
-          <p class="report-page-intro">月报用于回看一个月的行业结构变化，周报用于追踪最近一周的商业信号与关键转折。</p>
         </header>
         <section class="report-feature-grid" aria-label="最新行业报告">
-          <article class="report-feature-card is-monthly">
-            <div><p class="report-label">最新月报</p><p class="report-date">2026.06.01 - 06.30</p><h2>模型继续制造注意力，真正接近预算的是部署交付层</h2><p>回看六月 AI 商业结构变化，聚焦部署交付、企业实施与下一阶段需要继续验证的行业信号。</p></div>
-            <a class="report-link" href="monthly-business-structure-2026-06.html">打开月报</a>
-          </article>
-          <article class="report-feature-card">
-            <div><p class="report-label">最新周报</p><p class="report-date">2026.07.06 - 07.12</p><h2>AI Coding 越便宜，软件需求反而越多：真正稀缺的是交付责任</h2><p>追踪最近一周 AI Coding、软件需求与交付责任之间的商业变化。</p></div>
+          <article class="report-feature-card is-weekly">
+            <div>
+              <div class="report-meta"><p class="report-label">最新周报</p><p class="report-date">2026.07.06 - 07.12</p></div>
+              <h2>AI Coding 越便宜，软件需求反而越多：真正稀缺的是交付责任</h2>
+              <p class="report-summary">追踪最近一周 AI Coding、软件需求与交付责任之间的商业变化。</p>
+            </div>
             <a class="report-link" href="weekly-ai-business-change-radar.html">打开周报</a>
+          </article>
+          <article class="report-feature-card is-monthly">
+            <div>
+              <div class="report-meta"><p class="report-label">最新月报</p><p class="report-date">2026.06.01 - 06.30</p></div>
+              <h2>模型继续制造注意力，真正接近预算的是部署交付层</h2>
+              <p class="report-summary">回看六月 AI 商业结构变化，聚焦部署交付、企业实施与下一阶段需要继续验证的行业信号。</p>
+            </div>
+            <a class="report-link" href="monthly-business-structure-2026-06.html">打开月报</a>
           </article>
         </section>
         <section class="report-archives" aria-labelledby="archive-title">
           <div class="report-archives-head"><h2 id="archive-title">报告归档</h2><span>按时间回看月报与周报</span></div>
           <div class="report-archive-grid">
-            <section class="report-archive-group" aria-labelledby="monthly-archive-title">
-              <h3 id="monthly-archive-title">月报</h3>
-              <div class="report-list monthly-list"><a href="monthly-business-structure-2026-06.html"><time>2026.06</time><strong>六月 AI 商业结构月报</strong><span>阅读</span></a></div>
-            </section>
             <section class="report-archive-group" aria-labelledby="weekly-archive-title">
               <h3 id="weekly-archive-title">周报</h3>
               <div class="report-list weekly-list">
@@ -127,6 +154,10 @@
                 <a href="weekly-ai-business-change-radar-2026-06-22.html"><time>2026.06.15 - 06.21</time><strong>企业不缺 Agent，缺的是能把它接进流程并对结果负责的人</strong><span>阅读</span></a>
                 <a href="weekly-ai-business-change-radar-2026-06-15.html"><time>2026.06.09 - 06.15</time><strong>别再问买哪个 AI 工具：下一轮机会是重做业务流程</strong><span>阅读</span></a>
               </div>
+            </section>
+            <section class="report-archive-group" aria-labelledby="monthly-archive-title">
+              <h3 id="monthly-archive-title">月报</h3>
+              <div class="report-list monthly-list"><a href="monthly-business-structure-2026-06.html"><time>2026.06</time><strong>六月 AI 商业结构月报</strong><span>阅读</span></a></div>
             </section>
           </div>
         </section>
