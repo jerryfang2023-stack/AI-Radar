@@ -59,6 +59,7 @@
     "manage:targeted-backfill": "node agent-workflow/tools/manage-targeted-backfill-queue.mjs",
     "assert:targeted-backfill": "node agent-workflow/tools/assert-targeted-backfill-queue.mjs",
     "build:industry-reports-site": "node 01-SiteV2/site/scripts/build-industry-reports-frontstage.mjs",
+    "backfill:first-line-history": "node agent-workflow/tools/backfill-first-line-viewpoints-history.mjs --translate=true",
     "build:first-line-v4": "node 01-SiteV2/site/scripts/build-first-line-viewpoints-v4-data.mjs",
     "assert:data-center": "node agent-workflow/tools/assert-data-center-v4.mjs",
     "assert:tag-taxonomy": "node agent-workflow/tools/assert-tag-taxonomy-v4.mjs",
