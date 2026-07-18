@@ -676,16 +676,22 @@ test("generated bundle passes the V4 integrity gate", () => {
   assert.deepEqual(result.failures, []);
 });
 
-test("SourceArtifact always retains the ingested Raw JSON as a snapshot", () => {
+test("SourceArtifact always retains the ingested Raw JSON as a snapshot", (t) => {
+  const tempDir = fs.mkdtempSync(path.join(root, ".data-center-v4-test-"));
+  t.after(() => fs.rmSync(tempDir, { recursive: true, force: true }));
   const rawEntry = entry(
     "raw-snapshot-fallback",
     "Acme launches AI workflow",
     "Acme launched an AI workflow for operations teams. The workflow is now available to customers.",
+    { markdown_snapshot_path: "fixtures/deleted-snapshot.md" },
   );
+  rawEntry.file = path.join(tempDir, "raw.json");
+  fs.writeFileSync(rawEntry.file, JSON.stringify(rawEntry.raw), "utf8");
   const bundle = buildBundle([rawEntry], taxonomy, date, "2026-07-16T00:00:00.000Z");
   assert.ok(bundle.source_artifacts[0].snapshot_refs.includes(
     path.relative(root, rawEntry.file).replace(/\\/gu, "/"),
   ));
+  assert.ok(!bundle.source_artifacts[0].snapshot_refs.includes("fixtures/deleted-snapshot.md"));
 });
 
 test("filesystem integrity gate requires resolvable snapshots and complete current-day Raw coverage", () => {

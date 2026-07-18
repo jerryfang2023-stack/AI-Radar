@@ -304,6 +304,11 @@ function trimBoilerplate(text) {
 function sourceArtifact(raw, file) {
   const sourceUrl = cleanString(raw.original_url || raw.canonical_url || raw.source_url || raw.url || raw.link || raw.discovery_record?.origin_url);
   const contentHash = cleanString(raw.content_hash || raw.full_text_hash || hash(raw.clean_text || raw.full_text));
+  const snapshotRefs = [raw.markdown_snapshot_path, raw.json_snapshot_path, raw.html_snapshot_path, raw.screenshot_path, file]
+    .map(cleanString)
+    .map((ref) => ref ? path.resolve(path.isAbsolute(ref) ? ref : path.join(root, ref)) : "")
+    .filter((resolved) => resolved && (resolved === root || resolved.startsWith(`${root}${path.sep}`)) && fs.existsSync(resolved))
+    .map(rel);
   return {
     source_artifact_id: `SA-${hash(`${sourceUrl || file}|${contentHash}`)}`,
     source_url: sourceUrl,
@@ -311,8 +316,7 @@ function sourceArtifact(raw, file) {
     publisher: cleanString(raw.source_name),
     capture_method: cleanString(raw.extraction_method || raw.fetch_status),
     captured_at: cleanString(raw.collected_at || raw.last_seen_at),
-    snapshot_refs: [raw.markdown_snapshot_path, raw.json_snapshot_path, raw.html_snapshot_path, raw.screenshot_path, rel(file)]
-      .map(cleanString).filter(Boolean),
+    snapshot_refs: [...new Set(snapshotRefs)],
     content_hash: contentHash,
     _legacy_path: rel(file)
   };
