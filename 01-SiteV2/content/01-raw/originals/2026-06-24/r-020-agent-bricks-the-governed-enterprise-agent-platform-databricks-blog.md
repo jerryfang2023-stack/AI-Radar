@@ -72,7 +72,7 @@ key_excerpts: [{"type":"company_action","text":"Agent Bricks: The governed enter
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
-title_zh: "Agent Bricks：受治理的企业级智能体平台 | Databricks 博客"
+title_zh: "Agent Bricks：受治理的企业级智能体平台"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

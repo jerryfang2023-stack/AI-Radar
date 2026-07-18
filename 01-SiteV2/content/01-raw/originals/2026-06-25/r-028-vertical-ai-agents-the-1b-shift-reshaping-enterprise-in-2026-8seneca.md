@@ -72,7 +72,7 @@ key_excerpts: [{"type":"funding","text":"Vertical AI Agents: The $1B Shift Resha
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
-title_zh: "垂直AI代理：2026年重塑企业的10亿美元转型 | 8seneca"
+title_zh: "垂直AI智能体：2026年重塑企业的10亿美元转型"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

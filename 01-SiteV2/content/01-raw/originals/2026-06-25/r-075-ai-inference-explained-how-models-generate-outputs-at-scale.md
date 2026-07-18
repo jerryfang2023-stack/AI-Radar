@@ -72,7 +72,7 @@ key_excerpts: [{"type":"product_update","text":"RapidData's 2026 report found in
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
-title_zh: "AI推理详解：模型如何大规模生成输出"
+title_zh: "AI 推理解析：模型如何大规模生成输出"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

@@ -69,7 +69,7 @@ key_excerpts: [{"type":"funding","text":"Trace raises $3M to solve the AI agent 
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
-title_zh: "Trace 筹集300万美元，解决企业AI代理采用难题 | TechCrunch"
+title_zh: "Trace 融资 300 万美元，解决企业 AI 智能体采用难题"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

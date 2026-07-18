@@ -72,7 +72,7 @@ key_excerpts: [{"type":"number","text":"Since the general availability of our AI
 theme: outside-core-exploration
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
-title_zh: "GitHub案例研究：利用AI提升客户支持"
+title_zh: "GitHub 案例研究：利用 AI 提升客户支持"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

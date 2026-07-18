@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-087
 title: "Meta accused of using biased AI targeting for mass layoffs"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "Meta 被指控使用有偏见的 AI 进行大规模裁员"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.theverge.com/tech/965486/meta-lawsuit-former-employees-ai-layoffs"
 canonical_url: "https://theverge.com/tech/965486/meta-lawsuit-former-employees-ai-layoffs"
 source_name: "The Verge AI"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-15T04:28:38.079Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Meta accused of using biased AI targeting for mass layoffs

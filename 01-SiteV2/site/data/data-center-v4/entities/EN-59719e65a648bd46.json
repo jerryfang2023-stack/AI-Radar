@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-18T04:59:59.870Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 1250,
+    "quarantinedEventCount": 11
+  },
+  "entity": {
+    "id": "EN-59719e65a648bd46",
+    "name": "Nebius",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-bc9abd502c002102"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-08",
+    "lastSeen": "2026-07-08",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [
+        "EV-bc9abd502c002102"
+      ],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-bc9abd502c002102",
+        "dataDate": "2026-07-08",
+        "date": "2026-07-08",
+        "eventType": "hardware_deployment",
+        "eventTypeLabel": "硬件部署",
+        "eventGroup": "AI 硬件",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Nebius 与 Meta 签署新 AI 基础设施协议；该交易将加速 Nebius 在 AI 云领域核心业务的增长",
+        "displayTags": [],
+        "entityIds": [
+          "EN-59719e65a648bd46",
+          "EN-ea3bd73e2b506e00",
+          "EN-8d4321d936320802"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

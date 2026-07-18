@@ -72,7 +72,7 @@ key_excerpts: [{"type":"number","text":"When a prospective exhibitor submits a f
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
-title_zh: "Questex利用AI代理在90天内完成100万美元交易 - 一家媒体运营商"
+title_zh: "Questex 利用 AI 智能体在 90 天内完成 100 万美元交易"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

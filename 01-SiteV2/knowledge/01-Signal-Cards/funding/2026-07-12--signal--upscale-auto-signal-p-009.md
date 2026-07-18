@@ -2,7 +2,7 @@
 id: SIG-20260712-A04
 type: signal_card
 signal_type: funding
-title: "高端AI公司Upscale AI将A轮融资扩大1.9亿美元，总融资额达5亿美元"
+title: "Upscale AI 完成1.9亿美元A轮扩展融资，总融资额达5亿美元"
 date: 2026-07-12
 status: published
 source_title: "Upscale AI Adds $190 Million in Extension to Series A, Reaching Half-Billion Dollars in Total Funding"
@@ -58,12 +58,12 @@ opportunity_signals:
 signal_owner: "Upscale"
 
 frontend:
-  displayTitle: "高端AI公司Upscale AI将A轮融资扩大1.9亿美元，总融资额达5亿美元"
+  displayTitle: "Upscale AI 完成1.9亿美元A轮扩展融资，总融资额达5亿美元"
   sourceLinks:
     - "https://upscale.com/blogs/upscale-ai-adds-190-million-in-extension-to-series-a-reaching-half-billion-dollars-in-total-funding?from_theconsensus=1"
 ---
 
-# 高端AI公司Upscale AI将A轮融资扩大1.9亿美元，总融资额达5亿美元
+# Upscale AI 完成1.9亿美元A轮扩展融资，总融资额达5亿美元
 
 ## 新闻事实
 

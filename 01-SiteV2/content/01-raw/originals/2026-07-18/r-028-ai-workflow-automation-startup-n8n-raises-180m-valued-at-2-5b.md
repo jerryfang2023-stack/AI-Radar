@@ -3,9 +3,9 @@ schema_version: raw-evidence-v2
 raw_id: R-028
 title: "AI Workflow Automation Startup n8n Raises $180M, Valued At $2.5B"
 title_zh: "AI 工作流自动化初创公司 n8n 获 1.8 亿美元融资，估值达 25 亿美元"
-title_translation_status: translated
-title_translation_method: deepseek_title_translation
-title_translation_model: deepseek-v4-flash
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 original_url: "https://startuprise.co.uk/ai-workflow-automation-startup-n8n-raises-180m-valued-at-2-5b"
 canonical_url: "https://startuprise.co.uk/ai-workflow-automation-startup-n8n-raises-180m-valued-at-2-5b"
 source_name: "keyword search / Anysearch"

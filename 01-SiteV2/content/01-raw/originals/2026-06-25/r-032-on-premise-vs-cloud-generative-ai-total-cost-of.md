@@ -72,7 +72,7 @@ key_excerpts: [{"type":"company_action","text":"# On-Premise vs Cloud: Generativ
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
-title_zh: "本地部署与云端：生成式AI总成本对比"
+title_zh: "本地部署 vs 云端：生成式 AI 总成本..."
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

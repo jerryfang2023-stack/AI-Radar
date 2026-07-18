@@ -1,0 +1,168 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-18T04:59:59.870Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 1250,
+    "quarantinedEventCount": 11
+  },
+  "entity": {
+    "id": "EN-b7dac8ddfad3bea8",
+    "name": "Apple 智能",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-c0a94bb25d551db1"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-technology-on_device"
+    ],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-16",
+    "lastSeen": "2026-07-16",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-c0a94bb25d551db1"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-c0a94bb25d551db1",
+        "dataDate": "2026-07-16",
+        "date": "2026-07-16",
+        "eventType": "certification_compliance",
+        "eventTypeLabel": "认证合规",
+        "eventGroup": "组织、政策与法律",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "苹果 Apple 智能通过备案，阿里千问将集成至国行 iPhone；小米开源具身通用模型 Xiaomi-Robotics-U0",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "on_device",
+            "name": "端侧"
+          },
+          {
+            "dimensionId": "deployment_model",
+            "id": "edge_device",
+            "dimensionName": "部署形态",
+            "name": "边缘与端侧"
+          }
+        ],
+        "entityIds": [
+          "EN-b7dac8ddfad3bea8",
+          "EN-3a7bd3e2360a3d29",
+          "EN-047364b9be67f665",
+          "EN-c608c4787821de1b"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-technology-on_device",
+      "name": "端侧",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "on_device",
+      "eventIds": [
+        "EV-a15da1b52d939967",
+        "EV-736404028b8ad33e",
+        "EV-7263caa45bbf168e",
+        "EV-653cbce2ccc79f8b",
+        "EV-04efb4eecbb8125f",
+        "EV-8a9b12665a3e40a0",
+        "EV-712bb6241160c4c5",
+        "EV-f7b60c0c63403f8c",
+        "EV-e28e134345ea5f99",
+        "EV-a736c6c64d106475",
+        "EV-4e6dc3ec2b3f0bd6",
+        "EV-c5b8faec223a4caf",
+        "EV-4026c95d4c01b96e",
+        "EV-0597e07d7e73051a",
+        "EV-08f736f61f2b46f3",
+        "EV-02186ed7885f68fe",
+        "EV-c0a94bb25d551db1",
+        "EV-5613946bdd578a26",
+        "EV-848bdd13f319c516",
+        "EV-dd902b603e2e3dbc",
+        "EV-7d4b4b8d4e3599d4",
+        "EV-f4876d2e1a20d87b"
+      ],
+      "entityIds": [
+        "EN-a35b80cf9d171015",
+        "EN-48bebf25e5bd5aca",
+        "EN-dca6ec9510fc0176",
+        "EN-b0532e1af75cc4ab",
+        "EN-8147e6fed86d42c1",
+        "EN-16fd849ce27f115b",
+        "EN-8d4321d936320802",
+        "EN-f5791343a13abc71",
+        "EN-9fbf261b62c1d7c0",
+        "EN-f3cfedbe8428c9f7",
+        "EN-7df09a7717ef2feb",
+        "EN-c04bd5ebd10ab696",
+        "EN-50ba7ff15827787b",
+        "EN-bbdefa2950f49882",
+        "EN-992eafe973f69075",
+        "EN-1229af0aa3b0305e",
+        "EN-81e577740888ca6d",
+        "EN-968e2d5b08687bf4",
+        "EN-3a7bd3e2360a3d29",
+        "EN-b81c8201acfc7639",
+        "EN-c608c4787821de1b",
+        "EN-6f21a653c48f4f19",
+        "EN-12a81529bba89666",
+        "EN-2c348893efb2316e",
+        "EN-44a9bf3b11abea5c",
+        "EN-de6b71bf77ff4299",
+        "EN-c4ef31845ea79710",
+        "EN-96eebba49dbbf422",
+        "EN-ce635c4eabff5e4f",
+        "EN-f8ceb65dd1764cd4",
+        "EN-af3ceabbe048a291",
+        "EN-047364b9be67f665",
+        "EN-dd920a8cd166f486",
+        "EN-c70eca6b0f88f44d",
+        "EN-41dcc2d4951f337b",
+        "EN-e246a1f9a090075b",
+        "EN-1dc405a4cda895d0",
+        "EN-c3ce0cc92b48bbd6",
+        "EN-54ef981ab82586b5",
+        "EN-80d387ccb3289295",
+        "EN-0899bccb1b028521",
+        "EN-b7dac8ddfad3bea8",
+        "EN-6f7ac1823da81d2e",
+        "EN-3dd90c2e1bf28b32",
+        "EN-5d7b7e77768bfdfc"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-05-25",
+      "lastSeen": "2026-07-18"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}

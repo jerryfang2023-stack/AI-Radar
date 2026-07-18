@@ -72,7 +72,7 @@ key_excerpts: [{"type":"number","text":"AI customer service agents now handle 41
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
-title_zh: "2026年客户服务AI代理：超越转接——BabyBots"
+title_zh: "2026年客服AI智能体：超越转接——BabyBots"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

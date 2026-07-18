@@ -210,6 +210,28 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-26d8307370a5852c",
+    "raw_id": "RAW-c95056276c76a4e0",
+    "claim_type": "funding",
+    "subject": "Odyssey",
+    "predicate": "funding",
+    "object": "$310 million Series B round",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1,
+      "model_candidate_id": "MAC-777cad88954cf60e"
+    },
+    "source_span": {
+      "raw_id": "RAW-c95056276c76a4e0",
+      "start": 142,
+      "end": 399
+    },
+    "source_quote": "Odyssey, a world model AI startup founded by self-driving vehicle pioneers CEO Oliver Cameron and CTO Jeff Hawke, has raised a $310 million Series B round at a $1.45B valuation led by Natural Capital, with Amazon, AMD Ventures, GV, and others participating.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-daa5e86461b687f8",
     "raw_id": "RAW-7ea3e4a7933dbe55",
     "claim_type": "partnership",
@@ -483,6 +505,28 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-8de5314721c64736",
+    "raw_id": "RAW-5272417102bc8120",
+    "claim_type": "standard_specification",
+    "subject": "Google",
+    "predicate": "standard_specification",
+    "object": "Agentic Resource Discovery (ARD) specification",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1,
+      "model_candidate_id": "MAC-aec1a43c288da04a"
+    },
+    "source_span": {
+      "raw_id": "RAW-5272417102bc8120",
+      "start": 755,
+      "end": 903
+    },
+    "source_quote": "we’re announcing Agentic Resource Discovery (ARD) , an open specification for publishing, discovering, and verifying AI capabilities across the web.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-a43b207dd4369d2b",
     "raw_id": "RAW-d1b64825602a5eb2",
     "claim_type": "product_release",
@@ -564,6 +608,94 @@
     "source_quote": "Madrid, June 16, 2026 - Konecta , a global leader in customer experience (CX) and digital services, today announced the launch of Kolibri , its agentic AI orchestration platform designed to help enterprises move from AI experimentation to production.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-1eb0afddfe04773b",
+    "raw_id": "RAW-20bba439adc5a3a1",
+    "claim_type": "funding",
+    "subject": "VoiceRun",
+    "predicate": "funding",
+    "object": "$5.5 million in seed funding",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-72500964fbf70f20"
+    },
+    "source_span": {
+      "raw_id": "RAW-20bba439adc5a3a1",
+      "start": 146,
+      "end": 307
+    },
+    "source_quote": "VoiceRun, a startup that’s helping enterprises to develop voice-enabled artificial intelligence agents that they control, has raised $5.5 million in seed funding",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-c34145a3f070754a",
+    "raw_id": "RAW-6fecaa9d8405a056",
+    "claim_type": "deployment",
+    "subject": "MARIS (Material Artificial Realtime Intelligence Specialist)",
+    "predicate": "deployment",
+    "object": "Covestro's legacy SAP ERP (ECC) environment",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-22906d695d8f157e"
+    },
+    "source_span": {
+      "raw_id": "RAW-6fecaa9d8405a056",
+      "start": 3106,
+      "end": 3183
+    },
+    "source_quote": "MARIS went live in Covestro’s legacy SAP ERP (ECC) environment in early 2026.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-eb39384a69b4fd18",
+    "raw_id": "RAW-6fecaa9d8405a056",
+    "claim_type": "deployment",
+    "subject": "PARIS (Partner Artificial Realtime Intelligence Specialist)",
+    "predicate": "deployment",
+    "object": "SAP S/4HANA",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-22906d695d8f157e"
+    },
+    "source_span": {
+      "raw_id": "RAW-6fecaa9d8405a056",
+      "start": 3184,
+      "end": 3279
+    },
+    "source_quote": "PARIS is planned to go live exclusively on SAP S/4HANA, with deployment expected in early 2027.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-0bfc868918306d86",
+    "raw_id": "RAW-6fecaa9d8405a056",
+    "claim_type": "deployment",
+    "subject": "MARIS (Material Artificial Realtime Intelligence Specialist)",
+    "predicate": "deployment",
+    "object": "SAP S/4HANA",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3,
+      "model_candidate_id": "MAC-22906d695d8f157e"
+    },
+    "source_span": {
+      "raw_id": "RAW-6fecaa9d8405a056",
+      "start": 12946,
+      "end": 13037
+    },
+    "source_quote": "With the SAP S/4HANA go live planned for January 2027, MARIS will transition to SAP S/4HANA",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -735,6 +867,28 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-6b894d78b5d46f0c",
+    "raw_id": "RAW-b858c8d480b25d83",
+    "claim_type": "certification_compliance",
+    "subject": "Absa Business Banking",
+    "predicate": "certification_compliance",
+    "object": "2026 Celent Model Bank Award for SME Customer Engagement",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-f13b8bab8b8def19"
+    },
+    "source_span": {
+      "raw_id": "RAW-b858c8d480b25d83",
+      "start": 171,
+      "end": 295
+    },
+    "source_quote": "Absa Business Banking has solidified its leadership by winning the 2026 Celent Model Bank Award for SME Customer Engagement.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-82b90e2fe13efeba",
     "raw_id": "RAW-0e1f4b473ea156f8",
     "claim_type": "funding",
@@ -816,6 +970,28 @@
     "source_quote": "Willow is the AI Basecamp for the enterprise : a unified Agentic Access Platform where every AI agent gets a real identity, scoped access to exactly the tools its task requires, runtime guardrails, and a full audit trail tied to a human. The platform is already running in production at Wix , powering ~5,000 weekly active users across engineering, product, design, HR, finance, and legal. Deployments are now expanding across cyber security, real estate, fintech, and adtech.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-9477fd4954cb1cee",
+    "raw_id": "RAW-15ba8e56b2ce6c3f",
+    "claim_type": "market_expansion",
+    "subject": "Arthur Platform",
+    "predicate": "market_expansion",
+    "object": "AWS Marketplace AI Agents and Tools category",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-68d94374d340f7ac"
+    },
+    "source_span": {
+      "raw_id": "RAW-15ba8e56b2ce6c3f",
+      "start": 423,
+      "end": 532
+    },
+    "source_quote": "the availability of the Arthur Platform in the newly launched AI Agents and Tools category of AWS Marketplace",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -1071,6 +1247,28 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-b3b66bf011e14619",
+    "raw_id": "RAW-993e959cf793df4c",
+    "claim_type": "funding",
+    "subject": "Amazon, Nvidia, and AMD",
+    "predicate": "funding",
+    "object": "Odyssey ML",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-030b9889622d3b84"
+    },
+    "source_span": {
+      "raw_id": "RAW-993e959cf793df4c",
+      "start": 160,
+      "end": 274
+    },
+    "source_quote": "Amazon, Nvidia, and AMD are putting $310 million into world model startup Odyssey ML, now valued at $1.45 billion.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-36b7ccdc2d84dd4b",
     "raw_id": "RAW-6913ad620a583745",
     "claim_type": "organization_people",
@@ -1236,6 +1434,50 @@
     "source_quote": "此外，Gemini 助手的交互方式相比之前的 Google Assistant 更加自然，例如用户可以直接说“关闭所有灯光，只保留床头灯”，也可以一次性下达多个指令，如“调暗厨房灯光、播放音乐并设定计时器”。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-7b865b4160c7b6c6",
+    "raw_id": "RAW-fe0e03c234b40446",
+    "claim_type": "research_result",
+    "subject": "AMIE",
+    "predicate": "research_result",
+    "object": "long-term disease management using drug formularies and clinical guidelines",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-e7789a8911819dc4"
+    },
+    "source_span": {
+      "raw_id": "RAW-fe0e03c234b40446",
+      "start": 343,
+      "end": 663
+    },
+    "source_quote": "Research published today in “Nature” shows the capabilities of the Articulate Medical Intelligence Explorer (AMIE), our best-in-class research AI system for medical reasoning and conversations, evolving from one-off diagnostic conversations to long-term disease management using drug formularies and clinical guidelines.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-223b4476b79fe774",
+    "raw_id": "RAW-fe0e03c234b40446",
+    "claim_type": "research_result",
+    "subject": "AMIE",
+    "predicate": "research_result",
+    "object": "matched clinicians in overall management reasoning and scored significantly higher in plan preciseness and guideline alignment",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-e7789a8911819dc4"
+    },
+    "source_span": {
+      "raw_id": "RAW-fe0e03c234b40446",
+      "start": 1053,
+      "end": 1184
+    },
+    "source_quote": "AMIE matched clinicians in overall management reasoning and scored significantly higher in plan preciseness and guideline alignment",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {

@@ -72,7 +72,7 @@ key_excerpts: [{"type":"supporting_context","text":"Enterprise AI adoption is ac
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
-title_zh: "AI与GenAI合同谈判咨询 | IT谈判"
+title_zh: "AI 与 GenAI 合同谈判咨询"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

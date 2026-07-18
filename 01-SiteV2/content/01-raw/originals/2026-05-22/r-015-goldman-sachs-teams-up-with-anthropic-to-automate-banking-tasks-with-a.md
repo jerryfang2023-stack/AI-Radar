@@ -72,6 +72,10 @@ key_excerpts: [{"type":"company_action","text":"Goldman Sachs teams up with Anth
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "路透社报道：高盛与Anthropic合作，利用AI智能体自动化银行任务"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Goldman Sachs teams up with Anthropic to automate banking tasks with AI agents, CNBC reports | Reuters

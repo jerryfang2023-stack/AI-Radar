@@ -2,7 +2,7 @@
 id: SIG-20260610-A14
 type: signal_card
 signal_type: case
-title: "使用AI进行VSCode与GitHub的软件开发"
+title: "使用 VSCode 和 GitHub 进行 AI 辅助软件开发"
 date: 2026-06-10
 status: published
 source_title: "Using AI for Software Development with VSCode and GitHub"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Linkedin"
 
 frontend:
-  displayTitle: "使用AI进行VSCode与GitHub的软件开发"
+  displayTitle: "使用 VSCode 和 GitHub 进行 AI 辅助软件开发"
   sourceLinks:
     - "https://www.linkedin.com/posts/ningz_software-development-in-the-age-of-ai-dev-activity-7394824432927580160-rMkI"
 ---
 
-# 使用AI进行VSCode与GitHub的软件开发
+# 使用 VSCode 和 GitHub 进行 AI 辅助软件开发
 
 ## 新闻事实
 

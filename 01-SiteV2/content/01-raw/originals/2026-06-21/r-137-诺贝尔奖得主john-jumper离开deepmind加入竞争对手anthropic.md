@@ -72,6 +72,10 @@ key_excerpts: [{"type":"company_action","text":"诺贝尔化学奖得主John Jum
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "诺贝尔奖得主John Jumper离开DeepMind加入竞争对手Anthropic"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 诺贝尔奖得主John Jumper离开DeepMind加入竞争对手Anthropic

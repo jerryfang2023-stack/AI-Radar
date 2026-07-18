@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"Anthropic taps TCS to scale its ent
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Anthropic 携手塔塔咨询扩大企业级 AI 部署规模"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Anthropic taps TCS to scale its enterprise AI deployments

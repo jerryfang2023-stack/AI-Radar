@@ -74,8 +74,8 @@ keyword_group: early-direction-signal
 copyright_note: local research archive only
 title_zh: "我们正与Henning Larsen - Krea合作"
 title_translation_status: "translated"
-title_translation_method: "deepseek_title_translation"
-title_translation_model: "deepseek-v4-flash"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # We are partnering with Henning Larsen - Krea

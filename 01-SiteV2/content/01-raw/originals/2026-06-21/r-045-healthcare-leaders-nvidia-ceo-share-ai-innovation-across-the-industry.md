@@ -72,6 +72,10 @@ key_excerpts: [{"type":"workflow_change","text":"AI is making inroads across the
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_zh: "医疗行业领袖与NVIDIA CEO分享AI创新"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Healthcare Leaders, NVIDIA CEO Share AI Innovation Across the Industry

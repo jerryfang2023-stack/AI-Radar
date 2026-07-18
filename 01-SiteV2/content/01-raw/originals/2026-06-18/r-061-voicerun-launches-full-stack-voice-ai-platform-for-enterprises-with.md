@@ -72,7 +72,7 @@ key_excerpts: [{"type":"supporting_context","text":"We give teams code ownership
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
-title_zh: "VoiceRun推出面向企业的全栈式语音AI平台，并..."
+title_zh: "VoiceRun 推出面向企业的全栈语音 AI 平台，具备..."
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

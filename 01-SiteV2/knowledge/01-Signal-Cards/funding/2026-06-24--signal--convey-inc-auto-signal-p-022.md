@@ -2,7 +2,7 @@
 id: SIG-20260624-A01
 type: signal_card
 signal_type: funding
-title: "Convey完成3800万美元融资，用AI队友助企业自动化重复性工作 - SiliconANGLE"
+title: "Convey 完成 3800 万美元融资，用 AI 智能体助企业自动化重复工作"
 date: 2026-06-24
 status: published
 source_title: "Convey closes on $38M round to help companies automate repetitive work with AI teammates - SiliconANGLE"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Convey Inc."
 
 frontend:
-  displayTitle: "Convey完成3800万美元融资，用AI队友助企业自动化重复性工作 - SiliconANGLE"
+  displayTitle: "Convey 完成 3800 万美元融资，用 AI 智能体助企业自动化重复工作"
   sourceLinks:
     - "https://siliconangle.com/2026/06/17/convey-closes-38m-funding-round-help-companies-automate-repetitive-work-ai-teammates/"
 ---
 
-# Convey完成3800万美元融资，用AI队友助企业自动化重复性工作 - SiliconANGLE
+# Convey 完成 3800 万美元融资，用 AI 智能体助企业自动化重复工作
 
 ## 新闻事实
 

@@ -72,7 +72,7 @@ key_excerpts: [{"type":"funding","text":"$4.5M seed for Realm to advance AI in e
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
-title_zh: "Realm获450万美元种子轮融资，推动企业销售领域AI发展"
+title_zh: "Realm 获 450 万美元种子轮融资，推动企业销售领域 AI 发展"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

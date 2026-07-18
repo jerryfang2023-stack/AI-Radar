@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-18T04:59:59.870Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 1250,
+    "quarantinedEventCount": 11
+  },
+  "entity": {
+    "id": "EN-e482463e2656ed1c",
+    "name": "Tensordyne",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-c7426bbb0eb26ba7"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-06-16",
+    "lastSeen": "2026-06-16",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [
+        "EV-c7426bbb0eb26ba7"
+      ],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-c7426bbb0eb26ba7",
+        "dataDate": "2026-06-16",
+        "date": "2026-06-16",
+        "eventType": "hardware_product",
+        "eventTypeLabel": "硬件产品",
+        "eventGroup": "AI 硬件",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Tensordyne Napier 流片：宣称平台 AI 推理吞吐 13 倍于 Blackwell 系统",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "chip_accelerator",
+            "dimensionName": "产品形态",
+            "name": "芯片与加速器"
+          }
+        ],
+        "entityIds": [
+          "EN-e482463e2656ed1c",
+          "EN-5f3c568f90d87caf"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [
+    {
+      "id": "HW-59752bb17e6eab3f",
+      "eventId": "EV-c7426bbb0eb26ba7",
+      "dataDate": "2026-06-16",
+      "date": "2026-06-16",
+      "title": "Tensordyne Napier 流片：宣称平台 AI 推理吞吐 13 倍于 Blackwell 系统",
+      "hardwareType": "semiconductor",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "未披露",
+      "supplier": "Tensordyne",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "欧洲",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/964/688.htm",
+      "sourceName": "IT之家（RSS）",
+      "sourceDate": "2026-06-16",
+      "entityIds": [
+        "EN-e482463e2656ed1c",
+        "EN-5f3c568f90d87caf"
+      ]
+    }
+  ]
+}

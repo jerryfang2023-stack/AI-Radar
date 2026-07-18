@@ -72,7 +72,7 @@ key_excerpts: [{"type":"case_detail","text":"This article presents information t
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
-title_zh: "在微软市场上发布和部署您的AI应用或代理"
+title_zh: "在 Microsoft 市场发布和推出您的 AI 应用或 AI 智能体"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

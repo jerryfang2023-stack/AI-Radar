@@ -2,7 +2,7 @@
 id: SIG-20260709-A17
 type: signal_card
 signal_type: funding
-title: "Prime Intellect 获1.3亿美元A轮融资，助力企业构建自有AI代理 | TechCrunch"
+title: "Prime Intellect 获 1.3 亿美元 A 轮融资，助力企业构建自有 AI 智能体"
 date: 2026-07-09
 status: published
 source_title: "Prime Intellect raises $130M Series A to help enterprises build their own AI agents | TechCrunch"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "Prime Intellect"
 
 frontend:
-  displayTitle: "Prime Intellect 获1.3亿美元A轮融资，助力企业构建自有AI代理 | TechCrunch"
+  displayTitle: "Prime Intellect 获 1.3 亿美元 A 轮融资，助力企业构建自有 AI 智能体"
   sourceLinks:
     - "https://techcrunch.com/2026/07/08/prime-intellect-raises-130m-series-a-to-help-enterprises-build-their-own-ai-agents/"
 ---
 
-# Prime Intellect 获1.3亿美元A轮融资，助力企业构建自有AI代理 | TechCrunch
+# Prime Intellect 获 1.3 亿美元 A 轮融资，助力企业构建自有 AI 智能体
 
 ## 新闻事实
 

@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-105
 title: "Mistral enters robotics with Robostral Navigate, an 8B model that steers robots using just one camera"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "Mistral 推出 Robostral Navigate 进军机器人领域，这是一款仅用单摄像头引导机器人的 8B 模型"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://the-decoder.com/mistral-enters-robotics-with-robostral-navigate-an-8b-model-that-steers-robots-using-just-one-camera/"
 canonical_url: "https://the-decoder.com/mistral-enters-robotics-with-robostral-navigate-an-8b-model-that-steers-robots-using-just-one-camera"
 source_name: "The Decoder AI News"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-09T03:05:45.391Z
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Mistral enters robotics with Robostral Navigate, an 8B model that steers robots using just one camera

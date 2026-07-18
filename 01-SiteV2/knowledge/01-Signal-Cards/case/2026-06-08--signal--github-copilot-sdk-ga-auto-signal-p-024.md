@@ -2,7 +2,7 @@
 id: SIG-20260608-A13
 type: signal_card
 signal_type: case
-title: "GitHub Copilot SDK正式发布：可构建内容、成本分析及是否优于自研方案 | Pondero"
+title: "GitHub Copilot SDK正式发布：可构建内容、成本分析及是否优于自研方案"
 date: 2026-06-08
 status: published
 source_title: "GitHub Copilot SDK GA: What You Can Build, What It Costs, and Whether It Beats Rolling Your Own | Pondero"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "GitHub Copilot SDK GA"
 
 frontend:
-  displayTitle: "GitHub Copilot SDK正式发布：可构建内容、成本分析及是否优于自研方案 | Pondero"
+  displayTitle: "GitHub Copilot SDK正式发布：可构建内容、成本分析及是否优于自研方案"
   sourceLinks:
     - "https://pondero.ai/coding/guides/github-copilot-sdk-ga-guide-june-2026/"
 ---
 
-# GitHub Copilot SDK正式发布：可构建内容、成本分析及是否优于自研方案 | Pondero
+# GitHub Copilot SDK正式发布：可构建内容、成本分析及是否优于自研方案
 
 ## 新闻事实
 

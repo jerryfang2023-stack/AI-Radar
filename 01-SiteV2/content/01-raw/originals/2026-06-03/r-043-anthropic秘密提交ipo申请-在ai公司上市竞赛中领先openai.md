@@ -72,6 +72,10 @@ key_excerpts: [{"type":"opinion","text":"人工智能公司Anthropic已秘密提
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Anthropic秘密提交IPO申请，在AI公司上市竞赛中领先OpenAI"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Anthropic秘密提交IPO申请，在AI公司上市竞赛中领先OpenAI

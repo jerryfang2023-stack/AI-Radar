@@ -2,7 +2,7 @@
 id: SIG-20260621-A03
 type: signal_card
 signal_type: case
-title: "用AI重塑工作操作系统 | BCG"
+title: "用 AI 重塑工作操作系统"
 date: 2026-06-21
 status: published
 source_title: "Reinventing the Operating System of Work with AI | BCG"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Bcg"
 
 frontend:
-  displayTitle: "用AI重塑工作操作系统 | BCG"
+  displayTitle: "用 AI 重塑工作操作系统"
   sourceLinks:
     - "https://www.bcg.com/publications/2026/reinventing-the-operating-system-of-work-with-ai"
 ---
 
-# 用AI重塑工作操作系统 | BCG
+# 用 AI 重塑工作操作系统
 
 ## 新闻事实
 

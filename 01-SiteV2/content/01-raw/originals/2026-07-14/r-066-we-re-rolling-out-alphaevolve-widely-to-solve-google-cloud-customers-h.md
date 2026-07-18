@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-066
 title: "We're rolling out AlphaEvolve widely to solve Google Cloud customers' hardest problems."
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "我们正广泛推出AlphaEvolve，以解决Google Cloud客户最棘手的问题。"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/alphaevolve-on-cloud/"
 canonical_url: "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/alphaevolve-on-cloud"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-14T01:56:51.729Z
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # We're rolling out AlphaEvolve widely to solve Google Cloud customers' hardest problems.

@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-045
 title: "TAI完成40nm边缘物理AI芯片原型Sting Ray验证，Manta Ray量产时间表公布"
 title_zh: "TAI完成40nm边缘物理AI芯片原型Sting Ray验证，Manta Ray量产时间表公布"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/973/227.htm"
 canonical_url: "https://ithome.com/0/973/227.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-07T02:46:59.760Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # TAI完成40nm边缘物理AI芯片原型Sting Ray验证，Manta Ray量产时间表公布

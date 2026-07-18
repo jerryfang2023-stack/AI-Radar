@@ -588,6 +588,28 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-c414c81d8d9e7fad",
+    "raw_id": "RAW-1078c731c13041a6",
+    "claim_type": "product_release",
+    "subject": "Rabble AI",
+    "predicate": "product_release",
+    "object": "AI data readiness platform",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-94982b54066fdd72"
+    },
+    "source_span": {
+      "raw_id": "RAW-1078c731c13041a6",
+      "start": 201,
+      "end": 435
+    },
+    "source_quote": "Rabble AI today announced the availability of its AI data readiness platform, which transforms fragmented enterprise data into a semantically rich layer that AI agents, copilots and LLM applications can reliably understand and act on.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-42cf14cef9e10d2a",
     "raw_id": "RAW-97751bf3d6ff1088",
     "claim_type": "product_release",
@@ -753,6 +775,28 @@
     "source_quote": "For an industry that has spent years debating interoperability standards, this is a concrete product moment: a transactional marketplace where ISVs list A2A-compatible agents, enterprises browse with conversational queries, and Google handles billing, security validation, and protocol compliance. The question is no longer whether agent-to-agent communication will standardize — it is whether platform-mediated discovery becomes the default procurement channel before standalone agent vendors can build direct sales motions.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-ed8ad66ab7341c2f",
+    "raw_id": "RAW-f1d0691cdd3f82a5",
+    "claim_type": "financial_performance",
+    "subject": "Harvey",
+    "predicate": "financial_performance",
+    "object": "inference costs",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-0d8a34253f498646"
+    },
+    "source_span": {
+      "raw_id": "RAW-f1d0691cdd3f82a5",
+      "start": 13,
+      "end": 122
+    },
+    "source_quote": "Harvey cut inference costs 3x combining Claude Opus with Fireworks AI models, with no quality loss confirmed.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -1176,6 +1220,91 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-391db55f10cfd205",
+    "raw_id": "RAW-ced1d913636aa91e",
+    "claim_type": "organization_restructuring",
+    "subject": "AI",
+    "predicate": "organization_restructuring",
+    "object": "浪潮成为火药桶",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-ced1d913636aa91e",
+      "start": 3,
+      "end": 46
+    },
+    "source_quote": "The AI layoff wave is becoming a powder keg",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-12da3cc7bcd92e79",
+    "raw_id": "RAW-ced1d913636aa91e",
+    "claim_type": "organization_restructuring",
+    "subject": "AI",
+    "predicate": "organization_restructuring",
+    "object": "浪潮成为火药桶",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-ced1d913636aa91e",
+      "start": 90,
+      "end": 587
+    },
+    "source_quote": "Something strange is happening in tech right now. Companies are posting record profits and revenue while laying off tens of thousands of people, citing AI as the official explanation. So far this year, there have been an estimated 363 layoffs at tech companies this year, affecting nearly 150,000 people — a pace of about 974 people per day, 44% faster than last year — according to TrueUp, a tech job board and recruiting platform that also runs one of the most widely cited tech layoff trackers.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-8e2b52ae76da4dc5",
+    "raw_id": "RAW-ced1d913636aa91e",
+    "claim_type": "organization_restructuring",
+    "subject": "AI",
+    "predicate": "organization_restructuring",
+    "object": "浪潮成为火药桶",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-ced1d913636aa91e",
+      "start": 588,
+      "end": 838
+    },
+    "source_quote": "Tech layoffs hit their highest single month in two years last month, with nearly 40,000 cuts, and AI was the most-cited reason for layoffs across every industry for the third month running, according to outplacement firm Challenger, Grey & Christmas.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e4991c2a2bc2f07f",
+    "raw_id": "RAW-fe1ca5e6bf274ea4",
+    "claim_type": "partnership",
+    "subject": "HappyRobot",
+    "predicate": "partnership",
+    "object": "Kuehne+Nagel",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-048dd8f8548c8afc"
+    },
+    "source_span": {
+      "raw_id": "RAW-fe1ca5e6bf274ea4",
+      "start": 117,
+      "end": 255
+    },
+    "source_quote": "HappyRobot and Kuehne+Nagel have entered a strategic partnership to deploy AI workers across Kuehne+Nagel's global Air Logistics division.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-d5eb089b1eccc1c3",
     "raw_id": "RAW-bdd00c9896548b46",
     "claim_type": "acquisition",
@@ -1260,6 +1389,28 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-f47ca11b3cce6401",
+    "raw_id": "RAW-0c0cef08d18cd168",
+    "claim_type": "product_release",
+    "subject": "Setset",
+    "predicate": "product_release",
+    "object": "Setset Studio",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-053337513c3d8320"
+    },
+    "source_span": {
+      "raw_id": "RAW-0c0cef08d18cd168",
+      "start": 110,
+      "end": 251
+    },
+    "source_quote": "Today we’re announcing the release of Setset Studio: the no-prompt interface for fashion brands to create studio-quality AI visuals at scale.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-ae48434223721c51",
     "raw_id": "RAW-2d4ccc7d0ccde3d5",
     "claim_type": "product_release",
@@ -1341,6 +1492,50 @@
     "source_quote": "六月更新于 6 月 3 日开始分批次推送， 6 月 30 日前完成推送 ，分批覆盖 ColorOS13 及以上共 100+ 款机型。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-561fb20449aeb00c",
+    "raw_id": "RAW-0288839054262644",
+    "claim_type": "product_release",
+    "subject": "MINIX",
+    "predicate": "product_release",
+    "object": "N304-AI 迷你主机",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1,
+      "model_candidate_id": "MAC-0213c7303e5e20ab"
+    },
+    "source_span": {
+      "raw_id": "RAW-0288839054262644",
+      "start": 16,
+      "end": 90
+    },
+    "source_quote": "MINIX 本月 10 日宣布了其基于英特尔 \"Wildcat Lake\" 酷睿 3 处理器 304 的入门级 AI 迷你主机新品 N304-AI。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-dbebb6a3198a131f",
+    "raw_id": "RAW-774f0e2dadb62f9f",
+    "claim_type": "security_incident",
+    "subject": "英国德比郡警方一名警官",
+    "predicate": "security_incident",
+    "object": "在多起案件中使用 AI 系统伪造证据素材",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-6267b32972794d31"
+    },
+    "source_span": {
+      "raw_id": "RAW-774f0e2dadb62f9f",
+      "start": 343,
+      "end": 398
+    },
+    "source_quote": "英国德比郡警方表示，当地一名警官涉嫌在多起案件中使用 AI 系统伪造证据素材，并把这些材料带进了刑事诉讼程序。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {

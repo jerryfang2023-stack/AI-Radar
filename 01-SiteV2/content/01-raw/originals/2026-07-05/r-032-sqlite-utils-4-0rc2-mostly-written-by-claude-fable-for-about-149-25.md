@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-032
 title: "sqlite-utils 4.0rc2, mostly written by Claude Fable (for about $149.25)"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "sqlite-utils 4.0rc2，主要由 Claude Fable 编写（花费约 149.25 美元）"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://simonwillison.net/2026/Jul/5/sqlite-utils-fable/#atom-everything"
 canonical_url: "https://simonwillison.net/2026/Jul/5/sqlite-utils-fable"
 source_name: "Simon Willison's Blog"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-05T04:56:15.288Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # sqlite-utils 4.0rc2, mostly written by Claude Fable (for about $149.25)

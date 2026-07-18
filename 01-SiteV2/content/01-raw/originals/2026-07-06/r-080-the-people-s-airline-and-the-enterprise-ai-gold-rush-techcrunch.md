@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-080
 title: "The “people's airline” and the enterprise AI gold rush - TechCrunch"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "“人民航空”与企业AI淘金热"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://techcrunch.com/podcast/the-peoples-airline-and-the-enterprise-ai-gold-rush/"
 canonical_url: "https://techcrunch.com/podcast/the-peoples-airline-and-the-enterprise-ai-gold-rush"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-06T02:21:27.143Z
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # The “people's airline” and the enterprise AI gold rush - TechCrunch

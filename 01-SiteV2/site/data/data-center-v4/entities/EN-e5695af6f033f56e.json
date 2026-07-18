@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-18T04:59:59.870Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 1250,
+    "quarantinedEventCount": 11
+  },
+  "entity": {
+    "id": "EN-e5695af6f033f56e",
+    "name": "宝马",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-b925f50b55d3aa00"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-use_case-knowledge_search"
+    ],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-18",
+    "lastSeen": "2026-07-18",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-b925f50b55d3aa00"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-b925f50b55d3aa00",
+        "dataDate": "2026-07-18",
+        "date": "2026-07-18",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "宝马推出 ChatGPT 插件，让 AI 帮你选车",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "id": "knowledge_search",
+            "dimensionName": "应用场景",
+            "name": "知识与搜索"
+          }
+        ],
+        "entityIds": [
+          "EN-e5695af6f033f56e",
+          "EN-d1ad14d4ad57d207"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-use_case-knowledge_search",
+      "name": "知识与搜索",
+      "nodeType": "use_case",
+      "typeLabel": "应用场景",
+      "valueId": "knowledge_search",
+      "eventIds": [
+        "EV-b925f50b55d3aa00",
+        "EV-702ed039940800fb",
+        "EV-26c1248692fdcc10",
+        "EV-ae4561a4a9ebe17f"
+      ],
+      "entityIds": [
+        "EN-e5695af6f033f56e",
+        "EN-d1ad14d4ad57d207",
+        "EN-3f726694f178ed7a",
+        "EN-45e0ade11fed1e44",
+        "EN-1e68d267df86aa4c",
+        "EN-9d93b78264eb6acb",
+        "EN-b81c8201acfc7639",
+        "EN-82eaaba81d9dcc54",
+        "EN-b42e5eda1d1a3720",
+        "EN-9a6ee79873b1fb7b"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-06-11",
+      "lastSeen": "2026-07-18"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}

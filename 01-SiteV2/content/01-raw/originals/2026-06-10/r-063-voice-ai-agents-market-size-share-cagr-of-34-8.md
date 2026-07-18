@@ -72,7 +72,7 @@ key_excerpts: [{"type":"funding","text":"Voice AI Agents Market is estimated to 
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
-title_zh: "语音AI代理市场规模、份额 | 复合年增长率34.8%"
+title_zh: "语音AI智能体市场规模与份额"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

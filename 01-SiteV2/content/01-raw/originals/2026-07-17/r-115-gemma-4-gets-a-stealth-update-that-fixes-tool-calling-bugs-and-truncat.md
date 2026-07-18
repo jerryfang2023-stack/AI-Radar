@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-115
 title: "Gemma 4 gets a stealth update that fixes tool calling bugs and truncated responses under the same name"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "Gemma 4 获得隐秘更新，修复工具调用错误和截断响应问题，名称保持不变"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://the-decoder.com/gemma-4-gets-a-stealth-update-that-fixes-tool-calling-bugs-and-truncated-responses-under-the-same-name/"
 canonical_url: "https://the-decoder.com/gemma-4-gets-a-stealth-update-that-fixes-tool-calling-bugs-and-truncated-responses-under-the-same-name"
 source_name: "The Decoder AI News"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-17T04:40:17.429Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Gemma 4 gets a stealth update that fixes tool calling bugs and truncated responses under the same name

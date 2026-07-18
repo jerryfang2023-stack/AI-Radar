@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-118
 title: "OpenAI teams up with Infosys to bring AI tools to more businesses | TechCrunch"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "OpenAI 与 Infosys 合作，为更多企业带来 AI 工具"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://techcrunch.com/2026/04/22/openai-teams-up-with-infosys-to-bring-ai-tools-to-more-businesses/"
 canonical_url: "https://techcrunch.com/2026/04/22/openai-teams-up-with-infosys-to-bring-ai-tools-to-more-businesses"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-09T03:05:45.445Z
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # OpenAI teams up with Infosys to bring AI tools to more businesses | TechCrunch

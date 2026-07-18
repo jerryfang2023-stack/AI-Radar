@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"极摩客预热 EVO-X3 4T AMD AI 395 机
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "极摩客 EVO-X3 4T 机皇版预热：126TOPS 算力，第三代桌面 AI 超算中心"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 极摩客 EVO-X3 4T 机皇版预热：126TOPS 算力，第三代桌面 AI 超算中心

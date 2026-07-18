@@ -40,6 +40,43 @@
   },
   {
     "event_type": "product_release",
+    "event_status": "announced",
+    "event_time": "2026-06-22T21:19:56.013Z",
+    "disclosed_at": "2026-06-22T21:19:56.013Z",
+    "entities": [
+      "EN-bbdefa2950f49882",
+      "EN-9fbf261b62c1d7c0",
+      "EN-abc5ac745d337316",
+      "EN-c70eca6b0f88f44d",
+      "EN-8d323d8bba783aa3",
+      "EN-d0bfa24cf1e53827"
+    ],
+    "action": "product_release",
+    "object": "full Desktop experience including chat, Claude Cowork, and Claude Code on AWS, Google Cloud, and Microsoft Foundry",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-c485598b128a179d",
+      "CL-99352dba6260dc88"
+    ],
+    "source_refs": [
+      "SA-427095f48e62404b"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-427095f48e62404b",
+        "disclosed_at": "2026-06-22T21:19:56.013Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-8a26b85b4f432525",
+    "display_title_zh": "在 AWS、Google Cloud 和 Microsoft Foundry 上使用完整版 Claude Desktop"
+  },
+  {
+    "event_type": "product_release",
     "event_status": "completed",
     "event_time": "2026-06-22T20:37:34.000Z",
     "disclosed_at": "2026-06-22T20:37:34.000Z",
@@ -226,6 +263,41 @@
     "display_title_zh": "Sakana AI 发布多智能体编排系统 Sakana Fugu，对外表现为单一模型"
   },
   {
+    "event_type": "procurement_contract",
+    "event_status": "withdrawn",
+    "event_time": "2026-06-22T16:51:29.000Z",
+    "disclosed_at": "2026-06-22T16:51:29.000Z",
+    "entities": [
+      "EN-e78bdebae031095b",
+      "EN-7bcc8b72ffd62b77",
+      "EN-8d4321d936320802"
+    ],
+    "action": "procurement_contract",
+    "object": "SpaceX",
+    "metrics": [
+      "$150 million"
+    ],
+    "locations": [],
+    "claim_refs": [
+      "CL-939604d7b9e490b7"
+    ],
+    "source_refs": [
+      "SA-01cb3068422e58d9"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-01cb3068422e58d9",
+        "disclosed_at": "2026-06-22T16:51:29.000Z",
+        "status": "withdrawn"
+      }
+    ],
+    "publication_status": "withdrawn",
+    "event_id": "EV-4da18f97771852a9",
+    "display_title_zh": "SpaceX与开源AI实验室Reflection AI签署算力协议"
+  },
+  {
     "event_type": "model_release",
     "event_status": "completed",
     "event_time": "2026-06-22T08:18:59.000Z",
@@ -304,6 +376,41 @@
     "display_title_zh": "ContraVault AI 获310万美元Pre-A轮融资，旨在革新采购智能"
   },
   {
+    "event_type": "funding",
+    "event_status": "announced",
+    "event_time": "",
+    "disclosed_at": "2026-06-23T02:03:46.525Z",
+    "entities": [
+      "EN-e19b20530b205aa9"
+    ],
+    "action": "funding",
+    "object": "$4 million Seed round",
+    "metrics": [
+      "$4 million"
+    ],
+    "locations": [],
+    "claim_refs": [
+      "CL-d3189c6f80b72fa2"
+    ],
+    "source_refs": [
+      "SA-f67dbcc79b176ce8"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "event_time"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-f67dbcc79b176ce8",
+        "disclosed_at": "2026-06-23T02:03:46.525Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-ebc2aaa3bbb7a004",
+    "display_title_zh": "AI 治理初创公司获 400 万美元种子轮融资"
+  },
+  {
     "event_type": "acquisition",
     "event_status": "completed",
     "event_time": "2026-06-22T13:57:53.000Z",
@@ -336,6 +443,37 @@
     "publication_status": "verified",
     "event_id": "EV-e1e0a38da122caed",
     "display_title_zh": "贝恩用 vibecoding 生成 AI 复制品评估软件收购目标"
+  },
+  {
+    "event_type": "model_release",
+    "event_status": "completed",
+    "event_time": "2026-06-22T23:56:29.361Z",
+    "disclosed_at": "2026-06-22T23:56:29.361Z",
+    "entities": [
+      "EN-bc1fc5140040180e"
+    ],
+    "action": "开源模型",
+    "object": "发布：744B 参数，1M 上下文，可本地运行",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-9744f2029f93c063"
+    ],
+    "source_refs": [
+      "SA-b2d018a446c80c77"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-b2d018a446c80c77",
+        "disclosed_at": "2026-06-22T23:56:29.361Z",
+        "status": "completed"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-98a937b1986ef052",
+    "display_title_zh": "GLM-5.2 开源模型发布：744B 参数，1M 上下文，可本地运行"
   },
   {
     "event_type": "product_release",
@@ -373,6 +511,43 @@
     "display_title_zh": "联想百应 AI 主机 300 体验：AI Max+395 芯片加持，能跑 120B 本地大模型"
   },
   {
+    "event_type": "hardware_deployment",
+    "event_status": "announced",
+    "event_time": "2026-06-22T13:45:39.000Z",
+    "disclosed_at": "2026-06-22T13:45:39.000Z",
+    "entities": [
+      "EN-8d4321d936320802"
+    ],
+    "action": "hardware_deployment",
+    "object": "35台英伟达AI HPC超级计算机",
+    "metrics": [
+      "35 台"
+    ],
+    "locations": [
+      "欧洲"
+    ],
+    "claim_refs": [
+      "CL-0bb5742d0d378d29",
+      "CL-3176773be57f4ac0",
+      "CL-fb02ddd9b455be56"
+    ],
+    "source_refs": [
+      "SA-f6b1ea4251544bce"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-f6b1ea4251544bce",
+        "disclosed_at": "2026-06-22T13:45:39.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-f84301feb2b7ae1e",
+    "display_title_zh": "35台英伟达AI HPC惠及超300万研究人员，欧洲启动史上最大规模AI超算建设"
+  },
+  {
     "event_type": "product_release",
     "event_status": "planned",
     "event_time": "2026-06-23T00:45:05.000Z",
@@ -405,6 +580,38 @@
     "publication_status": "partial",
     "event_id": "EV-9110f23a7e60173e",
     "display_title_zh": "OpenAI 推出\"修补地球\"计划，用 AI 助力开源社区提升网络安全"
+  },
+  {
+    "event_type": "capital_investment",
+    "event_status": "planned",
+    "event_time": "2026-06-22T17:18:59.000Z",
+    "disclosed_at": "2026-06-22T17:18:59.000Z",
+    "entities": [
+      "EN-c70eca6b0f88f44d",
+      "EN-37b5fecebce720fd"
+    ],
+    "action": "capital_investment",
+    "object": "Anthropic's Series H round",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-0f6fa2e61227380a"
+    ],
+    "source_refs": [
+      "SA-da3b25c6dc58b13c"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-da3b25c6dc58b13c",
+        "disclosed_at": "2026-06-22T17:18:59.000Z",
+        "status": "planned"
+      }
+    ],
+    "publication_status": "partial",
+    "event_id": "EV-b75b87a4f86a8aaa",
+    "display_title_zh": "Anthropic与Micron计划共同设计AI内存架构"
   },
   {
     "event_type": "partnership",
@@ -486,7 +693,6 @@
     "event_time": "2026-06-22T13:30:55.000Z",
     "disclosed_at": "2026-06-22T13:30:55.000Z",
     "entities": [
-      "EN-60094bcf5292c490",
       "EN-8d4321d936320802",
       "EN-4e7e886400fe6a83"
     ],
@@ -513,8 +719,42 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-69fbe85ca4ac81cd",
+    "event_id": "EV-66338f5fb682617e",
     "display_title_zh": "英伟达发布业界首个全栈物理 AI 安全系统 Halos for Robotics"
+  },
+  {
+    "event_type": "product_release",
+    "event_status": "planned",
+    "event_time": "2026-06-22T18:11:34.000Z",
+    "disclosed_at": "2026-06-22T18:11:34.000Z",
+    "entities": [
+      "EN-2b6e51bec93e86c1",
+      "EN-bbdefa2950f49882",
+      "EN-2360133a02c078a8"
+    ],
+    "action": "product_release",
+    "object": "Interactions API",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-59445c7295de43cc",
+      "CL-f8171da4ee8dcfbc"
+    ],
+    "source_refs": [
+      "SA-964c86580001ef82"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-964c86580001ef82",
+        "disclosed_at": "2026-06-22T18:11:34.000Z",
+        "status": "planned"
+      }
+    ],
+    "publication_status": "partial",
+    "event_id": "EV-011eeba13ebcc9a8",
+    "display_title_zh": "Google 将 Interactions API 作为 Gemini 模型与智能体的默认接口"
   },
   {
     "event_type": "model_release",
@@ -671,7 +911,9 @@
     "event_status": "completed",
     "event_time": "2026-06-22T13:26:08.000Z",
     "disclosed_at": "2026-06-22T13:26:08.000Z",
-    "entities": [],
+    "entities": [
+      "EN-b81c8201acfc7639"
+    ],
     "action": "上线",
     "object": "华为云 MaaS，主打文/图生视频一体化成片",
     "metrics": [],
@@ -686,9 +928,7 @@
       "SA-a49bc390ab5d2142"
     ],
     "conflicts": [],
-    "missing_fields": [
-      "entities"
-    ],
+    "missing_fields": [],
     "update_history": [
       {
         "source_ref": "SA-a49bc390ab5d2142",
@@ -697,7 +937,7 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-f169db2fb75a1371",
+    "event_id": "EV-26d2874c6ce028d6",
     "display_title_zh": "生数 Vidu Q3 多模态视频大模型上线华为云 MaaS，主打文/图生视频一体化成片"
   },
   {
@@ -772,6 +1012,74 @@
     "display_title_zh": "阿里巴巴发布视频生成模型 HappyHorse 1.1"
   },
   {
+    "event_type": "hardware_product",
+    "event_status": "announced",
+    "event_time": "2026-06-22T06:05:39.000Z",
+    "disclosed_at": "2026-06-22T06:05:39.000Z",
+    "entities": [
+      "EN-bbdefa2950f49882",
+      "EN-1cd41545564777ce"
+    ],
+    "action": "hardware_product",
+    "object": "TPU v9 芯片推理优化升级款",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-df5ef5e62cf87b4e"
+    ],
+    "source_refs": [
+      "SA-930b59dccfe7ca7d"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-930b59dccfe7ca7d",
+        "disclosed_at": "2026-06-22T06:05:39.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-3f23ddb47fc652a4",
+    "display_title_zh": "郭明錤：谷歌开发 TPU v9 芯片推理优化升级款，联发科接单"
+  },
+  {
+    "event_type": "organization_restructuring",
+    "event_status": "announced",
+    "event_time": "2026-06-23T01:27:55.000Z",
+    "disclosed_at": "2026-06-23T01:27:55.000Z",
+    "entities": [],
+    "action": "裁员",
+    "object": "清单",
+    "metrics": [
+      "13%"
+    ],
+    "locations": [],
+    "claim_refs": [
+      "CL-62efb00ad2f0dadb",
+      "CL-1653042c8fb15eb0",
+      "CL-36f857ebe2f4a202",
+      "CL-55c0043cbeccc5bb"
+    ],
+    "source_refs": [
+      "SA-362b82979c359e1b"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "entities"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-362b82979c359e1b",
+        "disclosed_at": "2026-06-23T01:27:55.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-342bdba5e4574b74",
+    "display_title_zh": "2026年科技公司因AI裁员清单"
+  },
+  {
     "event_type": "partnership",
     "event_status": "announced",
     "event_time": "2026-06-22T18:49:44.000Z",
@@ -808,6 +1116,47 @@
     "publication_status": "verified",
     "event_id": "EV-67ef7accd26a07a0",
     "display_title_zh": "Google DeepMind 7500 万美元投资 A24，合作开发电影 AI 工具"
+  },
+  {
+    "event_type": "organization_restructuring",
+    "event_status": "announced",
+    "event_time": "2026-06-23T01:01:11.000Z",
+    "disclosed_at": "2026-06-23T01:01:11.000Z",
+    "entities": [
+      "EN-7d9bfc48f3257f44",
+      "EN-7d2d1f21615476e9"
+    ],
+    "action": "裁员",
+    "object": "2.1 万人",
+    "metrics": [
+      "13%",
+      "2.1 万",
+      "11.98 万",
+      "14.1 万",
+      "16.2 万"
+    ],
+    "locations": [],
+    "claim_refs": [
+      "CL-3fb19f27826381cc",
+      "CL-74e96e8564513772",
+      "CL-47f688c95cf48b7c",
+      "CL-76a6f3cce1ecff07"
+    ],
+    "source_refs": [
+      "SA-a1fd4e961534e39d"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-a1fd4e961534e39d",
+        "disclosed_at": "2026-06-23T01:01:11.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-496c679ce2ed8ae4",
+    "display_title_zh": "AI 转型与成本压力下，甲骨文 2026 财年裁员 2.1 万人"
   },
   {
     "event_type": "partnership",
@@ -847,6 +1196,38 @@
     "publication_status": "verified",
     "event_id": "EV-f949fd95df58d42d",
     "display_title_zh": "合约最高价值 63 亿美元，SpaceX 与开源 AI 初创企业 Reflection 签署算力合作协议"
+  },
+  {
+    "event_type": "partnership",
+    "event_status": "announced",
+    "event_time": "2026-06-22T15:16:12.000Z",
+    "disclosed_at": "2026-06-22T15:16:12.000Z",
+    "entities": [
+      "EN-00943928d15bba0b",
+      "EN-7d3194f79e645c42"
+    ],
+    "action": "接入",
+    "object": "ChatGPT搜索",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-f2e80e9dbd82b821"
+    ],
+    "source_refs": [
+      "SA-802706990f66ba39"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-802706990f66ba39",
+        "disclosed_at": "2026-06-22T15:16:12.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-5f199c45a41b8555",
+    "display_title_zh": "Getty Images与OpenAI签署多年授权协议 授权图片接入ChatGPT搜索"
   },
   {
     "event_type": "product_release",

@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-001
 title: "乘AI东风的内存制造商SK Hynix在美IPO"
 title_zh: "乘AI东风的内存制造商SK Hynix在美IPO"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://techcrunch.com/2026/07/06/us-investors-will-soon-get-access-to-sk-hynix-another-memory-maker-riding-the-ai-boom"
 canonical_url: "https://techcrunch.com/2026/07/06/us-investors-will-soon-get-access-to-sk-hynix-another-memory-maker-riding-the-ai-boom"
 source_name: "TechCrunch：AI（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-07T02:46:59.136Z
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 乘AI东风的内存制造商SK Hynix在美IPO

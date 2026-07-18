@@ -72,7 +72,7 @@ key_excerpts: [{"type":"funding","text":"By understanding where capital is flowi
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
-title_zh: "BCG：科技服务业中2000亿美元的AI机遇"
+title_zh: "科技服务领域 2000 亿美元的 AI 机遇"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"That’s the mantra for developers build
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "这家初创公司押注tokenmaxxing将打造下一个计算巨头"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # This startup is betting tokenmaxxing will create the next compute giant | TechCrunch

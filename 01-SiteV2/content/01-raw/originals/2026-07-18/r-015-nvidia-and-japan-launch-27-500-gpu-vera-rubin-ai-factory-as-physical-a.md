@@ -2,10 +2,10 @@
 schema_version: raw-evidence-v2
 raw_id: R-015
 title: "NVIDIA and Japan Launch 27,500-GPU Vera Rubin AI Factory as Physical AI Push Spans Every Industry - StorageReview.com"
-title_zh: "英伟达与日本启动27,500-GPU Vera Rubin AI工厂，物理AI推动覆盖全行业"
-title_translation_status: translated
-title_translation_method: deepseek_title_translation
-title_translation_model: deepseek-v4-flash
+title_zh: "NVIDIA 与日本启动 27,500 GPU Vera Rubin AI 工厂，物理 AI 推动覆盖所有行业"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 original_url: "https://www.storagereview.com/news/nvidia-and-japan-launch-27500-gpu-vera-rubin-ai-factory-as-physical-ai-push-spans-every-industry"
 canonical_url: "https://storagereview.com/news/nvidia-and-japan-launch-27500-gpu-vera-rubin-ai-factory-as-physical-ai-push-spans-every-industry"
 source_name: "keyword search / Anysearch"

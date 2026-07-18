@@ -2,7 +2,7 @@
 schema_version: raw-evidence-v2
 raw_id: R-048
 title: "Talkdesk ends the guesswork in deploying customer-facing AI agents - Press Releases | Talkdesk"
-title_zh: "Talkdesk 终结部署面向客户AI代理的猜测——新闻稿 | Talkdesk"
+title_zh: "Talkdesk 终结部署面向客户的 AI 智能体的不确定性"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 original_url: "https://www.talkdesk.com/news-and-press/press-releases/agent-builder/"

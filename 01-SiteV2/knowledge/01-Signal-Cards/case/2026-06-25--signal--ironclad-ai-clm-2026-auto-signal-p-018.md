@@ -2,7 +2,7 @@
 id: SIG-20260625-A12
 type: signal_card
 signal_type: case
-title: "Ironclad AI CLM 2026：企业合同生命周期进入代理化时代 | CallSphere博客"
+title: "Ironclad AI CLM 2026：企业合同生命周期进入代理化时代"
 date: 2026-06-25
 status: published
 source_title: "Ironclad AI CLM 2026: Enterprise Contract Lifecycle Goes Agentic | CallSphere Blog"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Ironclad AI CLM 2026"
 
 frontend:
-  displayTitle: "Ironclad AI CLM 2026：企业合同生命周期进入代理化时代 | CallSphere博客"
+  displayTitle: "Ironclad AI CLM 2026：企业合同生命周期进入代理化时代"
   sourceLinks:
     - "https://callsphere.ai/blog/td30-vrt-ironclad-ai-clm-enterprise-deployments-2026"
 ---
 
-# Ironclad AI CLM 2026：企业合同生命周期进入代理化时代 | CallSphere博客
+# Ironclad AI CLM 2026：企业合同生命周期进入代理化时代
 
 ## 新闻事实
 

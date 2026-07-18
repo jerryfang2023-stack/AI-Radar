@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T01:57:40.269Z",
-    "latestDataDate": "2026-07-17",
-    "currentDate": "2026-07-17",
-    "eventCount": 832,
-    "quarantinedEventCount": 60
+    "generatedAt": "2026-07-18T04:59:59.870Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 1250,
+    "quarantinedEventCount": 11
   },
   "entity": {
     "id": "EN-b6779d8d1c36e158",
@@ -20,23 +20,45 @@
     "datasetScopes": [
       "canonical"
     ],
-    "eventIds": [],
+    "eventIds": [
+      "EV-4ee99f92b011d16f"
+    ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
-    "firstSeen": "",
-    "lastSeen": "",
+    "firstSeen": "2026-06-30",
+    "lastSeen": "2026-06-30",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
-      "productsServices": [],
+      "productsServices": [
+        "EV-4ee99f92b011d16f"
+      ],
       "hardware": [],
       "organizationPeople": [],
       "other": []
     },
-    "timeline": [],
+    "timeline": [
+      {
+        "id": "EV-4ee99f92b011d16f",
+        "dataDate": "2026-06-30",
+        "date": "2026-06-30",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Visual Studio 2026 发行说明",
+        "displayTags": [],
+        "entityIds": [
+          "EN-9fbf261b62c1d7c0",
+          "EN-0a1aedff7e11e72a",
+          "EN-b6779d8d1c36e158"
+        ]
+      }
+    ],
     "viewpoints": []
   },
   "relatedEntities": [],

@@ -2,7 +2,7 @@
 id: SIG-20260619-A15
 type: signal_card
 signal_type: case
-title: "什么是前向部署工程？4种方式助力AI发展..."
+title: "什么是前向部署工程？4种方式助力人工智能"
 date: 2026-06-19
 status: published
 source_title: "What Is Forward Deployed Engineering? 4 Ways It Powers AI ..."
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Tsia"
 
 frontend:
-  displayTitle: "什么是前向部署工程？4种方式助力AI发展..."
+  displayTitle: "什么是前向部署工程？4种方式助力人工智能"
   sourceLinks:
     - "https://www.tsia.com/blog/forward-deployed-engineering-ai-era"
 ---
 
-# 什么是前向部署工程？4种方式助力AI发展...
+# 什么是前向部署工程？4种方式助力人工智能
 
 ## 新闻事实
 

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"company_action","text":"Scientists everywhere can now ac
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_zh: "基于NVIDIA BioNeMo的生物分子科学大规模基础模型现已可用"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Massive Foundation Model for Biomolecular Sciences Now Available via NVIDIA BioNeMo

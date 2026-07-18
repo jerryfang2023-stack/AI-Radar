@@ -2,7 +2,7 @@
 id: SIG-20260624-A06
 type: signal_card
 signal_type: case
-title: "Agent Bricks：受治理的企业级智能体平台 | Databricks 博客"
+title: "Agent Bricks：受治理的企业级智能体平台"
 date: 2026-06-24
 status: published
 source_title: "Agent Bricks: The governed enterprise agent platform | Databricks Blog"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Agent Bricks"
 
 frontend:
-  displayTitle: "Agent Bricks：受治理的企业级智能体平台 | Databricks 博客"
+  displayTitle: "Agent Bricks：受治理的企业级智能体平台"
   sourceLinks:
     - "https://www.databricks.com/blog/agent-bricks-governed-enterprise-agent-platform"
 ---
 
-# Agent Bricks：受治理的企业级智能体平台 | Databricks 博客
+# Agent Bricks：受治理的企业级智能体平台
 
 ## 新闻事实
 

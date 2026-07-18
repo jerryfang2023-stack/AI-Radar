@@ -1,58 +1,509 @@
 {
   "schema_version": "MODEL-ASSIST-V1.0",
-  "generated_at": "2026-07-18T01:56:33.040Z",
+  "generated_at": "2026-07-18T04:25:14.022Z",
   "data_date": "2026-06-09",
-  "prompt_version": "model-assist-2026-07-18.1",
+  "prompt_version": "model-assist-2026-07-18.2",
   "source_count": 186,
   "candidates": [
     {
-      "candidate_id": "MAC-025cf8d194cf5603",
-      "task_type": "claim_extraction",
-      "asset_id": "QA-ebce32df5a687ba5",
-      "raw_id": "RAW-e53f2f88aabf1d89",
-      "source_ref": "SA-24b8c8321db1f30e",
-      "source_hash": "5231bfc0e8d859a4",
+      "candidate_id": "MAC-01f89632c8326d09",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-6d37feda49a46792",
+      "raw_id": "RAW-4d1bb24cd8804ec1",
+      "source_ref": "SA-8436e4a968b0d378",
+      "source_hash": "ccd6442ed8d02d05",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "亚马逊",
+        "rationale": "The candidate canonical_name is '亚马逊' (Amazon in Chinese), and the verified alternative is 'Amazon'. While these refer to the same real-world company, the candidate is a Chinese-language name record and the verified alternative is an English-language name record. The quote confirms the source text refers to Amazon, but the candidate's canonical_name '亚马逊' does not exactly match the verified alternative's canonical_name 'Amazon'. Per the strict matching rule requiring exact match with a VERIFIED_ALTERNATIVE, they must be treated as distinct entities.",
+        "candidate_name": "亚马逊"
+      },
+      "evidence": [
+        {
+          "start": 91,
+          "end": 296,
+          "quote": "On Monday, Amazon introduced a new feature that allows anyone to design merchandise using AI, posing an expanded challenge to online merch platforms like Redbubble, Bonfire, Spring, Fourthwall, and others."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T04:04:02.365Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "codex-data-review",
+        "reviewed_at": "2026-07-18T04:19:04.455Z",
+        "note": "queue-closeout:reviewed_as_distinct_entity"
+      }
+    },
+    {
+      "candidate_id": "MAC-0a7bd9047c440e42",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-07aa2f27561b481e",
+      "raw_id": "RAW-258c545ae030a686",
+      "source_ref": "SA-b6cfe4f4b7de2950",
+      "source_hash": "8ce368043a104eed",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
       "proposal": {
         "claims": [
           {
-            "event_type": "research",
-            "subject": "Xiaomi MiMo team and TileRT systems group",
+            "event_type": "model_release",
+            "subject": "Apple",
+            "object": "iPadOS 27",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "product_release",
+            "subject": "Apple",
+            "object": "Siri AI",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "deployment",
+            "subject": "iPadOS 27 developer beta",
+            "object": "developers",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 53,
+          "end": 73,
+          "quote": "苹果公开展示 iPad OS 27 系统"
+        },
+        {
+          "start": 305,
+          "end": 341,
+          "quote": "苹果 iPadOS 27 引入全新 Siri AI，形式上是一款独立应用"
+        },
+        {
+          "start": 579,
+          "end": 591,
+          "quote": "开发者测试版已于今天上线"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T04:03:48.317Z"
+    },
+    {
+      "candidate_id": "MAC-10965950b1f8bd4f",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-8fee6094d72654c8",
+      "raw_id": "RAW-f5eae1c02ec29f70",
+      "source_ref": "SA-ca431dc3552f882d",
+      "source_hash": "1e7c3e32a252c88d",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "missing_claim_proposal"
+        }
+      ],
+      "generated_at": "2026-07-18T04:03:53.110Z"
+    },
+    {
+      "candidate_id": "MAC-117d5981662f1e60",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-7b494572116a3203",
+      "raw_id": "RAW-abb93216a1f81545",
+      "source_ref": "SA-0ad771754278ac30",
+      "source_hash": "9818caa89ec049a5",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Moonshot AI",
+            "object": "valuation of up to $30 billion",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 170,
+          "end": 299,
+          "quote": "Moonshot AI, the Chinese company behind the Kimi chatbot, is looking for a valuation of up to $30 billion in a new funding round."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T04:03:52.471Z"
+    },
+    {
+      "candidate_id": "MAC-23d9a6bbd1f00e8b",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-c049926b611e2ffb",
+      "raw_id": "RAW-5ccb23d2da2f1809",
+      "source_ref": "SA-a2f790c30066c4c5",
+      "source_hash": "f0a0245141a49a03",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "missing_claim_proposal"
+        }
+      ],
+      "generated_at": "2026-07-18T04:03:56.006Z"
+    },
+    {
+      "candidate_id": "MAC-24438e611484b8e4",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-4f6dbb4543f31740",
+      "raw_id": "RAW-30ee741c812b821b",
+      "source_ref": "SA-e66ecb7999e08ebd",
+      "source_hash": "c6a2465598a5e070",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "missing_claim_proposal"
+        }
+      ],
+      "generated_at": "2026-07-18T04:03:49.577Z"
+    },
+    {
+      "candidate_id": "MAC-264af05de0401487",
+      "task_type": "qa_repair",
+      "asset_id": "QA-83a7be7bf3b8c3f3",
+      "raw_id": "RAW-c102afc9f68e92ab",
+      "source_ref": "SA-da9daff0815e4957",
+      "source_hash": "4e222ed557d0a21a",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "The source describes a concrete AI model release (MiMo-V2.5-Pro UltraSpeed mode) with specific performance and pricing details.",
+        "claims": [
+          {
+            "event_type": "model_release",
+            "subject": "小米",
+            "object": "Xiaomi MiMo-V2.5-Pro UltraSpeed 模式",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "pricing_change",
+            "subject": "小米",
+            "object": "MiMo-V2.5-Pro-UltraSpeed API 定价",
+            "evidence_index": 2
+          },
+          {
+            "event_type": "research_result",
+            "subject": "小米",
+            "object": "万亿参数模型生成速度突破 1000 tokens/s",
+            "evidence_index": 3
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 368,
+          "end": 496,
+          "quote": "小米 MiMo 官方昨日宣布，与 TileRT 联合发布 Xiaomi MiMo-V2.5-Pro 的 UltraSpeed 模式，通过模型与系统的极致 Codesign， 在通用 GPU 上将万亿参数模型的生成速度首次突破 1000 tokens/s 。"
+        },
+        {
+          "start": 368,
+          "end": 433,
+          "quote": "小米 MiMo 官方昨日宣布，与 TileRT 联合发布 Xiaomi MiMo-V2.5-Pro 的 UltraSpeed 模式"
+        },
+        {
+          "start": 557,
+          "end": 598,
+          "quote": "定价为 MiMo-V2.5-Pro 的 3 倍，同时提供输出速度约 10 倍的提升"
+        },
+        {
+          "start": 455,
+          "end": 494,
+          "quote": "在通用 GPU 上将万亿参数模型的生成速度首次突破 1000 tokens/s"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T04:04:04.564Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "codex-data-review",
+        "reviewed_at": "2026-07-18T04:19:04.455Z",
+        "note": "queue-closeout:reviewed_exact_span_claim_candidate"
+      }
+    },
+    {
+      "candidate_id": "MAC-2aa9717310554404",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-521b006f4f377b53",
+      "raw_id": "RAW-ac70107578d1d9af",
+      "source_ref": "SA-fd728a96a5be6c08",
+      "source_hash": "5279d320aca7f148",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "missing_claim_proposal"
+        }
+      ],
+      "generated_at": "2026-07-18T04:03:49.648Z"
+    },
+    {
+      "candidate_id": "MAC-493c7560dbb2868e",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-955b45bb66060f12",
+      "raw_id": "RAW-46596c6116610019",
+      "source_ref": "SA-178f0a718a91844d",
+      "source_hash": "f6795a543f23c49d",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "missing_claim_proposal"
+        }
+      ],
+      "generated_at": "2026-07-18T04:03:54.422Z"
+    },
+    {
+      "candidate_id": "MAC-4a2e87fe4e4f5a2e",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-c95093f5f2e79795",
+      "raw_id": "RAW-b2cc61b3f09b9530",
+      "source_ref": "SA-887578a59d6135cf",
+      "source_hash": "aad51899902e40ed",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "model_release",
+            "subject": "Xiaomi",
             "object": "MiMo-V2.5-Pro-UltraSpeed",
             "evidence_index": 0
           },
           {
-            "event_type": "hardware",
-            "subject": "MiMo-V2.5-Pro-UltraSpeed",
-            "object": "single standard 8-GPU commodity node",
+            "event_type": "pricing_change",
+            "subject": "MiMo-V2.5-Pro-UltraSpeed API",
+            "object": "limited-time promotional price",
             "evidence_index": 1
-          },
-          {
-            "event_type": "commercial",
-            "subject": "MiMo-V2.5-Pro-UltraSpeed",
-            "object": "API trial June 9 to June 23, 2026",
-            "evidence_index": 2
           }
         ]
       },
       "evidence": [
         {
-          "start": 246,
-          "end": 358,
-          "quote": "Xiaomi’s MiMo team just released MiMo-V2.5-Pro-UltraSpeed, built in collaboration with the TileRT systems group."
+          "start": 606,
+          "end": 793,
+          "quote": "Today, we are thrilled to release Xiaomi MiMo-V2.5-Pro-UltraSpeed in collaboration with TileRT, breaking the 1000 tokens/s decode speed on a 1-trillion-parameter model for the first time!"
         },
         {
-          "start": 1114,
-          "end": 1189,
-          "quote": "Crucially, the entire stack runs on a single standard 8-GPU commodity node."
-        },
-        {
-          "start": 5099,
-          "end": 5142,
-          "quote": "The API trial runs June 9 to June 23, 2026."
+          "start": 923,
+          "end": 1102,
+          "quote": "The MiMo-V2.5-Pro-UltraSpeed API launches simultaneously at a limited-time promotional price — 3× the cost of MiMo-V2.5-Pro, but delivering approximately 10× the generation speed!"
         }
       ],
       "gate_results": [
@@ -73,62 +524,27 @@
         },
         {
           "gate": "task_contract",
-          "status": "failed",
-          "detail": "unsupported_claim_event_type:0, unsupported_claim_event_type:1, unsupported_claim_event_type:2"
+          "status": "passed",
+          "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-07-18T01:31:05.613Z"
+      "generated_at": "2026-07-18T04:03:58.750Z"
     },
     {
-      "candidate_id": "MAC-0604fdaca2e9a62c",
+      "candidate_id": "MAC-4a98d115b67a3d5d",
       "task_type": "claim_extraction",
-      "asset_id": "QA-5c2ce17a00049b8d",
-      "raw_id": "RAW-214e0b8e78205533",
-      "source_ref": "SA-08811072d14bb993",
-      "source_hash": "ab7f8beb8aae8061",
+      "asset_id": "QA-8984eb48f82a6622",
+      "raw_id": "RAW-4e759e57557d34c9",
+      "source_ref": "SA-0cec713f028c4ed9",
+      "source_hash": "078b62ddb20181bc",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
+      "prompt_version": "model-assist-2026-07-18.2",
       "status": "rejected",
       "proposal": {
-        "claims": [
-          {
-            "event_type": "product",
-            "subject": "Google Research",
-            "object": "Cross-Corpus Retrieval in Gemini Enterprise Agent Platform",
-            "evidence_index": 0
-          },
-          {
-            "event_type": "research",
-            "subject": "Google Research",
-            "object": "Sufficient Context Agent",
-            "evidence_index": 1
-          },
-          {
-            "event_type": "research",
-            "subject": "Google Research",
-            "object": "FramesQA benchmark evaluation",
-            "evidence_index": 2
-          }
-        ]
+        "claims": []
       },
-      "evidence": [
-        {
-          "start": 76,
-          "end": 269,
-          "quote": "Google Research team has introduced a new agentic RAG framework. It is built into the Gemini Enterprise Agent Platform. It powers a feature called Cross-Corpus Retrieval, now in public preview."
-        },
-        {
-          "start": 2240,
-          "end": 2336,
-          "quote": "That persistence comes from the Sufficient Context Agent, a new component in Google’s framework."
-        },
-        {
-          "start": 4441,
-          "end": 4596,
-          "quote": "In cross-corpus, the system nearly matched its single-corpus accuracy. It answered 90.1% of questions correctly while selecting the right corpus from four."
-        }
-      ],
+      "evidence": [],
       "gate_results": [
         {
           "gate": "source_hash",
@@ -137,8 +553,8 @@
         },
         {
           "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
+          "status": "failed",
+          "detail": "missing_source_evidence"
         },
         {
           "gate": "protected_facts",
@@ -148,87 +564,13 @@
         {
           "gate": "task_contract",
           "status": "failed",
-          "detail": "unsupported_claim_event_type:0, unsupported_claim_event_type:1, unsupported_claim_event_type:2"
+          "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-07-18T01:30:59.876Z"
+      "generated_at": "2026-07-18T04:03:52.196Z"
     },
     {
-      "candidate_id": "MAC-140b15a659e06bb3",
-      "task_type": "claim_extraction",
-      "asset_id": "QA-e413ed8f5bc1553b",
-      "raw_id": "RAW-d67e2a4f5cf7b7c1",
-      "source_ref": "SA-d69badf947f7ca1b",
-      "source_hash": "bc4ee00327da9584",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
-      "proposal": {
-        "claims": [
-          {
-            "event_type": "commercial",
-            "subject": "Arm",
-            "object": "Arm AppReady for Windows",
-            "evidence_index": 0
-          },
-          {
-            "event_type": "commercial",
-            "subject": "Arm AppReady for Windows",
-            "object": "原生 Windows on Arm (WoA) 应用",
-            "evidence_index": 1
-          },
-          {
-            "event_type": "commercial",
-            "subject": "Arm AppReady for Windows",
-            "object": "AI 赋能工具、开发指导、专家支持",
-            "evidence_index": 2
-          }
-        ]
-      },
-      "evidence": [
-        {
-          "start": 330,
-          "end": 378,
-          "quote": "Arm 在其本月 5 日的一份新闻稿中介绍了 Arm AppReady for Windows。"
-        },
-        {
-          "start": 378,
-          "end": 461,
-          "quote": "这一由其主导并得到 Microsoft（微软）反馈支持的项目旨在 引导开发者获取相关学习资源 ，并为构建原生 Windows on Arm (WoA) 应用提供支持。"
-        },
-        {
-          "start": 512,
-          "end": 579,
-          "quote": "AppReady for Windows 则 整合了 AI 赋能工具、开发指导、专家支持 ，帮助开发者降低代码迁移至原生支持的复杂度。"
-        }
-      ],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "unsupported_claim_event_type:0, unsupported_claim_event_type:1, unsupported_claim_event_type:2"
-        }
-      ],
-      "generated_at": "2026-07-18T01:31:05.187Z"
-    },
-    {
-      "candidate_id": "MAC-15dd5f5861b0c8a9",
+      "candidate_id": "MAC-4bf7c52be8d2dda6",
       "task_type": "claim_extraction",
       "asset_id": "QA-c5ab9a22699c66cc",
       "raw_id": "RAW-ce6e58f8668a5622",
@@ -236,27 +578,21 @@
       "source_hash": "783ec57b1327cc93",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
       "proposal": {
         "claims": [
           {
-            "event_type": "research",
+            "event_type": "product_release",
             "subject": "Meta",
-            "object": "人脸识别代码",
+            "object": "更新移除了智能眼镜配套应用中疑似人脸识别算法的休眠代码",
             "evidence_index": 0
           },
           {
-            "event_type": "policy",
+            "event_type": "security_incident",
             "subject": "Meta",
-            "object": "移除人脸识别功能代码的更新",
+            "object": "因智能眼镜拍摄影像审核问题遭到集体诉讼",
             "evidence_index": 1
-          },
-          {
-            "event_type": "people",
-            "subject": "安迪 · 斯通",
-            "object": "声明该功能仅为试点项目",
-            "evidence_index": 2
           }
         ]
       },
@@ -267,99 +603,9 @@
           "quote": "就在有人在 Meta 智能眼镜配套应用中发现一段疑似人脸识别算法的休眠代码仅一天后，Meta 便推送更新移除了这段代码。"
         },
         {
-          "start": 302,
-          "end": 332,
-          "quote": "6 月 5 日，Meta 就发布更新，彻底删除了该功能代码。"
-        },
-        {
-          "start": 762,
-          "end": 828,
-          "quote": "Meta 通讯副总裁安迪 · 斯通周一向《连线》发表声明称，该功能仅为试点项目，公司尚未就“在此事上采取何种行动”做出“正式决定”。"
-        }
-      ],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "unsupported_claim_event_type:0, unsupported_claim_event_type:1, unsupported_claim_event_type:2"
-        }
-      ],
-      "generated_at": "2026-07-18T01:31:03.335Z"
-    },
-    {
-      "candidate_id": "MAC-16b33154a9beb09a",
-      "task_type": "claim_extraction",
-      "asset_id": "QA-5935efea3de05b4f",
-      "raw_id": "RAW-734e9b3ae2dc4b6e",
-      "source_ref": "SA-5b62aeca98a65c13",
-      "source_hash": "0d31bf8b336a9ae2",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
-      "proposal": {
-        "claims": []
-      },
-      "evidence": [],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "failed",
-          "detail": "missing_source_evidence"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "missing_claim_proposal"
-        }
-      ],
-      "generated_at": "2026-07-18T01:30:57.796Z"
-    },
-    {
-      "candidate_id": "MAC-179f49adaf29f160",
-      "task_type": "qa_repair",
-      "asset_id": "QA-f21a812892ebdf48",
-      "raw_id": "RAW-3a46d3704c768ecf",
-      "source_ref": "SA-324be8cd1bedf169",
-      "source_hash": "4b5ed2076a06a87d",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "requires_review",
-      "proposal": {
-        "action": "recollect_original",
-        "reason": "The QA_REASON states 'event_not_ai_relevant', but the source text describes a camera product for robots with AI-related capabilities like hand-eye coordination and obstacle avoidance. The title and content are directly relevant to AI hardware."
-      },
-      "evidence": [
-        {
-          "start": 332,
-          "end": 452,
-          "quote": "欧菲光今日宣布，推出 RoboVision 系列的首发产品 Dex400R RGBD（D 指深度 Depth）相机，支持 D2C+IMU 同步、数采、外部触发等模式， 可实现手眼协同、无序抓取、近远场避障等功能 ，为通用机器人场景量身定制。"
+          "start": 672,
+          "end": 761,
+          "quote": "今年 3 月，瑞典一家媒体经调查曝光，肯尼亚的工作人员会审核这款智能眼镜拍摄的影像，其中包含私密行为、如厕画面等疑似在机主不知情的情况下录制的内容，Meta 也因此遭到集体诉讼。"
         }
       ],
       "gate_results": [
@@ -384,1257 +630,10 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-07-18T01:31:09.939Z"
+      "generated_at": "2026-07-18T04:03:58.319Z"
     },
     {
-      "candidate_id": "MAC-1a914a24da7eb6bd",
-      "task_type": "qa_repair",
-      "asset_id": "QA-83a7be7bf3b8c3f3",
-      "raw_id": "RAW-c102afc9f68e92ab",
-      "source_ref": "SA-da9daff0815e4957",
-      "source_hash": "4e222ed557d0a21a",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "requires_review",
-      "proposal": {
-        "action": "recollect_original",
-        "reason": "The QA_REASON states 'event_not_ai_relevant', but the source text explicitly describes the release of an AI model's UltraSpeed mode, its performance metrics, and API pricing, which is directly relevant to the AI industry."
-      },
-      "evidence": [
-        {
-          "start": 368,
-          "end": 496,
-          "quote": "小米 MiMo 官方昨日宣布，与 TileRT 联合发布 Xiaomi MiMo-V2.5-Pro 的 UltraSpeed 模式，通过模型与系统的极致 Codesign， 在通用 GPU 上将万亿参数模型的生成速度首次突破 1000 tokens/s 。"
-        }
-      ],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "passed",
-          "detail": "task contract passed"
-        }
-      ],
-      "generated_at": "2026-07-18T01:31:08.396Z"
-    },
-    {
-      "candidate_id": "MAC-1aa076cfbea5bd0d",
-      "task_type": "claim_extraction",
-      "asset_id": "QA-0ad0557adc6f9485",
-      "raw_id": "RAW-4f3baa4a15c7e4fe",
-      "source_ref": "SA-d2901dee869bf589",
-      "source_hash": "ab94b8f3be7b5027",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
-      "proposal": {
-        "claims": [
-          {
-            "event_type": "policy",
-            "subject": "苹果",
-            "object": "Siri AI 和其他 Apple 智能新功能在中国大陆暂不提供",
-            "evidence_index": 0
-          },
-          {
-            "event_type": "policy",
-            "subject": "苹果",
-            "object": "Siri AI 初期不会在欧盟地区的 iOS 和 iPad OS 提供",
-            "evidence_index": 1
-          },
-          {
-            "event_type": "hardware",
-            "subject": "苹果",
-            "object": "苹果最强端侧模型仅限 iPhone Air 、 iPhone 17 Pro 系列手机，以及 M4 iPad 和 M3 Mac 及后续机型",
-            "evidence_index": 2
-          }
-        ]
-      },
-      "evidence": [
-        {
-          "start": 401,
-          "end": 454,
-          "quote": "在中国大陆，Siri AI 和其他 Apple 智能新功能需要配合监管要求推进相关工作， 因此暂不提供 。"
-        },
-        {
-          "start": 458,
-          "end": 494,
-          "quote": "Siri AI 初期不会在欧盟地区的 iOS 和 iPad OS 提供。"
-        },
-        {
-          "start": 974,
-          "end": 1043,
-          "quote": "苹果最强端侧模型仅限 iPhone Air 、 iPhone 17 Pro 系列手机，以及 M4 iPad 和 M3 Mac 及后续机型。"
-        }
-      ],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "unsupported_claim_event_type:0, unsupported_claim_event_type:1, unsupported_claim_event_type:2"
-        }
-      ],
-      "generated_at": "2026-07-18T01:30:55.813Z"
-    },
-    {
-      "candidate_id": "MAC-2270b5e0aad6db93",
-      "task_type": "claim_extraction",
-      "asset_id": "QA-83b993a48f50f542",
-      "raw_id": "RAW-70552bd2005b7f4d",
-      "source_ref": "SA-9f8c7be5004b17ea",
-      "source_hash": "53b1799547f70905",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
-      "proposal": {
-        "claims": [
-          {
-            "event_type": "commercial",
-            "subject": "赛豆科技",
-            "object": "AIVA",
-            "evidence_index": 0
-          },
-          {
-            "event_type": "commercial",
-            "subject": "AIVA",
-            "object": "豆包大模型智能座舱",
-            "evidence_index": 1
-          },
-          {
-            "event_type": "commercial",
-            "subject": "AIVA",
-            "object": "首款车",
-            "evidence_index": 2
-          }
-        ]
-      },
-      "evidence": [
-        {
-          "start": 0,
-          "end": 42,
-          "quote": "赛力斯“赛豆科技”全新品牌 AIVA 官宣：车标样式曝光，全系标配豆包大模型智能座舱"
-        },
-        {
-          "start": 645,
-          "end": 667,
-          "quote": "AIVA 首款车型全系标配豆包大模型智能座舱"
-        },
-        {
-          "start": 680,
-          "end": 721,
-          "quote": "首款车是纯电 + 增程双动力跨界车，介于轿车和 SUV 之间，定价 10-20 万"
-        }
-      ],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "unsupported_claim_event_type:0, unsupported_claim_event_type:1, unsupported_claim_event_type:2"
-        }
-      ],
-      "generated_at": "2026-07-18T01:31:00.394Z"
-    },
-    {
-      "candidate_id": "MAC-2a62dbeb455c09df",
-      "task_type": "claim_extraction",
-      "asset_id": "QA-8fee6094d72654c8",
-      "raw_id": "RAW-f5eae1c02ec29f70",
-      "source_ref": "SA-ca431dc3552f882d",
-      "source_hash": "1e7c3e32a252c88d",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
-      "proposal": {
-        "claims": []
-      },
-      "evidence": [],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "failed",
-          "detail": "missing_source_evidence"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "missing_claim_proposal"
-        }
-      ],
-      "generated_at": "2026-07-18T01:30:59.230Z"
-    },
-    {
-      "candidate_id": "MAC-3005cf285ffe1b36",
-      "task_type": "claim_extraction",
-      "asset_id": "QA-561d202cc9492835",
-      "raw_id": "RAW-6dd8863fc3010cb4",
-      "source_ref": "SA-cba674c3ea3e878b",
-      "source_hash": "60ffc622a61955f0",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
-      "proposal": {
-        "claims": [
-          {
-            "event_type": "policy",
-            "subject": "Apple",
-            "object": "Siri AI EU launch",
-            "evidence_index": 0
-          },
-          {
-            "event_type": "policy",
-            "subject": "Apple",
-            "object": "Trusted System Agent proposal",
-            "evidence_index": 1
-          },
-          {
-            "event_type": "policy",
-            "subject": "European Commission",
-            "object": "Apple proposals",
-            "evidence_index": 2
-          }
-        ]
-      },
-      "evidence": [
-        {
-          "start": 37,
-          "end": 95,
-          "quote": "由于受到《数字市场法》影响， Siri AI 不会随着 iOS 27、macOS 27 等系统更新面向欧洲市场上线。"
-        },
-        {
-          "start": 402,
-          "end": 485,
-          "quote": "为回应监管要求，苹果提出名为 Trusted System Agent（可信系统智能体）的中间方案，让其他虚拟助手在安全前提下获得与 Siri AI 相同的功能权限。"
-        },
-        {
-          "start": 512,
-          "end": 529,
-          "quote": "不过，欧洲委员会没有接受这些提案。"
-        }
-      ],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "unsupported_claim_event_type:0, unsupported_claim_event_type:1, unsupported_claim_event_type:2"
-        }
-      ],
-      "generated_at": "2026-07-18T01:30:59.352Z"
-    },
-    {
-      "candidate_id": "MAC-30433483cb078426",
-      "task_type": "claim_extraction",
-      "asset_id": "QA-3f8fa4d5479dd073",
-      "raw_id": "RAW-a0ecf02cda30227d",
-      "source_ref": "SA-a1592765ed723cda",
-      "source_hash": "ee32b112fa795292",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
-      "proposal": {
-        "claims": [
-          {
-            "event_type": "funding",
-            "subject": "Neuralink",
-            "object": "$650 million Series E funding round",
-            "evidence_index": 0
-          },
-          {
-            "event_type": "acquisition",
-            "subject": "Serve Robotics",
-            "object": "Diligent Robotics",
-            "evidence_index": 1
-          },
-          {
-            "event_type": "layoff",
-            "subject": "Meta",
-            "object": "approximately 8,000 employees",
-            "evidence_index": 2
-          }
-        ]
-      },
-      "evidence": [
-        {
-          "start": 11100,
-          "end": 11233,
-          "quote": "The company raised a total of $650 million in a Series E funding round in June 2025, which implied a company valuation of $9 billion."
-        },
-        {
-          "start": 4054,
-          "end": 4216,
-          "quote": "Serve Robotics expanded its operations significantly by acquiring Diligent Robotics, a healthcare robotics company, in a deal valued at approximately $29 million."
-        },
-        {
-          "start": 6398,
-          "end": 6579,
-          "quote": "Additionally, Meta announced plans to lay off about 8,000 employees, roughly 10% of its workforce, as part of a restructuring to focus on AI investments and efficiency improvements."
-        }
-      ],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "unsupported_claim_event_type:2"
-        }
-      ],
-      "generated_at": "2026-07-18T01:30:57.174Z"
-    },
-    {
-      "candidate_id": "MAC-33179e1b47d461e4",
-      "task_type": "entity_resolution",
-      "asset_id": "EN-6d37feda49a46792",
-      "raw_id": "RAW-4d1bb24cd8804ec1",
-      "source_ref": "SA-8436e4a968b0d378",
-      "source_hash": "ccd6442ed8d02d05",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "requires_review",
-      "proposal": {
-        "decision": "unknown",
-        "canonical_name": "亚马逊",
-        "rationale": "The entity candidate '亚马逊' matches the subject of the source text (Amazon), but the source does not provide a canonical name or disambiguation details to confirm it is the same entity versus a distinct one. The quote confirms Amazon introduced the feature.",
-        "candidate_name": "亚马逊"
-      },
-      "evidence": [
-        {
-          "start": 91,
-          "end": 183,
-          "quote": "On Monday, Amazon introduced a new feature that allows anyone to design merchandise using AI"
-        }
-      ],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "passed",
-          "detail": "task contract passed"
-        }
-      ],
-      "generated_at": "2026-07-18T01:31:05.894Z"
-    },
-    {
-      "candidate_id": "MAC-3951b5a95010fc00",
-      "task_type": "entity_resolution",
-      "asset_id": "EN-b10da733dff99be1",
-      "raw_id": "RAW-7d266fefd9091cbf",
-      "source_ref": "SA-7f94d709e33647d0",
-      "source_hash": "043f0819e45e2208",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "requires_review",
-      "proposal": {
-        "decision": "same_entity",
-        "canonical_name": "Edra",
-        "rationale": "The ENTITY_CANDIDATE canonical_name is 'Sequoia-backed Edra', and the SOURCE_TEXT title and body refer to 'Edra' as the startup that raised $30M and is backed by Sequoia, confirming they are the same entity.",
-        "candidate_name": "Sequoia-backed Edra"
-      },
-      "evidence": [
-        {
-          "start": 5,
-          "end": 99,
-          "quote": "Sequoia-backed Edra raises $30M Series A to turn enterprise data into self-improving AI agents"
-        }
-      ],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "passed",
-          "detail": "task contract passed"
-        }
-      ],
-      "generated_at": "2026-07-18T01:31:07.158Z"
-    },
-    {
-      "candidate_id": "MAC-4360d049c290bf70",
-      "task_type": "claim_extraction",
-      "asset_id": "QA-b7d584f8f5c6464e",
-      "raw_id": "RAW-988e9cd3f40f378c",
-      "source_ref": "SA-4a85812bdd5bf69d",
-      "source_hash": "4f3ba8fe5b37b3b1",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
-      "proposal": {
-        "claims": [
-          {
-            "event_type": "product",
-            "subject": "Apple",
-            "object": "Siri AI",
-            "evidence_index": 0
-          },
-          {
-            "event_type": "product",
-            "subject": "Siri AI",
-            "object": "iPhone, iPad, Mac, Apple Watch, Vision Pro",
-            "evidence_index": 1
-          },
-          {
-            "event_type": "product",
-            "subject": "visionOS 27",
-            "object": "3D crystal ball for Siri",
-            "evidence_index": 2
-          }
-        ]
-      },
-      "evidence": [
-        {
-          "start": 335,
-          "end": 406,
-          "quote": "在今天召开的 2026 年全球开发者大会（WWDC）上，苹果克雷格 · 费德里吉（Craig Federighi）介绍推出了 Siri AI。"
-        },
-        {
-          "start": 452,
-          "end": 513,
-          "quote": "不只是 iPhone ， iPad 、Mac、Apple Watch、Vision Pro 都支持全新的 Siri AI。"
-        },
-        {
-          "start": 522,
-          "end": 579,
-          "quote": "在 visionOS 27 上，Siri 还有专属 3D 水晶小球，同时 Siri 也能够识别用户正在注视的物品。"
-        }
-      ],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "unsupported_claim_event_type:0, unsupported_claim_event_type:1, unsupported_claim_event_type:2"
-        }
-      ],
-      "generated_at": "2026-07-18T01:31:02.588Z"
-    },
-    {
-      "candidate_id": "MAC-4aa3a6e769961f99",
-      "task_type": "entity_resolution",
-      "asset_id": "EN-d1de01d18cc6c191",
-      "raw_id": "RAW-a4f6690394fa5ce7",
-      "source_ref": "SA-0973d34e06a57695",
-      "source_hash": "41088805f0d77ba4",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "requires_review",
-      "proposal": {
-        "decision": "publisher_of",
-        "canonical_name": "苹果为Siri",
-        "rationale": "The source text describes Apple giving Siri its own dedicated app, which aligns with the candidate name '苹果为Siri推出专属应用' (Apple launches dedicated app for Siri). The entity '苹果为Siri' appears to represent the app itself, and Apple is the publisher/creator of this app.",
-        "candidate_name": "苹果为Siri"
-      },
-      "evidence": [
-        {
-          "start": 3,
-          "end": 41,
-          "quote": "Apple gives Siri its own dedicated app"
-        }
-      ],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "passed",
-          "detail": "task contract passed"
-        }
-      ],
-      "generated_at": "2026-07-18T01:31:07.431Z"
-    },
-    {
-      "candidate_id": "MAC-4d94af2f99ab4550",
-      "task_type": "claim_extraction",
-      "asset_id": "QA-26d46a3262853a48",
-      "raw_id": "RAW-d3e08b247d8cdd70",
-      "source_ref": "SA-cfdf05da7dcf82f4",
-      "source_hash": "7e43322dce907041",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
-      "proposal": {
-        "claims": [
-          {
-            "event_type": "commercial",
-            "subject": "Apple",
-            "object": "next generation of Apple Intelligence",
-            "evidence_index": 0
-          },
-          {
-            "event_type": "commercial",
-            "subject": "Apple",
-            "object": "Siri AI",
-            "evidence_index": 1
-          },
-          {
-            "event_type": "commercial",
-            "subject": "Apple",
-            "object": "Apple Foundation Models",
-            "evidence_index": 2
-          }
-        ]
-      },
-      "evidence": [
-        {
-          "start": 318,
-          "end": 550,
-          "quote": "Apple today introduced the next generation of Apple Intelligence , powered by a bold new architecture that integrates the latest Apple Foundation Models deep into Apple’s platforms and is uniquely designed to protect users’ privacy."
-        },
-        {
-          "start": 2005,
-          "end": 2106,
-          "quote": "The next generation of Apple Intelligence also helps power Siri AI , an entirely new version of Siri."
-        },
-        {
-          "start": 14009,
-          "end": 14212,
-          "quote": "These new capabilities are powered by the next generation of Apple Foundation Models, custom-built in collaboration with Google and its Gemini models for deeply integrated Apple Intelligence experiences."
-        }
-      ],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "unsupported_claim_event_type:0, unsupported_claim_event_type:1, unsupported_claim_event_type:2"
-        }
-      ],
-      "generated_at": "2026-07-18T01:30:56.681Z"
-    },
-    {
-      "candidate_id": "MAC-52dbbb337234761b",
-      "task_type": "claim_extraction",
-      "asset_id": "QA-5b303c6c24261d16",
-      "raw_id": "RAW-eae745626be3ce00",
-      "source_ref": "SA-6c6bddc10726b8bb",
-      "source_hash": "0ff9152765d54e0e",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
-      "proposal": {
-        "claims": []
-      },
-      "evidence": [],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "failed",
-          "detail": "missing_source_evidence"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "missing_claim_proposal"
-        }
-      ],
-      "generated_at": "2026-07-18T01:30:57.954Z"
-    },
-    {
-      "candidate_id": "MAC-57930d7587ffef83",
-      "task_type": "claim_extraction",
-      "asset_id": "QA-7b494572116a3203",
-      "raw_id": "RAW-abb93216a1f81545",
-      "source_ref": "SA-0ad771754278ac30",
-      "source_hash": "9818caa89ec049a5",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
-      "proposal": {
-        "claims": []
-      },
-      "evidence": [],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "failed",
-          "detail": "missing_source_evidence"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "missing_claim_proposal"
-        }
-      ],
-      "generated_at": "2026-07-18T01:30:58.166Z"
-    },
-    {
-      "candidate_id": "MAC-5d31fac4953c24ab",
-      "task_type": "claim_extraction",
-      "asset_id": "QA-8984eb48f82a6622",
-      "raw_id": "RAW-4e759e57557d34c9",
-      "source_ref": "SA-0cec713f028c4ed9",
-      "source_hash": "078b62ddb20181bc",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
-      "proposal": {
-        "claims": []
-      },
-      "evidence": [],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "failed",
-          "detail": "missing_source_evidence"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "missing_claim_proposal"
-        }
-      ],
-      "generated_at": "2026-07-18T01:30:59.042Z"
-    },
-    {
-      "candidate_id": "MAC-7b2bcffa4a8f84f9",
-      "task_type": "claim_extraction",
-      "asset_id": "QA-c049926b611e2ffb",
-      "raw_id": "RAW-5ccb23d2da2f1809",
-      "source_ref": "SA-a2f790c30066c4c5",
-      "source_hash": "f0a0245141a49a03",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
-      "proposal": {
-        "claims": [
-          {
-            "event_type": "research",
-            "subject": "苹果",
-            "object": "iOS 27 系统更新",
-            "evidence_index": 0
-          },
-          {
-            "event_type": "commercial",
-            "object": "Siri AI 和新一代 Apple 智能",
-            "subject": "iOS 27",
-            "evidence_index": 1
-          },
-          {
-            "event_type": "hardware",
-            "subject": "iOS 27",
-            "object": "iPhone 11",
-            "evidence_index": 2
-          }
-        ]
-      },
-      "evidence": [
-        {
-          "start": 321,
-          "end": 338,
-          "quote": "正式公布了 iOS 27 系统更新"
-        },
-        {
-          "start": 340,
-          "end": 364,
-          "quote": "带来 Siri AI 和新一代 Apple 智能"
-        },
-        {
-          "start": 451,
-          "end": 469,
-          "quote": "也很良心地支持了 iPhone 11"
-        }
-      ],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "unsupported_claim_event_type:0, unsupported_claim_event_type:1, unsupported_claim_event_type:2"
-        }
-      ],
-      "generated_at": "2026-07-18T01:31:02.417Z"
-    },
-    {
-      "candidate_id": "MAC-80f8d51d56a63a66",
-      "task_type": "claim_extraction",
-      "asset_id": "QA-6ff1b0f8a71e6165",
-      "raw_id": "RAW-91c5f9119cb3060c",
-      "source_ref": "SA-22294bfcf7c1d154",
-      "source_hash": "d1acfcf02388712e",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
-      "proposal": {
-        "claims": [
-          {
-            "event_type": "policy",
-            "subject": "Apple",
-            "object": "Siri AI delayed in EU for iOS 27 and iPadOS 27",
-            "evidence_index": 0
-          },
-          {
-            "event_type": "commercial",
-            "subject": "Apple",
-            "object": "Siri AI available on macOS 27 and visionOS 27 in EU",
-            "evidence_index": 1
-          }
-        ]
-      },
-      "evidence": [
-        {
-          "start": 277,
-          "end": 417,
-          "quote": "due to the Digital Markets Act (DMA), Apple will not be able to ship Siri AI in the European Union with the release of iOS 27 and iPadOS 27."
-        },
-        {
-          "start": 1590,
-          "end": 1658,
-          "quote": "EU users will be able to access Siri AI on macOS 27 and visionOS 27."
-        }
-      ],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "unsupported_claim_event_type:0, unsupported_claim_event_type:1"
-        }
-      ],
-      "generated_at": "2026-07-18T01:30:59.829Z"
-    },
-    {
-      "candidate_id": "MAC-96e0a82f77ff7a25",
-      "task_type": "qa_repair",
-      "asset_id": "QA-d39b5c8028a650c9",
-      "raw_id": "RAW-2348cfd47c36b861",
-      "source_ref": "SA-493f87b003644ff8",
-      "source_hash": "1e975801c118fe26",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "requires_review",
-      "proposal": {
-        "action": "recollect_original",
-        "reason": "The QA_REASON indicates the event is not AI-relevant, but the source text explicitly describes AI features such as Siri integration with camera for object recognition and dietary logging, AI-based notification simplification in Home app, and AI automatic proofreading. The title does not reflect these AI aspects, suggesting a need to recollect the original source for a more accurate representation."
-      },
-      "evidence": [
-        {
-          "start": 745,
-          "end": 843,
-          "quote": "在 iOS 27 中，Siri 已集成到 iPhone 的相机应用，可以识别物体并将其保存到 Siri 应用。在官方展示的案例中，用户可以在相机中启用 Siri，利用 AI 来记录摄入的饮食情况。"
-        }
-      ],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "passed",
-          "detail": "task contract passed"
-        }
-      ],
-      "generated_at": "2026-07-18T01:31:09.462Z"
-    },
-    {
-      "candidate_id": "MAC-a4c53acfc4d05788",
-      "task_type": "claim_extraction",
-      "asset_id": "QA-fe6d534bbdc520fe",
-      "raw_id": "RAW-ce3be1cafb8a3bcc",
-      "source_ref": "SA-637ded00ea45f133",
-      "source_hash": "6ca1c7f5db0dc1b5",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
-      "proposal": {
-        "claims": [
-          {
-            "event_type": "commercial",
-            "subject": "苹果",
-            "object": "苹果智能和 Siri AI 适配机型",
-            "evidence_index": 0
-          },
-          {
-            "event_type": "commercial",
-            "subject": "苹果",
-            "object": "苹果最强端侧模型",
-            "evidence_index": 1
-          },
-          {
-            "event_type": "policy",
-            "subject": "苹果",
-            "object": "中国大陆 Siri AI 和 Apple 智能新功能",
-            "evidence_index": 2
-          }
-        ]
-      },
-      "evidence": [
-        {
-          "start": 415,
-          "end": 722,
-          "quote": "苹果智能和 Siri AI 在 iOS 27、iPadOS 27、macOS 27、watchOS 27 和 visionOS 27 中可应用于 iPhone 16 及以后型号、iPhone 15 Pro、iPhone 15 Pro Max、iPad mini（A17 Pro）、搭载 M1 及以上版本的 iPad 型号、搭载 M1 及以上版本的 Mac、Apple Vision Pro、Apple Watch Series 10 及以后版本，Apple Watch Ultra 2 及更新版本，以及与附近支持 Apple Intelligence 的 iPhone 配合时的 Apple Watch SE 3。"
-        },
-        {
-          "start": 726,
-          "end": 795,
-          "quote": "苹果最强端侧模型仅限 iPhone Air 、 iPhone 17 Pro 系列手机，以及 M4 iPad 和 M3 Mac 及后续机型。"
-        },
-        {
-          "start": 795,
-          "end": 860,
-          "quote": "苹果官方特别在发布会上提到，在中国大陆，Siri AI 和其他 Apple 智能新功能需要配合监管要求推进相关工作，因此暂不提供。"
-        }
-      ],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "unsupported_claim_event_type:0, unsupported_claim_event_type:1, unsupported_claim_event_type:2"
-        }
-      ],
-      "generated_at": "2026-07-18T01:31:06.326Z"
-    },
-    {
-      "candidate_id": "MAC-a525b69356a7c951",
-      "task_type": "entity_resolution",
-      "asset_id": "EN-f52139ac312cad37",
-      "raw_id": "RAW-b3a20baefbe22c53",
-      "source_ref": "SA-4afa6f0a2956d501",
-      "source_hash": "dc6e39b2311a5f95",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "requires_review",
-      "proposal": {
-        "decision": "unknown",
-        "canonical_name": "Apple 在 WWDC",
-        "rationale": "The source text describes Apple's activities at WWDC, including the announcement of an AI-powered Siri and other software improvements. However, the entity candidate 'Apple 在 WWDC' is not a named organization but a descriptive phrase meaning 'Apple at WWDC'. The source does not contain a contiguous quote that matches or defines this exact candidate name as an organization, nor does it provide sufficient information to determine its relationship to other entities.",
-        "candidate_name": "Apple 在 WWDC"
-      },
-      "evidence": [
-        {
-          "start": 71,
-          "end": 157,
-          "quote": "Apple’s Worldwide Developer Conference on Monday started off with an apology of sorts."
-        }
-      ],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "passed",
-          "detail": "task contract passed"
-        }
-      ],
-      "generated_at": "2026-07-18T01:31:08.549Z"
-    },
-    {
-      "candidate_id": "MAC-a7ce7b2bcca594e5",
-      "task_type": "claim_extraction",
-      "asset_id": "QA-38e4d3fc22048670",
-      "raw_id": "RAW-39805d4a221ccc77",
-      "source_ref": "SA-523dd1c64a20fea6",
-      "source_hash": "22c8938b06cf9e92",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
-      "proposal": {
-        "claims": [
-          {
-            "event_type": "commercial",
-            "subject": "华为",
-            "object": "尊界 V800",
-            "evidence_index": 0
-          },
-          {
-            "event_type": "commercial",
-            "subject": "月之暗面",
-            "object": "20 亿美元融资",
-            "evidence_index": 1
-          },
-          {
-            "event_type": "policy",
-            "subject": "国家网信办、市场监管总局",
-            "object": "《网络测评活动规范》",
-            "evidence_index": 2
-          }
-        ]
-      },
-      "evidence": [
-        {
-          "start": 76,
-          "end": 115,
-          "quote": "华为余承东官宣尊界 V800，定位“超高端 MPV”，新车已在工信部完成申报。"
-        },
-        {
-          "start": 688,
-          "end": 725,
-          "quote": "月之暗面正寻求新一轮高达 20 亿美元的融资，目标估值达 300 亿美元。"
-        },
-        {
-          "start": 3026,
-          "end": 3083,
-          "quote": "国家网信办、市场监管总局联合印发《网络测评活动规范》，旨在解决网络测评中存在的夸大宣传、只评不测、商测一体等问题。"
-        }
-      ],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "unsupported_claim_event_type:0, unsupported_claim_event_type:1, unsupported_claim_event_type:2"
-        }
-      ],
-      "generated_at": "2026-07-18T01:30:56.685Z"
-    },
-    {
-      "candidate_id": "MAC-a9159166e28deae3",
-      "task_type": "claim_extraction",
-      "asset_id": "QA-521b006f4f377b53",
-      "raw_id": "RAW-ac70107578d1d9af",
-      "source_ref": "SA-fd728a96a5be6c08",
-      "source_hash": "5279d320aca7f148",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
-      "proposal": {
-        "claims": []
-      },
-      "evidence": [],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "failed",
-          "detail": "missing_source_evidence"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "missing_claim_proposal"
-        }
-      ],
-      "generated_at": "2026-07-18T01:30:56.971Z"
-    },
-    {
-      "candidate_id": "MAC-ae5227c3a56c440f",
-      "task_type": "claim_extraction",
-      "asset_id": "QA-22d2274189850e10",
-      "raw_id": "RAW-e3230cecc5c62d71",
-      "source_ref": "SA-84fcf9acbd3eddb0",
-      "source_hash": "555b9766b2cb77d0",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
-      "proposal": {
-        "claims": []
-      },
-      "evidence": [],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "failed",
-          "detail": "missing_source_evidence"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "missing_claim_proposal"
-        }
-      ],
-      "generated_at": "2026-07-18T01:30:54.379Z"
-    },
-    {
-      "candidate_id": "MAC-b1316c781a922ea1",
+      "candidate_id": "MAC-4f5e3844410dd0dd",
       "task_type": "claim_extraction",
       "asset_id": "QA-23eef2e166b1a5dc",
       "raw_id": "RAW-6f43b18c6d39b512",
@@ -1642,19 +641,19 @@
       "source_hash": "f92fd3aebad165bd",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
       "proposal": {
         "claims": [
           {
-            "event_type": "product",
+            "event_type": "product_release",
             "subject": "Anthropic",
-            "object": "connector performance dashboard",
+            "object": "connector performance monitoring dashboard",
             "evidence_index": 0
           },
           {
-            "event_type": "product",
-            "subject": "connector developers",
+            "event_type": "product_release",
+            "subject": "Anthropic",
             "object": "in-app connector directory submission",
             "evidence_index": 1
           }
@@ -1690,22 +689,22 @@
         },
         {
           "gate": "task_contract",
-          "status": "failed",
-          "detail": "unsupported_claim_event_type:0, unsupported_claim_event_type:1"
+          "status": "passed",
+          "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-07-18T01:30:55.738Z"
+      "generated_at": "2026-07-18T04:03:48.318Z"
     },
     {
-      "candidate_id": "MAC-bbb8d09bbd2ebc45",
+      "candidate_id": "MAC-4f6ff7144a939223",
       "task_type": "claim_extraction",
-      "asset_id": "QA-955b45bb66060f12",
-      "raw_id": "RAW-46596c6116610019",
-      "source_ref": "SA-178f0a718a91844d",
-      "source_hash": "f6795a543f23c49d",
+      "asset_id": "QA-561d202cc9492835",
+      "raw_id": "RAW-6dd8863fc3010cb4",
+      "source_ref": "SA-cba674c3ea3e878b",
+      "source_hash": "60ffc622a61955f0",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
+      "prompt_version": "model-assist-2026-07-18.2",
       "status": "rejected",
       "proposal": {
         "claims": []
@@ -1733,45 +732,68 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-07-18T01:31:00.239Z"
+      "generated_at": "2026-07-18T04:03:50.830Z"
     },
     {
-      "candidate_id": "MAC-bc6a4d6f20bea148",
+      "candidate_id": "MAC-58250de124bef43d",
       "task_type": "claim_extraction",
-      "asset_id": "QA-bee2eb75ae705648",
-      "raw_id": "RAW-4f817965ef74029a",
-      "source_ref": "SA-7c511f3e310baf5f",
-      "source_hash": "061b0ff71c60bf0e",
+      "asset_id": "QA-5935efea3de05b4f",
+      "raw_id": "RAW-734e9b3ae2dc4b6e",
+      "source_ref": "SA-5b62aeca98a65c13",
+      "source_hash": "0d31bf8b336a9ae2",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
+      "prompt_version": "model-assist-2026-07-18.2",
       "status": "rejected",
       "proposal": {
-        "claims": [
-          {
-            "event_type": "product release",
-            "subject": "MAI-Transcribe-1.5",
-            "object": "Azure AI Foundry",
-            "evidence_index": 0
-          },
-          {
-            "event_type": "product integration",
-            "subject": "Microsoft",
-            "object": "MAI-Transcribe-1.5",
-            "evidence_index": 1
-          }
-        ]
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "missing_claim_proposal"
+        }
+      ],
+      "generated_at": "2026-07-18T04:03:50.783Z"
+    },
+    {
+      "candidate_id": "MAC-5fad7411091cdd56",
+      "task_type": "qa_repair",
+      "asset_id": "QA-f21a812892ebdf48",
+      "raw_id": "RAW-3a46d3704c768ecf",
+      "source_ref": "SA-324be8cd1bedf169",
+      "source_hash": "4b5ed2076a06a87d",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "action": "recollect_original",
+        "reason": "The source describes a hardware product release (a camera for robots), but the QA_REASON states 'event_not_ai_relevant'. The source does not contain a concrete AI event such as an AI model release, AI research result, or AI-specific deployment; it is a general robotics hardware component announcement.",
+        "claims": []
       },
       "evidence": [
         {
-          "start": 4462,
-          "end": 4511,
-          "quote": "Generally available now through Azure AI Foundry."
-        },
-        {
-          "start": 759,
-          "end": 848,
-          "quote": "Microsoft is integrating it into Copilot, Teams, GitHub, and Dynamics 365 Contact Centre."
+          "start": 332,
+          "end": 389,
+          "quote": "欧菲光今日宣布，推出 RoboVision 系列的首发产品 Dex400R RGBD（D 指深度 Depth）相机"
         }
       ],
       "gate_results": [
@@ -1787,19 +809,285 @@
         },
         {
           "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T04:04:05.014Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "codex-data-review",
+        "reviewed_at": "2026-07-18T04:19:04.455Z",
+        "note": "queue-closeout:reviewed_source_gap_retained_for_recollection"
+      }
+    },
+    {
+      "candidate_id": "MAC-62efcfe7cc506ba0",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-26d46a3262853a48",
+      "raw_id": "RAW-d3e08b247d8cdd70",
+      "source_ref": "SA-cfdf05da7dcf82f4",
+      "source_hash": "7e43322dce907041",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
           "status": "failed",
-          "detail": "unsupported_numeric_fact:1.5"
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
         },
         {
           "gate": "task_contract",
           "status": "failed",
-          "detail": "unsupported_claim_event_type:0, unsupported_claim_event_type:1"
+          "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-07-18T01:31:02.441Z"
+      "generated_at": "2026-07-18T04:03:49.265Z"
     },
     {
-      "candidate_id": "MAC-bde3e487c424fd0d",
+      "candidate_id": "MAC-65b4c6c6104d3981",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-f52139ac312cad37",
+      "raw_id": "RAW-b3a20baefbe22c53",
+      "source_ref": "SA-4afa6f0a2956d501",
+      "source_hash": "dc6e39b2311a5f95",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "Apple 在 WWDC",
+        "rationale": "The candidate canonical_name 'Apple 在 WWDC' describes Apple's presence or activity at a specific conference, which is a contextual event reference, not a verified alternative name for the corporate entity 'Apple'. The quote shows the entity is Apple acting at WWDC, but the candidate name is not an exact match for any VERIFIED_ALTERNATIVE.",
+        "candidate_name": "Apple 在 WWDC"
+      },
+      "evidence": [
+        {
+          "start": 71,
+          "end": 157,
+          "quote": "Apple’s Worldwide Developer Conference on Monday started off with an apology of sorts."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T04:04:02.739Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "codex-data-review",
+        "reviewed_at": "2026-07-18T04:19:04.455Z",
+        "note": "queue-closeout:reviewed_as_distinct_entity"
+      }
+    },
+    {
+      "candidate_id": "MAC-6f25fd5b959712fe",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-9e0373d7f43c53de",
+      "raw_id": "RAW-f328c5d7999cf1dd",
+      "source_ref": "SA-25c24585c8e5c3e1",
+      "source_hash": "cdbff29bae14546a",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "missing_claim_proposal"
+        }
+      ],
+      "generated_at": "2026-07-18T04:03:54.435Z"
+    },
+    {
+      "candidate_id": "MAC-7137810e39df6888",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-83b993a48f50f542",
+      "raw_id": "RAW-70552bd2005b7f4d",
+      "source_ref": "SA-9f8c7be5004b17ea",
+      "source_hash": "53b1799547f70905",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "product_release",
+            "subject": "赛力斯",
+            "object": "AIVA 品牌",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "product_release",
+            "subject": "AIVA",
+            "object": "首款车型",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "partnership",
+            "subject": "赛力斯",
+            "object": "火山引擎",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 42,
+          "quote": "赛力斯“赛豆科技”全新品牌 AIVA 官宣：车标样式曝光，全系标配豆包大模型智能座舱"
+        },
+        {
+          "start": 469,
+          "end": 480,
+          "quote": "首款车型预计今年内推出"
+        },
+        {
+          "start": 488,
+          "end": 515,
+          "quote": "赛力斯将与字节跳动旗下的云服务平台火山引擎展开深度合作"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T04:03:53.821Z"
+    },
+    {
+      "candidate_id": "MAC-740d97d196b6d698",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-b10da733dff99be1",
+      "raw_id": "RAW-7d266fefd9091cbf",
+      "source_ref": "SA-7f94d709e33647d0",
+      "source_hash": "043f0819e45e2208",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "Sequoia-backed Edra",
+        "rationale": "No VERIFIED_ALTERNATIVES are provided, so there is no reference list to match against. The candidate name 'Sequoia-backed Edra' appears in the source text, but without verified alternatives, identity cannot be confirmed or rejected.",
+        "candidate_name": "Sequoia-backed Edra"
+      },
+      "evidence": [
+        {
+          "start": 5,
+          "end": 99,
+          "quote": "Sequoia-backed Edra raises $30M Series A to turn enterprise data into self-improving AI agents"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T04:04:00.671Z",
+      "review": {
+        "decision": "reject",
+        "reviewer": "codex-data-review",
+        "reviewed_at": "2026-07-18T04:19:04.455Z",
+        "note": "queue-closeout:insufficient_evidence_for_entity_resolution"
+      }
+    },
+    {
+      "candidate_id": "MAC-80566144d3614cb5",
       "task_type": "claim_extraction",
       "asset_id": "QA-4b7eb145e942816d",
       "raw_id": "RAW-b4e346cbdd081a32",
@@ -1807,7 +1095,7 @@
       "source_hash": "c2055e9bc8aeb8aa",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
+      "prompt_version": "model-assist-2026-07-18.2",
       "status": "rejected",
       "proposal": {
         "claims": []
@@ -1835,18 +1123,18 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-07-18T01:30:56.358Z"
+      "generated_at": "2026-07-18T04:03:50.832Z"
     },
     {
-      "candidate_id": "MAC-c409ad4a9bb8156c",
+      "candidate_id": "MAC-80bc214086d2a689",
       "task_type": "claim_extraction",
-      "asset_id": "QA-9108ebb5a30d9d24",
-      "raw_id": "RAW-b8176c996e927ff0",
-      "source_ref": "SA-cec084919f9b80e7",
-      "source_hash": "9a03e220db75eb26",
+      "asset_id": "QA-b7d584f8f5c6464e",
+      "raw_id": "RAW-988e9cd3f40f378c",
+      "source_ref": "SA-4a85812bdd5bf69d",
+      "source_hash": "4f3ba8fe5b37b3b1",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
+      "prompt_version": "model-assist-2026-07-18.2",
       "status": "rejected",
       "proposal": {
         "claims": []
@@ -1874,56 +1162,56 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-07-18T01:31:00.085Z"
+      "generated_at": "2026-07-18T04:03:54.718Z"
     },
     {
-      "candidate_id": "MAC-cd88e107727f0cd4",
+      "candidate_id": "MAC-84a6edc22004c3d4",
       "task_type": "claim_extraction",
-      "asset_id": "QA-07aa2f27561b481e",
-      "raw_id": "RAW-258c545ae030a686",
-      "source_ref": "SA-b6cfe4f4b7de2950",
-      "source_hash": "8ce368043a104eed",
+      "asset_id": "QA-ebce32df5a687ba5",
+      "raw_id": "RAW-e53f2f88aabf1d89",
+      "source_ref": "SA-24b8c8321db1f30e",
+      "source_hash": "5231bfc0e8d859a4",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
       "proposal": {
         "claims": [
           {
-            "event_type": "research",
-            "subject": "苹果",
-            "object": "iPadOS 27",
+            "event_type": "model_release",
+            "subject": "Xiaomi MiMo team and TileRT systems group",
+            "object": "MiMo-V2.5-Pro-UltraSpeed",
             "evidence_index": 0
           },
           {
-            "event_type": "hardware",
-            "subject": "iPadOS 27",
-            "object": "应用启动速度最高提升 30%",
+            "event_type": "hardware_deployment",
+            "subject": "MiMo-V2.5-Pro-UltraSpeed",
+            "object": "single standard 8-GPU commodity node",
             "evidence_index": 1
           },
           {
-            "event_type": "software",
-            "subject": "iPadOS 27",
-            "object": "引入全新 Siri AI",
+            "event_type": "pricing_change",
+            "subject": "MiMo-V2.5-Pro-UltraSpeed",
+            "object": "3× the standard MiMo-V2.5-Pro rate",
             "evidence_index": 2
           }
         ]
       },
       "evidence": [
         {
-          "start": 15,
-          "end": 73,
-          "quote": "在今天（6 月 9 日）召开的 2026 年全球开发者大会（WWDC）上， 苹果公开展示 iPad OS 27 系统"
+          "start": 246,
+          "end": 358,
+          "quote": "Xiaomi’s MiMo team just released MiMo-V2.5-Pro-UltraSpeed, built in collaboration with the TileRT systems group."
         },
         {
-          "start": 131,
-          "end": 159,
-          "quote": "iPhone 和 iPad 应用启动速度最高提升 30%"
+          "start": 1114,
+          "end": 1189,
+          "quote": "Crucially, the entire stack runs on a single standard 8-GPU commodity node."
         },
         {
-          "start": 305,
-          "end": 341,
-          "quote": "苹果 iPadOS 27 引入全新 Siri AI，形式上是一款独立应用"
+          "start": 5143,
+          "end": 5216,
+          "quote": "Pricing is 3× the standard MiMo-V2.5-Pro rate, for roughly 10× the speed."
         }
       ],
       "gate_results": [
@@ -1944,14 +1232,396 @@
         },
         {
           "gate": "task_contract",
-          "status": "failed",
-          "detail": "unsupported_claim_event_type:0, unsupported_claim_event_type:1, unsupported_claim_event_type:2"
+          "status": "passed",
+          "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-07-18T01:30:55.234Z"
+      "generated_at": "2026-07-18T04:03:59.622Z"
     },
     {
-      "candidate_id": "MAC-d0353a6deb32611a",
+      "candidate_id": "MAC-8d622270a9d5dc2d",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-50537dab76505dfc",
+      "raw_id": "RAW-42188c71fd76d3cd",
+      "source_ref": "SA-4c454bcda76945d8",
+      "source_hash": "1ef3129e653a43c5",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "decision": "same_entity",
+        "canonical_name": "Apple",
+        "rationale": "The candidate '苹果' is listed as a verified alias for 'Apple' in VERIFIED_ALTERNATIVES, and the source text refers to Apple's Xcode and executive, confirming it is the same entity.",
+        "candidate_name": "苹果"
+      },
+      "evidence": [
+        {
+          "start": 674,
+          "end": 733,
+          "quote": "苹果软件工程高级副总裁 Craig Federighi 还称，Xcode 已成为构建智能体 AI 应用的“最佳场所”。"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T04:03:59.976Z",
+      "review": {
+        "decision": "reject",
+        "reviewer": "codex-data-review",
+        "reviewed_at": "2026-07-18T04:19:04.455Z",
+        "note": "queue-closeout:same_entity_target_not_proven"
+      }
+    },
+    {
+      "candidate_id": "MAC-8ee180d3cc40e2b9",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-5c2ce17a00049b8d",
+      "raw_id": "RAW-214e0b8e78205533",
+      "source_ref": "SA-08811072d14bb993",
+      "source_hash": "ab7f8beb8aae8061",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "product_release",
+            "subject": "Google Research",
+            "object": "Cross-Corpus Retrieval feature in Gemini Enterprise Agent Platform",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "research_result",
+            "subject": "Google Research",
+            "object": "Agentic RAG framework accuracy improvement",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "research_result",
+            "subject": "Google Research",
+            "object": "Cross-corpus routing accuracy on FramesQA",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 76,
+          "end": 269,
+          "quote": "Google Research team has introduced a new agentic RAG framework. It is built into the Gemini Enterprise Agent Platform. It powers a feature called Cross-Corpus Retrieval, now in public preview."
+        },
+        {
+          "start": 1071,
+          "end": 1155,
+          "quote": "Compared to standard RAG, it increases accuracy on factuality datasets by up to 34%."
+        },
+        {
+          "start": 4441,
+          "end": 4596,
+          "quote": "In cross-corpus, the system nearly matched its single-corpus accuracy. It answered 90.1% of questions correctly while selecting the right corpus from four."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T04:03:53.928Z"
+    },
+    {
+      "candidate_id": "MAC-8f8e2fce853f4213",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-e9811bcac54251ee",
+      "raw_id": "RAW-0c3adc169a0b603e",
+      "source_ref": "SA-2f781c4f91b53648",
+      "source_hash": "6967beaf7c959e6e",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "missing_claim_proposal"
+        }
+      ],
+      "generated_at": "2026-07-18T04:03:57.508Z"
+    },
+    {
+      "candidate_id": "MAC-a2b392c20231bf04",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-5b303c6c24261d16",
+      "raw_id": "RAW-eae745626be3ce00",
+      "source_ref": "SA-6c6bddc10726b8bb",
+      "source_hash": "0ff9152765d54e0e",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "missing_claim_proposal"
+        }
+      ],
+      "generated_at": "2026-07-18T04:03:50.974Z"
+    },
+    {
+      "candidate_id": "MAC-bd4e148cf6d0d894",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-9108ebb5a30d9d24",
+      "raw_id": "RAW-b8176c996e927ff0",
+      "source_ref": "SA-cec084919f9b80e7",
+      "source_hash": "9a03e220db75eb26",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "missing_claim_proposal"
+        }
+      ],
+      "generated_at": "2026-07-18T04:03:53.430Z"
+    },
+    {
+      "candidate_id": "MAC-c1772b79dea82b65",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-fe6d534bbdc520fe",
+      "raw_id": "RAW-ce3be1cafb8a3bcc",
+      "source_ref": "SA-637ded00ea45f133",
+      "source_hash": "6ca1c7f5db0dc1b5",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "model_release",
+            "subject": "Apple",
+            "object": "Siri AI and Apple Intelligence features",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "standard_specification",
+            "subject": "Apple",
+            "object": "Apple Intelligence and Siri AI compatible devices",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "policy_regulation",
+            "subject": "Apple",
+            "object": "Siri AI and Apple Intelligence features in mainland China",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 329,
+          "end": 377,
+          "quote": "在今日的 WWDC26 主题演讲中，苹果发布了 Siri AI 和多项 Apple 智能新功能。"
+        },
+        {
+          "start": 415,
+          "end": 722,
+          "quote": "苹果智能和 Siri AI 在 iOS 27、iPadOS 27、macOS 27、watchOS 27 和 visionOS 27 中可应用于 iPhone 16 及以后型号、iPhone 15 Pro、iPhone 15 Pro Max、iPad mini（A17 Pro）、搭载 M1 及以上版本的 iPad 型号、搭载 M1 及以上版本的 Mac、Apple Vision Pro、Apple Watch Series 10 及以后版本，Apple Watch Ultra 2 及更新版本，以及与附近支持 Apple Intelligence 的 iPhone 配合时的 Apple Watch SE 3。"
+        },
+        {
+          "start": 795,
+          "end": 860,
+          "quote": "苹果官方特别在发布会上提到，在中国大陆，Siri AI 和其他 Apple 智能新功能需要配合监管要求推进相关工作，因此暂不提供。"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T04:04:00.422Z"
+    },
+    {
+      "candidate_id": "MAC-ccb5d44c95cd746f",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-3f8fa4d5479dd073",
+      "raw_id": "RAW-a0ecf02cda30227d",
+      "source_ref": "SA-a1592765ed723cda",
+      "source_hash": "ee32b112fa795292",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "acquisition",
+            "subject": "Serve Robotics",
+            "object": "Diligent Robotics",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "funding",
+            "subject": "Neuralink",
+            "object": "$650 million Series E funding round",
+            "evidence_index": 1
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 4054,
+          "end": 4216,
+          "quote": "Serve Robotics expanded its operations significantly by acquiring Diligent Robotics, a healthcare robotics company, in a deal valued at approximately $29 million."
+        },
+        {
+          "start": 11100,
+          "end": 11233,
+          "quote": "The company raised a total of $650 million in a Series E funding round in June 2025, which implied a company valuation of $9 billion."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T04:03:51.713Z"
+    },
+    {
+      "candidate_id": "MAC-d59877a2bff14fd3",
       "task_type": "claim_extraction",
       "asset_id": "QA-a485d382579de0de",
       "raw_id": "RAW-1276d06aa11a06d8",
@@ -1959,27 +1629,21 @@
       "source_hash": "daa08cd890835436",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
       "proposal": {
         "claims": [
           {
-            "event_type": "commercial",
-            "subject": "天工 3.0",
-            "object": "规模化量产交付",
+            "event_type": "hardware_deployment",
+            "subject": "北京人形机器人创新中心",
+            "object": "全尺寸通用人形机器人天工 3.0",
             "evidence_index": 0
           },
           {
-            "event_type": "hardware",
-            "subject": "天工 3.0",
-            "object": "地瓜机器人 旭日 S600 具身智能大算力芯片",
+            "event_type": "hardware_product",
+            "subject": "地瓜机器人",
+            "object": "旭日 S600 具身智能大算力芯片",
             "evidence_index": 1
-          },
-          {
-            "event_type": "commercial",
-            "subject": "天工 3.0",
-            "object": "产线作业、仓储物流、智能服务、特殊环境运维等实景应用",
-            "evidence_index": 2
           }
         ]
       },
@@ -1993,59 +1657,6 @@
           "start": 457,
           "end": 488,
           "quote": "该机型将正式搭载地瓜机器人 旭日 S600 具身智能大算力芯片"
-        },
-        {
-          "start": 680,
-          "end": 725,
-          "quote": "量产落地后的天工 3.0，将全面投入产线作业、仓储物流、智能服务、特殊环境运维等实景应用。"
-        }
-      ],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "unsupported_claim_event_type:0, unsupported_claim_event_type:1, unsupported_claim_event_type:2"
-        }
-      ],
-      "generated_at": "2026-07-18T01:31:02.894Z"
-    },
-    {
-      "candidate_id": "MAC-dec34c5ce14b7edb",
-      "task_type": "entity_resolution",
-      "asset_id": "EN-50537dab76505dfc",
-      "raw_id": "RAW-42188c71fd76d3cd",
-      "source_ref": "SA-4c454bcda76945d8",
-      "source_hash": "1ef3129e653a43c5",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "requires_review",
-      "proposal": {
-        "decision": "same_entity",
-        "canonical_name": "苹果",
-        "rationale": "SOURCE_TEXT 中多次提及“苹果公司”“苹果”，与候选实体“苹果”指代同一组织。",
-        "candidate_name": "苹果"
-      },
-      "evidence": [
-        {
-          "start": 359,
-          "end": 400,
-          "quote": "苹果公司面向开发者， 升级推出全新 Xcode，并同步推出 Core AI 框架。"
         }
       ],
       "gate_results": [
@@ -2070,18 +1681,18 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-07-18T01:31:05.047Z"
+      "generated_at": "2026-07-18T04:03:56.156Z"
     },
     {
-      "candidate_id": "MAC-e2a89119d8c87d65",
+      "candidate_id": "MAC-d698ce84df4ef668",
       "task_type": "claim_extraction",
-      "asset_id": "QA-e9811bcac54251ee",
-      "raw_id": "RAW-0c3adc169a0b603e",
-      "source_ref": "SA-2f781c4f91b53648",
-      "source_hash": "6967beaf7c959e6e",
+      "asset_id": "QA-22d2274189850e10",
+      "raw_id": "RAW-e3230cecc5c62d71",
+      "source_ref": "SA-84fcf9acbd3eddb0",
+      "source_hash": "555b9766b2cb77d0",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
+      "prompt_version": "model-assist-2026-07-18.2",
       "status": "rejected",
       "proposal": {
         "claims": []
@@ -2109,73 +1720,10 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-07-18T01:31:03.655Z"
+      "generated_at": "2026-07-18T04:03:47.561Z"
     },
     {
-      "candidate_id": "MAC-e45ded5305f14fe8",
-      "task_type": "claim_extraction",
-      "asset_id": "QA-c95093f5f2e79795",
-      "raw_id": "RAW-b2cc61b3f09b9530",
-      "source_ref": "SA-887578a59d6135cf",
-      "source_hash": "aad51899902e40ed",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
-      "proposal": {
-        "claims": [
-          {
-            "event_type": "commercial",
-            "subject": "Xiaomi",
-            "object": "MiMo-V2.5-Pro-UltraSpeed API",
-            "evidence_index": 0
-          },
-          {
-            "event_type": "research",
-            "subject": "Xiaomi MiMo-V2.5-Pro-UltraSpeed",
-            "object": "1000 tokens/s decode speed on a 1-trillion-parameter model",
-            "evidence_index": 1
-          }
-        ]
-      },
-      "evidence": [
-        {
-          "start": 923,
-          "end": 1102,
-          "quote": "The MiMo-V2.5-Pro-UltraSpeed API launches simultaneously at a limited-time promotional price — 3× the cost of MiMo-V2.5-Pro, but delivering approximately 10× the generation speed!"
-        },
-        {
-          "start": 606,
-          "end": 793,
-          "quote": "Today, we are thrilled to release Xiaomi MiMo-V2.5-Pro-UltraSpeed in collaboration with TileRT, breaking the 1000 tokens/s decode speed on a 1-trillion-parameter model for the first time!"
-        }
-      ],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "unsupported_claim_event_type:0, unsupported_claim_event_type:1"
-        }
-      ],
-      "generated_at": "2026-07-18T01:31:05.980Z"
-    },
-    {
-      "candidate_id": "MAC-f340e4736d20159f",
+      "candidate_id": "MAC-dfd1a9a568692829",
       "task_type": "qa_repair",
       "asset_id": "QA-442d373123f1a7d5",
       "raw_id": "RAW-9291bec91a11d0e7",
@@ -2183,17 +1731,92 @@
       "source_hash": "ae0e2b714cf6b03d",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "requires_review",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
       "proposal": {
-        "action": "recollect_original",
-        "reason": "The QA_REASON 'event_not_ai_relevant' is incorrect. The source text explicitly details significant AI-related announcements, including a new Apple Intelligence architecture, a revamped Siri AI, and integration of Gemini technology."
+        "action": "keep_qa",
+        "reason": "The source text describes Apple's WWDC26 event, which focuses on operating system updates, design changes, and general platform improvements. The QA_REASON 'event_not_ai_relevant' is incorrect because the source explicitly details 'Apple 智能' (Apple Intelligence) features, including a new architecture, a revamped 'Siri AI', and AI integrations into apps like Safari. These are concrete AI-related events.",
+        "claims": []
       },
       "evidence": [
         {
-          "start": 2764,
+          "start": 2770,
           "end": 2824,
-          "quote": "而在今天， 苹果带来了新一代 Apple 智能 ，集全新架构、Siri 焕然一新、让各款 App 更智能、更好用于一身。"
+          "quote": "苹果带来了新一代 Apple 智能 ，集全新架构、Siri 焕然一新、让各款 App 更智能、更好用于一身。"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "failed",
+          "detail": "unsupported_numeric_fact:26"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T04:04:03.113Z"
+    },
+    {
+      "candidate_id": "MAC-e0b4b89fe8f59fe5",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-38e4d3fc22048670",
+      "raw_id": "RAW-39805d4a221ccc77",
+      "source_ref": "SA-523dd1c64a20fea6",
+      "source_hash": "22c8938b06cf9e92",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "月之暗面",
+            "object": "20 亿美元融资",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "organization_restructuring",
+            "subject": "阿里巴巴",
+            "object": "合并通义大模型事业部和未来生活实验室",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "partnership",
+            "subject": "英伟达与 SK 海力士",
+            "object": "多年期技术合作",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 688,
+          "end": 725,
+          "quote": "月之暗面正寻求新一轮高达 20 亿美元的融资，目标估值达 300 亿美元。"
+        },
+        {
+          "start": 1564,
+          "end": 1598,
+          "quote": "阿里宣布合并通义大模型事业部和未来生活实验室，周靖人将担任首席科学家"
+        },
+        {
+          "start": 4554,
+          "end": 4588,
+          "quote": "英伟达与 SK 海力士宣布多年期技术合作，共同开发下一代 AI 内存"
         }
       ],
       "gate_results": [
@@ -2218,18 +1841,18 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-07-18T01:31:08.175Z"
+      "generated_at": "2026-07-18T04:03:50.966Z"
     },
     {
-      "candidate_id": "MAC-f5da4b5429d58a0f",
+      "candidate_id": "MAC-e26cda5b0176304d",
       "task_type": "claim_extraction",
-      "asset_id": "QA-4f6dbb4543f31740",
-      "raw_id": "RAW-30ee741c812b821b",
-      "source_ref": "SA-e66ecb7999e08ebd",
-      "source_hash": "c6a2465598a5e070",
+      "asset_id": "QA-0ad0557adc6f9485",
+      "raw_id": "RAW-4f3baa4a15c7e4fe",
+      "source_ref": "SA-d2901dee869bf589",
+      "source_hash": "ab94b8f3be7b5027",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
+      "prompt_version": "model-assist-2026-07-18.2",
       "status": "rejected",
       "proposal": {
         "claims": []
@@ -2257,45 +1880,69 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-07-18T01:30:56.896Z"
+      "generated_at": "2026-07-18T04:03:47.963Z"
     },
     {
-      "candidate_id": "MAC-fe76fd2f893aa862",
+      "candidate_id": "MAC-ee8bafc6ac47fb08",
       "task_type": "claim_extraction",
-      "asset_id": "QA-9e0373d7f43c53de",
-      "raw_id": "RAW-f328c5d7999cf1dd",
-      "source_ref": "SA-25c24585c8e5c3e1",
-      "source_hash": "cdbff29bae14546a",
+      "asset_id": "QA-e413ed8f5bc1553b",
+      "raw_id": "RAW-d67e2a4f5cf7b7c1",
+      "source_ref": "SA-d69badf947f7ca1b",
+      "source_hash": "bc4ee00327da9584",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
+      "prompt_version": "model-assist-2026-07-18.2",
       "status": "rejected",
       "proposal": {
-        "claims": [
-          {
-            "event_type": "policy",
-            "subject": "National Institute of Standards and Technology",
-            "object": "open-weight AI model hosting and inference services",
-            "evidence_index": 0
-          },
-          {
-            "event_type": "policy",
-            "subject": "National Institute of Standards and Technology",
-            "object": "Sources Sought Notice for market research",
-            "evidence_index": 1
-          }
-        ]
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "missing_claim_proposal"
+        }
+      ],
+      "generated_at": "2026-07-18T04:03:56.012Z"
+    },
+    {
+      "candidate_id": "MAC-eef4cc909fc3b6fe",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-d1de01d18cc6c191",
+      "raw_id": "RAW-a4f6690394fa5ce7",
+      "source_ref": "SA-0973d34e06a57695",
+      "source_hash": "41088805f0d77ba4",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "苹果为Siri",
+        "rationale": "The candidate '苹果为Siri' appears to be a Chinese phrase meaning 'Apple for Siri' or 'Apple gives Siri', likely derived from the article title. The verified alternative 'Apple' (苹果) is the company that created Siri. The source text describes Apple giving Siri its own app, establishing a creator/owner relationship, not identity. The candidate name does not exactly match any verified alternative canonical name or alias.",
+        "candidate_name": "苹果为Siri"
       },
       "evidence": [
         {
-          "start": 43,
-          "end": 242,
-          "quote": "NIST is seeking information from contractors capable of providing open-weight AI model hosting and inference services to support CAISI's evaluation of frontier AI systems for national security risks."
-        },
-        {
-          "start": 610,
-          "end": 722,
-          "quote": "This is a Sources Sought Notice ONLY and is issued for market research purposes in accordance with FAR Part 10 ."
+          "start": 3,
+          "end": 41,
+          "quote": "Apple gives Siri its own dedicated app"
         }
       ],
       "gate_results": [
@@ -2316,11 +1963,207 @@
         },
         {
           "gate": "task_contract",
-          "status": "failed",
-          "detail": "unsupported_claim_event_type:0, unsupported_claim_event_type:1"
+          "status": "passed",
+          "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-07-18T01:31:02.403Z"
+      "generated_at": "2026-07-18T04:04:01.986Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "codex-data-review",
+        "reviewed_at": "2026-07-18T04:19:04.455Z",
+        "note": "queue-closeout:reviewed_as_distinct_entity"
+      }
+    },
+    {
+      "candidate_id": "MAC-f09374e81c040a82",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-bee2eb75ae705648",
+      "raw_id": "RAW-4f817965ef74029a",
+      "source_ref": "SA-7c511f3e310baf5f",
+      "source_hash": "061b0ff71c60bf0e",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "model_release",
+            "subject": "Microsoft AI",
+            "object": "MAI-Transcribe-1.5",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "model_release",
+            "subject": "MAI-Transcribe-1.5",
+            "object": "keyword biasing feature",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "deployment",
+            "subject": "MAI-Transcribe-1.5",
+            "object": "Azure AI Foundry",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 144,
+          "end": 277,
+          "quote": "Last week Microsoft AI has announced MAI-Transcribe-1.5 . It is the second iteration of the company’s in-house speech-to-text family."
+        },
+        {
+          "start": 2453,
+          "end": 2612,
+          "quote": "MAI-Transcribe-1.5 adds keyword biasing, also called entity biasing. You supply a list of domain-specific keywords. The Azure card supports up to 200 keywords."
+        },
+        {
+          "start": 4462,
+          "end": 4511,
+          "quote": "Generally available now through Azure AI Foundry."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T04:03:57.851Z"
+    },
+    {
+      "candidate_id": "MAC-fac0f8940076a3ce",
+      "task_type": "qa_repair",
+      "asset_id": "QA-d39b5c8028a650c9",
+      "raw_id": "RAW-2348cfd47c36b861",
+      "source_ref": "SA-493f87b003644ff8",
+      "source_hash": "1e975801c118fe26",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "action": "recollect_original",
+        "reason": "The QA_REASON is 'event_not_ai_relevant', but the source text describes multiple AI-related features including Siri AI integration, Apple Intelligence device models, and AI-powered functionalities. This contradicts the QA reason, requiring recollection of the original task.",
+        "claims": []
+      },
+      "evidence": [
+        {
+          "start": 745,
+          "end": 800,
+          "quote": "在 iOS 27 中，Siri 已集成到 iPhone 的相机应用，可以识别物体并将其保存到 Siri 应用。"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T04:04:05.341Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "codex-data-review",
+        "reviewed_at": "2026-07-18T04:19:04.455Z",
+        "note": "queue-closeout:reviewed_source_gap_retained_for_recollection"
+      }
+    },
+    {
+      "candidate_id": "MAC-fdff0cef325c1a51",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-6ff1b0f8a71e6165",
+      "raw_id": "RAW-91c5f9119cb3060c",
+      "source_ref": "SA-22294bfcf7c1d154",
+      "source_hash": "d1acfcf02388712e",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "deployment",
+            "subject": "Apple",
+            "object": "Siri AI on iOS 27 and iPadOS 27 in the European Union",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "deployment",
+            "subject": "Apple",
+            "object": "Siri AI on macOS 27 and visionOS 27 in the European Union",
+            "evidence_index": 1
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 277,
+          "end": 417,
+          "quote": "due to the Digital Markets Act (DMA), Apple will not be able to ship Siri AI in the European Union with the release of iOS 27 and iPadOS 27."
+        },
+        {
+          "start": 1590,
+          "end": 1658,
+          "quote": "EU users will be able to access Siri AI on macOS 27 and visionOS 27."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T04:03:54.268Z"
     }
   ]
 }

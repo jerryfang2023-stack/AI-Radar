@@ -2,7 +2,7 @@
 schema_version: raw-evidence-v2
 raw_id: R-059
 title: "Enterprise Deep Research Agent Case Study | Grid Dynamics"
-title_zh: "企业深度研究代理案例研究 | Grid Dynamics"
+title_zh: "企业深度研究代理案例研究"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 original_url: "https://www.griddynamics.com/blog/enterprise-deep-research-agent-case-study"

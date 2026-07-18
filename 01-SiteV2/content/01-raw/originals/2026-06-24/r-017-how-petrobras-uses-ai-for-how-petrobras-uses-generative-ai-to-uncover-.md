@@ -72,7 +72,7 @@ key_excerpts: [{"type":"number","text":"Petrobras applied generative AI and inte
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
-title_zh: "巴西国家石油公司如何利用生成式AI发现1.2亿美元税务节省 | 应用"
+title_zh: "Petrobras 如何利用生成式 AI 发掘 1.2 亿美元税务节省"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

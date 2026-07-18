@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"Meta 推出 Brain2Qwerty v2 非侵入式
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "Meta 公布 Brain2Qwerty v2 非侵入式脑机接口新研究：AI 从脑磁信号中\"读心\"，准确率最高达 78%"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Meta 公布 Brain2Qwerty v2 非侵入式脑机接口新研究：AI 从脑磁信号中"读心"，准确率最高达 78%

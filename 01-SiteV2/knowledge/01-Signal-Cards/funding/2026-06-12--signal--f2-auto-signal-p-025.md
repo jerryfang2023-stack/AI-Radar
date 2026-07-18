@@ -2,7 +2,7 @@
 id: SIG-20260612-A01
 type: signal_card
 signal_type: funding
-title: "F2 获2400万美元融资，为私募信贷构建AI"
+title: "F2 融资 2400 万美元，为私人信贷构建人工智能"
 date: 2026-06-12
 status: published
 source_title: "F2 Raises $24M to Build AI for Private Credit"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "F2"
 
 frontend:
-  displayTitle: "F2 获2400万美元融资，为私募信贷构建AI"
+  displayTitle: "F2 融资 2400 万美元，为私人信贷构建人工智能"
   sourceLinks:
     - "https://f2.ai/blog/compounding-intelligence-for-the-next-era-of-private-markets"
 ---
 
-# F2 获2400万美元融资，为私募信贷构建AI
+# F2 融资 2400 万美元，为私人信贷构建人工智能
 
 ## 新闻事实
 

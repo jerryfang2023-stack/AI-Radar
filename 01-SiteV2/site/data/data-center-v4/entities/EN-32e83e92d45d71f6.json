@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T01:57:40.269Z",
-    "latestDataDate": "2026-07-17",
-    "currentDate": "2026-07-17",
-    "eventCount": 832,
-    "quarantinedEventCount": 60
+    "generatedAt": "2026-07-18T04:59:59.870Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 1250,
+    "quarantinedEventCount": 11
   },
   "entity": {
     "id": "EN-32e83e92d45d71f6",
@@ -21,26 +21,36 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-6808f7d1be84c23c",
       "EV-30d7f1c5dc8ea464",
-      "EV-8f0c63ed7bb153dc"
+      "EV-8f0c63ed7bb153dc",
+      "EV-06cf7bb28b462980",
+      "EV-889f518dcce85a8f"
     ],
     "viewpointIds": [],
-    "classificationRefs": [],
+    "classificationRefs": [
+      "TX-industry-financial_services"
+    ],
     "relatedEntityIds": [],
     "firstSeen": "2023-03-21",
     "lastSeen": "2026-07-15",
     "relationIds": [],
     "groupedEventIds": {
-      "fundingAcquisition": [],
+      "fundingAcquisition": [
+        "EV-889f518dcce85a8f"
+      ],
       "deployments": [
-        "EV-30d7f1c5dc8ea464"
+        "EV-30d7f1c5dc8ea464",
+        "EV-6808f7d1be84c23c"
       ],
       "partnerships": [],
       "productsServices": [
         "EV-8f0c63ed7bb153dc"
       ],
       "hardware": [],
-      "organizationPeople": [],
+      "organizationPeople": [
+        "EV-06cf7bb28b462980"
+      ],
       "other": []
     },
     "timeline": [
@@ -75,13 +85,171 @@
           "EN-32e83e92d45d71f6",
           "EN-c70eca6b0f88f44d"
         ]
+      },
+      {
+        "id": "EV-6808f7d1be84c23c",
+        "dataDate": "2026-07-01",
+        "date": "2026-07-01",
+        "eventType": "deployment",
+        "eventTypeLabel": "部署",
+        "eventGroup": "部署与案例",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "为客户体验实施人工智能",
+        "displayTags": [],
+        "entityIds": [
+          "EN-32e83e92d45d71f6"
+        ]
+      },
+      {
+        "id": "EV-06cf7bb28b462980",
+        "dataDate": "2026-06-15",
+        "date": "2026-06-15",
+        "eventType": "organization_restructuring",
+        "eventTypeLabel": "组织重组",
+        "eventGroup": "组织、政策与法律",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "AI裁员浪潮成为火药桶",
+        "displayTags": [],
+        "entityIds": [
+          "EN-32e83e92d45d71f6"
+        ]
+      },
+      {
+        "id": "EV-889f518dcce85a8f",
+        "dataDate": "2026-05-23",
+        "date": "2026-05-23",
+        "eventType": "financial_performance",
+        "eventTypeLabel": "财务表现",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "面向金融服务的AI销售智能体：通过合规外呼自动化实现2.4倍管道增长",
+        "displayTags": [
+          {
+            "dimensionId": "industry",
+            "id": "financial_services",
+            "dimensionName": "行业",
+            "name": "金融服务"
+          }
+        ],
+        "entityIds": [
+          "EN-32e83e92d45d71f6"
+        ]
       }
     ],
     "viewpoints": []
   },
   "relatedEntities": [],
   "relationships": [],
-  "taxonomyNodes": [],
-  "fde": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-industry-financial_services",
+      "name": "金融服务",
+      "nodeType": "industry",
+      "typeLabel": "行业",
+      "valueId": "financial_services",
+      "eventIds": [
+        "EV-f6a72cddbda748b3",
+        "EV-aa33ca051f3a7f78",
+        "EV-189e43cb9fea8e1a",
+        "EV-a42e51959c627554",
+        "EV-c0d19b8641a7a36c",
+        "EV-e4b3a19529576778",
+        "EV-a84ec4216d3ded6d",
+        "EV-778ae7684a4d782e",
+        "EV-9709ad47faf0ede2",
+        "EV-86247a326e79bb88",
+        "EV-d1e2a7c6d314612c",
+        "EV-33717672cb5e8004",
+        "EV-83b2e8f7fe679bc3",
+        "EV-2c87c8ea47cbd1b6",
+        "EV-97747aee0cafd9f3",
+        "EV-bad301e14b034fbd",
+        "EV-5caf7f83664b1a2c",
+        "EV-4b44f5eafecf4922",
+        "EV-f7aa6d43b75238fb",
+        "EV-889f518dcce85a8f"
+      ],
+      "entityIds": [
+        "EN-a5d2ae286d0d9e45",
+        "EN-96eebba49dbbf422",
+        "EN-1bd14cd1a58c5708",
+        "EN-7d3194f79e645c42",
+        "EN-11507a0e2f5e69d5",
+        "EN-b314f58f5f506fd2",
+        "EN-a972bc1b3220493e",
+        "EN-eaa1c24270a0d057",
+        "EN-d82ff987d73882b8",
+        "EN-ee04228c5c6d8b08",
+        "EN-7706c3c94d5f9b59",
+        "EN-25690754dd14bd1b",
+        "EN-214a50c40a4157a1",
+        "EN-43381465c2b7d64e",
+        "EN-c70eca6b0f88f44d",
+        "EN-5e757c7fc575c41e",
+        "EN-bc8a00f7f6fb535f",
+        "EN-4d748ebd71af03a7",
+        "EN-c3e4cc183d345262",
+        "EN-9b6ea48b511ffd60",
+        "EN-bbdefa2950f49882",
+        "EN-06b5472c16feae4c",
+        "EN-4e721fae5963494d",
+        "EN-b5251b35f15bedc4",
+        "EN-a4eee620f5a081bd",
+        "EN-18b4bbfd60f4137e",
+        "EN-6eedfb906b1652fb",
+        "EN-3ccbd9105a45d8fc",
+        "EN-32e83e92d45d71f6"
+      ],
+      "fdeIds": [
+        "FDE-e1b2683e8d017358",
+        "FDE-0ee0fe3baa3f1364",
+        "FDE-d0a39c8df546833a",
+        "FDE-560b710961006374",
+        "FDE-ae4c44cd0de9d48a"
+      ],
+      "hardwareIds": [],
+      "firstSeen": "2026-05-22",
+      "lastSeen": "2026-07-18"
+    }
+  ],
+  "fde": [
+    {
+      "id": "FDE-e13cb9813c58c47f",
+      "eventId": "EV-6808f7d1be84c23c",
+      "dataDate": "2026-07-01",
+      "date": "2026-07-01",
+      "title": "为客户体验实施人工智能",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "AI",
+      "vendor": "Info-Tech Research Group",
+      "industry": "未披露",
+      "useCase": "AI for Customer Experience | Info-Tech Research Group",
+      "reportedNeed": "Use AI to supercharge your customer experience outcomes and propel your brand forward",
+      "deliveryComponents": [],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_delivery_components",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://infotech.com/research/ss/implement-ai-for-customer-experience",
+      "entityIds": [
+        "EN-32e83e92d45d71f6"
+      ]
+    }
+  ],
   "hardware": []
 }

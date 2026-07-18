@@ -105,6 +105,28 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-4448739eddcdbd27",
+    "raw_id": "RAW-3dba2a027c147084",
+    "claim_type": "funding",
+    "subject": "General Intuition",
+    "predicate": "funding",
+    "object": "$320 million",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1,
+      "model_candidate_id": "MAC-e227790beb90c3af"
+    },
+    "source_span": {
+      "raw_id": "RAW-3dba2a027c147084",
+      "start": 1942,
+      "end": 2028
+    },
+    "source_quote": "On Thursday, General Intuition said it raised $320 million at a $2.3 billion valuation",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-6fbec0f40b689adb",
     "raw_id": "RAW-73a555daaf7ed6d8",
     "claim_type": "model_release",
@@ -186,6 +208,28 @@
     "source_quote": "At a meeting this week, CEO Sam Altman reportedly told staff that the government would be “approving access customer by customer” during a preview period. Altman reportedly added that if the limited release goes well, OpenAI hopes to follow with a general, broader release a “couple of weeks later.”",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-9848ae3fdaff5b74",
+    "raw_id": "RAW-a6adc0ead400b868",
+    "claim_type": "pricing_change",
+    "subject": "苹果",
+    "predicate": "pricing_change",
+    "object": "Mac、iPad 等系列产品价格",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-1831412d2e1b954d"
+    },
+    "source_span": {
+      "raw_id": "RAW-a6adc0ead400b868",
+      "start": 50,
+      "end": 77
+    },
+    "source_quote": "苹果提高 Mac、iPad 等产品价格，以应对内存短缺",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -861,6 +905,50 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-8315ef4cae32cc6d",
+    "raw_id": "RAW-b74640c21601cf92",
+    "claim_type": "product_release",
+    "subject": "Microsoft",
+    "predicate": "product_release",
+    "object": "Microsoft Marketplace",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-746e8a1ac0d0d540"
+    },
+    "source_span": {
+      "raw_id": "RAW-b74640c21601cf92",
+      "start": 625,
+      "end": 768
+    },
+    "source_quote": "Microsoft has launched Microsoft Marketplace , a unified storefront website for AI apps, agents, and enterprise solutions to boost AI adoption.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-92554f7d75850e03",
+    "raw_id": "RAW-aa34261c9783a270",
+    "claim_type": "partnership",
+    "subject": "WPP Enterprise Solutions",
+    "predicate": "partnership",
+    "object": "Amazon Web Services",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-24fb0753cffa8632"
+    },
+    "source_span": {
+      "raw_id": "RAW-aa34261c9783a270",
+      "start": 526,
+      "end": 809
+    },
+    "source_quote": "WPP Enterprise Solutions, the global business transformation unit of WPP, the London-headquartered advertising and marketing company listed on the NYSE as WPP, has signed a multi-year Strategic Collaboration Agreement with Amazon Web Services, the cloud computing division of Amazon.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-cc54439600e016cd",
     "raw_id": "RAW-81d2cde13496f342",
     "claim_type": "product_release",
@@ -1110,6 +1198,72 @@
     "source_quote": "Added automatic memory-pressure reaping for idle background shell commands (disable with CLAUDE_CODE_DISABLE_BG_SHELL_PRESSURE_REAP=1 )",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-c7f6ee0108809633",
+    "raw_id": "RAW-f4a9a4a99237c9ad",
+    "claim_type": "model_release",
+    "subject": "Google",
+    "predicate": "model_release",
+    "object": "Gemini 3.5 Flash with integrated Computer Use capability",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 1,
+      "model_candidate_id": "MAC-23da189e15de2d0a"
+    },
+    "source_span": {
+      "raw_id": "RAW-f4a9a4a99237c9ad",
+      "start": 216,
+      "end": 362
+    },
+    "source_quote": "Google has integrated \"Computer Use\" directly into Gemini 3.5 Flash, letting the model operate computers, browsers, and mobile devices on its own.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-aff8a7ec4122856f",
+    "raw_id": "RAW-6f276a1a47a14056",
+    "claim_type": "funding",
+    "subject": "Superliving",
+    "predicate": "funding",
+    "object": "$7 million",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-07e3d8488e991cc6"
+    },
+    "source_span": {
+      "raw_id": "RAW-6f276a1a47a14056",
+      "start": 72,
+      "end": 139
+    },
+    "source_quote": "Healthcare startup Superliving raises $7 million led by Lightspeed.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a038880103834086",
+    "raw_id": "RAW-6f276a1a47a14056",
+    "claim_type": "funding",
+    "subject": "Hang Ten Systems",
+    "predicate": "funding",
+    "object": "$32 million in seed funding",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-07e3d8488e991cc6"
+    },
+    "source_span": {
+      "raw_id": "RAW-6f276a1a47a14056",
+      "start": 718,
+      "end": 881
+    },
+    "source_quote": "Former Infosys CEO Vishal Sikka has launched Hang Ten Systems, an AI startup focused on enterprise solutions, securing $32 million in seed funding led by Mayfield.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   }
 ]

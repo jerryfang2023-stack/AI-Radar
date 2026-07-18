@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-047
 title: "Anthropic 与 TeraWulf 签署 20 年数据中心租赁长约，总价值 190 亿美元"
 title_zh: "Anthropic 与 TeraWulf 签署 20 年数据中心租赁长约，总价值 190 亿美元"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/973/347.htm"
 canonical_url: "https://ithome.com/0/973/347.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-07T02:46:59.769Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Anthropic 与 TeraWulf 签署 20 年数据中心租赁长约，总价值 190 亿美元

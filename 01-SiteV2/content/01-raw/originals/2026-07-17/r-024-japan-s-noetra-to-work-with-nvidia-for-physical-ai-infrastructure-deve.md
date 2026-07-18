@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-024
 title: "Japan's Noetra to work with Nvidia for physical AI infrastructure development | NHK WORLD-JAPAN News"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "日本Noetra将与英伟达合作开发物理AI基础设施"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www3.nhk.or.jp/nhkworld/en/news/20260717_01/"
 canonical_url: "https://www3.nhk.or.jp/nhkworld/en/news/20260717_01"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-17T04:40:16.938Z
 theme: ai-hardware-scenario-service-signal
 keyword_group: ai-hardware-scenario-service-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Japan's Noetra to work with Nvidia for physical AI infrastructure development | NHK WORLD-JAPAN News

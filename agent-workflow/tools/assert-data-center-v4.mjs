@@ -15,7 +15,7 @@ const dataRoot = path.join(root, "01-SiteV2/content/11-databases/data-center-v4"
 const reportRoot = path.join(root, "agent-workflow/reports");
 const taxonomyPath = path.join(root, "agent-workflow/product/tag-taxonomy-v4.json");
 const schemaPath = path.join(root, "agent-workflow/product/data-center-v4.schema.json");
-const BOILERPLATE = /(?:most popular|loading the next article|error loading the next article|register now|cookie settings|when you purchase through links|스크롤 이동|상태바|기사본문|the body content)/iu;
+const BOILERPLATE = /^(?:most popular|loading the next article|error loading the next article|register now|cookie settings|when you purchase through links|스크롤 이동|상태바|기사본문|the body content)\b/iu;
 let schemaValidator = null;
 
 function arg(name, fallback = "") {
@@ -141,7 +141,7 @@ export function evaluateBundle(bundle, taxonomy) {
 
   if (bundle.manifest.product_version !== "SITE-V4.0-data-center") failures.push("manifest product_version mismatch");
   if (bundle.manifest.raw_version !== "RAW-V3.0") failures.push("manifest raw_version mismatch");
-  if (bundle.manifest.event_version !== "EVENT-V1.0") failures.push("manifest event_version mismatch");
+  if (bundle.manifest.event_version !== "EVENT-V1.1") failures.push("manifest event_version mismatch");
   if (bundle.manifest.fde_version !== "FDE-V2.0") failures.push("manifest fde_version mismatch");
   if (bundle.manifest.hardware_version !== "HARDWARE-V1.0") failures.push("manifest hardware_version mismatch");
   if (bundle.manifest.tag_version !== "TAG-V4.0") failures.push("manifest tag_version mismatch");

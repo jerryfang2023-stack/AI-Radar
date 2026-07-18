@@ -72,6 +72,10 @@ key_excerpts: [{"type":"company_action","text":"Antler’s founder on its vertic
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "Antler 创始人谈东南亚垂直 AI 布局"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Antler's founder on its vertical AI bet in Southeast Asia - TechCrunch

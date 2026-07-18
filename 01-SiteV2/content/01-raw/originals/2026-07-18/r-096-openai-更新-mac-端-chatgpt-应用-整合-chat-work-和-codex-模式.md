@@ -3,9 +3,9 @@ schema_version: raw-evidence-v2
 raw_id: R-096
 title: "OpenAI 更新 Mac 端 ChatGPT 应用，整合 Chat、Work 和 Codex 模式"
 title_zh: "OpenAI 更新 Mac 端 ChatGPT 应用，整合 Chat、Work 和 Codex 模式"
-title_translation_status: not_required
-title_translation_method: source_title
-title_translation_model: not_applicable
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 original_url: "https://www.ithome.com/0/978/358.htm"
 canonical_url: "https://ithome.com/0/978/358.htm"
 source_name: "IT之家（RSS）"

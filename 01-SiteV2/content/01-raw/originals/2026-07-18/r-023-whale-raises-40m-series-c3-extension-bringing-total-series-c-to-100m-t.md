@@ -3,9 +3,9 @@ schema_version: raw-evidence-v2
 raw_id: R-023
 title: "Whale Raises $40M Series C3 Extension, Bringing Total Series C to $100M, to Scale Global Enterprise AI Operations"
 title_zh: "Whale 完成 4000 万美元 C3 轮扩展融资，C 轮总融资额达 1 亿美元，用于扩大全球企业 AI 运营规模"
-title_translation_status: translated
-title_translation_method: deepseek_title_translation
-title_translation_model: deepseek-v4-flash
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 original_url: "https://www.prnewswire.com/news-releases/whale-raises-40m-series-c3-extension-bringing-total-series-c-to-100m-to-scale-global-enterprise-ai-operations-302827069.html"
 canonical_url: "https://prnewswire.com/news-releases/whale-raises-40m-series-c3-extension-bringing-total-series-c-to-100m-to-scale-global-enterprise-ai-operations-302827069.html"
 source_name: "keyword search / Anysearch"

@@ -72,7 +72,7 @@ key_excerpts: [{"type":"supporting_context","text":"Learn how enterprises can de
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
-title_zh: "治理型AI代理：如何自信部署与规模化"
+title_zh: "受控AI智能体：如何自信部署与规模化"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-019
 title: "Meta新款AI芯片将于9月启动生产"
 title_zh: "Meta新款AI芯片将于9月启动生产"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://techcrunch.com/2026/07/09/metas-new-ai-chips-will-begin-production-in-september"
 canonical_url: "https://techcrunch.com/2026/07/09/metas-new-ai-chips-will-begin-production-in-september"
 source_name: "TechCrunch：AI（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-10T01:59:44.165Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Meta新款AI芯片将于9月启动生产

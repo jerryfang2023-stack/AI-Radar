@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-18T04:59:59.870Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 1250,
+    "quarantinedEventCount": 11
+  },
+  "entity": {
+    "id": "EN-3704461f86f6b9a3",
+    "name": "Microsoft AI",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-04c2ffd7f6b10126"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-06-08",
+    "lastSeen": "2026-06-09",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-04c2ffd7f6b10126"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-04c2ffd7f6b10126",
+        "dataDate": "2026-06-09",
+        "date": "2026-06-08",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Microsoft AI 推出 MAI-Transcribe-1.5 语音转文本模型",
+        "displayTags": [],
+        "entityIds": [
+          "EN-3704461f86f6b9a3",
+          "EN-9fbf261b62c1d7c0",
+          "EN-72d74884ff03d39c"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

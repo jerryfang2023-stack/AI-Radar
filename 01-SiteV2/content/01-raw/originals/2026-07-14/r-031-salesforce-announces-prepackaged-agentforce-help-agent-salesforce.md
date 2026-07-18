@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-031
 title: "Salesforce Announces Prepackaged Agentforce Help Agent - Salesforce"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "Salesforce 发布预封装 Agentforce 帮助智能体"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.salesforce.com/news/stories/agentforce-help-agent-announcement/"
 canonical_url: "https://salesforce.com/news/stories/agentforce-help-agent-announcement"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-14T01:56:51.481Z
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Salesforce Announces Prepackaged Agentforce Help Agent - Salesforce

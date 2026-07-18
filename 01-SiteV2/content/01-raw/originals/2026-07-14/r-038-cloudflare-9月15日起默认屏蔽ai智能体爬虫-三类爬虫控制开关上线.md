@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-038
 title: "Cloudflare 9月15日起默认屏蔽AI智能体爬虫，三类爬虫控制开关上线"
 title_zh: "Cloudflare 9月15日起默认屏蔽AI智能体爬虫，三类爬虫控制开关上线"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.artificialintelligence-news.com/news/ai-agent-crawlers-cloudflare-rules"
 canonical_url: "https://artificialintelligence-news.com/news/ai-agent-crawlers-cloudflare-rules"
 source_name: "Artificial Intelligence News（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-14T01:56:51.532Z
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Cloudflare 9月15日起默认屏蔽AI智能体爬虫，三类爬虫控制开关上线

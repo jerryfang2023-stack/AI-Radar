@@ -2,7 +2,7 @@
 id: SIG-20260523-A03
 type: signal_card
 signal_type: product_service
-title: "多人在线AI初创公司Dust获4000万美元融资，助力企业突破孤立AI助手局限"
+title: "多玩家AI初创公司Dust融资4000万美元，助力企业超越孤立AI智能体"
 date: 2026-05-23
 status: published
 asset_level: frontstage
@@ -58,7 +58,7 @@ signal_owner: "Dust"
 watch_reason: "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
 
 frontend:
-  displayTitle: "多人在线AI初创公司Dust获4000万美元融资，助力企业突破孤立AI助手局限"
+  displayTitle: "多玩家AI初创公司Dust融资4000万美元，助力企业超越孤立AI智能体"
   eventLine: "Dust 发布新的 AI 能力，面向企业智能体协作流程。"
   whyWatch: "这条变化值得看，是因为它把竞争点放到了企业智能体协作流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"
   businessMeaning: "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
@@ -68,7 +68,7 @@ frontend:
     - "https://siliconangle.com/2026/05/18/multiplayer-ai-startup-dust-swipes-40m-funding-help-enterprises-move-beyond-isolated-ai-assistants/"
 ---
 
-# 多人在线AI初创公司Dust获4000万美元融资，助力企业突破孤立AI助手局限
+# 多玩家AI初创公司Dust融资4000万美元，助力企业超越孤立AI智能体
 
 ## 信号底稿
 

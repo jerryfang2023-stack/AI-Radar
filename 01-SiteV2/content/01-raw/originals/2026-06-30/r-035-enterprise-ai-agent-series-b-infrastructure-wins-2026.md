@@ -72,7 +72,7 @@ key_excerpts: [{"type":"funding","text":"Wonderful, the Amsterdam-based enterpri
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
-title_zh: "企业AI代理B轮融资：基础设施赢得2026年"
+title_zh: "企业AI智能体B轮融资：基础设施赢得2026年"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

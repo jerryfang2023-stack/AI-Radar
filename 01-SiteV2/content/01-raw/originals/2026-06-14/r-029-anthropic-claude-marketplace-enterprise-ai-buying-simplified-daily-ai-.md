@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"Anthropic launched the Claude Marke
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Anthropic Claude 市场：企业 AI 采购简化 | 每日 AI 简报"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Anthropic Claude Marketplace: Enterprise AI Buying Simplified | Daily AI Briefing | David & Goliath

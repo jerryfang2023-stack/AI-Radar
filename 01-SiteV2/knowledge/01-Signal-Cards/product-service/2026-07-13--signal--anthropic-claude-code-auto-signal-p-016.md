@@ -2,7 +2,7 @@
 id: SIG-20260713-A21
 type: signal_card
 signal_type: product_service
-title: "Claude Code 新增内置浏览器，可直接读取、点击并操作外部网页"
+title: "Claude Code 现内置浏览器，可让 AI 智能体在外部网站上阅读、点击和输入"
 date: 2026-07-13
 status: published
 source_title: "Claude Code now has a built-in browser that lets the AI read, click, and type on external websites"
@@ -58,12 +58,12 @@ opportunity_signals:
 signal_owner: "Anthropic / Claude Code"
 
 frontend:
-  displayTitle: "Claude Code 新增内置浏览器，可直接读取、点击并操作外部网页"
+  displayTitle: "Claude Code 现内置浏览器，可让 AI 智能体在外部网站上阅读、点击和输入"
   sourceLinks:
     - "https://the-decoder.com/claude-code-now-has-a-built-in-browser-that-lets-the-ai-read-click-and-type-on-external-websites"
 ---
 
-# Claude Code 新增内置浏览器，可直接读取、点击并操作外部网页
+# Claude Code 现内置浏览器，可让 AI 智能体在外部网站上阅读、点击和输入
 
 ## 新闻事实
 

@@ -2,7 +2,7 @@
 id: SIG-20260611-A06
 type: signal_card
 signal_type: case
-title: "DigitalOcean推出推理引擎，新增生产级AI功能，包括用于高效扩展代理工作负载的推理路由器"
+title: "DigitalOcean 推出推理引擎，新增生产级 AI 功能，包括用于高效扩展 AI 智能体工作负载的推理路由器"
 date: 2026-06-11
 status: published
 source_title: "DigitalOcean Launches Inference Engine with New Capabilities for Production AI, Including Inference Router for Efficient Scaling of Agentic Workloads"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Engine"
 
 frontend:
-  displayTitle: "DigitalOcean推出推理引擎，新增生产级AI功能，包括用于高效扩展代理工作负载的推理路由器"
+  displayTitle: "DigitalOcean 推出推理引擎，新增生产级 AI 功能，包括用于高效扩展 AI 智能体工作负载的推理路由器"
   sourceLinks:
     - "https://www.businesswire.com/news/home/20260428279648/en/DigitalOcean-Launches-Inference-Engine-with-New-Capabilities-for-Production-AI-Including-Inference-Router-for-Efficient-Scaling-of-Agentic-Workloads"
 ---
 
-# DigitalOcean推出推理引擎，新增生产级AI功能，包括用于高效扩展代理工作负载的推理路由器
+# DigitalOcean 推出推理引擎，新增生产级 AI 功能，包括用于高效扩展 AI 智能体工作负载的推理路由器
 
 ## 新闻事实
 

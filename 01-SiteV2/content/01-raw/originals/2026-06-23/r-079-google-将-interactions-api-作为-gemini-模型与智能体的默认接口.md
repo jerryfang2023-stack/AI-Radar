@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"Google DeepMind 宣布 Interactions API 
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Google 将 Interactions API 作为 Gemini 模型与智能体的默认接口"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Google 将 Interactions API 作为 Gemini 模型与智能体的默认接口

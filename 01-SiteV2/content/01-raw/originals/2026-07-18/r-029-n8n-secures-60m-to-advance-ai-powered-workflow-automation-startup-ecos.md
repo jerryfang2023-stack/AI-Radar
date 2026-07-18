@@ -2,10 +2,10 @@
 schema_version: raw-evidence-v2
 raw_id: R-029
 title: "n8n Secures $60M to Advance AI-Powered Workflow Automation - Startup Ecosystem Canada"
-title_zh: "n8n 获 6000 万美元融资，推动 AI 驱动工作流自动化发展"
-title_translation_status: translated
-title_translation_method: deepseek_title_translation
-title_translation_model: deepseek-v4-flash
+title_zh: "n8n 获 6000 万美元融资，推动 AI 驱动工作流自动化"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 original_url: "https://www.startupecosystem.ca/news/n8n-secures-60m-to-advance-ai-powered-workflow-automation"
 canonical_url: "https://startupecosystem.ca/news/n8n-secures-60m-to-advance-ai-powered-workflow-automation"
 source_name: "keyword search / Anysearch"

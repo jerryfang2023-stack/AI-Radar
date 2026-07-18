@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-096
 title: "米哈游 AI 陪伴互动软件《BSide： Olivia Lin》在 Steam 开启抢先体验"
 title_zh: "米哈游 AI 陪伴互动软件《BSide： Olivia Lin》在 Steam 开启抢先体验"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/976/033.htm"
 canonical_url: "https://ithome.com/0/976/033.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-13T10:23:57.247Z
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 米哈游 AI 陪伴互动软件《BSide： Olivia Lin》在 Steam 开启抢先体验

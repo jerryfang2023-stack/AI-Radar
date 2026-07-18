@@ -1,5 +1,38 @@
 [
   {
+    "event_type": "acquisition",
+    "event_status": "completed",
+    "event_time": "2026-06-19T00:51:11.000Z",
+    "disclosed_at": "2026-06-19T00:51:11.000Z",
+    "entities": [],
+    "action": "收购",
+    "object": "AI 初创公司 DeductiveAI",
+    "metrics": [
+      "$85 million"
+    ],
+    "locations": [],
+    "claim_refs": [
+      "CL-0e51263edb8c225f"
+    ],
+    "source_refs": [
+      "SA-529ae9a03dabfa51"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "entities"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-529ae9a03dabfa51",
+        "disclosed_at": "2026-06-19T00:51:11.000Z",
+        "status": "completed"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-b563d5cf0f12119e",
+    "display_title_zh": "Elastic 同意以最高8500万美元收购 AI 初创公司 DeductiveAI"
+  },
+  {
     "event_type": "funding",
     "event_status": "in_progress",
     "event_time": "2026-06-18T15:20:37.000Z",
@@ -254,8 +287,7 @@
     ],
     "conflicts": [],
     "missing_fields": [
-      "event_time",
-      "display_title_zh"
+      "event_time"
     ],
     "update_history": [
       {
@@ -266,7 +298,7 @@
     ],
     "publication_status": "verified",
     "event_id": "EV-2083b9eda52a3f76",
-    "display_title_zh": ""
+    "display_title_zh": "Lio 从 Andreessen Horowitz 等机构融资 3000 万美元，用于自动化企业采购"
   },
   {
     "event_type": "funding",
@@ -389,6 +421,39 @@
     "display_title_zh": "从试点到生产：企业智能体部署手册 - AI 学习指南"
   },
   {
+    "event_type": "policy_regulation",
+    "event_status": "announced",
+    "event_time": "",
+    "disclosed_at": "2026-06-19T07:43:57.685Z",
+    "entities": [
+      "EN-bbb86ffda9e6043e"
+    ],
+    "action": "policy_regulation",
+    "object": "high-risk AI system obligations",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-7e311942c33c6abe"
+    ],
+    "source_refs": [
+      "SA-70d5d38293da9886"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "event_time"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-70d5d38293da9886",
+        "disclosed_at": "2026-06-19T07:43:57.685Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-1504f2affc981b92",
+    "display_title_zh": "客户体验中的AI智能体治理：ROI与74%回滚率之对比"
+  },
+  {
     "event_type": "funding",
     "event_status": "completed",
     "event_time": "",
@@ -427,7 +492,7 @@
     ],
     "publication_status": "verified",
     "event_id": "EV-39717cdbada984d7",
-    "display_title_zh": "AI代理授权初创公司Arcade获得6000万美元投资 - SiliconANGLE"
+    "display_title_zh": "AI 智能体授权初创公司 Arcade 获 6000 万美元投资"
   },
   {
     "event_type": "funding",
@@ -466,7 +531,7 @@
     ],
     "publication_status": "verified",
     "event_id": "EV-c85011ca6a0389bf",
-    "display_title_zh": "总部位于巴塞罗那的NeuralTrust融资1720万欧元，用于保障和治理企业AI代理"
+    "display_title_zh": "总部位于巴塞罗那的 NeuralTrust 融资 1720 万欧元，用于保障和治理企业 AI 智能体"
   },
   {
     "event_type": "product_release",
@@ -501,6 +566,70 @@
     "publication_status": "verified",
     "event_id": "EV-6fde62e2a430665b",
     "display_title_zh": "《粉雄救兵》Karamo Brown 推出健康应用 Kē，含 AI 数字克隆\"AI Karamo\""
+  },
+  {
+    "event_type": "organization_restructuring",
+    "event_status": "announced",
+    "event_time": "2026-06-18T20:30:00.000Z",
+    "disclosed_at": "2026-06-18T20:30:00.000Z",
+    "entities": [
+      "EN-1c27324f013705cb"
+    ],
+    "action": "organization_restructuring",
+    "object": "Dotmo",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-59c987194cdc9d5b"
+    ],
+    "source_refs": [
+      "SA-49c3f72ece514693"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-49c3f72ece514693",
+        "disclosed_at": "2026-06-18T20:30:00.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-ba98573b0dadde75",
+    "display_title_zh": "Snap 剥离 AI 视频团队成立新公司 Dotmo"
+  },
+  {
+    "event_type": "product_release",
+    "event_status": "announced",
+    "event_time": "2026-06-18T18:54:47.698Z",
+    "disclosed_at": "2026-06-18T18:54:47.698Z",
+    "entities": [
+      "EN-c70eca6b0f88f44d",
+      "EN-a625159d18da5718"
+    ],
+    "action": "product_release",
+    "object": "artifacts feature",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-b8e9b568a2d93436",
+      "CL-996298b4103a9c56"
+    ],
+    "source_refs": [
+      "SA-1904831696bea5e4"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-1904831696bea5e4",
+        "disclosed_at": "2026-06-18T18:54:47.698Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-002074ab1a44e4bc",
+    "display_title_zh": "Claude Code 现已支持 artifacts"
   },
   {
     "event_type": "product_release",
@@ -611,6 +740,40 @@
     "display_title_zh": "Meta AI重组核心项目高管道尔顿·史密斯被曝离职，内部士气\"史上最低\""
   },
   {
+    "event_type": "capital_investment",
+    "event_status": "announced",
+    "event_time": "2026-06-18T08:41:12.000Z",
+    "disclosed_at": "2026-06-18T08:41:12.000Z",
+    "entities": [
+      "EN-7d3194f79e645c42"
+    ],
+    "action": "capital_investment",
+    "object": "Rust Foundation",
+    "metrics": [
+      "60 万",
+      "406.5 万"
+    ],
+    "locations": [],
+    "claim_refs": [
+      "CL-4b12a7d6a6c5b755"
+    ],
+    "source_refs": [
+      "SA-5ef38adbdfe49de9"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-5ef38adbdfe49de9",
+        "disclosed_at": "2026-06-18T08:41:12.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-6defe295e6fbe61c",
+    "display_title_zh": "OpenAI 成为 Rust 基金会白金会员，合计赞助 60 万美元"
+  },
+  {
     "event_type": "product_release",
     "event_status": "announced",
     "event_time": "",
@@ -628,8 +791,8 @@
     "claim_refs": [
       "CL-5fa3e168c9d3793d",
       "CL-8a1feaca0ce05720",
-      "CL-06d4c798834a8ed3",
-      "CL-7cc2f9883e782e4a"
+      "CL-1386839a2a1aa5e3",
+      "CL-06d4c798834a8ed3"
     ],
     "source_refs": [
       "SA-e6cecafbee25a81c"
@@ -647,7 +810,7 @@
     ],
     "publication_status": "verified",
     "event_id": "EV-adc7c7865f4e9e64",
-    "display_title_zh": "终极开源AI代理目录 - VC角"
+    "display_title_zh": "终极开源AI智能体目录 - The VC Corner"
   },
   {
     "event_type": "funding",
@@ -683,6 +846,6 @@
     ],
     "publication_status": "partial",
     "event_id": "EV-f1a605a25af30dc5",
-    "display_title_zh": "AI安全初创公司Archestra.AI完成1000万美元种子轮融资"
+    "display_title_zh": "AI 安全初创公司 Archestra.AI 完成 1000 万美元种子轮融资"
   }
 ]

@@ -2,7 +2,7 @@
 id: SIG-20260629-A03
 type: signal_card
 signal_type: funding
-title: "Sail Research 筹集8000万美元，为AI代理构建最高效基础设施"
+title: "Sail Research 获 8000 万美元融资，打造 AI 智能体最大效率基础设施"
 date: 2026-06-29
 status: published
 source_title: "Sail Research Raises $80 Million to Build Max-Efficiency Infrastructure for AI Agents"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Sail Research"
 
 frontend:
-  displayTitle: "Sail Research 筹集8000万美元，为AI代理构建最高效基础设施"
+  displayTitle: "Sail Research 获 8000 万美元融资，打造 AI 智能体最大效率基础设施"
   sourceLinks:
     - "https://www.prnewswire.com/news-releases/sail-research-raises-80-million-to-build-max-efficiency-infrastructure-for-ai-agents-302810497.html"
 ---
 
-# Sail Research 筹集8000万美元，为AI代理构建最高效基础设施
+# Sail Research 获 8000 万美元融资，打造 AI 智能体最大效率基础设施
 
 ## 新闻事实
 

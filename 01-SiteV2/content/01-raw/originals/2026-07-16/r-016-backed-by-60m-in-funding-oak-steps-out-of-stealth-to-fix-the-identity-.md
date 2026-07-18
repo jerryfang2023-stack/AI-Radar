@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-016
 title: "Backed by $60M in funding, Oak steps out of stealth to fix the identity mess that AI agents are making worse | TechCrunch"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "获得6000万美元融资，Oak走出隐身模式，欲解决AI智能体加剧的身份混乱问题"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://techcrunch.com/2026/07/15/backed-by-60m-in-funding-oak-steps-out-of-stealth-to-fix-the-identity-mess-that-ai-agents-are-making-worse/"
 canonical_url: "https://techcrunch.com/2026/07/15/backed-by-60m-in-funding-oak-steps-out-of-stealth-to-fix-the-identity-mess-that-ai-agents-are-making-worse"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-16T02:39:33.489Z
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Backed by $60M in funding, Oak steps out of stealth to fix the identity mess that AI agents are making worse | TechCrunch

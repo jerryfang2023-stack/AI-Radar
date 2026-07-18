@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-017
 title: "Samsung SDS Brings FuriosaAI’s NPU Into Commercial Cloud Services < AI·XR < K-Tech < K-World News < 기사본문 - KMJ"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "三星SDS将FuriosaAI的NPU引入商业云服务"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.kmjournal.net/news/articleView.html?idxno=12765"
 canonical_url: "https://kmjournal.net/news/articleView.html?idxno=12765"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-16T02:39:33.499Z
 theme: ai-hardware-scenario-service-signal
 keyword_group: ai-hardware-scenario-service-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Samsung SDS Brings FuriosaAI’s NPU Into Commercial Cloud Services < AI·XR < K-Tech < K-World News < 기사본문 - KMJ

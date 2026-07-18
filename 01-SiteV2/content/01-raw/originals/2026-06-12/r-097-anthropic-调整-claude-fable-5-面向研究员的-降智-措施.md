@@ -72,6 +72,10 @@ key_excerpts: [{"type":"supporting_context","text":"Anthropic 发布 Claude Fabl
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Anthropic 调整 Claude Fable 5 面向研究员的\"降智\"措施"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Anthropic 调整 Claude Fable 5 面向研究员的"降智"措施

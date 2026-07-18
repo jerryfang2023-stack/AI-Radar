@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-094
 title: "OpenAI CEO Altman is now &quot;pretty sure&quot; AI is net job-creating, which is quite the pivot from predicting mass layoffs"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "OpenAI CEO Altman 如今“相当确信”AI 能净创造就业，这与之前预测大规模裁员的态度截然不同"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://the-decoder.com/openai-ceo-altman-is-now-pretty-sure-ai-is-net-job-creating-which-is-quite-the-pivot-from-predicting-mass-layoffs/"
 canonical_url: "https://the-decoder.com/openai-ceo-altman-is-now-pretty-sure-ai-is-net-job-creating-which-is-quite-the-pivot-from-predicting-mass-layoffs"
 source_name: "The Decoder AI News"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-13T10:23:57.237Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # OpenAI CEO Altman is now &quot;pretty sure&quot; AI is net job-creating, which is quite the pivot from predicting mass layoffs

@@ -72,7 +72,7 @@ key_excerpts: [{"type":"funding","text":"q's $ -Seed Lands on the AI Agent for t
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
-title_zh: "Startuply.vc：Monq 获300万美元Pre-Seed轮融资，打造面向采购官的AI代理"
+title_zh: "Startuply.vc：Monq 获 300 万美元预种子轮融资，打造面向采购官的 AI 智能体"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

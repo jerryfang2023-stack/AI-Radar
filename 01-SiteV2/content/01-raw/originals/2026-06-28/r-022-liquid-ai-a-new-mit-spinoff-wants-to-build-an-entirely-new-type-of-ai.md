@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Liquid AI, a new MIT spinoff, has raise
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "MIT 衍生公司 Liquid AI 希望构建一种全新类型的 AI"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Liquid AI, a new MIT spinoff, wants to build an entirely new type of AI

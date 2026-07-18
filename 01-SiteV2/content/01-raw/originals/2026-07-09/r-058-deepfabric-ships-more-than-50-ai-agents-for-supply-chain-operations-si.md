@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-058
 title: "DeepFabric ships more than 50 AI agents for supply chain operations - SiliconANGLE"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "DeepFabric 为供应链运营交付超过 50 个 AI 智能体"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://siliconangle.com/2026/07/08/deepfabric-ships-50-ai-agents-supply-chain-operations/"
 canonical_url: "https://siliconangle.com/2026/07/08/deepfabric-ships-50-ai-agents-supply-chain-operations"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-09T03:05:45.131Z
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # DeepFabric ships more than 50 AI agents for supply chain operations - SiliconANGLE

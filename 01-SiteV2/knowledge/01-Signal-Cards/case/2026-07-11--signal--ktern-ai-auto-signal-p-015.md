@@ -2,7 +2,7 @@
 id: SIG-20260711-A04
 type: signal_card
 signal_type: case
-title: "KTern.AI 如何在 Amazon Bedrock AgentCore 上为 SAP 构建代理型 AI | 人工智能"
+title: "KTern.AI 如何在 Amazon Bedrock AgentCore 上为 SAP 构建代理型 AI"
 date: 2026-07-11
 status: published
 source_title: "How KTern.AI built agentic AI for SAP on Amazon Bedrock AgentCore | Artificial Intelligence"
@@ -57,12 +57,12 @@ opportunity_signals:
 signal_owner: "KTern.AI"
 
 frontend:
-  displayTitle: "KTern.AI 如何在 Amazon Bedrock AgentCore 上为 SAP 构建代理型 AI | 人工智能"
+  displayTitle: "KTern.AI 如何在 Amazon Bedrock AgentCore 上为 SAP 构建代理型 AI"
   sourceLinks:
     - "https://aws.amazon.com/blogs/machine-learning/how-ktern-ai-built-agentic-ai-for-sap-on-amazon-bedrock-agentcore/"
 ---
 
-# KTern.AI 如何在 Amazon Bedrock AgentCore 上为 SAP 构建代理型 AI | 人工智能
+# KTern.AI 如何在 Amazon Bedrock AgentCore 上为 SAP 构建代理型 AI
 
 ## 新闻事实
 

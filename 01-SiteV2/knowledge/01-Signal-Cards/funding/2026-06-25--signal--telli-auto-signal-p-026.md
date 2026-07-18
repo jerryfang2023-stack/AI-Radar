@@ -2,7 +2,7 @@
 id: SIG-20260625-A01
 type: signal_card
 signal_type: funding
-title: "AI语音代理初创公司Telli获360万美元预种子轮融资 - 加拿大创业生态系统"
+title: "AI 语音智能体初创公司 Telli 获 360 万美元预种子轮融资"
 date: 2026-06-25
 status: published
 source_title: "AI Voice Agent Startup Telli Secures $3.6M in Pre-Seed Funding - Startup Ecosystem Canada"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Telli"
 
 frontend:
-  displayTitle: "AI语音代理初创公司Telli获360万美元预种子轮融资 - 加拿大创业生态系统"
+  displayTitle: "AI 语音智能体初创公司 Telli 获 360 万美元预种子轮融资"
   sourceLinks:
     - "https://www.startupecosystem.ca/news/ai-voice-agent-startup-telli-secures-3-6m-in-pre-seed-funding"
 ---
 
-# AI语音代理初创公司Telli获360万美元预种子轮融资 - 加拿大创业生态系统
+# AI 语音智能体初创公司 Telli 获 360 万美元预种子轮融资
 
 ## 新闻事实
 

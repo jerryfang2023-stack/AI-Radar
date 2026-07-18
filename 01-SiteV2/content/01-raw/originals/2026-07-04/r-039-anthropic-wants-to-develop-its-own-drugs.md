@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-039
 title: "Anthropic wants to develop its own drugs"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "Anthropic 计划自主开发药物"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.theverge.com/ai-artificial-intelligence/961311/anthropic-claude-science-ai-drug-development"
 canonical_url: "https://theverge.com/ai-artificial-intelligence/961311/anthropic-claude-science-ai-drug-development"
 source_name: "The Verge AI"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-04T04:50:50.281Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Anthropic wants to develop its own drugs

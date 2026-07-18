@@ -2,7 +2,7 @@
 schema_version: raw-evidence-v2
 raw_id: R-049
 title: "Launch YC: Castari - Vercel for AI Agents | Y Combinator"
-title_zh: "Launch YC: Castari - AI代理的Vercel | Y Combinator"
+title_zh: "Launch YC: Castari - AI 智能体的 Vercel"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 original_url: "https://www.ycombinator.com/launches/OrV-castari-vercel-for-ai-agents"

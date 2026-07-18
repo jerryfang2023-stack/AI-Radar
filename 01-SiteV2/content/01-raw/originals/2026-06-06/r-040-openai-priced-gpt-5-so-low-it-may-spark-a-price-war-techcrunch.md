@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"OpenAI astounded the tech indust
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "OpenAI 将 GPT-5 定价如此之低，可能引发价格战"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # OpenAI priced GPT-5 so low, it may spark a price war - TechCrunch

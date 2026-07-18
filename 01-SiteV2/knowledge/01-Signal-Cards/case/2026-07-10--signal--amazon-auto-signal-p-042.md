@@ -2,7 +2,7 @@
 id: SIG-20260710-A13
 type: signal_card
 signal_type: case
-title: "Capita选择Amazon Connect客户语音代理，以更好服务160万英国居民 | AWS联络中心"
+title: "Capita选择Amazon Connect客户语音代理，以更好服务160万英国居民"
 date: 2026-07-10
 status: published
 source_title: "Capita chooses Amazon Connect Customer voice agents to better serve 1.6 million UK residents | AWS Contact Center"
@@ -58,12 +58,12 @@ opportunity_signals:
 signal_owner: "Amazon"
 
 frontend:
-  displayTitle: "Capita选择Amazon Connect客户语音代理，以更好服务160万英国居民 | AWS联络中心"
+  displayTitle: "Capita选择Amazon Connect客户语音代理，以更好服务160万英国居民"
   sourceLinks:
     - "https://aws.amazon.com/blogs/contact-center/capita-chooses-amazon-connect-voice-agents-to-better-serve-1-6-million-uk-residents/"
 ---
 
-# Capita选择Amazon Connect客户语音代理，以更好服务160万英国居民 | AWS联络中心
+# Capita选择Amazon Connect客户语音代理，以更好服务160万英国居民
 
 ## 新闻事实
 

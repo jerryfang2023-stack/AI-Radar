@@ -4,7 +4,7 @@ import path from "node:path";
 import { sourceTextHash } from "./deepseek-translation-client.mjs";
 
 export const MODEL_ASSIST_VERSION = "MODEL-ASSIST-V1.0";
-export const MODEL_ASSIST_PROMPT_VERSION = "model-assist-2026-07-18.1";
+export const MODEL_ASSIST_PROMPT_VERSION = "model-assist-2026-07-18.2";
 export const MODEL_ASSIST_TASKS = new Set([
   "claim_extraction",
   "fde_enrichment",
@@ -14,7 +14,9 @@ export const MODEL_ASSIST_TASKS = new Set([
   "qa_repair",
 ]);
 export const AUTO_PROMOTABLE_TASKS = new Set(["claim_extraction", "fde_enrichment", "hardware_enrichment"]);
-const MODEL_EVENT_TYPES = new Set(["acquisition", "lawsuit_settlement", "funding", "partnership", "procurement_contract", "hardware_capacity", "hardware_supply", "hardware_deployment", "pricing_change", "policy_regulation", "deployment", "research_result", "organization_people", "model_release", "hardware_product", "service_change", "product_release"]);
+export const MODEL_EVENT_TYPES = new Set(["acquisition", "lawsuit_settlement", "funding", "ipo_listing", "capital_investment", "financial_performance", "partnership", "procurement_contract", "market_expansion", "organization_restructuring", "certification_compliance", "standard_specification", "security_incident", "hardware_capacity", "hardware_supply", "hardware_deployment", "pricing_change", "policy_regulation", "deployment", "research_result", "organization_people", "model_release", "hardware_product", "service_change", "product_release"]);
+const REVIEW_REQUIRED_TASKS = new Set(["entity_resolution", "qa_repair"]);
+const SOURCE_BOILERPLATE = /^(?:most popular|loading the next article|error loading the next article|register now|cookie settings|when you purchase through links|스크롤 이동|상태바|기사본문|the body content)\b/iu;
 const FDE_ARRAY_FIELDS = new Set(["systems_integrated", "data_requirements", "governance_controls", "reported_metrics", "reported_delivery_components", "reported_outcomes"]);
 const FDE_STRING_FIELDS = new Set(["customer", "vendor", "industry", "use_case", "workflow_before", "workflow_after", "deployment_stage", "delivery_model", "team_composition", "timeline", "metric_attribution", "reported_need"]);
 const HARDWARE_STRING_FIELDS = new Set(["component_type", "compute_layer", "manufacturing_stage", "process_node", "capacity_unit", "supplier", "customer", "deployment_site", "region", "contract_value", "shipment_date"]);
@@ -62,6 +64,7 @@ export function sourceEvidenceProblems(body = "", evidence = []) {
       continue;
     }
     if (text.slice(start, end) !== quote) problems.push(`source_quote_mismatch:${index}`);
+    if (SOURCE_BOILERPLATE.test(quote)) problems.push(`source_boilerplate_evidence:${index}`);
   }
   return problems;
 }
@@ -95,6 +98,25 @@ export function evaluateModelAssistCandidate(candidate, body = "") {
       if (!Number.isInteger(claim?.evidence_index) || !candidate.evidence?.[claim.evidence_index]) problems.push(`invalid_claim_evidence_index:${index}`);
     }
   }
+  if (candidate?.task_type === "qa_repair") {
+    const action = candidate?.proposal?.action;
+    if (!["keep_qa", "recollect_original", "repair_title", "extract_claim"].includes(action)) problems.push("unsupported_qa_action");
+    const claims = candidate?.proposal?.claims || [];
+    if (action === "extract_claim" && (!Array.isArray(claims) || !claims.length)) problems.push("missing_qa_claim_proposal");
+    if (action !== "extract_claim" && claims.length) problems.push("qa_claim_requires_extract_action");
+    for (const [index, claim] of claims.entries()) {
+      if (!claim?.event_type || !claim?.subject || !claim?.object) problems.push(`incomplete_qa_claim:${index}`);
+      if (claim?.event_type && !MODEL_EVENT_TYPES.has(claim.event_type)) problems.push(`unsupported_qa_claim_event_type:${index}`);
+      if (!Number.isInteger(claim?.evidence_index) || !candidate.evidence?.[claim.evidence_index]) problems.push(`invalid_qa_claim_evidence_index:${index}`);
+    }
+  }
+  if (candidate?.task_type === "entity_resolution") {
+    const decision = candidate?.proposal?.decision;
+    if (!["same_entity", "distinct_entity", "unknown"].includes(decision)) problems.push("unsupported_entity_resolution_decision");
+    if (decision === "same_entity" && (!candidate?.proposal?.canonical_name || candidate.proposal.canonical_name === candidate.proposal.candidate_name)) {
+      problems.push("invalid_same_entity_target");
+    }
+  }
   if (["fde_enrichment", "hardware_enrichment"].includes(candidate?.task_type)) {
     const fields = candidate?.proposal?.fields;
     if (!Array.isArray(fields) || !fields.length) problems.push("missing_projection_fields");
@@ -113,19 +135,19 @@ export function evaluateModelAssistCandidate(candidate, body = "") {
       }
     }
   }
-  if (candidate?.task_type === "entity_resolution" && candidate?.status !== "requires_review"
+  if (REVIEW_REQUIRED_TASKS.has(candidate?.task_type) && candidate?.status !== "requires_review"
       && !(candidate?.status === "accepted" && candidate?.review?.decision === "accept" && candidate?.review?.reviewer)) {
-    problems.push("entity_resolution_must_require_review");
+    problems.push(`${candidate.task_type}_must_require_review`);
   }
   return [...new Set(problems)];
 }
 
 export function withGateResult(candidate, body = "") {
-  const reviewedAccepted = candidate?.task_type === "entity_resolution"
+  const reviewedAccepted = REVIEW_REQUIRED_TASKS.has(candidate?.task_type)
     && candidate?.status === "accepted"
     && candidate?.review?.decision === "accept"
     && candidate?.review?.reviewer;
-  const evaluationCandidate = candidate?.task_type === "entity_resolution" && !reviewedAccepted
+  const evaluationCandidate = REVIEW_REQUIRED_TASKS.has(candidate?.task_type) && !reviewedAccepted
     ? { ...candidate, status: "requires_review" }
     : candidate;
   const problems = evaluateModelAssistCandidate(evaluationCandidate, body);

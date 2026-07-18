@@ -72,7 +72,7 @@ key_excerpts: [{"type":"funding","text":"Backed by Mistral AI founders, NP Compa
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
-title_zh: "获Mistral AI创始人支持，NP公司完成600万欧元预种子轮融资，推动工程领域AI发展"
+title_zh: "获 Mistral AI 创始人支持，NP Company 融资 600 万欧元种子轮前资金，推动工程领域 AI 发展"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

@@ -3,9 +3,9 @@ schema_version: raw-evidence-v2
 raw_id: R-003
 title: "Claude Code v2.1.214 发布：修复权限绕过、添加 EndConversation 工具与多项 Bash 权限检查改进"
 title_zh: "Claude Code v2.1.214 发布：修复权限绕过、添加 EndConversation 工具与多项 Bash 权限检查改进"
-title_translation_status: not_required
-title_translation_method: source_title
-title_translation_model: not_applicable
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 original_url: "https://github.com/anthropics/claude-code/releases/tag/v2.1.214"
 canonical_url: "https://github.com/anthropics/claude-code/releases/tag/v2.1.214"
 source_name: "Claude Code：GitHub Releases（RSS）"

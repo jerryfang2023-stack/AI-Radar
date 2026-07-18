@@ -2,7 +2,7 @@
 id: SIG-20260613-A02
 type: signal_card
 signal_type: funding
-title: "CopilotKit的AI代理革新应用界面 - LinkedIn"
+title: "CopilotKit 的 AI 智能体革新应用界面 - LinkedIn"
 date: 2026-06-13
 status: published
 source_title: "CopilotKit's AI agents revolutionize app interfaces - LinkedIn"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Linkedin"
 
 frontend:
-  displayTitle: "CopilotKit的AI代理革新应用界面 - LinkedIn"
+  displayTitle: "CopilotKit 的 AI 智能体革新应用界面 - LinkedIn"
   sourceLinks:
     - "https://www.linkedin.com/posts/josh-gordon-428a2364_copilotkit-raises-27m-to-help-devs-deploy-activity-7470218017713364992-NUfk"
 ---
 
-# CopilotKit的AI代理革新应用界面 - LinkedIn
+# CopilotKit 的 AI 智能体革新应用界面 - LinkedIn
 
 ## 新闻事实
 

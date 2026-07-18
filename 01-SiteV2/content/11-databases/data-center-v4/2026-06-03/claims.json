@@ -147,6 +147,28 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-7bc3f617023c3719",
+    "raw_id": "RAW-9a2b4c6ebb72c35f",
+    "claim_type": "model_release",
+    "subject": "Microsoft",
+    "predicate": "model_release",
+    "object": "MAI-Thinking-1",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1,
+      "model_candidate_id": "MAC-bf34b21442063327"
+    },
+    "source_span": {
+      "raw_id": "RAW-9a2b4c6ebb72c35f",
+      "start": 14,
+      "end": 158
+    },
+    "source_quote": "Microsoft announced two new text LLMs this morning - MAI-Thinking-1 (reasoning, 1T parameters, 35B active, available to \"select early partners\")",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-b0e16c8146dc5224",
     "raw_id": "RAW-c821d7af5bc8faaf",
     "claim_type": "product_release",
@@ -462,6 +484,28 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-0b47e9eaf9719371",
+    "raw_id": "RAW-15dd6b9c4de86e0f",
+    "claim_type": "funding",
+    "subject": "Archestra.AI",
+    "predicate": "funding",
+    "object": "$10 million Seed round",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-9095b1742d9ff93e"
+    },
+    "source_span": {
+      "raw_id": "RAW-15dd6b9c4de86e0f",
+      "start": 59,
+      "end": 109
+    },
+    "source_quote": "we've raised a $10 million Seed round, led by 20VC",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-a87caee37c7ce3f7",
     "raw_id": "RAW-3231a51145c3ecb4",
     "claim_type": "funding",
@@ -546,6 +590,94 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-3622c7b07244d182",
+    "raw_id": "RAW-b38805ecfd2ab407",
+    "claim_type": "product_release",
+    "subject": "AIOPSERA",
+    "predicate": "product_release",
+    "object": "public beta",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-15a24d90cd0d477d"
+    },
+    "source_span": {
+      "raw_id": "RAW-b38805ecfd2ab407",
+      "start": 3517,
+      "end": 3553
+    },
+    "source_quote": "Our public beta launches in Q2 2026.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-789c945ce5ffcbcc",
+    "raw_id": "RAW-b38805ecfd2ab407",
+    "claim_type": "product_release",
+    "subject": "AIOPSERA",
+    "predicate": "product_release",
+    "object": "public launch and general availability",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-15a24d90cd0d477d"
+    },
+    "source_span": {
+      "raw_id": "RAW-b38805ecfd2ab407",
+      "start": 4899,
+      "end": 4948
+    },
+    "source_quote": "June 2026: Public launch and general availability",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b27ea4ee9601b897",
+    "raw_id": "RAW-38dbf0f7ccde2be2",
+    "claim_type": "acquisition",
+    "subject": "Cloudera",
+    "predicate": "acquisition",
+    "object": "Verta Operational AI platform",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-45c9052ca7179ee4"
+    },
+    "source_span": {
+      "raw_id": "RAW-38dbf0f7ccde2be2",
+      "start": 4090,
+      "end": 4350
+    },
+    "source_quote": "In 2024, it acquired the Verta Operational AI platform, which simplifies AI adoption by allowing customers to use their private datasets to build custom retrieval-augmented generation (RAG) and fine-tuning applications to optimize large language models (LLMs).",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-d880d01506d04353",
+    "raw_id": "RAW-38dbf0f7ccde2be2",
+    "claim_type": "acquisition",
+    "subject": "Cloudera",
+    "predicate": "acquisition",
+    "object": "Octopai",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-45c9052ca7179ee4"
+    },
+    "source_span": {
+      "raw_id": "RAW-38dbf0f7ccde2be2",
+      "start": 4711,
+      "end": 4998
+    },
+    "source_quote": "More recently, Cloudera’s acquisition of Octopai—a leading data discovery and lineage platform that makes it easy for organizations to understand, access and leverage all the data in their ecosystem—has significantly enhanced its capacity to enable search and locate data across systems.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-5687b294e07160c3",
     "raw_id": "RAW-c958bb7d74f90812",
     "claim_type": "product_release",
@@ -625,6 +757,69 @@
       "end": 527
     },
     "source_quote": "Sites 是用户展示创意的全新平台，Codex 会将用户的想法、分析和计划转化为仪表盘、规划器、评审工作区、项目看板、作品展示区和轻量级工具。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e00df04fb5ff8f64",
+    "raw_id": "RAW-f837b0b88c9bd8ec",
+    "claim_type": "ipo_listing",
+    "subject": "Anthropic秘密提交",
+    "predicate": "ipo_listing",
+    "object": "申请，在AI公司上市竞赛中领先OpenAI",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-f837b0b88c9bd8ec",
+      "start": 58,
+      "end": 415
+    },
+    "source_quote": "Anthropic has confidentially filed to go public, pulling ahead of rival OpenAI in the IPO race, this as SpaceX gets ready to IPO this month. Emily Zheng, a senior venture capital research analyst at PitchBook, says \"we are in unchartered territory\" in terms of how \"gargantuan\" these mega IPOs are. She joins Caroline Hyde and Ed Ludlow on \"Bloomberg Tech.\"",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-cf1b657f77c08d9d",
+    "raw_id": "RAW-f837b0b88c9bd8ec",
+    "claim_type": "ipo_listing",
+    "subject": "Anthropic秘密提交",
+    "predicate": "ipo_listing",
+    "object": "申请，在AI公司上市竞赛中领先OpenAI",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-f837b0b88c9bd8ec",
+      "start": 431,
+      "end": 494
+    },
+    "source_quote": "Blanche Says Trump to Drop $1.8 Billion Anti-Weaponization Fund",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-728063f9df065248",
+    "raw_id": "RAW-f837b0b88c9bd8ec",
+    "claim_type": "ipo_listing",
+    "subject": "Anthropic秘密提交",
+    "predicate": "ipo_listing",
+    "object": "申请，在AI公司上市竞赛中领先OpenAI",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-f837b0b88c9bd8ec",
+      "start": 510,
+      "end": 568
+    },
+    "source_quote": "What You Need to Know About California's Primary Elections",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"

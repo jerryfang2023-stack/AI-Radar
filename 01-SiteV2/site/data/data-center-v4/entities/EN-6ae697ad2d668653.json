@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-18T04:59:59.870Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 1250,
+    "quarantinedEventCount": 11
+  },
+  "entity": {
+    "id": "EN-6ae697ad2d668653",
+    "name": "Red Hat",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-f2b2460c0273e725"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-08",
+    "lastSeen": "2026-07-13",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-f2b2460c0273e725"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-f2b2460c0273e725",
+        "dataDate": "2026-07-13",
+        "date": "2026-07-08",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Supermicro 联合 Red Hat 和 Everpure 推出经验证的边缘 AI Kubernetes 一体机",
+        "displayTags": [],
+        "entityIds": [
+          "EN-4a639cb888a15d75",
+          "EN-684756d07c838274",
+          "EN-6ae697ad2d668653",
+          "EN-2022b6c250cc8abf"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

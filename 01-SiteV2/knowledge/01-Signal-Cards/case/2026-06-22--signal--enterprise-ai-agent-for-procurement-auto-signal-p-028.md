@@ -2,7 +2,7 @@
 id: SIG-20260622-A07
 type: signal_card
 signal_type: case
-title: "采购领域企业AI代理 | Madgeek"
+title: "企业级采购AI智能体"
 date: 2026-06-22
 status: published
 source_title: "Enterprise AI Agent for Procurement | Madgeek"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Enterprise AI Agent for Procurement"
 
 frontend:
-  displayTitle: "采购领域企业AI代理 | Madgeek"
+  displayTitle: "企业级采购AI智能体"
   sourceLinks:
     - "https://madgeek.ai/blog/how-we-designed-procurement-ai-agent-enterprise"
 ---
 
-# 采购领域企业AI代理 | Madgeek
+# 企业级采购AI智能体
 
 ## 新闻事实
 

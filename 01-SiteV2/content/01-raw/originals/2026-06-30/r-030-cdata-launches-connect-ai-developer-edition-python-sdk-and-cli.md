@@ -72,7 +72,7 @@ key_excerpts: [{"type":"product_update","text":"June 24, 2026 CData Software lau
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
-title_zh: "CData推出Connect AI开发者版、Python SDK及CLI"
+title_zh: "CData 推出 Connect AI 开发者版、Python SDK 及 CLI"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

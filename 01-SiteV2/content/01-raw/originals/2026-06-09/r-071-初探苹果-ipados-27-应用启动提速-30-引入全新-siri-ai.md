@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"苹果在 2026 年 WWDC 发布 iPadOS 27
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "初探苹果 iPadOS 27：应用启动提速 30%、引入全新 Siri AI"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 初探苹果 iPadOS 27：应用启动提速 30%、引入全新 Siri AI

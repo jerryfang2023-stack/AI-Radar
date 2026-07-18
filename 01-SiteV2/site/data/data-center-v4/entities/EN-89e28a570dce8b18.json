@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T01:57:40.269Z",
-    "latestDataDate": "2026-07-17",
-    "currentDate": "2026-07-17",
-    "eventCount": 832,
-    "quarantinedEventCount": 60
+    "generatedAt": "2026-07-18T04:59:59.870Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 1250,
+    "quarantinedEventCount": 11
   },
   "entity": {
     "id": "EN-89e28a570dce8b18",
@@ -20,28 +20,191 @@
     "datasetScopes": [
       "canonical"
     ],
-    "eventIds": [],
+    "eventIds": [
+      "EV-6364cfadff0d1d30"
+    ],
     "viewpointIds": [],
-    "classificationRefs": [],
+    "classificationRefs": [
+      "TX-use_case-enterprise_operations",
+      "TX-use_case-customer_service"
+    ],
     "relatedEntityIds": [],
-    "firstSeen": "",
-    "lastSeen": "",
+    "firstSeen": "2026-06-25",
+    "lastSeen": "2026-06-25",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
-      "productsServices": [],
+      "productsServices": [
+        "EV-6364cfadff0d1d30"
+      ],
       "hardware": [],
       "organizationPeople": [],
       "other": []
     },
-    "timeline": [],
+    "timeline": [
+      {
+        "id": "EV-6364cfadff0d1d30",
+        "dataDate": "2026-06-25",
+        "date": "2026-06-25",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "OpenAI 推出 AI 智能体构建器，与 n8n 和 Zapier 竞争 AI 工作流自动化市场",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "id": "enterprise_operations",
+            "dimensionName": "应用场景",
+            "name": "企业运营自动化"
+          },
+          {
+            "dimensionId": "use_case",
+            "id": "customer_service",
+            "dimensionName": "应用场景",
+            "name": "客户服务"
+          }
+        ],
+        "entityIds": [
+          "EN-89e28a570dce8b18",
+          "EN-7d3194f79e645c42",
+          "EN-b70e8201c9feb94a",
+          "EN-3673c8b4dba7409e",
+          "EN-7b80ed96beed8c0a"
+        ]
+      }
+    ],
     "viewpoints": []
   },
   "relatedEntities": [],
   "relationships": [],
-  "taxonomyNodes": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-use_case-enterprise_operations",
+      "name": "企业运营自动化",
+      "nodeType": "use_case",
+      "typeLabel": "应用场景",
+      "valueId": "enterprise_operations",
+      "eventIds": [
+        "EV-f6a72cddbda748b3",
+        "EV-6e06cfa28f76a76f",
+        "EV-dfddbb260b3d1c77",
+        "EV-89351585b44f8e9c",
+        "EV-1306e17cf1f3553e",
+        "EV-5f5f252c6a826599",
+        "EV-9fa9822969d3c3fd",
+        "EV-220be2fe413b8cfa",
+        "EV-d9270ae7b862212b",
+        "EV-286846e21412f3c7",
+        "EV-12ca2aae7bfcd080",
+        "EV-57d3b7aa1a2f0fda",
+        "EV-3a7128e2d7ff149e",
+        "EV-779b733110003284",
+        "EV-6364cfadff0d1d30",
+        "EV-f50752717e2a8536"
+      ],
+      "entityIds": [
+        "EN-a5d2ae286d0d9e45",
+        "EN-96eebba49dbbf422",
+        "EN-caaa8e02be54cfc9",
+        "EN-d2d165dff04ba225",
+        "EN-7d3194f79e645c42",
+        "EN-c70eca6b0f88f44d",
+        "EN-bbdefa2950f49882",
+        "EN-4728b0c37dc84206",
+        "EN-122c0bebae950c77",
+        "EN-b51b27d89f9ea747",
+        "EN-3c567a300232d3bb",
+        "EN-10535ca23448d8bb",
+        "EN-4de4a07ad031569c",
+        "EN-3ccbd9105a45d8fc",
+        "EN-636396f02b6571e4",
+        "EN-3cce50ffb12f1a69",
+        "EN-8d4321d936320802",
+        "EN-e395d03e988d30a9",
+        "EN-0dba03107c52ed3e",
+        "EN-51a5b811990f2a2a",
+        "EN-979ed4c1e4eb3a04",
+        "EN-9f8d56e79c059f04",
+        "EN-89e28a570dce8b18",
+        "EN-b70e8201c9feb94a",
+        "EN-3673c8b4dba7409e",
+        "EN-7b80ed96beed8c0a",
+        "EN-ae4ea495016fb286"
+      ],
+      "fdeIds": [
+        "FDE-a9fc583eb4065d4d"
+      ],
+      "hardwareIds": [],
+      "firstSeen": "2025-03-25",
+      "lastSeen": "2026-07-18"
+    },
+    {
+      "id": "TX-use_case-customer_service",
+      "name": "客户服务",
+      "nodeType": "use_case",
+      "typeLabel": "应用场景",
+      "valueId": "customer_service",
+      "eventIds": [
+        "EV-64fb6d791e19d10a",
+        "EV-f020dd198aa2f952",
+        "EV-a9d0bb672c5ec0ab",
+        "EV-88f4ee8cd57bdf42",
+        "EV-b85139b8fba1a5c5",
+        "EV-3dd0912fae720df7",
+        "EV-e869f17214557633",
+        "EV-8abf5adc3e72fbb8",
+        "EV-3fb492fb45980541",
+        "EV-05a87b578967c83e",
+        "EV-78277c678f01e540",
+        "EV-11a8e196deb21300",
+        "EV-6364cfadff0d1d30",
+        "EV-94d9c8d5ac1e10de"
+      ],
+      "entityIds": [
+        "EN-b0532e1af75cc4ab",
+        "EN-dca6ec9510fc0176",
+        "EN-3ccbd9105a45d8fc",
+        "EN-8147e6fed86d42c1",
+        "EN-29e1a488361f12d3",
+        "EN-96eebba49dbbf422",
+        "EN-9fbf261b62c1d7c0",
+        "EN-28d0bd981118a907",
+        "EN-d3565d297d476f10",
+        "EN-3474e24464fc25a7",
+        "EN-7d3194f79e645c42",
+        "EN-88e2cce43eeadb36",
+        "EN-19e41212c0556603",
+        "EN-c47b618e17c75f06",
+        "EN-1ec93c99d07feadd",
+        "EN-a6ed199f8859e462",
+        "EN-21d8ce5988925f81",
+        "EN-34da56029403e6f7",
+        "EN-623fbff8d5179d4e",
+        "EN-fef851474e3c4311",
+        "EN-19018cddd8946526",
+        "EN-89e28a570dce8b18",
+        "EN-b70e8201c9feb94a",
+        "EN-3673c8b4dba7409e",
+        "EN-7b80ed96beed8c0a",
+        "EN-7d1507284a5757ca",
+        "EN-cbc62794911ff31b",
+        "EN-dba61afed18c85d6"
+      ],
+      "fdeIds": [
+        "FDE-4f2a8cb5ce476228",
+        "FDE-3e499215265a81d5",
+        "FDE-d08fed45110ab44b",
+        "FDE-3665b073634d4b9d"
+      ],
+      "hardwareIds": [],
+      "firstSeen": "2026-03-04",
+      "lastSeen": "2026-07-18"
+    }
+  ],
   "fde": [],
   "hardware": []
 }

@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-047
 title: "The ChatGPT browser is already dead"
-title_zh: "ChatGPT浏览器已死"
-title_translation_status: translated
-title_translation_method: mymemory_title_translation
+title_zh: "ChatGPT 浏览器已消亡"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.theverge.com/ai-artificial-intelligence/963654/openai-chatgpt-atlas-ai-browser-shut-down-sunset"
 canonical_url: "https://theverge.com/ai-artificial-intelligence/963654/openai-chatgpt-atlas-ai-browser-shut-down-sunset"
 source_name: "The Verge AI"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-10T01:59:55.104Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # The ChatGPT browser is already dead

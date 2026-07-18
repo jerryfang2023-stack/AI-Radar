@@ -1,0 +1,198 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-18T04:59:59.870Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 1250,
+    "quarantinedEventCount": 11
+  },
+  "entity": {
+    "id": "EN-2f265a693b2897f1",
+    "name": "Cloudera",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-479eb3f55eda442e"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-technology-retrieval_augmented_generation",
+      "TX-technology-fine_tuning"
+    ],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-06-03",
+    "lastSeen": "2026-06-03",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-479eb3f55eda442e"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-479eb3f55eda442e",
+        "dataDate": "2026-06-03",
+        "date": "2026-06-03",
+        "eventType": "acquisition",
+        "eventTypeLabel": "并购",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "您的企业数据准备好迎接AI了吗？",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          },
+          {
+            "dimensionId": "product_form",
+            "id": "enterprise_platform",
+            "dimensionName": "产品形态",
+            "name": "企业 AI 平台"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "retrieval_augmented_generation",
+            "name": "RAG"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "fine_tuning",
+            "name": "模型微调"
+          }
+        ],
+        "entityIds": [
+          "EN-2f265a693b2897f1"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-technology-retrieval_augmented_generation",
+      "name": "RAG",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "retrieval_augmented_generation",
+      "eventIds": [
+        "EV-30466ebe86779a64",
+        "EV-479eb3f55eda442e",
+        "EV-950237c6b3eb6343",
+        "EV-3011ea85c51a3ee0",
+        "EV-f50752717e2a8536",
+        "EV-7449d239223d4928",
+        "EV-1b03e5dff76a50a1",
+        "EV-8eed6489ab514823",
+        "EV-a591b0c96f79de45",
+        "EV-cf496e0f8a56ca97"
+      ],
+      "entityIds": [
+        "EN-a9aff9e0737a5d4a",
+        "EN-2f265a693b2897f1",
+        "EN-8d4321d936320802",
+        "EN-aa15d891a32a51b8",
+        "EN-754b113d548b4469",
+        "EN-d87e6bf7aa180a4a",
+        "EN-23fa906ab8df13d6",
+        "EN-feecb1b1adc8584d",
+        "EN-ae4ea495016fb286",
+        "EN-916a98f0fa2a39af",
+        "EN-d6d6e4e33c59b45e",
+        "EN-2d87f3d38782aa14",
+        "EN-bbdefa2950f49882",
+        "EN-b5251b35f15bedc4",
+        "EN-0db2d631b42da133",
+        "EN-3eee4f30151db45a",
+        "EN-2b6e51bec93e86c1",
+        "EN-c18179b68329b054",
+        "EN-35e36dc1a5213fa3",
+        "EN-bdfecbcd7dbf76d2",
+        "EN-cfe6926406f30a15",
+        "EN-e3db3da2b7dc6057",
+        "EN-4d803c223cec4cc4",
+        "EN-7d3194f79e645c42",
+        "EN-c70eca6b0f88f44d",
+        "EN-4634cbf463651816",
+        "EN-467f67b2ed0f9a54"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-03-13",
+      "lastSeen": "2026-07-18"
+    },
+    {
+      "id": "TX-technology-fine_tuning",
+      "name": "模型微调",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "fine_tuning",
+      "eventIds": [
+        "EV-479eb3f55eda442e",
+        "EV-1de38866b4b92754",
+        "EV-70cbf25f7ec2cc3a",
+        "EV-8b9e4428074bde60",
+        "EV-b84035029a63e52e",
+        "EV-77662aa9bef9efbe",
+        "EV-b73c7096546b82e8",
+        "EV-34929bdd016dc8d6"
+      ],
+      "entityIds": [
+        "EN-2f265a693b2897f1",
+        "EN-e93e29634540a290",
+        "EN-7dd7122ad9bf240f",
+        "EN-95b0632f1b292fa7",
+        "EN-047364b9be67f665",
+        "EN-6f7ac1823da81d2e",
+        "EN-3a7bd3e2360a3d29",
+        "EN-03e2a9d18916f7c5",
+        "EN-d41ebd9f02722fc8",
+        "EN-b0532e1af75cc4ab",
+        "EN-96eebba49dbbf422",
+        "EN-10556ee2cee94c72",
+        "EN-f8c237773fe24a98",
+        "EN-2b5e92d1908d42f6",
+        "EN-ad1b7e4bc3a5c870",
+        "EN-7d3194f79e645c42",
+        "EN-8f71c4871a160172",
+        "EN-c70eca6b0f88f44d",
+        "EN-bbdefa2950f49882",
+        "EN-f696d5fb767e377c",
+        "EN-4a639cb888a15d75",
+        "EN-8d4321d936320802",
+        "EN-65b3aa2f527deeef",
+        "EN-a2413f7c5095f988",
+        "EN-c165c006a5968443"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [
+        "HW-25ce41fab12d9ef2"
+      ],
+      "firstSeen": "2025-03-18",
+      "lastSeen": "2026-07-16"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}

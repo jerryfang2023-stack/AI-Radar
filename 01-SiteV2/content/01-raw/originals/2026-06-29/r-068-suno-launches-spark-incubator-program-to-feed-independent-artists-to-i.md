@@ -72,7 +72,7 @@ key_excerpts: [{"type":"workflow_change","text":"Suno has ambitions to be more t
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
-title_zh: "Suno推出Spark孵化器计划，将独立艺术家引入其AI系统"
+title_zh: "Suno 推出 Spark 孵化器计划，将独立艺术家引入其 AI 智能体"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

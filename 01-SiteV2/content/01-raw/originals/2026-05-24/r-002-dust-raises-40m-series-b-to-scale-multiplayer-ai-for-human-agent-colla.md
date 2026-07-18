@@ -72,7 +72,7 @@ key_excerpts: [{"type":"funding","text":"Dust raises $40M Series B to scale mult
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
-title_zh: "Dust 完成 4000 万美元 B 轮融资，扩大人机协作的多智能体 AI 规模 | Dust 博客"
+title_zh: "Dust 完成 4000 万美元 B 轮融资，扩大人机协作的多智能体 AI 规模"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

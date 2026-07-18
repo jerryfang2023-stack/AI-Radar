@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"Cloudflare 宣布推出两项新
 theme: outside-core-exploration
 keyword_group: outside-core-exploration
 copyright_note: local research archive only
+title_zh: "Cloudflare 推出两项新举措，让 AI 搜索更智能"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Cloudflare 推出两项新举措，让 AI 搜索更智能

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"company_action","text":"6 月 12 日，Kimi 智能助手
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Kimi 全球首张 AI 原生信用卡开启预约：消费可兑换算力额度"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Kimi 全球首张 AI 原生信用卡开启预约：消费可兑换算力额度

@@ -74,8 +74,8 @@ keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
 title_zh: "美国种子轮每周融资汇总（2026年3月17日-24日）"
 title_translation_status: "translated"
-title_translation_method: "deepseek_title_translation"
-title_translation_model: "deepseek-v4-flash"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # US Seed Weekly Funding Roundup (Mar 17-24, 2026) - Qubit Capital

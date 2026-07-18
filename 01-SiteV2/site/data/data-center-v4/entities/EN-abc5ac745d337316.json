@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-18T04:59:59.870Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 1250,
+    "quarantinedEventCount": 11
+  },
+  "entity": {
+    "id": "EN-abc5ac745d337316",
+    "name": "Claude Desktop",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-8a26b85b4f432525"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-06-23",
+    "lastSeen": "2026-06-23",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-8a26b85b4f432525"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-8a26b85b4f432525",
+        "dataDate": "2026-06-23",
+        "date": "2026-06-23",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "在 AWS、Google Cloud 和 Microsoft Foundry 上使用完整版 Claude Desktop",
+        "displayTags": [],
+        "entityIds": [
+          "EN-bbdefa2950f49882",
+          "EN-9fbf261b62c1d7c0",
+          "EN-abc5ac745d337316",
+          "EN-c70eca6b0f88f44d",
+          "EN-8d323d8bba783aa3",
+          "EN-d0bfa24cf1e53827"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

@@ -2,7 +2,7 @@
 id: SIG-20260614-A06
 type: signal_card
 signal_type: product_service
-title: "宣布推出适用于自定义Amazon Nova模型的Amazon SageMaker推理功能 | AWS新闻博客"
+title: "宣布推出适用于自定义Amazon Nova模型的Amazon SageMaker推理功能"
 date: 2026-06-14
 status: published
 source_title: "Announcing Amazon SageMaker Inference for custom Amazon Nova models | AWS News Blog"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Inference"
 
 frontend:
-  displayTitle: "宣布推出适用于自定义Amazon Nova模型的Amazon SageMaker推理功能 | AWS新闻博客"
+  displayTitle: "宣布推出适用于自定义Amazon Nova模型的Amazon SageMaker推理功能"
   sourceLinks:
     - "https://aws.amazon.com/blogs/aws/announcing-amazon-sagemaker-inference-for-custom-amazon-nova-models/"
 ---
 
-# 宣布推出适用于自定义Amazon Nova模型的Amazon SageMaker推理功能 | AWS新闻博客
+# 宣布推出适用于自定义Amazon Nova模型的Amazon SageMaker推理功能
 
 ## 新闻事实
 

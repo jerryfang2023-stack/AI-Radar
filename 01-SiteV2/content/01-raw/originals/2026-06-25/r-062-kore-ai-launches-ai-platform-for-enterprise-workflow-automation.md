@@ -72,7 +72,7 @@ key_excerpts: [{"type":"workflow_change","text":"Title: Kore.ai launches AI plat
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
-title_zh: "Kore.ai推出企业工作流自动化AI平台"
+title_zh: "Kore.ai 推出面向企业工作流自动化的 AI 平台"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

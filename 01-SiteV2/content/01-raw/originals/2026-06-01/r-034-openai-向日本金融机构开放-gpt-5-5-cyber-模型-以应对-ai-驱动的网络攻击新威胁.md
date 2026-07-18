@@ -72,6 +72,10 @@ key_excerpts: [{"type":"supporting_context","text":"OpenAI 已向日本三大银
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "OpenAI 向日本金融机构开放 GPT-5.5 Cyber 模型，以应对 AI 驱动的网络攻击新威胁"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # OpenAI 向日本金融机构开放 GPT-5.5 Cyber 模型，以应对 AI 驱动的网络攻击新威胁

@@ -2,7 +2,7 @@
 id: SIG-20260618-A03
 type: signal_card
 signal_type: funding
-title: "总部位于巴塞罗那的NeuralTrust融资1720万欧元，用于保障和治理企业AI代理"
+title: "总部位于巴塞罗那的 NeuralTrust 融资 1720 万欧元，用于保障和治理企业 AI 智能体"
 date: 2026-06-18
 status: published
 source_title: "Barcelona-based NeuralTrust raises €17.2 million to secure and govern enterprise AI agents | EU-Startups"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "NeuralTrust"
 
 frontend:
-  displayTitle: "总部位于巴塞罗那的NeuralTrust融资1720万欧元，用于保障和治理企业AI代理"
+  displayTitle: "总部位于巴塞罗那的 NeuralTrust 融资 1720 万欧元，用于保障和治理企业 AI 智能体"
   sourceLinks:
     - "https://www.eu-startups.com/2026/06/barcelona-based-neuraltrust-raises-e17-2-million-to-secure-and-govern-enterprise-ai-agents/"
 ---
 
-# 总部位于巴塞罗那的NeuralTrust融资1720万欧元，用于保障和治理企业AI代理
+# 总部位于巴塞罗那的 NeuralTrust 融资 1720 万欧元，用于保障和治理企业 AI 智能体
 
 ## 新闻事实
 

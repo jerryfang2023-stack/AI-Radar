@@ -72,7 +72,7 @@ key_excerpts: [{"type":"funding","text":"The shift has happened. Enterprise AI a
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
-title_zh: "企业AI代理2026：年中成效报告"
+title_zh: "企业AI智能体2026：年中成效报告"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

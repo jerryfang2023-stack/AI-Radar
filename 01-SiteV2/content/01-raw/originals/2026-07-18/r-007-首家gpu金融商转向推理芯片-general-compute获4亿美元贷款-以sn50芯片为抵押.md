@@ -3,9 +3,9 @@ schema_version: raw-evidence-v2
 raw_id: R-007
 title: "首家GPU金融商转向推理芯片：General Compute获4亿美元贷款，以SN50芯片为抵押"
 title_zh: "首家GPU金融商转向推理芯片：General Compute获4亿美元贷款，以SN50芯片为抵押"
-title_translation_status: not_required
-title_translation_method: source_title
-title_translation_model: not_applicable
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 original_url: "https://techcrunch.com/2026/07/17/why-the-first-gpu-financiers-are-turning-to-inference-chips-in-a-400-million-deal"
 canonical_url: "https://techcrunch.com/2026/07/17/why-the-first-gpu-financiers-are-turning-to-inference-chips-in-a-400-million-deal"
 source_name: "TechCrunch：AI（RSS）"

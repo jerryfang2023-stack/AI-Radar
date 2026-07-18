@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-18T04:59:59.870Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 1250,
+    "quarantinedEventCount": 11
+  },
+  "entity": {
+    "id": "EN-d21d9bcb5de728af",
+    "name": "DiscoBench",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-e70b2c66b996d138"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-05",
+    "lastSeen": "2026-07-06",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": [
+        "EV-e70b2c66b996d138"
+      ]
+    },
+    "timeline": [
+      {
+        "id": "EV-e70b2c66b996d138",
+        "dataDate": "2026-07-06",
+        "date": "2026-07-05",
+        "eventType": "research_result",
+        "eventTypeLabel": "研究结果",
+        "eventGroup": "研究结果",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "DiscoBench：腾讯混元和清华联合推出的AI搜索智能体模糊查询基准",
+        "displayTags": [],
+        "entityIds": [
+          "EN-d21d9bcb5de728af",
+          "EN-9c8ae69b84f21a2e",
+          "EN-bef77285ec25cf26"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

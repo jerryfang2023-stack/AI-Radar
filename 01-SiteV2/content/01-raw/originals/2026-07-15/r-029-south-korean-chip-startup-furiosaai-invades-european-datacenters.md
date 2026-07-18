@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-029
 title: "South Korean chip startup FuriosaAI invades European datacenters"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "韩国芯片初创公司FuriosaAI进军欧洲数据中心"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.theregister.com/ai-and-ml/2026/07/07/south-korean-chip-startup-furiosaai-invades-european-datacenters/5267884"
 canonical_url: "https://theregister.com/ai-and-ml/2026/07/07/south-korean-chip-startup-furiosaai-invades-european-datacenters/5267884"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-15T04:28:37.720Z
 theme: ai-hardware-trend-innovation-signal
 keyword_group: ai-hardware-trend-innovation-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # South Korean chip startup FuriosaAI invades European datacenters

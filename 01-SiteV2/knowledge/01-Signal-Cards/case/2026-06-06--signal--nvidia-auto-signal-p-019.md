@@ -2,7 +2,7 @@
 id: SIG-20260606-A10
 type: signal_card
 signal_type: case
-title: "领先推理提供商借助NVIDIA Blackwell上的开源模型实现最低Token成本 | NVIDIA博客"
+title: "领先推理提供商借助NVIDIA Blackwell上的开源模型实现最低Token成本"
 date: 2026-06-06
 status: published
 source_title: "Leading Inference Providers Achieve Lowest Token Cost With Open Source Models on NVIDIA Blackwell | NVIDIA Blog"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Nvidia"
 
 frontend:
-  displayTitle: "领先推理提供商借助NVIDIA Blackwell上的开源模型实现最低Token成本 | NVIDIA博客"
+  displayTitle: "领先推理提供商借助NVIDIA Blackwell上的开源模型实现最低Token成本"
   sourceLinks:
     - "https://blogs.nvidia.com/blog/inference-open-source-models-blackwell-reduce-cost-per-token/"
 ---
 
-# 领先推理提供商借助NVIDIA Blackwell上的开源模型实现最低Token成本 | NVIDIA博客
+# 领先推理提供商借助NVIDIA Blackwell上的开源模型实现最低Token成本
 
 ## 新闻事实
 

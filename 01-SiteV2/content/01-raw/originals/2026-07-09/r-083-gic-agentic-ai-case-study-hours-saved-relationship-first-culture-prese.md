@@ -2,7 +2,7 @@
 schema_version: raw-evidence-v2
 raw_id: R-083
 title: "GIC Agentic AI Case Study: Hours Saved, Relationship-First Culture Preserved | Prowess Consulting"
-title_zh: "GIC代理型AI案例研究：节省工时，维护以关系为先的文化 | Prowess Consulting"
+title_zh: "GIC AI 智能体案例研究：节省工时，保留关系优先文化"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 original_url: "https://prowessconsulting.com/case-studies/gic-agentic-ai/"

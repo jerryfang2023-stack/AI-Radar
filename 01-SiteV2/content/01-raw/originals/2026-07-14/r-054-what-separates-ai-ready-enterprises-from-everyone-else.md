@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-054
 title: "What Separates AI-Ready Enterprises From Everyone Else?"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "什么将AI就绪企业与其他企业区分开来？"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://sponsored.bloomberg.com/article/AMD/what-separates-ai-ready-enterprises-from-everyone-else"
 canonical_url: "https://sponsored.bloomberg.com/article/AMD/what-separates-ai-ready-enterprises-from-everyone-else"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-14T01:56:51.643Z
 theme: enterprise-ai-implementation-signal
 keyword_group: enterprise-ai-implementation-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # What Separates AI-Ready Enterprises From Everyone Else?

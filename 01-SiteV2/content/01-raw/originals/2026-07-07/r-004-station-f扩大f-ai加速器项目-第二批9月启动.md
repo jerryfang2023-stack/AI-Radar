@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-004
 title: "Station F扩大F/ai加速器项目，第二批9月启动"
 title_zh: "Station F扩大F/ai加速器项目，第二批9月启动"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://techcrunch.com/2026/07/06/station-f-ramps-up-as-a-launchpad-for-europes-hottest-ai-startups"
 canonical_url: "https://techcrunch.com/2026/07/06/station-f-ramps-up-as-a-launchpad-for-europes-hottest-ai-startups"
 source_name: "TechCrunch：AI（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-07T02:46:59.186Z
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Station F扩大F/ai加速器项目，第二批9月启动

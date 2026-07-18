@@ -2,7 +2,7 @@
 id: SIG-20260624-A02
 type: signal_card
 signal_type: funding
-title: "独家：这位创始人从高压清洗到沃顿商学院——刚刚为AI融资4000万美元 | 《财富》"
+title: "独家：这位创始人从高压清洗到沃顿商学院——刚刚为AI融资4000万美元"
 date: 2026-06-24
 status: published
 source_title: "Exclusive: This founder went from pressure washing to Wharton—and just raised $40 million for AI | Fortune"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Exclusive"
 
 frontend:
-  displayTitle: "独家：这位创始人从高压清洗到沃顿商学院——刚刚为AI融资4000万美元 | 《财富》"
+  displayTitle: "独家：这位创始人从高压清洗到沃顿商学院——刚刚为AI融资4000万美元"
   sourceLinks:
     - "https://fortune.com/2026/06/23/exclusive-this-startup-wants-to-be-the-ai-brain-for-home-services-and-it-just-raised-40-million-from-sequoia-and-a16z/"
 ---
 
-# 独家：这位创始人从高压清洗到沃顿商学院——刚刚为AI融资4000万美元 | 《财富》
+# 独家：这位创始人从高压清洗到沃顿商学院——刚刚为AI融资4000万美元
 
 ## 新闻事实
 

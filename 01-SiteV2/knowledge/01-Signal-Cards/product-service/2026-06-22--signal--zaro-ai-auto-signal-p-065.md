@@ -2,7 +2,7 @@
 id: SIG-20260622-A17
 type: signal_card
 signal_type: product_service
-title: "Zaro.ai获510万美元融资，打造统一企业AI代理、数据与应用的单层上下文平台"
+title: "Zaro.ai 获 510 万美元融资，在单一上下文层中统一企业 AI 智能体、数据与应用"
 date: 2026-06-22
 status: published
 source_title: "Zaro.ai Secures $5.1M to Unify Enterprise AI Agents, Data, and Applications in a Single Context Layer"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Zaro.ai"
 
 frontend:
-  displayTitle: "Zaro.ai获510万美元融资，打造统一企业AI代理、数据与应用的单层上下文平台"
+  displayTitle: "Zaro.ai 获 510 万美元融资，在单一上下文层中统一企业 AI 智能体、数据与应用"
   sourceLinks:
     - "https://theaiinsider.tech/2026/06/19/zaro-ai-secures-5-1m-to-unify-enterprise-ai-agents-data-and-applications-in-a-single-context-layer/"
 ---
 
-# Zaro.ai获510万美元融资，打造统一企业AI代理、数据与应用的单层上下文平台
+# Zaro.ai 获 510 万美元融资，在单一上下文层中统一企业 AI 智能体、数据与应用
 
 ## 新闻事实
 

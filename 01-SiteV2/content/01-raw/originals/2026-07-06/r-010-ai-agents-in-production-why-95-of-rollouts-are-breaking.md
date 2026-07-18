@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-010
 title: "AI Agents in Production: Why 95% of Rollouts Are Breaking"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "AI 智能体在生产环境中：为何95%的部署正在崩溃"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://aithinkerlab.com/ai-agents-in-production/"
 canonical_url: "https://aithinkerlab.com/ai-agents-in-production"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-06T02:21:26.735Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # AI Agents in Production: Why 95% of Rollouts Are Breaking

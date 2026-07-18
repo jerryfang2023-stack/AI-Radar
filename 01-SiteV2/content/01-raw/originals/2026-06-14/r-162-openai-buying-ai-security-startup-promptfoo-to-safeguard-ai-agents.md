@@ -72,6 +72,10 @@ key_excerpts: [{"type":"supporting_context","text":"OpenAI has agreed to buy Pro
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "OpenAI 收购 AI 安全初创公司 Promptfoo 以保护 AI 智能体"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # OpenAI Buying AI Security Startup Promptfoo to Safeguard AI Agents

@@ -84,6 +84,50 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-c485598b128a179d",
+    "raw_id": "RAW-9dc91c3e06765a77",
+    "claim_type": "product_release",
+    "subject": "Claude Desktop",
+    "predicate": "product_release",
+    "object": "full Desktop experience including chat, Claude Cowork, and Claude Code on AWS, Google Cloud, and Microsoft Foundry",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-716daa9c9bb0f6e0"
+    },
+    "source_span": {
+      "raw_id": "RAW-9dc91c3e06765a77",
+      "start": 281,
+      "end": 459
+    },
+    "source_quote": "Organizations that use Claude Desktop through AWS, Google Cloud, and Microsoft Foundry now get the full Desktop experience — chat, Claude Cowork, and Claude Code, all in one app.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-99352dba6260dc88",
+    "raw_id": "RAW-9dc91c3e06765a77",
+    "claim_type": "product_release",
+    "subject": "Claude Desktop",
+    "predicate": "product_release",
+    "object": "Microsoft 365 connector with tenant allowlisting and beta support for GCC High/DoD endpoints",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-716daa9c9bb0f6e0"
+    },
+    "source_span": {
+      "raw_id": "RAW-9dc91c3e06765a77",
+      "start": 2699,
+      "end": 2864
+    },
+    "source_quote": "A Microsoft 365 connector gives Claude access to mail and documents through your own Entra app, with tenant allowlisting and beta support for GCC High/DoD endpoints.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-5cd74377c9116233",
     "raw_id": "RAW-82ae385ce723b3e8",
     "claim_type": "product_release",
@@ -483,6 +527,28 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-939604d7b9e490b7",
+    "raw_id": "RAW-1bfc14adaf967224",
+    "claim_type": "procurement_contract",
+    "subject": "Reflection AI",
+    "predicate": "procurement_contract",
+    "object": "SpaceX",
+    "qualifiers": {
+      "event_status": "withdrawn",
+      "sequence": 1,
+      "model_candidate_id": "MAC-5799a00f2844d821"
+    },
+    "source_span": {
+      "raw_id": "RAW-1bfc14adaf967224",
+      "start": 245,
+      "end": 466
+    },
+    "source_quote": "Reflection AI will pay $150 million a month beginning July 1, 2026 through 2029 for immediate access to Nvidia’s latest GB300 AI chips and supporting hardware across SpaceX’s Colossus 2 data center near Memphis, Tennessee",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-069ef2a8696d81d2",
     "raw_id": "RAW-f7ef4503999a0cc8",
     "claim_type": "model_release",
@@ -651,6 +717,28 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-d3189c6f80b72fa2",
+    "raw_id": "RAW-9d5e710071de1413",
+    "claim_type": "funding",
+    "subject": "Aigentsphere",
+    "predicate": "funding",
+    "object": "$4 million Seed round",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-08322dfb8b4216f5"
+    },
+    "source_span": {
+      "raw_id": "RAW-9d5e710071de1413",
+      "start": 389,
+      "end": 527
+    },
+    "source_quote": "Sydney AI agent management and governance platform, Aigentsphere, has raised a $4 million Seed round led by CSIRO-backed VC Main Sequence.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-d0987569d0c3accd",
     "raw_id": "RAW-8d87cf09a1dbcf62",
     "claim_type": "acquisition",
@@ -732,6 +820,28 @@
     "source_quote": "The approach is already shaping real deal outcomes: one private equity investor said a Bain-vibecoded recreation of an analytics platform directly contributed to their decision to walk away from a bid.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-9744f2029f93c063",
+    "raw_id": "RAW-5570a46c645174c3",
+    "claim_type": "model_release",
+    "subject": "Z.ai",
+    "predicate": "model_release",
+    "object": "GLM-5.2",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1,
+      "model_candidate_id": "MAC-626a5b0367870e32"
+    },
+    "source_span": {
+      "raw_id": "RAW-5570a46c645174c3",
+      "start": 95,
+      "end": 214
+    },
+    "source_quote": "GLM-5.2 is Z.ai’s new open model, delivering SOTA performance across long-horizon coding, reasoning, and agentic tasks.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -819,6 +929,72 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-0bb5742d0d378d29",
+    "raw_id": "RAW-19ddfb615013ee07",
+    "claim_type": "hardware_deployment",
+    "subject": "英伟达",
+    "predicate": "hardware_deployment",
+    "object": "35台英伟达AI HPC超级计算机",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-483741daefd8dfe6"
+    },
+    "source_span": {
+      "raw_id": "RAW-19ddfb615013ee07",
+      "start": 351,
+      "end": 393
+    },
+    "source_quote": "英伟达今晚宣布，欧洲创纪录的 35 台英伟达 AI HPC 超级计算机正式启动建设。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-3176773be57f4ac0",
+    "raw_id": "RAW-19ddfb615013ee07",
+    "claim_type": "hardware_deployment",
+    "subject": "巴塞罗那超级计算中心 AI 工厂",
+    "predicate": "hardware_deployment",
+    "object": "英伟达 GB300 NVL72 和 GB200 NVL4 系统",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-483741daefd8dfe6"
+    },
+    "source_span": {
+      "raw_id": "RAW-19ddfb615013ee07",
+      "start": 905,
+      "end": 987
+    },
+    "source_quote": "MareNostrum 5 将增加英伟达 GB300 NVL72 和 GB200 NVL4 系统，并采用 Quantum-X800 InfiniBand 平台互联。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-fb02ddd9b455be56",
+    "raw_id": "RAW-19ddfb615013ee07",
+    "claim_type": "hardware_deployment",
+    "subject": "BavariaAI Blue Swan",
+    "predicate": "hardware_deployment",
+    "object": "英伟达 GB200 NVL4 系统和 Quantum-2 InfiniBand 网络",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3,
+      "model_candidate_id": "MAC-483741daefd8dfe6"
+    },
+    "source_span": {
+      "raw_id": "RAW-19ddfb615013ee07",
+      "start": 1101,
+      "end": 1192
+    },
+    "source_quote": "Blue Swan 将通过英伟达 GB200 NVL4 系统和 Quantum-2 InfiniBand 网络，在埃朗根-纽伦堡大学和莱布尼茨超级计算中心部署 1000 块 GPU。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-f9439d5afc10c6b2",
     "raw_id": "RAW-2cf4b6ed8c16a63c",
     "claim_type": "product_release",
@@ -900,6 +1076,28 @@
     "source_quote": "OpenAI 将与网络安全公司 Trail of Bits 展开合作，协助开源项目维护者加固项目安全。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-0f6fa2e61227380a",
+    "raw_id": "RAW-6373c3111e058019",
+    "claim_type": "capital_investment",
+    "subject": "Micron",
+    "predicate": "capital_investment",
+    "object": "Anthropic's Series H round",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 1,
+      "model_candidate_id": "MAC-ccb567fa04454d40"
+    },
+    "source_span": {
+      "raw_id": "RAW-6373c3111e058019",
+      "start": 124,
+      "end": 173
+    },
+    "source_quote": "Micron is investing in Anthropic's Series H round",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -1152,6 +1350,50 @@
     "source_quote": "人形机器人和物理 AI 企业 Agility 将率先采用 NVIDIA Halos for Robotics，为工业人形机器人加入完整安全能力。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-59445c7295de43cc",
+    "raw_id": "RAW-7037a762c8c43a9f",
+    "claim_type": "product_release",
+    "subject": "Google Deepmind",
+    "predicate": "product_release",
+    "object": "Interactions API",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 1,
+      "model_candidate_id": "MAC-aed1b0168f4bf8a9"
+    },
+    "source_span": {
+      "raw_id": "RAW-7037a762c8c43a9f",
+      "start": 162,
+      "end": 259
+    },
+    "source_quote": "Google Deepmind has made the Interactions API the default interface for Gemini models and agents.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-f8171da4ee8dcfbc",
+    "raw_id": "RAW-7037a762c8c43a9f",
+    "claim_type": "product_release",
+    "subject": "Google Deepmind",
+    "predicate": "product_release",
+    "object": "new agent features",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 3,
+      "model_candidate_id": "MAC-aed1b0168f4bf8a9"
+    },
+    "source_span": {
+      "raw_id": "RAW-7037a762c8c43a9f",
+      "start": 380,
+      "end": 445
+    },
+    "source_quote": "New agent features will only ship through this API going forward.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -1701,6 +1943,112 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-df5ef5e62cf87b4e",
+    "raw_id": "RAW-968ff7cabf08ba06",
+    "claim_type": "hardware_product",
+    "subject": "谷歌",
+    "predicate": "hardware_product",
+    "object": "TPU v9 芯片推理优化升级款",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-26b077a61354c61b"
+    },
+    "source_span": {
+      "raw_id": "RAW-968ff7cabf08ba06",
+      "start": 321,
+      "end": 376
+    },
+    "source_quote": "谷歌将在代号 \"Humufish\" 的 TPU v9 自有 AI 芯片基础上推出一个旨在提高推理能力的升级改款",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-62efb00ad2f0dadb",
+    "raw_id": "RAW-120dfe62ad6bd572",
+    "claim_type": "organization_restructuring",
+    "subject": "2026年科技公司因AI",
+    "predicate": "organization_restructuring",
+    "object": "清单",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-120dfe62ad6bd572",
+      "start": 3,
+      "end": 72
+    },
+    "source_quote": "The running list: major tech layoffs in 2026 where employers cited AI",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-1653042c8fb15eb0",
+    "raw_id": "RAW-120dfe62ad6bd572",
+    "claim_type": "organization_restructuring",
+    "subject": "2026年科技公司因AI",
+    "predicate": "organization_restructuring",
+    "object": "清单",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-120dfe62ad6bd572",
+      "start": 547,
+      "end": 951
+    },
+    "source_quote": "The revelation puts new numbers to what feels to many in the tech industry like an epidemic: companies reporting record revenues while simultaneously culling their workforces, pointing to AI as both the engine of growth and the reason for the cuts. Tech layoffs hit their highest single month in years in May, and AI was the most-cited reason, according to outplacement firm Challenger, Gray & Christmas.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-36f857ebe2f4a202",
+    "raw_id": "RAW-120dfe62ad6bd572",
+    "claim_type": "organization_restructuring",
+    "subject": "2026年科技公司因AI",
+    "predicate": "organization_restructuring",
+    "object": "清单",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-120dfe62ad6bd572",
+      "start": 102,
+      "end": 129
+    },
+    "source_quote": "6:27 PM PDT · June 22, 2026",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-55c0043cbeccc5bb",
+    "raw_id": "RAW-120dfe62ad6bd572",
+    "claim_type": "organization_restructuring",
+    "subject": "2026年科技公司因AI",
+    "predicate": "organization_restructuring",
+    "object": "清单",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-120dfe62ad6bd572",
+      "start": 130,
+      "end": 546
+    },
+    "source_quote": "Oracle disclosed Monday that it has reduced its workforce by 21,000 employees over the past 12 months, a decline of 13%, which means more cuts than was previously known, including jobs eliminated because of AI. “The adoption and deployment of AI technologies across our operations have resulted, and may continue to result, in reductions to our workforce,” the company said in an annual financial regulatory filing .",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-5d0574d041abbde9",
     "raw_id": "RAW-521d14773001bcd4",
     "claim_type": "partnership",
@@ -1780,6 +2128,90 @@
       "end": 1574
     },
     "source_quote": "Though controversy has swirled around Hollywood over the use of AI in movies, A24 would be far from the first studio to explore integrating AI into the creative process. Netflix announced earlier this year that it was buying Ben Affleck’s company, InterPositive, which creates AI tools for filmmakers. Last year, meanwhile, Amazon’s MGM Studios launched an AI unit focused on developing tools for television and movie production.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-3fb19f27826381cc",
+    "raw_id": "RAW-29cf583e93943d3c",
+    "claim_type": "organization_restructuring",
+    "subject": "AI 转型与成本压力下，甲骨文 2026 财年",
+    "predicate": "organization_restructuring",
+    "object": "2.1 万人",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-29cf583e93943d3c",
+      "start": 0,
+      "end": 78
+    },
+    "source_quote": "IT之家 6 月 23 日消息，云计算巨头甲骨文持续推进业务重组，叠加全业务线落地人工智能技术，2026 财年员工总数减少了 13%，裁员约 2.1 万人。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-74e96e8564513772",
+    "raw_id": "RAW-29cf583e93943d3c",
+    "claim_type": "organization_restructuring",
+    "subject": "AI 转型与成本压力下，甲骨文 2026 财年",
+    "predicate": "organization_restructuring",
+    "object": "2.1 万人",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-29cf583e93943d3c",
+      "start": 322,
+      "end": 362
+    },
+    "source_quote": "今年早些时候已有多篇报道披露甲骨文将大规模裁员，本次员工规模缩减印证了相关消息。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-47f688c95cf48b7c",
+    "raw_id": "RAW-29cf583e93943d3c",
+    "claim_type": "organization_restructuring",
+    "subject": "AI 转型与成本压力下，甲骨文 2026 财年",
+    "predicate": "organization_restructuring",
+    "object": "2.1 万人",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-29cf583e93943d3c",
+      "start": 363,
+      "end": 445
+    },
+    "source_quote": "行业裁员追踪网站 Layoffs.fyi 数据显示，人工智能技术冲击引发的失业担忧持续加剧，今年迄今已有 196 家科技企业裁员，累计裁撤超 11.98 万名员工。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-76a6f3cce1ecff07",
+    "raw_id": "RAW-29cf583e93943d3c",
+    "claim_type": "organization_restructuring",
+    "subject": "AI 转型与成本压力下，甲骨文 2026 财年",
+    "predicate": "organization_restructuring",
+    "object": "2.1 万人",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-29cf583e93943d3c",
+      "start": 79,
+      "end": 151
+    },
+    "source_quote": "甲骨文于当地时间周一发布的年报显示，截至 2026 年 5 月 31 日，公司员工总量为 14.1 万人；而去年同期员工规模约 16.2 万人。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -1866,6 +2298,28 @@
     "source_quote": "报道称 Reflection 的加入不仅扩充了 SpaceX 的客户群，更带来了一个具有战略差异性的合作对象：在各国政府和企业纷纷重新评估对封闭 AI 系统依赖度的当下，这是一家专注于开源模型的 AI 企业。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-f2e80e9dbd82b821",
+    "raw_id": "RAW-4e79e1652b6133ca",
+    "claim_type": "partnership",
+    "subject": "Getty Images",
+    "predicate": "partnership",
+    "object": "OpenAI",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-fa264709e7f767dc"
+    },
+    "source_span": {
+      "raw_id": "RAW-4e79e1652b6133ca",
+      "start": 156,
+      "end": 231
+    },
+    "source_quote": "Getty Images has entered into a multi-year licensing agreement with OpenAI.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {

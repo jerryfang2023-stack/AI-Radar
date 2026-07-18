@@ -1,5 +1,40 @@
 [
   {
+    "event_type": "policy_regulation",
+    "event_status": "announced",
+    "event_time": "2026-06-10T23:52:03.932Z",
+    "disclosed_at": "2026-06-10T23:52:03.932Z",
+    "entities": [
+      "EN-c70eca6b0f88f44d",
+      "EN-bbdefa2950f49882",
+      "EN-9fbf261b62c1d7c0"
+    ],
+    "action": "policy_regulation",
+    "object": "Mythos-class models",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-611ae611b643c975",
+      "CL-d9ef666ee9a2852a",
+      "CL-86ad6709ce0516bc"
+    ],
+    "source_refs": [
+      "SA-1ec71223821a2388"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-1ec71223821a2388",
+        "disclosed_at": "2026-06-10T23:52:03.932Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-7580a050ca19a8ae",
+    "display_title_zh": "Anthropic 要求对 Fable 和 Mythos 进行 30 天的数据保留"
+  },
+  {
     "event_type": "product_release",
     "event_status": "completed",
     "event_time": "2026-06-10T20:44:15.000Z",
@@ -155,6 +190,38 @@
   },
   {
     "event_type": "model_release",
+    "event_status": "announced",
+    "event_time": "2026-06-10T13:34:40.000Z",
+    "disclosed_at": "2026-06-10T13:34:40.000Z",
+    "entities": [
+      "EN-c70eca6b0f88f44d",
+      "EN-3a13916345b60fad"
+    ],
+    "action": "model_release",
+    "object": "Claude Fable 5",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-44f4156a51c515aa"
+    ],
+    "source_refs": [
+      "SA-180353e5d3f8f6b9"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-180353e5d3f8f6b9",
+        "disclosed_at": "2026-06-10T13:34:40.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-68fcce7fde89e5d7",
+    "display_title_zh": "Claude Fable 5：首个 Mythos 模型--强大、昂贵且经过严格过滤"
+  },
+  {
+    "event_type": "model_release",
     "event_status": "completed",
     "event_time": "2026-06-10T08:26:21.000Z",
     "disclosed_at": "2026-06-10T08:26:21.000Z",
@@ -228,7 +295,7 @@
     ],
     "publication_status": "verified",
     "event_id": "EV-9055cb4fa2b4ee62",
-    "display_title_zh": "AgentMail 获600万美元融资，为AI代理构建邮件服务"
+    "display_title_zh": "AgentMail 获 600 万美元融资，为 AI 智能体构建邮件服务"
   },
   {
     "event_type": "product_release",
@@ -267,7 +334,76 @@
     ],
     "publication_status": "verified",
     "event_id": "EV-0ec219a94317215f",
-    "display_title_zh": "DigitalOcean推出推理引擎，新增生产级AI功能，包括用于高效扩展代理工作负载的推理路由器"
+    "display_title_zh": "DigitalOcean 推出推理引擎，新增生产级 AI 功能，包括用于高效扩展 AI 智能体工作负载的推理路由器"
+  },
+  {
+    "event_type": "funding",
+    "event_status": "announced",
+    "event_time": "",
+    "disclosed_at": "2026-06-11T01:29:52.812Z",
+    "entities": [
+      "EN-ef292e56955a1c10",
+      "EN-96eebba49dbbf422"
+    ],
+    "action": "funding",
+    "object": "$60 million",
+    "metrics": [
+      "$60 million"
+    ],
+    "locations": [],
+    "claim_refs": [
+      "CL-65d4813f222cbf83"
+    ],
+    "source_refs": [
+      "SA-c63a47e54acc8232"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "event_time"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-c63a47e54acc8232",
+        "disclosed_at": "2026-06-11T01:29:52.812Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-c3b8772c06a25dbc",
+    "display_title_zh": "AI 基础设施成本控制初创公司 PointFive 获 6000 万美元融资，助力企业节省开支"
+  },
+  {
+    "event_type": "funding",
+    "event_status": "announced",
+    "event_time": "2026-06-10T15:00:00.000Z",
+    "disclosed_at": "2026-06-10T15:00:00.000Z",
+    "entities": [
+      "EN-a7dd4a797cf9990b"
+    ],
+    "action": "funding",
+    "object": "$7 million seed round",
+    "metrics": [
+      "$7 million"
+    ],
+    "locations": [],
+    "claim_refs": [
+      "CL-159cb23bdb16e1a0"
+    ],
+    "source_refs": [
+      "SA-77eb8930f65d985f"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-77eb8930f65d985f",
+        "disclosed_at": "2026-06-10T15:00:00.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-c0ec0c026233bea5",
+    "display_title_zh": "Datadog 资深人士创立 AI 编码初创公司 Niteshift，押注企业对抗大模型锁定"
   },
   {
     "event_type": "funding",
@@ -345,6 +481,42 @@
     "display_title_zh": "Decart 发布 Oasis 3：实时世界模型可模拟数小时逼真驾驶场景"
   },
   {
+    "event_type": "product_release",
+    "event_status": "announced",
+    "event_time": "",
+    "disclosed_at": "2026-06-11T01:29:52.929Z",
+    "entities": [
+      "EN-7d1507284a5757ca",
+      "EN-761a66c29a55bc53",
+      "EN-c2f186e231aa600d"
+    ],
+    "action": "product_release",
+    "object": "AI Agent and Tools solutions page",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-6891cf4353964bcc",
+      "CL-c31aeb7433fafca4"
+    ],
+    "source_refs": [
+      "SA-4818a90314da2af9"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "event_time"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-4818a90314da2af9",
+        "disclosed_at": "2026-06-11T01:29:52.929Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-1035aa9cbde79b2f",
+    "display_title_zh": "助力 AWS AI 智能体市场中的 Day 1 合作伙伴成功"
+  },
+  {
     "event_type": "research_result",
     "event_status": "announced",
     "event_time": "",
@@ -368,8 +540,7 @@
     ],
     "conflicts": [],
     "missing_fields": [
-      "event_time",
-      "display_title_zh"
+      "event_time"
     ],
     "update_history": [
       {
@@ -380,7 +551,7 @@
     ],
     "publication_status": "verified",
     "event_id": "EV-8ac35758179e5ce6",
-    "display_title_zh": ""
+    "display_title_zh": "AI 智能体治理鸿沟的应对之道"
   },
   {
     "event_type": "funding",
@@ -418,6 +589,42 @@
     "publication_status": "verified",
     "event_id": "EV-af590bad633fb52d",
     "display_title_zh": "超微计算机寻求70亿美元股权融资用于AI设备采购"
+  },
+  {
+    "event_type": "funding",
+    "event_status": "completed",
+    "event_time": "2026-06-10T18:05:53.000Z",
+    "disclosed_at": "2026-06-10T18:05:53.000Z",
+    "entities": [
+      "EN-8d3aa1a6f227d714",
+      "EN-c70eca6b0f88f44d"
+    ],
+    "action": "完成 350 亿美元 AI 基础设施融资",
+    "object": "Apollo 与 Blackstone 为 Anthropic 完成 350 亿美元 AI 基础设施融资",
+    "metrics": [
+      "$35 billion"
+    ],
+    "locations": [],
+    "claim_refs": [
+      "CL-1bc2e60fc0fec9fe"
+    ],
+    "source_refs": [
+      "SA-e479f38b2a986b2d"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "object"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-e479f38b2a986b2d",
+        "disclosed_at": "2026-06-10T18:05:53.000Z",
+        "status": "completed"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-8861a42a8679562a",
+    "display_title_zh": "Apollo 与 Blackstone 为 Anthropic 完成 350 亿美元 AI 基础设施融资"
   },
   {
     "event_type": "product_release",
@@ -565,6 +772,73 @@
     "display_title_zh": "ADP与斯坦福联合推出Canaries Dashboard，实时追踪AI对职业重塑的影响"
   },
   {
+    "event_type": "funding",
+    "event_status": "announced",
+    "event_time": "2026-06-10T12:00:00.000Z",
+    "disclosed_at": "2026-06-10T12:00:00.000Z",
+    "entities": [
+      "EN-7d3194f79e645c42",
+      "EN-b314f58f5f506fd2",
+      "EN-96eebba49dbbf422"
+    ],
+    "action": "funding",
+    "object": "$50 million",
+    "metrics": [
+      "$50 million"
+    ],
+    "locations": [],
+    "claim_refs": [
+      "CL-46fa87999a8de4f8"
+    ],
+    "source_refs": [
+      "SA-09b8f0ab9191eb56"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-09b8f0ab9191eb56",
+        "disclosed_at": "2026-06-10T12:00:00.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-b1138bccf5ccd86c",
+    "display_title_zh": "OpenAI 投资 AI 初创公司 Poetic，布局合规与承保任务"
+  },
+  {
+    "event_type": "pricing_change",
+    "event_status": "announced",
+    "event_time": "2026-06-10T11:05:20.000Z",
+    "disclosed_at": "2026-06-10T11:05:20.000Z",
+    "entities": [
+      "EN-5388bc10736a0eff",
+      "EN-f64660efbe61dd28"
+    ],
+    "action": "pricing_change",
+    "object": "付费订阅价格",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-204256066598b27b"
+    ],
+    "source_refs": [
+      "SA-84c1683732ef4dfe"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-84c1683732ef4dfe",
+        "disclosed_at": "2026-06-10T11:05:20.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-4942151f99b2c5ac",
+    "display_title_zh": "豆包专业版开放灰度测试，最高档年费超五千元"
+  },
+  {
     "event_type": "deployment",
     "event_status": "completed",
     "event_time": "2026-06-10T10:27:51.000Z",
@@ -606,7 +880,6 @@
     "disclosed_at": "2026-06-10T22:53:45.000Z",
     "entities": [
       "EN-bbdefa2950f49882",
-      "EN-6e7e64cf66f76a04",
       "EN-d56aa2f9908f566a"
     ],
     "action": "推出 DiffusionGemma 文本扩散模型",
@@ -707,6 +980,73 @@
     "publication_status": "verified",
     "event_id": "EV-bbc34d7bc9c02b6f",
     "display_title_zh": "阿里千问上线国内首个全周期高考志愿填报Agent，免费提供咨询服务"
+  },
+  {
+    "event_type": "capital_investment",
+    "event_status": "announced",
+    "event_time": "",
+    "disclosed_at": "2026-06-11T01:29:53.008Z",
+    "entities": [
+      "EN-7d3194f79e645c42"
+    ],
+    "action": "capital_investment",
+    "object": "every startup in the current Y Combinator batch",
+    "metrics": [
+      "$2M"
+    ],
+    "locations": [],
+    "claim_refs": [
+      "CL-08fd203492a36d2c"
+    ],
+    "source_refs": [
+      "SA-2d6915337bee8621"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "event_time"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-2d6915337bee8621",
+        "disclosed_at": "2026-06-11T01:29:53.008Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-0a0b6604250a82b8",
+    "display_title_zh": "Sam Altman 向所有 Y Combinator 初创公司提出“重磅”提议"
+  },
+  {
+    "event_type": "organization_restructuring",
+    "event_status": "planned",
+    "event_time": "2026-06-10T06:30:11.000Z",
+    "disclosed_at": "2026-06-10T06:30:11.000Z",
+    "entities": [
+      "EN-968e2d5b08687bf4",
+      "EN-5fdd673ed1fcff1d"
+    ],
+    "action": "organization_restructuring",
+    "object": "在所有子公司建立专门的人工智能部门",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-8cdd5151acce20b4"
+    ],
+    "source_refs": [
+      "SA-1a8c733ac47001de"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-1a8c733ac47001de",
+        "disclosed_at": "2026-06-10T06:30:11.000Z",
+        "status": "planned"
+      }
+    ],
+    "publication_status": "partial",
+    "event_id": "EV-5271985bba70f3d1",
+    "display_title_zh": "三星启动\"人工智能转型\"，计划2026年内培训所有员工"
   },
   {
     "event_type": "model_release",

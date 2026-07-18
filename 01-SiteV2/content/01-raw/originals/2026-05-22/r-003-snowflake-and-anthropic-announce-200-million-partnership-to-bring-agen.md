@@ -72,7 +72,7 @@ key_excerpts: [{"type":"number","text":"Snowflake and Anthropic announce $200 mi
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
-title_zh: "Snowflake与Anthropic宣布2亿美元合作，将代理式AI引入全球企业"
+title_zh: "Snowflake 与 Anthropic 宣布 2 亿美元合作，为全球企业带来 AI 智能体"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

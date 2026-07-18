@@ -72,7 +72,7 @@ key_excerpts: [{"type":"workflow_change","text":"Title: TECHSHOTS | OpenAI Launc
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
-title_zh: "TECHSHOTS | OpenAI推出Agent构建工具，与n8n和Zapier竞争AI工作流自动化市场"
+title_zh: "OpenAI 推出 AI 智能体构建器，与 n8n 和 Zapier 竞争 AI 工作流自动化市场"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

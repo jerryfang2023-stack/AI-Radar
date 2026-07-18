@@ -2,7 +2,7 @@
 id: SIG-20260716-A02
 type: signal_card
 signal_type: funding
-title: "InstaLILY，开发可自动化复杂业务特定工作的AI队友，获6000万美元融资 - SiliconANGLE"
+title: "InstaLILY，AI 智能体开发者，可自动化复杂业务工作，获 6000 万美元融资"
 date: 2026-07-16
 status: published
 source_title: "InstaLILY, a developer of AI teammates that can automate complex, business-specific work, raises $60M - SiliconANGLE"
@@ -58,12 +58,12 @@ opportunity_signals:
 signal_owner: "InstaLILY"
 
 frontend:
-  displayTitle: "InstaLILY，开发可自动化复杂业务特定工作的AI队友，获6000万美元融资 - SiliconANGLE"
+  displayTitle: "InstaLILY，AI 智能体开发者，可自动化复杂业务工作，获 6000 万美元融资"
   sourceLinks:
     - "https://siliconangle.com/2026/07/14/instalily-developer-ai-teammates-can-automate-complex-business-specific-work-raises-60m/"
 ---
 
-# InstaLILY，开发可自动化复杂业务特定工作的AI队友，获6000万美元融资 - SiliconANGLE
+# InstaLILY，AI 智能体开发者，可自动化复杂业务工作，获 6000 万美元融资
 
 ## 新闻事实
 

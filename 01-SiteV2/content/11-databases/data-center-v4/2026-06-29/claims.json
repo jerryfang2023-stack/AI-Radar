@@ -84,6 +84,28 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-7b3b9ec9d40e996b",
+    "raw_id": "RAW-3c3ed93c2084dfc4",
+    "claim_type": "funding",
+    "subject": "Didero",
+    "predicate": "funding",
+    "object": "$30 million Series A",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-e660ec816d5bdd4d"
+    },
+    "source_span": {
+      "raw_id": "RAW-3c3ed93c2084dfc4",
+      "start": 1234,
+      "end": 1441
+    },
+    "source_quote": "Didero, whose mission is to automate many of the complexities of global procurement, just raised a $30 million Series A co-led by Chemistry and Headline, with participation from Microsoft’s venture fund M12.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-60d11a22258893fd",
     "raw_id": "RAW-47fdf5679bf84975",
     "claim_type": "funding",
@@ -840,6 +862,112 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-2b748478995beb46",
+    "raw_id": "RAW-2f6e5b582271a7c4",
+    "claim_type": "acquisition",
+    "subject": "OpenAI",
+    "predicate": "acquisition",
+    "object": "Tomoro",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-bf700d3e695c87e4"
+    },
+    "source_span": {
+      "raw_id": "RAW-2f6e5b582271a7c4",
+      "start": 2160,
+      "end": 2293
+    },
+    "source_quote": "In 2026, OpenAI acquired the consulting firm Tomoro and around 150 of its engineers specifically to staff the OpenAI Applied AI team.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-fdc8eab0f27b25d6",
+    "raw_id": "RAW-ad2fc403c71f6e56",
+    "claim_type": "financial_performance",
+    "subject": "CrewAI Platform Statistics 2026: Users,",
+    "predicate": "financial_performance",
+    "object": "CrewAI Platform Statistics 2026: Users, Revenue, Adoption & Growth",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-ad2fc403c71f6e56",
+      "start": 16,
+      "end": 82
+    },
+    "source_quote": "CrewAI Platform Statistics 2026: Users, Revenue, Adoption & Growth",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-85453d27ed7f804a",
+    "raw_id": "RAW-ad2fc403c71f6e56",
+    "claim_type": "financial_performance",
+    "subject": "CrewAI Platform Statistics 2026: Users,",
+    "predicate": "financial_performance",
+    "object": "Latka reports $3.2M in 2025 revenue, while Growjo estimates $2.4M annual revenue, both of which are outstanding numbers for a platform like CrewAI.",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-ad2fc403c71f6e56",
+      "start": 4513,
+      "end": 4660
+    },
+    "source_quote": "Latka reports $3.2M in 2025 revenue, while Growjo estimates $2.4M annual revenue, both of which are outstanding numbers for a platform like CrewAI.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-5e202a661a429c34",
+    "raw_id": "RAW-ad2fc403c71f6e56",
+    "claim_type": "financial_performance",
+    "subject": "CrewAI Platform Statistics 2026: Users,",
+    "predicate": "financial_performance",
+    "object": "Third-party estimates vary. Latka reports approximately $3.2 million in 2025 revenue, while Growjo estimates around $2.4 million annually. These are not company disclosures, so it is best to contextualize them alongside CrewAI’s reported $18 million in funding and its public pricing tiers.",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-ad2fc403c71f6e56",
+      "start": 12251,
+      "end": 12541
+    },
+    "source_quote": "Third-party estimates vary. Latka reports approximately $3.2 million in 2025 revenue, while Growjo estimates around $2.4 million annually. These are not company disclosures, so it is best to contextualize them alongside CrewAI’s reported $18 million in funding and its public pricing tiers.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-07bc007c5fda2df0",
+    "raw_id": "RAW-ad2fc403c71f6e56",
+    "claim_type": "financial_performance",
+    "subject": "CrewAI Platform Statistics 2026: Users,",
+    "predicate": "financial_performance",
+    "object": "CrewAI has quickly emerged as one of the fastest-growing platforms in the AI agent ecosystem, as enterprises shift from experimenting with AI agents to deploying them in production workflows.",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-ad2fc403c71f6e56",
+      "start": 153,
+      "end": 344
+    },
+    "source_quote": "CrewAI has quickly emerged as one of the fastest-growing platforms in the AI agent ecosystem, as enterprises shift from experimenting with AI agents to deploying them in production workflows.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-21bffa6df19de6b7",
     "raw_id": "RAW-328ff33e6446980c",
     "claim_type": "funding",
@@ -1089,6 +1217,28 @@
     "source_quote": "Transformation leads responsible for moving AI from pilot to production.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-5fe1d43ea89beac8",
+    "raw_id": "RAW-1275c7cdab6dabe3",
+    "claim_type": "service_change",
+    "subject": "AWS Marketplace",
+    "predicate": "service_change",
+    "object": "Single Pane of Glass dashboard",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-6da04c8a4531e349"
+    },
+    "source_span": {
+      "raw_id": "RAW-1275c7cdab6dabe3",
+      "start": 146,
+      "end": 382
+    },
+    "source_quote": "AWS Marketplace has updated the AWS Single Pane of Glass (SPG) dashboard to provide buyers the ability to obtain centralized insights about their procurement of software and data products including AI agent solutions in AWS Marketplace.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -1509,6 +1659,28 @@
     "source_quote": "Genie is powered by new Genie Ontology , a live context layer that continuously learns your business from internal and external data, AI tools, and popular workplace apps, delivering more accurate answers, faster, at lower token costs.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-0fc50f41976365b4",
+    "raw_id": "RAW-5ef95acd2a8dd5be",
+    "claim_type": "product_release",
+    "subject": "Vercel",
+    "predicate": "product_release",
+    "object": "AI SDK 7",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-cc21939e46d52edd"
+    },
+    "source_span": {
+      "raw_id": "RAW-5ef95acd2a8dd5be",
+      "start": 0,
+      "end": 73
+    },
+    "source_quote": "AI SDK 7 is a major release for building production agents in TypeScript.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {

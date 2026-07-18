@@ -1,5 +1,43 @@
 [
   {
+    "event_type": "ipo_listing",
+    "event_status": "announced",
+    "event_time": "2026-06-04T22:43:26.000Z",
+    "disclosed_at": "2026-06-04T22:43:26.000Z",
+    "entities": [
+      "EN-79794baefaba31c3",
+      "EN-c70eca6b0f88f44d"
+    ],
+    "action": "IPO",
+    "object": "前夕驳斥对 AI 回报的质疑",
+    "metrics": [
+      "$65 billion",
+      "$965 billion"
+    ],
+    "locations": [],
+    "claim_refs": [
+      "CL-1c0071a8417c62e7",
+      "CL-80b2a8b86a9c1783",
+      "CL-71ee147de28e9f51",
+      "CL-f2284e0ef311f8b2"
+    ],
+    "source_refs": [
+      "SA-51c4473b50bb7c18"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-51c4473b50bb7c18",
+        "disclosed_at": "2026-06-04T22:43:26.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-366c3fce7982b83b",
+    "display_title_zh": "Anthropic 联合创始人 Daniela Amodei 在 IPO 前夕驳斥对 AI 回报的质疑"
+  },
+  {
     "event_type": "product_release",
     "event_status": "completed",
     "event_time": "2026-06-04T21:52:51.000Z",
@@ -156,7 +194,7 @@
     ],
     "publication_status": "verified",
     "event_id": "EV-cac9d9f31ef675ce",
-    "display_title_zh": "2026年构建AI代理的最佳开源框架"
+    "display_title_zh": "2026年构建AI智能体的最佳开源框架"
   },
   {
     "event_type": "funding",
@@ -198,7 +236,7 @@
     ],
     "publication_status": "verified",
     "event_id": "EV-6ae3594aadfcd3d8",
-    "display_title_zh": "Archestra 融资1000万美元，为AI代理接入企业数据提供中介服务"
+    "display_title_zh": "Archestra 融资 1000 万美元，为 AI 智能体接入企业数据提供中介服务"
   },
   {
     "event_type": "product_release",
@@ -355,6 +393,43 @@
     "event_type": "product_release",
     "event_status": "announced",
     "event_time": "",
+    "disclosed_at": "2026-06-05T00:46:23.242Z",
+    "entities": [
+      "EN-042e9398f2cc8902",
+      "EN-4540952d4d9138db",
+      "EN-d736115a934212d4",
+      "EN-1943e48082f97bd6"
+    ],
+    "action": "product_release",
+    "object": "Inference Engine",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-72a8999388f30c22",
+      "CL-c0f2b8ac27683b70"
+    ],
+    "source_refs": [
+      "SA-bb0e21072ca860c0"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "event_time"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-bb0e21072ca860c0",
+        "disclosed_at": "2026-06-05T00:46:23.242Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-a535c3b901d2673f",
+    "display_title_zh": "公司公告 - 市场数据"
+  },
+  {
+    "event_type": "product_release",
+    "event_status": "announced",
+    "event_time": "",
     "disclosed_at": "2026-06-05T00:46:23.264Z",
     "entities": [
       "EN-9fbf261b62c1d7c0",
@@ -427,5 +502,41 @@
     "publication_status": "verified",
     "event_id": "EV-bc4ac955cd26b969",
     "display_title_zh": "Anthropic 新咨询业务完成首次收购"
+  },
+  {
+    "event_type": "acquisition",
+    "event_status": "announced",
+    "event_time": "",
+    "disclosed_at": "2026-06-05T00:46:23.278Z",
+    "entities": [
+      "EN-4de4a07ad031569c",
+      "EN-96eebba49dbbf422"
+    ],
+    "action": "acquisition",
+    "object": "StackAI",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-6dac873d0c2224a1",
+      "CL-d1770946d31f0398",
+      "CL-4d0ab17108cbab02"
+    ],
+    "source_refs": [
+      "SA-aada9d664ec1973e"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "event_time"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-aada9d664ec1973e",
+        "disclosed_at": "2026-06-05T00:46:23.278Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-6a7f9d990732e4e2",
+    "display_title_zh": "企业软件供应商正在收购AI执行层"
   }
 ]

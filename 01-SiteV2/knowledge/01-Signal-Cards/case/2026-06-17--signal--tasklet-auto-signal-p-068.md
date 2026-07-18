@@ -2,7 +2,7 @@
 id: SIG-20260617-A14
 type: signal_card
 signal_type: case
-title: "Tasklet：面向知识工作的云代理操作系统 | Y Combinator"
+title: "Tasklet：面向知识工作的云代理操作系统"
 date: 2026-06-17
 status: published
 source_title: "Tasklet: The cloud agent operating system for knowledge work | Y Combinator"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Tasklet"
 
 frontend:
-  displayTitle: "Tasklet：面向知识工作的云代理操作系统 | Y Combinator"
+  displayTitle: "Tasklet：面向知识工作的云代理操作系统"
   sourceLinks:
     - "https://ycombinator.com/companies/tasklet-2"
 ---
 
-# Tasklet：面向知识工作的云代理操作系统 | Y Combinator
+# Tasklet：面向知识工作的云代理操作系统
 
 ## 新闻事实
 

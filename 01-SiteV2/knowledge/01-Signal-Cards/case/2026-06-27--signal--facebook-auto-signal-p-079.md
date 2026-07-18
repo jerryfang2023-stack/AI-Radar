@@ -2,7 +2,7 @@
 id: SIG-20260627-A14
 type: signal_card
 signal_type: case
-title: "企业AI代理现已承担实际工作。它们进行身份验证..."
+title: "企业AI智能体已开始执行实际工作。它们进行身份验证..."
 date: 2026-06-27
 status: published
 source_title: "Enterprise AI agents are doing real work now. They authenticate ..."
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Facebook"
 
 frontend:
-  displayTitle: "企业AI代理现已承担实际工作。它们进行身份验证..."
+  displayTitle: "企业AI智能体已开始执行实际工作。它们进行身份验证..."
   sourceLinks:
     - "https://www.facebook.com/observeai/videos/03-observe-simulation-ceo-final-1mp4/1008531298776330/"
 ---
 
-# 企业AI代理现已承担实际工作。它们进行身份验证...
+# 企业AI智能体已开始执行实际工作。它们进行身份验证...
 
 ## 新闻事实
 

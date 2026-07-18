@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-070
 title: "ServiceNow extends agentic AI governance from desktops to data centers with NVIDIA – Company Announcement - FT.com"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "ServiceNow 借助 NVIDIA 将 AI 智能体治理从桌面扩展到数据中心"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://markets.ft.com/data/announce/detail?dockey=600-202605051259BIZWIRE_USPRX____20260505_BW530706-1"
 canonical_url: "https://markets.ft.com/data/announce/detail?dockey=600-202605051259BIZWIRE_USPRX____20260505_BW530706-1"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-09T03:05:45.206Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # ServiceNow extends agentic AI governance from desktops to data centers with NVIDIA – Company Announcement - FT.com

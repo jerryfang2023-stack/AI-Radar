@@ -72,7 +72,7 @@ key_excerpts: [{"type":"funding","text":"Relevance AI raises $24M to help busine
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
-title_zh: "Relevance AI融资2400万美元，助力企业构建AI代理"
+title_zh: "Relevance AI 获 2400 万美元融资，助力企业构建 AI 智能体"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

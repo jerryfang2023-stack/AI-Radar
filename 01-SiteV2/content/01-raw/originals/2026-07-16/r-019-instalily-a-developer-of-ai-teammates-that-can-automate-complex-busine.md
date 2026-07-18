@@ -2,7 +2,7 @@
 schema_version: raw-evidence-v2
 raw_id: R-019
 title: "InstaLILY, a developer of AI teammates that can automate complex, business-specific work, raises $60M - SiliconANGLE"
-title_zh: "InstaLILY，开发可自动化复杂业务特定工作的AI队友，获6000万美元融资 - SiliconANGLE"
+title_zh: "InstaLILY，AI 智能体开发者，可自动化复杂业务工作，获 6000 万美元融资"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 original_url: "https://siliconangle.com/2026/07/14/instalily-developer-ai-teammates-can-automate-complex-business-specific-work-raises-60m/"

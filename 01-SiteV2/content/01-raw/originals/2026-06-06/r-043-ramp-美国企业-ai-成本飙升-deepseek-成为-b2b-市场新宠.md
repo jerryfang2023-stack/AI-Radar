@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"美国企业 AI 累计投入突破 1 万
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "Ramp：美国企业 AI 成本飙升，DeepSeek 成为 B2B 市场新宠"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Ramp：美国企业 AI 成本飙升，DeepSeek 成为 B2B 市场新宠

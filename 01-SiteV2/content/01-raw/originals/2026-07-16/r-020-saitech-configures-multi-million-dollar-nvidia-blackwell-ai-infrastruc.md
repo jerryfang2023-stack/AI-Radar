@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-020
 title: "Saitech Configures Multi-Million-Dollar NVIDIA Blackwell AI Infrastructure for a Global Financial Technology Company"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "Saitech 为一家全球金融科技公司配置价值数百万美元的 NVIDIA Blackwell AI 基础设施"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.prnewswire.com/news-releases/saitech-configures-multi-million-dollar-nvidia-blackwell-ai-infrastructure-for-a-global-financial-technology-company-302826255.html"
 canonical_url: "https://prnewswire.com/news-releases/saitech-configures-multi-million-dollar-nvidia-blackwell-ai-infrastructure-for-a-global-financial-technology-company-302826255.html"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-16T02:39:33.519Z
 theme: ai-hardware-scenario-service-signal
 keyword_group: ai-hardware-scenario-service-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Saitech Configures Multi-Million-Dollar NVIDIA Blackwell AI Infrastructure for a Global Financial Technology Company

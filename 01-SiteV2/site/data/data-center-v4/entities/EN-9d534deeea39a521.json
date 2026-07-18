@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-18T04:59:59.870Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 1250,
+    "quarantinedEventCount": 11
+  },
+  "entity": {
+    "id": "EN-9d534deeea39a521",
+    "name": "Dragonfly",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-f734010431e37500"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-06-25",
+    "lastSeen": "2026-06-25",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-f734010431e37500"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-f734010431e37500",
+        "dataDate": "2026-06-25",
+        "date": "2026-06-25",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "高通推出 Dragonfly 数据中心产品组合：HBC 架构、C1000 CPU、AI300 推理加速器",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "data_infrastructure",
+            "dimensionName": "产品形态",
+            "name": "数据与模型基础设施"
+          }
+        ],
+        "entityIds": [
+          "EN-42a64c68a4a98ad5",
+          "EN-9d534deeea39a521"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

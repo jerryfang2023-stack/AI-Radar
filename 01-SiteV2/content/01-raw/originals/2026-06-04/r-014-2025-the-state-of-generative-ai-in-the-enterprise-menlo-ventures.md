@@ -72,7 +72,7 @@ key_excerpts: [{"type":"number","text":"The largest share, $19 billion, went to 
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
-title_zh: "2025：企业生成式AI现状 | Menlo Ventures"
+title_zh: "2025：企业级生成式 AI 现状"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

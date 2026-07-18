@@ -2,7 +2,7 @@
 schema_version: raw-evidence-v2
 raw_id: R-013
 title: "AI infrastructure startup Fireworks closes $1.5B round at $17.5B valuation - SiliconANGLE"
-title_zh: "AI基础设施初创公司Fireworks完成15亿美元融资，估值达175亿美元"
+title_zh: "AI 基础设施初创公司 Fireworks 完成 15 亿美元融资，估值达 175 亿美元"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 original_url: "https://siliconangle.com/2026/07/16/ai-infrastructure-startup-fireworks-closes-1-5b-round-17-5b-valuation/"

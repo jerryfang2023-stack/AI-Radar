@@ -2,7 +2,7 @@
 
 Status: current  
 Product version: `SITE-V4.0-data-center`  
-Data versions: `RAW-V3.0`, `EVENT-V1.0`, `FDE-V2.0`, `HARDWARE-V1.0`, `TAG-V4.0`
+Data versions: `RAW-V3.0`, `EVENT-V1.1`, `FDE-V2.0`, `HARDWARE-V1.0`, `TAG-V4.0`
 
 ## Boundary
 

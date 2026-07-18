@@ -72,7 +72,7 @@ key_excerpts: [{"type":"funding","text":"AI Agent #startups are rewriting the VC
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
-title_zh: "AI代理初创公司：重写风投融资规则，融资额达$100..."
+title_zh: "AI 智能体初创公司：改写风投融资规则，融资额达 $100 ..."
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

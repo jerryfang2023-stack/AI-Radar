@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-020
 title: "95% of AI Projects Fail: The Hidden Cause | THE D*AI*LY BRIEF"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "95% 的 AI 项目失败：隐藏原因 | THE D*AI*LY BRIEF"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.beri.net/article/servicenow-accenture-fde-95-percent-pilot-failure-2026"
 canonical_url: "https://beri.net/article/servicenow-accenture-fde-95-percent-pilot-failure-2026"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-06T02:21:26.809Z
 theme: enterprise-ai-implementation-signal
 keyword_group: enterprise-ai-implementation-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 95% of AI Projects Fail: The Hidden Cause | THE D*AI*LY BRIEF

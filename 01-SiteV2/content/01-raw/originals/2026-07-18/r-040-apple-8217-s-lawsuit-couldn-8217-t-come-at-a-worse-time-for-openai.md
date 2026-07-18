@@ -3,9 +3,9 @@ schema_version: raw-evidence-v2
 raw_id: R-040
 title: "Apple&#8217;s lawsuit couldn&#8217;t come at a worse time for OpenAI"
 title_zh: "苹果对OpenAI的诉讼来得不是时候"
-title_translation_status: translated
-title_translation_method: deepseek_title_translation
-title_translation_model: deepseek-v4-flash
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 original_url: "https://techcrunch.com/podcast/apples-lawsuit-couldnt-come-at-a-worse-time-for-openai/"
 canonical_url: "https://techcrunch.com/podcast/apples-lawsuit-couldnt-come-at-a-worse-time-for-openai"
 source_name: "TechCrunch AI"

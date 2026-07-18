@@ -3,9 +3,9 @@ schema_version: raw-evidence-v2
 raw_id: R-062
 title: "Just like Deepseek, China&#039;s Kimi K3 is forcing Western AI labs to question their compute advantage"
 title_zh: "如同Deepseek，中国的Kimi K3正迫使西方AI实验室质疑其算力优势"
-title_translation_status: translated
-title_translation_method: deepseek_title_translation
-title_translation_model: deepseek-v4-flash
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 original_url: "https://the-decoder.com/just-like-deepseek-chinas-kimi-k3-is-forcing-western-ai-labs-to-question-their-compute-advantage/"
 canonical_url: "https://the-decoder.com/just-like-deepseek-chinas-kimi-k3-is-forcing-western-ai-labs-to-question-their-compute-advantage"
 source_name: "The Decoder AI News"

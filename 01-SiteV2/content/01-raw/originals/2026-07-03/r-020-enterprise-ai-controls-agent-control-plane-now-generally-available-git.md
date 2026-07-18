@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-020
 title: "Enterprise AI Controls & agent control plane now generally available - GitHub Changelog"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "企业AI控制与智能体控制平面现已全面可用 - GitHub 更新日志"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://github.blog/changelog/2026-02-26-enterprise-ai-controls-agent-control-plane-now-generally-available/"
 canonical_url: "https://github.blog/changelog/2026-02-26-enterprise-ai-controls-agent-control-plane-now-generally-available"
 source_name: "keyword search / Anysearch"
@@ -78,6 +78,7 @@ fact_extraction_completed_at: 2026-07-03T01:59:31.129Z
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Enterprise AI Controls & agent control plane now generally available - GitHub Changelog

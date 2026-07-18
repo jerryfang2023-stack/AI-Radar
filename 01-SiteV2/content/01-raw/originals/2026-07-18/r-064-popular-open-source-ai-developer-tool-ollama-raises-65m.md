@@ -3,9 +3,9 @@ schema_version: raw-evidence-v2
 raw_id: R-064
 title: "Popular open source AI developer tool Ollama raises $65M ..."
 title_zh: "热门开源AI开发者工具Ollama融资6500万美元..."
-title_translation_status: translated
-title_translation_method: deepseek_title_translation
-title_translation_model: deepseek-v4-flash
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 original_url: "https://techcrunch.com/2026/07/09/popular-open-source-ai-developer-tool-ollama-raises-65m-grows-to-nearly-9m-users/"
 canonical_url: "https://techcrunch.com/2026/07/09/popular-open-source-ai-developer-tool-ollama-raises-65m-grows-to-nearly-9m-users"
 source_name: "keyword search / Anysearch"

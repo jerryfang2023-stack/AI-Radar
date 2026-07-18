@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-087
 title: "Introducing AI agents and tools in AWS Marketplace - AWS"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "AWS Marketplace 推出 AI 智能体与工具"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://aws.amazon.com/about-aws/whats-new/2025/07/ai-agents-tools-aws-marketplace/"
 canonical_url: "https://aws.amazon.com/about-aws/whats-new/2025/07/ai-agents-tools-aws-marketplace"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-08T04:39:26.117Z
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Introducing AI agents and tools in AWS Marketplace - AWS

@@ -72,7 +72,7 @@ key_excerpts: [{"type":"company_action","text":"PaperClip AI: Build Autonomous A
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
-title_zh: "CopilotKit的AI代理革新应用界面 - LinkedIn"
+title_zh: "CopilotKit 的 AI 智能体革新应用界面 - LinkedIn"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

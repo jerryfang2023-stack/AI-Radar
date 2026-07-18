@@ -72,7 +72,7 @@ key_excerpts: [{"type":"funding","text":"# Fire AI Secures Pre-Seed Funding from
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
-title_zh: "Fire AI从Venture Catalysts获得种子轮前融资"
+title_zh: "Fire AI 从 Venture Catalysts 获得种子轮前融资"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

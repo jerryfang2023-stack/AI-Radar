@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-019
 title: "Supermicro Announces Proposed $7.0 Billion of Equity and Equity-linked Financing Transactions To Fund AI Orders | Supermicro"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "Supermicro 宣布拟进行 70 亿美元股权及股权关联融资交易，以支持 AI 订单"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.supermicro.com/en/pressreleases/supermicro-announces-proposed-70-billion-equity-and-equity-linked-financing"
 canonical_url: "https://supermicro.com/en/pressreleases/supermicro-announces-proposed-70-billion-equity-and-equity-linked-financing"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-14T01:56:51.371Z
 theme: ai-hardware-trend-innovation-signal
 keyword_group: ai-hardware-trend-innovation-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Supermicro Announces Proposed $7.0 Billion of Equity and Equity-linked Financing Transactions To Fund AI Orders | Supermicro

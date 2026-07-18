@@ -210,6 +210,28 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-f159d7ab58bf43d5",
+    "raw_id": "RAW-41f03d0a1a1b5fc5",
+    "claim_type": "product_release",
+    "subject": "Claude Code",
+    "predicate": "product_release",
+    "object": "v2.1.199",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1,
+      "model_candidate_id": "MAC-e8584174a1146924"
+    },
+    "source_span": {
+      "raw_id": "RAW-41f03d0a1a1b5fc5",
+      "start": 186,
+      "end": 194
+    },
+    "source_quote": "v2.1.199",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-a3288fc200d509a3",
     "raw_id": "RAW-92d60c0df2942572",
     "claim_type": "funding",
@@ -375,6 +397,50 @@
     "source_quote": "General Analysis maps AI applications and agents, red teams prompts, retrieval, tools, MCP servers, browser actions, permissions, and business workflows, then turns findings into evidence your team can reproduce and retest.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-7f05b9f32f664b05",
+    "raw_id": "RAW-859532d2a3d1e523",
+    "claim_type": "product_release",
+    "subject": "Anthropic",
+    "predicate": "product_release",
+    "object": "Claude Managed Agents",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-849d582fbdb83ddb"
+    },
+    "source_span": {
+      "raw_id": "RAW-859532d2a3d1e523",
+      "start": 0,
+      "end": 129
+    },
+    "source_quote": "Today, we're launching Claude Managed Agents, a suite of composable APIs for building and deploying cloud-hosted agents at scale.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-de43b46730bbf6ef",
+    "raw_id": "RAW-ff01738559305ad2",
+    "claim_type": "product_release",
+    "subject": "GitHub",
+    "predicate": "product_release",
+    "object": "API support for enterprise-wide custom agent definitions",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-939b6aaaf6626f33"
+    },
+    "source_span": {
+      "raw_id": "RAW-ff01738559305ad2",
+      "start": 2764,
+      "end": 2891
+    },
+    "source_quote": "API support is available to programmatically apply enterprise-wide custom agent definitions for greater control and compliance.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -1068,6 +1134,50 @@
     "source_quote": "其专为简化本地 AI 环境部署而设计， 能自动完成 OpenClaw、AI 模型及各项必要软件组件的安装与设定 。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-6aed2233499f480f",
+    "raw_id": "RAW-e12b82874bf30623",
+    "claim_type": "policy_regulation",
+    "subject": "Cloudflare",
+    "predicate": "policy_regulation",
+    "object": "AI 代理与训练爬虫访问含广告的网页",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 1,
+      "model_candidate_id": "MAC-0c03f815702fe1ae"
+    },
+    "source_span": {
+      "raw_id": "RAW-e12b82874bf30623",
+      "start": 92,
+      "end": 134
+    },
+    "source_quote": "计划在 2026 年 9 月 15 日默认禁止 AI 代理与训练爬虫访问含广告的网页",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-39176f8a329968b3",
+    "raw_id": "RAW-3c65bec9bfc66997",
+    "claim_type": "organization_restructuring",
+    "subject": "Microsoft",
+    "predicate": "organization_restructuring",
+    "object": "6,000-person AI deployment team",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-ca45b9430bbbdd3f"
+    },
+    "source_span": {
+      "raw_id": "RAW-3c65bec9bfc66997",
+      "start": 98,
+      "end": 207
+    },
+    "source_quote": "Microsoft is building a 6,000-person AI deployment team to help businesses implement artificial intelligence.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   }
 ]

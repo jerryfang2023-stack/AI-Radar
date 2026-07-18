@@ -2,7 +2,7 @@
 id: SIG-20260622-A03
 type: signal_card
 signal_type: case
-title: "2026年AI代理采用统计：企业AI使用情况 | GoGloby"
+title: "2026年AI智能体采用统计：企业AI使用情况"
 date: 2026-06-22
 status: published
 source_title: "AI Agent Adoption Statistics 2026: Enterprise AI Usage | GoGloby"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Gogloby"
 
 frontend:
-  displayTitle: "2026年AI代理采用统计：企业AI使用情况 | GoGloby"
+  displayTitle: "2026年AI智能体采用统计：企业AI使用情况"
   sourceLinks:
     - "https://gogloby.com/insights/ai-adoption-statistics/"
 ---
 
-# 2026年AI代理采用统计：企业AI使用情况 | GoGloby
+# 2026年AI智能体采用统计：企业AI使用情况
 
 ## 新闻事实
 

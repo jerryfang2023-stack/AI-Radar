@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Fazeshift, a startup that uses AI agent
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "独家：Fazeshift获1700万美元融资，投资者押注AI驱动的财务运营，从应收账款起步"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Exclusive: Fazeshift Scores $17M As Investors Bet On AI-Powered Finance Ops, Starting With Accounts Receivable

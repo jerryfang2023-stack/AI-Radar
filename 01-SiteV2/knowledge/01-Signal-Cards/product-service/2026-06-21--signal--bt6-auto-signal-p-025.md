@@ -2,7 +2,7 @@
 id: SIG-20260621-A18
 type: signal_card
 signal_type: product_service
-title: "⚡️越狱AGI：解放者普林尼与约翰·V谈红队测试、BT6与AI安全未来"
+title: "⚡️突破AGI限制：Pliny the Liberator 与 John V 谈红队测试、BT6 及 AI 安全未来"
 date: 2026-06-21
 status: published
 source_title: "Jailbreaking AGI: Pliny the Liberator &amp; John V on Red Teaming, BT6, and the Future of AI Security"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "BT6"
 
 frontend:
-  displayTitle: "⚡️越狱AGI：解放者普林尼与约翰·V谈红队测试、BT6与AI安全未来"
+  displayTitle: "⚡️突破AGI限制：Pliny the Liberator 与 John V 谈红队测试、BT6 及 AI 安全未来"
   sourceLinks:
     - "https://www.latent.space/p/jailbreaking-agi-pliny-the-liberator"
 ---
 
-# ⚡️越狱AGI：解放者普林尼与约翰·V谈红队测试、BT6与AI安全未来
+# ⚡️突破AGI限制：Pliny the Liberator 与 John V 谈红队测试、BT6 及 AI 安全未来
 
 ## 新闻事实
 

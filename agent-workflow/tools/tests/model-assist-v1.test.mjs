@@ -42,6 +42,15 @@ test("rejects a model Claim when its quote is not an exact source span", () => {
   assert.match(evaluateModelAssistCandidate(result, body).join(" "), /source_quote_mismatch/u);
 });
 
+test("rejects exact spans that only contain page boilerplate", () => {
+  const body = "Most Popular: Aina raised $5.5 Mn from Info Edge to build an AI hardware interface.";
+  const candidate = claimCandidate(body);
+  candidate.evidence[0] = { start: 0, end: body.length, quote: body };
+  const result = withGateResult(candidate, body);
+  assert.equal(result.status, "rejected");
+  assert.match(evaluateModelAssistCandidate(result, body).join(" "), /source_boilerplate_evidence/u);
+});
+
 test("entity resolution can never auto-promote", () => {
   const body = "Acme announced Acme Cloud.";
   const candidate = withGateResult({
@@ -53,6 +62,29 @@ test("entity resolution can never auto-promote", () => {
   }, body);
   assert.equal(candidate.status, "requires_review");
   assert.deepEqual(evaluateModelAssistCandidate(candidate, body), []);
+});
+
+test("qa repair with a valid claim still requires explicit review", () => {
+  const body = "Aina raised $5.5 Mn from Info Edge to build an AI hardware interface.";
+  const candidate = withGateResult({
+    ...claimCandidate(body),
+    task_type: "qa_repair",
+    proposal: { action: "extract_claim", reason: "source supports the event", claims: [{ event_type: "funding", subject: "Aina", object: "$5.5 Mn from Info Edge", evidence_index: 0 }] },
+  }, body);
+  assert.equal(candidate.status, "requires_review");
+  assert.deepEqual(evaluateModelAssistCandidate(candidate, body), []);
+});
+
+test("entity resolution rejects self-referential same-entity targets", () => {
+  const body = "Acme announced Acme Cloud.";
+  const candidate = withGateResult({
+    ...claimCandidate(body),
+    task_type: "entity_resolution",
+    proposal: { decision: "same_entity", candidate_name: "Acme", canonical_name: "Acme" },
+    evidence: [{ start: 0, end: body.length, quote: body }],
+  }, body);
+  assert.equal(candidate.status, "rejected");
+  assert.match(evaluateModelAssistCandidate(candidate, body).join(" "), /invalid_same_entity_target/u);
 });
 
 test("community translation detection targets English, not Chinese mixed with product names", () => {

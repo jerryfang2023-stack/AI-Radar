@@ -2,7 +2,7 @@
 id: SIG-20260705-A04
 type: signal_card
 signal_type: case
-title: "百时美施贵宝AI驱动的采购改革内幕 | CFO Dive"
+title: "百时美施贵宝AI驱动的采购改革内幕"
 date: 2026-07-05
 status: published
 source_title: "Inside Bristol Myers’ AI-powered procurement overhaul | CFO Dive"
@@ -55,12 +55,12 @@ opportunity_signals:
 signal_owner: "Inside Bristol Myers’ AI"
 
 frontend:
-  displayTitle: "百时美施贵宝AI驱动的采购改革内幕 | CFO Dive"
+  displayTitle: "百时美施贵宝AI驱动的采购改革内幕"
   sourceLinks:
     - "https://www.cfodive.com/news/inside-bristol-myers-ai-powered-procurement-overhaul/822188/?.tsrc=rss"
 ---
 
-# 百时美施贵宝AI驱动的采购改革内幕 | CFO Dive
+# 百时美施贵宝AI驱动的采购改革内幕
 
 ## 新闻事实
 

@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-024
 title: "Flex and Cerebras Scale U.S. AI Manufacturing"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "Flex 与 Cerebras 扩大美国 AI 制造规模"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.cerebras.ai/press-release/flex-and-cerebras-expand-partnership-to-scale-american-manufacturing-of-cerebras-ai"
 canonical_url: "https://cerebras.ai/press-release/flex-and-cerebras-expand-partnership-to-scale-american-manufacturing-of-cerebras-ai"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-16T02:39:33.553Z
 theme: ai-hardware-scenario-service-signal
 keyword_group: ai-hardware-scenario-service-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Flex and Cerebras Scale U.S. AI Manufacturing

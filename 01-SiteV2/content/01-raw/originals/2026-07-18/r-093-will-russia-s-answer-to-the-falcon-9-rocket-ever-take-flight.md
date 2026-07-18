@@ -3,9 +3,9 @@ schema_version: raw-evidence-v2
 raw_id: R-093
 title: "Will Russia's answer to the Falcon 9 rocket ever take flight?"
 title_zh: "俄罗斯版的猎鹰9号火箭能否升空？"
-title_translation_status: translated
-title_translation_method: deepseek_title_translation
-title_translation_model: deepseek-v4-flash
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 original_url: "https://arstechnica.com/space/2026/07/will-russias-answer-to-the-falcon-9-rocket-ever-take-flight/"
 canonical_url: "https://arstechnica.com/space/2026/07/will-russias-answer-to-the-falcon-9-rocket-ever-take-flight"
 source_name: "Ars Technica AI"

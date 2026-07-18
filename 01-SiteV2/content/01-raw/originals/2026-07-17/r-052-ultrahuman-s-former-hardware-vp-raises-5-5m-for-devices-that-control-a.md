@@ -2,7 +2,7 @@
 schema_version: raw-evidence-v2
 raw_id: R-052
 title: "Ultrahuman's former hardware VP raises $5.5M for devices that control AI agents, not just record you | TechCrunch"
-title_zh: "Ultrahuman前硬件副总裁为控制AI代理的设备融资550万美元，而非仅记录你 | TechCrunch"
+title_zh: "Ultrahuman 前硬件副总裁为控制 AI 智能体的设备筹集 550 万美元，而非仅记录你"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 original_url: "https://techcrunch.com/2026/07/16/ultrahumans-former-hardware-vp-raises-5-5m-for-devices-that-control-ai-agents-not-just-record-you/"

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"When it comes to African business b
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Absa 银行：智能体企业蓝图 - Salesforce"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Absa Bank: A Blueprint for the Agentic Enterprise - Salesforce

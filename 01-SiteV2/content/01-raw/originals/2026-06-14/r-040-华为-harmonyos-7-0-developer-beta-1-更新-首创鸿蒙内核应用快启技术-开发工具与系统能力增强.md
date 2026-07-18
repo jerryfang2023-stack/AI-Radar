@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"华为于6月12日HDC 2026发布HarmonyO
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "华为 HarmonyOS 7.0 Developer Beta 1 更新：首创鸿蒙内核应用快启技术，开发工具与系统能力增强"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 华为 HarmonyOS 7.0 Developer Beta 1 更新：首创鸿蒙内核应用快启技术，开发工具与系统能力增强

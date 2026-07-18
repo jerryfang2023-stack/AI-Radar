@@ -1,5 +1,27 @@
 [
   {
+    "claim_id": "CL-7c6d7797abc18a8c",
+    "raw_id": "RAW-31a0c8dfb33a39e1",
+    "claim_type": "funding",
+    "subject": "Venice AI",
+    "predicate": "funding",
+    "object": "$65 million Series A at $1 billion valuation",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1,
+      "model_candidate_id": "MAC-a3c376c43d092109"
+    },
+    "source_span": {
+      "raw_id": "RAW-31a0c8dfb33a39e1",
+      "start": 1665,
+      "end": 1786
+    },
+    "source_quote": "Venice AI on Wednesday said it had raised a $65 million Series A at a $1 billion valuation, its first external fundraise.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-3cf1d0d1a1f86ff3",
     "raw_id": "RAW-dcb3cc85f861da77",
     "claim_type": "product_release",
@@ -81,6 +103,28 @@
     "source_quote": "Background agents launched from claude agents now commit, push, and open a draft PR when they finish code work in a worktree, instead of stopping to ask",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-51ad135c82b9455b",
+    "raw_id": "RAW-c6ccf72d3abbc822",
+    "claim_type": "service_change",
+    "subject": "Google",
+    "predicate": "service_change",
+    "object": "Google Tasks and Google Keep integration",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-af4843e3373ffc20"
+    },
+    "source_span": {
+      "raw_id": "RAW-c6ccf72d3abbc822",
+      "start": 1679,
+      "end": 1727
+    },
+    "source_quote": "Google has now added support for Tasks and Keep.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -252,6 +296,50 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-b2f4a42a6dbb6c9d",
+    "raw_id": "RAW-dd6086b75f262bda",
+    "claim_type": "policy_regulation",
+    "subject": "U.S. government",
+    "predicate": "policy_regulation",
+    "object": "Anthropic Mythos and Fable models export license requirement",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-f0ae976a47fa924d"
+    },
+    "source_span": {
+      "raw_id": "RAW-dd6086b75f262bda",
+      "start": 108,
+      "end": 225
+    },
+    "source_quote": "The U.S. has lifted a requirement that Anthropic obtain a license before exporting its Mythos and Fable models abroad",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-0e513e321c371d6b",
+    "raw_id": "RAW-dd6086b75f262bda",
+    "claim_type": "policy_regulation",
+    "subject": "U.S. government",
+    "predicate": "policy_regulation",
+    "object": "Mythos and Fable models export-restricted technologies list addition",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3,
+      "model_candidate_id": "MAC-f0ae976a47fa924d"
+    },
+    "source_span": {
+      "raw_id": "RAW-dd6086b75f262bda",
+      "start": 440,
+      "end": 540
+    },
+    "source_quote": "On June 12, the U.S. government had added the products to its list of export-restricted technologies",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-327e94661223194f",
     "raw_id": "RAW-ceabaff186bacceb",
     "claim_type": "partnership",
@@ -333,6 +421,28 @@
     "source_quote": "McKinsey research shows that 62 percent of organisations are experimenting with AI agents, but only 23 percent have scaled an agentic system inside their enterprise. The constraint is no longer model capability. It is execution: the ability to translate model capability into governed, auditable, production-grade workflows that hold up under regulatory scrutiny. This collaboration is built to close that gap, compressing the path from transformation strategy to operating workflow from months to weeks.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-7c1f8792fffc831d",
+    "raw_id": "RAW-af875817ca7e3b87",
+    "claim_type": "product_release",
+    "subject": "Smartsheet",
+    "predicate": "product_release",
+    "object": "Smartsheet MCP Connector for Claude",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-391fa5c3d2411cbe"
+    },
+    "source_span": {
+      "raw_id": "RAW-af875817ca7e3b87",
+      "start": 1323,
+      "end": 1539
+    },
+    "source_quote": "The Smartsheet MCP Connector for Claude lets users view, create, and manage their Smartsheet work directly from a Claude conversation. Launched in March 2026, it reached 1,400+ organizations within the first 30 days.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -630,6 +740,28 @@
     "source_quote": "The contents of Cloudflare managed robots.txt with the added parameter.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-dbf9380eb898c2fe",
+    "raw_id": "RAW-b28337598e399229",
+    "claim_type": "policy_regulation",
+    "subject": "Godot Foundation",
+    "predicate": "policy_regulation",
+    "object": "AI-authored code contributions",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 1,
+      "model_candidate_id": "MAC-da47bcfc5c03cabd"
+    },
+    "source_span": {
+      "raw_id": "RAW-b28337598e399229",
+      "start": 718,
+      "end": 925
+    },
+    "source_quote": "the Foundation announced that Godot's guidelines for contributors will soon be amended to forbid AI-authored code, pull requests submitted by AI agents, and AI-generated text in human-to-human communication.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -1617,6 +1749,116 @@
     "source_quote": "本轮上线的“肖像保护功能”已累计保护 180 余位头部达人，主动拦截侵权账号达 9.2 万个 。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e29063d0f9307e88",
+    "raw_id": "RAW-de146b690ac4d3f8",
+    "claim_type": "deployment",
+    "subject": "Zillow",
+    "predicate": "deployment",
+    "object": "Glean",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1,
+      "model_candidate_id": "MAC-efad18d8b7783980"
+    },
+    "source_span": {
+      "raw_id": "RAW-de146b690ac4d3f8",
+      "start": 1011,
+      "end": 1245
+    },
+    "source_quote": "Zillow deployed Glean across its entire workforce, connecting 30+ data sources with 138M documents and enabling teams to build 3,400+ AI agents using natural language — achieving 80%+ adoption and saving employees 1.5+ hours per week.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-cea2356b8e4f02ed",
+    "raw_id": "RAW-de146b690ac4d3f8",
+    "claim_type": "deployment",
+    "subject": "Zillow",
+    "predicate": "deployment",
+    "object": "Self Review agent",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2,
+      "model_candidate_id": "MAC-efad18d8b7783980"
+    },
+    "source_span": {
+      "raw_id": "RAW-de146b690ac4d3f8",
+      "start": 2581,
+      "end": 2793
+    },
+    "source_quote": "One standout deployment was the Self Review agent, which guided employees through performance review self-assessments and was run approximately 10,000 times, contributing to a 7% increase in review participation.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-0ad08bb40463a037",
+    "raw_id": "RAW-de146b690ac4d3f8",
+    "claim_type": "deployment",
+    "subject": "Zillow",
+    "predicate": "deployment",
+    "object": "Glean MCP with developer tools",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3,
+      "model_candidate_id": "MAC-efad18d8b7783980"
+    },
+    "source_span": {
+      "raw_id": "RAW-de146b690ac4d3f8",
+      "start": 2794,
+      "end": 2938
+    },
+    "source_quote": "Zillow also integrated Glean MCP with developer tools including Cursor and Claude Code, extending AI-assisted search into engineering workflows.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a40b711c0561e75c",
+    "raw_id": "RAW-27beb3eae0492717",
+    "claim_type": "acquisition",
+    "subject": "Salesforce Inc.",
+    "predicate": "acquisition",
+    "object": "Fin",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-7e405a39de776c53"
+    },
+    "source_span": {
+      "raw_id": "RAW-27beb3eae0492717",
+      "start": 0,
+      "end": 131
+    },
+    "source_quote": "Salesforce Inc. has agreed to buy Fin, a firm that develops artificial intelligence-powered customer agents, for about $3.6 billion",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e0d5c7d729d4aed0",
+    "raw_id": "RAW-c3131b0c5a674edd",
+    "claim_type": "product_release",
+    "subject": "Apple",
+    "predicate": "product_release",
+    "object": "Safari Technology Preview 247 with MCP server support",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-df54c98dd414bf7c"
+    },
+    "source_span": {
+      "raw_id": "RAW-c3131b0c5a674edd",
+      "start": 44,
+      "end": 93
+    },
+    "source_quote": "宣布在 Safari 技术预览版 247 中，引入支持 MCP 服务器，可用于加速开发和调试流程。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   }
 ]

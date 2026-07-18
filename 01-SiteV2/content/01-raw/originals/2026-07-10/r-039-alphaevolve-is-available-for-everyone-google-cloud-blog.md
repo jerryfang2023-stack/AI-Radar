@@ -2,7 +2,7 @@
 schema_version: raw-evidence-v2
 raw_id: R-039
 title: "AlphaEvolve is available for everyone | Google Cloud Blog"
-title_zh: "AlphaEvolve现已面向所有人开放 | Google Cloud博客"
+title_zh: "AlphaEvolve现已面向所有人开放"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 original_url: "https://cloud.google.com/blog/products/ai-machine-learning/alphaevolve-is-available-for-everyone"

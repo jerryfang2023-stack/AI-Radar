@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T01:57:40.269Z",
-    "latestDataDate": "2026-07-17",
-    "currentDate": "2026-07-17",
-    "eventCount": 832,
-    "quarantinedEventCount": 60
+    "generatedAt": "2026-07-18T04:59:59.870Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 1250,
+    "quarantinedEventCount": 11
   },
   "entity": {
     "id": "EN-64bdeb7efae18e1b",
@@ -20,15 +20,19 @@
     "datasetScopes": [
       "canonical"
     ],
-    "eventIds": [],
+    "eventIds": [
+      "EV-1a6def173f4d7c94"
+    ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
-    "firstSeen": "",
-    "lastSeen": "",
+    "firstSeen": "2026-07-09",
+    "lastSeen": "2026-07-09",
     "relationIds": [],
     "groupedEventIds": {
-      "fundingAcquisition": [],
+      "fundingAcquisition": [
+        "EV-1a6def173f4d7c94"
+      ],
       "deployments": [],
       "partnerships": [],
       "productsServices": [],
@@ -36,7 +40,30 @@
       "organizationPeople": [],
       "other": []
     },
-    "timeline": [],
+    "timeline": [
+      {
+        "id": "EV-1a6def173f4d7c94",
+        "dataDate": "2026-07-09",
+        "date": "2026-07-09",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "BidScript 获 80 万美元融资，推动 AI 平台升级公共与私营部门招投标流程",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "enterprise_platform",
+            "dimensionName": "产品形态",
+            "name": "企业 AI 平台"
+          }
+        ],
+        "entityIds": [
+          "EN-64bdeb7efae18e1b"
+        ]
+      }
+    ],
     "viewpoints": []
   },
   "relatedEntities": [],

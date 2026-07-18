@@ -72,7 +72,7 @@ key_excerpts: [{"type":"company_action","text":"Transitioning an AI agent from a
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
-title_zh: "企业级AI代理部署：从原型到生产"
+title_zh: "企业级AI智能体部署：从原型到生产"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

@@ -72,7 +72,7 @@ key_excerpts: [{"type":"workflow_change","text":"As organizations implement thes
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
-title_zh: "AWS合作伙伴指南：AWS Marketplace中的AI代理与工具"
+title_zh: "AWS 市场中的 AI 智能体与工具：AWS 合作伙伴指南"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

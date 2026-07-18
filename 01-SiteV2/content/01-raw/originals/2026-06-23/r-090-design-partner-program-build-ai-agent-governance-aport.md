@@ -72,7 +72,7 @@ key_excerpts: [{"type":"number","text":"Design Partner Program - Build AI Agent 
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
-title_zh: "设计合作伙伴计划 - 构建AI代理治理 | APort"
+title_zh: "设计合作伙伴计划 - 构建 AI 智能体治理"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

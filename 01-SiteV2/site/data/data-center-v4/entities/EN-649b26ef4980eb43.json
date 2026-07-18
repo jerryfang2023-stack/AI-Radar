@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-18T04:59:59.870Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 1250,
+    "quarantinedEventCount": 11
+  },
+  "entity": {
+    "id": "EN-649b26ef4980eb43",
+    "name": "LG Display",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-9ae75de8b32a680a"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-05",
+    "lastSeen": "2026-07-05",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [
+        "EV-9ae75de8b32a680a"
+      ],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-9ae75de8b32a680a",
+        "dataDate": "2026-07-05",
+        "date": "2026-07-05",
+        "eventType": "deployment",
+        "eventTypeLabel": "部署",
+        "eventGroup": "部署与案例",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "LG Display 用 AI 降本，每年可省超 2000 亿韩元",
+        "displayTags": [],
+        "entityIds": [
+          "EN-649b26ef4980eb43"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [
+    {
+      "id": "FDE-b63c5be17a7824f3",
+      "eventId": "EV-9ae75de8b32a680a",
+      "dataDate": "2026-07-05",
+      "date": "2026-07-05",
+      "title": "LG Display 用 AI 降本，每年可省超 2000 亿韩元",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "LG Display",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "自研人工智能生产系统",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "自去年起，公司已在全部有机发光二极管（OLED）产线部署自研人工智能生产系统。"
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/972/712.htm",
+      "entityIds": [
+        "EN-649b26ef4980eb43"
+      ]
+    }
+  ],
+  "hardware": []
+}

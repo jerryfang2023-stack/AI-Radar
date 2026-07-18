@@ -4,7 +4,7 @@
 版本：`SITE-V4.2.0-entity-history-prd-v1.3`
 日期：2026-07-16  
 适用范围：观澜内部只读网站的数据中心与应用中心  
-上游事实标准：`SITE-V4.0-data-center`、`RAW-V3.0`、`EVENT-V1.0`、`FDE-V2.0`、`HARDWARE-V1.0`、`TAG-V4.0`
+上游事实标准：`SITE-V4.0-data-center`、`RAW-V3.0`、`EVENT-V1.1`、`FDE-V2.0`、`HARDWARE-V1.0`、`TAG-V4.0`
 
 ## 1. Problem Statement
 
@@ -125,13 +125,13 @@
 
 #### 前台事件分组
 
-| 前台分组 | EVENT-V1.0 精确类型 |
+| 前台分组 | EVENT-V1.1 精确类型 |
 |---|---|
 | 模型、产品与服务 | `model_release`、`product_release`、`service_change`、`pricing_change` |
-| 融资与并购 | `funding`、`acquisition` |
+| 融资与并购 | `funding`、`acquisition`、`ipo_listing`、`capital_investment`、`financial_performance` |
 | 商业合作 | `partnership`、`procurement_contract` |
 | 部署与案例 | `deployment` |
-| 组织、政策与法律 | `organization_people`、`policy_regulation`、`lawsuit_settlement` |
+| 组织、政策与法律 | `organization_people`、`organization_restructuring`、`market_expansion`、`policy_regulation`、`lawsuit_settlement`、`certification_compliance`、`standard_specification`、`security_incident` |
 | 研究结果 | `research_result` |
 | AI 硬件 | `hardware_product`、`hardware_capacity`、`hardware_supply`、`hardware_deployment` |
 
@@ -147,7 +147,7 @@
 
 1. 中文标题；
 2. 原始标题；
-3. 日期、EVENT-V1.0 精确事件类型、最多五个 Tag；
+3. 日期、EVENT-V1.1 精确事件类型、最多五个 Tag；
 4. 事件事实：主体、动作、对象、已披露数据；
 5. 相关公司和产品；
 6. 相关 FDE 实施和 AI 硬件记录；

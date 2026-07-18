@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T01:57:40.269Z",
-    "latestDataDate": "2026-07-17",
-    "currentDate": "2026-07-17",
-    "eventCount": 832,
-    "quarantinedEventCount": 60
+    "generatedAt": "2026-07-18T04:59:59.870Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 1250,
+    "quarantinedEventCount": 11
   },
   "entity": {
     "id": "EN-1477cddb70657ceb",
@@ -21,18 +21,20 @@
       "canonical"
     ],
     "eventIds": [
-      "EV-9f45aa7b5312420d"
+      "EV-9f45aa7b5312420d",
+      "EV-09964ee52fa77b9a"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
-    "firstSeen": "2026-07-14",
+    "firstSeen": "2026-07-10",
     "lastSeen": "2026-07-15",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [
-        "EV-9f45aa7b5312420d"
+        "EV-9f45aa7b5312420d",
+        "EV-09964ee52fa77b9a"
       ],
       "partnerships": [],
       "productsServices": [],
@@ -51,6 +53,21 @@
         "status": "planned",
         "statusLabel": "计划中",
         "title": "Sunrun 启动边缘 AI 推理节点部署试点，将分布式电力转化为算力",
+        "displayTags": [],
+        "entityIds": [
+          "EN-1477cddb70657ceb"
+        ]
+      },
+      {
+        "id": "EV-09964ee52fa77b9a",
+        "dataDate": "2026-07-11",
+        "date": "2026-07-10",
+        "eventType": "deployment",
+        "eventTypeLabel": "部署",
+        "eventGroup": "部署与案例",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "你愿意在家托管部分AI数据中心吗？",
         "displayTags": [],
         "entityIds": [
           "EN-1477cddb70657ceb"

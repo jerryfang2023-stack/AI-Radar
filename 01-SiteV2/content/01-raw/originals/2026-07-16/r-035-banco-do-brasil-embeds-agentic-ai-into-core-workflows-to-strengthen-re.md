@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-035
 title: "Banco do Brasil Embeds Agentic AI into Core Workflows to Strengthen Relationship Banking and Customer Engagement | NiCE"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "巴西银行将智能体AI嵌入核心工作流程，强化关系银行与客户互动"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.nice.com/press-releases/banco-do-brasil-embeds-agentic-ai-into-core-workflows-to-strengthen-relationship-banking-and-customer-engagement"
 canonical_url: "https://nice.com/press-releases/banco-do-brasil-embeds-agentic-ai-into-core-workflows-to-strengthen-relationship-banking-and-customer-engagement"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-16T02:39:33.638Z
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Banco do Brasil Embeds Agentic AI into Core Workflows to Strengthen Relationship Banking and Customer Engagement | NiCE

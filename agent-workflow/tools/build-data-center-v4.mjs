@@ -18,7 +18,7 @@ const taxonomyPath = path.join(root, "agent-workflow/product/tag-taxonomy-v4.jso
 const VERSION = Object.freeze({
   product: "SITE-V4.0-data-center",
   raw: "RAW-V3.0",
-  event: "EVENT-V1.0",
+  event: "EVENT-V1.1",
   fde: "FDE-V2.0",
   hardware: "HARDWARE-V1.0",
   tag: "TAG-V4.0"
@@ -28,13 +28,21 @@ const EVENT_RULES = [
   ["acquisition", /\b(?:acquires?|acquired|acquisition|merges? with|merged with)\b|收购|并购|合并/iu],
   ["lawsuit_settlement", /\b(?:sues?|sued|lawsuit|settles?|settlement|antitrust action|trademark dispute|legal challenge|court ruled)\b|起诉|诉讼|和解|反垄断|商标纠纷|败诉|驳回注册/iu],
   ["funding", /\b(?:raises?|raised|closes?|closed|nabs?|landed)\b(?=.{0,80}(?:[$€£¥]\s?\d|\b(?:funding|financing|investment|series|seed|round)\b))|\b(?:funding round|financing round|series [a-z])\b|\blaunch(?:es|ed)? with [$€£¥]\s?\d|\b(?:secures?|secured)\b(?=.{0,60}\b(?:funding|financing|investment|series|seed|round)\b|.{0,60}[$€£¥]\s?\d)|融资|获投|募资|完成.*轮/iu],
+  ["ipo_listing", /\b(?:files?|filed|filing|plans?|planned)?\s*(?:for\s+)?(?:an?\s+)?(?:ipo|initial public offering)\b|\b(?:public listing|stock market listing)\b|首次公开募股|递交.{0,30}(?:IPO|上市申请)|上市聆讯|公开发行股票/iu],
+  ["capital_investment", /\b(?:invests?|invested|investment|capital expenditure|capex)\b.{0,100}\b(?:data cent(?:er|re)|ai infrastructure|compute infrastructure|fab|factory|campus|capacity)\b|资本开支|投资.{0,80}(?:数据中心|AI基础设施|人工智能基础设施|算力基础设施|晶圆厂|工厂|园区|产能)/iu],
+  ["financial_performance", /\b(?:reports?|reported|reaches?|reached|grew|increases?|increased)\b.{0,80}\b(?:revenue|arr|annual recurring revenue|profit|earnings|sales)\b|\b(?:revenue|arr|annual recurring revenue|profit|earnings|sales)\b.{0,50}\b(?:grew|growth|reaches?|reached|increases?|increased)\b|(?:营收|收入|利润|销售额|年度经常性收入).{0,50}(?:增长|达到|同比|环比|报告|披露)/iu],
   ["partnership", /\b(?:partners? with|partnership|collaborat(?:es?|ion)|alliance|integrat(?:es?|ion)\s+with)\b|合作|伙伴关系|结盟|接入/iu],
   ["procurement_contract", /\b(?:procurement agreement|signs? .{0,50}contract|enters? (?:into )?.{0,50}contract|tender|awarded? .{0,50}contract|selected .{0,50}provider)\b|采购|招标|中标|签署.{0,30}合同|达成.{0,30}合同/iu],
+  ["market_expansion", /\b(?:opens?|opened)\b.{0,50}\b(?:office|hub|headquarters)\b|\b(?:expands?|expanded|enters?|entered)\b.{0,50}\b(?:market|region|country)\b|市场扩张|进入.{0,30}(?:市场|地区)|开设.{0,30}(?:办公室|中心|总部)/iu],
+  ["organization_restructuring", /\b(?:lays? off|laid off|layoffs?|workforce reduction|restructur(?:es?|ed|ing)|bankruptcy|insolvency|liquidation)\b|裁员|组织重组|业务重组|破产|清算/iu],
+  ["certification_compliance", /\b(?:obtains?|obtained|earns?|earned|receives?|received|achieves?|achieved)\b.{0,60}\b(?:certification|certified|iso\/iec)\b|通过.{0,30}认证|获得.{0,30}认证|取得.{0,30}认证/iu],
+  ["security_incident", /\b(?:suffers?|suffered|discloses?|disclosed|confirms?|confirmed|fixes?|fixed)\b.{0,80}\b(?:security breach|data breach|cyberattack|vulnerability|data leak|outage)\b|遭遇.{0,40}(?:安全事件|数据泄露|网络攻击|宕机)|披露.{0,40}(?:漏洞|数据泄露|安全事件)|修复.{0,40}(?:安全漏洞|高危漏洞)/iu],
   ["hardware_capacity", /\b(?:fab capacity|manufacturing capacity|production capacity|wafer capacity)\b|晶圆产能|制造产能|扩产/iu],
   ["hardware_supply", /\b(?:chip supply|gpu supply|semiconductor supply|ship(?:s|ped)? .*(?:chips?|gpus?|accelerators?)|deliver(?:s|ed) .*(?:chips?|gpus?|accelerators?)|(?:buys?|orders?|purchases?) .{0,80}(?:chips?|gpus?|accelerators?))\b|芯片供应|GPU供应|出货.*(?:芯片|GPU)|交付.*(?:芯片|GPU)|(?:购买|订购|采购).{0,40}(?:芯片|GPU|加速器)/iu],
   ["hardware_deployment", /\b(?:deploys?|deployed|installs?|installed)\b.{0,80}\b(?:gpu|accelerator|server|cluster|data cent(?:er|re))\b|部署.{0,40}(?:GPU|芯片|服务器|集群|数据中心)/iu],
   ["pricing_change", /\b(?:price|pricing|subscription|billing)\b.{0,40}\b(?:changes?|changed|increases?|decreases?|cuts?|launches?)\b|调价|定价|计费变化|降价|涨价/iu],
   ["policy_regulation", /\b(?:regulator|regulation|policy|executive order|approved by|banned by|European Commission.{0,100}(?:announced|requires?|orders?|binding|DMA measures)|(?:commission|authority|regulator).{0,80}(?:requires?|orders?|rules?))\b|监管|法规|政策|行政令|批准|禁令|(?:欧盟|网信|监管|政府|有关部门).{0,50}(?:备案|公告|公布|要求|裁定)|备案信息/iu],
+  ["standard_specification", /\b(?:publishes?|published|releases?|released|adopts?|adopted)\b.{0,70}\b(?:(?:open )?technical specification|open specification|industry standard|technical standard|protocol)\b|发布.{0,40}(?:技术规范|开放规范|行业标准|技术标准|协议)|制定.{0,40}(?:行业标准|技术标准|技术规范)/iu],
   ["deployment", /\b(?:deploy(?:s|ed|ing)?|rolls? out|rolled out|implement(?:s|ed|ing)?|goes? live|pilots?|piloted)\b|部署|上线|落地|试点|实施/iu],
   ["research_result", /\b(?:study|research|benchmark|paper|report)\b.{0,70}\b(?:finds?|shows?|reports?|achieves?|usage|gap)\b|(?:研究(?!员)|论文|基准|报告).{0,50}(?:显示|表明|达到|结果|差距|用量|增长|下降|登顶|占比)/iu],
   ["organization_people", /\b(?:appoints?|appointed|hires?|hired|joins?|joined|resigns?|leaves?|depart(?:s|ed)?)\b|任命|加入|离职|辞任|聘任/iu],
@@ -77,7 +85,7 @@ const PLANNED = /\b(?:plans? to|expected to|will|intends? to|proposed|to (?:laun
 const WITHDRAWN = /\b(?:withdrawn|withdraws?|cancelled|canceled)\b|撤回|取消/iu;
 const COMPLETED = /\b(?:completed|closed|acquired|merged|raised|secured|launched|released|introduced|unveiled|shipped|deployed|implemented|appointed|joined|left)\b|完成|收购|合并|获得|融资|发布|推出|出货|部署|上线|任命|加入|离职/iu;
 const BOILERPLATE_LINE = /^(?:(?:topics?|most popular|related articles?|view bio|register now|loading the next article|error loading|when you purchase through links|back to top|cookie settings?)\b|(?:相关文章|相关阅读|相关推荐|软媒旗下网站|스크롤 이동|상태바|기사본문))/iu;
-const BOILERPLATE_TEXT = /(?:most popular|loading the next article|error loading the next article|register now|cookie settings|when you purchase through links|스크롤 이동|상태바|기사본문|the body content)/iu;
+const BOILERPLATE_TEXT = /^(?:most popular|loading the next article|error loading the next article|register now|cookie settings|when you purchase through links|스크롤 이동|상태바|기사본문|the body content)\b/iu;
 const INFORMATIONAL_TITLE = /^(?:how\b|what\b|why\b|when\b|where\b|guide\b|cost\b|the cost\b)|\b(?:essential|complete|ultimate)\s+(?:guide|handbook)\b|\bcost to implement\b/iu;
 const TRUNCATED_OR_NON_EVENT_TITLE = /(?:…|\.\.\.)|^(?:show hn:|ask hn:|launch hn:|open[- ]source\b|github\b|youtube\b|ep\s+\d+\b|hype\b|you need\b|frontier ai labs\b|if you\b)|\b(?:roadmap|playbook|handbook)\b.*\b(?:engineer|engineering|deployment)\b/iu;
 const COMMUNITY_DISCOVERY_URL = /^https?:\/\/(?:www\.)?(?:facebook\.com\/groups\/|reddit\.com\/|news\.ycombinator\.com\/|linkedin\.com\/|youtube\.com\/|youtu\.be\/|podcasters\.spotify\.com\/|x\.com\/)/iu;
@@ -645,6 +653,7 @@ function facetAssertionsForClaim(claim, matchers) {
 
 export function eventAiRelevanceEvidence({ title = "", claims: eventClaims = [], entityNames = [], eventType = "" } = {}) {
   const claimQuotes = eventClaims.map((claim) => typeof claim === "string" ? claim : claim?.source_quote || "");
+  const strongClaimEvidence = claimQuotes.join("\n").match(/\b(?:agentic AI|generative AI|AI agents?|large language models?|foundation models?|machine learning|deep learning)\b/iu);
   const evidenceText = [title, ...claimQuotes].filter(Boolean).join("\n");
   const administrativeSupportMatch = evidenceText.match(ADMINISTRATIVE_AI_SUPPORT_PROGRAM);
   if (administrativeSupportMatch) {
@@ -657,6 +666,7 @@ export function eventAiRelevanceEvidence({ title = "", claims: eventClaims = [],
   }
   const namedMatch = evidenceText.match(NAMED_AI_EVIDENCE);
   if (namedMatch) return { accepted: true, basis: "named_ai_technology", evidence: namedMatch[0] };
+  if (strongClaimEvidence) return { accepted: true, basis: "explicit_claim_text", evidence: strongClaimEvidence[0] };
   const nativeOrganization = entityNames.find((name) => AI_NATIVE_ORGANIZATIONS.has(String(name || "").toLocaleLowerCase()));
   if (nativeOrganization) return { accepted: true, basis: "ai_native_organization", evidence: nativeOrganization };
   const explicitMatch = evidenceText.match(EXPLICIT_AI_EVIDENCE);
@@ -981,7 +991,7 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
     const title = normalizeEventTitle(titleOriginal);
     const sourceEligibility = eventSourceEligibility(raw, artifact, title);
     const deterministicRule = sourceEligibility.accepted ? findEventRule(title, bodyClean.slice(0, 1200)) : null;
-    const modelClaimCandidate = (acceptedAssistByRaw.get(rawId) || []).find((candidate) => candidate.task_type === "claim_extraction" && candidate.proposal?.claims?.length);
+    const modelClaimCandidate = (acceptedAssistByRaw.get(rawId) || []).find((candidate) => ["claim_extraction", "qa_repair"].includes(candidate.task_type) && candidate.proposal?.claims?.length);
     const proposedModelClaim = modelClaimCandidate?.proposal?.claims?.find((claim) => EVENT_RULES.some(([eventType]) => eventType === claim.event_type));
     const rule = deterministicRule || (sourceEligibility.accepted && proposedModelClaim ? { eventType: proposedModelClaim.event_type, pattern: /$^/u } : null);
     const opinionOnly = (OPINION_ONLY.test(title) && !rule) || PROPOSAL_ONLY.test(title);
@@ -1032,12 +1042,16 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
       let eventClaimRows = spans.map((span, index) => buildClaim(rawId, rule.eventType, span, parsed, index, status));
       if (!eventClaimRows.length && modelClaimCandidate) {
         eventClaimRows = modelClaimCandidate.proposal.claims.flatMap((claim, index) => {
+          if (claim.event_type !== rule.eventType) return [];
           const evidence = modelClaimCandidate.evidence?.[claim.evidence_index];
           if (!evidence || bodyClean.slice(evidence.start, evidence.end) !== evidence.quote) return [];
           return [buildModelClaim(rawId, { ...claim, model_candidate_id: modelClaimCandidate.candidate_id }, evidence, index, status)];
         });
         spans = eventClaimRows.map((claim) => ({ ...claim.source_span, quote: claim.source_quote }));
       }
+      eventClaimRows = [...new Map(eventClaimRows
+        .filter((claim) => !BOILERPLATE_TEXT.test(claim.source_quote))
+        .map((claim) => [claim.claim_id, claim])).values()];
       if (!eventClaimRows.length) {
         qaQueue.push({
           qa_id: `QA-${hash(`${rawId}|no-claim`)}`,
@@ -1050,7 +1064,7 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
         legacyMappings.push({ legacy_raw_id: cleanString(raw.raw_id), legacy_path: rel(file), raw_id: rawId, event_candidate_id: "", event_id: "" });
         continue;
       }
-      const entityNames = organizationMentions(
+      const entityNames = [...new Map(organizationMentions(
         title,
         parsed,
         rule.eventType,
@@ -1058,7 +1072,7 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
       ).map((entityMatch) => {
         const reviewedName = reviewedEntityAliases.get(entityMatch.canonicalName.toLocaleLowerCase());
         return reviewedName ? { ...entityMatch, canonicalName: reviewedName, verified: true } : entityMatch;
-      });
+      }).map((entityMatch) => [entityMatch.canonicalName.toLocaleLowerCase(), entityMatch])).values()];
       const aiRelevance = eventAiRelevanceEvidence({
         title,
         claims: eventClaimRows,

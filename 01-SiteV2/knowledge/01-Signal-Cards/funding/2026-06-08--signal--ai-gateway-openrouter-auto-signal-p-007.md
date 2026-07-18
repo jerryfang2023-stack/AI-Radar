@@ -2,7 +2,7 @@
 id: SIG-20260608-A11
 type: signal_card
 signal_type: funding
-title: "AI网关OpenRouter获谷歌与英伟达1.13亿美元投资，用于路由其模型"
+title: "AI 网关 OpenRouter 获谷歌和英伟达 1.13 亿美元投资，用于在其模型间路由"
 date: 2026-06-08
 status: published
 source_title: "AI Gateway OpenRouter Raises $113M From Google and NVIDIA to Route Between Their Models"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "AI Gateway OpenRouter"
 
 frontend:
-  displayTitle: "AI网关OpenRouter获谷歌与英伟达1.13亿美元投资，用于路由其模型"
+  displayTitle: "AI 网关 OpenRouter 获谷歌和英伟达 1.13 亿美元投资，用于在其模型间路由"
   sourceLinks:
     - "https://www.techtimes.com/articles/317353/20260529/ai-gateway-openrouter-raises-113m-google-nvidia-route-between-their-models.htm"
 ---
 
-# AI网关OpenRouter获谷歌与英伟达1.13亿美元投资，用于路由其模型
+# AI 网关 OpenRouter 获谷歌和英伟达 1.13 亿美元投资，用于在其模型间路由
 
 ## 新闻事实
 

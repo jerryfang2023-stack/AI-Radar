@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"CrewAI has quickly emerged as one of the
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "CrewAI 平台 2026 年统计数据：用户、收入与增长"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # CrewAI Platform Statistics 2026: Users, Revenue & Growth

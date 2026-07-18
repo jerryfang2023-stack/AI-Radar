@@ -357,6 +357,72 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-34324ae83f5f1c3c",
+    "raw_id": "RAW-a71773ceed5ff489",
+    "claim_type": "funding",
+    "subject": "OXMIQ Labs Inc.",
+    "predicate": "funding",
+    "object": "$35 million Series A financing",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-bc86ab3182343da9"
+    },
+    "source_span": {
+      "raw_id": "RAW-a71773ceed5ff489",
+      "start": 965,
+      "end": 1161
+    },
+    "source_quote": "OXMIQ Labs Inc. , a unified GPU and AI architecture company founded by Raja Koduri, has closed its $35 million Series A financing, bringing the company&rsquo;s total capital raised to $60 million.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-df3e692047952658",
+    "raw_id": "RAW-f8249777a6c87b6c",
+    "claim_type": "product_release",
+    "subject": "Microsoft",
+    "predicate": "product_release",
+    "object": "Microsoft Marketplace",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-e4e964fe11d37698"
+    },
+    "source_span": {
+      "raw_id": "RAW-f8249777a6c87b6c",
+      "start": 84,
+      "end": 290
+    },
+    "source_quote": "Microsoft launched a single, unified Microsoft Marketplace that brings together Azure Marketplace and AppSource so customers can find, try, buy, and deploy cloud solutions and AI apps & agents in one place.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-5e9118458d08068e",
+    "raw_id": "RAW-f8249777a6c87b6c",
+    "claim_type": "product_release",
+    "subject": "Microsoft Marketplace",
+    "predicate": "product_release",
+    "object": "AI apps & agents catalog",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3,
+      "model_candidate_id": "MAC-e4e964fe11d37698"
+    },
+    "source_span": {
+      "raw_id": "RAW-f8249777a6c87b6c",
+      "start": 1217,
+      "end": 1360
+    },
+    "source_quote": "3,000+ AI apps & agents are newly available and can be provisioned rapidly inside your Microsoft estate (including via Model Context Protocol).",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-683c9eb3000ec555",
     "raw_id": "RAW-54ccb65a840660aa",
     "claim_type": "product_release",
@@ -522,6 +588,28 @@
     "source_quote": "OpenAI’s first hardware product is expected to arrive next year. In the lawsuit, Apple casts doubt on OpenAI’s ability to ship — at least without relying on Apple’s work. “OpenAI’s nascent hardware business now rests on the shakiest of foundations,” the lawsuit says, “rotten to its core by its illegal reliance on misappropriated trade secrets.”",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-d1d989bce9395796",
+    "raw_id": "RAW-725775c0b7cb82ed",
+    "claim_type": "deployment",
+    "subject": "Sunrun",
+    "predicate": "deployment",
+    "object": "distributed AI compute pilot program",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-9e751c1ffe340fe1"
+    },
+    "source_span": {
+      "raw_id": "RAW-725775c0b7cb82ed",
+      "start": 760,
+      "end": 944
+    },
+    "source_quote": "Sunrun is launching a pilot program for a new “distributed AI compute” program that will “place numerous compute nodes in homes equipped with Sunrun solar and battery storage systems.”",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -774,6 +862,116 @@
     "source_quote": "加速进化 Booster T2 专业版标配 英伟达 Thor 芯片 ，算力达 2070TFLOPS，搭配 14 核 CPU（最高 2.6GHz）和 128GB 256bit LPDDR5X 内存，端侧多模态推理延迟低至 100ms。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-576e8d38f7fb3d82",
+    "raw_id": "RAW-7486c6633e0ece4b",
+    "claim_type": "service_change",
+    "subject": "OpenAI",
+    "predicate": "service_change",
+    "object": "Atlas browser",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-68ec6e0ceef5d443"
+    },
+    "source_span": {
+      "raw_id": "RAW-7486c6633e0ece4b",
+      "start": 178,
+      "end": 253
+    },
+    "source_quote": "OpenAI is killing its AI browser Atlas less than eight months after launch.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-856a2b04d46c09a2",
+    "raw_id": "RAW-7486c6633e0ece4b",
+    "claim_type": "service_change",
+    "subject": "OpenAI",
+    "predicate": "service_change",
+    "object": "ChatGPT Chrome extension",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-68ec6e0ceef5d443"
+    },
+    "source_span": {
+      "raw_id": "RAW-7486c6633e0ece4b",
+      "start": 254,
+      "end": 381
+    },
+    "source_quote": "Its features are moving into ChatGPT's updated Chrome extension, which will let users run ChatGPT directly in Chrome's sidebar.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b49d6273ccccbc49",
+    "raw_id": "RAW-1976d65975825764",
+    "claim_type": "research_result",
+    "subject": "路透社",
+    "predicate": "research_result",
+    "object": "Meta AI图像检测工具",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-2389b81afe87aa8a"
+    },
+    "source_span": {
+      "raw_id": "RAW-1976d65975825764",
+      "start": 490,
+      "end": 522
+    },
+    "source_quote": "路透社的测试结果显示， 常见的图片修改操作就可能削弱检测能力 。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-c07ace663fa7619e",
+    "raw_id": "RAW-1976d65975825764",
+    "claim_type": "research_result",
+    "subject": "路透社",
+    "predicate": "research_result",
+    "object": "Meta AI图像检测工具",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-2389b81afe87aa8a"
+    },
+    "source_span": {
+      "raw_id": "RAW-1976d65975825764",
+      "start": 523,
+      "end": 607
+    },
+    "source_quote": "路透社使用 Muse Image 生成了 40 张图片。检测工具成功识别了全部原图，但同一批图片被裁剪至原图约三分之一至二分之一大小后， 55% 的图片无法通过验证 。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-dd7d50b8ec7e93f7",
+    "raw_id": "RAW-1976d65975825764",
+    "claim_type": "research_result",
+    "subject": "Meta",
+    "predicate": "research_result",
+    "object": "Content Seal隐形水印",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3,
+      "model_candidate_id": "MAC-2389b81afe87aa8a"
+    },
+    "source_span": {
+      "raw_id": "RAW-1976d65975825764",
+      "start": 723,
+      "end": 809
+    },
+    "source_quote": "Meta 回应路透社测试结果时强调，检测工具 仍是预览版本 。Content Seal 的设计目标是在常见编辑后继续保留水印信号， 但图片一旦被大幅裁剪，信号仍可能丢失 。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   }
 ]

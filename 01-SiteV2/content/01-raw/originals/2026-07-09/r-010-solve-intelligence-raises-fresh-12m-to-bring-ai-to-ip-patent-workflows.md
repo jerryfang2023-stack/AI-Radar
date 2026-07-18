@@ -2,7 +2,7 @@
 schema_version: raw-evidence-v2
 raw_id: R-010
 title: "Solve Intelligence raises fresh $12M to bring AI to IP, patent workflows | TechCrunch"
-title_zh: "Solve Intelligence 获投1200万美元，将AI引入知识产权与专利工作流程 | TechCrunch"
+title_zh: "Solve Intelligence 获 1200 万美元新融资，将 AI 引入知识产权与专利工作流程"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 original_url: "https://techcrunch.com/2025/04/09/microsoft-backs-solve-intelligence-in-12m-series-a-funding/"

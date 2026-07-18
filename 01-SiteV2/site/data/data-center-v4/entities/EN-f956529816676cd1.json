@@ -1,0 +1,68 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-18T04:59:59.870Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 1250,
+    "quarantinedEventCount": 11
+  },
+  "entity": {
+    "id": "EN-f956529816676cd1",
+    "name": "Zyphra",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-5b0734f2957b256d"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-18",
+    "lastSeen": "2026-07-18",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-5b0734f2957b256d"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-5b0734f2957b256d",
+        "dataDate": "2026-07-18",
+        "date": "2026-07-18",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Zyphra 发布 ZUNA1.1：Apache 2.0 许可的 EEG 基础模型，支持 0.5 至 30 秒可变长度输入",
+        "displayTags": [],
+        "entityIds": [
+          "EN-f956529816676cd1",
+          "EN-20ca085ff30e9339"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

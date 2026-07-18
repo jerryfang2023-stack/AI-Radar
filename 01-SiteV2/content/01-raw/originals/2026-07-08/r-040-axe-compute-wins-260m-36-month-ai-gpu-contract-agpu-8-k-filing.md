@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-040
 title: "Axe Compute wins $260M, 36‑month AI GPU contract | AGPU 8-K Filing"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "Axe Compute 赢得 2.6 亿美元、36 个月 AI GPU 合同"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.stocktitan.net/sec-filings/AGPU/8-k-axe-compute-inc-reports-material-event-8543b92f6f90.html"
 canonical_url: "https://stocktitan.net/sec-filings/AGPU/8-k-axe-compute-inc-reports-material-event-8543b92f6f90.html"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-08T04:39:25.693Z
 theme: ai-hardware-scenario-service-signal
 keyword_group: ai-hardware-scenario-service-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Axe Compute wins $260M, 36‑month AI GPU contract | AGPU 8-K Filing

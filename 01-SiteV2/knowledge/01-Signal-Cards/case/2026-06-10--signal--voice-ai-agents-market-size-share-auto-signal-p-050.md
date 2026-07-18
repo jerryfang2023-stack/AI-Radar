@@ -2,7 +2,7 @@
 id: SIG-20260610-A04
 type: signal_card
 signal_type: case
-title: "语音AI代理市场规模、份额 | 复合年增长率34.8%"
+title: "语音AI智能体市场规模与份额"
 date: 2026-06-10
 status: published
 source_title: "Voice AI Agents Market Size, Share | CAGR of 34.8%"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Voice AI Agents Market Size, Share"
 
 frontend:
-  displayTitle: "语音AI代理市场规模、份额 | 复合年增长率34.8%"
+  displayTitle: "语音AI智能体市场规模与份额"
   sourceLinks:
     - "https://market.us/report/voice-ai-agents-market/"
 ---
 
-# 语音AI代理市场规模、份额 | 复合年增长率34.8%
+# 语音AI智能体市场规模与份额
 
 ## 新闻事实
 

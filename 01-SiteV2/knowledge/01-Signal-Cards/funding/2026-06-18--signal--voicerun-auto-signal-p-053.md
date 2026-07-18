@@ -2,7 +2,7 @@
 id: SIG-20260618-A02
 type: signal_card
 signal_type: funding
-title: "VoiceRun推出面向企业的全栈式语音AI平台，并..."
+title: "VoiceRun 推出面向企业的全栈语音 AI 平台，具备..."
 date: 2026-06-18
 status: published
 source_title: "VoiceRun Launches Full-Stack Voice AI Platform for Enterprises with ..."
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "VoiceRun"
 
 frontend:
-  displayTitle: "VoiceRun推出面向企业的全栈式语音AI平台，并..."
+  displayTitle: "VoiceRun 推出面向企业的全栈语音 AI 平台，具备..."
   sourceLinks:
     - "https://www.prnewswire.com/news-releases/voicerun-launches-full-stack-voice-ai-platform-for-enterprises-with-5-5-million-seed-round-302660750.html"
 ---
 
-# VoiceRun推出面向企业的全栈式语音AI平台，并...
+# VoiceRun 推出面向企业的全栈语音 AI 平台，具备...
 
 ## 新闻事实
 

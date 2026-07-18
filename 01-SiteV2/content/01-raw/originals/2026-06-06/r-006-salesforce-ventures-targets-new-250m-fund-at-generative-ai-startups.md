@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Salesforce Ventures targets new $250M f
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "Salesforce Ventures 计划为生成式 AI 初创公司设立 2.5 亿美元新基金"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Salesforce Ventures targets new $250M fund at generative AI startups

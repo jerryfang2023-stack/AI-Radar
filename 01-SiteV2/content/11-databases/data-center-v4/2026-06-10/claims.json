@@ -63,6 +63,28 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-c4d3648b076788aa",
+    "raw_id": "RAW-d7a93a3ef78ab5e2",
+    "claim_type": "model_release",
+    "subject": "Anthropic",
+    "predicate": "model_release",
+    "object": "Claude Fable 5",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-551fc28e9d0a1a1d"
+    },
+    "source_span": {
+      "raw_id": "RAW-d7a93a3ef78ab5e2",
+      "start": 122,
+      "end": 235
+    },
+    "source_quote": "Anthropic has released Claude Fable 5 , the first publicly available version of its closely watched Mythos model.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-8edad98b7377d66a",
     "raw_id": "RAW-685500a4e2d991d9",
     "claim_type": "product_release",
@@ -333,6 +355,50 @@
     "source_quote": "Fable 5 outperforms all of Anthropic's previous models, achieving top scores in benchmarks for programming, image processing, and complex data analysis, while Mythos 5 shows strong performance in drug design and operates largely autonomously in genomics research.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-42d72f6727930ea7",
+    "raw_id": "RAW-daba7b49f73b6140",
+    "claim_type": "model_release",
+    "subject": "Anthropic",
+    "predicate": "model_release",
+    "object": "Claude Fable 5",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-2b931987702e8250"
+    },
+    "source_span": {
+      "raw_id": "RAW-daba7b49f73b6140",
+      "start": 108,
+      "end": 207
+    },
+    "source_quote": "Today we’re launching Claude Fable 5 : a Mythos-class 1 model that we’ve made safe for general use.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b02bf05ca05c35b0",
+    "raw_id": "RAW-daba7b49f73b6140",
+    "claim_type": "model_release",
+    "subject": "Anthropic",
+    "predicate": "model_release",
+    "object": "Claude Mythos 5",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-2b931987702e8250"
+    },
+    "source_span": {
+      "raw_id": "RAW-daba7b49f73b6140",
+      "start": 1247,
+      "end": 1351
+    },
+    "source_quote": "For a small group of cyberdefenders and infrastructure providers, we’re also launching Claude Mythos 5 .",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -672,6 +738,94 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-2f4e7913712d6a87",
+    "raw_id": "RAW-e5fe7218c609ea84",
+    "claim_type": "product_release",
+    "subject": "GPT-5.5",
+    "predicate": "product_release",
+    "object": "Amazon Bedrock",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-07c1387745ea7799"
+    },
+    "source_span": {
+      "raw_id": "RAW-e5fe7218c609ea84",
+      "start": 309,
+      "end": 405
+    },
+    "source_quote": "GPT-5.5, the most advanced frontier model from OpenAI, is generally available on Amazon Bedrock.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-27075dcf46bfc402",
+    "raw_id": "RAW-e5fe7218c609ea84",
+    "claim_type": "product_release",
+    "subject": "Codex",
+    "predicate": "product_release",
+    "object": "Amazon Bedrock",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-07c1387745ea7799"
+    },
+    "source_span": {
+      "raw_id": "RAW-e5fe7218c609ea84",
+      "start": 449,
+      "end": 523
+    },
+    "source_quote": "Codex on Amazon Bedrock is generally available with pay-per-token pricing.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-26f0dfad93f3f720",
+    "raw_id": "RAW-5b12da994b0520f8",
+    "claim_type": "product_release",
+    "subject": "Claude Managed Agents",
+    "predicate": "product_release",
+    "object": "scheduled deployment capability",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-24d0bcfc692bcf65"
+    },
+    "source_span": {
+      "raw_id": "RAW-5b12da994b0520f8",
+      "start": 0,
+      "end": 123
+    },
+    "source_quote": "Starting today, Claude Managed Agents can run on a schedule and securely access CLI tools and other authenticated services.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-390ee6e9731d8e18",
+    "raw_id": "RAW-5b12da994b0520f8",
+    "claim_type": "product_release",
+    "subject": "Claude Managed Agents",
+    "predicate": "product_release",
+    "object": "environment variable storage in vaults",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-24d0bcfc692bcf65"
+    },
+    "source_span": {
+      "raw_id": "RAW-5b12da994b0520f8",
+      "start": 1595,
+      "end": 1712
+    },
+    "source_quote": "Now we're extending vaults to support environment variables, so CLIs and other tools can make authenticated requests.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-41a18b4abd767d9e",
     "raw_id": "RAW-29d949dca05acc9b",
     "claim_type": "product_release",
@@ -756,6 +910,28 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-15111d0a7d902419",
+    "raw_id": "RAW-74f0f8830b9efa62",
+    "claim_type": "model_release",
+    "subject": "Cohere",
+    "predicate": "model_release",
+    "object": "North Mini Code",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1,
+      "model_candidate_id": "MAC-5132364919b6b152"
+    },
+    "source_span": {
+      "raw_id": "RAW-74f0f8830b9efa62",
+      "start": 219,
+      "end": 425
+    },
+    "source_quote": "Today, we are releasing North Mini Code, a 30B-parameter Mixture-of-Experts model with 3B active parameters with powerful agentic coding capabilities, available on Hugging Face under the Apache 2.0 license.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-6d6fc89616877a66",
     "raw_id": "RAW-39d012a90e3d85b5",
     "claim_type": "product_release",
@@ -837,6 +1013,28 @@
     "source_quote": "定位方面，Claude Fable 5 面向普通用户开放，定位为目前公开可用能力最强的 Claude 模型；而 Claude Mythos 5 会继续通过 Project Glasswing 项目先向少量网络安全防御方和基础设施提供商开放。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-635babd89ede67b3",
+    "raw_id": "RAW-e0b3081df950dcb0",
+    "claim_type": "model_release",
+    "subject": "Anthropic",
+    "predicate": "model_release",
+    "object": "Claude Fable 5",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1,
+      "model_candidate_id": "MAC-027318f286caaa27"
+    },
+    "source_span": {
+      "raw_id": "RAW-e0b3081df950dcb0",
+      "start": 460,
+      "end": 546
+    },
+    "source_quote": "Introducing Claude Fable 5: a Mythos-class model that we’ve made safe for general use.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {

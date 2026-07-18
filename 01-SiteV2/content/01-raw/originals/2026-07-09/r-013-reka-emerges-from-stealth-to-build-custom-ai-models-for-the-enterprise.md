@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-013
 title: "Reka emerges from stealth to build custom AI models for the enterprise | TechCrunch"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "Reka 走出隐身模式，为企业构建定制 AI 模型"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://techcrunch.com/2023/06/27/reka-emerges-from-stealth-to-build-custom-ai-models-for-the-enterprise/"
 canonical_url: "https://techcrunch.com/2023/06/27/reka-emerges-from-stealth-to-build-custom-ai-models-for-the-enterprise"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-09T03:05:44.866Z
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Reka emerges from stealth to build custom AI models for the enterprise | TechCrunch

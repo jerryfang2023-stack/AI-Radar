@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-082
 title: "Thomson Reuters buys Casetext, an AI legal tech startup, for $650M in cash | TechCrunch"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "汤森路透以6.5亿美元现金收购AI法律科技初创公司Casetext"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://techcrunch.com/2023/06/26/thomson-reuters-buys-casetext-an-ai-legal-tech-startup-for-650m-in-cash/"
 canonical_url: "https://techcrunch.com/2023/06/26/thomson-reuters-buys-casetext-an-ai-legal-tech-startup-for-650m-in-cash"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-09T03:05:45.268Z
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Thomson Reuters buys Casetext, an AI legal tech startup, for $650M in cash | TechCrunch

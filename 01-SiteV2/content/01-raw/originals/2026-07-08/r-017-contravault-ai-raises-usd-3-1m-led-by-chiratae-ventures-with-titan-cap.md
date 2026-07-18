@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-017
 title: "ContraVault AI raises USD 3.1M led by Chiratae Ventures with Titan Capital Winners Fund to build the future of AI-powered procurement intelligence – indiabriefings"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "ContraVault AI 获 Chiratae Ventures 领投、Titan Capital Winners Fund 参投的 310 万美元，用于构建 AI 驱动的采购智能未来"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://indiabriefings.co.in/contravault-ai-raises-usd-3-1m-led-by-chiratae-ventures-with-titan-capital-winners-fund-to-build-the-future-of-ai-powered-procurement-intelligence/"
 canonical_url: "https://indiabriefings.co.in/contravault-ai-raises-usd-3-1m-led-by-chiratae-ventures-with-titan-capital-winners-fund-to-build-the-future-of-ai-powered-procurement-intelligence"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-08T04:39:25.426Z
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # ContraVault AI raises USD 3.1M led by Chiratae Ventures with Titan Capital Winners Fund to build the future of AI-powered procurement intelligence – indiabriefings

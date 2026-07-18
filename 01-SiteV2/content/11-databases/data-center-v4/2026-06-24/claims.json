@@ -252,6 +252,28 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-6d362c4ad11e8ff3",
+    "raw_id": "RAW-af6c53af1465fae2",
+    "claim_type": "product_release",
+    "subject": "Anthropic",
+    "predicate": "product_release",
+    "object": "Claude Tag",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-8b2976a4860a3f78"
+    },
+    "source_span": {
+      "raw_id": "RAW-af6c53af1465fae2",
+      "start": 4947,
+      "end": 4978
+    },
+    "source_quote": "Claude Tag works with Opus 4.8.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-86c7ccd04ee00b71",
     "raw_id": "RAW-ed67da5f5bce1e6d",
     "claim_type": "product_release",
@@ -420,6 +442,28 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-fd535fb75e8a2273",
+    "raw_id": "RAW-55affd70e5ac8e64",
+    "claim_type": "funding",
+    "subject": "Engram",
+    "predicate": "funding",
+    "object": "$98M in funding from General Catalyst, Kleiner Perkins, Sequoia Capital, Factory, Modern, Amplify Partners, Neo and notable angels",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-096cdc64d815c415"
+    },
+    "source_span": {
+      "raw_id": "RAW-55affd70e5ac8e64",
+      "start": 186,
+      "end": 609
+    },
+    "source_quote": "Today, Engram, the company building the learned memory layer for AI, emerged from stealth with $98M in funding from General Catalyst, Kleiner Perkins, Sequoia Capital, Factory, Modern, Amplify Partners, Neo and notable angels and advisors including Assaf Rappaport, co-founder and CEO of Wiz, Andrej Karpathy, co-founder of OpenAI, and Pieter Abbeel, AI and robotics pioneer and co-director of the Berkeley AI Research Lab.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-2a8f6e2787e2f7cb",
     "raw_id": "RAW-33945c63dd0020a9",
     "claim_type": "funding",
@@ -523,6 +567,50 @@
     "source_quote": "- Nearfield Instruments , a Rotterdam, Netherlands-based advanced semiconductor 3D metrology and process control company, raised $380 million in Series D funding. Fidelity Management & Research Company led the round and was joined by Temasek , Walden Catalyst Ventures , Innovation Industries , M&G Investments , and others.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-9b8c13f77e82c341",
+    "raw_id": "RAW-5a94ed7c81ba2cf0",
+    "claim_type": "financial_performance",
+    "subject": "Petrobras",
+    "predicate": "financial_performance",
+    "object": "$120 million in tax savings",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-f2ec9f7d1224edcf"
+    },
+    "source_span": {
+      "raw_id": "RAW-5a94ed7c81ba2cf0",
+      "start": 3150,
+      "end": 3273
+    },
+    "source_quote": "Three weeks after deployment, the system had uncovered $120 million in tax savings—a result that far exceeded expectations.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-9ce87cdf27c8403e",
+    "raw_id": "RAW-5a94ed7c81ba2cf0",
+    "claim_type": "financial_performance",
+    "subject": "Petrobras",
+    "predicate": "financial_performance",
+    "object": "over $1 billion in projected total savings by year-end",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3,
+      "model_candidate_id": "MAC-f2ec9f7d1224edcf"
+    },
+    "source_span": {
+      "raw_id": "RAW-5a94ed7c81ba2cf0",
+      "start": 421,
+      "end": 487
+    },
+    "source_quote": "The company projects over $1 billion in total savings by year-end.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -943,6 +1031,28 @@
     "source_quote": "Sakana AI 认为人工智能产业的下一个前沿领域是模型编排，即在一系列任务中使用最适合当前需求的模型。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-f93b6059e46becaa",
+    "raw_id": "RAW-19989b8f819ae88b",
+    "claim_type": "pricing_change",
+    "subject": "豆包",
+    "predicate": "pricing_change",
+    "object": "保持免费",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-2eecd3e5605e3f26"
+    },
+    "source_span": {
+      "raw_id": "RAW-19989b8f819ae88b",
+      "start": 7,
+      "end": 16
+    },
+    "source_quote": "豆包还是会保持免费",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {

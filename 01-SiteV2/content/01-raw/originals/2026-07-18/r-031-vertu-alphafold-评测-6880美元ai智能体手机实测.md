@@ -3,9 +3,9 @@ schema_version: raw-evidence-v2
 raw_id: R-031
 title: "Vertu Alphafold 评测：6880美元AI智能体手机实测"
 title_zh: "Vertu Alphafold 评测：6880美元AI智能体手机实测"
-title_translation_status: not_required
-title_translation_method: source_title
-title_translation_model: not_applicable
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 original_url: "https://techcrunch.com/2026/07/17/vertu-wants-executives-to-pay-6880-for-an-ai-agent-heres-how-it-actually-performs"
 canonical_url: "https://techcrunch.com/2026/07/17/vertu-wants-executives-to-pay-6880-for-an-ai-agent-heres-how-it-actually-performs"
 source_name: "TechCrunch：AI（RSS）"

@@ -170,6 +170,28 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-9f53fed93458f1a8",
+    "raw_id": "RAW-36ea69dd09473943",
+    "claim_type": "product_release",
+    "subject": "UiPath",
+    "predicate": "product_release",
+    "object": "Maestro Case",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-f15cc0607577a01b"
+    },
+    "source_span": {
+      "raw_id": "RAW-36ea69dd09473943",
+      "start": 186,
+      "end": 352
+    },
+    "source_quote": "UiPath, Inc. (NYSE: PATH), a leader in business orchestration and automation, today announced Maestro Case, a new AI-native UiPath agentic case management capability.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-593986cabaff4495",
     "raw_id": "RAW-9cc3e1d7dbfb6fb2",
     "claim_type": "deployment",
@@ -335,6 +357,72 @@
     "source_quote": "From deterministic chatbot to conversational agent: lacoste moved from a chatbot limited to after-sales service to an agentic platform capable of handling the entire customer journey — from FAQ to escalation — while embodying the brand’s voice.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e9050484a25b8572",
+    "raw_id": "RAW-283dd3c1db50e06e",
+    "claim_type": "acquisition",
+    "subject": "Linex Capital",
+    "predicate": "acquisition",
+    "object": "Ultra Group",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-575069336ae52705"
+    },
+    "source_span": {
+      "raw_id": "RAW-283dd3c1db50e06e",
+      "start": 464,
+      "end": 666
+    },
+    "source_quote": "The rollout coincides with a transformative new chapter for Ultra Group, following its acquisition by Linex Capital, a New York-based private equity firm specializing in the loyalty and rewards sectors.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-0c114dbe00b61321",
+    "raw_id": "RAW-c88572cf81e5c16d",
+    "claim_type": "deployment",
+    "subject": "GE Appliances",
+    "predicate": "deployment",
+    "object": "Gemini Enterprise",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-48bead66b53b4120"
+    },
+    "source_span": {
+      "raw_id": "RAW-c88572cf81e5c16d",
+      "start": 303,
+      "end": 470
+    },
+    "source_quote": "GE Appliances, a Haier company , today announced it is using Gemini Enterprise, Google Cloud's unified agentic portfolio, to build the future of manufacturing with AI.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-6dab4ced3b3a032d",
+    "raw_id": "RAW-c88572cf81e5c16d",
+    "claim_type": "deployment",
+    "subject": "GE Appliances",
+    "predicate": "deployment",
+    "object": "Supplier Collaboration Agent",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-48bead66b53b4120"
+    },
+    "source_span": {
+      "raw_id": "RAW-c88572cf81e5c16d",
+      "start": 3429,
+      "end": 3547
+    },
+    "source_quote": "In 2025, GE Appliances introduced a Supplier Collaboration Agent to manage communication with more than 600 suppliers.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -737,6 +825,72 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-207faa8ce452e6f8",
+    "raw_id": "RAW-cd43aa4c0e938f02",
+    "claim_type": "deployment",
+    "subject": "HD 现代",
+    "predicate": "deployment",
+    "object": "基于英伟达 Isaac Sim 平台训练的实体人工智能机器人",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-96a4149d5e4049ec"
+    },
+    "source_span": {
+      "raw_id": "RAW-cd43aa4c0e938f02",
+      "start": 125,
+      "end": 176
+    },
+    "source_quote": "HD 现代目前正推动基于英伟达 Isaac Sim 平台训练的实体人工智能机器人在其造船流程中的应用。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-dac57d5641b0cb1e",
+    "raw_id": "RAW-cd43aa4c0e938f02",
+    "claim_type": "deployment",
+    "subject": "HD 现代",
+    "predicate": "deployment",
+    "object": "实体人工智能机器人用于焊接工序",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-96a4149d5e4049ec"
+    },
+    "source_span": {
+      "raw_id": "RAW-cd43aa4c0e938f02",
+      "start": 176,
+      "end": 246
+    },
+    "source_quote": "HD 现代一名负责人表示：“我们研发这款机器人的目标是投入厂区作业，会先应用于焊接、涂装、板材折弯工序，后续再评估拓展至更多工序的可行性。”",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-48026fb8c92f673c",
+    "raw_id": "RAW-cd43aa4c0e938f02",
+    "claim_type": "deployment",
+    "subject": "HD 现代",
+    "predicate": "deployment",
+    "object": "彩虹机器人公司的协作机器人投入焊接产线使用",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3,
+      "model_candidate_id": "MAC-96a4149d5e4049ec"
+    },
+    "source_span": {
+      "raw_id": "RAW-cd43aa4c0e938f02",
+      "start": 1219,
+      "end": 1261
+    },
+    "source_quote": "近期该公司持续提速全流程自动化落地，已将彩虹机器人公司的协作机器人投入焊接产线使用。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-a67a91e9bb61a6fa",
     "raw_id": "RAW-a89d5b55e404cf78",
     "claim_type": "funding",
@@ -1010,6 +1164,50 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-5912581fa2dc70b8",
+    "raw_id": "RAW-c8b91f128b47712d",
+    "claim_type": "product_release",
+    "subject": "Google Cloud",
+    "predicate": "product_release",
+    "object": "Gemini Enterprise Agent Platform",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-463fa0281bb3848d"
+    },
+    "source_span": {
+      "raw_id": "RAW-c8b91f128b47712d",
+      "start": 12,
+      "end": 146
+    },
+    "source_quote": "Today, we’re launching Gemini Enterprise Agent Platform— our new, comprehensive platform to build, scale, govern, and optimize agents.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-01f04006a530c905",
+    "raw_id": "RAW-a910eb051c2c7f33",
+    "claim_type": "hardware_deployment",
+    "subject": "Nvidia",
+    "predicate": "hardware_deployment",
+    "object": "Rubin AI infrastructure with 100% liquid cooling capable of operating at 45°C coolant temperature",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-6ecaf90e588c0403"
+    },
+    "source_span": {
+      "raw_id": "RAW-a910eb051c2c7f33",
+      "start": 188,
+      "end": 268
+    },
+    "source_quote": "英伟达最新的 Rubin AI 基础设施是全球首个实现 100% 液冷的技术 —— 每一颗芯片、每一个网络组件，都完全由液体在闭环中冷却， 系统内无任何风扇 。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-18fd1331339064b1",
     "raw_id": "RAW-c3d7205ffb3fed84",
     "claim_type": "partnership",
@@ -1028,6 +1226,50 @@
     "source_quote": "UK law firm is latest to partner with legal AI startup Harvey | Reuters ... Sept 21 (Reuters) - Another major law firm is debuting a legal artificial intelligence tool for its attorneys, turning to a startup called Harvey that has drawn investment from Sequoia Capital and OpenAI's startup fund. ... ... / query=AI implementation startup design partner pilot customer / intent=find_market_trend / path=a_media_gdelt",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-44c041fad428953f",
+    "raw_id": "RAW-ddc00ee916dc6286",
+    "claim_type": "product_release",
+    "subject": "豆包 App",
+    "predicate": "product_release",
+    "object": "打车功能",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-19c728221e56dd11"
+    },
+    "source_span": {
+      "raw_id": "RAW-ddc00ee916dc6286",
+      "start": 56,
+      "end": 98
+    },
+    "source_quote": "获得灰测的豆包用户，可直接在豆包 App 内使用一键打车服务，由曹操出行提供打车服务",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-ad86541bb81c96ff",
+    "raw_id": "RAW-172e5482a087d8d6",
+    "claim_type": "product_release",
+    "subject": "极摩客",
+    "predicate": "product_release",
+    "object": "EVO-X3 4T AMD AI 395 机皇版",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-c7b08383a43131eb"
+    },
+    "source_span": {
+      "raw_id": "RAW-172e5482a087d8d6",
+      "start": 636,
+      "end": 690
+    },
+    "source_quote": "根据规划，极摩客 EVO-X3 4T AMD AI 395 机皇版将于 6 月 22 日在京东平台全球首发。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   }
 ]

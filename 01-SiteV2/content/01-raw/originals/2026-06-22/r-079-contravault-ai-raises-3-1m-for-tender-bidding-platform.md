@@ -72,7 +72,7 @@ key_excerpts: [{"type":"funding","text":"# ContraVault AI Raises $3.1 Million to
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only
-title_zh: "ContraVault AI为其投标平台融资310万美元"
+title_zh: "ContraVault AI 为投标平台融资 310 万美元"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

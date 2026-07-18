@@ -2,7 +2,7 @@
 id: SIG-20260625-A09
 type: signal_card
 signal_type: case
-title: "2026年最佳垂直AI代理：排名与对比... - EasyClaw"
+title: "2026年最佳垂直AI智能体：排名与对比"
 date: 2026-06-25
 status: published
 source_title: "Best Vertical AI Agents in 2026: Ranked, Compared ... - EasyClaw"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Best Vertical AI Agents in 2026"
 
 frontend:
-  displayTitle: "2026年最佳垂直AI代理：排名与对比... - EasyClaw"
+  displayTitle: "2026年最佳垂直AI智能体：排名与对比"
   sourceLinks:
     - "https://easyclaw.com/blog/ai-agent-101/best-vertical-ai-agents"
 ---
 
-# 2026年最佳垂直AI代理：排名与对比... - EasyClaw
+# 2026年最佳垂直AI智能体：排名与对比
 
 ## 新闻事实
 

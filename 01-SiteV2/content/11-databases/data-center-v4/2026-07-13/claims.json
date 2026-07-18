@@ -84,6 +84,28 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-7ca95145f0010418",
+    "raw_id": "RAW-e43f04edb10c32d8",
+    "claim_type": "model_release",
+    "subject": "OpenAI",
+    "predicate": "model_release",
+    "object": "GPT-5.6 Sol",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 1,
+      "model_candidate_id": "MAC-e6a6a6aa36709708"
+    },
+    "source_span": {
+      "raw_id": "RAW-e43f04edb10c32d8",
+      "start": 47,
+      "end": 113
+    },
+    "source_quote": "the flagship tier of the model family OpenAI released this morning",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-beddf8b893b8ba69",
     "raw_id": "RAW-8278cb8dfce35d39",
     "claim_type": "funding",
@@ -735,6 +757,50 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-940338f400e9a2d2",
+    "raw_id": "RAW-b218a2af58d4230e",
+    "claim_type": "product_release",
+    "subject": "小鹏汽车",
+    "predicate": "product_release",
+    "object": "小鹏 MONA L03",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 1,
+      "model_candidate_id": "MAC-b11bb3edc76dec0e"
+    },
+    "source_span": {
+      "raw_id": "RAW-b218a2af58d4230e",
+      "start": 16,
+      "end": 71
+    },
+    "source_quote": "小鹏汽车今日宣布，小鹏 MONA L03 将于北京时间 7 月 16 日 19:00 在慕尼黑全球正式上市发布",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-d7998daf382fee23",
+    "raw_id": "RAW-d7f333145673953e",
+    "claim_type": "product_release",
+    "subject": "Claude Code",
+    "predicate": "product_release",
+    "object": "built-in browser that lets the AI read, click, and type on external websites",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-93927fedbc6e72fa"
+    },
+    "source_span": {
+      "raw_id": "RAW-d7f333145673953e",
+      "start": 0,
+      "end": 98
+    },
+    "source_quote": "Claude Code now has a built-in browser that lets the AI read, click, and type on external websites",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-640c4ad549143696",
     "raw_id": "RAW-66028bbd7f94b2a3",
     "claim_type": "product_release",
@@ -903,6 +969,28 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-7762d4dace115e12",
+    "raw_id": "RAW-f3d21b85ab371a64",
+    "claim_type": "hardware_deployment",
+    "subject": "FuriosaAI",
+    "predicate": "hardware_deployment",
+    "object": "RNGD servers at Equinix Lisbon LS2 data center",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-f1d629d83322a8f8"
+    },
+    "source_span": {
+      "raw_id": "RAW-f3d21b85ab371a64",
+      "start": 903,
+      "end": 984
+    },
+    "source_quote": "Furiosa is currently installing RNGD servers at Equinix’s Lisbon LS2 data center.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-9cc98d31288c9ff7",
     "raw_id": "RAW-78b868a3dad603bc",
     "claim_type": "hardware_product",
@@ -984,6 +1072,28 @@
     "source_quote": "\"Supermicro leads the industry with its broad portfolio of application optimized GPU servers that can be deployed in a wide range of enterprise environments with very short lead times,\" said Charles Liang, president and CEO of Supermicro. \"Our support for the NVIDIA RTX PRO 6000 Blackwell Server Edition GPU adds yet another dimension of performance and flexibility for customers looking to deploy the latest in accelerated computing capabilities from the data center to the intelligent edge. Supermicro's broad range of PCIe GPU-optimized products also support NVIDIA H200 NVL in 2-way and 4-way NVIDIA NVLink™ configurations to maximize inference performance for today's state-of-the-art AI models, as well as accelerating HPC workloads.\"",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-44bf8b1518381bd1",
+    "raw_id": "RAW-c0bb26414c6f7394",
+    "claim_type": "market_expansion",
+    "subject": "FuriosaAI",
+    "predicate": "market_expansion",
+    "object": "Europe",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-91bec51433f9b3b3"
+    },
+    "source_span": {
+      "raw_id": "RAW-c0bb26414c6f7394",
+      "start": 328,
+      "end": 511
+    },
+    "source_quote": "South Korean chip startup FuriosaAI is expanding into Europe, having struck a deal with colocation giant Equinix to deploy its AI inference accelerators in its Lisbon LS2 data center.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -1155,6 +1265,72 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-ad8b67d24f297a02",
+    "raw_id": "RAW-fc4ef3403bbbe91b",
+    "claim_type": "deployment",
+    "subject": "Simplexity Robotics i7 Pro",
+    "predicate": "deployment",
+    "object": "Leaderdrive CNC facility",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-21ecb991affd655a"
+    },
+    "source_span": {
+      "raw_id": "RAW-fc4ef3403bbbe91b",
+      "start": 1183,
+      "end": 1350
+    },
+    "source_quote": "At Leaderdrive’s CNC facility, multiple i7 Pro units navigate between different machine tools to complete continuous material loading, positioning, and insertion tasks",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-db619872aa377d64",
+    "raw_id": "RAW-857213f8f61e4251",
+    "claim_type": "deployment",
+    "subject": "JAKALA",
+    "predicate": "deployment",
+    "object": "Claude Enterprise to over 3,000 employees",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-b80b026b861d4deb"
+    },
+    "source_span": {
+      "raw_id": "RAW-857213f8f61e4251",
+      "start": 352,
+      "end": 404
+    },
+    "source_quote": "rolled out Claude Enterprise to over 3,000 employees",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e4151652bf730780",
+    "raw_id": "RAW-857213f8f61e4251",
+    "claim_type": "deployment",
+    "subject": "JAKALA",
+    "predicate": "deployment",
+    "object": "Performance Agents built on Claude Agent SDK across client media and marketing workflows",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-b80b026b861d4deb"
+    },
+    "source_span": {
+      "raw_id": "RAW-857213f8f61e4251",
+      "start": 263,
+      "end": 347
+    },
+    "source_quote": "deploying specialized Performance Agents across client media and marketing workflows",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-192a87e64ca4b5a9",
     "raw_id": "RAW-b9de8433ad38821e",
     "claim_type": "product_release",
@@ -1215,6 +1391,28 @@
     "source_quote": "To understand the design, first consider why agents fail. They lack specific skills that tasks demand, like retrieving the right record or verifying a precondition.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-7d8a2d9ec9035e45",
+    "raw_id": "RAW-30094c67a6b6707e",
+    "claim_type": "model_release",
+    "subject": "University of Michigan research team",
+    "predicate": "model_release",
+    "object": "NeuroVFM",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1,
+      "model_candidate_id": "MAC-cf29f1da1f52daf2"
+    },
+    "source_span": {
+      "raw_id": "RAW-30094c67a6b6707e",
+      "start": 408,
+      "end": 512
+    },
+    "source_quote": "A University of Michigan research team addresses this gap with NeuroVFM , published in Nature Medicine .",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -1467,6 +1665,28 @@
     "source_quote": "Deploy your sandboxed agents with Castari",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-9a746b4e4c6b0900",
+    "raw_id": "RAW-b24eb9a3f4b236d9",
+    "claim_type": "product_release",
+    "subject": "Supermicro",
+    "predicate": "product_release",
+    "object": "Kubernetes Edge AI appliances with Red Hat and Everpure",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-53c448882fb74f7e"
+    },
+    "source_span": {
+      "raw_id": "RAW-b24eb9a3f4b236d9",
+      "start": 306,
+      "end": 409
+    },
+    "source_quote": "today announced the launch of Kubernetes Edge AI appliances in collaboration with Red Hat and Everpure.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -1740,6 +1960,310 @@
     "source_quote": "IT之家 7 月 13 日消息，据博主 @Adak封狼居胥 分享，华为耳机联动豆包已全量上线，下载华为智慧音频和豆包 App， 鸿蒙手机可以小艺 / 豆包双智能体在线 ，苹果 / 安卓 也能通过豆包进行消息播报和面对面翻译。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-d7ba0f48ea4a3b87",
+    "raw_id": "RAW-229ffdffb5d53e1e",
+    "claim_type": "model_release",
+    "subject": "OpenAI",
+    "predicate": "model_release",
+    "object": "GPT-5.6",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-94dec3b1a30176c7"
+    },
+    "source_span": {
+      "raw_id": "RAW-229ffdffb5d53e1e",
+      "start": 1290,
+      "end": 1441
+    },
+    "source_quote": "OpenAI launched GPT-5.6, featuring models Sol, Terra, and Luna, with Sol leading in intelligence and efficiency for coding, cybersecurity, and science.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-cc9664adcce83f9c",
+    "raw_id": "RAW-229ffdffb5d53e1e",
+    "claim_type": "model_release",
+    "subject": "Meta",
+    "predicate": "model_release",
+    "object": "Muse Spark 1.1",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-94dec3b1a30176c7"
+    },
+    "source_span": {
+      "raw_id": "RAW-229ffdffb5d53e1e",
+      "start": 1021,
+      "end": 1131
+    },
+    "source_quote": "Meta introduced Muse Spark 1.1 with improved tool use, coding, computer interaction, and multimodal reasoning.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-0e27d66e06f2353e",
+    "raw_id": "RAW-1b98d1ce27853239",
+    "claim_type": "funding",
+    "subject": "SambaNova",
+    "predicate": "funding",
+    "object": "$1 billion in financing at a valuation of $11 billion",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-7a5806d16b81ba3e"
+    },
+    "source_span": {
+      "raw_id": "RAW-1b98d1ce27853239",
+      "start": 5003,
+      "end": 5078
+    },
+    "source_quote": "SambaNova has raised $1 billion in financing at a valuation of $11 billion.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-bea669aa579f57e0",
+    "raw_id": "RAW-d4b2dc39a5f00ad1",
+    "claim_type": "model_release",
+    "subject": "OpenAI",
+    "predicate": "model_release",
+    "object": "GPT-5.6 Sol, Terra, and Luna",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-81ca7dbaafcc1593"
+    },
+    "source_span": {
+      "raw_id": "RAW-d4b2dc39a5f00ad1",
+      "start": 943,
+      "end": 1017
+    },
+    "source_quote": "GPT-5.6 Sol, along with Terra and Luna, will launch publicly this Thursday",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-d2f66792dd75f193",
+    "raw_id": "RAW-8ac1434d9a6b9271",
+    "claim_type": "acquisition",
+    "subject": "SpaceX",
+    "predicate": "acquisition",
+    "object": "Cursor",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-8204fa30e42376f3"
+    },
+    "source_span": {
+      "raw_id": "RAW-8ac1434d9a6b9271",
+      "start": 1298,
+      "end": 1355
+    },
+    "source_quote": "SpaceX is acquiring Cursor for $60B in an all-stock deal.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-226126710853d2d5",
+    "raw_id": "RAW-8e9eeb6208a5fad6",
+    "claim_type": "service_change",
+    "subject": "Meta",
+    "predicate": "service_change",
+    "object": "Muse Image feature that let users generate AI images of other people by @-mentioning their public Instagram accounts",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-a3e39a5b64319bb5"
+    },
+    "source_span": {
+      "raw_id": "RAW-8e9eeb6208a5fad6",
+      "start": 200,
+      "end": 293
+    },
+    "source_quote": "Meta pulled a controversial feature from its new Muse Image model after widespread criticism.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-db0a1f0872ac7651",
+    "raw_id": "RAW-e26854f5fa22b529",
+    "claim_type": "organization_restructuring",
+    "subject": "OpenAI CEO Altman is now &quot;pretty sure&quot; AI is net job-creating, which is quite the pivot from predicting mass",
+    "predicate": "organization_restructuring",
+    "object": "OpenAI CEO Altman is now \"pretty sure\" AI is net job-creating, which is quite the pivot from predicting mass layoffs",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-e26854f5fa22b529",
+      "start": 0,
+      "end": 116
+    },
+    "source_quote": "OpenAI CEO Altman is now \"pretty sure\" AI is net job-creating, which is quite the pivot from predicting mass layoffs",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-9d37d480c3802983",
+    "raw_id": "RAW-e26854f5fa22b529",
+    "claim_type": "organization_restructuring",
+    "subject": "OpenAI CEO Altman is now &quot;pretty sure&quot; AI is net job-creating, which is quite the pivot from predicting mass",
+    "predicate": "organization_restructuring",
+    "object": "OpenAI CEO Altman is now \"pretty sure\" AI is net job-creating, which is quite the pivot from predicting mass layoffs",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-e26854f5fa22b529",
+      "start": 117,
+      "end": 233
+    },
+    "source_quote": "OpenAI CEO Altman is now \"pretty sure\" AI is net job-creating, which is quite the pivot from predicting mass layoffs",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-34acd7008d342f44",
+    "raw_id": "RAW-e26854f5fa22b529",
+    "claim_type": "organization_restructuring",
+    "subject": "OpenAI CEO Altman is now &quot;pretty sure&quot; AI is net job-creating, which is quite the pivot from predicting mass",
+    "predicate": "organization_restructuring",
+    "object": "OpenAI CEO Sam Altman now says he's \"pretty sure\" AI has created more jobs than it's eliminated. That's a sharp turn from his earlier warnings about entire professions disappearing. Anthropic CEO Dario Amodei is walking back similar claims, too. But studies so far back neither the old doomsday predictions nor optimism.",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-e26854f5fa22b529",
+      "start": 234,
+      "end": 554
+    },
+    "source_quote": "OpenAI CEO Sam Altman now says he's \"pretty sure\" AI has created more jobs than it's eliminated. That's a sharp turn from his earlier warnings about entire professions disappearing. Anthropic CEO Dario Amodei is walking back similar claims, too. But studies so far back neither the old doomsday predictions nor optimism.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-d66fe12687dfa9f5",
+    "raw_id": "RAW-e26854f5fa22b529",
+    "claim_type": "organization_restructuring",
+    "subject": "OpenAI CEO Altman is now &quot;pretty sure&quot; AI is net job-creating, which is quite the pivot from predicting mass",
+    "predicate": "organization_restructuring",
+    "object": "OpenAI CEO Sam Altman now says he's \"pretty sure\" AI has created more jobs than it's eliminated. That's a sharp turn from his earlier warnings about entire professions disappearing. Anthropic CEO Dario Amodei is walking back similar claims, too. But studies so far back neither the old doomsday predictions nor optimism.",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-e26854f5fa22b529",
+      "start": 555,
+      "end": 875
+    },
+    "source_quote": "OpenAI CEO Sam Altman now says he's \"pretty sure\" AI has created more jobs than it's eliminated. That's a sharp turn from his earlier warnings about entire professions disappearing. Anthropic CEO Dario Amodei is walking back similar claims, too. But studies so far back neither the old doomsday predictions nor optimism.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-dd680cf95b2536bf",
+    "raw_id": "RAW-5ba75b203463c912",
+    "claim_type": "product_release",
+    "subject": "米哈游",
+    "predicate": "product_release",
+    "object": "AI 陪伴互动软件《BSide: Olivia Lin》",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-873b3ba26200c20b"
+    },
+    "source_span": {
+      "raw_id": "RAW-5ba75b203463c912",
+      "start": 16,
+      "end": 66
+    },
+    "source_quote": "米哈游旗下 AI 陪伴互动软件《BSide: Olivia Lin》今日在 Steam 平台抢先体验",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-f403f4453155d51c",
+    "raw_id": "RAW-49b8ff9b8d234d3e",
+    "claim_type": "pricing_change",
+    "subject": "Anthropic",
+    "predicate": "pricing_change",
+    "object": "Claude Fable 5 subscription access extended through July 19, 2026",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-8f3d11722db3b91a"
+    },
+    "source_span": {
+      "raw_id": "RAW-49b8ff9b8d234d3e",
+      "start": 206,
+      "end": 290
+    },
+    "source_quote": "Anthropic is keeping Claude Fable 5 in its subscription plans through July 19, 2026.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-96199242ad064e6c",
+    "raw_id": "RAW-49b8ff9b8d234d3e",
+    "claim_type": "pricing_change",
+    "subject": "Anthropic",
+    "predicate": "pricing_change",
+    "object": "Claude Fable 5 pay-per-use switch postponed",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-8f3d11722db3b91a"
+    },
+    "source_span": {
+      "raw_id": "RAW-49b8ff9b8d234d3e",
+      "start": 291,
+      "end": 345
+    },
+    "source_quote": "The model was supposed to switch to pay-per-use today.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-da930b593b6246ad",
+    "raw_id": "RAW-49b8ff9b8d234d3e",
+    "claim_type": "pricing_change",
+    "subject": "Anthropic",
+    "predicate": "pricing_change",
+    "object": "Claude Fable 5 weekly usage limit set at 50 percent",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3,
+      "model_candidate_id": "MAC-8f3d11722db3b91a"
+    },
+    "source_span": {
+      "raw_id": "RAW-49b8ff9b8d234d3e",
+      "start": 346,
+      "end": 417
+    },
+    "source_quote": "Subscribers can use up to 50 percent of their weekly limit for Fable 5.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   }
 ]

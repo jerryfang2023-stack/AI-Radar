@@ -2,10 +2,10 @@
 schema_version: raw-evidence-v2
 raw_id: R-087
 title: "Amazon challenges competitors with on-premises Nvidia 'AI Factories'"
-title_zh: "亚马逊推出本地部署的英伟达‘AI 工厂’挑战竞争对手"
-title_translation_status: translated
-title_translation_method: deepseek_title_translation
-title_translation_model: deepseek-v4-flash
+title_zh: "亚马逊推出本地部署的英伟达“AI 工厂”挑战竞争对手"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 original_url: "https://techcrunch.com/2025/12/02/amazon-challenges-competitors-with-on-premises-nvidia-ai-factories/"
 canonical_url: "https://techcrunch.com/2025/12/02/amazon-challenges-competitors-with-on-premises-nvidia-ai-factories"
 source_name: "keyword search / Anysearch"

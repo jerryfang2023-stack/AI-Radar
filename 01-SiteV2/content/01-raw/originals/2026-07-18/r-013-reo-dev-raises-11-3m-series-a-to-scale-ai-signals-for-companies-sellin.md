@@ -3,9 +3,9 @@ schema_version: raw-evidence-v2
 raw_id: R-013
 title: "Reo.Dev raises $11.3M Series A to scale AI signals for Companies Selling to Engineering Teams"
 title_zh: "Reo.Dev 完成 1130 万美元 A 轮融资，扩大面向工程团队的 AI 信号服务"
-title_translation_status: translated
-title_translation_method: deepseek_title_translation
-title_translation_model: deepseek-v4-flash
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 original_url: "https://www.reo.dev/blog/reo-dev-series-a"
 canonical_url: "https://reo.dev/blog/reo-dev-series-a"
 source_name: "keyword search / Anysearch"

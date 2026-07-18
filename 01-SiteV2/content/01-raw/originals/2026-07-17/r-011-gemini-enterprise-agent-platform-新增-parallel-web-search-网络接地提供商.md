@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-011
 title: "Gemini Enterprise Agent Platform 新增 Parallel Web Search 网络接地提供商"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "Gemini Enterprise Agent Platform 新增 Parallel Web Search 网络接地提供商"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://developers.googleblog.com/expanding-choice-in-gemini-enterprise-agent-platform-introducing-grounding-with-parallel-web-search"
 canonical_url: "https://developers.googleblog.com/expanding-choice-in-gemini-enterprise-agent-platform-introducing-grounding-with-parallel-web-search"
 source_name: "Google Developers Blog（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-17T04:40:16.838Z
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Gemini Enterprise Agent Platform 新增 Parallel Web Search 网络接地提供商

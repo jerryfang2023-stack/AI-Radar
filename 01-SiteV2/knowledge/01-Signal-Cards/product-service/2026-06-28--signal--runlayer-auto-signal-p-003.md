@@ -2,7 +2,7 @@
 id: SIG-20260628-A19
 type: signal_card
 signal_type: product_service
-title: "Runlayer 获3000万美元A轮融资，助力企业全面拥抱AI"
+title: "Runlayer 获 3000 万美元 A 轮融资，助力企业全面拥抱 AI"
 date: 2026-06-28
 status: published
 source_title: "Runlayer Raises $30M Series A to Help Enterprises Go All In On AI"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Runlayer"
 
 frontend:
-  displayTitle: "Runlayer 获3000万美元A轮融资，助力企业全面拥抱AI"
+  displayTitle: "Runlayer 获 3000 万美元 A 轮融资，助力企业全面拥抱 AI"
   sourceLinks:
     - "https://www.prnewswire.com/news-releases/runlayer-raises-30m-series-a-to-help-enterprises-go-all-in-on-ai-302809271.html"
 ---
 
-# Runlayer 获3000万美元A轮融资，助力企业全面拥抱AI
+# Runlayer 获 3000 万美元 A 轮融资，助力企业全面拥抱 AI
 
 ## 新闻事实
 

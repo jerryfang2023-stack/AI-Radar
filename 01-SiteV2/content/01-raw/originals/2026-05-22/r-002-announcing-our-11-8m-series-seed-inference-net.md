@@ -72,7 +72,7 @@ key_excerpts: [{"type":"funding","text":"Announcing our $11.8M Series Seed | Inf
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
-title_zh: "宣布我们的1180万美元种子轮融资 | Inference.net"
+title_zh: "宣布我们的1180万美元种子轮融资"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

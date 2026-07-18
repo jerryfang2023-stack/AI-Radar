@@ -3,9 +3,9 @@ schema_version: raw-evidence-v2
 raw_id: R-107
 title: "BrainCo 强脑科技发布全球首个脑控机器人训练平台，10 分钟解锁意念控制"
 title_zh: "BrainCo 强脑科技发布全球首个脑控机器人训练平台，10 分钟解锁意念控制"
-title_translation_status: not_required
-title_translation_method: source_title
-title_translation_model: not_applicable
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 original_url: "https://www.ithome.com/0/978/289.htm"
 canonical_url: "https://ithome.com/0/978/289.htm"
 source_name: "IT之家（RSS）"

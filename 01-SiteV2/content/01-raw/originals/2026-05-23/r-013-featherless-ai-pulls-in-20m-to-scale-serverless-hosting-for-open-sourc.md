@@ -72,7 +72,7 @@ key_excerpts: [{"type":"funding","text":"Featherless.ai Inc., a serverless infer
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
-title_zh: "Featherless.ai获2000万美元融资，用于扩展开源AI模型的无服务器托管服务"
+title_zh: "Featherless.ai 获 2000 万美元融资，用于扩展开源 AI 模型的无服务器托管服务"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

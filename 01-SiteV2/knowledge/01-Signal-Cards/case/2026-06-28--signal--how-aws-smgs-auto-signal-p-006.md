@@ -2,7 +2,7 @@
 id: SIG-20260628-A08
 type: signal_card
 signal_type: case
-title: "AWS SMGS借助Amazon Bedrock AgentCore的AI对话助手，革新业务管理方式 | 人工智能"
+title: "AWS SMGS借助Amazon Bedrock AgentCore的AI对话助手，革新业务管理方式"
 date: 2026-06-28
 status: published
 source_title: "How AWS SMGS uses an AI-powered conversational assistant to transform business management with Amazon Bedrock AgentCore | Artificial Intelligence"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "How AWS SMGS"
 
 frontend:
-  displayTitle: "AWS SMGS借助Amazon Bedrock AgentCore的AI对话助手，革新业务管理方式 | 人工智能"
+  displayTitle: "AWS SMGS借助Amazon Bedrock AgentCore的AI对话助手，革新业务管理方式"
   sourceLinks:
     - "https://aws.amazon.com/blogs/machine-learning/how-aws-smgs-uses-an-ai-powered-conversational-assistant-to-transform-business-management-with-amazon-bedrock-agentcore/"
 ---
 
-# AWS SMGS借助Amazon Bedrock AgentCore的AI对话助手，革新业务管理方式 | 人工智能
+# AWS SMGS借助Amazon Bedrock AgentCore的AI对话助手，革新业务管理方式
 
 ## 新闻事实
 

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"Today we're launching dreaming i
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_zh: "Claude 博客｜Claude 托管智能体新功能：梦境、成果与多智能体编排"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Claude Blog｜New in Claude Managed Agents: dreaming, outcomes, and multiagent orchestration

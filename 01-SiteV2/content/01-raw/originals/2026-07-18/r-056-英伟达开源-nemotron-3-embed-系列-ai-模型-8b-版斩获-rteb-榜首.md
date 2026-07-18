@@ -3,9 +3,9 @@ schema_version: raw-evidence-v2
 raw_id: R-056
 title: "英伟达开源 Nemotron 3 Embed 系列 AI 模型，8B 版斩获 RTEB 榜首"
 title_zh: "英伟达开源 Nemotron 3 Embed 系列 AI 模型，8B 版斩获 RTEB 榜首"
-title_translation_status: not_required
-title_translation_method: source_title
-title_translation_model: not_applicable
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 original_url: "https://www.ithome.com/0/978/334.htm"
 canonical_url: "https://ithome.com/0/978/334.htm"
 source_name: "IT之家（RSS）"

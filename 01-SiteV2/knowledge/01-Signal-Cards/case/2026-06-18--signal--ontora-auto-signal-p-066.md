@@ -2,7 +2,7 @@
 id: SIG-20260618-A13
 type: signal_card
 signal_type: case
-title: "Ontora：通过访谈每位员工为AI工具提供上下文的AI代理 | Y Combinator"
+title: "Ontora：通过访谈每位员工为AI工具提供上下文的AI智能体"
 date: 2026-06-18
 status: published
 source_title: "Ontora: AI agents that interviews every employee to hand context to AI tools. | Y Combinator"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "Ontora"
 
 frontend:
-  displayTitle: "Ontora：通过访谈每位员工为AI工具提供上下文的AI代理 | Y Combinator"
+  displayTitle: "Ontora：通过访谈每位员工为AI工具提供上下文的AI智能体"
   sourceLinks:
     - "https://www.ycombinator.com/companies/ontora"
 ---
 
-# Ontora：通过访谈每位员工为AI工具提供上下文的AI代理 | Y Combinator
+# Ontora：通过访谈每位员工为AI工具提供上下文的AI智能体
 
 ## 新闻事实
 

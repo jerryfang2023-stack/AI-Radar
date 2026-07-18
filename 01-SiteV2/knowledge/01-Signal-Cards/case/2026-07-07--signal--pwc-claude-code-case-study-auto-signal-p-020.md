@@ -2,7 +2,7 @@
 id: SIG-20260707-A04
 type: signal_card
 signal_type: case
-title: "PwC Claude Code案例研究 | Anthropic旗下Claude"
+title: "PwC Claude Code案例研究"
 date: 2026-07-07
 status: published
 source_title: "PwC Claude Code case study | Claude by Anthropic"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "PwC Claude Code case study"
 
 frontend:
-  displayTitle: "PwC Claude Code案例研究 | Anthropic旗下Claude"
+  displayTitle: "PwC Claude Code案例研究"
   sourceLinks:
     - "https://claude.com/customers/pwc-qa"
 ---
 
-# PwC Claude Code案例研究 | Anthropic旗下Claude
+# PwC Claude Code案例研究
 
 ## 新闻事实
 

@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-042
 title: "How Siemens handles 90% of calls autonomously with Amazon Connect Customer AI Agents | AWS Contact Center"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "西门子借助Amazon Connect客户AI智能体自主处理90%通话"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://aws.amazon.com/blogs/contact-center/how-siemens-handles-90-of-calls-autonomously-with-amazon-connect-customer-ai-agents/"
 canonical_url: "https://aws.amazon.com/blogs/contact-center/how-siemens-handles-90-of-calls-autonomously-with-amazon-connect-customer-ai-agents"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-09T03:05:45.027Z
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # How Siemens handles 90% of calls autonomously with Amazon Connect Customer AI Agents | AWS Contact Center

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"Today we're announcing that the 
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_zh: "Google AI Studio 推出 Gemini 模型与智能体交互 API"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Google AI Studio’s Interactions API for Gemini models and agents

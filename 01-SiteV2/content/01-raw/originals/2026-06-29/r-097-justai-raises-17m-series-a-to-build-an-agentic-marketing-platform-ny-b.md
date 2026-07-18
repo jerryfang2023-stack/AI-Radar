@@ -72,7 +72,7 @@ key_excerpts: [{"type":"funding","text":"JustAI Raises $17M Series A to Build an
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
-title_zh: "JustAI 获1700万美元A轮融资，打造代理式营销平台 | 纽约商业时报"
+title_zh: "JustAI 获1700万美元A轮融资，打造代理式营销平台"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

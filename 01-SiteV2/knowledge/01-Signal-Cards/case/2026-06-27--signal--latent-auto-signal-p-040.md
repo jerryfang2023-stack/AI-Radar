@@ -2,7 +2,7 @@
 id: SIG-20260627-A13
 type: signal_card
 signal_type: case
-title: "首个机制可解释性前沿实验室——Goodfire AI的Myra Deng与Mark Bissell"
+title: "首个机械可解释性前沿实验室——Goodfire AI 的 Myra Deng 与 Mark Bissell"
 date: 2026-06-27
 status: published
 source_title: "The First Mechanistic Interpretability Frontier Lab — Myra Deng &amp; Mark Bissell of Goodfire AI"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Latent"
 
 frontend:
-  displayTitle: "首个机制可解释性前沿实验室——Goodfire AI的Myra Deng与Mark Bissell"
+  displayTitle: "首个机械可解释性前沿实验室——Goodfire AI 的 Myra Deng 与 Mark Bissell"
   sourceLinks:
     - "https://www.latent.space/p/goodfire"
 ---
 
-# 首个机制可解释性前沿实验室——Goodfire AI的Myra Deng与Mark Bissell
+# 首个机械可解释性前沿实验室——Goodfire AI 的 Myra Deng 与 Mark Bissell
 
 ## 新闻事实
 

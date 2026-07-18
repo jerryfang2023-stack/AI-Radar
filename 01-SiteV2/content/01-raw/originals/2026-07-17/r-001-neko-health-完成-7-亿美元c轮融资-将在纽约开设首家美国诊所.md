@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-001
 title: "Neko Health 完成 7 亿美元C轮融资，将在纽约开设首家美国诊所"
 title_zh: "Neko Health 完成 7 亿美元C轮融资，将在纽约开设首家美国诊所"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.artificialintelligence-news.com/news/neko-health-700m-ai-body-scans-us"
 canonical_url: "https://artificialintelligence-news.com/news/neko-health-700m-ai-body-scans-us"
 source_name: "Artificial Intelligence News（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-17T04:40:16.762Z
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Neko Health 完成 7 亿美元C轮融资，将在纽约开设首家美国诊所

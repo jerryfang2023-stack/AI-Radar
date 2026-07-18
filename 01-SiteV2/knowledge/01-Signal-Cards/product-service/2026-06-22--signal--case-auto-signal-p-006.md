@@ -2,7 +2,7 @@
 id: SIG-20260622-A04
 type: signal_card
 signal_type: product_service
-title: "UiPath推出Maestro Case以编排动态业务流程 | UiPath"
+title: "UiPath推出Maestro Case以编排动态业务流程"
 date: 2026-06-22
 status: published
 source_title: "UiPath Introduces Maestro Case to Orchestrate Dynamic Business Processes | UiPath"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Case"
 
 frontend:
-  displayTitle: "UiPath推出Maestro Case以编排动态业务流程 | UiPath"
+  displayTitle: "UiPath推出Maestro Case以编排动态业务流程"
   sourceLinks:
     - "https://www.uipath.com/newsroom/uipath-introduces-maestro-case-for-dynamic-business-processes"
 ---
 
-# UiPath推出Maestro Case以编排动态业务流程 | UiPath
+# UiPath推出Maestro Case以编排动态业务流程
 
 ## 新闻事实
 

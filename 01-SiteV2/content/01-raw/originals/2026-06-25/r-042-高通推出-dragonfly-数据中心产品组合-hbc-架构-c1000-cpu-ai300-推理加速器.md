@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"高通在投资者日发布 Dragonfly �
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "高通推出 Dragonfly 数据中心产品组合：HBC 架构、C1000 CPU、AI300 推理加速器"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 高通推出 Dragonfly 数据中心产品组合：HBC 架构、C1000 CPU、AI300 推理加速器

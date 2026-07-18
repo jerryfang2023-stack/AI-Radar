@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Anthropic已秘密向美国证券交易
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "抢跑OpenAI，Anthropic官宣已秘密递交IPO申请"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 抢跑OpenAI，Anthropic官宣已秘密递交IPO申请

@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-121
 title: "Google Search now generates AI images when it can&#039;t find what you&#039;re looking for on the web"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "Google 搜索在无法找到网页内容时，现可生成 AI 图像"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://the-decoder.com/google-search-now-generates-ai-images-when-it-cant-find-what-youre-looking-for-on-the-web/"
 canonical_url: "https://the-decoder.com/google-search-now-generates-ai-images-when-it-cant-find-what-youre-looking-for-on-the-web"
 source_name: "The Decoder AI News"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-15T04:28:38.231Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Google Search now generates AI images when it can&#039;t find what you&#039;re looking for on the web

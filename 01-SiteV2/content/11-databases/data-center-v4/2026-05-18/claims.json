@@ -61,5 +61,27 @@
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-ff0f39999a3cbac3",
+    "raw_id": "RAW-4f355ef57a7fc8bb",
+    "claim_type": "model_release",
+    "subject": "DeepSeek",
+    "predicate": "model_release",
+    "object": "DeepSeek-V4 预览版本",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-80f48c393ad77cc8"
+    },
+    "source_span": {
+      "raw_id": "RAW-4f355ef57a7fc8bb",
+      "start": 19,
+      "end": 80
+    },
+    "source_quote": "DeepSeek-V4 预览版本发布，具备世界顶级推理性能，Agent 能力大幅提高，已在网页端、APP 和 API 上线",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
   }
 ]

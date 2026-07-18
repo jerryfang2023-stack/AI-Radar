@@ -72,6 +72,10 @@ key_excerpts: [{"type":"company_action","text":"another benchmark for real swe w
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_zh: "再见，Fable"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Bye bye Fable

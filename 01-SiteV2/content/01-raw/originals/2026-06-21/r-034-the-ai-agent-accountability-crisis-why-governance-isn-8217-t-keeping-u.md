@@ -72,7 +72,7 @@ key_excerpts: [{"type":"supporting_context","text":"Every enterprise is building
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
-title_zh: "AI代理问责危机：治理为何落后于部署"
+title_zh: "AI 智能体问责危机：治理为何落后于部署"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

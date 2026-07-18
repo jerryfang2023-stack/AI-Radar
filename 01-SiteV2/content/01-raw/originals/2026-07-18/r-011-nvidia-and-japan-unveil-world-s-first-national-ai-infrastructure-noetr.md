@@ -2,10 +2,10 @@
 schema_version: raw-evidence-v2
 raw_id: R-011
 title: "Nvidia and Japan unveil world's first national AI infrastructure — Noetra consortium to build a 140MW Rubin AI factory with 27,500 GPUs | Tom's Hardware"
-title_zh: "英伟达与日本发布全球首个国家级AI基础设施——Noetra联盟将建设140MW Rubin AI工厂，配备27,500块GPU"
-title_translation_status: translated
-title_translation_method: deepseek_title_translation
-title_translation_model: deepseek-v4-flash
+title_zh: "Nvidia 与日本推出全球首个国家级 AI 基础设施——Noetra 联盟将建设 140MW Rubin AI 工厂，配备 27,500 块 GPU"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 original_url: "https://www.tomshardware.com/pc-components/gpus/nvidia-and-japans-noetra-consortium-to-build-140mw-rubin-ai-factory-with-27500-gpus"
 canonical_url: "https://tomshardware.com/pc-components/gpus/nvidia-and-japans-noetra-consortium-to-build-140mw-rubin-ai-factory-with-27500-gpus"
 source_name: "keyword search / Anysearch"

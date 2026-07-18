@@ -2,7 +2,7 @@
 id: SIG-20260521-05
 type: signal_card
 signal_type: case
-title: "AI语音代理为欧洲眼科集团将手术排期时间缩短50%"
+title: "AI 语音智能体为欧洲眼科集团将手术排期时间缩短 50%"
 date: 2026-05-21
 status: draft
 asset_level: candidate
@@ -37,7 +37,7 @@ signal_owner: "Druid AI"
 watch_reason: "继续看是否有更多医院、科室或患者体验指标被公开。"
 
 frontend:
-  displayTitle: "AI语音代理为欧洲眼科集团将手术排期时间缩短50%"
+  displayTitle: "AI 语音智能体为欧洲眼科集团将手术排期时间缩短 50%"
   eventLine: "Druid AI 案例显示，欧洲眼科集团用语音 Agent 改造患者体验和手术预约流程。"
   whyWatch: "这条医疗运营案例带有明确数字，能观察 AI 是否进入高摩擦服务流程。"
   businessMeaning: "影响的是患者服务、排班效率、前台人力和医疗机构的运营体验。"
@@ -71,7 +71,7 @@ opportunity_signals:
   missing_fields: ["product_form", "delivery_model"]
 ---
 
-# AI语音代理为欧洲眼科集团将手术排期时间缩短50%
+# AI 语音智能体为欧洲眼科集团将手术排期时间缩短 50%
 
 ## 信号底稿
 

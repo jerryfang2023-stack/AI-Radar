@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"GPT-5.5, GPT-5.4, and Codex are 
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "OpenAI 模型与 Codex 现已在 Amazon Bedrock 上全面可用"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # OpenAI models and Codex on Amazon Bedrock are now generally available | Artificial Intelligence

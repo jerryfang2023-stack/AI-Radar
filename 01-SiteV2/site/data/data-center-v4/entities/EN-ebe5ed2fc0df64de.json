@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T01:57:40.269Z",
-    "latestDataDate": "2026-07-17",
-    "currentDate": "2026-07-17",
-    "eventCount": 832,
-    "quarantinedEventCount": 60
+    "generatedAt": "2026-07-18T04:59:59.870Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 1250,
+    "quarantinedEventCount": 11
   },
   "entity": {
     "id": "EN-ebe5ed2fc0df64de",
@@ -20,28 +20,237 @@
     "datasetScopes": [
       "canonical"
     ],
-    "eventIds": [],
+    "eventIds": [
+      "EV-57597c92f7b183a9"
+    ],
     "viewpointIds": [],
-    "classificationRefs": [],
+    "classificationRefs": [
+      "TX-industry-healthcare_life_sciences",
+      "TX-technology-mixture_of_experts"
+    ],
     "relatedEntityIds": [],
-    "firstSeen": "",
-    "lastSeen": "",
+    "firstSeen": "2026-06-06",
+    "lastSeen": "2026-06-07",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
-      "productsServices": [],
+      "productsServices": [
+        "EV-57597c92f7b183a9"
+      ],
       "hardware": [],
       "organizationPeople": [],
       "other": []
     },
-    "timeline": [],
+    "timeline": [
+      {
+        "id": "EV-57597c92f7b183a9",
+        "dataDate": "2026-06-06",
+        "date": "2026-06-07",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "领先推理提供商借助NVIDIA Blackwell上的开源模型实现最低Token成本",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          },
+          {
+            "dimensionId": "product_form",
+            "id": "api_service",
+            "dimensionName": "产品形态",
+            "name": "API / 模型服务"
+          },
+          {
+            "dimensionId": "product_form",
+            "id": "data_infrastructure",
+            "dimensionName": "产品形态",
+            "name": "数据与模型基础设施"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "mixture_of_experts",
+            "name": "混合专家模型"
+          },
+          {
+            "dimensionId": "industry",
+            "id": "healthcare_life_sciences",
+            "dimensionName": "行业",
+            "name": "医疗与生命科学"
+          }
+        ],
+        "entityIds": [
+          "EN-8d4321d936320802",
+          "EN-96eebba49dbbf422",
+          "EN-ebe5ed2fc0df64de",
+          "EN-fbe26af59be95e52",
+          "EN-6f549489209ee753"
+        ]
+      }
+    ],
     "viewpoints": []
   },
   "relatedEntities": [],
   "relationships": [],
-  "taxonomyNodes": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-industry-healthcare_life_sciences",
+      "name": "医疗与生命科学",
+      "nodeType": "industry",
+      "typeLabel": "行业",
+      "valueId": "healthcare_life_sciences",
+      "eventIds": [
+        "EV-2dff32c1b6f813e4",
+        "EV-6e06cfa28f76a76f",
+        "EV-aa33ca051f3a7f78",
+        "EV-cfd791871e347aa6",
+        "EV-f487788f3d44f288",
+        "EV-189e43cb9fea8e1a",
+        "EV-a42e51959c627554",
+        "EV-a84ec4216d3ded6d",
+        "EV-8b0f056571d68269",
+        "EV-9563aa162529aab0",
+        "EV-cafe435ddd007821",
+        "EV-4db890779221bd9a",
+        "EV-d1e2a7c6d314612c",
+        "EV-8abf5adc3e72fbb8",
+        "EV-afd0332ad8f5f05b",
+        "EV-2c87c8ea47cbd1b6",
+        "EV-794296a712c1cf15",
+        "EV-f4ead1a54e596bf8",
+        "EV-e999f3386aba7a2e",
+        "EV-bad301e14b034fbd",
+        "EV-4763b46821ab746e",
+        "EV-6b51b1b6fe22c540",
+        "EV-2aca9a810ea65555",
+        "EV-57597c92f7b183a9",
+        "EV-6ce6b9c9780b97d9",
+        "EV-dd62847548bb6ae3",
+        "EV-322796d9761a0824",
+        "EV-14b44a40808340f5",
+        "EV-edb1ddb3a091ada4"
+      ],
+      "entityIds": [
+        "EN-cf9488537f777c1a",
+        "EN-96eebba49dbbf422",
+        "EN-caaa8e02be54cfc9",
+        "EN-1bd14cd1a58c5708",
+        "EN-7d3194f79e645c42",
+        "EN-41a9132b800767fb",
+        "EN-f3d05a0f6248941d",
+        "EN-11507a0e2f5e69d5",
+        "EN-b314f58f5f506fd2",
+        "EN-ee04228c5c6d8b08",
+        "EN-7706c3c94d5f9b59",
+        "EN-e5cc9e38970eacb5",
+        "EN-cbc62794911ff31b",
+        "EN-b81c8201acfc7639",
+        "EN-8d4321d936320802",
+        "EN-59ae856cd788d0f5",
+        "EN-0f3360879e746531",
+        "EN-80d387ccb3289295",
+        "EN-27032b3c60ab2a95",
+        "EN-43381465c2b7d64e",
+        "EN-c70eca6b0f88f44d",
+        "EN-28d0bd981118a907",
+        "EN-9fbf261b62c1d7c0",
+        "EN-8d291c7017252b07",
+        "EN-8147e6fed86d42c1",
+        "EN-4d748ebd71af03a7",
+        "EN-c3e4cc183d345262",
+        "EN-ab877737b6081bd1",
+        "EN-2d54d63f0289af79",
+        "EN-cbadff7c58c26e1a",
+        "EN-06b5472c16feae4c",
+        "EN-bab9670e68265ab1",
+        "EN-e3b1bf3dab957ffe",
+        "EN-a93bc1dfeb147c54",
+        "EN-6f7ac1823da81d2e",
+        "EN-86acdf589a6723d5",
+        "EN-ebe5ed2fc0df64de",
+        "EN-fbe26af59be95e52",
+        "EN-6f549489209ee753",
+        "EN-61cce404a45c3545",
+        "EN-2a920347dfcf07a7",
+        "EN-2dc010636b9dce91",
+        "EN-23b979df49741c93",
+        "EN-02072c80a8386e8d",
+        "EN-2eb073b22916de55",
+        "EN-4a639cb888a15d75",
+        "EN-56ee86045cfb0ddd",
+        "EN-9dde0c2d375060f6",
+        "EN-ea3bd73e2b506e00",
+        "EN-a19ad969c84178e9",
+        "EN-668a3f52e25f8f4c",
+        "EN-9eb42ffb4942bcc2",
+        "EN-b6e23938808f272d"
+      ],
+      "fdeIds": [
+        "FDE-0ee0fe3baa3f1364",
+        "FDE-d08fed45110ab44b",
+        "FDE-ab9c514225686f60",
+        "FDE-560b710961006374",
+        "FDE-1fb7e2ae69d2f044"
+      ],
+      "hardwareIds": [
+        "HW-ceb55d9bc637c1d3"
+      ],
+      "firstSeen": "2026-01-20",
+      "lastSeen": "2026-07-18"
+    },
+    {
+      "id": "TX-technology-mixture_of_experts",
+      "name": "混合专家模型",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "mixture_of_experts",
+      "eventIds": [
+        "EV-80e54c9a390da293",
+        "EV-70e3f88cb06a856c",
+        "EV-53f881da31630a04",
+        "EV-3ef3e18df61a00d8",
+        "EV-568d2aeab5234e48",
+        "EV-97a8d86baa7fffc4",
+        "EV-964971e83a649d4d",
+        "EV-57597c92f7b183a9"
+      ],
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-c70eca6b0f88f44d",
+        "EN-7d3194f79e645c42",
+        "EN-8f71c4871a160172",
+        "EN-78624f0a98e78301",
+        "EN-4b078b39d2fcacc7",
+        "EN-96eebba49dbbf422",
+        "EN-9e193e1ec8d75d41",
+        "EN-51fd7dc086fcb858",
+        "EN-bbf9aece05291ea4",
+        "EN-bbdefa2950f49882",
+        "EN-2b6e51bec93e86c1",
+        "EN-b0532e1af75cc4ab",
+        "EN-d56aa2f9908f566a",
+        "EN-3db1f560db626918",
+        "EN-4d09c69c19f5f67b",
+        "EN-6e898ad0522fca30",
+        "EN-72e8088a05b38ae3",
+        "EN-833cd615d86b73ca",
+        "EN-ebe5ed2fc0df64de",
+        "EN-fbe26af59be95e52",
+        "EN-6f549489209ee753"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-06-06",
+      "lastSeen": "2026-07-17"
+    }
+  ],
   "fde": [],
   "hardware": []
 }

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"OpenAI private MCP 🤖, Cognition $26B 
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "OpenAI 私有 MCP 🤖，Cognition 估值 260 亿美元 💰，ElevenLabs Music v2 🎵"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # OpenAI private MCP 🤖, Cognition $26B valuation 💰, ElevenLabs Music v2 🎵

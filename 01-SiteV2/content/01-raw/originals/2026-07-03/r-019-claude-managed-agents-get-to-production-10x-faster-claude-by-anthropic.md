@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-019
 title: "Claude Managed Agents: get to production 10x faster | Claude by Anthropic"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "Claude 托管智能体：将生产速度提升 10 倍"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://claude.com/blog/claude-managed-agents"
 canonical_url: "https://claude.com/blog/claude-managed-agents"
 source_name: "keyword search / Anysearch"
@@ -78,6 +78,7 @@ fact_extraction_completed_at: 2026-07-03T01:59:31.124Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Claude Managed Agents: get to production 10x faster | Claude by Anthropic

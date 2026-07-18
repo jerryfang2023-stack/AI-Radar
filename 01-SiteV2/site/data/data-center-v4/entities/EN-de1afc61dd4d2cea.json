@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T01:57:40.269Z",
-    "latestDataDate": "2026-07-17",
-    "currentDate": "2026-07-17",
-    "eventCount": 832,
-    "quarantinedEventCount": 60
+    "generatedAt": "2026-07-18T04:59:59.870Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 1250,
+    "quarantinedEventCount": 11
   },
   "entity": {
     "id": "EN-de1afc61dd4d2cea",
@@ -56,7 +56,7 @@
         "eventGroup": "模型、产品与服务",
         "status": "completed",
         "statusLabel": "已完成",
-        "title": "Meta推出新AI图像生成器Muse Image，用户因照片使用问题表示反对",
+        "title": "Meta 推出新 AI 生成器 Muse Image，用户因照片使用问题提出反对",
         "displayTags": [
           {
             "dimensionId": "product_form",
@@ -93,20 +93,25 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-02882e6f5e1902c6",
         "EV-5df885dbd24b6d00",
+        "EV-dcbe916c6138e5cb",
         "EV-427081ec574b43bb",
         "EV-e41fc65eb014893f",
         "EV-974a6b7d0e0efef2",
         "EV-917a390341b9fce6",
         "EV-3f8f6a578be79988",
+        "EV-467d1a701d21327d",
+        "EV-bc9abd502c002102",
         "EV-9efcf6480f6c6f48",
         "EV-cf76f090a1a20a36",
         "EV-fd7e79d3cb9cdb69",
         "EV-43301de739fe560e",
         "EV-cf176636839e45be",
+        "EV-8540be15175c65da",
         "EV-9496f90f3e808992",
         "EV-dce5de62b2e4b752",
+        "EV-2ffbe4560e69992a",
+        "EV-60bc38fbf2bbb1ea",
         "EV-ae736eb124d7163a",
         "EV-e42e55d1e11a2ba2",
         "EV-41baa43cf05d4288",
@@ -122,13 +127,16 @@
         "EV-c846e768dad05441",
         "EV-cea99e5d7f93d56a",
         "EV-29f130674dbbb59e",
-        "EV-a39ca82d354c7197",
+        "EV-c98d4ee7764d51b2",
         "EV-657837763764c869",
         "EV-ef823877347ff40f",
         "EV-04cf95633b564f9a",
         "EV-02b07069713d9a1c",
         "EV-322796d9761a0824",
         "EV-2d56dec8dfeb2b56",
+        "EV-618e2e96fac28f06",
+        "EV-47694f247d24b044",
+        "EV-0d6433da1f8d256a",
         "EV-8fcecabca2e92b40"
       ],
       "viewpointIds": [],
@@ -136,8 +144,9 @@
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
         "TX-industry-healthcare_life_sciences",
-        "TX-industry-media_entertainment",
+        "TX-use_case-cybersecurity",
         "TX-technology-multimodal",
+        "TX-industry-media_entertainment",
         "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
@@ -155,8 +164,8 @@
         "EN-5fa6f727c9e3afe0",
         "EN-e71558a14e7ed6ab"
       ],
-      "firstSeen": "2026-05-23",
-      "lastSeen": "2026-07-17"
+      "firstSeen": "2026-05-22",
+      "lastSeen": "2026-07-18"
     }
   ],
   "relationships": [
@@ -190,11 +199,16 @@
       "typeLabel": "技术",
       "valueId": "image_generation",
       "eventIds": [
+        "EV-a442b55d0bac5651",
         "EV-dce5de62b2e4b752",
         "EV-41baa43cf05d4288",
         "EV-568d2aeab5234e48"
       ],
       "entityIds": [
+        "EN-bbdefa2950f49882",
+        "EN-834ab0b6e4492d23",
+        "EN-01f1074bb52ff605",
+        "EN-dd782f5241cd7e50",
         "EN-ea3bd73e2b506e00",
         "EN-96eebba49dbbf422",
         "EN-534e99d81da1c54d",
@@ -208,7 +222,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-06-11",
-      "lastSeen": "2026-07-13"
+      "lastSeen": "2026-07-15"
     }
   ],
   "fde": [],

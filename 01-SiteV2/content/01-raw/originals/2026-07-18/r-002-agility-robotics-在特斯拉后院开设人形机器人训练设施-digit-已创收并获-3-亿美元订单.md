@@ -3,9 +3,9 @@ schema_version: raw-evidence-v2
 raw_id: R-002
 title: "Agility Robotics 在特斯拉后院开设人形机器人训练设施，Digit 已创收并获 3 亿美元订单"
 title_zh: "Agility Robotics 在特斯拉后院开设人形机器人训练设施，Digit 已创收并获 3 亿美元订单"
-title_translation_status: not_required
-title_translation_method: source_title
-title_translation_model: not_applicable
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 original_url: "https://techcrunch.com/2026/07/17/agility-robotics-plants-its-flag-in-teslas-backyard"
 canonical_url: "https://techcrunch.com/2026/07/17/agility-robotics-plants-its-flag-in-teslas-backyard"
 source_name: "TechCrunch：AI（RSS）"

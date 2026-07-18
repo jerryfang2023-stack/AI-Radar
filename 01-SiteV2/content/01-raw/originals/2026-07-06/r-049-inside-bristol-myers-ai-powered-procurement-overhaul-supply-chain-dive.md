@@ -2,7 +2,7 @@
 schema_version: raw-evidence-v2
 raw_id: R-049
 title: "Inside Bristol Myers’ AI-powered procurement overhaul | Supply Chain Dive"
-title_zh: "百时美施贵宝AI驱动的采购改革内幕 | Supply Chain Dive"
+title_zh: "百时美施贵宝AI驱动的采购改革内幕"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 original_url: "https://www.supplychaindive.com/news/inside-bristol-myers-ai-powered-procurement-overhaul/822840/"

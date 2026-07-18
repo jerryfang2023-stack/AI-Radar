@@ -72,7 +72,7 @@ key_excerpts: [{"type":"funding","text":"The pre-seed round was led by Vireo Ven
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
-title_zh: "Invertix 融资170万欧元，部署欧洲首个可再生能源领域代理式AI劳动力——Vireo Ventures"
+title_zh: "Invertix 融资 170 万欧元，部署欧洲首个可再生能源领域 AI 智能体劳动力"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

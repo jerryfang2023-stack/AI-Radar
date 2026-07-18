@@ -52,7 +52,7 @@ Do not scan all Markdown at task start. Read only this file, the required `conte
 - Current AI Hardware data version: HARDWARE-V1.0.
 - Current Industry Reports column version: IMAP-V2.1.0-v4-unified-frontstage.
 - Current Raw contract: RAW-V3.0.
-- Current canonical event contract: EVENT-V1.0.
+- Current canonical event contract: EVENT-V1.1.
 - Current entity history contract: ENTITY-V1.0.
 - Current factual relationship contract: RELATION-V2.0.
 - Current targeted historical collection contract: BACKFILL-V1.0.

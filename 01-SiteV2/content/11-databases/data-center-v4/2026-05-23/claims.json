@@ -420,6 +420,50 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-4e50c10b662018f3",
+    "raw_id": "RAW-83ca455651ef7f03",
+    "claim_type": "funding",
+    "subject": "Fazeshift",
+    "predicate": "funding",
+    "object": "$17 million Series A funding round",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-25bb9ee96c817913"
+    },
+    "source_span": {
+      "raw_id": "RAW-83ca455651ef7f03",
+      "start": 351,
+      "end": 518
+    },
+    "source_quote": "Fazeshift , a startup that uses AI agents to automate accounts receivable, has raised $17 million in a Series A round of funding, it tells Crunchbase News exclusively.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b7319bda5f0ceaf9",
+    "raw_id": "RAW-8703992e39c4c969",
+    "claim_type": "funding",
+    "subject": "Cato",
+    "predicate": "funding",
+    "object": "€1.6 million pre-seed round",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1,
+      "model_candidate_id": "MAC-111743ba5d25f4cd"
+    },
+    "source_span": {
+      "raw_id": "RAW-8703992e39c4c969",
+      "start": 2905,
+      "end": 2964
+    },
+    "source_quote": "By December, they had closed a €1.6 million pre-seed round.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-9a2ab59ce466381e",
     "raw_id": "RAW-12e7a18d71cab0c9",
     "claim_type": "funding",
@@ -753,6 +797,28 @@
     "source_quote": "7. When You Don't Need a Forward Deployed Designer",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a6bc30d6fb686c40",
+    "raw_id": "RAW-753f5c0bb326b873",
+    "claim_type": "model_release",
+    "subject": "Google",
+    "predicate": "model_release",
+    "object": "Gemini 3.1 Flash-Lite",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-89c742442d0353cf"
+    },
+    "source_span": {
+      "raw_id": "RAW-753f5c0bb326b873",
+      "start": 195,
+      "end": 308
+    },
+    "source_quote": "Gemini 3.1 Flash-Lite, our fastest and most cost-efficient Gemini 3 series model yet, is now generally available.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -1237,6 +1303,153 @@
       "end": 1523
     },
     "source_quote": "Lio addresses this challenge by introducing Agent Operating Procedures (AOPs) to procurement - a shift enabled by recent advances in AI that make autonomous execution of complex enterprise workflows possible for the first time.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-356767d7489e817e",
+    "raw_id": "RAW-02a0aab8131f86ed",
+    "claim_type": "financial_performance",
+    "subject": "AI",
+    "predicate": "financial_performance",
+    "object": "with Compliant Outbound Automation | Agentmelt",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-02a0aab8131f86ed",
+      "start": 0,
+      "end": 94
+    },
+    "source_quote": "AI Sales Agent for Financial Services: 2.4x Pipeline Growth with Compliant Outbound Automation",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-576ad60f77e399a3",
+    "raw_id": "RAW-02a0aab8131f86ed",
+    "claim_type": "financial_performance",
+    "subject": "AI",
+    "predicate": "financial_performance",
+    "object": "with Compliant Outbound Automation | Agentmelt",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-02a0aab8131f86ed",
+      "start": 95,
+      "end": 284
+    },
+    "source_quote": "How a mid-size financial advisory firm used an AI sales agent to automate compliant outbound prospecting, growing pipeline 2.4x while maintaining FINRA compliance across all communications.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-4887974af346f2b3",
+    "raw_id": "RAW-02a0aab8131f86ed",
+    "claim_type": "financial_performance",
+    "subject": "AI",
+    "predicate": "financial_performance",
+    "object": "with Compliant Outbound Automation | Agentmelt",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-02a0aab8131f86ed",
+      "start": 288,
+      "end": 309
+    },
+    "source_quote": "Written by Max Zeshut",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-8a19599a15fb7295",
+    "raw_id": "RAW-02a0aab8131f86ed",
+    "claim_type": "financial_performance",
+    "subject": "AI",
+    "predicate": "financial_performance",
+    "object": "with Compliant Outbound Automation | Agentmelt",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-02a0aab8131f86ed",
+      "start": 358,
+      "end": 384
+    },
+    "source_quote": "Agent type: AI Sales Agent",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-05176afe04b14a70",
+    "raw_id": "RAW-3817431cdeeafd03",
+    "claim_type": "security_incident",
+    "subject": "修不过来：Anthropic",
+    "predicate": "security_incident",
+    "object": "根据 Project Glasswing 项目合作方的反馈，Claude Mythos Preview 模型已显著提升漏洞发现能力，部分团队的找漏洞速度提升超过 10 倍， 当前瓶颈已从“发现漏洞”转向“验证、披露与修补漏洞”。",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-3817431cdeeafd03",
+      "start": 134,
+      "end": 248
+    },
+    "source_quote": "根据 Project Glasswing 项目合作方的反馈，Claude Mythos Preview 模型已显著提升漏洞发现能力，部分团队的找漏洞速度提升超过 10 倍， 当前瓶颈已从“发现漏洞”转向“验证、披露与修补漏洞”。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-392283c3ac70143b",
+    "raw_id": "RAW-3817431cdeeafd03",
+    "claim_type": "security_incident",
+    "subject": "修不过来：Anthropic",
+    "predicate": "security_incident",
+    "object": "Cloudflare 披露，其在关键路径系统中发现 2000 个漏洞，其中 400 个属于高危或严重级别，且误报率优于人工测试。",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-3817431cdeeafd03",
+      "start": 249,
+      "end": 313
+    },
+    "source_quote": "Cloudflare 披露，其在关键路径系统中发现 2000 个漏洞，其中 400 个属于高危或严重级别，且误报率优于人工测试。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-0320b603d9651363",
+    "raw_id": "RAW-3817431cdeeafd03",
+    "claim_type": "security_incident",
+    "subject": "修不过来：Anthropic",
+    "predicate": "security_incident",
+    "object": "Anthropic 称，高危或严重漏洞从发现到补丁落地，平均需要 2 周，部分开源维护者甚至要求放慢披露节奏，其处理 AI 生成漏洞报告的能力已接近上限。",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-3817431cdeeafd03",
+      "start": 767,
+      "end": 844
+    },
+    "source_quote": "Anthropic 称，高危或严重漏洞从发现到补丁落地，平均需要 2 周，部分开源维护者甚至要求放慢披露节奏，其处理 AI 生成漏洞报告的能力已接近上限。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"

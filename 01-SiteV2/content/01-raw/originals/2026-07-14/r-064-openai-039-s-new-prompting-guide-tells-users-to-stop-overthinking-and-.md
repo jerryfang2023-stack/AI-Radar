@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-064
 title: "OpenAI&#039;s new prompting guide tells users to stop overthinking and start with the result"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "OpenAI 新提示指南：别想太多，从结果出发"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://the-decoder.com/openais-new-prompting-guide-tells-users-to-stop-overthinking-and-start-with-the-result/"
 canonical_url: "https://the-decoder.com/openais-new-prompting-guide-tells-users-to-stop-overthinking-and-start-with-the-result"
 source_name: "The Decoder AI News"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-14T01:56:51.715Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # OpenAI&#039;s new prompting guide tells users to stop overthinking and start with the result

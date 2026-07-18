@@ -2,10 +2,10 @@
 schema_version: raw-evidence-v2
 raw_id: R-089
 title: "Patreon stops asking AI bots not to scrape — and starts blocking them"
-title_zh: "Patreon 停止请求AI机器人不要抓取——转而开始屏蔽它们"
-title_translation_status: translated
-title_translation_method: deepseek_title_translation
-title_translation_model: deepseek-v4-flash
+title_zh: "Patreon 不再要求 AI 机器人停止抓取——转而开始屏蔽它们"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 original_url: "https://techcrunch.com/2026/07/17/patreon-stops-asking-ai-bots-not-to-scrape-and-starts-blocking-them/"
 canonical_url: "https://techcrunch.com/2026/07/17/patreon-stops-asking-ai-bots-not-to-scrape-and-starts-blocking-them"
 source_name: "TechCrunch AI"

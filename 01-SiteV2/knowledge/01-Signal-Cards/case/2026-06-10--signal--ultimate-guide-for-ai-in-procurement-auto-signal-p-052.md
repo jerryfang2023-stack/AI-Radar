@@ -2,7 +2,7 @@
 id: SIG-20260610-A05
 type: signal_card
 signal_type: case
-title: "采购中AI的终极指南 | Sievo"
+title: "采购中的人工智能终极指南"
 date: 2026-06-10
 status: published
 source_title: "The Ultimate Guide for AI in Procurement | Sievo"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Ultimate Guide for AI in Procurement"
 
 frontend:
-  displayTitle: "采购中AI的终极指南 | Sievo"
+  displayTitle: "采购中的人工智能终极指南"
   sourceLinks:
     - "https://sievo.com/resources/ai-in-procurement"
 ---
 
-# 采购中AI的终极指南 | Sievo
+# 采购中的人工智能终极指南
 
 ## 新闻事实
 

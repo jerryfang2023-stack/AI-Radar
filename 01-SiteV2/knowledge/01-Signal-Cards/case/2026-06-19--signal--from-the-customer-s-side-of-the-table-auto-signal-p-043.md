@@ -2,7 +2,7 @@
 id: SIG-20260619-A06
 type: signal_card
 signal_type: case
-title: "从客户角度看：前部署工程师的实际工作内容 | ellamind 博客"
+title: "从客户角度看：前部署工程师的实际工作内容"
 date: 2026-06-19
 status: published
 source_title: "From the Customer's Side of the Table: What a Forward Deployed Engineer Actually Does | ellamind Blog"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "From the Customer's Side of the Table"
 
 frontend:
-  displayTitle: "从客户角度看：前部署工程师的实际工作内容 | ellamind 博客"
+  displayTitle: "从客户角度看：前部署工程师的实际工作内容"
   sourceLinks:
     - "https://www.ellamind.com/blog/forward-deployed-engineer"
 ---
 
-# 从客户角度看：前部署工程师的实际工作内容 | ellamind 博客
+# 从客户角度看：前部署工程师的实际工作内容
 
 ## 新闻事实
 

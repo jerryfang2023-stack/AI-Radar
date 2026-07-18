@@ -3,9 +3,9 @@ schema_version: raw-evidence-v2
 raw_id: R-105
 title: "TikTok is testing an AI likeness detection tool"
 title_zh: "TikTok 正在测试 AI 肖像检测工具"
-title_translation_status: translated
-title_translation_method: deepseek_title_translation
-title_translation_model: deepseek-v4-flash
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 original_url: "https://www.theverge.com/tech/967486/tiktok-ai-likeness-detection-tool"
 canonical_url: "https://theverge.com/tech/967486/tiktok-ai-likeness-detection-tool"
 source_name: "The Verge AI"

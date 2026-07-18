@@ -1,0 +1,68 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-18T04:59:59.870Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 1250,
+    "quarantinedEventCount": 11
+  },
+  "entity": {
+    "id": "EN-37b5fecebce720fd",
+    "name": "Micron",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-b75b87a4f86a8aaa"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-06-23",
+    "lastSeen": "2026-06-23",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [
+        "EV-b75b87a4f86a8aaa"
+      ],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-b75b87a4f86a8aaa",
+        "dataDate": "2026-06-23",
+        "date": "2026-06-23",
+        "eventType": "capital_investment",
+        "eventTypeLabel": "资本性投资",
+        "eventGroup": "融资与并购",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "Anthropic与Micron计划共同设计AI内存架构",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-37b5fecebce720fd"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

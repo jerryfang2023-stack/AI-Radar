@@ -63,6 +63,28 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-6d536e8ea9bf9e67",
+    "raw_id": "RAW-c7f8d8a5a54a8d82",
+    "claim_type": "model_release",
+    "subject": "智谱 AI",
+    "predicate": "model_release",
+    "object": "GLM-5.2",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-816d1c6692a693de"
+    },
+    "source_span": {
+      "raw_id": "RAW-c7f8d8a5a54a8d82",
+      "start": 1100,
+      "end": 1167
+    },
+    "source_quote": "智谱 AI 开源新一代大模型 GLM-5.2，在编程基准测试中表现亮眼，仅落后顶级闭源模型 Claude Opus 约 1 个百分点。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-18f18dee1dc81ac7",
     "raw_id": "RAW-003d5252494c0ef5",
     "claim_type": "product_release",
@@ -480,6 +502,28 @@
     "source_quote": "While companies find AI’s predictive power alluring, particularly on the data analytics side of the organization, achieving meaningful results with AI often proves to be a challenge. It’s true that AI can help to project revenue, for example, by identifying trends in buying and selling. But implementing and maintaining the data pipelines necessary to keep AI systems from drifting to inaccuracy can require substantial technical resources.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-89caa5841b8e4380",
+    "raw_id": "RAW-9d9c1efa66a7adb6",
+    "claim_type": "hardware_deployment",
+    "subject": "DuckDuckGo",
+    "predicate": "hardware_deployment",
+    "object": "美国区应用安装量平均周环比增长 18.1%",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-db3b42d870604a55"
+    },
+    "source_span": {
+      "raw_id": "RAW-9d9c1efa66a7adb6",
+      "start": 373,
+      "end": 405
+    },
+    "source_quote": "DuckDuckGo 美国区应用安装量平均周环比增长 18.1%",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -963,6 +1007,72 @@
     "source_quote": "ACE 全称为 AI Compute Extensions，是一组专为加速人工智能与机器学习负载设计的 x86 指令集，其核心目标是优化矩阵乘法运算（深度学习中最频繁的计算操作）和低精度数据格式处理。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-6fc1d514e07ffb91",
+    "raw_id": "RAW-bdb5fb724d9bcc57",
+    "claim_type": "product_release",
+    "subject": "信实工业",
+    "predicate": "product_release",
+    "object": "Jio Call Agent",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-487793f84e6acf94"
+    },
+    "source_span": {
+      "raw_id": "RAW-bdb5fb724d9bcc57",
+      "start": 100,
+      "end": 141
+    },
+    "source_quote": "信实工业举行了年度股东大会，并发布 AI 通话助手 Jio Call Agent。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-016544935e0df003",
+    "raw_id": "RAW-bdb5fb724d9bcc57",
+    "claim_type": "product_release",
+    "subject": "信实工业",
+    "predicate": "product_release",
+    "object": "AI 版 MyJio",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-487793f84e6acf94"
+    },
+    "source_span": {
+      "raw_id": "RAW-bdb5fb724d9bcc57",
+      "start": 382,
+      "end": 401
+    },
+    "source_quote": "信实工业还推出 AI 版 MyJio。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-3cc27a01cd52a98b",
+    "raw_id": "RAW-bdb5fb724d9bcc57",
+    "claim_type": "product_release",
+    "subject": "信实工业",
+    "predicate": "product_release",
+    "object": "TeleFrame",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3,
+      "model_candidate_id": "MAC-487793f84e6acf94"
+    },
+    "source_span": {
+      "raw_id": "RAW-bdb5fb724d9bcc57",
+      "start": 447,
+      "end": 498
+    },
+    "source_quote": "另一款新品 TeleFrame 面向智能家居，可以利用 AI 智能体主动显示天气预警、日程和家庭提醒。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   }
 ]

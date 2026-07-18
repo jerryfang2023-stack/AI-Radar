@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-042
 title: "Soofi 联盟发布 Soofi S 30B-A3B：面向德语和英语的开源混合 Mamba-Transformer MoE 基础模型"
 title_zh: "Soofi 联盟发布 Soofi S 30B-A3B：面向德语和英语的开源混合 Mamba-Transformer MoE 基础模型"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.marktechpost.com/2026/07/15/soofi-consortium-releases-soofi-s-30b-a3b-an-open-hybrid-mamba-transformer-moe-foundation-model-for-german-and-english"
 canonical_url: "https://marktechpost.com/2026/07/15/soofi-consortium-releases-soofi-s-30b-a3b-an-open-hybrid-mamba-transformer-moe-foundation-model-for-german-and-english"
 source_name: "MarkTechPost（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-16T02:39:33.682Z
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Soofi 联盟发布 Soofi S 30B-A3B：面向德语和英语的开源混合 Mamba-Transformer MoE 基础模型

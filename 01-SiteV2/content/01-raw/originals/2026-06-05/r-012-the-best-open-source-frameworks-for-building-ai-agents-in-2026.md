@@ -72,7 +72,7 @@ key_excerpts: [{"type":"number","text":"The OpenAI Agents SDK is a lightweight P
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
-title_zh: "2026年构建AI代理的最佳开源框架"
+title_zh: "2026年构建AI智能体的最佳开源框架"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"# OpenAI Frontier: Enterprise AI
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "OpenAI Frontier：企业AI智能体平台指南 - 数字应用"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # OpenAI Frontier: Enterprise AI Agent Platform Guide - Digital Applied

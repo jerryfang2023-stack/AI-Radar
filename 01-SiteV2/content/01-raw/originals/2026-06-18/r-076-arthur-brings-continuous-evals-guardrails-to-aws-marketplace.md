@@ -72,6 +72,10 @@ key_excerpts: [{"type":"workflow_change","text":"Arthur Brings Continuous Evals 
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Arthur 将持续评估与护栏引入 AWS 市场"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Arthur Brings Continuous Evals & Guardrails to AWS Marketplace

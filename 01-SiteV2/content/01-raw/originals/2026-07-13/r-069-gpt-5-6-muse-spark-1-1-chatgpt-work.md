@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-069
 title: "GPT-5.6 🚀, Muse Spark 1.1 ✨, ChatGPT Work 💼"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "GPT-5.6 🚀、Muse Spark 1.1 ✨、ChatGPT 工作 💼"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://tldr.tech/ai/2026-07-10"
 canonical_url: "https://tldr.tech/ai/2026-07-10"
 source_name: "TLDR AI Newsletter"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-13T10:23:57.073Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # GPT-5.6 🚀, Muse Spark 1.1 ✨, ChatGPT Work 💼

@@ -72,7 +72,7 @@ key_excerpts: [{"type":"case_detail","text":"- The collaboration pairs McKinsey'
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
-title_zh: "AppliedAI与麦肯锡合作，利用AI快速重构受监管企业流程"
+title_zh: "AppliedAI 与麦肯锡公司合作，利用 AI 快速重构受监管的企业流程"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

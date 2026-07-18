@@ -588,6 +588,28 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-fc41a99c60b1f1d4",
+    "raw_id": "RAW-1dec755f832da39c",
+    "claim_type": "funding",
+    "subject": "Reka",
+    "predicate": "funding",
+    "object": "$58 million",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-b23704a2cd50646d"
+    },
+    "source_span": {
+      "raw_id": "RAW-1dec755f832da39c",
+      "start": 742,
+      "end": 799
+    },
+    "source_quote": "Reka , which emerged from stealth today with $58 million.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-5af52488d5ff7ca2",
     "raw_id": "RAW-3f0eb365598ddd03",
     "claim_type": "partnership",
@@ -819,6 +841,50 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-364696762935c742",
+    "raw_id": "RAW-68e9a76afc1a3545",
+    "claim_type": "funding",
+    "subject": "SambaNova",
+    "predicate": "funding",
+    "object": "$1B financing at $11B valuation",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-7717d3758cc717cb"
+    },
+    "source_span": {
+      "raw_id": "RAW-68e9a76afc1a3545",
+      "start": 218,
+      "end": 284
+    },
+    "source_quote": "SambaNova Completes First Close of $1B Financing at $11B Valuation",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-f910a42bdd3f949c",
+    "raw_id": "RAW-1b6474a1a79322dc",
+    "claim_type": "partnership",
+    "subject": "Merck & Co Inc",
+    "predicate": "partnership",
+    "object": "Google Cloud",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-a08d1dd7aa28a0d6"
+    },
+    "source_span": {
+      "raw_id": "RAW-1b6474a1a79322dc",
+      "start": 334,
+      "end": 529
+    },
+    "source_quote": "Merck (NYSE: MRK), known as MSD outside of the United States and Canada , and Google Cloud today announced a landmark partnership to enhance Merck 's digital backbone as an AI-enabled enterprise.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-f168fae22b34db6e",
     "raw_id": "RAW-af0bc50384bbd58e",
     "claim_type": "partnership",
@@ -984,6 +1050,28 @@
     "source_quote": ", June 8, 2026 /CNW/ -- A new IBM (NYSE: IBM ) Institute for Business Value study reveals that as AI moves from experimentation to enterprise-wide deployment, two-thirds of surveyed CIOs and CTOs report being held accountable for AI systems they do not fully control, while governance struggles to keep pace at scale.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-eb2902cc6369ad18",
+    "raw_id": "RAW-f40a770e67c34f71",
+    "claim_type": "deployment",
+    "subject": "Siemens",
+    "predicate": "deployment",
+    "object": "AI agent handling 90% of inbound calls autonomously",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-c5e6364d77f5aa85"
+    },
+    "source_span": {
+      "raw_id": "RAW-f40a770e67c34f71",
+      "start": 4558,
+      "end": 4732
+    },
+    "source_quote": "Since going live, the AI agent handles 90% of inbound calls autonomously—either resolving them directly or routing them to the correct destination without human intervention.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -1155,6 +1243,28 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-cbdf38aec7a74c57",
+    "raw_id": "RAW-630de413747066d6",
+    "claim_type": "funding",
+    "subject": "Alta AI Inc.",
+    "predicate": "funding",
+    "object": "$25 million Series A funding",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-2601e37bd0732429"
+    },
+    "source_span": {
+      "raw_id": "RAW-630de413747066d6",
+      "start": 132,
+      "end": 256
+    },
+    "source_quote": "Agentic go-to-market automation startup Alta AI Inc. said today it has raised $25 million in an early-stage round of funding",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-8b2067533e50e879",
     "raw_id": "RAW-c100f09c88e06e5f",
     "claim_type": "product_release",
@@ -1236,6 +1346,94 @@
     "source_quote": "AlphaGenome released for Gemini Enterprise Agent Platform",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e1070ff4b709c5ad",
+    "raw_id": "RAW-7998673b97d7d72b",
+    "claim_type": "product_release",
+    "subject": "DeepFabric",
+    "predicate": "product_release",
+    "object": "AI agent platform for supply chain execution",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-5c52ee034f1079f1"
+    },
+    "source_span": {
+      "raw_id": "RAW-7998673b97d7d72b",
+      "start": 225,
+      "end": 343
+    },
+    "source_quote": "DeepFabric today announced the general availability of its AI agent platform purpose-built for supply chain execution.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b1e68ee5b2f20cf6",
+    "raw_id": "RAW-8afa76b1e6800010",
+    "claim_type": "product_release",
+    "subject": "DeepFabric",
+    "predicate": "product_release",
+    "object": "AI agent platform for supply chain execution",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-653142ad6c6d10f6"
+    },
+    "source_span": {
+      "raw_id": "RAW-8afa76b1e6800010",
+      "start": 126,
+      "end": 354
+    },
+    "source_quote": "Supply chain artificial intelligence startup DeepFabric today announced the general availability of an AI agent platform built for supply chain execution, and a roster of enterprise customers is already running it in production.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-fab74f8dd810022d",
+    "raw_id": "RAW-8afa76b1e6800010",
+    "claim_type": "product_release",
+    "subject": "DeepFabric",
+    "predicate": "product_release",
+    "object": "more than 50 AI agents spanning operations, financial control, assurance and growth functions",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-653142ad6c6d10f6"
+    },
+    "source_span": {
+      "raw_id": "RAW-8afa76b1e6800010",
+      "start": 700,
+      "end": 815
+    },
+    "source_quote": "The platform ships with more than 50 agents spanning operations, financial control, assurance and growth functions.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-8a79c00232e1ccdc",
+    "raw_id": "RAW-054be9082d3cdb16",
+    "claim_type": "model_release",
+    "subject": "Microsoft Foundry",
+    "predicate": "model_release",
+    "object": "Claude",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-835d5f6ca54a6342"
+    },
+    "source_span": {
+      "raw_id": "RAW-054be9082d3cdb16",
+      "start": 307,
+      "end": 573
+    },
+    "source_quote": "Claude is now generally available in Microsoft Foundry: Anthropic’s Claude models are hosted on Azure with the Messages API, prompt caching, extended thinking, and tool streaming — and Foundry Agent Service can use Claude as the reasoning core for multi-step agents.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -1323,6 +1521,28 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-eeff6de4afd2a41d",
+    "raw_id": "RAW-a37f86565a45d4c5",
+    "claim_type": "partnership",
+    "subject": "Palantir Technologies Inc.",
+    "predicate": "partnership",
+    "object": "Kirkland & Ellis",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-add84990babcaaa7"
+    },
+    "source_span": {
+      "raw_id": "RAW-a37f86565a45d4c5",
+      "start": 227,
+      "end": 608
+    },
+    "source_quote": "Palantir Technologies Inc . (NASDAQ: PLTR) and Kirkland & Ellis today announced the launch of a proprietary enterprise platform designed to transform private equity fundraising. The platform is part of a multiyear partnership expansion to deliver together custom solutions tailored to the needs of Kirkland’s clients by leveraging Palantir’s Artificial Intelligence Platform (AIP).",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-c0c687543afd5019",
     "raw_id": "RAW-24bb4daec91375c0",
     "claim_type": "funding",
@@ -1404,6 +1624,28 @@
     "source_quote": "In addition to the funding round, Rebellions also announced the release of two new products: RebelRack and RebelPOD, which are described as AI infrastructure platforms. POD represents a production-ready unit of inference compute, while Rack “integrates multiple racks into a scalable cluster designed for large-scale AI deployment,” the company said.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-f389f71bd4f878df",
+    "raw_id": "RAW-fdb36f752f19773f",
+    "claim_type": "partnership",
+    "subject": "ServiceNow",
+    "predicate": "partnership",
+    "object": "NVIDIA",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-04ff0091c11cef71"
+    },
+    "source_span": {
+      "raw_id": "RAW-fdb36f752f19773f",
+      "start": 611,
+      "end": 815
+    },
+    "source_quote": "ServiceNow (NYSE: NOW), the AI control tower for business reinvention, today announced a significant expansion of its partnership with NVIDIA to extend agentic AI governance from desktops to data centers.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -1572,6 +1814,50 @@
     "source_quote": "This press release contains “forward-looking statements” about the expectations, beliefs, plans, and intentions relating to ServiceNow and Accenture’s forward-deployed engineering program. Such statements include statements regarding future product capabilities and offerings and expected benefits to ServiceNow . Forward-looking statements are subject to known and unknown risks and uncertainties and are based on potentially inaccurate assumptions that could cause actual results to differ materially from those expected or implied by the forward-looking statements. If any such risks or uncertainties materialize or if any of the assumptions prove incorrect, ServiceNow’s results could differ materially from the results expressed or implied by the forward-looking statements made. ServiceNow undertakes no obligation, and does not intend, to update the forward-looking statements. Factors that may cause actual results to differ materially from those in any forward-looking statements include: (i) delays and unexpected difficulties and expenses in executing the product capabilities and offerings, (ii) changes in the regulatory landscape related to AI and (iii) uncertainty as to whether sales will justify the investments in the product capabilities and offerings. Further information on factors that could affect ServiceNow’s financial and other results is included in the filings ServiceNow makes with the Securities and Exchange Commission from time to time.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-fcf5ee3dc2ec7291",
+    "raw_id": "RAW-80086ce0cca3746b",
+    "claim_type": "acquisition",
+    "subject": "Thomson Reuters",
+    "predicate": "acquisition",
+    "object": "Casetext",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-ea0509a661d2dd4e"
+    },
+    "source_span": {
+      "raw_id": "RAW-80086ce0cca3746b",
+      "start": 119,
+      "end": 237
+    },
+    "source_quote": "Thomson Reuters has entered into a definitive agreement to acquire Casetext, a Y Combinator–backed legal tech startup.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a80cb23bb811206c",
+    "raw_id": "RAW-80086ce0cca3746b",
+    "claim_type": "acquisition",
+    "subject": "Thomson Reuters",
+    "predicate": "acquisition",
+    "object": "Casetext",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-ea0509a661d2dd4e"
+    },
+    "source_span": {
+      "raw_id": "RAW-80086ce0cca3746b",
+      "start": 238,
+      "end": 394
+    },
+    "source_quote": "The deal, valued at $650 million in cash, is expected to close in the second half of 2023, subject to regulatory approvals and customary closing conditions.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -2079,6 +2365,50 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-8cc7ed19f1e1a904",
+    "raw_id": "RAW-acdc831903cb0f05",
+    "claim_type": "model_release",
+    "subject": "OpenAI",
+    "predicate": "model_release",
+    "object": "GPT‑Live",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-5fcf82da0d3e0dbc"
+    },
+    "source_span": {
+      "raw_id": "RAW-acdc831903cb0f05",
+      "start": 26,
+      "end": 116
+    },
+    "source_quote": "Introducing GPT‑Live ( via ) OpenAI finally upgraded the model used by ChatGPT voice mode!",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a37cbd6c6489aec5",
+    "raw_id": "RAW-a680d730da7d621c",
+    "claim_type": "model_release",
+    "subject": "Mistral",
+    "predicate": "model_release",
+    "object": "Robostral Navigate",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-f602cde2551d0bf2"
+    },
+    "source_span": {
+      "raw_id": "RAW-a680d730da7d621c",
+      "start": 204,
+      "end": 360
+    },
+    "source_quote": "Mistral is entering the robotics market with Robostral Navigate, an 8B model that guides robots through unknown environments using only a single RGB camera.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-933f301bbd082d92",
     "raw_id": "RAW-6cd35e49af2a48b1",
     "claim_type": "funding",
@@ -2160,6 +2490,72 @@
     "source_quote": "The founder launched LayerX after identifying a significant bottleneck in Japan’s enterprise workflows: paper-based invoice processing. This insight prompted the team to pivot into SaaS with their AI-driven platform, Bakuraku, Fukushima told TechCrunch, adding that the platform’s AI-native user experience quickly gained traction, helping LayerX secure major strategic partnerships, including with MUFG, or Mitsubishi UFJ Financial Group, and paving the way for its latest funding round.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-5eb676d7fe5721cf",
+    "raw_id": "RAW-79d04632fbd33ee9",
+    "claim_type": "funding",
+    "subject": "Nanonets",
+    "predicate": "funding",
+    "object": "$29 million",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-a07a91db2340d36d"
+    },
+    "source_span": {
+      "raw_id": "RAW-79d04632fbd33ee9",
+      "start": 116,
+      "end": 238
+    },
+    "source_quote": "Nanonets, a startup using AI to automate back-office processes, has raised $29 million in a new funding round led by Accel",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-214c3aa4f891e442",
+    "raw_id": "RAW-1cb5d72c21120349",
+    "claim_type": "funding",
+    "subject": "Stack AI",
+    "predicate": "funding",
+    "object": "$3 million",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-fcd50a2c0c85195f"
+    },
+    "source_span": {
+      "raw_id": "RAW-1cb5d72c21120349",
+      "start": 842,
+      "end": 883
+    },
+    "source_quote": "The company has raised $3 million so far.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-9f5c846ff0a9990b",
+    "raw_id": "RAW-1cb5d72c21120349",
+    "claim_type": "funding",
+    "subject": "Stack AI",
+    "predicate": "funding",
+    "object": "$3 million investment",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-fcd50a2c0c85195f"
+    },
+    "source_span": {
+      "raw_id": "RAW-1cb5d72c21120349",
+      "start": 3266,
+      "end": 3316
+    },
+    "source_quote": "The $3 million investment closed about a year ago.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -2328,6 +2724,72 @@
     "source_quote": "Chinese AI developer MiniMax is working on a new large language model with 2.7 trillion parameters. MiniMax plans to release the model as open source.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a24f11eaeea7d5dc",
+    "raw_id": "RAW-8657df3b39e5de48",
+    "claim_type": "partnership",
+    "subject": "OpenAI",
+    "predicate": "partnership",
+    "object": "Boston Consulting Group, McKinsey, Accenture, and Capgemini",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-cd84f72ab99ab5f9"
+    },
+    "source_span": {
+      "raw_id": "RAW-8657df3b39e5de48",
+      "start": 249,
+      "end": 616
+    },
+    "source_quote": "OpenAI announced on Monday the “Frontier Alliances,” a signal that the AI lab is willing to try different approaches to get enterprises to meaningfully adopt its technology. The alliance includes multi-year partnerships between OpenAI and four major consulting firms, Boston Consulting Group (BCG), McKinsey, Accenture, and Capgemini, to sell its enterprise products.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-2f2fbe4d9a015c43",
+    "raw_id": "RAW-72dc6ee2f3be229d",
+    "claim_type": "capital_investment",
+    "subject": "Visa",
+    "predicate": "capital_investment",
+    "object": "Replit",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-cb882059ede49055"
+    },
+    "source_span": {
+      "raw_id": "RAW-72dc6ee2f3be229d",
+      "start": 105,
+      "end": 179
+    },
+    "source_quote": "Visa has announced an undisclosed investment in AI coding platform Replit.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-228e199fe3bda71c",
+    "raw_id": "RAW-c166a45d4c922808",
+    "claim_type": "partnership",
+    "subject": "OpenAI",
+    "predicate": "partnership",
+    "object": "Infosys",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-d1c0e57530bcb115"
+    },
+    "source_span": {
+      "raw_id": "RAW-c166a45d4c922808",
+      "start": 112,
+      "end": 273
+    },
+    "source_quote": "OpenAI has partnered with Infosys to integrate its artificial intelligence tools, including coding assistant Codex, into the Indian IT giant’s Topaz AI platform.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   }
 ]

@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-104
 title: "Introducing GPT‑Live"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "推出 GPT‑Live"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://simonwillison.net/2026/Jul/8/introducing-gptlive/#atom-everything"
 canonical_url: "https://simonwillison.net/2026/Jul/8/introducing-gptlive"
 source_name: "Simon Willison's Blog"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-09T03:05:45.389Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Introducing GPT‑Live

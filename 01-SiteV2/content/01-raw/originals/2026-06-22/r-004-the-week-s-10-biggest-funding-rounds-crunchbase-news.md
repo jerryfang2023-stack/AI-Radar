@@ -74,8 +74,8 @@ keyword_group: capital-market-signal
 copyright_note: local research archive only
 title_zh: "本周十大融资轮次 - Crunchbase News"
 title_translation_status: "translated"
-title_translation_method: "deepseek_title_translation"
-title_translation_model: "deepseek-v4-flash"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # The Week's 10 Biggest Funding Rounds - Crunchbase News

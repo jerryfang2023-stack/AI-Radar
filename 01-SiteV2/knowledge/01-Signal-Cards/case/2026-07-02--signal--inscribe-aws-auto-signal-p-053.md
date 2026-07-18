@@ -2,7 +2,7 @@
 id: SIG-20260702-A11
 type: signal_card
 signal_type: case
-title: "Inscribe如何利用Amazon Bedrock在数秒内阻止文档欺诈 | 人工智能"
+title: "Inscribe如何利用Amazon Bedrock在数秒内阻止文档欺诈"
 date: 2026-07-02
 status: published
 source_title: "How Inscribe uses Amazon Bedrock to stop document fraud in seconds | Artificial Intelligence"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Inscribe / AWS"
 
 frontend:
-  displayTitle: "Inscribe如何利用Amazon Bedrock在数秒内阻止文档欺诈 | 人工智能"
+  displayTitle: "Inscribe如何利用Amazon Bedrock在数秒内阻止文档欺诈"
   sourceLinks:
     - "https://aws.amazon.com/blogs/machine-learning/how-inscribe-uses-amazon-bedrock-to-stop-document-fraud-in-seconds/"
 ---
 
-# Inscribe如何利用Amazon Bedrock在数秒内阻止文档欺诈 | 人工智能
+# Inscribe如何利用Amazon Bedrock在数秒内阻止文档欺诈
 
 ## 新闻事实
 

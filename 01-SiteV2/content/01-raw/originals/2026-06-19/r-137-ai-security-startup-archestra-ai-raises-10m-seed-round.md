@@ -72,7 +72,7 @@ key_excerpts: [{"type":"funding","text":"# Archestra.AI Raises $10 Million Seed 
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
-title_zh: "AI安全初创公司Archestra.AI完成1000万美元种子轮融资"
+title_zh: "AI 安全初创公司 Archestra.AI 完成 1000 万美元种子轮融资"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

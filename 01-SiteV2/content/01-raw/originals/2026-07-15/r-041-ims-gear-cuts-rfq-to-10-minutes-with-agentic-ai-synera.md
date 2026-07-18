@@ -2,7 +2,7 @@
 schema_version: raw-evidence-v2
 raw_id: R-041
 title: "IMS Gear cuts RFQ to 10 minutes with agentic AI | Synera"
-title_zh: "IMS Gear 借助 AI 智能体将询价时间缩短至 10 分钟 | Synera"
+title_zh: "IMS Gear 借助 AI 智能体将询价时间缩短至 10 分钟"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 original_url: "https://www.synera.ai/news/ims-gear-agentic-rfq"

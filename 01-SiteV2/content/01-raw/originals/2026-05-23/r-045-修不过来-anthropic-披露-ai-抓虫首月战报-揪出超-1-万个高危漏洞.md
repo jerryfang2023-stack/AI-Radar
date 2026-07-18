@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"Anthropic于5月22日披露，其Project
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "修不过来：Anthropic 披露 AI 抓虫首月战报，揪出超 1 万个高危漏洞"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 修不过来：Anthropic 披露 AI 抓虫首月战报，揪出超 1 万个高危漏洞

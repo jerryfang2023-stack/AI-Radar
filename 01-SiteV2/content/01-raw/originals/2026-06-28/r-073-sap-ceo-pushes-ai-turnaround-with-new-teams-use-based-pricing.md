@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"SAP Shifts to AI-Based Pricing, Lau
 theme: enterprise-ai-implementation-signal
 keyword_group: enterprise-ai-implementation-signal
 copyright_note: local research archive only
+title_zh: "SAP CEO 通过新团队、按用量定价推动 AI 转型"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # SAP CEO Pushes AI Turnaround With New Teams, Use-Based Pricing

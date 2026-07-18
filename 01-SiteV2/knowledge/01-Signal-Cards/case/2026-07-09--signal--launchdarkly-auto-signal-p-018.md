@@ -2,7 +2,7 @@
 id: SIG-20260709-A14
 type: signal_card
 signal_type: case
-title: "推出AgentControl | LaunchDarkly"
+title: "推出AgentControl"
 date: 2026-07-09
 status: published
 source_title: "Introducing AgentControl | LaunchDarkly"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "Launchdarkly"
 
 frontend:
-  displayTitle: "推出AgentControl | LaunchDarkly"
+  displayTitle: "推出AgentControl"
   sourceLinks:
     - "https://launchdarkly.com/blog/introducing-agentcontrol/"
 ---
 
-# 推出AgentControl | LaunchDarkly
+# 推出AgentControl
 
 ## 新闻事实
 

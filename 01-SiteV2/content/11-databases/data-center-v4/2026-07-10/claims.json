@@ -315,6 +315,94 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-ae9f34928a28280c",
+    "raw_id": "RAW-721b8a359cd27d0e",
+    "claim_type": "model_release",
+    "subject": "Google Research",
+    "predicate": "model_release",
+    "object": "SensorFM",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1,
+      "model_candidate_id": "MAC-fb905067248778a2"
+    },
+    "source_span": {
+      "raw_id": "RAW-721b8a359cd27d0e",
+      "start": 190,
+      "end": 336
+    },
+    "source_quote": "We present SensorFM, a foundation model for wearable health pre-trained on more than one trillion minutes of sensor data from five million people.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-cc088c59b4201246",
+    "raw_id": "RAW-081bc2e4253c40b0",
+    "claim_type": "partnership",
+    "subject": "OpenAI",
+    "predicate": "partnership",
+    "object": "Microsoft 365 Copilot",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-d6a1042e7f5cc1dc"
+    },
+    "source_span": {
+      "raw_id": "RAW-081bc2e4253c40b0",
+      "start": 721,
+      "end": 866
+    },
+    "source_quote": "During OpenAI’s launch of GPT 5.6 on Thursday, the company announced that it would become the “preferred model” powering Microsoft’s 365 Copilot.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-199dc8ebb03e1709",
+    "raw_id": "RAW-5873bb776bbd31e8",
+    "claim_type": "product_release",
+    "subject": "Google",
+    "predicate": "product_release",
+    "object": "LiteRT.js",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1,
+      "model_candidate_id": "MAC-573a4e8f83c094c9"
+    },
+    "source_span": {
+      "raw_id": "RAW-5873bb776bbd31e8",
+      "start": 229,
+      "end": 346
+    },
+    "source_quote": "We are excited to announce LiteRT.js , a JavaScript binding of LiteRT for running AI directly inside the web browser.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-7c82cfe630827768",
+    "raw_id": "RAW-de6845aa0b4f1e96",
+    "claim_type": "service_change",
+    "subject": "OpenAI",
+    "predicate": "service_change",
+    "object": "Atlas browser",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 1,
+      "model_candidate_id": "MAC-ef5c41d59cf58c00"
+    },
+    "source_span": {
+      "raw_id": "RAW-de6845aa0b4f1e96",
+      "start": 123,
+      "end": 222
+    },
+    "source_quote": "OpenAI is sunsetting Atlas, the AI-powered browser it launched in October with ChatGPT at its core.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-5a75dde33513b33f",
     "raw_id": "RAW-a46da5f710819a00",
     "claim_type": "model_release",
@@ -480,6 +568,28 @@
     "source_quote": "OpenAI is rolling out its latest advanced LLM, Sol, for wide public access. Sol is considered to be at least on par with Anthropic’s Fable, a model whose capabilities (or ownership) stressed out the White House enough that it was briefly banned from public access.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-35aa14c242a3f09a",
+    "raw_id": "RAW-fd0c6a1dec94b684",
+    "claim_type": "hardware_product",
+    "subject": "Meta",
+    "predicate": "hardware_product",
+    "object": "latest versions of its AI-specific chip",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 1,
+      "model_candidate_id": "MAC-19020205a7c93f46"
+    },
+    "source_span": {
+      "raw_id": "RAW-fd0c6a1dec94b684",
+      "start": 169,
+      "end": 258
+    },
+    "source_quote": "Meta is on track to start making the latest versions of its AI-specific chip in September",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -651,6 +761,28 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-74e56808cfbc0e29",
+    "raw_id": "RAW-f9dbc60fd40663e0",
+    "claim_type": "model_release",
+    "subject": "Google",
+    "predicate": "model_release",
+    "object": "Gemini model in Duet AI for Developers",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 1,
+      "model_candidate_id": "MAC-e66caba8508461fb"
+    },
+    "source_span": {
+      "raw_id": "RAW-f9dbc60fd40663e0",
+      "start": 366,
+      "end": 449
+    },
+    "source_quote": "it will start making use of Google’s more powerful Gemini model in the coming weeks",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-dd5677fa70729195",
     "raw_id": "RAW-c1f8a73a5753b4b0",
     "claim_type": "product_release",
@@ -816,6 +948,28 @@
     "source_quote": "Today is an important day for LaunchDarkly and our customers: We’re launching AgentControl, a new solution that helps teams control not just code in production, as we have for over a decade, but also the AI agents acting on their behalf.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-33c9e341fa1d2ee4",
+    "raw_id": "RAW-2b430bd3d4ecb07c",
+    "claim_type": "acquisition",
+    "subject": "IBM",
+    "predicate": "acquisition",
+    "object": "Confluent",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-eacd131942ea8e12"
+    },
+    "source_span": {
+      "raw_id": "RAW-2b430bd3d4ecb07c",
+      "start": 3468,
+      "end": 3633
+    },
+    "source_quote": "IBM is delivering, real-time, AI-ready data foundation through its recent acquisition of Confluent for real-time data streaming built on Kafka and Flink technologies",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -1071,6 +1225,72 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-afd930f5b515a418",
+    "raw_id": "RAW-15eea7058b27330d",
+    "claim_type": "service_change",
+    "subject": "OpenAI",
+    "predicate": "service_change",
+    "object": "ChatGPT Atlas",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-716b5e7ac97f0bfd"
+    },
+    "source_span": {
+      "raw_id": "RAW-15eea7058b27330d",
+      "start": 356,
+      "end": 495
+    },
+    "source_quote": "OpenAI is already shutting down ChatGPT Atlas, its browser that could do tasks for you on your behalf, less than a year after launching it.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-69b7100d1bb76148",
+    "raw_id": "RAW-88599a20d91ab23c",
+    "claim_type": "deployment",
+    "subject": "Converteo",
+    "predicate": "deployment",
+    "object": "Gemini Enterprise licenses",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-614e07689f2139fc"
+    },
+    "source_span": {
+      "raw_id": "RAW-88599a20d91ab23c",
+      "start": 977,
+      "end": 1245
+    },
+    "source_quote": "With a plan to deploy more than 420 Gemini Enterprise licenses internally by the first quarter of 2026, we are not just advising on transformation: we are first implementing it ourselves to exponentially increase our efficiency and the value we provide to our clients.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-fd928b36a8c51a9a",
+    "raw_id": "RAW-88599a20d91ab23c",
+    "claim_type": "deployment",
+    "subject": "Converteo",
+    "predicate": "deployment",
+    "object": "agentic AI pilot phase",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-614e07689f2139fc"
+    },
+    "source_span": {
+      "raw_id": "RAW-88599a20d91ab23c",
+      "start": 5325,
+      "end": 5423
+    },
+    "source_quote": "Deployment began in the summer of 2025 with a pilot phase focused on quick-to-implement use cases.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-7a420af6eefcd3e0",
     "raw_id": "RAW-88cd262135a2262d",
     "claim_type": "product_release",
@@ -1152,6 +1372,50 @@
     "source_quote": "Through the deployment of Google Cloud’s AI, The Home Depot is extending its home improvement expertise from the store aisles to customers’ fingertips, including new capabilities in its Magic Apron assistant, AI-powered product list builders for pros, and new tools to improve customer and store support. By deploying Google Cloud’s Gemini models and Gemini Enterprise for Customer Experience (CX), the company is creating a native \"AI-first\" experience that is personalized, contextual and available wherever the customer is—from the living room to the jobsite to the shelves.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-fc8bc29677fe7438",
+    "raw_id": "RAW-2a4ac104f95a087e",
+    "claim_type": "funding",
+    "subject": "Retym",
+    "predicate": "funding",
+    "object": "$75 million series D",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-3b628f68f29b9509"
+    },
+    "source_span": {
+      "raw_id": "RAW-2a4ac104f95a087e",
+      "start": 140,
+      "end": 264
+    },
+    "source_quote": "Retym, a U.S. chipmaker with Israeli roots, has raised a fresh $75 million series D led by James Kuklinski of Spark Capital.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b43bbab502cb2eee",
+    "raw_id": "RAW-b376357facdbef89",
+    "claim_type": "funding",
+    "subject": "Lyzr",
+    "predicate": "funding",
+    "object": "$100 million Series B",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1,
+      "model_candidate_id": "MAC-0fb5fa14d145f5a1"
+    },
+    "source_span": {
+      "raw_id": "RAW-b376357facdbef89",
+      "start": 491,
+      "end": 637
+    },
+    "source_quote": "It basically ran point on the startup’s $100 million Series B (at a roughly $500 million valuation) while proving that the product actually works.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {

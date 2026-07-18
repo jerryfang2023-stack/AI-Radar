@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-037
 title: "Has the hunt for AI compute uncovered the next Cerebras? | TechCrunch"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "AI 算力争夺战是否催生了下一个 Cerebras？"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://techcrunch.com/2026/05/28/has-the-hunt-for-ai-compute-uncovered-the-next-cerebras/"
 canonical_url: "https://techcrunch.com/2026/05/28/has-the-hunt-for-ai-compute-uncovered-the-next-cerebras"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-08T04:39:25.649Z
 theme: ai-hardware-scenario-service-signal
 keyword_group: ai-hardware-scenario-service-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Has the hunt for AI compute uncovered the next Cerebras? | TechCrunch

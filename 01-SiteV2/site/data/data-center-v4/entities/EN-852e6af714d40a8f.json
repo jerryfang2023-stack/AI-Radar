@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-18T04:59:59.870Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 1250,
+    "quarantinedEventCount": 11
+  },
+  "entity": {
+    "id": "EN-852e6af714d40a8f",
+    "name": "TokyoArtisan Intelligence",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-89280d3159480dea"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-06",
+    "lastSeen": "2026-07-07",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [
+        "EV-89280d3159480dea"
+      ],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-89280d3159480dea",
+        "dataDate": "2026-07-07",
+        "date": "2026-07-06",
+        "eventType": "hardware_product",
+        "eventTypeLabel": "硬件产品",
+        "eventGroup": "AI 硬件",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "TAI完成40nm边缘物理AI芯片原型Sting Ray验证，Manta Ray量产时间表公布",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "chip_accelerator",
+            "dimensionName": "产品形态",
+            "name": "芯片与加速器"
+          }
+        ],
+        "entityIds": [
+          "EN-852e6af714d40a8f",
+          "EN-f53afc9370d87317"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [
+    {
+      "id": "HW-1f5c47230df189e7",
+      "eventId": "EV-89280d3159480dea",
+      "dataDate": "2026-07-07",
+      "date": "2026-07-06",
+      "title": "TAI完成40nm边缘物理AI芯片原型Sting Ray验证，Manta Ray量产时间表公布",
+      "hardwareType": "semiconductor",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "未披露",
+      "supplier": "TokyoArtisan Intelligence",
+      "customer": "未披露",
+      "processNode": "40nm",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/973/227.htm",
+      "sourceName": "IT之家（RSS）",
+      "sourceDate": "2026-07-06",
+      "entityIds": [
+        "EN-852e6af714d40a8f",
+        "EN-f53afc9370d87317"
+      ]
+    }
+  ]
+}

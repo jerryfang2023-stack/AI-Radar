@@ -2,7 +2,7 @@
 id: SIG-20260707-A02
 type: signal_card
 signal_type: funding
-title: "Raja Koduri的Oxmiq Labs融资3500万美元，旨在降低定制AI芯片的设计成本 - SiliconANGLE"
+title: "Raja Koduri 的 Oxmiq Labs 融资 3500 万美元，以降低定制 AI 芯片的设计成本"
 date: 2026-07-07
 status: published
 source_title: "Raja Koduri's Oxmiq Labs raises $35M to lower the design cost of custom AI silicon - SiliconANGLE"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "Raja Koduri's Oxmiq Labs"
 
 frontend:
-  displayTitle: "Raja Koduri的Oxmiq Labs融资3500万美元，旨在降低定制AI芯片的设计成本 - SiliconANGLE"
+  displayTitle: "Raja Koduri 的 Oxmiq Labs 融资 3500 万美元，以降低定制 AI 芯片的设计成本"
   sourceLinks:
     - "https://siliconangle.com/2026/07/01/raja-koduris-oxmiq-labs-raises-35m-lower-design-cost-custom-ai-silicon/"
 ---
 
-# Raja Koduri的Oxmiq Labs融资3500万美元，旨在降低定制AI芯片的设计成本 - SiliconANGLE
+# Raja Koduri 的 Oxmiq Labs 融资 3500 万美元，以降低定制 AI 芯片的设计成本
 
 ## 新闻事实
 

@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-015
 title: "Veea Announces the VeeaONE Distributed Intelligence"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "Veea 发布 VeeaONE 分布式智能"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.globenewswire.com/news-release/2026/07/16/3328208/0/en/Veea-Announces-the-VeeaONE-Distributed-Intelligence-Platform-Enabling-Cybersecure-Sovereign-Data-Fabrics-and-Enterprise-AI-Grids-for-Physical-AI.html"
 canonical_url: "https://globenewswire.com/news-release/2026/07/16/3328208/0/en/Veea-Announces-the-VeeaONE-Distributed-Intelligence-Platform-Enabling-Cybersecure-Sovereign-Data-Fabrics-and-Enterprise-AI-Grids-for-Physical-AI.html"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-17T04:40:16.870Z
 theme: ai-hardware-trend-innovation-signal
 keyword_group: ai-hardware-trend-innovation-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Veea Announces the VeeaONE Distributed Intelligence

@@ -2,7 +2,7 @@
 id: SIG-20260625-A03
 type: signal_card
 signal_type: case
-title: "AI代理在生产环境中的部署：架构、挑战与最佳实践"
+title: "AI 智能体在生产环境中的部署：架构、挑战与最佳实践"
 date: 2026-06-25
 status: published
 source_title: "AI Agent Deployment in Production: Architecture, Challenges & Best ..."
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "AI Agent Deployment in Production"
 
 frontend:
-  displayTitle: "AI代理在生产环境中的部署：架构、挑战与最佳实践"
+  displayTitle: "AI 智能体在生产环境中的部署：架构、挑战与最佳实践"
   sourceLinks:
     - "https://www.solutelabs.com/blog/ai-agent-deployment-in-production"
 ---
 
-# AI代理在生产环境中的部署：架构、挑战与最佳实践
+# AI 智能体在生产环境中的部署：架构、挑战与最佳实践
 
 ## 新闻事实
 

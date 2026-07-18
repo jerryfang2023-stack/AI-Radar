@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"GitHub agent finder is now availabl
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "GitHub Copilot 的 AI 智能体查找器现已可用"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Agent finder for GitHub Copilot now available - GitHub Changelog

@@ -72,7 +72,7 @@ key_excerpts: [{"type":"case_detail","text":"Five9 Voice AI Agents ... human-lik
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
-title_zh: "Five9推出突破性新版语音AI代理，以..."
+title_zh: "Five9 发布突破性新版语音 AI 智能体"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

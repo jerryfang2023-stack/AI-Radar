@@ -3,9 +3,9 @@ schema_version: raw-evidence-v2
 raw_id: R-006
 title: "Cursor 评估负责人确认 Claude Fable 5 在 CursorBench 达 72.9% 新高"
 title_zh: "Cursor 评估负责人确认 Claude Fable 5 在 CursorBench 达 72.9% 新高"
-title_translation_status: not_required
-title_translation_method: source_title
-title_translation_model: not_applicable
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 original_url: "https://claude.com/blog/working-at-the-frontier-cursor"
 canonical_url: "https://claude.com/blog/working-at-the-frontier-cursor"
 source_name: "Claude：Blog（网页）"

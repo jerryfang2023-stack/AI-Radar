@@ -72,7 +72,7 @@ key_excerpts: [{"type":"product_update","text":"New models are launching in Asia
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
-title_zh: "亚洲AI初创公司推出类似Mythos的模型，Anthropic出口禁令持续"
+title_zh: "亚洲 AI 初创公司推出类 Mythos 模型，Anthropic 出口禁令持续拖延"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

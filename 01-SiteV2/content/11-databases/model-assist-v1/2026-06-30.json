@@ -1,12 +1,51 @@
 {
   "schema_version": "MODEL-ASSIST-V1.0",
-  "generated_at": "2026-07-18T01:56:33.202Z",
+  "generated_at": "2026-07-18T04:25:14.873Z",
   "data_date": "2026-06-30",
-  "prompt_version": "model-assist-2026-07-18.1",
+  "prompt_version": "model-assist-2026-07-18.2",
   "source_count": 116,
   "candidates": [
     {
-      "candidate_id": "MAC-035ef1056ea64bc7",
+      "candidate_id": "MAC-05ee35330af3b802",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-1170a769b0fe7913",
+      "raw_id": "RAW-33903c08b1d31ecc",
+      "source_ref": "SA-ab42eeedc3191627",
+      "source_hash": "aa2b3474edaf817c",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "missing_claim_proposal"
+        }
+      ],
+      "generated_at": "2026-07-18T04:09:55.845Z"
+    },
+    {
+      "candidate_id": "MAC-12f987c5235d1a22",
       "task_type": "claim_extraction",
       "asset_id": "QA-6d354d3d51a62042",
       "raw_id": "RAW-66b9bde025a7e5b1",
@@ -14,14 +53,14 @@
       "source_hash": "de0c7b5aaa6f5b8c",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
+      "prompt_version": "model-assist-2026-07-18.2",
       "status": "rejected",
       "proposal": {
         "claims": [
           {
-            "event_type": "hardware",
+            "event_type": "hardware_deployment",
             "subject": "77 Bank",
-            "object": "HP PCs equipped with AMD Ryzen PRO processors",
+            "object": "3,000 HP PCs with AMD Ryzen PRO processors",
             "evidence_index": 0
           }
         ]
@@ -51,85 +90,22 @@
         },
         {
           "gate": "task_contract",
-          "status": "failed",
-          "detail": "unsupported_claim_event_type:0"
+          "status": "passed",
+          "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-07-18T01:36:18.841Z"
+      "generated_at": "2026-07-18T04:09:56.726Z"
     },
     {
-      "candidate_id": "MAC-0986d6f92cf1e1f3",
+      "candidate_id": "MAC-34cdda6455640ecd",
       "task_type": "claim_extraction",
-      "asset_id": "QA-be565ce4799aaa71",
-      "raw_id": "RAW-1c344b451ad7de4e",
-      "source_ref": "SA-c057ba9266594bd1",
-      "source_hash": "81de232a1b42dc8b",
+      "asset_id": "QA-c716f220b03c4fc0",
+      "raw_id": "RAW-eb079a0aa29f8afd",
+      "source_ref": "SA-c63e8db09cd7ac82",
+      "source_hash": "46501eaf9ff853a6",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
-      "proposal": {
-        "claims": [
-          {
-            "event_type": "people",
-            "subject": "Ford",
-            "object": "350 veteran engineers",
-            "evidence_index": 0
-          },
-          {
-            "event_type": "commercial",
-            "subject": "Ford",
-            "object": "top spot among mainstream brands in the JD Power Initial Quality Survey",
-            "evidence_index": 1
-          }
-        ]
-      },
-      "evidence": [
-        {
-          "start": 338,
-          "end": 576,
-          "quote": "Ford executives said they have hired 350 veteran engineers — some of them were former employees, while others had been working at suppliers — after artificial intelligence and automated systems failed to deliver the desired quality level."
-        },
-        {
-          "start": 1599,
-          "end": 1721,
-          "quote": "The automaker also claimed the top spot among mainstream brands in the JD Power Initial Quality Survey released this week."
-        }
-      ],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "unsupported_claim_event_type:0, unsupported_claim_event_type:1"
-        }
-      ],
-      "generated_at": "2026-07-18T01:36:21.105Z"
-    },
-    {
-      "candidate_id": "MAC-1a83f30b9690cb78",
-      "task_type": "claim_extraction",
-      "asset_id": "QA-e3e11418037e05a4",
-      "raw_id": "RAW-f22ec0568e7e799d",
-      "source_ref": "SA-08026f3936a5e736",
-      "source_hash": "d4d7641775a8a7d4",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
+      "prompt_version": "model-assist-2026-07-18.2",
       "status": "rejected",
       "proposal": {
         "claims": []
@@ -157,58 +133,10 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-07-18T01:36:19.936Z"
+      "generated_at": "2026-07-18T04:09:58.880Z"
     },
     {
-      "candidate_id": "MAC-308d1e58a4b9d20e",
-      "task_type": "entity_resolution",
-      "asset_id": "EN-0e6e9f1ba413b8d1",
-      "raw_id": "RAW-2834e7d77bd0fd0b",
-      "source_ref": "SA-fdf5cb2eea8453fd",
-      "source_hash": "f419667ccff14990",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "requires_review",
-      "proposal": {
-        "decision": "same_entity",
-        "canonical_name": "CData",
-        "rationale": "The entity candidate 'CData' matches the organization 'CData Software' referenced in the source text, which is the subject of the product launch announcement.",
-        "candidate_name": "CData"
-      },
-      "evidence": [
-        {
-          "start": 100,
-          "end": 297,
-          "quote": "CData Software launched three products for developers building AI applications on enterprise data: Connect AI Developer Edition (free), the CData Connect AI Python SDK (open source), and CData CLI."
-        }
-      ],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "passed",
-          "detail": "task contract passed"
-        }
-      ],
-      "generated_at": "2026-07-18T01:36:21.075Z"
-    },
-    {
-      "candidate_id": "MAC-319a8bdad9230684",
+      "candidate_id": "MAC-4896dacf8641bf4d",
       "task_type": "entity_resolution",
       "asset_id": "EN-8044aae1f86875d9",
       "raw_id": "RAW-4ccf1a304ba3efb4",
@@ -216,12 +144,12 @@
       "source_hash": "f14710d7c7fa3bb3",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "requires_review",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
       "proposal": {
-        "decision": "unknown",
+        "decision": "distinct_entity",
         "canonical_name": "How",
-        "rationale": "The SOURCE_TEXT is an article titled 'How to Raise Funding in the AI Era: 5 Things Investors Want to See' and does not contain any reference to an organization named 'How'. The word 'How' appears only as part of the article title and section headings, not as an entity name.",
+        "rationale": "The candidate canonical_name 'How' does not exactly match any VERIFIED_ALTERNATIVE. The source text is an article titled 'How to Raise Funding in the AI Era...' and uses 'How' as a common word, not as an organization name. No quote proves the candidate mention refers to any verified entity.",
         "candidate_name": "How"
       },
       "evidence": [
@@ -253,10 +181,16 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-07-18T01:36:23.341Z"
+      "generated_at": "2026-07-18T04:10:04.440Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "codex-data-review",
+        "reviewed_at": "2026-07-18T04:19:04.455Z",
+        "note": "queue-closeout:reviewed_as_distinct_entity"
+      }
     },
     {
-      "candidate_id": "MAC-3e044edb3ac9aa2f",
+      "candidate_id": "MAC-48da9e1d2c44251b",
       "task_type": "claim_extraction",
       "asset_id": "QA-0c7fd4684a1561d1",
       "raw_id": "RAW-3b184c83dd9a466d",
@@ -264,7 +198,7 @@
       "source_hash": "9e3e1904cc41d59e",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
+      "prompt_version": "model-assist-2026-07-18.2",
       "status": "rejected",
       "proposal": {
         "claims": []
@@ -292,18 +226,18 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-07-18T01:36:17.024Z"
+      "generated_at": "2026-07-18T04:09:54.401Z"
     },
     {
-      "candidate_id": "MAC-4978d9dcefa05cc2",
+      "candidate_id": "MAC-4ae0466b70b46be9",
       "task_type": "claim_extraction",
-      "asset_id": "QA-80d727d2511c1093",
-      "raw_id": "RAW-295c7c838429eea7",
-      "source_ref": "SA-8426e4811cfd0112",
-      "source_hash": "ff299bf2463763d2",
+      "asset_id": "QA-e3e11418037e05a4",
+      "raw_id": "RAW-f22ec0568e7e799d",
+      "source_ref": "SA-08026f3936a5e736",
+      "source_hash": "d4d7641775a8a7d4",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
+      "prompt_version": "model-assist-2026-07-18.2",
       "status": "rejected",
       "proposal": {
         "claims": []
@@ -331,253 +265,10 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-07-18T01:36:18.735Z"
+      "generated_at": "2026-07-18T04:10:00.461Z"
     },
     {
-      "candidate_id": "MAC-57cdba04abdb7f61",
-      "task_type": "entity_resolution",
-      "asset_id": "EN-7a9c94a8c201bcc2",
-      "raw_id": "RAW-25a50c519571dce0",
-      "source_ref": "SA-4e39c1e0b9d6a5bf",
-      "source_hash": "352bdb8be22960d6",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "requires_review",
-      "proposal": {
-        "decision": "same_entity",
-        "canonical_name": "SAP",
-        "rationale": "The entity candidate 'SAP' matches the organization 'SAP SE' described in the source text, which is the publisher of the press release and the company introducing the Autonomous Enterprise.",
-        "candidate_name": "SAP"
-      },
-      "evidence": [
-        {
-          "start": 303,
-          "end": 358,
-          "quote": "SAP SE (NYSE: SAP) introduced the Autonomous Enterprise"
-        }
-      ],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "passed",
-          "detail": "task contract passed"
-        }
-      ],
-      "generated_at": "2026-07-18T01:36:22.227Z"
-    },
-    {
-      "candidate_id": "MAC-589312a887d8b804",
-      "task_type": "claim_extraction",
-      "asset_id": "QA-c716f220b03c4fc0",
-      "raw_id": "RAW-eb079a0aa29f8afd",
-      "source_ref": "SA-c63e8db09cd7ac82",
-      "source_hash": "46501eaf9ff853a6",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
-      "proposal": {
-        "claims": []
-      },
-      "evidence": [],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "failed",
-          "detail": "missing_source_evidence"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "missing_claim_proposal"
-        }
-      ],
-      "generated_at": "2026-07-18T01:36:19.826Z"
-    },
-    {
-      "candidate_id": "MAC-6c9ea4396fdbf3a7",
-      "task_type": "claim_extraction",
-      "asset_id": "QA-91d7bba5f101cd5b",
-      "raw_id": "RAW-3b9bc3d7328c288b",
-      "source_ref": "SA-269a26f446352ac1",
-      "source_hash": "00cb734850d5d38c",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
-      "proposal": {
-        "claims": []
-      },
-      "evidence": [],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "failed",
-          "detail": "missing_source_evidence"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "missing_claim_proposal"
-        }
-      ],
-      "generated_at": "2026-07-18T01:36:18.980Z"
-    },
-    {
-      "candidate_id": "MAC-71ca2439c2928d5a",
-      "task_type": "claim_extraction",
-      "asset_id": "QA-1caab171a7b9d681",
-      "raw_id": "RAW-4233bde9713749ea",
-      "source_ref": "SA-ea999bd4869f81de",
-      "source_hash": "93c6acfe2a1aa2a9",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
-      "proposal": {
-        "claims": []
-      },
-      "evidence": [],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "failed",
-          "detail": "missing_source_evidence"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "missing_claim_proposal"
-        }
-      ],
-      "generated_at": "2026-07-18T01:36:17.839Z"
-    },
-    {
-      "candidate_id": "MAC-804f274dad96b10b",
-      "task_type": "claim_extraction",
-      "asset_id": "QA-1170a769b0fe7913",
-      "raw_id": "RAW-33903c08b1d31ecc",
-      "source_ref": "SA-ab42eeedc3191627",
-      "source_hash": "aa2b3474edaf817c",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
-      "proposal": {
-        "claims": []
-      },
-      "evidence": [],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "failed",
-          "detail": "missing_source_evidence"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "missing_claim_proposal"
-        }
-      ],
-      "generated_at": "2026-07-18T01:36:17.735Z"
-    },
-    {
-      "candidate_id": "MAC-8072d2c921c11544",
-      "task_type": "claim_extraction",
-      "asset_id": "QA-82053ae5d688796a",
-      "raw_id": "RAW-682e7a39606cb9cc",
-      "source_ref": "SA-1b0dd842e8b9a46a",
-      "source_hash": "53d15ec8d838531c",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
-      "proposal": {
-        "claims": []
-      },
-      "evidence": [],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "failed",
-          "detail": "missing_source_evidence"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "missing_claim_proposal"
-        }
-      ],
-      "generated_at": "2026-07-18T01:36:19.054Z"
-    },
-    {
-      "candidate_id": "MAC-851cbce06f6aac80",
+      "candidate_id": "MAC-4ae828bf73b1c389",
       "task_type": "entity_resolution",
       "asset_id": "EN-e473f24d4325d51a",
       "raw_id": "RAW-423a78e00c17bf9e",
@@ -585,19 +276,19 @@
       "source_hash": "61ec204b181aa8e6",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "requires_review",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
       "proposal": {
-        "decision": "same_entity",
+        "decision": "distinct_entity",
         "canonical_name": "Zendesk",
-        "rationale": "The ENTITY_CANDIDATE canonical_name 'Zendesk' matches the organization described in SOURCE_TEXT, which details Zendesk's product announcements, acquisitions, and corporate background.",
+        "rationale": "The candidate 'Zendesk' does not match any verified alternative ('Amazon', 'Microsoft'). The source text mentions Amazon Connect and Microsoft Teams only as component suppliers or integration platforms, not as the entity Zendesk itself.",
         "candidate_name": "Zendesk"
       },
       "evidence": [
         {
-          "start": 349,
-          "end": 458,
-          "quote": "Zendesk on May 19 unveiled its Autonomous Service Workforce vision at its annual Relate conference in Denver."
+          "start": 2271,
+          "end": 2319,
+          "quote": "The voice offering is powered by Amazon Connect."
         }
       ],
       "gate_results": [
@@ -622,30 +313,36 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-07-18T01:36:23.200Z"
+      "generated_at": "2026-07-18T04:10:04.591Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "codex-data-review",
+        "reviewed_at": "2026-07-18T04:19:04.455Z",
+        "note": "queue-closeout:reviewed_as_distinct_entity"
+      }
     },
     {
-      "candidate_id": "MAC-950d0d9877e651e2",
+      "candidate_id": "MAC-4de963df39695c72",
       "task_type": "entity_resolution",
-      "asset_id": "EN-1dc7e9837d60c55d",
-      "raw_id": "RAW-80dfd7140e42f5cc",
-      "source_ref": "SA-54968973cdc78a41",
-      "source_hash": "d673be4d078f12ef",
+      "asset_id": "EN-0e6e9f1ba413b8d1",
+      "raw_id": "RAW-2834e7d77bd0fd0b",
+      "source_ref": "SA-fdf5cb2eea8453fd",
+      "source_hash": "f419667ccff14990",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "requires_review",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
       "proposal": {
-        "decision": "publisher_of",
-        "canonical_name": "Cloudflare",
-        "rationale": "The SOURCE_TEXT is a changelog entry that begins with 'New updates and improvements at Cloudflare.' and describes updates to the Agents SDK, which is linked to Cloudflare's documentation and package ecosystem (@cloudflare/think, @cloudflare/ai-chat). This indicates Cloudflare is the publisher or provider of the Agents SDK.",
-        "candidate_name": "Agents SDK"
+        "decision": "distinct_entity",
+        "canonical_name": "CData",
+        "rationale": "The candidate entity 'CData' is a software company that launched products providing access to enterprise systems. The verified alternatives are 'Microsoft' and 'Salesforce'. The source text mentions 'Salesforce' and 'Microsoft 365' as examples of enterprise systems that CData's products provide access to, establishing a component_supplier or integration relationship, not entity identity. CData is not the same entity as Microsoft or Salesforce.",
+        "candidate_name": "CData"
       },
       "evidence": [
         {
-          "start": 10,
-          "end": 53,
-          "quote": "New updates and improvements at Cloudflare."
+          "start": 298,
+          "end": 453,
+          "quote": "The releases give developers direct, governed access to enterprise systems, Salesforce, Snowflake, NetSuite, Microsoft 365, Workday, and hundreds of others"
         }
       ],
       "gate_results": [
@@ -670,18 +367,24 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-07-18T01:36:22.282Z"
+      "generated_at": "2026-07-18T04:10:01.673Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "codex-data-review",
+        "reviewed_at": "2026-07-18T04:19:04.455Z",
+        "note": "queue-closeout:reviewed_as_distinct_entity"
+      }
     },
     {
-      "candidate_id": "MAC-ad1952a2f673c4a0",
+      "candidate_id": "MAC-548790bcf31a0a59",
       "task_type": "claim_extraction",
-      "asset_id": "QA-036648e07181d14e",
-      "raw_id": "RAW-8a186482a2651ce9",
-      "source_ref": "SA-d77777ca9efba295",
-      "source_hash": "108358f01ae37bf7",
+      "asset_id": "QA-91d7bba5f101cd5b",
+      "raw_id": "RAW-3b9bc3d7328c288b",
+      "source_ref": "SA-269a26f446352ac1",
+      "source_hash": "00cb734850d5d38c",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
+      "prompt_version": "model-assist-2026-07-18.2",
       "status": "rejected",
       "proposal": {
         "claims": []
@@ -709,10 +412,233 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-07-18T01:36:16.818Z"
+      "generated_at": "2026-07-18T04:09:57.501Z"
     },
     {
-      "candidate_id": "MAC-fa87ed0577a0d658",
+      "candidate_id": "MAC-64a6849e9b433894",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-1caab171a7b9d681",
+      "raw_id": "RAW-4233bde9713749ea",
+      "source_ref": "SA-ea999bd4869f81de",
+      "source_hash": "93c6acfe2a1aa2a9",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "model_release",
+            "subject": "DeepReinforce",
+            "object": "Ornith-1.0",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 144,
+          "end": 186,
+          "quote": "the first model release from DeepReinforce"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "failed",
+          "detail": "unsupported_numeric_fact:1.0"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T04:09:56.331Z"
+    },
+    {
+      "candidate_id": "MAC-9ec41a69ab175297",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-036648e07181d14e",
+      "raw_id": "RAW-8a186482a2651ce9",
+      "source_ref": "SA-d77777ca9efba295",
+      "source_hash": "108358f01ae37bf7",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "missing_claim_proposal"
+        }
+      ],
+      "generated_at": "2026-07-18T04:09:54.353Z"
+    },
+    {
+      "candidate_id": "MAC-a7c891e3f1d8852a",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-82053ae5d688796a",
+      "raw_id": "RAW-682e7a39606cb9cc",
+      "source_ref": "SA-1b0dd842e8b9a46a",
+      "source_hash": "53d15ec8d838531c",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "missing_claim_proposal"
+        }
+      ],
+      "generated_at": "2026-07-18T04:09:57.619Z"
+    },
+    {
+      "candidate_id": "MAC-af89aeba5526e436",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-be565ce4799aaa71",
+      "raw_id": "RAW-1c344b451ad7de4e",
+      "source_ref": "SA-c057ba9266594bd1",
+      "source_hash": "81de232a1b42dc8b",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "missing_claim_proposal"
+        }
+      ],
+      "generated_at": "2026-07-18T04:09:58.030Z"
+    },
+    {
+      "candidate_id": "MAC-c486b6e85038903f",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-1dc7e9837d60c55d",
+      "raw_id": "RAW-80dfd7140e42f5cc",
+      "source_ref": "SA-54968973cdc78a41",
+      "source_hash": "d673be4d078f12ef",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "Agents SDK",
+        "rationale": "The VERIFIED_ALTERNATIVES list is empty, so there is no existing verified entity to match against. The source text refers to an 'Agents SDK' in the title and provides upgrade instructions for 'agents' and related packages, but without a verified alternative, identity cannot be confirmed.",
+        "candidate_name": "Agents SDK"
+      },
+      "evidence": [
+        {
+          "start": 106,
+          "end": 174,
+          "quote": "Agents SDK adds background sub-agents and a unified turn entry point"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T04:10:02.017Z",
+      "review": {
+        "decision": "reject",
+        "reviewer": "codex-data-review",
+        "reviewed_at": "2026-07-18T04:19:04.455Z",
+        "note": "queue-closeout:insufficient_evidence_for_entity_resolution"
+      }
+    },
+    {
+      "candidate_id": "MAC-c769adfe0dcfcf62",
       "task_type": "entity_resolution",
       "asset_id": "EN-1bd14cd1a58c5708",
       "raw_id": "RAW-adfa30265ac18d47",
@@ -720,12 +646,12 @@
       "source_hash": "7286b5acf645fe18",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "requires_review",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
       "proposal": {
         "decision": "distinct_entity",
-        "canonical_name": "Wonderful",
-        "rationale": "The ENTITY_CANDIDATE is 'Enterprise AI Agent', a generic category term. The SOURCE_TEXT describes 'Wonderful' as a specific, named enterprise AI agent platform company that raised a Series B. The candidate does not match the specific company name.",
+        "canonical_name": "Enterprise AI Agent",
+        "rationale": "The candidate 'Enterprise AI Agent' is a generic category or platform type discussed in the article, not a specific named organization. The source text describes 'Wonderful' as the specific 'Amsterdam-based enterprise AI agent platform' that raised the Series B. The candidate does not match any of the verified alternatives (Anthropic, OpenAI, Intel), which are distinct named entities mentioned in the text.",
         "candidate_name": "Enterprise AI Agent"
       },
       "evidence": [
@@ -757,7 +683,130 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-07-18T01:36:21.775Z"
+      "generated_at": "2026-07-18T04:10:03.144Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "codex-data-review",
+        "reviewed_at": "2026-07-18T04:19:04.455Z",
+        "note": "queue-closeout:reviewed_as_distinct_entity"
+      }
+    },
+    {
+      "candidate_id": "MAC-d5ee93bd2c69d135",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-80d727d2511c1093",
+      "raw_id": "RAW-295c7c838429eea7",
+      "source_ref": "SA-8426e4811cfd0112",
+      "source_hash": "ff299bf2463763d2",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "product_release",
+            "subject": "Git project",
+            "object": "Git 2.55",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "standard_specification",
+            "subject": "Git 2.55",
+            "object": "git history fixup subcommand",
+            "evidence_index": 1
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 56,
+          "end": 178,
+          "quote": "The open source Git project just released Git 2.55 with features and bug fixes from over 100 contributors, 33 of them new."
+        },
+        {
+          "start": 8308,
+          "end": 8426,
+          "quote": "Git 2.55 builds on the experimental git history command, which Git 2.54 introduced , by adding a new fixup subcommand."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T04:09:59.301Z"
+    },
+    {
+      "candidate_id": "MAC-f3bdc5fe08392456",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-7a9c94a8c201bcc2",
+      "raw_id": "RAW-25a50c519571dce0",
+      "source_ref": "SA-4e39c1e0b9d6a5bf",
+      "source_hash": "352bdb8be22960d6",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "SAP",
+        "rationale": "The candidate entity 'SAP' does not exactly match any of the VERIFIED_ALTERNATIVES (Anthropic, Amazon, Google, Microsoft, NVIDIA). The source text mentions SAP deepening partnerships with these companies, which indicates distinct organizational identities rather than entity equivalence.",
+        "candidate_name": "SAP"
+      },
+      "evidence": [
+        {
+          "start": 104,
+          "end": 267,
+          "quote": "The company introduces a unified SAP Business AI Platform, deepening partnerships with Anthropic, Amazon Web Services, Google Cloud, Microsoft, NVIDIA and Palantir"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T04:10:03.491Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "codex-data-review",
+        "reviewed_at": "2026-07-18T04:19:04.455Z",
+        "note": "queue-closeout:reviewed_as_distinct_entity"
+      }
     }
   ]
 }

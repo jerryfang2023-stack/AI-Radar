@@ -2,7 +2,7 @@
 schema_version: raw-evidence-v2
 raw_id: R-052
 title: "Linkup - Case study: scaling 120+ AI agents in a top Middle East bank"
-title_zh: "Linkup - 案例研究：在中东一家顶级银行部署120多个AI代理"
+title_zh: "Linkup - 案例研究：在中东顶级银行部署 120 多个 AI 智能体"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 original_url: "https://www.linkup.so/case-studies/how-a-leading-middle-east-bank-powers-ai-agents-with-linkup"

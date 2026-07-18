@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"’s Sierra buys Sierra, the custom
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "Bret Taylor 的 Sierra 收购 YC 支持的 AI 初创公司 Fragment"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Bret Taylor's Sierra buys YC-backed AI startup Fragment - TechCrunch

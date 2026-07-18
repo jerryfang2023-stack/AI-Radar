@@ -250,7 +250,7 @@ function makeTask({
     },
     completion: {
       requiredArtifacts: ["SourceArtifact", "RawDocument", "Claim"],
-      targetProjection: type === "deployment_case" ? "FDE-V2.0" : type === "funding_detail" ? "EVENT-V1.0" : "ENTITY-V1.0 timeline",
+      targetProjection: type === "deployment_case" ? "FDE-V2.0" : type === "funding_detail" ? "EVENT-V1.1" : "ENTITY-V1.0 timeline",
       rule: gapKind === "coverage_sweep"
         ? "Complete every query with an auditable discovery run. Any candidate must be captured from its original page before factual use. A no-findings run closes only this review cycle."
         : "Capture an original source, extract an exact-span Claim, rebuild the responsible canonical object, and close only after the detected gap disappears."

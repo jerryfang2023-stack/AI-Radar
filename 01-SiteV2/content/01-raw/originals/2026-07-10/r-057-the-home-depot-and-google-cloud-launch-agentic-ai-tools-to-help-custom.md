@@ -2,7 +2,7 @@
 schema_version: raw-evidence-v2
 raw_id: R-057
 title: "The Home Depot and Google Cloud Launch Agentic AI Tools to Help Customers and Associates Bring Projects from ‘How-to’ to ‘Done’ | The Home Depot"
-title_zh: "家得宝与谷歌云推出代理式AI工具，助力客户与员工将项目从“如何做”推进至“完成”"
+title_zh: "家得宝与谷歌云推出智能体AI工具，助力顾客与员工将项目从“如何做”推进到“完成”"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 original_url: "https://corporate.homedepot.com/news/partnerships/home-depot-and-google-cloud-launch-agentic-ai-tools-help-customers-and-associates"

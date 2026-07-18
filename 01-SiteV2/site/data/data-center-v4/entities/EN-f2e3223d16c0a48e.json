@@ -1,0 +1,68 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-18T04:59:59.870Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 1250,
+    "quarantinedEventCount": 11
+  },
+  "entity": {
+    "id": "EN-f2e3223d16c0a48e",
+    "name": "腾讯《三角洲行动》安全",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-fc8b280e83232d6f"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-06-07",
+    "lastSeen": "2026-06-08",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-fc8b280e83232d6f"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-fc8b280e83232d6f",
+        "dataDate": "2026-06-08",
+        "date": "2026-06-07",
+        "eventType": "security_incident",
+        "eventTypeLabel": "安全事件",
+        "eventGroup": "组织、政策与法律",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "腾讯《三角洲行动》安全团队：AI外挂可识别，\"QQ音乐挂\"等为黑产换皮噱头",
+        "displayTags": [],
+        "entityIds": [
+          "EN-f2e3223d16c0a48e",
+          "EN-9c8ae69b84f21a2e"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

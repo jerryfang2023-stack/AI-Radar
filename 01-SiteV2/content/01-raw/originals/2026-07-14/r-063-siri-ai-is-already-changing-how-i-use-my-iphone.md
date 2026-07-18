@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-063
 title: "Siri AI is already changing how I use my iPhone"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "Siri AI 已改变我使用 iPhone 的方式"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.theverge.com/tech/964714/siri-ai-public-beta-preview-ios-27-hands-on"
 canonical_url: "https://theverge.com/tech/964714/siri-ai-public-beta-preview-ios-27-hands-on"
 source_name: "The Verge AI"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-14T01:56:51.701Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Siri AI is already changing how I use my iPhone

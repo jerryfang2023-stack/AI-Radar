@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-058
 title: "JetBrains AI for Teams and Organizations: From Fragmented AI Usage to Coordinated Software Development - The JetBrains Blog"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "JetBrains 面向团队与组织的 AI：从碎片化 AI 使用到协同软件开发"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://blog.jetbrains.com/blog/2026/07/07/jetbrains-ai-for-teams-and-organizations-from-fragmented-ai-usage-to-coordinated-software-development/"
 canonical_url: "https://blog.jetbrains.com/blog/2026/07/07/jetbrains-ai-for-teams-and-organizations-from-fragmented-ai-usage-to-coordinated-software-development"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-08T04:39:25.856Z
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # JetBrains AI for Teams and Organizations: From Fragmented AI Usage to Coordinated Software Development - The JetBrains Blog

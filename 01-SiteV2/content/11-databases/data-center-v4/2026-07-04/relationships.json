@@ -88,6 +88,17 @@
     ]
   },
   {
+    "relationship_id": "REL-c943ff3c1dba180d",
+    "event_id": "EV-95341497f7ba9d83",
+    "subject": "SigmanticAI",
+    "predicate": "funding",
+    "object": "Y Combinator",
+    "claim_ref": "CL-69341a3d0330922b",
+    "source_refs": [
+      "SA-595266c177027324"
+    ]
+  },
+  {
     "relationship_id": "REL-e7eeb1c662048f29",
     "event_id": "EV-a70d5cf3ee6d6d64",
     "subject": "Harness",
@@ -429,8 +440,8 @@
     ]
   },
   {
-    "relationship_id": "REL-da2d5d5f4096b672",
-    "event_id": "EV-bd66e5b45a6a577e",
+    "relationship_id": "REL-3abb49b41ffb063b",
+    "event_id": "EV-3028dfadf94c8f4c",
     "subject": "英伟达",
     "predicate": "model_release",
     "object": "在开源方面，该模型以开源权重形式在 Huggingface 平台发布，授权协议为 NVIDIA Nemotron Open Model License。",
@@ -440,8 +451,8 @@
     ]
   },
   {
-    "relationship_id": "REL-96ff79c6b1f85ba5",
-    "event_id": "EV-bd66e5b45a6a577e",
+    "relationship_id": "REL-b006618a58bf4629",
+    "event_id": "EV-3028dfadf94c8f4c",
     "subject": "英伟达",
     "predicate": "model_release",
     "object": "参数方面，该模型总参数为 60B，采用双塔（TwoTower）架构，包括 30B 的自回归模型（AR）/context Tower 和 30B 的扩散 / 降噪 Tower，每个 Tower 激活 3B 模型，128 个可路由专家。",
@@ -451,8 +462,8 @@
     ]
   },
   {
-    "relationship_id": "REL-b9e8a241a5ce2282",
-    "event_id": "EV-bd66e5b45a6a577e",
+    "relationship_id": "REL-3e3bbf5ec00ad850",
+    "event_id": "EV-3028dfadf94c8f4c",
     "subject": "英伟达",
     "predicate": "model_release",
     "object": "架构方面，TwoTower 最大的亮点，在于拆分传统扩散语言模型中的网络任务，将文本生成任务中的上下文表示与去噪过程分离到两个独立的神经网络“塔”中。",
@@ -462,8 +473,8 @@
     ]
   },
   {
-    "relationship_id": "REL-9a82a4e9b3615a09",
-    "event_id": "EV-bd66e5b45a6a577e",
+    "relationship_id": "REL-73d373dab8201127",
+    "event_id": "EV-3028dfadf94c8f4c",
     "subject": "英伟达",
     "predicate": "model_release",
     "object": "IT之家 7 月 3 日消息，英伟达昨日（7 月 2 日）发布博文，宣布推出 Nemotron-Labs-TwoTower，是一种基于预训练自回归骨干网络的离散扩散语言模型， 致力于解决大模型 Token 生成速度瓶颈。",
@@ -558,6 +569,17 @@
     "claim_ref": "CL-18954b77fd39ca67",
     "source_refs": [
       "SA-c023caafc814d4ca"
+    ]
+  },
+  {
+    "relationship_id": "REL-119542da787902b4",
+    "event_id": "EV-71aeb7cb4d89926b",
+    "subject": "Anthropic",
+    "predicate": "product_release",
+    "object": "Claude Science",
+    "claim_ref": "CL-7f0faf7ca84ab0df",
+    "source_refs": [
+      "SA-94dcbc55a33b9bb4"
     ]
   },
   {
@@ -921,6 +943,17 @@
     "claim_ref": "CL-bd3a30534a665dee",
     "source_refs": [
       "SA-21adde0c66e3a98d"
+    ]
+  },
+  {
+    "relationship_id": "REL-bdf27380c0e56ace",
+    "event_id": "EV-dc6de20c50afa59f",
+    "subject": "Tigera",
+    "predicate": "product_release",
+    "object": "Lynx",
+    "claim_ref": "CL-28f53e06690eb1ab",
+    "source_refs": [
+      "SA-0a31c9b03dfbc833"
     ]
   },
   {

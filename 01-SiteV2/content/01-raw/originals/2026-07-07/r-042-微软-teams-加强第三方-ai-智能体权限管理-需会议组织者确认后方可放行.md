@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-042
 title: "微软 Teams 加强第三方 AI 智能体权限管理，需会议组织者确认后方可放行"
 title_zh: "微软 Teams 加强第三方 AI 智能体权限管理，需会议组织者确认后方可放行"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/973/146.htm"
 canonical_url: "https://ithome.com/0/973/146.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-07T02:46:59.744Z
 theme: outside-core-exploration
 keyword_group: outside-core-exploration
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 微软 Teams 加强第三方 AI 智能体权限管理，需会议组织者确认后方可放行

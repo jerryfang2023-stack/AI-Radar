@@ -2,7 +2,7 @@
 id: SIG-20260522-02
 type: signal_card
 signal_type: case
-title: "Snowflake与Anthropic宣布2亿美元合作，将代理式AI引入全球企业"
+title: "Snowflake 与 Anthropic 宣布 2 亿美元合作，为全球企业带来 AI 智能体"
 date: 2026-05-22
 status: draft
 asset_level: candidate
@@ -37,7 +37,7 @@ signal_owner: "Snowflake / Anthropic"
 watch_reason: "继续看 Snowflake 客户是否公开采用 Claude Agent，以及销售和工程流程指标是否披露。"
 
 frontend:
-  displayTitle: "Snowflake与Anthropic宣布2亿美元合作，将代理式AI引入全球企业"
+  displayTitle: "Snowflake 与 Anthropic 宣布 2 亿美元合作，为全球企业带来 AI 智能体"
   eventLine: "Anthropic 公布与 Snowflake 的多年合作，协议金额为 2 亿美元，并面向 Snowflake 客户推进 AI Agent 部署。"
   whyWatch: "模型进入数据平台后，企业比较的不是单次调用，而是数据边界、销售流程、工程效率和平台采购责任。"
   businessMeaning: "这会影响数据平台客户的 AI 采购路径，也会把模型公司和云数据平台放进同一轮预算讨论。"
@@ -70,7 +70,7 @@ opportunity_signals:
   missing_fields: ["delivery_model"]
 ---
 
-# Snowflake与Anthropic宣布2亿美元合作，将代理式AI引入全球企业
+# Snowflake 与 Anthropic 宣布 2 亿美元合作，为全球企业带来 AI 智能体
 
 ## 信号底稿
 

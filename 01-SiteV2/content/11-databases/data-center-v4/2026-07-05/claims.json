@@ -1,5 +1,49 @@
 [
   {
+    "claim_id": "CL-77f062ebeb1e7a6d",
+    "raw_id": "RAW-d436a04132a8bca4",
+    "claim_type": "acquisition",
+    "subject": "Mistral AI",
+    "predicate": "acquisition",
+    "object": "Koyeb",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-74894c4de574ef1e"
+    },
+    "source_span": {
+      "raw_id": "RAW-d436a04132a8bca4",
+      "start": 3497,
+      "end": 3615
+    },
+    "source_quote": "Earlier this year, Mistral acquired infrastructure startup Koyeb to further boost its plans to build “a true AI cloud.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-756b8a4bbba40ee1",
+    "raw_id": "RAW-d436a04132a8bca4",
+    "claim_type": "acquisition",
+    "subject": "Mistral AI",
+    "predicate": "acquisition",
+    "object": "Emmi",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-74894c4de574ef1e"
+    },
+    "source_span": {
+      "raw_id": "RAW-d436a04132a8bca4",
+      "start": 8303,
+      "end": 8510
+    },
+    "source_quote": "In addition to infrastructure startup Koyeb , Mistral has also bought Emmi , an Austrian startup focusing on physics AI, with the ambition to better support industrial enterprises in their AI transformation.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-a1aba913d9238e07",
     "raw_id": "RAW-b8b436fce25474aa",
     "claim_type": "product_release",
@@ -588,6 +632,28 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-397e326715531180",
+    "raw_id": "RAW-8884d1a270b8bd11",
+    "claim_type": "model_release",
+    "subject": "sqlite-utils 4.0rc2",
+    "predicate": "model_release",
+    "object": "Claude Fable",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-baa36c61d7f34fb3"
+    },
+    "source_span": {
+      "raw_id": "RAW-8884d1a270b8bd11",
+      "start": 0,
+      "end": 71
+    },
+    "source_quote": "sqlite-utils 4.0rc2, mostly written by Claude Fable (for about $149.25)",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-76d7bc75c2a01608",
     "raw_id": "RAW-4629f93d3979b271",
     "claim_type": "funding",
@@ -1011,6 +1077,28 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-42ce22f7d749c00a",
+    "raw_id": "RAW-3c111af0c721b925",
+    "claim_type": "capital_investment",
+    "subject": "美光",
+    "predicate": "capital_investment",
+    "object": "日本广岛半导体工厂扩建项目",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-2f94bef99bdb0ae2"
+    },
+    "source_span": {
+      "raw_id": "RAW-3c111af0c721b925",
+      "start": 334,
+      "end": 377
+    },
+    "source_quote": "美光（Micron）在日本广岛启动半导体工厂扩建项目， 项目总投资为 1.5 万亿日元",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-e437c38eff52ae67",
     "raw_id": "RAW-838470a88b30ba6c",
     "claim_type": "product_release",
@@ -1071,6 +1159,50 @@
     "source_quote": "三是深化应用场景示范推广， 聚焦智慧家电、智能穿戴、玩具文创等场景，开展创新方案征集与试点验证，打造可复制标杆案例。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-ae470e13a45c322d",
+    "raw_id": "RAW-8658436bf9180807",
+    "claim_type": "deployment",
+    "subject": "LG Display",
+    "predicate": "deployment",
+    "object": "自研人工智能生产系统",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-9b2f9e8feb3fbd5c"
+    },
+    "source_span": {
+      "raw_id": "RAW-8658436bf9180807",
+      "start": 377,
+      "end": 416
+    },
+    "source_quote": "自去年起，公司已在全部有机发光二极管（OLED）产线部署自研人工智能生产系统。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-c1430387acf2e117",
+    "raw_id": "RAW-8658436bf9180807",
+    "claim_type": "deployment",
+    "subject": "LG Display",
+    "predicate": "deployment",
+    "object": "虚拟设计验证技术（VDE）",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3,
+      "model_candidate_id": "MAC-9b2f9e8feb3fbd5c"
+    },
+    "source_span": {
+      "raw_id": "RAW-8658436bf9180807",
+      "start": 129,
+      "end": 179
+    },
+    "source_quote": "正在将虚拟设计验证技术（VDE）全面应用于下一代显示技术研发，覆盖光学、材料、器件及基板等多个领域。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   }
 ]

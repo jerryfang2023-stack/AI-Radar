@@ -2,7 +2,7 @@
 id: SIG-20260629-A08
 type: signal_card
 signal_type: case
-title: "AI定价与变现策略手册 - 贝塞麦风险投资公司"
+title: "AI 定价与变现策略手册"
 date: 2026-06-29
 status: published
 source_title: "The AI pricing and monetization playbook - Bessemer Venture Partners"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "AI pricing and monetization playbook"
 
 frontend:
-  displayTitle: "AI定价与变现策略手册 - 贝塞麦风险投资公司"
+  displayTitle: "AI 定价与变现策略手册"
   sourceLinks:
     - "https://www.bvp.com/atlas/the-ai-pricing-and-monetization-playbook"
 ---
 
-# AI定价与变现策略手册 - 贝塞麦风险投资公司
+# AI 定价与变现策略手册
 
 ## 新闻事实
 

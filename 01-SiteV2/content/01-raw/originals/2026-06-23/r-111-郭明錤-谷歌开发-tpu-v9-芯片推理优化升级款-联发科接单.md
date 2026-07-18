@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"郭明錤6月22日称，谷歌将在TPU 
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "郭明錤：谷歌开发 TPU v9 芯片推理优化升级款，联发科接单"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 郭明錤：谷歌开发 TPU v9 芯片推理优化升级款，联发科接单

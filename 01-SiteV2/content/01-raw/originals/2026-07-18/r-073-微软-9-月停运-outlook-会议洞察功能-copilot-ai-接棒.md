@@ -3,9 +3,9 @@ schema_version: raw-evidence-v2
 raw_id: R-073
 title: "微软 9 月停运 Outlook 会议洞察功能，Copilot AI 接棒"
 title_zh: "微软 9 月停运 Outlook 会议洞察功能，Copilot AI 接棒"
-title_translation_status: not_required
-title_translation_method: source_title
-title_translation_model: not_applicable
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 original_url: "https://www.ithome.com/0/978/350.htm"
 canonical_url: "https://ithome.com/0/978/350.htm"
 source_name: "IT之家（RSS）"

@@ -2,7 +2,7 @@
 id: SIG-20260618-A06
 type: signal_card
 signal_type: case
-title: "治理型AI代理：如何自信部署与规模化"
+title: "受控AI智能体：如何自信部署与规模化"
 date: 2026-06-18
 status: published
 source_title: "Governed AI Agents: How to Deploy and Scale with Confidence"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "Governed AI Agents"
 
 frontend:
-  displayTitle: "治理型AI代理：如何自信部署与规模化"
+  displayTitle: "受控AI智能体：如何自信部署与规模化"
   sourceLinks:
     - "https://boomi.com/blog/ai-agents-deployment-and-governance/"
 ---
 
-# 治理型AI代理：如何自信部署与规模化
+# 受控AI智能体：如何自信部署与规模化
 
 ## 新闻事实
 

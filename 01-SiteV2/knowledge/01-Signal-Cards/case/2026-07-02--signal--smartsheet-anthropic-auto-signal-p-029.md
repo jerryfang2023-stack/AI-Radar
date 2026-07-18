@@ -2,7 +2,7 @@
 id: SIG-20260702-A08
 type: signal_card
 signal_type: case
-title: "Smartsheet Claude平台（API）案例研究 | Anthropic旗下Claude"
+title: "Smartsheet Claude平台（API）案例研究"
 date: 2026-07-02
 status: published
 source_title: "Smartsheet Claude Platform (API) case study | Claude by Anthropic"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Smartsheet / Anthropic"
 
 frontend:
-  displayTitle: "Smartsheet Claude平台（API）案例研究 | Anthropic旗下Claude"
+  displayTitle: "Smartsheet Claude平台（API）案例研究"
   sourceLinks:
     - "https://claude.com/customers/smartsheet"
 ---
 
-# Smartsheet Claude平台（API）案例研究 | Anthropic旗下Claude
+# Smartsheet Claude平台（API）案例研究
 
 ## 新闻事实
 

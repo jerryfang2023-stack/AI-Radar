@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-044
 title: "Claude Code in Slack"
-title_zh: "Slack中的Claude代码"
-title_translation_status: translated
-title_translation_method: mymemory_title_translation
+title_zh: "Slack 中的 Claude Code"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.bensbites.com/p/claude-code-in-slack"
 canonical_url: "https://bensbites.com/p/claude-code-in-slack"
 source_name: "Ben's Bites AI Newsletter"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-12T09:55:33.371Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Claude Code in Slack

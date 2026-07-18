@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T01:57:40.269Z",
-    "latestDataDate": "2026-07-17",
-    "currentDate": "2026-07-17",
-    "eventCount": 832,
-    "quarantinedEventCount": 60
+    "generatedAt": "2026-07-18T04:59:59.870Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 1250,
+    "quarantinedEventCount": 11
   },
   "entity": {
     "id": "EN-40e307d789f77264",
@@ -28,15 +28,23 @@
     "classificationRefs": [
       "TX-industry-retail_ecommerce"
     ],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-b81c8201acfc7639",
+      "EN-3a7bd3e2360a3d29"
+    ],
     "firstSeen": "2026-06-09",
     "lastSeen": "2026-06-09",
-    "relationIds": [],
+    "relationIds": [
+      "REL2-338b19660b87c193",
+      "REL2-aad42c03de906e55",
+      "REL2-fe1b4cdbd7469d6e"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-2d5746e41f96c3c2",
         "EV-21c749570133c786",
         "EV-52e1ac21c25a0a09"
       ],
@@ -45,6 +53,41 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-2d5746e41f96c3c2",
+        "dataDate": "2026-06-14",
+        "date": "2026-06-14",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "华为 HarmonyOS 7.0 Developer Beta 1 更新：首创鸿蒙内核应用快启技术，开发工具与系统能力增强",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "id": "software_development",
+            "dimensionName": "应用场景",
+            "name": "软件开发"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "code_generation",
+            "name": "代码生成"
+          }
+        ],
+        "entityIds": [
+          "EN-b81c8201acfc7639",
+          "EN-e18cb6435603205d"
+        ]
+      },
       {
         "id": "EV-21c749570133c786",
         "dataDate": "2026-06-09",
@@ -88,8 +131,242 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-b81c8201acfc7639",
+      "name": "Huawei",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "华为"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-87432dbb99cd6033",
+        "EV-5be48cce8dc4f3de",
+        "EV-9563aa162529aab0",
+        "EV-b726a9cda7beae64",
+        "EV-a9810b47e0408a05",
+        "EV-afcd5426f5c01dc7",
+        "EV-26d2874c6ce028d6",
+        "EV-b93102125cc062e3",
+        "EV-6c361125c3f50bb6",
+        "EV-8a9b12665a3e40a0",
+        "EV-2d5746e41f96c3c2",
+        "EV-26c1248692fdcc10",
+        "EV-20cdbe59ba2a1359",
+        "EV-3c51bcb5e99d2b68",
+        "EV-2ce9542169b5dfda",
+        "EV-8e6f9c324aa0b2f3",
+        "EV-0597e07d7e73051a"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-code_generation",
+        "TX-industry-healthcare_life_sciences",
+        "TX-use_case-software_development",
+        "TX-technology-on_device",
+        "TX-technology-multimodal",
+        "TX-industry-media_entertainment",
+        "TX-technology-video_generation",
+        "TX-use_case-knowledge_search"
+      ],
+      "relatedEntityIds": [
+        "EN-40e307d789f77264",
+        "EN-b42e5eda1d1a3720",
+        "EN-e18cb6435603205d",
+        "EN-24381ecb01753c1b"
+      ],
+      "firstSeen": "2026-05-25",
+      "lastSeen": "2026-07-18"
+    },
+    {
+      "id": "EN-3a7bd3e2360a3d29",
+      "name": "Apple",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "苹果"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-f282ab8740ff0096",
+        "EV-5be48cce8dc4f3de",
+        "EV-53f08daddd011dbb",
+        "EV-b726a9cda7beae64",
+        "EV-afcd5426f5c01dc7",
+        "EV-f5a50f1fed72fec3",
+        "EV-d116b0aa5bb292e2",
+        "EV-e857f9d1c1478c70",
+        "EV-fd21441fb6e143c3",
+        "EV-c237f5dc53f0a923",
+        "EV-3a74e4995b590507",
+        "EV-8a9b12665a3e40a0",
+        "EV-70cbf25f7ec2cc3a",
+        "EV-8b9e4428074bde60",
+        "EV-37b8aab7efececce",
+        "EV-ffe99cf8446a9d14",
+        "EV-967239f907803753",
+        "EV-113899096a32165a",
+        "EV-cabc88e1d09dec80",
+        "EV-cc3b92fe233953cf",
+        "EV-64b1c2eb3de15e82",
+        "EV-8aead769e84de342",
+        "EV-192fd3be9dda93a7",
+        "EV-abf0990dcaceb1ce",
+        "EV-89930fa8d1db98eb",
+        "EV-60c27ec9b857f5c2",
+        "EV-eeb687002cac5f4e",
+        "EV-99e5df844a1bd670",
+        "EV-0b2bfd57923cedd3",
+        "EV-3c51bcb5e99d2b68",
+        "EV-a736c6c64d106475",
+        "EV-dad8c827d14f2799",
+        "EV-4e6dc3ec2b3f0bd6",
+        "EV-634ce5b42f6d32f6",
+        "EV-85373b8ec9148127",
+        "EV-1ae8027c085679e9",
+        "EV-21c749570133c786",
+        "EV-52e1ac21c25a0a09",
+        "EV-591542ccc2de5be8",
+        "EV-5a1422a9929c582e",
+        "EV-8361a47c70ecd243",
+        "EV-9f338c4815cc65f3",
+        "EV-9f9bc7ffe6228281",
+        "EV-a5ba3797b38df125",
+        "EV-a9fe726c4ea2a17b",
+        "EV-bff418b2959f58fb",
+        "EV-c5b8faec223a4caf",
+        "EV-d40a1a873015ac98",
+        "EV-da062d02015f99fb",
+        "EV-ebef81764102ee7c",
+        "EV-f6611268f119a172",
+        "EV-342799d4e68e7416",
+        "EV-2f7e6d3a68bbf08f",
+        "EV-ef823877347ff40f",
+        "EV-5cd10de5c12916f0",
+        "EV-c0a94bb25d551db1",
+        "EV-5613946bdd578a26",
+        "EV-dd902b603e2e3dbc",
+        "EV-da6678e4e865e00e",
+        "EV-8cb2374f76202ecc",
+        "EV-946569cccbd9222f",
+        "EV-b4203b10d6592bf2",
+        "EV-5eb23cdd9c14c6ea",
+        "EV-7d4b4b8d4e3599d4",
+        "EV-10e841ab47d2b1f1",
+        "EV-f2d29ca7b05c3dd9",
+        "EV-ea2b6ce4acd46366",
+        "EV-2821d0cef61b3c6a",
+        "EV-6f7c5f0abad3d4da",
+        "EV-8f497488d129fee5",
+        "EV-a8f1204b54ae6475",
+        "EV-1b92b6c835ce240c"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-retail_ecommerce",
+        "TX-industry-manufacturing",
+        "TX-technology-code_generation",
+        "TX-technology-long_context",
+        "TX-use_case-cybersecurity",
+        "TX-technology-on_device",
+        "TX-technology-fine_tuning",
+        "TX-technology-multimodal",
+        "TX-industry-media_entertainment",
+        "TX-technology-tool_use",
+        "TX-use_case-content_creation",
+        "TX-technology-quantization",
+        "TX-technology-speech_audio"
+      ],
+      "relatedEntityIds": [
+        "EN-af3ceabbe048a291",
+        "EN-e13642b766c1f8d1",
+        "EN-e463d05a14e8697f",
+        "EN-1553575bccce0a25",
+        "EN-1924fff8eb4d54ae",
+        "EN-41dcc2d4951f337b",
+        "EN-1acf3a98930680ec",
+        "EN-45b5216872656eb3",
+        "EN-dfabe4215e8c07cb",
+        "EN-729324072d368379",
+        "EN-40e307d789f77264",
+        "EN-0502bb9ed34980aa"
+      ],
+      "firstSeen": "2026-06-04",
+      "lastSeen": "2026-07-18"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-338b19660b87c193",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-b81c8201acfc7639",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-40e307d789f77264",
+      "object_type": "entity",
+      "event_id": "EV-2d5746e41f96c3c2",
+      "claim_refs": [
+        "CL-b8364b9d819b3559"
+      ],
+      "source_refs": [
+        "SA-8022296da9043827"
+      ],
+      "data_date": "2026-06-14",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-aad42c03de906e55",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-3a7bd3e2360a3d29",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-40e307d789f77264",
+      "object_type": "entity",
+      "event_id": "EV-52e1ac21c25a0a09",
+      "claim_refs": [
+        "CL-200387b333a63bec",
+        "CL-563ecffd6de962e3",
+        "CL-dd8a0674c31cfc53",
+        "CL-826dd4d2f9e003bc"
+      ],
+      "source_refs": [
+        "SA-07362e7a0eeb27d0"
+      ],
+      "data_date": "2026-06-09",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-fe1b4cdbd7469d6e",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-3a7bd3e2360a3d29",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-40e307d789f77264",
+      "object_type": "entity",
+      "event_id": "EV-21c749570133c786",
+      "claim_refs": [
+        "CL-50f9195eab52f6b4",
+        "CL-6d88aad880aefc2f",
+        "CL-7be8ab2dc8139436",
+        "CL-6a080f8e3d619e2c"
+      ],
+      "source_refs": [
+        "SA-c5d7f74356e3c212"
+      ],
+      "data_date": "2026-06-09",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [
     {
       "id": "TX-industry-retail_ecommerce",
@@ -98,11 +375,13 @@
       "typeLabel": "行业",
       "valueId": "retail_ecommerce",
       "eventIds": [
+        "EV-f6a72cddbda748b3",
         "EV-e7dcecaed5a0ee5b",
         "EV-8b0f056571d68269",
         "EV-434dcf1813a84ead",
         "EV-a3b006906f6d46a0",
         "EV-046caa2b3d6fbdde",
+        "EV-0e028ea8f94752de",
         "EV-02686922dd82c4aa",
         "EV-99a0cb6bac516bdd",
         "EV-2ffc3377977da114",
@@ -115,8 +394,9 @@
         "EV-dd62847548bb6ae3"
       ],
       "entityIds": [
-        "EN-f346eaca864441f9",
+        "EN-a5d2ae286d0d9e45",
         "EN-96eebba49dbbf422",
+        "EN-f346eaca864441f9",
         "EN-c70eca6b0f88f44d",
         "EN-b0532e1af75cc4ab",
         "EN-e5cc9e38970eacb5",
@@ -124,6 +404,7 @@
         "EN-6f21a653c48f4f19",
         "EN-4dbe391b8fcf977a",
         "EN-c5947269de664c47",
+        "EN-e759968ca9278b8d",
         "EN-88e2cce43eeadb36",
         "EN-276a8bc458036a1a",
         "EN-5239a379b6326549",
@@ -147,6 +428,7 @@
         "EN-61cce404a45c3545",
         "EN-2a920347dfcf07a7",
         "EN-9fbf261b62c1d7c0",
+        "EN-2dc010636b9dce91",
         "EN-23b979df49741c93",
         "EN-02072c80a8386e8d",
         "EN-2eb073b22916de55",
@@ -160,7 +442,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-01-20",
-      "lastSeen": "2026-07-15"
+      "lastSeen": "2026-07-18"
     }
   ],
   "fde": [],

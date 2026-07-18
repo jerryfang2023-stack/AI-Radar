@@ -2,7 +2,7 @@
 id: SIG-20260629-A04
 type: signal_card
 signal_type: case
-title: "Infosys与Sentara合作，解锁AI价值并扩大医疗保健服务中的企业AI应用规模"
+title: "Infosys 与 Sentara 合作，解锁 AI 价值并规模化医疗服务业的企业 AI 应用"
 date: 2026-06-29
 status: published
 source_title: "Infosys Collaborates with Sentara to Unlock AI Value and Scale Enterprise AI Adoption in Healthcare Services"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Infosys / Sentara"
 
 frontend:
-  displayTitle: "Infosys与Sentara合作，解锁AI价值并扩大医疗保健服务中的企业AI应用规模"
+  displayTitle: "Infosys 与 Sentara 合作，解锁 AI 价值并规模化医疗服务业的企业 AI 应用"
   sourceLinks:
     - "https://www.prnewswire.com/news-releases/infosys-collaborates-with-sentara-to-unlock-ai-value-and-scale-enterprise-ai-adoption-in-healthcare-services-302809245.html"
 ---
 
-# Infosys与Sentara合作，解锁AI价值并扩大医疗保健服务中的企业AI应用规模
+# Infosys 与 Sentara 合作，解锁 AI 价值并规模化医疗服务业的企业 AI 应用
 
 ## 新闻事实
 

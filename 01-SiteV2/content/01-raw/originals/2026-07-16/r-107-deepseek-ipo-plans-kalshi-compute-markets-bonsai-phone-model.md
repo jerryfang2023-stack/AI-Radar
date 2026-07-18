@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-107
 title: "DeepSeek IPO plans 📈, Kalshi compute markets ⚡, Bonsai phone model 📱"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "DeepSeek IPO 计划 📈，Kalshi 计算市场 ⚡，Bonsai 手机模型 📱"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://tldr.tech/ai/2026-07-15"
 canonical_url: "https://tldr.tech/ai/2026-07-15"
 source_name: "TLDR AI Newsletter"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-16T02:39:34.021Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # DeepSeek IPO plans 📈, Kalshi compute markets ⚡, Bonsai phone model 📱

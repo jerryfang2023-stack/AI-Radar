@@ -2,7 +2,7 @@
 id: SIG-20260606-A15
 type: signal_card
 signal_type: product_service
-title: "投资Inferact | Andreessen Horowitz"
+title: "投资Inferact"
 date: 2026-06-06
 status: published
 source_title: "Investing in Inferact | Andreessen Horowitz"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Investing in Inferact"
 
 frontend:
-  displayTitle: "投资Inferact | Andreessen Horowitz"
+  displayTitle: "投资Inferact"
   sourceLinks:
     - "https://a16z.com/announcement/investing-in-inferact/"
 ---
 
-# 投资Inferact | Andreessen Horowitz
+# 投资Inferact
 
 ## 新闻事实
 

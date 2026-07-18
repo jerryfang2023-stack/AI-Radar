@@ -72,7 +72,7 @@ key_excerpts: [{"type":"funding","text":"Strategic partnerships with Avaamo and 
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
-title_zh: "Vonage推出面向医疗行业的专用AI代理"
+title_zh: "Vonage 推出面向医疗行业的专用 AI 智能体"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

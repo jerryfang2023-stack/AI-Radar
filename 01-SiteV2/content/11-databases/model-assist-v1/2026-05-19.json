@@ -1,20 +1,20 @@
 {
   "schema_version": "MODEL-ASSIST-V1.0",
-  "generated_at": "2026-07-18T01:56:32.974Z",
+  "generated_at": "2026-07-18T04:25:13.736Z",
   "data_date": "2026-05-19",
-  "prompt_version": "model-assist-2026-07-18.1",
+  "prompt_version": "model-assist-2026-07-18.2",
   "source_count": 100,
   "candidates": [
     {
-      "candidate_id": "MAC-37575f857f73a35a",
+      "candidate_id": "MAC-21cba8e3b785e80b",
       "task_type": "claim_extraction",
-      "asset_id": "QA-9c8ecea5f66c8fd3",
-      "raw_id": "RAW-bf5a81a96e8812b8",
-      "source_ref": "SA-ce414aea0f88800b",
-      "source_hash": "52267fca12ede487",
+      "asset_id": "QA-249da606627ac147",
+      "raw_id": "RAW-54a302866cf836ce",
+      "source_ref": "SA-46031d5bba06a67d",
+      "source_hash": "306038b5fcb1b60c",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
+      "prompt_version": "model-assist-2026-07-18.2",
       "status": "rejected",
       "proposal": {
         "claims": []
@@ -42,28 +42,45 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-07-18T01:28:56.811Z"
+      "generated_at": "2026-07-18T04:01:19.255Z"
     },
     {
-      "candidate_id": "MAC-3b37a39b5ed5bea3",
-      "task_type": "qa_repair",
-      "asset_id": "QA-a4965e57145b1de5",
-      "raw_id": "RAW-dab1dba632328b4d",
-      "source_ref": "SA-f3fb912f559c5b6e",
-      "source_hash": "aef80be4b93a5da7",
+      "candidate_id": "MAC-2368561c443f9137",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-53d245ac2c860441",
+      "raw_id": "RAW-8d9bac359c9482d4",
+      "source_ref": "SA-1dce453b63595f49",
+      "source_hash": "a61d24268fb26131",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "requires_review",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
       "proposal": {
-        "action": "keep_qa",
-        "reason": "The article describes a strategic partnership involving AI-relevant technologies such as 3DGS spatial reconstruction and an AI-powered spatial intelligence platform, which falls within the AI industry scope."
+        "claims": [
+          {
+            "event_type": "product_release",
+            "subject": "长城汽车",
+            "object": "魏牌 V9X",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "product_release",
+            "subject": "魏牌 V9X",
+            "object": "HEV（油电混动版本）和 EV（纯电动版本）",
+            "evidence_index": 1
+          }
+        ]
       },
       "evidence": [
         {
-          "start": 379,
-          "end": 428,
-          "quote": "融合影石创新的高性能影像硬件与群核科技的 3DGS 空间重建能力， 共同发布新一代空间重建解决方案"
+          "start": 329,
+          "end": 372,
+          "quote": "长城汽车旗下魏牌 V9X 现已上市，新车共推出 3 款车型，售价 34.98 万元起。"
+        },
+        {
+          "start": 394,
+          "end": 439,
+          "quote": "在今年晚些时候魏牌 V9X 还会进一步推出 HEV（油电混动版本）和 EV（纯电动版本）。"
         }
       ],
       "gate_results": [
@@ -88,112 +105,10 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-07-18T01:29:00.546Z"
+      "generated_at": "2026-07-18T04:01:20.539Z"
     },
     {
-      "candidate_id": "MAC-5828061425b13647",
-      "task_type": "claim_extraction",
-      "asset_id": "QA-9139e58df9c5503b",
-      "raw_id": "RAW-c5a75740a9807c7e",
-      "source_ref": "SA-9df74f16913902cd",
-      "source_hash": "ab497dba94545b1a",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
-      "proposal": {
-        "claims": [
-          {
-            "event_type": "research",
-            "subject": "Google",
-            "object": "Gemma 4 series of models",
-            "evidence_index": 0
-          },
-          {
-            "event_type": "research",
-            "subject": "GLM",
-            "object": "GLM-5.1",
-            "evidence_index": 1
-          }
-        ]
-      },
-      "evidence": [
-        {
-          "start": 4893,
-          "end": 5013,
-          "quote": "Google released the Gemma 4 series of models, which are the most capable open weight models I’ve seen from a US company."
-        },
-        {
-          "start": 5031,
-          "end": 5102,
-          "quote": "Chinese AI lab GLM came out with GLM-5.1 —an open weight 1.5TB monster!"
-        }
-      ],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "unsupported_claim_event_type:0, unsupported_claim_event_type:1"
-        }
-      ],
-      "generated_at": "2026-07-18T01:28:58.364Z"
-    },
-    {
-      "candidate_id": "MAC-67b4d35ecc2faa02",
-      "task_type": "claim_extraction",
-      "asset_id": "QA-de4f39b99a531f48",
-      "raw_id": "RAW-a5419d3c49a8305e",
-      "source_ref": "SA-8cab00f261e8f519",
-      "source_hash": "1e305f4d4607140f",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
-      "proposal": {
-        "claims": []
-      },
-      "evidence": [],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "failed",
-          "detail": "missing_source_evidence"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "missing_claim_proposal"
-        }
-      ],
-      "generated_at": "2026-07-18T01:28:57.284Z"
-    },
-    {
-      "candidate_id": "MAC-70e4d8707d2aa250",
+      "candidate_id": "MAC-310c3a342823cad8",
       "task_type": "entity_resolution",
       "asset_id": "EN-53874092e000069b",
       "raw_id": "RAW-2a90d1563c4539e6",
@@ -201,12 +116,12 @@
       "source_hash": "323ee46a377cce55",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "requires_review",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
       "proposal": {
-        "decision": "publisher_of",
-        "canonical_name": "腾讯",
-        "rationale": "The source text states that 腾讯 announced the launch of the AI application generation platform '吐司', indicating 腾讯 is the publisher/creator of this product.",
+        "decision": "same_entity",
+        "canonical_name": "Tencent",
+        "rationale": "The candidate canonical_name '腾讯' is listed as an alias for the verified entity 'Tencent', and the source text quote confirms the mention refers to the same organization.",
         "candidate_name": "腾讯"
       },
       "evidence": [
@@ -238,88 +153,16 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-07-18T01:28:59.580Z"
+      "generated_at": "2026-07-18T04:01:22.732Z",
+      "review": {
+        "decision": "reject",
+        "reviewer": "codex-data-review",
+        "reviewed_at": "2026-07-18T04:19:04.455Z",
+        "note": "queue-closeout:same_entity_target_not_proven"
+      }
     },
     {
-      "candidate_id": "MAC-7ac4713148964e85",
-      "task_type": "claim_extraction",
-      "asset_id": "QA-e82ae6937efea9af",
-      "raw_id": "RAW-e76b00dde5ab145d",
-      "source_ref": "SA-1c6c1c1b67c7ca41",
-      "source_hash": "015802c75f632d43",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
-      "proposal": {
-        "claims": []
-      },
-      "evidence": [],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "failed",
-          "detail": "missing_source_evidence"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "missing_claim_proposal"
-        }
-      ],
-      "generated_at": "2026-07-18T01:28:57.989Z"
-    },
-    {
-      "candidate_id": "MAC-7c3b99999890ac07",
-      "task_type": "claim_extraction",
-      "asset_id": "QA-fe78ad98967af384",
-      "raw_id": "RAW-a0d30de6ed67dc87",
-      "source_ref": "SA-54c80db80a276886",
-      "source_hash": "7cb66fbf5c8ebd69",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
-      "proposal": {
-        "claims": []
-      },
-      "evidence": [],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "failed",
-          "detail": "missing_source_evidence"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "missing_claim_proposal"
-        }
-      ],
-      "generated_at": "2026-07-18T01:28:58.303Z"
-    },
-    {
-      "candidate_id": "MAC-aa963812f7850082",
+      "candidate_id": "MAC-3b6418a4c198c2ec",
       "task_type": "entity_resolution",
       "asset_id": "EN-46a4eebd20d881ec",
       "raw_id": "RAW-926f5dbbcc5f0978",
@@ -327,19 +170,19 @@
       "source_hash": "f18de69b3fe5a70b",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
       "proposal": {
-        "decision": "same_entity",
+        "decision": "distinct_entity",
         "canonical_name": "Cursor",
-        "rationale": "The entity candidate 'Cursor' matches the organization described in the source text as the developer and publisher of the Composer 2.5 model.",
+        "rationale": "The candidate 'Cursor' is the developer of Composer 2.5, while the verified alternatives (Anthropic, Moonshot AI, OpenAI) are separate organizations mentioned as competitors or the source of the base model. The quote confirms Cursor built its model on Moonshot's Kimi K2.5 and compares its pricing to Anthropic and OpenAI, establishing they are distinct entities.",
         "candidate_name": "Cursor"
       },
       "evidence": [
         {
-          "start": 534,
-          "end": 615,
-          "quote": "Cursor has shipped Composer 2.5, a major upgrade to its in-house AI coding model."
+          "start": 617,
+          "end": 767,
+          "quote": "It builds on the open-source  Kimi K2.5 checkpoint from Moonshot  and was trained on 25 times more synthetic tasks than its predecessor,  Composer 2 ."
         }
       ],
       "gate_results": [
@@ -355,8 +198,8 @@
         },
         {
           "gate": "protected_facts",
-          "status": "failed",
-          "detail": "unsupported_numeric_fact:2.5m"
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
         },
         {
           "gate": "task_contract",
@@ -364,18 +207,24 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-07-18T01:28:59.712Z"
+      "generated_at": "2026-07-18T04:01:23.669Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "codex-data-review",
+        "reviewed_at": "2026-07-18T04:19:04.455Z",
+        "note": "queue-closeout:reviewed_as_distinct_entity"
+      }
     },
     {
-      "candidate_id": "MAC-b199c1a864949c97",
+      "candidate_id": "MAC-55e929745d312b21",
       "task_type": "claim_extraction",
-      "asset_id": "QA-659d385d919cabfa",
-      "raw_id": "RAW-bf76060dffa99577",
-      "source_ref": "SA-1f42a00ef61b5c54",
-      "source_hash": "6171400901c2b1ad",
+      "asset_id": "QA-9c8ecea5f66c8fd3",
+      "raw_id": "RAW-bf5a81a96e8812b8",
+      "source_ref": "SA-ce414aea0f88800b",
+      "source_hash": "52267fca12ede487",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
+      "prompt_version": "model-assist-2026-07-18.2",
       "status": "rejected",
       "proposal": {
         "claims": []
@@ -403,10 +252,174 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-07-18T01:28:56.604Z"
+      "generated_at": "2026-07-18T04:01:20.452Z"
     },
     {
-      "candidate_id": "MAC-ba0d1764710bdeac",
+      "candidate_id": "MAC-a727d58da1b24bd0",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-e82ae6937efea9af",
+      "raw_id": "RAW-e76b00dde5ab145d",
+      "source_ref": "SA-1c6c1c1b67c7ca41",
+      "source_hash": "015802c75f632d43",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "missing_claim_proposal"
+        }
+      ],
+      "generated_at": "2026-07-18T04:01:21.352Z"
+    },
+    {
+      "candidate_id": "MAC-a771bb32918651e4",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-9139e58df9c5503b",
+      "raw_id": "RAW-c5a75740a9807c7e",
+      "source_ref": "SA-9df74f16913902cd",
+      "source_hash": "ab497dba94545b1a",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "missing_claim_proposal"
+        }
+      ],
+      "generated_at": "2026-07-18T04:01:19.189Z"
+    },
+    {
+      "candidate_id": "MAC-aac1d34db1e3ccba",
+      "task_type": "qa_repair",
+      "asset_id": "QA-a4965e57145b1de5",
+      "raw_id": "RAW-dab1dba632328b4d",
+      "source_ref": "SA-f3fb912f559c5b6e",
+      "source_hash": "aef80be4b93a5da7",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "action": "recollect_original",
+        "reason": "The source describes a strategic partnership between two companies for 3D content creation, which is not an AI industry event as defined by the required event types.",
+        "claims": []
+      },
+      "evidence": [
+        {
+          "start": 327,
+          "end": 352,
+          "quote": "群核科技宣布与 影石创新 正式牵手，达成战略合作。"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "failed",
+          "detail": "unsupported_numeric_fact:3"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T04:01:25.902Z"
+    },
+    {
+      "candidate_id": "MAC-b36ca6a0f89d1837",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-fe78ad98967af384",
+      "raw_id": "RAW-a0d30de6ed67dc87",
+      "source_ref": "SA-54c80db80a276886",
+      "source_hash": "7cb66fbf5c8ebd69",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "missing_claim_proposal"
+        }
+      ],
+      "generated_at": "2026-07-18T04:01:21.782Z"
+    },
+    {
+      "candidate_id": "MAC-b77f780dec844e8a",
       "task_type": "claim_extraction",
       "asset_id": "QA-f31c7cb5876b9b1f",
       "raw_id": "RAW-103efd963617ad27",
@@ -414,7 +427,7 @@
       "source_hash": "bf59adcdda6d3a7d",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
+      "prompt_version": "model-assist-2026-07-18.2",
       "status": "rejected",
       "proposal": {
         "claims": []
@@ -442,56 +455,34 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-07-18T01:28:57.956Z"
+      "generated_at": "2026-07-18T04:01:21.293Z"
     },
     {
-      "candidate_id": "MAC-bae8015de9eee6bb",
+      "candidate_id": "MAC-be236a111b0794ec",
       "task_type": "claim_extraction",
-      "asset_id": "QA-53d245ac2c860441",
-      "raw_id": "RAW-8d9bac359c9482d4",
-      "source_ref": "SA-1dce453b63595f49",
-      "source_hash": "a61d24268fb26131",
+      "asset_id": "QA-de4f39b99a531f48",
+      "raw_id": "RAW-a5419d3c49a8305e",
+      "source_ref": "SA-8cab00f261e8f519",
+      "source_hash": "1e305f4d4607140f",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
       "proposal": {
         "claims": [
           {
-            "event_type": "commercial",
-            "subject": "长城魏牌 V9X",
-            "object": "34.98 万元起",
+            "event_type": "model_release",
+            "subject": "DeepSeek",
+            "object": "DeepSeek-V4 预览版本",
             "evidence_index": 0
-          },
-          {
-            "event_type": "commercial",
-            "subject": "魏牌 V9X",
-            "object": "HEV（油电混动版本）和 EV（纯电动版本）",
-            "evidence_index": 1
-          },
-          {
-            "event_type": "hardware",
-            "subject": "魏牌 V9X",
-            "object": "超级 Hi4 混动技术架构",
-            "evidence_index": 2
           }
         ]
       },
       "evidence": [
         {
-          "start": 329,
-          "end": 372,
-          "quote": "长城汽车旗下魏牌 V9X 现已上市，新车共推出 3 款车型，售价 34.98 万元起。"
-        },
-        {
-          "start": 394,
-          "end": 439,
-          "quote": "在今年晚些时候魏牌 V9X 还会进一步推出 HEV（油电混动版本）和 EV（纯电动版本）。"
-        },
-        {
-          "start": 998,
-          "end": 1067,
-          "quote": "新车搭载“超级 Hi4”混动技术架构，整合了 2.0T 涡轮增压发动机、4 挡混动专用变速箱、800V 高压电气架构及 6C 超快充技术。"
+          "start": 19,
+          "end": 80,
+          "quote": "DeepSeek-V4 预览版本发布，具备世界顶级推理性能，Agent 能力大幅提高，已在网页端、APP 和 API 上线"
         }
       ],
       "gate_results": [
@@ -512,62 +503,27 @@
         },
         {
           "gate": "task_contract",
-          "status": "failed",
-          "detail": "unsupported_claim_event_type:0, unsupported_claim_event_type:1, unsupported_claim_event_type:2"
+          "status": "passed",
+          "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-07-18T01:28:58.634Z"
+      "generated_at": "2026-07-18T04:01:20.972Z"
     },
     {
-      "candidate_id": "MAC-f3e961d4d8fe56e7",
+      "candidate_id": "MAC-e3e4a1ed5c4cfa3a",
       "task_type": "claim_extraction",
-      "asset_id": "QA-249da606627ac147",
-      "raw_id": "RAW-54a302866cf836ce",
-      "source_ref": "SA-46031d5bba06a67d",
-      "source_hash": "306038b5fcb1b60c",
+      "asset_id": "QA-659d385d919cabfa",
+      "raw_id": "RAW-bf76060dffa99577",
+      "source_ref": "SA-1f42a00ef61b5c54",
+      "source_hash": "6171400901c2b1ad",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
+      "prompt_version": "model-assist-2026-07-18.2",
       "status": "rejected",
       "proposal": {
-        "claims": [
-          {
-            "event_type": "research",
-            "subject": "三星",
-            "object": "Galaxy Watch 6 PPG传感器结合AI算法可实时分析心率变异性并提前预警血管迷走性晕厥",
-            "evidence_index": 0
-          },
-          {
-            "event_type": "commercial",
-            "subject": "三星",
-            "object": "2025年推出定制化跑步教练功能",
-            "evidence_index": 1
-          },
-          {
-            "event_type": "commercial",
-            "subject": "三星",
-            "object": "计划加强心电图与不规则心律提醒等能力",
-            "evidence_index": 2
-          }
-        ]
+        "claims": []
       },
-      "evidence": [
-        {
-          "start": 853,
-          "end": 925,
-          "quote": "三星还公布研究称，Galaxy Watch 6 的 PPG 传感器结合 AI 算法，可实时分析心率变异性， 提前预警血管迷走性晕厥（VVS） 。"
-        },
-        {
-          "start": 737,
-          "end": 797,
-          "quote": "三星在 2025 年推出定制化跑步教练，通过 12 分钟跑步测试，把用户划分为 1 到 10 级，并提供个性化训练计划。"
-        },
-        {
-          "start": 803,
-          "end": 852,
-          "quote": "三星健康还围绕睡眠、运动、饮食和心理健康 4 大支柱扩展，并准备加强心电图与不规则心律提醒等能力。"
-        }
-      ],
+      "evidence": [],
       "gate_results": [
         {
           "gate": "source_hash",
@@ -576,8 +532,8 @@
         },
         {
           "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
+          "status": "failed",
+          "detail": "missing_source_evidence"
         },
         {
           "gate": "protected_facts",
@@ -587,10 +543,10 @@
         {
           "gate": "task_contract",
           "status": "failed",
-          "detail": "unsupported_claim_event_type:0, unsupported_claim_event_type:1, unsupported_claim_event_type:2"
+          "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-07-18T01:28:58.677Z"
+      "generated_at": "2026-07-18T04:01:18.563Z"
     }
   ]
 }

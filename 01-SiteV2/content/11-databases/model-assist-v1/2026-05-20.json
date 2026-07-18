@@ -1,596 +1,12 @@
 {
   "schema_version": "MODEL-ASSIST-V1.0",
-  "generated_at": "2026-07-18T01:56:32.976Z",
+  "generated_at": "2026-07-18T04:25:13.753Z",
   "data_date": "2026-05-20",
-  "prompt_version": "model-assist-2026-07-18.1",
+  "prompt_version": "model-assist-2026-07-18.2",
   "source_count": 81,
   "candidates": [
     {
-      "candidate_id": "MAC-12abd2967568e8f3",
-      "task_type": "claim_extraction",
-      "asset_id": "QA-56f4c1b5b318733f",
-      "raw_id": "RAW-c4d95ce3f7cb0bed",
-      "source_ref": "SA-245be58b2b6f74d9",
-      "source_hash": "cdf2027e62748839",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
-      "proposal": {
-        "claims": [
-          {
-            "event_type": "funding",
-            "subject": "Lio",
-            "object": "$30 million Series A funding round",
-            "evidence_index": 0
-          },
-          {
-            "event_type": "funding",
-            "subject": "Andreessen Horowitz",
-            "object": "led Lio's $30 million Series A funding round",
-            "evidence_index": 1
-          },
-          {
-            "event_type": "people",
-            "subject": "Jared Petras",
-            "object": "Senior Director of Global Procurement Digital Transformation at Walmart",
-            "evidence_index": 2
-          }
-        ]
-      },
-      "evidence": [
-        {
-          "start": 231,
-          "end": 491,
-          "quote": "Lio (formerly known as askLio), the company building an agentic AI platform for enterprise procurement, today announced a $30 million Series A funding round led by Andreessen Horowitz (a16z), with participation from SV Angels, Harry Stebbings and Y Combinator."
-        },
-        {
-          "start": 351,
-          "end": 421,
-          "quote": "a $30 million Series A funding round led by Andreessen Horowitz (a16z)"
-        },
-        {
-          "start": 4504,
-          "end": 4595,
-          "quote": "said Jared Petras, Senior Director of Global Procurement Digital Transformation at Walmart."
-        }
-      ],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "unsupported_claim_event_type:2"
-        }
-      ],
-      "generated_at": "2026-07-18T01:29:01.353Z"
-    },
-    {
-      "candidate_id": "MAC-2d19509df7801a82",
-      "task_type": "entity_resolution",
-      "asset_id": "EN-de5a1adf4fedcce1",
-      "raw_id": "RAW-7d4d764ee3f4e2ce",
-      "source_ref": "SA-86a9d0df93d46c9a",
-      "source_hash": "58dd30accdf5060e",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "requires_review",
-      "proposal": {
-        "decision": "publisher_of",
-        "canonical_name": "Anthropic",
-        "rationale": "The source is a press release published on Anthropic's website announcing a partnership with Snowflake. Anthropic is the publisher of the content about Snowflake.",
-        "candidate_name": "Snowflake"
-      },
-      "evidence": [
-        {
-          "start": 181,
-          "end": 268,
-          "quote": "Today, we announce a significant expansion of our strategic partnership with Snowflake."
-        }
-      ],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "passed",
-          "detail": "task contract passed"
-        }
-      ],
-      "generated_at": "2026-07-18T01:29:02.888Z"
-    },
-    {
-      "candidate_id": "MAC-37b670036678f5dd",
-      "task_type": "entity_resolution",
-      "asset_id": "EN-f5cfcb570b7edac2",
-      "raw_id": "RAW-5e8a1cd3d0492b66",
-      "source_ref": "SA-25066f1830956af8",
-      "source_hash": "ed9ee46cde0da7e9",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "requires_review",
-      "proposal": {
-        "decision": "same_entity",
-        "canonical_name": "Nexus",
-        "rationale": "The ENTITY_CANDIDATE canonical_name 'Nexus' matches the company name used throughout the SOURCE_TEXT, which describes Nexus as an agentic AI platform that raised a $4.3M seed round.",
-        "candidate_name": "Nexus"
-      },
-      "evidence": [
-        {
-          "start": 362,
-          "end": 493,
-          "quote": "Nexus , an agentic AI platform enabling enterprises to deploy autonomous agents, today announced a $4.3 million seed funding round."
-        }
-      ],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "passed",
-          "detail": "task contract passed"
-        }
-      ],
-      "generated_at": "2026-07-18T01:29:04.262Z"
-    },
-    {
-      "candidate_id": "MAC-47d57e438a1ab056",
-      "task_type": "entity_resolution",
-      "asset_id": "EN-61cce404a45c3545",
-      "raw_id": "RAW-931521c80bd6a2a0",
-      "source_ref": "SA-cc9fcc2215d2d74f",
-      "source_hash": "783dffa55d9ae219",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "requires_review",
-      "proposal": {
-        "decision": "same_entity",
-        "canonical_name": "Veltris",
-        "rationale": "The ENTITY_CANDIDATE canonical_name 'Veltris' matches the organization described in SOURCE_TEXT as the provider of the press release and the creator of VeltrisOne.",
-        "candidate_name": "Veltris"
-      },
-      "evidence": [
-        {
-          "start": 262,
-          "end": 458,
-          "quote": "Veltris , an AI-first digital product engineering services firm recognized by both Constellation Research and HFS Research for its Vertical AI leadership, today announced the launch of VeltrisOne™"
-        }
-      ],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "passed",
-          "detail": "task contract passed"
-        }
-      ],
-      "generated_at": "2026-07-18T01:29:01.735Z"
-    },
-    {
-      "candidate_id": "MAC-5bd2307c6e7a26ab",
-      "task_type": "entity_resolution",
-      "asset_id": "EN-ef2bee7868007cd4",
-      "raw_id": "RAW-ed9f63ccee13b997",
-      "source_ref": "SA-a8b3650e5c9b07c6",
-      "source_hash": "0da481ecb7cee620",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "requires_review",
-      "proposal": {
-        "decision": "same_entity",
-        "canonical_name": "Lio",
-        "rationale": "The entity candidate 'Lio' matches the organization described in the source text. The source refers to 'Lio (formerly known as askLio)' and 'Lio Technologies GmbH' as the news provider, confirming they are the same entity.",
-        "candidate_name": "Lio"
-      },
-      "evidence": [
-        {
-          "start": 557,
-          "end": 659,
-          "quote": "Lio (formerly known as askLio), the company building an agentic AI platform for enterprise procurement"
-        }
-      ],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "passed",
-          "detail": "task contract passed"
-        }
-      ],
-      "generated_at": "2026-07-18T01:29:03.872Z"
-    },
-    {
-      "candidate_id": "MAC-79638e46ed77a650",
-      "task_type": "claim_extraction",
-      "asset_id": "QA-eab6ea17f0acc2ae",
-      "raw_id": "RAW-c645bb125cf28da8",
-      "source_ref": "SA-53b2f17a7ced84d4",
-      "source_hash": "167af60138c49fcd",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
-      "proposal": {
-        "claims": [
-          {
-            "event_type": "commercial",
-            "subject": "Goldman Sachs",
-            "object": "Anthropic",
-            "evidence_index": 0
-          },
-          {
-            "event_type": "commercial",
-            "subject": "Goldman Sachs",
-            "object": "AI agents for trade and transaction accounting, client due diligence and onboarding",
-            "evidence_index": 1
-          },
-          {
-            "event_type": "planned",
-            "subject": "Goldman Sachs",
-            "object": "launch AI agents",
-            "evidence_index": 2
-          }
-        ]
-      },
-      "evidence": [
-        {
-          "start": 127,
-          "end": 295,
-          "quote": "Goldman Sachs (GS.N), opens new tab is working with technology startup Anthropic to develop AI-powered agents aimed at automating a widening range of internal functions"
-        },
-        {
-          "start": 373,
-          "end": 615,
-          "quote": "The Wall Street bank has spent the past six months collaborating with Anthropic engineers embedded within its teams to build autonomous agents for tasks including trade and transaction accounting as well as client due diligence and onboarding"
-        },
-        {
-          "start": 879,
-          "end": 974,
-          "quote": "He told CNBC that the bank plans to launch the agents soon, without giving a specific timeline."
-        }
-      ],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "unsupported_claim_event_type:0, unsupported_claim_event_type:1, unsupported_claim_event_type:2"
-        }
-      ],
-      "generated_at": "2026-07-18T01:29:02.304Z"
-    },
-    {
-      "candidate_id": "MAC-812b5e78a26e1cfa",
-      "task_type": "entity_resolution",
-      "asset_id": "EN-6f30fa79d4bd8a3e",
-      "raw_id": "RAW-ab76651ef4df1970",
-      "source_ref": "SA-0f691fb7db187777",
-      "source_hash": "5077fe635763dd6b",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "requires_review",
-      "proposal": {
-        "decision": "publisher_of",
-        "canonical_name": "Salesforce",
-        "rationale": "The source is a press release published on the Salesforce website (salesforce.com) announcing a partnership and deployment involving NHS Shared Business Services. Salesforce is the entity publishing content about NHS Shared Business Services.",
-        "candidate_name": "NHS Shared Business Services"
-      },
-      "evidence": [
-        {
-          "start": 326,
-          "end": 447,
-          "quote": "Working with Salesforce, NHS Shared Business Services (NHS SBS) is transforming the experience of NHS staff and suppliers"
-        }
-      ],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "passed",
-          "detail": "task contract passed"
-        }
-      ],
-      "generated_at": "2026-07-18T01:29:02.565Z"
-    },
-    {
-      "candidate_id": "MAC-843e881a1938935f",
-      "task_type": "entity_resolution",
-      "asset_id": "EN-eafe895eb8119e6e",
-      "raw_id": "RAW-54ff93524b8f4538",
-      "source_ref": "SA-12a5e509298d1142",
-      "source_hash": "77f2d12f0d4f9342",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "requires_review",
-      "proposal": {
-        "decision": "same_entity",
-        "canonical_name": "Trace",
-        "rationale": "The ENTITY_CANDIDATE canonical_name 'Trace' matches the company name 'Trace' in the SOURCE_TEXT title and body, which is described as raising $3M to solve AI agent adoption in enterprise.",
-        "candidate_name": "Trace"
-      },
-      "evidence": [
-        {
-          "start": 0,
-          "end": 69,
-          "quote": "Trace raises $3M to solve the AI agent adoption problem in enterprise"
-        }
-      ],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "passed",
-          "detail": "task contract passed"
-        }
-      ],
-      "generated_at": "2026-07-18T01:29:03.300Z"
-    },
-    {
-      "candidate_id": "MAC-9ab67c71c38ca0e5",
-      "task_type": "claim_extraction",
-      "asset_id": "QA-b7cecac488438aff",
-      "raw_id": "RAW-ffe797ffecf955f0",
-      "source_ref": "SA-b81ac3b9a0918a61",
-      "source_hash": "fe3eb5e4ab42b646",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
-      "proposal": {
-        "claims": [
-          {
-            "event_type": "funding",
-            "subject": "Anthropic",
-            "object": "more than $20 billion funding round",
-            "evidence_index": 0
-          },
-          {
-            "event_type": "funding",
-            "subject": "Anthropic",
-            "object": "$350 billion valuation",
-            "evidence_index": 1
-          },
-          {
-            "event_type": "commercial",
-            "subject": "Anthropic",
-            "object": "$1.8 billion AI cloud deal with Akamai",
-            "evidence_index": 2
-          }
-        ]
-      },
-      "evidence": [
-        {
-          "start": 130,
-          "end": 281,
-          "quote": "AI startup Anthropic is ironing out the final details on a funding round likely to raise more than $20 billion and slated to close as soon as next week"
-        },
-        {
-          "start": 406,
-          "end": 484,
-          "quote": "now on track to raise more than double that amount at a $350 billion valuation"
-        },
-        {
-          "start": 560,
-          "end": 614,
-          "quote": "Anthropic signs $1.8 billion AI cloud deal with Akamai"
-        }
-      ],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "unsupported_claim_event_type:2"
-        }
-      ],
-      "generated_at": "2026-07-18T01:29:01.188Z"
-    },
-    {
-      "candidate_id": "MAC-9baf15ef066dbf4e",
-      "task_type": "claim_extraction",
-      "asset_id": "QA-b93186f420e24b74",
-      "raw_id": "RAW-d5dcab9fe4426cd8",
-      "source_ref": "SA-3f9d9e61228911dd",
-      "source_hash": "31564820d0ba245a",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
-      "proposal": {
-        "claims": [
-          {
-            "event_type": "funding",
-            "subject": "Parloa",
-            "object": "$350 million Series D round",
-            "evidence_index": 0
-          },
-          {
-            "event_type": "funding",
-            "subject": "Parloa",
-            "object": "$120 million Series C round",
-            "evidence_index": 1
-          },
-          {
-            "event_type": "expansion",
-            "subject": "Parloa",
-            "object": "new offices in San Francisco and Madrid",
-            "evidence_index": 2
-          }
-        ]
-      },
-      "evidence": [
-        {
-          "start": 19,
-          "end": 212,
-          "quote": "German startup Parloa has raised $350 million in a late-stage round that tripled the valuation of the artificial intelligence-driven customer service platform to $3 billion in less than a year."
-        },
-        {
-          "start": 399,
-          "end": 546,
-          "quote": "It takes the startup's total fundraise to more than $560 million, including a $120 million Series C in July 2025 where it was valued at $1 billion."
-        },
-        {
-          "start": 1220,
-          "end": 1348,
-          "quote": "Parloa plans to use the fresh funds to expand in Europe and the U.S., including opening new offices in San Francisco and Madrid."
-        }
-      ],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "unsupported_claim_event_type:2"
-        }
-      ],
-      "generated_at": "2026-07-18T01:29:01.645Z"
-    },
-    {
-      "candidate_id": "MAC-e3d1decd506b8cf3",
+      "candidate_id": "MAC-303d4c6d7d8a95e1",
       "task_type": "fde_enrichment",
       "asset_id": "FDE-27308b0a6cb2321a",
       "raw_id": "RAW-7d4d764ee3f4e2ce",
@@ -598,7 +14,7 @@
       "source_hash": "58dd30accdf5060e",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
+      "prompt_version": "model-assist-2026-07-18.2",
       "status": "rejected",
       "proposal": {
         "fields": [
@@ -725,7 +141,619 @@
           "detail": "invalid_fde_field_type:0, invalid_fde_field_type:7, invalid_fde_field_type:8"
         }
       ],
-      "generated_at": "2026-07-18T01:29:08.395Z"
+      "generated_at": "2026-07-18T04:01:33.174Z"
+    },
+    {
+      "candidate_id": "MAC-4a7f365778c18cc0",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-de5a1adf4fedcce1",
+      "raw_id": "RAW-7d4d764ee3f4e2ce",
+      "source_ref": "SA-86a9d0df93d46c9a",
+      "source_hash": "58dd30accdf5060e",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "Snowflake",
+        "rationale": "The source text describes a strategic partnership between Snowflake and Anthropic, including a joint go-to-market initiative and product integrations. A partnership or customer-vendor relationship does not establish that Snowflake is the same entity as Anthropic or any other verified alternative. The candidate canonical name 'Snowflake' does not match any verified alternative name or alias.",
+        "candidate_name": "Snowflake"
+      },
+      "evidence": [
+        {
+          "start": 181,
+          "end": 268,
+          "quote": "Today, we announce a significant expansion of our strategic partnership with Snowflake."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T04:01:28.433Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "codex-data-review",
+        "reviewed_at": "2026-07-18T04:19:04.455Z",
+        "note": "queue-closeout:reviewed_as_distinct_entity"
+      }
+    },
+    {
+      "candidate_id": "MAC-532d6386e85c3732",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-f5cfcb570b7edac2",
+      "raw_id": "RAW-5e8a1cd3d0492b66",
+      "source_ref": "SA-25066f1830956af8",
+      "source_hash": "ed9ee46cde0da7e9",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "Nexus",
+        "rationale": "The candidate 'Nexus' refers to an enterprise AI platform company founded in 2024, while the only verified alternative 'Rime' is a different entity. The quote confirms Nexus is a distinct organization, not matching any verified alternative.",
+        "candidate_name": "Nexus"
+      },
+      "evidence": [
+        {
+          "start": 707,
+          "end": 898,
+          "quote": "Nexus, a Y Combinator-backed company founded in 2024 by former McKinsey consultant Assem Chammah and AI engineer Shady Al Shoha, to help businesses move from AI experimentation to deployment."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "failed",
+          "detail": "unsupported_numeric_fact:2024"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T04:01:29.311Z"
+    },
+    {
+      "candidate_id": "MAC-947dfff8dfe5c266",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-ef2bee7868007cd4",
+      "raw_id": "RAW-ed9f63ccee13b997",
+      "source_ref": "SA-a8b3650e5c9b07c6",
+      "source_hash": "0da481ecb7cee620",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "Lio",
+        "rationale": "The candidate 'Lio' is a procurement AI platform company (Lio Technologies GmbH), while the verified alternative 'Intel' is a semiconductor chip manufacturer. The source text describes Lio's funding, product, and customers, with no mention of Intel or any relationship that would make them the same entity.",
+        "candidate_name": "Lio"
+      },
+      "evidence": [
+        {
+          "start": 557,
+          "end": 747,
+          "quote": "Lio (formerly known as askLio), the company building an agentic AI platform for enterprise procurement, today announced a $30 million Series A funding round led by Andreessen Horowitz (a16z)"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T04:01:29.132Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "codex-data-review",
+        "reviewed_at": "2026-07-18T04:19:04.455Z",
+        "note": "queue-closeout:reviewed_as_distinct_entity"
+      }
+    },
+    {
+      "candidate_id": "MAC-a8663737947d9c02",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-56f4c1b5b318733f",
+      "raw_id": "RAW-c4d95ce3f7cb0bed",
+      "source_ref": "SA-245be58b2b6f74d9",
+      "source_hash": "cdf2027e62748839",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Lio Technologies",
+            "object": "$30 million Series A funding round",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "capital_investment",
+            "subject": "Andreessen Horowitz",
+            "object": "Lio $30 million Series A funding round",
+            "evidence_index": 1
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 147,
+          "end": 230,
+          "quote": "Lio Technologies Raises $30M Series A to Bring Agentic AI to Enterprise Procurement"
+        },
+        {
+          "start": 351,
+          "end": 491,
+          "quote": "a $30 million Series A funding round led by Andreessen Horowitz (a16z), with participation from SV Angels, Harry Stebbings and Y Combinator."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T04:01:25.084Z"
+    },
+    {
+      "candidate_id": "MAC-b004a15c041dffd6",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-61cce404a45c3545",
+      "raw_id": "RAW-931521c80bd6a2a0",
+      "source_ref": "SA-cc9fcc2215d2d74f",
+      "source_hash": "783dffa55d9ae219",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "decision": "same_entity",
+        "canonical_name": "Veltris",
+        "rationale": "The candidate canonical_name 'Veltris' exactly matches the entity described in the source text, and the quote confirms the candidate mention refers to this organization.",
+        "candidate_name": "Veltris"
+      },
+      "evidence": [
+        {
+          "start": 262,
+          "end": 458,
+          "quote": "Veltris , an AI-first digital product engineering services firm recognized by both Constellation Research and HFS Research for its Vertical AI leadership, today announced the launch of VeltrisOne™"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "invalid_same_entity_target"
+        }
+      ],
+      "generated_at": "2026-07-18T04:01:26.151Z"
+    },
+    {
+      "candidate_id": "MAC-b30bc5a04f330127",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-eab6ea17f0acc2ae",
+      "raw_id": "RAW-c645bb125cf28da8",
+      "source_ref": "SA-53b2f17a7ced84d4",
+      "source_hash": "167af60138c49fcd",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "partnership",
+            "subject": "Goldman Sachs",
+            "object": "Anthropic",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "deployment",
+            "subject": "Goldman Sachs",
+            "object": "AI-powered agents based on Anthropic's Claude model",
+            "evidence_index": 1
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 127,
+          "end": 295,
+          "quote": "Goldman Sachs (GS.N), opens new tab is working with technology startup Anthropic to develop AI-powered agents aimed at automating a widening range of internal functions"
+        },
+        {
+          "start": 897,
+          "end": 937,
+          "quote": "the bank plans to launch the agents soon"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T04:01:26.471Z"
+    },
+    {
+      "candidate_id": "MAC-be86ee5e86eef8e5",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-b93186f420e24b74",
+      "raw_id": "RAW-d5dcab9fe4426cd8",
+      "source_ref": "SA-3f9d9e61228911dd",
+      "source_hash": "31564820d0ba245a",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Parloa",
+            "object": "$350 million Series D round",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "market_expansion",
+            "subject": "Parloa",
+            "object": "new offices in San Francisco and Madrid",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "financial_performance",
+            "subject": "Parloa",
+            "object": "annual recurring revenue surpassed $50 million",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 19,
+          "end": 212,
+          "quote": "German startup Parloa has raised $350 million in a late-stage round that tripled the valuation of the artificial intelligence-driven customer service platform to $3 billion in less than a year."
+        },
+        {
+          "start": 1220,
+          "end": 1348,
+          "quote": "Parloa plans to use the fresh funds to expand in Europe and the U.S., including opening new offices in San Francisco and Madrid."
+        },
+        {
+          "start": 780,
+          "end": 988,
+          "quote": "Parloa said its customers include Microsoft (MSFT.O), opens new tab, Accenture (ACN.N), opens new tab, KPMG and Booking.com (BKNG.O), opens new tab, and its annual recurring revenue has surpassed $50 million."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T04:01:25.833Z"
+    },
+    {
+      "candidate_id": "MAC-c5e435ff9722d430",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-ee04228c5c6d8b08",
+      "raw_id": "RAW-ca665673b32095c3",
+      "source_ref": "SA-a8a8058d17953974",
+      "source_hash": "011f1f263a22dd8d",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "decision": "same_entity",
+        "canonical_name": "Wonderful",
+        "rationale": "The candidate canonical_name 'Wonderful' matches the entity described in the source text, which is the enterprise AI agent platform raising $150M. The quote confirms the entity's identity and activities.",
+        "candidate_name": "Wonderful"
+      },
+      "evidence": [
+        {
+          "start": 456,
+          "end": 572,
+          "quote": "Wonderful , the enterprise AI agent platform, today announced it has raised $150 million in a Series B funding round"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "invalid_same_entity_target"
+        }
+      ],
+      "generated_at": "2026-07-18T04:01:28.339Z"
+    },
+    {
+      "candidate_id": "MAC-ccfbe6d0a2f320ed",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-eafe895eb8119e6e",
+      "raw_id": "RAW-54ff93524b8f4538",
+      "source_ref": "SA-12a5e509298d1142",
+      "source_hash": "77f2d12f0d4f9342",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "Trace",
+        "rationale": "No VERIFIED_ALTERNATIVES were provided, so there is no basis to confirm whether the candidate entity matches an existing verified entity. The source text mentions 'Trace' as a company raising funding, but without alternatives, identity cannot be resolved.",
+        "candidate_name": "Trace"
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 69,
+          "quote": "Trace raises $3M to solve the AI agent adoption problem in enterprise"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T04:01:28.601Z",
+      "review": {
+        "decision": "reject",
+        "reviewer": "codex-data-review",
+        "reviewed_at": "2026-07-18T04:19:04.455Z",
+        "note": "queue-closeout:insufficient_evidence_for_entity_resolution"
+      }
+    },
+    {
+      "candidate_id": "MAC-e5f5f015c83ac892",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-b7cecac488438aff",
+      "raw_id": "RAW-ffe797ffecf955f0",
+      "source_ref": "SA-b81ac3b9a0918a61",
+      "source_hash": "fe3eb5e4ab42b646",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Anthropic",
+            "object": "more than $20 billion funding round",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 130,
+          "end": 281,
+          "quote": "AI startup Anthropic is ironing out the final details on a funding round likely to raise more than $20 billion and slated to close as soon as next week"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T04:01:23.886Z"
+    },
+    {
+      "candidate_id": "MAC-f9bd18d480564950",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-6f30fa79d4bd8a3e",
+      "raw_id": "RAW-ab76651ef4df1970",
+      "source_ref": "SA-0f691fb7db187777",
+      "source_hash": "5077fe635763dd6b",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "NHS Shared Business Services",
+        "rationale": "The source text describes a strategic partnership where NHS Shared Business Services works with Salesforce to deploy a platform. This is a publisher_of or component_supplier relationship, not evidence that the two entities are the same. The quote confirms NHS SBS is a distinct organization collaborating with Salesforce.",
+        "candidate_name": "NHS Shared Business Services"
+      },
+      "evidence": [
+        {
+          "start": 1225,
+          "end": 1437,
+          "quote": "Through its strategic partnership with Salesforce, the world’s #1 AI CRM, NHS SBS is now combining its shared services expertise, processing model and investment with Salesforce’s AI, data and cloud capabilities."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T04:01:26.784Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "codex-data-review",
+        "reviewed_at": "2026-07-18T04:19:04.455Z",
+        "note": "queue-closeout:reviewed_as_distinct_entity"
+      }
     },
     {
       "candidate_id": "MAC-fd7d653ad27f712a",
@@ -777,54 +805,6 @@
         }
       ],
       "generated_at": "2026-07-18T01:29:07.892Z"
-    },
-    {
-      "candidate_id": "MAC-ff9bba3266a19ae4",
-      "task_type": "entity_resolution",
-      "asset_id": "EN-ee04228c5c6d8b08",
-      "raw_id": "RAW-ca665673b32095c3",
-      "source_ref": "SA-a8a8058d17953974",
-      "source_hash": "011f1f263a22dd8d",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "requires_review",
-      "proposal": {
-        "decision": "same_entity",
-        "canonical_name": "Wonderful",
-        "rationale": "The ENTITY_CANDIDATE canonical_name 'Wonderful' matches the company described in the SOURCE_TEXT, which is an enterprise AI agent platform that raised a $150M Series B.",
-        "candidate_name": "Wonderful"
-      },
-      "evidence": [
-        {
-          "start": 456,
-          "end": 572,
-          "quote": "Wonderful , the enterprise AI agent platform, today announced it has raised $150 million in a Series B funding round"
-        }
-      ],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "passed",
-          "detail": "task contract passed"
-        }
-      ],
-      "generated_at": "2026-07-18T01:29:03.529Z"
     }
   ]
 }

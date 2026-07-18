@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"Didero lands $30M to put manufacturing p
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only
+title_zh: "Didero 获 3000 万美元融资，将制造业采购置于“智能体”自动驾驶模式"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Didero lands $30M to put manufacturing procurement on 'agentic' autopilot | TechCrunch

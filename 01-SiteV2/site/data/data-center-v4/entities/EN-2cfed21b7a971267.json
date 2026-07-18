@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T01:57:40.269Z",
-    "latestDataDate": "2026-07-17",
-    "currentDate": "2026-07-17",
-    "eventCount": 832,
-    "quarantinedEventCount": 60
+    "generatedAt": "2026-07-18T04:59:59.870Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 1250,
+    "quarantinedEventCount": 11
   },
   "entity": {
     "id": "EN-2cfed21b7a971267",
@@ -31,14 +31,15 @@
     "firstSeen": "2026-06-13",
     "lastSeen": "2026-06-14",
     "relationIds": [
-      "REL2-6099c03394d4a343"
+      "REL2-1d17242308e00408"
     ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
-        "EV-2cb9dbed2b2b6077"
+        "EV-2cb9dbed2b2b6077",
+        "EV-75002e9da530c90b"
       ],
       "hardware": [],
       "organizationPeople": [],
@@ -72,6 +73,30 @@
           "EN-62ce3c1a5a893a2c",
           "EN-2cfed21b7a971267"
         ]
+      },
+      {
+        "id": "EV-75002e9da530c90b",
+        "dataDate": "2026-06-13",
+        "date": "2026-06-12",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Kimi K2.7-Code：具有更高模型 token 效率的开源编码模型",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体"
+          }
+        ],
+        "entityIds": [
+          "EN-b5251b35f15bedc4",
+          "EN-5f286d0c0374c045",
+          "EN-1da3dd14ee41aa1a"
+        ]
       }
     ],
     "viewpoints": []
@@ -83,19 +108,24 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "月之暗面"
+        "Kimi"
       ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
+        "EV-5be48cce8dc4f3de",
+        "EV-0e4bddfd5c129618",
         "EV-fd21441fb6e143c3",
         "EV-0d5a32aca724d30e",
         "EV-1b03e5dff76a50a1",
         "EV-5caf7f83664b1a2c",
         "EV-2cb9dbed2b2b6077",
+        "EV-75002e9da530c90b",
+        "EV-77042592591657bf",
         "EV-6af31d42885e0361",
+        "EV-8e6f9c324aa0b2f3",
         "EV-e878e56967902718",
         "EV-e9a86c47da229331",
         "EV-773ffcc6e1df56fa",
@@ -104,44 +134,45 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-financial_services",
         "TX-technology-vision_language",
         "TX-technology-code_generation",
         "TX-use_case-software_development",
         "TX-technology-long_context",
-        "TX-industry-financial_services",
         "TX-technology-retrieval_augmented_generation",
+        "TX-technology-open_weights",
         "TX-technology-multimodal"
       ],
       "relatedEntityIds": [
+        "EN-76ac3e702b5ccaff",
+        "EN-607964040e4b62e0",
+        "EN-7df09a7717ef2feb",
         "EN-2cfed21b7a971267",
-        "EN-62ce3c1a5a893a2c",
-        "EN-23bc2a854bc0cfb0",
+        "EN-5f286d0c0374c045",
+        "EN-1da3dd14ee41aa1a",
         "EN-b57c95289680078c"
       ],
       "firstSeen": "2026-05-19",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-07-18"
     }
   ],
   "relationships": [
     {
-      "relationship_id": "REL2-6099c03394d4a343",
+      "relationship_id": "REL2-1d17242308e00408",
       "relationship_version": "RELATION-V2.0",
       "subject_ref": "EN-b5251b35f15bedc4",
       "subject_type": "entity",
       "predicate": "publishes",
       "object_ref": "EN-2cfed21b7a971267",
       "object_type": "entity",
-      "event_id": "EV-2cb9dbed2b2b6077",
+      "event_id": "EV-75002e9da530c90b",
       "claim_refs": [
-        "CL-fabe10d92e0fd9bf",
-        "CL-3baa89c0a5c4b8da",
-        "CL-876e0fc93c576154",
-        "CL-527d08ef88c8ca78"
+        "CL-05fc82f0b7a2de94"
       ],
       "source_refs": [
-        "SA-be99f27322d076ab"
+        "SA-53a4fe9300f4e477"
       ],
-      "data_date": "2026-06-14",
+      "data_date": "2026-06-13",
       "status": "verified"
     }
   ],

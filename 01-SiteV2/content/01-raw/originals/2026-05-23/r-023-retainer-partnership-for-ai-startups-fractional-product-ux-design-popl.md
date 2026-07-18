@@ -72,7 +72,7 @@ key_excerpts: [{"type":"company_action","text":"Get a fractional design lead emb
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
-title_zh: "Retainer 合作伙伴计划助力 AI 初创企业 | 兼职产品与用户体验设计 | Poplab"
+title_zh: "Retainer 合作伙伴计划助力 AI 初创企业 | 兼职产品与用户体验设计"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T01:57:40.269Z",
-    "latestDataDate": "2026-07-17",
-    "currentDate": "2026-07-17",
-    "eventCount": 832,
-    "quarantinedEventCount": 60
+    "generatedAt": "2026-07-18T04:59:59.870Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 1250,
+    "quarantinedEventCount": 11
   },
   "entity": {
     "id": "EN-e5b0bf1bf239d3ec",
@@ -20,15 +20,19 @@
     "datasetScopes": [
       "canonical"
     ],
-    "eventIds": [],
+    "eventIds": [
+      "EV-ad40755ca624afe7"
+    ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
-    "firstSeen": "",
-    "lastSeen": "",
+    "firstSeen": "2026-06-15",
+    "lastSeen": "2026-06-15",
     "relationIds": [],
     "groupedEventIds": {
-      "fundingAcquisition": [],
+      "fundingAcquisition": [
+        "EV-ad40755ca624afe7"
+      ],
       "deployments": [],
       "partnerships": [],
       "productsServices": [],
@@ -36,7 +40,38 @@
       "organizationPeople": [],
       "other": []
     },
-    "timeline": [],
+    "timeline": [
+      {
+        "id": "EV-ad40755ca624afe7",
+        "dataDate": "2026-06-15",
+        "date": "2026-06-15",
+        "eventType": "acquisition",
+        "eventTypeLabel": "并购",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "IBM完成对Confluent的收购，实时数据成为企业AI与智能体的引擎",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          },
+          {
+            "dimensionId": "deployment_model",
+            "id": "hybrid",
+            "dimensionName": "部署形态",
+            "name": "混合部署"
+          }
+        ],
+        "entityIds": [
+          "EN-e5b0bf1bf239d3ec",
+          "EN-916a98f0fa2a39af",
+          "EN-8f71c4871a160172"
+        ]
+      }
+    ],
     "viewpoints": []
   },
   "relatedEntities": [],

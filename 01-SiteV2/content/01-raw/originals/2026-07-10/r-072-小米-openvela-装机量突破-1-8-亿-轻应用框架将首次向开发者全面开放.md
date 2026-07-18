@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-072
 title: "小米 openvela 装机量突破 1.8 亿，轻应用框架将首次向开发者全面开放"
 title_zh: "小米 openvela 装机量突破 1.8 亿，轻应用框架将首次向开发者全面开放"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/974/671.htm"
 canonical_url: "https://ithome.com/0/974/671.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-10T02:00:00.725Z
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 小米 openvela 装机量突破 1.8 亿，轻应用框架将首次向开发者全面开放

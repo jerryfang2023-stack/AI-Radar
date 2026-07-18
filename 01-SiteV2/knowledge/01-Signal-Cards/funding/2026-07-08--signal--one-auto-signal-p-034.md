@@ -2,7 +2,7 @@
 id: SIG-20260708-A06
 type: signal_card
 signal_type: funding
-title: "One 筹集400万美元，为AI代理构建信任层"
+title: "One 获 400 万美元融资，为 AI 智能体构建信任层"
 date: 2026-07-08
 status: published
 source_title: "One raises $4M to build the trust layer for AI agents | One"
@@ -55,12 +55,12 @@ opportunity_signals:
 signal_owner: "One"
 
 frontend:
-  displayTitle: "One 筹集400万美元，为AI代理构建信任层"
+  displayTitle: "One 获 400 万美元融资，为 AI 智能体构建信任层"
   sourceLinks:
     - "https://www.withone.ai/blog/one-raises-4m-trust-layer-ai-agents"
 ---
 
-# One 筹集400万美元，为AI代理构建信任层
+# One 获 400 万美元融资，为 AI 智能体构建信任层
 
 ## 新闻事实
 

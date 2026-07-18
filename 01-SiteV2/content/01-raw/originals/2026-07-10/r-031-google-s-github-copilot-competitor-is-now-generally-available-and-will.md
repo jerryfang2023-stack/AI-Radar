@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-031
 title: "Google's GitHub Copilot competitor is now generally available and will soon use the Gemini model | TechCrunch"
-title_zh: "谷歌的GitHub Copilot竞争对手现已正式上市，并将很快使用Gemini模型| TechCrunch"
-title_translation_status: translated
-title_translation_method: mymemory_title_translation
+title_zh: "谷歌的 GitHub Copilot 竞品现已全面上市，并将很快采用 Gemini 模型"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://techcrunch.com/2023/12/13/duet-ai-for-developers-googles-github-copilot-competitor-is-now-generally-available-and-will-soon-use-the-gemini-model/"
 canonical_url: "https://techcrunch.com/2023/12/13/duet-ai-for-developers-googles-github-copilot-competitor-is-now-generally-available-and-will-soon-use-the-gemini-model"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-10T01:59:48.902Z
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Google's GitHub Copilot competitor is now generally available and will soon use the Gemini model | TechCrunch

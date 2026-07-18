@@ -72,7 +72,7 @@ key_excerpts: [{"type":"funding","text":"- General Catalyst leads $150M equity i
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
-title_zh: "Factorial获1.5亿美元D轮融资，估值达25亿美元，成为欧洲最具价值AI规模化企业之一"
+title_zh: "Factorial 完成 1.5 亿美元 D 轮融资，估值达 25 亿美元，成为欧洲最具价值的 AI 智能体规模化企业之一"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

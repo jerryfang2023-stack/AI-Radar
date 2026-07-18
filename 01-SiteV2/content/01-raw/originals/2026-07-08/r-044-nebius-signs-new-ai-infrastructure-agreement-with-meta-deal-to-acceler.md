@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-044
 title: "Nebius signs new AI infrastructure agreement with Meta; deal to accelerate growth of Nebius’s core business in AI cloud"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "Nebius 与 Meta 签署新 AI 基础设施协议；该交易将加速 Nebius 在 AI 云领域核心业务的增长"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://nebius.com/newsroom/nebius-signs-new-ai-infrastructure-agreement-with-meta"
 canonical_url: "https://nebius.com/newsroom/nebius-signs-new-ai-infrastructure-agreement-with-meta"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-08T04:39:25.761Z
 theme: ai-hardware-scenario-service-signal
 keyword_group: ai-hardware-scenario-service-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Nebius signs new AI infrastructure agreement with Meta; deal to accelerate growth of Nebius’s core business in AI cloud

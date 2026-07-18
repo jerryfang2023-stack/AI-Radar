@@ -168,6 +168,50 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-a4fa8902bc6f865c",
+    "raw_id": "RAW-8d9bac359c9482d4",
+    "claim_type": "product_release",
+    "subject": "长城汽车",
+    "predicate": "product_release",
+    "object": "魏牌 V9X",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-2368561c443f9137"
+    },
+    "source_span": {
+      "raw_id": "RAW-8d9bac359c9482d4",
+      "start": 329,
+      "end": 372
+    },
+    "source_quote": "长城汽车旗下魏牌 V9X 现已上市，新车共推出 3 款车型，售价 34.98 万元起。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-899d1e5167fcd160",
+    "raw_id": "RAW-8d9bac359c9482d4",
+    "claim_type": "product_release",
+    "subject": "魏牌 V9X",
+    "predicate": "product_release",
+    "object": "HEV（油电混动版本）和 EV（纯电动版本）",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-2368561c443f9137"
+    },
+    "source_span": {
+      "raw_id": "RAW-8d9bac359c9482d4",
+      "start": 394,
+      "end": 439
+    },
+    "source_quote": "在今年晚些时候魏牌 V9X 还会进一步推出 HEV（油电混动版本）和 EV（纯电动版本）。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-a137d5ae29a0bcb1",
     "raw_id": "RAW-2a90d1563c4539e6",
     "claim_type": "product_release",
@@ -249,6 +293,28 @@
     "source_quote": "应用搜索：点击「问吐司」，可以搜到别人发布的灵感，也可以通过描述需求，让 AI 帮找符合自己要求的应用",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-3a331ca18f30d084",
+    "raw_id": "RAW-a5419d3c49a8305e",
+    "claim_type": "model_release",
+    "subject": "DeepSeek",
+    "predicate": "model_release",
+    "object": "DeepSeek-V4 预览版本",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-be236a111b0794ec"
+    },
+    "source_span": {
+      "raw_id": "RAW-a5419d3c49a8305e",
+      "start": 19,
+      "end": 80
+    },
+    "source_quote": "DeepSeek-V4 预览版本发布，具备世界顶级推理性能，Agent 能力大幅提高，已在网页端、APP 和 API 上线",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   }
 ]

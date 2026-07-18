@@ -2,7 +2,7 @@
 id: SIG-20260623-A12
 type: signal_card
 signal_type: case
-title: "设计合作伙伴计划 - 构建AI代理治理 | APort"
+title: "设计合作伙伴计划 - 构建 AI 智能体治理"
 date: 2026-06-23
 status: published
 source_title: "Design Partner Program - Build AI Agent Governance | APort"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Design Partner Program"
 
 frontend:
-  displayTitle: "设计合作伙伴计划 - 构建AI代理治理 | APort"
+  displayTitle: "设计合作伙伴计划 - 构建 AI 智能体治理"
   sourceLinks:
     - "https://api.aport.io/pilots/"
 ---
 
-# 设计合作伙伴计划 - 构建AI代理治理 | APort
+# 设计合作伙伴计划 - 构建 AI 智能体治理
 
 ## 新闻事实
 

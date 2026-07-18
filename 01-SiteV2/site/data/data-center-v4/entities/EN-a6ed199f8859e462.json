@@ -1,0 +1,142 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-18T04:59:59.870Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 1250,
+    "quarantinedEventCount": 11
+  },
+  "entity": {
+    "id": "EN-a6ed199f8859e462",
+    "name": "Outcome-Based Pricing",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-78277c678f01e540"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-use_case-customer_service"
+    ],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-01",
+    "lastSeen": "2026-07-01",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-78277c678f01e540"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-78277c678f01e540",
+        "dataDate": "2026-07-01",
+        "date": "2026-07-01",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Intercom 为其 Fin AI 智能体推出基于结果的定价模式",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "id": "customer_service",
+            "dimensionName": "应用场景",
+            "name": "客户服务"
+          }
+        ],
+        "entityIds": [
+          "EN-c47b618e17c75f06",
+          "EN-1ec93c99d07feadd",
+          "EN-a6ed199f8859e462",
+          "EN-21d8ce5988925f81"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-use_case-customer_service",
+      "name": "客户服务",
+      "nodeType": "use_case",
+      "typeLabel": "应用场景",
+      "valueId": "customer_service",
+      "eventIds": [
+        "EV-64fb6d791e19d10a",
+        "EV-f020dd198aa2f952",
+        "EV-a9d0bb672c5ec0ab",
+        "EV-88f4ee8cd57bdf42",
+        "EV-b85139b8fba1a5c5",
+        "EV-3dd0912fae720df7",
+        "EV-e869f17214557633",
+        "EV-8abf5adc3e72fbb8",
+        "EV-3fb492fb45980541",
+        "EV-05a87b578967c83e",
+        "EV-78277c678f01e540",
+        "EV-11a8e196deb21300",
+        "EV-6364cfadff0d1d30",
+        "EV-94d9c8d5ac1e10de"
+      ],
+      "entityIds": [
+        "EN-b0532e1af75cc4ab",
+        "EN-dca6ec9510fc0176",
+        "EN-3ccbd9105a45d8fc",
+        "EN-8147e6fed86d42c1",
+        "EN-29e1a488361f12d3",
+        "EN-96eebba49dbbf422",
+        "EN-9fbf261b62c1d7c0",
+        "EN-28d0bd981118a907",
+        "EN-d3565d297d476f10",
+        "EN-3474e24464fc25a7",
+        "EN-7d3194f79e645c42",
+        "EN-88e2cce43eeadb36",
+        "EN-19e41212c0556603",
+        "EN-c47b618e17c75f06",
+        "EN-1ec93c99d07feadd",
+        "EN-a6ed199f8859e462",
+        "EN-21d8ce5988925f81",
+        "EN-34da56029403e6f7",
+        "EN-623fbff8d5179d4e",
+        "EN-fef851474e3c4311",
+        "EN-19018cddd8946526",
+        "EN-89e28a570dce8b18",
+        "EN-b70e8201c9feb94a",
+        "EN-3673c8b4dba7409e",
+        "EN-7b80ed96beed8c0a",
+        "EN-7d1507284a5757ca",
+        "EN-cbc62794911ff31b",
+        "EN-dba61afed18c85d6"
+      ],
+      "fdeIds": [
+        "FDE-4f2a8cb5ce476228",
+        "FDE-3e499215265a81d5",
+        "FDE-d08fed45110ab44b",
+        "FDE-3665b073634d4b9d"
+      ],
+      "hardwareIds": [],
+      "firstSeen": "2026-03-04",
+      "lastSeen": "2026-07-18"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}

@@ -2,7 +2,7 @@
 id: SIG-20260524-A03
 type: signal_card
 signal_type: product_service
-title: "使用Amazon Bedrock AgentCore构建商业智能AI代理 | 人工智能"
+title: "使用Amazon Bedrock AgentCore构建商业智能AI代理"
 date: 2026-05-24
 status: published
 asset_level: frontstage
@@ -58,7 +58,7 @@ signal_owner: "OPLOG"
 watch_reason: "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
 
 frontend:
-  displayTitle: "使用Amazon Bedrock AgentCore构建商业智能AI代理 | 人工智能"
+  displayTitle: "使用Amazon Bedrock AgentCore构建商业智能AI代理"
   eventLine: "OPLOG 发布新的 AI 能力，面向销售和收入团队流程。"
   whyWatch: "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"
   businessMeaning: "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
@@ -68,7 +68,7 @@ frontend:
     - "https://aws.amazon.com/blogs/machine-learning/build-ai-agents-for-business-intelligence-with-amazon-bedrock-agentcore/"
 ---
 
-# 使用Amazon Bedrock AgentCore构建商业智能AI代理 | 人工智能
+# 使用Amazon Bedrock AgentCore构建商业智能AI代理
 
 ## 信号底稿
 

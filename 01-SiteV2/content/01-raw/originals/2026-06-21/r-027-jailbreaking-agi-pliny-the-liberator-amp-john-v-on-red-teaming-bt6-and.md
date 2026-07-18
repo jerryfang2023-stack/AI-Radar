@@ -72,7 +72,7 @@ key_excerpts: [{"type":"supporting_context","text":"Note: this is Pliny and John
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
-title_zh: "⚡️越狱AGI：解放者普林尼与约翰·V谈红队测试、BT6与AI安全未来"
+title_zh: "⚡️突破AGI限制：Pliny the Liberator 与 John V 谈红队测试、BT6 及 AI 安全未来"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

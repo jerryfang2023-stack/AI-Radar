@@ -1,106 +1,25 @@
 {
   "schema_version": "MODEL-ASSIST-V1.0",
-  "generated_at": "2026-07-18T01:56:32.981Z",
+  "generated_at": "2026-07-18T04:16:51.721Z",
   "data_date": "2026-05-22",
-  "prompt_version": "model-assist-2026-07-18.1",
+  "prompt_version": "model-assist-2026-07-18.2",
   "source_count": 81,
   "candidates": [
     {
-      "candidate_id": "MAC-061b23fa8e639209",
-      "task_type": "fde_enrichment",
-      "asset_id": "FDE-27308b0a6cb2321a",
-      "raw_id": "RAW-cb92f3c014e356c9",
-      "source_ref": "SA-df54e51127844c95",
-      "source_hash": "450517cab92ccc5f",
+      "candidate_id": "MAC-142d46ae3c18fa46",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-ab1f45aa69c1d527",
+      "raw_id": "RAW-db76710a3f89bd6e",
+      "source_ref": "SA-8157ea3392b1e457",
+      "source_hash": "79b9e3c1554fb7fd",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
+      "prompt_version": "model-assist-2026-07-18.2",
       "status": "rejected",
       "proposal": {
-        "fields": [
-          {
-            "field": "industry",
-            "value": [
-              "financial services",
-              "healthcare",
-              "life sciences"
-            ],
-            "evidence_index": 0
-          },
-          {
-            "field": "workflow_before",
-            "value": "Business users previously could not ask questions in plain English and have an AI figure out what data is needed, pull it from across the company's Snowflake environment, and deliver the answer.",
-            "evidence_index": 1
-          },
-          {
-            "field": "workflow_after",
-            "value": "Business users can ask questions in plain English. Claude figures out what data is needed, pulls it from across the company's Snowflake environment, and delivers the answer.",
-            "evidence_index": 1
-          },
-          {
-            "field": "team_composition",
-            "value": "Snowflake engineering organization uses Claude Code; sales teams use a Claude-powered GTM AI Assistant built on Snowflake Intelligence",
-            "evidence_index": 2
-          },
-          {
-            "field": "reported_need",
-            "value": "Enterprises have spent years building secure, trusted data environments, and now they want AI that can work within those environments without compromise.",
-            "evidence_index": 3
-          },
-          {
-            "field": "data_requirements",
-            "value": "Structured and unstructured data within Snowflake's governed data and AI environment",
-            "evidence_index": 4
-          },
-          {
-            "field": "governance_controls",
-            "value": "Snowflake Horizon Catalog provides end-to-end governance and responsible AI controls",
-            "evidence_index": 5
-          },
-          {
-            "field": "reported_outcomes",
-            "value": "Greater than 90% accuracy on complex text-to-SQL tasks based on Snowflake's internal benchmarks",
-            "evidence_index": 6
-          }
-        ]
+        "claims": []
       },
-      "evidence": [
-        {
-          "start": 1780,
-          "end": 1920,
-          "quote": "customers in regulated industries like financial services, healthcare, and life sciences can move from pilots to production with confidence."
-        },
-        {
-          "start": 1415,
-          "end": 1690,
-          "quote": "Business users can ask questions in plain English. Claude figures out what data is needed, pulls it from across the company's Snowflake environment, and delivers the answer, with greater than 90% accuracy on complex text-to-SQL tasks based on Snowflake's internal benchmarks."
-        },
-        {
-          "start": 796,
-          "end": 1094,
-          "quote": "Claude Code enhances developer productivity and innovation across Snowflake's engineering organization, while a Claude-powered GTM AI Assistant built on Snowflake Intelligence enables sales teams to centralize data, ask questions in natural language, and find the answers that speed up deal cycles."
-        },
-        {
-          "start": 1922,
-          "end": 2074,
-          "quote": "Enterprises have spent years building secure, trusted data environments, and now they want AI that can work within those environments without compromise"
-        },
-        {
-          "start": 577,
-          "end": 733,
-          "quote": "The partnership enables enterprises to gain insights from both structured and unstructured data using Claude, while maintaining rigorous security standards."
-        },
-        {
-          "start": 3883,
-          "end": 4063,
-          "quote": "Snowflake Horizon Catalog provides end-to-end governance and responsible AI controls, so teams in regulated industries can move AI agents from pilots to production with confidence."
-        },
-        {
-          "start": 1594,
-          "end": 1690,
-          "quote": "greater than 90% accuracy on complex text-to-SQL tasks based on Snowflake's internal benchmarks."
-        }
-      ],
+      "evidence": [],
       "gate_results": [
         {
           "gate": "source_hash",
@@ -109,8 +28,8 @@
         },
         {
           "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
+          "status": "failed",
+          "detail": "missing_source_evidence"
         },
         {
           "gate": "protected_facts",
@@ -120,10 +39,10 @@
         {
           "gate": "task_contract",
           "status": "failed",
-          "detail": "invalid_fde_field_type:0, invalid_fde_field_type:5, invalid_fde_field_type:6, invalid_fde_field_type:7"
+          "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-07-18T01:29:18.088Z"
+      "generated_at": "2026-07-18T04:01:34.981Z"
     },
     {
       "candidate_id": "MAC-1647895f6670ec8c",
@@ -189,27 +108,27 @@
       "generated_at": "2026-07-18T01:29:09.944Z"
     },
     {
-      "candidate_id": "MAC-2366ed76aaddf386",
+      "candidate_id": "MAC-2488512526170546",
       "task_type": "entity_resolution",
-      "asset_id": "EN-da41c71b4dbc3956",
-      "raw_id": "RAW-c61aaa7b3175cebc",
-      "source_ref": "SA-ffa1a3795d68dc7a",
-      "source_hash": "4f41919dc3540c2a",
+      "asset_id": "EN-e4540a7c8404b1be",
+      "raw_id": "RAW-adddd8d024241073",
+      "source_ref": "SA-f9231a61d1967c3a",
+      "source_hash": "74cb86598e6c9021",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "requires_review",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
       "proposal": {
-        "decision": "unknown",
-        "canonical_name": "Sycamore Labs",
-        "rationale": "The SOURCE_TEXT describes Sycamore Labs as a Palo Alto-based startup building an enterprise AI agent platform. The ENTITY_CANDIDATE has the same canonical name, but the source provides no information about any relationship to another entity, nor does it indicate that Sycamore Labs is a publisher or component supplier. The entity type and name match, but no specific relationship type from the decision list can be confirmed from the text.",
-        "candidate_name": "Sycamore Labs"
+        "decision": "distinct_entity",
+        "canonical_name": "Temporal",
+        "rationale": "The SOURCE_TEXT mentions both Temporal and OpenAI as separate organizations. The quote shows a representative from OpenAI commenting on Temporal's platform, establishing a relationship (customer/user) but not entity identity. Temporal is not listed among the VERIFIED_ALTERNATIVES (Rime, OpenAI).",
+        "candidate_name": "Temporal"
       },
       "evidence": [
         {
-          "start": 47,
-          "end": 223,
-          "quote": "Palo Alto-based startup Sycamore Labs has announced a $65 million seed funding round, aiming to enhance its platform for building, deploying, and managing autonomous AI agents."
+          "start": 868,
+          "end": 1293,
+          "quote": "\" Durable Execution is a core requirement for modern AI systems, and Temporal offers a compelling platform to help build it in from the start. As AI systems become more complex and long-running, durability is as important as performance. Temporal plays a role in how we think about reliable execution at scale, supporting teams in focusing on product development, \" says Venkat Venkataramani , VP App Infrastructure, OpenAI ."
         }
       ],
       "gate_results": [
@@ -234,10 +153,133 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-07-18T01:29:11.782Z"
+      "generated_at": "2026-07-18T04:01:38.680Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "codex-data-review",
+        "reviewed_at": "2026-07-18T04:19:04.455Z",
+        "note": "queue-closeout:reviewed_as_distinct_entity"
+      }
     },
     {
-      "candidate_id": "MAC-23ce80e463ed8c06",
+      "candidate_id": "MAC-2956ffdae81c7e5e",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-6f4d171c8609591d",
+      "raw_id": "RAW-35589e8adf81386d",
+      "source_ref": "SA-13217705e00bd8e1",
+      "source_hash": "d3567a2e56438f8f",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "partnership",
+            "subject": "Goldman Sachs",
+            "object": "Anthropic",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "deployment",
+            "subject": "Goldman Sachs",
+            "object": "AI-powered agents based on Anthropic's Claude model",
+            "evidence_index": 1
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 121,
+          "end": 289,
+          "quote": "Goldman Sachs (GS.N), opens new tab is working with technology startup Anthropic to develop AI-powered agents aimed at automating a widening range of internal functions"
+        },
+        {
+          "start": 873,
+          "end": 913,
+          "quote": "the bank plans to launch the agents soon"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T04:01:35.730Z"
+    },
+    {
+      "candidate_id": "MAC-448db909aa0a8c0f",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-de5a1adf4fedcce1",
+      "raw_id": "RAW-cb92f3c014e356c9",
+      "source_ref": "SA-df54e51127844c95",
+      "source_hash": "450517cab92ccc5f",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "Snowflake",
+        "rationale": "The candidate 'Snowflake' is a distinct organization from all verified alternatives (Anthropic, Amazon, Google, Microsoft, Intel). The source text describes a partnership between Snowflake and Anthropic, treating them as separate entities, and Snowflake does not match any verified alternative name or alias.",
+        "candidate_name": "Snowflake"
+      },
+      "evidence": [
+        {
+          "start": 22,
+          "end": 121,
+          "quote": "Snowflake and Anthropic announce $200 million partnership to bring agentic AI to global enterprises"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T04:01:37.504Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "codex-data-review",
+        "reviewed_at": "2026-07-18T04:19:04.455Z",
+        "note": "queue-closeout:reviewed_as_distinct_entity"
+      }
+    },
+    {
+      "candidate_id": "MAC-67bd1f94baeec501",
       "task_type": "entity_resolution",
       "asset_id": "EN-eafe895eb8119e6e",
       "raw_id": "RAW-3d875c58ce4fd4f0",
@@ -245,19 +287,19 @@
       "source_hash": "7ff09b11537edc46",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "requires_review",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
       "proposal": {
-        "decision": "same_entity",
+        "decision": "distinct_entity",
         "canonical_name": "Trace",
-        "rationale": "The ENTITY_CANDIDATE canonical_name 'Trace' matches the startup 'Trace' described in the SOURCE_TEXT, which is a workflow orchestration startup focused on AI agent adoption in enterprise.",
+        "rationale": "The candidate 'Trace' is a workflow orchestration startup, while the verified alternatives are AI labs 'Anthropic' and 'OpenAI'. The quote distinguishes Trace from these entities by stating it builds the 'manager' that leverages tools from OpenAI and Anthropic, indicating a different company rather than an alias.",
         "candidate_name": "Trace"
       },
       "evidence": [
         {
-          "start": 298,
-          "end": 421,
-          "quote": "Launched as part of Y Combinator’s 2025 summer cohort, Trace is a workflow orchestration startup aimed at filling that gap."
+          "start": 544,
+          "end": 767,
+          "quote": "“OpenAI and Anthropic are building these brilliant interns that can be leveraged within the company,” says Trace CEO Tim Cherkasov, referring to the AI labs’ tools. “We’re building the manager that knows where to put them.”"
         }
       ],
       "gate_results": [
@@ -282,10 +324,193 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-07-18T01:29:11.994Z"
+      "generated_at": "2026-07-18T04:01:38.529Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "codex-data-review",
+        "reviewed_at": "2026-07-18T04:19:04.455Z",
+        "note": "queue-closeout:reviewed_as_distinct_entity"
+      }
     },
     {
-      "candidate_id": "MAC-2e54d5c3e1d9ae53",
+      "candidate_id": "MAC-a613505399ee28a9",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-da41c71b4dbc3956",
+      "raw_id": "RAW-c61aaa7b3175cebc",
+      "source_ref": "SA-ffa1a3795d68dc7a",
+      "source_hash": "4f41919dc3540c2a",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "Sycamore Labs",
+        "rationale": "The candidate entity Sycamore Labs is a startup building an enterprise AI agent platform. The source text lists OpenAI Group PBC and Intel as investors in the seed round. An investor relationship does not establish entity identity; Sycamore Labs is a distinct organization from both OpenAI and Intel.",
+        "candidate_name": "Sycamore Labs"
+      },
+      "evidence": [
+        {
+          "start": 390,
+          "end": 597,
+          "quote": "The seed round was led by Coatue, with participation from Lightspeed Venture Partners, Abstract Ventures, Dell Technologies Capital, 8VC, Databricks Inc., OpenAI Group PBC, Intel, and Palo Alto Networks Inc."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T04:01:35.947Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "codex-data-review",
+        "reviewed_at": "2026-07-18T04:19:04.455Z",
+        "note": "queue-closeout:reviewed_as_distinct_entity"
+      }
+    },
+    {
+      "candidate_id": "MAC-bc09b336a8dd4beb",
+      "task_type": "fde_enrichment",
+      "asset_id": "FDE-27308b0a6cb2321a",
+      "raw_id": "RAW-cb92f3c014e356c9",
+      "source_ref": "SA-df54e51127844c95",
+      "source_hash": "450517cab92ccc5f",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "fields": [
+          {
+            "field": "industry",
+            "value": [
+              "financial services",
+              "healthcare",
+              "life sciences"
+            ],
+            "evidence_index": 0
+          },
+          {
+            "field": "workflow_before",
+            "value": "Business users ask questions in plain English",
+            "evidence_index": 1
+          },
+          {
+            "field": "workflow_after",
+            "value": "Claude figures out what data is needed, pulls it from across the company's Snowflake environment, and delivers the answer",
+            "evidence_index": 2
+          },
+          {
+            "field": "team_composition",
+            "value": "joint go-to-market (GTM) initiative",
+            "evidence_index": 3
+          },
+          {
+            "field": "reported_need",
+            "value": "Enterprises want AI that can work within secure, trusted data environments without compromise",
+            "evidence_index": 4
+          },
+          {
+            "field": "data_requirements",
+            "value": [
+              "structured data",
+              "unstructured data"
+            ],
+            "evidence_index": 5
+          },
+          {
+            "field": "governance_controls",
+            "value": "Snowflake Horizon Catalog provides end-to-end governance and responsible AI controls",
+            "evidence_index": 6
+          },
+          {
+            "field": "reported_outcomes",
+            "value": "greater than 90% accuracy on complex text-to-SQL tasks based on Snowflake's internal benchmarks",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 1780,
+          "end": 1920,
+          "quote": "customers in regulated industries like financial services, healthcare, and life sciences can move from pilots to production with confidence."
+        },
+        {
+          "start": 1415,
+          "end": 1465,
+          "quote": "Business users can ask questions in plain English."
+        },
+        {
+          "start": 1466,
+          "end": 1690,
+          "quote": "Claude figures out what data is needed, pulls it from across the company's Snowflake environment, and delivers the answer, with greater than 90% accuracy on complex text-to-SQL tasks based on Snowflake's internal benchmarks."
+        },
+        {
+          "start": 456,
+          "end": 576,
+          "quote": "establishes a joint go-to-market (GTM) initiative focused on deploying AI agents across the world's largest enterprises."
+        },
+        {
+          "start": 1922,
+          "end": 2074,
+          "quote": "Enterprises have spent years building secure, trusted data environments, and now they want AI that can work within those environments without compromise"
+        },
+        {
+          "start": 577,
+          "end": 733,
+          "quote": "The partnership enables enterprises to gain insights from both structured and unstructured data using Claude, while maintaining rigorous security standards."
+        },
+        {
+          "start": 3883,
+          "end": 4063,
+          "quote": "Snowflake Horizon Catalog provides end-to-end governance and responsible AI controls, so teams in regulated industries can move AI agents from pilots to production with confidence."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "invalid_fde_field_type:0, invalid_fde_field_type:6, invalid_fde_field_type:7"
+        }
+      ],
+      "generated_at": "2026-07-18T04:01:42.529Z"
+    },
+    {
+      "candidate_id": "MAC-c21647d0e52542cf",
       "task_type": "entity_resolution",
       "asset_id": "EN-cd35ca6b5c3cf23c",
       "raw_id": "RAW-f93185ac4088011c",
@@ -293,12 +518,12 @@
       "source_hash": "0ba7a0ab08f5c0c4",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "requires_review",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
       "proposal": {
-        "decision": "same_entity",
+        "decision": "distinct_entity",
         "canonical_name": "Chip startup Taalas",
-        "rationale": "The ENTITY_CANDIDATE canonical_name 'Chip startup Taalas' matches the entity described in the SOURCE_TEXT as 'Toronto-based chip startup Taalas'. The source confirms the entity is a chip startup named Taalas.",
+        "rationale": "The candidate 'Chip startup Taalas' is a Toronto-based chip startup developing custom AI chips. None of the verified alternatives (OpenAI, NVIDIA, Intel, Meta) match this entity. The source text mentions these verified entities as separate organizations (e.g., Nvidia as a competitor, Meta's Llama model as something Taalas customizes for, OpenAI's ChatGPT as an example of AI inference). The quote shows Taalas is a distinct startup, not any of the verified alternatives.",
         "candidate_name": "Chip startup Taalas"
       },
       "evidence": [
@@ -330,254 +555,16 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-07-18T01:29:10.875Z"
+      "generated_at": "2026-07-18T04:01:36.668Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "codex-data-review",
+        "reviewed_at": "2026-07-18T04:19:04.455Z",
+        "note": "queue-closeout:reviewed_as_distinct_entity"
+      }
     },
     {
-      "candidate_id": "MAC-bb760c0cb8e4070a",
-      "task_type": "entity_resolution",
-      "asset_id": "EN-de5a1adf4fedcce1",
-      "raw_id": "RAW-cb92f3c014e356c9",
-      "source_ref": "SA-df54e51127844c95",
-      "source_hash": "450517cab92ccc5f",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "requires_review",
-      "proposal": {
-        "decision": "publisher_of",
-        "canonical_name": "Anthropic",
-        "rationale": "The SOURCE_TEXT is a press release published on Anthropic's website (indicated by the title ending in '\\ Anthropic' and the URL structure). The text announces a partnership between Snowflake and Anthropic, making Anthropic the publisher of this content about Snowflake.",
-        "candidate_name": "Snowflake"
-      },
-      "evidence": [
-        {
-          "start": 134,
-          "end": 221,
-          "quote": "Today, we announce a significant expansion of our strategic partnership with Snowflake."
-        }
-      ],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "passed",
-          "detail": "task contract passed"
-        }
-      ],
-      "generated_at": "2026-07-18T01:29:11.454Z"
-    },
-    {
-      "candidate_id": "MAC-bcad143e9c25e634",
-      "task_type": "claim_extraction",
-      "asset_id": "QA-ab1f45aa69c1d527",
-      "raw_id": "RAW-db76710a3f89bd6e",
-      "source_ref": "SA-8157ea3392b1e457",
-      "source_hash": "79b9e3c1554fb7fd",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
-      "proposal": {
-        "claims": [
-          {
-            "event_type": "commercial",
-            "subject": "Allianz Partners",
-            "object": "Otera's Autonomous AI agents",
-            "evidence_index": 0
-          },
-          {
-            "event_type": "commercial",
-            "subject": "Allianz Partners",
-            "object": "Autonomous claims execution",
-            "evidence_index": 1
-          },
-          {
-            "event_type": "commercial",
-            "subject": "Allianz Partners",
-            "object": "€300M in incremental annual profit by 2027",
-            "evidence_index": 2
-          }
-        ]
-      },
-      "evidence": [
-        {
-          "start": 78,
-          "end": 223,
-          "quote": "The company is now replacing that model entirely, using Otera's Autonomous AI agents, with a global rollout already live across multiple markets."
-        },
-        {
-          "start": 1025,
-          "end": 1116,
-          "quote": "Two use cases went live within 2.5 months across UK and DACH markets before global rollout."
-        },
-        {
-          "start": 3285,
-          "end": 3461,
-          "quote": "These results anchor a broader transformation program targeting €300M in incremental annual profit by 2027, against a revenue growth trajectory from €10 billion to €13 billion."
-        }
-      ],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "unsupported_claim_event_type:0, unsupported_claim_event_type:1, unsupported_claim_event_type:2"
-        }
-      ],
-      "generated_at": "2026-07-18T01:29:09.918Z"
-    },
-    {
-      "candidate_id": "MAC-bf1aa3d6b2d3b54f",
-      "task_type": "entity_resolution",
-      "asset_id": "EN-883be863cc6562bb",
-      "raw_id": "RAW-1e7302ffa6e4e37b",
-      "source_ref": "SA-d9d49ffd69a0db31",
-      "source_hash": "d1a88dde81a4f0d1",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "requires_review",
-      "proposal": {
-        "decision": "same_entity",
-        "canonical_name": "Axelera AI",
-        "rationale": "The entity candidate 'European AI chip startup Axelera' refers to the same organization described in the source as 'Axelera AI', a European AI chip startup based in Eindhoven.",
-        "candidate_name": "European AI chip startup Axelera"
-      },
-      "evidence": [
-        {
-          "start": 104,
-          "end": 187,
-          "quote": "Axelera AI has secured $250 million in a funding round led by Innovation Industries"
-        }
-      ],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "passed",
-          "detail": "task contract passed"
-        }
-      ],
-      "generated_at": "2026-07-18T01:29:10.481Z"
-    },
-    {
-      "candidate_id": "MAC-c14227bb8d3047c5",
-      "task_type": "claim_extraction",
-      "asset_id": "QA-6f4d171c8609591d",
-      "raw_id": "RAW-35589e8adf81386d",
-      "source_ref": "SA-13217705e00bd8e1",
-      "source_hash": "d3567a2e56438f8f",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
-      "proposal": {
-        "claims": [
-          {
-            "event_type": "commercial",
-            "subject": "Goldman Sachs",
-            "object": "Anthropic",
-            "evidence_index": 0
-          },
-          {
-            "event_type": "commercial",
-            "subject": "Goldman Sachs",
-            "object": "AI agents for trade and transaction accounting, client due diligence and onboarding",
-            "evidence_index": 1
-          },
-          {
-            "event_type": "planned",
-            "subject": "Goldman Sachs",
-            "object": "launch of AI agents",
-            "evidence_index": 2
-          }
-        ]
-      },
-      "evidence": [
-        {
-          "start": 121,
-          "end": 289,
-          "quote": "Goldman Sachs (GS.N), opens new tab is working with technology startup Anthropic to develop AI-powered agents aimed at automating a widening range of internal functions"
-        },
-        {
-          "start": 361,
-          "end": 603,
-          "quote": "The Wall Street bank has spent the past six months collaborating with Anthropic engineers embedded within its teams to build autonomous agents for tasks including trade and transaction accounting as well as client due diligence and onboarding"
-        },
-        {
-          "start": 855,
-          "end": 950,
-          "quote": "He told CNBC that the bank plans to launch the agents soon, without giving a specific timeline."
-        }
-      ],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "unsupported_claim_event_type:0, unsupported_claim_event_type:1, unsupported_claim_event_type:2"
-        }
-      ],
-      "generated_at": "2026-07-18T01:29:09.124Z"
-    },
-    {
-      "candidate_id": "MAC-c62165e0f3331a17",
+      "candidate_id": "MAC-d3ddf646dee9c667",
       "task_type": "entity_resolution",
       "asset_id": "EN-ee04228c5c6d8b08",
       "raw_id": "RAW-b3a1f3556d776713",
@@ -585,19 +572,19 @@
       "source_hash": "f8c0e2e899057d76",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "requires_review",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
       "proposal": {
-        "decision": "same_entity",
+        "decision": "distinct_entity",
         "canonical_name": "Wonderful",
-        "rationale": "The ENTITY_CANDIDATE canonical_name 'Wonderful' matches the company name used throughout the SOURCE_TEXT, which describes the enterprise AI agent platform that raised $150M in Series B funding.",
+        "rationale": "The candidate entity 'Wonderful' is an enterprise AI agent platform company. The verified alternative 'Hinge' is a different entity. The quote uses the word 'hinge' as a verb meaning 'depend on', not as a reference to the entity 'Hinge'. There is no evidence that the candidate mention refers to the verified alternative entity.",
         "candidate_name": "Wonderful"
       },
       "evidence": [
         {
-          "start": 138,
-          "end": 254,
-          "quote": "Wonderful , the enterprise AI agent platform, today announced it has raised $150 million in a Series B funding round"
+          "start": 1817,
+          "end": 1911,
+          "quote": "those decisions will hinge on who can deliver deep integrations across complex infrastructures"
         }
       ],
       "gate_results": [
@@ -622,10 +609,16 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-07-18T01:29:12.574Z"
+      "generated_at": "2026-07-18T04:01:38.527Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "codex-data-review",
+        "reviewed_at": "2026-07-18T04:19:04.455Z",
+        "note": "queue-closeout:reviewed_as_distinct_entity"
+      }
     },
     {
-      "candidate_id": "MAC-c7c361e677db4f0e",
+      "candidate_id": "MAC-d75c4c608aa23644",
       "task_type": "qa_repair",
       "asset_id": "QA-4dc795e5fe2ee77e",
       "raw_id": "RAW-bae0d62fe82de384",
@@ -633,17 +626,25 @@
       "source_hash": "8f8da7e578c4da0c",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "requires_review",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
       "proposal": {
-        "action": "keep_qa",
-        "reason": "The QA_REASON is event_not_ai_relevant, but the source text is entirely about an AI company raising funding to help businesses train and deploy custom AI models, which is directly relevant to the AI industry."
+        "action": "extract_claim",
+        "reason": "The source text describes a concrete funding event for an AI company.",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Inference.net",
+            "object": "$11.8M Series Seed funding",
+            "evidence_index": 0
+          }
+        ]
       },
       "evidence": [
         {
-          "start": 295,
-          "end": 435,
-          "quote": "Inference.net enables companies to train and deploy custom AI models that outperform general-purpose alternatives at a fraction of the cost."
+          "start": 72,
+          "end": 294,
+          "quote": "We’re excited to announce that we have raised $11.8M in Series Seed funding, led by Multicoin Capital and a16z CSX , with participation from Topology Ventures , Founders, Inc. , and an exceptional group of angel investors."
         }
       ],
       "gate_results": [
@@ -668,55 +669,13 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-07-18T01:56:28.148Z"
-    },
-    {
-      "candidate_id": "MAC-d83f6924a443066d",
-      "task_type": "entity_resolution",
-      "asset_id": "EN-e4540a7c8404b1be",
-      "raw_id": "RAW-adddd8d024241073",
-      "source_ref": "SA-f9231a61d1967c3a",
-      "source_hash": "74cb86598e6c9021",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "requires_review",
-      "proposal": {
-        "decision": "same_entity",
-        "canonical_name": "Temporal",
-        "rationale": "The ENTITY_CANDIDATE canonical_name 'Temporal' matches the organization described in the SOURCE_TEXT, which is a platform company that announced a Series D funding round.",
-        "candidate_name": "Temporal"
-      },
-      "evidence": [
-        {
-          "start": 130,
-          "end": 298,
-          "quote": "Temporal, the open-source platform powering the world’s most reliable agentic applications, today announced a $300 million Series D financing at a $5 billion valuation."
-        }
-      ],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "passed",
-          "detail": "task contract passed"
-        }
-      ],
-      "generated_at": "2026-07-18T01:29:11.961Z"
+      "generated_at": "2026-07-18T04:01:40.254Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "codex-data-review",
+        "reviewed_at": "2026-07-18T04:19:04.455Z",
+        "note": "queue-closeout:reviewed_exact_span_claim_candidate"
+      }
     },
     {
       "candidate_id": "MAC-df48e0d6a8db9841",
@@ -769,6 +728,60 @@
         }
       ],
       "generated_at": "2026-07-18T01:29:08.790Z"
+    },
+    {
+      "candidate_id": "MAC-ee08dc6f83ab5635",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-883be863cc6562bb",
+      "raw_id": "RAW-1e7302ffa6e4e37b",
+      "source_ref": "SA-d9d49ffd69a0db31",
+      "source_hash": "d1a88dde81a4f0d1",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "European AI chip startup Axelera",
+        "rationale": "The candidate entity is Axelera, an AI chip startup. The verified alternative is Samsung. The source text mentions 'Samsung Electronics' Catalyst Fund' as a previous investor that participated in Axelera's funding round. This describes an investor-investee relationship, not entity identity. Therefore, they are distinct entities.",
+        "candidate_name": "European AI chip startup Axelera"
+      },
+      "evidence": [
+        {
+          "start": 912,
+          "end": 1161,
+          "quote": "Previous investors including Bitfury, Verve Investments, Samsung Electronics' (005930.KS), opens new tab Catalyst Fund, the European Innovation Council Fund and funds backed by the Belgian and Dutch governments also participated in the latest round."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T04:01:36.000Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "codex-data-review",
+        "reviewed_at": "2026-07-18T04:19:04.455Z",
+        "note": "queue-closeout:reviewed_as_distinct_entity"
+      }
     }
   ]
 }

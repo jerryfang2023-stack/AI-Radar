@@ -2,7 +2,7 @@
 schema_version: raw-evidence-v2
 raw_id: R-011
 title: "Exclusive: Positron raises $230M Series B to take on Nvidia's AI chips | TechCrunch"
-title_zh: "独家：Positron融资2.3亿美元B轮，挑战英伟达AI芯片 | TechCrunch"
+title_zh: "独家：Positron 获 2.3 亿美元 B 轮融资，挑战英伟达 AI 芯片"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 original_url: "https://techcrunch.com/2026/02/04/exclusive-positron-raises-230m-series-b-to-take-on-nvidias-ai-chips/"

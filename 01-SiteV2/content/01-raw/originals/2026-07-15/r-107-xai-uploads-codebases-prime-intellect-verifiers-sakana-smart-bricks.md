@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-107
 title: "xAI uploads codebases 👨‍💻, Prime Intellect verifiers 🧠, Sakana smart bricks 🧱"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "xAI 上传代码库 👨‍💻，Prime Intellect 验证器 🧠，Sakana 智能积木 🧱"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://tldr.tech/ai/2026-07-14"
 canonical_url: "https://tldr.tech/ai/2026-07-14"
 source_name: "TLDR AI Newsletter"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-15T04:28:38.173Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # xAI uploads codebases 👨‍💻, Prime Intellect verifiers 🧠, Sakana smart bricks 🧱

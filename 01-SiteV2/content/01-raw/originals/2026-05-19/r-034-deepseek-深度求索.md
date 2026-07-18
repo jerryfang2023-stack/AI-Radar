@@ -57,6 +57,10 @@ key_excerpts: [{"type":"funding","text":"2026年4月27日&ensp;&#0183;&ensp;深�
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "DeepSeek | 深度求索"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # DeepSeek | 深度求索

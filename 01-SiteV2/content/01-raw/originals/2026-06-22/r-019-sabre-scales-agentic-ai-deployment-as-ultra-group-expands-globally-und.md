@@ -72,7 +72,7 @@ key_excerpts: [{"type":"case_detail","text":"SOUTHLAKE, Texas and NEW YORK, June
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
-title_zh: "Sabre扩大代理型AI部署，Ultra Group在Linex旗下全球扩张"
+title_zh: "Sabre 扩大 AI 智能体部署，Ultra Group 在 Linex 旗下全球扩张"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

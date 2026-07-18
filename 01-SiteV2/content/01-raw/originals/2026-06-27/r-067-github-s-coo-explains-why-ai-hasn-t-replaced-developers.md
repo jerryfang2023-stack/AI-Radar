@@ -72,7 +72,7 @@ key_excerpts: [{"type":"number","text":"Last year, there were 1 billion commits 
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
-title_zh: "GitHub首席运营官解释为何AI尚未取代开发者"
+title_zh: "GitHub 首席运营官解释为何 AI 尚未取代开发者"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

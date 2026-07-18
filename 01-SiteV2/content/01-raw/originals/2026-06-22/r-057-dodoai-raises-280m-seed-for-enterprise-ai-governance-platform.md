@@ -72,7 +72,7 @@ key_excerpts: [{"type":"funding","text":"# dodoAI raises ¥280M seed for enterpr
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
-title_zh: "dodoAI为其企业AI治理平台筹集2.8亿元人民币种子轮资金"
+title_zh: "dodoAI 获 2.8 亿日元种子轮融资，用于企业 AI 治理平台"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

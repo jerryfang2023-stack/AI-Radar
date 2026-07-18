@@ -189,6 +189,72 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-66ac8e58e37390d3",
+    "raw_id": "RAW-716cc0352788ff25",
+    "claim_type": "funding",
+    "subject": "Fazeshift",
+    "predicate": "funding",
+    "object": "$17 million Series A funding round",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-db4c5aca1e1527ed"
+    },
+    "source_span": {
+      "raw_id": "RAW-716cc0352788ff25",
+      "start": 351,
+      "end": 518
+    },
+    "source_quote": "Fazeshift , a startup that uses AI agents to automate accounts receivable, has raised $17 million in a Series A round of funding, it tells Crunchbase News exclusively.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-8633193f210a2903",
+    "raw_id": "RAW-72668d8864402532",
+    "claim_type": "funding",
+    "subject": "Tribal AI Inc.",
+    "predicate": "funding",
+    "object": "$10 million seed funding",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-daa766c2b029245e"
+    },
+    "source_span": {
+      "raw_id": "RAW-72668d8864402532",
+      "start": 423,
+      "end": 521
+    },
+    "source_quote": "a new startup called Tribal AI Inc. is trying to solve after raising $10 million in funding today.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b311bf5156a3ef03",
+    "raw_id": "RAW-72668d8864402532",
+    "claim_type": "funding",
+    "subject": "Team8",
+    "predicate": "funding",
+    "object": "led seed funding round for Tribal AI",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-daa766c2b029245e"
+    },
+    "source_span": {
+      "raw_id": "RAW-72668d8864402532",
+      "start": 522,
+      "end": 732
+    },
+    "source_quote": "The seed funding round was led by Team8 and saw participation from DYDX Capital and a group of unnamed enterprise software founders behind multiple exits in the Salesforce ecosystem, who participated as angels.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-a9fc849d02f6f376",
     "raw_id": "RAW-cc230c84b5f70016",
     "claim_type": "funding",
@@ -354,6 +420,28 @@
     "source_quote": "SAN FRANCISCO--( BUSINESS WIRE )-- General Analysis , a company building security infrastructure for agentic AI, today announced $10 million in seed funding led by Altos Ventures, with participation from 645 Ventures, Menlo Ventures, Y Combinator, and additional strategic investors and angels. The company was founded by former NVIDIA, Cohere, and DeepMind researchers and is working to close a widening security gap as companies race to put autonomous agents into production. General Analysis is already working with enterprise customers in support and finance whose products and workflows are used by hundreds of millions of users.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-bcce7a7099b6c8d1",
+    "raw_id": "RAW-29588131c4d69b2c",
+    "claim_type": "deployment",
+    "subject": "C.H. Robinson",
+    "predicate": "deployment",
+    "object": "AI agents using LangChain and LangGraph to automate email-based shipment orders",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-6afb3db6b9321735"
+    },
+    "source_span": {
+      "raw_id": "RAW-29588131c4d69b2c",
+      "start": 0,
+      "end": 199
+    },
+    "source_quote": "C.H. Robinson, one of the world's largest logistics providers managing 37 million shipments annually, built AI agents using LangChain and LangGraph to automate email-based shipment orders end-to-end.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -711,6 +799,50 @@
     "source_quote": "Texture Raises $12.5M to Tackle the Operational Complexity of the Modern Grid Texture's offering is gaining early traction at utility cooperatives, member-owned organizations serving 42 million Americans across distributed and rural territory, including 92% of the country's persistent-poverty counties. Co-ops manage coal plant retirements, data center load growth, and aging infrastructure with teams and budgets that are a fraction of those of investor-owned utilities. Enterprise grid software was built for utilities ten times their size. Texture provides the same capabilities without enterprise budgets or multi-year implementations. carbon-neutral cited as among the most hundreds of batteries across Through Texture, co-ops gain access to hardware integrations they couldn't secure on their own. Many of the biggest OEMs require minimum deployment thresholds before providing direct data access. Texture has already built those integrations, with first-party connections to 50+ OEMs, including Tesla, FranklinWH, Honeywell, Ecobee, and SolarEdge, with direct relationships and service-level agreements. Ann Arbor's Sustainable Energy Utility used that access to launch a community battery program with FranklinWH across 100 homes, operational as of March 2026. Along with the funding, Texture is partnering with NRTC, whose network represents 850 utility co-ops across the country. Through the relationship, Texture will provide member co-ops with access to grid management infrastructure previously available only to larger utilities. Kareem Dabbagh, Managing Partner at VoLo Earth Ventures, joined Texture's board as part of the financing. \"Co-ops are managing the hardest grid transitions happening right now. Coal plant closures, battery deployments in rural communities, and data center load growth that wasn't in anyone's forecast five years ago. Texture is the infrastructure layer that makes those programs work. That's why VoLo and Equal came in together on this round and why I joined the board,\" said Dabbagh. The Series A brings Texture's total funding to approximately $23 million. The capital will fund team growth and platform expansion. Texture has integrations with leading OEM and energy data companies, including Tesla, FranklinWH, Honeywell, Ecobee, SolarEdge, Leap Energy, and WattTime, and has completed its SOC 2 Type I and Type II security certifications. / score=44.333 / query=AI Agent funding enterprise customers / intent=find_market_trend / path=a_media_gdelt",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-30063a4768545044",
+    "raw_id": "RAW-46ecb622ada7a622",
+    "claim_type": "product_release",
+    "subject": "Anthropic",
+    "predicate": "product_release",
+    "object": "dreaming in Claude Managed Agents as a research preview",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-c1fd5ee482960ce6"
+    },
+    "source_span": {
+      "raw_id": "RAW-46ecb622ada7a622",
+      "start": 0,
+      "end": 78
+    },
+    "source_quote": "Today we're launching dreaming in Claude Managed Agents as a research preview.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-5167f183b92b6099",
+    "raw_id": "RAW-46ecb622ada7a622",
+    "claim_type": "product_release",
+    "subject": "Anthropic",
+    "predicate": "product_release",
+    "object": "outcomes, multiagent orchestration, and webhooks available to developers building with Managed Agents",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-c1fd5ee482960ce6"
+    },
+    "source_span": {
+      "raw_id": "RAW-46ecb622ada7a622",
+      "start": 177,
+      "end": 297
+    },
+    "source_quote": "We're also making outcomes, multiagent orchestration, and webhooks available to developers building with Managed Agents.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {

@@ -72,7 +72,7 @@ key_excerpts: [{"type":"funding","text":"Multiplayer AI startup Dust raises $40M
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
-title_zh: "多人在线AI初创公司Dust获4000万美元融资，助力企业突破孤立AI助手局限"
+title_zh: "多玩家AI初创公司Dust融资4000万美元，助力企业超越孤立AI智能体"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

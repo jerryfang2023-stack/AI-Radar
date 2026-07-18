@@ -72,7 +72,7 @@ key_excerpts: [{"type":"funding","text":"AWS has launched an AI agent marketplac
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
-title_zh: "PYMNTS | AWS推出AI代理市场，打造“一站式商店”"
+title_zh: "AWS 推出 AI 智能体市场，定位“一站式商店”"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

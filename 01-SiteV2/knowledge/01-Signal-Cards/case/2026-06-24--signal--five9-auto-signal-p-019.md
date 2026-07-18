@@ -2,7 +2,7 @@
 id: SIG-20260624-A05
 type: signal_card
 signal_type: case
-title: "Five9推出突破性新版语音AI代理，以..."
+title: "Five9 发布突破性新版语音 AI 智能体"
 date: 2026-06-24
 status: published
 source_title: "Five9 Launches Breakthrough New Release of Voice AI Agents to ..."
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Five9"
 
 frontend:
-  displayTitle: "Five9推出突破性新版语音AI代理，以..."
+  displayTitle: "Five9 发布突破性新版语音 AI 智能体"
   sourceLinks:
     - "https://markets.ft.com/data/announce/detail?dockey=600-202606230900BIZWIRE_USPRX____20260623_BW305277-1"
 ---
 
-# Five9推出突破性新版语音AI代理，以...
+# Five9 发布突破性新版语音 AI 智能体
 
 ## 新闻事实
 

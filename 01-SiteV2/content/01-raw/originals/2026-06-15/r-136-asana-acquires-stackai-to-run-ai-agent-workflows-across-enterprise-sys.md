@@ -72,7 +72,7 @@ key_excerpts: [{"type":"workflow_change","text":"Asana acquires StackAI to run A
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
-title_zh: "Asana收购StackAI，以在企业系统中运行AI代理工作流 - SiliconANGLE"
+title_zh: "Asana 收购 StackAI，以在企业系统中运行 AI 智能体工作流"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

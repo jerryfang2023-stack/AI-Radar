@@ -1,10 +1,49 @@
 {
   "schema_version": "MODEL-ASSIST-V1.0",
-  "generated_at": "2026-07-18T01:56:33.025Z",
+  "generated_at": "2026-07-18T04:16:52.261Z",
   "data_date": "2026-06-06",
-  "prompt_version": "model-assist-2026-07-18.1",
+  "prompt_version": "model-assist-2026-07-18.2",
   "source_count": 190,
   "candidates": [
+    {
+      "candidate_id": "MAC-04e5b821451f88ed",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-1ddee04bb2234ffc",
+      "raw_id": "RAW-47f75f23e6b71c5b",
+      "source_ref": "SA-66650a454542427e",
+      "source_hash": "8f5699dbcc4f0886",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "missing_claim_proposal"
+        }
+      ],
+      "generated_at": "2026-07-18T04:03:12.099Z"
+    },
     {
       "candidate_id": "MAC-07c0a99f6ec2a57d",
       "task_type": "claim_extraction",
@@ -58,237 +97,7 @@
       "generated_at": "2026-07-18T01:30:29.188Z"
     },
     {
-      "candidate_id": "MAC-08b32c66dcf1d7db",
-      "task_type": "claim_extraction",
-      "asset_id": "QA-13782044531d808f",
-      "raw_id": "RAW-d08052964c5ef752",
-      "source_ref": "SA-674d5bea73798157",
-      "source_hash": "322f4abc3f00ddfa",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
-      "proposal": {
-        "claims": []
-      },
-      "evidence": [],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "failed",
-          "detail": "missing_source_evidence"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "missing_claim_proposal"
-        }
-      ],
-      "generated_at": "2026-07-18T01:30:23.663Z"
-    },
-    {
-      "candidate_id": "MAC-117c1ec9e34def03",
-      "task_type": "claim_extraction",
-      "asset_id": "QA-56d5c5b907979c34",
-      "raw_id": "RAW-5c508d01a13443a7",
-      "source_ref": "SA-000d0036fd26233e",
-      "source_hash": "770be2dc1828a483",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
-      "proposal": {
-        "claims": []
-      },
-      "evidence": [],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "failed",
-          "detail": "missing_source_evidence"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "missing_claim_proposal"
-        }
-      ],
-      "generated_at": "2026-07-18T01:30:27.729Z"
-    },
-    {
-      "candidate_id": "MAC-12750f1ada803203",
-      "task_type": "claim_extraction",
-      "asset_id": "QA-359d7f46d53e704e",
-      "raw_id": "RAW-be9d78247d8d1bb4",
-      "source_ref": "SA-68466f414e5908d3",
-      "source_hash": "f74aafe68e818bcc",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
-      "proposal": {
-        "claims": [
-          {
-            "event_type": "software release",
-            "subject": "Google AI team",
-            "object": "Colab CLI",
-            "evidence_index": 0
-          },
-          {
-            "event_type": "software release",
-            "subject": "Colab CLI",
-            "object": "Apache 2.0 license",
-            "evidence_index": 1
-          },
-          {
-            "event_type": "software release",
-            "subject": "Google",
-            "object": "COLAB_SKILL.md",
-            "evidence_index": 2
-          }
-        ]
-      },
-      "evidence": [
-        {
-          "start": 194,
-          "end": 244,
-          "quote": "This week, Google AI team released the Colab CLI ."
-        },
-        {
-          "start": 418,
-          "end": 470,
-          "quote": "The CLI is open source under the Apache 2.0 license."
-        },
-        {
-          "start": 737,
-          "end": 797,
-          "quote": "Google ships a prepackaged skill file named COLAB_SKILL.md ."
-        }
-      ],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "unsupported_claim_event_type:0, unsupported_claim_event_type:1, unsupported_claim_event_type:2"
-        }
-      ],
-      "generated_at": "2026-07-18T01:30:26.924Z"
-    },
-    {
-      "candidate_id": "MAC-2080b3e1074fbb2a",
-      "task_type": "claim_extraction",
-      "asset_id": "QA-3282aff423001970",
-      "raw_id": "RAW-74f0266d8377357d",
-      "source_ref": "SA-ac896080230a5fbd",
-      "source_hash": "2639a71428b94fb5",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
-      "proposal": {
-        "claims": []
-      },
-      "evidence": [],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "failed",
-          "detail": "missing_source_evidence"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "missing_claim_proposal"
-        }
-      ],
-      "generated_at": "2026-07-18T01:30:24.558Z"
-    },
-    {
-      "candidate_id": "MAC-23284047d9915538",
-      "task_type": "claim_extraction",
-      "asset_id": "QA-3938f71813536eb5",
-      "raw_id": "RAW-16a883d831e6cceb",
-      "source_ref": "SA-18a8f9c5425449b0",
-      "source_hash": "4607a9d4305b3279",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
-      "proposal": {
-        "claims": []
-      },
-      "evidence": [],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "failed",
-          "detail": "missing_source_evidence"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "missing_claim_proposal"
-        }
-      ],
-      "generated_at": "2026-07-18T01:30:26.135Z"
-    },
-    {
-      "candidate_id": "MAC-265ba69a3d77969f",
+      "candidate_id": "MAC-08db0f47bd68655e",
       "task_type": "claim_extraction",
       "asset_id": "QA-cc334c914b194287",
       "raw_id": "RAW-760a0357d69d5e68",
@@ -296,45 +105,45 @@
       "source_hash": "6f4cd2fbbba21b94",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
       "proposal": {
         "claims": [
           {
-            "event_type": "commercial",
+            "event_type": "pricing_change",
             "subject": "DeepSeek",
-            "object": "Ramp 软件趋势榜榜首",
+            "object": "API 价格永久下调 75%",
             "evidence_index": 0
           },
           {
-            "event_type": "commercial",
+            "event_type": "market_expansion",
             "subject": "DeepSeek",
-            "object": "API 价格永久下调 75%",
+            "object": "Ramp 平台软件趋势榜榜首",
             "evidence_index": 1
           },
           {
-            "event_type": "commercial",
-            "subject": "Uber",
-            "object": "四个月内耗尽全年 Token 预算",
+            "event_type": "financial_performance",
+            "subject": "某企业",
+            "object": "一个月内为 Claude 支付 5 亿美元费用",
             "evidence_index": 2
           }
         ]
       },
       "evidence": [
         {
-          "start": 501,
-          "end": 547,
-          "quote": "中国 AI 公司 DeepSeek 首次登上该平台软件趋势榜榜首，成为增长最快的软件供应商。"
-        },
-        {
           "start": 736,
           "end": 765,
           "quote": "DeepSeek 近期宣布将 API 价格永久下调 75%"
         },
         {
-          "start": 646,
-          "end": 683,
-          "quote": "网约车巨头 Uber 更是在今年四个月内耗尽了全年的 Token 预算 。"
+          "start": 501,
+          "end": 546,
+          "quote": "中国 AI 公司 DeepSeek 首次登上该平台软件趋势榜榜首，成为增长最快的软件供应商"
+        },
+        {
+          "start": 590,
+          "end": 644,
+          "quote": "某企业仅在一个月内就为 Claude 支付 5 亿美元（IT之家注：现汇率约合 33.96 亿元人民币）费用"
         }
       ],
       "gate_results": [
@@ -355,14 +164,88 @@
         },
         {
           "gate": "task_contract",
-          "status": "failed",
-          "detail": "unsupported_claim_event_type:0, unsupported_claim_event_type:1, unsupported_claim_event_type:2"
+          "status": "passed",
+          "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-07-18T01:30:30.656Z"
+      "generated_at": "2026-07-18T04:03:19.943Z"
     },
     {
-      "candidate_id": "MAC-2f59ba7463b7e869",
+      "candidate_id": "MAC-09d93e16cc956948",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-dd52b30b5d510768",
+      "raw_id": "RAW-539c8b0ab24f6cf7",
+      "source_ref": "SA-a112b33fd159eab0",
+      "source_hash": "d390b13c32bc6b1e",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "hardware_capacity",
+            "subject": "Bedrock Robotics",
+            "object": "1.7 million vCPU/hour compute capacity",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "pricing_change",
+            "subject": "Bedrock Robotics",
+            "object": "40% cost reduction via spot instances",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "deployment",
+            "subject": "Bedrock Robotics",
+            "object": "Anyscale platform for end-to-end AI pipelines",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 7144,
+          "end": 7243,
+          "quote": "In under 12 months, Bedrock scaled from 20,000 to 1.7 million vCPU/hour, an 85x increase in compute"
+        },
+        {
+          "start": 10429,
+          "end": 10555,
+          "quote": "That translated to a 40% cost reduction via spot automation, significant cost savings and hundreds of engineering hours saved."
+        },
+        {
+          "start": 7022,
+          "end": 7143,
+          "quote": "From raw sensor data to a validated, packaged model ready for deployment on a robot, everything runs on Ray and Anyscale."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T04:03:20.449Z"
+    },
+    {
+      "candidate_id": "MAC-0bdc64a59e41bfaf",
       "task_type": "claim_extraction",
       "asset_id": "QA-ebed6ddb4e3b7317",
       "raw_id": "RAW-d4df0fc19a489264",
@@ -370,7 +253,7 @@
       "source_hash": "33a281c62b38251e",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
+      "prompt_version": "model-assist-2026-07-18.2",
       "status": "rejected",
       "proposal": {
         "claims": []
@@ -398,10 +281,10 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-07-18T01:30:31.333Z"
+      "generated_at": "2026-07-18T04:03:20.522Z"
     },
     {
-      "candidate_id": "MAC-33462a086000b941",
+      "candidate_id": "MAC-0d72284632a40c9c",
       "task_type": "entity_resolution",
       "asset_id": "EN-e3ce9cc5efa9354c",
       "raw_id": "RAW-e8d4379d0fe9bbb9",
@@ -409,19 +292,19 @@
       "source_hash": "373c87b41ddb8126",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "requires_review",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
       "proposal": {
-        "decision": "same_entity",
+        "decision": "distinct_entity",
         "canonical_name": "Hugging Face",
-        "rationale": "The ENTITY_CANDIDATE canonical_name 'Hugging Face' matches the organization described in the SOURCE_TEXT, which details the company's platform, services, and operations.",
+        "rationale": "The source text describes Hugging Face as a platform that 'serves enterprise customers—including Google, Meta, Microsoft, and Salesforce'. This indicates a customer or service provider relationship, not entity identity. Hugging Face is a distinct organization from Microsoft, Meta, and Google.",
         "candidate_name": "Hugging Face"
       },
       "evidence": [
         {
-          "start": 27,
-          "end": 257,
-          "quote": "Hugging Face operates a collaborative AI development platform hosting over 2 million models and 550,000 datasets, serving enterprise customers with infrastructure for building, deploying, and scaling machine learning applications."
+          "start": 2381,
+          "end": 2579,
+          "quote": "The platform serves enterprise customers—including Google, Meta, Microsoft, and Salesforce—who need production-ready infrastructure for natural language processing, computer vision, and audio tasks."
         }
       ],
       "gate_results": [
@@ -446,228 +329,51 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-07-18T01:56:29.800Z"
+      "generated_at": "2026-07-18T04:03:26.512Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "codex-data-review",
+        "reviewed_at": "2026-07-18T04:19:04.455Z",
+        "note": "queue-closeout:reviewed_as_distinct_entity"
+      }
     },
     {
-      "candidate_id": "MAC-336bd6dfdf78fe0a",
-      "task_type": "entity_resolution",
-      "asset_id": "EN-07c370b082ffd370",
-      "raw_id": "RAW-c69edca299c9008c",
-      "source_ref": "SA-4e079c5ff3c5f2aa",
-      "source_hash": "f5d12aa282c1d32e",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "requires_review",
-      "proposal": {
-        "decision": "same_entity",
-        "canonical_name": "Inference.ai",
-        "rationale": "The ENTITY_CANDIDATE canonical_name 'Inference.ai' matches the company name used throughout the SOURCE_TEXT, which describes the same platform co-founded by John Yue and Michael Yu that provides cloud GPU compute matching services.",
-        "candidate_name": "Inference.ai"
-      },
-      "evidence": [
-        {
-          "start": 1117,
-          "end": 1288,
-          "quote": "Yue and Yu are the co-founders of Inference.ai , a platform that provides infrastructure-as-a-service cloud GPU compute through partnerships with third-party data centers."
-        }
-      ],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "passed",
-          "detail": "task contract passed"
-        }
-      ],
-      "generated_at": "2026-07-18T01:56:28.017Z"
-    },
-    {
-      "candidate_id": "MAC-370e693286fcbd49",
-      "task_type": "entity_resolution",
-      "asset_id": "EN-26d6a1ef9f111518",
-      "raw_id": "RAW-19350550b241c6fb",
-      "source_ref": "SA-20ec5e611a154aba",
-      "source_hash": "6dead4b7876758eb",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "requires_review",
-      "proposal": {
-        "decision": "same_entity",
-        "canonical_name": "Audio Interaction",
-        "rationale": "The source text describes an AI model named 'Audio Interaction' that processes continuous audio streams. The entity candidate's canonical_name 'Audio Interaction' matches this model name exactly, and the source confirms it is an AI model (organization candidate context).",
-        "candidate_name": "Audio Interaction"
-      },
-      "evidence": [
-        {
-          "start": 249,
-          "end": 420,
-          "quote": "The \"Audio Interaction\" AI model processes continuous audio streams and combines tasks such as dialog, translation, transcription and sound recognition in a single system."
-        }
-      ],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "passed",
-          "detail": "task contract passed"
-        }
-      ],
-      "generated_at": "2026-07-18T01:30:32.862Z"
-    },
-    {
-      "candidate_id": "MAC-3cb025bc08777f90",
+      "candidate_id": "MAC-0e535124fb3fd994",
       "task_type": "claim_extraction",
-      "asset_id": "QA-0e1ea8576380a8ad",
-      "raw_id": "RAW-4f337f26964c2aae",
-      "source_ref": "SA-4050a2724d859170",
-      "source_hash": "4b19c7aca4ae922e",
+      "asset_id": "QA-ab9b443ce2d1ffe7",
+      "raw_id": "RAW-8987f60655068d8f",
+      "source_ref": "SA-beee9d1ce12746e1",
+      "source_hash": "a854106d7c686afe",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
-      "proposal": {
-        "claims": []
-      },
-      "evidence": [],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "failed",
-          "detail": "missing_source_evidence"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "missing_claim_proposal"
-        }
-      ],
-      "generated_at": "2026-07-18T01:30:22.457Z"
-    },
-    {
-      "candidate_id": "MAC-3f8cde900967eedf",
-      "task_type": "claim_extraction",
-      "asset_id": "QA-eb9c3c5398be775d",
-      "raw_id": "RAW-cabf4aa58b7e7791",
-      "source_ref": "SA-eff532ce9fcd07d3",
-      "source_hash": "d7c99deed646499e",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
       "proposal": {
         "claims": [
           {
-            "event_type": "investment",
-            "subject": "Hetz Ventures",
-            "object": "led seed round",
+            "event_type": "funding",
+            "subject": "Salesforce Ventures",
+            "object": "$250 million generative AI investment fund",
             "evidence_index": 0
           },
           {
-            "event_type": "deployment",
-            "subject": "Willow platform",
-            "object": "deployed internally across more than 5000 employees at Wix",
+            "event_type": "capital_investment",
+            "subject": "Salesforce Ventures",
+            "object": "You.com",
             "evidence_index": 1
           }
         ]
       },
       "evidence": [
         {
-          "start": 493,
-          "end": 527,
-          "quote": "The round was led by Hetz Ventures"
+          "start": 347,
+          "end": 407,
+          "quote": "today announced a $250 million generative AI investment fund"
         },
         {
-          "start": 4377,
-          "end": 4450,
-          "quote": "the platform has been deployed internally across more than 5000 employees"
-        }
-      ],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "unsupported_claim_event_type:0"
-        }
-      ],
-      "generated_at": "2026-07-18T01:30:31.527Z"
-    },
-    {
-      "candidate_id": "MAC-402082039fbbec99",
-      "task_type": "entity_resolution",
-      "asset_id": "EN-89e866844eab7732",
-      "raw_id": "RAW-b39b320df06285f4",
-      "source_ref": "SA-555778c17ccc468e",
-      "source_hash": "58b13676a48b64b6",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "requires_review",
-      "proposal": {
-        "decision": "same_entity",
-        "canonical_name": "Meta",
-        "rationale": "The candidate name 'Meta 在其 AI 应用中' translates to 'Meta in its AI app', which refers to the same organization 'Meta' described in the source text as the creator of the standalone Meta AI app and its features.",
-        "candidate_name": "Meta 在其 AI 应用中"
-      },
-      "evidence": [
-        {
-          "start": 249,
-          "end": 369,
-          "quote": "The standalone Meta AI app now has a “For You” section that populates a list of clickbait-style stories for you to read."
+          "start": 409,
+          "end": 491,
+          "quote": "which it said has already invested in four startups: search engine upstart You.com"
         }
       ],
       "gate_results": [
@@ -692,10 +398,84 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-07-18T01:30:34.139Z"
+      "generated_at": "2026-07-18T04:03:19.502Z"
     },
     {
-      "candidate_id": "MAC-43893de863a47f3b",
+      "candidate_id": "MAC-143ae3148221553e",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-319ba03cb6f24658",
+      "raw_id": "RAW-0cbdeb99f010eb58",
+      "source_ref": "SA-c7a93c788b72b6a4",
+      "source_hash": "0b12a93b8e5ac608",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "product_release",
+            "subject": "Notion",
+            "object": "Notion Developer Platform",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "pricing_change",
+            "subject": "Notion",
+            "object": "Workers credit system free through August",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "partnership",
+            "subject": "Notion",
+            "object": "Claude Code, Cursor, Codex, and Decagon",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 169,
+          "end": 503,
+          "quote": "In a livestreamed product announcement on Wednesday, the company, known best for its collaborative note-taking app, introduced a new developer platform that extends the capabilities of its custom AI agents, connects with external agents, and allows teams to build automated multistep workflows that can pull in data from any database."
+        },
+        {
+          "start": 2251,
+          "end": 2389,
+          "quote": "The Workers will use the same credit system as Custom Agents, but Notion is making this free through August, so developers can experiment."
+        },
+        {
+          "start": 3291,
+          "end": 3414,
+          "quote": "At launch, Notion says that Claude Code, Cursor, Codex, and Decagon are supported partner agents, but it plans to add more."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T04:03:14.083Z"
+    },
+    {
+      "candidate_id": "MAC-1dc5a3a7f846340b",
       "task_type": "entity_resolution",
       "asset_id": "EN-11cf7e437e02b626",
       "raw_id": "RAW-1826eab3024fea74",
@@ -703,12 +483,12 @@
       "source_hash": "b8f9423db67b2b55",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "requires_review",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
       "proposal": {
-        "decision": "same_entity",
+        "decision": "distinct_entity",
         "canonical_name": "Contrario",
-        "rationale": "The ENTITY_CANDIDATE canonical_name 'Contrario' matches the organization described throughout the SOURCE_TEXT, which is a San Francisco-based startup founded by Arya Marwaha and Aditya Sood that operates an AI recruiting platform.",
+        "rationale": "The candidate entity 'Contrario' is a San Francisco-based AI recruiting startup founded by Arya Marwaha and Aditya Sood. The verified alternative 'Intel' is a semiconductor company. The source text describes Contrario's business model, funding, and operations, none of which relate to Intel. There is no evidence in the source that Contrario is an alias for or the same entity as Intel.",
         "candidate_name": "Contrario"
       },
       "evidence": [
@@ -740,417 +520,16 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-07-18T01:30:32.854Z"
+      "generated_at": "2026-07-18T04:03:23.688Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "codex-data-review",
+        "reviewed_at": "2026-07-18T04:19:04.455Z",
+        "note": "queue-closeout:reviewed_as_distinct_entity"
+      }
     },
     {
-      "candidate_id": "MAC-4cfab1846a34096b",
-      "task_type": "claim_extraction",
-      "asset_id": "QA-4f5810438c08f6c5",
-      "raw_id": "RAW-dadc5decf8161c71",
-      "source_ref": "SA-b1ff552d6ef021ff",
-      "source_hash": "2c15eccd8082b766",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
-      "proposal": {
-        "claims": [
-          {
-            "event_type": "commercial",
-            "subject": "Poolside",
-            "object": "launch its Laguna model family to the global AI community in April 2026",
-            "evidence_index": 0
-          },
-          {
-            "event_type": "commercial",
-            "subject": "Baseten",
-            "object": "deployed a preview version of Poolside’s Laguna M.1 model as a whitelabeled Model API accessible via an OpenAI-compatible interface directly through Baseten production infrastructure",
-            "evidence_index": 1
-          },
-          {
-            "event_type": "commercial",
-            "subject": "Baseten",
-            "object": "built a traffic sampling system that captures request headers and inputs at configurable sampling rates",
-            "evidence_index": 2
-          }
-        ]
-      },
-      "evidence": [
-        {
-          "start": 1069,
-          "end": 1219,
-          "quote": "As Poolside prepared to launch its Laguna model family to the global AI community in April 2026, the team faced a fundamental infrastructure challenge"
-        },
-        {
-          "start": 2245,
-          "end": 2436,
-          "quote": "Baseten deployed a preview version of Poolside’s Laguna M.1 model as a whitelabeled Model API accessible via an OpenAI-compatible interface directly through Baseten production infrastructure."
-        },
-        {
-          "start": 3218,
-          "end": 3377,
-          "quote": "To power Poolside’s proprietary training loop, Baseten built a traffic sampling system that captures request headers and inputs at configurable sampling rates."
-        }
-      ],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "unsupported_claim_event_type:0, unsupported_claim_event_type:1, unsupported_claim_event_type:2"
-        }
-      ],
-      "generated_at": "2026-07-18T01:30:29.244Z"
-    },
-    {
-      "candidate_id": "MAC-51914f9f79085dfc",
-      "task_type": "claim_extraction",
-      "asset_id": "QA-9fbae2e3d4a05bde",
-      "raw_id": "RAW-51335fc8b1ba221e",
-      "source_ref": "SA-79cf08a30260b3e1",
-      "source_hash": "e6fcc23b23bd27d8",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
-      "proposal": {
-        "claims": [
-          {
-            "event_type": "commercial",
-            "subject": "Alibaba",
-            "object": "Qwen3.7-Plus",
-            "evidence_index": 0
-          },
-          {
-            "event_type": "research",
-            "subject": "Qwen team",
-            "object": "English vocabulary learning app",
-            "evidence_index": 1
-          },
-          {
-            "event_type": "commercial",
-            "subject": "Qwen3.7-Plus",
-            "object": "Alibaba Cloud Model Studio",
-            "evidence_index": 2
-          }
-        ]
-      },
-      "evidence": [
-        {
-          "start": 195,
-          "end": 376,
-          "quote": "Alibaba has released Qwen3.7-Plus, a new AI model that combines visual understanding with agent capabilities, enabling it to autonomously operate graphical user interfaces and apps."
-        },
-        {
-          "start": 1294,
-          "end": 1523,
-          "quote": "Using Qwen3.7-Plus, the team had a hybrid agent system build an English vocabulary learning app. According to Qwen, the agent ran for over eleven hours, producing more than 10,000 lines of code across more than 1,000 agent calls."
-        },
-        {
-          "start": 3864,
-          "end": 4019,
-          "quote": "Qwen3.7-Plus is available through Alibaba Cloud Model Studio and, like its text-based sibling Qwen3.7-Max , is a proprietary offering with no open weights."
-        }
-      ],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "unsupported_claim_event_type:0, unsupported_claim_event_type:1, unsupported_claim_event_type:2"
-        }
-      ],
-      "generated_at": "2026-07-18T01:30:30.464Z"
-    },
-    {
-      "candidate_id": "MAC-54fe47cc6680418b",
-      "task_type": "claim_extraction",
-      "asset_id": "QA-32930bd7a374acfb",
-      "raw_id": "RAW-7aa72c94fca7b453",
-      "source_ref": "SA-640dfca34c1f17de",
-      "source_hash": "fc7f5626f728c06f",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
-      "proposal": {
-        "claims": [
-          {
-            "event_type": "release",
-            "subject": "Agent tasks REST API",
-            "object": "Copilot Pro, Pro+, and Max users",
-            "evidence_index": 0
-          }
-        ]
-      },
-      "evidence": [
-        {
-          "start": 18,
-          "end": 177,
-          "quote": "Copilot Pro, Pro+, and Max users can now programmatically start and track Copilot cloud agent tasks with the Agent tasks REST API, available in public preview."
-        }
-      ],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "unsupported_claim_event_type:0"
-        }
-      ],
-      "generated_at": "2026-07-18T01:30:25.456Z"
-    },
-    {
-      "candidate_id": "MAC-591ebe9f24997751",
-      "task_type": "claim_extraction",
-      "asset_id": "QA-86c7317aeb3dc129",
-      "raw_id": "RAW-d423062ba3e22cbc",
-      "source_ref": "SA-4eb879636b660a2b",
-      "source_hash": "6d3eb6fd87fef569",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
-      "proposal": {
-        "claims": []
-      },
-      "evidence": [],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "failed",
-          "detail": "missing_source_evidence"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "missing_claim_proposal"
-        }
-      ],
-      "generated_at": "2026-07-18T01:30:27.674Z"
-    },
-    {
-      "candidate_id": "MAC-6cfcc45963bc3518",
-      "task_type": "claim_extraction",
-      "asset_id": "QA-cf63e989ebc735c9",
-      "raw_id": "RAW-6345f81b58dd876f",
-      "source_ref": "SA-7259a22809df5ad6",
-      "source_hash": "fe7a80cd1e0ecf32",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
-      "proposal": {
-        "claims": [
-          {
-            "event_type": "commercial",
-            "subject": "LGND",
-            "object": "Union.ai",
-            "evidence_index": 0
-          },
-          {
-            "event_type": "commercial",
-            "subject": "LGND",
-            "object": "LGND API",
-            "evidence_index": 1
-          },
-          {
-            "event_type": "hardware",
-            "subject": "LGND",
-            "object": "160 GPUs across 40 nodes",
-            "evidence_index": 2
-          }
-        ]
-      },
-      "evidence": [
-        {
-          "start": 4308,
-          "end": 4352,
-          "quote": "LGND signed with Union.ai on a 30-day trial."
-        },
-        {
-          "start": 5409,
-          "end": 5610,
-          "quote": "In March 2026, LGND launched its API into public beta, a product that lets developers search satellite and aerial imagery using natural language queries or coordinates, with no model training required."
-        },
-        {
-          "start": 1902,
-          "end": 2010,
-          "quote": "We scaled from single-node experiments to 160 GPUs across 40 nodes without changing a line of workflow code."
-        }
-      ],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "unsupported_claim_event_type:0, unsupported_claim_event_type:1, unsupported_claim_event_type:2"
-        }
-      ],
-      "generated_at": "2026-07-18T01:30:31.719Z"
-    },
-    {
-      "candidate_id": "MAC-7a3e74a7f5ddc1f0",
-      "task_type": "qa_repair",
-      "asset_id": "QA-c09eade1bcc677d0",
-      "raw_id": "RAW-5abcafa1671ab673",
-      "source_ref": "SA-402ff9ab4440dc11",
-      "source_hash": "0f99cfb6ed9d5477",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "requires_review",
-      "proposal": {
-        "action": "recollect_original",
-        "reason": "The QA_REASON states 'event_not_ai_relevant', but the source text explicitly describes Enjamb as building 'autonomous AI agents' and an 'AI-native research workspace', making it directly relevant to AI industry facts."
-      },
-      "evidence": [
-        {
-          "start": 385,
-          "end": 696,
-          "quote": "Enjamb is the first agentic research workspace for R&D teams. We build autonomous AI agents that execute the full research lifecycle — literature review, methodology design, data analysis, grant discovery, and manuscript drafting — inside a single collaborative platform built for how research actually happens."
-        }
-      ],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "passed",
-          "detail": "task contract passed"
-        }
-      ],
-      "generated_at": "2026-07-18T01:56:30.177Z"
-    },
-    {
-      "candidate_id": "MAC-88d5d1cfabadbbcc",
-      "task_type": "entity_resolution",
-      "asset_id": "EN-7814459b3f23f455",
-      "raw_id": "RAW-c4d2d2aca37564d5",
-      "source_ref": "SA-270a8ad9f0ffca0d",
-      "source_hash": "cbc827e34e57c8c5",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
-      "proposal": {
-        "decision": "same_entity",
-        "canonical_name": "Clara",
-        "rationale": "The ENTITY_CANDIDATE canonical_name 'Clara' matches the organization described in SOURCE_TEXT as 'Clara: an AI-powered primary care doctor' launching with a $12M pre-seed round.",
-        "candidate_name": "Clara"
-      },
-      "evidence": [
-        {
-          "start": 169,
-          "end": 232,
-          "quote": "Today we're launching Clara: an AI-powered primary care doctor."
-        }
-      ],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "failed",
-          "detail": "unsupported_numeric_fact:$12m"
-        },
-        {
-          "gate": "task_contract",
-          "status": "passed",
-          "detail": "task contract passed"
-        }
-      ],
-      "generated_at": "2026-07-18T01:30:33.359Z"
-    },
-    {
-      "candidate_id": "MAC-8da8070858101f13",
+      "candidate_id": "MAC-42d243101c9e9a70",
       "task_type": "claim_extraction",
       "asset_id": "QA-14f7e21e9065a02d",
       "raw_id": "RAW-8d567777f2c7d603",
@@ -1158,7 +537,7 @@
       "source_hash": "d526f53756379451",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
+      "prompt_version": "model-assist-2026-07-18.2",
       "status": "rejected",
       "proposal": {
         "claims": []
@@ -1186,10 +565,305 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-07-18T01:30:23.490Z"
+      "generated_at": "2026-07-18T04:03:11.242Z"
     },
     {
-      "candidate_id": "MAC-947ac504aeb9ddf3",
+      "candidate_id": "MAC-47f5d128413a4a9d",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-13782044531d808f",
+      "raw_id": "RAW-d08052964c5ef752",
+      "source_ref": "SA-674d5bea73798157",
+      "source_hash": "322f4abc3f00ddfa",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "missing_claim_proposal"
+        }
+      ],
+      "generated_at": "2026-07-18T04:03:12.102Z"
+    },
+    {
+      "candidate_id": "MAC-4ed3fd2d3343d784",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-bc8a00f7f6fb535f",
+      "raw_id": "RAW-1e3a9ef618b2eaaa",
+      "source_ref": "SA-82a6a74110f7dc75",
+      "source_hash": "0f65e48b7a94ac7e",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "Travelers",
+        "rationale": "The candidate entity 'Travelers' refers to an insurance company that deployed an AI system, while the verified alternative 'OpenAI' is the provider of the Realtime API used in that system. The source text describes a customer-vendor relationship, not entity identity.",
+        "candidate_name": "Travelers"
+      },
+      "evidence": [
+        {
+          "start": 38,
+          "end": 202,
+          "quote": "Travelers Insurance deployed a fully autonomous voice system powered by OpenAI’s Realtime API across all US states as of June 2, 2026, according to the OpenAI Blog."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T04:03:27.973Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "codex-data-review",
+        "reviewed_at": "2026-07-18T04:19:04.455Z",
+        "note": "queue-closeout:reviewed_as_distinct_entity"
+      }
+    },
+    {
+      "candidate_id": "MAC-507f789af0e46bc7",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-3282aff423001970",
+      "raw_id": "RAW-74f0266d8377357d",
+      "source_ref": "SA-ac896080230a5fbd",
+      "source_hash": "2639a71428b94fb5",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Parasail",
+            "object": "$32 million Series A",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "financial_performance",
+            "subject": "Parasail",
+            "object": "500 billion tokens a day",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "funding",
+            "subject": "Elicit",
+            "object": "$22 million Series A",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 791,
+          "end": 833,
+          "quote": "Parasail has raised a $32 million Series A"
+        },
+        {
+          "start": 334,
+          "end": 488,
+          "quote": "Parasail provides a cloud computing service to companies running AI models for inference, and Henry told TechCrunch it generates 500 billion tokens a day."
+        },
+        {
+          "start": 1770,
+          "end": 1884,
+          "quote": "Elicit, a startup that has raised a $22 million Series A to develop a research assistant for scientific literature"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T04:03:14.584Z"
+    },
+    {
+      "candidate_id": "MAC-57b58f6c569816e8",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-07c370b082ffd370",
+      "raw_id": "RAW-c69edca299c9008c",
+      "source_ref": "SA-4e079c5ff3c5f2aa",
+      "source_hash": "f5d12aa282c1d32e",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "Inference.ai",
+        "rationale": "The candidate entity Inference.ai is a GPU cloud infrastructure platform co-founded by John Yue and Michael Yu. The source text mentions NVIDIA, Intel, Meta, Google, and Microsoft as separate entities that manufacture chips or purchase GPUs, but none of the VERIFIED_ALTERNATIVES match the candidate's canonical name. The quote shows Inference.ai is distinct from these companies.",
+        "candidate_name": "Inference.ai"
+      },
+      "evidence": [
+        {
+          "start": 1117,
+          "end": 1288,
+          "quote": "Yue and Yu are the co-founders of Inference.ai , a platform that provides infrastructure-as-a-service cloud GPU compute through partnerships with third-party data centers."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T04:03:23.696Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "codex-data-review",
+        "reviewed_at": "2026-07-18T04:19:04.455Z",
+        "note": "queue-closeout:reviewed_as_distinct_entity"
+      }
+    },
+    {
+      "candidate_id": "MAC-5b3da81a7a81065a",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-cf63e989ebc735c9",
+      "raw_id": "RAW-6345f81b58dd876f",
+      "source_ref": "SA-7259a22809df5ad6",
+      "source_hash": "fe7a80cd1e0ecf32",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "LGND",
+            "object": "$9M seed round",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "hardware_deployment",
+            "subject": "LGND",
+            "object": "160 GPUs across 40 nodes",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "product_release",
+            "subject": "LGND",
+            "object": "API into public beta",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 613,
+          "end": 680,
+          "quote": "they're backed by a $9M seed round led by Javelin Venture Partners."
+        },
+        {
+          "start": 1902,
+          "end": 2010,
+          "quote": "We scaled from single-node experiments to 160 GPUs across 40 nodes without changing a line of workflow code."
+        },
+        {
+          "start": 5409,
+          "end": 5610,
+          "quote": "In March 2026, LGND launched its API into public beta, a product that lets developers search satellite and aerial imagery using natural language queries or coordinates, with no model training required."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T04:03:20.339Z"
+    },
+    {
+      "candidate_id": "MAC-6e9253e362a3a0b3",
       "task_type": "claim_extraction",
       "asset_id": "QA-0fec1619c1fa07fb",
       "raw_id": "RAW-f56e45c5410f6ea0",
@@ -1197,7 +871,7 @@
       "source_hash": "a5b43e60c71cb2fc",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
+      "prompt_version": "model-assist-2026-07-18.2",
       "status": "rejected",
       "proposal": {
         "claims": []
@@ -1225,76 +899,36 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-07-18T01:30:22.799Z"
+      "generated_at": "2026-07-18T04:03:10.636Z"
     },
     {
-      "candidate_id": "MAC-a0fac3e9f8e5f269",
-      "task_type": "entity_resolution",
-      "asset_id": "EN-e2a93bc5095dec6c",
-      "raw_id": "RAW-677a08e4585a97f4",
-      "source_ref": "SA-a56643474da704ec",
-      "source_hash": "32eb1e0dba799098",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "requires_review",
-      "proposal": {
-        "decision": "distinct_entity",
-        "canonical_name": "Entire",
-        "rationale": "The source text describes Entire as a new company founded by Thomas Dohmke, the former CEO of GitHub. It is a separate legal entity from GitHub, not a publisher, component supplier, or the same entity. The candidate name 'Ex-GitHub' refers to the founder's former role, not the company itself.",
-        "candidate_name": "Ex-GitHub"
-      },
-      "evidence": [
-        {
-          "start": 200,
-          "end": 482,
-          "quote": "Thomas Dohmke , who led GitHub through its exponential growth under Microsoft and oversaw the launch of GitHub Copilot — the product that arguably kicked off the AI coding revolution — has unveiled Entire , a new company building what he calls “the world’s next developer platform.”"
-        }
-      ],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "passed",
-          "detail": "task contract passed"
-        }
-      ],
-      "generated_at": "2026-07-18T01:30:35.652Z"
-    },
-    {
-      "candidate_id": "MAC-aae9db0e0f9c1870",
+      "candidate_id": "MAC-6f2deadf4ecad255",
       "task_type": "qa_repair",
-      "asset_id": "QA-831d4fd67a941b06",
-      "raw_id": "RAW-38509fa201e7675a",
-      "source_ref": "SA-99dfca8ede079a01",
-      "source_hash": "162494decb60a632",
+      "asset_id": "QA-c09eade1bcc677d0",
+      "raw_id": "RAW-5abcafa1671ab673",
+      "source_ref": "SA-402ff9ab4440dc11",
+      "source_hash": "0f99cfb6ed9d5477",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "requires_review",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
       "proposal": {
-        "action": "keep_qa",
-        "reason": "The source text describes an AI-relevant event: the launch of an unmanned logistics vehicle brand featuring an AI-powered autonomous driving system ('大模型智驾') developed with a partner."
+        "action": "extract_claim",
+        "reason": "The source text describes a concrete AI company funding event.",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Enjamb",
+            "object": "$650K pre-seed funding round",
+            "evidence_index": 0
+          }
+        ]
       },
       "evidence": [
         {
-          "start": 525,
-          "end": 580,
-          "quote": "东风汽车联手九识智能自研大模型智驾“九识智驾 Zelos Inside”，号称拥有 1.3 亿公里真实路况验证"
+          "start": 286,
+          "end": 384,
+          "quote": "Today, we're announcing our $650K pre-seed funding round, backed by Y Combinator and Founders Inc."
         }
       ],
       "gate_results": [
@@ -1319,10 +953,16 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-07-18T01:30:35.675Z"
+      "generated_at": "2026-07-18T04:03:26.530Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "codex-data-review",
+        "reviewed_at": "2026-07-18T04:19:04.455Z",
+        "note": "queue-closeout:reviewed_exact_span_claim_candidate"
+      }
     },
     {
-      "candidate_id": "MAC-b0485a1507c9aebf",
+      "candidate_id": "MAC-8472eec330a0fec9",
       "task_type": "fde_enrichment",
       "asset_id": "FDE-d0a39c8df546833a",
       "raw_id": "RAW-1e3a9ef618b2eaaa",
@@ -1330,7 +970,7 @@
       "source_hash": "0f65e48b7a94ac7e",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
+      "prompt_version": "model-assist-2026-07-18.2",
       "status": "rejected",
       "proposal": {
         "fields": [
@@ -1351,17 +991,17 @@
           },
           {
             "field": "delivery_model",
-            "value": "Fully autonomous voice system",
+            "value": "fully autonomous voice system",
             "evidence_index": 3
           },
           {
             "field": "team_composition",
-            "value": "Claim professionals redirect their effort toward complex cases requiring human judgment",
+            "value": "claim professionals redirect their effort toward complex cases requiring human judgment",
             "evidence_index": 4
           },
           {
             "field": "reported_need",
-            "value": "Critical operational constraint: Travelers processed more than 1.5 million claims and paid over $23 billion in losses last year, with catastrophe events alone capable of generating 100,000+ claims within days.",
+            "value": "Travelers processed more than 1.5 million claims and paid over $23 billion in losses last year, with catastrophe events alone capable of generating 100,000+ claims within days.",
             "evidence_index": 5
           },
           {
@@ -1390,9 +1030,10 @@
             "field": "reported_outcomes",
             "value": [
               "Between 85–90% of customers now complete their claim submission entirely through the AI system",
-              "Eliminating wait times and human involvement for routine filings",
+              "eliminating wait times and human involvement for routine filings",
               "24/7 support that does not create bottlenecks during surge events",
-              "Claim professionals redirect their effort toward complex cases requiring human judgment"
+              "reducing operational cost per claim",
+              "improving customer satisfaction during high-stress moments"
             ],
             "evidence_index": 9
           }
@@ -1425,9 +1066,9 @@
           "quote": "claim professionals redirect their effort toward complex cases requiring human judgment"
         },
         {
-          "start": 592,
+          "start": 652,
           "end": 828,
-          "quote": "The deployment addresses a critical operational constraint: Travelers processed more than 1.5 million claims and paid over $23 billion in losses last year, with catastrophe events alone capable of generating 100,000+ claims within days."
+          "quote": "Travelers processed more than 1.5 million claims and paid over $23 billion in losses last year, with catastrophe events alone capable of generating 100,000+ claims within days."
         },
         {
           "start": 829,
@@ -1472,18 +1113,18 @@
           "detail": "invalid_fde_field_type:8"
         }
       ],
-      "generated_at": "2026-07-18T01:30:40.700Z"
+      "generated_at": "2026-07-18T04:03:32.875Z"
     },
     {
-      "candidate_id": "MAC-b11e64ea8556d5f4",
+      "candidate_id": "MAC-87d81977c85c431d",
       "task_type": "claim_extraction",
-      "asset_id": "QA-dd52b30b5d510768",
-      "raw_id": "RAW-539c8b0ab24f6cf7",
-      "source_ref": "SA-a112b33fd159eab0",
-      "source_hash": "d390b13c32bc6b1e",
+      "asset_id": "QA-86c7317aeb3dc129",
+      "raw_id": "RAW-d423062ba3e22cbc",
+      "source_ref": "SA-4eb879636b660a2b",
+      "source_hash": "6d3eb6fd87fef569",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
+      "prompt_version": "model-assist-2026-07-18.2",
       "status": "rejected",
       "proposal": {
         "claims": []
@@ -1511,7 +1152,386 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-07-18T01:30:30.249Z"
+      "generated_at": "2026-07-18T04:03:17.200Z"
+    },
+    {
+      "candidate_id": "MAC-9001e62295c5ef42",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-3938f71813536eb5",
+      "raw_id": "RAW-16a883d831e6cceb",
+      "source_ref": "SA-18a8f9c5425449b0",
+      "source_hash": "4607a9d4305b3279",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "missing_claim_proposal"
+        }
+      ],
+      "generated_at": "2026-07-18T04:03:14.284Z"
+    },
+    {
+      "candidate_id": "MAC-9112aaf6b7387362",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-47a951d9f23abfa7",
+      "raw_id": "RAW-2b432797d21e51dd",
+      "source_ref": "SA-b5fbb0adae40249b",
+      "source_hash": "4a3ef0512839babc",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "missing_claim_proposal"
+        }
+      ],
+      "generated_at": "2026-07-18T04:03:15.422Z"
+    },
+    {
+      "candidate_id": "MAC-94e829f2756b2c92",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-f3d91baa6bf5cab2",
+      "raw_id": "RAW-b711d96824e9782c",
+      "source_ref": "SA-b6596eca27615c41",
+      "source_hash": "58e472ba690ccb5e",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "missing_claim_proposal"
+        }
+      ],
+      "generated_at": "2026-07-18T04:03:21.299Z"
+    },
+    {
+      "candidate_id": "MAC-9643eff7e1eb6b4a",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-5c178682f5573d29",
+      "raw_id": "RAW-2de12d7dd2377840",
+      "source_ref": "SA-376a021f0cce315b",
+      "source_hash": "62f48a67236f5d86",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "Y Combinator-backed Mandel AI",
+        "rationale": "The candidate entity is 'Y Combinator-backed Mandel AI', an AI supply chain startup. The verified alternative is 'Intel', a semiconductor company. The source text discusses Mandel AI's funding and product, and mentions Y Combinator as an investor, but contains no mention of Intel. There is no evidence linking the candidate to the verified alternative.",
+        "candidate_name": "Y Combinator-backed Mandel AI"
+      },
+      "evidence": [
+        {
+          "start": 350,
+          "end": 444,
+          "quote": "Mandel AI has raised $3.9 million Seed funding to build coordination for global supply chains."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T04:03:23.528Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "codex-data-review",
+        "reviewed_at": "2026-07-18T04:19:04.455Z",
+        "note": "queue-closeout:reviewed_as_distinct_entity"
+      }
+    },
+    {
+      "candidate_id": "MAC-9a39780d5e6c4106",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-26d6a1ef9f111518",
+      "raw_id": "RAW-19350550b241c6fb",
+      "source_ref": "SA-20ec5e611a154aba",
+      "source_hash": "6dead4b7876758eb",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "Audio Interaction",
+        "rationale": "The candidate 'Audio Interaction' is described as an open-source voice model that processes continuous audio streams. The verified alternative 'Google' (with alias 'Gemini') is a different organization. The source text mentions 'Gemini 3 Flash' only as a benchmark comparison, stating the Audio Interaction model 'beat models such as Gemini 3 Flash in proactive noise detection tests.' This is a competitive comparison, not evidence of entity identity or a relationship like publisher_of or component_supplier. Therefore, they are distinct entities.",
+        "candidate_name": "Audio Interaction"
+      },
+      "evidence": [
+        {
+          "start": 660,
+          "end": 857,
+          "quote": "the model processes listening and speaking in parallel. This minimizes the waiting time for responses and allows the system to beat models such as Gemini 3 Flash in proactive noise detection tests."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T04:03:24.425Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "codex-data-review",
+        "reviewed_at": "2026-07-18T04:19:04.455Z",
+        "note": "queue-closeout:reviewed_as_distinct_entity"
+      }
+    },
+    {
+      "candidate_id": "MAC-a1deb3a29a7c8f9a",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-4896e30961575873",
+      "raw_id": "RAW-7eebcea0ad7fa49a",
+      "source_ref": "SA-f97e57e5a45952c0",
+      "source_hash": "a8db1b9928a7ee8b",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "missing_claim_proposal"
+        }
+      ],
+      "generated_at": "2026-07-18T04:03:15.399Z"
+    },
+    {
+      "candidate_id": "MAC-a6fbec5115564f4a",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-34544eff4485771c",
+      "raw_id": "RAW-f3f5b90be32f8b0f",
+      "source_ref": "SA-3ee264719beebc81",
+      "source_hash": "54e710c65d77cd77",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "missing_claim_proposal"
+        }
+      ],
+      "generated_at": "2026-07-18T04:03:13.302Z"
+    },
+    {
+      "candidate_id": "MAC-b22d8f856334654e",
+      "task_type": "qa_repair",
+      "asset_id": "QA-831d4fd67a941b06",
+      "raw_id": "RAW-38509fa201e7675a",
+      "source_ref": "SA-99dfca8ede079a01",
+      "source_hash": "162494decb60a632",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "The source describes a concrete AI event: the product release of an autonomous logistics vehicle brand with specific models and an order commitment.",
+        "claims": [
+          {
+            "event_type": "product_release",
+            "subject": "东风汽车",
+            "object": "东风 OpenVAN 无人物流车品牌及四款全场景无人物流车产品",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "procurement_contract",
+            "subject": "东风汽车",
+            "object": "超过 4000 台无人物流车订单",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 348,
+          "end": 486,
+          "quote": "东风汽车无人物流车品牌“东风 OpenVAN”6 日（今天）正式发布，四款东风 OpenVAN 全场景无人物流车产品亮相。发布会现场，东风汽车综合物流、新能源运营、装备制造、城市服务及零售配送等多元领域的行业龙头企业签约，签约订单超过 4000 台，预计将于 8 月进行交付。"
+        },
+        {
+          "start": 348,
+          "end": 409,
+          "quote": "东风汽车无人物流车品牌“东风 OpenVAN”6 日（今天）正式发布，四款东风 OpenVAN 全场景无人物流车产品亮相。"
+        },
+        {
+          "start": 409,
+          "end": 486,
+          "quote": "发布会现场，东风汽车综合物流、新能源运营、装备制造、城市服务及零售配送等多元领域的行业龙头企业签约，签约订单超过 4000 台，预计将于 8 月进行交付。"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T04:03:28.254Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "codex-data-review",
+        "reviewed_at": "2026-07-18T04:19:04.455Z",
+        "note": "queue-closeout:reviewed_exact_span_claim_candidate"
+      }
     },
     {
       "candidate_id": "MAC-b44ea8f253a026ff",
@@ -1577,66 +1597,31 @@
       "generated_at": "2026-07-18T01:30:29.198Z"
     },
     {
-      "candidate_id": "MAC-bea8e37f07f815b4",
+      "candidate_id": "MAC-b74147fd9a11df9b",
       "task_type": "claim_extraction",
-      "asset_id": "QA-47a951d9f23abfa7",
-      "raw_id": "RAW-2b432797d21e51dd",
-      "source_ref": "SA-b5fbb0adae40249b",
-      "source_hash": "4a3ef0512839babc",
+      "asset_id": "QA-eb9c3c5398be775d",
+      "raw_id": "RAW-cabf4aa58b7e7791",
+      "source_ref": "SA-eff532ce9fcd07d3",
+      "source_hash": "d7c99deed646499e",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
       "proposal": {
-        "claims": []
-      },
-      "evidence": [],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "failed",
-          "detail": "missing_source_evidence"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "missing_claim_proposal"
-        }
-      ],
-      "generated_at": "2026-07-18T01:30:26.457Z"
-    },
-    {
-      "candidate_id": "MAC-c2e59e45fef61b3f",
-      "task_type": "entity_resolution",
-      "asset_id": "EN-bc8a00f7f6fb535f",
-      "raw_id": "RAW-1e3a9ef618b2eaaa",
-      "source_ref": "SA-82a6a74110f7dc75",
-      "source_hash": "0f65e48b7a94ac7e",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "requires_review",
-      "proposal": {
-        "decision": "same_entity",
-        "canonical_name": "Travelers",
-        "rationale": "The SOURCE_TEXT refers to 'Travelers Insurance' and 'Travelers' deploying an AI voice claims assistant. This matches the ENTITY_CANDIDATE canonical name 'Travelers' and its organization type.",
-        "candidate_name": "Travelers"
+        "claims": [
+          {
+            "event_type": "deployment",
+            "subject": "Willow platform",
+            "object": "deployed internally across more than 5000 employees at Wix",
+            "evidence_index": 0
+          }
+        ]
       },
       "evidence": [
         {
-          "start": 38,
-          "end": 202,
-          "quote": "Travelers Insurance deployed a fully autonomous voice system powered by OpenAI’s Realtime API across all US states as of June 2, 2026, according to the OpenAI Blog."
+          "start": 4377,
+          "end": 4450,
+          "quote": "the platform has been deployed internally across more than 5000 employees"
         }
       ],
       "gate_results": [
@@ -1661,73 +1646,56 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-07-18T01:30:34.141Z"
+      "generated_at": "2026-07-18T04:03:21.272Z"
     },
     {
-      "candidate_id": "MAC-c581087d31072701",
+      "candidate_id": "MAC-c4bd6e7ef4ca60c5",
       "task_type": "claim_extraction",
-      "asset_id": "QA-4896e30961575873",
-      "raw_id": "RAW-7eebcea0ad7fa49a",
-      "source_ref": "SA-f97e57e5a45952c0",
-      "source_hash": "a8db1b9928a7ee8b",
+      "asset_id": "QA-9fbae2e3d4a05bde",
+      "raw_id": "RAW-51335fc8b1ba221e",
+      "source_ref": "SA-79cf08a30260b3e1",
+      "source_hash": "e6fcc23b23bd27d8",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
-      "proposal": {
-        "claims": []
-      },
-      "evidence": [],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "failed",
-          "detail": "missing_source_evidence"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "missing_claim_proposal"
-        }
-      ],
-      "generated_at": "2026-07-18T01:30:26.747Z"
-    },
-    {
-      "candidate_id": "MAC-c7c21ea2ff1ffada",
-      "task_type": "claim_extraction",
-      "asset_id": "QA-f3d91baa6bf5cab2",
-      "raw_id": "RAW-b711d96824e9782c",
-      "source_ref": "SA-b6596eca27615c41",
-      "source_hash": "58e472ba690ccb5e",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
       "proposal": {
         "claims": [
           {
-            "event_type": "research",
-            "subject": "Javelin Strategy & Research",
-            "object": "Galileo",
+            "event_type": "model_release",
+            "subject": "Alibaba",
+            "object": "Qwen3.7-Plus",
             "evidence_index": 0
+          },
+          {
+            "event_type": "pricing_change",
+            "subject": "Alibaba Cloud",
+            "object": "Qwen3.7-Plus",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "deployment",
+            "subject": "Qwen3.7-Plus",
+            "object": "Alibaba Cloud Model Studio",
+            "evidence_index": 2
           }
         ]
       },
       "evidence": [
         {
-          "start": 851,
-          "end": 1014,
-          "quote": "Galileo earned the top spot in Javelin Strategy & Research’s 2025 Digital Issuance Provider Scorecard, recognized for its flexible, secure, and API-first platform."
+          "start": 759,
+          "end": 863,
+          "quote": "Alibaba's Qwen team has released Qwen3.7-Plus, a multimodal model built on top of the text-only Qwen3.7."
+        },
+        {
+          "start": 4065,
+          "end": 4196,
+          "quote": "Qwen3.7-Plus costs $0.40 per million input tokens and $2.40 per million output tokens, compared to $2.50 and $7.50 for Qwen3.7-Max."
+        },
+        {
+          "start": 3864,
+          "end": 4019,
+          "quote": "Qwen3.7-Plus is available through Alibaba Cloud Model Studio and, like its text-based sibling Qwen3.7-Max , is a proprietary offering with no open weights."
         }
       ],
       "gate_results": [
@@ -1748,27 +1716,40 @@
         },
         {
           "gate": "task_contract",
-          "status": "failed",
-          "detail": "unsupported_claim_event_type:0"
+          "status": "passed",
+          "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-07-18T01:30:32.053Z"
+      "generated_at": "2026-07-18T04:03:19.321Z"
     },
     {
-      "candidate_id": "MAC-c7dc3a6b7113419a",
+      "candidate_id": "MAC-ca996e53ed07b0ff",
       "task_type": "claim_extraction",
-      "asset_id": "QA-1ddee04bb2234ffc",
-      "raw_id": "RAW-47f75f23e6b71c5b",
-      "source_ref": "SA-66650a454542427e",
-      "source_hash": "8f5699dbcc4f0886",
+      "asset_id": "QA-32930bd7a374acfb",
+      "raw_id": "RAW-7aa72c94fca7b453",
+      "source_ref": "SA-640dfca34c1f17de",
+      "source_hash": "fc7f5626f728c06f",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
       "proposal": {
-        "claims": []
+        "claims": [
+          {
+            "event_type": "product_release",
+            "subject": "Agent tasks REST API",
+            "object": "Copilot Pro, Pro+, and Max users",
+            "evidence_index": 0
+          }
+        ]
       },
-      "evidence": [],
+      "evidence": [
+        {
+          "start": 18,
+          "end": 177,
+          "quote": "Copilot Pro, Pro+, and Max users can now programmatically start and track Copilot cloud agent tasks with the Agent tasks REST API, available in public preview."
+        }
+      ],
       "gate_results": [
         {
           "gate": "source_hash",
@@ -1777,8 +1758,8 @@
         },
         {
           "gate": "exact_source_span",
-          "status": "failed",
-          "detail": "missing_source_evidence"
+          "status": "passed",
+          "detail": "all quotes match exact spans"
         },
         {
           "gate": "protected_facts",
@@ -1787,14 +1768,14 @@
         },
         {
           "gate": "task_contract",
-          "status": "failed",
-          "detail": "missing_claim_proposal"
+          "status": "passed",
+          "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-07-18T01:30:23.702Z"
+      "generated_at": "2026-07-18T04:03:14.109Z"
     },
     {
-      "candidate_id": "MAC-cb5b20bf10935cce",
+      "candidate_id": "MAC-d314e1311e6bf046",
       "task_type": "claim_extraction",
       "asset_id": "QA-2077bc2576a449b6",
       "raw_id": "RAW-6e1d42be8cf0eb45",
@@ -1802,35 +1783,35 @@
       "source_hash": "452857677d4ab6e9",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
       "proposal": {
         "claims": [
           {
-            "event_type": "research",
-            "subject": "OpenCV 5",
-            "object": "下一代 DNN 引擎",
+            "event_type": "product_release",
+            "subject": "OpenCV 团队",
+            "object": "OpenCV 5",
             "evidence_index": 0
           },
           {
-            "event_type": "research",
+            "event_type": "standard_specification",
             "subject": "OpenCV 5",
             "object": "ONNX 算子覆盖率",
             "evidence_index": 1
           },
           {
-            "event_type": "research",
+            "event_type": "model_release",
             "subject": "OpenCV 5",
-            "object": "更好的 3D 视觉",
+            "object": "下一代 DNN 引擎",
             "evidence_index": 2
           }
         ]
       },
       "evidence": [
         {
-          "start": 618,
-          "end": 728,
-          "quote": "下一代 DNN 引擎 ：基于图（graph-based）的架构，支持算子融合（fusions）、广泛的 ONNX 支持，以及对 Transformer 模型、视觉语言模型 / 大型语言模型（VLM / LLMs）的支持。"
+          "start": 15,
+          "end": 41,
+          "quote": "OpenCV 团队本周正式发布了 OpenCV 5。"
         },
         {
           "start": 313,
@@ -1838,205 +1819,9 @@
           "quote": "ONNX 算子覆盖率从 4.x 时期的不到 23% 增加到超 80%"
         },
         {
-          "start": 729,
-          "end": 765,
-          "quote": "更好的 3D 视觉 ：ChArUco 标定板、多相机标定以及可视化功能。"
-        }
-      ],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "failed",
-          "detail": "unsupported_numeric_fact:5"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "unsupported_claim_event_type:0, unsupported_claim_event_type:1, unsupported_claim_event_type:2"
-        }
-      ],
-      "generated_at": "2026-07-18T01:30:25.579Z"
-    },
-    {
-      "candidate_id": "MAC-ce342c658de978d9",
-      "task_type": "claim_extraction",
-      "asset_id": "QA-319ba03cb6f24658",
-      "raw_id": "RAW-0cbdeb99f010eb58",
-      "source_ref": "SA-c7a93c788b72b6a4",
-      "source_hash": "0b12a93b8e5ac608",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
-      "proposal": {
-        "claims": [
-          {
-            "event_type": "commercial",
-            "subject": "Notion",
-            "object": "Notion Developer Platform",
-            "evidence_index": 0
-          },
-          {
-            "event_type": "commercial",
-            "subject": "Notion",
-            "object": "Workers",
-            "evidence_index": 1
-          },
-          {
-            "event_type": "commercial",
-            "subject": "Notion",
-            "object": "External Agent API",
-            "evidence_index": 2
-          }
-        ]
-      },
-      "evidence": [
-        {
-          "start": 169,
-          "end": 503,
-          "quote": "In a livestreamed product announcement on Wednesday, the company, known best for its collaborative note-taking app, introduced a new developer platform that extends the capabilities of its custom AI agents, connects with external agents, and allows teams to build automated multistep workflows that can pull in data from any database."
-        },
-        {
-          "start": 1639,
-          "end": 1873,
-          "quote": "With its new Workers, Notion’s cloud-based environment for running custom code, customers can write their logic and deploy it to a secure sandbox (i.e., an isolated environment that keeps the code from interfering with other systems)."
-        },
-        {
-          "start": 3415,
-          "end": 3579,
-          "quote": "There’s an External Agent API, too, if teams want to connect their own internal agents with Notion, like those they’ve built specifically for their company’s needs."
-        }
-      ],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "unsupported_claim_event_type:0, unsupported_claim_event_type:1, unsupported_claim_event_type:2"
-        }
-      ],
-      "generated_at": "2026-07-18T01:30:26.694Z"
-    },
-    {
-      "candidate_id": "MAC-e63a18c341093098",
-      "task_type": "claim_extraction",
-      "asset_id": "QA-ab9b443ce2d1ffe7",
-      "raw_id": "RAW-8987f60655068d8f",
-      "source_ref": "SA-beee9d1ce12746e1",
-      "source_hash": "a854106d7c686afe",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
-      "proposal": {
-        "claims": [
-          {
-            "event_type": "commercial",
-            "subject": "Salesforce Ventures",
-            "object": "$250 million generative AI investment fund",
-            "evidence_index": 0
-          },
-          {
-            "event_type": "commercial",
-            "subject": "Salesforce Ventures",
-            "object": "You.com, Anthropic, Cohere, Hearth.AI",
-            "evidence_index": 1
-          },
-          {
-            "event_type": "commercial",
-            "subject": "Salesforce",
-            "object": "Einstein GPT generative AI pilot",
-            "evidence_index": 2
-          }
-        ]
-      },
-      "evidence": [
-        {
-          "start": 347,
-          "end": 407,
-          "quote": "today announced a $250 million generative AI investment fund"
-        },
-        {
-          "start": 409,
-          "end": 781,
-          "quote": "which it said has already invested in four startups: search engine upstart You.com, which introduced generative AI smarts a few months back; Anthropic, a heavily VC-backed AI startup from former employees of OpenAI, which developed ChatGPT; Cohere, a natural language processing (NLP) startup that recently partnered with Google ; and a stealthy startup called Hearth.AI ."
-        },
-        {
-          "start": 872,
-          "end": 1005,
-          "quote": "announcing a generative AI pilot they’re calling Einstein GPT, which brings ChatGPT-like features to the broader Salesforce platform."
-        }
-      ],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "unsupported_claim_event_type:0, unsupported_claim_event_type:1, unsupported_claim_event_type:2"
-        }
-      ],
-      "generated_at": "2026-07-18T01:30:30.696Z"
-    },
-    {
-      "candidate_id": "MAC-ec62a63c4fbd130b",
-      "task_type": "entity_resolution",
-      "asset_id": "EN-5c178682f5573d29",
-      "raw_id": "RAW-2de12d7dd2377840",
-      "source_ref": "SA-376a021f0cce315b",
-      "source_hash": "62f48a67236f5d86",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "requires_review",
-      "proposal": {
-        "decision": "same_entity",
-        "canonical_name": "Mandel AI",
-        "rationale": "The ENTITY_CANDIDATE canonical_name 'Y Combinator-backed Mandel AI' and the entity described in the SOURCE_TEXT both refer to the same organization. The source text explicitly mentions 'Mandel AI' and states it is 'backed by Y Combinator', matching the candidate name.",
-        "candidate_name": "Y Combinator-backed Mandel AI"
-      },
-      "evidence": [
-        {
-          "start": 24,
-          "end": 99,
-          "quote": "Y Combinator-backed Mandel AI raises $3.9M to automate global supply chains"
+          "start": 618,
+          "end": 728,
+          "quote": "下一代 DNN 引擎 ：基于图（graph-based）的架构，支持算子融合（fusions）、广泛的 ONNX 支持，以及对 Transformer 模型、视觉语言模型 / 大型语言模型（VLM / LLMs）的支持。"
         }
       ],
       "gate_results": [
@@ -2061,18 +1846,209 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-07-18T01:30:33.465Z"
+      "generated_at": "2026-07-18T04:03:13.692Z"
     },
     {
-      "candidate_id": "MAC-f1693fbe1d2c6eb6",
+      "candidate_id": "MAC-d7dea2c4ab7207e4",
       "task_type": "claim_extraction",
-      "asset_id": "QA-34544eff4485771c",
-      "raw_id": "RAW-f3f5b90be32f8b0f",
-      "source_ref": "SA-3ee264719beebc81",
-      "source_hash": "54e710c65d77cd77",
+      "asset_id": "QA-0e1ea8576380a8ad",
+      "raw_id": "RAW-4f337f26964c2aae",
+      "source_ref": "SA-4050a2724d859170",
+      "source_hash": "4b19c7aca4ae922e",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "pricing_change",
+            "subject": "OpenAI",
+            "object": "GPT-5 API",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "model_release",
+            "subject": "OpenAI",
+            "object": "GPT-5",
+            "evidence_index": 1
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 850,
+          "end": 1009,
+          "quote": "The top-level GPT-5 API costs $1.25 per 1 million tokens of input, and $10 per 1 million tokens for output (plus $0.125 per 1 million tokens for cached input)."
+        },
+        {
+          "start": 102,
+          "end": 212,
+          "quote": "OpenAI astounded the tech industry for the second time this week by launching its newest flagship model, GPT-5"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T04:03:11.151Z"
+    },
+    {
+      "candidate_id": "MAC-db79c05cd0aa2c80",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-e2a93bc5095dec6c",
+      "raw_id": "RAW-677a08e4585a97f4",
+      "source_ref": "SA-a56643474da704ec",
+      "source_hash": "32eb1e0dba799098",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "Ex-GitHub",
+        "rationale": "The candidate 'Ex-GitHub' refers to a new company founded by former GitHub CEO Thomas Dohmke, named 'Entire'. The source text states Dohmke 'has unveiled Entire, a new company'. This is a distinct organization from the verified alternatives Microsoft, Intel, and OpenAI. The relationship described (former CEO of GitHub, which was under Microsoft) does not make 'Ex-GitHub' the same entity as Microsoft.",
+        "candidate_name": "Ex-GitHub"
+      },
+      "evidence": [
+        {
+          "start": 200,
+          "end": 482,
+          "quote": "Thomas Dohmke , who led GitHub through its exponential growth under Microsoft and oversaw the launch of GitHub Copilot — the product that arguably kicked off the AI coding revolution — has unveiled Entire , a new company building what he calls “the world’s next developer platform.”"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T04:03:27.309Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "codex-data-review",
+        "reviewed_at": "2026-07-18T04:19:04.455Z",
+        "note": "queue-closeout:reviewed_as_distinct_entity"
+      }
+    },
+    {
+      "candidate_id": "MAC-db7e4721bbf570a3",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-359d7f46d53e704e",
+      "raw_id": "RAW-be9d78247d8d1bb4",
+      "source_ref": "SA-68466f414e5908d3",
+      "source_hash": "f74aafe68e818bcc",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "product_release",
+            "subject": "Google AI team",
+            "object": "Colab CLI",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "standard_specification",
+            "subject": "Colab CLI",
+            "object": "Apache 2.0 license",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "hardware_capacity",
+            "subject": "Colab CLI",
+            "object": "GPU and TPU provisioning",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 194,
+          "end": 244,
+          "quote": "This week, Google AI team released the Colab CLI ."
+        },
+        {
+          "start": 418,
+          "end": 470,
+          "quote": "The CLI is open source under the Apache 2.0 license."
+        },
+        {
+          "start": 1323,
+          "end": 1475,
+          "quote": "colab new provisions a session, with CPU as the default. Add --gpu T4 , --gpu L4 , --gpu A100 , or --gpu H100 for a GPU. TPU options are v5e1 and v6e1 ."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T04:03:16.793Z"
+    },
+    {
+      "candidate_id": "MAC-e02bf34827bfdd8c",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-56d5c5b907979c34",
+      "raw_id": "RAW-5c508d01a13443a7",
+      "source_ref": "SA-000d0036fd26233e",
+      "source_hash": "770be2dc1828a483",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
       "status": "rejected",
       "proposal": {
         "claims": []
@@ -2100,7 +2076,135 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-07-18T01:30:24.907Z"
+      "generated_at": "2026-07-18T04:03:16.296Z"
+    },
+    {
+      "candidate_id": "MAC-ec6653b13c6fa591",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-44ba13442e023cf7",
+      "raw_id": "RAW-85be239c10f6e0da",
+      "source_ref": "SA-773790ae6bb2c9ca",
+      "source_hash": "912378bfbf5910ef",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "organization_restructuring",
+            "subject": "字节跳动",
+            "object": "汽车品牌计划",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "research_result",
+            "subject": "联合国大学报告",
+            "object": "AI能耗降低25%",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "pricing_change",
+            "subject": "车规级存储芯片",
+            "object": "价格暴涨180%",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 476,
+          "end": 521,
+          "quote": "字节跳动发布声明，明确否认有造车或推出“豆包汽车”品牌的计划，并澄清与“赛豆”无股权合作。"
+        },
+        {
+          "start": 670,
+          "end": 708,
+          "quote": "精简 AI 指令中“谢谢”等礼貌用语，可让 ChatGPT 能耗降低 25%"
+        },
+        {
+          "start": 983,
+          "end": 1027,
+          "quote": "近三个月车规级存储芯片整体价格涨幅约 180%，导致十余家新能源车企上调售价或收紧优惠。"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T04:03:16.934Z"
+    },
+    {
+      "candidate_id": "MAC-f03b3f3b30dbbe89",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-7814459b3f23f455",
+      "raw_id": "RAW-c4d2d2aca37564d5",
+      "source_ref": "SA-270a8ad9f0ffca0d",
+      "source_hash": "cbc827e34e57c8c5",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "Clara",
+        "rationale": "The candidate 'Clara' is an AI-powered primary care doctor startup, while the verified alternative 'Meta' is a different company. The source text mentions Meta only as a former employer of a cofounder, which is a relationship (former employer) and does not indicate that Clara and Meta are the same entity.",
+        "candidate_name": "Clara"
+      },
+      "evidence": [
+        {
+          "start": 978,
+          "end": 1081,
+          "quote": "Zeeshan built the clinical products at Circle and has also held product design stints at Meta and Uber."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T04:03:24.067Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "codex-data-review",
+        "reviewed_at": "2026-07-18T04:19:04.455Z",
+        "note": "queue-closeout:reviewed_as_distinct_entity"
+      }
     },
     {
       "candidate_id": "MAC-f82680f65bb25a33",
@@ -2155,53 +2259,53 @@
       "generated_at": "2026-07-18T01:30:28.177Z"
     },
     {
-      "candidate_id": "MAC-ffa5b513a11b0a92",
+      "candidate_id": "MAC-fc38f4109ce37e17",
       "task_type": "claim_extraction",
-      "asset_id": "QA-44ba13442e023cf7",
-      "raw_id": "RAW-85be239c10f6e0da",
-      "source_ref": "SA-773790ae6bb2c9ca",
-      "source_hash": "912378bfbf5910ef",
+      "asset_id": "QA-4f5810438c08f6c5",
+      "raw_id": "RAW-dadc5decf8161c71",
+      "source_ref": "SA-b1ff552d6ef021ff",
+      "source_hash": "2c15eccd8082b766",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
       "proposal": {
         "claims": [
           {
-            "event_type": "policy",
-            "subject": "字节跳动",
-            "object": "造车或推出汽车品牌的计划",
+            "event_type": "partnership",
+            "subject": "Baseten",
+            "object": "Poolside",
             "evidence_index": 0
           },
           {
-            "event_type": "research",
-            "subject": "联合国大学报告",
-            "object": "AI能耗降低25%",
+            "event_type": "model_release",
+            "subject": "Poolside",
+            "object": "Laguna model family",
             "evidence_index": 1
           },
           {
-            "event_type": "commercial",
-            "subject": "车规级存储芯片",
-            "object": "价格涨幅约180%",
+            "event_type": "deployment",
+            "subject": "Baseten",
+            "object": "Laguna M.1 model preview",
             "evidence_index": 2
           }
         ]
       },
       "evidence": [
         {
-          "start": 476,
-          "end": 521,
-          "quote": "字节跳动发布声明，明确否认有造车或推出“豆包汽车”品牌的计划，并澄清与“赛豆”无股权合作。"
+          "start": 1901,
+          "end": 2178,
+          "quote": "Baseten deployed a comprehensive inference platform for Poolside that combines dedicated model hosting with the Baseten Inference Stack, the Baseten Frontier Gateway, billing infrastructure and training data tooling, all operational within weeks of the partnership kicking off."
         },
         {
-          "start": 670,
-          "end": 708,
-          "quote": "精简 AI 指令中“谢谢”等礼貌用语，可让 ChatGPT 能耗降低 25%"
+          "start": 1069,
+          "end": 1398,
+          "quote": "As Poolside prepared to launch its Laguna model family to the global AI community in April 2026, the team faced a fundamental infrastructure challenge: how could they serve a frontier-scale model to thousands of developers with a branded production-grade API but without having to build the operational infrastructure themselves?"
         },
         {
-          "start": 983,
-          "end": 1006,
-          "quote": "近三个月车规级存储芯片整体价格涨幅约 180%"
+          "start": 2245,
+          "end": 2534,
+          "quote": "Baseten deployed a preview version of Poolside’s Laguna M.1 model as a whitelabeled Model API accessible via an OpenAI-compatible interface directly through Baseten production infrastructure. Within 48 hours of Poolside creating their account, the model was live and responding to queries."
         }
       ],
       "gate_results": [
@@ -2222,11 +2326,65 @@
         },
         {
           "gate": "task_contract",
-          "status": "failed",
-          "detail": "unsupported_claim_event_type:0, unsupported_claim_event_type:1, unsupported_claim_event_type:2"
+          "status": "passed",
+          "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-07-18T01:30:27.613Z"
+      "generated_at": "2026-07-18T04:03:18.467Z"
+    },
+    {
+      "candidate_id": "MAC-fd08003670ece234",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-89e866844eab7732",
+      "raw_id": "RAW-b39b320df06285f4",
+      "source_ref": "SA-555778c17ccc468e",
+      "source_hash": "58b13676a48b64b6",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "decision": "same_entity",
+        "canonical_name": "Meta",
+        "rationale": "The candidate name 'Meta 在其 AI 应用中' (Meta in its AI app) refers to the company Meta. The VERIFIED_ALTERNATIVES list contains the exact canonical name 'Meta'. The source text discusses 'Meta' making its own AI-generated clickbait news feed and the 'standalone Meta AI app', confirming the candidate mention refers to the verified entity.",
+        "candidate_name": "Meta 在其 AI 应用中"
+      },
+      "evidence": [
+        {
+          "start": 198,
+          "end": 248,
+          "quote": "Meta is making its own clickbait articles with AI."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T04:03:24.338Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "codex-data-review",
+        "reviewed_at": "2026-07-18T04:19:04.455Z",
+        "note": "queue-closeout:reviewed_merge_to_verified_entity"
+      }
     }
   ]
 }

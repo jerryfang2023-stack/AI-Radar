@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-037
 title: "Think 2026: IBM Delivers the Blueprint for the AI Operating Model as the AI Divide Widens – Company Announcement - FT.com"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "Think 2026：IBM 在 AI 鸿沟扩大之际推出 AI 运营模式蓝图"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://markets.ft.com/data/announce/detail?dockey=600-202605050011PR_NEWS_EURO_ND__EN51127-1"
 canonical_url: "https://markets.ft.com/data/announce/detail?dockey=600-202605050011PR_NEWS_EURO_ND__EN51127-1"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-10T01:59:51.400Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Think 2026: IBM Delivers the Blueprint for the AI Operating Model as the AI Divide Widens – Company Announcement - FT.com

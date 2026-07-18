@@ -72,7 +72,7 @@ key_excerpts: [{"type":"case_detail","text":"OPLOG, a technology-driven fulfillm
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
-title_zh: "使用Amazon Bedrock AgentCore构建商业智能AI代理 | 人工智能"
+title_zh: "使用Amazon Bedrock AgentCore构建商业智能AI代理"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

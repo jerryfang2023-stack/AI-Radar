@@ -2,7 +2,7 @@
 schema_version: raw-evidence-v2
 raw_id: R-024
 title: "AI Finance Automation Case Study: Month-End Close 11→3 Days, $850K Saved on LangGraph + Claude 3.5 + SAP/Oracle/NetSuite | DreamzTech"
-title_zh: "AI财务自动化案例研究：月结从11天缩短至3天，借助LangGraph+Claude 3.5+SAP/Oracle/NetSuite节省85万美元 | DreamzTech"
+title_zh: "AI 财务自动化案例研究：月结从 11 天缩短至 3 天，借助 LangGraph + Claude 3.5 + SAP/Oracle/NetSuite 节省 85 万美元"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 original_url: "https://www.dreamztech.com/ai-finance-automation-agent-case-study/"

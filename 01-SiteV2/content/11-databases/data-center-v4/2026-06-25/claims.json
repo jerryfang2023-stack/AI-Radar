@@ -1,5 +1,27 @@
 [
   {
+    "claim_id": "CL-bf4e4bccf67eb353",
+    "raw_id": "RAW-519457492a6735de",
+    "claim_type": "product_release",
+    "subject": "Anthropic",
+    "predicate": "product_release",
+    "object": "Claude Tag",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-a7eb01df7591d8ff"
+    },
+    "source_span": {
+      "raw_id": "RAW-519457492a6735de",
+      "start": 1028,
+      "end": 1112
+    },
+    "source_quote": "Anthropic has introduced Claude Tag , a new way to embed its AI directly into Slack.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-b88641e01cdad72a",
     "raw_id": "RAW-af9f3b183353545b",
     "claim_type": "hardware_product",
@@ -1302,6 +1324,28 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-8c9d3dd7c3fe7958",
+    "raw_id": "RAW-295f69356567747b",
+    "claim_type": "funding",
+    "subject": "Avoca",
+    "predicate": "funding",
+    "object": "$125 million",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-e260d4888adbf575"
+    },
+    "source_span": {
+      "raw_id": "RAW-295f69356567747b",
+      "start": 303,
+      "end": 452
+    },
+    "source_quote": "Avoca, a voice AI startup targeting field-service trades — HVAC, plumbing, roofing, electrical — announced $125 million in funding on April 27, 2026.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-c183188d5d74dc04",
     "raw_id": "RAW-afd9910430467b96",
     "claim_type": "partnership",
@@ -1446,6 +1490,50 @@
     "source_quote": "Launch partners include major platforms like Canva, Figma, Spotify, Zillow, Booking.com, Coursera, and Expedia . These apps integrate seamlessly into conversations, allowing users to invoke functionality by name or through AI-suggested recommendations. For example, users can ask \"Figma, turn this sketch into a workable diagram\" and the Figma app will respond inline with editable results.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-7fcde41da4f64652",
+    "raw_id": "RAW-bfa686f319502d31",
+    "claim_type": "model_release",
+    "subject": "YOLO26",
+    "predicate": "model_release",
+    "object": "multi-task model family",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-3f8dbf9db84bf1a9"
+    },
+    "source_span": {
+      "raw_id": "RAW-bfa686f319502d31",
+      "start": 1311,
+      "end": 1526
+    },
+    "source_quote": "YOLO26 is a multi-task model family designed to handle a broad range of computer vision tasks, including object detection, instance segmentation, image classification, pose estimation, and oriented object detection.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e52e816fedf39aa3",
+    "raw_id": "RAW-bfa686f319502d31",
+    "claim_type": "model_release",
+    "subject": "YOLO26",
+    "predicate": "model_release",
+    "object": "end-to-end object detection and multi-task model family",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-3f8dbf9db84bf1a9"
+    },
+    "source_span": {
+      "raw_id": "RAW-bfa686f319502d31",
+      "start": 99,
+      "end": 333
+    },
+    "source_quote": "YOLO26 is an end-to-end object detection and multi-task model family supporting detection, instance segmentation, pose estimation, oriented object detection, and image classification across five size variants from Nano to Extra Large.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -1614,6 +1702,28 @@
     "source_quote": "Claude Tag 率先在 Saleforce 的 AI 工作平台和效率工具 Slack 上对外推出。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-6afc33e44558fb01",
+    "raw_id": "RAW-ac5a3cde235cbee3",
+    "claim_type": "hardware_product",
+    "subject": "OpenAI",
+    "predicate": "hardware_product",
+    "object": "Jalapeño AI chip",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-4aebbafc38711c99"
+    },
+    "source_span": {
+      "raw_id": "RAW-ac5a3cde235cbee3",
+      "start": 29,
+      "end": 67
+    },
+    "source_quote": "OpenAI 首次对外展示与博通联合设计的定制 AI 芯片 Jalapeño",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -2394,6 +2504,50 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-2ae83064809b93df",
+    "raw_id": "RAW-91ddd3c302a7103c",
+    "claim_type": "product_release",
+    "subject": "Qualcomm",
+    "predicate": "product_release",
+    "object": "Dragonfly C1000 CPU",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1,
+      "model_candidate_id": "MAC-95b18449a452145e"
+    },
+    "source_span": {
+      "raw_id": "RAW-91ddd3c302a7103c",
+      "start": 460,
+      "end": 514
+    },
+    "source_quote": "Dragonfly C1000 是高通近年来首款专为数据中心工作负载打造的 CPU，预计 2028 年上市。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-cae005bb954b2ef9",
+    "raw_id": "RAW-91ddd3c302a7103c",
+    "claim_type": "product_release",
+    "subject": "Qualcomm",
+    "predicate": "product_release",
+    "object": "Dragonfly AI300 inference platform",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2,
+      "model_candidate_id": "MAC-95b18449a452145e"
+    },
+    "source_span": {
+      "raw_id": "RAW-91ddd3c302a7103c",
+      "start": 725,
+      "end": 794
+    },
+    "source_quote": "AI300 作为高通的第三代风冷 / 液冷机架式 AI 推理平台性能进一步提升，专为分散式推理部署而设计，预计 2028 年启动商业送样。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-48af42c95a65dfc6",
     "raw_id": "RAW-b1b7915bc4a99e4a",
     "claim_type": "funding",
@@ -2538,6 +2692,28 @@
     "source_quote": "Tags: openai workflow development",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-9e710985b2d207c5",
+    "raw_id": "RAW-8f186bde0c55a817",
+    "claim_type": "model_release",
+    "subject": "Anthropic",
+    "predicate": "model_release",
+    "object": "Claude Cowork plugins",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-e058d98cb04554c6"
+    },
+    "source_span": {
+      "raw_id": "RAW-8f186bde0c55a817",
+      "start": 865,
+      "end": 1011
+    },
+    "source_quote": "Anthropic’s Claude Cowork plugins — released January 30, 2026 — made the agentic enterprise stack accessible to non-developers for the first time.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   }
 ]

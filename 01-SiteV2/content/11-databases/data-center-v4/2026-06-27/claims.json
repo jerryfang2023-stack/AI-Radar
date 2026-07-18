@@ -754,5 +754,115 @@
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a58265e0aaf84bb2",
+    "raw_id": "RAW-373b200fc2076251",
+    "claim_type": "hardware_product",
+    "subject": "OpenAI",
+    "predicate": "hardware_product",
+    "object": "Jalapeño AI processor",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-ed6f4ad12bc5ac59"
+    },
+    "source_span": {
+      "raw_id": "RAW-373b200fc2076251",
+      "start": 541,
+      "end": 784
+    },
+    "source_quote": "OpenAI has just revealed a new “intelligence processor” chip for AI servers made in partnership with Broadcom. The chip, called Jalapeño, is designed to power current and future large language models, according to an announcement on Wednesday.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-dfac964005ed37d4",
+    "raw_id": "RAW-d862120d043feac9",
+    "claim_type": "funding",
+    "subject": "Goodfire AI",
+    "predicate": "funding",
+    "object": "$150M Series B funding round at a $1.25B valuation",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-819d2a7a42abc5c8"
+    },
+    "source_span": {
+      "raw_id": "RAW-d862120d043feac9",
+      "start": 336,
+      "end": 416
+    },
+    "source_quote": "scaling the bet with a recent $150M Series B funding round at a $1.25B valuation",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-7f56d59fd8f58a23",
+    "raw_id": "RAW-cd63fe5d9c1b5f1f",
+    "claim_type": "product_release",
+    "subject": "Interactions API",
+    "predicate": "product_release",
+    "object": "general availability",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-75e04b1081efc7f7"
+    },
+    "source_span": {
+      "raw_id": "RAW-cd63fe5d9c1b5f1f",
+      "start": 613,
+      "end": 768
+    },
+    "source_quote": "Today we're announcing that the Interactions API has reached general availability and is now our primary API for interacting with Gemini models and agents.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-f0b72552bdd40a4b",
+    "raw_id": "RAW-cd63fe5d9c1b5f1f",
+    "claim_type": "product_release",
+    "subject": "Interactions API",
+    "predicate": "product_release",
+    "object": "public beta",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-75e04b1081efc7f7"
+    },
+    "source_span": {
+      "raw_id": "RAW-cd63fe5d9c1b5f1f",
+      "start": 769,
+      "end": 900
+    },
+    "source_quote": "We launched its public beta in December 2025, and it has quickly become developers’ favorite way to build applications with Gemini.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-1b833e513f254cc0",
+    "raw_id": "RAW-cd63fe5d9c1b5f1f",
+    "claim_type": "product_release",
+    "subject": "Managed Agents",
+    "predicate": "product_release",
+    "object": "remote Linux sandbox provisioning",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3,
+      "model_candidate_id": "MAC-75e04b1081efc7f7"
+    },
+    "source_span": {
+      "raw_id": "RAW-cd63fe5d9c1b5f1f",
+      "start": 1553,
+      "end": 1695
+    },
+    "source_quote": "Managed Agents : A single API call provisions a remote Linux sandbox where an agent can reason, execute code, browse the web and manage files.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
   }
 ]

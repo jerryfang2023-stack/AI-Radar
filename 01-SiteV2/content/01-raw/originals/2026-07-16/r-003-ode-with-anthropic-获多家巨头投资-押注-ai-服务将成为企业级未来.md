@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-003
 title: "Ode with Anthropic 获多家巨头投资，押注 AI 服务将成为企业级未来"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "Ode with Anthropic 获多家巨头投资，押注 AI 服务将成为企业级未来"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://techcrunch.com/video/inside-ode-with-anthropic-the-startup-betting-ai-services-are-the-future-of-enterprise"
 canonical_url: "https://techcrunch.com/video/inside-ode-with-anthropic-the-startup-betting-ai-services-are-the-future-of-enterprise"
 source_name: "TechCrunch：AI（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-16T02:39:33.383Z
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Ode with Anthropic 获多家巨头投资，押注 AI 服务将成为企业级未来

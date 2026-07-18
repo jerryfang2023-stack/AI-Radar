@@ -2,7 +2,7 @@
 schema_version: raw-evidence-v2
 raw_id: R-024
 title: "Lyzr's AI agent ran its own $100M Series B fundraise — AI Chat Daily"
-title_zh: "Lyzr的AI代理自主完成了1亿美元B轮融资——AI Chat Daily"
+title_zh: "Lyzr 的 AI 智能体自行完成了 1 亿美元 B 轮融资"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 original_url: "https://www.aichatdaily.com/ai-business/lyzr-s-ai-agent-ran-own-100m-series"

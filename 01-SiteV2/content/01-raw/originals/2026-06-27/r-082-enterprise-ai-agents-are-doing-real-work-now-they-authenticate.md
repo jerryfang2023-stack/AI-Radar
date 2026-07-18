@@ -72,7 +72,7 @@ key_excerpts: [{"type":"company_action","text":"Proactive Quality turns real pro
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
-title_zh: "企业AI代理现已承担实际工作。它们进行身份验证..."
+title_zh: "企业AI智能体已开始执行实际工作。它们进行身份验证..."
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

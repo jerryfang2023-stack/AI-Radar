@@ -2,7 +2,7 @@
 schema_version: raw-evidence-v2
 raw_id: R-034
 title: "One raises $4M to build the trust layer for AI agents | One"
-title_zh: "One 筹集400万美元，为AI代理构建信任层"
+title_zh: "One 获 400 万美元融资，为 AI 智能体构建信任层"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 original_url: "https://www.withone.ai/blog/one-raises-4m-trust-layer-ai-agents"

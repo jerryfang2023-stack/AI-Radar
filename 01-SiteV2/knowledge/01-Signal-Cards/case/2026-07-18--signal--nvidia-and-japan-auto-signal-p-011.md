@@ -2,7 +2,7 @@
 id: SIG-20260718-A34
 type: signal_card
 signal_type: case
-title: "英伟达与日本发布全球首个国家级AI基础设施——Noetra联盟将建设140MW Rubin AI工厂，配备27,500块GPU"
+title: "Nvidia 与日本推出全球首个国家级 AI 基础设施——Noetra 联盟将建设 140MW Rubin AI 工厂，配备 27,500 块 GPU"
 date: 2026-07-18
 status: published
 source_title: "Nvidia and Japan unveil world's first national AI infrastructure — Noetra consortium to build a 140MW Rubin AI factory with 27,500 GPUs | Tom's Hardware"
@@ -58,12 +58,12 @@ opportunity_signals:
 signal_owner: "Nvidia and Japan"
 
 frontend:
-  displayTitle: "英伟达与日本发布全球首个国家级AI基础设施——Noetra联盟将建设140MW Rubin AI工厂，配备27,500块GPU"
+  displayTitle: "Nvidia 与日本推出全球首个国家级 AI 基础设施——Noetra 联盟将建设 140MW Rubin AI 工厂，配备 27,500 块 GPU"
   sourceLinks:
     - "https://www.tomshardware.com/pc-components/gpus/nvidia-and-japans-noetra-consortium-to-build-140mw-rubin-ai-factory-with-27500-gpus"
 ---
 
-# 英伟达与日本发布全球首个国家级AI基础设施——Noetra联盟将建设140MW Rubin AI工厂，配备27,500块GPU
+# Nvidia 与日本推出全球首个国家级 AI 基础设施——Noetra 联盟将建设 140MW Rubin AI 工厂，配备 27,500 块 GPU
 
 ## 新闻事实
 

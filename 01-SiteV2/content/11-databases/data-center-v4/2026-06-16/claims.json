@@ -84,6 +84,50 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-f7e7283facb0fed6",
+    "raw_id": "RAW-ca957e1d6fe3d8ec",
+    "claim_type": "funding",
+    "subject": "Sarvam",
+    "predicate": "funding",
+    "object": "$234 million funding round led by HCLTech",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1,
+      "model_candidate_id": "MAC-896e6dd3d16a238f"
+    },
+    "source_span": {
+      "raw_id": "RAW-ca957e1d6fe3d8ec",
+      "start": 133,
+      "end": 225
+    },
+    "source_quote": "Sarvam has raised $234 million at a $1.5 billion valuation, the company announced on Monday.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-c1517212c08406ad",
+    "raw_id": "RAW-57fb9cee85ec27e2",
+    "claim_type": "funding",
+    "subject": "NewCore",
+    "predicate": "funding",
+    "object": "$66 million seed round",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1,
+      "model_candidate_id": "MAC-965655170c7d287a"
+    },
+    "source_span": {
+      "raw_id": "RAW-57fb9cee85ec27e2",
+      "start": 126,
+      "end": 214
+    },
+    "source_quote": "Cybersecurity startup NewCore emerged from stealth with $66 million in funding on Monday",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-00a23cacc7c7492f",
     "raw_id": "RAW-6fd47bbde94421ca",
     "claim_type": "funding",
@@ -186,6 +230,28 @@
     "source_quote": "15、MiniMax M3 模型正式开源：原生多模态、百万上下文",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-8e15d6bf22070b22",
+    "raw_id": "RAW-cb573bf88533a91c",
+    "claim_type": "research_result",
+    "subject": "DFlash model for Qwen 3.5 397B-A17B",
+    "predicate": "research_result",
+    "object": "throughput improvement over baseline and MTP",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-ddfbb6ff158a777d"
+    },
+    "source_span": {
+      "raw_id": "RAW-cb573bf88533a91c",
+      "start": 608,
+      "end": 915
+    },
+    "source_quote": "Our new, jointly-released DFlash model for Qwen 3.5 397B-A17B achieves higher throughput than both the baseline model and native MTP speculation in all the settings we benchmarked. At concurrency 1 on the HumanEval coding dataset, it achieves >4.3x the throughput of baseline and 1.5x the throughput of MTP.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -459,6 +525,28 @@
     "source_quote": "主要功能包括在专用窗格中的智能体，可以看到您的 shell 上下文，实时捕获错误，并帮助您修复它们而无需复制粘贴。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-6c4db9db9579073e",
+    "raw_id": "RAW-cd4ae8cbb8145e07",
+    "claim_type": "hardware_product",
+    "subject": "Tensordyne",
+    "predicate": "hardware_product",
+    "object": "Tensordyne Napier (TDN) AI推理系统",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-9facfda9af2af5eb"
+    },
+    "source_span": {
+      "raw_id": "RAW-cd4ae8cbb8145e07",
+      "start": 346,
+      "end": 418
+    },
+    "source_quote": "北美-欧洲 AI 芯片初创企业 Tensordyne 当地时间 15 日宣布推出 AI 推理系统 Tensordyne Napier (TDN)",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -1176,6 +1264,116 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-26a6893cad1aaedd",
+    "raw_id": "RAW-3ee1b03a99df9798",
+    "claim_type": "model_release",
+    "subject": "理想汽车",
+    "predicate": "model_release",
+    "object": "全新马赫 VLA",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-270b499da71216bf"
+    },
+    "source_span": {
+      "raw_id": "RAW-3ee1b03a99df9798",
+      "start": 403,
+      "end": 425
+    },
+    "source_quote": "第三季度 AD Max 推送全新马赫 VLA",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-6d23af67012ee432",
+    "raw_id": "RAW-3ee1b03a99df9798",
+    "claim_type": "model_release",
+    "subject": "理想汽车",
+    "predicate": "model_release",
+    "object": "马赫 Mind-4 系列",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-270b499da71216bf"
+    },
+    "source_span": {
+      "raw_id": "RAW-3ee1b03a99df9798",
+      "start": 539,
+      "end": 602
+    },
+    "source_quote": "理想今天还公布了自研的全新基座大模型 —— 马赫 Mind-4 系列，包括：马赫 Mind-Pro 和马赫 Mind-Edge",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-2e49a3b05643aa22",
+    "raw_id": "RAW-7cf140e379f8508c",
+    "claim_type": "policy_regulation",
+    "subject": "Anthropic",
+    "predicate": "policy_regulation",
+    "object": "Claude Free, Claude Pro, Claude Max consumer accounts",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 1,
+      "model_candidate_id": "MAC-cbb72bc41dec43d5"
+    },
+    "source_span": {
+      "raw_id": "RAW-7cf140e379f8508c",
+      "start": 450,
+      "end": 520
+    },
+    "source_quote": "官方宣布将于 7 月 8 日起调整隐私策略，适用于包括 Claude Free、Claude Pro 以及 Claude Max 消费者账户",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-03dde5c125d873b8",
+    "raw_id": "RAW-7cf140e379f8508c",
+    "claim_type": "policy_regulation",
+    "subject": "Anthropic",
+    "predicate": "policy_regulation",
+    "object": "age or identity verification requirement",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 2,
+      "model_candidate_id": "MAC-cbb72bc41dec43d5"
+    },
+    "source_span": {
+      "raw_id": "RAW-7cf140e379f8508c",
+      "start": 606,
+      "end": 638
+    },
+    "source_quote": "为了确保我们服务的安全可靠，我们可能会要求您确认您的年龄或身份。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-43d6decf20aba908",
+    "raw_id": "RAW-7cf140e379f8508c",
+    "claim_type": "policy_regulation",
+    "subject": "Anthropic",
+    "predicate": "policy_regulation",
+    "object": "identity verification methods",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 3,
+      "model_candidate_id": "MAC-cbb72bc41dec43d5"
+    },
+    "source_span": {
+      "raw_id": "RAW-7cf140e379f8508c",
+      "start": 847,
+      "end": 876
+    },
+    "source_quote": "验证方式共有 2 种，一种是提供官方证件，二是扫描面部信息",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-0055eba8920e653f",
     "raw_id": "RAW-07f1c34464523538",
     "claim_type": "product_release",
@@ -1365,6 +1563,48 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-df6c428b0c3bd163",
+    "raw_id": "RAW-e947e75b40d44374",
+    "claim_type": "ipo_listing",
+    "subject": "腾讯投资的燧原科技获",
+    "predicate": "ipo_listing",
+    "object": "批准，中国AI芯片热潮再添新军",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-e947e75b40d44374",
+      "start": 343,
+      "end": 592
+    },
+    "source_quote": "Tencent Holdings Ltd.-backed Shanghai Enflame Technology Co. has received approval for an initial public offering, a key step toward bringing to the market the last of the “four little dragons,” a group of leading artificial intelligence chipmakers.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-bb3078ae3c09de2e",
+    "raw_id": "RAW-e947e75b40d44374",
+    "claim_type": "ipo_listing",
+    "subject": "腾讯投资的燧原科技获",
+    "predicate": "ipo_listing",
+    "object": "批准，中国AI芯片热潮再添新军",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-e947e75b40d44374",
+      "start": 593,
+      "end": 978
+    },
+    "source_quote": "The company, in which Tencent holds a 20% stake and remains a dominant customer, plans to raise 6 billion yuan ($888 million) on the Shanghai Stock Exchange’s chip-heavy STAR board, according to its prospectus. It plans to offer between 10% and 15% of its shares and intends to use the proceeds to support the development and production of AI cloud chips and related software, it said.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-59022a988e5d0a9b",
     "raw_id": "RAW-f27832e28695701b",
     "claim_type": "organization_people",
@@ -1509,6 +1749,50 @@
     "source_quote": "IT之家 6 月 16 日消息，AMD 公司昨日（6 月 15 日）发布公告， 宣布收购内存优化技术公司 MEXT，目标是缓解数据中心日益突出的内存瓶颈。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-fa413cf6b14aac7c",
+    "raw_id": "RAW-6dcd98021a4f2d13",
+    "claim_type": "product_release",
+    "subject": "赛力斯",
+    "predicate": "product_release",
+    "object": "人形机器人\"小赛\"",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-f50143f7042d3125"
+    },
+    "source_span": {
+      "raw_id": "RAW-6dcd98021a4f2d13",
+      "start": 321,
+      "end": 370
+    },
+    "source_quote": "赛力斯人形机器人首次亮相。赛力斯集团董事、副总裁康波今日发布视频，展示了赛力斯人形机器人“小赛”。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-80565e2a34b609d7",
+    "raw_id": "RAW-6dcd98021a4f2d13",
+    "claim_type": "product_release",
+    "subject": "赛力斯",
+    "predicate": "product_release",
+    "object": "更多种类具身智能机器人",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-f50143f7042d3125"
+    },
+    "source_span": {
+      "raw_id": "RAW-6dcd98021a4f2d13",
+      "start": 377,
+      "end": 411
+    },
+    "source_quote": "赛力斯还有更多种类的具身智能机器人在筹备 ，今年内将正式与大家见面。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   }
 ]

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"Anthropic 今日推出 Claude Fable 5（
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Claude Fable 5 和 Claude Mythos 5"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Claude Fable 5 和 Claude Mythos 5

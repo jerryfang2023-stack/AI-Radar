@@ -72,6 +72,10 @@ key_excerpts: [{"type":"company_action","text":"AI 初创公司 Anthropic 于周
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Anthropic 提交秘密 IPO 文件，在资金竞赛中领先 OpenAI"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Anthropic 提交秘密 IPO 文件，在资金竞赛中领先 OpenAI

@@ -72,7 +72,7 @@ key_excerpts: [{"type":"number","text":"| Company / Source | Industry | Problem 
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
-title_zh: "Applied AI案例研究与实际成功故事 | GoGloby"
+title_zh: "Applied AI 案例研究与实际成功故事"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

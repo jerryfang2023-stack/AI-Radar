@@ -72,6 +72,10 @@ key_excerpts: [{"type":"company_action","text":"Cloudera—which has 100 times m
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "您的企业数据准备好迎接AI了吗？"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Is Your Enterprise Data Ready for AI? - Paid Program - WSJ

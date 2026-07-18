@@ -72,7 +72,7 @@ key_excerpts: [{"type":"funding","text":"SAN FRANCISCO, July 28, 2025 /PRNewswir
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
-title_zh: "E2B获2100万美元A轮融资，为财富100强企业提供AI代理云服务"
+title_zh: "E2B 获 2100 万美元 A 轮融资，为财富 100 强企业提供 AI 智能体云服务"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

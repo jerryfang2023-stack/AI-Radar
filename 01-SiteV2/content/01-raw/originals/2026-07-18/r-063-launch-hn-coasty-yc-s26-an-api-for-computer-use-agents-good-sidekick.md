@@ -3,9 +3,9 @@ schema_version: raw-evidence-v2
 raw_id: R-063
 title: "Launch HN: Coasty (YC S26) – An API For Computer-use Agents - Good Sidekick"
 title_zh: "Launch HN：Coasty (YC S26) – 计算机操作智能体 API"
-title_translation_status: translated
-title_translation_method: deepseek_title_translation
-title_translation_model: deepseek-v4-flash
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 original_url: "https://goodsidekick.com/ai-tooling/launch-hn-coasty-yc-s26-an-api-for-computer-use-agents/"
 canonical_url: "https://goodsidekick.com/ai-tooling/launch-hn-coasty-yc-s26-an-api-for-computer-use-agents"
 source_name: "keyword search / Anysearch"

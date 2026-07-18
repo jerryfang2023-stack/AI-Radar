@@ -72,7 +72,7 @@ key_excerpts: [{"type":"funding","text":"# AethexAI Launches With $3M Pre-Seed t
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
-title_zh: "AethexAI 获300万美元种子轮融资，助力非洲和中东企业语音AI规模化发展 - TechAfrica News"
+title_zh: "AethexAI 获 300 万美元种子轮融资，助力非洲和中东企业级语音 AI 规模化"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

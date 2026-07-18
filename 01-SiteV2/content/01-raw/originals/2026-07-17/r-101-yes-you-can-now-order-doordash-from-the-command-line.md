@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-101
 title: "Yes, you can now order DoorDash from the command line"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "是的，现在可以通过命令行订购DoorDash"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://techcrunch.com/2026/07/16/yes-you-can-now-order-doordash-from-the-command-line/"
 canonical_url: "https://techcrunch.com/2026/07/16/yes-you-can-now-order-doordash-from-the-command-line"
 source_name: "TechCrunch AI"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-17T04:40:17.379Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Yes, you can now order DoorDash from the command line

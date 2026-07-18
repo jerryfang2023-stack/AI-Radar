@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-18T04:59:59.870Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 1250,
+    "quarantinedEventCount": 11
+  },
+  "entity": {
+    "id": "EN-7bcc8b72ffd62b77",
+    "name": "Reflection AI",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-4da18f97771852a9",
+      "EV-a45262f89b272703"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-06-23",
+    "lastSeen": "2026-07-15",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [
+        "EV-4da18f97771852a9"
+      ],
+      "partnerships": [
+        "EV-a45262f89b272703"
+      ],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-a45262f89b272703",
+        "dataDate": "2026-07-15",
+        "date": "2026-07-14",
+        "eventType": "partnership",
+        "eventTypeLabel": "合作",
+        "eventGroup": "商业合作",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Reflection AI 与 Nebius 签署 10 亿美元算力协议",
+        "displayTags": [],
+        "entityIds": [
+          "EN-7bcc8b72ffd62b77"
+        ]
+      },
+      {
+        "id": "EV-4da18f97771852a9",
+        "dataDate": "2026-06-23",
+        "date": "2026-06-23",
+        "eventType": "procurement_contract",
+        "eventTypeLabel": "采购合同",
+        "eventGroup": "商业合作",
+        "status": "withdrawn",
+        "statusLabel": "已撤回",
+        "title": "SpaceX与开源AI实验室Reflection AI签署算力协议",
+        "displayTags": [],
+        "entityIds": [
+          "EN-e78bdebae031095b",
+          "EN-7bcc8b72ffd62b77",
+          "EN-8d4321d936320802"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

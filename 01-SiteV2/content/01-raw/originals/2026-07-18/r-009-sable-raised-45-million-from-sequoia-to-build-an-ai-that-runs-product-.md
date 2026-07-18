@@ -3,9 +3,9 @@ schema_version: raw-evidence-v2
 raw_id: R-009
 title: "Sable raised $45 million from Sequoia to build an AI that runs product demos instead of humans"
 title_zh: "Sable 从红杉资本融资 4500 万美元，打造替代人类运行产品演示的 AI 智能体"
-title_translation_status: translated
-title_translation_method: deepseek_title_translation
-title_translation_model: deepseek-v4-flash
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 original_url: "https://thenextweb.com/news/sable-aidan-ai-employee-sequoia-45-million"
 canonical_url: "https://thenextweb.com/news/sable-aidan-ai-employee-sequoia-45-million"
 source_name: "keyword search / Anysearch"

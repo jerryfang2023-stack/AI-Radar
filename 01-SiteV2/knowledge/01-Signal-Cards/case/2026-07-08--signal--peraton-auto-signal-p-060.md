@@ -2,7 +2,7 @@
 id: SIG-20260708-A08
 type: signal_card
 signal_type: case
-title: "Peraton发布Peraton[x]™：首个专为国家关键行动与任务打造的企业级自主AI平台"
+title: "Peraton 发布 Peraton[x]™：首个专为国家关键任务打造的企业级 AI 智能体平台"
 date: 2026-07-08
 status: published
 source_title: "Peraton Unveils Peraton[x]™: The First True Enterprise Agentic AI Platform Built for the Nation’s Most Critical Operations and Missions"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "Peraton"
 
 frontend:
-  displayTitle: "Peraton发布Peraton[x]™：首个专为国家关键行动与任务打造的企业级自主AI平台"
+  displayTitle: "Peraton 发布 Peraton[x]™：首个专为国家关键任务打造的企业级 AI 智能体平台"
   sourceLinks:
     - "https://www.businesswire.com/news/home/20260707777574/en/Peraton-Unveils-Peratonx-The-First-True-Enterprise-Agentic-AI-Platform-Built-for-the-Nations-Most-Critical-Operations-and-Missions"
 ---
 
-# Peraton发布Peraton[x]™：首个专为国家关键行动与任务打造的企业级自主AI平台
+# Peraton 发布 Peraton[x]™：首个专为国家关键任务打造的企业级 AI 智能体平台
 
 ## 新闻事实
 

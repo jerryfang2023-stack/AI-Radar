@@ -3,9 +3,9 @@ schema_version: raw-evidence-v2
 raw_id: R-108
 title: "宝马推出 ChatGPT 插件，让 AI 帮你选车"
 title_zh: "宝马推出 ChatGPT 插件，让 AI 帮你选车"
-title_translation_status: not_required
-title_translation_method: source_title
-title_translation_model: not_applicable
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 original_url: "https://www.ithome.com/0/978/353.htm"
 canonical_url: "https://ithome.com/0/978/353.htm"
 source_name: "IT之家（RSS）"

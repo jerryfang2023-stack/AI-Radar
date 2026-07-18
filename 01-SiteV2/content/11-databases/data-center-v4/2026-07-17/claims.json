@@ -1,5 +1,27 @@
 [
   {
+    "claim_id": "CL-724c392c0e6f3184",
+    "raw_id": "RAW-179df5c77c33d21b",
+    "claim_type": "funding",
+    "subject": "Neko Health",
+    "predicate": "funding",
+    "object": "$700 million",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 1,
+      "model_candidate_id": "MAC-8ee79a7afaa0cd78"
+    },
+    "source_span": {
+      "raw_id": "RAW-179df5c77c33d21b",
+      "start": 347,
+      "end": 468
+    },
+    "source_quote": "Neko Health has raised $700 million to expand its AI body scans in the United States, starting with a clinic in New York.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-1e9eca81f6dda013",
     "raw_id": "RAW-406dba161368019e",
     "claim_type": "product_release",
@@ -336,6 +358,28 @@
     "verification_status": "disputed"
   },
   {
+    "claim_id": "CL-724d4050ecf3fcf2",
+    "raw_id": "RAW-25eb0740354da52f",
+    "claim_type": "product_release",
+    "subject": "Gemini Enterprise Agent Platform",
+    "predicate": "product_release",
+    "object": "Grounding with Parallel Web Search",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-cf93add6888be680"
+    },
+    "source_span": {
+      "raw_id": "RAW-25eb0740354da52f",
+      "start": 786,
+      "end": 1180
+    },
+    "source_quote": "Grounding with Parallel Web Search anchors Gemini models in high-quality, real-time web results. By providing exact citations to original sources, it ensures your agents act on information that's accurate and verifiable. This capability is now available across Agent Platform: callable in the Gemini API , selectable in Agent Studio , and available to subscribe through Google Cloud Marketplace",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-2bade0995542d668",
     "raw_id": "RAW-7b0776803e0f4735",
     "claim_type": "deployment",
@@ -585,6 +629,50 @@
     "source_quote": "By Min Jeong Lee and Mari Kiyohara",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-acdcdd157aa5237c",
+    "raw_id": "RAW-2daef94862f0bc96",
+    "claim_type": "product_release",
+    "subject": "Veea Inc.",
+    "predicate": "product_release",
+    "object": "VeeaONE Distributed Intelligence Platform",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-52989ee00cce529f"
+    },
+    "source_span": {
+      "raw_id": "RAW-2daef94862f0bc96",
+      "start": 455,
+      "end": 752
+    },
+    "source_quote": "Veea Inc. (NASDAQ: VEEA) (\"Veea\"), a pioneer in AI-powered, cybersecure distributed intelligence on hyperconverged edge infrastructure, today announced the commercial availability of its full-stack, edge-to-cloud hardware and software solution for a broad range of third-party devices and servers.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-134693d1160f4de1",
+    "raw_id": "RAW-2daef94862f0bc96",
+    "claim_type": "product_release",
+    "subject": "Veea Inc.",
+    "predicate": "product_release",
+    "object": "Lobster Trap open-source release",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-52989ee00cce529f"
+    },
+    "source_span": {
+      "raw_id": "RAW-2daef94862f0bc96",
+      "start": 6910,
+      "end": 6984
+    },
+    "source_quote": "Lobster Trap was open-sourced by Veea under the MIT license in March 2026.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -1005,6 +1093,28 @@
     "source_quote": "New York, July 15, 2026 — Regatta Data today announced the general availability of RegattaDB, a distributed SQL database that unifies transactional, analytical, and vector workloads at scale, performance and efficiency. RegattaDB was built from the ground up to serve as the data foundation for AI agent systems. RegattaDB is available for production deployments as a managed cloud service (Regatta Cloud) or self-hosted on your own infrastructure.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-27d94cdd169737e4",
+    "raw_id": "RAW-1ca79de285e4b62c",
+    "claim_type": "partnership",
+    "subject": "Noetra",
+    "predicate": "partnership",
+    "object": "Nvidia",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-4d80d25d72533107"
+    },
+    "source_span": {
+      "raw_id": "RAW-1ca79de285e4b62c",
+      "start": 1118,
+      "end": 1231
+    },
+    "source_quote": "Noetra says it aims to accelerate development of the foundation model by using Nvidia's computing infrastructure.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -2961,6 +3071,28 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-f403ccd6996e5201",
+    "raw_id": "RAW-d681483775a06b64",
+    "claim_type": "model_release",
+    "subject": "Thinking Machines",
+    "predicate": "model_release",
+    "object": "Inkling",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-91ed4566d6740734"
+    },
+    "source_span": {
+      "raw_id": "RAW-d681483775a06b64",
+      "start": 985,
+      "end": 1156
+    },
+    "source_quote": "Thinking Machines has released Inkling, a 975B-parameter mixture-of-experts model with 41B active parameters, multimodal reasoning, and a one-million-token context window.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-fffcc4be39cd4ff6",
     "raw_id": "RAW-14e72682061b1d79",
     "claim_type": "product_release",
@@ -3042,6 +3174,94 @@
     "source_quote": "Grok Build is a terminal-based coding agent invoked via the grok command. It can read and edit codebases, run shell commands, search the web, and manage long-running tasks, either interactively, headlessly for scripting and CI, or embedded in editors via the Agent Client Protocol (ACP).",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-ae25586322577ec7",
+    "raw_id": "RAW-76efc8279c52ee6c",
+    "claim_type": "product_release",
+    "subject": "Google",
+    "predicate": "product_release",
+    "object": "AI Mode app integration with Instacart, Canva, and YouTube",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-5a84e9e2e0a50a46"
+    },
+    "source_span": {
+      "raw_id": "RAW-76efc8279c52ee6c",
+      "start": 110,
+      "end": 348
+    },
+    "source_quote": "Google announced on Thursday that it now allows users to link and interact with some of their go-to apps right in AI Mode, the tech giant’s conversational search experience. At launch, supported apps include Instacart, Canva, and YouTube.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-bb31860f1468f141",
+    "raw_id": "RAW-fd309ab6279370c0",
+    "claim_type": "model_release",
+    "subject": "Thinking Machines",
+    "predicate": "model_release",
+    "object": "Inkling",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-b6732f4031959e49"
+    },
+    "source_span": {
+      "raw_id": "RAW-fd309ab6279370c0",
+      "start": 553,
+      "end": 619
+    },
+    "source_quote": "Thinking Machines launched Inkling - its first open-weights model.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-17fc538f54df0cbb",
+    "raw_id": "RAW-fd309ab6279370c0",
+    "claim_type": "model_release",
+    "subject": "OpenAI",
+    "predicate": "model_release",
+    "object": "GPT-Red",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-b6732f4031959e49"
+    },
+    "source_span": {
+      "raw_id": "RAW-fd309ab6279370c0",
+      "start": 1316,
+      "end": 1436
+    },
+    "source_quote": "GPT-Red by OpenAI - an internal model that attacks other OpenAI models to find ways hidden instructions can hijack them.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-339b2e510b1e4d39",
+    "raw_id": "RAW-dc037126ae6201cf",
+    "claim_type": "product_release",
+    "subject": "DoorDash",
+    "predicate": "product_release",
+    "object": "DoorDash CLI (dd-cli) limited beta",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-d09227a1facdf14e"
+    },
+    "source_span": {
+      "raw_id": "RAW-dc037126ae6201cf",
+      "start": 153,
+      "end": 302
+    },
+    "source_quote": "DoorDash just introduced a limited beta of DoorDash CLI, a command-line tool for developers that lets you order DoorDash directly from your AI agent.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -3189,6 +3409,50 @@
     "source_quote": "在一次长达 48 小时的自主运行中，K3 利用开源 EDA 工具，基于 Nangate 45nm 库完成了该芯片的构建、优化和验证。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-7873eb6c460e3a13",
+    "raw_id": "RAW-d3b937faeb941727",
+    "claim_type": "model_release",
+    "subject": "Google",
+    "predicate": "model_release",
+    "object": "Gemma 4",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-7a6275c92db6cff7"
+    },
+    "source_span": {
+      "raw_id": "RAW-d3b937faeb941727",
+      "start": 206,
+      "end": 383
+    },
+    "source_quote": "Google shipped an update to its open AI model Gemma 4 that speeds up performance on Nvidia Hopper GPUs, fixes tool calling bugs, and addresses problems with truncated responses.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-f723ec5f7128c2b4",
+    "raw_id": "RAW-741408dde6e08993",
+    "claim_type": "product_release",
+    "subject": "Google",
+    "predicate": "product_release",
+    "object": "Gemini Notebook",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-672e4d0d87535d34"
+    },
+    "source_span": {
+      "raw_id": "RAW-741408dde6e08993",
+      "start": 196,
+      "end": 301
+    },
+    "source_quote": "Google is renaming NotebookLM to Gemini Notebook and integrating the tool more deeply into its ecosystem.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   }
 ]

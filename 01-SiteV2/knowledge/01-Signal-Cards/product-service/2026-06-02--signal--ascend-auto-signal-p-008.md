@@ -2,7 +2,7 @@
 id: SIG-20260602-A07
 type: signal_card
 signal_type: product_service
-title: "Ascend为太平洋地区AI初创公司筹集2500万美元种子前资金"
+title: "Ascend 为太平洋地区种子前 AI 初创公司筹集 2500 万美元"
 date: 2026-06-02
 status: published
 asset_level: frontstage
@@ -58,7 +58,7 @@ signal_owner: "Ascend"
 watch_reason: "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
 
 frontend:
-  displayTitle: "Ascend为太平洋地区AI初创公司筹集2500万美元种子前资金"
+  displayTitle: "Ascend 为太平洋地区种子前 AI 初创公司筹集 2500 万美元"
   eventLine: "Ascend 发布新的 AI 能力，面向企业智能体协作流程。"
   whyWatch: "这条变化值得看，是因为它把竞争点放到了企业智能体协作流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"
   businessMeaning: "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
@@ -68,7 +68,7 @@ frontend:
     - "https://techcrunch.com/2023/05/09/ascend-raises-25-million-for-pre-seed-ai-startups-in-the-pacific-northwest/"
 ---
 
-# Ascend为太平洋地区AI初创公司筹集2500万美元种子前资金
+# Ascend 为太平洋地区种子前 AI 初创公司筹集 2500 万美元
 
 ## 信号底稿
 

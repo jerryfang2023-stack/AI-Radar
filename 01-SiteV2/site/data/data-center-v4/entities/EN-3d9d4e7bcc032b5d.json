@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-18T04:59:59.870Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 1250,
+    "quarantinedEventCount": 11
+  },
+  "entity": {
+    "id": "EN-3d9d4e7bcc032b5d",
+    "name": "SAP SE",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-7ae31ea6f9195a43"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-06-28",
+    "lastSeen": "2026-06-28",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [
+        "EV-7ae31ea6f9195a43"
+      ],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-7ae31ea6f9195a43",
+        "dataDate": "2026-06-28",
+        "date": "2026-06-28",
+        "eventType": "organization_restructuring",
+        "eventTypeLabel": "组织重组",
+        "eventGroup": "组织、政策与法律",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "SAP CEO 通过新团队、按用量定价推动 AI 转型",
+        "displayTags": [],
+        "entityIds": [
+          "EN-3d9d4e7bcc032b5d"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

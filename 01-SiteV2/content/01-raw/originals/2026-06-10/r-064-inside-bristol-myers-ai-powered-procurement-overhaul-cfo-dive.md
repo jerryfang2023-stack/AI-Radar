@@ -72,7 +72,7 @@ key_excerpts: [{"type":"workflow_change","text":"# Inside Bristol Myers’ AI-po
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
-title_zh: "百时美施贵宝AI驱动的采购改革内幕 | CFO Dive"
+title_zh: "百时美施贵宝AI驱动的采购改革内幕"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

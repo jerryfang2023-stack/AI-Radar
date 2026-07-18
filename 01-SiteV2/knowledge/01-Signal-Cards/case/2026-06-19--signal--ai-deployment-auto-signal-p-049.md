@@ -2,7 +2,7 @@
 id: SIG-20260619-A11
 type: signal_card
 signal_type: case
-title: "AI部署：终极指南 - Mirantis"
+title: "AI 部署：权威指南 - Mirantis"
 date: 2026-06-19
 status: published
 source_title: "AI Deployment: The Definitive Guide - Mirantis"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "AI Deployment"
 
 frontend:
-  displayTitle: "AI部署：终极指南 - Mirantis"
+  displayTitle: "AI 部署：权威指南 - Mirantis"
   sourceLinks:
     - "https://www.mirantis.com/blog/ai-deployment-the-definitive-guide/"
 ---
 
-# AI部署：终极指南 - Mirantis
+# AI 部署：权威指南 - Mirantis
 
 ## 新闻事实
 

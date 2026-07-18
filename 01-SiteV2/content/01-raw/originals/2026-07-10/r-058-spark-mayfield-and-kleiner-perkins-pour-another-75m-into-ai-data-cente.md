@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-058
 title: "Spark, Mayfield, and Kleiner Perkins pour another $75M into AI data center chipmaker Retym | TechCrunch"
-title_zh: "Spark、Mayfield和Kleiner Perkins向人工智能数据中心芯片制造商Retym再投入7500万美元$ | TechCrunch"
-title_translation_status: translated
-title_translation_method: mymemory_title_translation
+title_zh: "Spark、Mayfield 和 Kleiner Perkins 再向 AI 数据中心芯片制造商 Retym 注资 7500 万美元"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://techcrunch.com/2025/03/31/spark-mayfield-and-kleiner-perkins-pour-another-75m-into-ai-data-center-chipmaker-retym/"
 canonical_url: "https://techcrunch.com/2025/03/31/spark-mayfield-and-kleiner-perkins-pour-another-75m-into-ai-data-center-chipmaker-retym"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-10T01:59:59.447Z
 theme: ai-hardware-investment-signal
 keyword_group: ai-hardware-investment-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Spark, Mayfield, and Kleiner Perkins pour another $75M into AI data center chipmaker Retym | TechCrunch

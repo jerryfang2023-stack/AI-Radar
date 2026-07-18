@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-18T04:59:59.870Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 1250,
+    "quarantinedEventCount": 11
+  },
+  "entity": {
+    "id": "EN-553d045569eaf2e5",
+    "name": "AZ3 Pro",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-43976be427aefb52"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-06",
+    "lastSeen": "2026-07-06",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [
+        "EV-43976be427aefb52"
+      ],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-43976be427aefb52",
+        "dataDate": "2026-07-06",
+        "date": "2026-07-06",
+        "eventType": "hardware_product",
+        "eventTypeLabel": "硬件产品",
+        "eventGroup": "AI 硬件",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "亚马逊硬件主管 Panos Panay：正以自研芯片重塑沉浸式 AI 体验",
+        "displayTags": [],
+        "entityIds": [
+          "EN-cbc62794911ff31b",
+          "EN-553d045569eaf2e5",
+          "EN-8e28b4190af4d21c"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [
+    {
+      "id": "HW-6e5b4172eb21ffe2",
+      "eventId": "EV-43976be427aefb52",
+      "dataDate": "2026-07-06",
+      "date": "2026-07-06",
+      "title": "亚马逊硬件主管 Panos Panay：正以自研芯片重塑沉浸式 AI 体验",
+      "hardwareType": "semiconductor",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "未披露",
+      "supplier": "Amazon",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/972/889.htm",
+      "sourceName": "IT之家（RSS）",
+      "sourceDate": "2026-07-06",
+      "entityIds": [
+        "EN-cbc62794911ff31b",
+        "EN-553d045569eaf2e5",
+        "EN-8e28b4190af4d21c"
+      ]
+    }
+  ]
+}

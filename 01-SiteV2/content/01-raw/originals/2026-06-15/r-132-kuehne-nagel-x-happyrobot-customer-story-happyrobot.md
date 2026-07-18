@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"Kuehne+Nagel x HappyRobot Customer 
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Kuehne+Nagel 与 HappyRobot 客户案例"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Kuehne+Nagel x HappyRobot Customer Story | HappyRobot

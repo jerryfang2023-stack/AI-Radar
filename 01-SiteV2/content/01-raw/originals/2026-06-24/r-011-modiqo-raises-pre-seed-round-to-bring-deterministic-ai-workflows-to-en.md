@@ -72,7 +72,7 @@ key_excerpts: [{"type":"funding","text":"Modiqo Raises Pre-Seed Round to Bring D
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only
-title_zh: "Modiqo完成种子轮前融资，以极低代币成本为企业带来确定性AI工作流"
+title_zh: "Modiqo 完成种子轮融资，以极低代币成本为企业提供确定性 AI 工作流"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-007
 title: "OpenAI 招聘家庭产品经理，ChatGPT 用户向年长群体扩展"
 title_zh: "OpenAI 招聘家庭产品经理，ChatGPT 用户向年长群体扩展"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://techcrunch.com/2026/07/11/openai-bets-on-families-as-chatgpt-goes-deeper-into-households"
 canonical_url: "https://techcrunch.com/2026/07/11/openai-bets-on-families-as-chatgpt-goes-deeper-into-households"
 source_name: "TechCrunch：AI（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-12T09:55:23.647Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # OpenAI 招聘家庭产品经理，ChatGPT 用户向年长群体扩展

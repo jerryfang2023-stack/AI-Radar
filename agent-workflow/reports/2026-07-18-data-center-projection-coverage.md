@@ -4,11 +4,11 @@
 
 ## Counts
 
-- entities: 64
-- entity_mentions: 91
-- accepted_events: 39
-- verified_event_organizations: 19
-- verified_event_products: 18
+- entities: 88
+- entity_mentions: 125
+- accepted_events: 52
+- verified_event_organizations: 23
+- verified_event_products: 29
 - fde_records: 1
 - hardware_records: 1
 

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"Covestro, a global polymer manufact
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Covestro 借助 AWS 上的 AI 智能体革新主数据治理"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Covestro Transforms Master Data Governance with AI Agents on AWS | AWS for SAP

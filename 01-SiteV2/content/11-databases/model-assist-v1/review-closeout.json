@@ -1,0 +1,4840 @@
+{
+  "schema_version": "MODEL-ASSIST-REVIEW-CLOSEOUT-V1",
+  "generated_at": "2026-07-18T04:20:23.967Z",
+  "reviewer": "codex-data-review",
+  "total": 603,
+  "by_task": {
+    "entity_resolution": 510,
+    "qa_repair": 93
+  },
+  "by_decision": {
+    "accept": 503,
+    "reject": 100
+  },
+  "decisions": [
+    {
+      "date": "2026-05-19",
+      "candidate_id": "MAC-310c3a342823cad8",
+      "task_type": "entity_resolution",
+      "action": "same_entity",
+      "decision": "reject",
+      "reason": "same_entity_target_not_proven"
+    },
+    {
+      "date": "2026-05-19",
+      "candidate_id": "MAC-3b6418a4c198c2ec",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-05-20",
+      "candidate_id": "MAC-4a7f365778c18cc0",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-05-20",
+      "candidate_id": "MAC-947dfff8dfe5c266",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-05-20",
+      "candidate_id": "MAC-ccfbe6d0a2f320ed",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-05-20",
+      "candidate_id": "MAC-f9bd18d480564950",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-05-21",
+      "candidate_id": "MAC-86cf3fed3eccf6c5",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-05-22",
+      "candidate_id": "MAC-2488512526170546",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-05-22",
+      "candidate_id": "MAC-448db909aa0a8c0f",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-05-22",
+      "candidate_id": "MAC-67bd1f94baeec501",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-05-22",
+      "candidate_id": "MAC-a613505399ee28a9",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-05-22",
+      "candidate_id": "MAC-c21647d0e52542cf",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-05-22",
+      "candidate_id": "MAC-d3ddf646dee9c667",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-05-22",
+      "candidate_id": "MAC-d75c4c608aa23644",
+      "task_type": "qa_repair",
+      "action": "extract_claim",
+      "decision": "accept",
+      "reason": "reviewed_exact_span_claim_candidate"
+    },
+    {
+      "date": "2026-05-22",
+      "candidate_id": "MAC-ee08dc6f83ab5635",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-05-23",
+      "candidate_id": "MAC-0e71c8241917e22c",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-05-23",
+      "candidate_id": "MAC-2315ad3d69f7aae6",
+      "task_type": "qa_repair",
+      "action": "extract_claim",
+      "decision": "accept",
+      "reason": "reviewed_exact_span_claim_candidate"
+    },
+    {
+      "date": "2026-05-23",
+      "candidate_id": "MAC-4434ffef0eb8bbaa",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-05-23",
+      "candidate_id": "MAC-512b27536e8cbf5c",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-05-23",
+      "candidate_id": "MAC-727d4cba1d60522e",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-05-23",
+      "candidate_id": "MAC-7ff5b00b09ece02f",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-05-23",
+      "candidate_id": "MAC-9cb0e445f8b4052f",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-05-23",
+      "candidate_id": "MAC-b1da8e4e6cd11ac5",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-05-23",
+      "candidate_id": "MAC-b360a9eea6bec94a",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-05-23",
+      "candidate_id": "MAC-bf6685aff1f2a365",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-05-23",
+      "candidate_id": "MAC-df03377c9a8d5c6b",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-05-23",
+      "candidate_id": "MAC-e31070706475239c",
+      "task_type": "qa_repair",
+      "action": "recollect_original",
+      "decision": "accept",
+      "reason": "reviewed_source_gap_retained_for_recollection"
+    },
+    {
+      "date": "2026-05-23",
+      "candidate_id": "MAC-e6da139a61810248",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-05-23",
+      "candidate_id": "MAC-f299040bd3b2e301",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-05-24",
+      "candidate_id": "MAC-15174deacc88ab4c",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-05-24",
+      "candidate_id": "MAC-22a26b2f49c5ad42",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-05-24",
+      "candidate_id": "MAC-57e825e1ea671125",
+      "task_type": "qa_repair",
+      "action": "extract_claim",
+      "decision": "accept",
+      "reason": "reviewed_exact_span_claim_candidate"
+    },
+    {
+      "date": "2026-05-24",
+      "candidate_id": "MAC-70cf0ac0df345828",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-05-24",
+      "candidate_id": "MAC-9e19148f8dc41b4a",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-05-24",
+      "candidate_id": "MAC-adcd91b0f07be2b2",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-05-24",
+      "candidate_id": "MAC-b7afb500d398d56d",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-05-24",
+      "candidate_id": "MAC-d29abee2462c8d72",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-05-24",
+      "candidate_id": "MAC-e403b7de4f5884d1",
+      "task_type": "qa_repair",
+      "action": "extract_claim",
+      "decision": "accept",
+      "reason": "reviewed_exact_span_claim_candidate"
+    },
+    {
+      "date": "2026-05-24",
+      "candidate_id": "MAC-e676312853cb31ff",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-05-25",
+      "candidate_id": "MAC-00d1542ac2ae7682",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-05-25",
+      "candidate_id": "MAC-97ee1be252f446a9",
+      "task_type": "entity_resolution",
+      "action": "same_entity",
+      "decision": "accept",
+      "reason": "reviewed_merge_to_verified_entity"
+    },
+    {
+      "date": "2026-05-25",
+      "candidate_id": "MAC-9e235a4a4daf676f",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-05-25",
+      "candidate_id": "MAC-9e23922c16fe9fc5",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-05-25",
+      "candidate_id": "MAC-a6c83793016cca47",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-05-25",
+      "candidate_id": "MAC-bcd6de945847530b",
+      "task_type": "qa_repair",
+      "action": "extract_claim",
+      "decision": "accept",
+      "reason": "reviewed_exact_span_claim_candidate"
+    },
+    {
+      "date": "2026-05-25",
+      "candidate_id": "MAC-d208a626b6554d27",
+      "task_type": "qa_repair",
+      "action": "keep_qa",
+      "decision": "accept",
+      "reason": "reviewed_and_retained_in_qa"
+    },
+    {
+      "date": "2026-06-01",
+      "candidate_id": "MAC-38fa25ea4d5aa1f2",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-01",
+      "candidate_id": "MAC-477e457f415a6849",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-01",
+      "candidate_id": "MAC-4b375574167b8be2",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-01",
+      "candidate_id": "MAC-6cc4ff7ca373947c",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-01",
+      "candidate_id": "MAC-b70b6a917c24f35c",
+      "task_type": "qa_repair",
+      "action": "extract_claim",
+      "decision": "accept",
+      "reason": "reviewed_exact_span_claim_candidate"
+    },
+    {
+      "date": "2026-06-01",
+      "candidate_id": "MAC-b96a04ca24b02278",
+      "task_type": "entity_resolution",
+      "action": "same_entity",
+      "decision": "reject",
+      "reason": "same_entity_target_not_proven"
+    },
+    {
+      "date": "2026-06-01",
+      "candidate_id": "MAC-c417188f3e9746f1",
+      "task_type": "qa_repair",
+      "action": "recollect_original",
+      "decision": "accept",
+      "reason": "reviewed_source_gap_retained_for_recollection"
+    },
+    {
+      "date": "2026-06-01",
+      "candidate_id": "MAC-d4617d868894e393",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-06-01",
+      "candidate_id": "MAC-d570b28f3d5f3ff2",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-01",
+      "candidate_id": "MAC-ecf08e5b0d2f9cdc",
+      "task_type": "qa_repair",
+      "action": "extract_claim",
+      "decision": "accept",
+      "reason": "reviewed_exact_span_claim_candidate"
+    },
+    {
+      "date": "2026-06-01",
+      "candidate_id": "MAC-f9067d7957d61fc2",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-02",
+      "candidate_id": "MAC-08cd91793ab3ffc8",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-06-02",
+      "candidate_id": "MAC-0b24c63e71008e03",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-02",
+      "candidate_id": "MAC-41212c309afc5461",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-06-02",
+      "candidate_id": "MAC-6a8a2d2dacb27c8e",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-06-02",
+      "candidate_id": "MAC-7de086c1f49d38f9",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-02",
+      "candidate_id": "MAC-9bb087b7882b2bd1",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-02",
+      "candidate_id": "MAC-bd6a794ce755c596",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-02",
+      "candidate_id": "MAC-c20665199e46440a",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-06-02",
+      "candidate_id": "MAC-cdf6e94ea22fe544",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-06-02",
+      "candidate_id": "MAC-d3c6dc81c3b164f6",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-06-03",
+      "candidate_id": "MAC-11c41d2290538cce",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-03",
+      "candidate_id": "MAC-3585513c82f95b88",
+      "task_type": "entity_resolution",
+      "action": "same_entity",
+      "decision": "accept",
+      "reason": "reviewed_merge_to_verified_entity"
+    },
+    {
+      "date": "2026-06-03",
+      "candidate_id": "MAC-66b4377db0071122",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-03",
+      "candidate_id": "MAC-7d40ad544beedc36",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-03",
+      "candidate_id": "MAC-be520ec2cc3fcdc9",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-03",
+      "candidate_id": "MAC-c8885bfbf1f5562a",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-06-04",
+      "candidate_id": "MAC-4106954ddc34fe39",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-04",
+      "candidate_id": "MAC-63a8c62fa3f2fee5",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-04",
+      "candidate_id": "MAC-84ab7d831df2ce02",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-04",
+      "candidate_id": "MAC-939d976d7dbdb2e6",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-04",
+      "candidate_id": "MAC-a1e7e4e59a60c369",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-04",
+      "candidate_id": "MAC-a2a09ad2cb1101b0",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-04",
+      "candidate_id": "MAC-e2108cb546e41af1",
+      "task_type": "entity_resolution",
+      "action": "same_entity",
+      "decision": "reject",
+      "reason": "same_entity_target_not_proven"
+    },
+    {
+      "date": "2026-06-04",
+      "candidate_id": "MAC-fa13bc9bddf81d8e",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-05",
+      "candidate_id": "MAC-1a19f4a2f007d175",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-05",
+      "candidate_id": "MAC-80e88d6e88dafbca",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-05",
+      "candidate_id": "MAC-a339307f7795c8ed",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-05",
+      "candidate_id": "MAC-a52d5650cfc3945c",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-05",
+      "candidate_id": "MAC-aee7315f7139c671",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-05",
+      "candidate_id": "MAC-c6900061f33cf3a0",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-06",
+      "candidate_id": "MAC-0d72284632a40c9c",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-06",
+      "candidate_id": "MAC-1dc5a3a7f846340b",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-06",
+      "candidate_id": "MAC-4ed3fd2d3343d784",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-06",
+      "candidate_id": "MAC-57b58f6c569816e8",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-06",
+      "candidate_id": "MAC-6f2deadf4ecad255",
+      "task_type": "qa_repair",
+      "action": "extract_claim",
+      "decision": "accept",
+      "reason": "reviewed_exact_span_claim_candidate"
+    },
+    {
+      "date": "2026-06-06",
+      "candidate_id": "MAC-9643eff7e1eb6b4a",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-06",
+      "candidate_id": "MAC-9a39780d5e6c4106",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-06",
+      "candidate_id": "MAC-b22d8f856334654e",
+      "task_type": "qa_repair",
+      "action": "extract_claim",
+      "decision": "accept",
+      "reason": "reviewed_exact_span_claim_candidate"
+    },
+    {
+      "date": "2026-06-06",
+      "candidate_id": "MAC-db79c05cd0aa2c80",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-06",
+      "candidate_id": "MAC-f03b3f3b30dbbe89",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-06",
+      "candidate_id": "MAC-fd08003670ece234",
+      "task_type": "entity_resolution",
+      "action": "same_entity",
+      "decision": "accept",
+      "reason": "reviewed_merge_to_verified_entity"
+    },
+    {
+      "date": "2026-06-07",
+      "candidate_id": "MAC-32839664dc3f9616",
+      "task_type": "qa_repair",
+      "action": "keep_qa",
+      "decision": "accept",
+      "reason": "reviewed_and_retained_in_qa"
+    },
+    {
+      "date": "2026-06-07",
+      "candidate_id": "MAC-62f2469efb5d06f9",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-07",
+      "candidate_id": "MAC-bde69f495794c312",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-08",
+      "candidate_id": "MAC-0cba373fc5b18ca7",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-08",
+      "candidate_id": "MAC-0e1e8ea5ef9622d0",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-06-08",
+      "candidate_id": "MAC-3d0a33796caa8b6c",
+      "task_type": "entity_resolution",
+      "action": "same_entity",
+      "decision": "accept",
+      "reason": "reviewed_merge_to_verified_entity"
+    },
+    {
+      "date": "2026-06-08",
+      "candidate_id": "MAC-5dca636b9df4448d",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-08",
+      "candidate_id": "MAC-62dd4ac9a546aff3",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-08",
+      "candidate_id": "MAC-76a330abc208eec4",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-08",
+      "candidate_id": "MAC-8b342203bd498be2",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-08",
+      "candidate_id": "MAC-a3dd723638b0aebf",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-08",
+      "candidate_id": "MAC-aee80787cd2c05a9",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-08",
+      "candidate_id": "MAC-b71e44df34fc657c",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-06-08",
+      "candidate_id": "MAC-e7d6d6432f012106",
+      "task_type": "qa_repair",
+      "action": "extract_claim",
+      "decision": "accept",
+      "reason": "reviewed_exact_span_claim_candidate"
+    },
+    {
+      "date": "2026-06-09",
+      "candidate_id": "MAC-01f89632c8326d09",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-09",
+      "candidate_id": "MAC-264af05de0401487",
+      "task_type": "qa_repair",
+      "action": "extract_claim",
+      "decision": "accept",
+      "reason": "reviewed_exact_span_claim_candidate"
+    },
+    {
+      "date": "2026-06-09",
+      "candidate_id": "MAC-5fad7411091cdd56",
+      "task_type": "qa_repair",
+      "action": "recollect_original",
+      "decision": "accept",
+      "reason": "reviewed_source_gap_retained_for_recollection"
+    },
+    {
+      "date": "2026-06-09",
+      "candidate_id": "MAC-65b4c6c6104d3981",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-09",
+      "candidate_id": "MAC-740d97d196b6d698",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-06-09",
+      "candidate_id": "MAC-8d622270a9d5dc2d",
+      "task_type": "entity_resolution",
+      "action": "same_entity",
+      "decision": "reject",
+      "reason": "same_entity_target_not_proven"
+    },
+    {
+      "date": "2026-06-09",
+      "candidate_id": "MAC-eef4cc909fc3b6fe",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-09",
+      "candidate_id": "MAC-fac0f8940076a3ce",
+      "task_type": "qa_repair",
+      "action": "recollect_original",
+      "decision": "accept",
+      "reason": "reviewed_source_gap_retained_for_recollection"
+    },
+    {
+      "date": "2026-06-10",
+      "candidate_id": "MAC-01e0fc21252f18f7",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-10",
+      "candidate_id": "MAC-1091ea48189eb76c",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-10",
+      "candidate_id": "MAC-54df0f0072bbba27",
+      "task_type": "entity_resolution",
+      "action": "same_entity",
+      "decision": "reject",
+      "reason": "same_entity_target_not_proven"
+    },
+    {
+      "date": "2026-06-10",
+      "candidate_id": "MAC-820fbb9a55170833",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-10",
+      "candidate_id": "MAC-a70dd484d853372b",
+      "task_type": "entity_resolution",
+      "action": "same_entity",
+      "decision": "reject",
+      "reason": "same_entity_target_not_proven"
+    },
+    {
+      "date": "2026-06-10",
+      "candidate_id": "MAC-de40a2b9fd74ffe0",
+      "task_type": "qa_repair",
+      "action": "keep_qa",
+      "decision": "accept",
+      "reason": "reviewed_and_retained_in_qa"
+    },
+    {
+      "date": "2026-06-11",
+      "candidate_id": "MAC-0c52a1dfcf358985",
+      "task_type": "qa_repair",
+      "action": "recollect_original",
+      "decision": "accept",
+      "reason": "reviewed_source_gap_retained_for_recollection"
+    },
+    {
+      "date": "2026-06-11",
+      "candidate_id": "MAC-12877caf31268a6c",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-11",
+      "candidate_id": "MAC-246d7a11c74d9c98",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-11",
+      "candidate_id": "MAC-3124c7e07a4cff17",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-11",
+      "candidate_id": "MAC-56696e2e7ffdd019",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-11",
+      "candidate_id": "MAC-6ba449ec655d6833",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-11",
+      "candidate_id": "MAC-764f8f804acc4c82",
+      "task_type": "qa_repair",
+      "action": "extract_claim",
+      "decision": "accept",
+      "reason": "reviewed_exact_span_claim_candidate"
+    },
+    {
+      "date": "2026-06-11",
+      "candidate_id": "MAC-8d5af98a3b2debc2",
+      "task_type": "entity_resolution",
+      "action": "same_entity",
+      "decision": "reject",
+      "reason": "same_entity_target_not_proven"
+    },
+    {
+      "date": "2026-06-11",
+      "candidate_id": "MAC-b4bd0b6e9d71025b",
+      "task_type": "qa_repair",
+      "action": "recollect_original",
+      "decision": "accept",
+      "reason": "reviewed_source_gap_retained_for_recollection"
+    },
+    {
+      "date": "2026-06-11",
+      "candidate_id": "MAC-ba54141793f47b7f",
+      "task_type": "qa_repair",
+      "action": "recollect_original",
+      "decision": "accept",
+      "reason": "reviewed_source_gap_retained_for_recollection"
+    },
+    {
+      "date": "2026-06-11",
+      "candidate_id": "MAC-cb837859abe2c414",
+      "task_type": "qa_repair",
+      "action": "recollect_original",
+      "decision": "accept",
+      "reason": "reviewed_source_gap_retained_for_recollection"
+    },
+    {
+      "date": "2026-06-11",
+      "candidate_id": "MAC-d319f91e3c302159",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-11",
+      "candidate_id": "MAC-d93828de00cbf76a",
+      "task_type": "qa_repair",
+      "action": "keep_qa",
+      "decision": "accept",
+      "reason": "reviewed_and_retained_in_qa"
+    },
+    {
+      "date": "2026-06-11",
+      "candidate_id": "MAC-fbe4c86d772c9650",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-12",
+      "candidate_id": "MAC-09517a0021b3906b",
+      "task_type": "qa_repair",
+      "action": "extract_claim",
+      "decision": "accept",
+      "reason": "reviewed_exact_span_claim_candidate"
+    },
+    {
+      "date": "2026-06-12",
+      "candidate_id": "MAC-0f9259aaa4cecaef",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-12",
+      "candidate_id": "MAC-2017c7f4c55a39dd",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-12",
+      "candidate_id": "MAC-253fd451db3d04a9",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-12",
+      "candidate_id": "MAC-2aa43aaefe01723d",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-12",
+      "candidate_id": "MAC-2fdea124e5d10454",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-12",
+      "candidate_id": "MAC-359f7ba78556458b",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-12",
+      "candidate_id": "MAC-9127c3e147681a08",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-12",
+      "candidate_id": "MAC-c399e63e02162a1a",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-06-13",
+      "candidate_id": "MAC-06ecdc1fdc0593e0",
+      "task_type": "qa_repair",
+      "action": "extract_claim",
+      "decision": "accept",
+      "reason": "reviewed_exact_span_claim_candidate"
+    },
+    {
+      "date": "2026-06-13",
+      "candidate_id": "MAC-1a41b8a673e42d89",
+      "task_type": "qa_repair",
+      "action": "extract_claim",
+      "decision": "accept",
+      "reason": "reviewed_exact_span_claim_candidate"
+    },
+    {
+      "date": "2026-06-13",
+      "candidate_id": "MAC-1ca7affdabfbb8b8",
+      "task_type": "qa_repair",
+      "action": "recollect_original",
+      "decision": "accept",
+      "reason": "reviewed_source_gap_retained_for_recollection"
+    },
+    {
+      "date": "2026-06-13",
+      "candidate_id": "MAC-2512a681d8062f60",
+      "task_type": "qa_repair",
+      "action": "extract_claim",
+      "decision": "accept",
+      "reason": "reviewed_exact_span_claim_candidate"
+    },
+    {
+      "date": "2026-06-13",
+      "candidate_id": "MAC-2b366ddebe7270c4",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-13",
+      "candidate_id": "MAC-377d670b87ff309d",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-06-13",
+      "candidate_id": "MAC-3fc7558217103f27",
+      "task_type": "qa_repair",
+      "action": "recollect_original",
+      "decision": "accept",
+      "reason": "reviewed_source_gap_retained_for_recollection"
+    },
+    {
+      "date": "2026-06-13",
+      "candidate_id": "MAC-6215d591e304affb",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-13",
+      "candidate_id": "MAC-69d85ba96236c5ba",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-13",
+      "candidate_id": "MAC-760b319c47adb4d5",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-06-13",
+      "candidate_id": "MAC-76522d7823c88138",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-13",
+      "candidate_id": "MAC-797df0ea2dcc5ffb",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-13",
+      "candidate_id": "MAC-8e3650dc0a6b7768",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-13",
+      "candidate_id": "MAC-9260509514539fbc",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-13",
+      "candidate_id": "MAC-aa2037331ce50699",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-13",
+      "candidate_id": "MAC-b71773759bb1b8f9",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-13",
+      "candidate_id": "MAC-d594c3346c6c09e2",
+      "task_type": "qa_repair",
+      "action": "recollect_original",
+      "decision": "accept",
+      "reason": "reviewed_source_gap_retained_for_recollection"
+    },
+    {
+      "date": "2026-06-13",
+      "candidate_id": "MAC-d920327bc42df4f3",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-13",
+      "candidate_id": "MAC-e963921162aecd87",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-13",
+      "candidate_id": "MAC-fcd79fb713cb9656",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-14",
+      "candidate_id": "MAC-340374cea46f0265",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-06-14",
+      "candidate_id": "MAC-3fbbc1b6c765426b",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-14",
+      "candidate_id": "MAC-4eda173533c272fc",
+      "task_type": "entity_resolution",
+      "action": "same_entity",
+      "decision": "reject",
+      "reason": "same_entity_target_not_proven"
+    },
+    {
+      "date": "2026-06-14",
+      "candidate_id": "MAC-724907a5b1927f63",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-06-14",
+      "candidate_id": "MAC-89be176b3057626d",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-14",
+      "candidate_id": "MAC-93dbc17aac64b0af",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-14",
+      "candidate_id": "MAC-b4362971e257d970",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-06-14",
+      "candidate_id": "MAC-bae4e0935d4b9548",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-06-14",
+      "candidate_id": "MAC-eafc111428bc0e15",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-15",
+      "candidate_id": "MAC-0c6fde6d973fc28e",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-06-15",
+      "candidate_id": "MAC-297171b2085340f1",
+      "task_type": "qa_repair",
+      "action": "recollect_original",
+      "decision": "accept",
+      "reason": "reviewed_source_gap_retained_for_recollection"
+    },
+    {
+      "date": "2026-06-15",
+      "candidate_id": "MAC-4204e8fdc3b6366d",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-06-15",
+      "candidate_id": "MAC-68fc91175114dfe8",
+      "task_type": "qa_repair",
+      "action": "recollect_original",
+      "decision": "accept",
+      "reason": "reviewed_source_gap_retained_for_recollection"
+    },
+    {
+      "date": "2026-06-15",
+      "candidate_id": "MAC-7025d68472b3ed2f",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-15",
+      "candidate_id": "MAC-72c83a18c83175bf",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-15",
+      "candidate_id": "MAC-98205b0203502cfe",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-15",
+      "candidate_id": "MAC-b5f1a9938702f1ce",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-06-15",
+      "candidate_id": "MAC-b9f2b5a737170533",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-15",
+      "candidate_id": "MAC-bb885022fb1ad9cc",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-15",
+      "candidate_id": "MAC-c391293c4880d753",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-15",
+      "candidate_id": "MAC-c3a36608677d26ec",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-15",
+      "candidate_id": "MAC-ca0eaa098d1ac386",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-15",
+      "candidate_id": "MAC-d45770d30323f15a",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-15",
+      "candidate_id": "MAC-e065c2b63fbc00fb",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-16",
+      "candidate_id": "MAC-44cfb61e1befc1a4",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-16",
+      "candidate_id": "MAC-6bcf0a6013258dfd",
+      "task_type": "qa_repair",
+      "action": "recollect_original",
+      "decision": "accept",
+      "reason": "reviewed_source_gap_retained_for_recollection"
+    },
+    {
+      "date": "2026-06-16",
+      "candidate_id": "MAC-6c6a31d0f08e6f74",
+      "task_type": "qa_repair",
+      "action": "keep_qa",
+      "decision": "accept",
+      "reason": "reviewed_and_retained_in_qa"
+    },
+    {
+      "date": "2026-06-16",
+      "candidate_id": "MAC-6d65546078d3afd3",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-16",
+      "candidate_id": "MAC-747f7eb20c2e331b",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-16",
+      "candidate_id": "MAC-7ba6b700e5c44bf4",
+      "task_type": "qa_repair",
+      "action": "recollect_original",
+      "decision": "accept",
+      "reason": "reviewed_source_gap_retained_for_recollection"
+    },
+    {
+      "date": "2026-06-16",
+      "candidate_id": "MAC-a5307486284f8b51",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-16",
+      "candidate_id": "MAC-aa792f66f3fd9f5c",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-16",
+      "candidate_id": "MAC-ab2ff2c3f1437658",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-16",
+      "candidate_id": "MAC-ac7f31a9c6852326",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-16",
+      "candidate_id": "MAC-af5ce729463f77d8",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-16",
+      "candidate_id": "MAC-b07455051ef5b224",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-16",
+      "candidate_id": "MAC-b1a70d668dfa78f0",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-16",
+      "candidate_id": "MAC-b2e6c91d6d14a598",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-16",
+      "candidate_id": "MAC-c32a2cc1b3f7f587",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-16",
+      "candidate_id": "MAC-e77def76a82b0788",
+      "task_type": "qa_repair",
+      "action": "extract_claim",
+      "decision": "accept",
+      "reason": "reviewed_exact_span_claim_candidate"
+    },
+    {
+      "date": "2026-06-16",
+      "candidate_id": "MAC-edeac09bbef82cdb",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-17",
+      "candidate_id": "MAC-0bcb2d8beb707219",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-06-17",
+      "candidate_id": "MAC-37f11bf821612c6d",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-06-17",
+      "candidate_id": "MAC-73d0ee229c2433ce",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-17",
+      "candidate_id": "MAC-746008859e56fc50",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-17",
+      "candidate_id": "MAC-7e11e0ff8afa1ef2",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-06-17",
+      "candidate_id": "MAC-9062cd7fecc48bfe",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-17",
+      "candidate_id": "MAC-959bf98c28f47943",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-17",
+      "candidate_id": "MAC-9e0fc70c0b7ade67",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-17",
+      "candidate_id": "MAC-a9b037f90991f685",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-17",
+      "candidate_id": "MAC-d54813834ddf8e37",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-17",
+      "candidate_id": "MAC-e21a6ee3dc5df525",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-17",
+      "candidate_id": "MAC-fbad94edfc3b2738",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-18",
+      "candidate_id": "MAC-23b8058ed3e5e2bd",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-18",
+      "candidate_id": "MAC-54b5de8263297054",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-18",
+      "candidate_id": "MAC-6284b236e6943886",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-18",
+      "candidate_id": "MAC-763e28bf6d29058d",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-18",
+      "candidate_id": "MAC-8c1e0fcb5e06fb66",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-06-18",
+      "candidate_id": "MAC-a5ebadf53a726a4a",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-18",
+      "candidate_id": "MAC-b91aae854a638d73",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-18",
+      "candidate_id": "MAC-dab55c815405a06c",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-18",
+      "candidate_id": "MAC-dbff489bcec7c038",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-18",
+      "candidate_id": "MAC-e0f7f049add751e5",
+      "task_type": "entity_resolution",
+      "action": "same_entity",
+      "decision": "accept",
+      "reason": "reviewed_merge_to_verified_entity"
+    },
+    {
+      "date": "2026-06-18",
+      "candidate_id": "MAC-fabbfe3c76fd9f9e",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-19",
+      "candidate_id": "MAC-079805ebd863b037",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-19",
+      "candidate_id": "MAC-5030f8cade64709c",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-19",
+      "candidate_id": "MAC-5967cec2842ae929",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-19",
+      "candidate_id": "MAC-760ce866f3f23351",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-06-19",
+      "candidate_id": "MAC-b07a3f38cefc91e5",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-06-19",
+      "candidate_id": "MAC-b17e0b26732106cd",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-19",
+      "candidate_id": "MAC-be5f2c1a5c2c661c",
+      "task_type": "qa_repair",
+      "action": "extract_claim",
+      "decision": "accept",
+      "reason": "reviewed_exact_span_claim_candidate"
+    },
+    {
+      "date": "2026-06-19",
+      "candidate_id": "MAC-cf25c162748aebe2",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-19",
+      "candidate_id": "MAC-d42bdaf055c3b5d0",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-19",
+      "candidate_id": "MAC-eb4f1ce876851ad5",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-06-19",
+      "candidate_id": "MAC-f15f28463e0d97c2",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-20",
+      "candidate_id": "MAC-02676aad51459e30",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-20",
+      "candidate_id": "MAC-227bc0f188f6f99f",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-06-20",
+      "candidate_id": "MAC-345b310c828a2f99",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-06-20",
+      "candidate_id": "MAC-428198c64f99ad5b",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-21",
+      "candidate_id": "MAC-03be504f5fe3f176",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-21",
+      "candidate_id": "MAC-23d818119cc24456",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-21",
+      "candidate_id": "MAC-406844bdf9b1f223",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-21",
+      "candidate_id": "MAC-5c56c9b2cc15119a",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-21",
+      "candidate_id": "MAC-ba2dbc63efc61f9d",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-21",
+      "candidate_id": "MAC-ce18e4bc7b84fb85",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-21",
+      "candidate_id": "MAC-cf150b1664c17526",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-21",
+      "candidate_id": "MAC-e08c4712d96bc0cd",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-06-21",
+      "candidate_id": "MAC-e3866bd81e2c3706",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-21",
+      "candidate_id": "MAC-e92f06d40b43399c",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-22",
+      "candidate_id": "MAC-08de5e8bb39569fc",
+      "task_type": "qa_repair",
+      "action": "recollect_original",
+      "decision": "accept",
+      "reason": "reviewed_source_gap_retained_for_recollection"
+    },
+    {
+      "date": "2026-06-22",
+      "candidate_id": "MAC-1050caf896df8024",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-22",
+      "candidate_id": "MAC-2e8a6b10a03eadbd",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-22",
+      "candidate_id": "MAC-4d00c8a106d4ef49",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-22",
+      "candidate_id": "MAC-5f25ff0f62a65569",
+      "task_type": "qa_repair",
+      "action": "keep_qa",
+      "decision": "accept",
+      "reason": "reviewed_and_retained_in_qa"
+    },
+    {
+      "date": "2026-06-22",
+      "candidate_id": "MAC-63d53af948256cc3",
+      "task_type": "qa_repair",
+      "action": "recollect_original",
+      "decision": "accept",
+      "reason": "reviewed_source_gap_retained_for_recollection"
+    },
+    {
+      "date": "2026-06-22",
+      "candidate_id": "MAC-6c587578ae1d91ed",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-22",
+      "candidate_id": "MAC-80716fd2fe5fb3d5",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-22",
+      "candidate_id": "MAC-96166748623b4109",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-22",
+      "candidate_id": "MAC-ae687bf5e59fcffd",
+      "task_type": "qa_repair",
+      "action": "recollect_original",
+      "decision": "accept",
+      "reason": "reviewed_source_gap_retained_for_recollection"
+    },
+    {
+      "date": "2026-06-22",
+      "candidate_id": "MAC-c9096ad3939a79b6",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-22",
+      "candidate_id": "MAC-cbf816d676e7f11c",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-22",
+      "candidate_id": "MAC-cc6be9f49b895e39",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-22",
+      "candidate_id": "MAC-d132372205cb531e",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-22",
+      "candidate_id": "MAC-d4344e9dbddd4a61",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-22",
+      "candidate_id": "MAC-e45b12f17a3011ba",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-22",
+      "candidate_id": "MAC-f1c75476e956c09b",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-23",
+      "candidate_id": "MAC-0d07c4befa1cf08d",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-23",
+      "candidate_id": "MAC-100055bce66387d5",
+      "task_type": "qa_repair",
+      "action": "recollect_original",
+      "decision": "accept",
+      "reason": "reviewed_source_gap_retained_for_recollection"
+    },
+    {
+      "date": "2026-06-23",
+      "candidate_id": "MAC-199ef140ea0f6c82",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-23",
+      "candidate_id": "MAC-1e750678c44606ba",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-23",
+      "candidate_id": "MAC-3cc80278150c001c",
+      "task_type": "entity_resolution",
+      "action": "same_entity",
+      "decision": "reject",
+      "reason": "same_entity_target_not_proven"
+    },
+    {
+      "date": "2026-06-23",
+      "candidate_id": "MAC-53ddcd580e33ada9",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-23",
+      "candidate_id": "MAC-58f9f1e72cf97da3",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-23",
+      "candidate_id": "MAC-714063be5950ee75",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-23",
+      "candidate_id": "MAC-8127e64ea2edebc2",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-23",
+      "candidate_id": "MAC-8d2b5871a6827d9a",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-23",
+      "candidate_id": "MAC-9792c8e9da6bae06",
+      "task_type": "entity_resolution",
+      "action": "same_entity",
+      "decision": "accept",
+      "reason": "reviewed_merge_to_verified_entity"
+    },
+    {
+      "date": "2026-06-23",
+      "candidate_id": "MAC-a28ced1411b49cb8",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-06-23",
+      "candidate_id": "MAC-ac335d3451aa2c4f",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-23",
+      "candidate_id": "MAC-baf320c31555a52d",
+      "task_type": "entity_resolution",
+      "action": "same_entity",
+      "decision": "reject",
+      "reason": "same_entity_target_not_proven"
+    },
+    {
+      "date": "2026-06-23",
+      "candidate_id": "MAC-d15f92ada8775629",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-23",
+      "candidate_id": "MAC-d8b5f80b15aa8251",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-23",
+      "candidate_id": "MAC-da186a76df2d6cba",
+      "task_type": "qa_repair",
+      "action": "extract_claim",
+      "decision": "accept",
+      "reason": "reviewed_exact_span_claim_candidate"
+    },
+    {
+      "date": "2026-06-23",
+      "candidate_id": "MAC-e0706d12476748ee",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-06-24",
+      "candidate_id": "MAC-034f0f795c06cfab",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-24",
+      "candidate_id": "MAC-991817f07ddbb8a2",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-06-24",
+      "candidate_id": "MAC-a37044f28be70246",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-24",
+      "candidate_id": "MAC-ad03ea7db1eacdc7",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-24",
+      "candidate_id": "MAC-ad14c2c09e5b4c8a",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-24",
+      "candidate_id": "MAC-c00d5e50a799c4cc",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-24",
+      "candidate_id": "MAC-d158af4ce4137e1d",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-24",
+      "candidate_id": "MAC-def8d841cd5af603",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-24",
+      "candidate_id": "MAC-f332e52a0c368a20",
+      "task_type": "qa_repair",
+      "action": "keep_qa",
+      "decision": "accept",
+      "reason": "reviewed_and_retained_in_qa"
+    },
+    {
+      "date": "2026-06-25",
+      "candidate_id": "MAC-04d003d347693e23",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-25",
+      "candidate_id": "MAC-09f24a1f2fa0ad02",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-25",
+      "candidate_id": "MAC-1b16f96f8f63ea68",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-06-25",
+      "candidate_id": "MAC-20b607f953e496e4",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-06-25",
+      "candidate_id": "MAC-3d20ed235028ed75",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-25",
+      "candidate_id": "MAC-408d236b56a487a2",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-25",
+      "candidate_id": "MAC-43d0cbbe7993f33a",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-25",
+      "candidate_id": "MAC-819e29e588ea6967",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-25",
+      "candidate_id": "MAC-94b60e42d292cb7f",
+      "task_type": "qa_repair",
+      "action": "recollect_original",
+      "decision": "accept",
+      "reason": "reviewed_source_gap_retained_for_recollection"
+    },
+    {
+      "date": "2026-06-25",
+      "candidate_id": "MAC-95e18667d7297127",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-25",
+      "candidate_id": "MAC-a1f54769825d6d60",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-25",
+      "candidate_id": "MAC-a9e6479aeadd9940",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-25",
+      "candidate_id": "MAC-cb2f468606f57542",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-25",
+      "candidate_id": "MAC-d1c6e293a6d7ea66",
+      "task_type": "qa_repair",
+      "action": "recollect_original",
+      "decision": "accept",
+      "reason": "reviewed_source_gap_retained_for_recollection"
+    },
+    {
+      "date": "2026-06-25",
+      "candidate_id": "MAC-d6cd02800cb18ace",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-25",
+      "candidate_id": "MAC-e47607d60ecec1e4",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-06-25",
+      "candidate_id": "MAC-f8d89450c95c0218",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-25",
+      "candidate_id": "MAC-ff2d0b680f8a5544",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-26",
+      "candidate_id": "MAC-00ecb8a0c3f81c01",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-26",
+      "candidate_id": "MAC-1977a31af73d8722",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-06-26",
+      "candidate_id": "MAC-4a6b288570cb413f",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-26",
+      "candidate_id": "MAC-53bf727cd37e1571",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-06-26",
+      "candidate_id": "MAC-5c55903cfc59ec84",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-26",
+      "candidate_id": "MAC-93f2f6242736e6be",
+      "task_type": "qa_repair",
+      "action": "recollect_original",
+      "decision": "accept",
+      "reason": "reviewed_source_gap_retained_for_recollection"
+    },
+    {
+      "date": "2026-06-26",
+      "candidate_id": "MAC-973e86645aad6692",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-26",
+      "candidate_id": "MAC-cccb6f1c791ceaec",
+      "task_type": "qa_repair",
+      "action": "extract_claim",
+      "decision": "accept",
+      "reason": "reviewed_exact_span_claim_candidate"
+    },
+    {
+      "date": "2026-06-26",
+      "candidate_id": "MAC-db8493aee9f38b72",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-06-26",
+      "candidate_id": "MAC-e0168a58ebd89d4a",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-27",
+      "candidate_id": "MAC-0e13d1c38b2ab4f2",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-27",
+      "candidate_id": "MAC-6448f7029444629e",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-27",
+      "candidate_id": "MAC-6ec828fce23a93b9",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-27",
+      "candidate_id": "MAC-7ed366470e2089ce",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-27",
+      "candidate_id": "MAC-964fb9bfb35a550f",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-27",
+      "candidate_id": "MAC-a3c2f62c723355b2",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-06-28",
+      "candidate_id": "MAC-17973ad54423ffff",
+      "task_type": "qa_repair",
+      "action": "recollect_original",
+      "decision": "accept",
+      "reason": "reviewed_source_gap_retained_for_recollection"
+    },
+    {
+      "date": "2026-06-28",
+      "candidate_id": "MAC-1f9eb18612af7d3c",
+      "task_type": "qa_repair",
+      "action": "recollect_original",
+      "decision": "accept",
+      "reason": "reviewed_source_gap_retained_for_recollection"
+    },
+    {
+      "date": "2026-06-28",
+      "candidate_id": "MAC-2065088ed46dcfaf",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-28",
+      "candidate_id": "MAC-3943ff52c04a5d83",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-28",
+      "candidate_id": "MAC-c3ac98bd1ee50441",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-28",
+      "candidate_id": "MAC-ca88a17c1ac39729",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-29",
+      "candidate_id": "MAC-06bb84fc1c0be35c",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-29",
+      "candidate_id": "MAC-0b96b82267dfeda4",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-29",
+      "candidate_id": "MAC-103052bd2f2cc7cc",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-29",
+      "candidate_id": "MAC-14138afcab33d97b",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-29",
+      "candidate_id": "MAC-2660c6188dd6b077",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-29",
+      "candidate_id": "MAC-3ded504a3297080c",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-29",
+      "candidate_id": "MAC-414e8c59942d6852",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-29",
+      "candidate_id": "MAC-463bb897b0e290e8",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-06-29",
+      "candidate_id": "MAC-5ab46eb374366248",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-29",
+      "candidate_id": "MAC-92308b53048382fd",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-06-29",
+      "candidate_id": "MAC-937574382d0c7bf4",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-29",
+      "candidate_id": "MAC-a9007cc0fe2d217b",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-06-29",
+      "candidate_id": "MAC-b4e43e63008ff2dc",
+      "task_type": "qa_repair",
+      "action": "recollect_original",
+      "decision": "accept",
+      "reason": "reviewed_source_gap_retained_for_recollection"
+    },
+    {
+      "date": "2026-06-29",
+      "candidate_id": "MAC-c4860d69edfba700",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-29",
+      "candidate_id": "MAC-d8c6fb4a33cb7042",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-06-29",
+      "candidate_id": "MAC-dcc762b77e683b0f",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-29",
+      "candidate_id": "MAC-e091655a654e32fb",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-29",
+      "candidate_id": "MAC-e964541456b00d4f",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-30",
+      "candidate_id": "MAC-4896dacf8641bf4d",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-30",
+      "candidate_id": "MAC-4ae828bf73b1c389",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-30",
+      "candidate_id": "MAC-4de963df39695c72",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-30",
+      "candidate_id": "MAC-c486b6e85038903f",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-06-30",
+      "candidate_id": "MAC-c769adfe0dcfcf62",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-06-30",
+      "candidate_id": "MAC-f3bdc5fe08392456",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-01",
+      "candidate_id": "MAC-09eb8e303fb677a1",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-01",
+      "candidate_id": "MAC-4888cd05cb1b43b4",
+      "task_type": "qa_repair",
+      "action": "extract_claim",
+      "decision": "accept",
+      "reason": "reviewed_exact_span_claim_candidate"
+    },
+    {
+      "date": "2026-07-01",
+      "candidate_id": "MAC-7823c3e537963775",
+      "task_type": "entity_resolution",
+      "action": "same_entity",
+      "decision": "reject",
+      "reason": "same_entity_target_not_proven"
+    },
+    {
+      "date": "2026-07-01",
+      "candidate_id": "MAC-9367132a39e5dced",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-07-01",
+      "candidate_id": "MAC-acb132e2363d5998",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-01",
+      "candidate_id": "MAC-b7c3fdcf05e2315a",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-07-01",
+      "candidate_id": "MAC-f6091d358371d950",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-01",
+      "candidate_id": "MAC-fbf7cfd42e291f8a",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-01",
+      "candidate_id": "MAC-ffbff4a7543a28a2",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-02",
+      "candidate_id": "MAC-0ce7845cdc6a8a3f",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-02",
+      "candidate_id": "MAC-2270912f27a6e7b1",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-02",
+      "candidate_id": "MAC-28d2066367152f6b",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-02",
+      "candidate_id": "MAC-33312ad6df8ef6b2",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-02",
+      "candidate_id": "MAC-4101fb6bd4f6f421",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-02",
+      "candidate_id": "MAC-4175f0f1edda6259",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-02",
+      "candidate_id": "MAC-50f81450f0f32892",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-02",
+      "candidate_id": "MAC-77b4629d1eb93c23",
+      "task_type": "qa_repair",
+      "action": "extract_claim",
+      "decision": "accept",
+      "reason": "reviewed_exact_span_claim_candidate"
+    },
+    {
+      "date": "2026-07-02",
+      "candidate_id": "MAC-830a32b2380f6537",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-02",
+      "candidate_id": "MAC-b13773d5eb053d42",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-02",
+      "candidate_id": "MAC-b578cdf0b98e7c2f",
+      "task_type": "qa_repair",
+      "action": "extract_claim",
+      "decision": "accept",
+      "reason": "reviewed_exact_span_claim_candidate"
+    },
+    {
+      "date": "2026-07-02",
+      "candidate_id": "MAC-cbc1e6fb18ff91b7",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-02",
+      "candidate_id": "MAC-ceefb2c9076e4cc9",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-02",
+      "candidate_id": "MAC-e7783a747fa8471f",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-02",
+      "candidate_id": "MAC-ff79408f6edf55dd",
+      "task_type": "qa_repair",
+      "action": "recollect_original",
+      "decision": "accept",
+      "reason": "reviewed_source_gap_retained_for_recollection"
+    },
+    {
+      "date": "2026-07-03",
+      "candidate_id": "MAC-1e01aa13da3b1f20",
+      "task_type": "qa_repair",
+      "action": "recollect_original",
+      "decision": "accept",
+      "reason": "reviewed_source_gap_retained_for_recollection"
+    },
+    {
+      "date": "2026-07-03",
+      "candidate_id": "MAC-238fcc9148d7d11e",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-07-03",
+      "candidate_id": "MAC-45dc30a0440e90f9",
+      "task_type": "qa_repair",
+      "action": "recollect_original",
+      "decision": "accept",
+      "reason": "reviewed_source_gap_retained_for_recollection"
+    },
+    {
+      "date": "2026-07-03",
+      "candidate_id": "MAC-5047e9e0b1f099c2",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-07-03",
+      "candidate_id": "MAC-537d28145c00c4af",
+      "task_type": "qa_repair",
+      "action": "keep_qa",
+      "decision": "accept",
+      "reason": "reviewed_and_retained_in_qa"
+    },
+    {
+      "date": "2026-07-03",
+      "candidate_id": "MAC-6b9943406d7aaf68",
+      "task_type": "qa_repair",
+      "action": "recollect_original",
+      "decision": "accept",
+      "reason": "reviewed_source_gap_retained_for_recollection"
+    },
+    {
+      "date": "2026-07-03",
+      "candidate_id": "MAC-6d1c40daf7d58735",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-03",
+      "candidate_id": "MAC-733d6a1725e5e715",
+      "task_type": "qa_repair",
+      "action": "recollect_original",
+      "decision": "accept",
+      "reason": "reviewed_source_gap_retained_for_recollection"
+    },
+    {
+      "date": "2026-07-03",
+      "candidate_id": "MAC-899fe6f1a1b90a6d",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-03",
+      "candidate_id": "MAC-97830c98ce4ecd48",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-03",
+      "candidate_id": "MAC-b8938604ab97c414",
+      "task_type": "entity_resolution",
+      "action": "same_entity",
+      "decision": "reject",
+      "reason": "same_entity_target_not_proven"
+    },
+    {
+      "date": "2026-07-03",
+      "candidate_id": "MAC-d7c646854823ca21",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-04",
+      "candidate_id": "MAC-04c99ef527f9fcb6",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-04",
+      "candidate_id": "MAC-16af2990f76674e2",
+      "task_type": "qa_repair",
+      "action": "extract_claim",
+      "decision": "accept",
+      "reason": "reviewed_exact_span_claim_candidate"
+    },
+    {
+      "date": "2026-07-04",
+      "candidate_id": "MAC-1d93976d2342ca3b",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-04",
+      "candidate_id": "MAC-2b6171b1165d512f",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-07-04",
+      "candidate_id": "MAC-32e303467a4fe390",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-04",
+      "candidate_id": "MAC-50535d475a0689a7",
+      "task_type": "qa_repair",
+      "action": "recollect_original",
+      "decision": "accept",
+      "reason": "reviewed_source_gap_retained_for_recollection"
+    },
+    {
+      "date": "2026-07-04",
+      "candidate_id": "MAC-523cd0fd27ccc230",
+      "task_type": "qa_repair",
+      "action": "recollect_original",
+      "decision": "accept",
+      "reason": "reviewed_source_gap_retained_for_recollection"
+    },
+    {
+      "date": "2026-07-04",
+      "candidate_id": "MAC-55134feb4d2d08c7",
+      "task_type": "entity_resolution",
+      "action": "same_entity",
+      "decision": "reject",
+      "reason": "same_entity_target_not_proven"
+    },
+    {
+      "date": "2026-07-04",
+      "candidate_id": "MAC-55c37ce241f78016",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-04",
+      "candidate_id": "MAC-6a6e0eb97dcc6727",
+      "task_type": "qa_repair",
+      "action": "extract_claim",
+      "decision": "accept",
+      "reason": "reviewed_exact_span_claim_candidate"
+    },
+    {
+      "date": "2026-07-04",
+      "candidate_id": "MAC-6a8e3cdc644e587d",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-04",
+      "candidate_id": "MAC-6c2cfbd2aaed325e",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-04",
+      "candidate_id": "MAC-76698f72fdd8546b",
+      "task_type": "qa_repair",
+      "action": "extract_claim",
+      "decision": "accept",
+      "reason": "reviewed_exact_span_claim_candidate"
+    },
+    {
+      "date": "2026-07-04",
+      "candidate_id": "MAC-88bfdb8fe62f6c35",
+      "task_type": "qa_repair",
+      "action": "extract_claim",
+      "decision": "accept",
+      "reason": "reviewed_exact_span_claim_candidate"
+    },
+    {
+      "date": "2026-07-04",
+      "candidate_id": "MAC-8e636a586e8f5c1a",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-04",
+      "candidate_id": "MAC-bfa5e3077cb8c0f5",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-04",
+      "candidate_id": "MAC-c1d6c5530a0118ce",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-04",
+      "candidate_id": "MAC-d9e1a76754534e3a",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-04",
+      "candidate_id": "MAC-daf2f27a1f02ec0d",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-04",
+      "candidate_id": "MAC-e0587965455b7f88",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-05",
+      "candidate_id": "MAC-5cfb72bbfc09ecc5",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-07-05",
+      "candidate_id": "MAC-5e88df09760d38f9",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-05",
+      "candidate_id": "MAC-62906b0769167495",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-05",
+      "candidate_id": "MAC-6c750ff9960c1f6e",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-05",
+      "candidate_id": "MAC-917d25a3677692fb",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-05",
+      "candidate_id": "MAC-9f016eb2962fc9ed",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-05",
+      "candidate_id": "MAC-af96fbfd7c4eb780",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-06",
+      "candidate_id": "MAC-03f812e091cbc8d5",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-06",
+      "candidate_id": "MAC-39d781f71708e1cd",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-06",
+      "candidate_id": "MAC-6a40798472df07f3",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-06",
+      "candidate_id": "MAC-7b3fd97f6ff9aadd",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-07-06",
+      "candidate_id": "MAC-baa78a313bce6a58",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-06",
+      "candidate_id": "MAC-c3b839cb6979842c",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-07",
+      "candidate_id": "MAC-27dd5b00fd854bd3",
+      "task_type": "qa_repair",
+      "action": "extract_claim",
+      "decision": "accept",
+      "reason": "reviewed_exact_span_claim_candidate"
+    },
+    {
+      "date": "2026-07-07",
+      "candidate_id": "MAC-4ad97f6bd2d7abde",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-07",
+      "candidate_id": "MAC-597d16732df25f83",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-07",
+      "candidate_id": "MAC-5e44c1ef4e8abfaf",
+      "task_type": "qa_repair",
+      "action": "extract_claim",
+      "decision": "accept",
+      "reason": "reviewed_exact_span_claim_candidate"
+    },
+    {
+      "date": "2026-07-07",
+      "candidate_id": "MAC-6e9dee5523378bc3",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-07",
+      "candidate_id": "MAC-7c246de879bea456",
+      "task_type": "entity_resolution",
+      "action": "same_entity",
+      "decision": "reject",
+      "reason": "same_entity_target_not_proven"
+    },
+    {
+      "date": "2026-07-07",
+      "candidate_id": "MAC-8c269cf6c381c049",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-07",
+      "candidate_id": "MAC-91e71628dd81bb2f",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-07",
+      "candidate_id": "MAC-93d73979e32c92ce",
+      "task_type": "qa_repair",
+      "action": "extract_claim",
+      "decision": "accept",
+      "reason": "reviewed_exact_span_claim_candidate"
+    },
+    {
+      "date": "2026-07-07",
+      "candidate_id": "MAC-958e5a5587d4fc37",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-07",
+      "candidate_id": "MAC-9db4385ea9cd881c",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-07-07",
+      "candidate_id": "MAC-b78158cc24c598a0",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-07",
+      "candidate_id": "MAC-d3c11bb6d37158e5",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-07",
+      "candidate_id": "MAC-e28e415c158e01f0",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-07",
+      "candidate_id": "MAC-e8c46928a98b39da",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-08",
+      "candidate_id": "MAC-196f91dd3fad3616",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-07-08",
+      "candidate_id": "MAC-2870437b150ec491",
+      "task_type": "qa_repair",
+      "action": "extract_claim",
+      "decision": "accept",
+      "reason": "reviewed_exact_span_claim_candidate"
+    },
+    {
+      "date": "2026-07-08",
+      "candidate_id": "MAC-3f2bbec8c8765917",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-08",
+      "candidate_id": "MAC-46a5a4ce3a01428d",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-08",
+      "candidate_id": "MAC-4dea46d133af079e",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-08",
+      "candidate_id": "MAC-8e3ad687d5139a26",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-08",
+      "candidate_id": "MAC-963125c994e1f2f4",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-08",
+      "candidate_id": "MAC-b77784e315fedf50",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-08",
+      "candidate_id": "MAC-ca9266713f7b6683",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-07-08",
+      "candidate_id": "MAC-e0623ed1f38b85ae",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-08",
+      "candidate_id": "MAC-f071bc69f9b3e664",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-08",
+      "candidate_id": "MAC-f31b9176dcdfd04a",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-09",
+      "candidate_id": "MAC-2d0c66909f6ef7eb",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-09",
+      "candidate_id": "MAC-2d92694f9db91bcc",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-09",
+      "candidate_id": "MAC-2e8002e975c2599c",
+      "task_type": "qa_repair",
+      "action": "recollect_original",
+      "decision": "accept",
+      "reason": "reviewed_source_gap_retained_for_recollection"
+    },
+    {
+      "date": "2026-07-09",
+      "candidate_id": "MAC-3b06054db9eef78b",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-07-09",
+      "candidate_id": "MAC-4c78b43fdd5feff0",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-09",
+      "candidate_id": "MAC-56263943ba820619",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-09",
+      "candidate_id": "MAC-754aac740e32fe1f",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-09",
+      "candidate_id": "MAC-7cfb8e66baafbe8f",
+      "task_type": "entity_resolution",
+      "action": "same_entity",
+      "decision": "accept",
+      "reason": "reviewed_merge_to_verified_entity"
+    },
+    {
+      "date": "2026-07-09",
+      "candidate_id": "MAC-7f1364fa9b8251b8",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-09",
+      "candidate_id": "MAC-89508c916a51da5d",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-09",
+      "candidate_id": "MAC-89fad499e49158bb",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-09",
+      "candidate_id": "MAC-9445c75b36e58d98",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-09",
+      "candidate_id": "MAC-a450c2d47907e7be",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-07-09",
+      "candidate_id": "MAC-aa88c15a7ece55d2",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-09",
+      "candidate_id": "MAC-c23f3eae45340579",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-09",
+      "candidate_id": "MAC-c53eb5aad41f5362",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-09",
+      "candidate_id": "MAC-c7881a49e8b712c3",
+      "task_type": "qa_repair",
+      "action": "extract_claim",
+      "decision": "accept",
+      "reason": "reviewed_exact_span_claim_candidate"
+    },
+    {
+      "date": "2026-07-09",
+      "candidate_id": "MAC-cc5bd03903996349",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-09",
+      "candidate_id": "MAC-ce6dae28521f0f0f",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-09",
+      "candidate_id": "MAC-e0eae9e534ede652",
+      "task_type": "qa_repair",
+      "action": "recollect_original",
+      "decision": "accept",
+      "reason": "reviewed_source_gap_retained_for_recollection"
+    },
+    {
+      "date": "2026-07-10",
+      "candidate_id": "MAC-0234d29999e128e8",
+      "task_type": "qa_repair",
+      "action": "recollect_original",
+      "decision": "accept",
+      "reason": "reviewed_source_gap_retained_for_recollection"
+    },
+    {
+      "date": "2026-07-10",
+      "candidate_id": "MAC-1bd74741ec59e428",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-07-10",
+      "candidate_id": "MAC-21666d22ee3b35fd",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-10",
+      "candidate_id": "MAC-39e6f16ced4c6595",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-07-10",
+      "candidate_id": "MAC-43530da1bce94cf5",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-10",
+      "candidate_id": "MAC-46301b1b58803418",
+      "task_type": "qa_repair",
+      "action": "recollect_original",
+      "decision": "accept",
+      "reason": "reviewed_source_gap_retained_for_recollection"
+    },
+    {
+      "date": "2026-07-10",
+      "candidate_id": "MAC-46d23cda23fc8080",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-10",
+      "candidate_id": "MAC-4e1a1a8c97096162",
+      "task_type": "qa_repair",
+      "action": "recollect_original",
+      "decision": "accept",
+      "reason": "reviewed_source_gap_retained_for_recollection"
+    },
+    {
+      "date": "2026-07-10",
+      "candidate_id": "MAC-54319ab6c36ddf79",
+      "task_type": "qa_repair",
+      "action": "recollect_original",
+      "decision": "accept",
+      "reason": "reviewed_source_gap_retained_for_recollection"
+    },
+    {
+      "date": "2026-07-10",
+      "candidate_id": "MAC-63c2c56c6d304b1f",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-07-10",
+      "candidate_id": "MAC-84e74812fccf4c88",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-10",
+      "candidate_id": "MAC-a6b9db5ac89fc812",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-10",
+      "candidate_id": "MAC-bc8e18be1c8cae33",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-10",
+      "candidate_id": "MAC-caaedd44be083ea6",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-10",
+      "candidate_id": "MAC-ccf6d7a80c3d2a20",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-10",
+      "candidate_id": "MAC-d6076543b82ca25a",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-11",
+      "candidate_id": "MAC-365798ddd348f8cb",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-11",
+      "candidate_id": "MAC-7c56e7213184d60b",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-11",
+      "candidate_id": "MAC-a2a4160a54414ad3",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-12",
+      "candidate_id": "MAC-07ce60fc3547c895",
+      "task_type": "qa_repair",
+      "action": "extract_claim",
+      "decision": "accept",
+      "reason": "reviewed_exact_span_claim_candidate"
+    },
+    {
+      "date": "2026-07-12",
+      "candidate_id": "MAC-09f168bdd043495c",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-12",
+      "candidate_id": "MAC-1b88fa6d3ce8a981",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-07-12",
+      "candidate_id": "MAC-4137a766e5bea4e6",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-12",
+      "candidate_id": "MAC-6f0af6062e9d731d",
+      "task_type": "qa_repair",
+      "action": "recollect_original",
+      "decision": "accept",
+      "reason": "reviewed_source_gap_retained_for_recollection"
+    },
+    {
+      "date": "2026-07-12",
+      "candidate_id": "MAC-76e49d8403814ad7",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-12",
+      "candidate_id": "MAC-c5395670cd6296d2",
+      "task_type": "entity_resolution",
+      "action": "same_entity",
+      "decision": "reject",
+      "reason": "same_entity_target_not_proven"
+    },
+    {
+      "date": "2026-07-12",
+      "candidate_id": "MAC-dee4d60ac7124787",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-12",
+      "candidate_id": "MAC-e24500fe5c335f1c",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-13",
+      "candidate_id": "MAC-0a4aa2583efd6db1",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-13",
+      "candidate_id": "MAC-0e0a5d03e6fa4646",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-13",
+      "candidate_id": "MAC-176f083246502387",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-13",
+      "candidate_id": "MAC-18a2a2bc55a0e1f4",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-13",
+      "candidate_id": "MAC-7e177f294e04e172",
+      "task_type": "qa_repair",
+      "action": "extract_claim",
+      "decision": "accept",
+      "reason": "reviewed_exact_span_claim_candidate"
+    },
+    {
+      "date": "2026-07-13",
+      "candidate_id": "MAC-9ad04ba275a87b88",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-13",
+      "candidate_id": "MAC-9fde9ee53aae819b",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-13",
+      "candidate_id": "MAC-aa588290a3980ece",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-13",
+      "candidate_id": "MAC-bcf81af311bd13d9",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-13",
+      "candidate_id": "MAC-c0211bba532b9365",
+      "task_type": "qa_repair",
+      "action": "extract_claim",
+      "decision": "accept",
+      "reason": "reviewed_exact_span_claim_candidate"
+    },
+    {
+      "date": "2026-07-13",
+      "candidate_id": "MAC-e2567b791afe884a",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-13",
+      "candidate_id": "MAC-ec4e73e6393e2025",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-14",
+      "candidate_id": "MAC-0c410eb5129ef803",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-14",
+      "candidate_id": "MAC-51c798a33ef922ce",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-07-14",
+      "candidate_id": "MAC-528582f153c6b43a",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-14",
+      "candidate_id": "MAC-56a8de52485963f3",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-14",
+      "candidate_id": "MAC-74caed9311e48f92",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-07-14",
+      "candidate_id": "MAC-cef5bafc579a7695",
+      "task_type": "entity_resolution",
+      "action": "same_entity",
+      "decision": "reject",
+      "reason": "same_entity_target_not_proven"
+    },
+    {
+      "date": "2026-07-14",
+      "candidate_id": "MAC-d5f2bacb1ee58378",
+      "task_type": "qa_repair",
+      "action": "recollect_original",
+      "decision": "accept",
+      "reason": "reviewed_source_gap_retained_for_recollection"
+    },
+    {
+      "date": "2026-07-14",
+      "candidate_id": "MAC-e9740da07bd74769",
+      "task_type": "qa_repair",
+      "action": "recollect_original",
+      "decision": "accept",
+      "reason": "reviewed_source_gap_retained_for_recollection"
+    },
+    {
+      "date": "2026-07-14",
+      "candidate_id": "MAC-f2a929b172d48dd1",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-15",
+      "candidate_id": "MAC-15f1c65043f073df",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-15",
+      "candidate_id": "MAC-5c24c12f90f7a784",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-15",
+      "candidate_id": "MAC-7db1beae79082bff",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-15",
+      "candidate_id": "MAC-953ac33422a135f9",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-15",
+      "candidate_id": "MAC-b7f450ec2299384d",
+      "task_type": "entity_resolution",
+      "action": "same_entity",
+      "decision": "reject",
+      "reason": "same_entity_target_not_proven"
+    },
+    {
+      "date": "2026-07-15",
+      "candidate_id": "MAC-f251425f9195b728",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-15",
+      "candidate_id": "MAC-f962d4e777049937",
+      "task_type": "entity_resolution",
+      "action": "same_entity",
+      "decision": "reject",
+      "reason": "same_entity_target_not_proven"
+    },
+    {
+      "date": "2026-07-16",
+      "candidate_id": "MAC-010b76846e70a7d9",
+      "task_type": "qa_repair",
+      "action": "recollect_original",
+      "decision": "accept",
+      "reason": "reviewed_source_gap_retained_for_recollection"
+    },
+    {
+      "date": "2026-07-16",
+      "candidate_id": "MAC-0732dbdd97bd45b5",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-16",
+      "candidate_id": "MAC-0888f2ad1104a588",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-16",
+      "candidate_id": "MAC-1fd8ed1173cc6a16",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-16",
+      "candidate_id": "MAC-2ac45446deeb014d",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-16",
+      "candidate_id": "MAC-55396f1be8f41d18",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-07-16",
+      "candidate_id": "MAC-6922a1ee6bc32949",
+      "task_type": "qa_repair",
+      "action": "recollect_original",
+      "decision": "accept",
+      "reason": "reviewed_source_gap_retained_for_recollection"
+    },
+    {
+      "date": "2026-07-16",
+      "candidate_id": "MAC-7501dc4f40150069",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-16",
+      "candidate_id": "MAC-797095120f6d3ae1",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-16",
+      "candidate_id": "MAC-87a43eaa4c89fb0d",
+      "task_type": "entity_resolution",
+      "action": "same_entity",
+      "decision": "reject",
+      "reason": "same_entity_target_not_proven"
+    },
+    {
+      "date": "2026-07-16",
+      "candidate_id": "MAC-a0fef9f7cf9fbea4",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-16",
+      "candidate_id": "MAC-beb4c9260c1c817c",
+      "task_type": "entity_resolution",
+      "action": "same_entity",
+      "decision": "reject",
+      "reason": "same_entity_target_not_proven"
+    },
+    {
+      "date": "2026-07-16",
+      "candidate_id": "MAC-ccb116b0d300bcab",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-16",
+      "candidate_id": "MAC-e4e64d342d0cceed",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-16",
+      "candidate_id": "MAC-f133b321e26e3e34",
+      "task_type": "entity_resolution",
+      "action": "same_entity",
+      "decision": "reject",
+      "reason": "same_entity_target_not_proven"
+    },
+    {
+      "date": "2026-07-16",
+      "candidate_id": "MAC-febea8337ff37b7a",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-17",
+      "candidate_id": "MAC-07b02a5e11ff7d4e",
+      "task_type": "entity_resolution",
+      "action": "same_entity",
+      "decision": "accept",
+      "reason": "reviewed_merge_to_verified_entity"
+    },
+    {
+      "date": "2026-07-17",
+      "candidate_id": "MAC-09fa4cb6dc9cd4af",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-17",
+      "candidate_id": "MAC-0d55564179b77cf7",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-17",
+      "candidate_id": "MAC-1ad6afce94a3d085",
+      "task_type": "qa_repair",
+      "action": "recollect_original",
+      "decision": "accept",
+      "reason": "reviewed_source_gap_retained_for_recollection"
+    },
+    {
+      "date": "2026-07-17",
+      "candidate_id": "MAC-2243e701e872441e",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-17",
+      "candidate_id": "MAC-29bec9f1309d761f",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-17",
+      "candidate_id": "MAC-2f4ac807dbeb1ccc",
+      "task_type": "qa_repair",
+      "action": "extract_claim",
+      "decision": "accept",
+      "reason": "reviewed_exact_span_claim_candidate"
+    },
+    {
+      "date": "2026-07-17",
+      "candidate_id": "MAC-33c6210247add533",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-17",
+      "candidate_id": "MAC-5916485a6ce490f5",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-17",
+      "candidate_id": "MAC-5a3d0e73a2aad06f",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-17",
+      "candidate_id": "MAC-6ba971a2366549d8",
+      "task_type": "qa_repair",
+      "action": "recollect_original",
+      "decision": "accept",
+      "reason": "reviewed_source_gap_retained_for_recollection"
+    },
+    {
+      "date": "2026-07-17",
+      "candidate_id": "MAC-6d7af1e2e90453e1",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-17",
+      "candidate_id": "MAC-6e548ef1176d7d91",
+      "task_type": "qa_repair",
+      "action": "recollect_original",
+      "decision": "accept",
+      "reason": "reviewed_source_gap_retained_for_recollection"
+    },
+    {
+      "date": "2026-07-17",
+      "candidate_id": "MAC-7dd009ae35ece6ff",
+      "task_type": "entity_resolution",
+      "action": "same_entity",
+      "decision": "reject",
+      "reason": "manual-secondary-review:no_source_proof_of_identity_with_xAI"
+    },
+    {
+      "date": "2026-07-17",
+      "candidate_id": "MAC-93d6dd957216eaca",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-17",
+      "candidate_id": "MAC-a5691d9bd6cdbd03",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-17",
+      "candidate_id": "MAC-a8ab809983a34738",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-17",
+      "candidate_id": "MAC-b423e49f5e4c8735",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-17",
+      "candidate_id": "MAC-c86b2113b33d5855",
+      "task_type": "qa_repair",
+      "action": "recollect_original",
+      "decision": "accept",
+      "reason": "reviewed_source_gap_retained_for_recollection"
+    },
+    {
+      "date": "2026-07-17",
+      "candidate_id": "MAC-cf5fda82ccfe546f",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-17",
+      "candidate_id": "MAC-dd4abb70f294afe4",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-17",
+      "candidate_id": "MAC-ddd591b253b9b33d",
+      "task_type": "entity_resolution",
+      "action": "same_entity",
+      "decision": "reject",
+      "reason": "same_entity_target_not_proven"
+    },
+    {
+      "date": "2026-07-17",
+      "candidate_id": "MAC-e0002c5ce30c1a4a",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-17",
+      "candidate_id": "MAC-f4b993df10737154",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-17",
+      "candidate_id": "MAC-fd86b175aa5d22a0",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-18",
+      "candidate_id": "MAC-03e8a5e75f00b903",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-07-18",
+      "candidate_id": "MAC-09fa7cdf3fe22cb7",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-18",
+      "candidate_id": "MAC-0acbf1e316a3f2df",
+      "task_type": "entity_resolution",
+      "action": "same_entity",
+      "decision": "reject",
+      "reason": "same_entity_target_not_proven"
+    },
+    {
+      "date": "2026-07-18",
+      "candidate_id": "MAC-188824e22cb8a198",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-07-18",
+      "candidate_id": "MAC-1bd128c5fb9dad25",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-07-18",
+      "candidate_id": "MAC-23a422e0b51dc0e1",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-18",
+      "candidate_id": "MAC-25f619365a8df4e0",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-18",
+      "candidate_id": "MAC-2b41664a321a0e6e",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-18",
+      "candidate_id": "MAC-2d68f8761c8e92d3",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-07-18",
+      "candidate_id": "MAC-333c9cfc8427c573",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-18",
+      "candidate_id": "MAC-3d179eab2b03caf0",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-18",
+      "candidate_id": "MAC-516d7ca0435ed34c",
+      "task_type": "qa_repair",
+      "action": "recollect_original",
+      "decision": "accept",
+      "reason": "reviewed_source_gap_retained_for_recollection"
+    },
+    {
+      "date": "2026-07-18",
+      "candidate_id": "MAC-53afc85fc6d3ef61",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-18",
+      "candidate_id": "MAC-53b9a97ff0605dbb",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-18",
+      "candidate_id": "MAC-57b6a27bcbbef7ec",
+      "task_type": "qa_repair",
+      "action": "extract_claim",
+      "decision": "accept",
+      "reason": "reviewed_exact_span_claim_candidate"
+    },
+    {
+      "date": "2026-07-18",
+      "candidate_id": "MAC-673a93ceb79dbe35",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-18",
+      "candidate_id": "MAC-714efdbab4c048c2",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-18",
+      "candidate_id": "MAC-8c0bf09de3721504",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-18",
+      "candidate_id": "MAC-c53ec072dd6d0d14",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-18",
+      "candidate_id": "MAC-c62bcc74d0252d3e",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-18",
+      "candidate_id": "MAC-cca50b4bdaa89435",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-18",
+      "candidate_id": "MAC-da51edd0c758a10a",
+      "task_type": "entity_resolution",
+      "action": "distinct_entity",
+      "decision": "accept",
+      "reason": "reviewed_as_distinct_entity"
+    },
+    {
+      "date": "2026-07-18",
+      "candidate_id": "MAC-e96eb262693d3afd",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    },
+    {
+      "date": "2026-07-18",
+      "candidate_id": "MAC-f0d1c243ede380d3",
+      "task_type": "entity_resolution",
+      "action": "unknown",
+      "decision": "reject",
+      "reason": "insufficient_evidence_for_entity_resolution"
+    }
+  ]
+}

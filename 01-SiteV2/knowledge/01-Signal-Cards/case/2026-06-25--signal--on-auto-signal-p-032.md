@@ -2,7 +2,7 @@
 id: SIG-20260625-A13
 type: signal_card
 signal_type: case
-title: "本地部署与云端：生成式AI总成本对比"
+title: "本地部署 vs 云端：生成式 AI 总成本..."
 date: 2026-06-25
 status: published
 source_title: "On-Premise vs Cloud: Generative AI Total Cost of ..."
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "On"
 
 frontend:
-  displayTitle: "本地部署与云端：生成式AI总成本对比"
+  displayTitle: "本地部署 vs 云端：生成式 AI 总成本..."
   sourceLinks:
     - "https://lenovopress.lenovo.com/lp2368-on-premise-vs-cloud-generative-ai-total-cost-of-ownership-2026-edition"
 ---
 
-# 本地部署与云端：生成式AI总成本对比
+# 本地部署 vs 云端：生成式 AI 总成本...
 
 ## 新闻事实
 

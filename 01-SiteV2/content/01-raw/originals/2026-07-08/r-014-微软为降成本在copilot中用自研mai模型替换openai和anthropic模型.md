@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-014
 title: "微软为降成本在Copilot中用自研MAI模型替换OpenAI和Anthropic模型"
 title_zh: "微软为降成本在Copilot中用自研MAI模型替换OpenAI和Anthropic模型"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://the-decoder.com/copilot-goes-cheap-as-microsoft-phases-out-openai-and-anthropic-models-to-cut-costs"
 canonical_url: "https://the-decoder.com/copilot-goes-cheap-as-microsoft-phases-out-openai-and-anthropic-models-to-cut-costs"
 source_name: "The Decoder：AI News（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-08T04:39:25.404Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 微软为降成本在Copilot中用自研MAI模型替换OpenAI和Anthropic模型

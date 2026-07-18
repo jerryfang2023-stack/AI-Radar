@@ -72,7 +72,7 @@ key_excerpts: [{"type":"case_detail","text":"As agentic AI hits 'a difficult age
 theme: enterprise-ai-implementation-signal
 keyword_group: enterprise-ai-implementation-signal
 copyright_note: local research archive only
-title_zh: "随着代理型AI进入“困难期”，Salesforce的Forward Deployment工程师随时准备为企业提供支持。Jennifer Cramer解释了其运作方式。"
+title_zh: "随着智能体 AI 进入“困难期”，Salesforce 的前向部署工程师随时准备为企业提供支持。Jennifer Cramer 详解其运作方式。"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

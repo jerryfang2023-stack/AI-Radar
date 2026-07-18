@@ -3,9 +3,9 @@ schema_version: raw-evidence-v2
 raw_id: R-113
 title: "GPT-5.6 is deleting user files when given full access, and OpenAI says it shouldn&#039;t but did"
 title_zh: "GPT-5.6 在获得完全访问权限时删除用户文件，OpenAI 称不应发生但确实发生了"
-title_translation_status: translated
-title_translation_method: deepseek_title_translation
-title_translation_model: deepseek-v4-flash
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 original_url: "https://the-decoder.com/gpt-5-6-is-deleting-user-files-when-given-full-access-and-openai-says-it-shouldnt-but-did/"
 canonical_url: "https://the-decoder.com/gpt-5-6-is-deleting-user-files-when-given-full-access-and-openai-says-it-shouldnt-but-did"
 source_name: "The Decoder AI News"

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"通过 AWS、Google Cloud 和 Mi
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "在 AWS、Google Cloud 和 Microsoft Foundry 上使用完整版 Claude Desktop"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 在 AWS、Google Cloud 和 Microsoft Foundry 上使用完整版 Claude Desktop

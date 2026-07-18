@@ -2,7 +2,7 @@
 schema_version: raw-evidence-v2
 raw_id: R-086
 title: "The State of AI Agent Adoption in US Enterprise 2026: Findings From 50+ CTOs"
-title_zh: "美国企业2026年AI代理采用现状：来自50多位CTO的调查结果"
+title_zh: "2026年美国企业AI智能体采用现状：来自50多位CTO的调查发现"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 original_url: "https://www.codiste.com/ai-agent-adoption-us-enterprise"

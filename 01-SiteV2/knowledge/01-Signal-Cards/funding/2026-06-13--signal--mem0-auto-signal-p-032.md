@@ -2,7 +2,7 @@
 id: SIG-20260613-A03
 type: signal_card
 signal_type: funding
-title: "Mem0 完成2400万美元A轮融资，为AI代理构建记忆层"
+title: "Mem0 获 2400 万美元 A 轮融资，为 AI 智能体构建记忆层"
 date: 2026-06-13
 status: published
 source_title: "Mem0 Raises $24M Series A to Build Memory Layer for AI Agents"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Mem0"
 
 frontend:
-  displayTitle: "Mem0 完成2400万美元A轮融资，为AI代理构建记忆层"
+  displayTitle: "Mem0 获 2400 万美元 A 轮融资，为 AI 智能体构建记忆层"
   sourceLinks:
     - "https://www.prnewswire.com/news-releases/mem0-raises-24m-series-a-to-build-memory-layer-for-ai-agents-302597157.html"
 ---
 
-# Mem0 完成2400万美元A轮融资，为AI代理构建记忆层
+# Mem0 获 2400 万美元 A 轮融资，为 AI 智能体构建记忆层
 
 ## 新闻事实
 

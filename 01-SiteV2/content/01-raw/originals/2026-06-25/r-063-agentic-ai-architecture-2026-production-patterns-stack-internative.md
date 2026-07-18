@@ -72,7 +72,7 @@ key_excerpts: [{"type":"case_detail","text":"The architecture of an LLM-powered 
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
-title_zh: "自主AI架构：2026年生产模式+技术栈 | Internative"
+title_zh: "AI 智能体架构：2026 年生产模式与栈"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

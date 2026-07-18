@@ -72,7 +72,7 @@ key_excerpts: [{"type":"funding","text":"Former Coatue partner raises huge $65M 
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
-title_zh: "前Coatue合伙人筹集6500万美元种子轮，用于企业AI代理初创公司 | TechCrunch"
+title_zh: "前Coatue合伙人筹集6500万美元种子轮，用于企业AI智能体初创公司"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

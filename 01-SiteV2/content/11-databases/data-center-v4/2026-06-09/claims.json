@@ -1,5 +1,90 @@
 [
   {
+    "claim_id": "CL-8ebf9fd4c8bcf7f8",
+    "raw_id": "RAW-39805d4a221ccc77",
+    "claim_type": "funding",
+    "subject": "月之暗面",
+    "predicate": "funding",
+    "object": "20 亿美元融资",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1,
+      "model_candidate_id": "MAC-e0b4b89fe8f59fe5"
+    },
+    "source_span": {
+      "raw_id": "RAW-39805d4a221ccc77",
+      "start": 688,
+      "end": 725
+    },
+    "source_quote": "月之暗面正寻求新一轮高达 20 亿美元的融资，目标估值达 300 亿美元。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-37a1cbf148d7b0f8",
+    "raw_id": "RAW-2383acd2e0dea431",
+    "claim_type": "ipo_listing",
+    "subject": "继Anthropic之后，OpenAI秘密提交",
+    "predicate": "ipo_listing",
+    "object": "申请",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-2383acd2e0dea431",
+      "start": 3,
+      "end": 59
+    },
+    "source_quote": "OpenAI files confidentially for IPO, following Anthropic",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-27bc52b2aa2b2eb9",
+    "raw_id": "RAW-2383acd2e0dea431",
+    "claim_type": "ipo_listing",
+    "subject": "继Anthropic之后，OpenAI秘密提交",
+    "predicate": "ipo_listing",
+    "object": "申请",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-2383acd2e0dea431",
+      "start": 102,
+      "end": 372
+    },
+    "source_quote": "ChatGPT-maker OpenAI has filed confidentially for an initial public offering, the company announced Monday in a blog post. The filing comes a little more than a week after its main rival, Anthropic, also filed to go public , ramping up the race between the two AI firms.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-4c1e88e676fc6d73",
+    "raw_id": "RAW-2383acd2e0dea431",
+    "claim_type": "ipo_listing",
+    "subject": "继Anthropic之后，OpenAI秘密提交",
+    "predicate": "ipo_listing",
+    "object": "申请",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-2383acd2e0dea431",
+      "start": 373,
+      "end": 652
+    },
+    "source_quote": "OpenAI, which was last valued at $852 billion post-money , submitted a draft registration statement to the U.S. Securities and Exchange Commission for a proposed IPO. OpenAI hasn’t shared any specifics yet. However, the company said it posted the blog because it expected a leak.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-5e55b73326fc1077",
     "raw_id": "RAW-3832cfb44c745028",
     "claim_type": "product_release",
@@ -84,6 +169,28 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-de37f5769dfebc99",
+    "raw_id": "RAW-214e0b8e78205533",
+    "claim_type": "product_release",
+    "subject": "Google Research",
+    "predicate": "product_release",
+    "object": "Cross-Corpus Retrieval feature in Gemini Enterprise Agent Platform",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-8ee180d3cc40e2b9"
+    },
+    "source_span": {
+      "raw_id": "RAW-214e0b8e78205533",
+      "start": 76,
+      "end": 269
+    },
+    "source_quote": "Google Research team has introduced a new agentic RAG framework. It is built into the Gemini Enterprise Agent Platform. It powers a feature called Cross-Corpus Retrieval, now in public preview.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-f026f7aa852926d2",
     "raw_id": "RAW-b4e225373ff01097",
     "claim_type": "product_release",
@@ -165,6 +272,50 @@
     "source_quote": "Fixed claude agents --json omitting blocked and just-dispatched background sessions; added --all to include completed sessions, plus new id and state fields",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-dddcf80426ef8ef4",
+    "raw_id": "RAW-4f817965ef74029a",
+    "claim_type": "model_release",
+    "subject": "Microsoft AI",
+    "predicate": "model_release",
+    "object": "MAI-Transcribe-1.5",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1,
+      "model_candidate_id": "MAC-f09374e81c040a82"
+    },
+    "source_span": {
+      "raw_id": "RAW-4f817965ef74029a",
+      "start": 144,
+      "end": 277
+    },
+    "source_quote": "Last week Microsoft AI has announced MAI-Transcribe-1.5 . It is the second iteration of the company’s in-house speech-to-text family.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-4287c28c44de797b",
+    "raw_id": "RAW-4f817965ef74029a",
+    "claim_type": "model_release",
+    "subject": "MAI-Transcribe-1.5",
+    "predicate": "model_release",
+    "object": "keyword biasing feature",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2,
+      "model_candidate_id": "MAC-f09374e81c040a82"
+    },
+    "source_span": {
+      "raw_id": "RAW-4f817965ef74029a",
+      "start": 2453,
+      "end": 2612
+    },
+    "source_quote": "MAI-Transcribe-1.5 adds keyword biasing, also called entity biasing. You supply a list of domain-specific keywords. The Azure card supports up to 200 keywords.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -630,6 +781,50 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-6a944c5637b58082",
+    "raw_id": "RAW-91c5f9119cb3060c",
+    "claim_type": "deployment",
+    "subject": "Apple",
+    "predicate": "deployment",
+    "object": "Siri AI on iOS 27 and iPadOS 27 in the European Union",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 1,
+      "model_candidate_id": "MAC-fdff0cef325c1a51"
+    },
+    "source_span": {
+      "raw_id": "RAW-91c5f9119cb3060c",
+      "start": 277,
+      "end": 417
+    },
+    "source_quote": "due to the Digital Markets Act (DMA), Apple will not be able to ship Siri AI in the European Union with the release of iOS 27 and iPadOS 27.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-59ef81bfb08bd948",
+    "raw_id": "RAW-91c5f9119cb3060c",
+    "claim_type": "deployment",
+    "subject": "Apple",
+    "predicate": "deployment",
+    "object": "Siri AI on macOS 27 and visionOS 27 in the European Union",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 2,
+      "model_candidate_id": "MAC-fdff0cef325c1a51"
+    },
+    "source_span": {
+      "raw_id": "RAW-91c5f9119cb3060c",
+      "start": 1590,
+      "end": 1658
+    },
+    "source_quote": "EU users will be able to access Siri AI on macOS 27 and visionOS 27.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-9c34da516e6143a1",
     "raw_id": "RAW-4d1bb24cd8804ec1",
     "claim_type": "product_release",
@@ -945,43 +1140,43 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-33e98d13578e6a9e",
+    "claim_id": "CL-365844bc63ab49f6",
     "raw_id": "RAW-30e392b03dce3c1f",
-    "claim_type": "product_release",
-    "subject": "OpenAI",
-    "predicate": "product_release",
-    "object": "OpenAI 已提交 S-1 草案，释放潜在 IPO 上市信号",
+    "claim_type": "ipo_listing",
+    "subject": "OpenAI 已提交 S-1 草案，释放潜在",
+    "predicate": "ipo_listing",
+    "object": "上市信号",
     "qualifiers": {
       "event_status": "announced",
       "sequence": 1
     },
     "source_span": {
       "raw_id": "RAW-30e392b03dce3c1f",
-      "start": 304,
-      "end": 384
+      "start": 0,
+      "end": 38
     },
-    "source_quote": "IT之家 6 月 9 日消息，OpenAI 公司今天（6 月 9 日）发布博文， 宣布已经向美国证券交易委员会递交保密版 S-1 注册草案，为未来上市预留通道。",
+    "source_quote": "OpenAI 已提交 S-1 草案，释放潜在 IPO 上市信号 - IT之家",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.9,
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-5d756448caf51a9c",
+    "claim_id": "CL-37aa9dd154b049e5",
     "raw_id": "RAW-30e392b03dce3c1f",
-    "claim_type": "product_release",
-    "subject": "OpenAI",
-    "predicate": "product_release",
-    "object": "OpenAI 已提交 S-1 草案，释放潜在 IPO 上市信号",
+    "claim_type": "ipo_listing",
+    "subject": "OpenAI 已提交 S-1 草案，释放潜在",
+    "predicate": "ipo_listing",
+    "object": "上市信号",
     "qualifiers": {
       "event_status": "announced",
       "sequence": 2
     },
     "source_span": {
       "raw_id": "RAW-30e392b03dce3c1f",
-      "start": 493,
-      "end": 543
+      "start": 206,
+      "end": 237
     },
-    "source_quote": "OpenAI 在博文中坦言，公司提交的这份 S-1 文件迟早会泄露，因此不如大大方方地主动发布消息。",
+    "source_quote": "OpenAI 已提交 S-1 草案，释放潜在 IPO 上市信号",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -989,10 +1184,10 @@
   {
     "claim_id": "CL-fa37220043fac3d3",
     "raw_id": "RAW-30e392b03dce3c1f",
-    "claim_type": "product_release",
-    "subject": "OpenAI",
-    "predicate": "product_release",
-    "object": "OpenAI 已提交 S-1 草案，释放潜在 IPO 上市信号",
+    "claim_type": "ipo_listing",
+    "subject": "OpenAI 已提交 S-1 草案，释放潜在",
+    "predicate": "ipo_listing",
+    "object": "上市信号",
     "qualifiers": {
       "event_status": "announced",
       "sequence": 3
@@ -1008,24 +1203,46 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-c390dc03009f18dc",
+    "claim_id": "CL-b3890ae8e8f52a06",
     "raw_id": "RAW-30e392b03dce3c1f",
-    "claim_type": "product_release",
-    "subject": "OpenAI",
-    "predicate": "product_release",
-    "object": "OpenAI 已提交 S-1 草案，释放潜在 IPO 上市信号",
+    "claim_type": "ipo_listing",
+    "subject": "OpenAI 已提交 S-1 草案，释放潜在",
+    "predicate": "ipo_listing",
+    "object": "上市信号",
     "qualifiers": {
       "event_status": "announced",
       "sequence": 4
     },
     "source_span": {
       "raw_id": "RAW-30e392b03dce3c1f",
-      "start": 430,
-      "end": 492
+      "start": 583,
+      "end": 652
     },
-    "source_quote": "S-1 文件通常包含公司业务、风险、财务与发行相关信息，提交 S-1 不等于马上上市，但说明企业已为进入公开资本市场做准备。",
+    "source_quote": "IT之家曾于 6 月 2 日报道，OpenAI 的竞争对手 Anthropic 已秘密递交 IPO 申请，暂未确定发行股份数量与发行定价。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-65b764b60f04a5aa",
+    "raw_id": "RAW-abb93216a1f81545",
+    "claim_type": "funding",
+    "subject": "Moonshot AI",
+    "predicate": "funding",
+    "object": "valuation of up to $30 billion",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-117d5981662f1e60"
+    },
+    "source_span": {
+      "raw_id": "RAW-abb93216a1f81545",
+      "start": 170,
+      "end": 299
+    },
+    "source_quote": "Moonshot AI, the Chinese company behind the Kimi chatbot, is looking for a valuation of up to $30 billion in a new funding round.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -1089,6 +1306,72 @@
     "source_quote": "他们在文中写道：“如今我们正式进入第三阶段。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a0063f3cffb25898",
+    "raw_id": "RAW-6f43b18c6d39b512",
+    "claim_type": "product_release",
+    "subject": "Anthropic",
+    "predicate": "product_release",
+    "object": "connector performance monitoring dashboard",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1,
+      "model_candidate_id": "MAC-4f5e3844410dd0dd"
+    },
+    "source_span": {
+      "raw_id": "RAW-6f43b18c6d39b512",
+      "start": 384,
+      "end": 505
+    },
+    "source_quote": "Published connectors in the directory now have a dashboard showing how they’re performing across Claude product surfaces.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-0d94e735f2d25941",
+    "raw_id": "RAW-6f43b18c6d39b512",
+    "claim_type": "product_release",
+    "subject": "Anthropic",
+    "predicate": "product_release",
+    "object": "in-app connector directory submission",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2,
+      "model_candidate_id": "MAC-4f5e3844410dd0dd"
+    },
+    "source_span": {
+      "raw_id": "RAW-6f43b18c6d39b512",
+      "start": 1373,
+      "end": 1466
+    },
+    "source_quote": "If you wish to submit your MCP server to the directory, you can now do so directly in Claude.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-9331a7c7b2ffd150",
+    "raw_id": "RAW-ce3be1cafb8a3bcc",
+    "claim_type": "model_release",
+    "subject": "Apple",
+    "predicate": "model_release",
+    "object": "Siri AI and Apple Intelligence features",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-c1772b79dea82b65"
+    },
+    "source_span": {
+      "raw_id": "RAW-ce3be1cafb8a3bcc",
+      "start": 329,
+      "end": 377
+    },
+    "source_quote": "在今日的 WWDC26 主题演讲中，苹果发布了 Siri AI 和多项 Apple 智能新功能。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -1260,6 +1543,50 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-47cbabd4ac6531c7",
+    "raw_id": "RAW-70552bd2005b7f4d",
+    "claim_type": "product_release",
+    "subject": "赛力斯",
+    "predicate": "product_release",
+    "object": "AIVA 品牌",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-7137810e39df6888"
+    },
+    "source_span": {
+      "raw_id": "RAW-70552bd2005b7f4d",
+      "start": 0,
+      "end": 42
+    },
+    "source_quote": "赛力斯“赛豆科技”全新品牌 AIVA 官宣：车标样式曝光，全系标配豆包大模型智能座舱",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-ff09878b6268517a",
+    "raw_id": "RAW-70552bd2005b7f4d",
+    "claim_type": "product_release",
+    "subject": "AIVA",
+    "predicate": "product_release",
+    "object": "首款车型",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-7137810e39df6888"
+    },
+    "source_span": {
+      "raw_id": "RAW-70552bd2005b7f4d",
+      "start": 469,
+      "end": 480
+    },
+    "source_quote": "首款车型预计今年内推出",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-412c1165ad9aea08",
     "raw_id": "RAW-0617cb0123664aa7",
     "claim_type": "product_release",
@@ -1383,6 +1710,28 @@
     "source_quote": "IT之家 6 月 9 日消息，在今天召开的 2026 年全球开发者大会（WWDC）上， 苹果克雷格 · 费德里吉（Craig Federighi）介绍推出了 Siri AI。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-bef9e81382823fed",
+    "raw_id": "RAW-258c545ae030a686",
+    "claim_type": "model_release",
+    "subject": "Apple",
+    "predicate": "model_release",
+    "object": "iPadOS 27",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-0a7bd9047c440e42"
+    },
+    "source_span": {
+      "raw_id": "RAW-258c545ae030a686",
+      "start": 53,
+      "end": 73
+    },
+    "source_quote": "苹果公开展示 iPad OS 27 系统",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {

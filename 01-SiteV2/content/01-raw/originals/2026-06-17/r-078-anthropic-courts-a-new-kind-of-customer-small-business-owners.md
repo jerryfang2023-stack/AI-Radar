@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"Anthropic is looking to court sm
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Anthropic 瞄准新客户群体：小企业主"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Anthropic courts a new kind of customer: small business owners

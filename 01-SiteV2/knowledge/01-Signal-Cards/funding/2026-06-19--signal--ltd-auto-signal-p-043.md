@@ -2,7 +2,7 @@
 id: SIG-20260619-A03
 type: signal_card
 signal_type: funding
-title: "AI代理授权初创公司Arcade获得6000万美元投资 - SiliconANGLE"
+title: "AI 智能体授权初创公司 Arcade 获 6000 万美元投资"
 date: 2026-06-19
 status: published
 source_title: "AI agent authorization startup Arcade nabs $60M investment - SiliconANGLE"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "Ltd."
 
 frontend:
-  displayTitle: "AI代理授权初创公司Arcade获得6000万美元投资 - SiliconANGLE"
+  displayTitle: "AI 智能体授权初创公司 Arcade 获 6000 万美元投资"
   sourceLinks:
     - "https://siliconangle.com/2026/06/15/ai-agent-authorization-startup-arcade-nabs-60m-investment/"
 ---
 
-# AI代理授权初创公司Arcade获得6000万美元投资 - SiliconANGLE
+# AI 智能体授权初创公司 Arcade 获 6000 万美元投资
 
 ## 新闻事实
 

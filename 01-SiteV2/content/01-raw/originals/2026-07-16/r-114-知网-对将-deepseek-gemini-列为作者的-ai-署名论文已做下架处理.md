@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-114
 title: "知网：对将 DeepSeek、Gemini 列为作者的 AI 署名论文已做下架处理"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "知网：对将 DeepSeek、Gemini 列为作者的 AI 署名论文已做下架处理"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/977/204.htm"
 canonical_url: "https://ithome.com/0/977/204.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-16T02:39:34.054Z
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 知网：对将 DeepSeek、Gemini 列为作者的 AI 署名论文已做下架处理

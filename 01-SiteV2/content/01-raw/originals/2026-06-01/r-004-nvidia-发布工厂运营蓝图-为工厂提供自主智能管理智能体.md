@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"NVIDIA 在 GTC Taipei 发布了 NVIDIA �
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "NVIDIA 发布工厂运营蓝图，为工厂提供自主智能管理智能体"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # NVIDIA 发布工厂运营蓝图，为工厂提供自主智能管理智能体

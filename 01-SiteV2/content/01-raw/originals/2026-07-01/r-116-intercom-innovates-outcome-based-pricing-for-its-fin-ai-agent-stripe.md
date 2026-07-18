@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"Fin’s advanced capabilities requi
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Intercom 为其 Fin AI 智能体推出基于结果的定价模式"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Intercom Innovates Outcome-Based Pricing for its Fin AI Agent | Stripe

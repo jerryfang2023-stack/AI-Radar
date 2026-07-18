@@ -4,7 +4,7 @@ raw_id: R-038
 title: "Tech Startup Funding Rounds: Last 30 Days, Updated Weekly"
 title_zh: "科技初创公司融资轮次：过去30天，每周更新"
 title_translation_status: "translated"
-title_translation_method: "deepseek_title_translation"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.techbible.ai/learn/tech-startup-funding-rounds"
 canonical_url: "https://techbible.ai/learn/tech-startup-funding-rounds"
 source_name: "keyword search / Anysearch"
@@ -79,7 +79,7 @@ fact_extraction_completed_at: 2026-07-05T04:56:15.333Z
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
-title_translation_model: "deepseek-v4-flash"
+title_translation_model: "not_applicable"
 ---
 
 # Tech Startup Funding Rounds: Last 30 Days, Updated Weekly

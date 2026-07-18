@@ -2,7 +2,7 @@
 schema_version: raw-evidence-v2
 raw_id: R-042
 title: "Capita chooses Amazon Connect Customer voice agents to better serve 1.6 million UK residents | AWS Contact Center"
-title_zh: "Capita选择Amazon Connect客户语音代理，以更好服务160万英国居民 | AWS联络中心"
+title_zh: "Capita选择Amazon Connect客户语音代理，以更好服务160万英国居民"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 original_url: "https://aws.amazon.com/blogs/contact-center/capita-chooses-amazon-connect-voice-agents-to-better-serve-1-6-million-uk-residents/"

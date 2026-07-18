@@ -2,7 +2,7 @@
 id: SIG-20260612-A05
 type: signal_card
 signal_type: case
-title: "Bill Joplin空调供暖公司借助ServiceTitan AI语音代理在旺季前接听超90%来电 | Markets Insider"
+title: "Bill Joplin 冷暖空调公司借助 ServiceTitan AI 智能体在旺季前接听超 90% 来电"
 date: 2026-06-12
 status: published
 source_title: "Bill Joplin’s Air Conditioning and Heating Books Over 90% of Calls with ServiceTitan AI Voice Agent Ahead of Peak Season | Markets Insider"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Businessinsider"
 
 frontend:
-  displayTitle: "Bill Joplin空调供暖公司借助ServiceTitan AI语音代理在旺季前接听超90%来电 | Markets Insider"
+  displayTitle: "Bill Joplin 冷暖空调公司借助 ServiceTitan AI 智能体在旺季前接听超 90% 来电"
   sourceLinks:
     - "https://markets.businessinsider.com/news/stocks/bill-joplin-s-air-conditioning-and-heating-books-over-90-of-calls-with-servicetitan-ai-voice-agent-ahead-of-peak-season-1036235364"
 ---
 
-# Bill Joplin空调供暖公司借助ServiceTitan AI语音代理在旺季前接听超90%来电 | Markets Insider
+# Bill Joplin 冷暖空调公司借助 ServiceTitan AI 智能体在旺季前接听超 90% 来电
 
 ## 新闻事实
 

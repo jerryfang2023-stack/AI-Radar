@@ -72,7 +72,7 @@ key_excerpts: [{"type":"funding","text":"Wonderful Raises $150M Series B to Acce
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
-title_zh: "Wonderful 完成1.5亿美元B轮融资，加速在30多个市场的企业AI应用"
+title_zh: "Wonderful 获 1.5 亿美元 B 轮融资，加速 30 多个市场的企业 AI 应用"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

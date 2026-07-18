@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-090
 title: "Google&#8217;s AI Mode now lets you link and interact with select apps"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "谷歌 AI 模式现支持关联并交互部分应用"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://techcrunch.com/2026/07/16/googles-ai-mode-now-lets-you-link-and-interact-with-select-apps/"
 canonical_url: "https://techcrunch.com/2026/07/16/googles-ai-mode-now-lets-you-link-and-interact-with-select-apps"
 source_name: "TechCrunch AI"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-17T04:40:17.312Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Google&#8217;s AI Mode now lets you link and interact with select apps

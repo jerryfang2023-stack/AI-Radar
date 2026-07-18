@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-18T04:59:59.870Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 1250,
+    "quarantinedEventCount": 11
+  },
+  "entity": {
+    "id": "EN-4d8bd97f03109ac1",
+    "name": "Datadog",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-3c26d873f436981b"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-06",
+    "lastSeen": "2026-07-06",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [
+        "EV-3c26d873f436981b"
+      ],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-3c26d873f436981b",
+        "dataDate": "2026-07-06",
+        "date": "2026-07-06",
+        "eventType": "partnership",
+        "eventTypeLabel": "合作",
+        "eventGroup": "商业合作",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "AI 智能体在生产环境中：为何95%的部署正在崩溃",
+        "displayTags": [],
+        "entityIds": [
+          "EN-d5e300dea6e3c0fd",
+          "EN-4d8bd97f03109ac1",
+          "EN-b5738c169b693bee"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

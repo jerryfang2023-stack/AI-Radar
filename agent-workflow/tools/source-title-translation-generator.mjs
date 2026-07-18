@@ -22,6 +22,9 @@ export function sourceTitleNeedsChineseTranslation(value = "") {
   const latinWords = text.match(/\b[A-Za-z][A-Za-z0-9&.'-]*\b/gu) || [];
   const hasChineseEventAction = /(?:发布|上线|推出|更新|完成|获得|宣布|融资|合作|部署|采购|采用|收购|获批|关停|开放|扩展|发布会)/u.test(text);
   if (hanCount >= 4 || (hanCount >= 2 && hasChineseEventAction)) return false;
+  if (hanCount >= 1 && /\s(?:和|与|及)\s/u.test(text)) return false;
+  const productListParts = text.split(/\s*[,，、]\s*/u).map((part) => part.replace(/\p{Extended_Pictographic}|\uFE0F|\u200D/gu, "").trim());
+  if (productListParts.length >= 2 && productListParts.every((part) => /^[A-Za-z][A-Za-z0-9_.+-]*(?:\s+\d+(?:\.\d+)*)?$/u.test(part))) return false;
   return text.length > 12 && latinWords.length >= 2;
 }
 
@@ -43,12 +46,25 @@ function decodeHtmlEntities(value = "") {
 }
 
 function stripGeneratorNoise(value = "") {
-  return decodeHtmlEntities(value)
+  let text = decodeHtmlEntities(value)
     .replace(/^["'`]+|["'`]+$/gu, "")
     .replace(/^(?:\u4e2d\u6587\u6807\u9898|\u8bd1\u6587|\u7ffb\u8bd1)[:\uff1a]\s*/u, "")
     .replace(/^SOURCE TITLE:\s*/iu, "")
     .replace(/\s+/gu, " ")
     .trim();
+  const pipe = text.match(/^(.*)\s+[|｜]\s+([^|｜]+)$/u);
+  if (pipe) {
+    const before = pipe[1].trim();
+    const suffix = pipe[2].trim();
+    const beforeWords = before.match(/\b[A-Za-z][A-Za-z0-9.'-]*\b/gu) || [];
+    const suffixWords = suffix.match(/\b[A-Za-z][A-Za-z0-9.'-]*\b/gu) || [];
+    if ((hasCjk(before) || beforeWords.length >= 3) && suffixWords.length <= 4 && suffix.length <= 50) text = before;
+  }
+  return text;
+}
+
+export function normalizeSourceTitleTranslation(value = "") {
+  return stripGeneratorNoise(value);
 }
 
 const moneyUnitFactors = new Map([
@@ -151,6 +167,9 @@ function normalizeComparableScales(value) {
   const englishNumbers = { one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7, eight: 8, nine: 9, ten: 10 };
   const chineseNumbers = { 一: 1, 二: 2, 两: 2, 三: 3, 四: 4, 五: 5, 六: 6, 七: 7, 八: 8, 九: 9, 十: 10 };
   return String(value || "")
+    .replace(/\b(?:doubles?|doubled)\b/giu, " 2 ")
+    .replace(/\b(?:triples?|tripled)\b/giu, " 3 ")
+    .replace(/\b(?:quadruples?|quadrupled)\b/giu, " 4 ")
     .replace(/\b(one|two|three|four|five|six|seven|eight|nine|ten)\s+times?\b/giu, (_, number) => ` ${englishNumbers[number.toLowerCase()]} `)
     .replace(/([一二两三四五六七八九十])\s*倍/gu, (_, number) => ` ${chineseNumbers[number]} `)
     .replace(/(\d[\d,]*(?:\.\d+)?)\s*(trillion|billion|million)\b/giu, (_, number, unit) => {
@@ -225,6 +244,7 @@ export function titleTranslationLooksUsable(sourceTitle = "", translation = "") 
   for (const [term, translatedPattern] of protectedTerms) {
     if (new RegExp(`\\b${term}\\b`, "iu").test(source) && !translatedPattern.test(value)) return false;
   }
+  if (/(?:^|[\s(])AI(?:$|[\s),:;/])/iu.test(source) && !/\bAI\b|人工智能|智能/iu.test(value)) return false;
   if (/\bAI agents?\b/iu.test(source) && !/AI\s*(?:智能体|代理)|智能体/iu.test(value)) return false;
   const repositoryPath = source.match(/^([A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+)(?:\s+-\s+GitHub)?$/u)?.[1];
   if (repositoryPath && !value.includes(repositoryPath)) return false;
@@ -323,6 +343,7 @@ async function translateTitleWithDeepSeek(sourceTitle = "", {
         "Translate business-news source titles into concise Simplified Chinese.",
         "Preserve company names, product names, funding amounts, round names, dates, and named customers exactly.",
         "Never calculate, round, change, omit, or add any number or monetary amount.",
+        "Keep numbered phrases such as Day 1, Q1, and model versions with their original digits; do not rewrite Day 1 as 首日.",
         "Translate AI agent as AI 智能体. Remove publisher and website suffixes such as Company Announcement, FT.com, TechCrunch, or PYMNTS.com.",
         "Translate generic product-category words even when the title is mostly brand names; for example, translate Marketplace as 市场 while preserving NVIDIA AI Enterprise exactly.",
         "For a repository-only title such as owner/repository, preserve the exact path and translate it as GitHub 仓库：owner/repository.",

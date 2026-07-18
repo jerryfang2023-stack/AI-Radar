@@ -2,7 +2,7 @@
 id: SIG-20260627-A19
 type: signal_card
 signal_type: case
-title: "AI初创公司是在为长期价值还是短期利益而建？ - Facebook"
+title: "AI 初创公司是在构建长期价值还是仅仅追求短期……"
 date: 2026-06-27
 status: published
 source_title: "Are AI startups building for long term value or just short ... - Facebook"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Facebook"
 
 frontend:
-  displayTitle: "AI初创公司是在为长期价值还是短期利益而建？ - Facebook"
+  displayTitle: "AI 初创公司是在构建长期价值还是仅仅追求短期……"
   sourceLinks:
     - "https://www.facebook.com/GHJAdvisors/posts/are-ai-startups-building-for-long-term-value-or-just-short-term-hypeas-capital-c/1628397549288214/"
 ---
 
-# AI初创公司是在为长期价值还是短期利益而建？ - Facebook
+# AI 初创公司是在构建长期价值还是仅仅追求短期……
 
 ## 新闻事实
 

@@ -21,6 +21,28 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-5b103ab06cc1508d",
+    "raw_id": "RAW-455501c411214154",
+    "claim_type": "funding",
+    "subject": "telli",
+    "predicate": "funding",
+    "object": "$3.6M pre-seed",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-6afb7d814d2d82b4"
+    },
+    "source_span": {
+      "raw_id": "RAW-455501c411214154",
+      "start": 820,
+      "end": 894
+    },
+    "source_quote": "telli raised a $3.6M pre-seed in April 2025 just two months after founding",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-b7a461c1023fcdc8",
     "raw_id": "RAW-e4712881a6f10ff1",
     "claim_type": "product_release",
@@ -501,6 +523,50 @@
     "source_quote": "项目设立 16 个专业 SIG 工作组，覆盖内核、BSP 与驱动、系统服务与通信中间件等全栈能力。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-43dc5066ff55ac5d",
+    "raw_id": "RAW-4f3f94361f4ad870",
+    "claim_type": "product_release",
+    "subject": "长安第四代逸动蓝鲸超擎车型",
+    "predicate": "product_release",
+    "object": "上市",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-8832baff30575c90"
+    },
+    "source_span": {
+      "raw_id": "RAW-4f3f94361f4ad870",
+      "start": 345,
+      "end": 389
+    },
+    "source_quote": "长安第四代逸动蓝鲸超擎车型上市，共推出三款车，上市抢购价区间 7.99-8.99 万元。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-422c121556cc4b61",
+    "raw_id": "RAW-4f3f94361f4ad870",
+    "claim_type": "product_release",
+    "subject": "长安第四代逸动蓝鲸超擎车型",
+    "predicate": "product_release",
+    "object": "全系标配内置 DeepSeek 的 AI 大模型语音系统",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-8832baff30575c90"
+    },
+    "source_span": {
+      "raw_id": "RAW-4f3f94361f4ad870",
+      "start": 504,
+      "end": 533
+    },
+    "source_quote": "全系标配内置 DeepSeek 的 AI 大模型语音系统。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   }
 ]

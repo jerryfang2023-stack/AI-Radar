@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Unveiling what it describes as the most
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_zh: "随着AI日益复杂，模型构建者依赖NVIDIA"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # As AI Grows More Complex, Model Builders Rely on NVIDIA

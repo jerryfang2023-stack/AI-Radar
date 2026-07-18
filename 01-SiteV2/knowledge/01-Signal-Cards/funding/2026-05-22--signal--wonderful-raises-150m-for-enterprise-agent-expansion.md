@@ -2,7 +2,7 @@
 id: SIG-20260522-03
 type: signal_card
 signal_type: funding
-title: "Wonderful 完成1.5亿美元B轮融资，加速在30多个市场的企业AI应用"
+title: "Wonderful 获 1.5 亿美元 B 轮融资，加速 30 多个市场的企业 AI 应用"
 date: 2026-05-22
 status: draft
 asset_level: candidate
@@ -37,7 +37,7 @@ signal_owner: "Wonderful"
 watch_reason: "未来 90 天观察 Wonderful 是否披露行业客户、区域增长和交付指标。"
 
 frontend:
-  displayTitle: "Wonderful 完成1.5亿美元B轮融资，加速在30多个市场的企业AI应用"
+  displayTitle: "Wonderful 获 1.5 亿美元 B 轮融资，加速 30 多个市场的企业 AI 应用"
   eventLine: "Wonderful 宣布 1.5 亿美元 B 轮融资，用于扩大企业 AI Agent 平台和全球交付团队。"
   whyWatch: "这条融资把企业 Agent 从产品能力推向本地交付和跨市场复制，说明落地成本正在进入资本判断。"
   businessMeaning: "后续重点会落在客户扩张、交付队伍、区域市场和企业采购周期。"
@@ -70,7 +70,7 @@ opportunity_signals:
   missing_fields: ["delivery_model"]
 ---
 
-# Wonderful 完成1.5亿美元B轮融资，加速在30多个市场的企业AI应用
+# Wonderful 获 1.5 亿美元 B 轮融资，加速 30 多个市场的企业 AI 应用
 
 ## 信号底稿
 

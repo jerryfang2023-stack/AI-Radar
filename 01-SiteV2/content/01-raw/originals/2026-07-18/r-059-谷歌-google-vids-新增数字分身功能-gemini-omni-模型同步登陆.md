@@ -3,9 +3,9 @@ schema_version: raw-evidence-v2
 raw_id: R-059
 title: "谷歌 Google Vids 新增数字分身功能，Gemini Omni 模型同步登陆"
 title_zh: "谷歌 Google Vids 新增数字分身功能，Gemini Omni 模型同步登陆"
-title_translation_status: not_required
-title_translation_method: source_title
-title_translation_model: not_applicable
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 original_url: "https://www.ithome.com/0/978/022.htm"
 canonical_url: "https://ithome.com/0/978/022.htm"
 source_name: "IT之家（RSS）"

@@ -72,7 +72,7 @@ key_excerpts: [{"type":"funding","text":"Sequoia-backed Edra raises $30M Series 
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
-title_zh: "红杉资本支持的Edra获3000万美元A轮融资，将企业数据转化为自我优化的AI代理"
+title_zh: "红杉资本支持的Edra完成3000万美元A轮融资，将企业数据转化为自我优化的AI智能体"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

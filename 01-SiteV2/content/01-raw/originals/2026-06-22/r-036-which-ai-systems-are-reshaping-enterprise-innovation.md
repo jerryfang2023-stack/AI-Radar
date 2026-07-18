@@ -72,7 +72,7 @@ key_excerpts: [{"type":"number","text":"The agentic AI market is poised to reach
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
-title_zh: "哪些AI系统正在重塑企业创新？"
+title_zh: "哪些 AI 系统正在重塑企业创新？"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

@@ -2,7 +2,7 @@
 id: SIG-20260630-A01
 type: signal_card
 signal_type: case
-title: "Kore.ai客户案例：AI在各行业的成功应用"
+title: "Kore.ai 客户案例 – 跨行业 AI 成功实践"
 date: 2026-06-30
 status: published
 source_title: "Kore.ai Customer Stories – AI Success Across Industries"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Kore"
 
 frontend:
-  displayTitle: "Kore.ai客户案例：AI在各行业的成功应用"
+  displayTitle: "Kore.ai 客户案例 – 跨行业 AI 成功实践"
   sourceLinks:
     - "https://www.kore.ai/customer-stories"
 ---
 
-# Kore.ai客户案例：AI在各行业的成功应用
+# Kore.ai 客户案例 – 跨行业 AI 成功实践
 
 ## 新闻事实
 

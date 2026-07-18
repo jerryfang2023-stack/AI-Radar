@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"&lt;img src=\"https://storage.googleapis
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_zh: "Google AI 订阅服务在 I/O 2026 大会上的所有新功能"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Everything new in our Google AI subscriptions, fresh from I/O 2026

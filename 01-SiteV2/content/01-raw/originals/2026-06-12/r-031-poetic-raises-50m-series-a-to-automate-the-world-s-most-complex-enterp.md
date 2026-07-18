@@ -72,7 +72,7 @@ key_excerpts: [{"type":"funding","text":"New funding led by Kleiner Perkins acce
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
-title_zh: "Poetic 完成5000万美元A轮融资，以可靠AI自动化全球最复杂的企业流程"
+title_zh: "Poetic 获 5000 万美元 A 轮融资，以可靠 AI 自动化全球最复杂的企业流程"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

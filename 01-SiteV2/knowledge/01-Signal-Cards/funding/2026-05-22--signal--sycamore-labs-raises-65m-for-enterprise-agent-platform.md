@@ -2,7 +2,7 @@
 id: SIG-20260522-06
 type: signal_card
 signal_type: funding
-title: "Sycamore Labs 获6500万美元种子轮融资，打造企业AI代理平台 | Raising.fi"
+title: "Sycamore Labs 获 6500 万美元种子轮融资，打造企业级 AI 智能体平台"
 date: 2026-05-22
 status: draft
 asset_level: candidate
@@ -37,7 +37,7 @@ signal_owner: "Sycamore Labs"
 watch_reason: "未来 60 到 90 天观察是否披露客户、治理能力和部署流程。"
 
 frontend:
-  displayTitle: "Sycamore Labs 获6500万美元种子轮融资，打造企业AI代理平台 | Raising.fi"
+  displayTitle: "Sycamore Labs 获 6500 万美元种子轮融资，打造企业级 AI 智能体平台"
   eventLine: "Sycamore Labs 宣布 6500 万美元种子轮融资，目标是构建、部署和管理企业级自主 Agent。"
   whyWatch: "资本继续押注企业 Agent，但材料把重点放在安全、人类监督和组织知识沉淀，而不是单纯模型能力。"
   businessMeaning: "企业采用时会关心谁能批准 Agent 行动、如何复核输出，以及知识和权限如何留在组织内部。"
@@ -70,7 +70,7 @@ opportunity_signals:
   missing_fields: ["specific_task", "adoption_evidence", "delivery_model"]
 ---
 
-# Sycamore Labs 获6500万美元种子轮融资，打造企业AI代理平台 | Raising.fi
+# Sycamore Labs 获 6500 万美元种子轮融资，打造企业级 AI 智能体平台
 
 ## 信号底稿
 

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"DuckDuckGo官方晒截图显示，谷歌
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "谷歌AI概览引导用户使用DuckDuckGo，后者安装量周增18%"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 谷歌AI概览引导用户使用DuckDuckGo，后者安装量周增18%

@@ -2,7 +2,7 @@
 id: SIG-20260621-A04
 type: signal_card
 signal_type: case
-title: "企业级AI代理部署：从原型到生产"
+title: "企业级AI智能体部署：从原型到生产"
 date: 2026-06-21
 status: published
 source_title: "AI Agent Deployment for Enterprise: From Prototype to Production"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "AI Agent Deployment for Enterprise"
 
 frontend:
-  displayTitle: "企业级AI代理部署：从原型到生产"
+  displayTitle: "企业级AI智能体部署：从原型到生产"
   sourceLinks:
     - "https://allcloud.io/blog/scalable-ai-agents-architecting-a-production-ready-deployment-platform/"
 ---
 
-# 企业级AI代理部署：从原型到生产
+# 企业级AI智能体部署：从原型到生产
 
 ## 新闻事实
 

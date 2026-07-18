@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"OpenCV 5 正式发布，采用基于图�
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "OpenCV 5 发布：升级全新 DNN 引擎、原生支持大模型"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # OpenCV 5 发布：升级全新 DNN 引擎、原生支持大模型

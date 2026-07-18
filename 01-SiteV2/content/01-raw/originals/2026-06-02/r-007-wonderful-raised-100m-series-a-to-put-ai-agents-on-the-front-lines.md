@@ -72,7 +72,7 @@ key_excerpts: [{"type":"funding","text":"Wonderful raised $100M Series A to put 
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
-title_zh: "Wonderful 完成1亿美元A轮融资，将AI代理部署至一线..."
+title_zh: "Wonderful 完成 1 亿美元 A 轮融资，将 AI 智能体部署到一线……"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

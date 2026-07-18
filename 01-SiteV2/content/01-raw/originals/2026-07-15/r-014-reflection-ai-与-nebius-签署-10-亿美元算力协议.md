@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-014
 title: "Reflection AI 与 Nebius 签署 10 亿美元算力协议"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "Reflection AI 与 Nebius 签署 10 亿美元算力协议"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://techcrunch.com/2026/07/14/reflection-inks-1b-compute-deal-with-nebius"
 canonical_url: "https://techcrunch.com/2026/07/14/reflection-inks-1b-compute-deal-with-nebius"
 source_name: "TechCrunch：AI（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-15T04:28:37.615Z
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Reflection AI 与 Nebius 签署 10 亿美元算力协议

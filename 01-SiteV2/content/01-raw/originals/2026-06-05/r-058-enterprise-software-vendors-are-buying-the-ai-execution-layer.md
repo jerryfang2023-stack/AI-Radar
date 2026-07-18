@@ -72,6 +72,10 @@ key_excerpts: [{"type":"workflow_change","text":"Asana, Coupa, Salesforce, and V
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "企业软件供应商正在收购AI执行层"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Enterprise Software Vendors Are Buying the AI Execution Layer

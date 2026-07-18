@@ -72,6 +72,10 @@ key_excerpts: [{"type":"company_action","text":"The post At aged care provider R
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_zh: "在养老机构Regis，AI处理文书工作让员工专注于居民护理"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # At aged care provider Regis, AI takes on paperwork so staff can focus on residents

@@ -72,7 +72,7 @@ key_excerpts: [{"type":"funding","text":"Exclusive: Vinod Khosla wanted every do
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
-title_zh: "独家：Vinod Khosla曾希望获得Runlayer本轮融资的每一美元。该公司刚刚筹集了3000万美元 | 《财富》"
+title_zh: "独家：Vinod Khosla曾希望获得Runlayer本轮融资的每一美元。该公司刚刚筹集了3000万美元"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

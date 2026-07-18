@@ -72,6 +72,10 @@ key_excerpts: [{"type":"workflow_change","text":"Anthropic 发布数据保留政
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Anthropic 要求对 Fable 和 Mythos 进行 30 天的数据保留"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Anthropic 要求对 Fable 和 Mythos 进行 30 天的数据保留

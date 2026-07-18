@@ -147,6 +147,28 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-4a6655fc22732d9a",
+    "raw_id": "RAW-74888ddcd7aab3db",
+    "claim_type": "organization_people",
+    "subject": "OpenAI",
+    "predicate": "organization_people",
+    "object": "product manager for families, caregivers, and older adults",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-165248e2beba7517"
+    },
+    "source_span": {
+      "raw_id": "RAW-74888ddcd7aab3db",
+      "start": 264,
+      "end": 410
+    },
+    "source_quote": "OpenAI is hiring a dedicated product manager in San Francisco to build experiences for families, caregivers, and older adults across its products.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-fcc52c4204c48f79",
     "raw_id": "RAW-73331fe42abd36be",
     "claim_type": "funding",
@@ -567,6 +589,50 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-858aa65bac538828",
+    "raw_id": "RAW-555736244b869e1c",
+    "claim_type": "model_release",
+    "subject": "特斯拉",
+    "predicate": "model_release",
+    "object": "Grok 语音控制 FSD 功能",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-dad667f334e44d1d"
+    },
+    "source_span": {
+      "raw_id": "RAW-555736244b869e1c",
+      "start": 350,
+      "end": 410
+    },
+    "source_quote": "特斯拉 AI 负责人 Ashok Elluswamy 回复了一句简短的话：“正在开发中（Working on it）。”",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-5991818fead72638",
+    "raw_id": "RAW-555736244b869e1c",
+    "claim_type": "model_release",
+    "subject": "埃隆 · 马斯克",
+    "predicate": "model_release",
+    "object": "Grok 语音控制 FSD 功能",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-dad667f334e44d1d"
+    },
+    "source_span": {
+      "raw_id": "RAW-555736244b869e1c",
+      "start": 737,
+      "end": 774
+    },
+    "source_quote": "马斯克表示：Grok 语音控制 FSD 功能预计将在“大约三个月内”推出。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-7ef9811c020d1ba6",
     "raw_id": "RAW-6029173d30b77355",
     "claim_type": "deployment",
@@ -711,6 +777,50 @@
     "source_quote": "阶跃星辰端侧模型全家桶 Step Edge 登场，面向手机、汽车等终端场景 - IT之家",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-d0a648c0cf5f2b30",
+    "raw_id": "RAW-a83fa4eb80ab9116",
+    "claim_type": "organization_people",
+    "subject": "John Jumper",
+    "predicate": "organization_people",
+    "object": "Anthropic",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-4830d908b3dad095"
+    },
+    "source_span": {
+      "raw_id": "RAW-a83fa4eb80ab9116",
+      "start": 2854,
+      "end": 2918
+    },
+    "source_quote": "John Jumper , AlphaFold lead, is leaving DeepMind for Anthropic.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-66a8e6a6ad405042",
+    "raw_id": "RAW-060627bdabb6cc15",
+    "claim_type": "capital_investment",
+    "subject": "Anthropic",
+    "predicate": "capital_investment",
+    "object": "$1.25 billion monthly compute payment",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-c616eb35ba6d7b73"
+    },
+    "source_span": {
+      "raw_id": "RAW-060627bdabb6cc15",
+      "start": 857,
+      "end": 940
+    },
+    "source_quote": "SpaceX’s IPO filing discloses Anthropic will pay $1.25 billion monthly for compute.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {

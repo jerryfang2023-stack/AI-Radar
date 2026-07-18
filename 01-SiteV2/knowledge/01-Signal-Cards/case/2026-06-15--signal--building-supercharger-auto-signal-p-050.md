@@ -2,7 +2,7 @@
 id: SIG-20260615-A04
 type: signal_card
 signal_type: case
-title: "建设超级充电站：Rocket Close如何利用代理式AI优化产权运营 | 人工智能"
+title: "建设超级充电站：Rocket Close如何利用代理式AI优化产权运营"
 date: 2026-06-15
 status: published
 source_title: "Building Supercharger: How Rocket Close optimized title operations with agentic AI | Artificial Intelligence"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Building Supercharger"
 
 frontend:
-  displayTitle: "建设超级充电站：Rocket Close如何利用代理式AI优化产权运营 | 人工智能"
+  displayTitle: "建设超级充电站：Rocket Close如何利用代理式AI优化产权运营"
   sourceLinks:
     - "https://aws.amazon.com/blogs/machine-learning/building-supercharger-how-rocket-close-optimized-title-operations-with-agentic-ai/"
 ---
 
-# 建设超级充电站：Rocket Close如何利用代理式AI优化产权运营 | 人工智能
+# 建设超级充电站：Rocket Close如何利用代理式AI优化产权运营
 
 ## 新闻事实
 

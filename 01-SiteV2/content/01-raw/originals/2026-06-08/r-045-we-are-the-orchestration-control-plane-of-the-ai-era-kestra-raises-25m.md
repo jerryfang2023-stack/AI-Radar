@@ -72,7 +72,7 @@ key_excerpts: [{"type":"funding","text":"Orchestration has just reached its tipp
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
-title_zh: "我们是AI时代的编排控制平面：Kestra获2500万美元融资 | Kestra"
+title_zh: "我们是 AI 时代的编排控制平面：Kestra 融资 2500 万美元"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

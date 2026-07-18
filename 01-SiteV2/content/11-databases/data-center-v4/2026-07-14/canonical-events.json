@@ -1,5 +1,73 @@
 [
   {
+    "event_type": "funding",
+    "event_status": "completed",
+    "event_time": "2026-07-13T00:00:00.000Z",
+    "disclosed_at": "2026-07-13T00:00:00.000Z",
+    "entities": [],
+    "action": "完成新一轮融资",
+    "object": "Hermes 智能体开发商 Nous Research 正以 15 亿美元估值完成新一轮融资",
+    "metrics": [
+      "$1.5 billion"
+    ],
+    "locations": [],
+    "claim_refs": [
+      "CL-99c731c3db3db20e"
+    ],
+    "source_refs": [
+      "SA-cbc55b4bf03e297a"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "entities",
+      "object"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-cbc55b4bf03e297a",
+        "disclosed_at": "2026-07-13T00:00:00.000Z",
+        "status": "completed"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-7a85e21802efd8b2",
+    "display_title_zh": "Hermes 智能体开发商 Nous Research 正以 15 亿美元估值完成新一轮融资"
+  },
+  {
+    "event_type": "research_result",
+    "event_status": "planned",
+    "event_time": "2026-07-13T22:37:53.000Z",
+    "disclosed_at": "2026-07-13T22:37:53.000Z",
+    "entities": [
+      "EN-b0c8102c65c5cb70",
+      "EN-6dc8406aab65da31"
+    ],
+    "action": "发布 MORPHEUS：面向持续强化学习的持久企业模拟基准",
+    "object": "Skyfall AI 发布 MORPHEUS：面向持续强化学习的持久企业模拟基准",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-8fdc85cb4501a8cc"
+    ],
+    "source_refs": [
+      "SA-38c64f17e606390a"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "object"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-38c64f17e606390a",
+        "disclosed_at": "2026-07-13T22:37:53.000Z",
+        "status": "planned"
+      }
+    ],
+    "publication_status": "partial",
+    "event_id": "EV-61d44411968f24f7",
+    "display_title_zh": "Skyfall AI 发布 MORPHEUS：面向持续强化学习的持久企业模拟基准"
+  },
+  {
     "event_type": "product_release",
     "event_status": "completed",
     "event_time": "2026-07-14T01:10:42.000Z",
@@ -266,6 +334,39 @@
   },
   {
     "event_type": "funding",
+    "event_status": "planned",
+    "event_time": "2026-06-09T00:00:00.000Z",
+    "disclosed_at": "2026-06-09T00:00:00.000Z",
+    "entities": [
+      "EN-4a639cb888a15d75"
+    ],
+    "action": "funding",
+    "object": "$7.0 billion equity and equity-linked financing transactions",
+    "metrics": [
+      "$7.0 Billion"
+    ],
+    "locations": [],
+    "claim_refs": [
+      "CL-4e8f16cfc6957574"
+    ],
+    "source_refs": [
+      "SA-cc865efdae5df8cc"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-cc865efdae5df8cc",
+        "disclosed_at": "2026-06-09T00:00:00.000Z",
+        "status": "planned"
+      }
+    ],
+    "publication_status": "partial",
+    "event_id": "EV-72e7f5cf283f16b8",
+    "display_title_zh": "Supermicro 宣布拟进行 70 亿美元股权及股权关联融资交易，以支持 AI 订单"
+  },
+  {
+    "event_type": "funding",
     "event_status": "completed",
     "event_time": "2026-06-24T00:00:00.000Z",
     "disclosed_at": "2026-06-24T00:00:00.000Z",
@@ -300,6 +401,49 @@
     "publication_status": "verified",
     "event_id": "EV-b546801d74dc61b1",
     "display_title_zh": "Seltz 融资 1250 万美元，用于为智能体构建先进 Web Search"
+  },
+  {
+    "event_type": "pricing_change",
+    "event_status": "announced",
+    "event_time": "2026-07-13T00:00:00.000Z",
+    "disclosed_at": "2026-07-13T00:00:00.000Z",
+    "entities": [
+      "EN-c70eca6b0f88f44d"
+    ],
+    "action": "定价",
+    "object": "，年付 Pro 版约 21 美元",
+    "metrics": [
+      "$21",
+      "$17 ",
+      "$125",
+      "$100 ",
+      "$25",
+      "$20 "
+    ],
+    "locations": [
+      "U.S.",
+      "India"
+    ],
+    "claim_refs": [
+      "CL-20803c6cff4ee46c",
+      "CL-7a163d772c4c7d8b",
+      "CL-c7ca38714aeec34b"
+    ],
+    "source_refs": [
+      "SA-4eb2f615632197a9"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-4eb2f615632197a9",
+        "disclosed_at": "2026-07-13T00:00:00.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-302018f2e960a8bf",
+    "display_title_zh": "Anthropic 为印度用户本地化 Claude 定价，年付 Pro 版约 21 美元"
   },
   {
     "event_type": "product_release",
@@ -422,6 +566,40 @@
   },
   {
     "event_type": "funding",
+    "event_status": "announced",
+    "event_time": "2026-07-07T00:00:00.000Z",
+    "disclosed_at": "2026-07-07T00:00:00.000Z",
+    "entities": [
+      "EN-4e0a97cb956fb1c6",
+      "EN-8f71c4871a160172"
+    ],
+    "action": "funding",
+    "object": "$3M pre-seed round",
+    "metrics": [
+      "$3M"
+    ],
+    "locations": [],
+    "claim_refs": [
+      "CL-ed55d93ccdd4d28b"
+    ],
+    "source_refs": [
+      "SA-ce2eabb938b8186a"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-ce2eabb938b8186a",
+        "disclosed_at": "2026-07-07T00:00:00.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-869c9ea96c58873d",
+    "display_title_zh": "Version One Ventures 宣布投资 Mowito：面向制造业机械臂的 Physical AI"
+  },
+  {
+    "event_type": "funding",
     "event_status": "completed",
     "event_time": "2025-08-01T00:00:00.000Z",
     "disclosed_at": "2025-08-01T00:00:00.000Z",
@@ -456,6 +634,40 @@
     "publication_status": "verified",
     "event_id": "EV-23ae55daa341be06",
     "display_title_zh": "Fundamental Research Labs 获超 3000 万美元融资，用于跨垂直领域构建 AI 智能体"
+  },
+  {
+    "event_type": "financial_performance",
+    "event_status": "announced",
+    "event_time": "2026-06-02T00:00:00.000Z",
+    "disclosed_at": "2026-06-02T00:00:00.000Z",
+    "entities": [
+      "EN-702a7b903b688055"
+    ],
+    "action": "financial_performance",
+    "object": "$2.52 trillion in 2026",
+    "metrics": [
+      "$2.52 trillion",
+      "44%"
+    ],
+    "locations": [],
+    "claim_refs": [
+      "CL-91ee28dd80d42c95"
+    ],
+    "source_refs": [
+      "SA-b002718419389080"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-b002718419389080",
+        "disclosed_at": "2026-06-02T00:00:00.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-1346b370b125652d",
+    "display_title_zh": "什么将AI就绪企业与其他企业区分开来？"
   },
   {
     "event_type": "model_release",
@@ -496,6 +708,71 @@
     "display_title_zh": "德国AI联盟发布Soofi S，一款开源300亿参数模型，在英语和德语基准测试中均名列前茅"
   },
   {
+    "event_type": "product_release",
+    "event_status": "announced",
+    "event_time": "2026-07-13T20:43:20.000Z",
+    "disclosed_at": "2026-07-13T20:43:20.000Z",
+    "entities": [
+      "EN-3a7bd3e2360a3d29",
+      "EN-af3ceabbe048a291"
+    ],
+    "action": "product_release",
+    "object": "iOS 27 public beta",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-d224088d71499542",
+      "CL-2dda757580f0b609"
+    ],
+    "source_refs": [
+      "SA-a485ede6044eb201"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-a485ede6044eb201",
+        "disclosed_at": "2026-07-13T20:43:20.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-ffe99cf8446a9d14",
+    "display_title_zh": "Siri AI 已改变我使用 iPhone 的方式"
+  },
+  {
+    "event_type": "product_release",
+    "event_status": "announced",
+    "event_time": "2026-07-13T17:47:39.000Z",
+    "disclosed_at": "2026-07-13T17:47:39.000Z",
+    "entities": [
+      "EN-7d3194f79e645c42"
+    ],
+    "action": "product_release",
+    "object": "prompting guide for everyday users covering both Chat and Codex in a single framework",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-f9549944617d0a7f",
+      "CL-2da6b00a3bdeaadc"
+    ],
+    "source_refs": [
+      "SA-fd4482d337a25193"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-fd4482d337a25193",
+        "disclosed_at": "2026-07-13T17:47:39.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-b9296439f7c34c89",
+    "display_title_zh": "OpenAI 新提示指南：别想太多，从结果出发"
+  },
+  {
     "event_type": "funding",
     "event_status": "completed",
     "event_time": "2026-06-29T16:00:00.000Z",
@@ -531,6 +808,40 @@
     "publication_status": "verified",
     "event_id": "EV-fab81bddb815267b",
     "display_title_zh": "Monogram 获 4000 万美元种子轮融资"
+  },
+  {
+    "event_type": "product_release",
+    "event_status": "announced",
+    "event_time": "2026-07-09T00:00:00.000Z",
+    "disclosed_at": "2026-07-09T00:00:00.000Z",
+    "entities": [
+      "EN-1169c45fdc06f0ac",
+      "EN-bbdefa2950f49882",
+      "EN-8d323d8bba783aa3",
+      "EN-cfe6926406f30a15"
+    ],
+    "action": "product_release",
+    "object": "all Google Cloud customers on Gemini Enterprise Agent Platform",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-143a96651d5183a4"
+    ],
+    "source_refs": [
+      "SA-0407672e6ca3c30b"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-0407672e6ca3c30b",
+        "disclosed_at": "2026-07-09T00:00:00.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-9254af7aaedaafbe",
+    "display_title_zh": "我们正广泛推出AlphaEvolve，以解决Google Cloud客户最棘手的问题。"
   },
   {
     "event_type": "product_release",
@@ -573,7 +884,6 @@
     "disclosed_at": "2026-07-13T12:30:55.000Z",
     "entities": [
       "EN-2c348893efb2316e",
-      "EN-f77d48bcb475d189",
       "EN-8b619895a83e35c8"
     ],
     "action": "发布",
@@ -652,6 +962,7 @@
       "EN-2c348893efb2316e",
       "EN-ef8ef0d64526209a",
       "EN-88e2cce43eeadb36",
+      "EN-a89151ba4b5ac0f2",
       "EN-8b619895a83e35c8"
     ],
     "action": "product_release",
@@ -679,6 +990,69 @@
     "publication_status": "verified",
     "event_id": "EV-2c1fc2143d7d4a6a",
     "display_title_zh": "阶跃终端首款智能体手机 STEPX Neo 亮相，配备交互背屏"
+  },
+  {
+    "event_type": "organization_restructuring",
+    "event_status": "announced",
+    "event_time": "2026-07-13T17:15:58.000Z",
+    "disclosed_at": "2026-07-13T17:15:58.000Z",
+    "entities": [
+      "EN-db938692ba42550c"
+    ],
+    "action": "organization_restructuring",
+    "object": "Oak Lab",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-577a94ae707e61a8"
+    ],
+    "source_refs": [
+      "SA-62c35a591e518764"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-62c35a591e518764",
+        "disclosed_at": "2026-07-13T17:15:58.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-70b149748bcd0dcf",
+    "display_title_zh": "图灵奖得主 Rich Sutton 创立 Oak Lab，打造自主学习 AI 智能体"
+  },
+  {
+    "event_type": "product_release",
+    "event_status": "announced",
+    "event_time": "2026-07-13T22:34:41.000Z",
+    "disclosed_at": "2026-07-13T22:34:41.000Z",
+    "entities": [
+      "EN-7d3194f79e645c42",
+      "EN-8f71c4871a160172"
+    ],
+    "action": "product_release",
+    "object": "DOOMQL：基于 GPT-5.6 Sol 构建的 SQLite 游戏引擎 Doom 风格游戏",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-66c706376b4e8116"
+    ],
+    "source_refs": [
+      "SA-ab418d0ce3ee6bf6"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-ab418d0ce3ee6bf6",
+        "disclosed_at": "2026-07-13T22:34:41.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-cf5b2a0aff3914bd",
+    "display_title_zh": "DOOMQL：基于 GPT-5.6 Sol 构建的 SQLite 游戏引擎 Doom 风格游戏"
   },
   {
     "event_type": "organization_people",
@@ -713,5 +1087,38 @@
     "publication_status": "partial",
     "event_id": "EV-917966af8545a380",
     "display_title_zh": "OpenAI 安全系统负责人海德克即将离职，近年已有8名核心成员离开"
+  },
+  {
+    "event_type": "product_release",
+    "event_status": "announced",
+    "event_time": "2026-07-13T14:26:21.000Z",
+    "disclosed_at": "2026-07-13T14:26:21.000Z",
+    "entities": [
+      "EN-cb7124bb7e591ac6",
+      "EN-2c348893efb2316e",
+      "EN-8b619895a83e35c8"
+    ],
+    "action": "product_release",
+    "object": "STEPX Neo 智能体手机",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-21a37ee8b51030f0"
+    ],
+    "source_refs": [
+      "SA-a4d9bab9c93b28ce"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-a4d9bab9c93b28ce",
+        "disclosed_at": "2026-07-13T14:26:21.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-3edf153477310ffc",
+    "display_title_zh": "阶跃终端首款智能体手机 STEPX Neo 亮相，业内人士称系自主设计与魅族无关"
   }
 ]

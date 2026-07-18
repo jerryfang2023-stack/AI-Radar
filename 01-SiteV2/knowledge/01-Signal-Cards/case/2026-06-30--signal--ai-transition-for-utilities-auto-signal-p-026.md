@@ -2,7 +2,7 @@
 id: SIG-20260630-A03
 type: signal_card
 signal_type: case
-title: "公用事业AI转型：2026年及以后的战略指南"
+title: "公用事业的人工智能转型：2026年及以后的战略指南"
 date: 2026-06-30
 status: published
 source_title: "The AI Transition for Utilities: A Strategic Guide for 2026 and Beyond"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "AI Transition for Utilities"
 
 frontend:
-  displayTitle: "公用事业AI转型：2026年及以后的战略指南"
+  displayTitle: "公用事业的人工智能转型：2026年及以后的战略指南"
   sourceLinks:
     - "https://www.newgenstrategies.net/stories/utility-ai-transition-full-report.html"
 ---
 
-# 公用事业AI转型：2026年及以后的战略指南
+# 公用事业的人工智能转型：2026年及以后的战略指南
 
 ## 新闻事实
 

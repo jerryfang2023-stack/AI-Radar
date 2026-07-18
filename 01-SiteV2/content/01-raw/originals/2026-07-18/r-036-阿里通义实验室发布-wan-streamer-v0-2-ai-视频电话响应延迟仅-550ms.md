@@ -3,9 +3,9 @@ schema_version: raw-evidence-v2
 raw_id: R-036
 title: "阿里通义实验室发布 Wan-Streamer v0.2，AI 视频电话响应延迟仅 550ms"
 title_zh: "阿里通义实验室发布 Wan-Streamer v0.2，AI 视频电话响应延迟仅 550ms"
-title_translation_status: not_required
-title_translation_method: source_title
-title_translation_model: not_applicable
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 original_url: "https://www.ithome.com/0/978/125.htm"
 canonical_url: "https://ithome.com/0/978/125.htm"
 source_name: "IT之家（RSS）"

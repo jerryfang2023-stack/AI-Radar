@@ -2,7 +2,7 @@
 id: SIG-20260627-A16
 type: signal_card
 signal_type: product_service
-title: "OpenAI发布首款AI处理器：Jalapeño"
+title: "OpenAI 发布首款 AI 处理器：Jalapeño"
 date: 2026-06-27
 status: published
 source_title: "OpenAI reveals its first AI processor: Jalapeño"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "OpenAI reveals its first AI processor"
 
 frontend:
-  displayTitle: "OpenAI发布首款AI处理器：Jalapeño"
+  displayTitle: "OpenAI 发布首款 AI 处理器：Jalapeño"
   sourceLinks:
     - "https://www.theverge.com/ai-artificial-intelligence/955939/openai-reveals-its-first-ai-processor-jalapeno"
 ---
 
-# OpenAI发布首款AI处理器：Jalapeño
+# OpenAI 发布首款 AI 处理器：Jalapeño
 
 ## 新闻事实
 

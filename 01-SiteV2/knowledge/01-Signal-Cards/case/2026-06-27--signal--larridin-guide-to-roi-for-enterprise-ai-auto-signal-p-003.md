@@ -2,7 +2,7 @@
 id: SIG-20260627-A11
 type: signal_card
 signal_type: case
-title: "Larridin企业AI投资回报率指南：如何构建..."
+title: "Larridin 企业 AI 投资回报率指南：如何构建..."
 date: 2026-06-27
 status: published
 source_title: "The Larridin Guide to ROI for Enterprise AI: How to Build the ..."
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Larridin Guide to ROI for Enterprise AI"
 
 frontend:
-  displayTitle: "Larridin企业AI投资回报率指南：如何构建..."
+  displayTitle: "Larridin 企业 AI 投资回报率指南：如何构建..."
   sourceLinks:
     - "https://larridin.com/solutions/the-larridin-guide-to-roi-for-enterprise-ai-how-to-build-the-financial-case-for-multi-year-ai-investment"
 ---
 
-# Larridin企业AI投资回报率指南：如何构建...
+# Larridin 企业 AI 投资回报率指南：如何构建...
 
 ## 新闻事实
 

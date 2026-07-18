@@ -72,7 +72,7 @@ key_excerpts: [{"type":"case_detail","text":"A practical playbook for enterprise
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
-title_zh: "企业AI转型实战指南2026 | 从试点到生产 | SysArt Consulting"
+title_zh: "企业 AI 转型行动手册 2026 | 从试点到生产"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

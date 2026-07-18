@@ -69,6 +69,10 @@ key_excerpts: [{"type":"funding","text":"Jan 15 (Reuters) - German startup Parlo
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "德国AI初创公司Parloa最新融资估值翻三倍至30亿美元"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # German AI startup Parloa triples valuation to $3 billion in latest fundraise | Reuters

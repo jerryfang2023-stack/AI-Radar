@@ -2,7 +2,7 @@
 schema_version: raw-evidence-v2
 raw_id: R-014
 title: "Cognizant announces ServiceNow partnership to accelerate scalable, operationalized AI governance at enterprise scale – Company Announcement - FT.com"
-title_zh: "Cognizant宣布与ServiceNow合作，加速企业级可扩展、可操作的AI治理落地"
+title_zh: "Cognizant 宣布与 ServiceNow 合作，加速企业级可扩展、可操作的 AI 治理"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 original_url: "https://markets.ft.com/data/announce/detail?dockey=600-202606041500PR_NEWS_USPRX____NY76513-1"

@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-044
 title: "Apple Intelligence 获准在华上线，将集成阿里巴巴 Qwen 大模型"
 title_zh: "Apple Intelligence 获准在华上线，将集成阿里巴巴 Qwen 大模型"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://techcrunch.com/2026/07/15/apple-intelligence-approved-for-launch-in-china-with-alibabas-qwen-ai"
 canonical_url: "https://techcrunch.com/2026/07/15/apple-intelligence-approved-for-launch-in-china-with-alibabas-qwen-ai"
 source_name: "TechCrunch：AI（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-16T02:39:33.699Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Apple Intelligence 获准在华上线，将集成阿里巴巴 Qwen 大模型

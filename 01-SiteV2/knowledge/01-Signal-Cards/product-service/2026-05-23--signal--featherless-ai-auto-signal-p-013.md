@@ -2,7 +2,7 @@
 id: SIG-20260523-A05
 type: signal_card
 signal_type: product_service
-title: "Featherless.ai获2000万美元融资，用于扩展开源AI模型的无服务器托管服务"
+title: "Featherless.ai 获 2000 万美元融资，用于扩展开源 AI 模型的无服务器托管服务"
 date: 2026-05-23
 status: published
 asset_level: frontstage
@@ -58,7 +58,7 @@ signal_owner: "Featherless.ai"
 watch_reason: "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
 
 frontend:
-  displayTitle: "Featherless.ai获2000万美元融资，用于扩展开源AI模型的无服务器托管服务"
+  displayTitle: "Featherless.ai 获 2000 万美元融资，用于扩展开源 AI 模型的无服务器托管服务"
   eventLine: "Featherless.ai 发布新的 AI 能力，面向模型部署和算力调用。"
   whyWatch: "这条变化值得看，是因为它把竞争点放到了模型部署和算力调用：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"
   businessMeaning: "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
@@ -68,7 +68,7 @@ frontend:
     - "https://siliconangle.com/2026/04/30/featherless-ai-pulls-20m-scale-serverless-hosting-open-source-ai-models/"
 ---
 
-# Featherless.ai获2000万美元融资，用于扩展开源AI模型的无服务器托管服务
+# Featherless.ai 获 2000 万美元融资，用于扩展开源 AI 模型的无服务器托管服务
 
 ## 信号底稿
 

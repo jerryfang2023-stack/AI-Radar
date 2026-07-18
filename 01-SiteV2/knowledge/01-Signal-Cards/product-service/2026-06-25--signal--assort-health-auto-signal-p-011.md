@@ -2,7 +2,7 @@
 id: SIG-20260625-A06
 type: signal_card
 signal_type: product_service
-title: "Assort Health完成1.2亿美元C轮融资，用于扩大患者旅程中最大规模AI代理部署"
+title: "Assort Health 完成 1.2 亿美元 C 轮融资，扩大患者旅程中最大规模 AI 智能体部署"
 date: 2026-06-25
 status: published
 source_title: "Assort Health Raises $120 Million Series C to Scale Largest Deployment of AI Agents for the Patient Journey | Assort Health"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Assort Health"
 
 frontend:
-  displayTitle: "Assort Health完成1.2亿美元C轮融资，用于扩大患者旅程中最大规模AI代理部署"
+  displayTitle: "Assort Health 完成 1.2 亿美元 C 轮融资，扩大患者旅程中最大规模 AI 智能体部署"
   sourceLinks:
     - "https://www.assorthealth.com/blog/assort-health-raises-120-million-series-c-to-scale-largest-deployment-of-ai-agents-for-the-patient-journey"
 ---
 
-# Assort Health完成1.2亿美元C轮融资，用于扩大患者旅程中最大规模AI代理部署
+# Assort Health 完成 1.2 亿美元 C 轮融资，扩大患者旅程中最大规模 AI 智能体部署
 
 ## 新闻事实
 

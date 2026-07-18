@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"Anthropic与IT服务公司DXC Technology
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Anthropic与DXC达成全球联盟，将Claude引入关键行业系统"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Anthropic与DXC达成全球联盟，将Claude引入关键行业系统

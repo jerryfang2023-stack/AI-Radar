@@ -72,7 +72,7 @@ key_excerpts: [{"type":"funding","text":"Wonderful's $150 million Series B round
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
-title_zh: "B轮企业AI代理：Insight Partners 1.5亿美元"
+title_zh: "B轮企业AI智能体：Insight Partners 1.5亿美元"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

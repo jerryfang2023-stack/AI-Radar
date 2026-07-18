@@ -2,7 +2,7 @@
 id: SIG-20260604-A08
 type: signal_card
 signal_type: case
-title: "FriendliAI获2000万美元融资，重新定义AI推理"
+title: "FriendliAI 获 2000 万美元融资，重新定义 AI 推理"
 date: 2026-06-04
 status: published
 asset_level: frontstage
@@ -58,7 +58,7 @@ signal_owner: "Sierra"
 watch_reason: "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
 
 frontend:
-  displayTitle: "FriendliAI获2000万美元融资，重新定义AI推理"
+  displayTitle: "FriendliAI 获 2000 万美元融资，重新定义 AI 推理"
   eventLine: "Sierra 把 AI 用进模型部署和算力调用。"
   whyWatch: "这条变化值得看，是因为它把竞争点放到了模型部署和算力调用：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"
   businessMeaning: "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
@@ -68,7 +68,7 @@ frontend:
     - "https://friendli.ai/blog/friendliai-raises-20m-in-seed-extension-round"
 ---
 
-# FriendliAI获2000万美元融资，重新定义AI推理
+# FriendliAI 获 2000 万美元融资，重新定义 AI 推理
 
 ## 信号底稿
 

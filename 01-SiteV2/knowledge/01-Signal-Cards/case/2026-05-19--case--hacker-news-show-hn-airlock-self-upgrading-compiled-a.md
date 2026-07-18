@@ -1,7 +1,7 @@
 ---
 id: CASE-20260519-05
 type: case_card
-title: "Show HN：Airlock – 可自我升级的编译型AI代理"
+title: "Show HN：Airlock – 可自我升级的编译型 AI 智能体"
 date: 2026-05-19
 status: draft
 created_at: 2026-05-19T16:02:30.473Z
@@ -68,7 +68,7 @@ internal:
   last_reviewed: 2026-05-19
 ---
 
-# Show HN：Airlock – 可自我升级的编译型AI代理
+# Show HN：Airlock – 可自我升级的编译型 AI 智能体
 
 ## 这个案例是谁
 

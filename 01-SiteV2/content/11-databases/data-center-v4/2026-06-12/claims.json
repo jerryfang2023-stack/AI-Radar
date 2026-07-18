@@ -63,6 +63,72 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-c1af3edf0f14989a",
+    "raw_id": "RAW-82f3723af31862c8",
+    "claim_type": "capital_investment",
+    "subject": "Anthropic",
+    "predicate": "capital_investment",
+    "object": "Claude Corps program",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-24c41bf36549e48f"
+    },
+    "source_span": {
+      "raw_id": "RAW-82f3723af31862c8",
+      "start": 919,
+      "end": 969
+    },
+    "source_quote": "we’re committing an initial $150m to this program.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-0243aa27cb326cca",
+    "raw_id": "RAW-adfb89c1b8a33c4f",
+    "claim_type": "deployment",
+    "subject": "Visa",
+    "predicate": "deployment",
+    "object": "ChatGPT",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-ad25259e58d013de"
+    },
+    "source_span": {
+      "raw_id": "RAW-adfb89c1b8a33c4f",
+      "start": 392,
+      "end": 530
+    },
+    "source_quote": "Visa has linked its payment infrastructure to ChatGPT, enabling AI agents to recommend retail products and execute financial transactions.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-446bff82ea22aa4a",
+    "raw_id": "RAW-bebd17cff4bbf894",
+    "claim_type": "partnership",
+    "subject": "Anthropic",
+    "predicate": "partnership",
+    "object": "DXC Technology",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 1,
+      "model_candidate_id": "MAC-40f1b329b9084cf6"
+    },
+    "source_span": {
+      "raw_id": "RAW-bebd17cff4bbf894",
+      "start": 237,
+      "end": 353
+    },
+    "source_quote": "We’re announcing a multi-year global alliance with DXC Technology, one of the world’s largest IT services companies.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-786d5f23a31b595e",
     "raw_id": "RAW-afdaf31aa518e9d6",
     "claim_type": "product_release",
@@ -651,6 +717,50 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-e8ba0d81b2700e89",
+    "raw_id": "RAW-cb7708325b4ef681",
+    "claim_type": "model_release",
+    "subject": "Cohere",
+    "predicate": "model_release",
+    "object": "North Mini Code",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1,
+      "model_candidate_id": "MAC-31fa78d72d29fff9"
+    },
+    "source_span": {
+      "raw_id": "RAW-cb7708325b4ef681",
+      "start": 156,
+      "end": 256
+    },
+    "source_quote": "This week, Cohere AI team shipped its first developer-facing coding model named ‘ North Mini Code ‘.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-bb18b10cae0a6863",
+    "raw_id": "RAW-d1a24ed6c4cf4f1c",
+    "claim_type": "partnership",
+    "subject": "Anthropic",
+    "predicate": "partnership",
+    "object": "Tata Consultancy Services",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-4202d799b971dedf"
+    },
+    "source_span": {
+      "raw_id": "RAW-d1a24ed6c4cf4f1c",
+      "start": 117,
+      "end": 288
+    },
+    "source_quote": "Anthropic has partnered with Indian IT services giant Tata Consultancy Services (TCS) in a bid to accelerate adoption of its artificial intelligence models at enterprises.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-de54d692f2f0d684",
     "raw_id": "RAW-fa86b76189b808bc",
     "claim_type": "procurement_contract",
@@ -1220,10 +1330,10 @@
   {
     "claim_id": "CL-c1b0365ce80b1c7b",
     "raw_id": "RAW-b4b9066db80cf722",
-    "claim_type": "product_release",
+    "claim_type": "standard_specification",
     "subject": "京东",
-    "predicate": "product_release",
-    "object": "国内首个智能体自主支付协议A2P2，划分L0至L5六个等级",
+    "predicate": "standard_specification",
+    "object": "A2P2，划分L0至L5六个等级",
     "qualifiers": {
       "event_status": "completed",
       "sequence": 1
@@ -1241,10 +1351,10 @@
   {
     "claim_id": "CL-a3a8d0af5aefdc18",
     "raw_id": "RAW-b4b9066db80cf722",
-    "claim_type": "product_release",
+    "claim_type": "standard_specification",
     "subject": "京东",
-    "predicate": "product_release",
-    "object": "国内首个智能体自主支付协议A2P2，划分L0至L5六个等级",
+    "predicate": "standard_specification",
+    "object": "A2P2，划分L0至L5六个等级",
     "qualifiers": {
       "event_status": "completed",
       "sequence": 2
@@ -1262,10 +1372,10 @@
   {
     "claim_id": "CL-0288789d9a06dbc1",
     "raw_id": "RAW-b4b9066db80cf722",
-    "claim_type": "product_release",
+    "claim_type": "standard_specification",
     "subject": "京东",
-    "predicate": "product_release",
-    "object": "国内首个智能体自主支付协议A2P2，划分L0至L5六个等级",
+    "predicate": "standard_specification",
+    "object": "A2P2，划分L0至L5六个等级",
     "qualifiers": {
       "event_status": "completed",
       "sequence": 3

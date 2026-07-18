@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-013
 title: "OpenAI 关闭 Atlas 浏览器，将智能体浏览功能整合进 ChatGPT 桌面应用和 Chrome 扩展"
 title_zh: "OpenAI 关闭 Atlas 浏览器，将智能体浏览功能整合进 ChatGPT 桌面应用和 Chrome 扩展"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://techcrunch.com/2026/07/09/openai-is-shutting-down-atlas-but-its-ai-browser-ambitions-are-still-growing"
 canonical_url: "https://techcrunch.com/2026/07/09/openai-is-shutting-down-atlas-but-its-ai-browser-ambitions-are-still-growing"
 source_name: "TechCrunch：AI（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-10T01:59:44.140Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # OpenAI 关闭 Atlas 浏览器，将智能体浏览功能整合进 ChatGPT 桌面应用和 Chrome 扩展

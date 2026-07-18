@@ -1,0 +1,68 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-18T04:59:59.870Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 1250,
+    "quarantinedEventCount": 11
+  },
+  "entity": {
+    "id": "EN-3de77a4bcfbd509f",
+    "name": "EquiLibre Technologies",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-19ebde6e2de35fc9"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-01",
+    "lastSeen": "2026-07-01",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [
+        "EV-19ebde6e2de35fc9"
+      ],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-19ebde6e2de35fc9",
+        "dataDate": "2026-07-01",
+        "date": "2026-07-01",
+        "eventType": "partnership",
+        "eventTypeLabel": "合作",
+        "eventGroup": "商业合作",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "前DeepMind三人组将扑克AI强化学习技术用于量化交易，EquiLibre估值5亿美元",
+        "displayTags": [],
+        "entityIds": [
+          "EN-3de77a4bcfbd509f",
+          "EN-2b6e51bec93e86c1"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

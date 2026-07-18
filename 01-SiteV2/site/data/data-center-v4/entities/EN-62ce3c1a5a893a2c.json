@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T01:57:40.269Z",
-    "latestDataDate": "2026-07-17",
-    "currentDate": "2026-07-17",
-    "eventCount": 832,
-    "quarantinedEventCount": 60
+    "generatedAt": "2026-07-18T04:59:59.870Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 1250,
+    "quarantinedEventCount": 11
   },
   "entity": {
     "id": "EN-62ce3c1a5a893a2c",
@@ -21,19 +21,18 @@
       "canonical"
     ],
     "eventIds": [
-      "EV-2cb9dbed2b2b6077"
+      "EV-2cb9dbed2b2b6077",
+      "EV-d29997d350e7c947"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [
-      "EN-e78bdebae031095b",
-      "EN-b5251b35f15bedc4"
+      "EN-e78bdebae031095b"
     ],
     "firstSeen": "2026-06-13",
-    "lastSeen": "2026-06-14",
+    "lastSeen": "2026-06-21",
     "relationIds": [
-      "REL2-4d35bd75c4b99d6c",
-      "REL2-f2a22a36a26d3ca9"
+      "REL2-4d35bd75c4b99d6c"
     ],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -45,7 +44,9 @@
       ],
       "hardware": [],
       "organizationPeople": [],
-      "other": []
+      "other": [
+        "EV-d29997d350e7c947"
+      ]
     },
     "timeline": [
       {
@@ -65,6 +66,23 @@
           "EN-7d3194f79e645c42",
           "EN-8d4321d936320802",
           "EN-35ad2658e502aeda"
+        ]
+      },
+      {
+        "id": "EV-d29997d350e7c947",
+        "dataDate": "2026-06-21",
+        "date": "2026-06-20",
+        "eventType": "research_result",
+        "eventTypeLabel": "研究结果",
+        "eventGroup": "研究结果",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "GPT-5.5幻觉率达86%，GLM-5.2仅28%--大模型越大越不可靠",
+        "displayTags": [],
+        "entityIds": [
+          "EN-7d3194f79e645c42",
+          "EN-f96d68ab59e5e585",
+          "EN-62ce3c1a5a893a2c"
         ]
       },
       {
@@ -110,16 +128,21 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-e9b020a1b5f1af14",
         "EV-3daefecd0453631a",
         "EV-bb6bc8194a3a50c1",
         "EV-edcb66d0401cfb8f",
         "EV-03f661e8dcdf1b58",
         "EV-ef7346378fcf9746",
+        "EV-4da18f97771852a9",
         "EV-f949fd95df58d42d",
         "EV-fcbd97e1f30c95e3",
         "EV-5012364af7480121",
         "EV-8a91e14f37d32b4d",
-        "EV-3c51bcb5e99d2b68"
+        "EV-31782f0824ae1db1",
+        "EV-3c51bcb5e99d2b68",
+        "EV-8973f8148205ed35",
+        "EV-ecfc552af7344d65"
       ],
       "viewpointIds": [],
       "classificationRefs": [
@@ -128,54 +151,11 @@
       ],
       "relatedEntityIds": [
         "EN-62ce3c1a5a893a2c",
-        "EN-35ad2658e502aeda"
+        "EN-35ad2658e502aeda",
+        "EN-db94610ec9052c37"
       ],
-      "firstSeen": "2026-06-04",
-      "lastSeen": "2026-07-10"
-    },
-    {
-      "id": "EN-b5251b35f15bedc4",
-      "name": "Moonshot AI",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [
-        "月之暗面"
-      ],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-fd21441fb6e143c3",
-        "EV-0d5a32aca724d30e",
-        "EV-1b03e5dff76a50a1",
-        "EV-5caf7f83664b1a2c",
-        "EV-2cb9dbed2b2b6077",
-        "EV-6af31d42885e0361",
-        "EV-e878e56967902718",
-        "EV-e9a86c47da229331",
-        "EV-773ffcc6e1df56fa",
-        "EV-74b965de27bc0515"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-technology-vision_language",
-        "TX-technology-code_generation",
-        "TX-use_case-software_development",
-        "TX-technology-long_context",
-        "TX-industry-financial_services",
-        "TX-technology-retrieval_augmented_generation",
-        "TX-technology-multimodal"
-      ],
-      "relatedEntityIds": [
-        "EN-2cfed21b7a971267",
-        "EN-62ce3c1a5a893a2c",
-        "EN-23bc2a854bc0cfb0",
-        "EN-b57c95289680078c"
-      ],
-      "firstSeen": "2026-05-19",
-      "lastSeen": "2026-07-17"
+      "firstSeen": "2026-05-21",
+      "lastSeen": "2026-07-13"
     }
   ],
   "relationships": [
@@ -198,27 +178,6 @@
         "SA-e12af0ca03080fdd"
       ],
       "data_date": "2026-06-29",
-      "status": "verified"
-    },
-    {
-      "relationship_id": "REL2-f2a22a36a26d3ca9",
-      "relationship_version": "RELATION-V2.0",
-      "subject_ref": "EN-b5251b35f15bedc4",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-62ce3c1a5a893a2c",
-      "object_type": "entity",
-      "event_id": "EV-2cb9dbed2b2b6077",
-      "claim_refs": [
-        "CL-fabe10d92e0fd9bf",
-        "CL-3baa89c0a5c4b8da",
-        "CL-876e0fc93c576154",
-        "CL-527d08ef88c8ca78"
-      ],
-      "source_refs": [
-        "SA-be99f27322d076ab"
-      ],
-      "data_date": "2026-06-14",
       "status": "verified"
     }
   ],

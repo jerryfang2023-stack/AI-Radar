@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-040
 title: "DiscoBench：腾讯混元和清华联合推出的AI搜索智能体模糊查询基准"
 title_zh: "DiscoBench：腾讯混元和清华联合推出的AI搜索智能体模糊查询基准"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://the-decoder.com/ai-search-agents-dont-fail-at-searching-they-fail-at-asking-the-right-questions-when-queries-get-ambiguous"
 canonical_url: "https://the-decoder.com/ai-search-agents-dont-fail-at-searching-they-fail-at-asking-the-right-questions-when-queries-get-ambiguous"
 source_name: "The Decoder：AI News（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-06T02:21:26.947Z
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # DiscoBench：腾讯混元和清华联合推出的AI搜索智能体模糊查询基准

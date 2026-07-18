@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-013
 title: "What is Microsoft Marketplace - Stactize"
-title_zh: "什么是Microsoft Marketplace - Stactize"
-title_translation_status: translated
-title_translation_method: mymemory_title_translation
+title_zh: "什么是 Microsoft 市场 - Stactize"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://stactize.com/artikel/what-is-microsoft-marketplace/"
 canonical_url: "https://stactize.com/artikel/what-is-microsoft-marketplace"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-11T04:06:32.676Z
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # What is Microsoft Marketplace - Stactize

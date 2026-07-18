@@ -72,7 +72,7 @@ key_excerpts: [{"type":"case_detail","text":"Build your AI transformation roadma
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
-title_zh: "Larridin企业AI投资回报率指南：如何构建..."
+title_zh: "Larridin 企业 AI 投资回报率指南：如何构建..."
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

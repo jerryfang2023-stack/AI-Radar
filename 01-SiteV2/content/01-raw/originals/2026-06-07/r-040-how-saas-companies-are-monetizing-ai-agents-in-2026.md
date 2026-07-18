@@ -72,7 +72,7 @@ key_excerpts: [{"type":"number","text":"Salesforce hit $800 million in Agentforc
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
-title_zh: "SaaS公司如何在2026年通过AI代理实现盈利"
+title_zh: "SaaS公司如何在2026年通过AI智能体实现盈利"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

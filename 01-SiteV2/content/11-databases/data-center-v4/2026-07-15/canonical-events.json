@@ -1,5 +1,76 @@
 [
   {
+    "event_type": "organization_people",
+    "event_status": "planned",
+    "event_time": "2026-07-14T00:00:00.000Z",
+    "disclosed_at": "2026-07-14T00:00:00.000Z",
+    "entities": [
+      "EN-7d3194f79e645c42"
+    ],
+    "action": "离职",
+    "object": "创办 AI 药物发现初创公司，估值 20 亿美元",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-afa9516ef9016167"
+    ],
+    "source_refs": [
+      "SA-97d40e90a6596004"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-97d40e90a6596004",
+        "disclosed_at": "2026-07-14T00:00:00.000Z",
+        "status": "planned"
+      }
+    ],
+    "publication_status": "partial",
+    "event_id": "EV-14b44a40808340f5",
+    "display_title_zh": "OpenAI 研究员 Miles Wang 将离职创办 AI 药物发现初创公司，估值 20 亿美元"
+  },
+  {
+    "event_type": "ipo_listing",
+    "event_status": "announced",
+    "event_time": "2026-07-14T23:31:22.000Z",
+    "disclosed_at": "2026-07-14T23:31:22.000Z",
+    "entities": [
+      "EN-340bcfafccc14ed8",
+      "EN-6f7ac1823da81d2e"
+    ],
+    "action": "IPO",
+    "object": "最快今年提交申请，梁文锋身价 360 亿美元成 AI 新首富",
+    "metrics": [
+      "579 亿",
+      "360 亿"
+    ],
+    "locations": [
+      "中国"
+    ],
+    "claim_refs": [
+      "CL-a36b78a0a0e1d4f4",
+      "CL-cfff5b0af0324115",
+      "CL-e4379b5b36cc2d49",
+      "CL-ee2fa884b6ce60e8"
+    ],
+    "source_refs": [
+      "SA-78cd937ead26f97e"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-78cd937ead26f97e",
+        "disclosed_at": "2026-07-14T23:31:22.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-b6970cb396a7b1ed",
+    "display_title_zh": "DeepSeek 筹备 IPO 最快今年提交申请，梁文锋身价 360 亿美元成 AI 新首富"
+  },
+  {
     "event_type": "lawsuit_settlement",
     "event_status": "announced",
     "event_time": "2026-07-14T00:00:00.000Z",
@@ -46,6 +117,7 @@
       "EN-2dccad081d04307b",
       "EN-6f7ac1823da81d2e",
       "EN-8d4321d936320802",
+      "EN-b81c8201acfc7639",
       "EN-9c8ae69b84f21a2e"
     ],
     "action": "融资",
@@ -79,6 +151,39 @@
     "publication_status": "partial",
     "event_id": "EV-87432dbb99cd6033",
     "display_title_zh": "DeepSeek 新一轮融资估值约710亿美元，资金将用于自建数据中心和AI芯片"
+  },
+  {
+    "event_type": "partnership",
+    "event_status": "announced",
+    "event_time": "2026-07-14T00:00:00.000Z",
+    "disclosed_at": "2026-07-14T00:00:00.000Z",
+    "entities": [
+      "EN-7bcc8b72ffd62b77"
+    ],
+    "action": "partnership",
+    "object": "Nebius",
+    "metrics": [
+      "$1B"
+    ],
+    "locations": [],
+    "claim_refs": [
+      "CL-bac806d77f99e582"
+    ],
+    "source_refs": [
+      "SA-baa0585fd53dbcfc"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-baa0585fd53dbcfc",
+        "disclosed_at": "2026-07-14T00:00:00.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-a45262f89b272703",
+    "display_title_zh": "Reflection AI 与 Nebius 签署 10 亿美元算力协议"
   },
   {
     "event_type": "product_release",
@@ -274,6 +379,39 @@
   },
   {
     "event_type": "product_release",
+    "event_status": "announced",
+    "event_time": "2026-07-14T00:00:00.000Z",
+    "disclosed_at": "2026-07-14T00:00:00.000Z",
+    "entities": [
+      "EN-ed0f45e26b04d335",
+      "EN-c70eca6b0f88f44d",
+      "EN-7d3194f79e645c42"
+    ],
+    "action": "product_release",
+    "object": "new version of auto-draft feature that identifies important emails and creates draft replies",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-6d5a024cd98b2122"
+    ],
+    "source_refs": [
+      "SA-4d53e3428deb9793"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-4d53e3428deb9793",
+        "disclosed_at": "2026-07-14T00:00:00.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-712473b23a2a11a0",
+    "display_title_zh": "Superhuman 新版自动草稿功能：基于 Anthropic 和 OpenAI 前沿模型生成回复"
+  },
+  {
+    "event_type": "product_release",
     "event_status": "planned",
     "event_time": "2026-07-14T00:00:00.000Z",
     "disclosed_at": "2026-07-14T00:00:00.000Z",
@@ -347,6 +485,37 @@
     "publication_status": "partial",
     "event_id": "EV-6ebcbb2660ec7ad9",
     "display_title_zh": "三星SDS将于7月16日推出基于FuriosaAI的AI服务"
+  },
+  {
+    "event_type": "hardware_deployment",
+    "event_status": "announced",
+    "event_time": "2026-07-07T17:59:40.000Z",
+    "disclosed_at": "2026-07-07T17:59:40.000Z",
+    "entities": [
+      "EN-f4bec299df3f4f27"
+    ],
+    "action": "hardware_deployment",
+    "object": "RNGD AI accelerators at Equinix LS2 datacenter in Lisbon, Portugal",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-4d4fa5eb7260e1fb"
+    ],
+    "source_refs": [
+      "SA-43a4249f5da7b00b"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-43a4249f5da7b00b",
+        "disclosed_at": "2026-07-07T17:59:40.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-fd693f4b2195b20e",
+    "display_title_zh": "韩国芯片初创公司FuriosaAI进军欧洲数据中心"
   },
   {
     "event_type": "funding",
@@ -465,6 +634,38 @@
     "display_title_zh": "FuriosaAI与博通合作，为代理时代构建下一代推理平台"
   },
   {
+    "event_type": "product_release",
+    "event_status": "announced",
+    "event_time": "2026-07-14T09:08:37.000Z",
+    "disclosed_at": "2026-07-14T09:08:37.000Z",
+    "entities": [
+      "EN-c13e2f4a44bb01ed",
+      "EN-e69e1d0e7ad091fc"
+    ],
+    "action": "product_release",
+    "object": "NPUaaS service",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-014ede19bf865478"
+    ],
+    "source_refs": [
+      "SA-d2f235b1fe53f9c2"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-d2f235b1fe53f9c2",
+        "disclosed_at": "2026-07-14T09:08:37.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-770cea9de2337d0e",
+    "display_title_zh": "应对生成式AI推理需求增长及电力成本上升的策略.. - MK"
+  },
+  {
     "event_type": "funding",
     "event_status": "completed",
     "event_time": "2026-07-14T00:00:00.000Z",
@@ -509,7 +710,8 @@
     "disclosed_at": "2026-07-14T12:56:49.000Z",
     "entities": [
       "EN-2dcd958b2064843f",
-      "EN-0d014547a90d8fea"
+      "EN-0d014547a90d8fea",
+      "EN-2dc010636b9dce91"
     ],
     "action": "Raises",
     "object": "$21 Million Seed To Build Self-Learning AI Back-Office Platform",
@@ -563,9 +765,7 @@
       "SA-ca878c8c96c8a630"
     ],
     "conflicts": [],
-    "missing_fields": [
-      "display_title_zh"
-    ],
+    "missing_fields": [],
     "update_history": [
       {
         "source_ref": "SA-ca878c8c96c8a630",
@@ -575,7 +775,7 @@
     ],
     "publication_status": "verified",
     "event_id": "EV-49d9029bdcf87db4",
-    "display_title_zh": ""
+    "display_title_zh": "Gemini Enterprise 发布说明"
   },
   {
     "event_type": "model_release",
@@ -615,6 +815,38 @@
     "publication_status": "verified",
     "event_id": "EV-b84035029a63e52e",
     "display_title_zh": "Crusoe 推出无服务器微调与自助推理部署，加速开放模型从实验到生产的开发进程"
+  },
+  {
+    "event_type": "policy_regulation",
+    "event_status": "announced",
+    "event_time": "2026-07-14T15:06:28.000Z",
+    "disclosed_at": "2026-07-14T15:06:28.000Z",
+    "entities": [
+      "EN-6259c7ed2353457e"
+    ],
+    "action": "policy_regulation",
+    "object": "data center construction moratorium",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-a5d4f9870b2223fa",
+      "CL-82c766a3f66841a3"
+    ],
+    "source_refs": [
+      "SA-c927d771419e1a04"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-c927d771419e1a04",
+        "disclosed_at": "2026-07-14T15:06:28.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-48cdbceca6a3f9a1",
+    "display_title_zh": "纽约禁止新建数据中心一年，震动AI行业"
   },
   {
     "event_type": "product_release",
@@ -787,8 +1019,7 @@
     ],
     "conflicts": [],
     "missing_fields": [
-      "event_time",
-      "display_title_zh"
+      "event_time"
     ],
     "update_history": [
       {
@@ -799,7 +1030,7 @@
     ],
     "publication_status": "verified",
     "event_id": "EV-e4f5a28a1c8396b6",
-    "display_title_zh": ""
+    "display_title_zh": "Launch YC: Nitrode - 推动AI在游戏开发中的应用"
   },
   {
     "event_type": "deployment",
@@ -874,13 +1105,45 @@
     "display_title_zh": "OpenAI 首度回应苹果诉讼：相信公平竞争，未发现任何证据"
   },
   {
+    "event_type": "model_release",
+    "event_status": "completed",
+    "event_time": "2026-07-15T03:00:22.000Z",
+    "disclosed_at": "2026-07-15T03:00:22.000Z",
+    "entities": [
+      "EN-047364b9be67f665",
+      "EN-1d99cc69a8ba22eb",
+      "EN-22a4c686e665e299"
+    ],
+    "action": "发布实时语音交互对话模型",
+    "object": "Qwen-Audio-3.0-Realtime",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-b7a99a5f0a3f9f32"
+    ],
+    "source_refs": [
+      "SA-7a70aff625162bde"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-7a70aff625162bde",
+        "disclosed_at": "2026-07-15T03:00:22.000Z",
+        "status": "completed"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-363fe72da52bdb86",
+    "display_title_zh": "阿里发布实时语音交互对话模型 Qwen-Audio-3.0-Realtime"
+  },
+  {
     "event_type": "partnership",
     "event_status": "planned",
     "event_time": "2026-07-14T12:40:57.000Z",
     "disclosed_at": "2026-07-14T12:40:57.000Z",
     "entities": [
       "EN-8d4321d936320802",
-      "EN-60094bcf5292c490",
       "EN-956b7280912ef1cc",
       "EN-18ada5002dd89e01"
     ],
@@ -1092,6 +1355,74 @@
     "publication_status": "verified",
     "event_id": "EV-84226288807f817b",
     "display_title_zh": "Anthropic 推出 Claude for Teachers，免费向美国 K-12 教师提供高级功能"
+  },
+  {
+    "event_type": "product_release",
+    "event_status": "announced",
+    "event_time": "2026-07-14T00:00:00.000Z",
+    "disclosed_at": "2026-07-14T00:00:00.000Z",
+    "entities": [
+      "EN-3a7bd3e2360a3d29",
+      "EN-af3ceabbe048a291"
+    ],
+    "action": "product_release",
+    "object": "iOS 27 public beta with Siri AI",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-ade9b4c8d412ad4a"
+    ],
+    "source_refs": [
+      "SA-d7df74ef107ebab0"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-d7df74ef107ebab0",
+        "disclosed_at": "2026-07-14T00:00:00.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-37b8aab7efececce",
+    "display_title_zh": "苹果通过 iOS 27 公测版向所有人开放全新 Siri AI"
+  },
+  {
+    "event_type": "organization_restructuring",
+    "event_status": "announced",
+    "event_time": "2026-07-14T00:00:00.000Z",
+    "disclosed_at": "2026-07-14T00:00:00.000Z",
+    "entities": [
+      "EN-ea3bd73e2b506e00"
+    ],
+    "action": "layoffs",
+    "object": "Meta accused of using biased AI targeting for mass layoffs",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-5f90e3755cd2f203",
+      "CL-9c7787b79836582f",
+      "CL-fad1ecd3c6ed45dd",
+      "CL-fe75b68c4c4eff41"
+    ],
+    "source_refs": [
+      "SA-1c54fee695038952"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "object"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-1c54fee695038952",
+        "disclosed_at": "2026-07-14T00:00:00.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-618e2e96fac28f06",
+    "display_title_zh": "Meta 被指控使用有偏见的 AI 进行大规模裁员"
   },
   {
     "event_type": "deployment",
@@ -1393,6 +1724,40 @@
     "display_title_zh": "Hinge 创始人筹集 1800 万美元打造新 AI 约会服务 Overtone"
   },
   {
+    "event_type": "product_release",
+    "event_status": "announced",
+    "event_time": "2026-07-14T00:00:00.000Z",
+    "disclosed_at": "2026-07-14T00:00:00.000Z",
+    "entities": [
+      "EN-6fcba5d96a4fadfd",
+      "EN-fa373257792c6b9b",
+      "EN-b0532e1af75cc4ab",
+      "EN-96eebba49dbbf422"
+    ],
+    "action": "product_release",
+    "object": "verifiers v1",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-2cd665b27a7398d4"
+    ],
+    "source_refs": [
+      "SA-079eb1f2db2b6381"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-079eb1f2db2b6381",
+        "disclosed_at": "2026-07-14T00:00:00.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-e7b7df43970f7e2c",
+    "display_title_zh": "xAI 上传代码库 👨‍💻，Prime Intellect 验证器 🧠，Sakana 智能积木 🧱"
+  },
+  {
     "event_type": "lawsuit_settlement",
     "event_status": "completed",
     "event_time": "2026-07-14T23:00:47.000Z",
@@ -1530,5 +1895,39 @@
     "publication_status": "partial",
     "event_id": "EV-9f45aa7b5312420d",
     "display_title_zh": "Sunrun 启动边缘 AI 推理节点部署试点，将分布式电力转化为算力"
+  },
+  {
+    "event_type": "product_release",
+    "event_status": "announced",
+    "event_time": "2026-07-14T16:20:58.000Z",
+    "disclosed_at": "2026-07-14T16:20:58.000Z",
+    "entities": [
+      "EN-bbdefa2950f49882",
+      "EN-834ab0b6e4492d23",
+      "EN-01f1074bb52ff605",
+      "EN-dd782f5241cd7e50"
+    ],
+    "action": "product_release",
+    "object": "AI image generation in Search's AI Overviews using Nano Banana 2 Lite model",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-8aa5913ecc6b8be7"
+    ],
+    "source_refs": [
+      "SA-490607753bce8e6d"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-490607753bce8e6d",
+        "disclosed_at": "2026-07-14T16:20:58.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-a442b55d0bac5651",
+    "display_title_zh": "Google 搜索在无法找到网页内容时，现可生成 AI 图像"
   }
 ]

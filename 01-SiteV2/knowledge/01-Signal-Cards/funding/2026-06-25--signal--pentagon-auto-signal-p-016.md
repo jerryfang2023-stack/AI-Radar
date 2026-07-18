@@ -2,7 +2,7 @@
 id: SIG-20260625-A02
 type: signal_card
 signal_type: funding
-title: "独家：Vinod Khosla曾希望获得Runlayer本轮融资的每一美元。该公司刚刚筹集了3000万美元 | 《财富》"
+title: "独家：Vinod Khosla曾希望获得Runlayer本轮融资的每一美元。该公司刚刚筹集了3000万美元"
 date: 2026-06-25
 status: published
 source_title: "Exclusive: Vinod Khosla wanted every dollar of Runlayer's round. It just raised $30 million | Fortune"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Pentagon"
 
 frontend:
-  displayTitle: "独家：Vinod Khosla曾希望获得Runlayer本轮融资的每一美元。该公司刚刚筹集了3000万美元 | 《财富》"
+  displayTitle: "独家：Vinod Khosla曾希望获得Runlayer本轮融资的每一美元。该公司刚刚筹集了3000万美元"
   sourceLinks:
     - "https://fortune.com/2026/06/24/exclusive-vinod-khosla-felicis-runlayer-nanit-30-million-enterprise-ai/"
 ---
 
-# 独家：Vinod Khosla曾希望获得Runlayer本轮融资的每一美元。该公司刚刚筹集了3000万美元 | 《财富》
+# 独家：Vinod Khosla曾希望获得Runlayer本轮融资的每一美元。该公司刚刚筹集了3000万美元
 
 ## 新闻事实
 

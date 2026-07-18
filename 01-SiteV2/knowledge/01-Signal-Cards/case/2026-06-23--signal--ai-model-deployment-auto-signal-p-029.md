@@ -2,7 +2,7 @@
 id: SIG-20260623-A11
 type: signal_card
 signal_type: case
-title: "AI模型部署：生产环境最佳实践"
+title: "AI 模型部署：生产环境最佳实践"
 date: 2026-06-23
 status: published
 source_title: "AI model deployment: Best practices for production environments"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "AI model deployment"
 
 frontend:
-  displayTitle: "AI模型部署：生产环境最佳实践"
+  displayTitle: "AI 模型部署：生产环境最佳实践"
   sourceLinks:
     - "https://launchdarkly.com/blog/ai-model-deployment/"
 ---
 
-# AI模型部署：生产环境最佳实践
+# AI 模型部署：生产环境最佳实践
 
 ## 新闻事实
 

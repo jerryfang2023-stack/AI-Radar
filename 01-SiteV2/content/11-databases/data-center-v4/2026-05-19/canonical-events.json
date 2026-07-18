@@ -78,6 +78,42 @@
   },
   {
     "event_type": "product_release",
+    "event_status": "announced",
+    "event_time": "2026-05-18T12:11:54.000Z",
+    "disclosed_at": "2026-05-18T12:11:54.000Z",
+    "entities": [
+      "EN-9e193b14cd573988",
+      "EN-1731c71acfed1ed3",
+      "EN-bfa86ed4368cf7d0"
+    ],
+    "action": "product_release",
+    "object": "魏牌 V9X",
+    "metrics": [
+      "34.98 万"
+    ],
+    "locations": [],
+    "claim_refs": [
+      "CL-a4fa8902bc6f865c",
+      "CL-899d1e5167fcd160"
+    ],
+    "source_refs": [
+      "SA-1dce453b63595f49"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-1dce453b63595f49",
+        "disclosed_at": "2026-05-18T12:11:54.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-c930058cf6ea047d",
+    "display_title_zh": "长城魏牌V9X AI豪华六座旗舰上市，售价34.98万元起"
+  },
+  {
+    "event_type": "product_release",
     "event_status": "completed",
     "event_time": "2026-05-18T11:55:35.000Z",
     "disclosed_at": "2026-05-18T11:55:35.000Z",
@@ -110,5 +146,40 @@
     "publication_status": "verified",
     "event_id": "EV-6a6ff349579765ad",
     "display_title_zh": "腾讯推出 AI 应用生成平台\"吐司\"：定位\"探索型氛围编程产品\"、支持一键打造 App 原型预览"
+  },
+  {
+    "event_type": "model_release",
+    "event_status": "announced",
+    "event_time": "",
+    "disclosed_at": "2026-05-19T05:27:29.976Z",
+    "entities": [
+      "EN-6f7ac1823da81d2e",
+      "EN-9fd74b87b71e744a"
+    ],
+    "action": "model_release",
+    "object": "DeepSeek-V4 预览版本",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-3a331ca18f30d084"
+    ],
+    "source_refs": [
+      "SA-8cab00f261e8f519"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "event_time",
+      "display_title_zh"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-8cab00f261e8f519",
+        "disclosed_at": "2026-05-19T05:27:29.976Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-f53d633bc72a1f88",
+    "display_title_zh": ""
   }
 ]

@@ -1,5 +1,81 @@
 [
   {
+    "event_type": "funding",
+    "event_status": "completed",
+    "event_time": "2026-06-08T23:27:17.000Z",
+    "disclosed_at": "2026-06-08T23:27:17.000Z",
+    "entities": [
+      "EN-b81c8201acfc7639",
+      "EN-3a7bd3e2360a3d29",
+      "EN-b5251b35f15bedc4",
+      "EN-481243d2f2a235c1"
+    ],
+    "action": "funding",
+    "object": "20 亿美元融资",
+    "metrics": [
+      "20 亿",
+      "300 亿"
+    ],
+    "locations": [],
+    "claim_refs": [
+      "CL-8ebf9fd4c8bcf7f8"
+    ],
+    "source_refs": [
+      "SA-523dd1c64a20fea6"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-523dd1c64a20fea6",
+        "disclosed_at": "2026-06-08T23:27:17.000Z",
+        "status": "completed"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-5be48cce8dc4f3de",
+    "display_title_zh": "IT早报 0609：华为余承东官宣尊界 V800；库克 WWDC 收官演讲苹果 iOS 27 发布；月之暗面寻求 20 亿美元融资；中国 AI 大模型周调用量连续六周超越美国"
+  },
+  {
+    "event_type": "ipo_listing",
+    "event_status": "announced",
+    "event_time": "2026-06-08T21:29:57.000Z",
+    "disclosed_at": "2026-06-08T21:29:57.000Z",
+    "entities": [
+      "EN-02148729a657dafc",
+      "EN-c70eca6b0f88f44d",
+      "EN-7d3194f79e645c42"
+    ],
+    "action": "IPO",
+    "object": "申请",
+    "metrics": [
+      "$852 billion"
+    ],
+    "locations": [
+      "U.S."
+    ],
+    "claim_refs": [
+      "CL-37a1cbf148d7b0f8",
+      "CL-27bc52b2aa2b2eb9",
+      "CL-4c1e88e676fc6d73"
+    ],
+    "source_refs": [
+      "SA-d1bac5bb095fe7bc"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-d1bac5bb095fe7bc",
+        "disclosed_at": "2026-06-08T21:29:57.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-a381531dd3abef18",
+    "display_title_zh": "继Anthropic之后，OpenAI秘密提交IPO申请"
+  },
+  {
     "event_type": "product_release",
     "event_status": "completed",
     "event_time": "2026-06-08T22:24:02.356Z",
@@ -35,6 +111,41 @@
     "publication_status": "verified",
     "event_id": "EV-c5b8faec223a4caf",
     "display_title_zh": "Claude 支持 Apple Foundation Models 框架，推出新 Swift 包"
+  },
+  {
+    "event_type": "product_release",
+    "event_status": "announced",
+    "event_time": "2026-06-08T08:25:51.000Z",
+    "disclosed_at": "2026-06-08T08:25:51.000Z",
+    "entities": [
+      "EN-35e36dc1a5213fa3",
+      "EN-bbdefa2950f49882",
+      "EN-bdfecbcd7dbf76d2",
+      "EN-cfe6926406f30a15",
+      "EN-e3db3da2b7dc6057"
+    ],
+    "action": "product_release",
+    "object": "Cross-Corpus Retrieval feature in Gemini Enterprise Agent Platform",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-de37f5769dfebc99"
+    ],
+    "source_refs": [
+      "SA-08811072d14bb993"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-08811072d14bb993",
+        "disclosed_at": "2026-06-08T08:25:51.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-a591b0c96f79de45",
+    "display_title_zh": "Google Research 为 Gemini Enterprise Agent Platform 引入 Agentic RAG 与 Sufficient Context Agent 支持多跳查询"
   },
   {
     "event_type": "product_release",
@@ -74,6 +185,42 @@
     "display_title_zh": "Claude Code v2.1.169 发布"
   },
   {
+    "event_type": "model_release",
+    "event_status": "completed",
+    "event_time": "2026-06-08T08:56:49.000Z",
+    "disclosed_at": "2026-06-08T08:56:49.000Z",
+    "entities": [
+      "EN-3704461f86f6b9a3",
+      "EN-9fbf261b62c1d7c0",
+      "EN-72d74884ff03d39c"
+    ],
+    "action": "推出 MAI-Transcribe-1.5 语音转文本模型",
+    "object": "Microsoft AI 推出 MAI-Transcribe-1.5 语音转文本模型",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-dddcf80426ef8ef4",
+      "CL-4287c28c44de797b"
+    ],
+    "source_refs": [
+      "SA-7c511f3e310baf5f"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "object"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-7c511f3e310baf5f",
+        "disclosed_at": "2026-06-08T08:56:49.000Z",
+        "status": "completed"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-04c2ffd7f6b10126",
+    "display_title_zh": "Microsoft AI 推出 MAI-Transcribe-1.5 语音转文本模型"
+  },
+  {
     "event_type": "funding",
     "event_status": "completed",
     "event_time": "",
@@ -109,7 +256,7 @@
     ],
     "publication_status": "verified",
     "event_id": "EV-4c247b02485de09b",
-    "display_title_zh": "红杉资本支持的Edra获3000万美元A轮融资，将企业数据转化为自我优化的AI代理"
+    "display_title_zh": "红杉资本支持的Edra完成3000万美元A轮融资，将企业数据转化为自我优化的AI智能体"
   },
   {
     "event_type": "product_release",
@@ -291,6 +438,41 @@
     "display_title_zh": "Apple 发布 visionOS 27，集成 Siri AI"
   },
   {
+    "event_type": "deployment",
+    "event_status": "planned",
+    "event_time": "2026-06-08T18:13:26.639Z",
+    "disclosed_at": "2026-06-08T18:13:26.639Z",
+    "entities": [
+      "EN-4c9fa2b0e05cd930",
+      "EN-3a7bd3e2360a3d29"
+    ],
+    "action": "上线",
+    "object": "受 DMA 影响，Siri AI 在欧盟将随 iOS 27 和 iPadOS 27 延迟上线",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-6a944c5637b58082",
+      "CL-59ef81bfb08bd948"
+    ],
+    "source_refs": [
+      "SA-22294bfcf7c1d154"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "object"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-22294bfcf7c1d154",
+        "disclosed_at": "2026-06-08T18:13:26.639Z",
+        "status": "planned"
+      }
+    ],
+    "publication_status": "partial",
+    "event_id": "EV-d116b0aa5bb292e2",
+    "display_title_zh": "受 DMA 影响，Siri AI 在欧盟将随 iOS 27 和 iPadOS 27 延迟上线"
+  },
+  {
     "event_type": "product_release",
     "event_status": "completed",
     "event_time": "2026-06-08T15:49:12.000Z",
@@ -432,25 +614,25 @@
     "display_title_zh": "WWDC 2026：Siri、iOS 27、Apple Intelligence 等全部发布内容"
   },
   {
-    "event_type": "product_release",
+    "event_type": "ipo_listing",
     "event_status": "announced",
     "event_time": "2026-06-08T21:57:25.000Z",
     "disclosed_at": "2026-06-08T21:57:25.000Z",
     "entities": [
       "EN-7d3194f79e645c42",
-      "EN-148b42653f5e08b1"
+      "EN-c70eca6b0f88f44d"
     ],
-    "action": "product_release",
-    "object": "OpenAI 已提交 S-1 草案，释放潜在 IPO 上市信号",
+    "action": "IPO",
+    "object": "上市信号",
     "metrics": [],
     "locations": [
       "美国"
     ],
     "claim_refs": [
-      "CL-33e98d13578e6a9e",
-      "CL-5d756448caf51a9c",
+      "CL-365844bc63ab49f6",
+      "CL-37aa9dd154b049e5",
       "CL-fa37220043fac3d3",
-      "CL-c390dc03009f18dc"
+      "CL-b3890ae8e8f52a06"
     ],
     "source_refs": [
       "SA-03c48d6223c4d2fa"
@@ -465,8 +647,41 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-19903b5eef9b1de0",
+    "event_id": "EV-d8be3852cb83a361",
     "display_title_zh": "OpenAI 已提交 S-1 草案，释放潜在 IPO 上市信号"
+  },
+  {
+    "event_type": "funding",
+    "event_status": "announced",
+    "event_time": "2026-06-08T11:22:10.000Z",
+    "disclosed_at": "2026-06-08T11:22:10.000Z",
+    "entities": [
+      "EN-b5251b35f15bedc4"
+    ],
+    "action": "funding",
+    "object": "valuation of up to $30 billion",
+    "metrics": [
+      "$30 billion"
+    ],
+    "locations": [],
+    "claim_refs": [
+      "CL-65b764b60f04a5aa"
+    ],
+    "source_refs": [
+      "SA-0ad771754278ac30"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-0ad771754278ac30",
+        "disclosed_at": "2026-06-08T11:22:10.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-0e4bddfd5c129618",
+    "display_title_zh": "月之暗面（Moonshot AI）寻求 300 亿美元估值，较 2025 年底增长超 6 倍"
   },
   {
     "event_type": "product_release",
@@ -500,6 +715,71 @@
     "publication_status": "verified",
     "event_id": "EV-57b029a4afb71044",
     "display_title_zh": "奥尔特曼宣布 OpenAI 进入第三发展阶段：让 AI 普及、易用且安全"
+  },
+  {
+    "event_type": "product_release",
+    "event_status": "completed",
+    "event_time": "2026-06-08T18:50:51.580Z",
+    "disclosed_at": "2026-06-08T18:50:51.580Z",
+    "entities": [
+      "EN-c70eca6b0f88f44d"
+    ],
+    "action": "推出",
+    "object": "性能监控仪表盘",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-a0063f3cffb25898",
+      "CL-0d94e735f2d25941"
+    ],
+    "source_refs": [
+      "SA-28943362f01853fe"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-28943362f01853fe",
+        "disclosed_at": "2026-06-08T18:50:51.580Z",
+        "status": "completed"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-3371b45e53949464",
+    "display_title_zh": "Claude 为 Connector 开发者推出性能监控仪表盘"
+  },
+  {
+    "event_type": "model_release",
+    "event_status": "announced",
+    "event_time": "2026-06-08T18:59:45.000Z",
+    "disclosed_at": "2026-06-08T18:59:45.000Z",
+    "entities": [
+      "EN-3a7bd3e2360a3d29",
+      "EN-af3ceabbe048a291",
+      "EN-1553575bccce0a25"
+    ],
+    "action": "model_release",
+    "object": "Siri AI and Apple Intelligence features",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-9331a7c7b2ffd150"
+    ],
+    "source_refs": [
+      "SA-637ded00ea45f133"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-637ded00ea45f133",
+        "disclosed_at": "2026-06-08T18:59:45.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-9f338c4815cc65f3",
+    "display_title_zh": "苹果智能和 Siri AI 适配机型公布，iPhone 15 Pro 系列及后续型号可用"
   },
   {
     "event_type": "product_release",
@@ -577,6 +857,39 @@
   },
   {
     "event_type": "product_release",
+    "event_status": "announced",
+    "event_time": "2026-06-08T23:13:44.000Z",
+    "disclosed_at": "2026-06-08T23:13:44.000Z",
+    "entities": [
+      "EN-7f6333102da9e8bd",
+      "EN-5388bc10736a0eff"
+    ],
+    "action": "product_release",
+    "object": "AIVA 品牌",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-47cbabd4ac6531c7",
+      "CL-ff09878b6268517a"
+    ],
+    "source_refs": [
+      "SA-9f8c7be5004b17ea"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-9f8c7be5004b17ea",
+        "disclosed_at": "2026-06-08T23:13:44.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-cf00e83782783915",
+    "display_title_zh": "赛力斯赛豆科技全新品牌AIVA官宣：车标曝光，全系标配豆包大模型智能座舱"
+  },
+  {
+    "event_type": "product_release",
     "event_status": "completed",
     "event_time": "2026-06-08T17:59:46.000Z",
     "disclosed_at": "2026-06-08T17:59:46.000Z",
@@ -643,6 +956,37 @@
     "publication_status": "verified",
     "event_id": "EV-d40a1a873015ac98",
     "display_title_zh": "苹果推出 Siri AI：独立 App，为灵动岛优化"
+  },
+  {
+    "event_type": "model_release",
+    "event_status": "announced",
+    "event_time": "2026-06-08T20:22:16.000Z",
+    "disclosed_at": "2026-06-08T20:22:16.000Z",
+    "entities": [
+      "EN-3a7bd3e2360a3d29"
+    ],
+    "action": "model_release",
+    "object": "iPadOS 27",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-bef9e81382823fed"
+    ],
+    "source_refs": [
+      "SA-b6cfe4f4b7de2950"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-b6cfe4f4b7de2950",
+        "disclosed_at": "2026-06-08T20:22:16.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-ebef81764102ee7c",
+    "display_title_zh": "初探苹果 iPadOS 27：应用启动提速 30%、引入全新 Siri AI"
   },
   {
     "event_type": "product_release",

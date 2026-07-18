@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-011
 title: "SigmanticAI - The AI Operating System for Semiconductor Engineering"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "SigmanticAI - 半导体工程的AI操作系统"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.sigmanticai.com/"
 canonical_url: "https://sigmanticai.com"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-04T04:50:50.058Z
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # SigmanticAI - The AI Operating System for Semiconductor Engineering

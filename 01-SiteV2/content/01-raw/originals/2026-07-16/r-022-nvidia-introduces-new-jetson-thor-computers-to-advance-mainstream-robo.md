@@ -2,7 +2,7 @@
 schema_version: raw-evidence-v2
 raw_id: R-022
 title: "NVIDIA Introduces New Jetson Thor Computers to Advance Mainstream Robotics and Edge AI | NVIDIA Blog"
-title_zh: "NVIDIA推出全新Jetson Thor计算机，推动主流机器人与边缘AI发展 | NVIDIA博客"
+title_zh: "NVIDIA 推出新款 Jetson Thor 计算机，推动主流机器人与边缘 AI 发展"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 original_url: "https://blogs.nvidia.com/blog/jetson-thor-robotics-edge-ai-agent/"

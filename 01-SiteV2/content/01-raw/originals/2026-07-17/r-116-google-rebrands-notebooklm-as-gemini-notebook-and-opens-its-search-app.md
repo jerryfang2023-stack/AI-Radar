@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-116
 title: "Google rebrands NotebookLM as Gemini Notebook and opens its search app to third-party integration"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "谷歌将 NotebookLM 更名为 Gemini Notebook，并开放搜索应用供第三方集成"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://the-decoder.com/google-rebrands-notebooklm-as-gemini-notebook-and-opens-its-search-app-to-third-party-integration/"
 canonical_url: "https://the-decoder.com/google-rebrands-notebooklm-as-gemini-notebook-and-opens-its-search-app-to-third-party-integration"
 source_name: "The Decoder AI News"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-17T04:40:17.433Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Google rebrands NotebookLM as Gemini Notebook and opens its search app to third-party integration

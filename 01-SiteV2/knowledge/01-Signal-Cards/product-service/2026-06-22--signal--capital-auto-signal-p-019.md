@@ -2,7 +2,7 @@
 id: SIG-20260622-A05
 type: signal_card
 signal_type: product_service
-title: "Sabre扩大代理型AI部署，Ultra Group在Linex旗下全球扩张"
+title: "Sabre 扩大 AI 智能体部署，Ultra Group 在 Linex 旗下全球扩张"
 date: 2026-06-22
 status: published
 source_title: "Sabre scales agentic AI deployment as Ultra Group expands globally under Linex"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Capital"
 
 frontend:
-  displayTitle: "Sabre扩大代理型AI部署，Ultra Group在Linex旗下全球扩张"
+  displayTitle: "Sabre 扩大 AI 智能体部署，Ultra Group 在 Linex 旗下全球扩张"
   sourceLinks:
     - "https://www.prnewswire.com/news-releases/sabre-scales-agentic-ai-deployment-as-ultra-group-expands-globally-under-linex-302803108.html"
 ---
 
-# Sabre扩大代理型AI部署，Ultra Group在Linex旗下全球扩张
+# Sabre 扩大 AI 智能体部署，Ultra Group 在 Linex 旗下全球扩张
 
 ## 新闻事实
 

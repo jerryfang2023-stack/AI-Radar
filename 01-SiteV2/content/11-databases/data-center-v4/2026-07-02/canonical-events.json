@@ -1,5 +1,39 @@
 [
   {
+    "event_type": "funding",
+    "event_status": "completed",
+    "event_time": "2026-07-01T14:25:23.000Z",
+    "disclosed_at": "2026-07-01T14:25:23.000Z",
+    "entities": [
+      "EN-858b4458c482f7d2"
+    ],
+    "action": "完成 6500 万美元 A 轮融资",
+    "object": "，估值 10 亿美元",
+    "metrics": [
+      "$65 million",
+      "$1 billion"
+    ],
+    "locations": [],
+    "claim_refs": [
+      "CL-7c6d7797abc18a8c"
+    ],
+    "source_refs": [
+      "SA-2ebb0d6d5551ab7f"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-2ebb0d6d5551ab7f",
+        "disclosed_at": "2026-07-01T14:25:23.000Z",
+        "status": "completed"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-4f7462a365561bb5",
+    "display_title_zh": "Venice AI 完成 6500 万美元 A 轮融资，估值 10 亿美元"
+  },
+  {
     "event_type": "product_release",
     "event_status": "completed",
     "event_time": "2026-07-01T20:45:36.000Z",
@@ -35,6 +69,40 @@
     "publication_status": "verified",
     "event_id": "EV-63fdf001c22a0ed4",
     "display_title_zh": "Claude Code v2.1.198 发布"
+  },
+  {
+    "event_type": "service_change",
+    "event_status": "announced",
+    "event_time": "2026-07-01T14:20:19.000Z",
+    "disclosed_at": "2026-07-01T14:20:19.000Z",
+    "entities": [
+      "EN-bbdefa2950f49882",
+      "EN-2e0d0d78480f0cac",
+      "EN-4e80857d445cea34",
+      "EN-307557d99a7eb726"
+    ],
+    "action": "service_change",
+    "object": "Google Tasks and Google Keep integration",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-51ad135c82b9455b"
+    ],
+    "source_refs": [
+      "SA-87233a19fb9b67c0"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-87233a19fb9b67c0",
+        "disclosed_at": "2026-07-01T14:20:19.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-982a92fc86f1d20c",
+    "display_title_zh": "Gemini Spark，Google 智能体助手，现已登陆 Mac"
   },
   {
     "event_type": "product_release",
@@ -108,6 +176,41 @@
     "display_title_zh": "Claude Sonnet 5延续Anthropic隐藏涨价的模式"
   },
   {
+    "event_type": "policy_regulation",
+    "event_status": "announced",
+    "event_time": "2026-07-01T02:16:06.000Z",
+    "disclosed_at": "2026-07-01T02:16:06.000Z",
+    "entities": [
+      "EN-a58230dfd34e6d70",
+      "EN-c70eca6b0f88f44d"
+    ],
+    "action": "policy_regulation",
+    "object": "Anthropic Mythos and Fable models export license requirement",
+    "metrics": [],
+    "locations": [
+      "U.S."
+    ],
+    "claim_refs": [
+      "CL-b2f4a42a6dbb6c9d",
+      "CL-0e513e321c371d6b"
+    ],
+    "source_refs": [
+      "SA-d7a58e1a6890238d"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-d7a58e1a6890238d",
+        "disclosed_at": "2026-07-01T02:16:06.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-0e7bfa49eb4ae5b2",
+    "display_title_zh": "美国解除对Anthropic的Mythos与Fable模型出口限制，7月1日恢复公众访问"
+  },
+  {
     "event_type": "partnership",
     "event_status": "announced",
     "event_time": "",
@@ -143,7 +246,44 @@
     ],
     "publication_status": "verified",
     "event_id": "EV-06487af6e98ea491",
-    "display_title_zh": "AppliedAI与麦肯锡合作，利用AI快速重构受监管企业流程"
+    "display_title_zh": "AppliedAI 与麦肯锡公司合作，利用 AI 快速重构受监管的企业流程"
+  },
+  {
+    "event_type": "product_release",
+    "event_status": "announced",
+    "event_time": "",
+    "disclosed_at": "2026-07-02T02:28:35.278Z",
+    "entities": [
+      "EN-6cf5e6317a236541",
+      "EN-c70eca6b0f88f44d",
+      "EN-d7f998cb97f37349",
+      "EN-46045341ebce3cd6",
+      "EN-729324072d368379"
+    ],
+    "action": "product_release",
+    "object": "Smartsheet MCP Connector for Claude",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-7c1f8792fffc831d"
+    ],
+    "source_refs": [
+      "SA-d2da11edaa0e8d43"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "event_time"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-d2da11edaa0e8d43",
+        "disclosed_at": "2026-07-02T02:28:35.278Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-0df617a9a5ac727e",
+    "display_title_zh": "Smartsheet Claude平台（API）案例研究"
   },
   {
     "event_type": "funding",
@@ -301,6 +441,37 @@
     "display_title_zh": "Cloudflare 推出全新AI流量管理选项：区分搜索、智能体与训练爬虫，保护广告页面"
   },
   {
+    "event_type": "policy_regulation",
+    "event_status": "planned",
+    "event_time": "2026-07-01T09:46:28.008Z",
+    "disclosed_at": "2026-07-01T09:46:28.008Z",
+    "entities": [
+      "EN-11c47c7a5668d5af"
+    ],
+    "action": "policy_regulation",
+    "object": "AI-authored code contributions",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-dbf9380eb898c2fe"
+    ],
+    "source_refs": [
+      "SA-36e9d68361929e6f"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-36e9d68361929e6f",
+        "disclosed_at": "2026-07-01T09:46:28.008Z",
+        "status": "planned"
+      }
+    ],
+    "publication_status": "partial",
+    "event_id": "EV-5cdcd1fc66f8288b",
+    "display_title_zh": "Godot 将不再接受由 AI 编写的代码贡献"
+  },
+  {
     "event_type": "product_release",
     "event_status": "completed",
     "event_time": "2026-07-01T23:36:36.664Z",
@@ -409,7 +580,7 @@
     ],
     "publication_status": "verified",
     "event_id": "EV-80e54c9a390da293",
-    "display_title_zh": "宣布8亿美元C轮融资，加速开源AI转型"
+    "display_title_zh": "宣布完成 8 亿美元 C 轮融资，加速向开源 AI 的转变"
   },
   {
     "event_type": "model_release",
@@ -593,7 +764,7 @@
     ],
     "publication_status": "partial",
     "event_id": "EV-4db890779221bd9a",
-    "display_title_zh": "休斯顿卫理公会医院将在全企业部署Midstream Health的代理式AI财务行动平台"
+    "display_title_zh": "休斯顿卫理公会医院将在全企业部署Midstream Health的AI智能体财务行动平台"
   },
   {
     "event_type": "deployment",
@@ -603,7 +774,8 @@
     "entities": [
       "EN-bfc698cb0f9b4d72",
       "EN-9c8ae69b84f21a2e",
-      "EN-3a7bd3e2360a3d29"
+      "EN-3a7bd3e2360a3d29",
+      "EN-b81c8201acfc7639"
     ],
     "action": "上线",
     "object": "：无需外设，登陆iOS/安卓/鸿蒙",
@@ -671,7 +843,8 @@
     "event_time": "2026-07-01T23:54:04.000Z",
     "disclosed_at": "2026-07-01T23:54:04.000Z",
     "entities": [
-      "EN-193d220b421d776e"
+      "EN-193d220b421d776e",
+      "EN-b81c8201acfc7639"
     ],
     "action": "落地",
     "object": "5G-A×AI 大上行样板点：实测峰值速率 1Gbps，中心城区年底实现 20Mbps 上行连续覆盖",
@@ -736,5 +909,113 @@
     "publication_status": "verified",
     "event_id": "EV-a3b006906f6d46a0",
     "display_title_zh": "抖音电商上线\"肖像保护功能\"，防范\"AI 仿冒带货达人\"侵权行为"
+  },
+  {
+    "event_type": "deployment",
+    "event_status": "completed",
+    "event_time": "",
+    "disclosed_at": "2026-07-02T02:28:35.527Z",
+    "entities": [
+      "EN-5a08fbb37039e825",
+      "EN-c70eca6b0f88f44d"
+    ],
+    "action": "deployment",
+    "object": "Glean",
+    "metrics": [
+      "80%",
+      "7%"
+    ],
+    "locations": [],
+    "claim_refs": [
+      "CL-e29063d0f9307e88",
+      "CL-cea2356b8e4f02ed",
+      "CL-0ad08bb40463a037"
+    ],
+    "source_refs": [
+      "SA-aa94d00ed27312f5"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "event_time"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-aa94d00ed27312f5",
+        "disclosed_at": "2026-07-02T02:28:35.527Z",
+        "status": "completed"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-fe601e081c090971",
+    "display_title_zh": "Zillow 如何利用 AI 在 7,000 名员工中部署 Glean，每人每周节省 1.5 小时以上"
+  },
+  {
+    "event_type": "acquisition",
+    "event_status": "announced",
+    "event_time": "",
+    "disclosed_at": "2026-07-02T02:28:35.549Z",
+    "entities": [
+      "EN-2920a06bd844489e",
+      "EN-3ccbd9105a45d8fc",
+      "EN-96eebba49dbbf422"
+    ],
+    "action": "acquisition",
+    "object": "Fin",
+    "metrics": [
+      "$3.6 billion"
+    ],
+    "locations": [],
+    "claim_refs": [
+      "CL-a40b711c0561e75c"
+    ],
+    "source_refs": [
+      "SA-d209db8f16288cea"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "event_time"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-d209db8f16288cea",
+        "disclosed_at": "2026-07-02T02:28:35.549Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-4e7a32c9ee893918",
+    "display_title_zh": "Salesforce 将收购处理客户服务的 AI 公司"
+  },
+  {
+    "event_type": "product_release",
+    "event_status": "announced",
+    "event_time": "2026-07-02T00:04:23.000Z",
+    "disclosed_at": "2026-07-02T00:04:23.000Z",
+    "entities": [
+      "EN-3a7bd3e2360a3d29",
+      "EN-e13642b766c1f8d1"
+    ],
+    "action": "product_release",
+    "object": "Safari Technology Preview 247 with MCP server support",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-e0d5c7d729d4aed0"
+    ],
+    "source_refs": [
+      "SA-a61be38c655ac073"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-a61be38c655ac073",
+        "disclosed_at": "2026-07-02T00:04:23.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-64b1c2eb3de15e82",
+    "display_title_zh": "苹果 Safari 技术预览版 247 引入 MCP 服务，AI 智能体加速网页开发和调试"
   }
 ]

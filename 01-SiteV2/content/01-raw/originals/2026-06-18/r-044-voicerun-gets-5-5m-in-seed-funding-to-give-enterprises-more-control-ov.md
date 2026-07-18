@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"VoiceRun, a startup that’s helping en
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "VoiceRun 获 550 万美元种子轮融资，助力企业增强对语音 AI 智能体的控制"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # VoiceRun gets $5.5M in seed funding to give enterprises more control over voice AI agents - SiliconANGLE

@@ -1,0 +1,68 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-18T04:59:59.870Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 1250,
+    "quarantinedEventCount": 11
+  },
+  "entity": {
+    "id": "EN-4372bf1b51a83f74",
+    "name": "修不过来",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-01f196f98ece4eb2"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-05-23",
+    "lastSeen": "2026-05-23",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-01f196f98ece4eb2"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-01f196f98ece4eb2",
+        "dataDate": "2026-05-23",
+        "date": "2026-05-23",
+        "eventType": "security_incident",
+        "eventTypeLabel": "安全事件",
+        "eventGroup": "组织、政策与法律",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "修不过来：Anthropic 披露 AI 抓虫首月战报，揪出超 1 万个高危漏洞",
+        "displayTags": [],
+        "entityIds": [
+          "EN-4372bf1b51a83f74",
+          "EN-c70eca6b0f88f44d"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

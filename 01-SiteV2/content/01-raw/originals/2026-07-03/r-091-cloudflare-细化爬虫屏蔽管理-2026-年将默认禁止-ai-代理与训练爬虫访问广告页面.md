@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-091
 title: "Cloudflare 细化爬虫屏蔽管理，2026 年将默认禁止 AI 代理与训练爬虫访问广告页面"
 title_zh: "Cloudflare 细化爬虫屏蔽管理，2026 年将默认禁止 AI 代理与训练爬虫访问广告页面"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/971/510.htm"
 canonical_url: "https://ithome.com/0/971/510.htm"
 source_name: "IT之家（RSS）"
@@ -78,6 +78,7 @@ fact_extraction_completed_at: 2026-07-03T01:59:31.561Z
 theme: outside-core-exploration
 keyword_group: outside-core-exploration
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Cloudflare 细化爬虫屏蔽管理，2026 年将默认禁止 AI 代理与训练爬虫访问广告页面

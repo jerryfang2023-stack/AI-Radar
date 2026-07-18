@@ -72,7 +72,7 @@ key_excerpts: [{"type":"funding","text":"NEW YORK, June 24, 2026 /PRNewswire/ --
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only
-title_zh: "Runlayer 获3000万美元A轮融资，助力企业全面拥抱AI"
+title_zh: "Runlayer 获 3000 万美元 A 轮融资，助力企业全面拥抱 AI"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

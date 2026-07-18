@@ -72,7 +72,7 @@ key_excerpts: [{"type":"case_detail","text":"2026 marks the definitive transitio
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
-title_zh: "2026年企业AI代理采用统计 - Paul Okhrem"
+title_zh: "2026年企业AI智能体采用统计 - Paul Okhrem"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

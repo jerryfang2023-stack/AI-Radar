@@ -72,7 +72,7 @@ key_excerpts: [{"type":"workflow_change","text":"While some healthcare companies
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
-title_zh: "CCS为慢性护理患者部署企业级代理型AI"
+title_zh: "CCS 部署企业级 AI 智能体，服务慢性病患者"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

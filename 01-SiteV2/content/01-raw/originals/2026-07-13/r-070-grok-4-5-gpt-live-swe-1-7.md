@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-070
 title: "Grok 4.5 🤖, GPT-Live 🎙️, SWE-1.7 👨‍💻"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "Grok 4.5 🤖, GPT-Live 🎙️, SWE-1.7 👨‍💻"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://tldr.tech/ai/2026-07-09"
 canonical_url: "https://tldr.tech/ai/2026-07-09"
 source_name: "TLDR AI Newsletter"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-13T10:23:57.081Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Grok 4.5 🤖, GPT-Live 🎙️, SWE-1.7 👨‍💻

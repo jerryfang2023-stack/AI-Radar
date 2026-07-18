@@ -2,7 +2,7 @@
 id: SIG-20260520-02
 type: signal_card
 signal_type: funding
-title: "Lio 获3000万美元A轮融资，将代理式AI引入企业采购"
+title: "Lio 获 3000 万美元 A 轮融资，将智能体 AI 引入企业采购"
 date: 2026-05-20
 status: draft
 asset_level: candidate
@@ -43,7 +43,7 @@ signal_owner: "Lio"
 watch_reason: "继续看 Lio 是否披露客户案例、采购系统集成和端到端处理结果。"
 
 frontend:
-  displayTitle: "Lio 获3000万美元A轮融资，将代理式AI引入企业采购"
+  displayTitle: "Lio 获 3000 万美元 A 轮融资，将智能体 AI 引入企业采购"
   eventLine: "Lio 宣布 3000 万美元 A 轮融资，方向是用虚拟劳动力处理企业采购流程。"
   whyWatch: "采购是流程重、审批多、系统分散的企业场景，适合观察智能体是否进入实际运营环节。"
   businessMeaning: "如果这类产品能跑通，影响的是采购岗位、审批流程、预算责任和供应商协作方式。"
@@ -76,7 +76,7 @@ opportunity_signals:
   missing_fields: ["product_form", "delivery_model"]
 ---
 
-# Lio 获3000万美元A轮融资，将代理式AI引入企业采购
+# Lio 获 3000 万美元 A 轮融资，将智能体 AI 引入企业采购
 
 ## 信号底稿
 

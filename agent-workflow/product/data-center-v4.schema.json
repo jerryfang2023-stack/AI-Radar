@@ -42,7 +42,7 @@
       "properties": {
         "product_version": { "const": "SITE-V4.0-data-center" },
         "raw_version": { "const": "RAW-V3.0" },
-        "event_version": { "const": "EVENT-V1.0" },
+        "event_version": { "const": "EVENT-V1.1" },
         "fde_version": { "const": "FDE-V2.0" },
         "hardware_version": { "const": "HARDWARE-V1.0" },
         "tag_version": { "const": "TAG-V4.0" },
@@ -151,7 +151,7 @@
       "required": ["event_id", "event_type", "event_status", "event_time", "disclosed_at", "entities", "action", "object", "metrics", "locations", "claim_refs", "source_refs", "conflicts", "missing_fields", "update_history", "publication_status"],
       "properties": {
         "event_id": { "type": "string" },
-        "event_type": { "enum": ["model_release", "product_release", "service_change", "pricing_change", "funding", "acquisition", "partnership", "procurement_contract", "deployment", "organization_people", "policy_regulation", "lawsuit_settlement", "research_result", "hardware_product", "hardware_capacity", "hardware_supply", "hardware_deployment"] },
+        "event_type": { "enum": ["model_release", "product_release", "service_change", "pricing_change", "funding", "acquisition", "ipo_listing", "capital_investment", "financial_performance", "partnership", "procurement_contract", "market_expansion", "deployment", "organization_people", "organization_restructuring", "policy_regulation", "lawsuit_settlement", "certification_compliance", "standard_specification", "security_incident", "research_result", "hardware_product", "hardware_capacity", "hardware_supply", "hardware_deployment"] },
         "event_status": { "enum": ["announced", "planned", "in_progress", "completed", "rumored", "disputed", "withdrawn"] },
         "event_time": { "type": "string" },
         "disclosed_at": { "type": "string" },

@@ -63,6 +63,28 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-f2a717c1a58ae2ce",
+    "raw_id": "RAW-c4d95ce3f7cb0bed",
+    "claim_type": "funding",
+    "subject": "Lio Technologies",
+    "predicate": "funding",
+    "object": "$30 million Series A funding round",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-a8663737947d9c02"
+    },
+    "source_span": {
+      "raw_id": "RAW-c4d95ce3f7cb0bed",
+      "start": 147,
+      "end": 230
+    },
+    "source_quote": "Lio Technologies Raises $30M Series A to Bring Agentic AI to Enterprise Procurement",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-5fb37ff3bd215780",
     "raw_id": "RAW-7d4d764ee3f4e2ce",
     "claim_type": "partnership",
@@ -480,6 +502,72 @@
     "source_quote": "Nexus, a Y Combinator-backed company founded in 2024 by former McKinsey consultant Assem Chammah and AI engineer Shady Al Shoha, to help businesses move from AI experimentation to deployment. The platform enables non-technical teams to deploy agents, embedded with governance and compliance, that execute complete workflows end-to-end across CRM, ERP, Slack, Teams, and other core enterprise systems.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-af06fba61521a9e0",
+    "raw_id": "RAW-d5dcab9fe4426cd8",
+    "claim_type": "funding",
+    "subject": "Parloa",
+    "predicate": "funding",
+    "object": "$350 million Series D round",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-be86ee5e86eef8e5"
+    },
+    "source_span": {
+      "raw_id": "RAW-d5dcab9fe4426cd8",
+      "start": 19,
+      "end": 212
+    },
+    "source_quote": "German startup Parloa has raised $350 million in a late-stage round that tripled the valuation of the artificial intelligence-driven customer service platform to $3 billion in less than a year.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-f75872f965daa54f",
+    "raw_id": "RAW-c645bb125cf28da8",
+    "claim_type": "partnership",
+    "subject": "Goldman Sachs",
+    "predicate": "partnership",
+    "object": "Anthropic",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-b30bc5a04f330127"
+    },
+    "source_span": {
+      "raw_id": "RAW-c645bb125cf28da8",
+      "start": 127,
+      "end": 295
+    },
+    "source_quote": "Goldman Sachs (GS.N), opens new tab is working with technology startup Anthropic to develop AI-powered agents aimed at automating a widening range of internal functions",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b3a53c9f18369508",
+    "raw_id": "RAW-ffe797ffecf955f0",
+    "claim_type": "funding",
+    "subject": "Anthropic",
+    "predicate": "funding",
+    "object": "more than $20 billion funding round",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1,
+      "model_candidate_id": "MAC-e5f5f015c83ac892"
+    },
+    "source_span": {
+      "raw_id": "RAW-ffe797ffecf955f0",
+      "start": 130,
+      "end": 281
+    },
+    "source_quote": "AI startup Anthropic is ironing out the final details on a funding round likely to raise more than $20 billion and slated to close as soon as next week",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {

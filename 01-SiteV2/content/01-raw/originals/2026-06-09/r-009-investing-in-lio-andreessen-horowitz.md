@@ -72,7 +72,7 @@ key_excerpts: [{"type":"funding","text":"Enterprise procurement remains one of t
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only
-title_zh: "投资Lio | Andreessen Horowitz"
+title_zh: "投资Lio"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

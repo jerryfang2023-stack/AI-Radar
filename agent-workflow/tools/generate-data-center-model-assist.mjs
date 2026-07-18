@@ -4,6 +4,7 @@ import path from "node:path";
 import { deepSeekJsonCompletion, deepSeekModels, sourceTextHash } from "./deepseek-translation-client.mjs";
 import {
   MODEL_ASSIST_PROMPT_VERSION,
+  MODEL_EVENT_TYPES,
   candidateStore,
   readJson,
   stableModelAssistId,
@@ -23,7 +24,9 @@ const concurrency = Math.max(1, Number(args.get("concurrency") || 2));
 const limit = Math.max(0, Number(args.get("limit") || 0));
 const offset = Math.max(0, Number(args.get("offset") || 0));
 const reuseExisting = args.get("reuse-existing") === "true";
+const regenerateStatuses = new Set(String(args.get("regenerate-statuses") || "").split(",").filter(Boolean));
 const requestedTasks = new Set(String(args.get("tasks") || "claim_extraction,fde_enrichment,hardware_enrichment,entity_resolution,qa_repair").split(",").filter(Boolean));
+const requestedAssets = new Set(String(args.get("assets") || "").split(",").filter(Boolean));
 
 function availableDates() {
   return fs.readdirSync(bundleRoot).filter((name) => /^\d{4}-\d{2}-\d{2}$/u.test(name)).sort();
@@ -48,6 +51,10 @@ function rawForEvent(event, rawByArtifact) {
 
 function jobKey(job) {
   return [job.date, job.taskType, job.assetId, job.raw?.raw_id || ""].join("|");
+}
+
+function candidateJobKey(date, candidate) {
+  return [date, candidate.task_type, candidate.asset_id, candidate.raw_id || ""].join("|");
 }
 
 function buildJobs(date) {
@@ -98,10 +105,16 @@ function buildJobs(date) {
   if (requestedTasks.has("entity_resolution")) {
     const mentionByEntity = new Map();
     for (const mention of mentions) if (!mentionByEntity.has(mention.entity_id)) mentionByEntity.set(mention.entity_id, mention);
+    const verifiedEntities = entities.filter((item) => item.verification_status === "verified");
     for (const entity of entities.filter((item) => item.verification_status === "candidate")) {
       const mention = mentionByEntity.get(entity.entity_id);
       const raw = rawById.get(mention?.raw_id);
-      if (raw) jobs.push({ date, taskType: "entity_resolution", assetId: entity.entity_id, raw, sourceRef: raw.source_artifact_id, context: { entity, mention } });
+      const lookupText = `${entity.canonical_name || ""}\n${raw?.title_original || ""}\n${String(raw?.body_clean || "").slice(0, 4000)}`.toLocaleLowerCase();
+      const alternatives = verifiedEntities
+        .filter((item) => item.entity_id !== entity.entity_id && item.entity_type === entity.entity_type)
+        .filter((item) => [item.canonical_name, ...(item.aliases || [])].some((name) => name && lookupText.includes(String(name).toLocaleLowerCase())))
+        .map((item) => ({ entity_id: item.entity_id, canonical_name: item.canonical_name, aliases: item.aliases || [] }));
+      if (raw) jobs.push({ date, taskType: "entity_resolution", assetId: entity.entity_id, raw, sourceRef: raw.source_artifact_id, context: { entity, mention, alternatives } });
     }
   }
   return [...new Map(jobs.map((job) => [jobKey(job), job])).values()];
@@ -115,7 +128,7 @@ function taskPrompt(job, excerpt) {
   ];
   if (job.taskType === "claim_extraction") return [
     ...common,
-    "Return {\"claims\":[{\"event_type\":string,\"subject\":string,\"object\":string,\"quote\":string}]}. Return at most 3 claims. Use only a concrete completed/planned commercial, policy, research, people, or hardware event; otherwise return an empty claims array.",
+    `Return {\"claims\":[{\"event_type\":string,\"subject\":string,\"object\":string,\"quote\":string}]}. Return at most 3 claims. event_type must be exactly one of: ${[...MODEL_EVENT_TYPES].join(", ")}. Use only a concrete completed or explicitly planned event; otherwise return an empty claims array.`,
     `QA_REASON: ${job.context.qa_reason}`,
     `TITLE: ${job.raw.title_original}`,
     `SOURCE_TEXT:\n${excerpt}`,
@@ -129,14 +142,15 @@ function taskPrompt(job, excerpt) {
   ].join("\n\n");
   if (job.taskType === "entity_resolution") return [
     ...common,
-    "Return {\"decision\":\"same_entity\"|\"distinct_entity\"|\"publisher_of\"|\"component_supplier\"|\"unknown\",\"canonical_name\":string,\"rationale\":string,\"quote\":string}. This is advisory and will require review.",
+    "Return {\"decision\":\"same_entity\"|\"distinct_entity\"|\"unknown\",\"canonical_name\":string,\"rationale\":string,\"quote\":string}. Choose same_entity only when canonical_name exactly matches one VERIFIED_ALTERNATIVE and the quote proves the candidate mention refers to it. Relationships such as publisher_of or component_supplier are not entity identity and must return distinct_entity. This is advisory and will require review.",
     `ENTITY_CANDIDATE: ${JSON.stringify(job.context.entity)}`,
+    `VERIFIED_ALTERNATIVES: ${JSON.stringify(job.context.alternatives)}`,
     `TITLE: ${job.raw.title_original}`,
     `SOURCE_TEXT:\n${excerpt}`,
   ].join("\n\n");
   return [
     ...common,
-    "Return {\"action\":\"keep_qa\"|\"recollect_original\"|\"repair_title\"|\"extract_claim\",\"reason\":string,\"quote\":string}. This is advisory and cannot close QA.",
+    `Return {\"action\":\"keep_qa\"|\"recollect_original\"|\"repair_title\"|\"extract_claim\",\"reason\":string,\"quote\":string,\"claims\":[{\"event_type\":string,\"subject\":string,\"object\":string,\"quote\":string}]}. If the supplied source itself contains a concrete AI event, choose extract_claim and return 1-3 claims; event_type must be exactly one of: ${[...MODEL_EVENT_TYPES].join(", ")}. Choose recollect_original only when this source cannot support the fact. For other actions return an empty claims array. This is advisory and cannot close QA without review.`,
     `QA_REASON: ${job.context.qa_reason}`,
     `TITLE: ${job.raw.title_original}`,
     `SOURCE_TEXT:\n${excerpt}`,
@@ -148,13 +162,17 @@ function outputProblems(taskType, payload) {
   if (taskType === "claim_extraction") return Array.isArray(payload.claims) ? [] : ["claims_must_be_array"];
   if (["fde_enrichment", "hardware_enrichment"].includes(taskType)) return Array.isArray(payload.fields) ? [] : ["fields_must_be_array"];
   if (taskType === "entity_resolution") return payload.decision && payload.quote ? [] : ["entity_decision_incomplete"];
-  return payload.action && payload.quote ? [] : ["qa_suggestion_incomplete"];
+  if (!payload.action || !payload.quote) return ["qa_suggestion_incomplete"];
+  if (payload.action === "extract_claim" && (!Array.isArray(payload.claims) || !payload.claims.length)) return ["qa_extract_claim_missing_claims"];
+  if (payload.claims !== undefined && !Array.isArray(payload.claims)) return ["qa_claims_must_be_array"];
+  return [];
 }
 
 function normalizePayload(job, payload, body) {
   const rows = job.taskType === "claim_extraction" ? payload.claims
     : ["fde_enrichment", "hardware_enrichment"].includes(job.taskType) ? payload.fields
-      : [payload];
+      : job.taskType === "qa_repair" ? [payload, ...(payload.claims || [])]
+        : [payload];
   const evidence = [];
   const evidenceIndex = new Map();
   for (const row of rows || []) {
@@ -172,6 +190,13 @@ function normalizePayload(job, payload, body) {
   }
   if (["fde_enrichment", "hardware_enrichment"].includes(job.taskType)) {
     return { proposal: { fields: (payload.fields || []).filter((row) => evidenceIndex.has(String(row.quote || "").trim())).map(({ quote, ...row }) => ({ ...row, evidence_index: evidenceIndex.get(String(quote).trim()) })) }, evidence };
+  }
+  if (job.taskType === "qa_repair") {
+    const { quote, claims = [], ...proposal } = payload;
+    proposal.claims = claims
+      .filter((row) => evidenceIndex.has(String(row.quote || "").trim()))
+      .map(({ quote: claimQuote, ...row }) => ({ ...row, evidence_index: evidenceIndex.get(String(claimQuote).trim()) }));
+    return { proposal, evidence };
   }
   const { quote, ...proposal } = payload;
   if (job.taskType === "entity_resolution") proposal.candidate_name = job.context.entity.canonical_name;
@@ -226,18 +251,19 @@ async function main() {
   const dates = selectedDates();
   const rawDocumentsScanned = dates.reduce((sum, item) => sum + bundle(item, "raw-documents").length, 0);
   let jobs = dates.flatMap(buildJobs).sort((a, b) => jobKey(a).localeCompare(jobKey(b)));
+  if (requestedAssets.size) jobs = jobs.filter((job) => requestedAssets.has(job.assetId));
   const scannedJobs = jobs.length;
   const regatedByDate = new Map();
   if (reuseExisting) {
     const existingCandidates = new Map(dates.flatMap((date) => {
       const store = readJson(path.join(outputRoot, `${date}.json`), candidateStore(date));
-      return (store.candidates || []).map((candidate) => [candidate.candidate_id, candidate]);
+      return (store.candidates || []).map((candidate) => [candidateJobKey(date, candidate), candidate]);
     }));
     jobs = jobs.filter((job) => {
       const body = String(job.raw.body_clean || "");
-      const candidateId = stableModelAssistId(job.date, job.taskType, job.assetId, sourceTextHash(body), MODEL_ASSIST_PROMPT_VERSION);
-      const existing = existingCandidates.get(candidateId);
+      const existing = existingCandidates.get(jobKey(job));
       if (!existing) return true;
+      if (regenerateStatuses.has(existing.status)) return true;
       const regated = withGateResult(existing, body);
       if (JSON.stringify(regated) !== JSON.stringify(existing)) {
         if (!regatedByDate.has(job.date)) regatedByDate.set(job.date, []);
@@ -274,10 +300,11 @@ async function main() {
     const previous = readJson(file, candidateStore(date));
     const generated = [...(regatedByDate.get(date) || []), ...(byDate.get(date) || [])];
     if (reuseExisting && !generated.length && fs.existsSync(file)) continue;
-    const merged = new Map((previous.candidates || []).map((candidate) => [candidate.candidate_id, candidate]));
+    const merged = new Map((previous.candidates || []).map((candidate) => [candidateJobKey(date, candidate), candidate]));
     for (const candidate of generated) {
-      const existing = merged.get(candidate.candidate_id);
-      merged.set(candidate.candidate_id, existing?.review ? existing : candidate);
+      const key = candidateJobKey(date, candidate);
+      const existing = merged.get(key);
+      merged.set(key, existing?.review && !regenerateStatuses.has(existing.status) ? existing : candidate);
     }
     writeJson(file, candidateStore(date, [...merged.values()].sort((a, b) => a.candidate_id.localeCompare(b.candidate_id)), { sourceCount: bundle(date, "raw-documents").length }));
   }

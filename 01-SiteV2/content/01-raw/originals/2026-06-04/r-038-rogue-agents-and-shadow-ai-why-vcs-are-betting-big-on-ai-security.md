@@ -74,8 +74,8 @@ keyword_group: technical-iteration-signal
 copyright_note: local research archive only
 title_zh: "恶意智能体与影子AI：风投为何重注AI安全领域"
 title_translation_status: "translated"
-title_translation_method: "deepseek_title_translation"
-title_translation_model: "deepseek-v4-flash"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Rogue agents and shadow AI: Why VCs are betting big on AI security

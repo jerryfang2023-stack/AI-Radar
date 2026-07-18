@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-004
 title: "Mistral AI：法国AI公司走Palantir路线，估值约231.5亿美元"
 title_zh: "Mistral AI：法国AI公司走Palantir路线，估值约231.5亿美元"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://techcrunch.com/2026/07/04/what-is-mistral-ai-everything-to-know-about-the-openai-competitor"
 canonical_url: "https://techcrunch.com/2026/07/04/what-is-mistral-ai-everything-to-know-about-the-openai-competitor"
 source_name: "TechCrunch：AI（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-05T04:56:15.114Z
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Mistral AI：法国AI公司走Palantir路线，估值约231.5亿美元

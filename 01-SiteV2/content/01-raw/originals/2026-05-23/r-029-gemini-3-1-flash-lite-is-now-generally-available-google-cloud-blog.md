@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Gemini 3.1 Flash-Lite is now generally 
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "Gemini 3.1 Flash-Lite 现已全面上市"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Gemini 3.1 Flash-Lite is now generally available | Google Cloud Blog

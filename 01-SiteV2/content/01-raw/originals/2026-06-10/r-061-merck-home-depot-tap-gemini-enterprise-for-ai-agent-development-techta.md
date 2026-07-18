@@ -72,7 +72,7 @@ key_excerpts: [{"type":"funding","text":"LAS VEGAS -- Google touted dozens of bi
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
-title_zh: "Merck、家得宝采用Gemini Enterprise开发AI代理 | TechTarget"
+title_zh: "默克、家得宝采用Gemini Enterprise开发AI智能体"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

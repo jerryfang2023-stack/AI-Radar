@@ -1,0 +1,68 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-18T04:59:59.870Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 1250,
+    "quarantinedEventCount": 11
+  },
+  "entity": {
+    "id": "EN-87e5ad485acb89c1",
+    "name": "Ode",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-fbb105be35c21eb4"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-15",
+    "lastSeen": "2026-07-16",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-fbb105be35c21eb4"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-fbb105be35c21eb4",
+        "dataDate": "2026-07-16",
+        "date": "2026-07-15",
+        "eventType": "acquisition",
+        "eventTypeLabel": "并购",
+        "eventGroup": "融资与并购",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "Ode with Anthropic 获多家巨头投资，押注 AI 服务将成为企业级未来",
+        "displayTags": [],
+        "entityIds": [
+          "EN-87e5ad485acb89c1",
+          "EN-c70eca6b0f88f44d"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

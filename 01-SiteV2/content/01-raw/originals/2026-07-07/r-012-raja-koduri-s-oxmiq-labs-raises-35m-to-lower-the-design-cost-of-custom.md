@@ -2,7 +2,7 @@
 schema_version: raw-evidence-v2
 raw_id: R-012
 title: "Raja Koduri's Oxmiq Labs raises $35M to lower the design cost of custom AI silicon - SiliconANGLE"
-title_zh: "Raja Koduri的Oxmiq Labs融资3500万美元，旨在降低定制AI芯片的设计成本 - SiliconANGLE"
+title_zh: "Raja Koduri 的 Oxmiq Labs 融资 3500 万美元，以降低定制 AI 芯片的设计成本"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 original_url: "https://siliconangle.com/2026/07/01/raja-koduris-oxmiq-labs-raises-35m-lower-design-cost-custom-ai-silicon/"

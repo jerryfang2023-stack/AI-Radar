@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T01:57:40.269Z",
-    "latestDataDate": "2026-07-17",
-    "currentDate": "2026-07-17",
-    "eventCount": 832,
-    "quarantinedEventCount": 60
+    "generatedAt": "2026-07-18T04:59:59.870Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 1250,
+    "quarantinedEventCount": 11
   },
   "entity": {
     "id": "EN-78624f0a98e78301",
@@ -26,6 +26,7 @@
     "viewpointIds": [],
     "classificationRefs": [
       "TX-technology-long_context",
+      "TX-technology-mixture_of_experts",
       "TX-technology-multimodal"
     ],
     "relatedEntityIds": [
@@ -70,12 +71,19 @@
             "dimensionName": "技术",
             "id": "long_context",
             "name": "长上下文"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "mixture_of_experts",
+            "name": "混合专家模型"
           }
         ],
         "entityIds": [
           "EN-7d3194f79e645c42",
           "EN-8f71c4871a160172",
-          "EN-78624f0a98e78301"
+          "EN-78624f0a98e78301",
+          "EN-4b078b39d2fcacc7"
         ]
       }
     ],
@@ -87,16 +95,21 @@
       "name": "Thinking Machines Lab",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "Inkling"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
         "EV-0a5d792223f5381f",
+        "EV-869c9ea96c58873d",
+        "EV-ad40755ca624afe7",
         "EV-d5f276ad6b2ac9de",
         "EV-181b425d2a600cad",
         "EV-70e3f88cb06a856c",
+        "EV-cf5b2a0aff3914bd",
         "EV-54ecd52c69b97834",
         "EV-34b0f4cfd513fbde",
         "EV-38e1fc190aeb0f75",
@@ -108,14 +121,16 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-technology-code_generation",
+        "TX-use_case-robotics_automation",
         "TX-technology-long_context",
-        "TX-technology-multimodal",
-        "TX-technology-fine_tuning"
+        "TX-technology-mixture_of_experts",
+        "TX-technology-fine_tuning",
+        "TX-technology-multimodal"
       ],
       "relatedEntityIds": [
         "EN-78624f0a98e78301"
       ],
-      "firstSeen": "2026-06-20",
+      "firstSeen": "2026-06-15",
       "lastSeen": "2026-07-17"
     }
   ],
@@ -133,10 +148,15 @@
         "CL-44ccf38da6481517",
         "CL-e268ae48397a838b",
         "CL-8fd488648b366c64",
-        "CL-17be40e8a031b1eb"
+        "CL-17be40e8a031b1eb",
+        "CL-f403ccd6996e5201",
+        "CL-bb31860f1468f141",
+        "CL-17fc538f54df0cbb"
       ],
       "source_refs": [
-        "SA-3dd83eb46f3e5def"
+        "SA-3dd83eb46f3e5def",
+        "SA-feb8f2b64aa7f56f",
+        "SA-cb9f35aa903e184f"
       ],
       "data_date": "2026-07-17",
       "status": "verified"
@@ -169,20 +189,20 @@
         "EN-3a7bd3e2360a3d29",
         "EN-50537dab76505dfc",
         "EN-b5251b35f15bedc4",
+        "EN-6f7ac1823da81d2e",
         "EN-607964040e4b62e0",
-        "EN-23dcd1053b8a922f",
-        "EN-7d3194f79e645c42",
-        "EN-e4f9c522e1c89280",
-        "EN-76ac3e702b5ccaff",
+        "EN-6749675d80a1faa7",
+        "EN-bbdefa2950f49882",
         "EN-f3cfedbe8428c9f7",
         "EN-c04bd5ebd10ab696",
         "EN-50ba7ff15827787b",
+        "EN-7d3194f79e645c42",
         "EN-8f71c4871a160172",
         "EN-78624f0a98e78301",
+        "EN-4b078b39d2fcacc7",
         "EN-7dd7122ad9bf240f",
         "EN-95b0632f1b292fa7",
         "EN-047364b9be67f665",
-        "EN-6f7ac1823da81d2e",
         "EN-1d79127e9d90e89b",
         "EN-bc77259c5d2eb341",
         "EN-52fc33ae4d101a5d",
@@ -196,6 +216,51 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-06-12",
+      "lastSeen": "2026-07-18"
+    },
+    {
+      "id": "TX-technology-mixture_of_experts",
+      "name": "混合专家模型",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "mixture_of_experts",
+      "eventIds": [
+        "EV-80e54c9a390da293",
+        "EV-70e3f88cb06a856c",
+        "EV-53f881da31630a04",
+        "EV-3ef3e18df61a00d8",
+        "EV-568d2aeab5234e48",
+        "EV-97a8d86baa7fffc4",
+        "EV-964971e83a649d4d",
+        "EV-57597c92f7b183a9"
+      ],
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-c70eca6b0f88f44d",
+        "EN-7d3194f79e645c42",
+        "EN-8f71c4871a160172",
+        "EN-78624f0a98e78301",
+        "EN-4b078b39d2fcacc7",
+        "EN-96eebba49dbbf422",
+        "EN-9e193e1ec8d75d41",
+        "EN-51fd7dc086fcb858",
+        "EN-bbf9aece05291ea4",
+        "EN-bbdefa2950f49882",
+        "EN-2b6e51bec93e86c1",
+        "EN-b0532e1af75cc4ab",
+        "EN-d56aa2f9908f566a",
+        "EN-3db1f560db626918",
+        "EN-4d09c69c19f5f67b",
+        "EN-6e898ad0522fca30",
+        "EN-72e8088a05b38ae3",
+        "EN-833cd615d86b73ca",
+        "EN-ebe5ed2fc0df64de",
+        "EN-fbe26af59be95e52",
+        "EN-6f549489209ee753"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-06-06",
       "lastSeen": "2026-07-17"
     },
     {
@@ -205,14 +270,18 @@
       "typeLabel": "技术",
       "valueId": "multimodal",
       "eventIds": [
+        "EV-cafe435ddd007821",
         "EV-a9810b47e0408a05",
-        "EV-f169db2fb75a1371",
+        "EV-26d2874c6ce028d6",
         "EV-fd21441fb6e143c3",
+        "EV-0d5a32aca724d30e",
+        "EV-ba89f9414be0b041",
         "EV-6b51b1b6fe22c540",
         "EV-70e3f88cb06a856c",
         "EV-3353bd96728c99e2",
         "EV-f8ba1728de6a4899",
         "EV-9496f90f3e808992",
+        "EV-2ffbe4560e69992a",
         "EV-f7b60c0c63403f8c",
         "EV-e42e55d1e11a2ba2",
         "EV-53f881da31630a04",
@@ -222,6 +291,7 @@
         "EV-aae8b6aa0da7f103",
         "EV-20cdbe59ba2a1359",
         "EV-ae4561a4a9ebe17f",
+        "EV-a4f413441613beac",
         "EV-f68e00bb9fd49fac",
         "EV-fa1b1efd77f36d56",
         "EV-74b965de27bc0515",
@@ -229,26 +299,36 @@
         "EV-6b7917bd7edd4bde"
       ],
       "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-59ae856cd788d0f5",
+        "EN-0f3360879e746531",
+        "EN-80d387ccb3289295",
         "EN-193d220b421d776e",
+        "EN-b81c8201acfc7639",
         "EN-7df09a7717ef2feb",
         "EN-3a7bd3e2360a3d29",
         "EN-50537dab76505dfc",
         "EN-b5251b35f15bedc4",
+        "EN-6f7ac1823da81d2e",
+        "EN-c70eca6b0f88f44d",
+        "EN-607964040e4b62e0",
+        "EN-6749675d80a1faa7",
+        "EN-bbdefa2950f49882",
+        "EN-3c6d89173e6636d7",
         "EN-e3b1bf3dab957ffe",
-        "EN-8d4321d936320802",
-        "EN-0f3360879e746531",
         "EN-7d3194f79e645c42",
         "EN-8f71c4871a160172",
         "EN-78624f0a98e78301",
+        "EN-4b078b39d2fcacc7",
         "EN-522d3edeb64a7ca4",
         "EN-c608c4787821de1b",
         "EN-101a515191c6be9e",
-        "EN-6f7ac1823da81d2e",
         "EN-ea3bd73e2b506e00",
         "EN-e3863f813fe47240",
+        "EN-96eebba49dbbf422",
+        "EN-52fc33ae4d101a5d",
         "EN-de6b71bf77ff4299",
         "EN-c4ef31845ea79710",
-        "EN-96eebba49dbbf422",
         "EN-9e193e1ec8d75d41",
         "EN-51fd7dc086fcb858",
         "EN-2b6e51bec93e86c1",
@@ -256,7 +336,6 @@
         "EN-01f1074bb52ff605",
         "EN-7ed9c9e7c260ed06",
         "EN-4d09c69c19f5f67b",
-        "EN-bbdefa2950f49882",
         "EN-e0bab6f6c58bfe4e",
         "EN-afe83c198e329ef2",
         "EN-1730144d4e269a62",
@@ -266,6 +345,8 @@
         "EN-2b96ed840c07482a",
         "EN-9a6ee79873b1fb7b",
         "EN-3f726694f178ed7a",
+        "EN-047364b9be67f665",
+        "EN-d65d81c60c0c47c4",
         "EN-085598c00f2aaccf",
         "EN-a3c3b987b09fc1bb",
         "EN-d831f1170590ddb1",
@@ -274,9 +355,11 @@
         "EN-9c8ae69b84f21a2e"
       ],
       "fdeIds": [],
-      "hardwareIds": [],
+      "hardwareIds": [
+        "HW-ceb55d9bc637c1d3"
+      ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-07-18"
     }
   ],
   "fde": [],

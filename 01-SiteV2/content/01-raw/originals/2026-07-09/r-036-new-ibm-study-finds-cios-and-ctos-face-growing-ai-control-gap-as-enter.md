@@ -2,7 +2,7 @@
 schema_version: raw-evidence-v2
 raw_id: R-036
 title: "New IBM Study Finds CIOs and CTOs Face Growing AI Control Gap as Enterprise Deployment Scales – Company Announcement - FT.com"
-title_zh: "IBM新研究：CIO与CTO面临AI控制差距扩大，企业部署规模增长"
+title_zh: "新 IBM 研究发现，随着企业部署规模扩大，CIO 与 CTO 面临日益加剧的 AI 控制差距"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 original_url: "https://markets.ft.com/data/announce/detail?dockey=600-202606080001CANADANWCANADAPR_C4113-1"

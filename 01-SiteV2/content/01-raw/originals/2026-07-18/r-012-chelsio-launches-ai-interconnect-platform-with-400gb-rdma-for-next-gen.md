@@ -2,10 +2,10 @@
 schema_version: raw-evidence-v2
 raw_id: R-012
 title: "CHELSIO LAUNCHES AI INTERCONNECT PLATFORM WITH 400Gb RDMA FOR NEXT-GENERATION DATA CENTER, STORAGE, AND AI INFRASTRUCTURE"
-title_zh: "CHELSIO 推出支持 400Gb RDMA 的 AI 互连平台，面向下一代数据中心、存储及 AI 基础设施"
-title_translation_status: translated
-title_translation_method: deepseek_title_translation
-title_translation_model: deepseek-v4-flash
+title_zh: "Chelsio 推出面向下一代数据中心、存储及 AI 基础设施的 AI 互连平台，支持 400Gb RDMA"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 original_url: "https://www.prnewswire.com/news-releases/chelsio-launches-ai-interconnect-platform-with-400gb-rdma-for-next-generation-data-center-storage-and-ai-infrastructure-302827141.html"
 canonical_url: "https://prnewswire.com/news-releases/chelsio-launches-ai-interconnect-platform-with-400gb-rdma-for-next-generation-data-center-storage-and-ai-infrastructure-302827141.html"
 source_name: "keyword search / Anysearch"

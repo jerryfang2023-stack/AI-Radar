@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"LGND scales geospatial AI from zero to 
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "LGND 借助 Union.ai 将地理空间 AI 从零扩展至 160 块 GPU"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # LGND scales geospatial AI from zero to 160 GPUs with Union.ai | Union.ai

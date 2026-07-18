@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T01:57:40.269Z",
-    "latestDataDate": "2026-07-17",
-    "currentDate": "2026-07-17",
-    "eventCount": 832,
-    "quarantinedEventCount": 60
+    "generatedAt": "2026-07-18T04:59:59.870Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 1250,
+    "quarantinedEventCount": 11
   },
   "node": {
     "id": "TX-use_case-knowledge_search",
@@ -17,15 +17,19 @@
     "typeLabel": "应用场景",
     "valueId": "knowledge_search",
     "eventIds": [
+      "EV-b925f50b55d3aa00",
       "EV-702ed039940800fb",
-      "EV-297b647e3787f3d6",
+      "EV-26c1248692fdcc10",
       "EV-ae4561a4a9ebe17f"
     ],
     "entityIds": [
+      "EN-e5695af6f033f56e",
+      "EN-d1ad14d4ad57d207",
       "EN-3f726694f178ed7a",
       "EN-45e0ade11fed1e44",
       "EN-1e68d267df86aa4c",
       "EN-9d93b78264eb6acb",
+      "EN-b81c8201acfc7639",
       "EN-82eaaba81d9dcc54",
       "EN-b42e5eda1d1a3720",
       "EN-9a6ee79873b1fb7b"
@@ -33,9 +37,79 @@
     "fdeIds": [],
     "hardwareIds": [],
     "firstSeen": "2026-06-11",
-    "lastSeen": "2026-07-16"
+    "lastSeen": "2026-07-18"
   },
   "events": [
+    {
+      "id": "EV-b925f50b55d3aa00",
+      "dataDate": "2026-07-18",
+      "date": "2026-07-18",
+      "updatedDate": "2026-07-18",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "宝马推出 ChatGPT 插件，让 AI 帮你选车",
+      "originalTitle": "",
+      "subject": "宝马",
+      "action": "推出",
+      "object": "ChatGPT 插件，让 AI 帮你选车",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "knowledge_search",
+            "dimensionName": "应用场景",
+            "name": "知识与搜索"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "id": "knowledge_search",
+          "dimensionName": "应用场景",
+          "name": "知识与搜索"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "knowledge_search",
+          "dimensionName": "应用场景",
+          "name": "知识与搜索"
+        }
+      ],
+      "entityIds": [
+        "EN-e5695af6f033f56e",
+        "EN-d1ad14d4ad57d207"
+      ],
+      "entityNames": [
+        "宝马",
+        "ChatGPT"
+      ],
+      "productName": "ChatGPT",
+      "products": [
+        {
+          "name": "ChatGPT",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/978/353.htm",
+      "publisher": "IT之家（RSS）"
+    },
     {
       "id": "EV-702ed039940800fb",
       "dataDate": "2026-07-16",
@@ -120,7 +194,7 @@
       "publisher": "IT之家（RSS）"
     },
     {
-      "id": "EV-297b647e3787f3d6",
+      "id": "EV-26c1248692fdcc10",
       "dataDate": "2026-06-14",
       "date": "2026-06-13",
       "updatedDate": "2026-06-14",
@@ -190,10 +264,12 @@
         }
       ],
       "entityIds": [
+        "EN-b81c8201acfc7639",
         "EN-82eaaba81d9dcc54",
         "EN-b42e5eda1d1a3720"
       ],
       "entityNames": [
+        "Huawei",
         "华为",
         "DevEco Code"
       ],
@@ -202,7 +278,9 @@
         {
           "name": "DevEco Code",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Huawei"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/963/943.htm",
@@ -293,6 +371,59 @@
     }
   ],
   "entities": [
+    {
+      "id": "EN-e5695af6f033f56e",
+      "name": "宝马",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-b925f50b55d3aa00"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-knowledge_search"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-18",
+      "lastSeen": "2026-07-18"
+    },
+    {
+      "id": "EN-d1ad14d4ad57d207",
+      "name": "ChatGPT",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-b925f50b55d3aa00",
+        "EV-c237f5dc53f0a923",
+        "EV-20dea13a4e6100ea",
+        "EV-0dbc7b904378f713",
+        "EV-f023e94a239f22f2",
+        "EV-0b6992ae74184d13",
+        "EV-f3e11eadfb7c6a4b",
+        "EV-519537a36355d82e"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-code_generation",
+        "TX-use_case-knowledge_search"
+      ],
+      "relatedEntityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-2b78da3dc866654e"
+      ],
+      "firstSeen": "2026-06-02",
+      "lastSeen": "2026-07-18"
+    },
     {
       "id": "EN-3f726694f178ed7a",
       "name": "Kingsoft Office",
@@ -397,6 +528,58 @@
       "lastSeen": "2026-07-16"
     },
     {
+      "id": "EN-b81c8201acfc7639",
+      "name": "Huawei",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "华为"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-87432dbb99cd6033",
+        "EV-5be48cce8dc4f3de",
+        "EV-9563aa162529aab0",
+        "EV-b726a9cda7beae64",
+        "EV-a9810b47e0408a05",
+        "EV-afcd5426f5c01dc7",
+        "EV-26d2874c6ce028d6",
+        "EV-b93102125cc062e3",
+        "EV-6c361125c3f50bb6",
+        "EV-8a9b12665a3e40a0",
+        "EV-2d5746e41f96c3c2",
+        "EV-26c1248692fdcc10",
+        "EV-20cdbe59ba2a1359",
+        "EV-3c51bcb5e99d2b68",
+        "EV-2ce9542169b5dfda",
+        "EV-8e6f9c324aa0b2f3",
+        "EV-0597e07d7e73051a"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-code_generation",
+        "TX-industry-healthcare_life_sciences",
+        "TX-use_case-software_development",
+        "TX-technology-on_device",
+        "TX-technology-multimodal",
+        "TX-industry-media_entertainment",
+        "TX-technology-video_generation",
+        "TX-use_case-knowledge_search"
+      ],
+      "relatedEntityIds": [
+        "EN-40e307d789f77264",
+        "EN-b42e5eda1d1a3720",
+        "EN-e18cb6435603205d",
+        "EN-24381ecb01753c1b"
+      ],
+      "firstSeen": "2026-05-25",
+      "lastSeen": "2026-07-18"
+    },
+    {
       "id": "EN-82eaaba81d9dcc54",
       "name": "华为",
       "entityType": "organization_candidate",
@@ -407,7 +590,7 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-297b647e3787f3d6"
+        "EV-26c1248692fdcc10"
       ],
       "viewpointIds": [],
       "classificationRefs": [
@@ -429,14 +612,16 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-297b647e3787f3d6"
+        "EV-26c1248692fdcc10"
       ],
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-use_case-knowledge_search"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-b81c8201acfc7639"
+      ],
       "firstSeen": "2026-06-13",
       "lastSeen": "2026-06-14"
     },

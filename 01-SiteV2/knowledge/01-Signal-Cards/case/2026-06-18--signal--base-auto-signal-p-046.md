@@ -2,7 +2,7 @@
 id: SIG-20260618-A17
 type: signal_card
 signal_type: case
-title: "亚马逊Bedrock托管知识库发布，助力企业AI应用更快速、更精准 | AWS新闻博客"
+title: "Amazon Bedrock 托管知识库发布，助力企业 AI 应用更快速、更精准"
 date: 2026-06-18
 status: published
 source_title: "Introducing Amazon Bedrock Managed Knowledge Base for faster, more accurate enterprise AI applications | AWS News Blog"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Base"
 
 frontend:
-  displayTitle: "亚马逊Bedrock托管知识库发布，助力企业AI应用更快速、更精准 | AWS新闻博客"
+  displayTitle: "Amazon Bedrock 托管知识库发布，助力企业 AI 应用更快速、更精准"
   sourceLinks:
     - "https://aws.amazon.com/blogs/aws/introducing-amazon-bedrock-managed-knowledge-base-for-faster-more-accurate-enterprise-ai-applications/"
 ---
 
-# 亚马逊Bedrock托管知识库发布，助力企业AI应用更快速、更精准 | AWS新闻博客
+# Amazon Bedrock 托管知识库发布，助力企业 AI 应用更快速、更精准
 
 ## 新闻事实
 

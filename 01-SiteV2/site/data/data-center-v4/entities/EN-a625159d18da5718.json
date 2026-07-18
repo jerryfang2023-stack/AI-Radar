@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-18T04:59:59.870Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 1250,
+    "quarantinedEventCount": 11
+  },
+  "entity": {
+    "id": "EN-a625159d18da5718",
+    "name": "Claude Code",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-9ba3762f6115f7d9",
+      "EV-002074ab1a44e4bc"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-06-19",
+    "lastSeen": "2026-07-13",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-9ba3762f6115f7d9",
+        "EV-002074ab1a44e4bc"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-9ba3762f6115f7d9",
+        "dataDate": "2026-07-13",
+        "date": "2026-07-12",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Claude Code 现内置浏览器，可让 AI 智能体在外部网站上阅读、点击和输入",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-a625159d18da5718"
+        ]
+      },
+      {
+        "id": "EV-002074ab1a44e4bc",
+        "dataDate": "2026-06-19",
+        "date": "2026-06-19",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Claude Code 现已支持 artifacts",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-a625159d18da5718"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

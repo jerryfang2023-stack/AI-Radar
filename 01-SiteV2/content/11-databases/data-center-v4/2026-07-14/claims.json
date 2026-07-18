@@ -1,5 +1,49 @@
 [
   {
+    "claim_id": "CL-99c731c3db3db20e",
+    "raw_id": "RAW-f15dbf62b931cf0b",
+    "claim_type": "funding",
+    "subject": "Nous Research",
+    "predicate": "funding",
+    "object": "new round of funding led by Robot Ventures at a $1.5 billion valuation",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1,
+      "model_candidate_id": "MAC-a34c3fcc7f955f0e"
+    },
+    "source_span": {
+      "raw_id": "RAW-f15dbf62b931cf0b",
+      "start": 138,
+      "end": 359
+    },
+    "source_quote": "Nous Research, the startup behind the open-source Hermes agent, is finalizing a new round of funding led by Robot Ventures, with significant participation from USV and other prominent investors at a $1.5 billion valuation",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-8fdc85cb4501a8cc",
+    "raw_id": "RAW-58de5d53dc4d6ffa",
+    "claim_type": "research_result",
+    "subject": "Skyfall AI",
+    "predicate": "research_result",
+    "object": "MORPHEUS baseline evaluation",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 2,
+      "model_candidate_id": "MAC-f9aabebe6b895b51"
+    },
+    "source_span": {
+      "raw_id": "RAW-58de5d53dc4d6ffa",
+      "start": 4415,
+      "end": 4608
+    },
+    "source_quote": "Across these results, no single family dominates. On process-outbound Task 1, EWC leads reward and LCM adapts fastest. On Task 2, HER leads reward while LCM loses its edge under delayed reward.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-63d6bbacf0d3aec7",
     "raw_id": "RAW-822ff26369a4ec1f",
     "claim_type": "product_release",
@@ -588,6 +632,28 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-4e8f16cfc6957574",
+    "raw_id": "RAW-2dbea36c9a2f5542",
+    "claim_type": "funding",
+    "subject": "Supermicro",
+    "predicate": "funding",
+    "object": "$7.0 billion equity and equity-linked financing transactions",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 1,
+      "model_candidate_id": "MAC-e5b87084408262b2"
+    },
+    "source_span": {
+      "raw_id": "RAW-2dbea36c9a2f5542",
+      "start": 0,
+      "end": 111
+    },
+    "source_quote": "Supermicro Announces Proposed $7.0 Billion of Equity and Equity-linked Financing Transactions To Fund AI Orders",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-c3bc66051241fb96",
     "raw_id": "RAW-432626e9591b4fc3",
     "claim_type": "funding",
@@ -669,6 +735,72 @@
     "source_quote": "We raised 12.5m to build web search for agents. Read the blog post here",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-20803c6cff4ee46c",
+    "raw_id": "RAW-503a45cacd577d4c",
+    "claim_type": "pricing_change",
+    "subject": "Anthropic",
+    "predicate": "pricing_change",
+    "object": "Claude Pro at ₹2,000 (about $21) a month when billed annually in India",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-13df4fa3da92bdb6"
+    },
+    "source_span": {
+      "raw_id": "RAW-503a45cacd577d4c",
+      "start": 1122,
+      "end": 1243
+    },
+    "source_quote": "Anthropic is listing Claude Pro at ₹2,000 (about $21) a month when billed annually, compared with $17 a month in the U.S.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-7a163d772c4c7d8b",
+    "raw_id": "RAW-503a45cacd577d4c",
+    "claim_type": "pricing_change",
+    "subject": "Anthropic",
+    "predicate": "pricing_change",
+    "object": "Claude Max at ₹11,999 (around $125) a month in India",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-13df4fa3da92bdb6"
+    },
+    "source_span": {
+      "raw_id": "RAW-503a45cacd577d4c",
+      "start": 1244,
+      "end": 1328
+    },
+    "source_quote": "Claude Max starts at ₹11,999 (around $125) a month in India, versus $100 in the U.S.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-c7ca38714aeec34b",
+    "raw_id": "RAW-503a45cacd577d4c",
+    "claim_type": "pricing_change",
+    "subject": "Anthropic",
+    "predicate": "pricing_change",
+    "object": "Team plans at ₹2,399 (around $25) per seat a month in India",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3,
+      "model_candidate_id": "MAC-13df4fa3da92bdb6"
+    },
+    "source_span": {
+      "raw_id": "RAW-503a45cacd577d4c",
+      "start": 1336,
+      "end": 1423
+    },
+    "source_quote": "Team plans start at ₹2,399 (around $25) per seat a month, compared with $20 in the U.S.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -987,6 +1119,28 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-ed55d93ccdd4d28b",
+    "raw_id": "RAW-43dbe3abfb82d0a0",
+    "claim_type": "funding",
+    "subject": "Mowito",
+    "predicate": "funding",
+    "object": "$3M pre-seed round",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-befbf988c6e7d762"
+    },
+    "source_span": {
+      "raw_id": "RAW-43dbe3abfb82d0a0",
+      "start": 149,
+      "end": 407
+    },
+    "source_quote": "Mowito has raised a $3M pre-seed round, led by Version One Ventures, with participation from All In Capital, Unisol, and iSeed, alongside angels Soumith Chintala (Thinking Machines Labs), Adarsh Kulkarni (Foundry Robotics), and Ashish Kulkarni (Coformer AI).",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-0baf33de6ab7a14c",
     "raw_id": "RAW-fb6f38a9b9af4ae2",
     "claim_type": "funding",
@@ -1068,6 +1222,28 @@
     "source_quote": "Today, the company has a games team, a prosumer team building apps, a core research team, and a platform team. The startup’s founder, Dr. Robert Yang, a former faculty member at MIT, says that Fundamental Research Labs wants to be a “historical” company without adhering to a typical startup structure.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-91ee28dd80d42c95",
+    "raw_id": "RAW-14b9bc307c17009b",
+    "claim_type": "financial_performance",
+    "subject": "Worldwide AI spending",
+    "predicate": "financial_performance",
+    "object": "$2.52 trillion in 2026",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-9efcbd751b916eca"
+    },
+    "source_span": {
+      "raw_id": "RAW-14b9bc307c17009b",
+      "start": 473,
+      "end": 596
+    },
+    "source_quote": "Worldwide spending on AI is forecast to total $2.52 trillion in 2026, a 44% increase year-over-year, according to Gartner .",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -1155,6 +1331,94 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-d224088d71499542",
+    "raw_id": "RAW-eb48fbc0945558f0",
+    "claim_type": "product_release",
+    "subject": "Apple",
+    "predicate": "product_release",
+    "object": "iOS 27 public beta",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-c31046156e02ce77"
+    },
+    "source_span": {
+      "raw_id": "RAW-eb48fbc0945558f0",
+      "start": 163,
+      "end": 245
+    },
+    "source_quote": "iOS 27 escaped the developer world today with the launch of the first public beta.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-2dda757580f0b609",
+    "raw_id": "RAW-eb48fbc0945558f0",
+    "claim_type": "product_release",
+    "subject": "Apple",
+    "predicate": "product_release",
+    "object": "revamped Siri AI opt-in beta program",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-c31046156e02ce77"
+    },
+    "source_span": {
+      "raw_id": "RAW-eb48fbc0945558f0",
+      "start": 1017,
+      "end": 1118
+    },
+    "source_quote": "Apple finally, actually for real shipped the revamped Siri AI, in the form of an opt-in beta program.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-f9549944617d0a7f",
+    "raw_id": "RAW-50475620fdba8a97",
+    "claim_type": "product_release",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "prompting guide for everyday users covering both Chat and Codex in a single framework",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-ff94184c831517ff"
+    },
+    "source_span": {
+      "raw_id": "RAW-50475620fdba8a97",
+      "start": 176,
+      "end": 359
+    },
+    "source_quote": "OpenAI has released a prompting guide for everyday users, not developers. Instead of rigid formulas, it suggests four optional building blocks: goal, context, format, and constraints.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-2da6b00a3bdeaadc",
+    "raw_id": "RAW-50475620fdba8a97",
+    "claim_type": "product_release",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "ChatGPT Work, a standalone product built on Codex technology and the new GPT-5.6 model",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-ff94184c831517ff"
+    },
+    "source_span": {
+      "raw_id": "RAW-50475620fdba8a97",
+      "start": 2113,
+      "end": 2366
+    },
+    "source_quote": "The guide arrives shortly after OpenAI launched ChatGPT Work, a standalone product built on Codex technology and the new GPT-5.6 model that can spend hours on complex projects, operate across apps and files, and produce finished Excel or Word documents.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-2f5d15a602bfc26b",
     "raw_id": "RAW-e1c0de20d748a2c4",
     "claim_type": "funding",
@@ -1236,6 +1500,28 @@
     "source_quote": "Sarborg Limited Raises $10 Million Seed",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-143a96651d5183a4",
+    "raw_id": "RAW-4a5a680b80939d8a",
+    "claim_type": "product_release",
+    "subject": "AlphaEvolve",
+    "predicate": "product_release",
+    "object": "all Google Cloud customers on Gemini Enterprise Agent Platform",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-0d17b57a9ee3e92b"
+    },
+    "source_span": {
+      "raw_id": "RAW-4a5a680b80939d8a",
+      "start": 363,
+      "end": 516
+    },
+    "source_quote": "AlphaEvolve, our Gemini-powered AI code-optimization agent, is now generally available to all Google Cloud customers on Gemini Enterprise Agent Platform.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -1533,6 +1819,50 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-577a94ae707e61a8",
+    "raw_id": "RAW-3a1475f0cd31de79",
+    "claim_type": "organization_restructuring",
+    "subject": "Richard Sutton",
+    "predicate": "organization_restructuring",
+    "object": "Oak Lab",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-f1fffbc3cde5d4b9"
+    },
+    "source_span": {
+      "raw_id": "RAW-3a1475f0cd31de79",
+      "start": 180,
+      "end": 323
+    },
+    "source_quote": "Richard Sutton, 2024 Turing Award winner and co-founder of modern reinforcement learning, has launched a new startup called Oak Lab in Toronto.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-66c706376b4e8116",
+    "raw_id": "RAW-400d0560ed723ca2",
+    "claim_type": "product_release",
+    "subject": "Datasette Apps plugin",
+    "predicate": "product_release",
+    "object": "custom HTML+JavaScript apps",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-08e5cd9d2c3b16a8"
+    },
+    "source_span": {
+      "raw_id": "RAW-400d0560ed723ca2",
+      "start": 923,
+      "end": 1113
+    },
+    "source_quote": "The --with datasette-apps option installs the new Datasette Apps plugin, which supports creating custom HTML+JavaScript apps that can run SQL queries directly within the Datasette interface.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-c0c1ff286b9558ed",
     "raw_id": "RAW-97002fe7c9467045",
     "claim_type": "organization_people",
@@ -1614,6 +1944,28 @@
     "source_quote": "OpenAI 联合创始人、长期担任首席科学家的伊利亚 · 苏茨克维于 2024 年 5 月离职。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-21a37ee8b51030f0",
+    "raw_id": "RAW-648eb45d1e5e4b7b",
+    "claim_type": "product_release",
+    "subject": "阶跃终端",
+    "predicate": "product_release",
+    "object": "STEPX Neo 智能体手机",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-b2d137c0ec334b58"
+    },
+    "source_span": {
+      "raw_id": "RAW-648eb45d1e5e4b7b",
+      "start": 17,
+      "end": 49
+    },
+    "source_quote": "阶跃终端品牌旗下首款智能体手机 STEPX Neo 今晚正式亮相",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   }
 ]

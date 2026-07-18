@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-061
 title: "Anthropic is launching Claude Cowork on mobile and web"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "Anthropic 在移动端和网页端推出 Claude Cowork"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.theverge.com/ai-artificial-intelligence/961978/anthropic-claude-cowork-mobile-web"
 canonical_url: "https://theverge.com/ai-artificial-intelligence/961978/anthropic-claude-cowork-mobile-web"
 source_name: "The Verge AI"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-08T04:39:25.879Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Anthropic is launching Claude Cowork on mobile and web

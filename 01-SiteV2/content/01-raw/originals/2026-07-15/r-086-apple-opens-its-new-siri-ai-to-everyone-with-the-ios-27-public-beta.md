@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-086
 title: "Apple opens its new Siri AI to everyone with the iOS 27 public beta"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "苹果通过 iOS 27 公测版向所有人开放全新 Siri AI"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://techcrunch.com/2026/07/14/apple-opens-its-new-siri-ai-to-everyone-with-the-ios-27-public-beta/"
 canonical_url: "https://techcrunch.com/2026/07/14/apple-opens-its-new-siri-ai-to-everyone-with-the-ios-27-public-beta"
 source_name: "TechCrunch AI"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-15T04:28:38.073Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Apple opens its new Siri AI to everyone with the iOS 27 public beta

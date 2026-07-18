@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"Y Combinator already takes a 7% stake f
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only
+title_zh: "Sam Altman 向所有 Y Combinator 初创公司提出“重磅”提议"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Sam Altman makes 'mic drop' offer to every Y Combinator startup

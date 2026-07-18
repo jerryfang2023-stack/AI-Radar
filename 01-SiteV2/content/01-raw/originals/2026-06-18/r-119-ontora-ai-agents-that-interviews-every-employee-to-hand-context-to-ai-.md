@@ -72,7 +72,7 @@ key_excerpts: [{"type":"case_detail","text":"Ontora: AI agents that interviews e
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
-title_zh: "Ontora：通过访谈每位员工为AI工具提供上下文的AI代理 | Y Combinator"
+title_zh: "Ontora：通过访谈每位员工为AI工具提供上下文的AI智能体"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

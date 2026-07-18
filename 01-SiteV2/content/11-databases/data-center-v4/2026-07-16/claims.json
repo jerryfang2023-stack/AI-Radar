@@ -84,6 +84,28 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-caa6e6d0cdd09a4b",
+    "raw_id": "RAW-66914c447e1f8d38",
+    "claim_type": "acquisition",
+    "subject": "Ode with Anthropic",
+    "predicate": "acquisition",
+    "object": "Fractional AI",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 1,
+      "model_candidate_id": "MAC-48efd16dd11a0f68"
+    },
+    "source_span": {
+      "raw_id": "RAW-66914c447e1f8d38",
+      "start": 269,
+      "end": 386
+    },
+    "source_quote": "the applied AI services startup that Ode with Anthropic acquired earlier this year to serve as the new venture’s core",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-acfe2b27d62beca2",
     "raw_id": "RAW-40c384a12caec6e6",
     "claim_type": "product_release",
@@ -609,6 +631,50 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-91f4c4fdb3da5cd8",
+    "raw_id": "RAW-7f7827604ca68599",
+    "claim_type": "funding",
+    "subject": "Oak",
+    "predicate": "funding",
+    "object": "$60 million in seed funding",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-247c9543eb3b2e5f"
+    },
+    "source_span": {
+      "raw_id": "RAW-7f7827604ca68599",
+      "start": 740,
+      "end": 808
+    },
+    "source_quote": "backed by $60 million in seed funding that it raised late last year.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-6022ff847ce2eb0f",
+    "raw_id": "RAW-fd93bd30d52384fd",
+    "claim_type": "deployment",
+    "subject": "Samsung SDS",
+    "predicate": "deployment",
+    "object": "Renegade chips at data centers in Sangam, Seoul, and Dongtan, Hwaseong",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-891bf85b29a16f22"
+    },
+    "source_span": {
+      "raw_id": "RAW-fd93bd30d52384fd",
+      "start": 1212,
+      "end": 1313
+    },
+    "source_quote": "Samsung SDS has installed Renegade chips at its data centers in Sangam, Seoul, and Dongtan, Hwaseong.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-9e9dbb7ba6f1bca6",
     "raw_id": "RAW-8ef1dd94577d06b6",
     "claim_type": "funding",
@@ -690,6 +756,28 @@
     "source_quote": "InstaLILY, a developer of AI teammates that can automate complex, business-specific work, raises $60M",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-99f7f20542291987",
+    "raw_id": "RAW-31713ad8452d1546",
+    "claim_type": "hardware_deployment",
+    "subject": "Saitech",
+    "predicate": "hardware_deployment",
+    "object": "six Supermicro HGX B300 systems",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-5eb6ee967bcb438a"
+    },
+    "source_span": {
+      "raw_id": "RAW-31713ad8452d1546",
+      "start": 920,
+      "end": 1295
+    },
+    "source_quote": "Saitech recently partnered with a leading global financial technology company to configure and supply enterprise-grade AI infrastructure built on the latest NVIDIA Blackwell architecture. The deployment consisted of six high-performance Supermicro HGX B300 systems designed to support advanced AI development, machine learning, and high-performance computing (HPC) workloads.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -861,6 +949,28 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-75c3fd4c7d801039",
+    "raw_id": "RAW-a3a9ad5729e37244",
+    "claim_type": "partnership",
+    "subject": "Flex",
+    "predicate": "partnership",
+    "object": "Cerebras Systems Inc.",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-daeede7f82a5ab61"
+    },
+    "source_span": {
+      "raw_id": "RAW-a3a9ad5729e37244",
+      "start": 369,
+      "end": 610
+    },
+    "source_quote": "Flex and Cerebras Systems Inc. today announced an expanded manufacturing partnership to scale production of the Cerebras CS-3, one of the world's most advanced AI accelerator systems, at Flex manufacturing facilities in Milpitas, California.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-05bf675cfda1eee5",
     "raw_id": "RAW-9cb1780bfb8848f6",
     "claim_type": "partnership",
@@ -1029,6 +1139,72 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-ce9d0285eef620cd",
+    "raw_id": "RAW-2b3d8c349c2b0a5f",
+    "claim_type": "deployment",
+    "subject": "Banco do Brasil",
+    "predicate": "deployment",
+    "object": "NiCE Copilot",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-8344dc8cf4c7d51f"
+    },
+    "source_span": {
+      "raw_id": "RAW-2b3d8c349c2b0a5f",
+      "start": 357,
+      "end": 546
+    },
+    "source_quote": "Banco do Brasil, one of Latin America's largest financial institutions, is leveraging NiCE Copilot to accelerate operational excellence and elevate customer service across its organization.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-4e7852083d8c103e",
+    "raw_id": "RAW-2b3d8c349c2b0a5f",
+    "claim_type": "deployment",
+    "subject": "Banco do Brasil",
+    "predicate": "deployment",
+    "object": "WhatsApp integration on NiCE CXone platform",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-8344dc8cf4c7d51f"
+    },
+    "source_span": {
+      "raw_id": "RAW-2b3d8c349c2b0a5f",
+      "start": 3137,
+      "end": 3296
+    },
+    "source_quote": "In 2025, Banco do Brasil integrated WhatsApp into the NiCE CXone platform, creating a centralized, secure, and traceable environment for customer interactions.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-39d101dd84ec55f4",
+    "raw_id": "RAW-56bf33519e29d451",
+    "claim_type": "certification_compliance",
+    "subject": "Apple 智能",
+    "predicate": "certification_compliance",
+    "object": "手机端侧生成式人工智能服务备案",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 1,
+      "model_candidate_id": "MAC-07723e28d103108c"
+    },
+    "source_span": {
+      "raw_id": "RAW-56bf33519e29d451",
+      "start": 733,
+      "end": 777
+    },
+    "source_quote": "苹果 Apple 智能在列，网信部门发布 7 款提供手机端侧生成式人工智能服务已备案信息",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-e5380c45c7c01a26",
     "raw_id": "RAW-d22201fb2b731af7",
     "claim_type": "funding",
@@ -1173,6 +1349,28 @@
     "source_quote": "Deyneka left the social media giant to build an agentic video editor that helps people create short-form videos automatically, getting rid of the need to spend time selecting clips, adding effects, recording a voiceover, and fine-tuning edits.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-ecbd398d1cee8977",
+    "raw_id": "RAW-2df08dd5ca2eba6c",
+    "claim_type": "model_release",
+    "subject": "Soofi 联盟",
+    "predicate": "model_release",
+    "object": "Soofi S 30B-A3B",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1,
+      "model_candidate_id": "MAC-ed84f852dab97ed0"
+    },
+    "source_span": {
+      "raw_id": "RAW-2df08dd5ca2eba6c",
+      "start": 225,
+      "end": 361
+    },
+    "source_quote": "A German research consortium has published the pretraining report for Soofi S 30B-A3B . It is an open base model for German and English.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -3171,6 +3369,90 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-e2d7ccbf444efbbe",
+    "raw_id": "RAW-843f68472490021f",
+    "claim_type": "ipo_listing",
+    "subject": "DeepSeek",
+    "predicate": "ipo_listing",
+    "object": "plans 📈, Kalshi compute markets ⚡, Bonsai phone model 📱",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-843f68472490021f",
+      "start": 0,
+      "end": 75
+    },
+    "source_quote": "DeepSeek IPO plans 📈, Kalshi compute markets ⚡, Bonsai phone model 📱 TLDR",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-2a4d06009844dab5",
+    "raw_id": "RAW-843f68472490021f",
+    "claim_type": "ipo_listing",
+    "subject": "DeepSeek",
+    "predicate": "ipo_listing",
+    "object": "plans 📈, Kalshi compute markets ⚡, Bonsai phone model 📱",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-843f68472490021f",
+      "start": 127,
+      "end": 197
+    },
+    "source_quote": "DeepSeek IPO plans 📈, Kalshi compute markets ⚡, Bonsai phone model 📱",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-9fc52bc5758e4f00",
+    "raw_id": "RAW-843f68472490021f",
+    "claim_type": "ipo_listing",
+    "subject": "DeepSeek",
+    "predicate": "ipo_listing",
+    "object": "plans 📈, Kalshi compute markets ⚡, Bonsai phone model 📱",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-843f68472490021f",
+      "start": 198,
+      "end": 271
+    },
+    "source_quote": "Google announces Gemma 4 optimized for the Pixel 10's TPU (2 minute read)",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a2a19a4e90dc83e1",
+    "raw_id": "RAW-843f68472490021f",
+    "claim_type": "ipo_listing",
+    "subject": "DeepSeek",
+    "predicate": "ipo_listing",
+    "object": "plans 📈, Kalshi compute markets ⚡, Bonsai phone model 📱",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-843f68472490021f",
+      "start": 272,
+      "end": 633
+    },
+    "source_quote": "Gemma 4 E2B for TPU is designed to run natively on the Pixel 10's TPU. It supports instant, deep offline conversation, image identification, and on-device audio transcription. The model also lets users command core phone functions, like Wi-Fi or maps, using just private voice or text. Video demonstrations of what the model can do are available in the article.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-a9ed45894efe870e",
     "raw_id": "RAW-5c37464cf1bd97b3",
     "claim_type": "partnership",
@@ -3315,6 +3597,28 @@
     "source_quote": "诉讼文件指出，苹果在 2026 年 2 月曾致函 OpenAI，要求说明防范措施、调查情况与补救安排，但 OpenAI“从未回应”。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-3db4a8ab94b57232",
+    "raw_id": "RAW-4cb055256ceb7073",
+    "claim_type": "policy_regulation",
+    "subject": "同方知网数字科技有限公司",
+    "predicate": "policy_regulation",
+    "object": "将 DeepSeek、Gemini 等人工智能（AI）列为作者的论文",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 1,
+      "model_candidate_id": "MAC-b8baf06bd82f38e2"
+    },
+    "source_span": {
+      "raw_id": "RAW-4cb055256ceb7073",
+      "start": 102,
+      "end": 122
+    },
+    "source_quote": "对此类 AI 署名论文，知网已做下架处理",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {

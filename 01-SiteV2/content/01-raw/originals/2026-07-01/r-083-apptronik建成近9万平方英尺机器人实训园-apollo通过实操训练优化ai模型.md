@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"人形机器人公司Apptronik在奥斯
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "Apptronik建成近9万平方英尺机器人实训园，Apollo通过实操训练优化AI模型"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Apptronik建成近9万平方英尺机器人实训园，Apollo通过实操训练优化AI模型

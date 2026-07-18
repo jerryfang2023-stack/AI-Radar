@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"亚马逊、英伟达和AMD的风险投
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "亚马逊、英伟达和AMD向AI初创公司Odyssey投资3.1亿美元，用于构建3D世界模型"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 亚马逊、英伟达和AMD向AI初创公司Odyssey投资3.1亿美元，用于构建3D世界模型

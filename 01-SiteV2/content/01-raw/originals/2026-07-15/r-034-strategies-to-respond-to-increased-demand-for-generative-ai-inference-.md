@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-034
 title: "Strategies to respond to increased demand for Generative AI inference and increased power costs are .. - MK"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "应对生成式AI推理需求增长及电力成本上升的策略.. - MK"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.mk.co.kr/en/it/12098590"
 canonical_url: "https://mk.co.kr/en/it/12098590"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-15T04:28:37.760Z
 theme: ai-hardware-trend-innovation-signal
 keyword_group: ai-hardware-trend-innovation-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Strategies to respond to increased demand for Generative AI inference and increased power costs are .. - MK

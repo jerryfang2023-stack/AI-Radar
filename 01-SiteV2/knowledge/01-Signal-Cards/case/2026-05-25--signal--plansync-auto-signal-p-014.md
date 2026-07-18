@@ -2,7 +2,7 @@
 id: SIG-20260525-A13
 type: signal_card
 signal_type: case
-title: "B2B SaaS公司AI销售代理：90天内管道覆盖率提升3倍 | Agentmelt"
+title: "B2B SaaS 公司 AI 销售智能体：90 天内管道覆盖率提升 3 倍"
 date: 2026-05-25
 status: published
 asset_level: frontstage
@@ -58,7 +58,7 @@ signal_owner: "PlanSync"
 watch_reason: "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
 
 frontend:
-  displayTitle: "B2B SaaS公司AI销售代理：90天内管道覆盖率提升3倍 | Agentmelt"
+  displayTitle: "B2B SaaS 公司 AI 销售智能体：90 天内管道覆盖率提升 3 倍"
   eventLine: "PlanSync 把 AI 用进地产开发和建筑设计流程。"
   whyWatch: "这条变化值得看，是因为它把竞争点放到了地产开发和建筑设计流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"
   businessMeaning: "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
@@ -68,7 +68,7 @@ frontend:
     - "https://agentmelt.com/case-studies/ai-sales-agent-b2b-saas/"
 ---
 
-# B2B SaaS公司AI销售代理：90天内管道覆盖率提升3倍 | Agentmelt
+# B2B SaaS 公司 AI 销售智能体：90 天内管道覆盖率提升 3 倍
 
 ## 信号底稿
 

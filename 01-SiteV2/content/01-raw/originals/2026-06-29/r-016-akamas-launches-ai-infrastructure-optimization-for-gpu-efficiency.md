@@ -72,7 +72,7 @@ key_excerpts: [{"type":"product_update","text":"# Akamas Launches AI Infrastruct
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
-title_zh: "Akamas推出AI基础设施优化方案，提升GPU效率"
+title_zh: "Akamas 推出面向 GPU 效率的 AI 基础设施优化方案"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

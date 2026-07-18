@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-053
 title: "路透社实测：Meta AI图像检测工具在裁剪后失灵"
 title_zh: "路透社实测：Meta AI图像检测工具在裁剪后失灵"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.ithome.com/0/975/402.htm"
 canonical_url: "https://ithome.com/0/975/402.htm"
 source_name: "IT之家（RSS）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-11T04:06:41.349Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 路透社实测：Meta AI图像检测工具在裁剪后失灵

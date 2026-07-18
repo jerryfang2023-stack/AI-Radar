@@ -72,7 +72,7 @@ key_excerpts: [{"type":"product_update","text":"Pipeshift: Inference for real-ti
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
-title_zh: "Pipeshift：面向实时生产工作负载的推理 | Y Combinator"
+title_zh: "Pipeshift：面向实时生产工作负载的推理"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

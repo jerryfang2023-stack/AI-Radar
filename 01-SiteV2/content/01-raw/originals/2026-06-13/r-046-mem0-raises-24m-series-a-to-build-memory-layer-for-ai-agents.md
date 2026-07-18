@@ -72,7 +72,7 @@ key_excerpts: [{"type":"funding","text":"Mem0 Raises $24M Series A to Build Memo
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
-title_zh: "Mem0 完成2400万美元A轮融资，为AI代理构建记忆层"
+title_zh: "Mem0 获 2400 万美元 A 轮融资，为 AI 智能体构建记忆层"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

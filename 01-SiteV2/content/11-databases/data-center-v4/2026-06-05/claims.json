@@ -1,5 +1,89 @@
 [
   {
+    "claim_id": "CL-1c0071a8417c62e7",
+    "raw_id": "RAW-e6947cb0e0eb5565",
+    "claim_type": "ipo_listing",
+    "subject": "Anthropic 联合创始人 Daniela Amodei 在",
+    "predicate": "ipo_listing",
+    "object": "前夕驳斥对 AI 回报的质疑",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-e6947cb0e0eb5565",
+      "start": 3,
+      "end": 84
+    },
+    "source_quote": "Ahead of its IPO, Anthropic’s Daniela Amodei shrugs off doubts about AI’s returns",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-80b2a8b86a9c1783",
+    "raw_id": "RAW-e6947cb0e0eb5565",
+    "claim_type": "ipo_listing",
+    "subject": "Anthropic 联合创始人 Daniela Amodei 在",
+    "predicate": "ipo_listing",
+    "object": "前夕驳斥对 AI 回报的质疑",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-e6947cb0e0eb5565",
+      "start": 126,
+      "end": 568
+    },
+    "source_quote": "Private investors have been falling over themselves to get a piece of Anthropic, given the AI model maker is growing at a dizzying pace. Multiple investors told TechCrunch that the company’s $65 billion fundraise at a $965 billion valuation, announced last week, was greatly oversubscribed. Now, with that private demand still strong, Anthropic has revealed that it’s taking steps toward a public listing by filing confidentially for an IPO .",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-71ee147de28e9f51",
+    "raw_id": "RAW-e6947cb0e0eb5565",
+    "claim_type": "ipo_listing",
+    "subject": "Anthropic 联合创始人 Daniela Amodei 在",
+    "predicate": "ipo_listing",
+    "object": "前夕驳斥对 AI 回报的质疑",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-e6947cb0e0eb5565",
+      "start": 99,
+      "end": 125
+    },
+    "source_quote": "3:43 PM PDT · June 4, 2026",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-f2284e0ef311f8b2",
+    "raw_id": "RAW-e6947cb0e0eb5565",
+    "claim_type": "ipo_listing",
+    "subject": "Anthropic 联合创始人 Daniela Amodei 在",
+    "predicate": "ipo_listing",
+    "object": "前夕驳斥对 AI 回报的质疑",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-e6947cb0e0eb5565",
+      "start": 569,
+      "end": 992
+    },
+    "source_quote": "Co-founder Daniela Amodei, speaking at the Bloomberg Tech conference on Thursday, said the decision comes down to capital. “It’s a really big upfront cost to train the models and to serve inference on them,” she said. “My guess is that over time, the sort of core set of companies that are working to advance the frontier are just going to need access to capital, and I think the public market is very well suited to that.”",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-da31990aad053e3c",
     "raw_id": "RAW-ea0627e96c0c3b4f",
     "claim_type": "product_release",
@@ -756,6 +840,50 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-72a8999388f30c22",
+    "raw_id": "RAW-dd3c9b604c6f6a78",
+    "claim_type": "product_release",
+    "subject": "DigitalOcean",
+    "predicate": "product_release",
+    "object": "Inference Engine",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-ab4d6e1fafd887d3"
+    },
+    "source_span": {
+      "raw_id": "RAW-dd3c9b604c6f6a78",
+      "start": 488,
+      "end": 728
+    },
+    "source_quote": "DigitalOcean (NYSE: DOCN) today announced the launch of its Inference Engine, a set of new production capabilities that give AI builders exceptional performance and unified control over how they run, scale, and optimize inference workloads.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-c0f2b8ac27683b70",
+    "raw_id": "RAW-dd3c9b604c6f6a78",
+    "claim_type": "product_release",
+    "subject": "DigitalOcean",
+    "predicate": "product_release",
+    "object": "Inference Router",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-ab4d6e1fafd887d3"
+    },
+    "source_span": {
+      "raw_id": "RAW-dd3c9b604c6f6a78",
+      "start": 1284,
+      "end": 1421
+    },
+    "source_quote": "Inference Router is designed to solve one of the biggest inefficiencies in agentic AI: sending every request to the most expensive model.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-8db9327ffefca608",
     "raw_id": "RAW-7d48d6432889e312",
     "claim_type": "product_release",
@@ -921,6 +1049,72 @@
     "source_quote": "The new artificial intelligence enterprise services firm backed by Blackstone Inc. , Anthropic PBC and Hellman & Friedman has picked a San Francisco firm called Fractional AI as the operational centerpiece of the as-yet unnamed venture.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-6dac873d0c2224a1",
+    "raw_id": "RAW-fb4acd18e315e23e",
+    "claim_type": "acquisition",
+    "subject": "Asana",
+    "predicate": "acquisition",
+    "object": "StackAI",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-a6bac1cc56dd6409"
+    },
+    "source_span": {
+      "raw_id": "RAW-fb4acd18e315e23e",
+      "start": 1077,
+      "end": 1199
+    },
+    "source_quote": "Work management platform Asana acquired StackAI to add no-code agent workflows that can execute across enterprise systems.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-d1770946d31f0398",
+    "raw_id": "RAW-fb4acd18e315e23e",
+    "claim_type": "acquisition",
+    "subject": "Coupa",
+    "predicate": "acquisition",
+    "object": "Rossum",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-a6bac1cc56dd6409"
+    },
+    "source_span": {
+      "raw_id": "RAW-fb4acd18e315e23e",
+      "start": 1200,
+      "end": 1315
+    },
+    "source_quote": "Spend management platform Coupa acquired Rossum to bring intelligent document processing deeper into source-to-pay.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-4d0ab17108cbab02",
+    "raw_id": "RAW-fb4acd18e315e23e",
+    "claim_type": "acquisition",
+    "subject": "Vertice",
+    "predicate": "acquisition",
+    "object": "Vendr",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3,
+      "model_candidate_id": "MAC-a6bac1cc56dd6409"
+    },
+    "source_span": {
+      "raw_id": "RAW-fb4acd18e315e23e",
+      "start": 1459,
+      "end": 1610
+    },
+    "source_quote": "Procurement and spend optimization platform Vertice acquired Vendr to expand its procurement intelligence dataset and strengthen AI-driven negotiation.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   }
 ]

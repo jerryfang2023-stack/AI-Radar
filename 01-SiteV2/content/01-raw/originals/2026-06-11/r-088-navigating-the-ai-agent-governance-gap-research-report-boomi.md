@@ -72,7 +72,7 @@ key_excerpts: [{"type":"company_action","text":"AI agents are on the rise. Learn
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
-title_zh: "应对AI代理治理空白 | 研究报告 - Boomi"
+title_zh: "AI 智能体治理鸿沟的应对之道"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

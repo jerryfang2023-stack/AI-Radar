@@ -2,7 +2,7 @@
 id: SIG-20260520-07
 type: signal_card
 signal_type: case
-title: "Veltris推出VeltrisOne——专为微型行业打造的垂直AI编排平台"
+title: "Veltris 推出 VeltrisOne——专为赋能微型行业打造的垂直 AI 编排平台"
 date: 2026-05-20
 status: draft
 asset_level: candidate
@@ -37,7 +37,7 @@ signal_owner: "Veltris"
 watch_reason: "继续看这些指标是否被客户案例、合作伙伴或行业渠道二次确认。"
 
 frontend:
-  displayTitle: "Veltris推出VeltrisOne——专为微型行业打造的垂直AI编排平台"
+  displayTitle: "Veltris 推出 VeltrisOne——专为赋能微型行业打造的垂直 AI 编排平台"
   eventLine: "Veltris 发布 VeltrisOne，覆盖医疗、通信和制造等微行业工作流。"
   whyWatch: "这条材料带有部署指标，能把垂直 AI 从产品介绍推进到具体行业流程。"
   businessMeaning: "影响的是行业流程中的理赔、运维、质检和系统集成责任。"
@@ -70,7 +70,7 @@ opportunity_signals:
   missing_fields: ["delivery_model"]
 ---
 
-# Veltris推出VeltrisOne——专为微型行业打造的垂直AI编排平台
+# Veltris 推出 VeltrisOne——专为赋能微型行业打造的垂直 AI 编排平台
 
 ## 信号底稿
 

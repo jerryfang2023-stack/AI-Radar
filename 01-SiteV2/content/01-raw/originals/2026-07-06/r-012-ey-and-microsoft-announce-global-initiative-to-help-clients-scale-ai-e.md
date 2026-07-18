@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-012
 title: "EY and Microsoft announce global initiative to help clients scale AI enterprisewide value creation and move beyond experimentation - Source"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "EY 与微软宣布全球倡议，助力客户规模化实现企业级 AI 价值创造，超越实验阶段"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://news.microsoft.com/source/2026/05/21/ey-and-microsoft-announce-global-initiative-to-help-clients-scale-ai-enterprisewide-value-creation-and-move-beyond-experimentation/"
 canonical_url: "https://news.microsoft.com/source/2026/05/21/ey-and-microsoft-announce-global-initiative-to-help-clients-scale-ai-enterprisewide-value-creation-and-move-beyond-experimentation"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-06T02:21:26.751Z
 theme: enterprise-ai-implementation-signal
 keyword_group: enterprise-ai-implementation-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # EY and Microsoft announce global initiative to help clients scale AI enterprisewide value creation and move beyond experimentation - Source

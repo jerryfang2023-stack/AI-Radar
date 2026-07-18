@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-086
 title: "Thinking Machines Inkling 🧠, GPT-Red 🔒, Perplexity sandboxes 🛡️"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "Thinking Machines Inkling 🧠、GPT-Red 🔒、Perplexity 沙盒 🛡️"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://tldr.tech/ai/2026-07-16"
 canonical_url: "https://tldr.tech/ai/2026-07-16"
 source_name: "TLDR AI Newsletter"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-17T04:40:17.288Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Thinking Machines Inkling 🧠, GPT-Red 🔒, Perplexity sandboxes 🛡️

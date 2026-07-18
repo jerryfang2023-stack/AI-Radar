@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T01:57:40.269Z",
-    "latestDataDate": "2026-07-17",
-    "currentDate": "2026-07-17",
-    "eventCount": 832,
-    "quarantinedEventCount": 60
+    "generatedAt": "2026-07-18T04:59:59.870Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 1250,
+    "quarantinedEventCount": 11
   },
   "entity": {
     "id": "EN-5fdd673ed1fcff1d",
@@ -21,12 +21,13 @@
       "canonical"
     ],
     "eventIds": [
-      "EV-9b29acd28643e9d1"
+      "EV-9b29acd28643e9d1",
+      "EV-5271985bba70f3d1"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
-    "firstSeen": "2026-06-23",
+    "firstSeen": "2026-06-10",
     "lastSeen": "2026-06-23",
     "relationIds": [],
     "groupedEventIds": {
@@ -37,7 +38,9 @@
         "EV-9b29acd28643e9d1"
       ],
       "hardware": [],
-      "organizationPeople": [],
+      "organizationPeople": [
+        "EV-5271985bba70f3d1"
+      ],
       "other": []
     },
     "timeline": [
@@ -56,6 +59,22 @@
           "EN-968e2d5b08687bf4",
           "EN-5fdd673ed1fcff1d",
           "EN-d84c1d1c315bc2f8"
+        ]
+      },
+      {
+        "id": "EV-5271985bba70f3d1",
+        "dataDate": "2026-06-11",
+        "date": "2026-06-10",
+        "eventType": "organization_restructuring",
+        "eventTypeLabel": "组织重组",
+        "eventGroup": "组织、政策与法律",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "三星启动\"人工智能转型\"，计划2026年内培训所有员工",
+        "displayTags": [],
+        "entityIds": [
+          "EN-968e2d5b08687bf4",
+          "EN-5fdd673ed1fcff1d"
         ]
       }
     ],

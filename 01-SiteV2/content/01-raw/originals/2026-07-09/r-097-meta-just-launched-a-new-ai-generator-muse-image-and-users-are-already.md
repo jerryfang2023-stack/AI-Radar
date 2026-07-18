@@ -2,7 +2,7 @@
 schema_version: raw-evidence-v2
 raw_id: R-097
 title: "Meta just launched a new AI generator, Muse Image, and users are already pushing back over use of their photos"
-title_zh: "Meta推出新AI图像生成器Muse Image，用户因照片使用问题表示反对"
+title_zh: "Meta 推出新 AI 生成器 Muse Image，用户因照片使用问题提出反对"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 original_url: "https://techcrunch.com/2026/07/07/meta-rolls-out-muse-a-new-ai-image-generator/"

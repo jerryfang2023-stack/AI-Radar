@@ -1,5 +1,27 @@
 [
   {
+    "claim_id": "CL-0e51263edb8c225f",
+    "raw_id": "RAW-86b972fad861cc01",
+    "claim_type": "acquisition",
+    "subject": "Elastic",
+    "predicate": "acquisition",
+    "object": "DeductiveAI",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1,
+      "model_candidate_id": "MAC-eeb8a1cdcdfcc689"
+    },
+    "source_span": {
+      "raw_id": "RAW-86b972fad861cc01",
+      "start": 113,
+      "end": 270
+    },
+    "source_quote": "DeductiveAI, a startup that uses AI to catch and resolve bugs in software, has agreed to be sold to enterprise software company Elastic for up to $85 million",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-4e5925ea627f0fe2",
     "raw_id": "RAW-6863d919d0181580",
     "claim_type": "funding",
@@ -735,6 +757,28 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-7e311942c33c6abe",
+    "raw_id": "RAW-93bf504fe6a5efc4",
+    "claim_type": "policy_regulation",
+    "subject": "EU AI Act",
+    "predicate": "policy_regulation",
+    "object": "high-risk AI system obligations",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-07a4c030aadfa161"
+    },
+    "source_span": {
+      "raw_id": "RAW-93bf504fe6a5efc4",
+      "start": 10084,
+      "end": 10252
+    },
+    "source_quote": "The EU AI Act entered into force in August 2024. The majority of its substantive obligations, including those governing high-risk AI systems, apply from August 2, 2026.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-6e81a9c9336787ce",
     "raw_id": "RAW-672f395c7e58543b",
     "claim_type": "funding",
@@ -984,6 +1028,72 @@
     "source_quote": "Karamo Brown, famous for his pep talks on Netflix’s “Queer Eye,” has jumped into the wellness and AI space with his new app, Kē . After spending a year and a half focusing on his own journey — from fitness and nutrition to meditation, sobriety, relationships, and personal growth — Brown wants to help others do the same.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-59c987194cdc9d5b",
+    "raw_id": "RAW-d85833b2566fd078",
+    "claim_type": "organization_restructuring",
+    "subject": "Snap",
+    "predicate": "organization_restructuring",
+    "object": "Dotmo",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-4444a3a44f502a80"
+    },
+    "source_span": {
+      "raw_id": "RAW-d85833b2566fd078",
+      "start": 110,
+      "end": 335
+    },
+    "source_quote": "Snap will be spinning off an internal generative AI video team into a separate company. The new company — dubbed Dotmo — will focus on developing AI models that can create interactive gaming experiences, Snap told TechCrunch.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b8e9b568a2d93436",
+    "raw_id": "RAW-6caafff17cb0d7a9",
+    "claim_type": "product_release",
+    "subject": "Claude Code",
+    "predicate": "product_release",
+    "object": "artifacts feature",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-8c8e168935f46e74"
+    },
+    "source_span": {
+      "raw_id": "RAW-6caafff17cb0d7a9",
+      "start": 0,
+      "end": 261
+    },
+    "source_quote": "Starting today, Claude Code can capture work progress as an artifact, which turn Claude Code's work into live, shareable visual pages— including PR walkthroughs, system explainers, dashboards, and release checklists—that update themselves as your session works.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-996298b4103a9c56",
+    "raw_id": "RAW-6caafff17cb0d7a9",
+    "claim_type": "product_release",
+    "subject": "artifacts feature",
+    "predicate": "product_release",
+    "object": "beta availability for Claude Team and Enterprise orgs",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-8c8e168935f46e74"
+    },
+    "source_span": {
+      "raw_id": "RAW-6caafff17cb0d7a9",
+      "start": 4814,
+      "end": 4958
+    },
+    "source_quote": "Artifacts is available in beta to Claude Team and Enterprise orgs, from the Claude Code CLI and desktop app, with pages viewable in any browser.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -1239,6 +1349,28 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-4b12a7d6a6c5b755",
+    "raw_id": "RAW-f938473a03f3d7c4",
+    "claim_type": "capital_investment",
+    "subject": "OpenAI",
+    "predicate": "capital_investment",
+    "object": "Rust Foundation",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-1722482af15fdb24"
+    },
+    "source_span": {
+      "raw_id": "RAW-f938473a03f3d7c4",
+      "start": 388,
+      "end": 478
+    },
+    "source_quote": "OpenAI 将为 Rust 基金会提供总计 60 万美元（IT之家注：现汇率约合 406.5 万元人民币）的资金支持 ，其中包括入会费用、额外拨款、Rust 生态系统维护费用等。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-5fa3e168c9d3793d",
     "raw_id": "RAW-fda2ca1ce877f690",
     "claim_type": "product_release",
@@ -1281,7 +1413,7 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-06d4c798834a8ed3",
+    "claim_id": "CL-1386839a2a1aa5e3",
     "raw_id": "RAW-fda2ca1ce877f690",
     "claim_type": "product_release",
     "subject": "The Ultimate",
@@ -1293,16 +1425,16 @@
     },
     "source_span": {
       "raw_id": "RAW-fda2ca1ce877f690",
-      "start": 1760,
-      "end": 1818
+      "start": 632,
+      "end": 724
     },
-    "source_quote": "👉 Browse the full collection and launch your first agent:",
+    "source_quote": "A curated map of the most popular open-source AI agents—grouped by function and ready to run",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-7cc2f9883e782e4a",
+    "claim_id": "CL-06d4c798834a8ed3",
     "raw_id": "RAW-fda2ca1ce877f690",
     "claim_type": "product_release",
     "subject": "The Ultimate",
@@ -1314,10 +1446,10 @@
     },
     "source_span": {
       "raw_id": "RAW-fda2ca1ce877f690",
-      "start": 1819,
-      "end": 1924
+      "start": 1760,
+      "end": 1818
     },
-    "source_quote": "The GitHub home of over 50,000-star open-source AI agents, including RAG, MCP, and multi-agent frameworks",
+    "source_quote": "👉 Browse the full collection and launch your first agent:",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"

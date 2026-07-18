@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"How a mid-size financial advisory firm u
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "面向金融服务的AI销售智能体：通过合规外呼自动化实现2.4倍管道增长"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # AI Sales Agent for Financial Services: 2.4x Pipeline Growth with Compliant Outbound Automation | Agentmelt

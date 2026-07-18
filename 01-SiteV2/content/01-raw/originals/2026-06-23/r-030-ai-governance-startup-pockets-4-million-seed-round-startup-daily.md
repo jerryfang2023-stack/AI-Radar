@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"governance startup pockets $4 million S
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "AI 治理初创公司获 400 万美元种子轮融资"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # AI governance startup pockets $4 million Seed round - Startup Daily

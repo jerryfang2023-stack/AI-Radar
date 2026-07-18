@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-18T04:59:59.870Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 1250,
+    "quarantinedEventCount": 11
+  },
+  "entity": {
+    "id": "EN-2920a06bd844489e",
+    "name": "Salesforce Inc.",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-4e7a32c9ee893918"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-02",
+    "lastSeen": "2026-07-02",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-4e7a32c9ee893918"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-4e7a32c9ee893918",
+        "dataDate": "2026-07-02",
+        "date": "2026-07-02",
+        "eventType": "acquisition",
+        "eventTypeLabel": "并购",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Salesforce 将收购处理客户服务的 AI 公司",
+        "displayTags": [],
+        "entityIds": [
+          "EN-2920a06bd844489e",
+          "EN-3ccbd9105a45d8fc",
+          "EN-96eebba49dbbf422"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

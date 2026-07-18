@@ -57,7 +57,7 @@ key_excerpts: [{"type":"case_detail","text":"4 points / 2 comments / query=AI co
 theme: mature-commercial-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
-title_zh: "Show HN：Airlock – 可自我升级的编译型AI代理"
+title_zh: "Show HN：Airlock – 可自我升级的编译型 AI 智能体"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

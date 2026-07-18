@@ -72,7 +72,7 @@ key_excerpts: [{"type":"funding","text":"NEW YORK—June 16, 2026— UiPath, Inc
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only
-title_zh: "UiPath推出Maestro Case以编排动态业务流程 | UiPath"
+title_zh: "UiPath推出Maestro Case以编排动态业务流程"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

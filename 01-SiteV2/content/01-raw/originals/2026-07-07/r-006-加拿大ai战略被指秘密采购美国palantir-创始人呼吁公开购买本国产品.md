@@ -3,8 +3,8 @@ schema_version: raw-evidence-v2
 raw_id: R-006
 title: "加拿大AI战略被指秘密采购美国Palantir，创始人呼吁公开购买本国产品"
 title_zh: "加拿大AI战略被指秘密采购美国Palantir，创始人呼吁公开购买本国产品"
-title_translation_status: not_required
-title_translation_method: source_title
+title_translation_status: "not_required"
+title_translation_method: "source_title"
 original_url: "https://www.readtheline.ca/p/al-vigier-canadas-ai-strategy-shouldnt"
 canonical_url: "https://readtheline.ca/p/al-vigier-canadas-ai-strategy-shouldnt"
 source_name: "Hacker News 热门（buzzing.cc 中文翻译）"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-07T02:46:59.216Z
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # 加拿大AI战略被指秘密采购美国Palantir，创始人呼吁公开购买本国产品

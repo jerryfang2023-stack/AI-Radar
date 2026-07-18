@@ -72,7 +72,7 @@ key_excerpts: [{"type":"supporting_context","text":"AI in procurement explained:
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
-title_zh: "采购中AI的终极指南 | Sievo"
+title_zh: "采购中的人工智能终极指南"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

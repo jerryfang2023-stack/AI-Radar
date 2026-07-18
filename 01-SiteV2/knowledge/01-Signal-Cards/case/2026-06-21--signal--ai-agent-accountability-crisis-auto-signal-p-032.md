@@ -2,7 +2,7 @@
 id: SIG-20260621-A09
 type: signal_card
 signal_type: case
-title: "AI代理问责危机：治理为何落后于部署"
+title: "AI 智能体问责危机：治理为何落后于部署"
 date: 2026-06-21
 status: published
 source_title: "The AI Agent Accountability Crisis: Why Governance Isn&#8217;t Keeping Up With Deployment"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "AI Agent Accountability Crisis"
 
 frontend:
-  displayTitle: "AI代理问责危机：治理为何落后于部署"
+  displayTitle: "AI 智能体问责危机：治理为何落后于部署"
   sourceLinks:
     - "https://www.tigera.io/blog/the-ai-agent-accountability-crisis-why-governance-isnt-keeping-up-with-deployment/"
 ---
 
-# AI代理问责危机：治理为何落后于部署
+# AI 智能体问责危机：治理为何落后于部署
 
 ## 新闻事实
 

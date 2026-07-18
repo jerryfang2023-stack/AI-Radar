@@ -3,9 +3,9 @@ schema_version: raw-evidence-v2
 raw_id: R-069
 title: "阿里千问 AI 眼镜将升级为智能体眼镜，联合 Bose 打造首款 AI 智能体耳机"
 title_zh: "阿里千问 AI 眼镜将升级为智能体眼镜，联合 Bose 打造首款 AI 智能体耳机"
-title_translation_status: not_required
-title_translation_method: source_title
-title_translation_model: not_applicable
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 original_url: "https://www.ithome.com/0/978/215.htm"
 canonical_url: "https://ithome.com/0/978/215.htm"
 source_name: "IT之家（RSS）"

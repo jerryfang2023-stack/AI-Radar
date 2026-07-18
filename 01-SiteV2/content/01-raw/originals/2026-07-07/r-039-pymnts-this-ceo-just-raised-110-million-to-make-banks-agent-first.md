@@ -2,7 +2,7 @@
 schema_version: raw-evidence-v2
 raw_id: R-039
 title: "PYMNTS | This CEO Just Raised $110 Million to Make Banks Agent-First"
-title_zh: "PYMNTS | 这位CEO刚融资1.1亿美元，欲打造银行优先代理模式"
+title_zh: "这位CEO刚刚筹集1.1亿美元，打造以AI智能体为核心的银行服务"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 original_url: "https://www.pymnts.com/news/artificial-intelligence/2026/this-ceo-just-raised-110-million-to-make-banks-agent-first/"

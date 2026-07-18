@@ -72,7 +72,7 @@ key_excerpts: [{"type":"funding","text":"Title: Finance automation startup ZenSt
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
-title_zh: "金融自动化初创公司ZenStatement获160万美元种子轮融资 | Medial"
+title_zh: "金融自动化初创公司ZenStatement获160万美元种子轮融资"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

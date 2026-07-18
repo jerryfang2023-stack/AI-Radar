@@ -2,7 +2,7 @@
 schema_version: raw-evidence-v2
 raw_id: R-053
 title: "Launch YC: Orthogonal - Agentic Payments for APIs | Y Combinator"
-title_zh: "Launch YC: Orthogonal - 面向API的智能支付代理 | Y Combinator"
+title_zh: "Launch YC: Orthogonal - 面向API的智能支付代理"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 original_url: "https://www.ycombinator.com/launches/PJU-orthogonal-agentic-payments-for-apis"

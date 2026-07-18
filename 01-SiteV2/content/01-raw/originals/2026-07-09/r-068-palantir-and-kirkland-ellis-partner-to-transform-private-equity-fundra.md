@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-068
 title: "Palantir and Kirkland & Ellis Partner to Transform Private Equity Fundraising with Exclusive AI-Powered Fund Enterprise Platform – Company Announcement - FT.com"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "Palantir 与 Kirkland & Ellis 合作，推出独家 AI 驱动基金企业平台，变革私募股权募资"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://markets.ft.com/data/announce/full?dockey=600-202606040659BIZWIRE_USPRX____20260604_BW089153-1"
 canonical_url: "https://markets.ft.com/data/announce/full?dockey=600-202606040659BIZWIRE_USPRX____20260604_BW089153-1"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-09T03:05:45.197Z
 theme: outside-core-exploration
 keyword_group: outside-core-exploration
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Palantir and Kirkland & Ellis Partner to Transform Private Equity Fundraising with Exclusive AI-Powered Fund Enterprise Platform – Company Announcement - FT.com

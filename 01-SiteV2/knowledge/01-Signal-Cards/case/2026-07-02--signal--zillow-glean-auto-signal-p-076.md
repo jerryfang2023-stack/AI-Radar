@@ -2,7 +2,7 @@
 id: SIG-20260702-A10
 type: signal_card
 signal_type: case
-title: "Zillow如何利用AI：在7000名员工中部署Glean，每人每周节省1.5小时以上 | 应用案例"
+title: "Zillow 如何利用 AI 在 7,000 名员工中部署 Glean，每人每周节省 1.5 小时以上"
 date: 2026-07-02
 status: published
 source_title: "How Zillow Uses AI for How Zillow Deployed Glean Across 7,000 Employees and Saved 1.5+ Hours Per Person Per Week | Applied"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Zillow / Glean"
 
 frontend:
-  displayTitle: "Zillow如何利用AI：在7000名员工中部署Glean，每人每周节省1.5小时以上 | 应用案例"
+  displayTitle: "Zillow 如何利用 AI 在 7,000 名员工中部署 Glean，每人每周节省 1.5 小时以上"
   sourceLinks:
     - "https://theapplied.co/use-cases/how-zillow-deployed-glean-across-7000-employees-and-saved-1-5-hours-per-person-per-week"
 ---
 
-# Zillow如何利用AI：在7000名员工中部署Glean，每人每周节省1.5小时以上 | 应用案例
+# Zillow 如何利用 AI 在 7,000 名员工中部署 Glean，每人每周节省 1.5 小时以上
 
 ## 新闻事实
 

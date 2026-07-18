@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"Day 1 on AWS Marketplace just got e
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "助力 AWS AI 智能体市场中的 Day 1 合作伙伴成功"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Powering Day 1 Partner Success in the AWS AI Agent Marketplace

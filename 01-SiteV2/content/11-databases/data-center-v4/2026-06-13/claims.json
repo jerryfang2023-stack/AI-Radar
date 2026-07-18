@@ -714,6 +714,28 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-05fc82f0b7a2de94",
+    "raw_id": "RAW-979162b19a98d78e",
+    "claim_type": "model_release",
+    "subject": "Moonshot AI",
+    "predicate": "model_release",
+    "object": "Kimi K2.7-Code",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-925882bb6e631ec6"
+    },
+    "source_span": {
+      "raw_id": "RAW-979162b19a98d78e",
+      "start": 6420,
+      "end": 6490
+    },
+    "source_quote": "Kimi K2.7 Code is a coding-focused agentic model built upon Kimi K2.6.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-fd24eb544cd9b969",
     "raw_id": "RAW-f258f2c30123d782",
     "claim_type": "product_release",
@@ -1467,6 +1489,72 @@
     "source_quote": "广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-f336d853f5e5f069",
+    "raw_id": "RAW-ffcd33f685cbf33b",
+    "claim_type": "product_release",
+    "subject": "Kimi",
+    "predicate": "product_release",
+    "object": "Kimi 信用卡",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-0bfcc0b08b89f601"
+    },
+    "source_span": {
+      "raw_id": "RAW-ffcd33f685cbf33b",
+      "start": 45,
+      "end": 76
+    },
+    "source_quote": "全球首张 AI 原生信用卡 ——Kimi 信用卡正式开启预约。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-de530ceb0c86ad06",
+    "raw_id": "RAW-ffcd33f685cbf33b",
+    "claim_type": "product_release",
+    "subject": "Kimi 信用卡",
+    "predicate": "product_release",
+    "object": "消费可兑换算力额度",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-0bfcc0b08b89f601"
+    },
+    "source_span": {
+      "raw_id": "RAW-ffcd33f685cbf33b",
+      "start": 81,
+      "end": 128
+    },
+    "source_quote": "持卡人的每一笔消费，均可转化为 AI 算力额度，直接兑换 Agent 使用额度、高级功能权限等",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b2d29e2b417582fc",
+    "raw_id": "RAW-ffcd33f685cbf33b",
+    "claim_type": "product_release",
+    "subject": "Kimi 信用卡",
+    "predicate": "product_release",
+    "object": "将于 7 月正式发行",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3,
+      "model_candidate_id": "MAC-0bfcc0b08b89f601"
+    },
+    "source_span": {
+      "raw_id": "RAW-ffcd33f685cbf33b",
+      "start": 130,
+      "end": 141
+    },
+    "source_quote": "将于 7 月正式发行。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   }
 ]

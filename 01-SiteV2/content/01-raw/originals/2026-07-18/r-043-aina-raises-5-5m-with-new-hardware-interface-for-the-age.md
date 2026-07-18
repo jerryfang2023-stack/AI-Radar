@@ -3,9 +3,9 @@ schema_version: raw-evidence-v2
 raw_id: R-043
 title: "Aina raises $5.5M with new hardware interface for the age of AI beyond touchscreens and keyboards"
 title_zh: "Aina 融资 550 万美元，推出超越触摸屏与键盘的 AI 时代新型硬件接口"
-title_translation_status: translated
-title_translation_method: deepseek_title_translation
-title_translation_model: deepseek-v4-flash
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 original_url: "https://www.globenewswire.com/news-release/2026/07/16/3328464/0/en/Aina-raises-5-5M-with-new-hardware-interface-for-the-age-of-AI-beyond-touchscreens-and-keyboards.html"
 canonical_url: "https://globenewswire.com/news-release/2026/07/16/3328464/0/en/Aina-raises-5-5M-with-new-hardware-interface-for-the-age-of-AI-beyond-touchscreens-and-keyboards.html"
 source_name: "keyword search / Anysearch"

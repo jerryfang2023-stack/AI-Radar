@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"A Forward Deployed Engineer is a so
 theme: enterprise-ai-implementation-signal
 keyword_group: enterprise-ai-implementation-signal
 copyright_note: local research archive only
+title_zh: "FDE 如何在 4 周内交付 AI 智能体工作流"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # How an FDE Ships an Agentic AI Workflow in 4 Weeks | LynkAI

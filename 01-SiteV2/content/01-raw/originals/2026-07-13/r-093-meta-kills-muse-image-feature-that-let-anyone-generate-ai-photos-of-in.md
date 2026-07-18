@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-093
 title: "Meta kills Muse Image feature that let anyone generate AI photos of Instagram users without consent"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "Meta 关闭 Muse Image 功能，该功能曾允许任何人未经同意生成 Instagram 用户的 AI 照片"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://the-decoder.com/meta-kills-muse-image-feature-that-let-anyone-generate-ai-photos-of-instagram-users-without-consent/"
 canonical_url: "https://the-decoder.com/meta-kills-muse-image-feature-that-let-anyone-generate-ai-photos-of-instagram-users-without-consent"
 source_name: "The Decoder AI News"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-13T10:23:57.232Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Meta kills Muse Image feature that let anyone generate AI photos of Instagram users without consent

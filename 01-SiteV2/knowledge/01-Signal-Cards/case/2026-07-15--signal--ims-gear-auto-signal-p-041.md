@@ -2,7 +2,7 @@
 id: SIG-20260715-A04
 type: signal_card
 signal_type: case
-title: "IMS Gear 借助 AI 智能体将询价时间缩短至 10 分钟 | Synera"
+title: "IMS Gear 借助 AI 智能体将询价时间缩短至 10 分钟"
 date: 2026-07-15
 status: published
 source_title: "IMS Gear cuts RFQ to 10 minutes with agentic AI | Synera"
@@ -58,12 +58,12 @@ opportunity_signals:
 signal_owner: "IMS Gear"
 
 frontend:
-  displayTitle: "IMS Gear 借助 AI 智能体将询价时间缩短至 10 分钟 | Synera"
+  displayTitle: "IMS Gear 借助 AI 智能体将询价时间缩短至 10 分钟"
   sourceLinks:
     - "https://www.synera.ai/news/ims-gear-agentic-rfq"
 ---
 
-# IMS Gear 借助 AI 智能体将询价时间缩短至 10 分钟 | Synera
+# IMS Gear 借助 AI 智能体将询价时间缩短至 10 分钟
 
 ## 新闻事实
 

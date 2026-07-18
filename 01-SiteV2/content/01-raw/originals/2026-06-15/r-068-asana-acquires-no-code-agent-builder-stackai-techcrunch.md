@@ -72,7 +72,7 @@ key_excerpts: [{"type":"number","text":"Asana acquires no-code agent-builder Sta
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
-title_zh: "Asana收购无代码智能体构建平台StackAI | TechCrunch"
+title_zh: "Asana收购无代码智能体构建平台StackAI"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

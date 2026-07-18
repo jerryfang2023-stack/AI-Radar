@@ -212,28 +212,6 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-e3bc51b7ae645ba3",
-    "raw_id": "RAW-5100b03136925b0f",
-    "claim_type": "deployment",
-    "subject": "GS Group",
-    "predicate": "deployment",
-    "object": "deployed Graphon for convenience-store analytics and construction-site safety",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 3,
-      "model_candidate_id": "MAC-3e746b3d35adb3b1"
-    },
-    "source_span": {
-      "raw_id": "RAW-5100b03136925b0f",
-      "start": 1031,
-      "end": 1165
-    },
-    "source_quote": "Early customer GS Group (South Korean conglomerate) has deployed Graphon for convenience-store analytics and construction-site safety.",
-    "extraction_method": "model_source_span",
-    "extraction_confidence": 0.72,
-    "verification_status": "accepted"
-  },
-  {
     "claim_id": "CL-e5de51bb96f04e7a",
     "raw_id": "RAW-05a9d88d2eebc436",
     "claim_type": "partnership",
@@ -654,6 +632,28 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-bdfb6062844c3ef4",
+    "raw_id": "RAW-83def32eced38f9d",
+    "claim_type": "model_release",
+    "subject": "智果园",
+    "predicate": "model_release",
+    "object": "DeepSeek-V4-Pro、智谱 GLM-5.1、月之暗面 Kimi-K2.6 和千问 Qwen-Image 等主流大模型",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2,
+      "model_candidate_id": "MAC-861c29934c4e7dc0"
+    },
+    "source_span": {
+      "raw_id": "RAW-83def32eced38f9d",
+      "start": 543,
+      "end": 616
+    },
+    "source_quote": "智果园支持一键调用 DeepSeek-V4-Pro、智谱 GLM-5.1、月之暗面 Kimi-K2.6 和千问 Qwen-Image 等主流大模型",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-7c4de70744b8e991",
     "raw_id": "RAW-23399eb9b7719460",
     "claim_type": "product_release",
@@ -924,6 +924,50 @@
     "source_quote": "We're on a journey to advance and democratize artificial intelligence through open source and open science.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-0eba029da0b6900f",
+    "raw_id": "RAW-02fdc152bfba6c45",
+    "claim_type": "security_incident",
+    "subject": "腾讯《三角洲行动》安全团队",
+    "predicate": "security_incident",
+    "object": "AI视觉吸附类外挂",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-6480dbddf78c4510"
+    },
+    "source_span": {
+      "raw_id": "RAW-02fdc152bfba6c45",
+      "start": 184,
+      "end": 215
+    },
+    "source_quote": "安全团队已经做到对双端多款 AI 外挂组件高效识别、快速打击。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-048e952c21ee4a2b",
+    "raw_id": "RAW-02fdc152bfba6c45",
+    "claim_type": "security_incident",
+    "subject": "腾讯《三角洲行动》安全团队",
+    "predicate": "security_incident",
+    "object": "AI吸附作弊账号",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-6480dbddf78c4510"
+    },
+    "source_span": {
+      "raw_id": "RAW-02fdc152bfba6c45",
+      "start": 645,
+      "end": 728
+    },
+    "source_quote": "截止 5 月 31 日，累计封禁 AI 吸附作弊账号 163248 个（PC 端 109351 个，移动端 53897 个）；本阶段同步封停作弊机器 100815 个",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {

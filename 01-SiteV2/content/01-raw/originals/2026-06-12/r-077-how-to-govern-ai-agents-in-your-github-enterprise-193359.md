@@ -72,7 +72,7 @@ key_excerpts: [{"type":"case_detail","text":"# Organization: GitHub Community (@
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
-title_zh: "如何在GitHub Enterprise #193359中治理AI代理"
+title_zh: "如何在 GitHub Enterprise 中治理 AI 智能体 #193359"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

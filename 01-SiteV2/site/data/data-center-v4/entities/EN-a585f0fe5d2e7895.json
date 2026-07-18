@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T01:57:40.269Z",
-    "latestDataDate": "2026-07-17",
-    "currentDate": "2026-07-17",
-    "eventCount": 832,
-    "quarantinedEventCount": 60
+    "generatedAt": "2026-07-18T04:59:59.870Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 1250,
+    "quarantinedEventCount": 11
   },
   "entity": {
     "id": "EN-a585f0fe5d2e7895",
@@ -21,7 +21,8 @@
       "canonical"
     ],
     "eventIds": [
-      "EV-ea81ac7de65b0c07"
+      "EV-ea81ac7de65b0c07",
+      "EV-ff6f1c1ecaa100a0"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
@@ -33,7 +34,9 @@
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
-      "productsServices": [],
+      "productsServices": [
+        "EV-ff6f1c1ecaa100a0"
+      ],
       "hardware": [
         "EV-ea81ac7de65b0c07"
       ],
@@ -56,6 +59,22 @@
           "EN-a585f0fe5d2e7895",
           "EN-908c564e03e36ecc",
           "EN-16afaf30cb520fb4"
+        ]
+      },
+      {
+        "id": "EV-ff6f1c1ecaa100a0",
+        "dataDate": "2026-06-15",
+        "date": "2026-06-15",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "MINIX 发布基于酷睿 3 304 的入门级 AI 迷你主机 N304-AI",
+        "displayTags": [],
+        "entityIds": [
+          "EN-a585f0fe5d2e7895",
+          "EN-2a1a2c0e6618db48"
         ]
       }
     ],

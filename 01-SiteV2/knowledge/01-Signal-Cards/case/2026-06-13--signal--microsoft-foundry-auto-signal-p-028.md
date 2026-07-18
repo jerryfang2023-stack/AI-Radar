@@ -2,7 +2,7 @@
 id: SIG-20260613-A10
 type: signal_card
 signal_type: case
-title: "使用 Microsoft Marketplace 构建、扩展和变现应用与代理 | Azure 全方位指南"
+title: "使用 Microsoft Marketplace 构建、扩展和变现应用与代理"
 date: 2026-06-13
 status: published
 source_title: "Build, scale, and monetize apps and agents with Microsoft Marketplace | All things Azure"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Microsoft Foundry"
 
 frontend:
-  displayTitle: "使用 Microsoft Marketplace 构建、扩展和变现应用与代理 | Azure 全方位指南"
+  displayTitle: "使用 Microsoft Marketplace 构建、扩展和变现应用与代理"
   sourceLinks:
     - "https://devblogs.microsoft.com/all-things-azure/build-scale-and-monetize-apps-and-agents-with-microsoft-marketplace/"
 ---
 
-# 使用 Microsoft Marketplace 构建、扩展和变现应用与代理 | Azure 全方位指南
+# 使用 Microsoft Marketplace 构建、扩展和变现应用与代理
 
 ## 新闻事实
 

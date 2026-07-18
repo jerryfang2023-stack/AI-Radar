@@ -2,7 +2,7 @@
 schema_version: raw-evidence-v2
 raw_id: R-033
 title: "Multi-Agent Hospital Operations Platform | Healthcare AI Case Study | TechEniac"
-title_zh: "多智能体医院运营平台 | 医疗AI案例研究 | TechEniac"
+title_zh: "多智能体医院运营平台 | 医疗AI案例研究"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 original_url: "https://techeniac.com/case-studies/hospital-operations-ai"

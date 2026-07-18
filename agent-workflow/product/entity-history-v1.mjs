@@ -12,9 +12,13 @@ const ENTITY_TYPE_LABELS = {
 const EVENT_GROUPS = {
   funding: "fundingAcquisition",
   acquisition: "fundingAcquisition",
+  ipo_listing: "fundingAcquisition",
+  financial_performance: "fundingAcquisition",
+  capital_investment: "deployments",
   deployment: "deployments",
   procurement_contract: "deployments",
   hardware_deployment: "deployments",
+  market_expansion: "deployments",
   partnership: "partnerships",
   model_release: "productsServices",
   product_release: "productsServices",
@@ -23,7 +27,11 @@ const EVENT_GROUPS = {
   hardware_product: "hardware",
   hardware_capacity: "hardware",
   hardware_supply: "hardware",
-  organization_people: "organizationPeople"
+  organization_people: "organizationPeople",
+  organization_restructuring: "organizationPeople",
+  certification_compliance: "productsServices",
+  standard_specification: "productsServices",
+  security_incident: "productsServices"
 };
 
 const INDEXED_DIMENSIONS = new Set(["technology", "use_case", "industry"]);

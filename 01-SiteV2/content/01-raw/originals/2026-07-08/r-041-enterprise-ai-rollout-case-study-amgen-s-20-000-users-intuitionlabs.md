@@ -2,7 +2,7 @@
 schema_version: raw-evidence-v2
 raw_id: R-041
 title: "Enterprise AI Rollout Case Study: Amgen's 20,000 Users | IntuitionLabs"
-title_zh: "企业AI推广案例研究：安进公司20,000名用户 | IntuitionLabs"
+title_zh: "企业 AI 推广案例研究：安进公司 20,000 名用户"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 original_url: "https://intuitionlabs.ai/articles/enterprise-ai-rollout-case-study-amgen"

@@ -3,9 +3,9 @@ schema_version: raw-evidence-v2
 raw_id: R-106
 title: "腾讯发布具身 VLM 基座模型 Hy-Embodied-VLM-1.0，A3B 规模性能接近上一代 A32B 模型"
 title_zh: "腾讯发布具身 VLM 基座模型 Hy-Embodied-VLM-1.0，A3B 规模性能接近上一代 A32B 模型"
-title_translation_status: not_required
-title_translation_method: source_title
-title_translation_model: not_applicable
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 original_url: "https://www.ithome.com/0/978/080.htm"
 canonical_url: "https://ithome.com/0/978/080.htm"
 source_name: "IT之家（RSS）"

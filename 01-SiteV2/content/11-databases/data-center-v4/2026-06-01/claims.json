@@ -1,5 +1,27 @@
 [
   {
+    "claim_id": "CL-26446624f5423406",
+    "raw_id": "RAW-8c5a0fa27152a2e4",
+    "claim_type": "product_release",
+    "subject": "NVIDIA",
+    "predicate": "product_release",
+    "object": "NVIDIA Factory Operations Blueprint (FOX)",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1,
+      "model_candidate_id": "MAC-6c6b31a25e7b4dab"
+    },
+    "source_span": {
+      "raw_id": "RAW-8c5a0fa27152a2e4",
+      "start": 245,
+      "end": 570
+    },
+    "source_quote": "Today at GTC Taipei at COMPUTEX, NVIDIA announced the NVIDIA Factory Operations Blueprint (FOX) — a reference design for building an autonomous factory manager agent that continuously monitors and reasons across the real-time data and orchestrates a fleet of speciality agents and machines to quickly resolve issues at scale.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-c760dac3d6f48dfe",
     "raw_id": "RAW-9a1f993458bdc080",
     "claim_type": "product_release",
@@ -81,6 +103,28 @@
     "source_quote": "Adobe is rearchitecting its Photoshop and Premiere apps, Blender is adding NVIDIA DLSS 4.5 Ray Reconstruction, and NVIDIA unveiled RTX Video Frame Generation, which will be coming to ComfyUI. All these updates arrive this fall with RTX Spark.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-8c70e88620847c47",
+    "raw_id": "RAW-589d16513ed85539",
+    "claim_type": "model_release",
+    "subject": "MiniMax",
+    "predicate": "model_release",
+    "object": "MiniMax M3",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-f5f590c8b19f7272"
+    },
+    "source_span": {
+      "raw_id": "RAW-589d16513ed85539",
+      "start": 0,
+      "end": 40
+    },
+    "source_quote": "MiniMax M3 is officially released today.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -780,6 +824,50 @@
     "source_quote": "IT之家从英伟达公告获悉， 从今年秋季开始 ，Vera 系统将通过系统构建商和云合作伙伴提供。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-dd6b1ab27ed33ef4",
+    "raw_id": "RAW-168aa47321a980e1",
+    "claim_type": "deployment",
+    "subject": "OpenAI",
+    "predicate": "deployment",
+    "object": "部分日本金融机构",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-c48956e1934d5b32"
+    },
+    "source_span": {
+      "raw_id": "RAW-168aa47321a980e1",
+      "start": 49,
+      "end": 90
+    },
+    "source_quote": "OpenAI 已向部分日本金融机构开放 GPT-5.5 Cyber 模型的使用权限",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-73070538ad9739ec",
+    "raw_id": "RAW-168aa47321a980e1",
+    "claim_type": "deployment",
+    "subject": "日本政府及各类金融机构",
+    "predicate": "deployment",
+    "object": "Claude Mythos 模型",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-c48956e1934d5b32"
+    },
+    "source_span": {
+      "raw_id": "RAW-168aa47321a980e1",
+      "start": 426,
+      "end": 460
+    },
+    "source_quote": "日本政府及各类金融机构后续也将接入 Claude Mythos 模型",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   }
 ]

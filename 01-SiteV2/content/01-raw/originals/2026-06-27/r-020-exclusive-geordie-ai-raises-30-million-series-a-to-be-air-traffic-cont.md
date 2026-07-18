@@ -72,7 +72,7 @@ key_excerpts: [{"type":"funding","text":"Geordie AI, a London-based startup whic
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
-title_zh: "独家：Geordie AI获3000万美元A轮融资，欲做企业AI代理的“空中交通管制”"
+title_zh: "独家：Geordie AI 获 3000 万美元 A 轮融资，做企业 AI 智能体的“空中交通管制”"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

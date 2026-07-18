@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-049
 title: "Google's take on openclaw"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "谷歌对OpenClaw的看法"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.bensbites.com/p/googles-take-on-openclaw"
 canonical_url: "https://bensbites.com/p/googles-take-on-openclaw"
 source_name: "Ben's Bites AI Newsletter"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-12T09:55:35.320Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Google's take on openclaw

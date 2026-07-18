@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T01:57:40.269Z",
-    "latestDataDate": "2026-07-17",
-    "currentDate": "2026-07-17",
-    "eventCount": 832,
-    "quarantinedEventCount": 60
+    "generatedAt": "2026-07-18T04:59:59.870Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 1250,
+    "quarantinedEventCount": 11
   },
   "fde": [
     {
@@ -88,6 +88,81 @@
       "entityIds": [
         "EN-c70eca6b0f88f44d",
         "EN-7d3194f79e645c42"
+      ]
+    },
+    {
+      "id": "FDE-4f2a8cb5ce476228",
+      "eventId": "EV-3dd0912fae720df7",
+      "dataDate": "2026-07-16",
+      "date": "2026-07-14",
+      "title": "巴西银行将智能体AI嵌入核心工作流程，强化关系银行与客户互动",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Banco do Brasil",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "NiCE Copilot",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "In 2025, Banco do Brasil integrated WhatsApp into the NiCE CXone platform, creating a centralized, secure, and traceable environment for customer interactions."
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://nice.com/press-releases/banco-do-brasil-embeds-agentic-ai-into-core-workflows-to-strengthen-relationship-banking-and-customer-engagement",
+      "entityIds": [
+        "EN-d3565d297d476f10"
+      ]
+    },
+    {
+      "id": "FDE-19b85871fbe45a6b",
+      "eventId": "EV-38232fed5e0cfdd6",
+      "dataDate": "2026-07-10",
+      "date": "2026-07-10",
+      "title": "Converteo案例研究",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Converteo",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "Gemini Enterprise licenses",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "With a plan to deploy more than 420 Gemini Enterprise licenses internally by the first quarter of 2026, we are not just advising on transformation: we are first implementing it ourselves to exponentially increase our efficiency and the value we provide to our clients.",
+        "Deployment began in the summer of 2025 with a pilot phase focused on quick-to-implement use cases."
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://cloud.google.com/customers/converteo",
+      "entityIds": [
+        "EN-8f0fc08915b27c29",
+        "EN-bbdefa2950f49882"
       ]
     },
     {
@@ -279,7 +354,7 @@
       "eventId": "EV-181b425d2a600cad",
       "dataDate": "2026-07-09",
       "date": "2026-07-09",
-      "title": "Cognizant宣布与ServiceNow合作，加速企业级可扩展、可操作的AI治理落地",
+      "title": "Cognizant 宣布与 ServiceNow 合作，加速企业级可扩展、可操作的 AI 治理",
       "stage": "announced",
       "stageLabel": "已公布",
       "customer": "Cognizant announces ServiceNow",
@@ -318,6 +393,51 @@
         "EN-b5738c169b693bee",
         "EN-8f71c4871a160172",
         "EN-96eebba49dbbf422"
+      ]
+    },
+    {
+      "id": "FDE-174d6829d3cb848a",
+      "eventId": "EV-0a96b17e1977ae89",
+      "dataDate": "2026-07-06",
+      "date": "2026-07-06",
+      "title": "Talkdesk 终结部署面向客户的 AI 智能体的不确定性",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Talkdesk ends the guesswork in",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "customer-facing AI agents - Press Releases | Talkdesk",
+      "reportedNeed": "Organizations need proof that an agent will follow instructions, stay on brand, and handle pressure before a real customer ever experiences it",
+      "deliveryComponents": [
+        "Talkdesk ends the guesswork in deploying customer-facing AI agents",
+        "By functioning as a specialized agent-building agent, the platform automatically ingests an enterprise’s existing raw assets, such as standard operating procedures and policies, and translates them into high-precision logical instructions and structured guardrails. Once new AI Agents are approved by a human operator and deployed, they’re continuously monitored, evaluated, and governed through the CXA Operations Center . This complete framework helps organizations grow their AI workforce without multiplying their operational risk.",
+        "Talkdesk Agent Builder enables teams to create, test, and validate AI agents before deployment — turning ideas into production-ready AI workers in hours, not weeks"
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "sourceUrl": "https://talkdesk.com/news-and-press/press-releases/agent-builder",
+      "entityIds": [
+        "EN-3474e24464fc25a7"
       ]
     },
     {
@@ -411,6 +531,43 @@
       ]
     },
     {
+      "id": "FDE-b63c5be17a7824f3",
+      "eventId": "EV-9ae75de8b32a680a",
+      "dataDate": "2026-07-05",
+      "date": "2026-07-05",
+      "title": "LG Display 用 AI 降本，每年可省超 2000 亿韩元",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "LG Display",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "自研人工智能生产系统",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "自去年起，公司已在全部有机发光二极管（OLED）产线部署自研人工智能生产系统。"
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/972/712.htm",
+      "entityIds": [
+        "EN-649b26ef4980eb43"
+      ]
+    },
+    {
       "id": "FDE-1b1197864e953ff1",
       "eventId": "EV-36d484148fbd3424",
       "dataDate": "2026-07-04",
@@ -449,11 +606,60 @@
       ]
     },
     {
+      "id": "FDE-8c57145ddc067b7d",
+      "eventId": "EV-fe601e081c090971",
+      "dataDate": "2026-07-02",
+      "date": "2026-07-02",
+      "title": "Zillow 如何利用 AI 在 7,000 名员工中部署 Glean，每人每周节省 1.5 小时以上",
+      "stage": "completed",
+      "stageLabel": "已完成",
+      "customer": "Zillow",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "Glean",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "Zillow deployed Glean across its entire workforce, connecting 30+ data sources with 138M documents and enabling teams to build 3,400+ AI agents using natural language — achieving 80%+ adoption and saving employees 1.5+ hours per week.",
+        "One standout deployment was the Self Review agent, which guided employees through performance review self-assessments and was run approximately 10,000 times, contributing to a 7% increase in review participation.",
+        "Zillow also integrated Glean MCP with developer tools including Cursor and Claude Code, extending AI-assisted search into engineering workflows."
+      ],
+      "outcomes": [],
+      "metrics": [
+        "80%",
+        "7%"
+      ],
+      "undisclosedFields": [
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "sourceUrl": "https://theapplied.co/use-cases/how-zillow-deployed-glean-across-7000-employees-and-saved-1-5-hours-per-person-per-week",
+      "entityIds": [
+        "EN-5a08fbb37039e825",
+        "EN-c70eca6b0f88f44d"
+      ]
+    },
+    {
       "id": "FDE-a14e04658a7d88f2",
       "eventId": "EV-06487af6e98ea491",
       "dataDate": "2026-07-02",
       "date": "2026-07-02",
-      "title": "AppliedAI与麦肯锡合作，利用AI快速重构受监管企业流程",
+      "title": "AppliedAI 与麦肯锡公司合作，利用 AI 快速重构受监管的企业流程",
       "stage": "announced",
       "stageLabel": "已公布",
       "customer": "AppliedAI",
@@ -575,6 +781,44 @@
       ]
     },
     {
+      "id": "FDE-26e5a1821fa5cbd0",
+      "eventId": "EV-ae7b6d0c134c9cad",
+      "dataDate": "2026-07-13",
+      "date": "2026-07-01",
+      "title": "JAKALA 借助 Claude 智能体将营销周期从 7 天缩短至 24 小时",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "JAKALA",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "Claude Enterprise to over 3,000 employees",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "rolled out Claude Enterprise to over 3,000 employees",
+        "deploying specialized Performance Agents across client media and marketing workflows"
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://theapplied.co/use-cases/how-jakala-cuts-campaign-cycles-from-7-days-to-24-hours-with-claude-agents",
+      "entityIds": [
+        "EN-89be33615acf235c",
+        "EN-c70eca6b0f88f44d"
+      ]
+    },
+    {
       "id": "FDE-33ed0bdb7b19e3d1",
       "eventId": "EV-9efcf6480f6c6f48",
       "dataDate": "2026-07-01",
@@ -673,6 +917,40 @@
       ]
     },
     {
+      "id": "FDE-e13cb9813c58c47f",
+      "eventId": "EV-6808f7d1be84c23c",
+      "dataDate": "2026-07-01",
+      "date": "2026-07-01",
+      "title": "为客户体验实施人工智能",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "AI",
+      "vendor": "Info-Tech Research Group",
+      "industry": "未披露",
+      "useCase": "AI for Customer Experience | Info-Tech Research Group",
+      "reportedNeed": "Use AI to supercharge your customer experience outcomes and propel your brand forward",
+      "deliveryComponents": [],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_delivery_components",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://infotech.com/research/ss/implement-ai-for-customer-experience",
+      "entityIds": [
+        "EN-32e83e92d45d71f6"
+      ]
+    },
+    {
       "id": "FDE-e1b2683e8d017358",
       "eventId": "EV-86247a326e79bb88",
       "dataDate": "2026-06-28",
@@ -712,7 +990,7 @@
       "eventId": "EV-3d80a399cdb2bb72",
       "dataDate": "2026-06-27",
       "date": "2026-06-27",
-      "title": "开发与部署生成式AI - Altman Solon",
+      "title": "开发和部署生成式 AI - Altman Solon",
       "stage": "announced",
       "stageLabel": "已公布",
       "customer": "Developing and",
@@ -747,7 +1025,7 @@
       "eventId": "EV-bb9ba11acf104db1",
       "dataDate": "2026-06-27",
       "date": "2026-06-27",
-      "title": "Travelport、Cognizant与Anthropic合作，为AI时代赋能旅游技术",
+      "title": "Travelport、Cognizant 与 Anthropic 合作，为 AI 时代赋能旅行技术",
       "stage": "announced",
       "stageLabel": "已公布",
       "customer": "Travelport",
@@ -847,7 +1125,6 @@
         "industry",
         "workflow_before",
         "workflow_after",
-        "delivery_model",
         "team_composition",
         "reported_need",
         "systems_integrated",
@@ -868,7 +1145,7 @@
       "eventId": "EV-b95539d17772a4ce",
       "dataDate": "2026-06-25",
       "date": "2026-06-25",
-      "title": "ServiceNow与Nvidia扩大合作，推出新AI代理 - 《经济时报》",
+      "title": "ServiceNow与Nvidia扩大合作，推出新AI智能体",
       "stage": "announced",
       "stageLabel": "已公布",
       "customer": "ServiceNow",
@@ -970,10 +1247,10 @@
       "stage": "completed",
       "stageLabel": "已完成",
       "customer": "ServiceNow",
-      "vendor": "未披露",
+      "vendor": "ServiceNow and Accenture",
       "industry": "未披露",
       "useCase": "Engineering Program to Scale Agentic AI Across the Enterprise",
-      "reportedNeed": "未披露",
+      "reportedNeed": "Help enterprises take agentic AI from enterprise pilot to production at scale",
       "deliveryComponents": [
         "ServiceNow and Accenture Launch Forward Deployed Engineering Program to Scale Agentic AI Across the Enterprise",
         "LAS VEGAS; Knowledge 2026; May 6, 2026 – Today, ServiceNow (NYSE: NOW), the AI control tower for business reinvention, and Accenture (NYSE: ACN) announced a forward deployed engineering (FDE) program to help enterprises take agentic AI from enterprise pilot to production at scale.",
@@ -983,14 +1260,11 @@
       "outcomes": [],
       "metrics": [],
       "undisclosedFields": [
-        "vendor",
         "industry",
         "workflow_before",
         "workflow_after",
         "delivery_model",
         "team_composition",
-        "reported_need",
-        "systems_integrated",
         "data_requirements",
         "governance_controls",
         "reported_outcomes"
@@ -1014,7 +1288,7 @@
       "eventId": "EV-f63462e34ea40699",
       "dataDate": "2026-06-25",
       "date": "2026-06-25",
-      "title": "ServiceNow与英伟达扩大合作，推出全新AI代理，ETTelecom",
+      "title": "ServiceNow 与 Nvidia 扩大合作，推出全新 AI 智能体",
       "stage": "announced",
       "stageLabel": "已公布",
       "customer": "ServiceNow",
@@ -1063,7 +1337,7 @@
       "eventId": "EV-794296a712c1cf15",
       "dataDate": "2026-06-29",
       "date": "2026-06-24",
-      "title": "Infosys与Sentara合作，解锁AI价值并扩大医疗保健服务中的企业AI应用规模",
+      "title": "Infosys 与 Sentara 合作，解锁 AI 价值并规模化医疗服务业的企业 AI 应用",
       "stage": "announced",
       "stageLabel": "已公布",
       "customer": "Sentara",
@@ -1138,7 +1412,7 @@
       "eventId": "EV-e869f17214557633",
       "dataDate": "2026-06-29",
       "date": "2026-06-23",
-      "title": "Talkdesk终结客户面向AI部署中的猜测",
+      "title": "Talkdesk 终结客户服务 AI 部署中的猜测",
       "stage": "announced",
       "stageLabel": "已公布",
       "customer": "Talkdesk ends the guesswork in",
@@ -1330,6 +1604,83 @@
       ]
     },
     {
+      "id": "FDE-a9fc583eb4065d4d",
+      "eventId": "EV-57d3b7aa1a2f0fda",
+      "dataDate": "2026-06-22",
+      "date": "2026-06-22",
+      "title": "HD 现代基于英伟达 Isaac Sim 研发造船 AI 机器人，先用于焊接工序",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "HD 现代",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "基于英伟达 Isaac Sim 平台训练的实体人工智能机器人",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_delivery_components",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/966/881.htm",
+      "entityIds": [
+        "EN-3cce50ffb12f1a69",
+        "EN-8d4321d936320802"
+      ]
+    },
+    {
+      "id": "FDE-b6cd49fa4df2b3fa",
+      "eventId": "EV-ec711aed6721bb30",
+      "dataDate": "2026-06-22",
+      "date": "2026-06-22",
+      "title": "宣布OCI企业AI正式上市：简化构建、部署和管理生产级AI的途径",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Rime",
+      "vendor": "Oracle",
+      "industry": "未披露",
+      "useCase": "and govern production AI faster | ai-data-science",
+      "reportedNeed": "Enterprises are racing to unlock value from generative and agentic AI, but fragmented tools and complex integration slow progress and increase risk. Many organizations struggle to access and integrate leading AI models from multiple providers, often working with disconnected tools that limit advanced use cases and stifle innovation. Building, orchestrating, and deploying agentic workloads can be complex and time-consuming, requiring teams to stitch together disparate solutions without consistent support for standard protocols or integrated security. Meeting stringent security, compliance, and governance requirements across AI services is an ongoing concern, exposing organizations to data protection risks and regulatory gaps. These challenges prevent companies from rapidly delivering value with AI and fully realizing its potential.",
+      "deliveryComponents": [
+        "Enterprises are racing to unlock value from generative and agentic AI, but fragmented tools and complex integration slow progress and increase risk. Many organizations struggle to access and integrate leading AI models from multiple providers, often working with disconnected tools that limit advanced use cases and stifle innovation. Building, orchestrating, and deploying agentic workloads can be complex and time-consuming, requiring teams to stitch together disparate solutions without consistent support for standard protocols or integrated security. Meeting stringent security, compliance, and governance requirements across AI services is an ongoing concern, exposing organizations to data protection risks and regulatory gaps. These challenges prevent companies from rapidly delivering value with AI and fully realizing its potential."
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "industry",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "systems_integrated",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "sourceUrl": "https://blogs.oracle.com/ai-and-datascience/announcing-oci-enterprise-ai-ga",
+      "entityIds": [
+        "EN-b0532e1af75cc4ab"
+      ]
+    },
+    {
       "id": "FDE-0ee0fe3baa3f1364",
       "eventId": "EV-d1e2a7c6d314612c",
       "dataDate": "2026-06-21",
@@ -1380,6 +1731,55 @@
         "EN-c70eca6b0f88f44d",
         "EN-7d3194f79e645c42"
       ]
+    },
+    {
+      "id": "FDE-a68ccf61a21e22ce",
+      "eventId": "EV-4c0af31f1399ea8c",
+      "dataDate": "2026-06-21",
+      "date": "2026-06-21",
+      "title": "Pernod Ricard 如何将企业 AI 部署到 28 个国家",
+      "stage": "completed",
+      "stageLabel": "已完成",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "Alcohol",
+      "useCase": "Enterprise AI to 28 Countries",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "Pierre-Yves Calloc’h spent 20 years at Pernod Ricard—the company behind some of the world’s biggest alcohol brands—first as managing director, then CIO, and CDO. When he turned his attention to the company’s first AI projects, he treated governance as a design constraint from day one: something to be solved for rather than negotiated around after the fact. The D-Star program he led was deployed to the sales force in 28 countries, with 85% adoption and $15M in annual ROI in the US alone.",
+        "That kind of responsiveness would be impossible on a standard enterprise release cycle, where UI changes might ship every six months. Retool’s cadence of building and deploying changes in hours rather than quarters meant the team could adapt country by country. When the US needed enough customization to justify a fork, the $15M annual return made the call easy, and the one-to-two-million merge cost was a manageable follow-up."
+      ],
+      "outcomes": [
+        "85% adoption",
+        "$15M annual ROI in the US",
+        "Control group demanded access via union after three weeks"
+      ],
+      "metrics": [
+        "85%",
+        "$15M",
+        "$15M"
+      ],
+      "undisclosedFields": [
+        "customer",
+        "vendor",
+        "workflow_before",
+        "workflow_after",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls"
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成"
+        }
+      ],
+      "sourceUrl": "https://retool.com/blog/pernod-ricard-enterprise-ai-deployment",
+      "entityIds": []
     },
     {
       "id": "FDE-d51458c45a717405",
@@ -1467,7 +1867,7 @@
       "eventId": "EV-06b294f255c0087e",
       "dataDate": "2026-06-18",
       "date": "2026-06-18",
-      "title": "治理型AI代理：如何自信部署与规模化",
+      "title": "受控AI智能体：如何自信部署与规模化",
       "stage": "planned",
       "stageLabel": "计划中",
       "customer": "Governed AI Agents",
@@ -1789,7 +2189,7 @@
       "eventId": "EV-ec2e421d0e18be9b",
       "dataDate": "2026-06-07",
       "date": "2026-06-07",
-      "title": "Snowflake 扩大与AWS合作，承诺投入60亿美元用于AI",
+      "title": "Snowflake 扩大与 AWS 的合作，承诺投入 60 亿美元用于 AI",
       "stage": "announced",
       "stageLabel": "已公布",
       "customer": "Amazon",
@@ -1876,7 +2276,7 @@
       "eventId": "EV-b2e374d54b10b9af",
       "dataDate": "2026-07-16",
       "date": "2026-06-04",
-      "title": "C3 AI与壳牌扩大合作，在全球资产运营中规模化部署可靠性AI",
+      "title": "C3 AI 与壳牌扩大合作，在全球资产运营中规模化部署可靠性AI智能体",
       "stage": "announced",
       "stageLabel": "已公布",
       "customer": "C3 AI",
@@ -2161,7 +2561,7 @@
       "eventId": "EV-c0a65877001ed413",
       "dataDate": "2026-05-22",
       "date": "2026-05-22",
-      "title": "Snowflake与Anthropic宣布2亿美元合作，将代理式AI引入全球企业",
+      "title": "Snowflake 与 Anthropic 宣布 2 亿美元合作，为全球企业带来 AI 智能体",
       "stage": "announced",
       "stageLabel": "已公布",
       "customer": "Snowflake",
@@ -2383,7 +2783,7 @@
       "eventId": "EV-afd0332ad8f5f05b",
       "dataDate": "2026-06-29",
       "date": "2026-04-28",
-      "title": "CCS为慢性护理患者部署企业级代理型AI",
+      "title": "CCS 部署企业级 AI 智能体，服务慢性病患者",
       "stage": "announced",
       "stageLabel": "已公布",
       "customer": "CCS",
@@ -2422,6 +2822,89 @@
       "entityIds": [
         "EN-8d291c7017252b07",
         "EN-8147e6fed86d42c1"
+      ]
+    },
+    {
+      "id": "FDE-226f304c9cf13a74",
+      "eventId": "EV-029d34e296397775",
+      "dataDate": "2026-06-15",
+      "date": "2026-04-12",
+      "title": "谷歌A2A代理市场正式上线：首个自然语言代理发现平台",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Google",
+      "vendor": "Google",
+      "industry": "Technology",
+      "useCase": "The First Natural Language Agent Discovery Platform | AgentMarketCap",
+      "reportedNeed": "Enterprise teams need a low-friction path to discover, evaluate, and deploy third-party AI agents with standardized interoperability and procurement.",
+      "deliveryComponents": [
+        "Google Cloud just made it possible to shop for AI agents the same way you ask a question — in plain English. The new AI Agent Marketplace, integrated directly into Google Cloud Marketplace, lets enterprise teams discover, evaluate, and deploy third-party agents built on the Agent2Agent (A2A) protocol using Gemini-powered natural language search. It is the first major cloud marketplace where the discovery layer itself is agentic.",
+        "For the Google Cloud Agent Marketplace specifically, this means listed agents can leverage MCP for their internal tool integrations while exposing A2A interfaces for inter-agent collaboration. An enterprise team deploying a ServiceNow ITSM agent alongside an Elastic observability agent can orchestrate them through A2A without either agent needing to understand the other's internal MCP tool connections.",
+        "For enterprise teams evaluating agent procurement strategy, the practical recommendation is straightforward: if you are already on Google Cloud, the Agent Marketplace is now the lowest-friction path to deploying third-party agents. If you are multi-cloud, watch for equivalent marketplace offerings from AWS and Azure — both have A2A support, and both have existing marketplace infrastructure that could host similar agent directories."
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "sourceUrl": "https://agentmarketcap.ai/blog/2026/04/12/gemini-a2a-agent-marketplace-enterprise-discovery",
+      "entityIds": [
+        "EN-3aa7606e6aa345a3",
+        "EN-bbdefa2950f49882",
+        "EN-b5738c169b693bee"
+      ]
+    },
+    {
+      "id": "FDE-3665b073634d4b9d",
+      "eventId": "EV-05a87b578967c83e",
+      "dataDate": "2026-07-18",
+      "date": "2026-03-04",
+      "title": "Singtel Group 与 Sierra 合作，借助 AI 智能体革新客户互动体验",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Sierra",
+      "vendor": "Singtel Group",
+      "industry": "未披露",
+      "useCase": "Sierra to transform customer engagement with AI | Sierra",
+      "reportedNeed": "More personalised experiences, greater convenience and faster, more responsive service",
+      "deliveryComponents": [
+        "Mr Ng Tian Chong, Chief Executive Officer, Singtel Singapore, said: “Putting our customers first has always been at the heart of what we do. The deployment of agentic AI across chat and voice is about delivering real value — more personalised experiences, greater convenience and faster, more responsive service. By using AI to support our customer service teams, we can ensure customers are promptly and well assisted, while empowering our agents to focus on more complex cases where human expertise matters most. Our AI agents are designed to understand local expressions and even Singlish, reflecting our roots as a homegrown company serving a diverse nation. This marks an important step in redefining how we build and sustain customer relationships in the AI era.”"
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "industry",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "sourceUrl": "https://sierra.ai/customers/singtel",
+      "entityIds": [
+        "EN-19e41212c0556603",
+        "EN-dca6ec9510fc0176"
       ]
     }
   ]

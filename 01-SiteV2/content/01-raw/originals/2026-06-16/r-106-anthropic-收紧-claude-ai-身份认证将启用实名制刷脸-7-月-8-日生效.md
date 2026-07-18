@@ -72,6 +72,10 @@ key_excerpts: [{"type":"supporting_context","text":"Anthropic 自 7 月 8 日起
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
+title_zh: "Anthropic 收紧 Claude AI：身份认证将启用实名制刷脸，7 月 8 日生效"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Anthropic 收紧 Claude AI：身份认证将启用实名制刷脸，7 月 8 日生效

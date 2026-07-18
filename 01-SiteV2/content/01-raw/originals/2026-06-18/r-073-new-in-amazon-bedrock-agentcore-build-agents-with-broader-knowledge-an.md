@@ -72,7 +72,7 @@ key_excerpts: [{"type":"company_action","text":"Today we’re introducing new ca
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
-title_zh: "Amazon Bedrock AgentCore新增功能：构建知识更广、持续学习的智能体 | 人工智能"
+title_zh: "Amazon Bedrock AgentCore新增功能：构建知识更广、持续学习的智能体"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"quote","text":"HD 现代正基于英伟达 Isaac Sim 平
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "HD 现代基于英伟达 Isaac Sim 研发造船 AI 机器人，先用于焊接工序"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # HD 现代基于英伟达 Isaac Sim 研发造船 AI 机器人，先用于焊接工序

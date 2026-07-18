@@ -2,7 +2,7 @@
 id: SIG-20260621-A13
 type: signal_card
 signal_type: case
-title: "Harvey AI的前线部署工程师：这家估值30亿美元的法律AI领导者如何在大律所内部部署 | 博客 | Perspective AI"
+title: "Harvey AI的前线部署工程师：这家估值30亿美元的法律AI领导者如何在大律所内部部署 | 博客"
 date: 2026-06-21
 status: published
 source_title: "Harvey AI's Forward Deployed Engineers: How the $3B Legal AI Leader Deploys Inside BigLaw | Blog | Perspective AI"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Harvey AI's Forward Deployed Engineers"
 
 frontend:
-  displayTitle: "Harvey AI的前线部署工程师：这家估值30亿美元的法律AI领导者如何在大律所内部部署 | 博客 | Perspective AI"
+  displayTitle: "Harvey AI的前线部署工程师：这家估值30亿美元的法律AI领导者如何在大律所内部部署 | 博客"
   sourceLinks:
     - "https://getperspective.ai/blog/harvey-ai-forward-deployed-engineers-biglaw-deployment-playbook-2026"
 ---
 
-# Harvey AI的前线部署工程师：这家估值30亿美元的法律AI领导者如何在大律所内部部署 | 博客 | Perspective AI
+# Harvey AI的前线部署工程师：这家估值30亿美元的法律AI领导者如何在大律所内部部署 | 博客
 
 ## 新闻事实
 

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"supporting_context","text":"美国商务部解除对Anth
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "美国解除对Anthropic的Mythos与Fable模型出口限制，7月1日恢复公众访问"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 美国解除对Anthropic的Mythos与Fable模型出口限制，7月1日恢复公众访问

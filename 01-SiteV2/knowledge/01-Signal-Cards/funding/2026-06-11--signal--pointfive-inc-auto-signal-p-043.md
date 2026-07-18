@@ -2,7 +2,7 @@
 id: SIG-20260611-A03
 type: signal_card
 signal_type: funding
-title: "AI基础设施成本控制初创公司PointFive获6000万美元融资，助力企业节省开支"
+title: "AI 基础设施成本控制初创公司 PointFive 获 6000 万美元融资，助力企业节省开支"
 date: 2026-06-11
 status: published
 source_title: "AI infrastructure cost control startup PointFive gets $60M to help enterprises save - SiliconANGLE"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "PointFive Inc."
 
 frontend:
-  displayTitle: "AI基础设施成本控制初创公司PointFive获6000万美元融资，助力企业节省开支"
+  displayTitle: "AI 基础设施成本控制初创公司 PointFive 获 6000 万美元融资，助力企业节省开支"
   sourceLinks:
     - "https://siliconangle.com/2026/06/08/ai-infrastructure-cost-control-startup-pointfive-gets-60m-help-enterprises-save/"
 ---
 
-# AI基础设施成本控制初创公司PointFive获6000万美元融资，助力企业节省开支
+# AI 基础设施成本控制初创公司 PointFive 获 6000 万美元融资，助力企业节省开支
 
 ## 新闻事实
 

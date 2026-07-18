@@ -252,6 +252,28 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-5007d62a4e1c7f30",
+    "raw_id": "RAW-0331d95c34e0a209",
+    "claim_type": "funding",
+    "subject": "Liquid AI",
+    "predicate": "funding",
+    "object": "$37.5 million seed round",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-154d791f64e8f732"
+    },
+    "source_span": {
+      "raw_id": "RAW-0331d95c34e0a209",
+      "start": 520,
+      "end": 972
+    },
+    "source_quote": "The spinoff, aptly named Liquid AI , emerged from stealth this morning and announced that it has raised $37.5 million — substantial for a two-stage seed round — from VCs and organizations including OSS Capital, PagsGroup, WordPress parent company Automattic, Samsung Next, Bold Capital Partners and ISAI Cap Venture, as well as angel investors like GitHub co-founder Tom Preston Werner, Shopify co-founder Tobias Lütke and Red Hat co-founder Bob Young.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-9071e8a4c51305e5",
     "raw_id": "RAW-8a01db78f77383eb",
     "claim_type": "product_release",
@@ -333,6 +355,28 @@
     "source_quote": "It is now allowing Anthropic to make Mythos 5 available to more than 100 specific U.S. government agencies and companies, including allowing the non-American employees at those organizations to access to the model, both Semafor and Reuters report. This list also includes Anthropic’s own non-American employees, who were included in the original ban that forbade non-Americans from accessing the models.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-22cb80c816db9b2d",
+    "raw_id": "RAW-8818fe1205fea0a4",
+    "claim_type": "hardware_product",
+    "subject": "OpenAI",
+    "predicate": "hardware_product",
+    "object": "Jalapeño custom inference chip",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-0ffbc2b195491cfd"
+    },
+    "source_span": {
+      "raw_id": "RAW-8818fe1205fea0a4",
+      "start": 804,
+      "end": 912
+    },
+    "source_quote": "OpenAI just shared its plans to spice things up with Jalapeño, its custom inference chip built with Broadcom",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -669,6 +713,72 @@
     "source_quote": "The diversified insurance and financial group, based in Ljubljana, Slovenia, has been using Copilot “heavily since the beginning” of the AI tool, says Klemen Ramoveš, chief digital officer, at Triglav.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-41bf852e392a3447",
+    "raw_id": "RAW-f33c7758a84b921a",
+    "claim_type": "deployment",
+    "subject": "Regis Aged Care",
+    "predicate": "deployment",
+    "object": "RegiCare Assist AI assistant",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-a5f9e9f19f4e4f85"
+    },
+    "source_span": {
+      "raw_id": "RAW-f33c7758a84b921a",
+      "start": 761,
+      "end": 946
+    },
+    "source_quote": "since September 2025, they’ve had help from RegiCare Assist, built with Microsoft Copilot Studio and Microsoft Foundry and developed by Regis Aged Care with solutions partner Cognizant.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-777761a48b35e321",
+    "raw_id": "RAW-43e6f63c1a516c1a",
+    "claim_type": "model_release",
+    "subject": "Z.ai",
+    "predicate": "model_release",
+    "object": "GLM-5.2",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-ba4c9e38e0433891"
+    },
+    "source_span": {
+      "raw_id": "RAW-43e6f63c1a516c1a",
+      "start": 80,
+      "end": 247
+    },
+    "source_quote": "Chinese AI lab Z.ai released GLM-5.2 to their coding plan subscribers on June 13th, and then yesterday (June 16th) released the full open weights under an MIT license.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-05bce2c14a63c181",
+    "raw_id": "RAW-8971c9521eac4b3c",
+    "claim_type": "organization_restructuring",
+    "subject": "SAP SE",
+    "predicate": "organization_restructuring",
+    "object": "forward deployed engineering teams",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-084fc452b7be74dd"
+    },
+    "source_span": {
+      "raw_id": "RAW-8971c9521eac4b3c",
+      "start": 754,
+      "end": 924
+    },
+    "source_quote": "The company will also create “forward deployed engineering” teams starting in July that will work with customers to develop its AI applications on top of SAP’s technology",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {

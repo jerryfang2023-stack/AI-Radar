@@ -72,7 +72,7 @@ key_excerpts: [{"type":"case_detail","text":"Forward deployed engineering is the
 theme: enterprise-ai-implementation-signal
 keyword_group: enterprise-ai-implementation-signal
 copyright_note: local research archive only
-title_zh: "什么是前向部署工程？4种方式助力AI发展..."
+title_zh: "什么是前向部署工程？4种方式助力人工智能"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

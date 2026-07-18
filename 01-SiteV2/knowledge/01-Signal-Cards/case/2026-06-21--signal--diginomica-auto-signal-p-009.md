@@ -2,7 +2,7 @@
 id: SIG-20260621-A16
 type: signal_card
 signal_type: case
-title: "随着代理型AI进入“困难期”，Salesforce的Forward Deployment工程师随时准备为企业提供支持。Jennifer Cramer解释了其运作方式。"
+title: "随着智能体 AI 进入“困难期”，Salesforce 的前向部署工程师随时准备为企业提供支持。Jennifer Cramer 详解其运作方式。"
 date: 2026-06-21
 status: published
 source_title: "As agentic AI hits 'a difficult age', Salesforce's Forward Deployment Engineers are on hand to, well, hold enterprise hands. Jennifer Cramer explains how it works"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Diginomica"
 
 frontend:
-  displayTitle: "随着代理型AI进入“困难期”，Salesforce的Forward Deployment工程师随时准备为企业提供支持。Jennifer Cramer解释了其运作方式。"
+  displayTitle: "随着智能体 AI 进入“困难期”，Salesforce 的前向部署工程师随时准备为企业提供支持。Jennifer Cramer 详解其运作方式。"
   sourceLinks:
     - "https://diginomica.com/agentic-ai-hits-difficult-age-salesforces-forward-deployment-engineers-are-hand-well-hold"
 ---
 
-# 随着代理型AI进入“困难期”，Salesforce的Forward Deployment工程师随时准备为企业提供支持。Jennifer Cramer解释了其运作方式。
+# 随着智能体 AI 进入“困难期”，Salesforce 的前向部署工程师随时准备为企业提供支持。Jennifer Cramer 详解其运作方式。
 
 ## 新闻事实
 

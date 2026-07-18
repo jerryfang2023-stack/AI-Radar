@@ -1,0 +1,68 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-18T04:59:59.870Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 1250,
+    "quarantinedEventCount": 11
+  },
+  "entity": {
+    "id": "EN-a58230dfd34e6d70",
+    "name": "U.S. government",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-0e7bfa49eb4ae5b2"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-01",
+    "lastSeen": "2026-07-02",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": [
+        "EV-0e7bfa49eb4ae5b2"
+      ]
+    },
+    "timeline": [
+      {
+        "id": "EV-0e7bfa49eb4ae5b2",
+        "dataDate": "2026-07-02",
+        "date": "2026-07-01",
+        "eventType": "policy_regulation",
+        "eventTypeLabel": "政策监管",
+        "eventGroup": "组织、政策与法律",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "美国解除对Anthropic的Mythos与Fable模型出口限制，7月1日恢复公众访问",
+        "displayTags": [],
+        "entityIds": [
+          "EN-a58230dfd34e6d70",
+          "EN-c70eca6b0f88f44d"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

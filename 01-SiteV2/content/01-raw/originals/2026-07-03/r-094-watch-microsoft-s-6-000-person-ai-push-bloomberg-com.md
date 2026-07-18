@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-094
 title: "Watch Microsoft's 6,000-Person AI Push - Bloomberg.com"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "微软 6,000 人 AI 大动作引关注"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.bloomberg.com/news/videos/2026-07-02/microsoft-s-6-000-person-ai-push-video"
 canonical_url: "https://bloomberg.com/news/videos/2026-07-02/microsoft-s-6-000-person-ai-push-video"
 source_name: "keyword search / Anysearch"
@@ -78,6 +78,7 @@ fact_extraction_completed_at: 2026-07-03T01:59:31.564Z
 theme: enterprise-ai-implementation-signal
 keyword_group: enterprise-ai-implementation-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Watch Microsoft's 6,000-Person AI Push - Bloomberg.com

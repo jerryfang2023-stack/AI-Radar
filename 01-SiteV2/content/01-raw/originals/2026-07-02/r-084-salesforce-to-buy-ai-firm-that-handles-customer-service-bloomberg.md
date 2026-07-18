@@ -72,6 +72,10 @@ key_excerpts: [{"type":"number","text":"Salesforce Inc. has agreed to buy Fin, a
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Salesforce 将收购处理客户服务的 AI 公司"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Salesforce to Buy AI Firm That Handles Customer Service - Bloomberg

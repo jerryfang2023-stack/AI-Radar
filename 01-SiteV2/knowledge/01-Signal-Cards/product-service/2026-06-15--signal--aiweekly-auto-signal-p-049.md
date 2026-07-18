@@ -2,7 +2,7 @@
 id: SIG-20260615-A08
 type: signal_card
 signal_type: product_service
-title: "Harvey借助Fireworks AI将推理成本降低3倍 | AI周报"
+title: "Harvey 借助 Fireworks AI 将推理成本降低 3 倍"
 date: 2026-06-15
 status: published
 source_title: "Harvey Cuts Inference Costs 3x With Fireworks AI | AI Weekly"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Aiweekly"
 
 frontend:
-  displayTitle: "Harvey借助Fireworks AI将推理成本降低3倍 | AI周报"
+  displayTitle: "Harvey 借助 Fireworks AI 将推理成本降低 3 倍"
   sourceLinks:
     - "https://aiweekly.co/alerts/harvey-cuts-inference-costs-3x-with-fireworks-ai"
 ---
 
-# Harvey借助Fireworks AI将推理成本降低3倍 | AI周报
+# Harvey 借助 Fireworks AI 将推理成本降低 3 倍
 
 ## 新闻事实
 

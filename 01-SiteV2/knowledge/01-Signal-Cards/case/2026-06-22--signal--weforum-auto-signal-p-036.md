@@ -2,7 +2,7 @@
 id: SIG-20260622-A10
 type: signal_card
 signal_type: case
-title: "哪些AI系统正在重塑企业创新？"
+title: "哪些 AI 系统正在重塑企业创新？"
 date: 2026-06-22
 status: published
 source_title: "Which AI systems are reshaping enterprise innovation?"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Weforum"
 
 frontend:
-  displayTitle: "哪些AI系统正在重塑企业创新？"
+  displayTitle: "哪些 AI 系统正在重塑企业创新？"
   sourceLinks:
     - "https://www.weforum.org/stories/2026/01/how-agentic-physical-and-sovereign-ai-are-rewriting-the-rules-of-enterprise-innovation/"
 ---
 
-# 哪些AI系统正在重塑企业创新？
+# 哪些 AI 系统正在重塑企业创新？
 
 ## 新闻事实
 

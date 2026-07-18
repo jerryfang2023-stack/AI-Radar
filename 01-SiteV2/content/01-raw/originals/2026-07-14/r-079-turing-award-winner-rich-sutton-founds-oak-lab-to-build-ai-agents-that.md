@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-079
 title: "Turing Award winner Rich Sutton founds Oak Lab to build AI agents that learn on their own"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "图灵奖得主 Rich Sutton 创立 Oak Lab，打造自主学习 AI 智能体"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://the-decoder.com/turing-award-winner-rich-sutton-founds-oak-lab-to-build-ai-agents-that-learn-on-their-own/"
 canonical_url: "https://the-decoder.com/turing-award-winner-rich-sutton-founds-oak-lab-to-build-ai-agents-that-learn-on-their-own"
 source_name: "The Decoder AI News"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-14T01:56:51.779Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Turing Award winner Rich Sutton founds Oak Lab to build AI agents that learn on their own

@@ -72,7 +72,7 @@ key_excerpts: [{"type":"case_detail","text":"A developer's guide to deploying ML
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
-title_zh: "AI模型部署：生产环境最佳实践"
+title_zh: "AI 模型部署：生产环境最佳实践"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

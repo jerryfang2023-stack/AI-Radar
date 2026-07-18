@@ -2,7 +2,7 @@
 id: SIG-20260702-A03
 type: signal_card
 signal_type: funding
-title: "宣布8亿美元C轮融资，加速开源AI转型"
+title: "宣布完成 8 亿美元 C 轮融资，加速向开源 AI 的转变"
 date: 2026-07-02
 status: published
 source_title: "Announcing our $800M Series C to accelerate the shift to open-source AI"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Together"
 
 frontend:
-  displayTitle: "宣布8亿美元C轮融资，加速开源AI转型"
+  displayTitle: "宣布完成 8 亿美元 C 轮融资，加速向开源 AI 的转变"
   sourceLinks:
     - "https://www.together.ai/blog/announcing-our-series-c"
 ---
 
-# 宣布8亿美元C轮融资，加速开源AI转型
+# 宣布完成 8 亿美元 C 轮融资，加速向开源 AI 的转变
 
 ## 新闻事实
 

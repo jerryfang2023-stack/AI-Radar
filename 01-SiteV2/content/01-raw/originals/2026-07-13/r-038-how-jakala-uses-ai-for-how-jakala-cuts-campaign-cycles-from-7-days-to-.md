@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-038
 title: "How JAKALA Uses AI for How JAKALA Cuts Campaign Cycles from 7 Days to 24 Hours with Claude Agents | Applied"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "JAKALA 借助 Claude 智能体将营销周期从 7 天缩短至 24 小时"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://theapplied.co/use-cases/how-jakala-cuts-campaign-cycles-from-7-days-to-24-hours-with-claude-agents"
 canonical_url: "https://theapplied.co/use-cases/how-jakala-cuts-campaign-cycles-from-7-days-to-24-hours-with-claude-agents"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-13T10:23:56.899Z
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # How JAKALA Uses AI for How JAKALA Cuts Campaign Cycles from 7 Days to 24 Hours with Claude Agents | Applied

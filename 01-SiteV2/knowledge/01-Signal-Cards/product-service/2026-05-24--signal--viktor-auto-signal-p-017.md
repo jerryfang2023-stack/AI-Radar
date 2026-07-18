@@ -2,7 +2,7 @@
 id: SIG-20260524-A11
 type: signal_card
 signal_type: product_service
-title: "AI同事初创公司Viktor在推出10周内实现1290万欧元营收运行率后，完成6470万欧元A轮融资 | EU-Startups"
+title: "AI 同事初创公司 Viktor 在推出后 10 周内达到 1290 万欧元营收运行率，随后完成 6470 万欧元 A 轮融资"
 date: 2026-05-24
 status: published
 asset_level: frontstage
@@ -58,7 +58,7 @@ signal_owner: "Viktor"
 watch_reason: "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
 
 frontend:
-  displayTitle: "AI同事初创公司Viktor在推出10周内实现1290万欧元营收运行率后，完成6470万欧元A轮融资 | EU-Startups"
+  displayTitle: "AI 同事初创公司 Viktor 在推出后 10 周内达到 1290 万欧元营收运行率，随后完成 6470 万欧元 A 轮融资"
   eventLine: "Viktor 发布新的 AI 能力，面向销售和收入团队流程。"
   whyWatch: "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"
   businessMeaning: "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
@@ -68,7 +68,7 @@ frontend:
     - "https://www.eu-startups.com/2026/05/ai-coworker-startup-viktor-raises-e64-7-million-series-a-after-hitting-e12-9-million-revenue-run-rate-within-10-weeks-of-launch/"
 ---
 
-# AI同事初创公司Viktor在推出10周内实现1290万欧元营收运行率后，完成6470万欧元A轮融资 | EU-Startups
+# AI 同事初创公司 Viktor 在推出后 10 周内达到 1290 万欧元营收运行率，随后完成 6470 万欧元 A 轮融资
 
 ## 信号底稿
 

@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-18T04:59:59.870Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 1250,
+    "quarantinedEventCount": 11
+  },
+  "entity": {
+    "id": "EN-814669895ed30dff",
+    "name": "Auger",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-dcbe916c6138e5cb"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-12",
+    "lastSeen": "2026-07-18",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-dcbe916c6138e5cb"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-dcbe916c6138e5cb",
+        "dataDate": "2026-07-18",
+        "date": "2026-07-12",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Auger 获 5000 万美元 B 轮融资，用于 AI 供应链自动化",
+        "displayTags": [],
+        "entityIds": [
+          "EN-814669895ed30dff",
+          "EN-cbc62794911ff31b",
+          "EN-ea3bd73e2b506e00"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

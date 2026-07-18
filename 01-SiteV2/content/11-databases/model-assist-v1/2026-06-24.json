@@ -1,154 +1,25 @@
 {
   "schema_version": "MODEL-ASSIST-V1.0",
-  "generated_at": "2026-07-18T01:56:33.150Z",
+  "generated_at": "2026-07-18T04:25:14.653Z",
   "data_date": "2026-06-24",
-  "prompt_version": "model-assist-2026-07-18.1",
+  "prompt_version": "model-assist-2026-07-18.2",
   "source_count": 190,
   "candidates": [
     {
-      "candidate_id": "MAC-0492a90049398720",
-      "task_type": "qa_repair",
-      "asset_id": "QA-0969c589be427677",
-      "raw_id": "RAW-d11ac2af8da55bee",
-      "source_ref": "SA-cca22969c3193ebc",
-      "source_hash": "f91836468dee303a",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "requires_review",
-      "proposal": {
-        "action": "recollect_original",
-        "reason": "The QA_REASON states 'event_not_ai_relevant', but the source text explicitly lists multiple AI features including 'AI 流体云' and 'AI 功能' sections. The title mentions '小布建议足球观赛卡' which is listed under 'AI 功能' in the source."
-      },
-      "evidence": [
-        {
-          "start": 554,
-          "end": 571,
-          "quote": "AI 功能\n新增小布建议足球观赛卡"
-        }
-      ],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "passed",
-          "detail": "task contract passed"
-        }
-      ],
-      "generated_at": "2026-07-18T01:34:44.261Z"
-    },
-    {
-      "candidate_id": "MAC-0a13fc8dd403b47a",
-      "task_type": "entity_resolution",
-      "asset_id": "EN-46a4eebd20d881ec",
-      "raw_id": "RAW-a1c3a711756b999c",
-      "source_ref": "SA-e7264c42b26f6fce",
-      "source_hash": "9eef3400b6af3638",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "requires_review",
-      "proposal": {
-        "decision": "same_entity",
-        "canonical_name": "Cursor",
-        "rationale": "The entity candidate 'Cursor' matches the subject of the SOURCE_TEXT, which discusses Cursor's announcements and products.",
-        "candidate_name": "Cursor"
-      },
-      "evidence": [
-        {
-          "start": 175,
-          "end": 280,
-          "quote": "Cursor has shared new details about its first fully self-trained AI model and announced two new products."
-        }
-      ],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "passed",
-          "detail": "task contract passed"
-        }
-      ],
-      "generated_at": "2026-07-18T01:34:41.265Z"
-    },
-    {
-      "candidate_id": "MAC-14e245b24b955cc3",
+      "candidate_id": "MAC-004770f0d10b8cba",
       "task_type": "claim_extraction",
-      "asset_id": "QA-bba14a9e1efb7914",
-      "raw_id": "RAW-bbc0d5340f6ec2fc",
-      "source_ref": "SA-7c321cc85a225411",
-      "source_hash": "00d9244ab6a2984d",
+      "asset_id": "QA-2adcf2e16f80d6bc",
+      "raw_id": "RAW-c1c0f7c61685ee18",
+      "source_ref": "SA-1823ca9cbe19cb50",
+      "source_hash": "0b580aa9f157bda4",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
+      "prompt_version": "model-assist-2026-07-18.2",
       "status": "rejected",
       "proposal": {
-        "claims": [
-          {
-            "event_type": "commercial",
-            "subject": "OpenAI",
-            "object": "GPT-5.5-Cyber",
-            "evidence_index": 0
-          },
-          {
-            "event_type": "commercial",
-            "subject": "OpenAI",
-            "object": "Codex Security plugin",
-            "evidence_index": 1
-          },
-          {
-            "event_type": "partnership",
-            "subject": "OpenAI",
-            "object": "over 25 security firms and several governments",
-            "evidence_index": 2
-          }
-        ]
+        "claims": []
       },
-      "evidence": [
-        {
-          "start": 1255,
-          "end": 1352,
-          "quote": "the full release of GPT-5.5-Cyber, a specialized model that sets new highs on security benchmarks"
-        },
-        {
-          "start": 1126,
-          "end": 1242,
-          "quote": "OpenAI is shipping an updated Codex Security plugin that covers the full pipeline from discovery to patch generation"
-        },
-        {
-          "start": 879,
-          "end": 951,
-          "quote": "a partner network of more than 25 security firms and several governments"
-        }
-      ],
+      "evidence": [],
       "gate_results": [
         {
           "gate": "source_hash",
@@ -157,8 +28,8 @@
         },
         {
           "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
+          "status": "failed",
+          "detail": "missing_source_evidence"
         },
         {
           "gate": "protected_facts",
@@ -168,13 +39,106 @@
         {
           "gate": "task_contract",
           "status": "failed",
-          "detail": "unsupported_claim_event_type:0, unsupported_claim_event_type:1"
+          "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-07-18T01:34:39.461Z"
+      "generated_at": "2026-07-18T04:07:51.974Z"
     },
     {
-      "candidate_id": "MAC-167d1239e4c340c4",
+      "candidate_id": "MAC-034f0f795c06cfab",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-0b79cf2de0ee6b8e",
+      "raw_id": "RAW-6f5d21c2918a7d65",
+      "source_ref": "SA-bd5416b7b74c8cac",
+      "source_hash": "c9383164a6cda24f",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "Groq",
+        "rationale": "The source describes Groq as an AI startup that signed a non-exclusive license agreement with NVIDIA, not as NVIDIA itself. The quote confirms Groq is a separate entity that licensed technology to NVIDIA.",
+        "candidate_name": "Groq"
+      },
+      "evidence": [
+        {
+          "start": 319,
+          "end": 361,
+          "quote": "AI 初创企业 Groq 在去年底与 NVIDIA（英伟达）签署了一份非独家授权协议"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T04:07:56.870Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "codex-data-review",
+        "reviewed_at": "2026-07-18T04:19:04.455Z",
+        "note": "queue-closeout:reviewed_as_distinct_entity"
+      }
+    },
+    {
+      "candidate_id": "MAC-0889be12d8161861",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-6366932323150c7d",
+      "raw_id": "RAW-ed555350d5bfd3b1",
+      "source_ref": "SA-13806ea5cbf06615",
+      "source_hash": "7597c20ee36de73a",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "missing_claim_proposal"
+        }
+      ],
+      "generated_at": "2026-07-18T04:07:53.174Z"
+    },
+    {
+      "candidate_id": "MAC-096cdc64d815c415",
       "task_type": "claim_extraction",
       "asset_id": "QA-3297ab6ef3fa9cc5",
       "raw_id": "RAW-55affd70e5ac8e64",
@@ -182,31 +146,36 @@
       "source_hash": "cfac449b414e933a",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
       "proposal": {
         "claims": [
           {
-            "event_type": "commercial",
+            "event_type": "funding",
             "subject": "Engram",
-            "object": "Microsoft",
+            "object": "$98M in funding from General Catalyst, Kleiner Perkins, Sequoia Capital, Factory, Modern, Amplify Partners, Neo and notable angels",
             "evidence_index": 0
           },
           {
-            "event_type": "commercial",
+            "event_type": "partnership",
             "subject": "Engram",
-            "object": "Notion",
+            "object": "Microsoft",
             "evidence_index": 1
           },
           {
-            "event_type": "commercial",
+            "event_type": "partnership",
             "subject": "Engram",
-            "object": "Harvey",
-            "evidence_index": 1
+            "object": "Notion and Harvey",
+            "evidence_index": 2
           }
         ]
       },
       "evidence": [
+        {
+          "start": 186,
+          "end": 609,
+          "quote": "Today, Engram, the company building the learned memory layer for AI, emerged from stealth with $98M in funding from General Catalyst, Kleiner Perkins, Sequoia Capital, Factory, Modern, Amplify Partners, Neo and notable angels and advisors including Assaf Rappaport, co-founder and CEO of Wiz, Andrej Karpathy, co-founder of OpenAI, and Pieter Abbeel, AI and robotics pioneer and co-director of the Berkeley AI Research Lab."
+        },
         {
           "start": 3438,
           "end": 3547,
@@ -236,22 +205,96 @@
         },
         {
           "gate": "task_contract",
-          "status": "failed",
-          "detail": "unsupported_claim_event_type:0, unsupported_claim_event_type:1, unsupported_claim_event_type:2"
+          "status": "passed",
+          "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-07-18T01:34:37.972Z"
+      "generated_at": "2026-07-18T04:07:54.477Z"
     },
     {
-      "candidate_id": "MAC-1bd959b659e101d7",
+      "candidate_id": "MAC-2eecd3e5605e3f26",
       "task_type": "claim_extraction",
-      "asset_id": "QA-6366932323150c7d",
-      "raw_id": "RAW-ed555350d5bfd3b1",
-      "source_ref": "SA-13806ea5cbf06615",
-      "source_hash": "7597c20ee36de73a",
+      "asset_id": "QA-a88e9cca6e0b5163",
+      "raw_id": "RAW-19989b8f819ae88b",
+      "source_ref": "SA-075b9f5cce323a24",
+      "source_hash": "57ddf7592caaea73",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "pricing_change",
+            "subject": "豆包",
+            "object": "保持免费",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "product_release",
+            "subject": "豆包",
+            "object": "专业版办公任务模式",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "model_release",
+            "subject": "豆包大模型 2.1 Pro",
+            "object": "API 服务",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 7,
+          "end": 16,
+          "quote": "豆包还是会保持免费"
+        },
+        {
+          "start": 433,
+          "end": 477,
+          "quote": "它最近会推出面向生产力场景的专业版办公任务模式，搭载的就是我们最新推出的 2.1 Pro"
+        },
+        {
+          "start": 828,
+          "end": 853,
+          "quote": "豆包大模型 2.1 已在火山引擎开放 API 服务"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T04:07:55.307Z"
+    },
+    {
+      "candidate_id": "MAC-35e1a774d83f82ea",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-bba14a9e1efb7914",
+      "raw_id": "RAW-bbc0d5340f6ec2fc",
+      "source_ref": "SA-7c321cc85a225411",
+      "source_hash": "00d9244ab6a2984d",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
       "status": "rejected",
       "proposal": {
         "claims": []
@@ -279,104 +322,45 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-07-18T01:34:37.210Z"
+      "generated_at": "2026-07-18T04:07:53.642Z"
     },
     {
-      "candidate_id": "MAC-221ad330312c301d",
+      "candidate_id": "MAC-3d9c449c26c88af0",
       "task_type": "claim_extraction",
-      "asset_id": "QA-ca69877dbffc0106",
-      "raw_id": "RAW-f6ab0223e361a888",
-      "source_ref": "SA-bb2e7c4146bafec4",
-      "source_hash": "863a39db568972b0",
+      "asset_id": "QA-98a01ac4b2fef4e4",
+      "raw_id": "RAW-5604872109b85a2a",
+      "source_ref": "SA-5c5b37615d1c435f",
+      "source_hash": "fa17f5211eb1827f",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
       "proposal": {
         "claims": [
           {
-            "event_type": "product launch",
-            "subject": "Mozilla",
-            "object": "安卓 15 2 版火狐 Firefox 浏览器",
+            "event_type": "model_release",
+            "subject": "VibeThinker-3B",
+            "object": "compact dense model with 3B parameters",
             "evidence_index": 0
           },
           {
-            "event_type": "product feature",
-            "subject": "安卓 152 版火狐 Firefox 浏览器",
-            "object": "Mistral Small 3.1",
+            "event_type": "research_result",
+            "subject": "VibeThinker-3B",
+            "object": "score of 93.4 on IFEval",
             "evidence_index": 1
-          },
-          {
-            "event_type": "product feature",
-            "subject": "安卓 152 版火狐 Firefox 浏览器",
-            "object": "英文网页",
-            "evidence_index": 2
           }
         ]
       },
       "evidence": [
         {
-          "start": 16,
-          "end": 103,
-          "quote": "Mozilla 昨日（6 月 22 日）发布更新日志，宣布在 安卓 15 2 版火狐 Firefox 浏览器中引入“网页摘要”功能， 用户摇一摇手机就能调用 AI 生成摘要。"
+          "start": 494,
+          "end": 689,
+          "quote": "This technical report introduces VibeThinker-3B, a compact dense model with 3B parameters developed to investigate how far verifiable reasoning can be pushed within a strictly small-model regime."
         },
         {
-          "start": 319,
-          "end": 418,
-          "quote": "底层方面，页面摘要依赖 Firefox 的云端 AI 方案，底层模型为 Mistral Small 3.1，长度上限为 5000 个单词，支持类型包括新闻、操作指南、评测、食谱、研究文章和评论文章。"
-        },
-        {
-          "start": 419,
-          "end": 465,
-          "quote": "该功能面向全球用户开放，但目前只支持英文网页，超长页面或不受支持的页面可能不会显示摘要入口。"
-        }
-      ],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "failed",
-          "detail": "unsupported_numeric_fact:152"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "unsupported_claim_event_type:0, unsupported_claim_event_type:1, unsupported_claim_event_type:2"
-        }
-      ],
-      "generated_at": "2026-07-18T01:34:40.891Z"
-    },
-    {
-      "candidate_id": "MAC-3ad02f6473cc67bb",
-      "task_type": "entity_resolution",
-      "asset_id": "EN-f346eaca864441f9",
-      "raw_id": "RAW-9e5f5bc0224f21c7",
-      "source_ref": "SA-880bf76d050f1840",
-      "source_hash": "7dc921bd65f17946",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "requires_review",
-      "proposal": {
-        "decision": "same_entity",
-        "canonical_name": "JustAI",
-        "rationale": "The ENTITY_CANDIDATE canonical_name 'JustAI' matches the company name used throughout the SOURCE_TEXT, which describes an AI-native marketing platform that raised $17M in Series A funding.",
-        "candidate_name": "JustAI"
-      },
-      "evidence": [
-        {
-          "start": 213,
-          "end": 402,
-          "quote": "JustAI , an AI-native marketing platform helping companies automate personalization, experimentation and decisioning at scale, today announced it has raised $17 million in Series A funding."
+          "start": 1542,
+          "end": 1685,
+          "quote": "Furthermore, a score of 93.4 on IFEval confirms that this extreme reasoning enhancement does not compromise strict instruction controllability."
         }
       ],
       "gate_results": [
@@ -401,7 +385,46 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-07-18T01:34:43.589Z"
+      "generated_at": "2026-07-18T04:07:57.151Z"
+    },
+    {
+      "candidate_id": "MAC-5c85fc1521c93f44",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-3c9f40e0746096d1",
+      "raw_id": "RAW-fe80762b72eed341",
+      "source_ref": "SA-69c78e2971c403c1",
+      "source_hash": "b1ef0484980b8342",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "missing_claim_proposal"
+        }
+      ],
+      "generated_at": "2026-07-18T04:07:52.548Z"
     },
     {
       "candidate_id": "MAC-64915b755c238698",
@@ -456,162 +479,27 @@
       "generated_at": "2026-07-18T01:34:37.035Z"
     },
     {
-      "candidate_id": "MAC-65a6c3a23b39b3db",
+      "candidate_id": "MAC-7594d7844066643d",
       "task_type": "entity_resolution",
-      "asset_id": "EN-81b430b696435180",
-      "raw_id": "RAW-2e0af30cb559109f",
-      "source_ref": "SA-36fbc56110b2817d",
-      "source_hash": "2eba12c839c0d48d",
+      "asset_id": "EN-f346eaca864441f9",
+      "raw_id": "RAW-9e5f5bc0224f21c7",
+      "source_ref": "SA-880bf76d050f1840",
+      "source_hash": "7dc921bd65f17946",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "requires_review",
-      "proposal": {
-        "decision": "same_entity",
-        "canonical_name": "微信",
-        "rationale": "The source text describes a feature ('AI 志愿助手') launched by 微信, confirming it is the same entity as the candidate.",
-        "candidate_name": "微信"
-      },
-      "evidence": [
-        {
-          "start": 325,
-          "end": 366,
-          "quote": "微信今日宣布搜一搜上线“ AI 志愿助手 ”，可为考生和家长提供志愿填报参考服务。"
-        }
-      ],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "passed",
-          "detail": "task contract passed"
-        }
-      ],
-      "generated_at": "2026-07-18T01:34:41.827Z"
-    },
-    {
-      "candidate_id": "MAC-7259434bca14b83b",
-      "task_type": "entity_resolution",
-      "asset_id": "EN-c39551756f4e2d96",
-      "raw_id": "RAW-c2056d828a23922c",
-      "source_ref": "SA-224cf1f8df8d5b49",
-      "source_hash": "0bc077ad7c88de92",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "requires_review",
-      "proposal": {
-        "decision": "same_entity",
-        "canonical_name": "豆包正式",
-        "rationale": "The candidate name '豆包正式' appears to be a truncated or partial match of the product name '豆包专业版' mentioned in the source. The source text refers to '豆包' as the entity launching this professional version, and the candidate likely represents the same organization.",
-        "candidate_name": "豆包正式"
-      },
-      "evidence": [
-        {
-          "start": 16,
-          "end": 47,
-          "quote": "豆包今日正式发布基于最新豆包 2.1 系列大模型的 豆包专业版"
-        }
-      ],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "passed",
-          "detail": "task contract passed"
-        }
-      ],
-      "generated_at": "2026-07-18T01:34:43.448Z"
-    },
-    {
-      "candidate_id": "MAC-7e81bbf16db22476",
-      "task_type": "claim_extraction",
-      "asset_id": "QA-98a01ac4b2fef4e4",
-      "raw_id": "RAW-5604872109b85a2a",
-      "source_ref": "SA-5c5b37615d1c435f",
-      "source_hash": "fa17f5211eb1827f",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
+      "prompt_version": "model-assist-2026-07-18.2",
       "status": "rejected",
       "proposal": {
-        "claims": []
-      },
-      "evidence": [],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "failed",
-          "detail": "missing_source_evidence"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "missing_claim_proposal"
-        }
-      ],
-      "generated_at": "2026-07-18T01:34:37.161Z"
-    },
-    {
-      "candidate_id": "MAC-83ba6abfe906889b",
-      "task_type": "entity_resolution",
-      "asset_id": "EN-0666a703033ebd1b",
-      "raw_id": "RAW-a60a1e8df22d8c90",
-      "source_ref": "SA-52bf9473bad09232",
-      "source_hash": "e182959cf74f5f40",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "requires_review",
-      "proposal": {
-        "decision": "same_entity",
-        "canonical_name": "QQ邮箱",
-        "rationale": "The candidate entity 'QQ邮箱' matches the organization referenced in the source text as the provider of the Agently Mail service.",
-        "candidate_name": "QQ邮箱"
+        "decision": "distinct_entity",
+        "canonical_name": "JustAI",
+        "rationale": "The candidate entity JustAI is a marketing platform company that raised $17M. The VERIFIED_ALTERNATIVES list includes 'Anthropic' (with alias 'anthropic'). The SOURCE_TEXT mentions 'strategic investors and operators from anthropic' as participants in the funding round. This indicates a relationship (investor/operator affiliation) between the distinct entity Anthropic and the candidate entity JustAI, not that they are the same entity.",
+        "candidate_name": "JustAI"
       },
       "evidence": [
         {
-          "start": 352,
-          "end": 404,
-          "quote": "腾讯 QQ 邮箱今日宣布推出专为 AI 智能体（Agent）打造的专属邮箱服务 Agently Mail"
+          "start": 499,
+          "end": 645,
+          "quote": "The round also includes strategic investors and operators from anthropic, Chime and Notion, the CTO of HubSpot, and the founders of Eppo and Vapi."
         }
       ],
       "gate_results": [
@@ -627,8 +515,8 @@
         },
         {
           "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
+          "status": "failed",
+          "detail": "unsupported_numeric_fact:$17m"
         },
         {
           "gate": "task_contract",
@@ -636,58 +524,10 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-07-18T01:34:39.870Z"
+      "generated_at": "2026-07-18T04:08:02.473Z"
     },
     {
-      "candidate_id": "MAC-8f0a3fed5e8d0124",
-      "task_type": "entity_resolution",
-      "asset_id": "EN-0b79cf2de0ee6b8e",
-      "raw_id": "RAW-6f5d21c2918a7d65",
-      "source_ref": "SA-bd5416b7b74c8cac",
-      "source_hash": "c9383164a6cda24f",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "requires_review",
-      "proposal": {
-        "decision": "same_entity",
-        "canonical_name": "Groq",
-        "rationale": "The SOURCE_TEXT describes an AI startup named Groq, matching the candidate entity's canonical name.",
-        "candidate_name": "Groq"
-      },
-      "evidence": [
-        {
-          "start": 319,
-          "end": 361,
-          "quote": "AI 初创企业 Groq 在去年底与 NVIDIA（英伟达）签署了一份非独家授权协议"
-        }
-      ],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "passed",
-          "detail": "task contract passed"
-        }
-      ],
-      "generated_at": "2026-07-18T01:34:40.431Z"
-    },
-    {
-      "candidate_id": "MAC-90364c7dbaeba3b3",
+      "candidate_id": "MAC-8b2976a4860a3f78",
       "task_type": "claim_extraction",
       "asset_id": "QA-ec29408319c975ba",
       "raw_id": "RAW-af6c53af1465fae2",
@@ -695,45 +535,34 @@
       "source_hash": "8ec80bdf9c635e4a",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
       "proposal": {
         "claims": [
           {
-            "event_type": "product",
+            "event_type": "product_release",
             "subject": "Anthropic",
-            "object": "Claude Tag on Slack",
+            "object": "Claude Tag",
             "evidence_index": 0
           },
           {
-            "event_type": "product",
-            "subject": "Claude Tag",
-            "object": "Claude in Slack app",
+            "event_type": "service_change",
+            "subject": "Claude in Slack app",
+            "object": "Claude Tag",
             "evidence_index": 1
-          },
-          {
-            "event_type": "product",
-            "subject": "Claude Tag",
-            "object": "Opus 4.8",
-            "evidence_index": 2
           }
         ]
       },
       "evidence": [
-        {
-          "start": 1060,
-          "end": 1301,
-          "quote": "We’re launching Claude Tag on Slack, since it’s a natural home for collaborative work between teams and AI, and where much of Anthropic’s day-to-day work already happens. It’s available today in beta for Claude Enterprise and Team customers."
-        },
-        {
-          "start": 4707,
-          "end": 4760,
-          "quote": "Claude Tag replaces the existing Claude in Slack app."
-        },
         {
           "start": 4947,
           "end": 4978,
           "quote": "Claude Tag works with Opus 4.8."
+        },
+        {
+          "start": 4707,
+          "end": 4814,
+          "quote": "Claude Tag replaces the existing Claude in Slack app. To migrate, administrators can opt in within 30 days."
         }
       ],
       "gate_results": [
@@ -754,60 +583,34 @@
         },
         {
           "gate": "task_contract",
-          "status": "failed",
-          "detail": "unsupported_claim_event_type:0, unsupported_claim_event_type:1, unsupported_claim_event_type:2"
+          "status": "passed",
+          "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-07-18T01:34:39.879Z"
+      "generated_at": "2026-07-18T04:07:56.294Z"
     },
     {
-      "candidate_id": "MAC-96e623d0a61f5a9d",
-      "task_type": "claim_extraction",
-      "asset_id": "QA-a88e9cca6e0b5163",
-      "raw_id": "RAW-19989b8f819ae88b",
-      "source_ref": "SA-075b9f5cce323a24",
-      "source_hash": "57ddf7592caaea73",
+      "candidate_id": "MAC-991817f07ddbb8a2",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-81b430b696435180",
+      "raw_id": "RAW-2e0af30cb559109f",
+      "source_ref": "SA-36fbc56110b2817d",
+      "source_hash": "2eba12c839c0d48d",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
+      "prompt_version": "model-assist-2026-07-18.2",
       "status": "rejected",
       "proposal": {
-        "claims": [
-          {
-            "event_type": "commercial",
-            "subject": "豆包",
-            "object": "保持免费",
-            "evidence_index": 0
-          },
-          {
-            "event_type": "commercial",
-            "subject": "豆包专业版办公任务模式",
-            "object": "搭载 2.1 Pro 模型",
-            "evidence_index": 1
-          },
-          {
-            "event_type": "commercial",
-            "subject": "豆包",
-            "object": "计划推出豆包专业版",
-            "evidence_index": 2
-          }
-        ]
+        "decision": "unknown",
+        "canonical_name": "微信",
+        "rationale": "The candidate canonical_name is '微信'. The SOURCE_TEXT mentions '微信' multiple times as the entity that launched the 'AI 志愿助手' feature. However, no VERIFIED_ALTERNATIVES list is provided to match against, so we cannot confirm if '微信' is a verified entity. The quote proves the mention refers to the candidate entity.",
+        "candidate_name": "微信"
       },
       "evidence": [
         {
-          "start": 7,
-          "end": 16,
-          "quote": "豆包还是会保持免费"
-        },
-        {
-          "start": 433,
-          "end": 477,
-          "quote": "它最近会推出面向生产力场景的专业版办公任务模式，搭载的就是我们最新推出的 2.1 Pro"
-        },
-        {
-          "start": 510,
-          "end": 534,
-          "quote": "针对专业人群的生产力需求，豆包计划推出豆包专业版"
+          "start": 325,
+          "end": 347,
+          "quote": "微信今日宣布搜一搜上线“ AI 志愿助手 ”"
         }
       ],
       "gate_results": [
@@ -828,14 +631,20 @@
         },
         {
           "gate": "task_contract",
-          "status": "failed",
-          "detail": "unsupported_claim_event_type:0, unsupported_claim_event_type:1, unsupported_claim_event_type:2"
+          "status": "passed",
+          "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-07-18T01:34:39.286Z"
+      "generated_at": "2026-07-18T04:07:59.247Z",
+      "review": {
+        "decision": "reject",
+        "reviewer": "codex-data-review",
+        "reviewed_at": "2026-07-18T04:19:04.455Z",
+        "note": "queue-closeout:insufficient_evidence_for_entity_resolution"
+      }
     },
     {
-      "candidate_id": "MAC-9737d67bcd8b6913",
+      "candidate_id": "MAC-a37044f28be70246",
       "task_type": "entity_resolution",
       "asset_id": "EN-aa06a7dba2266341",
       "raw_id": "RAW-33945c63dd0020a9",
@@ -843,12 +652,12 @@
       "source_hash": "776c62cfdeacb511",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "requires_review",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
       "proposal": {
-        "decision": "same_entity",
+        "decision": "distinct_entity",
         "canonical_name": "Modiqo",
-        "rationale": "The ENTITY_CANDIDATE canonical_name 'Modiqo' matches the company name in the SOURCE_TEXT, which describes it as 'an AI infrastructure company' that announced pre-seed funding and launched the Rote platform.",
+        "rationale": "The candidate entity 'Modiqo' is an AI infrastructure company that launched a product called Rote. The verified alternative 'Rime' (aliases: ['rime']) is a different entity. The source text does not mention 'Rime' or 'rime' at all, and there is no evidence linking Modiqo to Rime. The names are distinct, and the entities operate in different contexts based on the provided information.",
         "candidate_name": "Modiqo"
       },
       "evidence": [
@@ -880,30 +689,36 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-07-18T01:56:32.370Z"
+      "generated_at": "2026-07-18T04:08:00.142Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "codex-data-review",
+        "reviewed_at": "2026-07-18T04:19:04.455Z",
+        "note": "queue-closeout:reviewed_as_distinct_entity"
+      }
     },
     {
-      "candidate_id": "MAC-9ccff6e0e2d44f50",
+      "candidate_id": "MAC-ad03ea7db1eacdc7",
       "task_type": "entity_resolution",
-      "asset_id": "EN-85c88a8dfc71d9fc",
-      "raw_id": "RAW-02ca7b1b24f4e4a0",
-      "source_ref": "SA-3e9a1feecea4e773",
-      "source_hash": "84cc6e6c6eeff59a",
+      "asset_id": "EN-0666a703033ebd1b",
+      "raw_id": "RAW-a60a1e8df22d8c90",
+      "source_ref": "SA-52bf9473bad09232",
+      "source_hash": "e182959cf74f5f40",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "requires_review",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
       "proposal": {
-        "decision": "same_entity",
-        "canonical_name": "Anthropic",
-        "rationale": "The candidate entity 'Anthropic 更新隐私' appears to reference an update to Anthropic's privacy policy. The SOURCE_TEXT is the full text of Anthropic's Privacy Policy, published on June 8, 2026, which includes a section on 'Verification Data' for age or identity verification. The candidate name describes an action (updating privacy) by the organization Anthropic, which is the same entity that published the source document.",
-        "candidate_name": "Anthropic 更新隐私"
+        "decision": "distinct_entity",
+        "canonical_name": "QQ邮箱",
+        "rationale": "QQ邮箱 is a product of Tencent, not an alias for Tencent itself. The source describes QQ邮箱 launching a service, and Tencent's PR director commenting on it, indicating they are distinct entities.",
+        "candidate_name": "QQ邮箱"
       },
       "evidence": [
         {
-          "start": 27,
-          "end": 108,
-          "quote": "This policy was published on June 8, 2026 with an effective date of July 8, 2026."
+          "start": 352,
+          "end": 404,
+          "quote": "腾讯 QQ 邮箱今日宣布推出专为 AI 智能体（Agent）打造的专属邮箱服务 Agently Mail"
         }
       ],
       "gate_results": [
@@ -928,136 +743,16 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-07-18T01:34:42.879Z"
+      "generated_at": "2026-07-18T04:07:56.444Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "codex-data-review",
+        "reviewed_at": "2026-07-18T04:19:04.455Z",
+        "note": "queue-closeout:reviewed_as_distinct_entity"
+      }
     },
     {
-      "candidate_id": "MAC-dc6977a64833b5be",
-      "task_type": "claim_extraction",
-      "asset_id": "QA-2adcf2e16f80d6bc",
-      "raw_id": "RAW-c1c0f7c61685ee18",
-      "source_ref": "SA-1823ca9cbe19cb50",
-      "source_hash": "0b580aa9f157bda4",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
-      "proposal": {
-        "claims": []
-      },
-      "evidence": [],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "failed",
-          "detail": "missing_source_evidence"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "missing_claim_proposal"
-        }
-      ],
-      "generated_at": "2026-07-18T01:34:35.738Z"
-    },
-    {
-      "candidate_id": "MAC-e754b3cea0ffe58a",
-      "task_type": "claim_extraction",
-      "asset_id": "QA-3c9f40e0746096d1",
-      "raw_id": "RAW-fe80762b72eed341",
-      "source_ref": "SA-69c78e2971c403c1",
-      "source_hash": "b1ef0484980b8342",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
-      "proposal": {
-        "claims": []
-      },
-      "evidence": [],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "failed",
-          "detail": "missing_source_evidence"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "missing_claim_proposal"
-        }
-      ],
-      "generated_at": "2026-07-18T01:34:36.904Z"
-    },
-    {
-      "candidate_id": "MAC-ec13707eb678c822",
-      "task_type": "entity_resolution",
-      "asset_id": "EN-b34aa8e97b2c2454",
-      "raw_id": "RAW-677e92d523d02478",
-      "source_ref": "SA-686f97478e66a370",
-      "source_hash": "0d9382bf85767e8f",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "requires_review",
-      "proposal": {
-        "decision": "same_entity",
-        "canonical_name": "戴尔",
-        "rationale": "ENTITY_CANDIDATE的canonical_name为“戴尔”，SOURCE_TEXT中“戴尔科技”是“戴尔”的完整公司名称，指代同一组织。",
-        "candidate_name": "戴尔"
-      },
-      "evidence": [
-        {
-          "start": 16,
-          "end": 62,
-          "quote": "戴尔科技在德国汉堡举行的 ISC 大会上正式发布了 PowerEdge XE8812 服务器"
-        }
-      ],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "passed",
-          "detail": "task contract passed"
-        }
-      ],
-      "generated_at": "2026-07-18T01:34:42.460Z"
-    },
-    {
-      "candidate_id": "MAC-ee4a5422eb07e6d0",
+      "candidate_id": "MAC-ad14c2c09e5b4c8a",
       "task_type": "entity_resolution",
       "asset_id": "EN-4728b0c37dc84206",
       "raw_id": "RAW-9feed425c049f592",
@@ -1065,12 +760,12 @@
       "source_hash": "6927bb5b8c8e2620",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "requires_review",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
       "proposal": {
-        "decision": "same_entity",
+        "decision": "distinct_entity",
         "canonical_name": "Convey",
-        "rationale": "The ENTITY_CANDIDATE canonical_name 'Convey' matches the company name 'Convey Inc.' described in the SOURCE_TEXT. The article details the same organization, an agentic AI startup that raised $38 million to help companies automate tasks with AI teammates.",
+        "rationale": "The candidate entity 'Convey' is an agentic AI startup that builds a platform for nontechnical workers to create AI teammates, as described in the source. The only verified alternative is 'Intel', a well-known semiconductor company. The source text does not mention Intel or any of its aliases, and there is no evidence linking Convey to Intel. The entities are in different industries and have no identity relationship.",
         "candidate_name": "Convey"
       },
       "evidence": [
@@ -1102,56 +797,78 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-07-18T01:34:42.173Z"
+      "generated_at": "2026-07-18T04:08:00.212Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "codex-data-review",
+        "reviewed_at": "2026-07-18T04:19:04.455Z",
+        "note": "queue-closeout:reviewed_as_distinct_entity"
+      }
     },
     {
-      "candidate_id": "MAC-eea5d295d9a91167",
-      "task_type": "claim_extraction",
-      "asset_id": "QA-39b9f045f4cfef9c",
-      "raw_id": "RAW-5a94ed7c81ba2cf0",
-      "source_ref": "SA-fa01265c8602baa3",
-      "source_hash": "cd243c20ad4110d9",
+      "candidate_id": "MAC-be214dcce0b5deca",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-b34aa8e97b2c2454",
+      "raw_id": "RAW-677e92d523d02478",
+      "source_ref": "SA-686f97478e66a370",
+      "source_hash": "0d9382bf85767e8f",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
+      "prompt_version": "model-assist-2026-07-18.2",
       "status": "rejected",
       "proposal": {
-        "claims": [
-          {
-            "event_type": "commercial",
-            "subject": "Petrobras",
-            "object": "$120 million in tax savings",
-            "evidence_index": 0
-          },
-          {
-            "event_type": "commercial",
-            "subject": "Petrobras",
-            "object": "tax filing completed within three days without weekend work",
-            "evidence_index": 1
-          },
-          {
-            "event_type": "commercial",
-            "subject": "Petrobras",
-            "object": "over $1 billion in total projected savings by year-end",
-            "evidence_index": 2
-          }
-        ]
+        "decision": "distinct_entity",
+        "canonical_name": "戴尔",
+        "rationale": "SOURCE_TEXT 中戴尔是发布 PowerEdge XE8812 服务器的厂商，而 NVIDIA 是提供 Vera Rubin NVL4 架构的组件/技术供应商，两者为合作关系而非同一实体。",
+        "candidate_name": "戴尔"
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "failed",
+          "detail": "unsupported_numeric_fact:8812, unsupported_numeric_fact:4"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T04:08:00.306Z"
+    },
+    {
+      "candidate_id": "MAC-c00d5e50a799c4cc",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-c39551756f4e2d96",
+      "raw_id": "RAW-c2056d828a23922c",
+      "source_ref": "SA-224cf1f8df8d5b49",
+      "source_hash": "0bc077ad7c88de92",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "豆包正式",
+        "rationale": "The candidate '豆包正式' appears to be a truncated or mis-extracted name from the article title '豆包正式推出专业版'. The source text discusses '豆包' as a product/service launching a '专业版' (professional version). The verified alternative 'ByteDance' (字节跳动) has '豆包' listed as an alias, indicating '豆包' is a product of ByteDance, not ByteDance itself. The relationship is product-to-company, not entity identity.",
+        "candidate_name": "豆包正式"
       },
       "evidence": [
         {
-          "start": 3150,
-          "end": 3232,
-          "quote": "Three weeks after deployment, the system had uncovered $120 million in tax savings"
-        },
-        {
-          "start": 3274,
-          "end": 3393,
-          "quote": "For the first time in 15 years, the department filed taxes within three days and did so without requiring weekend work."
-        },
-        {
-          "start": 3467,
-          "end": 3538,
-          "quote": "Petrobras projecting more than $1 billion in total savings by year-end."
+          "start": 16,
+          "end": 47,
+          "quote": "豆包今日正式发布基于最新豆包 2.1 系列大模型的 豆包专业版"
         }
       ],
       "gate_results": [
@@ -1172,11 +889,326 @@
         },
         {
           "gate": "task_contract",
-          "status": "failed",
-          "detail": "unsupported_claim_event_type:0, unsupported_claim_event_type:1, unsupported_claim_event_type:2"
+          "status": "passed",
+          "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-07-18T01:34:38.534Z"
+      "generated_at": "2026-07-18T04:08:02.353Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "codex-data-review",
+        "reviewed_at": "2026-07-18T04:19:04.455Z",
+        "note": "queue-closeout:reviewed_as_distinct_entity"
+      }
+    },
+    {
+      "candidate_id": "MAC-d158af4ce4137e1d",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-46a4eebd20d881ec",
+      "raw_id": "RAW-a1c3a711756b999c",
+      "source_ref": "SA-e7264c42b26f6fce",
+      "source_hash": "9eef3400b6af3638",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "Cursor",
+        "rationale": "The candidate canonical_name 'Cursor' matches the product name discussed in the source, but the source reveals that the entity behind Cursor is 'Anysphere', which was acquired by SpaceX. The candidate is an organization, but the source indicates Cursor is a product of Anysphere, not an organization itself. Therefore, the candidate entity is distinct from the organization Anysphere.",
+        "candidate_name": "Cursor"
+      },
+      "evidence": [
+        {
+          "start": 363,
+          "end": 434,
+          "quote": "Anysphere, the company behind Cursor, was recently acquired by SpaceX ."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T04:07:58.059Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "codex-data-review",
+        "reviewed_at": "2026-07-18T04:19:04.455Z",
+        "note": "queue-closeout:reviewed_as_distinct_entity"
+      }
+    },
+    {
+      "candidate_id": "MAC-def8d841cd5af603",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-85c88a8dfc71d9fc",
+      "raw_id": "RAW-02ca7b1b24f4e4a0",
+      "source_ref": "SA-3e9a1feecea4e773",
+      "source_hash": "84cc6e6c6eeff59a",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "Anthropic 更新隐私",
+        "rationale": "The candidate canonical_name 'Anthropic 更新隐私' does not exactly match any VERIFIED_ALTERNATIVE (which are 'Anthropic', 'Claude Code', 'anthropic'). The source text is the Anthropic Privacy Policy itself, and the candidate name appears to be a descriptive title derived from the document's subject matter ('Anthropic 更新隐私政策以验证用户年龄或身份') rather than a verified alternative name for the entity 'Anthropic'. Therefore, it is a distinct entity candidate.",
+        "candidate_name": "Anthropic 更新隐私"
+      },
+      "evidence": [
+        {
+          "start": 27,
+          "end": 108,
+          "quote": "This policy was published on June 8, 2026 with an effective date of July 8, 2026."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T04:08:00.241Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "codex-data-review",
+        "reviewed_at": "2026-07-18T04:19:04.455Z",
+        "note": "queue-closeout:reviewed_as_distinct_entity"
+      }
+    },
+    {
+      "candidate_id": "MAC-df24e22e2c2baa2d",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-ca69877dbffc0106",
+      "raw_id": "RAW-f6ab0223e361a888",
+      "source_ref": "SA-bb2e7c4146bafec4",
+      "source_hash": "863a39db568972b0",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "product_release",
+            "subject": "Mozilla",
+            "object": "安卓152版火狐Firefox浏览器引入网页摘要功能",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "standard_specification",
+            "subject": "Firefox网页摘要功能",
+            "object": "Mistral Small 3.1模型，长度上限5000个单词",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "deployment",
+            "subject": "Mozilla",
+            "object": "网页摘要功能面向全球用户开放但仅支持英文网页",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 16,
+          "end": 103,
+          "quote": "Mozilla 昨日（6 月 22 日）发布更新日志，宣布在 安卓 15 2 版火狐 Firefox 浏览器中引入“网页摘要”功能， 用户摇一摇手机就能调用 AI 生成摘要。"
+        },
+        {
+          "start": 319,
+          "end": 418,
+          "quote": "底层方面，页面摘要依赖 Firefox 的云端 AI 方案，底层模型为 Mistral Small 3.1，长度上限为 5000 个单词，支持类型包括新闻、操作指南、评测、食谱、研究文章和评论文章。"
+        },
+        {
+          "start": 419,
+          "end": 465,
+          "quote": "该功能面向全球用户开放，但目前只支持英文网页，超长页面或不受支持的页面可能不会显示摘要入口。"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "failed",
+          "detail": "unsupported_numeric_fact:152"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T04:07:57.332Z"
+    },
+    {
+      "candidate_id": "MAC-f2ec9f7d1224edcf",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-39b9f045f4cfef9c",
+      "raw_id": "RAW-5a94ed7c81ba2cf0",
+      "source_ref": "SA-fa01265c8602baa3",
+      "source_hash": "cd243c20ad4110d9",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "financial_performance",
+            "subject": "Petrobras",
+            "object": "$120 million in tax savings",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "deployment",
+            "subject": "Petrobras",
+            "object": "generative AI and intelligent automation in tax department",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "financial_performance",
+            "subject": "Petrobras",
+            "object": "over $1 billion in projected total savings by year-end",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 3150,
+          "end": 3273,
+          "quote": "Three weeks after deployment, the system had uncovered $120 million in tax savings—a result that far exceeded expectations."
+        },
+        {
+          "start": 0,
+          "end": 244,
+          "quote": "Petrobras applied generative AI and intelligent automation to its tax department, feeding 150 pages of Brazilian tax regulations and three months of financial data into a model built on Automation Anywhere, Amazon Bedrock, and Amazon SageMaker."
+        },
+        {
+          "start": 421,
+          "end": 487,
+          "quote": "The company projects over $1 billion in total savings by year-end."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T04:07:54.222Z"
+    },
+    {
+      "candidate_id": "MAC-f332e52a0c368a20",
+      "task_type": "qa_repair",
+      "asset_id": "QA-0969c589be427677",
+      "raw_id": "RAW-d11ac2af8da55bee",
+      "source_ref": "SA-cca22969c3193ebc",
+      "source_hash": "f91836468dee303a",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "action": "keep_qa",
+        "reason": "The source describes a smartphone OS update with AI-powered features like sports cards and ticket-grabbing acceleration, but does not contain a concrete AI industry event such as a funding round, acquisition, or model release.",
+        "claims": []
+      },
+      "evidence": [
+        {
+          "start": 374,
+          "end": 401,
+          "quote": "真我今日公布 realme UI 7.0 六月升级计划"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T04:08:02.394Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "codex-data-review",
+        "reviewed_at": "2026-07-18T04:19:04.455Z",
+        "note": "queue-closeout:reviewed_and_retained_in_qa"
+      }
     }
   ]
 }

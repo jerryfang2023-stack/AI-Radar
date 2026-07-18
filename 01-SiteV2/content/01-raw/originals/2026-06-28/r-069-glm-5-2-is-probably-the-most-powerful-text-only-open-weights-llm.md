@@ -72,6 +72,10 @@ key_excerpts: [{"type":"quote","text":"&lt;p&gt;Chinese AI lab &lt;a href=\"http
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_zh: "GLM-5.2 可能是最强大的纯文本开放权重大语言模型"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # GLM-5.2 is probably the most powerful text-only open weights LLM

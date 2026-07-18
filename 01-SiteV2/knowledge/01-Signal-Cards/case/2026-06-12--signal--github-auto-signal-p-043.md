@@ -2,7 +2,7 @@
 id: SIG-20260612-A17
 type: signal_card
 signal_type: case
-title: "如何在GitHub Enterprise #193359中治理AI代理"
+title: "如何在 GitHub Enterprise 中治理 AI 智能体 #193359"
 date: 2026-06-12
 status: published
 source_title: "How to govern AI agents in your GitHub Enterprise #193359"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "GitHub"
 
 frontend:
-  displayTitle: "如何在GitHub Enterprise #193359中治理AI代理"
+  displayTitle: "如何在 GitHub Enterprise 中治理 AI 智能体 #193359"
   sourceLinks:
     - "https://github.com/orgs/community/discussions/193359"
 ---
 
-# 如何在GitHub Enterprise #193359中治理AI代理
+# 如何在 GitHub Enterprise 中治理 AI 智能体 #193359
 
 ## 新闻事实
 

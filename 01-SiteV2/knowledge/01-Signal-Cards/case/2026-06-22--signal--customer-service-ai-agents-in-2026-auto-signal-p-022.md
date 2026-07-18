@@ -2,7 +2,7 @@
 id: SIG-20260622-A02
 type: signal_card
 signal_type: case
-title: "2026年客户服务AI代理：超越转接——BabyBots"
+title: "2026年客服AI智能体：超越转接——BabyBots"
 date: 2026-06-22
 status: published
 source_title: "Customer Service AI Agents in 2026: Beyond Deflection - BabyBots"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Customer Service AI Agents in 2026"
 
 frontend:
-  displayTitle: "2026年客户服务AI代理：超越转接——BabyBots"
+  displayTitle: "2026年客服AI智能体：超越转接——BabyBots"
   sourceLinks:
     - "https://www.babybots.ai/blog/customer-service-ai-agents-enterprise"
 ---
 
-# 2026年客户服务AI代理：超越转接——BabyBots
+# 2026年客服AI智能体：超越转接——BabyBots
 
 ## 新闻事实
 

@@ -2,7 +2,7 @@
 schema_version: raw-evidence-v2
 raw_id: R-057
 title: "DeepFabric Announces General Availability of its AI Agent Platform for End-to-End Supply Chain Operations"
-title_zh: "DeepFabric宣布其端到端供应链运营AI代理平台正式全面上市"
+title_zh: "DeepFabric 宣布其端到端供应链运营 AI 智能体平台正式全面上市"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 original_url: "https://www.prnewswire.com/news-releases/deepfabric-announces-general-availability-of-its-ai-agent-platform-for-end-to-end-supply-chain-operations-302820223.html"

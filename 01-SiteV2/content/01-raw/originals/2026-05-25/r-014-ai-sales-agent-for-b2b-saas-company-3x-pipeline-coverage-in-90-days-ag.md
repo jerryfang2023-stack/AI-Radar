@@ -72,7 +72,7 @@ key_excerpts: [{"type":"number","text":"How a 40-person B2B SaaS company used an
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
-title_zh: "B2B SaaS公司AI销售代理：90天内管道覆盖率提升3倍 | Agentmelt"
+title_zh: "B2B SaaS 公司 AI 销售智能体：90 天内管道覆盖率提升 3 倍"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

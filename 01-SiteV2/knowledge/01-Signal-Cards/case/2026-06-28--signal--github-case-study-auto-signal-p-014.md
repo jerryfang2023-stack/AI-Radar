@@ -2,7 +2,7 @@
 id: SIG-20260628-A02
 type: signal_card
 signal_type: case
-title: "GitHub案例研究：利用AI提升客户支持"
+title: "GitHub 案例研究：利用 AI 提升客户支持"
 date: 2026-06-28
 status: published
 source_title: "GitHub case study: Enhancing customer support with AI"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "GitHub case study"
 
 frontend:
-  displayTitle: "GitHub案例研究：利用AI提升客户支持"
+  displayTitle: "GitHub 案例研究：利用 AI 提升客户支持"
   sourceLinks:
     - "https://github.com/resources/whitepapers/enhancing-customer-support-with-ai"
 ---
 
-# GitHub案例研究：利用AI提升客户支持
+# GitHub 案例研究：利用 AI 提升客户支持
 
 ## 新闻事实
 

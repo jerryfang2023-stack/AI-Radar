@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-109
 title: "Stack AI wants to make it easier to build AI-fueled workflows"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "Stack AI 旨在简化构建 AI 驱动的工作流"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://techcrunch.com/2024/05/21/stack-ai-wants-to-make-it-easier-to-build-ai-fueled-workflows/"
 canonical_url: "https://techcrunch.com/2024/05/21/stack-ai-wants-to-make-it-easier-to-build-ai-fueled-workflows"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-09T03:05:45.413Z
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Stack AI wants to make it easier to build AI-fueled workflows

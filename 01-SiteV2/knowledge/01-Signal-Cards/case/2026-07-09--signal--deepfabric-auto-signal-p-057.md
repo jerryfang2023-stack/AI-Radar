@@ -2,7 +2,7 @@
 id: SIG-20260709-A11
 type: signal_card
 signal_type: case
-title: "DeepFabric宣布其端到端供应链运营AI代理平台正式全面上市"
+title: "DeepFabric 宣布其端到端供应链运营 AI 智能体平台正式全面上市"
 date: 2026-07-09
 status: published
 source_title: "DeepFabric Announces General Availability of its AI Agent Platform for End-to-End Supply Chain Operations"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "DeepFabric"
 
 frontend:
-  displayTitle: "DeepFabric宣布其端到端供应链运营AI代理平台正式全面上市"
+  displayTitle: "DeepFabric 宣布其端到端供应链运营 AI 智能体平台正式全面上市"
   sourceLinks:
     - "https://www.prnewswire.com/news-releases/deepfabric-announces-general-availability-of-its-ai-agent-platform-for-end-to-end-supply-chain-operations-302820223.html"
 ---
 
-# DeepFabric宣布其端到端供应链运营AI代理平台正式全面上市
+# DeepFabric 宣布其端到端供应链运营 AI 智能体平台正式全面上市
 
 ## 新闻事实
 

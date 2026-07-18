@@ -3,9 +3,9 @@ schema_version: raw-evidence-v2
 raw_id: R-030
 title: "Bunkerhill Health 完成5500万美元B轮融资，用于扩展其AI智能体平台Carebricks"
 title_zh: "Bunkerhill Health 完成5500万美元B轮融资，用于扩展其AI智能体平台Carebricks"
-title_translation_status: not_required
-title_translation_method: source_title
-title_translation_model: not_applicable
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 original_url: "https://www.artificialintelligence-news.com/news/bunkerhill-raises-55m-scale-agentic-ai-health-systems"
 canonical_url: "https://artificialintelligence-news.com/news/bunkerhill-raises-55m-scale-agentic-ai-health-systems"
 source_name: "Artificial Intelligence News（RSS）"

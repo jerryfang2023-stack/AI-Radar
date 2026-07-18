@@ -30,9 +30,15 @@ function main() {
     candidate.review = { decision, reviewer, reviewed_at: new Date().toISOString(), note };
     candidate.status = decision === "accept" ? "accepted" : "rejected";
     writeJson(file, store);
-    if (decision === "accept" && candidate.task_type === "entity_resolution") {
+    if (candidate.task_type === "entity_resolution") {
       const decisionsFile = path.join(assistRoot, "entity-resolution-decisions.json");
       const decisions = readJson(decisionsFile, { schema_version: "ENTITY-RESOLUTION-DECISIONS-V1", decisions: [] });
+      if (decision === "reject") {
+        decisions.decisions = decisions.decisions.filter((item) => item.candidate_id !== candidate.candidate_id);
+        writeJson(decisionsFile, decisions);
+        console.log(JSON.stringify({ ok: true, candidate_id: candidateId, task_type: candidate.task_type, decision, reviewer, file: path.relative(root, file).replace(/\\/gu, "/") }, null, 2));
+        return;
+      }
       const row = {
         candidate_id: candidate.candidate_id,
         candidate_name: candidate.proposal.candidate_name || "",

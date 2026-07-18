@@ -72,7 +72,7 @@ key_excerpts: [{"type":"quote","text":"Less than 24 hours after news broke that 
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
-title_zh: "OpenAI在美国AI监管风波中发布GPT-5.6"
+title_zh: "OpenAI 发布 GPT-5.6，美国 AI 监管风波持续"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

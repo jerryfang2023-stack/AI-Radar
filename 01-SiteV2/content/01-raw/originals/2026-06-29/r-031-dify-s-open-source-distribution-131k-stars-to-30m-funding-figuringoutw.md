@@ -72,7 +72,7 @@ key_excerpts: [{"type":"funding","text":"# Dify Open-Sourced Its AI Agent Builde
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
-title_zh: "Dify开源分发：13.1万星标到3000万美元融资 | FiguringOutWithAI"
+title_zh: "Dify开源分发：13.1万星标到3000万美元融资"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

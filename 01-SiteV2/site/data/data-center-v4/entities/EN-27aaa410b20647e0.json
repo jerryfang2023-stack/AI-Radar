@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T01:57:40.269Z",
-    "latestDataDate": "2026-07-17",
-    "currentDate": "2026-07-17",
-    "eventCount": 832,
-    "quarantinedEventCount": 60
+    "generatedAt": "2026-07-18T04:59:59.870Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 1250,
+    "quarantinedEventCount": 11
   },
   "entity": {
     "id": "EN-27aaa410b20647e0",
@@ -21,19 +21,27 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-51e3ec25899a2486",
       "EV-826c8088c4adf591"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-e35404082afce32c",
+      "EN-59252e364ef9a41f"
+    ],
     "firstSeen": "2026-07-13",
-    "lastSeen": "2026-07-14",
-    "relationIds": [],
+    "lastSeen": "2026-07-16",
+    "relationIds": [
+      "REL2-750afdbe144c0b5d",
+      "REL2-dfc70ff8964ee571"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-51e3ec25899a2486",
         "EV-826c8088c4adf591"
       ],
       "hardware": [],
@@ -41,6 +49,24 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-51e3ec25899a2486",
+        "dataDate": "2026-07-16",
+        "date": "2026-07-16",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Soofi 联盟发布 Soofi S 30B-A3B：面向德语和英语的开源混合 Mamba-Transformer MoE 基础模型",
+        "displayTags": [],
+        "entityIds": [
+          "EN-27aaa410b20647e0",
+          "EN-73f11f3b8815a394",
+          "EN-e35404082afce32c",
+          "EN-59252e364ef9a41f"
+        ]
+      },
       {
         "id": "EV-826c8088c4adf591",
         "dataDate": "2026-07-14",
@@ -68,8 +94,89 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-e35404082afce32c",
+      "name": "A3B",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-51e3ec25899a2486"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [],
+      "relatedEntityIds": [
+        "EN-27aaa410b20647e0",
+        "EN-8d4321d936320802"
+      ],
+      "firstSeen": "2026-07-16",
+      "lastSeen": "2026-07-16"
+    },
+    {
+      "id": "EN-59252e364ef9a41f",
+      "name": "S 30",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-51e3ec25899a2486"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [],
+      "relatedEntityIds": [
+        "EN-27aaa410b20647e0"
+      ],
+      "firstSeen": "2026-07-16",
+      "lastSeen": "2026-07-16"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-750afdbe144c0b5d",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-27aaa410b20647e0",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-e35404082afce32c",
+      "object_type": "entity",
+      "event_id": "EV-51e3ec25899a2486",
+      "claim_refs": [
+        "CL-ecbd398d1cee8977"
+      ],
+      "source_refs": [
+        "SA-72736fd2f0cc7197"
+      ],
+      "data_date": "2026-07-16",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-dfc70ff8964ee571",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-27aaa410b20647e0",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-59252e364ef9a41f",
+      "object_type": "entity",
+      "event_id": "EV-51e3ec25899a2486",
+      "claim_refs": [
+        "CL-ecbd398d1cee8977"
+      ],
+      "source_refs": [
+        "SA-72736fd2f0cc7197"
+      ],
+      "data_date": "2026-07-16",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [],
   "fde": [],
   "hardware": []

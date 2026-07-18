@@ -2,7 +2,7 @@
 id: SIG-20260702-A06
 type: signal_card
 signal_type: case
-title: "休斯顿卫理公会医院将在全企业部署Midstream Health的代理式AI财务行动平台"
+title: "休斯顿卫理公会医院将在全企业部署Midstream Health的AI智能体财务行动平台"
 date: 2026-07-02
 status: published
 source_title: "Houston Methodist to Deploy Midstream Health’s Agentic AI Financial Action Platform Across Enterprise"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Houston Methodist / Midstream Health"
 
 frontend:
-  displayTitle: "休斯顿卫理公会医院将在全企业部署Midstream Health的代理式AI财务行动平台"
+  displayTitle: "休斯顿卫理公会医院将在全企业部署Midstream Health的AI智能体财务行动平台"
   sourceLinks:
     - "https://hitconsultant.net/2026/04/07/houston-methodist-midstream-health-agentic-ai-supply-chain/"
 ---
 
-# 休斯顿卫理公会医院将在全企业部署Midstream Health的代理式AI财务行动平台
+# 休斯顿卫理公会医院将在全企业部署Midstream Health的AI智能体财务行动平台
 
 ## 新闻事实
 

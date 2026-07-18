@@ -72,7 +72,7 @@ key_excerpts: [{"type":"case_detail","text":"- Databricks is launching its Forwa
 theme: enterprise-ai-implementation-signal
 keyword_group: enterprise-ai-implementation-signal
 copyright_note: local research archive only
-title_zh: "前部署工程：利用AI实现业务成果 | Databricks博客"
+title_zh: "前向部署工程：借助 AI 实现业务成果"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

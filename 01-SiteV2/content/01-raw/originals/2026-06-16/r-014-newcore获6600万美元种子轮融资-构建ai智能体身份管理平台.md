@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"网络安全初创公司NewCore走出�
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "NewCore获6600万美元种子轮融资，构建AI智能体身份管理平台"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # NewCore获6600万美元种子轮融资，构建AI智能体身份管理平台

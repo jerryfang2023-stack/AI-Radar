@@ -2,7 +2,7 @@
 id: SIG-20260607-A08
 type: signal_card
 signal_type: case
-title: "Snowflake 扩大与AWS合作，承诺投入60亿美元用于AI"
+title: "Snowflake 扩大与 AWS 的合作，承诺投入 60 亿美元用于 AI"
 date: 2026-06-07
 status: published
 source_title: "Snowflake Expands AWS Collaboration with $6B AI Commitment"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Snowflake"
 
 frontend:
-  displayTitle: "Snowflake 扩大与AWS合作，承诺投入60亿美元用于AI"
+  displayTitle: "Snowflake 扩大与 AWS 的合作，承诺投入 60 亿美元用于 AI"
   sourceLinks:
     - "https://www.snowflake.com/en/news/press-releases/snowflake-expands-aws-collaboration-with-6b-commitment-to-accelerate-enterprise-agentic-ai-adoption/"
 ---
 
-# Snowflake 扩大与AWS合作，承诺投入60亿美元用于AI
+# Snowflake 扩大与 AWS 的合作，承诺投入 60 亿美元用于 AI
 
 ## 新闻事实
 

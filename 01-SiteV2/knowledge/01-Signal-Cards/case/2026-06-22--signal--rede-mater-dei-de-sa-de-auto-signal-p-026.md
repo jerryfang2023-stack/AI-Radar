@@ -2,7 +2,7 @@
 id: SIG-20260622-A11
 type: signal_card
 signal_type: case
-title: "Rede Mater Dei de Saúde：使用Amazon Bedrock AgentCore监控收入周期中的AI代理 | 人工智能"
+title: "Rede Mater Dei de Saúde：使用Amazon Bedrock AgentCore监控收入周期中的AI代理"
 date: 2026-06-22
 status: published
 source_title: "Rede Mater Dei de Saúde: Monitoring AI agents in the revenue cycle with Amazon Bedrock AgentCore | Artificial Intelligence"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Rede Mater Dei de Saúde"
 
 frontend:
-  displayTitle: "Rede Mater Dei de Saúde：使用Amazon Bedrock AgentCore监控收入周期中的AI代理 | 人工智能"
+  displayTitle: "Rede Mater Dei de Saúde：使用Amazon Bedrock AgentCore监控收入周期中的AI代理"
   sourceLinks:
     - "https://aws.amazon.com/blogs/machine-learning/rede-mater-dei-de-saude-monitoring-ai-agents-in-the-revenue-cycle-with-amazon-bedrock-agentcore/"
 ---
 
-# Rede Mater Dei de Saúde：使用Amazon Bedrock AgentCore监控收入周期中的AI代理 | 人工智能
+# Rede Mater Dei de Saúde：使用Amazon Bedrock AgentCore监控收入周期中的AI代理
 
 ## 新闻事实
 

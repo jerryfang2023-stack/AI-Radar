@@ -72,7 +72,7 @@ key_excerpts: [{"type":"workflow_change","text":"Procurement teams increasing st
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
-title_zh: "使用Amazon Bedrock AgentCore通过AI代理自动化采购工作流程 | AWS行业解决方案"
+title_zh: "使用 Amazon Bedrock AgentCore 通过 AI 智能体自动化采购工作流程"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

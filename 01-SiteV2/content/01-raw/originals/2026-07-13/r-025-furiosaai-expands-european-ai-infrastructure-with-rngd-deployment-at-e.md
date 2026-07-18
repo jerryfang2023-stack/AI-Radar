@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-025
 title: "FuriosaAI Expands European AI Infrastructure with RNGD Deployment at Equinix’s Lisbon Data Center"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "FuriosaAI 在 Equinix 里斯本数据中心部署 RNGD，扩展欧洲 AI 基础设施"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://furiosa.ai/blog/furiosaai-equinixs-lisbon-data-center-press-release"
 canonical_url: "https://furiosa.ai/blog/furiosaai-equinixs-lisbon-data-center-press-release"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-13T10:23:56.795Z
 theme: ai-hardware-scenario-service-signal
 keyword_group: ai-hardware-scenario-service-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # FuriosaAI Expands European AI Infrastructure with RNGD Deployment at Equinix’s Lisbon Data Center

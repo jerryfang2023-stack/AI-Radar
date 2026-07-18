@@ -1,5 +1,37 @@
 [
   {
+    "event_type": "product_release",
+    "event_status": "announced",
+    "event_time": "2026-06-24T09:32:01.000Z",
+    "disclosed_at": "2026-06-24T09:32:01.000Z",
+    "entities": [
+      "EN-c70eca6b0f88f44d",
+      "EN-d0a0acb9a5ef0560"
+    ],
+    "action": "product_release",
+    "object": "Claude Tag",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-bf4e4bccf67eb353"
+    ],
+    "source_refs": [
+      "SA-3873e99a21559efa"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-3873e99a21559efa",
+        "disclosed_at": "2026-06-24T09:32:01.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-8121a1ecdf168d8a",
+    "display_title_zh": "Claude Tag 嵌入 Slack，Anthropic 称内部 65% 的代码由该工具生成"
+  },
+  {
     "event_type": "hardware_product",
     "event_status": "completed",
     "event_time": "2026-06-24T18:36:44.457Z",
@@ -211,7 +243,7 @@
     ],
     "publication_status": "verified",
     "event_id": "EV-f487788f3d44f288",
-    "display_title_zh": "Assort Health完成1.2亿美元C轮融资，用于扩大患者旅程中最大规模AI代理部署"
+    "display_title_zh": "Assort Health 完成 1.2 亿美元 C 轮融资，扩大患者旅程中最大规模 AI 智能体部署"
   },
   {
     "event_type": "funding",
@@ -330,8 +362,7 @@
     "conflicts": [],
     "missing_fields": [
       "entities",
-      "event_time",
-      "display_title_zh"
+      "event_time"
     ],
     "update_history": [
       {
@@ -347,7 +378,7 @@
     ],
     "publication_status": "verified",
     "event_id": "EV-8aa51e324eca8fc2",
-    "display_title_zh": ""
+    "display_title_zh": "独家：Vinod Khosla曾希望获得Runlayer本轮融资的每一美元。该公司刚刚筹集了3000万美元"
   },
   {
     "event_type": "deployment",
@@ -506,7 +537,7 @@
     ],
     "publication_status": "verified",
     "event_id": "EV-9fc8916c19c19f99",
-    "display_title_zh": "AI语音代理初创公司Telli获360万美元预种子轮融资 - 加拿大创业生态系统"
+    "display_title_zh": "AI 语音智能体初创公司 Telli 获 360 万美元预种子轮融资"
   },
   {
     "event_type": "product_release",
@@ -542,6 +573,41 @@
     "publication_status": "verified",
     "event_id": "EV-b26bead25288d19c",
     "display_title_zh": "Figma更新：新增代码层、动画和AI功能"
+  },
+  {
+    "event_type": "funding",
+    "event_status": "announced",
+    "event_time": "",
+    "disclosed_at": "2026-06-25T03:26:00.441Z",
+    "entities": [
+      "EN-2f88f41306209dd7"
+    ],
+    "action": "funding",
+    "object": "$125 million",
+    "metrics": [
+      "$125 million"
+    ],
+    "locations": [],
+    "claim_refs": [
+      "CL-8c9d3dd7c3fe7958"
+    ],
+    "source_refs": [
+      "SA-ef22ce78894951a6"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "event_time"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-ef22ce78894951a6",
+        "disclosed_at": "2026-06-25T03:26:00.441Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-dd3217aad32e6891",
+    "display_title_zh": "垂直AI智能体：2026年重塑企业的10亿美元转型"
   },
   {
     "event_type": "partnership",
@@ -622,6 +688,38 @@
     "display_title_zh": "OpenAI DevDay 2025：AgentKit、Apps SDK及新API发布"
   },
   {
+    "event_type": "model_release",
+    "event_status": "announced",
+    "event_time": "2026-06-24T08:28:23.649Z",
+    "disclosed_at": "2026-06-24T08:28:23.649Z",
+    "entities": [
+      "EN-3d664b0fd551bd90"
+    ],
+    "action": "model_release",
+    "object": "multi-task model family",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-7fcde41da4f64652",
+      "CL-e52e816fedf39aa3"
+    ],
+    "source_refs": [
+      "SA-c6dafb0edf120bb3"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-c6dafb0edf120bb3",
+        "disclosed_at": "2026-06-24T08:28:23.649Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-af8afe9efc7db4d1",
+    "display_title_zh": "YOLO26 简介"
+  },
+  {
     "event_type": "hardware_product",
     "event_status": "completed",
     "event_time": "2026-06-24T08:11:10.000Z",
@@ -697,6 +795,38 @@
     "publication_status": "partial",
     "event_id": "EV-b796ba14c4eba861",
     "display_title_zh": "仅需 @ 即可调用：Anthropic 推出 AI 虚拟团队成员 Claude Tag"
+  },
+  {
+    "event_type": "hardware_product",
+    "event_status": "announced",
+    "event_time": "2026-06-24T13:16:31.000Z",
+    "disclosed_at": "2026-06-24T13:16:31.000Z",
+    "entities": [
+      "EN-7d3194f79e645c42",
+      "EN-8d4321d936320802"
+    ],
+    "action": "hardware_product",
+    "object": "Jalapeño AI chip",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-6afc33e44558fb01"
+    ],
+    "source_refs": [
+      "SA-e991d997783dcf5c"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-e991d997783dcf5c",
+        "disclosed_at": "2026-06-24T13:16:31.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-be69ef6fcae83890",
+    "display_title_zh": "OpenAI、博通联手打造的 AI 芯片 Jalapeño 首秀，号称媲美英伟达 Blackwell"
   },
   {
     "event_type": "deployment",
@@ -834,8 +964,7 @@
     ],
     "conflicts": [],
     "missing_fields": [
-      "event_time",
-      "display_title_zh"
+      "event_time"
     ],
     "update_history": [
       {
@@ -846,7 +975,7 @@
     ],
     "publication_status": "partial",
     "event_id": "EV-da064f736e880e30",
-    "display_title_zh": ""
+    "display_title_zh": "电动汽车初创公司VOICE完成种子轮融资"
   },
   {
     "event_type": "product_release",
@@ -967,7 +1096,7 @@
     ],
     "publication_status": "partial",
     "event_id": "EV-b95539d17772a4ce",
-    "display_title_zh": "ServiceNow与Nvidia扩大合作，推出新AI代理 - 《经济时报》"
+    "display_title_zh": "ServiceNow与Nvidia扩大合作，推出新AI智能体"
   },
   {
     "event_type": "product_release",
@@ -1043,7 +1172,7 @@
     ],
     "publication_status": "verified",
     "event_id": "EV-f50752717e2a8536",
-    "display_title_zh": "Kore.ai推出企业工作流自动化AI平台"
+    "display_title_zh": "Kore.ai 推出面向企业工作流自动化的 AI 平台"
   },
   {
     "event_type": "funding",
@@ -1073,8 +1202,7 @@
     ],
     "conflicts": [],
     "missing_fields": [
-      "event_time",
-      "display_title_zh"
+      "event_time"
     ],
     "update_history": [
       {
@@ -1085,7 +1213,40 @@
     ],
     "publication_status": "partial",
     "event_id": "EV-9fa9822969d3c3fd",
-    "display_title_zh": ""
+    "display_title_zh": "金融自动化初创公司ZenStatement获160万美元种子轮融资"
+  },
+  {
+    "event_type": "product_release",
+    "event_status": "completed",
+    "event_time": "2026-06-25T01:12:40.000Z",
+    "disclosed_at": "2026-06-25T01:12:40.000Z",
+    "entities": [
+      "EN-42a64c68a4a98ad5",
+      "EN-9d534deeea39a521"
+    ],
+    "action": "推出",
+    "object": "Dragonfly 数据中心产品组合：HBC 架构、C1000 CPU、AI300 推理加速器",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-2ae83064809b93df",
+      "CL-cae005bb954b2ef9"
+    ],
+    "source_refs": [
+      "SA-b49efb554ee57329"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-b49efb554ee57329",
+        "disclosed_at": "2026-06-25T01:12:40.000Z",
+        "status": "completed"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-f734010431e37500",
+    "display_title_zh": "高通推出 Dragonfly 数据中心产品组合：HBC 架构、C1000 CPU、AI300 推理加速器"
   },
   {
     "event_type": "funding",
@@ -1116,8 +1277,7 @@
     ],
     "conflicts": [],
     "missing_fields": [
-      "event_time",
-      "display_title_zh"
+      "event_time"
     ],
     "update_history": [
       {
@@ -1128,7 +1288,7 @@
     ],
     "publication_status": "partial",
     "event_id": "EV-010946e35d35bb43",
-    "display_title_zh": ""
+    "display_title_zh": "YC支持的Weekday获得220万美元种子轮融资，由Venture Highway领投"
   },
   {
     "event_type": "funding",
@@ -1162,7 +1322,7 @@
     ],
     "publication_status": "partial",
     "event_id": "EV-5f5f252c6a826599",
-    "display_title_zh": "Fire AI从Venture Catalysts获得种子轮前融资"
+    "display_title_zh": "Fire AI 从 Venture Catalysts 获得种子轮前融资"
   },
   {
     "event_type": "partnership",
@@ -1197,7 +1357,7 @@
     ],
     "publication_status": "partial",
     "event_id": "EV-f63462e34ea40699",
-    "display_title_zh": "ServiceNow与英伟达扩大合作，推出全新AI代理，ETTelecom"
+    "display_title_zh": "ServiceNow 与 Nvidia 扩大合作，推出全新 AI 智能体"
   },
   {
     "event_type": "product_release",
@@ -1226,8 +1386,7 @@
     ],
     "conflicts": [],
     "missing_fields": [
-      "event_time",
-      "display_title_zh"
+      "event_time"
     ],
     "update_history": [
       {
@@ -1238,6 +1397,42 @@
     ],
     "publication_status": "verified",
     "event_id": "EV-6364cfadff0d1d30",
-    "display_title_zh": ""
+    "display_title_zh": "OpenAI 推出 AI 智能体构建器，与 n8n 和 Zapier 竞争 AI 工作流自动化市场"
+  },
+  {
+    "event_type": "model_release",
+    "event_status": "announced",
+    "event_time": "",
+    "disclosed_at": "2026-06-25T03:26:00.736Z",
+    "entities": [
+      "EN-c70eca6b0f88f44d",
+      "EN-e65e0f2695fa259d",
+      "EN-562c2c6ed79e6b9e",
+      "EN-bbed1081f0b62667"
+    ],
+    "action": "model_release",
+    "object": "Claude Cowork plugins",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-9e710985b2d207c5"
+    ],
+    "source_refs": [
+      "SA-524553c74ed0033e"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "event_time"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-524553c74ed0033e",
+        "disclosed_at": "2026-06-25T03:26:00.736Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-2740cdc5243d5c47",
+    "display_title_zh": "AI 智能体取代SaaS工作流：2026年业务指南"
   }
 ]

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"腾讯投资的上海燧原科技获得
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "腾讯投资的燧原科技获IPO批准，中国AI芯片热潮再添新军"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 腾讯投资的燧原科技获IPO批准，中国AI芯片热潮再添新军

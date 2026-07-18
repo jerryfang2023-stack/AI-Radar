@@ -72,6 +72,10 @@ key_excerpts: [{"type":"product_update","text":"微星推出 EdgeMesa N AI+ 迷�
 theme: outside-core-exploration
 keyword_group: outside-core-exploration
 copyright_note: local research archive only
+title_zh: "微星宣布 NVIDIA RTX Spark 迷你主机 EdgeMesa N AI+"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 微星宣布 NVIDIA RTX Spark 迷你主机 EdgeMesa N AI+

@@ -72,7 +72,7 @@ key_excerpts: [{"type":"funding","text":"# INXM Raises €5.7 Million Pre-Seed T
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
-title_zh: "INXM 获570万欧元种子轮融资，弥合企业AI演示与实际运营部署之间的差距"
+title_zh: "INXM 获 570 万欧元预种子轮融资，弥合企业 AI 演示与实际运营部署之间的差距"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

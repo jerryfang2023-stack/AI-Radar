@@ -72,7 +72,7 @@ key_excerpts: [{"type":"number","text":"AI ambitions are substantial, but few ha
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
-title_zh: "AI初创公司是在为长期价值还是短期利益而建？ - Facebook"
+title_zh: "AI 初创公司是在构建长期价值还是仅仅追求短期……"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

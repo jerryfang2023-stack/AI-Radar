@@ -72,7 +72,7 @@ key_excerpts: [{"type":"workflow_change","text":"Las Vegas: ServiceNow and Nvidi
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
-title_zh: "ServiceNow与英伟达扩大合作，推出全新AI代理，ETTelecom"
+title_zh: "ServiceNow 与 Nvidia 扩大合作，推出全新 AI 智能体"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

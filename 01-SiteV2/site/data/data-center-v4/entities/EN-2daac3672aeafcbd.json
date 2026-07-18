@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T01:57:40.269Z",
-    "latestDataDate": "2026-07-17",
-    "currentDate": "2026-07-17",
-    "eventCount": 832,
-    "quarantinedEventCount": 60
+    "generatedAt": "2026-07-18T04:59:59.870Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 1250,
+    "quarantinedEventCount": 11
   },
   "entity": {
     "id": "EN-2daac3672aeafcbd",
@@ -81,6 +81,7 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
+        "阿里",
         "阿里巴巴"
       ],
       "verificationStatus": "verified",
@@ -90,12 +91,18 @@
       "eventIds": [
         "EV-43b7f45e9bd7ec9b",
         "EV-3d93d1da8cb64462",
+        "EV-53f08daddd011dbb",
         "EV-e1a4bc40db4a9d8f",
+        "EV-6fbbbfcdcec81df4",
+        "EV-82e68f59d8584e4e",
+        "EV-fd8ecce5de2f667d",
         "EV-f6ac2938949f74ec",
+        "EV-363fe72da52bdb86",
         "EV-70cbf25f7ec2cc3a",
         "EV-8b9e4428074bde60",
         "EV-83c841a4c42cfdea",
         "EV-3167e6eed75597e9",
+        "EV-ad2e4fe6a149d95d",
         "EV-76aa77f5a2e7c661",
         "EV-77662aa9bef9efbe",
         "EV-c7f274c3aadece12",
@@ -103,12 +110,17 @@
         "EV-6712f8ac1f00fe85",
         "EV-c54172bf4e0c1068",
         "EV-473f852b374d8b1c",
+        "EV-197aac95e60671f7",
         "EV-4e6dc3ec2b3f0bd6",
         "EV-bbc34d7bc9c02b6f",
+        "EV-8e6f9c324aa0b2f3",
+        "EV-a4f413441613beac",
         "EV-c11ee0da38376254",
         "EV-657837763764c869",
         "EV-a4f052325d0ef230",
-        "EV-710b145230faa692"
+        "EV-c0a94bb25d551db1",
+        "EV-710b145230faa692",
+        "EV-1b9bd3d2cb0dc54e"
       ],
       "viewpointIds": [],
       "classificationRefs": [
@@ -117,16 +129,20 @@
         "TX-technology-long_context",
         "TX-use_case-data_analysis",
         "TX-technology-on_device",
-        "TX-technology-video_generation",
+        "TX-technology-embodied_ai",
         "TX-technology-fine_tuning",
+        "TX-technology-multimodal",
+        "TX-technology-video_generation",
         "TX-technology-quantization",
         "TX-technology-computer_use"
       ],
       "relatedEntityIds": [
-        "EN-2daac3672aeafcbd"
+        "EN-22a4c686e665e299",
+        "EN-2daac3672aeafcbd",
+        "EN-d65d81c60c0c47c4"
       ],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-07-18"
     }
   ],
   "relationships": [
@@ -159,7 +175,9 @@
       "typeLabel": "技术",
       "valueId": "video_generation",
       "eventIds": [
-        "EV-f169db2fb75a1371",
+        "EV-26d2874c6ce028d6",
+        "EV-6fbbbfcdcec81df4",
+        "EV-fd8ecce5de2f667d",
         "EV-5babb43f4b4d302f",
         "EV-d8c69ed782b73a34",
         "EV-c7404765df94a3b4",
@@ -167,16 +185,19 @@
         "EV-887d47bb477e2142"
       ],
       "entityIds": [
+        "EN-b81c8201acfc7639",
+        "EN-ec1c8f558ff61e34",
+        "EN-047364b9be67f665",
+        "EN-d83624eb3ab9192e",
+        "EN-925a688403e10965",
         "EN-2b6e51bec93e86c1",
         "EN-b0532e1af75cc4ab",
         "EN-01f1074bb52ff605",
         "EN-7ed9c9e7c260ed06",
         "EN-4d09c69c19f5f67b",
         "EN-bbdefa2950f49882",
-        "EN-6e7e64cf66f76a04",
         "EN-5388bc10736a0eff",
         "EN-43a340bb75b45f02",
-        "EN-047364b9be67f665",
         "EN-47c1e53c427aafb4",
         "EN-2daac3672aeafcbd",
         "EN-e9857f381893dd05",
@@ -185,7 +206,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-06-16",
-      "lastSeen": "2026-07-01"
+      "lastSeen": "2026-07-18"
     }
   ],
   "fde": [],

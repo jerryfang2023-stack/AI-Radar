@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-022
 title: "Merck and Google Cloud Partner to Accelerate Agentic AI Enterprise Transformation – Company Announcement - FT.com"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "默克与Google Cloud合作加速企业级AI智能体转型"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://markets.ft.com/data/announce/full?dockey=600-202604220800PR_NEWS_USPRX____AQ39418-1"
 canonical_url: "https://markets.ft.com/data/announce/full?dockey=600-202604220800PR_NEWS_USPRX____AQ39418-1"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-09T03:05:44.910Z
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Merck and Google Cloud Partner to Accelerate Agentic AI Enterprise Transformation – Company Announcement - FT.com

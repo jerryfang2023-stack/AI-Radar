@@ -72,7 +72,7 @@ key_excerpts: [{"type":"supporting_context","text":"Learn AI procurement use cas
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
-title_zh: "10个AI采购用例与案例研究 - AIMultiple"
+title_zh: "10 个 AI 采购用例与案例研究"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

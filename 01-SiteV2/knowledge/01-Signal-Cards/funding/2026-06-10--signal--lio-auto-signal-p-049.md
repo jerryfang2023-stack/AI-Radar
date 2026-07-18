@@ -2,7 +2,7 @@
 id: SIG-20260610-A02
 type: signal_card
 signal_type: funding
-title: "Lio Technologies完成3000万美元A轮融资，将代理式AI引入企业采购领域 | HELIAD Highlights"
+title: "Lio Technologies 获 3000 万美元 A 轮融资，将智能体 AI 引入企业采购"
 date: 2026-06-10
 status: published
 source_title: "Lio Technologies Raises $30m Series A to Bring Agentic AI to Enterprise Procurement | HELIAD Hightlights"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Lio"
 
 frontend:
-  displayTitle: "Lio Technologies完成3000万美元A轮融资，将代理式AI引入企业采购领域 | HELIAD Highlights"
+  displayTitle: "Lio Technologies 获 3000 万美元 A 轮融资，将智能体 AI 引入企业采购"
   sourceLinks:
     - "https://www.heliad.com/highlights/lio-technologies-raises-30m-series-a-to-bring-agentic-ai-to-enterprise-procurement"
 ---
 
-# Lio Technologies完成3000万美元A轮融资，将代理式AI引入企业采购领域 | HELIAD Highlights
+# Lio Technologies 获 3000 万美元 A 轮融资，将智能体 AI 引入企业采购
 
 ## 新闻事实
 

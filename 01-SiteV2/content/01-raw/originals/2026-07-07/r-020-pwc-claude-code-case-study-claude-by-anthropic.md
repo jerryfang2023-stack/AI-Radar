@@ -2,7 +2,7 @@
 schema_version: raw-evidence-v2
 raw_id: R-020
 title: "PwC Claude Code case study | Claude by Anthropic"
-title_zh: "PwC Claude Code案例研究 | Anthropic旗下Claude"
+title_zh: "PwC Claude Code案例研究"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 original_url: "https://claude.com/customers/pwc-qa"

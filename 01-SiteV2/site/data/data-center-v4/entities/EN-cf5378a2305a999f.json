@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T01:57:40.269Z",
-    "latestDataDate": "2026-07-17",
-    "currentDate": "2026-07-17",
-    "eventCount": 832,
-    "quarantinedEventCount": 60
+    "generatedAt": "2026-07-18T04:59:59.870Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 1250,
+    "quarantinedEventCount": 11
   },
   "entity": {
     "id": "EN-cf5378a2305a999f",
@@ -21,7 +21,7 @@
       "canonical"
     ],
     "eventIds": [
-      "EV-ca8ea84386674eb0"
+      "EV-9da9d755019f241f"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
@@ -31,14 +31,14 @@
     "firstSeen": "2026-07-09",
     "lastSeen": "2026-07-09",
     "relationIds": [
-      "REL2-ae05285e0576d4b9"
+      "REL2-07bf8587edb48e95"
     ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
-        "EV-ca8ea84386674eb0"
+        "EV-9da9d755019f241f"
       ],
       "hardware": [],
       "organizationPeople": [],
@@ -46,7 +46,7 @@
     },
     "timeline": [
       {
-        "id": "EV-ca8ea84386674eb0",
+        "id": "EV-9da9d755019f241f",
         "dataDate": "2026-07-09",
         "date": "2026-07-09",
         "eventType": "model_release",
@@ -57,7 +57,6 @@
         "title": "中国AI初创公司MiniMax计划今年晚些时候开源一个2.7万亿参数模型",
         "displayTags": [],
         "entityIds": [
-          "EN-3f140abd179102dd",
           "EN-e1517be14d06cdb7",
           "EN-cf5378a2305a999f"
         ]
@@ -77,9 +76,10 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-ca8ea84386674eb0",
+        "EV-9da9d755019f241f",
         "EV-aae8b6aa0da7f103",
-        "EV-20cdbe59ba2a1359"
+        "EV-20cdbe59ba2a1359",
+        "EV-d5daf0537fe7b2d7"
       ],
       "viewpointIds": [],
       "classificationRefs": [
@@ -89,20 +89,20 @@
         "EN-cf5378a2305a999f",
         "EN-cf81a61e4eaef17c"
       ],
-      "firstSeen": "2026-06-13",
+      "firstSeen": "2026-06-01",
       "lastSeen": "2026-07-09"
     }
   ],
   "relationships": [
     {
-      "relationship_id": "REL2-ae05285e0576d4b9",
+      "relationship_id": "REL2-07bf8587edb48e95",
       "relationship_version": "RELATION-V2.0",
       "subject_ref": "EN-e1517be14d06cdb7",
       "subject_type": "entity",
       "predicate": "publishes",
       "object_ref": "EN-cf5378a2305a999f",
       "object_type": "entity",
-      "event_id": "EV-ca8ea84386674eb0",
+      "event_id": "EV-9da9d755019f241f",
       "claim_refs": [
         "CL-5b1c1ec9e1d977ba",
         "CL-bdf2be420c647faa",

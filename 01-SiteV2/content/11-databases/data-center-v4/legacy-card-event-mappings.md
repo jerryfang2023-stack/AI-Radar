@@ -6,9 +6,9 @@
 - card instances: 955
 - logical card ids: 845
 - duplicate legacy ids: 104
-- mapped to one event: 325
+- mapped to one event: 412
 - ambiguous (multiple events): 3
-- Raw found, no canonical event: 589
+- Raw found, no canonical event: 502
 - unresolved: 38
 
 ## Status semantics

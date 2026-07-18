@@ -72,7 +72,7 @@ key_excerpts: [{"type":"funding","text":"First Concepts raises $1M pre-seed to d
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
-title_zh: "First Concepts 获100万美元种子前融资，为创意团队打造AI工作空间 - FoundersToday"
+title_zh: "First Concepts 获 100 万美元种子轮融资，为创意团队打造 AI 工作空间"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

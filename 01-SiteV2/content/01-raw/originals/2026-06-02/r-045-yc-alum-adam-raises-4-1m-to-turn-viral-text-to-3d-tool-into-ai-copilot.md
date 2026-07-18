@@ -72,7 +72,7 @@ key_excerpts: [{"type":"funding","text":"YC alum Adam raises $4.1M to turn viral
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only
-title_zh: "YC校友Adam筹集410万美元，将病毒式传播的文本转3D工具打造成AI副驾驶"
+title_zh: "YC 校友 Adam 获 410 万美元融资，将爆款文本转 3D 工具打造成 AI 智能体"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

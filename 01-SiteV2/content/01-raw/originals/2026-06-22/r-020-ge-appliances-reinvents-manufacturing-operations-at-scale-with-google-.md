@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"GE Appliances Reinvents Manufacturi
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_zh: "GE Appliances 借助 Google Cloud 的 Gemini Enterprise 大规模重塑制造运营 - 2026年4月22日"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # GE Appliances Reinvents Manufacturing Operations at Scale with Google Cloud's Gemini Enterprise - Apr 22, 2026

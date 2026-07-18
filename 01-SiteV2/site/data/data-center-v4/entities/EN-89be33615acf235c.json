@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-18T04:59:59.870Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 1250,
+    "quarantinedEventCount": 11
+  },
+  "entity": {
+    "id": "EN-89be33615acf235c",
+    "name": "JAKALA",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-ae7b6d0c134c9cad"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-01",
+    "lastSeen": "2026-07-13",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [
+        "EV-ae7b6d0c134c9cad"
+      ],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-ae7b6d0c134c9cad",
+        "dataDate": "2026-07-13",
+        "date": "2026-07-01",
+        "eventType": "deployment",
+        "eventTypeLabel": "部署",
+        "eventGroup": "部署与案例",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "JAKALA 借助 Claude 智能体将营销周期从 7 天缩短至 24 小时",
+        "displayTags": [],
+        "entityIds": [
+          "EN-89be33615acf235c",
+          "EN-c70eca6b0f88f44d"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [
+    {
+      "id": "FDE-26e5a1821fa5cbd0",
+      "eventId": "EV-ae7b6d0c134c9cad",
+      "dataDate": "2026-07-13",
+      "date": "2026-07-01",
+      "title": "JAKALA 借助 Claude 智能体将营销周期从 7 天缩短至 24 小时",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "JAKALA",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "Claude Enterprise to over 3,000 employees",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "rolled out Claude Enterprise to over 3,000 employees",
+        "deploying specialized Performance Agents across client media and marketing workflows"
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://theapplied.co/use-cases/how-jakala-cuts-campaign-cycles-from-7-days-to-24-hours-with-claude-agents",
+      "entityIds": [
+        "EN-89be33615acf235c",
+        "EN-c70eca6b0f88f44d"
+      ]
+    }
+  ],
+  "hardware": []
+}

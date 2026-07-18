@@ -72,7 +72,7 @@ key_excerpts: [{"type":"funding","text":"## Contrario launches: The case for pai
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only
-title_zh: "Contrario上线：主张AI代理与人类招聘人员协作而非取代"
+title_zh: "Contrario 上线：主张将 AI 智能体与人类招聘人员配对而非取代"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

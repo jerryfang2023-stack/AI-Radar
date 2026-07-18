@@ -72,7 +72,7 @@ key_excerpts: [{"type":"supporting_context","text":"For an industry that has spe
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
-title_zh: "谷歌A2A代理市场正式上线：首个自然语言代理发现平台 | AgentMarketCap"
+title_zh: "谷歌A2A代理市场正式上线：首个自然语言代理发现平台"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

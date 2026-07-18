@@ -72,7 +72,7 @@ key_excerpts: [{"type":"funding","text":"General Analysis Raises $10M in Seed Fu
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
-title_zh: "General Analysis 获1000万美元种子轮融资，用于保障自主AI安全"
+title_zh: "General Analysis 获 1000 万美元种子轮融资，用于保障 AI 智能体安全"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

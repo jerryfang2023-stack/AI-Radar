@@ -257,9 +257,16 @@
     "capture_method": "main",
     "extraction_status": "accepted",
     "source_update_history": [],
-    "claim_ids": [],
-    "entity_mention_ids": [],
-    "event_candidate_ids": []
+    "claim_ids": [
+      "CL-f159d7ab58bf43d5"
+    ],
+    "entity_mention_ids": [
+      "EM-c036f43f135678ed",
+      "EM-33cb2f07cbb4d7a7"
+    ],
+    "event_candidate_ids": [
+      "EC-ab77407ceebf18e9"
+    ]
   },
   {
     "schema_version": "RAW-V3.0",
@@ -425,7 +432,7 @@
     "language": "mixed",
     "document_type": "operators",
     "title_original": "Chamath Palihapitiya raises $135M Series A for his AI coding startup, takes CEO role | TechCrunch",
-    "title_zh": "Chamath Palihapitiya为其AI编程初创公司筹集1.35亿美元A轮融资，并出任CEO | TechCrunch",
+    "title_zh": "Chamath Palihapitiya 为其 AI 编程初创公司筹集 1.35 亿美元 A 轮融资，并出任 CEO",
     "body_original": "In Brief\nPosted:\n1:55 PM PDT · June 29, 2026\nImage Credits: Brian Ach / Getty Images for TechCrunch\nJulie Bort\nChamath Palihapitiya raises $135M Series A for his AI coding startup, takes CEO role\nChamath Palihapitiya, best known for his venture capital firm Social Capital and the All-In podcast, announced Monday that the AI coding startup he founded raised a sizable Series A.\nThe company, 8090 Labs, closed a $135 million round led by Salesforce Ventures with participation from Jeffrey Katzenberg’s WndrCo; David Sacks’ Craft Ventures; fellow All-In hosts and “besties” David Friedberg (The Production Board) and Jason Calacanis (Launch); and angel investors like Palo Alto Networks CEO Nikesh Arora and Quora CEO Adam D’Angelo.\nPalihapitiya founded 8090 Labs in January 2024 to offer an AI coding agent specifically for corporate programming teams. Its product, Software Factory, helps corporate coders use AI to build production-quality software, not just vibe-coded prototypes, with all the controls enterprises need, such as audit trails, the company promises.\nWith the raise, Palihapitiya also announced on X that he will lead the startup as CEO, rather than just serving as a board member.\nHe said the AI rush today feels like the rise of social media in his career as an early exec at Facebook, long before it became Meta. “Since I left Facebook, I was waiting for a moment like this to return to a full-time operating role,” he wrote. “I am convinced that what we are building now is even more important, so there was no decision to make except to be all in.”\nTopics\nai coding , Chamath Palihapitiya , Enterprise , Fundraising , In Brief , Startups\nNovember 4\nBoston\nLast chance to save up to $190 on TechCrunch Founder Summit. Join 1,000+ founders and VCs at all stages for real-world scaling insights and connections that move the needle.\nSavings end June 26, 11:59 p.m. PT .\nREGISTER NOW\nNewsletters\nSee More\nSubscribe for the industry’s biggest tech news\nRelated\nAI\nJersey Mike’s IPO illustrates how bad the AI hype has become\nJulie Bort\n5 hours ago\nEnterprise\nMicrosoft launches its own AI deployment company with $2.5 billion commitment\nRussell Brandom\n11 hours ago\nVenture\nAshton Kutcher leaving Sound Ventures to launch new VC firm with Morgan Beller\nMarina Temkin\n1 day ago\nLatest in Startups\nStripe x Startup Battlefield\nLast chance to apply — Startup Battlefield Australia applications close July 6\nIsabelle Johannessen\n53 minutes ago\nHardware\nIQM, Europe’s first public quantum company, admits the future of the tech is uncertain\nAnna Heim\n4 hours ago\nAI\nIndian tech tycoon bets $30M of his own money to build AI alternative to Microsoft Office\nJagmeet Singh\n19 hours ago",
     "body_clean": "In Brief\nPosted:\n1:55 PM PDT · June 29, 2026\nJulie Bort\nChamath Palihapitiya raises $135M Series A for his AI coding startup, takes CEO role\nChamath Palihapitiya, best known for his venture capital firm Social Capital and the All-In podcast, announced Monday that the AI coding startup he founded raised a sizable Series A.\nThe company, 8090 Labs, closed a $135 million round led by Salesforce Ventures with participation from Jeffrey Katzenberg’s WndrCo; David Sacks’ Craft Ventures; fellow All-In hosts and “besties” David Friedberg (The Production Board) and Jason Calacanis (Launch); and angel investors like Palo Alto Networks CEO Nikesh Arora and Quora CEO Adam D’Angelo.\nPalihapitiya founded 8090 Labs in January 2024 to offer an AI coding agent specifically for corporate programming teams. Its product, Software Factory, helps corporate coders use AI to build production-quality software, not just vibe-coded prototypes, with all the controls enterprises need, such as audit trails, the company promises.\nWith the raise, Palihapitiya also announced on X that he will lead the startup as CEO, rather than just serving as a board member.\nHe said the AI rush today feels like the rise of social media in his career as an early exec at Facebook, long before it became Meta. “Since I left Facebook, I was waiting for a moment like this to return to a full-time operating role,” he wrote. “I am convinced that what we are building now is even more important, so there was no decision to make except to be all in.”",
     "content_hash": "3d3c1a68251829f0",
@@ -519,16 +526,23 @@
     "language": "mixed",
     "document_type": "web",
     "title_original": "Claude Managed Agents: get to production 10x faster | Claude by Anthropic",
-    "title_zh": "",
+    "title_zh": "Claude 托管智能体：将生产速度提升 10 倍",
     "body_original": "Today, we're launching Claude Managed Agents, a suite of composable APIs for building and deploying cloud-hosted agents at scale.\nUntil now, building agents meant spending development cycles on secure infrastructure, state management, permissioning, and reworking your agent loops for every model upgrade. Managed Agents pairs an agent harness tuned for performance with production infrastructure to go from prototype to launch in days rather than months.\nWhether you're building single-task runners or complex multi-agent pipelines, you can focus on the user experience, not the operational overhead.\nManaged Agents is available today in public beta on the Claude Platform.\nBuild and deploy agents 10x faster\nShipping a production agent requires sandboxed code execution, checkpointing, credential management, scoped permissions, and end-to-end tracing. That's months of infrastructure work before you ship anything users see.\nManaged Agents handles the complexity. You define your agent's tasks, tools, and guardrails and we run it on our infrastructure. A built-in orchestration harness decides when to call tools, how to manage context, and how to recover from errors.\nManaged Agents includes:\nProduction-grade agents with secure sandboxing, authentication, and tool execution handled for you.\nLong-running sessions that operate autonomously for hours, with progress and outputs that persist even through disconnections.\nMulti-agent coordination so agents can spin up and direct other agents to parallelize complex work (available in research preview , request access here ). ‍\nTrusted governance, giving agents access to real systems with scoped permissions, identity management, and execution tracing built in.\nClaude Managed Agents architecture Designed to make the most of Claude\nClaude models are built for agentic work. Managed Agents is purpose-built for Claude, enabling you to get better agent outcomes with less effort.\nWith Managed Agents, you define outcomes and success criteria, and Claude self-evaluates and iterates until it gets there (available in research preview , request access here ). It also supports traditional prompt-and-response workflows when you want tighter control.\nIn internal testing around structured file generation, Managed Agents improved outcome task success by up to 10 points over a standard prompting loop, with the largest gains on the hardest problems.\nSession tracing, integration analytics, and troubleshooting guidance are built directly into the Claude Console, so you can inspect every tool call, decision, and failure mode.\nWhat teams are building\nTeams are already shipping 10x faster with Managed Agents across a range of production use cases. Coding agents that read a codebase, plan a fix, and open a PR. Productivity agents that join a project, pick up tasks, and deliver work alongside the rest of the team. Finance and legal agents that process documents and extract what matters. In each case, shipping in days meant providing value to users faster.\nNotion lets teams delegate work to Claude directly inside their workspace (available now in private alpha inside Notion Custom Agents). Engineers use it to ship code, while knowledge workers use it to produce websites and presentations. Dozens of tasks can run in parallel while the whole team collaborates on the output.\nRakuten shipped enterprise agents across product, sales, marketing and finance that plug into Slack and Teams, letting employees assign tasks and get back deliverables like spreadsheets, slides, and apps. Each specialist agent was deployed within a week.\nAsana built AI Teammates, collaborative AI agents that work alongside humans inside Asana projects, taking on tasks and drafting deliverables. The team used Managed Agents to add advanced features dramatically faster than they would have been able to otherwise.\nVibecode helps their customers go from prompt to deployed app using Managed Agents as the default integration, powering a new generation of AI-native apps. Users can now spin up that same infrastructure at least 10x quicker than before. ‍\nSentry paired Seer, their debugging agent, with a Claude-powered agent that writes the patch and opens the PR, so developers go from a flagged bug to a reviewable fix in one flow. The integration shipped in weeks instead of months on Managed Agents.\n“We want Notion to be the best place for teams to work with agents and get things done. We integrated Claude Managed Agents, which can handle long-running sessions, manage memory, and deliver high-quality outputs over time, to make that possible. Our users can now delegate open-ended, complex tasks, everything from coding to generating slides and spreadsheets, without ever leaving Notion.”\nEric Liu, Product Manager\n“With Claude Managed Agents, our power users become like Galileo, contributing across domains far beyond a single specialty or discipline. We deploy each specialist agent within a week, managing long-running tasks across engineering, product, sales, marketing, and finance, generating apps, proposal decks, and spreadsheets in sandboxed environments. As agents become more capable, Managed Agents lets us scale safely without building agentic infrastructure ourselves, so we can focus entirely on democratizing innovation across the company.”\nYusuke Kaji, General Manager of AI for Business\n“Claude Managed Agents dramatically accelerated our development of Asana AI Teammates — helping us ship advanced capabilities faster — and freeing us to focus on creating an enterprise-grade multiplayer user experience.”\nAmritansh Raghav, CTO\n“Before Claude Managed Agents, users would have to manually run LLMs in sandboxes, manage their lifecycle, equip them with appropriate tools, and oversee their execution, a process that could take weeks or months to set up. Now, with a few lines of code, users can spin up that same infrastructure at least 10x quicker than before. This opens up what's possible to be built by developers and vibe coders alike. We're going to see a surge of AI-native applications on web and mobile.”\nAnsh Nanda, Co-founder\n“Turns out telling developers what's wrong with their code isn't enough: they want you to fix it too. Customers can now go from Seer's root cause analysis straight to a Claude-powered agent that writes the fix and opens a PR. We chose Claude Managed Agents because it gives us a secure, fully managed agent runtime, allowing us to focus our efforts on building a seamless developer experience around the handoff. Managed Agents not only allowed us to build the initial integration in weeks instead of months, but has also eliminated the ongoing operational overhead of maintaining bespoke agent infrastructure.”\nIndragie Karunaratne, Senior Director of Engineering, AI/ML\n“Atlassian helps enterprises orchestrate work across humans and agents. With Claude Managed Agents, we can build agents for developers directly into the workflows teams already rely on in weeks instead of months, so customers can assign tasks right from Jira. Managed Agents handles the hard parts like sandboxing, sessions, and scoped permissions, which means our engineers can spend less time on infrastructure and more time building great features for our end users.”\nSanchan Saxena, SVP, Head of Product, Teamwork Collection\n“Using Claude Managed Agents, we've built a system that can pull information from our users' documents and correspondence to answer any query they ask, even when we haven't built a specific tool to retrieve the data. Before Managed Agents, we would've had to anticipate every question our users might want to ask and build tools or prompt workflows for each one. Now, with Managed Agents it can code up any tool it needs on the fly, allowing it to handle virtually any user query. This cut development time by 10x, letting us focus on UX and integrating more data sources instead.”\nJaved Qadrud-Din, CTO\n“Claude Managed Agents made it 3x faster to build a production-ready meeting prep agent. We went from idea to shipping in a matter of days. Our agent researches every participant ahead of a meeting to surface what matters for moving the conversation forward. Custom tools let us feed in our own calendar and contacts data, MCP made it simple to connect external systems like meeting notetakers, CRMs, etc., and the managed harness handled the heavy lifting, including sandboxed execution and built-in web search. Letting us focus on building the product, not the infrastructure.”\nJohn Han, Co-founder\nPrev Prev\n0 / 5\nNext Next\neBook\nGetting started\nManaged Agents is priced on consumption. Standard Claude Platform token rates apply, plus $0.08 per session-hour for active runtime. See the docs for full pricing details.\nManaged Agents is available now on the Claude Platform. Read our docs to learn more, head to the Claude Console , or use our new CLI to deploy your first agent.\nDevelopers can also use the latest version of Claude Code and built-in claude-api Skill to build with Managed Agents. Just ask “start onboarding for managed agents in Claude API” to get started.\nFAQ\nNo items found.",
     "body_clean": "Today, we're launching Claude Managed Agents, a suite of composable APIs for building and deploying cloud-hosted agents at scale.\nUntil now, building agents meant spending development cycles on secure infrastructure, state management, permissioning, and reworking your agent loops for every model upgrade. Managed Agents pairs an agent harness tuned for performance with production infrastructure to go from prototype to launch in days rather than months.\nWhether you're building single-task runners or complex multi-agent pipelines, you can focus on the user experience, not the operational overhead.\nManaged Agents is available today in public beta on the Claude Platform.\nBuild and deploy agents 10x faster\nShipping a production agent requires sandboxed code execution, checkpointing, credential management, scoped permissions, and end-to-end tracing. That's months of infrastructure work before you ship anything users see.\nManaged Agents handles the complexity. You define your agent's tasks, tools, and guardrails and we run it on our infrastructure. A built-in orchestration harness decides when to call tools, how to manage context, and how to recover from errors.\nManaged Agents includes:\nProduction-grade agents with secure sandboxing, authentication, and tool execution handled for you.\nLong-running sessions that operate autonomously for hours, with progress and outputs that persist even through disconnections.\nMulti-agent coordination so agents can spin up and direct other agents to parallelize complex work (available in research preview , request access here ). ‍\nTrusted governance, giving agents access to real systems with scoped permissions, identity management, and execution tracing built in.\nClaude Managed Agents architecture Designed to make the most of Claude\nClaude models are built for agentic work. Managed Agents is purpose-built for Claude, enabling you to get better agent outcomes with less effort.\nWith Managed Agents, you define outcomes and success criteria, and Claude self-evaluates and iterates until it gets there (available in research preview , request access here ). It also supports traditional prompt-and-response workflows when you want tighter control.\nIn internal testing around structured file generation, Managed Agents improved outcome task success by up to 10 points over a standard prompting loop, with the largest gains on the hardest problems.\nSession tracing, integration analytics, and troubleshooting guidance are built directly into the Claude Console, so you can inspect every tool call, decision, and failure mode.\nWhat teams are building\nTeams are already shipping 10x faster with Managed Agents across a range of production use cases. Coding agents that read a codebase, plan a fix, and open a PR. Productivity agents that join a project, pick up tasks, and deliver work alongside the rest of the team. Finance and legal agents that process documents and extract what matters. In each case, shipping in days meant providing value to users faster.\nNotion lets teams delegate work to Claude directly inside their workspace (available now in private alpha inside Notion Custom Agents). Engineers use it to ship code, while knowledge workers use it to produce websites and presentations. Dozens of tasks can run in parallel while the whole team collaborates on the output.\nRakuten shipped enterprise agents across product, sales, marketing and finance that plug into Slack and Teams, letting employees assign tasks and get back deliverables like spreadsheets, slides, and apps. Each specialist agent was deployed within a week.\nAsana built AI Teammates, collaborative AI agents that work alongside humans inside Asana projects, taking on tasks and drafting deliverables. The team used Managed Agents to add advanced features dramatically faster than they would have been able to otherwise.\nVibecode helps their customers go from prompt to deployed app using Managed Agents as the default integration, powering a new generation of AI-native apps. Users can now spin up that same infrastructure at least 10x quicker than before. ‍\nSentry paired Seer, their debugging agent, with a Claude-powered agent that writes the patch and opens the PR, so developers go from a flagged bug to a reviewable fix in one flow. The integration shipped in weeks instead of months on Managed Agents.\n“We want Notion to be the best place for teams to work with agents and get things done. We integrated Claude Managed Agents, which can handle long-running sessions, manage memory, and deliver high-quality outputs over time, to make that possible. Our users can now delegate open-ended, complex tasks, everything from coding to generating slides and spreadsheets, without ever leaving Notion.”\nEric Liu, Product Manager\n“With Claude Managed Agents, our power users become like Galileo, contributing across domains far beyond a single specialty or discipline. We deploy each specialist agent within a week, managing long-running tasks across engineering, product, sales, marketing, and finance, generating apps, proposal decks, and spreadsheets in sandboxed environments. As agents become more capable, Managed Agents lets us scale safely without building agentic infrastructure ourselves, so we can focus entirely on democratizing innovation across the company.”\nYusuke Kaji, General Manager of AI for Business\n“Claude Managed Agents dramatically accelerated our development of Asana AI Teammates — helping us ship advanced capabilities faster — and freeing us to focus on creating an enterprise-grade multiplayer user experience.”\nAmritansh Raghav, CTO\n“Before Claude Managed Agents, users would have to manually run LLMs in sandboxes, manage their lifecycle, equip them with appropriate tools, and oversee their execution, a process that could take weeks or months to set up. Now, with a few lines of code, users can spin up that same infrastructure at least 10x quicker than before. This opens up what's possible to be built by developers and vibe coders alike. We're going to see a surge of AI-native applications on web and mobile.”\nAnsh Nanda, Co-founder\n“Turns out telling developers what's wrong with their code isn't enough: they want you to fix it too. Customers can now go from Seer's root cause analysis straight to a Claude-powered agent that writes the fix and opens a PR. We chose Claude Managed Agents because it gives us a secure, fully managed agent runtime, allowing us to focus our efforts on building a seamless developer experience around the handoff. Managed Agents not only allowed us to build the initial integration in weeks instead of months, but has also eliminated the ongoing operational overhead of maintaining bespoke agent infrastructure.”\nIndragie Karunaratne, Senior Director of Engineering, AI/ML\n“Atlassian helps enterprises orchestrate work across humans and agents. With Claude Managed Agents, we can build agents for developers directly into the workflows teams already rely on in weeks instead of months, so customers can assign tasks right from Jira. Managed Agents handles the hard parts like sandboxing, sessions, and scoped permissions, which means our engineers can spend less time on infrastructure and more time building great features for our end users.”\nSanchan Saxena, SVP, Head of Product, Teamwork Collection\n“Using Claude Managed Agents, we've built a system that can pull information from our users' documents and correspondence to answer any query they ask, even when we haven't built a specific tool to retrieve the data. Before Managed Agents, we would've had to anticipate every question our users might want to ask and build tools or prompt workflows for each one. Now, with Managed Agents it can code up any tool it needs on the fly, allowing it to handle virtually any user query. This cut development time by 10x, letting us focus on UX and integrating more data sources instead.”\nJaved Qadrud-Din, CTO\n“Claude Managed Agents made it 3x faster to build a production-ready meeting prep agent. We went from idea to shipping in a matter of days. Our agent researches every participant ahead of a meeting to surface what matters for moving the conversation forward. Custom tools let us feed in our own calendar and contacts data, MCP made it simple to connect external systems like meeting notetakers, CRMs, etc., and the managed harness handled the heavy lifting, including sandboxed execution and built-in web search. Letting us focus on building the product, not the infrastructure.”\nJohn Han, Co-founder\nPrev Prev\n0 / 5\nNext Next\neBook\nGetting started\nManaged Agents is priced on consumption. Standard Claude Platform token rates apply, plus $0.08 per session-hour for active runtime. See the docs for full pricing details.\nManaged Agents is available now on the Claude Platform. Read our docs to learn more, head to the Claude Console , or use our new CLI to deploy your first agent.\nDevelopers can also use the latest version of Claude Code and built-in claude-api Skill to build with Managed Agents. Just ask “start onboarding for managed agents in Claude API” to get started.\nFAQ\nNo items found.",
     "content_hash": "18a639f2ebb2c289",
     "capture_method": "content-container",
     "extraction_status": "accepted",
     "source_update_history": [],
-    "claim_ids": [],
-    "entity_mention_ids": [],
-    "event_candidate_ids": []
+    "claim_ids": [
+      "CL-7f05b9f32f664b05"
+    ],
+    "entity_mention_ids": [
+      "EM-240d7ec00adb734b",
+      "EM-79d727410e4bed4c"
+    ],
+    "event_candidate_ids": [
+      "EC-7967ddec1fb2e2b4"
+    ]
   },
   {
     "schema_version": "RAW-V3.0",
@@ -544,16 +558,25 @@
     "language": "mixed",
     "document_type": "developer",
     "title_original": "Enterprise AI Controls & agent control plane now generally available - GitHub Changelog",
-    "title_zh": "",
+    "title_zh": "企业AI控制与智能体控制平面现已全面可用 - GitHub 更新日志",
     "body_original": "Back to changelog\nWe are now announcing general availability of GitHub&rsquo;s Enterprise AI Controls and agent control plane , a suite of enterprise governance features designed to give GitHub Enterprise administrators deeper control and greater auditability around the use of AI controls and agents across their environments. AI administration teams are expected to enable AI capabilities for their users while keeping their businesses safe. That starts with governance fundamentals, understanding agent activity, and effective audit logging. In the preview announcement we introduced these core features:\nA role and a workspace for AI administrators\nAI Controls in enterprise settings is the one consolidated view and top-level navigation for administrative tasks related to AI systems in GitHub. Decentralize this administration responsibility to the enterprise teams responsible for AI standards and adoption through an enterprise custom role, using fine-grained permissions that allow you to view audit logs, agent session activity, and manage AI Controls.\nKnow what your agents are doing\nAudit logs give you full visibility into what your agents are up to. Each log entry includes an actor_is_agent identifier, along with user and user_id fields so you can see who the agent is acting on behalf of. A new agent_session.task event also captures when sessions have started, finished, or failed to complete. In addition, you can view cloud agent session activity from the last 24 hours, and manage an enterprise-wide MCP allowlist through a centralized MCP registry URL.\nSet enterprise standards for custom agents\nCustom agents give you the opportunity to give your agents context and specialization that works for your enterprise and organization code bases and roles. Set the standards, version control them, and start from a place of intention that can evolve. Use the 1-click push rule to protect the static file path for custom agents (i.e., .github/agents/*.md ) across your enterprise from edits and update that rule for how you choose to operate at scale.\nWhat&rsquo;s new in this release\nWith the general availability release, administrators or designated AI managers additionally receive more discovery and configuration capabilities.\nDiscover and manage agent activity\nSearch for agentic session activity filtered by specific agents, including third-party agents, and track usage by organizations within your enterprise. The agents page audit log automatically prefilters results from Copilot and third-party agents for faster discovery. Cloud agent session activity now goes beyond the initial 1,000 record limit, making all sessions from the last 24 hours visible and easy to trace down to the session details.\nConfigure enterprise agent policies\nAPI support is available to programmatically apply enterprise-wide custom agent definitions for greater control and compliance. You can set the source organization and list custom agents defined in the canonical .github-private/agents/*.md repository path. On the UI side, the AI Controls tab in enterprise settings is now the permanent home for all AI-related policies and settings, with the previous Copilot policies page and its redirect fully removed.\nMCP enterprise allow lists remain in public preview\nManaging enterprise-wide MCP allowlists will remain in preview at this time. We are designing allowlists that scale better across organizations without creating multiple registries. All other AI Controls features are generally available.\nLooking ahead\nMoving forward we&rsquo;ll be introducing more comprehensive session activity coverage to Copilot clients such as VS Code and Copilot CLI, add programmatic access support to agent activity, add granularity and API coverage to policies in AI Controls, and provide more options for MCP governance.\nTo learn more, see our documentation on AI controls and the agent control plane .\nJoin the discussion within GitHub Community .",
     "body_clean": "Back to changelog\nWe are now announcing general availability of GitHub&rsquo;s Enterprise AI Controls and agent control plane , a suite of enterprise governance features designed to give GitHub Enterprise administrators deeper control and greater auditability around the use of AI controls and agents across their environments. AI administration teams are expected to enable AI capabilities for their users while keeping their businesses safe. That starts with governance fundamentals, understanding agent activity, and effective audit logging. In the preview announcement we introduced these core features:\nA role and a workspace for AI administrators\nAI Controls in enterprise settings is the one consolidated view and top-level navigation for administrative tasks related to AI systems in GitHub. Decentralize this administration responsibility to the enterprise teams responsible for AI standards and adoption through an enterprise custom role, using fine-grained permissions that allow you to view audit logs, agent session activity, and manage AI Controls.\nKnow what your agents are doing\nAudit logs give you full visibility into what your agents are up to. Each log entry includes an actor_is_agent identifier, along with user and user_id fields so you can see who the agent is acting on behalf of. A new agent_session.task event also captures when sessions have started, finished, or failed to complete. In addition, you can view cloud agent session activity from the last 24 hours, and manage an enterprise-wide MCP allowlist through a centralized MCP registry URL.\nSet enterprise standards for custom agents\nCustom agents give you the opportunity to give your agents context and specialization that works for your enterprise and organization code bases and roles. Set the standards, version control them, and start from a place of intention that can evolve. Use the 1-click push rule to protect the static file path for custom agents (i.e., .github/agents/*.md ) across your enterprise from edits and update that rule for how you choose to operate at scale.\nWhat&rsquo;s new in this release\nWith the general availability release, administrators or designated AI managers additionally receive more discovery and configuration capabilities.\nDiscover and manage agent activity\nSearch for agentic session activity filtered by specific agents, including third-party agents, and track usage by organizations within your enterprise. The agents page audit log automatically prefilters results from Copilot and third-party agents for faster discovery. Cloud agent session activity now goes beyond the initial 1,000 record limit, making all sessions from the last 24 hours visible and easy to trace down to the session details.\nConfigure enterprise agent policies\nAPI support is available to programmatically apply enterprise-wide custom agent definitions for greater control and compliance. You can set the source organization and list custom agents defined in the canonical .github-private/agents/*.md repository path. On the UI side, the AI Controls tab in enterprise settings is now the permanent home for all AI-related policies and settings, with the previous Copilot policies page and its redirect fully removed.\nMCP enterprise allow lists remain in public preview\nManaging enterprise-wide MCP allowlists will remain in preview at this time. We are designing allowlists that scale better across organizations without creating multiple registries. All other AI Controls features are generally available.\nLooking ahead\nMoving forward we&rsquo;ll be introducing more comprehensive session activity coverage to Copilot clients such as VS Code and Copilot CLI, add programmatic access support to agent activity, add granularity and API coverage to policies in AI Controls, and provide more options for MCP governance.\nTo learn more, see our documentation on AI controls and the agent control plane .\nJoin the discussion within GitHub Community .",
     "content_hash": "2d42bc965bea449f",
     "capture_method": "content-container",
     "extraction_status": "accepted",
     "source_update_history": [],
-    "claim_ids": [],
-    "entity_mention_ids": [],
-    "event_candidate_ids": []
+    "claim_ids": [
+      "CL-de43b46730bbf6ef"
+    ],
+    "entity_mention_ids": [
+      "EM-114634f65d574ef6",
+      "EM-9ff84776ed2eec8c",
+      "EM-a2b898664902756d",
+      "EM-53faaa8bdd493f40"
+    ],
+    "event_candidate_ids": [
+      "EC-7e4a5cc408d5a966"
+    ]
   },
   {
     "schema_version": "RAW-V3.0",
@@ -644,7 +667,7 @@
     "language": "mixed",
     "document_type": "web",
     "title_original": "AI Finance Automation Case Study: Month-End Close 11→3 Days, $850K Saved on LangGraph + Claude 3.5 + SAP/Oracle/NetSuite | DreamzTech",
-    "title_zh": "AI财务自动化案例研究：月结从11天缩短至3天，借助LangGraph+Claude 3.5+SAP/Oracle/NetSuite节省85万美元 | DreamzTech",
+    "title_zh": "AI 财务自动化案例研究：月结从 11 天缩短至 3 天，借助 LangGraph + Claude 3.5 + SAP/Oracle/NetSuite 节省 85 万美元",
     "body_original": "AI Finance Automation Case Study: Month-End Close 11→3 Days, $850K Saved on LangGraph + Claude 3.5 + SAP/Oracle/NetSuite | DreamzTech\nCase Study\nHow a $1.2B Specialty Chemicals Maker Closed Its Books in 3 Days Instead of 11 — Across SAP, Oracle and NetSuite\nTheir 38-person finance team was closing the books in 11 working days — three plants behind the Day-5 industry benchmark, 800+ overtime hours per cycle, and a fresh SOX 404 ITGC finding on close-cycle concentration risk. We built a multi-agent finance platform on LangGraph + Temporal + Anthropic Claude 3.5 Sonnet spanning all three of their ERPs — SAP S/4HANA, Oracle E-Business Suite and NetSuite — and unlocked month-end close collapsed from 11 days to 3, 85% auto-posting on monthly journals, and $850K in annualised savings with zero SOX findings inside 12 months . Faster close. Cleaner controls. Audit-ready every cycle.\nDiscuss Your Project\nTrusted By Startups, SMBs to Fortune 500 Brands\nQuick Answers\nSkim the case in 60 seconds — what was breaking, what we built, what changed in year one.\nThe problem. An 11-working-day close cycle (Day-5 is the industry benchmark), 800+ overtime hours per cycle across 38 finance staff, 9,400+ manual journal entries a month, and a recent SOX 404 ITGC finding flagging close-cycle concentration risk.\nThe build. A multi-agent finance platform on LangGraph + Temporal stateful workflow orchestration, powered by Anthropic Claude 3.5 Sonnet, with native integration into SAP S/4HANA, Oracle E-Business Suite and NetSuite — all three ERPs talking to one close-orchestration layer.\nThe year-one result. Month-end close collapsed from 11 days to 3, 85% auto-post rate on monthly journals, 73% reduction in manual entry, $850K in annualised savings and zero SOX findings — inside 12 months of go-live.\nThe timeline. Two-plant pilot in 12 weeks. All 14 plants on the platform by week 22. Year-one outcomes — including the SOX-clean year — by month 12.\nHow it stays accurate. Every controller override feeds a weekly retraining job; reconciliation accuracy and post-failure rate are monitored per ERP, per GL account, so confidence thresholds tune themselves over time.\nOverview\nMeet the manufacturer. A $1.2B-revenue specialty chemicals company with 1,400 employees, 14 plants across 9 countries, and three different ERPs that had to consolidate every month into a clean set of books.\nChallenges\nFive forces were dragging the close cycle past Day-11 — heterogeneous ERPs, manual journal entry volume, overtime burnout, audit-trail gaps, and a fresh SOX 404 finding on close-cycle concentration risk.\nThe close cycle was twice the benchmark. 11 working days against a Day-5 standard. Every additional day was visible to the board, the auditors and the credit-rating committee.\nOvertime had become a structural cost. 800+ overtime hours per close cycle across 38 finance staff — a recurring P&L hit and a known retention risk for the controllership team.\nThree ERPs, no single source of truth. SAP S/4HANA across 8 plants, Oracle E-Business Suite across 4, NetSuite across 2 — every consolidation step bridged systems that didn't speak the same language.\nManual journal entry was the bottleneck. 9,400+ entries a month with 40% of the close cycle consumed by manual posting and review — enough that any error rippled across the whole timeline.\nSOX 404 had already drawn blood. A recent ITGC finding cited concentration risk on close-cycle execution. Any next-cycle slip would have escalated to a material weakness.\nHow the AI Finance Automation Agent Platform Works\nFive steps, end to end — from the moment a sub-ledger entry hits any of the three ERPs to the moment the consolidated journal posts and the audit pack is closed. Most of those steps, the agent crew now runs entirely on its own.\n1. Ingest from every ERP. SAP S/4HANA, Oracle E-Business Suite and NetSuite all stream sub-ledger activity into a single normalised close pipeline — RPC, IDoc, REST, BAPI, all wired in.\n2. Specialist agents reconcile. Six LangGraph specialist agents take the high-volume tasks — bank-rec, inter-company elimination, accruals, prepaid amortisation, fixed-asset depreciation, FX revaluation — each with its own scoped tools.\n3. Claude 3.5 Sonnet judges the edge cases. Where templates can't decide — vendor-name normalisation across DBA aliases, GL-account classification on novel descriptions, accrual-period inference — Claude reasons over the supporting docs and writes an audit-ready justification.\n4. Confidence-gated posting. High-confidence journals auto-post into the right ERP via API; lower-confidence or material entries route to a human controller with the proposed journal, the agent's reasoning trace, and the supporting evidence already attached.\n5. Audit pack writes itself. Temporal orchestrates the whole close as a stateful workflow; every step writes an immutable SOX evidence entry — so the audit pack assembles itself as the close runs, not after.\nSolutions Delivered\nFour architectural pillars carry the load. Each was chosen for a specific reason; together they're what cut the close from 11 days to 3 across three heterogeneous ERPs.\nLangGraph + Temporal Stateful Workflow Orchestration\nThe close cycle is a long-running, multi-week workflow with dependencies, retries, approvals and audit checkpoints — far more than a single LLM call can manage. We built it on LangGraph for the agent topology and Temporal for the stateful workflow layer. Temporal keeps every close cycle durable end-to-end: if a SAP push fails at 11pm, the workflow resumes from the failure step the next morning with the agent’s last-known state intact. The result is a close that actually finishes — even when an ERP misbehaves mid-cycle.\nAnthropic Claude 3.5 Sonnet for Accounting Reasoning\nClaude 3.5 Sonnet drives the judgement-heavy steps — the ones traditional automation tools have always failed at: vendor-name normalisation across DBA aliases and abbreviations, GL-account classification on free-text descriptions, accrual-period inference from supplier invoices, and FX-revaluation explanations a controller can actually defend. Every Claude decision writes an evidence-cited reasoning trace into the SOX audit log — so ‘why did the AI do that’ is never an unanswered question at year-end.\nNative SAP, Oracle and NetSuite Integration\nThe platform speaks all three ERPs natively. SAP S/4HANA via OData and IDoc; Oracle E-Business Suite via REST and concurrent-program calls; NetSuite via SuiteScript and SuiteTalk. Inter-company eliminations span all three; consolidation runs in a single GAAP layer. We didn’t replace the ERPs — we built the connective tissue that finally made them act like one.\nAudit-Ready by Design — Every Step, Every Cycle\nSOX 404 was the unstated requirement on every design decision. Every agent action, every Claude reasoning trace, every controller override is written to an immutable audit log. The close-cycle audit pack assembles itself as the close runs — supporting schedules, reconciliations, JE evidence, all auto-attached. The result: a year-one SOX audit with zero ITGC findings on the close cycle, and a controllership team that stopped dreading the auditor’s visit.\nSuccess Metrics\nYear-one results, measured the way a manufacturing CFO measures them — days-to-close, auto-post rate, overtime hours, audit findings. No vanity metrics.\n11 → 3 days\nMonth-end close cycle collapsed from 11 working days to 3\n85%\nAuto-post rate on monthly journals — the AI closes them, the controllers approve\n$850K\nAnnualised savings unlocked in the first 12 months of production\nZero\nSOX 404, ITGC and internal-audit findings in year one\n9,400+\nMonthly journal entries now flowing through the agent crew\n3 ERPs\nSAP S/4HANA, Oracle E-Business Suite and NetSuite — one consolidation layer\nThe New Normal for Month-End Close\nWhat started as a Day-11 close became a Day-3 close — and a SOX-clean year. Today, 85% of monthly journals post themselves into the right ERP — accurately, evidence-cited, audit-ready — while the controllership team focuses on the complex, judgement-heavy entries that genuinely need an accountant. Overtime hours are down. The close cost line is down $850K a year . The audit pack writes itself. And the agent crew gets smarter every cycle, learning from every controller override fed back into the LangGraph + Temporal + Claude stack. The bigger story: AI didn't replace the finance team — it gave them their evenings back. That's the difference between an automation tool and an AI finance agent.\nSchedule a Call\nTrusted by Industry Leaders Worldwide\nPowering Growth Through Technology\nFrom AI driven platforms to enterprise software and custom applications, businesses across industries rely on DreamzTech to accelerate innovation, improve operations, and drive measurable growth. Let’s discuss how we can help your business next.\nBook a Discovery Call\nTalk to Our AI Finance Automation Agent Team\nLooking to build a custom AI month-end close automation platform with specialist-agent extraction, Anthropic Claude 3.5 PO + GR + journal entry PO + GR + journal entry three-way match, Power Automate human review, and SAP S/4HANA + Oracle E-Business Suite + NetSuite (heterogeneous ERPs) / NetSuite integration? DreamzTech specialises in financial-services AI document processing on LangGraph + Temporal stateful workflow orchestration with Anthropic Claude 3.5 Sonnet — Microsoft Solutions Partner with signed SOX evidence chain, SOC 2-aligned security and SOX-ready audit trails.\nSchedule a Call\nNEXT STEPS\nExplore Our Solutions\nSix purpose-built AI agent platforms — one for every operations team. Pick a use case, see exactly what we ship.\nAI Agents for Customer Service\nAI Agents for IT Service Desk\nAI Agents for Sales\nAI Agents for Finance & Accounting\nAI Agents for HR\nAI Agents for Marketing\nProven Impact\nMore AI Success Stories\nExplore how DreamzTech helps businesses automate document heavy workflows across legal and insurance sectors with faster processing, improved accuracy, and measurable ROI.\n75% Tier-1 deflection · $2.1M saved\nTheir Tier-1 support desk was drowning in 140,000+ monthly tickets. We rebuilt it as an autonomous multi-agent AI on LangGraph + Anthropic Claude 3.5 Sonnet — and unlocked 75% ticket deflection, $2.1M in annual savings and a 9-point CSAT lift inside 12 months. Faster answers. Happier customers. Zero added headcount.\nRead More →\n18K L1 tickets/month · $1.8M saved\nAn 85,000-employee global retail bank automated its IT service desk with a LangGraph hierarchical multi-agent platform on OpenAI GPT-4o + Microsoft AutoGen specialists with deep ServiceNow integration. Year one: 18,000 L1 tickets auto-resolved monthly, $1.8M direct cost saved and zero SOX 404 ITGC findings.\nRead More →\n4.2× SQL conversion lift · $14.2M Q1 pipeline\nA Series D B2B cybersecurity SaaS replaced manual lead qualification with a four-agent CrewAI sales crew on Anthropic Claude 3.5 + OpenAI GPT-4o with native Salesforce + HubSpot + Apollo + ZoomInfo + 6sense integration. Year one: 4.2× lead-to-SQL conversion lift, $14.2M Q1 pipeline and 67% SDR productivity gain.\nRead More →\nMonth-end close 11→3 days · $850K saved · zero SOX findings\nA $1.2B-revenue specialty chemicals manufacturer cut month-end close from 11 working days to 3 with a LangGraph + Temporal multi-agent finance platform integrating SAP S/4HANA + Oracle E-Business Suite + NetSuite. Year one: $850K annualised savings, 9,400 monthly journals automated and zero SOX 404 ITGC findings.\nRead More →\n85% PA automation · 9-min → 38-sec · $6.2M saved\nA regional integrated healthcare network with 18 hospitals and 142 outpatient clinics automated 85% of prior-authorisation reviews with a HIPAA-eligible four-agent CrewAI platform on Amazon Bedrock + Anthropic Claude 3.5 (fine-tuned). Year one: $6.2M annualised savings, physician satisfaction lifted from 18% to 76% and 64% drop in cancelled procedures.\nRead More →\nOur AI Capabilities\nIndustry Focused AI Development Services\nExplore our comprehensive AI solutions tailored for different industries, including AI agents, multi agent systems, automation platforms, consulting, and enterprise AI integrations.\nIndustries We Build For\nAI agents for healthcare\nAI agents for finance industry\nAI agents for retail industry\nAI agents for manufacturing\nAI agents for legal industry\nAI Agent Services\nEnd-to-End AI Agent Implementation\nAI Agent Consulting\nManaged AI Agent Services\nAI Agent Integration Services\nAI Workflow Automation Services\nMulti-Agent AI System Development\nLLM Agent Development Services\nFrequently Asked Questions (FAQ)\nThe questions manufacturing CFOs, controllers and SOX program leads ask us most when scoping a close-automation build like this one.\nWhat kinds of journal entries does the AI handle on its own?\nHigh-volume, well-defined entries — accruals, prepaid amortisation, fixed-asset depreciation, FX revaluation, intercompany eliminations, bank reconciliations, and any journal where the supporting evidence and posting rules are clear. Material, judgement-heavy or unusual entries always route to a human controller.\nWhat happens when the AI can't auto-post a journal?\nThe entry routes to a human controller inside their ERP’s approval workflow, with the proposed journal, the agent’s reasoning trace, every cited supporting document, and a confidence breakdown attached. The controller either approves, edits or rejects — and every override is captured for the next retraining cycle.\nIs the platform SOX-compliant and audit-ready?\nYes. Every agent action — every ERP call, every reasoning step, every controller override — writes an immutable audit entry. The close-cycle audit pack assembles itself as the close runs. SOC 2 Type II controls in place across the full pipeline. The manufacturer in this case ran their first year on the platform with zero SOX 404 ITGC findings.\nHow long does an implementation typically take?\nTwelve weeks to a single-plant production pilot. Twenty-two weeks for the full 14-plant rollout the manufacturer ran. Year-one outcomes — 11→3 day close, $850K savings, zero SOX findings — landed by month 12.\nDoes it work with SAP, Oracle, NetSuite, Workday and Sage?\nYes. Native integration with SAP S/4HANA and ECC (OData, IDoc, BAPI), Oracle E-Business Suite and Cloud ERP (REST, concurrent programs), NetSuite (SuiteScript, SuiteTalk), Workday Financial Management (REST/RaaS), and Sage Intacct (API). We’ve also integrated bespoke ERPs where the customer’s data model required it — the agent crew is ERP-portable by design.\nHow does the AI keep getting smarter after launch?\nEvery controller override is captured, labelled and fed into a weekly retraining job. Per-ERP, per-GL-account reconciliation accuracy and post-failure rates are tracked on dashboards, so confidence thresholds can be tuned where the agents are over- or under-posting. Most engagements see auto-post rate climb another 5–10 percentage points in the first six months after launch.\nNavigate\nQuick Answers\nOverview\nChallenges\nHow the Platform Works\nSolutions Delivered\nSuccess Metrics\nConclusion\nContact Us\nDiscuss your Project ➜\nAwards & Recognitions",
     "body_clean": "AI Finance Automation Case Study: Month-End Close 11→3 Days, $850K Saved on LangGraph + Claude 3.5 + SAP/Oracle/NetSuite | DreamzTech\nCase Study\nHow a $1.2B Specialty Chemicals Maker Closed Its Books in 3 Days Instead of 11 — Across SAP, Oracle and NetSuite\nTheir 38-person finance team was closing the books in 11 working days — three plants behind the Day-5 industry benchmark, 800+ overtime hours per cycle, and a fresh SOX 404 ITGC finding on close-cycle concentration risk. We built a multi-agent finance platform on LangGraph + Temporal + Anthropic Claude 3.5 Sonnet spanning all three of their ERPs — SAP S/4HANA, Oracle E-Business Suite and NetSuite — and unlocked month-end close collapsed from 11 days to 3, 85% auto-posting on monthly journals, and $850K in annualised savings with zero SOX findings inside 12 months . Faster close. Cleaner controls. Audit-ready every cycle.\nDiscuss Your Project\nTrusted By Startups, SMBs to Fortune 500 Brands\nQuick Answers\nSkim the case in 60 seconds — what was breaking, what we built, what changed in year one.\nThe problem. An 11-working-day close cycle (Day-5 is the industry benchmark), 800+ overtime hours per cycle across 38 finance staff, 9,400+ manual journal entries a month, and a recent SOX 404 ITGC finding flagging close-cycle concentration risk.\nThe build. A multi-agent finance platform on LangGraph + Temporal stateful workflow orchestration, powered by Anthropic Claude 3.5 Sonnet, with native integration into SAP S/4HANA, Oracle E-Business Suite and NetSuite — all three ERPs talking to one close-orchestration layer.\nThe year-one result. Month-end close collapsed from 11 days to 3, 85% auto-post rate on monthly journals, 73% reduction in manual entry, $850K in annualised savings and zero SOX findings — inside 12 months of go-live.\nThe timeline. Two-plant pilot in 12 weeks. All 14 plants on the platform by week 22. Year-one outcomes — including the SOX-clean year — by month 12.\nHow it stays accurate. Every controller override feeds a weekly retraining job; reconciliation accuracy and post-failure rate are monitored per ERP, per GL account, so confidence thresholds tune themselves over time.\nOverview\nMeet the manufacturer. A $1.2B-revenue specialty chemicals company with 1,400 employees, 14 plants across 9 countries, and three different ERPs that had to consolidate every month into a clean set of books.\nChallenges\nFive forces were dragging the close cycle past Day-11 — heterogeneous ERPs, manual journal entry volume, overtime burnout, audit-trail gaps, and a fresh SOX 404 finding on close-cycle concentration risk.\nThe close cycle was twice the benchmark. 11 working days against a Day-5 standard. Every additional day was visible to the board, the auditors and the credit-rating committee.\nOvertime had become a structural cost. 800+ overtime hours per close cycle across 38 finance staff — a recurring P&L hit and a known retention risk for the controllership team.\nThree ERPs, no single source of truth. SAP S/4HANA across 8 plants, Oracle E-Business Suite across 4, NetSuite across 2 — every consolidation step bridged systems that didn't speak the same language.\nManual journal entry was the bottleneck. 9,400+ entries a month with 40% of the close cycle consumed by manual posting and review — enough that any error rippled across the whole timeline.\nSOX 404 had already drawn blood. A recent ITGC finding cited concentration risk on close-cycle execution. Any next-cycle slip would have escalated to a material weakness.\nHow the AI Finance Automation Agent Platform Works\nFive steps, end to end — from the moment a sub-ledger entry hits any of the three ERPs to the moment the consolidated journal posts and the audit pack is closed. Most of those steps, the agent crew now runs entirely on its own.\n1. Ingest from every ERP. SAP S/4HANA, Oracle E-Business Suite and NetSuite all stream sub-ledger activity into a single normalised close pipeline — RPC, IDoc, REST, BAPI, all wired in.\n2. Specialist agents reconcile. Six LangGraph specialist agents take the high-volume tasks — bank-rec, inter-company elimination, accruals, prepaid amortisation, fixed-asset depreciation, FX revaluation — each with its own scoped tools.\n3. Claude 3.5 Sonnet judges the edge cases. Where templates can't decide — vendor-name normalisation across DBA aliases, GL-account classification on novel descriptions, accrual-period inference — Claude reasons over the supporting docs and writes an audit-ready justification.\n4. Confidence-gated posting. High-confidence journals auto-post into the right ERP via API; lower-confidence or material entries route to a human controller with the proposed journal, the agent's reasoning trace, and the supporting evidence already attached.\n5. Audit pack writes itself. Temporal orchestrates the whole close as a stateful workflow; every step writes an immutable SOX evidence entry — so the audit pack assembles itself as the close runs, not after.\nSolutions Delivered\nFour architectural pillars carry the load. Each was chosen for a specific reason; together they're what cut the close from 11 days to 3 across three heterogeneous ERPs.\nLangGraph + Temporal Stateful Workflow Orchestration\nThe close cycle is a long-running, multi-week workflow with dependencies, retries, approvals and audit checkpoints — far more than a single LLM call can manage. We built it on LangGraph for the agent topology and Temporal for the stateful workflow layer. Temporal keeps every close cycle durable end-to-end: if a SAP push fails at 11pm, the workflow resumes from the failure step the next morning with the agent’s last-known state intact. The result is a close that actually finishes — even when an ERP misbehaves mid-cycle.\nAnthropic Claude 3.5 Sonnet for Accounting Reasoning\nClaude 3.5 Sonnet drives the judgement-heavy steps — the ones traditional automation tools have always failed at: vendor-name normalisation across DBA aliases and abbreviations, GL-account classification on free-text descriptions, accrual-period inference from supplier invoices, and FX-revaluation explanations a controller can actually defend. Every Claude decision writes an evidence-cited reasoning trace into the SOX audit log — so ‘why did the AI do that’ is never an unanswered question at year-end.\nNative SAP, Oracle and NetSuite Integration\nThe platform speaks all three ERPs natively. SAP S/4HANA via OData and IDoc; Oracle E-Business Suite via REST and concurrent-program calls; NetSuite via SuiteScript and SuiteTalk. Inter-company eliminations span all three; consolidation runs in a single GAAP layer. We didn’t replace the ERPs — we built the connective tissue that finally made them act like one.\nAudit-Ready by Design — Every Step, Every Cycle\nSOX 404 was the unstated requirement on every design decision. Every agent action, every Claude reasoning trace, every controller override is written to an immutable audit log. The close-cycle audit pack assembles itself as the close runs — supporting schedules, reconciliations, JE evidence, all auto-attached. The result: a year-one SOX audit with zero ITGC findings on the close cycle, and a controllership team that stopped dreading the auditor’s visit.\nSuccess Metrics\nYear-one results, measured the way a manufacturing CFO measures them — days-to-close, auto-post rate, overtime hours, audit findings. No vanity metrics.\n11 → 3 days\nMonth-end close cycle collapsed from 11 working days to 3\n85%\nAuto-post rate on monthly journals — the AI closes them, the controllers approve\n$850K\nAnnualised savings unlocked in the first 12 months of production\nZero\nSOX 404, ITGC and internal-audit findings in year one\n9,400+\nMonthly journal entries now flowing through the agent crew\n3 ERPs\nSAP S/4HANA, Oracle E-Business Suite and NetSuite — one consolidation layer\nThe New Normal for Month-End Close\nWhat started as a Day-11 close became a Day-3 close — and a SOX-clean year. Today, 85% of monthly journals post themselves into the right ERP — accurately, evidence-cited, audit-ready — while the controllership team focuses on the complex, judgement-heavy entries that genuinely need an accountant. Overtime hours are down. The close cost line is down $850K a year . The audit pack writes itself. And the agent crew gets smarter every cycle, learning from every controller override fed back into the LangGraph + Temporal + Claude stack. The bigger story: AI didn't replace the finance team — it gave them their evenings back. That's the difference between an automation tool and an AI finance agent.\nSchedule a Call\nTrusted by Industry Leaders Worldwide\nPowering Growth Through Technology\nFrom AI driven platforms to enterprise software and custom applications, businesses across industries rely on DreamzTech to accelerate innovation, improve operations, and drive measurable growth. Let’s discuss how we can help your business next.\nBook a Discovery Call\nTalk to Our AI Finance Automation Agent Team\nLooking to build a custom AI month-end close automation platform with specialist-agent extraction, Anthropic Claude 3.5 PO + GR + journal entry PO + GR + journal entry three-way match, Power Automate human review, and SAP S/4HANA + Oracle E-Business Suite + NetSuite (heterogeneous ERPs) / NetSuite integration? DreamzTech specialises in financial-services AI document processing on LangGraph + Temporal stateful workflow orchestration with Anthropic Claude 3.5 Sonnet — Microsoft Solutions Partner with signed SOX evidence chain, SOC 2-aligned security and SOX-ready audit trails.\nSchedule a Call\nNEXT STEPS\nExplore Our Solutions\nSix purpose-built AI agent platforms — one for every operations team. Pick a use case, see exactly what we ship.\nAI Agents for Customer Service\nAI Agents for IT Service Desk\nAI Agents for Sales\nAI Agents for Finance & Accounting\nAI Agents for HR\nAI Agents for Marketing\nProven Impact\nMore AI Success Stories\nExplore how DreamzTech helps businesses automate document heavy workflows across legal and insurance sectors with faster processing, improved accuracy, and measurable ROI.\n75% Tier-1 deflection · $2.1M saved\nTheir Tier-1 support desk was drowning in 140,000+ monthly tickets. We rebuilt it as an autonomous multi-agent AI on LangGraph + Anthropic Claude 3.5 Sonnet — and unlocked 75% ticket deflection, $2.1M in annual savings and a 9-point CSAT lift inside 12 months. Faster answers. Happier customers. Zero added headcount.\nRead More →\n18K L1 tickets/month · $1.8M saved\nAn 85,000-employee global retail bank automated its IT service desk with a LangGraph hierarchical multi-agent platform on OpenAI GPT-4o + Microsoft AutoGen specialists with deep ServiceNow integration. Year one: 18,000 L1 tickets auto-resolved monthly, $1.8M direct cost saved and zero SOX 404 ITGC findings.\nRead More →\n4.2× SQL conversion lift · $14.2M Q1 pipeline\nA Series D B2B cybersecurity SaaS replaced manual lead qualification with a four-agent CrewAI sales crew on Anthropic Claude 3.5 + OpenAI GPT-4o with native Salesforce + HubSpot + Apollo + ZoomInfo + 6sense integration. Year one: 4.2× lead-to-SQL conversion lift, $14.2M Q1 pipeline and 67% SDR productivity gain.\nRead More →\nMonth-end close 11→3 days · $850K saved · zero SOX findings\nA $1.2B-revenue specialty chemicals manufacturer cut month-end close from 11 working days to 3 with a LangGraph + Temporal multi-agent finance platform integrating SAP S/4HANA + Oracle E-Business Suite + NetSuite. Year one: $850K annualised savings, 9,400 monthly journals automated and zero SOX 404 ITGC findings.\nRead More →\n85% PA automation · 9-min → 38-sec · $6.2M saved\nA regional integrated healthcare network with 18 hospitals and 142 outpatient clinics automated 85% of prior-authorisation reviews with a HIPAA-eligible four-agent CrewAI platform on Amazon Bedrock + Anthropic Claude 3.5 (fine-tuned). Year one: $6.2M annualised savings, physician satisfaction lifted from 18% to 76% and 64% drop in cancelled procedures.\nRead More →\nOur AI Capabilities\nIndustry Focused AI Development Services\nExplore our comprehensive AI solutions tailored for different industries, including AI agents, multi agent systems, automation platforms, consulting, and enterprise AI integrations.\nIndustries We Build For\nAI agents for healthcare\nAI agents for finance industry\nAI agents for retail industry\nAI agents for manufacturing\nAI agents for legal industry\nAI Agent Services\nEnd-to-End AI Agent Implementation\nAI Agent Consulting\nManaged AI Agent Services\nAI Agent Integration Services\nAI Workflow Automation Services\nMulti-Agent AI System Development\nLLM Agent Development Services\nFrequently Asked Questions (FAQ)\nThe questions manufacturing CFOs, controllers and SOX program leads ask us most when scoping a close-automation build like this one.\nWhat kinds of journal entries does the AI handle on its own?\nHigh-volume, well-defined entries — accruals, prepaid amortisation, fixed-asset depreciation, FX revaluation, intercompany eliminations, bank reconciliations, and any journal where the supporting evidence and posting rules are clear. Material, judgement-heavy or unusual entries always route to a human controller.\nWhat happens when the AI can't auto-post a journal?\nThe entry routes to a human controller inside their ERP’s approval workflow, with the proposed journal, the agent’s reasoning trace, every cited supporting document, and a confidence breakdown attached. The controller either approves, edits or rejects — and every override is captured for the next retraining cycle.\nIs the platform SOX-compliant and audit-ready?\nYes. Every agent action — every ERP call, every reasoning step, every controller override — writes an immutable audit entry. The close-cycle audit pack assembles itself as the close runs. SOC 2 Type II controls in place across the full pipeline. The manufacturer in this case ran their first year on the platform with zero SOX 404 ITGC findings.\nHow long does an implementation typically take?\nTwelve weeks to a single-plant production pilot. Twenty-two weeks for the full 14-plant rollout the manufacturer ran. Year-one outcomes — 11→3 day close, $850K savings, zero SOX findings — landed by month 12.\nDoes it work with SAP, Oracle, NetSuite, Workday and Sage?\nYes. Native integration with SAP S/4HANA and ECC (OData, IDoc, BAPI), Oracle E-Business Suite and Cloud ERP (REST, concurrent programs), NetSuite (SuiteScript, SuiteTalk), Workday Financial Management (REST/RaaS), and Sage Intacct (API). We’ve also integrated bespoke ERPs where the customer’s data model required it — the agent crew is ERP-portable by design.\nHow does the AI keep getting smarter after launch?\nEvery controller override is captured, labelled and fed into a weekly retraining job. Per-ERP, per-GL-account reconciliation accuracy and post-failure rates are tracked on dashboards, so confidence thresholds can be tuned where the agents are over- or under-posting. Most engagements see auto-post rate climb another 5–10 percentage points in the first six months after launch.\nNavigate\nQuick Answers\nOverview\nChallenges\nHow the Platform Works\nSolutions Delivered\nSuccess Metrics\nConclusion\nContact Us\nDiscuss your Project ➜\nAwards & Recognitions",
     "content_hash": "14a5ef582dc1a1aa",
@@ -2044,8 +2067,7 @@
       "CL-15271662abb66d57"
     ],
     "entity_mention_ids": [
-      "EM-77b90f5c3edc61d5",
-      "EM-9c95d1be6959a56b"
+      "EM-77b90f5c3edc61d5"
     ],
     "event_candidate_ids": [
       "EC-cb5a2b0735d796c5"
@@ -2417,9 +2439,15 @@
     "capture_method": "content-container",
     "extraction_status": "accepted",
     "source_update_history": [],
-    "claim_ids": [],
-    "entity_mention_ids": [],
-    "event_candidate_ids": []
+    "claim_ids": [
+      "CL-6aed2233499f480f"
+    ],
+    "entity_mention_ids": [
+      "EM-90a768a8e11e6605"
+    ],
+    "event_candidate_ids": [
+      "EC-9940efda1f3c5f0d"
+    ]
   },
   {
     "schema_version": "RAW-V3.0",
@@ -2485,16 +2513,23 @@
     "language": "mixed",
     "document_type": "web",
     "title_original": "Watch Microsoft's 6,000-Person AI Push - Bloomberg.com",
-    "title_zh": "",
+    "title_zh": "微软 6,000 人 AI 大动作引关注",
     "body_original": "Watch Microsoft's 6,000-Person AI Push - Bloomberg\nJul 2nd, 2026\nMicrosoft's 6,000-Person AI Push\nMicrosoft is building a 6,000-person AI deployment team to help businesses implement artificial intelligence. Bloomberg' Tech co-host Ed Ludlow explains why the move mirrors the forward deployment engineer model pioneered by Palantir and adopted by AWS, and why hands-on AI implementation could be the key to unlocking enterprise ROI.\nAvailable on:\nListen on Apple TV Listen on Roku Listen on Samsung TV Listen on Fire TV Listen on Android TV Listen on Rakuten TV Listen on Haystack News\nWatch BTV in your area:\nChannel Finder\nTerms of Service Do Not Sell or Share My Personal Information Trademarks Privacy Policy\nCareers Advertise Ad Choices\nHelp ©2026 Bloomberg L.P. All Rights Reserved.\nDuration: 2:53\nJobs Data Puts Fed in 'Good Spot': TD Securities' Brooks\nDuration: 6:26\nOpenAI Proposes Giving the US Government a 5% Stake, FT Says\nDuration: 2:12\nHow Phone Culture Is Reshaping Chinese Society\nDuration: 11:55\nKrugman Calls Labor Market Soft, Disturbed by Warsh's View\nThe Close\nDuration: 1:17\nWhere To Invest $100,000\nDuration: 2:06\nUS Employment Picture ‘Just OK,’ BlackRock’s Rieder Says\nDuration: 3:27\nBlue Owl Imposes Redemption Caps Again\nDuration: 2:01\nFed Chairman Warsh Says Inflation Risks Have Come Down",
     "body_clean": "Watch Microsoft's 6,000-Person AI Push - Bloomberg\nJul 2nd, 2026\nMicrosoft's 6,000-Person AI Push\nMicrosoft is building a 6,000-person AI deployment team to help businesses implement artificial intelligence. Bloomberg' Tech co-host Ed Ludlow explains why the move mirrors the forward deployment engineer model pioneered by Palantir and adopted by AWS, and why hands-on AI implementation could be the key to unlocking enterprise ROI.\nAvailable on:\nListen on Apple TV Listen on Roku Listen on Samsung TV Listen on Fire TV Listen on Android TV Listen on Rakuten TV Listen on Haystack News\nWatch BTV in your area:\nChannel Finder\nTerms of Service Do Not Sell or Share My Personal Information Trademarks Privacy Policy\nCareers Advertise Ad Choices\nHelp ©2026 Bloomberg L.P. All Rights Reserved.\nDuration: 2:53\nJobs Data Puts Fed in 'Good Spot': TD Securities' Brooks\nDuration: 6:26\nOpenAI Proposes Giving the US Government a 5% Stake, FT Says\nDuration: 2:12\nHow Phone Culture Is Reshaping Chinese Society\nDuration: 11:55\nKrugman Calls Labor Market Soft, Disturbed by Warsh's View\nThe Close\nDuration: 1:17\nWhere To Invest $100,000\nDuration: 2:06\nUS Employment Picture ‘Just OK,’ BlackRock’s Rieder Says\nDuration: 3:27\nBlue Owl Imposes Redemption Caps Again\nDuration: 2:01\nFed Chairman Warsh Says Inflation Risks Have Come Down",
     "content_hash": "7838d64fb3c69b91",
     "capture_method": "body-visible-text",
     "extraction_status": "accepted",
     "source_update_history": [],
-    "claim_ids": [],
-    "entity_mention_ids": [],
-    "event_candidate_ids": []
+    "claim_ids": [
+      "CL-39176f8a329968b3"
+    ],
+    "entity_mention_ids": [
+      "EM-1c736d0ade527480",
+      "EM-213f33dcc9fb8386"
+    ],
+    "event_candidate_ids": [
+      "EC-709baeee01cbfb0e"
+    ]
   },
   {
     "schema_version": "RAW-V3.0",
@@ -2648,8 +2683,8 @@
   },
   {
     "schema_version": "RAW-V3.0",
-    "raw_id": "RAW-453f96ca27a75eb5",
-    "source_artifact_id": "SA-fa56e70b432d75bc",
+    "raw_id": "RAW-8144dc89150127a9",
+    "source_artifact_id": "SA-7936a81991a6b149",
     "source_url": "",
     "canonical_url": "",
     "publisher": "The Decoder：AI News（RSS）",
@@ -2673,8 +2708,8 @@
   },
   {
     "schema_version": "RAW-V3.0",
-    "raw_id": "RAW-6c6cdd6ed91bc164",
-    "source_artifact_id": "SA-2625929eeb8b9896",
+    "raw_id": "RAW-719143a55417f253",
+    "source_artifact_id": "SA-9574631eaa3d7d2c",
     "source_url": "",
     "canonical_url": "",
     "publisher": "Claude：Blog（网页）",
@@ -2698,8 +2733,8 @@
   },
   {
     "schema_version": "RAW-V3.0",
-    "raw_id": "RAW-26d572fa8f403ec7",
-    "source_artifact_id": "SA-361576ec341b6c6b",
+    "raw_id": "RAW-bda2a9a8184d84f1",
+    "source_artifact_id": "SA-2c17370157d3ed39",
     "source_url": "",
     "canonical_url": "",
     "publisher": "MarkTechPost（RSS）",
@@ -2723,8 +2758,8 @@
   },
   {
     "schema_version": "RAW-V3.0",
-    "raw_id": "RAW-3a73b97868df500b",
-    "source_artifact_id": "SA-7359d8d13b4cf7c1",
+    "raw_id": "RAW-70698a676bec7c40",
+    "source_artifact_id": "SA-ade7194a3bebf227",
     "source_url": "",
     "canonical_url": "",
     "publisher": "Hacker News 热门（buzzing.cc 中文翻译）",
@@ -2748,8 +2783,8 @@
   },
   {
     "schema_version": "RAW-V3.0",
-    "raw_id": "RAW-d46ac16ed61a0bd4",
-    "source_artifact_id": "SA-54ae9e4d695bfd63",
+    "raw_id": "RAW-4748932c337ff937",
+    "source_artifact_id": "SA-5eba722f29aa4750",
     "source_url": "",
     "canonical_url": "",
     "publisher": "Hacker News 热门（buzzing.cc 中文翻译）",
@@ -2773,8 +2808,8 @@
   },
   {
     "schema_version": "RAW-V3.0",
-    "raw_id": "RAW-c68147d1ae81e4e9",
-    "source_artifact_id": "SA-6e7d2b0589f73e6a",
+    "raw_id": "RAW-d745635a3e9ced63",
+    "source_artifact_id": "SA-e710d4fd08057689",
     "source_url": "",
     "canonical_url": "",
     "publisher": "MarkTechPost（RSS）",
@@ -2798,8 +2833,8 @@
   },
   {
     "schema_version": "RAW-V3.0",
-    "raw_id": "RAW-56411f873c6b63f2",
-    "source_artifact_id": "SA-f0902818db122293",
+    "raw_id": "RAW-df946330f3db93a1",
+    "source_artifact_id": "SA-7c2aaeb52e59f05d",
     "source_url": "",
     "canonical_url": "",
     "publisher": "LMSYS：Blog（Chatbot Arena 团队）",
@@ -2823,8 +2858,8 @@
   },
   {
     "schema_version": "RAW-V3.0",
-    "raw_id": "RAW-d4cb67e41742b76d",
-    "source_artifact_id": "SA-9701938b7c68627b",
+    "raw_id": "RAW-81081a76b6897eb9",
+    "source_artifact_id": "SA-4957a718532a6655",
     "source_url": "",
     "canonical_url": "",
     "publisher": "Training Data (Sequoia)",
@@ -2873,8 +2908,8 @@
   },
   {
     "schema_version": "RAW-V3.0",
-    "raw_id": "RAW-2948be1e8aca06a8",
-    "source_artifact_id": "SA-4bf0c0e20c5a8a13",
+    "raw_id": "RAW-45e6c72d474acc92",
+    "source_artifact_id": "SA-dd1378f956543618",
     "source_url": "",
     "canonical_url": "",
     "publisher": "No Priors",
@@ -2948,8 +2983,8 @@
   },
   {
     "schema_version": "RAW-V3.0",
-    "raw_id": "RAW-11d47ec3e4c6f03b",
-    "source_artifact_id": "SA-96a412dc2625f0d7",
+    "raw_id": "RAW-a135bcbf5ae5636e",
+    "source_artifact_id": "SA-8b5e84dec9cf5748",
     "source_url": "",
     "canonical_url": "",
     "publisher": "Apple Machine Learning Research（RSS）",
@@ -2973,8 +3008,8 @@
   },
   {
     "schema_version": "RAW-V3.0",
-    "raw_id": "RAW-f668047f7f616378",
-    "source_artifact_id": "SA-379d481a2157220c",
+    "raw_id": "RAW-bc1a278fe58d01f6",
+    "source_artifact_id": "SA-29fff734be7983fc",
     "source_url": "",
     "canonical_url": "",
     "publisher": "X：邵猛 (@shao__meng)",
@@ -2998,8 +3033,8 @@
   },
   {
     "schema_version": "RAW-V3.0",
-    "raw_id": "RAW-5e3c416c6e789d69",
-    "source_artifact_id": "SA-b6c2b26a3c0c3056",
+    "raw_id": "RAW-11179ea91530c98e",
+    "source_artifact_id": "SA-9e45005f67ebfdc4",
     "source_url": "",
     "canonical_url": "",
     "publisher": "公众号：昆仑万维（天工）",
@@ -3023,8 +3058,8 @@
   },
   {
     "schema_version": "RAW-V3.0",
-    "raw_id": "RAW-9d6bf83e82ed79f0",
-    "source_artifact_id": "SA-e7c367c77a8cf3ce",
+    "raw_id": "RAW-9553649d88c8e9b9",
+    "source_artifact_id": "SA-1283bd1d1b3446ee",
     "source_url": "",
     "canonical_url": "",
     "publisher": "X：Kim (@kimmonismus)",
@@ -3048,8 +3083,8 @@
   },
   {
     "schema_version": "RAW-V3.0",
-    "raw_id": "RAW-ca2ec5a953105836",
-    "source_artifact_id": "SA-5a74cffc3596b535",
+    "raw_id": "RAW-307dc972a6a15727",
+    "source_artifact_id": "SA-703296f1d8acde02",
     "source_url": "",
     "canonical_url": "",
     "publisher": "Apple Machine Learning Research（RSS）",
@@ -3073,8 +3108,8 @@
   },
   {
     "schema_version": "RAW-V3.0",
-    "raw_id": "RAW-f417e123ea8e42a8",
-    "source_artifact_id": "SA-38f53bf218073105",
+    "raw_id": "RAW-324716bc7bb0a0d0",
+    "source_artifact_id": "SA-11fcf15a412c99da",
     "source_url": "",
     "canonical_url": "",
     "publisher": "The Decoder：AI News（RSS）",
@@ -3098,8 +3133,8 @@
   },
   {
     "schema_version": "RAW-V3.0",
-    "raw_id": "RAW-d16df050d7d0ca8a",
-    "source_artifact_id": "SA-91546b329ae054de",
+    "raw_id": "RAW-76292b806399a8e8",
+    "source_artifact_id": "SA-d5738848bf57a7d5",
     "source_url": "",
     "canonical_url": "",
     "publisher": "Runway：News（网页）",
@@ -3123,8 +3158,8 @@
   },
   {
     "schema_version": "RAW-V3.0",
-    "raw_id": "RAW-2bb6544b2f6402c6",
-    "source_artifact_id": "SA-4915322a0b0b6e3f",
+    "raw_id": "RAW-d7957a2a1a163460",
+    "source_artifact_id": "SA-3d3cbd94856eaf23",
     "source_url": "",
     "canonical_url": "",
     "publisher": "IT之家（RSS）",
@@ -3148,8 +3183,8 @@
   },
   {
     "schema_version": "RAW-V3.0",
-    "raw_id": "RAW-fc3f04b6cc392c5c",
-    "source_artifact_id": "SA-20a14a835e7eaba0",
+    "raw_id": "RAW-93fa8332220a0568",
+    "source_artifact_id": "SA-c7132c0d5069331d",
     "source_url": "",
     "canonical_url": "",
     "publisher": "Apple Machine Learning Research（RSS）",
@@ -3173,8 +3208,8 @@
   },
   {
     "schema_version": "RAW-V3.0",
-    "raw_id": "RAW-20324c37022c6f5f",
-    "source_artifact_id": "SA-0c61fc89f9085178",
+    "raw_id": "RAW-846474326d5957fb",
+    "source_artifact_id": "SA-0c68478f6e6b603c",
     "source_url": "",
     "canonical_url": "",
     "publisher": "X：邵猛 (@shao__meng)",
@@ -3198,8 +3233,8 @@
   },
   {
     "schema_version": "RAW-V3.0",
-    "raw_id": "RAW-79b74879c20c549a",
-    "source_artifact_id": "SA-81227528be7cc2ac",
+    "raw_id": "RAW-b1f63bd57327ae44",
+    "source_artifact_id": "SA-27b56f94bf7bedc8",
     "source_url": "",
     "canonical_url": "",
     "publisher": "Latent Space",
@@ -3223,8 +3258,8 @@
   },
   {
     "schema_version": "RAW-V3.0",
-    "raw_id": "RAW-bd057813b64f971e",
-    "source_artifact_id": "SA-80426dd31bf4307d",
+    "raw_id": "RAW-2cc20c9afefdc655",
+    "source_artifact_id": "SA-9475980c72af05dd",
     "source_url": "",
     "canonical_url": "",
     "publisher": "Latent Space",
@@ -3248,8 +3283,8 @@
   },
   {
     "schema_version": "RAW-V3.0",
-    "raw_id": "RAW-04c1dad25a6bfccc",
-    "source_artifact_id": "SA-478c96d77f11bed1",
+    "raw_id": "RAW-b0cb4392131c4f61",
+    "source_artifact_id": "SA-08bb7c81cb362663",
     "source_url": "",
     "canonical_url": "",
     "publisher": "Training Data (Sequoia)",
@@ -3448,8 +3483,8 @@
   },
   {
     "schema_version": "RAW-V3.0",
-    "raw_id": "RAW-b933b078c2e56550",
-    "source_artifact_id": "SA-427db8e0ca813ca7",
+    "raw_id": "RAW-f8b34e49cc8e7266",
+    "source_artifact_id": "SA-2deff838ab94c0b3",
     "source_url": "",
     "canonical_url": "",
     "publisher": "公众号：千问APP（阿里）",
@@ -3498,8 +3533,8 @@
   },
   {
     "schema_version": "RAW-V3.0",
-    "raw_id": "RAW-31ac63a9e8234819",
-    "source_artifact_id": "SA-44b664b654e893de",
+    "raw_id": "RAW-d277b465be9da3c8",
+    "source_artifact_id": "SA-5f090999199fcf64",
     "source_url": "",
     "canonical_url": "",
     "publisher": "IT之家（RSS）",
@@ -3523,8 +3558,8 @@
   },
   {
     "schema_version": "RAW-V3.0",
-    "raw_id": "RAW-1a2cb654e44c147c",
-    "source_artifact_id": "SA-4c976048caf985e8",
+    "raw_id": "RAW-7269fbf56928de61",
+    "source_artifact_id": "SA-8e8d1dc32419a448",
     "source_url": "",
     "canonical_url": "",
     "publisher": "X：Testing Catalog (@testingcatalog)",

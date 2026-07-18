@@ -34,7 +34,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 | AI Hardware data version | HARDWARE-V1.0 |
 | Industry Reports column version | IMAP-V2.1.0-v4-unified-frontstage |
 | Data Center Raw contract | RAW-V3.0 |
-| Canonical event contract | EVENT-V1.0 |
+| Canonical event contract | EVENT-V1.1 |
 | Entity history contract | ENTITY-V1.0 |
 | Factual relationship contract | RELATION-V2.0 |
 | Legacy Business Signals contract | V3.3.6.3-business-source-artifact-aggregation |

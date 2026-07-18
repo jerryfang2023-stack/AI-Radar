@@ -3,9 +3,9 @@ schema_version: raw-evidence-v2
 raw_id: R-050
 title: "Anthropic 为 IPO 铺路，以最高 60 万美元年薪重金招聘投资者关系总监"
 title_zh: "Anthropic 为 IPO 铺路，以最高 60 万美元年薪重金招聘投资者关系总监"
-title_translation_status: not_required
-title_translation_method: source_title
-title_translation_model: not_applicable
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 original_url: "https://www.ithome.com/0/978/351.htm"
 canonical_url: "https://ithome.com/0/978/351.htm"
 source_name: "IT之家（RSS）"

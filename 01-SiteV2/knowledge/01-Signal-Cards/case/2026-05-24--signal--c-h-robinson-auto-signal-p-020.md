@@ -2,7 +2,7 @@
 id: SIG-20260524-A13
 type: signal_card
 signal_type: case
-title: "C.H. Robinson如何利用LangChain AI代理每日自动化处理5,500票货运 | 应用篇"
+title: "C.H. Robinson 如何利用 LangChain AI 智能体每日自动化处理 5,500 票货运"
 date: 2026-05-24
 status: published
 asset_level: frontstage
@@ -58,7 +58,7 @@ signal_owner: "C.H. Robinson"
 watch_reason: "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
 
 frontend:
-  displayTitle: "C.H. Robinson如何利用LangChain AI代理每日自动化处理5,500票货运 | 应用篇"
+  displayTitle: "C.H. Robinson 如何利用 LangChain AI 智能体每日自动化处理 5,500 票货运"
   eventLine: "C.H. Robinson 把 AI 用进物流订单和邮件处理流程。"
   whyWatch: "这条变化值得看，是因为它把竞争点放到了物流订单和邮件处理流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"
   businessMeaning: "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
@@ -68,7 +68,7 @@ frontend:
     - "https://theapplied.co/use-cases/how-c-h-robinson-automates-5500-shipments-daily-with-langchain-ai-agents"
 ---
 
-# C.H. Robinson如何利用LangChain AI代理每日自动化处理5,500票货运 | 应用篇
+# C.H. Robinson 如何利用 LangChain AI 智能体每日自动化处理 5,500 票货运
 
 ## 信号底稿
 

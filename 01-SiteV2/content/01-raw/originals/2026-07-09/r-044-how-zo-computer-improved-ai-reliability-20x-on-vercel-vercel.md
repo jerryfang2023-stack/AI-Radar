@@ -2,7 +2,7 @@
 schema_version: raw-evidence-v2
 raw_id: R-044
 title: "How Zo Computer improved AI reliability 20x on Vercel - Vercel"
-title_zh: "Zo Computer在Vercel上将AI可靠性提升20倍 - Vercel"
+title_zh: "Zo Computer 在 Vercel 上将 AI 可靠性提升 20 倍"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 original_url: "https://vercel.com/blog/how-zo-computer-improved-ai-reliability-20x-on-vercel"

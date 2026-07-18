@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-18T04:59:59.870Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 1250,
+    "quarantinedEventCount": 11
+  },
+  "entity": {
+    "id": "EN-1169c45fdc06f0ac",
+    "name": "AlphaEvolve",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-9254af7aaedaafbe"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-09",
+    "lastSeen": "2026-07-14",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-9254af7aaedaafbe"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-9254af7aaedaafbe",
+        "dataDate": "2026-07-14",
+        "date": "2026-07-09",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "我们正广泛推出AlphaEvolve，以解决Google Cloud客户最棘手的问题。",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "enterprise_platform",
+            "dimensionName": "产品形态",
+            "name": "企业 AI 平台"
+          }
+        ],
+        "entityIds": [
+          "EN-1169c45fdc06f0ac",
+          "EN-bbdefa2950f49882",
+          "EN-8d323d8bba783aa3",
+          "EN-cfe6926406f30a15"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

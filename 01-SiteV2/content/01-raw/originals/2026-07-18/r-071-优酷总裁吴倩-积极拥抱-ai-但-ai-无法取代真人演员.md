@@ -3,9 +3,9 @@ schema_version: raw-evidence-v2
 raw_id: R-071
 title: "优酷总裁吴倩：积极拥抱 AI，但 AI 无法取代真人演员"
 title_zh: "优酷总裁吴倩：积极拥抱 AI，但 AI 无法取代真人演员"
-title_translation_status: not_required
-title_translation_method: source_title
-title_translation_model: not_applicable
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 original_url: "https://www.ithome.com/0/978/040.htm"
 canonical_url: "https://ithome.com/0/978/040.htm"
 source_name: "IT之家（RSS）"

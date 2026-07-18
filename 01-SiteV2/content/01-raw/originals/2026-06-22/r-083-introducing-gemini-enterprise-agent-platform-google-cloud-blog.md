@@ -72,6 +72,10 @@ key_excerpts: [{"type":"case_detail","text":"What’s new: Today, we’re launch
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
+title_zh: "Google Cloud 发布 Gemini Enterprise Agent 平台"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Introducing Gemini Enterprise Agent Platform | Google Cloud Blog

@@ -2,7 +2,7 @@
 id: SIG-20260522-01
 type: signal_card
 signal_type: funding
-title: "宣布我们的1180万美元种子轮融资 | Inference.net"
+title: "宣布我们的1180万美元种子轮融资"
 date: 2026-05-22
 status: draft
 asset_level: candidate
@@ -37,7 +37,7 @@ signal_owner: "Inference.net"
 watch_reason: "未来 30 到 90 天观察是否披露企业客户、模型成本对比和部署规模。"
 
 frontend:
-  displayTitle: "宣布我们的1180万美元种子轮融资 | Inference.net"
+  displayTitle: "宣布我们的1180万美元种子轮融资"
   eventLine: "Inference.net 宣布 1180 万美元种子轮融资，方向是帮助企业训练和部署成本更低的定制 AI 模型。"
   whyWatch: "这条信号把模型能力拉回企业成本问题：企业不一定只买通用模型，也会评估能否用定制模型降低调用和部署成本。"
   businessMeaning: "影响的是企业 AI 预算、模型选型、部署方式和应用公司的毛利空间。"
@@ -70,7 +70,7 @@ opportunity_signals:
   missing_fields: ["specific_task", "product_form", "delivery_model"]
 ---
 
-# 宣布我们的1180万美元种子轮融资 | Inference.net
+# 宣布我们的1180万美元种子轮融资
 
 ## 信号底稿
 

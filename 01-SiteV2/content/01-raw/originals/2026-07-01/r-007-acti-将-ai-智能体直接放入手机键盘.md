@@ -72,6 +72,10 @@ key_excerpts: [{"type":"funding","text":"新加坡初创公司 Acti 发布基于
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only
+title_zh: "Acti 将 AI 智能体直接放入手机键盘"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # Acti 将 AI 智能体直接放入手机键盘

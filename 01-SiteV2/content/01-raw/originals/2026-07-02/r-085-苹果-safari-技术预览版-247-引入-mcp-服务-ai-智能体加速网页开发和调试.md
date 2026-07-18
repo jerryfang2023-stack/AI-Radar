@@ -72,6 +72,10 @@ key_excerpts: [{"type":"company_action","text":"苹果 Safari 技术预览版 24
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
+title_zh: "苹果 Safari 技术预览版 247 引入 MCP 服务，AI 智能体加速网页开发和调试"
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 ---
 
 # 苹果 Safari 技术预览版 247 引入 MCP 服务，AI 智能体加速网页开发和调试

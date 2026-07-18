@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T01:57:40.269Z",
-    "latestDataDate": "2026-07-17",
-    "currentDate": "2026-07-17",
-    "eventCount": 832,
-    "quarantinedEventCount": 60
+    "generatedAt": "2026-07-18T04:59:59.870Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 1250,
+    "quarantinedEventCount": 11
   },
   "entity": {
     "id": "EN-e3ce9cc5efa9354c",
@@ -20,15 +20,19 @@
     "datasetScopes": [
       "canonical"
     ],
-    "eventIds": [],
+    "eventIds": [
+      "EV-386c205c8bbf537d"
+    ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
-    "firstSeen": "",
-    "lastSeen": "",
+    "firstSeen": "2026-06-06",
+    "lastSeen": "2026-06-07",
     "relationIds": [],
     "groupedEventIds": {
-      "fundingAcquisition": [],
+      "fundingAcquisition": [
+        "EV-386c205c8bbf537d"
+      ],
       "deployments": [],
       "partnerships": [],
       "productsServices": [],
@@ -36,7 +40,23 @@
       "organizationPeople": [],
       "other": []
     },
-    "timeline": [],
+    "timeline": [
+      {
+        "id": "EV-386c205c8bbf537d",
+        "dataDate": "2026-06-06",
+        "date": "2026-06-07",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Hugging Face：AI 引用与可见性",
+        "displayTags": [],
+        "entityIds": [
+          "EN-e3ce9cc5efa9354c"
+        ]
+      }
+    ],
     "viewpoints": []
   },
   "relatedEntities": [],

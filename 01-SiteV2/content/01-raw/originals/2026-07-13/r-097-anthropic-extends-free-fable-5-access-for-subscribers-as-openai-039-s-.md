@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-097
 title: "Anthropic extends free Fable 5 access for subscribers as OpenAI&#039;s GPT-5.6 Sol heats up the pricing war"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "Anthropic 为订阅用户延长免费 Fable 5 访问权限，OpenAI 的 GPT-5.6 Sol 加剧定价战"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://the-decoder.com/anthropic-extends-free-fable-5-access-for-subscribers-as-openais-gpt-5-6-sol-heats-up-the-pricing-war/"
 canonical_url: "https://the-decoder.com/anthropic-extends-free-fable-5-access-for-subscribers-as-openais-gpt-5-6-sol-heats-up-the-pricing-war"
 source_name: "The Decoder AI News"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-13T10:23:57.248Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Anthropic extends free Fable 5 access for subscribers as OpenAI&#039;s GPT-5.6 Sol heats up the pricing war

@@ -55,7 +55,7 @@ function main() {
     `current_date: ${current.date}`,
     "product_version: SITE-V4.1.0",
     "raw_version: RAW-V3.0",
-    "event_version: EVENT-V1.0",
+    "event_version: EVENT-V1.1",
     "---",
     "",
     "# Data Center V4 Index",

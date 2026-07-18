@@ -2,7 +2,7 @@
 id: SIG-20260625-A10
 type: signal_card
 signal_type: case
-title: "自主AI架构：2026年生产模式+技术栈 | Internative"
+title: "AI 智能体架构：2026 年生产模式与栈"
 date: 2026-06-25
 status: published
 source_title: "Agentic AI Architecture: 2026 Production Patterns + Stack | Internative"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "Agentic AI Architecture"
 
 frontend:
-  displayTitle: "自主AI架构：2026年生产模式+技术栈 | Internative"
+  displayTitle: "AI 智能体架构：2026 年生产模式与栈"
   sourceLinks:
     - "https://internative.net/insights/blog/agentic-ai-architecture-2026"
 ---
 
-# 自主AI架构：2026年生产模式+技术栈 | Internative
+# AI 智能体架构：2026 年生产模式与栈
 
 ## 新闻事实
 

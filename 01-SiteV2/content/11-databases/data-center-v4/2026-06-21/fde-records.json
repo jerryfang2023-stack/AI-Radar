@@ -3,14 +3,14 @@
     "fde_id": "FDE-9062c04ae2a9151f",
     "event_id": "EV-ca0c54e3f9776fa5",
     "customer": "OpenAI",
-    "vendor": "",
-    "industry": "",
+    "vendor": "Harvey AI",
+    "industry": "Legal",
     "use_case": "Engineers: How the $3B Legal AI Leader Deploys Inside BigLaw | Blog | Perspective AI",
-    "workflow_before": "",
-    "workflow_after": "",
+    "workflow_before": "Partners, associates, and knowledge management lawyers each with incompatible adoption triggers; partner-by-partner workflow tribalism",
+    "workflow_after": "LLM speaks in the firm's house style, cites the firm's precedent vault, and respects the firm's confidentiality walls",
     "deployment_stage": "completed",
-    "delivery_model": "",
-    "team_composition": "",
+    "delivery_model": "Forward deployed engineer embeds full-time inside a single BigLaw client for 6–9 months",
+    "team_composition": "Forward deployed engineers blending customer-discovery researcher, applied ML engineer, and onboarding lead roles",
     "systems_integrated": [],
     "data_requirements": [],
     "governance_controls": [],
@@ -19,26 +19,22 @@
       "$3B"
     ],
     "metric_attribution": "source_reported",
-    "reported_need": "",
+    "reported_need": "BigLaw firms cannot be sold the same SaaS product because precedent libraries, mark-up conventions, and partner sign-off chains are unrecognizably different across firms",
     "reported_delivery_components": [
       "Harvey AI — the $3B legal-AI company backed by OpenAI, Sequoia, Kleiner Perkins, and GV — runs one of the most specialized forward deployed engineering functions in the AI industry, with FDEs embedded inside Allen & Overy (now A&O Shearman), PwC, Cleary Gottlieb, Macfarlanes, and dozens of other AmLaw 100 and Magic Circle firms. Harvey's forward deployed engineers do not write generic chatbot integrations. They sit inside law firm matter rooms, map partner-by-partner workflow tribalism, and rebuild firm-specific knowledge bases on top of foundation models so that the LLM speaks in the firm's house style, cites the firm's precedent vault, and respects the firm's confidentiality walls. According to Harvey's own published deployment cadence, a full firm rollout takes 6–9 months and touches three distinct populations — partners, associates, and knowledge management lawyers — each with incompatible adoption triggers. Harvey's model has become the de-facto template for any AI vendor selling into BigLaw, and it has implications well beyond law: any vertical AI company selling to regulated, partner-led, knowledge-dense buyers is now copying the Harvey playbook. The hardest part of the deployment is not the model. It is the customer-research loop — and partners, the people who sign the contract, are systematically the wrong people to interview about the workflow being automated.",
       "What does a Harvey AI forward deployed engineer do?",
       "A Harvey AI forward deployed engineer embeds full-time inside a single BigLaw client for 6–9 months to translate the firm's most valuable, most idiosyncratic legal workflows — M&A diligence, securities filings, regulatory memos, litigation document review — into firm-specific LLM applications running on top of Harvey's foundation-model layer. The role blends three jobs that are usually separate at a normal enterprise software vendor: customer-discovery researcher, applied ML engineer, and onboarding lead. Harvey FDEs spend roughly a third of their time on conversation — with partners, associates, knowledge-management lawyers, and IT — a third on data engineering against the firm's document management system (typically iManage or NetDocuments), and a third on retrieval, evaluation, and fine-tuning work to make Harvey speak in the firm's voice.",
       "The function exists because BigLaw firms cannot be sold the same SaaS product. A magic-circle firm's M&A practice and a New York white-shoe firm's M&A practice both look like \"M&A\" to outsiders, but the precedent libraries, mark-up conventions, and partner sign-off chains are unrecognizably different. A forward deployed engineer is the only economic way to bridge that gap."
     ],
-    "reported_outcomes": [],
+    "reported_outcomes": [
+      "Full firm rollout takes 6–9 months",
+      "Deployment touches partners, associates, and knowledge management lawyers",
+      "Model has become the de-facto template for any AI vendor selling into BigLaw"
+    ],
     "undisclosed_fields": [
-      "vendor",
-      "industry",
-      "workflow_before",
-      "workflow_after",
-      "delivery_model",
-      "team_composition",
-      "reported_need",
       "systems_integrated",
       "data_requirements",
-      "governance_controls",
-      "reported_outcomes"
+      "governance_controls"
     ],
     "claim_refs": [
       "CL-4f6b535d11f0d455",

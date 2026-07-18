@@ -1,246 +1,12 @@
 {
   "schema_version": "MODEL-ASSIST-V1.0",
-  "generated_at": "2026-07-18T01:41:55.784Z",
+  "generated_at": "2026-07-18T04:16:51.589Z",
   "data_date": "2026-05-18",
-  "prompt_version": "model-assist-2026-07-18.1",
+  "prompt_version": "model-assist-2026-07-18.2",
   "source_count": 100,
   "candidates": [
     {
-      "candidate_id": "MAC-1197d4ddaaaada78",
-      "task_type": "claim_extraction",
-      "asset_id": "QA-87c446697bfc6efa",
-      "raw_id": "RAW-069ae116719bb5e2",
-      "source_ref": "SA-b8d5ad50206e1921",
-      "source_hash": "0233e8c242f9b92a",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
-      "proposal": {
-        "claims": []
-      },
-      "evidence": [],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "failed",
-          "detail": "missing_source_evidence"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "missing_claim_proposal"
-        }
-      ],
-      "generated_at": "2026-07-18T01:28:55.734Z"
-    },
-    {
-      "candidate_id": "MAC-30a449ef04435e76",
-      "task_type": "claim_extraction",
-      "asset_id": "QA-ba10c20bdfe43139",
-      "raw_id": "RAW-051f98bc7ed30a7c",
-      "source_ref": "SA-73c1173a67c20400",
-      "source_hash": "7d2f783d21130186",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
-      "proposal": {
-        "claims": []
-      },
-      "evidence": [],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "failed",
-          "detail": "missing_source_evidence"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "missing_claim_proposal"
-        }
-      ],
-      "generated_at": "2026-07-18T01:28:55.547Z"
-    },
-    {
-      "candidate_id": "MAC-8b7f49c0ee97c598",
-      "task_type": "claim_extraction",
-      "asset_id": "QA-3979ec83cd3edb14",
-      "raw_id": "RAW-0f502f68339358db",
-      "source_ref": "SA-04c55a21b42abab7",
-      "source_hash": "077d62522b3048e4",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
-      "proposal": {
-        "claims": []
-      },
-      "evidence": [],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "failed",
-          "detail": "missing_source_evidence"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "missing_claim_proposal"
-        }
-      ],
-      "generated_at": "2026-07-18T01:28:55.510Z"
-    },
-    {
-      "candidate_id": "MAC-bcc0419140923b6b",
-      "task_type": "claim_extraction",
-      "asset_id": "QA-c144d2ce1bc7da07",
-      "raw_id": "RAW-4f355ef57a7fc8bb",
-      "source_ref": "SA-8cab00f261e8f519",
-      "source_hash": "1e305f4d4607140f",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
-      "proposal": {
-        "claims": []
-      },
-      "evidence": [],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "failed",
-          "detail": "missing_source_evidence"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "missing_claim_proposal"
-        }
-      ],
-      "generated_at": "2026-07-18T01:28:56.381Z"
-    },
-    {
-      "candidate_id": "MAC-df05e0f3954bf07d",
-      "task_type": "claim_extraction",
-      "asset_id": "QA-70b349119959b508",
-      "raw_id": "RAW-ddc2de09202c83ad",
-      "source_ref": "SA-1f42a00ef61b5c54",
-      "source_hash": "6171400901c2b1ad",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
-      "proposal": {
-        "claims": []
-      },
-      "evidence": [],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "failed",
-          "detail": "missing_source_evidence"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "missing_claim_proposal"
-        }
-      ],
-      "generated_at": "2026-07-18T01:28:55.495Z"
-    },
-    {
-      "candidate_id": "MAC-e71453ef7e1162af",
-      "task_type": "claim_extraction",
-      "asset_id": "QA-a7d29d4d48e98d0b",
-      "raw_id": "RAW-f77d28c94bf6e311",
-      "source_ref": "SA-95fa45e74feff58d",
-      "source_hash": "832c2abcabdd8a7e",
-      "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
-      "status": "rejected",
-      "proposal": {
-        "claims": []
-      },
-      "evidence": [],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "failed",
-          "detail": "missing_source_evidence"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "missing_claim_proposal"
-        }
-      ],
-      "generated_at": "2026-07-18T01:28:55.528Z"
-    },
-    {
-      "candidate_id": "MAC-ea7e7332c54da2fd",
+      "candidate_id": "MAC-3d5d836fc38e89eb",
       "task_type": "claim_extraction",
       "asset_id": "QA-a249391a5649df94",
       "raw_id": "RAW-e7563bd8076fb154",
@@ -248,7 +14,7 @@
       "source_hash": "34e27acfb1e7eb57",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "prompt_version": "model-assist-2026-07-18.1",
+      "prompt_version": "model-assist-2026-07-18.2",
       "status": "rejected",
       "proposal": {
         "claims": []
@@ -276,7 +42,254 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-07-18T01:28:55.584Z"
+      "generated_at": "2026-07-18T04:01:17.349Z"
+    },
+    {
+      "candidate_id": "MAC-80f48c393ad77cc8",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-c144d2ce1bc7da07",
+      "raw_id": "RAW-4f355ef57a7fc8bb",
+      "source_ref": "SA-8cab00f261e8f519",
+      "source_hash": "1e305f4d4607140f",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "model_release",
+            "subject": "DeepSeek",
+            "object": "DeepSeek-V4 预览版本",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 19,
+          "end": 80,
+          "quote": "DeepSeek-V4 预览版本发布，具备世界顶级推理性能，Agent 能力大幅提高，已在网页端、APP 和 API 上线"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-07-18T04:01:19.945Z"
+    },
+    {
+      "candidate_id": "MAC-95cd0335837036aa",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-3979ec83cd3edb14",
+      "raw_id": "RAW-0f502f68339358db",
+      "source_ref": "SA-04c55a21b42abab7",
+      "source_hash": "077d62522b3048e4",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "missing_claim_proposal"
+        }
+      ],
+      "generated_at": "2026-07-18T04:01:17.308Z"
+    },
+    {
+      "candidate_id": "MAC-98b041edbbdbdddb",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-87c446697bfc6efa",
+      "raw_id": "RAW-069ae116719bb5e2",
+      "source_ref": "SA-b8d5ad50206e1921",
+      "source_hash": "0233e8c242f9b92a",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "missing_claim_proposal"
+        }
+      ],
+      "generated_at": "2026-07-18T04:01:17.760Z"
+    },
+    {
+      "candidate_id": "MAC-afd99c35db8019f1",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-70b349119959b508",
+      "raw_id": "RAW-ddc2de09202c83ad",
+      "source_ref": "SA-1f42a00ef61b5c54",
+      "source_hash": "6171400901c2b1ad",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "missing_claim_proposal"
+        }
+      ],
+      "generated_at": "2026-07-18T04:01:17.311Z"
+    },
+    {
+      "candidate_id": "MAC-eecf13e2fba45737",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-a7d29d4d48e98d0b",
+      "raw_id": "RAW-f77d28c94bf6e311",
+      "source_ref": "SA-95fa45e74feff58d",
+      "source_hash": "832c2abcabdd8a7e",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "missing_claim_proposal"
+        }
+      ],
+      "generated_at": "2026-07-18T04:01:17.302Z"
+    },
+    {
+      "candidate_id": "MAC-f3afef7537ed47a6",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-ba10c20bdfe43139",
+      "raw_id": "RAW-051f98bc7ed30a7c",
+      "source_ref": "SA-73c1173a67c20400",
+      "source_hash": "7d2f783d21130186",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "missing_claim_proposal"
+        }
+      ],
+      "generated_at": "2026-07-18T04:01:17.316Z"
     }
   ]
 }

@@ -1,0 +1,128 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-18T04:59:59.870Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 1250,
+    "quarantinedEventCount": 11
+  },
+  "entity": {
+    "id": "EN-e69e1d0e7ad091fc",
+    "name": "Generative AI",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-770cea9de2337d0e"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [
+      "EN-c13e2f4a44bb01ed"
+    ],
+    "firstSeen": "2026-07-14",
+    "lastSeen": "2026-07-15",
+    "relationIds": [
+      "REL2-3ea9b6f935a9716b"
+    ],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-770cea9de2337d0e"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-770cea9de2337d0e",
+        "dataDate": "2026-07-15",
+        "date": "2026-07-14",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "应对生成式AI推理需求增长及电力成本上升的策略.. - MK",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "chip_accelerator",
+            "dimensionName": "产品形态",
+            "name": "芯片与加速器"
+          }
+        ],
+        "entityIds": [
+          "EN-c13e2f4a44bb01ed",
+          "EN-e69e1d0e7ad091fc"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [
+    {
+      "id": "EN-c13e2f4a44bb01ed",
+      "name": "Samsung SDS",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-5e2b5770eac85ca5",
+        "EV-8fcb52bb6ec980af",
+        "EV-6ebcbb2660ec7ad9",
+        "EV-770cea9de2337d0e"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution"
+      ],
+      "relatedEntityIds": [
+        "EN-73c5a6485d01d20c",
+        "EN-e69e1d0e7ad091fc",
+        "EN-59fd7e12c890c379",
+        "EN-464631bd17a23159"
+      ],
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-07-16"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-3ea9b6f935a9716b",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-c13e2f4a44bb01ed",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-e69e1d0e7ad091fc",
+      "object_type": "entity",
+      "event_id": "EV-770cea9de2337d0e",
+      "claim_refs": [
+        "CL-014ede19bf865478"
+      ],
+      "source_refs": [
+        "SA-d2f235b1fe53f9c2"
+      ],
+      "data_date": "2026-07-15",
+      "status": "verified"
+    }
+  ],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

@@ -3,9 +3,9 @@ schema_version: raw-evidence-v2
 raw_id: R-034
 title: "Zyphra 发布 ZUNA1.1：Apache 2.0 许可的 EEG 基础模型，支持 0.5 至 30 秒可变长度输入"
 title_zh: "Zyphra 发布 ZUNA1.1：Apache 2.0 许可的 EEG 基础模型，支持 0.5 至 30 秒可变长度输入"
-title_translation_status: not_required
-title_translation_method: source_title
-title_translation_model: not_applicable
+title_translation_status: "not_required"
+title_translation_method: "source_title"
+title_translation_model: "not_applicable"
 original_url: "https://www.marktechpost.com/2026/07/17/zyphra-releases-zuna1-1-an-apache-2-0-eeg-foundation-model-with-variable-length-inputs-from-0-5-to-30-seconds"
 canonical_url: "https://marktechpost.com/2026/07/17/zyphra-releases-zuna1-1-an-apache-2-0-eeg-foundation-model-with-variable-length-inputs-from-0-5-to-30-seconds"
 source_name: "MarkTechPost（RSS）"

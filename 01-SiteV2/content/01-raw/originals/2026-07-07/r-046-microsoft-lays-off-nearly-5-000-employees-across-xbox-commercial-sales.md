@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-046
 title: "Microsoft lays off nearly 5,000 employees across Xbox, commercial sales"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: missing_translation_db_entry
+title_zh: "微软在Xbox和商业销售部门裁员近5,000人"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://techcrunch.com/2026/07/06/microsoft-lays-off-nearly-5000-employees-across-xbox-commercial-sales/"
 canonical_url: "https://techcrunch.com/2026/07/06/microsoft-lays-off-nearly-5000-employees-across-xbox-commercial-sales"
 source_name: "TechCrunch AI"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-07T02:01:23.557Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Microsoft lays off nearly 5,000 employees across Xbox, commercial sales

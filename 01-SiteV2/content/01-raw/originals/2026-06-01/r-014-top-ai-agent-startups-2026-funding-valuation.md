@@ -74,8 +74,8 @@ keyword_group: mature-commercial-signal
 copyright_note: local research archive only
 title_zh: "2026年顶级AI智能体初创公司（融资与估值）"
 title_translation_status: "translated"
-title_translation_method: "deepseek_title_translation"
-title_translation_model: "deepseek-v4-flash"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Top AI Agent Startups 2026 (Funding & Valuation)

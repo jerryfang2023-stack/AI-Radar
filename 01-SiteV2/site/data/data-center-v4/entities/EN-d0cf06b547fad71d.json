@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-18T04:59:59.870Z",
+    "latestDataDate": "2026-07-18",
+    "currentDate": "2026-07-18",
+    "eventCount": 1250,
+    "quarantinedEventCount": 11
+  },
+  "entity": {
+    "id": "EN-d0cf06b547fad71d",
+    "name": "AI-specific",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-60bc38fbf2bbb1ea"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-10",
+    "lastSeen": "2026-07-10",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [
+        "EV-60bc38fbf2bbb1ea"
+      ],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-60bc38fbf2bbb1ea",
+        "dataDate": "2026-07-10",
+        "date": "2026-07-10",
+        "eventType": "hardware_product",
+        "eventTypeLabel": "硬件产品",
+        "eventGroup": "AI 硬件",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "Meta新款AI芯片将于9月启动生产",
+        "displayTags": [],
+        "entityIds": [
+          "EN-ea3bd73e2b506e00",
+          "EN-d0cf06b547fad71d"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [
+    {
+      "id": "HW-0b581be37bdbbd1c",
+      "eventId": "EV-60bc38fbf2bbb1ea",
+      "dataDate": "2026-07-10",
+      "date": "2026-07-10",
+      "title": "Meta新款AI芯片将于9月启动生产",
+      "hardwareType": "semiconductor",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "未披露",
+      "supplier": "Meta",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://techcrunch.com/2026/07/09/metas-new-ai-chips-will-begin-production-in-september",
+      "sourceName": "TechCrunch：AI（RSS）",
+      "sourceDate": "2026-07-10",
+      "entityIds": [
+        "EN-ea3bd73e2b506e00",
+        "EN-d0cf06b547fad71d"
+      ]
+    }
+  ]
+}

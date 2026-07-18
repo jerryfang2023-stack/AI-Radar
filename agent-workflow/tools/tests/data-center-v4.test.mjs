@@ -5,7 +5,7 @@ import test from "node:test";
 import { fileURLToPath } from "node:url";
 import { buildBundle, eventAiRelevanceEvidence, findEventRule, normalizeEventTitle, trimBoilerplate } from "../build-data-center-v4.mjs";
 import { evaluateBundle, evaluateBundleFiles } from "../assert-data-center-v4.mjs";
-import { generateSourceTitleTranslation, isApprovedSourceTitleTranslation, sourceTitleFactsPreserved } from "../source-title-translation-generator.mjs";
+import { generateSourceTitleTranslation, isApprovedSourceTitleTranslation, normalizeSourceTitleTranslation, sourceTitleFactsPreserved, sourceTitleNeedsChineseTranslation, titleTranslationLooksUsable } from "../source-title-translation-generator.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, "../../..");
@@ -54,6 +54,7 @@ test("DeepSeek V4 translates source titles through its chat completion endpoint"
   assert.equal(sourceTitleFactsPreserved("Aina Raises $5.5 Mn", "Aina 获得 550 万美元融资"), true);
   assert.equal(sourceTitleFactsPreserved("Aina Raises $5.5 Mn", "Aina 获得 450 万美元融资"), false);
   assert.equal(sourceTitleFactsPreserved("Aina Raises $5.5 Mn", "Aina 获得 550 万卢比融资"), false);
+  assert.equal(sourceTitleFactsPreserved("Parloa triples valuation to $3 billion", "Parloa 估值翻三倍至 30 亿美元"), true);
 });
 
 test("DeepSeek translations with changed monetary facts are rejected", async (t) => {
@@ -82,6 +83,22 @@ test("DeepSeek translations with changed monetary facts are rejected", async (t)
     status: "needs_ingestion_translation",
     method: "title_translation_generator_failed",
   });
+});
+
+test("product-name-only mixed titles do not require artificial translation", () => {
+  assert.equal(sourceTitleNeedsChineseTranslation("Claude Fable 5 和 Claude Mythos 5"), false);
+  assert.equal(sourceTitleNeedsChineseTranslation("Grok 4.5 🤖, GPT-Live 🎙️, SWE-1.7 👨‍💻"), false);
+  assert.equal(sourceTitleNeedsChineseTranslation("Parloa triples valuation to $3 billion"), true);
+});
+
+test("source title translation cannot omit explicit AI semantics", () => {
+  assert.equal(titleTranslationLooksUsable("Bayer Uses AI to Cut Errors by 70%", "拜耳将错误减少 70%"), false);
+  assert.equal(titleTranslationLooksUsable("Bayer Uses AI to Cut Errors by 70%", "拜耳利用 AI 将错误减少 70%"), true);
+});
+
+test("source title normalization removes a trailing publisher suffix", () => {
+  assert.equal(normalizeSourceTitleTranslation("Maybern MCP 已上线 | Maybern"), "Maybern MCP 已上线");
+  assert.equal(normalizeSourceTitleTranslation("SambaNova | The Fastest AI Inference Platform"), "SambaNova | The Fastest AI Inference Platform");
 });
 
 function entry(id, title, body, extra = {}) {
@@ -401,6 +418,20 @@ test("boilerplate is removed before claim extraction", () => {
   assert.equal(cleaned, "Acme launched a model.");
   assert.equal(findEventRule("Acme launched a model").eventType, "model_release");
   assert.equal(normalizeEventTitle("Samsung SDS to Launch AI Services < Semiconductor < 기사본문 - The Elec Inc."), "Samsung SDS to Launch AI Services");
+});
+
+test("EVENT-V1.1 recognizes necessary capital, operating, governance, and security events", () => {
+  const cases = [
+    ["Anthropic filed for an initial public offering", "ipo_listing"],
+    ["Google invests $1.5 billion in an AI data center campus", "capital_investment"],
+    ["Abridge reports annual recurring revenue reached $100 million", "financial_performance"],
+    ["Parloa opens a new office in Madrid", "market_expansion"],
+    ["Oracle lays off 2,100 employees in an AI organization restructuring", "organization_restructuring"],
+    ["Augment Code obtains ISO/IEC 42001 certification", "certification_compliance"],
+    ["Google publishes an open technical specification for agent discovery", "standard_specification"],
+    ["Acme discloses a security breach affecting its AI service", "security_incident"],
+  ];
+  for (const [title, expected] of cases) assert.equal(findEventRule(title)?.eventType, expected, title);
 });
 
 test("current factual title language maps to canonical event types", () => {

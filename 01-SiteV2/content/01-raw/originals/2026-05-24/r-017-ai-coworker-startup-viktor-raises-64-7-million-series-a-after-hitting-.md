@@ -72,7 +72,7 @@ key_excerpts: [{"type":"funding","text":"coworker startup Viktor raises A after 
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
-title_zh: "AI同事初创公司Viktor在推出10周内实现1290万欧元营收运行率后，完成6470万欧元A轮融资 | EU-Startups"
+title_zh: "AI 同事初创公司 Viktor 在推出后 10 周内达到 1290 万欧元营收运行率，随后完成 6470 万欧元 A 轮融资"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

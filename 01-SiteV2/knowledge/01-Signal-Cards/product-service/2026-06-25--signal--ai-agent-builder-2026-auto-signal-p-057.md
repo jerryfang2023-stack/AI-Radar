@@ -2,7 +2,7 @@
 id: SIG-20260625-A26
 type: signal_card
 signal_type: product_service
-title: "AI Agent构建器2026：打造你的首个AI智能体 | 更好发布"
+title: "AI Agent构建器2026：打造你的首个AI智能体"
 date: 2026-06-25
 status: published
 source_title: "AI Agent Builder 2026: Build Your First AI Agent | Better Launch"
@@ -53,12 +53,12 @@ opportunity_signals:
 signal_owner: "AI Agent Builder 2026"
 
 frontend:
-  displayTitle: "AI Agent构建器2026：打造你的首个AI智能体 | 更好发布"
+  displayTitle: "AI Agent构建器2026：打造你的首个AI智能体"
   sourceLinks:
     - "https://www.betterlaunch.co/blog/ai-agent-builder"
 ---
 
-# AI Agent构建器2026：打造你的首个AI智能体 | 更好发布
+# AI Agent构建器2026：打造你的首个AI智能体
 
 ## 新闻事实
 

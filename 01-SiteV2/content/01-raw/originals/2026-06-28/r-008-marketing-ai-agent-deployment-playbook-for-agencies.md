@@ -72,7 +72,7 @@ key_excerpts: [{"type":"company_action","text":"Complete playbook for marketing 
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
-title_zh: "面向代理机构的营销AI代理部署操作手册"
+title_zh: "面向代理机构的营销AI智能体部署手册"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

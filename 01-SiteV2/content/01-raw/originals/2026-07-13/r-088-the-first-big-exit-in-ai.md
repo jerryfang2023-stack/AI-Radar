@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-088
 title: "The first big exit in AI"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "AI 领域的首次重大退出"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.bensbites.com/p/the-first-big-exit-in-ai"
 canonical_url: "https://bensbites.com/p/the-first-big-exit-in-ai"
 source_name: "Ben's Bites AI Newsletter"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-13T10:23:57.210Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # The first big exit in AI

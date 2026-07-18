@@ -72,7 +72,7 @@ key_excerpts: [{"type":"case_detail","text":"Amazon Web Services (AWS) is launch
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
-title_zh: "AWS将于下周推出AI代理市场，Anthropic作为合作伙伴 | TechCrunch"
+title_zh: "AWS 将于下周推出 AI 智能体市场，Anthropic 为合作伙伴"
 title_translation_status: "translated"
 title_translation_method: "source_title_translation_db"
 title_translation_model: "not_applicable"

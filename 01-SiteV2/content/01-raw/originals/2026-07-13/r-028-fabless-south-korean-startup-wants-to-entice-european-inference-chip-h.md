@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-028
 title: "Fabless South Korean startup wants to entice European inference chip-hungry enterprises - SDxCentral"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
+title_zh: "无晶圆厂韩国初创公司欲吸引欧洲推理芯片需求企业 - SDxCentral"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
 original_url: "https://www.sdxcentral.com/news/fabless-korean-startup-wants-to-entice-european-inference-chip-hungry-enterprises/"
 canonical_url: "https://sdxcentral.com/news/fabless-korean-startup-wants-to-entice-european-inference-chip-hungry-enterprises"
 source_name: "keyword search / Anysearch"
@@ -79,6 +79,7 @@ fact_extraction_completed_at: 2026-07-13T10:23:56.820Z
 theme: ai-hardware-scenario-service-signal
 keyword_group: ai-hardware-scenario-service-signal
 copyright_note: local research archive only
+title_translation_model: "not_applicable"
 ---
 
 # Fabless South Korean startup wants to entice European inference chip-hungry enterprises - SDxCentral

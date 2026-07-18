@@ -74,8 +74,8 @@ keyword_group: technical-iteration-signal
 copyright_note: local research archive only
 title_zh: "Inference.ai 将 AI 工作负载与云端 GPU 算力匹配"
 title_translation_status: "translated"
-title_translation_method: "deepseek_title_translation"
-title_translation_model: "deepseek-v4-flash"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # Inference.ai matches AI workloads with cloud GPU compute

@@ -72,6 +72,10 @@ key_excerpts: [{"type":"workflow_change","text":"# How AI Agents Are Replacing S
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only
+title_zh: "AI 智能体取代SaaS工作流：2026年业务指南"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 ---
 
 # AI Agents Replacing SaaS Workflows: Business Guide 2026
