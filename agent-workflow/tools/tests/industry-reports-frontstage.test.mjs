@@ -12,7 +12,7 @@ test("industry reports projection isolates the public application from the V3 de
   const data = buildIndustryReportsData(root);
   const html = fs.readFileSync(path.join(root, "01-SiteV2/site/intelligence-map.html"), "utf8");
 
-  assert.equal(data.meta.siteVersion, "SITE-V4.1.0-unified-frontstage");
+  assert.equal(data.meta.siteVersion, "SITE-V4.2.0-entity-history");
   assert.equal(data.meta.applicationVersion, "IMAP-V2.1.0-v4-unified-frontstage");
   assert.match(data.meta.activeDate, /^\d{4}-\d{2}-\d{2}$/u);
   assert.ok(data.cards.length > 0);
@@ -32,7 +32,7 @@ test("legacy public routes are redirects and report detail pages use the V4 shel
   for (const [file, target] of redirects) {
     const html = fs.readFileSync(path.join(root, "01-SiteV2/site", file), "utf8");
     assert.match(html, new RegExp(`url=${target.replace(/[?]/gu, "\\?")}`, "u"));
-    assert.match(html, /SITE-V4\.1\.0-unified-frontstage/u);
+    assert.match(html, /SITE-V4\.2\.0-entity-history/u);
     assert.doesNotMatch(html, /wavesight-nav\.css|wavesight-topbar/u);
   }
 
@@ -41,7 +41,7 @@ test("legacy public routes are redirects and report detail pages use the V4 shel
   assert.ok(reportPages.length >= 2);
   for (const file of reportPages) {
     const html = fs.readFileSync(path.join(root, "01-SiteV2/site", file), "utf8");
-    assert.match(html, /SITE-V4\.1\.0-unified-frontstage/u);
+    assert.match(html, /SITE-V4\.2\.0-entity-history/u);
     assert.match(html, /assets\/data-center-v4\.css/u);
     assert.match(html, /class="dc-sidebar"/u);
     assert.match(html, /href="intelligence-map\.html" aria-current="page">行业报告/u);

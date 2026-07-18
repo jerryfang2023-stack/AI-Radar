@@ -67,6 +67,6 @@ Use the content shape to choose modules:
 - Page assertions:
   - weekly detail has no `<table>` unless explicitly requested;
   - time-window selector exists;
-  - `SITE-V4.1.0-unified-frontstage` and source meta exist after release;
+  - the current public website version from `context/version-ledger.md` and source meta exist after release;
   - no V3 topbar, V3 stylesheet, or retired column link exists;
   - no Trend Candidates / History blocks on Intelligence Map.

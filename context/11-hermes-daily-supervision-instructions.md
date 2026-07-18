@@ -15,7 +15,7 @@ Hermes is the daily supervisor for WaveSight AI. It should observe, classify, an
 
 ## Current Version Context
 
-- Current public site version: `SITE-V4.1.0-unified-frontstage`.
+- Current public site version: `SITE-V4.2.0-entity-history`.
 - Current Hermes supervision contract: `V3.4.3-daily-problem-watchdog`.
 - Current Business Signals column version: `BSIG-V2.2.0-pipeline-stage-ownership`.
 - Current Enterprise AI / FDE lens version: `EAI-V1.2.0-raw-card-ingestion-boundary`.
@@ -42,7 +42,7 @@ Hermes should do this every Asia/Shanghai production day:
 
 Use this order every day to avoid duplicate checks and blind reruns:
 
-1. Version preflight: confirm public pages agree on `SITE-V4.1.0-unified-frontstage` and `IMAP-V2.1.0-v4-unified-frontstage`; internal compatibility files may retain `SITE-V3.4.5` and `BSIG-V2.2.0-pipeline-stage-ownership`. Treat ledger history as history.
+1. Version preflight: confirm public pages agree on `SITE-V4.2.0-entity-history` and `IMAP-V2.1.0-v4-unified-frontstage`; internal compatibility files may retain `SITE-V3.4.5` and `BSIG-V2.2.0-pipeline-stage-ownership`. Treat ledger history as history.
 2. Lane readiness: check whether each producing lane has same-date output or an active same-date run before declaring missing data.
 3. Data quality: check the lane-specific public contract, not generic volume alone.
    - Business Signals: unified `BSIG-V2.2.0-pipeline-stage-ownership` Cards, separate AI Hardware lens-only items, source-first titles/facts, no Top10/candidate split, no backend-only / low-value items.

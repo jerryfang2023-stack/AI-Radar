@@ -64,7 +64,7 @@ export function buildIndustryReportsData(root = defaultRoot) {
   return {
     meta: {
       schemaVersion: "INDUSTRY-REPORTS-FRONTSTAGE-V1.0",
-      siteVersion: "SITE-V4.1.0-unified-frontstage",
+      siteVersion: "SITE-V4.2.0-entity-history",
       applicationVersion: "IMAP-V2.1.0-v4-unified-frontstage",
       activeDate,
       generatedAt: payload.meta?.generatedAt || `${activeDate}T00:00:00.000Z`,
