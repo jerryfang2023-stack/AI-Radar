@@ -13,7 +13,6 @@ const phase = args.get("phase") || "weekly-report";
 const date = args.get("date") || shanghaiDate();
 const dryRun = args.get("dry-run") === "true";
 const worker = args.get("worker") === "true";
-const invokeCodex = args.get("invoke-codex") !== "false";
 const force = args.get("force") === "true";
 const reportsDir = path.join(root, "agent-workflow", "reports");
 
@@ -81,51 +80,6 @@ function writeText(file, text) {
   fs.writeFileSync(file, text, "utf8");
 }
 
-function codexInvocation(label, prompt, lastMessage, cwd) {
-  const promptPath = path.join(cwd, "agent-workflow", "reports", `${date}-periodic-${phase}-${label}-prompt.md`);
-  writeText(promptPath, prompt);
-  if (!invokeCodex) return { label, ok: true, status: 0, command: "codex invocation disabled", stdout: rel(promptPath, cwd), stderr: "", prompt: rel(promptPath, cwd) };
-  const result = run(label, "codex", [
-    "exec", "--sandbox", "danger-full-access", "--ask-for-approval", "never",
-    "--output-last-message", lastMessage, "--cd", ".", "-",
-  ], { cwd, input: prompt, timeoutMs: 3_600_000 });
-  return { ...result, prompt: rel(promptPath, cwd) };
-}
-
-function contentPrompt(kind, window) {
-  if (kind === "weekly") return [
-    `Generate the WaveSight weekly report for ${date}, covering exactly ${window.start} through ${window.end}.`,
-    "Use the guanlan-weekly-business-change-radar and guanlan-opportunity-radar-updater skills and follow them exactly.",
-    "Read AGENTS.md and only the required current sources. Use exact S/O/C counts and preserve evidence boundaries.",
-    `Write only: agent-workflow/reports/${date}-weekly-ai-business-change-radar.md and 01-SiteV2/content/08-report/${date}--weekly-report--ai-business-change-radar.md. The controller has already refreshed source-backed opportunity_signals for the window.`,
-    "The publication Markdown must contain frontmatter date, ISO week, exact window, content_type: weekly-report, slug, and status: published, followed by numbered sections 0 through 8.",
-    "Do not edit HTML, CSS, JS, V4 canonical bundles, Git state, scheduled tasks, or deployment state. Do not commit or push.",
-  ].join("\n");
-  return [
-    `Generate the WaveSight monthly business structure report dated ${window.reportDate}, covering exactly ${window.start} through ${window.end}.`,
-    "Use the guanlan-monthly-business-structure-report skill and follow it exactly.",
-    "Read AGENTS.md and only the required previous-month inputs. Preserve the V4 fact/downstream judgment boundary.",
-    `Write only: 01-SiteV2/content/08-report/monthly/${window.reportDate}--monthly-report--ai-business-structure-and-opportunity.md.`,
-    "Use content_type: monthly-report, the previous calendar month, exact window, status: draft, and at least eight numbered sections including data boundary, structure judgment, trend adjudication, opportunity map, contradictions, next-month verification, and conclusion.",
-    "Do not edit pages, V4 canonical bundles, Git state, scheduled tasks, or deployment state. Do not commit or push.",
-  ].join("\n");
-}
-
-function pagePrompt(kind, window) {
-  if (kind === "weekly") return [
-    `The weekly content gate passed for ${date}, window ${window.start} through ${window.end}.`,
-    "Use the guanlan-weekly-report-page-generator skill. Generate/update the weekly detail page and Industry Reports wiring from the accepted content source.",
-    "Do not change the accepted report Markdown or Signal Cards. Preserve the V4 shell and all page-generator hard rules.",
-    "Do not edit Git state, scheduled tasks, or deployment state. Do not commit or push.",
-  ].join("\n");
-  return [
-    `The monthly content gate passed for report ${window.reportDate}, window ${window.start} through ${window.end}.`,
-    "Use the guanlan-monthly-report-page-generator skill. Generate/update the full monthly detail page and Industry Reports wiring from the accepted monthly Markdown.",
-    "Do not change the accepted monthly report. Preserve the V4 shell and all page-generator hard rules.",
-    "Do not edit Git state, scheduled tasks, or deployment state. Do not commit or push.",
-  ].join("\n");
-}
-
 function pageGate(cwd) {
   const actions = [];
   actions.push(run("build Industry Reports projection", process.execPath, ["01-SiteV2/site/scripts/build-industry-reports-frontstage.mjs"], { cwd }));
@@ -153,9 +107,12 @@ function workerRun(kind) {
     if (!actions.at(-1).ok) return { ok: false, status: "opportunity_refresh_failed", window, actions };
   }
 
-  const content = codexInvocation("content", contentPrompt(kind, window), `agent-workflow/reports/${date}-periodic-${phase}-content-last-message.md`, root);
+  const content = run("DeepSeek Pro report draft", process.execPath, [
+    "agent-workflow/tools/generate-periodic-report-deepseek.mjs", `--kind=${kind}`, `--date=${window.reportDate}`,
+    `--window-start=${window.start}`, `--window-end=${window.end}`,
+  ], { timeoutMs: 600_000 });
   actions.push(content);
-  if (!content.ok || !invokeCodex) return { ok: content.ok, status: invokeCodex ? "content_generation_failed" : "prompt_ready", window, actions };
+  if (!content.ok) return { ok: false, status: "content_generation_failed", window, actions };
 
   const contentGate = run("content acceptance gate", process.execPath, [
     "agent-workflow/tools/assert-periodic-report-content.mjs", `--kind=${kind}`, `--date=${window.reportDate}`,
@@ -164,7 +121,9 @@ function workerRun(kind) {
   actions.push(contentGate);
   if (!contentGate.ok) return { ok: false, status: "content_gate_failed", window, actions };
 
-  const page = codexInvocation("page", pagePrompt(kind, window), `agent-workflow/reports/${date}-periodic-${phase}-page-last-message.md`, root);
+  const page = run("deterministic report page renderer", process.execPath, [
+    "agent-workflow/tools/render-periodic-report-pages.mjs", `--kind=${kind}`, `--date=${window.reportDate}`,
+  ]);
   actions.push(page);
   if (!page.ok) return { ok: false, status: "page_generation_failed", window, actions };
   const gate = pageGate(root);
@@ -223,7 +182,7 @@ function isolatedReportRun(kind) {
   const install = run("install dependencies", "npm", ["ci"], { cwd: worktree, timeoutMs: 900_000 });
   if (!install.ok) return { ok: false, status: "dependency_install_failed", branch, worktree, actions: [add, install] };
   const execute = run("periodic worker", process.execPath, [
-    "agent-workflow/tools/run-periodic-automation-controller.mjs", `--phase=${phase}`, `--date=${date}`, "--worker=true", `--invoke-codex=${invokeCodex}`, `--force=${force}`,
+    "agent-workflow/tools/run-periodic-automation-controller.mjs", `--phase=${phase}`, `--date=${date}`, "--worker=true", `--force=${force}`,
   ], { cwd: worktree, timeoutMs: 7_200_000 });
   if (!execute.ok) return { ok: false, status: "worker_failed", branch, worktree, actions: [add, install, execute] };
   const changes = changedPaths(worktree);
@@ -244,7 +203,7 @@ function writeControllerReport(result) {
   fs.mkdirSync(reportsDir, { recursive: true });
   const jsonPath = path.join(reportsDir, `${date}-periodic-automation-${phase}.json`);
   const mdPath = path.join(reportsDir, `${date}-periodic-automation-${phase}.md`);
-  const payload = { ...result, phase, date, dry_run: dryRun, invoke_codex: invokeCodex, generated_at: new Date().toISOString() };
+  const payload = { ...result, phase, date, dry_run: dryRun, report_provider: "deepseek", generated_at: new Date().toISOString() };
   const md = [
     `# Periodic Automation ${phase} - ${date}`, "", `- status: ${result.status}`, `- ok: ${result.ok}`,
     `- branch: ${result.branch || "n/a"}`, `- worktree: ${result.worktree || "n/a"}`, `- inbox: ${result.inbox || "n/a"}`, "",

@@ -24,6 +24,8 @@ Turn an accepted monthly report Markdown file into a WaveSight frontstage readin
 
 The periodic controller may invoke this skill only after the monthly content acceptance gate passes. Page generation and page regression are the second gate; a failed content gate must leave the frontstage unchanged.
 
+In unattended GitHub production, `render-periodic-report-pages.mjs` is the sole page writer. DeepSeek generates Markdown content only and must never edit HTML, navigation, CSS, or canonical data.
+
 ## Required Reads
 
 Read only what the task needs:

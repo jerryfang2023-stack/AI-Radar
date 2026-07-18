@@ -52,6 +52,68 @@ export async function deepSeekChatCompletion({
   return String(data?.choices?.[0]?.message?.content || "").trim();
 }
 
+export function parseDeepSeekJson(value = "") {
+  const text = String(value || "").trim()
+    .replace(/^```(?:json)?\s*/iu, "")
+    .replace(/\s*```$/u, "")
+    .trim();
+  if (!text) throw new Error("deepseek_empty_json_response");
+  try {
+    return JSON.parse(text);
+  } catch {
+    const start = Math.min(...[text.indexOf("{"), text.indexOf("[")].filter((index) => index >= 0));
+    const objectEnd = text.lastIndexOf("}");
+    const arrayEnd = text.lastIndexOf("]");
+    const end = Math.max(objectEnd, arrayEnd);
+    if (!Number.isFinite(start) || start < 0 || end <= start) throw new Error("deepseek_invalid_json_response");
+    return JSON.parse(text.slice(start, end + 1));
+  }
+}
+
+export async function deepSeekJsonCompletion({
+  messages = [],
+  model = deepSeekModels().pro,
+  maxTokens = 4096,
+  temperature = 0,
+  timeoutMs = 60000,
+  validate = () => [],
+  fetchImpl = globalThis.fetch,
+} = {}) {
+  if (!process.env.DEEPSEEK_API_KEY) throw new Error("deepseek_key_missing_for_required_model_task");
+  let lastProblems = [];
+  for (let attempt = 0; attempt < 2; attempt += 1) {
+    const retry = attempt
+      ? [{ role: "user", content: `The previous JSON failed validation: ${lastProblems.join(", ")}. Return one corrected JSON value only.` }]
+      : [];
+    const raw = await deepSeekChatCompletion({
+      messages: [...messages, ...retry],
+      model: attempt ? deepSeekModels().pro : model,
+      maxTokens,
+      temperature,
+      timeoutMs: attempt ? Math.max(timeoutMs, 90000) : timeoutMs,
+      fetchImpl,
+    });
+    let payload;
+    try {
+      payload = parseDeepSeekJson(raw);
+    } catch (error) {
+      lastProblems = [error.message];
+      continue;
+    }
+    lastProblems = [...new Set(validate(payload).filter(Boolean))];
+    if (!lastProblems.length) {
+      return {
+        payload,
+        provider: "deepseek",
+        model: attempt ? deepSeekModels().pro : model,
+        attempts: attempt + 1,
+        generatedAt: new Date().toISOString(),
+      };
+    }
+  }
+  throw new Error(`deepseek_json_quality_failed:${lastProblems.join("|")}`);
+}
+
 function protectedUrls(value = "") {
   return [...String(value || "").matchAll(/https?:\/\/[^\s)\]}]+/giu)].map((match) => match[0]);
 }
@@ -169,24 +231,6 @@ export async function translateOpinionWithDeepSeek(source = "", {
       qualityStatus: "passed_after_pro_retry",
     };
   }
-  const repairableProblems = retryProblems.filter((problem) => problem === "missing_chinese_translation" || /^(?:missing_url|missing_handle|missing_number):/u.test(problem));
-  if (retry && repairableProblems.length === retryProblems.length) {
-    const protectedFacts = repairableProblems.filter((problem) => problem.includes(":")).map((problem) => problem.slice(problem.indexOf(":") + 1));
-    const repaired = `中文释义：${retry.trim()}${protectedFacts.length ? `\n\n保留信息：${[...new Set(protectedFacts)].join(" ")}` : ""}`;
-    if (!opinionTranslationProblems(text, repaired, { preferFullTranslation }).length) {
-      return {
-        translation: repaired,
-        status: "translated",
-        method: "deepseek_translation",
-        provider: "deepseek",
-        model: models.pro,
-        sourceHash,
-        generatedAt: new Date().toISOString(),
-        qualityStatus: "passed_after_protected_fact_repair",
-      };
-    }
-  }
-
   return {
     translation: "",
     status: "pending_translation",

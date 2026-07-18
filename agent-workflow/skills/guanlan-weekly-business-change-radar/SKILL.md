@@ -29,6 +29,8 @@ This judgment report is a downstream application and cannot write Data Center V4
 
 ## Scope
 
+Production cadence is Monday 10:30 Asia/Shanghai for the previous complete Monday-Sunday window. GitHub Actions calls DeepSeek Pro to write a `status: draft` report. Every concrete judgment cites a manifest ID as `[E:]`, `[O:]`, or `[C:]`; after the content gate passes, only the deterministic renderer may publish HTML.
+
 This skill produces a weekly judgment report — not a news roundup.
 
 It writes one file per week:

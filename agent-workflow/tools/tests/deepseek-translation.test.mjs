@@ -88,7 +88,7 @@ test("preserves multiplier words and scaled non-money counts", () => {
   assert.equal(sourceTitleFactsPreserved("matches models five times its size", "媲美其规模五倍的模型"), true);
 });
 
-test("repairs protected facts omitted by both model passes", async () => {
+test("isolates translations when both model passes omit protected facts", async () => {
   const previous = { key: process.env.DEEPSEEK_API_KEY, flash: process.env.DEEPSEEK_FLASH_MODEL, pro: process.env.DEEPSEEK_PRO_MODEL };
   process.env.DEEPSEEK_API_KEY = "test-key";
   process.env.DEEPSEEK_FLASH_MODEL = "flash";
@@ -96,9 +96,9 @@ test("repairs protected facts omitted by both model passes", async () => {
   const fetchImpl = async () => ({ ok: true, json: async () => ({ choices: [{ message: { content: "企业将扩大投入。" } }] }) });
   try {
     const result = await translateOpinionWithDeepSeek("Companies will expand 100s of programs with @box", { fetchImpl, preferPro: true });
-    assert.equal(result.status, "translated");
-    assert.match(result.translation, /100/u);
-    assert.match(result.translation, /@box/u);
+    assert.equal(result.status, "pending_translation");
+    assert.equal(result.qualityStatus, "failed");
+    assert.match(result.qualityProblems.join(" "), /missing_(?:number|handle)/u);
   } finally {
     if (previous.key === undefined) delete process.env.DEEPSEEK_API_KEY; else process.env.DEEPSEEK_API_KEY = previous.key;
     if (previous.flash === undefined) delete process.env.DEEPSEEK_FLASH_MODEL; else process.env.DEEPSEEK_FLASH_MODEL = previous.flash;
