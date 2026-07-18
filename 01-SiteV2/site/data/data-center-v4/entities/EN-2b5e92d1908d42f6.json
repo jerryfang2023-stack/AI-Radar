@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T05:24:47.187Z",
+    "generatedAt": "2026-07-18T06:46:16.044Z",
     "latestDataDate": "2026-07-18",
     "currentDate": "2026-07-18",
     "eventCount": 1250,
@@ -28,14 +28,10 @@
       "TX-technology-fine_tuning",
       "TX-technology-open_weights"
     ],
-    "relatedEntityIds": [
-      "EN-d41ebd9f02722fc8"
-    ],
+    "relatedEntityIds": [],
     "firstSeen": "2026-07-07",
     "lastSeen": "2026-07-15",
-    "relationIds": [
-      "REL2-cd216981c60a7b16"
-    ],
+    "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -90,58 +86,8 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [
-    {
-      "id": "EN-d41ebd9f02722fc8",
-      "name": "Crusoe",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-b84035029a63e52e"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-fine_tuning",
-        "TX-technology-open_weights"
-      ],
-      "relatedEntityIds": [
-        "EN-10556ee2cee94c72",
-        "EN-77fe4e790d5bc756",
-        "EN-f8c237773fe24a98",
-        "EN-2b5e92d1908d42f6"
-      ],
-      "firstSeen": "2026-07-07",
-      "lastSeen": "2026-07-15"
-    }
-  ],
-  "relationships": [
-    {
-      "relationship_id": "REL2-cd216981c60a7b16",
-      "relationship_version": "RELATION-V2.0",
-      "subject_ref": "EN-d41ebd9f02722fc8",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-2b5e92d1908d42f6",
-      "object_type": "entity",
-      "event_id": "EV-b84035029a63e52e",
-      "claim_refs": [
-        "CL-0296823c8ca00f22",
-        "CL-b6401dd6d9f46a12",
-        "CL-a37e9bc36ede08c3",
-        "CL-fa0de804eb5da4f2"
-      ],
-      "source_refs": [
-        "SA-632a25ce04f046b7"
-      ],
-      "data_date": "2026-07-15",
-      "status": "verified"
-    }
-  ],
+  "relatedEntities": [],
+  "relationships": [],
   "taxonomyNodes": [
     {
       "id": "TX-technology-fine_tuning",
@@ -179,11 +125,9 @@
         "EN-8f71c4871a160172",
         "EN-c70eca6b0f88f44d",
         "EN-bbdefa2950f49882",
-        "EN-f696d5fb767e377c",
         "EN-4a639cb888a15d75",
         "EN-8d4321d936320802",
         "EN-65b3aa2f527deeef",
-        "EN-a2413f7c5095f988",
         "EN-c165c006a5968443"
       ],
       "fdeIds": [],
@@ -226,16 +170,15 @@
         "EN-2b5e92d1908d42f6",
         "EN-8d4321d936320802",
         "EN-3ae50afab3e392b8",
+        "EN-8395dc051feafc4c",
         "EN-b3e3bce83d29e787",
-        "EN-9855ef88d183e07b",
-        "EN-049e948563e03e97",
         "EN-8950d72f381130ac",
+        "EN-049e948563e03e97",
         "EN-f7a386a451b79627",
         "EN-bc1fc5140040180e",
         "EN-12ab68e37d104d27",
         "EN-c608c4787821de1b",
-        "EN-9c8ae69b84f21a2e",
-        "EN-6ac6ad44bb9995ca"
+        "EN-9c8ae69b84f21a2e"
       ],
       "fdeIds": [],
       "hardwareIds": [],

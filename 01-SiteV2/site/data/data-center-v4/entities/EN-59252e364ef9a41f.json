@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T05:24:47.187Z",
+    "generatedAt": "2026-07-18T06:46:16.044Z",
     "latestDataDate": "2026-07-18",
     "currentDate": "2026-07-18",
     "eventCount": 1250,
@@ -25,14 +25,10 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [],
-    "relatedEntityIds": [
-      "EN-27aaa410b20647e0"
-    ],
+    "relatedEntityIds": [],
     "firstSeen": "2026-07-16",
     "lastSeen": "2026-07-16",
-    "relationIds": [
-      "REL2-dfc70ff8964ee571"
-    ],
+    "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -66,51 +62,8 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [
-    {
-      "id": "EN-27aaa410b20647e0",
-      "name": "Soofi",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-51e3ec25899a2486",
-        "EV-826c8088c4adf591"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [],
-      "relatedEntityIds": [
-        "EN-e35404082afce32c",
-        "EN-59252e364ef9a41f"
-      ],
-      "firstSeen": "2026-07-13",
-      "lastSeen": "2026-07-16"
-    }
-  ],
-  "relationships": [
-    {
-      "relationship_id": "REL2-dfc70ff8964ee571",
-      "relationship_version": "RELATION-V2.0",
-      "subject_ref": "EN-27aaa410b20647e0",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-59252e364ef9a41f",
-      "object_type": "entity",
-      "event_id": "EV-51e3ec25899a2486",
-      "claim_refs": [
-        "CL-ecbd398d1cee8977"
-      ],
-      "source_refs": [
-        "SA-72736fd2f0cc7197"
-      ],
-      "data_date": "2026-07-16",
-      "status": "verified"
-    }
-  ],
+  "relatedEntities": [],
+  "relationships": [],
   "taxonomyNodes": [],
   "fde": [],
   "hardware": []

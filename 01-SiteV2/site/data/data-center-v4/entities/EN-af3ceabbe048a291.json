@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T05:24:47.187Z",
+    "generatedAt": "2026-07-18T06:46:16.044Z",
     "latestDataDate": "2026-07-18",
     "currentDate": "2026-07-18",
     "eventCount": 1250,
@@ -28,7 +28,9 @@
       "EV-1ae8027c085679e9",
       "EV-8361a47c70ecd243",
       "EV-9f338c4815cc65f3",
-      "EV-d40a1a873015ac98"
+      "EV-9f9bc7ffe6228281",
+      "EV-d40a1a873015ac98",
+      "EV-da062d02015f99fb"
     ],
     "viewpointIds": [],
     "classificationRefs": [
@@ -40,13 +42,9 @@
     "firstSeen": "2026-06-09",
     "lastSeen": "2026-07-15",
     "relationIds": [
-      "REL2-fe6ef4b2baec2082",
-      "REL2-1649ec7569db96db",
       "REL2-04014818e378c5b2",
-      "REL2-13cc501e416c5363",
       "REL2-1f4fedf249db5eac",
       "REL2-27b659bc5e5fe00b",
-      "REL2-56818547094adb2e",
       "REL2-bcbf4f353ec2e5b3",
       "REL2-ea61135fcfa1e38f",
       "REL2-f5b7bf87ac9c1791"
@@ -63,11 +61,9 @@
         "EV-1ae8027c085679e9",
         "EV-8361a47c70ecd243",
         "EV-9f338c4815cc65f3",
+        "EV-9f9bc7ffe6228281",
         "EV-d40a1a873015ac98",
-        "EV-bff418b2959f58fb",
-        "EV-da062d02015f99fb",
-        "EV-ebef81764102ee7c",
-        "EV-9f9bc7ffe6228281"
+        "EV-da062d02015f99fb"
       ],
       "hardware": [],
       "organizationPeople": [],
@@ -203,6 +199,22 @@
         ]
       },
       {
+        "id": "EV-9f9bc7ffe6228281",
+        "dataDate": "2026-06-09",
+        "date": "2026-06-09",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Apple 发布 visionOS 27，集成 Siri AI",
+        "displayTags": [],
+        "entityIds": [
+          "EN-3a7bd3e2360a3d29",
+          "EN-af3ceabbe048a291"
+        ]
+      },
+      {
         "id": "EV-d40a1a873015ac98",
         "dataDate": "2026-06-09",
         "date": "2026-06-09",
@@ -220,23 +232,6 @@
         ]
       },
       {
-        "id": "EV-bff418b2959f58fb",
-        "dataDate": "2026-06-09",
-        "date": "2026-06-09",
-        "eventType": "product_release",
-        "eventTypeLabel": "产品发布",
-        "eventGroup": "模型、产品与服务",
-        "status": "completed",
-        "statusLabel": "已完成",
-        "title": "WWDC 2026：Siri AI、iOS 27、Apple Intelligence 等发布汇总",
-        "displayTags": [],
-        "entityIds": [
-          "EN-3a7bd3e2360a3d29",
-          "EN-bbdefa2950f49882",
-          "EN-dfabe4215e8c07cb"
-        ]
-      },
-      {
         "id": "EV-da062d02015f99fb",
         "dataDate": "2026-06-09",
         "date": "2026-06-09",
@@ -248,37 +243,8 @@
         "title": "Apple 发布 watchOS 27，整合 Siri AI 功能",
         "displayTags": [],
         "entityIds": [
-          "EN-3a7bd3e2360a3d29"
-        ]
-      },
-      {
-        "id": "EV-ebef81764102ee7c",
-        "dataDate": "2026-06-09",
-        "date": "2026-06-09",
-        "eventType": "model_release",
-        "eventTypeLabel": "模型发布",
-        "eventGroup": "模型、产品与服务",
-        "status": "announced",
-        "statusLabel": "已公布",
-        "title": "初探苹果 iPadOS 27：应用启动提速 30%、引入全新 Siri AI",
-        "displayTags": [],
-        "entityIds": [
-          "EN-3a7bd3e2360a3d29"
-        ]
-      },
-      {
-        "id": "EV-9f9bc7ffe6228281",
-        "dataDate": "2026-06-09",
-        "date": "2026-06-09",
-        "eventType": "product_release",
-        "eventTypeLabel": "产品发布",
-        "eventGroup": "模型、产品与服务",
-        "status": "completed",
-        "statusLabel": "已完成",
-        "title": "Apple 发布 visionOS 27，集成 Siri AI",
-        "displayTags": [],
-        "entityIds": [
-          "EN-3a7bd3e2360a3d29"
+          "EN-3a7bd3e2360a3d29",
+          "EN-af3ceabbe048a291"
         ]
       }
     ],
@@ -389,61 +355,20 @@
         "TX-technology-speech_audio"
       ],
       "relatedEntityIds": [
-        "EN-af3ceabbe048a291",
-        "EN-e13642b766c1f8d1",
         "EN-e463d05a14e8697f",
-        "EN-1553575bccce0a25",
+        "EN-b5251b35f15bedc4",
         "EN-1924fff8eb4d54ae",
-        "EN-41dcc2d4951f337b",
-        "EN-1acf3a98930680ec",
+        "EN-dd920a8cd166f486",
+        "EN-af3ceabbe048a291",
         "EN-45b5216872656eb3",
-        "EN-dfabe4215e8c07cb",
-        "EN-729324072d368379",
-        "EN-40e307d789f77264",
-        "EN-0502bb9ed34980aa"
+        "EN-0502bb9ed34980aa",
+        "EN-40e307d789f77264"
       ],
       "firstSeen": "2026-06-04",
       "lastSeen": "2026-07-18"
     }
   ],
   "relationships": [
-    {
-      "relationship_id": "REL2-fe6ef4b2baec2082",
-      "relationship_version": "RELATION-V2.0",
-      "subject_ref": "EN-3a7bd3e2360a3d29",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-af3ceabbe048a291",
-      "object_type": "entity",
-      "event_id": "EV-37b8aab7efececce",
-      "claim_refs": [
-        "CL-ade9b4c8d412ad4a"
-      ],
-      "source_refs": [
-        "SA-d7df74ef107ebab0"
-      ],
-      "data_date": "2026-07-15",
-      "status": "verified"
-    },
-    {
-      "relationship_id": "REL2-1649ec7569db96db",
-      "relationship_version": "RELATION-V2.0",
-      "subject_ref": "EN-3a7bd3e2360a3d29",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-af3ceabbe048a291",
-      "object_type": "entity",
-      "event_id": "EV-ffe99cf8446a9d14",
-      "claim_refs": [
-        "CL-d224088d71499542",
-        "CL-2dda757580f0b609"
-      ],
-      "source_refs": [
-        "SA-a485ede6044eb201"
-      ],
-      "data_date": "2026-07-14",
-      "status": "verified"
-    },
     {
       "relationship_id": "REL2-04014818e378c5b2",
       "relationship_version": "RELATION-V2.0",
@@ -466,27 +391,6 @@
       "status": "verified"
     },
     {
-      "relationship_id": "REL2-13cc501e416c5363",
-      "relationship_version": "RELATION-V2.0",
-      "subject_ref": "EN-3a7bd3e2360a3d29",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-af3ceabbe048a291",
-      "object_type": "entity",
-      "event_id": "EV-bff418b2959f58fb",
-      "claim_refs": [
-        "CL-167cc4a45ad498cf",
-        "CL-aba3ad1e5b124223",
-        "CL-cec718c6f20d97a3",
-        "CL-b7f5f104685a0e17"
-      ],
-      "source_refs": [
-        "SA-3f3392d34a8a9e5e"
-      ],
-      "data_date": "2026-06-09",
-      "status": "verified"
-    },
-    {
       "relationship_id": "REL2-1f4fedf249db5eac",
       "relationship_version": "RELATION-V2.0",
       "subject_ref": "EN-3a7bd3e2360a3d29",
@@ -497,7 +401,6 @@
       "event_id": "EV-da062d02015f99fb",
       "claim_refs": [
         "CL-4dfab54d9db54ed1",
-        "CL-29288218b99fbd76",
         "CL-6cb5d2da485b19fa",
         "CL-514359fe69d37e62"
       ],
@@ -517,30 +420,10 @@
       "object_type": "entity",
       "event_id": "EV-1ae8027c085679e9",
       "claim_refs": [
-        "CL-412c1165ad9aea08",
-        "CL-0d7806422b8f4731",
-        "CL-bf480f9596975b92"
+        "CL-0d7806422b8f4731"
       ],
       "source_refs": [
         "SA-c509109acff08b2a"
-      ],
-      "data_date": "2026-06-09",
-      "status": "verified"
-    },
-    {
-      "relationship_id": "REL2-56818547094adb2e",
-      "relationship_version": "RELATION-V2.0",
-      "subject_ref": "EN-3a7bd3e2360a3d29",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-af3ceabbe048a291",
-      "object_type": "entity",
-      "event_id": "EV-ebef81764102ee7c",
-      "claim_refs": [
-        "CL-bef9e81382823fed"
-      ],
-      "source_refs": [
-        "SA-b6cfe4f4b7de2950"
       ],
       "data_date": "2026-06-09",
       "status": "verified"
@@ -594,8 +477,6 @@
       "event_id": "EV-9f9bc7ffe6228281",
       "claim_refs": [
         "CL-497b46074e896052",
-        "CL-2aeac409ee90a88c",
-        "CL-873c364a0c3fdeb6",
         "CL-597811744929e408"
       ],
       "source_refs": [
@@ -651,7 +532,6 @@
         "EN-c04bd5ebd10ab696",
         "EN-50ba7ff15827787b",
         "EN-bbdefa2950f49882",
-        "EN-992eafe973f69075",
         "EN-1229af0aa3b0305e",
         "EN-81e577740888ca6d",
         "EN-968e2d5b08687bf4",
@@ -660,6 +540,7 @@
         "EN-c608c4787821de1b",
         "EN-6f21a653c48f4f19",
         "EN-12a81529bba89666",
+        "EN-5388bc10736a0eff",
         "EN-2c348893efb2316e",
         "EN-44a9bf3b11abea5c",
         "EN-de6b71bf77ff4299",
@@ -672,6 +553,7 @@
         "EN-dd920a8cd166f486",
         "EN-c70eca6b0f88f44d",
         "EN-41dcc2d4951f337b",
+        "EN-729324072d368379",
         "EN-e246a1f9a090075b",
         "EN-1dc405a4cda895d0",
         "EN-c3ce0cc92b48bbd6",

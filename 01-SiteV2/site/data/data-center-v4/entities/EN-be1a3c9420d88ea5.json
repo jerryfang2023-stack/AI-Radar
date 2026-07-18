@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T05:24:47.187Z",
+    "generatedAt": "2026-07-18T06:46:16.044Z",
     "latestDataDate": "2026-07-18",
     "currentDate": "2026-07-18",
     "eventCount": 1250,
@@ -25,20 +25,15 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [],
-    "relatedEntityIds": [
-      "EN-9c8ae69b84f21a2e"
-    ],
+    "relatedEntityIds": [],
     "firstSeen": "2026-07-06",
     "lastSeen": "2026-07-07",
-    "relationIds": [
-      "REL2-182e6d0ec7a825df"
-    ],
+    "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
-        "EV-de54542fd7e2282c",
         "EV-c2f5b59db9912018"
       ],
       "hardware": [],
@@ -46,22 +41,6 @@
       "other": []
     },
     "timeline": [
-      {
-        "id": "EV-de54542fd7e2282c",
-        "dataDate": "2026-07-15",
-        "date": "2026-07-14",
-        "eventType": "model_release",
-        "eventTypeLabel": "模型发布",
-        "eventGroup": "模型、产品与服务",
-        "status": "completed",
-        "statusLabel": "已完成",
-        "title": "腾讯混元发布 1bit 与 4bit 量化版 Hy3 模型，旗舰 AI 模型可单卡本地运行",
-        "displayTags": [],
-        "entityIds": [
-          "EN-9c8ae69b84f21a2e",
-          "EN-09d3eb0b07daf955"
-        ]
-      },
       {
         "id": "EV-c2f5b59db9912018",
         "dataDate": "2026-07-07",
@@ -82,86 +61,8 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [
-    {
-      "id": "EN-9c8ae69b84f21a2e",
-      "name": "Tencent",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [
-        "腾讯混元"
-      ],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-87432dbb99cd6033",
-        "EV-427081ec574b43bb",
-        "EV-acaf06b262d9c3db",
-        "EV-27b69ea604475b72",
-        "EV-afcd5426f5c01dc7",
-        "EV-619e33abf3f9bfbf",
-        "EV-be2f6bfcad93c42f",
-        "EV-c7b81290859057b0",
-        "EV-7fe139b107f9adc6",
-        "EV-de54542fd7e2282c",
-        "EV-3167e6eed75597e9",
-        "EV-9e35de25113a9269",
-        "EV-ad2e4fe6a149d95d",
-        "EV-c2f5b59db9912018",
-        "EV-57e6392fe3bb69cd",
-        "EV-1a073cd22d1bfa59",
-        "EV-a498b12f3fa2197e",
-        "EV-c11ee0da38376254",
-        "EV-6a6ff349579765ad",
-        "EV-7ff24ae733821395",
-        "EV-86537be17d50ff20",
-        "EV-6b7917bd7edd4bde",
-        "EV-e70b2c66b996d138",
-        "EV-8b4f7844af234ed8",
-        "EV-fc8b280e83232d6f"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-technology-vision_language",
-        "TX-use_case-robotics_automation",
-        "TX-technology-long_context",
-        "TX-technology-open_weights",
-        "TX-technology-multimodal",
-        "TX-industry-media_entertainment"
-      ],
-      "relatedEntityIds": [
-        "EN-be1a3c9420d88ea5"
-      ],
-      "firstSeen": "2026-05-18",
-      "lastSeen": "2026-07-18"
-    }
-  ],
-  "relationships": [
-    {
-      "relationship_id": "REL2-182e6d0ec7a825df",
-      "relationship_version": "RELATION-V2.0",
-      "subject_ref": "EN-9c8ae69b84f21a2e",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-be1a3c9420d88ea5",
-      "object_type": "entity",
-      "event_id": "EV-de54542fd7e2282c",
-      "claim_refs": [
-        "CL-0f0c44cc60f60faa",
-        "CL-b3c83d7012fc57b0",
-        "CL-6ae09bb9bcf96000",
-        "CL-d13b8dfe9939627c"
-      ],
-      "source_refs": [
-        "SA-fa629b013d3d81ce"
-      ],
-      "data_date": "2026-07-15",
-      "status": "verified"
-    }
-  ],
+  "relatedEntities": [],
+  "relationships": [],
   "taxonomyNodes": [],
   "fde": [],
   "hardware": []

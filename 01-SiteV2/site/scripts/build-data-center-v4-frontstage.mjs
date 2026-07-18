@@ -434,7 +434,7 @@ export function buildEntityCollections(service, eventsById) {
       };
     });
   const people = service.profiles
-    .filter((profile) => profile.entityType === "person_candidate" && profile.verificationStatus === "verified" && profile.viewpointIds.length)
+    .filter((profile) => profile.entityType === "person_candidate" && profile.verificationStatus === "verified" && (profile.eventIds.length || profile.viewpointIds.length))
     .map((profile) => ({
       ...common(profile),
       type: "人物",
@@ -481,12 +481,14 @@ export function buildFrontstageData(root = defaultRoot) {
   const fde = buildFdeRecords(readJsonl(path.join(tables, "fde_records.jsonl")), eventsById);
   const hardware = buildHardwareRecords(readJsonl(path.join(tables, "hardware_records.jsonl")), eventsById);
   const viewpointData = readJson(path.join(root, "01-SiteV2/site/data/first-line-viewpoints-v4.json"), { meta: {}, builders: [], remarks: [] });
+  const reviewDecisions = readJson(path.join(root, "01-SiteV2/content/11-databases/entity-history-v1/entity-catalog-review-decisions.json"), { decisions: [] });
   const entityHistory = buildEntityHistoryService({
     entityRows,
     events: eventRecords,
     fdeRecords: fde,
     hardwareRecords: hardware,
-    viewpointData
+    viewpointData,
+    reviewDecisions
   });
   const entityCollections = buildEntityCollections(entityHistory, eventsById);
   const viewpoints = buildViewpoints(root, entityHistory.profiles);

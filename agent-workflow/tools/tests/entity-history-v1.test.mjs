@@ -19,7 +19,7 @@ const event = {
     { dimensionId: "technology", dimensionName: "技术", id: "agentic_execution", name: "智能体" },
     { dimensionId: "use_case", dimensionName: "场景", id: "software_development", name: "软件开发" }
   ],
-  claims: [{ id: "CL-1" }],
+  claims: [{ id: "CL-1", quote: "Acme released Atlas Agent." }],
   sources: [{ id: "SA-1" }]
 };
 
@@ -98,7 +98,8 @@ test("product publisher resolves to the grammatical subject organization when co
     events: [{
       ...event,
       subject: "前 OpenAI CTO 创立的 Thinking Machines Lab",
-      entityIds: ["EN-1111111111111111", "EN-2222222222222222", "EN-3333333333333333"]
+      entityIds: ["EN-1111111111111111", "EN-2222222222222222", "EN-3333333333333333"],
+      claims: [{ id: "CL-1", quote: "Thinking Machines Lab released Inkling." }]
     }]
   });
   const relation = service.relationships.find((item) => item.predicate === "publishes");
@@ -125,6 +126,145 @@ test("an integration event cannot turn the integrator into the product publisher
   });
 
   assert.equal(service.relationships.some((item) => item.predicate === "publishes"), false);
+});
+
+test("organization aliases exclude names persisted as verified products", () => {
+  const service = buildEntityHistoryService({
+    entityRows: [
+      { entity_id: "EN-1111111111111111", canonical_name: "Anthropic", entity_type: "organization_candidate", aliases: ["Claude", "Claude Code"], verification_status: "verified" },
+      { entity_id: "EN-2222222222222222", canonical_name: "Claude", entity_type: "product_candidate", aliases: [], verification_status: "verified" },
+      { entity_id: "EN-3333333333333333", canonical_name: "Claude Code", entity_type: "product_candidate", aliases: [], verification_status: "verified" }
+    ]
+  });
+
+  assert.deepEqual(service.profiles.find((item) => item.name === "Anthropic")?.aliases, []);
+});
+
+test("a repeated publisher name still resolves its explicitly launched product", () => {
+  const service = buildEntityHistoryService({
+    entityRows: [
+      { entity_id: "EN-1111111111111111", canonical_name: "1Password", entity_type: "organization_candidate", aliases: [], verification_status: "verified" },
+      { entity_id: "EN-2222222222222222", canonical_name: "1Password for Claude", entity_type: "product_candidate", aliases: [], verification_status: "verified" }
+    ],
+    events: [{
+      ...event,
+      subject: "undisclosed_subject",
+      object: "1Password for Claude",
+      entityIds: ["EN-1111111111111111", "EN-2222222222222222"],
+      claims: [{ id: "CL-1", quote: "1Password has launched 1Password for Claude." }]
+    }]
+  });
+
+  assert.equal(service.relationships.some((item) => item.subject_ref === "EN-1111111111111111" && item.object_ref === "EN-2222222222222222"), true);
+});
+
+test("a ChatGPT-like product mention does not make Spotify the publisher of ChatGPT", () => {
+  const service = buildEntityHistoryService({
+    entityRows: [
+      { entity_id: "EN-1111111111111111", canonical_name: "Spotify", entity_type: "organization_candidate", aliases: [], verification_status: "verified" },
+      { entity_id: "EN-2222222222222222", canonical_name: "ChatGPT", entity_type: "product_candidate", aliases: [], verification_status: "verified" }
+    ],
+    events: [{
+      ...event,
+      subject: "Spotify",
+      action: "推出",
+      object: "类 ChatGPT 音乐助手",
+      title: "Spotify 推出类 ChatGPT 音乐助手",
+      entityIds: ["EN-1111111111111111", "EN-2222222222222222"],
+      claims: [{ id: "CL-1", quote: "Spotify expands its AI push with a ChatGPT-like music assistant." }]
+    }]
+  });
+
+  assert.equal(service.relationships.some((item) => item.predicate === "publishes"), false);
+});
+
+test("a benchmark comparison does not assign a competitor product to the releasing company", () => {
+  const service = buildEntityHistoryService({
+    entityRows: [
+      { entity_id: "EN-1111111111111111", canonical_name: "OpenAI", entity_type: "organization_candidate", aliases: [], verification_status: "verified" },
+      { entity_id: "EN-2222222222222222", canonical_name: "GPT-5.5-Cyber", entity_type: "product_candidate", aliases: [], verification_status: "verified" },
+      { entity_id: "EN-3333333333333333", canonical_name: "Claude Mythos 5", entity_type: "product_candidate", aliases: [], verification_status: "verified" }
+    ],
+    events: [{
+      ...event,
+      subject: "undisclosed_subject",
+      action: "product_release",
+      object: "GPT-5.5-Cyber outperforms Claude Mythos 5",
+      title: "OpenAI releases GPT-5.5-Cyber, outperforming Claude Mythos 5",
+      entityIds: ["EN-1111111111111111", "EN-2222222222222222", "EN-3333333333333333"],
+      claims: [
+        { id: "CL-1", quote: "OpenAI released GPT-5.5-Cyber for security teams." },
+        { id: "CL-2", quote: "Claude Mythos 5 scored 83.8% in the comparison." }
+      ]
+    }]
+  });
+
+  assert.equal(service.relationships.some((item) => item.object_ref === "EN-2222222222222222"), true);
+  assert.equal(service.relationships.some((item) => item.object_ref === "EN-3333333333333333"), false);
+});
+
+test("a Chinese publisher name adjoining prose still resolves to its released product", () => {
+  const service = buildEntityHistoryService({
+    entityRows: [
+      { entity_id: "EN-1111111111111111", canonical_name: "阿里云", entity_type: "organization_candidate", aliases: [], verification_status: "verified" },
+      { entity_id: "EN-2222222222222222", canonical_name: "峰谷 Token", entity_type: "product_candidate", aliases: [], verification_status: "verified" }
+    ],
+    events: [{
+      ...event,
+      subject: "阿里云：QoderWork",
+      action: "推出",
+      object: "峰谷 Token",
+      title: "阿里云推出峰谷 Token",
+      entityIds: ["EN-1111111111111111", "EN-2222222222222222"],
+      claims: [{ id: "CL-1", quote: "阿里云公告，QoderWork 推出“峰谷 Token”，供开发者错峰使用。" }]
+    }]
+  });
+
+  assert.equal(service.relationships.some((item) => item.subject_ref === "EN-1111111111111111" && item.object_ref === "EN-2222222222222222"), true);
+});
+
+test("a platform launch does not make a third-party model the platform company's product", () => {
+  const service = buildEntityHistoryService({
+    entityRows: [
+      { entity_id: "EN-1111111111111111", canonical_name: "Microsoft", entity_type: "organization_candidate", aliases: ["微软"], verification_status: "verified" },
+      { entity_id: "EN-2222222222222222", canonical_name: "Anthropic", entity_type: "organization_candidate", aliases: [], verification_status: "verified" },
+      { entity_id: "EN-3333333333333333", canonical_name: "Claude", entity_type: "product_candidate", aliases: [], verification_status: "verified" }
+    ],
+    events: [{
+      ...event,
+      subject: "微软全面",
+      action: "推出",
+      object: "Anthropic Claude 模型 Azure 云服务",
+      title: "微软推出 Anthropic Claude 模型 Azure 云服务",
+      entityIds: ["EN-1111111111111111", "EN-2222222222222222", "EN-3333333333333333"],
+      claims: [{ id: "CL-1", quote: "微软正式在 Microsoft Foundry 平台推出托管在 Azure 云服务上的 Anthropic Claude 模型。" }]
+    }]
+  });
+
+  assert.equal(service.relationships.some((item) => item.subject_ref === "EN-1111111111111111" && item.object_ref === "EN-3333333333333333"), false);
+});
+
+test("a source title and accepted claim can jointly prove a direct product launch", () => {
+  const service = buildEntityHistoryService({
+    entityRows: [
+      { entity_id: "EN-1111111111111111", canonical_name: "NVIDIA", entity_type: "organization_candidate", aliases: [], verification_status: "verified" },
+      { entity_id: "EN-2222222222222222", canonical_name: "Jetson Thor", entity_type: "product_candidate", aliases: [], verification_status: "verified" }
+    ],
+    events: [{
+      ...event,
+      subject: "NVIDIA",
+      action: "Introduces New Jetson Thor Computers",
+      object: "to Advance Mainstream Robotics and Edge AI",
+      title: "NVIDIA Introduces New Jetson Thor Computers for Mainstream Robotics and Edge AI",
+      entityIds: ["EN-1111111111111111", "EN-2222222222222222"],
+      claims: [
+        { id: "CL-1", quote: "NVIDIA today introduced the T3000 and T2000, new modules based on the NVIDIA Thor architecture." },
+        { id: "CL-2", quote: "Jetson AGX Thor is powering the next generation of humanoid and robotic systems." }
+      ]
+    }]
+  });
+
+  assert.equal(service.relationships.some((item) => item.subject_ref === "EN-1111111111111111" && item.object_ref === "EN-2222222222222222"), true);
 });
 
 test("organization co-occurrence cannot create a partnership without two explicit partners and a partnership action", () => {
@@ -162,4 +302,149 @@ test("a component supplier mentioned in the object cannot become publisher of th
   });
 
   assert.equal(service.relationships.some((item) => item.predicate === "publishes"), false);
+});
+
+test("accepted catalog review corrections update serving fields and keep Claim-backed ownership", () => {
+  const service = buildEntityHistoryService({
+    entityRows: [
+      { entity_id: "EN-1111111111111111", canonical_name: "Acme", entity_type: "organization_candidate", aliases: [], verification_status: "verified" },
+      { entity_id: "EN-2222222222222222", canonical_name: "Atlas Agent", entity_type: "organization_candidate", aliases: [], verification_status: "verified" }
+    ],
+    events: [event],
+    reviewDecisions: {
+      decisions: [{
+        entity_id: "EN-2222222222222222",
+        action: "correct",
+        canonical: { name: "Atlas Platform", catalog_type: "product", company_names: ["Acme"] },
+        evidence: { claim_refs: ["CL-1"], secondary_source_refs: [] },
+        review_status: "accepted",
+        reviewer: "codex-entity-review"
+      }]
+    }
+  });
+  const product = service.profiles.find((item) => item.id === "EN-2222222222222222");
+
+  assert.equal(product?.name, "Atlas Platform");
+  assert.equal(product?.entityType, "product_candidate");
+  assert.deepEqual(product?.aliases, ["Atlas Agent"]);
+  assert.equal(service.relationships.some((item) => item.subject_ref === "EN-1111111111111111" && item.object_ref === product.id && item.claim_refs.includes("CL-1")), true);
+  assert.equal(service.manifest.review.corrected, 1);
+});
+
+test("accepted catalog review quarantines non-entities and merges duplicate ids in the serving projection", () => {
+  const service = buildEntityHistoryService({
+    entityRows: [
+      { entity_id: "EN-1111111111111111", canonical_name: "Acme", entity_type: "organization_candidate", aliases: [], verification_status: "verified" },
+      { entity_id: "EN-2222222222222222", canonical_name: "Atlas Agent", entity_type: "product_candidate", aliases: [], verification_status: "verified" },
+      { entity_id: "EN-3333333333333333", canonical_name: "Atlas Agent launch", entity_type: "product_candidate", aliases: [], verification_status: "verified" },
+      { entity_id: "EN-4444444444444444", canonical_name: "Launches", entity_type: "product_candidate", aliases: [], verification_status: "verified" }
+    ],
+    events: [{ ...event, entityIds: ["EN-1111111111111111", "EN-3333333333333333", "EN-4444444444444444"] }],
+    reviewDecisions: {
+      decisions: [
+        {
+          entity_id: "EN-3333333333333333",
+          action: "merge",
+          merge_into_entity_id: "EN-2222222222222222",
+          canonical: { name: "Atlas Agent", catalog_type: "product", company_names: ["Acme"] },
+          evidence: { claim_refs: ["CL-1"], secondary_source_refs: [] },
+          review_status: "accepted",
+          reviewer: "codex-entity-review"
+        },
+        {
+          entity_id: "EN-4444444444444444",
+          action: "quarantine",
+          canonical: { name: "Launches", catalog_type: "other", company_names: [] },
+          evidence: { claim_refs: ["CL-1"], secondary_source_refs: [] },
+          review_status: "accepted",
+          reviewer: "codex-entity-review"
+        }
+      ]
+    }
+  });
+
+  assert.equal(service.profiles.some((item) => item.id === "EN-3333333333333333"), false);
+  assert.equal(service.profiles.some((item) => item.id === "EN-4444444444444444"), false);
+  assert.equal(service.profiles.find((item) => item.id === "EN-2222222222222222")?.name, "Atlas Agent");
+  assert.equal(service.profiles.find((item) => item.id === "EN-2222222222222222")?.eventIds.includes("EV-1"), true);
+  assert.equal(service.manifest.review.merged, 1);
+  assert.equal(service.manifest.review.quarantined, 1);
+});
+
+test("accepted catalog company review bounds inferred product publishers", () => {
+  const service = buildEntityHistoryService({
+    entityRows: [
+      { entity_id: "EN-1111111111111111", canonical_name: "Acme", entity_type: "organization_candidate", aliases: [], verification_status: "verified" },
+      { entity_id: "EN-2222222222222222", canonical_name: "Atlas Agent", entity_type: "product_candidate", aliases: [], verification_status: "verified" }
+    ],
+    events: [event],
+    reviewDecisions: {
+      decisions: [{
+        entity_id: "EN-2222222222222222",
+        action: "confirm",
+        canonical: { name: "Atlas Agent", catalog_type: "product", company_names: [] },
+        evidence: { claim_refs: ["CL-1"], secondary_sources: [] },
+        review_status: "accepted",
+        reviewer: "codex-entity-review"
+      }]
+    }
+  });
+
+  assert.equal(service.relationships.some((item) => item.predicate === "publishes" && item.object_ref === "EN-2222222222222222"), false);
+});
+
+test("explicit confirmation verifies a candidate organization for Claim-backed ownership", () => {
+  const service = buildEntityHistoryService({
+    entityRows: [
+      { entity_id: "EN-1111111111111111", canonical_name: "Acme", entity_type: "organization_candidate", aliases: [], verification_status: "candidate" },
+      { entity_id: "EN-2222222222222222", canonical_name: "Atlas Agent", entity_type: "product_candidate", aliases: [], verification_status: "verified" }
+    ],
+    events: [event],
+    reviewDecisions: {
+      decisions: [
+        {
+          entity_id: "EN-1111111111111111",
+          action: "confirm",
+          canonical: { name: "Acme", catalog_type: "company", company_names: [] },
+          evidence: { claim_refs: ["CL-1"], secondary_sources: [] },
+          review_status: "accepted",
+          reviewer: "codex-entity-review"
+        },
+        {
+          entity_id: "EN-2222222222222222",
+          action: "confirm",
+          canonical: { name: "Atlas Agent", catalog_type: "product", company_names: ["Acme"] },
+          evidence: { claim_refs: ["CL-1"], secondary_sources: [] },
+          review_status: "accepted",
+          reviewer: "codex-entity-review"
+        }
+      ]
+    }
+  });
+
+  assert.equal(service.profiles.find((item) => item.id === "EN-1111111111111111")?.verificationStatus, "verified");
+  assert.equal(service.relationships.some((item) => item.subject_ref === "EN-1111111111111111" && item.object_ref === "EN-2222222222222222"), true);
+});
+
+test("a reviewed Claim-backed entity missing from historical rows is materialized only in the serving projection", () => {
+  const service = buildEntityHistoryService({
+    entityRows: [
+      { entity_id: "EN-1111111111111111", canonical_name: "Acme", entity_type: "organization_candidate", aliases: [], verification_status: "candidate" }
+    ],
+    events: [{ ...event, entityIds: ["EN-1111111111111111"] }],
+    reviewDecisions: {
+      decisions: [{
+        entity_id: "EN-2222222222222222",
+        current: { name: "Atlas Agent", catalog_type: "product", company_names: [] },
+        action: "correct",
+        canonical: { name: "Atlas Agent", catalog_type: "product", company_names: ["Acme"] },
+        evidence: { claim_refs: ["CL-1"], secondary_sources: [] },
+        review_status: "accepted",
+        reviewer: "codex-entity-review"
+      }]
+    }
+  });
+
+  assert.equal(service.profiles.find((item) => item.id === "EN-2222222222222222")?.eventIds.includes("EV-1"), true);
+  assert.equal(service.relationships.some((item) => item.subject_ref === "EN-1111111111111111" && item.object_ref === "EN-2222222222222222"), true);
 });

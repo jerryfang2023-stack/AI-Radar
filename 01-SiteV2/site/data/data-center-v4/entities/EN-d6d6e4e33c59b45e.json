@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T05:24:47.187Z",
+    "generatedAt": "2026-07-18T06:46:16.044Z",
     "latestDataDate": "2026-07-18",
     "currentDate": "2026-07-18",
     "eventCount": 1250,
@@ -29,14 +29,10 @@
       "TX-technology-model_context_protocol",
       "TX-technology-tool_use"
     ],
-    "relatedEntityIds": [
-      "EN-916a98f0fa2a39af"
-    ],
+    "relatedEntityIds": [],
     "firstSeen": "2026-06-23",
     "lastSeen": "2026-06-24",
-    "relationIds": [
-      "REL2-b31fe93b814fce5d"
-    ],
+    "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -87,68 +83,8 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [
-    {
-      "id": "EN-916a98f0fa2a39af",
-      "name": "IBM",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-32d7c52f89d74e88",
-        "EV-ad40755ca624afe7",
-        "EV-bcb74b02448b7d78",
-        "EV-df2357fc3c3b4f5e",
-        "EV-bbc1042dcf5ad317",
-        "EV-b95539d17772a4ce",
-        "EV-347d250e2769de9a",
-        "EV-7449d239223d4928",
-        "EV-2f56b99f72ad6c4f"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-use_case-software_development",
-        "TX-technology-retrieval_augmented_generation",
-        "TX-technology-model_context_protocol",
-        "TX-technology-tool_use",
-        "TX-technology-reasoning"
-      ],
-      "relatedEntityIds": [
-        "EN-dc6c28a2123e8efb",
-        "EN-d6d6e4e33c59b45e"
-      ],
-      "firstSeen": "2026-05-15",
-      "lastSeen": "2026-07-17"
-    }
-  ],
-  "relationships": [
-    {
-      "relationship_id": "REL2-b31fe93b814fce5d",
-      "relationship_version": "RELATION-V2.0",
-      "subject_ref": "EN-916a98f0fa2a39af",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-d6d6e4e33c59b45e",
-      "object_type": "entity",
-      "event_id": "EV-7449d239223d4928",
-      "claim_refs": [
-        "CL-2126331ef6503828",
-        "CL-9ce295a92a1fc3bf",
-        "CL-d6857e7b630cfd18",
-        "CL-b9d0d3f3c8c311b9"
-      ],
-      "source_refs": [
-        "SA-e6fccd722a93d8b2"
-      ],
-      "data_date": "2026-06-24",
-      "status": "verified"
-    }
-  ],
+  "relatedEntities": [],
+  "relationships": [],
   "taxonomyNodes": [
     {
       "id": "TX-technology-retrieval_augmented_generation",
@@ -173,10 +109,9 @@
         "EN-2f265a693b2897f1",
         "EN-8d4321d936320802",
         "EN-aa15d891a32a51b8",
+        "EN-8395dc051feafc4c",
         "EN-754b113d548b4469",
         "EN-d87e6bf7aa180a4a",
-        "EN-23fa906ab8df13d6",
-        "EN-feecb1b1adc8584d",
         "EN-ae4ea495016fb286",
         "EN-916a98f0fa2a39af",
         "EN-d6d6e4e33c59b45e",
@@ -231,13 +166,12 @@
         "EN-d2f4e09cb01afa3c",
         "EN-e473f24d4325d51a",
         "EN-33a6331aaa822714",
-        "EN-b3b5882e4eb97824",
-        "EN-a83eedd800c2433b",
         "EN-7d3194f79e645c42",
         "EN-178e3a5167e8e1d5",
         "EN-3db1f560db626918",
         "EN-2b78da3dc866654e",
         "EN-bd2bfbea5911ec7a",
+        "EN-af53dbc3e443f7a9",
         "EN-916a98f0fa2a39af",
         "EN-d6d6e4e33c59b45e",
         "EN-caf559f7830b566f",
@@ -295,10 +229,12 @@
         "EN-d6d6e4e33c59b45e",
         "EN-3a7bd3e2360a3d29",
         "EN-41dcc2d4951f337b",
+        "EN-729324072d368379",
         "EN-6fcba5d96a4fadfd",
         "EN-630dc133336bc266",
         "EN-ce635c4eabff5e4f",
-        "EN-c4bc2d00a42f220f"
+        "EN-c4bc2d00a42f220f",
+        "EN-0b9ca57f53ba758b"
       ],
       "fdeIds": [],
       "hardwareIds": [],

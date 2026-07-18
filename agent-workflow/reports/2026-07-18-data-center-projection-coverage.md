@@ -7,8 +7,8 @@
 - entities: 88
 - entity_mentions: 125
 - accepted_events: 52
-- verified_event_organizations: 23
-- verified_event_products: 29
+- verified_event_organizations: 24
+- verified_event_products: 23
 - fde_records: 1
 - hardware_records: 1
 

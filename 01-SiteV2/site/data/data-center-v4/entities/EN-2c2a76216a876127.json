@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T05:24:47.187Z",
+    "generatedAt": "2026-07-18T06:46:16.044Z",
     "latestDataDate": "2026-07-18",
     "currentDate": "2026-07-18",
     "eventCount": 1250,
@@ -25,10 +25,14 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-c04bd5ebd10ab696"
+    ],
     "firstSeen": "2026-06-24",
     "lastSeen": "2026-06-25",
-    "relationIds": [],
+    "relationIds": [
+      "REL2-193ff0cdd6887e67"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -61,8 +65,67 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-c04bd5ebd10ab696",
+      "name": "Mistral AI",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-24265c0f0fa45343",
+        "EV-d4e44892226be468",
+        "EV-85506f9f86779a6d",
+        "EV-dc442b91a69fcc5a",
+        "EV-d292329c0ec64c8f",
+        "EV-653cbce2ccc79f8b",
+        "EV-3a67edc87806b5f1",
+        "EV-dbc47d61f3e94306",
+        "EV-eb2584a4801eb1e6",
+        "EV-865af5f2f09605c4"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-automotive_transportation",
+        "TX-technology-code_generation",
+        "TX-technology-long_context",
+        "TX-technology-on_device",
+        "TX-technology-tool_use"
+      ],
+      "relatedEntityIds": [
+        "EN-0d4ab5f8db6e89bc",
+        "EN-2c2a76216a876127"
+      ],
+      "firstSeen": "2026-06-02",
+      "lastSeen": "2026-07-17"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-193ff0cdd6887e67",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-c04bd5ebd10ab696",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-2c2a76216a876127",
+      "object_type": "entity",
+      "event_id": "EV-865af5f2f09605c4",
+      "claim_refs": [
+        "CL-8db6e572caff04f0",
+        "CL-e93ecebce51681b4"
+      ],
+      "source_refs": [
+        "SA-f8ea1918edf77ac5"
+      ],
+      "data_date": "2026-06-25",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [],
   "fde": [],
   "hardware": []

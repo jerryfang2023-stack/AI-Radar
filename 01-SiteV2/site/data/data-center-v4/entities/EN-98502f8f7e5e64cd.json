@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T05:24:47.187Z",
+    "generatedAt": "2026-07-18T06:46:16.044Z",
     "latestDataDate": "2026-07-18",
     "currentDate": "2026-07-18",
     "eventCount": 1250,
@@ -16,7 +16,7 @@
     "entityType": "organization_candidate",
     "typeLabel": "公司与机构",
     "aliases": [],
-    "verificationStatus": "candidate",
+    "verificationStatus": "verified",
     "datasetScopes": [
       "canonical"
     ],
@@ -25,10 +25,14 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-cb29f2627d5408e0"
+    ],
     "firstSeen": "2026-06-24",
     "lastSeen": "2026-06-25",
-    "relationIds": [],
+    "relationIds": [
+      "REL2-4c2911882d8986db"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -69,8 +73,51 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-cb29f2627d5408e0",
+      "name": "MS-NAT5000",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-5d50eb202b478bd4"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [],
+      "relatedEntityIds": [
+        "EN-98502f8f7e5e64cd"
+      ],
+      "firstSeen": "2026-06-24",
+      "lastSeen": "2026-06-25"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-4c2911882d8986db",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-98502f8f7e5e64cd",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-cb29f2627d5408e0",
+      "object_type": "entity",
+      "event_id": "EV-5d50eb202b478bd4",
+      "claim_refs": [
+        "CL-34eae2e3cf08f5dd",
+        "CL-491026e3b84ada48",
+        "CL-030aaa8424464499"
+      ],
+      "source_refs": [
+        "SA-a02988935452a619"
+      ],
+      "data_date": "2026-06-25",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [],
   "fde": [],
   "hardware": [

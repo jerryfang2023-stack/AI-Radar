@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T05:24:47.187Z",
+    "generatedAt": "2026-07-18T06:46:16.044Z",
     "latestDataDate": "2026-07-18",
     "currentDate": "2026-07-18",
     "eventCount": 1250,
@@ -35,6 +35,8 @@
     "firstSeen": "2026-06-09",
     "lastSeen": "2026-06-20",
     "relationIds": [
+      "REL2-73b64e88009fa787",
+      "REL2-5a09d0744942f11b",
       "REL2-3d00d7538e09943f"
     ],
     "groupedEventIds": {
@@ -216,24 +218,60 @@
         "TX-technology-speech_audio"
       ],
       "relatedEntityIds": [
-        "EN-af3ceabbe048a291",
-        "EN-e13642b766c1f8d1",
         "EN-e463d05a14e8697f",
-        "EN-1553575bccce0a25",
+        "EN-b5251b35f15bedc4",
         "EN-1924fff8eb4d54ae",
-        "EN-41dcc2d4951f337b",
-        "EN-1acf3a98930680ec",
+        "EN-dd920a8cd166f486",
+        "EN-af3ceabbe048a291",
         "EN-45b5216872656eb3",
-        "EN-dfabe4215e8c07cb",
-        "EN-729324072d368379",
-        "EN-40e307d789f77264",
-        "EN-0502bb9ed34980aa"
+        "EN-0502bb9ed34980aa",
+        "EN-40e307d789f77264"
       ],
       "firstSeen": "2026-06-04",
       "lastSeen": "2026-07-18"
     }
   ],
   "relationships": [
+    {
+      "relationship_id": "REL2-73b64e88009fa787",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-3a7bd3e2360a3d29",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-1924fff8eb4d54ae",
+      "object_type": "entity",
+      "event_id": "EV-89930fa8d1db98eb",
+      "claim_refs": [
+        "CL-e59ffd29c9fad267",
+        "CL-def709b9f0ef39c0",
+        "CL-85a4dcaf0f72d71b",
+        "CL-819b55565656b293"
+      ],
+      "source_refs": [
+        "SA-b7ca287a7f6b5136"
+      ],
+      "data_date": "2026-06-20",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-5a09d0744942f11b",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-3a7bd3e2360a3d29",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-1924fff8eb4d54ae",
+      "object_type": "entity",
+      "event_id": "EV-85373b8ec9148127",
+      "claim_refs": [
+        "CL-4de8f4e5cbfdc73b",
+        "CL-36760828e3e4b086"
+      ],
+      "source_refs": [
+        "SA-b888617f1f81722a"
+      ],
+      "data_date": "2026-06-10",
+      "status": "verified"
+    },
     {
       "relationship_id": "REL2-3d00d7538e09943f",
       "relationship_version": "RELATION-V2.0",
@@ -302,10 +340,9 @@
         "EN-1bf93b12e68cac56",
         "EN-d9b1d7819af92e77",
         "EN-bbdefa2950f49882",
-        "EN-242e21e3dc6869a9",
-        "EN-ffc6caa049c23d48",
         "EN-151013fb8438c046",
         "EN-01f1074bb52ff605",
+        "EN-0e008e2c06144ec8",
         "EN-5388bc10736a0eff",
         "EN-43a340bb75b45f02",
         "EN-5e1fcba4c9f1cf69",
@@ -319,8 +356,6 @@
         "EN-9fbf261b62c1d7c0",
         "EN-2dc010636b9dce91",
         "EN-23b979df49741c93",
-        "EN-02072c80a8386e8d",
-        "EN-2eb073b22916de55",
         "EN-4a639cb888a15d75",
         "EN-56ee86045cfb0ddd",
         "EN-9dde0c2d375060f6"

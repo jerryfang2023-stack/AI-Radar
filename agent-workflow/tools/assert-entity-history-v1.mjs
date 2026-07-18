@@ -43,7 +43,7 @@ function evaluate(data) {
   if (!unique(nodes.map((item) => item.id))) problems.push("taxonomy node ids are not unique");
   if (!unique(relationships.map((item) => item.relationship_id))) problems.push("relationship ids are not unique");
   if ((data.products || []).some((item) => !/^EN-[a-f0-9]{16}$/u.test(item.id))) problems.push("frontstage products are not using persisted EN ids");
-  if ((data.people || []).some((item) => !item.viewpointIds?.length)) problems.push("public people contain no viewpoint lineage");
+  if ((data.people || []).some((item) => !item.viewpointIds?.length && !item.eventIds?.length)) problems.push("public people contain no event or viewpoint lineage");
   if (nodes.some((item) => !["technology", "use_case", "industry"].includes(item.nodeType))) problems.push("taxonomy index contains a non-approved dimension");
 
   for (const profile of profiles) {
@@ -124,6 +124,14 @@ if (!fs.existsSync(frontstageFile)) {
 
 const report = evaluate(readJson(frontstageFile));
 fs.mkdirSync(path.dirname(reportFile), { recursive: true });
-fs.writeFileSync(reportFile, `${JSON.stringify(report, null, 2)}\n`, "utf8");
+const temporaryReport = `${reportFile}.${process.pid}.tmp`;
+fs.writeFileSync(temporaryReport, `${JSON.stringify(report, null, 2)}\n`, "utf8");
+try {
+  fs.renameSync(temporaryReport, reportFile);
+} catch (error) {
+  if (!["EPERM", "EACCES", "UNKNOWN"].includes(error.code)) throw error;
+  fs.rmSync(reportFile, { force: true });
+  fs.renameSync(temporaryReport, reportFile);
+}
 console.log(JSON.stringify({ ...report, report: path.relative(root, reportFile).replace(/\\/gu, "/") }, null, 2));
 if (!report.ok) process.exit(1);

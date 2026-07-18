@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T05:24:47.187Z",
+    "generatedAt": "2026-07-18T06:46:16.044Z",
     "latestDataDate": "2026-07-18",
     "currentDate": "2026-07-18",
     "eventCount": 1250,
@@ -25,10 +25,14 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-47c1e53c427aafb4"
+    ],
     "firstSeen": "2026-06-10",
     "lastSeen": "2026-06-11",
-    "relationIds": [],
+    "relationIds": [
+      "REL2-3939852077cfc454"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -61,8 +65,53 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-47c1e53c427aafb4",
+      "name": "阿里巴巴",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-473f852b374d8b1c"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-video_generation"
+      ],
+      "relatedEntityIds": [
+        "EN-3c2a3673eabc9a46"
+      ],
+      "firstSeen": "2026-06-22",
+      "lastSeen": "2026-06-23"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-3939852077cfc454",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-47c1e53c427aafb4",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-3c2a3673eabc9a46",
+      "object_type": "entity",
+      "event_id": "EV-bbc34d7bc9c02b6f",
+      "claim_refs": [
+        "CL-82f9a33c6e075b9f",
+        "CL-9139659758440553",
+        "CL-6d08d5517a55c877"
+      ],
+      "source_refs": [
+        "SA-40a73257af3a1d52"
+      ],
+      "data_date": "2026-06-11",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [],
   "fde": [],
   "hardware": []

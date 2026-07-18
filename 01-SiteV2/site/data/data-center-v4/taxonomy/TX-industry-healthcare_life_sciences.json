@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T05:24:47.187Z",
+    "generatedAt": "2026-07-18T06:46:16.044Z",
     "latestDataDate": "2026-07-18",
     "currentDate": "2026-07-18",
     "eventCount": 1250,
@@ -85,21 +85,16 @@
       "EN-6f7ac1823da81d2e",
       "EN-86acdf589a6723d5",
       "EN-ebe5ed2fc0df64de",
-      "EN-fbe26af59be95e52",
       "EN-6f549489209ee753",
       "EN-61cce404a45c3545",
       "EN-2a920347dfcf07a7",
       "EN-2dc010636b9dce91",
       "EN-23b979df49741c93",
-      "EN-02072c80a8386e8d",
-      "EN-2eb073b22916de55",
       "EN-4a639cb888a15d75",
       "EN-56ee86045cfb0ddd",
       "EN-9dde0c2d375060f6",
       "EN-ea3bd73e2b506e00",
       "EN-a19ad969c84178e9",
-      "EN-668a3f52e25f8f4c",
-      "EN-9eb42ffb4942bcc2",
       "EN-b6e23938808f272d"
     ],
     "fdeIds": [
@@ -3350,7 +3345,9 @@
       "name": "TYLsemi",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "AI Silicon"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -3367,8 +3364,6 @@
       ],
       "relatedEntityIds": [
         "EN-94c93b5ab886f2d9",
-        "EN-ba961b5c6d1aee29",
-        "EN-74beb25bdfe7bdd1",
         "EN-38f4d27a18084522"
       ],
       "firstSeen": "2026-07-14",
@@ -3545,6 +3540,7 @@
       ],
       "relatedEntityIds": [
         "EN-bbdefa2950f49882",
+        "EN-8d323d8bba783aa3",
         "EN-c70eca6b0f88f44d"
       ],
       "firstSeen": "2025-03-18",
@@ -3603,9 +3599,7 @@
       "name": "OpenAI",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "GPT-5.6"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -3834,49 +3828,27 @@
         "TX-technology-computer_use"
       ],
       "relatedEntityIds": [
-        "EN-db94610ec9052c37",
         "EN-7839fb10a8f14c70",
         "EN-d1ad14d4ad57d207",
-        "EN-52fc33ae4d101a5d",
         "EN-74692028630429c7",
         "EN-c70eca6b0f88f44d",
-        "EN-9f15bb7e29e191eb",
-        "EN-678d72f7d615f9b8",
-        "EN-6d120f7a276b6b4c",
-        "EN-729324072d368379",
-        "EN-e65e0f2695fa259d",
-        "EN-e3863f813fe47240",
-        "EN-5a4c2be958c0af72",
-        "EN-a6f1623a1e5232a6",
-        "EN-047bdfce48c28cfc",
+        "EN-52fc33ae4d101a5d",
         "EN-6a50fbf0b970c03a",
         "EN-9fbf261b62c1d7c0",
         "EN-536c4035ba0c7047",
-        "EN-3c92cc7e49924a6f",
         "EN-4d748ebd71af03a7",
-        "EN-f94d92dd00d77b9b",
-        "EN-77fe4e790d5bc756",
-        "EN-acd9dd414f669461",
-        "EN-b8c236d640d6a5fb",
-        "EN-db68703d8d719bd0",
-        "EN-272d6a7a0db89710",
+        "EN-65ef4539bbcbe9fc",
         "EN-5ce177312903c604",
         "EN-3673c8b4dba7409e",
         "EN-b70e8201c9feb94a",
         "EN-373ac021a2c0bb2c",
         "EN-bd2bfbea5911ec7a",
-        "EN-7b80ed96beed8c0a",
         "EN-af53dbc3e443f7a9",
         "EN-3c534d54dae48cbb",
-        "EN-1fe81dc401e2d1df",
-        "EN-d1524df17d7e5a69",
         "EN-b269456229397ef3",
-        "EN-f2272e70be63bc65",
-        "EN-da20c5952dba19d8",
         "EN-fc0586e76f80f181",
-        "EN-e8b6dfd27f418787",
+        "EN-1ecf93c539fcffca",
         "EN-9de030d092759897",
-        "EN-7bf321fa55418fba",
         "EN-b9db1ff13ae8496e",
         "EN-7b8cb35de7ad047a"
       ],
@@ -4095,7 +4067,6 @@
         "TX-use_case-cybersecurity"
       ],
       "relatedEntityIds": [
-        "EN-a614180064f7ef60",
         "EN-9fbf261b62c1d7c0"
       ],
       "firstSeen": "2025-12-02",
@@ -4144,12 +4115,7 @@
         "TX-technology-video_generation",
         "TX-use_case-knowledge_search"
       ],
-      "relatedEntityIds": [
-        "EN-40e307d789f77264",
-        "EN-b42e5eda1d1a3720",
-        "EN-e18cb6435603205d",
-        "EN-24381ecb01753c1b"
-      ],
+      "relatedEntityIds": [],
       "firstSeen": "2026-05-25",
       "lastSeen": "2026-07-18"
     },
@@ -4285,32 +4251,26 @@
         "TX-technology-speech_audio"
       ],
       "relatedEntityIds": [
-        "EN-e07654c7cc29acbd",
-        "EN-171fa23d27b5894b",
         "EN-8395dc051feafc4c",
-        "EN-78cff6caea83f213",
         "EN-aa15d891a32a51b8",
         "EN-0f3360879e746531",
-        "EN-fbe26af59be95e52",
-        "EN-2b119dc14de9478d",
         "EN-a1b0d8a938903dc7",
+        "EN-956b7280912ef1cc",
+        "EN-4a639cb888a15d75",
+        "EN-8d323d8bba783aa3",
         "EN-b5738c169b693bee",
         "EN-51fd7dc086fcb858",
-        "EN-e35404082afce32c",
         "EN-9e193e1ec8d75d41",
         "EN-3ae50afab3e392b8",
         "EN-936f01f91fdadf69",
-        "EN-2f354de778e6a6da",
         "EN-4e7e886400fe6a83",
         "EN-1dc405a4cda895d0",
         "EN-12ab68e37d104d27",
         "EN-a3266ab9e10d6105",
-        "EN-ab9e3beebd83960d",
         "EN-9fbf261b62c1d7c0",
         "EN-11ef7b03c79c9bbd",
         "EN-9bc22dcabf7f45b3",
-        "EN-0b9ca57f53ba758b",
-        "EN-e246a1f9a090075b"
+        "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
       "lastSeen": "2026-07-18"
@@ -4454,10 +4414,7 @@
       "name": "Anthropic",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "Claude Code",
-        "Claude"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -4713,67 +4670,25 @@
         "TX-technology-distillation"
       ],
       "relatedEntityIds": [
-        "EN-cb4754c48f8023d0",
-        "EN-729324072d368379",
-        "EN-9d40760b37c15a83",
-        "EN-855bed02b965c12c",
-        "EN-3a9b395103419892",
         "EN-7d3194f79e645c42",
-        "EN-9612b6f6884e062f",
+        "EN-729324072d368379",
         "EN-ef11a801c5bd3673",
-        "EN-9418d9e3d1e469cf",
-        "EN-dca4b9c41c4f7a0a",
-        "EN-2ec3a04623962df8",
-        "EN-5a4c2be958c0af72",
-        "EN-e65e0f2695fa259d",
-        "EN-40bad8003c5ee358",
-        "EN-85a7b756f3a700d0",
         "EN-fab30471ea65d627",
-        "EN-b8c236d640d6a5fb",
-        "EN-db68703d8d719bd0",
-        "EN-9f15bb7e29e191eb",
         "EN-3a13916345b60fad",
-        "EN-6c987a027caae8d8",
-        "EN-77fe4e790d5bc756",
-        "EN-a18162bf7228289d",
-        "EN-9932392119361f33",
-        "EN-f391856c39fa1049",
-        "EN-8218ed4e007b0ad1",
+        "EN-9f15bb7e29e191eb",
+        "EN-5a4c2be958c0af72",
+        "EN-cb4754c48f8023d0",
         "EN-2c063f604e634100",
         "EN-bb5b6487f881bbb1",
-        "EN-4f237537da9719b4",
-        "EN-774251f8d6e46d3d",
         "EN-d0a0acb9a5ef0560",
-        "EN-562c2c6ed79e6b9e",
-        "EN-bbed1081f0b62667",
-        "EN-5fc6493a57c5f14e",
-        "EN-d0bfa24cf1e53827",
-        "EN-8d323d8bba783aa3",
-        "EN-ad2cec837f9cb98f",
-        "EN-29eb5745fdfcb027",
-        "EN-7ec0224e483d913b",
-        "EN-e61ac98ebb45d0db",
+        "EN-e65e0f2695fa259d",
+        "EN-34ec8666daf7b665",
         "EN-e4ffb7bd879b89da",
-        "EN-efd2f8add3dd89c7",
-        "EN-18f304ffdfa27efb",
-        "EN-1e4fdc17666edc33",
-        "EN-c8185a1a8a6595ad",
-        "EN-d65f09457cc098a8",
-        "EN-ea4ea767088c4a22",
-        "EN-c23eb5fae3cdd763",
-        "EN-3153ebda601cdb79",
         "EN-b59c577ed73536c6",
-        "EN-4db5fd308d379cab",
+        "EN-08013bb0b80d23f7",
         "EN-96eebba49dbbf422",
-        "EN-d8494bb34d6ddc43",
-        "EN-540dfc8c5e1b1136",
-        "EN-a13a91a60b2ba15e",
-        "EN-9ab4135a1cdb0a8c",
-        "EN-fe7f2cc6a2c87e0b",
-        "EN-16f9e91ad20e6467",
-        "EN-f1360a6b087edd47",
-        "EN-e3db3da2b7dc6057",
-        "EN-633085be6200609a"
+        "EN-b8c236d640d6a5fb",
+        "EN-d8494bb34d6ddc43"
       ],
       "firstSeen": "2026-03-13",
       "lastSeen": "2026-07-19"
@@ -4908,23 +4823,11 @@
       "relatedEntityIds": [
         "EN-8652f6cd9088f1fa",
         "EN-597d8c4afa5fe3d6",
-        "EN-419f38e27e81e1f1",
         "EN-d2f4e09cb01afa3c",
         "EN-7d3194f79e645c42",
-        "EN-fbe26af59be95e52",
-        "EN-d0bfa24cf1e53827",
-        "EN-729324072d368379",
-        "EN-163f0f5c1184adda",
         "EN-38945a66b4806b11",
-        "EN-77fe4e790d5bc756",
-        "EN-b9db1ff13ae8496e",
-        "EN-cf49fab26fe3c4a1",
+        "EN-c141d2237427f30d",
         "EN-cbc62794911ff31b",
-        "EN-e1a4e41919f7c2dc",
-        "EN-72d74884ff03d39c",
-        "EN-202ac21492470b79",
-        "EN-e75a2e5083aa0089",
-        "EN-1f8a924e62194552",
         "EN-8d4321d936320802",
         "EN-10fce287b4b1464c"
       ],
@@ -5301,38 +5204,6 @@
       "lastSeen": "2026-06-07"
     },
     {
-      "id": "EN-fbe26af59be95e52",
-      "name": "Blog",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-303b418c63895ba6",
-        "EV-36883997905d34d8",
-        "EV-fdcc4ff01b49053e",
-        "EV-a886a800f06ab9d6",
-        "EV-57597c92f7b183a9"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-industry-healthcare_life_sciences",
-        "TX-use_case-robotics_automation",
-        "TX-technology-mixture_of_experts",
-        "TX-technology-human_in_loop"
-      ],
-      "relatedEntityIds": [
-        "EN-8d4321d936320802",
-        "EN-9fbf261b62c1d7c0",
-        "EN-bbdefa2950f49882"
-      ],
-      "firstSeen": "2026-06-06",
-      "lastSeen": "2026-07-16"
-    },
-    {
       "id": "EN-6f549489209ee753",
       "name": "Leading Inference Providers Achieve",
       "entityType": "product_candidate",
@@ -5360,7 +5231,7 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [],
-      "verificationStatus": "candidate",
+      "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
@@ -5374,7 +5245,9 @@
         "TX-industry-healthcare_life_sciences",
         "TX-industry-telecommunications"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-23b979df49741c93"
+      ],
       "firstSeen": "2026-05-20",
       "lastSeen": "2026-05-20"
     },
@@ -5441,9 +5314,7 @@
         "TX-industry-telecommunications"
       ],
       "relatedEntityIds": [
-        "EN-9e5d9b729e161734",
-        "EN-a42d5d95234db6c4",
-        "EN-77fe4e790d5bc756"
+        "EN-a42d5d95234db6c4"
       ],
       "firstSeen": "2026-05-20",
       "lastSeen": "2026-07-18"
@@ -5453,7 +5324,10 @@
       "name": "VeltrisOne",
       "entityType": "product_candidate",
       "typeLabel": "产品、模型与服务",
-      "aliases": [],
+      "aliases": [
+        "Purpose-Built",
+        "Micro-Industries"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -5468,55 +5342,9 @@
         "TX-industry-healthcare_life_sciences",
         "TX-industry-telecommunications"
       ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-05-20",
-      "lastSeen": "2026-05-20"
-    },
-    {
-      "id": "EN-02072c80a8386e8d",
-      "name": "Purpose-Built",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
+      "relatedEntityIds": [
+        "EN-61cce404a45c3545"
       ],
-      "eventIds": [
-        "EV-6ce6b9c9780b97d9"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-industry-retail_ecommerce",
-        "TX-industry-manufacturing",
-        "TX-industry-healthcare_life_sciences",
-        "TX-industry-telecommunications"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-05-20",
-      "lastSeen": "2026-05-20"
-    },
-    {
-      "id": "EN-2eb073b22916de55",
-      "name": "Micro-Industries",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-6ce6b9c9780b97d9"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-industry-retail_ecommerce",
-        "TX-industry-manufacturing",
-        "TX-industry-healthcare_life_sciences",
-        "TX-industry-telecommunications"
-      ],
-      "relatedEntityIds": [],
       "firstSeen": "2026-05-20",
       "lastSeen": "2026-05-20"
     },
@@ -5526,7 +5354,7 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [],
-      "verificationStatus": "candidate",
+      "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
@@ -5544,16 +5372,20 @@
         "TX-industry-healthcare_life_sciences",
         "TX-technology-fine_tuning"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-8d4321d936320802"
+      ],
       "firstSeen": "2025-03-18",
       "lastSeen": "2026-07-14"
     },
     {
       "id": "EN-56ee86045cfb0ddd",
-      "name": "Introduces Compact",
+      "name": "Compact, Energy-Efficient Systems",
       "entityType": "product_candidate",
       "typeLabel": "产品、模型与服务",
-      "aliases": [],
+      "aliases": [
+        "Introduces Compact"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -5573,10 +5405,12 @@
     },
     {
       "id": "EN-9dde0c2d375060f6",
-      "name": "Compact",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
+      "name": "Compact Automation",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "Compact"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -5667,13 +5501,10 @@
       ],
       "relatedEntityIds": [
         "EN-e3863f813fe47240",
-        "EN-de1afc61dd4d2cea",
         "EN-d85ad5e8ff8e2889",
         "EN-a2fa009495c3bb3a",
-        "EN-77fe4e790d5bc756",
         "EN-2ba325ce6f8e3dc9",
         "EN-557203e8cc173124",
-        "EN-5fa6f727c9e3afe0",
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-05-22",
@@ -5701,53 +5532,13 @@
       "lastSeen": "2026-07-08"
     },
     {
-      "id": "EN-668a3f52e25f8f4c",
-      "name": "Real-World Clinical Setting",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-edb1ddb3a091ada4"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-industry-healthcare_life_sciences"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-07-08",
-      "lastSeen": "2026-07-08"
-    },
-    {
-      "id": "EN-9eb42ffb4942bcc2",
-      "name": "Increased",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-edb1ddb3a091ada4"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-industry-healthcare_life_sciences"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-07-08",
-      "lastSeen": "2026-07-08"
-    },
-    {
       "id": "EN-b6e23938808f272d",
-      "name": "Specialty Care Program Enrollment",
+      "name": "Specialty Medication Enrollment",
       "entityType": "product_candidate",
       "typeLabel": "产品、模型与服务",
-      "aliases": [],
+      "aliases": [
+        "Specialty Care Program Enrollment"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"

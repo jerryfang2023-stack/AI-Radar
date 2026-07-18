@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T05:24:47.187Z",
+    "generatedAt": "2026-07-18T06:46:16.044Z",
     "latestDataDate": "2026-07-18",
     "currentDate": "2026-07-18",
     "eventCount": 1250,
@@ -28,14 +28,10 @@
       "TX-technology-multimodal",
       "TX-technology-video_generation"
     ],
-    "relatedEntityIds": [
-      "EN-2b6e51bec93e86c1"
-    ],
+    "relatedEntityIds": [],
     "firstSeen": "2026-07-01",
     "lastSeen": "2026-07-01",
-    "relationIds": [
-      "REL2-2652646eecbe5a2b"
-    ],
+    "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -77,99 +73,14 @@
           "EN-b0532e1af75cc4ab",
           "EN-01f1074bb52ff605",
           "EN-7ed9c9e7c260ed06",
-          "EN-4d09c69c19f5f67b"
+          "EN-0e008e2c06144ec8"
         ]
       }
     ],
     "viewpoints": []
   },
-  "relatedEntities": [
-    {
-      "id": "EN-2b6e51bec93e86c1",
-      "name": "Google DeepMind",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [
-        "谷歌 DeepMind"
-      ],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-6f092cfc7a064d64",
-        "EV-d4e44892226be468",
-        "EV-1ac32035d5e425e1",
-        "EV-19ebde6e2de35fc9",
-        "EV-67ef7accd26a07a0",
-        "EV-a7e1ecd212474e00",
-        "EV-d961d3ad02f6ae14",
-        "EV-7c6a9f4ee4829976",
-        "EV-93c6ccf23cc422cb",
-        "EV-5babb43f4b4d302f",
-        "EV-ff10670ad06959ec",
-        "EV-011eeba13ebcc9a8",
-        "EV-8eed6489ab514823",
-        "EV-3ef3e18df61a00d8",
-        "EV-568d2aeab5234e48",
-        "EV-f68e00bb9fd49fac",
-        "EV-3e9a0d1be6de5096",
-        "EV-e96aba142e46eba1",
-        "EV-d49da50484ba781f",
-        "EV-81e297ea6f8fde3b",
-        "EV-68edd592c36dccd3"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-technology-vision_language",
-        "TX-technology-code_generation",
-        "TX-use_case-software_development",
-        "TX-technology-mixture_of_experts",
-        "TX-technology-retrieval_augmented_generation",
-        "TX-use_case-research_science",
-        "TX-technology-multimodal",
-        "TX-industry-media_entertainment",
-        "TX-technology-video_generation",
-        "TX-technology-image_generation",
-        "TX-technology-speech_audio"
-      ],
-      "relatedEntityIds": [
-        "EN-0e008e2c06144ec8",
-        "EN-4d09c69c19f5f67b",
-        "EN-7ed9c9e7c260ed06",
-        "EN-01f1074bb52ff605",
-        "EN-d56aa2f9908f566a",
-        "EN-085598c00f2aaccf",
-        "EN-a3c3b987b09fc1bb"
-      ],
-      "firstSeen": "2026-06-02",
-      "lastSeen": "2026-07-17"
-    }
-  ],
-  "relationships": [
-    {
-      "relationship_id": "REL2-2652646eecbe5a2b",
-      "relationship_version": "RELATION-V2.0",
-      "subject_ref": "EN-2b6e51bec93e86c1",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-7ed9c9e7c260ed06",
-      "object_type": "entity",
-      "event_id": "EV-5babb43f4b4d302f",
-      "claim_refs": [
-        "CL-4cf8bbb7f166e862",
-        "CL-928846910e24c9b3",
-        "CL-1030b31c165540d3",
-        "CL-3ca47c32c729c6e8"
-      ],
-      "source_refs": [
-        "SA-2f82fda2672510e1"
-      ],
-      "data_date": "2026-07-01",
-      "status": "verified"
-    }
-  ],
+  "relatedEntities": [],
+  "relationships": [],
   "taxonomyNodes": [
     {
       "id": "TX-technology-multimodal",
@@ -239,11 +150,12 @@
         "EN-c4ef31845ea79710",
         "EN-9e193e1ec8d75d41",
         "EN-51fd7dc086fcb858",
+        "EN-8395dc051feafc4c",
         "EN-2b6e51bec93e86c1",
         "EN-b0532e1af75cc4ab",
         "EN-01f1074bb52ff605",
         "EN-7ed9c9e7c260ed06",
-        "EN-4d09c69c19f5f67b",
+        "EN-0e008e2c06144ec8",
         "EN-e0bab6f6c58bfe4e",
         "EN-afe83c198e329ef2",
         "EN-1730144d4e269a62",
@@ -290,12 +202,11 @@
         "EN-ec1c8f558ff61e34",
         "EN-047364b9be67f665",
         "EN-d83624eb3ab9192e",
-        "EN-925a688403e10965",
         "EN-2b6e51bec93e86c1",
         "EN-b0532e1af75cc4ab",
         "EN-01f1074bb52ff605",
         "EN-7ed9c9e7c260ed06",
-        "EN-4d09c69c19f5f67b",
+        "EN-0e008e2c06144ec8",
         "EN-bbdefa2950f49882",
         "EN-5388bc10736a0eff",
         "EN-43a340bb75b45f02",

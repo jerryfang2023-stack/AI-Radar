@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T05:24:47.187Z",
+    "generatedAt": "2026-07-18T06:46:16.044Z",
     "latestDataDate": "2026-07-18",
     "currentDate": "2026-07-18",
     "eventCount": 1250,
@@ -25,10 +25,14 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-bdedcf7e3b01508b"
+    ],
     "firstSeen": "2026-07-02",
     "lastSeen": "2026-07-03",
-    "relationIds": [],
+    "relationIds": [
+      "REL2-a29518b4e034cde5"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -60,8 +64,51 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-bdedcf7e3b01508b",
+      "name": "华擎",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-130460e1ff74d191"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [],
+      "relatedEntityIds": [
+        "EN-aa70ef0a3cae0638"
+      ],
+      "firstSeen": "2026-07-02",
+      "lastSeen": "2026-07-03"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-a29518b4e034cde5",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-bdedcf7e3b01508b",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-aa70ef0a3cae0638",
+      "object_type": "entity",
+      "event_id": "EV-130460e1ff74d191",
+      "claim_refs": [
+        "CL-97c9b12f91823925",
+        "CL-a6b0029076353c91",
+        "CL-767c6e27f18d910a"
+      ],
+      "source_refs": [
+        "SA-e34661d9af24967b"
+      ],
+      "data_date": "2026-07-03",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [],
   "fde": [],
   "hardware": []

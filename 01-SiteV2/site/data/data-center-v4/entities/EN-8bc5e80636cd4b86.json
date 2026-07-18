@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T05:24:47.187Z",
+    "generatedAt": "2026-07-18T06:46:16.044Z",
     "latestDataDate": "2026-07-18",
     "currentDate": "2026-07-18",
     "eventCount": 1250,
@@ -12,10 +12,12 @@
   },
   "entity": {
     "id": "EN-8bc5e80636cd4b86",
-    "name": "Reality Elite",
+    "name": "骁龙 Reality Elite",
     "entityType": "product_candidate",
     "typeLabel": "产品、模型与服务",
-    "aliases": [],
+    "aliases": [
+      "Reality Elite"
+    ],
     "verificationStatus": "verified",
     "datasetScopes": [
       "canonical"
@@ -25,10 +27,14 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-42a64c68a4a98ad5"
+    ],
     "firstSeen": "2026-06-17",
     "lastSeen": "2026-06-17",
-    "relationIds": [],
+    "relationIds": [
+      "REL2-fb40fbc6c320e155"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -61,8 +67,53 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-42a64c68a4a98ad5",
+      "name": "高通",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-f734010431e37500",
+        "EV-20dcacae656a9eb8"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [],
+      "relatedEntityIds": [
+        "EN-8bc5e80636cd4b86"
+      ],
+      "firstSeen": "2026-06-17",
+      "lastSeen": "2026-06-25"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-fb40fbc6c320e155",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-42a64c68a4a98ad5",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-8bc5e80636cd4b86",
+      "object_type": "entity",
+      "event_id": "EV-20dcacae656a9eb8",
+      "claim_refs": [
+        "CL-a26620e846034228",
+        "CL-f131981479936512",
+        "CL-41f452ae89b6f4c8",
+        "CL-371c7db36d18efed"
+      ],
+      "source_refs": [
+        "SA-3d357d22836adc1f"
+      ],
+      "data_date": "2026-06-17",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [],
   "fde": [],
   "hardware": [

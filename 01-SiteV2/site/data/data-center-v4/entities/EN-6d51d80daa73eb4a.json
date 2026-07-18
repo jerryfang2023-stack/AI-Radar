@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T05:24:47.187Z",
+    "generatedAt": "2026-07-18T06:46:16.044Z",
     "latestDataDate": "2026-07-18",
     "currentDate": "2026-07-18",
     "eventCount": 1250,
@@ -25,10 +25,14 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-61b6bf408b3b086e"
+    ],
     "firstSeen": "2026-06-09",
     "lastSeen": "2026-06-15",
-    "relationIds": [],
+    "relationIds": [
+      "REL2-d424b878dadc881d"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -55,15 +59,56 @@
         "entityIds": [
           "EN-61b6bf408b3b086e",
           "EN-6d51d80daa73eb4a",
-          "EN-9e51ca48d5ecf16f",
-          "EN-e466d31379abfeeb"
+          "EN-9e51ca48d5ecf16f"
         ]
       }
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-61b6bf408b3b086e",
+      "name": "Atomicwork",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-536b7d289e7209c1"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [],
+      "relatedEntityIds": [
+        "EN-6d51d80daa73eb4a"
+      ],
+      "firstSeen": "2026-06-09",
+      "lastSeen": "2026-06-15"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-d424b878dadc881d",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-61b6bf408b3b086e",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-6d51d80daa73eb4a",
+      "object_type": "entity",
+      "event_id": "EV-536b7d289e7209c1",
+      "claim_refs": [
+        "CL-55d4c2c5a74b2a19",
+        "CL-62501b66860c9002"
+      ],
+      "source_refs": [
+        "SA-fad5c1635d8c4120"
+      ],
+      "data_date": "2026-06-15",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [],
   "fde": [],
   "hardware": []

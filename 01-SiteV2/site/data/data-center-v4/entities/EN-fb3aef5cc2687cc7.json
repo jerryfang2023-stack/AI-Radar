@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T05:24:47.187Z",
+    "generatedAt": "2026-07-18T06:46:16.044Z",
     "latestDataDate": "2026-07-18",
     "currentDate": "2026-07-18",
     "eventCount": 1250,
@@ -25,10 +25,14 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-d58fc8daf00e9bc3"
+    ],
     "firstSeen": "2026-07-16",
     "lastSeen": "2026-07-17",
-    "relationIds": [],
+    "relationIds": [
+      "REL2-e0c3f5a837972320"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -74,8 +78,57 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-d58fc8daf00e9bc3",
+      "name": "1Password",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-51645a3b1e730105"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [],
+      "relatedEntityIds": [
+        "EN-fb3aef5cc2687cc7"
+      ],
+      "firstSeen": "2026-07-16",
+      "lastSeen": "2026-07-17"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-e0c3f5a837972320",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-d58fc8daf00e9bc3",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-fb3aef5cc2687cc7",
+      "object_type": "entity",
+      "event_id": "EV-51645a3b1e730105",
+      "claim_refs": [
+        "CL-76944cb6019a8f1d",
+        "CL-906ad145aac5aff4",
+        "CL-0a91f66debb31d54",
+        "CL-8192bdfda7508755",
+        "CL-bd2d2e70b86337d3",
+        "CL-6dce50d66d845fb8",
+        "CL-0dceb3b8e728f260",
+        "CL-7d1a9d17ce726554"
+      ],
+      "source_refs": [
+        "SA-b0590d22e9a4078b",
+        "SA-724125ae32569ce9"
+      ],
+      "data_date": "2026-07-17",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [],
   "fde": [],
   "hardware": []

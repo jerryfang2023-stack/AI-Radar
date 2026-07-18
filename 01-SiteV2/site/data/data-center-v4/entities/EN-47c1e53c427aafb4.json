@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T05:24:47.187Z",
+    "generatedAt": "2026-07-18T06:46:16.044Z",
     "latestDataDate": "2026-07-18",
     "currentDate": "2026-07-18",
     "eventCount": 1250,
@@ -16,7 +16,7 @@
     "entityType": "organization_candidate",
     "typeLabel": "公司与机构",
     "aliases": [],
-    "verificationStatus": "candidate",
+    "verificationStatus": "verified",
     "datasetScopes": [
       "canonical"
     ],
@@ -27,16 +27,21 @@
     "classificationRefs": [
       "TX-technology-video_generation"
     ],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-3c2a3673eabc9a46"
+    ],
     "firstSeen": "2026-06-22",
     "lastSeen": "2026-06-23",
-    "relationIds": [],
+    "relationIds": [
+      "REL2-3939852077cfc454"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
-        "EV-473f852b374d8b1c"
+        "EV-473f852b374d8b1c",
+        "EV-bbc34d7bc9c02b6f"
       ],
       "hardware": [],
       "organizationPeople": [],
@@ -66,12 +71,72 @@
           "EN-47c1e53c427aafb4",
           "EN-2daac3672aeafcbd"
         ]
+      },
+      {
+        "id": "EV-bbc34d7bc9c02b6f",
+        "dataDate": "2026-06-11",
+        "date": "2026-06-10",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "阿里千问上线国内首个全周期高考志愿填报Agent，免费提供咨询服务",
+        "displayTags": [],
+        "entityIds": [
+          "EN-bae152c4560df38c",
+          "EN-047364b9be67f665",
+          "EN-3c2a3673eabc9a46"
+        ]
       }
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-3c2a3673eabc9a46",
+      "name": "国内首个全周期高考志愿填报",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-bbc34d7bc9c02b6f"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [],
+      "relatedEntityIds": [
+        "EN-47c1e53c427aafb4"
+      ],
+      "firstSeen": "2026-06-10",
+      "lastSeen": "2026-06-11"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-3939852077cfc454",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-47c1e53c427aafb4",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-3c2a3673eabc9a46",
+      "object_type": "entity",
+      "event_id": "EV-bbc34d7bc9c02b6f",
+      "claim_refs": [
+        "CL-82f9a33c6e075b9f",
+        "CL-9139659758440553",
+        "CL-6d08d5517a55c877"
+      ],
+      "source_refs": [
+        "SA-40a73257af3a1d52"
+      ],
+      "data_date": "2026-06-11",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [
     {
       "id": "TX-technology-video_generation",
@@ -94,12 +159,11 @@
         "EN-ec1c8f558ff61e34",
         "EN-047364b9be67f665",
         "EN-d83624eb3ab9192e",
-        "EN-925a688403e10965",
         "EN-2b6e51bec93e86c1",
         "EN-b0532e1af75cc4ab",
         "EN-01f1074bb52ff605",
         "EN-7ed9c9e7c260ed06",
-        "EN-4d09c69c19f5f67b",
+        "EN-0e008e2c06144ec8",
         "EN-bbdefa2950f49882",
         "EN-5388bc10736a0eff",
         "EN-43a340bb75b45f02",

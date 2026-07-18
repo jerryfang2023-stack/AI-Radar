@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T05:24:47.187Z",
+    "generatedAt": "2026-07-18T06:46:16.044Z",
     "latestDataDate": "2026-07-18",
     "currentDate": "2026-07-18",
     "eventCount": 1250,
@@ -16,7 +16,7 @@
     "entityType": "organization_candidate",
     "typeLabel": "公司与机构",
     "aliases": [],
-    "verificationStatus": "candidate",
+    "verificationStatus": "verified",
     "datasetScopes": [
       "canonical"
     ],
@@ -25,10 +25,14 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-20ca085ff30e9339"
+    ],
     "firstSeen": "2026-07-18",
     "lastSeen": "2026-07-18",
-    "relationIds": [],
+    "relationIds": [
+      "REL2-5f7e7f594e0053f0"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -60,8 +64,51 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-20ca085ff30e9339",
+      "name": "ZUNA1.1",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-5b0734f2957b256d"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [],
+      "relatedEntityIds": [
+        "EN-f956529816676cd1"
+      ],
+      "firstSeen": "2026-07-18",
+      "lastSeen": "2026-07-18"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-5f7e7f594e0053f0",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-f956529816676cd1",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-20ca085ff30e9339",
+      "object_type": "entity",
+      "event_id": "EV-5b0734f2957b256d",
+      "claim_refs": [
+        "CL-b64be3969ec03109",
+        "CL-5b5393973f497832",
+        "CL-f7959ebd8cf5d425"
+      ],
+      "source_refs": [
+        "SA-46056b4fc6d5abb8"
+      ],
+      "data_date": "2026-07-18",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [],
   "fde": [],
   "hardware": []

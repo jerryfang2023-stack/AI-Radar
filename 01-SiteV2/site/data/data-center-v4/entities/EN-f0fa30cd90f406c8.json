@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T05:24:47.187Z",
+    "generatedAt": "2026-07-18T06:46:16.044Z",
     "latestDataDate": "2026-07-18",
     "currentDate": "2026-07-18",
     "eventCount": 1250,
@@ -27,14 +27,10 @@
     "classificationRefs": [
       "TX-industry-telecommunications"
     ],
-    "relatedEntityIds": [
-      "EN-2ab6d53e717a0e0d"
-    ],
+    "relatedEntityIds": [],
     "firstSeen": "2026-07-15",
     "lastSeen": "2026-07-16",
-    "relationIds": [
-      "REL2-71c54fece2b75d66"
-    ],
+    "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -75,61 +71,8 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [
-    {
-      "id": "EN-2ab6d53e717a0e0d",
-      "name": "Nokia",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [
-        "诺基亚"
-      ],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-d1a3f5c8045e548d",
-        "EV-1ff169120ed385f6"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-industry-telecommunications"
-      ],
-      "relatedEntityIds": [
-        "EN-f0fa30cd90f406c8"
-      ],
-      "firstSeen": "2026-06-22",
-      "lastSeen": "2026-07-16"
-    }
-  ],
-  "relationships": [
-    {
-      "relationship_id": "REL2-71c54fece2b75d66",
-      "relationship_version": "RELATION-V2.0",
-      "subject_ref": "EN-2ab6d53e717a0e0d",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-f0fa30cd90f406c8",
-      "object_type": "entity",
-      "event_id": "EV-1ff169120ed385f6",
-      "claim_refs": [
-        "CL-acfe2b27d62beca2",
-        "CL-32ea00e5c0e5b9a8",
-        "CL-a7d807152cb083b1",
-        "CL-e6f965490c1dcfa1",
-        "CL-626cf37db7beae82",
-        "CL-cc1f4ad046ebb1ad",
-        "CL-6fda512a53d1cd8c"
-      ],
-      "source_refs": [
-        "SA-e8c659f82284238b",
-        "SA-45ffd3675e1b0986"
-      ],
-      "data_date": "2026-07-16",
-      "status": "verified"
-    }
-  ],
+  "relatedEntities": [],
+  "relationships": [],
   "taxonomyNodes": [
     {
       "id": "TX-industry-telecommunications",
@@ -157,9 +100,7 @@
         "EN-96eebba49dbbf422",
         "EN-9fbf261b62c1d7c0",
         "EN-2dc010636b9dce91",
-        "EN-23b979df49741c93",
-        "EN-02072c80a8386e8d",
-        "EN-2eb073b22916de55"
+        "EN-23b979df49741c93"
       ],
       "fdeIds": [],
       "hardwareIds": [

@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T05:24:47.187Z",
+    "generatedAt": "2026-07-18T06:46:16.044Z",
     "latestDataDate": "2026-07-18",
     "currentDate": "2026-07-18",
     "eventCount": 1250,
@@ -39,7 +39,9 @@
     "lastSeen": "2026-06-11",
     "relationIds": [
       "REL2-1bac7c6922a7a98b",
-      "REL2-d205049958061bb1"
+      "REL2-5c5311c5417a4717",
+      "REL2-d205049958061bb1",
+      "REL2-d38107a2fe8bacd9"
     ],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -143,8 +145,7 @@
           "EN-2b6e51bec93e86c1",
           "EN-8d4321d936320802",
           "EN-3db1f560db626918",
-          "EN-d56aa2f9908f566a",
-          "EN-4d09c69c19f5f67b"
+          "EN-d56aa2f9908f566a"
         ]
       }
     ],
@@ -157,7 +158,8 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "谷歌 DeepMind"
+        "谷歌 DeepMind",
+        "DeepMind"
       ],
       "verificationStatus": "verified",
       "datasetScopes": [
@@ -202,13 +204,8 @@
         "TX-technology-speech_audio"
       ],
       "relatedEntityIds": [
-        "EN-0e008e2c06144ec8",
-        "EN-4d09c69c19f5f67b",
-        "EN-7ed9c9e7c260ed06",
-        "EN-01f1074bb52ff605",
         "EN-d56aa2f9908f566a",
-        "EN-085598c00f2aaccf",
-        "EN-a3c3b987b09fc1bb"
+        "EN-085598c00f2aaccf"
       ],
       "firstSeen": "2026-06-02",
       "lastSeen": "2026-07-17"
@@ -381,46 +378,23 @@
         "TX-technology-speech_audio"
       ],
       "relatedEntityIds": [
-        "EN-e71558a14e7ed6ab",
-        "EN-7496c16a89e136e6",
-        "EN-085598c00f2aaccf",
         "EN-96eebba49dbbf422",
-        "EN-ec75c4fe965a0492",
         "EN-81e577740888ca6d",
         "EN-1229af0aa3b0305e",
-        "EN-992eafe973f69075",
         "EN-0e008e2c06144ec8",
-        "EN-01f1074bb52ff605",
-        "EN-40f98159922ab514",
-        "EN-c96163fd12452c9c",
-        "EN-5f6367300dabc238",
-        "EN-834ab0b6e4492d23",
-        "EN-dd782f5241cd7e50",
-        "EN-ffc6caa049c23d48",
-        "EN-e3db3da2b7dc6057",
-        "EN-9086d4784c07561e",
-        "EN-242e21e3dc6869a9",
-        "EN-151013fb8438c046",
-        "EN-07035a20899a7cd7",
-        "EN-77fe4e790d5bc756",
         "EN-cfe6926406f30a15",
         "EN-8d323d8bba783aa3",
         "EN-9ff1a58a589bc318",
-        "EN-3aa38718f0399af9",
+        "EN-01f1074bb52ff605",
         "EN-f2c032b19edb7900",
-        "EN-b8174ff7d1b7aada",
-        "EN-5567ce1995cc85d7",
-        "EN-fbe26af59be95e52",
+        "EN-2ab6d53e717a0e0d",
         "EN-2998f8b13f4fd72e",
-        "EN-d4c56709df757c56",
         "EN-b5c336c0dd1ff29c",
-        "EN-eb0cc8fb584389db",
         "EN-d56aa2f9908f566a",
         "EN-4baef0e41cbd7ae2",
         "EN-bdfecbcd7dbf76d2",
-        "EN-6f216f2ea5b7a13e",
-        "EN-7cf9af03694038e1",
-        "EN-3c309a993bd57962"
+        "EN-e3db3da2b7dc6057",
+        "EN-2aae0de3f5530f08"
       ],
       "firstSeen": "2026-04-12",
       "lastSeen": "2026-07-18"
@@ -449,6 +423,27 @@
       "status": "verified"
     },
     {
+      "relationship_id": "REL2-5c5311c5417a4717",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-2b6e51bec93e86c1",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-d56aa2f9908f566a",
+      "object_type": "entity",
+      "event_id": "EV-3ef3e18df61a00d8",
+      "claim_refs": [
+        "CL-b6d78e50e48afac9",
+        "CL-e10fb59f0d0c9156",
+        "CL-4f700e72ca58f13c",
+        "CL-c855d3d9abf7a3f8"
+      ],
+      "source_refs": [
+        "SA-397748b8c2545434"
+      ],
+      "data_date": "2026-06-11",
+      "status": "verified"
+    },
+    {
       "relationship_id": "REL2-d205049958061bb1",
       "relationship_version": "RELATION-V2.0",
       "subject_ref": "EN-bbdefa2950f49882",
@@ -465,6 +460,27 @@
       ],
       "source_refs": [
         "SA-397748b8c2545434"
+      ],
+      "data_date": "2026-06-11",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-d38107a2fe8bacd9",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-bbdefa2950f49882",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-d56aa2f9908f566a",
+      "object_type": "entity",
+      "event_id": "EV-568d2aeab5234e48",
+      "claim_refs": [
+        "CL-0e3152343b11ebca",
+        "CL-996c42860de8d42c",
+        "CL-917ac73263ec2d6c",
+        "CL-66d9fb66d9687af6"
+      ],
+      "source_refs": [
+        "SA-87ccc3513174eaba"
       ],
       "data_date": "2026-06-11",
       "status": "verified"
@@ -497,18 +513,17 @@
         "EN-96eebba49dbbf422",
         "EN-9e193e1ec8d75d41",
         "EN-51fd7dc086fcb858",
+        "EN-8395dc051feafc4c",
         "EN-bbf9aece05291ea4",
         "EN-bbdefa2950f49882",
         "EN-2b6e51bec93e86c1",
         "EN-b0532e1af75cc4ab",
         "EN-d56aa2f9908f566a",
         "EN-3db1f560db626918",
-        "EN-4d09c69c19f5f67b",
         "EN-6e898ad0522fca30",
         "EN-72e8088a05b38ae3",
         "EN-833cd615d86b73ca",
         "EN-ebe5ed2fc0df64de",
-        "EN-fbe26af59be95e52",
         "EN-6f549489209ee753"
       ],
       "fdeIds": [],
@@ -557,11 +572,9 @@
         "EN-bbdefa2950f49882",
         "EN-2df4d39c248116dc",
         "EN-30081094f2a8c83d",
-        "EN-d558e1de958b9d05",
         "EN-2b6e51bec93e86c1",
         "EN-8d4321d936320802",
         "EN-d56aa2f9908f566a",
-        "EN-4d09c69c19f5f67b",
         "EN-c1eb8e913000a8eb",
         "EN-0be477336d3e1a8d",
         "EN-1dc405a4cda895d0",
@@ -594,12 +607,11 @@
         "EN-ea3bd73e2b506e00",
         "EN-96eebba49dbbf422",
         "EN-534e99d81da1c54d",
-        "EN-de1afc61dd4d2cea",
+        "EN-d85ad5e8ff8e2889",
         "EN-2b6e51bec93e86c1",
         "EN-8d4321d936320802",
         "EN-3db1f560db626918",
-        "EN-d56aa2f9908f566a",
-        "EN-4d09c69c19f5f67b"
+        "EN-d56aa2f9908f566a"
       ],
       "fdeIds": [],
       "hardwareIds": [],

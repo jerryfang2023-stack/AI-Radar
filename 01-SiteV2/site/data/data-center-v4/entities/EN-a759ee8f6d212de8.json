@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T05:24:47.187Z",
+    "generatedAt": "2026-07-18T06:46:16.044Z",
     "latestDataDate": "2026-07-18",
     "currentDate": "2026-07-18",
     "eventCount": 1250,
@@ -25,10 +25,14 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-81baf57e05f11276"
+    ],
     "firstSeen": "2026-06-22",
     "lastSeen": "2026-06-23",
-    "relationIds": [],
+    "relationIds": [
+      "REL2-7cd349866749f667"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -72,8 +76,55 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-81baf57e05f11276",
+      "name": "京东",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-cf306b007f5c321b"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution"
+      ],
+      "relatedEntityIds": [
+        "EN-a759ee8f6d212de8",
+        "EN-6c959f6391a7ce86"
+      ],
+      "firstSeen": "2026-06-11",
+      "lastSeen": "2026-06-12"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-7cd349866749f667",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-81baf57e05f11276",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-a759ee8f6d212de8",
+      "object_type": "entity",
+      "event_id": "EV-03e7df67a4156fd8",
+      "claim_refs": [
+        "CL-5800e10426256754",
+        "CL-b88429af2de339b9",
+        "CL-c1226250de82c608",
+        "CL-4c8ffb4175bb1631"
+      ],
+      "source_refs": [
+        "SA-e6314973580a7d63"
+      ],
+      "data_date": "2026-06-23",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [],
   "fde": [],
   "hardware": []

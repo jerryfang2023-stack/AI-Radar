@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T05:24:47.187Z",
+    "generatedAt": "2026-07-18T06:46:16.044Z",
     "latestDataDate": "2026-07-18",
     "currentDate": "2026-07-18",
     "eventCount": 1250,
@@ -16,7 +16,7 @@
     "entityType": "organization_candidate",
     "typeLabel": "公司与机构",
     "aliases": [],
-    "verificationStatus": "candidate",
+    "verificationStatus": "verified",
     "datasetScopes": [
       "canonical"
     ],
@@ -25,10 +25,14 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-c73da23142d2205b"
+    ],
     "firstSeen": "2026-07-13",
     "lastSeen": "2026-07-13",
-    "relationIds": [],
+    "relationIds": [
+      "REL2-ace2eba80e4a1022"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -61,8 +65,52 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-c73da23142d2205b",
+      "name": "Nexus",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-47d14d0aa4d4414e"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [],
+      "relatedEntityIds": [
+        "EN-a48f75191ba3e484"
+      ],
+      "firstSeen": "2026-07-13",
+      "lastSeen": "2026-07-13"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-ace2eba80e4a1022",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-a48f75191ba3e484",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-c73da23142d2205b",
+      "object_type": "entity",
+      "event_id": "EV-47d14d0aa4d4414e",
+      "claim_refs": [
+        "CL-c9c9122cdc5e75b5",
+        "CL-6a57a8710feb8939",
+        "CL-c050f1e378d3febe",
+        "CL-2aaf0fc18ffbfb07"
+      ],
+      "source_refs": [
+        "SA-d9dba88bde0f7254"
+      ],
+      "data_date": "2026-07-13",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [],
   "fde": [],
   "hardware": [

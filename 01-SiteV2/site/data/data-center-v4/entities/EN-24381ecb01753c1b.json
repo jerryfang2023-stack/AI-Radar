@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T05:24:47.187Z",
+    "generatedAt": "2026-07-18T06:46:16.044Z",
     "latestDataDate": "2026-07-18",
     "currentDate": "2026-07-18",
     "eventCount": 1250,
@@ -25,14 +25,10 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [],
-    "relatedEntityIds": [
-      "EN-b81c8201acfc7639"
-    ],
+    "relatedEntityIds": [],
     "firstSeen": "2026-06-11",
     "lastSeen": "2026-06-12",
-    "relationIds": [
-      "REL2-b34511f516d08ba3"
-    ],
+    "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -64,83 +60,8 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [
-    {
-      "id": "EN-b81c8201acfc7639",
-      "name": "Huawei",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [
-        "华为"
-      ],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-87432dbb99cd6033",
-        "EV-5be48cce8dc4f3de",
-        "EV-9563aa162529aab0",
-        "EV-b726a9cda7beae64",
-        "EV-a9810b47e0408a05",
-        "EV-afcd5426f5c01dc7",
-        "EV-26d2874c6ce028d6",
-        "EV-b93102125cc062e3",
-        "EV-6c361125c3f50bb6",
-        "EV-8a9b12665a3e40a0",
-        "EV-2d5746e41f96c3c2",
-        "EV-26c1248692fdcc10",
-        "EV-20cdbe59ba2a1359",
-        "EV-3c51bcb5e99d2b68",
-        "EV-2ce9542169b5dfda",
-        "EV-8e6f9c324aa0b2f3",
-        "EV-0597e07d7e73051a"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-technology-code_generation",
-        "TX-industry-healthcare_life_sciences",
-        "TX-use_case-software_development",
-        "TX-technology-on_device",
-        "TX-technology-multimodal",
-        "TX-industry-media_entertainment",
-        "TX-technology-video_generation",
-        "TX-use_case-knowledge_search"
-      ],
-      "relatedEntityIds": [
-        "EN-40e307d789f77264",
-        "EN-b42e5eda1d1a3720",
-        "EN-e18cb6435603205d",
-        "EN-24381ecb01753c1b"
-      ],
-      "firstSeen": "2026-05-25",
-      "lastSeen": "2026-07-18"
-    }
-  ],
-  "relationships": [
-    {
-      "relationship_id": "REL2-b34511f516d08ba3",
-      "relationship_version": "RELATION-V2.0",
-      "subject_ref": "EN-b81c8201acfc7639",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-24381ecb01753c1b",
-      "object_type": "entity",
-      "event_id": "EV-2ce9542169b5dfda",
-      "claim_refs": [
-        "CL-c61188c3b5bb06e7",
-        "CL-dc99caf32a5e5bbf",
-        "CL-3232c17acf5ee06a",
-        "CL-130338c5508e70c3"
-      ],
-      "source_refs": [
-        "SA-fee0eb6617aa3179"
-      ],
-      "data_date": "2026-06-12",
-      "status": "verified"
-    }
-  ],
+  "relatedEntities": [],
+  "relationships": [],
   "taxonomyNodes": [],
   "fde": [],
   "hardware": []

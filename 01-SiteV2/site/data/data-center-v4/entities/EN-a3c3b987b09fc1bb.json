@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T05:24:47.187Z",
+    "generatedAt": "2026-07-18T06:46:16.044Z",
     "latestDataDate": "2026-07-18",
     "currentDate": "2026-07-18",
     "eventCount": 1250,
@@ -30,14 +30,10 @@
       "TX-technology-multimodal",
       "TX-technology-speech_audio"
     ],
-    "relatedEntityIds": [
-      "EN-2b6e51bec93e86c1"
-    ],
+    "relatedEntityIds": [],
     "firstSeen": "2026-06-04",
     "lastSeen": "2026-06-04",
-    "relationIds": [
-      "REL2-d86c4ddcfb768e0f"
-    ],
+    "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -88,7 +84,6 @@
         ],
         "entityIds": [
           "EN-2b6e51bec93e86c1",
-          "EN-4d09c69c19f5f67b",
           "EN-085598c00f2aaccf",
           "EN-a3c3b987b09fc1bb"
         ]
@@ -96,93 +91,8 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [
-    {
-      "id": "EN-2b6e51bec93e86c1",
-      "name": "Google DeepMind",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [
-        "谷歌 DeepMind"
-      ],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-6f092cfc7a064d64",
-        "EV-d4e44892226be468",
-        "EV-1ac32035d5e425e1",
-        "EV-19ebde6e2de35fc9",
-        "EV-67ef7accd26a07a0",
-        "EV-a7e1ecd212474e00",
-        "EV-d961d3ad02f6ae14",
-        "EV-7c6a9f4ee4829976",
-        "EV-93c6ccf23cc422cb",
-        "EV-5babb43f4b4d302f",
-        "EV-ff10670ad06959ec",
-        "EV-011eeba13ebcc9a8",
-        "EV-8eed6489ab514823",
-        "EV-3ef3e18df61a00d8",
-        "EV-568d2aeab5234e48",
-        "EV-f68e00bb9fd49fac",
-        "EV-3e9a0d1be6de5096",
-        "EV-e96aba142e46eba1",
-        "EV-d49da50484ba781f",
-        "EV-81e297ea6f8fde3b",
-        "EV-68edd592c36dccd3"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-technology-vision_language",
-        "TX-technology-code_generation",
-        "TX-use_case-software_development",
-        "TX-technology-mixture_of_experts",
-        "TX-technology-retrieval_augmented_generation",
-        "TX-use_case-research_science",
-        "TX-technology-multimodal",
-        "TX-industry-media_entertainment",
-        "TX-technology-video_generation",
-        "TX-technology-image_generation",
-        "TX-technology-speech_audio"
-      ],
-      "relatedEntityIds": [
-        "EN-0e008e2c06144ec8",
-        "EN-4d09c69c19f5f67b",
-        "EN-7ed9c9e7c260ed06",
-        "EN-01f1074bb52ff605",
-        "EN-d56aa2f9908f566a",
-        "EN-085598c00f2aaccf",
-        "EN-a3c3b987b09fc1bb"
-      ],
-      "firstSeen": "2026-06-02",
-      "lastSeen": "2026-07-17"
-    }
-  ],
-  "relationships": [
-    {
-      "relationship_id": "REL2-d86c4ddcfb768e0f",
-      "relationship_version": "RELATION-V2.0",
-      "subject_ref": "EN-2b6e51bec93e86c1",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-a3c3b987b09fc1bb",
-      "object_type": "entity",
-      "event_id": "EV-f68e00bb9fd49fac",
-      "claim_refs": [
-        "CL-d04784c9de8d1429",
-        "CL-035fba984bda80eb",
-        "CL-73c5596c4635da55",
-        "CL-bde1074da1e7f759"
-      ],
-      "source_refs": [
-        "SA-8de276946a27e25e"
-      ],
-      "data_date": "2026-06-04",
-      "status": "verified"
-    }
-  ],
+  "relatedEntities": [],
+  "relationships": [],
   "taxonomyNodes": [
     {
       "id": "TX-technology-code_generation",
@@ -260,10 +170,9 @@
         "EN-8d4321d936320802",
         "EN-cb4754c48f8023d0",
         "EN-761c4b9294ee43a7",
-        "EN-3969dd578ebf6c65",
+        "EN-3eee4f30151db45a",
         "EN-4adc2faea521b1f1",
         "EN-c857d09db23e6822",
-        "EN-7ec0224e483d913b",
         "EN-2d87f3d38782aa14",
         "EN-bbdefa2950f49882",
         "EN-b5251b35f15bedc4",
@@ -275,21 +184,21 @@
         "EN-c608c4787821de1b",
         "EN-ddf9916b459b6d77",
         "EN-3aca03b9bb50f158",
+        "EN-b644c0a9d493976a",
         "EN-412b57e712039032",
         "EN-6f7ac1823da81d2e",
         "EN-c27c48199bb1e14b",
         "EN-e2a93bc5095dec6c",
         "EN-0decbc3b45f73b2b",
-        "EN-a6f7e7d15269ba2d",
         "EN-45cbca5f78f1ef44",
         "EN-ce635c4eabff5e4f",
         "EN-b57c95289680078c",
         "EN-2b6e51bec93e86c1",
-        "EN-4d09c69c19f5f67b",
         "EN-085598c00f2aaccf",
         "EN-a3c3b987b09fc1bb",
         "EN-630dc133336bc266",
         "EN-c4bc2d00a42f220f",
+        "EN-0b9ca57f53ba758b",
         "EN-46a4eebd20d881ec",
         "EN-ba1269449ab76537",
         "EN-e759968ca9278b8d",
@@ -363,7 +272,7 @@
         "EN-bb5b6487f881bbb1",
         "EN-4adc2faea521b1f1",
         "EN-c857d09db23e6822",
-        "EN-7ec0224e483d913b",
+        "EN-cb4754c48f8023d0",
         "EN-2d87f3d38782aa14",
         "EN-bbdefa2950f49882",
         "EN-b5251b35f15bedc4",
@@ -375,17 +284,16 @@
         "EN-c27c48199bb1e14b",
         "EN-e2a93bc5095dec6c",
         "EN-0decbc3b45f73b2b",
-        "EN-a6f7e7d15269ba2d",
         "EN-45cbca5f78f1ef44",
         "EN-b57c95289680078c",
         "EN-2b6e51bec93e86c1",
-        "EN-4d09c69c19f5f67b",
         "EN-085598c00f2aaccf",
         "EN-a3c3b987b09fc1bb",
         "EN-1ecf93c539fcffca",
         "EN-6fcba5d96a4fadfd",
         "EN-630dc133336bc266",
-        "EN-c4bc2d00a42f220f"
+        "EN-c4bc2d00a42f220f",
+        "EN-0b9ca57f53ba758b"
       ],
       "fdeIds": [
         "FDE-2dda1b977721f467",
@@ -463,11 +371,12 @@
         "EN-c4ef31845ea79710",
         "EN-9e193e1ec8d75d41",
         "EN-51fd7dc086fcb858",
+        "EN-8395dc051feafc4c",
         "EN-2b6e51bec93e86c1",
         "EN-b0532e1af75cc4ab",
         "EN-01f1074bb52ff605",
         "EN-7ed9c9e7c260ed06",
-        "EN-4d09c69c19f5f67b",
+        "EN-0e008e2c06144ec8",
         "EN-e0bab6f6c58bfe4e",
         "EN-afe83c198e329ef2",
         "EN-1730144d4e269a62",
@@ -516,8 +425,8 @@
         "EN-2b78da3dc866654e",
         "EN-8d4321d936320802",
         "EN-12ab68e37d104d27",
+        "EN-8395dc051feafc4c",
         "EN-2b6e51bec93e86c1",
-        "EN-4d09c69c19f5f67b",
         "EN-085598c00f2aaccf",
         "EN-a3c3b987b09fc1bb",
         "EN-2c348893efb2316e",

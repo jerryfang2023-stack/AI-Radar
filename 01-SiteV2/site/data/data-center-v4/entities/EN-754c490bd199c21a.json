@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T05:24:47.187Z",
+    "generatedAt": "2026-07-18T06:46:16.044Z",
     "latestDataDate": "2026-07-18",
     "currentDate": "2026-07-18",
     "eventCount": 1250,
@@ -16,7 +16,7 @@
     "entityType": "organization_candidate",
     "typeLabel": "公司与机构",
     "aliases": [],
-    "verificationStatus": "candidate",
+    "verificationStatus": "verified",
     "datasetScopes": [
       "canonical"
     ],
@@ -28,10 +28,14 @@
       "TX-technology-embodied_ai",
       "TX-industry-media_entertainment"
     ],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-7a3ecc54829211df"
+    ],
     "firstSeen": "2026-07-09",
     "lastSeen": "2026-07-10",
-    "relationIds": [],
+    "relationIds": [
+      "REL2-858caeaed3f475f7"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -76,8 +80,55 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-7a3ecc54829211df",
+      "name": "LingBot-World 2.0",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-d633676a4a7d89a3"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-embodied_ai",
+        "TX-industry-media_entertainment"
+      ],
+      "relatedEntityIds": [
+        "EN-754c490bd199c21a"
+      ],
+      "firstSeen": "2026-07-09",
+      "lastSeen": "2026-07-10"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-858caeaed3f475f7",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-754c490bd199c21a",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-7a3ecc54829211df",
+      "object_type": "entity",
+      "event_id": "EV-d633676a4a7d89a3",
+      "claim_refs": [
+        "CL-b92e419d7a18dd98",
+        "CL-887c5dc7fbee2024",
+        "CL-dad3a52f0fc6e925",
+        "CL-d43100e1d509196e"
+      ],
+      "source_refs": [
+        "SA-9960964be69d8030"
+      ],
+      "data_date": "2026-07-10",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [
     {
       "id": "TX-technology-embodied_ai",
@@ -118,7 +169,6 @@
         "EN-2f354de778e6a6da",
         "EN-936f01f91fdadf69",
         "EN-30081094f2a8c83d",
-        "EN-d558e1de958b9d05",
         "EN-047364b9be67f665",
         "EN-67f2d22514622d1b",
         "EN-c905c4c4af8eacb0",
@@ -182,11 +232,9 @@
         "EN-bbdefa2950f49882",
         "EN-2df4d39c248116dc",
         "EN-30081094f2a8c83d",
-        "EN-d558e1de958b9d05",
         "EN-2b6e51bec93e86c1",
         "EN-8d4321d936320802",
         "EN-d56aa2f9908f566a",
-        "EN-4d09c69c19f5f67b",
         "EN-c1eb8e913000a8eb",
         "EN-0be477336d3e1a8d",
         "EN-1dc405a4cda895d0",

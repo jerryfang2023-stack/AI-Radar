@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T05:24:47.187Z",
+    "generatedAt": "2026-07-18T06:46:16.044Z",
     "latestDataDate": "2026-07-18",
     "currentDate": "2026-07-18",
     "eventCount": 1250,
@@ -16,7 +16,7 @@
     "entityType": "organization_candidate",
     "typeLabel": "公司与机构",
     "aliases": [],
-    "verificationStatus": "candidate",
+    "verificationStatus": "verified",
     "datasetScopes": [
       "canonical"
     ],
@@ -29,16 +29,21 @@
       "TX-technology-vision_language",
       "TX-use_case-robotics_automation"
     ],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-30a63b26b06e096e"
+    ],
     "firstSeen": "2026-05-18",
     "lastSeen": "2026-07-18",
-    "relationIds": [],
+    "relationIds": [
+      "REL2-cd7056034b50b8a9"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
         "EV-7fe139b107f9adc6",
+        "EV-1a073cd22d1bfa59",
         "EV-6a6ff349579765ad"
       ],
       "hardware": [],
@@ -78,6 +83,30 @@
         ]
       },
       {
+        "id": "EV-1a073cd22d1bfa59",
+        "dataDate": "2026-06-24",
+        "date": "2026-06-23",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "QQ邮箱推出Agently Mail，为AI智能体提供专属邮箱服务",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体"
+          }
+        ],
+        "entityIds": [
+          "EN-0666a703033ebd1b",
+          "EN-9c8ae69b84f21a2e",
+          "EN-30a63b26b06e096e"
+        ]
+      },
+      {
         "id": "EV-6a6ff349579765ad",
         "dataDate": "2026-05-19",
         "date": "2026-05-18",
@@ -103,8 +132,53 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-30a63b26b06e096e",
+      "name": "Agently Mail",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-1a073cd22d1bfa59"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution"
+      ],
+      "relatedEntityIds": [
+        "EN-53874092e000069b"
+      ],
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-cd7056034b50b8a9",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-53874092e000069b",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-30a63b26b06e096e",
+      "object_type": "entity",
+      "event_id": "EV-1a073cd22d1bfa59",
+      "claim_refs": [
+        "CL-3a5697d62cea7b5e",
+        "CL-acbba404b4cb7f94",
+        "CL-380ea0da32168193"
+      ],
+      "source_refs": [
+        "SA-52bf9473bad09232"
+      ],
+      "data_date": "2026-06-24",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [
     {
       "id": "TX-technology-vision_language",
@@ -202,7 +276,6 @@
         "EN-e3b1bf3dab957ffe",
         "EN-cbc62794911ff31b",
         "EN-a1b0d8a938903dc7",
-        "EN-fbe26af59be95e52",
         "EN-2b119dc14de9478d",
         "EN-522d3edeb64a7ca4",
         "EN-c608c4787821de1b",
@@ -212,7 +285,6 @@
         "EN-920510199770f4d6",
         "EN-994f9b7ac2d11473",
         "EN-30081094f2a8c83d",
-        "EN-d558e1de958b9d05",
         "EN-4e7e886400fe6a83",
         "EN-75fe8aaf5a7e3a7e",
         "EN-6fcba5d96a4fadfd",

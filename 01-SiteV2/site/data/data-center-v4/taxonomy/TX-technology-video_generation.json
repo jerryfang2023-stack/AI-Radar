@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T05:24:47.187Z",
+    "generatedAt": "2026-07-18T06:46:16.044Z",
     "latestDataDate": "2026-07-18",
     "currentDate": "2026-07-18",
     "eventCount": 1250,
@@ -31,12 +31,11 @@
       "EN-ec1c8f558ff61e34",
       "EN-047364b9be67f665",
       "EN-d83624eb3ab9192e",
-      "EN-925a688403e10965",
       "EN-2b6e51bec93e86c1",
       "EN-b0532e1af75cc4ab",
       "EN-01f1074bb52ff605",
       "EN-7ed9c9e7c260ed06",
-      "EN-4d09c69c19f5f67b",
+      "EN-0e008e2c06144ec8",
       "EN-bbdefa2950f49882",
       "EN-5388bc10736a0eff",
       "EN-43a340bb75b45f02",
@@ -781,12 +780,7 @@
         "TX-technology-video_generation",
         "TX-use_case-knowledge_search"
       ],
-      "relatedEntityIds": [
-        "EN-40e307d789f77264",
-        "EN-b42e5eda1d1a3720",
-        "EN-e18cb6435603205d",
-        "EN-24381ecb01753c1b"
-      ],
+      "relatedEntityIds": [],
       "firstSeen": "2026-05-25",
       "lastSeen": "2026-07-18"
     },
@@ -902,33 +896,13 @@
       "lastSeen": "2026-07-18"
     },
     {
-      "id": "EN-925a688403e10965",
-      "name": "Wan-Streamer v0.2",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-6fbbbfcdcec81df4"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-video_generation"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-07-17",
-      "lastSeen": "2026-07-18"
-    },
-    {
       "id": "EN-2b6e51bec93e86c1",
       "name": "Google DeepMind",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "谷歌 DeepMind"
+        "谷歌 DeepMind",
+        "DeepMind"
       ],
       "verificationStatus": "verified",
       "datasetScopes": [
@@ -973,13 +947,8 @@
         "TX-technology-speech_audio"
       ],
       "relatedEntityIds": [
-        "EN-0e008e2c06144ec8",
-        "EN-4d09c69c19f5f67b",
-        "EN-7ed9c9e7c260ed06",
-        "EN-01f1074bb52ff605",
         "EN-d56aa2f9908f566a",
-        "EN-085598c00f2aaccf",
-        "EN-a3c3b987b09fc1bb"
+        "EN-085598c00f2aaccf"
       ],
       "firstSeen": "2026-06-02",
       "lastSeen": "2026-07-17"
@@ -1075,8 +1044,7 @@
         "TX-technology-image_generation"
       ],
       "relatedEntityIds": [
-        "EN-bbdefa2950f49882",
-        "EN-2b6e51bec93e86c1"
+        "EN-bbdefa2950f49882"
       ],
       "firstSeen": "2026-07-01",
       "lastSeen": "2026-07-15"
@@ -1099,15 +1067,13 @@
         "TX-technology-multimodal",
         "TX-technology-video_generation"
       ],
-      "relatedEntityIds": [
-        "EN-2b6e51bec93e86c1"
-      ],
+      "relatedEntityIds": [],
       "firstSeen": "2026-07-01",
       "lastSeen": "2026-07-01"
     },
     {
-      "id": "EN-4d09c69c19f5f67b",
-      "name": "DeepMind",
+      "id": "EN-0e008e2c06144ec8",
+      "name": "Nano Banana",
       "entityType": "product_candidate",
       "typeLabel": "产品、模型与服务",
       "aliases": [],
@@ -1116,27 +1082,21 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-6359c9f6c2609a38",
         "EV-5babb43f4b4d302f",
-        "EV-ff10670ad06959ec",
-        "EV-568d2aeab5234e48",
-        "EV-f68e00bb9fd49fac"
+        "EV-89b644ff05e6b93b"
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-code_generation",
-        "TX-use_case-software_development",
-        "TX-technology-mixture_of_experts",
+        "TX-industry-retail_ecommerce",
         "TX-technology-multimodal",
-        "TX-industry-media_entertainment",
-        "TX-technology-video_generation",
-        "TX-technology-image_generation",
-        "TX-technology-speech_audio"
+        "TX-technology-video_generation"
       ],
       "relatedEntityIds": [
-        "EN-2b6e51bec93e86c1"
+        "EN-bbdefa2950f49882"
       ],
-      "firstSeen": "2026-06-04",
-      "lastSeen": "2026-07-01"
+      "firstSeen": "2026-07-01",
+      "lastSeen": "2026-07-16"
     },
     {
       "id": "EN-bbdefa2950f49882",
@@ -1306,46 +1266,23 @@
         "TX-technology-speech_audio"
       ],
       "relatedEntityIds": [
-        "EN-e71558a14e7ed6ab",
-        "EN-7496c16a89e136e6",
-        "EN-085598c00f2aaccf",
         "EN-96eebba49dbbf422",
-        "EN-ec75c4fe965a0492",
         "EN-81e577740888ca6d",
         "EN-1229af0aa3b0305e",
-        "EN-992eafe973f69075",
         "EN-0e008e2c06144ec8",
-        "EN-01f1074bb52ff605",
-        "EN-40f98159922ab514",
-        "EN-c96163fd12452c9c",
-        "EN-5f6367300dabc238",
-        "EN-834ab0b6e4492d23",
-        "EN-dd782f5241cd7e50",
-        "EN-ffc6caa049c23d48",
-        "EN-e3db3da2b7dc6057",
-        "EN-9086d4784c07561e",
-        "EN-242e21e3dc6869a9",
-        "EN-151013fb8438c046",
-        "EN-07035a20899a7cd7",
-        "EN-77fe4e790d5bc756",
         "EN-cfe6926406f30a15",
         "EN-8d323d8bba783aa3",
         "EN-9ff1a58a589bc318",
-        "EN-3aa38718f0399af9",
+        "EN-01f1074bb52ff605",
         "EN-f2c032b19edb7900",
-        "EN-b8174ff7d1b7aada",
-        "EN-5567ce1995cc85d7",
-        "EN-fbe26af59be95e52",
+        "EN-2ab6d53e717a0e0d",
         "EN-2998f8b13f4fd72e",
-        "EN-d4c56709df757c56",
         "EN-b5c336c0dd1ff29c",
-        "EN-eb0cc8fb584389db",
         "EN-d56aa2f9908f566a",
         "EN-4baef0e41cbd7ae2",
         "EN-bdfecbcd7dbf76d2",
-        "EN-6f216f2ea5b7a13e",
-        "EN-7cf9af03694038e1",
-        "EN-3c309a993bd57962"
+        "EN-e3db3da2b7dc6057",
+        "EN-2aae0de3f5530f08"
       ],
       "firstSeen": "2026-04-12",
       "lastSeen": "2026-07-18"
@@ -1368,6 +1305,7 @@
         "EV-47a84a0f1a85c29c",
         "EV-6c361125c3f50bb6",
         "EV-533d2da98cce1ae0",
+        "EV-8a9b12665a3e40a0",
         "EV-ee363e679d12329c",
         "EV-ad2e4fe6a149d95d",
         "EV-76aa77f5a2e7c661",
@@ -1386,13 +1324,14 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-industry-retail_ecommerce",
+        "TX-technology-on_device",
         "TX-industry-media_entertainment",
         "TX-technology-video_generation",
         "TX-technology-tool_use"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-01",
-      "lastSeen": "2026-07-14"
+      "lastSeen": "2026-07-16"
     },
     {
       "id": "EN-43a340bb75b45f02",
@@ -1429,7 +1368,7 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [],
-      "verificationStatus": "candidate",
+      "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
@@ -1440,7 +1379,9 @@
       "classificationRefs": [
         "TX-technology-video_generation"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-3c2a3673eabc9a46"
+      ],
       "firstSeen": "2026-06-22",
       "lastSeen": "2026-06-23"
     },

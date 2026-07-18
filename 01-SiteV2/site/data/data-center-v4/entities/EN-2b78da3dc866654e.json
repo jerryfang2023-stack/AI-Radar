@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T05:24:47.187Z",
+    "generatedAt": "2026-07-18T06:46:16.044Z",
     "latestDataDate": "2026-07-18",
     "currentDate": "2026-07-18",
     "eventCount": 1250,
@@ -31,14 +31,10 @@
       "TX-technology-model_context_protocol",
       "TX-technology-speech_audio"
     ],
-    "relatedEntityIds": [
-      "EN-d1ad14d4ad57d207"
-    ],
+    "relatedEntityIds": [],
     "firstSeen": "2026-06-12",
     "lastSeen": "2026-07-15",
-    "relationIds": [
-      "REL2-d6b72732c7eb9192"
-    ],
+    "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -117,7 +113,8 @@
           "EN-178e3a5167e8e1d5",
           "EN-3db1f560db626918",
           "EN-2b78da3dc866654e",
-          "EN-bd2bfbea5911ec7a"
+          "EN-bd2bfbea5911ec7a",
+          "EN-af53dbc3e443f7a9"
         ]
       },
       {
@@ -147,63 +144,8 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [
-    {
-      "id": "EN-d1ad14d4ad57d207",
-      "name": "ChatGPT",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-b925f50b55d3aa00",
-        "EV-c237f5dc53f0a923",
-        "EV-20dea13a4e6100ea",
-        "EV-0dbc7b904378f713",
-        "EV-f023e94a239f22f2",
-        "EV-0b6992ae74184d13",
-        "EV-f3e11eadfb7c6a4b",
-        "EV-519537a36355d82e"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-code_generation",
-        "TX-use_case-knowledge_search"
-      ],
-      "relatedEntityIds": [
-        "EN-7d3194f79e645c42",
-        "EN-2b78da3dc866654e"
-      ],
-      "firstSeen": "2026-06-02",
-      "lastSeen": "2026-07-18"
-    }
-  ],
-  "relationships": [
-    {
-      "relationship_id": "REL2-d6b72732c7eb9192",
-      "relationship_version": "RELATION-V2.0",
-      "subject_ref": "EN-2b78da3dc866654e",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-d1ad14d4ad57d207",
-      "object_type": "entity",
-      "event_id": "EV-20dea13a4e6100ea",
-      "claim_refs": [
-        "CL-733ae9f34bc4ab34",
-        "CL-08a6c06614e74cfc",
-        "CL-4129784bfe0eeb6f",
-        "CL-4c025988af21251e"
-      ],
-      "source_refs": [
-        "SA-1e0d34168427ca95"
-      ],
-      "data_date": "2026-07-15",
-      "status": "verified"
-    }
-  ],
+  "relatedEntities": [],
+  "relationships": [],
   "taxonomyNodes": [
     {
       "id": "TX-technology-model_context_protocol",
@@ -234,13 +176,12 @@
         "EN-d2f4e09cb01afa3c",
         "EN-e473f24d4325d51a",
         "EN-33a6331aaa822714",
-        "EN-b3b5882e4eb97824",
-        "EN-a83eedd800c2433b",
         "EN-7d3194f79e645c42",
         "EN-178e3a5167e8e1d5",
         "EN-3db1f560db626918",
         "EN-2b78da3dc866654e",
         "EN-bd2bfbea5911ec7a",
+        "EN-af53dbc3e443f7a9",
         "EN-916a98f0fa2a39af",
         "EN-d6d6e4e33c59b45e",
         "EN-caf559f7830b566f",
@@ -277,8 +218,8 @@
         "EN-2b78da3dc866654e",
         "EN-8d4321d936320802",
         "EN-12ab68e37d104d27",
+        "EN-8395dc051feafc4c",
         "EN-2b6e51bec93e86c1",
-        "EN-4d09c69c19f5f67b",
         "EN-085598c00f2aaccf",
         "EN-a3c3b987b09fc1bb",
         "EN-2c348893efb2316e",

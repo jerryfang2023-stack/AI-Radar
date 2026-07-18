@@ -30,6 +30,13 @@ Every public `RELATION-V2.0` row must have:
 
 Allowed predicates are `publishes`, `partners_with`, `acquires`, `serves`, `deployed_in`, and `supplies_hardware_to`. Tags and facet co-occurrence cannot independently create a relationship.
 
+## Catalog review boundary
+
+- Model and search outputs remain advisory until an explicit reviewer records an accepted decision in `entity-catalog-review-decisions.json`.
+- Accepted decisions may confirm, correct, merge, or quarantine an entity in the rebuildable Entity History serving projection; historical V4 bundles remain unchanged.
+- A corrected product-company mapping creates a public `publishes` relationship only when its accepted Claim references and SourceArtifact-backed event contain an explicit publication action.
+- Secondary-search pages without an accepted canonical Claim may support quarantine or a reviewed display correction, but cannot independently create a formal relationship.
+
 ## Frontstage boundary
 
 - The sidebar remains unchanged.

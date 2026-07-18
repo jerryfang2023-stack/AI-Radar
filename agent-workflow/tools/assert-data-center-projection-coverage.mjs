@@ -35,7 +35,7 @@ function normalizeName(value = "") {
   return String(value).normalize("NFKC").toLocaleLowerCase().replace(/\s+/gu, " ").trim();
 }
 
-export function evaluateProjectionCoverage(bundle, frontstage, expectedDate) {
+export function evaluateProjectionCoverage(bundle, frontstage, expectedDate, reviewLedger = {}) {
   const failures = [];
   const warnings = [];
   if (!bundle || !frontstage) {
@@ -57,15 +57,39 @@ export function evaluateProjectionCoverage(bundle, frontstage, expectedDate) {
   const mentionedEntityIds = new Set(mentions.map((item) => item.entity_id).filter(Boolean));
   const acceptedEvents = events.filter((item) => ["verified", "partial"].includes(item.publication_status));
   const eventEntityIds = new Set(acceptedEvents.flatMap((item) => item.entities || []).filter(Boolean));
-  const participatingVerifiedOrganizations = entities.filter((item) => (
+  const reviewById = new Map((reviewLedger.decisions || []).map((decision) => [decision.entity_id, decision]));
+  const resolveReviewedId = (entityId) => {
+    const seen = new Set();
+    let resolved = entityId;
+    while (reviewById.get(resolved)?.action === "merge" && !seen.has(resolved)) {
+      seen.add(resolved);
+      resolved = reviewById.get(resolved).merge_into_entity_id;
+    }
+    return resolved;
+  };
+  const reviewedEntity = (item) => {
+    const decision = reviewById.get(item.entity_id);
+    if (decision?.action === "quarantine") return null;
+    const reviewedType = { company: "organization_candidate", product: "product_candidate", person: "person_candidate" }[decision?.canonical?.catalog_type];
+    return {
+      ...item,
+      entity_id: resolveReviewedId(item.entity_id),
+      canonical_name: decision?.canonical?.name || item.canonical_name,
+      entity_type: reviewedType || item.entity_type,
+      verification_status: decision ? "verified" : item.verification_status,
+    };
+  };
+  const uniqueReviewedEntities = (rows) => [...new Map(rows.filter(Boolean).map((item) => [item.entity_id, item])).values()];
+  const participatingEntities = uniqueReviewedEntities(entities
+    .filter((item) => eventEntityIds.has(item.entity_id))
+    .map(reviewedEntity));
+  const participatingVerifiedOrganizations = participatingEntities.filter((item) => (
     item.entity_type === "organization_candidate"
     && item.verification_status === "verified"
-    && eventEntityIds.has(item.entity_id)
   ));
-  const participatingVerifiedProducts = entities.filter((item) => (
+  const participatingVerifiedProducts = participatingEntities.filter((item) => (
     item.entity_type === "product_candidate"
     && item.verification_status === "verified"
-    && eventEntityIds.has(item.entity_id)
   ));
 
   const companyIds = new Set((frontstage.companies || []).map((item) => item.id).filter(Boolean));
@@ -197,7 +221,13 @@ function runFixtures() {
   };
   const passed = evaluateProjectionCoverage(bundle, frontstage, "2026-07-17");
   const failed = evaluateProjectionCoverage(bundle, { ...frontstage, companies: [] }, "2026-07-17");
-  if (!passed.ok || failed.ok) throw new Error("projection coverage fixtures failed");
+  const quarantined = evaluateProjectionCoverage({
+    ...bundle,
+    entities: [{ ...entity, entity_type: "product_candidate" }],
+  }, { ...frontstage, companies: [], products: [] }, "2026-07-17", {
+    decisions: [{ entity_id: "EN-1", action: "quarantine", canonical: { catalog_type: "other" } }],
+  });
+  if (!passed.ok || failed.ok || !quarantined.ok) throw new Error("projection coverage fixtures failed");
   console.log(JSON.stringify({ ok: true, fixture: "data-center-projection-coverage" }, null, 2));
 }
 
@@ -205,7 +235,8 @@ function main() {
   if (fixtureMode) return runFixtures();
   const bundle = loadBundle();
   const frontstage = readJson(path.join(root, "01-SiteV2", "site", "data", "data-center-v4-frontstage.json"), null);
-  const result = evaluateProjectionCoverage(bundle, frontstage, date);
+  const reviewLedger = readJson(path.join(root, "01-SiteV2", "content", "11-databases", "entity-history-v1", "entity-catalog-review-decisions.json"), {});
+  const result = evaluateProjectionCoverage(bundle, frontstage, date, reviewLedger);
   const report = writeReport(result);
   console.log(JSON.stringify({
     ok: result.ok,

@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T05:24:47.187Z",
+    "generatedAt": "2026-07-18T06:46:16.044Z",
     "latestDataDate": "2026-07-18",
     "currentDate": "2026-07-18",
     "eventCount": 1250,
@@ -16,7 +16,7 @@
     "entityType": "organization_candidate",
     "typeLabel": "公司与机构",
     "aliases": [],
-    "verificationStatus": "candidate",
+    "verificationStatus": "verified",
     "datasetScopes": [
       "canonical"
     ],
@@ -25,10 +25,14 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-efe10579b49d54d9"
+    ],
     "firstSeen": "2026-06-14",
     "lastSeen": "2026-06-14",
-    "relationIds": [],
+    "relationIds": [
+      "REL2-5fbc084b8b085ce8"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -70,8 +74,52 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-efe10579b49d54d9",
+      "name": "AI Platform",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [
+        "Launches Its AI"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-d064939235825765"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [],
+      "relatedEntityIds": [
+        "EN-dfc0fdff7af68ed2"
+      ],
+      "firstSeen": "2026-06-14",
+      "lastSeen": "2026-06-14"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-5fbc084b8b085ce8",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-dfc0fdff7af68ed2",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-efe10579b49d54d9",
+      "object_type": "entity",
+      "event_id": "EV-d064939235825765",
+      "claim_refs": [
+        "CL-a0dc064228e2280a",
+        "CL-05962c7be259e6cd"
+      ],
+      "source_refs": [
+        "SA-ef685d087f4b8571"
+      ],
+      "data_date": "2026-06-14",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [],
   "fde": [],
   "hardware": []

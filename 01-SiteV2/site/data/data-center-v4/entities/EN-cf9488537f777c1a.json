@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T05:24:47.187Z",
+    "generatedAt": "2026-07-18T06:46:16.044Z",
     "latestDataDate": "2026-07-18",
     "currentDate": "2026-07-18",
     "eventCount": 1250,
@@ -15,7 +15,9 @@
     "name": "TYLsemi",
     "entityType": "organization_candidate",
     "typeLabel": "公司与机构",
-    "aliases": [],
+    "aliases": [
+      "AI Silicon"
+    ],
     "verificationStatus": "verified",
     "datasetScopes": [
       "canonical"
@@ -32,16 +34,12 @@
     ],
     "relatedEntityIds": [
       "EN-94c93b5ab886f2d9",
-      "EN-ba961b5c6d1aee29",
-      "EN-74beb25bdfe7bdd1",
       "EN-38f4d27a18084522"
     ],
     "firstSeen": "2026-07-14",
     "lastSeen": "2026-07-17",
     "relationIds": [
       "REL2-961a26b288bad0ab",
-      "REL2-b7908439a548e4a2",
-      "REL2-c24ac7085da6308b",
       "REL2-d031f54c65d99493"
     ],
     "groupedEventIds": {
@@ -138,7 +136,6 @@
         "entityIds": [
           "EN-cf9488537f777c1a",
           "EN-38f4d27a18084522",
-          "EN-74beb25bdfe7bdd1",
           "EN-94c93b5ab886f2d9"
         ]
       }
@@ -149,52 +146,6 @@
     {
       "id": "EN-94c93b5ab886f2d9",
       "name": "First Full-Stack Chiplet",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-5f718c76c285ac9b"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-industry-manufacturing"
-      ],
-      "relatedEntityIds": [
-        "EN-cf9488537f777c1a"
-      ],
-      "firstSeen": "2026-07-14",
-      "lastSeen": "2026-07-15"
-    },
-    {
-      "id": "EN-ba961b5c6d1aee29",
-      "name": "Custom",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-dfbc2f02003c7595"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution"
-      ],
-      "relatedEntityIds": [
-        "EN-cf9488537f777c1a"
-      ],
-      "firstSeen": "2026-07-06",
-      "lastSeen": "2026-07-06"
-    },
-    {
-      "id": "EN-74beb25bdfe7bdd1",
-      "name": "AI Silicon",
       "entityType": "product_candidate",
       "typeLabel": "产品、模型与服务",
       "aliases": [],
@@ -247,48 +198,6 @@
       "subject_type": "entity",
       "predicate": "publishes",
       "object_ref": "EN-94c93b5ab886f2d9",
-      "object_type": "entity",
-      "event_id": "EV-5f718c76c285ac9b",
-      "claim_refs": [
-        "CL-bb89b2f344ac2037",
-        "CL-98cdae07134fa042",
-        "CL-e76a8dabda824337",
-        "CL-8b941b4cf3279dc5"
-      ],
-      "source_refs": [
-        "SA-8368bad4f79b26ba"
-      ],
-      "data_date": "2026-07-15",
-      "status": "verified"
-    },
-    {
-      "relationship_id": "REL2-b7908439a548e4a2",
-      "relationship_version": "RELATION-V2.0",
-      "subject_ref": "EN-cf9488537f777c1a",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-ba961b5c6d1aee29",
-      "object_type": "entity",
-      "event_id": "EV-5f718c76c285ac9b",
-      "claim_refs": [
-        "CL-bb89b2f344ac2037",
-        "CL-98cdae07134fa042",
-        "CL-e76a8dabda824337",
-        "CL-8b941b4cf3279dc5"
-      ],
-      "source_refs": [
-        "SA-8368bad4f79b26ba"
-      ],
-      "data_date": "2026-07-15",
-      "status": "verified"
-    },
-    {
-      "relationship_id": "REL2-c24ac7085da6308b",
-      "relationship_version": "RELATION-V2.0",
-      "subject_ref": "EN-cf9488537f777c1a",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-74beb25bdfe7bdd1",
       "object_type": "entity",
       "event_id": "EV-5f718c76c285ac9b",
       "claim_refs": [
@@ -397,7 +306,6 @@
         "EN-e3b1bf3dab957ffe",
         "EN-cf9488537f777c1a",
         "EN-38f4d27a18084522",
-        "EN-74beb25bdfe7bdd1",
         "EN-94c93b5ab886f2d9",
         "EN-ce635c4eabff5e4f",
         "EN-ab9e3beebd83960d",
@@ -405,8 +313,6 @@
         "EN-2a920347dfcf07a7",
         "EN-2dc010636b9dce91",
         "EN-23b979df49741c93",
-        "EN-02072c80a8386e8d",
-        "EN-2eb073b22916de55",
         "EN-4a639cb888a15d75",
         "EN-56ee86045cfb0ddd",
         "EN-9dde0c2d375060f6",
@@ -499,21 +405,16 @@
         "EN-6f7ac1823da81d2e",
         "EN-86acdf589a6723d5",
         "EN-ebe5ed2fc0df64de",
-        "EN-fbe26af59be95e52",
         "EN-6f549489209ee753",
         "EN-61cce404a45c3545",
         "EN-2a920347dfcf07a7",
         "EN-2dc010636b9dce91",
         "EN-23b979df49741c93",
-        "EN-02072c80a8386e8d",
-        "EN-2eb073b22916de55",
         "EN-4a639cb888a15d75",
         "EN-56ee86045cfb0ddd",
         "EN-9dde0c2d375060f6",
         "EN-ea3bd73e2b506e00",
         "EN-a19ad969c84178e9",
-        "EN-668a3f52e25f8f4c",
-        "EN-9eb42ffb4942bcc2",
         "EN-b6e23938808f272d"
       ],
       "fdeIds": [

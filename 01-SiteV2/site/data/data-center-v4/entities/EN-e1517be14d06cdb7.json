@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T05:24:47.187Z",
+    "generatedAt": "2026-07-18T06:46:16.044Z",
     "latestDataDate": "2026-07-18",
     "currentDate": "2026-07-18",
     "eventCount": 1250,
@@ -31,13 +31,11 @@
       "TX-technology-multimodal"
     ],
     "relatedEntityIds": [
-      "EN-cf5378a2305a999f",
       "EN-cf81a61e4eaef17c"
     ],
     "firstSeen": "2026-06-01",
     "lastSeen": "2026-07-09",
     "relationIds": [
-      "REL2-07bf8587edb48e95",
       "REL2-a01e1f1fdf22a3e4",
       "REL2-aedca968ec6469f3",
       "REL2-949bfe8ea8e326ed"
@@ -150,27 +148,6 @@
   },
   "relatedEntities": [
     {
-      "id": "EN-cf5378a2305a999f",
-      "name": "Chinese AI",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-9da9d755019f241f"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [],
-      "relatedEntityIds": [
-        "EN-e1517be14d06cdb7"
-      ],
-      "firstSeen": "2026-07-09",
-      "lastSeen": "2026-07-09"
-    },
-    {
       "id": "EN-cf81a61e4eaef17c",
       "name": "M3",
       "entityType": "product_candidate",
@@ -197,27 +174,6 @@
     }
   ],
   "relationships": [
-    {
-      "relationship_id": "REL2-07bf8587edb48e95",
-      "relationship_version": "RELATION-V2.0",
-      "subject_ref": "EN-e1517be14d06cdb7",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-cf5378a2305a999f",
-      "object_type": "entity",
-      "event_id": "EV-9da9d755019f241f",
-      "claim_refs": [
-        "CL-5b1c1ec9e1d977ba",
-        "CL-bdf2be420c647faa",
-        "CL-837ef054f32e38ca",
-        "CL-c7052e949737c57a"
-      ],
-      "source_refs": [
-        "SA-9e9d9b0a5226d7b5"
-      ],
-      "data_date": "2026-07-09",
-      "status": "verified"
-    },
     {
       "relationship_id": "REL2-a01e1f1fdf22a3e4",
       "relationship_version": "RELATION-V2.0",
@@ -350,11 +306,12 @@
         "EN-c4ef31845ea79710",
         "EN-9e193e1ec8d75d41",
         "EN-51fd7dc086fcb858",
+        "EN-8395dc051feafc4c",
         "EN-2b6e51bec93e86c1",
         "EN-b0532e1af75cc4ab",
         "EN-01f1074bb52ff605",
         "EN-7ed9c9e7c260ed06",
-        "EN-4d09c69c19f5f67b",
+        "EN-0e008e2c06144ec8",
         "EN-e0bab6f6c58bfe4e",
         "EN-afe83c198e329ef2",
         "EN-1730144d4e269a62",

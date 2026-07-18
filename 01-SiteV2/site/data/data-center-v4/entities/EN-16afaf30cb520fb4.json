@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T05:24:47.187Z",
+    "generatedAt": "2026-07-18T06:46:16.044Z",
     "latestDataDate": "2026-07-18",
     "currentDate": "2026-07-18",
     "eventCount": 1250,
@@ -12,10 +12,12 @@
   },
   "entity": {
     "id": "EN-16afaf30cb520fb4",
-    "name": "AI Pro AI",
+    "name": "ER939-AI Pro",
     "entityType": "product_candidate",
     "typeLabel": "产品、模型与服务",
-    "aliases": [],
+    "aliases": [
+      "AI Pro AI"
+    ],
     "verificationStatus": "verified",
     "datasetScopes": [
       "canonical"
@@ -25,10 +27,14 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-a585f0fe5d2e7895"
+    ],
     "firstSeen": "2026-06-15",
     "lastSeen": "2026-06-15",
-    "relationIds": [],
+    "relationIds": [
+      "REL2-aa07eb5a96bb979b"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -61,8 +67,51 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-a585f0fe5d2e7895",
+      "name": "MINIX",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-ea81ac7de65b0c07",
+        "EV-ff6f1c1ecaa100a0"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [],
+      "relatedEntityIds": [
+        "EN-16afaf30cb520fb4"
+      ],
+      "firstSeen": "2026-06-15",
+      "lastSeen": "2026-06-15"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-aa07eb5a96bb979b",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-a585f0fe5d2e7895",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-16afaf30cb520fb4",
+      "object_type": "entity",
+      "event_id": "EV-ea81ac7de65b0c07",
+      "claim_refs": [
+        "CL-2dfe2a5e12ed9d33",
+        "CL-1619d19bfb89e437"
+      ],
+      "source_refs": [
+        "SA-01a2a542f8cbc443"
+      ],
+      "data_date": "2026-06-15",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [],
   "fde": [],
   "hardware": [

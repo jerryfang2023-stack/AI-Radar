@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T05:24:47.187Z",
+    "generatedAt": "2026-07-18T06:46:16.044Z",
     "latestDataDate": "2026-07-18",
     "currentDate": "2026-07-18",
     "eventCount": 1250,
@@ -16,7 +16,7 @@
     "entityType": "organization_candidate",
     "typeLabel": "公司与机构",
     "aliases": [],
-    "verificationStatus": "candidate",
+    "verificationStatus": "verified",
     "datasetScopes": [
       "canonical"
     ],
@@ -27,10 +27,14 @@
     "classificationRefs": [
       "TX-technology-vision_language"
     ],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-24dcf762a3ebce39"
+    ],
     "firstSeen": "2026-06-13",
     "lastSeen": "2026-06-14",
-    "relationIds": [],
+    "relationIds": [
+      "REL2-3118999302b954f5"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -75,8 +79,54 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-24dcf762a3ebce39",
+      "name": "天枢领航",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-0259aae5ef9e83cd"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-vision_language"
+      ],
+      "relatedEntityIds": [
+        "EN-7117fa8d72fb99b9"
+      ],
+      "firstSeen": "2026-06-13",
+      "lastSeen": "2026-06-14"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-3118999302b954f5",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-7117fa8d72fb99b9",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-24dcf762a3ebce39",
+      "object_type": "entity",
+      "event_id": "EV-0259aae5ef9e83cd",
+      "claim_refs": [
+        "CL-c8f8abeb7dd35e7e",
+        "CL-42f70ec26cd5d0d9",
+        "CL-0716bbba0dbedec3",
+        "CL-d163dfdeaf1347ee"
+      ],
+      "source_refs": [
+        "SA-69220f26a925f51b"
+      ],
+      "data_date": "2026-06-14",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [
     {
       "id": "TX-technology-vision_language",

@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T05:24:47.187Z",
+    "generatedAt": "2026-07-18T06:46:16.044Z",
     "latestDataDate": "2026-07-18",
     "currentDate": "2026-07-18",
     "eventCount": 1250,
@@ -12,10 +12,12 @@
   },
   "entity": {
     "id": "EN-e9830c30bc572802",
-    "name": "全球首款动态数据流 AI 芯片",
+    "name": "理想马赫M100",
     "entityType": "product_candidate",
     "typeLabel": "产品、模型与服务",
-    "aliases": [],
+    "aliases": [
+      "全球首款动态数据流 AI 芯片"
+    ],
     "verificationStatus": "verified",
     "datasetScopes": [
       "canonical"
@@ -27,10 +29,14 @@
     "classificationRefs": [
       "TX-technology-embodied_ai"
     ],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-d3c20bd565303d39"
+    ],
     "firstSeen": "2026-06-15",
     "lastSeen": "2026-06-16",
-    "relationIds": [],
+    "relationIds": [
+      "REL2-832f07f7596b011a"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -75,8 +81,52 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-d3c20bd565303d39",
+      "name": "理想汽车",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-82c011d072698773"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [],
+      "relatedEntityIds": [
+        "EN-e9830c30bc572802"
+      ],
+      "firstSeen": "2026-06-15",
+      "lastSeen": "2026-06-16"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-832f07f7596b011a",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-d3c20bd565303d39",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-e9830c30bc572802",
+      "object_type": "entity",
+      "event_id": "EV-e2d4132c671e3d41",
+      "claim_refs": [
+        "CL-b676343f7dedcf37",
+        "CL-686e36f03a60435e",
+        "CL-747739bb5e2ca184",
+        "CL-ca044777717424e5"
+      ],
+      "source_refs": [
+        "SA-d14140302df48bf5"
+      ],
+      "data_date": "2026-06-16",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [
     {
       "id": "TX-technology-embodied_ai",
@@ -117,7 +167,6 @@
         "EN-2f354de778e6a6da",
         "EN-936f01f91fdadf69",
         "EN-30081094f2a8c83d",
-        "EN-d558e1de958b9d05",
         "EN-047364b9be67f665",
         "EN-67f2d22514622d1b",
         "EN-c905c4c4af8eacb0",

@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T05:24:47.187Z",
+    "generatedAt": "2026-07-18T06:46:16.044Z",
     "latestDataDate": "2026-07-18",
     "currentDate": "2026-07-18",
     "eventCount": 1250,
@@ -25,10 +25,14 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-cd6362472aea60ef"
+    ],
     "firstSeen": "2026-06-30",
     "lastSeen": "2026-07-01",
-    "relationIds": [],
+    "relationIds": [
+      "REL2-a95d865ecb2fbc95"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -67,8 +71,51 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-cd6362472aea60ef",
+      "name": "美团",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-50853632f4b54972"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [],
+      "relatedEntityIds": [
+        "EN-8992f4a61a19a74b"
+      ],
+      "firstSeen": "2026-06-30",
+      "lastSeen": "2026-07-01"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-a95d865ecb2fbc95",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-cd6362472aea60ef",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-8992f4a61a19a74b",
+      "object_type": "entity",
+      "event_id": "EV-50853632f4b54972",
+      "claim_refs": [
+        "CL-bdc51ac046a759bd",
+        "CL-3918c79bf6fe9714",
+        "CL-8a0fd635b5b314bd"
+      ],
+      "source_refs": [
+        "SA-bbfba84596a3fcc1"
+      ],
+      "data_date": "2026-07-01",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [],
   "fde": [],
   "hardware": []

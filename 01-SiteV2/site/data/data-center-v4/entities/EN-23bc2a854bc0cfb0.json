@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T05:24:47.187Z",
+    "generatedAt": "2026-07-18T06:46:16.044Z",
     "latestDataDate": "2026-07-18",
     "currentDate": "2026-07-18",
     "eventCount": 1250,
@@ -25,10 +25,14 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-b5251b35f15bedc4"
+    ],
     "firstSeen": "2026-06-13",
     "lastSeen": "2026-06-14",
-    "relationIds": [],
+    "relationIds": [
+      "REL2-fd08f8e3ae8e8b5a"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -72,8 +76,82 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-b5251b35f15bedc4",
+      "name": "Moonshot AI",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "Kimi"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-5be48cce8dc4f3de",
+        "EV-0e4bddfd5c129618",
+        "EV-fd21441fb6e143c3",
+        "EV-0d5a32aca724d30e",
+        "EV-1b03e5dff76a50a1",
+        "EV-5caf7f83664b1a2c",
+        "EV-2cb9dbed2b2b6077",
+        "EV-75002e9da530c90b",
+        "EV-77042592591657bf",
+        "EV-6af31d42885e0361",
+        "EV-8e6f9c324aa0b2f3",
+        "EV-e878e56967902718",
+        "EV-e9a86c47da229331",
+        "EV-773ffcc6e1df56fa",
+        "EV-74b965de27bc0515"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-financial_services",
+        "TX-technology-vision_language",
+        "TX-technology-code_generation",
+        "TX-use_case-software_development",
+        "TX-technology-long_context",
+        "TX-technology-retrieval_augmented_generation",
+        "TX-technology-open_weights",
+        "TX-technology-multimodal"
+      ],
+      "relatedEntityIds": [
+        "EN-607964040e4b62e0",
+        "EN-3a7bd3e2360a3d29",
+        "EN-2cfed21b7a971267",
+        "EN-23bc2a854bc0cfb0",
+        "EN-b57c95289680078c"
+      ],
+      "firstSeen": "2026-05-19",
+      "lastSeen": "2026-07-18"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-fd08f8e3ae8e8b5a",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-b5251b35f15bedc4",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-23bc2a854bc0cfb0",
+      "object_type": "entity",
+      "event_id": "EV-2cb9dbed2b2b6077",
+      "claim_refs": [
+        "CL-fabe10d92e0fd9bf",
+        "CL-3baa89c0a5c4b8da",
+        "CL-876e0fc93c576154",
+        "CL-527d08ef88c8ca78"
+      ],
+      "source_refs": [
+        "SA-be99f27322d076ab"
+      ],
+      "data_date": "2026-06-14",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [],
   "fde": [],
   "hardware": []

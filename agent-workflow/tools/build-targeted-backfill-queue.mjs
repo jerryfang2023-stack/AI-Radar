@@ -14,6 +14,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..")
 const canonicalRoot = path.join(root, "01-SiteV2/content/11-databases/data-center-v4");
 const outputDir = path.join(root, "01-SiteV2/content/11-databases/targeted-backfill-v1");
 const queueFile = path.join(outputDir, "queue.json");
+const reviewDecisionsFile = path.join(root, "01-SiteV2/content/11-databases/entity-history-v1/entity-catalog-review-decisions.json");
 
 const args = new Map(process.argv.slice(2).map((arg) => {
   const [key, ...rest] = arg.replace(/^--/u, "").split("=");
@@ -82,7 +83,13 @@ const eventRecords = buildEventRecords({
 });
 const eventsById = new Map(eventRecords.map((event) => [event.id, event]));
 const fde = projectFdeRows(collectRows("fde-records", "fde_id"), eventsById);
-const entityHistory = buildEntityHistoryService({ entityRows, events: eventRecords, fdeRecords: fde, hardwareRecords: [] });
+const entityHistory = buildEntityHistoryService({
+  entityRows,
+  events: eventRecords,
+  fdeRecords: fde,
+  hardwareRecords: [],
+  reviewDecisions: readJson(reviewDecisionsFile, { decisions: [] })
+});
 const collections = buildEntityCollections(entityHistory, eventsById);
 const currentDate = eventRecords.map((event) => event.dataDate).filter(Boolean).sort().at(-1) || "";
 const data = {

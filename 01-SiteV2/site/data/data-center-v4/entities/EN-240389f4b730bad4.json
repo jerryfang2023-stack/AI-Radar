@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T05:24:47.187Z",
+    "generatedAt": "2026-07-18T06:46:16.044Z",
     "latestDataDate": "2026-07-18",
     "currentDate": "2026-07-18",
     "eventCount": 1250,
@@ -16,7 +16,7 @@
     "entityType": "organization_candidate",
     "typeLabel": "公司与机构",
     "aliases": [],
-    "verificationStatus": "candidate",
+    "verificationStatus": "verified",
     "datasetScopes": [
       "canonical"
     ],
@@ -29,10 +29,14 @@
     "classificationRefs": [
       "TX-technology-open_weights"
     ],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-630d75372b4d1eb5"
+    ],
     "firstSeen": "2026-05-23",
     "lastSeen": "2026-06-18",
-    "relationIds": [],
+    "relationIds": [
+      "REL2-167c0532a4569d1d"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [
         "EV-a00763037a94d512",
@@ -41,12 +45,30 @@
       ],
       "deployments": [],
       "partnerships": [],
-      "productsServices": [],
+      "productsServices": [
+        "EV-e62f69c0601488d1"
+      ],
       "hardware": [],
       "organizationPeople": [],
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-e62f69c0601488d1",
+        "dataDate": "2026-07-18",
+        "date": "2026-07-17",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "AMD 在 ROCm 7.14 中新增支持 Ryzen AI MAX PRO 400 系列处理器",
+        "displayTags": [],
+        "entityIds": [
+          "EN-630d75372b4d1eb5",
+          "EN-6066d80012446517"
+        ]
+      },
       {
         "id": "EV-a00763037a94d512",
         "dataDate": "2026-06-18",
@@ -124,8 +146,55 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-630d75372b4d1eb5",
+      "name": "Ryzen AI MAX PRO 400",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [
+        "AI MAX PRO 400",
+        "Ryzen AI MAX PRO"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-e62f69c0601488d1"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [],
+      "relatedEntityIds": [
+        "EN-240389f4b730bad4"
+      ],
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-18"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-167c0532a4569d1d",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-240389f4b730bad4",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-630d75372b4d1eb5",
+      "object_type": "entity",
+      "event_id": "EV-e62f69c0601488d1",
+      "claim_refs": [
+        "CL-7d48a848272f329d",
+        "CL-f931dc75580e0776",
+        "CL-00b4ec8c054d2146",
+        "CL-0a453ae27b7c1567"
+      ],
+      "source_refs": [
+        "SA-ec3f048187370925"
+      ],
+      "data_date": "2026-07-18",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [
     {
       "id": "TX-technology-open_weights",
@@ -160,16 +229,15 @@
         "EN-2b5e92d1908d42f6",
         "EN-8d4321d936320802",
         "EN-3ae50afab3e392b8",
+        "EN-8395dc051feafc4c",
         "EN-b3e3bce83d29e787",
-        "EN-9855ef88d183e07b",
-        "EN-049e948563e03e97",
         "EN-8950d72f381130ac",
+        "EN-049e948563e03e97",
         "EN-f7a386a451b79627",
         "EN-bc1fc5140040180e",
         "EN-12ab68e37d104d27",
         "EN-c608c4787821de1b",
-        "EN-9c8ae69b84f21a2e",
-        "EN-6ac6ad44bb9995ca"
+        "EN-9c8ae69b84f21a2e"
       ],
       "fdeIds": [],
       "hardwareIds": [],

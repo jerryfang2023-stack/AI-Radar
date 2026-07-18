@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T05:24:47.187Z",
+    "generatedAt": "2026-07-18T06:46:16.044Z",
     "latestDataDate": "2026-07-18",
     "currentDate": "2026-07-18",
     "eventCount": 1250,
@@ -27,14 +27,10 @@
     "classificationRefs": [
       "TX-use_case-knowledge_search"
     ],
-    "relatedEntityIds": [
-      "EN-3f726694f178ed7a"
-    ],
+    "relatedEntityIds": [],
     "firstSeen": "2026-07-15",
     "lastSeen": "2026-07-16",
-    "relationIds": [
-      "REL2-9436eb4ceea7a526"
-    ],
+    "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -69,71 +65,15 @@
           "EN-3f726694f178ed7a",
           "EN-45e0ade11fed1e44",
           "EN-1e68d267df86aa4c",
-          "EN-9d93b78264eb6acb"
+          "EN-9d93b78264eb6acb",
+          "EN-d8fbfdb6a8143da8"
         ]
       }
     ],
     "viewpoints": []
   },
-  "relatedEntities": [
-    {
-      "id": "EN-3f726694f178ed7a",
-      "name": "Kingsoft Office",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [
-        "金山办公"
-      ],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-385dc1ac09a211bd",
-        "EV-702ed039940800fb",
-        "EV-d2c1c077a2102f35",
-        "EV-ad8f847d403433f7",
-        "EV-ae4561a4a9ebe17f"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-technology-multimodal",
-        "TX-use_case-knowledge_search"
-      ],
-      "relatedEntityIds": [
-        "EN-d8fbfdb6a8143da8",
-        "EN-9d93b78264eb6acb",
-        "EN-1e68d267df86aa4c",
-        "EN-26e4951af4490c21"
-      ],
-      "firstSeen": "2026-06-11",
-      "lastSeen": "2026-07-17"
-    }
-  ],
-  "relationships": [
-    {
-      "relationship_id": "REL2-9436eb4ceea7a526",
-      "relationship_version": "RELATION-V2.0",
-      "subject_ref": "EN-3f726694f178ed7a",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-1e68d267df86aa4c",
-      "object_type": "entity",
-      "event_id": "EV-702ed039940800fb",
-      "claim_refs": [
-        "CL-c925bbad2b823d08",
-        "CL-5fd685ea5e45fab9",
-        "CL-465a68f25ab3c791",
-        "CL-9331e22d2beb68e3"
-      ],
-      "source_refs": [
-        "SA-c82c09f4581c09fc"
-      ],
-      "data_date": "2026-07-16",
-      "status": "verified"
-    }
-  ],
+  "relatedEntities": [],
+  "relationships": [],
   "taxonomyNodes": [
     {
       "id": "TX-use_case-knowledge_search",
@@ -154,9 +94,9 @@
         "EN-45e0ade11fed1e44",
         "EN-1e68d267df86aa4c",
         "EN-9d93b78264eb6acb",
+        "EN-d8fbfdb6a8143da8",
         "EN-b81c8201acfc7639",
         "EN-82eaaba81d9dcc54",
-        "EN-b42e5eda1d1a3720",
         "EN-9a6ee79873b1fb7b"
       ],
       "fdeIds": [],

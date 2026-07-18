@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T05:24:47.187Z",
+    "generatedAt": "2026-07-18T06:46:16.044Z",
     "latestDataDate": "2026-07-18",
     "currentDate": "2026-07-18",
     "eventCount": 1250,
@@ -25,10 +25,14 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-4757c80052ae2b3f"
+    ],
     "firstSeen": "2026-07-12",
     "lastSeen": "2026-07-12",
-    "relationIds": [],
+    "relationIds": [
+      "REL2-96fd3b098f94a614"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -55,15 +59,55 @@
         "entityIds": [
           "EN-4757c80052ae2b3f",
           "EN-4d8f3ef9d13d6777",
-          "EN-d736115a934212d4",
           "EN-d7acd28717af7078"
         ]
       }
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-4757c80052ae2b3f",
+      "name": "Zensar Technologies",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-a685bd05ec7ed3ba"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [],
+      "relatedEntityIds": [
+        "EN-4d8f3ef9d13d6777"
+      ],
+      "firstSeen": "2026-07-12",
+      "lastSeen": "2026-07-12"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-96fd3b098f94a614",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-4757c80052ae2b3f",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-4d8f3ef9d13d6777",
+      "object_type": "entity",
+      "event_id": "EV-a685bd05ec7ed3ba",
+      "claim_refs": [
+        "CL-c8af52ead25dfa23"
+      ],
+      "source_refs": [
+        "SA-6bcf28df4caa5f34"
+      ],
+      "data_date": "2026-07-12",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [],
   "fde": [],
   "hardware": []

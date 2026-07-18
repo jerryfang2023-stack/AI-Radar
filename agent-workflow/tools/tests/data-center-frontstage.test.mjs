@@ -108,7 +108,7 @@ test("product projection contains named products with bounded ownership", () => 
   assert.ok(names.includes("LM Studio Bionic"));
   assert.deepEqual(inkling?.companyNames, ["Thinking Machines Lab"]);
   assert.deepEqual(jetsonThor?.companyNames, ["NVIDIA"], "a direct product launch proves bounded ownership");
-  assert.deepEqual(msNat5000?.companyNames, [], "a component mention does not prove product ownership");
+  assert.deepEqual(msNat5000?.companyNames, ["映泰"], "the system launch proves its publisher without assigning the component supplier");
   assert.equal(names.includes("Codex Micro"), false);
   assert.doesNotMatch(adapter, /namedProductRules|extractNamedProducts/u);
   assert.ok(names.every((name) => !/^(?:的|会|训练|多款|可|全球首个|人工智能标准|推理优化|record|with |Apollo|Development|notes|YC:)/iu.test(name)));

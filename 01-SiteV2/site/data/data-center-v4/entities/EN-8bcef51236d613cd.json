@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T05:24:47.187Z",
+    "generatedAt": "2026-07-18T06:46:16.044Z",
     "latestDataDate": "2026-07-18",
     "currentDate": "2026-07-18",
     "eventCount": 1250,
@@ -16,7 +16,7 @@
     "entityType": "organization_candidate",
     "typeLabel": "公司与机构",
     "aliases": [],
-    "verificationStatus": "candidate",
+    "verificationStatus": "verified",
     "datasetScopes": [
       "canonical"
     ],
@@ -27,10 +27,14 @@
     "classificationRefs": [
       "TX-technology-code_generation"
     ],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-993599624a199fe0"
+    ],
     "firstSeen": "2026-06-13",
     "lastSeen": "2026-06-14",
-    "relationIds": [],
+    "relationIds": [
+      "REL2-39f8dbf0a22452b5"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -75,8 +79,53 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-993599624a199fe0",
+      "name": "ZCode 3.0",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-1e0871947289ab6e"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-code_generation"
+      ],
+      "relatedEntityIds": [
+        "EN-8bcef51236d613cd"
+      ],
+      "firstSeen": "2026-06-13",
+      "lastSeen": "2026-06-14"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-39f8dbf0a22452b5",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-8bcef51236d613cd",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-993599624a199fe0",
+      "object_type": "entity",
+      "event_id": "EV-1e0871947289ab6e",
+      "claim_refs": [
+        "CL-76a2dcd87a41c61c",
+        "CL-a39f135edafa0bd5",
+        "CL-42bb46570b181556"
+      ],
+      "source_refs": [
+        "SA-4b1086e7bc0fc904"
+      ],
+      "data_date": "2026-06-14",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [
     {
       "id": "TX-technology-code_generation",
@@ -154,10 +203,9 @@
         "EN-8d4321d936320802",
         "EN-cb4754c48f8023d0",
         "EN-761c4b9294ee43a7",
-        "EN-3969dd578ebf6c65",
+        "EN-3eee4f30151db45a",
         "EN-4adc2faea521b1f1",
         "EN-c857d09db23e6822",
-        "EN-7ec0224e483d913b",
         "EN-2d87f3d38782aa14",
         "EN-bbdefa2950f49882",
         "EN-b5251b35f15bedc4",
@@ -169,21 +217,21 @@
         "EN-c608c4787821de1b",
         "EN-ddf9916b459b6d77",
         "EN-3aca03b9bb50f158",
+        "EN-b644c0a9d493976a",
         "EN-412b57e712039032",
         "EN-6f7ac1823da81d2e",
         "EN-c27c48199bb1e14b",
         "EN-e2a93bc5095dec6c",
         "EN-0decbc3b45f73b2b",
-        "EN-a6f7e7d15269ba2d",
         "EN-45cbca5f78f1ef44",
         "EN-ce635c4eabff5e4f",
         "EN-b57c95289680078c",
         "EN-2b6e51bec93e86c1",
-        "EN-4d09c69c19f5f67b",
         "EN-085598c00f2aaccf",
         "EN-a3c3b987b09fc1bb",
         "EN-630dc133336bc266",
         "EN-c4bc2d00a42f220f",
+        "EN-0b9ca57f53ba758b",
         "EN-46a4eebd20d881ec",
         "EN-ba1269449ab76537",
         "EN-e759968ca9278b8d",

@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T05:24:47.187Z",
+    "generatedAt": "2026-07-18T06:46:16.044Z",
     "latestDataDate": "2026-07-18",
     "currentDate": "2026-07-18",
     "eventCount": 1250,
@@ -12,21 +12,25 @@
   },
   "entity": {
     "id": "EN-3546e1b15e6549b2",
-    "name": "Home 6",
+    "name": "Google Home",
     "entityType": "product_candidate",
     "typeLabel": "产品、模型与服务",
-    "aliases": [],
+    "aliases": [
+      "Home",
+      "Home 6"
+    ],
     "verificationStatus": "verified",
     "datasetScopes": [
       "canonical"
     ],
     "eventIds": [
-      "EV-b860d46fee913f27"
+      "EV-b860d46fee913f27",
+      "EV-c3cbf5d7f860c693"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
-    "firstSeen": "2026-06-24",
+    "firstSeen": "2026-06-17",
     "lastSeen": "2026-06-24",
     "relationIds": [],
     "groupedEventIds": {
@@ -34,7 +38,8 @@
       "deployments": [],
       "partnerships": [],
       "productsServices": [
-        "EV-b860d46fee913f27"
+        "EV-b860d46fee913f27",
+        "EV-c3cbf5d7f860c693"
       ],
       "hardware": [],
       "organizationPeople": [],
@@ -52,6 +57,29 @@
         "statusLabel": "已公布",
         "title": "Google Home 6 月 23 日起扩展面部识别：非正面也能靠体型衣服识别，新增特定声音检测",
         "displayTags": [],
+        "entityIds": [
+          "EN-bbdefa2950f49882",
+          "EN-3546e1b15e6549b2"
+        ]
+      },
+      {
+        "id": "EV-c3cbf5d7f860c693",
+        "dataDate": "2026-06-18",
+        "date": "2026-06-17",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "谷歌推出新一代 Google Home 智能音箱：搭载 Gemini AI 助手，售 100 美元",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "ai_application",
+            "dimensionName": "产品形态",
+            "name": "AI 应用"
+          }
+        ],
         "entityIds": [
           "EN-bbdefa2950f49882",
           "EN-3546e1b15e6549b2"

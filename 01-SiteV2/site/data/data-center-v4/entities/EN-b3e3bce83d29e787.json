@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T05:24:47.187Z",
+    "generatedAt": "2026-07-18T06:46:16.044Z",
     "latestDataDate": "2026-07-18",
     "currentDate": "2026-07-18",
     "eventCount": 1250,
@@ -16,7 +16,7 @@
     "entityType": "organization_candidate",
     "typeLabel": "公司与机构",
     "aliases": [],
-    "verificationStatus": "candidate",
+    "verificationStatus": "verified",
     "datasetScopes": [
       "canonical"
     ],
@@ -27,10 +27,14 @@
     "classificationRefs": [
       "TX-technology-open_weights"
     ],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-8950d72f381130ac"
+    ],
     "firstSeen": "2026-06-23",
     "lastSeen": "2026-06-29",
-    "relationIds": [],
+    "relationIds": [
+      "REL2-08e38329aa484887"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -75,16 +79,62 @@
         ],
         "entityIds": [
           "EN-b3e3bce83d29e787",
-          "EN-9855ef88d183e07b",
-          "EN-049e948563e03e97",
-          "EN-8950d72f381130ac"
+          "EN-8950d72f381130ac",
+          "EN-049e948563e03e97"
         ]
       }
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-8950d72f381130ac",
+      "name": "Modelplane",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [
+        "Launches Modelplane"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-a06011da69abcc3d"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-open_weights"
+      ],
+      "relatedEntityIds": [
+        "EN-b3e3bce83d29e787"
+      ],
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-29"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-08e38329aa484887",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-b3e3bce83d29e787",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-8950d72f381130ac",
+      "object_type": "entity",
+      "event_id": "EV-a06011da69abcc3d",
+      "claim_refs": [
+        "CL-b56b4f9da5ca525d",
+        "CL-a0a427d0cc34f0ba",
+        "CL-1ecb85f4fb243eda"
+      ],
+      "source_refs": [
+        "SA-67b1d4198b290750"
+      ],
+      "data_date": "2026-06-29",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [
     {
       "id": "TX-technology-open_weights",
@@ -119,16 +169,15 @@
         "EN-2b5e92d1908d42f6",
         "EN-8d4321d936320802",
         "EN-3ae50afab3e392b8",
+        "EN-8395dc051feafc4c",
         "EN-b3e3bce83d29e787",
-        "EN-9855ef88d183e07b",
-        "EN-049e948563e03e97",
         "EN-8950d72f381130ac",
+        "EN-049e948563e03e97",
         "EN-f7a386a451b79627",
         "EN-bc1fc5140040180e",
         "EN-12ab68e37d104d27",
         "EN-c608c4787821de1b",
-        "EN-9c8ae69b84f21a2e",
-        "EN-6ac6ad44bb9995ca"
+        "EN-9c8ae69b84f21a2e"
       ],
       "fdeIds": [],
       "hardwareIds": [],

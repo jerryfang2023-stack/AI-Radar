@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T05:24:47.187Z",
+    "generatedAt": "2026-07-18T06:46:16.044Z",
     "latestDataDate": "2026-07-18",
     "currentDate": "2026-07-18",
     "eventCount": 1250,
@@ -12,10 +12,12 @@
   },
   "entity": {
     "id": "EN-cf5378a2305a999f",
-    "name": "Chinese AI",
+    "name": "MiniMax 2.7 Trillion Parameter Model",
     "entityType": "product_candidate",
     "typeLabel": "产品、模型与服务",
-    "aliases": [],
+    "aliases": [
+      "Chinese AI"
+    ],
     "verificationStatus": "verified",
     "datasetScopes": [
       "canonical"
@@ -25,14 +27,10 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [],
-    "relatedEntityIds": [
-      "EN-e1517be14d06cdb7"
-    ],
+    "relatedEntityIds": [],
     "firstSeen": "2026-07-09",
     "lastSeen": "2026-07-09",
-    "relationIds": [
-      "REL2-07bf8587edb48e95"
-    ],
+    "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -64,58 +62,8 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [
-    {
-      "id": "EN-e1517be14d06cdb7",
-      "name": "MiniMax",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-9da9d755019f241f",
-        "EV-aae8b6aa0da7f103",
-        "EV-20cdbe59ba2a1359",
-        "EV-d5daf0537fe7b2d7"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-multimodal"
-      ],
-      "relatedEntityIds": [
-        "EN-cf5378a2305a999f",
-        "EN-cf81a61e4eaef17c"
-      ],
-      "firstSeen": "2026-06-01",
-      "lastSeen": "2026-07-09"
-    }
-  ],
-  "relationships": [
-    {
-      "relationship_id": "REL2-07bf8587edb48e95",
-      "relationship_version": "RELATION-V2.0",
-      "subject_ref": "EN-e1517be14d06cdb7",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-cf5378a2305a999f",
-      "object_type": "entity",
-      "event_id": "EV-9da9d755019f241f",
-      "claim_refs": [
-        "CL-5b1c1ec9e1d977ba",
-        "CL-bdf2be420c647faa",
-        "CL-837ef054f32e38ca",
-        "CL-c7052e949737c57a"
-      ],
-      "source_refs": [
-        "SA-9e9d9b0a5226d7b5"
-      ],
-      "data_date": "2026-07-09",
-      "status": "verified"
-    }
-  ],
+  "relatedEntities": [],
+  "relationships": [],
   "taxonomyNodes": [],
   "fde": [],
   "hardware": []

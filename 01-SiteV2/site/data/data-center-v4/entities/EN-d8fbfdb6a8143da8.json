@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T05:24:47.187Z",
+    "generatedAt": "2026-07-18T06:46:16.044Z",
     "latestDataDate": "2026-07-18",
     "currentDate": "2026-07-18",
     "eventCount": 1250,
@@ -21,17 +21,21 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-702ed039940800fb",
       "EV-ad8f847d403433f7"
     ],
     "viewpointIds": [],
-    "classificationRefs": [],
+    "classificationRefs": [
+      "TX-use_case-knowledge_search"
+    ],
     "relatedEntityIds": [
       "EN-3f726694f178ed7a"
     ],
     "firstSeen": "2026-06-20",
-    "lastSeen": "2026-06-21",
+    "lastSeen": "2026-07-16",
     "relationIds": [
-      "REL2-2bf29f48932fee41"
+      "REL2-2bf29f48932fee41",
+      "REL2-c30eb43794c611de"
     ],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -68,7 +72,8 @@
           "EN-3f726694f178ed7a",
           "EN-45e0ade11fed1e44",
           "EN-1e68d267df86aa4c",
-          "EN-9d93b78264eb6acb"
+          "EN-9d93b78264eb6acb",
+          "EN-d8fbfdb6a8143da8"
         ]
       },
       {
@@ -120,7 +125,6 @@
       "relatedEntityIds": [
         "EN-d8fbfdb6a8143da8",
         "EN-9d93b78264eb6acb",
-        "EN-1e68d267df86aa4c",
         "EN-26e4951af4490c21"
       ],
       "firstSeen": "2026-06-11",
@@ -148,9 +152,59 @@
       ],
       "data_date": "2026-07-16",
       "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-c30eb43794c611de",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-3f726694f178ed7a",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-d8fbfdb6a8143da8",
+      "object_type": "entity",
+      "event_id": "EV-ad8f847d403433f7",
+      "claim_refs": [
+        "CL-682f052c6f3f08e7",
+        "CL-78c68f5a69df7dec",
+        "CL-740e926019d0e311"
+      ],
+      "source_refs": [
+        "SA-5d17138160d229d7"
+      ],
+      "data_date": "2026-06-21",
+      "status": "verified"
     }
   ],
-  "taxonomyNodes": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-use_case-knowledge_search",
+      "name": "知识与搜索",
+      "nodeType": "use_case",
+      "typeLabel": "应用场景",
+      "valueId": "knowledge_search",
+      "eventIds": [
+        "EV-b925f50b55d3aa00",
+        "EV-702ed039940800fb",
+        "EV-26c1248692fdcc10",
+        "EV-ae4561a4a9ebe17f"
+      ],
+      "entityIds": [
+        "EN-e5695af6f033f56e",
+        "EN-d1ad14d4ad57d207",
+        "EN-3f726694f178ed7a",
+        "EN-45e0ade11fed1e44",
+        "EN-1e68d267df86aa4c",
+        "EN-9d93b78264eb6acb",
+        "EN-d8fbfdb6a8143da8",
+        "EN-b81c8201acfc7639",
+        "EN-82eaaba81d9dcc54",
+        "EN-9a6ee79873b1fb7b"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-06-11",
+      "lastSeen": "2026-07-18"
+    }
+  ],
   "fde": [],
   "hardware": []
 }

@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T05:24:47.187Z",
+    "generatedAt": "2026-07-18T06:46:16.044Z",
     "latestDataDate": "2026-07-18",
     "currentDate": "2026-07-18",
     "eventCount": 1250,
@@ -27,14 +27,10 @@
     "classificationRefs": [
       "TX-industry-manufacturing"
     ],
-    "relatedEntityIds": [
-      "EN-cbc62794911ff31b"
-    ],
+    "relatedEntityIds": [],
     "firstSeen": "2025-12-02",
     "lastSeen": "2026-07-18",
-    "relationIds": [
-      "REL2-616077a1ca249bdd"
-    ],
+    "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -80,89 +76,8 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [
-    {
-      "id": "EN-cbc62794911ff31b",
-      "name": "Amazon",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-dcbe916c6138e5cb",
-        "EV-a00763037a94d512",
-        "EV-02548003157849bb",
-        "EV-8b0f056571d68269",
-        "EV-4e5c6267b3237dac",
-        "EV-49c6291694fb6c7b",
-        "EV-ef6464cf7f764835",
-        "EV-d7b18c5d5759045d",
-        "EV-67ef7accd26a07a0",
-        "EV-53f4f2a34b3ce1b4",
-        "EV-ec2e421d0e18be9b",
-        "EV-c0a65877001ed413",
-        "EV-303b418c63895ba6",
-        "EV-43976be427aefb52",
-        "EV-b93b5cc15823e9c3",
-        "EV-918fc324de3117bd",
-        "EV-3acf607a02706fa8",
-        "EV-f953555178744c22",
-        "EV-69a82f50c60d4a64",
-        "EV-491e7b4b506ab3e3",
-        "EV-c108e7cc2df7faf4",
-        "EV-4e55361d8324dd49",
-        "EV-94d9c8d5ac1e10de",
-        "EV-f89ba2b487d4abf1",
-        "EV-b4e7187a9bd1de0e",
-        "EV-84b423077bf8dac8",
-        "EV-7f9631d793292d07",
-        "EV-8993e021ac17df4a",
-        "EV-1b92b6c835ce240c"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-industry-retail_ecommerce",
-        "TX-industry-manufacturing",
-        "TX-use_case-customer_service",
-        "TX-industry-healthcare_life_sciences",
-        "TX-use_case-robotics_automation",
-        "TX-use_case-cybersecurity"
-      ],
-      "relatedEntityIds": [
-        "EN-a614180064f7ef60",
-        "EN-9fbf261b62c1d7c0"
-      ],
-      "firstSeen": "2025-12-02",
-      "lastSeen": "2026-07-18"
-    }
-  ],
-  "relationships": [
-    {
-      "relationship_id": "REL2-616077a1ca249bdd",
-      "relationship_version": "RELATION-V2.0",
-      "subject_ref": "EN-cbc62794911ff31b",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-a614180064f7ef60",
-      "object_type": "entity",
-      "event_id": "EV-8993e021ac17df4a",
-      "claim_refs": [
-        "CL-073d7041514940e9",
-        "CL-fae9365299dbe5bb",
-        "CL-6a466ff6af337ecf",
-        "CL-86601bb1a02ec3d6"
-      ],
-      "source_refs": [
-        "SA-f21fed1efc1641c8"
-      ],
-      "data_date": "2026-07-18",
-      "status": "verified"
-    }
-  ],
+  "relatedEntities": [],
+  "relationships": [],
   "taxonomyNodes": [
     {
       "id": "TX-industry-manufacturing",
@@ -235,7 +150,6 @@
         "EN-e3b1bf3dab957ffe",
         "EN-cf9488537f777c1a",
         "EN-38f4d27a18084522",
-        "EN-74beb25bdfe7bdd1",
         "EN-94c93b5ab886f2d9",
         "EN-ce635c4eabff5e4f",
         "EN-ab9e3beebd83960d",
@@ -243,8 +157,6 @@
         "EN-2a920347dfcf07a7",
         "EN-2dc010636b9dce91",
         "EN-23b979df49741c93",
-        "EN-02072c80a8386e8d",
-        "EN-2eb073b22916de55",
         "EN-4a639cb888a15d75",
         "EN-56ee86045cfb0ddd",
         "EN-9dde0c2d375060f6",

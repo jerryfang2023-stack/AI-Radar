@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T05:24:47.187Z",
+    "generatedAt": "2026-07-18T06:46:16.044Z",
     "latestDataDate": "2026-07-18",
     "currentDate": "2026-07-18",
     "eventCount": 1250,
@@ -25,14 +25,10 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [],
-    "relatedEntityIds": [
-      "EN-c13e2f4a44bb01ed"
-    ],
+    "relatedEntityIds": [],
     "firstSeen": "2026-07-14",
     "lastSeen": "2026-07-15",
-    "relationIds": [
-      "REL2-3ea9b6f935a9716b"
-    ],
+    "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -71,57 +67,8 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [
-    {
-      "id": "EN-c13e2f4a44bb01ed",
-      "name": "Samsung SDS",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-5e2b5770eac85ca5",
-        "EV-8fcb52bb6ec980af",
-        "EV-6ebcbb2660ec7ad9",
-        "EV-770cea9de2337d0e"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution"
-      ],
-      "relatedEntityIds": [
-        "EN-73c5a6485d01d20c",
-        "EN-e69e1d0e7ad091fc",
-        "EN-59fd7e12c890c379",
-        "EN-464631bd17a23159"
-      ],
-      "firstSeen": "2026-05-27",
-      "lastSeen": "2026-07-16"
-    }
-  ],
-  "relationships": [
-    {
-      "relationship_id": "REL2-3ea9b6f935a9716b",
-      "relationship_version": "RELATION-V2.0",
-      "subject_ref": "EN-c13e2f4a44bb01ed",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-e69e1d0e7ad091fc",
-      "object_type": "entity",
-      "event_id": "EV-770cea9de2337d0e",
-      "claim_refs": [
-        "CL-014ede19bf865478"
-      ],
-      "source_refs": [
-        "SA-d2f235b1fe53f9c2"
-      ],
-      "data_date": "2026-07-15",
-      "status": "verified"
-    }
-  ],
+  "relatedEntities": [],
+  "relationships": [],
   "taxonomyNodes": [],
   "fde": [],
   "hardware": []

@@ -11,7 +11,7 @@ const GENERIC_WORDS = new Set([
   "ai", "api", "new", "model", "models", "platform", "service", "services",
   "product", "app", "application", "tool", "system", "feature", "agent", "voice",
   "video", "image", "coding", "enterprise", "developer", "edition", "record", "github",
-  "cto", "ceo", "founder", "launch"
+  "cto", "ceo", "founder", "launch", "launches", "announcement", "blog", "cloud", "code", "home", "saas"
 ]);
 
 const PRODUCT_KIND = "models?|platform|services?|products?|apps?|applications?|tools?|systems?|features?|agents?|computer|device|hardware";
@@ -38,6 +38,10 @@ function cleanCandidate(value = "") {
   if (GENERIC_WORDS.has(candidate.toLocaleLowerCase())) return "";
   if (/^AI[- ]powered\b|^(?:AI Social|AI Public Launch)$/iu.test(candidate)) return "";
   if (/Social Platform for|^Every Team$/iu.test(candidate)) return "";
+  if (/\b(?:announces?|announced|releases?|released|launch(?:es|ed)?|introduces?|introduced|unveils?|unveiled|rolls?|built|goes|amid|simplif(?:y|ies)|eating|our|finding)\b/iu.test(candidate)) return "";
+  if (/\b(?:are|is|was|were|has|have)\b/iu.test(candidate)) return "";
+  if (/^(?:Across|Next)\b|\b(?:for|with|to|from|across|amid)$/iu.test(candidate)) return "";
+  if (/^(?:Company Announcement|Enterprise IT|US AI|Developer Platform for AI)$/iu.test(candidate)) return "";
   if (/^(?:Development|Experiment|Production)(?:\s+(?:From|To)\s+(?:Development|Experiment|Production))+$/iu.test(candidate)) return "";
   if (/\b(?:CTO|CEO|founder)$/iu.test(candidate)) return "";
   if (/^(?:开箱即用)$/u.test(candidate)) return "";

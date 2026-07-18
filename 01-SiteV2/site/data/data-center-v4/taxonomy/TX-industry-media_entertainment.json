@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T05:24:47.187Z",
+    "generatedAt": "2026-07-18T06:46:16.044Z",
     "latestDataDate": "2026-07-18",
     "currentDate": "2026-07-18",
     "eventCount": 1250,
@@ -51,11 +51,9 @@
       "EN-bbdefa2950f49882",
       "EN-2df4d39c248116dc",
       "EN-30081094f2a8c83d",
-      "EN-d558e1de958b9d05",
       "EN-2b6e51bec93e86c1",
       "EN-8d4321d936320802",
       "EN-d56aa2f9908f566a",
-      "EN-4d09c69c19f5f67b",
       "EN-c1eb8e913000a8eb",
       "EN-0be477336d3e1a8d",
       "EN-1dc405a4cda895d0",
@@ -1369,7 +1367,6 @@
         "TX-technology-image_generation"
       ],
       "relatedEntityIds": [
-        "EN-f475981105d2acbd",
         "EN-309e1850e39b13ff",
         "EN-954dc5d6516f127c"
       ],
@@ -1446,9 +1443,7 @@
         "TX-technology-multimodal",
         "TX-industry-media_entertainment"
       ],
-      "relatedEntityIds": [
-        "EN-be1a3c9420d88ea5"
-      ],
+      "relatedEntityIds": [],
       "firstSeen": "2026-05-18",
       "lastSeen": "2026-07-18"
     },
@@ -1556,18 +1551,14 @@
         "TX-technology-speech_audio"
       ],
       "relatedEntityIds": [
-        "EN-af3ceabbe048a291",
-        "EN-e13642b766c1f8d1",
         "EN-e463d05a14e8697f",
-        "EN-1553575bccce0a25",
+        "EN-b5251b35f15bedc4",
         "EN-1924fff8eb4d54ae",
-        "EN-41dcc2d4951f337b",
-        "EN-1acf3a98930680ec",
+        "EN-dd920a8cd166f486",
+        "EN-af3ceabbe048a291",
         "EN-45b5216872656eb3",
-        "EN-dfabe4215e8c07cb",
-        "EN-729324072d368379",
-        "EN-40e307d789f77264",
-        "EN-0502bb9ed34980aa"
+        "EN-0502bb9ed34980aa",
+        "EN-40e307d789f77264"
       ],
       "firstSeen": "2026-06-04",
       "lastSeen": "2026-07-18"
@@ -1615,12 +1606,7 @@
         "TX-technology-video_generation",
         "TX-use_case-knowledge_search"
       ],
-      "relatedEntityIds": [
-        "EN-40e307d789f77264",
-        "EN-b42e5eda1d1a3720",
-        "EN-e18cb6435603205d",
-        "EN-24381ecb01753c1b"
-      ],
+      "relatedEntityIds": [],
       "firstSeen": "2026-05-25",
       "lastSeen": "2026-07-18"
     },
@@ -1663,6 +1649,7 @@
         "EV-47a84a0f1a85c29c",
         "EV-6c361125c3f50bb6",
         "EV-533d2da98cce1ae0",
+        "EV-8a9b12665a3e40a0",
         "EV-ee363e679d12329c",
         "EV-ad2e4fe6a149d95d",
         "EV-76aa77f5a2e7c661",
@@ -1681,13 +1668,14 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-industry-retail_ecommerce",
+        "TX-technology-on_device",
         "TX-industry-media_entertainment",
         "TX-technology-video_generation",
         "TX-technology-tool_use"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-01",
-      "lastSeen": "2026-07-14"
+      "lastSeen": "2026-07-16"
     },
     {
       "id": "EN-f0edcf96f6fa2ccb",
@@ -1783,7 +1771,7 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [],
-      "verificationStatus": "candidate",
+      "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
@@ -1795,7 +1783,9 @@
         "TX-technology-embodied_ai",
         "TX-industry-media_entertainment"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-7a3ecc54829211df"
+      ],
       "firstSeen": "2026-07-09",
       "lastSeen": "2026-07-10"
     },
@@ -1817,7 +1807,9 @@
         "TX-technology-embodied_ai",
         "TX-industry-media_entertainment"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-754c490bd199c21a"
+      ],
       "firstSeen": "2026-07-09",
       "lastSeen": "2026-07-10"
     },
@@ -1894,13 +1886,10 @@
       ],
       "relatedEntityIds": [
         "EN-e3863f813fe47240",
-        "EN-de1afc61dd4d2cea",
         "EN-d85ad5e8ff8e2889",
         "EN-a2fa009495c3bb3a",
-        "EN-77fe4e790d5bc756",
         "EN-2ba325ce6f8e3dc9",
         "EN-557203e8cc173124",
-        "EN-5fa6f727c9e3afe0",
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-05-22",
@@ -2098,6 +2087,7 @@
       ],
       "relatedEntityIds": [
         "EN-bbdefa2950f49882",
+        "EN-8d323d8bba783aa3",
         "EN-c70eca6b0f88f44d"
       ],
       "firstSeen": "2025-03-18",
@@ -2271,46 +2261,23 @@
         "TX-technology-speech_audio"
       ],
       "relatedEntityIds": [
-        "EN-e71558a14e7ed6ab",
-        "EN-7496c16a89e136e6",
-        "EN-085598c00f2aaccf",
         "EN-96eebba49dbbf422",
-        "EN-ec75c4fe965a0492",
         "EN-81e577740888ca6d",
         "EN-1229af0aa3b0305e",
-        "EN-992eafe973f69075",
         "EN-0e008e2c06144ec8",
-        "EN-01f1074bb52ff605",
-        "EN-40f98159922ab514",
-        "EN-c96163fd12452c9c",
-        "EN-5f6367300dabc238",
-        "EN-834ab0b6e4492d23",
-        "EN-dd782f5241cd7e50",
-        "EN-ffc6caa049c23d48",
-        "EN-e3db3da2b7dc6057",
-        "EN-9086d4784c07561e",
-        "EN-242e21e3dc6869a9",
-        "EN-151013fb8438c046",
-        "EN-07035a20899a7cd7",
-        "EN-77fe4e790d5bc756",
         "EN-cfe6926406f30a15",
         "EN-8d323d8bba783aa3",
         "EN-9ff1a58a589bc318",
-        "EN-3aa38718f0399af9",
+        "EN-01f1074bb52ff605",
         "EN-f2c032b19edb7900",
-        "EN-b8174ff7d1b7aada",
-        "EN-5567ce1995cc85d7",
-        "EN-fbe26af59be95e52",
+        "EN-2ab6d53e717a0e0d",
         "EN-2998f8b13f4fd72e",
-        "EN-d4c56709df757c56",
         "EN-b5c336c0dd1ff29c",
-        "EN-eb0cc8fb584389db",
         "EN-d56aa2f9908f566a",
         "EN-4baef0e41cbd7ae2",
         "EN-bdfecbcd7dbf76d2",
-        "EN-6f216f2ea5b7a13e",
-        "EN-7cf9af03694038e1",
-        "EN-3c309a993bd57962"
+        "EN-e3db3da2b7dc6057",
+        "EN-2aae0de3f5530f08"
       ],
       "firstSeen": "2026-04-12",
       "lastSeen": "2026-07-18"
@@ -2360,35 +2327,13 @@
       "lastSeen": "2026-06-23"
     },
     {
-      "id": "EN-d558e1de958b9d05",
-      "name": "Walker C1",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-49751dfc7d2f6d6c"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-use_case-robotics_automation",
-        "TX-technology-embodied_ai",
-        "TX-industry-media_entertainment"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-06-22",
-      "lastSeen": "2026-06-23"
-    },
-    {
       "id": "EN-2b6e51bec93e86c1",
       "name": "Google DeepMind",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "谷歌 DeepMind"
+        "谷歌 DeepMind",
+        "DeepMind"
       ],
       "verificationStatus": "verified",
       "datasetScopes": [
@@ -2433,13 +2378,8 @@
         "TX-technology-speech_audio"
       ],
       "relatedEntityIds": [
-        "EN-0e008e2c06144ec8",
-        "EN-4d09c69c19f5f67b",
-        "EN-7ed9c9e7c260ed06",
-        "EN-01f1074bb52ff605",
         "EN-d56aa2f9908f566a",
-        "EN-085598c00f2aaccf",
-        "EN-a3c3b987b09fc1bb"
+        "EN-085598c00f2aaccf"
       ],
       "firstSeen": "2026-06-02",
       "lastSeen": "2026-07-17"
@@ -2576,32 +2516,26 @@
         "TX-technology-speech_audio"
       ],
       "relatedEntityIds": [
-        "EN-e07654c7cc29acbd",
-        "EN-171fa23d27b5894b",
         "EN-8395dc051feafc4c",
-        "EN-78cff6caea83f213",
         "EN-aa15d891a32a51b8",
         "EN-0f3360879e746531",
-        "EN-fbe26af59be95e52",
-        "EN-2b119dc14de9478d",
         "EN-a1b0d8a938903dc7",
+        "EN-956b7280912ef1cc",
+        "EN-4a639cb888a15d75",
+        "EN-8d323d8bba783aa3",
         "EN-b5738c169b693bee",
         "EN-51fd7dc086fcb858",
-        "EN-e35404082afce32c",
         "EN-9e193e1ec8d75d41",
         "EN-3ae50afab3e392b8",
         "EN-936f01f91fdadf69",
-        "EN-2f354de778e6a6da",
         "EN-4e7e886400fe6a83",
         "EN-1dc405a4cda895d0",
         "EN-12ab68e37d104d27",
         "EN-a3266ab9e10d6105",
-        "EN-ab9e3beebd83960d",
         "EN-9fbf261b62c1d7c0",
         "EN-11ef7b03c79c9bbd",
         "EN-9bc22dcabf7f45b3",
-        "EN-0b9ca57f53ba758b",
-        "EN-e246a1f9a090075b"
+        "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
       "lastSeen": "2026-07-18"
@@ -2633,39 +2567,6 @@
       ],
       "firstSeen": "2026-06-11",
       "lastSeen": "2026-06-11"
-    },
-    {
-      "id": "EN-4d09c69c19f5f67b",
-      "name": "DeepMind",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-5babb43f4b4d302f",
-        "EV-ff10670ad06959ec",
-        "EV-568d2aeab5234e48",
-        "EV-f68e00bb9fd49fac"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-code_generation",
-        "TX-use_case-software_development",
-        "TX-technology-mixture_of_experts",
-        "TX-technology-multimodal",
-        "TX-industry-media_entertainment",
-        "TX-technology-video_generation",
-        "TX-technology-image_generation",
-        "TX-technology-speech_audio"
-      ],
-      "relatedEntityIds": [
-        "EN-2b6e51bec93e86c1"
-      ],
-      "firstSeen": "2026-06-04",
-      "lastSeen": "2026-07-01"
     },
     {
       "id": "EN-c1eb8e913000a8eb",

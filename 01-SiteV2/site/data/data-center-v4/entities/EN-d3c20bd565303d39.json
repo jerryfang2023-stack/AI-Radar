@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T05:24:47.187Z",
+    "generatedAt": "2026-07-18T06:46:16.044Z",
     "latestDataDate": "2026-07-18",
     "currentDate": "2026-07-18",
     "eventCount": 1250,
@@ -16,7 +16,7 @@
     "entityType": "organization_candidate",
     "typeLabel": "公司与机构",
     "aliases": [],
-    "verificationStatus": "candidate",
+    "verificationStatus": "verified",
     "datasetScopes": [
       "canonical"
     ],
@@ -25,10 +25,14 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-e9830c30bc572802"
+    ],
     "firstSeen": "2026-06-15",
     "lastSeen": "2026-06-16",
-    "relationIds": [],
+    "relationIds": [
+      "REL2-832f07f7596b011a"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -36,7 +40,9 @@
       "productsServices": [
         "EV-82c011d072698773"
       ],
-      "hardware": [],
+      "hardware": [
+        "EV-e2d4132c671e3d41"
+      ],
       "organizationPeople": [],
       "other": []
     },
@@ -62,12 +68,89 @@
         "entityIds": [
           "EN-d3c20bd565303d39"
         ]
+      },
+      {
+        "id": "EV-e2d4132c671e3d41",
+        "dataDate": "2026-06-16",
+        "date": "2026-06-15",
+        "eventType": "hardware_product",
+        "eventTypeLabel": "硬件产品",
+        "eventGroup": "AI 硬件",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "理想马赫 M100 发布：全球首款动态数据流 AI 芯片，5nm 车规级工艺，单芯算力 1280 TOPS",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "chip_accelerator",
+            "dimensionName": "产品形态",
+            "name": "芯片与加速器"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "embodied_ai",
+            "name": "具身智能"
+          }
+        ],
+        "entityIds": [
+          "EN-89e3f0711b76932c",
+          "EN-e9830c30bc572802"
+        ]
       }
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-e9830c30bc572802",
+      "name": "理想马赫M100",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [
+        "全球首款动态数据流 AI 芯片"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-e2d4132c671e3d41"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-embodied_ai"
+      ],
+      "relatedEntityIds": [
+        "EN-d3c20bd565303d39"
+      ],
+      "firstSeen": "2026-06-15",
+      "lastSeen": "2026-06-16"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-832f07f7596b011a",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-d3c20bd565303d39",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-e9830c30bc572802",
+      "object_type": "entity",
+      "event_id": "EV-e2d4132c671e3d41",
+      "claim_refs": [
+        "CL-b676343f7dedcf37",
+        "CL-686e36f03a60435e",
+        "CL-747739bb5e2ca184",
+        "CL-ca044777717424e5"
+      ],
+      "source_refs": [
+        "SA-d14140302df48bf5"
+      ],
+      "data_date": "2026-06-16",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [],
   "fde": [],
   "hardware": []

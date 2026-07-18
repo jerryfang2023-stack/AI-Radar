@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T05:24:47.187Z",
+    "generatedAt": "2026-07-18T06:46:16.044Z",
     "latestDataDate": "2026-07-18",
     "currentDate": "2026-07-18",
     "eventCount": 1250,
@@ -29,9 +29,9 @@
       "EN-45e0ade11fed1e44",
       "EN-1e68d267df86aa4c",
       "EN-9d93b78264eb6acb",
+      "EN-d8fbfdb6a8143da8",
       "EN-b81c8201acfc7639",
       "EN-82eaaba81d9dcc54",
-      "EN-b42e5eda1d1a3720",
       "EN-9a6ee79873b1fb7b"
     ],
     "fdeIds": [],
@@ -406,7 +406,9 @@
         "EV-b925f50b55d3aa00",
         "EV-c237f5dc53f0a923",
         "EV-20dea13a4e6100ea",
+        "EV-efee7c1ac4dc336f",
         "EV-0dbc7b904378f713",
+        "EV-d07f7a8d4d20a034",
         "EV-f023e94a239f22f2",
         "EV-0b6992ae74184d13",
         "EV-f3e11eadfb7c6a4b",
@@ -414,12 +416,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-technology-code_generation",
         "TX-use_case-knowledge_search"
       ],
       "relatedEntityIds": [
-        "EN-7d3194f79e645c42",
-        "EN-2b78da3dc866654e"
+        "EN-7d3194f79e645c42"
       ],
       "firstSeen": "2026-06-02",
       "lastSeen": "2026-07-18"
@@ -452,7 +454,6 @@
       "relatedEntityIds": [
         "EN-d8fbfdb6a8143da8",
         "EN-9d93b78264eb6acb",
-        "EN-1e68d267df86aa4c",
         "EN-26e4951af4490c21"
       ],
       "firstSeen": "2026-06-11",
@@ -498,9 +499,7 @@
       "classificationRefs": [
         "TX-use_case-knowledge_search"
       ],
-      "relatedEntityIds": [
-        "EN-3f726694f178ed7a"
-      ],
+      "relatedEntityIds": [],
       "firstSeen": "2026-07-15",
       "lastSeen": "2026-07-16"
     },
@@ -525,6 +524,30 @@
         "EN-3f726694f178ed7a"
       ],
       "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-16"
+    },
+    {
+      "id": "EN-d8fbfdb6a8143da8",
+      "name": "WPS Comate",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-702ed039940800fb",
+        "EV-ad8f847d403433f7"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-knowledge_search"
+      ],
+      "relatedEntityIds": [
+        "EN-3f726694f178ed7a"
+      ],
+      "firstSeen": "2026-06-20",
       "lastSeen": "2026-07-16"
     },
     {
@@ -570,12 +593,7 @@
         "TX-technology-video_generation",
         "TX-use_case-knowledge_search"
       ],
-      "relatedEntityIds": [
-        "EN-40e307d789f77264",
-        "EN-b42e5eda1d1a3720",
-        "EN-e18cb6435603205d",
-        "EN-24381ecb01753c1b"
-      ],
+      "relatedEntityIds": [],
       "firstSeen": "2026-05-25",
       "lastSeen": "2026-07-18"
     },
@@ -598,30 +616,6 @@
         "TX-use_case-knowledge_search"
       ],
       "relatedEntityIds": [],
-      "firstSeen": "2026-06-13",
-      "lastSeen": "2026-06-14"
-    },
-    {
-      "id": "EN-b42e5eda1d1a3720",
-      "name": "DevEco Code",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-26c1248692fdcc10"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-use_case-knowledge_search"
-      ],
-      "relatedEntityIds": [
-        "EN-b81c8201acfc7639"
-      ],
       "firstSeen": "2026-06-13",
       "lastSeen": "2026-06-14"
     },
