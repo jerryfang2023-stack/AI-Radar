@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-17T21:25:16.366Z",
+    "generatedAt": "2026-07-18T01:48:05.545Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 818,
-    "quarantinedEventCount": 58
+    "eventCount": 823,
+    "quarantinedEventCount": 69
   },
   "entity": {
     "id": "EN-cbc62794911ff31b",
@@ -1296,6 +1296,7 @@
         "EV-afd0332ad8f5f05b",
         "EV-2c87c8ea47cbd1b6",
         "EV-794296a712c1cf15",
+        "EV-e999f3386aba7a2e",
         "EV-bad301e14b034fbd",
         "EV-4763b46821ab746e",
         "EV-6b51b1b6fe22c540",
@@ -1333,6 +1334,7 @@
         "EN-4d748ebd71af03a7",
         "EN-c3e4cc183d345262",
         "EN-ab877737b6081bd1",
+        "EN-cbadff7c58c26e1a",
         "EN-06b5472c16feae4c",
         "EN-12b0c8b376b8375e",
         "EN-bab9670e68265ab1",
@@ -1550,10 +1552,8 @@
         "industry",
         "workflow_before",
         "workflow_after",
-        "delivery_model",
         "team_composition",
         "reported_need",
-        "systems_integrated",
         "data_requirements",
         "governance_controls",
         "reported_outcomes"
@@ -1576,11 +1576,11 @@
       "title": "Google DeepMind 7500 万美元投资 A24，合作开发电影 AI 工具",
       "stage": "announced",
       "stageLabel": "已公布",
-      "customer": "未披露",
+      "customer": "A24",
       "vendor": "Google DeepMind",
-      "industry": "未披露",
+      "industry": "电影",
       "useCase": "开发电影 AI 工具",
-      "reportedNeed": "未披露",
+      "reportedNeed": "开发能够赋能艺术家的工具，支持真实、有意义的叙事",
       "deliveryComponents": [
         "Though controversy has swirled around Hollywood over the use of AI in movies, A24 would be far from the first studio to explore integrating AI into the creative process. Netflix announced earlier this year that it was buying Ben Affleck’s company, InterPositive, which creates AI tools for filmmakers. Last year, meanwhile, Amazon’s MGM Studios launched an AI unit focused on developing tools for television and movie production."
       ],
@@ -1589,13 +1589,10 @@
         "$75 million"
       ],
       "undisclosedFields": [
-        "customer",
-        "industry",
         "workflow_before",
         "workflow_after",
         "delivery_model",
         "team_composition",
-        "reported_need",
         "systems_integrated",
         "data_requirements",
         "governance_controls",
@@ -1619,9 +1616,9 @@
       "stageLabel": "已公布",
       "customer": "Rubrik",
       "vendor": "Rubrik Announces Upcoming",
-      "industry": "未披露",
+      "industry": "Security and AI Operations",
       "useCase": "Amazon Bedrock AgentCore to Secure AI Agents",
-      "reportedNeed": "未披露",
+      "reportedNeed": "Cybersecurity leaders estimate that in the next year, half or more of attacks they face will be driven by agentic AI",
       "deliveryComponents": [
         "Rubrik Announces Upcoming Integration with Amazon Bedrock AgentCore to Secure AI Agents",
         "AWS Summit -- Rubrik (NYSE: RBRK), the Security and AI Operations company, announced today its upcoming Rubrik Agent Cloud (RAC) integration with Amazon Bedrock AgentCore. The upcoming integration reflects Rubrik's commitment to extending the security controls customers already trust into agentic workflows.",
@@ -1630,13 +1627,10 @@
       "outcomes": [],
       "metrics": [],
       "undisclosedFields": [
-        "industry",
         "workflow_before",
         "workflow_after",
         "delivery_model",
         "team_composition",
-        "reported_need",
-        "systems_integrated",
         "data_requirements",
         "governance_controls",
         "reported_outcomes"
@@ -1670,7 +1664,10 @@
       "useCase": "with $6B AI Commitment",
       "reportedNeed": "未披露",
       "deliveryComponents": [],
-      "outcomes": [],
+      "outcomes": [
+        "build and deploy AI-powered applications faster and more securely",
+        "move from AI experimentation to production-scale outcomes"
+      ],
       "metrics": [
         "$6 billion",
         "$7 billion",
@@ -1686,8 +1683,7 @@
         "systems_integrated",
         "data_requirements",
         "governance_controls",
-        "reported_delivery_components",
-        "reported_outcomes"
+        "reported_delivery_components"
       ],
       "tags": [
         {

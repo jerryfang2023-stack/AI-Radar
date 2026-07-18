@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-17T21:25:16.366Z",
+    "generatedAt": "2026-07-18T01:48:05.545Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 818,
-    "quarantinedEventCount": 58
+    "eventCount": 823,
+    "quarantinedEventCount": 69
   },
   "entity": {
     "id": "EN-bbdefa2950f49882",
@@ -2189,6 +2189,7 @@
         "EV-48075ca70a5458ec",
         "EV-7b1c734882fa1ea6",
         "EV-b3c7c4bff17063d8",
+        "EV-81bd541510a530f0",
         "EV-2bb63a3015195f9b",
         "EV-d4e44892226be468",
         "EV-921c843ad32c993c",
@@ -2204,6 +2205,7 @@
         "EV-c0d19b8641a7a36c",
         "EV-ee0662b75588987e",
         "EV-e941c32639167c23",
+        "EV-e8d1de5c77f32b9c",
         "EV-6ae3594aadfcd3d8",
         "EV-bc4ac955cd26b969",
         "EV-88f4ee8cd57bdf42",
@@ -5051,7 +5053,7 @@
       "vendor": "Google Cloud",
       "industry": "未披露",
       "useCase": "Accelerate Intel’s AI-Enabled Enterprise Transformation",
-      "reportedNeed": "未披露",
+      "reportedNeed": "Tools that help employees move with greater speed, agility, and efficiency",
       "deliveryComponents": [
         "SANTA CLARA, Calif., and SUNNYVALE, Calif. &ndash; July 16, 2026 &ndash; Intel and Google Cloud today announced an expansion of their previously announced multi-year strategic collaboration, which would accelerate Intel&rsquo;s enterprise-wide digital evolution through the deployment of Gemini Enterprise and Google Cloud."
       ],
@@ -5061,9 +5063,7 @@
         "industry",
         "workflow_before",
         "workflow_after",
-        "delivery_model",
         "team_composition",
-        "reported_need",
         "data_requirements",
         "governance_controls",
         "reported_outcomes"
@@ -5093,27 +5093,28 @@
       "stageLabel": "已公布",
       "customer": "ServiceNow",
       "vendor": "NVIDIA",
-      "industry": "未披露",
+      "industry": "enterprise",
       "useCase": "launch new AI agent - The Economic Times",
       "reportedNeed": "未披露",
       "deliveryComponents": [
         "Title: ServiceNow, Nvidia expand partnership, launch new AI agent - The Economic Times Business NewsTechAIServiceNow, Nvidia expand partnership, launch new AI agent. # ServiceNow, Nvidia expand partnership, launch new AI agent. ServiceNow and Nvidia unveiled Apriel Nemotron 15B, a new AI reasoning model, and launched the AI Control Tower and Workflow Data Fabric to optimise enterprise AI use. ServiceNow and Nvidia have announced an expansion of their partnership with the launch of a new class of intelligent AI agents across the enterprise, called Apriel Nemotron 15B. ServiceNow is a leading AI platform for business transformation, while NVIDIA is the leading provider of graphics processing units, which have powered the AI boom and lifted the company's market cap to almost USD 3 trillion. ServiceNow and NVIDIA also unveiled a new collaboration on a joint data flywheel architecture that will integrate ServiceNow Workflow Data Fabric and select NVIDIA NeMo microservices. ServiceNow also launched the AI Control Tower, a centralised command centre to govern, manage, secure, and realize value from any ServiceNow and third-party AI agent, model, and workflow on a single unified platform. ServiceNow partners, including Accenture, Adobe, Box, Cisco, Google Cloud, IBM, Jit, Microsoft, Moonhub, RADCOM, UKG, and Zoom are among those to be offering the first AI Agent Fabric integrations for seamless, wall to wall enterprise workflows across third-party agents, a company statement said. ServiceNow opened its annual customer and partner event by unveiling the new ServiceNow AI Platform to put any AI agent, or model to work across the enterprise. At the conference, ServiceNow launched AI agents to power the rise of self-defending enterprises. The new agents, available within ServiceNow's industry-leading Security and Risk solutions, are designed to improve consistency, identify insights, and reduce response times. ServiceNow also unveiled new Workflow Data Fabric capabilities, including a data ecosystem built to power AI agents and workflows with real-time intelligence. The new Workflow Data Network is a broad ecosystem of data platforms, applications, and enterprise tools that enhance Workflow Data Fabric and connect, understand, and take action from any data source, all on the ServiceNow AI Platform. At the conference, ServiceNow and Amazon Web Services (AWS) announced a new solution designed to help customers unify and act on enterprise data more efficiently through new, bi-directional data integration and automated workflow orchestration. / score=0.697 / query=AI agent product launch enterprise workflow platform announced 2026 / intent=find_original_source / path=official_original"
       ],
-      "outcomes": [],
+      "outcomes": [
+        "improve consistency",
+        "identify insights",
+        "reduce response times"
+      ],
       "metrics": [
         "3 trillion",
         "3 trillion"
       ],
       "undisclosedFields": [
-        "industry",
         "workflow_before",
         "workflow_after",
-        "delivery_model",
         "team_composition",
         "reported_need",
         "data_requirements",
-        "governance_controls",
-        "reported_outcomes"
+        "governance_controls"
       ],
       "tags": [
         {
@@ -5241,11 +5242,11 @@
       "eventTypeLabel": "硬件产品",
       "computeLayer": "data_center",
       "supplier": "NVIDIA",
-      "customer": "未披露",
+      "customer": "Google Cloud",
       "processNode": "未披露",
       "capacity": "未披露",
       "capacityUnit": "",
-      "site": "未披露",
+      "site": "Google Cloud",
       "region": "未披露",
       "contractValue": "未披露",
       "shipmentDate": "未披露",

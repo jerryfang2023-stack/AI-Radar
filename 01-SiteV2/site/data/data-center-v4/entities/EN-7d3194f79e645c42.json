@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-17T21:25:16.366Z",
+    "generatedAt": "2026-07-18T01:48:05.545Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 818,
-    "quarantinedEventCount": 58
+    "eventCount": 823,
+    "quarantinedEventCount": 69
   },
   "entity": {
     "id": "EN-7d3194f79e645c42",
@@ -207,6 +207,7 @@
       "EN-db68703d8d719bd0",
       "EN-272d6a7a0db89710",
       "EN-5ce177312903c604",
+      "EN-373ac021a2c0bb2c",
       "EN-bd2bfbea5911ec7a",
       "EN-af53dbc3e443f7a9",
       "EN-b269456229397ef3",
@@ -252,6 +253,7 @@
       "REL2-263998328aaf0a91",
       "REL2-2cec5ab5fcf0fb92",
       "REL2-a678a2776219ebe6",
+      "REL2-59ab2863fcb1e150",
       "REL2-6d7ec62e8bd03417",
       "REL2-b13a518b42e7b47e",
       "REL2-11dd120fdec0f81f",
@@ -4241,6 +4243,33 @@
       "lastSeen": "2026-06-27"
     },
     {
+      "id": "EN-373ac021a2c0bb2c",
+      "name": "Broadcom",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-8fcb52bb6ec980af",
+        "EV-6eb9a23be3117421",
+        "EV-1e7c76dae985100f",
+        "EV-ad1444d8653b37ae"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution"
+      ],
+      "relatedEntityIds": [
+        "EN-f4bec299df3f4f27",
+        "EN-7d3194f79e645c42"
+      ],
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-07-15"
+    },
+    {
       "id": "EN-bd2bfbea5911ec7a",
       "name": "DevDay 2025",
       "entityType": "product_candidate",
@@ -5107,6 +5136,32 @@
         "SA-8bd8eadfca84605b"
       ],
       "data_date": "2026-06-27",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-59ab2863fcb1e150",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-373ac021a2c0bb2c",
+      "subject_type": "entity",
+      "predicate": "supplies_hardware_to",
+      "object_ref": "EN-7d3194f79e645c42",
+      "object_type": "entity",
+      "event_id": "EV-6eb9a23be3117421",
+      "claim_refs": [
+        "CL-b88641e01cdad72a",
+        "CL-5413e715d40d2b50",
+        "CL-7030daff2ffb4118",
+        "CL-652453caf7e2525b",
+        "CL-bda970b74593ef85",
+        "CL-1664c1e84b50e11f",
+        "CL-28e393dcf2d388ef",
+        "CL-6dfd026efb1716d6"
+      ],
+      "source_refs": [
+        "SA-72ee90b730174e9d",
+        "SA-d49f2ee8a1216ee6"
+      ],
+      "data_date": "2026-06-25",
       "status": "verified"
     },
     {
@@ -6435,6 +6490,7 @@
         "EV-afd0332ad8f5f05b",
         "EV-2c87c8ea47cbd1b6",
         "EV-794296a712c1cf15",
+        "EV-e999f3386aba7a2e",
         "EV-bad301e14b034fbd",
         "EV-4763b46821ab746e",
         "EV-6b51b1b6fe22c540",
@@ -6472,6 +6528,7 @@
         "EN-4d748ebd71af03a7",
         "EN-c3e4cc183d345262",
         "EN-ab877737b6081bd1",
+        "EN-cbadff7c58c26e1a",
         "EN-06b5472c16feae4c",
         "EN-12b0c8b376b8375e",
         "EN-bab9670e68265ab1",
@@ -7482,7 +7539,7 @@
       "stageLabel": "已公布",
       "customer": "Anthropic",
       "vendor": "OpenAI",
-      "industry": "未披露",
+      "industry": "AI implementation services",
       "useCase": "AI 实施公司 Ode，初始资金 15 亿美元",
       "reportedNeed": "未披露",
       "deliveryComponents": [
@@ -7493,7 +7550,6 @@
         "$1.5 billion"
       ],
       "undisclosedFields": [
-        "industry",
         "workflow_before",
         "workflow_after",
         "delivery_model",
@@ -7501,8 +7557,7 @@
         "reported_need",
         "systems_integrated",
         "data_requirements",
-        "governance_controls",
-        "reported_outcomes"
+        "governance_controls"
       ],
       "tags": [],
       "sourceUrl": "https://techcrunch.com/2026/07/15/anthropic-blackstone-bet-the-next-trillion-dollar-ai-business-is-implementation-not-models",
@@ -7616,10 +7671,8 @@
         "industry",
         "workflow_before",
         "workflow_after",
-        "delivery_model",
         "team_composition",
         "reported_need",
-        "systems_integrated",
         "data_requirements",
         "governance_controls",
         "reported_outcomes"
@@ -7644,7 +7697,7 @@
       "stageLabel": "已公布",
       "customer": "OpenAI",
       "vendor": "UK law firm is latest",
-      "industry": "未披露",
+      "industry": "legal",
       "useCase": "legal AI startup Harvey",
       "reportedNeed": "未披露",
       "deliveryComponents": [
@@ -7653,7 +7706,6 @@
       "outcomes": [],
       "metrics": [],
       "undisclosedFields": [
-        "industry",
         "workflow_before",
         "workflow_after",
         "delivery_model",
@@ -7681,10 +7733,10 @@
       "stage": "completed",
       "stageLabel": "已完成",
       "customer": "OpenAI",
-      "vendor": "未披露",
-      "industry": "未披露",
+      "vendor": "OpenAI",
+      "industry": "电子",
       "useCase": "之一：三星向员工开放 ChatGPT 和 Codex",
-      "reportedNeed": "未披露",
+      "reportedNeed": "提升员工生产力和解决问题的能力",
       "deliveryComponents": [
         "IT之家 6 月 22 日消息，OpenAI 于当地时间 6 月 21 日宣布，三星电子正在全球向员工部署 ChatGPT Enterprise 和 Codex ，加速公司 AI 的采用。",
         "这是 OpenAI 迄今为止最大规模的企业部署之一 。"
@@ -7694,13 +7746,8 @@
       ],
       "metrics": [],
       "undisclosedFields": [
-        "vendor",
-        "industry",
         "workflow_before",
         "workflow_after",
-        "delivery_model",
-        "team_composition",
-        "reported_need",
         "data_requirements",
         "governance_controls"
       ],
@@ -7855,15 +7902,18 @@
       "stage": "announced",
       "stageLabel": "已公布",
       "customer": "Parloa",
-      "vendor": "未披露",
-      "industry": "未披露",
+      "vendor": "Parloa",
+      "industry": "enterprise customer service",
       "useCase": "$350M with SAP, Microsoft, OpenAI partnerships",
       "reportedNeed": "未披露",
       "deliveryComponents": [
         "The company has also signed partnerships with Five9, the cloud contact centre provider, and Epic, the healthcare software company, to bring HIPAA-ready AI agents into clinical and patient support workflows. Outsourcing giants TP, Concentrix, and Foundever are deploying Parloa agents within their own operations, a sign that the business process outsourcing industry sees agentic AI as augmentation rather than replacement.",
         "Parloa’s pitch is that it sits at a different layer. Rather than being a contact centre platform that added AI, or an AI model provider that added customer service, Parloa positions itself as the management layer for deploying, testing, and optimising AI agents across whatever infrastructure an enterprise already runs. Its Agent Management Platform handles the full lifecycle from simulation to production, with what the company calls “build once, deploy anywhere” agent composition."
       ],
-      "outcomes": [],
+      "outcomes": [
+        "surpassed $50 million in annual recurring revenue",
+        "150% net revenue retention"
+      ],
       "metrics": [
         "$350 million",
         "$50 million",
@@ -7872,17 +7922,11 @@
         "150%"
       ],
       "undisclosedFields": [
-        "vendor",
-        "industry",
-        "workflow_before",
-        "workflow_after",
         "delivery_model",
         "team_composition",
         "reported_need",
         "systems_integrated",
-        "data_requirements",
-        "governance_controls",
-        "reported_outcomes"
+        "data_requirements"
       ],
       "tags": [
         {
@@ -7983,7 +8027,7 @@
       "eventTypeLabel": "硬件产品",
       "computeLayer": "未披露",
       "supplier": "Broadcom",
-      "customer": "未披露",
+      "customer": "OpenAI",
       "processNode": "未披露",
       "capacity": "未披露",
       "capacityUnit": "",
@@ -8009,7 +8053,7 @@
       "hardwareType": "ai_accelerator",
       "eventType": "hardware_product",
       "eventTypeLabel": "硬件产品",
-      "computeLayer": "未披露",
+      "computeLayer": "inference",
       "supplier": "未披露",
       "customer": "未披露",
       "processNode": "未披露",

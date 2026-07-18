@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-17T21:25:16.366Z",
+    "generatedAt": "2026-07-18T01:48:05.545Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 818,
-    "quarantinedEventCount": 58
+    "eventCount": 823,
+    "quarantinedEventCount": 69
   },
   "entity": {
     "id": "EN-916a98f0fa2a39af",
@@ -1220,27 +1220,28 @@
       "stageLabel": "已公布",
       "customer": "ServiceNow",
       "vendor": "NVIDIA",
-      "industry": "未披露",
+      "industry": "enterprise",
       "useCase": "launch new AI agent - The Economic Times",
       "reportedNeed": "未披露",
       "deliveryComponents": [
         "Title: ServiceNow, Nvidia expand partnership, launch new AI agent - The Economic Times Business NewsTechAIServiceNow, Nvidia expand partnership, launch new AI agent. # ServiceNow, Nvidia expand partnership, launch new AI agent. ServiceNow and Nvidia unveiled Apriel Nemotron 15B, a new AI reasoning model, and launched the AI Control Tower and Workflow Data Fabric to optimise enterprise AI use. ServiceNow and Nvidia have announced an expansion of their partnership with the launch of a new class of intelligent AI agents across the enterprise, called Apriel Nemotron 15B. ServiceNow is a leading AI platform for business transformation, while NVIDIA is the leading provider of graphics processing units, which have powered the AI boom and lifted the company's market cap to almost USD 3 trillion. ServiceNow and NVIDIA also unveiled a new collaboration on a joint data flywheel architecture that will integrate ServiceNow Workflow Data Fabric and select NVIDIA NeMo microservices. ServiceNow also launched the AI Control Tower, a centralised command centre to govern, manage, secure, and realize value from any ServiceNow and third-party AI agent, model, and workflow on a single unified platform. ServiceNow partners, including Accenture, Adobe, Box, Cisco, Google Cloud, IBM, Jit, Microsoft, Moonhub, RADCOM, UKG, and Zoom are among those to be offering the first AI Agent Fabric integrations for seamless, wall to wall enterprise workflows across third-party agents, a company statement said. ServiceNow opened its annual customer and partner event by unveiling the new ServiceNow AI Platform to put any AI agent, or model to work across the enterprise. At the conference, ServiceNow launched AI agents to power the rise of self-defending enterprises. The new agents, available within ServiceNow's industry-leading Security and Risk solutions, are designed to improve consistency, identify insights, and reduce response times. ServiceNow also unveiled new Workflow Data Fabric capabilities, including a data ecosystem built to power AI agents and workflows with real-time intelligence. The new Workflow Data Network is a broad ecosystem of data platforms, applications, and enterprise tools that enhance Workflow Data Fabric and connect, understand, and take action from any data source, all on the ServiceNow AI Platform. At the conference, ServiceNow and Amazon Web Services (AWS) announced a new solution designed to help customers unify and act on enterprise data more efficiently through new, bi-directional data integration and automated workflow orchestration. / score=0.697 / query=AI agent product launch enterprise workflow platform announced 2026 / intent=find_original_source / path=official_original"
       ],
-      "outcomes": [],
+      "outcomes": [
+        "improve consistency",
+        "identify insights",
+        "reduce response times"
+      ],
       "metrics": [
         "3 trillion",
         "3 trillion"
       ],
       "undisclosedFields": [
-        "industry",
         "workflow_before",
         "workflow_after",
-        "delivery_model",
         "team_composition",
         "reported_need",
         "data_requirements",
-        "governance_controls",
-        "reported_outcomes"
+        "governance_controls"
       ],
       "tags": [
         {
@@ -1275,32 +1276,32 @@
       "stage": "planned",
       "stageLabel": "计划中",
       "customer": "IBM",
-      "vendor": "未披露",
+      "vendor": "IBM",
       "industry": "未披露",
       "useCase": "Units to Ship AI in Production - AI Learning Guides",
-      "reportedNeed": "未披露",
+      "reportedNeed": "Bridging the gap between AI pilots and production deployments at scale",
       "deliveryComponents": [
         "IBM Consulting launched Forward Deployed Units (FDUs) yesterday, a service-delivery model built around six-person pods that combine domain specialists, architects, and engineers with a “digital workforce” of specialized AI agents handling coding, evaluation, testing, and documentation. IBM Forward Deployed Units claim a 6-person pod can do the work of a 30-person team at materially better economics, with progress measured in working systems rather than slide decks. The first named deployments — Riyadh Air, Nestlé, Heineken, and Pearson — are already moving AI from isolated pilots into production at scale, and IBM says FDU rollout is expanding rapidly across Asia Pacific, Europe, and the US.",
         "The FDU model is IBM’s answer to the most-discussed problem in enterprise AI deployment in 2026: the gap between AI pilots that look great in demos and AI deployments that actually run in production. The reality across enterprises has been hard. Only 11-14% of enterprise AI agent pilots reached production at scale by mid-2026, with the rest stalling in integration, governance, and operational reliability issues. IBM’s bet is that the consulting-engagement model itself — armies of analysts, layered handoffs, slide-deck deliverables — is part of the problem, and that a smaller AI-augmented pod can ship faster precisely because it has less coordination overhead.",
         "Define the production-AI gap in your organization. The IBM Forward Deployed Units pitch is strongest when you’ve already attempted AI deployment and stalled. Document specifically what’s stuck, why, and what production looks like.",
         "IBM Forward Deployed Units"
       ],
-      "outcomes": [],
+      "outcomes": [
+        "6-person pod can do the work of a 30-person team at materially better economics",
+        "Progress measured in working systems rather than slide decks",
+        "First named deployments moving AI from isolated pilots into production at scale"
+      ],
       "metrics": [
         "14%"
       ],
       "undisclosedFields": [
-        "vendor",
         "industry",
         "workflow_before",
         "workflow_after",
-        "delivery_model",
         "team_composition",
-        "reported_need",
         "systems_integrated",
         "data_requirements",
-        "governance_controls",
-        "reported_outcomes"
+        "governance_controls"
       ],
       "tags": [
         {

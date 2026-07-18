@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-17T21:25:16.366Z",
+    "generatedAt": "2026-07-18T01:48:05.545Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 818,
-    "quarantinedEventCount": 58
+    "eventCount": 823,
+    "quarantinedEventCount": 69
   },
   "hardware": [
     {
@@ -245,11 +245,11 @@
       "eventTypeLabel": "硬件产品",
       "computeLayer": "data_center",
       "supplier": "NVIDIA",
-      "customer": "未披露",
+      "customer": "Google Cloud",
       "processNode": "未披露",
       "capacity": "未披露",
       "capacityUnit": "",
-      "site": "未披露",
+      "site": "Google Cloud",
       "region": "未披露",
       "contractValue": "未披露",
       "shipmentDate": "未披露",
@@ -275,7 +275,7 @@
       "eventTypeLabel": "硬件产品",
       "computeLayer": "未披露",
       "supplier": "Broadcom",
-      "customer": "未披露",
+      "customer": "OpenAI",
       "processNode": "未披露",
       "capacity": "未披露",
       "capacityUnit": "",
@@ -301,7 +301,7 @@
       "hardwareType": "ai_accelerator",
       "eventType": "hardware_product",
       "eventTypeLabel": "硬件产品",
-      "computeLayer": "未披露",
+      "computeLayer": "inference",
       "supplier": "未披露",
       "customer": "未披露",
       "processNode": "未披露",
@@ -332,7 +332,7 @@
       "eventTypeLabel": "硬件产品",
       "computeLayer": "edge",
       "supplier": "NVIDIA",
-      "customer": "未披露",
+      "customer": "BIOSTAR",
       "processNode": "未披露",
       "capacity": 128,
       "capacityUnit": "GB",
@@ -366,7 +366,7 @@
       "processNode": "未披露",
       "capacity": "未披露",
       "capacityUnit": "",
-      "site": "未披露",
+      "site": "第四届中国国际供应链促进博览会",
       "region": "中国",
       "contractValue": "未披露",
       "shipmentDate": "未披露",
@@ -461,11 +461,11 @@
       "eventTypeLabel": "硬件产品",
       "computeLayer": "未披露",
       "supplier": "MINIX",
-      "customer": "未披露",
+      "customer": "日本经销商 Links",
       "processNode": "未披露",
       "capacity": 128,
       "capacityUnit": "GB",
-      "site": "未披露",
+      "site": "日本",
       "region": "日本",
       "contractValue": "未披露",
       "shipmentDate": "未披露",
@@ -575,12 +575,12 @@
       "eventTypeLabel": "硬件产品",
       "computeLayer": "edge",
       "supplier": "NVIDIA",
-      "customer": "未披露",
+      "customer": "Supermicro",
       "processNode": "未披露",
       "capacity": 100,
       "capacityUnit": "GPU",
       "site": "未披露",
-      "region": "未披露",
+      "region": "San Jose, California",
       "contractValue": "未披露",
       "shipmentDate": "未披露",
       "tags": [
@@ -622,7 +622,7 @@
       "status": "completed",
       "statusLabel": "已完成",
       "publicationStatus": "verified",
-      "title": "Aina 从 Info Edge 等投资方获得 550 万美元融资，用于打造 AI 硬件界面",
+      "title": "Aina 从 Info Edge 等机构融资 550 万美元，用于构建 AI 硬件接口",
       "originalTitle": "Aina Raises $5.5 Mn From Info Edge, Others To Build AI Hardware Interface",
       "subject": "Aina",
       "action": "Raises",
@@ -1435,7 +1435,7 @@
       "status": "completed",
       "statusLabel": "已完成",
       "publicationStatus": "verified",
-      "title": "Overtone 获得 1800 万美元融资，用于 AI 约会服务",
+      "title": "Hinge 创始人筹集 1800 万美元打造新 AI 约会服务 Overtone",
       "originalTitle": "The founder of Hinge raised $18M to build a new AI dating service, Overtone",
       "subject": "The founder of Hinge",
       "action": "raised",
@@ -1479,7 +1479,7 @@
       "status": "completed",
       "statusLabel": "已完成",
       "publicationStatus": "verified",
-      "title": "Back-Office Platform Thira 获得 2100 万美元 种子轮融资，用于构建 AI 服务",
+      "title": "Thira 获 2100 万美元种子轮融资，打造自学习 AI 后台办公平台",
       "originalTitle": "Thira Raises $21 Million Seed To Build Self-Learning AI Back-Office Platform",
       "subject": "Thira",
       "action": "Raises",
@@ -1524,7 +1524,7 @@
       "status": "announced",
       "statusLabel": "已公布",
       "publicationStatus": "verified",
-      "title": "Hadrius 获得 2200 万美元 A 轮融资",
+      "title": "宣布完成2200万美元A轮融资",
       "originalTitle": "Announcing our $22 Million Series A",
       "subject": "Announcing our $22 Million",
       "action": "Series A",
@@ -3592,6 +3592,53 @@
       "products": [],
       "sourceUrl": "https://aisa.one/news/aisa-raises-6-5m-ai-agent-resource-network",
       "publisher": "aisa.one"
+    },
+    {
+      "id": "EV-81bd541510a530f0",
+      "dataDate": "2026-07-06",
+      "date": "2026-07-06",
+      "updatedDate": "2026-07-06",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Aligned获6000万美元融资，打造面向企业交易的AI原生销售执行层 - SiliconANGLE",
+      "originalTitle": "Aligned bags $60M in funding to build the AI-native sales execution layer for enterprise deals - SiliconANGLE",
+      "subject": "Team Aligned Inc.",
+      "action": "funding",
+      "object": "$60 million Series B round",
+      "metrics": [
+        "$60 million"
+      ],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-4ca9544527138c33",
+        "EN-96eebba49dbbf422"
+      ],
+      "entityNames": [
+        "Team Aligned Inc.",
+        "Intel"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://siliconangle.com/2026/07/01/aligned-bags-60m-funding-build-ai-native-sales-execution-layer-enterprise-deals",
+      "publisher": "siliconangle.com"
     },
     {
       "id": "EV-dfddbb260b3d1c77",
@@ -6255,6 +6302,49 @@
       "publisher": "IT之家（RSS）"
     },
     {
+      "id": "EV-9775b60c38285615",
+      "dataDate": "2026-06-24",
+      "date": "2026-06-24",
+      "updatedDate": "2026-06-24",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Modiqo完成种子轮前融资，以极低代币成本为企业带来确定性AI工作流",
+      "originalTitle": "Modiqo Raises Pre-Seed Round to Bring Deterministic AI Workflows to Enterprises at a Fraction of the Token Cost",
+      "subject": "Heavybit and Seligman Ventures",
+      "action": "Raises",
+      "object": "Pre-Seed Round to Bring Deterministic AI Workflows to Enterprises at a Fraction of the Token Cost",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-aa06a7dba2266341"
+      ],
+      "entityNames": [
+        "Modiqo"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://prnewswire.com/news-releases/modiqo-raises-pre-seed-round-to-bring-deterministic-ai-workflows-to-enterprises-at-a-fraction-of-the-token-cost-302784345.html",
+      "publisher": "prnewswire.com"
+    },
+    {
       "id": "EV-34255348e97ca5fe",
       "dataDate": "2026-07-16",
       "date": "2026-06-23",
@@ -7804,6 +7894,49 @@
       "products": [],
       "sourceUrl": "https://ithome.com/0/965/083.htm",
       "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-c4c8976ab5b629a3",
+      "dataDate": "2026-06-17",
+      "date": "2026-06-16",
+      "updatedDate": "2026-06-17",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Probably 获 900 万美元种子轮，构建更可靠的 AI 错误检测系统",
+      "originalTitle": "",
+      "subject": "Probably",
+      "action": "funding",
+      "object": "$9 million seed funding from Andreessen Horowitz",
+      "metrics": [
+        "$9 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-a8ef01283d653e46"
+      ],
+      "entityNames": [
+        "Probably"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/06/16/probably-raises-9m-to-build-a-more-reliable-kind-of-ai",
+      "publisher": "TechCrunch：AI（RSS）"
     },
     {
       "id": "EV-edcb66d0401cfb8f",
@@ -9687,6 +9820,53 @@
       "products": [],
       "sourceUrl": "https://prnewswire.com/news-releases/factorial-raises-150m-series-d-reaches-2-5-billion-valuation-to-become-one-of-the-most-valuable-ai-scale-ups-in-europe-302789078.html",
       "publisher": "prnewswire.com"
+    },
+    {
+      "id": "EV-e8d1de5c77f32b9c",
+      "dataDate": "2026-06-08",
+      "date": "2026-06-08",
+      "updatedDate": "2026-06-08",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Graphon AI 获 830 万美元种子轮融资，为企业 AI 构建预模型智能层",
+      "originalTitle": "Graphon AI raises $8.3M seed to build a pre-model intelligence layer for enterprise AI",
+      "subject": "Graphon AI",
+      "action": "raises",
+      "object": "$8.3M seed to build a pre-model intelligence layer for enterprise AI",
+      "metrics": [
+        "$8.3 million"
+      ],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-67e05af6c6502566",
+        "EN-96eebba49dbbf422"
+      ],
+      "entityNames": [
+        "Graphon AI",
+        "Intel"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://thenextweb.com/news/graphon-ai-pre-model-intelligence-layer-seed-funding",
+      "publisher": "thenextweb.com"
     },
     {
       "id": "EV-9e678b626c2a5c83",
@@ -20979,6 +21159,87 @@
       "publisher": "IT之家（RSS）"
     },
     {
+      "id": "EV-e999f3386aba7a2e",
+      "dataDate": "2026-06-14",
+      "date": "2026-06-13",
+      "updatedDate": "2026-06-14",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "京东健康与北京友谊医院共建消化系统专科大模型，应用胃肠镜早癌筛查",
+      "originalTitle": "",
+      "subject": "京东健康",
+      "action": "partnership",
+      "object": "北京友谊医院",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          }
+        ],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "healthcare_life_sciences",
+            "dimensionName": "行业",
+            "name": "医疗与生命科学"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "healthcare_life_sciences",
+          "dimensionName": "行业",
+          "name": "医疗与生命科学"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "healthcare_life_sciences",
+          "dimensionName": "行业",
+          "name": "医疗与生命科学"
+        }
+      ],
+      "entityIds": [
+        "EN-cbadff7c58c26e1a"
+      ],
+      "entityNames": [
+        "京东健康"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/963/924.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
       "id": "EV-bad301e14b034fbd",
       "dataDate": "2026-06-13",
       "date": "2026-06-13",
@@ -25400,7 +25661,7 @@
       "status": "planned",
       "statusLabel": "计划中",
       "publicationStatus": "partial",
-      "title": "TYLsemi 获得 4300 万美元融资，用于推出全栈 Chiplet 平台与定制 AI 芯片",
+      "title": "TYLsemi 获 4300 万美元融资，推出首个全栈芯粒平台用于定制 AI 芯片",
       "originalTitle": "TYLsemi Raises $43 Million to Launch First Full-Stack Chiplet Platform for Custom AI Silicon - TYLsemi",
       "subject": "TYLsemi Raises $43 Million to",
       "action": "Launch",
@@ -30342,7 +30603,7 @@
       "status": "announced",
       "statusLabel": "已公布",
       "publicationStatus": "verified",
-      "title": "Crusoe 发布 Serverless Fine-Tuning 与 Self-Serve Inference 部署，推动模型进入生产",
+      "title": "Crusoe 推出无服务器微调与自助推理部署，加速开放模型从实验到生产的开发进程",
       "originalTitle": "Crusoe Launches Serverless Fine-Tuning and Self-Serve Inference Deployments, Accelerating Open-Model Development From Experiment to Production",
       "subject": "Crusoe",
       "action": "Launches Serverless Fine-Tuning and Self-Serve Inference Deployments, Accelerating Open-Model",

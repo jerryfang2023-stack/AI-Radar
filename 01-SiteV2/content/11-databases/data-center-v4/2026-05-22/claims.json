@@ -460,5 +460,49 @@
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b3b5276f20b71ef6",
+    "raw_id": "RAW-34ce01e50a852c76",
+    "claim_type": "funding",
+    "subject": "Anthropic",
+    "predicate": "funding",
+    "object": "more than $20 billion funding round",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1,
+      "model_candidate_id": "MAC-1647895f6670ec8c"
+    },
+    "source_span": {
+      "raw_id": "RAW-34ce01e50a852c76",
+      "start": 124,
+      "end": 275
+    },
+    "source_quote": "AI startup Anthropic is ironing out the final details on a funding round likely to raise more than $20 billion and slated to close as soon as next week",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-f5f8207d72754388",
+    "raw_id": "RAW-34ce01e50a852c76",
+    "claim_type": "funding",
+    "subject": "Anthropic",
+    "predicate": "funding",
+    "object": "$350 billion valuation",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2,
+      "model_candidate_id": "MAC-1647895f6670ec8c"
+    },
+    "source_span": {
+      "raw_id": "RAW-34ce01e50a852c76",
+      "start": 394,
+      "end": 472
+    },
+    "source_quote": "now on track to raise more than double that amount at a $350 billion valuation",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
   }
 ]

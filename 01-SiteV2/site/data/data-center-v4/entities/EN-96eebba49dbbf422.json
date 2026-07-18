@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-17T21:25:16.366Z",
+    "generatedAt": "2026-07-18T01:48:05.545Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 818,
-    "quarantinedEventCount": 58
+    "eventCount": 823,
+    "quarantinedEventCount": 69
   },
   "entity": {
     "id": "EN-96eebba49dbbf422",
@@ -31,6 +31,7 @@
       "EV-48075ca70a5458ec",
       "EV-7b1c734882fa1ea6",
       "EV-b3c7c4bff17063d8",
+      "EV-81bd541510a530f0",
       "EV-2bb63a3015195f9b",
       "EV-d4e44892226be468",
       "EV-921c843ad32c993c",
@@ -46,6 +47,7 @@
       "EV-c0d19b8641a7a36c",
       "EV-ee0662b75588987e",
       "EV-e941c32639167c23",
+      "EV-e8d1de5c77f32b9c",
       "EV-6ae3594aadfcd3d8",
       "EV-bc4ac955cd26b969",
       "EV-88f4ee8cd57bdf42",
@@ -163,6 +165,7 @@
         "EV-48075ca70a5458ec",
         "EV-7b1c734882fa1ea6",
         "EV-b3c7c4bff17063d8",
+        "EV-81bd541510a530f0",
         "EV-2bb63a3015195f9b",
         "EV-d4e44892226be468",
         "EV-921c843ad32c993c",
@@ -181,6 +184,7 @@
         "EV-c0d19b8641a7a36c",
         "EV-ee0662b75588987e",
         "EV-e941c32639167c23",
+        "EV-e8d1de5c77f32b9c",
         "EV-6ae3594aadfcd3d8",
         "EV-bc4ac955cd26b969",
         "EV-88f4ee8cd57bdf42",
@@ -415,7 +419,7 @@
         "eventGroup": "模型、产品与服务",
         "status": "announced",
         "statusLabel": "已公布",
-        "title": "Crusoe 发布 Serverless Fine-Tuning 与 Self-Serve Inference 部署，推动模型进入生产",
+        "title": "Crusoe 推出无服务器微调与自助推理部署，加速开放模型从实验到生产的开发进程",
         "displayTags": [
           {
             "dimensionId": "product_form",
@@ -1174,6 +1178,22 @@
           "EN-a736e4d4ef0af078",
           "EN-96eebba49dbbf422",
           "EN-968e2d5b08687bf4"
+        ]
+      },
+      {
+        "id": "EV-81bd541510a530f0",
+        "dataDate": "2026-07-06",
+        "date": "2026-07-06",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Aligned获6000万美元融资，打造面向企业交易的AI原生销售执行层 - SiliconANGLE",
+        "displayTags": [],
+        "entityIds": [
+          "EN-4ca9544527138c33",
+          "EN-96eebba49dbbf422"
         ]
       },
       {
@@ -2325,6 +2345,22 @@
           "EN-c70eca6b0f88f44d",
           "EN-96eebba49dbbf422",
           "EN-41dcc2d4951f337b"
+        ]
+      },
+      {
+        "id": "EV-e8d1de5c77f32b9c",
+        "dataDate": "2026-06-08",
+        "date": "2026-06-08",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Graphon AI 获 830 万美元种子轮融资，为企业 AI 构建预模型智能层",
+        "displayTags": [],
+        "entityIds": [
+          "EN-67e05af6c6502566",
+          "EN-96eebba49dbbf422"
         ]
       },
       {
@@ -3983,6 +4019,7 @@
         "EV-afd0332ad8f5f05b",
         "EV-2c87c8ea47cbd1b6",
         "EV-794296a712c1cf15",
+        "EV-e999f3386aba7a2e",
         "EV-bad301e14b034fbd",
         "EV-4763b46821ab746e",
         "EV-6b51b1b6fe22c540",
@@ -4020,6 +4057,7 @@
         "EN-4d748ebd71af03a7",
         "EN-c3e4cc183d345262",
         "EN-ab877737b6081bd1",
+        "EN-cbadff7c58c26e1a",
         "EN-06b5472c16feae4c",
         "EN-12b0c8b376b8375e",
         "EN-bab9670e68265ab1",
@@ -5074,7 +5112,7 @@
       "vendor": "Google Cloud",
       "industry": "未披露",
       "useCase": "Accelerate Intel’s AI-Enabled Enterprise Transformation",
-      "reportedNeed": "未披露",
+      "reportedNeed": "Tools that help employees move with greater speed, agility, and efficiency",
       "deliveryComponents": [
         "SANTA CLARA, Calif., and SUNNYVALE, Calif. &ndash; July 16, 2026 &ndash; Intel and Google Cloud today announced an expansion of their previously announced multi-year strategic collaboration, which would accelerate Intel&rsquo;s enterprise-wide digital evolution through the deployment of Gemini Enterprise and Google Cloud."
       ],
@@ -5084,9 +5122,7 @@
         "industry",
         "workflow_before",
         "workflow_after",
-        "delivery_model",
         "team_composition",
-        "reported_need",
         "data_requirements",
         "governance_controls",
         "reported_outcomes"
@@ -5328,27 +5364,28 @@
       "stageLabel": "已公布",
       "customer": "ServiceNow",
       "vendor": "NVIDIA",
-      "industry": "未披露",
+      "industry": "enterprise",
       "useCase": "launch new AI agent - The Economic Times",
       "reportedNeed": "未披露",
       "deliveryComponents": [
         "Title: ServiceNow, Nvidia expand partnership, launch new AI agent - The Economic Times Business NewsTechAIServiceNow, Nvidia expand partnership, launch new AI agent. # ServiceNow, Nvidia expand partnership, launch new AI agent. ServiceNow and Nvidia unveiled Apriel Nemotron 15B, a new AI reasoning model, and launched the AI Control Tower and Workflow Data Fabric to optimise enterprise AI use. ServiceNow and Nvidia have announced an expansion of their partnership with the launch of a new class of intelligent AI agents across the enterprise, called Apriel Nemotron 15B. ServiceNow is a leading AI platform for business transformation, while NVIDIA is the leading provider of graphics processing units, which have powered the AI boom and lifted the company's market cap to almost USD 3 trillion. ServiceNow and NVIDIA also unveiled a new collaboration on a joint data flywheel architecture that will integrate ServiceNow Workflow Data Fabric and select NVIDIA NeMo microservices. ServiceNow also launched the AI Control Tower, a centralised command centre to govern, manage, secure, and realize value from any ServiceNow and third-party AI agent, model, and workflow on a single unified platform. ServiceNow partners, including Accenture, Adobe, Box, Cisco, Google Cloud, IBM, Jit, Microsoft, Moonhub, RADCOM, UKG, and Zoom are among those to be offering the first AI Agent Fabric integrations for seamless, wall to wall enterprise workflows across third-party agents, a company statement said. ServiceNow opened its annual customer and partner event by unveiling the new ServiceNow AI Platform to put any AI agent, or model to work across the enterprise. At the conference, ServiceNow launched AI agents to power the rise of self-defending enterprises. The new agents, available within ServiceNow's industry-leading Security and Risk solutions, are designed to improve consistency, identify insights, and reduce response times. ServiceNow also unveiled new Workflow Data Fabric capabilities, including a data ecosystem built to power AI agents and workflows with real-time intelligence. The new Workflow Data Network is a broad ecosystem of data platforms, applications, and enterprise tools that enhance Workflow Data Fabric and connect, understand, and take action from any data source, all on the ServiceNow AI Platform. At the conference, ServiceNow and Amazon Web Services (AWS) announced a new solution designed to help customers unify and act on enterprise data more efficiently through new, bi-directional data integration and automated workflow orchestration. / score=0.697 / query=AI agent product launch enterprise workflow platform announced 2026 / intent=find_original_source / path=official_original"
       ],
-      "outcomes": [],
+      "outcomes": [
+        "improve consistency",
+        "identify insights",
+        "reduce response times"
+      ],
       "metrics": [
         "3 trillion",
         "3 trillion"
       ],
       "undisclosedFields": [
-        "industry",
         "workflow_before",
         "workflow_after",
-        "delivery_model",
         "team_composition",
         "reported_need",
         "data_requirements",
-        "governance_controls",
-        "reported_outcomes"
+        "governance_controls"
       ],
       "tags": [
         {
@@ -5387,7 +5424,13 @@
       "industry": "未披露",
       "useCase": "launch new AI agent, ETTelecom",
       "reportedNeed": "未披露",
-      "deliveryComponents": [],
+      "deliveryComponents": [
+        "Apriel Nemotron 15B",
+        "joint data flywheel architecture",
+        "AI Control Tower",
+        "Workflow Data Fabric capabilities",
+        "Workflow Data Network"
+      ],
       "outcomes": [],
       "metrics": [],
       "undisclosedFields": [
@@ -5400,7 +5443,6 @@
         "systems_integrated",
         "data_requirements",
         "governance_controls",
-        "reported_delivery_components",
         "reported_outcomes"
       ],
       "tags": [
@@ -5428,7 +5470,7 @@
       "stageLabel": "已公布",
       "customer": "OpenAI",
       "vendor": "UK law firm is latest",
-      "industry": "未披露",
+      "industry": "legal",
       "useCase": "legal AI startup Harvey",
       "reportedNeed": "未披露",
       "deliveryComponents": [
@@ -5437,7 +5479,6 @@
       "outcomes": [],
       "metrics": [],
       "undisclosedFields": [
-        "industry",
         "workflow_before",
         "workflow_after",
         "delivery_model",
@@ -5504,20 +5545,18 @@
       "stageLabel": "已公布",
       "customer": "IndiaMART",
       "vendor": "未披露",
-      "industry": "未披露",
+      "industry": "B2B commerce",
       "useCase": "India’s Largest Agentic AI System, VANI, Powering over 1 Lakh Autonomous Buyer-Seller Conversations Daily |",
-      "reportedNeed": "未披露",
+      "reportedNeed": "ensure quality conversation among buyers, maintain uniformity, and provide better customer experience",
       "deliveryComponents": [],
       "outcomes": [],
       "metrics": [],
       "undisclosedFields": [
         "vendor",
-        "industry",
         "workflow_before",
         "workflow_after",
         "delivery_model",
         "team_composition",
-        "reported_need",
         "systems_integrated",
         "data_requirements",
         "governance_controls",
@@ -5551,7 +5590,7 @@
       "vendor": "Intel",
       "industry": "未披露",
       "useCase": "Anthropic CEO 称政府应有权阻止高风险新 AI 模型部署",
-      "reportedNeed": "未披露",
+      "reportedNeed": "AI models should undergo mandatory testing by third parties to assess the risk they pose across several categories, including enabling cybersecurity threats and biological weapons",
       "deliveryComponents": [
         "Anthropic PBC Chief Executive Officer Dario Amodei said the government should have the power to block artificial intelligence developers from deploying new AI models if they present certain risks.",
         "In a lengthy essay on Wednesday, Amodei argued that AI models should undergo mandatory testing by third parties to assess the risk they pose across several categories, including enabling cybersecurity threats and biological weapons. If the AI is deemed to “present unacceptable risks,” he wrote, “the government should have the power to block or deter deployment.”"
@@ -5564,7 +5603,6 @@
         "workflow_after",
         "delivery_model",
         "team_composition",
-        "reported_need",
         "systems_integrated",
         "data_requirements",
         "governance_controls",
@@ -5637,7 +5675,7 @@
       "hardwareType": "ai_accelerator",
       "eventType": "hardware_product",
       "eventTypeLabel": "硬件产品",
-      "computeLayer": "未披露",
+      "computeLayer": "inference",
       "supplier": "未披露",
       "customer": "未披露",
       "processNode": "未披露",
@@ -5668,12 +5706,12 @@
       "eventTypeLabel": "硬件产品",
       "computeLayer": "edge",
       "supplier": "NVIDIA",
-      "customer": "未披露",
+      "customer": "Supermicro",
       "processNode": "未披露",
       "capacity": 100,
       "capacityUnit": "GPU",
       "site": "未披露",
-      "region": "未披露",
+      "region": "San Jose, California",
       "contractValue": "未披露",
       "shipmentDate": "未披露",
       "tags": [
