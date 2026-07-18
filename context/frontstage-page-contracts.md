@@ -41,6 +41,7 @@ The legacy Business Signals Card set remains an internal compatibility dataset f
 | Enterprise AI / FDE lens | `EAI-V1.2.0-raw-card-ingestion-boundary` | Boss-facing implementation lens backed by the independent FDE Lens Pool; title translation and fact extraction belong to Raw/Card/FDE asset generation, not generic frontstage blocking; not a fourth Card type. |
 | Reports Center column | `REPORTS-V1.0.0-periodic-report-center` | Owns latest Monthly / Weekly reports, archives, accepted content sources, deterministic page rendering, and the monthly/weekly page-generator Skills. |
 | Opportunity Map column | `OMAP-V1.0.0-independent-column` | Owns the dedicated application projection, two source-backed matrices, and click-to-open map-cell evidence. |
+| Person-account review | `PERSON-REVIEW-V1.0` | Admits only reviewed natural people to the Entity Index while preserving viewpoints from quarantined non-natural accounts without a person entity link. |
 
 ## Navigation
 

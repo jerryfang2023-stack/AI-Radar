@@ -10,7 +10,7 @@ use_when:
 priority: current
 ---
 
-# SITE-V4.1 Experience Automation
+# SITE-V4.2 Experience Automation
 
 This file defines the lightweight automation for recording development actions and generating experience retrospectives.
 

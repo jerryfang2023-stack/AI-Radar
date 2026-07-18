@@ -3,7 +3,7 @@ name: guanlan-weekly-report-page-generator
 description: Use when creating, updating, or repairing WaveSight AI weekly report frontstage pages from `01-SiteV2/content/08-report/`. Applies to Industry Reports weekly entries, weekly report detail pages, time-window selectors, report archive wiring, Guanlan VI page styling, and converting weekly report Markdown into editorial page modules. Do not use for writing the weekly report judgment itself; use `guanlan-weekly-business-change-radar` first.
 metadata:
   guanlan:
-    version: "1.1.0"
+    version: "1.1.1"
     column_version: "REPORTS-V1.0.0-periodic-report-center"
     lane: "Reports Center"
     status: "current sub-skill"
@@ -57,7 +57,7 @@ For detailed rules, load:
 2. Extract page fields.
    - Use frontmatter `title`, `date`, `week`, `window`, `slug`, and `content_type`.
    - Generate the visible title from the report content, not from a generic label such as “本周 AI 商业变化判断”.
-   - Preserve the time window as a selector on both the Intelligence Map entry and detail page.
+   - Preserve the time window as a selector on both the Industry Reports entry (`intelligence-map.html`) and detail page.
 
 3. Build the Industry Reports entry.
    - Keep weekly reports in the Industry Reports area of `intelligence-map.html`.

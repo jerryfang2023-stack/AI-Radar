@@ -120,6 +120,10 @@ jobs:
         if: steps.deployment-gate.outputs.deploy == 'true'
         uses: actions/configure-pages@v6
 
+      - name: Assert current version consistency
+        if: steps.deployment-gate.outputs.deploy == 'true'
+        run: node agent-workflow/tools/assert-version-consistency.mjs
+
       - name: Archive Frontstage artifact
         if: steps.deployment-gate.outputs.deploy == 'true'
         shell: bash

@@ -200,9 +200,9 @@ Skill 是能力模块，不是流程 owner。
 
 | 能力 | 优先使用 |
 |---|---|
-| 每日监测 | `skills/guanlan-daily-monitor/SKILL.md` |
-| 监测预闸门 | `skills/guanlan-monitor-quality-gate/SKILL.md` |
-| Raw / Pool 质检 | `skills/guanlan-daily-monitor-qc/SKILL.md` |
+| 每日监测 | `agent-workflow/skills/guanlan-daily-monitor/SKILL.md` |
+| 监测预闸门 | `agent-workflow/skills/guanlan-monitor-quality-gate/SKILL.md` |
+| Raw / Pool 质检 | `agent-workflow/skills/guanlan-daily-monitor-qc/SKILL.md` |
 | V4 页面字段与表达 | `context/frontstage-page-contracts.md` + 目标数据合同 |
 | 报告页表达 | 对应周报 / 月报页面生成 Skill |
 | 字体位置审查 | `guanlan-typography-qc` |

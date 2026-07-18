@@ -109,4 +109,4 @@ Search queries, result snippets, candidates, and no-findings runs cannot create 
 
 ## Page contract
 
-The unified V4 Data Center and Industry Reports page system is governed by `context/frontstage-page-contracts.md`. Legacy V3 column URLs are redirects only. Existing trend, opportunity, report, and importance-sorted outputs may continue only as internal compatibility or downstream application data. They do not enter V4 tables.
+The unified V4 shell for Data Center, Industry Reports, and the independent Opportunity Map is governed by `context/frontstage-page-contracts.md`. Legacy V3 column URLs are redirects only. Existing trend, opportunity, report, and importance-sorted outputs may continue only as internal compatibility or downstream application data. They do not enter V4 tables.

@@ -1,14 +1,14 @@
 ---
 name: guanlan-monthly-business-structure-report
-description: Produce WaveSight AI monthly business structure and opportunity reports. Use when writing, revising, or auditing a monthly report from Business compatibility Cards, weekly reports, Community Intelligence, First-Line Viewpoints, Industry Reports context, trend candidates, or opportunity maps. The report must diagnose industry-structure change, adjudicate trends, build an opportunity map, and define next-month verification conditions. Do not use for daily Cards, weekly reports, frontstage page generation, or business-signal fact creation.
+description: Produce WaveSight AI monthly business structure and opportunity reports. Use when writing, revising, or auditing a monthly report from Business compatibility Cards, weekly reports, Community Intelligence, First-Line Viewpoints, internal trend candidates, or the independent Opportunity Map projection. The report must diagnose industry-structure change, adjudicate trends, interpret source-backed opportunity evidence, and define next-month verification conditions. Do not use for daily Cards, weekly reports, frontstage page generation, or business-signal fact creation.
 metadata:
   guanlan:
-    version: "0.2.0"
+    version: "0.2.1"
     lane: "Business Signals"
     status: "downstream application"
     order: 95
-    responsibility: "Write monthly AI business structure and opportunity reports from compatibility Cards, weekly reports, Community Intelligence, First-Line Viewpoints, and Industry Reports context."
-    upstream: "Business compatibility Cards, weekly business change radar reports, Community Intelligence demand signals, First-Line Viewpoints expectation shifts, Industry Reports context"
+    responsibility: "Write monthly AI business structure and opportunity reports from compatibility Cards, weekly reports, Community Intelligence, First-Line Viewpoints, internal trend candidates, and the independent Opportunity Map projection."
+    upstream: "Business compatibility Cards, weekly business change radar reports, Community Intelligence demand signals, First-Line Viewpoints expectation shifts, internal trend candidates, Opportunity Map projection"
     downstream: "monthly business structure report, trend adjudication table, opportunity map, next-month verification list"
     gates: "headline tension and structural consequence, source-backed fact boundary, no weekly-roundup structure, multi-signal trend threshold, opportunity buyer/workflow/trigger completeness, next-month verification conditions"
     recent_learning: "月报标题应选择一个最强结构判断，并写清它如何改变预算、采购、成本、交付或竞争位置；不要把日期、报告类型和多个趋势压进标题。"
@@ -153,7 +153,7 @@ Before finalizing:
 1. The title passes the Headline Contract and states one evidence-bounded structural consequence.
 2. Data scope includes exact files, counts, and boundary notes.
 3. The report is not a four-week news or weekly-report digest.
-4. Every core claim is traceable to compatibility Cards, weekly reports, Community, Viewpoints, or Industry Reports inputs.
+4. Every core claim is traceable to compatibility Cards, weekly reports, Community, Viewpoints, internal trend candidates, or accepted Opportunity Map inputs.
 5. Community and Viewpoints are not used as fact evidence.
 6. At least one trend is downgraded or removed when evidence is weak.
 7. Opportunity cards include buyer, pain, supply gap, path, risk, and verification signal.

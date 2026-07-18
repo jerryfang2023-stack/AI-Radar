@@ -1,8 +1,8 @@
 window.WaveSightOpsConsole = {
   "meta": {
     "version": "OPS-V1.2.3-content-factory-cleanout",
-    "generatedAt": "2026-07-02T08:39:51.827Z",
-    "date": "2026-07-02",
+    "generatedAt": "2026-07-18T09:26:29.999Z",
+    "date": "2026-07-16",
     "sources": [
       "agent-workflow/reports/daily-supervision-report-latest.json",
       "01-SiteV2/site/data/pipeline-dashboard.json",
@@ -41,36 +41,21 @@ window.WaveSightOpsConsole = {
     }
   ],
   "daily": {
-    "date": "2026-07-02",
-    "status": "manual_required",
-    "statusText": "需人工处理",
+    "date": "2026-07-16",
+    "status": "waiting",
+    "statusText": "等待中",
     "issueSummary": {
-      "total": 52,
-      "daily": 6,
+      "total": 54,
+      "daily": 7,
       "open": 11,
-      "resolved": 41,
-      "urgent": 1
+      "resolved": 43,
+      "urgent": 0
     },
     "issues": [
       {
-        "id": "supervision-2026-07-02-skill_ops-problem-0",
-        "date": "2026-07-02",
-        "title": "skill-registry.md is stale; run npm run build:skill-registry",
-        "status": "manual_required",
-        "state": "open",
-        "priority": "high",
-        "laneId": "skill_ops",
-        "lane": "Skill Ops Governance",
-        "category": "manual_required",
-        "source": "daily-supervision",
-        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-        "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, or .skill-store mirror",
-        "evidence": "daily supervision preflight"
-      },
-      {
-        "id": "supervision-2026-07-02-community_intelligence-warning-0",
-        "date": "2026-07-02",
-        "title": "same-date Community Intelligence automation PR already merged: https://github.com/jerryfang2023-stack/AI-Radar/pull/189",
+        "id": "supervision-2026-07-16-community_intelligence-warning-0",
+        "date": "2026-07-16",
+        "title": "same-date Community Intelligence automation PR already merged: https://github.com/jerryfang2023-stack/AI-Radar/pull/305",
         "status": "warning",
         "state": "open",
         "priority": "normal",
@@ -80,12 +65,12 @@ window.WaveSightOpsConsole = {
         "source": "daily-supervision",
         "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
         "neededAction": "",
-        "evidence": "08:30 local collection; 08:45 / 10:45 GitHub publish windows; Daily Problem Watchdog records failures to Hermes inbox"
+        "evidence": "08:30 local collection; 08:45 / 09:35 GitHub publish windows; Daily Problem Watchdog records failures to Hermes inbox"
       },
       {
-        "id": "supervision-2026-07-02-business_signals-warning-0",
-        "date": "2026-07-02",
-        "title": "signal card files 8 below 10, but source-backed Core Pool Top10 fallback is healthy",
+        "id": "supervision-2026-07-16-business_signals-warning-0",
+        "date": "2026-07-16",
+        "title": "business-signal activeDate is 2026-07-15, expected 2026-07-16; Business Signals workflow is in_progress",
         "status": "warning",
         "state": "open",
         "priority": "normal",
@@ -94,13 +79,13 @@ window.WaveSightOpsConsole = {
         "category": "warning",
         "source": "daily-supervision",
         "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-        "neededAction": "",
+        "neededAction": "wait for Business Signals workflow completion before declaring data missing",
         "evidence": "08:57 primary production; 09:27 conditional health dispatch; Daily Problem Watchdog records failures to Hermes inbox"
       },
       {
-        "id": "supervision-2026-07-02-business_signals-warning-1",
-        "date": "2026-07-02",
-        "title": "latest same-date GitHub Pages workflow conclusion is skipped",
+        "id": "supervision-2026-07-16-business_signals-warning-1",
+        "date": "2026-07-16",
+        "title": "public Card count is 0 for 2026-07-16; Business Signals workflow is in_progress",
         "status": "warning",
         "state": "open",
         "priority": "normal",
@@ -109,13 +94,13 @@ window.WaveSightOpsConsole = {
         "category": "warning",
         "source": "daily-supervision",
         "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-        "neededAction": "",
+        "neededAction": "wait for Business Signals workflow completion before declaring data missing",
         "evidence": "08:57 primary production; 09:27 conditional health dispatch; Daily Problem Watchdog records failures to Hermes inbox"
       },
       {
-        "id": "supervision-2026-07-02-business_signals-warning-2",
-        "date": "2026-07-02",
-        "title": "local Obsidian sync may be blocked by 3 dirty file(s)",
+        "id": "supervision-2026-07-16-business_signals-warning-2",
+        "date": "2026-07-16",
+        "title": "no same-date signal Card files or frontstage Core Signal Cards; Business Signals workflow is in_progress",
         "status": "warning",
         "state": "open",
         "priority": "normal",
@@ -124,13 +109,13 @@ window.WaveSightOpsConsole = {
         "category": "warning",
         "source": "daily-supervision",
         "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-        "neededAction": "",
+        "neededAction": "wait for Business Signals workflow completion before declaring data missing",
         "evidence": "08:57 primary production; 09:27 conditional health dispatch; Daily Problem Watchdog records failures to Hermes inbox"
       },
       {
-        "id": "supervision-2026-07-02-business_signals-warning-3",
-        "date": "2026-07-02",
-        "title": "latest Business Signals workflow conclusion is cancelled, but same-date data and gates are healthy; repair branch / PR / publication only",
+        "id": "supervision-2026-07-16-business_signals-warning-3",
+        "date": "2026-07-16",
+        "title": "missing same-date persistent asset manifest: agent-workflow/reports/2026-07-16-persistent-asset-manifest.json",
         "status": "warning",
         "state": "open",
         "priority": "normal",
@@ -139,7 +124,37 @@ window.WaveSightOpsConsole = {
         "category": "warning",
         "source": "daily-supervision",
         "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-        "neededAction": "",
+        "neededAction": "wait for Business Signals workflow completion before declaring data missing",
+        "evidence": "08:57 primary production; 09:27 conditional health dispatch; Daily Problem Watchdog records failures to Hermes inbox"
+      },
+      {
+        "id": "supervision-2026-07-16-business_signals-warning-4",
+        "date": "2026-07-16",
+        "title": "missing quality gate report: agent-workflow/reports/2026-07-16-guanlan-monitor-quality-gate.md",
+        "status": "warning",
+        "state": "open",
+        "priority": "normal",
+        "laneId": "business_signals",
+        "lane": "Business Signals / Intelligence Map / Dashboard",
+        "category": "warning",
+        "source": "daily-supervision",
+        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+        "neededAction": "wait for Business Signals workflow completion before declaring data missing",
+        "evidence": "08:57 primary production; 09:27 conditional health dispatch; Daily Problem Watchdog records failures to Hermes inbox"
+      },
+      {
+        "id": "supervision-2026-07-16-business_signals-warning-5",
+        "date": "2026-07-16",
+        "title": "missing readiness report: agent-workflow/reports/2026-07-16-daily-production-chain-readiness.md",
+        "status": "warning",
+        "state": "open",
+        "priority": "normal",
+        "laneId": "business_signals",
+        "lane": "Business Signals / Intelligence Map / Dashboard",
+        "category": "warning",
+        "source": "daily-supervision",
+        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+        "neededAction": "wait for Business Signals workflow completion before declaring data missing",
         "evidence": "08:57 primary production; 09:27 conditional health dispatch; Daily Problem Watchdog records failures to Hermes inbox"
       }
     ]
@@ -147,134 +162,27 @@ window.WaveSightOpsConsole = {
   "periods": {
     "weekly": {
       "windowDays": 7,
-      "total": 20,
-      "open": 9,
-      "resolved": 11,
+      "total": 7,
+      "open": 7,
+      "resolved": 0,
       "byLane": {
-        "skill_ops": 4,
-        "community_intelligence": 4,
-        "business_signals": 11,
-        "follow_builders_skill": 1
+        "community_intelligence": 1,
+        "business_signals": 6
       },
       "byCategory": {
-        "manual_required": 1,
-        "warning": 5,
-        "business_signals_top10_missing": 2,
-        "community_intelligence": 2,
-        "monitor_or_gate_failure": 4,
-        "no_run_or_stale_assets": 3,
-        "core_supply_shortfall": 1,
-        "daily_problem_watchdog": 1,
-        "skill_ops": 1
+        "warning": 7
       },
       "recurring": [
         {
           "category": "warning",
-          "count": 5
-        },
-        {
-          "category": "monitor_or_gate_failure",
-          "count": 4
-        },
-        {
-          "category": "no_run_or_stale_assets",
-          "count": 3
-        },
-        {
-          "category": "business_signals_top10_missing",
-          "count": 2
-        },
-        {
-          "category": "community_intelligence",
-          "count": 2
+          "count": 7
         }
       ],
       "latest": [
         {
-          "id": "2026-07-02-business_signals-daily-problem-watchdog",
-          "date": "2026-07-02",
-          "title": "Business Signals Daily Problem Watchdog (2026-07-02)",
-          "status": "resolved",
-          "state": "resolved",
-          "priority": "urgent",
-          "laneId": "business_signals",
-          "category": "daily_problem_watchdog",
-          "failedGate": "daily_problem_watchdog",
-          "reportPath": "agent-workflow/reports/2026-07-02-daily-recovery-watchdog.md",
-          "dataGenerated": "unknown",
-          "neededAction": "inspect failed production report and repair the smallest responsible stage; do not dispatch a full rerun from Hermes",
-          "createdAt": "2026-07-02T02:44:07.950Z",
-          "updatedAt": "2026-07-02T11:20:58+08:00",
-          "resolvedAt": "2026-07-02T11:20:58+08:00",
-          "resolver": "codex",
-          "fixCommit": "pending-local-change",
-          "validation": "npm run supervise:daily -- --date=2026-07-02",
-          "prevention": "gate",
-          "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-07-02-business_signals-daily-problem-watchdog.md"
-        },
-        {
-          "id": "2026-07-02-business_signals-core-supply-shortfall",
-          "date": "2026-07-02",
-          "title": "Hermes Repair Request: Business Signals / Intelligence Map / Dashboard",
-          "status": "resolved",
-          "state": "resolved",
-          "priority": "urgent",
-          "laneId": "business_signals",
-          "category": "core_supply_shortfall",
-          "failedGate": "passed",
-          "reportPath": "agent-workflow/reports/2026-07-02-daily-supervision-report.md",
-          "dataGenerated": "yes",
-          "neededAction": "diagnose Raw/Pool/Core/non-large Core counts and refill only the deficient source/channel",
-          "createdAt": "2026-07-02T11:18:08+08:00",
-          "updatedAt": "2026-07-02T11:20:57+08:00",
-          "resolvedAt": "2026-07-02T11:20:57+08:00",
-          "resolver": "codex",
-          "fixCommit": "pending-local-change",
-          "validation": "npm run supervise:daily -- --date=2026-07-02",
-          "prevention": "gate",
-          "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-07-02-business_signals-core-supply-shortfall.md"
-        },
-        {
-          "id": "2026-07-02-skill_ops-skill-ops",
-          "date": "2026-07-02",
-          "title": "Hermes Repair Request: Skill Ops Governance",
-          "status": "open",
-          "state": "open",
-          "priority": "normal",
-          "laneId": "skill_ops",
-          "category": "skill_ops",
-          "failedGate": "skill_ops daily supervision",
-          "reportPath": "agent-workflow/reports/2026-07-02-daily-supervision-report.md",
-          "dataGenerated": "not_applicable",
-          "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, or .skill-store mirror",
-          "createdAt": "2026-07-02T11:18:08+08:00",
-          "updatedAt": "2026-07-02T11:20:31+08:00",
-          "resolvedAt": "",
-          "resolver": "",
-          "fixCommit": "",
-          "validation": "",
-          "prevention": "",
-          "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-07-02-skill_ops-skill-ops.md"
-        },
-        {
-          "id": "supervision-2026-07-02-skill_ops-problem-0",
-          "date": "2026-07-02",
-          "title": "skill-registry.md is stale; run npm run build:skill-registry",
-          "status": "manual_required",
-          "state": "open",
-          "priority": "high",
-          "laneId": "skill_ops",
-          "lane": "Skill Ops Governance",
-          "category": "manual_required",
-          "source": "daily-supervision",
-          "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-          "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, or .skill-store mirror",
-          "evidence": "daily supervision preflight"
-        },
-        {
-          "id": "supervision-2026-07-02-community_intelligence-warning-0",
-          "date": "2026-07-02",
-          "title": "same-date Community Intelligence automation PR already merged: https://github.com/jerryfang2023-stack/AI-Radar/pull/189",
+          "id": "supervision-2026-07-16-community_intelligence-warning-0",
+          "date": "2026-07-16",
+          "title": "same-date Community Intelligence automation PR already merged: https://github.com/jerryfang2023-stack/AI-Radar/pull/305",
           "status": "warning",
           "state": "open",
           "priority": "normal",
@@ -284,12 +192,12 @@ window.WaveSightOpsConsole = {
           "source": "daily-supervision",
           "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
           "neededAction": "",
-          "evidence": "08:30 local collection; 08:45 / 10:45 GitHub publish windows; Daily Problem Watchdog records failures to Hermes inbox"
+          "evidence": "08:30 local collection; 08:45 / 09:35 GitHub publish windows; Daily Problem Watchdog records failures to Hermes inbox"
         },
         {
-          "id": "supervision-2026-07-02-business_signals-warning-0",
-          "date": "2026-07-02",
-          "title": "signal card files 8 below 10, but source-backed Core Pool Top10 fallback is healthy",
+          "id": "supervision-2026-07-16-business_signals-warning-0",
+          "date": "2026-07-16",
+          "title": "business-signal activeDate is 2026-07-15, expected 2026-07-16; Business Signals workflow is in_progress",
           "status": "warning",
           "state": "open",
           "priority": "normal",
@@ -298,13 +206,13 @@ window.WaveSightOpsConsole = {
           "category": "warning",
           "source": "daily-supervision",
           "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-          "neededAction": "",
+          "neededAction": "wait for Business Signals workflow completion before declaring data missing",
           "evidence": "08:57 primary production; 09:27 conditional health dispatch; Daily Problem Watchdog records failures to Hermes inbox"
         },
         {
-          "id": "supervision-2026-07-02-business_signals-warning-1",
-          "date": "2026-07-02",
-          "title": "latest same-date GitHub Pages workflow conclusion is skipped",
+          "id": "supervision-2026-07-16-business_signals-warning-1",
+          "date": "2026-07-16",
+          "title": "public Card count is 0 for 2026-07-16; Business Signals workflow is in_progress",
           "status": "warning",
           "state": "open",
           "priority": "normal",
@@ -313,13 +221,13 @@ window.WaveSightOpsConsole = {
           "category": "warning",
           "source": "daily-supervision",
           "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-          "neededAction": "",
+          "neededAction": "wait for Business Signals workflow completion before declaring data missing",
           "evidence": "08:57 primary production; 09:27 conditional health dispatch; Daily Problem Watchdog records failures to Hermes inbox"
         },
         {
-          "id": "supervision-2026-07-02-business_signals-warning-2",
-          "date": "2026-07-02",
-          "title": "local Obsidian sync may be blocked by 3 dirty file(s)",
+          "id": "supervision-2026-07-16-business_signals-warning-2",
+          "date": "2026-07-16",
+          "title": "no same-date signal Card files or frontstage Core Signal Cards; Business Signals workflow is in_progress",
           "status": "warning",
           "state": "open",
           "priority": "normal",
@@ -328,13 +236,13 @@ window.WaveSightOpsConsole = {
           "category": "warning",
           "source": "daily-supervision",
           "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-          "neededAction": "",
+          "neededAction": "wait for Business Signals workflow completion before declaring data missing",
           "evidence": "08:57 primary production; 09:27 conditional health dispatch; Daily Problem Watchdog records failures to Hermes inbox"
         },
         {
-          "id": "supervision-2026-07-02-business_signals-warning-3",
-          "date": "2026-07-02",
-          "title": "latest Business Signals workflow conclusion is cancelled, but same-date data and gates are healthy; repair branch / PR / publication only",
+          "id": "supervision-2026-07-16-business_signals-warning-3",
+          "date": "2026-07-16",
+          "title": "missing same-date persistent asset manifest: agent-workflow/reports/2026-07-16-persistent-asset-manifest.json",
           "status": "warning",
           "state": "open",
           "priority": "normal",
@@ -343,107 +251,59 @@ window.WaveSightOpsConsole = {
           "category": "warning",
           "source": "daily-supervision",
           "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-          "neededAction": "",
+          "neededAction": "wait for Business Signals workflow completion before declaring data missing",
           "evidence": "08:57 primary production; 09:27 conditional health dispatch; Daily Problem Watchdog records failures to Hermes inbox"
         },
         {
-          "id": "2026-06-30-business_signals-no-run-or-stale-assets",
-          "date": "2026-06-30",
-          "title": "Hermes Repair Request: Business Signals / Intelligence Map / Dashboard",
-          "status": "resolved",
-          "state": "resolved",
-          "priority": "urgent",
-          "laneId": "business_signals",
-          "category": "no_run_or_stale_assets",
-          "failedGate": "missing",
-          "reportPath": "agent-workflow/reports/2026-06-30-daily-supervision-report.md",
-          "dataGenerated": "no_or_stale",
-          "neededAction": "sync/fetch current assets first; if still stale, dispatch the Business Signals production workflow",
-          "createdAt": "2026-06-30T11:19:44+08:00",
-          "updatedAt": "2026-06-30T11:31:15+08:00",
-          "resolvedAt": "2026-06-30T11:31:15+08:00",
-          "resolver": "codex",
-          "fixCommit": "pending-local-change",
-          "validation": "node --check agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs",
-          "prevention": "gate",
-          "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-06-30-business_signals-no-run-or-stale-assets.md"
-        },
-        {
-          "id": "2026-06-29-follow_builders_skill-monitor-or-gate-failure",
-          "date": "2026-06-29",
-          "title": "Hermes Repair Request: First-Line Viewpoints Skill",
-          "status": "open",
+          "id": "supervision-2026-07-16-business_signals-warning-4",
+          "date": "2026-07-16",
+          "title": "missing quality gate report: agent-workflow/reports/2026-07-16-guanlan-monitor-quality-gate.md",
+          "status": "warning",
           "state": "open",
-          "priority": "urgent",
-          "laneId": "follow_builders_skill",
-          "category": "monitor_or_gate_failure",
-          "failedGate": "follow_builders_skill daily supervision",
-          "reportPath": "agent-workflow/reports/2026-06-29-daily-supervision-report.md",
-          "dataGenerated": "yes",
-          "neededAction": "send Codex a follow_builders_skill repair request with publish report path",
-          "createdAt": "2026-06-29T16:40:24+08:00",
-          "updatedAt": "2026-06-29T16:40:24+08:00",
-          "resolvedAt": "",
-          "resolver": "",
-          "fixCommit": "",
-          "validation": "",
-          "prevention": "",
-          "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-06-29-follow_builders_skill-monitor-or-gate-failure.md"
+          "priority": "normal",
+          "laneId": "business_signals",
+          "lane": "Business Signals / Intelligence Map / Dashboard",
+          "category": "warning",
+          "source": "daily-supervision",
+          "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+          "neededAction": "wait for Business Signals workflow completion before declaring data missing",
+          "evidence": "08:57 primary production; 09:27 conditional health dispatch; Daily Problem Watchdog records failures to Hermes inbox"
         },
         {
-          "id": "2026-06-29-business_signals-no-run-or-stale-assets",
-          "date": "2026-06-29",
-          "title": "Hermes Repair Request: Business Signals / Intelligence Map / Dashboard",
-          "status": "resolved",
-          "state": "resolved",
-          "priority": "urgent",
+          "id": "supervision-2026-07-16-business_signals-warning-5",
+          "date": "2026-07-16",
+          "title": "missing readiness report: agent-workflow/reports/2026-07-16-daily-production-chain-readiness.md",
+          "status": "warning",
+          "state": "open",
+          "priority": "normal",
           "laneId": "business_signals",
-          "category": "no_run_or_stale_assets",
-          "failedGate": "missing",
-          "reportPath": "agent-workflow/reports/2026-06-29-daily-supervision-report.md",
-          "dataGenerated": "no_or_stale",
-          "neededAction": "sync/fetch current assets first; if still stale, dispatch the Business Signals production workflow",
-          "createdAt": "2026-06-29T13:16:51+08:00",
-          "updatedAt": "2026-06-29T15:02:55+08:00",
-          "resolvedAt": "2026-06-29T15:02:55+08:00",
-          "resolver": "codex",
-          "fixCommit": "pending",
-          "validation": "npm run assert:business-frontstage -- --date=2026-06-29",
-          "prevention": "gate",
-          "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-06-29-business_signals-no-run-or-stale-assets.md"
+          "lane": "Business Signals / Intelligence Map / Dashboard",
+          "category": "warning",
+          "source": "daily-supervision",
+          "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+          "neededAction": "wait for Business Signals workflow completion before declaring data missing",
+          "evidence": "08:57 primary production; 09:27 conditional health dispatch; Daily Problem Watchdog records failures to Hermes inbox"
         }
       ]
     },
     "monthly": {
       "windowDays": 30,
-      "total": 50,
+      "total": 34,
       "open": 9,
-      "resolved": 41,
+      "resolved": 25,
       "byLane": {
-        "skill_ops": 9,
-        "community_intelligence": 9,
-        "business_signals": 23,
-        "first_line_viewpoints": 3,
-        "follow_builders_skill": 3,
-        "unknown": 1,
-        "first_line_viewpoints_skill": 1,
-        "site_version": 1
+        "community_intelligence": 6,
+        "business_signals": 19,
+        "skill_ops": 6,
+        "first_line_viewpoints": 2,
+        "follow_builders_skill": 1
       },
       "byCategory": {
-        "manual_required": 1,
-        "warning": 5,
-        "frontstage Top10 selection": 1,
-        "source_first_frontstage_gate + top10 missing": 1,
-        "Top10 selection (frontstage data build)": 1,
-        "business_signals_top10_missing": 8,
-        "monitor_or_gate_failure": 16,
-        "first_line_viewpoints": 1,
-        "uncategorized": 1,
-        "afternoon_skill_check": 1,
-        "business_signals_weekend_gate_thresholds_and_broken_rss": 1,
-        "site_v337_weekly_report_integration": 1,
-        "community_intelligence": 3,
-        "obsidian_sync": 3,
+        "warning": 7,
+        "business_signals_top10_missing": 6,
+        "monitor_or_gate_failure": 11,
+        "obsidian_sync": 2,
+        "community_intelligence": 2,
         "no_run_or_stale_assets": 3,
         "core_supply_shortfall": 1,
         "daily_problem_watchdog": 1,
@@ -452,30 +312,179 @@ window.WaveSightOpsConsole = {
       "recurring": [
         {
           "category": "monitor_or_gate_failure",
-          "count": 16
-        },
-        {
-          "category": "business_signals_top10_missing",
-          "count": 8
+          "count": 11
         },
         {
           "category": "warning",
-          "count": 5
+          "count": 7
         },
         {
-          "category": "community_intelligence",
-          "count": 3
-        },
-        {
-          "category": "obsidian_sync",
-          "count": 3
+          "category": "business_signals_top10_missing",
+          "count": 6
         },
         {
           "category": "no_run_or_stale_assets",
           "count": 3
+        },
+        {
+          "category": "obsidian_sync",
+          "count": 2
+        },
+        {
+          "category": "community_intelligence",
+          "count": 2
         }
       ],
       "latest": [
+        {
+          "id": "supervision-2026-07-16-community_intelligence-warning-0",
+          "date": "2026-07-16",
+          "title": "same-date Community Intelligence automation PR already merged: https://github.com/jerryfang2023-stack/AI-Radar/pull/305",
+          "status": "warning",
+          "state": "open",
+          "priority": "normal",
+          "laneId": "community_intelligence",
+          "lane": "Community Intelligence",
+          "category": "warning",
+          "source": "daily-supervision",
+          "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+          "neededAction": "",
+          "evidence": "08:30 local collection; 08:45 / 09:35 GitHub publish windows; Daily Problem Watchdog records failures to Hermes inbox"
+        },
+        {
+          "id": "supervision-2026-07-16-business_signals-warning-0",
+          "date": "2026-07-16",
+          "title": "business-signal activeDate is 2026-07-15, expected 2026-07-16; Business Signals workflow is in_progress",
+          "status": "warning",
+          "state": "open",
+          "priority": "normal",
+          "laneId": "business_signals",
+          "lane": "Business Signals / Intelligence Map / Dashboard",
+          "category": "warning",
+          "source": "daily-supervision",
+          "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+          "neededAction": "wait for Business Signals workflow completion before declaring data missing",
+          "evidence": "08:57 primary production; 09:27 conditional health dispatch; Daily Problem Watchdog records failures to Hermes inbox"
+        },
+        {
+          "id": "supervision-2026-07-16-business_signals-warning-1",
+          "date": "2026-07-16",
+          "title": "public Card count is 0 for 2026-07-16; Business Signals workflow is in_progress",
+          "status": "warning",
+          "state": "open",
+          "priority": "normal",
+          "laneId": "business_signals",
+          "lane": "Business Signals / Intelligence Map / Dashboard",
+          "category": "warning",
+          "source": "daily-supervision",
+          "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+          "neededAction": "wait for Business Signals workflow completion before declaring data missing",
+          "evidence": "08:57 primary production; 09:27 conditional health dispatch; Daily Problem Watchdog records failures to Hermes inbox"
+        },
+        {
+          "id": "supervision-2026-07-16-business_signals-warning-2",
+          "date": "2026-07-16",
+          "title": "no same-date signal Card files or frontstage Core Signal Cards; Business Signals workflow is in_progress",
+          "status": "warning",
+          "state": "open",
+          "priority": "normal",
+          "laneId": "business_signals",
+          "lane": "Business Signals / Intelligence Map / Dashboard",
+          "category": "warning",
+          "source": "daily-supervision",
+          "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+          "neededAction": "wait for Business Signals workflow completion before declaring data missing",
+          "evidence": "08:57 primary production; 09:27 conditional health dispatch; Daily Problem Watchdog records failures to Hermes inbox"
+        },
+        {
+          "id": "supervision-2026-07-16-business_signals-warning-3",
+          "date": "2026-07-16",
+          "title": "missing same-date persistent asset manifest: agent-workflow/reports/2026-07-16-persistent-asset-manifest.json",
+          "status": "warning",
+          "state": "open",
+          "priority": "normal",
+          "laneId": "business_signals",
+          "lane": "Business Signals / Intelligence Map / Dashboard",
+          "category": "warning",
+          "source": "daily-supervision",
+          "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+          "neededAction": "wait for Business Signals workflow completion before declaring data missing",
+          "evidence": "08:57 primary production; 09:27 conditional health dispatch; Daily Problem Watchdog records failures to Hermes inbox"
+        },
+        {
+          "id": "supervision-2026-07-16-business_signals-warning-4",
+          "date": "2026-07-16",
+          "title": "missing quality gate report: agent-workflow/reports/2026-07-16-guanlan-monitor-quality-gate.md",
+          "status": "warning",
+          "state": "open",
+          "priority": "normal",
+          "laneId": "business_signals",
+          "lane": "Business Signals / Intelligence Map / Dashboard",
+          "category": "warning",
+          "source": "daily-supervision",
+          "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+          "neededAction": "wait for Business Signals workflow completion before declaring data missing",
+          "evidence": "08:57 primary production; 09:27 conditional health dispatch; Daily Problem Watchdog records failures to Hermes inbox"
+        },
+        {
+          "id": "supervision-2026-07-16-business_signals-warning-5",
+          "date": "2026-07-16",
+          "title": "missing readiness report: agent-workflow/reports/2026-07-16-daily-production-chain-readiness.md",
+          "status": "warning",
+          "state": "open",
+          "priority": "normal",
+          "laneId": "business_signals",
+          "lane": "Business Signals / Intelligence Map / Dashboard",
+          "category": "warning",
+          "source": "daily-supervision",
+          "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+          "neededAction": "wait for Business Signals workflow completion before declaring data missing",
+          "evidence": "08:57 primary production; 09:27 conditional health dispatch; Daily Problem Watchdog records failures to Hermes inbox"
+        },
+        {
+          "id": "2026-07-04-first_line_viewpoints-monitor-or-gate-failure",
+          "date": "2026-07-04",
+          "title": "Hermes Repair Request: First-Line Viewpoints",
+          "status": "resolved",
+          "state": "resolved",
+          "priority": "normal",
+          "laneId": "first_line_viewpoints",
+          "category": "monitor_or_gate_failure",
+          "failedGate": "missing",
+          "reportPath": "agent-workflow/reports/2026-07-04-daily-supervision-report.md",
+          "dataGenerated": "no_or_stale",
+          "neededAction": "inspect the Daily Problem Watchdog inbox report, then dispatch `.github/workflows/daily-first-line-viewpoints-pr.yml` only after targeted diagnosis",
+          "createdAt": "2026-07-04T11:18:50+08:00",
+          "updatedAt": "2026-07-04T11:22:26+08:00",
+          "resolvedAt": "2026-07-04T11:22:26+08:00",
+          "resolver": "codex",
+          "fixCommit": "4563b3cfe479c10acb1661c15e2de518c8e383e7",
+          "validation": "node agent-workflow/tools/assert-follow-builders-data.mjs --date=2026-07-04; node agent-workflow/tools/sync-follow-builders-to-opinion-timelines.mjs --from=2026-07-04 --to=2026-07-04 --dry-run=true; npm run supervise:daily -- --date=2026-07-04",
+          "prevention": "eval",
+          "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-07-04-first_line_viewpoints-monitor-or-gate-failure.md"
+        },
+        {
+          "id": "2026-06-29-follow_builders_skill-monitor-or-gate-failure",
+          "date": "2026-06-29",
+          "title": "Hermes Repair Request: First-Line Viewpoints Skill",
+          "status": "resolved",
+          "state": "resolved",
+          "priority": "urgent",
+          "laneId": "follow_builders_skill",
+          "category": "monitor_or_gate_failure",
+          "failedGate": "follow_builders_skill daily supervision",
+          "reportPath": "agent-workflow/reports/2026-06-29-daily-supervision-report.md",
+          "dataGenerated": "yes",
+          "neededAction": "repair the local follow-builders skill runner or feed preparation before rerunning afternoon publish",
+          "createdAt": "2026-06-29T16:40:24+08:00",
+          "updatedAt": "2026-07-03T11:20:41+08:00",
+          "resolvedAt": "2026-07-03T11:20:41+08:00",
+          "resolver": "codex",
+          "fixCommit": "pending-local-change",
+          "validation": "npm run supervise:daily -- --date=2026-06-29",
+          "prevention": "gate",
+          "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-06-29-follow_builders_skill-monitor-or-gate-failure.md"
+        },
         {
           "id": "2026-07-02-business_signals-daily-problem-watchdog",
           "date": "2026-07-02",
@@ -541,162 +550,6 @@ window.WaveSightOpsConsole = {
           "validation": "",
           "prevention": "",
           "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-07-02-skill_ops-skill-ops.md"
-        },
-        {
-          "id": "supervision-2026-07-02-skill_ops-problem-0",
-          "date": "2026-07-02",
-          "title": "skill-registry.md is stale; run npm run build:skill-registry",
-          "status": "manual_required",
-          "state": "open",
-          "priority": "high",
-          "laneId": "skill_ops",
-          "lane": "Skill Ops Governance",
-          "category": "manual_required",
-          "source": "daily-supervision",
-          "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-          "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, or .skill-store mirror",
-          "evidence": "daily supervision preflight"
-        },
-        {
-          "id": "supervision-2026-07-02-community_intelligence-warning-0",
-          "date": "2026-07-02",
-          "title": "same-date Community Intelligence automation PR already merged: https://github.com/jerryfang2023-stack/AI-Radar/pull/189",
-          "status": "warning",
-          "state": "open",
-          "priority": "normal",
-          "laneId": "community_intelligence",
-          "lane": "Community Intelligence",
-          "category": "warning",
-          "source": "daily-supervision",
-          "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-          "neededAction": "",
-          "evidence": "08:30 local collection; 08:45 / 10:45 GitHub publish windows; Daily Problem Watchdog records failures to Hermes inbox"
-        },
-        {
-          "id": "supervision-2026-07-02-business_signals-warning-0",
-          "date": "2026-07-02",
-          "title": "signal card files 8 below 10, but source-backed Core Pool Top10 fallback is healthy",
-          "status": "warning",
-          "state": "open",
-          "priority": "normal",
-          "laneId": "business_signals",
-          "lane": "Business Signals / Intelligence Map / Dashboard",
-          "category": "warning",
-          "source": "daily-supervision",
-          "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-          "neededAction": "",
-          "evidence": "08:57 primary production; 09:27 conditional health dispatch; Daily Problem Watchdog records failures to Hermes inbox"
-        },
-        {
-          "id": "supervision-2026-07-02-business_signals-warning-1",
-          "date": "2026-07-02",
-          "title": "latest same-date GitHub Pages workflow conclusion is skipped",
-          "status": "warning",
-          "state": "open",
-          "priority": "normal",
-          "laneId": "business_signals",
-          "lane": "Business Signals / Intelligence Map / Dashboard",
-          "category": "warning",
-          "source": "daily-supervision",
-          "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-          "neededAction": "",
-          "evidence": "08:57 primary production; 09:27 conditional health dispatch; Daily Problem Watchdog records failures to Hermes inbox"
-        },
-        {
-          "id": "supervision-2026-07-02-business_signals-warning-2",
-          "date": "2026-07-02",
-          "title": "local Obsidian sync may be blocked by 3 dirty file(s)",
-          "status": "warning",
-          "state": "open",
-          "priority": "normal",
-          "laneId": "business_signals",
-          "lane": "Business Signals / Intelligence Map / Dashboard",
-          "category": "warning",
-          "source": "daily-supervision",
-          "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-          "neededAction": "",
-          "evidence": "08:57 primary production; 09:27 conditional health dispatch; Daily Problem Watchdog records failures to Hermes inbox"
-        },
-        {
-          "id": "supervision-2026-07-02-business_signals-warning-3",
-          "date": "2026-07-02",
-          "title": "latest Business Signals workflow conclusion is cancelled, but same-date data and gates are healthy; repair branch / PR / publication only",
-          "status": "warning",
-          "state": "open",
-          "priority": "normal",
-          "laneId": "business_signals",
-          "lane": "Business Signals / Intelligence Map / Dashboard",
-          "category": "warning",
-          "source": "daily-supervision",
-          "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-          "neededAction": "",
-          "evidence": "08:57 primary production; 09:27 conditional health dispatch; Daily Problem Watchdog records failures to Hermes inbox"
-        },
-        {
-          "id": "2026-06-30-business_signals-no-run-or-stale-assets",
-          "date": "2026-06-30",
-          "title": "Hermes Repair Request: Business Signals / Intelligence Map / Dashboard",
-          "status": "resolved",
-          "state": "resolved",
-          "priority": "urgent",
-          "laneId": "business_signals",
-          "category": "no_run_or_stale_assets",
-          "failedGate": "missing",
-          "reportPath": "agent-workflow/reports/2026-06-30-daily-supervision-report.md",
-          "dataGenerated": "no_or_stale",
-          "neededAction": "sync/fetch current assets first; if still stale, dispatch the Business Signals production workflow",
-          "createdAt": "2026-06-30T11:19:44+08:00",
-          "updatedAt": "2026-06-30T11:31:15+08:00",
-          "resolvedAt": "2026-06-30T11:31:15+08:00",
-          "resolver": "codex",
-          "fixCommit": "pending-local-change",
-          "validation": "node --check agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs",
-          "prevention": "gate",
-          "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-06-30-business_signals-no-run-or-stale-assets.md"
-        },
-        {
-          "id": "2026-06-29-follow_builders_skill-monitor-or-gate-failure",
-          "date": "2026-06-29",
-          "title": "Hermes Repair Request: First-Line Viewpoints Skill",
-          "status": "open",
-          "state": "open",
-          "priority": "urgent",
-          "laneId": "follow_builders_skill",
-          "category": "monitor_or_gate_failure",
-          "failedGate": "follow_builders_skill daily supervision",
-          "reportPath": "agent-workflow/reports/2026-06-29-daily-supervision-report.md",
-          "dataGenerated": "yes",
-          "neededAction": "send Codex a follow_builders_skill repair request with publish report path",
-          "createdAt": "2026-06-29T16:40:24+08:00",
-          "updatedAt": "2026-06-29T16:40:24+08:00",
-          "resolvedAt": "",
-          "resolver": "",
-          "fixCommit": "",
-          "validation": "",
-          "prevention": "",
-          "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-06-29-follow_builders_skill-monitor-or-gate-failure.md"
-        },
-        {
-          "id": "2026-06-29-business_signals-no-run-or-stale-assets",
-          "date": "2026-06-29",
-          "title": "Hermes Repair Request: Business Signals / Intelligence Map / Dashboard",
-          "status": "resolved",
-          "state": "resolved",
-          "priority": "urgent",
-          "laneId": "business_signals",
-          "category": "no_run_or_stale_assets",
-          "failedGate": "missing",
-          "reportPath": "agent-workflow/reports/2026-06-29-daily-supervision-report.md",
-          "dataGenerated": "no_or_stale",
-          "neededAction": "sync/fetch current assets first; if still stale, dispatch the Business Signals production workflow",
-          "createdAt": "2026-06-29T13:16:51+08:00",
-          "updatedAt": "2026-06-29T15:02:55+08:00",
-          "resolvedAt": "2026-06-29T15:02:55+08:00",
-          "resolver": "codex",
-          "fixCommit": "pending",
-          "validation": "npm run assert:business-frontstage -- --date=2026-06-29",
-          "prevention": "gate",
-          "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-06-29-business_signals-no-run-or-stale-assets.md"
         }
       ]
     }
@@ -704,24 +557,9 @@ window.WaveSightOpsConsole = {
   "inbox": {
     "open": [
       {
-        "id": "supervision-2026-07-02-skill_ops-problem-0",
-        "date": "2026-07-02",
-        "title": "skill-registry.md is stale; run npm run build:skill-registry",
-        "status": "manual_required",
-        "state": "open",
-        "priority": "high",
-        "laneId": "skill_ops",
-        "lane": "Skill Ops Governance",
-        "category": "manual_required",
-        "source": "daily-supervision",
-        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-        "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, or .skill-store mirror",
-        "evidence": "daily supervision preflight"
-      },
-      {
-        "id": "supervision-2026-07-02-community_intelligence-warning-0",
-        "date": "2026-07-02",
-        "title": "same-date Community Intelligence automation PR already merged: https://github.com/jerryfang2023-stack/AI-Radar/pull/189",
+        "id": "supervision-2026-07-16-community_intelligence-warning-0",
+        "date": "2026-07-16",
+        "title": "same-date Community Intelligence automation PR already merged: https://github.com/jerryfang2023-stack/AI-Radar/pull/305",
         "status": "warning",
         "state": "open",
         "priority": "normal",
@@ -731,12 +569,12 @@ window.WaveSightOpsConsole = {
         "source": "daily-supervision",
         "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
         "neededAction": "",
-        "evidence": "08:30 local collection; 08:45 / 10:45 GitHub publish windows; Daily Problem Watchdog records failures to Hermes inbox"
+        "evidence": "08:30 local collection; 08:45 / 09:35 GitHub publish windows; Daily Problem Watchdog records failures to Hermes inbox"
       },
       {
-        "id": "supervision-2026-07-02-business_signals-warning-0",
-        "date": "2026-07-02",
-        "title": "signal card files 8 below 10, but source-backed Core Pool Top10 fallback is healthy",
+        "id": "supervision-2026-07-16-business_signals-warning-0",
+        "date": "2026-07-16",
+        "title": "business-signal activeDate is 2026-07-15, expected 2026-07-16; Business Signals workflow is in_progress",
         "status": "warning",
         "state": "open",
         "priority": "normal",
@@ -745,13 +583,13 @@ window.WaveSightOpsConsole = {
         "category": "warning",
         "source": "daily-supervision",
         "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-        "neededAction": "",
+        "neededAction": "wait for Business Signals workflow completion before declaring data missing",
         "evidence": "08:57 primary production; 09:27 conditional health dispatch; Daily Problem Watchdog records failures to Hermes inbox"
       },
       {
-        "id": "supervision-2026-07-02-business_signals-warning-1",
-        "date": "2026-07-02",
-        "title": "latest same-date GitHub Pages workflow conclusion is skipped",
+        "id": "supervision-2026-07-16-business_signals-warning-1",
+        "date": "2026-07-16",
+        "title": "public Card count is 0 for 2026-07-16; Business Signals workflow is in_progress",
         "status": "warning",
         "state": "open",
         "priority": "normal",
@@ -760,13 +598,13 @@ window.WaveSightOpsConsole = {
         "category": "warning",
         "source": "daily-supervision",
         "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-        "neededAction": "",
+        "neededAction": "wait for Business Signals workflow completion before declaring data missing",
         "evidence": "08:57 primary production; 09:27 conditional health dispatch; Daily Problem Watchdog records failures to Hermes inbox"
       },
       {
-        "id": "supervision-2026-07-02-business_signals-warning-2",
-        "date": "2026-07-02",
-        "title": "local Obsidian sync may be blocked by 3 dirty file(s)",
+        "id": "supervision-2026-07-16-business_signals-warning-2",
+        "date": "2026-07-16",
+        "title": "no same-date signal Card files or frontstage Core Signal Cards; Business Signals workflow is in_progress",
         "status": "warning",
         "state": "open",
         "priority": "normal",
@@ -775,13 +613,13 @@ window.WaveSightOpsConsole = {
         "category": "warning",
         "source": "daily-supervision",
         "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-        "neededAction": "",
+        "neededAction": "wait for Business Signals workflow completion before declaring data missing",
         "evidence": "08:57 primary production; 09:27 conditional health dispatch; Daily Problem Watchdog records failures to Hermes inbox"
       },
       {
-        "id": "supervision-2026-07-02-business_signals-warning-3",
-        "date": "2026-07-02",
-        "title": "latest Business Signals workflow conclusion is cancelled, but same-date data and gates are healthy; repair branch / PR / publication only",
+        "id": "supervision-2026-07-16-business_signals-warning-3",
+        "date": "2026-07-16",
+        "title": "missing same-date persistent asset manifest: agent-workflow/reports/2026-07-16-persistent-asset-manifest.json",
         "status": "warning",
         "state": "open",
         "priority": "normal",
@@ -790,7 +628,37 @@ window.WaveSightOpsConsole = {
         "category": "warning",
         "source": "daily-supervision",
         "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-        "neededAction": "",
+        "neededAction": "wait for Business Signals workflow completion before declaring data missing",
+        "evidence": "08:57 primary production; 09:27 conditional health dispatch; Daily Problem Watchdog records failures to Hermes inbox"
+      },
+      {
+        "id": "supervision-2026-07-16-business_signals-warning-4",
+        "date": "2026-07-16",
+        "title": "missing quality gate report: agent-workflow/reports/2026-07-16-guanlan-monitor-quality-gate.md",
+        "status": "warning",
+        "state": "open",
+        "priority": "normal",
+        "laneId": "business_signals",
+        "lane": "Business Signals / Intelligence Map / Dashboard",
+        "category": "warning",
+        "source": "daily-supervision",
+        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+        "neededAction": "wait for Business Signals workflow completion before declaring data missing",
+        "evidence": "08:57 primary production; 09:27 conditional health dispatch; Daily Problem Watchdog records failures to Hermes inbox"
+      },
+      {
+        "id": "supervision-2026-07-16-business_signals-warning-5",
+        "date": "2026-07-16",
+        "title": "missing readiness report: agent-workflow/reports/2026-07-16-daily-production-chain-readiness.md",
+        "status": "warning",
+        "state": "open",
+        "priority": "normal",
+        "laneId": "business_signals",
+        "lane": "Business Signals / Intelligence Map / Dashboard",
+        "category": "warning",
+        "source": "daily-supervision",
+        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+        "neededAction": "wait for Business Signals workflow completion before declaring data missing",
         "evidence": "08:57 primary production; 09:27 conditional health dispatch; Daily Problem Watchdog records failures to Hermes inbox"
       },
       {
@@ -838,28 +706,6 @@ window.WaveSightOpsConsole = {
         "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-06-29-community_intelligence-community-intelligence.md"
       },
       {
-        "id": "2026-06-29-follow_builders_skill-monitor-or-gate-failure",
-        "date": "2026-06-29",
-        "title": "Hermes Repair Request: First-Line Viewpoints Skill",
-        "status": "open",
-        "state": "open",
-        "priority": "urgent",
-        "laneId": "follow_builders_skill",
-        "category": "monitor_or_gate_failure",
-        "failedGate": "follow_builders_skill daily supervision",
-        "reportPath": "agent-workflow/reports/2026-06-29-daily-supervision-report.md",
-        "dataGenerated": "yes",
-        "neededAction": "send Codex a follow_builders_skill repair request with publish report path",
-        "createdAt": "2026-06-29T16:40:24+08:00",
-        "updatedAt": "2026-06-29T16:40:24+08:00",
-        "resolvedAt": "",
-        "resolver": "",
-        "fixCommit": "",
-        "validation": "",
-        "prevention": "",
-        "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-06-29-follow_builders_skill-monitor-or-gate-failure.md"
-      },
-      {
         "id": "README",
         "date": "",
         "title": "Hermes To Codex Inbox",
@@ -905,6 +751,50 @@ window.WaveSightOpsConsole = {
       }
     ],
     "resolved": [
+      {
+        "id": "2026-07-04-first_line_viewpoints-monitor-or-gate-failure",
+        "date": "2026-07-04",
+        "title": "Hermes Repair Request: First-Line Viewpoints",
+        "status": "resolved",
+        "state": "resolved",
+        "priority": "normal",
+        "laneId": "first_line_viewpoints",
+        "category": "monitor_or_gate_failure",
+        "failedGate": "missing",
+        "reportPath": "agent-workflow/reports/2026-07-04-daily-supervision-report.md",
+        "dataGenerated": "no_or_stale",
+        "neededAction": "inspect the Daily Problem Watchdog inbox report, then dispatch `.github/workflows/daily-first-line-viewpoints-pr.yml` only after targeted diagnosis",
+        "createdAt": "2026-07-04T11:18:50+08:00",
+        "updatedAt": "2026-07-04T11:22:26+08:00",
+        "resolvedAt": "2026-07-04T11:22:26+08:00",
+        "resolver": "codex",
+        "fixCommit": "4563b3cfe479c10acb1661c15e2de518c8e383e7",
+        "validation": "node agent-workflow/tools/assert-follow-builders-data.mjs --date=2026-07-04; node agent-workflow/tools/sync-follow-builders-to-opinion-timelines.mjs --from=2026-07-04 --to=2026-07-04 --dry-run=true; npm run supervise:daily -- --date=2026-07-04",
+        "prevention": "eval",
+        "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-07-04-first_line_viewpoints-monitor-or-gate-failure.md"
+      },
+      {
+        "id": "2026-06-29-follow_builders_skill-monitor-or-gate-failure",
+        "date": "2026-06-29",
+        "title": "Hermes Repair Request: First-Line Viewpoints Skill",
+        "status": "resolved",
+        "state": "resolved",
+        "priority": "urgent",
+        "laneId": "follow_builders_skill",
+        "category": "monitor_or_gate_failure",
+        "failedGate": "follow_builders_skill daily supervision",
+        "reportPath": "agent-workflow/reports/2026-06-29-daily-supervision-report.md",
+        "dataGenerated": "yes",
+        "neededAction": "repair the local follow-builders skill runner or feed preparation before rerunning afternoon publish",
+        "createdAt": "2026-06-29T16:40:24+08:00",
+        "updatedAt": "2026-07-03T11:20:41+08:00",
+        "resolvedAt": "2026-07-03T11:20:41+08:00",
+        "resolver": "codex",
+        "fixCommit": "pending-local-change",
+        "validation": "npm run supervise:daily -- --date=2026-06-29",
+        "prevention": "gate",
+        "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-06-29-follow_builders_skill-monitor-or-gate-failure.md"
+      },
       {
         "id": "2026-07-02-business_signals-daily-problem-watchdog",
         "date": "2026-07-02",
@@ -1520,50 +1410,6 @@ window.WaveSightOpsConsole = {
         "validation": "2026-06-13 monitor gate/readiness/manifest all passed; persistent asset manifest records source-first/frontstage/pre-commit success",
         "prevention": "not-needed",
         "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-06-13-business_signals-business-signals-top10-missing.md"
-      },
-      {
-        "id": "2026-06-13-community_intelligence-monitor-or-gate-failure",
-        "date": "2026-06-13",
-        "title": "Hermes Repair Request: Community Intelligence",
-        "status": "resolved",
-        "state": "resolved",
-        "priority": "normal",
-        "laneId": "community_intelligence",
-        "category": "monitor_or_gate_failure",
-        "failedGate": "missing",
-        "reportPath": "agent-workflow/reports/2026-06-13-daily-supervision-report.md",
-        "dataGenerated": "no_or_stale",
-        "neededAction": "manual dispatch",
-        "createdAt": "2026-06-13T10:45:49+08:00",
-        "updatedAt": "2026-06-14T16:42:32+08:00",
-        "resolvedAt": "2026-06-14T16:42:32+08:00",
-        "resolver": "codex",
-        "fixCommit": "1bdabf15",
-        "validation": "community daily snapshot 2026-06-13 exists with 61 items; 2026-06-13 local publish report exists; later active-date gate failure is historical-date supersession only",
-        "prevention": "not-needed",
-        "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-06-13-community_intelligence-monitor-or-gate-failure.md"
-      },
-      {
-        "id": "2026-06-13-first_line_viewpoints-monitor-or-gate-failure",
-        "date": "2026-06-13",
-        "title": "Hermes Repair Request: First-Line Viewpoints",
-        "status": "resolved",
-        "state": "resolved",
-        "priority": "normal",
-        "laneId": "first_line_viewpoints",
-        "category": "monitor_or_gate_failure",
-        "failedGate": "missing",
-        "reportPath": "agent-workflow/reports/2026-06-13-daily-supervision-report.md",
-        "dataGenerated": "no_or_stale",
-        "neededAction": "manual dispatch",
-        "createdAt": "2026-06-13T10:45:49+08:00",
-        "updatedAt": "2026-06-14T16:42:32+08:00",
-        "resolvedAt": "2026-06-14T16:42:32+08:00",
-        "resolver": "codex",
-        "fixCommit": "002b0c72",
-        "validation": "node agent-workflow/tools/assert-follow-builders-data.mjs --date=2026-06-13 passed; 2026-06-13 first-line manifest records builders_gate and obsidian_sync success",
-        "prevention": "not-needed",
-        "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-06-13-first_line_viewpoints-monitor-or-gate-failure.md"
       }
     ]
   },
@@ -1573,20 +1419,17 @@ window.WaveSightOpsConsole = {
         "id": "skill_ops",
         "label": "Skill Ops Governance",
         "schedule": "daily supervision preflight",
-        "status": "manual_required",
-        "statusText": "需人工处理",
-        "problemCount": 1,
+        "status": "passed",
+        "statusText": "已通过",
+        "problemCount": 0,
         "warningCount": 0,
-        "actions": [
-          "repair the owning Guanlan skill metadata, evals, examples, registry, or .skill-store mirror",
-          "run `npm run audit:skills` after the repair"
-        ],
+        "actions": [],
         "evidence": []
       },
       {
         "id": "community_intelligence",
         "label": "Community Intelligence",
-        "schedule": "08:30 local collection; 08:45 / 10:45 GitHub publish windows; Daily Problem Watchdog records failures to Hermes inbox",
+        "schedule": "08:30 local collection; 08:45 / 09:35 GitHub publish windows; Daily Problem Watchdog records failures to Hermes inbox",
         "status": "warning",
         "statusText": "warning",
         "problemCount": 0,
@@ -1603,19 +1446,17 @@ window.WaveSightOpsConsole = {
         "id": "business_signals",
         "label": "Business Signals / Intelligence Map / Dashboard",
         "schedule": "08:57 primary production; 09:27 conditional health dispatch; Daily Problem Watchdog records failures to Hermes inbox",
-        "status": "warning",
-        "statusText": "warning",
+        "status": "waiting",
+        "statusText": "等待中",
         "problemCount": 0,
-        "warningCount": 4,
-        "actions": [],
+        "warningCount": 6,
+        "actions": [
+          "wait for Business Signals workflow completion before declaring data missing"
+        ],
         "evidence": [
           {
-            "label": "Pool",
-            "value": 15
-          },
-          {
             "label": "Cards",
-            "value": 10
+            "value": 0
           }
         ]
       },
@@ -1631,7 +1472,7 @@ window.WaveSightOpsConsole = {
         "evidence": [
           {
             "label": "Items",
-            "value": 48
+            "value": 54
           }
         ]
       },
@@ -1653,22 +1494,21 @@ window.WaveSightOpsConsole = {
       }
     ],
     "latestProduction": {
-      "date": "2026-07-02",
-      "raw": 147,
-      "pool": 95,
-      "cards": 22,
+      "date": "2026-07-18",
+      "raw": 150,
+      "pool": 140,
+      "cards": 36,
       "assets": {
-        "case": 10,
-        "funding": 4,
-        "product-service": 2,
-        "opinion": 6
+        "case": 7,
+        "funding": 9,
+        "product-service": 20
       }
     },
     "sync": [
       {
         "label": "GitHub Pages",
-        "status": "unknown",
-        "detail": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/28562131797"
+        "status": "passed",
+        "detail": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/29464739362"
       },
       {
         "label": "Business Signals PR",
@@ -1678,123 +1518,117 @@ window.WaveSightOpsConsole = {
       {
         "label": "本地 Obsidian 同步",
         "status": "manual_required",
-        "detail": "3 个本地变更阻塞自动判断"
+        "detail": "54 个本地变更阻塞自动判断"
       },
       {
         "label": "Pipeline Dashboard",
         "status": "passed",
-        "detail": "2026-07-02T08:32:24.309Z"
+        "detail": "2026-07-18T02:49:29.552Z"
       },
       {
         "label": "Daily Supervision",
-        "status": "manual_required",
-        "detail": "2026-07-02T03:20:31.647Z"
+        "status": "passed",
+        "detail": "2026-07-16T01:50:13.684Z"
       }
     ]
   },
   "quality": {
     "pipelineMeta": {
-      "generatedAt": "2026-07-02T08:32:24.309Z",
+      "generatedAt": "2026-07-18T02:49:29.552Z",
       "dateRange": {
         "start": "2025-10-13",
-        "end": "2026-07-02"
+        "end": "2026-07-18"
       },
       "source": "01-SiteV2/content + 01-SiteV2/knowledge"
     },
     "latest": {
-      "date": "2026-07-02",
-      "label": "2026.07.02",
-      "shortLabel": "07.02",
-      "raw": 147,
-      "pool": 95,
+      "date": "2026-07-18",
+      "label": "2026.07.18",
+      "shortLabel": "07.18",
+      "raw": 150,
+      "pool": 140,
       "assets": {
-        "case": 10,
-        "funding": 4,
-        "product-service": 2,
-        "opinion": 6
+        "case": 7,
+        "funding": 9,
+        "product-service": 20
       },
-      "cards": 22,
+      "cards": 36,
       "rawChannels": {
-        "aihot": 61,
-        "keyword_search": 55,
+        "aihot": 91,
+        "keyword_search": 38,
         "follow_builders": 0
       },
       "poolRoutes": {
-        "core_pool": 33,
-        "emerging_pool": 23,
-        "index_only": 20,
-        "watchlist": 40,
-        "user_feedback_pool": 5
+        "core_pool": 58,
+        "emerging_pool": 18,
+        "watchlist": 51,
+        "index_only": 29
       },
       "evidenceLevels": {
-        "core_evidence_candidate": 72,
-        "supporting_evidence": 2,
-        "community_signal": 3,
-        "user_feedback_signal": 3,
-        "discovery_only": 15
+        "core_evidence_candidate": 108,
+        "user_feedback_signal": 4,
+        "supporting_evidence": 6,
+        "discovery_only": 22
       },
       "sourceLevels": {
-        "A": 19,
-        "S": 12,
-        "B": 60,
-        "C": 4
+        "A": 25,
+        "S": 7,
+        "B": 102,
+        "C": 6
       },
       "sourceTypes": {
-        "news": 9,
-        "product": 2,
-        "research": 1,
-        "developer": 6,
-        "media": 9,
-        "official": 8,
-        "web": 53,
-        "operators": 4,
-        "analysis": 1,
-        "industry": 1,
-        "marketplace": 1
+        "news": 11,
+        "developer": 10,
+        "web": 95,
+        "operators": 6,
+        "media": 14,
+        "newsletter": 1,
+        "builder": 2,
+        "official": 1
       },
       "assetStatus": {
         "case": {
-          "published": 10
+          "published": 7
         },
         "funding": {
-          "published": 4
+          "published": 9
         },
         "product-service": {
-          "published": 2
+          "published": 20
         }
       },
       "assetLevels": {
         "case": {
-          "frontstage": 10
+          "frontstage": 7
         },
         "funding": {
-          "frontstage": 4
+          "frontstage": 9
         },
         "product-service": {
-          "frontstage": 2
+          "frontstage": 20
         }
       },
       "assetEvidenceGates": {
         "case": {
-          "core_evidence_passed": 10
+          "core_evidence_passed": 7
         },
         "funding": {
-          "core_evidence_passed": 4
+          "core_evidence_passed": 9
         },
         "product-service": {
-          "core_evidence_passed": 2
+          "core_evidence_passed": 20
         }
       },
       "assetCopyGates": {}
     },
     "totals": {
-      "raw": 6160,
-      "pool": 3001,
+      "raw": 8538,
+      "pool": 4904,
       "assets": {
-        "case": 346,
-        "funding": 83,
-        "product-service": 267,
-        "opinion": 962,
+        "case": 428,
+        "funding": 147,
+        "product-service": 380,
+        "opinion": 1483,
         "trend": 6,
         "scene": 3,
         "change": 14
@@ -1802,59 +1636,359 @@ window.WaveSightOpsConsole = {
     },
     "days": [
       {
-        "date": "2026-07-02",
-        "label": "2026.07.02",
-        "shortLabel": "07.02",
-        "raw": 147,
-        "pool": 95,
+        "date": "2026-07-18",
+        "label": "2026.07.18",
+        "shortLabel": "07.18",
+        "raw": 150,
+        "pool": 140,
         "assets": {
-          "case": 10,
-          "funding": 4,
-          "product-service": 2,
-          "opinion": 6
+          "case": 7,
+          "funding": 9,
+          "product-service": 20
         },
-        "cards": 22,
+        "cards": 36,
         "rawChannels": {
-          "aihot": 61,
-          "keyword_search": 55,
+          "aihot": 91,
+          "keyword_search": 38,
           "follow_builders": 0
         },
         "poolRoutes": {
-          "core_pool": 33,
-          "emerging_pool": 23,
-          "index_only": 20,
-          "watchlist": 40,
-          "user_feedback_pool": 5
+          "core_pool": 58,
+          "emerging_pool": 18,
+          "watchlist": 51,
+          "index_only": 29
         },
         "evidenceLevels": {
-          "core_evidence_candidate": 72,
-          "supporting_evidence": 2,
-          "community_signal": 3,
-          "user_feedback_signal": 3,
-          "discovery_only": 15
+          "core_evidence_candidate": 108,
+          "user_feedback_signal": 4,
+          "supporting_evidence": 6,
+          "discovery_only": 22
         },
         "sourceLevels": {
-          "A": 19,
-          "S": 12,
-          "B": 60,
-          "C": 4
+          "A": 25,
+          "S": 7,
+          "B": 102,
+          "C": 6
         },
         "sourceTypes": {
-          "news": 9,
-          "product": 2,
-          "research": 1,
-          "developer": 6,
-          "media": 9,
-          "official": 8,
-          "web": 53,
-          "operators": 4,
-          "analysis": 1,
-          "industry": 1,
-          "marketplace": 1
+          "news": 11,
+          "developer": 10,
+          "web": 95,
+          "operators": 6,
+          "media": 14,
+          "newsletter": 1,
+          "builder": 2,
+          "official": 1
         },
         "assetStatus": {
           "case": {
-            "published": 10
+            "published": 7
+          },
+          "funding": {
+            "published": 9
+          },
+          "product-service": {
+            "published": 20
+          }
+        },
+        "assetLevels": {
+          "case": {
+            "frontstage": 7
+          },
+          "funding": {
+            "frontstage": 9
+          },
+          "product-service": {
+            "frontstage": 20
+          }
+        },
+        "assetEvidenceGates": {
+          "case": {
+            "core_evidence_passed": 7
+          },
+          "funding": {
+            "core_evidence_passed": 9
+          },
+          "product-service": {
+            "core_evidence_passed": 20
+          }
+        },
+        "assetCopyGates": {}
+      },
+      {
+        "date": "2026-07-17",
+        "label": "2026.07.17",
+        "shortLabel": "07.17",
+        "raw": 160,
+        "pool": 148,
+        "assets": {
+          "opinion": 24
+        },
+        "cards": 24,
+        "rawChannels": {
+          "aihot": 90,
+          "keyword_search": 31,
+          "follow_builders": 0
+        },
+        "poolRoutes": {
+          "core_pool": 48,
+          "watchlist": 59,
+          "index_only": 40,
+          "emerging_pool": 21
+        },
+        "evidenceLevels": {
+          "core_evidence_candidate": 99,
+          "user_feedback_signal": 7,
+          "supporting_evidence": 12,
+          "community_signal": 1,
+          "discovery_only": 29
+        },
+        "sourceLevels": {
+          "B": 96,
+          "A": 36,
+          "C": 5,
+          "S": 11
+        },
+        "sourceTypes": {
+          "web": 86,
+          "media": 20,
+          "operators": 5,
+          "developer": 4,
+          "news": 16,
+          "official": 5,
+          "product": 3,
+          "analysis": 1,
+          "builder": 2,
+          "funding": 3,
+          "industry": 1,
+          "newsletter": 2
+        },
+        "assetStatus": {},
+        "assetLevels": {},
+        "assetEvidenceGates": {},
+        "assetCopyGates": {}
+      },
+      {
+        "date": "2026-07-16",
+        "label": "2026.07.16",
+        "shortLabel": "07.16",
+        "raw": 157,
+        "pool": 149,
+        "assets": {
+          "case": 4,
+          "funding": 3,
+          "product-service": 18,
+          "opinion": 42
+        },
+        "cards": 67,
+        "rawChannels": {
+          "aihot": 100,
+          "keyword_search": 28,
+          "follow_builders": 0
+        },
+        "poolRoutes": {
+          "core_pool": 55,
+          "watchlist": 53,
+          "index_only": 41,
+          "emerging_pool": 20
+        },
+        "evidenceLevels": {
+          "core_evidence_candidate": 98,
+          "user_feedback_signal": 10,
+          "supporting_evidence": 12,
+          "community_signal": 1,
+          "discovery_only": 28
+        },
+        "sourceLevels": {
+          "A": 40,
+          "B": 94,
+          "C": 3,
+          "S": 12
+        },
+        "sourceTypes": {
+          "news": 18,
+          "media": 22,
+          "web": 83,
+          "operators": 3,
+          "product": 1,
+          "official": 6,
+          "marketplace": 2,
+          "developer": 8,
+          "funding": 2,
+          "builder": 3,
+          "newsletter": 1
+        },
+        "assetStatus": {
+          "case": {
+            "published": 4
+          },
+          "funding": {
+            "published": 3
+          },
+          "product-service": {
+            "published": 18
+          }
+        },
+        "assetLevels": {
+          "case": {
+            "frontstage": 4
+          },
+          "funding": {
+            "frontstage": 3
+          },
+          "product-service": {
+            "frontstage": 18
+          }
+        },
+        "assetEvidenceGates": {
+          "case": {
+            "core_evidence_passed": 4
+          },
+          "funding": {
+            "core_evidence_passed": 3
+          },
+          "product-service": {
+            "core_evidence_passed": 18
+          }
+        },
+        "assetCopyGates": {}
+      },
+      {
+        "date": "2026-07-15",
+        "label": "2026.07.15",
+        "shortLabel": "07.15",
+        "raw": 171,
+        "pool": 157,
+        "assets": {
+          "case": 5,
+          "funding": 7,
+          "product-service": 13,
+          "opinion": 43
+        },
+        "cards": 68,
+        "rawChannels": {
+          "aihot": 107,
+          "keyword_search": 35,
+          "follow_builders": 0
+        },
+        "poolRoutes": {
+          "core_pool": 44,
+          "index_only": 46,
+          "emerging_pool": 26,
+          "watchlist": 64
+        },
+        "evidenceLevels": {
+          "core_evidence_candidate": 100,
+          "user_feedback_signal": 11,
+          "supporting_evidence": 11,
+          "weak_signal": 2,
+          "discovery_only": 33
+        },
+        "sourceLevels": {
+          "A": 42,
+          "B": 91,
+          "C": 5,
+          "S": 19
+        },
+        "sourceTypes": {
+          "news": 16,
+          "web": 81,
+          "operators": 5,
+          "media": 26,
+          "official": 10,
+          "product": 4,
+          "developer": 9,
+          "funding": 2,
+          "builder": 2,
+          "newsletter": 2
+        },
+        "assetStatus": {
+          "case": {
+            "published": 5
+          },
+          "funding": {
+            "published": 7
+          },
+          "product-service": {
+            "published": 13
+          }
+        },
+        "assetLevels": {
+          "case": {
+            "frontstage": 5
+          },
+          "funding": {
+            "frontstage": 7
+          },
+          "product-service": {
+            "frontstage": 13
+          }
+        },
+        "assetEvidenceGates": {
+          "case": {
+            "core_evidence_passed": 5
+          },
+          "funding": {
+            "core_evidence_passed": 7
+          },
+          "product-service": {
+            "core_evidence_passed": 13
+          }
+        },
+        "assetCopyGates": {}
+      },
+      {
+        "date": "2026-07-14",
+        "label": "2026.07.14",
+        "shortLabel": "07.14",
+        "raw": 122,
+        "pool": 112,
+        "assets": {
+          "case": 2,
+          "funding": 4,
+          "product-service": 2,
+          "opinion": 54
+        },
+        "cards": 62,
+        "rawChannels": {
+          "aihot": 59,
+          "keyword_search": 40,
+          "follow_builders": 0
+        },
+        "poolRoutes": {
+          "core_pool": 43,
+          "emerging_pool": 18,
+          "watchlist": 39,
+          "index_only": 28
+        },
+        "evidenceLevels": {
+          "core_evidence_candidate": 83,
+          "user_feedback_signal": 7,
+          "supporting_evidence": 10,
+          "discovery_only": 12
+        },
+        "sourceLevels": {
+          "A": 33,
+          "B": 67,
+          "S": 11,
+          "C": 1
+        },
+        "sourceTypes": {
+          "news": 15,
+          "web": 61,
+          "developer": 5,
+          "media": 18,
+          "product": 4,
+          "operators": 1,
+          "official": 2,
+          "marketplace": 1,
+          "industry": 1,
+          "builder": 3,
+          "newsletter": 1
+        },
+        "assetStatus": {
+          "case": {
+            "published": 2
           },
           "funding": {
             "published": 4
@@ -1865,7 +1999,7 @@ window.WaveSightOpsConsole = {
         },
         "assetLevels": {
           "case": {
-            "frontstage": 10
+            "frontstage": 2
           },
           "funding": {
             "frontstage": 4
@@ -1876,7 +2010,7 @@ window.WaveSightOpsConsole = {
         },
         "assetEvidenceGates": {
           "case": {
-            "core_evidence_passed": 10
+            "core_evidence_passed": 2
           },
           "funding": {
             "core_evidence_passed": 4
@@ -1888,465 +2022,195 @@ window.WaveSightOpsConsole = {
         "assetCopyGates": {}
       },
       {
-        "date": "2026-07-01",
-        "label": "2026.07.01",
-        "shortLabel": "07.01",
-        "raw": 159,
-        "pool": 95,
+        "date": "2026-07-13",
+        "label": "2026.07.13",
+        "shortLabel": "07.13",
+        "raw": 120,
+        "pool": 110,
         "assets": {
           "case": 2,
-          "product-service": 3,
-          "opinion": 44
+          "funding": 2,
+          "product-service": 17,
+          "opinion": 29
         },
-        "cards": 49,
+        "cards": 50,
         "rawChannels": {
-          "aihot": 65,
-          "keyword_search": 82,
+          "aihot": 57,
+          "keyword_search": 33,
           "follow_builders": 0
         },
         "poolRoutes": {
-          "watchlist": 40,
-          "emerging_pool": 22,
-          "user_feedback_pool": 16,
-          "core_pool": 30,
-          "index_only": 20,
-          "discard": 1
+          "core_pool": 41,
+          "emerging_pool": 15,
+          "watchlist": 33,
+          "index_only": 36,
+          "user_feedback_pool": 4
         },
         "evidenceLevels": {
-          "core_evidence_candidate": 59,
-          "user_feedback_signal": 5,
-          "supporting_evidence": 2,
-          "community_signal": 11,
-          "index_only_evidence": 1,
-          "discovery_only": 17
+          "core_evidence_candidate": 76,
+          "user_feedback_signal": 9,
+          "supporting_evidence": 12,
+          "weak_signal": 2,
+          "discovery_only": 11
         },
         "sourceLevels": {
-          "A": 17,
-          "S": 21,
-          "B": 45,
-          "C": 12
+          "B": 85,
+          "A": 15,
+          "C": 3,
+          "S": 7
         },
         "sourceTypes": {
-          "news": 8,
-          "product": 6,
-          "web": 36,
-          "media": 9,
-          "official": 14,
+          "web": 65,
+          "news": 1,
+          "media": 14,
+          "domestic_vendor": 1,
+          "operators": 3,
+          "research": 1,
+          "builder": 4,
+          "funding": 3,
+          "developer": 8,
+          "official": 1,
           "industry": 1,
-          "operators": 12,
-          "organization-capability": 1,
-          "marketplace": 4,
-          "developer": 4
+          "newsletter": 7,
+          "product": 1
         },
         "assetStatus": {
           "case": {
             "published": 2
           },
+          "funding": {
+            "published": 2
+          },
           "product-service": {
-            "published": 3
+            "published": 17
           }
         },
         "assetLevels": {
           "case": {
             "frontstage": 2
           },
+          "funding": {
+            "frontstage": 2
+          },
           "product-service": {
-            "frontstage": 3
+            "frontstage": 17
           }
         },
         "assetEvidenceGates": {
           "case": {
             "core_evidence_passed": 2
           },
+          "funding": {
+            "core_evidence_passed": 2
+          },
           "product-service": {
-            "core_evidence_passed": 3
+            "core_evidence_passed": 17
           }
         },
         "assetCopyGates": {}
       },
       {
-        "date": "2026-06-30",
-        "label": "2026.06.30",
-        "shortLabel": "06.30",
-        "raw": 116,
-        "pool": 95,
+        "date": "2026-07-12",
+        "label": "2026.07.12",
+        "shortLabel": "07.12",
+        "raw": 269,
+        "pool": 136,
         "assets": {
-          "case": 10,
-          "opinion": 37
+          "case": 1,
+          "funding": 1,
+          "product-service": 8,
+          "opinion": 34
         },
-        "cards": 47,
+        "cards": 44,
         "rawChannels": {
-          "aihot": 22,
-          "keyword_search": 68,
+          "aihot": 115,
+          "keyword_search": 13,
           "follow_builders": 0
         },
         "poolRoutes": {
-          "emerging_pool": 17,
-          "watchlist": 34,
-          "core_pool": 31,
-          "user_feedback_pool": 15,
-          "index_only": 25,
-          "discard": 5
+          "user_feedback_pool": 4,
+          "watchlist": 57,
+          "emerging_pool": 7,
+          "index_only": 63,
+          "core_pool": 16
         },
         "evidenceLevels": {
-          "core_evidence_candidate": 45,
-          "community_signal": 13,
-          "user_feedback_signal": 2,
-          "supporting_evidence": 3,
-          "weak_signal": 10,
-          "discovery_only": 22
-        },
-        "sourceLevels": {
-          "B": 63,
-          "C": 15,
-          "A": 7,
-          "S": 10
-        },
-        "sourceTypes": {
-          "web": 57,
-          "operators": 15,
-          "media": 5,
-          "developer": 5,
-          "organization-capability": 1,
-          "industry": 2,
-          "official": 3,
-          "marketplace": 1,
-          "news": 2,
-          "builder": 1,
-          "product": 3
-        },
-        "assetStatus": {
-          "case": {
-            "published": 10
-          }
-        },
-        "assetLevels": {
-          "case": {
-            "frontstage": 10
-          }
-        },
-        "assetEvidenceGates": {
-          "case": {
-            "core_evidence_passed": 10
-          }
-        },
-        "assetCopyGates": {}
-      },
-      {
-        "date": "2026-06-29",
-        "label": "2026.06.29",
-        "shortLabel": "06.29",
-        "raw": 152,
-        "pool": 95,
-        "assets": {
-          "case": 26,
-          "funding": 6,
-          "product-service": 6,
-          "opinion": 20
-        },
-        "cards": 58,
-        "rawChannels": {
-          "aihot": 7,
-          "keyword_search": 65,
-          "follow_builders": 0
-        },
-        "poolRoutes": {
-          "emerging_pool": 43,
-          "watchlist": 45,
-          "core_pool": 33,
-          "index_only": 17
-        },
-        "evidenceLevels": {
-          "core_evidence_candidate": 81,
-          "supporting_evidence": 7,
-          "discovery_only": 7
-        },
-        "sourceLevels": {
-          "B": 82,
-          "A": 6,
-          "S": 7
-        },
-        "sourceTypes": {
-          "industry": 1,
-          "web": 60,
-          "news": 2,
-          "official": 4,
-          "media": 3,
-          "developer": 1,
-          "marketplace": 3,
-          "research": 1,
-          "product": 3,
-          "builder": 12,
-          "newsletter": 4,
-          "funding": 1
-        },
-        "assetStatus": {
-          "case": {
-            "published": 26
-          },
-          "funding": {
-            "published": 6
-          },
-          "product-service": {
-            "published": 6
-          }
-        },
-        "assetLevels": {
-          "case": {
-            "frontstage": 26
-          },
-          "funding": {
-            "frontstage": 6
-          },
-          "product-service": {
-            "frontstage": 6
-          }
-        },
-        "assetEvidenceGates": {
-          "case": {
-            "core_evidence_passed": 26
-          },
-          "funding": {
-            "core_evidence_passed": 6
-          },
-          "product-service": {
-            "core_evidence_passed": 6
-          }
-        },
-        "assetCopyGates": {}
-      },
-      {
-        "date": "2026-06-28",
-        "label": "2026.06.28",
-        "shortLabel": "06.28",
-        "raw": 126,
-        "pool": 95,
-        "assets": {
-          "case": 11,
-          "product-service": 10
-        },
-        "cards": 21,
-        "rawChannels": {
-          "aihot": 10,
-          "keyword_search": 42,
-          "follow_builders": 0
-        },
-        "poolRoutes": {
-          "core_pool": 32,
-          "emerging_pool": 22,
-          "watchlist": 41,
-          "user_feedback_pool": 11,
-          "index_only": 15,
-          "discard": 5
-        },
-        "evidenceLevels": {
-          "core_evidence_candidate": 64,
-          "community_signal": 10,
-          "user_feedback_signal": 1,
-          "supporting_evidence": 5,
-          "weak_signal": 5,
+          "user_feedback_signal": 5,
+          "core_evidence_candidate": 75,
+          "supporting_evidence": 46,
           "discovery_only": 10
         },
         "sourceLevels": {
-          "B": 70,
-          "A": 14,
-          "S": 11
-        },
-        "sourceTypes": {
-          "web": 42,
-          "marketplace": 3,
-          "funding": 2,
-          "analysis": 7,
-          "developer": 9,
-          "news": 7,
-          "media": 7,
-          "industry": 3,
-          "builder": 9,
-          "newsletter": 2,
-          "product": 3,
-          "official": 1
-        },
-        "assetStatus": {
-          "case": {
-            "published": 11
-          },
-          "product-service": {
-            "published": 10
-          }
-        },
-        "assetLevels": {
-          "case": {
-            "frontstage": 11
-          },
-          "product-service": {
-            "frontstage": 10
-          }
-        },
-        "assetEvidenceGates": {
-          "case": {
-            "core_evidence_passed": 11
-          },
-          "product-service": {
-            "core_evidence_passed": 10
-          }
-        },
-        "assetCopyGates": {}
-      },
-      {
-        "date": "2026-06-27",
-        "label": "2026.06.27",
-        "shortLabel": "06.27",
-        "raw": 177,
-        "pool": 95,
-        "assets": {
-          "case": 9,
-          "funding": 3,
-          "product-service": 7,
-          "opinion": 6
-        },
-        "cards": 25,
-        "rawChannels": {
-          "aihot": 12,
-          "keyword_search": 53,
-          "follow_builders": 0
-        },
-        "poolRoutes": {
-          "emerging_pool": 24,
-          "watchlist": 49,
-          "core_pool": 30,
-          "user_feedback_pool": 3,
-          "index_only": 15,
-          "discard": 1
-        },
-        "evidenceLevels": {
-          "core_evidence_candidate": 76,
-          "community_signal": 3,
-          "index_only_evidence": 2,
-          "supporting_evidence": 2,
-          "discovery_only": 12
-        },
-        "sourceLevels": {
-          "B": 87,
-          "S": 4,
-          "A": 4
-        },
-        "sourceTypes": {
-          "web": 76,
-          "marketplace": 1,
-          "developer": 6,
-          "official": 3,
-          "funding": 1,
-          "industry": 1,
-          "product": 1,
-          "media": 3,
-          "news": 1,
-          "analysis": 2
-        },
-        "assetStatus": {
-          "case": {
-            "published": 9
-          },
-          "funding": {
-            "published": 3
-          },
-          "product-service": {
-            "published": 7
-          }
-        },
-        "assetLevels": {
-          "case": {
-            "frontstage": 9
-          },
-          "funding": {
-            "frontstage": 3
-          },
-          "product-service": {
-            "frontstage": 7
-          }
-        },
-        "assetEvidenceGates": {
-          "case": {
-            "core_evidence_passed": 9
-          },
-          "funding": {
-            "core_evidence_passed": 3
-          },
-          "product-service": {
-            "core_evidence_passed": 7
-          }
-        },
-        "assetCopyGates": {}
-      },
-      {
-        "date": "2026-06-26",
-        "label": "2026.06.26",
-        "shortLabel": "06.26",
-        "raw": 188,
-        "pool": 95,
-        "assets": {
-          "opinion": 43
-        },
-        "cards": 43,
-        "rawChannels": {
-          "aihot": 86,
-          "keyword_search": 102,
-          "follow_builders": 0
-        },
-        "poolRoutes": {
-          "watchlist": 71,
-          "core_pool": 23,
-          "index_only": 1,
-          "emerging_pool": 26,
-          "user_feedback_pool": 2
-        },
-        "evidenceLevels": {
-          "core_evidence_candidate": 61,
-          "supporting_evidence": 5,
-          "user_feedback_signal": 1,
-          "index_only_evidence": 2,
-          "community_signal": 2,
-          "discovery_only": 24
-        },
-        "sourceLevels": {
+          "B": 117,
           "A": 12,
-          "B": 73,
-          "S": 10
+          "S": 5,
+          "C": 2
         },
         "sourceTypes": {
-          "news": 5,
-          "web": 60,
-          "media": 7,
-          "product": 1,
-          "funding": 1,
-          "developer": 8,
-          "marketplace": 4,
-          "official": 7,
-          "organization-capability": 1,
-          "industry": 1
+          "web": 78,
+          "media": 9,
+          "news": 3,
+          "official": 1,
+          "marketplace": 2,
+          "developer": 4,
+          "analysis": 1,
+          "builder": 26,
+          "newsletter": 10,
+          "operators": 2
         },
-        "assetStatus": {},
-        "assetLevels": {},
-        "assetEvidenceGates": {},
+        "assetStatus": {
+          "case": {
+            "published": 1
+          },
+          "funding": {
+            "published": 1
+          },
+          "product-service": {
+            "published": 8
+          }
+        },
+        "assetLevels": {
+          "case": {
+            "frontstage": 1
+          },
+          "funding": {
+            "frontstage": 1
+          },
+          "product-service": {
+            "frontstage": 8
+          }
+        },
+        "assetEvidenceGates": {
+          "case": {
+            "core_evidence_passed": 1
+          },
+          "funding": {
+            "core_evidence_passed": 1
+          },
+          "product-service": {
+            "core_evidence_passed": 8
+          }
+        },
         "assetCopyGates": {}
       }
     ],
     "engineQuality": {
-      "updatedAt": "2026-07-02T08:32:24.376Z",
+      "updatedAt": "2026-07-18T02:49:29.631Z",
       "sampleNote": "样本为 Raw 条目中的入口命中；同一条 Raw 可能被多个入口标记。",
       "metricNote": "新鲜度按已知发布时间中 48 小时内比例计算；重复率按跨 Raw 归一化 URL / 标题计算；Raw Card 候选率按可进入 core / emerging / user_feedback 或具备卡片可用方向计算。",
       "rows": [
         {
           "id": "tavily",
           "label": "Tavily",
-          "total": 114,
+          "total": 117,
           "freshKnown": 0,
           "fresh": 0,
-          "duplicates": 1,
+          "duplicates": 2,
           "official": 28,
-          "convertible": 64,
+          "convertible": 65,
           "freshnessRate": null,
-          "duplicateRate": 1,
-          "officialRate": 25,
+          "duplicateRate": 2,
+          "officialRate": 24,
           "conversionRate": 56
         },
         {
@@ -2380,30 +2244,30 @@ window.WaveSightOpsConsole = {
         {
           "id": "gdelt",
           "label": "GDELT",
-          "total": 626,
-          "freshKnown": 49,
+          "total": 763,
+          "freshKnown": 72,
           "fresh": 1,
-          "duplicates": 92,
+          "duplicates": 122,
           "official": 6,
-          "convertible": 258,
-          "freshnessRate": 2,
-          "duplicateRate": 15,
+          "convertible": 285,
+          "freshnessRate": 1,
+          "duplicateRate": 16,
           "officialRate": 1,
-          "conversionRate": 41
+          "conversionRate": 37
         },
         {
           "id": "anysearch",
           "label": "AnySearch",
-          "total": 1510,
-          "freshKnown": 0,
-          "fresh": 0,
-          "duplicates": 141,
-          "official": 227,
-          "convertible": 824,
-          "freshnessRate": null,
+          "total": 2195,
+          "freshKnown": 149,
+          "fresh": 31,
+          "duplicates": 199,
+          "official": 396,
+          "convertible": 1139,
+          "freshnessRate": 21,
           "duplicateRate": 9,
-          "officialRate": 15,
-          "conversionRate": 55
+          "officialRate": 18,
+          "conversionRate": 52
         },
         {
           "id": "firecrawl",
@@ -2422,16 +2286,16 @@ window.WaveSightOpsConsole = {
         {
           "id": "aihot",
           "label": "AI HOT",
-          "total": 3574,
-          "freshKnown": 2826,
-          "fresh": 2826,
-          "duplicates": 6,
-          "official": 235,
-          "convertible": 1246,
-          "freshnessRate": 100,
+          "total": 4814,
+          "freshKnown": 3840,
+          "fresh": 3812,
+          "duplicates": 16,
+          "official": 268,
+          "convertible": 1585,
+          "freshnessRate": 99,
           "duplicateRate": 0,
-          "officialRate": 7,
-          "conversionRate": 35
+          "officialRate": 6,
+          "conversionRate": 33
         },
         {
           "id": "follow_builders",
@@ -2455,7 +2319,7 @@ window.WaveSightOpsConsole = {
       {
         "key": "SITE",
         "label": "Main website",
-        "value": "SITE-V3.4.5"
+        "value": "SITE-V4.2.0-entity-history"
       },
       {
         "key": "OPS",
@@ -2468,9 +2332,9 @@ window.WaveSightOpsConsole = {
         "value": "BSIG-V2.2.0-pipeline-stage-ownership"
       },
       {
-        "key": "IMAP",
-        "label": "Intelligence Map",
-        "value": ""
+        "key": "TAG",
+        "label": "Tag taxonomy",
+        "value": "TAG-V4.0"
       },
       {
         "key": "FLV",
@@ -2483,14 +2347,64 @@ window.WaveSightOpsConsole = {
         "value": "CINT-V1.0.2-publication-waiting-gate"
       },
       {
+        "key": "FDE",
+        "label": "Enterprise AI / FDE data contract",
+        "value": "FDE-V2.0"
+      },
+      {
         "key": "EAI",
-        "label": "Enterprise AI lens",
+        "label": "Enterprise AI compatibility lens",
         "value": "EAI-V1.2.0-raw-card-ingestion-boundary"
+      },
+      {
+        "key": "HARDWARE",
+        "label": "AI Hardware data",
+        "value": "HARDWARE-V1.0"
+      },
+      {
+        "key": "REPORTS",
+        "label": "Reports Center",
+        "value": "REPORTS-V1.0.0-periodic-report-center"
+      },
+      {
+        "key": "OMAP",
+        "label": "Opportunity Map",
+        "value": "OMAP-V1.0.0-independent-column"
+      },
+      {
+        "key": "RAW",
+        "label": "Data Center Raw contract",
+        "value": "RAW-V3.0"
+      },
+      {
+        "key": "EVENT",
+        "label": "Canonical event contract",
+        "value": "EVENT-V1.1"
+      },
+      {
+        "key": "ENTITY",
+        "label": "Entity history contract",
+        "value": "ENTITY-V1.0"
+      },
+      {
+        "key": "PERSON",
+        "label": "Person-account review contract",
+        "value": "PERSON-REVIEW-V1.0"
+      },
+      {
+        "key": "RELATION",
+        "label": "Factual relationship contract",
+        "value": "RELATION-V2.0"
+      },
+      {
+        "key": "BACKFILL",
+        "label": "Targeted historical collection contract",
+        "value": "BACKFILL-V1.0"
       },
       {
         "key": "SKILL",
         "label": "Skill Store",
-        "value": "v1.3.2 Cleanup management cache and common-action fix"
+        "value": "v1.6.3 V4 governance alignment"
       }
     ],
     "principles": [

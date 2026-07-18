@@ -110,18 +110,18 @@ An empty cell means "no reliable public evidence yet." It is better than filling
 
 ## Frontstage Presentation Rules
 
-The Industry Reports page should present the opportunity maps as decision surfaces, not as a compact dashboard widget.
+The independent Opportunity Map page should present the two matrices as source-backed application surfaces, not as a compact Reports Center widget.
 
 - The top-level section title should be `机会地图` / `Opportunity Map`.
 - Entry Point Map and Product Pain Map must be separate sections with their own Chinese and English subcolumn names.
 - Do not hide the two maps behind toggle buttons once both can be read on the same page.
 - Map cells should open related Card evidence in a modal or equivalent detail layer.
 - Do not keep a persistent right-side "Cell Evidence" instruction panel on the page.
-- Relation paths may appear after the maps as supporting exploration, but they should not occupy the first screen or replace map evidence.
+- Relation Paths are retired and must not return to either Opportunity Map or Reports Center.
 - Keep the visual palette report-like and low saturation: warm paper background, dark blue actions, gold accents, and restrained status colors.
 ## Boundaries
 
 - Relationship graph uses old graph tags and Card edges.
 - Opportunity maps use `opportunity_signals`.
-- Weekly report prose may interpret the map, but it is not the data source for the map.
+- Weekly report prose may interpret the accepted map projection, but it is not the data source for the map and does not own OMAP page metadata.
 - Community and viewpoint materials can inspire questions, but cannot directly heat a cell unless promoted through Raw / Pool / Card.

@@ -61,7 +61,7 @@ Use the content shape to choose modules:
 - `git diff --check`
 - `node agent-workflow/tools/frontstage-regression-gate.mjs`
 - Playwright smoke:
-  - Intelligence Map desktop
+  - Industry Reports desktop
   - weekly detail desktop
   - weekly detail mobile
 - Page assertions:
@@ -69,5 +69,5 @@ Use the content shape to choose modules:
   - time-window selector exists;
   - the current public website version from `context/version-ledger.md` and source meta exist after release;
   - no V3 topbar, V3 stylesheet, or retired column link exists;
-  - no Trend Candidates / History blocks on Intelligence Map.
+  - no Opportunity Map, Relation Paths, Trend Candidates, or History blocks on Industry Reports.
   - Reports Center and weekly detail pages use `REPORTS-V1.0.0-periodic-report-center` and do not emit the Opportunity Map version.

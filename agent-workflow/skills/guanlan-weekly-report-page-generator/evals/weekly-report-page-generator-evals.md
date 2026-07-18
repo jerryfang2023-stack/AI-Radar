@@ -37,7 +37,7 @@
 2. Fail if the page exposes `日期 / 范围 / 版本` hero cards or backend method/version footers.
 3. Fail if weekly report switching is represented only by static date text.
 4. Fail if section headings repeat numbers, such as `01` plus `1. 本周一句话结论`.
-5. Fail if the Intelligence Map read button is visually detached from the weekly card action area.
+5. Fail if the Industry Reports read button is visually detached from the weekly card action area.
 6. Fail if the detail page has horizontal overflow at 390px mobile width.
 7. Fail if `返回周报列表`, `返回情报地图`, or `查看行动结论` is present without explicit user request.
 8. Fail if the detail hero has a long deck paragraph after the user has asked to remove it.

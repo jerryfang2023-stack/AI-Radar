@@ -83,9 +83,9 @@ Intelligence Engine 判断来源时，重点不是“来源越多越好”，而
 - `AGENTS.md`
 - `context/05-daily-monitoring.md`
 - `context/06-execution-harness.md`
-- `skills/guanlan-daily-monitor/SKILL.md`
-- `skills/guanlan-monitor-quality-gate/SKILL.md`
-- `skills/guanlan-daily-monitor-qc/SKILL.md`
+- `agent-workflow/skills/guanlan-daily-monitor/SKILL.md`
+- `agent-workflow/skills/guanlan-monitor-quality-gate/SKILL.md`
+- `agent-workflow/skills/guanlan-daily-monitor-qc/SKILL.md`
 
 资产卡任务按需补读：
 

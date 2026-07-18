@@ -21,8 +21,8 @@
    - Fail when community demand posts or opinions directly heat a public cell.
 
 6. `frontstage_integrity`
-   - Pass when the Intelligence Map keeps only the two opportunity panels and the relationship graph, without restoring Signal Candidates, 时间聚集, or Tag 聚合.
-   - Fail when removed modules return.
+   - Pass when `opportunity-map.html` owns both matrices under OMAP metadata and Reports Center owns no opportunity matrices.
+   - Fail when OMAP content returns to Industry Reports, or Relation Paths, Signal Candidates, 时间聚集, or Tag 聚合 returns on either page.
 7. `standalone_map_presentation`
    - Pass when Entry Point Map and Product Pain Map render as separate full-width sections with Chinese and English subcolumn names.
    - Fail when the maps are squeezed behind toggle buttons or merged into a single "切入点地图 / 痛点地图" heading.
@@ -34,3 +34,7 @@
 9. `consolidated_schedule_ownership`
    - Pass when the opportunity refresh runs inside the Monday 10:30 weekly report controller before report generation.
    - Fail when a separate opportunity-map scheduled task is introduced or the report reads a pre-refresh projection.
+
+10. `independent_column_version`
+   - Pass when Opportunity Map emits `OMAP-V1.0.0-independent-column` and report pages emit only `REPORTS-V1.0.0-periodic-report-center`.
+   - Fail when shared IMAP metadata returns or either application emits the other's column version.
