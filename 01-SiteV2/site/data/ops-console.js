@@ -1,7 +1,7 @@
 window.WaveSightOpsConsole = {
   "meta": {
     "version": "OPS-V1.2.3-content-factory-cleanout",
-    "generatedAt": "2026-07-19T08:42:38.001Z",
+    "generatedAt": "2026-07-19T08:47:26.951Z",
     "date": "2026-07-19",
     "sources": [
       "agent-workflow/reports/daily-supervision-report-latest.json",
@@ -45,9 +45,9 @@ window.WaveSightOpsConsole = {
     "status": "passed",
     "statusText": "已通过",
     "issueSummary": {
-      "total": 49,
+      "total": 47,
       "daily": 0,
-      "open": 2,
+      "open": 0,
       "resolved": 47,
       "urgent": 0
     },
@@ -429,52 +429,7 @@ window.WaveSightOpsConsole = {
     }
   },
   "inbox": {
-    "open": [
-      {
-        "id": "README",
-        "date": "",
-        "title": "Hermes To Codex Inbox",
-        "status": "open",
-        "state": "open",
-        "priority": "normal",
-        "laneId": "business_signals",
-        "category": "agent-workflow/reports/YYYY-MM-DD-daily-supervision-report.md",
-        "failedGate": "agent-workflow/reports/YYYY-MM-DD-daily-supervision-report.md",
-        "reportPath": "agent-workflow/reports/YYYY-MM-DD-daily-supervision-report.md",
-        "dataGenerated": "yes",
-        "neededAction": "repair rule",
-        "createdAt": "YYYY-MM-DDTHH:mm:ss+08:00",
-        "updatedAt": "",
-        "resolvedAt": "",
-        "resolver": "",
-        "fixCommit": "",
-        "validation": "",
-        "prevention": "",
-        "sourceFile": "agent-workflow/inbox/hermes-to-codex/README.md"
-      },
-      {
-        "id": "TEMPLATE",
-        "date": "",
-        "title": "Hermes Repair Request",
-        "status": "open",
-        "state": "open",
-        "priority": "normal",
-        "laneId": "business_signals",
-        "category": "monitor_or_gate_failure",
-        "failedGate": "agent-workflow/reports/YYYY-MM-DD-daily-supervision-report.md",
-        "reportPath": "agent-workflow/reports/YYYY-MM-DD-daily-supervision-report.md",
-        "dataGenerated": "yes",
-        "neededAction": "repair rule",
-        "createdAt": "YYYY-MM-DDTHH:mm:ss+08:00",
-        "updatedAt": "YYYY-MM-DDTHH:mm:ss+08:00",
-        "resolvedAt": "",
-        "resolver": "",
-        "fixCommit": "",
-        "validation": "",
-        "prevention": "",
-        "sourceFile": "agent-workflow/inbox/hermes-to-codex/TEMPLATE.md"
-      }
-    ],
+    "open": [],
     "resolved": [
       {
         "id": "2026-07-19-follow_builders_skill-first-line-viewpoints",

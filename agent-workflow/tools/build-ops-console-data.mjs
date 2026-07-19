@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { isHermesInboxRecordFilename } from "./hermes-inbox-utils.mjs";
 
 const root = process.cwd();
 const VERSION = "OPS-V1.2.3-content-factory-cleanout";
@@ -46,7 +47,7 @@ function parseHermesInbox() {
   const dir = abs("agent-workflow", "inbox", "hermes-to-codex");
   if (!fs.existsSync(dir)) return [];
   return fs.readdirSync(dir)
-    .filter((name) => name.endsWith(".md"))
+    .filter(isHermesInboxRecordFilename)
     .sort()
     .map((name) => {
       const markdown = fs.readFileSync(path.join(dir, name), "utf8");
