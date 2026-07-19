@@ -13,12 +13,12 @@ item_count: 1
 
 - [当日 V4 CanonicalEvent](../../11-databases/data-center-v4/2026-06-29/canonical-events.json)
 
-## 1. Akamas 发布 Efficiency
+## 1. Akamas 推出面向 GPU 效率的 AI 基础设施优化方案
 
-- hardware_record_id: `HW-1011bec4518f1128`
-- event_id: `EV-b40efa1689aed2e5`
+- hardware_record_id: `HW-b32e61f6ea5c1646`
+- event_id: `EV-9191a8bbd547a28e`
 - event_time: 2026-06-09T07:49:20.000Z
-- event_type: hardware_product
+- event_type: hardware_deployment
 - hardware_type: gpu
 - compute_layer: data_center
 - supplier: Akamas

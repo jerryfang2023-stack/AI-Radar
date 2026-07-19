@@ -13,19 +13,19 @@ item_count: 1
 
 - [当日 V4 CanonicalEvent](../../11-databases/data-center-v4/2026-06-07/canonical-events.json)
 
-## 1. smart 精灵 5 号 OTA 升级 2.3.1 CN 版本：电子后视镜、华为 HiCar 等上线
+## 1. Snowflake 扩大与 AWS 的合作，承诺投入 60 亿美元用于 AI
 
-- fde_id: `FDE-54a51e13cde024a8`
-- event_id: `EV-e7a6bcd24f4241d0`
-- event_time: 2026-06-07T00:32:24.000Z
-- stage: completed
-- customer: ByteDance
-- vendor: 未披露
+- fde_id: `FDE-d7d8adb3770a6b8e`
+- event_id: `EV-ec2e421d0e18be9b`
+- event_time: 未披露
+- stage: announced
+- customer: Amazon
+- vendor: Snowflake Expands AWS
 - industry: 未披露
-- use_case: smart 精灵 5 号 OTA 升级 2.3.1 CN 版本：电子后视镜、华为 HiCar 等上线
+- use_case: with $6B AI Commitment
 - reported_need: 未披露
-- delivery_components: smart 精灵 5 号 OTA 升级 2.3.1 CN 版本：电子后视镜、华为 HiCar 等上线 - IT之家；smart 精灵 5 号 OTA 升级 2.3.1 CN 版本：电子后视镜、华为 HiCar 等上线
-- reported_outcomes: 未披露
-- metrics: 未披露
-- undisclosed_fields: vendor；industry；workflow_before；workflow_after；delivery_model；team_composition；reported_need；systems_integrated；data_requirements；governance_controls；reported_outcomes
-- source: [IT之家（RSS）](https://ithome.com/0/961/005.htm)
+- delivery_components: 未披露
+- reported_outcomes: build and deploy AI-powered applications faster and more securely；move from AI experimentation to production-scale outcomes
+- metrics: $6 billion；$7 billion；$6 billion
+- undisclosed_fields: industry；workflow_before；workflow_after；delivery_model；team_composition；reported_need；systems_integrated；data_requirements；governance_controls；reported_delivery_components
+- source: [keyword search / Anysearch](https://snowflake.com/en/news/press-releases/snowflake-expands-aws-collaboration-with-6b-commitment-to-accelerate-enterprise-agentic-ai-adoption)

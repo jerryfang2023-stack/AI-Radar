@@ -15,16 +15,16 @@ item_count: 1
 
 ## 1. 高通发布骁龙 Reality Elite 旗舰 XR 芯片，AI 算力提升 160%
 
-- hardware_record_id: `HW-ec662a2d36b755fa`
-- event_id: `EV-b15c842ee1974890`
+- hardware_record_id: `HW-975ce584aff2924c`
+- event_id: `EV-20dcacae656a9eb8`
 - event_time: 2026-06-16T22:51:14.000Z
 - event_type: hardware_product
 - hardware_type: semiconductor
 - compute_layer: 未披露
-- supplier: Samsung
+- supplier: 未披露
 - customer: 未披露
 - process_node: 未披露
-- capacity: 160 %
+- capacity: 未披露
 - site: 未披露
 - region: 未披露
 - contract_value: 未披露

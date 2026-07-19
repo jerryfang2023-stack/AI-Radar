@@ -13,36 +13,36 @@ item_count: 2
 
 - [当日 V4 CanonicalEvent](../../11-databases/data-center-v4/2026-06-23/canonical-events.json)
 
-## 1. 生数 Vidu Q3 多模态视频大模型上线华为云 MaaS，主打文/图生视频一体化成片
+## 1. 三星在韩国及全球DX部门部署ChatGPT Enterprise和Codex
 
-- fde_id: `FDE-4858cc86925e281a`
-- event_id: `EV-f169db2fb75a1371`
-- event_time: 2026-06-22T13:26:08.000Z
+- fde_id: `FDE-8f63ee695a479d40`
+- event_id: `EV-538adc98d1da8fda`
+- event_time: 2026-06-22T09:40:29.000Z
 - stage: completed
-- customer: 未披露
+- customer: Samsung
 - vendor: 未披露
 - industry: 未披露
-- use_case: 华为云 MaaS，主打文/图生视频一体化成片
+- use_case: ChatGPT Enterprise和Codex
 - reported_need: 未披露
-- delivery_components: 为剧而生：生数 Vidu Q3 多模态大模型上线华为云，主打文 / 图生视频一体化成片能力 - IT之家；为剧而生：生数 Vidu Q3 多模态大模型上线华为云，主打文 / 图生视频一体化成片能力；IT之家 6 月 22 日消息，华为云刚刚宣布，生数科技新一代多模态视频生成大模型 Vidu Q3 上线华为云 MaaS 模型即服务。；IT之家注意到，Vidu Q3 本次有 2 个版本上线华为云 MaaS 平台：
+- delivery_components: Samsung Electronics is deploying ChatGPT Enterprise and Codex to all employees in South Korea and everyone in its Device eXperience (DX) division worldwide.；Samsung Electronics is deploying ChatGPT Enterprise and Codex to all employees in South Korea and everyone in its Device eXperience (DX) division worldwide.
 - reported_outcomes: 未披露
 - metrics: 未披露
-- undisclosed_fields: customer；vendor；industry；workflow_before；workflow_after；delivery_model；team_composition；reported_need；systems_integrated；data_requirements；governance_controls；reported_outcomes
-- source: [IT之家（RSS）](https://ithome.com/0/967/217.htm)
+- undisclosed_fields: vendor；industry；workflow_before；workflow_after；delivery_model；team_composition；reported_need；data_requirements；governance_controls；reported_outcomes
+- source: [The Decoder：AI News（RSS）](https://the-decoder.com/samsung-rolls-out-chatgpt-enterprise-and-codex-to-employees-in-south-korea)
 
-## 2. 合约最高价值 63 亿美元，SpaceX 与开源 AI 初创企业 Reflection 签署算力合作协议
+## 2. Google DeepMind 7500 万美元投资 A24，合作开发电影 AI 工具
 
-- fde_id: `FDE-f24f26db83ef0631`
-- event_id: `EV-f949fd95df58d42d`
-- event_time: 2026-06-22T15:19:26.000Z
+- fde_id: `FDE-1928d44823eb1c09`
+- event_id: `EV-67ef7accd26a07a0`
+- event_time: 2026-06-22T18:49:44.000Z
 - stage: announced
-- customer: 未披露
-- vendor: 未披露
-- industry: 未披露
-- use_case: 协议
-- reported_need: 未披露
-- delivery_components: 未披露
+- customer: A24
+- vendor: Google DeepMind
+- industry: 电影
+- use_case: 开发电影 AI 工具
+- reported_need: 开发能够赋能艺术家的工具，支持真实、有意义的叙事
+- delivery_components: Though controversy has swirled around Hollywood over the use of AI in movies, A24 would be far from the first studio to explore integrating AI into the creative process. Netflix announced earlier this year that it was buying Ben Affleck’s company, InterPositive, which creates AI tools for filmmakers. Last year, meanwhile, Amazon’s MGM Studios launched an AI unit focused on developing tools for television and movie production.
 - reported_outcomes: 未披露
-- metrics: 63 亿；427.71 亿
-- undisclosed_fields: customer；vendor；industry；workflow_before；workflow_after；delivery_model；team_composition；reported_need；systems_integrated；data_requirements；governance_controls；reported_outcomes
-- source: [IT之家（RSS）](https://ithome.com/0/967/236.htm)
+- metrics: $75 million
+- undisclosed_fields: workflow_before；workflow_after；delivery_model；team_composition；systems_integrated；data_requirements；governance_controls；reported_outcomes
+- source: [TechCrunch：AI（RSS）](https://techcrunch.com/2026/06/22/google-deepmind-bets-75m-on-ais-future-in-hollywood-with-a24-deal)

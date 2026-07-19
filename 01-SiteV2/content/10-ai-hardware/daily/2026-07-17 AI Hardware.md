@@ -13,7 +13,7 @@ item_count: 2
 
 - [当日 V4 CanonicalEvent](../../11-databases/data-center-v4/2026-07-17/canonical-events.json)
 
-## 1. 日本启动 Noetra 国家级 AI 基础设施，计划采购 2.75 万枚 NVIDIA Rubin 芯片
+## 1. 日本将购买英伟达Rubin芯片，构建机器人AI智能体
 
 - hardware_record_id: `HW-ceb55d9bc637c1d3`
 - event_id: `EV-cafe435ddd007821`
@@ -31,16 +31,16 @@ item_count: 2
 - shipment_date: 未披露
 - source: [keyword search / Anysearch](https://japantimes.co.jp/business/2026/07/16/japan-nvidia-rubin-chips-robots)
 
-## 2. TYLsemi Emerges From Stealth 更新硬件供应：Chains - Startup Fortune
+## 2. TYLsemi 携 4300 万美元走出隐身模式，重塑 AI 芯片供应链
 
-- hardware_record_id: `HW-00b7f4878f794f31`
-- event_id: `EV-6dc5c8b1d59e91ad`
+- hardware_record_id: `HW-4c176e4c40871adc`
+- event_id: `EV-bca0d9aca07bcb4a`
 - event_time: 2026-07-16T00:00:00.000Z
 - event_type: hardware_supply
 - hardware_type: semiconductor
 - compute_layer: 未披露
-- supplier: TYLsemi Emerges From Stealth
-- customer: TYLsemi Emerges From Stealth
+- supplier: TYLsemi
+- customer: TYLsemi
 - process_node: 未披露
 - capacity: 未披露
 - site: 未披露

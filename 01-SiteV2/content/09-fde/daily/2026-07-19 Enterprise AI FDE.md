@@ -1,0 +1,48 @@
+---
+type: enterprise_ai_fde_daily
+date: 2026-07-19
+fde_version: FDE-V2.0
+status: current
+source: "01-SiteV2/content/11-databases/data-center-v4/2026-07-19/fde-records.json"
+item_count: 2
+---
+
+# 2026-07-19 Enterprise AI / FDE
+
+> 本页直接投影自 Data Center V4 的 FDERecord。它是企业实施事实视图，不是第四类 Signal Card。
+
+- [当日 V4 CanonicalEvent](../../11-databases/data-center-v4/2026-07-19/canonical-events.json)
+
+## 1. OpenAI 与咨询巨头达成合作，推进企业业务
+
+- fde_id: `FDE-2a3615a93ffe5946`
+- event_id: `EV-3c4d6d70ac763885`
+- event_time: 2026-02-19T00:00:00.000Z
+- stage: announced
+- customer: 未披露
+- vendor: OpenAI
+- industry: 未披露
+- use_case: Accenture, Boston Consulting Group, Capgemini, McKinsey & Co.
+- reported_need: 未披露
+- delivery_components: 未披露
+- reported_outcomes: 未披露
+- metrics: 未披露
+- undisclosed_fields: customer；industry；workflow_before；workflow_after；delivery_model；team_composition；reported_need；systems_integrated；data_requirements；governance_controls；reported_delivery_components；reported_outcomes
+- source: [keyword search / Anysearch](https://cnbc.com/2026/02/23/open-ai-consulting-accenture-boston-capgemini-mckinsey-frontier.html)
+
+## 2. 前线部署工程师证明AI让技术岗位更人性化 - Salesforce
+
+- fde_id: `FDE-cc943789fb1c3f3d`
+- event_id: `EV-2c476cb7969f399b`
+- event_time: 2026-03-18T16:00:00.000Z
+- stage: completed
+- customer: Salesforce
+- vendor: Rime
+- industry: 未披露
+- use_case: Engineers Are Proving AI Makes Tech Jobs More Human - Salesforce
+- reported_need: companies adopt AI agents at breakneck speed but need expertise to actually deploy them
+- delivery_components: How Forward Deployed Engineers Are Proving AI Makes Tech Jobs More Human；Sarah Khalid was three years into her career as a Success Architect at Salesforce when her team restructured and she found herself in a role she hadn’t planned on, couldn’t fully define, and wasn’t sure existed yet. “I didn’t plan on becoming an FDE,” she said. “It’s something that I grew into.” Forward deployed engineers (FDEs) saw an 800% spike in job postings between January and September 2025, according to an analysis by Indeed and the Financial Times, as companies adopt AI agents at breakneck speed but need expertise to actually deploy them. FDEs exist to close that gap. They code, consult, and translate agentic AI into working solutions, often while sitting side by side with the customer. Similar to when Harvard Business Review deemed data scientist “the sexiest job of the 21st century” due to a rare combination of technical chops and business savvy, both roles prove that transformative technology doesn’t eliminate jobs. It creates entirely new ones we couldn’t have imagined a few years prior. Now history is repeating itself, just faster. How do I know when AI is wrong, when AI is right, how it can solve the right problem?；” Around 40% to 50% of FDE movement at Salesforce is internal. The company built a six-week onboarding program in September 2025 with two weeks of focused technical training and four weeks on the job to bridge the gap. For anyone eyeing the role from the outside, Hickin’s advice is simple: “Become the AI expert in the job that you’re in. Experiment with the tool, figure out how it can solve problems in your team. Then you become a kind of quasi-FDE within your own job.” Related How We Cut Inference Spend by Right-Sizing Our Models 8 min read Slackbot Can Now Do Anything Salesforce Can. Just Ask. Trust builder AI has already changed what the job demands internally. FDEs once spent up to 40% of their time on administrative preparation, including summarizing meetings, pulling account histories, and drafting status updates. That’s largely automated now. “Now they can spend their time on hacking, building, figuring out the customer issue,” Hickin said. “Human jobs become more human.” Khalid explained what this looks like in practice: She once worked with a tech customer whose AI agent was targeting a 70% deflection rate for their customer service function. That figure became the North Star to add functionality, optimize, and move the needle. When they hit it, the customer expanded to a second use case. She also described a time when an insurance company demanded accuracy and response time targets. Khalid admitted that the technical side was hard. It required experimenting with different LLM models and prompt engineering on the back end. But what nearly derailed the engagement had nothing to do with code. This company, like many others, was experimenting with a variety of solutions. So she said, “It also required a lot of nontechnical skills: how to deal with that customer, how to make them not want to give up on Agentforce. And make them trust.” That account didn’t turn on a technical breakthrough. It turned on rebuilding confidence. “There’s not much coding involved,” Khalid reflected. “It’s actually more judgment, trust, and communication skills. And not something that AI can replace.” Work, redefined Back in 2012, the data scientist role looked like something only a narrow slice of specialists could do. A decade later, data literacy had become a baseline expectation across job functions. Hickin sees the FDE role charting the same arc. It won’t be a specialty forever but a leading indicator of where technical work is heading: closer to the customer, more dependent on judgment, and more human than the job title implies. Khalid, reflecting on the FDE acronym, has her own proposal: future defining engineers. “We’re not just defining the AI part,” she said. “We’re also defining how this role itself will shape out in the future.” It’s clever. And after what happened with data science, it’s hard to argue with. Go Deeper: Read why today’s hottest role is the forward deployed engineer Learn how Agentforce inspired three FDEs to return to Salesforce Learn how the role of the developer has changed in the agentic AI era；How Forward Deployed Engineers Are Proving AI Makes Tech Jobs More Human
+- reported_outcomes: 未披露
+- metrics: 800%；40%；50%；40%；70%
+- undisclosed_fields: industry；workflow_after；delivery_model；team_composition；systems_integrated；data_requirements；governance_controls；reported_outcomes
+- source: [keyword search / Anysearch](https://salesforce.com/news/stories/forward-deployed-engineers-making-ai-jobs-more-human)

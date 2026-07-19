@@ -13,53 +13,53 @@ item_count: 3
 
 - [当日 V4 CanonicalEvent](../../11-databases/data-center-v4/2026-06-25/canonical-events.json)
 
-## 1. OpenAI ChatGPT 语音最大规模升级：双向AI语音模型 Bidi 1 已上线测试
+## 1. ServiceNow与埃森哲推出前沿部署工程计划，助力企业规模化部署Agentic AI
 
-- fde_id: `FDE-27b47f66473cb867`
-- event_id: `EV-62901df23f471eea`
-- event_time: 2026-06-24T04:34:24.000Z
+- fde_id: `FDE-bf7ee7f3e62e9a3b`
+- event_id: `EV-eb2b4ee2c8cb0daa`
+- event_time: 未披露
 - stage: completed
-- customer: OpenAI
-- vendor: 未披露
+- customer: ServiceNow
+- vendor: ServiceNow and Accenture
 - industry: 未披露
-- use_case: 测试
-- reported_need: 未披露
-- delivery_components: OpenAI ChatGPT 语音最大规模升级：双向 AI 语音模型 Bidi 1 已上线测试 - IT之家；OpenAI ChatGPT 语音最大规模升级：双向 AI 语音模型 Bidi 1 已上线测试
+- use_case: Engineering Program to Scale Agentic AI Across the Enterprise
+- reported_need: Help enterprises take agentic AI from enterprise pilot to production at scale
+- delivery_components: ServiceNow and Accenture Launch Forward Deployed Engineering Program to Scale Agentic AI Across the Enterprise；LAS VEGAS; Knowledge 2026; May 6, 2026 – Today, ServiceNow (NYSE: NOW), the AI control tower for business reinvention, and Accenture (NYSE: ACN) announced a forward deployed engineering (FDE) program to help enterprises take agentic AI from enterprise pilot to production at scale.；“Forward deployed engineering is how ServiceNow and Accenture turn mutual customers’ agentic AI business goals into value-generating production workloads,” said John Aisien, senior vice president and general manager, Central Product Management, Security & Risk at ServiceNow. “We're not simply handing over instructions. Our teams are in the customers’ environments, implementing ServiceNow, customer & third-party building blocks, and demonstrating the resulting value metrics in the ServiceNow AI Control Tower.”；This press release contains “forward-looking statements” about the expectations, beliefs, plans, and intentions relating to ServiceNow and Accenture’s forward-deployed engineering program. Such statements include statements regarding future product capabilities and offerings and expected benefits to ServiceNow. Forward-looking statements are subject to known and unknown risks and uncertainties and are based on potentially inaccurate assumptions that could cause actual results to differ materially from those expected or implied by the forward-looking statements. If any such risks or uncertainties materialize or if any of the assumptions prove incorrect, ServiceNow’s results could differ materially from the results expressed or implied by the forward-looking statements made. ServiceNow undertakes no obligation, and does not intend, to update the forward-looking statements. Factors that may cause actual results to differ materially from those in any forward-looking statements include: (i) delays and unexpected difficulties and expenses in executing the product capabilities and offerings, (ii) changes in the regulatory landscape related to AI and (iii) uncertainty as to whether sales will justify the investments in the product capabilities and offerings. Further information on factors that could affect ServiceNow’s financial and other results is included in the filings ServiceNow makes with the Securities and Exchange Commission from time to time.
 - reported_outcomes: 未披露
 - metrics: 未披露
-- undisclosed_fields: vendor；industry；workflow_before；workflow_after；delivery_model；team_composition；reported_need；systems_integrated；data_requirements；governance_controls；reported_outcomes
-- source: [IT之家（RSS）](https://ithome.com/0/967/852.htm)
+- undisclosed_fields: industry；workflow_before；workflow_after；delivery_model；team_composition；data_requirements；governance_controls；reported_outcomes
+- source: [keyword search / Tavily](https://newsroom.accenture.com/news/2026/servicenow-and-accenture-launch-forward-deployed-engineering-program-to-scale-agentic-ai-across-the-enterprise)
 
-## 2. ServiceNow 与 NVIDIA 达成商业合作
+## 2. ServiceNow与Nvidia扩大合作，推出新AI智能体
 
 - fde_id: `FDE-a1c35f8b9ea1d489`
 - event_id: `EV-b95539d17772a4ce`
 - event_time: 未披露
 - stage: announced
-- customer: 未披露
-- vendor: 未披露
-- industry: 未披露
-- use_case: , launch new AI agent - The Economic Times
+- customer: ServiceNow
+- vendor: NVIDIA
+- industry: enterprise
+- use_case: launch new AI agent - The Economic Times
 - reported_need: 未披露
-- delivery_components: 未披露
-- reported_outcomes: 未披露
+- delivery_components: Title: ServiceNow, Nvidia expand partnership, launch new AI agent - The Economic Times Business NewsTechAIServiceNow, Nvidia expand partnership, launch new AI agent. # ServiceNow, Nvidia expand partnership, launch new AI agent. ServiceNow and Nvidia unveiled Apriel Nemotron 15B, a new AI reasoning model, and launched the AI Control Tower and Workflow Data Fabric to optimise enterprise AI use. ServiceNow and Nvidia have announced an expansion of their partnership with the launch of a new class of intelligent AI agents across the enterprise, called Apriel Nemotron 15B. ServiceNow is a leading AI platform for business transformation, while NVIDIA is the leading provider of graphics processing units, which have powered the AI boom and lifted the company's market cap to almost USD 3 trillion. ServiceNow and NVIDIA also unveiled a new collaboration on a joint data flywheel architecture that will integrate ServiceNow Workflow Data Fabric and select NVIDIA NeMo microservices. ServiceNow also launched the AI Control Tower, a centralised command centre to govern, manage, secure, and realize value from any ServiceNow and third-party AI agent, model, and workflow on a single unified platform. ServiceNow partners, including Accenture, Adobe, Box, Cisco, Google Cloud, IBM, Jit, Microsoft, Moonhub, RADCOM, UKG, and Zoom are among those to be offering the first AI Agent Fabric integrations for seamless, wall to wall enterprise workflows across third-party agents, a company statement said. ServiceNow opened its annual customer and partner event by unveiling the new ServiceNow AI Platform to put any AI agent, or model to work across the enterprise. At the conference, ServiceNow launched AI agents to power the rise of self-defending enterprises. The new agents, available within ServiceNow's industry-leading Security and Risk solutions, are designed to improve consistency, identify insights, and reduce response times. ServiceNow also unveiled new Workflow Data Fabric capabilities, including a data ecosystem built to power AI agents and workflows with real-time intelligence. The new Workflow Data Network is a broad ecosystem of data platforms, applications, and enterprise tools that enhance Workflow Data Fabric and connect, understand, and take action from any data source, all on the ServiceNow AI Platform. At the conference, ServiceNow and Amazon Web Services (AWS) announced a new solution designed to help customers unify and act on enterprise data more efficiently through new, bi-directional data integration and automated workflow orchestration. / score=0.697 / query=AI agent product launch enterprise workflow platform announced 2026 / intent=find_original_source / path=official_original
+- reported_outcomes: improve consistency；identify insights；reduce response times
 - metrics: 3 trillion；3 trillion
-- undisclosed_fields: customer；vendor；industry；workflow_before；workflow_after；delivery_model；team_composition；reported_need；systems_integrated；data_requirements；governance_controls；reported_outcomes
+- undisclosed_fields: workflow_before；workflow_after；team_composition；reported_need；data_requirements；governance_controls
 - source: [keyword search / Tavily](https://economictimes.indiatimes.com/tech/artificial-intelligence/servicenow-nvidia-expand-partnership-launch-new-ai-agent/articleshow/120999550.cms)
 
-## 3. ServiceNow 与 NVIDIA 达成商业合作
+## 3. ServiceNow 与 Nvidia 扩大合作，推出全新 AI 智能体
 
 - fde_id: `FDE-ef39df7f58226836`
 - event_id: `EV-f63462e34ea40699`
 - event_time: 未披露
 - stage: announced
-- customer: 未披露
-- vendor: 未披露
+- customer: ServiceNow
+- vendor: NVIDIA
 - industry: 未披露
-- use_case: , launch new AI agent, ETTelecom
+- use_case: launch new AI agent, ETTelecom
 - reported_need: 未披露
-- delivery_components: 未披露
+- delivery_components: Apriel Nemotron 15B；joint data flywheel architecture；AI Control Tower；Workflow Data Fabric capabilities；Workflow Data Network
 - reported_outcomes: 未披露
 - metrics: 未披露
-- undisclosed_fields: customer；vendor；industry；workflow_before；workflow_after；delivery_model；team_composition；reported_need；systems_integrated；data_requirements；governance_controls；reported_outcomes
+- undisclosed_fields: industry；workflow_before；workflow_after；delivery_model；team_composition；reported_need；systems_integrated；data_requirements；governance_controls；reported_outcomes
 - source: [keyword search / Tavily](https://telecom.economictimes.indiatimes.com/news/enterprise-services/servicenow-nvidia-expand-partnership-launch-new-ai-agent/120997648)

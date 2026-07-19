@@ -4,7 +4,7 @@ date: 2026-07-13
 fde_version: FDE-V2.0
 status: current
 source: "01-SiteV2/content/11-databases/data-center-v4/2026-07-13/fde-records.json"
-item_count: 3
+item_count: 2
 ---
 
 # 2026-07-13 Enterprise AI / FDE
@@ -13,53 +13,36 @@ item_count: 3
 
 - [当日 V4 CanonicalEvent](../../11-databases/data-center-v4/2026-07-13/canonical-events.json)
 
-## 1. 努比亚 AI 宠物机器人 iMoochi 定档 7 月 17 日上线
+## 1. 高通发布三款新数据中心解决方案，包括Dragonfly C1000 CPU，将由Meta部署
 
-- fde_id: `FDE-13cf52a1201f0544`
-- event_id: `EV-434dcf1813a84ead`
-- event_time: 2026-07-13T02:32:13.000Z
+- fde_id: `FDE-ae632d9d054f8219`
+- event_id: `EV-fd7e79d3cb9cdb69`
+- event_time: 2026-06-25T00:00:00.000Z
 - stage: completed
-- customer: Nubia
-- vendor: 未披露
-- industry: 未披露
-- use_case: 努比亚 AI 宠物机器人 iMoochi 定档 7 月 17 日上线
+- customer: Meta
+- vendor: Qualcomm
+- industry: Data Center
+- use_case: by Meta - DCD
 - reported_need: 未披露
-- delivery_components: 努比亚 AI 宠物机器人 iMoochi 定档 7 月 17 日上线，主打情感陪伴与拟生命交互 - IT之家；努比亚 AI 宠物机器人 iMoochi 定档 7 月 17 日上线，主打情感陪伴与拟生命交互；IT之家 7 月 13 日消息，努比亚手机官微今日宣布，AI 陪伴新物种 iMoochi 将于 7 月 17 日 10 点在中兴商城及各大电商平台正式上线。
+- delivery_components: Qualcomm unveils three new data center solutions including Dragonfly C1000 CPU, set to be deployed by Meta；Qualcomm said the chip features custom-designed Oryon CPU cores, which have been optimized to “deliver superior performance for agentic workload deployed at scale,” while its 250+ core-count chiplet design offers “exceptional throughput and scale” while delivering exceptional per-core performance. Delivering a reported 2x better performance per watt compared to existing product benchmarks for server CPU, the Dragonfly C1000 is expected to be commercially available in 2028.
 - reported_outcomes: 未披露
 - metrics: 未披露
-- undisclosed_fields: vendor；industry；workflow_before；workflow_after；delivery_model；team_composition；reported_need；systems_integrated；data_requirements；governance_controls；reported_outcomes
-- source: [IT之家（RSS）](https://ithome.com/0/975/885.htm)
+- undisclosed_fields: workflow_after；delivery_model；team_composition；reported_need；data_requirements；governance_controls；reported_outcomes
+- source: [keyword search / Anysearch](https://datacenterdynamics.com/en/news/qualcomm-unveils-three-new-data-center-solutions-including-qualcomm-dragonfly-c1000-cpu-set-to-be-deployed-by-meta)
 
-## 2. Simplexity Robotics 成立 11 个月即向生产线交付 100 台 i7 Pro 机器人，并部署于 Leaderdrive 与 AI 基础设施工厂
+## 2. JAKALA 借助 Claude 智能体将营销周期从 7 天缩短至 24 小时
 
-- fde_id: `FDE-45ad6eae0d326429`
-- event_id: `EV-9f067d8f0d23eb48`
-- event_time: 2026-07-08T07:54:44.000Z
+- fde_id: `FDE-26e5a1821fa5cbd0`
+- event_id: `EV-ae7b6d0c134c9cad`
+- event_time: 2026-07-01T00:00:00.000Z
 - stage: announced
-- customer: 未披露
+- customer: JAKALA
 - vendor: 未披露
 - industry: 未披露
-- use_case: at Leaderdrive and AI Infrastructure Factories | RobotsBeat
+- use_case: Claude Enterprise to over 3,000 employees
 - reported_need: 未披露
-- delivery_components: 未披露
-- reported_outcomes: 未披露
-- metrics: 40%；99.9%
-- undisclosed_fields: customer；vendor；industry；workflow_before；workflow_after；delivery_model；team_composition；reported_need；systems_integrated；data_requirements；governance_controls；reported_outcomes
-- source: [keyword search / Anysearch](https://robotsbeat.com/simplexity-robotics-100-robots-i7-pro-leaderdrive-production-deployment)
-
-## 3. 华为 FreeClip 2 耳机联动豆包功能全量上线，鸿蒙手机支持小艺/豆包双智能体
-
-- fde_id: `FDE-754c5a5fd41e64c4`
-- event_id: `EV-8a8e894a84768ea5`
-- event_time: 2026-07-13T09:14:15.000Z
-- stage: completed
-- customer: ByteDance
-- vendor: 未披露
-- industry: 未披露
-- use_case: ，鸿蒙手机支持小艺/豆包双智能体
-- reported_need: 未披露
-- delivery_components: 华为耳机联动豆包功能全量上线，鸿蒙手机也可以小艺 / 豆包双智能体在线 - IT之家；华为耳机联动豆包功能全量上线，鸿蒙手机也可以小艺 / 豆包双智能体在线；IT之家 7 月 13 日消息，据博主 @Adak封狼居胥 分享，华为耳机联动豆包已全量上线，下载华为智慧音频和豆包 App， 鸿蒙手机可以小艺 / 豆包双智能体在线 ，苹果 / 安卓 也能通过豆包进行消息播报和面对面翻译。
+- delivery_components: rolled out Claude Enterprise to over 3,000 employees；deploying specialized Performance Agents across client media and marketing workflows
 - reported_outcomes: 未披露
 - metrics: 未披露
-- undisclosed_fields: vendor；industry；workflow_before；workflow_after；delivery_model；team_composition；reported_need；systems_integrated；data_requirements；governance_controls；reported_outcomes
-- source: [IT之家（RSS）](https://ithome.com/0/976/126.htm)
+- undisclosed_fields: vendor；industry；workflow_before；workflow_after；delivery_model；team_composition；reported_need；data_requirements；governance_controls；reported_outcomes
+- source: [keyword search / Anysearch](https://theapplied.co/use-cases/how-jakala-cuts-campaign-cycles-from-7-days-to-24-hours-with-claude-agents)

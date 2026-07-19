@@ -1,123 +1,68 @@
 ---
 type: ai_hardware_daily
 date: 2026-07-13
-status: synced
-source: "01-SiteV2/site/data/v3-data-observation-desk.json"
-item_count: 8
+hardware_version: HARDWARE-V1.0
+status: current
+source: "01-SiteV2/content/11-databases/data-center-v4/2026-07-13/hardware-records.json"
+item_count: 3
 ---
 
 # 2026-07-13 AI Hardware
 
-本页归档 Business Signals 的独立 AI 硬件观察镜头。它保留投资融资、场景服务和趋势创新的来源证据，不新增第四类正式 Signal Card。
+> 本页直接投影自 Data Center V4 的 HardwareRecord，只记录来源支持的硬件事实。
+
+- [当日 V4 CanonicalEvent](../../11-databases/data-center-v4/2026-07-13/canonical-events.json)
 
 ## 1. Slimbook 推出 Nexus 系列 AI 工作站，可选 AMD 锐龙 / 锐龙 Threadripper 处理器
 
-- id: `AIHW-2026-07-13-P-008`
-- linked_card_id: ``
-- subject: Slimbook
-- source_title: Slimbook 推出 Nexus 系列 AI 工作站，可选 AMD 锐龙 / 锐龙 Threadripper 处理器
-- source_url: https://ithome.com/0/975/977.htm
-- source_name: ithome.com
-- observation_track: 趋势创新
-- promotion_status: ai_hardware_lens_only
-- fact: Nexus Ryzen AI 至高可选 AMD 锐龙 9 处理器、128GB DDR5 内存、4TB PCIe Gen5 NVMe 存储，部分主板上支持双卡 NVIDIA RTX PRO 6000 Blackwell 配置。
-- raw_archive: [Raw 原文快照](../../01-raw/originals/2026-07-13/r-008-slimbook-推出-nexus-系列-ai-工作站-可选-amd-锐龙-锐龙-threadripper-处理器.md) / [Raw JSON](../../01-raw/originals/2026-07-13/r-008-slimbook-推出-nexus-系列-ai-工作站-可选-amd-锐龙-锐龙-threadripper-处理器.json)
-- signal_card: [Signal Card](../../../knowledge/01-Signal-Cards/product-service/2026-07-13--signal--slimbook-auto-signal-p-008.md)
+- hardware_record_id: `HW-b70d73630b7c3a4b`
+- event_id: `EV-47d14d0aa4d4414e`
+- event_time: 2026-07-13T06:24:29.000Z
+- event_type: hardware_product
+- hardware_type: semiconductor
+- compute_layer: 未披露
+- supplier: 未披露
+- customer: 未披露
+- process_node: 未披露
+- capacity: 128 GB
+- site: 未披露
+- region: 未披露
+- contract_value: 未披露
+- shipment_date: 未披露
+- source: [IT之家（RSS）](https://ithome.com/0/975/977.htm)
 
-## 2. 芯片板块波动引担忧，业内高管称AI需求依然强劲
+## 2. FuriosaAI 在 Equinix 里斯本数据中心部署 RNGD，扩展欧洲 AI 基础设施
 
-- id: `AIHW-2026-07-13-P-037`
-- linked_card_id: ``
-- subject: 未标注主体
-- source_title: 芯片板块波动引担忧，业内高管称AI需求依然强劲
-- source_url: https://www.ithome.com/0/975/850.htm
-- source_name: ithome.com
-- observation_track: 趋势创新
-- promotion_status: ai_hardware_lens_only
-- fact: IT之家 7 月 13 日消息，过去一年，随着投资者押注半导体将在全球 AI 基础设施建设中扮演核心角色，芯片股迎来了一轮强劲上涨。
-- raw_archive: [Raw 原文快照](../../01-raw/originals/2026-07-13/r-037-芯片板块波动引担忧-业内高管称ai需求依然强劲.md) / [Raw JSON](../../01-raw/originals/2026-07-13/r-037-芯片板块波动引担忧-业内高管称ai需求依然强劲.json)
-- signal_card: lens-only，未生成正式 Signal Card
+- hardware_record_id: `HW-5201a846489d2bb0`
+- event_id: `EV-392fb231bfc623b6`
+- event_time: 2026-07-07T00:00:00.000Z
+- event_type: hardware_deployment
+- hardware_type: server
+- compute_layer: data_center
+- supplier: FuriosaAI
+- customer: 未披露
+- process_node: 未披露
+- capacity: 未披露
+- site: 未披露
+- region: 未披露
+- contract_value: 未披露
+- shipment_date: 未披露
+- source: [keyword search / Anysearch](https://furiosa.ai/blog/furiosaai-equinixs-lisbon-data-center-press-release)
 
-## 3. Slimbook 推出 Nexus 系列 AI 工作站，可选 AMD 锐龙 / 锐龙 Threadripper 处理器
+## 3. Supermicro 扩展企业级 AI 产品组合，新增超100款 GPU 优化系统，支持即将推出的 NVIDIA RTX PRO 6000 Blackwell 服务器版及 NVIDIA H200 NVL 平台
 
-- id: `AIHW-SRC-2026-07-13-1`
-- linked_card_id: ``
-- subject: Slimbook
-- source_title: Slimbook 推出 Nexus 系列 AI 工作站，可选 AMD 锐龙 / 锐龙 Threadripper 处理器
-- source_url: https://www.ithome.com/0/975/977.htm
-- source_name: ithome.com
-- observation_track: 趋势创新
-- promotion_status: ai_hardware_lens_only
-- fact: 西班牙 Linux 硬件制造商 Slimbook 发布 Nexus 系列人工智能工作站，分为 Nexus Ryzen AI 和 Nexus Threadripper AI 两个分支。前者至高可选 AMD 锐龙 9 处理器、128GB DDR5 内存、4TB PCIe Gen5 NVMe 存储，支持双卡 NVIDIA RTX PRO 6000 Blackwell，起价 1995 欧元。后者至高可选 AMD 锐龙 Threadripper PRO 9995WX 处理器、512GB DDR5 内存、双 NVIDIA RTX PRO 6000 Blackwell 显卡及 2500W 白金电源，起价 3880 欧元。两款均采用铝合金机箱，支...
-- raw_archive: [Raw 原文快照](../../01-raw/originals/2026-07-13/r-008-slimbook-推出-nexus-系列-ai-工作站-可选-amd-锐龙-锐龙-threadripper-处理器.md) / [Raw JSON](../../01-raw/originals/2026-07-13/r-008-slimbook-推出-nexus-系列-ai-工作站-可选-amd-锐龙-锐龙-threadripper-处理器.json)
-- signal_card: [Signal Card](../../../knowledge/01-Signal-Cards/product-service/2026-07-13--signal--slimbook-auto-signal-p-008.md)
-
-## 4. AI chip startup Rebellions raises $400 million at $2.3B valuation in pre-IPO round | TechCrunch
-
-- id: `AIHW-SRC-2026-07-13-2`
-- linked_card_id: ``
-- subject: AI chip startup Rebellions
-- source_title: AI chip startup Rebellions raises $400 million at $2.3B valuation in pre-IPO round | TechCrunch
-- source_url: https://techcrunch.com/2026/03/30/ai-chip-startup-rebellions-raises-400-million-at-2-3b-valuation-in-pre-ipo-round/
-- source_name: techcrunch.com
-- observation_track: 投资融资
-- promotion_status: ai_hardware_lens_only
-- fact: AI chip startup Rebellions raises $400 million at $2.3B valuation in pre-IPO round | TechCrunch Image Credits:Andriy Onufriyenko / Getty Images AI Copy Share Link # AI chip startup Rebellions raises $400 million at $2.3B valuation in pre-IPO round Lucas Ropek 6:00 AM PDT · March 30, 2026 Copy...
-- raw_archive: 未保留 Raw 原文快照（source-only 观察条目）
-- signal_card: lens-only，未生成正式 Signal Card
-
-## 5. AI chip startup Ricursive hits $4B valuation 2 months after launch
-
-- id: `AIHW-SRC-2026-07-13-3`
-- linked_card_id: ``
-- subject: AI chip startup Ricursive hits
-- source_title: AI chip startup Ricursive hits $4B valuation 2 months after launch
-- source_url: https://techcrunch.com/2026/01/26/ai-chip-startup-ricursive-hits-4b-valuation-two-months-after-launch/
-- source_name: techcrunch.com
-- observation_track: 趋势创新
-- promotion_status: ai_hardware_lens_only
-- fact: AI chip startup Ricursive hits $4B valuation 2 months after launch | TechCrunch Copy Share Link In Brief Posted: 4:13 PM PST · January 26, 2026 Image Credits:BlackJack3D / Getty Images - Julie Bort # AI chip startup Ricursive hits $4B valuation 2 months after launch Ricursive Intelligence, a...
-- raw_archive: 未保留 Raw 原文快照（source-only 观察条目）
-- signal_card: lens-only，未生成正式 Signal Card
-
-## 6. Sources: Naveen Rao's new AI hardware startup targets $5B ...
-
-- id: `AIHW-SRC-2026-07-13-4`
-- linked_card_id: ``
-- subject: Sources
-- source_title: Sources: Naveen Rao's new AI hardware startup targets $5B ...
-- source_url: https://techcrunch.com/2025/10/03/sources-naveen-raos-new-ai-hardware-startup-targets-5b-valuation-with-backing-from-a16z/
-- source_name: techcrunch.com
-- observation_track: 趋势创新
-- promotion_status: ai_hardware_lens_only
-- fact: Sources: Naveen Rao’s new AI hardware startup targets $5B valuation with backing from a16z | TechCrunch –:–:–:– The first StrictlyVC of 2026 hits SF on April 30. Tickets are going fast. Register now. Founder Summit ticket savings of up to $190 end June 26. Join 1,000+ founders and VCs for all-day...
-- raw_archive: 未保留 Raw 原文快照（source-only 观察条目）
-- signal_card: lens-only，未生成正式 Signal Card
-
-## 7. Spark, Mayfield, and Kleiner Perkins pour another $75M into AI data center chipmaker Retym | TechCrunch
-
-- id: `AIHW-SRC-2026-07-13-5`
-- linked_card_id: ``
-- subject: 未标注主体
-- source_title: Spark, Mayfield, and Kleiner Perkins pour another $75M into AI data center chipmaker Retym | TechCrunch
-- source_url: https://techcrunch.com/2025/03/31/spark-mayfield-and-kleiner-perkins-pour-another-75m-into-ai-data-center-chipmaker-retym/
-- source_name: techcrunch.com
-- observation_track: 投资融资
-- promotion_status: ai_hardware_lens_only
-- fact: Spark, Mayfield, and Kleiner Perkins pour another $75M into AI data center chipmaker Retym | TechCrunch Image Credits:Just_Super / Getty Images Venture Copy Share Link # Spark, Mayfield, and Kleiner Perkins pour another $75M into AI data center chipmaker Retym Julie Bort 11:42 AM PDT · March 3...
-- raw_archive: 未保留 Raw 原文快照（source-only 观察条目）
-- signal_card: lens-only，未生成正式 Signal Card
-
-## 8. Nvidia competitor Etched hits $5B valuation, $1B in sales for AI chip | TechCrunch
-
-- id: `AIHW-SRC-2026-07-13-6`
-- linked_card_id: ``
-- subject: Nvidia competitor Etched hits
-- source_title: Nvidia competitor Etched hits $5B valuation, $1B in sales for AI chip | TechCrunch
-- source_url: https://techcrunch.com/2026/06/30/nvidia-competitor-etched-hits-5b-valuation-1b-in-sales-for-ai-chip/
-- source_name: techcrunch.com
-- observation_track: 趋势创新
-- promotion_status: ai_hardware_lens_only
-- fact: Nvidia competitor Etched hits $5B valuation, $1B in sales for AI chip | TechCrunch Image Credits:Etched AI Copy Share Link # Nvidia competitor Etched hits $5B valuation, $1B in sales for AI chip Julie Bort 11:13 AM PDT · June 30, 2026 Copy Share Link Nvidia AI chip competitor Etched issued a... / query=AI chip startup...
-- raw_archive: 未保留 Raw 原文快照（source-only 观察条目）
-- signal_card: lens-only，未生成正式 Signal Card
+- hardware_record_id: `HW-25ce41fab12d9ef2`
+- event_id: `EV-34929bdd016dc8d6`
+- event_time: 2025-03-18T00:00:00.000Z
+- event_type: hardware_product
+- hardware_type: gpu
+- compute_layer: edge
+- supplier: NVIDIA
+- customer: Supermicro
+- process_node: 未披露
+- capacity: 100 GPU
+- site: 未披露
+- region: San Jose, California
+- contract_value: 未披露
+- shipment_date: 未披露
+- source: [keyword search / Anysearch](https://supermicro.com/en/pressreleases/supermicro-expands-enterprise-ai-portfolio-over-100-gpu-optimized-systems-supporting?mlg=0)
