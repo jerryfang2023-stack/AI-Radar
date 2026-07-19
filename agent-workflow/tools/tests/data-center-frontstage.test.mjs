@@ -56,11 +56,11 @@ test("person index contains reviewed natural people while preserving all viewpoi
   assert.ok(data.viewpoints.some((item) => item.person === "Import AI (Jack Clark)" && item.personEntityId === peopleByName.get("Jack Clark")?.id));
 });
 
-test("current commercial event titles are complete and evidence-specific", () => {
+test("commercial event titles are complete and evidence-specific across daily rollovers", () => {
   const data = buildFrontstageData(root);
   const currentEvents = data.events.filter((event) => event.dataDate === data.meta.currentDate);
   const sourceTitle = "Aina raises $5.5M with new hardware interface for the age of AI beyond touchscreens and keyboards";
-  const aina = currentEvents.find((event) => event.originalTitle === sourceTitle);
+  const aina = data.events.find((event) => event.originalTitle === sourceTitle);
   const translationStore = JSON.parse(fs.readFileSync(path.join(root, "01-SiteV2/content/11-databases/source-title-translations.json"), "utf8"));
   const approvedTranslation = translationStore.translations.find((item) => item.sourceTitle === sourceTitle);
 
