@@ -70,7 +70,7 @@
     "audit:tag-taxonomy": "node agent-workflow/tools/audit-tag-taxonomy-v4.mjs",
     "test:data-center": "node --test agent-workflow/tools/tests/data-center-v4.test.mjs agent-workflow/tools/tests/deepseek-translation.test.mjs agent-workflow/tools/tests/model-assist-v1.test.mjs agent-workflow/tools/tests/entity-history-v1.test.mjs agent-workflow/tools/tests/product-entity-normalizer.test.mjs agent-workflow/tools/tests/targeted-backfill-v1.test.mjs",
     "test:data-center-site": "node agent-workflow/tools/sync-light-data-lake.mjs --v4-only=true --duckdb=skip && npm run test:data-center-site:prepared",
-    "test:data-center-site:prepared": "node --test agent-workflow/tools/tests/data-center-frontstage.test.mjs agent-workflow/tools/tests/industry-reports-frontstage.test.mjs agent-workflow/tools/tests/periodic-report-renderer.test.mjs",
+    "test:data-center-site:prepared": "node --test agent-workflow/tools/tests/data-center-frontstage.test.mjs agent-workflow/tools/tests/industry-reports-frontstage.test.mjs agent-workflow/tools/tests/periodic-report-renderer.test.mjs agent-workflow/tools/tests/hermes-inbox-utils.test.mjs",
     "test:v4-frontstage-smoke": "node agent-workflow/tools/tests/v4-frontstage-smoke.mjs",
     "sync:pipeline-dashboard": "node 01-SiteV2/site/scripts/sync-pipeline-dashboard-data.mjs",
     "audit:tags": "node agent-workflow/tools/audit-tags.mjs",
