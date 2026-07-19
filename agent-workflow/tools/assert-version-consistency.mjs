@@ -39,8 +39,9 @@ const expected = {
   ops: "OPS-V1.2.3-content-factory-cleanout",
   reports: "REPORTS-V1.0.0-periodic-report-center",
   opportunity: "OMAP-V1.0.0-independent-column",
+  trendRadar: "TRADAR-V1.0.0-factual-change-explorer",
   person: "PERSON-REVIEW-V1.0",
-  skillStore: "v1.6.3 V4 governance alignment",
+  skillStore: "v1.6.4 Trend Radar factual change application",
 };
 
 const ledgerChecks = [
@@ -48,9 +49,10 @@ const ledgerChecks = [
   ["Operations backend version", expected.ops],
   ["Reports Center column version", expected.reports],
   ["Opportunity Map column version", expected.opportunity],
+  ["Trend Radar column version", expected.trendRadar],
   ["Person-account review contract", expected.person],
   ["Skill Store version", expected.skillStore],
-  ["Git tag", "v4.2.1-governance-alignment"],
+  ["Git tag", "v4.2.2-trend-radar"],
 ];
 for (const [field, value] of ledgerChecks) {
   if (versions.get(field) !== value) fail(`version ledger ${field} expected ${value}, found ${versions.get(field) || "missing"}`);
@@ -60,6 +62,7 @@ const sitePages = [
   "01-SiteV2/site/data-center.html",
   "01-SiteV2/site/intelligence-map.html",
   "01-SiteV2/site/opportunity-map.html",
+  "01-SiteV2/site/trend-radar.html",
   ...fs.readdirSync(path.join(root, "01-SiteV2/site"))
     .filter((name) => /^(weekly-ai-business-change-radar|monthly-business-structure).*\.html$/u.test(name))
     .map((name) => `01-SiteV2/site/${name}`),
@@ -68,6 +71,8 @@ for (const file of new Set(sitePages)) expectText(file, expected.site, "current 
 expectText("01-SiteV2/site/operations-console.html", expected.ops, "current Operations Backend version");
 expectText("01-SiteV2/site/intelligence-map.html", expected.reports);
 expectText("01-SiteV2/site/opportunity-map.html", expected.opportunity);
+expectText("01-SiteV2/site/trend-radar.html", expected.trendRadar);
+for (const file of new Set(sitePages)) expectText(file, 'href="trend-radar.html"', "Trend Radar navigation entry");
 for (const file of sitePages.filter((file) => /weekly-|monthly-/u.test(file))) {
   expectText(file, expected.reports);
   rejectText(file, expected.opportunity, "Opportunity Map column version");
@@ -83,6 +88,7 @@ const opsChecks = [
   ["OPS", expected.ops],
   ["REPORTS", expected.reports],
   ["OMAP", expected.opportunity],
+  ["TRADAR", expected.trendRadar],
   ["PERSON", expected.person],
   ["SKILL", expected.skillStore],
 ];
@@ -103,9 +109,11 @@ const skillVersions = [
   ["agent-workflow/skills/guanlan-weekly-report-page-generator/SKILL.md", 'version: "1.1.1"'],
   ["agent-workflow/skills/guanlan-monthly-business-structure-report/SKILL.md", 'version: "0.2.1"'],
   ["agent-workflow/skills/guanlan-skill-editor/SKILL.md", 'version: "1.0.2"'],
+  ["agent-workflow/skills/guanlan-trend-radar-updater/SKILL.md", 'version: "1.0.0"'],
 ];
 for (const [file, version] of skillVersions) expectText(file, version);
 expectText("agent-workflow/skills/guanlan-opportunity-radar-updater/SKILL.md", expected.opportunity);
+expectText("agent-workflow/skills/guanlan-trend-radar-updater/SKILL.md", expected.trendRadar);
 rejectText("agent-workflow/skills/guanlan-opportunity-radar-updater/SKILL.md", "Industry Reports page's two", "nested Industry Reports ownership");
 rejectText("agent-workflow/skills/guanlan-community-intelligence-monitor/SKILL.md", "current SITE-V3.4.5", "current V3 site claim");
 expectText("agent-workflow/product/tag-taxonomy.md", "Data Center V4 uses `tag-taxonomy-v4.json`");
@@ -127,6 +135,7 @@ console.log(JSON.stringify({
   operations_version: expected.ops,
   reports_version: expected.reports,
   opportunity_version: expected.opportunity,
+  trend_radar_version: expected.trendRadar,
   person_review_version: expected.person,
   skill_store_version: expected.skillStore,
   public_pages_checked: new Set(sitePages).size,

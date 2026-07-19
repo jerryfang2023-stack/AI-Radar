@@ -1,41 +1,47 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-18T02:57:21.600Z",
-  "date": "2026-07-18",
-  "action": "Daily Data Center V4 production",
-  "action_status": "current",
+  "generated_at": "2026-07-19T10:58:19.385Z",
+  "date": "2026-07-19",
+  "action": "Trend Radar V1 application release",
+  "action_status": "unregistered",
   "record_level": "required",
-  "trigger": "manual-repair",
+  "trigger": "user-request",
   "status": "success",
-  "summary": "Reused the same-date Raw/Pool artifact, repaired truncated source-title recovery, enforced DeepSeek-only title provenance, removed duplicated card facts, expanded entity aliases, rebuilt and gated the 2026-07-18 V4 publication.",
-  "contexts": [],
+  "summary": "Built and audited an evidence-backed daily, weekly, and monthly factual change explorer as an independent Application Center column.",
+  "contexts": [
+    "context/12-data-center-v4.md",
+    "context/frontstage-page-contracts.md",
+    "agent-workflow/product/trend-radar-v1-contract.md"
+  ],
   "changed_files": [
-    "agent-workflow/tools/run-guanlan-daily-monitor.mjs",
-    "agent-workflow/tools/generate-asset-cards-from-pool.mjs",
-    "01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs",
-    "agent-workflow/tools/build-data-center-v4.mjs",
-    "agent-workflow/tools/frontstage-regression-gate.mjs"
+    "01-SiteV2/site/trend-radar.html",
+    "01-SiteV2/site/scripts/build-trend-radar-frontstage.mjs",
+    "agent-workflow/tools/assert-trend-radar-v1.mjs",
+    "agent-workflow/skills/guanlan-trend-radar-updater/SKILL.md",
+    ".github/workflows/daily-persistent-assets-pr.yml"
   ],
   "outputs": [
-    "2026-07-18 Raw/Pool/Card/V4 assets",
-    "Data Center serving projections"
+    "trend-radar-v1.json",
+    "TRADAR-V1.0.0-factual-change-explorer",
+    "Skill Store v1.6.4"
   ],
   "checks": [
-    "test:data-center 88/88",
-    "test:data-center-site 24/24",
-    "source-title integrity 0 violations",
-    "V4 integrity passed",
-    "projection coverage 100%",
-    "daily production chain passed"
+    "111 data tests",
+    "40 frontstage and Trend Radar tests",
+    "15 Skill Ops tests",
+    "three-viewport browser smoke",
+    "version consistency",
+    "current-rule hygiene"
   ],
   "issues": [],
   "risks": [],
   "lessons": [
-    "Recover a complete captured source headline before title translation",
-    "Do not publish title-derived facts when no independent source span exists"
+    "Compare calendar periods only across equal observed batch windows",
+    "Use verified RELATION-V2 serves evidence for product entering use"
   ],
   "reusable_rules": [
-    "Only DeepSeek or manual-reviewed source-title translations may enter the compatibility registry"
+    "Trend Radar is a downstream factual projection and cannot block canonical V4 persistence",
+    "Every structural item resolves to events and original sources"
   ],
   "retired_flags": [],
   "notes": []

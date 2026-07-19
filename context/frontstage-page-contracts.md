@@ -13,7 +13,7 @@ priority: current
 
 # Frontstage Page Contracts
 
-SITE-V4.2.0 is the only current public page and entity-history system. `data-center.html`, `intelligence-map.html`, `opportunity-map.html`, and all weekly/monthly report details use the V4 logo header and shared sidebar. Legacy V3 column URLs are compatibility redirects only. These page contracts do not define V4 canonical data truth.
+SITE-V4.2.0 is the only current public page and entity-history system. `data-center.html`, `trend-radar.html`, `intelligence-map.html`, `opportunity-map.html`, and all weekly/monthly report details use the V4 logo header and shared sidebar. Legacy V3 column URLs are compatibility redirects only. These page contracts do not define V4 canonical data truth.
 
 Read `context/version-ledger.md` first. This file defines what each current frontstage page must keep and what must not contaminate it.
 
@@ -22,6 +22,7 @@ Read `context/version-ledger.md` first. This file defines what each current fron
 | Page | Current Role | Must Keep | Must Not Contain | Gates |
 |---|---|---|---|---|
 | Data Center | `01-SiteV2/site/data-center.html` | Commercial Events, FDE, AI Hardware, Community Intelligence, First-Line Viewpoints, and Entity Index under one V4 shell; Commercial Events default to the latest daily batch, while FDE and AI Hardware default to the latest data month's cumulative records | Importance/opportunity/recommendation fields in factual views; V3 Card page modules; V3 top navigation; backend gates or thresholds | syntax + V4 data tests + integrity gate + frontstage regression |
+| Trend Radar | `01-SiteV2/site/trend-radar.html` | Independent Application Center entry; daily five-category accepted changes, weekly evidence-backed structure changes, monthly factual snapshots, observed-data-day coverage, and event/entity/source links | Report prose; opportunity/trend scores; heat, maturity, rankings or recommendations; First-Line Viewpoints, Community Intelligence, V3 Cards, trend candidates or opportunity signals as factual inputs; canonical-data mutation | projection gate + exact-count test + evidence-lineage test + interaction/visual smoke + version consistency |
 | Industry Reports | `01-SiteV2/site/intelligence-map.html` | V4 compact title and subtitle; latest Monthly / Weekly report entries; separate Monthly / Weekly archives; weekly reports sourced from `01-SiteV2/content/08-report/`; monthly reports sourced from `01-SiteV2/content/08-report/monthly/` | Opportunity-map matrices or evidence modal returning to the report landing page; retired `报告中心` / `Reports Center` naming; Relation Paths / 关联路径; retired V3 top navigation; separate sidebar entries for Weekly Report or Monthly Report; orphaned relationship demo navigation; V2 graph prose cards; detached page style; Trend Candidates / History blocks returning; weekly reports generated only from `agent-workflow/reports/`; monthly report detail pages reduced to summary-only cards or raw unstyled tables | syntax + visual smoke + frontstage regression |
 | Opportunity Map | `01-SiteV2/site/opportunity-map.html` | Independent Application Center sidebar entry; source-backed Entry Point Map and Product Pain Map as separate full-width maps; existing state legend and map-cell style; map cells open evidence in a modal instead of a persistent right-side evidence panel; `industry-reports-frontstage.json` as the dedicated downstream application projection | Monthly / Weekly report cards; map toggle buttons replacing the two standalone maps; persistent right-side Cell Evidence panel; public V3 desk fetch; Relation Paths; Signal Candidates / 时间聚集 / Tag 聚合 modules | syntax + data projection + interaction smoke + desktop/mobile visual smoke + frontstage regression |
 | Weekly / Monthly Details | `weekly-ai-business-change-radar*.html`, `monthly-business-structure*.html` | Complete accepted reports using the V4 logo header, shared sidebar, responsive editorial layouts, and Industry Reports return path | V3 topbar/assets/routes; raw Markdown dumps; detached report navigation; public V3 JSON fetches | syntax + content-source gate + desktop/mobile visual smoke + frontstage regression |
@@ -41,6 +42,7 @@ The legacy Business Signals Card set remains an internal compatibility dataset f
 | Enterprise AI / FDE lens | `EAI-V1.2.0-raw-card-ingestion-boundary` | Boss-facing implementation lens backed by the independent FDE Lens Pool; title translation and fact extraction belong to Raw/Card/FDE asset generation, not generic frontstage blocking; not a fourth Card type. |
 | Reports Center column | `REPORTS-V1.0.0-periodic-report-center` | Owns latest Monthly / Weekly reports, archives, accepted content sources, deterministic page rendering, and the monthly/weekly page-generator Skills. |
 | Opportunity Map column | `OMAP-V1.0.0-independent-column` | Owns the dedicated application projection, two source-backed matrices, and click-to-open map-cell evidence. |
+| Trend Radar column | `TRADAR-V1.0.0-factual-change-explorer` | Owns the accepted-event daily/weekly/monthly change projection, period controls, coverage disclosure, and evidence links without report prose or judgment. |
 | Person-account review | `PERSON-REVIEW-V1.0` | Admits only reviewed natural people to the Entity Index while preserving viewpoints from quarantined non-natural accounts without a person entity link. |
 
 ## Navigation
@@ -48,13 +50,13 @@ The legacy Business Signals Card set remains an internal compatibility dataset f
 The approved SITE-V4.0 navigation has two sidebar groups:
 
 - Data Center: Commercial Events, FDE, AI Hardware, Community Intelligence, First-Line Viewpoints, Entity Index.
-- Application Center: Industry Reports, Opportunity Map.
+- Application Center: Trend Radar, Industry Reports, Opportunity Map.
 
 Entity Index is the single list entrance for companies, organizations, models, products, services, people, AI technologies, use cases, and industries. Companies, products/models/services, and people open stable `EN-*` profiles; technology, use case, and industry open `TX-*` classification pages. It must appear after First-Line Viewpoints; Company and Product must not return as separate sidebar entries.
 
 Entity pages show only source-backed histories and relationships. The frontstage must not render a global relationship graph, infer edges from Tag co-occurrence, or turn viewpoints into canonical business facts. List and detail payloads load from the split `data/data-center-v4/` service; the full compatibility payload remains a transition artifact, not the preferred page fetch.
 
-`data-center.html`, `intelligence-map.html`, `opportunity-map.html`, and every weekly/monthly detail page must use `assets/data-center-v4.css`, the official logo header, and the same sidebar structure. Industry Reports and Opportunity Map are the two Application Center entries. Weekly and Monthly reports remain report content and must not return as separate sidebar entries. Relation Paths has been removed and must not return.
+`data-center.html`, `trend-radar.html`, `intelligence-map.html`, `opportunity-map.html`, and every weekly/monthly detail page must use `assets/data-center-v4.css`, the official logo header, and the same sidebar structure. Trend Radar, Industry Reports and Opportunity Map are the three Application Center entries. Weekly and Monthly reports remain report content and must not return as separate sidebar entries. Relation Paths has been removed and must not return.
 
 The retired `assets/wavesight-nav.css` and V3 page-specific CSS/JS files have been deleted and must not return. No public content page may load `data/v3-data-observation-desk.json`. The dashboard remains an operations backend page and is not exposed in frontstage navigation.
 
