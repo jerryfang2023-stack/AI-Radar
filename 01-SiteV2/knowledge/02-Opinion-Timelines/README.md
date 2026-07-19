@@ -1,8 +1,8 @@
 ---
 type: opinion_timelines_index
 people_count: 46
-opinion_count: 1535
-generated_at: 2026-07-19T08:10:44.536Z
+opinion_count: 1537
+generated_at: 2026-07-19T08:31:09.501Z
 ---
 
 # 前沿观点 - 人物时间线目录
@@ -24,8 +24,8 @@ generated_at: 2026-07-19T08:10:44.536Z
 - [Amjad Masad](people/amjad-masad/README.md) - 54 条 - 最新 2026-07-18
 - [Claude](people/claude/README.md) - 48 条 - 最新 2026-07-18
 - [Thariq](people/thariq/README.md) - 47 条 - 最新 2026-07-18
+- [Simon Willison's Blog](people/simon-willisons-blog/README.md) - 43 条 - 最新 2026-07-18
 - [Aditya Agarwal](people/aditya-agarwal/README.md) - 42 条 - 最新 2026-07-18
-- [Simon Willison's Blog](people/simon-willisons-blog/README.md) - 41 条 - 最新 2026-07-18
 - [Sam Altman](people/sam-altman/README.md) - 41 条 - 最新 2026-07-17
 - [Boris Cherny](people/boris-cherny/README.md) - 22 条 - 最新 2026-07-17
 - [Madhu Guru](people/madhu-guru/README.md) - 19 条 - 最新 2026-07-17
