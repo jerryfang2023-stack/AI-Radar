@@ -91,12 +91,13 @@ const commandSets = {
     [node, ["agent-workflow/tools/assert-business-signals-pipeline-policy.mjs"], "run Business Signals pipeline policy regression"],
     [node, ["agent-workflow/tools/run-business-signals-health-dispatch.mjs", "--policy-fixtures=true"], "run Business Signals health-state fixtures"],
     [node, ["agent-workflow/tools/classify-business-signals-production-state.mjs", "--fixtures=true"], "run Business Signals production-state fixtures"],
-    [node, ["agent-workflow/tools/generate-asset-cards-from-pool.mjs", "--date=2026-07-11", "--quality-regression-fixtures=true"], "run Business Signal Card editorial regression fixtures"],
+    [node, ["agent-workflow/tools/generate-asset-cards-from-pool.mjs", "--date=2026-07-11", "--quality-regression-fixtures=true", "--source-title-translations=agent-workflow/tools/tests/fixtures/business-signal-source-title-translations.json"], "run Business Signal Card editorial regression fixtures"],
     [node, ["agent-workflow/tools/frontstage-regression-gate.mjs", `--date=${date}`], "run frontstage regression gate"],
   ],
   tags: [
     [node, ["--check", "agent-workflow/tools/check-tags.mjs"], "tag quality gate syntax"],
-    [node, ["agent-workflow/tools/check-tags.mjs"], "run tag quality gate"],
+    [node, ["agent-workflow/tools/check-tags.mjs"], "run frozen V3 tag compatibility gate"],
+    [node, ["agent-workflow/tools/assert-data-center-v4.mjs", `--date=${date}`], "run TAG-V4 Data Center integrity gate"],
   ],
   rules: [
     [node, ["agent-workflow/tools/assert-current-rule-hygiene.mjs", `--date=${date}`], "run current rule hygiene gate"],

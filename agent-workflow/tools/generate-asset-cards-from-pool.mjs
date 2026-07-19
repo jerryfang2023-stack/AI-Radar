@@ -4,13 +4,15 @@ import assert from "node:assert/strict";
 import { inferOpportunitySignals, opportunitySignalsYaml } from "./opportunity-signals-utils.mjs";
 
 const root = process.cwd();
-const sourceTitleTranslationsFile = path.join(root, "01-SiteV2", "content", "11-databases", "source-title-translations.json");
 const args = new Map(
   process.argv.slice(2).map((arg) => {
     const [key, ...rest] = arg.replace(/^--/, "").split("=");
     return [key, rest.join("=") || "true"];
   })
 );
+const sourceTitleTranslationsFile = args.has("source-title-translations")
+  ? path.resolve(root, args.get("source-title-translations"))
+  : path.join(root, "01-SiteV2", "content", "11-databases", "source-title-translations.json");
 
 const date = args.get("date");
 if (!date) {

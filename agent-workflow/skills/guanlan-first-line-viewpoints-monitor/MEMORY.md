@@ -31,8 +31,8 @@ Keep this file short. Add only durable lane-level lessons from repeated producti
 ## 2026-06-14
 
 - First-Line Viewpoints has two different health paths: morning RSS page-data plus Obsidian sync, and afternoon all-builders skill archive. Do not use one as proof that the other is healthy.
-- A local 08:30 Codex RSS miss is recoverable through the single 09:17 GitHub fallback, but it should still be recorded as local automation reliability drift.
-- Supervision / Daily Problem Watchdog must not report First-Line RSS missing before the 09:30 problem window, and must not report the afternoon skill lane missing before the 16:30 record window.
+- A local 08:30 Codex RSS miss is recoverable through the single 09:15 conditional fallback, but it should still be recorded as local automation reliability drift.
+- Supervision / Daily Problem Watchdog must not report First-Line RSS missing before the 09:50 consolidated closure, and must not report the afternoon skill lane missing before the 16:30 record window.
 - Afternoon skill success requires count consistency: output frontmatter `builder_items_count > 0`, publish report `builder_items_count > 0`, and both counts matching. A report that exists with count `0` is not a healthy publish.
 
 ## 2026-06-18

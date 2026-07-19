@@ -99,10 +99,10 @@ if (personReview.summary?.candidates !== 37 || personReview.summary?.expected_pu
 
 const skillVersions = [
   ["agent-workflow/skills/guanlan-opportunity-radar-updater/SKILL.md", 'version: "1.2.0"'],
-  ["agent-workflow/skills/guanlan-community-intelligence-monitor/SKILL.md", 'version: "1.0.4"'],
+  ["agent-workflow/skills/guanlan-community-intelligence-monitor/SKILL.md", 'version: "1.0.5"'],
   ["agent-workflow/skills/guanlan-weekly-report-page-generator/SKILL.md", 'version: "1.1.1"'],
   ["agent-workflow/skills/guanlan-monthly-business-structure-report/SKILL.md", 'version: "0.2.1"'],
-  ["agent-workflow/skills/guanlan-skill-editor/SKILL.md", 'version: "1.0.1"'],
+  ["agent-workflow/skills/guanlan-skill-editor/SKILL.md", 'version: "1.0.2"'],
 ];
 for (const [file, version] of skillVersions) expectText(file, version);
 expectText("agent-workflow/skills/guanlan-opportunity-radar-updater/SKILL.md", expected.opportunity);

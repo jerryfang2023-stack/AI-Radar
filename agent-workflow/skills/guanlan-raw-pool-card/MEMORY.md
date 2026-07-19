@@ -2,6 +2,11 @@
 
 Keep this file short. Add only durable lessons that improve the skill itself. Do not copy command output, daily counts, or one-off production details.
 
+## 2026-07-19 Regression Fixture Isolation
+
+- A recurring financing-title incident was kept alive by a daily frontstage test that required one named historical article, then masked by searching retained history after the active date advanced. Current-batch integration tests now assert the generic title contract; source-title recovery remains a self-contained synthetic fixture.
+- Historical Pool regression cases must use an immutable fixture translation snapshot. The live production translation registry is an input to production, not a stable test oracle.
+
 ## 2026-07-13 Same-Date Rerun Recall Boundary
 
 - A justified same-date full rerun must carry forward readable dated Raw snapshots referenced by already published formal Cards. Search-provider randomness is not permission to erase evidence that already passed the release gates.

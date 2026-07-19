@@ -341,7 +341,7 @@ jobs:
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-data-center-v4-materialize.log"
           node 01-SiteV2/site/scripts/build-data-center-v4-frontstage.mjs \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-data-center-v4-frontstage.log"
-          npm run test:data-center-site
+          npm run test:data-center-site:prepared
 
       - name: Regenerate business-signal Card assets
         id: assets

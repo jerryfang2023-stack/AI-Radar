@@ -119,6 +119,11 @@ Do not use numeric scores. Each check must be `pass` or `fail` with the file or 
    - Fail when page chrome such as `Total Shares`, a related-story excerpt, or a valuation number becomes the Card owner, news fact, source point, or value summary.
    - Pass when `usable_for: viewpoint` plus no event evidence is rejected before Card spec generation; also pass when an executive criticism, prediction, warning, or commentary title is rejected even if upstream labels the speech or post as `event_evidence: true` and adds broad commercial routes.
 
+21. `regression_fixture_isolation`
+   - Pass when incident regression tests use self-contained strings or checked-in immutable fixture inputs, including a fixture-specific title-translation snapshot when title localization affects the result.
+   - Pass when current-batch integration tests validate the current contract generically and do not require a named historical article to remain in the retained event bundle or mutable production translation registry.
+   - Fail when advancing the active date or adding an unrelated production translation changes an incident regression result without changing the algorithm under test.
+
 ## Repair Loop
 
 When a check fails:

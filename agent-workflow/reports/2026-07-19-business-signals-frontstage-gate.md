@@ -1,10 +1,25 @@
 # 2026-07-19 Business Signals Frontstage Gate
 
-- generated_at: 2026-07-19T06:43:55.487Z
+- generated_at: 2026-07-19T08:29:40.495Z
 - status: passed
 - failure_categories: none
 
 ## Gate Results
+
+### Signal Card editorial quality gate
+
+- status: passed
+- script: agent-workflow/tools/assert-signal-card-editorial-quality.mjs
+- exit_code: 0
+
+```text
+{
+  "ok": true,
+  "date": "2026-07-19",
+  "card_count": 33,
+  "problems": []
+}
+```
 
 ### V3 source-first frontstage gate
 
@@ -55,6 +70,6 @@
   "ok": true,
   "status": "passed",
   "issue_count": 0,
-  "report": "agent-workflow/reports/frontstage-regression-gate-20260719064355.md"
+  "report": "agent-workflow/reports/frontstage-regression-gate-20260719082940.md"
 }
 ```

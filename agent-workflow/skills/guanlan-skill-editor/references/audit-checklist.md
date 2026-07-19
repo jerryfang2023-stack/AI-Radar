@@ -10,7 +10,7 @@ Use this checklist for full audits. Each item is pass/fail.
 
 ## Current Rule Alignment
 
-- V3.3 business-signal rules are current.
+- Data Center V4 is the current factual source of truth; V3 business-signal rules are current only inside their documented compatibility boundary.
 - Retired daily-observation, business-brief, trend-report, publiccopy, cardcopy, and old copy-style gates are not active execution sources.
 - Builders viewpoints are isolated from business-signal facts.
 

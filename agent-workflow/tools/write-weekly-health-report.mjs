@@ -524,7 +524,7 @@ function main() {
     actions.push("Review GitHub Actions runs that failed, queued, or remained in progress during the weekly window.");
   }
   if (conflicts.count > 0) {
-    actions.push("Review historical / conflicting wording matches and clean only the ones that contradict current V3.3 rules.");
+    actions.push("Review historical / conflicting wording matches and clean only the ones that contradict current V4 rules or the documented V3 compatibility boundary.");
   }
   if (!actions.length) actions.push("No weekly maintenance action required.");
 

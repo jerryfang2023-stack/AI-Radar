@@ -32,7 +32,7 @@
 
 ## 当前自动化
 
-- Business Signals：GitHub 定时生产链在每日 08:57（Asia/Shanghai）运行，09:27 仅由健康检查按需补发；不得盲目重复全链采集。
+- Data Center / Business Signals：本地统一控制器每日 08:10（Asia/Shanghai）按需启动生产，09:15 只做一次定向恢复，09:50 统一收口；10:30 GitHub 健康任务仅作为云端安全兜底，不得盲目重复全链采集。
 - First-Line Viewpoints 与 Community Intelligence：保持独立监测、门禁和 PR 边界，站点发布仍统一进入 GitHub Pages。
 - Data Center V4：处于双写迁移期，以 `context/12-data-center-v4.md` 和数据中心专属 Supervisor / Integrity Gate 为准；V3 Card 与前台链仅是冻结兼容投影。
 

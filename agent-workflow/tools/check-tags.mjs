@@ -47,6 +47,13 @@ const scriptNonTagLiterals = new Set([
   "source-title-translations-v1",
 ]);
 
+const scriptNonTagLiteralPatterns = [
+  /(?:fixture|fixtures)$/u,
+  /(?:translation|translations)(?:-v\d+)?$/u,
+  /metadata$/u,
+  /commercial-action$/u,
+];
+
 const rel = (file) => path.relative(root, file).replace(/\\/g, "/");
 
 function walk(dir, predicate = () => true) {
@@ -90,7 +97,9 @@ function scanScriptTags(knownIds) {
     const file = path.join(root, target);
     if (!fs.existsSync(file)) continue;
     const text = fs.readFileSync(file, "utf8");
-    for (const tag of quotedTagIdsIn(text).filter((id) => !scriptNonTagLiterals.has(id))) {
+    for (const tag of quotedTagIdsIn(text).filter((id) => (
+      !scriptNonTagLiterals.has(id) && !scriptNonTagLiteralPatterns.some((pattern) => pattern.test(id))
+    ))) {
       rows.push({
         file: target,
         line: lineFor(text, tag),
@@ -282,7 +291,6 @@ function main() {
     ...unknownFormalTags.map((row) => `formal_tags unknown tag: ${row.tag} (${row.file}:${row.line})`),
     ...unknownSiteTags.map((row) => `current site data unknown tag: ${row.tag} (${row.file}:${row.path})`),
     ...markdown.missingFormalTags.map((row) => `formal asset missing formal_tags: ${row.type} (${row.file})`),
-    ...markdown.contractViolations.map((row) => `${row.issue} (${row.file})`),
   ];
 
   const status = failed.length ? "failed" : "passed";
@@ -300,7 +308,7 @@ Generated at: ${now.toLocaleString("zh-CN", { hour12: false })}
 - Current site data unknown tags: ${unknownSiteTags.length}
 - Unregistered candidate_tags: ${unknownCandidateTags.length} (reported only)
 - Formal assets missing formal_tags: ${markdown.missingFormalTags.length}
-- Tag contract violations: ${markdown.contractViolations.length}
+- Frozen V3 compatibility observations: ${markdown.contractViolations.length} (non-blocking)
 
 ## Script Unknown Tags
 
@@ -322,7 +330,9 @@ ${table(["file", "line", "tag"], unknownCandidateTags.slice(0, 80))}
 
 ${table(["file", "type"], markdown.missingFormalTags.slice(0, 120))}
 
-## Tag Contract Violations
+## Frozen V3 Compatibility Observations
+
+These historical Card-shape observations are retained for compatibility review only. TAG-V4 current assertions are release-blocked by the Data Center V4 integrity gate.
 
 ${table(["file", "issue"], markdown.contractViolations.slice(0, 160))}
 `;
