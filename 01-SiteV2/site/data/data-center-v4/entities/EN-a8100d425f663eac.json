@@ -1,0 +1,120 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-19T06:40:36.822Z",
+    "latestDataDate": "2026-07-19",
+    "currentDate": "2026-07-19",
+    "eventCount": 1286,
+    "quarantinedEventCount": 12
+  },
+  "entity": {
+    "id": "EN-a8100d425f663eac",
+    "name": "商汤科技",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-314b1d80bc4aa50d"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-technology-reasoning"
+    ],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-18",
+    "lastSeen": "2026-07-19",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-314b1d80bc4aa50d"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-314b1d80bc4aa50d",
+        "dataDate": "2026-07-19",
+        "date": "2026-07-18",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "商汤科技发布日日新 U1 Pro 图片创作模型：最高 8K 原生分辨率输出，宣称告别\"AI 味\"",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "reasoning",
+            "name": "推理能力"
+          }
+        ],
+        "entityIds": [
+          "EN-a8100d425f663eac",
+          "EN-c0d023c66edfc877"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-technology-reasoning",
+      "name": "推理能力",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "reasoning",
+      "eventIds": [
+        "EV-b95539d17772a4ce",
+        "EV-314b1d80bc4aa50d",
+        "EV-9496f90f3e808992",
+        "EV-e42e55d1e11a2ba2",
+        "EV-d07906b648eec63f",
+        "EV-3f23ddb47fc652a4",
+        "EV-ae89898e7aa4a4d6",
+        "EV-aa63303570154a9b"
+      ],
+      "entityIds": [
+        "EN-b5738c169b693bee",
+        "EN-8d4321d936320802",
+        "EN-96eebba49dbbf422",
+        "EN-4d748ebd71af03a7",
+        "EN-bbdefa2950f49882",
+        "EN-916a98f0fa2a39af",
+        "EN-a8100d425f663eac",
+        "EN-c0d023c66edfc877",
+        "EN-ea3bd73e2b506e00",
+        "EN-e3863f813fe47240",
+        "EN-7d3194f79e645c42",
+        "EN-1cd41545564777ce",
+        "EN-9fbf261b62c1d7c0",
+        "EN-1f8a924e62194552",
+        "EN-9bc22dcabf7f45b3"
+      ],
+      "fdeIds": [
+        "FDE-a1c35f8b9ea1d489"
+      ],
+      "hardwareIds": [
+        "HW-94ca08e08e6e52fe"
+      ],
+      "firstSeen": "2026-06-01",
+      "lastSeen": "2026-07-19"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}

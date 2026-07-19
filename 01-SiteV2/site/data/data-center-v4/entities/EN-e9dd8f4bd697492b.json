@@ -1,0 +1,199 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-19T06:40:36.822Z",
+    "latestDataDate": "2026-07-19",
+    "currentDate": "2026-07-19",
+    "eventCount": 1286,
+    "quarantinedEventCount": 12
+  },
+  "entity": {
+    "id": "EN-e9dd8f4bd697492b",
+    "name": "JoyAI-Talker",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-0a9617a5118564db"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-technology-tool_use"
+    ],
+    "relatedEntityIds": [
+      "EN-81baf57e05f11276"
+    ],
+    "firstSeen": "2026-07-18",
+    "lastSeen": "2026-07-19",
+    "relationIds": [
+      "REL2-c787edf73351db18"
+    ],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-0a9617a5118564db"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-0a9617a5118564db",
+        "dataDate": "2026-07-19",
+        "date": "2026-07-18",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "京东发布 JoyAI-Talker 实时语音交互模型与 JoyAI-Video-Edit 视频编辑模型",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "tool_use",
+            "name": "工具调用"
+          }
+        ],
+        "entityIds": [
+          "EN-81baf57e05f11276",
+          "EN-c0e7614761147db1",
+          "EN-e9dd8f4bd697492b"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [
+    {
+      "id": "EN-81baf57e05f11276",
+      "name": "京东",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-0a9617a5118564db",
+        "EV-a117a2f26a7705be",
+        "EV-cf306b007f5c321b"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-tool_use"
+      ],
+      "relatedEntityIds": [
+        "EN-602764d290139e8f",
+        "EN-e9dd8f4bd697492b",
+        "EN-c0e7614761147db1",
+        "EN-a759ee8f6d212de8",
+        "EN-6c959f6391a7ce86"
+      ],
+      "firstSeen": "2026-06-11",
+      "lastSeen": "2026-07-19"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-c787edf73351db18",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-81baf57e05f11276",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-e9dd8f4bd697492b",
+      "object_type": "entity",
+      "event_id": "EV-0a9617a5118564db",
+      "claim_refs": [
+        "CL-58c689baa9bc67b1",
+        "CL-8cdcf3ff96f2a74e",
+        "CL-634bcf42c5be8aa6",
+        "CL-3e4f249d46540501"
+      ],
+      "source_refs": [
+        "SA-4804497da53bf822"
+      ],
+      "data_date": "2026-07-19",
+      "status": "verified"
+    }
+  ],
+  "taxonomyNodes": [
+    {
+      "id": "TX-technology-tool_use",
+      "name": "工具调用",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "tool_use",
+      "eventIds": [
+        "EV-baa76a4f03b84980",
+        "EV-97fdf068afbbe555",
+        "EV-19bcfc6d7c1612cb",
+        "EV-0a9617a5118564db",
+        "EV-a8a8f26c5128d894",
+        "EV-29e069ac093f0e34",
+        "EV-653cbce2ccc79f8b",
+        "EV-8bf42c1816e772ba",
+        "EV-9496f90f3e808992",
+        "EV-2ffbe4560e69992a",
+        "EV-9c4b862020202f6c",
+        "EV-7449d239223d4928",
+        "EV-c5b8faec223a4caf",
+        "EV-d53cd33e8f541a65"
+      ],
+      "entityIds": [
+        "EN-7f90f96bd6306bff",
+        "EN-d8cb1acd1b39854a",
+        "EN-5388bc10736a0eff",
+        "EN-2abf8289b2f2113f",
+        "EN-91901356a63794df",
+        "EN-81baf57e05f11276",
+        "EN-c0e7614761147db1",
+        "EN-e9dd8f4bd697492b",
+        "EN-c70eca6b0f88f44d",
+        "EN-3a9b395103419892",
+        "EN-bbdefa2950f49882",
+        "EN-8d4321d936320802",
+        "EN-085598c00f2aaccf",
+        "EN-f3cfedbe8428c9f7",
+        "EN-7df09a7717ef2feb",
+        "EN-c04bd5ebd10ab696",
+        "EN-50ba7ff15827787b",
+        "EN-9418d9e3d1e469cf",
+        "EN-ea3bd73e2b506e00",
+        "EN-e3863f813fe47240",
+        "EN-7d3194f79e645c42",
+        "EN-96eebba49dbbf422",
+        "EN-52fc33ae4d101a5d",
+        "EN-2c063f604e634100",
+        "EN-916a98f0fa2a39af",
+        "EN-d6d6e4e33c59b45e",
+        "EN-3a7bd3e2360a3d29",
+        "EN-41dcc2d4951f337b",
+        "EN-729324072d368379",
+        "EN-6fcba5d96a4fadfd",
+        "EN-630dc133336bc266",
+        "EN-ce635c4eabff5e4f",
+        "EN-c4bc2d00a42f220f",
+        "EN-0b9ca57f53ba758b"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-05-25",
+      "lastSeen": "2026-07-19"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}

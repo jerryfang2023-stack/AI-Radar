@@ -1,0 +1,272 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-071",
+  "title": "SQLite Query Explainer：交互式查询计划解读工具",
+  "title_zh": "SQLite Query Explainer：交互式查询计划解读工具",
+  "title_translation_status": "not_required",
+  "title_translation_method": "source_title",
+  "title_translation_model": "",
+  "original_url": "https://simonwillison.net/2026/Jul/18/sqlite-query-explainer",
+  "canonical_url": "https://simonwillison.net/2026/Jul/18/sqlite-query-explainer",
+  "source_name": "Simon Willison 博客",
+  "source_type": "builder",
+  "source_level": "S",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "case_or_customer",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": false,
+  "enterprise_ai_transformation_stage": "",
+  "enterprise_ai_transformation_reason": "",
+  "author": "",
+  "published_at": "2026-07-18T17:19:10.000Z",
+  "collected_at": "2026-07-19T05:45:58.336Z",
+  "language": "mixed",
+  "full_text": "Tool: SQLite Query Explainer\nSimon Willison’s Weblog\nSubscribe\nSponsored by: Atlassian &mdash; Give your agents a plan. Not a prompt. New Jira capabilities unlock full-context for AI-native software development. Assign tasks to Claude, Cursor, or GitHub Copilot, now directly from Jira. Learn more\n18th July 2026\nTool\nSQLite Query Explainer\n&mdash; Run SQL queries against a SQLite database in your browser and see exactly how SQLite executes them: the tool runs your query, then annotates every line of both `EXPLAIN QUERY PLAN` and the low-level `EXPLAIN` bytecode output with plain-English descriptions of what the query planner and virtual machine are doing.\nJulia Evan's, in Learning a few things about running SQLite :\nMaybe one day I’ll learn to read a query plan.\nBig same.... which inspired me to have Fable build this interactive explain tool, which runs SQLite in Python in Pyodide in Web Assembly in the browser and adds a layer of explanation to the results of both EXPLAIN and EXPLAIN QUERY PLAN.\nApproach with caution, since I don't know enough about SQLite query plans to verify the results myself, but it seems cromulent enough to me.\nPosted 18th July 2026 at 5:19 pm\nRecent articles\nKimi K3, and what we can still learn from the pelican benchmark - 16th July 2026\nThe new GPT-5.6 family: Luna, Terra, Sol - 9th July 2026\nsqlite-utils 4.0, now with database schema migrations - 7th July 2026\nThis is a beat by Simon Willison, posted on 18th July 2026 .\nsql\n115\nsqlite\n481\ntools\n72\njulia-evans\n30\npyodide\n31\nclaude-mythos-fable\n30\nMonthly briefing\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments.\nPay me to send you less!\nSponsor & subscribe\nDisclosures\nColophon\n&copy;\n2002\n2003\n2004\n2005\n2006\n2007\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n2023\n2024\n2025\n2026",
+  "clean_text": "Tool: SQLite Query Explainer\nSimon Willison’s Weblog\nSubscribe\nSponsored by: Atlassian &mdash; Give your agents a plan. Not a prompt. New Jira capabilities unlock full-context for AI-native software development. Assign tasks to Claude, Cursor, or GitHub Copilot, now directly from Jira. Learn more\n18th July 2026\nTool\nSQLite Query Explainer\n&mdash; Run SQL queries against a SQLite database in your browser and see exactly how SQLite executes them: the tool runs your query, then annotates every line of both `EXPLAIN QUERY PLAN` and the low-level `EXPLAIN` bytecode output with plain-English descriptions of what the query planner and virtual machine are doing.\nJulia Evan's, in Learning a few things about running SQLite :\nMaybe one day I’ll learn to read a query plan.\nBig same.... which inspired me to have Fable build this interactive explain tool, which runs SQLite in Python in Pyodide in Web Assembly in the browser and adds a layer of explanation to the results of both EXPLAIN and EXPLAIN QUERY PLAN.\nApproach with caution, since I don't know enough about SQLite query plans to verify the results myself, but it seems cromulent enough to me.\nPosted 18th July 2026 at 5:19 pm\nRecent articles\nKimi K3, and what we can still learn from the pelican benchmark - 16th July 2026\nThe new GPT-5.6 family: Luna, Terra, Sol - 9th July 2026\nsqlite-utils 4.0, now with database schema migrations - 7th July 2026\nThis is a beat by Simon Willison, posted on 18th July 2026 .\nsql\n115\nsqlite\n481\ntools\n72\njulia-evans\n30\npyodide\n31\nclaude-mythos-fable\n30\nMonthly briefing\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments.\nPay me to send you less!\nSponsor & subscribe\nDisclosures\nColophon\n&copy;\n2002\n2003\n2004\n2005\n2006\n2007\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n2023\n2024\n2025\n2026",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-19/r-071-sqlite-query-explainer-交互式查询计划解读工具.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-19/r-071-sqlite-query-explainer-交互式查询计划解读工具.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-body-visible-text",
+  "extraction_quality": "medium",
+  "extraction_method": "body-visible-text",
+  "readability_score": 54,
+  "extractor_diagnostics": {
+    "readability_score": 54,
+    "text_length": 1865,
+    "paragraph_count": 16,
+    "sentence_count": 12,
+    "boilerplate_hits": 2,
+    "symbol_ratio": 0,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "body-visible-text"
+  },
+  "has_full_text": true,
+  "content_length": 1865,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "16e5838e54f4cd18",
+    "missing": []
+  },
+  "evidence_strength": "rich_evidence",
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "SQLite Query Explainer：交互式查询计划解读工具",
+    "discovery_summary": "Julia Evans 基于 Fable 构建了 SQLite Query Explainer，一个在浏览器中通过 Pyodide 运行 SQLite 的交互式工具。该工具为 EXPLAIN 和 EXPLAIN QUERY PLAN 的结果添加了可读的解释层，帮助用户理解查询计划。作者提醒需谨慎使用，因其自身无法完全验证解释的准确性。",
+    "source_name": "Simon Willison 博客",
+    "origin_url": "https://simonwillison.net/2026/Jul/18/sqlite-query-explainer",
+    "discovered_at": "2026-07-19T05:36:58.939Z",
+    "rank_on_page": 79,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "22a77fa629b52078",
+  "content_hash": "16e5838e54f4cd18",
+  "full_text_hash": "16e5838e54f4cd18",
+  "semantic_hash": "b53709062fa81ed5",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-18T17:19:10.000Z",
+  "last_seen_at": "2026-07-19T05:45:58.336Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "company_action",
+      "text": "Julia Evans 基于 Fable 构建了 SQLite Query Explainer，一个在浏览器中通过 Pyodide 运行 SQLite 的交互式工具。该工具为 EXPLAIN 和 EXPLAIN QUERY PLAN 的结果添加了可读的解释层，帮助用户理解查询计划。作者提醒需谨慎使用，因其自身无法完全验证解释的准确性。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "Tool: SQLite Query Explainer Simon Willison’s Weblog Subscribe Sponsored by: Atlassian &mdash; Give your agents a plan.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "New Jira capabilities unlock full-context for AI-native software development.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "medium"
+    },
+    {
+      "type": "case_detail",
+      "text": "Assign tasks to Claude, Cursor, or GitHub Copilot, now directly from Jira.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "Learn more 18th July 2026 Tool SQLite Query Explainer &mdash; Run SQL queries against a SQLite database in your browser and see exactly how SQLite executes them: the tool runs your query, then annotates every line of both `EXPLAIN QUERY PLAN` and the low-level `EXPLAIN` bytecode output with plain-English descriptions of what the query planner and virtual machine are doing.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "Julia Evan's, in Learning a few things about running SQLite : Maybe one day I’ll learn to read a query plan.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "medium"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-19T05:45:58.336Z",
+  "business_elements": {
+    "companies": [
+      "Simon Willison 博客",
+      "GitHub",
+      "Cursor"
+    ],
+    "products": [
+      "agents",
+      "Claude",
+      "Cursor",
+      "Copilot",
+      "GPT-5",
+      "claude"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [],
+    "workflows": [],
+    "business_actions": [],
+    "affected_departments": [
+      "IT / 安全"
+    ],
+    "numbers": [
+      "18",
+      "2026",
+      "5",
+      "19",
+      "3",
+      "16",
+      "5.6",
+      "9"
+    ],
+    "quotes": []
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Julia Evans 基于 Fable 构建了 SQLite Query Explainer，一个在浏览器中通过 Pyodide 运行 SQLite 的交互式工具。该工具为 EXPLAIN 和 EXPLAIN QUERY PLAN 的结果添加了可读的解释层，帮助用户理解查询计划。作者提醒需谨慎使用，因其自身无法完全验证解释的准确性。",
+      "Tool: SQLite Query Explainer Simon Willison’s Weblog Subscribe Sponsored by: Atlassian &mdash; Give your agents a plan.",
+      "New Jira capabilities unlock full-context for AI-native software development."
+    ],
+    "case_details": [
+      "Assign tasks to Claude, Cursor, or GitHub Copilot, now directly from Jira."
+    ],
+    "workflow_changes": [],
+    "before_after_clues": [],
+    "affected_roles": [],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_case",
+    "importance_score": 4,
+    "importance_reason": "real customer or adoption case; rubric=4 concrete important change",
+    "supporting_signals": [],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 2
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": true,
+    "trend_candidate_context": true,
+    "signal_card_candidate": true,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "core_pool"
+  ],
+  "change_action_detected": false,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势",
+    "没有变化前后流程线索"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# SQLite Query Explainer：交互式查询计划解读工具\n\n- raw_id: R-071\n- title_zh: SQLite Query Explainer：交互式查询计划解读工具\n- title_translation_status: not_required\n- title_translation_method: source_title\n- original_url: https://simonwillison.net/2026/Jul/18/sqlite-query-explainer\n- source_name: Simon Willison 博客\n- collected_at: 2026-07-19T05:45:58.336Z\n\n## clean_text\n\nTool: SQLite Query Explainer\nSimon Willison’s Weblog\nSubscribe\nSponsored by: Atlassian &mdash; Give your agents a plan. Not a prompt. New Jira capabilities unlock full-context for AI-native software development. Assign tasks to Claude, Cursor, or GitHub Copilot, now directly from Jira. Learn more\n18th July 2026\nTool\nSQLite Query Explainer\n&mdash; Run SQL queries against a SQLite database in your browser and see exactly how SQLite executes them: the tool runs your query, then annotates every line of both `EXPLAIN QUERY PLAN` and the low-level `EXPLAIN` bytecode output with plain-English descriptions of what the query planner and virtual machine are doing.\nJulia Evan's, in Learning a few things about running SQLite :\nMaybe one day I’ll learn to read a query plan.\nBig same.... which inspired me to have Fable build this interactive explain tool, which runs SQLite in Python in Pyodide in Web Assembly in the browser and adds a layer of explanation to the results of both EXPLAIN and EXPLAIN QUERY PLAN.\nApproach with caution, since I don't know enough about SQLite query plans to verify the results myself, but it seems cromulent enough to me.\nPosted 18th July 2026 at 5:19 pm\nRecent articles\nKimi K3, and what we can still learn from the pelican benchmark - 16th July 2026\nThe new GPT-5.6 family: Luna, Terra, Sol - 9th July 2026\nsqlite-utils 4.0, now with database schema migrations - 7th July 2026\nThis is a beat by Simon Willison, posted on 18th July 2026 .\nsql\n115\nsqlite\n481\ntools\n72\njulia-evans\n30\npyodide\n31\nclaude-mythos-fable\n30\nMonthly briefing\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments.\nPay me to send you less!\nSponsor & subscribe\nDisclosures\nColophon\n&copy;\n2002\n2003\n2004\n2005\n2006\n2007\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n2023\n2024\n2025\n2026\n\n## full_text\n\nTool: SQLite Query Explainer\nSimon Willison’s Weblog\nSubscribe\nSponsored by: Atlassian &mdash; Give your agents a plan. Not a prompt. New Jira capabilities unlock full-context for AI-native software development. Assign tasks to Claude, Cursor, or GitHub Copilot, now directly from Jira. Learn more\n18th July 2026\nTool\nSQLite Query Explainer\n&mdash; Run SQL queries against a SQLite database in your browser and see exactly how SQLite executes them: the tool runs your query, then annotates every line of both `EXPLAIN QUERY PLAN` and the low-level `EXPLAIN` bytecode output with plain-English descriptions of what the query planner and virtual machine are doing.\nJulia Evan's, in Learning a few things about running SQLite :\nMaybe one day I’ll learn to read a query plan.\nBig same.... which inspired me to have Fable build this interactive explain tool, which runs SQLite in Python in Pyodide in Web Assembly in the browser and adds a layer of explanation to the results of both EXPLAIN and EXPLAIN QUERY PLAN.\nApproach with caution, since I don't know enough about SQLite query plans to verify the results myself, but it seems cromulent enough to me.\nPosted 18th July 2026 at 5:19 pm\nRecent articles\nKimi K3, and what we can still learn from the pelican benchmark - 16th July 2026\nThe new GPT-5.6 family: Luna, Terra, Sol - 9th July 2026\nsqlite-utils 4.0, now with database schema migrations - 7th July 2026\nThis is a beat by Simon Willison, posted on 18th July 2026 .\nsql\n115\nsqlite\n481\ntools\n72\njulia-evans\n30\npyodide\n31\nclaude-mythos-fable\n30\nMonthly briefing\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments.\nPay me to send you less!\nSponsor & subscribe\nDisclosures\nColophon\n&copy;\n2002\n2003\n2004\n2005\n2006\n2007\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n2023\n2024\n2025\n2026\n\n## extraction_diagnostics\n\n- extraction_method: body-visible-text\n- readability_score: 54\n- fetch_status: fetched-readable-text-body-visible-text\n- extraction_quality: medium\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Julia Evans 基于 Fable 构建了 SQLite Query Explainer，一个在浏览器中通过 Pyodide 运行 SQLite 的交互式工具。该工具为 EXPLAIN 和 EXPLAIN QUERY PLAN 的结果添加了可读的解释层，帮助用户理解查询计划。作者提醒需谨慎使用，因其自身无法完全验证解释的准确性。\n2. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Tool: SQLite Query Explainer Simon Willison’s Weblog Subscribe Sponsored by: Atlassian &mdash; Give your agents a plan.\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] New Jira capabilities unlock full-context for AI-native software development.\n4. [case_detail / signal_card_candidate, relationship_graph_input, case / high] Assign tasks to Claude, Cursor, or GitHub Copilot, now directly from Jira.\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Learn more 18th July 2026 Tool SQLite Query Explainer &mdash; Run SQL queries against a SQLite database in your browser and see exactly how SQLite executes them: the tool runs your query, then annotates every line of both `EXPLAIN QUERY PLAN` and the low-level `EXPLAIN` bytecode output with plain-English descriptions of what the query planner and virtual machine are doing.\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Julia Evan's, in Learning a few things about running SQLite : Maybe one day I’ll learn to read a query plan.\n"
+}

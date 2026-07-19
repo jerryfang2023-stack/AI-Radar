@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T06:46:16.044Z",
-    "latestDataDate": "2026-07-18",
-    "currentDate": "2026-07-18",
-    "eventCount": 1250,
-    "quarantinedEventCount": 11
+    "generatedAt": "2026-07-19T06:40:36.822Z",
+    "latestDataDate": "2026-07-19",
+    "currentDate": "2026-07-19",
+    "eventCount": 1286,
+    "quarantinedEventCount": 12
   },
   "node": {
     "id": "TX-industry-financial_services",
@@ -30,6 +30,7 @@
       "EV-d1e2a7c6d314612c",
       "EV-33717672cb5e8004",
       "EV-83b2e8f7fe679bc3",
+      "EV-2c476cb7969f399b",
       "EV-2c87c8ea47cbd1b6",
       "EV-97747aee0cafd9f3",
       "EV-bad301e14b034fbd",
@@ -56,6 +57,8 @@
       "EN-c70eca6b0f88f44d",
       "EN-5e757c7fc575c41e",
       "EN-bc8a00f7f6fb535f",
+      "EN-3ccbd9105a45d8fc",
+      "EN-b0532e1af75cc4ab",
       "EN-4d748ebd71af03a7",
       "EN-c3e4cc183d345262",
       "EN-9b6ea48b511ffd60",
@@ -66,19 +69,19 @@
       "EN-a4eee620f5a081bd",
       "EN-18b4bbfd60f4137e",
       "EN-6eedfb906b1652fb",
-      "EN-3ccbd9105a45d8fc",
       "EN-32e83e92d45d71f6"
     ],
     "fdeIds": [
       "FDE-e1b2683e8d017358",
       "FDE-0ee0fe3baa3f1364",
       "FDE-d0a39c8df546833a",
+      "FDE-cc943789fb1c3f3d",
       "FDE-560b710961006374",
       "FDE-ae4c44cd0de9d48a"
     ],
     "hardwareIds": [],
-    "firstSeen": "2026-05-22",
-    "lastSeen": "2026-07-18"
+    "firstSeen": "2026-03-19",
+    "lastSeen": "2026-07-19"
   },
   "events": [
     {
@@ -1412,6 +1415,113 @@
       "publisher": "keepingupwith.ai"
     },
     {
+      "id": "EV-2c476cb7969f399b",
+      "dataDate": "2026-07-19",
+      "date": "2026-03-19",
+      "updatedDate": "2026-07-19",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "前线部署工程师证明AI让技术岗位更人性化 - Salesforce",
+      "originalTitle": "Forward Deployed Engineers Are Proving AI Makes Tech Jobs More Human - Salesforce",
+      "subject": "Forward",
+      "action": "Deployed",
+      "object": "Engineers Are Proving AI Makes Tech Jobs More Human - Salesforce",
+      "metrics": [
+        "800%",
+        "40%",
+        "50%",
+        "70%"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "customer_service",
+            "dimensionName": "应用场景",
+            "name": "客户服务"
+          }
+        ],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "financial_services",
+            "dimensionName": "行业",
+            "name": "金融服务"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "customer_service",
+          "dimensionName": "应用场景",
+          "name": "客户服务"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "financial_services",
+          "dimensionName": "行业",
+          "name": "金融服务"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "customer_service",
+          "dimensionName": "应用场景",
+          "name": "客户服务"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "financial_services",
+          "dimensionName": "行业",
+          "name": "金融服务"
+        }
+      ],
+      "entityIds": [
+        "EN-3ccbd9105a45d8fc",
+        "EN-b0532e1af75cc4ab"
+      ],
+      "entityNames": [
+        "Salesforce",
+        "Rime"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://salesforce.com/news/stories/forward-deployed-engineers-making-ai-jobs-more-human",
+      "publisher": "salesforce.com"
+    },
+    {
       "id": "EV-2c87c8ea47cbd1b6",
       "dataDate": "2026-07-09",
       "date": "2026-07-09",
@@ -2036,6 +2146,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-e3792591090281c6",
         "EV-f6a72cddbda748b3",
         "EV-4eaf3aabecae6016",
         "EV-2dff32c1b6f813e4",
@@ -2088,7 +2199,9 @@
         "EV-c5643983538c6513",
         "EV-b85139b8fba1a5c5",
         "EV-c4303801ea8c54dc",
+        "EV-0b7f11c0c18b8bf4",
         "EV-8b0f056571d68269",
+        "EV-30ba1a24f74ccc6d",
         "EV-b4eb99a878be9bb2",
         "EV-de1816770e8a2037",
         "EV-cfb7c4b4b765f53b",
@@ -2166,6 +2279,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-technology",
         "TX-technology-agentic_execution",
         "TX-industry-financial_services",
         "TX-use_case-enterprise_operations",
@@ -2181,7 +2295,6 @@
         "TX-use_case-cybersecurity",
         "TX-use_case-data_analysis",
         "TX-technology-on_device",
-        "TX-industry-technology",
         "TX-technology-embodied_ai",
         "TX-technology-fine_tuning",
         "TX-technology-open_weights",
@@ -2200,7 +2313,7 @@
         "EN-c70eca6b0f88f44d"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-18"
+      "lastSeen": "2026-07-19"
     },
     {
       "id": "EN-1bd14cd1a58c5708",
@@ -2287,6 +2400,7 @@
         "EV-3fbfb89a10efd42f",
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
+        "EV-3c4d6d70ac763885",
         "EV-83a8ac8a2554b60c",
         "EV-a68475d82ec939b5",
         "EV-c237f5dc53f0a923",
@@ -2432,6 +2546,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-technology",
         "TX-technology-agentic_execution",
         "TX-industry-financial_services",
         "TX-use_case-enterprise_operations",
@@ -2447,7 +2562,6 @@
         "TX-technology-mixture_of_experts",
         "TX-use_case-cybersecurity",
         "TX-use_case-data_analysis",
-        "TX-industry-technology",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-embodied_ai",
         "TX-technology-fine_tuning",
@@ -2485,7 +2599,7 @@
         "EN-b9db1ff13ae8496e",
         "EN-7b8cb35de7ad047a"
       ],
-      "firstSeen": "2026-03-13",
+      "firstSeen": "2026-02-19",
       "lastSeen": "2026-07-19"
     },
     {
@@ -2768,6 +2882,7 @@
         "EV-8e01849c05b50355",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-eb97c388b3197c06",
         "EV-83a8ac8a2554b60c",
         "EV-0d5a32aca724d30e",
         "EV-debecca007e547d2",
@@ -2913,6 +3028,7 @@
         "EV-773ffcc6e1df56fa",
         "EV-2923b35d936d9f4e",
         "EV-cf496e0f8a56ca97",
+        "EV-94e1f1a5cea15eae",
         "EV-0990915063eb75a0",
         "EV-36a9b1b961f8e3b2",
         "EV-2d56dec8dfeb2b56",
@@ -2964,7 +3080,6 @@
         "TX-technology-fine_tuning",
         "TX-technology-open_weights",
         "TX-technology-model_context_protocol",
-        "TX-technology-multimodal",
         "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
         "TX-industry-government_public_sector",
@@ -3036,6 +3151,121 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-06-06",
       "lastSeen": "2026-06-07"
+    },
+    {
+      "id": "EN-3ccbd9105a45d8fc",
+      "name": "Salesforce",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-15cc72d7c78cad3d",
+        "EV-9300044a58395552",
+        "EV-4e7a32c9ee893918",
+        "EV-236cbc2d64f0c455",
+        "EV-14a666fc27d73a80",
+        "EV-fb5d2ae875255804",
+        "EV-f020dd198aa2f952",
+        "EV-cc7020e12bcaa0d7",
+        "EV-d9270ae7b862212b",
+        "EV-3f8f6a578be79988",
+        "EV-8b73e88ffd3569b2",
+        "EV-2c476cb7969f399b",
+        "EV-30d7f1c5dc8ea464",
+        "EV-9009adaed650ddde",
+        "EV-11a8e196deb21300",
+        "EV-f7aa6d43b75238fb"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-financial_services",
+        "TX-use_case-enterprise_operations",
+        "TX-industry-manufacturing",
+        "TX-technology-code_generation",
+        "TX-use_case-customer_service",
+        "TX-use_case-software_development"
+      ],
+      "relatedEntityIds": [
+        "EN-b0532e1af75cc4ab"
+      ],
+      "firstSeen": "2023-03-21",
+      "lastSeen": "2026-07-19"
+    },
+    {
+      "id": "EN-b0532e1af75cc4ab",
+      "name": "Rime",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-64fb6d791e19d10a",
+        "EV-463cb26b5e03c7f7",
+        "EV-8cf189b07a257c1c",
+        "EV-f0fee44c1dfdcb09",
+        "EV-52bf48005db3461a",
+        "EV-a7e14985b924b464",
+        "EV-e7dcecaed5a0ee5b",
+        "EV-40d196865997025c",
+        "EV-736404028b8ad33e",
+        "EV-44a4e92c03a31ab1",
+        "EV-3b40ec144e5db22c",
+        "EV-c8928410f6c145eb",
+        "EV-cfb7c4b4b765f53b",
+        "EV-ec711aed6721bb30",
+        "EV-d756f05478303505",
+        "EV-06b294f255c0087e",
+        "EV-2c476cb7969f399b",
+        "EV-06487af6e98ea491",
+        "EV-bb9ba11acf104db1",
+        "EV-e7b7df43970f7e2c",
+        "EV-025778b83c1b2ca9",
+        "EV-b84035029a63e52e",
+        "EV-b8bba030747fd3b6",
+        "EV-5babb43f4b4d302f",
+        "EV-9ae9aa86e51e64a2",
+        "EV-173d08643472aee5",
+        "EV-d064939235825765",
+        "EV-3ef3e18df61a00d8",
+        "EV-4bb5b24400e49ea4",
+        "EV-97a8d86baa7fffc4",
+        "EV-0ad758b04b9b5313",
+        "EV-591542ccc2de5be8",
+        "EV-dab4d3f2059e8880",
+        "EV-aaaa21ae510bc87e",
+        "EV-2f56b99f72ad6c4f",
+        "EV-33e7429a7bc94840",
+        "EV-cf0551afe16562ef",
+        "EV-c17f5a364ed6a3ac"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-financial_services",
+        "TX-industry-retail_ecommerce",
+        "TX-technology-code_generation",
+        "TX-use_case-customer_service",
+        "TX-use_case-software_development",
+        "TX-technology-mixture_of_experts",
+        "TX-technology-on_device",
+        "TX-technology-fine_tuning",
+        "TX-technology-open_weights",
+        "TX-technology-multimodal",
+        "TX-technology-video_generation"
+      ],
+      "relatedEntityIds": [
+        "EN-3ccbd9105a45d8fc"
+      ],
+      "firstSeen": "2026-03-11",
+      "lastSeen": "2026-07-19"
     },
     {
       "id": "EN-4d748ebd71af03a7",
@@ -3153,7 +3383,6 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
-        "EV-0d5a32aca724d30e",
         "EV-a255cfc0dab44564",
         "EV-98a80b75b27d9f3b",
         "EV-29e069ac093f0e34",
@@ -3254,6 +3483,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-technology",
         "TX-technology-agentic_execution",
         "TX-industry-financial_services",
         "TX-use_case-enterprise_operations",
@@ -3262,15 +3492,12 @@
         "TX-technology-code_generation",
         "TX-use_case-robotics_automation",
         "TX-use_case-software_development",
-        "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-use_case-cybersecurity",
         "TX-technology-on_device",
-        "TX-industry-technology",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-embodied_ai",
         "TX-technology-fine_tuning",
-        "TX-technology-open_weights",
         "TX-technology-multimodal",
         "TX-industry-media_entertainment",
         "TX-technology-video_generation",
@@ -3353,7 +3580,8 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "Kimi"
+        "Kimi",
+        "月之暗面"
       ],
       "verificationStatus": "verified",
       "datasetScopes": [
@@ -3374,6 +3602,7 @@
         "EV-e878e56967902718",
         "EV-e9a86c47da229331",
         "EV-773ffcc6e1df56fa",
+        "EV-94e1f1a5cea15eae",
         "EV-74b965de27bc0515"
       ],
       "viewpointIds": [],
@@ -3385,7 +3614,6 @@
         "TX-use_case-software_development",
         "TX-technology-long_context",
         "TX-technology-retrieval_augmented_generation",
-        "TX-technology-open_weights",
         "TX-technology-multimodal"
       ],
       "relatedEntityIds": [
@@ -3396,7 +3624,7 @@
         "EN-b57c95289680078c"
       ],
       "firstSeen": "2026-05-19",
-      "lastSeen": "2026-07-18"
+      "lastSeen": "2026-07-19"
     },
     {
       "id": "EN-a4eee620f5a081bd",
@@ -3461,47 +3689,6 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-06-18",
       "lastSeen": "2026-06-18"
-    },
-    {
-      "id": "EN-3ccbd9105a45d8fc",
-      "name": "Salesforce",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-15cc72d7c78cad3d",
-        "EV-9300044a58395552",
-        "EV-4e7a32c9ee893918",
-        "EV-236cbc2d64f0c455",
-        "EV-14a666fc27d73a80",
-        "EV-fb5d2ae875255804",
-        "EV-f020dd198aa2f952",
-        "EV-cc7020e12bcaa0d7",
-        "EV-d9270ae7b862212b",
-        "EV-3f8f6a578be79988",
-        "EV-8b73e88ffd3569b2",
-        "EV-30d7f1c5dc8ea464",
-        "EV-9009adaed650ddde",
-        "EV-11a8e196deb21300",
-        "EV-f7aa6d43b75238fb"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-industry-financial_services",
-        "TX-use_case-enterprise_operations",
-        "TX-industry-manufacturing",
-        "TX-technology-code_generation",
-        "TX-use_case-customer_service",
-        "TX-use_case-software_development"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2023-03-21",
-      "lastSeen": "2026-07-15"
     },
     {
       "id": "EN-32e83e92d45d71f6",
@@ -3740,6 +3927,57 @@
       "entityIds": [
         "EN-bc8a00f7f6fb535f",
         "EN-7d3194f79e645c42"
+      ]
+    },
+    {
+      "id": "FDE-cc943789fb1c3f3d",
+      "eventId": "EV-2c476cb7969f399b",
+      "dataDate": "2026-07-19",
+      "date": "2026-03-19",
+      "title": "前线部署工程师证明AI让技术岗位更人性化 - Salesforce",
+      "stage": "completed",
+      "stageLabel": "已完成",
+      "customer": "Salesforce",
+      "vendor": "Rime",
+      "industry": "未披露",
+      "useCase": "Engineers Are Proving AI Makes Tech Jobs More Human - Salesforce",
+      "reportedNeed": "companies adopt AI agents at breakneck speed but need expertise to actually deploy them",
+      "deliveryComponents": [
+        "How Forward Deployed Engineers Are Proving AI Makes Tech Jobs More Human",
+        "Sarah Khalid was three years into her career as a Success Architect at Salesforce when her team restructured and she found herself in a role she hadn’t planned on, couldn’t fully define, and wasn’t sure existed yet. “I didn’t plan on becoming an FDE,” she said. “It’s something that I grew into.” Forward deployed engineers (FDEs) saw an 800% spike in job postings between January and September 2025, according to an analysis by Indeed and the Financial Times, as companies adopt AI agents at breakneck speed but need expertise to actually deploy them. FDEs exist to close that gap. They code, consult, and translate agentic AI into working solutions, often while sitting side by side with the customer. Similar to when Harvard Business Review deemed data scientist “the sexiest job of the 21st century” due to a rare combination of technical chops and business savvy, both roles prove that transformative technology doesn’t eliminate jobs. It creates entirely new ones we couldn’t have imagined a few years prior. Now history is repeating itself, just faster. How do I know when AI is wrong, when AI is right, how it can solve the right problem?",
+        "” Around 40% to 50% of FDE movement at Salesforce is internal. The company built a six-week onboarding program in September 2025 with two weeks of focused technical training and four weeks on the job to bridge the gap. For anyone eyeing the role from the outside, Hickin’s advice is simple: “Become the AI expert in the job that you’re in. Experiment with the tool, figure out how it can solve problems in your team. Then you become a kind of quasi-FDE within your own job.” Related How We Cut Inference Spend by Right-Sizing Our Models 8 min read Slackbot Can Now Do Anything Salesforce Can. Just Ask. Trust builder AI has already changed what the job demands internally. FDEs once spent up to 40% of their time on administrative preparation, including summarizing meetings, pulling account histories, and drafting status updates. That’s largely automated now. “Now they can spend their time on hacking, building, figuring out the customer issue,” Hickin said. “Human jobs become more human.” Khalid explained what this looks like in practice: She once worked with a tech customer whose AI agent was targeting a 70% deflection rate for their customer service function. That figure became the North Star to add functionality, optimize, and move the needle. When they hit it, the customer expanded to a second use case. She also described a time when an insurance company demanded accuracy and response time targets. Khalid admitted that the technical side was hard. It required experimenting with different LLM models and prompt engineering on the back end. But what nearly derailed the engagement had nothing to do with code. This company, like many others, was experimenting with a variety of solutions. So she said, “It also required a lot of nontechnical skills: how to deal with that customer, how to make them not want to give up on Agentforce. And make them trust.” That account didn’t turn on a technical breakthrough. It turned on rebuilding confidence. “There’s not much coding involved,” Khalid reflected. “It’s actually more judgment, trust, and communication skills. And not something that AI can replace.” Work, redefined Back in 2012, the data scientist role looked like something only a narrow slice of specialists could do. A decade later, data literacy had become a baseline expectation across job functions. Hickin sees the FDE role charting the same arc. It won’t be a specialty forever but a leading indicator of where technical work is heading: closer to the customer, more dependent on judgment, and more human than the job title implies. Khalid, reflecting on the FDE acronym, has her own proposal: future defining engineers. “We’re not just defining the AI part,” she said. “We’re also defining how this role itself will shape out in the future.” It’s clever. And after what happened with data science, it’s hard to argue with. Go Deeper: Read why today’s hottest role is the forward deployed engineer Learn how Agentforce inspired three FDEs to return to Salesforce Learn how the role of the developer has changed in the agentic AI era",
+        "How Forward Deployed Engineers Are Proving AI Makes Tech Jobs More Human"
+      ],
+      "outcomes": [],
+      "metrics": [
+        "800%",
+        "40%",
+        "50%",
+        "40%",
+        "70%"
+      ],
+      "undisclosedFields": [
+        "industry",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "sourceUrl": "https://salesforce.com/news/stories/forward-deployed-engineers-making-ai-jobs-more-human",
+      "entityIds": [
+        "EN-3ccbd9105a45d8fc",
+        "EN-b0532e1af75cc4ab"
       ]
     }
   ],

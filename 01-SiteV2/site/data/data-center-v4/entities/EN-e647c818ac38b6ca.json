@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T06:46:16.044Z",
-    "latestDataDate": "2026-07-18",
-    "currentDate": "2026-07-18",
-    "eventCount": 1250,
-    "quarantinedEventCount": 11
+    "generatedAt": "2026-07-19T06:40:36.822Z",
+    "latestDataDate": "2026-07-19",
+    "currentDate": "2026-07-19",
+    "eventCount": 1286,
+    "quarantinedEventCount": 12
   },
   "entity": {
     "id": "EN-e647c818ac38b6ca",
@@ -21,6 +21,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-44cd5e03d30c85b3",
       "EV-6f092cfc7a064d64"
     ],
     "viewpointIds": [],
@@ -29,10 +30,11 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-07-16",
-    "lastSeen": "2026-07-17",
+    "lastSeen": "2026-07-19",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-44cd5e03d30c85b3",
         "EV-6f092cfc7a064d64"
       ],
       "deployments": [],
@@ -43,6 +45,21 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-44cd5e03d30c85b3",
+        "dataDate": "2026-07-19",
+        "date": "2026-07-16",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Elorian AI 如何实现 3 亿美元种子轮前估值",
+        "displayTags": [],
+        "entityIds": [
+          "EN-e647c818ac38b6ca"
+        ]
+      },
       {
         "id": "EV-6f092cfc7a064d64",
         "dataDate": "2026-07-17",

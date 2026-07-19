@@ -1,0 +1,33 @@
+{
+  "date": "2026-07-19",
+  "generated_at": "2026-07-19T13:47:35+08:00",
+  "workflow_mode": "business_signals_pr",
+  "outcomes": {
+    "monitor": "success",
+    "raw_pool_gate": "success",
+    "data_center_v4_build": "success",
+    "data_center_v4_gate": "success",
+    "data_center_v4_materialize": "failure",
+    "asset_generation": "skipped",
+    "pool_to_card_dedupe_gate": "skipped",
+    "card_editorial_gate": "skipped",
+    "trend_candidate_decision": "skipped",
+    "business_frontstage_data": "skipped",
+    "business_frontstage_gate": "skipped",
+    "operations_data_sync": "skipped",
+    "pre_commit_gate": "skipped"
+  },
+  "assets": {
+    "raw_candidates": "present",
+    "source_raw_artifacts": "present",
+    "raw_originals": "present",
+    "pool_candidates": "present",
+    "data_center_v4_bundle": "present",
+    "business_signals": "missing",
+    "signal_card_files": 0,
+    "v3_data_observation_desk": "present",
+    "industry_reports_frontstage": "present",
+    "intelligence_graph_index": "present",
+    "operations_dashboard_data": "present"
+  }
+}

@@ -174,6 +174,7 @@ const ORGANIZATION_ALIASES = [
   ["ByteDance", ["ByteDance", "字节跳动", "豆包"]],
   ["C3 AI", ["C3 AI"]],
   ["Canva", ["Canva"]],
+  ["Centers for Medicare & Medicaid Services", ["Centers for Medicare and Medicaid Services", "CMS"]],
   ["Crusoe", ["Crusoe"]],
   ["Databricks", ["Databricks"]],
   ["DeepSeek", ["DeepSeek"]],
@@ -205,9 +206,11 @@ const ORGANIZATION_ALIASES = [
   ["Mitsubishi Heavy Industries", ["Mitsubishi Heavy Industries", "三菱重工"]],
   ["Nokia", ["Nokia", "诺基亚"]],
   ["Nubia", ["Nubia", "努比亚"]],
+  ["NIO", ["NIO", "蔚来"]],
   ["NVIDIA", ["NVIDIA", "Nvidia", "英伟达"]],
   ["Noetra", ["Noetra"]],
   ["OpenAI", ["OpenAI", "GPT-5", "GPT-5.6", "Codex"]],
+  ["OpenRouter", ["OpenRouter"]],
   ["OPPO", ["OPPO"]],
   ["Orthogonal", ["Orthogonal"]],
   ["PixVerse", ["PixVerse"]],
@@ -222,6 +225,7 @@ const ORGANIZATION_ALIASES = [
   ["Samsung SDS", ["Samsung SDS"]],
   ["ServiceNow", ["ServiceNow"]],
   ["SGLang", ["SGLang"]],
+  ["Shenji", ["神玑公司", "神玑"]],
   ["Shell", ["Shell"]],
   ["Sierra", ["Sierra"]],
   ["Soofi", ["Soofi"]],
@@ -232,6 +236,7 @@ const ORGANIZATION_ALIASES = [
   ["Teamily AI", ["Teamily AI"]],
   ["Stellantis", ["Stellantis"]],
   ["StepFun", ["StepFun", "阶跃星辰", "阶跃"]],
+  ["Sugon", ["Sugon", "曙光"]],
   ["Sunrun", ["Sunrun"]],
   ["Tencent", ["Tencent", "腾讯", "腾讯混元"]],
   ["Thinking Machines Lab", ["Thinking Machines Lab", "TML", "Inkling"]],
@@ -368,7 +373,7 @@ function findEventRule(title, lead = "") {
 function eventStatus(title, lead, eventType = "") {
   const text = `${title}\n${lead}`;
   if (WITHDRAWN.test(text)) return "withdrawn";
-  if (RUMOR.test(title)) return "rumored";
+  if (RUMOR.test(text)) return "rumored";
   if (DISPUTE.test(title) || (eventType === "funding" && DISPUTE.test(lead))) return "disputed";
   if (/\bRoblox\b/iu.test(text) && /\bBuild\b/iu.test(text) && PLANNED.test(text)) return "planned";
   if (/\b1Password\b/iu.test(text) && /\bClaude\b/iu.test(text)) return "announced";

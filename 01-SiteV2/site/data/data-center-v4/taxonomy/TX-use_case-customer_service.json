@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T06:46:16.044Z",
-    "latestDataDate": "2026-07-18",
-    "currentDate": "2026-07-18",
-    "eventCount": 1250,
-    "quarantinedEventCount": 11
+    "generatedAt": "2026-07-19T06:40:36.822Z",
+    "latestDataDate": "2026-07-19",
+    "currentDate": "2026-07-19",
+    "eventCount": 1286,
+    "quarantinedEventCount": 12
   },
   "node": {
     "id": "TX-use_case-customer_service",
@@ -25,6 +25,7 @@
       "EV-3dd0912fae720df7",
       "EV-e869f17214557633",
       "EV-8abf5adc3e72fbb8",
+      "EV-2c476cb7969f399b",
       "EV-3fb492fb45980541",
       "EV-05a87b578967c83e",
       "EV-78277c678f01e540",
@@ -63,11 +64,12 @@
       "FDE-4f2a8cb5ce476228",
       "FDE-3e499215265a81d5",
       "FDE-d08fed45110ab44b",
+      "FDE-cc943789fb1c3f3d",
       "FDE-3665b073634d4b9d"
     ],
     "hardwareIds": [],
     "firstSeen": "2026-03-04",
-    "lastSeen": "2026-07-18"
+    "lastSeen": "2026-07-19"
   },
   "events": [
     {
@@ -738,6 +740,113 @@
       "publisher": "thenextweb.com"
     },
     {
+      "id": "EV-2c476cb7969f399b",
+      "dataDate": "2026-07-19",
+      "date": "2026-03-19",
+      "updatedDate": "2026-07-19",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "前线部署工程师证明AI让技术岗位更人性化 - Salesforce",
+      "originalTitle": "Forward Deployed Engineers Are Proving AI Makes Tech Jobs More Human - Salesforce",
+      "subject": "Forward",
+      "action": "Deployed",
+      "object": "Engineers Are Proving AI Makes Tech Jobs More Human - Salesforce",
+      "metrics": [
+        "800%",
+        "40%",
+        "50%",
+        "70%"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "customer_service",
+            "dimensionName": "应用场景",
+            "name": "客户服务"
+          }
+        ],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "financial_services",
+            "dimensionName": "行业",
+            "name": "金融服务"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "customer_service",
+          "dimensionName": "应用场景",
+          "name": "客户服务"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "financial_services",
+          "dimensionName": "行业",
+          "name": "金融服务"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "customer_service",
+          "dimensionName": "应用场景",
+          "name": "客户服务"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "financial_services",
+          "dimensionName": "行业",
+          "name": "金融服务"
+        }
+      ],
+      "entityIds": [
+        "EN-3ccbd9105a45d8fc",
+        "EN-b0532e1af75cc4ab"
+      ],
+      "entityNames": [
+        "Salesforce",
+        "Rime"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://salesforce.com/news/stories/forward-deployed-engineers-making-ai-jobs-more-human",
+      "publisher": "salesforce.com"
+    },
+    {
       "id": "EV-3fb492fb45980541",
       "dataDate": "2026-07-10",
       "date": "2026-07-10",
@@ -1393,6 +1502,7 @@
         "EV-ec711aed6721bb30",
         "EV-d756f05478303505",
         "EV-06b294f255c0087e",
+        "EV-2c476cb7969f399b",
         "EV-06487af6e98ea491",
         "EV-bb9ba11acf104db1",
         "EV-e7b7df43970f7e2c",
@@ -1409,6 +1519,7 @@
         "EV-0ad758b04b9b5313",
         "EV-591542ccc2de5be8",
         "EV-dab4d3f2059e8880",
+        "EV-aaaa21ae510bc87e",
         "EV-2f56b99f72ad6c4f",
         "EV-33e7429a7bc94840",
         "EV-cf0551afe16562ef",
@@ -1417,6 +1528,7 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-financial_services",
         "TX-industry-retail_ecommerce",
         "TX-technology-code_generation",
         "TX-use_case-customer_service",
@@ -1428,9 +1540,11 @@
         "TX-technology-multimodal",
         "TX-technology-video_generation"
       ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-04-02",
-      "lastSeen": "2026-07-16"
+      "relatedEntityIds": [
+        "EN-3ccbd9105a45d8fc"
+      ],
+      "firstSeen": "2026-03-11",
+      "lastSeen": "2026-07-19"
     },
     {
       "id": "EN-dca6ec9510fc0176",
@@ -1481,6 +1595,7 @@
         "EV-d9270ae7b862212b",
         "EV-3f8f6a578be79988",
         "EV-8b73e88ffd3569b2",
+        "EV-2c476cb7969f399b",
         "EV-30d7f1c5dc8ea464",
         "EV-9009adaed650ddde",
         "EV-11a8e196deb21300",
@@ -1496,9 +1611,11 @@
         "TX-use_case-customer_service",
         "TX-use_case-software_development"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-b0532e1af75cc4ab"
+      ],
       "firstSeen": "2023-03-21",
-      "lastSeen": "2026-07-15"
+      "lastSeen": "2026-07-19"
     },
     {
       "id": "EN-8147e6fed86d42c1",
@@ -1572,6 +1689,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-e3792591090281c6",
         "EV-f6a72cddbda748b3",
         "EV-4eaf3aabecae6016",
         "EV-2dff32c1b6f813e4",
@@ -1624,7 +1742,9 @@
         "EV-c5643983538c6513",
         "EV-b85139b8fba1a5c5",
         "EV-c4303801ea8c54dc",
+        "EV-0b7f11c0c18b8bf4",
         "EV-8b0f056571d68269",
+        "EV-30ba1a24f74ccc6d",
         "EV-b4eb99a878be9bb2",
         "EV-de1816770e8a2037",
         "EV-cfb7c4b4b765f53b",
@@ -1702,6 +1822,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-technology",
         "TX-technology-agentic_execution",
         "TX-industry-financial_services",
         "TX-use_case-enterprise_operations",
@@ -1717,7 +1838,6 @@
         "TX-use_case-cybersecurity",
         "TX-use_case-data_analysis",
         "TX-technology-on_device",
-        "TX-industry-technology",
         "TX-technology-embodied_ai",
         "TX-technology-fine_tuning",
         "TX-technology-open_weights",
@@ -1736,7 +1856,7 @@
         "EN-c70eca6b0f88f44d"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-18"
+      "lastSeen": "2026-07-19"
     },
     {
       "id": "EN-9fbf261b62c1d7c0",
@@ -1773,6 +1893,7 @@
         "EV-58c1cc3749294649",
         "EV-c0a65877001ed413",
         "EV-bd508dbe4205774f",
+        "EV-118317b7f92e5e16",
         "EV-c4723445b11bb275",
         "EV-7963d8c78531f12d",
         "EV-7c899d5decafc42f",
@@ -1822,6 +1943,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-technology",
         "TX-technology-agentic_execution",
         "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
@@ -1833,7 +1955,6 @@
         "TX-use_case-software_development",
         "TX-use_case-cybersecurity",
         "TX-technology-on_device",
-        "TX-industry-technology",
         "TX-technology-model_context_protocol",
         "TX-industry-telecommunications",
         "TX-technology-reasoning",
@@ -1852,7 +1973,7 @@
         "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-07-18"
+      "lastSeen": "2026-07-19"
     },
     {
       "id": "EN-28d0bd981118a907",
@@ -1870,10 +1991,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-technology",
         "TX-technology-agentic_execution",
         "TX-use_case-customer_service",
-        "TX-industry-healthcare_life_sciences",
-        "TX-industry-technology"
+        "TX-industry-healthcare_life_sciences"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-20",
@@ -1983,6 +2104,7 @@
         "EV-3fbfb89a10efd42f",
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
+        "EV-3c4d6d70ac763885",
         "EV-83a8ac8a2554b60c",
         "EV-a68475d82ec939b5",
         "EV-c237f5dc53f0a923",
@@ -2128,6 +2250,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-technology",
         "TX-technology-agentic_execution",
         "TX-industry-financial_services",
         "TX-use_case-enterprise_operations",
@@ -2143,7 +2266,6 @@
         "TX-technology-mixture_of_experts",
         "TX-use_case-cybersecurity",
         "TX-use_case-data_analysis",
-        "TX-industry-technology",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-embodied_ai",
         "TX-technology-fine_tuning",
@@ -2181,7 +2303,7 @@
         "EN-b9db1ff13ae8496e",
         "EN-7b8cb35de7ad047a"
       ],
-      "firstSeen": "2026-03-13",
+      "firstSeen": "2026-02-19",
       "lastSeen": "2026-07-19"
     },
     {
@@ -2678,6 +2800,57 @@
         "EN-28d0bd981118a907",
         "EN-9fbf261b62c1d7c0",
         "EN-7d3194f79e645c42"
+      ]
+    },
+    {
+      "id": "FDE-cc943789fb1c3f3d",
+      "eventId": "EV-2c476cb7969f399b",
+      "dataDate": "2026-07-19",
+      "date": "2026-03-19",
+      "title": "前线部署工程师证明AI让技术岗位更人性化 - Salesforce",
+      "stage": "completed",
+      "stageLabel": "已完成",
+      "customer": "Salesforce",
+      "vendor": "Rime",
+      "industry": "未披露",
+      "useCase": "Engineers Are Proving AI Makes Tech Jobs More Human - Salesforce",
+      "reportedNeed": "companies adopt AI agents at breakneck speed but need expertise to actually deploy them",
+      "deliveryComponents": [
+        "How Forward Deployed Engineers Are Proving AI Makes Tech Jobs More Human",
+        "Sarah Khalid was three years into her career as a Success Architect at Salesforce when her team restructured and she found herself in a role she hadn’t planned on, couldn’t fully define, and wasn’t sure existed yet. “I didn’t plan on becoming an FDE,” she said. “It’s something that I grew into.” Forward deployed engineers (FDEs) saw an 800% spike in job postings between January and September 2025, according to an analysis by Indeed and the Financial Times, as companies adopt AI agents at breakneck speed but need expertise to actually deploy them. FDEs exist to close that gap. They code, consult, and translate agentic AI into working solutions, often while sitting side by side with the customer. Similar to when Harvard Business Review deemed data scientist “the sexiest job of the 21st century” due to a rare combination of technical chops and business savvy, both roles prove that transformative technology doesn’t eliminate jobs. It creates entirely new ones we couldn’t have imagined a few years prior. Now history is repeating itself, just faster. How do I know when AI is wrong, when AI is right, how it can solve the right problem?",
+        "” Around 40% to 50% of FDE movement at Salesforce is internal. The company built a six-week onboarding program in September 2025 with two weeks of focused technical training and four weeks on the job to bridge the gap. For anyone eyeing the role from the outside, Hickin’s advice is simple: “Become the AI expert in the job that you’re in. Experiment with the tool, figure out how it can solve problems in your team. Then you become a kind of quasi-FDE within your own job.” Related How We Cut Inference Spend by Right-Sizing Our Models 8 min read Slackbot Can Now Do Anything Salesforce Can. Just Ask. Trust builder AI has already changed what the job demands internally. FDEs once spent up to 40% of their time on administrative preparation, including summarizing meetings, pulling account histories, and drafting status updates. That’s largely automated now. “Now they can spend their time on hacking, building, figuring out the customer issue,” Hickin said. “Human jobs become more human.” Khalid explained what this looks like in practice: She once worked with a tech customer whose AI agent was targeting a 70% deflection rate for their customer service function. That figure became the North Star to add functionality, optimize, and move the needle. When they hit it, the customer expanded to a second use case. She also described a time when an insurance company demanded accuracy and response time targets. Khalid admitted that the technical side was hard. It required experimenting with different LLM models and prompt engineering on the back end. But what nearly derailed the engagement had nothing to do with code. This company, like many others, was experimenting with a variety of solutions. So she said, “It also required a lot of nontechnical skills: how to deal with that customer, how to make them not want to give up on Agentforce. And make them trust.” That account didn’t turn on a technical breakthrough. It turned on rebuilding confidence. “There’s not much coding involved,” Khalid reflected. “It’s actually more judgment, trust, and communication skills. And not something that AI can replace.” Work, redefined Back in 2012, the data scientist role looked like something only a narrow slice of specialists could do. A decade later, data literacy had become a baseline expectation across job functions. Hickin sees the FDE role charting the same arc. It won’t be a specialty forever but a leading indicator of where technical work is heading: closer to the customer, more dependent on judgment, and more human than the job title implies. Khalid, reflecting on the FDE acronym, has her own proposal: future defining engineers. “We’re not just defining the AI part,” she said. “We’re also defining how this role itself will shape out in the future.” It’s clever. And after what happened with data science, it’s hard to argue with. Go Deeper: Read why today’s hottest role is the forward deployed engineer Learn how Agentforce inspired three FDEs to return to Salesforce Learn how the role of the developer has changed in the agentic AI era",
+        "How Forward Deployed Engineers Are Proving AI Makes Tech Jobs More Human"
+      ],
+      "outcomes": [],
+      "metrics": [
+        "800%",
+        "40%",
+        "50%",
+        "40%",
+        "70%"
+      ],
+      "undisclosedFields": [
+        "industry",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "sourceUrl": "https://salesforce.com/news/stories/forward-deployed-engineers-making-ai-jobs-more-human",
+      "entityIds": [
+        "EN-3ccbd9105a45d8fc",
+        "EN-b0532e1af75cc4ab"
       ]
     },
     {

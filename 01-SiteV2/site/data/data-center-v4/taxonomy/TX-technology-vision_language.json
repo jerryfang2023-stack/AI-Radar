@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T06:46:16.044Z",
-    "latestDataDate": "2026-07-18",
-    "currentDate": "2026-07-18",
-    "eventCount": 1250,
-    "quarantinedEventCount": 11
+    "generatedAt": "2026-07-19T06:40:36.822Z",
+    "latestDataDate": "2026-07-19",
+    "currentDate": "2026-07-19",
+    "eventCount": 1286,
+    "quarantinedEventCount": 12
   },
   "node": {
     "id": "TX-technology-vision_language",
@@ -608,6 +608,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-44cd5e03d30c85b3",
         "EV-6f092cfc7a064d64"
       ],
       "viewpointIds": [],
@@ -616,7 +617,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-16",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-07-19"
     },
     {
       "id": "EN-2b6e51bec93e86c1",
@@ -707,7 +708,7 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "腾讯混元"
+        "腾讯"
       ],
       "verificationStatus": "verified",
       "datasetScopes": [
@@ -718,6 +719,7 @@
         "EV-427081ec574b43bb",
         "EV-acaf06b262d9c3db",
         "EV-27b69ea604475b72",
+        "EV-da9bb2c98c1ce8cd",
         "EV-afcd5426f5c01dc7",
         "EV-619e33abf3f9bfbf",
         "EV-be2f6bfcad93c42f",
@@ -750,9 +752,11 @@
         "TX-technology-multimodal",
         "TX-industry-media_entertainment"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-ea3bd73e2b506e00"
+      ],
       "firstSeen": "2026-05-18",
-      "lastSeen": "2026-07-18"
+      "lastSeen": "2026-07-19"
     },
     {
       "id": "EN-f0da91960830b394",
@@ -813,8 +817,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-vision_language",
         "TX-industry-technology",
+        "TX-technology-vision_language",
         "TX-technology-multimodal"
       ],
       "relatedEntityIds": [],
@@ -915,7 +919,8 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "Kimi"
+        "Kimi",
+        "月之暗面"
       ],
       "verificationStatus": "verified",
       "datasetScopes": [
@@ -936,6 +941,7 @@
         "EV-e878e56967902718",
         "EV-e9a86c47da229331",
         "EV-773ffcc6e1df56fa",
+        "EV-94e1f1a5cea15eae",
         "EV-74b965de27bc0515"
       ],
       "viewpointIds": [],
@@ -947,7 +953,6 @@
         "TX-use_case-software_development",
         "TX-technology-long_context",
         "TX-technology-retrieval_augmented_generation",
-        "TX-technology-open_weights",
         "TX-technology-multimodal"
       ],
       "relatedEntityIds": [
@@ -958,7 +963,7 @@
         "EN-b57c95289680078c"
       ],
       "firstSeen": "2026-05-19",
-      "lastSeen": "2026-07-18"
+      "lastSeen": "2026-07-19"
     },
     {
       "id": "EN-d831f1170590ddb1",

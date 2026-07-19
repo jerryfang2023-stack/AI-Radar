@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T06:46:16.044Z",
-    "latestDataDate": "2026-07-18",
-    "currentDate": "2026-07-18",
-    "eventCount": 1250,
-    "quarantinedEventCount": 11
+    "generatedAt": "2026-07-19T06:40:36.822Z",
+    "latestDataDate": "2026-07-19",
+    "currentDate": "2026-07-19",
+    "eventCount": 1286,
+    "quarantinedEventCount": 12
   },
   "entity": {
     "id": "EN-b5251b35f15bedc4",
@@ -16,7 +16,8 @@
     "entityType": "organization_candidate",
     "typeLabel": "公司与机构",
     "aliases": [
-      "Kimi"
+      "Kimi",
+      "月之暗面"
     ],
     "verificationStatus": "verified",
     "datasetScopes": [
@@ -37,6 +38,7 @@
       "EV-e878e56967902718",
       "EV-e9a86c47da229331",
       "EV-773ffcc6e1df56fa",
+      "EV-94e1f1a5cea15eae",
       "EV-74b965de27bc0515"
     ],
     "viewpointIds": [],
@@ -48,7 +50,6 @@
       "TX-use_case-software_development",
       "TX-technology-long_context",
       "TX-technology-retrieval_augmented_generation",
-      "TX-technology-open_weights",
       "TX-technology-multimodal"
     ],
     "relatedEntityIds": [
@@ -59,7 +60,7 @@
       "EN-b57c95289680078c"
     ],
     "firstSeen": "2026-05-19",
-    "lastSeen": "2026-07-18",
+    "lastSeen": "2026-07-19",
     "relationIds": [
       "REL2-89beb40b356699d5",
       "REL2-3396751d47836032",
@@ -92,53 +93,60 @@
       "hardware": [],
       "organizationPeople": [],
       "other": [
+        "EV-94e1f1a5cea15eae",
         "EV-74b965de27bc0515"
       ]
     },
     "timeline": [
       {
         "id": "EV-0d5a32aca724d30e",
-        "dataDate": "2026-07-18",
+        "dataDate": "2026-07-19",
         "date": "2026-07-18",
         "eventType": "model_release",
         "eventTypeLabel": "模型发布",
         "eventGroup": "模型、产品与服务",
-        "status": "announced",
-        "statusLabel": "已公布",
-        "title": "如同Deepseek，中国的Kimi K3正迫使西方AI实验室质疑其算力优势",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Moonshot AI 发布开源模型 Kimi K3，性能接近前沿闭源模型",
         "displayTags": [
           {
-            "dimensionId": "technology",
-            "dimensionName": "技术",
-            "id": "agentic_execution",
-            "name": "智能体"
-          },
-          {
-            "dimensionId": "technology",
-            "dimensionName": "技术",
-            "id": "multimodal",
-            "name": "多模态"
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
           },
           {
             "dimensionId": "technology",
             "dimensionName": "技术",
             "id": "long_context",
             "name": "长上下文"
-          },
-          {
-            "dimensionId": "technology",
-            "dimensionName": "技术",
-            "id": "open_weights",
-            "name": "开放权重"
           }
         ],
         "entityIds": [
           "EN-b5251b35f15bedc4",
+          "EN-8d4321d936320802",
           "EN-6f7ac1823da81d2e",
           "EN-c70eca6b0f88f44d",
           "EN-607964040e4b62e0",
-          "EN-6749675d80a1faa7",
-          "EN-bbdefa2950f49882"
+          "EN-481243d2f2a235c1"
+        ]
+      },
+      {
+        "id": "EV-94e1f1a5cea15eae",
+        "dataDate": "2026-07-19",
+        "date": "2026-07-19",
+        "eventType": "policy_regulation",
+        "eventTypeLabel": "政策监管",
+        "eventGroup": "组织、政策与法律",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Kimi K3 与 Claude 对比：质量相当但价格更低，美国AI政策成败笔",
+        "displayTags": [],
+        "entityIds": [
+          "EN-aabd1a8a869c34a4",
+          "EN-b5251b35f15bedc4",
+          "EN-fbfb7d006a7fa8df",
+          "EN-c70eca6b0f88f44d"
         ]
       },
       {
@@ -551,16 +559,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-technology-long_context",
-        "TX-technology-open_weights",
-        "TX-technology-multimodal"
+        "TX-technology-long_context"
       ],
       "relatedEntityIds": [
         "EN-b5251b35f15bedc4"
       ],
       "firstSeen": "2026-07-18",
-      "lastSeen": "2026-07-18"
+      "lastSeen": "2026-07-19"
     },
     {
       "id": "EN-3a7bd3e2360a3d29",
@@ -584,6 +589,7 @@
         "EV-d116b0aa5bb292e2",
         "EV-e857f9d1c1478c70",
         "EV-fd21441fb6e143c3",
+        "EV-118317b7f92e5e16",
         "EV-c237f5dc53f0a923",
         "EV-3a74e4995b590507",
         "EV-8a9b12665a3e40a0",
@@ -676,7 +682,7 @@
         "EN-40e307d789f77264"
       ],
       "firstSeen": "2026-06-04",
-      "lastSeen": "2026-07-18"
+      "lastSeen": "2026-07-19"
     },
     {
       "id": "EN-2cfed21b7a971267",
@@ -756,15 +762,20 @@
       "object_type": "entity",
       "event_id": "EV-0d5a32aca724d30e",
       "claim_refs": [
-        "CL-9a4a048ca57c3254",
-        "CL-232ddb28c94c6bcb",
-        "CL-99d9615389cc3245"
+        "CL-44f871fad83695ce",
+        "CL-561ff9d3dc8d310f",
+        "CL-c6c54b6959090897",
+        "CL-89a713007afade99",
+        "CL-ec32da56345b5787",
+        "CL-a7d6cf2528d98e6b",
+        "CL-a475840b54657a27",
+        "CL-9f84d0bc2babe6db"
       ],
       "source_refs": [
-        "SA-e9a4a692bce17aa6",
-        "SA-a252235ecaad9689"
+        "SA-a4fbb5b366d459c3",
+        "SA-b07171b9217bcf4f"
       ],
-      "data_date": "2026-07-18",
+      "data_date": "2026-07-19",
       "status": "verified"
     },
     {
@@ -944,6 +955,7 @@
         "EV-c8928410f6c145eb",
         "EV-c4303801ea8c54dc",
         "EV-23ae55daa341be06",
+        "EV-da9bb2c98c1ce8cd",
         "EV-b726a9cda7beae64",
         "EV-4e5c6267b3237dac",
         "EV-0a96b17e1977ae89",
@@ -977,6 +989,7 @@
         "EV-01df8e489a34893b",
         "EV-afd0332ad8f5f05b",
         "EV-029d34e296397775",
+        "EV-2c476cb7969f399b",
         "EV-0cce336f720bb7b7",
         "EV-36a9e4e908249381",
         "EV-02686922dd82c4aa",
@@ -1003,7 +1016,11 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
-        "EV-0d5a32aca724d30e",
+        "EV-19bcfc6d7c1612cb",
+        "EV-ee489212ff9135a4",
+        "EV-25933b8f123f92be",
+        "EV-82b39e10391d0f3c",
+        "EV-ef6c18262a290256",
         "EV-950237c6b3eb6343",
         "EV-82e68f59d8584e4e",
         "EV-a2dfe20983c8d6e4",
@@ -1152,6 +1169,7 @@
         "EV-7ff24ae733821395",
         "EV-c52947e480fa3347",
         "EV-cf496e0f8a56ca97",
+        "EV-aaaa21ae510bc87e",
         "EV-6566d065f5500a85",
         "EV-34929bdd016dc8d6",
         "EV-70fd0c4e482a646e",
@@ -1324,9 +1342,16 @@
         "EN-de5a1adf4fedcce1",
         "EN-19e41212c0556603",
         "EN-dca6ec9510fc0176",
-        "EN-6f7ac1823da81d2e",
-        "EN-607964040e4b62e0",
-        "EN-6749675d80a1faa7",
+        "EN-2abf8289b2f2113f",
+        "EN-91901356a63794df",
+        "EN-be548deba4a093d7",
+        "EN-92ec1124e1de6f54",
+        "EN-8d57f84bd1847b24",
+        "EN-e9b67bdfb6ae6a2e",
+        "EN-985e1a7c957148f9",
+        "EN-0a64d5a41e885455",
+        "EN-8b0aea25404131b5",
+        "EN-0e3c625f3930d7b7",
         "EN-aa15d891a32a51b8",
         "EN-8395dc051feafc4c",
         "EN-eaaf22a384c26014",
@@ -1357,6 +1382,7 @@
         "EN-26e4951af4490c21",
         "EN-7dd7122ad9bf240f",
         "EN-95b0632f1b292fa7",
+        "EN-6f7ac1823da81d2e",
         "EN-b644c0a9d493976a",
         "EN-636fa9664f878a4d",
         "EN-6c87e5496f592f3c",
@@ -1545,6 +1571,7 @@
         "EN-4d803c223cec4cc4",
         "EN-4634cbf463651816",
         "EN-467f67b2ed0f9a54",
+        "EN-b7bea343b08cce2c",
         "EN-1af769ad0ad5907c",
         "EN-4a639cb888a15d75",
         "EN-65b3aa2f527deeef",
@@ -1580,6 +1607,7 @@
         "FDE-d693e68f89adf86a",
         "FDE-ab9c514225686f60",
         "FDE-226f304c9cf13a74",
+        "FDE-cc943789fb1c3f3d",
         "FDE-602624cf072c079d",
         "FDE-467e0bd030c922df",
         "FDE-a80a4db8880a9b54",
@@ -1603,7 +1631,7 @@
         "HW-25ce41fab12d9ef2"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-18"
+      "lastSeen": "2026-07-19"
     },
     {
       "id": "TX-industry-financial_services",
@@ -1625,6 +1653,7 @@
         "EV-d1e2a7c6d314612c",
         "EV-33717672cb5e8004",
         "EV-83b2e8f7fe679bc3",
+        "EV-2c476cb7969f399b",
         "EV-2c87c8ea47cbd1b6",
         "EV-97747aee0cafd9f3",
         "EV-bad301e14b034fbd",
@@ -1651,6 +1680,8 @@
         "EN-c70eca6b0f88f44d",
         "EN-5e757c7fc575c41e",
         "EN-bc8a00f7f6fb535f",
+        "EN-3ccbd9105a45d8fc",
+        "EN-b0532e1af75cc4ab",
         "EN-4d748ebd71af03a7",
         "EN-c3e4cc183d345262",
         "EN-9b6ea48b511ffd60",
@@ -1661,19 +1692,19 @@
         "EN-a4eee620f5a081bd",
         "EN-18b4bbfd60f4137e",
         "EN-6eedfb906b1652fb",
-        "EN-3ccbd9105a45d8fc",
         "EN-32e83e92d45d71f6"
       ],
       "fdeIds": [
         "FDE-e1b2683e8d017358",
         "FDE-0ee0fe3baa3f1364",
         "FDE-d0a39c8df546833a",
+        "FDE-cc943789fb1c3f3d",
         "FDE-560b710961006374",
         "FDE-ae4c44cd0de9d48a"
       ],
       "hardwareIds": [],
-      "firstSeen": "2026-05-22",
-      "lastSeen": "2026-07-18"
+      "firstSeen": "2026-03-19",
+      "lastSeen": "2026-07-19"
     },
     {
       "id": "TX-technology-vision_language",
@@ -1946,8 +1977,7 @@
         "EN-b5251b35f15bedc4",
         "EN-6f7ac1823da81d2e",
         "EN-607964040e4b62e0",
-        "EN-6749675d80a1faa7",
-        "EN-bbdefa2950f49882",
+        "EN-481243d2f2a235c1",
         "EN-f3cfedbe8428c9f7",
         "EN-c04bd5ebd10ab696",
         "EN-50ba7ff15827787b",
@@ -1970,7 +2000,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-06-12",
-      "lastSeen": "2026-07-18"
+      "lastSeen": "2026-07-19"
     },
     {
       "id": "TX-technology-retrieval_augmented_generation",
@@ -2024,54 +2054,6 @@
       "lastSeen": "2026-07-18"
     },
     {
-      "id": "TX-technology-open_weights",
-      "name": "开放权重",
-      "nodeType": "technology",
-      "typeLabel": "技术",
-      "valueId": "open_weights",
-      "eventIds": [
-        "EV-1abf0d076d30ec6d",
-        "EV-0d5a32aca724d30e",
-        "EV-b84035029a63e52e",
-        "EV-3028dfadf94c8f4c",
-        "EV-a06011da69abcc3d",
-        "EV-e2da1aafabb3e09c",
-        "EV-2258329f33d413cf",
-        "EV-86537be17d50ff20"
-      ],
-      "entityIds": [
-        "EN-240389f4b730bad4",
-        "EN-7d3194f79e645c42",
-        "EN-c70eca6b0f88f44d",
-        "EN-b5251b35f15bedc4",
-        "EN-6f7ac1823da81d2e",
-        "EN-607964040e4b62e0",
-        "EN-6749675d80a1faa7",
-        "EN-bbdefa2950f49882",
-        "EN-d41ebd9f02722fc8",
-        "EN-b0532e1af75cc4ab",
-        "EN-96eebba49dbbf422",
-        "EN-10556ee2cee94c72",
-        "EN-f8c237773fe24a98",
-        "EN-2b5e92d1908d42f6",
-        "EN-8d4321d936320802",
-        "EN-3ae50afab3e392b8",
-        "EN-8395dc051feafc4c",
-        "EN-b3e3bce83d29e787",
-        "EN-8950d72f381130ac",
-        "EN-049e948563e03e97",
-        "EN-f7a386a451b79627",
-        "EN-bc1fc5140040180e",
-        "EN-12ab68e37d104d27",
-        "EN-c608c4787821de1b",
-        "EN-9c8ae69b84f21a2e"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [],
-      "firstSeen": "2026-05-23",
-      "lastSeen": "2026-07-18"
-    },
-    {
       "id": "TX-technology-multimodal",
       "name": "多模态",
       "nodeType": "technology",
@@ -2082,7 +2064,7 @@
         "EV-a9810b47e0408a05",
         "EV-26d2874c6ce028d6",
         "EV-fd21441fb6e143c3",
-        "EV-0d5a32aca724d30e",
+        "EV-ee489212ff9135a4",
         "EV-ba89f9414be0b041",
         "EV-6b51b1b6fe22c540",
         "EV-70e3f88cb06a856c",
@@ -2117,11 +2099,8 @@
         "EN-3a7bd3e2360a3d29",
         "EN-50537dab76505dfc",
         "EN-b5251b35f15bedc4",
-        "EN-6f7ac1823da81d2e",
-        "EN-c70eca6b0f88f44d",
-        "EN-607964040e4b62e0",
-        "EN-6749675d80a1faa7",
-        "EN-bbdefa2950f49882",
+        "EN-be548deba4a093d7",
+        "EN-92ec1124e1de6f54",
         "EN-3c6d89173e6636d7",
         "EN-e3b1bf3dab957ffe",
         "EN-7d3194f79e645c42",
@@ -2131,6 +2110,7 @@
         "EN-522d3edeb64a7ca4",
         "EN-c608c4787821de1b",
         "EN-101a515191c6be9e",
+        "EN-6f7ac1823da81d2e",
         "EN-ea3bd73e2b506e00",
         "EN-e3863f813fe47240",
         "EN-96eebba49dbbf422",
@@ -2145,6 +2125,7 @@
         "EN-01f1074bb52ff605",
         "EN-7ed9c9e7c260ed06",
         "EN-0e008e2c06144ec8",
+        "EN-bbdefa2950f49882",
         "EN-e0bab6f6c58bfe4e",
         "EN-afe83c198e329ef2",
         "EN-1730144d4e269a62",
@@ -2168,7 +2149,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-07-18"
+      "lastSeen": "2026-07-19"
     }
   ],
   "fde": [],

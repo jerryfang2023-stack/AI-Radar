@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T06:46:16.044Z",
-    "latestDataDate": "2026-07-18",
-    "currentDate": "2026-07-18",
-    "eventCount": 1250,
-    "quarantinedEventCount": 11
+    "generatedAt": "2026-07-19T06:40:36.822Z",
+    "latestDataDate": "2026-07-19",
+    "currentDate": "2026-07-19",
+    "eventCount": 1286,
+    "quarantinedEventCount": 12
   },
   "node": {
     "id": "TX-use_case-data_analysis",
@@ -19,6 +19,7 @@
     "eventIds": [
       "EV-5f5f252c6a826599",
       "EV-b348083270be6c65",
+      "EV-19bcfc6d7c1612cb",
       "EV-daf1e21f8ccbf839",
       "EV-333851b077b606c8",
       "EV-c54172bf4e0c1068",
@@ -29,6 +30,8 @@
       "EN-122c0bebae950c77",
       "EN-96eebba49dbbf422",
       "EN-1c5483264189feef",
+      "EN-2abf8289b2f2113f",
+      "EN-91901356a63794df",
       "EN-a89151ba4b5ac0f2",
       "EN-f64f284f6c46b9b6",
       "EN-2e610cbc4b309296",
@@ -49,7 +52,7 @@
     "fdeIds": [],
     "hardwareIds": [],
     "firstSeen": "2026-06-07",
-    "lastSeen": "2026-07-17"
+    "lastSeen": "2026-07-19"
   },
   "events": [
     {
@@ -220,6 +223,132 @@
       "products": [],
       "sourceUrl": "https://globenewswire.com/news-release/2025/03/12/3041638/0/en/Onyx-Raises-10M-To-Help-Teams-Find-Knowledge-Faster-with-Open-Source-AI-Agents.html",
       "publisher": "globenewswire.com"
+    },
+    {
+      "id": "EV-19bcfc6d7c1612cb",
+      "dataDate": "2026-07-19",
+      "date": "2026-07-19",
+      "updatedDate": "2026-07-19",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "蚂蚁数科发布商业智能体超级工厂核心平台 Agentar2.0",
+      "originalTitle": "",
+      "subject": "蚂蚁数科",
+      "action": "发布",
+      "object": "商业智能体超级工厂核心平台 Agentar2.0",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "tool_use",
+          "name": "工具调用"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "data_analysis",
+            "dimensionName": "应用场景",
+            "name": "数据分析"
+          }
+        ],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "manufacturing",
+            "dimensionName": "行业",
+            "name": "制造业"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "tool_use",
+          "name": "工具调用"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "data_analysis",
+          "dimensionName": "应用场景",
+          "name": "数据分析"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "manufacturing",
+          "dimensionName": "行业",
+          "name": "制造业"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "data_analysis",
+          "dimensionName": "应用场景",
+          "name": "数据分析"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "tool_use",
+          "name": "工具调用"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "manufacturing",
+          "dimensionName": "行业",
+          "name": "制造业"
+        }
+      ],
+      "entityIds": [
+        "EN-2abf8289b2f2113f",
+        "EN-91901356a63794df"
+      ],
+      "entityNames": [
+        "蚂蚁数科",
+        "Agentar2.0"
+      ],
+      "productName": "Agentar2.0",
+      "products": [
+        {
+          "name": "Agentar2.0",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/978/684.htm",
+      "publisher": "IT之家（RSS）"
     },
     {
       "id": "EV-daf1e21f8ccbf839",
@@ -765,6 +894,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-e3792591090281c6",
         "EV-f6a72cddbda748b3",
         "EV-4eaf3aabecae6016",
         "EV-2dff32c1b6f813e4",
@@ -817,7 +947,9 @@
         "EV-c5643983538c6513",
         "EV-b85139b8fba1a5c5",
         "EV-c4303801ea8c54dc",
+        "EV-0b7f11c0c18b8bf4",
         "EV-8b0f056571d68269",
+        "EV-30ba1a24f74ccc6d",
         "EV-b4eb99a878be9bb2",
         "EV-de1816770e8a2037",
         "EV-cfb7c4b4b765f53b",
@@ -895,6 +1027,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-technology",
         "TX-technology-agentic_execution",
         "TX-industry-financial_services",
         "TX-use_case-enterprise_operations",
@@ -910,7 +1043,6 @@
         "TX-use_case-cybersecurity",
         "TX-use_case-data_analysis",
         "TX-technology-on_device",
-        "TX-industry-technology",
         "TX-technology-embodied_ai",
         "TX-technology-fine_tuning",
         "TX-technology-open_weights",
@@ -929,7 +1061,7 @@
         "EN-c70eca6b0f88f44d"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-18"
+      "lastSeen": "2026-07-19"
     },
     {
       "id": "EN-1c5483264189feef",
@@ -952,6 +1084,54 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-06-13",
       "lastSeen": "2026-06-13"
+    },
+    {
+      "id": "EN-2abf8289b2f2113f",
+      "name": "蚂蚁数科",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-19bcfc6d7c1612cb"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
+        "TX-use_case-data_analysis",
+        "TX-technology-tool_use"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-19",
+      "lastSeen": "2026-07-19"
+    },
+    {
+      "id": "EN-91901356a63794df",
+      "name": "Agentar2.0",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-19bcfc6d7c1612cb"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
+        "TX-use_case-data_analysis",
+        "TX-technology-tool_use"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-19",
+      "lastSeen": "2026-07-19"
     },
     {
       "id": "EN-a89151ba4b5ac0f2",
@@ -1053,8 +1233,7 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "阿里",
-        "阿里巴巴"
+        "阿里"
       ],
       "verificationStatus": "verified",
       "datasetScopes": [
@@ -1065,6 +1244,8 @@
         "EV-3d93d1da8cb64462",
         "EV-53f08daddd011dbb",
         "EV-e1a4bc40db4a9d8f",
+        "EV-215f938a46d0b126",
+        "EV-ac1b82f6e6261012",
         "EV-6fbbbfcdcec81df4",
         "EV-82e68f59d8584e4e",
         "EV-fd8ecce5de2f667d",
@@ -1109,12 +1290,13 @@
         "TX-technology-computer_use"
       ],
       "relatedEntityIds": [
+        "EN-5398729239788ca5",
         "EN-22a4c686e665e299",
         "EN-2daac3672aeafcbd",
         "EN-d65d81c60c0c47c4"
       ],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-07-18"
+      "lastSeen": "2026-07-19"
     },
     {
       "id": "EN-09c344df70df9660",
@@ -1173,6 +1355,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-215f938a46d0b126",
         "EV-c54172bf4e0c1068"
       ],
       "viewpointIds": [],
@@ -1185,7 +1368,7 @@
         "EN-16fe95bd48dbf178"
       ],
       "firstSeen": "2026-06-24",
-      "lastSeen": "2026-06-25"
+      "lastSeen": "2026-07-19"
     },
     {
       "id": "EN-16fe95bd48dbf178",
@@ -1269,6 +1452,7 @@
         "EV-8e01849c05b50355",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-eb97c388b3197c06",
         "EV-83a8ac8a2554b60c",
         "EV-0d5a32aca724d30e",
         "EV-debecca007e547d2",
@@ -1414,6 +1598,7 @@
         "EV-773ffcc6e1df56fa",
         "EV-2923b35d936d9f4e",
         "EV-cf496e0f8a56ca97",
+        "EV-94e1f1a5cea15eae",
         "EV-0990915063eb75a0",
         "EV-36a9b1b961f8e3b2",
         "EV-2d56dec8dfeb2b56",
@@ -1465,7 +1650,6 @@
         "TX-technology-fine_tuning",
         "TX-technology-open_weights",
         "TX-technology-model_context_protocol",
-        "TX-technology-multimodal",
         "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
         "TX-industry-government_public_sector",
@@ -1693,6 +1877,7 @@
         "EV-3fbfb89a10efd42f",
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
+        "EV-3c4d6d70ac763885",
         "EV-83a8ac8a2554b60c",
         "EV-a68475d82ec939b5",
         "EV-c237f5dc53f0a923",
@@ -1838,6 +2023,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-technology",
         "TX-technology-agentic_execution",
         "TX-industry-financial_services",
         "TX-use_case-enterprise_operations",
@@ -1853,7 +2039,6 @@
         "TX-technology-mixture_of_experts",
         "TX-use_case-cybersecurity",
         "TX-use_case-data_analysis",
-        "TX-industry-technology",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-embodied_ai",
         "TX-technology-fine_tuning",
@@ -1891,7 +2076,7 @@
         "EN-b9db1ff13ae8496e",
         "EN-7b8cb35de7ad047a"
       ],
-      "firstSeen": "2026-03-13",
+      "firstSeen": "2026-02-19",
       "lastSeen": "2026-07-19"
     },
     {

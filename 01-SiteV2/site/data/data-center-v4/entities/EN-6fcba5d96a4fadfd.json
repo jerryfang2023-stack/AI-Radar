@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T06:46:16.044Z",
-    "latestDataDate": "2026-07-18",
-    "currentDate": "2026-07-18",
-    "eventCount": 1250,
-    "quarantinedEventCount": 11
+    "generatedAt": "2026-07-19T06:40:36.822Z",
+    "latestDataDate": "2026-07-19",
+    "currentDate": "2026-07-19",
+    "eventCount": 1286,
+    "quarantinedEventCount": 12
   },
   "entity": {
     "id": "EN-6fcba5d96a4fadfd",
@@ -30,6 +30,7 @@
       "EV-31df816db86db282",
       "EV-e15ae1112294d59e",
       "EV-43301de739fe560e",
+      "EV-2351415291cb9fcd",
       "EV-e7b7df43970f7e2c",
       "EV-377094da492a03d2",
       "EV-ae736eb124d7163a",
@@ -55,11 +56,13 @@
       "TX-technology-tool_use"
     ],
     "relatedEntityIds": [
+      "EN-bac541b589c8a0d1",
       "EN-c4bc2d00a42f220f"
     ],
     "firstSeen": "2026-05-25",
-    "lastSeen": "2026-07-17",
+    "lastSeen": "2026-07-19",
     "relationIds": [
+      "REL2-fe33f6bf65f6dfab",
       "REL2-e0b4c492d7f56ad2"
     ],
     "groupedEventIds": {
@@ -76,6 +79,7 @@
       ],
       "partnerships": [],
       "productsServices": [
+        "EV-2351415291cb9fcd",
         "EV-d53cd33e8f541a65",
         "EV-e7b7df43970f7e2c",
         "EV-377094da492a03d2",
@@ -99,6 +103,29 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-2351415291cb9fcd",
+        "dataDate": "2026-07-19",
+        "date": "2026-07-18",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "马斯克透露 Grok 4.6 参数规模达 2 万亿，下周完成初始训练",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          }
+        ],
+        "entityIds": [
+          "EN-6fcba5d96a4fadfd",
+          "EN-bac541b589c8a0d1"
+        ]
+      },
       {
         "id": "EV-d53cd33e8f541a65",
         "dataDate": "2026-07-17",
@@ -586,6 +613,27 @@
   },
   "relatedEntities": [
     {
+      "id": "EN-bac541b589c8a0d1",
+      "name": "Grok 4.6",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-2351415291cb9fcd"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [],
+      "relatedEntityIds": [
+        "EN-6fcba5d96a4fadfd"
+      ],
+      "firstSeen": "2026-07-18",
+      "lastSeen": "2026-07-19"
+    },
+    {
       "id": "EN-c4bc2d00a42f220f",
       "name": "Grok Build",
       "entityType": "product_candidate",
@@ -612,6 +660,27 @@
     }
   ],
   "relationships": [
+    {
+      "relationship_id": "REL2-fe33f6bf65f6dfab",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-6fcba5d96a4fadfd",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-bac541b589c8a0d1",
+      "object_type": "entity",
+      "event_id": "EV-2351415291cb9fcd",
+      "claim_refs": [
+        "CL-2f11988570d1a12e",
+        "CL-46d15f814d30c360",
+        "CL-9a20738640be8455",
+        "CL-0cee176c13a479cb"
+      ],
+      "source_refs": [
+        "SA-5e076b3303d1b0cc"
+      ],
+      "data_date": "2026-07-19",
+      "status": "verified"
+    },
     {
       "relationship_id": "REL2-e0b4c492d7f56ad2",
       "relationship_version": "RELATION-V2.0",
@@ -731,6 +800,7 @@
         "EV-c8928410f6c145eb",
         "EV-c4303801ea8c54dc",
         "EV-23ae55daa341be06",
+        "EV-da9bb2c98c1ce8cd",
         "EV-b726a9cda7beae64",
         "EV-4e5c6267b3237dac",
         "EV-0a96b17e1977ae89",
@@ -764,6 +834,7 @@
         "EV-01df8e489a34893b",
         "EV-afd0332ad8f5f05b",
         "EV-029d34e296397775",
+        "EV-2c476cb7969f399b",
         "EV-0cce336f720bb7b7",
         "EV-36a9e4e908249381",
         "EV-02686922dd82c4aa",
@@ -790,7 +861,11 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
-        "EV-0d5a32aca724d30e",
+        "EV-19bcfc6d7c1612cb",
+        "EV-ee489212ff9135a4",
+        "EV-25933b8f123f92be",
+        "EV-82b39e10391d0f3c",
+        "EV-ef6c18262a290256",
         "EV-950237c6b3eb6343",
         "EV-82e68f59d8584e4e",
         "EV-a2dfe20983c8d6e4",
@@ -939,6 +1014,7 @@
         "EV-7ff24ae733821395",
         "EV-c52947e480fa3347",
         "EV-cf496e0f8a56ca97",
+        "EV-aaaa21ae510bc87e",
         "EV-6566d065f5500a85",
         "EV-34929bdd016dc8d6",
         "EV-70fd0c4e482a646e",
@@ -1111,9 +1187,16 @@
         "EN-de5a1adf4fedcce1",
         "EN-19e41212c0556603",
         "EN-dca6ec9510fc0176",
-        "EN-6f7ac1823da81d2e",
-        "EN-607964040e4b62e0",
-        "EN-6749675d80a1faa7",
+        "EN-2abf8289b2f2113f",
+        "EN-91901356a63794df",
+        "EN-be548deba4a093d7",
+        "EN-92ec1124e1de6f54",
+        "EN-8d57f84bd1847b24",
+        "EN-e9b67bdfb6ae6a2e",
+        "EN-985e1a7c957148f9",
+        "EN-0a64d5a41e885455",
+        "EN-8b0aea25404131b5",
+        "EN-0e3c625f3930d7b7",
         "EN-aa15d891a32a51b8",
         "EN-8395dc051feafc4c",
         "EN-eaaf22a384c26014",
@@ -1144,6 +1227,7 @@
         "EN-26e4951af4490c21",
         "EN-7dd7122ad9bf240f",
         "EN-95b0632f1b292fa7",
+        "EN-6f7ac1823da81d2e",
         "EN-b644c0a9d493976a",
         "EN-636fa9664f878a4d",
         "EN-6c87e5496f592f3c",
@@ -1332,6 +1416,7 @@
         "EN-4d803c223cec4cc4",
         "EN-4634cbf463651816",
         "EN-467f67b2ed0f9a54",
+        "EN-b7bea343b08cce2c",
         "EN-1af769ad0ad5907c",
         "EN-4a639cb888a15d75",
         "EN-65b3aa2f527deeef",
@@ -1367,6 +1452,7 @@
         "FDE-d693e68f89adf86a",
         "FDE-ab9c514225686f60",
         "FDE-226f304c9cf13a74",
+        "FDE-cc943789fb1c3f3d",
         "FDE-602624cf072c079d",
         "FDE-467e0bd030c922df",
         "FDE-a80a4db8880a9b54",
@@ -1390,7 +1476,7 @@
         "HW-25ce41fab12d9ef2"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-18"
+      "lastSeen": "2026-07-19"
     },
     {
       "id": "TX-technology-code_generation",
@@ -1527,8 +1613,13 @@
         "EV-e7b228c1b6b54c6a",
         "EV-57d3b7aa1a2f0fda",
         "EV-234ad54940674bf6",
+        "EV-e4fec8a00b416d12",
         "EV-39848cdd62c00e59",
         "EV-4faa2bcf2e42e60c",
+        "EV-73da0805f2a2705a",
+        "EV-345c8a2cc00fe8ca",
+        "EV-a69dd82a0512a294",
+        "EV-c844ddabb8528896",
         "EV-7fe139b107f9adc6",
         "EV-d1e8407177e11fdc",
         "EV-6b51b1b6fe22c540",
@@ -1565,6 +1656,13 @@
         "EN-72138e570e5103e2",
         "EN-aa75c47729b4a292",
         "EN-8147e6fed86d42c1",
+        "EN-e2c64fbbaf48eeb2",
+        "EN-68dce3237e10d795",
+        "EN-9b07ac3374166b76",
+        "EN-0e6e48aba1669631",
+        "EN-d77c36c05230024c",
+        "EN-be548deba4a093d7",
+        "EN-8d57f84bd1847b24",
         "EN-53874092e000069b",
         "EN-9c8ae69b84f21a2e",
         "EN-f0da91960830b394",
@@ -1605,11 +1703,13 @@
       "hardwareIds": [
         "HW-ceb55d9bc637c1d3",
         "HW-8ec8f237534254df",
+        "HW-155f566cfd988f5e",
+        "HW-cb9cc06cadda488b",
         "HW-0ebffabe51a60966",
         "HW-dca442211b264bbe"
       ],
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-07-18"
+      "lastSeen": "2026-07-19"
     },
     {
       "id": "TX-use_case-software_development",
@@ -1709,6 +1809,8 @@
       "eventIds": [
         "EV-baa76a4f03b84980",
         "EV-97fdf068afbbe555",
+        "EV-19bcfc6d7c1612cb",
+        "EV-0a9617a5118564db",
         "EV-a8a8f26c5128d894",
         "EV-29e069ac093f0e34",
         "EV-653cbce2ccc79f8b",
@@ -1724,6 +1826,11 @@
         "EN-7f90f96bd6306bff",
         "EN-d8cb1acd1b39854a",
         "EN-5388bc10736a0eff",
+        "EN-2abf8289b2f2113f",
+        "EN-91901356a63794df",
+        "EN-81baf57e05f11276",
+        "EN-c0e7614761147db1",
+        "EN-e9dd8f4bd697492b",
         "EN-c70eca6b0f88f44d",
         "EN-3a9b395103419892",
         "EN-bbdefa2950f49882",
@@ -1754,7 +1861,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-07-19"
     }
   ],
   "fde": [],

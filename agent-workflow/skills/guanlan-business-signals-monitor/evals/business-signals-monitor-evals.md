@@ -118,6 +118,7 @@ Compatibility note: legacy field and gate names such as `frontstageCards`, `publ
     - Pass when original-page publication evidence overrides a later search-provider timestamp, so stale English articles do not become active-date high-priority title repairs merely because they were discovered today.
     - Pass when a mixed title consisting of an English product proper name plus an explicit Chinese event action such as `发布` is treated as already localized rather than sent through a second translation lookup.
     - Pass when public facts come from Raw / Card extraction and template filler is repaired in the Card asset or generator.
+    - Pass when a title-repair regression fixture checks the accepted event across retained history instead of requiring that fixed event to remain in the latest daily batch; advancing `currentDate` alone must not fail materialization.
     - Fail when the frontstage selector silently hides Cards or rewrites titles on generic source subjects, untranslated display titles, navigation fragments, weak fact support, or missing customer / ROI / before-after details after Raw / Pool / Card gates already passed. Missing title/fact ingestion fields should instead fail the unified pre-publication Business gate and route to Raw/Card repair.
 
 22. `enterprise_ai_fde_lens_precision`

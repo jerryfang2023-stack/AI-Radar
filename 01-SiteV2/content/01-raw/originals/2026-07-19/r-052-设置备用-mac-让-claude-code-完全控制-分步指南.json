@@ -1,0 +1,274 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-052",
+  "title": "设置备用 Mac 让 Claude Code 完全控制：分步指南",
+  "title_zh": "设置备用 Mac 让 Claude Code 完全控制：分步指南",
+  "title_translation_status": "not_required",
+  "title_translation_method": "source_title",
+  "title_translation_model": "",
+  "original_url": "https://ykdojo.github.io/claude-controls-mac",
+  "canonical_url": "https://ykdojo.github.io/claude-controls-mac",
+  "source_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+  "source_type": "web",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "community_feedback",
+  "evidence_object_usable": false,
+  "event_evidence": false,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": false,
+  "enterprise_ai_transformation_stage": "",
+  "enterprise_ai_transformation_reason": "",
+  "author": "",
+  "published_at": "2026-07-18T19:37:23.960Z",
+  "collected_at": "2026-07-19T05:45:46.766Z",
+  "language": "mixed",
+  "full_text": "claude-controls-mac\nHow to set up your spare Mac for Claude Code to fully control - a step-by-step guide\nHere’s a full step-by-step guide on how to turn your spare Mac into an always-on\nmachine Claude Code can fully control, with computer use enabled. You’ll be able to talk to it from your phone\nthrough the Claude app, or from your main Mac over SSH.\nIn case you’re reading this on GitHub Pages, here’s the repo version .\nWhy do this?\nI wanted to create a separate environment Claude Code can control on its own, so I can\ndelegate tasks I don’t necessarily want to run on my own machine - certain types of\nresearch tasks, and development tasks.\nClaude Code, especially with the --dangerously-skip-permissions flag on,\ncarries inherent risk when run on your main machine. You can eliminate / mitigate these\nrisks by creating a separate environment on your spare Mac with everything it needs\nto have access to.\nIt has an added bonus of being able to talk to Claude Code anytime, anywhere from\nyour phone. I’ve personally found it really useful because I often prefer to talk to\nClaude Code instead of regular Claude on the mobile app - Claude Code is often more\ncapable.\nThe following guide assumes you have your main Mac as well as a spare Mac you can set\nup for this, but you should be able to take inspiration from it and apply it to any\ncombination of two machines.\nWhy this setup?\nFirst, let’s quickly address a few questions you might have.\nWhy not run it in a container?\nI’m a big proponent of running it in a container - I even built\nan entire environment for doing so conveniently .\nHowever, I’ve found it has a few limitations.\nFirst, it still runs on your main machine, so it’s not completely separated. For\nexample, network requests it sends still go through your main machine.\nSecond, there are limitations to the container’s capabilities. For example, I wanted\nmy agent to be able to run Unity for game development, and there’s no easy way to do\nthat in a container. The same goes for any other app that’s only available on a Mac -\nyou won’t have access to it. That’s especially relevant if you want Claude Code to\ncontrol these apps through computer use - clicking, dragging, and so on.\nWhy not use something like OpenClaw?\nI personally like having access to the full, latest features of Claude Code. I also\nlike being able to control it from the Claude app - I’ve found it really convenient.\nAnd you get to use your Claude subscription usage if you happen to have one, which is\nan added bonus.\nAt the end of the day, running an agent with broad permissions is safer on a machine\nthat has nothing to lose - but you get the benefit of being able to use a full Mac\ninstead of a container. The approach here:\nUse an old/spare Mac , not your main one.\nCreate a fresh local account with no personal data and no Apple ID signed in, so\nthe agent has nothing sensitive to reach.\nDrive it over SSH from your main Mac on your local network, and control it from\nyour phone.\nWhat you’ll need\nA spare Mac (the target ).\nYour everyday Mac (the source ), on the same Wi-Fi.\n1. Start fresh on the target Mac\nWipe it first (if it has any personal data)\nYou’ll be giving the agent full access to this machine, so it can reach anything stored\non it. If there’s existing data you don’t want it to have access to, erase the machine\nfirst:\nMacs that support it: System Settings -> General -> Transfer or Reset ->\nErase All Content and Settings .\nOlder Intel Macs: restart into Recovery (hold Cmd-R at\nboot), use Disk Utility to erase the internal drive, then reinstall macOS.\nOptionally update to the latest macOS afterward (System Settings -> General ->\nSoftware Update).\nCreate a fresh, isolated account\nCreate a new local user account (System Settings -> Users & Groups).\nI recommend not signing into an Apple ID. Skip it during setup.\nMake the account an admin (if you haven’t already)\nThe account needs admin rights or sudo will refuse to run.\nSystem Settings -> Users & Groups -> set the account to Allow this user to\nadminister this computer .\nIf you ever need to repair it from another admin account:\nsudo dseditgroup -o edit -a <user> -t user admin\n2. Enable Remote Login (SSH) on the target Mac\nOn the target , turn on SSH so the source Mac can connect:\nsudo systemsetup -setremotelogin on",
+  "clean_text": "claude-controls-mac\nHow to set up your spare Mac for Claude Code to fully control - a step-by-step guide\nHere’s a full step-by-step guide on how to turn your spare Mac into an always-on\nmachine Claude Code can fully control, with computer use enabled. You’ll be able to talk to it from your phone\nthrough the Claude app, or from your main Mac over SSH.\nIn case you’re reading this on GitHub Pages, here’s the repo version .\nWhy do this?\nI wanted to create a separate environment Claude Code can control on its own, so I can\ndelegate tasks I don’t necessarily want to run on my own machine - certain types of\nresearch tasks, and development tasks.\nClaude Code, especially with the --dangerously-skip-permissions flag on,\ncarries inherent risk when run on your main machine. You can eliminate / mitigate these\nrisks by creating a separate environment on your spare Mac with everything it needs\nto have access to.\nIt has an added bonus of being able to talk to Claude Code anytime, anywhere from\nyour phone. I’ve personally found it really useful because I often prefer to talk to\nClaude Code instead of regular Claude on the mobile app - Claude Code is often more\ncapable.\nThe following guide assumes you have your main Mac as well as a spare Mac you can set\nup for this, but you should be able to take inspiration from it and apply it to any\ncombination of two machines.\nWhy this setup?\nFirst, let’s quickly address a few questions you might have.\nWhy not run it in a container?\nI’m a big proponent of running it in a container - I even built\nan entire environment for doing so conveniently .\nHowever, I’ve found it has a few limitations.\nFirst, it still runs on your main machine, so it’s not completely separated. For\nexample, network requests it sends still go through your main machine.\nSecond, there are limitations to the container’s capabilities. For example, I wanted\nmy agent to be able to run Unity for game development, and there’s no easy way to do\nthat in a container. The same goes for any other app that’s only available on a Mac -\nyou won’t have access to it. That’s especially relevant if you want Claude Code to\ncontrol these apps through computer use - clicking, dragging, and so on.\nWhy not use something like OpenClaw?\nI personally like having access to the full, latest features of Claude Code. I also\nlike being able to control it from the Claude app - I’ve found it really convenient.\nAnd you get to use your Claude subscription usage if you happen to have one, which is\nan added bonus.\nAt the end of the day, running an agent with broad permissions is safer on a machine\nthat has nothing to lose - but you get the benefit of being able to use a full Mac\ninstead of a container. The approach here:\nUse an old/spare Mac , not your main one.\nCreate a fresh local account with no personal data and no Apple ID signed in, so\nthe agent has nothing sensitive to reach.\nDrive it over SSH from your main Mac on your local network, and control it from\nyour phone.\nWhat you’ll need\nA spare Mac (the target ).\nYour everyday Mac (the source ), on the same Wi-Fi.\n1. Start fresh on the target Mac\nWipe it first (if it has any personal data)\nYou’ll be giving the agent full access to this machine, so it can reach anything stored\non it. If there’s existing data you don’t want it to have access to, erase the machine\nfirst:\nMacs that support it: System Settings -> General -> Transfer or Reset ->\nErase All Content and Settings .\nOlder Intel Macs: restart into Recovery (hold Cmd-R at\nboot), use Disk Utility to erase the internal drive, then reinstall macOS.\nOptionally update to the latest macOS afterward (System Settings -> General ->\nSoftware Update).\nCreate a fresh, isolated account\nCreate a new local user account (System Settings -> Users & Groups).\nI recommend not signing into an Apple ID. Skip it during setup.\nMake the account an admin (if you haven’t already)\nThe account needs admin rights or sudo will refuse to run.\nSystem Settings -> Users & Groups -> set the account to Allow this user to\nadminister this computer .\nIf you ever need to repair it from another admin account:\nsudo dseditgroup -o edit -a <user> -t user admin\n2. Enable Remote Login (SSH) on the target Mac\nOn the target , turn on SSH so the source Mac can connect:\nsudo systemsetup -setremotelogin on",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-19/r-052-设置备用-mac-让-claude-code-完全控制-分步指南.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-19/r-052-设置备用-mac-让-claude-code-完全控制-分步指南.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-content-container",
+  "extraction_quality": "high",
+  "extraction_method": "content-container",
+  "readability_score": 97,
+  "extractor_diagnostics": {
+    "readability_score": 97,
+    "text_length": 4292,
+    "paragraph_count": 63,
+    "sentence_count": 42,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0.0023,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "content-container"
+  },
+  "has_full_text": true,
+  "content_length": 4292,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "36cc3c84c79d4a48",
+    "missing": []
+  },
+  "evidence_strength": "source_backed_event",
+  "raw_qc_decision": "allow_with_degradation",
+  "raw_qc_downstream_use": "index_watchlist_or_feedback_only",
+  "degradation_reasons": [
+    "insufficient_usable_evidence_object"
+  ],
+  "source_volatility": "high",
+  "community_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "user_feedback_signal",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "设置备用 Mac 让 Claude Code 完全控制：分步指南",
+    "discovery_summary": "一篇分步指南介绍如何将备用 Mac 设置为可由 Claude Code 完全控制的常开机器，启用 computer use 功能。该方案通过 SSH 从主 Mac 连接，并可通过手机上的 Claude 应用控制，从而在主机器上隔离风险。指南建议在备用 Mac 上创建不含个人数据的新本地账户，并配置无密码 sudo 权限。",
+    "source_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+    "origin_url": "https://ykdojo.github.io/claude-controls-mac",
+    "discovered_at": "2026-07-19T05:36:58.937Z",
+    "rank_on_page": 70,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "daf0528a98732d15",
+  "content_hash": "36cc3c84c79d4a48",
+  "full_text_hash": "36cc3c84c79d4a48",
+  "semantic_hash": "acf15222eed9f830",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-18T19:37:23.960Z",
+  "last_seen_at": "2026-07-19T05:45:46.766Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "supporting_context",
+      "text": "一篇分步指南介绍如何将备用 Mac 设置为可由 Claude Code 完全控制的常开机器，启用 computer use 功能。该方案通过 SSH 从主 Mac 连接，并可通过手机上的 Claude 应用控制，从而在主机器上隔离风险。指南建议在备用 Mac 上创建不含个人数据的新本地账户，并配置无密码 sudo 权限。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "claude-controls-mac How to set up your spare Mac for Claude Code to fully control - a step-by-step guide Here’s a full step-by-step guide on how to turn your spare Mac into an always-on machine Claude Code can fully control, with computer use enabled.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "You’ll be able to talk to it from your phone through the Claude app, or from your main Mac over SSH.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "In case you’re reading this on GitHub Pages, here’s the repo version .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "I wanted to create a separate environment Claude Code can control on its own, so I can delegate tasks I don’t necessarily want to run on my own machine - certain types of research tasks, and development tasks.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "supporting_context",
+      "text": "Claude Code, especially with the --dangerously-skip-permissions flag on, carries inherent risk when run on your main machine.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-19T05:45:46.766Z",
+  "business_elements": {
+    "companies": [
+      "Hacker News 热门（buzzing.cc 中文翻译）",
+      "GitHub",
+      "Apple"
+    ],
+    "products": [
+      "Claude",
+      "claude",
+      "agent"
+    ],
+    "people": [],
+    "industries": [
+      "法律 / 法务",
+      "开发者工具"
+    ],
+    "roles": [],
+    "workflows": [
+      "计费 / 预算管理",
+      "权限 / 安全治理"
+    ],
+    "business_actions": [],
+    "affected_departments": [
+      "IT / 安全",
+      "法务",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "1",
+      "2"
+    ],
+    "quotes": []
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "claude-controls-mac How to set up your spare Mac for Claude Code to fully control - a step-by-step guide Here’s a full step-by-step guide on how to turn your spare Mac into an always-on machine Claude Code can fully control, with computer use enabled.",
+      "You’ll be able to talk to it from your phone through the Claude app, or from your main Mac over SSH.",
+      "In case you’re reading this on GitHub Pages, here’s the repo version ."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [],
+    "risks_or_constraints": [
+      "一篇分步指南介绍如何将备用 Mac 设置为可由 Claude Code 完全控制的常开机器，启用 computer use 功能。该方案通过 SSH 从主 Mac 连接，并可通过手机上的 Claude 应用控制，从而在主机器上隔离风险。指南建议在备用 Mac 上创建不含个人数据的新本地账户，并配置无密码 sudo 权限。",
+      "Claude Code, especially with the --dangerously-skip-permissions flag on, carries inherent risk when run on your main machine."
+    ]
+  },
+  "guanlan_scores": {
+    "importance_type": "important_technical_trend",
+    "importance_score": 4,
+    "importance_reason": "technical trend or capability shift; rubric=4 concrete important change",
+    "supporting_signals": [
+      "commercial_or_risk_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 3,
+    "trend_relevance": 5,
+    "guanlan_relevance": 4,
+    "emerging_signal_score": 4
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": false,
+    "business_change": false,
+    "relationship_graph_input": false,
+    "trend_candidate_context": false,
+    "signal_card_candidate": false,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": false
+  },
+  "pool_routes": [
+    "index_only"
+  ],
+  "change_action_detected": false,
+  "evidence_eligibility": "blocked",
+  "evidence_block_reason": "not_event_case_or_trend_evidence",
+  "missing_information": [
+    "证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象",
+    "没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势",
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "indexed",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# 设置备用 Mac 让 Claude Code 完全控制：分步指南\n\n- raw_id: R-052\n- title_zh: 设置备用 Mac 让 Claude Code 完全控制：分步指南\n- title_translation_status: not_required\n- title_translation_method: source_title\n- original_url: https://ykdojo.github.io/claude-controls-mac\n- source_name: Hacker News 热门（buzzing.cc 中文翻译）\n- collected_at: 2026-07-19T05:45:46.766Z\n\n## clean_text\n\nclaude-controls-mac\nHow to set up your spare Mac for Claude Code to fully control - a step-by-step guide\nHere’s a full step-by-step guide on how to turn your spare Mac into an always-on\nmachine Claude Code can fully control, with computer use enabled. You’ll be able to talk to it from your phone\nthrough the Claude app, or from your main Mac over SSH.\nIn case you’re reading this on GitHub Pages, here’s the repo version .\nWhy do this?\nI wanted to create a separate environment Claude Code can control on its own, so I can\ndelegate tasks I don’t necessarily want to run on my own machine - certain types of\nresearch tasks, and development tasks.\nClaude Code, especially with the --dangerously-skip-permissions flag on,\ncarries inherent risk when run on your main machine. You can eliminate / mitigate these\nrisks by creating a separate environment on your spare Mac with everything it needs\nto have access to.\nIt has an added bonus of being able to talk to Claude Code anytime, anywhere from\nyour phone. I’ve personally found it really useful because I often prefer to talk to\nClaude Code instead of regular Claude on the mobile app - Claude Code is often more\ncapable.\nThe following guide assumes you have your main Mac as well as a spare Mac you can set\nup for this, but you should be able to take inspiration from it and apply it to any\ncombination of two machines.\nWhy this setup?\nFirst, let’s quickly address a few questions you might have.\nWhy not run it in a container?\nI’m a big proponent of running it in a container - I even built\nan entire environment for doing so conveniently .\nHowever, I’ve found it has a few limitations.\nFirst, it still runs on your main machine, so it’s not completely separated. For\nexample, network requests it sends still go through your main machine.\nSecond, there are limitations to the container’s capabilities. For example, I wanted\nmy agent to be able to run Unity for game development, and there’s no easy way to do\nthat in a container. The same goes for any other app that’s only available on a Mac -\nyou won’t have access to it. That’s especially relevant if you want Claude Code to\ncontrol these apps through computer use - clicking, dragging, and so on.\nWhy not use something like OpenClaw?\nI personally like having access to the full, latest features of Claude Code. I also\nlike being able to control it from the Claude app - I’ve found it really convenient.\nAnd you get to use your Claude subscription usage if you happen to have one, which is\nan added bonus.\nAt the end of the day, running an agent with broad permissions is safer on a machine\nthat has nothing to lose - but you get the benefit of being able to use a full Mac\ninstead of a container. The approach here:\nUse an old/spare Mac , not your main one.\nCreate a fresh local account with no personal data and no Apple ID signed in, so\nthe agent has nothing sensitive to reach.\nDrive it over SSH from your main Mac on your local network, and control it from\nyour phone.\nWhat you’ll need\nA spare Mac (the target ).\nYour everyday Mac (the source ), on the same Wi-Fi.\n1. Start fresh on the target Mac\nWipe it first (if it has any personal data)\nYou’ll be giving the agent full access to this machine, so it can reach anything stored\non it. If there’s existing data you don’t want it to have access to, erase the machine\nfirst:\nMacs that support it: System Settings -> General -> Transfer or Reset ->\nErase All Content and Settings .\nOlder Intel Macs: restart into Recovery (hold Cmd-R at\nboot), use Disk Utility to erase the internal drive, then reinstall macOS.\nOptionally update to the latest macOS afterward (System Settings -> General ->\nSoftware Update).\nCreate a fresh, isolated account\nCreate a new local user account (System Settings -> Users & Groups).\nI recommend not signing into an Apple ID. Skip it during setup.\nMake the account an admin (if you haven’t already)\nThe account needs admin rights or sudo will refuse to run.\nSystem Settings -> Users & Groups -> set the account to Allow this user to\nadminister this computer .\nIf you ever need to repair it from another admin account:\nsudo dseditgroup -o edit -a <user> -t user admin\n2. Enable Remote Login (SSH) on the target Mac\nOn the target , turn on SSH so the source Mac can connect:\nsudo systemsetup -setremotelogin on\n\n## full_text\n\nclaude-controls-mac\nHow to set up your spare Mac for Claude Code to fully control - a step-by-step guide\nHere’s a full step-by-step guide on how to turn your spare Mac into an always-on\nmachine Claude Code can fully control, with computer use enabled. You’ll be able to talk to it from your phone\nthrough the Claude app, or from your main Mac over SSH.\nIn case you’re reading this on GitHub Pages, here’s the repo version .\nWhy do this?\nI wanted to create a separate environment Claude Code can control on its own, so I can\ndelegate tasks I don’t necessarily want to run on my own machine - certain types of\nresearch tasks, and development tasks.\nClaude Code, especially with the --dangerously-skip-permissions flag on,\ncarries inherent risk when run on your main machine. You can eliminate / mitigate these\nrisks by creating a separate environment on your spare Mac with everything it needs\nto have access to.\nIt has an added bonus of being able to talk to Claude Code anytime, anywhere from\nyour phone. I’ve personally found it really useful because I often prefer to talk to\nClaude Code instead of regular Claude on the mobile app - Claude Code is often more\ncapable.\nThe following guide assumes you have your main Mac as well as a spare Mac you can set\nup for this, but you should be able to take inspiration from it and apply it to any\ncombination of two machines.\nWhy this setup?\nFirst, let’s quickly address a few questions you might have.\nWhy not run it in a container?\nI’m a big proponent of running it in a container - I even built\nan entire environment for doing so conveniently .\nHowever, I’ve found it has a few limitations.\nFirst, it still runs on your main machine, so it’s not completely separated. For\nexample, network requests it sends still go through your main machine.\nSecond, there are limitations to the container’s capabilities. For example, I wanted\nmy agent to be able to run Unity for game development, and there’s no easy way to do\nthat in a container. The same goes for any other app that’s only available on a Mac -\nyou won’t have access to it. That’s especially relevant if you want Claude Code to\ncontrol these apps through computer use - clicking, dragging, and so on.\nWhy not use something like OpenClaw?\nI personally like having access to the full, latest features of Claude Code. I also\nlike being able to control it from the Claude app - I’ve found it really convenient.\nAnd you get to use your Claude subscription usage if you happen to have one, which is\nan added bonus.\nAt the end of the day, running an agent with broad permissions is safer on a machine\nthat has nothing to lose - but you get the benefit of being able to use a full Mac\ninstead of a container. The approach here:\nUse an old/spare Mac , not your main one.\nCreate a fresh local account with no personal data and no Apple ID signed in, so\nthe agent has nothing sensitive to reach.\nDrive it over SSH from your main Mac on your local network, and control it from\nyour phone.\nWhat you’ll need\nA spare Mac (the target ).\nYour everyday Mac (the source ), on the same Wi-Fi.\n1. Start fresh on the target Mac\nWipe it first (if it has any personal data)\nYou’ll be giving the agent full access to this machine, so it can reach anything stored\non it. If there’s existing data you don’t want it to have access to, erase the machine\nfirst:\nMacs that support it: System Settings -> General -> Transfer or Reset ->\nErase All Content and Settings .\nOlder Intel Macs: restart into Recovery (hold Cmd-R at\nboot), use Disk Utility to erase the internal drive, then reinstall macOS.\nOptionally update to the latest macOS afterward (System Settings -> General ->\nSoftware Update).\nCreate a fresh, isolated account\nCreate a new local user account (System Settings -> Users & Groups).\nI recommend not signing into an Apple ID. Skip it during setup.\nMake the account an admin (if you haven’t already)\nThe account needs admin rights or sudo will refuse to run.\nSystem Settings -> Users & Groups -> set the account to Allow this user to\nadminister this computer .\nIf you ever need to repair it from another admin account:\nsudo dseditgroup -o edit -a <user> -t user admin\n2. Enable Remote Login (SSH) on the target Mac\nOn the target , turn on SSH so the source Mac can connect:\nsudo systemsetup -setremotelogin on\n\n## extraction_diagnostics\n\n- extraction_method: content-container\n- readability_score: 97\n- fetch_status: fetched-readable-text-content-container\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [supporting_context / signal_card_candidate, relationship_graph_input / medium] 一篇分步指南介绍如何将备用 Mac 设置为可由 Claude Code 完全控制的常开机器，启用 computer use 功能。该方案通过 SSH 从主 Mac 连接，并可通过手机上的 Claude 应用控制，从而在主机器上隔离风险。指南建议在备用 Mac 上创建不含个人数据的新本地账户，并配置无密码 sudo 权限。\n2. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] claude-controls-mac How to set up your spare Mac for Claude Code to fully control - a step-by-step guide Here’s a full step-by-step guide on how to turn your spare Mac into an always-on machine Claude Code can fully control, with computer use enabled.\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] You’ll be able to talk to it from your phone through the Claude app, or from your main Mac over SSH.\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] In case you’re reading this on GitHub Pages, here’s the repo version .\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] I wanted to create a separate environment Claude Code can control on its own, so I can delegate tasks I don’t necessarily want to run on my own machine - certain types of research tasks, and development tasks.\n6. [supporting_context / signal_card_candidate, relationship_graph_input / medium] Claude Code, especially with the --dangerously-skip-permissions flag on, carries inherent risk when run on your main machine.\n"
+}
