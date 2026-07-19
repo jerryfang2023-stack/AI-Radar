@@ -31,6 +31,26 @@ body {
   border: 0;
 }
 
+.dc-skip-link {
+  position: fixed;
+  z-index: 100;
+  top: 8px;
+  left: 8px;
+  padding: 8px 12px;
+  border: 1px solid var(--gl-border);
+  border-radius: var(--gl-radius-sm);
+  background: var(--gl-bg-page);
+  color: var(--gl-ink);
+  text-decoration: none;
+  transform: translateY(calc(-100% - 16px));
+}
+
+.dc-skip-link:focus-visible {
+  outline: 2px solid var(--gl-blue);
+  outline-offset: 2px;
+  transform: translateY(0);
+}
+
 button,
 input,
 select {

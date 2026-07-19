@@ -8,6 +8,7 @@ const root = process.cwd();
 const data = buildTrendRadarData(root);
 const page = fs.readFileSync(path.join(root, "01-SiteV2/site/trend-radar.html"), "utf8");
 const client = fs.readFileSync(path.join(root, "01-SiteV2/site/assets/trend-radar.js"), "utf8");
+const sharedStyles = fs.readFileSync(path.join(root, "01-SiteV2/site/assets/data-center-v4.css"), "utf8");
 
 test("Trend Radar uses the current factual column contract", () => {
   assert.equal(data.meta.columnVersion, COLUMN_VERSION);
@@ -74,6 +75,10 @@ test("page is a V4 application page with factual period controls", () => {
   assert.match(page, /data-period="week"/);
   assert.match(page, /data-period="month"/);
   assert.match(page, /href="trend-radar\.html" aria-current="page"/);
+  assert.match(page, /<header class="dc-header">/);
+  assert.match(page, /<div class="dc-layout">/);
+  assert.doesNotMatch(page, /dc-brandbar|class="dc-shell"/);
+  assert.match(sharedStyles, /\.dc-skip-link:focus-visible/);
   assert.match(client, /data\/trend-radar-v1\.json/);
   assert.ok(Object.values(data.events).every((event) => event.detailUrl.startsWith("data-center.html?view=events")));
 });

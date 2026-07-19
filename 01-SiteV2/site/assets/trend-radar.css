@@ -1,7 +1,7 @@
 @import url("brand/brand-tokens.css");
 
 .tr-main { min-width: 0; }
-.tr-shell { width: min(1120px, calc(100% - 72px)); margin: 0 auto; padding: 42px 0 72px; }
+.tr-shell { width: min(1120px, 100%); margin: 0 auto; }
 .tr-page-head { display: flex; align-items: baseline; gap: 18px; padding: 0; margin: 0 0 22px; }
 .tr-page-head h1 { margin: 0; }
 .tr-date { margin-left: auto; color: #6e8191; font-size: 13px; white-space: nowrap; }
@@ -46,7 +46,6 @@ button.tr-stat { cursor: pointer; }
 .tr-empty { padding: 24px 0; color: #6e8191; border-top: 1px solid #dce3e8; border-bottom: 1px solid #dce3e8; }
 
 @media (max-width: 900px) {
-  .tr-shell { width: calc(100% - 34px); padding-top: 28px; }
   .tr-page-head { flex-wrap: wrap; gap: 8px 14px; }
   .tr-date { width: 100%; margin: 0; }
   .tr-controls { align-items: stretch; flex-direction: column; }
@@ -54,6 +53,7 @@ button.tr-stat { cursor: pointer; }
   .tr-period-select select { flex: 1; min-width: 0; }
   .tr-summary { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .tr-stat { border-bottom: 1px solid #dce3e8; }
+  .tr-stat:last-child:nth-child(odd) { grid-column: 1 / -1; border-right: 0; }
   .tr-grid { grid-template-columns: 1fr; }
   .tr-row { grid-template-columns: 1fr; gap: 5px; padding: 13px 0; }
 }
