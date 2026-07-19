@@ -52,6 +52,7 @@ Do not scan all Markdown at task start. Read only this file, the required `conte
 - Current AI Hardware data version: HARDWARE-V1.0.
 - Current Reports Center column version: REPORTS-V1.0.0-periodic-report-center.
 - Current Opportunity Map column version: OMAP-V1.0.0-independent-column.
+- Current Trend Radar column version: TRADAR-V1.0.0-factual-change-explorer.
 - Current Raw contract: RAW-V3.0.
 - Current canonical event contract: EVENT-V1.1.
 - Current entity history contract: ENTITY-V1.0.
@@ -84,6 +85,7 @@ First-line viewpoints are a separate builders column. They are useful for readin
 | Commercial Events / 商业事件 | `01-SiteV2/site/data-center.html?view=events` | source-traceable canonical commercial events |
 | Industry Reports / 行业报告 | `01-SiteV2/site/intelligence-map.html` | monthly / weekly reports and report archives |
 | Opportunity Map / 机会地图 | `01-SiteV2/site/opportunity-map.html` | source-backed Entry Point Map and Product Pain Map with evidence modals |
+| Trend Radar / 趋势雷达 | `01-SiteV2/site/trend-radar.html` | evidence-backed daily, weekly, and monthly factual change explorer |
 | Weekly AI Business Change Radar / 周报 | `01-SiteV2/site/weekly-ai-business-change-radar.html` | weekly report detail page, entered from Intelligence Map |
 | First-Line Viewpoints / 一线观点 | `01-SiteV2/site/data-center.html?view=viewpoints` | independent builders viewpoints |
 | Community Intelligence / 社群情报 | `01-SiteV2/site/data-center.html?view=community` | community-sourced cases, tool tactics, opportunities, and document links |

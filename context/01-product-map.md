@@ -25,7 +25,8 @@ priority: current
 | First-Line Viewpoints | Builders public viewpoints, translated and organized independently | Active frontstage |
 | Relationship data | RELATION-V2 typed endpoints backed by event, Claim, and source references only | Active factual data layer |
 | Targeted Backfill | BACKFILL-V1 recurring company/product sweeps and explicit funding/deployment fact-gap tasks | Active internal operations layer |
-| Trend / opportunity outputs | Downstream interpretation, excluded from V4 core | Legacy page compatibility |
+| Trend Radar | Accepted-event daily, weekly and monthly factual change projection with evidence links and coverage disclosure | Active downstream application; excluded from V4 core |
+| Opportunity outputs | Downstream interpretation, excluded from V4 core | Active downstream application / legacy compatibility inputs |
 | Dashboard | Production-chain, source traceability, data quality, version governance, Skill Store, and release status | Active backend |
 
 ## Current Navigation
@@ -36,7 +37,10 @@ Data Center
 |- First-Line Viewpoints
 |- Community Intelligence
 `- Entity Index
-Industry Reports
+Application Center
+|- Trend Radar
+|- Industry Reports
+`- Opportunity Map
 ```
 
 The V4 Data Center and Industry Reports sidebar in `context/frontstage-page-contracts.md` is the only current public navigation contract. Dashboard remains an operations backend and is not part of public navigation.
@@ -52,7 +56,7 @@ Daily monitor / BACKFILL-V1 targeted discovery
 -> Entity Registry / Entity Profiles / RELATION-V2
 -> FDE / Hardware projection
 -> JSON / JSONL / DuckDB
--> downstream AIP / insight / decision-support applications
+-> Trend Radar factual change projection / downstream AIP / insight / decision-support applications
 -> frozen V3 page compatibility outputs
 ```
 

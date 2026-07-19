@@ -219,6 +219,7 @@ function parseVersionLedger() {
     ["HARDWARE", "AI Hardware data version"],
     ["REPORTS", "Reports Center column version"],
     ["OMAP", "Opportunity Map column version"],
+    ["TRADAR", "Trend Radar column version"],
     ["RAW", "Data Center Raw contract"],
     ["EVENT", "Canonical event contract"],
     ["ENTITY", "Entity history contract"],

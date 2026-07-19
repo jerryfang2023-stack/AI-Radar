@@ -25,6 +25,7 @@ const cases = [
   [`data-center.html?view=index&detail=taxonomy&id=${encodeURIComponent(smokeTaxonomy.id)}`, "data-center.html?view=index"],
   ["intelligence-map.html", "intelligence-map.html"],
   ["opportunity-map.html", "opportunity-map.html"],
+  ["trend-radar.html", "trend-radar.html"],
   ["weekly-ai-business-change-radar.html", "weekly-ai-business-change-radar.html"],
   ["monthly-business-structure-2026-06.html", "monthly-business-structure-2026-06.html"],
   ["v3-data-observation.html?date=2026-07-17#detail", "data-center.html"],
@@ -139,6 +140,7 @@ async function main() {
         if (viewport.name === "desktop" && [
           "intelligence-map.html",
           "opportunity-map.html",
+          "trend-radar.html",
           "weekly-ai-business-change-radar.html",
           "monthly-business-structure-2026-06.html",
         ].includes(route)) {

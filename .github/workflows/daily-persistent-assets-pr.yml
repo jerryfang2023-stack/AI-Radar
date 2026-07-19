@@ -334,14 +334,26 @@ jobs:
         continue-on-error: true
         shell: bash
         run: |
-          set -o pipefail
+          set -euo pipefail
           node agent-workflow/tools/sync-light-data-lake.mjs \
             --v4-only=true \
             --duckdb=skip \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-data-center-v4-materialize.log"
           node 01-SiteV2/site/scripts/build-data-center-v4-frontstage.mjs \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-data-center-v4-frontstage.log"
-          npm run test:data-center-site:prepared
+          npm run test:data-center-site:core
+
+      - name: Build and gate Trend Radar projection
+        id: trend-radar-projection
+        if: steps.data-center-v4-materialize.outcome == 'success'
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -euo pipefail
+          node 01-SiteV2/site/scripts/build-trend-radar-frontstage.mjs \
+            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-trend-radar.log"
+          node agent-workflow/tools/assert-trend-radar-v1.mjs
+          npm run test:trend-radar
 
       - name: Regenerate business-signal Card assets
         id: assets
@@ -482,6 +494,7 @@ jobs:
           - data_center_v4_build: ${{ steps.data-center-v4.outcome }}
           - data_center_v4_gate: ${{ steps.data-center-v4-gate.outcome }}
           - data_center_v4_materialize: ${{ steps.data-center-v4-materialize.outcome }}
+          - trend_radar_projection: ${{ steps.trend-radar-projection.outcome }}
           - asset_generation: ${{ steps.assets.outcome }}
           - pool_to_card_dedupe_gate: ${{ steps.pool-to-card-dedupe.outcome }}
           - card_editorial_gate: ${{ steps.card-editorial-gate.outcome }}
@@ -528,6 +541,7 @@ jobs:
               "data_center_v4_build": "${{ steps.data-center-v4.outcome }}",
               "data_center_v4_gate": "${{ steps.data-center-v4-gate.outcome }}",
               "data_center_v4_materialize": "${{ steps.data-center-v4-materialize.outcome }}",
+              "trend_radar_projection": "${{ steps.trend-radar-projection.outcome }}",
               "asset_generation": "${{ steps.assets.outcome }}",
               "pool_to_card_dedupe_gate": "${{ steps.pool-to-card-dedupe.outcome }}",
               "card_editorial_gate": "${{ steps.card-editorial-gate.outcome }}",
@@ -543,6 +557,7 @@ jobs:
               "raw_originals": "$(state_for "01-SiteV2/content/01-raw/originals/${RUN_DATE}")",
               "pool_candidates": "$(state_for "$pool_file")",
               "data_center_v4_bundle": "$(state_for "01-SiteV2/content/11-databases/data-center-v4/${RUN_DATE}/manifest.json")",
+              "trend_radar_frontstage": "$(state_for "01-SiteV2/site/data/trend-radar-v1.json")",
               "business_signals": "$(state_for "$signal_file")",
               "signal_card_files": ${signal_card_count},
               "v3_data_observation_desk": "$(state_for "01-SiteV2/site/data/v3-data-observation-desk.json")",
@@ -598,6 +613,7 @@ jobs:
             data-lake/tables/legacy_asset_mappings.jsonl
             01-SiteV2/site/data/data-center-v4-frontstage.json
             01-SiteV2/site/data/data-center-v4/**
+            01-SiteV2/site/data/trend-radar-v1.json
             01-SiteV2/content/04-business-signals/signals/${{ steps.run-date.outputs.date }}-signals.md
             01-SiteV2/knowledge/01-Signal-Cards/**/${{ steps.run-date.outputs.date }}--signal--*.md
             01-SiteV2/content/06-asset-candidates/trend/${{ steps.run-date.outputs.date }}--trend-candidate--*.md
@@ -656,6 +672,10 @@ jobs:
             stage_if_exists "01-SiteV2/content/11-databases/model-assist-v1/checkpoint.json"
             stage_if_exists "01-SiteV2/site/data/data-center-v4-frontstage.json"
             stage_if_exists "01-SiteV2/site/data/data-center-v4"
+          fi
+
+          if [ "${{ steps.trend-radar-projection.outcome }}" = "success" ]; then
+            stage_if_exists "01-SiteV2/site/data/trend-radar-v1.json"
           fi
 
           if [ "${{ steps.pre-commit-gate.outcome }}" = "success" ] && [ "${{ steps.assets.outcome }}" = "success" ]; then

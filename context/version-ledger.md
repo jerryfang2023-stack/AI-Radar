@@ -35,6 +35,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 | AI Hardware data version | HARDWARE-V1.0 |
 | Reports Center column version | REPORTS-V1.0.0-periodic-report-center |
 | Opportunity Map column version | OMAP-V1.0.0-independent-column |
+| Trend Radar column version | TRADAR-V1.0.0-factual-change-explorer |
 | Data Center Raw contract | RAW-V3.0 |
 | Canonical event contract | EVENT-V1.1 |
 | Entity history contract | ENTITY-V1.0 |
@@ -47,13 +48,14 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Weekly report page-generator Skill | guanlan-weekly-report-page-generator v1.1.1 |
 | Monthly report page-generator Skill | guanlan-monthly-report-page-generator v1.1.0 |
 | Opportunity Map updater Skill | guanlan-opportunity-radar-updater v1.2.0 |
+| Trend Radar updater Skill | guanlan-trend-radar-updater v1.0.0 |
 | Community Intelligence monitor Skill | guanlan-community-intelligence-monitor v1.0.4 |
 | Monthly business-structure content Skill | guanlan-monthly-business-structure-report v0.2.1 |
 | Skill governance editor | guanlan-skill-editor v1.0.1 |
 | Operations backend version | OPS-V1.2.3-content-factory-cleanout |
-| Skill Store version | v1.6.3 V4 governance alignment |
-| Git tag | `v4.2.1-governance-alignment` |
-| Current entries | Data Center / Industry Reports / Opportunity Map; V3 column URLs redirect into V4; Dashboard retained as backend |
+| Skill Store version | v1.6.4 Trend Radar factual change application |
+| Git tag | `v4.2.2-trend-radar` |
+| Current entries | Data Center / Trend Radar / Industry Reports / Opportunity Map; V3 column URLs redirect into V4; Dashboard retained as backend |
 
 ## Current Product Baseline
 
@@ -82,12 +84,13 @@ This file is the current version baseline. Closeout files prove what happened; t
 - Opportunity Map reads the dedicated downstream application projection `industry-reports-frontstage.json`; neither application-center page fetches the public V3 desk JSON. Dashboard remains an independent backend consumer.
 - Reports Center is versioned independently as `REPORTS-V1.0.0-periodic-report-center`. It contains Monthly / Weekly reports and archives; `.github/workflows/periodic-reports-pr.yml` invokes DeepSeek for source-ID-cited Markdown only, `assert-periodic-report-content.mjs` gates the content, and `render-periodic-report-pages.mjs` is the sole HTML/navigation/version writer under the monthly and weekly page-generator Skills.
 - Opportunity Map is versioned independently as `OMAP-V1.0.0-independent-column`. It reads `industry-reports-frontstage.json` and renders Entry Point Map and Product Pain Map from source-backed `opportunity_signals` without owning report content or report-page generation.
+- Trend Radar is versioned independently as `TRADAR-V1.0.0-factual-change-explorer`. It reads accepted Data Center V4 events only, uses `dataDate` for daily/weekly/monthly aggregation, exposes observed batch-day coverage, and preserves event/entity/Claim/SourceArtifact/source traceability without scores, recommendations or report prose.
 - Site output remains unified on GitHub Pages, but each producing lane can independently pass gates, open a PR, merge to `main`, and trigger publication without waiting for other lanes.
 - Internal V3 compatibility data may continue for opportunity-map projection, historical analytics, and Obsidian sync, but no public page may load its V3 CSS, JavaScript, navigation, or desk JSON.
 - The three column monitor skills are current execution entries and must include self-improvement after recurring production failures.
 - Hermes daily supervision is now routed through the unified supervision report and the Hermes -> Codex inbox.
 - Project health automation now has daily, weekly, and monthly read-only report commands for supervision coverage, recurring issue review, Git hygiene, large-file review, runtime checks, and deployment-service residue.
-- Skill Store governance is versioned separately as `v1.6.3`. Current Skill metadata, evals, registry entries, and mirrors align Opportunity Map, Reports Center, Community Intelligence, and governance rules with their independent V4 boundaries.
+- Skill Store governance is versioned separately as `v1.6.4`. Current Skill metadata, evals, registry entries, and mirrors add the independent Trend Radar factual-change lane while preserving Opportunity Map, Reports Center, Community Intelligence, and governance boundaries.
 - Deployment path is GitHub Pages only. Netlify is retired and must not be used for future website deployment.
 
 ## Current Pages
@@ -95,6 +98,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Page | File | Current Role |
 |---|---|---|
 | Data Center | `01-SiteV2/site/data-center.html` | Unified V4 entry for Commercial Events, FDE, AI Hardware, Community Intelligence, First-Line Viewpoints, and Entity Index |
+| Trend Radar | `01-SiteV2/site/trend-radar.html` | Independent V4 Application Center entry for daily, weekly, and monthly evidence-backed factual change exploration |
 | Industry Reports | `01-SiteV2/site/intelligence-map.html` | V4 sidebar application entry containing latest Monthly / Weekly reports and report archives |
 | Opportunity Map | `01-SiteV2/site/opportunity-map.html` | Independent V4 sidebar application entry containing source-backed Entry Point Map, Product Pain Map, and click-to-open evidence modals |
 | First-Line Viewpoints | `01-SiteV2/site/data-center.html?view=viewpoints` | Independent builders viewpoint feed, people index, and timelines in the V4 shell |
@@ -170,6 +174,7 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Freeze Point | Pages | Date | Updated at | Version | Must Not Return | Gates |
 |---|---|---|---|---|---|---|
+| `v4.2.2-trend-radar` | Trend Radar / shared V4 Application Center navigation / Skill Store | 2026-07-19 | 2026-07-19T18:40:00+08:00 | TRADAR-V1.0.0-factual-change-explorer / Skill Store v1.6.4 | Report prose, opportunity/trend scoring, heat or maturity judgments, community/viewpoint/V3 inputs, missing coverage disclosure, or untraceable period records returning to Trend Radar | Trend Radar evidence/count gate + entity-kind tests + frontstage tests + Skill Ops + version consistency + code/rule audit + GitHub Pages deploy |
 | `V4.2-governance-alignment-20260718` | Current V4 pages / Operations Backend / column Skills / version gates | 2026-07-18 | 2026-07-18T17:19:02+08:00 | SITE-V4.2.0-entity-history / PERSON-REVIEW-V1.0 / Skill Store v1.6.3 / Git tag v4.2.1-governance-alignment | stale SITE-V3.4.5 dashboard metadata; shared IMAP preflight; Opportunity Map nested under Reports Center; duplicate root Skill sources; V3 taxonomy declared as V4 truth; unreviewed or non-natural accounts in the public person index | version consistency gate + V4 data/entity/tag tests + Skill validation/sync/audit + frontstage regression + GitHub Pages live verification |
 | `REPORTS-OMAP-freeze-independent-columns-20260718` | Reports Center / Monthly and Weekly details / Opportunity Map / report generation Skills | 2026-07-18 | 2026-07-18T13:17:22+08:00 | REPORTS-V1.0.0-periodic-report-center / OMAP-V1.0.0-independent-column / Skill Store v1.6.2 | shared `IMAP-V2.1.0` metadata returning; opportunity matrices returning to Reports Center; report cards entering Opportunity Map; DeepSeek editing HTML/navigation; page generation before the content gate; report detail pages emitting the Opportunity Map version | periodic renderer tests + report data tests + Skill validation/sync/registry rebuild + frontstage regression + desktop/mobile smoke + GitHub Pages live verification |
 | `FLV-V1.1.0-freeze-history-backfill-20260718` | First-Line Viewpoints feed / people index / person timelines | 2026-07-18 | 2026-07-18T13:08:53+08:00 | FLV-V1.1.0-history-backfill | current-day-only viewpoint feed; historical snapshots bypassing approved Chinese translation provenance, original-source URL, AI-relevance, or opinion-tag gates; translation text determining AI relevance; duplicate original URLs; builders viewpoints entering Business Signals, factual relationships, or trend evidence | history backfill stats + First-Line V4 data gate + current builders gate + focused frontstage regression + GitHub Pages live verification |

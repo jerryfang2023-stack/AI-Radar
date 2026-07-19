@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="wavesight-site-version" content="SITE-V4.2.0-entity-history">
+  <meta name="wavesight-column-version" content="TRADAR-V1.0.0-factual-change-explorer">
+  <title>趋势雷达｜观澜 AI</title>
+  <link rel="icon" href="assets/brand/logo-wavesight-reference-symbol.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/data-center-v4.css?v=20260719-trend-radar">
+  <link rel="stylesheet" href="assets/trend-radar.css?v=20260719-trend-radar">
+</head>
+<body>
+  <a class="dc-skip-link" href="#main-content">跳到主要内容</a>
+  <header class="dc-brandbar">
+    <button class="dc-nav-toggle" type="button" aria-label="打开导航" aria-expanded="false" data-nav-toggle>☰</button>
+    <a class="dc-brand" href="data-center.html?view=events" aria-label="观澜 AI 数据中心">
+      <img src="assets/brand/logo-wavesight-reference-horizontal.svg" alt="观澜 AI Wavesight AI">
+    </a>
+  </header>
+  <div class="dc-shell">
+    <aside class="dc-sidebar" data-sidebar>
+      <nav aria-label="主导航">
+        <section class="dc-nav-group" aria-labelledby="data-center-nav-title">
+          <h2 id="data-center-nav-title">数据中心</h2>
+          <a href="data-center.html?view=events">商业事件</a>
+          <a href="data-center.html?view=fde">FDE 实施</a>
+          <a href="data-center.html?view=hardware">AI 硬件</a>
+          <a href="data-center.html?view=community">社群情报</a>
+          <a href="data-center.html?view=viewpoints">一线观点</a>
+          <a href="data-center.html?view=index">实体索引</a>
+        </section>
+        <section class="dc-nav-group dc-nav-apps" aria-labelledby="app-center-nav-title">
+          <h2 id="app-center-nav-title">应用中心</h2>
+          <a href="trend-radar.html" aria-current="page">趋势雷达</a>
+          <a href="intelligence-map.html">行业报告</a>
+          <a href="opportunity-map.html">机会地图</a>
+        </section>
+      </nav>
+    </aside>
+    <main class="dc-main tr-main" id="main-content" tabindex="-1">
+      <div class="tr-shell">
+        <header class="dc-page-head tr-page-head">
+          <h1>趋势雷达</h1>
+          <span class="dc-page-description">AI 行业日、周、月事实变化与结构对比</span>
+          <span class="tr-date" data-latest-date>读取中</span>
+        </header>
+        <div class="tr-controls">
+          <div class="tr-tabs" role="group" aria-label="时间粒度">
+            <button type="button" data-period="day" aria-pressed="true">日变化</button>
+            <button type="button" data-period="week" aria-pressed="false">周变化</button>
+            <button type="button" data-period="month" aria-pressed="false">月变化</button>
+          </div>
+          <label class="tr-period-select"><span>观察期</span><select data-period-key aria-label="选择观察期"></select></label>
+        </div>
+        <div class="tr-status" role="status" data-status>正在读取事实变化数据…</div>
+        <section class="tr-content" data-content aria-live="polite"></section>
+      </div>
+    </main>
+  </div>
+  <script src="assets/v4-report-shell.js?v=20260719-trend-radar"></script>
+  <script src="assets/trend-radar.js?v=20260719-trend-radar"></script>
+</body>
+</html>
