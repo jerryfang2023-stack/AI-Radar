@@ -1,25 +1,50 @@
 ---
 type: ai_hardware_daily
 date: 2026-07-09
-status: synced
-source: "01-SiteV2/site/data/v3-data-observation-desk.json"
-item_count: 1
+hardware_version: HARDWARE-V1.0
+status: current
+source: "01-SiteV2/content/11-databases/data-center-v4/2026-07-09/hardware-records.json"
+item_count: 2
 ---
 
 # 2026-07-09 AI Hardware
 
-本页归档 Business Signals 的独立 AI 硬件观察镜头。它保留投资融资、场景服务和趋势创新的来源证据，不新增第四类正式 Signal Card。
+> 本页直接投影自 Data Center V4 的 HardwareRecord，只记录来源支持的硬件事实。
 
-## 1. AI 芯片公司 SambaNova 以 110 亿美元估值完成 10 亿美元 Series F 首次交割
+- [当日 V4 CanonicalEvent](../../11-databases/data-center-v4/2026-07-09/canonical-events.json)
 
-- id: `AIHW-CARD-SIG-20260709-A01`
-- linked_card_id: `SIG-20260709-A01`
-- subject: SambaNova Systems
-- source_title: AI chip maker SambaNova raises $1B at $11B valuation, 5 months after last mega round | TechCrunch
-- source_url: https://techcrunch.com/2026/07/08/sambanova-draws-1b-at-11b-valuation-in-series-f-first-close/
-- source_name: techcrunch.com
-- observation_track: 投资融资
-- promotion_status: promoted_to_signal_card
-- fact: SambaNova Systems 完成 Series F 首次交割，融资 10 亿美元，估值 110 亿美元，由 General Atlantic 领投，更多投资方预计随后加入。公司表示资金将用于扩展业务，并保障供应链以满足未来 12 个月交付需求。
-- raw_archive: [Raw 原文快照](../../01-raw/originals/2026-07-09/r-011-ai-chip-maker-sambanova-raises-1b-at-11b-valuation-5-months-after-last.md) / [Raw JSON](../../01-raw/originals/2026-07-09/r-011-ai-chip-maker-sambanova-raises-1b-at-11b-valuation-5-months-after-last.json)
-- signal_card: [Signal Card](../../../knowledge/01-Signal-Cards/funding/2026-07-09--signal--sambanova-systems-auto-signal-p-011.md)
+## 1. 谷歌云推出两款新AI芯片以与英伟达竞争
+
+- hardware_record_id: `HW-1e7a304ddf70a753`
+- event_id: `EV-96c8ce4ee89adb84`
+- event_time: 未披露
+- event_type: hardware_product
+- hardware_type: gpu
+- compute_layer: data_center
+- supplier: NVIDIA
+- customer: Google Cloud
+- process_node: 未披露
+- capacity: 未披露
+- site: Google Cloud
+- region: 未披露
+- contract_value: 未披露
+- shipment_date: 未披露
+- source: [keyword search / Anysearch](https://techcrunch.com/2026/04/22/google-cloud-next-new-tpu-ai-chips-compete-with-nvidia)
+
+## 2. 热门法国初创公司 ZML 发布免费产品，加速多款 AI 芯片的推理速度
+
+- hardware_record_id: `HW-1d31a51ac03b7e2c`
+- event_id: `EV-6139380f3362803b`
+- event_time: 未披露
+- event_type: hardware_product
+- hardware_type: semiconductor
+- compute_layer: 未披露
+- supplier: 未披露
+- customer: 未披露
+- process_node: 未披露
+- capacity: 未披露
+- site: 未披露
+- region: 未披露
+- contract_value: 未披露
+- shipment_date: 未披露
+- source: [TechCrunch AI](https://techcrunch.com/2026/07/08/hot-french-startup-zml-releases-free-product-to-speed-inference-across-lots-of-ai-chips)

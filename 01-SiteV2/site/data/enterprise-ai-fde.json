@@ -1,17 +1,89 @@
 {
   "meta": {
     "version": "EAI-V1.2.0-raw-card-ingestion-boundary",
-    "generatedAt": "2026-07-15T09:49:29.780Z",
-    "activeDate": "2026-07-15",
+    "generatedAt": "2026-07-19T06:41:16.388Z",
+    "activeDate": "2026-07-19",
     "source": "01-SiteV2/site/data/v3-data-observation-desk.json",
-    "fdePoolCount": 3,
-    "itemCount": 3,
-    "totalFdePoolCount": 18,
-    "totalItemCount": 18,
+    "fdePoolCount": 0,
+    "itemCount": 0,
+    "totalFdePoolCount": 32,
+    "totalItemCount": 32,
     "historyMode": "all_available_dates",
     "boundary": "FDE is an Enterprise AI lens pool, not a fourth Business Signals Card type."
   },
   "fdePool": [
+    {
+      "type": "enterprise_ai_fde_pool_item",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "Anthropic 与私募巨头合资成立 AI 实施公司 Ode，初始资金 15 亿美元",
+      "originalTitle": "Anthropic 与私募巨头合资成立 AI 实施公司 Ode，初始资金 15 亿美元",
+      "sourceTitle": "Anthropic 与私募巨头合资成立 AI 实施公司 Ode，初始资金 15 亿美元",
+      "date": "2026-07-16",
+      "subject": "Anthropic",
+      "source": "techcrunch.com",
+      "sourceName": "techcrunch.com",
+      "sourceUrl": "https://techcrunch.com/2026/07/15/anthropic-blackstone-bet-the-next-trillion-dollar-ai-business-is-implementation-not-models",
+      "sourceLevel": "A",
+      "importanceScore": 5,
+      "publishedAt": "",
+      "tags": {},
+      "flatTags": [],
+      "displayTags": [
+        {
+          "id": "product-service",
+          "label": "产品"
+        }
+      ],
+      "summary": "Anthropic 与 Blackstone 等私募股权公司合资成立 AI 实施公司 Ode，初始资金 15 亿美元。Ode 以\"Claude-first\"原则为大型企业定制 AI 系统，已收购 AI 工程服务初创公司 Fractional AI 作为核心团队，目前拥有 100 名工程师。",
+      "translatedFact": "Anthropic 与 Blackstone 等私募股权公司合资成立 AI 实施公司 Ode，初始资金 15 亿美元。Ode 以\"Claude-first\"原则为大型企业定制 AI 系统，已收购 AI 工程服务初创公司 Fractional AI 作为核心团队，目前拥有 100 名工程师。",
+      "originalHighlights": [
+        "Anthropic 与 Blackstone 等私募股权公司合资成立 AI 实施公司 Ode，初始资金 15 亿美元。Ode 以\"Claude-first\"原则为大型企业定制 AI 系统，已收购 AI 工程服务初创公司 Fractional AI 作为核心团队，目前拥有 100 名工程师。"
+      ],
+      "visibleFragment": "Anthropic 与 Blackstone 等私募股权公司合资成立 AI 实施公司 Ode，初始资金 15 亿美元。Ode 以\"Claude-first\"原则为大型企业定制 AI 系统，已收购 AI 工程服务初创公司 Fractional AI 作为核心团队，目前拥有 100 名工程师。",
+      "sourceLinks": [
+        "https://techcrunch.com/2026/07/15/anthropic-blackstone-bet-the-next-trillion-dollar-ai-business-is-implementation-not-models"
+      ],
+      "status": "pooled",
+      "promotionStatus": "fde_lens_pool_only",
+      "id": "FDE-2026-07-16-P-013",
+      "assetLevel": "enterprise_ai_fde_pool",
+      "evidenceGate": "core_evidence_candidate",
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "stage": "",
+      "evidence": "",
+      "track": "",
+      "largeVendorKey": "anthropic",
+      "largeVendor": true,
+      "frontstageRankScore": 1220,
+      "frontstageEditorialScore": 1220,
+      "frontstageEvidenceScore": 97,
+      "frontstageSelectionReasons": [
+        "FDE lens pool",
+        "source-backed implementation evidence"
+      ],
+      "frontstageValueDescription": "FDE lens pool item preserved for the Enterprise AI lens.",
+      "frontstageQualityWarnings": [],
+      "frontstageGenericCandidate": false,
+      "fromCorePool": true,
+      "enterpriseAiLensPriority": true,
+      "sourceRef": "P-013",
+      "titleZh": "Anthropic 与私募巨头合资成立 AI 实施公司 Ode，初始资金 15 亿美元",
+      "titleTranslationStatus": "translated",
+      "titleTranslationMethod": "fde_lens_source_rule",
+      "factExtractionStatus": "extracted_at_fde_lens_pool_build",
+      "factExtractionMethod": "pool_key_excerpts_and_fde_implementation_analysis",
+      "implementationAnalysis": {
+        "demand": "原文显示，企业侧需求集中在把 Agent 或模型接入业务系统，需要把 AI / Agent 接入实际业务流程，而不是停留在演示或通用工具层。",
+        "services": "提供的服务是围绕企业工作流的 AI 实施与交付：做技术 scoping、系统接入、工作流配置、验证和上线支持。",
+        "result": "原文未披露最终实施结果；目前只能确认该项目或产品已经进入公开发布、融资、试点、客户交付或实施准备阶段。",
+        "sourceBasis": "Anthropic 与 Blackstone 等私募股权公司合资成立 AI 实施公司 Ode，初始资金 15 亿美元。Ode 以\"Claude-first\"原则为大型企业定制 AI 系统，已收购 AI 工程服务初创公司 Fractional AI 作为核心团队，目前拥有 100 名工程师。"
+      },
+      "generatedTitle": "Anthropic 与私募巨头合资成立 AI 实施公司 Ode，初始资金 15 亿美元",
+      "displayTitle": "Anthropic 与私募巨头合资成立 AI 实施公司 Ode，初始资金 15 亿美元"
+    },
     {
       "type": "enterprise_ai_fde_pool_item",
       "category": "product-service",
@@ -319,9 +391,9 @@
       "generatedTitle": "IMS Gear 用 Synera Agentic AI 将 RFQ 从数周压缩到 10 分钟",
       "displayTitle": "IMS Gear 用 Synera Agentic AI 将 RFQ 从数周压缩到 10 分钟",
       "largeVendor": false,
-      "frontstageRankScore": 650,
-      "frontstageEditorialScore": 650,
-      "frontstageEvidenceScore": 62,
+      "frontstageRankScore": 622,
+      "frontstageEditorialScore": 622,
+      "frontstageEvidenceScore": 34,
       "frontstageSelectionReasons": [
         "FDE lens pool",
         "source-backed implementation evidence"
@@ -420,7 +492,7 @@
       "type": "signal_card",
       "category": "product-service",
       "categoryLabel": "产品",
-      "title": "Taskade 发布 TSK-1 系统内核，为工作区应用提供统一智能运行层",
+      "title": "Taskade TSK-1 发布：Taskade 系统内核（2026）",
       "originalTitle": "Introducing Taskade TSK-1: The Taskade System Kernel (2026) | Taskade Blog",
       "date": "2026-07-13",
       "subject": "Taskade",
@@ -617,8 +689,8 @@
       "evidence": "evidence-product-launch",
       "largeVendorKey": "",
       "track": "track-enterprise-workflow",
-      "generatedTitle": "Taskade 发布 TSK-1 系统内核，为工作区应用提供统一智能运行层",
-      "displayTitle": "Taskade 发布 TSK-1 系统内核，为工作区应用提供统一智能运行层",
+      "generatedTitle": "Taskade TSK-1 发布：Taskade 系统内核（2026）",
+      "displayTitle": "Taskade TSK-1 发布：Taskade 系统内核（2026）",
       "largeVendor": false,
       "frontstageRankScore": 2950,
       "frontstageEditorialScore": 2950,
@@ -635,7 +707,7 @@
       "promotionStatus": "promoted_to_signal_card",
       "enterpriseAiLensPriority": true,
       "sourceRef": "P-004",
-      "titleZh": "Taskade 发布 TSK-1 系统内核，为工作区应用提供统一智能运行层",
+      "titleZh": "Taskade TSK-1 发布：Taskade 系统内核（2026）",
       "titleTranslationStatus": "translated",
       "titleTranslationMethod": "fde_lens_source_rule",
       "factExtractionStatus": "missing_fde_lens_fact",
@@ -652,7 +724,7 @@
       "type": "signal_card",
       "category": "case",
       "categoryLabel": "案例",
-      "title": "Simplexity Robotics 成立 11 个月即向生产线交付 100 台 i7 Pro 机器人，并部署于 Leaderdrive 与 AI 基础设施工厂",
+      "title": "Simplexity Robotics 成立 11 个月即向生产线交付 100 台 i7 Pro 机器人，并在 Leaderdrive 和 AI 基础设施工厂部署",
       "originalTitle": "Simplexity Robotics Ships 100 i7 Pro Robots to Production Lines at 11 Months Old, Deploys at Leaderdrive and AI Infrastructure Factories | RobotsBeat",
       "date": "2026-07-13",
       "subject": "Simplexity Robotics",
@@ -766,8 +838,8 @@
       "evidence": "evidence-customer-adoption",
       "largeVendorKey": "",
       "track": "track-ai-infra",
-      "generatedTitle": "Simplexity Robotics 成立 11 个月即向生产线交付 100 台 i7 Pro 机器人，并部署于 Leaderdrive 与 AI 基础设施工厂",
-      "displayTitle": "Simplexity Robotics 成立 11 个月即向生产线交付 100 台 i7 Pro 机器人，并部署于 Leaderdrive 与 AI 基础设施工厂",
+      "generatedTitle": "Simplexity Robotics 成立 11 个月即向生产线交付 100 台 i7 Pro 机器人，并在 Leaderdrive 和 AI 基础设施工厂部署",
+      "displayTitle": "Simplexity Robotics 成立 11 个月即向生产线交付 100 台 i7 Pro 机器人，并在 Leaderdrive 和 AI 基础设施工厂部署",
       "largeVendor": false,
       "frontstageRankScore": 1150,
       "frontstageEditorialScore": 1150,
@@ -784,7 +856,7 @@
       "promotionStatus": "promoted_to_signal_card",
       "enterpriseAiLensPriority": true,
       "sourceRef": "P-035",
-      "titleZh": "Simplexity Robotics 成立 11 个月即向生产线交付 100 台 i7 Pro 机器人，并部署于 Leaderdrive 与 AI 基础设施工厂",
+      "titleZh": "Simplexity Robotics 成立 11 个月即向生产线交付 100 台 i7 Pro 机器人，并在 Leaderdrive 和 AI 基础设施工厂部署",
       "titleTranslationStatus": "translated",
       "titleTranslationMethod": "fde_lens_source_rule",
       "factExtractionStatus": "extracted_at_fde_lens_pool_build",
@@ -1048,11 +1120,2183 @@
       "displayTitle": "亚马逊推出10亿美元FDE新部门，紧随OpenAI和Anthropic"
     },
     {
+      "id": "FDE-2026-06-25-P-036",
+      "type": "signal_card",
+      "category": "case",
+      "categoryLabel": "案例",
+      "title": "LLM推理优化：AI工程师实用指南",
+      "originalTitle": "LLM Inference Optimization: A Practical Guide for AI Engineers",
+      "date": "2026-06-25",
+      "subject": "LLM Inference Optimization",
+      "source": "jobsbyculture.com",
+      "sourceName": "jobsbyculture.com",
+      "sourceUrl": "https://jobsbyculture.com/blog/llm-inference-optimization-guide-2026",
+      "sourceLevel": "B",
+      "evidenceStrength": "",
+      "importanceScore": 5,
+      "poolRoutes": [
+        "core_pool",
+        "emerging_pool"
+      ],
+      "publishedAt": "",
+      "tags": {
+        "track": [
+          "track-ai-infra"
+        ],
+        "function": [],
+        "scenario": [],
+        "customer": [],
+        "evidence": [
+          "evidence-customer-adoption"
+        ]
+      },
+      "flatTags": [
+        "track-ai-infra",
+        "evidence-customer-adoption"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-infra",
+          "label": "AI 基础设施"
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "label": "客户采用"
+        }
+      ],
+      "opportunitySignals": {
+        "schemaVersion": "opportunity-signals-v1",
+        "evidenceBasis": "raw_source_text",
+        "sourceExcerpt": "If you're deploying LLMs in production in 2026, inference is almost certainly your biggest line item.",
+        "missingFields": [
+          "specific_task",
+          "product_form",
+          "delivery_model"
+        ],
+        "labels": {
+          "buyer_or_user": [
+            {
+              "id": "enterprise_ai_owner",
+              "label": "Enterprise AI / transformation owner"
+            }
+          ],
+          "team_or_function": [],
+          "specific_task": [],
+          "business_action": [
+            {
+              "id": "customer_deployment",
+              "label": "Customer deployment, rollout, pilot, case study, or adoption"
+            },
+            {
+              "id": "pricing_change",
+              "label": "Pricing, packaging, cost, usage-limit, or billing change"
+            }
+          ],
+          "product_form": [],
+          "delivery_model": [],
+          "pain_or_constraint": [
+            {
+              "id": "api_cost_spike",
+              "label": "AI usage cost, inference cost, or billing pressure"
+            },
+            {
+              "id": "latency_sensitive",
+              "label": "Latency, reliability, or production performance constraint"
+            }
+          ],
+          "adoption_evidence": [
+            {
+              "id": "customer_metric",
+              "label": "Customer outcome metric, usage number, or quantified result"
+            },
+            {
+              "id": "deployment_scale",
+              "label": "Deployment scale, seats, locations, users, or volume disclosed"
+            }
+          ],
+          "source_evidence_type": []
+        },
+        "buyer_or_user": [
+          "enterprise_ai_owner"
+        ],
+        "buyerOrUser": [
+          "enterprise_ai_owner"
+        ],
+        "team_or_function": [],
+        "teamOrFunction": [],
+        "specific_task": [],
+        "specificTask": [],
+        "business_action": [
+          "customer_deployment",
+          "pricing_change"
+        ],
+        "businessAction": [
+          "customer_deployment",
+          "pricing_change"
+        ],
+        "product_form": [],
+        "productForm": [],
+        "delivery_model": [],
+        "deliveryModel": [],
+        "pain_or_constraint": [
+          "api_cost_spike",
+          "latency_sensitive"
+        ],
+        "painOrConstraint": [
+          "api_cost_spike",
+          "latency_sensitive"
+        ],
+        "adoption_evidence": [
+          "customer_metric",
+          "deployment_scale"
+        ],
+        "adoptionEvidence": [
+          "customer_metric",
+          "deployment_scale"
+        ],
+        "source_evidence_type": [],
+        "sourceEvidenceType": []
+      },
+      "summary": "jobsbyculture 的材料指向 AI 基础设施能力，重点在推理、模型部署或算力调用成本。",
+      "translatedFact": "jobsbyculture 的材料指向 AI 基础设施能力，重点在推理、模型部署或算力调用成本。",
+      "originalHighlights": [],
+      "visibleFragment": "jobsbyculture 的材料指向 AI 基础设施能力，重点在推理、模型部署或算力调用成本。",
+      "sourceLinks": [
+        "https://jobsbyculture.com/blog/llm-inference-optimization-guide-2026"
+      ],
+      "sourceTitle": "LLM Inference Optimization: A Practical Guide for AI Engineers",
+      "status": "published",
+      "assetLevel": "enterprise_ai_fde_pool",
+      "evidenceGate": "core_evidence_candidate",
+      "stage": "",
+      "evidence": "evidence-customer-adoption",
+      "largeVendorKey": "",
+      "track": "track-ai-infra",
+      "generatedTitle": "LLM推理优化：AI工程师实用指南",
+      "displayTitle": "LLM推理优化：AI工程师实用指南",
+      "largeVendor": false,
+      "frontstageRankScore": 1150,
+      "frontstageEditorialScore": 1150,
+      "frontstageEvidenceScore": 97,
+      "frontstageSelectionReasons": [
+        "FDE lens pool",
+        "source-backed implementation evidence"
+      ],
+      "frontstageValueDescription": "FDE lens pool item preserved for the Enterprise AI lens.",
+      "frontstageQualityWarnings": [],
+      "frontstageGenericCandidate": false,
+      "fromCorePool": true,
+      "linkedCardId": "SIG-20260625-A04",
+      "promotionStatus": "promoted_to_signal_card",
+      "enterpriseAiLensPriority": true,
+      "sourceRef": "P-036",
+      "titleZh": "LLM推理优化：AI工程师实用指南",
+      "titleTranslationStatus": "translated",
+      "titleTranslationMethod": "fde_lens_source_rule",
+      "factExtractionStatus": "extracted_at_fde_lens_pool_build",
+      "factExtractionMethod": "pool_key_excerpts_and_fde_implementation_analysis",
+      "implementationAnalysis": {
+        "demand": "原文显示，企业侧需求集中在把 Agent 或模型接入业务系统，需要把 AI / Agent 接入实际业务流程，而不是停留在演示或通用工具层。",
+        "services": "提供的服务是围绕企业工作流的 AI 实施与交付：做技术 scoping、系统接入、工作流配置、验证和上线支持。",
+        "result": "实施结果已经进入生产、部署或上线阶段；原文未披露可独立核验的 ROI 或长期运行指标。",
+        "sourceBasis": "jobsbyculture 的材料指向 AI 基础设施能力，重点在推理、模型部署或算力调用成本。"
+      }
+    },
+    {
+      "id": "FDE-2026-06-22-P-046",
+      "type": "signal_card",
+      "category": "case",
+      "categoryLabel": "案例",
+      "title": "OpenAI政府持股🇺🇸，谷歌计算交易🚀，微软Scout发布🤖",
+      "originalTitle": "OpenAI govt stake 🇺🇸, Google compute deal 🚀, Microsoft Scout launch 🤖",
+      "date": "2026-06-22",
+      "subject": "Tldr",
+      "source": "TLDR AI Newsletter",
+      "sourceName": "TLDR AI Newsletter",
+      "sourceUrl": "https://tldr.tech/ai/2026-06-08",
+      "sourceLevel": "B",
+      "evidenceStrength": "",
+      "importanceScore": 5,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "publishedAt": "",
+      "tags": {
+        "track": [
+          "track-ai-infra",
+          "track-enterprise-workflow"
+        ],
+        "function": [],
+        "scenario": [],
+        "customer": [],
+        "evidence": [
+          "evidence-customer-adoption"
+        ]
+      },
+      "flatTags": [
+        "track-ai-infra",
+        "track-enterprise-workflow",
+        "evidence-customer-adoption"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-infra",
+          "label": "AI 基础设施"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "label": "企业工作流"
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "label": "客户采用"
+        }
+      ],
+      "opportunitySignals": {
+        "schemaVersion": "opportunity-signals-v1",
+        "evidenceBasis": "raw_source_text",
+        "sourceExcerpt": "",
+        "missingFields": [
+          "specific_task",
+          "delivery_model"
+        ],
+        "labels": {
+          "buyer_or_user": [
+            {
+              "id": "enterprise_ai_owner",
+              "label": "Enterprise AI / transformation owner"
+            }
+          ],
+          "team_or_function": [],
+          "specific_task": [],
+          "business_action": [
+            {
+              "id": "customer_deployment",
+              "label": "Customer deployment, rollout, pilot, case study, or adoption"
+            }
+          ],
+          "product_form": [
+            {
+              "id": "copilot",
+              "label": "Copilot or assistant embedded into an existing workflow"
+            }
+          ],
+          "delivery_model": [],
+          "pain_or_constraint": [
+            {
+              "id": "latency_sensitive",
+              "label": "Latency, reliability, or production performance constraint"
+            },
+            {
+              "id": "workflow_integration",
+              "label": "Integration into existing workflow or systems"
+            }
+          ],
+          "adoption_evidence": [
+            {
+              "id": "pilot_or_poc",
+              "label": "Pilot, POC, trial, or early rollout"
+            }
+          ],
+          "source_evidence_type": []
+        },
+        "buyer_or_user": [
+          "enterprise_ai_owner"
+        ],
+        "buyerOrUser": [
+          "enterprise_ai_owner"
+        ],
+        "team_or_function": [],
+        "teamOrFunction": [],
+        "specific_task": [],
+        "specificTask": [],
+        "business_action": [
+          "customer_deployment"
+        ],
+        "businessAction": [
+          "customer_deployment"
+        ],
+        "product_form": [
+          "copilot"
+        ],
+        "productForm": [
+          "copilot"
+        ],
+        "delivery_model": [],
+        "deliveryModel": [],
+        "pain_or_constraint": [
+          "latency_sensitive",
+          "workflow_integration"
+        ],
+        "painOrConstraint": [
+          "latency_sensitive",
+          "workflow_integration"
+        ],
+        "adoption_evidence": [
+          "pilot_or_poc"
+        ],
+        "adoptionEvidence": [
+          "pilot_or_poc"
+        ],
+        "source_evidence_type": [],
+        "sourceEvidenceType": []
+      },
+      "summary": "来源材料显示，Tldr 的客户部署或应用案例涉及模型部署和算力调用。",
+      "translatedFact": "来源材料显示，Tldr 的客户部署或应用案例涉及模型部署和算力调用。",
+      "originalHighlights": [
+        "Gemma 4 QAT 模型面向手机和笔记本效率优化，核心目标是降低本地设备部署的内存占用。"
+      ],
+      "visibleFragment": "来源材料显示，Tldr 的客户部署或应用案例涉及模型部署和算力调用。",
+      "sourceLinks": [
+        "https://tldr.tech/ai/2026-06-08"
+      ],
+      "sourceTitle": "OpenAI govt stake 🇺🇸, Google compute deal 🚀, Microsoft Scout launch 🤖",
+      "status": "published",
+      "assetLevel": "enterprise_ai_fde_pool",
+      "evidenceGate": "core_evidence_candidate",
+      "stage": "",
+      "evidence": "evidence-customer-adoption",
+      "largeVendorKey": "google",
+      "track": "track-ai-infra",
+      "generatedTitle": "OpenAI政府持股🇺🇸，谷歌计算交易🚀，微软Scout发布🤖",
+      "displayTitle": "OpenAI政府持股🇺🇸，谷歌计算交易🚀，微软Scout发布🤖",
+      "largeVendor": true,
+      "frontstageRankScore": 1010,
+      "frontstageEditorialScore": 1010,
+      "frontstageEvidenceScore": 79,
+      "frontstageSelectionReasons": [
+        "FDE lens pool",
+        "source-backed implementation evidence"
+      ],
+      "frontstageValueDescription": "FDE lens pool item preserved for the Enterprise AI lens.",
+      "frontstageQualityWarnings": [],
+      "frontstageGenericCandidate": false,
+      "fromCorePool": true,
+      "linkedCardId": "SIG-20260622-A15",
+      "promotionStatus": "promoted_to_signal_card",
+      "enterpriseAiLensPriority": true,
+      "sourceRef": "P-046",
+      "titleZh": "OpenAI政府持股🇺🇸，谷歌计算交易🚀，微软Scout发布🤖",
+      "titleTranslationStatus": "translated",
+      "titleTranslationMethod": "fde_lens_source_rule",
+      "factExtractionStatus": "missing_fde_lens_fact",
+      "factExtractionMethod": "pool_key_excerpts_and_fde_implementation_analysis",
+      "implementationAnalysis": {
+        "demand": "原文显示，企业侧需求集中在会议记录、知识沉淀与团队协作，需要把 AI / Agent 接入实际业务流程，而不是停留在演示或通用工具层。",
+        "services": "提供的服务是面向会议记录、知识沉淀与团队协作的平台或 Agent 系统，把数据、审批、工具调用和人工校验串成可运行流程。",
+        "result": "实施结果已经进入生产、部署或上线阶段；原文未披露可独立核验的 ROI 或长期运行指标。",
+        "sourceBasis": "来源材料显示，Tldr 的客户部署或应用案例涉及模型部署和算力调用。"
+      }
+    },
+    {
+      "id": "FDE-2026-06-21-P-009",
+      "type": "signal_card",
+      "category": "case",
+      "categoryLabel": "案例",
+      "title": "随着智能体 AI 进入“困难期”，Salesforce 的前向部署工程师随时准备为企业提供支持。Jennifer Cramer 详解其运作方式。",
+      "originalTitle": "As agentic AI hits 'a difficult age', Salesforce's Forward Deployment Engineers are on hand to, well, hold enterprise hands. Jennifer Cramer explains how it works",
+      "date": "2026-06-21",
+      "subject": "Diginomica",
+      "source": "diginomica.com",
+      "sourceName": "diginomica.com",
+      "sourceUrl": "https://diginomica.com/agentic-ai-hits-difficult-age-salesforces-forward-deployment-engineers-are-hand-well-hold",
+      "sourceLevel": "B",
+      "evidenceStrength": "",
+      "importanceScore": 5,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "publishedAt": "",
+      "tags": {
+        "track": [
+          "track-enterprise-workflow"
+        ],
+        "function": [
+          "function-sales"
+        ],
+        "scenario": [
+          "scenario-sales-briefing"
+        ],
+        "customer": [],
+        "evidence": [
+          "evidence-customer-adoption"
+        ]
+      },
+      "flatTags": [
+        "track-enterprise-workflow",
+        "function-sales",
+        "scenario-sales-briefing",
+        "evidence-customer-adoption"
+      ],
+      "displayTags": [
+        {
+          "id": "track-enterprise-workflow",
+          "label": "企业工作流"
+        },
+        {
+          "id": "scenario-sales-briefing",
+          "label": "销售情报与跟进"
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "label": "客户采用"
+        }
+      ],
+      "opportunitySignals": {
+        "schemaVersion": "opportunity-signals-v1",
+        "evidenceBasis": "raw_source_text",
+        "sourceExcerpt": "As agentic AI hits 'a difficult age', Salesforce's Forward Deployment Engineers are on hand to, well, hold enterprise ha As agentic AI hits 'a difficult age', Salesforce's Forward Deployment Engineers are on hand to, we...",
+        "missingFields": [],
+        "labels": {
+          "buyer_or_user": [
+            {
+              "id": "enterprise_ai_owner",
+              "label": "Enterprise AI / transformation owner"
+            },
+            {
+              "id": "sales_team",
+              "label": "Sales or revenue team"
+            }
+          ],
+          "team_or_function": [
+            {
+              "id": "sales",
+              "label": "Sales / revenue operations"
+            }
+          ],
+          "specific_task": [
+            {
+              "id": "sales_lead_research",
+              "label": "Lead research, account research, or pipeline enrichment"
+            }
+          ],
+          "business_action": [
+            {
+              "id": "customer_deployment",
+              "label": "Customer deployment, rollout, pilot, case study, or adoption"
+            },
+            {
+              "id": "hiring_fde",
+              "label": "FDE, solution engineer, or customer-embedded delivery hiring"
+            }
+          ],
+          "product_form": [
+            {
+              "id": "fde_service",
+              "label": "Forward-deployed engineering or implementation service"
+            }
+          ],
+          "delivery_model": [
+            {
+              "id": "fde_delivery",
+              "label": "FDE or customer-embedded delivery"
+            }
+          ],
+          "pain_or_constraint": [
+            {
+              "id": "workflow_integration",
+              "label": "Integration into existing workflow or systems"
+            }
+          ],
+          "adoption_evidence": [
+            {
+              "id": "third_party_report",
+              "label": "Third-party report, industry report, or analyst evidence"
+            }
+          ],
+          "source_evidence_type": []
+        },
+        "buyer_or_user": [
+          "enterprise_ai_owner",
+          "sales_team"
+        ],
+        "buyerOrUser": [
+          "enterprise_ai_owner",
+          "sales_team"
+        ],
+        "team_or_function": [
+          "sales"
+        ],
+        "teamOrFunction": [
+          "sales"
+        ],
+        "specific_task": [
+          "sales_lead_research"
+        ],
+        "specificTask": [
+          "sales_lead_research"
+        ],
+        "business_action": [
+          "customer_deployment",
+          "hiring_fde"
+        ],
+        "businessAction": [
+          "customer_deployment",
+          "hiring_fde"
+        ],
+        "product_form": [
+          "fde_service"
+        ],
+        "productForm": [
+          "fde_service"
+        ],
+        "delivery_model": [
+          "fde_delivery"
+        ],
+        "deliveryModel": [
+          "fde_delivery"
+        ],
+        "pain_or_constraint": [
+          "workflow_integration"
+        ],
+        "painOrConstraint": [
+          "workflow_integration"
+        ],
+        "adoption_evidence": [
+          "third_party_report"
+        ],
+        "adoptionEvidence": [
+          "third_party_report"
+        ],
+        "source_evidence_type": [],
+        "sourceEvidenceType": []
+      },
+      "summary": "Diginomica 报道 Salesforce 通过 Forward Deployment Engineers 帮助企业把 Agentic AI 从试点推进到实际部署。",
+      "translatedFact": "Diginomica 报道 Salesforce 通过 Forward Deployment Engineers 帮助企业把 Agentic AI 从试点推进到实际部署。",
+      "originalHighlights": [
+        "diginomica 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
+      ],
+      "visibleFragment": "Diginomica 报道 Salesforce 通过 Forward Deployment Engineers 帮助企业把 Agentic AI 从试点推进到实际部署。",
+      "sourceLinks": [
+        "https://diginomica.com/agentic-ai-hits-difficult-age-salesforces-forward-deployment-engineers-are-hand-well-hold"
+      ],
+      "sourceTitle": "As agentic AI hits 'a difficult age', Salesforce's Forward Deployment Engineers are on hand to, well, hold enterprise hands. Jennifer Cramer explains how it works",
+      "status": "published",
+      "assetLevel": "enterprise_ai_fde_pool",
+      "evidenceGate": "core_evidence_candidate",
+      "stage": "",
+      "evidence": "evidence-customer-adoption",
+      "largeVendorKey": "salesforce",
+      "track": "track-enterprise-workflow",
+      "generatedTitle": "随着智能体 AI 进入“困难期”，Salesforce 的前向部署工程师随时准备为企业提供支持。Jennifer Cramer 详解其运作方式。",
+      "displayTitle": "随着智能体 AI 进入“困难期”，Salesforce 的前向部署工程师随时准备为企业提供支持。Jennifer Cramer 详解其运作方式。",
+      "largeVendor": true,
+      "frontstageRankScore": 1150,
+      "frontstageEditorialScore": 1150,
+      "frontstageEvidenceScore": 97,
+      "frontstageSelectionReasons": [
+        "FDE lens pool",
+        "source-backed implementation evidence"
+      ],
+      "frontstageValueDescription": "FDE lens pool item preserved for the Enterprise AI lens.",
+      "frontstageQualityWarnings": [],
+      "frontstageGenericCandidate": false,
+      "fromCorePool": true,
+      "linkedCardId": "SIG-20260621-A16",
+      "promotionStatus": "promoted_to_signal_card",
+      "enterpriseAiLensPriority": true,
+      "sourceRef": "P-009",
+      "titleZh": "随着智能体 AI 进入“困难期”，Salesforce 的前向部署工程师随时准备为企业提供支持。Jennifer Cramer 详解其运作方式。",
+      "titleTranslationStatus": "translated",
+      "titleTranslationMethod": "fde_lens_source_rule",
+      "factExtractionStatus": "missing_fde_lens_fact",
+      "factExtractionMethod": "pool_key_excerpts_and_fde_implementation_analysis",
+      "implementationAnalysis": {
+        "demand": "发现的需求是客户服务、销售跟进或工单处理需要更快响应、更准知识检索，并能嵌入现有 CRM / 服务系统。",
+        "services": "提供的服务是面向客服响应、线索跟进与知识检索的平台或 Agent 系统，把数据、审批、工具调用和人工校验串成可运行流程。",
+        "result": "实施结果已经进入生产、部署或上线阶段；原文未披露可独立核验的 ROI 或长期运行指标。",
+        "sourceBasis": "Diginomica 报道 Salesforce 通过 Forward Deployment Engineers 帮助企业把 Agentic AI 从试点推进到实际部署。"
+      }
+    },
+    {
+      "id": "FDE-2026-06-21-P-010",
+      "type": "signal_card",
+      "category": "case",
+      "categoryLabel": "案例",
+      "title": "Harvey AI的前线部署工程师：这家估值30亿美元的法律AI领导者如何在大律所内部部署 | 博客 | Perspective AI",
+      "originalTitle": "Harvey AI's Forward Deployed Engineers: How the $3B Legal AI Leader Deploys Inside BigLaw | Blog | Perspective AI",
+      "date": "2026-06-21",
+      "subject": "Harvey AI's Forward Deployed Engineers",
+      "source": "getperspective.ai",
+      "sourceName": "getperspective.ai",
+      "sourceUrl": "https://getperspective.ai/blog/harvey-ai-forward-deployed-engineers-biglaw-deployment-playbook-2026",
+      "sourceLevel": "B",
+      "evidenceStrength": "",
+      "importanceScore": 5,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "publishedAt": "",
+      "tags": {
+        "track": [
+          "track-ai-infra"
+        ],
+        "function": [],
+        "scenario": [],
+        "customer": [],
+        "evidence": [
+          "evidence-customer-adoption"
+        ]
+      },
+      "flatTags": [
+        "track-ai-infra",
+        "evidence-customer-adoption"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-infra",
+          "label": "AI 基础设施"
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "label": "客户采用"
+        }
+      ],
+      "opportunitySignals": {
+        "schemaVersion": "opportunity-signals-v1",
+        "evidenceBasis": "raw_source_text",
+        "sourceExcerpt": "Harvey AI's Forward Deployed Engineers: How the $3B Legal AI Leader Deploys Inside BigLaw | Blog Harvey AI's Forward Deployed Engineers: How the $3B Legal AI Leader Deploys Inside BigLaw | Blog | Perspective AI Harvey A...",
+        "missingFields": [],
+        "labels": {
+          "buyer_or_user": [
+            {
+              "id": "engineering_team",
+              "label": "Engineering or developer team"
+            },
+            {
+              "id": "enterprise_ai_owner",
+              "label": "Enterprise AI / transformation owner"
+            },
+            {
+              "id": "legal_team",
+              "label": "Legal, compliance, or contract team"
+            }
+          ],
+          "team_or_function": [
+            {
+              "id": "engineering",
+              "label": "Engineering / software development"
+            },
+            {
+              "id": "legal_compliance",
+              "label": "Legal / compliance"
+            }
+          ],
+          "specific_task": [
+            {
+              "id": "contract_review",
+              "label": "Contract review, clause extraction, or legal document work"
+            },
+            {
+              "id": "internal_tool_building",
+              "label": "Building internal tools, apps, or automations"
+            }
+          ],
+          "business_action": [
+            {
+              "id": "customer_deployment",
+              "label": "Customer deployment, rollout, pilot, case study, or adoption"
+            },
+            {
+              "id": "partnership_integration",
+              "label": "Partnership, integration, channel, or ecosystem move"
+            },
+            {
+              "id": "hiring_fde",
+              "label": "FDE, solution engineer, or customer-embedded delivery hiring"
+            }
+          ],
+          "product_form": [
+            {
+              "id": "fde_service",
+              "label": "Forward-deployed engineering or implementation service"
+            },
+            {
+              "id": "vertical_saas",
+              "label": "Vertical SaaS application for a named industry or function"
+            }
+          ],
+          "delivery_model": [
+            {
+              "id": "fde_delivery",
+              "label": "FDE or customer-embedded delivery"
+            },
+            {
+              "id": "template_pack",
+              "label": "Template, playbook, or packaged workflow"
+            }
+          ],
+          "pain_or_constraint": [
+            {
+              "id": "workflow_integration",
+              "label": "Integration into existing workflow or systems"
+            }
+          ],
+          "adoption_evidence": [
+            {
+              "id": "enterprise_plan",
+              "label": "Enterprise plan, security plan, or governance package"
+            }
+          ],
+          "source_evidence_type": []
+        },
+        "buyer_or_user": [
+          "engineering_team",
+          "enterprise_ai_owner",
+          "legal_team"
+        ],
+        "buyerOrUser": [
+          "engineering_team",
+          "enterprise_ai_owner",
+          "legal_team"
+        ],
+        "team_or_function": [
+          "engineering",
+          "legal_compliance"
+        ],
+        "teamOrFunction": [
+          "engineering",
+          "legal_compliance"
+        ],
+        "specific_task": [
+          "contract_review",
+          "internal_tool_building"
+        ],
+        "specificTask": [
+          "contract_review",
+          "internal_tool_building"
+        ],
+        "business_action": [
+          "customer_deployment",
+          "partnership_integration",
+          "hiring_fde"
+        ],
+        "businessAction": [
+          "customer_deployment",
+          "partnership_integration",
+          "hiring_fde"
+        ],
+        "product_form": [
+          "fde_service",
+          "vertical_saas"
+        ],
+        "productForm": [
+          "fde_service",
+          "vertical_saas"
+        ],
+        "delivery_model": [
+          "fde_delivery",
+          "template_pack"
+        ],
+        "deliveryModel": [
+          "fde_delivery",
+          "template_pack"
+        ],
+        "pain_or_constraint": [
+          "workflow_integration"
+        ],
+        "painOrConstraint": [
+          "workflow_integration"
+        ],
+        "adoption_evidence": [
+          "enterprise_plan"
+        ],
+        "adoptionEvidence": [
+          "enterprise_plan"
+        ],
+        "source_evidence_type": [],
+        "sourceEvidenceType": []
+      },
+      "summary": "Perspective AI 文章分析 Harvey AI 的 Forward Deployed Engineers 如何嵌入大型律所完成法律 AI 部署。",
+      "translatedFact": "Perspective AI 文章分析 Harvey AI 的 Forward Deployed Engineers 如何嵌入大型律所完成法律 AI 部署。",
+      "originalHighlights": [
+        "getperspective 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
+      ],
+      "visibleFragment": "Perspective AI 文章分析 Harvey AI 的 Forward Deployed Engineers 如何嵌入大型律所完成法律 AI 部署。",
+      "sourceLinks": [
+        "https://getperspective.ai/blog/harvey-ai-forward-deployed-engineers-biglaw-deployment-playbook-2026"
+      ],
+      "sourceTitle": "Harvey AI's Forward Deployed Engineers: How the $3B Legal AI Leader Deploys Inside BigLaw | Blog | Perspective AI",
+      "status": "published",
+      "assetLevel": "enterprise_ai_fde_pool",
+      "evidenceGate": "core_evidence_candidate",
+      "stage": "",
+      "evidence": "evidence-customer-adoption",
+      "largeVendorKey": "",
+      "track": "track-ai-infra",
+      "generatedTitle": "Harvey AI的前线部署工程师：这家估值30亿美元的法律AI领导者如何在大律所内部部署 | 博客 | Perspective AI",
+      "displayTitle": "Harvey AI的前线部署工程师：这家估值30亿美元的法律AI领导者如何在大律所内部部署 | 博客 | Perspective AI",
+      "largeVendor": false,
+      "frontstageRankScore": 1150,
+      "frontstageEditorialScore": 1150,
+      "frontstageEvidenceScore": 97,
+      "frontstageSelectionReasons": [
+        "FDE lens pool",
+        "source-backed implementation evidence"
+      ],
+      "frontstageValueDescription": "FDE lens pool item preserved for the Enterprise AI lens.",
+      "frontstageQualityWarnings": [],
+      "frontstageGenericCandidate": false,
+      "fromCorePool": true,
+      "linkedCardId": "SIG-20260621-A13",
+      "promotionStatus": "promoted_to_signal_card",
+      "enterpriseAiLensPriority": true,
+      "sourceRef": "P-010",
+      "titleZh": "Harvey AI的前线部署工程师：这家估值30亿美元的法律AI领导者如何在大律所内部部署 | 博客 | Perspective AI",
+      "titleTranslationStatus": "translated",
+      "titleTranslationMethod": "fde_lens_source_rule",
+      "factExtractionStatus": "missing_fde_lens_fact",
+      "factExtractionMethod": "pool_key_excerpts_and_fde_implementation_analysis",
+      "implementationAnalysis": {
+        "demand": "发现的需求是制造、基础设施和现场运营场景需要把 AI 从分析推进到真实设备、业务系统和安全运营中，同时降低上线、风险和客户现场约束。",
+        "services": "提供的服务是 FDE / 客户嵌入式工程交付：工程师进入客户环境，完成需求拆解、系统集成、流程验证和上线支持。",
+        "result": "实施结果已经进入生产、部署或上线阶段；原文未披露可独立核验的 ROI 或长期运行指标。",
+        "sourceBasis": "Perspective AI 文章分析 Harvey AI 的 Forward Deployed Engineers 如何嵌入大型律所完成法律 AI 部署。"
+      }
+    },
+    {
+      "id": "FDE-2026-06-20-P-022",
+      "type": "signal_card",
+      "category": "case",
+      "categoryLabel": "案例",
+      "title": "Reflection 招聘：前部署工程师 - AI 工程师",
+      "originalTitle": "Forward Deployed Engineer - AI Engineer @ Reflection - Jobs",
+      "date": "2026-06-20",
+      "subject": "Forward Deployed Engineer",
+      "source": "jobs.ashbyhq.com",
+      "sourceName": "jobs.ashbyhq.com",
+      "sourceUrl": "https://jobs.ashbyhq.com/reflectionai/8b97b583-3cc6-4834-ae2c-d5aecf22ed7d",
+      "sourceLevel": "B",
+      "evidenceStrength": "",
+      "importanceScore": 5,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "publishedAt": "",
+      "tags": {
+        "track": [
+          "track-enterprise-workflow"
+        ],
+        "function": [],
+        "scenario": [],
+        "customer": [],
+        "evidence": [
+          "evidence-customer-adoption"
+        ]
+      },
+      "flatTags": [
+        "track-enterprise-workflow",
+        "evidence-customer-adoption"
+      ],
+      "displayTags": [
+        {
+          "id": "track-enterprise-workflow",
+          "label": "企业工作流"
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "label": "客户采用"
+        }
+      ],
+      "opportunitySignals": {
+        "schemaVersion": "opportunity-signals-v1",
+        "evidenceBasis": "raw_source_text",
+        "sourceExcerpt": "Forward Deployed Engineer - AI Engineer @ Reflection - Jobs Forward Deployed Engineer - AI Engineer @ Reflection - Jobs We're looking for a core member of Reflection's Applied AI team to drive our Forward Deployed Engin...",
+        "missingFields": [
+          "adoption_evidence"
+        ],
+        "labels": {
+          "buyer_or_user": [
+            {
+              "id": "engineering_team",
+              "label": "Engineering or developer team"
+            },
+            {
+              "id": "enterprise_ai_owner",
+              "label": "Enterprise AI / transformation owner"
+            }
+          ],
+          "team_or_function": [
+            {
+              "id": "engineering",
+              "label": "Engineering / software development"
+            }
+          ],
+          "specific_task": [
+            {
+              "id": "internal_tool_building",
+              "label": "Building internal tools, apps, or automations"
+            }
+          ],
+          "business_action": [
+            {
+              "id": "customer_deployment",
+              "label": "Customer deployment, rollout, pilot, case study, or adoption"
+            },
+            {
+              "id": "hiring_fde",
+              "label": "FDE, solution engineer, or customer-embedded delivery hiring"
+            }
+          ],
+          "product_form": [
+            {
+              "id": "fde_service",
+              "label": "Forward-deployed engineering or implementation service"
+            }
+          ],
+          "delivery_model": [
+            {
+              "id": "fde_delivery",
+              "label": "FDE or customer-embedded delivery"
+            }
+          ],
+          "pain_or_constraint": [
+            {
+              "id": "workflow_integration",
+              "label": "Integration into existing workflow or systems"
+            }
+          ],
+          "adoption_evidence": [],
+          "source_evidence_type": []
+        },
+        "buyer_or_user": [
+          "engineering_team",
+          "enterprise_ai_owner"
+        ],
+        "buyerOrUser": [
+          "engineering_team",
+          "enterprise_ai_owner"
+        ],
+        "team_or_function": [
+          "engineering"
+        ],
+        "teamOrFunction": [
+          "engineering"
+        ],
+        "specific_task": [
+          "internal_tool_building"
+        ],
+        "specificTask": [
+          "internal_tool_building"
+        ],
+        "business_action": [
+          "customer_deployment",
+          "hiring_fde"
+        ],
+        "businessAction": [
+          "customer_deployment",
+          "hiring_fde"
+        ],
+        "product_form": [
+          "fde_service"
+        ],
+        "productForm": [
+          "fde_service"
+        ],
+        "delivery_model": [
+          "fde_delivery"
+        ],
+        "deliveryModel": [
+          "fde_delivery"
+        ],
+        "pain_or_constraint": [
+          "workflow_integration"
+        ],
+        "painOrConstraint": [
+          "workflow_integration"
+        ],
+        "adoption_evidence": [],
+        "adoptionEvidence": [],
+        "source_evidence_type": [],
+        "sourceEvidenceType": []
+      },
+      "summary": "Forward Deployed Engineer - AI Engineer @ Reflection - Jobs",
+      "translatedFact": "Forward Deployed Engineer - AI Engineer @ Reflection - Jobs",
+      "originalHighlights": [
+        "Jobs 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
+      ],
+      "visibleFragment": "Forward Deployed Engineer - AI Engineer @ Reflection - Jobs",
+      "sourceLinks": [
+        "https://jobs.ashbyhq.com/reflectionai/8b97b583-3cc6-4834-ae2c-d5aecf22ed7d"
+      ],
+      "sourceTitle": "Forward Deployed Engineer - AI Engineer @ Reflection - Jobs",
+      "status": "published",
+      "assetLevel": "enterprise_ai_fde_pool",
+      "evidenceGate": "core_evidence_candidate",
+      "stage": "",
+      "evidence": "evidence-customer-adoption",
+      "largeVendorKey": "",
+      "track": "track-enterprise-workflow",
+      "generatedTitle": "Reflection 招聘：前部署工程师 - AI 工程师",
+      "displayTitle": "Reflection 招聘：前部署工程师 - AI 工程师",
+      "largeVendor": false,
+      "frontstageRankScore": 1150,
+      "frontstageEditorialScore": 1150,
+      "frontstageEvidenceScore": 71,
+      "frontstageSelectionReasons": [
+        "FDE lens pool",
+        "source-backed implementation evidence"
+      ],
+      "frontstageValueDescription": "FDE lens pool item preserved for the Enterprise AI lens.",
+      "frontstageQualityWarnings": [],
+      "frontstageGenericCandidate": false,
+      "fromCorePool": true,
+      "linkedCardId": "SIG-20260620-A07",
+      "promotionStatus": "promoted_to_signal_card",
+      "enterpriseAiLensPriority": true,
+      "sourceRef": "P-022",
+      "titleZh": "Reflection 招聘：前部署工程师 - AI 工程师",
+      "titleTranslationStatus": "translated",
+      "titleTranslationMethod": "fde_lens_source_rule",
+      "factExtractionStatus": "missing_fde_lens_fact",
+      "factExtractionMethod": "pool_key_excerpts_and_fde_implementation_analysis",
+      "implementationAnalysis": {
+        "demand": "原文显示，企业侧需求集中在把 Agent 或模型接入业务系统，需要把 AI / Agent 接入实际业务流程，而不是停留在演示或通用工具层。",
+        "services": "提供的服务是 FDE / 客户嵌入式工程交付：工程师进入客户环境，完成需求拆解、系统集成、流程验证和上线支持。",
+        "result": "实施结果已经进入生产、部署或上线阶段；原文未披露可独立核验的 ROI 或长期运行指标。",
+        "sourceBasis": "Jobs 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
+      }
+    },
+    {
+      "type": "enterprise_ai_fde_pool_item",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "公司公告 - 市场数据",
+      "originalTitle": "Company Announcement - FT.com - Markets data",
+      "sourceTitle": "Company Announcement - FT.com - Markets data",
+      "date": "2026-06-20",
+      "subject": "Company Announcement",
+      "source": "markets.ft.com",
+      "sourceName": "markets.ft.com",
+      "sourceUrl": "https://markets.ft.com/data/announce/detail?dockey=600-202606082020BIZWIRE_USPRX____20260608_BW802379-1",
+      "sourceLevel": "A",
+      "importanceScore": 5,
+      "publishedAt": "",
+      "tags": {},
+      "flatTags": [],
+      "displayTags": [
+        {
+          "id": "product-service",
+          "label": "产品"
+        }
+      ],
+      "summary": "Hitachi 与 Google Cloud 扩大战略联盟，Hitachi 将建立并全球部署 FDE 模型，把 Lumada、IT/OT 能力与 Google Cloud AI 结合，用于 Physical AI、HMAX 和网络安全方案落地。",
+      "translatedFact": "Hitachi 与 Google Cloud 扩大战略联盟，Hitachi 将建立并全球部署 FDE 模型，把 Lumada、IT/OT 能力与 Google Cloud AI 结合，用于 Physical AI、HMAX 和网络安全方案落地。",
+      "originalHighlights": [
+        "Hitachi 与 Google Cloud 扩大战略联盟，Hitachi 将建立并全球部署 FDE 模型，把 Lumada、IT/OT 能力与 Google Cloud AI 结合，用于 Physical AI、HMAX 和网络安全方案落地。"
+      ],
+      "visibleFragment": "Hitachi 与 Google Cloud 扩大战略联盟，Hitachi 将建立并全球部署 FDE 模型，把 Lumada、IT/OT 能力与 Google Cloud AI 结合，用于 Physical AI、HMAX 和网络安全方案落地。",
+      "sourceLinks": [
+        "https://markets.ft.com/data/announce/detail?dockey=600-202606082020BIZWIRE_USPRX____20260608_BW802379-1"
+      ],
+      "status": "pooled",
+      "promotionStatus": "fde_lens_pool_only",
+      "id": "FDE-2026-06-20-P-051",
+      "assetLevel": "enterprise_ai_fde_pool",
+      "evidenceGate": "core_evidence_candidate",
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "stage": "",
+      "evidence": "",
+      "track": "",
+      "largeVendorKey": "",
+      "largeVendor": false,
+      "frontstageRankScore": 929.9999999999999,
+      "frontstageEditorialScore": 929.9999999999999,
+      "frontstageEvidenceScore": 97,
+      "frontstageSelectionReasons": [
+        "FDE lens pool",
+        "source-backed implementation evidence"
+      ],
+      "frontstageValueDescription": "FDE lens pool item preserved for the Enterprise AI lens.",
+      "frontstageQualityWarnings": [],
+      "frontstageGenericCandidate": false,
+      "fromCorePool": true,
+      "enterpriseAiLensPriority": true,
+      "sourceRef": "P-051",
+      "titleZh": "公司公告 - 市场数据",
+      "titleTranslationStatus": "translated",
+      "titleTranslationMethod": "fde_lens_source_rule",
+      "factExtractionStatus": "extracted_at_fde_lens_pool_build",
+      "factExtractionMethod": "pool_key_excerpts_and_fde_implementation_analysis",
+      "implementationAnalysis": {
+        "demand": "发现的需求是制造、基础设施和现场运营场景需要把 AI 从分析推进到真实设备、业务系统和安全运营中，同时降低上线、风险和客户现场约束。",
+        "services": "提供的服务是 Hitachi FDE 模型：Hitachi 咨询、AX 专家和 GlobalLogic 工程师与 Google Cloud 工程师协作，做现场约束识别、PoC、敏捷实施、HMAX/Gemini Enterprise 集成和安全方案交付。",
+        "result": "实施结果是双方将全球部署 Hitachi FDE 模型并增强 HMAX；原文提到 Hitachi 以 Customer Zero 方式验证过 Gemini Enterprise 在维护检查中的质量和效率潜力，但未披露独立 ROI 数字。",
+        "sourceBasis": "Hitachi 与 Google Cloud 扩大战略联盟，Hitachi 将建立并全球部署 FDE 模型，把 Lumada、IT/OT 能力与 Google Cloud AI 结合，用于 Physical AI、HMAX 和网络安全方案落地。"
+      },
+      "generatedTitle": "公司公告 - 市场数据",
+      "displayTitle": "公司公告 - 市场数据"
+    },
+    {
+      "id": "FDE-2026-06-19-P-034",
+      "type": "signal_card",
+      "category": "case",
+      "categoryLabel": "案例",
+      "title": "今日最热门职位：前部署工程师 - Salesforce",
+      "originalTitle": "Today’s Hottest Role: Forward Deployed Engineer - Salesforce",
+      "date": "2026-06-19",
+      "subject": "Salesforce / Agentforce",
+      "source": "salesforce.com",
+      "sourceName": "salesforce.com",
+      "sourceUrl": "https://www.salesforce.com/ap/blog/forward-deployed-engineer/",
+      "sourceLevel": "S",
+      "evidenceStrength": "",
+      "importanceScore": 5,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "publishedAt": "",
+      "tags": {
+        "track": [
+          "track-enterprise-workflow"
+        ],
+        "function": [
+          "function-sales"
+        ],
+        "scenario": [
+          "scenario-sales-briefing"
+        ],
+        "customer": [],
+        "evidence": [
+          "evidence-customer-adoption"
+        ]
+      },
+      "flatTags": [
+        "track-enterprise-workflow",
+        "function-sales",
+        "scenario-sales-briefing",
+        "evidence-customer-adoption"
+      ],
+      "displayTags": [
+        {
+          "id": "track-enterprise-workflow",
+          "label": "企业工作流"
+        },
+        {
+          "id": "scenario-sales-briefing",
+          "label": "销售情报与跟进"
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "label": "客户采用"
+        }
+      ],
+      "opportunitySignals": {
+        "schemaVersion": "opportunity-signals-v1",
+        "evidenceBasis": "raw_source_text",
+        "sourceExcerpt": "Today’s Hottest Role: Forward Deployed Engineer - Salesforce Today’s Hottest Role: Forward Deployed Engineer - Salesforce A reservation booking platform had just launched a pilot of its first AI agent and was bumping in...",
+        "missingFields": [
+          "buyer_or_user",
+          "specific_task"
+        ],
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "business_action": [
+            {
+              "id": "customer_deployment",
+              "label": "Customer deployment, rollout, pilot, case study, or adoption"
+            },
+            {
+              "id": "product_launch",
+              "label": "Product, feature, model, API, or platform launch"
+            },
+            {
+              "id": "hiring_fde",
+              "label": "FDE, solution engineer, or customer-embedded delivery hiring"
+            }
+          ],
+          "product_form": [
+            {
+              "id": "fde_service",
+              "label": "Forward-deployed engineering or implementation service"
+            }
+          ],
+          "delivery_model": [
+            {
+              "id": "fde_delivery",
+              "label": "FDE or customer-embedded delivery"
+            }
+          ],
+          "pain_or_constraint": [
+            {
+              "id": "workflow_integration",
+              "label": "Integration into existing workflow or systems"
+            }
+          ],
+          "adoption_evidence": [
+            {
+              "id": "pilot_or_poc",
+              "label": "Pilot, POC, trial, or early rollout"
+            }
+          ],
+          "source_evidence_type": [
+            {
+              "id": "business_media",
+              "label": "Business or industry media article"
+            }
+          ]
+        },
+        "buyer_or_user": [],
+        "buyerOrUser": [],
+        "team_or_function": [],
+        "teamOrFunction": [],
+        "specific_task": [],
+        "specificTask": [],
+        "business_action": [
+          "customer_deployment",
+          "product_launch",
+          "hiring_fde"
+        ],
+        "businessAction": [
+          "customer_deployment",
+          "product_launch",
+          "hiring_fde"
+        ],
+        "product_form": [
+          "fde_service"
+        ],
+        "productForm": [
+          "fde_service"
+        ],
+        "delivery_model": [
+          "fde_delivery"
+        ],
+        "deliveryModel": [
+          "fde_delivery"
+        ],
+        "pain_or_constraint": [
+          "workflow_integration"
+        ],
+        "painOrConstraint": [
+          "workflow_integration"
+        ],
+        "adoption_evidence": [
+          "pilot_or_poc"
+        ],
+        "adoptionEvidence": [
+          "pilot_or_poc"
+        ],
+        "source_evidence_type": [
+          "business_media"
+        ],
+        "sourceEvidenceType": [
+          "business_media"
+        ]
+      },
+      "summary": "Salesforce 派出 Forward Deployed Engineer 团队，帮助一家预订平台修复 Agentforce 数据库和 Data 360 同步问题，使其 B2B AI agent 试点恢复运行。",
+      "translatedFact": "Salesforce 派出 Forward Deployed Engineer 团队，帮助一家预订平台修复 Agentforce 数据库和 Data 360 同步问题，使其 B2B AI agent 试点恢复运行。",
+      "originalHighlights": [
+        "原文称一家预订平台刚用 Salesforce Agentforce 启动首个 B2B AI agent 试点，用于回答使用该服务的客户问题。",
+        "原文称该 agent 因 Agentforce 数据库配置问题，部分客户问题无法稳定回答。",
+        "原文称该预订平台需要把自身数据连接到 Agentforce，FDE 介入点是数据接入与知识同步。"
+      ],
+      "visibleFragment": "Salesforce 派出 Forward Deployed Engineer 团队，帮助一家预订平台修复 Agentforce 数据库和 Data 360 同步问题，使其 B2B AI agent 试点恢复运行。",
+      "sourceLinks": [
+        "https://www.salesforce.com/ap/blog/forward-deployed-engineer/"
+      ],
+      "sourceTitle": "Today’s Hottest Role: Forward Deployed Engineer - Salesforce",
+      "status": "published",
+      "assetLevel": "enterprise_ai_fde_pool",
+      "evidenceGate": "core_evidence_candidate",
+      "stage": "",
+      "evidence": "evidence-customer-adoption",
+      "largeVendorKey": "salesforce",
+      "track": "track-enterprise-workflow",
+      "generatedTitle": "今日最热门职位：前部署工程师 - Salesforce",
+      "displayTitle": "今日最热门职位：前部署工程师 - Salesforce",
+      "largeVendor": true,
+      "frontstageRankScore": 1150,
+      "frontstageEditorialScore": 1150,
+      "frontstageEvidenceScore": 94,
+      "frontstageSelectionReasons": [
+        "FDE lens pool",
+        "source-backed implementation evidence"
+      ],
+      "frontstageValueDescription": "FDE lens pool item preserved for the Enterprise AI lens.",
+      "frontstageQualityWarnings": [],
+      "frontstageGenericCandidate": false,
+      "fromCorePool": true,
+      "linkedCardId": "SIG-20260619-A20-case-https-www-salesforce-com",
+      "promotionStatus": "promoted_to_signal_card",
+      "enterpriseAiLensPriority": true,
+      "sourceRef": "P-034",
+      "titleZh": "今日最热门职位：前部署工程师 - Salesforce",
+      "titleTranslationStatus": "translated",
+      "titleTranslationMethod": "fde_lens_source_rule",
+      "factExtractionStatus": "extracted_at_fde_lens_pool_build",
+      "factExtractionMethod": "pool_key_excerpts_and_fde_implementation_analysis",
+      "implementationAnalysis": {
+        "demand": "发现的需求是客户服务、销售跟进或工单处理需要更快响应、更准知识检索，并能嵌入现有 CRM / 服务系统。",
+        "services": "提供的服务是 FDE / 客户嵌入式工程交付：工程师进入客户环境，完成需求拆解、系统集成、流程验证和上线支持。",
+        "result": "实施结果已经进入生产、部署或上线阶段；原文未披露可独立核验的 ROI 或长期运行指标。",
+        "sourceBasis": "Salesforce 派出 Forward Deployed Engineer 团队，帮助一家预订平台修复 Agentforce 数据库和 Data 360 同步问题，使其 B2B AI agent 试点恢复运行。"
+      }
+    },
+    {
+      "id": "FDE-2026-06-19-P-041",
+      "type": "signal_card",
+      "category": "case",
+      "categoryLabel": "案例",
+      "title": "Norse Atlantic Airways客户案例",
+      "originalTitle": "Norse Atlantic Airways customer story",
+      "date": "2026-06-19",
+      "subject": "Norse Atlantic Airways / delight.ai",
+      "source": "delight.ai",
+      "sourceName": "delight.ai",
+      "sourceUrl": "https://delight.ai/customers/norse-atlantic-airways",
+      "sourceLevel": "B",
+      "evidenceStrength": "",
+      "importanceScore": 5,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "publishedAt": "",
+      "tags": {
+        "track": [
+          "track-ai-customer-service",
+          "track-enterprise-workflow"
+        ],
+        "function": [
+          "function-customer-service"
+        ],
+        "scenario": [
+          "scenario-customer-ticket"
+        ],
+        "customer": [],
+        "evidence": [
+          "evidence-customer-adoption"
+        ]
+      },
+      "flatTags": [
+        "track-ai-customer-service",
+        "track-enterprise-workflow",
+        "function-customer-service",
+        "scenario-customer-ticket",
+        "evidence-customer-adoption"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-customer-service",
+          "label": "AI 客服"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "label": "企业工作流"
+        },
+        {
+          "id": "scenario-customer-ticket",
+          "label": "工单与质检"
+        }
+      ],
+      "opportunitySignals": {
+        "schemaVersion": "opportunity-signals-v1",
+        "evidenceBasis": "raw_source_text",
+        "sourceExcerpt": "Norse Atlantic Airways customer story Norse Atlantic Airways customer story Norse Atlantic Airways customer story ...",
+        "missingFields": [
+          "specific_task",
+          "product_form",
+          "delivery_model"
+        ],
+        "labels": {
+          "buyer_or_user": [
+            {
+              "id": "enterprise_ai_owner",
+              "label": "Enterprise AI / transformation owner"
+            }
+          ],
+          "team_or_function": [],
+          "specific_task": [],
+          "business_action": [
+            {
+              "id": "customer_deployment",
+              "label": "Customer deployment, rollout, pilot, case study, or adoption"
+            }
+          ],
+          "product_form": [],
+          "delivery_model": [],
+          "pain_or_constraint": [
+            {
+              "id": "workflow_integration",
+              "label": "Integration into existing workflow or systems"
+            }
+          ],
+          "adoption_evidence": [
+            {
+              "id": "case_study",
+              "label": "Case study, customer story, or deployment write-up"
+            }
+          ],
+          "source_evidence_type": [
+            {
+              "id": "first_party_case",
+              "label": "First-party case study or customer story"
+            }
+          ]
+        },
+        "buyer_or_user": [
+          "enterprise_ai_owner"
+        ],
+        "buyerOrUser": [
+          "enterprise_ai_owner"
+        ],
+        "team_or_function": [],
+        "teamOrFunction": [],
+        "specific_task": [],
+        "specificTask": [],
+        "business_action": [
+          "customer_deployment"
+        ],
+        "businessAction": [
+          "customer_deployment"
+        ],
+        "product_form": [],
+        "productForm": [],
+        "delivery_model": [],
+        "deliveryModel": [],
+        "pain_or_constraint": [
+          "workflow_integration"
+        ],
+        "painOrConstraint": [
+          "workflow_integration"
+        ],
+        "adoption_evidence": [
+          "case_study"
+        ],
+        "adoptionEvidence": [
+          "case_study"
+        ],
+        "source_evidence_type": [
+          "first_party_case"
+        ],
+        "sourceEvidenceType": [
+          "first_party_case"
+        ]
+      },
+      "summary": "Norse Atlantic Airways 与 delight.ai 合作构建面向航空公司运营的 AI workforce，用于把客户互动和运营任务交给可编排的 AI 工作流处理。",
+      "translatedFact": "Norse Atlantic Airways 与 delight.ai 合作构建面向航空公司运营的 AI workforce，用于把客户互动和运营任务交给可编排的 AI 工作流处理。",
+      "originalHighlights": [],
+      "visibleFragment": "Norse Atlantic Airways 与 delight.ai 合作构建面向航空公司运营的 AI workforce，用于把客户互动和运营任务交给可编排的 AI 工作流处理。",
+      "sourceLinks": [
+        "https://delight.ai/customers/norse-atlantic-airways"
+      ],
+      "sourceTitle": "Norse Atlantic Airways customer story",
+      "status": "published",
+      "assetLevel": "enterprise_ai_fde_pool",
+      "evidenceGate": "core_evidence_candidate",
+      "stage": "",
+      "evidence": "evidence-customer-adoption",
+      "largeVendorKey": "",
+      "track": "track-ai-customer-service",
+      "generatedTitle": "Norse Atlantic Airways客户案例",
+      "displayTitle": "Norse Atlantic Airways客户案例",
+      "largeVendor": false,
+      "frontstageRankScore": 1150,
+      "frontstageEditorialScore": 1150,
+      "frontstageEvidenceScore": 97,
+      "frontstageSelectionReasons": [
+        "FDE lens pool",
+        "source-backed implementation evidence"
+      ],
+      "frontstageValueDescription": "FDE lens pool item preserved for the Enterprise AI lens.",
+      "frontstageQualityWarnings": [],
+      "frontstageGenericCandidate": false,
+      "fromCorePool": true,
+      "linkedCardId": "SIG-20260619-A16-case-https-delight-ai-customers",
+      "promotionStatus": "promoted_to_signal_card",
+      "enterpriseAiLensPriority": true,
+      "sourceRef": "P-041",
+      "titleZh": "Norse Atlantic Airways客户案例",
+      "titleTranslationStatus": "translated",
+      "titleTranslationMethod": "fde_lens_source_rule",
+      "factExtractionStatus": "extracted_at_fde_lens_pool_build",
+      "factExtractionMethod": "pool_key_excerpts_and_fde_implementation_analysis",
+      "implementationAnalysis": {
+        "demand": "发现的需求是客户服务、销售跟进或工单处理需要更快响应、更准知识检索，并能嵌入现有 CRM / 服务系统。",
+        "services": "提供的服务是面向客服响应、线索跟进与知识检索的平台或 Agent 系统，把数据、审批、工具调用和人工校验串成可运行流程。",
+        "result": "原文未披露最终实施结果；目前只能确认该项目或产品已经进入公开发布、融资、试点、客户交付或实施准备阶段。",
+        "sourceBasis": "Norse Atlantic Airways 与 delight.ai 合作构建面向航空公司运营的 AI workforce，用于把客户互动和运营任务交给可编排的 AI 工作流处理。"
+      }
+    },
+    {
+      "id": "FDE-2026-06-19-P-043",
+      "type": "signal_card",
+      "category": "case",
+      "categoryLabel": "案例",
+      "title": "从客户角度看：前部署工程师的实际工作内容 | ellamind 博客",
+      "originalTitle": "From the Customer's Side of the Table: What a Forward Deployed Engineer Actually Does | ellamind Blog",
+      "date": "2026-06-19",
+      "subject": "ellamind / elluminate",
+      "source": "ellamind.com",
+      "sourceName": "ellamind.com",
+      "sourceUrl": "https://www.ellamind.com/blog/forward-deployed-engineer",
+      "sourceLevel": "B",
+      "evidenceStrength": "",
+      "importanceScore": 5,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "publishedAt": "",
+      "tags": {
+        "track": [
+          "track-ai-customer-service",
+          "track-enterprise-workflow"
+        ],
+        "function": [
+          "function-customer-service"
+        ],
+        "scenario": [
+          "scenario-customer-ticket"
+        ],
+        "customer": [],
+        "evidence": [
+          "evidence-customer-adoption"
+        ]
+      },
+      "flatTags": [
+        "track-ai-customer-service",
+        "track-enterprise-workflow",
+        "function-customer-service",
+        "scenario-customer-ticket",
+        "evidence-customer-adoption"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-customer-service",
+          "label": "AI 客服"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "label": "企业工作流"
+        },
+        {
+          "id": "scenario-customer-ticket",
+          "label": "工单与质检"
+        }
+      ],
+      "opportunitySignals": {
+        "schemaVersion": "opportunity-signals-v1",
+        "evidenceBasis": "raw_source_text",
+        "sourceExcerpt": "From the Customer's Side of the Table: What a Forward Deployed Engineer Actually Does From the Customer's Side of the Table: What a Forward Deployed Engineer Actually Does | ellamind Blog FDE engagements at ellamind ten...",
+        "missingFields": [
+          "adoption_evidence"
+        ],
+        "labels": {
+          "buyer_or_user": [
+            {
+              "id": "engineering_team",
+              "label": "Engineering or developer team"
+            },
+            {
+              "id": "sales_team",
+              "label": "Sales or revenue team"
+            }
+          ],
+          "team_or_function": [
+            {
+              "id": "engineering",
+              "label": "Engineering / software development"
+            },
+            {
+              "id": "sales",
+              "label": "Sales / revenue operations"
+            }
+          ],
+          "specific_task": [
+            {
+              "id": "internal_tool_building",
+              "label": "Building internal tools, apps, or automations"
+            },
+            {
+              "id": "sales_lead_research",
+              "label": "Lead research, account research, or pipeline enrichment"
+            }
+          ],
+          "business_action": [
+            {
+              "id": "customer_deployment",
+              "label": "Customer deployment, rollout, pilot, case study, or adoption"
+            },
+            {
+              "id": "research_benchmark",
+              "label": "Benchmark, paper, evaluation, or research result"
+            },
+            {
+              "id": "hiring_fde",
+              "label": "FDE, solution engineer, or customer-embedded delivery hiring"
+            }
+          ],
+          "product_form": [
+            {
+              "id": "fde_service",
+              "label": "Forward-deployed engineering or implementation service"
+            }
+          ],
+          "delivery_model": [
+            {
+              "id": "fde_delivery",
+              "label": "FDE or customer-embedded delivery"
+            },
+            {
+              "id": "template_pack",
+              "label": "Template, playbook, or packaged workflow"
+            }
+          ],
+          "pain_or_constraint": [],
+          "adoption_evidence": [],
+          "source_evidence_type": []
+        },
+        "buyer_or_user": [
+          "engineering_team",
+          "sales_team"
+        ],
+        "buyerOrUser": [
+          "engineering_team",
+          "sales_team"
+        ],
+        "team_or_function": [
+          "engineering",
+          "sales"
+        ],
+        "teamOrFunction": [
+          "engineering",
+          "sales"
+        ],
+        "specific_task": [
+          "internal_tool_building",
+          "sales_lead_research"
+        ],
+        "specificTask": [
+          "internal_tool_building",
+          "sales_lead_research"
+        ],
+        "business_action": [
+          "customer_deployment",
+          "research_benchmark",
+          "hiring_fde"
+        ],
+        "businessAction": [
+          "customer_deployment",
+          "research_benchmark",
+          "hiring_fde"
+        ],
+        "product_form": [
+          "fde_service"
+        ],
+        "productForm": [
+          "fde_service"
+        ],
+        "delivery_model": [
+          "fde_delivery",
+          "template_pack"
+        ],
+        "deliveryModel": [
+          "fde_delivery",
+          "template_pack"
+        ],
+        "pain_or_constraint": [],
+        "painOrConstraint": [],
+        "adoption_evidence": [],
+        "adoptionEvidence": [],
+        "source_evidence_type": [],
+        "sourceEvidenceType": []
+      },
+      "summary": "ellamind 的 Forward Deployed Engineer 参与一家德国法定医保机构的客服聊天机器人上线前评估，把监管语言、测试数据和合规审查转化为可执行的生产系统验证。",
+      "translatedFact": "ellamind 的 Forward Deployed Engineer 参与一家德国法定医保机构的客服聊天机器人上线前评估，把监管语言、测试数据和合规审查转化为可执行的生产系统验证。",
+      "originalHighlights": [],
+      "visibleFragment": "ellamind 的 Forward Deployed Engineer 参与一家德国法定医保机构的客服聊天机器人上线前评估，把监管语言、测试数据和合规审查转化为可执行的生产系统验证。",
+      "sourceLinks": [
+        "https://www.ellamind.com/blog/forward-deployed-engineer"
+      ],
+      "sourceTitle": "From the Customer's Side of the Table: What a Forward Deployed Engineer Actually Does | ellamind Blog",
+      "status": "published",
+      "assetLevel": "enterprise_ai_fde_pool",
+      "evidenceGate": "core_evidence_candidate",
+      "stage": "",
+      "evidence": "evidence-customer-adoption",
+      "largeVendorKey": "",
+      "track": "track-ai-customer-service",
+      "generatedTitle": "从客户角度看：前部署工程师的实际工作内容 | ellamind 博客",
+      "displayTitle": "从客户角度看：前部署工程师的实际工作内容 | ellamind 博客",
+      "largeVendor": false,
+      "frontstageRankScore": 1150,
+      "frontstageEditorialScore": 1150,
+      "frontstageEvidenceScore": 97,
+      "frontstageSelectionReasons": [
+        "FDE lens pool",
+        "source-backed implementation evidence"
+      ],
+      "frontstageValueDescription": "FDE lens pool item preserved for the Enterprise AI lens.",
+      "frontstageQualityWarnings": [],
+      "frontstageGenericCandidate": false,
+      "fromCorePool": true,
+      "linkedCardId": "SIG-20260619-A06-case-https-www-ellamind-com",
+      "promotionStatus": "promoted_to_signal_card",
+      "enterpriseAiLensPriority": true,
+      "sourceRef": "P-043",
+      "titleZh": "从客户角度看：前部署工程师的实际工作内容 | ellamind 博客",
+      "titleTranslationStatus": "translated",
+      "titleTranslationMethod": "fde_lens_source_rule",
+      "factExtractionStatus": "extracted_at_fde_lens_pool_build",
+      "factExtractionMethod": "pool_key_excerpts_and_fde_implementation_analysis",
+      "implementationAnalysis": {
+        "demand": "发现的需求是高合规行业需要把 AI 引入受监管工作流，同时保留专业人员审核、数据边界和上线前验证。",
+        "services": "提供的服务是 FDE / 客户嵌入式工程交付：工程师进入客户环境，完成需求拆解、系统集成、流程验证和上线支持。",
+        "result": "实施结果已经进入生产、部署或上线阶段；原文未披露可独立核验的 ROI 或长期运行指标。",
+        "sourceBasis": "ellamind 的 Forward Deployed Engineer 参与一家德国法定医保机构的客服聊天机器人上线前评估，把监管语言、测试数据和合规审查转化为可执行的生产系统验证。"
+      }
+    },
+    {
+      "id": "FDE-2026-06-07-P-006",
+      "type": "signal_card",
+      "category": "case",
+      "categoryLabel": "案例",
+      "title": "Druid AI 助力全球家电零售商自动化客服支持并释放增长潜力",
+      "originalTitle": "How Druid AI helped a global appliance retailer automate contact center support and unlock growth",
+      "date": "2026-06-07",
+      "subject": "Druid AI",
+      "source": "druidai.com",
+      "sourceName": "druidai.com",
+      "sourceUrl": "https://www.druidai.com/case-studies/druid-ai-agents-automate-customer-support-appliances-retailer?hs_amp=true",
+      "sourceLevel": "B",
+      "evidenceStrength": "",
+      "importanceScore": 5,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "publishedAt": "",
+      "tags": {
+        "track": [
+          "track-enterprise-workflow"
+        ],
+        "function": [],
+        "scenario": [],
+        "customer": [],
+        "evidence": [
+          "evidence-customer-adoption"
+        ]
+      },
+      "flatTags": [
+        "track-enterprise-workflow",
+        "evidence-customer-adoption"
+      ],
+      "displayTags": [
+        {
+          "id": "track-enterprise-workflow",
+          "label": "企业工作流"
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "label": "客户采用"
+        }
+      ],
+      "opportunitySignals": {
+        "schemaVersion": "opportunity-signals-v1",
+        "evidenceBasis": "raw_source_text",
+        "sourceExcerpt": "How Druid AI helped a global appliance retailer automate contact center support and unlock growth How Druid AI helped a global appliance retailer automate contact center support and unlock growth How Druid AI helped a g...",
+        "missingFields": [
+          "product_form",
+          "adoption_evidence",
+          "delivery_model"
+        ],
+        "labels": {
+          "buyer_or_user": [
+            {
+              "id": "customer_support_team",
+              "label": "Customer support or contact-center team"
+            },
+            {
+              "id": "enterprise_ai_owner",
+              "label": "Enterprise AI / transformation owner"
+            },
+            {
+              "id": "sales_team",
+              "label": "Sales or revenue team"
+            }
+          ],
+          "team_or_function": [
+            {
+              "id": "customer_support",
+              "label": "Customer support / contact center"
+            },
+            {
+              "id": "sales",
+              "label": "Sales / revenue operations"
+            }
+          ],
+          "specific_task": [
+            {
+              "id": "customer_ticket_triage",
+              "label": "Ticket triage, routing, QA, or support resolution"
+            },
+            {
+              "id": "sales_lead_research",
+              "label": "Lead research, account research, or pipeline enrichment"
+            }
+          ],
+          "business_action": [
+            {
+              "id": "funding_round",
+              "label": "Funding, financing, or investment round"
+            }
+          ],
+          "product_form": [],
+          "delivery_model": [],
+          "pain_or_constraint": [
+            {
+              "id": "workflow_integration",
+              "label": "Integration into existing workflow or systems"
+            }
+          ],
+          "adoption_evidence": [],
+          "source_evidence_type": [
+            {
+              "id": "funding_news",
+              "label": "Funding news or investor announcement"
+            }
+          ]
+        },
+        "buyer_or_user": [
+          "customer_support_team",
+          "enterprise_ai_owner",
+          "sales_team"
+        ],
+        "buyerOrUser": [
+          "customer_support_team",
+          "enterprise_ai_owner",
+          "sales_team"
+        ],
+        "team_or_function": [
+          "customer_support",
+          "sales"
+        ],
+        "teamOrFunction": [
+          "customer_support",
+          "sales"
+        ],
+        "specific_task": [
+          "customer_ticket_triage",
+          "sales_lead_research"
+        ],
+        "specificTask": [
+          "customer_ticket_triage",
+          "sales_lead_research"
+        ],
+        "business_action": [
+          "funding_round"
+        ],
+        "businessAction": [
+          "funding_round"
+        ],
+        "product_form": [],
+        "productForm": [],
+        "delivery_model": [],
+        "deliveryModel": [],
+        "pain_or_constraint": [
+          "workflow_integration"
+        ],
+        "painOrConstraint": [
+          "workflow_integration"
+        ],
+        "adoption_evidence": [],
+        "adoptionEvidence": [],
+        "source_evidence_type": [
+          "funding_news"
+        ],
+        "sourceEvidenceType": [
+          "funding_news"
+        ]
+      },
+      "summary": "Druid AI 案例描述家电客户期望在洗衣机周末故障时，也能获得类似实时物流、银行 App 和午夜预约的即时服务体验。",
+      "translatedFact": "Druid AI 案例描述家电客户期望在洗衣机周末故障时，也能获得类似实时物流、银行 App 和午夜预约的即时服务体验。",
+      "originalHighlights": [
+        "案例客户覆盖 25 个以上欧洲市场、约 25 种语言，客服自动化需求来自跨市场和多品牌服务复杂度。"
+      ],
+      "visibleFragment": "Druid AI 案例描述家电客户期望在洗衣机周末故障时，也能获得类似实时物流、银行 App 和午夜预约的即时服务体验。",
+      "sourceLinks": [
+        "https://www.druidai.com/case-studies/druid-ai-agents-automate-customer-support-appliances-retailer?hs_amp=true"
+      ],
+      "sourceTitle": "How Druid AI helped a global appliance retailer automate contact center support and unlock growth",
+      "status": "published",
+      "assetLevel": "enterprise_ai_fde_pool",
+      "evidenceGate": "core_evidence_candidate",
+      "stage": "",
+      "evidence": "evidence-customer-adoption",
+      "largeVendorKey": "",
+      "track": "track-enterprise-workflow",
+      "generatedTitle": "Druid AI 助力全球家电零售商自动化客服支持并释放增长潜力",
+      "displayTitle": "Druid AI 助力全球家电零售商自动化客服支持并释放增长潜力",
+      "largeVendor": false,
+      "frontstageRankScore": 1150,
+      "frontstageEditorialScore": 1150,
+      "frontstageEvidenceScore": 97,
+      "frontstageSelectionReasons": [
+        "FDE lens pool",
+        "source-backed implementation evidence"
+      ],
+      "frontstageValueDescription": "FDE lens pool item preserved for the Enterprise AI lens.",
+      "frontstageQualityWarnings": [],
+      "frontstageGenericCandidate": false,
+      "fromCorePool": true,
+      "linkedCardId": "SIG-20260607-A02",
+      "promotionStatus": "promoted_to_signal_card",
+      "enterpriseAiLensPriority": true,
+      "sourceRef": "P-006",
+      "titleZh": "Druid AI 助力全球家电零售商自动化客服支持并释放增长潜力",
+      "titleTranslationStatus": "translated",
+      "titleTranslationMethod": "fde_lens_source_rule",
+      "factExtractionStatus": "extracted_at_fde_lens_pool_build",
+      "factExtractionMethod": "pool_key_excerpts_and_fde_implementation_analysis",
+      "implementationAnalysis": {
+        "demand": "发现的需求是客户服务、销售跟进或工单处理需要更快响应、更准知识检索，并能嵌入现有 CRM / 服务系统。",
+        "services": "提供的服务是面向客服响应、线索跟进与知识检索的平台或 Agent 系统，把数据、审批、工具调用和人工校验串成可运行流程。",
+        "result": "原文未披露最终实施结果；目前只能确认该项目或产品已经进入公开发布、融资、试点、客户交付或实施准备阶段。",
+        "sourceBasis": "Druid AI 案例描述家电客户期望在洗衣机周末故障时，也能获得类似实时物流、银行 App 和午夜预约的即时服务体验。"
+      }
+    },
+    {
+      "id": "FDE-2026-06-07-P-008",
+      "type": "signal_card",
+      "category": "case",
+      "categoryLabel": "案例",
+      "title": "华硕在2026年台北国际电脑展上实现企业级到边缘AI的落地",
+      "originalTitle": "ASUS Brings Enterprise - to - Edge AI to Life at Computex 2026",
+      "date": "2026-06-07",
+      "subject": "ASUS",
+      "source": "itwire.com",
+      "sourceName": "itwire.com",
+      "sourceUrl": "https://itwire.com/business-it-news/business-technology/asus-brings-enterprise-to-edge-ai-to-life-at-computex-2026",
+      "sourceLevel": "B",
+      "evidenceStrength": "",
+      "importanceScore": 5,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "publishedAt": "2026-06-02T06:15:00.000Z",
+      "tags": {
+        "track": [
+          "track-enterprise-workflow"
+        ],
+        "function": [],
+        "scenario": [],
+        "customer": [],
+        "evidence": [
+          "evidence-customer-adoption"
+        ]
+      },
+      "flatTags": [
+        "track-enterprise-workflow",
+        "evidence-customer-adoption"
+      ],
+      "displayTags": [
+        {
+          "id": "track-enterprise-workflow",
+          "label": "企业工作流"
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "label": "客户采用"
+        }
+      ],
+      "opportunitySignals": {
+        "schemaVersion": "opportunity-signals-v1",
+        "evidenceBasis": "raw_source_text",
+        "sourceExcerpt": "ASUS Brings Enterprise - to - Edge AI to Life at Computex 2026 ASUS Brings Enterprise - to - Edge AI to Life at Computex 2026 2026-06-02T06:15:00Z / query=model release inference cost reduction enterprise adoption / int...",
+        "missingFields": [
+          "product_form",
+          "delivery_model"
+        ],
+        "labels": {
+          "buyer_or_user": [
+            {
+              "id": "enterprise_ai_owner",
+              "label": "Enterprise AI / transformation owner"
+            },
+            {
+              "id": "healthcare_provider",
+              "label": "Hospital, clinic, payer, or healthcare operator"
+            },
+            {
+              "id": "operations_team",
+              "label": "Operations, logistics, supply-chain, or back-office team"
+            }
+          ],
+          "team_or_function": [
+            {
+              "id": "healthcare_operations",
+              "label": "Healthcare operations"
+            },
+            {
+              "id": "operations",
+              "label": "Operations / supply chain / back office"
+            }
+          ],
+          "specific_task": [
+            {
+              "id": "logistics_coordination",
+              "label": "Shipment, logistics, dispatch, inventory, or supply-chain coordination"
+            },
+            {
+              "id": "medical_documentation",
+              "label": "Clinical documentation, imaging, or healthcare workflow"
+            }
+          ],
+          "business_action": [
+            {
+              "id": "customer_deployment",
+              "label": "Customer deployment, rollout, pilot, case study, or adoption"
+            },
+            {
+              "id": "partnership_integration",
+              "label": "Partnership, integration, channel, or ecosystem move"
+            },
+            {
+              "id": "pricing_change",
+              "label": "Pricing, packaging, cost, usage-limit, or billing change"
+            }
+          ],
+          "product_form": [],
+          "delivery_model": [],
+          "pain_or_constraint": [
+            {
+              "id": "api_cost_spike",
+              "label": "AI usage cost, inference cost, or billing pressure"
+            },
+            {
+              "id": "workflow_integration",
+              "label": "Integration into existing workflow or systems"
+            }
+          ],
+          "adoption_evidence": [
+            {
+              "id": "deployment_scale",
+              "label": "Deployment scale, seats, locations, users, or volume disclosed"
+            }
+          ],
+          "source_evidence_type": [
+            {
+              "id": "business_media",
+              "label": "Business or industry media article"
+            }
+          ]
+        },
+        "buyer_or_user": [
+          "enterprise_ai_owner",
+          "healthcare_provider",
+          "operations_team"
+        ],
+        "buyerOrUser": [
+          "enterprise_ai_owner",
+          "healthcare_provider",
+          "operations_team"
+        ],
+        "team_or_function": [
+          "healthcare_operations",
+          "operations"
+        ],
+        "teamOrFunction": [
+          "healthcare_operations",
+          "operations"
+        ],
+        "specific_task": [
+          "logistics_coordination",
+          "medical_documentation"
+        ],
+        "specificTask": [
+          "logistics_coordination",
+          "medical_documentation"
+        ],
+        "business_action": [
+          "customer_deployment",
+          "partnership_integration",
+          "pricing_change"
+        ],
+        "businessAction": [
+          "customer_deployment",
+          "partnership_integration",
+          "pricing_change"
+        ],
+        "product_form": [],
+        "productForm": [],
+        "delivery_model": [],
+        "deliveryModel": [],
+        "pain_or_constraint": [
+          "api_cost_spike",
+          "workflow_integration"
+        ],
+        "painOrConstraint": [
+          "api_cost_spike",
+          "workflow_integration"
+        ],
+        "adoption_evidence": [
+          "deployment_scale"
+        ],
+        "adoptionEvidence": [
+          "deployment_scale"
+        ],
+        "source_evidence_type": [
+          "business_media"
+        ],
+        "sourceEvidenceType": [
+          "business_media"
+        ]
+      },
+      "summary": "华硕在 Computex 2026 展示 Zenni Claw AI 方案，强调为企业提供安全、可控、可靠的 Agentic AI 体验。",
+      "translatedFact": "华硕在 Computex 2026 展示 Zenni Claw AI 方案，强调为企业提供安全、可控、可靠的 Agentic AI 体验。",
+      "originalHighlights": [
+        "华硕在 Computex 2026 展示 Zenni Claw AI 方案，强调为企业提供安全、可控、可靠的 Agentic AI 体验。"
+      ],
+      "visibleFragment": "华硕在 Computex 2026 展示 Zenni Claw AI 方案，强调为企业提供安全、可控、可靠的 Agentic AI 体验。",
+      "sourceLinks": [
+        "https://itwire.com/business-it-news/business-technology/asus-brings-enterprise-to-edge-ai-to-life-at-computex-2026"
+      ],
+      "sourceTitle": "ASUS Brings Enterprise - to - Edge AI to Life at Computex 2026",
+      "status": "published",
+      "assetLevel": "enterprise_ai_fde_pool",
+      "evidenceGate": "core_evidence_candidate",
+      "stage": "",
+      "evidence": "evidence-customer-adoption",
+      "largeVendorKey": "",
+      "track": "track-enterprise-workflow",
+      "generatedTitle": "华硕在2026年台北国际电脑展上实现企业级到边缘AI的落地",
+      "displayTitle": "华硕在2026年台北国际电脑展上实现企业级到边缘AI的落地",
+      "largeVendor": false,
+      "frontstageRankScore": 1150,
+      "frontstageEditorialScore": 1150,
+      "frontstageEvidenceScore": 94,
+      "frontstageSelectionReasons": [
+        "FDE lens pool",
+        "source-backed implementation evidence"
+      ],
+      "frontstageValueDescription": "FDE lens pool item preserved for the Enterprise AI lens.",
+      "frontstageQualityWarnings": [],
+      "frontstageGenericCandidate": false,
+      "fromCorePool": true,
+      "linkedCardId": "SIG-20260607-A03",
+      "promotionStatus": "promoted_to_signal_card",
+      "enterpriseAiLensPriority": true,
+      "sourceRef": "P-008",
+      "titleZh": "华硕在2026年台北国际电脑展上实现企业级到边缘AI的落地",
+      "titleTranslationStatus": "translated",
+      "titleTranslationMethod": "fde_lens_source_rule",
+      "factExtractionStatus": "extracted_at_fde_lens_pool_build",
+      "factExtractionMethod": "pool_key_excerpts_and_fde_implementation_analysis",
+      "implementationAnalysis": {
+        "demand": "原文显示，企业侧需求集中在权限、合规与风险控制，需要把 AI / Agent 接入实际业务流程，而不是停留在演示或通用工具层。",
+        "services": "提供的服务是面向权限、合规与风险控制的平台或 Agent 系统，把数据、审批、工具调用和人工校验串成可运行流程。",
+        "result": "实施结果已经进入生产、部署或上线阶段；原文未披露可独立核验的 ROI 或长期运行指标。",
+        "sourceBasis": "华硕在 Computex 2026 展示 Zenni Claw AI 方案，强调为企业提供安全、可控、可靠的 Agentic AI 体验。"
+      }
+    },
+    {
       "id": "FDE-2026-06-05-P-010",
       "type": "signal_card",
       "category": "case",
       "categoryLabel": "案例",
-      "title": "Amazon 把 AI 用进销售和收入团队流程",
+      "title": "使用 Amazon Bedrock AgentCore 通过 AI 智能体自动化采购工作流程 | AWS 行业解决方案",
       "originalTitle": "Automate Procurement Workflows with AI Agents using Amazon Bedrock AgentCore | AWS for Industries",
       "date": "2026-06-05",
       "subject": "Amazon",
@@ -1286,8 +3530,8 @@
       "evidence": "evidence-customer-adoption",
       "largeVendorKey": "amazon",
       "track": "track-ai-infra",
-      "generatedTitle": "Amazon 把 AI 用进销售和收入团队流程",
-      "displayTitle": "Amazon 把 AI 用进销售和收入团队流程",
+      "generatedTitle": "使用 Amazon Bedrock AgentCore 通过 AI 智能体自动化采购工作流程 | AWS 行业解决方案",
+      "displayTitle": "使用 Amazon Bedrock AgentCore 通过 AI 智能体自动化采购工作流程 | AWS 行业解决方案",
       "largeVendor": true,
       "frontstageRankScore": 1150,
       "frontstageEditorialScore": 1150,
@@ -1304,9 +3548,9 @@
       "promotionStatus": "promoted_to_signal_card",
       "enterpriseAiLensPriority": true,
       "sourceRef": "P-010",
-      "titleZh": "",
-      "titleTranslationStatus": "not_required",
-      "titleTranslationMethod": "not_available_in_pool_snapshot",
+      "titleZh": "使用 Amazon Bedrock AgentCore 通过 AI 智能体自动化采购工作流程 | AWS 行业解决方案",
+      "titleTranslationStatus": "translated",
+      "titleTranslationMethod": "fde_lens_source_rule",
       "factExtractionStatus": "extracted_at_fde_lens_pool_build",
       "factExtractionMethod": "pool_key_excerpts_and_fde_implementation_analysis",
       "implementationAnalysis": {
@@ -1321,7 +3565,7 @@
       "type": "signal_card",
       "category": "case",
       "categoryLabel": "案例",
-      "title": "Archestra 把 AI 用进销售和收入团队流程",
+      "title": "Archestra 融资 1000 万美元，为 AI 智能体接入企业数据提供中介服务",
       "originalTitle": "Archestra raises $10M to broker AI agent access to corporate data",
       "date": "2026-06-05",
       "subject": "Archestra",
@@ -1558,8 +3802,8 @@
       "evidence": "evidence-customer-adoption",
       "largeVendorKey": "",
       "track": "track-ai-infra",
-      "generatedTitle": "Archestra 把 AI 用进销售和收入团队流程",
-      "displayTitle": "Archestra 把 AI 用进销售和收入团队流程",
+      "generatedTitle": "Archestra 融资 1000 万美元，为 AI 智能体接入企业数据提供中介服务",
+      "displayTitle": "Archestra 融资 1000 万美元，为 AI 智能体接入企业数据提供中介服务",
       "largeVendor": false,
       "frontstageRankScore": 1150,
       "frontstageEditorialScore": 1150,
@@ -1576,9 +3820,9 @@
       "promotionStatus": "promoted_to_signal_card",
       "enterpriseAiLensPriority": true,
       "sourceRef": "P-013",
-      "titleZh": "",
-      "titleTranslationStatus": "not_required",
-      "titleTranslationMethod": "not_available_in_pool_snapshot",
+      "titleZh": "Archestra 融资 1000 万美元，为 AI 智能体接入企业数据提供中介服务",
+      "titleTranslationStatus": "translated",
+      "titleTranslationMethod": "fde_lens_source_rule",
       "factExtractionStatus": "extracted_at_fde_lens_pool_build",
       "factExtractionMethod": "pool_key_excerpts_and_fde_implementation_analysis",
       "implementationAnalysis": {
@@ -1586,6 +3830,254 @@
         "services": "提供的服务是面向采购流程自动化与合规校验的平台或 Agent 系统，把数据、审批、工具调用和人工校验串成可运行流程。",
         "result": "实施结果已经进入生产、部署或上线阶段；原文未披露可独立核验的 ROI 或长期运行指标。",
         "sourceBasis": "Archestra 获得 1000 万美元新融资，用于扩大大型企业部署和开源生态。"
+      }
+    },
+    {
+      "id": "FDE-2026-06-04-P-007",
+      "type": "signal_card",
+      "category": "case",
+      "categoryLabel": "案例",
+      "title": "家得宝借助谷歌云Gemini企业版实现客户支持速度提升四倍 - 2026年4月22日",
+      "originalTitle": "The Home Depot Delivers Customer Support Four Times Faster Using Google Cloud's Gemini Enterprise for Customer Experience - Apr 22, 2026",
+      "date": "2026-06-04",
+      "subject": "The Home Depot",
+      "source": "googlecloudpresscorner.com",
+      "sourceName": "googlecloudpresscorner.com",
+      "sourceUrl": "https://www.googlecloudpresscorner.com/2026-04-22-The-Home-Depot-Delivers-Customer-Support-Four-Times-Faster-Using-Google-Clouds-Gemini-Enterprise-for-Customer-Experience",
+      "sourceLevel": "S",
+      "evidenceStrength": "",
+      "importanceScore": 5,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "publishedAt": "",
+      "tags": {
+        "track": [
+          "track-ai-infra",
+          "track-enterprise-workflow"
+        ],
+        "function": [
+          "function-sales"
+        ],
+        "scenario": [
+          "scenario-sales-briefing",
+          "scenario-revenue-operations"
+        ],
+        "customer": [],
+        "evidence": [
+          "evidence-customer-adoption",
+          "evidence-partnership-integration"
+        ]
+      },
+      "flatTags": [
+        "track-ai-infra",
+        "track-enterprise-workflow",
+        "function-sales",
+        "scenario-sales-briefing",
+        "scenario-revenue-operations",
+        "evidence-customer-adoption",
+        "evidence-partnership-integration"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-infra",
+          "label": "AI 基础设施"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "label": "企业工作流"
+        },
+        {
+          "id": "scenario-sales-briefing",
+          "label": "销售情报与跟进"
+        }
+      ],
+      "opportunitySignals": {
+        "schemaVersion": "opportunity-signals-v1",
+        "evidenceBasis": "raw_source_text",
+        "sourceExcerpt": "Googlecloudpresscorner 把 AI 用进销售和收入团队流程 The Home Depot Delivers Customer Support Four Times Faster Using Google Cloud's Gemini Enterprise for Customer Experience - Apr 22, 2026 The Home Depot is launching a new customer...",
+        "missingFields": [
+          "product_form",
+          "delivery_model"
+        ],
+        "labels": {
+          "buyer_or_user": [
+            {
+              "id": "customer_support_team",
+              "label": "Customer support or contact-center team"
+            },
+            {
+              "id": "enterprise_ai_owner",
+              "label": "Enterprise AI / transformation owner"
+            },
+            {
+              "id": "sales_team",
+              "label": "Sales or revenue team"
+            }
+          ],
+          "team_or_function": [
+            {
+              "id": "customer_support",
+              "label": "Customer support / contact center"
+            },
+            {
+              "id": "sales",
+              "label": "Sales / revenue operations"
+            }
+          ],
+          "specific_task": [
+            {
+              "id": "customer_ticket_triage",
+              "label": "Ticket triage, routing, QA, or support resolution"
+            },
+            {
+              "id": "sales_lead_research",
+              "label": "Lead research, account research, or pipeline enrichment"
+            }
+          ],
+          "business_action": [
+            {
+              "id": "customer_deployment",
+              "label": "Customer deployment, rollout, pilot, case study, or adoption"
+            },
+            {
+              "id": "funding_round",
+              "label": "Funding, financing, or investment round"
+            },
+            {
+              "id": "partnership_integration",
+              "label": "Partnership, integration, channel, or ecosystem move"
+            }
+          ],
+          "product_form": [],
+          "delivery_model": [],
+          "pain_or_constraint": [
+            {
+              "id": "context_management",
+              "label": "Context, memory, or state management"
+            },
+            {
+              "id": "workflow_integration",
+              "label": "Integration into existing workflow or systems"
+            }
+          ],
+          "adoption_evidence": [
+            {
+              "id": "enterprise_plan",
+              "label": "Enterprise plan, security plan, or governance package"
+            }
+          ],
+          "source_evidence_type": [
+            {
+              "id": "funding_news",
+              "label": "Funding news or investor announcement"
+            }
+          ]
+        },
+        "buyer_or_user": [
+          "customer_support_team",
+          "enterprise_ai_owner",
+          "sales_team"
+        ],
+        "buyerOrUser": [
+          "customer_support_team",
+          "enterprise_ai_owner",
+          "sales_team"
+        ],
+        "team_or_function": [
+          "customer_support",
+          "sales"
+        ],
+        "teamOrFunction": [
+          "customer_support",
+          "sales"
+        ],
+        "specific_task": [
+          "customer_ticket_triage",
+          "sales_lead_research"
+        ],
+        "specificTask": [
+          "customer_ticket_triage",
+          "sales_lead_research"
+        ],
+        "business_action": [
+          "customer_deployment",
+          "funding_round",
+          "partnership_integration"
+        ],
+        "businessAction": [
+          "customer_deployment",
+          "funding_round",
+          "partnership_integration"
+        ],
+        "product_form": [],
+        "productForm": [],
+        "delivery_model": [],
+        "deliveryModel": [],
+        "pain_or_constraint": [
+          "context_management",
+          "workflow_integration"
+        ],
+        "painOrConstraint": [
+          "context_management",
+          "workflow_integration"
+        ],
+        "adoption_evidence": [
+          "enterprise_plan"
+        ],
+        "adoptionEvidence": [
+          "enterprise_plan"
+        ],
+        "source_evidence_type": [
+          "funding_news"
+        ],
+        "sourceEvidenceType": [
+          "funding_news"
+        ]
+      },
+      "summary": "谁：Googlecloudpresscorner。 做了什么：Googlecloudpresscorner 把 AI 用进销售和收入团队流程。 证据是什么：来源为 https://www.googlecloudpresscorner.com/2026-04-22-The-Home-Depot-Delivers-Customer-Support-Four-Times-Faster-Using-Google-Clouds-Gemini-Enterprise-for-Customer-Experience，对应本地证据 R-009，材料已保留全文、哈希和出处。 缺什么：目前能确认事件方向；客户规模、留存和效果指标仍需后续材料验证。",
+      "translatedFact": "谁：Googlecloudpresscorner。 做了什么：Googlecloudpresscorner 把 AI 用进销售和收入团队流程。 证据是什么：来源为 https://www.googlecloudpresscorner.com/2026-04-22-The-Home-Depot-Delivers-Customer-Support-Four-Times-Faster-Using-Google-Clouds-Gemini-Enterprise-for-Customer-Experience，对应本地证据 R-009，材料已保留全文、哈希和出处。 缺什么：目前能确认事件方向；客户规模、留存和效果指标仍需后续材料验证。",
+      "originalHighlights": [],
+      "visibleFragment": "谁：Googlecloudpresscorner。 做了什么：Googlecloudpresscorner 把 AI 用进销售和收入团队流程。 证据是什么：来源为 https://www.googlecloudpresscorner.com/2026-04-22-The-Home-Depot-Delivers-Customer-Support-Four-Times-Faster-Using-Google-Clouds-Gemini-Enterprise-for-Customer-Experience，对应本地证据 R-009，材料已保留全文、哈希和出处。 缺什么：目前能确认事件方向；客户规模、留存和效果指标仍需后续材料验证。",
+      "sourceLinks": [
+        "https://www.googlecloudpresscorner.com/2026-04-22-The-Home-Depot-Delivers-Customer-Support-Four-Times-Faster-Using-Google-Clouds-Gemini-Enterprise-for-Customer-Experience"
+      ],
+      "sourceTitle": "The Home Depot Delivers Customer Support Four Times Faster Using Google Cloud's Gemini Enterprise for Customer Experience - Apr 22, 2026",
+      "status": "published",
+      "assetLevel": "enterprise_ai_fde_pool",
+      "evidenceGate": "core_evidence_candidate",
+      "stage": "",
+      "evidence": "evidence-customer-adoption",
+      "largeVendorKey": "google",
+      "track": "track-ai-infra",
+      "generatedTitle": "家得宝借助谷歌云Gemini企业版实现客户支持速度提升四倍 - 2026年4月22日",
+      "displayTitle": "家得宝借助谷歌云Gemini企业版实现客户支持速度提升四倍 - 2026年4月22日",
+      "largeVendor": true,
+      "frontstageRankScore": 1150,
+      "frontstageEditorialScore": 1150,
+      "frontstageEvidenceScore": 88,
+      "frontstageSelectionReasons": [
+        "FDE lens pool",
+        "source-backed implementation evidence"
+      ],
+      "frontstageValueDescription": "FDE lens pool item preserved for the Enterprise AI lens.",
+      "frontstageQualityWarnings": [],
+      "frontstageGenericCandidate": false,
+      "fromCorePool": true,
+      "linkedCardId": "SIG-20260604-A05",
+      "promotionStatus": "promoted_to_signal_card",
+      "enterpriseAiLensPriority": true,
+      "sourceRef": "P-007",
+      "titleZh": "家得宝借助谷歌云Gemini企业版实现客户支持速度提升四倍 - 2026年4月22日",
+      "titleTranslationStatus": "translated",
+      "titleTranslationMethod": "fde_lens_source_rule",
+      "factExtractionStatus": "missing_fde_lens_fact",
+      "factExtractionMethod": "pool_key_excerpts_and_fde_implementation_analysis",
+      "implementationAnalysis": {
+        "demand": "发现的需求是企业采购、供应商选择和合规校验流程需要自动化，减少人工检索、比价、审批和合同处理中的摩擦。",
+        "services": "提供的服务是面向采购流程自动化与合规校验的平台或 Agent 系统，把数据、审批、工具调用和人工校验串成可运行流程。",
+        "result": "实施结果处在试点 / POC / 验证阶段；原文未披露是否已经规模化上线。",
+        "sourceBasis": "谁：Googlecloudpresscorner。 做了什么：Googlecloudpresscorner 把 AI 用进销售和收入团队流程。 证据是什么：来源为 https://www.googlecloudpresscorner.com/2026-04-22-The-Home-Depot-Delivers-Customer-Support-Four-T..."
       }
     },
     {
@@ -1821,11 +4313,248 @@
       }
     },
     {
+      "id": "FDE-2026-05-24-P-013",
+      "type": "signal_card",
+      "category": "case",
+      "categoryLabel": "案例",
+      "title": "Tribal AI 获 1000 万美元种子轮融资，为企业带来元数据原生 AI 智能体",
+      "originalTitle": "Tribal AI lands $10M in seed funding to bring metadata-native agents to the enterprise - SiliconANGLE",
+      "date": "2026-05-24",
+      "subject": "Tribal AI",
+      "source": "siliconangle.com",
+      "sourceName": "siliconangle.com",
+      "sourceUrl": "https://siliconangle.com/2026/05/20/tribal-ai-lands-10m-seed-funding-bring-metadata-native-agents-enterprise/",
+      "sourceLevel": "B",
+      "evidenceStrength": "",
+      "importanceScore": 5,
+      "poolRoutes": [
+        "core_pool",
+        "emerging_pool"
+      ],
+      "publishedAt": "",
+      "tags": {
+        "track": [
+          "track-ai-infra",
+          "track-enterprise-workflow"
+        ],
+        "function": [
+          "function-sales"
+        ],
+        "scenario": [
+          "scenario-sales-briefing",
+          "scenario-revenue-operations"
+        ],
+        "customer": [],
+        "evidence": [
+          "evidence-customer-adoption",
+          "evidence-partnership-integration"
+        ]
+      },
+      "flatTags": [
+        "track-ai-infra",
+        "track-enterprise-workflow",
+        "function-sales",
+        "scenario-sales-briefing",
+        "scenario-revenue-operations",
+        "evidence-customer-adoption",
+        "evidence-partnership-integration"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-infra",
+          "label": "AI 基础设施"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "label": "企业工作流"
+        },
+        {
+          "id": "scenario-sales-briefing",
+          "label": "销售情报与跟进"
+        }
+      ],
+      "opportunitySignals": {
+        "schemaVersion": "opportunity-signals-v1",
+        "evidenceBasis": "raw_source_text",
+        "sourceExcerpt": "Siliconangle 把 AI 用进销售和收入团队流程 Tribal AI lands $10M in seed funding to bring metadata-native agents to the enterprise - SiliconANGLE Tribal AI lands $10M in seed funding to bring metadata-native agents to the enterprise ...",
+        "missingFields": [
+          "product_form",
+          "delivery_model"
+        ],
+        "labels": {
+          "buyer_or_user": [
+            {
+              "id": "enterprise_ai_owner",
+              "label": "Enterprise AI / transformation owner"
+            },
+            {
+              "id": "it_security_team",
+              "label": "IT, security, governance, or platform team"
+            },
+            {
+              "id": "sales_team",
+              "label": "Sales or revenue team"
+            }
+          ],
+          "team_or_function": [
+            {
+              "id": "it_security",
+              "label": "IT / security / platform governance"
+            },
+            {
+              "id": "sales",
+              "label": "Sales / revenue operations"
+            }
+          ],
+          "specific_task": [
+            {
+              "id": "sales_lead_research",
+              "label": "Lead research, account research, or pipeline enrichment"
+            }
+          ],
+          "business_action": [
+            {
+              "id": "customer_deployment",
+              "label": "Customer deployment, rollout, pilot, case study, or adoption"
+            },
+            {
+              "id": "funding_round",
+              "label": "Funding, financing, or investment round"
+            },
+            {
+              "id": "partnership_integration",
+              "label": "Partnership, integration, channel, or ecosystem move"
+            }
+          ],
+          "product_form": [],
+          "delivery_model": [],
+          "pain_or_constraint": [
+            {
+              "id": "workflow_integration",
+              "label": "Integration into existing workflow or systems"
+            }
+          ],
+          "adoption_evidence": [
+            {
+              "id": "deployment_scale",
+              "label": "Deployment scale, seats, locations, users, or volume disclosed"
+            }
+          ],
+          "source_evidence_type": [
+            {
+              "id": "funding_news",
+              "label": "Funding news or investor announcement"
+            }
+          ]
+        },
+        "buyer_or_user": [
+          "enterprise_ai_owner",
+          "it_security_team",
+          "sales_team"
+        ],
+        "buyerOrUser": [
+          "enterprise_ai_owner",
+          "it_security_team",
+          "sales_team"
+        ],
+        "team_or_function": [
+          "it_security",
+          "sales"
+        ],
+        "teamOrFunction": [
+          "it_security",
+          "sales"
+        ],
+        "specific_task": [
+          "sales_lead_research"
+        ],
+        "specificTask": [
+          "sales_lead_research"
+        ],
+        "business_action": [
+          "customer_deployment",
+          "funding_round",
+          "partnership_integration"
+        ],
+        "businessAction": [
+          "customer_deployment",
+          "funding_round",
+          "partnership_integration"
+        ],
+        "product_form": [],
+        "productForm": [],
+        "delivery_model": [],
+        "deliveryModel": [],
+        "pain_or_constraint": [
+          "workflow_integration"
+        ],
+        "painOrConstraint": [
+          "workflow_integration"
+        ],
+        "adoption_evidence": [
+          "deployment_scale"
+        ],
+        "adoptionEvidence": [
+          "deployment_scale"
+        ],
+        "source_evidence_type": [
+          "funding_news"
+        ],
+        "sourceEvidenceType": [
+          "funding_news"
+        ]
+      },
+      "summary": "谁：Siliconangle。 做了什么：Siliconangle 把 AI 用进销售和收入团队流程。 证据是什么：来源为 https://siliconangle.com/2026/05/20/tribal-ai-lands-10m-seed-funding-bring-metadata-native-agents-enterprise/，对应本地证据 R-013，材料已保留全文、哈希和出处。 缺什么：目前能确认事件方向；客户规模、留存和效果指标仍需后续材料验证。",
+      "translatedFact": "谁：Siliconangle。 做了什么：Siliconangle 把 AI 用进销售和收入团队流程。 证据是什么：来源为 https://siliconangle.com/2026/05/20/tribal-ai-lands-10m-seed-funding-bring-metadata-native-agents-enterprise/，对应本地证据 R-013，材料已保留全文、哈希和出处。 缺什么：目前能确认事件方向；客户规模、留存和效果指标仍需后续材料验证。",
+      "originalHighlights": [],
+      "visibleFragment": "谁：Siliconangle。 做了什么：Siliconangle 把 AI 用进销售和收入团队流程。 证据是什么：来源为 https://siliconangle.com/2026/05/20/tribal-ai-lands-10m-seed-funding-bring-metadata-native-agents-enterprise/，对应本地证据 R-013，材料已保留全文、哈希和出处。 缺什么：目前能确认事件方向；客户规模、留存和效果指标仍需后续材料验证。",
+      "sourceLinks": [
+        "https://siliconangle.com/2026/05/20/tribal-ai-lands-10m-seed-funding-bring-metadata-native-agents-enterprise/"
+      ],
+      "sourceTitle": "Tribal AI lands $10M in seed funding to bring metadata-native agents to the enterprise - SiliconANGLE",
+      "status": "published",
+      "assetLevel": "enterprise_ai_fde_pool",
+      "evidenceGate": "core_evidence_candidate",
+      "stage": "",
+      "evidence": "evidence-customer-adoption",
+      "largeVendorKey": "",
+      "track": "track-ai-infra",
+      "generatedTitle": "Tribal AI 获 1000 万美元种子轮融资，为企业带来元数据原生 AI 智能体",
+      "displayTitle": "Tribal AI 获 1000 万美元种子轮融资，为企业带来元数据原生 AI 智能体",
+      "largeVendor": false,
+      "frontstageRankScore": 950,
+      "frontstageEditorialScore": 950,
+      "frontstageEvidenceScore": 97,
+      "frontstageSelectionReasons": [
+        "FDE lens pool",
+        "source-backed implementation evidence"
+      ],
+      "frontstageValueDescription": "FDE lens pool item preserved for the Enterprise AI lens.",
+      "frontstageQualityWarnings": [],
+      "frontstageGenericCandidate": false,
+      "fromCorePool": true,
+      "linkedCardId": "SIG-20260524-A09",
+      "promotionStatus": "promoted_to_signal_card",
+      "enterpriseAiLensPriority": true,
+      "sourceRef": "P-013",
+      "titleZh": "Tribal AI 获 1000 万美元种子轮融资，为企业带来元数据原生 AI 智能体",
+      "titleTranslationStatus": "translated",
+      "titleTranslationMethod": "fde_lens_source_rule",
+      "factExtractionStatus": "missing_fde_lens_fact",
+      "factExtractionMethod": "pool_key_excerpts_and_fde_implementation_analysis",
+      "implementationAnalysis": {
+        "demand": "发现的需求是客户服务、销售跟进或工单处理需要更快响应、更准知识检索，并能嵌入现有 CRM / 服务系统。",
+        "services": "提供的服务是面向客服响应、线索跟进与知识检索的平台或 Agent 系统，把数据、审批、工具调用和人工校验串成可运行流程。",
+        "result": "实施结果处在试点 / POC / 验证阶段；原文未披露是否已经规模化上线。",
+        "sourceBasis": "谁：Siliconangle。 做了什么：Siliconangle 把 AI 用进销售和收入团队流程。 证据是什么：来源为 https://siliconangle.com/2026/05/20/tribal-ai-lands-10m-seed-funding-bring-metadata-native-agents-enterprise/，对应本地证据 ..."
+      }
+    },
+    {
       "id": "FDE-2026-05-23-P-009",
       "type": "signal_card",
       "category": "product-service",
       "categoryLabel": "产品",
-      "title": "Dust 发布 AI 能力，指向企业智能体协作流程",
+      "title": "多玩家AI初创公司Dust融资4000万美元，助力企业超越孤立AI智能体",
       "originalTitle": "Multiplayer AI startup Dust raises $40M to help enterprises move beyond isolated AI assistants - SiliconANGLE",
       "date": "2026-05-23",
       "subject": "Dust",
@@ -1975,8 +4704,8 @@
       "evidence": "evidence-product-launch",
       "largeVendorKey": "",
       "track": "track-ai-infra",
-      "generatedTitle": "Dust 发布 AI 能力，指向企业智能体协作流程",
-      "displayTitle": "Dust 发布 AI 能力，指向企业智能体协作流程",
+      "generatedTitle": "多玩家AI初创公司Dust融资4000万美元，助力企业超越孤立AI智能体",
+      "displayTitle": "多玩家AI初创公司Dust融资4000万美元，助力企业超越孤立AI智能体",
       "largeVendor": false,
       "frontstageRankScore": 1150,
       "frontstageEditorialScore": 1150,
@@ -1993,9 +4722,9 @@
       "promotionStatus": "promoted_to_signal_card",
       "enterpriseAiLensPriority": true,
       "sourceRef": "P-009",
-      "titleZh": "",
-      "titleTranslationStatus": "not_required",
-      "titleTranslationMethod": "not_available_in_pool_snapshot",
+      "titleZh": "多玩家AI初创公司Dust融资4000万美元，助力企业超越孤立AI智能体",
+      "titleTranslationStatus": "translated",
+      "titleTranslationMethod": "fde_lens_source_rule",
       "factExtractionStatus": "missing_fde_lens_fact",
       "factExtractionMethod": "pool_key_excerpts_and_fde_implementation_analysis",
       "implementationAnalysis": {
@@ -2010,7 +4739,7 @@
       "type": "signal_card",
       "category": "funding",
       "categoryLabel": "融资",
-      "title": "Sycamore Labs 融资 6500 万美元，建设企业 AI Agent 平台",
+      "title": "Sycamore Labs 获 6500 万美元种子轮融资，打造企业级 AI 智能体平台",
       "originalTitle": "Sycamore Labs Secures $65 Million Seed Funding to Build Enterprise AI Agent Platform | Raising.fi",
       "date": "2026-05-22",
       "subject": "Sycamore Labs",
@@ -2206,8 +4935,8 @@
       "evidence": "evidence-funding",
       "largeVendorKey": "",
       "track": "track-ai-governance",
-      "generatedTitle": "Sycamore Labs 融资 6500 万美元，建设企业 AI Agent 平台",
-      "displayTitle": "Sycamore Labs 融资 6500 万美元，建设企业 AI Agent 平台",
+      "generatedTitle": "Sycamore Labs 获 6500 万美元种子轮融资，打造企业级 AI 智能体平台",
+      "displayTitle": "Sycamore Labs 获 6500 万美元种子轮融资，打造企业级 AI 智能体平台",
       "largeVendor": false,
       "frontstageRankScore": 1150,
       "frontstageEditorialScore": 1150,
@@ -2224,9 +4953,9 @@
       "promotionStatus": "promoted_to_signal_card",
       "enterpriseAiLensPriority": true,
       "sourceRef": "P-014",
-      "titleZh": "",
-      "titleTranslationStatus": "not_required",
-      "titleTranslationMethod": "not_available_in_pool_snapshot",
+      "titleZh": "Sycamore Labs 获 6500 万美元种子轮融资，打造企业级 AI 智能体平台",
+      "titleTranslationStatus": "translated",
+      "titleTranslationMethod": "fde_lens_source_rule",
       "factExtractionStatus": "missing_fde_lens_fact",
       "factExtractionMethod": "pool_key_excerpts_and_fde_implementation_analysis",
       "implementationAnalysis": {
@@ -2241,7 +4970,7 @@
       "type": "signal_card",
       "category": "case",
       "categoryLabel": "案例",
-      "title": "Choco 部署 OpenAI Agent 处理食品分销订单",
+      "title": "Choco 利用 AI 智能体实现食品配送自动化",
       "originalTitle": "Choco automates food distribution with AI agents",
       "date": "2026-05-21",
       "subject": "Choco / OpenAI",
@@ -2388,8 +5117,8 @@
       "evidence": "evidence-customer-adoption",
       "largeVendorKey": "openai",
       "track": "track-enterprise-workflow",
-      "generatedTitle": "Choco 部署 OpenAI Agent 处理食品分销订单",
-      "displayTitle": "Choco 部署 OpenAI Agent 处理食品分销订单",
+      "generatedTitle": "Choco 利用 AI 智能体实现食品配送自动化",
+      "displayTitle": "Choco 利用 AI 智能体实现食品配送自动化",
       "largeVendor": true,
       "frontstageRankScore": 1160,
       "frontstageEditorialScore": 1160,
@@ -2406,15 +5135,15 @@
       "promotionStatus": "promoted_to_signal_card",
       "enterpriseAiLensPriority": true,
       "sourceRef": "P-048",
-      "titleZh": "",
-      "titleTranslationStatus": "not_required",
-      "titleTranslationMethod": "not_available_in_pool_snapshot",
+      "titleZh": "Choco 利用 AI 智能体实现食品配送自动化",
+      "titleTranslationStatus": "translated",
+      "titleTranslationMethod": "fde_lens_source_rule",
       "factExtractionStatus": "missing_fde_lens_fact",
       "factExtractionMethod": "pool_key_excerpts_and_fde_implementation_analysis",
       "implementationAnalysis": {
         "demand": "发现的需求是企业采购、供应商选择和合规校验流程需要自动化，减少人工检索、比价、审批和合同处理中的摩擦。",
         "services": "提供的服务是面向采购流程自动化与合规校验的平台或 Agent 系统，把数据、审批、工具调用和人工校验串成可运行流程。",
-        "result": "实施结果已经进入生产、部署或上线阶段；原文未披露可独立核验的 ROI 或长期运行指标。",
+        "result": "原文未披露最终实施结果；目前只能确认该项目或产品已经进入公开发布、融资、试点、客户交付或实施准备阶段。",
         "sourceBasis": "谁：Choco / OpenAI。 做了什么：OpenAI 案例显示，Choco 用 OrderAgent 和 VoiceAgent 减少分销商人工录单。 证据是什么：来源为 https://openai.com/index/choco/，对应本地证据 R-085，材料已保留全文、哈希和出处。 缺什么：OpenAI 案例确认应用方向，仍需观察第三方指标和客..."
       }
     },
@@ -2423,7 +5152,7 @@
       "type": "signal_card",
       "category": "case",
       "categoryLabel": "案例",
-      "title": "LTM 在 HR 和销售组织部署 Copilot Agents",
+      "title": "LTM借助AI驱动Copilot代理变革人力资源与销售组织",
       "originalTitle": "LTM transforms HR and Sales Organization with AI-Powered Copilot Agents",
       "date": "2026-05-21",
       "subject": "LTM / Microsoft",
@@ -2600,8 +5329,8 @@
       "evidence": "evidence-customer-adoption",
       "largeVendorKey": "microsoft",
       "track": "track-enterprise-data",
-      "generatedTitle": "LTM 在 HR 和销售组织部署 Copilot Agents",
-      "displayTitle": "LTM 在 HR 和销售组织部署 Copilot Agents",
+      "generatedTitle": "LTM借助AI驱动Copilot代理变革人力资源与销售组织",
+      "displayTitle": "LTM借助AI驱动Copilot代理变革人力资源与销售组织",
       "largeVendor": true,
       "frontstageRankScore": 1150,
       "frontstageEditorialScore": 1150,
@@ -3051,7 +5780,7 @@
       "type": "signal_card",
       "category": "case",
       "categoryLabel": "案例",
-      "title": "Veltris 发布 VeltrisOne，面向多行业工作流编排 AI",
+      "title": "Veltris 推出 VeltrisOne——专为赋能微型行业打造的垂直 AI 编排平台",
       "originalTitle": "Veltris launches VeltrisOne vertical AI orchestration platform",
       "date": "2026-05-20",
       "subject": "Veltris",
@@ -3299,8 +6028,8 @@
       "evidence": "evidence-customer-adoption",
       "largeVendorKey": "",
       "track": "track-medical-ai",
-      "generatedTitle": "Veltris 发布 VeltrisOne，面向多行业工作流编排 AI",
-      "displayTitle": "Veltris 发布 VeltrisOne，面向多行业工作流编排 AI",
+      "generatedTitle": "Veltris 推出 VeltrisOne——专为赋能微型行业打造的垂直 AI 编排平台",
+      "displayTitle": "Veltris 推出 VeltrisOne——专为赋能微型行业打造的垂直 AI 编排平台",
       "largeVendor": false,
       "frontstageRankScore": 1010,
       "frontstageEditorialScore": 1010,
@@ -3331,6 +6060,28 @@
     }
   ],
   "items": [
+    {
+      "id": "enterprise-ai:FDE-2026-07-16-P-013",
+      "cardId": "FDE-2026-07-16-P-013",
+      "date": "2026-07-16",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "Anthropic 与私募巨头合资成立 AI 实施公司 Ode，初始资金 15 亿美元",
+      "subject": "Anthropic",
+      "sourceName": "techcrunch.com",
+      "sourceUrl": "https://techcrunch.com/2026/07/15/anthropic-blackstone-bet-the-next-trillion-dollar-ai-business-is-implementation-not-models",
+      "stage": "platform_enablement",
+      "stageLabel": "平台使能",
+      "scenario": "企业工作流",
+      "workflow": "把 Agent 或模型接入业务系统",
+      "evidenceBoundary": "已确认：Anthropic 与 Blackstone 等私募股权公司合资成立 AI 实施公司 Ode，初始资金 15 亿美元。Ode 以\"Claude-first\"原则为大型企业定制 AI 系统，已收购 AI 工程服务初创公司 Fractional AI 作为核心团队，目前拥有 100 名工程师。；未确认：内部投入、ROI 与长期运行效果。",
+      "implementationAnalysis": {
+        "demand": "原文显示，企业侧需求集中在把 Agent 或模型接入业务系统，需要把 AI / Agent 接入实际业务流程，而不是停留在演示或通用工具层。",
+        "services": "提供的服务是围绕企业工作流的 AI 实施与交付：做技术 scoping、系统接入、工作流配置、验证和上线支持。",
+        "result": "原文未披露最终实施结果；目前只能确认该项目或产品已经进入公开发布、融资、试点、客户交付或实施准备阶段。",
+        "sourceBasis": "Anthropic 与 Blackstone 等私募股权公司合资成立 AI 实施公司 Ode，初始资金 15 亿美元。Ode 以\"Claude-first\"原则为大型企业定制 AI 系统，已收购 AI 工程服务初创公司 Fractional AI 作为核心团队，目前拥有 100 名工程师。"
+      }
+    },
     {
       "id": "enterprise-ai:FDE-2026-07-15-P-026",
       "cardId": "FDE-2026-07-15-P-026",
@@ -3425,7 +6176,7 @@
       "date": "2026-07-13",
       "category": "case",
       "categoryLabel": "案例",
-      "title": "Simplexity Robotics 成立 11 个月即向生产线交付 100 台 i7 Pro 机器人，并部署于 Leaderdrive 与 AI 基础设施工厂",
+      "title": "Simplexity Robotics 成立 11 个月即向生产线交付 100 台 i7 Pro 机器人，并在 Leaderdrive 和 AI 基础设施工厂部署",
       "subject": "Simplexity Robotics",
       "sourceName": "robotsbeat.com",
       "sourceUrl": "https://robotsbeat.com/simplexity-robotics-100-robots-i7-pro-leaderdrive-production-deployment/",
@@ -3447,7 +6198,7 @@
       "date": "2026-07-13",
       "category": "product-service",
       "categoryLabel": "产品",
-      "title": "Taskade 发布 TSK-1 系统内核，为工作区应用提供统一智能运行层",
+      "title": "Taskade TSK-1 发布：Taskade 系统内核（2026）",
       "subject": "Taskade",
       "sourceName": "taskade.com",
       "sourceUrl": "https://taskade.com/blog/introducing-tsk-1",
@@ -3508,12 +6259,254 @@
       }
     },
     {
+      "id": "enterprise-ai:SIG-20260625-A04",
+      "cardId": "SIG-20260625-A04",
+      "date": "2026-06-25",
+      "category": "case",
+      "categoryLabel": "案例",
+      "title": "LLM推理优化：AI工程师实用指南",
+      "subject": "LLM Inference Optimization",
+      "sourceName": "jobsbyculture.com",
+      "sourceUrl": "https://jobsbyculture.com/blog/llm-inference-optimization-guide-2026",
+      "stage": "production_rollout",
+      "stageLabel": "生产上线",
+      "scenario": "企业工作流",
+      "workflow": "把 Agent 或模型接入业务系统",
+      "evidenceBoundary": "已确认：jobsbyculture 的材料指向 AI 基础设施能力，重点在推理、模型部署或算力调用成本。；未确认：内部投入、ROI 与长期运行效果。",
+      "implementationAnalysis": {
+        "demand": "原文显示，企业侧需求集中在把 Agent 或模型接入业务系统，需要把 AI / Agent 接入实际业务流程，而不是停留在演示或通用工具层。",
+        "services": "提供的服务是围绕企业工作流的 AI 实施与交付：做技术 scoping、系统接入、工作流配置、验证和上线支持。",
+        "result": "实施结果已经进入生产、部署或上线阶段；原文未披露可独立核验的 ROI 或长期运行指标。",
+        "sourceBasis": "jobsbyculture 的材料指向 AI 基础设施能力，重点在推理、模型部署或算力调用成本。"
+      }
+    },
+    {
+      "id": "enterprise-ai:SIG-20260622-A15",
+      "cardId": "SIG-20260622-A15",
+      "date": "2026-06-22",
+      "category": "case",
+      "categoryLabel": "案例",
+      "title": "OpenAI政府持股🇺🇸，谷歌计算交易🚀，微软Scout发布🤖",
+      "subject": "Tldr",
+      "sourceName": "TLDR AI Newsletter",
+      "sourceUrl": "https://tldr.tech/ai/2026-06-08",
+      "stage": "production_rollout",
+      "stageLabel": "生产上线",
+      "scenario": "知识工作与协作",
+      "workflow": "会议记录、知识沉淀与团队协作",
+      "evidenceBoundary": "已确认：来源材料显示，Tldr 的客户部署或应用案例涉及模型部署和算力调用。；未确认：内部投入、ROI 与长期运行效果。",
+      "implementationAnalysis": {
+        "demand": "原文显示，企业侧需求集中在会议记录、知识沉淀与团队协作，需要把 AI / Agent 接入实际业务流程，而不是停留在演示或通用工具层。",
+        "services": "提供的服务是面向会议记录、知识沉淀与团队协作的平台或 Agent 系统，把数据、审批、工具调用和人工校验串成可运行流程。",
+        "result": "实施结果已经进入生产、部署或上线阶段；原文未披露可独立核验的 ROI 或长期运行指标。",
+        "sourceBasis": "来源材料显示，Tldr 的客户部署或应用案例涉及模型部署和算力调用。"
+      }
+    },
+    {
+      "id": "enterprise-ai:SIG-20260621-A16",
+      "cardId": "SIG-20260621-A16",
+      "date": "2026-06-21",
+      "category": "case",
+      "categoryLabel": "案例",
+      "title": "随着智能体 AI 进入“困难期”，Salesforce 的前向部署工程师随时准备为企业提供支持。Jennifer Cramer 详解其运作方式。",
+      "subject": "Diginomica",
+      "sourceName": "diginomica.com",
+      "sourceUrl": "https://diginomica.com/agentic-ai-hits-difficult-age-salesforces-forward-deployment-engineers-are-hand-well-hold",
+      "stage": "production_rollout",
+      "stageLabel": "生产上线",
+      "scenario": "客户服务与销售",
+      "workflow": "客服响应、线索跟进与知识检索",
+      "evidenceBoundary": "已确认：Diginomica 报道 Salesforce 通过 Forward Deployment Engineers 帮助企业把 Agentic AI 从试点推进到实际部署。；未确认：内部投入、ROI 与长期运行效果。",
+      "implementationAnalysis": {
+        "demand": "发现的需求是客户服务、销售跟进或工单处理需要更快响应、更准知识检索，并能嵌入现有 CRM / 服务系统。",
+        "services": "提供的服务是面向客服响应、线索跟进与知识检索的平台或 Agent 系统，把数据、审批、工具调用和人工校验串成可运行流程。",
+        "result": "实施结果已经进入生产、部署或上线阶段；原文未披露可独立核验的 ROI 或长期运行指标。",
+        "sourceBasis": "Diginomica 报道 Salesforce 通过 Forward Deployment Engineers 帮助企业把 Agentic AI 从试点推进到实际部署。"
+      }
+    },
+    {
+      "id": "enterprise-ai:SIG-20260621-A13",
+      "cardId": "SIG-20260621-A13",
+      "date": "2026-06-21",
+      "category": "case",
+      "categoryLabel": "案例",
+      "title": "Harvey AI的前线部署工程师：这家估值30亿美元的法律AI领导者如何在大律所内部部署 | 博客 | Perspective AI",
+      "subject": "Harvey AI's Forward Deployed Engineers",
+      "sourceName": "getperspective.ai",
+      "sourceUrl": "https://getperspective.ai/blog/harvey-ai-forward-deployed-engineers-biglaw-deployment-playbook-2026",
+      "stage": "production_rollout",
+      "stageLabel": "生产上线",
+      "scenario": "高合规行业",
+      "workflow": "企业数据接入与决策支持",
+      "evidenceBoundary": "已确认：Perspective AI 文章分析 Harvey AI 的 Forward Deployed Engineers 如何嵌入大型律所完成法律 AI 部署。；未确认：内部投入、ROI 与长期运行效果。",
+      "implementationAnalysis": {
+        "demand": "发现的需求是制造、基础设施和现场运营场景需要把 AI 从分析推进到真实设备、业务系统和安全运营中，同时降低上线、风险和客户现场约束。",
+        "services": "提供的服务是 FDE / 客户嵌入式工程交付：工程师进入客户环境，完成需求拆解、系统集成、流程验证和上线支持。",
+        "result": "实施结果已经进入生产、部署或上线阶段；原文未披露可独立核验的 ROI 或长期运行指标。",
+        "sourceBasis": "Perspective AI 文章分析 Harvey AI 的 Forward Deployed Engineers 如何嵌入大型律所完成法律 AI 部署。"
+      }
+    },
+    {
+      "id": "enterprise-ai:SIG-20260620-A07",
+      "cardId": "SIG-20260620-A07",
+      "date": "2026-06-20",
+      "category": "case",
+      "categoryLabel": "案例",
+      "title": "Reflection 招聘：前部署工程师 - AI 工程师",
+      "subject": "Forward Deployed Engineer",
+      "sourceName": "jobs.ashbyhq.com",
+      "sourceUrl": "https://jobs.ashbyhq.com/reflectionai/8b97b583-3cc6-4834-ae2c-d5aecf22ed7d",
+      "stage": "production_rollout",
+      "stageLabel": "生产上线",
+      "scenario": "企业工作流",
+      "workflow": "把 Agent 或模型接入业务系统",
+      "evidenceBoundary": "已确认：Jobs 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。；未确认：内部投入、ROI 与长期运行效果。",
+      "implementationAnalysis": {
+        "demand": "原文显示，企业侧需求集中在把 Agent 或模型接入业务系统，需要把 AI / Agent 接入实际业务流程，而不是停留在演示或通用工具层。",
+        "services": "提供的服务是 FDE / 客户嵌入式工程交付：工程师进入客户环境，完成需求拆解、系统集成、流程验证和上线支持。",
+        "result": "实施结果已经进入生产、部署或上线阶段；原文未披露可独立核验的 ROI 或长期运行指标。",
+        "sourceBasis": "Jobs 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
+      }
+    },
+    {
+      "id": "enterprise-ai:FDE-2026-06-20-P-051",
+      "cardId": "FDE-2026-06-20-P-051",
+      "date": "2026-06-20",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "公司公告 - 市场数据",
+      "subject": "Company Announcement",
+      "sourceName": "markets.ft.com",
+      "sourceUrl": "https://markets.ft.com/data/announce/detail?dockey=600-202606082020BIZWIRE_USPRX____20260608_BW802379-1",
+      "stage": "governance",
+      "stageLabel": "治理边界",
+      "scenario": "数据与知识工作",
+      "workflow": "企业数据接入与决策支持",
+      "evidenceBoundary": "已确认：Hitachi 与 Google Cloud 扩大战略联盟，Hitachi 将建立并全球部署 FDE 模型，把 Lumada、IT/OT 能力与 Google Cloud AI 结合，用于 Physical AI、HMAX 和网络安全方案落地。；未确认：内部投入、ROI 与长期运行效果。",
+      "implementationAnalysis": {
+        "demand": "发现的需求是制造、基础设施和现场运营场景需要把 AI 从分析推进到真实设备、业务系统和安全运营中，同时降低上线、风险和客户现场约束。",
+        "services": "提供的服务是 Hitachi FDE 模型：Hitachi 咨询、AX 专家和 GlobalLogic 工程师与 Google Cloud 工程师协作，做现场约束识别、PoC、敏捷实施、HMAX/Gemini Enterprise 集成和安全方案交付。",
+        "result": "实施结果是双方将全球部署 Hitachi FDE 模型并增强 HMAX；原文提到 Hitachi 以 Customer Zero 方式验证过 Gemini Enterprise 在维护检查中的质量和效率潜力，但未披露独立 ROI 数字。",
+        "sourceBasis": "Hitachi 与 Google Cloud 扩大战略联盟，Hitachi 将建立并全球部署 FDE 模型，把 Lumada、IT/OT 能力与 Google Cloud AI 结合，用于 Physical AI、HMAX 和网络安全方案落地。"
+      }
+    },
+    {
+      "id": "enterprise-ai:SIG-20260619-A16-case-https-delight-ai-customers",
+      "cardId": "SIG-20260619-A16-case-https-delight-ai-customers",
+      "date": "2026-06-19",
+      "category": "case",
+      "categoryLabel": "案例",
+      "title": "Norse Atlantic Airways客户案例",
+      "subject": "Norse Atlantic Airways / delight.ai",
+      "sourceName": "delight.ai",
+      "sourceUrl": "https://delight.ai/customers/norse-atlantic-airways",
+      "stage": "production_rollout",
+      "stageLabel": "生产上线",
+      "scenario": "客户服务与销售",
+      "workflow": "客服响应、线索跟进与知识检索",
+      "evidenceBoundary": "已确认：Norse Atlantic Airways 与 delight.ai 合作构建面向航空公司运营的 AI workforce，用于把客户互动和运营任务交给可编排的 AI 工作流处理。；未确认：内部投入、ROI 与长期运行效果。",
+      "implementationAnalysis": {
+        "demand": "发现的需求是客户服务、销售跟进或工单处理需要更快响应、更准知识检索，并能嵌入现有 CRM / 服务系统。",
+        "services": "提供的服务是面向客服响应、线索跟进与知识检索的平台或 Agent 系统，把数据、审批、工具调用和人工校验串成可运行流程。",
+        "result": "原文未披露最终实施结果；目前只能确认该项目或产品已经进入公开发布、融资、试点、客户交付或实施准备阶段。",
+        "sourceBasis": "Norse Atlantic Airways 与 delight.ai 合作构建面向航空公司运营的 AI workforce，用于把客户互动和运营任务交给可编排的 AI 工作流处理。"
+      }
+    },
+    {
+      "id": "enterprise-ai:SIG-20260619-A06-case-https-www-ellamind-com",
+      "cardId": "SIG-20260619-A06-case-https-www-ellamind-com",
+      "date": "2026-06-19",
+      "category": "case",
+      "categoryLabel": "案例",
+      "title": "从客户角度看：前部署工程师的实际工作内容 | ellamind 博客",
+      "subject": "ellamind / elluminate",
+      "sourceName": "ellamind.com",
+      "sourceUrl": "https://www.ellamind.com/blog/forward-deployed-engineer",
+      "stage": "governance",
+      "stageLabel": "治理边界",
+      "scenario": "客户服务与销售",
+      "workflow": "客服响应、线索跟进与知识检索",
+      "evidenceBoundary": "已确认：ellamind 的 Forward Deployed Engineer 参与一家德国法定医保机构的客服聊天机器人上线前评估，把监管语言、测试数据和合规审查转化为可执行的生产系统验证。；未确认：内部投入、ROI 与长期运行效果。",
+      "implementationAnalysis": {
+        "demand": "发现的需求是高合规行业需要把 AI 引入受监管工作流，同时保留专业人员审核、数据边界和上线前验证。",
+        "services": "提供的服务是 FDE / 客户嵌入式工程交付：工程师进入客户环境，完成需求拆解、系统集成、流程验证和上线支持。",
+        "result": "实施结果已经进入生产、部署或上线阶段；原文未披露可独立核验的 ROI 或长期运行指标。",
+        "sourceBasis": "ellamind 的 Forward Deployed Engineer 参与一家德国法定医保机构的客服聊天机器人上线前评估，把监管语言、测试数据和合规审查转化为可执行的生产系统验证。"
+      }
+    },
+    {
+      "id": "enterprise-ai:SIG-20260619-A20-case-https-www-salesforce-com",
+      "cardId": "SIG-20260619-A20-case-https-www-salesforce-com",
+      "date": "2026-06-19",
+      "category": "case",
+      "categoryLabel": "案例",
+      "title": "今日最热门职位：前部署工程师 - Salesforce",
+      "subject": "Salesforce / Agentforce",
+      "sourceName": "salesforce.com",
+      "sourceUrl": "https://www.salesforce.com/ap/blog/forward-deployed-engineer/",
+      "stage": "production_rollout",
+      "stageLabel": "生产上线",
+      "scenario": "客户服务与销售",
+      "workflow": "客服响应、线索跟进与知识检索",
+      "evidenceBoundary": "已确认：Salesforce 派出 Forward Deployed Engineer 团队，帮助一家预订平台修复 Agentforce 数据库和 Data 360 同步问题，使其 B2B AI agent 试点恢复运行。；未确认：内部投入、ROI 与长期运行效果。",
+      "implementationAnalysis": {
+        "demand": "发现的需求是客户服务、销售跟进或工单处理需要更快响应、更准知识检索，并能嵌入现有 CRM / 服务系统。",
+        "services": "提供的服务是 FDE / 客户嵌入式工程交付：工程师进入客户环境，完成需求拆解、系统集成、流程验证和上线支持。",
+        "result": "实施结果已经进入生产、部署或上线阶段；原文未披露可独立核验的 ROI 或长期运行指标。",
+        "sourceBasis": "Salesforce 派出 Forward Deployed Engineer 团队，帮助一家预订平台修复 Agentforce 数据库和 Data 360 同步问题，使其 B2B AI agent 试点恢复运行。"
+      }
+    },
+    {
+      "id": "enterprise-ai:SIG-20260607-A02",
+      "cardId": "SIG-20260607-A02",
+      "date": "2026-06-07",
+      "category": "case",
+      "categoryLabel": "案例",
+      "title": "Druid AI 助力全球家电零售商自动化客服支持并释放增长潜力",
+      "subject": "Druid AI",
+      "sourceName": "druidai.com",
+      "sourceUrl": "https://www.druidai.com/case-studies/druid-ai-agents-automate-customer-support-appliances-retailer?hs_amp=true",
+      "stage": "production_rollout",
+      "stageLabel": "生产上线",
+      "scenario": "客户服务与销售",
+      "workflow": "客服响应、线索跟进与知识检索",
+      "evidenceBoundary": "已确认：Druid AI 案例描述家电客户期望在洗衣机周末故障时，也能获得类似实时物流、银行 App 和午夜预约的即时服务体验。；未确认：内部投入、ROI 与长期运行效果。",
+      "implementationAnalysis": {
+        "demand": "发现的需求是客户服务、销售跟进或工单处理需要更快响应、更准知识检索，并能嵌入现有 CRM / 服务系统。",
+        "services": "提供的服务是面向客服响应、线索跟进与知识检索的平台或 Agent 系统，把数据、审批、工具调用和人工校验串成可运行流程。",
+        "result": "原文未披露最终实施结果；目前只能确认该项目或产品已经进入公开发布、融资、试点、客户交付或实施准备阶段。",
+        "sourceBasis": "Druid AI 案例描述家电客户期望在洗衣机周末故障时，也能获得类似实时物流、银行 App 和午夜预约的即时服务体验。"
+      }
+    },
+    {
+      "id": "enterprise-ai:SIG-20260607-A03",
+      "cardId": "SIG-20260607-A03",
+      "date": "2026-06-07",
+      "category": "case",
+      "categoryLabel": "案例",
+      "title": "华硕在2026年台北国际电脑展上实现企业级到边缘AI的落地",
+      "subject": "ASUS",
+      "sourceName": "itwire.com",
+      "sourceUrl": "https://itwire.com/business-it-news/business-technology/asus-brings-enterprise-to-edge-ai-to-life-at-computex-2026",
+      "stage": "governance",
+      "stageLabel": "治理边界",
+      "scenario": "企业工作流",
+      "workflow": "权限、合规与风险控制",
+      "evidenceBoundary": "已确认：华硕在 Computex 2026 展示 Zenni Claw AI 方案，强调为企业提供安全、可控、可靠的 Agentic AI 体验。；未确认：内部投入、ROI 与长期运行效果。",
+      "implementationAnalysis": {
+        "demand": "原文显示，企业侧需求集中在权限、合规与风险控制，需要把 AI / Agent 接入实际业务流程，而不是停留在演示或通用工具层。",
+        "services": "提供的服务是面向权限、合规与风险控制的平台或 Agent 系统，把数据、审批、工具调用和人工校验串成可运行流程。",
+        "result": "实施结果已经进入生产、部署或上线阶段；原文未披露可独立核验的 ROI 或长期运行指标。",
+        "sourceBasis": "华硕在 Computex 2026 展示 Zenni Claw AI 方案，强调为企业提供安全、可控、可靠的 Agentic AI 体验。"
+      }
+    },
+    {
       "id": "enterprise-ai:SIG-20260605-A12",
       "cardId": "SIG-20260605-A12",
       "date": "2026-06-05",
       "category": "case",
       "categoryLabel": "案例",
-      "title": "Archestra 把 AI 用进销售和收入团队流程",
+      "title": "Archestra 融资 1000 万美元，为 AI 智能体接入企业数据提供中介服务",
       "subject": "Archestra",
       "sourceName": "siliconangle.com",
       "sourceUrl": "https://siliconangle.com/2026/06/02/archestra-raises-10m-broker-ai-agent-access-corporate-data/",
@@ -3535,7 +6528,7 @@
       "date": "2026-06-05",
       "category": "case",
       "categoryLabel": "案例",
-      "title": "Amazon 把 AI 用进销售和收入团队流程",
+      "title": "使用 Amazon Bedrock AgentCore 通过 AI 智能体自动化采购工作流程 | AWS 行业解决方案",
       "subject": "Amazon",
       "sourceName": "aws.amazon.com",
       "sourceUrl": "https://aws.amazon.com/blogs/industries/automate-procurement-workflows-with-ai-agents-using-amazon-bedrock-agentcore/",
@@ -3549,6 +6542,28 @@
         "services": "提供的服务是面向采购流程自动化与合规校验的平台或 Agent 系统，把数据、审批、工具调用和人工校验串成可运行流程。",
         "result": "实施结果处在试点 / POC / 验证阶段；原文未披露是否已经规模化上线。",
         "sourceBasis": "原文指出采购团队在供应商选择和 RFQ 流程中面临管理压力。"
+      }
+    },
+    {
+      "id": "enterprise-ai:SIG-20260604-A05",
+      "cardId": "SIG-20260604-A05",
+      "date": "2026-06-04",
+      "category": "case",
+      "categoryLabel": "案例",
+      "title": "家得宝借助谷歌云Gemini企业版实现客户支持速度提升四倍 - 2026年4月22日",
+      "subject": "The Home Depot",
+      "sourceName": "googlecloudpresscorner.com",
+      "sourceUrl": "https://www.googlecloudpresscorner.com/2026-04-22-The-Home-Depot-Delivers-Customer-Support-Four-Times-Faster-Using-Google-Clouds-Gemini-Enterprise-for-Customer-Experience",
+      "stage": "pilot",
+      "stageLabel": "试点验证",
+      "scenario": "客户服务与销售",
+      "workflow": "客服响应、线索跟进与知识检索",
+      "evidenceBoundary": "已确认：谁：Googlecloudpresscorner。 做了什么：Googlecloudpresscorner 把 AI 用进销售和收入团队流程。 证据是什么：来源为 https://www.googlecloudpresscorner.com/2026-04-22-The-Home-Depot-Delivers-Customer-Support-Four-T...；未确...",
+      "implementationAnalysis": {
+        "demand": "发现的需求是客户服务、销售跟进或工单处理需要更快响应、更准知识检索，并能嵌入现有 CRM / 服务系统。",
+        "services": "提供的服务是面向客服响应、线索跟进与知识检索的平台或 Agent 系统，把数据、审批、工具调用和人工校验串成可运行流程。",
+        "result": "实施结果处在试点 / POC / 验证阶段；原文未披露是否已经规模化上线。",
+        "sourceBasis": "谁：Googlecloudpresscorner。 做了什么：Googlecloudpresscorner 把 AI 用进销售和收入团队流程。 证据是什么：来源为 https://www.googlecloudpresscorner.com/2026-04-22-The-Home-Depot-Delivers-Customer-Support-Four-T..."
       }
     },
     {
@@ -3574,12 +6589,34 @@
       }
     },
     {
+      "id": "enterprise-ai:SIG-20260524-A09",
+      "cardId": "SIG-20260524-A09",
+      "date": "2026-05-24",
+      "category": "case",
+      "categoryLabel": "案例",
+      "title": "Tribal AI 获 1000 万美元种子轮融资，为企业带来元数据原生 AI 智能体",
+      "subject": "Tribal AI",
+      "sourceName": "siliconangle.com",
+      "sourceUrl": "https://siliconangle.com/2026/05/20/tribal-ai-lands-10m-seed-funding-bring-metadata-native-agents-enterprise/",
+      "stage": "pilot",
+      "stageLabel": "试点验证",
+      "scenario": "客户服务与销售",
+      "workflow": "客服响应、线索跟进与知识检索",
+      "evidenceBoundary": "已确认：谁：Siliconangle。 做了什么：Siliconangle 把 AI 用进销售和收入团队流程。 证据是什么：来源为 https://siliconangle.com/2026/05/20/tribal-ai-lands-10m-seed-funding-bring-metadata-native-agents-enterprise/，对应本地证据 ...；未确...",
+      "implementationAnalysis": {
+        "demand": "发现的需求是客户服务、销售跟进或工单处理需要更快响应、更准知识检索，并能嵌入现有 CRM / 服务系统。",
+        "services": "提供的服务是面向客服响应、线索跟进与知识检索的平台或 Agent 系统，把数据、审批、工具调用和人工校验串成可运行流程。",
+        "result": "实施结果处在试点 / POC / 验证阶段；原文未披露是否已经规模化上线。",
+        "sourceBasis": "谁：Siliconangle。 做了什么：Siliconangle 把 AI 用进销售和收入团队流程。 证据是什么：来源为 https://siliconangle.com/2026/05/20/tribal-ai-lands-10m-seed-funding-bring-metadata-native-agents-enterprise/，对应本地证据 ..."
+      }
+    },
+    {
       "id": "enterprise-ai:SIG-20260523-A03",
       "cardId": "SIG-20260523-A03",
       "date": "2026-05-23",
       "category": "product-service",
       "categoryLabel": "产品",
-      "title": "Dust 发布 AI 能力，指向企业智能体协作流程",
+      "title": "多玩家AI初创公司Dust融资4000万美元，助力企业超越孤立AI智能体",
       "subject": "Dust",
       "sourceName": "siliconangle.com",
       "sourceUrl": "https://siliconangle.com/2026/05/18/multiplayer-ai-startup-dust-swipes-40m-funding-help-enterprises-move-beyond-isolated-ai-assistants/",
@@ -3601,7 +6638,7 @@
       "date": "2026-05-22",
       "category": "funding",
       "categoryLabel": "融资",
-      "title": "Sycamore Labs 融资 6500 万美元，建设企业 AI Agent 平台",
+      "title": "Sycamore Labs 获 6500 万美元种子轮融资，打造企业级 AI 智能体平台",
       "subject": "Sycamore Labs",
       "sourceName": "raising.fi",
       "sourceUrl": "https://raising.fi/news/sycamore-labs-seed-march-2026",
@@ -3645,7 +6682,7 @@
       "date": "2026-05-21",
       "category": "case",
       "categoryLabel": "案例",
-      "title": "Choco 部署 OpenAI Agent 处理食品分销订单",
+      "title": "Choco 利用 AI 智能体实现食品配送自动化",
       "subject": "Choco / OpenAI",
       "sourceName": "openai.com",
       "sourceUrl": "https://openai.com/index/choco/",
@@ -3657,7 +6694,7 @@
       "implementationAnalysis": {
         "demand": "发现的需求是企业采购、供应商选择和合规校验流程需要自动化，减少人工检索、比价、审批和合同处理中的摩擦。",
         "services": "提供的服务是面向采购流程自动化与合规校验的平台或 Agent 系统，把数据、审批、工具调用和人工校验串成可运行流程。",
-        "result": "实施结果已经进入生产、部署或上线阶段；原文未披露可独立核验的 ROI 或长期运行指标。",
+        "result": "原文未披露最终实施结果；目前只能确认该项目或产品已经进入公开发布、融资、试点、客户交付或实施准备阶段。",
         "sourceBasis": "谁：Choco / OpenAI。 做了什么：OpenAI 案例显示，Choco 用 OrderAgent 和 VoiceAgent 减少分销商人工录单。 证据是什么：来源为 https://openai.com/index/choco/，对应本地证据 R-085，材料已保留全文、哈希和出处。 缺什么：OpenAI 案例确认应用方向，仍需观察第三方指标和客..."
       }
     },
@@ -3689,7 +6726,7 @@
       "date": "2026-05-21",
       "category": "case",
       "categoryLabel": "案例",
-      "title": "LTM 在 HR 和销售组织部署 Copilot Agents",
+      "title": "LTM借助AI驱动Copilot代理变革人力资源与销售组织",
       "subject": "LTM / Microsoft",
       "sourceName": "adoption.microsoft.com",
       "sourceUrl": "https://adoption.microsoft.com/en-us/ai-transformation-stories/ltm/",
@@ -3711,7 +6748,7 @@
       "date": "2026-05-20",
       "category": "case",
       "categoryLabel": "案例",
-      "title": "Veltris 发布 VeltrisOne，面向多行业工作流编排 AI",
+      "title": "Veltris 推出 VeltrisOne——专为赋能微型行业打造的垂直 AI 编排平台",
       "subject": "Veltris",
       "sourceName": "PRNewswire / Veltris",
       "sourceUrl": "https://www.prnewswire.com/news-releases/veltris-launches-veltrisone--a-vertical-ai-orchestration-platform-purpose-built-to-power-micro-industries-302777915.html",

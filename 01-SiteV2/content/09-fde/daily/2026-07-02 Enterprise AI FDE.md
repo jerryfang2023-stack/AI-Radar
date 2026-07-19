@@ -4,7 +4,7 @@ date: 2026-07-02
 fde_version: FDE-V2.0
 status: current
 source: "01-SiteV2/content/11-databases/data-center-v4/2026-07-02/fde-records.json"
-item_count: 1
+item_count: 2
 ---
 
 # 2026-07-02 Enterprise AI / FDE
@@ -13,19 +13,36 @@ item_count: 1
 
 - [当日 V4 CanonicalEvent](../../11-databases/data-center-v4/2026-07-02/canonical-events.json)
 
-## 1. 抖音电商上线"肖像保护功能"，防范"AI 仿冒带货达人"侵权行为
+## 1. AppliedAI 与麦肯锡公司合作，利用 AI 快速重构受监管的企业流程
 
-- fde_id: `FDE-1153676717176305`
-- event_id: `EV-a3b006906f6d46a0`
-- event_time: 2026-07-01T12:14:13.000Z
+- fde_id: `FDE-a14e04658a7d88f2`
+- event_id: `EV-06487af6e98ea491`
+- event_time: 未披露
+- stage: announced
+- customer: AppliedAI
+- vendor: McKinsey & Company
+- industry: regulated industries
+- use_case: rapidly rewire regulated enterprise processes with AI
+- reported_need: the ability to translate model capability into governed, auditable, production-grade workflows that hold up under regulatory scrutiny
+- delivery_components: McKinsey's end-to-end transformation capability, including the technical depth of QuantumBlack；Opus, AppliedAI's Agentic Process Execution platform
+- reported_outcomes: 未披露
+- metrics: 未披露
+- undisclosed_fields: workflow_before；workflow_after；delivery_model；team_composition；systems_integrated；data_requirements；reported_outcomes
+- source: [keyword search / Anysearch](https://prnewswire.com/apac/news-releases/appliedai-and-mckinsey--company-collaborate-to-rapidly-rewire-regulated-enterprise-processes-with-ai-302780007.html)
+
+## 2. Zillow 如何利用 AI 在 7,000 名员工中部署 Glean，每人每周节省 1.5 小时以上
+
+- fde_id: `FDE-8c57145ddc067b7d`
+- event_id: `EV-fe601e081c090971`
+- event_time: 未披露
 - stage: completed
-- customer: 抖音电商
+- customer: Zillow
 - vendor: 未披露
 - industry: 未披露
-- use_case: "肖像保护功能"，防范"AI 仿冒带货达人"侵权行为
+- use_case: Glean
 - reported_need: 未披露
-- delivery_components: 抖音电商上线“肖像保护功能”，防范“AI 仿冒带货达人”侵权行为 - IT之家；抖音电商上线“肖像保护功能”，防范“AI 仿冒带货达人”侵权行为；IT之家 7 月 1 日消息，抖音电商宣布上线“肖像保护功能”，目前部分带货达人已率先试用，该功能可帮助达人主动维护自身肖像权益，防范 AI 仿冒、素材盗用等侵权风险。；本轮上线的“肖像保护功能”已累计保护 180 余位头部达人，主动拦截侵权账号达 9.2 万个 。
+- delivery_components: Zillow deployed Glean across its entire workforce, connecting 30+ data sources with 138M documents and enabling teams to build 3,400+ AI agents using natural language — achieving 80%+ adoption and saving employees 1.5+ hours per week.；One standout deployment was the Self Review agent, which guided employees through performance review self-assessments and was run approximately 10,000 times, contributing to a 7% increase in review participation.；Zillow also integrated Glean MCP with developer tools including Cursor and Claude Code, extending AI-assisted search into engineering workflows.
 - reported_outcomes: 未披露
-- metrics: 9.2 万
-- undisclosed_fields: vendor；industry；workflow_before；workflow_after；delivery_model；team_composition；reported_need；systems_integrated；data_requirements；governance_controls；reported_outcomes
-- source: [IT之家（RSS）](https://ithome.com/0/971/329.htm)
+- metrics: 80%；7%
+- undisclosed_fields: vendor；industry；workflow_before；workflow_after；delivery_model；team_composition；reported_need；data_requirements；governance_controls；reported_outcomes
+- source: [keyword search / Anysearch](https://theapplied.co/use-cases/how-zillow-deployed-glean-across-7000-employees-and-saved-1-5-hours-per-person-per-week)
