@@ -1,8 +1,8 @@
 ---
 type: opinion_timelines_index
 people_count: 46
-opinion_count: 1511
-generated_at: 2026-07-18T08:10:11.050Z
+opinion_count: 1514
+generated_at: 2026-07-19T01:35:13.562Z
 ---
 
 # 前沿观点 - 人物时间线目录
@@ -19,13 +19,13 @@ generated_at: 2026-07-18T08:10:11.050Z
 - [Peter Steinberger](people/peter-steinberger/README.md) - 67 条 - 最新 2026-07-18
 - [Amjad Masad](people/amjad-masad/README.md) - 54 条 - 最新 2026-07-18
 - [Claude](people/claude/README.md) - 48 条 - 最新 2026-07-18
+- [Simon Willison's Blog](people/simon-willisons-blog/README.md) - 43 条 - 最新 2026-07-18
 - [Garry Tan](people/garry-tan/README.md) - 101 条 - 最新 2026-07-17
 - [Nikunj Kothari](people/nikunj-kothari/README.md) - 85 条 - 最新 2026-07-17
 - [Aaron Levie](people/aaron-levie/README.md) - 67 条 - 最新 2026-07-17
 - [Thariq](people/thariq/README.md) - 46 条 - 最新 2026-07-17
 - [Aditya Agarwal](people/aditya-agarwal/README.md) - 41 条 - 最新 2026-07-17
 - [Sam Altman](people/sam-altman/README.md) - 41 条 - 最新 2026-07-17
-- [Simon Willison's Blog](people/simon-willisons-blog/README.md) - 40 条 - 最新 2026-07-17
 - [Boris Cherny](people/boris-cherny/README.md) - 22 条 - 最新 2026-07-17
 - [Madhu Guru](people/madhu-guru/README.md) - 19 条 - 最新 2026-07-17
 - [Cat Wu](people/cat-wu/README.md) - 16 条 - 最新 2026-07-17
