@@ -85,7 +85,7 @@ First-line viewpoints are a separate builders column. They are useful for readin
 | Commercial Events / 商业事件 | `01-SiteV2/site/data-center.html?view=events` | source-traceable canonical commercial events |
 | Industry Reports / 行业报告 | `01-SiteV2/site/intelligence-map.html` | monthly / weekly reports and report archives |
 | Opportunity Map / 机会地图 | `01-SiteV2/site/opportunity-map.html` | source-backed Entry Point Map and Product Pain Map with evidence modals |
-| Trend Radar / 趋势雷达 | `01-SiteV2/site/trend-radar.html` | evidence-backed daily, weekly, and monthly factual change explorer |
+| Trend Radar / 变化雷达 | `01-SiteV2/site/trend-radar.html` | evidence-backed daily, weekly, and monthly factual change explorer |
 | Weekly AI Business Change Radar / 周报 | `01-SiteV2/site/weekly-ai-business-change-radar.html` | weekly report detail page, entered from Intelligence Map |
 | First-Line Viewpoints / 一线观点 | `01-SiteV2/site/data-center.html?view=viewpoints` | independent builders viewpoints |
 | Community Intelligence / 社群情报 | `01-SiteV2/site/data-center.html?view=community` | community-sourced cases, tool tactics, opportunities, and document links |
