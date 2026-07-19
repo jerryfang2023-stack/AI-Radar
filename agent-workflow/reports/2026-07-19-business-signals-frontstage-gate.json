@@ -5,6 +5,19 @@
   "failure_categories": [],
   "gates": [
     {
+      "id": "editorial_quality",
+      "label": "Signal Card editorial quality gate",
+      "script": "agent-workflow/tools/assert-signal-card-editorial-quality.mjs",
+      "status": "passed",
+      "exit_code": 0,
+      "parsed": {
+        "ok": true,
+        "date": "2026-07-19",
+        "card_count": 33,
+        "problems": []
+      }
+    },
+    {
       "id": "source_first",
       "label": "V3 source-first frontstage gate",
       "script": "agent-workflow/tools/assert-v3-source-first-frontstage.mjs",
@@ -48,7 +61,7 @@
         "ok": true,
         "status": "passed",
         "issue_count": 0,
-        "report": "agent-workflow/reports/frontstage-regression-gate-20260719064355.md"
+        "report": "agent-workflow/reports/frontstage-regression-gate-20260719082940.md"
       }
     }
   ],

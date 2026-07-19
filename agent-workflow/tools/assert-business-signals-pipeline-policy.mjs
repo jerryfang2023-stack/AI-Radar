@@ -19,6 +19,9 @@ const dryRunWorkflow = read(".github/workflows/daily-production-chain-dry-run.ym
 const monitorWrapper = read("agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs");
 const monitor = read("agent-workflow/tools/run-guanlan-daily-monitor.mjs");
 const cardGenerator = read("agent-workflow/tools/generate-asset-cards-from-pool.mjs");
+const qualityGates = read("agent-workflow/tools/run-quality-gates.mjs");
+const dataCenterFrontstageTest = read("agent-workflow/tools/tests/data-center-frontstage.test.mjs");
+const dailySupervision = read("agent-workflow/tools/write-daily-supervision-report.mjs");
 const editorialGate = read("agent-workflow/tools/assert-signal-card-editorial-quality.mjs");
 const healthDispatch = read("agent-workflow/tools/run-business-signals-health-dispatch.mjs");
 const stateClassifier = read("agent-workflow/tools/classify-business-signals-production-state.mjs");
@@ -56,7 +59,12 @@ const monitorEvidenceObjectFixture = spawnSync(
 const monitorEvidenceObjectOutput = `${monitorEvidenceObjectFixture.stdout || ""}\n${monitorEvidenceObjectFixture.stderr || ""}`;
 const cardCoreRecallFixture = spawnSync(
   process.execPath,
-  [path.join(root, "agent-workflow", "tools", "generate-asset-cards-from-pool.mjs"), "--date=2026-07-12", "--core-recall-regression-fixtures=true"],
+  [
+    path.join(root, "agent-workflow", "tools", "generate-asset-cards-from-pool.mjs"),
+    "--date=2026-07-12",
+    "--core-recall-regression-fixtures=true",
+    "--source-title-translations=agent-workflow/tools/tests/fixtures/business-signal-source-title-translations.json",
+  ],
   { cwd: root, encoding: "utf8" }
 );
 const cardCoreRecallOutput = `${cardCoreRecallFixture.stdout || ""}\n${cardCoreRecallFixture.stderr || ""}`;
@@ -81,6 +89,15 @@ if (cardCoreRecallFixture.status !== 0 || !cardCoreRecallOutput.includes('"fixtu
   const firstFailureLine = cardCoreRecallOutput.split(/\r?\n/u).find((line) => line.trim()) || "no diagnostic output";
   problems.push(`Card core-recall fixture failed: ${firstFailureLine}`);
 }
+if (!/quality-regression-fixtures=true[^\n]*source-title-translations=agent-workflow\/tools\/tests\/fixtures\/business-signal-source-title-translations\.json/u.test(qualityGates)) {
+  problems.push("Card editorial regression fixtures do not pin their title-translation input");
+}
+if (/source-title-translations\.json|Aina raises \$5\.5M with new hardware interface/iu.test(dataCenterFrontstageTest)) {
+  problems.push("Data Center frontstage integration tests depend on mutable production title data or a named historical article");
+}
+if (!/failedWorkflowSupersededByPublication/u.test(dailySupervision)) {
+  problems.push("daily supervision does not close an earlier failed Business run after a later healthy Pages publication");
+}
 
 if (Number(policy.monitor_attempts) !== 1) problems.push("pipeline_policy.monitor_attempts must be 1");
 if (Number(policy.targeted_supply_refill_cycles) !== 1) problems.push("pipeline_policy.targeted_supply_refill_cycles must be 1");
@@ -92,6 +109,9 @@ if (Object.hasOwn(config.hard_gates || {}, "unrecovered_failed_sources_max")) {
 for (const [name, text] of [["production workflow", workflow], ["dry-run workflow", dryRunWorkflow]]) {
   if (/--max-cycles=3/u.test(text)) problems.push(`${name} still requests three monitor cycles`);
   if (/id:\s*monitor-readiness/u.test(text)) problems.push(`${name} still runs the duplicate monitor-readiness gate`);
+}
+if (/npm run test:data-center-site(?:\s|$)/mu.test(workflow) || !/npm run test:data-center-site:prepared/u.test(workflow)) {
+  problems.push("production workflow repeats Data Center materialization inside the site test command");
 }
 if (!/assert-business-signals-three-block-contract\.mjs/u.test(fs.readFileSync(path.join(root, "agent-workflow", "tools", "assert-business-signals-frontstage.mjs"), "utf8"))) {
   problems.push("unified Business frontstage gate does not enforce the three-block contract");
@@ -147,7 +167,7 @@ for (const [name, text] of [["production workflow", workflow], ["dry-run workflo
 const result = {
   ok: problems.length === 0,
   policy_version: config.schema_version || "unknown",
-  checks: 20,
+  checks: 24,
   problems,
 };
 

@@ -10,7 +10,7 @@ Use this when First-Line Viewpoints is stale, missing, or reported unhealthy.
    - afternoon local follow-builders skill archive;
    - supervision visibility only.
 2. Check the valid window:
-   - RSS lane should not be declared failed before 09:30 Asia/Shanghai.
+   - RSS lane should not be declared failed before the 09:50 consolidated closure.
    - Afternoon skill lane should not be declared failed before 16:30 Asia/Shanghai.
 3. For morning RSS, verify:
    - same-date `follow-builders-daily.json`;
@@ -34,7 +34,7 @@ Use this when First-Line Viewpoints is stale, missing, or reported unhealthy.
 ## Incorrect Behavior
 
 - Treating GitHub CLI timeout as proof that First-Line data failed.
-- Creating an RSS failure inbox before the 09:30 handoff window.
+- Creating an RSS failure inbox before the 09:50 consolidated closure.
 - Creating an afternoon skill failure inbox before 16:30.
 - Treating a zero-count publish report as success because the report file exists.
 - Treating a healthy builders feed/archive report as full success when push / PR / merge / Pages failed.

@@ -3,7 +3,7 @@ name: guanlan-community-intelligence-monitor
 description: Use when supervising, running, repairing, or improving the WaveSight AI SITE-V4.2.0 Community Intelligence lane at CINT-V1.0.2-publication-waiting-gate. Covers local logged-in collection, archive generation, community data gate, local publish handoff, Waiting-vs-Problem publication checks, GitHub publish PR, Hermes repair closure, and lane-specific self-improvement. Do not use for Business Signals facts, Signal Cards, relationship graph evidence, trend candidates, or First-Line Viewpoints.
 metadata:
   guanlan:
-    version: "1.0.4"
+    version: "1.0.5"
     lane: "Community Intelligence"
     status: "current lane owner"
     order: 30
@@ -71,7 +71,7 @@ Classify Community Intelligence failures by the earliest broken stage. Do not re
 
 | Stage | Evidence | Action |
 |---|---|---|
-| Pre-window stale data | Before 08:45 Asia/Shanghai, `community-intelligence.json` still shows the previous production date and there is no same-day local failure log | Wait until 08:45 / 09:30; do not create a failure inbox yet. |
+| Pre-window stale data | Before 08:45 Asia/Shanghai, `community-intelligence.json` still shows the previous production date and there is no same-day local failure log | Wait for the 08:45 local check and 09:15 consolidated recovery; do not create a failure inbox yet. |
 | Local collection missing | After 08:45, same-date data / daily snapshot / archive is missing, or the local log shows Chrome / login / collector failure | Repair or rerun `agent-workflow/tools/run-community-intelligence.ps1` locally; GitHub cannot collect this lane. |
 | Local gate failed | Same-date data exists but `assert-community-intelligence-data.mjs` fails | Fix data shape, item/link floors, collector errors, or archive outputs, then rerun the gate. |
 | Publish workflow failed before gate | GitHub publish run fails while same-date local files are absent or stale on `main` | Stop GitHub retries; run local collection / archive first. |
@@ -85,7 +85,7 @@ Classify Community Intelligence failures by the earliest broken stage. Do not re
 - 2026-06-09 to 2026-06-12 passed the community data gate when local collection, archive, and publish checks were run.
 - 2026-06-13 failed morning supervision because the report saw 2026-06-12 data and no same-date publish run; the later local task produced 61 items / 58 links, passed the gate, opened PR #46, and merged commit `1bdabf15`.
 - 2026-06-13 also exposed a publish-workflow classification problem: early manual GitHub runs failed before local same-date files were available or during PR/auto-merge handling. These are publish-stage failures, not evidence that community sources were scarce.
-- 2026-06-14 early failure was a pre-window false positive at 03:17 Asia/Shanghai. The correct rule is to wait for the 08:45 / 09:30 community windows unless an explicit local collector failure log already exists. The 08:30 task later produced same-date data, passed the gate, opened PR #66, and merged commit `9869b4e3`.
+- 2026-06-14 early failure was a pre-window false positive at 03:17 Asia/Shanghai. Current supervision waits for the 08:45 local check and 09:15 consolidated recovery unless an explicit local collector failure log already exists. The 08:30 task later produced same-date data, passed the gate, opened PR #66, and merged commit `9869b4e3`.
 - Weekend data volume was not the blocker this week: Saturday and Sunday still produced 61+ items and 57+ links, far above the 12 item / 3 link floors. Weekend handling should therefore keep normal gates and focus on local-run/publish sequencing.
 
 ## Faster Morning Path

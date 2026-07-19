@@ -1,8 +1,8 @@
 {
   "ok": true,
-  "status": "warning",
+  "status": "passed",
   "date": "2026-07-19",
-  "generated_at": "2026-07-19T06:42:42.795Z",
+  "generated_at": "2026-07-19T08:42:30.884Z",
   "timezone": "Asia/Shanghai",
   "hermes_mode": "auto",
   "hermes_write": "enabled",
@@ -32,8 +32,8 @@
     {
       "id": "community_intelligence",
       "label": "Community Intelligence",
-      "schedule": "08:30 local collection; 08:45 / 09:35 GitHub publish windows; Daily Problem Watchdog records failures to Hermes inbox",
-      "status": "warning",
+      "schedule": "08:30 local logged-in collection and publish handoff; 09:15 local-data validation; 09:50 publication closure",
+      "status": "passed",
       "evidence": {
         "generatedAt": "2026-07-19T00:32:50.954Z",
         "generatedDate": "2026-07-19",
@@ -77,16 +77,14 @@
       },
       "problems": [],
       "waiting": [],
-      "warnings": [
-        "same-date Community Intelligence automation PR already merged: https://github.com/jerryfang2023-stack/AI-Radar/pull/352"
-      ],
+      "warnings": [],
       "actions": []
     },
     {
       "id": "business_signals",
       "label": "Business Signals / Intelligence Map / Dashboard",
-      "schedule": "08:57 primary production; 09:27 conditional health dispatch; Daily Problem Watchdog records failures to Hermes inbox",
-      "status": "warning",
+      "schedule": "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback",
+      "status": "passed",
       "evidence": {
         "activeDate": "2026-07-19",
         "generatedAt": "2026-07-19T06:41:16.388Z",
@@ -98,16 +96,12 @@
         "signalCardFiles": 33,
         "titleTranslations": {
           "translationDb": "01-SiteV2/content/11-databases/source-title-translations.json",
-          "missingCount": 19,
+          "missingCount": 4,
           "missingSourceTitles": [
             "The secrets that helped logistics giant C.H. Robinson achieve a 45% productivity gain with AI agents | Fortune",
-            "Anthropic 宣布 Claude Fable 5 入驻 Max 和 Team Premium 订阅，限额 50%",
             "Inference cloud operator General Compute raises $400M in debt financing - SiliconANGLE",
             "How Elorian AI pulled off a $300M pre-seed valuation | TechCrunch",
-            "蚂蚁数科发布商业智能体超级工厂核心平台 Agentar2.0",
-            "荣耀发布伙伴型多模态智能体操作系统 AgenticOS，Robot Phone 8 月首发内核",
-            "此芯发布桌面级AI超算AGX Station，支持多形态算力卡",
-            "Claude Code v2.1.215 发布"
+            "logcat.ai raises $2.55M to build the future of device systems engineering | logcat.ai Blog"
           ]
         },
         "manifest": "agent-workflow/reports/2026-07-19-persistent-asset-manifest.json",
@@ -130,25 +124,26 @@
           "pr_warning": ""
         },
         "publicationClosure": {
-          "checkpoint": "09:58",
+          "checkpoint": "09:50",
           "businessDataSameDate": true,
           "cardCount": 33,
           "businessPrMerged": false,
           "businessPrUrl": "",
-          "pagesSuccess": false,
+          "pagesSuccess": true,
           "pagesActive": false,
-          "pagesRunUrl": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/29671267133",
+          "pagesRunUrl": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/29679998199",
           "localSync": {
             "available": true,
-            "clean": false,
-            "dirtyFiles": 1438,
-            "ignoredReportFiles": 4,
-            "head": "ea1ef1cd956fa467570404438fca0b9ab76b7316",
-            "originMain": "56f4388b9345a98a03de0aeee917d85d3b6a969a",
+            "clean": true,
+            "dirtyFiles": 0,
+            "ignoredReportFiles": 0,
+            "head": "9830865e7b2d5d890d8caa10958130e57fa4d5ff",
+            "originMain": "2d090149e8091ce3b4f018e3f07ac078a167d179",
             "fastForwarded": false,
             "warning": ""
           }
         },
+        "failedWorkflowSupersededByPublication": true,
         "dataHealth": {
           "dataFile": "01-SiteV2/site/data/v3-data-observation-desk.json",
           "graphFile": "01-SiteV2/site/data/intelligence-graph-index.json",
@@ -161,9 +156,9 @@
           "healthy": true
         },
         "diagnosis": {
-          "category": "local_sync",
-          "reason": "same-date data is healthy; remaining issue is publication/local sync closure",
-          "neededAction": "repair publication/local sync closure only; do not rerun Raw/Pool/Card generation",
+          "category": "passed",
+          "reason": "same-date Business data, public Cards, graph, and gate are healthy",
+          "neededAction": "none",
           "preRerunChecklist": {
             "activeDate": "2026-07-19",
             "publicCardCount": 33,
@@ -177,34 +172,26 @@
             "sourceArtifactFreshness": "not_checked_by_daily_supervision",
             "missingSourceTitleTranslations": [
               "The secrets that helped logistics giant C.H. Robinson achieve a 45% productivity gain with AI agents | Fortune",
-              "Anthropic 宣布 Claude Fable 5 入驻 Max 和 Team Premium 订阅，限额 50%",
               "Inference cloud operator General Compute raises $400M in debt financing - SiliconANGLE",
               "How Elorian AI pulled off a $300M pre-seed valuation | TechCrunch",
-              "蚂蚁数科发布商业智能体超级工厂核心平台 Agentar2.0",
-              "荣耀发布伙伴型多模态智能体操作系统 AgenticOS，Robot Phone 8 月首发内核",
-              "此芯发布桌面级AI超算AGX Station，支持多形态算力卡",
-              "Claude Code v2.1.215 发布"
+              "logcat.ai raises $2.55M to build the future of device systems engineering | logcat.ai Blog"
             ],
             "businessPrMerged": false,
-            "pagesState": "skipped",
-            "localDirtyFiles": 1438,
+            "pagesState": "success",
+            "localDirtyFiles": 0,
             "localFastForwarded": false
           }
         }
       },
       "problems": [],
       "waiting": [],
-      "warnings": [
-        "latest same-date GitHub Pages workflow conclusion is skipped",
-        "local Obsidian sync may be blocked by 1438 dirty file(s)",
-        "latest Business Signals workflow conclusion is failure, but same-date data and gates are healthy; repair branch / PR / publication only"
-      ],
+      "warnings": [],
       "actions": []
     },
     {
       "id": "first_line_viewpoints",
       "label": "First-Line Viewpoints",
-      "schedule": "08:30 local Codex RSS collection + page build + Obsidian sync; 09:17 GitHub fallback; Daily Problem Watchdog records failures to Hermes inbox",
+      "schedule": "08:30 local RSS collection + page build + Obsidian sync; 09:15 conditional fallback; 09:50 consolidated closure",
       "status": "passed",
       "evidence": {
         "generatedAt": "2026-07-19T01:32:49.302Z",
@@ -251,14 +238,18 @@
       "schedule": "16:10 local follow-builders skill publish; Hermes record 16:30; report review 16:45",
       "status": "passed",
       "evidence": {
-        "outputFile": "missing",
-        "reportFile": "missing",
-        "itemCount": 0,
-        "outputFrontmatterCount": 0,
-        "reportCount": 0,
-        "publishStatus": "missing",
+        "outputFile": "01-SiteV2/content/07-points/2026-07-19-builders-viewpoints.md",
+        "reportFile": "agent-workflow/reports/2026-07-19-follow-builders-skill-local-publish.md",
+        "itemCount": 24,
+        "outputFrontmatterCount": 24,
+        "reportCount": 24,
+        "publishStatus": "generated",
         "publishError": "",
-        "obsidianSync": "missing"
+        "obsidianSync": {
+          "added": 23,
+          "groups": 14,
+          "files": 14
+        }
       },
       "problems": [],
       "warnings": [],

@@ -2,6 +2,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { spawnSync } from "node:child_process";
+import { sourceTitleNeedsChineseTranslation } from "./source-title-translation-generator.mjs";
 
 const root = process.cwd();
 const reportsDir = path.join(root, "agent-workflow", "reports");
@@ -127,7 +128,7 @@ function sourceTitleTranslationDiagnostics(cardFiles = []) {
   const missing = [];
   for (const file of cardFiles) {
     const sourceTitle = extractSourceTitle(readText(file));
-    if (!sourceTitle || !/[A-Za-z]{3}/u.test(sourceTitle)) continue;
+    if (!sourceTitleNeedsChineseTranslation(sourceTitle)) continue;
     if (!translations.has(sourceTitle)) missing.push(sourceTitle);
   }
   return {
@@ -414,7 +415,7 @@ function buildBusinessSignalsLane() {
   const warnings = [];
   const evidence = {};
   const actions = [];
-  const windowPassed = hasWindowPassed(date, "09:45");
+  const windowPassed = hasWindowPassed(date, "09:50");
 
   const dataFile = path.join(root, "01-SiteV2", "site", "data", "v3-data-observation-desk.json");
   const graphFile = path.join(root, "01-SiteV2", "site", "data", "intelligence-graph-index.json");
@@ -438,7 +439,7 @@ function buildBusinessSignalsLane() {
   const mergedPr = Array.isArray(gh.prs) ? gh.prs.find((pr) => pr.mergedAt) : null;
   const businessWorkflowActive = gh.latest_run?.status === "queued" || gh.latest_run?.status === "in_progress";
   const pagesActive = pages.latest_run?.status === "queued" || pages.latest_run?.status === "in_progress";
-  const publicationClosureWindowPassed = hasWindowPassed(date, "09:58");
+  const publicationClosureWindowPassed = hasWindowPassed(date, "09:50");
 
   evidence.activeDate = activeDate;
   evidence.generatedAt = data?.meta?.generatedAt || "";
@@ -454,7 +455,7 @@ function buildBusinessSignalsLane() {
   evidence.readinessReport = exists(readinessFile) ? rel(readinessFile) : "missing";
   evidence.github = gh;
   evidence.publicationClosure = {
-    checkpoint: "09:58",
+    checkpoint: "09:50",
     businessDataSameDate: activeDate === date,
     cardCount: selection?.selectedCount ?? sameDateCards.length,
     businessPrMerged: Boolean(mergedPr),
@@ -472,6 +473,14 @@ function buildBusinessSignalsLane() {
     activeDate === date &&
     sameDateCards.length > 0 &&
     evidence.qualityGateStatus === "passed";
+  const failedWorkflowSupersededByPublication = Boolean(
+    businessDataHealthy &&
+    gh.latest_run?.conclusion &&
+    gh.latest_run.conclusion !== "success" &&
+    pages.latest_run?.conclusion === "success" &&
+    Date.parse(pages.latest_run.createdAt || "") > Date.parse(gh.latest_run.updatedAt || gh.latest_run.createdAt || ""),
+  );
+  evidence.failedWorkflowSupersededByPublication = failedWorkflowSupersededByPublication;
   evidence.dataHealth = {
     dataFile: exists(dataFile) ? rel(dataFile) : "missing",
     graphFile: exists(graphFile) ? rel(graphFile) : "missing",
@@ -534,7 +543,7 @@ function buildBusinessSignalsLane() {
 
   if (publicationClosureWindowPassed) {
     if (gh.available && !evidence.publicationClosure.businessPrMerged && !gh.latest_run) {
-      warnings.push("09:58 publication closure found no merged Business Signals PR and no same-date workflow run");
+      warnings.push("09:50 publication closure found no merged Business Signals PR and no same-date workflow run");
     }
     if (pagesActive) {
       addWaiting(waiting, `GitHub Pages workflow is ${pages.latest_run.status}; publication closure should wait`);
@@ -542,7 +551,7 @@ function buildBusinessSignalsLane() {
     } else if (pages.available && pages.latest_run?.conclusion && pages.latest_run.conclusion !== "success") {
       warnings.push(`latest same-date GitHub Pages workflow conclusion is ${pages.latest_run.conclusion}`);
     } else if (pages.available && !pages.latest_run) {
-      warnings.push("09:58 publication closure found no same-date GitHub Pages run");
+      warnings.push("09:50 publication closure found no same-date GitHub Pages run");
     }
     if (evidence.publicationClosure.localSync.available && !evidence.publicationClosure.localSync.clean) {
       warnings.push(`local Obsidian sync may be blocked by ${evidence.publicationClosure.localSync.dirtyFiles} dirty file(s)`);
@@ -550,19 +559,21 @@ function buildBusinessSignalsLane() {
   }
 
   if (gh.available) {
-    if (!gh.latest_run && hasWindowPassed(date, "09:55")) {
+    if (!gh.latest_run && hasWindowPassed(date, "09:50")) {
       addProblem(problems, "no same-date Business Signals GitHub run after the morning production window", "manual_required");
       actions.push("inspect the Daily Problem Watchdog inbox report, then dispatch `.github/workflows/daily-persistent-assets-pr.yml` only if targeted diagnosis proves no reusable same-date artifacts exist");
     } else if (gh.latest_run?.status === "in_progress" || gh.latest_run?.status === "queued") {
       addWaiting(waiting, `Business Signals workflow is ${gh.latest_run.status}; downstream tasks should wait`);
       actions.push("wait for Business Signals workflow completion before declaring data missing");
     } else if (gh.latest_run?.conclusion && gh.latest_run.conclusion !== "success") {
-      if (mergedPr) {
-        warnings.push(`latest Business Signals workflow conclusion is ${gh.latest_run.conclusion}, but same-date PR already merged: ${mergedPr.url}`);
-      } else if (businessDataHealthy) {
-        warnings.push(`latest Business Signals workflow conclusion is ${gh.latest_run.conclusion}, but same-date data and gates are healthy; repair branch / PR / publication only`);
-      } else {
-        addProblem(problems, `Business Signals workflow conclusion is ${gh.latest_run.conclusion}`);
+      if (!failedWorkflowSupersededByPublication) {
+        if (mergedPr) {
+          warnings.push(`latest Business Signals workflow conclusion is ${gh.latest_run.conclusion}, but same-date PR already merged: ${mergedPr.url}`);
+        } else if (businessDataHealthy) {
+          warnings.push(`latest Business Signals workflow conclusion is ${gh.latest_run.conclusion}, but same-date data and gates are healthy; repair branch / PR / publication only`);
+        } else {
+          addProblem(problems, `Business Signals workflow conclusion is ${gh.latest_run.conclusion}`);
+        }
       }
     }
     if (gh.pr_warning) warnings.push(gh.pr_warning);
@@ -616,7 +627,7 @@ function buildBusinessSignalsLane() {
   return {
     id: "business_signals",
     label: "Business Signals / Intelligence Map / Dashboard",
-    schedule: "08:57 primary production; 09:27 conditional health dispatch; Daily Problem Watchdog records failures to Hermes inbox",
+    schedule: "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback",
     status: laneStatus(problems, warnings, waiting),
     evidence,
     problems,
@@ -631,7 +642,7 @@ function buildFirstLineLane() {
   const warnings = [];
   const evidence = {};
   const actions = [];
-  const windowPassed = hasWindowPassed(date, "09:55");
+  const windowPassed = hasWindowPassed(date, "09:50");
   const dataFile = path.join(root, "01-SiteV2", "site", "data", "follow-builders-daily.json");
   const gateFile = path.join(reportsDir, `${date}-follow-builders-data-gate.md`);
   const data = readJson(dataFile, {});
@@ -665,7 +676,7 @@ function buildFirstLineLane() {
   evidence.localDataHealthy = localDataHealthy;
 
   if (gh.available && !localDataHealthy) {
-    if (!gh.latest_run && hasWindowPassed(date, "09:30")) {
+    if (!gh.latest_run && hasWindowPassed(date, "09:50")) {
       addProblem(problems, "no same-date First-Line Viewpoints RSS run after the morning production window", "manual_required");
       actions.push("inspect the Daily Problem Watchdog inbox report, then dispatch `.github/workflows/daily-first-line-viewpoints-pr.yml` only after targeted diagnosis");
     } else if (gh.latest_run?.status === "in_progress" || gh.latest_run?.status === "queued") {
@@ -688,7 +699,7 @@ function buildFirstLineLane() {
   return {
     id: "first_line_viewpoints",
     label: "First-Line Viewpoints",
-    schedule: "08:30 local Codex RSS collection + page build + Obsidian sync; 09:17 GitHub fallback; Daily Problem Watchdog records failures to Hermes inbox",
+    schedule: "08:30 local RSS collection + page build + Obsidian sync; 09:15 conditional fallback; 09:50 consolidated closure",
     status: laneStatus(problems, warnings),
     evidence,
     problems,
@@ -808,7 +819,7 @@ function buildCommunityLane() {
   const evidence = {};
   const actions = [];
   const localWindowPassed = hasWindowPassed(date, "08:45");
-  const publishWindowPassed = hasWindowPassed(date, "09:30");
+  const publishWindowPassed = hasWindowPassed(date, "09:50");
   const dataFile = path.join(root, "01-SiteV2", "site", "data", "community-intelligence.json");
   const gateFile = path.join(reportsDir, `${date}-community-intelligence-gate.md`);
   const data = readJson(dataFile, {});
@@ -874,8 +885,6 @@ function buildCommunityLane() {
     if (!publicationReady && publishWindowPassed) {
       addProblem(problems, "no same-date Community Intelligence publish workflow after the morning publication window", "manual_required");
       actions.push("inspect the Daily Problem Watchdog inbox report, then dispatch `.github/workflows/daily-community-intelligence-pr.yml` only after local collection and archive pass");
-    } else if (!gh.latest_run && mergedPr) {
-      warnings.push(`same-date Community Intelligence automation PR already merged: ${mergedPr.url}`);
     } else if (!gh.latest_run && openPr) {
       addWaiting(waiting, `Community Intelligence publication PR is open: ${openPr.url}`);
       actions.push("wait for Community Intelligence PR merge before declaring publication missing");
@@ -906,7 +915,7 @@ function buildCommunityLane() {
   return {
     id: "community_intelligence",
     label: "Community Intelligence",
-    schedule: "08:30 local collection; 08:45 / 09:35 GitHub publish windows; Daily Problem Watchdog records failures to Hermes inbox",
+    schedule: "08:30 local logged-in collection and publish handoff; 09:15 local-data validation; 09:50 publication closure",
     status: laneStatus(problems, warnings, waiting),
     evidence,
     problems,

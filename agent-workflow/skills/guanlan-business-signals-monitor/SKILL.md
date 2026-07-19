@@ -3,7 +3,7 @@ name: guanlan-business-signals-monitor
 description: Use only for frozen SITE-V3.4.5 Business Signals Card, trend, relationship, FDE/hardware lens, and downstream compatibility after the Data Center V4 integrity gate passes. Do not use it to define V4 facts, tags, events, projections, importance, opportunity, or recommendations.
 metadata:
   guanlan:
-    version: "1.1.2"
+    version: "1.1.3"
     lane: "Business Signals"
     status: "compatibility lane owner"
     order: 10

@@ -3,7 +3,7 @@ name: guanlan-raw-pool-card
 description: Use only for frozen V3 Raw/Pool-to-Card internal compatibility after Data Center V4 build and integrity gate. Do not use Cards, cardability, importance, or value fields as V4 facts.
 metadata:
   guanlan:
-    version: "1.0.6"
+    version: "1.0.7"
     lane: "Business Signals"
     status: "compatibility sub-skill"
     order: 70

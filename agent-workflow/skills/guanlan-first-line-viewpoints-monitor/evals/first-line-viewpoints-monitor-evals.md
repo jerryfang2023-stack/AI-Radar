@@ -31,7 +31,7 @@ Run these pass/fail checks when supervising, repairing, or updating the First-Li
    - Pass when the First-Line Viewpoints PR stages no Business Signals, relationship graph, trend candidate, or Community Intelligence data.
 
 9. `daily_problem_watchdog`
-   - Pass when Daily Problem Watchdog records First-Line Viewpoints failures to Hermes inbox after the 08:30 local Codex RSS collection/build/sync attempt and the single 09:17 GitHub fallback window.
+   - Pass when Daily Problem Watchdog records First-Line Viewpoints failures to Hermes inbox after the 08:30 local Codex RSS collection/build/sync attempt, the single 09:15 conditional fallback, and the 09:50 consolidated closure check.
    - Pass when the watchdog does not dispatch `.github/workflows/daily-first-line-viewpoints-pr.yml` or any recovery workflow.
    - Fail when the lane waits until the old 10:30 supervision check or uses Hermes recovery / early handoff instead of a problem report and Codex inbox path.
 
@@ -46,9 +46,9 @@ Run these pass/fail checks when supervising, repairing, or updating the First-Li
     - Fail when RSS collection, Obsidian sync, GitHub publication, and afternoon skill publish are treated as one generic rerun problem.
 
 12. `morning_rss_problem_window`
-    - Pass when supervision waits until 09:30 Asia/Shanghai before declaring First-Line RSS missing, after the 08:30 local Codex run and the single 09:17 GitHub fallback window.
+    - Pass when supervision waits until the 09:50 consolidated closure before declaring First-Line RSS missing, after the 08:30 local Codex run and the single 09:15 conditional fallback.
     - Pass when a healthy GitHub fallback can recover a missed local 08:30 run, while the local miss is still recorded as automation reliability drift.
-    - Fail when Daily Problem Watchdog creates a First-Line RSS repair inbox before the 09:30 problem window.
+    - Fail when Daily Problem Watchdog creates a First-Line RSS repair inbox before the 09:50 consolidated closure while recovery may still be active.
 
 13. `afternoon_skill_count_consistency`
     - Pass when `01-SiteV2/content/07-points/<date>-builders-viewpoints.md` frontmatter `builder_items_count` is greater than `0`, the local publish report count is greater than `0`, both counts match, and the report includes Obsidian sync counts.

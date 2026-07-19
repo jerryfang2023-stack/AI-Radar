@@ -3,7 +3,7 @@ name: guanlan-taxonomy-governor
 description: Use when creating, assigning, auditing, migrating, aliasing, or deprecating TAG-V4 technical semantic tags, structured Facets, TagAssertions, and FacetAssertions. Do not use technical tags for event type, source, company, geography, industry, product form, use case, deployment, audience, evidence type, eligibility, ranking, relationship direction, opportunity, or trend judgment.
 metadata:
   guanlan:
-    version: "2.0.0"
+    version: "2.0.1"
     lane: "Data Center Taxonomy"
     status: "current sub-skill"
     order: 60

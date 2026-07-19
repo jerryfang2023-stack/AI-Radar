@@ -6,3 +6,4 @@
 4. Fail when product form, use case, industry, deployment model, or target user is duplicated as a technical Tag.
 5. Fail when a definition matches one of its explicit exclusion terms.
 6. Fail when Tags or Facets influence eligibility, value, ranking, relationship direction or truth.
+7. Pass when frozen V3 Card tag-shape observations remain non-blocking compatibility diagnostics while current TAG-V4 assertions are blocked by the Data Center V4 integrity gate.

@@ -1313,10 +1313,10 @@ async function runMetadataRegressionFixtures() {
     throw new Error("active curated original source did not enter the direct-source recall lane");
   }
   const recoveredTitle = recoverCompleteSourceTitle(
-    "Aina raises $5.5M with new hardware interface for the age",
-    { text: "Accessibility: Skip TopNav\nAina raises $5.5M with new hardware interface for the age of AI beyond touchscreens and keyboards\nConsumer hardware company Aina is building a general purpose interface." }
+    "Northstar raises $7M to build an enterprise agent",
+    { text: "Accessibility: Skip TopNav\nNorthstar raises $7M to build an enterprise agent platform for regulated workflows\nNorthstar is building a source-backed workflow product." }
   );
-  if (recoveredTitle !== "Aina raises $5.5M with new hardware interface for the age of AI beyond touchscreens and keyboards") {
+  if (recoveredTitle !== "Northstar raises $7M to build an enterprise agent platform for regulated workflows") {
     throw new Error("source snapshot headline did not repair a truncated discovery title");
   }
   console.log(JSON.stringify({ ok: true, fixture: "source-publication-metadata" }, null, 2));

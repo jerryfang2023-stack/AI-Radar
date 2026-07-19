@@ -14,3 +14,13 @@
 - publish_status: generated
 - publish_error: ""
 - hermes_record: agent-workflow/reports/2026-07-19-follow-builders-skill-local-publish.md
+
+## Publication Closure
+
+- publish_status: generated
+- publish_error: ""
+- pr_number: 357
+- pr_url: https://github.com/jerryfang2023-stack/AI-Radar/pull/357
+- merge_status: merged
+- merged_at: 2026-07-19T08:32:24Z
+- merge_commit: 2d090149e8091ce3b4f018e3f07ac078a167d179

@@ -35,7 +35,7 @@ Compatibility note: legacy field and gate names such as `frontstageCards`, `publ
    - Pass when publication uses automation branch -> PR -> `main` -> GitHub Pages, not direct deployment or direct generated-data push to `main`.
 
 9. `before_10_problem_watchdog`
-   - Pass when Business Signals has one primary production window at 08:57 Asia/Shanghai, one 09:27 conditional health-dispatch window that waits when same-date data is healthy or a same-date run is queued / in progress / successful, a 09:40 no-Hermes self-check / safe-repair window, and a 09:50 no-Hermes Codex handoff window.
+   - Pass when the 08:10 local consolidated controller conditionally dispatches production, the 09:15 recovery controller performs at most one targeted fallback after checking accepted V4 and active runs, and the 09:50 consolidated closure performs safe checks plus targeted Codex handoff.
    - Pass when `WaveSight Daily Problem Watchdog` records failed production runs to a dated report and Hermes inbox item without dispatching a recovery workflow.
    - Pass when Hermes morning recovery and early handoff workflows, package scripts, and GitHub workflow files are absent.
    - Fail when the lane relies on repeated 10:07 / 12:07 / 13:07 / 14:07 schedule loops or a Hermes recovery/handoff workflow instead of producing a problem report and Codex inbox item.
@@ -135,6 +135,7 @@ Compatibility note: legacy field and gate names such as `frontstageCards`, `publ
     - Pass when daily supervision first checks same-date Business data health: activeDate matches the production date, public Cards exist, `intelligence-graph-index.json` exists, and Business frontstage / monitor gates pass.
     - Pass when `frontstageSelection.supplyConstrained=true` is downgraded to a warning if public Cards exist and gates pass.
     - Pass when a failed latest Business Signals workflow after healthy same-date data is classified as publication / branch / PR repair only.
+    - Pass when healthy same-date data plus a later successful same-date Pages deployment closes an earlier failed production run without dispatching another full chain or leaving a lane warning.
     - Pass when local dirty workspace / Obsidian sync warnings are kept separate from Business data-generation status.
     - Fail when supervision asks for a blind Raw / Pool / Card rerun only because the latest workflow run is red, while same-date data and gates are already healthy.
 

@@ -3,7 +3,7 @@ name: guanlan-enterprise-ai-fde-monitor
 description: Use only for frozen SITE-V3.4.5 Enterprise AI/FDE data and Obsidian compatibility. V4 FDE facts are owned by guanlan-fde-data-projection; this skill must not infer demand, service, result, ROI, or team details into V4.
 metadata:
   guanlan:
-    version: "1.2.1"
+    version: "1.2.2"
     lane: "Enterprise AI / FDE"
     status: "compatibility lane owner"
     order: 15
@@ -20,7 +20,7 @@ metadata:
 
 Compatibility boundary: use `guanlan-fde-data-projection` for FDE-V2 data; this skill only builds, validates, or syncs legacy compatibility assets.
 
-This skill owns the Enterprise AI / FDE lens. It keeps implementation evidence separate from the formal Business Signals Top10 while still using source-backed Raw / Pool material.
+This skill owns the Enterprise AI / FDE compatibility lens. It keeps implementation evidence separate from the unified Business Signals Card set while still using source-backed Raw / Pool material.
 
 ## Required Reads
 

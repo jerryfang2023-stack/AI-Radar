@@ -103,6 +103,40 @@ const v4PublicForbiddenPatterns = [
   { pattern: /TAG-V3 owners/iu, term: "TAG-V3 owners" },
 ];
 
+const currentGovernanceRuleFiles = [
+  "agent-workflow/README.md",
+  "agent-workflow/tools/write-daily-supervision-report.mjs",
+  "agent-workflow/tools/write-weekly-health-report.mjs",
+  "agent-workflow/skills/guanlan-business-signals-monitor",
+  "agent-workflow/skills/guanlan-first-line-viewpoints-monitor",
+  "agent-workflow/skills/guanlan-community-intelligence-monitor",
+  "agent-workflow/skills/guanlan-enterprise-ai-fde-monitor",
+  "agent-workflow/skills/guanlan-skill-editor",
+];
+
+const currentGovernanceForbiddenPatterns = [
+  { pattern: /08:57 primary production/iu, term: "retired 08:57 Business production schedule" },
+  { pattern: /09:27 conditional health dispatch/iu, term: "retired 09:27 Business recovery schedule" },
+  { pattern: /09:17 (?:GitHub|conditional) fallback/iu, term: "retired 09:17 First-Line fallback schedule" },
+  { pattern: /08:45\s*\/\s*09:35 GitHub publish windows/iu, term: "retired Community GitHub publish windows" },
+  { pattern: /09:40 no-Hermes/iu, term: "retired standalone 09:40 self-check" },
+  { pattern: /09:58 publication closure/iu, term: "retired 09:58 publication closure" },
+  { pattern: /formal Business Signals Top10/iu, term: "retired formal Business Signals Top10" },
+  { pattern: /conflict with V3\.3/iu, term: "V3.3 used as current conflict authority" },
+  { pattern: /V3\.3 business-signal rules are current/iu, term: "V3.3 used as current factual rule source" },
+  { pattern: /current V3\.3 rules/iu, term: "V3.3 used as current rule source" },
+  { pattern: /same-date Community Intelligence automation PR already merged/iu, term: "merged Community PR treated as a warning" },
+];
+
+const frontstageIntegrationTestFiles = [
+  "agent-workflow/tools/tests/data-center-frontstage.test.mjs",
+];
+
+const frontstageIntegrationForbiddenPatterns = [
+  { pattern: /source-title-translations\.json/iu, term: "frontstage integration test reads mutable production title registry" },
+  { pattern: /Aina raises \$5\.5M with new hardware interface/iu, term: "frontstage integration test pins named historical Aina article" },
+];
+
 const activeRoots = [
   "AGENTS.md",
   "context",
@@ -244,11 +278,34 @@ function main() {
     .flatMap(workflowRawToCardHits);
   const v4PublicRuleHits = v4PublicRuleFiles.flatMap(filesUnder)
     .flatMap((file) => scanFilePatterns(file, v4PublicForbiddenPatterns, "v4_public_rule_conflict"));
-  const issues = [...retiredHits, ...retiredDataHits, ...mojibakeHits, ...rawToCardRuleHits, ...workflowHits, ...v4PublicRuleHits];
+  const governanceRuleScanFiles = [...new Set(currentGovernanceRuleFiles.flatMap(filesUnder))];
+  const governanceRuleHits = governanceRuleScanFiles
+    .flatMap((file) => scanFilePatterns(file, currentGovernanceForbiddenPatterns, "current_governance_rule_conflict"));
+  const frontstageIntegrationScanFiles = [...new Set(frontstageIntegrationTestFiles.flatMap(filesUnder))];
+  const frontstageIntegrationHits = frontstageIntegrationScanFiles
+    .flatMap((file) => scanFilePatterns(file, frontstageIntegrationForbiddenPatterns, "mutable_production_fixture_conflict"));
+  const issues = [
+    ...retiredHits,
+    ...retiredDataHits,
+    ...mojibakeHits,
+    ...rawToCardRuleHits,
+    ...workflowHits,
+    ...v4PublicRuleHits,
+    ...governanceRuleHits,
+    ...frontstageIntegrationHits,
+  ];
+  const scannedFiles = new Set([
+    ...activeFiles,
+    ...dataFiles,
+    ...rawToCardRuleScanFiles,
+    ...v4PublicRuleFiles.flatMap(filesUnder),
+    ...governanceRuleScanFiles,
+    ...frontstageIntegrationScanFiles,
+  ]);
   const result = {
     ok: issues.length === 0,
     date,
-    scanned_file_count: activeFiles.length + dataFiles.length,
+    scanned_file_count: scannedFiles.size,
     issue_count: issues.length,
     issues,
   };

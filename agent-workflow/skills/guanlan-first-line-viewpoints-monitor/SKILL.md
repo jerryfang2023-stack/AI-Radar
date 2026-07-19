@@ -3,7 +3,7 @@ name: guanlan-first-line-viewpoints-monitor
 description: Use when supervising, running, repairing, backfilling, or improving the WaveSight AI SITE-V4.2.0 First-Line Viewpoints lane at FLV-V1.1.0-history-backfill. Covers current morning builders data, committed morning history, afternoon follow-builders intake, V4 projection, Chinese translation provenance, original-URL dedupe, AI relevance and opinion tags, Obsidian person/date timelines, publication closure, and Hermes repair. Do not use for Business Signals, Signal Cards, factual relationships, trend candidates, or Community Intelligence.
 metadata:
   guanlan:
-    version: "1.1.0"
+    version: "1.1.1"
     lane: "First-Line Viewpoints"
     status: "current lane owner"
     order: 20
@@ -103,7 +103,7 @@ Classify a failure before rerunning anything:
 - `history_backfill_failure`: committed snapshot discovery, historical provenance, translation/source-hash, AI relevance, opinion tags, or original-URL dedupe failed.
 - `v4_projection_failure`: current, history, and afternoon inputs exist but `first-line-viewpoints-v4.json` counts, date range, lane coverage, or release gate are inconsistent.
 - `obsidian_sync_failure`: original-date person/date timeline files are missing or sync is not idempotent.
-- `prewindow_false_alarm`: Hermes checked before 09:30 for RSS or before 16:30 for the afternoon skill lane.
+- `prewindow_false_alarm`: Hermes checked before the 09:50 consolidated closure for RSS or before 16:30 for the afternoon skill lane.
 - `afternoon_skill_runner`: the local `follow-builders` skill publisher failed or did not write its output/report after 16:30.
 - `afternoon_count_mismatch`: the output file count and publish report count disagree, or either is zero.
 - `afternoon_publication_failure`: the afternoon feed/archive output, report, and Obsidian sync are healthy, but branch push, PR creation, PR merge, or Pages publication failed. If same-day reruns fail with `stale info` or `force-with-lease` rejection after a previous PR deleted the remote automation branch, prune stale remote refs and rerun the publication path rather than reclassifying the feed as failed.

@@ -21,5 +21,5 @@ Why it passes:
 
 - It separates local collection health from GitHub publication health.
 - It avoids asking GitHub Actions to run the logged-in Chrome collector.
-- It does not call stale data a failure before the 08:45 / 09:30 production windows.
+- It does not call stale data a failure before the 08:45 local check and 09:15 consolidated recovery.
 - It chooses the smallest repair path for the earliest broken stage.

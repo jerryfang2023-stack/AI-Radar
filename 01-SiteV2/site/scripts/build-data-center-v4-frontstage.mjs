@@ -76,6 +76,25 @@ function readJsonl(file) {
     .map((line) => JSON.parse(line));
 }
 
+function requireMaterializedTables(tables) {
+  const required = [
+    "canonical_events.jsonl",
+    "claims.jsonl",
+    "raw_documents.jsonl",
+    "source_artifacts.jsonl",
+    "entities.jsonl",
+    "tag_assertions.jsonl",
+    "facet_assertions.jsonl",
+    "fde_records.jsonl",
+    "hardware_records.jsonl",
+  ];
+  const missing = required.filter((name) => !fs.existsSync(path.join(tables, name)));
+  const canonicalEvents = path.join(tables, "canonical_events.jsonl");
+  if (!missing.length && fs.statSync(canonicalEvents).size > 0) return;
+  const detail = missing.length ? `missing ${missing.join(", ")}` : "canonical_events.jsonl is empty";
+  throw new Error(`Data Center V4 materialized tables are unavailable (${detail}). Run npm run sync:data-lake -- --v4-only=true --duckdb=skip before building the frontstage.`);
+}
+
 function unique(values) {
   return [...new Set(values.filter(Boolean))];
 }
@@ -451,6 +470,7 @@ export function buildEntityCollections(service, eventsById) {
 
 export function buildFrontstageData(root = defaultRoot) {
   const tables = path.join(root, "data-lake/tables");
+  requireMaterializedTables(tables);
   const taxonomy = readJson(path.join(root, "agent-workflow/product/tag-taxonomy-v4.json"), { tags: [], facets: [] });
   const tagNames = new Map(safeArray(taxonomy.tags).map((tag) => [
     tag.id,
