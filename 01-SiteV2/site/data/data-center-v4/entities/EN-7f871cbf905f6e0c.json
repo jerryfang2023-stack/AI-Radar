@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T06:46:16.044Z",
-    "latestDataDate": "2026-07-18",
-    "currentDate": "2026-07-18",
-    "eventCount": 1250,
-    "quarantinedEventCount": 11
+    "generatedAt": "2026-07-19T06:40:36.822Z",
+    "latestDataDate": "2026-07-19",
+    "currentDate": "2026-07-19",
+    "eventCount": 1286,
+    "quarantinedEventCount": 12
   },
   "entity": {
     "id": "EN-7f871cbf905f6e0c",
@@ -16,21 +16,26 @@
     "entityType": "organization_candidate",
     "typeLabel": "公司与机构",
     "aliases": [],
-    "verificationStatus": "candidate",
+    "verificationStatus": "verified",
     "datasetScopes": [
       "canonical"
     ],
     "eventIds": [
+      "EV-cf6e7a2edad82c6f",
       "EV-ab3586268ebfab38"
     ],
     "viewpointIds": [],
-    "classificationRefs": [],
+    "classificationRefs": [
+      "TX-industry-technology"
+    ],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-16",
-    "lastSeen": "2026-06-17",
+    "lastSeen": "2026-07-19",
     "relationIds": [],
     "groupedEventIds": {
-      "fundingAcquisition": [],
+      "fundingAcquisition": [
+        "EV-cf6e7a2edad82c6f"
+      ],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
@@ -41,6 +46,40 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-cf6e7a2edad82c6f",
+        "dataDate": "2026-07-19",
+        "date": "2026-07-18",
+        "eventType": "acquisition",
+        "eventTypeLabel": "并购",
+        "eventGroup": "融资与并购",
+        "status": "rumored",
+        "statusLabel": "rumored",
+        "title": "全球最大AI聚合平台OpenRouter获多家科技巨头收购意向，估值或高于13亿美元",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          },
+          {
+            "dimensionId": "product_form",
+            "id": "api_service",
+            "dimensionName": "产品形态",
+            "name": "API / 模型服务"
+          },
+          {
+            "dimensionId": "industry",
+            "id": "technology",
+            "dimensionName": "行业",
+            "name": "科技与软件"
+          }
+        ],
+        "entityIds": [
+          "EN-7f871cbf905f6e0c"
+        ]
+      },
       {
         "id": "EV-ab3586268ebfab38",
         "dataDate": "2026-06-17",
@@ -79,7 +118,56 @@
   },
   "relatedEntities": [],
   "relationships": [],
-  "taxonomyNodes": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-industry-technology",
+      "name": "科技与软件",
+      "nodeType": "industry",
+      "typeLabel": "行业",
+      "valueId": "technology",
+      "eventIds": [
+        "EV-cf6e7a2edad82c6f",
+        "EV-e1e0a38da122caed",
+        "EV-b563d5cf0f12119e",
+        "EV-220be2fe413b8cfa",
+        "EV-ebe9ed3158df619b",
+        "EV-6cb8979f92cf74ce",
+        "EV-ed388875bc004add",
+        "EV-8abf5adc3e72fbb8",
+        "EV-ba89f9414be0b041",
+        "EV-42f0dcfbb70ce73e",
+        "EV-97fecfb2f20f582f",
+        "EV-a9e22f22b7a2ec53"
+      ],
+      "entityIds": [
+        "EN-7f871cbf905f6e0c",
+        "EN-3c567a300232d3bb",
+        "EN-10535ca23448d8bb",
+        "EN-96eebba49dbbf422",
+        "EN-4de4a07ad031569c",
+        "EN-abb32701117d50a9",
+        "EN-bbdefa2950f49882",
+        "EN-1e0c30e583ebb8be",
+        "EN-8d4321d936320802",
+        "EN-28d0bd981118a907",
+        "EN-9fbf261b62c1d7c0",
+        "EN-7d3194f79e645c42",
+        "EN-3c6d89173e6636d7",
+        "EN-31f61ed3e6e210c5",
+        "EN-e2a93bc5095dec6c",
+        "EN-0decbc3b45f73b2b",
+        "EN-45cbca5f78f1ef44"
+      ],
+      "fdeIds": [
+        "FDE-d08fed45110ab44b"
+      ],
+      "hardwareIds": [
+        "HW-e11208b1ddb2dc49"
+      ],
+      "firstSeen": "2026-05-24",
+      "lastSeen": "2026-07-19"
+    }
+  ],
   "fde": [],
   "hardware": []
 }

@@ -1,0 +1,217 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-093
+title: "Claude make Fable 5 permanent"
+title_zh: "Claude 将 Fable 5 设为永久版本"
+title_translation_status: translated
+title_translation_method: deepseek_title_translation
+title_translation_model: deepseek-v4-pro
+original_url: "https://simonwillison.net/2026/Jul/18/claude-make-fable-5-permanent/#atom-everything"
+canonical_url: "https://simonwillison.net/2026/Jul/18/claude-make-fable-5-permanent"
+source_name: "Simon Willison's Blog"
+source_type: builder
+source_level: S
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: supporting_article
+evidence_object_usable: false
+event_evidence: false
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: rss-feed
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-18T06:00:13.000Z"
+collected_at: 2026-07-19T05:46:00.201Z
+language: mixed
+full_text_hash: a4e0a9afad4108bb
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-19/r-093-claude-make-fable-5-permanent.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-19/r-093-claude-make-fable-5-permanent.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: medium
+extraction_method: "content-container"
+readability_score: 58
+extractor_diagnostics: {"readability_score":58,"text_length":1199,"paragraph_count":9,"sentence_count":11,"boilerplate_hits":1,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 1199
+fetch_error: ""
+evidence_strength: source_backed_event
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["insufficient_usable_evidence_object"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"a4e0a9afad4108bb","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: supporting_evidence
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: merged_provider_duplicates
+url_hash: ab4192251d9cb9e2
+content_hash: a4e0a9afad4108bb
+semantic_hash: 6d6d6f8e8503624a
+duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
+first_seen_at: "2026-07-18T06:00:13.000Z"
+last_seen_at: 2026-07-19T05:46:00.201Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":false,"case":false,"business_change":false,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["index_only"]
+change_action_detected: true
+evidence_eligibility: blocked
+evidence_block_reason: "not_event_case_or_trend_evidence"
+guanlan_scores: {"importance_type":"supporting_signal","importance_score":2,"importance_reason":"consumer entertainment or minor platform policy feature; AI-adjacent but not a core business signal","supporting_signals":["low_value_ai_adjacent_context"],"novelty":2,"evidence_strength":4,"case_richness":5,"trend_relevance":2,"guanlan_relevance":2,"emerging_signal_score":2}
+business_elements: {"companies":["Simon Willison's Blog","Anthropic"],"products":["Claude","GPT-5"],"people":[],"industries":["开发者工具"],"roles":[],"workflows":["计费 / 预算管理"],"business_actions":["定价 / 计费变化"],"affected_departments":["IT / 安全"],"numbers":["5","2078302415804379218","20","50%","18","2026","$100","5.6"],"quotes":["https://twitter.com/claudeai/status/2078302415804379218"]}
+evidence_seed: {"company_actions":["18th July 2026 - Link Blog Claude make Fable 5 permanent .","As I was saying last week , the competition from GPT-5.","6 Sol (and maybe to a lesser extent Kimi 3 ) made untenable Anthropic's plan to remove Fable 5 from their subscription accounts and make it available exclusively through API pricing."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+missing_information: ["证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象","没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"number","text":"&lt;p&gt;&lt;strong&gt;&lt;a href=\"https://twitter.com/claudeai/status/2078302415804379218\"&gt;Claude make Fable 5 permanent&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt; An update from the &lt;code&gt;@claudeai&lt;/code&gt; account on Twitter:&lt;/p&gt; &lt;blockquote&gt; &lt;p&gt;Beginning July 20, Claude Fable 5 will be included in all Max and Team Premium plans, at 50% of limits.&lt;/p&gt; &lt;p&gt;Pro and Team Standard users will continue to have access to Fable via usage credits, and will receive a o","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"18th July 2026 - Link Blog Claude make Fable 5 permanent .","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"number","text":"An update from the @claudeai account on Twitter: Beginning July 20, Claude Fable 5 will be included in all Max and Team Premium plans, at 50% of limits.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"number","text":"Pro and Team Standard users will continue to have access to Fable via usage credits, and will receive a one-time $100 credit.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"As I was saying last week , the competition from GPT-5.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"6 Sol (and maybe to a lesser extent Kimi 3 ) made untenable Anthropic's plan to remove Fable 5 from their subscription accounts and make it available exclusively through API pricing.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-19T05:46:00.201Z
+theme: uncategorized
+keyword_group: uncategorized
+copyright_note: local research archive only
+---
+
+# Claude make Fable 5 permanent
+
+## clean_text
+
+18th July 2026 - Link Blog
+Claude make Fable 5 permanent . An update from the @claudeai account on Twitter:
+Beginning July 20, Claude Fable 5 will be included in all Max and Team Premium plans, at 50% of limits.
+Pro and Team Standard users will continue to have access to Fable via usage credits, and will receive a one-time $100 credit.
+As I was saying last week , the competition from GPT-5.6 Sol (and maybe to a lesser extent Kimi 3 ) made untenable Anthropic's plan to remove Fable 5 from their subscription accounts and make it available exclusively through API pricing.
+Why pay $100 or $200/month for a subscription plan that doesn't include Anthropic's best model?
+Their original plan was driven by concerns over compute capacity. I wonder if they'll have to dial back their training efforts in order to make more GPUs available to help serve the model.
+A lot of people were losing sleep over trying to make the most of Fable 5 before subscriber access was withdrawn. It's nice not to have to worry about the Fablepocalypse any more.
+Update : Important to note that users on the $20/month plan will still not have access to Fable 5 on that subscription. The Max plans are $100 and $200/month.
+
+## full_text
+
+18th July 2026 - Link Blog
+Claude make Fable 5 permanent . An update from the @claudeai account on Twitter:
+Beginning July 20, Claude Fable 5 will be included in all Max and Team Premium plans, at 50% of limits.
+Pro and Team Standard users will continue to have access to Fable via usage credits, and will receive a one-time $100 credit.
+As I was saying last week , the competition from GPT-5.6 Sol (and maybe to a lesser extent Kimi 3 ) made untenable Anthropic's plan to remove Fable 5 from their subscription accounts and make it available exclusively through API pricing.
+Why pay $100 or $200/month for a subscription plan that doesn't include Anthropic's best model?
+Their original plan was driven by concerns over compute capacity. I wonder if they'll have to dial back their training efforts in order to make more GPUs available to help serve the model.
+A lot of people were losing sleep over trying to make the most of Fable 5 before subscriber access was withdrawn. It's nice not to have to worry about the Fablepocalypse any more.
+Update : Important to note that users on the $20/month plan will still not have access to Fable 5 on that subscription. The Max plans are $100 and $200/month.
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 58
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: medium
+- diagnostics: {"readability_score":58,"text_length":1199,"paragraph_count":9,"sentence_count":11,"boilerplate_hits":1,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=medium
+   &lt;p&gt;&lt;strong&gt;&lt;a href="https://twitter.com/claudeai/status/2078302415804379218"&gt;Claude make Fable 5 permanent&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt; An update from the &lt;code&gt;@claudeai&lt;/code&gt; account on Twitter:&lt;/p&gt; &lt;blockquote&gt; &lt;p&gt;Beginning July 20, Claude Fable 5 will be included in all Max and Team Premium plans, at 50% of limits.&lt;/p&gt; &lt;p&gt;Pro and Team Standard users will continue to have access to Fable via usage credits, and will receive a o
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=medium
+   18th July 2026 - Link Blog Claude make Fable 5 permanent .
+
+3. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=medium
+   An update from the @claudeai account on Twitter: Beginning July 20, Claude Fable 5 will be included in all Max and Team Premium plans, at 50% of limits.
+
+4. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=medium
+   Pro and Team Standard users will continue to have access to Fable via usage credits, and will receive a one-time $100 credit.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=medium
+   As I was saying last week , the competition from GPT-5.
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=medium
+   6 Sol (and maybe to a lesser extent Kimi 3 ) made untenable Anthropic's plan to remove Fable 5 from their subscription accounts and make it available exclusively through API pricing.
+
+## business_elements
+
+- companies: Simon Willison's Blog, Anthropic
+- products: Claude, GPT-5
+- people: 暂无公开信息
+- industries: 开发者工具
+- roles: 暂无公开信息
+- workflows: 计费 / 预算管理
+- business_actions: 定价 / 计费变化
+- affected_departments: IT / 安全
+- numbers: 5, 2078302415804379218, 20, 50%, 18, 2026, $100, 5.6
+- quotes: https://twitter.com/claudeai/status/2078302415804379218
+
+## evidence_seed
+
+- company_actions: 18th July 2026 - Link Blog Claude make Fable 5 permanent . / As I was saying last week , the competition from GPT-5. / 6 Sol (and maybe to a lesser extent Kimi 3 ) made untenable Anthropic's plan to remove Fable 5 from their subscription accounts and make it available exclusively through API pricing.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: supporting_signal
+- importance_score: 2
+- importance_reason: consumer entertainment or minor platform policy feature; AI-adjacent but not a core business signal
+- supporting_signals: low_value_ai_adjacent_context
+- novelty: 2
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 2
+- guanlan_relevance: 2
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- business_change: false
+- relationship_graph_input: false
+- trend_candidate_context: false
+- signal_card_candidate: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- index_only
+
+## missing_information
+
+- 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: supporting_evidence
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://twitter.com/claudeai/status/2078302415804379218"&gt;Claude make Fable 5 permanent&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt; An update from the &lt;code&gt;@claudeai&lt;/code&gt; account on Twitter:&lt;/p&gt; &lt;blockquote&gt; &lt;p&gt;Beginning July 20, Claude Fable 5 will be included in all Max and Team Premium plans, at 50% of limits.&lt;/p&gt; &lt;p&gt;Pro and Team Standard users will continue to have access to Fable via usage credits, and will receive a o
+
+## 采集备注
+
+该条目由 rss-feed 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

@@ -1,0 +1,173 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-19T06:40:36.822Z",
+    "latestDataDate": "2026-07-19",
+    "currentDate": "2026-07-19",
+    "eventCount": 1286,
+    "quarantinedEventCount": 12
+  },
+  "entity": {
+    "id": "EN-5398729239788ca5",
+    "name": "T-Head SAIL",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-ac1b82f6e6261012"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [
+      "EN-047364b9be67f665"
+    ],
+    "firstSeen": "2026-07-18",
+    "lastSeen": "2026-07-19",
+    "relationIds": [
+      "REL2-1b484f324f2c0229"
+    ],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-ac1b82f6e6261012"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-ac1b82f6e6261012",
+        "dataDate": "2026-07-19",
+        "date": "2026-07-18",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "阿里平头哥真武 AI 芯片累计出货超 56 万片，开源 T-Head SAIL 软件栈",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "chip_accelerator",
+            "dimensionName": "产品形态",
+            "name": "芯片与加速器"
+          }
+        ],
+        "entityIds": [
+          "EN-047364b9be67f665",
+          "EN-5398729239788ca5"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [
+    {
+      "id": "EN-047364b9be67f665",
+      "name": "Alibaba",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "阿里"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-43b7f45e9bd7ec9b",
+        "EV-3d93d1da8cb64462",
+        "EV-53f08daddd011dbb",
+        "EV-e1a4bc40db4a9d8f",
+        "EV-215f938a46d0b126",
+        "EV-ac1b82f6e6261012",
+        "EV-6fbbbfcdcec81df4",
+        "EV-82e68f59d8584e4e",
+        "EV-fd8ecce5de2f667d",
+        "EV-f6ac2938949f74ec",
+        "EV-363fe72da52bdb86",
+        "EV-70cbf25f7ec2cc3a",
+        "EV-8b9e4428074bde60",
+        "EV-83c841a4c42cfdea",
+        "EV-3167e6eed75597e9",
+        "EV-ad2e4fe6a149d95d",
+        "EV-76aa77f5a2e7c661",
+        "EV-77662aa9bef9efbe",
+        "EV-c7f274c3aadece12",
+        "EV-333851b077b606c8",
+        "EV-6712f8ac1f00fe85",
+        "EV-c54172bf4e0c1068",
+        "EV-473f852b374d8b1c",
+        "EV-197aac95e60671f7",
+        "EV-4e6dc3ec2b3f0bd6",
+        "EV-bbc34d7bc9c02b6f",
+        "EV-8e6f9c324aa0b2f3",
+        "EV-a4f413441613beac",
+        "EV-c11ee0da38376254",
+        "EV-657837763764c869",
+        "EV-a4f052325d0ef230",
+        "EV-c0a94bb25d551db1",
+        "EV-710b145230faa692",
+        "EV-1b9bd3d2cb0dc54e"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-code_generation",
+        "TX-technology-long_context",
+        "TX-use_case-data_analysis",
+        "TX-technology-on_device",
+        "TX-technology-embodied_ai",
+        "TX-technology-fine_tuning",
+        "TX-technology-multimodal",
+        "TX-technology-video_generation",
+        "TX-technology-quantization",
+        "TX-technology-computer_use"
+      ],
+      "relatedEntityIds": [
+        "EN-5398729239788ca5",
+        "EN-22a4c686e665e299",
+        "EN-2daac3672aeafcbd",
+        "EN-d65d81c60c0c47c4"
+      ],
+      "firstSeen": "2026-05-23",
+      "lastSeen": "2026-07-19"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-1b484f324f2c0229",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-047364b9be67f665",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-5398729239788ca5",
+      "object_type": "entity",
+      "event_id": "EV-ac1b82f6e6261012",
+      "claim_refs": [
+        "CL-29ef28cd664376e4",
+        "CL-391fc36b78a2ade0",
+        "CL-9531b16faa6e3fe7",
+        "CL-85b848bd100ce23d"
+      ],
+      "source_refs": [
+        "SA-f7fe1f11152d8e2c"
+      ],
+      "data_date": "2026-07-19",
+      "status": "verified"
+    }
+  ],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

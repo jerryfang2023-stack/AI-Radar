@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-19T06:40:36.822Z",
+    "latestDataDate": "2026-07-19",
+    "currentDate": "2026-07-19",
+    "eventCount": 1286,
+    "quarantinedEventCount": 12
+  },
+  "entity": {
+    "id": "EN-977ccda4c4cfcc27",
+    "name": "B Soul",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-4e8f6e91e4451ba1"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-18",
+    "lastSeen": "2026-07-19",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [
+        "EV-4e8f6e91e4451ba1"
+      ],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-4e8f6e91e4451ba1",
+        "dataDate": "2026-07-19",
+        "date": "2026-07-18",
+        "eventType": "hardware_product",
+        "eventTypeLabel": "硬件产品",
+        "eventGroup": "AI 硬件",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "社交平台 Soul 推出 AI 智能硬件 B Soul，搭载多模态大模型 SoulX",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "ai_device",
+            "dimensionName": "产品形态",
+            "name": "AI 设备"
+          }
+        ],
+        "entityIds": [
+          "EN-ae0facccf0a3723a",
+          "EN-977ccda4c4cfcc27"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [
+    {
+      "id": "HW-073f0034b9be13b2",
+      "eventId": "EV-4e8f6e91e4451ba1",
+      "dataDate": "2026-07-19",
+      "date": "2026-07-18",
+      "title": "社交平台 Soul 推出 AI 智能硬件 B Soul，搭载多模态大模型 SoulX",
+      "hardwareType": "ai_device",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "未披露",
+      "supplier": "Soul",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/978/563.htm",
+      "sourceName": "IT之家（RSS）",
+      "sourceDate": "2026-07-18",
+      "entityIds": [
+        "EN-ae0facccf0a3723a",
+        "EN-977ccda4c4cfcc27"
+      ]
+    }
+  ]
+}

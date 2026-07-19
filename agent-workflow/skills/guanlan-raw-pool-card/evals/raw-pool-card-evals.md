@@ -42,6 +42,7 @@ Do not use numeric scores. Each check must be `pass` or `fail` with the file or 
    - Pass when confirmed single-company financing in AI hardware, chip, data-center, GPU, or infrastructure contexts is judged by original-source financing evidence, not blocked by those industry terms or by captured search-query tails such as `procurement`.
    - Pass when original-source confirmed strategic investments can enter the funding Card path without a disclosed amount, while rumors, future-tense funding claims, VC-fund formation, broad trackers, and generic funding commentary remain blocked.
    - Pass when strategic-investment Cards do not borrow amounts or rounds from page furniture such as `Also from this source`, adjacent old releases, related links, or historical recap sentences unless the current source title/event sentence itself confirms that amount or round.
+   - Pass when a service, supply, procurement, or cloud-computing agreement valued at a disclosed amount remains a `case`/contract event unless the original event title itself contains financing language; historical financing links or a stale `important_funding` route must not turn the contract value into a funding round.
    - Pass when customer or vertical case titles backed by the source can enter Cards through result verbs such as `uses`, `boosts`, `increased`, `reduced`, `saves`, or `improved`, even when the title does not use `launch` or `deploy`.
    - Pass when generic startup / funding list blockers inspect source identity fields only and do not reject a real single-company financing item because a source excerpt or captured query tail contains phrases such as `startup funding`.
    - Pass when `important_technical_trend`, builder/opinion posts, newsletters, workforce retraining / public-funding programs, technical guides, architecture articles, docs pages, and generic lists stay out of formal Signal Cards unless the same original source proves a dated formal business event.
@@ -55,6 +56,7 @@ Do not use numeric scores. Each check must be `pass` or `fail` with the file or 
 9. `no_detail_duplication`
    - Pass when `news fact`, `original points`, `value`, and `visible source excerpt` do not simply repeat the same sentence.
    - Pass when the Card generator and unified Business gate compare normalized content, reject shared long prefixes, and block title-as-news-fact fallbacks.
+   - Pass when final localization or fallback selection cannot reintroduce the visible excerpt into `original points`; if no alternate excerpt exists, remove the colliding point and disclose the missing independent detail instead of repeating another field.
    - Fail when a Card passes only because one duplicated field is truncated or prefixed with `原文称` / `原始来源标题显示`.
 
 10. `no_title_subject_leak`

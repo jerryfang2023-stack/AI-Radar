@@ -143,6 +143,20 @@ test("pending funding is represented as disputed and never projected", () => {
   assert.equal(bundle.hardware_records.length, 0);
 });
 
+test("rumor disclosure in source evidence keeps an acquisition unconfirmed", () => {
+  const bundle = buildBundle([
+    entry(
+      "acquisition-rumor-in-body",
+      "OpenRouter receives acquisition interest from technology companies",
+      "消息称 OpenRouter 已收到多家大型科技公司的潜在收购意向，目前该消息仍停留在传闻阶段。"
+    )
+  ], taxonomy, date, "2026-07-16T00:00:00.000Z");
+
+  assert.equal(bundle.canonical_events[0].event_type, "acquisition");
+  assert.equal(bundle.canonical_events[0].event_status, "rumored");
+  assert.equal(bundle.canonical_events[0].publication_status, "disputed");
+});
+
 test("duplicate funding sources cluster and preserve status conflict", () => {
   const bundle = buildBundle([
     entry("funding-confirmed", "Acme AI raises $10 million", "Acme AI raised $10 million in a financing round."),

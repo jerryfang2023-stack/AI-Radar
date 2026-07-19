@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T06:46:16.044Z",
-    "latestDataDate": "2026-07-18",
-    "currentDate": "2026-07-18",
-    "eventCount": 1250,
-    "quarantinedEventCount": 11
+    "generatedAt": "2026-07-19T06:40:36.822Z",
+    "latestDataDate": "2026-07-19",
+    "currentDate": "2026-07-19",
+    "eventCount": 1286,
+    "quarantinedEventCount": 12
   },
   "node": {
     "id": "TX-use_case-robotics_automation",
@@ -25,8 +25,13 @@
       "EV-e7b228c1b6b54c6a",
       "EV-57d3b7aa1a2f0fda",
       "EV-234ad54940674bf6",
+      "EV-e4fec8a00b416d12",
       "EV-39848cdd62c00e59",
       "EV-4faa2bcf2e42e60c",
+      "EV-73da0805f2a2705a",
+      "EV-345c8a2cc00fe8ca",
+      "EV-a69dd82a0512a294",
+      "EV-c844ddabb8528896",
       "EV-7fe139b107f9adc6",
       "EV-d1e8407177e11fdc",
       "EV-6b51b1b6fe22c540",
@@ -63,6 +68,13 @@
       "EN-72138e570e5103e2",
       "EN-aa75c47729b4a292",
       "EN-8147e6fed86d42c1",
+      "EN-e2c64fbbaf48eeb2",
+      "EN-68dce3237e10d795",
+      "EN-9b07ac3374166b76",
+      "EN-0e6e48aba1669631",
+      "EN-d77c36c05230024c",
+      "EN-be548deba4a093d7",
+      "EN-8d57f84bd1847b24",
       "EN-53874092e000069b",
       "EN-9c8ae69b84f21a2e",
       "EN-f0da91960830b394",
@@ -103,11 +115,13 @@
     "hardwareIds": [
       "HW-ceb55d9bc637c1d3",
       "HW-8ec8f237534254df",
+      "HW-155f566cfd988f5e",
+      "HW-cb9cc06cadda488b",
       "HW-0ebffabe51a60966",
       "HW-dca442211b264bbe"
     ],
     "firstSeen": "2026-05-24",
-    "lastSeen": "2026-07-18"
+    "lastSeen": "2026-07-19"
   },
   "events": [
     {
@@ -1004,6 +1018,94 @@
       "publisher": "NVIDIA Technical Blog（开发者技术博客 · RSS）"
     },
     {
+      "id": "EV-e4fec8a00b416d12",
+      "dataDate": "2026-07-19",
+      "date": "2026-07-19",
+      "updatedDate": "2026-07-19",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "英伟达 CEO 黄仁勋东京行：敲定国家级 AI 工厂合作，送粉丝红豆糕",
+      "originalTitle": "",
+      "subject": "英伟达 CEO 黄仁勋东京行：敲定国家级 AI 工厂",
+      "action": "合作",
+      "object": "，送粉丝红豆糕",
+      "metrics": [
+        "500 万",
+        "3392.3 万"
+      ],
+      "locations": [
+        "日本"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "robotics_automation",
+            "dimensionName": "应用场景",
+            "name": "机器人与物理自动化"
+          }
+        ],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "manufacturing",
+            "dimensionName": "行业",
+            "name": "制造业"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "manufacturing",
+          "dimensionName": "行业",
+          "name": "制造业"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "manufacturing",
+          "dimensionName": "行业",
+          "name": "制造业"
+        }
+      ],
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-0f3360879e746531"
+      ],
+      "entityNames": [
+        "NVIDIA",
+        "Noetra"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/978/614.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
       "id": "EV-39848cdd62c00e59",
       "dataDate": "2026-07-05",
       "date": "2026-07-05",
@@ -1191,6 +1293,321 @@
       "products": [],
       "sourceUrl": "https://blogs.nvidia.com/blog/nvidia-and-doosan-group-physical-ai",
       "publisher": "NVIDIA AI Blog"
+    },
+    {
+      "id": "EV-73da0805f2a2705a",
+      "dataDate": "2026-07-19",
+      "date": "2026-07-19",
+      "updatedDate": "2026-07-19",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Sunday Robotics 发布机器人 AI 模型 ACT-2，在陌生家庭叠衣成功率超 99%",
+      "originalTitle": "",
+      "subject": "Sunday Robotics",
+      "action": "发布机器人 AI 模型",
+      "object": "ACT-2，在陌生家庭叠衣成功率超 99%",
+      "metrics": [
+        "99%"
+      ],
+      "locations": [
+        "美国"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "robotics_automation",
+            "dimensionName": "应用场景",
+            "name": "机器人与物理自动化"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        }
+      ],
+      "entityIds": [
+        "EN-e2c64fbbaf48eeb2",
+        "EN-68dce3237e10d795",
+        "EN-9b07ac3374166b76"
+      ],
+      "entityNames": [
+        "Sunday Robotics",
+        "ACT-2",
+        "Robotics ACT-2"
+      ],
+      "productName": "ACT-2",
+      "products": [
+        {
+          "name": "ACT-2",
+          "type": "模型",
+          "ownerNames": []
+        },
+        {
+          "name": "Robotics ACT-2",
+          "type": "模型",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/978/617.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-345c8a2cc00fe8ca",
+      "dataDate": "2026-07-19",
+      "date": "2026-07-18",
+      "updatedDate": "2026-07-19",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "eventGroup": "AI 硬件",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "中兴发布\"中兴星仔\"人形机器人：1.6米高、自重30余千克，为同规格最轻",
+      "originalTitle": "",
+      "subject": "中兴",
+      "action": "发布\"中兴星仔\"人形机器人",
+      "object": "：1.6米高、自重30余千克，为同规格最轻",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        }
+      ],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "robot",
+            "dimensionName": "产品形态",
+            "name": "机器人"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "robotics_automation",
+            "dimensionName": "应用场景",
+            "name": "机器人与物理自动化"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "robot",
+          "dimensionName": "产品形态",
+          "name": "机器人"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "robot",
+          "dimensionName": "产品形态",
+          "name": "机器人"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        }
+      ],
+      "entityIds": [
+        "EN-4dbe391b8fcf977a",
+        "EN-0e6e48aba1669631"
+      ],
+      "entityNames": [
+        "ZTE",
+        "中兴"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/978/521.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-a69dd82a0512a294",
+      "dataDate": "2026-07-19",
+      "date": "2026-07-18",
+      "updatedDate": "2026-07-19",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "eventGroup": "AI 硬件",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "RoboSense 发布第二代全固态数字化激光雷达 E2，可无缝嵌入机器人头部、腕部",
+      "originalTitle": "",
+      "subject": "RoboSense",
+      "action": "发布第二代全固态数字化激光雷达 E2，可无缝嵌入机器人",
+      "object": "头部、腕部",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "robotics_automation",
+            "dimensionName": "应用场景",
+            "name": "机器人与物理自动化"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        }
+      ],
+      "entityIds": [
+        "EN-d77c36c05230024c"
+      ],
+      "entityNames": [
+        "RoboSense"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/978/546.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-c844ddabb8528896",
+      "dataDate": "2026-07-19",
+      "date": "2026-07-18",
+      "updatedDate": "2026-07-19",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "荣耀CEO李健：AI的本质是增强人而非替代人",
+      "originalTitle": "",
+      "subject": "荣耀",
+      "action": "product_release",
+      "object": "荣耀首台机器人 Robot Phone",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "robotics_automation",
+            "dimensionName": "应用场景",
+            "name": "机器人与物理自动化"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        }
+      ],
+      "entityIds": [
+        "EN-be548deba4a093d7",
+        "EN-8d57f84bd1847b24"
+      ],
+      "entityNames": [
+        "荣耀",
+        "Robot Phone"
+      ],
+      "productName": "Robot Phone",
+      "products": [
+        {
+          "name": "Robot Phone",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/978/488.htm",
+      "publisher": "IT之家（RSS）"
     },
     {
       "id": "EV-7fe139b107f9adc6",
@@ -3080,6 +3497,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-e3792591090281c6",
         "EV-f6a72cddbda748b3",
         "EV-4eaf3aabecae6016",
         "EV-2dff32c1b6f813e4",
@@ -3132,7 +3550,9 @@
         "EV-c5643983538c6513",
         "EV-b85139b8fba1a5c5",
         "EV-c4303801ea8c54dc",
+        "EV-0b7f11c0c18b8bf4",
         "EV-8b0f056571d68269",
+        "EV-30ba1a24f74ccc6d",
         "EV-b4eb99a878be9bb2",
         "EV-de1816770e8a2037",
         "EV-cfb7c4b4b765f53b",
@@ -3210,6 +3630,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-technology",
         "TX-technology-agentic_execution",
         "TX-industry-financial_services",
         "TX-use_case-enterprise_operations",
@@ -3225,7 +3646,6 @@
         "TX-use_case-cybersecurity",
         "TX-use_case-data_analysis",
         "TX-technology-on_device",
-        "TX-industry-technology",
         "TX-technology-embodied_ai",
         "TX-technology-fine_tuning",
         "TX-technology-open_weights",
@@ -3244,7 +3664,7 @@
         "EN-c70eca6b0f88f44d"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-18"
+      "lastSeen": "2026-07-19"
     },
     {
       "id": "EN-8d4321d936320802",
@@ -3259,6 +3679,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-e3792591090281c6",
         "EV-8b7cbb66a33a945d",
         "EV-4eaf3aabecae6016",
         "EV-87432dbb99cd6033",
@@ -3286,6 +3707,7 @@
         "EV-79c3f4f7cb2f2c86",
         "EV-7263caa45bbf168e",
         "EV-234ad54940674bf6",
+        "EV-e4fec8a00b416d12",
         "EV-8c526681b74e2762",
         "EV-5b16886442234f81",
         "EV-80f4e7972384ace8",
@@ -3296,6 +3718,8 @@
         "EV-4faa2bcf2e42e60c",
         "EV-9ee3c0ec243b6129",
         "EV-58c1cc3749294649",
+        "EV-0d5a32aca724d30e",
+        "EV-118317b7f92e5e16",
         "EV-950237c6b3eb6343",
         "EV-29e069ac093f0e34",
         "EV-6b51b1b6fe22c540",
@@ -3350,6 +3774,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-technology",
         "TX-technology-agentic_execution",
         "TX-use_case-enterprise_operations",
         "TX-industry-manufacturing",
@@ -3361,7 +3786,6 @@
         "TX-technology-mixture_of_experts",
         "TX-use_case-cybersecurity",
         "TX-technology-on_device",
-        "TX-industry-technology",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-embodied_ai",
         "TX-technology-fine_tuning",
@@ -3400,7 +3824,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-18"
+      "lastSeen": "2026-07-19"
     },
     {
       "id": "EN-59ae856cd788d0f5",
@@ -3441,6 +3865,7 @@
       ],
       "eventIds": [
         "EV-cafe435ddd007821",
+        "EV-e4fec8a00b416d12",
         "EV-8c526681b74e2762",
         "EV-6b51b1b6fe22c540"
       ],
@@ -3458,7 +3883,7 @@
         "EN-8d4321d936320802"
       ],
       "firstSeen": "2026-07-16",
-      "lastSeen": "2026-07-18"
+      "lastSeen": "2026-07-19"
     },
     {
       "id": "EN-80d387ccb3289295",
@@ -3534,17 +3959,19 @@
       "eventIds": [
         "EV-4b8064b1139e1724",
         "EV-434dcf1813a84ead",
+        "EV-345c8a2cc00fe8ca",
         "EV-7256017056b81bbe"
       ],
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-industry-retail_ecommerce",
-        "TX-use_case-robotics_automation"
+        "TX-use_case-robotics_automation",
+        "TX-technology-embodied_ai"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-03",
-      "lastSeen": "2026-07-13"
+      "lastSeen": "2026-07-19"
     },
     {
       "id": "EN-3b39ea849059759f",
@@ -3606,7 +4033,6 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
-        "EV-0d5a32aca724d30e",
         "EV-a255cfc0dab44564",
         "EV-98a80b75b27d9f3b",
         "EV-29e069ac093f0e34",
@@ -3707,6 +4133,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-technology",
         "TX-technology-agentic_execution",
         "TX-industry-financial_services",
         "TX-use_case-enterprise_operations",
@@ -3715,15 +4142,12 @@
         "TX-technology-code_generation",
         "TX-use_case-robotics_automation",
         "TX-use_case-software_development",
-        "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-use_case-cybersecurity",
         "TX-technology-on_device",
-        "TX-industry-technology",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-embodied_ai",
         "TX-technology-fine_tuning",
-        "TX-technology-open_weights",
         "TX-technology-multimodal",
         "TX-industry-media_entertainment",
         "TX-technology-video_generation",
@@ -3864,6 +4288,160 @@
       "lastSeen": "2026-07-18"
     },
     {
+      "id": "EN-e2c64fbbaf48eeb2",
+      "name": "Sunday Robotics",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-73da0805f2a2705a"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-robotics_automation"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-19",
+      "lastSeen": "2026-07-19"
+    },
+    {
+      "id": "EN-68dce3237e10d795",
+      "name": "ACT-2",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-73da0805f2a2705a"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-robotics_automation"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-19",
+      "lastSeen": "2026-07-19"
+    },
+    {
+      "id": "EN-9b07ac3374166b76",
+      "name": "Robotics ACT-2",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-73da0805f2a2705a"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-robotics_automation"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-19",
+      "lastSeen": "2026-07-19"
+    },
+    {
+      "id": "EN-0e6e48aba1669631",
+      "name": "中兴",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-345c8a2cc00fe8ca"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-robotics_automation",
+        "TX-technology-embodied_ai"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-18",
+      "lastSeen": "2026-07-19"
+    },
+    {
+      "id": "EN-d77c36c05230024c",
+      "name": "RoboSense",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-a69dd82a0512a294"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-robotics_automation"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-18",
+      "lastSeen": "2026-07-19"
+    },
+    {
+      "id": "EN-be548deba4a093d7",
+      "name": "荣耀",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-ee489212ff9135a4",
+        "EV-c844ddabb8528896"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-use_case-robotics_automation",
+        "TX-technology-multimodal"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-18",
+      "lastSeen": "2026-07-19"
+    },
+    {
+      "id": "EN-8d57f84bd1847b24",
+      "name": "Robot Phone",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-25933b8f123f92be",
+        "EV-c844ddabb8528896"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-use_case-robotics_automation",
+        "TX-technology-embodied_ai"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-18",
+      "lastSeen": "2026-07-19"
+    },
+    {
       "id": "EN-53874092e000069b",
       "name": "腾讯",
       "entityType": "organization_candidate",
@@ -3894,7 +4472,7 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "腾讯混元"
+        "腾讯"
       ],
       "verificationStatus": "verified",
       "datasetScopes": [
@@ -3905,6 +4483,7 @@
         "EV-427081ec574b43bb",
         "EV-acaf06b262d9c3db",
         "EV-27b69ea604475b72",
+        "EV-da9bb2c98c1ce8cd",
         "EV-afcd5426f5c01dc7",
         "EV-619e33abf3f9bfbf",
         "EV-be2f6bfcad93c42f",
@@ -3937,9 +4516,11 @@
         "TX-technology-multimodal",
         "TX-industry-media_entertainment"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-ea3bd73e2b506e00"
+      ],
       "firstSeen": "2026-05-18",
-      "lastSeen": "2026-07-18"
+      "lastSeen": "2026-07-19"
     },
     {
       "id": "EN-f0da91960830b394",
@@ -4419,6 +5000,7 @@
         "EV-31df816db86db282",
         "EV-e15ae1112294d59e",
         "EV-43301de739fe560e",
+        "EV-2351415291cb9fcd",
         "EV-e7b7df43970f7e2c",
         "EV-377094da492a03d2",
         "EV-ae736eb124d7163a",
@@ -4444,10 +5026,11 @@
         "TX-technology-tool_use"
       ],
       "relatedEntityIds": [
+        "EN-bac541b589c8a0d1",
         "EN-c4bc2d00a42f220f"
       ],
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-07-19"
     },
     {
       "id": "EN-7d5f17368c04f04c",
@@ -4599,6 +5182,7 @@
         "EV-3fbfb89a10efd42f",
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
+        "EV-3c4d6d70ac763885",
         "EV-83a8ac8a2554b60c",
         "EV-a68475d82ec939b5",
         "EV-c237f5dc53f0a923",
@@ -4744,6 +5328,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-technology",
         "TX-technology-agentic_execution",
         "TX-industry-financial_services",
         "TX-use_case-enterprise_operations",
@@ -4759,7 +5344,6 @@
         "TX-technology-mixture_of_experts",
         "TX-use_case-cybersecurity",
         "TX-use_case-data_analysis",
-        "TX-industry-technology",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-embodied_ai",
         "TX-technology-fine_tuning",
@@ -4797,7 +5381,7 @@
         "EN-b9db1ff13ae8496e",
         "EN-7b8cb35de7ad047a"
       ],
-      "firstSeen": "2026-03-13",
+      "firstSeen": "2026-02-19",
       "lastSeen": "2026-07-19"
     },
     {
@@ -4946,6 +5530,7 @@
         "EV-58c1cc3749294649",
         "EV-c0a65877001ed413",
         "EV-bd508dbe4205774f",
+        "EV-118317b7f92e5e16",
         "EV-c4723445b11bb275",
         "EV-7963d8c78531f12d",
         "EV-7c899d5decafc42f",
@@ -4995,6 +5580,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-technology",
         "TX-technology-agentic_execution",
         "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
@@ -5006,7 +5592,6 @@
         "TX-use_case-software_development",
         "TX-use_case-cybersecurity",
         "TX-technology-on_device",
-        "TX-industry-technology",
         "TX-technology-model_context_protocol",
         "TX-industry-telecommunications",
         "TX-technology-reasoning",
@@ -5025,7 +5610,7 @@
         "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-07-18"
+      "lastSeen": "2026-07-19"
     }
   ],
   "fde": [
@@ -5118,6 +5703,68 @@
     }
   ],
   "hardware": [
+    {
+      "id": "HW-155f566cfd988f5e",
+      "eventId": "EV-345c8a2cc00fe8ca",
+      "dataDate": "2026-07-19",
+      "date": "2026-07-18",
+      "title": "中兴发布\"中兴星仔\"人形机器人：1.6米高、自重30余千克，为同规格最轻",
+      "hardwareType": "robot",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "未披露",
+      "supplier": "未披露",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/978/521.htm",
+      "sourceName": "IT之家（RSS）",
+      "sourceDate": "2026-07-18",
+      "entityIds": [
+        "EN-4dbe391b8fcf977a",
+        "EN-0e6e48aba1669631"
+      ]
+    },
+    {
+      "id": "HW-cb9cc06cadda488b",
+      "eventId": "EV-a69dd82a0512a294",
+      "dataDate": "2026-07-19",
+      "date": "2026-07-18",
+      "title": "RoboSense 发布第二代全固态数字化激光雷达 E2，可无缝嵌入机器人头部、腕部",
+      "hardwareType": "semiconductor",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "未披露",
+      "supplier": "RoboSense",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/978/546.htm",
+      "sourceName": "IT之家（RSS）",
+      "sourceDate": "2026-07-18",
+      "entityIds": [
+        "EN-d77c36c05230024c"
+      ]
+    },
     {
       "id": "HW-0ebffabe51a60966",
       "eventId": "EV-303b418c63895ba6",

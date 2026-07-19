@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T06:46:16.044Z",
-    "latestDataDate": "2026-07-18",
-    "currentDate": "2026-07-18",
-    "eventCount": 1250,
-    "quarantinedEventCount": 11
+    "generatedAt": "2026-07-19T06:40:36.822Z",
+    "latestDataDate": "2026-07-19",
+    "currentDate": "2026-07-19",
+    "eventCount": 1286,
+    "quarantinedEventCount": 12
   },
   "entity": {
     "id": "EN-4dbe391b8fcf977a",
@@ -25,17 +25,19 @@
     "eventIds": [
       "EV-4b8064b1139e1724",
       "EV-434dcf1813a84ead",
+      "EV-345c8a2cc00fe8ca",
       "EV-7256017056b81bbe"
     ],
     "viewpointIds": [],
     "classificationRefs": [
       "TX-technology-agentic_execution",
       "TX-industry-retail_ecommerce",
-      "TX-use_case-robotics_automation"
+      "TX-use_case-robotics_automation",
+      "TX-technology-embodied_ai"
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-07-03",
-    "lastSeen": "2026-07-13",
+    "lastSeen": "2026-07-19",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
@@ -48,11 +50,48 @@
       "productsServices": [
         "EV-7256017056b81bbe"
       ],
-      "hardware": [],
+      "hardware": [
+        "EV-345c8a2cc00fe8ca"
+      ],
       "organizationPeople": [],
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-345c8a2cc00fe8ca",
+        "dataDate": "2026-07-19",
+        "date": "2026-07-18",
+        "eventType": "hardware_product",
+        "eventTypeLabel": "硬件产品",
+        "eventGroup": "AI 硬件",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "中兴发布\"中兴星仔\"人形机器人：1.6米高、自重30余千克，为同规格最轻",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "robot",
+            "dimensionName": "产品形态",
+            "name": "机器人"
+          },
+          {
+            "dimensionId": "use_case",
+            "id": "robotics_automation",
+            "dimensionName": "应用场景",
+            "name": "机器人与物理自动化"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "embodied_ai",
+            "name": "具身智能"
+          }
+        ],
+        "entityIds": [
+          "EN-4dbe391b8fcf977a",
+          "EN-0e6e48aba1669631"
+        ]
+      },
       {
         "id": "EV-434dcf1813a84ead",
         "dataDate": "2026-07-13",
@@ -225,6 +264,7 @@
         "EV-c8928410f6c145eb",
         "EV-c4303801ea8c54dc",
         "EV-23ae55daa341be06",
+        "EV-da9bb2c98c1ce8cd",
         "EV-b726a9cda7beae64",
         "EV-4e5c6267b3237dac",
         "EV-0a96b17e1977ae89",
@@ -258,6 +298,7 @@
         "EV-01df8e489a34893b",
         "EV-afd0332ad8f5f05b",
         "EV-029d34e296397775",
+        "EV-2c476cb7969f399b",
         "EV-0cce336f720bb7b7",
         "EV-36a9e4e908249381",
         "EV-02686922dd82c4aa",
@@ -284,7 +325,11 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
-        "EV-0d5a32aca724d30e",
+        "EV-19bcfc6d7c1612cb",
+        "EV-ee489212ff9135a4",
+        "EV-25933b8f123f92be",
+        "EV-82b39e10391d0f3c",
+        "EV-ef6c18262a290256",
         "EV-950237c6b3eb6343",
         "EV-82e68f59d8584e4e",
         "EV-a2dfe20983c8d6e4",
@@ -433,6 +478,7 @@
         "EV-7ff24ae733821395",
         "EV-c52947e480fa3347",
         "EV-cf496e0f8a56ca97",
+        "EV-aaaa21ae510bc87e",
         "EV-6566d065f5500a85",
         "EV-34929bdd016dc8d6",
         "EV-70fd0c4e482a646e",
@@ -605,9 +651,16 @@
         "EN-de5a1adf4fedcce1",
         "EN-19e41212c0556603",
         "EN-dca6ec9510fc0176",
-        "EN-6f7ac1823da81d2e",
-        "EN-607964040e4b62e0",
-        "EN-6749675d80a1faa7",
+        "EN-2abf8289b2f2113f",
+        "EN-91901356a63794df",
+        "EN-be548deba4a093d7",
+        "EN-92ec1124e1de6f54",
+        "EN-8d57f84bd1847b24",
+        "EN-e9b67bdfb6ae6a2e",
+        "EN-985e1a7c957148f9",
+        "EN-0a64d5a41e885455",
+        "EN-8b0aea25404131b5",
+        "EN-0e3c625f3930d7b7",
         "EN-aa15d891a32a51b8",
         "EN-8395dc051feafc4c",
         "EN-eaaf22a384c26014",
@@ -638,6 +691,7 @@
         "EN-26e4951af4490c21",
         "EN-7dd7122ad9bf240f",
         "EN-95b0632f1b292fa7",
+        "EN-6f7ac1823da81d2e",
         "EN-b644c0a9d493976a",
         "EN-636fa9664f878a4d",
         "EN-6c87e5496f592f3c",
@@ -826,6 +880,7 @@
         "EN-4d803c223cec4cc4",
         "EN-4634cbf463651816",
         "EN-467f67b2ed0f9a54",
+        "EN-b7bea343b08cce2c",
         "EN-1af769ad0ad5907c",
         "EN-4a639cb888a15d75",
         "EN-65b3aa2f527deeef",
@@ -861,6 +916,7 @@
         "FDE-d693e68f89adf86a",
         "FDE-ab9c514225686f60",
         "FDE-226f304c9cf13a74",
+        "FDE-cc943789fb1c3f3d",
         "FDE-602624cf072c079d",
         "FDE-467e0bd030c922df",
         "FDE-a80a4db8880a9b54",
@@ -884,7 +940,7 @@
         "HW-25ce41fab12d9ef2"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-18"
+      "lastSeen": "2026-07-19"
     },
     {
       "id": "TX-industry-retail_ecommerce",
@@ -974,8 +1030,13 @@
         "EV-e7b228c1b6b54c6a",
         "EV-57d3b7aa1a2f0fda",
         "EV-234ad54940674bf6",
+        "EV-e4fec8a00b416d12",
         "EV-39848cdd62c00e59",
         "EV-4faa2bcf2e42e60c",
+        "EV-73da0805f2a2705a",
+        "EV-345c8a2cc00fe8ca",
+        "EV-a69dd82a0512a294",
+        "EV-c844ddabb8528896",
         "EV-7fe139b107f9adc6",
         "EV-d1e8407177e11fdc",
         "EV-6b51b1b6fe22c540",
@@ -1012,6 +1073,13 @@
         "EN-72138e570e5103e2",
         "EN-aa75c47729b4a292",
         "EN-8147e6fed86d42c1",
+        "EN-e2c64fbbaf48eeb2",
+        "EN-68dce3237e10d795",
+        "EN-9b07ac3374166b76",
+        "EN-0e6e48aba1669631",
+        "EN-d77c36c05230024c",
+        "EN-be548deba4a093d7",
+        "EN-8d57f84bd1847b24",
         "EN-53874092e000069b",
         "EN-9c8ae69b84f21a2e",
         "EN-f0da91960830b394",
@@ -1052,13 +1120,121 @@
       "hardwareIds": [
         "HW-ceb55d9bc637c1d3",
         "HW-8ec8f237534254df",
+        "HW-155f566cfd988f5e",
+        "HW-cb9cc06cadda488b",
         "HW-0ebffabe51a60966",
         "HW-dca442211b264bbe"
       ],
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-07-18"
+      "lastSeen": "2026-07-19"
+    },
+    {
+      "id": "TX-technology-embodied_ai",
+      "name": "具身智能",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "embodied_ai",
+      "eventIds": [
+        "EV-43b56d49df9a73a2",
+        "EV-cafe435ddd007821",
+        "EV-234ad54940674bf6",
+        "EV-6415a58637893b34",
+        "EV-4faa2bcf2e42e60c",
+        "EV-25933b8f123f92be",
+        "EV-345c8a2cc00fe8ca",
+        "EV-82b39e10391d0f3c",
+        "EV-6b51b1b6fe22c540",
+        "EV-d633676a4a7d89a3",
+        "EV-6a2f3e9a22edff64",
+        "EV-49751dfc7d2f6d6c",
+        "EV-197aac95e60671f7",
+        "EV-24a536bc53a87050",
+        "EV-e2d4132c671e3d41",
+        "EV-3f8ba5855b64dd1a",
+        "EV-08f736f61f2b46f3"
+      ],
+      "entityIds": [
+        "EN-bbdefa2950f49882",
+        "EN-8d4321d936320802",
+        "EN-59ae856cd788d0f5",
+        "EN-0f3360879e746531",
+        "EN-80d387ccb3289295",
+        "EN-c70eca6b0f88f44d",
+        "EN-1f1cfc1d441be41f",
+        "EN-aa75c47729b4a292",
+        "EN-8147e6fed86d42c1",
+        "EN-96eebba49dbbf422",
+        "EN-8d57f84bd1847b24",
+        "EN-4dbe391b8fcf977a",
+        "EN-0e6e48aba1669631",
+        "EN-e9b67bdfb6ae6a2e",
+        "EN-985e1a7c957148f9",
+        "EN-e3b1bf3dab957ffe",
+        "EN-754c490bd199c21a",
+        "EN-7a3ecc54829211df",
+        "EN-2f354de778e6a6da",
+        "EN-936f01f91fdadf69",
+        "EN-30081094f2a8c83d",
+        "EN-047364b9be67f665",
+        "EN-67f2d22514622d1b",
+        "EN-c905c4c4af8eacb0",
+        "EN-7f6333102da9e8bd",
+        "EN-89e3f0711b76932c",
+        "EN-e9830c30bc572802",
+        "EN-5e1fcba4c9f1cf69",
+        "EN-7d3194f79e645c42",
+        "EN-94ff75465b1afa65"
+      ],
+      "fdeIds": [
+        "FDE-dadf0e9572889d3d",
+        "FDE-a85c538af1b093ed"
+      ],
+      "hardwareIds": [
+        "HW-ceb55d9bc637c1d3",
+        "HW-155f566cfd988f5e",
+        "HW-dca442211b264bbe",
+        "HW-1450585d9cd5879f"
+      ],
+      "firstSeen": "2026-06-02",
+      "lastSeen": "2026-07-19"
     }
   ],
   "fde": [],
-  "hardware": []
+  "hardware": [
+    {
+      "id": "HW-155f566cfd988f5e",
+      "eventId": "EV-345c8a2cc00fe8ca",
+      "dataDate": "2026-07-19",
+      "date": "2026-07-18",
+      "title": "中兴发布\"中兴星仔\"人形机器人：1.6米高、自重30余千克，为同规格最轻",
+      "hardwareType": "robot",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "未披露",
+      "supplier": "未披露",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/978/521.htm",
+      "sourceName": "IT之家（RSS）",
+      "sourceDate": "2026-07-18",
+      "entityIds": [
+        "EN-4dbe391b8fcf977a",
+        "EN-0e6e48aba1669631"
+      ]
+    }
+  ]
 }

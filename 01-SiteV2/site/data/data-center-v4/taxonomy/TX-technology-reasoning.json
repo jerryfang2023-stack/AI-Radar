@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T06:46:16.044Z",
-    "latestDataDate": "2026-07-18",
-    "currentDate": "2026-07-18",
-    "eventCount": 1250,
-    "quarantinedEventCount": 11
+    "generatedAt": "2026-07-19T06:40:36.822Z",
+    "latestDataDate": "2026-07-19",
+    "currentDate": "2026-07-19",
+    "eventCount": 1286,
+    "quarantinedEventCount": 12
   },
   "node": {
     "id": "TX-technology-reasoning",
@@ -18,6 +18,7 @@
     "valueId": "reasoning",
     "eventIds": [
       "EV-b95539d17772a4ce",
+      "EV-314b1d80bc4aa50d",
       "EV-9496f90f3e808992",
       "EV-e42e55d1e11a2ba2",
       "EV-d07906b648eec63f",
@@ -32,6 +33,8 @@
       "EN-4d748ebd71af03a7",
       "EN-bbdefa2950f49882",
       "EN-916a98f0fa2a39af",
+      "EN-a8100d425f663eac",
+      "EN-c0d023c66edfc877",
       "EN-ea3bd73e2b506e00",
       "EN-e3863f813fe47240",
       "EN-7d3194f79e645c42",
@@ -47,7 +50,7 @@
       "HW-94ca08e08e6e52fe"
     ],
     "firstSeen": "2026-06-01",
-    "lastSeen": "2026-07-13"
+    "lastSeen": "2026-07-19"
   },
   "events": [
     {
@@ -162,6 +165,76 @@
       "products": [],
       "sourceUrl": "https://economictimes.indiatimes.com/tech/artificial-intelligence/servicenow-nvidia-expand-partnership-launch-new-ai-agent/articleshow/120999550.cms",
       "publisher": "economictimes.indiatimes.com"
+    },
+    {
+      "id": "EV-314b1d80bc4aa50d",
+      "dataDate": "2026-07-19",
+      "date": "2026-07-18",
+      "updatedDate": "2026-07-19",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "商汤科技发布日日新 U1 Pro 图片创作模型：最高 8K 原生分辨率输出，宣称告别\"AI 味\"",
+      "originalTitle": "",
+      "subject": "商汤科技",
+      "action": "发布日日新 U1 Pro 图片创作模型",
+      "object": "：最高 8K 原生分辨率输出，宣称告别\"AI 味\"",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "reasoning",
+          "name": "推理能力"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "reasoning",
+          "name": "推理能力"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "reasoning",
+          "name": "推理能力"
+        }
+      ],
+      "entityIds": [
+        "EN-a8100d425f663eac",
+        "EN-c0d023c66edfc877"
+      ],
+      "entityNames": [
+        "商汤科技",
+        "U1 Pro"
+      ],
+      "productName": "U1 Pro",
+      "products": [
+        {
+          "name": "U1 Pro",
+          "type": "模型",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/978/562.htm",
+      "publisher": "IT之家（RSS）"
     },
     {
       "id": "EV-9496f90f3e808992",
@@ -869,6 +942,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-e3792591090281c6",
         "EV-8b7cbb66a33a945d",
         "EV-4eaf3aabecae6016",
         "EV-87432dbb99cd6033",
@@ -896,6 +970,7 @@
         "EV-79c3f4f7cb2f2c86",
         "EV-7263caa45bbf168e",
         "EV-234ad54940674bf6",
+        "EV-e4fec8a00b416d12",
         "EV-8c526681b74e2762",
         "EV-5b16886442234f81",
         "EV-80f4e7972384ace8",
@@ -906,6 +981,8 @@
         "EV-4faa2bcf2e42e60c",
         "EV-9ee3c0ec243b6129",
         "EV-58c1cc3749294649",
+        "EV-0d5a32aca724d30e",
+        "EV-118317b7f92e5e16",
         "EV-950237c6b3eb6343",
         "EV-29e069ac093f0e34",
         "EV-6b51b1b6fe22c540",
@@ -960,6 +1037,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-technology",
         "TX-technology-agentic_execution",
         "TX-use_case-enterprise_operations",
         "TX-industry-manufacturing",
@@ -971,7 +1049,6 @@
         "TX-technology-mixture_of_experts",
         "TX-use_case-cybersecurity",
         "TX-technology-on_device",
-        "TX-industry-technology",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-embodied_ai",
         "TX-technology-fine_tuning",
@@ -1010,7 +1087,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-18"
+      "lastSeen": "2026-07-19"
     },
     {
       "id": "EN-96eebba49dbbf422",
@@ -1023,6 +1100,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-e3792591090281c6",
         "EV-f6a72cddbda748b3",
         "EV-4eaf3aabecae6016",
         "EV-2dff32c1b6f813e4",
@@ -1075,7 +1153,9 @@
         "EV-c5643983538c6513",
         "EV-b85139b8fba1a5c5",
         "EV-c4303801ea8c54dc",
+        "EV-0b7f11c0c18b8bf4",
         "EV-8b0f056571d68269",
+        "EV-30ba1a24f74ccc6d",
         "EV-b4eb99a878be9bb2",
         "EV-de1816770e8a2037",
         "EV-cfb7c4b4b765f53b",
@@ -1153,6 +1233,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-technology",
         "TX-technology-agentic_execution",
         "TX-industry-financial_services",
         "TX-use_case-enterprise_operations",
@@ -1168,7 +1249,6 @@
         "TX-use_case-cybersecurity",
         "TX-use_case-data_analysis",
         "TX-technology-on_device",
-        "TX-industry-technology",
         "TX-technology-embodied_ai",
         "TX-technology-fine_tuning",
         "TX-technology-open_weights",
@@ -1187,7 +1267,7 @@
         "EN-c70eca6b0f88f44d"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-18"
+      "lastSeen": "2026-07-19"
     },
     {
       "id": "EN-4d748ebd71af03a7",
@@ -1261,7 +1341,6 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
-        "EV-0d5a32aca724d30e",
         "EV-a255cfc0dab44564",
         "EV-98a80b75b27d9f3b",
         "EV-29e069ac093f0e34",
@@ -1362,6 +1441,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-technology",
         "TX-technology-agentic_execution",
         "TX-industry-financial_services",
         "TX-use_case-enterprise_operations",
@@ -1370,15 +1450,12 @@
         "TX-technology-code_generation",
         "TX-use_case-robotics_automation",
         "TX-use_case-software_development",
-        "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-use_case-cybersecurity",
         "TX-technology-on_device",
-        "TX-industry-technology",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-embodied_ai",
         "TX-technology-fine_tuning",
-        "TX-technology-open_weights",
         "TX-technology-multimodal",
         "TX-industry-media_entertainment",
         "TX-technology-video_generation",
@@ -1446,6 +1523,48 @@
       ],
       "firstSeen": "2026-05-15",
       "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "EN-a8100d425f663eac",
+      "name": "商汤科技",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-314b1d80bc4aa50d"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-reasoning"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-18",
+      "lastSeen": "2026-07-19"
+    },
+    {
+      "id": "EN-c0d023c66edfc877",
+      "name": "U1 Pro",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-314b1d80bc4aa50d"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-reasoning"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-18",
+      "lastSeen": "2026-07-19"
     },
     {
       "id": "EN-ea3bd73e2b506e00",
@@ -1520,6 +1639,7 @@
       ],
       "relatedEntityIds": [
         "EN-e3863f813fe47240",
+        "EN-9c8ae69b84f21a2e",
         "EN-d85ad5e8ff8e2889",
         "EN-a2fa009495c3bb3a",
         "EN-2ba325ce6f8e3dc9",
@@ -1617,6 +1737,7 @@
         "EV-3fbfb89a10efd42f",
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
+        "EV-3c4d6d70ac763885",
         "EV-83a8ac8a2554b60c",
         "EV-a68475d82ec939b5",
         "EV-c237f5dc53f0a923",
@@ -1762,6 +1883,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-technology",
         "TX-technology-agentic_execution",
         "TX-industry-financial_services",
         "TX-use_case-enterprise_operations",
@@ -1777,7 +1899,6 @@
         "TX-technology-mixture_of_experts",
         "TX-use_case-cybersecurity",
         "TX-use_case-data_analysis",
-        "TX-industry-technology",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-embodied_ai",
         "TX-technology-fine_tuning",
@@ -1815,7 +1936,7 @@
         "EN-b9db1ff13ae8496e",
         "EN-7b8cb35de7ad047a"
       ],
-      "firstSeen": "2026-03-13",
+      "firstSeen": "2026-02-19",
       "lastSeen": "2026-07-19"
     },
     {
@@ -1874,6 +1995,7 @@
         "EV-58c1cc3749294649",
         "EV-c0a65877001ed413",
         "EV-bd508dbe4205774f",
+        "EV-118317b7f92e5e16",
         "EV-c4723445b11bb275",
         "EV-7963d8c78531f12d",
         "EV-7c899d5decafc42f",
@@ -1923,6 +2045,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-technology",
         "TX-technology-agentic_execution",
         "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
@@ -1934,7 +2057,6 @@
         "TX-use_case-software_development",
         "TX-use_case-cybersecurity",
         "TX-technology-on_device",
-        "TX-industry-technology",
         "TX-technology-model_context_protocol",
         "TX-industry-telecommunications",
         "TX-technology-reasoning",
@@ -1953,7 +2075,7 @@
         "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-07-18"
+      "lastSeen": "2026-07-19"
     },
     {
       "id": "EN-1f8a924e62194552",

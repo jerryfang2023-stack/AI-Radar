@@ -642,7 +642,10 @@ function chineseAmount(raw = "") {
   const amount = Number(match[2]);
   const unit = String(match[3] || "").toLowerCase();
   if (!Number.isFinite(amount)) return text;
-  if (unit === "b" || unit === "billion") return `${amount}0 亿${currency}`.replace(/\.0 亿/u, " 亿");
+  if (unit === "b" || unit === "billion") {
+    const yi = amount * 10;
+    return `${Number.isInteger(yi) ? yi : Number(yi.toFixed(2))} 亿${currency}`;
+  }
   if (unit === "m" || unit === "million") {
     const tenThousands = amount * 100;
     if (tenThousands >= 10000) {
@@ -799,6 +802,11 @@ function sourceBackedChineseFact(raw = "", context = {}) {
   }
   if (/Monogram.*\$40 million seed round co-led by DST Global and Lux Capital/iu.test(text)) {
     return "Monogram 的 4000 万美元种子轮由 DST Global 与 Lux Capital 联合领投。";
+  }
+  if (/\bcloud computing service agreement\b/iu.test(text)) {
+    const agreementAmount = chineseAmount(extractAmount(text) || text);
+    const term = /\bfive[- ]year\b/iu.test(text) ? "五年期" : "";
+    return `${owner}签署${agreementAmount ? `价值 ${agreementAmount}的` : ""}${term}云计算服务协议。`;
   }
   const amount = chineseAmount(extractAmount(text) || text);
   const round = chineseRound(text);
@@ -1878,7 +1886,12 @@ function hasConcreteMarketStructureEvent(section) {
 
 function hasFormalCardEvent(section) {
   const importanceType = value(section, "importance_type");
-  if (importanceType === "important_funding") return hasConcreteFundingEvent(section);
+  if (importanceType === "important_funding") {
+    return hasConcreteFundingEvent(section)
+      || hasConcreteProductEvent(section)
+      || hasConcreteCaseEvent(section)
+      || hasConcreteMarketStructureEvent(section);
+  }
   if (importanceType === "important_product_or_service") {
     return hasConcreteProductEvent(section) || hasConcreteCaseEvent(section) || hasNamedCommercialDeploymentEvidence(section);
   }
@@ -2502,16 +2515,25 @@ function isCorporateCapexOrCommunityInvestment(section) {
   return largeVendor && capexContext && !financingContext;
 }
 
+function isPricedCommercialAgreementTitle(title = "") {
+  const text = cleanSourceEventTitle(title);
+  const pricedCommercialAgreement = /\b(?:service|cloud computing|compute|supply|procurement|customer)\b.{0,80}\b(?:agreement|contract)\b|\b(?:agreement|contract)\b.{0,80}\b(?:service|cloud computing|compute|supply|procurement|customer)\b/iu.test(text);
+  const sourceTitleConfirmsFunding = /\b(?:funding|financing|investment|round|pre[- ]seed|seed|series\s+[a-z]|raises?|raised|secures?|secured|closes?|closed)\b|融资|投资|轮/iu.test(text);
+  return pricedCommercialAgreement && !sourceTitleConfirmsFunding;
+}
+
 function isSingleCompanyFundingSignal(section) {
   const title = poolTitle(section);
   const text = textForInference(section);
   const sourceUrl = value(section, "source_url");
+  const sourceEventTitle = cleanSourceEventTitle(originalSourceTitleFromSection(section));
   const haystack = `${title} ${text} ${sourceUrl}`;
   const sourceIdentity = `${title} ${value(section, "source")} ${sourceUrl}`;
   if (isCorporateCapexOrCommunityInvestment(section)) {
     return false;
   }
   if (isUnconfirmedFundingProcess(section)) return false;
+  if (isPricedCommercialAgreementTitle(sourceEventTitle)) return false;
   if (/(funding map|top ai pre-seed investors|pre-seed investors|top ai agent startups|hottest ai startups|coolest ai startups|startup investment surge|ranked by funding|growing share|startup funding|best pre-seed investors|venture capital observatory|vc attention|valuation bubble|agentmarketcap|aifundingtracker|funding tracker|ai agent startups insight partners funding|series-b-enterprise-ai-agents|crn\.com\/news\/ai\/2026\/the-10-hottest-ai-startups|crunchbase\.com\/venture\/seed-seriesa-startup-megadeals)/iu.test(sourceIdentity)) {
     return false;
   }
@@ -2777,6 +2799,11 @@ function deterministicEnglishPublicTitle({ type = "", company = "", sourceEventT
         : "";
     return `${cleanCompany} 获得 ${localizedAmount}${round ? ` ${round}` : ""}融资${purpose}`;
   }
+  if (type === "case" && /\bcloud computing service agreement\b/iu.test(title)) {
+    const agreementAmount = chineseAmount(extractAmount(title) || amount || title);
+    const term = /\bfive[- ]year\b/iu.test(title) ? "五年期" : "";
+    return `${cleanCompany} 签署${agreementAmount ? `价值 ${agreementAmount}的` : ""}${term}云计算服务协议`;
+  }
   if (/\bcuts?\b.{0,80}\b(?:minutes?|hours?|days?|cost|rfq|cycle)\b|\breduc(?:es|ed)\b.{0,80}\b(?:minutes?|hours?|days?|cost|cycle)\b/iu.test(title)) {
     if (/\bRFQ\b/iu.test(title) && /\b10\s+minutes?\b/iu.test(title)) return `${cleanCompany} 用 agentic AI 将 RFQ 缩短至 10 分钟`;
     return `${cleanCompany} 披露 AI 流程提效案例`;
@@ -3041,7 +3068,7 @@ function autoSignalEligibilityIssues(section) {
   if (!coreImportanceTypes.has(importanceType) && !allowsObservationSummaryEvidence(section) && !hasFormalEvent) {
     issues.push(cardGateIssue(CARD_ENTRY_GATES.businessSignalScope, `unsupported_importance_type:${importanceType || "missing"}`));
   }
-  if (importanceType === "important_funding" && !isSingleCompanyFundingSignal(section)) {
+  if (importanceType === "important_funding" && inferSignalType(section) === "funding" && !isSingleCompanyFundingSignal(section)) {
     issues.push(cardGateIssue(CARD_ENTRY_GATES.factTypeConstraints, "funding_not_single_company_round"));
   }
   const sourceEventTitle = cleanSourceEventTitle(originalSourceTitleFromSection(section));
@@ -3392,7 +3419,7 @@ function opportunitySignalsForSignal(spec, sourceLevel, section) {
       value(section, "key_excerpts"),
       value(section, "evidence_seed"),
     ];
-  return inferOpportunitySignals({
+  const signals = inferOpportunitySignals({
     category: spec.type,
     signalType: spec.type,
     title: spec.title,
@@ -3402,6 +3429,11 @@ function opportunitySignalsForSignal(spec, sourceLevel, section) {
     keyExcerpts: spec.sourcePoints || [],
     rawText: sourceText.filter(Boolean).join("\n"),
   });
+  if (spec.type === "case" && isPricedCommercialAgreementTitle(spec.sourceTitle)) {
+    signals.business_action = signals.business_action.filter((item) => !["funding_round", "product_launch"].includes(item));
+    signals.source_evidence_type = signals.source_evidence_type.filter((item) => item !== "funding_news");
+  }
+  return signals;
 }
 
 function formalTagsForScene(spec) {
@@ -3438,6 +3470,11 @@ function signalCard(spec, section) {
     strategicInvestment: isConfirmedStrategicInvestment(section, originalSourceTitleFromSection(section)),
     sourceAmountMillions: fundingAmountMillions(originalSourceTitleFromSection(section)),
   };
+  const rawSource = readRawJson(section);
+  const rawSourceText = String(rawSource.full_text || rawSource.clean_text || "");
+  const cloudServiceAgreement = spec.type === "case"
+    && isPricedCommercialAgreementTitle(spec.sourceTitle)
+    && /\bcloud computing service agreement\b/iu.test(spec.sourceTitle);
   const sourcePoints = [...new Set((spec.sourcePoints?.length ? spec.sourcePoints : sourcePointsFromSection(section))
     .map((item) => hasCjk(item) ? item : (sourceBackedChineseFact(item, sourcePointContext) || item))
     .filter(sourcePointReadyForPublic))]
@@ -3455,12 +3492,21 @@ function signalCard(spec, section) {
   if (!sourceFact || isSameSourcePoint(sourceFact, spec.title) || isSameSourcePoint(sourceFact, titleFact)) {
     sourceFact = "原文未披露可与标题独立核对的事件细节。";
   }
+  if (cloudServiceAgreement) {
+    const agreementAmount = chineseAmount(extractAmount(spec.sourceTitle) || spec.sourceTitle);
+    const term = /\bfive[- ]year\b/iu.test(spec.sourceTitle) ? "五年期" : "";
+    const counterparty = /\bglobal (?:Artificial Intelligence\s*\([^)]*\)\s*|AI\s*)Lab\b/iu.test(rawSourceText) ? "一家全球 AI 实验室" : "客户";
+    sourceFact = `${spec.company} 与${counterparty}签署${term}云计算服务协议${agreementAmount ? `，协议价值 ${agreementAmount}` : ""}。`;
+  }
   const rawValuePoint = localizedRawSourcePointsFromSection(section, sourcePointContext, [sourceFact, spec.title, titleFact])[0] || "";
   let valueSummary =
     [spec.businessMeaning, spec.whyWatch, ...sourcePoints]
       .find((item) => item && !isSameSourcePoint(item, sourceFact) && !isSameSourcePoint(item, spec.title) && !isSameSourcePoint(item, titleFact)) ||
     rawValuePoint ||
     generatedCommercialValue(spec);
+  if (cloudServiceAgreement && /deploy cloud computing solutions across data center infrastructure in New Zealand/iu.test(rawSourceText)) {
+    valueSummary = `${spec.company} 预计在新西兰数据中心基础设施中部署云计算方案，合同收入预计于 2027 年第一、第二季度开始确认。`;
+  }
   const candidateOriginalPoints = sourcePoints
     .filter((item) => !isSameSourcePoint(item, sourceFact) && !isSameSourcePoint(item, valueSummary) && !isSameSourcePoint(item, spec.title) && !isSameSourcePoint(item, titleFact))
     .slice(0, 4);
@@ -3525,6 +3571,24 @@ function signalCard(spec, section) {
       .find((item) => item && !excluded.some((excludedItem) => isSameSourcePoint(item, excludedItem)));
     if (rawFallbackExcerpt) sourceExcerpt = rawFallbackExcerpt;
   }
+  originalPoints = originalPoints.filter((item) => !isSameSourcePoint(item, sourceExcerpt));
+  if (cardDetailsTooSimilar(originalPoints.join(" "), sourceExcerpt)) {
+    const excerptKey = normalizedSignalText(sourceExcerpt);
+    originalPoints = originalPoints.filter((item) => {
+      const itemKey = normalizedSignalText(item);
+      return itemKey.length < 18 || !excerptKey.includes(itemKey);
+    });
+  }
+  if (cloudServiceAgreement) {
+    const agreementPoints = [];
+    if (/total AI Factory capacity is 132MW[\s\S]{0,120}116MW is contracted[\s\S]{0,160}62,000 NVIDIA GPUs/iu.test(rawSourceText)) {
+      agreementPoints.push(`${spec.company} 披露其 AI Factory 总容量为 132MW，其中 116MW 已与终端客户签约，并预计到 2027 年中部署超过 6.2 万块 NVIDIA GPU。`);
+    }
+    if (/revenue from the contract expected to commence across the first and second quarter of 2027/iu.test(rawSourceText)) {
+      agreementPoints.push("原文称，该合同收入预计在 2027 年第一、第二季度开始确认。");
+    }
+    if (agreementPoints.length) originalPoints = agreementPoints;
+  }
 
   const yamlString = (input = "") => JSON.stringify(String(input || ""));
   const poolRoutes = poolRoutesForPrimaryRaw(section).map((route) => `    - ${route}`).join("\n");
@@ -3582,7 +3646,7 @@ ${sourceFact}
 
 ## 原文要点
 
-${originalPoints.length ? originalPoints.map((item) => `- ${item}`).join("\n") : `- ${sourceFact || sourceExcerpt}`}
+${originalPoints.length ? originalPoints.map((item) => `- ${item}`).join("\n") : "- 原文没有披露可与新闻事实和可见片段独立区分的补充细节。"}
 
 ## 价值描述
 
@@ -4045,6 +4109,31 @@ function runQualityRegressionFixtures() {
     "spec-only hardware coverage without deployment or procurement must remain backend-only",
   );
 
+  const pricedServiceAgreementFixture = [
+    "## P-990｜Sharon AI Announces US$1.32 Billion Five-Year Cloud Computing Service Agreement",
+    "- source_title: Sharon AI Announces US$1.32 Billion Five-Year Cloud Computing Service Agreement",
+    "- source_url: https://example.com/sharon-ai-cloud-service-agreement",
+    "- importance_type: important_funding",
+    "- key_excerpts: Sharon AI announced the signing of a cloud computing service agreement with a global AI lab, valued at US$1.32 billion over five years, and expects to deploy cloud infrastructure in New Zealand.",
+  ].join("\n");
+  assert.equal(isSingleCompanyFundingSignal(pricedServiceAgreementFixture), false, "a priced service agreement is not a funding round");
+  assert.equal(inferSignalType(pricedServiceAgreementFixture), "case", "a priced service agreement must remain a contract/deployment case despite a stale funding route");
+  assert.equal(chineseAmount("US$1.32 Billion"), "13.2 亿美元", "billion-denominated contract values must convert to 亿 correctly");
+  assert.equal(
+    deterministicEnglishPublicTitle({
+      type: "case",
+      company: "Sharon AI",
+      sourceEventTitle: "Sharon AI Announces US$1.32 Billion Five-Year Cloud Computing Service Agreement",
+    }),
+    "Sharon AI 签署价值 13.2 亿美元的五年期云计算服务协议",
+    "priced service agreements need a direct Chinese event title",
+  );
+  assert.equal(
+    sourceBackedChineseFact("Sharon AI announced the signing of a cloud computing service agreement with a global AI lab, valued at US$1.32 billion over five years.", { company: "Sharon AI", type: "case" }),
+    "Sharon AI签署价值 13.2 亿美元的云计算服务协议。",
+    "priced service agreements must not be localized as financing facts",
+  );
+
   const tradeSecretLawsuitFixture = [
     "## P-991｜Apple sues OpenAI over former engineer trade secrets",
     "- source_url: https://example.com/apple-sues-openai-trade-secrets",
@@ -4056,7 +4145,7 @@ function runQualityRegressionFixtures() {
     "trade-secret employee lawsuits without product/funding/case events must not become Cards",
   );
 
-  for (const poolRef of ["P-001", "P-012", "P-043"]) {
+  for (const poolRef of ["P-001", "P-012", "P-015", "P-026", "P-043"]) {
     assert.deepEqual(issuesFor(poolRef), [], `${poolRef} should pass the six Card-entry gates`);
     const diagnostics = {};
     assert.ok(autoSignalSpec(poolRef, section(poolRef), 1, diagnostics), `${poolRef} should produce a formal Signal Card spec; reason=${diagnostics.reason || "unknown"}`);
@@ -4066,8 +4155,6 @@ function runQualityRegressionFixtures() {
 
   const rejected = {
     "P-002": "trade_secret_lawsuit_without_product_funding_or_case_event",
-    "P-015": "source_title_requires_chinese_event_title",
-    "P-026": "source_title_requires_chinese_event_title",
     "P-017": "stale_source_date",
     "P-033": "stale_source_date",
     "P-035": "company_profile_without_dated_event",
@@ -4082,7 +4169,7 @@ function runQualityRegressionFixtures() {
     );
   }
 
-  for (const poolRef of ["P-001", "P-012", "P-043"]) {
+  for (const poolRef of ["P-001", "P-012", "P-015", "P-026", "P-043"]) {
     const spec = normalizeSignalSpec(specFor(poolRef));
     const markdown = signalCard(spec, section(poolRef));
     const details = cardDetailSections(markdown);

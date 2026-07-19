@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T06:46:16.044Z",
-    "latestDataDate": "2026-07-18",
-    "currentDate": "2026-07-18",
-    "eventCount": 1250,
-    "quarantinedEventCount": 11
+    "generatedAt": "2026-07-19T06:40:36.822Z",
+    "latestDataDate": "2026-07-19",
+    "currentDate": "2026-07-19",
+    "eventCount": 1286,
+    "quarantinedEventCount": 12
   },
   "node": {
     "id": "TX-technology-video_generation",
@@ -811,8 +811,7 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "阿里",
-        "阿里巴巴"
+        "阿里"
       ],
       "verificationStatus": "verified",
       "datasetScopes": [
@@ -823,6 +822,8 @@
         "EV-3d93d1da8cb64462",
         "EV-53f08daddd011dbb",
         "EV-e1a4bc40db4a9d8f",
+        "EV-215f938a46d0b126",
+        "EV-ac1b82f6e6261012",
         "EV-6fbbbfcdcec81df4",
         "EV-82e68f59d8584e4e",
         "EV-fd8ecce5de2f667d",
@@ -867,12 +868,13 @@
         "TX-technology-computer_use"
       ],
       "relatedEntityIds": [
+        "EN-5398729239788ca5",
         "EN-22a4c686e665e299",
         "EN-2daac3672aeafcbd",
         "EN-d65d81c60c0c47c4"
       ],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-07-18"
+      "lastSeen": "2026-07-19"
     },
     {
       "id": "EN-d83624eb3ab9192e",
@@ -980,6 +982,7 @@
         "EV-ec711aed6721bb30",
         "EV-d756f05478303505",
         "EV-06b294f255c0087e",
+        "EV-2c476cb7969f399b",
         "EV-06487af6e98ea491",
         "EV-bb9ba11acf104db1",
         "EV-e7b7df43970f7e2c",
@@ -996,6 +999,7 @@
         "EV-0ad758b04b9b5313",
         "EV-591542ccc2de5be8",
         "EV-dab4d3f2059e8880",
+        "EV-aaaa21ae510bc87e",
         "EV-2f56b99f72ad6c4f",
         "EV-33e7429a7bc94840",
         "EV-cf0551afe16562ef",
@@ -1004,6 +1008,7 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-financial_services",
         "TX-industry-retail_ecommerce",
         "TX-technology-code_generation",
         "TX-use_case-customer_service",
@@ -1015,9 +1020,11 @@
         "TX-technology-multimodal",
         "TX-technology-video_generation"
       ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-04-02",
-      "lastSeen": "2026-07-16"
+      "relatedEntityIds": [
+        "EN-3ccbd9105a45d8fc"
+      ],
+      "firstSeen": "2026-03-11",
+      "lastSeen": "2026-07-19"
     },
     {
       "id": "EN-01f1074bb52ff605",
@@ -1137,7 +1144,6 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
-        "EV-0d5a32aca724d30e",
         "EV-a255cfc0dab44564",
         "EV-98a80b75b27d9f3b",
         "EV-29e069ac093f0e34",
@@ -1238,6 +1244,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-technology",
         "TX-technology-agentic_execution",
         "TX-industry-financial_services",
         "TX-use_case-enterprise_operations",
@@ -1246,15 +1253,12 @@
         "TX-technology-code_generation",
         "TX-use_case-robotics_automation",
         "TX-use_case-software_development",
-        "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-use_case-cybersecurity",
         "TX-technology-on_device",
-        "TX-industry-technology",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-embodied_ai",
         "TX-technology-fine_tuning",
-        "TX-technology-open_weights",
         "TX-technology-multimodal",
         "TX-industry-media_entertainment",
         "TX-technology-video_generation",

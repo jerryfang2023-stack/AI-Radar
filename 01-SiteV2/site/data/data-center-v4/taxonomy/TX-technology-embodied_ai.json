@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T06:46:16.044Z",
-    "latestDataDate": "2026-07-18",
-    "currentDate": "2026-07-18",
-    "eventCount": 1250,
-    "quarantinedEventCount": 11
+    "generatedAt": "2026-07-19T06:40:36.822Z",
+    "latestDataDate": "2026-07-19",
+    "currentDate": "2026-07-19",
+    "eventCount": 1286,
+    "quarantinedEventCount": 12
   },
   "node": {
     "id": "TX-technology-embodied_ai",
@@ -22,6 +22,9 @@
       "EV-234ad54940674bf6",
       "EV-6415a58637893b34",
       "EV-4faa2bcf2e42e60c",
+      "EV-25933b8f123f92be",
+      "EV-345c8a2cc00fe8ca",
+      "EV-82b39e10391d0f3c",
       "EV-6b51b1b6fe22c540",
       "EV-d633676a4a7d89a3",
       "EV-6a2f3e9a22edff64",
@@ -43,6 +46,11 @@
       "EN-aa75c47729b4a292",
       "EN-8147e6fed86d42c1",
       "EN-96eebba49dbbf422",
+      "EN-8d57f84bd1847b24",
+      "EN-4dbe391b8fcf977a",
+      "EN-0e6e48aba1669631",
+      "EN-e9b67bdfb6ae6a2e",
+      "EN-985e1a7c957148f9",
       "EN-e3b1bf3dab957ffe",
       "EN-754c490bd199c21a",
       "EN-7a3ecc54829211df",
@@ -65,11 +73,12 @@
     ],
     "hardwareIds": [
       "HW-ceb55d9bc637c1d3",
+      "HW-155f566cfd988f5e",
       "HW-dca442211b264bbe",
       "HW-1450585d9cd5879f"
     ],
     "firstSeen": "2026-06-02",
-    "lastSeen": "2026-07-18"
+    "lastSeen": "2026-07-19"
   },
   "events": [
     {
@@ -671,6 +680,297 @@
       "products": [],
       "sourceUrl": "https://blogs.nvidia.com/blog/nvidia-and-doosan-group-physical-ai",
       "publisher": "NVIDIA AI Blog"
+    },
+    {
+      "id": "EV-25933b8f123f92be",
+      "dataDate": "2026-07-19",
+      "date": "2026-07-18",
+      "updatedDate": "2026-07-19",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "荣耀 WAIC 宣布 Robot Phone 开启预约：搭载 Agentic OS，8 月发布",
+      "originalTitle": "",
+      "subject": "荣耀 WAIC 宣布 Robot Phone 开启预约：搭载 Agentic OS，8 月",
+      "action": "发布",
+      "object": "荣耀 WAIC 宣布 Robot Phone 开启预约：搭载 Agentic OS，8 月发布",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        }
+      ],
+      "entityIds": [
+        "EN-8d57f84bd1847b24"
+      ],
+      "entityNames": [
+        "Robot Phone"
+      ],
+      "productName": "Robot Phone",
+      "products": [
+        {
+          "name": "Robot Phone",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/978/462.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-345c8a2cc00fe8ca",
+      "dataDate": "2026-07-19",
+      "date": "2026-07-18",
+      "updatedDate": "2026-07-19",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "eventGroup": "AI 硬件",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "中兴发布\"中兴星仔\"人形机器人：1.6米高、自重30余千克，为同规格最轻",
+      "originalTitle": "",
+      "subject": "中兴",
+      "action": "发布\"中兴星仔\"人形机器人",
+      "object": "：1.6米高、自重30余千克，为同规格最轻",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        }
+      ],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "robot",
+            "dimensionName": "产品形态",
+            "name": "机器人"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "robotics_automation",
+            "dimensionName": "应用场景",
+            "name": "机器人与物理自动化"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "robot",
+          "dimensionName": "产品形态",
+          "name": "机器人"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "robot",
+          "dimensionName": "产品形态",
+          "name": "机器人"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        }
+      ],
+      "entityIds": [
+        "EN-4dbe391b8fcf977a",
+        "EN-0e6e48aba1669631"
+      ],
+      "entityNames": [
+        "ZTE",
+        "中兴"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/978/521.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-82b39e10391d0f3c",
+      "dataDate": "2026-07-19",
+      "date": "2026-07-18",
+      "updatedDate": "2026-07-19",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "蔚来神玑首次独立参展世界人工智能大会，NX9031X 等芯片亮相",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "蔚来神玑首次独立参展世界人工智能大会，NX9031X 等芯片亮相",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        }
+      ],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "enterprise_platform",
+            "dimensionName": "产品形态",
+            "name": "企业 AI 平台"
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "enterprise_platform",
+          "dimensionName": "产品形态",
+          "name": "企业 AI 平台"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "enterprise_platform",
+          "dimensionName": "产品形态",
+          "name": "企业 AI 平台"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        }
+      ],
+      "entityIds": [
+        "EN-e9b67bdfb6ae6a2e",
+        "EN-985e1a7c957148f9"
+      ],
+      "entityNames": [
+        "NIO",
+        "Shenji"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/978/524.htm",
+      "publisher": "IT之家（RSS）"
     },
     {
       "id": "EV-6b51b1b6fe22c540",
@@ -1807,7 +2107,6 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
-        "EV-0d5a32aca724d30e",
         "EV-a255cfc0dab44564",
         "EV-98a80b75b27d9f3b",
         "EV-29e069ac093f0e34",
@@ -1908,6 +2207,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-technology",
         "TX-technology-agentic_execution",
         "TX-industry-financial_services",
         "TX-use_case-enterprise_operations",
@@ -1916,15 +2216,12 @@
         "TX-technology-code_generation",
         "TX-use_case-robotics_automation",
         "TX-use_case-software_development",
-        "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-use_case-cybersecurity",
         "TX-technology-on_device",
-        "TX-industry-technology",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-embodied_ai",
         "TX-technology-fine_tuning",
-        "TX-technology-open_weights",
         "TX-technology-multimodal",
         "TX-industry-media_entertainment",
         "TX-technology-video_generation",
@@ -1970,6 +2267,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-e3792591090281c6",
         "EV-8b7cbb66a33a945d",
         "EV-4eaf3aabecae6016",
         "EV-87432dbb99cd6033",
@@ -1997,6 +2295,7 @@
         "EV-79c3f4f7cb2f2c86",
         "EV-7263caa45bbf168e",
         "EV-234ad54940674bf6",
+        "EV-e4fec8a00b416d12",
         "EV-8c526681b74e2762",
         "EV-5b16886442234f81",
         "EV-80f4e7972384ace8",
@@ -2007,6 +2306,8 @@
         "EV-4faa2bcf2e42e60c",
         "EV-9ee3c0ec243b6129",
         "EV-58c1cc3749294649",
+        "EV-0d5a32aca724d30e",
+        "EV-118317b7f92e5e16",
         "EV-950237c6b3eb6343",
         "EV-29e069ac093f0e34",
         "EV-6b51b1b6fe22c540",
@@ -2061,6 +2362,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-technology",
         "TX-technology-agentic_execution",
         "TX-use_case-enterprise_operations",
         "TX-industry-manufacturing",
@@ -2072,7 +2374,6 @@
         "TX-technology-mixture_of_experts",
         "TX-use_case-cybersecurity",
         "TX-technology-on_device",
-        "TX-industry-technology",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-embodied_ai",
         "TX-technology-fine_tuning",
@@ -2111,7 +2412,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-18"
+      "lastSeen": "2026-07-19"
     },
     {
       "id": "EN-59ae856cd788d0f5",
@@ -2152,6 +2453,7 @@
       ],
       "eventIds": [
         "EV-cafe435ddd007821",
+        "EV-e4fec8a00b416d12",
         "EV-8c526681b74e2762",
         "EV-6b51b1b6fe22c540"
       ],
@@ -2169,7 +2471,7 @@
         "EN-8d4321d936320802"
       ],
       "firstSeen": "2026-07-16",
-      "lastSeen": "2026-07-18"
+      "lastSeen": "2026-07-19"
     },
     {
       "id": "EN-80d387ccb3289295",
@@ -2259,6 +2561,7 @@
         "EV-8e01849c05b50355",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-eb97c388b3197c06",
         "EV-83a8ac8a2554b60c",
         "EV-0d5a32aca724d30e",
         "EV-debecca007e547d2",
@@ -2404,6 +2707,7 @@
         "EV-773ffcc6e1df56fa",
         "EV-2923b35d936d9f4e",
         "EV-cf496e0f8a56ca97",
+        "EV-94e1f1a5cea15eae",
         "EV-0990915063eb75a0",
         "EV-36a9b1b961f8e3b2",
         "EV-2d56dec8dfeb2b56",
@@ -2455,7 +2759,6 @@
         "TX-technology-fine_tuning",
         "TX-technology-open_weights",
         "TX-technology-model_context_protocol",
-        "TX-technology-multimodal",
         "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
         "TX-industry-government_public_sector",
@@ -2581,6 +2884,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-e3792591090281c6",
         "EV-f6a72cddbda748b3",
         "EV-4eaf3aabecae6016",
         "EV-2dff32c1b6f813e4",
@@ -2633,7 +2937,9 @@
         "EV-c5643983538c6513",
         "EV-b85139b8fba1a5c5",
         "EV-c4303801ea8c54dc",
+        "EV-0b7f11c0c18b8bf4",
         "EV-8b0f056571d68269",
+        "EV-30ba1a24f74ccc6d",
         "EV-b4eb99a878be9bb2",
         "EV-de1816770e8a2037",
         "EV-cfb7c4b4b765f53b",
@@ -2711,6 +3017,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-technology",
         "TX-technology-agentic_execution",
         "TX-industry-financial_services",
         "TX-use_case-enterprise_operations",
@@ -2726,7 +3033,6 @@
         "TX-use_case-cybersecurity",
         "TX-use_case-data_analysis",
         "TX-technology-on_device",
-        "TX-industry-technology",
         "TX-technology-embodied_ai",
         "TX-technology-fine_tuning",
         "TX-technology-open_weights",
@@ -2745,7 +3051,130 @@
         "EN-c70eca6b0f88f44d"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-18"
+      "lastSeen": "2026-07-19"
+    },
+    {
+      "id": "EN-8d57f84bd1847b24",
+      "name": "Robot Phone",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-25933b8f123f92be",
+        "EV-c844ddabb8528896"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-use_case-robotics_automation",
+        "TX-technology-embodied_ai"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-18",
+      "lastSeen": "2026-07-19"
+    },
+    {
+      "id": "EN-4dbe391b8fcf977a",
+      "name": "ZTE",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "中兴"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-4b8064b1139e1724",
+        "EV-434dcf1813a84ead",
+        "EV-345c8a2cc00fe8ca",
+        "EV-7256017056b81bbe"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-retail_ecommerce",
+        "TX-use_case-robotics_automation",
+        "TX-technology-embodied_ai"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-03",
+      "lastSeen": "2026-07-19"
+    },
+    {
+      "id": "EN-0e6e48aba1669631",
+      "name": "中兴",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-345c8a2cc00fe8ca"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-robotics_automation",
+        "TX-technology-embodied_ai"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-18",
+      "lastSeen": "2026-07-19"
+    },
+    {
+      "id": "EN-e9b67bdfb6ae6a2e",
+      "name": "NIO",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "蔚来"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-82b39e10391d0f3c"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-embodied_ai"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-18",
+      "lastSeen": "2026-07-19"
+    },
+    {
+      "id": "EN-985e1a7c957148f9",
+      "name": "Shenji",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "神玑公司"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-82b39e10391d0f3c"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-embodied_ai"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-18",
+      "lastSeen": "2026-07-19"
     },
     {
       "id": "EN-e3b1bf3dab957ffe",
@@ -2898,8 +3327,7 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "阿里",
-        "阿里巴巴"
+        "阿里"
       ],
       "verificationStatus": "verified",
       "datasetScopes": [
@@ -2910,6 +3338,8 @@
         "EV-3d93d1da8cb64462",
         "EV-53f08daddd011dbb",
         "EV-e1a4bc40db4a9d8f",
+        "EV-215f938a46d0b126",
+        "EV-ac1b82f6e6261012",
         "EV-6fbbbfcdcec81df4",
         "EV-82e68f59d8584e4e",
         "EV-fd8ecce5de2f667d",
@@ -2954,12 +3384,13 @@
         "TX-technology-computer_use"
       ],
       "relatedEntityIds": [
+        "EN-5398729239788ca5",
         "EN-22a4c686e665e299",
         "EN-2daac3672aeafcbd",
         "EN-d65d81c60c0c47c4"
       ],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-07-18"
+      "lastSeen": "2026-07-19"
     },
     {
       "id": "EN-67f2d22514622d1b",
@@ -3157,6 +3588,7 @@
         "EV-3fbfb89a10efd42f",
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
+        "EV-3c4d6d70ac763885",
         "EV-83a8ac8a2554b60c",
         "EV-a68475d82ec939b5",
         "EV-c237f5dc53f0a923",
@@ -3302,6 +3734,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-technology",
         "TX-technology-agentic_execution",
         "TX-industry-financial_services",
         "TX-use_case-enterprise_operations",
@@ -3317,7 +3750,6 @@
         "TX-technology-mixture_of_experts",
         "TX-use_case-cybersecurity",
         "TX-use_case-data_analysis",
-        "TX-industry-technology",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-embodied_ai",
         "TX-technology-fine_tuning",
@@ -3355,7 +3787,7 @@
         "EN-b9db1ff13ae8496e",
         "EN-7b8cb35de7ad047a"
       ],
-      "firstSeen": "2026-03-13",
+      "firstSeen": "2026-02-19",
       "lastSeen": "2026-07-19"
     },
     {
@@ -3481,6 +3913,41 @@
     }
   ],
   "hardware": [
+    {
+      "id": "HW-155f566cfd988f5e",
+      "eventId": "EV-345c8a2cc00fe8ca",
+      "dataDate": "2026-07-19",
+      "date": "2026-07-18",
+      "title": "中兴发布\"中兴星仔\"人形机器人：1.6米高、自重30余千克，为同规格最轻",
+      "hardwareType": "robot",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "未披露",
+      "supplier": "未披露",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/978/521.htm",
+      "sourceName": "IT之家（RSS）",
+      "sourceDate": "2026-07-18",
+      "entityIds": [
+        "EN-4dbe391b8fcf977a",
+        "EN-0e6e48aba1669631"
+      ]
+    },
     {
       "id": "HW-ceb55d9bc637c1d3",
       "eventId": "EV-cafe435ddd007821",

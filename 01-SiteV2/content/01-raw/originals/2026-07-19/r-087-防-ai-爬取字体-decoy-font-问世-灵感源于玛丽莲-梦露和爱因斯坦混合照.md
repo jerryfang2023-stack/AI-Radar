@@ -1,0 +1,211 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-087
+title: "防 AI 爬取字体 Decoy Font 问世，灵感源于玛丽莲·梦露和爱因斯坦混合照"
+title_zh: "防 AI 爬取字体 Decoy Font 问世，灵感源于玛丽莲·梦露和爱因斯坦混合照"
+title_translation_status: not_required
+title_translation_method: source_title
+title_translation_model: not_applicable
+original_url: "https://www.ithome.com/0/978/461.htm"
+canonical_url: "https://ithome.com/0/978/461.htm"
+source_name: "IT之家（RSS）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-18T06:29:42.000Z"
+collected_at: 2026-07-19T05:46:00.193Z
+language: mixed
+full_text_hash: 6ac47ed2da1d1bf4
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-19/r-087-防-ai-爬取字体-decoy-font-问世-灵感源于玛丽莲-梦露和爱因斯坦混合照.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-19/r-087-防-ai-爬取字体-decoy-font-问世-灵感源于玛丽莲-梦露和爱因斯坦混合照.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: low
+extraction_method: "content-container"
+readability_score: 37
+extractor_diagnostics: {"readability_score":37,"text_length":550,"paragraph_count":6,"sentence_count":5,"boilerplate_hits":1,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 550
+fetch_error: ""
+evidence_strength: source_backed_event
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["insufficient_usable_evidence_object"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"6ac47ed2da1d1bf4","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"防 AI 爬取字体 Decoy Font 问世，灵感源于玛丽莲·梦露和爱因斯坦混合照","discovery_summary":"Mixfont 于 7 月 15 日推出 TTF 格式的 Decoy Font 字体，通过叠加两层不同空间频率信息，让 AI 无法正确读取文字。该字体基于混合图像技术，将真实字母隐藏在诱饵字母之后，利用 AI 依赖近距离像素信息而人眼在稍远距离更易识别隐藏信息的差异，防止文字被 AI 爬取。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/978/461.htm","discovered_at":"2026-07-19T05:36:58.964Z","rank_on_page":181,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: aa51fc380115390f
+content_hash: 6ac47ed2da1d1bf4
+semantic_hash: e2822a27726fed55
+duplicate_of: ""
+first_seen_at: "2026-07-18T06:29:42.000Z"
+last_seen_at: 2026-07-19T05:46:00.193Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":false,"business_change":false,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":4,"importance_reason":"new product or service; rubric=4 concrete important change","supporting_signals":[],"novelty":3,"evidence_strength":3,"case_richness":3,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["IT之家（RSS）"],"products":[],"people":[],"industries":[],"roles":["开发者 / 工程团队"],"workflows":[],"business_actions":["发布 / 推出"],"affected_departments":["IT / 安全"],"numbers":["7","15","18","2"],"quotes":[]}
+evidence_seed: {"company_actions":["Mixfont 于 7 月 15 日推出 TTF 格式的 Decoy Font 字体，通过叠加两层不同空间频率信息，让 AI 无法正确读取文字。该字体基于混合图像技术，将真实字母隐藏在诱饵字母之后，利用 AI 依赖近距离像素信息而人眼在稍远距离更易识别隐藏信息的差异，防止文字被 AI 爬取。","IT之家 7 月 18 日消息，Mixfont 于 7 月 15 日发布博文， 宣布推出 TTF 格式的 Decoy Font 字体，通过叠加 2 层不同空间频率信息，让 AI 无法正确读取文字。","用户安装后，能够像普通字体一样输入和排版文本。"],"case_details":[],"workflow_changes":["TTF（TrueType 字体）格式是一种常见的可安装数字字体文件格式，可在操作系统、设计软件、办公软件和网页相关流程中调用。"],"before_after_clues":[],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例","没有变化前后流程线索"]
+key_excerpts: [{"type":"product_update","text":"Mixfont 于 7 月 15 日推出 TTF 格式的 Decoy Font 字体，通过叠加两层不同空间频率信息，让 AI 无法正确读取文字。该字体基于混合图像技术，将真实字母隐藏在诱饵字母之后，利用 AI 依赖近距离像素信息而人眼在稍远距离更易识别隐藏信息的差异，防止文字被 AI 爬取。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"IT之家 7 月 18 日消息，Mixfont 于 7 月 15 日发布博文， 宣布推出 TTF 格式的 Decoy Font 字体，通过叠加 2 层不同空间频率信息，让 AI 无法正确读取文字。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"},{"type":"workflow_change","text":"TTF（TrueType 字体）格式是一种常见的可安装数字字体文件格式，可在操作系统、设计软件、办公软件和网页相关流程中调用。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"用户安装后，能够像普通字体一样输入和排版文本。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Decoy Font 字体基于混合图像（hybrid images）技术构建，该技术其中最著名的例子，是将阿尔伯特 · 爱因斯坦和玛丽莲 · 梦露的图像混合在一起。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Decoy Font 基于相同理念打造，主要防止用户的文字内容被 AI 爬取。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-19T05:46:00.193Z
+theme: outside-core-exploration
+keyword_group: outside-core-exploration
+copyright_note: local research archive only
+---
+
+# 防 AI 爬取字体 Decoy Font 问世，灵感源于玛丽莲·梦露和爱因斯坦混合照
+
+## clean_text
+
+IT之家 7 月 18 日消息，Mixfont 于 7 月 15 日发布博文， 宣布推出 TTF 格式的 Decoy Font 字体，通过叠加 2 层不同空间频率信息，让 AI 无法正确读取文字。
+TTF（TrueType 字体）格式是一种常见的可安装数字字体文件格式，可在操作系统、设计软件、办公软件和网页相关流程中调用。用户安装后，能够像普通字体一样输入和排版文本。
+Decoy Font 字体基于混合图像（hybrid images）技术构建，该技术其中最著名的例子，是将阿尔伯特 · 爱因斯坦和玛丽莲 · 梦露的图像混合在一起。Decoy Font 基于相同理念打造，主要防止用户的文字内容被 AI 爬取。
+Mixfont 称，多数 AI 系统读取图像文本时，主要依赖近距离像素信息，因此在输入图像进入大语言模型后，模型更容易优先读取轮廓更清晰的前景文字；而人在稍远距离观察时，更容易识别实际隐藏信息。
+该公司工程师 Eric Lu 表示，每个真实的字母都隐藏在一个诱饵字母后面，这样 AI 就很难读出真正的消息。IT之家附上相关截图如下：
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## full_text
+
+IT之家 7 月 18 日消息，Mixfont 于 7 月 15 日发布博文， 宣布推出 TTF 格式的 Decoy Font 字体，通过叠加 2 层不同空间频率信息，让 AI 无法正确读取文字。
+TTF（TrueType 字体）格式是一种常见的可安装数字字体文件格式，可在操作系统、设计软件、办公软件和网页相关流程中调用。用户安装后，能够像普通字体一样输入和排版文本。
+Decoy Font 字体基于混合图像（hybrid images）技术构建，该技术其中最著名的例子，是将阿尔伯特 · 爱因斯坦和玛丽莲 · 梦露的图像混合在一起。Decoy Font 基于相同理念打造，主要防止用户的文字内容被 AI 爬取。
+Mixfont 称，多数 AI 系统读取图像文本时，主要依赖近距离像素信息，因此在输入图像进入大语言模型后，模型更容易优先读取轮廓更清晰的前景文字；而人在稍远距离观察时，更容易识别实际隐藏信息。
+该公司工程师 Eric Lu 表示，每个真实的字母都隐藏在一个诱饵字母后面，这样 AI 就很难读出真正的消息。IT之家附上相关截图如下：
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 37
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: low
+- diagnostics: {"readability_score":37,"text_length":550,"paragraph_count":6,"sentence_count":5,"boilerplate_hits":1,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **product_update**｜supports=signal_card_candidate, relationship_graph_input, business_change｜importance=high｜confidence=medium
+   Mixfont 于 7 月 15 日推出 TTF 格式的 Decoy Font 字体，通过叠加两层不同空间频率信息，让 AI 无法正确读取文字。该字体基于混合图像技术，将真实字母隐藏在诱饵字母之后，利用 AI 依赖近距离像素信息而人眼在稍远距离更易识别隐藏信息的差异，防止文字被 AI 爬取。
+
+2. **product_update**｜supports=signal_card_candidate, relationship_graph_input, business_change｜importance=high｜confidence=medium
+   IT之家 7 月 18 日消息，Mixfont 于 7 月 15 日发布博文， 宣布推出 TTF 格式的 Decoy Font 字体，通过叠加 2 层不同空间频率信息，让 AI 无法正确读取文字。
+
+3. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   TTF（TrueType 字体）格式是一种常见的可安装数字字体文件格式，可在操作系统、设计软件、办公软件和网页相关流程中调用。
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   用户安装后，能够像普通字体一样输入和排版文本。
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   Decoy Font 字体基于混合图像（hybrid images）技术构建，该技术其中最著名的例子，是将阿尔伯特 · 爱因斯坦和玛丽莲 · 梦露的图像混合在一起。
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   Decoy Font 基于相同理念打造，主要防止用户的文字内容被 AI 爬取。
+
+## business_elements
+
+- companies: IT之家（RSS）
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 暂无公开信息
+- roles: 开发者 / 工程团队
+- workflows: 暂无公开信息
+- business_actions: 发布 / 推出
+- affected_departments: IT / 安全
+- numbers: 7, 15, 18, 2
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: Mixfont 于 7 月 15 日推出 TTF 格式的 Decoy Font 字体，通过叠加两层不同空间频率信息，让 AI 无法正确读取文字。该字体基于混合图像技术，将真实字母隐藏在诱饵字母之后，利用 AI 依赖近距离像素信息而人眼在稍远距离更易识别隐藏信息的差异，防止文字被 AI 爬取。 / IT之家 7 月 18 日消息，Mixfont 于 7 月 15 日发布博文， 宣布推出 TTF 格式的 Decoy Font 字体，通过叠加 2 层不同空间频率信息，让 AI 无法正确读取文字。 / 用户安装后，能够像普通字体一样输入和排版文本。
+- case_details: 暂无公开信息
+- workflow_changes: TTF（TrueType 字体）格式是一种常见的可安装数字字体文件格式，可在操作系统、设计软件、办公软件和网页相关流程中调用。
+- before_after_clues: 暂无公开信息
+- affected_roles: 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 4
+- importance_reason: new product or service; rubric=4 concrete important change
+- supporting_signals: 
+- novelty: 3
+- evidence_strength: 3
+- case_richness: 3
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- business_change: false
+- relationship_graph_input: false
+- trend_candidate_context: false
+- signal_card_candidate: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+- 没有变化前后流程线索
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"防 AI 爬取字体 Decoy Font 问世，灵感源于玛丽莲·梦露和爱因斯坦混合照","discovery_summary":"Mixfont 于 7 月 15 日推出 TTF 格式的 Decoy Font 字体，通过叠加两层不同空间频率信息，让 AI 无法正确读取文字。该字体基于混合图像技术，将真实字母隐藏在诱饵字母之后，利用 AI 依赖近距离像素信息而人眼在稍远距离更易识别隐藏信息的差异，防止文字被 AI 爬取。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/978/461.htm","discovered_at":"2026-07-19T05:36:58.964Z","rank_on_page":181,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+Mixfont 于 7 月 15 日推出 TTF 格式的 Decoy Font 字体，通过叠加两层不同空间频率信息，让 AI 无法正确读取文字。该字体基于混合图像技术，将真实字母隐藏在诱饵字母之后，利用 AI 依赖近距离像素信息而人眼在稍远距离更易识别隐藏信息的差异，防止文字被 AI 爬取。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

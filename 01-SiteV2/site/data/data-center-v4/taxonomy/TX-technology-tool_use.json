@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-18T06:46:16.044Z",
-    "latestDataDate": "2026-07-18",
-    "currentDate": "2026-07-18",
-    "eventCount": 1250,
-    "quarantinedEventCount": 11
+    "generatedAt": "2026-07-19T06:40:36.822Z",
+    "latestDataDate": "2026-07-19",
+    "currentDate": "2026-07-19",
+    "eventCount": 1286,
+    "quarantinedEventCount": 12
   },
   "node": {
     "id": "TX-technology-tool_use",
@@ -19,6 +19,8 @@
     "eventIds": [
       "EV-baa76a4f03b84980",
       "EV-97fdf068afbbe555",
+      "EV-19bcfc6d7c1612cb",
+      "EV-0a9617a5118564db",
       "EV-a8a8f26c5128d894",
       "EV-29e069ac093f0e34",
       "EV-653cbce2ccc79f8b",
@@ -34,6 +36,11 @@
       "EN-7f90f96bd6306bff",
       "EN-d8cb1acd1b39854a",
       "EN-5388bc10736a0eff",
+      "EN-2abf8289b2f2113f",
+      "EN-91901356a63794df",
+      "EN-81baf57e05f11276",
+      "EN-c0e7614761147db1",
+      "EN-e9dd8f4bd697492b",
       "EN-c70eca6b0f88f44d",
       "EN-3a9b395103419892",
       "EN-bbdefa2950f49882",
@@ -64,7 +71,7 @@
     "fdeIds": [],
     "hardwareIds": [],
     "firstSeen": "2026-05-25",
-    "lastSeen": "2026-07-17"
+    "lastSeen": "2026-07-19"
   },
   "events": [
     {
@@ -209,6 +216,209 @@
       "productName": "",
       "products": [],
       "sourceUrl": "https://ithome.com/0/963/725.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-19bcfc6d7c1612cb",
+      "dataDate": "2026-07-19",
+      "date": "2026-07-19",
+      "updatedDate": "2026-07-19",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "蚂蚁数科发布商业智能体超级工厂核心平台 Agentar2.0",
+      "originalTitle": "",
+      "subject": "蚂蚁数科",
+      "action": "发布",
+      "object": "商业智能体超级工厂核心平台 Agentar2.0",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "tool_use",
+          "name": "工具调用"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "data_analysis",
+            "dimensionName": "应用场景",
+            "name": "数据分析"
+          }
+        ],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "manufacturing",
+            "dimensionName": "行业",
+            "name": "制造业"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "tool_use",
+          "name": "工具调用"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "data_analysis",
+          "dimensionName": "应用场景",
+          "name": "数据分析"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "manufacturing",
+          "dimensionName": "行业",
+          "name": "制造业"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "data_analysis",
+          "dimensionName": "应用场景",
+          "name": "数据分析"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "tool_use",
+          "name": "工具调用"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "manufacturing",
+          "dimensionName": "行业",
+          "name": "制造业"
+        }
+      ],
+      "entityIds": [
+        "EN-2abf8289b2f2113f",
+        "EN-91901356a63794df"
+      ],
+      "entityNames": [
+        "蚂蚁数科",
+        "Agentar2.0"
+      ],
+      "productName": "Agentar2.0",
+      "products": [
+        {
+          "name": "Agentar2.0",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/978/684.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-0a9617a5118564db",
+      "dataDate": "2026-07-19",
+      "date": "2026-07-18",
+      "updatedDate": "2026-07-19",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "京东发布 JoyAI-Talker 实时语音交互模型与 JoyAI-Video-Edit 视频编辑模型",
+      "originalTitle": "",
+      "subject": "京东",
+      "action": "发布 JoyAI-Talker 实时语音交互模型",
+      "object": "与 JoyAI-Video-Edit 视频编辑模型",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "tool_use",
+          "name": "工具调用"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "tool_use",
+          "name": "工具调用"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "tool_use",
+          "name": "工具调用"
+        }
+      ],
+      "entityIds": [
+        "EN-81baf57e05f11276",
+        "EN-c0e7614761147db1",
+        "EN-e9dd8f4bd697492b"
+      ],
+      "entityNames": [
+        "京东",
+        "JoyAI-Video-Edit",
+        "JoyAI-Talker"
+      ],
+      "productName": "JoyAI-Video-Edit",
+      "products": [
+        {
+          "name": "JoyAI-Video-Edit",
+          "type": "模型",
+          "ownerNames": []
+        },
+        {
+          "name": "JoyAI-Talker",
+          "type": "模型",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/978/593.htm",
       "publisher": "IT之家（RSS）"
     },
     {
@@ -1439,6 +1649,130 @@
       "lastSeen": "2026-07-16"
     },
     {
+      "id": "EN-2abf8289b2f2113f",
+      "name": "蚂蚁数科",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-19bcfc6d7c1612cb"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
+        "TX-use_case-data_analysis",
+        "TX-technology-tool_use"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-19",
+      "lastSeen": "2026-07-19"
+    },
+    {
+      "id": "EN-91901356a63794df",
+      "name": "Agentar2.0",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-19bcfc6d7c1612cb"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
+        "TX-use_case-data_analysis",
+        "TX-technology-tool_use"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-19",
+      "lastSeen": "2026-07-19"
+    },
+    {
+      "id": "EN-81baf57e05f11276",
+      "name": "京东",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-0a9617a5118564db",
+        "EV-a117a2f26a7705be",
+        "EV-cf306b007f5c321b"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-tool_use"
+      ],
+      "relatedEntityIds": [
+        "EN-602764d290139e8f",
+        "EN-e9dd8f4bd697492b",
+        "EN-c0e7614761147db1",
+        "EN-a759ee8f6d212de8",
+        "EN-6c959f6391a7ce86"
+      ],
+      "firstSeen": "2026-06-11",
+      "lastSeen": "2026-07-19"
+    },
+    {
+      "id": "EN-c0e7614761147db1",
+      "name": "JoyAI-Video-Edit",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-0a9617a5118564db"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-tool_use"
+      ],
+      "relatedEntityIds": [
+        "EN-81baf57e05f11276"
+      ],
+      "firstSeen": "2026-07-18",
+      "lastSeen": "2026-07-19"
+    },
+    {
+      "id": "EN-e9dd8f4bd697492b",
+      "name": "JoyAI-Talker",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-0a9617a5118564db"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-tool_use"
+      ],
+      "relatedEntityIds": [
+        "EN-81baf57e05f11276"
+      ],
+      "firstSeen": "2026-07-18",
+      "lastSeen": "2026-07-19"
+    },
+    {
       "id": "EN-c70eca6b0f88f44d",
       "name": "Anthropic",
       "entityType": "organization_candidate",
@@ -1495,6 +1829,7 @@
         "EV-8e01849c05b50355",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-eb97c388b3197c06",
         "EV-83a8ac8a2554b60c",
         "EV-0d5a32aca724d30e",
         "EV-debecca007e547d2",
@@ -1640,6 +1975,7 @@
         "EV-773ffcc6e1df56fa",
         "EV-2923b35d936d9f4e",
         "EV-cf496e0f8a56ca97",
+        "EV-94e1f1a5cea15eae",
         "EV-0990915063eb75a0",
         "EV-36a9b1b961f8e3b2",
         "EV-2d56dec8dfeb2b56",
@@ -1691,7 +2027,6 @@
         "TX-technology-fine_tuning",
         "TX-technology-open_weights",
         "TX-technology-model_context_protocol",
-        "TX-technology-multimodal",
         "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
         "TX-industry-government_public_sector",
@@ -1783,7 +2118,6 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
-        "EV-0d5a32aca724d30e",
         "EV-a255cfc0dab44564",
         "EV-98a80b75b27d9f3b",
         "EV-29e069ac093f0e34",
@@ -1884,6 +2218,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-technology",
         "TX-technology-agentic_execution",
         "TX-industry-financial_services",
         "TX-use_case-enterprise_operations",
@@ -1892,15 +2227,12 @@
         "TX-technology-code_generation",
         "TX-use_case-robotics_automation",
         "TX-use_case-software_development",
-        "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-use_case-cybersecurity",
         "TX-technology-on_device",
-        "TX-industry-technology",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-embodied_ai",
         "TX-technology-fine_tuning",
-        "TX-technology-open_weights",
         "TX-technology-multimodal",
         "TX-industry-media_entertainment",
         "TX-technology-video_generation",
@@ -1946,6 +2278,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-e3792591090281c6",
         "EV-8b7cbb66a33a945d",
         "EV-4eaf3aabecae6016",
         "EV-87432dbb99cd6033",
@@ -1973,6 +2306,7 @@
         "EV-79c3f4f7cb2f2c86",
         "EV-7263caa45bbf168e",
         "EV-234ad54940674bf6",
+        "EV-e4fec8a00b416d12",
         "EV-8c526681b74e2762",
         "EV-5b16886442234f81",
         "EV-80f4e7972384ace8",
@@ -1983,6 +2317,8 @@
         "EV-4faa2bcf2e42e60c",
         "EV-9ee3c0ec243b6129",
         "EV-58c1cc3749294649",
+        "EV-0d5a32aca724d30e",
+        "EV-118317b7f92e5e16",
         "EV-950237c6b3eb6343",
         "EV-29e069ac093f0e34",
         "EV-6b51b1b6fe22c540",
@@ -2037,6 +2373,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-technology",
         "TX-technology-agentic_execution",
         "TX-use_case-enterprise_operations",
         "TX-industry-manufacturing",
@@ -2048,7 +2385,6 @@
         "TX-technology-mixture_of_experts",
         "TX-use_case-cybersecurity",
         "TX-technology-on_device",
-        "TX-industry-technology",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-embodied_ai",
         "TX-technology-fine_tuning",
@@ -2087,7 +2423,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-18"
+      "lastSeen": "2026-07-19"
     },
     {
       "id": "EN-085598c00f2aaccf",
@@ -2328,6 +2664,7 @@
       ],
       "relatedEntityIds": [
         "EN-e3863f813fe47240",
+        "EN-9c8ae69b84f21a2e",
         "EN-d85ad5e8ff8e2889",
         "EN-a2fa009495c3bb3a",
         "EN-2ba325ce6f8e3dc9",
@@ -2425,6 +2762,7 @@
         "EV-3fbfb89a10efd42f",
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
+        "EV-3c4d6d70ac763885",
         "EV-83a8ac8a2554b60c",
         "EV-a68475d82ec939b5",
         "EV-c237f5dc53f0a923",
@@ -2570,6 +2908,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-technology",
         "TX-technology-agentic_execution",
         "TX-industry-financial_services",
         "TX-use_case-enterprise_operations",
@@ -2585,7 +2924,6 @@
         "TX-technology-mixture_of_experts",
         "TX-use_case-cybersecurity",
         "TX-use_case-data_analysis",
-        "TX-industry-technology",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-embodied_ai",
         "TX-technology-fine_tuning",
@@ -2623,7 +2961,7 @@
         "EN-b9db1ff13ae8496e",
         "EN-7b8cb35de7ad047a"
       ],
-      "firstSeen": "2026-03-13",
+      "firstSeen": "2026-02-19",
       "lastSeen": "2026-07-19"
     },
     {
@@ -2637,6 +2975,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-e3792591090281c6",
         "EV-f6a72cddbda748b3",
         "EV-4eaf3aabecae6016",
         "EV-2dff32c1b6f813e4",
@@ -2689,7 +3028,9 @@
         "EV-c5643983538c6513",
         "EV-b85139b8fba1a5c5",
         "EV-c4303801ea8c54dc",
+        "EV-0b7f11c0c18b8bf4",
         "EV-8b0f056571d68269",
+        "EV-30ba1a24f74ccc6d",
         "EV-b4eb99a878be9bb2",
         "EV-de1816770e8a2037",
         "EV-cfb7c4b4b765f53b",
@@ -2767,6 +3108,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-technology",
         "TX-technology-agentic_execution",
         "TX-industry-financial_services",
         "TX-use_case-enterprise_operations",
@@ -2782,7 +3124,6 @@
         "TX-use_case-cybersecurity",
         "TX-use_case-data_analysis",
         "TX-technology-on_device",
-        "TX-industry-technology",
         "TX-technology-embodied_ai",
         "TX-technology-fine_tuning",
         "TX-technology-open_weights",
@@ -2801,7 +3142,7 @@
         "EN-c70eca6b0f88f44d"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-18"
+      "lastSeen": "2026-07-19"
     },
     {
       "id": "EN-52fc33ae4d101a5d",
@@ -2952,6 +3293,7 @@
         "EV-d116b0aa5bb292e2",
         "EV-e857f9d1c1478c70",
         "EV-fd21441fb6e143c3",
+        "EV-118317b7f92e5e16",
         "EV-c237f5dc53f0a923",
         "EV-3a74e4995b590507",
         "EV-8a9b12665a3e40a0",
@@ -3044,7 +3386,7 @@
         "EN-40e307d789f77264"
       ],
       "firstSeen": "2026-06-04",
-      "lastSeen": "2026-07-18"
+      "lastSeen": "2026-07-19"
     },
     {
       "id": "EN-41dcc2d4951f337b",
@@ -3128,6 +3470,7 @@
         "EV-31df816db86db282",
         "EV-e15ae1112294d59e",
         "EV-43301de739fe560e",
+        "EV-2351415291cb9fcd",
         "EV-e7b7df43970f7e2c",
         "EV-377094da492a03d2",
         "EV-ae736eb124d7163a",
@@ -3153,10 +3496,11 @@
         "TX-technology-tool_use"
       ],
       "relatedEntityIds": [
+        "EN-bac541b589c8a0d1",
         "EN-c4bc2d00a42f220f"
       ],
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-07-19"
     },
     {
       "id": "EN-630dc133336bc266",
