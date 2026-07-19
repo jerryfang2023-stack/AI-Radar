@@ -9,6 +9,14 @@ const data = buildTrendRadarData(root);
 const page = fs.readFileSync(path.join(root, "01-SiteV2/site/trend-radar.html"), "utf8");
 const client = fs.readFileSync(path.join(root, "01-SiteV2/site/assets/trend-radar.js"), "utf8");
 const sharedStyles = fs.readFileSync(path.join(root, "01-SiteV2/site/assets/data-center-v4.css"), "utf8");
+const currentPages = [
+  "data-center.html",
+  "intelligence-map.html",
+  "opportunity-map.html",
+  "trend-radar.html",
+  "weekly-ai-business-change-radar.html",
+  "monthly-business-structure-2026-06.html",
+].map((file) => fs.readFileSync(path.join(root, "01-SiteV2/site", file), "utf8"));
 
 test("Trend Radar uses the current factual column contract", () => {
   assert.equal(data.meta.columnVersion, COLUMN_VERSION);
@@ -70,7 +78,7 @@ test("monthly comparisons use equal observed windows and new entities retain eve
 
 test("page is a V4 application page with factual period controls", () => {
   assert.match(page, /TRADAR-V1\.0\.0-factual-change-explorer/);
-  assert.match(page, /<h1>趋势雷达<\/h1>/);
+  assert.match(page, /<h1>变化雷达<\/h1>/);
   assert.match(page, /data-period="day"/);
   assert.match(page, /data-period="week"/);
   assert.match(page, /data-period="month"/);
@@ -81,4 +89,11 @@ test("page is a V4 application page with factual period controls", () => {
   assert.match(sharedStyles, /\.dc-skip-link:focus-visible/);
   assert.match(client, /data\/trend-radar-v1\.json/);
   assert.ok(Object.values(data.events).every((event) => event.detailUrl.startsWith("data-center.html?view=events")));
+});
+
+test("current V4 navigation consistently names the column 变化雷达", () => {
+  for (const currentPage of currentPages) {
+    assert.match(currentPage, /href="trend-radar\.html"[^>]*>变化雷达<\/a>/);
+    assert.doesNotMatch(currentPage, /href="trend-radar\.html"[^>]*>趋势雷达<\/a>/);
+  }
 });
