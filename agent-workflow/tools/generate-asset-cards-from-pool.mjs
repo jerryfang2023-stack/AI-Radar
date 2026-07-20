@@ -2221,7 +2221,7 @@ function sectionSourceIdentityIndicatesIndexOnly(section) {
     value(section, "evidence_object_type"),
     value(section, "degradation_reasons"),
   ].join(" ");
-  return /官网首页|产品目录|文档目录|README|包页|模型页|搜索结果|SEO|工具导航|目录页|首页|category page|directory|search result/iu.test(sourceIdentity);
+  return /官网首页|产品目录|文档目录|README|包页|模型页|搜索结果|SEO\s*(?:页面|落地页|目录|page|landing|directory)|工具导航|目录页|首页|category page|directory|search result/iu.test(sourceIdentity);
 }
 
 function signalEventClusterKey(spec, section) {
@@ -3561,7 +3561,11 @@ function signalCard(spec, section) {
       .filter((item) => ![sourceFact, valueSummary, spec.title].some((excludedItem) => isSameSourcePoint(item, excludedItem)));
     if (localizedOriginalPoints.length) originalPoints = [...new Set(localizedOriginalPoints)].slice(0, 4);
   }
-  if (cardDetailsTooSimilar(sourceFact, valueSummary) || cardDetailsTooSimilar(originalPoints.join(" "), valueSummary)) {
+  if (
+    cardDetailsTooSimilar(sourceFact, valueSummary)
+    || cardDetailsTooSimilar(originalPoints.join(" "), valueSummary)
+    || cardDetailsTooSimilar(sourceExcerpt, valueSummary)
+  ) {
     valueSummary = generatedCommercialValue(spec);
   }
   const evidenceBoundary = spec.evidenceBoundary || value(section, "missing_information") || "未记录额外缺失项。";
@@ -4018,6 +4022,17 @@ function runQualityRegressionFixtures() {
     sectionSourceIdentityIndicatesIndexOnly(articleWithNavigationFixture),
     false,
     "navigation words inside article evidence must not turn a dated article into an index page",
+  );
+  const seoAgentReleaseFixture = [
+    "## P-997｜百度秒哒 3.5 发布 SEO Agent",
+    "- source_url: https://www.ithome.com/0/978/693.htm",
+    "- source: IT之家（RSS）",
+    "- evidence_object_type: case_or_customer",
+  ].join("\n");
+  assert.equal(
+    sectionSourceIdentityIndicatesIndexOnly(seoAgentReleaseFixture),
+    false,
+    "SEO Agent product releases must not be mistaken for SEO directory pages",
   );
   assert.equal(
     sourcePointLooksPageChrome("投诉水文 我要纠错 下载IT之家APP，签到赚金币兑豪礼 相关文章 关键词：AI Apple 智能"),

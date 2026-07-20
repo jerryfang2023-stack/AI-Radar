@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-20T03:58:48.579Z",
+    "generatedAt": "2026-07-20T04:21:34.978Z",
     "latestDataDate": "2026-07-20",
     "currentDate": "2026-07-20",
     "eventCount": 1324,
@@ -105,7 +105,7 @@
       "EV-c4303801ea8c54dc",
       "EV-d5aa723446feebbb",
       "EV-23ae55daa341be06",
-      "EV-f70b73ad2b4b6aa9",
+      "EV-f0966bc867e1483e",
       "EV-da9bb2c98c1ce8cd",
       "EV-b726a9cda7beae64",
       "EV-4e5c6267b3237dac",
@@ -444,6 +444,7 @@
       "EN-950de6ef17ca48ae",
       "EN-c08f86842ff2c908",
       "EN-50e2a4156631df49",
+      "EN-48b85dc3fd54f74d",
       "EN-b81c8201acfc7639",
       "EN-5388bc10736a0eff",
       "EN-3a7bd3e2360a3d29",
@@ -7953,7 +7954,7 @@
       "publisher": "techcrunch.com"
     },
     {
-      "id": "EV-f70b73ad2b4b6aa9",
+      "id": "EV-f0966bc867e1483e",
       "dataDate": "2026-07-20",
       "date": "2026-07-19",
       "updatedDate": "2026-07-20",
@@ -7972,9 +7973,7 @@
         "210 颗"
       ],
       "locations": [],
-      "missingFields": [
-        "entities"
-      ],
+      "missingFields": [],
       "conflicts": [],
       "tags": [
         {
@@ -8007,8 +8006,12 @@
           "name": "智能体"
         }
       ],
-      "entityIds": [],
-      "entityNames": [],
+      "entityIds": [
+        "EN-48b85dc3fd54f74d"
+      ],
+      "entityNames": [
+        "深空矩阵"
+      ],
       "productName": "",
       "products": [],
       "sourceUrl": "https://ithome.com/0/978/806.htm",
@@ -32363,6 +32366,27 @@
       "relatedEntityIds": [],
       "firstSeen": "2025-08-01",
       "lastSeen": "2026-07-14"
+    },
+    {
+      "id": "EN-48b85dc3fd54f74d",
+      "name": "深空矩阵",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-f0966bc867e1483e"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-19",
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "EN-b81c8201acfc7639",
