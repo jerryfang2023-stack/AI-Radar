@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-19T06:40:36.822Z",
-    "latestDataDate": "2026-07-19",
-    "currentDate": "2026-07-19",
-    "eventCount": 1286,
+    "generatedAt": "2026-07-20T03:58:48.579Z",
+    "latestDataDate": "2026-07-20",
+    "currentDate": "2026-07-20",
+    "eventCount": 1324,
     "quarantinedEventCount": 12
   },
   "node": {
@@ -17,6 +17,7 @@
     "typeLabel": "技术",
     "valueId": "video_generation",
     "eventIds": [
+      "EV-a354af52772334fd",
       "EV-26d2874c6ce028d6",
       "EV-6fbbbfcdcec81df4",
       "EV-fd8ecce5de2f667d",
@@ -27,9 +28,10 @@
       "EV-887d47bb477e2142"
     ],
     "entityIds": [
+      "EN-d747d6f5125b6bee",
+      "EN-047364b9be67f665",
       "EN-b81c8201acfc7639",
       "EN-ec1c8f558ff61e34",
-      "EN-047364b9be67f665",
       "EN-d83624eb3ab9192e",
       "EN-2b6e51bec93e86c1",
       "EN-b0532e1af75cc4ab",
@@ -47,9 +49,73 @@
     "fdeIds": [],
     "hardwareIds": [],
     "firstSeen": "2026-06-16",
-    "lastSeen": "2026-07-18"
+    "lastSeen": "2026-07-20"
   },
   "events": [
+    {
+      "id": "EV-a354af52772334fd",
+      "dataDate": "2026-07-20",
+      "date": "2026-07-19",
+      "updatedDate": "2026-07-20",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "阿里云百炼上线 HappyOyster 1.0，一句话生成可互动 AI 数字世界",
+      "originalTitle": "",
+      "subject": "阿里云百炼",
+      "action": "上线",
+      "object": "HappyOyster 1.0，一句话生成可互动 AI 数字世界",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成"
+        }
+      ],
+      "entityIds": [
+        "EN-d747d6f5125b6bee",
+        "EN-047364b9be67f665"
+      ],
+      "entityNames": [
+        "阿里云百炼",
+        "Alibaba"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/978/729.htm",
+      "publisher": "IT之家（RSS）"
+    },
     {
       "id": "EV-26d2874c6ce028d6",
       "dataDate": "2026-06-23",
@@ -738,55 +804,8 @@
   ],
   "entities": [
     {
-      "id": "EN-b81c8201acfc7639",
-      "name": "Huawei",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [
-        "华为"
-      ],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-87432dbb99cd6033",
-        "EV-5be48cce8dc4f3de",
-        "EV-9563aa162529aab0",
-        "EV-b726a9cda7beae64",
-        "EV-a9810b47e0408a05",
-        "EV-afcd5426f5c01dc7",
-        "EV-26d2874c6ce028d6",
-        "EV-b93102125cc062e3",
-        "EV-6c361125c3f50bb6",
-        "EV-8a9b12665a3e40a0",
-        "EV-2d5746e41f96c3c2",
-        "EV-26c1248692fdcc10",
-        "EV-20cdbe59ba2a1359",
-        "EV-3c51bcb5e99d2b68",
-        "EV-2ce9542169b5dfda",
-        "EV-8e6f9c324aa0b2f3",
-        "EV-0597e07d7e73051a"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-technology-code_generation",
-        "TX-industry-healthcare_life_sciences",
-        "TX-use_case-software_development",
-        "TX-technology-on_device",
-        "TX-technology-multimodal",
-        "TX-industry-media_entertainment",
-        "TX-technology-video_generation",
-        "TX-use_case-knowledge_search"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-05-25",
-      "lastSeen": "2026-07-18"
-    },
-    {
-      "id": "EN-ec1c8f558ff61e34",
-      "name": "阿里通义实验室",
+      "id": "EN-d747d6f5125b6bee",
+      "name": "阿里云百炼",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [],
@@ -795,15 +814,15 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-6fbbbfcdcec81df4"
+        "EV-a354af52772334fd"
       ],
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-video_generation"
       ],
       "relatedEntityIds": [],
-      "firstSeen": "2026-07-17",
-      "lastSeen": "2026-07-18"
+      "firstSeen": "2026-07-19",
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "EN-047364b9be67f665",
@@ -811,6 +830,8 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
+        "阿里巴巴",
+        "Qwen",
         "阿里"
       ],
       "verificationStatus": "verified",
@@ -820,8 +841,14 @@
       "eventIds": [
         "EV-43b7f45e9bd7ec9b",
         "EV-3d93d1da8cb64462",
+        "EV-4740121f428e4bda",
+        "EV-a354af52772334fd",
+        "EV-c0f87b8c5208cd75",
         "EV-53f08daddd011dbb",
         "EV-e1a4bc40db4a9d8f",
+        "EV-2a833330267cb2df",
+        "EV-0d5a32aca724d30e",
+        "EV-d08935b06ed9e7bb",
         "EV-215f938a46d0b126",
         "EV-ac1b82f6e6261012",
         "EV-6fbbbfcdcec81df4",
@@ -862,19 +889,93 @@
         "TX-technology-on_device",
         "TX-technology-embodied_ai",
         "TX-technology-fine_tuning",
-        "TX-technology-multimodal",
+        "TX-technology-open_weights",
         "TX-technology-video_generation",
+        "TX-technology-multimodal",
         "TX-technology-quantization",
         "TX-technology-computer_use"
       ],
       "relatedEntityIds": [
+        "EN-10a27c6240d18dbe",
         "EN-5398729239788ca5",
         "EN-22a4c686e665e299",
         "EN-2daac3672aeafcbd",
         "EN-d65d81c60c0c47c4"
       ],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-07-19"
+      "lastSeen": "2026-07-20"
+    },
+    {
+      "id": "EN-b81c8201acfc7639",
+      "name": "Huawei",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "华为"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-87432dbb99cd6033",
+        "EV-5be48cce8dc4f3de",
+        "EV-9563aa162529aab0",
+        "EV-b726a9cda7beae64",
+        "EV-a9810b47e0408a05",
+        "EV-afcd5426f5c01dc7",
+        "EV-26d2874c6ce028d6",
+        "EV-b93102125cc062e3",
+        "EV-6c361125c3f50bb6",
+        "EV-b8bc579bfa5797a2",
+        "EV-8a9b12665a3e40a0",
+        "EV-2d5746e41f96c3c2",
+        "EV-26c1248692fdcc10",
+        "EV-20cdbe59ba2a1359",
+        "EV-3c51bcb5e99d2b68",
+        "EV-2ce9542169b5dfda",
+        "EV-8e6f9c324aa0b2f3",
+        "EV-0597e07d7e73051a"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-code_generation",
+        "TX-industry-healthcare_life_sciences",
+        "TX-use_case-software_development",
+        "TX-technology-on_device",
+        "TX-technology-video_generation",
+        "TX-technology-multimodal",
+        "TX-industry-media_entertainment",
+        "TX-use_case-knowledge_search"
+      ],
+      "relatedEntityIds": [
+        "EN-0c2f714483c404ad",
+        "EN-eec6044eb8e4941a"
+      ],
+      "firstSeen": "2026-05-25",
+      "lastSeen": "2026-07-20"
+    },
+    {
+      "id": "EN-ec1c8f558ff61e34",
+      "name": "阿里通义实验室",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-6fbbbfcdcec81df4"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-video_generation"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-18"
     },
     {
       "id": "EN-d83624eb3ab9192e",
@@ -942,9 +1043,9 @@
         "TX-technology-mixture_of_experts",
         "TX-technology-retrieval_augmented_generation",
         "TX-use_case-research_science",
+        "TX-technology-video_generation",
         "TX-technology-multimodal",
         "TX-industry-media_entertainment",
-        "TX-technology-video_generation",
         "TX-technology-image_generation",
         "TX-technology-speech_audio"
       ],
@@ -1017,8 +1118,8 @@
         "TX-technology-on_device",
         "TX-technology-fine_tuning",
         "TX-technology-open_weights",
-        "TX-technology-multimodal",
-        "TX-technology-video_generation"
+        "TX-technology-video_generation",
+        "TX-technology-multimodal"
       ],
       "relatedEntityIds": [
         "EN-3ccbd9105a45d8fc"
@@ -1046,8 +1147,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-industry-retail_ecommerce",
-        "TX-technology-multimodal",
         "TX-technology-video_generation",
+        "TX-technology-multimodal",
         "TX-technology-image_generation"
       ],
       "relatedEntityIds": [
@@ -1071,8 +1172,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-multimodal",
-        "TX-technology-video_generation"
+        "TX-technology-video_generation",
+        "TX-technology-multimodal"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-01",
@@ -1096,8 +1197,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-industry-retail_ecommerce",
-        "TX-technology-multimodal",
-        "TX-technology-video_generation"
+        "TX-technology-video_generation",
+        "TX-technology-multimodal"
       ],
       "relatedEntityIds": [
         "EN-bbdefa2950f49882"
@@ -1244,8 +1345,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-technology",
         "TX-technology-agentic_execution",
+        "TX-industry-technology",
         "TX-industry-financial_services",
         "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
@@ -1259,9 +1360,9 @@
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-embodied_ai",
         "TX-technology-fine_tuning",
+        "TX-technology-video_generation",
         "TX-technology-multimodal",
         "TX-industry-media_entertainment",
-        "TX-technology-video_generation",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
         "TX-use_case-content_creation",
@@ -1309,6 +1410,7 @@
         "EV-47a84a0f1a85c29c",
         "EV-6c361125c3f50bb6",
         "EV-533d2da98cce1ae0",
+        "EV-3b1d1dd87442e7f1",
         "EV-8a9b12665a3e40a0",
         "EV-ee363e679d12329c",
         "EV-ad2e4fe6a149d95d",
@@ -1329,13 +1431,13 @@
         "TX-technology-agentic_execution",
         "TX-industry-retail_ecommerce",
         "TX-technology-on_device",
-        "TX-industry-media_entertainment",
         "TX-technology-video_generation",
+        "TX-industry-media_entertainment",
         "TX-technology-tool_use"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-01",
-      "lastSeen": "2026-07-16"
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "EN-43a340bb75b45f02",

@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-19T06:40:36.822Z",
-    "latestDataDate": "2026-07-19",
-    "currentDate": "2026-07-19",
-    "eventCount": 1286,
+    "generatedAt": "2026-07-20T03:58:48.579Z",
+    "latestDataDate": "2026-07-20",
+    "currentDate": "2026-07-20",
+    "eventCount": 1324,
     "quarantinedEventCount": 12
   },
   "node": {
@@ -19,24 +19,31 @@
     "eventIds": [
       "EV-5f5f252c6a826599",
       "EV-b348083270be6c65",
+      "EV-0d5a32aca724d30e",
       "EV-19bcfc6d7c1612cb",
       "EV-daf1e21f8ccbf839",
       "EV-333851b077b606c8",
       "EV-c54172bf4e0c1068",
       "EV-e09bff5515b1896b",
-      "EV-fbdfb5888ad19663"
+      "EV-fbdfb5888ad19663",
+      "EV-e81f3b979f169cfa"
     ],
     "entityIds": [
       "EN-122c0bebae950c77",
       "EN-96eebba49dbbf422",
       "EN-1c5483264189feef",
+      "EN-339217758bfa736e",
+      "EN-047364b9be67f665",
+      "EN-b5251b35f15bedc4",
+      "EN-9f15bb7e29e191eb",
+      "EN-607964040e4b62e0",
+      "EN-10a27c6240d18dbe",
       "EN-2abf8289b2f2113f",
       "EN-91901356a63794df",
       "EN-a89151ba4b5ac0f2",
       "EN-f64f284f6c46b9b6",
       "EN-2e610cbc4b309296",
       "EN-33ea25778e18d372",
-      "EN-047364b9be67f665",
       "EN-09c344df70df9660",
       "EN-1725c58362aadc2a",
       "EN-e16fc821f34228d1",
@@ -45,14 +52,14 @@
       "EN-3a13916345b60fad",
       "EN-b59c577ed73536c6",
       "EN-729324072d368379",
-      "EN-9f15bb7e29e191eb",
       "EN-7d3194f79e645c42",
-      "EN-fc0586e76f80f181"
+      "EN-fc0586e76f80f181",
+      "EN-45d780f82c9247fc"
     ],
     "fdeIds": [],
     "hardwareIds": [],
     "firstSeen": "2026-06-07",
-    "lastSeen": "2026-07-19"
+    "lastSeen": "2026-07-20"
   },
   "events": [
     {
@@ -223,6 +230,159 @@
       "products": [],
       "sourceUrl": "https://globenewswire.com/news-release/2025/03/12/3041638/0/en/Onyx-Raises-10M-To-Help-Teams-Find-Knowledge-Faster-with-Open-Source-AI-Agents.html",
       "publisher": "globenewswire.com"
+    },
+    {
+      "id": "EV-0d5a32aca724d30e",
+      "dataDate": "2026-07-20",
+      "date": "2026-07-19",
+      "updatedDate": "2026-07-20",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "阿里巴巴的Qwen以开源权重模型Qwen 3.8对标Kimi K3，称该模型“仅次于Fable 5”",
+      "originalTitle": "Alibaba's Qwen takes on Kimi K3 with open-weight Qwen 3.8, says model is \"second only to Fable 5\"",
+      "subject": "Alibaba's Qwen takes on",
+      "action": "Kimi K3 with open-weight Qwen 3.8, says model",
+      "object": "is \"second only to Fable 5\"",
+      "metrics": [
+        "2.4 trillion",
+        "1 trillion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "data_analysis",
+            "dimensionName": "应用场景",
+            "name": "数据分析"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "data_analysis",
+          "dimensionName": "应用场景",
+          "name": "数据分析"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "data_analysis",
+          "dimensionName": "应用场景",
+          "name": "数据分析"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "entityIds": [
+        "EN-339217758bfa736e",
+        "EN-047364b9be67f665",
+        "EN-b5251b35f15bedc4",
+        "EN-9f15bb7e29e191eb",
+        "EN-607964040e4b62e0",
+        "EN-10a27c6240d18dbe"
+      ],
+      "entityNames": [
+        "Alibaba's Qwen takes on",
+        "Alibaba",
+        "Moonshot AI",
+        "Fable 5",
+        "Kimi K3",
+        "Qwen 3.8"
+      ],
+      "productName": "Fable 5",
+      "products": [
+        {
+          "name": "Fable 5",
+          "type": "模型",
+          "ownerNames": [
+            "Alibaba"
+          ]
+        },
+        {
+          "name": "Kimi K3",
+          "type": "模型",
+          "ownerNames": [
+            "Alibaba"
+          ]
+        },
+        {
+          "name": "Qwen 3.8",
+          "type": "模型",
+          "ownerNames": [
+            "Alibaba"
+          ]
+        }
+      ],
+      "sourceUrl": "https://the-decoder.com/alibabas-qwen-takes-on-kimi-k3-with-open-weight-qwen-3-8-says-model-is-second-only-to-fable-5",
+      "publisher": "The Decoder AI News"
     },
     {
       "id": "EV-19bcfc6d7c1612cb",
@@ -858,6 +1018,68 @@
       ],
       "sourceUrl": "https://techcrunch.com/2026/06/06/openai-unveils-lockdown-mode-to-protect-sensitive-data-from-prompt-injection-attacks",
       "publisher": "TechCrunch：AI（RSS）"
+    },
+    {
+      "id": "EV-e81f3b979f169cfa",
+      "dataDate": "2026-07-20",
+      "date": "2026-07-19",
+      "updatedDate": "2026-07-20",
+      "eventType": "research_result",
+      "eventTypeLabel": "研究结果",
+      "eventGroup": "研究结果",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Perplexity 发布开放基准 WANDR，评估智能体的广泛搜索与深度验证能力",
+      "originalTitle": "",
+      "subject": "Perplexity",
+      "action": "发布开放基准",
+      "object": "WANDR，评估智能体的广泛搜索与深度验证能力",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "data_analysis",
+            "dimensionName": "应用场景",
+            "name": "数据分析"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "id": "data_analysis",
+          "dimensionName": "应用场景",
+          "name": "数据分析"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "data_analysis",
+          "dimensionName": "应用场景",
+          "name": "数据分析"
+        }
+      ],
+      "entityIds": [
+        "EN-45d780f82c9247fc"
+      ],
+      "entityNames": [
+        "Perplexity"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://marktechpost.com/2026/07/19/perplexity-ai-releases-wandr-an-open-benchmark-evaluating-research-agents-that-must-search-wide-and-deep",
+      "publisher": "MarkTechPost（RSS）"
     }
   ],
   "entities": [
@@ -974,6 +1196,7 @@
         "EV-92d28aef0c4b0a8a",
         "EV-c2800c1c5a3f568f",
         "EV-d4ddee1b39cced77",
+        "EV-30749250196dd507",
         "EV-e7b7df43970f7e2c",
         "EV-025778b83c1b2ca9",
         "EV-dce5de62b2e4b752",
@@ -1027,8 +1250,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-technology",
         "TX-technology-agentic_execution",
+        "TX-industry-technology",
         "TX-industry-financial_services",
         "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
@@ -1061,7 +1284,7 @@
         "EN-c70eca6b0f88f44d"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-19"
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "EN-1c5483264189feef",
@@ -1084,6 +1307,246 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-06-13",
       "lastSeen": "2026-06-13"
+    },
+    {
+      "id": "EN-339217758bfa736e",
+      "name": "Alibaba's Qwen takes on",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-0d5a32aca724d30e"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-data_analysis",
+        "TX-technology-open_weights",
+        "TX-technology-multimodal"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-19",
+      "lastSeen": "2026-07-20"
+    },
+    {
+      "id": "EN-047364b9be67f665",
+      "name": "Alibaba",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "阿里巴巴",
+        "Qwen",
+        "阿里"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-43b7f45e9bd7ec9b",
+        "EV-3d93d1da8cb64462",
+        "EV-4740121f428e4bda",
+        "EV-a354af52772334fd",
+        "EV-c0f87b8c5208cd75",
+        "EV-53f08daddd011dbb",
+        "EV-e1a4bc40db4a9d8f",
+        "EV-2a833330267cb2df",
+        "EV-0d5a32aca724d30e",
+        "EV-d08935b06ed9e7bb",
+        "EV-215f938a46d0b126",
+        "EV-ac1b82f6e6261012",
+        "EV-6fbbbfcdcec81df4",
+        "EV-82e68f59d8584e4e",
+        "EV-fd8ecce5de2f667d",
+        "EV-f6ac2938949f74ec",
+        "EV-363fe72da52bdb86",
+        "EV-70cbf25f7ec2cc3a",
+        "EV-8b9e4428074bde60",
+        "EV-83c841a4c42cfdea",
+        "EV-3167e6eed75597e9",
+        "EV-ad2e4fe6a149d95d",
+        "EV-76aa77f5a2e7c661",
+        "EV-77662aa9bef9efbe",
+        "EV-c7f274c3aadece12",
+        "EV-333851b077b606c8",
+        "EV-6712f8ac1f00fe85",
+        "EV-c54172bf4e0c1068",
+        "EV-473f852b374d8b1c",
+        "EV-197aac95e60671f7",
+        "EV-4e6dc3ec2b3f0bd6",
+        "EV-bbc34d7bc9c02b6f",
+        "EV-8e6f9c324aa0b2f3",
+        "EV-a4f413441613beac",
+        "EV-c11ee0da38376254",
+        "EV-657837763764c869",
+        "EV-a4f052325d0ef230",
+        "EV-c0a94bb25d551db1",
+        "EV-710b145230faa692",
+        "EV-1b9bd3d2cb0dc54e"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-code_generation",
+        "TX-technology-long_context",
+        "TX-use_case-data_analysis",
+        "TX-technology-on_device",
+        "TX-technology-embodied_ai",
+        "TX-technology-fine_tuning",
+        "TX-technology-open_weights",
+        "TX-technology-video_generation",
+        "TX-technology-multimodal",
+        "TX-technology-quantization",
+        "TX-technology-computer_use"
+      ],
+      "relatedEntityIds": [
+        "EN-10a27c6240d18dbe",
+        "EN-5398729239788ca5",
+        "EN-22a4c686e665e299",
+        "EN-2daac3672aeafcbd",
+        "EN-d65d81c60c0c47c4"
+      ],
+      "firstSeen": "2026-05-23",
+      "lastSeen": "2026-07-20"
+    },
+    {
+      "id": "EN-b5251b35f15bedc4",
+      "name": "Moonshot AI",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "Kimi"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-5be48cce8dc4f3de",
+        "EV-0e4bddfd5c129618",
+        "EV-fd21441fb6e143c3",
+        "EV-0d5a32aca724d30e",
+        "EV-1b03e5dff76a50a1",
+        "EV-5caf7f83664b1a2c",
+        "EV-2cb9dbed2b2b6077",
+        "EV-75002e9da530c90b",
+        "EV-77042592591657bf",
+        "EV-6af31d42885e0361",
+        "EV-8e6f9c324aa0b2f3",
+        "EV-e878e56967902718",
+        "EV-e9a86c47da229331",
+        "EV-773ffcc6e1df56fa",
+        "EV-94e1f1a5cea15eae",
+        "EV-74b965de27bc0515"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-financial_services",
+        "TX-technology-vision_language",
+        "TX-technology-code_generation",
+        "TX-use_case-software_development",
+        "TX-technology-long_context",
+        "TX-use_case-data_analysis",
+        "TX-technology-retrieval_augmented_generation",
+        "TX-technology-open_weights",
+        "TX-technology-multimodal"
+      ],
+      "relatedEntityIds": [
+        "EN-2cfed21b7a971267",
+        "EN-23bc2a854bc0cfb0",
+        "EN-b57c95289680078c"
+      ],
+      "firstSeen": "2026-05-19",
+      "lastSeen": "2026-07-20"
+    },
+    {
+      "id": "EN-9f15bb7e29e191eb",
+      "name": "Fable 5",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-0d5a32aca724d30e",
+        "EV-83a8ac8a2554b60c",
+        "EV-9c0552732b34f278",
+        "EV-bf6f67c47c6b0d7c",
+        "EV-491e7b4b506ab3e3",
+        "EV-c7a2774b07554f5d",
+        "EV-e09bff5515b1896b",
+        "EV-f1418d9e3b1413b7",
+        "EV-2eabd03665cbdef7"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-cybersecurity",
+        "TX-use_case-data_analysis",
+        "TX-technology-open_weights",
+        "TX-technology-multimodal",
+        "TX-technology-guardrails_safety"
+      ],
+      "relatedEntityIds": [
+        "EN-c70eca6b0f88f44d"
+      ],
+      "firstSeen": "2026-06-09",
+      "lastSeen": "2026-07-20"
+    },
+    {
+      "id": "EN-607964040e4b62e0",
+      "name": "Kimi K3",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [
+        "K3"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-0d5a32aca724d30e"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-data_analysis",
+        "TX-technology-open_weights",
+        "TX-technology-multimodal"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-19",
+      "lastSeen": "2026-07-20"
+    },
+    {
+      "id": "EN-10a27c6240d18dbe",
+      "name": "Qwen 3.8",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-0d5a32aca724d30e"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-data_analysis",
+        "TX-technology-open_weights",
+        "TX-technology-multimodal"
+      ],
+      "relatedEntityIds": [
+        "EN-047364b9be67f665"
+      ],
+      "firstSeen": "2026-07-19",
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "EN-2abf8289b2f2113f",
@@ -1146,6 +1609,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-9d5363657f3541e7",
         "EV-ca0beb75aaf1c156",
         "EV-daf1e21f8ccbf839",
         "EV-2c1fc2143d7d4a6a",
@@ -1154,13 +1618,14 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-use_case-data_analysis"
+        "TX-use_case-data_analysis",
+        "TX-technology-multimodal"
       ],
       "relatedEntityIds": [
         "EN-33ea25778e18d372"
       ],
       "firstSeen": "2026-07-13",
-      "lastSeen": "2026-07-18"
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "EN-f64f284f6c46b9b6",
@@ -1226,77 +1691,6 @@
       ],
       "firstSeen": "2026-07-16",
       "lastSeen": "2026-07-17"
-    },
-    {
-      "id": "EN-047364b9be67f665",
-      "name": "Alibaba",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [
-        "阿里"
-      ],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-43b7f45e9bd7ec9b",
-        "EV-3d93d1da8cb64462",
-        "EV-53f08daddd011dbb",
-        "EV-e1a4bc40db4a9d8f",
-        "EV-215f938a46d0b126",
-        "EV-ac1b82f6e6261012",
-        "EV-6fbbbfcdcec81df4",
-        "EV-82e68f59d8584e4e",
-        "EV-fd8ecce5de2f667d",
-        "EV-f6ac2938949f74ec",
-        "EV-363fe72da52bdb86",
-        "EV-70cbf25f7ec2cc3a",
-        "EV-8b9e4428074bde60",
-        "EV-83c841a4c42cfdea",
-        "EV-3167e6eed75597e9",
-        "EV-ad2e4fe6a149d95d",
-        "EV-76aa77f5a2e7c661",
-        "EV-77662aa9bef9efbe",
-        "EV-c7f274c3aadece12",
-        "EV-333851b077b606c8",
-        "EV-6712f8ac1f00fe85",
-        "EV-c54172bf4e0c1068",
-        "EV-473f852b374d8b1c",
-        "EV-197aac95e60671f7",
-        "EV-4e6dc3ec2b3f0bd6",
-        "EV-bbc34d7bc9c02b6f",
-        "EV-8e6f9c324aa0b2f3",
-        "EV-a4f413441613beac",
-        "EV-c11ee0da38376254",
-        "EV-657837763764c869",
-        "EV-a4f052325d0ef230",
-        "EV-c0a94bb25d551db1",
-        "EV-710b145230faa692",
-        "EV-1b9bd3d2cb0dc54e"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-technology-code_generation",
-        "TX-technology-long_context",
-        "TX-use_case-data_analysis",
-        "TX-technology-on_device",
-        "TX-technology-embodied_ai",
-        "TX-technology-fine_tuning",
-        "TX-technology-multimodal",
-        "TX-technology-video_generation",
-        "TX-technology-quantization",
-        "TX-technology-computer_use"
-      ],
-      "relatedEntityIds": [
-        "EN-5398729239788ca5",
-        "EN-22a4c686e665e299",
-        "EN-2daac3672aeafcbd",
-        "EN-d65d81c60c0c47c4"
-      ],
-      "firstSeen": "2026-05-23",
-      "lastSeen": "2026-07-19"
     },
     {
       "id": "EN-09c344df70df9660",
@@ -1452,9 +1846,9 @@
         "EV-8e01849c05b50355",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-b20bf10af759bd43",
         "EV-eb97c388b3197c06",
         "EV-83a8ac8a2554b60c",
-        "EV-0d5a32aca724d30e",
         "EV-debecca007e547d2",
         "EV-7963d8c78531f12d",
         "EV-a8a8f26c5128d894",
@@ -1678,7 +2072,7 @@
         "EN-d8494bb34d6ddc43"
       ],
       "firstSeen": "2026-03-13",
-      "lastSeen": "2026-07-19"
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "EN-3a13916345b60fad",
@@ -1693,6 +2087,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-b20bf10af759bd43",
         "EV-83a8ac8a2554b60c",
         "EV-730a2f95a698a96d",
         "EV-8b5801b69eb1781b",
@@ -1717,7 +2112,7 @@
         "EN-c70eca6b0f88f44d"
       ],
       "firstSeen": "2026-06-10",
-      "lastSeen": "2026-07-19"
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "EN-b59c577ed73536c6",
@@ -1784,38 +2179,6 @@
       ],
       "firstSeen": "2026-06-09",
       "lastSeen": "2026-07-18"
-    },
-    {
-      "id": "EN-9f15bb7e29e191eb",
-      "name": "Fable 5",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-83a8ac8a2554b60c",
-        "EV-9c0552732b34f278",
-        "EV-bf6f67c47c6b0d7c",
-        "EV-491e7b4b506ab3e3",
-        "EV-c7a2774b07554f5d",
-        "EV-e09bff5515b1896b",
-        "EV-f1418d9e3b1413b7",
-        "EV-2eabd03665cbdef7"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-use_case-cybersecurity",
-        "TX-use_case-data_analysis",
-        "TX-technology-guardrails_safety"
-      ],
-      "relatedEntityIds": [
-        "EN-c70eca6b0f88f44d"
-      ],
-      "firstSeen": "2026-06-09",
-      "lastSeen": "2026-07-19"
     },
     {
       "id": "EN-7d3194f79e645c42",
@@ -1889,6 +2252,7 @@
         "EV-1c2723ad61d192bd",
         "EV-74dfbd82b47dc626",
         "EV-167f50a6f3134bd5",
+        "EV-30749250196dd507",
         "EV-712473b23a2a11a0",
         "EV-b9296439f7c34c89",
         "EV-cf5b2a0aff3914bd",
@@ -1980,7 +2344,9 @@
         "EV-3550e9863266ea96",
         "EV-ca420d07e12369f1",
         "EV-773ffcc6e1df56fa",
+        "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
+        "EV-b30dcacd355fe5f5",
         "EV-2f7e6d3a68bbf08f",
         "EV-5cd10de5c12916f0",
         "EV-067f57f6e6ffa6ce",
@@ -2023,8 +2389,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-technology",
         "TX-technology-agentic_execution",
+        "TX-industry-technology",
         "TX-industry-financial_services",
         "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
@@ -2077,7 +2443,7 @@
         "EN-7b8cb35de7ad047a"
       ],
       "firstSeen": "2026-02-19",
-      "lastSeen": "2026-07-19"
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "EN-fc0586e76f80f181",
@@ -2101,6 +2467,28 @@
       ],
       "firstSeen": "2026-06-07",
       "lastSeen": "2026-06-07"
+    },
+    {
+      "id": "EN-45d780f82c9247fc",
+      "name": "Perplexity",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-3b2626ff7d23a6d7",
+        "EV-e81f3b979f169cfa"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-data_analysis"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-19",
+      "lastSeen": "2026-07-20"
     }
   ],
   "fde": [],

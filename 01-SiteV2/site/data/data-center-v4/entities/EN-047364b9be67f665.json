@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-19T06:40:36.822Z",
-    "latestDataDate": "2026-07-19",
-    "currentDate": "2026-07-19",
-    "eventCount": 1286,
+    "generatedAt": "2026-07-20T03:58:48.579Z",
+    "latestDataDate": "2026-07-20",
+    "currentDate": "2026-07-20",
+    "eventCount": 1324,
     "quarantinedEventCount": 12
   },
   "entity": {
@@ -16,6 +16,8 @@
     "entityType": "organization_candidate",
     "typeLabel": "公司与机构",
     "aliases": [
+      "阿里巴巴",
+      "Qwen",
       "阿里"
     ],
     "verificationStatus": "verified",
@@ -25,8 +27,14 @@
     "eventIds": [
       "EV-43b7f45e9bd7ec9b",
       "EV-3d93d1da8cb64462",
+      "EV-4740121f428e4bda",
+      "EV-a354af52772334fd",
+      "EV-c0f87b8c5208cd75",
       "EV-53f08daddd011dbb",
       "EV-e1a4bc40db4a9d8f",
+      "EV-2a833330267cb2df",
+      "EV-0d5a32aca724d30e",
+      "EV-d08935b06ed9e7bb",
       "EV-215f938a46d0b126",
       "EV-ac1b82f6e6261012",
       "EV-6fbbbfcdcec81df4",
@@ -67,20 +75,23 @@
       "TX-technology-on_device",
       "TX-technology-embodied_ai",
       "TX-technology-fine_tuning",
-      "TX-technology-multimodal",
+      "TX-technology-open_weights",
       "TX-technology-video_generation",
+      "TX-technology-multimodal",
       "TX-technology-quantization",
       "TX-technology-computer_use"
     ],
     "relatedEntityIds": [
+      "EN-10a27c6240d18dbe",
       "EN-5398729239788ca5",
       "EN-22a4c686e665e299",
       "EN-2daac3672aeafcbd",
       "EN-d65d81c60c0c47c4"
     ],
     "firstSeen": "2026-05-23",
-    "lastSeen": "2026-07-19",
+    "lastSeen": "2026-07-20",
     "relationIds": [
+      "REL2-55d35289124fc7e9",
       "REL2-1b484f324f2c0229",
       "REL2-a5c299aa2254d5d1",
       "REL2-28ee71371286b022",
@@ -92,11 +103,18 @@
         "EV-3d93d1da8cb64462"
       ],
       "deployments": [
+        "EV-4740121f428e4bda",
+        "EV-a354af52772334fd",
+        "EV-c0f87b8c5208cd75",
         "EV-53f08daddd011dbb",
         "EV-e1a4bc40db4a9d8f"
       ],
-      "partnerships": [],
+      "partnerships": [
+        "EV-2a833330267cb2df"
+      ],
       "productsServices": [
+        "EV-0d5a32aca724d30e",
+        "EV-d08935b06ed9e7bb",
         "EV-215f938a46d0b126",
         "EV-ac1b82f6e6261012",
         "EV-6fbbbfcdcec81df4",
@@ -134,6 +152,139 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-4740121f428e4bda",
+        "dataDate": "2026-07-20",
+        "date": "2026-07-19",
+        "eventType": "deployment",
+        "eventTypeLabel": "部署",
+        "eventGroup": "部署与案例",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "阿里 Qoder 上线 Qwen3.8-Max-Preview 模型，限时 1 折、夜间 0.2 折起",
+        "displayTags": [],
+        "entityIds": [
+          "EN-9febfae579bcd754",
+          "EN-047364b9be67f665"
+        ]
+      },
+      {
+        "id": "EV-a354af52772334fd",
+        "dataDate": "2026-07-20",
+        "date": "2026-07-19",
+        "eventType": "deployment",
+        "eventTypeLabel": "部署",
+        "eventGroup": "部署与案例",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "阿里云百炼上线 HappyOyster 1.0，一句话生成可互动 AI 数字世界",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "video_generation",
+            "name": "视频生成"
+          }
+        ],
+        "entityIds": [
+          "EN-d747d6f5125b6bee",
+          "EN-047364b9be67f665"
+        ]
+      },
+      {
+        "id": "EV-c0f87b8c5208cd75",
+        "dataDate": "2026-07-20",
+        "date": "2026-07-19",
+        "eventType": "deployment",
+        "eventTypeLabel": "部署",
+        "eventGroup": "部署与案例",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "阿里千问 Qwen3.8 预览版模型上线：2.4T 参数量，宣称\"可能是除了 Fable 5 外最强大的模型\"",
+        "displayTags": [],
+        "entityIds": [
+          "EN-047364b9be67f665"
+        ]
+      },
+      {
+        "id": "EV-2a833330267cb2df",
+        "dataDate": "2026-07-20",
+        "date": "2026-07-19",
+        "eventType": "partnership",
+        "eventTypeLabel": "合作",
+        "eventGroup": "商业合作",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "阿里千问 PC 端接入 Qwen3.8-Max-Preview，参数量达 2.4T",
+        "displayTags": [],
+        "entityIds": [
+          "EN-98fe666c6eef8bde",
+          "EN-047364b9be67f665"
+        ]
+      },
+      {
+        "id": "EV-0d5a32aca724d30e",
+        "dataDate": "2026-07-20",
+        "date": "2026-07-19",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "阿里巴巴的Qwen以开源权重模型Qwen 3.8对标Kimi K3，称该模型“仅次于Fable 5”",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          },
+          {
+            "dimensionId": "use_case",
+            "id": "data_analysis",
+            "dimensionName": "应用场景",
+            "name": "数据分析"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "open_weights",
+            "name": "开放权重"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "multimodal",
+            "name": "多模态"
+          }
+        ],
+        "entityIds": [
+          "EN-339217758bfa736e",
+          "EN-047364b9be67f665",
+          "EN-b5251b35f15bedc4",
+          "EN-9f15bb7e29e191eb",
+          "EN-607964040e4b62e0",
+          "EN-10a27c6240d18dbe"
+        ]
+      },
+      {
+        "id": "EV-d08935b06ed9e7bb",
+        "dataDate": "2026-07-20",
+        "date": "2026-07-19",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "阿里推出\"高德问店\"AI服务，面向实体创业者整合钉钉悟空等数据辅助选址决策",
+        "displayTags": [],
+        "entityIds": [
+          "EN-1d99cc69a8ba22eb",
+          "EN-ef8ef0d64526209a",
+          "EN-047364b9be67f665",
+          "EN-6631ecf47788552e"
+        ]
+      },
       {
         "id": "EV-215f938a46d0b126",
         "dataDate": "2026-07-19",
@@ -1032,6 +1183,31 @@
   },
   "relatedEntities": [
     {
+      "id": "EN-10a27c6240d18dbe",
+      "name": "Qwen 3.8",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-0d5a32aca724d30e"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-data_analysis",
+        "TX-technology-open_weights",
+        "TX-technology-multimodal"
+      ],
+      "relatedEntityIds": [
+        "EN-047364b9be67f665"
+      ],
+      "firstSeen": "2026-07-19",
+      "lastSeen": "2026-07-20"
+    },
+    {
       "id": "EN-5398729239788ca5",
       "name": "T-Head SAIL",
       "entityType": "product_candidate",
@@ -1122,6 +1298,27 @@
   ],
   "relationships": [
     {
+      "relationship_id": "REL2-55d35289124fc7e9",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-047364b9be67f665",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-10a27c6240d18dbe",
+      "object_type": "entity",
+      "event_id": "EV-0d5a32aca724d30e",
+      "claim_refs": [
+        "CL-406b5d8f94ba4802",
+        "CL-d35ac8ae1ae23eb2",
+        "CL-5ae439853a95e9ff",
+        "CL-40effcf3e7d3c63d"
+      ],
+      "source_refs": [
+        "SA-e27c9ed8c916e409"
+      ],
+      "data_date": "2026-07-20",
+      "status": "verified"
+    },
+    {
       "relationship_id": "REL2-1b484f324f2c0229",
       "relationship_version": "RELATION-V2.0",
       "subject_ref": "EN-047364b9be67f665",
@@ -1207,7 +1404,10 @@
       "typeLabel": "技术",
       "valueId": "agentic_execution",
       "eventIds": [
+        "EV-f6e7a4fe77d7f5c9",
         "EV-6be89ebfbf8de6be",
+        "EV-b29878fdf79f2ac5",
+        "EV-c64e6836b9cd2b17",
         "EV-1da2e46e39a57d33",
         "EV-8b7cbb66a33a945d",
         "EV-38cce1b72977ff2b",
@@ -1290,7 +1490,9 @@
         "EV-c5643983538c6513",
         "EV-c8928410f6c145eb",
         "EV-c4303801ea8c54dc",
+        "EV-d5aa723446feebbb",
         "EV-23ae55daa341be06",
+        "EV-f70b73ad2b4b6aa9",
         "EV-da9bb2c98c1ce8cd",
         "EV-b726a9cda7beae64",
         "EV-4e5c6267b3237dac",
@@ -1352,6 +1554,13 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-86ab9c2f1416e9d8",
+        "EV-3b1d1dd87442e7f1",
+        "EV-4cb7e4c371fb252e",
+        "EV-7d09b00182b08c3f",
+        "EV-938e395d50c33f40",
+        "EV-c454be06f46514cc",
+        "EV-ca223f2a929b67a2",
         "EV-19bcfc6d7c1612cb",
         "EV-ee489212ff9135a4",
         "EV-25933b8f123f92be",
@@ -1523,7 +1732,10 @@
         "EV-c17f5a364ed6a3ac"
       ],
       "entityIds": [
+        "EN-270e2cfd11014ef8",
         "EN-522656609ff15589",
+        "EN-b0bc23fa8e20c543",
+        "EN-95fb1fa9a88b393c",
         "EN-cfd90af8403941bf",
         "EN-366289432b214eda",
         "EN-8d4321d936320802",
@@ -1617,6 +1829,7 @@
         "EN-da41c71b4dbc3956",
         "EN-f5cfcb570b7edac2",
         "EN-950de6ef17ca48ae",
+        "EN-c08f86842ff2c908",
         "EN-50e2a4156631df49",
         "EN-b81c8201acfc7639",
         "EN-5388bc10736a0eff",
@@ -1678,13 +1891,18 @@
         "EN-de5a1adf4fedcce1",
         "EN-19e41212c0556603",
         "EN-dca6ec9510fc0176",
+        "EN-6f21a653c48f4f19",
+        "EN-6ef7552b4631e789",
+        "EN-dd758281d0c70e60",
+        "EN-e9b67bdfb6ae6a2e",
+        "EN-985e1a7c957148f9",
+        "EN-3b29a20f0c5d0cdc",
+        "EN-2c348893efb2316e",
         "EN-2abf8289b2f2113f",
         "EN-91901356a63794df",
         "EN-be548deba4a093d7",
         "EN-92ec1124e1de6f54",
         "EN-8d57f84bd1847b24",
-        "EN-e9b67bdfb6ae6a2e",
-        "EN-985e1a7c957148f9",
         "EN-0a64d5a41e885455",
         "EN-8b0aea25404131b5",
         "EN-0e3c625f3930d7b7",
@@ -1722,7 +1940,6 @@
         "EN-b644c0a9d493976a",
         "EN-636fa9664f878a4d",
         "EN-6c87e5496f592f3c",
-        "EN-2c348893efb2316e",
         "EN-ef8ef0d64526209a",
         "EN-a89151ba4b5ac0f2",
         "EN-8b619895a83e35c8",
@@ -1735,7 +1952,6 @@
         "EN-43a340bb75b45f02",
         "EN-08b6a35be337edce",
         "EN-e3863f813fe47240",
-        "EN-6f21a653c48f4f19",
         "EN-4dbe391b8fcf977a",
         "EN-6a50fbf0b970c03a",
         "EN-d1ad14d4ad57d207",
@@ -1967,7 +2183,7 @@
         "HW-25ce41fab12d9ef2"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-19"
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "TX-technology-code_generation",
@@ -2098,7 +2314,8 @@
       "eventIds": [
         "EV-80e54c9a390da293",
         "EV-fd21441fb6e143c3",
-        "EV-0d5a32aca724d30e",
+        "EV-86ab9c2f1416e9d8",
+        "EV-a5efa57f3f744425",
         "EV-653cbce2ccc79f8b",
         "EV-70e3f88cb06a856c",
         "EV-70cbf25f7ec2cc3a",
@@ -2115,9 +2332,9 @@
         "EN-3a7bd3e2360a3d29",
         "EN-50537dab76505dfc",
         "EN-b5251b35f15bedc4",
-        "EN-6f7ac1823da81d2e",
-        "EN-607964040e4b62e0",
-        "EN-481243d2f2a235c1",
+        "EN-9c8ae69b84f21a2e",
+        "EN-3309b3b14807f39a",
+        "EN-61a405a731497229",
         "EN-f3cfedbe8428c9f7",
         "EN-c04bd5ebd10ab696",
         "EN-50ba7ff15827787b",
@@ -2128,19 +2345,19 @@
         "EN-7dd7122ad9bf240f",
         "EN-95b0632f1b292fa7",
         "EN-047364b9be67f665",
+        "EN-6f7ac1823da81d2e",
         "EN-1d79127e9d90e89b",
         "EN-bc77259c5d2eb341",
         "EN-52fc33ae4d101a5d",
         "EN-bc1fc5140040180e",
         "EN-3153ebda601cdb79",
         "EN-c23eb5fae3cdd763",
-        "EN-c608c4787821de1b",
-        "EN-9c8ae69b84f21a2e"
+        "EN-c608c4787821de1b"
       ],
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-06-12",
-      "lastSeen": "2026-07-19"
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "TX-use_case-data_analysis",
@@ -2151,24 +2368,31 @@
       "eventIds": [
         "EV-5f5f252c6a826599",
         "EV-b348083270be6c65",
+        "EV-0d5a32aca724d30e",
         "EV-19bcfc6d7c1612cb",
         "EV-daf1e21f8ccbf839",
         "EV-333851b077b606c8",
         "EV-c54172bf4e0c1068",
         "EV-e09bff5515b1896b",
-        "EV-fbdfb5888ad19663"
+        "EV-fbdfb5888ad19663",
+        "EV-e81f3b979f169cfa"
       ],
       "entityIds": [
         "EN-122c0bebae950c77",
         "EN-96eebba49dbbf422",
         "EN-1c5483264189feef",
+        "EN-339217758bfa736e",
+        "EN-047364b9be67f665",
+        "EN-b5251b35f15bedc4",
+        "EN-9f15bb7e29e191eb",
+        "EN-607964040e4b62e0",
+        "EN-10a27c6240d18dbe",
         "EN-2abf8289b2f2113f",
         "EN-91901356a63794df",
         "EN-a89151ba4b5ac0f2",
         "EN-f64f284f6c46b9b6",
         "EN-2e610cbc4b309296",
         "EN-33ea25778e18d372",
-        "EN-047364b9be67f665",
         "EN-09c344df70df9660",
         "EN-1725c58362aadc2a",
         "EN-e16fc821f34228d1",
@@ -2177,14 +2401,14 @@
         "EN-3a13916345b60fad",
         "EN-b59c577ed73536c6",
         "EN-729324072d368379",
-        "EN-9f15bb7e29e191eb",
         "EN-7d3194f79e645c42",
-        "EN-fc0586e76f80f181"
+        "EN-fc0586e76f80f181",
+        "EN-45d780f82c9247fc"
       ],
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-06-07",
-      "lastSeen": "2026-07-19"
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "TX-technology-on_device",
@@ -2196,6 +2420,7 @@
         "EV-a15da1b52d939967",
         "EV-736404028b8ad33e",
         "EV-7263caa45bbf168e",
+        "EV-a5efa57f3f744425",
         "EV-653cbce2ccc79f8b",
         "EV-04efb4eecbb8125f",
         "EV-8a9b12665a3e40a0",
@@ -2226,6 +2451,8 @@
         "EN-8d4321d936320802",
         "EN-f5791343a13abc71",
         "EN-9fbf261b62c1d7c0",
+        "EN-3309b3b14807f39a",
+        "EN-61a405a731497229",
         "EN-f3cfedbe8428c9f7",
         "EN-7df09a7717ef2feb",
         "EN-c04bd5ebd10ab696",
@@ -2267,7 +2494,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-07-18"
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "TX-technology-embodied_ai",
@@ -2281,6 +2508,8 @@
         "EV-234ad54940674bf6",
         "EV-6415a58637893b34",
         "EV-4faa2bcf2e42e60c",
+        "EV-b580e33cabfea980",
+        "EV-4cb7e4c371fb252e",
         "EV-25933b8f123f92be",
         "EV-345c8a2cc00fe8ca",
         "EV-82b39e10391d0f3c",
@@ -2305,11 +2534,12 @@
         "EN-aa75c47729b4a292",
         "EN-8147e6fed86d42c1",
         "EN-96eebba49dbbf422",
+        "EN-149ae7e9819a17a0",
+        "EN-e9b67bdfb6ae6a2e",
+        "EN-985e1a7c957148f9",
         "EN-8d57f84bd1847b24",
         "EN-4dbe391b8fcf977a",
         "EN-0e6e48aba1669631",
-        "EN-e9b67bdfb6ae6a2e",
-        "EN-985e1a7c957148f9",
         "EN-e3b1bf3dab957ffe",
         "EN-754c490bd199c21a",
         "EN-7a3ecc54829211df",
@@ -2337,7 +2567,7 @@
         "HW-1450585d9cd5879f"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-07-19"
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "TX-technology-fine_tuning",
@@ -2388,6 +2618,97 @@
       "lastSeen": "2026-07-16"
     },
     {
+      "id": "TX-technology-open_weights",
+      "name": "开放权重",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "open_weights",
+      "eventIds": [
+        "EV-1abf0d076d30ec6d",
+        "EV-0d5a32aca724d30e",
+        "EV-b84035029a63e52e",
+        "EV-3028dfadf94c8f4c",
+        "EV-a06011da69abcc3d",
+        "EV-e2da1aafabb3e09c",
+        "EV-2258329f33d413cf",
+        "EV-86537be17d50ff20"
+      ],
+      "entityIds": [
+        "EN-240389f4b730bad4",
+        "EN-7d3194f79e645c42",
+        "EN-c70eca6b0f88f44d",
+        "EN-339217758bfa736e",
+        "EN-047364b9be67f665",
+        "EN-b5251b35f15bedc4",
+        "EN-9f15bb7e29e191eb",
+        "EN-607964040e4b62e0",
+        "EN-10a27c6240d18dbe",
+        "EN-d41ebd9f02722fc8",
+        "EN-b0532e1af75cc4ab",
+        "EN-96eebba49dbbf422",
+        "EN-10556ee2cee94c72",
+        "EN-f8c237773fe24a98",
+        "EN-2b5e92d1908d42f6",
+        "EN-8d4321d936320802",
+        "EN-3ae50afab3e392b8",
+        "EN-8395dc051feafc4c",
+        "EN-b3e3bce83d29e787",
+        "EN-8950d72f381130ac",
+        "EN-049e948563e03e97",
+        "EN-f7a386a451b79627",
+        "EN-bc1fc5140040180e",
+        "EN-12ab68e37d104d27",
+        "EN-6f7ac1823da81d2e",
+        "EN-c608c4787821de1b",
+        "EN-9c8ae69b84f21a2e"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-05-23",
+      "lastSeen": "2026-07-20"
+    },
+    {
+      "id": "TX-technology-video_generation",
+      "name": "视频生成",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "video_generation",
+      "eventIds": [
+        "EV-a354af52772334fd",
+        "EV-26d2874c6ce028d6",
+        "EV-6fbbbfcdcec81df4",
+        "EV-fd8ecce5de2f667d",
+        "EV-5babb43f4b4d302f",
+        "EV-d8c69ed782b73a34",
+        "EV-c7404765df94a3b4",
+        "EV-473f852b374d8b1c",
+        "EV-887d47bb477e2142"
+      ],
+      "entityIds": [
+        "EN-d747d6f5125b6bee",
+        "EN-047364b9be67f665",
+        "EN-b81c8201acfc7639",
+        "EN-ec1c8f558ff61e34",
+        "EN-d83624eb3ab9192e",
+        "EN-2b6e51bec93e86c1",
+        "EN-b0532e1af75cc4ab",
+        "EN-01f1074bb52ff605",
+        "EN-7ed9c9e7c260ed06",
+        "EN-0e008e2c06144ec8",
+        "EN-bbdefa2950f49882",
+        "EN-5388bc10736a0eff",
+        "EN-43a340bb75b45f02",
+        "EN-47c1e53c427aafb4",
+        "EN-2daac3672aeafcbd",
+        "EN-e9857f381893dd05",
+        "EN-4f96127fdacbb405"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-06-16",
+      "lastSeen": "2026-07-20"
+    },
+    {
       "id": "TX-technology-multimodal",
       "name": "多模态",
       "nodeType": "technology",
@@ -2398,6 +2719,8 @@
         "EV-a9810b47e0408a05",
         "EV-26d2874c6ce028d6",
         "EV-fd21441fb6e143c3",
+        "EV-9d5363657f3541e7",
+        "EV-0d5a32aca724d30e",
         "EV-ee489212ff9135a4",
         "EV-ba89f9414be0b041",
         "EV-6b51b1b6fe22c540",
@@ -2433,6 +2756,12 @@
         "EN-3a7bd3e2360a3d29",
         "EN-50537dab76505dfc",
         "EN-b5251b35f15bedc4",
+        "EN-a89151ba4b5ac0f2",
+        "EN-339217758bfa736e",
+        "EN-047364b9be67f665",
+        "EN-9f15bb7e29e191eb",
+        "EN-607964040e4b62e0",
+        "EN-10a27c6240d18dbe",
         "EN-be548deba4a093d7",
         "EN-92ec1124e1de6f54",
         "EN-3c6d89173e6636d7",
@@ -2469,7 +2798,6 @@
         "EN-2b96ed840c07482a",
         "EN-9a6ee79873b1fb7b",
         "EN-3f726694f178ed7a",
-        "EN-047364b9be67f665",
         "EN-d65d81c60c0c47c4",
         "EN-085598c00f2aaccf",
         "EN-a3c3b987b09fc1bb",
@@ -2483,46 +2811,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-07-19"
-    },
-    {
-      "id": "TX-technology-video_generation",
-      "name": "视频生成",
-      "nodeType": "technology",
-      "typeLabel": "技术",
-      "valueId": "video_generation",
-      "eventIds": [
-        "EV-26d2874c6ce028d6",
-        "EV-6fbbbfcdcec81df4",
-        "EV-fd8ecce5de2f667d",
-        "EV-5babb43f4b4d302f",
-        "EV-d8c69ed782b73a34",
-        "EV-c7404765df94a3b4",
-        "EV-473f852b374d8b1c",
-        "EV-887d47bb477e2142"
-      ],
-      "entityIds": [
-        "EN-b81c8201acfc7639",
-        "EN-ec1c8f558ff61e34",
-        "EN-047364b9be67f665",
-        "EN-d83624eb3ab9192e",
-        "EN-2b6e51bec93e86c1",
-        "EN-b0532e1af75cc4ab",
-        "EN-01f1074bb52ff605",
-        "EN-7ed9c9e7c260ed06",
-        "EN-0e008e2c06144ec8",
-        "EN-bbdefa2950f49882",
-        "EN-5388bc10736a0eff",
-        "EN-43a340bb75b45f02",
-        "EN-47c1e53c427aafb4",
-        "EN-2daac3672aeafcbd",
-        "EN-e9857f381893dd05",
-        "EN-4f96127fdacbb405"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [],
-      "firstSeen": "2026-06-16",
-      "lastSeen": "2026-07-18"
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "TX-technology-quantization",

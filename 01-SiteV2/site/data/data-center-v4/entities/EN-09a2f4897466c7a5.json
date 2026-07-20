@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-20T03:58:48.579Z",
+    "latestDataDate": "2026-07-20",
+    "currentDate": "2026-07-20",
+    "eventCount": 1324,
+    "quarantinedEventCount": 12
+  },
+  "entity": {
+    "id": "EN-09a2f4897466c7a5",
+    "name": "Lyft",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-c24db606193b9dea"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2017-09-07",
+    "lastSeen": "2026-07-20",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [
+        "EV-c24db606193b9dea"
+      ],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-c24db606193b9dea",
+        "dataDate": "2026-07-20",
+        "date": "2017-09-07",
+        "eventType": "deployment",
+        "eventTypeLabel": "部署",
+        "eventGroup": "部署与案例",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Lyft 与 Drive.ai 合作在湾区开展自动驾驶网约车试点",
+        "displayTags": [],
+        "entityIds": [
+          "EN-09a2f4897466c7a5"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [
+    {
+      "id": "FDE-1ef827152775919a",
+      "eventId": "EV-c24db606193b9dea",
+      "dataDate": "2026-07-20",
+      "date": "2017-09-07",
+      "title": "Lyft 与 Drive.ai 合作在湾区开展自动驾驶网约车试点",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Lyft",
+      "vendor": "Drive.ai",
+      "industry": "Ride-hailing",
+      "useCase": "Lyft and Drive.ai partner on Bay Area self-driving ride-hailing pilot",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_delivery_components",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://techcrunch.com/2017/09/07/lyft-and-drive-ai-partner-on-bay-area-self-driving-ride-hailing-pilot",
+      "entityIds": [
+        "EN-09a2f4897466c7a5"
+      ]
+    }
+  ],
+  "hardware": []
+}

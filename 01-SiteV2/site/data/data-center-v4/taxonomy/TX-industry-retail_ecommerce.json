@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-19T06:40:36.822Z",
-    "latestDataDate": "2026-07-19",
-    "currentDate": "2026-07-19",
-    "eventCount": 1286,
+    "generatedAt": "2026-07-20T03:58:48.579Z",
+    "latestDataDate": "2026-07-20",
+    "currentDate": "2026-07-20",
+    "eventCount": 1324,
     "quarantinedEventCount": 12
   },
   "node": {
@@ -20,6 +20,7 @@
       "EV-f6a72cddbda748b3",
       "EV-e7dcecaed5a0ee5b",
       "EV-8b0f056571d68269",
+      "EV-acf1bcb321414706",
       "EV-434dcf1813a84ead",
       "EV-a3b006906f6d46a0",
       "EV-046caa2b3d6fbdde",
@@ -43,6 +44,7 @@
       "EN-b0532e1af75cc4ab",
       "EN-e5cc9e38970eacb5",
       "EN-cbc62794911ff31b",
+      "EN-b1d07f1a647ba7fb",
       "EN-6f21a653c48f4f19",
       "EN-4dbe391b8fcf977a",
       "EN-c5947269de664c47",
@@ -80,8 +82,8 @@
       "FDE-309bc49d109029a3"
     ],
     "hardwareIds": [],
-    "firstSeen": "2026-01-20",
-    "lastSeen": "2026-07-18"
+    "firstSeen": "2023-06-28",
+    "lastSeen": "2026-07-20"
   },
   "events": [
     {
@@ -432,6 +434,91 @@
       "products": [],
       "sourceUrl": "https://cybernewscentre.com/ai-startup-indias-aivar-raises-4-6m-for-enterprise-ai-adoption-2",
       "publisher": "cybernewscentre.com"
+    },
+    {
+      "id": "EV-acf1bcb321414706",
+      "dataDate": "2026-07-20",
+      "date": "2023-06-28",
+      "updatedDate": "2026-07-20",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "工作流自动化初创公司 Parabola 获 2400 万美元融资",
+      "originalTitle": "Workflow automation startup Parabola raises $24M | TechCrunch",
+      "subject": "Workflow automation startup Parabola",
+      "action": "raises",
+      "object": "$24M",
+      "metrics": [
+        "$24M",
+        "$24 million",
+        "$34.2 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "enterprise_operations",
+            "dimensionName": "应用场景",
+            "name": "企业运营自动化"
+          }
+        ],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "retail_ecommerce",
+            "dimensionName": "行业",
+            "name": "零售与电商"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "id": "enterprise_operations",
+          "dimensionName": "应用场景",
+          "name": "企业运营自动化"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "retail_ecommerce",
+          "dimensionName": "行业",
+          "name": "零售与电商"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "enterprise_operations",
+          "dimensionName": "应用场景",
+          "name": "企业运营自动化"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "retail_ecommerce",
+          "dimensionName": "行业",
+          "name": "零售与电商"
+        }
+      ],
+      "entityIds": [
+        "EN-b1d07f1a647ba7fb"
+      ],
+      "entityNames": [
+        "Workflow automation startup Parabola"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2023/06/28/parabola-workflow-automation-startup",
+      "publisher": "techcrunch.com"
     },
     {
       "id": "EV-434dcf1813a84ead",
@@ -1963,6 +2050,7 @@
         "EV-92d28aef0c4b0a8a",
         "EV-c2800c1c5a3f568f",
         "EV-d4ddee1b39cced77",
+        "EV-30749250196dd507",
         "EV-e7b7df43970f7e2c",
         "EV-025778b83c1b2ca9",
         "EV-dce5de62b2e4b752",
@@ -2016,8 +2104,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-technology",
         "TX-technology-agentic_execution",
+        "TX-industry-technology",
         "TX-industry-financial_services",
         "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
@@ -2050,7 +2138,7 @@
         "EN-c70eca6b0f88f44d"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-19"
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "EN-f346eaca864441f9",
@@ -2131,9 +2219,9 @@
         "EV-8e01849c05b50355",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-b20bf10af759bd43",
         "EV-eb97c388b3197c06",
         "EV-83a8ac8a2554b60c",
-        "EV-0d5a32aca724d30e",
         "EV-debecca007e547d2",
         "EV-7963d8c78531f12d",
         "EV-a8a8f26c5128d894",
@@ -2357,7 +2445,7 @@
         "EN-d8494bb34d6ddc43"
       ],
       "firstSeen": "2026-03-13",
-      "lastSeen": "2026-07-19"
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "EN-b0532e1af75cc4ab",
@@ -2421,8 +2509,8 @@
         "TX-technology-on_device",
         "TX-technology-fine_tuning",
         "TX-technology-open_weights",
-        "TX-technology-multimodal",
-        "TX-technology-video_generation"
+        "TX-technology-video_generation",
+        "TX-technology-multimodal"
       ],
       "relatedEntityIds": [
         "EN-3ccbd9105a45d8fc"
@@ -2457,7 +2545,9 @@
       "name": "Amazon",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "Amazon Bedrock"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -2476,6 +2566,7 @@
         "EV-ec2e421d0e18be9b",
         "EV-c0a65877001ed413",
         "EV-303b418c63895ba6",
+        "EV-30749250196dd507",
         "EV-43976be427aefb52",
         "EV-b93b5cc15823e9c3",
         "EV-918fc324de3117bd",
@@ -2507,7 +2598,29 @@
         "EN-9fbf261b62c1d7c0"
       ],
       "firstSeen": "2025-12-02",
-      "lastSeen": "2026-07-18"
+      "lastSeen": "2026-07-20"
+    },
+    {
+      "id": "EN-b1d07f1a647ba7fb",
+      "name": "Workflow automation startup Parabola",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-acf1bcb321414706"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-enterprise_operations",
+        "TX-industry-retail_ecommerce"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2023-06-28",
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "EN-6f21a653c48f4f19",
@@ -2523,6 +2636,8 @@
       ],
       "eventIds": [
         "EV-434dcf1813a84ead",
+        "EV-3b1d1dd87442e7f1",
+        "EV-938e395d50c33f40",
         "EV-8a9b12665a3e40a0",
         "EV-7256017056b81bbe"
       ],
@@ -2535,7 +2650,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-12",
-      "lastSeen": "2026-07-16"
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "EN-4dbe391b8fcf977a",
@@ -2552,6 +2667,7 @@
       "eventIds": [
         "EV-4b8064b1139e1724",
         "EV-434dcf1813a84ead",
+        "EV-218c2f6ecf3c369f",
         "EV-345c8a2cc00fe8ca",
         "EV-7256017056b81bbe"
       ],
@@ -2562,9 +2678,11 @@
         "TX-use_case-robotics_automation",
         "TX-technology-embodied_ai"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-0b706b4b95ba647c"
+      ],
       "firstSeen": "2026-07-03",
-      "lastSeen": "2026-07-19"
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "EN-c5947269de664c47",
@@ -2629,6 +2747,7 @@
         "EV-02686922dd82c4aa",
         "EV-3fb492fb45980541",
         "EV-2ffc3377977da114",
+        "EV-7d09b00182b08c3f",
         "EV-f6ac2938949f74ec",
         "EV-2c1fc2143d7d4a6a"
       ],
@@ -2638,11 +2757,9 @@
         "TX-industry-retail_ecommerce",
         "TX-use_case-customer_service"
       ],
-      "relatedEntityIds": [
-        "EN-2c348893efb2316e"
-      ],
+      "relatedEntityIds": [],
       "firstSeen": "2026-07-07",
-      "lastSeen": "2026-07-18"
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "EN-276a8bc458036a1a",
@@ -2709,6 +2826,7 @@
         "EV-02686922dd82c4aa",
         "EV-2fd730d0ad452334",
         "EV-4faa2bcf2e42e60c",
+        "EV-7d09b00182b08c3f",
         "EV-8a9b12665a3e40a0",
         "EV-cfa8c754627747a1",
         "EV-0d862d59b05361cc",
@@ -2727,7 +2845,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-04-28",
-      "lastSeen": "2026-07-18"
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "EN-e274048227f164dc",
@@ -2940,8 +3058,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-technology",
         "TX-technology-agentic_execution",
+        "TX-industry-technology",
         "TX-industry-financial_services",
         "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
@@ -2955,9 +3073,9 @@
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-embodied_ai",
         "TX-technology-fine_tuning",
+        "TX-technology-video_generation",
         "TX-technology-multimodal",
         "TX-industry-media_entertainment",
-        "TX-technology-video_generation",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
         "TX-use_case-content_creation",
@@ -3031,8 +3149,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-industry-retail_ecommerce",
-        "TX-technology-multimodal",
         "TX-technology-video_generation",
+        "TX-technology-multimodal",
         "TX-technology-image_generation"
       ],
       "relatedEntityIds": [
@@ -3059,8 +3177,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-industry-retail_ecommerce",
-        "TX-technology-multimodal",
-        "TX-technology-video_generation"
+        "TX-technology-video_generation",
+        "TX-technology-multimodal"
       ],
       "relatedEntityIds": [
         "EN-bbdefa2950f49882"
@@ -3086,6 +3204,7 @@
         "EV-47a84a0f1a85c29c",
         "EV-6c361125c3f50bb6",
         "EV-533d2da98cce1ae0",
+        "EV-3b1d1dd87442e7f1",
         "EV-8a9b12665a3e40a0",
         "EV-ee363e679d12329c",
         "EV-ad2e4fe6a149d95d",
@@ -3106,13 +3225,13 @@
         "TX-technology-agentic_execution",
         "TX-industry-retail_ecommerce",
         "TX-technology-on_device",
-        "TX-industry-media_entertainment",
         "TX-technology-video_generation",
+        "TX-industry-media_entertainment",
         "TX-technology-tool_use"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-01",
-      "lastSeen": "2026-07-16"
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "EN-43a340bb75b45f02",
@@ -3240,6 +3359,7 @@
         "EV-1c2723ad61d192bd",
         "EV-74dfbd82b47dc626",
         "EV-167f50a6f3134bd5",
+        "EV-30749250196dd507",
         "EV-712473b23a2a11a0",
         "EV-b9296439f7c34c89",
         "EV-cf5b2a0aff3914bd",
@@ -3331,7 +3451,9 @@
         "EV-3550e9863266ea96",
         "EV-ca420d07e12369f1",
         "EV-773ffcc6e1df56fa",
+        "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
+        "EV-b30dcacd355fe5f5",
         "EV-2f7e6d3a68bbf08f",
         "EV-5cd10de5c12916f0",
         "EV-067f57f6e6ffa6ce",
@@ -3374,8 +3496,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-technology",
         "TX-technology-agentic_execution",
+        "TX-industry-technology",
         "TX-industry-financial_services",
         "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
@@ -3428,7 +3550,7 @@
         "EN-7b8cb35de7ad047a"
       ],
       "firstSeen": "2026-02-19",
-      "lastSeen": "2026-07-19"
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "EN-94ff75465b1afa65",
@@ -3460,9 +3582,7 @@
       "name": "Apple",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "苹果"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -3521,6 +3641,7 @@
         "EV-ebef81764102ee7c",
         "EV-f6611268f119a172",
         "EV-342799d4e68e7416",
+        "EV-b30dcacd355fe5f5",
         "EV-2f7e6d3a68bbf08f",
         "EV-ef823877347ff40f",
         "EV-5cd10de5c12916f0",
@@ -3560,17 +3681,10 @@
         "TX-technology-speech_audio"
       ],
       "relatedEntityIds": [
-        "EN-e463d05a14e8697f",
-        "EN-b5251b35f15bedc4",
-        "EN-1924fff8eb4d54ae",
-        "EN-dd920a8cd166f486",
-        "EN-af3ceabbe048a291",
-        "EN-45b5216872656eb3",
-        "EN-0502bb9ed34980aa",
-        "EN-40e307d789f77264"
+        "EN-af3ceabbe048a291"
       ],
       "firstSeen": "2026-06-04",
-      "lastSeen": "2026-07-19"
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "EN-40e307d789f77264",
@@ -3590,9 +3704,7 @@
       "classificationRefs": [
         "TX-industry-retail_ecommerce"
       ],
-      "relatedEntityIds": [
-        "EN-3a7bd3e2360a3d29"
-      ],
+      "relatedEntityIds": [],
       "firstSeen": "2026-06-09",
       "lastSeen": "2026-06-09"
     },
@@ -3615,9 +3727,7 @@
       "classificationRefs": [
         "TX-industry-retail_ecommerce"
       ],
-      "relatedEntityIds": [
-        "EN-3a7bd3e2360a3d29"
-      ],
+      "relatedEntityIds": [],
       "firstSeen": "2026-06-09",
       "lastSeen": "2026-06-20"
     },
@@ -3764,8 +3874,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-technology",
         "TX-technology-agentic_execution",
+        "TX-industry-technology",
         "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
         "TX-industry-automotive_transportation",
@@ -3808,7 +3918,6 @@
       ],
       "eventIds": [
         "EV-0d4e656aa51f9a46",
-        "EV-e31a6bf3c0a979f8",
         "EV-78a11d309c3d4e97",
         "EV-0e84a2f49d765ce3",
         "EV-7add33b4c74dbf1a",

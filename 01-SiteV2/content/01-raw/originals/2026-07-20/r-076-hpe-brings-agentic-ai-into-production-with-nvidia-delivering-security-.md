@@ -1,0 +1,282 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-076
+title: "HPE Brings Agentic AI Into Production With NVIDIA, Delivering Security, Governance, Scale, and Sovereignty – Company Announcement - FT.com"
+title_zh: "HPE 携手 NVIDIA 将 AI 智能体投入生产，提供安全、治理、扩展与主权保障"
+title_translation_status: translated
+title_translation_method: deepseek_title_translation
+title_translation_model: deepseek-v4-flash
+original_url: "https://markets.ft.com/data/announce/full?dockey=600-202606161230BIZWIRE_USPRX____20260616_BW590642-1"
+canonical_url: "https://markets.ft.com/data/announce/full?dockey=600-202606161230BIZWIRE_USPRX____20260616_BW590642-1"
+source_name: "keyword search / Anysearch"
+source_type: media
+source_level: A
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: ""
+acquisition_channel: gdelt
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-16T00:00:00.000Z"
+collected_at: 2026-07-20T03:56:58.390Z
+language: mixed
+full_text_hash: 4d1821b4a3748b72
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-20/r-076-hpe-brings-agentic-ai-into-production-with-nvidia-delivering-security-.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-20/r-076-hpe-brings-agentic-ai-into-production-with-nvidia-delivering-security-.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":8801,"paragraph_count":37,"sentence_count":42,"boilerplate_hits":0,"symbol_ratio":0.0044,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 8801
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"4d1821b4a3748b72","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: primary_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 904ed59df6ec57ba
+content_hash: 4d1821b4a3748b72
+semantic_hash: c9065a7748b5bd87
+duplicate_of: ""
+first_seen_at: "2026-06-16T00:00:00.000Z"
+last_seen_at: 2026-07-20T03:56:58.390Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":true,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":5,"importance_reason":"AI hardware scenario or service deployment; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","ai_hardware_lens","commercial_or_risk_context","market_shaping_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["keyword search","Anysearch","Nvidia"],"products":["agents","Agent","agent","MCP","Agents"],"people":[],"industries":["法律 / 法务","制造 / 工业","企业服务"],"roles":["CIO / IT 负责人","开发者 / 工程团队"],"workflows":["计费 / 预算管理","权限 / 安全治理","部署 / 集成交付"],"business_actions":["发布 / 推出","合作 / 联盟","部署 / 上线"],"affected_departments":["IT / 安全","法务","财务 / 预算","销售 / 客服"],"numbers":["16","2026","17","30","30 B","394","12","10000"],"quotes":["As AI becomes more autonomous, organizations need a new architecture to run it securely, govern it responsibly, and scale it economically,","Every layer of the computing stack is being reinvented for the age of AI agents,"]}
+evidence_seed: {"company_actions":["These new offerings transform the HPE AI Factory with NVIDIA for the next era of AI where intelligence adapts, evolves, collaborates, and governs."],"case_details":["“Across networking, servers, storage and software, HPE is delivering full-stack AI solutions with NVIDIA that build the foundation for agentic enterprises, helping customers move from experimentation to production with control and confidence."],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":["HPE Brings Agentic AI Into Production With NVIDIA, Delivering Security, Governance, Scale, and Sovereignty – Company Announcement - FT.com Hewlett Packard Enterprise Co ### HPE Brings Agentic AI Into Production With NVIDIA, Delivering Security, Governance, Scale, and Sovereignty Jun 16 2026 17:30...","Hewlett Packard Enterprise Co HPE Brings Agentic AI Into Production With NVIDIA, Delivering Security, Governance, Scale, and Sovereignty Jun 16 2026 17:30 BST HPE Private Cloud AI deploys secure AI agents through new governance and improves tokenomics through scaled AI-data pipelines The HPE AI Factory with NVIDIA adds NVIDIA Vera CPU, NVIDIA Agent Toolkit, and NVIDIA Confidential Computing LAS VEGAS --(BUSINESS WIRE)--Jun.","16, 2026-- HPE Discover Las Vegas 2026 – HPE (NYSE: HPE ) today announced new innovations to help customers transform into agentic enterprises and move AI into production with greater security, governance, and control."]}
+missing_information: []
+key_excerpts: [{"type":"supporting_context","text":"HPE Brings Agentic AI Into Production With NVIDIA, Delivering Security, Governance, Scale, and Sovereignty – Company Announcement - FT.com Hewlett Packard Enterprise Co ### HPE Brings Agentic AI Into Production With NVIDIA, Delivering Security, Governance, Scale, and Sovereignty Jun 16 2026 17:30...","supports":["signal_card_candidate","relationship_graph_input"],"importance":"medium","confidence":"high"},{"type":"supporting_context","text":"Hewlett Packard Enterprise Co HPE Brings Agentic AI Into Production With NVIDIA, Delivering Security, Governance, Scale, and Sovereignty Jun 16 2026 17:30 BST HPE Private Cloud AI deploys secure AI agents through new governance and improves tokenomics through scaled AI-data pipelines The HPE AI Factory with NVIDIA adds NVIDIA Vera CPU, NVIDIA Agent Toolkit, and NVIDIA Confidential Computing LAS VEGAS --(BUSINESS WIRE)--Jun.","supports":["signal_card_candidate","relationship_graph_input"],"importance":"medium","confidence":"high"},{"type":"supporting_context","text":"16, 2026-- HPE Discover Las Vegas 2026 – HPE (NYSE: HPE ) today announced new innovations to help customers transform into agentic enterprises and move AI into production with greater security, governance, and control.","supports":["signal_card_candidate","relationship_graph_input"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"These new offerings transform the HPE AI Factory with NVIDIA for the next era of AI where intelligence adapts, evolves, collaborates, and governs.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"quote","text":"“As AI becomes more autonomous, organizations need a new architecture to run it securely, govern it responsibly, and scale it economically,” said Antonio Neri , president and CEO, HPE .","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"high"},{"type":"case_detail","text":"“Across networking, servers, storage and software, HPE is delivering full-stack AI solutions with NVIDIA that build the foundation for agentic enterprises, helping customers move from experimentation to production with control and confidence.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-20T03:56:58.390Z
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# HPE Brings Agentic AI Into Production With NVIDIA, Delivering Security, Governance, Scale, and Sovereignty – Company Announcement - FT.com
+
+## clean_text
+
+Hewlett Packard Enterprise Co
+HPE Brings Agentic AI Into Production With NVIDIA, Delivering Security, Governance, Scale, and Sovereignty
+Jun 16 2026 17:30 BST
+HPE Private Cloud AI deploys secure AI agents through new governance and improves tokenomics through scaled AI-data pipelines
+The HPE AI Factory with NVIDIA adds NVIDIA Vera CPU,
+NVIDIA Agent Toolkit, and NVIDIA Confidential Computing
+LAS VEGAS --(BUSINESS WIRE)--Jun. 16, 2026--
+HPE Discover Las Vegas 2026 – HPE (NYSE: HPE ) today announced new innovations to help customers transform into agentic enterprises and move AI into production with greater security, governance, and control. These new offerings transform the HPE AI Factory with NVIDIA for the next era of AI where intelligence adapts, evolves, collaborates, and governs.
+“As AI becomes more autonomous, organizations need a new architecture to run it securely, govern it responsibly, and scale it economically,” said Antonio Neri , president and CEO, HPE . “Across networking, servers, storage and software, HPE is delivering full-stack AI solutions with NVIDIA that build the foundation for agentic enterprises, helping customers move from experimentation to production with control and confidence.”
+“Every layer of the computing stack is being reinvented for the age of AI agents,” said Jensen Huang , founder and CEO, NVIDIA. “Together with HPE , we are building AI factories for this new era of computing — powered by NVIDIA Vera CPUs, accelerated infrastructure, and secure AI software — to help enterprises transform their data into intelligent action.”
+Fully-operational enterprise agentic AI in the HPE AI Factory with NVIDIA
+Across every industry, enterprises are navigating how to thoroughly harness AI agents in full-scale production environments and to automate business processes and make better decisions. As organizations move to operationalize agentic AI and optimize token usage, HPE is delivering technology architected to simplify that journey while making it more secure and performant. HPE Private Cloud AI , a turnkey AI factory solution co-engineered with NVIDIA, is introducing new capabilities that help customers deploy trusted, enterprise-ready agentic AI with greater control, observability, and efficiency.
+Secure and governed agentic AI gives enterprises the controls needed to move agents from development to production with confidence. NVIDIA Agent Toolkit software, including NVIDIA Nemotron open models, NVIDIA NemoClaw , and the NVIDIA OpenShell secure runtime, provide an agent operating system that efficiently reasons, lets customers monitor agent behavior, enforce policies, and reduce deployment risk. HPE Private Cloud AI adds HPE ProLiant Compute DL394 Gen12 with NVIDIA Vera CPU as a compute-optimized foundation for agentic AI and high-performance data processing, including security and management features. New HPE Zerto Software capabilities help customers identify when rogue agent actions take place and use continuous data protection to rewind to a clean slate. HPE Private Cloud AI also supports secure local agent registration , providing customers with the ability to approve AI models, skills, and tools while adhering to centralized governance and security policies.
+Data is foundational to the AI journey but can also be its biggest bottleneck. HPE Private Cloud AI helps enterprises turn unstructured data into AI-ready pipelines in minutes while improving inference efficiency. With the built-in intelligence of HPE Alletra Storage MP X10000 , customers can automatically apply metadata and governance policies to prepare data for AI applications and cut token response times by up to 20X 1 . HPE Private Cloud AI helps customers optimize by improving prompt processing efficiency and boosting token throughput by up to 20% 2 . HPE Data Fabric Software broadens data availability for agentic workflows by extending support of model context protocol (MCP) to Apache Airflow and introduces an enterprise AI inventory that enriches distributed data with metadata. A standalone HPE Data Fabric appliance, available on HPE ProLiant Compute servers, simplifies and accelerates deployment.
+HPE Private Cloud AI optimizes a customer’s AI investment by helping to control token costs, maximize GPU utilization, and enable long-term scalability. New capabilities include a unified model gateway for governed frontier model access, active workload prioritization, and multi-node inferencing for up to 256 GPUs. Fine-tuning of pre-trained AI models, including NVIDIA Nemotron open models, with secure access to existing enterprise data for agentic AI is supported through NVIDIA NeMo .
+More security for the large-scale HPE AI Factory
+HPE is enhancing HPE AI Factory at-scale and HPE Sovereign AI Factory by introducing the following new capabilities:
+NVIDIA Confidential Computing for at-scale and sovereign architecture : HPE is integrating NVIDIA Confidential Computing for the HPE AI Factory through HPE Services. NVIDIA Confidential Computing protects models and private data during execution for on-premises or sovereign deployments. Establishing a chain of trust through cryptographic attestation and encryption at every stage to verify hardware, software, and datasets, enabling the HPE AI Factory to comply with regional or industry standards 3 . Across the HPE AI Factory , NVIDIA BlueField and NVIDIA DOCA enable zero-trust policy enforcement, runtime threat detection, and networking encryption – helping enterprises protect AI workloads, agents and data across the AI factory while maintaining performance and operational efficiency.
+Enhanced NVIDIA integration:
+HPE AI Factory at-scale and HPE Sovereign AI Factory will be available with NVIDIA RTX PRO 6000 Blackwell Server Edition GPUs , NVIDIA Spectrum-X Ethernet , NVIDIA BlueField-3 DPUs , and NVIDIA ConnectX-8 SuperNICs . The full-stack HPE AI Factory is based on NVIDIA reference architectures and supports a broad range of use cases, from AI development to production-ready deployments at scale – with software including NVIDIA AI Enterprise and ecosystem partners in the HPE Unleash AI program.
+HPE also recently announced it is broadening its AI factory solutions with NVIDIA Vera Rubin NVL72 by HPE rack-scale system, HPE Compute XD700 built on NVIDIA HGX Rubin NVL8, the HPE Cray Supercomputing GX240 Compute blade designed with NVIDIA Vera CPUs, and NVIDIA Quantum-X800 InfiniBand support for the HPE Cray Supercomputing GX5000.
+Availability
+The new HPE Private Cloud AI features will be available July 2026 .
+HPE Data Fabric Software will be available October 2026 .
+Additional HPE Private Cloud AI products and features including agentic observability, data intelligence, HPE Alletra Storage MP X10000, NVIDIA Agent Toolkit support and NVIDIA NemoClaw, will be available in Q4 2026.
+HPE Zerto Software support for agent action monitoring and continuous data protection will be available for Q4 2026.
+HPE Private Cloud AI with HPE ProLiant Compute DL394 Gen12 will be available in 2027.
+NVIDIA Confidential Computing will be available for HPE AI Factory with NVIDIA in Q4 2026.
+HPE AI Factory with NVIDIA RTX PRO Blackwell Server Edition GPUs, Spectrum-X Ethernet, BlueField-3 DPUs, and ConnectX-8 SuperNICs is available now.
+For more information, see HPE AI Factory With NVIDIA Expands for the Era of Agents .
+About HPE
+HPE (NYSE: HPE) is a leader in essential enterprise technology, bringing together the power of AI, cloud, and networking to help organizations achieve more. As pioneers of possibility, our innovation and expertise advance the way people live and work. We empower our customers across industries to optimize operational performance, transform data into foresight, and maximize their impact. Unlock your boldest ambitions with HPE. Discover more at www.hpe.com .
+_____________________________________
+Benchmark testing conducted on an HPE ProLiant Compute DL380a Gen12 server using eight NVIDIA H200 NVL GPUs and HPE Alletra Storage MP X10000 configured with three controller nodes running the NVIDIA Nemotron 70B model recorded a 20.4X improvement to time to first token (TTFT) with KV cache-aware inference optimization
+2 Based on internal HPE data collected while running five standard HuggingFace Leaderboard inference and fine-tuning benchmark tests against three popular large-language models hosted on an HPE Private Cloud AI system
+3 Cybersecurity Maturity Model Certification (CMMC), National Institute of Standards and Technology (NIST) 800, Security Technical Implementation Guides (STIG), and Federal Information Processing Standards (FIPS)
+View source version on businesswire.com :
+https://www.businesswire.com/news/home/20260616590642/en/
+Media Contact:
+Cristina Thai
+[email protected]
+Source: Hewlett Packard Enterprise
+
+## full_text
+
+Hewlett Packard Enterprise Co
+HPE Brings Agentic AI Into Production With NVIDIA, Delivering Security, Governance, Scale, and Sovereignty
+Jun 16 2026 17:30 BST
+HPE Private Cloud AI deploys secure AI agents through new governance and improves tokenomics through scaled AI-data pipelines
+The HPE AI Factory with NVIDIA adds NVIDIA Vera CPU,
+NVIDIA Agent Toolkit, and NVIDIA Confidential Computing
+LAS VEGAS --(BUSINESS WIRE)--Jun. 16, 2026--
+HPE Discover Las Vegas 2026 – HPE (NYSE: HPE ) today announced new innovations to help customers transform into agentic enterprises and move AI into production with greater security, governance, and control. These new offerings transform the HPE AI Factory with NVIDIA for the next era of AI where intelligence adapts, evolves, collaborates, and governs.
+“As AI becomes more autonomous, organizations need a new architecture to run it securely, govern it responsibly, and scale it economically,” said Antonio Neri , president and CEO, HPE . “Across networking, servers, storage and software, HPE is delivering full-stack AI solutions with NVIDIA that build the foundation for agentic enterprises, helping customers move from experimentation to production with control and confidence.”
+“Every layer of the computing stack is being reinvented for the age of AI agents,” said Jensen Huang , founder and CEO, NVIDIA. “Together with HPE , we are building AI factories for this new era of computing — powered by NVIDIA Vera CPUs, accelerated infrastructure, and secure AI software — to help enterprises transform their data into intelligent action.”
+Fully-operational enterprise agentic AI in the HPE AI Factory with NVIDIA
+Across every industry, enterprises are navigating how to thoroughly harness AI agents in full-scale production environments and to automate business processes and make better decisions. As organizations move to operationalize agentic AI and optimize token usage, HPE is delivering technology architected to simplify that journey while making it more secure and performant. HPE Private Cloud AI , a turnkey AI factory solution co-engineered with NVIDIA, is introducing new capabilities that help customers deploy trusted, enterprise-ready agentic AI with greater control, observability, and efficiency.
+Secure and governed agentic AI gives enterprises the controls needed to move agents from development to production with confidence. NVIDIA Agent Toolkit software, including NVIDIA Nemotron open models, NVIDIA NemoClaw , and the NVIDIA OpenShell secure runtime, provide an agent operating system that efficiently reasons, lets customers monitor agent behavior, enforce policies, and reduce deployment risk. HPE Private Cloud AI adds HPE ProLiant Compute DL394 Gen12 with NVIDIA Vera CPU as a compute-optimized foundation for agentic AI and high-performance data processing, including security and management features. New HPE Zerto Software capabilities help customers identify when rogue agent actions take place and use continuous data protection to rewind to a clean slate. HPE Private Cloud AI also supports secure local agent registration , providing customers with the ability to approve AI models, skills, and tools while adhering to centralized governance and security policies.
+Data is foundational to the AI journey but can also be its biggest bottleneck. HPE Private Cloud AI helps enterprises turn unstructured data into AI-ready pipelines in minutes while improving inference efficiency. With the built-in intelligence of HPE Alletra Storage MP X10000 , customers can automatically apply metadata and governance policies to prepare data for AI applications and cut token response times by up to 20X 1 . HPE Private Cloud AI helps customers optimize by improving prompt processing efficiency and boosting token throughput by up to 20% 2 . HPE Data Fabric Software broadens data availability for agentic workflows by extending support of model context protocol (MCP) to Apache Airflow and introduces an enterprise AI inventory that enriches distributed data with metadata. A standalone HPE Data Fabric appliance, available on HPE ProLiant Compute servers, simplifies and accelerates deployment.
+HPE Private Cloud AI optimizes a customer’s AI investment by helping to control token costs, maximize GPU utilization, and enable long-term scalability. New capabilities include a unified model gateway for governed frontier model access, active workload prioritization, and multi-node inferencing for up to 256 GPUs. Fine-tuning of pre-trained AI models, including NVIDIA Nemotron open models, with secure access to existing enterprise data for agentic AI is supported through NVIDIA NeMo .
+More security for the large-scale HPE AI Factory
+HPE is enhancing HPE AI Factory at-scale and HPE Sovereign AI Factory by introducing the following new capabilities:
+NVIDIA Confidential Computing for at-scale and sovereign architecture : HPE is integrating NVIDIA Confidential Computing for the HPE AI Factory through HPE Services. NVIDIA Confidential Computing protects models and private data during execution for on-premises or sovereign deployments. Establishing a chain of trust through cryptographic attestation and encryption at every stage to verify hardware, software, and datasets, enabling the HPE AI Factory to comply with regional or industry standards 3 . Across the HPE AI Factory , NVIDIA BlueField and NVIDIA DOCA enable zero-trust policy enforcement, runtime threat detection, and networking encryption – helping enterprises protect AI workloads, agents and data across the AI factory while maintaining performance and operational efficiency.
+Enhanced NVIDIA integration:
+HPE AI Factory at-scale and HPE Sovereign AI Factory will be available with NVIDIA RTX PRO 6000 Blackwell Server Edition GPUs , NVIDIA Spectrum-X Ethernet , NVIDIA BlueField-3 DPUs , and NVIDIA ConnectX-8 SuperNICs . The full-stack HPE AI Factory is based on NVIDIA reference architectures and supports a broad range of use cases, from AI development to production-ready deployments at scale – with software including NVIDIA AI Enterprise and ecosystem partners in the HPE Unleash AI program.
+HPE also recently announced it is broadening its AI factory solutions with NVIDIA Vera Rubin NVL72 by HPE rack-scale system, HPE Compute XD700 built on NVIDIA HGX Rubin NVL8, the HPE Cray Supercomputing GX240 Compute blade designed with NVIDIA Vera CPUs, and NVIDIA Quantum-X800 InfiniBand support for the HPE Cray Supercomputing GX5000.
+Availability
+The new HPE Private Cloud AI features will be available July 2026 .
+HPE Data Fabric Software will be available October 2026 .
+Additional HPE Private Cloud AI products and features including agentic observability, data intelligence, HPE Alletra Storage MP X10000, NVIDIA Agent Toolkit support and NVIDIA NemoClaw, will be available in Q4 2026.
+HPE Zerto Software support for agent action monitoring and continuous data protection will be available for Q4 2026.
+HPE Private Cloud AI with HPE ProLiant Compute DL394 Gen12 will be available in 2027.
+NVIDIA Confidential Computing will be available for HPE AI Factory with NVIDIA in Q4 2026.
+HPE AI Factory with NVIDIA RTX PRO Blackwell Server Edition GPUs, Spectrum-X Ethernet, BlueField-3 DPUs, and ConnectX-8 SuperNICs is available now.
+For more information, see HPE AI Factory With NVIDIA Expands for the Era of Agents .
+About HPE
+HPE (NYSE: HPE) is a leader in essential enterprise technology, bringing together the power of AI, cloud, and networking to help organizations achieve more. As pioneers of possibility, our innovation and expertise advance the way people live and work. We empower our customers across industries to optimize operational performance, transform data into foresight, and maximize their impact. Unlock your boldest ambitions with HPE. Discover more at www.hpe.com .
+_____________________________________
+Benchmark testing conducted on an HPE ProLiant Compute DL380a Gen12 server using eight NVIDIA H200 NVL GPUs and HPE Alletra Storage MP X10000 configured with three controller nodes running the NVIDIA Nemotron 70B model recorded a 20.4X improvement to time to first token (TTFT) with KV cache-aware inference optimization
+2 Based on internal HPE data collected while running five standard HuggingFace Leaderboard inference and fine-tuning benchmark tests against three popular large-language models hosted on an HPE Private Cloud AI system
+3 Cybersecurity Maturity Model Certification (CMMC), National Institute of Standards and Technology (NIST) 800, Security Technical Implementation Guides (STIG), and Federal Information Processing Standards (FIPS)
+View source version on businesswire.com :
+https://www.businesswire.com/news/home/20260616590642/en/
+Media Contact:
+Cristina Thai
+[email protected]
+Source: Hewlett Packard Enterprise
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 97
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":8801,"paragraph_count":37,"sentence_count":42,"boilerplate_hits":0,"symbol_ratio":0.0044,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **supporting_context**｜supports=signal_card_candidate, relationship_graph_input｜importance=medium｜confidence=high
+   HPE Brings Agentic AI Into Production With NVIDIA, Delivering Security, Governance, Scale, and Sovereignty – Company Announcement - FT.com Hewlett Packard Enterprise Co ### HPE Brings Agentic AI Into Production With NVIDIA, Delivering Security, Governance, Scale, and Sovereignty Jun 16 2026 17:30...
+
+2. **supporting_context**｜supports=signal_card_candidate, relationship_graph_input｜importance=medium｜confidence=high
+   Hewlett Packard Enterprise Co HPE Brings Agentic AI Into Production With NVIDIA, Delivering Security, Governance, Scale, and Sovereignty Jun 16 2026 17:30 BST HPE Private Cloud AI deploys secure AI agents through new governance and improves tokenomics through scaled AI-data pipelines The HPE AI Factory with NVIDIA adds NVIDIA Vera CPU, NVIDIA Agent Toolkit, and NVIDIA Confidential Computing LAS VEGAS --(BUSINESS WIRE)--Jun.
+
+3. **supporting_context**｜supports=signal_card_candidate, relationship_graph_input｜importance=medium｜confidence=high
+   16, 2026-- HPE Discover Las Vegas 2026 – HPE (NYSE: HPE ) today announced new innovations to help customers transform into agentic enterprises and move AI into production with greater security, governance, and control.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   These new offerings transform the HPE AI Factory with NVIDIA for the next era of AI where intelligence adapts, evolves, collaborates, and governs.
+
+5. **quote**｜supports=signal_card_candidate, relationship_graph_input, viewpoint｜importance=medium｜confidence=high
+   “As AI becomes more autonomous, organizations need a new architecture to run it securely, govern it responsibly, and scale it economically,” said Antonio Neri , president and CEO, HPE .
+
+6. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=high
+   “Across networking, servers, storage and software, HPE is delivering full-stack AI solutions with NVIDIA that build the foundation for agentic enterprises, helping customers move from experimentation to production with control and confidence.
+
+## business_elements
+
+- companies: keyword search, Anysearch, Nvidia
+- products: agents, Agent, agent, MCP, Agents
+- people: 暂无公开信息
+- industries: 法律 / 法务, 制造 / 工业, 企业服务
+- roles: CIO / IT 负责人, 开发者 / 工程团队
+- workflows: 计费 / 预算管理, 权限 / 安全治理, 部署 / 集成交付
+- business_actions: 发布 / 推出, 合作 / 联盟, 部署 / 上线
+- affected_departments: IT / 安全, 法务, 财务 / 预算, 销售 / 客服
+- numbers: 16, 2026, 17, 30, 30 B, 394, 12, 10000
+- quotes: As AI becomes more autonomous, organizations need a new architecture to run it securely, govern it responsibly, and scale it economically, / Every layer of the computing stack is being reinvented for the age of AI agents,
+
+## evidence_seed
+
+- company_actions: These new offerings transform the HPE AI Factory with NVIDIA for the next era of AI where intelligence adapts, evolves, collaborates, and governs.
+- case_details: “Across networking, servers, storage and software, HPE is delivering full-stack AI solutions with NVIDIA that build the foundation for agentic enterprises, helping customers move from experimentation to production with control and confidence.
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队
+- risks_or_constraints: HPE Brings Agentic AI Into Production With NVIDIA, Delivering Security, Governance, Scale, and Sovereignty – Company Announcement - FT.com Hewlett Packard Enterprise Co ### HPE Brings Agentic AI Into Production With NVIDIA, Delivering Security, Governance, Scale, and Sovereignty Jun 16 2026 17:30... / Hewlett Packard Enterprise Co HPE Brings Agentic AI Into Production With NVIDIA, Delivering Security, Governance, Scale, and Sovereignty Jun 16 2026 17:30 BST HPE Private Cloud AI deploys secure AI agents through new governance and improves tokenomics through scaled AI-data pipelines The HPE AI Factory with NVIDIA adds NVIDIA Vera CPU, NVIDIA Agent Toolkit, and NVIDIA Confidential Computing LAS VEGAS --(BUSINESS WIRE)--Jun. / 16, 2026-- HPE Discover Las Vegas 2026 – HPE (NYSE: HPE ) today announced new innovations to help customers transform into agentic enterprises and move AI into production with greater security, governance, and control.
+
+## guanlan_scores
+
+- importance_type: important_vertical_solution
+- importance_score: 5
+- importance_reason: AI hardware scenario or service deployment; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,ai_hardware_lens,commercial_or_risk_context,market_shaping_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: true
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- watchlist
+
+## missing_information
+
+- none
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: primary_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+HPE Brings Agentic AI Into Production With NVIDIA, Delivering Security, Governance, Scale, and Sovereignty – Company Announcement - FT.com Hewlett Packard Enterprise Co ### HPE Brings Agentic AI Into Production With NVIDIA, Delivering Security, Governance, Scale, and Sovereignty Jun 16 2026 17:30...
+
+## 采集备注
+
+该条目由 gdelt 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。
