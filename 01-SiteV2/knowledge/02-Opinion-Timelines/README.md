@@ -1,8 +1,8 @@
 ---
 type: opinion_timelines_index
 people_count: 46
-opinion_count: 1537
-generated_at: 2026-07-19T08:31:09.501Z
+opinion_count: 1539
+generated_at: 2026-07-20T03:17:44.981Z
 ---
 
 # 前沿观点 - 人物时间线目录
@@ -16,6 +16,7 @@ generated_at: 2026-07-19T08:31:09.501Z
 - [Guillermo Rauch](people/guillermo-rauch/README.md) - 91 条 - 最新 2026-07-19
 - [Thibault Sottiaux](people/thibault-sottiaux/README.md) - 80 条 - 最新 2026-07-19
 - [Zara Zhang](people/zara-zhang/README.md) - 77 条 - 最新 2026-07-19
+- [Simon Willison's Blog](people/simon-willisons-blog/README.md) - 45 条 - 最新 2026-07-19
 - [Swyx](people/swyx/README.md) - 98 条 - 最新 2026-07-18
 - [Nikunj Kothari](people/nikunj-kothari/README.md) - 86 条 - 最新 2026-07-18
 - [Aaron Levie](people/aaron-levie/README.md) - 69 条 - 最新 2026-07-18
@@ -24,7 +25,6 @@ generated_at: 2026-07-19T08:31:09.501Z
 - [Amjad Masad](people/amjad-masad/README.md) - 54 条 - 最新 2026-07-18
 - [Claude](people/claude/README.md) - 48 条 - 最新 2026-07-18
 - [Thariq](people/thariq/README.md) - 47 条 - 最新 2026-07-18
-- [Simon Willison's Blog](people/simon-willisons-blog/README.md) - 43 条 - 最新 2026-07-18
 - [Aditya Agarwal](people/aditya-agarwal/README.md) - 42 条 - 最新 2026-07-18
 - [Sam Altman](people/sam-altman/README.md) - 41 条 - 最新 2026-07-17
 - [Boris Cherny](people/boris-cherny/README.md) - 22 条 - 最新 2026-07-17
