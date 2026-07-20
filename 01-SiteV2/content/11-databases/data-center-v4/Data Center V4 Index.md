@@ -1,8 +1,8 @@
 ---
 type: data_center_v4_index
 status: current
-updated_at: 2026-07-19T06:40:20.176Z
-current_date: 2026-07-19
+updated_at: 2026-07-20T04:21:14.876Z
+current_date: 2026-07-20
 product_version: SITE-V4.2.0-entity-history
 raw_version: RAW-V3.0
 event_version: EVENT-V1.1
@@ -14,13 +14,13 @@ event_version: EVENT-V1.1
 
 ## Current snapshot
 
-- current bundle: [[2026-07-19/manifest.json]]
-- SourceArtifact: 8795
-- RawDocument: 8870
-- Claim: 4323
-- CanonicalEvent: 1298
-- public compatibility projection: 1286
-- QA items: 7487
+- current bundle: [[2026-07-20/manifest.json]]
+- SourceArtifact: 8911
+- RawDocument: 8986
+- Claim: 4455
+- CanonicalEvent: 1336
+- public compatibility projection: 1324
+- QA items: 7562
 
 ## Navigation
 
@@ -33,6 +33,7 @@ event_version: EVENT-V1.1
 
 | date | Raw | Claims | Events | Public | QA | files |
 |---|---:|---:|---:|---:|---:|---|
+| 2026-07-20 | 116 | 132 | 41 | 41 | 75 | [[2026-07-20/raw-documents.json|Raw]] · [[2026-07-20/canonical-events.json|Events]] · [[2026-07-20/qa-queue.json|QA]] |
 | 2026-07-19 | 111 | 120 | 38 | 37 | 73 | [[2026-07-19/raw-documents.json|Raw]] · [[2026-07-19/canonical-events.json|Events]] · [[2026-07-19/qa-queue.json|QA]] |
 | 2026-07-18 | 150 | 179 | 53 | 53 | 94 | [[2026-07-18/raw-documents.json|Raw]] · [[2026-07-18/canonical-events.json|Events]] · [[2026-07-18/qa-queue.json|QA]] |
 | 2026-07-17 | 160 | 164 | 38 | 38 | 111 | [[2026-07-17/raw-documents.json|Raw]] · [[2026-07-17/canonical-events.json|Events]] · [[2026-07-17/qa-queue.json|QA]] |

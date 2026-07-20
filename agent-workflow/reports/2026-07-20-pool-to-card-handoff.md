@@ -1,13 +1,13 @@
 # 2026-07-20 Pool-to-Card Handoff
 
-- generated_at: 2026-07-20T03:58:56.193Z
+- generated_at: 2026-07-20T04:16:58.292Z
 - raw_input_count: 116
 - pool_input_count: 108
-- written_count: 18
+- written_count: 19
 - merged_count: 0
 - skipped_count: 0
-- signal_asset_count: 17
-- not_promoted_candidate_count: 91
+- signal_asset_count: 18
+- not_promoted_candidate_count: 90
 - asset_generation_limit: all_cardable_raw_pool
 - signal_asset_mode: all cardable Raw / Pool business signals
 
@@ -27,9 +27,10 @@
 - SIG-20260720-A12｜P-064｜阿里云百炼上线 HappyOyster 1.0，一句话生成可互动 AI 数字世界
 - SIG-20260720-A13｜P-043｜壁仞科技推出 NPO 光互连、分布式解耦架构、最大 1024 卡超节点方案
 - SIG-20260720-A14｜P-055｜爱芯元智发布元曦系列大算力产品，A 系列AI推理卡算力超1000TOPS
-- SIG-20260720-A15｜P-073｜全球首款 AI 智能体手机努比亚 NaviX Ultra 亮相 WAIC，搭载豆包手机助手
-- SIG-20260720-A16｜P-089｜千里科技在 WAIC 公布多项进展：阶跃 Step AOS 将应用于汽车，年底推 ASD 5.0
-- SIG-20260720-A17｜P-048｜全新坦克 300 上市：提供 Hi4-T/Hi4-Z 混动、汽油、柴油版，19.98 万元起
+- SIG-20260720-A15｜P-061｜百度秒哒 3.5 发布：新增 iOS App 一键打包、SEO Agent 等六大能力
+- SIG-20260720-A16｜P-073｜全球首款 AI 智能体手机努比亚 NaviX Ultra 亮相 WAIC，搭载豆包手机助手
+- SIG-20260720-A17｜P-089｜千里科技在 WAIC 公布多项进展：阶跃 Step AOS 将应用于汽车，年底推 ASD 5.0
+- SIG-20260720-A18｜P-048｜全新坦克 300 上市：提供 Hi4-T/Hi4-Z 混动、汽油、柴油版，19.98 万元起
 
 ## Cluster / Dedupe Rows
 
@@ -47,6 +48,7 @@
 - P-064｜event:product_service:阿里云百炼:1.0｜accepted
 - P-043｜event:product_service:壁仞科技:1024｜accepted
 - P-055｜event:product_service:爱芯元智:1000｜accepted
+- P-061｜event:product_service:百度秒哒 3 5:3.5｜accepted
 - P-073｜event:product_service:努比亚:0｜accepted
 - P-089｜event:product_service:阶跃星辰:5.0｜accepted
 - P-048｜event:product_service:全新坦克 300 上市提供 hi4:300｜accepted
@@ -67,6 +69,7 @@
 - 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-07-20--signal--happyoyster-1-0-ai-auto-signal-p-064.md
 - 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-07-20--signal--npo-1024-auto-signal-p-043.md
 - 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-07-20--signal--a-ai-1000tops-auto-signal-p-055.md
+- 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-07-20--signal--3-5-auto-signal-p-061.md
 - 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-07-20--signal--ai-navix-ultra-waic-auto-signal-p-073.md
 - 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-07-20--signal--waic-step-aos-asd-5-0-auto-signal-p-089.md
 - 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-07-20--signal--300-hi4-auto-signal-p-048.md
@@ -129,7 +132,6 @@
 - P-054: fact_type_constraints:consumer_feature_without_enterprise_or_monetization_signal; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=low; title=华为 HiCar 获 7.0.0.206 版本邀测升级，新增手机驾驶模式等功能
 - P-057: business_signal_scope:missing_concrete_funding_product_or_case_event; repair=Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.; priority=review; title=面壁智能发布端侧模型 MiniCPM5-2B，AA-Index 榜单 4B 以下性能第一
 - P-059: fact_type_constraints:non_commercial_policy_or_ethics_signal; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=low; title=世界人工智能合作组织在上海成立，29国签署协定鼓励共建开源生态
-- P-061: valid_page_type:text_indicates_index_only; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=high; title=百度秒哒 3.5 发布：新增 iOS App 一键打包、SEO Agent 等六大能力
 - P-062: fact_type_constraints:secondary_review_or_rumor_not_original_event; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=low; title=阿里 Token Plan 个人版发布，限时优惠每月 39 元起，抢先体验 Qwen3.8-Max-Preview
 - P-063: fact_type_constraints:secondary_review_or_rumor_not_original_event; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=low; title=阿里千问 Qwen3.8 预览版模型上线：2.4T 参数量，宣称"可能是除了 Fable 5 外最强大的模型"
 - P-065: evidence_quality:stale_source_date; repair=Find a fresh same-event source or keep as backend audit evidence.; priority=low; title=Nvidia Set to Enter Next Phase as It Plans to Launch New AI Processing Chip, WSJ Reports

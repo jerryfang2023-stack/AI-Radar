@@ -319,13 +319,14 @@ function trimBoilerplate(text) {
 function sourceArtifact(raw, file) {
   const sourceUrl = cleanString(raw.original_url || raw.canonical_url || raw.source_url || raw.url || raw.link || raw.discovery_record?.origin_url);
   const contentHash = cleanString(raw.content_hash || raw.full_text_hash || hash(raw.clean_text || raw.full_text));
+  const sourceIdentity = sourceUrl || rel(file);
   const snapshotRefs = [raw.markdown_snapshot_path, raw.json_snapshot_path, raw.html_snapshot_path, raw.screenshot_path, file]
     .map(cleanString)
     .map((ref) => ref ? path.resolve(path.isAbsolute(ref) ? ref : path.join(root, ref)) : "")
     .filter((resolved) => resolved && (resolved === root || resolved.startsWith(`${root}${path.sep}`)) && fs.existsSync(resolved))
     .map(rel);
   return {
-    source_artifact_id: `SA-${hash(`${sourceUrl || file}|${contentHash}`)}`,
+    source_artifact_id: `SA-${hash(`${sourceIdentity}|${contentHash}`)}`,
     source_url: sourceUrl,
     canonical_url: cleanString(raw.canonical_url || sourceUrl),
     publisher: cleanString(raw.source_name),
@@ -474,7 +475,8 @@ function organizationMentions(title, parsed, eventType, claimEvidence = "") {
   }
 
   if (eventType !== "organization_people") {
-    for (const rawCandidate of splitEntityNames(parsed.subject)) {
+    const leadingActionSubject = title.match(/^(.{2,40}?)(?=\s*(?:发布|推出|上线|宣布|开源))/u)?.[1] || "";
+    for (const rawCandidate of [...splitEntityNames(parsed.subject), leadingActionSubject]) {
       const candidate = cleanOrganizationCandidate(rawCandidate);
       if (!candidate || canonical.has(candidate.toLocaleLowerCase())) continue;
       const start = Math.max(0, title.indexOf(candidate));
@@ -1371,4 +1373,4 @@ if (process.argv[1] && path.resolve(process.argv[1]) === __filename) {
   }
 }
 
-export { VERSION, JUDGMENT_KEYS, trimBoilerplate, normalizeEventTitle, findEventRule, eventStatus, forbiddenKeys };
+export { VERSION, JUDGMENT_KEYS, trimBoilerplate, normalizeEventTitle, findEventRule, eventStatus, forbiddenKeys, sourceArtifact };

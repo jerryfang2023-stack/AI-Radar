@@ -1,9 +1,10 @@
 import assert from "node:assert/strict";
+import crypto from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
 import test from "node:test";
 import { fileURLToPath } from "node:url";
-import { buildBundle, eventAiRelevanceEvidence, findEventRule, normalizeEventTitle, trimBoilerplate } from "../build-data-center-v4.mjs";
+import { buildBundle, eventAiRelevanceEvidence, findEventRule, normalizeEventTitle, sourceArtifact, trimBoilerplate } from "../build-data-center-v4.mjs";
 import { evaluateBundle, evaluateBundleFiles } from "../assert-data-center-v4.mjs";
 import { generateSourceTitleTranslation, isApprovedSourceTitleTranslation, normalizeSourceTitleTranslation, sourceTitleFactsPreserved, sourceTitleNeedsChineseTranslation, titleTranslationLooksUsable } from "../source-title-translation-generator.mjs";
 
@@ -122,6 +123,16 @@ function entry(id, title, body, extra = {}) {
     }
   };
 }
+
+test("URL-less SourceArtifact ids use repository-relative paths", () => {
+  const file = path.join(root, "01-SiteV2/content/01-raw/originals/2026-07-20/r-001.json");
+  const raw = { content_hash: "same-content", source_name: "Source without URL" };
+  const artifact = sourceArtifact(raw, file);
+  const stableIdentity = "01-SiteV2/content/01-raw/originals/2026-07-20/r-001.json|same-content";
+  const expectedId = `SA-${crypto.createHash("sha256").update(stableIdentity).digest("hex").slice(0, 16)}`;
+
+  assert.equal(artifact.source_artifact_id, expectedId);
+});
 
 test("opinion article does not become a regulation or hardware event", () => {
   const bundle = buildBundle([
@@ -425,6 +436,22 @@ test("organization aliases resolve Chinese commercial-event title structures", (
   assert.ok(names.has("Huawei"));
   assert.ok(names.has("Baidu"));
   assert.ok(bundle.canonical_events.every((event) => event.entities.length > 0));
+});
+
+test("an earlier release verb preserves the organization when deployment determines the event type", () => {
+  const bundle = buildBundle([
+    entry(
+      "space-matrix-deployment",
+      "深空矩阵发布\"星环计划\"，第一阶段部署约210颗卫星构建太空AI算力星座",
+      "深空矩阵在 2026 世界人工智能大会上，发布面向太空 AI 算力产业化落地的系统性星座方案\"星环计划\"。第一阶段目标部署约 210 颗卫星。",
+      { language: "zh" }
+    )
+  ], taxonomy, date, "2026-07-20T00:00:00.000Z");
+
+  const organization = bundle.entities.find((item) => item.entity_type === "organization_candidate");
+  assert.equal(organization?.canonical_name, "深空矩阵");
+  assert.ok(bundle.canonical_events[0].entities.includes(organization.entity_id));
+  assert.ok(!bundle.canonical_events[0].missing_fields.includes("entities"));
 });
 
 test("boilerplate is removed before claim extraction", () => {
