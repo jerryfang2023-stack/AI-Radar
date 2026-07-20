@@ -110,7 +110,11 @@ for (const [name, text] of [["production workflow", workflow], ["dry-run workflo
   if (/--max-cycles=3/u.test(text)) problems.push(`${name} still requests three monitor cycles`);
   if (/id:\s*monitor-readiness/u.test(text)) problems.push(`${name} still runs the duplicate monitor-readiness gate`);
 }
-if (/npm run test:data-center-site(?:\s|$)/mu.test(workflow) || !/npm run test:data-center-site:prepared/u.test(workflow)) {
+const repeatsDataCenterMaterialization = /npm run test:data-center-site(?:\s|$)/mu.test(workflow);
+const runsPreparedSiteTests = /npm run test:data-center-site:prepared/u.test(workflow);
+const runsSplitSiteTests =
+  /npm run test:data-center-site:core/u.test(workflow) && /npm run test:trend-radar/u.test(workflow);
+if (repeatsDataCenterMaterialization || (!runsPreparedSiteTests && !runsSplitSiteTests)) {
   problems.push("production workflow repeats Data Center materialization inside the site test command");
 }
 if (!/assert-business-signals-three-block-contract\.mjs/u.test(fs.readFileSync(path.join(root, "agent-workflow", "tools", "assert-business-signals-frontstage.mjs"), "utf8"))) {
