@@ -1,14 +1,15 @@
 ---
 type: opinion_person_timeline
 person_name: "Amanda Askell"
-opinion_count: 12
-latest_date: 2026-07-09
+opinion_count: 13
+latest_date: 2026-07-19
 ---
 
 # Amanda Askell 观点时间线
-共 12 条观点，按人物 + 日期文件聚合。
+共 13 条观点，按人物 + 日期文件聚合。
 ## 日期
 
+- [2026-07-19](./2026-07-19.md)
 - [2026-07-09](./2026-07-09.md)
 - [2026-07-05](./2026-07-05.md)
 - [2026-06-24](./2026-06-24.md)
