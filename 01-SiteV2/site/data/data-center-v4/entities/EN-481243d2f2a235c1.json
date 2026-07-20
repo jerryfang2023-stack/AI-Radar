@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-19T06:40:36.822Z",
-    "latestDataDate": "2026-07-19",
-    "currentDate": "2026-07-19",
-    "eventCount": 1286,
+    "generatedAt": "2026-07-20T03:58:48.579Z",
+    "latestDataDate": "2026-07-20",
+    "currentDate": "2026-07-20",
+    "eventCount": 1324,
     "quarantinedEventCount": 12
   },
   "entity": {
@@ -22,16 +22,13 @@
     ],
     "eventIds": [
       "EV-5be48cce8dc4f3de",
-      "EV-0d5a32aca724d30e",
       "EV-2cb9dbed2b2b6077"
     ],
     "viewpointIds": [],
-    "classificationRefs": [
-      "TX-technology-long_context"
-    ],
+    "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-09",
-    "lastSeen": "2026-07-19",
+    "lastSeen": "2026-06-14",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
@@ -40,7 +37,6 @@
       "deployments": [],
       "partnerships": [],
       "productsServices": [
-        "EV-0d5a32aca724d30e",
         "EV-2cb9dbed2b2b6077"
       ],
       "hardware": [],
@@ -48,39 +44,6 @@
       "other": []
     },
     "timeline": [
-      {
-        "id": "EV-0d5a32aca724d30e",
-        "dataDate": "2026-07-19",
-        "date": "2026-07-18",
-        "eventType": "model_release",
-        "eventTypeLabel": "模型发布",
-        "eventGroup": "模型、产品与服务",
-        "status": "completed",
-        "statusLabel": "已完成",
-        "title": "Moonshot AI 发布开源模型 Kimi K3，性能接近前沿闭源模型",
-        "displayTags": [
-          {
-            "dimensionId": "product_form",
-            "id": "model",
-            "dimensionName": "产品形态",
-            "name": "模型"
-          },
-          {
-            "dimensionId": "technology",
-            "dimensionName": "技术",
-            "id": "long_context",
-            "name": "长上下文"
-          }
-        ],
-        "entityIds": [
-          "EN-b5251b35f15bedc4",
-          "EN-8d4321d936320802",
-          "EN-6f7ac1823da81d2e",
-          "EN-c70eca6b0f88f44d",
-          "EN-607964040e4b62e0",
-          "EN-481243d2f2a235c1"
-        ]
-      },
       {
         "id": "EV-2cb9dbed2b2b6077",
         "dataDate": "2026-06-14",
@@ -132,61 +95,7 @@
   },
   "relatedEntities": [],
   "relationships": [],
-  "taxonomyNodes": [
-    {
-      "id": "TX-technology-long_context",
-      "name": "长上下文",
-      "nodeType": "technology",
-      "typeLabel": "技术",
-      "valueId": "long_context",
-      "eventIds": [
-        "EV-80e54c9a390da293",
-        "EV-fd21441fb6e143c3",
-        "EV-0d5a32aca724d30e",
-        "EV-653cbce2ccc79f8b",
-        "EV-70e3f88cb06a856c",
-        "EV-70cbf25f7ec2cc3a",
-        "EV-70efbfcaadcdb259",
-        "EV-0c06df62702d26ab",
-        "EV-534dc9add1c0cc35",
-        "EV-57f083a39393d841",
-        "EV-86537be17d50ff20"
-      ],
-      "entityIds": [
-        "EN-8d4321d936320802",
-        "EN-c70eca6b0f88f44d",
-        "EN-7df09a7717ef2feb",
-        "EN-3a7bd3e2360a3d29",
-        "EN-50537dab76505dfc",
-        "EN-b5251b35f15bedc4",
-        "EN-6f7ac1823da81d2e",
-        "EN-607964040e4b62e0",
-        "EN-481243d2f2a235c1",
-        "EN-f3cfedbe8428c9f7",
-        "EN-c04bd5ebd10ab696",
-        "EN-50ba7ff15827787b",
-        "EN-7d3194f79e645c42",
-        "EN-8f71c4871a160172",
-        "EN-78624f0a98e78301",
-        "EN-4b078b39d2fcacc7",
-        "EN-7dd7122ad9bf240f",
-        "EN-95b0632f1b292fa7",
-        "EN-047364b9be67f665",
-        "EN-1d79127e9d90e89b",
-        "EN-bc77259c5d2eb341",
-        "EN-52fc33ae4d101a5d",
-        "EN-bc1fc5140040180e",
-        "EN-3153ebda601cdb79",
-        "EN-c23eb5fae3cdd763",
-        "EN-c608c4787821de1b",
-        "EN-9c8ae69b84f21a2e"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [],
-      "firstSeen": "2026-06-12",
-      "lastSeen": "2026-07-19"
-    }
-  ],
+  "taxonomyNodes": [],
   "fde": [],
   "hardware": []
 }

@@ -1,0 +1,327 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-044
+title: "AI chatbots reading X-rays can be dangerously confident even when they're wrong"
+title_zh: "AI 聊天机器人解读 X 光片时即使出错也过度自信，存在风险"
+title_translation_status: translated
+title_translation_method: deepseek_title_translation
+title_translation_model: deepseek-v4-flash
+original_url: "https://the-decoder.com/ai-chatbots-reading-x-rays-can-be-dangerously-confident-even-when-theyre-wrong/"
+canonical_url: "https://the-decoder.com/ai-chatbots-reading-x-rays-can-be-dangerously-confident-even-when-theyre-wrong"
+source_name: "The Decoder AI News"
+source_type: media
+source_level: A
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: rss-feed
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-19T07:35:20.000Z"
+collected_at: 2026-07-20T03:56:50.880Z
+language: mixed
+full_text_hash: 8ff214a914008b77
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-20/r-044-ai-chatbots-reading-x-rays-can-be-dangerously-confident-even-when-they.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-20/r-044-ai-chatbots-reading-x-rays-can-be-dangerously-confident-even-when-they.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-json-ld
+extraction_quality: high
+extraction_method: "json-ld"
+readability_score: 91
+extractor_diagnostics: {"readability_score":91,"text_length":15555,"paragraph_count":66,"sentence_count":140,"boilerplate_hits":2,"symbol_ratio":0.0058,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"json-ld"}
+has_full_text: true
+content_length: 15555
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"8ff214a914008b77","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 0997cfeee4a74507
+content_hash: 8ff214a914008b77
+semantic_hash: 5681a1c29b87d325
+duplicate_of: ""
+first_seen_at: "2026-07-19T07:35:20.000Z"
+last_seen_at: 2026-07-20T03:56:50.880Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":[],"novelty":2,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["The Decoder AI News","OpenAI","Anthropic","Google","Meta"],"products":["Claude","Gemini","agents"],"people":[],"industries":["医疗","开发者工具"],"roles":["CIO / IT 负责人"],"workflows":["计费 / 预算管理"],"business_actions":["发布 / 推出","融资 / 投资"],"affected_departments":["IT / 安全","财务 / 预算","销售 / 客服"],"numbers":["2.0 b","039","2.0","2025","0","4","200","16 m"],"quotes":["Radiology's Last Exam,","I don't know.","attachment_58700","aligncenter","I don't know,"]}
+evidence_seed: {"company_actions":["The RadLE 2.0 benchmark tests whether AI models in radiology can tell when they should leave a diagnosis to a human. Many models deliver wrong findings with full confidence, and human radiologists are still well ahead. Before AI can diagnose on its own, it needs to learn when it's better to say nothing. The article AI chatbots reading X-rays can be dangerously confident even when they&#039;re wrong appeared first on The Decoder. ]]>","AI chatbots reading X-rays can be dangerously confident even when they're wrong AI chatbots reading X-rays can be dangerously confident even when they're wrong The RadLE 2.","0 benchmark tests whether AI models in radiology can tell when they should leave a diagnosis to a human."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"company_action","text":"The RadLE 2.0 benchmark tests whether AI models in radiology can tell when they should leave a diagnosis to a human. Many models deliver wrong findings with full confidence, and human radiologists are still well ahead. Before AI can diagnose on its own, it needs to learn when it's better to say nothing. The article AI chatbots reading X-rays can be dangerously confident even when they&#039;re wrong appeared first on The Decoder. ]]>","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"AI chatbots reading X-rays can be dangerously confident even when they're wrong AI chatbots reading X-rays can be dangerously confident even when they're wrong The RadLE 2.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"0 benchmark tests whether AI models in radiology can tell when they should leave a diagnosis to a human.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Many models deliver wrong findings with full confidence, and human radiologists are still well ahead.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Before AI can diagnose on its own, it needs to learn when it's better to say nothing.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-20T03:56:50.880Z
+theme: uncategorized
+keyword_group: uncategorized
+copyright_note: local research archive only
+---
+
+# AI chatbots reading X-rays can be dangerously confident even when they're wrong
+
+## clean_text
+
+AI chatbots reading X-rays can be dangerously confident even when they're wrong
+AI chatbots reading X-rays can be dangerously confident even when they're wrong
+The RadLE 2.0 benchmark tests whether AI models in radiology can tell when they should leave a diagnosis to a human. Many models deliver wrong findings with full confidence, and human radiologists are still well ahead. Before AI can diagnose on its own, it needs to learn when it's better to say nothing.
+The RadLE 2.0 benchmark tests whether AI models in radiology can tell when they should leave a diagnosis to a human. Many models deliver wrong findings with full confidence, and human radiologists are still well ahead. Before AI can diagnose on its own, it needs to learn when it's better to say nothing.
+AI, Menschen, Wirtschaft
+AI, Menschen, Wirtschaft
+Jonathan is a freelance tech journalist, author, and media coach. He covers open AI models, Chinese AI labs, and the technical underpinnings that make them tick – from novel training methods and scaling strategies to benchmark design. He's also an avid vibecoder.
+Jonathan is a freelance tech journalist, author, and media coach. He covers open AI models, Chinese AI labs, and the technical underpinnings that make them tick – from novel training methods and scaling strategies to benchmark design. He's also an avid vibecoder.
+AI chatbots reading X-rays can be dangerously confident even when they're wrong
+The RadLE 2.0 benchmark tests whether AI models in radiology can tell when they should leave a diagnosis to a human. Many models deliver wrong findings with full confidence, and human radiologists are still well ahead. Before AI can diagnose on its own, it needs to learn when it's better to say nothing.
+The second version of the RadLE benchmark tests whether AI systems in radiology can tell when they should leave a diagnosis to a human. Many models produce wrong findings with full confidence, and that's what makes them dangerous for patient care.
+RadLE 2.0, short for "Radiology's Last Exam," was developed by the CRASH Lab at Ashoka University in India. It's the revised follow-up to a test the team first released in September 2025. The new version measures whether a model gets the diagnosis right, how confident it is in that answer, and whether it can admit when it's out of its depth. The AI has to rate its answers on a confidence scale from 0 to 4 and is explicitly allowed to say "I don't know."
+The test ran 200 cases across 16 models and compared them against a panel of radiologists. Human experts scored 988.7 out of a possible 2,000 points. The best AI model hit 758.
+[caption id="attachment_58700" align="aligncenter" width="1800"] Human radiologists outperformed every tested AI model on the primary metric, which combines accuracy with the confidence level of each answer. | Image: Crash Lab[/caption]
+Honest silence beats overconfident guesswork
+The scoring system rewards honesty and punishes overconfidence. Get it right with high confidence, and you earn full points. Get it wrong while claiming high confidence, and you lose a matching number. Answer "I don't know," and you score zero but don't lose anything. A model that guesses confidently drops in the rankings even if its raw hit rate looks decent.
+The study tackles a point recently raised by this highly cited paper: as long as benchmarks only reward accuracy, AI models are trained to guess. In medicine, a confident misdiagnosis is far more dangerous than an honest admission of uncertainty.
+No single model wins across the board
+There's no overall winner. Anthropic's Claude Fable 5 performed best on reliable and safe answers, leading the primary metric. Google's Gemini 3 Pro had the highest raw accuracy.
+[caption id="attachment_37928" align="aligncenter" width="1800"] Measured purely on hit rate, the strongest frontier models are nearly catching up to human performance. | Image: Crash Lab[/caption]
+Meta's Muse Spark 1.1 was the best at knowing when to hand a case off to a human. Meta had recently cut Muse Spark 1.1's hallucination rate nearly in half because the model more often refuses to answer rather than giving a wrong one. Other frontier models trend the opposite way. Grok 4.5, for example, hallucinates significantly more than its predecessor because while it knows more, it's also more convinced of its wrong answers.
+[caption id="attachment_58696" align="aligncenter" width="1800"] The handover index measures whether a system can recognize, based on its own uncertainty, when it should pass a case to a human radiologist. | Image: Crash Lab[/caption]
+According to the research team, several models would have scored much better if they had stayed quiet more often instead of guessing. This was especially obvious among open-weight models and those trained specifically for medical use. They tried to answer nearly every case and were often wrong, usually with high confidence.
+[caption id="attachment_58695" align="aligncenter" width="1800"] Several top commercial models produce a large number of highly confident misdiagnoses, making their confidence level an unreliable indicator of accuracy. | Image: Crash Lab[/caption]
+[caption id="attachment_58694" align="aligncenter" width="1800"] Among open-weight and medical models, the gap to human performance widens sharply. Many attempt nearly every case but are frequently wrong, often with medium to high confidence. | Image: Crash Lab[/caption]
+The first version of the test painted an even starker picture. Radiologists hit 83 percent accuracy, while the best model managed only about 30 percent. Within three months, Gemini 3 Pro had already surpassed the level of resident radiologists. Accuracy is growing fast, but the models still lack any sense of their own limits.
+Patients are already sending their MRIs to chatbots
+More and more people are uploading X-rays or MRI scans to chatbots and trusting the responses. A recent study in npj Digital Medicine showed that widely used chatbots frequently give unreliable answers to medical questions.
+The research team accuses executives and investors of publicly overstating what AI models can do. Claims that AI systems already diagnose better than 99 percent of doctors are mostly based on anecdotes or simulations. As recently as April, a study of 21 models that were then considered state-of-the-art showed they aren't ready for unsupervised clinical use.
+RadLE 2.0 will be expanded on a rolling basis to include new models. A full scientific publication with cost analyses and an error taxonomy has been announced.
+Two other recent studies on autonomous medical AI agents pointed in a different direction. MIRA, a system for electronic health records, and AMIE were able to keep pace with general practitioners in simulated consultations. Both fueled expectations that AI could soon make diagnoses on its own. The RadLE 2.0 authors push back: before an AI makes decisions independently, it has to know when it's better off not doing so.
+Then there's the problem of skill loss. A Polish observational study from 2025 found that doctors who regularly use AI during colonoscopies detect significantly fewer precancerous lesions without the tool. Detection rates dropped from 28.4 to 22.4 percent. The authors call it the "Google Maps effect": without the navigation aid, users are lost.
+Radiology has seen this AI hype before
+Radiology already went through one AI hype cycle. In 2016, AI researcher Geoffrey Hinton declared that we should stop training radiologists because deep learning would soon take over the job. Colleagues like Richard Sutton agreed.
+Nearly ten years later, radiologists are still overburdened, and Hinton had to walk back his prediction. He had reduced the profession to image analysis and overlooked the complexity of the entire field. The fact that these systems can confidently produce wrong diagnoses means humans remain indispensable.
+OpenAI CEO Sam Altman spent years predicting that AI would replace human jobs at a scary pace, then recently walked it back, suggesting AI may have actually created more jobs. So far, research doesn't support either claim.
+AI specialists may understand their models, but they routinely overestimate how fast entire professions can be replaced. Those kinds of predictions are back in fashion right now. Much like the AI they build, even people don't always know when they'd be better off staying quiet because they're outside their own expertise.
+AI chatbots reading X-rays can be dangerously confident even when they're wrong
+The RadLE 2.0 benchmark tests whether AI models in radiology can tell when they should leave a diagnosis to a human. Many models deliver wrong findings with full confidence, and human radiologists are still well ahead. Before AI can diagnose on its own, it needs to learn when it's better to say nothing.
+The second version of the RadLE benchmark tests whether AI systems in radiology can tell when they should leave a diagnosis to a human. Many models produce wrong findings with full confidence, and that's what makes them dangerous for patient care.
+RadLE 2.0, short for "Radiology's Last Exam," was developed by the CRASH Lab at Ashoka University in India. It's the revised follow-up to a test the team first released in September 2025. The new version measures whether a model gets the diagnosis right, how confident it is in that answer, and whether it can admit when it's out of its depth. The AI has to rate its answers on a confidence scale from 0 to 4 and is explicitly allowed to say "I don't know."
+The test ran 200 cases across 16 models and compared them against a panel of radiologists. Human experts scored 988.7 out of a possible 2,000 points. The best AI model hit 758.
+[caption id="attachment_58700" align="aligncenter" width="1800"] Human radiologists outperformed every tested AI model on the primary metric, which combines accuracy with the confidence level of each answer. | Image: Crash Lab[/caption]
+Honest silence beats overconfident guesswork
+The scoring system rewards honesty and punishes overconfidence. Get it right with high confidence, and you earn full points. Get it wrong while claiming high confidence, and you lose a matching number. Answer "I don't know," and you score zero but don't lose anything. A model that guesses confidently drops in the rankings even if its raw hit rate looks decent.
+The study tackles a point recently raised by this highly cited paper: as long as benchmarks only reward accuracy, AI models are trained to guess. In medicine, a confident misdiagnosis is far more dangerous than an honest admission of uncertainty.
+No single model wins across the board
+There's no overall winner. Anthropic's Claude Fable 5 performed best on reliable and safe answers, leading the primary metric. Google's Gemini 3 Pro had the highest raw accuracy.
+[caption id="attachment_37928" align="aligncenter" width="1800"] Measured purely on hit rate, the strongest frontier models are nearly catching up to human performance. | Image: Crash Lab[/caption]
+Meta's Muse Spark 1.1 was the best at knowing when to hand a case off to a human. Meta had recently cut Muse Spark 1.1's hallucination rate nearly in half because the model more often refuses to answer rather than giving a wrong one. Other frontier models trend the opposite way. Grok 4.5, for example, hallucinates significantly more than its predecessor because while it knows more, it's also more convinced of its wrong answers.
+[caption id="attachment_58696" align="aligncenter" width="1800"] The handover index measures whether a system can recognize, based on its own uncertainty, when it should pass a case to a human radiologist. | Image: Crash Lab[/caption]
+According to the research team, several models would have scored much better if they had stayed quiet more often instead of guessing. This was especially obvious among open-weight models and those trained specifically for medical use. They tried to answer nearly every case and were often wrong, usually with high confidence.
+[caption id="attachment_58695" align="aligncenter" width="1800"] Several top commercial models produce a large number of highly confident misdiagnoses, making their confidence level an unreliable indicator of accuracy. | Image: Crash Lab[/caption]
+[caption id="attachment_58694" align="aligncenter" width="1800"] Among open-weight and medical models, the gap to human performance widens sharply. Many attempt nearly every case but are frequently wrong, often with medium to high confidence. | Image: Crash Lab[/caption]
+The first version of the test painted an even starker picture. Radiologists hit 83 percent accuracy, while the best model managed only about 30 percent. Within three months, Gemini 3 Pro had already surpassed the level of resident radiologists. Accuracy is growing fast, but the models still lack any sense of their own limits.
+Patients are already sending their MRIs to chatbots
+More and more people are uploading X-rays or MRI scans to chatbots and trusting the responses. A recent study in npj Digital Medicine showed that widely used chatbots frequently give unreliable answers to medical questions.
+The research team accuses executives and investors of publicly overstating what AI models can do. Claims that AI systems already diagnose better than 99 percent of doctors are mostly based on anecdotes or simulations. As recently as April, a study of 21 models that were then considered state-of-the-art showed they aren't ready for unsupervised clinical use.
+RadLE 2.0 will be expanded on a rolling basis to include new models. A full scientific publication with cost analyses and an error taxonomy has been announced.
+Two other recent studies on autonomous medical AI agents pointed in a different direction. MIRA, a system for electronic health records, and AMIE were able to keep pace with general practitioners in simulated consultations. Both fueled expectations that AI could soon make diagnoses on its own. The RadLE 2.0 authors push back: before an AI makes decisions independently, it has to know when it's better off not doing so.
+Then there's the problem of skill loss. A Polish observational study from 2025 found that doctors who regularly use AI during colonoscopies detect significantly fewer precancerous lesions without the tool. Detection rates dropped from 28.4 to 22.4 percent. The authors call it the "Google Maps effect": without the navigation aid, users are lost.
+Radiology has seen this AI hype before
+Radiology already went through one AI hype cycle. In 2016, AI researcher Geoffrey Hinton declared that we should stop training radiologists because deep learning would soon take over the job. Colleagues like Richard Sutton agreed.
+Nearly ten years later, radiologists are still overburdened, and Hinton had to walk back his prediction. He had reduced the profession to image analysis and overlooked the complexity of the entire field. The fact that these systems can confidently produce wrong diagnoses means humans remain indispensable.
+OpenAI CEO Sam Altman spent years predicting that AI would replace human jobs at a scary pace, then recently walked it back, suggesting AI may have actually created more jobs. So far, research doesn't support either claim.
+AI specialists may understand their models, but they routinely overestimate how fast entire professions can be replaced. Those kinds of predictions are back in fashion right now. Much like the AI they build, even people don't always know when they'd be better off staying quiet because they're outside their own expertise.
+
+## full_text
+
+AI chatbots reading X-rays can be dangerously confident even when they're wrong
+AI chatbots reading X-rays can be dangerously confident even when they're wrong
+The RadLE 2.0 benchmark tests whether AI models in radiology can tell when they should leave a diagnosis to a human. Many models deliver wrong findings with full confidence, and human radiologists are still well ahead. Before AI can diagnose on its own, it needs to learn when it's better to say nothing.
+The RadLE 2.0 benchmark tests whether AI models in radiology can tell when they should leave a diagnosis to a human. Many models deliver wrong findings with full confidence, and human radiologists are still well ahead. Before AI can diagnose on its own, it needs to learn when it's better to say nothing.
+AI, Menschen, Wirtschaft
+AI, Menschen, Wirtschaft
+Jonathan is a freelance tech journalist, author, and media coach. He covers open AI models, Chinese AI labs, and the technical underpinnings that make them tick – from novel training methods and scaling strategies to benchmark design. He's also an avid vibecoder.
+Jonathan is a freelance tech journalist, author, and media coach. He covers open AI models, Chinese AI labs, and the technical underpinnings that make them tick – from novel training methods and scaling strategies to benchmark design. He's also an avid vibecoder.
+AI chatbots reading X-rays can be dangerously confident even when they're wrong
+The RadLE 2.0 benchmark tests whether AI models in radiology can tell when they should leave a diagnosis to a human. Many models deliver wrong findings with full confidence, and human radiologists are still well ahead. Before AI can diagnose on its own, it needs to learn when it's better to say nothing.
+The second version of the RadLE benchmark tests whether AI systems in radiology can tell when they should leave a diagnosis to a human. Many models produce wrong findings with full confidence, and that's what makes them dangerous for patient care.
+RadLE 2.0, short for "Radiology's Last Exam," was developed by the CRASH Lab at Ashoka University in India. It's the revised follow-up to a test the team first released in September 2025. The new version measures whether a model gets the diagnosis right, how confident it is in that answer, and whether it can admit when it's out of its depth. The AI has to rate its answers on a confidence scale from 0 to 4 and is explicitly allowed to say "I don't know."
+The test ran 200 cases across 16 models and compared them against a panel of radiologists. Human experts scored 988.7 out of a possible 2,000 points. The best AI model hit 758.
+[caption id="attachment_58700" align="aligncenter" width="1800"] Human radiologists outperformed every tested AI model on the primary metric, which combines accuracy with the confidence level of each answer. | Image: Crash Lab[/caption]
+Honest silence beats overconfident guesswork
+The scoring system rewards honesty and punishes overconfidence. Get it right with high confidence, and you earn full points. Get it wrong while claiming high confidence, and you lose a matching number. Answer "I don't know," and you score zero but don't lose anything. A model that guesses confidently drops in the rankings even if its raw hit rate looks decent.
+The study tackles a point recently raised by this highly cited paper: as long as benchmarks only reward accuracy, AI models are trained to guess. In medicine, a confident misdiagnosis is far more dangerous than an honest admission of uncertainty.
+No single model wins across the board
+There's no overall winner. Anthropic's Claude Fable 5 performed best on reliable and safe answers, leading the primary metric. Google's Gemini 3 Pro had the highest raw accuracy.
+[caption id="attachment_37928" align="aligncenter" width="1800"] Measured purely on hit rate, the strongest frontier models are nearly catching up to human performance. | Image: Crash Lab[/caption]
+Meta's Muse Spark 1.1 was the best at knowing when to hand a case off to a human. Meta had recently cut Muse Spark 1.1's hallucination rate nearly in half because the model more often refuses to answer rather than giving a wrong one. Other frontier models trend the opposite way. Grok 4.5, for example, hallucinates significantly more than its predecessor because while it knows more, it's also more convinced of its wrong answers.
+[caption id="attachment_58696" align="aligncenter" width="1800"] The handover index measures whether a system can recognize, based on its own uncertainty, when it should pass a case to a human radiologist. | Image: Crash Lab[/caption]
+According to the research team, several models would have scored much better if they had stayed quiet more often instead of guessing. This was especially obvious among open-weight models and those trained specifically for medical use. They tried to answer nearly every case and were often wrong, usually with high confidence.
+[caption id="attachment_58695" align="aligncenter" width="1800"] Several top commercial models produce a large number of highly confident misdiagnoses, making their confidence level an unreliable indicator of accuracy. | Image: Crash Lab[/caption]
+[caption id="attachment_58694" align="aligncenter" width="1800"] Among open-weight and medical models, the gap to human performance widens sharply. Many attempt nearly every case but are frequently wrong, often with medium to high confidence. | Image: Crash Lab[/caption]
+The first version of the test painted an even starker picture. Radiologists hit 83 percent accuracy, while the best model managed only about 30 percent. Within three months, Gemini 3 Pro had already surpassed the level of resident radiologists. Accuracy is growing fast, but the models still lack any sense of their own limits.
+Patients are already sending their MRIs to chatbots
+More and more people are uploading X-rays or MRI scans to chatbots and trusting the responses. A recent study in npj Digital Medicine showed that widely used chatbots frequently give unreliable answers to medical questions.
+The research team accuses executives and investors of publicly overstating what AI models can do. Claims that AI systems already diagnose better than 99 percent of doctors are mostly based on anecdotes or simulations. As recently as April, a study of 21 models that were then considered state-of-the-art showed they aren't ready for unsupervised clinical use.
+RadLE 2.0 will be expanded on a rolling basis to include new models. A full scientific publication with cost analyses and an error taxonomy has been announced.
+Two other recent studies on autonomous medical AI agents pointed in a different direction. MIRA, a system for electronic health records, and AMIE were able to keep pace with general practitioners in simulated consultations. Both fueled expectations that AI could soon make diagnoses on its own. The RadLE 2.0 authors push back: before an AI makes decisions independently, it has to know when it's better off not doing so.
+Then there's the problem of skill loss. A Polish observational study from 2025 found that doctors who regularly use AI during colonoscopies detect significantly fewer precancerous lesions without the tool. Detection rates dropped from 28.4 to 22.4 percent. The authors call it the "Google Maps effect": without the navigation aid, users are lost.
+Radiology has seen this AI hype before
+Radiology already went through one AI hype cycle. In 2016, AI researcher Geoffrey Hinton declared that we should stop training radiologists because deep learning would soon take over the job. Colleagues like Richard Sutton agreed.
+Nearly ten years later, radiologists are still overburdened, and Hinton had to walk back his prediction. He had reduced the profession to image analysis and overlooked the complexity of the entire field. The fact that these systems can confidently produce wrong diagnoses means humans remain indispensable.
+OpenAI CEO Sam Altman spent years predicting that AI would replace human jobs at a scary pace, then recently walked it back, suggesting AI may have actually created more jobs. So far, research doesn't support either claim.
+AI specialists may understand their models, but they routinely overestimate how fast entire professions can be replaced. Those kinds of predictions are back in fashion right now. Much like the AI they build, even people don't always know when they'd be better off staying quiet because they're outside their own expertise.
+AI chatbots reading X-rays can be dangerously confident even when they're wrong
+The RadLE 2.0 benchmark tests whether AI models in radiology can tell when they should leave a diagnosis to a human. Many models deliver wrong findings with full confidence, and human radiologists are still well ahead. Before AI can diagnose on its own, it needs to learn when it's better to say nothing.
+The second version of the RadLE benchmark tests whether AI systems in radiology can tell when they should leave a diagnosis to a human. Many models produce wrong findings with full confidence, and that's what makes them dangerous for patient care.
+RadLE 2.0, short for "Radiology's Last Exam," was developed by the CRASH Lab at Ashoka University in India. It's the revised follow-up to a test the team first released in September 2025. The new version measures whether a model gets the diagnosis right, how confident it is in that answer, and whether it can admit when it's out of its depth. The AI has to rate its answers on a confidence scale from 0 to 4 and is explicitly allowed to say "I don't know."
+The test ran 200 cases across 16 models and compared them against a panel of radiologists. Human experts scored 988.7 out of a possible 2,000 points. The best AI model hit 758.
+[caption id="attachment_58700" align="aligncenter" width="1800"] Human radiologists outperformed every tested AI model on the primary metric, which combines accuracy with the confidence level of each answer. | Image: Crash Lab[/caption]
+Honest silence beats overconfident guesswork
+The scoring system rewards honesty and punishes overconfidence. Get it right with high confidence, and you earn full points. Get it wrong while claiming high confidence, and you lose a matching number. Answer "I don't know," and you score zero but don't lose anything. A model that guesses confidently drops in the rankings even if its raw hit rate looks decent.
+The study tackles a point recently raised by this highly cited paper: as long as benchmarks only reward accuracy, AI models are trained to guess. In medicine, a confident misdiagnosis is far more dangerous than an honest admission of uncertainty.
+No single model wins across the board
+There's no overall winner. Anthropic's Claude Fable 5 performed best on reliable and safe answers, leading the primary metric. Google's Gemini 3 Pro had the highest raw accuracy.
+[caption id="attachment_37928" align="aligncenter" width="1800"] Measured purely on hit rate, the strongest frontier models are nearly catching up to human performance. | Image: Crash Lab[/caption]
+Meta's Muse Spark 1.1 was the best at knowing when to hand a case off to a human. Meta had recently cut Muse Spark 1.1's hallucination rate nearly in half because the model more often refuses to answer rather than giving a wrong one. Other frontier models trend the opposite way. Grok 4.5, for example, hallucinates significantly more than its predecessor because while it knows more, it's also more convinced of its wrong answers.
+[caption id="attachment_58696" align="aligncenter" width="1800"] The handover index measures whether a system can recognize, based on its own uncertainty, when it should pass a case to a human radiologist. | Image: Crash Lab[/caption]
+According to the research team, several models would have scored much better if they had stayed quiet more often instead of guessing. This was especially obvious among open-weight models and those trained specifically for medical use. They tried to answer nearly every case and were often wrong, usually with high confidence.
+[caption id="attachment_58695" align="aligncenter" width="1800"] Several top commercial models produce a large number of highly confident misdiagnoses, making their confidence level an unreliable indicator of accuracy. | Image: Crash Lab[/caption]
+[caption id="attachment_58694" align="aligncenter" width="1800"] Among open-weight and medical models, the gap to human performance widens sharply. Many attempt nearly every case but are frequently wrong, often with medium to high confidence. | Image: Crash Lab[/caption]
+The first version of the test painted an even starker picture. Radiologists hit 83 percent accuracy, while the best model managed only about 30 percent. Within three months, Gemini 3 Pro had already surpassed the level of resident radiologists. Accuracy is growing fast, but the models still lack any sense of their own limits.
+Patients are already sending their MRIs to chatbots
+More and more people are uploading X-rays or MRI scans to chatbots and trusting the responses. A recent study in npj Digital Medicine showed that widely used chatbots frequently give unreliable answers to medical questions.
+The research team accuses executives and investors of publicly overstating what AI models can do. Claims that AI systems already diagnose better than 99 percent of doctors are mostly based on anecdotes or simulations. As recently as April, a study of 21 models that were then considered state-of-the-art showed they aren't ready for unsupervised clinical use.
+RadLE 2.0 will be expanded on a rolling basis to include new models. A full scientific publication with cost analyses and an error taxonomy has been announced.
+Two other recent studies on autonomous medical AI agents pointed in a different direction. MIRA, a system for electronic health records, and AMIE were able to keep pace with general practitioners in simulated consultations. Both fueled expectations that AI could soon make diagnoses on its own. The RadLE 2.0 authors push back: before an AI makes decisions independently, it has to know when it's better off not doing so.
+Then there's the problem of skill loss. A Polish observational study from 2025 found that doctors who regularly use AI during colonoscopies detect significantly fewer precancerous lesions without the tool. Detection rates dropped from 28.4 to 22.4 percent. The authors call it the "Google Maps effect": without the navigation aid, users are lost.
+Radiology has seen this AI hype before
+Radiology already went through one AI hype cycle. In 2016, AI researcher Geoffrey Hinton declared that we should stop training radiologists because deep learning would soon take over the job. Colleagues like Richard Sutton agreed.
+Nearly ten years later, radiologists are still overburdened, and Hinton had to walk back his prediction. He had reduced the profession to image analysis and overlooked the complexity of the entire field. The fact that these systems can confidently produce wrong diagnoses means humans remain indispensable.
+OpenAI CEO Sam Altman spent years predicting that AI would replace human jobs at a scary pace, then recently walked it back, suggesting AI may have actually created more jobs. So far, research doesn't support either claim.
+AI specialists may understand their models, but they routinely overestimate how fast entire professions can be replaced. Those kinds of predictions are back in fashion right now. Much like the AI they build, even people don't always know when they'd be better off staying quiet because they're outside their own expertise.
+
+## extraction_diagnostics
+
+- extraction_method: json-ld
+- readability_score: 91
+- fetch_status: fetched-readable-text-json-ld
+- extraction_quality: high
+- diagnostics: {"readability_score":91,"text_length":15555,"paragraph_count":66,"sentence_count":140,"boilerplate_hits":2,"symbol_ratio":0.0058,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"json-ld"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   The RadLE 2.0 benchmark tests whether AI models in radiology can tell when they should leave a diagnosis to a human. Many models deliver wrong findings with full confidence, and human radiologists are still well ahead. Before AI can diagnose on its own, it needs to learn when it's better to say nothing. The article AI chatbots reading X-rays can be dangerously confident even when they&#039;re wrong appeared first on The Decoder. ]]>
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   AI chatbots reading X-rays can be dangerously confident even when they're wrong AI chatbots reading X-rays can be dangerously confident even when they're wrong The RadLE 2.
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   0 benchmark tests whether AI models in radiology can tell when they should leave a diagnosis to a human.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Many models deliver wrong findings with full confidence, and human radiologists are still well ahead.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Before AI can diagnose on its own, it needs to learn when it's better to say nothing.
+
+## business_elements
+
+- companies: The Decoder AI News, OpenAI, Anthropic, Google, Meta
+- products: Claude, Gemini, agents
+- people: 暂无公开信息
+- industries: 医疗, 开发者工具
+- roles: CIO / IT 负责人
+- workflows: 计费 / 预算管理
+- business_actions: 发布 / 推出, 融资 / 投资
+- affected_departments: IT / 安全, 财务 / 预算, 销售 / 客服
+- numbers: 2.0 b, 039, 2.0, 2025, 0, 4, 200, 16 m
+- quotes: Radiology's Last Exam, / I don't know. / attachment_58700 / aligncenter / I don't know,
+
+## evidence_seed
+
+- company_actions: The RadLE 2.0 benchmark tests whether AI models in radiology can tell when they should leave a diagnosis to a human. Many models deliver wrong findings with full confidence, and human radiologists are still well ahead. Before AI can diagnose on its own, it needs to learn when it's better to say nothing. The article AI chatbots reading X-rays can be dangerously confident even when they&#039;re wrong appeared first on The Decoder. ]]> / AI chatbots reading X-rays can be dangerously confident even when they're wrong AI chatbots reading X-rays can be dangerously confident even when they're wrong The RadLE 2. / 0 benchmark tests whether AI models in radiology can tell when they should leave a diagnosis to a human.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: 
+- novelty: 2
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+The RadLE 2.0 benchmark tests whether AI models in radiology can tell when they should leave a diagnosis to a human. Many models deliver wrong findings with full confidence, and human radiologists are still well ahead. Before AI can diagnose on its own, it needs to learn when it's better to say nothing. The article AI chatbots reading X-rays can be dangerously confident even when they&#039;re wrong appeared first on The Decoder. ]]>
+
+## 采集备注
+
+该条目由 rss-feed 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

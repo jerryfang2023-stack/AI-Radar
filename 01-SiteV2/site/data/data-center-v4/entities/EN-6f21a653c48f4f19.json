@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-19T06:40:36.822Z",
-    "latestDataDate": "2026-07-19",
-    "currentDate": "2026-07-19",
-    "eventCount": 1286,
+    "generatedAt": "2026-07-20T03:58:48.579Z",
+    "latestDataDate": "2026-07-20",
+    "currentDate": "2026-07-20",
+    "eventCount": 1324,
     "quarantinedEventCount": 12
   },
   "entity": {
@@ -24,6 +24,8 @@
     ],
     "eventIds": [
       "EV-434dcf1813a84ead",
+      "EV-3b1d1dd87442e7f1",
+      "EV-938e395d50c33f40",
       "EV-8a9b12665a3e40a0",
       "EV-7256017056b81bbe"
     ],
@@ -36,7 +38,7 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-07-12",
-    "lastSeen": "2026-07-16",
+    "lastSeen": "2026-07-20",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -45,6 +47,8 @@
       ],
       "partnerships": [],
       "productsServices": [
+        "EV-3b1d1dd87442e7f1",
+        "EV-938e395d50c33f40",
         "EV-8a9b12665a3e40a0",
         "EV-7256017056b81bbe"
       ],
@@ -53,6 +57,53 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-3b1d1dd87442e7f1",
+        "dataDate": "2026-07-20",
+        "date": "2026-07-19",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "rumored",
+        "statusLabel": "rumored",
+        "title": "全球首款 AI 智能体手机努比亚 NaviX Ultra 亮相 WAIC，搭载豆包手机助手",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体"
+          }
+        ],
+        "entityIds": [
+          "EN-6f21a653c48f4f19",
+          "EN-6ef7552b4631e789",
+          "EN-5388bc10736a0eff",
+          "EN-dd758281d0c70e60"
+        ]
+      },
+      {
+        "id": "EV-938e395d50c33f40",
+        "dataDate": "2026-07-20",
+        "date": "2026-07-19",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "努比亚总裁倪飞：未来不是人操作手机，而是手机替人办事，NaviX Ultra 智能体手机即将量产",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体"
+          }
+        ],
+        "entityIds": [
+          "EN-6f21a653c48f4f19"
+        ]
+      },
       {
         "id": "EV-8a9b12665a3e40a0",
         "dataDate": "2026-07-16",
@@ -165,7 +216,10 @@
       "typeLabel": "技术",
       "valueId": "agentic_execution",
       "eventIds": [
+        "EV-f6e7a4fe77d7f5c9",
         "EV-6be89ebfbf8de6be",
+        "EV-b29878fdf79f2ac5",
+        "EV-c64e6836b9cd2b17",
         "EV-1da2e46e39a57d33",
         "EV-8b7cbb66a33a945d",
         "EV-38cce1b72977ff2b",
@@ -248,7 +302,9 @@
         "EV-c5643983538c6513",
         "EV-c8928410f6c145eb",
         "EV-c4303801ea8c54dc",
+        "EV-d5aa723446feebbb",
         "EV-23ae55daa341be06",
+        "EV-f70b73ad2b4b6aa9",
         "EV-da9bb2c98c1ce8cd",
         "EV-b726a9cda7beae64",
         "EV-4e5c6267b3237dac",
@@ -310,6 +366,13 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-86ab9c2f1416e9d8",
+        "EV-3b1d1dd87442e7f1",
+        "EV-4cb7e4c371fb252e",
+        "EV-7d09b00182b08c3f",
+        "EV-938e395d50c33f40",
+        "EV-c454be06f46514cc",
+        "EV-ca223f2a929b67a2",
         "EV-19bcfc6d7c1612cb",
         "EV-ee489212ff9135a4",
         "EV-25933b8f123f92be",
@@ -481,7 +544,10 @@
         "EV-c17f5a364ed6a3ac"
       ],
       "entityIds": [
+        "EN-270e2cfd11014ef8",
         "EN-522656609ff15589",
+        "EN-b0bc23fa8e20c543",
+        "EN-95fb1fa9a88b393c",
         "EN-cfd90af8403941bf",
         "EN-366289432b214eda",
         "EN-8d4321d936320802",
@@ -575,6 +641,7 @@
         "EN-da41c71b4dbc3956",
         "EN-f5cfcb570b7edac2",
         "EN-950de6ef17ca48ae",
+        "EN-c08f86842ff2c908",
         "EN-50e2a4156631df49",
         "EN-b81c8201acfc7639",
         "EN-5388bc10736a0eff",
@@ -636,13 +703,18 @@
         "EN-de5a1adf4fedcce1",
         "EN-19e41212c0556603",
         "EN-dca6ec9510fc0176",
+        "EN-6f21a653c48f4f19",
+        "EN-6ef7552b4631e789",
+        "EN-dd758281d0c70e60",
+        "EN-e9b67bdfb6ae6a2e",
+        "EN-985e1a7c957148f9",
+        "EN-3b29a20f0c5d0cdc",
+        "EN-2c348893efb2316e",
         "EN-2abf8289b2f2113f",
         "EN-91901356a63794df",
         "EN-be548deba4a093d7",
         "EN-92ec1124e1de6f54",
         "EN-8d57f84bd1847b24",
-        "EN-e9b67bdfb6ae6a2e",
-        "EN-985e1a7c957148f9",
         "EN-0a64d5a41e885455",
         "EN-8b0aea25404131b5",
         "EN-0e3c625f3930d7b7",
@@ -680,7 +752,6 @@
         "EN-b644c0a9d493976a",
         "EN-636fa9664f878a4d",
         "EN-6c87e5496f592f3c",
-        "EN-2c348893efb2316e",
         "EN-ef8ef0d64526209a",
         "EN-a89151ba4b5ac0f2",
         "EN-8b619895a83e35c8",
@@ -693,7 +764,6 @@
         "EN-43a340bb75b45f02",
         "EN-08b6a35be337edce",
         "EN-e3863f813fe47240",
-        "EN-6f21a653c48f4f19",
         "EN-4dbe391b8fcf977a",
         "EN-6a50fbf0b970c03a",
         "EN-d1ad14d4ad57d207",
@@ -925,7 +995,7 @@
         "HW-25ce41fab12d9ef2"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-19"
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "TX-industry-retail_ecommerce",
@@ -937,6 +1007,7 @@
         "EV-f6a72cddbda748b3",
         "EV-e7dcecaed5a0ee5b",
         "EV-8b0f056571d68269",
+        "EV-acf1bcb321414706",
         "EV-434dcf1813a84ead",
         "EV-a3b006906f6d46a0",
         "EV-046caa2b3d6fbdde",
@@ -960,6 +1031,7 @@
         "EN-b0532e1af75cc4ab",
         "EN-e5cc9e38970eacb5",
         "EN-cbc62794911ff31b",
+        "EN-b1d07f1a647ba7fb",
         "EN-6f21a653c48f4f19",
         "EN-4dbe391b8fcf977a",
         "EN-c5947269de664c47",
@@ -997,8 +1069,8 @@
         "FDE-309bc49d109029a3"
       ],
       "hardwareIds": [],
-      "firstSeen": "2026-01-20",
-      "lastSeen": "2026-07-18"
+      "firstSeen": "2023-06-28",
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "TX-use_case-robotics_automation",
@@ -1018,6 +1090,7 @@
         "EV-e4fec8a00b416d12",
         "EV-39848cdd62c00e59",
         "EV-4faa2bcf2e42e60c",
+        "EV-6833305504174bb1",
         "EV-73da0805f2a2705a",
         "EV-345c8a2cc00fe8ca",
         "EV-a69dd82a0512a294",
@@ -1058,6 +1131,7 @@
         "EN-72138e570e5103e2",
         "EN-aa75c47729b4a292",
         "EN-8147e6fed86d42c1",
+        "EN-a96df57737b74def",
         "EN-e2c64fbbaf48eeb2",
         "EN-68dce3237e10d795",
         "EN-9b07ac3374166b76",
@@ -1105,13 +1179,14 @@
       "hardwareIds": [
         "HW-ceb55d9bc637c1d3",
         "HW-8ec8f237534254df",
+        "HW-b13c3131fc20fe83",
         "HW-155f566cfd988f5e",
         "HW-cb9cc06cadda488b",
         "HW-0ebffabe51a60966",
         "HW-dca442211b264bbe"
       ],
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-07-19"
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "TX-technology-on_device",
@@ -1123,6 +1198,7 @@
         "EV-a15da1b52d939967",
         "EV-736404028b8ad33e",
         "EV-7263caa45bbf168e",
+        "EV-a5efa57f3f744425",
         "EV-653cbce2ccc79f8b",
         "EV-04efb4eecbb8125f",
         "EV-8a9b12665a3e40a0",
@@ -1153,6 +1229,8 @@
         "EN-8d4321d936320802",
         "EN-f5791343a13abc71",
         "EN-9fbf261b62c1d7c0",
+        "EN-3309b3b14807f39a",
+        "EN-61a405a731497229",
         "EN-f3cfedbe8428c9f7",
         "EN-7df09a7717ef2feb",
         "EN-c04bd5ebd10ab696",
@@ -1194,7 +1272,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-07-18"
+      "lastSeen": "2026-07-20"
     }
   ],
   "fde": [],

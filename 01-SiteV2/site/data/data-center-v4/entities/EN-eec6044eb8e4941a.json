@@ -1,0 +1,147 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-20T03:58:48.579Z",
+    "latestDataDate": "2026-07-20",
+    "currentDate": "2026-07-20",
+    "eventCount": 1324,
+    "quarantinedEventCount": 12
+  },
+  "entity": {
+    "id": "EN-eec6044eb8e4941a",
+    "name": "Pura 80",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-b8bc579bfa5797a2"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [
+      "EN-b81c8201acfc7639"
+    ],
+    "firstSeen": "2026-07-20",
+    "lastSeen": "2026-07-20",
+    "relationIds": [
+      "REL2-f54ed840f69a1dcb"
+    ],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-b8bc579bfa5797a2"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-b8bc579bfa5797a2",
+        "dataDate": "2026-07-20",
+        "date": "2026-07-20",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "华为 Pura 80 系列率先升级 HarmonyOS 6.1.0.135 SP8，新增单应用音量调节与图库 AI 修图增强",
+        "displayTags": [],
+        "entityIds": [
+          "EN-b81c8201acfc7639",
+          "EN-0c2f714483c404ad",
+          "EN-eec6044eb8e4941a"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [
+    {
+      "id": "EN-b81c8201acfc7639",
+      "name": "Huawei",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "华为"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-87432dbb99cd6033",
+        "EV-5be48cce8dc4f3de",
+        "EV-9563aa162529aab0",
+        "EV-b726a9cda7beae64",
+        "EV-a9810b47e0408a05",
+        "EV-afcd5426f5c01dc7",
+        "EV-26d2874c6ce028d6",
+        "EV-b93102125cc062e3",
+        "EV-6c361125c3f50bb6",
+        "EV-b8bc579bfa5797a2",
+        "EV-8a9b12665a3e40a0",
+        "EV-2d5746e41f96c3c2",
+        "EV-26c1248692fdcc10",
+        "EV-20cdbe59ba2a1359",
+        "EV-3c51bcb5e99d2b68",
+        "EV-2ce9542169b5dfda",
+        "EV-8e6f9c324aa0b2f3",
+        "EV-0597e07d7e73051a"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-code_generation",
+        "TX-industry-healthcare_life_sciences",
+        "TX-use_case-software_development",
+        "TX-technology-on_device",
+        "TX-technology-video_generation",
+        "TX-technology-multimodal",
+        "TX-industry-media_entertainment",
+        "TX-use_case-knowledge_search"
+      ],
+      "relatedEntityIds": [
+        "EN-0c2f714483c404ad",
+        "EN-eec6044eb8e4941a"
+      ],
+      "firstSeen": "2026-05-25",
+      "lastSeen": "2026-07-20"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-f54ed840f69a1dcb",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-b81c8201acfc7639",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-eec6044eb8e4941a",
+      "object_type": "entity",
+      "event_id": "EV-b8bc579bfa5797a2",
+      "claim_refs": [
+        "CL-2d88badc424645ed",
+        "CL-e9811c8a7a1424d5",
+        "CL-5e9e9c9b6cecaa2d",
+        "CL-468a130072b10e41"
+      ],
+      "source_refs": [
+        "SA-bc1589869996e5bf"
+      ],
+      "data_date": "2026-07-20",
+      "status": "verified"
+    }
+  ],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

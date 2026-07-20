@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-19T06:40:36.822Z",
-    "latestDataDate": "2026-07-19",
-    "currentDate": "2026-07-19",
-    "eventCount": 1286,
+    "generatedAt": "2026-07-20T03:58:48.579Z",
+    "latestDataDate": "2026-07-20",
+    "currentDate": "2026-07-20",
+    "eventCount": 1324,
     "quarantinedEventCount": 12
   },
   "node": {
@@ -28,6 +28,7 @@
       "EV-e4fec8a00b416d12",
       "EV-39848cdd62c00e59",
       "EV-4faa2bcf2e42e60c",
+      "EV-6833305504174bb1",
       "EV-73da0805f2a2705a",
       "EV-345c8a2cc00fe8ca",
       "EV-a69dd82a0512a294",
@@ -68,6 +69,7 @@
       "EN-72138e570e5103e2",
       "EN-aa75c47729b4a292",
       "EN-8147e6fed86d42c1",
+      "EN-a96df57737b74def",
       "EN-e2c64fbbaf48eeb2",
       "EN-68dce3237e10d795",
       "EN-9b07ac3374166b76",
@@ -115,13 +117,14 @@
     "hardwareIds": [
       "HW-ceb55d9bc637c1d3",
       "HW-8ec8f237534254df",
+      "HW-b13c3131fc20fe83",
       "HW-155f566cfd988f5e",
       "HW-cb9cc06cadda488b",
       "HW-0ebffabe51a60966",
       "HW-dca442211b264bbe"
     ],
     "firstSeen": "2026-05-24",
-    "lastSeen": "2026-07-19"
+    "lastSeen": "2026-07-20"
   },
   "events": [
     {
@@ -1293,6 +1296,70 @@
       "products": [],
       "sourceUrl": "https://blogs.nvidia.com/blog/nvidia-and-doosan-group-physical-ai",
       "publisher": "NVIDIA AI Blog"
+    },
+    {
+      "id": "EV-6833305504174bb1",
+      "dataDate": "2026-07-20",
+      "date": "2026-07-20",
+      "updatedDate": "2026-07-20",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "eventGroup": "AI 硬件",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "全球首款半人马机器人在上海问世，润科具能发布轮足复合机器人",
+      "originalTitle": "",
+      "subject": "全球首款半人马机器人在上海问世，润科具能",
+      "action": "发布轮足复合机器人",
+      "object": "全球首款半人马机器人在上海问世，润科具能发布轮足复合机器人",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "robotics_automation",
+            "dimensionName": "应用场景",
+            "name": "机器人与物理自动化"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        }
+      ],
+      "entityIds": [
+        "EN-a96df57737b74def"
+      ],
+      "entityNames": [
+        "全球首款半人马机器人在上海问世"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/978/833.htm",
+      "publisher": "IT之家（RSS）"
     },
     {
       "id": "EV-73da0805f2a2705a",
@@ -3577,6 +3644,7 @@
         "EV-92d28aef0c4b0a8a",
         "EV-c2800c1c5a3f568f",
         "EV-d4ddee1b39cced77",
+        "EV-30749250196dd507",
         "EV-e7b7df43970f7e2c",
         "EV-025778b83c1b2ca9",
         "EV-dce5de62b2e4b752",
@@ -3630,8 +3698,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-technology",
         "TX-technology-agentic_execution",
+        "TX-industry-technology",
         "TX-industry-financial_services",
         "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
@@ -3664,16 +3732,14 @@
         "EN-c70eca6b0f88f44d"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-19"
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "EN-8d4321d936320802",
       "name": "NVIDIA",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "英伟达"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -3718,7 +3784,6 @@
         "EV-4faa2bcf2e42e60c",
         "EV-9ee3c0ec243b6129",
         "EV-58c1cc3749294649",
-        "EV-0d5a32aca724d30e",
         "EV-118317b7f92e5e16",
         "EV-950237c6b3eb6343",
         "EV-29e069ac093f0e34",
@@ -3749,6 +3814,7 @@
         "EV-b7ba9acba80a852e",
         "EV-1a1fb68ba4d6a377",
         "EV-bac5824e594f1831",
+        "EV-625904809a9b14b8",
         "EV-4bb5b24400e49ea4",
         "EV-568d2aeab5234e48",
         "EV-b986a633cca27df9",
@@ -3765,6 +3831,7 @@
         "EV-aa63303570154a9b",
         "EV-d2ac9700c86913da",
         "EV-d43a561da59b2897",
+        "EV-02b19ffbe883ee2e",
         "EV-8993e021ac17df4a",
         "EV-34929bdd016dc8d6",
         "EV-08f736f61f2b46f3",
@@ -3774,8 +3841,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-technology",
         "TX-technology-agentic_execution",
+        "TX-industry-technology",
         "TX-use_case-enterprise_operations",
         "TX-industry-manufacturing",
         "TX-industry-automotive_transportation",
@@ -3802,29 +3869,26 @@
         "TX-technology-speech_audio"
       ],
       "relatedEntityIds": [
-        "EN-8395dc051feafc4c",
-        "EN-aa15d891a32a51b8",
+        "EN-1e71d9c1a5c4de16",
+        "EN-683d8d597da71192",
+        "EN-9e72fd4472222231",
         "EN-0f3360879e746531",
         "EN-a1b0d8a938903dc7",
-        "EN-956b7280912ef1cc",
         "EN-4a639cb888a15d75",
         "EN-8d323d8bba783aa3",
         "EN-b5738c169b693bee",
         "EN-51fd7dc086fcb858",
         "EN-9e193e1ec8d75d41",
-        "EN-3ae50afab3e392b8",
+        "EN-8395dc051feafc4c",
         "EN-936f01f91fdadf69",
         "EN-4e7e886400fe6a83",
         "EN-1dc405a4cda895d0",
         "EN-12ab68e37d104d27",
         "EN-a3266ab9e10d6105",
-        "EN-9fbf261b62c1d7c0",
-        "EN-11ef7b03c79c9bbd",
-        "EN-9bc22dcabf7f45b3",
-        "EN-171fa23d27b5894b"
+        "EN-9fbf261b62c1d7c0"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-19"
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "EN-59ae856cd788d0f5",
@@ -3930,6 +3994,8 @@
       ],
       "eventIds": [
         "EV-434dcf1813a84ead",
+        "EV-3b1d1dd87442e7f1",
+        "EV-938e395d50c33f40",
         "EV-8a9b12665a3e40a0",
         "EV-7256017056b81bbe"
       ],
@@ -3942,7 +4008,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-12",
-      "lastSeen": "2026-07-16"
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "EN-4dbe391b8fcf977a",
@@ -3959,6 +4025,7 @@
       "eventIds": [
         "EV-4b8064b1139e1724",
         "EV-434dcf1813a84ead",
+        "EV-218c2f6ecf3c369f",
         "EV-345c8a2cc00fe8ca",
         "EV-7256017056b81bbe"
       ],
@@ -3969,9 +4036,11 @@
         "TX-use_case-robotics_automation",
         "TX-technology-embodied_ai"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-0b706b4b95ba647c"
+      ],
       "firstSeen": "2026-07-03",
-      "lastSeen": "2026-07-19"
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "EN-3b39ea849059759f",
@@ -4133,8 +4202,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-technology",
         "TX-technology-agentic_execution",
+        "TX-industry-technology",
         "TX-industry-financial_services",
         "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
@@ -4148,9 +4217,9 @@
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-embodied_ai",
         "TX-technology-fine_tuning",
+        "TX-technology-video_generation",
         "TX-technology-multimodal",
         "TX-industry-media_entertainment",
-        "TX-technology-video_generation",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
         "TX-use_case-content_creation",
@@ -4267,6 +4336,7 @@
         "EV-02686922dd82c4aa",
         "EV-2fd730d0ad452334",
         "EV-4faa2bcf2e42e60c",
+        "EV-7d09b00182b08c3f",
         "EV-8a9b12665a3e40a0",
         "EV-cfa8c754627747a1",
         "EV-0d862d59b05361cc",
@@ -4285,7 +4355,28 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-04-28",
-      "lastSeen": "2026-07-18"
+      "lastSeen": "2026-07-20"
+    },
+    {
+      "id": "EN-a96df57737b74def",
+      "name": "全球首款半人马机器人在上海问世",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-6833305504174bb1"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-robotics_automation"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-20",
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "EN-e2c64fbbaf48eeb2",
@@ -4472,7 +4563,7 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "腾讯"
+        "腾讯混元"
       ],
       "verificationStatus": "verified",
       "datasetScopes": [
@@ -4488,6 +4579,7 @@
         "EV-619e33abf3f9bfbf",
         "EV-be2f6bfcad93c42f",
         "EV-c7b81290859057b0",
+        "EV-86ab9c2f1416e9d8",
         "EV-7fe139b107f9adc6",
         "EV-de54542fd7e2282c",
         "EV-3167e6eed75597e9",
@@ -4516,11 +4608,9 @@
         "TX-technology-multimodal",
         "TX-industry-media_entertainment"
       ],
-      "relatedEntityIds": [
-        "EN-ea3bd73e2b506e00"
-      ],
+      "relatedEntityIds": [],
       "firstSeen": "2026-05-18",
-      "lastSeen": "2026-07-19"
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "EN-f0da91960830b394",
@@ -4641,7 +4731,9 @@
       "name": "Amazon",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "Amazon Bedrock"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -4660,6 +4752,7 @@
         "EV-ec2e421d0e18be9b",
         "EV-c0a65877001ed413",
         "EV-303b418c63895ba6",
+        "EV-30749250196dd507",
         "EV-43976be427aefb52",
         "EV-b93b5cc15823e9c3",
         "EV-918fc324de3117bd",
@@ -4691,7 +4784,7 @@
         "EN-9fbf261b62c1d7c0"
       ],
       "firstSeen": "2025-12-02",
-      "lastSeen": "2026-07-18"
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "EN-a1b0d8a938903dc7",
@@ -5194,6 +5287,7 @@
         "EV-1c2723ad61d192bd",
         "EV-74dfbd82b47dc626",
         "EV-167f50a6f3134bd5",
+        "EV-30749250196dd507",
         "EV-712473b23a2a11a0",
         "EV-b9296439f7c34c89",
         "EV-cf5b2a0aff3914bd",
@@ -5285,7 +5379,9 @@
         "EV-3550e9863266ea96",
         "EV-ca420d07e12369f1",
         "EV-773ffcc6e1df56fa",
+        "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
+        "EV-b30dcacd355fe5f5",
         "EV-2f7e6d3a68bbf08f",
         "EV-5cd10de5c12916f0",
         "EV-067f57f6e6ffa6ce",
@@ -5328,8 +5424,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-technology",
         "TX-technology-agentic_execution",
+        "TX-industry-technology",
         "TX-industry-financial_services",
         "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
@@ -5382,7 +5478,7 @@
         "EN-7b8cb35de7ad047a"
       ],
       "firstSeen": "2026-02-19",
-      "lastSeen": "2026-07-19"
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "EN-94ff75465b1afa65",
@@ -5447,9 +5543,7 @@
       "classificationRefs": [
         "TX-use_case-robotics_automation"
       ],
-      "relatedEntityIds": [
-        "EN-8d4321d936320802"
-      ],
+      "relatedEntityIds": [],
       "firstSeen": "2026-06-01",
       "lastSeen": "2026-06-01"
     },
@@ -5580,8 +5674,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-technology",
         "TX-technology-agentic_execution",
+        "TX-industry-technology",
         "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
         "TX-industry-automotive_transportation",
@@ -5703,6 +5797,33 @@
     }
   ],
   "hardware": [
+    {
+      "id": "HW-b13c3131fc20fe83",
+      "eventId": "EV-6833305504174bb1",
+      "dataDate": "2026-07-20",
+      "date": "2026-07-20",
+      "title": "全球首款半人马机器人在上海问世，润科具能发布轮足复合机器人",
+      "hardwareType": "robot",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "未披露",
+      "supplier": "全球首款半人马机器人在上海问世",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/978/833.htm",
+      "sourceName": "IT之家（RSS）",
+      "sourceDate": "2026-07-20",
+      "entityIds": [
+        "EN-a96df57737b74def"
+      ]
+    },
     {
       "id": "HW-155f566cfd988f5e",
       "eventId": "EV-345c8a2cc00fe8ca",

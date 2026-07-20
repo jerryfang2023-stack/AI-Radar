@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-19T06:40:36.822Z",
-    "latestDataDate": "2026-07-19",
-    "currentDate": "2026-07-19",
-    "eventCount": 1286,
+    "generatedAt": "2026-07-20T03:58:48.579Z",
+    "latestDataDate": "2026-07-20",
+    "currentDate": "2026-07-20",
+    "eventCount": 1324,
     "quarantinedEventCount": 12
   },
   "entity": {
@@ -268,9 +268,7 @@
       "name": "NVIDIA",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "英伟达"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -315,7 +313,6 @@
         "EV-4faa2bcf2e42e60c",
         "EV-9ee3c0ec243b6129",
         "EV-58c1cc3749294649",
-        "EV-0d5a32aca724d30e",
         "EV-118317b7f92e5e16",
         "EV-950237c6b3eb6343",
         "EV-29e069ac093f0e34",
@@ -346,6 +343,7 @@
         "EV-b7ba9acba80a852e",
         "EV-1a1fb68ba4d6a377",
         "EV-bac5824e594f1831",
+        "EV-625904809a9b14b8",
         "EV-4bb5b24400e49ea4",
         "EV-568d2aeab5234e48",
         "EV-b986a633cca27df9",
@@ -362,6 +360,7 @@
         "EV-aa63303570154a9b",
         "EV-d2ac9700c86913da",
         "EV-d43a561da59b2897",
+        "EV-02b19ffbe883ee2e",
         "EV-8993e021ac17df4a",
         "EV-34929bdd016dc8d6",
         "EV-08f736f61f2b46f3",
@@ -371,8 +370,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-technology",
         "TX-technology-agentic_execution",
+        "TX-industry-technology",
         "TX-use_case-enterprise_operations",
         "TX-industry-manufacturing",
         "TX-industry-automotive_transportation",
@@ -399,29 +398,26 @@
         "TX-technology-speech_audio"
       ],
       "relatedEntityIds": [
-        "EN-8395dc051feafc4c",
-        "EN-aa15d891a32a51b8",
+        "EN-1e71d9c1a5c4de16",
+        "EN-683d8d597da71192",
+        "EN-9e72fd4472222231",
         "EN-0f3360879e746531",
         "EN-a1b0d8a938903dc7",
-        "EN-956b7280912ef1cc",
         "EN-4a639cb888a15d75",
         "EN-8d323d8bba783aa3",
         "EN-b5738c169b693bee",
         "EN-51fd7dc086fcb858",
         "EN-9e193e1ec8d75d41",
-        "EN-3ae50afab3e392b8",
+        "EN-8395dc051feafc4c",
         "EN-936f01f91fdadf69",
         "EN-4e7e886400fe6a83",
         "EN-1dc405a4cda895d0",
         "EN-12ab68e37d104d27",
         "EN-a3266ab9e10d6105",
-        "EN-9fbf261b62c1d7c0",
-        "EN-11ef7b03c79c9bbd",
-        "EN-9bc22dcabf7f45b3",
-        "EN-171fa23d27b5894b"
+        "EN-9fbf261b62c1d7c0"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-19"
+      "lastSeen": "2026-07-20"
     }
   ],
   "relationships": [
@@ -504,6 +500,7 @@
         "EV-19bcfc6d7c1612cb",
         "EV-6b51b1b6fe22c540",
         "EV-5f718c76c285ac9b",
+        "EV-625904809a9b14b8",
         "EV-309ea4fc27a66485",
         "EV-66b510b948ad4ba4",
         "EV-6ce6b9c9780b97d9",
@@ -552,6 +549,10 @@
         "EN-cf9488537f777c1a",
         "EN-38f4d27a18084522",
         "EN-94c93b5ab886f2d9",
+        "EN-d7aba0f660c463d8",
+        "EN-e58ee91f1d57df05",
+        "EN-3fd1b8ed094cd712",
+        "EN-8f451ae7730ddb67",
         "EN-ce635c4eabff5e4f",
         "EN-ab9e3beebd83960d",
         "EN-61cce404a45c3545",
@@ -573,7 +574,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2025-12-02",
-      "lastSeen": "2026-07-19"
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "TX-industry-automotive_transportation",
@@ -729,6 +730,7 @@
         "EV-e4fec8a00b416d12",
         "EV-39848cdd62c00e59",
         "EV-4faa2bcf2e42e60c",
+        "EV-6833305504174bb1",
         "EV-73da0805f2a2705a",
         "EV-345c8a2cc00fe8ca",
         "EV-a69dd82a0512a294",
@@ -769,6 +771,7 @@
         "EN-72138e570e5103e2",
         "EN-aa75c47729b4a292",
         "EN-8147e6fed86d42c1",
+        "EN-a96df57737b74def",
         "EN-e2c64fbbaf48eeb2",
         "EN-68dce3237e10d795",
         "EN-9b07ac3374166b76",
@@ -816,13 +819,14 @@
       "hardwareIds": [
         "HW-ceb55d9bc637c1d3",
         "HW-8ec8f237534254df",
+        "HW-b13c3131fc20fe83",
         "HW-155f566cfd988f5e",
         "HW-cb9cc06cadda488b",
         "HW-0ebffabe51a60966",
         "HW-dca442211b264bbe"
       ],
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-07-19"
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "TX-technology-embodied_ai",
@@ -836,6 +840,8 @@
         "EV-234ad54940674bf6",
         "EV-6415a58637893b34",
         "EV-4faa2bcf2e42e60c",
+        "EV-b580e33cabfea980",
+        "EV-4cb7e4c371fb252e",
         "EV-25933b8f123f92be",
         "EV-345c8a2cc00fe8ca",
         "EV-82b39e10391d0f3c",
@@ -860,11 +866,12 @@
         "EN-aa75c47729b4a292",
         "EN-8147e6fed86d42c1",
         "EN-96eebba49dbbf422",
+        "EN-149ae7e9819a17a0",
+        "EN-e9b67bdfb6ae6a2e",
+        "EN-985e1a7c957148f9",
         "EN-8d57f84bd1847b24",
         "EN-4dbe391b8fcf977a",
         "EN-0e6e48aba1669631",
-        "EN-e9b67bdfb6ae6a2e",
-        "EN-985e1a7c957148f9",
         "EN-e3b1bf3dab957ffe",
         "EN-754c490bd199c21a",
         "EN-7a3ecc54829211df",
@@ -892,7 +899,7 @@
         "HW-1450585d9cd5879f"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-07-19"
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "TX-technology-multimodal",
@@ -905,6 +912,8 @@
         "EV-a9810b47e0408a05",
         "EV-26d2874c6ce028d6",
         "EV-fd21441fb6e143c3",
+        "EV-9d5363657f3541e7",
+        "EV-0d5a32aca724d30e",
         "EV-ee489212ff9135a4",
         "EV-ba89f9414be0b041",
         "EV-6b51b1b6fe22c540",
@@ -940,6 +949,12 @@
         "EN-3a7bd3e2360a3d29",
         "EN-50537dab76505dfc",
         "EN-b5251b35f15bedc4",
+        "EN-a89151ba4b5ac0f2",
+        "EN-339217758bfa736e",
+        "EN-047364b9be67f665",
+        "EN-9f15bb7e29e191eb",
+        "EN-607964040e4b62e0",
+        "EN-10a27c6240d18dbe",
         "EN-be548deba4a093d7",
         "EN-92ec1124e1de6f54",
         "EN-3c6d89173e6636d7",
@@ -976,7 +991,6 @@
         "EN-2b96ed840c07482a",
         "EN-9a6ee79873b1fb7b",
         "EN-3f726694f178ed7a",
-        "EN-047364b9be67f665",
         "EN-d65d81c60c0c47c4",
         "EN-085598c00f2aaccf",
         "EN-a3c3b987b09fc1bb",
@@ -990,7 +1004,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-07-19"
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "TX-industry-telecommunications",

@@ -1,0 +1,257 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-077
+title: "I hate that I don’t hate this song made with Suno"
+title_zh: "我讨厌自己并不讨厌这首用Suno制作的歌"
+title_translation_status: translated
+title_translation_method: deepseek_title_translation
+title_translation_model: deepseek-v4-flash
+original_url: "https://www.theverge.com/entertainment/967678/1010benja-semiramis-dream-suno-ai-music"
+canonical_url: "https://theverge.com/entertainment/967678/1010benja-semiramis-dream-suno-ai-music"
+source_name: "The Verge AI"
+source_type: media
+source_level: A
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: supporting_article
+evidence_object_usable: false
+event_evidence: false
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: rss-feed
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-19T17:35:54.000Z"
+collected_at: 2026-07-20T03:56:59.330Z
+language: mixed
+full_text_hash: fb63ee7504ee81ec
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-20/r-077-i-hate-that-i-don-t-hate-this-song-made-with-suno.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-20/r-077-i-hate-that-i-don-t-hate-this-song-made-with-suno.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-json-ld
+extraction_quality: high
+extraction_method: "json-ld"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":7283,"paragraph_count":28,"sentence_count":66,"boilerplate_hits":0,"symbol_ratio":0.0022,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"json-ld"}
+has_full_text: true
+content_length: 7283
+fetch_error: ""
+evidence_strength: source_backed_event
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["insufficient_usable_evidence_object"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"fb63ee7504ee81ec","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: supporting_evidence
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: merged_provider_duplicates
+url_hash: 2ef5468a72e14c00
+content_hash: fb63ee7504ee81ec
+semantic_hash: 2c65a53311990b9c
+duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
+first_seen_at: "2026-07-19T17:35:54.000Z"
+last_seen_at: 2026-07-20T03:56:59.330Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":true,"case":false,"business_change":false,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["index_only"]
+change_action_detected: false
+evidence_eligibility: blocked
+evidence_block_reason: "not_event_case_or_trend_evidence"
+guanlan_scores: {"importance_type":"none","importance_score":1,"importance_reason":"no core WaveSight importance signal","supporting_signals":[],"novelty":2,"evidence_strength":4,"case_richness":3,"trend_relevance":2,"guanlan_relevance":2,"emerging_signal_score":3}
+business_elements: {"companies":["The Verge AI"],"products":[],"people":[],"industries":[],"roles":[],"workflows":[],"business_actions":[],"affected_departments":["IT / 安全"],"numbers":["8230","1010B","2024","5","8","2"],"quotes":["Semiramis’ Dream","Semiramis’ Dream.","Semiramis’ Dream","Semiramis’ Dream.","The good guy doesn’t win this one,"]}
+evidence_seed: {"company_actions":["I would never go so far as to say there’s no place for AI in music (I’m a fan of Holly Herndon, after all).","But I generally find music made with generative AI to be offensively boring, especially the outputs of Suno.","” Benja has been unapologetic about his use of generative AI on his latest EP, Time Has Nothing To Do With What You Choose… The other three tracks can’t quite hold a candle to what you find on 2024’s Ten Total."],"case_details":[],"workflow_changes":["I would never go so far as to say there's no place for AI in music (I'm a fan of Holly Herndon, after all). But I generally find music made with generative AI to be offensively boring, especially the outputs of Suno. So I'm having a bit of a tough time processing the fact that [&#8230;]","So I’m having a bit of a tough time processing the fact that I actually quite enjoy 1010Benja’s “Semiramis’ Dream."],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+missing_information: ["证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象","没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势","没有具体客户或真实企业案例","没有变化前后流程线索"]
+key_excerpts: [{"type":"workflow_change","text":"I would never go so far as to say there's no place for AI in music (I'm a fan of Holly Herndon, after all). But I generally find music made with generative AI to be offensively boring, especially the outputs of Suno. So I'm having a bit of a tough time processing the fact that [&#8230;]","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"quote","text":"I hate that I don’t hate this song made with Suno 1010Benja’s “Semiramis’ Dream” shows Suno can be more than an AI music slop engine in the right hands.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"I would never go so far as to say there’s no place for AI in music (I’m a fan of Holly Herndon, after all).","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"But I generally find music made with generative AI to be offensively boring, especially the outputs of Suno.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"workflow_change","text":"So I’m having a bit of a tough time processing the fact that I actually quite enjoy 1010Benja’s “Semiramis’ Dream.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"” Benja has been unapologetic about his use of generative AI on his latest EP, Time Has Nothing To Do With What You Choose… The other three tracks can’t quite hold a candle to what you find on 2024’s Ten Total.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-20T03:56:59.330Z
+theme: uncategorized
+keyword_group: uncategorized
+copyright_note: local research archive only
+---
+
+# I hate that I don’t hate this song made with Suno
+
+## clean_text
+
+I hate that I don’t hate this song made with Suno
+1010Benja’s “Semiramis’ Dream” shows Suno can be more than an AI music slop engine in the right hands.
+I would never go so far as to say there’s no place for AI in music (I’m a fan of Holly Herndon, after all). But I generally find music made with generative AI to be offensively boring, especially the outputs of Suno. So I’m having a bit of a tough time processing the fact that I actually quite enjoy 1010Benja’s “Semiramis’ Dream.”
+Benja has been unapologetic about his use of generative AI on his latest EP, Time Has Nothing To Do With What You Choose… The other three tracks can’t quite hold a candle to what you find on 2024’s Ten Total. But the opener “Semiramis’ Dream” is infectious. It explodes out of the speakers with a jungle beat and Benja’s incredible, obviously human voice front and center.
+[Media: https://youtu.be/XwKDmTxAqck?list=OLAK5uy_lYaoXcrvI8Tbc2saAjhHQQgQLebT-KVUw]
+You’d be forgiven for not immediately realizing that the song is the product of Suno. It lacks many of the dead giveaways. Even the most obviously AI part of the song — the choir of backup vocalists — is easily camouflaged amidst the hyperpop-influenced rapid-fire chops. Heavily processed and artificial-sounding vocals are a staple of many modern pop genres and, by leaning into that uncanniness, Benja is able to mask their origins.
+But Benja isn’t hiding. He told Hearing Things in an interview:
+> My friend Patrick Holder did the beat. I recorded the vocals. Then we fed Suno the elements, settled on something, brought it out, edited it on Ableton, and then put it back into Suno. So when you look in Deezer, it marks the song as AI-generated. We’re not hiding it. We don’t feel any shame about it.
+Benja’s process certainly separates it from the rest of the Suno slop out there. He wrote the lyrics, sang the vocals, and worked with collaborators to perform the music. Then fed that into Suno, took what the AI spit out, brought it into Abelton, edited it, added more layers, fed that back into Suno… rinse repeat ad naseum. Benja estimates he did this a few hundred times for “Semiramis’ Dream.”
+While Benja professes to be agnostic about the tools he uses, he is under no illusion that using generative AI doesn’t come with ethical baggage. He acknowledges the damage it’s doing to the planet, but somewhat nihilistically says we can’t stop greedy corporations or put the AI genie back in the bottle: “The good guy doesn’t win this one,” he says.
+> The only reason I’m using gen at all is because my visions are currently far beyond my means. People have been asking me, “Did you use gen AI for this EP?” I’m like, [sarcastically] “No, I hired a professional children’s choir.” What are we talking about? I haven’t paid rent last month, and I won’t pay rent this month. I don’t know where the fuck I’m gonna be.
+It’s hard not to empathize with Benja. Despite seeming to be on the verge of a breakout and earning a coveted Best New Music from Pitchfork for Ten Total, he’s a struggling artist who has endured periods of homelessness.
+Still, it’s also worth acknowledging that there is little on “Semiramis’s Dream” sonically that he couldn’t have achieved without AI. Sure, he couldn’t hire a children’s choir, but it’s not like the AI one found throughout the Time Has Nothing To Do With What You Choose… is particularly convincing. A similar effect could be accomplished with some layered performances and smart vocal processing.
+1010Benja hasn’t converted me — I still remain deeply skeptical of AI art. But he has proven that, in the right hands, Suno doesn’t have to be a slop engine.
+I hate that I don’t hate this song made with Suno
+1010Benja’s “Semiramis’ Dream” shows Suno can be more than an AI music slop engine in the right hands.
+I would never go so far as to say there’s no place for AI in music (I’m a fan of Holly Herndon, after all). But I generally find music made with generative AI to be offensively boring, especially the outputs of Suno. So I’m having a bit of a tough time processing the fact that I actually quite enjoy 1010Benja’s “Semiramis’ Dream.”
+Benja has been unapologetic about his use of generative AI on his latest EP, Time Has Nothing To Do With What You Choose… The other three tracks can’t quite hold a candle to what you find on 2024’s Ten Total. But the opener “Semiramis’ Dream” is infectious. It explodes out of the speakers with a jungle beat and Benja’s incredible, obviously human voice front and center.
+[Media: https://youtu.be/XwKDmTxAqck?list=OLAK5uy_lYaoXcrvI8Tbc2saAjhHQQgQLebT-KVUw]
+You’d be forgiven for not immediately realizing that the song is the product of Suno. It lacks many of the dead giveaways. Even the most obviously AI part of the song — the choir of backup vocalists — is easily camouflaged amidst the hyperpop-influenced rapid-fire chops. Heavily processed and artificial-sounding vocals are a staple of many modern pop genres and, by leaning into that uncanniness, Benja is able to mask their origins.
+But Benja isn’t hiding. He told Hearing Things in an interview:
+> My friend Patrick Holder did the beat. I recorded the vocals. Then we fed Suno the elements, settled on something, brought it out, edited it on Ableton, and then put it back into Suno. So when you look in Deezer, it marks the song as AI-generated. We’re not hiding it. We don’t feel any shame about it.
+Benja’s process certainly separates it from the rest of the Suno slop out there. He wrote the lyrics, sang the vocals, and worked with collaborators to perform the music. Then fed that into Suno, took what the AI spit out, brought it into Abelton, edited it, added more layers, fed that back into Suno… rinse repeat ad naseum. Benja estimates he did this a few hundred times for “Semiramis’ Dream.”
+While Benja professes to be agnostic about the tools he uses, he is under no illusion that using generative AI doesn’t come with ethical baggage. He acknowledges the damage it’s doing to the planet, but somewhat nihilistically says we can’t stop greedy corporations or put the AI genie back in the bottle: “The good guy doesn’t win this one,” he says.
+> The only reason I’m using gen at all is because my visions are currently far beyond my means. People have been asking me, “Did you use gen AI for this EP?” I’m like, [sarcastically] “No, I hired a professional children’s choir.” What are we talking about? I haven’t paid rent last month, and I won’t pay rent this month. I don’t know where the fuck I’m gonna be.
+It’s hard not to empathize with Benja. Despite seeming to be on the verge of a breakout and earning a coveted Best New Music from Pitchfork for Ten Total, he’s a struggling artist who has endured periods of homelessness.
+Still, it’s also worth acknowledging that there is little on “Semiramis’s Dream” sonically that he couldn’t have achieved without AI. Sure, he couldn’t hire a children’s choir, but it’s not like the AI one found throughout the Time Has Nothing To Do With What You Choose… is particularly convincing. A similar effect could be accomplished with some layered performances and smart vocal processing.
+1010Benja hasn’t converted me — I still remain deeply skeptical of AI art. But he has proven that, in the right hands, Suno doesn’t have to be a slop engine.
+
+## full_text
+
+I hate that I don’t hate this song made with Suno
+1010Benja’s “Semiramis’ Dream” shows Suno can be more than an AI music slop engine in the right hands.
+I would never go so far as to say there’s no place for AI in music (I’m a fan of Holly Herndon, after all). But I generally find music made with generative AI to be offensively boring, especially the outputs of Suno. So I’m having a bit of a tough time processing the fact that I actually quite enjoy 1010Benja’s “Semiramis’ Dream.”
+Benja has been unapologetic about his use of generative AI on his latest EP, Time Has Nothing To Do With What You Choose… The other three tracks can’t quite hold a candle to what you find on 2024’s Ten Total. But the opener “Semiramis’ Dream” is infectious. It explodes out of the speakers with a jungle beat and Benja’s incredible, obviously human voice front and center.
+[Media: https://youtu.be/XwKDmTxAqck?list=OLAK5uy_lYaoXcrvI8Tbc2saAjhHQQgQLebT-KVUw]
+You’d be forgiven for not immediately realizing that the song is the product of Suno. It lacks many of the dead giveaways. Even the most obviously AI part of the song — the choir of backup vocalists — is easily camouflaged amidst the hyperpop-influenced rapid-fire chops. Heavily processed and artificial-sounding vocals are a staple of many modern pop genres and, by leaning into that uncanniness, Benja is able to mask their origins.
+But Benja isn’t hiding. He told Hearing Things in an interview:
+> My friend Patrick Holder did the beat. I recorded the vocals. Then we fed Suno the elements, settled on something, brought it out, edited it on Ableton, and then put it back into Suno. So when you look in Deezer, it marks the song as AI-generated. We’re not hiding it. We don’t feel any shame about it.
+Benja’s process certainly separates it from the rest of the Suno slop out there. He wrote the lyrics, sang the vocals, and worked with collaborators to perform the music. Then fed that into Suno, took what the AI spit out, brought it into Abelton, edited it, added more layers, fed that back into Suno… rinse repeat ad naseum. Benja estimates he did this a few hundred times for “Semiramis’ Dream.”
+While Benja professes to be agnostic about the tools he uses, he is under no illusion that using generative AI doesn’t come with ethical baggage. He acknowledges the damage it’s doing to the planet, but somewhat nihilistically says we can’t stop greedy corporations or put the AI genie back in the bottle: “The good guy doesn’t win this one,” he says.
+> The only reason I’m using gen at all is because my visions are currently far beyond my means. People have been asking me, “Did you use gen AI for this EP?” I’m like, [sarcastically] “No, I hired a professional children’s choir.” What are we talking about? I haven’t paid rent last month, and I won’t pay rent this month. I don’t know where the fuck I’m gonna be.
+It’s hard not to empathize with Benja. Despite seeming to be on the verge of a breakout and earning a coveted Best New Music from Pitchfork for Ten Total, he’s a struggling artist who has endured periods of homelessness.
+Still, it’s also worth acknowledging that there is little on “Semiramis’s Dream” sonically that he couldn’t have achieved without AI. Sure, he couldn’t hire a children’s choir, but it’s not like the AI one found throughout the Time Has Nothing To Do With What You Choose… is particularly convincing. A similar effect could be accomplished with some layered performances and smart vocal processing.
+1010Benja hasn’t converted me — I still remain deeply skeptical of AI art. But he has proven that, in the right hands, Suno doesn’t have to be a slop engine.
+I hate that I don’t hate this song made with Suno
+1010Benja’s “Semiramis’ Dream” shows Suno can be more than an AI music slop engine in the right hands.
+I would never go so far as to say there’s no place for AI in music (I’m a fan of Holly Herndon, after all). But I generally find music made with generative AI to be offensively boring, especially the outputs of Suno. So I’m having a bit of a tough time processing the fact that I actually quite enjoy 1010Benja’s “Semiramis’ Dream.”
+Benja has been unapologetic about his use of generative AI on his latest EP, Time Has Nothing To Do With What You Choose… The other three tracks can’t quite hold a candle to what you find on 2024’s Ten Total. But the opener “Semiramis’ Dream” is infectious. It explodes out of the speakers with a jungle beat and Benja’s incredible, obviously human voice front and center.
+[Media: https://youtu.be/XwKDmTxAqck?list=OLAK5uy_lYaoXcrvI8Tbc2saAjhHQQgQLebT-KVUw]
+You’d be forgiven for not immediately realizing that the song is the product of Suno. It lacks many of the dead giveaways. Even the most obviously AI part of the song — the choir of backup vocalists — is easily camouflaged amidst the hyperpop-influenced rapid-fire chops. Heavily processed and artificial-sounding vocals are a staple of many modern pop genres and, by leaning into that uncanniness, Benja is able to mask their origins.
+But Benja isn’t hiding. He told Hearing Things in an interview:
+> My friend Patrick Holder did the beat. I recorded the vocals. Then we fed Suno the elements, settled on something, brought it out, edited it on Ableton, and then put it back into Suno. So when you look in Deezer, it marks the song as AI-generated. We’re not hiding it. We don’t feel any shame about it.
+Benja’s process certainly separates it from the rest of the Suno slop out there. He wrote the lyrics, sang the vocals, and worked with collaborators to perform the music. Then fed that into Suno, took what the AI spit out, brought it into Abelton, edited it, added more layers, fed that back into Suno… rinse repeat ad naseum. Benja estimates he did this a few hundred times for “Semiramis’ Dream.”
+While Benja professes to be agnostic about the tools he uses, he is under no illusion that using generative AI doesn’t come with ethical baggage. He acknowledges the damage it’s doing to the planet, but somewhat nihilistically says we can’t stop greedy corporations or put the AI genie back in the bottle: “The good guy doesn’t win this one,” he says.
+> The only reason I’m using gen at all is because my visions are currently far beyond my means. People have been asking me, “Did you use gen AI for this EP?” I’m like, [sarcastically] “No, I hired a professional children’s choir.” What are we talking about? I haven’t paid rent last month, and I won’t pay rent this month. I don’t know where the fuck I’m gonna be.
+It’s hard not to empathize with Benja. Despite seeming to be on the verge of a breakout and earning a coveted Best New Music from Pitchfork for Ten Total, he’s a struggling artist who has endured periods of homelessness.
+Still, it’s also worth acknowledging that there is little on “Semiramis’s Dream” sonically that he couldn’t have achieved without AI. Sure, he couldn’t hire a children’s choir, but it’s not like the AI one found throughout the Time Has Nothing To Do With What You Choose… is particularly convincing. A similar effect could be accomplished with some layered performances and smart vocal processing.
+1010Benja hasn’t converted me — I still remain deeply skeptical of AI art. But he has proven that, in the right hands, Suno doesn’t have to be a slop engine.
+
+## extraction_diagnostics
+
+- extraction_method: json-ld
+- readability_score: 97
+- fetch_status: fetched-readable-text-json-ld
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":7283,"paragraph_count":28,"sentence_count":66,"boilerplate_hits":0,"symbol_ratio":0.0022,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"json-ld"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   I would never go so far as to say there's no place for AI in music (I'm a fan of Holly Herndon, after all). But I generally find music made with generative AI to be offensively boring, especially the outputs of Suno. So I'm having a bit of a tough time processing the fact that [&#8230;]
+
+2. **quote**｜supports=signal_card_candidate, relationship_graph_input, viewpoint｜importance=medium｜confidence=high
+   I hate that I don’t hate this song made with Suno 1010Benja’s “Semiramis’ Dream” shows Suno can be more than an AI music slop engine in the right hands.
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   I would never go so far as to say there’s no place for AI in music (I’m a fan of Holly Herndon, after all).
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   But I generally find music made with generative AI to be offensively boring, especially the outputs of Suno.
+
+5. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   So I’m having a bit of a tough time processing the fact that I actually quite enjoy 1010Benja’s “Semiramis’ Dream.
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   ” Benja has been unapologetic about his use of generative AI on his latest EP, Time Has Nothing To Do With What You Choose… The other three tracks can’t quite hold a candle to what you find on 2024’s Ten Total.
+
+## business_elements
+
+- companies: The Verge AI
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 暂无公开信息
+- roles: 暂无公开信息
+- workflows: 暂无公开信息
+- business_actions: 暂无公开信息
+- affected_departments: IT / 安全
+- numbers: 8230, 1010B, 2024, 5, 8, 2
+- quotes: Semiramis’ Dream / Semiramis’ Dream. / Semiramis’ Dream / Semiramis’ Dream. / The good guy doesn’t win this one,
+
+## evidence_seed
+
+- company_actions: I would never go so far as to say there’s no place for AI in music (I’m a fan of Holly Herndon, after all). / But I generally find music made with generative AI to be offensively boring, especially the outputs of Suno. / ” Benja has been unapologetic about his use of generative AI on his latest EP, Time Has Nothing To Do With What You Choose… The other three tracks can’t quite hold a candle to what you find on 2024’s Ten Total.
+- case_details: 暂无公开信息
+- workflow_changes: I would never go so far as to say there's no place for AI in music (I'm a fan of Holly Herndon, after all). But I generally find music made with generative AI to be offensively boring, especially the outputs of Suno. So I'm having a bit of a tough time processing the fact that [&#8230;] / So I’m having a bit of a tough time processing the fact that I actually quite enjoy 1010Benja’s “Semiramis’ Dream.
+- before_after_clues: 暂无公开信息
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: none
+- importance_score: 1
+- importance_reason: no core WaveSight importance signal
+- supporting_signals: 
+- novelty: 2
+- evidence_strength: 4
+- case_richness: 3
+- trend_relevance: 2
+- guanlan_relevance: 2
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: true
+- case: false
+- business_change: false
+- relationship_graph_input: false
+- trend_candidate_context: false
+- signal_card_candidate: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- index_only
+
+## missing_information
+
+- 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象
+- 没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势
+- 没有具体客户或真实企业案例
+- 没有变化前后流程线索
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: supporting_evidence
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+I would never go so far as to say there's no place for AI in music (I'm a fan of Holly Herndon, after all). But I generally find music made with generative AI to be offensively boring, especially the outputs of Suno. So I'm having a bit of a tough time processing the fact that [&#8230;]
+
+## 采集备注
+
+该条目由 rss-feed 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

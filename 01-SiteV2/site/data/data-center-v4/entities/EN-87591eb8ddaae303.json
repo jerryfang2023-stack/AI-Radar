@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-19T06:40:36.822Z",
-    "latestDataDate": "2026-07-19",
-    "currentDate": "2026-07-19",
-    "eventCount": 1286,
+    "generatedAt": "2026-07-20T03:58:48.579Z",
+    "latestDataDate": "2026-07-20",
+    "currentDate": "2026-07-20",
+    "eventCount": 1324,
     "quarantinedEventCount": 12
   },
   "entity": {
@@ -25,10 +25,14 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-69337578b2468a88"
+    ],
     "firstSeen": "2026-06-06",
     "lastSeen": "2026-06-07",
-    "relationIds": [],
+    "relationIds": [
+      "REL2-858622e5261e230f"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -59,8 +63,51 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-69337578b2468a88",
+      "name": "vivo",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-362c778a3303e486"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [],
+      "relatedEntityIds": [
+        "EN-87591eb8ddaae303"
+      ],
+      "firstSeen": "2026-07-19",
+      "lastSeen": "2026-07-20"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-858622e5261e230f",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-69337578b2468a88",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-87591eb8ddaae303",
+      "object_type": "entity",
+      "event_id": "EV-8dd408dd2ba2a6df",
+      "claim_refs": [
+        "CL-f458ddd8280f974d",
+        "CL-ee93482e6fc8b526",
+        "CL-30e781cd79058e3e"
+      ],
+      "source_refs": [
+        "SA-d8efcd9eea0e8a10"
+      ],
+      "data_date": "2026-06-06",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [],
   "fde": [],
   "hardware": []

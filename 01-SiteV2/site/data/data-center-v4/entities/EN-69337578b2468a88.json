@@ -1,0 +1,130 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-20T03:58:48.579Z",
+    "latestDataDate": "2026-07-20",
+    "currentDate": "2026-07-20",
+    "eventCount": 1324,
+    "quarantinedEventCount": 12
+  },
+  "entity": {
+    "id": "EN-69337578b2468a88",
+    "name": "vivo",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-362c778a3303e486"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [
+      "EN-87591eb8ddaae303"
+    ],
+    "firstSeen": "2026-07-19",
+    "lastSeen": "2026-07-20",
+    "relationIds": [
+      "REL2-858622e5261e230f"
+    ],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-362c778a3303e486",
+        "EV-8dd408dd2ba2a6df"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-362c778a3303e486",
+        "dataDate": "2026-07-20",
+        "date": "2026-07-19",
+        "eventType": "certification_compliance",
+        "eventTypeLabel": "认证合规",
+        "eventGroup": "组织、政策与法律",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "vivo 首批获颁《人工智能终端智能化分级》国标 L3 评级证书",
+        "displayTags": [],
+        "entityIds": [
+          "EN-69337578b2468a88"
+        ]
+      },
+      {
+        "id": "EV-8dd408dd2ba2a6df",
+        "dataDate": "2026-06-06",
+        "date": "2026-06-07",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "2026 高考今日开考，vivo 上线\"AI 志愿助手\"功能提供一站式全程服务",
+        "displayTags": [],
+        "entityIds": [
+          "EN-87591eb8ddaae303"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [
+    {
+      "id": "EN-87591eb8ddaae303",
+      "name": "AI 志愿助手",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-8dd408dd2ba2a6df"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [],
+      "relatedEntityIds": [
+        "EN-69337578b2468a88"
+      ],
+      "firstSeen": "2026-06-06",
+      "lastSeen": "2026-06-07"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-858622e5261e230f",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-69337578b2468a88",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-87591eb8ddaae303",
+      "object_type": "entity",
+      "event_id": "EV-8dd408dd2ba2a6df",
+      "claim_refs": [
+        "CL-f458ddd8280f974d",
+        "CL-ee93482e6fc8b526",
+        "CL-30e781cd79058e3e"
+      ],
+      "source_refs": [
+        "SA-d8efcd9eea0e8a10"
+      ],
+      "data_date": "2026-06-06",
+      "status": "verified"
+    }
+  ],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

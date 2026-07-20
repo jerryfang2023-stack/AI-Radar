@@ -1,0 +1,296 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-036
+title: "Lyft and Drive.ai partner on Bay Area self-driving ride-hailing pilot | TechCrunch"
+title_zh: "Lyft 与 Drive.ai 合作在湾区开展自动驾驶网约车试点"
+title_translation_status: translated
+title_translation_method: deepseek_title_translation
+title_translation_model: deepseek-v4-flash
+original_url: "https://techcrunch.com/2017/09/07/lyft-and-drive-ai-partner-on-bay-area-self-driving-ride-hailing-pilot/"
+canonical_url: "https://techcrunch.com/2017/09/07/lyft-and-drive-ai-partner-on-bay-area-self-driving-ride-hailing-pilot"
+source_name: "keyword search / Anysearch"
+source_type: news
+source_level: A
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_market_trend"
+search_path: "a_media_gdelt"
+search_path_label: "A 级媒体 / GDELT 路径"
+author: ""
+published_at: "2017-09-07T00:00:00.000Z"
+collected_at: 2026-07-20T03:56:47.181Z
+language: mixed
+full_text_hash: 5d45cdb83fdd8bb8
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-20/r-036-lyft-and-drive-ai-partner-on-bay-area-self-driving-ride-hailing-pilot-.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-20/r-036-lyft-and-drive-ai-partner-on-bay-area-self-driving-ride-hailing-pilot-.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":6447,"paragraph_count":32,"sentence_count":35,"boilerplate_hits":0,"symbol_ratio":0.0003,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 6447
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"5d45cdb83fdd8bb8","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 0319831665a36601
+content_hash: 5d45cdb83fdd8bb8
+semantic_hash: 4cc1f5a085c5b5f7
+duplicate_of: ""
+first_seen_at: "2017-09-07T00:00:00.000Z"
+last_seen_at: 2026-07-20T03:56:47.181Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["emerging_pool","watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":4}
+business_elements: {"companies":["keyword search","Anysearch","OpenAI","Anthropic","Apple"],"products":["Codex"],"people":[],"industries":["法律 / 法务","医疗","开发者工具"],"roles":["CIO / IT 负责人","法务 / 律师"],"workflows":["计费 / 预算管理","权限 / 安全治理"],"business_actions":["发布 / 推出","合作 / 联盟","部署 / 上线"],"affected_departments":["IT / 安全","法务","财务 / 预算"],"numbers":["6","00","7","2017","350","4\nB","$190","1"],"quotes":["We’re working with Lyft in the Bay Area, on several different vehicles,","Really the goal here is to connect our passengers with the world’s best autonomous technology; Drive.ai is a great example of that,","We will start small, and most likely create a whitelist of sorts to bring in a handful of passengers first,","For Drive, we’ve been driving around the Bay Area for over a year at this point, and the focus of this pilot isn’t just for collecting [driving[ miles,"]}
+evidence_seed: {"company_actions":["ai is going to be operating some of its test fleet on Lyft’s open platform , which Lyft created to help carmakers and self-driving tech companies build and deploy autonomous vehicles in the real world, and to eventually serve as on-demand ride hailing vehicles.","ai is a startup that has deep roots in Stanford University’s Artificial Intelligence Lab, with an approach to autonomy that focuses on deep learning across the stack.","ai’s goal is to build AI software for vehicles in a way that’s both scalable and cost-efficient, and the company recently revealed that its go-to-market strategy is to build retrofit kits that can turn existing fleets of vehicles into autonomous resources ."],"case_details":["Lyft and Drive.ai partner on Bay Area self-driving ride-hailing pilot | TechCrunch # Lyft and Drive.ai partner on Bay Area self-driving ride-hailing pilot 6:00 AM PDT · September 7, 2017 Lyft is teaming up with autonomous driving startup Drive.ai to deploy self-driving cars in and around San Fran... / query=AI implementation startup design partner pilot customer / intent=find_market_trend / path=a_media_gdelt","ai partner on Bay Area self-driving ride-hailing pilot Darrell Etherington 6:00 AM PDT · September 7, 2017 Lyft is teaming up with autonomous driving startup Drive.","ai to deploy self-driving cars in and around San Francisco with a new pilot project."],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","法务 / 律师"],"risks_or_constraints":[]}
+missing_information: []
+key_excerpts: [{"type":"case_detail","text":"Lyft and Drive.ai partner on Bay Area self-driving ride-hailing pilot | TechCrunch # Lyft and Drive.ai partner on Bay Area self-driving ride-hailing pilot 6:00 AM PDT · September 7, 2017 Lyft is teaming up with autonomous driving startup Drive.ai to deploy self-driving cars in and around San Fran... / query=AI implementation startup design partner pilot customer / intent=find_market_trend / path=a_media_gdelt","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"ai partner on Bay Area self-driving ride-hailing pilot Darrell Etherington 6:00 AM PDT · September 7, 2017 Lyft is teaming up with autonomous driving startup Drive.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"ai to deploy self-driving cars in and around San Francisco with a new pilot project.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"ai is going to be operating some of its test fleet on Lyft’s open platform , which Lyft created to help carmakers and self-driving tech companies build and deploy autonomous vehicles in the real world, and to eventually serve as on-demand ride hailing vehicles.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"ai is a startup that has deep roots in Stanford University’s Artificial Intelligence Lab, with an approach to autonomy that focuses on deep learning across the stack.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"ai’s goal is to build AI software for vehicles in a way that’s both scalable and cost-efficient, and the company recently revealed that its go-to-market strategy is to build retrofit kits that can turn existing fleets of vehicles into autonomous resources .","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-20T03:56:47.181Z
+theme: early-direction-signal
+keyword_group: early-direction-signal
+copyright_note: local research archive only
+---
+
+# Lyft and Drive.ai partner on Bay Area self-driving ride-hailing pilot | TechCrunch
+
+## clean_text
+
+Lyft and Drive.ai partner on Bay Area self-driving ride-hailing pilot
+Darrell Etherington
+6:00 AM PDT · September 7, 2017
+Lyft is teaming up with autonomous driving startup Drive.ai to deploy self-driving cars in and around San Francisco with a new pilot project.
+Drive.ai is going to be operating some of its test fleet on Lyft’s open platform , which Lyft created to help carmakers and self-driving tech companies build and deploy autonomous vehicles in the real world, and to eventually serve as on-demand ride hailing vehicles.
+Drive.ai is a startup that has deep roots in Stanford University’s Artificial Intelligence Lab, with an approach to autonomy that focuses on deep learning across the stack. Drive.ai’s goal is to build AI software for vehicles in a way that’s both scalable and cost-efficient, and the company recently revealed that its go-to-market strategy is to build retrofit kits that can turn existing fleets of vehicles into autonomous resources .
+The pilot will start off relatively small in scale and progress over time, according to Drive.ai President and Co-Founder Carol Reiley and Lyft Director of Product for Self-Driving Taggart Matthiesen.
+“We’re working with Lyft in the Bay Area, on several different vehicles,” Reiley explained. “We’re going to start small, and scale out. The three things we want to focus on are first safety, and second creating a unique experience for riders for how AVs could be and then educating the population about AV technology. And then third, we would then figure out of Lyft’s over 350 cities we would want to go in the future.”
+Lyft’s self-driving program office in Palo Alto.
+The plan is to use existing Drive.ai vehicles for the pilot, which include several different vehicle platforms equipped with the startup’s aftermarket self-driving kit. They aren’t revealing specific numbers of cars on the road for the pilot, but the initial vehicles will be four-car sedans like the one pictured above.
+Lyft’s goals are similar to Drive’s with the partnership – the Open Platform is designed to provide a way for partners to build out their autonomous tech, but also to help develop a sense of what a successful self-driving ride hailing fleet looks like from a consumer perspective.
+“Really the goal here is to connect our passengers with the world’s best autonomous technology; Drive.ai is a great example of that,” Taggart explained. “We want to work with them to accelerate their technology, we want to create a safe and consistent experience for our passengers, and while we’re starting small here from a pilot perspective, over time the goal is that we slowly and surely grow these rides across our entire platform.”
+Taggart points out that Lyft’s system is designed to evaluate pick-up requests on the fly, check data like when the area was last mapped, along with road and weather conditions, so that it can pass that info to autonomous ride providers like Drive.ai. If Drive.ai determines it can operate effectively given those conditions, it’ll deploy an AV to pick up the rider – but if not, Lyft’s existing network can handle the request. And all of that happens behind the scenes with no change to the rider’s experience vs. hailing a car today.
+The idea is that with the Open Network, it can facilitate more of those autonomous pick-ups in more places over time as progress on the technology side among partners makes that possible, with the eventual goal of self-driving scaling to cover the whole network.
+A look inside Drive.ai’s garage.
+“We will start small, and most likely create a whitelist of sorts to bring in a handful of passengers first,” Taggart explained, talking specifics regarding the Bay Area pilot rollout. “Over time, we would make that a bit broader, and provide an opt-in. And even if you’re opted-in to the program, you’ll always have that option to decide you don’t want to be picked up by an autonomous vehicle – though I think very few people would turn that down.”
+Both Lyft and Drive.ai are looking at this as a learning opportunity for user experience, too. For Drive, that’s the unique aspect of this partnership, since it’s already been conducting extensive road testing. UX is likely to be a key product differentiator when it comes to autonomous tech, and Drive is using the opportunity to ask those questions about how people interact with AVs, and hopefully garner some answers.
+“For Drive, we’ve been driving around the Bay Area for over a year at this point, and the focus of this pilot isn’t just for collecting [driving[ miles,” Reiley said. “It’s to figure out ways to ensure that the experience is seamless from the time that the app is called to when the car comes to the passenger to pick them up, how security works there, and then the experience inside the car.”
+The Bay Area plays host to a number of self-driving pilots focused on refining the user experience now, including GM’s Cruise autonomous service for employees and one of Uber’s pilots. Lyft joining the fray with Drive means this continues to be the hub worth watching if you’re interested not just in the technical aspects of autonomy, but how it will work for everyday people, too.
+Topics
+AI , drive.ai , Lyft , Transportation
+When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.
+Darrell Etherington
+Editor at Large
+Writer covering space, science and health tech. Formerly covering automotive and mobility tech, and previously an employee of Apple and also of Shopify.
+View Bio
+November 4
+Boston
+Last chance to save up to $190 on TechCrunch Founder Summit. Join 1,000+ founders and VCs at all stages for real-world scaling insights and connections that move the needle.
+Savings end June 26, 11:59 p.m. PT .
+REGISTER NOW
+Most Popular
+Coca-Cola suspended production at its Fairlife dairy after a ransomware attack
+Zack Whittaker
+Tesla driver in fatal Texas crash pressed accelerator 100%, NTSB confirms
+Sean O'Kane
+Amid hardware legal battle, OpenAI releases a $230 keyboard for Codex
+Lucas Ropek
+Anthropic, Blackstone bet the next trillion-dollar AI business is implementation, not just models
+Rebecca Bellan
+OpenAI’s first hardware device is reportedly a screenless speaker that can move
+Lucas Ropek
+Anthropic’s newest ad is creeping people out
+Lucas Ropek
+Satya Nadella has issued a shocking warning to companies using AI
+Julie Bort
+Loading the next article
+Error loading the next article
+
+## full_text
+
+Lyft and Drive.ai partner on Bay Area self-driving ride-hailing pilot
+Darrell Etherington
+6:00 AM PDT · September 7, 2017
+Lyft is teaming up with autonomous driving startup Drive.ai to deploy self-driving cars in and around San Francisco with a new pilot project.
+Drive.ai is going to be operating some of its test fleet on Lyft’s open platform , which Lyft created to help carmakers and self-driving tech companies build and deploy autonomous vehicles in the real world, and to eventually serve as on-demand ride hailing vehicles.
+Drive.ai is a startup that has deep roots in Stanford University’s Artificial Intelligence Lab, with an approach to autonomy that focuses on deep learning across the stack. Drive.ai’s goal is to build AI software for vehicles in a way that’s both scalable and cost-efficient, and the company recently revealed that its go-to-market strategy is to build retrofit kits that can turn existing fleets of vehicles into autonomous resources .
+The pilot will start off relatively small in scale and progress over time, according to Drive.ai President and Co-Founder Carol Reiley and Lyft Director of Product for Self-Driving Taggart Matthiesen.
+“We’re working with Lyft in the Bay Area, on several different vehicles,” Reiley explained. “We’re going to start small, and scale out. The three things we want to focus on are first safety, and second creating a unique experience for riders for how AVs could be and then educating the population about AV technology. And then third, we would then figure out of Lyft’s over 350 cities we would want to go in the future.”
+Lyft’s self-driving program office in Palo Alto.
+The plan is to use existing Drive.ai vehicles for the pilot, which include several different vehicle platforms equipped with the startup’s aftermarket self-driving kit. They aren’t revealing specific numbers of cars on the road for the pilot, but the initial vehicles will be four-car sedans like the one pictured above.
+Lyft’s goals are similar to Drive’s with the partnership – the Open Platform is designed to provide a way for partners to build out their autonomous tech, but also to help develop a sense of what a successful self-driving ride hailing fleet looks like from a consumer perspective.
+“Really the goal here is to connect our passengers with the world’s best autonomous technology; Drive.ai is a great example of that,” Taggart explained. “We want to work with them to accelerate their technology, we want to create a safe and consistent experience for our passengers, and while we’re starting small here from a pilot perspective, over time the goal is that we slowly and surely grow these rides across our entire platform.”
+Taggart points out that Lyft’s system is designed to evaluate pick-up requests on the fly, check data like when the area was last mapped, along with road and weather conditions, so that it can pass that info to autonomous ride providers like Drive.ai. If Drive.ai determines it can operate effectively given those conditions, it’ll deploy an AV to pick up the rider – but if not, Lyft’s existing network can handle the request. And all of that happens behind the scenes with no change to the rider’s experience vs. hailing a car today.
+The idea is that with the Open Network, it can facilitate more of those autonomous pick-ups in more places over time as progress on the technology side among partners makes that possible, with the eventual goal of self-driving scaling to cover the whole network.
+A look inside Drive.ai’s garage.
+“We will start small, and most likely create a whitelist of sorts to bring in a handful of passengers first,” Taggart explained, talking specifics regarding the Bay Area pilot rollout. “Over time, we would make that a bit broader, and provide an opt-in. And even if you’re opted-in to the program, you’ll always have that option to decide you don’t want to be picked up by an autonomous vehicle – though I think very few people would turn that down.”
+Both Lyft and Drive.ai are looking at this as a learning opportunity for user experience, too. For Drive, that’s the unique aspect of this partnership, since it’s already been conducting extensive road testing. UX is likely to be a key product differentiator when it comes to autonomous tech, and Drive is using the opportunity to ask those questions about how people interact with AVs, and hopefully garner some answers.
+“For Drive, we’ve been driving around the Bay Area for over a year at this point, and the focus of this pilot isn’t just for collecting [driving[ miles,” Reiley said. “It’s to figure out ways to ensure that the experience is seamless from the time that the app is called to when the car comes to the passenger to pick them up, how security works there, and then the experience inside the car.”
+The Bay Area plays host to a number of self-driving pilots focused on refining the user experience now, including GM’s Cruise autonomous service for employees and one of Uber’s pilots. Lyft joining the fray with Drive means this continues to be the hub worth watching if you’re interested not just in the technical aspects of autonomy, but how it will work for everyday people, too.
+Topics
+AI , drive.ai , Lyft , Transportation
+When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.
+Darrell Etherington
+Editor at Large
+Writer covering space, science and health tech. Formerly covering automotive and mobility tech, and previously an employee of Apple and also of Shopify.
+View Bio
+November 4
+Boston
+Last chance to save up to $190 on TechCrunch Founder Summit. Join 1,000+ founders and VCs at all stages for real-world scaling insights and connections that move the needle.
+Savings end June 26, 11:59 p.m. PT .
+REGISTER NOW
+Most Popular
+Coca-Cola suspended production at its Fairlife dairy after a ransomware attack
+Zack Whittaker
+Tesla driver in fatal Texas crash pressed accelerator 100%, NTSB confirms
+Sean O'Kane
+Amid hardware legal battle, OpenAI releases a $230 keyboard for Codex
+Lucas Ropek
+Anthropic, Blackstone bet the next trillion-dollar AI business is implementation, not just models
+Rebecca Bellan
+OpenAI’s first hardware device is reportedly a screenless speaker that can move
+Lucas Ropek
+Anthropic’s newest ad is creeping people out
+Lucas Ropek
+Satya Nadella has issued a shocking warning to companies using AI
+Julie Bort
+Loading the next article
+Error loading the next article
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 97
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":6447,"paragraph_count":32,"sentence_count":35,"boilerplate_hits":0,"symbol_ratio":0.0003,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=high
+   Lyft and Drive.ai partner on Bay Area self-driving ride-hailing pilot | TechCrunch # Lyft and Drive.ai partner on Bay Area self-driving ride-hailing pilot 6:00 AM PDT · September 7, 2017 Lyft is teaming up with autonomous driving startup Drive.ai to deploy self-driving cars in and around San Fran... / query=AI implementation startup design partner pilot customer / intent=find_market_trend / path=a_media_gdelt
+
+2. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=high
+   ai partner on Bay Area self-driving ride-hailing pilot Darrell Etherington 6:00 AM PDT · September 7, 2017 Lyft is teaming up with autonomous driving startup Drive.
+
+3. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=high
+   ai to deploy self-driving cars in and around San Francisco with a new pilot project.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   ai is going to be operating some of its test fleet on Lyft’s open platform , which Lyft created to help carmakers and self-driving tech companies build and deploy autonomous vehicles in the real world, and to eventually serve as on-demand ride hailing vehicles.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   ai is a startup that has deep roots in Stanford University’s Artificial Intelligence Lab, with an approach to autonomy that focuses on deep learning across the stack.
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   ai’s goal is to build AI software for vehicles in a way that’s both scalable and cost-efficient, and the company recently revealed that its go-to-market strategy is to build retrofit kits that can turn existing fleets of vehicles into autonomous resources .
+
+## business_elements
+
+- companies: keyword search, Anysearch, OpenAI, Anthropic, Apple
+- products: Codex
+- people: 暂无公开信息
+- industries: 法律 / 法务, 医疗, 开发者工具
+- roles: CIO / IT 负责人, 法务 / 律师
+- workflows: 计费 / 预算管理, 权限 / 安全治理
+- business_actions: 发布 / 推出, 合作 / 联盟, 部署 / 上线
+- affected_departments: IT / 安全, 法务, 财务 / 预算
+- numbers: 6, 00, 7, 2017, 350, 4
+B, $190, 1
+- quotes: We’re working with Lyft in the Bay Area, on several different vehicles, / Really the goal here is to connect our passengers with the world’s best autonomous technology; Drive.ai is a great example of that, / We will start small, and most likely create a whitelist of sorts to bring in a handful of passengers first, / For Drive, we’ve been driving around the Bay Area for over a year at this point, and the focus of this pilot isn’t just for collecting [driving[ miles,
+
+## evidence_seed
+
+- company_actions: ai is going to be operating some of its test fleet on Lyft’s open platform , which Lyft created to help carmakers and self-driving tech companies build and deploy autonomous vehicles in the real world, and to eventually serve as on-demand ride hailing vehicles. / ai is a startup that has deep roots in Stanford University’s Artificial Intelligence Lab, with an approach to autonomy that focuses on deep learning across the stack. / ai’s goal is to build AI software for vehicles in a way that’s both scalable and cost-efficient, and the company recently revealed that its go-to-market strategy is to build retrofit kits that can turn existing fleets of vehicles into autonomous resources .
+- case_details: Lyft and Drive.ai partner on Bay Area self-driving ride-hailing pilot | TechCrunch # Lyft and Drive.ai partner on Bay Area self-driving ride-hailing pilot 6:00 AM PDT · September 7, 2017 Lyft is teaming up with autonomous driving startup Drive.ai to deploy self-driving cars in and around San Fran... / query=AI implementation startup design partner pilot customer / intent=find_market_trend / path=a_media_gdelt / ai partner on Bay Area self-driving ride-hailing pilot Darrell Etherington 6:00 AM PDT · September 7, 2017 Lyft is teaming up with autonomous driving startup Drive. / ai to deploy self-driving cars in and around San Francisco with a new pilot project.
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 法务 / 律师
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 4
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: true
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- emerging_pool
+- watchlist
+
+## missing_information
+
+- none
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Lyft and Drive.ai partner on Bay Area self-driving ride-hailing pilot | TechCrunch # Lyft and Drive.ai partner on Bay Area self-driving ride-hailing pilot 6:00 AM PDT · September 7, 2017 Lyft is teaming up with autonomous driving startup Drive.ai to deploy self-driving cars in and around San Fran... / query=AI implementation startup design partner pilot customer / intent=find_market_trend / path=a_media_gdelt
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

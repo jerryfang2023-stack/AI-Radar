@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-19T06:40:36.822Z",
-    "latestDataDate": "2026-07-19",
-    "currentDate": "2026-07-19",
-    "eventCount": 1286,
+    "generatedAt": "2026-07-20T03:58:48.579Z",
+    "latestDataDate": "2026-07-20",
+    "currentDate": "2026-07-20",
+    "eventCount": 1324,
     "quarantinedEventCount": 12
   },
   "entity": {
@@ -72,8 +72,8 @@
       "TX-technology-on_device",
       "TX-technology-fine_tuning",
       "TX-technology-open_weights",
-      "TX-technology-multimodal",
-      "TX-technology-video_generation"
+      "TX-technology-video_generation",
+      "TX-technology-multimodal"
     ],
     "relatedEntityIds": [
       "EN-3ccbd9105a45d8fc"
@@ -1181,7 +1181,10 @@
       "typeLabel": "技术",
       "valueId": "agentic_execution",
       "eventIds": [
+        "EV-f6e7a4fe77d7f5c9",
         "EV-6be89ebfbf8de6be",
+        "EV-b29878fdf79f2ac5",
+        "EV-c64e6836b9cd2b17",
         "EV-1da2e46e39a57d33",
         "EV-8b7cbb66a33a945d",
         "EV-38cce1b72977ff2b",
@@ -1264,7 +1267,9 @@
         "EV-c5643983538c6513",
         "EV-c8928410f6c145eb",
         "EV-c4303801ea8c54dc",
+        "EV-d5aa723446feebbb",
         "EV-23ae55daa341be06",
+        "EV-f70b73ad2b4b6aa9",
         "EV-da9bb2c98c1ce8cd",
         "EV-b726a9cda7beae64",
         "EV-4e5c6267b3237dac",
@@ -1326,6 +1331,13 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-86ab9c2f1416e9d8",
+        "EV-3b1d1dd87442e7f1",
+        "EV-4cb7e4c371fb252e",
+        "EV-7d09b00182b08c3f",
+        "EV-938e395d50c33f40",
+        "EV-c454be06f46514cc",
+        "EV-ca223f2a929b67a2",
         "EV-19bcfc6d7c1612cb",
         "EV-ee489212ff9135a4",
         "EV-25933b8f123f92be",
@@ -1497,7 +1509,10 @@
         "EV-c17f5a364ed6a3ac"
       ],
       "entityIds": [
+        "EN-270e2cfd11014ef8",
         "EN-522656609ff15589",
+        "EN-b0bc23fa8e20c543",
+        "EN-95fb1fa9a88b393c",
         "EN-cfd90af8403941bf",
         "EN-366289432b214eda",
         "EN-8d4321d936320802",
@@ -1591,6 +1606,7 @@
         "EN-da41c71b4dbc3956",
         "EN-f5cfcb570b7edac2",
         "EN-950de6ef17ca48ae",
+        "EN-c08f86842ff2c908",
         "EN-50e2a4156631df49",
         "EN-b81c8201acfc7639",
         "EN-5388bc10736a0eff",
@@ -1652,13 +1668,18 @@
         "EN-de5a1adf4fedcce1",
         "EN-19e41212c0556603",
         "EN-dca6ec9510fc0176",
+        "EN-6f21a653c48f4f19",
+        "EN-6ef7552b4631e789",
+        "EN-dd758281d0c70e60",
+        "EN-e9b67bdfb6ae6a2e",
+        "EN-985e1a7c957148f9",
+        "EN-3b29a20f0c5d0cdc",
+        "EN-2c348893efb2316e",
         "EN-2abf8289b2f2113f",
         "EN-91901356a63794df",
         "EN-be548deba4a093d7",
         "EN-92ec1124e1de6f54",
         "EN-8d57f84bd1847b24",
-        "EN-e9b67bdfb6ae6a2e",
-        "EN-985e1a7c957148f9",
         "EN-0a64d5a41e885455",
         "EN-8b0aea25404131b5",
         "EN-0e3c625f3930d7b7",
@@ -1696,7 +1717,6 @@
         "EN-b644c0a9d493976a",
         "EN-636fa9664f878a4d",
         "EN-6c87e5496f592f3c",
-        "EN-2c348893efb2316e",
         "EN-ef8ef0d64526209a",
         "EN-a89151ba4b5ac0f2",
         "EN-8b619895a83e35c8",
@@ -1709,7 +1729,6 @@
         "EN-43a340bb75b45f02",
         "EN-08b6a35be337edce",
         "EN-e3863f813fe47240",
-        "EN-6f21a653c48f4f19",
         "EN-4dbe391b8fcf977a",
         "EN-6a50fbf0b970c03a",
         "EN-d1ad14d4ad57d207",
@@ -1941,7 +1960,7 @@
         "HW-25ce41fab12d9ef2"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-19"
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "TX-industry-financial_services",
@@ -1951,6 +1970,7 @@
       "valueId": "financial_services",
       "eventIds": [
         "EV-f6a72cddbda748b3",
+        "EV-34a077ec20c91cea",
         "EV-aa33ca051f3a7f78",
         "EV-189e43cb9fea8e1a",
         "EV-a42e51959c627554",
@@ -1975,6 +1995,7 @@
       "entityIds": [
         "EN-a5d2ae286d0d9e45",
         "EN-96eebba49dbbf422",
+        "EN-e5dcb6b25180d1d6",
         "EN-1bd14cd1a58c5708",
         "EN-7d3194f79e645c42",
         "EN-11507a0e2f5e69d5",
@@ -2014,7 +2035,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-03-19",
-      "lastSeen": "2026-07-19"
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "TX-industry-retail_ecommerce",
@@ -2026,6 +2047,7 @@
         "EV-f6a72cddbda748b3",
         "EV-e7dcecaed5a0ee5b",
         "EV-8b0f056571d68269",
+        "EV-acf1bcb321414706",
         "EV-434dcf1813a84ead",
         "EV-a3b006906f6d46a0",
         "EV-046caa2b3d6fbdde",
@@ -2049,6 +2071,7 @@
         "EN-b0532e1af75cc4ab",
         "EN-e5cc9e38970eacb5",
         "EN-cbc62794911ff31b",
+        "EN-b1d07f1a647ba7fb",
         "EN-6f21a653c48f4f19",
         "EN-4dbe391b8fcf977a",
         "EN-c5947269de664c47",
@@ -2086,8 +2109,8 @@
         "FDE-309bc49d109029a3"
       ],
       "hardwareIds": [],
-      "firstSeen": "2026-01-20",
-      "lastSeen": "2026-07-18"
+      "firstSeen": "2023-06-28",
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "TX-technology-code_generation",
@@ -2413,6 +2436,7 @@
         "EV-a15da1b52d939967",
         "EV-736404028b8ad33e",
         "EV-7263caa45bbf168e",
+        "EV-a5efa57f3f744425",
         "EV-653cbce2ccc79f8b",
         "EV-04efb4eecbb8125f",
         "EV-8a9b12665a3e40a0",
@@ -2443,6 +2467,8 @@
         "EN-8d4321d936320802",
         "EN-f5791343a13abc71",
         "EN-9fbf261b62c1d7c0",
+        "EN-3309b3b14807f39a",
+        "EN-61a405a731497229",
         "EN-f3cfedbe8428c9f7",
         "EN-7df09a7717ef2feb",
         "EN-c04bd5ebd10ab696",
@@ -2484,7 +2510,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-07-18"
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "TX-technology-fine_tuning",
@@ -2542,6 +2568,7 @@
       "valueId": "open_weights",
       "eventIds": [
         "EV-1abf0d076d30ec6d",
+        "EV-0d5a32aca724d30e",
         "EV-b84035029a63e52e",
         "EV-3028dfadf94c8f4c",
         "EV-a06011da69abcc3d",
@@ -2553,6 +2580,12 @@
         "EN-240389f4b730bad4",
         "EN-7d3194f79e645c42",
         "EN-c70eca6b0f88f44d",
+        "EN-339217758bfa736e",
+        "EN-047364b9be67f665",
+        "EN-b5251b35f15bedc4",
+        "EN-9f15bb7e29e191eb",
+        "EN-607964040e4b62e0",
+        "EN-10a27c6240d18dbe",
         "EN-d41ebd9f02722fc8",
         "EN-b0532e1af75cc4ab",
         "EN-96eebba49dbbf422",
@@ -2575,7 +2608,48 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-07-16"
+      "lastSeen": "2026-07-20"
+    },
+    {
+      "id": "TX-technology-video_generation",
+      "name": "视频生成",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "video_generation",
+      "eventIds": [
+        "EV-a354af52772334fd",
+        "EV-26d2874c6ce028d6",
+        "EV-6fbbbfcdcec81df4",
+        "EV-fd8ecce5de2f667d",
+        "EV-5babb43f4b4d302f",
+        "EV-d8c69ed782b73a34",
+        "EV-c7404765df94a3b4",
+        "EV-473f852b374d8b1c",
+        "EV-887d47bb477e2142"
+      ],
+      "entityIds": [
+        "EN-d747d6f5125b6bee",
+        "EN-047364b9be67f665",
+        "EN-b81c8201acfc7639",
+        "EN-ec1c8f558ff61e34",
+        "EN-d83624eb3ab9192e",
+        "EN-2b6e51bec93e86c1",
+        "EN-b0532e1af75cc4ab",
+        "EN-01f1074bb52ff605",
+        "EN-7ed9c9e7c260ed06",
+        "EN-0e008e2c06144ec8",
+        "EN-bbdefa2950f49882",
+        "EN-5388bc10736a0eff",
+        "EN-43a340bb75b45f02",
+        "EN-47c1e53c427aafb4",
+        "EN-2daac3672aeafcbd",
+        "EN-e9857f381893dd05",
+        "EN-4f96127fdacbb405"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-06-16",
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "TX-technology-multimodal",
@@ -2588,6 +2662,8 @@
         "EV-a9810b47e0408a05",
         "EV-26d2874c6ce028d6",
         "EV-fd21441fb6e143c3",
+        "EV-9d5363657f3541e7",
+        "EV-0d5a32aca724d30e",
         "EV-ee489212ff9135a4",
         "EV-ba89f9414be0b041",
         "EV-6b51b1b6fe22c540",
@@ -2623,6 +2699,12 @@
         "EN-3a7bd3e2360a3d29",
         "EN-50537dab76505dfc",
         "EN-b5251b35f15bedc4",
+        "EN-a89151ba4b5ac0f2",
+        "EN-339217758bfa736e",
+        "EN-047364b9be67f665",
+        "EN-9f15bb7e29e191eb",
+        "EN-607964040e4b62e0",
+        "EN-10a27c6240d18dbe",
         "EN-be548deba4a093d7",
         "EN-92ec1124e1de6f54",
         "EN-3c6d89173e6636d7",
@@ -2659,7 +2741,6 @@
         "EN-2b96ed840c07482a",
         "EN-9a6ee79873b1fb7b",
         "EN-3f726694f178ed7a",
-        "EN-047364b9be67f665",
         "EN-d65d81c60c0c47c4",
         "EN-085598c00f2aaccf",
         "EN-a3c3b987b09fc1bb",
@@ -2673,46 +2754,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-07-19"
-    },
-    {
-      "id": "TX-technology-video_generation",
-      "name": "视频生成",
-      "nodeType": "technology",
-      "typeLabel": "技术",
-      "valueId": "video_generation",
-      "eventIds": [
-        "EV-26d2874c6ce028d6",
-        "EV-6fbbbfcdcec81df4",
-        "EV-fd8ecce5de2f667d",
-        "EV-5babb43f4b4d302f",
-        "EV-d8c69ed782b73a34",
-        "EV-c7404765df94a3b4",
-        "EV-473f852b374d8b1c",
-        "EV-887d47bb477e2142"
-      ],
-      "entityIds": [
-        "EN-b81c8201acfc7639",
-        "EN-ec1c8f558ff61e34",
-        "EN-047364b9be67f665",
-        "EN-d83624eb3ab9192e",
-        "EN-2b6e51bec93e86c1",
-        "EN-b0532e1af75cc4ab",
-        "EN-01f1074bb52ff605",
-        "EN-7ed9c9e7c260ed06",
-        "EN-0e008e2c06144ec8",
-        "EN-bbdefa2950f49882",
-        "EN-5388bc10736a0eff",
-        "EN-43a340bb75b45f02",
-        "EN-47c1e53c427aafb4",
-        "EN-2daac3672aeafcbd",
-        "EN-e9857f381893dd05",
-        "EN-4f96127fdacbb405"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [],
-      "firstSeen": "2026-06-16",
-      "lastSeen": "2026-07-18"
+      "lastSeen": "2026-07-20"
     }
   ],
   "fde": [

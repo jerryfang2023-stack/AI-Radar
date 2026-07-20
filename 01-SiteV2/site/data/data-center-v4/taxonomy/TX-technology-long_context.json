@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-19T06:40:36.822Z",
-    "latestDataDate": "2026-07-19",
-    "currentDate": "2026-07-19",
-    "eventCount": 1286,
+    "generatedAt": "2026-07-20T03:58:48.579Z",
+    "latestDataDate": "2026-07-20",
+    "currentDate": "2026-07-20",
+    "eventCount": 1324,
     "quarantinedEventCount": 12
   },
   "node": {
@@ -19,7 +19,8 @@
     "eventIds": [
       "EV-80e54c9a390da293",
       "EV-fd21441fb6e143c3",
-      "EV-0d5a32aca724d30e",
+      "EV-86ab9c2f1416e9d8",
+      "EV-a5efa57f3f744425",
       "EV-653cbce2ccc79f8b",
       "EV-70e3f88cb06a856c",
       "EV-70cbf25f7ec2cc3a",
@@ -36,9 +37,9 @@
       "EN-3a7bd3e2360a3d29",
       "EN-50537dab76505dfc",
       "EN-b5251b35f15bedc4",
-      "EN-6f7ac1823da81d2e",
-      "EN-607964040e4b62e0",
-      "EN-481243d2f2a235c1",
+      "EN-9c8ae69b84f21a2e",
+      "EN-3309b3b14807f39a",
+      "EN-61a405a731497229",
       "EN-f3cfedbe8428c9f7",
       "EN-c04bd5ebd10ab696",
       "EN-50ba7ff15827787b",
@@ -49,19 +50,19 @@
       "EN-7dd7122ad9bf240f",
       "EN-95b0632f1b292fa7",
       "EN-047364b9be67f665",
+      "EN-6f7ac1823da81d2e",
       "EN-1d79127e9d90e89b",
       "EN-bc77259c5d2eb341",
       "EN-52fc33ae4d101a5d",
       "EN-bc1fc5140040180e",
       "EN-3153ebda601cdb79",
       "EN-c23eb5fae3cdd763",
-      "EN-c608c4787821de1b",
-      "EN-9c8ae69b84f21a2e"
+      "EN-c608c4787821de1b"
     ],
     "fdeIds": [],
     "hardwareIds": [],
     "firstSeen": "2026-06-12",
-    "lastSeen": "2026-07-19"
+    "lastSeen": "2026-07-20"
   },
   "events": [
     {
@@ -340,34 +341,32 @@
       "publisher": "IT之家（RSS）"
     },
     {
-      "id": "EV-0d5a32aca724d30e",
-      "dataDate": "2026-07-19",
-      "date": "2026-07-18",
-      "updatedDate": "2026-07-19",
-      "eventType": "model_release",
-      "eventTypeLabel": "模型发布",
+      "id": "EV-86ab9c2f1416e9d8",
+      "dataDate": "2026-07-20",
+      "date": "2026-07-20",
+      "updatedDate": "2026-07-20",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
       "eventGroup": "模型、产品与服务",
-      "status": "completed",
-      "statusLabel": "已完成",
+      "status": "announced",
+      "statusLabel": "已公布",
       "publicationStatus": "verified",
-      "title": "Moonshot AI 发布开源模型 Kimi K3，性能接近前沿闭源模型",
+      "title": "腾讯混元大模型 Hy3 限免活动延长至 8 月 5 日",
       "originalTitle": "",
-      "subject": "Moonshot AI",
-      "action": "发布开源模型 Kimi K3",
-      "object": "，性能接近前沿闭源模型",
-      "metrics": [
-        "1%",
-        "2.8 万",
-        "100 万"
-      ],
-      "locations": [
-        "China",
-        "美国",
-        "中国"
-      ],
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "腾讯混元大模型 Hy3 限免活动延长至 8 月 5 日",
+      "metrics": [],
+      "locations": [],
       "missingFields": [],
       "conflicts": [],
       "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
@@ -393,6 +392,12 @@
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
           "id": "long_context",
           "name": "长上下文"
         },
@@ -413,38 +418,133 @@
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
           "id": "long_context",
           "name": "长上下文"
         }
       ],
       "entityIds": [
-        "EN-b5251b35f15bedc4",
-        "EN-8d4321d936320802",
-        "EN-6f7ac1823da81d2e",
-        "EN-c70eca6b0f88f44d",
-        "EN-607964040e4b62e0",
-        "EN-481243d2f2a235c1"
+        "EN-9c8ae69b84f21a2e"
       ],
       "entityNames": [
-        "Moonshot AI",
-        "NVIDIA",
-        "DeepSeek",
-        "Anthropic",
-        "Kimi K3",
-        "月之暗面"
+        "Tencent"
       ],
-      "productName": "Kimi K3",
-      "products": [
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/978/865.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-a5efa57f3f744425",
+      "dataDate": "2026-07-20",
+      "date": "2026-07-19",
+      "updatedDate": "2026-07-20",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "面壁智能发布端侧模型 MiniCPM5-2B，AA-Index 榜单 4B 以下性能第一",
+      "originalTitle": "",
+      "subject": "面壁智能",
+      "action": "发布端侧模型",
+      "object": "MiniCPM5-2B，AA-Index 榜单 4B 以下性能第一",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
         {
-          "name": "Kimi K3",
-          "type": "模型",
-          "ownerNames": [
-            "Moonshot AI"
-          ]
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "long_context",
+          "name": "长上下文"
         }
       ],
-      "sourceUrl": "https://techcrunch.com/2026/07/18/kimi-threat-or-menace",
-      "publisher": "TechCrunch：AI（RSS）"
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [
+          {
+            "dimensionId": "deployment_model",
+            "id": "edge_device",
+            "dimensionName": "部署形态",
+            "name": "边缘与端侧"
+          }
+        ],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "long_context",
+          "name": "长上下文"
+        },
+        {
+          "dimensionId": "deployment_model",
+          "id": "edge_device",
+          "dimensionName": "部署形态",
+          "name": "边缘与端侧"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "long_context",
+          "name": "长上下文"
+        },
+        {
+          "dimensionId": "deployment_model",
+          "id": "edge_device",
+          "dimensionName": "部署形态",
+          "name": "边缘与端侧"
+        }
+      ],
+      "entityIds": [
+        "EN-3309b3b14807f39a",
+        "EN-61a405a731497229"
+      ],
+      "entityNames": [
+        "面壁智能",
+        "MiniCPM5-2B"
+      ],
+      "productName": "MiniCPM5-2B",
+      "products": [
+        {
+          "name": "MiniCPM5-2B",
+          "type": "模型",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/978/796.htm",
+      "publisher": "IT之家（RSS）"
     },
     {
       "id": "EV-653cbce2ccc79f8b",
@@ -1307,9 +1407,7 @@
       "name": "NVIDIA",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "英伟达"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -1354,7 +1452,6 @@
         "EV-4faa2bcf2e42e60c",
         "EV-9ee3c0ec243b6129",
         "EV-58c1cc3749294649",
-        "EV-0d5a32aca724d30e",
         "EV-118317b7f92e5e16",
         "EV-950237c6b3eb6343",
         "EV-29e069ac093f0e34",
@@ -1385,6 +1482,7 @@
         "EV-b7ba9acba80a852e",
         "EV-1a1fb68ba4d6a377",
         "EV-bac5824e594f1831",
+        "EV-625904809a9b14b8",
         "EV-4bb5b24400e49ea4",
         "EV-568d2aeab5234e48",
         "EV-b986a633cca27df9",
@@ -1401,6 +1499,7 @@
         "EV-aa63303570154a9b",
         "EV-d2ac9700c86913da",
         "EV-d43a561da59b2897",
+        "EV-02b19ffbe883ee2e",
         "EV-8993e021ac17df4a",
         "EV-34929bdd016dc8d6",
         "EV-08f736f61f2b46f3",
@@ -1410,8 +1509,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-technology",
         "TX-technology-agentic_execution",
+        "TX-industry-technology",
         "TX-use_case-enterprise_operations",
         "TX-industry-manufacturing",
         "TX-industry-automotive_transportation",
@@ -1438,29 +1537,26 @@
         "TX-technology-speech_audio"
       ],
       "relatedEntityIds": [
-        "EN-8395dc051feafc4c",
-        "EN-aa15d891a32a51b8",
+        "EN-1e71d9c1a5c4de16",
+        "EN-683d8d597da71192",
+        "EN-9e72fd4472222231",
         "EN-0f3360879e746531",
         "EN-a1b0d8a938903dc7",
-        "EN-956b7280912ef1cc",
         "EN-4a639cb888a15d75",
         "EN-8d323d8bba783aa3",
         "EN-b5738c169b693bee",
         "EN-51fd7dc086fcb858",
         "EN-9e193e1ec8d75d41",
-        "EN-3ae50afab3e392b8",
+        "EN-8395dc051feafc4c",
         "EN-936f01f91fdadf69",
         "EN-4e7e886400fe6a83",
         "EN-1dc405a4cda895d0",
         "EN-12ab68e37d104d27",
         "EN-a3266ab9e10d6105",
-        "EN-9fbf261b62c1d7c0",
-        "EN-11ef7b03c79c9bbd",
-        "EN-9bc22dcabf7f45b3",
-        "EN-171fa23d27b5894b"
+        "EN-9fbf261b62c1d7c0"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-19"
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "EN-c70eca6b0f88f44d",
@@ -1519,9 +1615,9 @@
         "EV-8e01849c05b50355",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-b20bf10af759bd43",
         "EV-eb97c388b3197c06",
         "EV-83a8ac8a2554b60c",
-        "EV-0d5a32aca724d30e",
         "EV-debecca007e547d2",
         "EV-7963d8c78531f12d",
         "EV-a8a8f26c5128d894",
@@ -1745,7 +1841,7 @@
         "EN-d8494bb34d6ddc43"
       ],
       "firstSeen": "2026-03-13",
-      "lastSeen": "2026-07-19"
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "EN-7df09a7717ef2feb",
@@ -1781,9 +1877,7 @@
       "name": "Apple",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "苹果"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -1842,6 +1936,7 @@
         "EV-ebef81764102ee7c",
         "EV-f6611268f119a172",
         "EV-342799d4e68e7416",
+        "EV-b30dcacd355fe5f5",
         "EV-2f7e6d3a68bbf08f",
         "EV-ef823877347ff40f",
         "EV-5cd10de5c12916f0",
@@ -1881,17 +1976,10 @@
         "TX-technology-speech_audio"
       ],
       "relatedEntityIds": [
-        "EN-e463d05a14e8697f",
-        "EN-b5251b35f15bedc4",
-        "EN-1924fff8eb4d54ae",
-        "EN-dd920a8cd166f486",
-        "EN-af3ceabbe048a291",
-        "EN-45b5216872656eb3",
-        "EN-0502bb9ed34980aa",
-        "EN-40e307d789f77264"
+        "EN-af3ceabbe048a291"
       ],
       "firstSeen": "2026-06-04",
-      "lastSeen": "2026-07-19"
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "EN-50537dab76505dfc",
@@ -1931,8 +2019,7 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "Kimi",
-        "月之暗面"
+        "Kimi"
       ],
       "verificationStatus": "verified",
       "datasetScopes": [
@@ -1964,118 +2051,121 @@
         "TX-technology-code_generation",
         "TX-use_case-software_development",
         "TX-technology-long_context",
+        "TX-use_case-data_analysis",
         "TX-technology-retrieval_augmented_generation",
+        "TX-technology-open_weights",
         "TX-technology-multimodal"
       ],
       "relatedEntityIds": [
-        "EN-607964040e4b62e0",
-        "EN-3a7bd3e2360a3d29",
         "EN-2cfed21b7a971267",
         "EN-23bc2a854bc0cfb0",
         "EN-b57c95289680078c"
       ],
       "firstSeen": "2026-05-19",
-      "lastSeen": "2026-07-19"
+      "lastSeen": "2026-07-20"
     },
     {
-      "id": "EN-6f7ac1823da81d2e",
-      "name": "DeepSeek",
+      "id": "EN-9c8ae69b84f21a2e",
+      "name": "Tencent",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "腾讯混元"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
         "EV-87432dbb99cd6033",
-        "EV-d4d7b019ff0015df",
+        "EV-427081ec574b43bb",
+        "EV-acaf06b262d9c3db",
         "EV-27b69ea604475b72",
-        "EV-f8c3a83d883c9b22",
-        "EV-0d5a32aca724d30e",
-        "EV-70cbf25f7ec2cc3a",
-        "EV-f8ba1728de6a4899",
-        "EV-fe2b0d74944d6128",
-        "EV-caec65aef89d3b4a",
+        "EV-da9bb2c98c1ce8cd",
+        "EV-afcd5426f5c01dc7",
+        "EV-619e33abf3f9bfbf",
+        "EV-be2f6bfcad93c42f",
+        "EV-c7b81290859057b0",
+        "EV-86ab9c2f1416e9d8",
+        "EV-7fe139b107f9adc6",
+        "EV-de54542fd7e2282c",
+        "EV-3167e6eed75597e9",
+        "EV-9e35de25113a9269",
+        "EV-ad2e4fe6a149d95d",
+        "EV-c2f5b59db9912018",
         "EV-57e6392fe3bb69cd",
-        "EV-eddb4330fed15762",
-        "EV-2aca9a810ea65555",
+        "EV-1a073cd22d1bfa59",
         "EV-a498b12f3fa2197e",
-        "EV-d064939235825765",
-        "EV-6af31d42885e0361",
-        "EV-8e6f9c324aa0b2f3",
-        "EV-4dfd7233c8c69b0b",
-        "EV-657837763764c869",
-        "EV-388a53fe918389b0",
-        "EV-48e17a3ba4b73550",
-        "EV-848bdd13f319c516",
+        "EV-c11ee0da38376254",
+        "EV-6a6ff349579765ad",
+        "EV-7ff24ae733821395",
         "EV-86537be17d50ff20",
-        "EV-b6970cb396a7b1ed"
+        "EV-6b7917bd7edd4bde",
+        "EV-e70b2c66b996d138",
+        "EV-8b4f7844af234ed8",
+        "EV-fc8b280e83232d6f"
       ],
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-technology-code_generation",
-        "TX-industry-healthcare_life_sciences",
-        "TX-use_case-software_development",
+        "TX-technology-vision_language",
+        "TX-use_case-robotics_automation",
         "TX-technology-long_context",
-        "TX-technology-on_device",
-        "TX-technology-fine_tuning",
         "TX-technology-open_weights",
         "TX-technology-multimodal",
-        "TX-technology-quantization"
+        "TX-industry-media_entertainment"
       ],
       "relatedEntityIds": [],
-      "firstSeen": "2026-05-24",
-      "lastSeen": "2026-07-19"
+      "firstSeen": "2026-05-18",
+      "lastSeen": "2026-07-20"
     },
     {
-      "id": "EN-607964040e4b62e0",
-      "name": "Kimi K3",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [
-        "K3"
-      ],
+      "id": "EN-3309b3b14807f39a",
+      "name": "面壁智能",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
-        "EV-0d5a32aca724d30e"
+        "EV-a5efa57f3f744425"
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-long_context"
+        "TX-technology-long_context",
+        "TX-technology-on_device"
       ],
       "relatedEntityIds": [
-        "EN-b5251b35f15bedc4"
+        "EN-61a405a731497229"
       ],
-      "firstSeen": "2026-07-18",
-      "lastSeen": "2026-07-19"
+      "firstSeen": "2026-07-19",
+      "lastSeen": "2026-07-20"
     },
     {
-      "id": "EN-481243d2f2a235c1",
-      "name": "月之暗面",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
+      "id": "EN-61a405a731497229",
+      "name": "MiniCPM5-2B",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
       "aliases": [],
-      "verificationStatus": "candidate",
+      "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
-        "EV-5be48cce8dc4f3de",
-        "EV-0d5a32aca724d30e",
-        "EV-2cb9dbed2b2b6077"
+        "EV-a5efa57f3f744425"
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-long_context"
+        "TX-technology-long_context",
+        "TX-technology-on_device"
       ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-06-09",
-      "lastSeen": "2026-07-19"
+      "relatedEntityIds": [
+        "EN-3309b3b14807f39a"
+      ],
+      "firstSeen": "2026-07-19",
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "EN-f3cfedbe8428c9f7",
@@ -2237,6 +2327,7 @@
         "EV-1c2723ad61d192bd",
         "EV-74dfbd82b47dc626",
         "EV-167f50a6f3134bd5",
+        "EV-30749250196dd507",
         "EV-712473b23a2a11a0",
         "EV-b9296439f7c34c89",
         "EV-cf5b2a0aff3914bd",
@@ -2328,7 +2419,9 @@
         "EV-3550e9863266ea96",
         "EV-ca420d07e12369f1",
         "EV-773ffcc6e1df56fa",
+        "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
+        "EV-b30dcacd355fe5f5",
         "EV-2f7e6d3a68bbf08f",
         "EV-5cd10de5c12916f0",
         "EV-067f57f6e6ffa6ce",
@@ -2371,8 +2464,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-technology",
         "TX-technology-agentic_execution",
+        "TX-industry-technology",
         "TX-industry-financial_services",
         "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
@@ -2425,7 +2518,7 @@
         "EN-7b8cb35de7ad047a"
       ],
       "firstSeen": "2026-02-19",
-      "lastSeen": "2026-07-19"
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "EN-8f71c4871a160172",
@@ -2571,6 +2664,8 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
+        "阿里巴巴",
+        "Qwen",
         "阿里"
       ],
       "verificationStatus": "verified",
@@ -2580,8 +2675,14 @@
       "eventIds": [
         "EV-43b7f45e9bd7ec9b",
         "EV-3d93d1da8cb64462",
+        "EV-4740121f428e4bda",
+        "EV-a354af52772334fd",
+        "EV-c0f87b8c5208cd75",
         "EV-53f08daddd011dbb",
         "EV-e1a4bc40db4a9d8f",
+        "EV-2a833330267cb2df",
+        "EV-0d5a32aca724d30e",
+        "EV-d08935b06ed9e7bb",
         "EV-215f938a46d0b126",
         "EV-ac1b82f6e6261012",
         "EV-6fbbbfcdcec81df4",
@@ -2622,19 +2723,72 @@
         "TX-technology-on_device",
         "TX-technology-embodied_ai",
         "TX-technology-fine_tuning",
-        "TX-technology-multimodal",
+        "TX-technology-open_weights",
         "TX-technology-video_generation",
+        "TX-technology-multimodal",
         "TX-technology-quantization",
         "TX-technology-computer_use"
       ],
       "relatedEntityIds": [
+        "EN-10a27c6240d18dbe",
         "EN-5398729239788ca5",
         "EN-22a4c686e665e299",
         "EN-2daac3672aeafcbd",
         "EN-d65d81c60c0c47c4"
       ],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-07-19"
+      "lastSeen": "2026-07-20"
+    },
+    {
+      "id": "EN-6f7ac1823da81d2e",
+      "name": "DeepSeek",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-87432dbb99cd6033",
+        "EV-d4d7b019ff0015df",
+        "EV-27b69ea604475b72",
+        "EV-f8c3a83d883c9b22",
+        "EV-70cbf25f7ec2cc3a",
+        "EV-f8ba1728de6a4899",
+        "EV-fe2b0d74944d6128",
+        "EV-caec65aef89d3b4a",
+        "EV-57e6392fe3bb69cd",
+        "EV-eddb4330fed15762",
+        "EV-2aca9a810ea65555",
+        "EV-a498b12f3fa2197e",
+        "EV-d064939235825765",
+        "EV-6af31d42885e0361",
+        "EV-8e6f9c324aa0b2f3",
+        "EV-4dfd7233c8c69b0b",
+        "EV-657837763764c869",
+        "EV-388a53fe918389b0",
+        "EV-48e17a3ba4b73550",
+        "EV-848bdd13f319c516",
+        "EV-86537be17d50ff20",
+        "EV-b6970cb396a7b1ed"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-code_generation",
+        "TX-industry-healthcare_life_sciences",
+        "TX-use_case-software_development",
+        "TX-technology-long_context",
+        "TX-technology-on_device",
+        "TX-technology-fine_tuning",
+        "TX-technology-open_weights",
+        "TX-technology-multimodal",
+        "TX-technology-quantization"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-05-24",
+      "lastSeen": "2026-07-16"
     },
     {
       "id": "EN-1d79127e9d90e89b",
@@ -2833,62 +2987,6 @@
       ],
       "firstSeen": "2026-06-10",
       "lastSeen": "2026-07-18"
-    },
-    {
-      "id": "EN-9c8ae69b84f21a2e",
-      "name": "Tencent",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [
-        "腾讯"
-      ],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-87432dbb99cd6033",
-        "EV-427081ec574b43bb",
-        "EV-acaf06b262d9c3db",
-        "EV-27b69ea604475b72",
-        "EV-da9bb2c98c1ce8cd",
-        "EV-afcd5426f5c01dc7",
-        "EV-619e33abf3f9bfbf",
-        "EV-be2f6bfcad93c42f",
-        "EV-c7b81290859057b0",
-        "EV-7fe139b107f9adc6",
-        "EV-de54542fd7e2282c",
-        "EV-3167e6eed75597e9",
-        "EV-9e35de25113a9269",
-        "EV-ad2e4fe6a149d95d",
-        "EV-c2f5b59db9912018",
-        "EV-57e6392fe3bb69cd",
-        "EV-1a073cd22d1bfa59",
-        "EV-a498b12f3fa2197e",
-        "EV-c11ee0da38376254",
-        "EV-6a6ff349579765ad",
-        "EV-7ff24ae733821395",
-        "EV-86537be17d50ff20",
-        "EV-6b7917bd7edd4bde",
-        "EV-e70b2c66b996d138",
-        "EV-8b4f7844af234ed8",
-        "EV-fc8b280e83232d6f"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-technology-vision_language",
-        "TX-use_case-robotics_automation",
-        "TX-technology-long_context",
-        "TX-technology-open_weights",
-        "TX-technology-multimodal",
-        "TX-industry-media_entertainment"
-      ],
-      "relatedEntityIds": [
-        "EN-ea3bd73e2b506e00"
-      ],
-      "firstSeen": "2026-05-18",
-      "lastSeen": "2026-07-19"
     }
   ],
   "fde": [],

@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-19T06:40:36.822Z",
-    "latestDataDate": "2026-07-19",
-    "currentDate": "2026-07-19",
-    "eventCount": 1286,
+    "generatedAt": "2026-07-20T03:58:48.579Z",
+    "latestDataDate": "2026-07-20",
+    "currentDate": "2026-07-20",
+    "eventCount": 1324,
     "quarantinedEventCount": 12
   },
   "node": {
@@ -22,6 +22,8 @@
       "EV-234ad54940674bf6",
       "EV-6415a58637893b34",
       "EV-4faa2bcf2e42e60c",
+      "EV-b580e33cabfea980",
+      "EV-4cb7e4c371fb252e",
       "EV-25933b8f123f92be",
       "EV-345c8a2cc00fe8ca",
       "EV-82b39e10391d0f3c",
@@ -46,11 +48,12 @@
       "EN-aa75c47729b4a292",
       "EN-8147e6fed86d42c1",
       "EN-96eebba49dbbf422",
+      "EN-149ae7e9819a17a0",
+      "EN-e9b67bdfb6ae6a2e",
+      "EN-985e1a7c957148f9",
       "EN-8d57f84bd1847b24",
       "EN-4dbe391b8fcf977a",
       "EN-0e6e48aba1669631",
-      "EN-e9b67bdfb6ae6a2e",
-      "EN-985e1a7c957148f9",
       "EN-e3b1bf3dab957ffe",
       "EN-754c490bd199c21a",
       "EN-7a3ecc54829211df",
@@ -78,7 +81,7 @@
       "HW-1450585d9cd5879f"
     ],
     "firstSeen": "2026-06-02",
-    "lastSeen": "2026-07-19"
+    "lastSeen": "2026-07-20"
   },
   "events": [
     {
@@ -680,6 +683,169 @@
       "products": [],
       "sourceUrl": "https://blogs.nvidia.com/blog/nvidia-and-doosan-group-physical-ai",
       "publisher": "NVIDIA AI Blog"
+    },
+    {
+      "id": "EV-b580e33cabfea980",
+      "dataDate": "2026-07-20",
+      "date": "2026-07-20",
+      "updatedDate": "2026-07-20",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "爱芯元智发布元曦系列大算力产品，A 系列AI推理卡算力超1000TOPS",
+      "originalTitle": "",
+      "subject": "爱芯元智",
+      "action": "发布",
+      "object": "元曦系列大算力产品，A 系列AI推理卡算力超1000TOPS",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        }
+      ],
+      "entityIds": [
+        "EN-149ae7e9819a17a0"
+      ],
+      "entityNames": [
+        "爱芯元智"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/978/841.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-4cb7e4c371fb252e",
+      "dataDate": "2026-07-20",
+      "date": "2026-07-19",
+      "updatedDate": "2026-07-20",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "乐道全系车型完成智能软硬件大升级，神玑 NX9031X 芯片累计出货超 30 万片",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "乐道全系车型完成智能软硬件大升级，神玑 NX9031X 芯片累计出货超 30 万片",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        }
+      ],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "enterprise_platform",
+            "dimensionName": "产品形态",
+            "name": "企业 AI 平台"
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "enterprise_platform",
+          "dimensionName": "产品形态",
+          "name": "企业 AI 平台"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "enterprise_platform",
+          "dimensionName": "产品形态",
+          "name": "企业 AI 平台"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        }
+      ],
+      "entityIds": [
+        "EN-e9b67bdfb6ae6a2e",
+        "EN-985e1a7c957148f9"
+      ],
+      "entityNames": [
+        "NIO",
+        "Shenji"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/978/703.htm",
+      "publisher": "IT之家（RSS）"
     },
     {
       "id": "EV-25933b8f123f92be",
@@ -2207,8 +2373,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-technology",
         "TX-technology-agentic_execution",
+        "TX-industry-technology",
         "TX-industry-financial_services",
         "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
@@ -2222,9 +2388,9 @@
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-embodied_ai",
         "TX-technology-fine_tuning",
+        "TX-technology-video_generation",
         "TX-technology-multimodal",
         "TX-industry-media_entertainment",
-        "TX-technology-video_generation",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
         "TX-use_case-content_creation",
@@ -2259,9 +2425,7 @@
       "name": "NVIDIA",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "英伟达"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -2306,7 +2470,6 @@
         "EV-4faa2bcf2e42e60c",
         "EV-9ee3c0ec243b6129",
         "EV-58c1cc3749294649",
-        "EV-0d5a32aca724d30e",
         "EV-118317b7f92e5e16",
         "EV-950237c6b3eb6343",
         "EV-29e069ac093f0e34",
@@ -2337,6 +2500,7 @@
         "EV-b7ba9acba80a852e",
         "EV-1a1fb68ba4d6a377",
         "EV-bac5824e594f1831",
+        "EV-625904809a9b14b8",
         "EV-4bb5b24400e49ea4",
         "EV-568d2aeab5234e48",
         "EV-b986a633cca27df9",
@@ -2353,6 +2517,7 @@
         "EV-aa63303570154a9b",
         "EV-d2ac9700c86913da",
         "EV-d43a561da59b2897",
+        "EV-02b19ffbe883ee2e",
         "EV-8993e021ac17df4a",
         "EV-34929bdd016dc8d6",
         "EV-08f736f61f2b46f3",
@@ -2362,8 +2527,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-technology",
         "TX-technology-agentic_execution",
+        "TX-industry-technology",
         "TX-use_case-enterprise_operations",
         "TX-industry-manufacturing",
         "TX-industry-automotive_transportation",
@@ -2390,29 +2555,26 @@
         "TX-technology-speech_audio"
       ],
       "relatedEntityIds": [
-        "EN-8395dc051feafc4c",
-        "EN-aa15d891a32a51b8",
+        "EN-1e71d9c1a5c4de16",
+        "EN-683d8d597da71192",
+        "EN-9e72fd4472222231",
         "EN-0f3360879e746531",
         "EN-a1b0d8a938903dc7",
-        "EN-956b7280912ef1cc",
         "EN-4a639cb888a15d75",
         "EN-8d323d8bba783aa3",
         "EN-b5738c169b693bee",
         "EN-51fd7dc086fcb858",
         "EN-9e193e1ec8d75d41",
-        "EN-3ae50afab3e392b8",
+        "EN-8395dc051feafc4c",
         "EN-936f01f91fdadf69",
         "EN-4e7e886400fe6a83",
         "EN-1dc405a4cda895d0",
         "EN-12ab68e37d104d27",
         "EN-a3266ab9e10d6105",
-        "EN-9fbf261b62c1d7c0",
-        "EN-11ef7b03c79c9bbd",
-        "EN-9bc22dcabf7f45b3",
-        "EN-171fa23d27b5894b"
+        "EN-9fbf261b62c1d7c0"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-19"
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "EN-59ae856cd788d0f5",
@@ -2561,9 +2723,9 @@
         "EV-8e01849c05b50355",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-b20bf10af759bd43",
         "EV-eb97c388b3197c06",
         "EV-83a8ac8a2554b60c",
-        "EV-0d5a32aca724d30e",
         "EV-debecca007e547d2",
         "EV-7963d8c78531f12d",
         "EV-a8a8f26c5128d894",
@@ -2787,7 +2949,7 @@
         "EN-d8494bb34d6ddc43"
       ],
       "firstSeen": "2026-03-13",
-      "lastSeen": "2026-07-19"
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "EN-1f1cfc1d441be41f",
@@ -2853,6 +3015,7 @@
         "EV-02686922dd82c4aa",
         "EV-2fd730d0ad452334",
         "EV-4faa2bcf2e42e60c",
+        "EV-7d09b00182b08c3f",
         "EV-8a9b12665a3e40a0",
         "EV-cfa8c754627747a1",
         "EV-0d862d59b05361cc",
@@ -2871,7 +3034,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-04-28",
-      "lastSeen": "2026-07-18"
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "EN-96eebba49dbbf422",
@@ -2964,6 +3127,7 @@
         "EV-92d28aef0c4b0a8a",
         "EV-c2800c1c5a3f568f",
         "EV-d4ddee1b39cced77",
+        "EV-30749250196dd507",
         "EV-e7b7df43970f7e2c",
         "EV-025778b83c1b2ca9",
         "EV-dce5de62b2e4b752",
@@ -3017,8 +3181,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-technology",
         "TX-technology-agentic_execution",
+        "TX-industry-technology",
         "TX-industry-financial_services",
         "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
@@ -3051,7 +3215,78 @@
         "EN-c70eca6b0f88f44d"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-19"
+      "lastSeen": "2026-07-20"
+    },
+    {
+      "id": "EN-149ae7e9819a17a0",
+      "name": "爱芯元智",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-b580e33cabfea980"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-embodied_ai"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-20",
+      "lastSeen": "2026-07-20"
+    },
+    {
+      "id": "EN-e9b67bdfb6ae6a2e",
+      "name": "NIO",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "蔚来"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-4cb7e4c371fb252e",
+        "EV-82b39e10391d0f3c"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-embodied_ai"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-18",
+      "lastSeen": "2026-07-20"
+    },
+    {
+      "id": "EN-985e1a7c957148f9",
+      "name": "Shenji",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "神玑公司"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-4cb7e4c371fb252e",
+        "EV-82b39e10391d0f3c"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-embodied_ai"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-18",
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "EN-8d57f84bd1847b24",
@@ -3092,6 +3327,7 @@
       "eventIds": [
         "EV-4b8064b1139e1724",
         "EV-434dcf1813a84ead",
+        "EV-218c2f6ecf3c369f",
         "EV-345c8a2cc00fe8ca",
         "EV-7256017056b81bbe"
       ],
@@ -3102,9 +3338,11 @@
         "TX-use_case-robotics_automation",
         "TX-technology-embodied_ai"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-0b706b4b95ba647c"
+      ],
       "firstSeen": "2026-07-03",
-      "lastSeen": "2026-07-19"
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "EN-0e6e48aba1669631",
@@ -3122,54 +3360,6 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-use_case-robotics_automation",
-        "TX-technology-embodied_ai"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-07-18",
-      "lastSeen": "2026-07-19"
-    },
-    {
-      "id": "EN-e9b67bdfb6ae6a2e",
-      "name": "NIO",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [
-        "蔚来"
-      ],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-82b39e10391d0f3c"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-technology-embodied_ai"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-07-18",
-      "lastSeen": "2026-07-19"
-    },
-    {
-      "id": "EN-985e1a7c957148f9",
-      "name": "Shenji",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [
-        "神玑公司"
-      ],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-82b39e10391d0f3c"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-technology-embodied_ai"
       ],
       "relatedEntityIds": [],
@@ -3327,6 +3517,8 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
+        "阿里巴巴",
+        "Qwen",
         "阿里"
       ],
       "verificationStatus": "verified",
@@ -3336,8 +3528,14 @@
       "eventIds": [
         "EV-43b7f45e9bd7ec9b",
         "EV-3d93d1da8cb64462",
+        "EV-4740121f428e4bda",
+        "EV-a354af52772334fd",
+        "EV-c0f87b8c5208cd75",
         "EV-53f08daddd011dbb",
         "EV-e1a4bc40db4a9d8f",
+        "EV-2a833330267cb2df",
+        "EV-0d5a32aca724d30e",
+        "EV-d08935b06ed9e7bb",
         "EV-215f938a46d0b126",
         "EV-ac1b82f6e6261012",
         "EV-6fbbbfcdcec81df4",
@@ -3378,19 +3576,21 @@
         "TX-technology-on_device",
         "TX-technology-embodied_ai",
         "TX-technology-fine_tuning",
-        "TX-technology-multimodal",
+        "TX-technology-open_weights",
         "TX-technology-video_generation",
+        "TX-technology-multimodal",
         "TX-technology-quantization",
         "TX-technology-computer_use"
       ],
       "relatedEntityIds": [
+        "EN-10a27c6240d18dbe",
         "EN-5398729239788ca5",
         "EN-22a4c686e665e299",
         "EN-2daac3672aeafcbd",
         "EN-d65d81c60c0c47c4"
       ],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-07-19"
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "EN-67f2d22514622d1b",
@@ -3600,6 +3800,7 @@
         "EV-1c2723ad61d192bd",
         "EV-74dfbd82b47dc626",
         "EV-167f50a6f3134bd5",
+        "EV-30749250196dd507",
         "EV-712473b23a2a11a0",
         "EV-b9296439f7c34c89",
         "EV-cf5b2a0aff3914bd",
@@ -3691,7 +3892,9 @@
         "EV-3550e9863266ea96",
         "EV-ca420d07e12369f1",
         "EV-773ffcc6e1df56fa",
+        "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
+        "EV-b30dcacd355fe5f5",
         "EV-2f7e6d3a68bbf08f",
         "EV-5cd10de5c12916f0",
         "EV-067f57f6e6ffa6ce",
@@ -3734,8 +3937,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-technology",
         "TX-technology-agentic_execution",
+        "TX-industry-technology",
         "TX-industry-financial_services",
         "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
@@ -3788,7 +3991,7 @@
         "EN-7b8cb35de7ad047a"
       ],
       "firstSeen": "2026-02-19",
-      "lastSeen": "2026-07-19"
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "EN-94ff75465b1afa65",

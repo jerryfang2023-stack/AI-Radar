@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-19T06:40:36.822Z",
-    "latestDataDate": "2026-07-19",
-    "currentDate": "2026-07-19",
-    "eventCount": 1286,
+    "generatedAt": "2026-07-20T03:58:48.579Z",
+    "latestDataDate": "2026-07-20",
+    "currentDate": "2026-07-20",
+    "eventCount": 1324,
     "quarantinedEventCount": 12
   },
   "node": {
@@ -1537,8 +1537,8 @@
         "TX-technology-on_device",
         "TX-technology-fine_tuning",
         "TX-technology-open_weights",
-        "TX-technology-multimodal",
-        "TX-technology-video_generation"
+        "TX-technology-video_generation",
+        "TX-technology-multimodal"
       ],
       "relatedEntityIds": [
         "EN-3ccbd9105a45d8fc"
@@ -1637,6 +1637,7 @@
         "EV-02686922dd82c4aa",
         "EV-2fd730d0ad452334",
         "EV-4faa2bcf2e42e60c",
+        "EV-7d09b00182b08c3f",
         "EV-8a9b12665a3e40a0",
         "EV-cfa8c754627747a1",
         "EV-0d862d59b05361cc",
@@ -1655,7 +1656,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-04-28",
-      "lastSeen": "2026-07-18"
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "EN-29e1a488361f12d3",
@@ -1769,6 +1770,7 @@
         "EV-92d28aef0c4b0a8a",
         "EV-c2800c1c5a3f568f",
         "EV-d4ddee1b39cced77",
+        "EV-30749250196dd507",
         "EV-e7b7df43970f7e2c",
         "EV-025778b83c1b2ca9",
         "EV-dce5de62b2e4b752",
@@ -1822,8 +1824,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-technology",
         "TX-technology-agentic_execution",
+        "TX-industry-technology",
         "TX-industry-financial_services",
         "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
@@ -1856,7 +1858,7 @@
         "EN-c70eca6b0f88f44d"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-19"
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "EN-9fbf261b62c1d7c0",
@@ -1943,8 +1945,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-technology",
         "TX-technology-agentic_execution",
+        "TX-industry-technology",
         "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
         "TX-industry-automotive_transportation",
@@ -1991,8 +1993,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-technology",
         "TX-technology-agentic_execution",
+        "TX-industry-technology",
         "TX-use_case-customer_service",
         "TX-industry-healthcare_life_sciences"
       ],
@@ -2116,6 +2118,7 @@
         "EV-1c2723ad61d192bd",
         "EV-74dfbd82b47dc626",
         "EV-167f50a6f3134bd5",
+        "EV-30749250196dd507",
         "EV-712473b23a2a11a0",
         "EV-b9296439f7c34c89",
         "EV-cf5b2a0aff3914bd",
@@ -2207,7 +2210,9 @@
         "EV-3550e9863266ea96",
         "EV-ca420d07e12369f1",
         "EV-773ffcc6e1df56fa",
+        "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
+        "EV-b30dcacd355fe5f5",
         "EV-2f7e6d3a68bbf08f",
         "EV-5cd10de5c12916f0",
         "EV-067f57f6e6ffa6ce",
@@ -2250,8 +2255,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-technology",
         "TX-technology-agentic_execution",
+        "TX-industry-technology",
         "TX-industry-financial_services",
         "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
@@ -2304,7 +2309,7 @@
         "EN-7b8cb35de7ad047a"
       ],
       "firstSeen": "2026-02-19",
-      "lastSeen": "2026-07-19"
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "EN-88e2cce43eeadb36",
@@ -2323,6 +2328,7 @@
         "EV-02686922dd82c4aa",
         "EV-3fb492fb45980541",
         "EV-2ffc3377977da114",
+        "EV-7d09b00182b08c3f",
         "EV-f6ac2938949f74ec",
         "EV-2c1fc2143d7d4a6a"
       ],
@@ -2332,11 +2338,9 @@
         "TX-industry-retail_ecommerce",
         "TX-use_case-customer_service"
       ],
-      "relatedEntityIds": [
-        "EN-2c348893efb2316e"
-      ],
+      "relatedEntityIds": [],
       "firstSeen": "2026-07-07",
-      "lastSeen": "2026-07-18"
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "EN-19e41212c0556603",
@@ -2594,7 +2598,9 @@
       "name": "Amazon",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "Amazon Bedrock"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -2613,6 +2619,7 @@
         "EV-ec2e421d0e18be9b",
         "EV-c0a65877001ed413",
         "EV-303b418c63895ba6",
+        "EV-30749250196dd507",
         "EV-43976be427aefb52",
         "EV-b93b5cc15823e9c3",
         "EV-918fc324de3117bd",
@@ -2644,7 +2651,7 @@
         "EN-9fbf261b62c1d7c0"
       ],
       "firstSeen": "2025-12-02",
-      "lastSeen": "2026-07-18"
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "EN-dba61afed18c85d6",

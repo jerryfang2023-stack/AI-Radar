@@ -1,0 +1,289 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-028",
+  "title": "Perplexity 发布开放基准 WANDR，评估智能体的广泛搜索与深度验证能力",
+  "title_zh": "Perplexity 发布开放基准 WANDR，评估智能体的广泛搜索与深度验证能力",
+  "title_translation_status": "not_required",
+  "title_translation_method": "source_title",
+  "title_translation_model": "",
+  "original_url": "https://www.marktechpost.com/2026/07/19/perplexity-ai-releases-wandr-an-open-benchmark-evaluating-research-agents-that-must-search-wide-and-deep",
+  "canonical_url": "https://marktechpost.com/2026/07/19/perplexity-ai-releases-wandr-an-open-benchmark-evaluating-research-agents-that-must-search-wide-and-deep",
+  "source_name": "MarkTechPost（RSS）",
+  "source_type": "web",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "event",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "formal_report",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "platform_enablement",
+  "enterprise_ai_transformation_reason": "enterprise_ai_implementation_signal",
+  "author": "",
+  "published_at": "2026-07-19T07:19:14.000Z",
+  "collected_at": "2026-07-20T03:56:43.778Z",
+  "language": "mixed",
+  "full_text": "Editors Pick\nAgentic AI\nNew Releases\nStaff\nResearch agents already handle real knowledge work today. Teams delegate competitive mapping, due diligence, and literature review to them. However, most benchmarks test a single answer, not large evidence-backed collections. Perplexity targets that gap with a new open benchmark.\nPerplexity released WANDR (Wide ANd Deep Research) . It is an open benchmark and evaluation harness. It is built around 500 realistic, challenging data-collection tasks for knowledge work. WANDR is the wide sibling of Perplexity’s DRACO benchmark for deep research. DRACO asks whether an agent produces an accurate, complete, objective long-form report. WANDR instead asks whether it can build a large collection with evidence.\nWhat is WANDR\nAt its core, WANDR tests two demands together. Wide means discovering a large, often open-ended set of qualifying entities. Deep means investigating every entity enough to support each claim with evidence. Combining both changes the problem for agents. A few compelling examples are not enough here. A polished narrative built on incomplete research also falls short.\nTo capture this, WANDR uses a composable qualification key hierarchy . One task might request company(n) -> employee(m) -> url(k) . This means n qualifying companies, m employees each, and k supporting pages each. Every complete path through the tree gets validated independently. The same structure can represent a flat list, nested search, or matrix.\nA Concrete Task Example\nTo ground that hierarchy, consider the released ceo_cfo_appointments task. It asks for at least 70 US-based companies. Each must have a CEO or CFO appointment first announced between March 1 and April 30, 2026. For each, the agent supplies one authoritative appointment page. A subtask adds a listing-authority page per company. Together, the task requires 140 source-backed records.\nConcretely, the two hierarchies and one submitted record look like this:\nCopy Code Copied Use a different Browser\n# Task hierarchies\ncompany(70) -> company_appointee(1) -> url(1) # 70 appointment records\ncompany(70) -> url(1) # 70 listing records\n# One record the grader re-fetches and re-checks (values are illustrative)\n\"item\": \"Example Corp - new CFO\",\n\"url\": \"https://issuer.example.com/press/cfo-appointment\",\n\"excerpts\": [\"Example Corp today named Jane Doe as Chief Financial Officer, effective April 2026.\"],\n\"answer\": \"Jane Doe appointed CFO; announced April 2026\"\nRealistic Tasks, Generated At Scale\nBeyond single examples, WANDR builds its tasks from real usage. It starts from de-identified patterns seen in production, not synthetic prompts. A semi-automated pipeline then turns those patterns into tasks. The pipeline runs four stages: seeding, authoring, admission, and curation. It uses an interleaved author-critic loop with mechanical linting.\nAs a result, the median task asks for 50 members and 245 records overall. Across all 500 tasks, WANDR calls for 170,495 source-backed records. Tasks split into 167 lower, 166 middle, and 167 higher difficulty. Difficulty depends on per-record work, not scale alone.\nHow WANDR Grades Agents\nUnlike fixed answer keys, WANDR grades each claim against cited evidence. Every record contains an item, URL, selected excerpts, and answer. The grader re-fetches the page during evaluation. It checks whether the page is usable and in scope. It then verifies the excerpts truly appear and support every requirement.\nThese binary record verdicts then roll up through the hierarchy. Precision measures the quality of what a system submitted. Recall measures quality-adjusted completion, filling any shortfall with zeros. Soft scores give partial credit to incomplete members. Hard scores count only members whose full subtree is correct.\nThe Benchmark Results\nUsing that method, Perplexity ran six production systems on all 500 tasks. Its own Search as Code (SaC) system leads. Still, no system comes close to solving the benchmark.\nSystem Soft F1 Hard F1 Notes\nPerplexity (Search as Code) 0.363 0.133 $5.20/task, 14.9-min median, 3.82M tokens/task\nAnthropic 0.249 0.072 Closest on quality, but more time, money, tokens\nOthers (best) 0.121 0.035 OpenAI, Exa faster and cheaper, but lower scores\nWith more effort, Perplexity reaches 0.447 soft F1 at the xhigh setting. Cost across settings spans more than four orders of magnitude. It ranges from $0.03 per task up to $324.83 per task.\nBeyond the leaderboard, four findings stand out. First, partial progress is common, but complete coverage is not. Every system shows soft recall below soft precision. Second, scale compounds the problem sharply. Deeper hierarchies hurt most, since each branch adds a failure point. Third, discovery is the first structural bottleneck. Top-level discovery completion ranges from 0.611 to 0.951 across systems. Under-delivery, not duplicate merging, explains most missing volume. Fourth, finding a usable page is usually easy. Turning it into complete evidence is the hard part. For Perplexity, 41.4% of pages miss a substantive requirement. Also, 57.5% of excerpts fail to support the full claim. Its soft F1 falls from 0.531 under a retrieval-only check to 0.363 under the full verdict.\nNotably, Search as Code fits this task shape well. An agent can express retrieval, filtering, fan-out, joins, deduplication, and stopping logic as a program. Deterministic compute then handles repeated operations outside the model context.\nUse Cases With Examples\nPractically, WANDR maps to jobs teams already automate. A market analyst needs every qualifying competitor, with matching evidence for each. A due-diligence team needs dozens of companies, then ownership, executives, and financing. Talent sourcing needs many candidates, each with supporting profile pages. WANDR tests exactly these wide-and-deep collection patterns at professional scale.\nBecause grading is per-record, teams can localize failures precisely. The score tree isolates loss to discovery, enrichment, or evidence extraction. This diagnosis helps engineers improve one weak stage at a time.\nKey Takeaways\nWANDR is an open benchmark with 500 evidence-heavy, wide-and-deep tasks.\nTasks use a qualification key hierarchy validated path by path.\nGrading is reference-free; the grader re-fetches and checks cited evidence.\nPerplexity Search as Code leads at 0.363 soft F1 and 0.133 hard F1.\nDiscovery and complete evidence remain the biggest failure points.\nCheck out the Technical details and Repo here . Also, feel free to follow us on Twitter and don’t forget to join our 150k+ML SubReddit and Subscribe to our Newsletter . Wait! are you on telegram? now you can join us on telegram as well.\nNeed to partner with us for promoting your GitHub Repo OR Hugging Face Page OR Product Release OR Webinar etc.? Connect with us\nAsif Razzaq\nWebsite | + posts Bio\nAsif Razzaq is the CEO of Marktechpost Media Inc.. As a visionary entrepreneur and engineer, Asif is committed to harnessing the potential of Artificial Intelligence for social good. His most recent endeavor is the launch of an Artificial Intelligence Media Platform, Marktechpost, which stands out for its in-depth coverage of machine learning and deep learning news that is both technically sound and easily understandable by a wide audience. The platform boasts of over 2 million monthly views, illustrating its popularity among audiences.\nAsif Razzaq\nFeyn AI Releases SQRL, a Text-to-SQL Model Family That Inspects the Database Before Writing a Query\nAsif Razzaq\nAlibaba Previews Qwen3.8-Max, a 2.4 Trillion-Parameter Multimodal Model, Days After Moonshot’s Kimi K3 Open-Weight Launch\nAsif Razzaq\nNVIDIA Released DeepStream 9.1: Bringing Agentic AI to Vision AI With 13 Skills and Multi-View 3D Tracking\nAsif Razzaq\nSakana AI’s Error Diffusion Trains Dale-Compliant Dual-Stream Networks, Reaching 96.7% MNIST and 61.7% CIFAR-10 Without Backpropagation",
+  "clean_text": "Editors Pick\nAgentic AI\nNew Releases\nStaff\nResearch agents already handle real knowledge work today. Teams delegate competitive mapping, due diligence, and literature review to them. However, most benchmarks test a single answer, not large evidence-backed collections. Perplexity targets that gap with a new open benchmark.\nPerplexity released WANDR (Wide ANd Deep Research) . It is an open benchmark and evaluation harness. It is built around 500 realistic, challenging data-collection tasks for knowledge work. WANDR is the wide sibling of Perplexity’s DRACO benchmark for deep research. DRACO asks whether an agent produces an accurate, complete, objective long-form report. WANDR instead asks whether it can build a large collection with evidence.\nWhat is WANDR\nAt its core, WANDR tests two demands together. Wide means discovering a large, often open-ended set of qualifying entities. Deep means investigating every entity enough to support each claim with evidence. Combining both changes the problem for agents. A few compelling examples are not enough here. A polished narrative built on incomplete research also falls short.\nTo capture this, WANDR uses a composable qualification key hierarchy . One task might request company(n) -> employee(m) -> url(k) . This means n qualifying companies, m employees each, and k supporting pages each. Every complete path through the tree gets validated independently. The same structure can represent a flat list, nested search, or matrix.\nA Concrete Task Example\nTo ground that hierarchy, consider the released ceo_cfo_appointments task. It asks for at least 70 US-based companies. Each must have a CEO or CFO appointment first announced between March 1 and April 30, 2026. For each, the agent supplies one authoritative appointment page. A subtask adds a listing-authority page per company. Together, the task requires 140 source-backed records.\nConcretely, the two hierarchies and one submitted record look like this:\nCopy Code Copied Use a different Browser\n# Task hierarchies\ncompany(70) -> company_appointee(1) -> url(1) # 70 appointment records\ncompany(70) -> url(1) # 70 listing records\n# One record the grader re-fetches and re-checks (values are illustrative)\n\"item\": \"Example Corp - new CFO\",\n\"url\": \"https://issuer.example.com/press/cfo-appointment\",\n\"excerpts\": [\"Example Corp today named Jane Doe as Chief Financial Officer, effective April 2026.\"],\n\"answer\": \"Jane Doe appointed CFO; announced April 2026\"\nRealistic Tasks, Generated At Scale\nBeyond single examples, WANDR builds its tasks from real usage. It starts from de-identified patterns seen in production, not synthetic prompts. A semi-automated pipeline then turns those patterns into tasks. The pipeline runs four stages: seeding, authoring, admission, and curation. It uses an interleaved author-critic loop with mechanical linting.\nAs a result, the median task asks for 50 members and 245 records overall. Across all 500 tasks, WANDR calls for 170,495 source-backed records. Tasks split into 167 lower, 166 middle, and 167 higher difficulty. Difficulty depends on per-record work, not scale alone.\nHow WANDR Grades Agents\nUnlike fixed answer keys, WANDR grades each claim against cited evidence. Every record contains an item, URL, selected excerpts, and answer. The grader re-fetches the page during evaluation. It checks whether the page is usable and in scope. It then verifies the excerpts truly appear and support every requirement.\nThese binary record verdicts then roll up through the hierarchy. Precision measures the quality of what a system submitted. Recall measures quality-adjusted completion, filling any shortfall with zeros. Soft scores give partial credit to incomplete members. Hard scores count only members whose full subtree is correct.\nThe Benchmark Results\nUsing that method, Perplexity ran six production systems on all 500 tasks. Its own Search as Code (SaC) system leads. Still, no system comes close to solving the benchmark.\nSystem Soft F1 Hard F1 Notes\nPerplexity (Search as Code) 0.363 0.133 $5.20/task, 14.9-min median, 3.82M tokens/task\nAnthropic 0.249 0.072 Closest on quality, but more time, money, tokens\nOthers (best) 0.121 0.035 OpenAI, Exa faster and cheaper, but lower scores\nWith more effort, Perplexity reaches 0.447 soft F1 at the xhigh setting. Cost across settings spans more than four orders of magnitude. It ranges from $0.03 per task up to $324.83 per task.\nBeyond the leaderboard, four findings stand out. First, partial progress is common, but complete coverage is not. Every system shows soft recall below soft precision. Second, scale compounds the problem sharply. Deeper hierarchies hurt most, since each branch adds a failure point. Third, discovery is the first structural bottleneck. Top-level discovery completion ranges from 0.611 to 0.951 across systems. Under-delivery, not duplicate merging, explains most missing volume. Fourth, finding a usable page is usually easy. Turning it into complete evidence is the hard part. For Perplexity, 41.4% of pages miss a substantive requirement. Also, 57.5% of excerpts fail to support the full claim. Its soft F1 falls from 0.531 under a retrieval-only check to 0.363 under the full verdict.\nNotably, Search as Code fits this task shape well. An agent can express retrieval, filtering, fan-out, joins, deduplication, and stopping logic as a program. Deterministic compute then handles repeated operations outside the model context.\nUse Cases With Examples\nPractically, WANDR maps to jobs teams already automate. A market analyst needs every qualifying competitor, with matching evidence for each. A due-diligence team needs dozens of companies, then ownership, executives, and financing. Talent sourcing needs many candidates, each with supporting profile pages. WANDR tests exactly these wide-and-deep collection patterns at professional scale.\nBecause grading is per-record, teams can localize failures precisely. The score tree isolates loss to discovery, enrichment, or evidence extraction. This diagnosis helps engineers improve one weak stage at a time.\nKey Takeaways\nWANDR is an open benchmark with 500 evidence-heavy, wide-and-deep tasks.\nTasks use a qualification key hierarchy validated path by path.\nGrading is reference-free; the grader re-fetches and checks cited evidence.\nPerplexity Search as Code leads at 0.363 soft F1 and 0.133 hard F1.\nDiscovery and complete evidence remain the biggest failure points.\nCheck out the Technical details and Repo here . Also, feel free to follow us on Twitter and don’t forget to join our 150k+ML SubReddit and Subscribe to our Newsletter . Wait! are you on telegram? now you can join us on telegram as well.\nNeed to partner with us for promoting your GitHub Repo OR Hugging Face Page OR Product Release OR Webinar etc.? Connect with us\nAsif Razzaq\nWebsite | + posts Bio\nAsif Razzaq is the CEO of Marktechpost Media Inc.. As a visionary entrepreneur and engineer, Asif is committed to harnessing the potential of Artificial Intelligence for social good. His most recent endeavor is the launch of an Artificial Intelligence Media Platform, Marktechpost, which stands out for its in-depth coverage of machine learning and deep learning news that is both technically sound and easily understandable by a wide audience. The platform boasts of over 2 million monthly views, illustrating its popularity among audiences.\nAsif Razzaq\nFeyn AI Releases SQRL, a Text-to-SQL Model Family That Inspects the Database Before Writing a Query\nAsif Razzaq\nAlibaba Previews Qwen3.8-Max, a 2.4 Trillion-Parameter Multimodal Model, Days After Moonshot’s Kimi K3 Open-Weight Launch\nAsif Razzaq\nNVIDIA Released DeepStream 9.1: Bringing Agentic AI to Vision AI With 13 Skills and Multi-View 3D Tracking\nAsif Razzaq\nSakana AI’s Error Diffusion Trains Dale-Compliant Dual-Stream Networks, Reaching 96.7% MNIST and 61.7% CIFAR-10 Without Backpropagation",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-20/r-028-perplexity-发布开放基准-wandr-评估智能体的广泛搜索与深度验证能力.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-20/r-028-perplexity-发布开放基准-wandr-评估智能体的广泛搜索与深度验证能力.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-article",
+  "extraction_quality": "high",
+  "extraction_method": "article",
+  "readability_score": 91,
+  "extractor_diagnostics": {
+    "readability_score": 91,
+    "text_length": 7900,
+    "paragraph_count": 46,
+    "sentence_count": 91,
+    "boilerplate_hits": 2,
+    "symbol_ratio": 0.0014,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "article"
+  },
+  "has_full_text": true,
+  "content_length": 7900,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "ab38cb2be4d2b40f",
+    "missing": []
+  },
+  "evidence_strength": "rich_evidence",
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "Perplexity 发布开放基准 WANDR，评估智能体的广泛搜索与深度验证能力",
+    "discovery_summary": "Perplexity 发布开放基准 WANDR，包含 500 个真实数据收集任务，要求智能体同时完成广泛发现与深度验证。其自有的 Search as Code 系统以 0.363 的 Soft F1 领先，但所有系统均远未解决该基准，最高分仅 0.447。",
+    "source_name": "MarkTechPost（RSS）",
+    "origin_url": "https://www.marktechpost.com/2026/07/19/perplexity-ai-releases-wandr-an-open-benchmark-evaluating-research-agents-that-must-search-wide-and-deep",
+    "discovered_at": "2026-07-20T03:49:05.227Z",
+    "rank_on_page": 171,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "7d06bc1214e28145",
+  "content_hash": "ab38cb2be4d2b40f",
+  "full_text_hash": "ab38cb2be4d2b40f",
+  "semantic_hash": "918a45f5d656de3a",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-19T07:19:14.000Z",
+  "last_seen_at": "2026-07-20T03:56:43.778Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "product_update",
+      "text": "Perplexity 发布开放基准 WANDR，包含 500 个真实数据收集任务，要求智能体同时完成广泛发现与深度验证。其自有的 Search as Code 系统以 0.363 的 Soft F1 领先，但所有系统均远未解决该基准，最高分仅 0.447。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "product_update",
+      "text": "Editors Pick Agentic AI New Releases Staff Research agents already handle real knowledge work today.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Teams delegate competitive mapping, due diligence, and literature review to them.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "However, most benchmarks test a single answer, not large evidence-backed collections.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Perplexity targets that gap with a new open benchmark.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "product_update",
+      "text": "Perplexity released WANDR (Wide ANd Deep Research) .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-20T03:56:43.778Z",
+  "business_elements": {
+    "companies": [
+      "MarkTechPost（RSS）",
+      "OpenAI",
+      "Anthropic",
+      "GitHub",
+      "Nvidia",
+      "Perplexity"
+    ],
+    "products": [
+      "agents",
+      "agent",
+      "Agents"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "合同审阅 / 法律研究",
+      "计费 / 预算管理"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "合作 / 联盟"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "财务 / 预算",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "500",
+      "0.363",
+      "1",
+      "0.447",
+      "70",
+      "30",
+      "2026",
+      "140"
+    ],
+    "quotes": [
+      "Example Corp - new CFO",
+      "https://issuer.example.com/press/cfo-appointment",
+      "excerpts",
+      "Example Corp today named Jane Doe as Chief Financial Officer, effective April 2026.",
+      "Jane Doe appointed CFO; announced April 2026"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Perplexity 发布开放基准 WANDR，包含 500 个真实数据收集任务，要求智能体同时完成广泛发现与深度验证。其自有的 Search as Code 系统以 0.363 的 Soft F1 领先，但所有系统均远未解决该基准，最高分仅 0.447。",
+      "Editors Pick Agentic AI New Releases Staff Research agents already handle real knowledge work today.",
+      "Teams delegate competitive mapping, due diligence, and literature review to them."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_product_or_service",
+    "importance_score": 5,
+    "importance_reason": "new product or service; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "enterprise_ai_transformation_lens",
+      "commercial_or_risk_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 2
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": true,
+    "trend_candidate_context": true,
+    "signal_card_candidate": true,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "core_pool"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Perplexity 发布开放基准 WANDR，评估智能体的广泛搜索与深度验证能力\n\n- raw_id: R-028\n- title_zh: Perplexity 发布开放基准 WANDR，评估智能体的广泛搜索与深度验证能力\n- title_translation_status: not_required\n- title_translation_method: source_title\n- original_url: https://www.marktechpost.com/2026/07/19/perplexity-ai-releases-wandr-an-open-benchmark-evaluating-research-agents-that-must-search-wide-and-deep\n- source_name: MarkTechPost（RSS）\n- collected_at: 2026-07-20T03:56:43.778Z\n\n## clean_text\n\nEditors Pick\nAgentic AI\nNew Releases\nStaff\nResearch agents already handle real knowledge work today. Teams delegate competitive mapping, due diligence, and literature review to them. However, most benchmarks test a single answer, not large evidence-backed collections. Perplexity targets that gap with a new open benchmark.\nPerplexity released WANDR (Wide ANd Deep Research) . It is an open benchmark and evaluation harness. It is built around 500 realistic, challenging data-collection tasks for knowledge work. WANDR is the wide sibling of Perplexity’s DRACO benchmark for deep research. DRACO asks whether an agent produces an accurate, complete, objective long-form report. WANDR instead asks whether it can build a large collection with evidence.\nWhat is WANDR\nAt its core, WANDR tests two demands together. Wide means discovering a large, often open-ended set of qualifying entities. Deep means investigating every entity enough to support each claim with evidence. Combining both changes the problem for agents. A few compelling examples are not enough here. A polished narrative built on incomplete research also falls short.\nTo capture this, WANDR uses a composable qualification key hierarchy . One task might request company(n) -> employee(m) -> url(k) . This means n qualifying companies, m employees each, and k supporting pages each. Every complete path through the tree gets validated independently. The same structure can represent a flat list, nested search, or matrix.\nA Concrete Task Example\nTo ground that hierarchy, consider the released ceo_cfo_appointments task. It asks for at least 70 US-based companies. Each must have a CEO or CFO appointment first announced between March 1 and April 30, 2026. For each, the agent supplies one authoritative appointment page. A subtask adds a listing-authority page per company. Together, the task requires 140 source-backed records.\nConcretely, the two hierarchies and one submitted record look like this:\nCopy Code Copied Use a different Browser\n# Task hierarchies\ncompany(70) -> company_appointee(1) -> url(1) # 70 appointment records\ncompany(70) -> url(1) # 70 listing records\n# One record the grader re-fetches and re-checks (values are illustrative)\n\"item\": \"Example Corp - new CFO\",\n\"url\": \"https://issuer.example.com/press/cfo-appointment\",\n\"excerpts\": [\"Example Corp today named Jane Doe as Chief Financial Officer, effective April 2026.\"],\n\"answer\": \"Jane Doe appointed CFO; announced April 2026\"\nRealistic Tasks, Generated At Scale\nBeyond single examples, WANDR builds its tasks from real usage. It starts from de-identified patterns seen in production, not synthetic prompts. A semi-automated pipeline then turns those patterns into tasks. The pipeline runs four stages: seeding, authoring, admission, and curation. It uses an interleaved author-critic loop with mechanical linting.\nAs a result, the median task asks for 50 members and 245 records overall. Across all 500 tasks, WANDR calls for 170,495 source-backed records. Tasks split into 167 lower, 166 middle, and 167 higher difficulty. Difficulty depends on per-record work, not scale alone.\nHow WANDR Grades Agents\nUnlike fixed answer keys, WANDR grades each claim against cited evidence. Every record contains an item, URL, selected excerpts, and answer. The grader re-fetches the page during evaluation. It checks whether the page is usable and in scope. It then verifies the excerpts truly appear and support every requirement.\nThese binary record verdicts then roll up through the hierarchy. Precision measures the quality of what a system submitted. Recall measures quality-adjusted completion, filling any shortfall with zeros. Soft scores give partial credit to incomplete members. Hard scores count only members whose full subtree is correct.\nThe Benchmark Results\nUsing that method, Perplexity ran six production systems on all 500 tasks. Its own Search as Code (SaC) system leads. Still, no system comes close to solving the benchmark.\nSystem Soft F1 Hard F1 Notes\nPerplexity (Search as Code) 0.363 0.133 $5.20/task, 14.9-min median, 3.82M tokens/task\nAnthropic 0.249 0.072 Closest on quality, but more time, money, tokens\nOthers (best) 0.121 0.035 OpenAI, Exa faster and cheaper, but lower scores\nWith more effort, Perplexity reaches 0.447 soft F1 at the xhigh setting. Cost across settings spans more than four orders of magnitude. It ranges from $0.03 per task up to $324.83 per task.\nBeyond the leaderboard, four findings stand out. First, partial progress is common, but complete coverage is not. Every system shows soft recall below soft precision. Second, scale compounds the problem sharply. Deeper hierarchies hurt most, since each branch adds a failure point. Third, discovery is the first structural bottleneck. Top-level discovery completion ranges from 0.611 to 0.951 across systems. Under-delivery, not duplicate merging, explains most missing volume. Fourth, finding a usable page is usually easy. Turning it into complete evidence is the hard part. For Perplexity, 41.4% of pages miss a substantive requirement. Also, 57.5% of excerpts fail to support the full claim. Its soft F1 falls from 0.531 under a retrieval-only check to 0.363 under the full verdict.\nNotably, Search as Code fits this task shape well. An agent can express retrieval, filtering, fan-out, joins, deduplication, and stopping logic as a program. Deterministic compute then handles repeated operations outside the model context.\nUse Cases With Examples\nPractically, WANDR maps to jobs teams already automate. A market analyst needs every qualifying competitor, with matching evidence for each. A due-diligence team needs dozens of companies, then ownership, executives, and financing. Talent sourcing needs many candidates, each with supporting profile pages. WANDR tests exactly these wide-and-deep collection patterns at professional scale.\nBecause grading is per-record, teams can localize failures precisely. The score tree isolates loss to discovery, enrichment, or evidence extraction. This diagnosis helps engineers improve one weak stage at a time.\nKey Takeaways\nWANDR is an open benchmark with 500 evidence-heavy, wide-and-deep tasks.\nTasks use a qualification key hierarchy validated path by path.\nGrading is reference-free; the grader re-fetches and checks cited evidence.\nPerplexity Search as Code leads at 0.363 soft F1 and 0.133 hard F1.\nDiscovery and complete evidence remain the biggest failure points.\nCheck out the Technical details and Repo here . Also, feel free to follow us on Twitter and don’t forget to join our 150k+ML SubReddit and Subscribe to our Newsletter . Wait! are you on telegram? now you can join us on telegram as well.\nNeed to partner with us for promoting your GitHub Repo OR Hugging Face Page OR Product Release OR Webinar etc.? Connect with us\nAsif Razzaq\nWebsite | + posts Bio\nAsif Razzaq is the CEO of Marktechpost Media Inc.. As a visionary entrepreneur and engineer, Asif is committed to harnessing the potential of Artificial Intelligence for social good. His most recent endeavor is the launch of an Artificial Intelligence Media Platform, Marktechpost, which stands out for its in-depth coverage of machine learning and deep learning news that is both technically sound and easily understandable by a wide audience. The platform boasts of over 2 million monthly views, illustrating its popularity among audiences.\nAsif Razzaq\nFeyn AI Releases SQRL, a Text-to-SQL Model Family That Inspects the Database Before Writing a Query\nAsif Razzaq\nAlibaba Previews Qwen3.8-Max, a 2.4 Trillion-Parameter Multimodal Model, Days After Moonshot’s Kimi K3 Open-Weight Launch\nAsif Razzaq\nNVIDIA Released DeepStream 9.1: Bringing Agentic AI to Vision AI With 13 Skills and Multi-View 3D Tracking\nAsif Razzaq\nSakana AI’s Error Diffusion Trains Dale-Compliant Dual-Stream Networks, Reaching 96.7% MNIST and 61.7% CIFAR-10 Without Backpropagation\n\n## full_text\n\nEditors Pick\nAgentic AI\nNew Releases\nStaff\nResearch agents already handle real knowledge work today. Teams delegate competitive mapping, due diligence, and literature review to them. However, most benchmarks test a single answer, not large evidence-backed collections. Perplexity targets that gap with a new open benchmark.\nPerplexity released WANDR (Wide ANd Deep Research) . It is an open benchmark and evaluation harness. It is built around 500 realistic, challenging data-collection tasks for knowledge work. WANDR is the wide sibling of Perplexity’s DRACO benchmark for deep research. DRACO asks whether an agent produces an accurate, complete, objective long-form report. WANDR instead asks whether it can build a large collection with evidence.\nWhat is WANDR\nAt its core, WANDR tests two demands together. Wide means discovering a large, often open-ended set of qualifying entities. Deep means investigating every entity enough to support each claim with evidence. Combining both changes the problem for agents. A few compelling examples are not enough here. A polished narrative built on incomplete research also falls short.\nTo capture this, WANDR uses a composable qualification key hierarchy . One task might request company(n) -> employee(m) -> url(k) . This means n qualifying companies, m employees each, and k supporting pages each. Every complete path through the tree gets validated independently. The same structure can represent a flat list, nested search, or matrix.\nA Concrete Task Example\nTo ground that hierarchy, consider the released ceo_cfo_appointments task. It asks for at least 70 US-based companies. Each must have a CEO or CFO appointment first announced between March 1 and April 30, 2026. For each, the agent supplies one authoritative appointment page. A subtask adds a listing-authority page per company. Together, the task requires 140 source-backed records.\nConcretely, the two hierarchies and one submitted record look like this:\nCopy Code Copied Use a different Browser\n# Task hierarchies\ncompany(70) -> company_appointee(1) -> url(1) # 70 appointment records\ncompany(70) -> url(1) # 70 listing records\n# One record the grader re-fetches and re-checks (values are illustrative)\n\"item\": \"Example Corp - new CFO\",\n\"url\": \"https://issuer.example.com/press/cfo-appointment\",\n\"excerpts\": [\"Example Corp today named Jane Doe as Chief Financial Officer, effective April 2026.\"],\n\"answer\": \"Jane Doe appointed CFO; announced April 2026\"\nRealistic Tasks, Generated At Scale\nBeyond single examples, WANDR builds its tasks from real usage. It starts from de-identified patterns seen in production, not synthetic prompts. A semi-automated pipeline then turns those patterns into tasks. The pipeline runs four stages: seeding, authoring, admission, and curation. It uses an interleaved author-critic loop with mechanical linting.\nAs a result, the median task asks for 50 members and 245 records overall. Across all 500 tasks, WANDR calls for 170,495 source-backed records. Tasks split into 167 lower, 166 middle, and 167 higher difficulty. Difficulty depends on per-record work, not scale alone.\nHow WANDR Grades Agents\nUnlike fixed answer keys, WANDR grades each claim against cited evidence. Every record contains an item, URL, selected excerpts, and answer. The grader re-fetches the page during evaluation. It checks whether the page is usable and in scope. It then verifies the excerpts truly appear and support every requirement.\nThese binary record verdicts then roll up through the hierarchy. Precision measures the quality of what a system submitted. Recall measures quality-adjusted completion, filling any shortfall with zeros. Soft scores give partial credit to incomplete members. Hard scores count only members whose full subtree is correct.\nThe Benchmark Results\nUsing that method, Perplexity ran six production systems on all 500 tasks. Its own Search as Code (SaC) system leads. Still, no system comes close to solving the benchmark.\nSystem Soft F1 Hard F1 Notes\nPerplexity (Search as Code) 0.363 0.133 $5.20/task, 14.9-min median, 3.82M tokens/task\nAnthropic 0.249 0.072 Closest on quality, but more time, money, tokens\nOthers (best) 0.121 0.035 OpenAI, Exa faster and cheaper, but lower scores\nWith more effort, Perplexity reaches 0.447 soft F1 at the xhigh setting. Cost across settings spans more than four orders of magnitude. It ranges from $0.03 per task up to $324.83 per task.\nBeyond the leaderboard, four findings stand out. First, partial progress is common, but complete coverage is not. Every system shows soft recall below soft precision. Second, scale compounds the problem sharply. Deeper hierarchies hurt most, since each branch adds a failure point. Third, discovery is the first structural bottleneck. Top-level discovery completion ranges from 0.611 to 0.951 across systems. Under-delivery, not duplicate merging, explains most missing volume. Fourth, finding a usable page is usually easy. Turning it into complete evidence is the hard part. For Perplexity, 41.4% of pages miss a substantive requirement. Also, 57.5% of excerpts fail to support the full claim. Its soft F1 falls from 0.531 under a retrieval-only check to 0.363 under the full verdict.\nNotably, Search as Code fits this task shape well. An agent can express retrieval, filtering, fan-out, joins, deduplication, and stopping logic as a program. Deterministic compute then handles repeated operations outside the model context.\nUse Cases With Examples\nPractically, WANDR maps to jobs teams already automate. A market analyst needs every qualifying competitor, with matching evidence for each. A due-diligence team needs dozens of companies, then ownership, executives, and financing. Talent sourcing needs many candidates, each with supporting profile pages. WANDR tests exactly these wide-and-deep collection patterns at professional scale.\nBecause grading is per-record, teams can localize failures precisely. The score tree isolates loss to discovery, enrichment, or evidence extraction. This diagnosis helps engineers improve one weak stage at a time.\nKey Takeaways\nWANDR is an open benchmark with 500 evidence-heavy, wide-and-deep tasks.\nTasks use a qualification key hierarchy validated path by path.\nGrading is reference-free; the grader re-fetches and checks cited evidence.\nPerplexity Search as Code leads at 0.363 soft F1 and 0.133 hard F1.\nDiscovery and complete evidence remain the biggest failure points.\nCheck out the Technical details and Repo here . Also, feel free to follow us on Twitter and don’t forget to join our 150k+ML SubReddit and Subscribe to our Newsletter . Wait! are you on telegram? now you can join us on telegram as well.\nNeed to partner with us for promoting your GitHub Repo OR Hugging Face Page OR Product Release OR Webinar etc.? Connect with us\nAsif Razzaq\nWebsite | + posts Bio\nAsif Razzaq is the CEO of Marktechpost Media Inc.. As a visionary entrepreneur and engineer, Asif is committed to harnessing the potential of Artificial Intelligence for social good. His most recent endeavor is the launch of an Artificial Intelligence Media Platform, Marktechpost, which stands out for its in-depth coverage of machine learning and deep learning news that is both technically sound and easily understandable by a wide audience. The platform boasts of over 2 million monthly views, illustrating its popularity among audiences.\nAsif Razzaq\nFeyn AI Releases SQRL, a Text-to-SQL Model Family That Inspects the Database Before Writing a Query\nAsif Razzaq\nAlibaba Previews Qwen3.8-Max, a 2.4 Trillion-Parameter Multimodal Model, Days After Moonshot’s Kimi K3 Open-Weight Launch\nAsif Razzaq\nNVIDIA Released DeepStream 9.1: Bringing Agentic AI to Vision AI With 13 Skills and Multi-View 3D Tracking\nAsif Razzaq\nSakana AI’s Error Diffusion Trains Dale-Compliant Dual-Stream Networks, Reaching 96.7% MNIST and 61.7% CIFAR-10 Without Backpropagation\n\n## extraction_diagnostics\n\n- extraction_method: article\n- readability_score: 91\n- fetch_status: fetched-readable-text-article\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [product_update / signal_card_candidate, relationship_graph_input, business_change / high] Perplexity 发布开放基准 WANDR，包含 500 个真实数据收集任务，要求智能体同时完成广泛发现与深度验证。其自有的 Search as Code 系统以 0.363 的 Soft F1 领先，但所有系统均远未解决该基准，最高分仅 0.447。\n2. [product_update / signal_card_candidate, relationship_graph_input, business_change / high] Editors Pick Agentic AI New Releases Staff Research agents already handle real knowledge work today.\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] Teams delegate competitive mapping, due diligence, and literature review to them.\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] However, most benchmarks test a single answer, not large evidence-backed collections.\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] Perplexity targets that gap with a new open benchmark.\n6. [product_update / signal_card_candidate, relationship_graph_input, business_change / high] Perplexity released WANDR (Wide ANd Deep Research) .\n"
+}

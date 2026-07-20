@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-19T06:40:36.822Z",
-    "latestDataDate": "2026-07-19",
-    "currentDate": "2026-07-19",
-    "eventCount": 1286,
+    "generatedAt": "2026-07-20T03:58:48.579Z",
+    "latestDataDate": "2026-07-20",
+    "currentDate": "2026-07-20",
+    "eventCount": 1324,
     "quarantinedEventCount": 12
   },
   "node": {
@@ -38,6 +38,7 @@
       "EV-19bcfc6d7c1612cb",
       "EV-6b51b1b6fe22c540",
       "EV-5f718c76c285ac9b",
+      "EV-625904809a9b14b8",
       "EV-309ea4fc27a66485",
       "EV-66b510b948ad4ba4",
       "EV-6ce6b9c9780b97d9",
@@ -86,6 +87,10 @@
       "EN-cf9488537f777c1a",
       "EN-38f4d27a18084522",
       "EN-94c93b5ab886f2d9",
+      "EN-d7aba0f660c463d8",
+      "EN-e58ee91f1d57df05",
+      "EN-3fd1b8ed094cd712",
+      "EN-8f451ae7730ddb67",
       "EN-ce635c4eabff5e4f",
       "EN-ab9e3beebd83960d",
       "EN-61cce404a45c3545",
@@ -107,7 +112,7 @@
       "HW-ceb55d9bc637c1d3"
     ],
     "firstSeen": "2025-12-02",
-    "lastSeen": "2026-07-19"
+    "lastSeen": "2026-07-20"
   },
   "events": [
     {
@@ -2652,6 +2657,98 @@
       "publisher": "tylsemi.ai"
     },
     {
+      "id": "EV-625904809a9b14b8",
+      "dataDate": "2026-07-20",
+      "date": "2026-06-16",
+      "updatedDate": "2026-07-20",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "HPE 携手 NVIDIA 将 AI 智能体投入生产，提供安全、治理、扩展与主权保障",
+      "originalTitle": "HPE Brings Agentic AI Into Production With NVIDIA, Delivering Security, Governance, Scale, and Sovereignty – Company Announcement - FT.com",
+      "subject": "HPE",
+      "action": "product_release",
+      "object": "HPE AI Factory with NVIDIA RTX PRO Blackwell Server Edition GPUs, Spectrum-X Ethernet, BlueField-3 DPUs, and ConnectX-8 SuperNICs",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "manufacturing",
+            "dimensionName": "行业",
+            "name": "制造业"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "id": "manufacturing",
+          "dimensionName": "行业",
+          "name": "制造业"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "id": "manufacturing",
+          "dimensionName": "行业",
+          "name": "制造业"
+        }
+      ],
+      "entityIds": [
+        "EN-d7aba0f660c463d8",
+        "EN-8d4321d936320802",
+        "EN-e58ee91f1d57df05",
+        "EN-3fd1b8ed094cd712",
+        "EN-8f451ae7730ddb67"
+      ],
+      "entityNames": [
+        "HPE",
+        "NVIDIA",
+        "AI Factory",
+        "RTX PRO Blackwell",
+        "Server Edition GPUs"
+      ],
+      "productName": "AI Factory",
+      "products": [
+        {
+          "name": "AI Factory",
+          "type": "产品/服务",
+          "ownerNames": [
+            "NVIDIA"
+          ]
+        },
+        {
+          "name": "RTX PRO Blackwell",
+          "type": "产品/服务",
+          "ownerNames": [
+            "NVIDIA"
+          ]
+        },
+        {
+          "name": "Server Edition GPUs",
+          "type": "产品/服务",
+          "ownerNames": [
+            "NVIDIA"
+          ]
+        }
+      ],
+      "sourceUrl": "https://markets.ft.com/data/announce/full?dockey=600-202606161230BIZWIRE_USPRX____20260616_BW590642-1",
+      "publisher": "markets.ft.com"
+    },
+    {
       "id": "EV-309ea4fc27a66485",
       "dataDate": "2026-06-03",
       "date": "2026-06-03",
@@ -3635,6 +3732,7 @@
         "EV-92d28aef0c4b0a8a",
         "EV-c2800c1c5a3f568f",
         "EV-d4ddee1b39cced77",
+        "EV-30749250196dd507",
         "EV-e7b7df43970f7e2c",
         "EV-025778b83c1b2ca9",
         "EV-dce5de62b2e4b752",
@@ -3688,8 +3786,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-technology",
         "TX-technology-agentic_execution",
+        "TX-industry-technology",
         "TX-industry-financial_services",
         "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
@@ -3722,7 +3820,7 @@
         "EN-c70eca6b0f88f44d"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-19"
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "EN-7106dbc04a08ce3a",
@@ -3796,9 +3894,7 @@
       "name": "NVIDIA",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "英伟达"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -3843,7 +3939,6 @@
         "EV-4faa2bcf2e42e60c",
         "EV-9ee3c0ec243b6129",
         "EV-58c1cc3749294649",
-        "EV-0d5a32aca724d30e",
         "EV-118317b7f92e5e16",
         "EV-950237c6b3eb6343",
         "EV-29e069ac093f0e34",
@@ -3874,6 +3969,7 @@
         "EV-b7ba9acba80a852e",
         "EV-1a1fb68ba4d6a377",
         "EV-bac5824e594f1831",
+        "EV-625904809a9b14b8",
         "EV-4bb5b24400e49ea4",
         "EV-568d2aeab5234e48",
         "EV-b986a633cca27df9",
@@ -3890,6 +3986,7 @@
         "EV-aa63303570154a9b",
         "EV-d2ac9700c86913da",
         "EV-d43a561da59b2897",
+        "EV-02b19ffbe883ee2e",
         "EV-8993e021ac17df4a",
         "EV-34929bdd016dc8d6",
         "EV-08f736f61f2b46f3",
@@ -3899,8 +3996,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-technology",
         "TX-technology-agentic_execution",
+        "TX-industry-technology",
         "TX-use_case-enterprise_operations",
         "TX-industry-manufacturing",
         "TX-industry-automotive_transportation",
@@ -3927,29 +4024,26 @@
         "TX-technology-speech_audio"
       ],
       "relatedEntityIds": [
-        "EN-8395dc051feafc4c",
-        "EN-aa15d891a32a51b8",
+        "EN-1e71d9c1a5c4de16",
+        "EN-683d8d597da71192",
+        "EN-9e72fd4472222231",
         "EN-0f3360879e746531",
         "EN-a1b0d8a938903dc7",
-        "EN-956b7280912ef1cc",
         "EN-4a639cb888a15d75",
         "EN-8d323d8bba783aa3",
         "EN-b5738c169b693bee",
         "EN-51fd7dc086fcb858",
         "EN-9e193e1ec8d75d41",
-        "EN-3ae50afab3e392b8",
+        "EN-8395dc051feafc4c",
         "EN-936f01f91fdadf69",
         "EN-4e7e886400fe6a83",
         "EN-1dc405a4cda895d0",
         "EN-12ab68e37d104d27",
         "EN-a3266ab9e10d6105",
-        "EN-9fbf261b62c1d7c0",
-        "EN-11ef7b03c79c9bbd",
-        "EN-9bc22dcabf7f45b3",
-        "EN-171fa23d27b5894b"
+        "EN-9fbf261b62c1d7c0"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-19"
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "EN-c70eca6b0f88f44d",
@@ -4008,9 +4102,9 @@
         "EV-8e01849c05b50355",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-b20bf10af759bd43",
         "EV-eb97c388b3197c06",
         "EV-83a8ac8a2554b60c",
-        "EV-0d5a32aca724d30e",
         "EV-debecca007e547d2",
         "EV-7963d8c78531f12d",
         "EV-a8a8f26c5128d894",
@@ -4234,7 +4328,7 @@
         "EN-d8494bb34d6ddc43"
       ],
       "firstSeen": "2026-03-13",
-      "lastSeen": "2026-07-19"
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "EN-1bd14cd1a58c5708",
@@ -4333,6 +4427,7 @@
         "EV-1c2723ad61d192bd",
         "EV-74dfbd82b47dc626",
         "EV-167f50a6f3134bd5",
+        "EV-30749250196dd507",
         "EV-712473b23a2a11a0",
         "EV-b9296439f7c34c89",
         "EV-cf5b2a0aff3914bd",
@@ -4424,7 +4519,9 @@
         "EV-3550e9863266ea96",
         "EV-ca420d07e12369f1",
         "EV-773ffcc6e1df56fa",
+        "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
+        "EV-b30dcacd355fe5f5",
         "EV-2f7e6d3a68bbf08f",
         "EV-5cd10de5c12916f0",
         "EV-067f57f6e6ffa6ce",
@@ -4467,8 +4564,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-technology",
         "TX-technology-agentic_execution",
+        "TX-industry-technology",
         "TX-industry-financial_services",
         "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
@@ -4521,7 +4618,7 @@
         "EN-7b8cb35de7ad047a"
       ],
       "firstSeen": "2026-02-19",
-      "lastSeen": "2026-07-19"
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "EN-b9b0702726f5be1c",
@@ -4639,7 +4736,6 @@
       ],
       "relatedEntityIds": [
         "EN-e3863f813fe47240",
-        "EN-9c8ae69b84f21a2e",
         "EN-d85ad5e8ff8e2889",
         "EN-a2fa009495c3bb3a",
         "EN-2ba325ce6f8e3dc9",
@@ -5013,8 +5109,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-technology",
         "TX-technology-agentic_execution",
+        "TX-industry-technology",
         "TX-industry-financial_services",
         "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
@@ -5028,9 +5124,9 @@
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-embodied_ai",
         "TX-technology-fine_tuning",
+        "TX-technology-video_generation",
         "TX-technology-multimodal",
         "TX-industry-media_entertainment",
-        "TX-technology-video_generation",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
         "TX-use_case-content_creation",
@@ -5235,8 +5331,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-technology",
         "TX-technology-agentic_execution",
+        "TX-industry-technology",
         "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
         "TX-industry-automotive_transportation",
@@ -5286,9 +5382,7 @@
       "classificationRefs": [
         "TX-industry-manufacturing"
       ],
-      "relatedEntityIds": [
-        "EN-8d4321d936320802"
-      ],
+      "relatedEntityIds": [],
       "firstSeen": "2026-07-14",
       "lastSeen": "2026-07-15"
     },
@@ -5399,6 +5493,7 @@
         "EV-02686922dd82c4aa",
         "EV-2fd730d0ad452334",
         "EV-4faa2bcf2e42e60c",
+        "EV-7d09b00182b08c3f",
         "EV-8a9b12665a3e40a0",
         "EV-cfa8c754627747a1",
         "EV-0d862d59b05361cc",
@@ -5417,7 +5512,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-04-28",
-      "lastSeen": "2026-07-18"
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "EN-51188f73e8dfbfee",
@@ -5590,6 +5685,90 @@
       "lastSeen": "2026-07-15"
     },
     {
+      "id": "EN-d7aba0f660c463d8",
+      "name": "HPE",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-625904809a9b14b8"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-manufacturing"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-16",
+      "lastSeen": "2026-07-20"
+    },
+    {
+      "id": "EN-e58ee91f1d57df05",
+      "name": "AI Factory",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-625904809a9b14b8"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-manufacturing"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-16",
+      "lastSeen": "2026-07-20"
+    },
+    {
+      "id": "EN-3fd1b8ed094cd712",
+      "name": "RTX PRO Blackwell",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-625904809a9b14b8"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-manufacturing"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-16",
+      "lastSeen": "2026-07-20"
+    },
+    {
+      "id": "EN-8f451ae7730ddb67",
+      "name": "Server Edition GPUs",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-625904809a9b14b8"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-manufacturing"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-16",
+      "lastSeen": "2026-07-20"
+    },
+    {
       "id": "EN-ce635c4eabff5e4f",
       "name": "Shell",
       "entityType": "organization_candidate",
@@ -5717,7 +5896,6 @@
       ],
       "eventIds": [
         "EV-0d4e656aa51f9a46",
-        "EV-e31a6bf3c0a979f8",
         "EV-78a11d309c3d4e97",
         "EV-0e84a2f49d765ce3",
         "EV-7add33b4c74dbf1a",
@@ -5855,7 +6033,9 @@
       "name": "Amazon",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "Amazon Bedrock"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -5874,6 +6054,7 @@
         "EV-ec2e421d0e18be9b",
         "EV-c0a65877001ed413",
         "EV-303b418c63895ba6",
+        "EV-30749250196dd507",
         "EV-43976be427aefb52",
         "EV-b93b5cc15823e9c3",
         "EV-918fc324de3117bd",
@@ -5905,7 +6086,7 @@
         "EN-9fbf261b62c1d7c0"
       ],
       "firstSeen": "2025-12-02",
-      "lastSeen": "2026-07-18"
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "EN-a614180064f7ef60",
@@ -5933,9 +6114,7 @@
       "name": "Apple",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "苹果"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -5994,6 +6173,7 @@
         "EV-ebef81764102ee7c",
         "EV-f6611268f119a172",
         "EV-342799d4e68e7416",
+        "EV-b30dcacd355fe5f5",
         "EV-2f7e6d3a68bbf08f",
         "EV-ef823877347ff40f",
         "EV-5cd10de5c12916f0",
@@ -6033,17 +6213,10 @@
         "TX-technology-speech_audio"
       ],
       "relatedEntityIds": [
-        "EN-e463d05a14e8697f",
-        "EN-b5251b35f15bedc4",
-        "EN-1924fff8eb4d54ae",
-        "EN-dd920a8cd166f486",
-        "EN-af3ceabbe048a291",
-        "EN-45b5216872656eb3",
-        "EN-0502bb9ed34980aa",
-        "EN-40e307d789f77264"
+        "EN-af3ceabbe048a291"
       ],
       "firstSeen": "2026-06-04",
-      "lastSeen": "2026-07-19"
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "EN-6c7575a43005188a",
