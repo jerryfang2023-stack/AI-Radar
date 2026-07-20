@@ -1,14 +1,15 @@
 ---
 type: opinion_person_timeline
 person_name: "Simon Willison's Blog"
-opinion_count: 43
-latest_date: 2026-07-18
+opinion_count: 45
+latest_date: 2026-07-19
 ---
 
 # Simon Willison's Blog 观点时间线
-共 43 条观点，按人物 + 日期文件聚合。
+共 45 条观点，按人物 + 日期文件聚合。
 ## 日期
 
+- [2026-07-19](./2026-07-19.md)
 - [2026-07-18](./2026-07-18.md)
 - [2026-07-17](./2026-07-17.md)
 - [2026-07-16](./2026-07-16.md)
