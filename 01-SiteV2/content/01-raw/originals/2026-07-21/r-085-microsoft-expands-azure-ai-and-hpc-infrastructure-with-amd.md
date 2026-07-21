@@ -1,0 +1,248 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-085
+title: "Microsoft expands Azure AI and HPC infrastructure with AMD"
+title_zh: "微软借助AMD扩展Azure AI与HPC基础设施"
+title_translation_status: translated
+title_translation_method: deepseek_title_translation
+title_translation_model: deepseek-v4-flash
+original_url: "https://blogs.microsoft.com/blog/2026/07/20/microsoft-expands-azure-ai-and-hpc-infrastructure-with-amd/"
+canonical_url: "https://blogs.microsoft.com/blog/2026/07/20/microsoft-expands-azure-ai-and-hpc-infrastructure-with-amd"
+source_name: "Microsoft AI and Azure AI official blogs"
+source_type: product
+source_level: S
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: rss-feed
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-20T13:00:02.000Z"
+collected_at: 2026-07-21T01:26:12.005Z
+language: mixed
+full_text_hash: d2f263916feb0959
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-21/r-085-microsoft-expands-azure-ai-and-hpc-infrastructure-with-amd.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-21/r-085-microsoft-expands-azure-ai-and-hpc-infrastructure-with-amd.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":6315,"paragraph_count":23,"sentence_count":31,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+has_full_text: true
+content_length: 6315
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"d2f263916feb0959","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: a0f09f7c50693410
+content_hash: d2f263916feb0959
+semantic_hash: 2740a703f82b97b3
+duplicate_of: ""
+first_seen_at: "2026-07-20T13:00:02.000Z"
+last_seen_at: 2026-07-21T01:26:12.005Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"AI hardware product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["ai_hardware_lens","commercial_or_risk_context","adoption_context"],"novelty":2,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["Microsoft AI and Azure AI official blogs","Microsoft"],"products":["agent","agents"],"people":[],"industries":[],"roles":["CIO / IT 负责人","开发者 / 工程团队"],"workflows":["计费 / 预算管理","权限 / 安全治理"],"business_actions":["发布 / 推出","合作 / 联盟"],"affected_departments":["IT / 安全","财务 / 预算","销售 / 客服"],"numbers":["2","455X","7","500","6","4","32","400"],"quotes":[]}
+evidence_seed: {"company_actions":["The post Microsoft expands Azure AI and HPC infrastructure with AMD appeared first on Source. ]]>","To meet this need, Microsoft continues to evolve Azure’s infrastructure, including expanding its AI fleet with AMD’s most advanced AI and high-performance computing (HPC) solutions."],"case_details":["We closely work with industry innovators like AMD as well as our own purpose-built silicon and systems to provide customers with a comprehensive, open and heterogenous platform to achieve the best performance, cost and energy efficiency outcomes."],"workflow_changes":["AI workloads are scaling faster than any single infrastructure approach can support — with more models, new agent-driven workloads and surging compute demand driving the need for greater specialization across the stack.","Our approach to AI infrastructure is designed to support the breadth of how AI systems are built and run.","Building on our close collaboration with AMD, Microsoft is bringing AMD’s latest Helios AI platform and next-generation EPYC datacenter processors to Azure."],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: []
+key_excerpts: [{"type":"company_action","text":"The post Microsoft expands Azure AI and HPC infrastructure with AMD appeared first on Source. ]]>","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"workflow_change","text":"AI workloads are scaling faster than any single infrastructure approach can support — with more models, new agent-driven workloads and surging compute demand driving the need for greater specialization across the stack.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"To meet this need, Microsoft continues to evolve Azure’s infrastructure, including expanding its AI fleet with AMD’s most advanced AI and high-performance computing (HPC) solutions.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"workflow_change","text":"Our approach to AI infrastructure is designed to support the breadth of how AI systems are built and run.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"We closely work with industry innovators like AMD as well as our own purpose-built silicon and systems to provide customers with a comprehensive, open and heterogenous platform to achieve the best performance, cost and energy efficiency outcomes.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Building on our close collaboration with AMD, Microsoft is bringing AMD’s latest Helios AI platform and next-generation EPYC datacenter processors to Azure.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-21T01:26:12.005Z
+theme: uncategorized
+keyword_group: uncategorized
+copyright_note: local research archive only
+---
+
+# Microsoft expands Azure AI and HPC infrastructure with AMD
+
+## clean_text
+
+AI workloads are scaling faster than any single infrastructure approach can support — with more models, new agent-driven workloads and surging compute demand driving the need for greater specialization across the stack. To meet this need, Microsoft continues to evolve Azure’s infrastructure, including expanding its AI fleet with AMD’s most advanced AI and high-performance computing (HPC) solutions.
+Our approach to AI infrastructure is designed to support the breadth of how AI systems are built and run. We closely work with industry innovators like AMD as well as our own purpose-built silicon and systems to provide customers with a comprehensive, open and heterogenous platform to achieve the best performance, cost and energy efficiency outcomes.
+Building on our close collaboration with AMD, Microsoft is bringing AMD’s latest Helios AI platform and next-generation EPYC datacenter processors to Azure. These technologies will power three upcoming Azure offerings: HDv2 VMs for data processing, HXv2 VMs for electronic design automation (EDA) and ND MI455X v7 VMs for AI inference workloads.
+Expanded infrastructure for inference, AI data systems and chip design
+YouTube Video
+Click here to load media
+Built for AI data systems — Azure HDv2
+CPU infrastructure is essential to the performance and efficiency of modern AI systems. AI accelerators depend on high-density, power-efficient CPU compute to process data, coordinate workloads and keep pipelines running at scale. Without this, training jobs don’t have enough data to learn from, and agents don’t have enough capacity to perform tasks on behalf of customers. Azure HDv2 virtual machines are one of our latest offerings designed from the ground up to eliminate these bottlenecks and empower massive agentic workload adoption.
+Co-designed with AMD, HDv2 VMs expand Azure’s portfolio of purpose-built solutions for the most demanding CPU workloads from AI customers, including data preparation, search, reinforcement learning and agent coordination at scale. Featuring nearly 500 physical 6 th Gen AMD EPYC CPU cores, 4 terabytes of RAM, 32 terabytes of local NVMe storage and 400 Gb Azure Boost networking, HDv2 VMs are built for the workload needs of our most demanding AI customers.
+Optimized for silicon design and technical computing — Azure HXv2
+The AI era has created tremendous need and opportunity for firms developing the silicon products that power this infrastructure. For this reason, Azure HX virtual machines, launched in partnership with AMD in 2023 and featuring AMD’s unique 3D V-cache technology, have seen significant adoption among silicon design firms working to bring more capable and efficient AI silicon to market. Today, we are announcing the next step in our workload optimized journey for these customers, HXv2.
+HXv2 virtual machines build on and extend the strengths of HX. They both continue the differentiation Azure offers for RTL simulation workloads by again employing 3D V-cache technology, while offering significant improvements to single threaded performance and memory. HXv2 VMs will feature 176 AMD 6 th Gen EPYC CPU cores with a clock frequency of more than 5 GHz, 50% more addressable cache per core and VM sizes with nearly 2 or 4 terabytes of RAM, helping customers optimize their workloads to memory needs.
+Azure HXv2 is also designed to support a broader range of technical computing workloads including scientific simulation, engineering analysis and other distributed memory applications. The significantly increased per VM and per core performance, and the inclusion of 800 Gb InfiniBand, enable large-scale MPI-based simulations and make HXv2 an ideal fit for a wide variety of HPC customers.
+AMD, a leading HX-series customer, highlights this impact directly:
+“ Engineering teams are pushing the limits of simulation, chip design and scientific computing. At AMD, we experience those demands firsthand as we design future AMD EPYC CPUs and AMD Instinct GPUs. Azure HX is an important platform for scaling complex EDA workloads, and we’re excited about Azure HXv2, which is designed to deliver even greater performance and scalability. We look forward to continuing our collaboration with Microsoft as we help advance infrastructure for the world’s most demanding engineering and scientific workloads.”
+— Mark Papermaster, Executive Vice President and CTO, AMD
+The HXv2 also leverages Microsoft’s long-standing collaboration to optimize Synopsys AI-powered EDA solutions on Azure:
+“As AI compute continues to push the limits of semiconductor design, our collaboration with Microsoft on the Azure HX-series demonstrates a shared vision for enabling customers to deliver next-generation AI systems with precision and scale in accelerated design cycles. These systems have enabled Synopsys customers to reliably and efficiently leverage cloud-based compute, extending EDA workloads beyond traditional infrastructure constraints so they can meet ambitious development schedules while maximizing design quality and delivering dramatic performance gains.”
+— Shankar Krishnamoorthy, Chief Product Development Officer, Synopsys
+Production-scale AI inference — ND MI455X v7
+ND MI455X v7 is designed for the reasoning, search and agentic workloads behind modern AI services. Powered by the AMD Helios rackscale solution, it expands Azure’s infrastructure options for large-scale inference and is designed to deliver strong performance and efficiency for demanding AI workloads.
+Together, these new capabilities expand Azure capabilities while giving customers more flexibility to choose the right compute for each unique AI workflow: from inference, to data systems, to chip design. Customer choice is a core design principle built directly into Microsoft Azure, and we’re excited to bring AMD’s most advanced innovations at production scale.
+To learn more about Azure’s high-performance computing and AI infrastructure capabilities, visit Azure.com .
+Scott Guthrie is responsible for a set of hyperscale cloud computing solutions and services including Azure, Microsoft’s cloud computing platform, generative AI solutions, data platforms and information and cybersecurity. These platforms and services help organizations across the globe solve urgent challenges — and transform for the future.
+Tags: AI , Azure
+
+## full_text
+
+AI workloads are scaling faster than any single infrastructure approach can support — with more models, new agent-driven workloads and surging compute demand driving the need for greater specialization across the stack. To meet this need, Microsoft continues to evolve Azure’s infrastructure, including expanding its AI fleet with AMD’s most advanced AI and high-performance computing (HPC) solutions.
+Our approach to AI infrastructure is designed to support the breadth of how AI systems are built and run. We closely work with industry innovators like AMD as well as our own purpose-built silicon and systems to provide customers with a comprehensive, open and heterogenous platform to achieve the best performance, cost and energy efficiency outcomes.
+Building on our close collaboration with AMD, Microsoft is bringing AMD’s latest Helios AI platform and next-generation EPYC datacenter processors to Azure. These technologies will power three upcoming Azure offerings: HDv2 VMs for data processing, HXv2 VMs for electronic design automation (EDA) and ND MI455X v7 VMs for AI inference workloads.
+Expanded infrastructure for inference, AI data systems and chip design
+YouTube Video
+Click here to load media
+Built for AI data systems — Azure HDv2
+CPU infrastructure is essential to the performance and efficiency of modern AI systems. AI accelerators depend on high-density, power-efficient CPU compute to process data, coordinate workloads and keep pipelines running at scale. Without this, training jobs don’t have enough data to learn from, and agents don’t have enough capacity to perform tasks on behalf of customers. Azure HDv2 virtual machines are one of our latest offerings designed from the ground up to eliminate these bottlenecks and empower massive agentic workload adoption.
+Co-designed with AMD, HDv2 VMs expand Azure’s portfolio of purpose-built solutions for the most demanding CPU workloads from AI customers, including data preparation, search, reinforcement learning and agent coordination at scale. Featuring nearly 500 physical 6 th Gen AMD EPYC CPU cores, 4 terabytes of RAM, 32 terabytes of local NVMe storage and 400 Gb Azure Boost networking, HDv2 VMs are built for the workload needs of our most demanding AI customers.
+Optimized for silicon design and technical computing — Azure HXv2
+The AI era has created tremendous need and opportunity for firms developing the silicon products that power this infrastructure. For this reason, Azure HX virtual machines, launched in partnership with AMD in 2023 and featuring AMD’s unique 3D V-cache technology, have seen significant adoption among silicon design firms working to bring more capable and efficient AI silicon to market. Today, we are announcing the next step in our workload optimized journey for these customers, HXv2.
+HXv2 virtual machines build on and extend the strengths of HX. They both continue the differentiation Azure offers for RTL simulation workloads by again employing 3D V-cache technology, while offering significant improvements to single threaded performance and memory. HXv2 VMs will feature 176 AMD 6 th Gen EPYC CPU cores with a clock frequency of more than 5 GHz, 50% more addressable cache per core and VM sizes with nearly 2 or 4 terabytes of RAM, helping customers optimize their workloads to memory needs.
+Azure HXv2 is also designed to support a broader range of technical computing workloads including scientific simulation, engineering analysis and other distributed memory applications. The significantly increased per VM and per core performance, and the inclusion of 800 Gb InfiniBand, enable large-scale MPI-based simulations and make HXv2 an ideal fit for a wide variety of HPC customers.
+AMD, a leading HX-series customer, highlights this impact directly:
+“ Engineering teams are pushing the limits of simulation, chip design and scientific computing. At AMD, we experience those demands firsthand as we design future AMD EPYC CPUs and AMD Instinct GPUs. Azure HX is an important platform for scaling complex EDA workloads, and we’re excited about Azure HXv2, which is designed to deliver even greater performance and scalability. We look forward to continuing our collaboration with Microsoft as we help advance infrastructure for the world’s most demanding engineering and scientific workloads.”
+— Mark Papermaster, Executive Vice President and CTO, AMD
+The HXv2 also leverages Microsoft’s long-standing collaboration to optimize Synopsys AI-powered EDA solutions on Azure:
+“As AI compute continues to push the limits of semiconductor design, our collaboration with Microsoft on the Azure HX-series demonstrates a shared vision for enabling customers to deliver next-generation AI systems with precision and scale in accelerated design cycles. These systems have enabled Synopsys customers to reliably and efficiently leverage cloud-based compute, extending EDA workloads beyond traditional infrastructure constraints so they can meet ambitious development schedules while maximizing design quality and delivering dramatic performance gains.”
+— Shankar Krishnamoorthy, Chief Product Development Officer, Synopsys
+Production-scale AI inference — ND MI455X v7
+ND MI455X v7 is designed for the reasoning, search and agentic workloads behind modern AI services. Powered by the AMD Helios rackscale solution, it expands Azure’s infrastructure options for large-scale inference and is designed to deliver strong performance and efficiency for demanding AI workloads.
+Together, these new capabilities expand Azure capabilities while giving customers more flexibility to choose the right compute for each unique AI workflow: from inference, to data systems, to chip design. Customer choice is a core design principle built directly into Microsoft Azure, and we’re excited to bring AMD’s most advanced innovations at production scale.
+To learn more about Azure’s high-performance computing and AI infrastructure capabilities, visit Azure.com .
+Scott Guthrie is responsible for a set of hyperscale cloud computing solutions and services including Azure, Microsoft’s cloud computing platform, generative AI solutions, data platforms and information and cybersecurity. These platforms and services help organizations across the globe solve urgent challenges — and transform for the future.
+Tags: AI , Azure
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 97
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":6315,"paragraph_count":23,"sentence_count":31,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   The post Microsoft expands Azure AI and HPC infrastructure with AMD appeared first on Source. ]]>
+
+2. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   AI workloads are scaling faster than any single infrastructure approach can support — with more models, new agent-driven workloads and surging compute demand driving the need for greater specialization across the stack.
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   To meet this need, Microsoft continues to evolve Azure’s infrastructure, including expanding its AI fleet with AMD’s most advanced AI and high-performance computing (HPC) solutions.
+
+4. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Our approach to AI infrastructure is designed to support the breadth of how AI systems are built and run.
+
+5. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=high
+   We closely work with industry innovators like AMD as well as our own purpose-built silicon and systems to provide customers with a comprehensive, open and heterogenous platform to achieve the best performance, cost and energy efficiency outcomes.
+
+6. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Building on our close collaboration with AMD, Microsoft is bringing AMD’s latest Helios AI platform and next-generation EPYC datacenter processors to Azure.
+
+## business_elements
+
+- companies: Microsoft AI and Azure AI official blogs, Microsoft
+- products: agent, agents
+- people: 暂无公开信息
+- industries: 暂无公开信息
+- roles: CIO / IT 负责人, 开发者 / 工程团队
+- workflows: 计费 / 预算管理, 权限 / 安全治理
+- business_actions: 发布 / 推出, 合作 / 联盟
+- affected_departments: IT / 安全, 财务 / 预算, 销售 / 客服
+- numbers: 2, 455X, 7, 500, 6, 4, 32, 400
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: The post Microsoft expands Azure AI and HPC infrastructure with AMD appeared first on Source. ]]> / To meet this need, Microsoft continues to evolve Azure’s infrastructure, including expanding its AI fleet with AMD’s most advanced AI and high-performance computing (HPC) solutions.
+- case_details: We closely work with industry innovators like AMD as well as our own purpose-built silicon and systems to provide customers with a comprehensive, open and heterogenous platform to achieve the best performance, cost and energy efficiency outcomes.
+- workflow_changes: AI workloads are scaling faster than any single infrastructure approach can support — with more models, new agent-driven workloads and surging compute demand driving the need for greater specialization across the stack. / Our approach to AI infrastructure is designed to support the breadth of how AI systems are built and run. / Building on our close collaboration with AMD, Microsoft is bringing AMD’s latest Helios AI platform and next-generation EPYC datacenter processors to Azure.
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: AI hardware product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: ai_hardware_lens,commercial_or_risk_context,adoption_context
+- novelty: 2
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- watchlist
+
+## missing_information
+
+- none
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+The post Microsoft expands Azure AI and HPC infrastructure with AMD appeared first on Source. ]]>
+
+## 采集备注
+
+该条目由 rss-feed 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

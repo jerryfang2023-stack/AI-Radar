@@ -1,0 +1,283 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-014",
+  "title": "NVIDIA 发布 Cosmos 3 Edge：4B 参数开源世界模型，为机器人及边缘 AI 提供实时推理与动作生成",
+  "title_zh": "NVIDIA 发布 Cosmos 3 Edge：4B 参数开源世界模型，为机器人及边缘 AI 提供实时推理与动作生成",
+  "title_translation_status": "not_required",
+  "title_translation_method": "source_title",
+  "title_translation_model": "",
+  "original_url": "https://huggingface.co/blog/nvidia/cosmos3edge",
+  "canonical_url": "https://huggingface.co/blog/nvidia/cosmos3edge",
+  "source_name": "Hugging Face：Blog（RSS）",
+  "source_type": "developer",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "event",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "platform_enablement",
+  "enterprise_ai_transformation_reason": "enterprise_ai_implementation_signal",
+  "author": "",
+  "published_at": "2026-07-19T16:00:00.000Z",
+  "collected_at": "2026-07-21T01:25:35.743Z",
+  "language": "mixed",
+  "full_text": "Back to Articles\na]:hidden\">\nIntroducing Cosmos 3 Edge\nEnterprise + Article Published\nJuly 20, 2026\nUpvote 9\n+3\nPranjali Joshi PranjaliJoshi Follow\nnvidia\nSaeed Babamohamadi SaeedBabamohamadi Follow\nnvidia\nThe real world is vast and to operate in it physical AI systems need to understand how a scene is changing, anticipate what could happen next, and determine how an action will affect the world.\nMachines operate at the edge in factories, warehouses, hospitals and beyond. To understand and act in these environments, they need models that deliver data center–level performance on memory-constrained systems.\nToday we are releasing NVIDIA Cosmos 3 Edge on Hugging Face’s Cosmos 3 repository. It’s a 4-billion-parameter open world model that helps robots and vision AI agents understand their surroundings, reason in real time and generate robot actions on edge devices.\nDownload the model: https://huggingface.co/nvidia/Cosmos3-Edge\nThe model delivers memory-efficient, high-throughput inference across NVIDIA edge computers including NVIDIA RTX PRO GPUs, NVIDIA DGX, NVIDIA GeForce RTX™ GPUs, NVIDIA Jetson including the newly announced Jetson T2000 and T3000 modules.\nDesigned as a compact open model that can serve as a small vision language model (VLM) with best-in-class throughput and accuracy with real-time inference.\nAs a post-trained world action model (WAM), Cosmos 3 Edge operates at robot-control resolution (640×360 observations), delivering real-time reasoning and generating 32 actions per inference on NVIDIA Jetson Thor - while achieving real-time control at 15 Hz.\nAmong similar size (4B parameters) models, Cosmos 3 Edge ranks #1 on VANTAGE-Bench for vision analytics and state-of-the-art for robot policy learning, setting the state of the art for smart infrastructure and robotics.\nWhat Is World Modeling?\nA world model learns how an environment changes over time. It represents objects, motion, spatial relationships, and the effects of actions.\nConsider a robot reaching for an object. Recognizing the object is only the first step. The robot must also understand where the object is, how its gripper is moving, what may happen when contact occurs, and which action is most likely to complete the task successfully.\nA world model helps the robot reason about these relationships. It can predict the visual result of an action, infer the action that caused a change, or generate an action to produce a desired outcome.\nCosmos 3 Edge brings these capabilities together in one model, on-device. Its shared representation enables physical AI systems to understand the current world state, simulate possible futures, and connect those futures to actions.\nTwo Transformer Towers, One Shared Representation\nCosmos 3 combines two transformer towers:\nAutoregressive tower: Processes vision and text tokens for understanding and reasoning.\nDiffusion tower: Processes vision, audio, and action tokens for prediction, generation, and neural simulation.\nThe two towers maintain separate normalization layers and multilayer perceptrons. They share multimodal attention layers, which align information across language, video, audio, and action.\nThis design allows the model to reason about a scene before generating an output. Depending on the task, Cosmos 3 can produce reasoning tokens from the autoregressive tower or denoised video and action tokens from the diffusion tower.\nThe attention pattern is also adapted to each type of information. Language uses causal attention, where each token attends to the tokens that came before it. Diffusion tokens attend more broadly to the available context, supporting coherent prediction and generation.\nTogether, these components give the model a common representation of what is happening, what may happen next, and how an action could influence the outcome.\nA Common Representation for Action\nPhysical systems describe actions differently. A vehicle may represent an action through ego pose and movement. A camera uses camera motion. A robot arm uses the pose of its end effector, while a hand or gripper also needs to represent grasp state.\nCosmos 3 maps these different embodiments into a common action representation.\nActions are encoded as compact geometric vectors that capture:\nTranslation\nRotation\nManipulation state\nThis creates a direct connection between control and the visual structure of the world. The model can associate changes in pixels with physical motion, spatial relationships, and control inputs.\nAs a result, generated video becomes more than a visual prediction. It can represent how the world is expected to change in response to an action. This gives developers training data grounded in motion, control, and cause and effect.\nPolicy Mode\nAs a policy, Cosmos 3 predicts an action together with its expected visual consequence.\nThe model can generate what the system should do and simulate what is likely to happen next. This connects world modeling directly to robot policy training and evaluation.\nCurrent state in, action and visual consequence out.\nThese modes enable one model to learn cause, effect, and policy. Action can flow through the model in both directions, allowing Cosmos 3 Edge to predict the effects of an action or infer an action from its effects.\nPrompt: Pick up the banana and put it in the plate.\nWe are also releasing Cosmos 3 Edge Policy (DROID): A robot manipulation policy post-trained on the DROID dataset for pick-and-place tasks, with accompanying post-training scripts.\nDevelopers can use a small cluster of H100 or NVIDIA DGX Station to efficiently fine-tune Cosmos 3 Edge for their target workloads before deploying to NVIDIA edge and accelerated computing platforms.\nPost-trained samples for improved performance\nAlongside the base models, we're releasing reference post-trained checkpoints and training recipes to help developers adapt and optimize Cosmos 3 for their own applications.\nCosmos 3 is an open world foundation model platform. As models are post-trained with high-quality, domain-specific data, their accuracy continue to improve for specialized applications. Cosmos serves as the starting point for building domain-adapted world models using open frameworks.\nPost-training enables developers to improve model performance while preserving output quality. To demonstrate this workflow, we're also releasing the Cosmos 3 Super 4-Step Distillation checkpoint along with a post-training script, providing a faster reference implementation for 64B model that helps developers adapt Cosmos to their own domains and achieve better downstream performance.\nCosmos 3 Super 4-Step (Text-to-Image & Image-to-Video): These are distribution-matching distilled checkpoint and scripts that reduce diffusion from 35–50 denoising steps to just 4, delivering up to 25× faster inference while preserving image and video quality and fidelity.\nThese examples serve as reference implementations that developers can build on. Using the open training scripts, you can post-train Cosmos 3 Edge for custom robot policies or distill Cosmos 3 Super for faster image and video generation tailored to your application.\nTry Cosmos 3 Edge\nDownload the model: https://huggingface.co/nvidia/Cosmos3-Edge\nCosmos 3 Edge connects understanding, prediction, simulation, and action through a shared world representation.Developers can deploy it closer to their sensors on-device. The model can be used as a reasoner or as an action generator.\nUse open Cosmos Frameworks to customize and specialize the models.\nCheckout Cosmos 3: https://huggingface.co/collections/nvidia/cosmos3\nWhat's ahead\nWe continue to advance Cosmos 3 for Physical AI, with upcoming improvements in interactive world generation, driving scenario simulation, and robotics policies.\nWe are also investing in faster inference and more efficient post-training across a broader range of hardware, reducing the time and compute required to build downstream models.\nThis includes optimizing Cosmos 3 checkpoints with open inference and optimization frameworks such as vLLM, with more optimizations and developer tooling coming soon.\nModels mentioned in this article 1\nCollections mentioned in this article 1\nMore from this author\nFine-tune video and image models at scale with NVIDIA NeMo Automodel and 🤗 Diffusers\n76\nJuly 17, 2026\nNVIDIA Nemotron 3 Embed Ranks #1 Overall on RTEB, Advancing Agentic Retrieval\n50\nJuly 16, 2026\nCommunity\nEdit Preview\nUpload images, audio, and videos by dragging in the text input, pasting, or clicking here .\nTap or paste here to upload images\nComment · Sign up or log in to comment\nUpvote 9\nModels mentioned in this article 1\nCollections mentioned in this article 1",
+  "clean_text": "Back to Articles\na]:hidden\">\nIntroducing Cosmos 3 Edge\nEnterprise + Article Published\nJuly 20, 2026\nUpvote 9\n+3\nPranjali Joshi PranjaliJoshi Follow\nnvidia\nSaeed Babamohamadi SaeedBabamohamadi Follow\nnvidia\nThe real world is vast and to operate in it physical AI systems need to understand how a scene is changing, anticipate what could happen next, and determine how an action will affect the world.\nMachines operate at the edge in factories, warehouses, hospitals and beyond. To understand and act in these environments, they need models that deliver data center–level performance on memory-constrained systems.\nToday we are releasing NVIDIA Cosmos 3 Edge on Hugging Face’s Cosmos 3 repository. It’s a 4-billion-parameter open world model that helps robots and vision AI agents understand their surroundings, reason in real time and generate robot actions on edge devices.\nDownload the model: https://huggingface.co/nvidia/Cosmos3-Edge\nThe model delivers memory-efficient, high-throughput inference across NVIDIA edge computers including NVIDIA RTX PRO GPUs, NVIDIA DGX, NVIDIA GeForce RTX™ GPUs, NVIDIA Jetson including the newly announced Jetson T2000 and T3000 modules.\nDesigned as a compact open model that can serve as a small vision language model (VLM) with best-in-class throughput and accuracy with real-time inference.\nAs a post-trained world action model (WAM), Cosmos 3 Edge operates at robot-control resolution (640×360 observations), delivering real-time reasoning and generating 32 actions per inference on NVIDIA Jetson Thor - while achieving real-time control at 15 Hz.\nAmong similar size (4B parameters) models, Cosmos 3 Edge ranks #1 on VANTAGE-Bench for vision analytics and state-of-the-art for robot policy learning, setting the state of the art for smart infrastructure and robotics.\nWhat Is World Modeling?\nA world model learns how an environment changes over time. It represents objects, motion, spatial relationships, and the effects of actions.\nConsider a robot reaching for an object. Recognizing the object is only the first step. The robot must also understand where the object is, how its gripper is moving, what may happen when contact occurs, and which action is most likely to complete the task successfully.\nA world model helps the robot reason about these relationships. It can predict the visual result of an action, infer the action that caused a change, or generate an action to produce a desired outcome.\nCosmos 3 Edge brings these capabilities together in one model, on-device. Its shared representation enables physical AI systems to understand the current world state, simulate possible futures, and connect those futures to actions.\nTwo Transformer Towers, One Shared Representation\nCosmos 3 combines two transformer towers:\nAutoregressive tower: Processes vision and text tokens for understanding and reasoning.\nDiffusion tower: Processes vision, audio, and action tokens for prediction, generation, and neural simulation.\nThe two towers maintain separate normalization layers and multilayer perceptrons. They share multimodal attention layers, which align information across language, video, audio, and action.\nThis design allows the model to reason about a scene before generating an output. Depending on the task, Cosmos 3 can produce reasoning tokens from the autoregressive tower or denoised video and action tokens from the diffusion tower.\nThe attention pattern is also adapted to each type of information. Language uses causal attention, where each token attends to the tokens that came before it. Diffusion tokens attend more broadly to the available context, supporting coherent prediction and generation.\nTogether, these components give the model a common representation of what is happening, what may happen next, and how an action could influence the outcome.\nA Common Representation for Action\nPhysical systems describe actions differently. A vehicle may represent an action through ego pose and movement. A camera uses camera motion. A robot arm uses the pose of its end effector, while a hand or gripper also needs to represent grasp state.\nCosmos 3 maps these different embodiments into a common action representation.\nActions are encoded as compact geometric vectors that capture:\nTranslation\nRotation\nManipulation state\nThis creates a direct connection between control and the visual structure of the world. The model can associate changes in pixels with physical motion, spatial relationships, and control inputs.\nAs a result, generated video becomes more than a visual prediction. It can represent how the world is expected to change in response to an action. This gives developers training data grounded in motion, control, and cause and effect.\nPolicy Mode\nAs a policy, Cosmos 3 predicts an action together with its expected visual consequence.\nThe model can generate what the system should do and simulate what is likely to happen next. This connects world modeling directly to robot policy training and evaluation.\nCurrent state in, action and visual consequence out.\nThese modes enable one model to learn cause, effect, and policy. Action can flow through the model in both directions, allowing Cosmos 3 Edge to predict the effects of an action or infer an action from its effects.\nPrompt: Pick up the banana and put it in the plate.\nWe are also releasing Cosmos 3 Edge Policy (DROID): A robot manipulation policy post-trained on the DROID dataset for pick-and-place tasks, with accompanying post-training scripts.\nDevelopers can use a small cluster of H100 or NVIDIA DGX Station to efficiently fine-tune Cosmos 3 Edge for their target workloads before deploying to NVIDIA edge and accelerated computing platforms.\nPost-trained samples for improved performance\nAlongside the base models, we're releasing reference post-trained checkpoints and training recipes to help developers adapt and optimize Cosmos 3 for their own applications.\nCosmos 3 is an open world foundation model platform. As models are post-trained with high-quality, domain-specific data, their accuracy continue to improve for specialized applications. Cosmos serves as the starting point for building domain-adapted world models using open frameworks.\nPost-training enables developers to improve model performance while preserving output quality. To demonstrate this workflow, we're also releasing the Cosmos 3 Super 4-Step Distillation checkpoint along with a post-training script, providing a faster reference implementation for 64B model that helps developers adapt Cosmos to their own domains and achieve better downstream performance.\nCosmos 3 Super 4-Step (Text-to-Image & Image-to-Video): These are distribution-matching distilled checkpoint and scripts that reduce diffusion from 35–50 denoising steps to just 4, delivering up to 25× faster inference while preserving image and video quality and fidelity.\nThese examples serve as reference implementations that developers can build on. Using the open training scripts, you can post-train Cosmos 3 Edge for custom robot policies or distill Cosmos 3 Super for faster image and video generation tailored to your application.\nTry Cosmos 3 Edge\nDownload the model: https://huggingface.co/nvidia/Cosmos3-Edge\nCosmos 3 Edge connects understanding, prediction, simulation, and action through a shared world representation.Developers can deploy it closer to their sensors on-device. The model can be used as a reasoner or as an action generator.\nUse open Cosmos Frameworks to customize and specialize the models.\nCheckout Cosmos 3: https://huggingface.co/collections/nvidia/cosmos3\nWhat's ahead\nWe continue to advance Cosmos 3 for Physical AI, with upcoming improvements in interactive world generation, driving scenario simulation, and robotics policies.\nWe are also investing in faster inference and more efficient post-training across a broader range of hardware, reducing the time and compute required to build downstream models.\nThis includes optimizing Cosmos 3 checkpoints with open inference and optimization frameworks such as vLLM, with more optimizations and developer tooling coming soon.\nModels mentioned in this article 1\nCollections mentioned in this article 1\nMore from this author\nFine-tune video and image models at scale with NVIDIA NeMo Automodel and 🤗 Diffusers\n76\nJuly 17, 2026\nNVIDIA Nemotron 3 Embed Ranks #1 Overall on RTEB, Advancing Agentic Retrieval\n50\nJuly 16, 2026\nCommunity\nEdit Preview\nUpload images, audio, and videos by dragging in the text input, pasting, or clicking here .\nTap or paste here to upload images\nComment · Sign up or log in to comment\nUpvote 9\nModels mentioned in this article 1\nCollections mentioned in this article 1",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-21/r-014-nvidia-发布-cosmos-3-edge-4b-参数开源世界模型-为机器人及边缘-ai-提供实时推理与动作生成.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-21/r-014-nvidia-发布-cosmos-3-edge-4b-参数开源世界模型-为机器人及边缘-ai-提供实时推理与动作生成.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 94,
+  "extractor_diagnostics": {
+    "readability_score": 94,
+    "text_length": 8658,
+    "paragraph_count": 61,
+    "sentence_count": 64,
+    "boilerplate_hits": 1,
+    "symbol_ratio": 0.0002,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 8658,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "d4aa5c356d15fb26",
+    "missing": []
+  },
+  "evidence_strength": "rich_evidence",
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "NVIDIA 发布 Cosmos 3 Edge：4B 参数开源世界模型，为机器人及边缘 AI 提供实时推理与动作生成",
+    "discovery_summary": "NVIDIA 在 Hugging Face 上开源了 Cosmos 3 Edge，一个 40 亿参数的世界模型，旨在帮助机器人和视觉 AI 智能体在边缘设备上理解环境、实时推理并生成动作。",
+    "source_name": "Hugging Face：Blog（RSS）",
+    "origin_url": "https://huggingface.co/blog/nvidia/cosmos3edge",
+    "discovered_at": "2026-07-21T01:16:25.604Z",
+    "rank_on_page": 128,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "46d88c24f24cd938",
+  "content_hash": "d4aa5c356d15fb26",
+  "full_text_hash": "d4aa5c356d15fb26",
+  "semantic_hash": "4f66be3c76208563",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-19T16:00:00.000Z",
+  "last_seen_at": "2026-07-21T01:25:35.743Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "number",
+      "text": "NVIDIA 在 Hugging Face 上开源了 Cosmos 3 Edge，一个 40 亿参数的世界模型，旨在帮助机器人和视觉 AI 智能体在边缘设备上理解环境、实时推理并生成动作。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Back to Articles a]:hidden\"> Introducing Cosmos 3 Edge Enterprise + Article Published July 20, 2026 Upvote 9 +3 Pranjali Joshi PranjaliJoshi Follow nvidia Saeed Babamohamadi SaeedBabamohamadi Follow nvidia The real world is vast and to operate in it physical AI systems need to understand how a scene is changing, anticipate what could happen next, and determine how an action will affect the world.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Machines operate at the edge in factories, warehouses, hospitals and beyond.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "To understand and act in these environments, they need models that deliver data center–level performance on memory-constrained systems.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Today we are releasing NVIDIA Cosmos 3 Edge on Hugging Face’s Cosmos 3 repository.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "It’s a 4-billion-parameter open world model that helps robots and vision AI agents understand their surroundings, reason in real time and generate robot actions on edge devices.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-21T01:25:35.743Z",
+  "business_elements": {
+    "companies": [
+      "Hugging Face",
+      "Blog（RSS）",
+      "Nvidia"
+    ],
+    "products": [
+      "agents"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具",
+      "企业服务"
+    ],
+    "roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "合同审阅 / 法律研究"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "部署 / 上线"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "3",
+      "4B",
+      "40 亿",
+      "20",
+      "2026",
+      "9",
+      "4",
+      "2000"
+    ],
+    "quotes": []
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Back to Articles a]:hidden\"> Introducing Cosmos 3 Edge Enterprise + Article Published July 20, 2026 Upvote 9 +3 Pranjali Joshi PranjaliJoshi Follow nvidia Saeed Babamohamadi SaeedBabamohamadi Follow nvidia The real world is vast and to operate in it physical AI systems need to understand how a scene is changing, anticipate what could happen next, and determine how an action will affect the world.",
+      "Machines operate at the edge in factories, warehouses, hospitals and beyond.",
+      "To understand and act in these environments, they need models that deliver data center–level performance on memory-constrained systems."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_technical_trend",
+    "importance_score": 5,
+    "importance_reason": "technical trend or capability shift; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "enterprise_ai_transformation_lens",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 5,
+    "guanlan_relevance": 4,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": true,
+    "trend_candidate_context": true,
+    "signal_card_candidate": false,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "core_pool"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# NVIDIA 发布 Cosmos 3 Edge：4B 参数开源世界模型，为机器人及边缘 AI 提供实时推理与动作生成\n\n- raw_id: R-014\n- title_zh: NVIDIA 发布 Cosmos 3 Edge：4B 参数开源世界模型，为机器人及边缘 AI 提供实时推理与动作生成\n- title_translation_status: not_required\n- title_translation_method: source_title\n- original_url: https://huggingface.co/blog/nvidia/cosmos3edge\n- source_name: Hugging Face：Blog（RSS）\n- collected_at: 2026-07-21T01:25:35.743Z\n\n## clean_text\n\nBack to Articles\na]:hidden\">\nIntroducing Cosmos 3 Edge\nEnterprise + Article Published\nJuly 20, 2026\nUpvote 9\n+3\nPranjali Joshi PranjaliJoshi Follow\nnvidia\nSaeed Babamohamadi SaeedBabamohamadi Follow\nnvidia\nThe real world is vast and to operate in it physical AI systems need to understand how a scene is changing, anticipate what could happen next, and determine how an action will affect the world.\nMachines operate at the edge in factories, warehouses, hospitals and beyond. To understand and act in these environments, they need models that deliver data center–level performance on memory-constrained systems.\nToday we are releasing NVIDIA Cosmos 3 Edge on Hugging Face’s Cosmos 3 repository. It’s a 4-billion-parameter open world model that helps robots and vision AI agents understand their surroundings, reason in real time and generate robot actions on edge devices.\nDownload the model: https://huggingface.co/nvidia/Cosmos3-Edge\nThe model delivers memory-efficient, high-throughput inference across NVIDIA edge computers including NVIDIA RTX PRO GPUs, NVIDIA DGX, NVIDIA GeForce RTX™ GPUs, NVIDIA Jetson including the newly announced Jetson T2000 and T3000 modules.\nDesigned as a compact open model that can serve as a small vision language model (VLM) with best-in-class throughput and accuracy with real-time inference.\nAs a post-trained world action model (WAM), Cosmos 3 Edge operates at robot-control resolution (640×360 observations), delivering real-time reasoning and generating 32 actions per inference on NVIDIA Jetson Thor - while achieving real-time control at 15 Hz.\nAmong similar size (4B parameters) models, Cosmos 3 Edge ranks #1 on VANTAGE-Bench for vision analytics and state-of-the-art for robot policy learning, setting the state of the art for smart infrastructure and robotics.\nWhat Is World Modeling?\nA world model learns how an environment changes over time. It represents objects, motion, spatial relationships, and the effects of actions.\nConsider a robot reaching for an object. Recognizing the object is only the first step. The robot must also understand where the object is, how its gripper is moving, what may happen when contact occurs, and which action is most likely to complete the task successfully.\nA world model helps the robot reason about these relationships. It can predict the visual result of an action, infer the action that caused a change, or generate an action to produce a desired outcome.\nCosmos 3 Edge brings these capabilities together in one model, on-device. Its shared representation enables physical AI systems to understand the current world state, simulate possible futures, and connect those futures to actions.\nTwo Transformer Towers, One Shared Representation\nCosmos 3 combines two transformer towers:\nAutoregressive tower: Processes vision and text tokens for understanding and reasoning.\nDiffusion tower: Processes vision, audio, and action tokens for prediction, generation, and neural simulation.\nThe two towers maintain separate normalization layers and multilayer perceptrons. They share multimodal attention layers, which align information across language, video, audio, and action.\nThis design allows the model to reason about a scene before generating an output. Depending on the task, Cosmos 3 can produce reasoning tokens from the autoregressive tower or denoised video and action tokens from the diffusion tower.\nThe attention pattern is also adapted to each type of information. Language uses causal attention, where each token attends to the tokens that came before it. Diffusion tokens attend more broadly to the available context, supporting coherent prediction and generation.\nTogether, these components give the model a common representation of what is happening, what may happen next, and how an action could influence the outcome.\nA Common Representation for Action\nPhysical systems describe actions differently. A vehicle may represent an action through ego pose and movement. A camera uses camera motion. A robot arm uses the pose of its end effector, while a hand or gripper also needs to represent grasp state.\nCosmos 3 maps these different embodiments into a common action representation.\nActions are encoded as compact geometric vectors that capture:\nTranslation\nRotation\nManipulation state\nThis creates a direct connection between control and the visual structure of the world. The model can associate changes in pixels with physical motion, spatial relationships, and control inputs.\nAs a result, generated video becomes more than a visual prediction. It can represent how the world is expected to change in response to an action. This gives developers training data grounded in motion, control, and cause and effect.\nPolicy Mode\nAs a policy, Cosmos 3 predicts an action together with its expected visual consequence.\nThe model can generate what the system should do and simulate what is likely to happen next. This connects world modeling directly to robot policy training and evaluation.\nCurrent state in, action and visual consequence out.\nThese modes enable one model to learn cause, effect, and policy. Action can flow through the model in both directions, allowing Cosmos 3 Edge to predict the effects of an action or infer an action from its effects.\nPrompt: Pick up the banana and put it in the plate.\nWe are also releasing Cosmos 3 Edge Policy (DROID): A robot manipulation policy post-trained on the DROID dataset for pick-and-place tasks, with accompanying post-training scripts.\nDevelopers can use a small cluster of H100 or NVIDIA DGX Station to efficiently fine-tune Cosmos 3 Edge for their target workloads before deploying to NVIDIA edge and accelerated computing platforms.\nPost-trained samples for improved performance\nAlongside the base models, we're releasing reference post-trained checkpoints and training recipes to help developers adapt and optimize Cosmos 3 for their own applications.\nCosmos 3 is an open world foundation model platform. As models are post-trained with high-quality, domain-specific data, their accuracy continue to improve for specialized applications. Cosmos serves as the starting point for building domain-adapted world models using open frameworks.\nPost-training enables developers to improve model performance while preserving output quality. To demonstrate this workflow, we're also releasing the Cosmos 3 Super 4-Step Distillation checkpoint along with a post-training script, providing a faster reference implementation for 64B model that helps developers adapt Cosmos to their own domains and achieve better downstream performance.\nCosmos 3 Super 4-Step (Text-to-Image & Image-to-Video): These are distribution-matching distilled checkpoint and scripts that reduce diffusion from 35–50 denoising steps to just 4, delivering up to 25× faster inference while preserving image and video quality and fidelity.\nThese examples serve as reference implementations that developers can build on. Using the open training scripts, you can post-train Cosmos 3 Edge for custom robot policies or distill Cosmos 3 Super for faster image and video generation tailored to your application.\nTry Cosmos 3 Edge\nDownload the model: https://huggingface.co/nvidia/Cosmos3-Edge\nCosmos 3 Edge connects understanding, prediction, simulation, and action through a shared world representation.Developers can deploy it closer to their sensors on-device. The model can be used as a reasoner or as an action generator.\nUse open Cosmos Frameworks to customize and specialize the models.\nCheckout Cosmos 3: https://huggingface.co/collections/nvidia/cosmos3\nWhat's ahead\nWe continue to advance Cosmos 3 for Physical AI, with upcoming improvements in interactive world generation, driving scenario simulation, and robotics policies.\nWe are also investing in faster inference and more efficient post-training across a broader range of hardware, reducing the time and compute required to build downstream models.\nThis includes optimizing Cosmos 3 checkpoints with open inference and optimization frameworks such as vLLM, with more optimizations and developer tooling coming soon.\nModels mentioned in this article 1\nCollections mentioned in this article 1\nMore from this author\nFine-tune video and image models at scale with NVIDIA NeMo Automodel and 🤗 Diffusers\n76\nJuly 17, 2026\nNVIDIA Nemotron 3 Embed Ranks #1 Overall on RTEB, Advancing Agentic Retrieval\n50\nJuly 16, 2026\nCommunity\nEdit Preview\nUpload images, audio, and videos by dragging in the text input, pasting, or clicking here .\nTap or paste here to upload images\nComment · Sign up or log in to comment\nUpvote 9\nModels mentioned in this article 1\nCollections mentioned in this article 1\n\n## full_text\n\nBack to Articles\na]:hidden\">\nIntroducing Cosmos 3 Edge\nEnterprise + Article Published\nJuly 20, 2026\nUpvote 9\n+3\nPranjali Joshi PranjaliJoshi Follow\nnvidia\nSaeed Babamohamadi SaeedBabamohamadi Follow\nnvidia\nThe real world is vast and to operate in it physical AI systems need to understand how a scene is changing, anticipate what could happen next, and determine how an action will affect the world.\nMachines operate at the edge in factories, warehouses, hospitals and beyond. To understand and act in these environments, they need models that deliver data center–level performance on memory-constrained systems.\nToday we are releasing NVIDIA Cosmos 3 Edge on Hugging Face’s Cosmos 3 repository. It’s a 4-billion-parameter open world model that helps robots and vision AI agents understand their surroundings, reason in real time and generate robot actions on edge devices.\nDownload the model: https://huggingface.co/nvidia/Cosmos3-Edge\nThe model delivers memory-efficient, high-throughput inference across NVIDIA edge computers including NVIDIA RTX PRO GPUs, NVIDIA DGX, NVIDIA GeForce RTX™ GPUs, NVIDIA Jetson including the newly announced Jetson T2000 and T3000 modules.\nDesigned as a compact open model that can serve as a small vision language model (VLM) with best-in-class throughput and accuracy with real-time inference.\nAs a post-trained world action model (WAM), Cosmos 3 Edge operates at robot-control resolution (640×360 observations), delivering real-time reasoning and generating 32 actions per inference on NVIDIA Jetson Thor - while achieving real-time control at 15 Hz.\nAmong similar size (4B parameters) models, Cosmos 3 Edge ranks #1 on VANTAGE-Bench for vision analytics and state-of-the-art for robot policy learning, setting the state of the art for smart infrastructure and robotics.\nWhat Is World Modeling?\nA world model learns how an environment changes over time. It represents objects, motion, spatial relationships, and the effects of actions.\nConsider a robot reaching for an object. Recognizing the object is only the first step. The robot must also understand where the object is, how its gripper is moving, what may happen when contact occurs, and which action is most likely to complete the task successfully.\nA world model helps the robot reason about these relationships. It can predict the visual result of an action, infer the action that caused a change, or generate an action to produce a desired outcome.\nCosmos 3 Edge brings these capabilities together in one model, on-device. Its shared representation enables physical AI systems to understand the current world state, simulate possible futures, and connect those futures to actions.\nTwo Transformer Towers, One Shared Representation\nCosmos 3 combines two transformer towers:\nAutoregressive tower: Processes vision and text tokens for understanding and reasoning.\nDiffusion tower: Processes vision, audio, and action tokens for prediction, generation, and neural simulation.\nThe two towers maintain separate normalization layers and multilayer perceptrons. They share multimodal attention layers, which align information across language, video, audio, and action.\nThis design allows the model to reason about a scene before generating an output. Depending on the task, Cosmos 3 can produce reasoning tokens from the autoregressive tower or denoised video and action tokens from the diffusion tower.\nThe attention pattern is also adapted to each type of information. Language uses causal attention, where each token attends to the tokens that came before it. Diffusion tokens attend more broadly to the available context, supporting coherent prediction and generation.\nTogether, these components give the model a common representation of what is happening, what may happen next, and how an action could influence the outcome.\nA Common Representation for Action\nPhysical systems describe actions differently. A vehicle may represent an action through ego pose and movement. A camera uses camera motion. A robot arm uses the pose of its end effector, while a hand or gripper also needs to represent grasp state.\nCosmos 3 maps these different embodiments into a common action representation.\nActions are encoded as compact geometric vectors that capture:\nTranslation\nRotation\nManipulation state\nThis creates a direct connection between control and the visual structure of the world. The model can associate changes in pixels with physical motion, spatial relationships, and control inputs.\nAs a result, generated video becomes more than a visual prediction. It can represent how the world is expected to change in response to an action. This gives developers training data grounded in motion, control, and cause and effect.\nPolicy Mode\nAs a policy, Cosmos 3 predicts an action together with its expected visual consequence.\nThe model can generate what the system should do and simulate what is likely to happen next. This connects world modeling directly to robot policy training and evaluation.\nCurrent state in, action and visual consequence out.\nThese modes enable one model to learn cause, effect, and policy. Action can flow through the model in both directions, allowing Cosmos 3 Edge to predict the effects of an action or infer an action from its effects.\nPrompt: Pick up the banana and put it in the plate.\nWe are also releasing Cosmos 3 Edge Policy (DROID): A robot manipulation policy post-trained on the DROID dataset for pick-and-place tasks, with accompanying post-training scripts.\nDevelopers can use a small cluster of H100 or NVIDIA DGX Station to efficiently fine-tune Cosmos 3 Edge for their target workloads before deploying to NVIDIA edge and accelerated computing platforms.\nPost-trained samples for improved performance\nAlongside the base models, we're releasing reference post-trained checkpoints and training recipes to help developers adapt and optimize Cosmos 3 for their own applications.\nCosmos 3 is an open world foundation model platform. As models are post-trained with high-quality, domain-specific data, their accuracy continue to improve for specialized applications. Cosmos serves as the starting point for building domain-adapted world models using open frameworks.\nPost-training enables developers to improve model performance while preserving output quality. To demonstrate this workflow, we're also releasing the Cosmos 3 Super 4-Step Distillation checkpoint along with a post-training script, providing a faster reference implementation for 64B model that helps developers adapt Cosmos to their own domains and achieve better downstream performance.\nCosmos 3 Super 4-Step (Text-to-Image & Image-to-Video): These are distribution-matching distilled checkpoint and scripts that reduce diffusion from 35–50 denoising steps to just 4, delivering up to 25× faster inference while preserving image and video quality and fidelity.\nThese examples serve as reference implementations that developers can build on. Using the open training scripts, you can post-train Cosmos 3 Edge for custom robot policies or distill Cosmos 3 Super for faster image and video generation tailored to your application.\nTry Cosmos 3 Edge\nDownload the model: https://huggingface.co/nvidia/Cosmos3-Edge\nCosmos 3 Edge connects understanding, prediction, simulation, and action through a shared world representation.Developers can deploy it closer to their sensors on-device. The model can be used as a reasoner or as an action generator.\nUse open Cosmos Frameworks to customize and specialize the models.\nCheckout Cosmos 3: https://huggingface.co/collections/nvidia/cosmos3\nWhat's ahead\nWe continue to advance Cosmos 3 for Physical AI, with upcoming improvements in interactive world generation, driving scenario simulation, and robotics policies.\nWe are also investing in faster inference and more efficient post-training across a broader range of hardware, reducing the time and compute required to build downstream models.\nThis includes optimizing Cosmos 3 checkpoints with open inference and optimization frameworks such as vLLM, with more optimizations and developer tooling coming soon.\nModels mentioned in this article 1\nCollections mentioned in this article 1\nMore from this author\nFine-tune video and image models at scale with NVIDIA NeMo Automodel and 🤗 Diffusers\n76\nJuly 17, 2026\nNVIDIA Nemotron 3 Embed Ranks #1 Overall on RTEB, Advancing Agentic Retrieval\n50\nJuly 16, 2026\nCommunity\nEdit Preview\nUpload images, audio, and videos by dragging in the text input, pasting, or clicking here .\nTap or paste here to upload images\nComment · Sign up or log in to comment\nUpvote 9\nModels mentioned in this article 1\nCollections mentioned in this article 1\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 94\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [number / signal_card_candidate, relationship_graph_input, case, trend_candidate_context / high] NVIDIA 在 Hugging Face 上开源了 Cosmos 3 Edge，一个 40 亿参数的世界模型，旨在帮助机器人和视觉 AI 智能体在边缘设备上理解环境、实时推理并生成动作。\n2. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] Back to Articles a]:hidden\"> Introducing Cosmos 3 Edge Enterprise + Article Published July 20, 2026 Upvote 9 +3 Pranjali Joshi PranjaliJoshi Follow nvidia Saeed Babamohamadi SaeedBabamohamadi Follow nvidia The real world is vast and to operate in it physical AI systems need to understand how a scene is changing, anticipate what could happen next, and determine how an action will affect the world.\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] Machines operate at the edge in factories, warehouses, hospitals and beyond.\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] To understand and act in these environments, they need models that deliver data center–level performance on memory-constrained systems.\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] Today we are releasing NVIDIA Cosmos 3 Edge on Hugging Face’s Cosmos 3 repository.\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] It’s a 4-billion-parameter open world model that helps robots and vision AI agents understand their surroundings, reason in real time and generate robot actions on edge devices.\n"
+}

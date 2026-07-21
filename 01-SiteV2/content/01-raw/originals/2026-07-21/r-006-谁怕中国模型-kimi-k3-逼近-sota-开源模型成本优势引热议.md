@@ -1,0 +1,348 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-006
+title: "谁怕中国模型？--Kimi K3 逼近 SOTA，开源模型成本优势引热议"
+title_zh: "谁怕中国模型？--Kimi K3 逼近 SOTA，开源模型成本优势引热议"
+title_translation_status: not_required
+title_translation_method: source_title
+title_translation_model: not_applicable
+original_url: "https://stratechery.com/2026/whos-afraid-of-chinese-models"
+canonical_url: "https://stratechery.com/2026/whos-afraid-of-chinese-models"
+source_name: "Hacker News 热门（buzzing.cc 中文翻译）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-20T00:00:00.000Z"
+collected_at: 2026-07-21T01:25:35.700Z
+language: mixed
+full_text_hash: 9c76efd4f382b873
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-21/r-006-谁怕中国模型-kimi-k3-逼近-sota-开源模型成本优势引热议.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-21/r-006-谁怕中国模型-kimi-k3-逼近-sota-开源模型成本优势引热议.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 91
+extractor_diagnostics: {"readability_score":91,"text_length":23036,"paragraph_count":74,"sentence_count":145,"boilerplate_hits":2,"symbol_ratio":0.0001,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 23036
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"9c76efd4f382b873","missing":[]}
+source_volatility: high
+community_name: "Hacker News 热门（buzzing.cc 中文翻译）"
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: user_feedback_signal
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"谁怕中国模型？--Kimi K3 逼近 SOTA，开源模型成本优势引热议","discovery_summary":"中国开源模型 Kimi K3 在能力上逼近当前最先进水平，引发行业讨论。其 API 价格为每百万输入 token 3 美元、每百万输出 token 15 美元，低于 Sol 的 5 美元和 30 美元。但推理时代 token 并非同质化商品，Kimi 需更多推理 token 才能达到正确答案，实际智能成本取决于模型体积、推理效率、内存效率、服务效率和 token 效率等多重因素。","source_name":"Hacker News 热门（buzzing.cc 中文翻译）","origin_url":"https://stratechery.com/2026/whos-afraid-of-chinese-models","discovered_at":"2026-07-21T01:16:25.577Z","rank_on_page":43,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 79a3012e36ffdbe9
+content_hash: ec117efc28dd98c7
+semantic_hash: 38067e91be56ebdb
+duplicate_of: ""
+first_seen_at: "2026-07-20T00:00:00.000Z"
+last_seen_at: 2026-07-21T01:25:35.700Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool","emerging_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":5,"importance_reason":"vertical industry solution; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":4}
+business_elements: {"companies":["Hacker News 热门（buzzing.cc 中文翻译）","OpenAI","Anthropic","Microsoft","Meta","Amazon","Nvidia"],"products":["ChatGPT","Agents","agent","Claude","Codex"],"people":[],"industries":["金融 / 保险","制造 / 工业","开发者工具"],"roles":["CIO / IT 负责人","开发者 / 工程团队"],"workflows":["合同审阅 / 法律研究","计费 / 预算管理"],"business_actions":["发布 / 推出"],"affected_departments":["IT / 安全","财务 / 预算"],"numbers":["3","3 美元","15 美元","5 美元","30 美元","20","2026","431"],"quotes":["token factories","moving from the digital world into the physical world"]}
+evidence_seed: {"company_actions":["Skip to content Who’s Afraid of Chinese Models?","Monday, July 20, 2026 Listen to Podcast Listen to this post : Log in to listen There’s a story I tell about my first day in STRT-431 at Kellogg School of Management, the introductory class that every first-year MBA was required to take; I leafed through the readings and case studies and was dismayed that there weren’t any tech companies on the docket.","Me being me, I spoke to the professor after class wondering why, and was told that the goal of the course was not to necessarily learn about specific industries, but rather to uncover broadly applicable universal principles that could be applied to any company in any industry."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"number","text":"中国开源模型 Kimi K3 在能力上逼近当前最先进水平，引发行业讨论。其 API 价格为每百万输入 token 3 美元、每百万输出 token 15 美元，低于 Sol 的 5 美元和 30 美元。但推理时代 token 并非同质化商品，Kimi 需更多推理 token 才能达到正确答案，实际智能成本取决于模型体积、推理效率、内存效率、服务效率和 token 效率等多重因素。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Skip to content Who’s Afraid of Chinese Models?","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Monday, July 20, 2026 Listen to Podcast Listen to this post : Log in to listen There’s a story I tell about my first day in STRT-431 at Kellogg School of Management, the introductory class that every first-year MBA was required to take; I leafed through the readings and case studies and was dismayed that there weren’t any tech companies on the docket.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Me being me, I spoke to the professor after class wondering why, and was told that the goal of the course was not to necessarily learn about specific industries, but rather to uncover broadly applicable universal principles that could be applied to any company in any industry.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"I did not, as I usually tell the story, find this very satisfactory: to me the nature of tech, particularly the fact that software and distribution had zero marginal costs (and zero transaction costs), was something fundamentally different; putting in zeroes in formulas tends to wreak havoc!","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"I soon realized, however, that that was my opportunity.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-21T01:25:35.700Z
+theme: developer-ecosystem-signal
+keyword_group: developer-ecosystem-signal
+copyright_note: local research archive only
+---
+
+# 谁怕中国模型？--Kimi K3 逼近 SOTA，开源模型成本优势引热议
+
+## clean_text
+
+Skip to content
+Who’s Afraid of Chinese Models?
+Monday, July 20, 2026
+Listen to Podcast
+Listen to this post :
+Log in to listen
+There’s a story I tell about my first day in STRT-431 at Kellogg School of Management, the introductory class that every first-year MBA was required to take; I leafed through the readings and case studies and was dismayed that there weren’t any tech companies on the docket. Me being me, I spoke to the professor after class wondering why, and was told that the goal of the course was not to necessarily learn about specific industries, but rather to uncover broadly applicable universal principles that could be applied to any company in any industry.
+I did not, as I usually tell the story, find this very satisfactory: to me the nature of tech, particularly the fact that software and distribution had zero marginal costs (and zero transaction costs), was something fundamentally different; putting in zeroes in formulas tends to wreak havoc! I soon realized, however, that that was my opportunity. The fundamental insight undergirding Aggregation Theory is that zero marginal costs leads to fundamentally different value chains than people once expected from the Internet: centralization and scale in a world where controlling demand mattered more than distributing supply.
+What is fascinating about AI, however, is the extent to which those old universal principles are coming back to the forefront. That was never more apparent than this past weekend, when arguments raged on X about the implications of Kimi K3, another open weights model out of China, approaching the state-of-the-art in terms of capabilities. The long and short of it is this: marginal costs are back in a big way, both in terms of short-term implications of state-of-the-art free models, and in terms of the long-term structure of the industry.
+COGS Versus R&D
+One of the most common misconceptions undergirding discussion of open weights models is that they are cheaper — free, even. After all, you can just download the weights, and skip the time and expense and capabilities necessary to create your own model. That is, of course, true, but the “free” in this case is a reference to the amount you need to spend on research and development; R&D is a fixed expense that is independent of the revenue you generate. If you spend $1 million in R&D, it doesn’t matter if you do $100 thousand in revenue or $100 million; you still spent $1 million on R&D (it does, of course, impact your profitability).
+What is related to revenue is COGS — cost of goods sold — and COGS is real for AI in a way it hasn’t been for software for a very long time. Specifically, running inference on a model — whether that model be Kimi or Fable — costs money, and the amount of money an AI provider spends on inference is, at least in most business models, directly correlated to revenue. To reuse the above example, generating $100 million versus $100 thousand in revenue will likely require 1,000x COGS. In concrete terms, if it costs 50 cents to generate the tokens that drive $1 in revenue, then $100 million in revenue will have $50 million in COGS; $100 thousand in revenue will only have $50 thousand in COGS.
+The point in terms of open weight models is that they are not free to serve. Kimi K3 costs $3 per million input tokens, and $15 per million output tokens; that is cheaper than Sol’s $5 per million input tokens and $30 per million output tokens, but that might not even be the right measurement.
+Tokens Versus Intelligence
+Nvidia CEO Jensen Huang has described what Nvidia is building as “token factories”, and from Nvidia’s perspective that framing makes sense. Nvidia GPUs are model agnostic: they generate tokens, and do so in the fastest and most efficient way possible. That leads to measurements like tokens-per-second, time-to-first-token, tokens-per-watt, token cost, etc., and Huang argues that these metrics will be the basis for decision-making.
+This is a framing that definitely made sense during the first paradigm of AI, the ChatGPT era, when tokens were delivered straight to the end user. The second paradigm of AI, however, the reasoning era, confounds this measurement. Reasoning entails an explosion in chain-of-thought tokens, and different models need different amounts of reasoning tokens to arrive at the right answer. Kimi, for example, reportedly uses significantly more tokens than Sol, rendering its price advantage moot. Agents introduce a similar dynamic: some models are more efficient than others in terms of the number of tokens they need to execute agentic workflows.
+What this means is that tokens are not a commodity. The defining characteristic of a commodity is that it is fungible: a gallon of oil is a gallon of oil; a ton of copper is a ton of copper; a bushel of wheat is a bushel of wheat. A token from one model, however, is not the same as a token from another model. What is fungible is what is constructed from tokens, which is to say intelligence. In other words, if both Kimi and Sol generated the right answer, then that answer is fungible; the difference in tokens generated to get to that right answer is a contributor to a difference in COGS.
+The COGS for intelligence is a function of a few different factors:
+Model footprint: The weights and runtime state determine how much expensive memory and how many accelerators are required to host each serving replica.
+Inference efficiency: Architectural choices (e.g. Mixture-of-Experts) reduce computation per generated token.
+Memory efficiency: Architectural choices can reduce KV cache requirements, allowing more concurrent requests and better GPU utilization.
+Serving efficiency: Batching, scheduling, prefix caching, and other inference optimizations maximize utilization and share work across requests.
+Token efficiency: The fewer tokens required to reach a correct answer, the lower the inference cost.
+The reason this matters is that we are rapidly approaching a state in which intelligence for many economically beneficial tasks is in fact a commodity. Anyone building a basic CRUD app , for example, can likely do so using models from multiple providers. And, in a commodity market, the route to profitability is not through charging higher prices — again, you can (or will soon be able to) make the exact same app using multiple models — but rather through having a superior cost structure.
+Understanding Commodity Markets
+It’s worth stepping through the mechanics here, because, as I noted a few months ago in Amazon’s Durability , the dynamics of commodity markets are not something people in tech are generally familiar with:
+In commodity markets, everyone charges the same price, because everyone is selling the same thing; that price is determined by supply and demand.
+The demand for a commodity is a function of price elasticity: the cheaper the commodity, the more demand there is for it, and vice-versa.
+The supply for a commodity is a function of the marginal cost of producing the commodity.
+The key thing to understand is that the marginal cost of producing the commodity differs by supplier. What this means in practice is that the supplier with the worst cost structure ends up selling the commodity at their marginal cost (if they can produce at all); the profits of everyone else depend on the extent to which their cost structure is better than the marginal supplier.
+As an example:
+Supplier A can produce 10 units of the commodity for $10 each
+Supplier B can produce 10 units of the commodity for $15 each
+Supplier C can produce 10 units of the commodity for $20 each
+Let’s assume the price elasticity is such that there is demand for 25 units of the commodity at $20. That means:
+Supplier A will sell 10 units of the commodity for $20, earning $10/unit
+Supplier B will sell 10 units of the commodity for $20, earning $5/unit
+Supplier C will sell 5 units of the commodity for $20, earning $0/unit
+This isn’t precisely right: the reason why Supplier C will bear the shortfall is because Suppliers A and B will be able to slightly undercut them in price, which will of course affect demand (which is elastic), but it makes the point. Supplier A has a great business, Supplier B has a good business, and Supplier C is going to go bankrupt.
+Bankruptcy risk is where fixed costs come back to the forefront: Supplier C has both fixed costs (like potentially R&D spend) and also may have taken on debt to finance the equipment necessary to produce the commodity. It can’t price its commodity with these costs in mind — remember, the market-clearing price approximates the marginal cost of the highest-cost unit needed to satisfy demand — but those costs can absolutely drive the supplier out of business. And, if that supplier goes out of business, then prices go up, until another supplier decides to enter (or the other suppliers expand).
+The Intelligence Market
+Let’s bring this back to models. Right now, none of the above analysis applies because demand exceeds supply for frontier models, and supply is limited by a lack of compute. This compute shortage doesn’t just mean that a compute supplier like Nvidia makes very large margins, but also that Nvidia’s customers, like SpaceXAI, can turn around and resell compute at high margins as well to a company like Anthropic. Anthropic, meanwhile, can pay the markup because they can sell tokens with a higher markup still.
+It’s not just excess demand that gives Anthropic great margins, however: Anthropic and OpenAI likely have among the lowest costs per unit of frontier-quality intelligence, thanks to model capability, serving scale, and token efficiency. They are serving models at a particular capability level for months before their competitors, and are simultaneously applying the best models to optimizing those costs.
+It’s also worth noting that the market is not yet treating intelligence like a commodity: demand is for Anthropic and OpenAI specifically, and much less for models that aren’t as good (thus SpaceXAI and Meta selling capacity to Anthropic); one way to think about the push for optimizing cost is that that is a function of defining jobs-to-be-done by intelligence level, such that intelligence buyers can create a market where intelligence is commoditized. In the long run, however, whoever is on the frontier is the best placed to dominate non-frontier markets as well, which are just the frontier minus n-months, i.e. months in which the frontier model makers have been optimizing their cost of serving.
+All of this is to say that I think the reaction to Kimi and Chinese models generally is pretty over-blown, at least from an economic perspective. Right now there is a price umbrella that is downstream of the lack of compute; I highly doubt that Chinese models are cheaper to serve on a marginal cost basis, they just seem cheaper because Anthropic and OpenAI are so supply constrained that they are charging far more than they would if there were sufficient supply to meet the demand for intelligence.
+Frontier Lab Paranoia
+Why, then, do the model makers in particular seem so panicked about Chinese models?
+First, I think the frontier labs are anchored in a world where training costs dominated their financial modeling. As long as training consumed more GPUs than inference, it was critical to maximize inference revenue to help fund the next training run, which meant charging very high prices for inference.
+Going forward, however, I expect the inference market to grow much faster than training costs (and that includes the assumption that training costs will continue to skyrocket), which means they really can make it up in volume. It wasn’t clear this would be the case as recently as eight months ago, but the agent paradigm unlock is so massive that frontier labs should have more confidence that they can not just survive but thrive with lower prices (once they have sufficient compute).
+Second, intelligence isn’t in fact a perfect commodity, in part because applied intelligence makes itself smarter. Specifically, whoever is running inference is also collecting data, and that data goes into making the next iteration of the model better. This is, on one hand, all the more reason for the frontier labs to lower prices and increase usage as more compute comes online; on the other hand, this is why companies like Microsoft are increasingly obsessed with helping companies run their own models. That is much more viable if Chinese models are a viable alternative.
+Third, the other way that frontier labs can not only differentiate from Chinese models but also from each other is by continuing to integrate up into the customer experience. It’s striking the extent to which Claude Code and Codex are proving to be quite sticky; whichever harness you start working with is likely to be the one you stick with, and that figures to be even more the case with non-technical users. And, in the long run, this imperative to move up the stack does mean that frontier models are absolutely a threat to software providers, including Microsoft. On the flipside, the extent to which software companies who currently own the customer experience have access to competitive models is the extent to which they may be able to resist the encroachment of the frontier labs.
+Finally, the ideological angle of Anthropic in particular is impossible to ignore. This is a company that believes only it can be entrusted with AI, and the existence of open weights alternatives strikes a fatal blow to that presumption.
+China’s Motivation
+Kimi isn’t the only new Chinese model; from Bloomberg :
+Alibaba Group Holding Ltd. shares rose as much as 5.4% on Monday after the company launched a preview version of its flagship Qwen3.8 Max model, describing it as second only to Anthropic PBC’s Fable 5. The Sunday release came only days after startup Moonshot AI unveiled a powerful new offering that’s roiled markets and triggered concern in the US about China closing the gap on global leaders like Anthropic and OpenAI. Qwen3.8 Max has 2.4 trillion parameters, joining Moonshot’s Kimi K3 in the heavyweight class. With 2.8 trillion parameters, K3 rivals top offerings and Alibaba is setting similarly high expectations.
+Developers can now access Qwen3.8 Max through Alibaba’s coding platforms, including Qoder. Alibaba plans to make the model open-weight soon, expanding access beyond the preview release. Interest in these made-in-China artificial intelligence systems and models is so high that Moonshot was forced to pause taking on new subscriptions late on Sunday to manage overwhelming demand.
+The fact that Qwen3.8 Max will also have open weights is notable. Alibaba stopped releasing weights for its leading edge models earlier this year, but appears to have reverted that change; I suspect that shift was related to last week’s Xi Jinping speech about AI that doubled down on the open weights approach:
+We should adhere to the principle of openness and win-win and boost innovation-driven development. As a new engine of world economic growth and an accelerator for the shift of growth drivers, AI is moving from the digital world into the physical world. We should seize this rare, historic opportunity to encourage open source, openness, collaboration and sharing. We should facilitate technological innovation, industrial development and scenario-based application of AI. We should make coordinated advances in the transformation and upgrade of traditional industries, the cultivation and growth of emerging industries and forward-looking planning for future industries, so that all sectors and businesses can benefit from AI.
+The strategy for China is obvious: commoditize your complements. Note that Xi explicitly ties openness to AI “moving from the digital world into the physical world”; the physical world is the world dominated by China, and the country’s lead in areas like robotics is going to massively benefit from widely available AI models.
+Along the same lines, China does not want the U.S. to gain an asymmetric advantage in AI; to the extent that China can weaken the U.S. frontier labs while strengthening any and all potential U.S. adversaries so much the better, and it can benefit from the innovation that will attach itself to an open ecosystem.
+The Distillation Question
+By the same token, don’t expect China to do anything about distillation attacks on the frontier labs. I think it is mistaken to attribute all of the success of Chinese labs to distillation, but it’s just as much of a mistake to pretend like distillation doesn’t give Chinese labs a big advantage. That advantage has really come to bear in the last year as post-training reinforcement learning has become increasingly crucial to model performance. Instead of having to fashion reinforcement learning environments from scratch, Chinese labs can simply use frontier labs models as teachers, allowing for rapid improvement at much lower costs (this is not the only reason why Chinese models are cheaper to develop, but it’s a big one).
+What is interesting is that one of the most important use cases for Chinese models in the West is itself distillation. Thinking Machines, for example, which just released an open-weight model, relies on Chinese models to solve the cold start problem for reinforcement learning. Dean Meyer and Konstantine Buhler wrote an excellent article on X explaining that distillation means that Western open weight models are fundamentally disadvantaged relative to China:
+Distillation does not explain China’s entire open-model lead. Chinese labs have world-class researchers, substantial compute, strong pre-trained models, software-hardware codesign, and rapidly improving post-training capabilities. But distillation compresses the costly final gap between a strong base and a near-frontier system. Even if distillation represents a smaller share of a Chinese model’s total capability, it represents a meaningful share of its advantage over American open models.
+New enforcement me
+
+## full_text
+
+Skip to content
+Who’s Afraid of Chinese Models?
+Monday, July 20, 2026
+Listen to Podcast
+Listen to this post :
+Log in to listen
+There’s a story I tell about my first day in STRT-431 at Kellogg School of Management, the introductory class that every first-year MBA was required to take; I leafed through the readings and case studies and was dismayed that there weren’t any tech companies on the docket. Me being me, I spoke to the professor after class wondering why, and was told that the goal of the course was not to necessarily learn about specific industries, but rather to uncover broadly applicable universal principles that could be applied to any company in any industry.
+I did not, as I usually tell the story, find this very satisfactory: to me the nature of tech, particularly the fact that software and distribution had zero marginal costs (and zero transaction costs), was something fundamentally different; putting in zeroes in formulas tends to wreak havoc! I soon realized, however, that that was my opportunity. The fundamental insight undergirding Aggregation Theory is that zero marginal costs leads to fundamentally different value chains than people once expected from the Internet: centralization and scale in a world where controlling demand mattered more than distributing supply.
+What is fascinating about AI, however, is the extent to which those old universal principles are coming back to the forefront. That was never more apparent than this past weekend, when arguments raged on X about the implications of Kimi K3, another open weights model out of China, approaching the state-of-the-art in terms of capabilities. The long and short of it is this: marginal costs are back in a big way, both in terms of short-term implications of state-of-the-art free models, and in terms of the long-term structure of the industry.
+COGS Versus R&D
+One of the most common misconceptions undergirding discussion of open weights models is that they are cheaper — free, even. After all, you can just download the weights, and skip the time and expense and capabilities necessary to create your own model. That is, of course, true, but the “free” in this case is a reference to the amount you need to spend on research and development; R&D is a fixed expense that is independent of the revenue you generate. If you spend $1 million in R&D, it doesn’t matter if you do $100 thousand in revenue or $100 million; you still spent $1 million on R&D (it does, of course, impact your profitability).
+What is related to revenue is COGS — cost of goods sold — and COGS is real for AI in a way it hasn’t been for software for a very long time. Specifically, running inference on a model — whether that model be Kimi or Fable — costs money, and the amount of money an AI provider spends on inference is, at least in most business models, directly correlated to revenue. To reuse the above example, generating $100 million versus $100 thousand in revenue will likely require 1,000x COGS. In concrete terms, if it costs 50 cents to generate the tokens that drive $1 in revenue, then $100 million in revenue will have $50 million in COGS; $100 thousand in revenue will only have $50 thousand in COGS.
+The point in terms of open weight models is that they are not free to serve. Kimi K3 costs $3 per million input tokens, and $15 per million output tokens; that is cheaper than Sol’s $5 per million input tokens and $30 per million output tokens, but that might not even be the right measurement.
+Tokens Versus Intelligence
+Nvidia CEO Jensen Huang has described what Nvidia is building as “token factories”, and from Nvidia’s perspective that framing makes sense. Nvidia GPUs are model agnostic: they generate tokens, and do so in the fastest and most efficient way possible. That leads to measurements like tokens-per-second, time-to-first-token, tokens-per-watt, token cost, etc., and Huang argues that these metrics will be the basis for decision-making.
+This is a framing that definitely made sense during the first paradigm of AI, the ChatGPT era, when tokens were delivered straight to the end user. The second paradigm of AI, however, the reasoning era, confounds this measurement. Reasoning entails an explosion in chain-of-thought tokens, and different models need different amounts of reasoning tokens to arrive at the right answer. Kimi, for example, reportedly uses significantly more tokens than Sol, rendering its price advantage moot. Agents introduce a similar dynamic: some models are more efficient than others in terms of the number of tokens they need to execute agentic workflows.
+What this means is that tokens are not a commodity. The defining characteristic of a commodity is that it is fungible: a gallon of oil is a gallon of oil; a ton of copper is a ton of copper; a bushel of wheat is a bushel of wheat. A token from one model, however, is not the same as a token from another model. What is fungible is what is constructed from tokens, which is to say intelligence. In other words, if both Kimi and Sol generated the right answer, then that answer is fungible; the difference in tokens generated to get to that right answer is a contributor to a difference in COGS.
+The COGS for intelligence is a function of a few different factors:
+Model footprint: The weights and runtime state determine how much expensive memory and how many accelerators are required to host each serving replica.
+Inference efficiency: Architectural choices (e.g. Mixture-of-Experts) reduce computation per generated token.
+Memory efficiency: Architectural choices can reduce KV cache requirements, allowing more concurrent requests and better GPU utilization.
+Serving efficiency: Batching, scheduling, prefix caching, and other inference optimizations maximize utilization and share work across requests.
+Token efficiency: The fewer tokens required to reach a correct answer, the lower the inference cost.
+The reason this matters is that we are rapidly approaching a state in which intelligence for many economically beneficial tasks is in fact a commodity. Anyone building a basic CRUD app , for example, can likely do so using models from multiple providers. And, in a commodity market, the route to profitability is not through charging higher prices — again, you can (or will soon be able to) make the exact same app using multiple models — but rather through having a superior cost structure.
+Understanding Commodity Markets
+It’s worth stepping through the mechanics here, because, as I noted a few months ago in Amazon’s Durability , the dynamics of commodity markets are not something people in tech are generally familiar with:
+In commodity markets, everyone charges the same price, because everyone is selling the same thing; that price is determined by supply and demand.
+The demand for a commodity is a function of price elasticity: the cheaper the commodity, the more demand there is for it, and vice-versa.
+The supply for a commodity is a function of the marginal cost of producing the commodity.
+The key thing to understand is that the marginal cost of producing the commodity differs by supplier. What this means in practice is that the supplier with the worst cost structure ends up selling the commodity at their marginal cost (if they can produce at all); the profits of everyone else depend on the extent to which their cost structure is better than the marginal supplier.
+As an example:
+Supplier A can produce 10 units of the commodity for $10 each
+Supplier B can produce 10 units of the commodity for $15 each
+Supplier C can produce 10 units of the commodity for $20 each
+Let’s assume the price elasticity is such that there is demand for 25 units of the commodity at $20. That means:
+Supplier A will sell 10 units of the commodity for $20, earning $10/unit
+Supplier B will sell 10 units of the commodity for $20, earning $5/unit
+Supplier C will sell 5 units of the commodity for $20, earning $0/unit
+This isn’t precisely right: the reason why Supplier C will bear the shortfall is because Suppliers A and B will be able to slightly undercut them in price, which will of course affect demand (which is elastic), but it makes the point. Supplier A has a great business, Supplier B has a good business, and Supplier C is going to go bankrupt.
+Bankruptcy risk is where fixed costs come back to the forefront: Supplier C has both fixed costs (like potentially R&D spend) and also may have taken on debt to finance the equipment necessary to produce the commodity. It can’t price its commodity with these costs in mind — remember, the market-clearing price approximates the marginal cost of the highest-cost unit needed to satisfy demand — but those costs can absolutely drive the supplier out of business. And, if that supplier goes out of business, then prices go up, until another supplier decides to enter (or the other suppliers expand).
+The Intelligence Market
+Let’s bring this back to models. Right now, none of the above analysis applies because demand exceeds supply for frontier models, and supply is limited by a lack of compute. This compute shortage doesn’t just mean that a compute supplier like Nvidia makes very large margins, but also that Nvidia’s customers, like SpaceXAI, can turn around and resell compute at high margins as well to a company like Anthropic. Anthropic, meanwhile, can pay the markup because they can sell tokens with a higher markup still.
+It’s not just excess demand that gives Anthropic great margins, however: Anthropic and OpenAI likely have among the lowest costs per unit of frontier-quality intelligence, thanks to model capability, serving scale, and token efficiency. They are serving models at a particular capability level for months before their competitors, and are simultaneously applying the best models to optimizing those costs.
+It’s also worth noting that the market is not yet treating intelligence like a commodity: demand is for Anthropic and OpenAI specifically, and much less for models that aren’t as good (thus SpaceXAI and Meta selling capacity to Anthropic); one way to think about the push for optimizing cost is that that is a function of defining jobs-to-be-done by intelligence level, such that intelligence buyers can create a market where intelligence is commoditized. In the long run, however, whoever is on the frontier is the best placed to dominate non-frontier markets as well, which are just the frontier minus n-months, i.e. months in which the frontier model makers have been optimizing their cost of serving.
+All of this is to say that I think the reaction to Kimi and Chinese models generally is pretty over-blown, at least from an economic perspective. Right now there is a price umbrella that is downstream of the lack of compute; I highly doubt that Chinese models are cheaper to serve on a marginal cost basis, they just seem cheaper because Anthropic and OpenAI are so supply constrained that they are charging far more than they would if there were sufficient supply to meet the demand for intelligence.
+Frontier Lab Paranoia
+Why, then, do the model makers in particular seem so panicked about Chinese models?
+First, I think the frontier labs are anchored in a world where training costs dominated their financial modeling. As long as training consumed more GPUs than inference, it was critical to maximize inference revenue to help fund the next training run, which meant charging very high prices for inference.
+Going forward, however, I expect the inference market to grow much faster than training costs (and that includes the assumption that training costs will continue to skyrocket), which means they really can make it up in volume. It wasn’t clear this would be the case as recently as eight months ago, but the agent paradigm unlock is so massive that frontier labs should have more confidence that they can not just survive but thrive with lower prices (once they have sufficient compute).
+Second, intelligence isn’t in fact a perfect commodity, in part because applied intelligence makes itself smarter. Specifically, whoever is running inference is also collecting data, and that data goes into making the next iteration of the model better. This is, on one hand, all the more reason for the frontier labs to lower prices and increase usage as more compute comes online; on the other hand, this is why companies like Microsoft are increasingly obsessed with helping companies run their own models. That is much more viable if Chinese models are a viable alternative.
+Third, the other way that frontier labs can not only differentiate from Chinese models but also from each other is by continuing to integrate up into the customer experience. It’s striking the extent to which Claude Code and Codex are proving to be quite sticky; whichever harness you start working with is likely to be the one you stick with, and that figures to be even more the case with non-technical users. And, in the long run, this imperative to move up the stack does mean that frontier models are absolutely a threat to software providers, including Microsoft. On the flipside, the extent to which software companies who currently own the customer experience have access to competitive models is the extent to which they may be able to resist the encroachment of the frontier labs.
+Finally, the ideological angle of Anthropic in particular is impossible to ignore. This is a company that believes only it can be entrusted with AI, and the existence of open weights alternatives strikes a fatal blow to that presumption.
+China’s Motivation
+Kimi isn’t the only new Chinese model; from Bloomberg :
+Alibaba Group Holding Ltd. shares rose as much as 5.4% on Monday after the company launched a preview version of its flagship Qwen3.8 Max model, describing it as second only to Anthropic PBC’s Fable 5. The Sunday release came only days after startup Moonshot AI unveiled a powerful new offering that’s roiled markets and triggered concern in the US about China closing the gap on global leaders like Anthropic and OpenAI. Qwen3.8 Max has 2.4 trillion parameters, joining Moonshot’s Kimi K3 in the heavyweight class. With 2.8 trillion parameters, K3 rivals top offerings and Alibaba is setting similarly high expectations.
+Developers can now access Qwen3.8 Max through Alibaba’s coding platforms, including Qoder. Alibaba plans to make the model open-weight soon, expanding access beyond the preview release. Interest in these made-in-China artificial intelligence systems and models is so high that Moonshot was forced to pause taking on new subscriptions late on Sunday to manage overwhelming demand.
+The fact that Qwen3.8 Max will also have open weights is notable. Alibaba stopped releasing weights for its leading edge models earlier this year, but appears to have reverted that change; I suspect that shift was related to last week’s Xi Jinping speech about AI that doubled down on the open weights approach:
+We should adhere to the principle of openness and win-win and boost innovation-driven development. As a new engine of world economic growth and an accelerator for the shift of growth drivers, AI is moving from the digital world into the physical world. We should seize this rare, historic opportunity to encourage open source, openness, collaboration and sharing. We should facilitate technological innovation, industrial development and scenario-based application of AI. We should make coordinated advances in the transformation and upgrade of traditional industries, the cultivation and growth of emerging industries and forward-looking planning for future industries, so that all sectors and businesses can benefit from AI.
+The strategy for China is obvious: commoditize your complements. Note that Xi explicitly ties openness to AI “moving from the digital world into the physical world”; the physical world is the world dominated by China, and the country’s lead in areas like robotics is going to massively benefit from widely available AI models.
+Along the same lines, China does not want the U.S. to gain an asymmetric advantage in AI; to the extent that China can weaken the U.S. frontier labs while strengthening any and all potential U.S. adversaries so much the better, and it can benefit from the innovation that will attach itself to an open ecosystem.
+The Distillation Question
+By the same token, don’t expect China to do anything about distillation attacks on the frontier labs. I think it is mistaken to attribute all of the success of Chinese labs to distillation, but it’s just as much of a mistake to pretend like distillation doesn’t give Chinese labs a big advantage. That advantage has really come to bear in the last year as post-training reinforcement learning has become increasingly crucial to model performance. Instead of having to fashion reinforcement learning environments from scratch, Chinese labs can simply use frontier labs models as teachers, allowing for rapid improvement at much lower costs (this is not the only reason why Chinese models are cheaper to develop, but it’s a big one).
+What is interesting is that one of the most important use cases for Chinese models in the West is itself distillation. Thinking Machines, for example, which just released an open-weight model, relies on Chinese models to solve the cold start problem for reinforcement learning. Dean Meyer and Konstantine Buhler wrote an excellent article on X explaining that distillation means that Western open weight models are fundamentally disadvantaged relative to China:
+Distillation does not explain China’s entire open-model lead. Chinese labs have world-class researchers, substantial compute, strong pre-trained models, software-hardware codesign, and rapidly improving post-training capabilities. But distillation compresses the costly final gap between a strong base and a near-frontier system. Even if distillation represents a smaller share of a Chinese model’s total capability, it represents a meaningful share of its advantage over American open models.
+New enforcement mechanisms will make large-scale distillation harder, slower, and more expensive for Chinese companies. However, enforcement will not eliminate distillation backed by state actors. Every Western frontier advance therefore creates another teacher for Chinese labs. Western builders must either reproduce those capabilities independently or wait to learn from Chinese models. This gap gives Chinese labs a recurring structural advantage over Western companies.
+This is a point that bears repeating: because U.S. open weight model makers must follow the frontier labs’ terms of service, they (1) are worse than Chinese alternatives and (2) end up distilling the distillation, just with a detour through Chinese labs. Wouldn’t it be better if western open weight model makers could go to the source?
+To that end, here’s an even more interesting question around distillation: why exactly is it bad? After all, what are large language models but the distillation of all of the knowledge on the open Internet, scraped by the frontier labs and distilled into the models that are themselves being distilled? Who is exactly being wronged here?
+In fact, this paradox is the solution. I believe that open weight models are good for innovation (and, per the above, I think that labs on the frontier will be fine), but it’s a problem to be dependent on China. The U.S. should pass a law that (1) makes explicit that collecting data for training models is fair use, and (2) bars terms of service that forbid distillation, for U.S. companies at a minimum. Stopping distillation — which is literally just querying the API — is nearly impossible; the U.S. should go the other way and lean into a new copyright policy that both indemnifies the labs and also guarantees that what they learned fuels further innovation for everyone else.
+The Reason to Be Afraid
+This entire Article has been an exercise in defusing overreaction to Kimi K3 specifically and Chinese open weight models generally; however, there is one reason to be concerned, and that is cybersecurity. Consider this story from The Stack :
+Hugging Face said its production infrastructure was breached by an “autonomous” AI agent system early last week. The platform’s security team were initially stymied in their incident response (IR) by unnamed US LLM frontier model guardrails “which cannot distinguish an incident responder from an attacker,” they said. So Hugging Face’s defenders turned instead to the open-source GLM 5.2 model from China’s Z.ai lab – running it on their own infrastructure to analyse the 17,000+ logs, or footprints, that the attackers left behind.
+That’s a striking public admission for the New York-headquartered Hugging Face, which lets users collaborate on models, datasets and applications, and which this summer hit the $100 million ARR mark. In an incident report, the company recommended that defenders “have a capable model you can run on your own infrastructure [our italics] vetted and ready before an incident, both to avoid guardrail lockout and to keep attacker data and credentials from leaving your environment.”
+It’s difficult to overstate how wrong-headed the Trump administration’s panicked response to Anthropic’s release of Fable was, particularly since it exacerbated Anthropic’s worst tendencies in terms of assuming only they can be trusted with powerful AI. In a world with only one AI, it might make sense to reserve the most powerful cybersecurity capabilities for the U.S. government and trusted allies; however, that’s not the world we live in.
+There are and will be models eminently capable of mounting cybersecurity attacks on existing infrastructure, and those models will be — already are — widely available. The best defense — the only viable defense, in fact — will be to make sure defenders have access to the best models as well. Right now defenders are effectively banned from using Fable or Sol for cybersecurity because of Trump administration directives; that means the best alternative is using models from a country which has been trying to weaken our cyber defenses for years. This is insane!
+The better course is clear: first, loosen Fable and Sol restrictions on cybersecurity, and second, ensure that U.S. open weight model makers are on an equal playing field with China. Yes, the frontier labs will kick and scream about this, but the Administration should realize that listening to their histrionics has led the U.S. to a position where U.S. companies are dependent on China for their defenses. Let the frontier labs win by being better; don’t let them define safety or security, or pull up the ladder of humanity’s collective knowledge. China is already hard enough to compete with; letting them carry the standard for openness and innovation is simply giving away our biggest advantage.
+Share
+Share on Facebook (Opens in new window)
+Facebook
+Share on X (Opens in new window)
+Share on LinkedIn (Opens in new window)
+LinkedIn
+Email a link to a friend (Opens in new window)
+Email
+← 2026.29: Mainframes and Main Characters
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 91
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":91,"text_length":23036,"paragraph_count":74,"sentence_count":145,"boilerplate_hits":2,"symbol_ratio":0.0001,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=high
+   中国开源模型 Kimi K3 在能力上逼近当前最先进水平，引发行业讨论。其 API 价格为每百万输入 token 3 美元、每百万输出 token 15 美元，低于 Sol 的 5 美元和 30 美元。但推理时代 token 并非同质化商品，Kimi 需更多推理 token 才能达到正确答案，实际智能成本取决于模型体积、推理效率、内存效率、服务效率和 token 效率等多重因素。
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Skip to content Who’s Afraid of Chinese Models?
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Monday, July 20, 2026 Listen to Podcast Listen to this post : Log in to listen There’s a story I tell about my first day in STRT-431 at Kellogg School of Management, the introductory class that every first-year MBA was required to take; I leafed through the readings and case studies and was dismayed that there weren’t any tech companies on the docket.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Me being me, I spoke to the professor after class wondering why, and was told that the goal of the course was not to necessarily learn about specific industries, but rather to uncover broadly applicable universal principles that could be applied to any company in any industry.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   I did not, as I usually tell the story, find this very satisfactory: to me the nature of tech, particularly the fact that software and distribution had zero marginal costs (and zero transaction costs), was something fundamentally different; putting in zeroes in formulas tends to wreak havoc!
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   I soon realized, however, that that was my opportunity.
+
+## business_elements
+
+- companies: Hacker News 热门（buzzing.cc 中文翻译）, OpenAI, Anthropic, Microsoft, Meta, Amazon, Nvidia
+- products: ChatGPT, Agents, agent, Claude, Codex
+- people: 暂无公开信息
+- industries: 金融 / 保险, 制造 / 工业, 开发者工具
+- roles: CIO / IT 负责人, 开发者 / 工程团队
+- workflows: 合同审阅 / 法律研究, 计费 / 预算管理
+- business_actions: 发布 / 推出
+- affected_departments: IT / 安全, 财务 / 预算
+- numbers: 3, 3 美元, 15 美元, 5 美元, 30 美元, 20, 2026, 431
+- quotes: token factories / moving from the digital world into the physical world
+
+## evidence_seed
+
+- company_actions: Skip to content Who’s Afraid of Chinese Models? / Monday, July 20, 2026 Listen to Podcast Listen to this post : Log in to listen There’s a story I tell about my first day in STRT-431 at Kellogg School of Management, the introductory class that every first-year MBA was required to take; I leafed through the readings and case studies and was dismayed that there weren’t any tech companies on the docket. / Me being me, I spoke to the professor after class wondering why, and was told that the goal of the course was not to necessarily learn about specific industries, but rather to uncover broadly applicable universal principles that could be applied to any company in any industry.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_vertical_solution
+- importance_score: 5
+- importance_reason: vertical industry solution; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 4
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: true
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+- emerging_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: high
+- community_name: Hacker News 热门（buzzing.cc 中文翻译）
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: user_feedback_signal
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"谁怕中国模型？--Kimi K3 逼近 SOTA，开源模型成本优势引热议","discovery_summary":"中国开源模型 Kimi K3 在能力上逼近当前最先进水平，引发行业讨论。其 API 价格为每百万输入 token 3 美元、每百万输出 token 15 美元，低于 Sol 的 5 美元和 30 美元。但推理时代 token 并非同质化商品，Kimi 需更多推理 token 才能达到正确答案，实际智能成本取决于模型体积、推理效率、内存效率、服务效率和 token 效率等多重因素。","source_name":"Hacker News 热门（buzzing.cc 中文翻译）","origin_url":"https://stratechery.com/2026/whos-afraid-of-chinese-models","discovered_at":"2026-07-21T01:16:25.577Z","rank_on_page":43,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+中国开源模型 Kimi K3 在能力上逼近当前最先进水平，引发行业讨论。其 API 价格为每百万输入 token 3 美元、每百万输出 token 15 美元，低于 Sol 的 5 美元和 30 美元。但推理时代 token 并非同质化商品，Kimi 需更多推理 token 才能达到正确答案，实际智能成本取决于模型体积、推理效率、内存效率、服务效率和 token 效率等多重因素。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

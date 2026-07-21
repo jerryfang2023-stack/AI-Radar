@@ -1,0 +1,386 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-022
+title: "Octomind Cloud Is Live: Real Machines for Your Agent, Every Model Through One Key | Octomind"
+title_zh: "Octomind Cloud 正式上线：为您的智能体提供真实机器，一个密钥调用所有模型"
+title_translation_status: translated
+title_translation_method: deepseek_title_translation
+title_translation_model: deepseek-v4-flash
+original_url: "https://octomind.run/blog/octomind-cloud-launch"
+canonical_url: "https://octomind.run/blog/octomind-cloud-launch"
+source_name: "keyword search / Anysearch"
+source_type: operators
+source_level: C
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_startups"
+search_path: "official_original"
+search_path_label: "官方原始路径"
+author: ""
+published_at: "2026-07-20T00:00:00.000Z"
+collected_at: 2026-07-21T01:25:42.933Z
+language: mixed
+full_text_hash: 65650fec83a15552
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-21/r-022-octomind-cloud-is-live-real-machines-for-your-agent-every-model-throug.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-21/r-022-octomind-cloud-is-live-real-machines-for-your-agent-every-model-throug.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 85
+extractor_diagnostics: {"readability_score":85,"text_length":19191,"paragraph_count":88,"sentence_count":136,"boilerplate_hits":4,"symbol_ratio":0.0004,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+has_full_text: true
+content_length: 19191
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"65650fec83a15552","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 138ac04581b623cb
+content_hash: f142ad9f246bf0f0
+semantic_hash: 3ad075af7d22c5e2
+duplicate_of: ""
+first_seen_at: "2026-07-20T00:00:00.000Z"
+last_seen_at: 2026-07-21T01:25:42.933Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool","emerging_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":4}
+business_elements: {"companies":["keyword search","Anysearch","OpenAI","Anthropic"],"products":["Agent","agent","Agents","Claude","GPT-5","Gemini","gpt-5","agents","AGENTS"],"people":[],"industries":["医疗","开发者工具"],"roles":["CIO / IT 负责人","开发者 / 工程团队"],"workflows":["计费 / 预算管理"],"business_actions":["发布 / 推出","合作 / 联盟","定价 / 计费变化"],"affected_departments":["IT / 安全","财务 / 预算"],"numbers":["$5 m","$80","1","4","0.38","0","8","7"],"quotes":["add $5 minimum","Authorization: Bearer $OCTOMIND_KEY ","deepseek-v4-flash","messages","at max capacity"]}
+evidence_seed: {"company_actions":["Today Octomind Cloud goes live in beta.","Before I tell you what it is, let me tell you the three problems that made us build it — because odds are you have at least two of them right now.","Your agent lives and dies with your laptop."],"case_details":["Octomind Cloud Is Live: Real Machines for Your Agent, Every Model Through One Key | Octomind Today Octomind Cloud goes live in beta. Before I tell you what it is, let me tell you the three problems that made us build it — because odds are you have at least two of them right now. Your agent lives a..... / query=AI implementation startup design partner pilot customer / intent=find_startups / path=official_original"],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: []
+key_excerpts: [{"type":"case_detail","text":"Octomind Cloud Is Live: Real Machines for Your Agent, Every Model Through One Key | Octomind Today Octomind Cloud goes live in beta. Before I tell you what it is, let me tell you the three problems that made us build it — because odds are you have at least two of them right now. Your agent lives a..... / query=AI implementation startup design partner pilot customer / intent=find_startups / path=official_original","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Today Octomind Cloud goes live in beta.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Before I tell you what it is, let me tell you the three problems that made us build it — because odds are you have at least two of them right now.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Your agent lives and dies with your laptop.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"You kick off a long refactor, the agent is forty minutes into it, and then you need to close the lid, catch a train, or your Wi-Fi hiccups.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The session is gone, the context is gone, and the tokens you paid for produced work you'll never see.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-21T01:25:42.933Z
+theme: early-direction-signal
+keyword_group: early-direction-signal
+copyright_note: local research archive only
+---
+
+# Octomind Cloud Is Live: Real Machines for Your Agent, Every Model Through One Key | Octomind
+
+## clean_text
+
+Today Octomind Cloud goes live in beta. Before I tell you what it is, let me tell you the three problems that made us build it — because odds are you have at least two of them right now.
+Your agent lives and dies with your laptop. You kick off a long refactor, the agent is forty minutes into it, and then you need to close the lid, catch a train, or your Wi-Fi hiccups. The session is gone, the context is gone, and the tokens you paid for produced work you'll never see. Agents are long-running processes; laptops are not long-running machines.
+Your API keys live in five dashboards. OpenRouter for the cheap models, Anthropic for the good ones, OpenAI because some tool demands it, Voyage for embeddings, and a .env file that's one git add -A away from being public. Every provider has its own billing page, its own rate limits, its own "add $5 minimum" — and no single view of what your agent actually spends.
+Your AI bill is a mood, not a number. Seat-priced tools give you rate-limit roulette — an opaque allowance that resets on someone else's schedule. Usage-priced tools give you the opposite fear: nothing stops a runaway agent from burning $80 overnight. Neither shows you a per-token price or lets you watch the meter.
+Octomind Cloud is our answer to all three. It's two things that share one subscription, one wallet, and one key: the hub (models) and machines (compute). This post is the map of everything that's live today — each section deserves its own deep dive, and those are coming. But this one piece should tell you exactly what you're getting, economics included, because pricing you can't reason about is a bug, not a business model.
+The hub: log in once, every model works
+The hub is an OpenAI-compatible gateway in front of a curated model roster — one key, every model works, in the panel, in the CLI, in any tool that speaks the OpenAI API:
+bash
+curl https:/ /hub.octomind.run/v 1 /chat/completions \
+-H "Authorization: Bearer $OCTOMIND_KEY " \
+-d '{"model": "deepseek-v4-flash", "messages": [{"role": "user", "content": "hi"}]}'
+If you're using the CLI you don't have to handle that key at all. As of 0.38.0 , octomind login shows you a short code, opens the panel where you're already signed in, and writes the key to disk itself:
+text
+$ octomind login
+╭ login · octomind account
+│ code TX8T-UC7U
+│ url https://octomind.run/app/login/cli
+│ Confirm the code in your browser to finish signing in.
+│ waiting…
+It's the standard device flow — the same one gh auth login uses — so no password is ever typed into a terminal, each machine gets its own revocable key, and the /usage command tells you what you've spent against your caps without opening the panel.
+No provider accounts. No key sprawl. And the part I care most about: published prices, and metering that matches the table exactly.
+The roster is deliberately curated, not a 400-model dropdown — twenty-one models that earn their place. The open shelf (DeepSeek V4 Flash and Pro, Qwen3.7 Plus and Max, Kimi 2.6 and 2.7 Code, MiniMax M3, GLM-5.2, Gemma 4) is included in every paid plan and draws from your plan caps. The premium shelf bills per token from prepaid credits, and it's the real thing: Claude Fable 5, Opus 4.8 and Sonnet 5; the whole GPT-5.6 family (Sol, Terra, Luna) with GPT-5.5, 5.5 Pro and the fast little 5.4 mini and nano; Gemini 3.5 Flash and 3.1 Pro. You see every price before you pick. And there's a free model with a daily allowance that keeps working even when everything else is exhausted, because an agent that goes completely dark the moment you hit a cap is worse than a slow one.
+Fair use is per account , not per key: Free runs one model call at a time, Pro five in parallel, Max ten, Team twenty pooled. Mint a thousand keys and the budget doesn't move — and past it, requests queue briefly instead of failing. It's the anti-abuse rule that doubles as a noisy-neighbor guarantee: nobody's runaway script makes your completion wait.
+Under the hood this is octohub — open source, Rust, one static binary. The hosted hub is the same code with the keys problem solved. Want to run it yourself with your own provider keys? That's not a loophole — it's the point of publishing it.
+Machines: a dev box that exists whether or not your laptop does
+A machine is a persistent Linux container in our cloud with the whole agent toolchain baked in — your files, your repos, your indexes, persisted on its own disk. It's got: octomind (the agent), octocode (code indexing + semantic search), octobrain (memory), a web terminal, git, Docker (more on that in a minute), and — on the default image — Node, bun, a headless browser, ffmpeg and image tools. You create one in the panel, it's ready in under a minute, and it's yours.
+The billing model is the part I want to defend in detail, because it's where most clouds get either opaque or hostile. A machine is always in one of three states, and the state decides what you pay:
+State When Small (1 vCPU / 2 GB)
+Active Executing — tools, code, indexing, embeddings $0.05/hr
+Idle-warm Session alive but waiting (including LLM-wait) $0.01/hr
+Suspended Nothing running — auto-suspends when idle ~$0 (disk only)
+Per-second metering, automatic transitions, you configure nothing. The consequence that matters: while your agent waits on the model — which is most of an agent's wall-clock life — you pay a fifth of the active rate. A five-minute session costs about half a cent, plus $0.001 per session start. 10 GB of working disk comes free with every machine, and sizes scale linearly — Medium (2 vCPU/4 GB) is $0.10/hr, Large (4 vCPU/8 GB) is $0.20/hr. Twice the machine, exactly twice the price; upgrading is never punished. Disk scales with the box the same way — reserve up to 50 GB on a Small, 80 on a Medium, 160 on a Large at $0.10/GB-month, and if you genuinely need more, stretch to double the bundle with the overflow at 2× instead of being told no.
+Every machine runs under the sysbox runtime in its own user namespace — root inside the machine is nobody on the host. The agent runs as a non-root user on a disk that physically cannot grow past its quota. Secrets go in as write-only encrypted variables: the panel can never show a value back, only a masked hint.
+Yes, Docker runs inside — every machine, every plan
+Every machine comes up with a real Docker Engine inside, free plan included — nothing to tick, nothing to configure: docker build , compose stacks, testcontainers, all of it, with no --privileged anywhere. The sysbox runtime gives each machine a properly isolated environment where an ordinary dockerd can live without ever seeing the host.
+The part we sweated hardest is the accounting, because nested Docker is where clouds usually leak: every byte the inner engine writes — images, layers, volumes — lands on the machine's own capped working disk. df inside the machine, the disk bar in the panel, and the bill all report the same number. Fill the disk and a pull fails with an honest disk-full error, not a surprise invoice; free some space and carry on. Your images and volumes persist across suspend like everything else on the machine.
+Sessions that survive you
+This is my favorite thing we built, and it's invisible when it works.
+Start a turn, then close the tab. Navigate away. Lose your connection in a tunnel. The turn keeps running on the machine , and the relay keeps recording every step — tool calls, output, cost — until it finishes. Open the session from your phone twenty minutes later and the full transcript is there, including everything that happened while nobody was watching. We tested this by killing browsers mid-turn until we couldn't lose a byte.
+Nothing was lost.
+That screenshot is a real session from while I wrote this post: the agent scaffolded a Bun server, started it, curled /health , and cleaned up after itself. Total cost in the corner: $0.008 — and I navigated away twice in the middle to take the other screenshots in this article. Nothing was lost.
+The same session is reachable from the panel, from a plain web terminal, through the developer API ( api.octomind.run/api/v1 — create sessions, send messages, tail output over SSE, all scriptable from CI), and through Telegram: one tap connects our bot (or bring your own, if you'd rather own the token), and your machine answers you in chat — real formatting, tables included, not a wall of raw markdown. The agent stops being a browser tab and becomes a thing you own that happens to have several doors. The developer API and the Telegram workflow each deserve a full post of their own — they're coming; this is the overview.
+Sessions also remember how they think. Every session starts on your default model and role, and both are switchable per session: pick from the model dropdown in the session header, or type /model gpt-5.6-luna in the chat — the same command works from Telegram and through the API, and the choice persists with the session. Take a premium model for the gnarly refactor, drop back to a cheap one for the cleanup; /role , /effort , /info , /done , /plan , /schedule and /agents ride the same rails from every surface. One detail we're proud of: switching to a model your plan can't call is rejected at switch time with a clear message — not discovered as a cryptic 403 three messages later.
+And the agent on the machine is the same octomind you'd run locally — same config format, same sub-agent delegation, same tools. The panel's Config page holds your octomind / octocode / octobrain TOML and bakes it into every machine at creation; model routing and API keys are injected by the cloud, so a config that says octohub:deepseek-v4-flash works everywhere without a single key in a dotfile.
+The machine tells the agent where it is
+There's a small file with an outsized effect on every machine: AGENTS.md , following the AGENTS.md standard , loaded into every session as opening context. It's how the agent knows the things no model can guess: that /home/octo survives restarts and /tmp doesn't, that the machine auto-suspends and a schedule beats a process left sleeping in the foreground, that you might be reading its answer on a phone with no terminal in sight — so deliverables belong in files it names, not in scrollback you'll never see.
+New machines come seeded with our baseline, and it's yours to change at two levels. Edit your account's baseline under Configs → instructions and every machine you create afterwards starts from your version. Or open a machine's Instructions tab and edit the live file — the machine owns its copy from first boot, and your edits survive every restart (a shell works too; it's a real file in the home directory). And because it's the standard rather than something we invented, a repo that carries its own AGENTS.md just works: the agent follows the repo's instructions while working inside it, and the machine's everywhere else.
+Embeddings, priced honestly
+Embeddings are the highest-volume model call in the whole system — octocode embeds every chunk of every repo it indexes, and re-embeds on change. Which makes them exactly the place where a cloud can quietly do something user-hostile: route everything through a paid API and margin the flood, or double-bill you for compute and tokens on the same operation.
+We shipped two lanes instead, and the picker states the deal in plain text:
+Local (the default): small open embedding models (fastembed) run on your machine's own CPU. You pay compute — the same $0.05/hr the machine already costs while active — and not a token cent. Indexing a mid-size repo is minutes of CPU, so it's pennies, and the index lands in your account's shared storage where every machine you own reuses it . Index once, search everywhere.
+Hub (optional, paid plans): the current embedding generations — the Voyage 4 series, Jina's v5 line, OpenAI's text-embedding-3 — through the same hub key, from $0.02 per million tokens at published list prices, the same table the meter bills from. You'd pick this for quality (voyage-code-3 is genuinely better at code retrieval than anything that fits in 2 GB of RAM) or to keep a Small machine's CPU free while indexing something huge.
+Free plan gets the local lane only — hub embeddings proxy paid provider APIs, so they're a paid-plan entitlement, enforced at the key level, not hidden in fine print. Both lanes bill into the same wallet under the same caps as everything else. No new billing concept, no separate embeddings invoice.
+One wallet, caps you can actually watch
+Everything above — tokens, embeddings, vCPU-seconds, RAM, disk, storage, network — converts to dollars at list price and lands in one wallet with one set of rolling caps you can watch move:
+The plans, plainly:
+Free — $0. $0.15/day of usage on a capable model, the hub + CLI immediately, and 1 Tiny machine (0.5 vCPU / 1 GB, a fixed 5 GB disk) once you have an invite, 2 GB shared storage.
+The cap is hard — that's what keeps the free tier free. Free machines auto-suspend when idle and get reclaimed after about a week of inactivity — always after a heads-up email, and never while anything is running; touch it and the clock resets, or upgrade for a machine that stays put.
+Pro — $20/mo ($10 your first month). Caps of $20/4h · $60/week · $120/month across everything , 5 machines any size, 10 GB shared storage.
+Max — $100/mo. Caps ×5, 20 machines any size, 30 GB shared storage.
+Team — $500/mo. Pooled caps, unlimited members, shared machines, per-member limits so one intern can't drain the pool.
+Two design decisions worth calling out. First, caps are total-spend caps, not token caps — compute counts too, so the number in the sidebar is your actual exposure, not one meter of several. Second, credits are the overflow : if you hit a Pro cap mid-task with prepaid credits in the wallet, the session keeps flowing on credits instead of dying at the worst possible moment. The cap protects your budget; it doesn't punish your momentum. A hard stop happens only at zero balance (and on the free tier, by design).
+Every price in this post is on the pricing page and in the panel's Models table, and the meter bills from the same numbers. If you ever catch the meter and the table disagreeing, that's a bug and I want the report.
+The whole stack is open source
+This launch is a hosted product built from pieces you can already run:
+octomind — the agent itself, the same binary in every machine
+octocode — code indexing + semantic search
+octobrain — persistent memory
+octohub — the model gateway behind the hub
+The cloud is the convenience layer: the machines, the wallet, the one key, the sessions that outlive your laptop. If you'd rather self-host every piece with your own provider keys, the doors are all open and the docs assume you might. We think enough people will prefer the version where somebody else does the plumbing.
+What beta means, and what's next
+Beta means cloud machines are invite-only while we scale the fleet. We're bootstrapped — no investors — so we buy hardware as people subscribe. We'd rather hand out machines at the rate we can actually serve them than watch a signup rush turn into "at max capacity" for everyone. Three ways in: subscribe and you're in immediately , redeem an invite from someone already here, or use the free tier for a week and earn invites of your own.
+The hub and the CLI are open to everyone right now, no invite needed. That's the part that costs us almost nothing to scale, and it's the whole product minus the machine: log in, take a key, and run the open-source agent on your own laptop against every model in the roster.
+The hub, your keys, billing and caps are fully live and not going anywhere. Nothing you build on a paid machine is throwaway: disks, shared storage and sessions persist through the beta. (On the free tier, a machine and its shared storage are reclaimed after about a week of inactivity — always after a warning email, never while something's running — so a paid plan is the one that keeps everything until you delete it yourself.)
+This post is the wide-angle shot. Over the coming weeks we'll go deep on each piece separately:
+The developer API — driving machines and sessions from CI and scripts, with SSE streaming
+Docker inside machines — how sysbox and a capped disk let you run compose with no --privileged and no ghost storage
+Custom images — bring your own Dockerfile on top of our base, verified and billed transparently
+Teams in practice — pooled caps, per-member limits, shared machines without shared footguns
+The embeddings economics — why two lanes, and what indexing a monorepo actually costs
+Telegram as an agent surface — a machine in your pocket, honestly useful or gimmick?
+Self-hosting octohub — the same gateway with your own provider keys
+If one of those is the thing blocking you today, tell us and we'll bump it up the queue.
+Try it
+Go to octomind.run/app — login is an email code, no card, no signup step. Or start from the terminal and never touch the panel: install the open-source CLI , run octomind login , confirm the code in your browser, and you're running the same agent locally against the same models, today.
+For a cloud machine , you need an invite while we scale — subscribe and it unlocks immediately (Pro is $10 for the first month), or redeem a code if someone passed you one. Use the free tier properly for a week and you'll earn invites to hand out yourself. From "New machine" to a working agent with a browser and a terminal is about a minute.
+We've been running our own development on it for weeks — this article's screenshots are my actual account, spending real cents. That's the bar we wanted before calling it a launch: not a demo, a place where your agent works while you don't.
+Related Articles
+Octomind 0.38.0: One Command to Sign In, and Two Features We Deleted
+Octomind 0.38.0 adds `octomind login` — an RFC 8628 device flow that signs your terminal in to an Octomind account without ever typing a password there — plus a `/usage` command that shows account spend and quotas in the CLI, WebSoc
+
+## full_text
+
+Today Octomind Cloud goes live in beta. Before I tell you what it is, let me tell you the three problems that made us build it — because odds are you have at least two of them right now.
+Your agent lives and dies with your laptop. You kick off a long refactor, the agent is forty minutes into it, and then you need to close the lid, catch a train, or your Wi-Fi hiccups. The session is gone, the context is gone, and the tokens you paid for produced work you'll never see. Agents are long-running processes; laptops are not long-running machines.
+Your API keys live in five dashboards. OpenRouter for the cheap models, Anthropic for the good ones, OpenAI because some tool demands it, Voyage for embeddings, and a .env file that's one git add -A away from being public. Every provider has its own billing page, its own rate limits, its own "add $5 minimum" — and no single view of what your agent actually spends.
+Your AI bill is a mood, not a number. Seat-priced tools give you rate-limit roulette — an opaque allowance that resets on someone else's schedule. Usage-priced tools give you the opposite fear: nothing stops a runaway agent from burning $80 overnight. Neither shows you a per-token price or lets you watch the meter.
+Octomind Cloud is our answer to all three. It's two things that share one subscription, one wallet, and one key: the hub (models) and machines (compute). This post is the map of everything that's live today — each section deserves its own deep dive, and those are coming. But this one piece should tell you exactly what you're getting, economics included, because pricing you can't reason about is a bug, not a business model.
+The hub: log in once, every model works
+The hub is an OpenAI-compatible gateway in front of a curated model roster — one key, every model works, in the panel, in the CLI, in any tool that speaks the OpenAI API:
+bash
+curl https:/ /hub.octomind.run/v 1 /chat/completions \
+-H "Authorization: Bearer $OCTOMIND_KEY " \
+-d '{"model": "deepseek-v4-flash", "messages": [{"role": "user", "content": "hi"}]}'
+If you're using the CLI you don't have to handle that key at all. As of 0.38.0 , octomind login shows you a short code, opens the panel where you're already signed in, and writes the key to disk itself:
+text
+$ octomind login
+╭ login · octomind account
+│ code TX8T-UC7U
+│ url https://octomind.run/app/login/cli
+│ Confirm the code in your browser to finish signing in.
+│ waiting…
+It's the standard device flow — the same one gh auth login uses — so no password is ever typed into a terminal, each machine gets its own revocable key, and the /usage command tells you what you've spent against your caps without opening the panel.
+No provider accounts. No key sprawl. And the part I care most about: published prices, and metering that matches the table exactly.
+The roster is deliberately curated, not a 400-model dropdown — twenty-one models that earn their place. The open shelf (DeepSeek V4 Flash and Pro, Qwen3.7 Plus and Max, Kimi 2.6 and 2.7 Code, MiniMax M3, GLM-5.2, Gemma 4) is included in every paid plan and draws from your plan caps. The premium shelf bills per token from prepaid credits, and it's the real thing: Claude Fable 5, Opus 4.8 and Sonnet 5; the whole GPT-5.6 family (Sol, Terra, Luna) with GPT-5.5, 5.5 Pro and the fast little 5.4 mini and nano; Gemini 3.5 Flash and 3.1 Pro. You see every price before you pick. And there's a free model with a daily allowance that keeps working even when everything else is exhausted, because an agent that goes completely dark the moment you hit a cap is worse than a slow one.
+Fair use is per account , not per key: Free runs one model call at a time, Pro five in parallel, Max ten, Team twenty pooled. Mint a thousand keys and the budget doesn't move — and past it, requests queue briefly instead of failing. It's the anti-abuse rule that doubles as a noisy-neighbor guarantee: nobody's runaway script makes your completion wait.
+Under the hood this is octohub — open source, Rust, one static binary. The hosted hub is the same code with the keys problem solved. Want to run it yourself with your own provider keys? That's not a loophole — it's the point of publishing it.
+Machines: a dev box that exists whether or not your laptop does
+A machine is a persistent Linux container in our cloud with the whole agent toolchain baked in — your files, your repos, your indexes, persisted on its own disk. It's got: octomind (the agent), octocode (code indexing + semantic search), octobrain (memory), a web terminal, git, Docker (more on that in a minute), and — on the default image — Node, bun, a headless browser, ffmpeg and image tools. You create one in the panel, it's ready in under a minute, and it's yours.
+The billing model is the part I want to defend in detail, because it's where most clouds get either opaque or hostile. A machine is always in one of three states, and the state decides what you pay:
+State When Small (1 vCPU / 2 GB)
+Active Executing — tools, code, indexing, embeddings $0.05/hr
+Idle-warm Session alive but waiting (including LLM-wait) $0.01/hr
+Suspended Nothing running — auto-suspends when idle ~$0 (disk only)
+Per-second metering, automatic transitions, you configure nothing. The consequence that matters: while your agent waits on the model — which is most of an agent's wall-clock life — you pay a fifth of the active rate. A five-minute session costs about half a cent, plus $0.001 per session start. 10 GB of working disk comes free with every machine, and sizes scale linearly — Medium (2 vCPU/4 GB) is $0.10/hr, Large (4 vCPU/8 GB) is $0.20/hr. Twice the machine, exactly twice the price; upgrading is never punished. Disk scales with the box the same way — reserve up to 50 GB on a Small, 80 on a Medium, 160 on a Large at $0.10/GB-month, and if you genuinely need more, stretch to double the bundle with the overflow at 2× instead of being told no.
+Every machine runs under the sysbox runtime in its own user namespace — root inside the machine is nobody on the host. The agent runs as a non-root user on a disk that physically cannot grow past its quota. Secrets go in as write-only encrypted variables: the panel can never show a value back, only a masked hint.
+Yes, Docker runs inside — every machine, every plan
+Every machine comes up with a real Docker Engine inside, free plan included — nothing to tick, nothing to configure: docker build , compose stacks, testcontainers, all of it, with no --privileged anywhere. The sysbox runtime gives each machine a properly isolated environment where an ordinary dockerd can live without ever seeing the host.
+The part we sweated hardest is the accounting, because nested Docker is where clouds usually leak: every byte the inner engine writes — images, layers, volumes — lands on the machine's own capped working disk. df inside the machine, the disk bar in the panel, and the bill all report the same number. Fill the disk and a pull fails with an honest disk-full error, not a surprise invoice; free some space and carry on. Your images and volumes persist across suspend like everything else on the machine.
+Sessions that survive you
+This is my favorite thing we built, and it's invisible when it works.
+Start a turn, then close the tab. Navigate away. Lose your connection in a tunnel. The turn keeps running on the machine , and the relay keeps recording every step — tool calls, output, cost — until it finishes. Open the session from your phone twenty minutes later and the full transcript is there, including everything that happened while nobody was watching. We tested this by killing browsers mid-turn until we couldn't lose a byte.
+Nothing was lost.
+That screenshot is a real session from while I wrote this post: the agent scaffolded a Bun server, started it, curled /health , and cleaned up after itself. Total cost in the corner: $0.008 — and I navigated away twice in the middle to take the other screenshots in this article. Nothing was lost.
+The same session is reachable from the panel, from a plain web terminal, through the developer API ( api.octomind.run/api/v1 — create sessions, send messages, tail output over SSE, all scriptable from CI), and through Telegram: one tap connects our bot (or bring your own, if you'd rather own the token), and your machine answers you in chat — real formatting, tables included, not a wall of raw markdown. The agent stops being a browser tab and becomes a thing you own that happens to have several doors. The developer API and the Telegram workflow each deserve a full post of their own — they're coming; this is the overview.
+Sessions also remember how they think. Every session starts on your default model and role, and both are switchable per session: pick from the model dropdown in the session header, or type /model gpt-5.6-luna in the chat — the same command works from Telegram and through the API, and the choice persists with the session. Take a premium model for the gnarly refactor, drop back to a cheap one for the cleanup; /role , /effort , /info , /done , /plan , /schedule and /agents ride the same rails from every surface. One detail we're proud of: switching to a model your plan can't call is rejected at switch time with a clear message — not discovered as a cryptic 403 three messages later.
+And the agent on the machine is the same octomind you'd run locally — same config format, same sub-agent delegation, same tools. The panel's Config page holds your octomind / octocode / octobrain TOML and bakes it into every machine at creation; model routing and API keys are injected by the cloud, so a config that says octohub:deepseek-v4-flash works everywhere without a single key in a dotfile.
+The machine tells the agent where it is
+There's a small file with an outsized effect on every machine: AGENTS.md , following the AGENTS.md standard , loaded into every session as opening context. It's how the agent knows the things no model can guess: that /home/octo survives restarts and /tmp doesn't, that the machine auto-suspends and a schedule beats a process left sleeping in the foreground, that you might be reading its answer on a phone with no terminal in sight — so deliverables belong in files it names, not in scrollback you'll never see.
+New machines come seeded with our baseline, and it's yours to change at two levels. Edit your account's baseline under Configs → instructions and every machine you create afterwards starts from your version. Or open a machine's Instructions tab and edit the live file — the machine owns its copy from first boot, and your edits survive every restart (a shell works too; it's a real file in the home directory). And because it's the standard rather than something we invented, a repo that carries its own AGENTS.md just works: the agent follows the repo's instructions while working inside it, and the machine's everywhere else.
+Embeddings, priced honestly
+Embeddings are the highest-volume model call in the whole system — octocode embeds every chunk of every repo it indexes, and re-embeds on change. Which makes them exactly the place where a cloud can quietly do something user-hostile: route everything through a paid API and margin the flood, or double-bill you for compute and tokens on the same operation.
+We shipped two lanes instead, and the picker states the deal in plain text:
+Local (the default): small open embedding models (fastembed) run on your machine's own CPU. You pay compute — the same $0.05/hr the machine already costs while active — and not a token cent. Indexing a mid-size repo is minutes of CPU, so it's pennies, and the index lands in your account's shared storage where every machine you own reuses it . Index once, search everywhere.
+Hub (optional, paid plans): the current embedding generations — the Voyage 4 series, Jina's v5 line, OpenAI's text-embedding-3 — through the same hub key, from $0.02 per million tokens at published list prices, the same table the meter bills from. You'd pick this for quality (voyage-code-3 is genuinely better at code retrieval than anything that fits in 2 GB of RAM) or to keep a Small machine's CPU free while indexing something huge.
+Free plan gets the local lane only — hub embeddings proxy paid provider APIs, so they're a paid-plan entitlement, enforced at the key level, not hidden in fine print. Both lanes bill into the same wallet under the same caps as everything else. No new billing concept, no separate embeddings invoice.
+One wallet, caps you can actually watch
+Everything above — tokens, embeddings, vCPU-seconds, RAM, disk, storage, network — converts to dollars at list price and lands in one wallet with one set of rolling caps you can watch move:
+The plans, plainly:
+Free — $0. $0.15/day of usage on a capable model, the hub + CLI immediately, and 1 Tiny machine (0.5 vCPU / 1 GB, a fixed 5 GB disk) once you have an invite, 2 GB shared storage.
+The cap is hard — that's what keeps the free tier free. Free machines auto-suspend when idle and get reclaimed after about a week of inactivity — always after a heads-up email, and never while anything is running; touch it and the clock resets, or upgrade for a machine that stays put.
+Pro — $20/mo ($10 your first month). Caps of $20/4h · $60/week · $120/month across everything , 5 machines any size, 10 GB shared storage.
+Max — $100/mo. Caps ×5, 20 machines any size, 30 GB shared storage.
+Team — $500/mo. Pooled caps, unlimited members, shared machines, per-member limits so one intern can't drain the pool.
+Two design decisions worth calling out. First, caps are total-spend caps, not token caps — compute counts too, so the number in the sidebar is your actual exposure, not one meter of several. Second, credits are the overflow : if you hit a Pro cap mid-task with prepaid credits in the wallet, the session keeps flowing on credits instead of dying at the worst possible moment. The cap protects your budget; it doesn't punish your momentum. A hard stop happens only at zero balance (and on the free tier, by design).
+Every price in this post is on the pricing page and in the panel's Models table, and the meter bills from the same numbers. If you ever catch the meter and the table disagreeing, that's a bug and I want the report.
+The whole stack is open source
+This launch is a hosted product built from pieces you can already run:
+octomind — the agent itself, the same binary in every machine
+octocode — code indexing + semantic search
+octobrain — persistent memory
+octohub — the model gateway behind the hub
+The cloud is the convenience layer: the machines, the wallet, the one key, the sessions that outlive your laptop. If you'd rather self-host every piece with your own provider keys, the doors are all open and the docs assume you might. We think enough people will prefer the version where somebody else does the plumbing.
+What beta means, and what's next
+Beta means cloud machines are invite-only while we scale the fleet. We're bootstrapped — no investors — so we buy hardware as people subscribe. We'd rather hand out machines at the rate we can actually serve them than watch a signup rush turn into "at max capacity" for everyone. Three ways in: subscribe and you're in immediately , redeem an invite from someone already here, or use the free tier for a week and earn invites of your own.
+The hub and the CLI are open to everyone right now, no invite needed. That's the part that costs us almost nothing to scale, and it's the whole product minus the machine: log in, take a key, and run the open-source agent on your own laptop against every model in the roster.
+The hub, your keys, billing and caps are fully live and not going anywhere. Nothing you build on a paid machine is throwaway: disks, shared storage and sessions persist through the beta. (On the free tier, a machine and its shared storage are reclaimed after about a week of inactivity — always after a warning email, never while something's running — so a paid plan is the one that keeps everything until you delete it yourself.)
+This post is the wide-angle shot. Over the coming weeks we'll go deep on each piece separately:
+The developer API — driving machines and sessions from CI and scripts, with SSE streaming
+Docker inside machines — how sysbox and a capped disk let you run compose with no --privileged and no ghost storage
+Custom images — bring your own Dockerfile on top of our base, verified and billed transparently
+Teams in practice — pooled caps, per-member limits, shared machines without shared footguns
+The embeddings economics — why two lanes, and what indexing a monorepo actually costs
+Telegram as an agent surface — a machine in your pocket, honestly useful or gimmick?
+Self-hosting octohub — the same gateway with your own provider keys
+If one of those is the thing blocking you today, tell us and we'll bump it up the queue.
+Try it
+Go to octomind.run/app — login is an email code, no card, no signup step. Or start from the terminal and never touch the panel: install the open-source CLI , run octomind login , confirm the code in your browser, and you're running the same agent locally against the same models, today.
+For a cloud machine , you need an invite while we scale — subscribe and it unlocks immediately (Pro is $10 for the first month), or redeem a code if someone passed you one. Use the free tier properly for a week and you'll earn invites to hand out yourself. From "New machine" to a working agent with a browser and a terminal is about a minute.
+We've been running our own development on it for weeks — this article's screenshots are my actual account, spending real cents. That's the bar we wanted before calling it a launch: not a demo, a place where your agent works while you don't.
+Related Articles
+Octomind 0.38.0: One Command to Sign In, and Two Features We Deleted
+Octomind 0.38.0 adds `octomind login` — an RFC 8628 device flow that signs your terminal in to an Octomind account without ever typing a password there — plus a `/usage` command that shows account spend and quotas in the CLI, WebSocket, and ACP lanes. It also deletes two supervisor features we shipped three weeks ago, because the benchmark said they cost more than they saved: 70% solved at $3.28/solved, both metrics better after the deletion.
+July 19, 2026 by Don Karter
+Stop Asking One AI Agent to Do Everything. A Practical Guide to Sub-Agents
+One agent struggles with big tasks — it loses context and produces half-finished work. How to split work across specialized sub-agents in Octomind: static agents, tap roles, dynamic agents, and parallel async delegation.
+July 14, 2026 by Don Karter
+Octomind 0.37.1: Ground Truth Over the Agent's Story
+Octomind 0.37.1 hardens the Supervisor's verify-gate: it now judges a "done" claim against the actual working-tree diff and the actual command output — not the agent's narrative — and the check-after-mutation gate stops classifying tools by name: it fingerprints the working tree itself, so a change made through any tool only clears after a real check on an unchanged tree. Plus two free deterministic pre-gates (plan-complete, file:line references), recited prohibitions, compression spend in /info, and a new 15-instance benchmark baseline.
+July 13, 2026 by Don Karter
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 85
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":85,"text_length":19191,"paragraph_count":88,"sentence_count":136,"boilerplate_hits":4,"symbol_ratio":0.0004,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=high
+   Octomind Cloud Is Live: Real Machines for Your Agent, Every Model Through One Key | Octomind Today Octomind Cloud goes live in beta. Before I tell you what it is, let me tell you the three problems that made us build it — because odds are you have at least two of them right now. Your agent lives a..... / query=AI implementation startup design partner pilot customer / intent=find_startups / path=official_original
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Today Octomind Cloud goes live in beta.
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Before I tell you what it is, let me tell you the three problems that made us build it — because odds are you have at least two of them right now.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Your agent lives and dies with your laptop.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   You kick off a long refactor, the agent is forty minutes into it, and then you need to close the lid, catch a train, or your Wi-Fi hiccups.
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   The session is gone, the context is gone, and the tokens you paid for produced work you'll never see.
+
+## business_elements
+
+- companies: keyword search, Anysearch, OpenAI, Anthropic
+- products: Agent, agent, Agents, Claude, GPT-5, Gemini, gpt-5, agents, AGENTS
+- people: 暂无公开信息
+- industries: 医疗, 开发者工具
+- roles: CIO / IT 负责人, 开发者 / 工程团队
+- workflows: 计费 / 预算管理
+- business_actions: 发布 / 推出, 合作 / 联盟, 定价 / 计费变化
+- affected_departments: IT / 安全, 财务 / 预算
+- numbers: $5 m, $80, 1, 4, 0.38, 0, 8, 7
+- quotes: add $5 minimum / Authorization: Bearer $OCTOMIND_KEY  / deepseek-v4-flash / messages / at max capacity
+
+## evidence_seed
+
+- company_actions: Today Octomind Cloud goes live in beta. / Before I tell you what it is, let me tell you the three problems that made us build it — because odds are you have at least two of them right now. / Your agent lives and dies with your laptop.
+- case_details: Octomind Cloud Is Live: Real Machines for Your Agent, Every Model Through One Key | Octomind Today Octomind Cloud goes live in beta. Before I tell you what it is, let me tell you the three problems that made us build it — because odds are you have at least two of them right now. Your agent lives a..... / query=AI implementation startup design partner pilot customer / intent=find_startups / path=official_original
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 4
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: true
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+- emerging_pool
+
+## missing_information
+
+- none
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Octomind Cloud Is Live: Real Machines for Your Agent, Every Model Through One Key | Octomind Today Octomind Cloud goes live in beta. Before I tell you what it is, let me tell you the three problems that made us build it — because odds are you have at least two of them right now. Your agent lives a..... / query=AI implementation startup design partner pilot customer / intent=find_startups / path=official_original
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。
