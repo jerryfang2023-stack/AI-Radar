@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-07-20T03:15:02.267Z",
+  "generatedAt": "2026-07-21T01:39:34.496Z",
   "stats": {
-    "blogsBuilt": 4,
-    "totalItems": 32,
+    "blogsBuilt": 5,
+    "totalItems": 33,
     "sourceCount": 8,
     "errors": [
       "dataiku-blog: HTTP 404"
@@ -14,6 +14,36 @@
       "handle": "simonwillison.net",
       "bio": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
       "tweets": [
+        {
+          "id": "https://simonwillison.net/2026/Jul/20/cheap-reverse-engineering/#atom-everything",
+          "text": "Reverse-engineering is cheap now",
+          "summary": "<p>I keep hearing anecdotes from people who used coding agents to reverse-engineer and automate devices in their homes.</p>\n<p>I think this is an interesting illustration of the impact of the reduced cost of writing code.</p>\n<p>Prior to agents, it was entirely possible to reverse-engineer home devi",
+          "createdAt": "2026-07-20T19:24:05+00:00",
+          "url": "https://simonwillison.net/2026/Jul/20/cheap-reverse-engineering/#atom-everything",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
+          "id": "https://simonwillison.net/2026/Jul/20/afraid-of-chinese-models/#atom-everything",
+          "text": "Who’s Afraid of Chinese Models?",
+          "summary": "<p><strong><a href=\"https://stratechery.com/2026/whos-afraid-of-chinese-models/\">Who’s Afraid of Chinese Models?</a></strong></p>\nInteresting proposal from Ben Thompson that both addresses the hypocrisy of labs outlawing distillation against their models despite training on unlicensed data, and coul",
+          "createdAt": "2026-07-20T17:09:19+00:00",
+          "url": "https://simonwillison.net/2026/Jul/20/afraid-of-chinese-models/#atom-everything",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
+          "id": "https://simonwillison.net/2026/Jul/20/sam-altman/#atom-everything",
+          "text": "Quoting Sam Altman",
+          "summary": "<blockquote cite=\"https://twitter.com/techemails/status/2078854346683678927\"><p>We have been having extensive discussions around open source strategy. We will discuss it more at our next board meeting, but one thing we’d like to do soon is to create a language model with the approximate capability o",
+          "createdAt": "2026-07-20T03:47:59+00:00",
+          "url": "https://simonwillison.net/2026/Jul/20/sam-altman/#atom-everything",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
         {
           "id": "https://simonwillison.net/2026/Jul/19/ai-mania/#atom-everything",
           "text": "AI Mania Is Eviscerating Global Decision-Making",
@@ -57,7 +87,7 @@
         {
           "id": "https://simonwillison.net/2026/Jul/18/quixote/#atom-everything",
           "text": "nascheme/quixote",
-          "summary": "<p><strong><a href=\"https://github.com/nascheme/quixote\">nascheme/quixote</a></strong></p>\nA certain vintage if Python web nerd might be delighted to learn that the most recent commit to the Quixote web framework was <a href=\"(https://github.com/nascheme/quixote/commit/7f775cf9d1e7e80fcbb2706b4a1d97",
+          "summary": "<p><strong><a href=\"https://github.com/nascheme/quixote\">nascheme/quixote</a></strong></p>\nA certain vintage of Python web nerd might be delighted to learn that the most recent commit to the Quixote web framework was <a href=\"(https://github.com/nascheme/quixote/commit/7f775cf9d1e7e80fcbb2706b4a1d97",
           "createdAt": "2026-07-18T05:27:49+00:00",
           "url": "https://simonwillison.net/2026/Jul/18/quixote/#atom-everything",
           "likes": 0,
@@ -233,33 +263,20 @@
           "likes": 0,
           "retweets": 0,
           "replies": 0
-        },
+        }
+      ]
+    },
+    {
+      "name": "Interconnects (Nathan Lambert)",
+      "handle": "interconnects.ai",
+      "bio": "AI research industry analysis, model evaluations, open-source AI, Llama ecosystem, inference.",
+      "tweets": [
         {
-          "id": "https://simonwillison.net/2026/Jul/14/uvx-github-actions-cache/#atom-everything",
-          "text": "Using uvx in GitHub Actions in a cache-friendly way",
-          "summary": "<p><strong>TIL:</strong> <a href=\"https://til.simonwillison.net/github-actions/uvx-github-actions-cache\">Using uvx in GitHub Actions in a cache-friendly way</a></p>\n        <p>I finally found a cache-friendly recipe for using <code>uvx tool-name</code> in GitHub Actions workflows that I like.</p>\n<p",
-          "createdAt": "2026-07-14T00:56:20+00:00",
-          "url": "https://simonwillison.net/2026/Jul/14/uvx-github-actions-cache/#atom-everything",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://simonwillison.net/2026/Jul/13/doomql/#atom-everything",
-          "text": "DOOMQL",
-          "summary": "<p><strong><a href=\"https://github.com/petergpt/doomql\">DOOMQL</a></strong></p>\nPeter Gostev built this using GPT-5.6 Sol. This is a <em>lot</em> of fun: </p>\n<blockquote>\n<p>DOOMQL started with a deliberately unreasonable question: what if SQLite were the game engine, not merely the place where a g",
-          "createdAt": "2026-07-13T22:34:41+00:00",
-          "url": "https://simonwillison.net/2026/Jul/13/doomql/#atom-everything",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://simonwillison.net/2026/Jul/13/datasette-code-frequency/#atom-everything",
-          "text": "datasette code-frequency chart on GitHub",
-          "summary": "<p><strong><a href=\"https://github.com/simonw/datasette/graphs/code-frequency\">datasette code-frequency chart on GitHub</a></strong></p>\nOut of curiosity I decided to see if I could find a useful illustration of the impact of coding agents and Opus 4.5 class models on my own output. The best I've fo",
-          "createdAt": "2026-07-13T21:45:27+00:00",
-          "url": "https://simonwillison.net/2026/Jul/13/datasette-code-frequency/#atom-everything",
+          "id": "https://www.interconnects.ai/p/kimi-k3-the-open-weights-escalation",
+          "text": "Kimi K3: The open-weights escalation",
+          "summary": "The global implications on the AI ecosystem.",
+          "createdAt": "Mon, 20 Jul 2026 15:48:28 GMT",
+          "url": "https://www.interconnects.ai/p/kimi-k3-the-open-weights-escalation",
           "likes": 0,
           "retweets": 0,
           "replies": 0
@@ -299,6 +316,16 @@
       "bio": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
       "tweets": [
         {
+          "id": "https://tldr.tech/ai/2026-07-20",
+          "text": "Qwen 3.8 ✨, Kimi Code CLI 👨‍💻, Netflix’s LLM stack 🤖",
+          "summary": "",
+          "createdAt": "Mon, 20 Jul 2026 00:00:00 GMT",
+          "url": "https://tldr.tech/ai/2026-07-20",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
           "id": "https://tldr.tech/ai/2026-07-17",
           "text": "Kimi K3 🌕, Gemini 3.5 delayed ⏳, crushing ARC-AGI 3 🤖",
           "summary": "",
@@ -324,16 +351,6 @@
           "summary": "",
           "createdAt": "Wed, 15 Jul 2026 00:00:00 GMT",
           "url": "https://tldr.tech/ai/2026-07-15",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://tldr.tech/ai/2026-07-14",
-          "text": "xAI uploads codebases 👨‍💻, Prime Intellect verifiers 🧠, Sakana smart bricks 🧱",
-          "summary": "",
-          "createdAt": "Tue, 14 Jul 2026 00:00:00 GMT",
-          "url": "https://tldr.tech/ai/2026-07-14",
           "likes": 0,
           "retweets": 0,
           "replies": 0

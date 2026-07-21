@@ -1,14 +1,15 @@
 ---
 type: opinion_person_timeline
 person_name: "TLDR AI Newsletter"
-opinion_count: 13
-latest_date: 2026-07-17
+opinion_count: 14
+latest_date: 2026-07-20
 ---
 
 # TLDR AI Newsletter 观点时间线
-共 13 条观点，按人物 + 日期文件聚合。
+共 14 条观点，按人物 + 日期文件聚合。
 ## 日期
 
+- [2026-07-20](./2026-07-20.md)
 - [2026-07-17](./2026-07-17.md)
 - [2026-07-16](./2026-07-16.md)
 - [2026-07-15](./2026-07-15.md)
