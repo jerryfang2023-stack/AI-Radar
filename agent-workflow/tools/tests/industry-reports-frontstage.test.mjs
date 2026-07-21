@@ -56,6 +56,23 @@ test("legacy public routes are redirects and report detail pages use the V4 shel
   }
 });
 
+test("the two latest weekly issues have independent editorial pages", () => {
+  for (const date of ["2026-07-13", "2026-07-20"]) {
+    const file = path.join(root, "01-SiteV2", "site", `weekly-ai-business-change-radar-${date}.html`);
+    assert.ok(fs.existsSync(file), `${date} weekly detail page must exist`);
+    const html = fs.readFileSync(file, "utf8");
+    assert.match(html, /data-periodic-report-selector/u);
+    assert.match(html, /weekly-fast-read/u);
+    assert.match(html, /weekly-trend-stack/u);
+    assert.match(html, /weekly-chain-list/u);
+    assert.match(html, /weekly-opportunity-list/u);
+    assert.match(html, /weekly-watch-grid/u);
+    assert.doesNotMatch(html, /<table/u);
+  }
+  const latest = fs.readFileSync(path.join(root, "01-SiteV2", "site", "weekly-ai-business-change-radar.html"), "utf8");
+  assert.match(latest, /2026-07-20--weekly-report--ai-business-change-radar\.md/u);
+});
+
 test("retired V3 page assets are deleted and internal compatibility datasets stay private", () => {
   const workflow = fs.readFileSync(path.join(root, ".github/workflows/github-pages.yml"), "utf8");
   for (const retired of [

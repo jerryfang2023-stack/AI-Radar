@@ -377,6 +377,16 @@ body.weekly-report-page {
   margin: 0 0 12px;
 }
 
+.weekly-report-section .weekly-conclusion-lead {
+  padding: 18px 20px;
+  border-left: 3px solid var(--weekly-gold);
+  background: rgba(247, 244, 239, .58);
+  color: var(--weekly-ink);
+  font-family: var(--weekly-serif);
+  font-size: 19px;
+  line-height: 34px;
+}
+
 .weekly-report-section ul,
 .weekly-report-section ol {
   display: grid;
@@ -396,6 +406,8 @@ body.weekly-report-page {
   color: var(--weekly-blue);
   font-family: var(--weekly-mono);
   font-size: .92em;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .weekly-report-section blockquote {
@@ -521,7 +533,7 @@ body.weekly-report-page {
 
 .weekly-chain-steps {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 10px;
   margin: 0;
   padding: 0;

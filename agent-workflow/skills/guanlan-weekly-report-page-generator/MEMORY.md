@@ -1,5 +1,12 @@
 # Weekly Report Page Generator Memory
 
+## 2026-07-21
+
+- Every weekly or monthly renderer run must rebuild both Reports Center feature cards from the latest `status: published` canonical report sources. Updating only an archive link is insufficient; the visible title, reporting window, and route must move together.
+- The Reports Center regression test must derive the expected latest issue from source frontmatter so a newly published report cannot leave a stale first-screen card behind.
+- Accepted weekly sources may be explicitly re-rendered for page repair without changing the report Markdown. Every issue needs its own dated route; rebuilding an older issue must not overwrite the undated latest alias.
+- The deterministic renderer must use the existing editorial modules for trend cards, five-step chains, impact cards, opportunity profiles and score bars, watchlists, action lenses, and a final evidence appendix. A paragraph-only Markdown mapping is not an accepted weekly page.
+
 ## 2026-07-17
 
 - Weekly detail pages are part of the unified V4 frontstage. They use `data-center-v4.css`, the shared Data Center / Application Center sidebar, and `v4-report-shell.js`; the retired V3 topbar and column links must not return.

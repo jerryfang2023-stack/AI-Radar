@@ -1,5 +1,10 @@
 # Monthly Report Page Generator Memory
 
+## 2026-07-21
+
+- Every weekly or monthly renderer run must rebuild both Reports Center feature cards from the latest `status: published` canonical report sources. The monthly title, reporting window, and route must never be maintained as independent static HTML fields.
+- Reports Center validation must derive the expected latest monthly issue from source frontmatter, so the next accepted month automatically replaces the first-screen monthly card even when the current run was triggered by a weekly report.
+
 ## 2026-07-17
 
 - Monthly detail pages are part of the unified V4 frontstage and must use the V4 logo header, Data Center / Application Center sidebar, `data-center-v4.css`, and `v4-report-shell.js`.
