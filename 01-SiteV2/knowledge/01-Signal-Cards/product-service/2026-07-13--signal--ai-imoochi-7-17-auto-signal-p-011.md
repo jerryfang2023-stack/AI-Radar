@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "该产品是中兴通讯在 MWC26 上推出的情感陪伴 AI 宠物机器人，以萌系设计和拟生命体交互为核心，瞄准都市独居人群。"
+  source_excerpt: "努比亚 AI 宠物机器人 iMoochi 定档 7 月 17 日上线 努比亚 AI 宠物机器人 iMoochi 定档 7 月 17 日上线 努比亚手机官微宣布，AI 陪伴宠物机器人 iMoochi 将于 7 月 17 日 10 点在中兴商城及各大电商平台上线。该产品是中兴通讯在 MWC26 上推出的情感陪伴 AI 宠物机器人，以萌系设计和拟生命体交互为核心，瞄准都市独居人群。iMoochi 支持触感反馈、个性养成（如打哈欠、感知饥饿冷..."
   missing_fields: ["product_form", "adoption_evidence"]
 
 signal_owner: "努比亚"

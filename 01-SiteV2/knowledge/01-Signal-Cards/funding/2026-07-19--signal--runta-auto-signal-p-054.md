@@ -53,7 +53,7 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: ["funding_news", "business_media"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "a16z 领投 AI 智能体初创公司 Runta 2000 万美元种子轮 a16z leads a $20M seed in AI agent startup Runta Runta 获得 2000 万美元融资。"
+  source_excerpt: "a16z 领投 AI 智能体初创公司 Runta 2000 万美元种子轮 a16z leads a $20M seed in AI agent startup Runta # a16z leads a $20M seed in AI agent startup Runta Author: Cristian Dina Published: 2026-07-17T11:43:06+00:00 Source: thenextweb.com ..."
   missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "Runta"

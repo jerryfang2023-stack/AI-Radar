@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: ["third_party_report"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "基于 OpenRouter 数据，DeepSeek V4 Flash 以 18.4T Tokens 月消耗量位居 API 调用榜首，前五名均为开源模型。"
+  source_excerpt: "Mozilla 2026 开源 AI 报告：DeepSeek V4 Flash 月用量 18.4T Tokens 登顶 Mozilla 2026 开源 AI 报告：DeepSeek V4 Flash 月用量 18.4T Tokens 登顶 Mozilla 报告显示，开放权重与闭源模型平均差距为 3.3%，差距集中在推理、长上下文检索和智能体任务上。基于 OpenRouter 数据，DeepSeek V4 Flash 以 18.4T T..."
   missing_fields: []
 
 signal_owner: "OpenRouter"

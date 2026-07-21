@@ -44,14 +44,14 @@ opportunity_signals:
   buyer_or_user: ["engineering_team", "it_security_team"]
   team_or_function: ["engineering", "it_security"]
   specific_task: ["internal_tool_building"]
-  business_action: ["customer_deployment", "product_launch", "pricing_change"]
+  business_action: ["customer_deployment", "product_launch", "pricing_change", "governance_requirement"]
   product_form: []
   delivery_model: []
-  pain_or_constraint: ["api_cost_spike"]
+  pain_or_constraint: ["api_cost_spike", "security_compliance", "evaluation_gap"]
   adoption_evidence: []
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "OpenAI 前 CTO 穆拉蒂创业公司 TML 发布首款 AI 模型 Inkling：9750 亿参数，借鉴 DeepSeek-V3 架构 OpenAI 前 CTO 穆拉蒂创业公司 TML 发布首款 AI 模型 Inkling：9750 亿参数，借鉴 DeepSeek-V3 架构 Thinking Machines Lab 发布首款 AI 模型 Inkling，拥有 9750 亿参数，其中仅 410 亿为活跃参数，采用开放权重模式。"
+  source_excerpt: "OpenAI 前 CTO 穆拉蒂创业公司 TML 发布首款 AI 模型 Inkling：9750 亿参数，借鉴 DeepSeek-V3 架构 OpenAI 前 CTO 穆拉蒂创业公司 TML 发布首款 AI 模型 Inkling：9750 亿参数，借鉴 DeepSeek-V3 架构 Thinking Machines Lab 发布首款 AI 模型 Inkling，拥有 9750 亿参数，其中仅 410 亿为活跃参数，采用开放权重模式。..."
   missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "月之暗面 / Kimi"

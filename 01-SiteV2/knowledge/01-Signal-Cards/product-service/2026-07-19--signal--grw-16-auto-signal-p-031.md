@@ -41,18 +41,18 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["operations_team"]
-  team_or_function: ["operations"]
-  specific_task: ["logistics_coordination"]
+  buyer_or_user: ["sales_team", "operations_team"]
+  team_or_function: ["sales", "operations"]
+  specific_task: ["sales_lead_research", "logistics_coordination"]
   business_action: ["customer_deployment", "product_launch"]
   product_form: []
-  delivery_model: []
+  delivery_model: ["enterprise_subscription"]
   pain_or_constraint: []
   adoption_evidence: []
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "傅利叶发布首款轮式双臂机器人 GRW：支持三种末端工具更换，可扛 16 公斤重物 傅利叶发布首款轮式双臂机器人 GRW：支持三种末端工具更换，可扛 16 公斤重物 傅利叶在 2026 世界人工智能大会上推出首款轮式双臂机器人 GRW，采用\"长臂窄肩\"设计，机身肩宽 585 mm，覆盖 29 个自由度，最高可扛起 16 公斤重物，拥有 2 米级作业空间。"
-  missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
+  source_excerpt: "傅利叶发布首款轮式双臂机器人 GRW：支持三种末端工具更换，可扛 16 公斤重物 傅利叶发布首款轮式双臂机器人 GRW：支持三种末端工具更换，可扛 16 公斤重物 傅利叶在 2026 世界人工智能大会上推出首款轮式双臂机器人 GRW，采用\"长臂窄肩\"设计，机身肩宽 585 mm，覆盖 29 个自由度，最高可扛起 16 公斤重物，拥有 2 米级作业空间。模块化末端设计支持夹持器、吸盘及灵巧手三种执行工具更换，兼容热插拔换电，续航 4 小..."
+  missing_fields: ["product_form", "adoption_evidence"]
 
 signal_owner: "傅利叶"
 

@@ -41,17 +41,17 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["engineering_team"]
-  team_or_function: ["engineering"]
-  specific_task: ["internal_tool_building"]
-  business_action: ["product_launch", "pricing_change"]
+  buyer_or_user: ["sales_team", "engineering_team"]
+  team_or_function: ["sales", "engineering"]
+  specific_task: ["sales_lead_research", "internal_tool_building"]
+  business_action: ["product_launch", "pricing_change", "failure_postmortem"]
   product_form: ["api"]
   delivery_model: ["api_usage_based"]
   pain_or_constraint: ["evaluation_gap"]
   adoption_evidence: ["deployment_scale", "third_party_report"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "IT之家 7 月 14 日消息，科技媒体 systima 于 7 月 12 日发布博文，对比测试指出在相同提示词、相同 AI 模型情况下， 在处理用户请求前，Claude Code 消耗的 Tokens 数量约为 OpenCode 的 4.7 倍。"
+  source_excerpt: "IT之家 7 月 14 日消息，科技媒体 systima 于 7 月 12 日发布博文，对比测试指出在相同提示词、相同 AI 模型情况下， 在处理用户请求前，Claude Code 消耗的 Tokens 数量约为 OpenCode 的 4."
   missing_fields: []
 
 signal_owner: "Anthropic / Claude Code"

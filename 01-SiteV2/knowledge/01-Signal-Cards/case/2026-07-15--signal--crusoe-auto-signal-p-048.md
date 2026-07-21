@@ -42,18 +42,18 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: []
+  buyer_or_user: ["enterprise_ai_owner"]
   team_or_function: []
   specific_task: []
-  business_action: ["customer_deployment", "product_launch"]
+  business_action: ["customer_deployment", "product_launch", "pricing_change"]
   product_form: []
   delivery_model: ["self_serve_saas"]
-  pain_or_constraint: []
+  pain_or_constraint: ["api_cost_spike"]
   adoption_evidence: ["case_study"]
   source_evidence_type: ["first_party_case", "first_party_announcement"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Crusoe 发布 Serverless Fine-Tuning 与 Self-Serve Inference 部署，推动模型进入生产 Crusoe Launches Serverless Fine-Tuning and Self-Serve Inference Deployments, Accelerating Open-Model Development From Experiment to Production 原始来源标题显示..."
-  missing_fields: ["buyer_or_user", "specific_task", "product_form"]
+  source_excerpt: "Crusoe 推出无服务器微调与自助推理部署，加速开放模型从实验到生产的开发进程 Crusoe Launches Serverless Fine-Tuning and Self-Serve Inference Deployments, Accelerating Open-Model Development From Experiment to Production # Crusoe Launches Serverless Fine-T..."
+  missing_fields: ["specific_task", "product_form"]
 
 signal_owner: "Crusoe"
 

@@ -44,15 +44,15 @@ opportunity_signals:
   buyer_or_user: ["sales_team"]
   team_or_function: ["sales"]
   specific_task: ["sales_lead_research"]
-  business_action: ["customer_deployment"]
+  business_action: ["customer_deployment", "partnership_integration"]
   product_form: []
   delivery_model: ["enterprise_subscription"]
   pain_or_constraint: []
-  adoption_evidence: []
+  adoption_evidence: ["customer_metric"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "该集群采用\"超智融合\"技术路线，支持FP64到INT8全精度，覆盖科学计算、大模型训练、AI推理等场景，由海光等国产芯片支撑，并采用浸没式相变液冷技术实现单机柜MW级部署。"
-  missing_fields: ["product_form", "adoption_evidence"]
+  source_excerpt: "我国首个全国产10万卡AI超集群\"曙光8000（登峰）\"亮相WAIC 2026 我国首个全国产10万卡AI超集群\"曙光8000（登峰）\"亮相WAIC 2026 中科曙光打造的\"曙光8000（登峰）\"在WAIC 2026真机亮相，这是中国首个全国产10万卡AI超集群。该集群采用\"超智融合\"技术路线，支持FP64到INT8全精度，覆盖科学计算、大模型训练、AI推理等场景，由海光等国产芯片支撑，并采用浸没式相变液冷技术实现单机柜MW级部署。"
+  missing_fields: ["product_form"]
 
 signal_owner: "我国首个全国产10万卡AI超集群\"曙光8000（登峰）\"亮相WAIC 2026"
 

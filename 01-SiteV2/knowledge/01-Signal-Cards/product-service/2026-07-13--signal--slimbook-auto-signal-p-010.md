@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: ["deployment_scale", "pricing_page"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "Slimbook 推出 Nexus 系列 AI 工作站，可选 AMD 锐龙 / 锐龙 Threadripper 处理器 Slimbook 推出 Nexus 系列 AI 工作站，可选 AMD 锐龙 / 锐龙 Threadripper 处理器 Slimbook 推出 Nexus 系列 AI 工作站，可选 AMD 锐龙 / 锐龙 Threadripper 处理器 西班牙 Linux 硬件制造商 Slimbook 发布 Nexus 系列人工智..."
+  source_excerpt: "Slimbook 推出 Nexus 系列 AI 工作站，可选 AMD 锐龙 / 锐龙 Threadripper 处理器 Slimbook 推出 Nexus 系列 AI 工作站，可选 AMD 锐龙 / 锐龙 Threadripper 处理器 西班牙 Linux 硬件制造商 Slimbook 发布 Nexus 系列人工智能工作站，分为 Nexus Ryzen AI 和 Nexus Threadripper AI 两个分支。前者至高可选 A..."
   missing_fields: ["product_form"]
 
 signal_owner: "Slimbook"

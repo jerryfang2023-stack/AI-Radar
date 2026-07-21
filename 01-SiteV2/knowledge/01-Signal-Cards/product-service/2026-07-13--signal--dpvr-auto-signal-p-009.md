@@ -41,17 +41,17 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["healthcare_provider"]
-  team_or_function: ["healthcare_operations"]
-  specific_task: ["medical_documentation"]
-  business_action: ["customer_deployment", "product_launch", "pricing_change"]
+  buyer_or_user: ["engineering_team", "healthcare_provider"]
+  team_or_function: ["engineering", "healthcare_operations"]
+  specific_task: ["internal_tool_building", "medical_documentation"]
+  business_action: ["customer_deployment", "product_launch", "partnership_integration", "pricing_change"]
   product_form: []
   delivery_model: ["enterprise_subscription"]
-  pain_or_constraint: ["latency_sensitive"]
-  adoption_evidence: ["deployment_scale"]
+  pain_or_constraint: ["workflow_integration", "latency_sensitive"]
+  adoption_evidence: ["customer_metric", "deployment_scale", "partnership_announcement"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "DPVR 发布 VisionRay Flow Pro AI 太阳镜：20Mp 摄像头、35g 重量、199 美元 DPVR 发布 VisionRay Flow Pro AI 太阳镜：20Mp 摄像头、35g 重量、199 美元 DPVR 发布 VisionRay Flow Pro AI 太阳镜：20Mp 摄像头、35g 重量、199 美元 DPVR 推出 VisionRay Flow Pro AI 太阳镜智能眼镜，面向消费市场。"
+  source_excerpt: "DPVR 发布 VisionRay Flow Pro AI 太阳镜：20Mp 摄像头、35g 重量、199 美元 DPVR 发布 VisionRay Flow Pro AI 太阳镜：20Mp 摄像头、35g 重量、199 美元 DPVR 推出 VisionRay Flow Pro AI 太阳镜智能眼镜，面向消费市场。产品重约 35 克，机身电池续航至高 12 小时，支持 2000 万像素拍摄与最高 4K 30FPS 视频录制，采用全新..."
   missing_fields: ["product_form"]
 
 signal_owner: "DPVR"

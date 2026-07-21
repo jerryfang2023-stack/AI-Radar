@@ -42,18 +42,18 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: []
-  team_or_function: []
-  specific_task: []
-  business_action: []
+  buyer_or_user: ["sales_team", "engineering_team"]
+  team_or_function: ["sales", "engineering"]
+  specific_task: ["sales_lead_research", "internal_tool_building"]
+  business_action: ["customer_deployment", "product_launch", "procurement_signal"]
   product_form: []
   delivery_model: []
   pain_or_constraint: []
-  adoption_evidence: []
-  source_evidence_type: []
+  adoption_evidence: ["procurement_contract"]
+  source_evidence_type: ["first_party_announcement"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Will Russia's answer to the Falcon 9 rocket ever take flight?"
-  missing_fields: ["buyer_or_user", "specific_task", "product_form", "adoption_evidence", "delivery_model"]
+  source_excerpt: "Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav Everyone seems to be launching and landing rockets these days."
+  missing_fields: ["product_form", "delivery_model"]
 
 signal_owner: "SpaceX"
 

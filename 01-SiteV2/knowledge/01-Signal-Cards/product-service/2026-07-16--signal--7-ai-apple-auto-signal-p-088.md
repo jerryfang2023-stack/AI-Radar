@@ -41,18 +41,18 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: []
-  team_or_function: []
-  specific_task: []
-  business_action: ["product_launch"]
-  product_form: []
-  delivery_model: []
-  pain_or_constraint: []
-  adoption_evidence: []
+  buyer_or_user: ["sales_team"]
+  team_or_function: ["sales"]
+  specific_task: ["sales_lead_research"]
+  business_action: ["product_launch", "partnership_integration", "pricing_change"]
+  product_form: ["copilot"]
+  delivery_model: ["enterprise_subscription"]
+  pain_or_constraint: ["workflow_integration", "api_cost_spike"]
+  adoption_evidence: ["customer_metric", "partnership_announcement"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
   source_excerpt: "网信部门公布 7 款手机端侧生成式 AI 服务备案，Apple 智能在列 网信部门公布 7 款手机端侧生成式 AI 服务备案，Apple 智能在列 网信部门发布 7 款提供手机端侧生成式人工智能服务的已备案信息，包括苹果手机的 Apple 智能、华为手机的华为小艺 AI 大模型、OPPO 手机的 AndesGPT 大模型、vivo 手机的 vivo 蓝心端侧大模型、小米手机的小米澎湃 AI、三星手机的盖乐世 AI 以及中兴手机的努比亚..."
-  missing_fields: ["buyer_or_user", "specific_task", "product_form", "adoption_evidence", "delivery_model"]
+  missing_fields: []
 
 signal_owner: "努比亚"
 

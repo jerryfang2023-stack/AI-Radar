@@ -48,11 +48,11 @@ opportunity_signals:
   business_action: ["funding_round", "customer_deployment", "product_launch", "pricing_change"]
   product_form: []
   delivery_model: ["project_based_service"]
-  pain_or_constraint: ["workflow_integration", "permission_boundary"]
+  pain_or_constraint: ["workflow_integration", "api_cost_spike", "permission_boundary"]
   adoption_evidence: ["enterprise_plan"]
   source_evidence_type: ["funding_news"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Stigg 发布 2.0：面向 AI 产品的用量运行时 Announcing Stigg 2.0 - The Usage Runtime for AI Products Stigg将每次 AI 请求视为一次支出决策，并把用量与权限判断放到毫秒级运行时执行。"
+  source_excerpt: "Stigg 发布 2.0：面向 AI 产品的用量运行时 Announcing Stigg 2.0 - The Usage Runtime for AI Products Announcing Stigg 2.0 - The Usage Runtime for AI Products Blog / Stigg Announcements # Announcing Stigg 2.0 Every AI request is a spend..."
   missing_fields: ["product_form"]
 
 signal_owner: "Stigg"

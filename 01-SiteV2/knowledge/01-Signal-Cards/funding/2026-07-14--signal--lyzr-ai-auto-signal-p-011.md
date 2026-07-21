@@ -46,14 +46,14 @@ opportunity_signals:
   team_or_function: ["sales"]
   specific_task: ["sales_lead_research"]
   business_action: ["funding_round", "customer_deployment"]
-  product_form: []
+  product_form: ["model_gateway"]
   delivery_model: ["project_based_service"]
   pain_or_constraint: ["workflow_integration"]
   adoption_evidence: []
   source_evidence_type: ["funding_news", "business_media"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Lyzr AI 完成 1 亿美元 B 轮融资：其 AI Agent SivaClaw 对接 130 多位投资者并产生 4 亿美元投资兴趣 Lyzr AI Raises $100 Million Series B After Its Own AI Agent SivaClaw Fielded 130‑Plus Investors And Generated $400 Million In Interest Lyzr AI宣布完成1 亿美..."
-  missing_fields: ["product_form", "adoption_evidence"]
+  source_excerpt: "Lyzr AI 完成1亿美元B轮融资，其AI代理SivaClaw吸引130多家投资者并产生4亿美元意向 Lyzr AI Raises $100 Million Series B After Its Own AI Agent SivaClaw Fielded 130‑Plus Investors And Generated $400 Million In Interest # Lyzr AI Raises $100 Million Se..."
+  missing_fields: ["adoption_evidence"]
 
 signal_owner: "Lyzr AI"
 

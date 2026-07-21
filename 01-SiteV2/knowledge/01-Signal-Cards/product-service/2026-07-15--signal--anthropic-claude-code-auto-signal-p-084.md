@@ -41,18 +41,18 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["it_security_team"]
-  team_or_function: ["it_security"]
-  specific_task: []
+  buyer_or_user: ["sales_team", "engineering_team", "it_security_team"]
+  team_or_function: ["sales", "engineering", "it_security"]
+  specific_task: ["sales_lead_research", "internal_tool_building"]
   business_action: ["product_launch", "partnership_integration", "governance_requirement"]
   product_form: []
-  delivery_model: []
-  pain_or_constraint: ["permission_boundary"]
+  delivery_model: ["enterprise_subscription", "consulting_diagnostic"]
+  pain_or_constraint: ["permission_boundary", "security_compliance"]
   adoption_evidence: ["partnership_announcement"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "Anthropic 推出 Claude for Teachers，免费向美国 K-12 教师提供高级功能 Anthropic 推出 Claude for Teachers，免费向美国 K-12 教师提供高级功能 Anthropic 宣布推出\"Claude for Teachers\"项目，为美国 K-12 在职教师免费提供 Claude 高级付费功能，包括定制化教学技能库及对接全美 50 州学术标准的课程体系。"
-  missing_fields: ["specific_task", "product_form", "delivery_model"]
+  source_excerpt: "Anthropic 推出 Claude for Teachers，免费向美国 K-12 教师提供高级功能 Anthropic 推出 Claude for Teachers，免费向美国 K-12 教师提供高级功能 Anthropic 宣布推出\"Claude for Teachers\"项目，为美国 K-12 在职教师免费提供 Claude 高级付费功能，包括定制化教学技能库及对接全美 50 州学术标准的课程体系。教师可利用 Claude ..."
+  missing_fields: ["product_form"]
 
 signal_owner: "Anthropic / Claude Code"
 

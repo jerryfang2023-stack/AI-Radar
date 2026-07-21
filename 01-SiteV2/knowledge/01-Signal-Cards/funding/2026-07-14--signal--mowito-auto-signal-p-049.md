@@ -53,7 +53,7 @@ opportunity_signals:
   adoption_evidence: ["customer_metric", "procurement_contract"]
   source_evidence_type: ["funding_news"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Version One Ventures 宣布投资 Mowito：面向制造业机械臂的 Physical AI Announcing Our Investment in Mowito: Physical AI for Robot Arms in Manufacturing - Version One Ventures Mowito 获得 300 万美元 种子前轮融资。"
+  source_excerpt: "/ query=YC AI startup funding vertical AI / intent=find_startups / path=capital_startup Skip to content Portfolio , Version One Announcing Our Investment in Mowito: Physical AI for Robot Arms in Manufacturing We’re exci..."
   missing_fields: ["delivery_model"]
 
 signal_owner: "Mowito"

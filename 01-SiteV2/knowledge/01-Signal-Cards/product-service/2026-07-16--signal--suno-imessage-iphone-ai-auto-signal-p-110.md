@@ -41,18 +41,18 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: []
-  team_or_function: []
-  specific_task: []
-  business_action: ["partnership_integration"]
+  buyer_or_user: ["sales_team"]
+  team_or_function: ["sales"]
+  specific_task: ["sales_lead_research"]
+  business_action: ["customer_deployment", "product_launch", "partnership_integration"]
   product_form: []
-  delivery_model: []
+  delivery_model: ["enterprise_subscription"]
   pain_or_constraint: []
   adoption_evidence: ["deployment_scale"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "Suno 接入 iMessage：iPhone 用户可在聊天内直接 AI 生成歌曲 Suno 接入 iMessage：iPhone 用户可在聊天内直接 AI 生成歌曲 Suno 在 7 月 7 日更新的应用中为 iMessage 新增扩展入口，已安装 Suno 的 iPhone 用户无需离开对话界面，即可通过文本提示或语音备忘录生成歌曲。"
-  missing_fields: ["buyer_or_user", "specific_task", "product_form", "delivery_model"]
+  source_excerpt: "Suno 接入 iMessage：苹果 iPhone 17 等用户可在聊天内 AI 生成歌曲 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > iPhone之家 >..."
+  missing_fields: ["product_form"]
 
 signal_owner: "Suno 接入 iMessage：iPhone 用户可在聊天内直接 AI 生成歌曲"
 

@@ -53,7 +53,7 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: ["funding_news"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Whale 完成 4000 万美元 C3 轮扩展融资，C 轮总融资额达 1 亿美元，用于扩大全球企业 AI 运营规模 Whale Raises $40M Series C3 Extension, Bringing Total Series C to $100M, to Scale Global Enterprise AI Operations Whale 获得 4000 万美元 C 轮融资。"
+  source_excerpt: "Whale 完成 4000 万美元 C3 轮扩展融资，C 轮总融资额达 1 亿美元，用于扩大全球企业 AI 运营规模 Whale Raises $40M Series C3 Extension, Bringing Total Series C to $100M, to Scale Global Enterprise AI Operations Whale Raises $40M Series C3 Extension, Bringin..."
   missing_fields: ["adoption_evidence", "delivery_model"]
 
 signal_owner: "Whale"

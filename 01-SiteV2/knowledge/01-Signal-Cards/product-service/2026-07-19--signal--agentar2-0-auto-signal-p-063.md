@@ -41,9 +41,9 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["enterprise_ai_owner", "it_security_team"]
-  team_or_function: ["it_security"]
-  specific_task: []
+  buyer_or_user: ["sales_team", "enterprise_ai_owner", "it_security_team"]
+  team_or_function: ["sales", "it_security"]
+  specific_task: ["sales_lead_research"]
   business_action: ["customer_deployment", "product_launch"]
   product_form: ["agent_workbench"]
   delivery_model: ["enterprise_subscription", "template_pack"]
@@ -51,8 +51,8 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "蚂蚁数科发布商业智能体超级工厂核心平台 Agentar2.0 蚂蚁数科发布商业智能体超级工厂核心平台 Agentar2.0 蚂蚁数科在 2026 世界人工智能大会发布商业智能体超级工厂核心平台 Agentar2.0，首批预置 200 个岗位级数字专家模板及数百个可订阅的智能体工具。"
-  missing_fields: ["specific_task", "adoption_evidence"]
+  source_excerpt: "蚂蚁数科发布商业智能体超级工厂核心平台 Agentar2.0 蚂蚁数科发布商业智能体超级工厂核心平台 Agentar2.0 蚂蚁数科在 2026 世界人工智能大会发布商业智能体超级工厂核心平台 Agentar2.0，首批预置 200 个岗位级数字专家模板及数百个可订阅的智能体工具。该平台通过自研基座模型 LingDT 与区块链技术实现多智能体可信协同，目前已在金融行业落地超 300 个智能体。"
+  missing_fields: ["adoption_evidence"]
 
 signal_owner: "蚂蚁数科"
 

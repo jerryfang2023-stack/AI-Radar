@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: ["deployment_scale"]
   source_evidence_type: ["funding_news", "business_media"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "DeepSeek 新一轮融资估值约710亿美元，资金将用于自建数据中心和AI芯片 DeepSeek 新一轮融资估值约710亿美元，资金将用于自建数据中心和AI芯片 资金将用于建设自有数据中心、购买AI芯片，并自研推理芯片以减少对英伟达和华为的依赖。"
+  source_excerpt: "DeepSeek 新一轮融资估值约710亿美元，资金将用于自建数据中心和AI芯片 DeepSeek 新一轮融资估值约710亿美元，资金将用于自建数据中心和AI芯片 DeepSeek 在5月底完成约70亿美元首轮融资后，正与投资者洽谈新一轮融资，投前估值约710亿美元。资金将用于建设自有数据中心、购买AI芯片，并自研推理芯片以减少对英伟达和华为的依赖。创始人梁文锋个人出资约30亿美元成为最大支持者，其他投资者包括宁德时代、腾讯、京东、网..."
   missing_fields: ["product_form", "delivery_model"]
 
 signal_owner: "月之暗面 / Kimi"

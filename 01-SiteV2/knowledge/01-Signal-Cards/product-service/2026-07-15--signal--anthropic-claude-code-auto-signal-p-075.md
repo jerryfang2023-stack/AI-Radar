@@ -42,18 +42,18 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["engineering_team"]
-  team_or_function: ["engineering"]
-  specific_task: ["internal_tool_building"]
-  business_action: ["product_launch", "partnership_integration"]
-  product_form: []
-  delivery_model: []
+  buyer_or_user: ["sales_team", "engineering_team"]
+  team_or_function: ["sales", "engineering"]
+  specific_task: ["sales_lead_research", "internal_tool_building"]
+  business_action: ["customer_deployment", "product_launch", "partnership_integration", "open_source_release"]
+  product_form: ["developer_tool"]
+  delivery_model: ["consulting_diagnostic"]
   pain_or_constraint: ["workflow_integration", "security_compliance"]
-  adoption_evidence: ["partnership_announcement"]
+  adoption_evidence: ["partnership_announcement", "enterprise_plan"]
   source_evidence_type: ["business_media"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Anthropic 推出 Claude for Teachers，承诺不将学生数据用于模型训练 Anthropic 推出 Claude for Teachers，承诺不将学生数据用于模型训练 Anthropic 为美国 K-12 认证教师推出免费服务 Claude for Teachers，包含 Claude、Claude Code 和 Cowork 智能体功能，以及教学专用技能库和课程对齐内容。"
-  missing_fields: ["product_form", "delivery_model"]
+  source_excerpt: "Anthropic 推出 Claude for Teachers，承诺不将学生数据用于模型训练 Anthropic 推出 Claude for Teachers，承诺不将学生数据用于模型训练 Anthropic 为美国 K-12 认证教师推出免费服务 Claude for Teachers，包含 Claude、Claude Code 和 Cowork 智能体功能，以及教学专用技能库和课程对齐内容。教师可规划课程、差异化教学或分析学生数..."
+  missing_fields: []
 
 signal_owner: "Anthropic / Claude Code"
 

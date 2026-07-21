@@ -46,14 +46,14 @@ opportunity_signals:
   team_or_function: ["sales", "engineering"]
   specific_task: ["sales_lead_research", "internal_tool_building"]
   business_action: ["customer_deployment", "product_launch", "partnership_integration", "pricing_change"]
-  product_form: []
-  delivery_model: []
+  product_form: ["api"]
+  delivery_model: ["api_usage_based"]
   pain_or_constraint: ["workflow_integration", "api_cost_spike", "hallucination_risk"]
   adoption_evidence: ["customer_metric", "deployment_scale", "partnership_announcement"]
   source_evidence_type: ["first_party_announcement"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "腾讯混元正式发布 Hy3，扩展 Agent 能力与产品集成 Tencent Hunyuan Officially Releases Hy3, Advancing Agent Capabilities and Deeper Product Integration 腾讯混元团队发布Hy3模型，采用295B总参数、21B激活参数的MoE架构，推理效率可打平参数规模2-5倍的旗舰模型。"
-  missing_fields: ["product_form", "delivery_model"]
+  source_excerpt: "腾讯混元正式发布 Hy3，扩展 Agent 能力与产品集成 Tencent Hunyuan Officially Releases Hy3, Advancing Agent Capabilities and Deeper Product Integration 腾讯混元团队发布Hy3模型，采用295B总参数、21B激活参数的MoE架构，推理效率可打平参数规模2-5倍的旗舰模型。Hy3定位为Agent向LLM，从preview到正式版基..."
+  missing_fields: []
 
 signal_owner: "腾讯混元"
 

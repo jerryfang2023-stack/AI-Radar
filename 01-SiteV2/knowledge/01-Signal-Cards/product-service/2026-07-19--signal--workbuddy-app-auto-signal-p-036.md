@@ -41,18 +41,18 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: []
-  team_or_function: []
-  specific_task: []
-  business_action: ["customer_deployment", "product_launch"]
-  product_form: []
-  delivery_model: []
-  pain_or_constraint: []
-  adoption_evidence: []
+  buyer_or_user: ["sales_team"]
+  team_or_function: ["sales"]
+  specific_task: ["sales_lead_research", "knowledge_base_qa"]
+  business_action: ["customer_deployment", "product_launch", "procurement_signal"]
+  product_form: ["rag_knowledge_base"]
+  delivery_model: ["enterprise_subscription"]
+  pain_or_constraint: ["data_silo"]
+  adoption_evidence: ["deployment_scale", "procurement_contract"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "腾讯 WorkBuddy 正式版 App 发布，安卓 / iOS / 鸿蒙三端同步上线 腾讯 WorkBuddy 正式版 App 发布，安卓 / iOS / 鸿蒙三端同步上线 IT之家 7 月 18 日消息，腾讯今天宣布，WorkBuddy 正式版 App 现已发布， 安卓 、iOS、 鸿蒙 三端同步上线 ， 是首个登陆鸿蒙系统的通用智能体应用 。"
-  missing_fields: ["buyer_or_user", "specific_task", "product_form", "adoption_evidence", "delivery_model"]
+  source_excerpt: "腾讯 WorkBuddy 正式版 App 发布，安卓 / iOS / 鸿蒙三端同步上线 腾讯 WorkBuddy 正式版 App 发布，安卓 / iOS / 鸿蒙三端同步上线 腾讯 WorkBuddy 正式版 App 现已发布，安卓、iOS、鸿蒙三端同步上线，是首个登陆鸿蒙系统的通用智能体应用。App 支持连接电脑调用桌面端完整能力，或通过云端工作模式开箱即用，具备 Skills、专家与专家团、自动化定时任务等主要功能。用户可通过文字..."
+  missing_fields: []
 
 signal_owner: "腾讯 WorkBuddy 正式版 App"
 

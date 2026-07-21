@@ -53,7 +53,7 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: ["funding_news"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Aina 融资 550 万美元，推出超越触摸屏与键盘的 AI 时代新型硬件接口 Aina raises $5.5M with new hardware interface for the age of AI beyond touchscreens and keyboards Aina 获得 550 万美元融资。"
+  source_excerpt: "Aina 融资 550 万美元，推出超越触摸屏与键盘的 AI 时代新型硬件接口 Aina raises $5.5M with new hardware interface for the age of AI beyond touchscreens and keyboards Aina raises $5.5M with new hardware interface for the age # Aina raises $5.5M wit..."
   missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "Aina"

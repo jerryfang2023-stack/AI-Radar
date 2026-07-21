@@ -41,18 +41,18 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: []
-  team_or_function: []
-  specific_task: []
-  business_action: ["product_launch"]
+  buyer_or_user: ["sales_team", "healthcare_provider"]
+  team_or_function: ["sales", "healthcare_operations"]
+  specific_task: ["sales_lead_research", "medical_documentation"]
+  business_action: ["customer_deployment", "product_launch"]
   product_form: []
   delivery_model: []
   pain_or_constraint: []
   adoption_evidence: []
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "OpenAI 奥尔特曼调侃 Anthropic 最新广告：我还以为这是讽刺短片 OpenAI 奥尔特曼调侃 Anthropic 最新广告：我还以为这是讽刺短片 Anthropic 于 7 月 10 日推出 AI 宣传短片并启动\"Hard Questions\"项目，收集公众对 AI 发展的疑问。"
-  missing_fields: ["buyer_or_user", "specific_task", "product_form", "adoption_evidence", "delivery_model"]
+  source_excerpt: "OpenAI 奥尔特曼调侃 Anthropic 最新广告：我还以为这是讽刺短片 OpenAI 奥尔特曼调侃 Anthropic 最新广告：我还以为这是讽刺短片 Anthropic 于 7 月 10 日推出 AI 宣传短片并启动\"Hard Questions\"项目，收集公众对 AI 发展的疑问。OpenAI CEO 山姆·奥尔特曼调侃该广告\"像是讽刺作品\"。广告以火灾、监控、流浪者等反乌托邦画面呈现，旁白提出\"AI 能否被信任\"等问题，..."
+  missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "OpenAI"
 

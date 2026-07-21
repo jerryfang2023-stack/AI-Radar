@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "东方算芯发布全球首颗软件定义近存计算3D芯片DF1000 东方算芯发布全球首颗软件定义近存计算3D芯片DF1000 东方算芯发布全球首颗软件定义近存计算3D芯片DF1000 东方算芯今日在上海发布其首颗旗舰芯片DF1000，号称全球首颗软件定义近存计算3D芯片。"
+  source_excerpt: "东方算芯发布全球首颗软件定义近存计算3D芯片DF1000 东方算芯发布全球首颗软件定义近存计算3D芯片DF1000 东方算芯今日在上海发布其首颗旗舰芯片DF1000，号称全球首颗软件定义近存计算3D芯片。该芯片采用\"软件定义+3D堆叠近存计算\"技术路线，通过软件定义芯片技术实现软硬件解耦与动态重构，在14nm工艺节点下达到520TFLOPS@BF16算力。东方算芯称，该方案不依赖海外先进制造工艺，依托全国产供应链，旨在破解中国高端算力..."
   missing_fields: ["product_form", "adoption_evidence"]
 
 signal_owner: "东方算芯"

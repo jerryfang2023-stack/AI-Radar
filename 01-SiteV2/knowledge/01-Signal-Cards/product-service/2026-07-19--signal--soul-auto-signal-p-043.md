@@ -41,18 +41,18 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["content_team"]
-  team_or_function: ["marketing_content"]
-  specific_task: ["content_workflow"]
-  business_action: ["product_launch"]
+  buyer_or_user: ["sales_team", "content_team"]
+  team_or_function: ["sales", "marketing_content"]
+  specific_task: ["sales_lead_research", "content_workflow"]
+  business_action: ["customer_deployment", "product_launch"]
   product_form: []
-  delivery_model: []
+  delivery_model: ["enterprise_subscription"]
   pain_or_constraint: ["context_management"]
   adoption_evidence: ["deployment_scale"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "社交平台 Soul 推出 AI 智能硬件 B Soul，搭载多模态大模型 SoulX 社交平台 Soul 推出 AI 智能硬件 B Soul，搭载多模态大模型 SoulX 社交平台 Soul 在 2026 世界人工智能大会上推出 AI 硬件\"B Soul\"，将多模态交互大模型 SoulX 的语音交互与情感表达能力融入可随身携带的终端，实现随时唤醒、自然交流和持续陪伴。"
-  missing_fields: ["product_form", "delivery_model"]
+  source_excerpt: "社交平台 Soul 推出 AI 智能硬件 B Soul，搭载多模态大模型 SoulX 社交平台 Soul 推出 AI 智能硬件 B Soul，搭载多模态大模型 SoulX 社交平台 Soul 在 2026 世界人工智能大会上推出 AI 硬件\"B Soul\"，将多模态交互大模型 SoulX 的语音交互与情感表达能力融入可随身携带的终端，实现随时唤醒、自然交流和持续陪伴。配套 App 与小程序负责关系养成与记忆沉淀，硬件设备则让 AI 陪..."
+  missing_fields: ["product_form"]
 
 signal_owner: "社交平台 Soul"
 

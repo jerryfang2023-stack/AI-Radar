@@ -50,11 +50,11 @@ opportunity_signals:
   product_form: []
   delivery_model: ["project_based_service"]
   pain_or_constraint: ["workflow_integration"]
-  adoption_evidence: []
+  adoption_evidence: ["usage_growth"]
   source_evidence_type: ["funding_news"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Alta 获得 2500 万美元融资 Alta Raises $25M to Redefine the Go-to-Market Architecture for Revenue Teams Alta宣布完成2500 万美元融资。"
-  missing_fields: ["product_form", "adoption_evidence"]
+  source_excerpt: "Alta 完成 2500 万美元融资，用于重塑收入团队的市场进入架构 Alta Raises $25M to Redefine the Go-to-Market Architecture for Revenue Teams Alta Raises $25M to Redefine the Go-to-Market Architecture for Revenue Teams Accessibility Statement Skip N..."
+  missing_fields: ["product_form"]
 
 signal_owner: "Alta"
 

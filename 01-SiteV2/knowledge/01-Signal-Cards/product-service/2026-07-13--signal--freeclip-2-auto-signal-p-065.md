@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: ["customer_metric", "deployment_scale"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "没有变化前后流程线索 华为 FreeClip 2 耳机联动豆包功能全量上线，鸿蒙手机支持小艺/豆包双智能体 [{\"type\":\"number\",\"text\":\"华为 FreeClip 2 系列耳机联动豆包功能已全量上线。下载华为智慧音频和豆包 App 后，鸿蒙手机可实现小艺与豆包双智能体在线，苹果/安卓用户也能通过豆包进行消息播报和面对面翻译。该耳机已推送鸿蒙 HarmonyOS 6.1.0.370 版本升级，新增支持 Harmony..."
+  source_excerpt: "华为耳机联动豆包功能全量上线，鸿蒙手机也可以小艺 / 豆包双智能体在线 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > 鸿蒙之家 > 鸿蒙新闻 华为耳机联动豆包功..."
   missing_fields: ["product_form"]
 
 signal_owner: "华为 FreeClip 2 耳机联动豆包功能全量"

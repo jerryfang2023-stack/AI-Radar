@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "[{\"type\":\"supporting_context\",\"text\":\"OpenAI 在欧盟普通法院的商标诉讼中败诉，法院维持了欧盟知识产权局（EUIPO）的部分驳回决定。法院裁定，对于软件和云计算等服务，\\\"OPENAI\\\"中的\\\"open\\\"会被公众理解为\\\"自由可访问\\\"，与\\\"AI\\\"组合后仅具描述性，缺乏商标所需的显著性。该判决仍可上诉至欧洲法院。\",\"supports\":[\"signal_card_candidate\"..."
+  source_excerpt: "OpenAI 在欧盟法院商标纠纷中败诉，\"OPENAI\"因缺乏显著性被驳回注册 OpenAI 在欧盟法院商标纠纷中败诉，\"OPENAI\"因缺乏显著性被驳回注册 OpenAI 在欧盟普通法院的商标诉讼中败诉，法院维持了欧盟知识产权局（EUIPO）的部分驳回决定。法院裁定，对于软件和云计算等服务，\"OPENAI\"中的\"open\"会被公众理解为\"自由可访问\"，与\"AI\"组合后仅具描述性，缺乏商标所需的显著性。该判决仍可上诉至欧洲法院。"
   missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "Dpa-International"

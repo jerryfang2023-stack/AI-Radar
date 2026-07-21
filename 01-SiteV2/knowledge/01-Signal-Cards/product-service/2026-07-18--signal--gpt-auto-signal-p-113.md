@@ -42,18 +42,18 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["it_security_team"]
-  team_or_function: ["it_security"]
-  specific_task: []
-  business_action: ["governance_requirement"]
+  buyer_or_user: ["sales_team", "it_security_team"]
+  team_or_function: ["sales", "it_security"]
+  specific_task: ["sales_lead_research"]
+  business_action: ["customer_deployment", "procurement_signal", "governance_requirement"]
   product_form: []
   delivery_model: []
   pain_or_constraint: ["permission_boundary"]
-  adoption_evidence: ["deployment_scale"]
+  adoption_evidence: ["deployment_scale", "procurement_contract"]
   source_evidence_type: ["business_media"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "GPT-5.6 在获得完全访问权限时删除用户文件，OpenAI 称不应发生但确实发生了 GPT-5.6 is deleting user files when given full access, and OpenAI says it shouldn&#039;t but did 原始来源标题显示：GPT-5.6 在获得完全访问权限时删除用户文件，OpenAI 称不应发生但确实发生了。"
-  missing_fields: ["specific_task", "product_form", "delivery_model"]
+  source_excerpt: "## 价值描述 GPT 的产品动作体现了 AI 能力从技术展示走向可调用、可部署或可采购的服务形态。"
+  missing_fields: ["product_form", "delivery_model"]
 
 signal_owner: "GPT"
 

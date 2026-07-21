@@ -52,7 +52,7 @@ opportunity_signals:
   adoption_evidence: ["partnership_announcement"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "Supermicro 联合 Red Hat 和 Everpure 推出经验证的边缘 AI Kubernetes 一体机 Supermicro Simplifies Edge AI Deployments with Validated Kubernetes Appliances with Red Hat and Everpure Supermicro 于 7 月 8 日发布与 Red Hat、Everpure 合作验证的 Kuberne..."
+  source_excerpt: "Supermicro 联合 Red Hat 和 Everpure 推出经验证的边缘 AI Kubernetes 一体机 Supermicro Simplifies Edge AI Deployments with Validated Kubernetes Appliances with Red Hat and Everpure Bounded direct-source recall from QC-reviewed original..."
   missing_fields: ["specific_task", "product_form", "delivery_model"]
 
 signal_owner: "Supermicro"

@@ -41,9 +41,9 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["enterprise_ai_owner"]
-  team_or_function: []
-  specific_task: []
+  buyer_or_user: ["sales_team", "enterprise_ai_owner", "it_security_team"]
+  team_or_function: ["sales", "it_security"]
+  specific_task: ["sales_lead_research"]
   business_action: ["funding_round", "customer_deployment", "product_launch", "pricing_change"]
   product_form: []
   delivery_model: []
@@ -51,8 +51,8 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: ["funding_news", "business_media"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Thinking Machines Lab 发布首个自研开源模型 Inkling Thinking Machines Lab 发布首个自研开源模型 Inkling Thinking Machines Lab 发布其首个自研模型 Inkling，采用混合专家（MoE）架构，总参数 9750 亿，每任务仅激活约 410 亿参数。"
-  missing_fields: ["specific_task", "product_form", "adoption_evidence", "delivery_model"]
+  source_excerpt: "Thinking Machines Lab 发布首个自研开源模型 Inkling Thinking Machines Lab 发布首个自研开源模型 Inkling Thinking Machines Lab 发布其首个自研模型 Inkling，采用混合专家（MoE）架构，总参数 9750 亿，每任务仅激活约 410 亿参数。该模型为开源权重，支持企业通过定制平台 Tinker 进行微调，运行成本约为 Nvidia Nemotron 3..."
+  missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "Thinking Machines Lab"
 

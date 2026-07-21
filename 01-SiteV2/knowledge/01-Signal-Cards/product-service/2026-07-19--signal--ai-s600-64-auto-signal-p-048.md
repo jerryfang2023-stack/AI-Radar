@@ -46,13 +46,13 @@ opportunity_signals:
   specific_task: []
   business_action: ["customer_deployment", "product_launch", "pricing_change"]
   product_form: []
-  delivery_model: []
+  delivery_model: ["enterprise_subscription"]
   pain_or_constraint: ["api_cost_spike"]
   adoption_evidence: ["customer_metric"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "沐曦股份发布 AI 超节点曦景 S600：单机柜 64 卡高密度部署，可扩展至万卡级别 沐曦股份发布 AI 超节点曦景 S600：单机柜 64 卡高密度部署，可扩展至万卡级别 沐曦股份在 WAIC 2026 上发布新一代 AI 超节点新品曦景 S600，面向大模型训练、推理及智算中心建设。"
-  missing_fields: ["buyer_or_user", "specific_task", "product_form", "delivery_model"]
+  source_excerpt: "沐曦股份发布 AI 超节点曦景 S600：单机柜 64 卡高密度部署，可扩展至万卡级别 沐曦股份发布 AI 超节点曦景 S600：单机柜 64 卡高密度部署，可扩展至万卡级别 沐曦股份在 WAIC 2026 上发布新一代 AI 超节点新品曦景 S600，面向大模型训练、推理及智算中心建设。该产品实现单机柜 64 卡高密度部署，通过柜内全互连架构降低数据交互时延，集群规模可灵活扩展至万卡级别，并采用整机柜一体化交付与 0 线缆直连设计以..."
+  missing_fields: ["buyer_or_user", "specific_task", "product_form"]
 
 signal_owner: "沐曦股份"
 

@@ -41,17 +41,17 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["engineering_team"]
-  team_or_function: ["engineering"]
-  specific_task: ["internal_tool_building"]
-  business_action: ["product_launch", "partnership_integration", "research_benchmark"]
+  buyer_or_user: ["sales_team", "engineering_team"]
+  team_or_function: ["sales", "engineering"]
+  specific_task: ["sales_lead_research", "internal_tool_building"]
+  business_action: ["customer_deployment", "product_launch", "partnership_integration", "research_benchmark"]
   product_form: []
   delivery_model: []
   pain_or_constraint: []
   adoption_evidence: ["customer_metric"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "BrainCo 强脑科技发布全球首个脑控机器人训练平台，10 分钟解锁意念控制 BrainCo 强脑科技发布全球首个脑控机器人训练平台，10 分钟解锁意念控制 BrainCo 强脑科技在2026年世界人工智能大会上发布全球首个面向脑控机器人科研的一体化AI科研平台--BrainCo脑控机器人训练平台。"
+  source_excerpt: "BrainCo 强脑科技发布全球首个脑控机器人训练平台，10 分钟解锁意念控制 BrainCo 强脑科技发布全球首个脑控机器人训练平台，10 分钟解锁意念控制 BrainCo 强脑科技在2026年世界人工智能大会上发布全球首个面向脑控机器人科研的一体化AI科研平台--BrainCo脑控机器人训练平台。该平台将脑电采集、神经解码与机器人执行整合为统一软件流程，研发人员无需脑机接口背景即可在10分钟内通过意念控制机器人。平台已支持接入人形..."
   missing_fields: ["product_form", "delivery_model"]
 
 signal_owner: "BrainCo 强脑科技"

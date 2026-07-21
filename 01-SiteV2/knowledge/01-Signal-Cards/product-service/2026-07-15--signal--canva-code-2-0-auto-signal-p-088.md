@@ -41,17 +41,17 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["engineering_team"]
-  team_or_function: ["engineering"]
-  specific_task: ["internal_tool_building"]
+  buyer_or_user: ["sales_team", "engineering_team"]
+  team_or_function: ["sales", "engineering"]
+  specific_task: ["sales_lead_research", "internal_tool_building"]
   business_action: ["customer_deployment", "product_launch"]
   product_form: []
-  delivery_model: ["template_pack"]
+  delivery_model: ["enterprise_subscription", "template_pack"]
   pain_or_constraint: ["latency_sensitive"]
   adoption_evidence: ["customer_metric", "deployment_scale"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "Canva Code 2.0 上线：代码生成提速 75%，从提示到发布提速 30% Canva Code 2.0 上线：代码生成提速 75%，从提示到发布提速 30% Canva 发布 Canva Code 2.0，一款 AI 氛围编程平台，让不懂代码的用户通过聊天交互直接制作互动网页和小游戏。"
+  source_excerpt: "Canva Code 2.0 上线：代码生成提速 75%，从提示到发布提速 30% Canva Code 2.0 上线：代码生成提速 75%，从提示到发布提速 30% Canva 发布 Canva Code 2.0，一款 AI 氛围编程平台，让不懂代码的用户通过聊天交互直接制作互动网页和小游戏。新版本新增超过 50 个模板，支持 HTML 导入和实时协作，代码生成速度提升 75%，从提示到发布速度提升 30%。"
   missing_fields: ["product_form"]
 
 signal_owner: "Canva Code 2.0"

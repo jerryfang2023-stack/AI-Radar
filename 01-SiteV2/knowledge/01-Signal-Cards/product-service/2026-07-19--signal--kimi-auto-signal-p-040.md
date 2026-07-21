@@ -41,18 +41,18 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: []
-  team_or_function: []
-  specific_task: []
-  business_action: []
+  buyer_or_user: ["sales_team"]
+  team_or_function: ["sales"]
+  specific_task: ["sales_lead_research"]
+  business_action: ["customer_deployment", "product_launch"]
   product_form: []
-  delivery_model: []
+  delivery_model: ["enterprise_subscription"]
   pain_or_constraint: []
   adoption_evidence: ["customer_metric"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "马斯克透露 Grok 4.6 参数规模达 2 万亿，下周完成初始训练 马斯克透露 Grok 4.6 参数规模达 2 万亿，下周完成初始训练 xAI 正在训练的下一代 Grok 4.6 模型参数规模达 2 万亿，预计下周完成初始训练。"
-  missing_fields: ["buyer_or_user", "specific_task", "product_form", "delivery_model"]
+  source_excerpt: "马斯克透露 Grok 4.6 参数规模达 2 万亿，下周完成初始训练 马斯克透露 Grok 4.6 参数规模达 2 万亿，下周完成初始训练 xAI 正在训练的下一代 Grok 4.6 模型参数规模达 2 万亿，预计下周完成初始训练。马斯克称该模型在各方面优于当前 1.5 万亿参数的 Grok 4.5，同时推理速度和 Token 效率接近上一代，并猜测其可能超越月之暗面的 Kimi 3。xAI 尚未公布正式发布时间与技术指标。"
+  missing_fields: ["product_form"]
 
 signal_owner: "月之暗面 / Kimi"
 

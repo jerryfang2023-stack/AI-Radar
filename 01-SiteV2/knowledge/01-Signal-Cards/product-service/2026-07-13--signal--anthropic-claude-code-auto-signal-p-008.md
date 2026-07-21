@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: ["customer_metric", "deployment_scale"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "GPT-5.6 Sol 部署新推理优化，节省的计算资源预计使可用额度提升约 10%。"
+  source_excerpt: "OpenAI 优化 GPT-5.6 Sol 并放宽使用限额，Anthropic 延长 Fable 5 推广期 OpenAI 优化 GPT-5.6 Sol 并放宽使用限额，Anthropic 延长 Fable 5 推广期 OpenAI 正式向所有用户开放 GPT-5.6 系列全部三款模型（Sol、Terra、Luna），上线后流量达此前峰值两倍。为缓解压力，OpenAI 多次重置 ChatGPT Work 和 Codex 用户额度，并临..."
   missing_fields: ["product_form"]
 
 signal_owner: "Anthropic / Claude Code"

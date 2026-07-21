@@ -41,8 +41,8 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team"]
-  team_or_function: ["sales"]
+  buyer_or_user: ["sales_team", "it_security_team"]
+  team_or_function: ["sales", "it_security"]
   specific_task: ["sales_lead_research"]
   business_action: ["funding_round", "customer_deployment", "procurement_signal", "pricing_change"]
   product_form: []
@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: ["procurement_contract"]
   source_evidence_type: ["funding_news", "business_media"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Upper90此前曾为Crusoe的GPU采购提供融资，如今转向押注开源模型推理基础设施。"
+  source_excerpt: "首家GPU金融商转向推理芯片：General Compute获4亿美元贷款，以SN50芯片为抵押 首家GPU金融商转向推理芯片：General Compute获4亿美元贷款，以SN50芯片为抵押 AI推理云初创公司General Compute从科技投资公司Upper90获得4亿美元贷款，可能是首笔以推理专用芯片为抵押的交易。其SN50芯片专为推理设计，功耗低且无需水冷，宣称推理速度比基于GPU的云服务快16倍。Upper90此前曾为..."
   missing_fields: ["product_form"]
 
 signal_owner: "Founded by"

@@ -41,18 +41,18 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: []
-  team_or_function: []
-  specific_task: []
+  buyer_or_user: ["sales_team"]
+  team_or_function: ["sales"]
+  specific_task: ["sales_lead_research"]
   business_action: ["product_launch"]
   product_form: []
-  delivery_model: []
+  delivery_model: ["enterprise_subscription"]
   pain_or_constraint: ["latency_sensitive"]
   adoption_evidence: ["customer_metric", "deployment_scale"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "阿里通义实验室发布 Wan-Streamer v0.2，AI 视频电话响应延迟仅 550ms 阿里通义实验室发布 Wan-Streamer v0.2，AI 视频电话响应延迟仅 550ms 阿里通义实验室发布 Wan-Streamer v0.2，端到端响应延迟仅 550ms。"
-  missing_fields: ["buyer_or_user", "specific_task", "product_form", "delivery_model"]
+  source_excerpt: "阿里通义实验室发布 Wan-Streamer v0.2，AI 视频电话响应延迟仅 550ms 阿里通义实验室发布 Wan-Streamer v0.2，AI 视频电话响应延迟仅 550ms 阿里通义实验室发布 Wan-Streamer v0.2，端到端响应延迟仅 550ms。该模型将输出分辨率从 v0.1 的 192×336 提升至 640×368 @ 25FPS，并通过\"快慢分工、时序重叠\"架构在提升画质的同时不增加用户可感知延迟。"
+  missing_fields: ["product_form"]
 
 signal_owner: "阿里通义实验室"
 

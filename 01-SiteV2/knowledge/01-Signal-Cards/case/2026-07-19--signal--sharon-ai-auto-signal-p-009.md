@@ -45,15 +45,15 @@ opportunity_signals:
   buyer_or_user: ["sales_team"]
   team_or_function: ["sales"]
   specific_task: ["sales_lead_research"]
-  business_action: ["customer_deployment"]
+  business_action: ["funding_round", "customer_deployment", "product_launch"]
   product_form: []
   delivery_model: []
   pain_or_constraint: []
-  adoption_evidence: []
-  source_evidence_type: ["first_party_announcement"]
+  adoption_evidence: ["procurement_contract"]
+  source_evidence_type: ["funding_news", "first_party_announcement"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "[{\"type\":\"funding\",\"text\":\"Sharon AI Announces US$1.32 Billion Five-Year Cloud Computing Service Agreement - SHARON AI # Sharon AI Announces US$1.32 Billion Five-Year Cloud Computing Service Agreement - Published July 1..."
-  missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
+  source_excerpt: "/ query=AI server startup funding GPU cluster customers / intent=find_startups / path=ai_hardware_original Sharon AI Announces US$1."
+  missing_fields: ["product_form", "delivery_model"]
 
 signal_owner: "Sharon AI"
 

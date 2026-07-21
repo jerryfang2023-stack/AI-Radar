@@ -41,18 +41,18 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["engineering_team"]
-  team_or_function: ["engineering"]
-  specific_task: ["internal_tool_building"]
-  business_action: ["product_launch"]
+  buyer_or_user: ["sales_team", "engineering_team"]
+  team_or_function: ["sales", "engineering"]
+  specific_task: ["sales_lead_research", "internal_tool_building"]
+  business_action: ["customer_deployment", "product_launch", "procurement_signal"]
   product_form: []
   delivery_model: []
   pain_or_constraint: ["workflow_integration"]
-  adoption_evidence: []
+  adoption_evidence: ["procurement_contract"]
   source_evidence_type: ["technical_blog"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Claude Code v2.1.215 发布 Claude Code v2.1.215 发布 Claude Code v2.1.215 发布，该终端智能编码工具可通过自然语言指令执行日常任务、解释复杂代码并处理 git 工作流。"
-  missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
+  source_excerpt: "Claude Code v2.1.215 发布 Claude Code v2.1.215 发布 Claude Code v2.1.215 发布，该终端智能编码工具可通过自然语言指令执行日常任务、解释复杂代码并处理 git 工作流。新版本未在正文中提及具体功能变更或修复细节。"
+  missing_fields: ["product_form", "delivery_model"]
 
 signal_owner: "Anthropic / Claude Code"
 

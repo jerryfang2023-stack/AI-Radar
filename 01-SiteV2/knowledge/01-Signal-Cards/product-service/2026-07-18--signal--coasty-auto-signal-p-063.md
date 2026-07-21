@@ -43,18 +43,18 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: []
-  team_or_function: []
-  specific_task: []
-  business_action: []
+  buyer_or_user: ["sales_team"]
+  team_or_function: ["sales"]
+  specific_task: ["sales_lead_research"]
+  business_action: ["customer_deployment", "product_launch", "partnership_integration", "procurement_signal"]
   product_form: ["api"]
   delivery_model: ["api_usage_based"]
   pain_or_constraint: []
-  adoption_evidence: []
-  source_evidence_type: []
+  adoption_evidence: ["partnership_announcement", "procurement_contract"]
+  source_evidence_type: ["business_media"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Launch HN：Coasty (YC S26) – 计算机操作智能体 API Launch HN: Coasty (YC S26) – An API For Computer-use Agents - Good Sidekick 原始来源标题显示：Launch HN：Coasty (YC S26) – 计算机操作智能体 API。"
-  missing_fields: ["buyer_or_user", "specific_task", "adoption_evidence"]
+  source_excerpt: "Launch HN：Coasty (YC S26) – 计算机操作智能体 API Launch HN: Coasty (YC S26) – An API For Computer-use Agents - Good Sidekick Launch HN: Coasty (YC S26) – An API For Computer-use Agents - Good Sidekick # Launch HN: Coasty (YC S2..."
+  missing_fields: []
 
 signal_owner: "Coasty"
 

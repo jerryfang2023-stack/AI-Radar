@@ -46,13 +46,13 @@ opportunity_signals:
   specific_task: []
   business_action: ["customer_deployment", "product_launch", "partnership_integration"]
   product_form: []
-  delivery_model: []
+  delivery_model: ["enterprise_subscription"]
   pain_or_constraint: ["workflow_integration"]
-  adoption_evidence: ["deployment_scale", "partnership_announcement"]
+  adoption_evidence: ["customer_metric", "deployment_scale", "partnership_announcement"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "中国气象局发布\"妈祖\"风云卫星 AI 工具箱 中国气象局发布\"妈祖\"风云卫星 AI 工具箱 中国气象局在2026世界人工智能大会气象专会上正式发布\"妈祖\"风云卫星 AI 工具箱（MAZU-FengYun Satellite AI Box）。"
-  missing_fields: ["buyer_or_user", "specific_task", "product_form", "delivery_model"]
+  source_excerpt: "中国气象局发布\"妈祖\"风云卫星 AI 工具箱 中国气象局发布\"妈祖\"风云卫星 AI 工具箱 中国气象局在2026世界人工智能大会气象专会上正式发布\"妈祖\"风云卫星 AI 工具箱（MAZU-FengYun Satellite AI Box）。该工具箱采用软硬件一体化设计，集成卫星数据接收、AI 推理、多源数据融合和业务应用等功能，支持互联网、直收站、CMACast 及野外应急等多种场景，实现卫星数据获取到业务应用的\"一站式\"闭环处理。"
+  missing_fields: ["buyer_or_user", "specific_task", "product_form"]
 
 signal_owner: "中国气象局"
 

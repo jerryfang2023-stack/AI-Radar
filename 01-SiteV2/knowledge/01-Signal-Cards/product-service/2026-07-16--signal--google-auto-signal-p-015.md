@@ -41,18 +41,18 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: []
-  team_or_function: []
-  specific_task: []
-  business_action: ["funding_round", "product_launch"]
+  buyer_or_user: ["sales_team", "engineering_team"]
+  team_or_function: ["sales", "engineering"]
+  specific_task: ["sales_lead_research", "internal_tool_building"]
+  business_action: ["funding_round", "customer_deployment", "product_launch"]
   product_form: []
   delivery_model: []
   pain_or_constraint: []
   adoption_evidence: []
-  source_evidence_type: ["funding_news"]
+  source_evidence_type: ["funding_news", "business_media"]
   evidence_basis: "raw_source_text"
   source_excerpt: "Google 发布 LiteRT.js：通过 WebGPU 在浏览器中运行 .tflite 模型的 JavaScript 绑定 Google 发布 LiteRT.js：通过 WebGPU 在浏览器中运行 .tflite 模型的 JavaScript 绑定 Google 于 2026 年 7 月 9 日发布 LiteRT.js，这是其端侧推理库 LiteRT 的 JavaScript 绑定，通过 WebAssembly 在浏览器中直接执..."
-  missing_fields: ["buyer_or_user", "specific_task", "product_form", "adoption_evidence", "delivery_model"]
+  missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "Google"
 

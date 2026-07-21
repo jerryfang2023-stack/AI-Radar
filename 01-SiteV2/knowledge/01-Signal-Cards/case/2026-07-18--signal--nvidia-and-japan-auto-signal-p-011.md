@@ -45,14 +45,14 @@ opportunity_signals:
   buyer_or_user: ["enterprise_ai_owner"]
   team_or_function: []
   specific_task: []
-  business_action: ["funding_round", "customer_deployment", "product_launch"]
+  business_action: ["funding_round", "customer_deployment", "product_launch", "pricing_change"]
   product_form: []
   delivery_model: []
-  pain_or_constraint: ["workflow_integration", "context_management"]
+  pain_or_constraint: ["workflow_integration", "api_cost_spike", "context_management"]
   adoption_evidence: []
   source_evidence_type: ["funding_news", "business_media"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "英伟达与日本发布全球首个国家级AI基础设施——Noetra联盟将建设140MW Rubin AI工厂，配备27,500块GPU Nvidia and Japan unveil world's first national AI infrastructure — Noetra consortium to build a 140MW Rubin AI factory with 27,500 GPUs | Tom's Hardware Nv..."
+  source_excerpt: "Nvidia 与日本推出全球首个国家级 AI 基础设施——Noetra 联盟将建设 140MW Rubin AI 工厂，配备 27,500 块 GPU Nvidia and Japan unveil world's first national AI infrastructure — Noetra consortium to build a 140MW Rubin AI factory with 27,500 GPUs | Tom's..."
   missing_fields: ["specific_task", "product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "Nvidia and Japan"

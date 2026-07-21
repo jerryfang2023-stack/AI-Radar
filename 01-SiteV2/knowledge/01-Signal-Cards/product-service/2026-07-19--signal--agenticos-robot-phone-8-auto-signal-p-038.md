@@ -46,13 +46,13 @@ opportunity_signals:
   specific_task: []
   business_action: ["product_launch", "partnership_integration"]
   product_form: ["agent_workbench"]
-  delivery_model: []
+  delivery_model: ["enterprise_subscription"]
   pain_or_constraint: ["workflow_integration"]
   adoption_evidence: ["partnership_announcement"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "荣耀发布伙伴型多模态智能体操作系统 AgenticOS，Robot Phone 8 月首发内核 荣耀发布伙伴型多模态智能体操作系统 AgenticOS，Robot Phone 8 月首发内核 荣耀在 2026 世界人工智能大会上发布 AgenticOS，支持意图驱动、自然交互等四大特征，拥有行业首个系统级 Agent 架构。"
-  missing_fields: ["buyer_or_user", "specific_task", "delivery_model"]
+  source_excerpt: "荣耀发布伙伴型多模态智能体操作系统 AgenticOS，Robot Phone 8 月首发内核 荣耀发布伙伴型多模态智能体操作系统 AgenticOS，Robot Phone 8 月首发内核 荣耀在 2026 世界人工智能大会上发布 AgenticOS，支持意图驱动、自然交互等四大特征，拥有行业首个系统级 Agent 架构。8 月发布的 Robot Phone 将首发其内核，Q4 的 Magic9 系列将推出尝鲜版。Robot Pho..."
+  missing_fields: ["buyer_or_user", "specific_task"]
 
 signal_owner: "荣耀"
 

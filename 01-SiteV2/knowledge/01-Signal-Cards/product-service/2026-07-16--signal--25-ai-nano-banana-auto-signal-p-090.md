@@ -41,18 +41,18 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: []
-  team_or_function: []
-  specific_task: []
+  buyer_or_user: ["sales_team"]
+  team_or_function: ["sales"]
+  specific_task: ["sales_lead_research"]
   business_action: ["customer_deployment", "product_launch"]
   product_form: []
-  delivery_model: []
+  delivery_model: ["enterprise_subscription"]
   pain_or_constraint: []
   adoption_evidence: ["deployment_scale"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "该功能将在未来几周内陆续在英文版中推出，面向所有目前支持 AI 模式图像创建的地区。"
-  missing_fields: ["buyer_or_user", "specific_task", "product_form", "delivery_model"]
+  source_excerpt: "谷歌图片服务 25 周年，AI 概览新增 Nano Banana 生图功能 谷歌图片服务 25 周年，AI 概览新增 Nano Banana 生图功能 谷歌庆祝图片服务上线 25 周年，在 AI 概览中新增图像生成功能，用户可直接调用最新的 Nano Banana 模型，将文本提示转化为原创的高质量自定义图像。该功能将在未来几周内陆续在英文版中推出，面向所有目前支持 AI 模式图像创建的地区。"
+  missing_fields: ["product_form"]
 
 signal_owner: "谷歌图片服务 25 周年，AI 概览新增 Nano Banana 生图功能"
 

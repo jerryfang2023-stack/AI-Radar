@@ -46,13 +46,13 @@ opportunity_signals:
   specific_task: []
   business_action: ["customer_deployment", "product_launch", "partnership_integration"]
   product_form: []
-  delivery_model: []
+  delivery_model: ["enterprise_subscription"]
   pain_or_constraint: ["workflow_integration"]
   adoption_evidence: ["partnership_announcement"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "此芯发布桌面级AI超算AGX Station，支持多形态算力卡 此芯发布桌面级AI超算AGX Station，支持多形态算力卡 此芯发布桌面级AI超算AGX Station，基于自研P1处理器，采用模组化架构，支持M.2、MXM、PCIe等多种算力卡。"
-  missing_fields: ["buyer_or_user", "specific_task", "product_form", "delivery_model"]
+  source_excerpt: "此芯发布桌面级AI超算AGX Station，支持多形态算力卡 此芯发布桌面级AI超算AGX Station，支持多形态算力卡 此芯发布桌面级AI超算AGX Station，基于自研P1处理器，采用模组化架构，支持M.2、MXM、PCIe等多种算力卡。该设备三维150×150×60mm，算力可扩展至160-320TOPS，支持70B至150B参数大模型原生推理。"
+  missing_fields: ["buyer_or_user", "specific_task", "product_form"]
 
 signal_owner: "此芯"
 

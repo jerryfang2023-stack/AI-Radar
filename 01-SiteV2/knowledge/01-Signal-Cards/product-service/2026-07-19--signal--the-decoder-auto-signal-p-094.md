@@ -42,18 +42,18 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: []
-  team_or_function: []
-  specific_task: []
-  business_action: ["pricing_change"]
+  buyer_or_user: ["sales_team"]
+  team_or_function: ["sales"]
+  specific_task: ["sales_lead_research"]
+  business_action: ["customer_deployment", "procurement_signal", "pricing_change"]
   product_form: ["api"]
   delivery_model: ["api_usage_based"]
   pain_or_constraint: ["api_cost_spike", "latency_sensitive"]
-  adoption_evidence: ["customer_metric", "deployment_scale"]
+  adoption_evidence: ["customer_metric", "deployment_scale", "procurement_contract"]
   source_evidence_type: ["business_media"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Anthropic 在 Max 和 Team Premium 中大幅降低 Claude Fable 5 使用限制，并推动 Pro 用户转向 API 定价 Anthropic slashes Claude Fable 5 limits in Max and Team Premium and pushes Pro users toward API pricing 原始来源标题显示：Anthropic 在 Max 和 Team Premiu..."
-  missing_fields: ["buyer_or_user", "specific_task"]
+  source_excerpt: "Anthropic 在 Max 和 Team Premium 中大幅降低 Claude Fable 5 使用限制，并推动 Pro 用户转向 API 定价 Anthropic slashes Claude Fable 5 limits in Max and Team Premium and pushes Pro users toward API pricing Anthropic will include Claude Fable 5 ..."
+  missing_fields: []
 
 signal_owner: "The-Decoder"
 

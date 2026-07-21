@@ -42,18 +42,18 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["engineering_team"]
-  team_or_function: ["engineering"]
-  specific_task: ["internal_tool_building"]
-  business_action: ["product_launch"]
+  buyer_or_user: ["sales_team", "engineering_team", "insurance_team"]
+  team_or_function: ["sales", "engineering", "insurance_operations"]
+  specific_task: ["sales_lead_research", "internal_tool_building", "insurance_claim_review"]
+  business_action: ["customer_deployment", "product_launch", "procurement_signal"]
   product_form: []
   delivery_model: []
   pain_or_constraint: []
-  adoption_evidence: []
+  adoption_evidence: ["procurement_contract"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "Claude Code 现使用 Rust 编写的 Bun Claude Code uses Bun written in Rust now 原文称，181 (released June 17th) and later use the Rust port of Bun."
-  missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
+  source_excerpt: "## 价值描述 Bun 的产品动作体现了 AI 能力从技术展示走向可调用、可部署或可采购的服务形态。"
+  missing_fields: ["product_form", "delivery_model"]
 
 signal_owner: "Bun"
 

@@ -42,17 +42,17 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team"]
+  buyer_or_user: ["sales_team", "enterprise_ai_owner"]
   team_or_function: ["sales"]
   specific_task: ["sales_lead_research"]
-  business_action: ["funding_round", "customer_deployment", "pricing_change"]
+  business_action: ["customer_deployment", "pricing_change"]
   product_form: []
   delivery_model: []
   pain_or_constraint: ["api_cost_spike"]
   adoption_evidence: []
-  source_evidence_type: ["funding_news", "business_media"]
+  source_evidence_type: ["business_media"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "[{\"type\":\"funding\",\"text\":\"Netflix now uses AI in about 300 productions, mostly in post-production."
+  source_excerpt: "Co-CEO Ted Sarandos put specific numbers to the effort: the docuseries \"The American Experiment\" includes 17 minutes of AI-assisted footage, produced twice as fast at half the cost."
   missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "The-Decoder"

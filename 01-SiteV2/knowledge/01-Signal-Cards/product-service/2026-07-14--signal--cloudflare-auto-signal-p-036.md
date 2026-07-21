@@ -41,18 +41,18 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: []
-  team_or_function: []
-  specific_task: []
-  business_action: ["product_launch"]
+  buyer_or_user: ["sales_team"]
+  team_or_function: ["sales"]
+  specific_task: ["sales_lead_research"]
+  business_action: ["customer_deployment", "product_launch"]
   product_form: []
-  delivery_model: []
+  delivery_model: ["self_serve_saas"]
   pain_or_constraint: []
   adoption_evidence: ["customer_metric", "deployment_scale"]
   source_evidence_type: ["technical_blog"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Cloudflare 推出 Precursor：通过持续客户端信号检测 AI 智能体行为 Cloudflare 推出 Precursor：通过持续客户端信号检测 AI 智能体行为 Cloudflare 推出 Precursor：通过持续客户端信号检测 AI 智能体行为 Cloudflare 发布 Precursor，一款用于机器人管理的新型持续行为验证引擎。"
-  missing_fields: ["buyer_or_user", "specific_task", "product_form", "delivery_model"]
+  source_excerpt: "Cloudflare 推出 Precursor：通过持续客户端信号检测 AI 智能体行为 Cloudflare 推出 Precursor：通过持续客户端信号检测 AI 智能体行为 Cloudflare 发布 Precursor，一款用于机器人管理的新型持续行为验证引擎。它通过将用户会话级别的行为转化为机器人检测信号，能够更精确地识别高级自动化行为，同时减少对合法用户的干扰。Precursor 可全程追踪人类与 AI 智能体在完整用户旅..."
+  missing_fields: ["product_form"]
 
 signal_owner: "Cloudflare"
 

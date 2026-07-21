@@ -44,14 +44,14 @@ opportunity_signals:
   buyer_or_user: ["enterprise_ai_owner"]
   team_or_function: []
   specific_task: []
-  business_action: ["product_launch", "partnership_integration", "pricing_change"]
+  business_action: ["customer_deployment", "product_launch", "partnership_integration", "pricing_change"]
   product_form: ["model_gateway"]
   delivery_model: []
   pain_or_constraint: ["api_cost_spike", "model_routing_complexity"]
   adoption_evidence: ["deployment_scale"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "Anthropic 高管：因成本顾虑削减 AI 使用是错误选择 Anthropic 高管：因成本顾虑削减 AI 使用是错误选择 Anthropic 高管在红杉资本播客中警告，企业因成本上升而减少 AI 投入是错误做法，并观察到部分客户已在这么做。"
+  source_excerpt: "Anthropic 高管：因成本顾虑削减 AI 使用是错误选择 Anthropic 高管：因成本顾虑削减 AI 使用是错误选择 Anthropic 高管在红杉资本播客中警告，企业因成本上升而减少 AI 投入是错误做法，并观察到部分客户已在这么做。平台工程负责人强调，设定预算上限会限制创新，企业应通过更高效的方式使用 AI 而非直接削减。Anthropic 正考虑在 Claude 生态内推出模型路由功能，以帮助客户根据任务自动分配模型、..."
   missing_fields: ["specific_task", "delivery_model"]
 
 signal_owner: "Anthropic 高管：因成本顾虑削减 AI 使用是错误选择"

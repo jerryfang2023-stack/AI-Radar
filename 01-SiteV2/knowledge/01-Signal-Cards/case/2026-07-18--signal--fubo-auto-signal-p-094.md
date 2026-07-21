@@ -42,7 +42,7 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team"]
+  buyer_or_user: ["sales_team", "enterprise_ai_owner"]
   team_or_function: ["sales"]
   specific_task: ["sales_lead_research"]
   business_action: ["customer_deployment", "pricing_change"]
@@ -52,7 +52,7 @@ opportunity_signals:
   adoption_evidence: ["pricing_page"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "[{\"type\":\"company_action\",\"text\":\"Fubo subscribers still don't have Versant channels.\",\"supports\":[\"signal_card_candidate\",\"relationship_graph_input\",\"business_change\",\"case\",\"trend_candidate_context\"],\"importance\":\"med..."
+  source_excerpt: "## 价值描述 Fubo 的案例为企业评估 AI 在真实流程中的部署方式、成本边界和结果指标提供了可核查样本。"
   missing_fields: ["product_form", "delivery_model"]
 
 signal_owner: "Fubo"

@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "IT之家 7 月 13 日消息，小鹏汽车今日宣布，小鹏 MONA L03 将于北京时间 7 月 16 日 19:00 在慕尼黑全球正式上市发布，这是小鹏首款中国与欧洲同步上市、同步发布的全球车型。"
+  source_excerpt: "小鹏 MONA L03 将于 7 月 16 日慕尼黑全球上市，同步公布物理 AI 新进展 小鹏 MONA L03 将于 7 月 16 日慕尼黑全球上市，同步公布物理 AI 新进展 小鹏汽车宣布 MONA L03 将于 7 月 16 日在慕尼黑全球上市，定位\"年轻人的第一台智能时尚 SUV\"，预售价 14.38 万元起。该车提供纯电与增程双动力，搭载 1500TOPS 算力图灵芯片与第二代 VLA 智驾系统。纯电版 CLTC 续航 52..."
   missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "小鹏汽车"

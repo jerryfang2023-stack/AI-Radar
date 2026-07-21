@@ -51,9 +51,9 @@ opportunity_signals:
   delivery_model: []
   pain_or_constraint: ["workflow_integration"]
   adoption_evidence: []
-  source_evidence_type: ["funding_news"]
+  source_evidence_type: ["funding_news", "business_media"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Sable 从红杉资本融资 4500 万美元，打造替代人类运行产品演示的 AI 智能体 Sable raised $45 million from Sequoia to build an AI that runs product demos instead of humans Sable 获得 4500 万美元融资。"
+  source_excerpt: "Sable 从红杉资本融资 4500 万美元，打造替代人类运行产品演示的 AI 智能体 Sable raised $45 million from Sequoia to build an AI that runs product demos instead of humans Sable raised $45 million from Sequoia to build an AI that runs product demos ins..."
   missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "Sable"

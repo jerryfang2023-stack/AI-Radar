@@ -41,17 +41,17 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["legal_team", "finance_team"]
-  team_or_function: ["legal_compliance", "finance"]
-  specific_task: ["contract_review"]
+  buyer_or_user: ["sales_team", "legal_team", "finance_team"]
+  team_or_function: ["sales", "legal_compliance", "finance"]
+  specific_task: ["sales_lead_research", "contract_review"]
   business_action: ["funding_round", "research_benchmark"]
   product_form: []
   delivery_model: []
-  pain_or_constraint: ["hallucination_risk", "latency_sensitive", "evaluation_gap"]
+  pain_or_constraint: ["workflow_integration", "hallucination_risk", "latency_sensitive", "evaluation_gap"]
   adoption_evidence: ["customer_metric"]
   source_evidence_type: ["funding_news"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Hebbia 测试 Claude Fable 5：金融专用基准测试中准确率提升约 20% [{\"type\":\"number\",\"text\":\"为机构金融提供 AI 平台的 Hebbia 测试了 Claude Fable 5。在其金融专用基准测试中，Claude Fable 5 在文档问答与引证测试上实现了约 20% 的相对准确率提升，创下团队记录；在智能体测试中，它能同时处理多部分请求并逐一溯源。该模型还能从更广泛的数据中推理，得出值..."
+  source_excerpt: "Divya Mehta, the company's founding product manager, spends roughly half her time with its largest investment banking, private equity, and credit customers."
   missing_fields: ["product_form", "delivery_model"]
 
 signal_owner: "Claude"

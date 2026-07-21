@@ -41,18 +41,18 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: []
-  team_or_function: []
-  specific_task: []
+  buyer_or_user: ["sales_team"]
+  team_or_function: ["sales"]
+  specific_task: ["sales_lead_research"]
   business_action: ["product_launch", "open_source_release", "research_benchmark"]
   product_form: []
-  delivery_model: []
+  delivery_model: ["enterprise_subscription"]
   pain_or_constraint: ["evaluation_gap"]
   adoption_evidence: ["customer_metric"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "小米开源 Xiaomi-Robotics-U0：380 亿参数多模态具身生成模型 小米开源 Xiaomi-Robotics-U0：380 亿参数多模态具身生成模型 小米发布并开源 Xiaomi-Robotics-U0，一个 380 亿参数的多模态自回归具身生成基础模型，是具身领域首个\"通吃\"场景生成、具身迁移、机器人交互视频生成和通用文生图/图像编辑四类任务的统一模型。"
-  missing_fields: ["buyer_or_user", "specific_task", "product_form", "delivery_model"]
+  source_excerpt: "小米开源 Xiaomi-Robotics-U0：380 亿参数多模态具身生成模型 小米开源 Xiaomi-Robotics-U0：380 亿参数多模态具身生成模型 小米发布并开源 Xiaomi-Robotics-U0，一个 380 亿参数的多模态自回归具身生成基础模型，是具身领域首个\"通吃\"场景生成、具身迁移、机器人交互视频生成和通用文生图/图像编辑四类任务的统一模型。该模型在 WorldArena 评测基准上以匿名代号 UNIS 取..."
+  missing_fields: ["product_form"]
 
 signal_owner: "小米开源 Xiaomi"
 

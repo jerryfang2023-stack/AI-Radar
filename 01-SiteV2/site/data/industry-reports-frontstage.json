@@ -5,7 +5,7 @@
     "applicationVersion": "OMAP-V1.0.0-independent-column",
     "opportunityMapVersion": "OMAP-V1.0.0-independent-column",
     "activeDate": "2026-07-21",
-    "generatedAt": "2026-07-21T01:28:21.661Z",
+    "generatedAt": "2026-07-21T06:38:43.848Z",
     "windowDays": 30,
     "cardCount": 530
   },
@@ -1586,13 +1586,15 @@
             "sales_lead_research"
           ],
           "pain_or_constraint": [
+            "api_cost_spike",
             "workflow_integration"
           ],
           "product_form": [],
           "delivery_model": [],
           "business_action": [
             "customer_deployment",
-            "funding_round"
+            "funding_round",
+            "pricing_change"
           ]
         }
       }
@@ -1646,12 +1648,14 @@
             "customer_ticket_triage"
           ],
           "pain_or_constraint": [
+            "api_cost_spike",
             "workflow_integration"
           ],
           "product_form": [],
           "delivery_model": [],
           "business_action": [
-            "customer_deployment"
+            "customer_deployment",
+            "pricing_change"
           ]
         }
       }
@@ -1708,7 +1712,9 @@
           "product_form": [],
           "delivery_model": [],
           "business_action": [
-            "customer_deployment"
+            "customer_deployment",
+            "funding_round",
+            "product_launch"
           ]
         }
       }
@@ -1724,6 +1730,7 @@
       "opportunitySignals": {
         "labels": {
           "buyer_or_user": [
+            "enterprise_ai_owner",
             "sales_team"
           ],
           "team_or_function": [
@@ -1732,7 +1739,9 @@
           "specific_task": [
             "sales_lead_research"
           ],
-          "pain_or_constraint": [],
+          "pain_or_constraint": [
+            "api_cost_spike"
+          ],
           "product_form": [],
           "delivery_model": [],
           "business_action": [
@@ -1882,12 +1891,16 @@
         "labels": {
           "buyer_or_user": [
             "enterprise_ai_owner",
-            "it_security_team"
+            "it_security_team",
+            "sales_team"
           ],
           "team_or_function": [
-            "it_security"
+            "it_security",
+            "sales"
           ],
-          "specific_task": [],
+          "specific_task": [
+            "sales_lead_research"
+          ],
           "pain_or_constraint": [
             "hallucination_risk"
           ],
@@ -1924,7 +1937,9 @@
           "product_form": [
             "agent_workbench"
           ],
-          "delivery_model": [],
+          "delivery_model": [
+            "enterprise_subscription"
+          ],
           "business_action": [
             "product_launch",
             "partnership_integration"
@@ -1944,17 +1959,22 @@
         "labels": {
           "buyer_or_user": [
             "engineering_team",
-            "enterprise_ai_owner"
+            "enterprise_ai_owner",
+            "sales_team"
           ],
           "team_or_function": [
-            "engineering"
+            "engineering",
+            "sales"
           ],
           "specific_task": [
-            "internal_tool_building"
+            "internal_tool_building",
+            "sales_lead_research"
           ],
           "pain_or_constraint": [],
           "product_form": [],
-          "delivery_model": [],
+          "delivery_model": [
+            "enterprise_subscription"
+          ],
           "business_action": [
             "customer_deployment"
           ]
@@ -1978,7 +1998,9 @@
             "workflow_integration"
           ],
           "product_form": [],
-          "delivery_model": [],
+          "delivery_model": [
+            "enterprise_subscription"
+          ],
           "business_action": [
             "customer_deployment",
             "product_launch",
@@ -2004,7 +2026,9 @@
             "api_cost_spike"
           ],
           "product_form": [],
-          "delivery_model": [],
+          "delivery_model": [
+            "enterprise_subscription"
+          ],
           "business_action": [
             "customer_deployment",
             "product_launch",
@@ -2024,13 +2048,16 @@
       "opportunitySignals": {
         "labels": {
           "buyer_or_user": [
-            "engineering_team"
+            "engineering_team",
+            "sales_team"
           ],
           "team_or_function": [
-            "engineering"
+            "engineering",
+            "sales"
           ],
           "specific_task": [
-            "internal_tool_building"
+            "internal_tool_building",
+            "sales_lead_research"
           ],
           "pain_or_constraint": [
             "workflow_integration"
@@ -2038,7 +2065,9 @@
           "product_form": [],
           "delivery_model": [],
           "business_action": [
-            "product_launch"
+            "customer_deployment",
+            "product_launch",
+            "procurement_signal"
           ]
         }
       }
@@ -2063,7 +2092,9 @@
             "evaluation_gap"
           ],
           "product_form": [],
-          "delivery_model": [],
+          "delivery_model": [
+            "enterprise_subscription"
+          ],
           "business_action": [
             "product_launch",
             "pricing_change"
@@ -2082,19 +2113,27 @@
       "opportunitySignals": {
         "labels": {
           "buyer_or_user": [
-            "engineering_team"
+            "engineering_team",
+            "insurance_team",
+            "sales_team"
           ],
           "team_or_function": [
-            "engineering"
+            "engineering",
+            "insurance_operations",
+            "sales"
           ],
           "specific_task": [
-            "internal_tool_building"
+            "insurance_claim_review",
+            "internal_tool_building",
+            "sales_lead_research"
           ],
           "pain_or_constraint": [],
           "product_form": [],
           "delivery_model": [],
           "business_action": [
-            "product_launch"
+            "customer_deployment",
+            "product_launch",
+            "procurement_signal"
           ]
         }
       }
@@ -2109,13 +2148,32 @@
       "subject": "Simon Willison's Blog",
       "opportunitySignals": {
         "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
-          "pain_or_constraint": [],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": []
+          "buyer_or_user": [
+            "engineering_team",
+            "sales_team"
+          ],
+          "team_or_function": [
+            "engineering",
+            "sales"
+          ],
+          "specific_task": [
+            "internal_tool_building",
+            "sales_lead_research"
+          ],
+          "pain_or_constraint": [
+            "api_cost_spike"
+          ],
+          "product_form": [
+            "api"
+          ],
+          "delivery_model": [
+            "api_usage_based"
+          ],
+          "business_action": [
+            "customer_deployment",
+            "procurement_signal",
+            "pricing_change"
+          ]
         }
       }
     },
@@ -2130,17 +2188,22 @@
       "opportunitySignals": {
         "labels": {
           "buyer_or_user": [
-            "operations_team"
+            "operations_team",
+            "sales_team"
           ],
           "team_or_function": [
-            "operations"
+            "operations",
+            "sales"
           ],
           "specific_task": [
-            "logistics_coordination"
+            "logistics_coordination",
+            "sales_lead_research"
           ],
           "pain_or_constraint": [],
           "product_form": [],
-          "delivery_model": [],
+          "delivery_model": [
+            "enterprise_subscription"
+          ],
           "business_action": [
             "customer_deployment",
             "product_launch"
@@ -2160,19 +2223,27 @@
         "labels": {
           "buyer_or_user": [
             "engineering_team",
-            "enterprise_ai_owner"
+            "enterprise_ai_owner",
+            "sales_team"
           ],
           "team_or_function": [
-            "engineering"
+            "engineering",
+            "sales"
           ],
           "specific_task": [
-            "internal_tool_building"
+            "internal_tool_building",
+            "sales_lead_research"
           ],
           "pain_or_constraint": [
             "latency_sensitive"
           ],
-          "product_form": [],
-          "delivery_model": [],
+          "product_form": [
+            "api"
+          ],
+          "delivery_model": [
+            "api_usage_based",
+            "enterprise_subscription"
+          ],
           "business_action": [
             "product_launch"
           ]
@@ -2190,12 +2261,16 @@
       "opportunitySignals": {
         "labels": {
           "buyer_or_user": [
-            "it_security_team"
+            "it_security_team",
+            "sales_team"
           ],
           "team_or_function": [
-            "it_security"
+            "it_security",
+            "sales"
           ],
-          "specific_task": [],
+          "specific_task": [
+            "sales_lead_research"
+          ],
           "pain_or_constraint": [
             "context_management",
             "latency_sensitive"
@@ -2203,8 +2278,9 @@
           "product_form": [],
           "delivery_model": [],
           "business_action": [
+            "customer_deployment",
             "product_launch",
-            "governance_requirement"
+            "open_source_release"
           ]
         }
       }
@@ -2219,13 +2295,24 @@
       "subject": "月之暗面 / Kimi",
       "opportunitySignals": {
         "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
+          "buyer_or_user": [
+            "sales_team"
+          ],
+          "team_or_function": [
+            "sales"
+          ],
+          "specific_task": [
+            "sales_lead_research"
+          ],
           "pain_or_constraint": [],
           "product_form": [],
-          "delivery_model": [],
-          "business_action": []
+          "delivery_model": [
+            "enterprise_subscription"
+          ],
+          "business_action": [
+            "customer_deployment",
+            "product_launch"
+          ]
         }
       }
     },
@@ -2240,18 +2327,24 @@
       "opportunitySignals": {
         "labels": {
           "buyer_or_user": [
-            "engineering_team"
+            "engineering_team",
+            "sales_team"
           ],
           "team_or_function": [
-            "engineering"
+            "engineering",
+            "sales"
           ],
           "specific_task": [
-            "internal_tool_building"
+            "internal_tool_building",
+            "sales_lead_research"
           ],
           "pain_or_constraint": [],
-          "product_form": [],
+          "product_form": [
+            "vertical_saas"
+          ],
           "delivery_model": [],
           "business_action": [
+            "customer_deployment",
             "funding_round"
           ]
         }
@@ -2267,12 +2360,20 @@
       "subject": "阿里云",
       "opportunitySignals": {
         "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
+          "buyer_or_user": [
+            "sales_team"
+          ],
+          "team_or_function": [
+            "sales"
+          ],
+          "specific_task": [
+            "sales_lead_research"
+          ],
           "pain_or_constraint": [],
           "product_form": [],
-          "delivery_model": [],
+          "delivery_model": [
+            "enterprise_subscription"
+          ],
           "business_action": [
             "product_launch"
           ]
@@ -2289,14 +2390,22 @@
       "subject": "Neil Rimer",
       "opportunitySignals": {
         "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
+          "buyer_or_user": [
+            "sales_team"
+          ],
+          "team_or_function": [
+            "sales"
+          ],
+          "specific_task": [
+            "sales_lead_research"
+          ],
           "pain_or_constraint": [],
           "product_form": [],
           "delivery_model": [],
           "business_action": [
-            "funding_round"
+            "customer_deployment",
+            "funding_round",
+            "procurement_signal"
           ]
         }
       }
@@ -2318,7 +2427,9 @@
             "workflow_integration"
           ],
           "product_form": [],
-          "delivery_model": [],
+          "delivery_model": [
+            "enterprise_subscription"
+          ],
           "business_action": [
             "customer_deployment",
             "product_launch",
@@ -2338,20 +2449,26 @@
       "opportunitySignals": {
         "labels": {
           "buyer_or_user": [
-            "content_team"
+            "content_team",
+            "sales_team"
           ],
           "team_or_function": [
-            "marketing_content"
+            "marketing_content",
+            "sales"
           ],
           "specific_task": [
-            "content_workflow"
+            "content_workflow",
+            "sales_lead_research"
           ],
           "pain_or_constraint": [
             "context_management"
           ],
           "product_form": [],
-          "delivery_model": [],
+          "delivery_model": [
+            "enterprise_subscription"
+          ],
           "business_action": [
+            "customer_deployment",
             "product_launch"
           ]
         }
@@ -2367,9 +2484,15 @@
       "subject": "The Decoder AI News",
       "opportunitySignals": {
         "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
+          "buyer_or_user": [
+            "sales_team"
+          ],
+          "team_or_function": [
+            "sales"
+          ],
+          "specific_task": [
+            "sales_lead_research"
+          ],
           "pain_or_constraint": [
             "api_cost_spike",
             "latency_sensitive"
@@ -2381,6 +2504,8 @@
             "api_usage_based"
           ],
           "business_action": [
+            "customer_deployment",
+            "procurement_signal",
             "pricing_change"
           ]
         }
@@ -2396,9 +2521,15 @@
       "subject": "商汤科技",
       "opportunitySignals": {
         "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
+          "buyer_or_user": [
+            "sales_team"
+          ],
+          "team_or_function": [
+            "sales"
+          ],
+          "specific_task": [
+            "sales_lead_research"
+          ],
           "pain_or_constraint": [],
           "product_form": [
             "api"
@@ -2428,7 +2559,9 @@
           "specific_task": [],
           "pain_or_constraint": [],
           "product_form": [],
-          "delivery_model": [],
+          "delivery_model": [
+            "enterprise_subscription"
+          ],
           "business_action": [
             "product_launch"
           ]
@@ -2445,15 +2578,29 @@
       "subject": "腾讯 WorkBuddy 正式版 App",
       "opportunitySignals": {
         "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
-          "pain_or_constraint": [],
-          "product_form": [],
-          "delivery_model": [],
+          "buyer_or_user": [
+            "sales_team"
+          ],
+          "team_or_function": [
+            "sales"
+          ],
+          "specific_task": [
+            "knowledge_base_qa",
+            "sales_lead_research"
+          ],
+          "pain_or_constraint": [
+            "data_silo"
+          ],
+          "product_form": [
+            "rag_knowledge_base"
+          ],
+          "delivery_model": [
+            "enterprise_subscription"
+          ],
           "business_action": [
             "customer_deployment",
-            "product_launch"
+            "product_launch",
+            "procurement_signal"
           ]
         }
       }
@@ -2468,14 +2615,24 @@
       "subject": "Xi Jinping",
       "opportunitySignals": {
         "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
+          "buyer_or_user": [
+            "it_security_team",
+            "sales_team"
+          ],
+          "team_or_function": [
+            "it_security",
+            "sales"
+          ],
+          "specific_task": [
+            "sales_lead_research"
+          ],
           "pain_or_constraint": [],
           "product_form": [],
           "delivery_model": [],
           "business_action": [
-            "partnership_integration"
+            "customer_deployment",
+            "partnership_integration",
+            "procurement_signal"
           ]
         }
       }
@@ -2505,7 +2662,8 @@
             "enterprise_subscription"
           ],
           "business_action": [
-            "customer_deployment"
+            "customer_deployment",
+            "partnership_integration"
           ]
         }
       }
@@ -2520,13 +2678,15 @@
       "subject": "Embedded Routing Stack",
       "opportunitySignals": {
         "labels": {
-          "buyer_or_user": [],
+          "buyer_or_user": [
+            "enterprise_ai_owner"
+          ],
           "team_or_function": [],
           "specific_task": [],
           "pain_or_constraint": [
+            "api_cost_spike",
             "hallucination_risk",
-            "model_routing_complexity",
-            "security_compliance"
+            "model_routing_complexity"
           ],
           "product_form": [
             "model_gateway"
@@ -2537,7 +2697,7 @@
           "business_action": [
             "customer_deployment",
             "partnership_integration",
-            "governance_requirement"
+            "pricing_change"
           ]
         }
       }
@@ -2553,6 +2713,7 @@
       "opportunitySignals": {
         "labels": {
           "buyer_or_user": [
+            "enterprise_ai_owner",
             "sales_team"
           ],
           "team_or_function": [
@@ -2589,6 +2750,7 @@
           "team_or_function": [],
           "specific_task": [],
           "pain_or_constraint": [
+            "api_cost_spike",
             "context_management",
             "workflow_integration"
           ],
@@ -2617,7 +2779,9 @@
           ],
           "team_or_function": [],
           "specific_task": [],
-          "pain_or_constraint": [],
+          "pain_or_constraint": [
+            "api_cost_spike"
+          ],
           "product_form": [],
           "delivery_model": [],
           "business_action": [
@@ -2638,9 +2802,15 @@
       "subject": "Tesla",
       "opportunitySignals": {
         "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
+          "buyer_or_user": [
+            "operations_team"
+          ],
+          "team_or_function": [
+            "operations"
+          ],
+          "specific_task": [
+            "logistics_coordination"
+          ],
           "pain_or_constraint": [
             "latency_sensitive"
           ],
@@ -2663,6 +2833,7 @@
       "opportunitySignals": {
         "labels": {
           "buyer_or_user": [
+            "enterprise_ai_owner",
             "sales_team"
           ],
           "team_or_function": [
@@ -2678,7 +2849,6 @@
           "delivery_model": [],
           "business_action": [
             "customer_deployment",
-            "funding_round",
             "pricing_change"
           ]
         }
@@ -2792,9 +2962,11 @@
       "opportunitySignals": {
         "labels": {
           "buyer_or_user": [
+            "it_security_team",
             "sales_team"
           ],
           "team_or_function": [
+            "it_security",
             "sales"
           ],
           "specific_task": [
@@ -3005,9 +3177,15 @@
       "subject": "",
       "opportunitySignals": {
         "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
+          "buyer_or_user": [
+            "sales_team"
+          ],
+          "team_or_function": [
+            "sales"
+          ],
+          "specific_task": [
+            "sales_lead_research"
+          ],
           "pain_or_constraint": [
             "audit_log_required",
             "data_silo"
@@ -3015,9 +3193,12 @@
           "product_form": [
             "copilot"
           ],
-          "delivery_model": [],
+          "delivery_model": [
+            "enterprise_subscription"
+          ],
           "business_action": [
-            "customer_deployment"
+            "customer_deployment",
+            "product_launch"
           ]
         }
       }
@@ -3039,7 +3220,9 @@
             "workflow_integration"
           ],
           "product_form": [],
-          "delivery_model": [],
+          "delivery_model": [
+            "enterprise_subscription"
+          ],
           "business_action": [
             "customer_deployment",
             "product_launch",
@@ -3060,13 +3243,16 @@
         "labels": {
           "buyer_or_user": [
             "engineering_team",
-            "enterprise_ai_owner"
+            "enterprise_ai_owner",
+            "sales_team"
           ],
           "team_or_function": [
-            "engineering"
+            "engineering",
+            "sales"
           ],
           "specific_task": [
-            "internal_tool_building"
+            "internal_tool_building",
+            "sales_lead_research"
           ],
           "pain_or_constraint": [],
           "product_form": [
@@ -3074,6 +3260,7 @@
           ],
           "delivery_model": [],
           "business_action": [
+            "customer_deployment",
             "product_launch",
             "partnership_integration"
           ]
@@ -3090,9 +3277,15 @@
       "subject": "阿里千问输入法移动版",
       "opportunitySignals": {
         "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
+          "buyer_or_user": [
+            "sales_team"
+          ],
+          "team_or_function": [
+            "sales"
+          ],
+          "specific_task": [
+            "sales_lead_research"
+          ],
           "pain_or_constraint": [],
           "product_form": [],
           "delivery_model": [],
@@ -3112,9 +3305,15 @@
       "subject": "Alphafold",
       "opportunitySignals": {
         "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
+          "buyer_or_user": [
+            "sales_team"
+          ],
+          "team_or_function": [
+            "sales"
+          ],
+          "specific_task": [
+            "sales_lead_research"
+          ],
           "pain_or_constraint": [
             "evaluation_gap",
             "workflow_integration"
@@ -3122,6 +3321,7 @@
           "product_form": [],
           "delivery_model": [],
           "business_action": [
+            "customer_deployment",
             "research_benchmark"
           ]
         }
@@ -3139,14 +3339,17 @@
         "labels": {
           "buyer_or_user": [
             "engineering_team",
-            "it_security_team"
+            "it_security_team",
+            "sales_team"
           ],
           "team_or_function": [
             "engineering",
-            "it_security"
+            "it_security",
+            "sales"
           ],
           "specific_task": [
-            "internal_tool_building"
+            "internal_tool_building",
+            "sales_lead_research"
           ],
           "pain_or_constraint": [
             "permission_boundary"
@@ -3154,8 +3357,9 @@
           "product_form": [],
           "delivery_model": [],
           "business_action": [
+            "customer_deployment",
             "product_launch",
-            "governance_requirement"
+            "procurement_signal"
           ]
         }
       }
@@ -3171,21 +3375,24 @@
       "opportunitySignals": {
         "labels": {
           "buyer_or_user": [
-            "engineering_team"
+            "engineering_team",
+            "sales_team"
           ],
           "team_or_function": [
-            "engineering"
+            "engineering",
+            "sales"
           ],
           "specific_task": [
-            "internal_tool_building"
+            "internal_tool_building",
+            "sales_lead_research"
           ],
           "pain_or_constraint": [],
           "product_form": [],
           "delivery_model": [],
           "business_action": [
+            "customer_deployment",
             "product_launch",
-            "partnership_integration",
-            "research_benchmark"
+            "partnership_integration"
           ]
         }
       }
@@ -3200,10 +3407,15 @@
       "subject": "宝马",
       "opportunitySignals": {
         "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
+          "buyer_or_user": [
+            "sales_team"
+          ],
+          "team_or_function": [
+            "sales"
+          ],
           "specific_task": [
-            "knowledge_base_qa"
+            "knowledge_base_qa",
+            "sales_lead_research"
           ],
           "pain_or_constraint": [
             "api_cost_spike",
@@ -3214,6 +3426,7 @@
           ],
           "delivery_model": [],
           "business_action": [
+            "customer_deployment",
             "product_launch",
             "pricing_change"
           ]
@@ -3230,9 +3443,15 @@
       "subject": "Coasty",
       "opportunitySignals": {
         "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
+          "buyer_or_user": [
+            "sales_team"
+          ],
+          "team_or_function": [
+            "sales"
+          ],
+          "specific_task": [
+            "sales_lead_research"
+          ],
           "pain_or_constraint": [],
           "product_form": [
             "api"
@@ -3240,7 +3459,11 @@
           "delivery_model": [
             "api_usage_based"
           ],
-          "business_action": []
+          "business_action": [
+            "customer_deployment",
+            "product_launch",
+            "partnership_integration"
+          ]
         }
       }
     },
@@ -3254,14 +3477,25 @@
       "subject": "Fine",
       "opportunitySignals": {
         "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
-          "pain_or_constraint": [],
+          "buyer_or_user": [
+            "enterprise_ai_owner",
+            "sales_team"
+          ],
+          "team_or_function": [
+            "sales"
+          ],
+          "specific_task": [
+            "sales_lead_research"
+          ],
+          "pain_or_constraint": [
+            "workflow_integration"
+          ],
           "product_form": [],
           "delivery_model": [],
           "business_action": [
-            "funding_round"
+            "customer_deployment",
+            "funding_round",
+            "partnership_integration"
           ]
         }
       }
@@ -3276,12 +3510,20 @@
       "subject": "",
       "opportunitySignals": {
         "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
+          "buyer_or_user": [
+            "sales_team"
+          ],
+          "team_or_function": [
+            "sales"
+          ],
+          "specific_task": [
+            "sales_lead_research"
+          ],
           "pain_or_constraint": [],
           "product_form": [],
-          "delivery_model": [],
+          "delivery_model": [
+            "enterprise_subscription"
+          ],
           "business_action": [
             "product_launch"
           ]
@@ -3299,18 +3541,24 @@
       "opportunitySignals": {
         "labels": {
           "buyer_or_user": [
-            "it_security_team"
+            "it_security_team",
+            "sales_team"
           ],
           "team_or_function": [
-            "it_security"
+            "it_security",
+            "sales"
           ],
-          "specific_task": [],
+          "specific_task": [
+            "sales_lead_research"
+          ],
           "pain_or_constraint": [
             "permission_boundary"
           ],
           "product_form": [],
           "delivery_model": [],
           "business_action": [
+            "customer_deployment",
+            "procurement_signal",
             "governance_requirement"
           ]
         }
@@ -3326,14 +3574,22 @@
       "subject": "K3",
       "opportunitySignals": {
         "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
+          "buyer_or_user": [
+            "sales_team"
+          ],
+          "team_or_function": [
+            "sales"
+          ],
+          "specific_task": [
+            "sales_lead_research"
+          ],
           "pain_or_constraint": [],
           "product_form": [],
           "delivery_model": [],
           "business_action": [
-            "funding_round"
+            "customer_deployment",
+            "funding_round",
+            "product_launch"
           ]
         }
       }
@@ -3348,13 +3604,23 @@
       "subject": "OpenAI",
       "opportunitySignals": {
         "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
+          "buyer_or_user": [
+            "healthcare_provider",
+            "sales_team"
+          ],
+          "team_or_function": [
+            "healthcare_operations",
+            "sales"
+          ],
+          "specific_task": [
+            "medical_documentation",
+            "sales_lead_research"
+          ],
           "pain_or_constraint": [],
           "product_form": [],
           "delivery_model": [],
           "business_action": [
+            "customer_deployment",
             "product_launch"
           ]
         }
@@ -3372,22 +3638,28 @@
         "labels": {
           "buyer_or_user": [
             "engineering_team",
-            "it_security_team"
+            "it_security_team",
+            "sales_team"
           ],
           "team_or_function": [
             "engineering",
-            "it_security"
+            "it_security",
+            "sales"
           ],
           "specific_task": [
-            "internal_tool_building"
+            "internal_tool_building",
+            "sales_lead_research"
           ],
           "pain_or_constraint": [
             "permission_boundary",
             "security_compliance"
           ],
           "product_form": [],
-          "delivery_model": [],
+          "delivery_model": [
+            "enterprise_subscription"
+          ],
           "business_action": [
+            "customer_deployment",
             "product_launch",
             "governance_requirement"
           ]
@@ -3404,13 +3676,26 @@
       "subject": "Runwayml",
       "opportunitySignals": {
         "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
+          "buyer_or_user": [
+            "engineering_team",
+            "sales_team"
+          ],
+          "team_or_function": [
+            "engineering",
+            "sales"
+          ],
+          "specific_task": [
+            "internal_tool_building",
+            "sales_lead_research"
+          ],
           "pain_or_constraint": [],
           "product_form": [],
           "delivery_model": [],
-          "business_action": []
+          "business_action": [
+            "customer_deployment",
+            "product_launch",
+            "procurement_signal"
+          ]
         }
       }
     },
@@ -3424,13 +3709,26 @@
       "subject": "SpaceX",
       "opportunitySignals": {
         "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
+          "buyer_or_user": [
+            "engineering_team",
+            "sales_team"
+          ],
+          "team_or_function": [
+            "engineering",
+            "sales"
+          ],
+          "specific_task": [
+            "internal_tool_building",
+            "sales_lead_research"
+          ],
           "pain_or_constraint": [],
           "product_form": [],
           "delivery_model": [],
-          "business_action": []
+          "business_action": [
+            "customer_deployment",
+            "product_launch",
+            "procurement_signal"
+          ]
         }
       }
     },
@@ -3444,15 +3742,24 @@
       "subject": "Theverge",
       "opportunitySignals": {
         "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
+          "buyer_or_user": [
+            "sales_team"
+          ],
+          "team_or_function": [
+            "sales"
+          ],
+          "specific_task": [
+            "sales_lead_research"
+          ],
           "pain_or_constraint": [
             "evaluation_gap"
           ],
           "product_form": [],
           "delivery_model": [],
-          "business_action": []
+          "business_action": [
+            "customer_deployment",
+            "procurement_signal"
+          ]
         }
       }
     },
@@ -3466,14 +3773,22 @@
       "subject": "阿里通义实验室",
       "opportunitySignals": {
         "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
+          "buyer_or_user": [
+            "sales_team"
+          ],
+          "team_or_function": [
+            "sales"
+          ],
+          "specific_task": [
+            "sales_lead_research"
+          ],
           "pain_or_constraint": [
             "latency_sensitive"
           ],
           "product_form": [],
-          "delivery_model": [],
+          "delivery_model": [
+            "enterprise_subscription"
+          ],
           "business_action": [
             "product_launch"
           ]
@@ -3490,14 +3805,23 @@
       "subject": "Zyphra",
       "opportunitySignals": {
         "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
+          "buyer_or_user": [
+            "sales_team"
+          ],
+          "team_or_function": [
+            "sales"
+          ],
+          "specific_task": [
+            "sales_lead_research"
+          ],
           "pain_or_constraint": [
-            "evaluation_gap"
+            "evaluation_gap",
+            "hallucination_risk"
           ],
           "product_form": [],
-          "delivery_model": [],
+          "delivery_model": [
+            "open_source_commercial"
+          ],
           "business_action": [
             "customer_deployment",
             "product_launch",
@@ -3735,7 +4059,9 @@
           "pain_or_constraint": [
             "workflow_integration"
           ],
-          "product_form": [],
+          "product_form": [
+            "vertical_saas"
+          ],
           "delivery_model": [],
           "business_action": [
             "customer_deployment",
@@ -3755,12 +4081,20 @@
       "subject": "",
       "opportunitySignals": {
         "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
+          "buyer_or_user": [
+            "sales_team"
+          ],
+          "team_or_function": [
+            "sales"
+          ],
+          "specific_task": [
+            "sales_lead_research"
+          ],
           "pain_or_constraint": [],
           "product_form": [],
-          "delivery_model": [],
+          "delivery_model": [
+            "enterprise_subscription"
+          ],
           "business_action": [
             "customer_deployment",
             "product_launch"
@@ -3778,14 +4112,29 @@
       "subject": "努比亚",
       "opportunitySignals": {
         "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
-          "pain_or_constraint": [],
-          "product_form": [],
-          "delivery_model": [],
+          "buyer_or_user": [
+            "sales_team"
+          ],
+          "team_or_function": [
+            "sales"
+          ],
+          "specific_task": [
+            "sales_lead_research"
+          ],
+          "pain_or_constraint": [
+            "api_cost_spike",
+            "workflow_integration"
+          ],
+          "product_form": [
+            "copilot"
+          ],
+          "delivery_model": [
+            "enterprise_subscription"
+          ],
           "business_action": [
-            "product_launch"
+            "product_launch",
+            "partnership_integration",
+            "pricing_change"
           ]
         }
       }
@@ -3801,19 +4150,24 @@
       "opportunitySignals": {
         "labels": {
           "buyer_or_user": [
-            "operations_team"
+            "operations_team",
+            "sales_team"
           ],
           "team_or_function": [
-            "operations"
+            "operations",
+            "sales"
           ],
           "specific_task": [
-            "logistics_coordination"
+            "logistics_coordination",
+            "sales_lead_research"
           ],
           "pain_or_constraint": [
             "api_cost_spike"
           ],
           "product_form": [],
-          "delivery_model": [],
+          "delivery_model": [
+            "enterprise_subscription"
+          ],
           "business_action": [
             "product_launch",
             "pricing_change"
@@ -3846,7 +4200,9 @@
             "data_silo"
           ],
           "product_form": [],
-          "delivery_model": [],
+          "delivery_model": [
+            "enterprise_subscription"
+          ],
           "business_action": [
             "customer_deployment",
             "product_launch"
@@ -3864,15 +4220,22 @@
       "subject": "诺基亚",
       "opportunitySignals": {
         "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
+          "buyer_or_user": [
+            "insurance_team"
+          ],
+          "team_or_function": [
+            "insurance_operations"
+          ],
+          "specific_task": [
+            "insurance_claim_review"
+          ],
           "pain_or_constraint": [],
           "product_form": [],
           "delivery_model": [
             "enterprise_subscription"
           ],
           "business_action": [
+            "customer_deployment",
             "product_launch"
           ]
         }
@@ -3889,14 +4252,22 @@
       "opportunitySignals": {
         "labels": {
           "buyer_or_user": [
-            "enterprise_ai_owner"
+            "enterprise_ai_owner",
+            "sales_team"
           ],
-          "team_or_function": [],
-          "specific_task": [],
+          "team_or_function": [
+            "sales"
+          ],
+          "specific_task": [
+            "sales_lead_research"
+          ],
           "pain_or_constraint": [],
           "product_form": [],
-          "delivery_model": [],
+          "delivery_model": [
+            "enterprise_subscription"
+          ],
           "business_action": [
+            "customer_deployment",
             "product_launch",
             "partnership_integration"
           ]
@@ -3927,9 +4298,9 @@
           ],
           "delivery_model": [],
           "business_action": [
+            "customer_deployment",
             "product_launch",
-            "partnership_integration",
-            "pricing_change"
+            "partnership_integration"
           ]
         }
       }
@@ -3946,14 +4317,17 @@
         "labels": {
           "buyer_or_user": [
             "engineering_team",
-            "it_security_team"
+            "it_security_team",
+            "sales_team"
           ],
           "team_or_function": [
             "engineering",
-            "it_security"
+            "it_security",
+            "sales"
           ],
           "specific_task": [
-            "internal_tool_building"
+            "internal_tool_building",
+            "sales_lead_research"
           ],
           "pain_or_constraint": [
             "permission_boundary"
@@ -3961,6 +4335,7 @@
           "product_form": [],
           "delivery_model": [],
           "business_action": [
+            "customer_deployment",
             "product_launch",
             "governance_requirement"
           ]
@@ -3977,13 +4352,23 @@
       "subject": "Google",
       "opportunitySignals": {
         "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
+          "buyer_or_user": [
+            "engineering_team",
+            "sales_team"
+          ],
+          "team_or_function": [
+            "engineering",
+            "sales"
+          ],
+          "specific_task": [
+            "internal_tool_building",
+            "sales_lead_research"
+          ],
           "pain_or_constraint": [],
           "product_form": [],
           "delivery_model": [],
           "business_action": [
+            "customer_deployment",
             "funding_round",
             "product_launch"
           ]
@@ -4001,21 +4386,27 @@
       "opportunitySignals": {
         "labels": {
           "buyer_or_user": [
-            "engineering_team"
+            "engineering_team",
+            "sales_team"
           ],
           "team_or_function": [
-            "engineering"
+            "engineering",
+            "sales"
           ],
           "specific_task": [
-            "internal_tool_building"
+            "internal_tool_building",
+            "sales_lead_research"
           ],
           "pain_or_constraint": [
+            "data_silo",
             "evaluation_gap"
           ],
           "product_form": [
             "developer_tool"
           ],
-          "delivery_model": [],
+          "delivery_model": [
+            "enterprise_subscription"
+          ],
           "business_action": [
             "product_launch",
             "open_source_release"
@@ -4035,19 +4426,28 @@
         "labels": {
           "buyer_or_user": [
             "engineering_team",
-            "enterprise_ai_owner"
+            "enterprise_ai_owner",
+            "sales_team"
           ],
           "team_or_function": [
-            "engineering"
+            "engineering",
+            "sales"
           ],
           "specific_task": [
-            "internal_tool_building"
+            "internal_tool_building",
+            "sales_lead_research"
           ],
-          "pain_or_constraint": [],
+          "pain_or_constraint": [
+            "latency_sensitive",
+            "security_compliance"
+          ],
           "product_form": [],
-          "delivery_model": [],
+          "delivery_model": [
+            "enterprise_subscription"
+          ],
           "business_action": [
-            "product_launch"
+            "product_launch",
+            "governance_requirement"
           ]
         }
       }
@@ -4074,7 +4474,9 @@
             "internal_tool_building"
           ],
           "pain_or_constraint": [
-            "api_cost_spike"
+            "api_cost_spike",
+            "evaluation_gap",
+            "security_compliance"
           ],
           "product_form": [],
           "delivery_model": [],
@@ -4097,18 +4499,24 @@
       "opportunitySignals": {
         "labels": {
           "buyer_or_user": [
-            "engineering_team"
+            "engineering_team",
+            "it_security_team",
+            "sales_team"
           ],
           "team_or_function": [
-            "engineering"
+            "engineering",
+            "it_security",
+            "sales"
           ],
           "specific_task": [
-            "code_review"
+            "code_review",
+            "sales_lead_research"
           ],
           "pain_or_constraint": [],
           "product_form": [],
           "delivery_model": [],
           "business_action": [
+            "customer_deployment",
             "product_launch",
             "open_source_release"
           ]
@@ -4125,14 +4533,22 @@
       "subject": "OpenAI",
       "opportunitySignals": {
         "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
+          "buyer_or_user": [
+            "sales_team"
+          ],
+          "team_or_function": [
+            "sales"
+          ],
+          "specific_task": [
+            "sales_lead_research"
+          ],
           "pain_or_constraint": [
             "latency_sensitive"
           ],
           "product_form": [],
-          "delivery_model": [],
+          "delivery_model": [
+            "enterprise_subscription"
+          ],
           "business_action": [
             "customer_deployment",
             "product_launch",
@@ -4151,13 +4567,23 @@
       "subject": "Suno 接入 iMessage",
       "opportunitySignals": {
         "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
+          "buyer_or_user": [
+            "sales_team"
+          ],
+          "team_or_function": [
+            "sales"
+          ],
+          "specific_task": [
+            "sales_lead_research"
+          ],
           "pain_or_constraint": [],
           "product_form": [],
-          "delivery_model": [],
+          "delivery_model": [
+            "enterprise_subscription"
+          ],
           "business_action": [
+            "customer_deployment",
+            "product_launch",
             "partnership_integration"
           ]
         }
@@ -4174,10 +4600,17 @@
       "opportunitySignals": {
         "labels": {
           "buyer_or_user": [
-            "enterprise_ai_owner"
+            "enterprise_ai_owner",
+            "it_security_team",
+            "sales_team"
           ],
-          "team_or_function": [],
-          "specific_task": [],
+          "team_or_function": [
+            "it_security",
+            "sales"
+          ],
+          "specific_task": [
+            "sales_lead_research"
+          ],
           "pain_or_constraint": [
             "api_cost_spike"
           ],
@@ -4208,7 +4641,9 @@
             "data_silo"
           ],
           "product_form": [],
-          "delivery_model": [],
+          "delivery_model": [
+            "open_source_commercial"
+          ],
           "business_action": [
             "customer_deployment",
             "product_launch",
@@ -4227,14 +4662,22 @@
       "subject": "小米",
       "opportunitySignals": {
         "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
+          "buyer_or_user": [
+            "sales_team"
+          ],
+          "team_or_function": [
+            "sales"
+          ],
+          "specific_task": [
+            "sales_lead_research"
+          ],
           "pain_or_constraint": [
             "evaluation_gap"
           ],
           "product_form": [],
-          "delivery_model": [],
+          "delivery_model": [
+            "enterprise_subscription"
+          ],
           "business_action": [
             "product_launch",
             "open_source_release",
@@ -4253,17 +4696,22 @@
       "subject": "Crusoe",
       "opportunitySignals": {
         "labels": {
-          "buyer_or_user": [],
+          "buyer_or_user": [
+            "enterprise_ai_owner"
+          ],
           "team_or_function": [],
           "specific_task": [],
-          "pain_or_constraint": [],
+          "pain_or_constraint": [
+            "api_cost_spike"
+          ],
           "product_form": [],
           "delivery_model": [
             "self_serve_saas"
           ],
           "business_action": [
             "customer_deployment",
-            "product_launch"
+            "product_launch",
+            "pricing_change"
           ]
         }
       }
@@ -4289,12 +4737,14 @@
             "internal_tool_building"
           ],
           "pain_or_constraint": [
+            "api_cost_spike",
             "workflow_integration"
           ],
           "product_form": [],
           "delivery_model": [],
           "business_action": [
-            "customer_deployment"
+            "customer_deployment",
+            "pricing_change"
           ]
         }
       }
@@ -4315,12 +4765,14 @@
           "team_or_function": [],
           "specific_task": [],
           "pain_or_constraint": [
+            "api_cost_spike",
             "workflow_integration"
           ],
           "product_form": [],
           "delivery_model": [],
           "business_action": [
             "customer_deployment",
+            "funding_round",
             "product_launch"
           ]
         }
@@ -4407,13 +4859,16 @@
       "opportunitySignals": {
         "labels": {
           "buyer_or_user": [
+            "engineering_team",
             "enterprise_ai_owner",
             "sales_team"
           ],
           "team_or_function": [
+            "engineering",
             "sales"
           ],
           "specific_task": [
+            "internal_tool_building",
             "sales_lead_research"
           ],
           "pain_or_constraint": [
@@ -4483,7 +4938,9 @@
           "specific_task": [
             "sales_lead_research"
           ],
-          "pain_or_constraint": [],
+          "pain_or_constraint": [
+            "api_cost_spike"
+          ],
           "product_form": [],
           "delivery_model": [],
           "business_action": [
@@ -4607,12 +5064,15 @@
       "opportunitySignals": {
         "labels": {
           "buyer_or_user": [
+            "engineering_team",
             "sales_team"
           ],
           "team_or_function": [
+            "engineering",
             "sales"
           ],
           "specific_task": [
+            "internal_tool_building",
             "sales_lead_research"
           ],
           "pain_or_constraint": [
@@ -4640,21 +5100,26 @@
       "opportunitySignals": {
         "labels": {
           "buyer_or_user": [
-            "engineering_team"
+            "engineering_team",
+            "sales_team"
           ],
           "team_or_function": [
-            "engineering"
+            "engineering",
+            "sales"
           ],
           "specific_task": [
-            "internal_tool_building"
+            "internal_tool_building",
+            "sales_lead_research"
           ],
           "pain_or_constraint": [],
           "product_form": [],
-          "delivery_model": [],
+          "delivery_model": [
+            "enterprise_subscription"
+          ],
           "business_action": [
             "customer_deployment",
             "product_launch",
-            "open_source_release"
+            "partnership_integration"
           ]
         }
       }
@@ -4669,15 +5134,23 @@
       "subject": "高德",
       "opportunitySignals": {
         "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
+          "buyer_or_user": [
+            "sales_team"
+          ],
+          "team_or_function": [
+            "sales"
+          ],
+          "specific_task": [
+            "sales_lead_research"
+          ],
           "pain_or_constraint": [
             "evaluation_gap",
             "latency_sensitive"
           ],
           "product_form": [],
-          "delivery_model": [],
+          "delivery_model": [
+            "enterprise_subscription"
+          ],
           "business_action": [
             "customer_deployment",
             "product_launch",
@@ -4696,15 +5169,22 @@
       "subject": "Anthropic",
       "opportunitySignals": {
         "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
+          "buyer_or_user": [
+            "sales_team"
+          ],
+          "team_or_function": [
+            "sales"
+          ],
+          "specific_task": [
+            "sales_lead_research"
+          ],
           "pain_or_constraint": [],
           "product_form": [],
           "delivery_model": [],
           "business_action": [
             "customer_deployment",
-            "pricing_change"
+            "pricing_change",
+            "research_benchmark"
           ]
         }
       }
@@ -4720,21 +5200,29 @@
       "opportunitySignals": {
         "labels": {
           "buyer_or_user": [
-            "engineering_team"
+            "engineering_team",
+            "sales_team"
           ],
           "team_or_function": [
-            "engineering"
+            "engineering",
+            "sales"
           ],
           "specific_task": [
-            "internal_tool_building"
+            "internal_tool_building",
+            "sales_lead_research"
           ],
           "pain_or_constraint": [
             "security_compliance",
             "workflow_integration"
           ],
-          "product_form": [],
-          "delivery_model": [],
+          "product_form": [
+            "developer_tool"
+          ],
+          "delivery_model": [
+            "consulting_diagnostic"
+          ],
           "business_action": [
+            "customer_deployment",
             "product_launch",
             "partnership_integration"
           ]
@@ -4752,17 +5240,28 @@
       "opportunitySignals": {
         "labels": {
           "buyer_or_user": [
-            "it_security_team"
+            "engineering_team",
+            "it_security_team",
+            "sales_team"
           ],
           "team_or_function": [
-            "it_security"
+            "engineering",
+            "it_security",
+            "sales"
           ],
-          "specific_task": [],
+          "specific_task": [
+            "internal_tool_building",
+            "sales_lead_research"
+          ],
           "pain_or_constraint": [
-            "permission_boundary"
+            "permission_boundary",
+            "security_compliance"
           ],
           "product_form": [],
-          "delivery_model": [],
+          "delivery_model": [
+            "consulting_diagnostic",
+            "enterprise_subscription"
+          ],
           "business_action": [
             "product_launch",
             "partnership_integration",
@@ -4782,13 +5281,16 @@
       "opportunitySignals": {
         "labels": {
           "buyer_or_user": [
-            "engineering_team"
+            "engineering_team",
+            "sales_team"
           ],
           "team_or_function": [
-            "engineering"
+            "engineering",
+            "sales"
           ],
           "specific_task": [
-            "internal_tool_building"
+            "internal_tool_building",
+            "sales_lead_research"
           ],
           "pain_or_constraint": [
             "evaluation_gap"
@@ -4801,7 +5303,8 @@
           ],
           "business_action": [
             "product_launch",
-            "pricing_change"
+            "pricing_change",
+            "failure_postmortem"
           ]
         }
       }
@@ -4817,19 +5320,23 @@
       "opportunitySignals": {
         "labels": {
           "buyer_or_user": [
-            "engineering_team"
+            "engineering_team",
+            "sales_team"
           ],
           "team_or_function": [
-            "engineering"
+            "engineering",
+            "sales"
           ],
           "specific_task": [
-            "internal_tool_building"
+            "internal_tool_building",
+            "sales_lead_research"
           ],
           "pain_or_constraint": [
             "latency_sensitive"
           ],
           "product_form": [],
           "delivery_model": [
+            "enterprise_subscription",
             "template_pack"
           ],
           "business_action": [
@@ -4878,20 +5385,21 @@
       "opportunitySignals": {
         "labels": {
           "buyer_or_user": [
-            "engineering_team"
+            "engineering_team",
+            "sales_team"
           ],
           "team_or_function": [
-            "engineering"
+            "engineering",
+            "sales"
           ],
           "specific_task": [
-            "internal_tool_building"
+            "internal_tool_building",
+            "sales_lead_research"
           ],
           "pain_or_constraint": [],
-          "product_form": [
-            "api"
-          ],
+          "product_form": [],
           "delivery_model": [
-            "api_usage_based"
+            "enterprise_subscription"
           ],
           "business_action": [
             "customer_deployment",
@@ -4911,9 +5419,15 @@
       "subject": "However",
       "opportunitySignals": {
         "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
+          "buyer_or_user": [
+            "sales_team"
+          ],
+          "team_or_function": [
+            "sales"
+          ],
+          "specific_task": [
+            "sales_lead_research"
+          ],
           "pain_or_constraint": [
             "evaluation_gap"
           ],
@@ -4922,6 +5436,7 @@
           ],
           "delivery_model": [],
           "business_action": [
+            "customer_deployment",
             "product_launch"
           ]
         }
@@ -4938,18 +5453,22 @@
       "opportunitySignals": {
         "labels": {
           "buyer_or_user": [
-            "engineering_team"
+            "engineering_team",
+            "sales_team"
           ],
           "team_or_function": [
-            "engineering"
+            "engineering",
+            "sales"
           ],
           "specific_task": [
-            "internal_tool_building"
+            "internal_tool_building",
+            "sales_lead_research"
           ],
           "pain_or_constraint": [],
           "product_form": [],
           "delivery_model": [],
           "business_action": [
+            "customer_deployment",
             "product_launch"
           ]
         }
@@ -4967,14 +5486,17 @@
         "labels": {
           "buyer_or_user": [
             "engineering_team",
-            "it_security_team"
+            "it_security_team",
+            "sales_team"
           ],
           "team_or_function": [
             "engineering",
-            "it_security"
+            "it_security",
+            "sales"
           ],
           "specific_task": [
-            "internal_tool_building"
+            "internal_tool_building",
+            "sales_lead_research"
           ],
           "pain_or_constraint": [
             "permission_boundary"
@@ -4999,13 +5521,20 @@
       "subject": "Thinking Machines 宣言",
       "opportunitySignals": {
         "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
+          "buyer_or_user": [
+            "sales_team"
+          ],
+          "team_or_function": [
+            "sales"
+          ],
+          "specific_task": [
+            "sales_lead_research"
+          ],
           "pain_or_constraint": [],
           "product_form": [],
           "delivery_model": [],
           "business_action": [
+            "customer_deployment",
             "product_launch",
             "research_benchmark"
           ]
@@ -5024,9 +5553,11 @@
         "labels": {
           "buyer_or_user": [
             "enterprise_ai_owner",
+            "finance_team",
             "sales_team"
           ],
           "team_or_function": [
+            "finance",
             "sales"
           ],
           "specific_task": [
@@ -5060,14 +5591,17 @@
         "labels": {
           "buyer_or_user": [
             "finance_team",
-            "legal_team"
+            "legal_team",
+            "sales_team"
           ],
           "team_or_function": [
             "finance",
-            "legal_compliance"
+            "legal_compliance",
+            "sales"
           ],
           "specific_task": [
-            "contract_review"
+            "contract_review",
+            "sales_lead_research"
           ],
           "pain_or_constraint": [
             "evaluation_gap",
@@ -5106,7 +5640,9 @@
           "pain_or_constraint": [
             "workflow_integration"
           ],
-          "product_form": [],
+          "product_form": [
+            "model_gateway"
+          ],
           "delivery_model": [
             "project_based_service"
           ],
@@ -5229,13 +5765,22 @@
       "subject": "Cloudflare",
       "opportunitySignals": {
         "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
+          "buyer_or_user": [
+            "sales_team"
+          ],
+          "team_or_function": [
+            "sales"
+          ],
+          "specific_task": [
+            "sales_lead_research"
+          ],
           "pain_or_constraint": [],
           "product_form": [],
-          "delivery_model": [],
+          "delivery_model": [
+            "self_serve_saas"
+          ],
           "business_action": [
+            "customer_deployment",
             "product_launch"
           ]
         }
@@ -5251,12 +5796,20 @@
       "subject": "阶跃星辰",
       "opportunitySignals": {
         "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
+          "buyer_or_user": [
+            "sales_team"
+          ],
+          "team_or_function": [
+            "sales"
+          ],
+          "specific_task": [
+            "sales_lead_research"
+          ],
           "pain_or_constraint": [],
           "product_form": [],
-          "delivery_model": [],
+          "delivery_model": [
+            "enterprise_subscription"
+          ],
           "business_action": [
             "product_launch",
             "partnership_integration"
@@ -5531,16 +6084,20 @@
       "opportunitySignals": {
         "labels": {
           "buyer_or_user": [
+            "engineering_team",
             "healthcare_provider"
           ],
           "team_or_function": [
+            "engineering",
             "healthcare_operations"
           ],
           "specific_task": [
+            "internal_tool_building",
             "medical_documentation"
           ],
           "pain_or_constraint": [
-            "latency_sensitive"
+            "latency_sensitive",
+            "workflow_integration"
           ],
           "product_form": [],
           "delivery_model": [
@@ -5549,7 +6106,7 @@
           "business_action": [
             "customer_deployment",
             "product_launch",
-            "pricing_change"
+            "partnership_integration"
           ]
         }
       }
@@ -5650,7 +6207,8 @@
           "product_form": [],
           "delivery_model": [],
           "business_action": [
-            "customer_deployment"
+            "customer_deployment",
+            "procurement_signal"
           ]
         }
       }
@@ -5680,6 +6238,7 @@
             "sales_lead_research"
           ],
           "pain_or_constraint": [
+            "api_cost_spike",
             "evaluation_gap",
             "security_compliance"
           ],
@@ -5688,7 +6247,7 @@
           "business_action": [
             "customer_deployment",
             "product_launch",
-            "open_source_release"
+            "pricing_change"
           ]
         }
       }
@@ -5726,6 +6285,7 @@
           ],
           "business_action": [
             "customer_deployment",
+            "product_launch",
             "governance_requirement"
           ]
         }
@@ -5816,6 +6376,7 @@
             "sales_lead_research"
           ],
           "pain_or_constraint": [
+            "api_cost_spike",
             "permission_boundary",
             "workflow_integration"
           ],
@@ -5960,8 +6521,12 @@
             "hallucination_risk",
             "workflow_integration"
           ],
-          "product_form": [],
-          "delivery_model": [],
+          "product_form": [
+            "api"
+          ],
+          "delivery_model": [
+            "api_usage_based"
+          ],
           "business_action": [
             "customer_deployment",
             "product_launch",

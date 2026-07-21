@@ -5,7 +5,7 @@
     "businessSignalsColumnVersion": "BSIG-V2.2.0-pipeline-stage-ownership",
     "enterpriseAiLensVersion": "EAI-V1.2.0-raw-card-ingestion-boundary",
     "intelligenceMapColumnVersion": "IMAP-V2.0.0-report-center-opportunity-system",
-    "generatedAt": "2026-07-21T01:28:21.661Z",
+    "generatedAt": "2026-07-21T06:38:43.848Z",
     "activeDate": "2026-07-21",
     "purpose": "Stable machine-readable entry for Hermes Agent / data-officer analysis.",
     "sourceDataset": "site/data/v3-data-observation-desk.json",
@@ -137,7 +137,7 @@
       "AIHW-2026-07-21-P-065",
       "AIHW-2026-07-21-P-066",
       "SIG-20260721-A08",
-      "AIHW-SRC-2026-07-21-1"
+      "SIG-20260721-A34"
     ],
     "largeCompanyCards": [
       {
@@ -3422,64 +3422,131 @@
       "sourceRef": ""
     },
     {
-      "id": "AIHW-SRC-2026-07-21-1",
-      "type": "ai_hardware_source_artifact_item",
-      "lensType": "ai_hardware",
-      "hardwareTrack": "trend_innovation",
-      "hardwareTrackLabel": "趋势创新",
+      "id": "AIHW-CARD-SIG-20260721-A34",
+      "type": "signal_card",
       "category": "product-service",
-      "categoryLabel": "趋势创新",
-      "title": "微软Azure扩大采用AMD Helios平台，Anthropic或跟进测试AMD芯片",
-      "displayTitle": "微软Azure扩大采用AMD Helios平台，Anthropic或跟进测试AMD芯片",
-      "originalTitle": "微软Azure扩大采用AMD Helios平台，Anthropic或跟进测试AMD芯片",
-      "sourceTitle": "微软Azure扩大采用AMD Helios平台，Anthropic或跟进测试AMD芯片",
+      "categoryLabel": "产品",
+      "title": "英伟达AI芯片主导地位松动，微软转向AMD，Anthropic或跟进",
+      "originalTitle": "Nvidia's grip on AI chips weakens as Microsoft turns to AMD and Anthropic may follow",
       "date": "2026-07-21",
-      "subject": "微软Azure扩大",
-      "source": "the-decoder.com",
-      "sourceName": "the-decoder.com",
-      "sourceUrl": "https://the-decoder.com/nvidias-grip-on-ai-chips-weakens-as-microsoft-turns-to-amd-and-anthropic-may-follow",
-      "sourceLevel": "",
-      "importanceScore": 4,
-      "publishedAt": "2026-07-20T16:44:30.000Z",
-      "tags": {},
+      "subject": "AMD",
+      "source": "The Decoder AI News",
+      "sourceName": "The Decoder AI News",
+      "sourceUrl": "https://the-decoder.com/nvidias-grip-on-ai-chips-weakens-as-microsoft-turns-to-amd-and-anthropic-may-follow/",
+      "sourceLevel": "A",
+      "evidenceStrength": "rich_evidence",
+      "importanceScore": 2,
+      "poolRoutes": [
+        "watchlist"
+      ],
+      "publishedAt": "2026-07-20T00:00:00.000Z",
+      "tags": {
+        "track": [],
+        "function": [],
+        "scenario": [],
+        "customer": [],
+        "evidence": [
+          "evidence-product-launch"
+        ]
+      },
       "flatTags": [
-        "track-ai-infra"
+        "evidence-product-launch"
       ],
       "displayTags": [
         {
-          "id": "ai-hardware",
-          "label": "AI Hardware"
-        },
-        {
-          "id": "trend_innovation",
-          "label": "趋势创新"
+          "id": "evidence-product-launch",
+          "label": "产品发布"
         }
       ],
-      "summary": "微软计划在Azure云中更多采用AMD AI芯片，合作围绕2026年下半年出货的AMD Helios平台展开，旨在为Azure客户提供Nvidia GPU之外的替代方案。AMD CEO苏姿丰称该合作是重要里程碑，微软CEO萨提亚·纳德拉表示客户需要更多AI基础设施选择。此外，Anthropic正在测试AMD硬件，AMD已给予其最高优先级评级，与Meta同级。",
-      "translatedFact": "微软计划在Azure云中更多采用AMD AI芯片，合作围绕2026年下半年出货的AMD Helios平台展开，旨在为Azure客户提供Nvidia GPU之外的替代方案。AMD CEO苏姿丰称该合作是重要里程碑，微软CEO萨提亚·纳德拉表示客户需要更多AI基础设施选择。此外，Anthropic正在测试AMD硬件，AMD已给予其最高优先级评级，与Meta同级。",
+      "opportunitySignals": {
+        "schemaVersion": "opportunity-signals-v1",
+        "evidenceBasis": "raw_source_text",
+        "sourceExcerpt": "英伟达AI芯片主导地位松动，微软转向AMD，Anthropic或跟进 Nvidia's grip on AI chips weakens as Microsoft turns to AMD and Anthropic may follow 原始来源标题显示：英伟达AI芯片主导地位松动，微软转向AMD，Anthropic或跟进。",
+        "missingFields": [
+          "buyer_or_user",
+          "specific_task",
+          "product_form",
+          "adoption_evidence",
+          "delivery_model"
+        ],
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "business_action": [],
+          "product_form": [],
+          "delivery_model": [],
+          "pain_or_constraint": [],
+          "adoption_evidence": [],
+          "source_evidence_type": [
+            {
+              "id": "business_media",
+              "label": "Business or industry media article"
+            }
+          ]
+        },
+        "buyer_or_user": [],
+        "buyerOrUser": [],
+        "team_or_function": [],
+        "teamOrFunction": [],
+        "specific_task": [],
+        "specificTask": [],
+        "business_action": [],
+        "businessAction": [],
+        "product_form": [],
+        "productForm": [],
+        "delivery_model": [],
+        "deliveryModel": [],
+        "pain_or_constraint": [],
+        "painOrConstraint": [],
+        "adoption_evidence": [],
+        "adoptionEvidence": [],
+        "source_evidence_type": [
+          "business_media"
+        ],
+        "sourceEvidenceType": [
+          "business_media"
+        ]
+      },
+      "summary": "AMD 的产品动作体现了 AI 能力从技术展示走向可调用、可部署或可采购的服务形态。",
+      "translatedFact": "原文未披露可与标题独立核对的事件细节。",
       "originalHighlights": [
-        "微软计划在Azure云中更多采用AMD AI芯片，合作围绕2026年下半年出货的AMD Helios平台展开，旨在为Azure客户提供Nvidia GPU之外的替代方案。AMD CEO苏姿丰称该合作是重要里程碑，微软CEO萨提亚·纳德拉表示客户需要更多AI基础设施选择。此外，Anthropic正在测试AMD硬件，AMD已给予其最高优先级评级，与Meta同级。"
+        "the-decoder 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
       ],
-      "visibleFragment": "微软计划在Azure云中更多采用AMD AI芯片，合作围绕2026年下半年出货的AMD Helios平台展开，旨在为Azure客户提供Nvidia GPU之外的替代方案。AMD CEO苏姿丰称该合作是重要里程碑，微软CEO萨提亚·纳德拉表示客户需要更多AI基础设施选择。此外，Anthropic正在测试AMD硬件，AMD已给予其最高优先级评级，与Meta同级。",
+      "visibleFragment": "",
       "sourceLinks": [
-        "https://the-decoder.com/nvidias-grip-on-ai-chips-weakens-as-microsoft-turns-to-amd-and-anthropic-may-follow"
+        "https://the-decoder.com/nvidias-grip-on-ai-chips-weakens-as-microsoft-turns-to-amd-and-anthropic-may-follow/"
       ],
-      "status": "source_artifact",
-      "promotionStatus": "ai_hardware_lens_only",
-      "evidenceGate": "source_artifact_observation_only",
-      "poolRoutes": [],
-      "frontstageRankScore": 520,
-      "frontstageEditorialScore": 520,
-      "frontstageEvidenceScore": 30,
+      "sourceTitle": "Nvidia's grip on AI chips weakens as Microsoft turns to AMD and Anthropic may follow",
+      "status": "published",
+      "assetLevel": "frontstage",
+      "evidenceGate": "core_evidence_passed",
+      "stage": "",
+      "evidence": "evidence-product-launch",
+      "largeVendorKey": "anthropic",
+      "track": "",
+      "generatedTitle": "英伟达AI芯片主导地位松动，微软转向AMD，Anthropic或跟进",
+      "displayTitle": "英伟达AI芯片主导地位松动，微软转向AMD，Anthropic或跟进",
+      "largeVendor": true,
+      "frontstageRankScore": 338,
+      "frontstageEditorialScore": 258,
+      "frontstageEvidenceScore": 34,
       "frontstageSelectionReasons": [
-        "AI hardware source artifact",
-        "趋势创新"
+        "能观察真实客户、业务流程或采购场景"
       ],
-      "frontstageValueDescription": "AI hardware source-only item preserved for the separate hardware lens; not promoted to the main Card list.",
-      "frontstageQualityWarnings": [],
+      "frontstageValueDescription": "值得关注：能观察真实客户、业务流程或采购场景。",
+      "frontstageQualityWarnings": [
+        "原文事实支撑偏弱，需优先补充 Raw/Pool 证据",
+        "可见原文片段不足，已降权处理"
+      ],
       "frontstageGenericCandidate": false,
       "fromCorePool": false,
-      "sourceRef": "source-artifact"
+      "linkedCardId": "SIG-20260721-A34",
+      "lensType": "ai_hardware",
+      "hardwareTrack": "scenario_service",
+      "hardwareTrackLabel": "场景服务",
+      "promotionStatus": "promoted_to_signal_card",
+      "sourceRef": ""
     }
   ],
   "cards": [
@@ -73763,6 +73830,70 @@
         "sourceName": "IT之家（RSS）"
       },
       {
+        "id": "subject:阿里通义实验室",
+        "label": "阿里通义实验室",
+        "type": "subject",
+        "weight": 1,
+        "category": "product-service",
+        "sourceName": "MarkTechPost（RSS）"
+      },
+      {
+        "id": "subject:阿里云",
+        "label": "阿里云",
+        "type": "subject",
+        "weight": 1,
+        "category": "product-service",
+        "sourceName": "IT之家（RSS）"
+      },
+      {
+        "id": "subject:谷歌之声",
+        "label": "谷歌之声",
+        "type": "subject",
+        "weight": 1,
+        "category": "product-service",
+        "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）"
+      },
+      {
+        "id": "subject:小米",
+        "label": "小米",
+        "type": "subject",
+        "weight": 1,
+        "category": "product-service",
+        "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）"
+      },
+      {
+        "id": "subject:小鹏汽车",
+        "label": "小鹏汽车",
+        "type": "subject",
+        "weight": 1,
+        "category": "case",
+        "sourceName": "IT之家（RSS）"
+      },
+      {
+        "id": "subject:宇树",
+        "label": "宇树",
+        "type": "subject",
+        "weight": 1,
+        "category": "product-service",
+        "sourceName": "IT之家（RSS）"
+      },
+      {
+        "id": "subject:月之暗面-/-Kimi",
+        "label": "月之暗面 / Kimi",
+        "type": "subject",
+        "weight": 1,
+        "category": "product-service",
+        "sourceName": "Nathan Lambert：Interconnects（RSS）"
+      },
+      {
+        "id": "subject:智云-WEEBILL-5",
+        "label": "智云 WEEBILL 5",
+        "type": "subject",
+        "weight": 1,
+        "category": "product-service",
+        "sourceName": "IT之家（RSS）"
+      },
+      {
         "id": "subject:Amazon",
         "label": "Amazon",
         "type": "subject",
@@ -73881,70 +74012,6 @@
         "weight": 1,
         "category": "funding",
         "sourceName": "IT之家（RSS）"
-      },
-      {
-        "id": "subject:Simonwillison",
-        "label": "Simonwillison",
-        "type": "subject",
-        "weight": 1,
-        "category": "case",
-        "sourceName": "Simon Willison 博客"
-      },
-      {
-        "id": "subject:Stratechery",
-        "label": "Stratechery",
-        "type": "subject",
-        "weight": 1,
-        "category": "case",
-        "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）"
-      },
-      {
-        "id": "subject:TechCrunch：AI（RSS）",
-        "label": "TechCrunch：AI（RSS）",
-        "type": "subject",
-        "weight": 1,
-        "category": "product-service",
-        "sourceName": "TechCrunch：AI（RSS）"
-      },
-      {
-        "id": "subject:Theverge",
-        "label": "Theverge",
-        "type": "subject",
-        "weight": 1,
-        "category": "product-service",
-        "sourceName": "The Verge AI"
-      },
-      {
-        "id": "subject:VITURE",
-        "label": "VITURE",
-        "type": "subject",
-        "weight": 1,
-        "category": "product-service",
-        "sourceName": "IT之家（RSS）"
-      },
-      {
-        "id": "subject:Werd",
-        "label": "Werd",
-        "type": "subject",
-        "weight": 1,
-        "category": "case",
-        "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）"
-      },
-      {
-        "id": "subject:wren",
-        "label": "wren",
-        "type": "subject",
-        "weight": 1,
-        "category": "case",
-        "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）"
-      },
-      {
-        "id": "subject:宇树",
-        "label": "宇树",
-        "type": "subject",
-        "weight": 1,
-        "category": "product-service",
-        "sourceName": "IT之家（RSS）"
       }
     ],
     "edges": [
@@ -73963,114 +74030,6 @@
         ]
       },
       {
-        "from": "category:产品",
-        "to": "subject:AMD",
-        "label": "产品",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260721-A34"
-        ],
-        "titles": [
-          "英伟达AI芯片主导地位松动，微软转向AMD，Anthropic或跟进"
-        ]
-      },
-      {
-        "from": "category:产品",
-        "to": "subject:China-delivers-a-one",
-        "label": "产品",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260721-A29"
-        ],
-        "titles": [
-          "中国对美国AI主导地位给予双重打击"
-        ]
-      },
-      {
-        "from": "category:产品",
-        "to": "subject:He",
-        "label": "产品",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260721-A30"
-        ],
-        "titles": [
-          "Adobe 实验性相机应用 Project Indigo 新增 AI 照片批评与编辑建议功能"
-        ]
-      },
-      {
-        "from": "category:产品",
-        "to": "subject:IT之家（RSS）",
-        "label": "产品",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260721-A33"
-        ],
-        "titles": [
-          "macOS 27 Golden Gate Beta 隐藏Siri AI内容创作功能"
-        ]
-      },
-      {
-        "from": "category:产品",
-        "to": "subject:Octomind-Cloud-Is-Live",
-        "label": "产品",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260721-A11"
-        ],
-        "titles": [
-          "Octomind Cloud 正式上线：为您的智能体提供真实机器，一个密钥调用所有模型"
-        ]
-      },
-      {
-        "from": "category:产品",
-        "to": "subject:Theverge",
-        "label": "产品",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260721-A22"
-        ],
-        "titles": [
-          "Adobe 的“自然外观”相机应用拥抱生成式 AI"
-        ]
-      },
-      {
-        "from": "category:产品",
-        "to": "subject:宇树",
-        "label": "产品",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260721-A19"
-        ],
-        "titles": [
-          "宇树发布 UnifoLM-OminiA-0.3 模型，支持全模态交互理解"
-        ]
-      },
-      {
-        "from": "category:产品",
-        "to": "subject:VITURE",
-        "label": "产品",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260721-A17"
-        ],
-        "titles": [
-          "VITURE 发布 Auto Immersive 3D 技术，实现安卓系统实时 3D 立体化"
-        ]
-      },
-      {
-        "from": "category:产品",
-        "to": "subject:TechCrunch：AI（RSS）",
-        "label": "产品",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260721-A12"
-        ],
-        "titles": [
-          "YouTube 更新政策，明确三类 AI 低质内容不得变现"
-        ]
-      },
-      {
         "from": "category:案例",
         "to": "subject:IT之家（RSS）",
         "label": "案例",
@@ -74080,6 +74039,18 @@
         ],
         "titles": [
           "王祖贤息影 22 年后授权 AI 形象，网易《天下》合作推出首个 AI 短片《倩影》"
+        ]
+      },
+      {
+        "from": "category:案例",
+        "to": "subject:小鹏汽车",
+        "label": "案例",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260721-A27"
+        ],
+        "titles": [
+          "小鹏汽车 AI Infra 负责人陆思渊将离职，下一站是 OpenAI 参与具身智能机器人研发"
         ]
       },
       {
@@ -74167,51 +74138,147 @@
         ]
       },
       {
-        "from": "category:案例",
-        "to": "subject:wren",
-        "label": "案例",
+        "from": "category:产品",
+        "to": "subject:阿里云",
+        "label": "产品",
         "weight": 1,
         "cardIds": [
-          "SIG-20260721-A25"
+          "SIG-20260721-A18"
         ],
         "titles": [
-          "请停止使用 OpenCode"
+          "阿里云推出轻量应用服务器智能体专用型实例，2亿Token包月262.5元"
         ]
       },
       {
-        "from": "category:案例",
-        "to": "subject:Simonwillison",
-        "label": "案例",
+        "from": "category:产品",
+        "to": "subject:AMD",
+        "label": "产品",
         "weight": 1,
         "cardIds": [
-          "SIG-20260721-A32"
+          "SIG-20260721-A34"
         ],
         "titles": [
-          "谁在害怕中国模型？Ben Thompson 提议美国立法禁止服务条款限制蒸馏以应对 Qwen 等开源模型竞争"
+          "英伟达AI芯片主导地位松动，微软转向AMD，Anthropic或跟进"
         ]
       },
       {
-        "from": "category:案例",
-        "to": "subject:Stratechery",
-        "label": "案例",
+        "from": "category:产品",
+        "to": "subject:China-delivers-a-one",
+        "label": "产品",
         "weight": 1,
         "cardIds": [
-          "SIG-20260721-A04"
+          "SIG-20260721-A29"
         ],
         "titles": [
-          "谁怕中国模型？--Kimi K3 逼近 SOTA，开源模型成本优势引热议"
+          "中国对美国AI主导地位给予双重打击"
         ]
       },
       {
-        "from": "category:案例",
-        "to": "subject:Werd",
-        "label": "案例",
+        "from": "category:产品",
+        "to": "subject:谷歌之声",
+        "label": "产品",
         "weight": 1,
         "cardIds": [
-          "SIG-20260721-A07"
+          "SIG-20260721-A31"
         ],
         "titles": [
-          "美国 AI 系统封闭且专有，中国开源策略正缩小差距"
+          "谷歌之声：一位前员工回忆在Google的早期岁月"
+        ]
+      },
+      {
+        "from": "category:产品",
+        "to": "subject:He",
+        "label": "产品",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260721-A30"
+        ],
+        "titles": [
+          "Adobe 实验性相机应用 Project Indigo 新增 AI 照片批评与编辑建议功能"
+        ]
+      },
+      {
+        "from": "category:产品",
+        "to": "subject:月之暗面-/-Kimi",
+        "label": "产品",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260721-A14"
+        ],
+        "titles": [
+          "Kimi K3：开源权重模型的升级"
+        ]
+      },
+      {
+        "from": "category:产品",
+        "to": "subject:IT之家（RSS）",
+        "label": "产品",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260721-A33"
+        ],
+        "titles": [
+          "macOS 27 Golden Gate Beta 隐藏Siri AI内容创作功能"
+        ]
+      },
+      {
+        "from": "category:产品",
+        "to": "subject:Octomind-Cloud-Is-Live",
+        "label": "产品",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260721-A11"
+        ],
+        "titles": [
+          "Octomind Cloud 正式上线：为您的智能体提供真实机器，一个密钥调用所有模型"
+        ]
+      },
+      {
+        "from": "category:产品",
+        "to": "subject:阿里通义实验室",
+        "label": "产品",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260721-A13"
+        ],
+        "titles": [
+          "阿里通义实验室发布 Qwen-Audio-3.0-TTS，面向 16 种语言的 Flash 与 Plus 级托管语音合成模型"
+        ]
+      },
+      {
+        "from": "category:产品",
+        "to": "subject:宇树",
+        "label": "产品",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260721-A19"
+        ],
+        "titles": [
+          "宇树发布 UnifoLM-OminiA-0.3 模型，支持全模态交互理解"
+        ]
+      },
+      {
+        "from": "category:产品",
+        "to": "subject:智云-WEEBILL-5",
+        "label": "产品",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260721-A15"
+        ],
+        "titles": [
+          "智云 WEEBILL 5 发布：全球首款内置提壶 AI 相机稳定器，2299 元"
+        ]
+      },
+      {
+        "from": "category:产品",
+        "to": "subject:小米",
+        "label": "产品",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260721-A09"
+        ],
+        "titles": [
+          "小米发布机器人策略模型 Xiaomi-Robotics-1"
         ]
       },
       {
@@ -74278,7 +74345,7 @@
     "clusters": [
       {
         "id": "product-launch-vs-adoption",
-        "title": "Anthropic、AMD 同日出现在企业 AI 产品发布里",
+        "title": "Anthropic、阿里通义实验室 同日出现在企业 AI 产品发布里",
         "direction": "产品发布",
         "relation": [
           "产品发布",
@@ -74286,7 +74353,7 @@
           "商业验证"
         ],
         "summary": "阿里云发布轻量应用服务器智能体专用型实例，将vCPU、内存、带宽与大模型Tokens打包为预付费套餐，提供一站式AI Agent运行环境。 原文未披露可与标题独立核对的事件细节。 Claude Code v2.1.216 修复了长会话中消息归一化成本随轮次二次增长导致的数秒停顿问题，并修正了 OAuth token 过期后自动模式误判 HTTP 401、后台子智能体重启后恢复默认配置、以及工作树隔离子智能体重定向 git 目录等多项缺陷。",
-        "evidenceMeta": "素材：Anthropic / AMD / China delivers a one",
+        "evidenceMeta": "素材：Anthropic / 阿里通义实验室 / 阿里云",
         "detailFocus": "阿里云发布轻量应用服务器智能体专用型实例，将vCPU、内存、带宽与大模型Tokens打包为预付费套餐，提供一站式AI Agent运行环境。 原文未披露可与标题独立核对的事件细节。 Claude Code v2.1.216 修复了长会话中消息归一化成本随轮次二次增长导致的数秒停顿问题，并修正了 OAuth token 过期后自动模式误判 HTTP 401、后台子智能体重启后恢复默认配置、以及工作树隔离子智能体重定向 git 目录等多项缺陷。",
         "todayCount": 17,
         "last7Count": 103,
@@ -74297,15 +74364,15 @@
             "count": 2
           },
           {
-            "label": "AMD",
+            "label": "阿里通义实验室",
             "count": 1
           },
           {
-            "label": "China delivers a one",
+            "label": "阿里云",
             "count": 1
           },
           {
-            "label": "He",
+            "label": "谷歌之声",
             "count": 1
           }
         ],
@@ -74398,7 +74465,7 @@
   "relationshipDirections": [
     {
       "id": "product-launch-vs-adoption",
-      "title": "Anthropic、AMD 同日出现在企业 AI 产品发布里",
+      "title": "Anthropic、阿里通义实验室 同日出现在企业 AI 产品发布里",
       "direction": "产品发布",
       "relation": [
         "产品发布",
@@ -74406,7 +74473,7 @@
         "商业验证"
       ],
       "summary": "阿里云发布轻量应用服务器智能体专用型实例，将vCPU、内存、带宽与大模型Tokens打包为预付费套餐，提供一站式AI Agent运行环境。 原文未披露可与标题独立核对的事件细节。 Claude Code v2.1.216 修复了长会话中消息归一化成本随轮次二次增长导致的数秒停顿问题，并修正了 OAuth token 过期后自动模式误判 HTTP 401、后台子智能体重启后恢复默认配置、以及工作树隔离子智能体重定向 git 目录等多项缺陷。",
-      "evidenceMeta": "素材：Anthropic / AMD / China delivers a one",
+      "evidenceMeta": "素材：Anthropic / 阿里通义实验室 / 阿里云",
       "detailFocus": "阿里云发布轻量应用服务器智能体专用型实例，将vCPU、内存、带宽与大模型Tokens打包为预付费套餐，提供一站式AI Agent运行环境。 原文未披露可与标题独立核对的事件细节。 Claude Code v2.1.216 修复了长会话中消息归一化成本随轮次二次增长导致的数秒停顿问题，并修正了 OAuth token 过期后自动模式误判 HTTP 401、后台子智能体重启后恢复默认配置、以及工作树隔离子智能体重定向 git 目录等多项缺陷。",
       "todayCount": 17,
       "last7Count": 103,
@@ -74417,15 +74484,15 @@
           "count": 2
         },
         {
-          "label": "AMD",
+          "label": "阿里通义实验室",
           "count": 1
         },
         {
-          "label": "China delivers a one",
+          "label": "阿里云",
           "count": 1
         },
         {
-          "label": "He",
+          "label": "谷歌之声",
           "count": 1
         }
       ],
@@ -74527,11 +74594,11 @@
           "count": 2
         },
         {
-          "label": "AMD",
+          "label": "阿里通义实验室",
           "count": 1
         },
         {
-          "label": "China delivers a one",
+          "label": "阿里云",
           "count": 1
         }
       ],
@@ -74576,11 +74643,11 @@
           "count": 2
         },
         {
-          "label": "He",
+          "label": "阿里通义实验室",
           "count": 1
         },
         {
-          "label": "Infinity",
+          "label": "阿里云",
           "count": 1
         }
       ],
@@ -74629,15 +74696,15 @@
       "last30Count": 201,
       "subjects": [
         {
+          "label": "小鹏汽车",
+          "count": 1
+        },
+        {
           "label": "Amazon",
           "count": 1
         },
         {
           "label": "Anthropic",
-          "count": 1
-        },
-        {
-          "label": "billion in rocket",
           "count": 1
         }
       ],
@@ -74682,11 +74749,11 @@
           "count": 2
         },
         {
-          "label": "Googleblog",
+          "label": "阿里通义实验室",
           "count": 1
         },
         {
-          "label": "Infinity",
+          "label": "阿里云",
           "count": 1
         }
       ],
@@ -74739,11 +74806,11 @@
           "count": 2
         },
         {
-          "label": "Googleblog",
+          "label": "阿里通义实验室",
           "count": 1
         },
         {
-          "label": "Infinity",
+          "label": "阿里云",
           "count": 1
         }
       ],
@@ -74796,11 +74863,11 @@
           "count": 2
         },
         {
-          "label": "Googleblog",
+          "label": "阿里通义实验室",
           "count": 1
         },
         {
-          "label": "Infinity",
+          "label": "阿里云",
           "count": 1
         }
       ],
@@ -74853,11 +74920,11 @@
           "count": 2
         },
         {
-          "label": "Amazon",
+          "label": "阿里云",
           "count": 1
         },
         {
-          "label": "Natural",
+          "label": "宇树",
           "count": 1
         }
       ],
@@ -75128,45 +75195,6 @@
     ],
     "historicalTrends": [
       {
-        "id": "TRD-20260519-02",
-        "type": "trend_card",
-        "title": "AI 治理开始从原则讨论转向产品和流程约束",
-        "date": "2026-05-19",
-        "status": "draft",
-        "assetLevel": "candidate",
-        "trendStatus": "early",
-        "stageLabel": "继续观察",
-        "hypothesis": "AI 治理材料开始把权限、日志、隔离、评测和责任边界写进产品与部署流程，治理不只出现在原则表述里，也出现在企业采购和系统接入要求里。",
-        "relationSummary": "AI 治理材料开始把权限、日志、隔离、评测和责任边界写进产品与部署流程，治理不只出现在原则表述里，也出现在企业采购和系统接入要求里。",
-        "boundary": "",
-        "nextObservation": "",
-        "sourceTypes": [],
-        "relatedSignals": [
-          "CHG-20260519-07"
-        ],
-        "tags": {
-          "track": [
-            "track-ai-governance"
-          ],
-          "function": [],
-          "scenario": [],
-          "customer": [],
-          "evidence": [
-            "evidence-product-launch"
-          ]
-        },
-        "displayTags": [
-          {
-            "id": "track-ai-governance",
-            "label": "AI 治理"
-          },
-          {
-            "id": "evidence-product-launch",
-            "label": "产品发布"
-          }
-        ]
-      },
-      {
         "id": "TRD-20260519-01",
         "type": "trend_card",
         "title": "AI 编程进入预算和工程治理",
@@ -75210,6 +75238,45 @@
           {
             "id": "track-ai-coding",
             "label": "AI Coding"
+          },
+          {
+            "id": "evidence-product-launch",
+            "label": "产品发布"
+          }
+        ]
+      },
+      {
+        "id": "TRD-20260519-02",
+        "type": "trend_card",
+        "title": "AI 治理开始从原则讨论转向产品和流程约束",
+        "date": "2026-05-19",
+        "status": "draft",
+        "assetLevel": "candidate",
+        "trendStatus": "early",
+        "stageLabel": "继续观察",
+        "hypothesis": "AI 治理材料开始把权限、日志、隔离、评测和责任边界写进产品与部署流程，治理不只出现在原则表述里，也出现在企业采购和系统接入要求里。",
+        "relationSummary": "AI 治理材料开始把权限、日志、隔离、评测和责任边界写进产品与部署流程，治理不只出现在原则表述里，也出现在企业采购和系统接入要求里。",
+        "boundary": "",
+        "nextObservation": "",
+        "sourceTypes": [],
+        "relatedSignals": [
+          "CHG-20260519-07"
+        ],
+        "tags": {
+          "track": [
+            "track-ai-governance"
+          ],
+          "function": [],
+          "scenario": [],
+          "customer": [],
+          "evidence": [
+            "evidence-product-launch"
+          ]
+        },
+        "displayTags": [
+          {
+            "id": "track-ai-governance",
+            "label": "AI 治理"
           },
           {
             "id": "evidence-product-launch",
@@ -75569,7 +75636,7 @@
     {
       "id": "relationship:product-launch-vs-adoption",
       "type": "relationship_cluster",
-      "title": "Anthropic、AMD 同日出现在企业 AI 产品发布里",
+      "title": "Anthropic、阿里通义实验室 同日出现在企业 AI 产品发布里",
       "date": "2026-07-21",
       "signal": "产品发布",
       "evidenceCount": 17,
@@ -75580,15 +75647,15 @@
           "count": 2
         },
         {
-          "label": "AMD",
+          "label": "阿里通义实验室",
           "count": 1
         },
         {
-          "label": "China delivers a one",
+          "label": "阿里云",
           "count": 1
         },
         {
-          "label": "He",
+          "label": "谷歌之声",
           "count": 1
         }
       ],
@@ -75622,11 +75689,11 @@
           "count": 2
         },
         {
-          "label": "AMD",
+          "label": "阿里通义实验室",
           "count": 1
         },
         {
-          "label": "China delivers a one",
+          "label": "阿里云",
           "count": 1
         }
       ],
@@ -75675,11 +75742,11 @@
           "count": 2
         },
         {
-          "label": "He",
+          "label": "阿里通义实验室",
           "count": 1
         },
         {
-          "label": "Infinity",
+          "label": "阿里云",
           "count": 1
         }
       ],
@@ -75732,15 +75799,15 @@
       "windowCount": 201,
       "subjects": [
         {
+          "label": "小鹏汽车",
+          "count": 1
+        },
+        {
           "label": "Amazon",
           "count": 1
         },
         {
           "label": "Anthropic",
-          "count": 1
-        },
-        {
-          "label": "billion in rocket",
           "count": 1
         }
       ],
@@ -75789,11 +75856,11 @@
           "count": 2
         },
         {
-          "label": "Googleblog",
+          "label": "阿里通义实验室",
           "count": 1
         },
         {
-          "label": "Infinity",
+          "label": "阿里云",
           "count": 1
         }
       ],
@@ -75850,11 +75917,11 @@
           "count": 2
         },
         {
-          "label": "Googleblog",
+          "label": "阿里通义实验室",
           "count": 1
         },
         {
-          "label": "Infinity",
+          "label": "阿里云",
           "count": 1
         }
       ],
@@ -75911,11 +75978,11 @@
           "count": 2
         },
         {
-          "label": "Googleblog",
+          "label": "阿里通义实验室",
           "count": 1
         },
         {
-          "label": "Infinity",
+          "label": "阿里云",
           "count": 1
         }
       ],
@@ -75972,11 +76039,11 @@
           "count": 2
         },
         {
-          "label": "Amazon",
+          "label": "阿里云",
           "count": 1
         },
         {
-          "label": "Natural",
+          "label": "宇树",
           "count": 1
         }
       ],

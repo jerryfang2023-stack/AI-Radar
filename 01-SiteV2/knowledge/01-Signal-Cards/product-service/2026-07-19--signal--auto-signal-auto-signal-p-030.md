@@ -46,13 +46,13 @@ opportunity_signals:
   specific_task: []
   business_action: ["product_launch", "pricing_change"]
   product_form: []
-  delivery_model: []
+  delivery_model: ["enterprise_subscription"]
   pain_or_constraint: ["api_cost_spike", "evaluation_gap"]
   adoption_evidence: ["pilot_or_poc"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "全国首个具身智能实训场样板点发布，国家地方共建人形机器人创新中心与华为联手打造 全国首个具身智能实训场样板点发布，国家地方共建人形机器人创新中心与华为联手打造 国家地方共建人形机器人创新中心与华为在2026 WAIC上发布全国首个具身智能实训场样板点。"
-  missing_fields: ["specific_task", "product_form", "delivery_model"]
+  source_excerpt: "全国首个具身智能实训场样板点发布，国家地方共建人形机器人创新中心与华为联手打造 全国首个具身智能实训场样板点发布，国家地方共建人形机器人创新中心与华为联手打造 国家地方共建人形机器人创新中心与华为在2026 WAIC上发布全国首个具身智能实训场样板点。该实训场打通不同品牌人形机器人的训练数据接口，支持工业搬运、巡检、服务类机器人在高温、雨天、狭小通道等复杂场景的统一仿真训练，并对外开放中小机器人企业试用名额。样板点依托国产算力底座，搭..."
+  missing_fields: ["specific_task", "product_form"]
 
 signal_owner: "全国首个具身智能实训场样板点"
 

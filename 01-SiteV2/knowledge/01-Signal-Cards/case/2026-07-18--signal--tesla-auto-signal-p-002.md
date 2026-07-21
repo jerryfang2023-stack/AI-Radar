@@ -41,9 +41,9 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: []
-  team_or_function: []
-  specific_task: []
+  buyer_or_user: ["operations_team"]
+  team_or_function: ["operations"]
+  specific_task: ["logistics_coordination"]
   business_action: ["product_launch"]
   product_form: []
   delivery_model: []
@@ -51,8 +51,8 @@ opportunity_signals:
   adoption_evidence: ["procurement_contract"]
   source_evidence_type: ["business_media"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Digit 已在亚马逊、GXO 等客户处执行搬运任务并产生收入，公司已获得 3 亿美元合同订单。"
-  missing_fields: ["buyer_or_user", "specific_task", "product_form", "delivery_model"]
+  source_excerpt: "Agility Robotics 在特斯拉后院开设人形机器人训练设施，Digit 已创收并获 3 亿美元订单 Agility Robotics 在特斯拉后院开设人形机器人训练设施，Digit 已创收并获 3 亿美元订单 Agility Robotics 在加州弗里蒙特开设一座 6 万平方英尺的设施，用于训练其 Digit 人形机器人。Digit 已在亚马逊、GXO 等客户处执行搬运任务并产生收入，公司已获得 3 亿美元合同订单。CEO..."
+  missing_fields: ["product_form", "delivery_model"]
 
 signal_owner: "Tesla"
 

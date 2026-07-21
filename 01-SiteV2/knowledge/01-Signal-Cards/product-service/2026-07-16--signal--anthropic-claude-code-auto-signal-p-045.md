@@ -41,17 +41,17 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["engineering_team", "it_security_team"]
-  team_or_function: ["engineering", "it_security"]
-  specific_task: ["internal_tool_building"]
-  business_action: ["product_launch", "governance_requirement"]
+  buyer_or_user: ["sales_team", "engineering_team", "it_security_team"]
+  team_or_function: ["sales", "engineering", "it_security"]
+  specific_task: ["sales_lead_research", "internal_tool_building"]
+  business_action: ["customer_deployment", "product_launch", "governance_requirement"]
   product_form: []
   delivery_model: []
   pain_or_constraint: ["permission_boundary"]
   adoption_evidence: ["third_party_report"]
   source_evidence_type: ["technical_blog"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Claude Code v2.1.211 发布 Claude Code v2.1.211 发布 Claude Code v2.1.211 新增 `--forward-subagent-text` 标志，可在 stream-json 输出中包含子智能体文本与思考过程。"
+  source_excerpt: "Claude Code v2.1.211 发布 Claude Code v2.1.211 发布 Claude Code v2.1.211 新增 `--forward-subagent-text` 标志，可在 stream-json 输出中包含子智能体文本与思考过程。本次更新修复了权限预览中双向覆盖字符等未被中和的问题，以及 PreToolUse 钩子在非沙箱 Bash 中覆盖 ask 决策的 bug。此外还改进了后台智能体结果报告与终..."
   missing_fields: ["product_form", "delivery_model"]
 
 signal_owner: "Anthropic / Claude Code"

@@ -47,11 +47,11 @@ opportunity_signals:
   business_action: ["customer_deployment", "product_launch", "governance_requirement"]
   product_form: ["agent_workbench", "api"]
   delivery_model: ["consulting_diagnostic", "api_usage_based"]
-  pain_or_constraint: ["data_silo", "security_compliance", "evaluation_gap"]
+  pain_or_constraint: ["workflow_integration", "data_silo", "security_compliance", "evaluation_gap"]
   adoption_evidence: ["customer_metric"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "Meta 发布多模态推理模型 Muse Spark 1.1，强化 AI 智能体任务能力 Meta 发布多模态推理模型 Muse Spark 1.1，强化 AI 智能体任务能力 Meta 发布多模态推理模型 Muse Spark 1.1，强化 AI 智能体任务能力 Meta 于 7 月 9 日发布多模态推理模型 Muse Spark 1.1，重点提升 AI 智能体任务的规划、协同与执行能力。"
+  source_excerpt: "Meta 发布多模态推理模型 Muse Spark 1.1，强化 AI 智能体任务能力 Meta 发布多模态推理模型 Muse Spark 1.1，强化 AI 智能体任务能力 Meta 于 7 月 9 日发布多模态推理模型 Muse Spark 1.1，重点提升 AI 智能体任务的规划、协同与执行能力。新版本强化多智能体协作机制，支持最高 100 万 token 上下文长度。模型可自主判断点击界面、编写脚本或批量执行操作，并能诊断修复..."
   missing_fields: []
 
 signal_owner: "Meta"

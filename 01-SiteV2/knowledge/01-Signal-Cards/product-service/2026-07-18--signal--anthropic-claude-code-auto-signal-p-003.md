@@ -41,18 +41,18 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["engineering_team", "it_security_team"]
-  team_or_function: ["engineering", "it_security"]
-  specific_task: ["internal_tool_building"]
-  business_action: ["product_launch", "governance_requirement"]
+  buyer_or_user: ["sales_team", "engineering_team", "it_security_team"]
+  team_or_function: ["sales", "engineering", "it_security"]
+  specific_task: ["sales_lead_research", "internal_tool_building"]
+  business_action: ["customer_deployment", "product_launch", "procurement_signal", "governance_requirement"]
   product_form: []
   delivery_model: []
   pain_or_constraint: ["permission_boundary"]
-  adoption_evidence: []
+  adoption_evidence: ["procurement_contract"]
   source_evidence_type: ["technical_blog"]
   evidence_basis: "raw_source_text"
   source_excerpt: "Claude Code v2.1.214 发布：修复权限绕过、添加 EndConversation 工具与多项 Bash 权限检查改进 Claude Code v2.1.214 发布：修复权限绕过、添加 EndConversation 工具与多项 Bash 权限检查改进 Claude Code v2.1.214 修复了 Windows PowerShell 5.1 中的权限检查绕过漏洞，以及 Bash 权限检查对超长命令（超过 10，..."
-  missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
+  missing_fields: ["product_form", "delivery_model"]
 
 signal_owner: "Anthropic / Claude Code"
 

@@ -41,17 +41,17 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
-  team_or_function: ["engineering"]
-  specific_task: ["internal_tool_building"]
-  business_action: ["product_launch", "partnership_integration"]
+  buyer_or_user: ["sales_team", "engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["sales", "engineering"]
+  specific_task: ["sales_lead_research", "internal_tool_building"]
+  business_action: ["customer_deployment", "product_launch", "partnership_integration"]
   product_form: ["agent_workbench"]
   delivery_model: []
   pain_or_constraint: []
   adoption_evidence: ["partnership_announcement"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "国家超算互联网发布科学智能体开发者招募计划，可享全国首个十万卡AI超集群算力 国家超算互联网发布科学智能体开发者招募计划，可享全国首个十万卡AI超集群算力 7月17日，国家超算互联网在WAIC 2026上发布科学计算智能体生态共创与开发者招募合作计划，为期半年。"
+  source_excerpt: "国家超算互联网发布科学智能体开发者招募计划，可享全国首个十万卡AI超集群算力 国家超算互联网发布科学智能体开发者招募计划，可享全国首个十万卡AI超集群算力 7月17日，国家超算互联网在WAIC 2026上发布科学计算智能体生态共创与开发者招募合作计划，为期半年。加入者可享受基于全国首个十万卡AI超集群\"曙光8000（登峰）\"的算力、数据与工具全栈支撑，并获现金+词元激励及推广资源。平台已汇聚1.6万余项内容组件，支持低代码开发与多智能..."
   missing_fields: ["delivery_model"]
 
 signal_owner: "国家超算互联网"

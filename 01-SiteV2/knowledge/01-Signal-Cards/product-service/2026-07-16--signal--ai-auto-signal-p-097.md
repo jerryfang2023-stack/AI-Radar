@@ -41,18 +41,18 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["operations_team"]
-  team_or_function: ["operations"]
-  specific_task: ["logistics_coordination"]
+  buyer_or_user: ["sales_team", "operations_team"]
+  team_or_function: ["sales", "operations"]
+  specific_task: ["sales_lead_research", "logistics_coordination"]
   business_action: ["product_launch", "pricing_change"]
   product_form: []
-  delivery_model: []
+  delivery_model: ["enterprise_subscription"]
   pain_or_constraint: ["api_cost_spike"]
   adoption_evidence: []
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "字节跳动联合中兴努比亚打造豆包 AI 智能体手机，今年将发布多款机型 字节跳动联合中兴努比亚打造豆包 AI 智能体手机，今年将发布多款机型 字节跳动联合中兴努比亚打造的豆包 AI 智能体手机今年将发布多款机型，其中一款将于 2026 世界人工智能大会期间亮相，整体备货约 20 万台。"
-  missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
+  source_excerpt: "字节跳动联合中兴努比亚打造豆包 AI 智能体手机，今年将发布多款机型 字节跳动联合中兴努比亚打造豆包 AI 智能体手机，今年将发布多款机型 字节跳动联合中兴努比亚打造的豆包 AI 智能体手机今年将发布多款机型，其中一款将于 2026 世界人工智能大会期间亮相，整体备货约 20 万台。该机新增粉色配色，将成为首个搭载智能体大模型备案的终端产品。"
+  missing_fields: ["product_form", "adoption_evidence"]
 
 signal_owner: "努比亚"
 

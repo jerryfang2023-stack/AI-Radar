@@ -43,18 +43,18 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["engineering_team"]
-  team_or_function: ["engineering"]
-  specific_task: ["internal_tool_building"]
-  business_action: ["funding_round"]
-  product_form: []
+  buyer_or_user: ["sales_team", "engineering_team"]
+  team_or_function: ["sales", "engineering"]
+  specific_task: ["sales_lead_research", "internal_tool_building"]
+  business_action: ["funding_round", "customer_deployment"]
+  product_form: ["vertical_saas"]
   delivery_model: []
   pain_or_constraint: []
   adoption_evidence: []
   source_evidence_type: ["funding_news", "technical_blog"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "logcat.ai 获 255 万美元融资，打造设备系统工程未来 logcat.ai raises $2.55M to build the future of device systems engineering | logcat.ai Blog logcat.ai宣布完成255.0 万美元种子前轮融资。"
-  missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
+  source_excerpt: "logcat.ai 获 255 万美元融资，打造设备系统工程未来 logcat.ai raises $2.55M to build the future of device systems engineering | logcat.ai Blog logcat.ai raises $2.55M to build the future of device systems engineering | logcat.ai Blog An A..."
+  missing_fields: ["adoption_evidence", "delivery_model"]
 
 signal_owner: "logcat.ai"
 

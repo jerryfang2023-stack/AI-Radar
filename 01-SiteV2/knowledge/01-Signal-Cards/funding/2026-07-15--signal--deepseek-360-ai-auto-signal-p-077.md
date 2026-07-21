@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: ["funding_news"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "DeepSeek 成立于 2023 年 7 月 17 日，总部位于浙江省杭州市拱墅区，主要从事大语言模型及多模态 AI 技术研发，其推出的 DeepSeek 系列开源模型是国内领先的开源大模型之一。"
+  source_excerpt: "DeepSeek 梁文锋身价飙升至 360 亿美元，成 AI 公司新首富 DeepSeek 梁文锋身价飙升至 360 亿美元，成 AI 公司新首富 彭博亿万富豪指数显示，DeepSeek 创始人梁文锋身价达 360 亿美元（约合 2443.78 亿元人民币），较去年同期增长 199 亿美元，全球富豪榜排名第 63，超越 Anthropic 和 OpenAI 联合创始人，成为全球 AI 公司领域新首富。今年 6 月，DeepSeek 以..."
   missing_fields: ["product_form", "adoption_evidence"]
 
 signal_owner: "DeepSeek 梁文锋身价飙升至 360 亿美元，成 AI 公司新首富"

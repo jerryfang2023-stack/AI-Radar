@@ -41,18 +41,18 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: []
-  team_or_function: []
-  specific_task: []
+  buyer_or_user: ["sales_team"]
+  team_or_function: ["sales"]
+  specific_task: ["sales_lead_research"]
   business_action: ["customer_deployment", "product_launch", "open_source_release"]
   product_form: []
-  delivery_model: []
+  delivery_model: ["enterprise_subscription"]
   pain_or_constraint: ["latency_sensitive", "evaluation_gap"]
   adoption_evidence: ["deployment_scale"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "高德发布通用世界模型工坊 ABot-WorldStudio，已开放测试 高德发布通用世界模型工坊 ABot-WorldStudio，已开放测试 阿里巴巴旗下高德发布通用世界模型工坊 ABot-WorldStudio，并开放测试。"
-  missing_fields: ["buyer_or_user", "specific_task", "product_form", "delivery_model"]
+  source_excerpt: "高德发布通用世界模型工坊 ABot-WorldStudio，已开放测试 高德发布通用世界模型工坊 ABot-WorldStudio，已开放测试 阿里巴巴旗下高德发布通用世界模型工坊 ABot-WorldStudio，并开放测试。该产品将交互式视频生成与 3DGS 场景生成统一，用户输入文字或图片即可生成可实时交互、可分享的 AI 世界。工坊内置\"时空任意门\"，穿越后可跃迁至另一完整 3D 世界。官方实测单次连续推理稳定运行超1小时，无..."
+  missing_fields: ["product_form"]
 
 signal_owner: "高德"
 

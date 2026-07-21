@@ -41,18 +41,18 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: []
-  team_or_function: []
-  specific_task: []
-  business_action: ["product_launch", "research_benchmark"]
+  buyer_or_user: ["sales_team"]
+  team_or_function: ["sales"]
+  specific_task: ["sales_lead_research"]
+  business_action: ["customer_deployment", "product_launch", "research_benchmark"]
   product_form: []
   delivery_model: []
   pain_or_constraint: []
   adoption_evidence: ["deployment_scale"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "Thinking Machines 宣言：构建延伸人类意志与判断的AI Thinking Machines 宣言：构建延伸人类意志与判断的AI Thinking Machines 于7月10日发布宣言，使命是构建能延伸人类意志与判断的AI。"
-  missing_fields: ["buyer_or_user", "specific_task", "product_form", "delivery_model"]
+  source_excerpt: "Thinking Machines 宣言：构建延伸人类意志与判断的AI Thinking Machines 宣言：构建延伸人类意志与判断的AI Thinking Machines 于7月10日发布宣言，使命是构建能延伸人类意志与判断的AI。该公司认为，当前多数AI在少数地方训练后便冻结，无法被服务对象塑造。其技术方向包括：训练具备多模态交互与可定制能力的强模型；开发允许用户自定义模型（包括训练模型权重）的工具；构建拓宽人机沟通渠道的界..."
+  missing_fields: ["product_form", "delivery_model"]
 
 signal_owner: "Thinking Machines 宣言：构建延伸人类意志与判断的AI"
 

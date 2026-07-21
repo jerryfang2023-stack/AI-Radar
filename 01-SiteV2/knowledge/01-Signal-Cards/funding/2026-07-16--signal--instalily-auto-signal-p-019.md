@@ -52,7 +52,7 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: ["funding_news"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "InstaLILY 获得 6000 万美元融资 InstaLILY, a developer of AI teammates that can automate complex, business-specific work, raises $60M - SiliconANGLE InstaLILY 获得 6000 万美元融资。"
+  source_excerpt: "InstaLILY，AI 智能体开发者，可自动化复杂业务工作，获 6000 万美元融资 InstaLILY, a developer of AI teammates that can automate complex, business-specific work, raises $60M - SiliconANGLE InstaLILY, a developer of AI teammates that can automate c..."
   missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "InstaLILY"

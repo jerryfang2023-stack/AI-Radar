@@ -45,14 +45,14 @@ opportunity_signals:
   buyer_or_user: ["sales_team"]
   team_or_function: ["sales"]
   specific_task: ["sales_lead_research"]
-  business_action: ["funding_round", "customer_deployment", "product_launch"]
+  business_action: ["funding_round", "customer_deployment", "product_launch", "pricing_change"]
   product_form: []
   delivery_model: []
-  pain_or_constraint: []
+  pain_or_constraint: ["api_cost_spike"]
   adoption_evidence: []
   source_evidence_type: ["funding_news", "first_party_announcement"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "design startup TYLsemi 获得 4300 万美元融资 Custom AI chip design startup TYLsemi launches with $43M in early-stage funding - SiliconANGLE design startup TYLsemi 获得 4300 万美元融资。"
+  source_excerpt: "定制AI芯片设计初创公司TYLsemi获4300万美元早期融资 - SiliconANGLE Custom AI chip design startup TYLsemi launches with $43M in early-stage funding - SiliconANGLE Custom AI chip design startup TYLsemi launches with $43M in early-stage fundi..."
   missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "design startup TYLsemi"
