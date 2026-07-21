@@ -8,10 +8,12 @@
 
 2. Reports Center placement
    - Pass when the latest weekly report and weekly archive appear in the report-first `intelligence-map.html` surface.
+   - Pass when the latest weekly feature title, reporting window, and route are derived from the newest published canonical weekly source on every renderer run.
    - Pass when Opportunity Map, relationship network, Trend Candidates, and History are absent from `intelligence-map.html`.
 
 3. Detail page rendering
    - Pass when trend heatmaps, opportunity cards, scoring, impact heatmaps, and watchlists are rendered as editorial modules instead of raw tables.
+   - Pass when the two latest accepted issues have independent dated detail pages and the undated alias resolves only to the newest issue.
    - Pass when the weekly detail page has no `<table>` elements unless the user explicitly requests an appendix.
    - Pass when section labels are visually paired with headings and do not create isolated full-width label rows.
 
@@ -44,3 +46,5 @@
 9. Fail if the Industry Reports weekly entry shows three boxed KPI count cards instead of compact tags.
 10. Fail if page generation runs before the content acceptance gate.
 11. Fail if a weekly report page restores shared `IMAP-V2.1.0` metadata or emits `OMAP-V1.0.0-independent-column`.
+12. Fail if a newly published weekly source updates the archive but leaves the Reports Center first-screen card on an older issue.
+13. Fail if a recent weekly issue is rendered as paragraph/list-only HTML despite having structured trend, chain, impact, opportunity, watchlist, and action sections.

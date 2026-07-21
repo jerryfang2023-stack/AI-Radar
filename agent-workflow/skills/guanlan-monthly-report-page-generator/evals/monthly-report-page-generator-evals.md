@@ -25,6 +25,7 @@
 6. Report-center wiring
    - Pass when `reports.html` redirects to `intelligence-map.html`.
    - Pass when `intelligence-map.html` presents weekly and monthly reports as subcolumns in the Industry Reports entry.
+   - Pass when the latest monthly feature title, reporting window, and route are derived from the newest published canonical monthly source on every weekly or monthly renderer run.
    - Pass when monthly detail pages use the V4 sidebar and do not reference retired V3 column routes or assets.
    - Pass when the Reports Center landing page and monthly detail page use `REPORTS-V1.0.0-periodic-report-center`, and neither page emits the Opportunity Map version.
 
@@ -48,3 +49,4 @@
 8. Fail if a skill update is made but `.skill-store` sync and registry rebuild are skipped.
 9. Fail if page generation runs before the content acceptance gate.
 10. Fail if a monthly report page restores shared `IMAP-V2.1.0` metadata or emits `OMAP-V1.0.0-independent-column`.
+11. Fail if a newly published monthly source leaves the Reports Center first-screen card on an older month or requires a manual HTML edit.
