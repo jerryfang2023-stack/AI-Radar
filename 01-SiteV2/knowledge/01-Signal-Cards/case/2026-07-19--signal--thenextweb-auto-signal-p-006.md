@@ -43,17 +43,17 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team"]
+  buyer_or_user: ["sales_team", "enterprise_ai_owner"]
   team_or_function: ["sales"]
   specific_task: ["sales_lead_research"]
-  business_action: ["funding_round", "customer_deployment", "product_launch"]
+  business_action: ["funding_round", "customer_deployment", "product_launch", "pricing_change"]
   product_form: []
   delivery_model: []
-  pain_or_constraint: []
+  pain_or_constraint: ["api_cost_spike"]
   adoption_evidence: []
   source_evidence_type: ["funding_news"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "英伟达签约日本机器人行业，为其开放世界模型提供支持 Nvidia signs up Japan’s robotics establishment for its open world models Thenextweb宣布完成种子轮融资。"
+  source_excerpt: "/ query=edge AI device customer deployment manufacturing / intent=find_customer_case / path=ai_hardware_original Nvidia signs up Japan’s robotics establishment for its open world models Nvidia has recruited most of Japa..."
   missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "Thenextweb"

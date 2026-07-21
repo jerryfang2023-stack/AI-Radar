@@ -45,14 +45,14 @@ opportunity_signals:
   buyer_or_user: ["enterprise_ai_owner"]
   team_or_function: []
   specific_task: []
-  business_action: ["customer_deployment", "product_launch"]
+  business_action: ["funding_round", "customer_deployment", "product_launch", "pricing_change"]
   product_form: []
   delivery_model: []
-  pain_or_constraint: ["workflow_integration"]
+  pain_or_constraint: ["workflow_integration", "api_cost_spike"]
   adoption_evidence: []
-  source_evidence_type: ["business_media"]
+  source_evidence_type: ["funding_news", "business_media"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Samsung SDS 发布 FuriosaAI-Powered AI Services Samsung SDS to Launch FuriosaAI-Powered AI Services on July 16 < Semiconductor < 기사본문 - The Elec Inc."
+  source_excerpt: "三星SDS将于7月16日推出基于FuriosaAI的AI服务 Samsung SDS to Launch FuriosaAI-Powered AI Services on July 16 < Semiconductor < 기사본문 - The Elec Inc."
   missing_fields: ["specific_task", "product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "Samsung SDS"

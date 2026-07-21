@@ -41,18 +41,18 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["engineering_team", "it_security_team"]
-  team_or_function: ["engineering", "it_security"]
-  specific_task: ["internal_tool_building"]
-  business_action: ["product_launch", "governance_requirement"]
+  buyer_or_user: ["sales_team", "engineering_team", "it_security_team"]
+  team_or_function: ["sales", "engineering", "it_security"]
+  specific_task: ["sales_lead_research", "internal_tool_building"]
+  business_action: ["customer_deployment", "product_launch", "governance_requirement"]
   product_form: []
-  delivery_model: []
+  delivery_model: ["enterprise_subscription"]
   pain_or_constraint: ["permission_boundary", "security_compliance"]
   adoption_evidence: ["customer_metric", "deployment_scale"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "OpenAI 核心产品负责人蒂博 · 索蒂奥（Tibo Sottiaux）于 7 月 16 日在 X 平台发布推文， 回应 GPT-5.6 Sol 会擅自删除用户文件问题。"
-  missing_fields: ["product_form", "delivery_model"]
+  source_excerpt: "6 Sol AI 意外删除用户文件：已采取措施降低风险 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > 智能时代 > 人工智能 OpenAI 回应 GPT-5."
+  missing_fields: ["product_form"]
 
 signal_owner: "OpenAI 回应 GPT"
 

@@ -47,13 +47,13 @@ opportunity_signals:
   specific_task: []
   business_action: ["customer_deployment", "product_launch", "open_source_release"]
   product_form: []
-  delivery_model: []
+  delivery_model: ["open_source_commercial"]
   pain_or_constraint: ["data_silo"]
   adoption_evidence: []
-  source_evidence_type: []
+  source_evidence_type: ["business_media"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Thinking Machines Lab 发布 Inkling：975B 参数开源多模态 MoE 模型 Thinking Machines Lab 发布 Inkling：975B 参数开源多模态 MoE 模型 Thinking Machines Lab 于 7 月 15 日发布其首个从头训练的模型 Inkling，采用 Apache 2.0 协议开源完整权重。"
-  missing_fields: ["buyer_or_user", "specific_task", "product_form", "adoption_evidence", "delivery_model"]
+  source_excerpt: "Thinking Machines Lab 发布 Inkling：975B 参数开源多模态 MoE 模型 Thinking Machines Lab 发布 Inkling：975B 参数开源多模态 MoE 模型 Thinking Machines Lab 于 7 月 15 日发布其首个从头训练的模型 Inkling，采用 Apache 2.0 协议开源完整权重。该模型为 975B 参数 MoE Transformer，41B 活跃参数..."
+  missing_fields: ["buyer_or_user", "specific_task", "product_form", "adoption_evidence"]
 
 signal_owner: "Thinking Machines Lab"
 

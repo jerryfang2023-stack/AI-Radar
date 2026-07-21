@@ -44,14 +44,14 @@ opportunity_signals:
   buyer_or_user: ["sales_team", "engineering_team"]
   team_or_function: ["sales", "engineering"]
   specific_task: ["sales_lead_research", "internal_tool_building"]
-  business_action: ["customer_deployment", "governance_requirement"]
+  business_action: ["customer_deployment", "product_launch", "governance_requirement"]
   product_form: []
   delivery_model: ["enterprise_subscription"]
   pain_or_constraint: ["human_review_required", "security_compliance", "evaluation_gap"]
   adoption_evidence: ["customer_metric"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "今年 5 月，微软内部引入多模态 AI 安全系统 MDASH，自动扫描 Windows 关键二进制文件，结合多个 AI 模型分析潜在漏洞，并通过专用验证流程过滤误报，最后由工程师人工确认。"
+  source_excerpt: "微软：Windows 团队正全面利用 AI 挖掘漏洞，后续 Patch Tuesday 安全更新将包含更多修复补丁 微软：Windows 团队正全面利用 AI 挖掘漏洞，后续 Patch Tuesday 安全更新将包含更多修复补丁 微软 Windows 与设备部门执行副总裁 Pavan Davuluri 透露，Windows 团队正全面利用 AI 挖掘漏洞。今年 5 月，微软内部引入多模态 AI 安全系统 MDASH，自动扫描 Win..."
   missing_fields: ["product_form"]
 
 signal_owner: "Microsoft / Windows"

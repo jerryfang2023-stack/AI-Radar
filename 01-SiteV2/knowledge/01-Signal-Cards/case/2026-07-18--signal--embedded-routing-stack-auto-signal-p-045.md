@@ -43,18 +43,18 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: []
+  buyer_or_user: ["enterprise_ai_owner"]
   team_or_function: []
   specific_task: []
-  business_action: ["customer_deployment", "partnership_integration", "governance_requirement"]
+  business_action: ["customer_deployment", "partnership_integration", "pricing_change", "governance_requirement"]
   product_form: ["model_gateway"]
   delivery_model: ["project_based_service"]
-  pain_or_constraint: ["hallucination_risk", "model_routing_complexity", "security_compliance"]
+  pain_or_constraint: ["api_cost_spike", "hallucination_risk", "model_routing_complexity", "security_compliance"]
   adoption_evidence: ["pilot_or_poc"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "嵌入式路由栈：让客户掌控模型路由 Embedded Routing Stack: Give your customers control over model routing 原始来源标题显示：嵌入式路由栈：让客户掌控模型路由。"
-  missing_fields: ["buyer_or_user", "specific_task"]
+  source_excerpt: "嵌入式路由栈：让客户掌控模型路由 Embedded Routing Stack: Give your customers control over model routing Embedded Routing Stack: Give your customers control over model routing Table of contents ###### Thousands of companies trust Merge ..."
+  missing_fields: ["specific_task"]
 
 signal_owner: "Embedded Routing Stack"
 

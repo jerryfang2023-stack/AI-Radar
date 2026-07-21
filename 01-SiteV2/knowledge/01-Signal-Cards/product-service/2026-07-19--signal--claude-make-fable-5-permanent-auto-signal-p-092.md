@@ -42,18 +42,18 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: []
-  team_or_function: []
-  specific_task: []
-  business_action: []
-  product_form: []
-  delivery_model: []
-  pain_or_constraint: []
-  adoption_evidence: []
+  buyer_or_user: ["sales_team", "engineering_team"]
+  team_or_function: ["sales", "engineering"]
+  specific_task: ["sales_lead_research", "internal_tool_building"]
+  business_action: ["customer_deployment", "procurement_signal", "pricing_change"]
+  product_form: ["api"]
+  delivery_model: ["api_usage_based"]
+  pain_or_constraint: ["api_cost_spike"]
+  adoption_evidence: ["procurement_contract"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "Claude 将 Fable 5 设为永久版本 Claude make Fable 5 permanent 原始来源标题显示：Claude 将 Fable 5 设为永久版本。"
-  missing_fields: ["buyer_or_user", "specific_task", "product_form", "adoption_evidence", "delivery_model"]
+  source_excerpt: "6 Sol (and maybe to a lesser extent Kimi 3 ) made untenable Anthropic's plan to remove Fable 5 from their subscription accounts and make it available exclusively through API pricing."
+  missing_fields: []
 
 signal_owner: "Claude make Fable 5 permanent"
 

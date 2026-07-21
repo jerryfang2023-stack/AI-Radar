@@ -41,9 +41,9 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: []
-  team_or_function: []
-  specific_task: []
+  buyer_or_user: ["sales_team"]
+  team_or_function: ["sales"]
+  specific_task: ["sales_lead_research"]
   business_action: ["customer_deployment", "product_launch"]
   product_form: ["api"]
   delivery_model: ["api_usage_based"]
@@ -51,8 +51,8 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "商汤科技发布日日新 U1 Pro 图片创作模型：最高 8K 原生分辨率输出，宣称告别\"AI 味\" 商汤科技发布日日新 U1 Pro 图片创作模型：最高 8K 原生分辨率输出，宣称告别\"AI 味\" 商汤科技发布日日新 SenseNova U1 Pro 图片创作模型，宣称效果比肩海外顶尖模型。"
-  missing_fields: ["buyer_or_user", "specific_task", "adoption_evidence"]
+  source_excerpt: "商汤科技发布日日新 U1 Pro 图片创作模型：最高 8K 原生分辨率输出，宣称告别\"AI 味\" 商汤科技发布日日新 U1 Pro 图片创作模型：最高 8K 原生分辨率输出，宣称告别\"AI 味\" 商汤科技发布日日新 SenseNova U1 Pro 图片创作模型，宣称效果比肩海外顶尖模型。该模型支持最高 8K 原生分辨率输出，通过内生图文交错思维链实现专业设计美感与低文字渲染出错率，并具备长程 Agentic Generation L..."
+  missing_fields: ["adoption_evidence"]
 
 signal_owner: "商汤科技"
 

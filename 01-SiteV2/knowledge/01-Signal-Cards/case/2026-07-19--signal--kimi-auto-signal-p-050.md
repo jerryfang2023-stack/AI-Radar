@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: ["deployment_scale"]
   source_evidence_type: ["funding_news"]
   evidence_basis: "raw_source_text"
-  source_excerpt: ">> 查看详情 2、广汽埃安：部分搭载中创新航 177Ah 磷酸铁锂电池 AION S 车型质保翻倍至 8 年 30 万公里，维修超 5 天可获补贴 针对搭载中创新航 177Ah 磷酸铁锂电池的 AION S 车型，广汽埃安推出质保服务升级方案。"
+  source_excerpt: "- IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > IT资讯 > 业界 IT早报 0719：曝 Kimi 最快 6 个月内赴港上市；广汽埃安就部分搭 177Ah 电池..."
   missing_fields: ["buyer_or_user", "specific_task", "product_form"]
 
 signal_owner: "月之暗面 / Kimi"

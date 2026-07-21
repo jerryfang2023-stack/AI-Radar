@@ -41,18 +41,18 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: []
-  team_or_function: []
-  specific_task: []
+  buyer_or_user: ["sales_team"]
+  team_or_function: ["sales"]
+  specific_task: ["sales_lead_research"]
   business_action: ["product_launch", "partnership_integration"]
   product_form: []
-  delivery_model: []
+  delivery_model: ["enterprise_subscription"]
   pain_or_constraint: []
   adoption_evidence: ["partnership_announcement"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "阶跃星辰发布终端品牌STEPX及首款智能体手机STEPX Neo 阶跃星辰发布终端品牌STEPX及首款智能体手机STEPX Neo 阶跃星辰今日发布终端品牌STEPX，董事长印奇称虽被劝告仍决定做AI原生硬件。"
-  missing_fields: ["buyer_or_user", "specific_task", "product_form", "delivery_model"]
+  source_excerpt: "阶跃星辰发布终端品牌STEPX及首款智能体手机STEPX Neo 阶跃星辰发布终端品牌STEPX及首款智能体手机STEPX Neo 阶跃星辰今日发布终端品牌STEPX，董事长印奇称虽被劝告仍决定做AI原生硬件。首款智能体手机STEPX Neo亮相，背面配备交互副屏，搭载Step AOS系统，首批生态合作伙伴包括美团、WPS等。具体配置与上市时间未公布。"
+  missing_fields: ["product_form"]
 
 signal_owner: "阶跃星辰"
 

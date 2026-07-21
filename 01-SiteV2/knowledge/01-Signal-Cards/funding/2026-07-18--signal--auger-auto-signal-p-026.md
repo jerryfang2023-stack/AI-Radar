@@ -53,7 +53,7 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: ["funding_news"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Auger 获 5000 万美元 B 轮融资，用于 AI 供应链自动化 Auger secures $50M Series B for AI supply‑chain automation | SaaS M&A and VC Deals Auger 获得 5000 万美元 B 轮融资。"
+  source_excerpt: "Auger 获 5000 万美元 B 轮融资，用于 AI 供应链自动化 Auger secures $50M Series B for AI supply‑chain automation | SaaS M&A and VC Deals Auger, the AI‑driven supply‑chain automation startup founded by former Amazon operations chief Dave ..."
   missing_fields: ["adoption_evidence", "delivery_model"]
 
 signal_owner: "Auger"

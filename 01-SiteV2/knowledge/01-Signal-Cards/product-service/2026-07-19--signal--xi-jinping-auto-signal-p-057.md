@@ -42,18 +42,18 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: []
-  team_or_function: []
-  specific_task: []
-  business_action: ["partnership_integration"]
+  buyer_or_user: ["sales_team", "it_security_team"]
+  team_or_function: ["sales", "it_security"]
+  specific_task: ["sales_lead_research"]
+  business_action: ["customer_deployment", "partnership_integration", "procurement_signal", "governance_requirement"]
   product_form: []
   delivery_model: []
   pain_or_constraint: []
-  adoption_evidence: ["partnership_announcement"]
+  adoption_evidence: ["partnership_announcement", "procurement_contract"]
   source_evidence_type: ["business_media"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "中国新成立的世界人工智能合作组织是习近平主席构建平行AI秩序最明确的举措 China's new World Artificial Intelligence Cooperation Organization is President Xi's clearest play yet for a parallel AI order 原始来源标题显示：中国新成立的世界人工智能合作组织是习近平主席构建平行AI秩序最明确的举措。"
-  missing_fields: ["buyer_or_user", "specific_task", "product_form", "delivery_model"]
+  source_excerpt: "中国新成立的世界人工智能合作组织是习近平主席构建平行AI秩序最明确的举措 China's new World Artificial Intelligence Cooperation Organization is President Xi's clearest play yet for a parallel AI order At the World AI Conference in Shanghai, Xi Jinping anno..."
+  missing_fields: ["product_form", "delivery_model"]
 
 signal_owner: "Xi Jinping"
 

@@ -53,7 +53,7 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: ["funding_news"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Monogram 获得 4000 万美元种子轮融资 Monogram Raises $40M Seed for Visual AI Interface | Value Add Pulse Monogram宣布完成4000 万美元种子轮融资。"
+  source_excerpt: "Monogram 获 4000 万美元种子轮融资，用于开发视觉 AI 界面 Monogram Raises $40M Seed for Visual AI Interface | Value Add Pulse Monogram Raises $40M Seed for Visual AI Interface | Value Add Pulse ← Value Add Pulse FUNDING$40M seed # Monogram..."
   missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "Monogram"

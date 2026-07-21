@@ -41,17 +41,17 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["engineering_team"]
-  team_or_function: ["engineering"]
-  specific_task: ["internal_tool_building"]
-  business_action: ["product_launch"]
+  buyer_or_user: ["sales_team", "engineering_team"]
+  team_or_function: ["sales", "engineering"]
+  specific_task: ["sales_lead_research", "internal_tool_building"]
+  business_action: ["customer_deployment", "product_launch"]
   product_form: []
   delivery_model: []
   pain_or_constraint: []
-  adoption_evidence: ["deployment_scale"]
+  adoption_evidence: ["customer_metric", "deployment_scale"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "MacWhisper 14 发布：新增编辑器视图，修复 CPU 占用过高问题 MacWhisper 14 发布：新增编辑器视图，修复 CPU 占用过高问题 MacWhisper 14.0 更新发布，新增编辑器视图（Editor View），允许用户在主界面直接编辑转录稿、添加段落、重新分配发言人。"
+  source_excerpt: "MacWhisper 14 发布：新增编辑器视图，修复 CPU 占用过高问题 MacWhisper 14 发布：新增编辑器视图，修复 CPU 占用过高问题 MacWhisper 14.0 更新发布，新增编辑器视图（Editor View），允许用户在主界面直接编辑转录稿、添加段落、重新分配发言人。该版本还改进了 AI 服务界面，修复了 CPU 空闲占用率过高等问题。同步推出的 14.1 更新新增 Gladia 作为云转录提供商。"
   missing_fields: ["product_form", "delivery_model"]
 
 signal_owner: "MacWhisper 14"

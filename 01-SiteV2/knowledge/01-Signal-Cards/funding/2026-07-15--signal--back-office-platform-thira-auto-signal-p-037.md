@@ -43,9 +43,9 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "enterprise_ai_owner"]
-  team_or_function: ["sales"]
-  specific_task: ["sales_lead_research"]
+  buyer_or_user: ["sales_team", "engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["sales", "engineering"]
+  specific_task: ["sales_lead_research", "internal_tool_building"]
   business_action: ["funding_round", "customer_deployment", "partnership_integration"]
   product_form: []
   delivery_model: []
@@ -53,7 +53,7 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: ["funding_news", "business_media"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Back-Office Platform Thira 获得 2100 万美元 种子轮融资，用于构建 AI 服务 Thira Raises $21 Million Seed To Build Self-Learning AI Back-Office Platform Back-Office Platform Thira 获得 2100 万美元 种子轮融资。"
+  source_excerpt: "Thira 获 2100 万美元种子轮融资，打造自学习 AI 后台办公平台 Thira Raises $21 Million Seed To Build Self-Learning AI Back-Office Platform Thira Raises $21 Million Seed To Build Self-Learning AI Back-Office Platform # Thira Raises $21 Million ..."
   missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "Back-Office Platform Thira"

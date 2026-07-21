@@ -41,18 +41,18 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: []
-  team_or_function: []
-  specific_task: []
-  business_action: ["product_launch"]
+  buyer_or_user: ["sales_team"]
+  team_or_function: ["sales"]
+  specific_task: ["sales_lead_research"]
+  business_action: ["customer_deployment", "product_launch"]
   product_form: ["copilot"]
   delivery_model: []
   pain_or_constraint: ["evaluation_gap"]
   adoption_evidence: ["deployment_scale"]
   source_evidence_type: ["business_media"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Superhuman 新版自动草稿功能：基于 Anthropic 和 OpenAI 前沿模型生成回复 Superhuman 新版自动草稿功能：基于 Anthropic 和 OpenAI 前沿模型生成回复 邮件客户端 Superhuman 推出新版自动草稿功能，可识别重要邮件并根据用户过往对话语气生成回复草稿，同时提供另外两个备选版本。"
-  missing_fields: ["buyer_or_user", "specific_task", "delivery_model"]
+  source_excerpt: "Superhuman 新版自动草稿功能：基于 Anthropic 和 OpenAI 前沿模型生成回复 Superhuman 新版自动草稿功能：基于 Anthropic 和 OpenAI 前沿模型生成回复 邮件客户端 Superhuman 推出新版自动草稿功能，可识别重要邮件并根据用户过往对话语气生成回复草稿，同时提供另外两个备选版本。测试阶段 40% 的自动生成草稿在一天内被发送，其中 60% 未经任何手动编辑。该功能由 Anthro..."
+  missing_fields: ["delivery_model"]
 
 signal_owner: "However"
 

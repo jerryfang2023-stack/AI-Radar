@@ -41,8 +41,8 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "enterprise_ai_owner"]
-  team_or_function: ["sales"]
+  buyer_or_user: ["sales_team", "finance_team", "enterprise_ai_owner"]
+  team_or_function: ["sales", "finance"]
   specific_task: ["sales_lead_research"]
   business_action: ["customer_deployment", "partnership_integration", "pricing_change"]
   product_form: []
@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: ["deployment_scale", "partnership_announcement", "pricing_page"]
   source_evidence_type: ["business_media"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Anthropic 今年 2 月在班加罗尔设立了办公室，并与 Infosys、塔塔咨询合作拓展企业 AI 部署。"
+  source_excerpt: "Anthropic 为印度用户本地化 Claude 定价，年付 Pro 版约 21 美元 Anthropic 为印度用户本地化 Claude 定价，年付 Pro 版约 21 美元 Anthropic 已开始为印度用户本地化 Claude 的定价，这是其美国之外的最大市场。Claude Pro 年付定价为每月 2000 卢比（约 21 美元），高于美国的 17 美元；Claude Max 月付起价 11999 卢比（约 125 美元），..."
   missing_fields: ["product_form"]
 
 signal_owner: "Anthropic 为印度用户本地化 Claude"

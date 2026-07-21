@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: ["funding_news", "business_media"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "印度AI编程初创公司Emergent获1.3亿美元C轮融资，估值达15亿美元 印度AI编程初创公司Emergent获1.3亿美元C轮融资，估值达15亿美元 Emergent完成1.3亿美元C轮融资，投后估值15亿美元，较六个月前的B轮估值增长五倍。"
+  source_excerpt: "印度AI编程初创公司Emergent获1.3亿美元C轮融资，估值达15亿美元 印度AI编程初创公司Emergent获1.3亿美元C轮融资，估值达15亿美元 Emergent完成1.3亿美元C轮融资，投后估值15亿美元，较六个月前的B轮估值增长五倍。该公司年化经常性收入已达1.2亿美元，拥有超过20万付费客户，其平台面向创业者和中小企业，提供涵盖部署、托管、测试和调试的全流程AI编程服务。本轮融资由Creaegis领投，Khosla V..."
   missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "Emergent"

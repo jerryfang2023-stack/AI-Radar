@@ -52,7 +52,7 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: ["funding_news"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "推理云运营商 General Compute 获得 4 亿美元债务融资 Inference cloud operator General Compute raises $400M in debt financing - SiliconANGLE General Compute Inc."
+  source_excerpt: "推理云运营商 General Compute 获得 4 亿美元债务融资 Inference cloud operator General Compute raises $400M in debt financing - SiliconANGLE Inference cloud operator General Compute raises $400M in debt financing - SiliconANGLE SHARE UPD..."
   missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "General Compute Inc."

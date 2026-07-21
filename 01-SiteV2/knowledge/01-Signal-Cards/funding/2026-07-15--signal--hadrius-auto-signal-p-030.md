@@ -53,7 +53,7 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: ["funding_news"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Hadrius 获得 2200 万美元 A 轮融资 Announcing our $22 Million Series A Hadrius 获得 2200 万美元 A 轮融资。"
+  source_excerpt: "宣布完成2200万美元A轮融资 Announcing our $22 Million Series A Announcing our $22 Million Series A Hadrius raises $22M to build agentic compliance infrastructure."
   missing_fields: ["product_form", "adoption_evidence"]
 
 signal_owner: "Hadrius"

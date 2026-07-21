@@ -41,18 +41,18 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["engineering_team"]
-  team_or_function: ["engineering"]
-  specific_task: ["internal_tool_building"]
-  business_action: ["customer_deployment", "product_launch", "open_source_release"]
+  buyer_or_user: ["sales_team", "engineering_team"]
+  team_or_function: ["sales", "engineering"]
+  specific_task: ["sales_lead_research", "internal_tool_building"]
+  business_action: ["customer_deployment", "product_launch", "partnership_integration", "open_source_release"]
   product_form: []
-  delivery_model: []
+  delivery_model: ["enterprise_subscription"]
   pain_or_constraint: []
   adoption_evidence: ["customer_metric"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "腾讯混元发布 1bit 与 4bit 量化版 Hy3 模型，旗舰 AI 模型可单卡本地运行 腾讯混元发布 1bit 与 4bit 量化版 Hy3 模型，旗舰 AI 模型可单卡本地运行 腾讯混元将 295B 参数的旗舰模型 Hy3 量化至 1bit 与 4bit，并打包成 GGUF 格式。"
-  missing_fields: ["product_form", "delivery_model"]
+  source_excerpt: "腾讯混元发布 1bit 与 4bit 量化版 Hy3 模型，旗舰 AI 模型可单卡本地运行 腾讯混元发布 1bit 与 4bit 量化版 Hy3 模型，旗舰 AI 模型可单卡本地运行 腾讯混元将 295B 参数的旗舰模型 Hy3 量化至 1bit 与 4bit，并打包成 GGUF 格式。1bit 版本（IQ1_M）将权重从 598 GB 压缩至 85.5 GiB，单张 96GB 推理显卡即可部署；4bit 版本（Q4_K_M）体积 1..."
+  missing_fields: ["product_form"]
 
 signal_owner: "腾讯混元"
 

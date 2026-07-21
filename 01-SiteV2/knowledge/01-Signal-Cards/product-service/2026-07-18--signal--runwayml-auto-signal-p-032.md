@@ -42,18 +42,18 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: []
-  team_or_function: []
-  specific_task: []
-  business_action: []
+  buyer_or_user: ["sales_team", "engineering_team"]
+  team_or_function: ["sales", "engineering"]
+  specific_task: ["sales_lead_research", "internal_tool_building"]
+  business_action: ["customer_deployment", "product_launch", "procurement_signal"]
   product_form: []
   delivery_model: []
   pain_or_constraint: []
-  adoption_evidence: []
+  adoption_evidence: ["procurement_contract"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "Runway Agent 构建方法内幕 Inside Our Approach to Building Runway Agent 原始来源标题显示：Runway Agent 构建方法内幕。"
-  missing_fields: ["buyer_or_user", "specific_task", "product_form", "adoption_evidence", "delivery_model"]
+  source_excerpt: "Runway Agent 构建方法内幕 Inside Our Approach to Building Runway Agent Inside Our Approach to Building Runway Agent Inside Our Approach to Building Runway Agent July 17, 2026 by Leah Retta We recently launched Runway Agent 2."
+  missing_fields: ["product_form", "delivery_model"]
 
 signal_owner: "Runwayml"
 

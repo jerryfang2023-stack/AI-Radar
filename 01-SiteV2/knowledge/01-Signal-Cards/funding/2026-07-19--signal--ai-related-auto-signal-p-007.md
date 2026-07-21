@@ -53,7 +53,7 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: ["funding_news", "business_media"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "[{\"type\":\"funding\",\"text\":\"Other investors in the company include Kleiner Perkins and YC, according to PitchBook."
+  source_excerpt: "Core Automation — $1 billion: Founded in 2026, this company is an enterprise platform that helps companies automate complex business workflows."
   missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "AI-related"

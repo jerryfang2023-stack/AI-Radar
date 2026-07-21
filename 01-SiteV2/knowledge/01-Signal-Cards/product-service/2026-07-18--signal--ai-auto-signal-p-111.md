@@ -41,9 +41,9 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: []
-  team_or_function: []
-  specific_task: []
+  buyer_or_user: ["sales_team"]
+  team_or_function: ["sales"]
+  specific_task: ["sales_lead_research"]
   business_action: ["customer_deployment"]
   product_form: []
   delivery_model: []
@@ -51,8 +51,8 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "阿里千问输入法移动版上线：无广告无弹窗无需注册，支持 AI 自动润色 阿里千问输入法移动版上线：无广告无弹窗无需注册，支持 AI 自动润色 阿里旗下千问输入法 iOS 版 7 月 16 日上线 App Store，安卓版同日陆续上架各大商店。"
-  missing_fields: ["buyer_or_user", "specific_task", "product_form", "adoption_evidence", "delivery_model"]
+  source_excerpt: "阿里千问输入法移动版上线：无广告无弹窗无需注册，支持 AI 自动润色 阿里千问输入法移动版上线：无广告无弹窗无需注册，支持 AI 自动润色 阿里旗下千问输入法 iOS 版 7 月 16 日上线 App Store，安卓版同日陆续上架各大商店。该输入法基于自研 CosyVoice 语音大模型，语音输入最快每分钟 300 字，支持 9 种方言及中英混合识别，单次录音最长 3 分钟。其核心差异在于大模型驱动的语义理解与润色能力，可自动过滤语..."
+  missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "阿里千问输入法移动版"
 

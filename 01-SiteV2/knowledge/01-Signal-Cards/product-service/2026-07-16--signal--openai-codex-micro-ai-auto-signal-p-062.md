@@ -41,18 +41,18 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: []
-  team_or_function: []
-  specific_task: []
-  business_action: ["customer_deployment", "product_launch", "partnership_integration"]
+  buyer_or_user: ["sales_team"]
+  team_or_function: ["sales"]
+  specific_task: ["sales_lead_research"]
+  business_action: ["customer_deployment", "product_launch", "partnership_integration", "procurement_signal"]
   product_form: []
-  delivery_model: []
+  delivery_model: ["enterprise_subscription"]
   pain_or_constraint: ["latency_sensitive"]
-  adoption_evidence: ["partnership_announcement"]
+  adoption_evidence: ["deployment_scale", "partnership_announcement", "procurement_contract"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "OpenAI 首款联名硬件：Codex Micro 键盘登场，灵活操控 AI 智能体 OpenAI 首款联名硬件：Codex Micro 键盘登场，灵活操控 AI 智能体 OpenAI 携手 Work Louder 推出 kbd-1.0-codex-micro 键盘，售价 230 美元（约合 1560 元人民币）。"
-  missing_fields: ["buyer_or_user", "specific_task", "product_form", "delivery_model"]
+  source_excerpt: "OpenAI 首款联名硬件：Codex Micro 键盘登场，灵活操控 AI 智能体 OpenAI 首款联名硬件：Codex Micro 键盘登场，灵活操控 AI 智能体 OpenAI 携手 Work Louder 推出 kbd-1.0-codex-micro 键盘，售价 230 美元（约合 1560 元人民币）。该键盘专为操控 Codex AI 智能体设计，提供实时 RGB 状态反馈，并支持通过操纵杆和命令键快速触发 Skills、..."
+  missing_fields: ["product_form"]
 
 signal_owner: "OpenAI 首款联名硬件：Codex Micro 键盘登场，灵活操控 AI 智能体"
 

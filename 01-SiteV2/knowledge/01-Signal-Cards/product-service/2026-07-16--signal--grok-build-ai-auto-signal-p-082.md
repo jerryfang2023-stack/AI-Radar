@@ -42,18 +42,18 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["engineering_team"]
-  team_or_function: ["engineering"]
-  specific_task: ["internal_tool_building"]
+  buyer_or_user: ["sales_team", "engineering_team"]
+  team_or_function: ["sales", "engineering"]
+  specific_task: ["sales_lead_research", "internal_tool_building"]
   business_action: ["product_launch", "open_source_release"]
   product_form: ["developer_tool"]
-  delivery_model: []
-  pain_or_constraint: ["evaluation_gap"]
+  delivery_model: ["enterprise_subscription"]
+  pain_or_constraint: ["data_silo", "evaluation_gap"]
   adoption_evidence: ["deployment_scale"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "马斯克宣布开源 Grok Build 编程 AI 智能体工具 马斯克宣布开源 Grok Build 编程 AI 智能体工具 SpaceXAI 开源了 AI 编程智能体工具 Grok Build，其源代码已发布至 GitHub。"
-  missing_fields: ["delivery_model"]
+  source_excerpt: "马斯克宣布开源 Grok Build 编程 AI 智能体工具 马斯克宣布开源 Grok Build 编程 AI 智能体工具 SpaceXAI 开源了 AI 编程智能体工具 Grok Build，其源代码已发布至 GitHub。该工具在终端中整合 Grok 模型，可完成从规划、搜索、编码、测试到 Git 提交的全流程工作，并支持完全本地优先运行。开源代码涵盖智能体链路、工具、终端用户界面及扩展系统（Skills、插件、hooks、MCP..."
+  missing_fields: []
 
 signal_owner: "马斯克宣布开源 Grok Build 编程 AI 智能体工具"
 

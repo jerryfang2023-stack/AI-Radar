@@ -45,14 +45,14 @@ opportunity_signals:
   buyer_or_user: ["sales_team", "engineering_team", "it_security_team"]
   team_or_function: ["sales", "engineering", "it_security"]
   specific_task: ["sales_lead_research", "internal_tool_building"]
-  business_action: ["customer_deployment", "product_launch", "open_source_release", "research_benchmark"]
+  business_action: ["customer_deployment", "product_launch", "pricing_change", "open_source_release"]
   product_form: []
   delivery_model: []
-  pain_or_constraint: ["security_compliance", "evaluation_gap"]
+  pain_or_constraint: ["api_cost_spike", "security_compliance", "evaluation_gap"]
   adoption_evidence: []
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "微软研究院推出开源可视化中间语言 Flint，让 AI 智能体\"一句话生成专业图表\" 微软研究院推出开源可视化中间语言 Flint，让 AI 智能体\"一句话生成专业图表\" 微软研究院推出开源可视化中间语言 Flint，让 AI 智能体\"一句话生成专业图表\" 微软研究院与中国人民大学 IDEAS Lab 联合推出开源可视化中间语言 Flint，让 AI 智能体通过一句话即可生成 Vega-Lite、ECharts、Chart.js 的可..."
+  source_excerpt: "微软研究院推出开源可视化中间语言 Flint，让 AI 智能体\"一句话生成专业图表\" 微软研究院推出开源可视化中间语言 Flint，让 AI 智能体\"一句话生成专业图表\" 微软研究院与中国人民大学 IDEAS Lab 联合推出开源可视化中间语言 Flint，让 AI 智能体通过一句话即可生成 Vega-Lite、ECharts、Chart.js 的可渲染图表。Flint 将图表意图与底层可视化库实现分离，规格分为数据定义和图表定义两部..."
   missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "Microsoft Research"

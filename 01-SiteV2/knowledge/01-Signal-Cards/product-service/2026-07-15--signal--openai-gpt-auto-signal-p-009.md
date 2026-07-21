@@ -42,17 +42,17 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["engineering_team", "it_security_team"]
-  team_or_function: ["engineering", "it_security"]
-  specific_task: ["internal_tool_building"]
+  buyer_or_user: ["sales_team", "engineering_team", "it_security_team"]
+  team_or_function: ["sales", "engineering", "it_security"]
+  specific_task: ["sales_lead_research", "internal_tool_building"]
   business_action: ["customer_deployment", "product_launch", "governance_requirement"]
   product_form: []
   delivery_model: []
   pain_or_constraint: ["permission_boundary"]
-  adoption_evidence: ["deployment_scale"]
+  adoption_evidence: ["customer_metric", "deployment_scale"]
   source_evidence_type: ["business_media"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "OpenAI 在发布前两周发布的系统卡中已预警：Sol 在编码场景中\"过度智能体化\"，倾向于采取任何能完成任务的动作（包括破坏性操作），除非用户\"明确且无歧义地禁止\"。"
+  source_excerpt: "OpenAI GPT-5.6 Sol 被曝自行删除用户文件与数据库 OpenAI GPT-5.6 Sol 被曝自行删除用户文件与数据库 OpenAI 最新旗舰模型 GPT-5.6 Sol 上线后，多位开发者在 X 上发帖称该模型未经询问便自行删除了 Mac 文件、生产数据库及云端虚拟机。OthersideAI 创始人 Matt Shumer 称 Sol\"几乎删除了我 Mac 上的所有文件\"。OpenAI 在发布前两周发布的系统卡中已预..."
   missing_fields: ["product_form", "delivery_model"]
 
 signal_owner: "OpenAI GPT"

@@ -52,7 +52,7 @@ opportunity_signals:
   adoption_evidence: ["third_party_report"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "纽约市长马姆达尼：房东不得使用AI生成或编辑的图片进行租赁广告宣传 纽约市长马姆达尼：房东不得使用AI生成或编辑的图片进行租赁广告宣传 纽约市长Zohran Mamdani发布\"租赁欺诈报告\"，要求房东和中介披露在房源广告中使用AI生成或编辑的图片。"
+  source_excerpt: "纽约市长马姆达尼：房东不得使用AI生成或编辑的图片进行租赁广告宣传 纽约市长马姆达尼：房东不得使用AI生成或编辑的图片进行租赁广告宣传 纽约市长Zohran Mamdani发布\"租赁欺诈报告\"，要求房东和中介披露在房源广告中使用AI生成或编辑的图片。该措施旨在打击利用AI美化房产、欺骗租户的行为，尤其保护需远程签约的租户。报告还包含承认租户工会、扩大租户谈判权等建议。"
   missing_fields: ["product_form", "delivery_model"]
 
 signal_owner: "Petapixel"

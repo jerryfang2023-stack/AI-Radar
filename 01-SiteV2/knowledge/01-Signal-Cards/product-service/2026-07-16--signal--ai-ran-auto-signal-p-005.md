@@ -41,18 +41,18 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: []
-  team_or_function: []
-  specific_task: []
-  business_action: ["product_launch"]
+  buyer_or_user: ["insurance_team"]
+  team_or_function: ["insurance_operations"]
+  specific_task: ["insurance_claim_review"]
+  business_action: ["customer_deployment", "product_launch"]
   product_form: []
   delivery_model: ["enterprise_subscription"]
   pain_or_constraint: []
-  adoption_evidence: ["customer_metric"]
-  source_evidence_type: []
+  adoption_evidence: ["customer_metric", "enterprise_plan", "pilot_or_poc"]
+  source_evidence_type: ["business_media"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "诺基亚推出基于英伟达的AI-RAN平台，声称业界首个 诺基亚推出基于英伟达的AI-RAN平台，声称业界首个 诺基亚于7月15日推出其声称的\"业界首个\"AI-RAN平台，基于anyRAN软件和英伟达Aerial系统。"
-  missing_fields: ["buyer_or_user", "specific_task", "product_form"]
+  source_excerpt: "诺基亚推出基于英伟达的AI-RAN平台，声称业界首个 诺基亚推出基于英伟达的AI-RAN平台，声称业界首个 诺基亚于7月15日推出其声称的\"业界首个\"AI-RAN平台，基于anyRAN软件和英伟达Aerial系统。该平台已实现超过20%的频谱效率提升，计划2028年提升至100%以上，运营商可通过软件订阅获取。该平台尚未商用，预计今年年底试点、2027年上市。"
+  missing_fields: ["product_form"]
 
 signal_owner: "诺基亚"
 

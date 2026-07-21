@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: ["deployment_scale"]
   source_evidence_type: ["business_media"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "此前 Meta 于 2026 年 1 月 15 日封禁 ChatGPT、Microsoft Copilot 和 Perplexity。"
+  source_excerpt: "ChatGPT 重返欧洲 WhatsApp，欧盟强制 Meta 开放平台 ChatGPT 重返欧洲 WhatsApp，欧盟强制 Meta 开放平台 OpenAI 已在欧洲经济区（27 个欧盟成员国及列支敦士登、冰岛、挪威）重新启用 WhatsApp 上的 ChatGPT。用户自 2026 年 7 月 13 日起可通过已验证联系人 1-800-CHATGPT 访问，无需账户，支持文本提示词、图片上传、语音消息及多语言图片生成。该机器人自..."
   missing_fields: ["buyer_or_user", "specific_task", "delivery_model"]
 
 signal_owner: "ChatGPT 重返欧洲 WhatsApp，欧盟强制 Meta 开放平台"

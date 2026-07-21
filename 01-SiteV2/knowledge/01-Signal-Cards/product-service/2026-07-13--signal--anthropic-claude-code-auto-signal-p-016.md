@@ -52,7 +52,7 @@ opportunity_signals:
   adoption_evidence: ["deployment_scale"]
   source_evidence_type: ["business_media"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "[{\"type\":\"workflow_change\",\"text\":\"Claude Code now has a built-in browser that lets the AI open, read, and interact with web pages directly inside the development environment."
+  source_excerpt: "Claude Code 现内置浏览器，可让 AI 智能体在外部网站上阅读、点击和输入 Claude Code now has a built-in browser that lets the AI read, click, and type on external websites Claude Code now has a built-in browser that lets the AI open, read, and inter..."
   missing_fields: ["product_form", "delivery_model"]
 
 signal_owner: "Anthropic / Claude Code"

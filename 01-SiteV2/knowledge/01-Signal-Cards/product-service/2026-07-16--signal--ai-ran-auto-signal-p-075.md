@@ -41,18 +41,18 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["enterprise_ai_owner"]
-  team_or_function: []
-  specific_task: []
-  business_action: ["product_launch", "partnership_integration"]
+  buyer_or_user: ["sales_team", "enterprise_ai_owner"]
+  team_or_function: ["sales"]
+  specific_task: ["sales_lead_research"]
+  business_action: ["customer_deployment", "product_launch", "partnership_integration"]
   product_form: []
-  delivery_model: []
+  delivery_model: ["enterprise_subscription"]
   pain_or_constraint: []
   adoption_evidence: ["customer_metric", "partnership_announcement"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "诺基亚与英伟达推出全球首个商用 AI-RAN 平台，可提升现有频谱效率 诺基亚与英伟达推出全球首个商用 AI-RAN 平台，可提升现有频谱效率 诺基亚与英伟达共同推出全球首个商用 AI-RAN 平台，帮助电信运营商在相同无线频段上到 2028 年实现两倍数据传输能力，频谱利用效率预计可提升 50%。"
-  missing_fields: ["specific_task", "product_form", "delivery_model"]
+  source_excerpt: "诺基亚与英伟达推出全球首个商用 AI-RAN 平台，可提升现有频谱效率 诺基亚与英伟达推出全球首个商用 AI-RAN 平台，可提升现有频谱效率 诺基亚与英伟达共同推出全球首个商用 AI-RAN 平台，帮助电信运营商在相同无线频段上到 2028 年实现两倍数据传输能力，频谱利用效率预计可提升 50%。该平台符合 Open RAN 标准，可通过软件升级支持未来 6G 标准，硬件预计明年开始向运营商提供。诺基亚还将转向订阅模式，持续提供增强..."
+  missing_fields: ["product_form"]
 
 signal_owner: "诺基亚与英伟达"
 

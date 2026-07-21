@@ -41,10 +41,10 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["engineering_team"]
-  team_or_function: ["engineering"]
-  specific_task: ["code_review"]
-  business_action: ["product_launch", "open_source_release"]
+  buyer_or_user: ["sales_team", "engineering_team", "it_security_team"]
+  team_or_function: ["sales", "engineering", "it_security"]
+  specific_task: ["sales_lead_research", "code_review"]
+  business_action: ["customer_deployment", "product_launch", "open_source_release", "governance_requirement"]
   product_form: []
   delivery_model: []
   pain_or_constraint: []

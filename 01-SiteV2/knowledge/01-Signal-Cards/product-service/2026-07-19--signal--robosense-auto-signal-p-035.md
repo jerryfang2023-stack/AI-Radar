@@ -46,13 +46,13 @@ opportunity_signals:
   specific_task: []
   business_action: ["customer_deployment", "product_launch", "partnership_integration"]
   product_form: []
-  delivery_model: []
+  delivery_model: ["enterprise_subscription"]
   pain_or_constraint: ["workflow_integration"]
   adoption_evidence: ["partnership_announcement"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "RoboSense 发布第二代全固态数字化激光雷达 E2，可无缝嵌入机器人头部、腕部 RoboSense 发布第二代全固态数字化激光雷达 E2，可无缝嵌入机器人头部、腕部 RoboSense 速腾聚创发布第二代全固态数字化激光雷达 E2，基于自研超大面阵 SPAD-SoC\"孔雀\"芯片打造。"
-  missing_fields: ["buyer_or_user", "specific_task", "product_form", "delivery_model"]
+  source_excerpt: "RoboSense 发布第二代全固态数字化激光雷达 E2，可无缝嵌入机器人头部、腕部 RoboSense 发布第二代全固态数字化激光雷达 E2，可无缝嵌入机器人头部、腕部 RoboSense 速腾聚创发布第二代全固态数字化激光雷达 E2，基于自研超大面阵 SPAD-SoC\"孔雀\"芯片打造。E2 整机体积缩小 60%、重量减少 40%，采用 640×480 VGA 级分辨率与 28nm 制程，内部无运动部件，可无缝嵌入机器人头部、腕部，..."
+  missing_fields: ["buyer_or_user", "specific_task", "product_form"]
 
 signal_owner: "RoboSense"
 

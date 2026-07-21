@@ -41,18 +41,18 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
-  team_or_function: ["engineering"]
-  specific_task: ["internal_tool_building"]
-  business_action: ["product_launch"]
+  buyer_or_user: ["sales_team", "engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["sales", "engineering"]
+  specific_task: ["sales_lead_research", "internal_tool_building"]
+  business_action: ["product_launch", "governance_requirement"]
   product_form: []
-  delivery_model: []
-  pain_or_constraint: []
+  delivery_model: ["enterprise_subscription"]
+  pain_or_constraint: ["latency_sensitive", "security_compliance"]
   adoption_evidence: ["customer_metric"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
   source_excerpt: "IBM 发布 Power 自主运维 AI 智能体，可自动监控并修复系统问题 IBM 发布 Power 自主运维 AI 智能体，可自动监控并修复系统问题 IBM 推出 Power Autonomous Operations，一款基于 AI 智能体的系统管理工具，可自动监控并修复 Power 系统问题，将解决容量限制问题的速度提升至人工的 15 倍。"
-  missing_fields: ["product_form", "delivery_model"]
+  missing_fields: ["product_form"]
 
 signal_owner: "IBM"
 

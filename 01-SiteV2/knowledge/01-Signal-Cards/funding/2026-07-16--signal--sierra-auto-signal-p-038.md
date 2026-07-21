@@ -45,14 +45,14 @@ opportunity_signals:
   team_or_function: ["sales", "customer_support", "healthcare_operations"]
   specific_task: ["sales_lead_research", "customer_ticket_triage", "medical_documentation"]
   business_action: ["funding_round", "customer_deployment", "partnership_integration"]
-  product_form: []
+  product_form: ["vertical_saas"]
   delivery_model: []
   pain_or_constraint: ["workflow_integration"]
   adoption_evidence: ["partnership_announcement"]
   source_evidence_type: ["funding_news", "business_media"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Rime 获 2400 万美元 A 轮融资，用自建录音棚数据训练企业语音 AI Rime 获 2400 万美元 A 轮融资，用自建录音棚数据训练企业语音 AI 旧金山语音 AI 初创公司 Rime 完成 2400 万美元 A 轮融资，由 M13 Ventures 领投。"
-  missing_fields: ["product_form", "delivery_model"]
+  source_excerpt: "Rime 获 2400 万美元 A 轮融资，用自建录音棚数据训练企业语音 AI Rime 获 2400 万美元 A 轮融资，用自建录音棚数据训练企业语音 AI 旧金山语音 AI 初创公司 Rime 完成 2400 万美元 A 轮融资，由 M13 Ventures 领投。Rime 自建录音棚采集对话数据训练模型，并采用音素架构适配不同行业术语发音，客户无需重新训练。公司已服务 Mayo Clinic、Dialpad 等客户，并计划将 3..."
+  missing_fields: ["delivery_model"]
 
 signal_owner: "Sierra"
 

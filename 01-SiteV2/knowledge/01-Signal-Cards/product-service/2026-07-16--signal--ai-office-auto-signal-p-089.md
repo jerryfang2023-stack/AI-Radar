@@ -46,13 +46,13 @@ opportunity_signals:
   specific_task: ["internal_tool_building"]
   business_action: ["customer_deployment", "product_launch"]
   product_form: []
-  delivery_model: []
+  delivery_model: ["enterprise_subscription"]
   pain_or_constraint: ["audit_log_required", "data_silo", "context_management"]
   adoption_evidence: ["deployment_scale"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "金山办公推出 AI 办公智能体灵犀专业版，支持专业 Office 操作 金山办公推出 AI 办公智能体灵犀专业版，支持专业 Office 操作 金山办公在 WPS AI 生产力发布会上发布新一代办公智能体灵犀专业版，主打个人专业办公助理。"
-  missing_fields: ["product_form", "delivery_model"]
+  source_excerpt: "金山办公推出 AI 办公智能体灵犀专业版，支持专业 Office 操作 金山办公推出 AI 办公智能体灵犀专业版，支持专业 Office 操作 金山办公在 WPS AI 生产力发布会上发布新一代办公智能体灵犀专业版，主打个人专业办公助理。该产品能理解用户工作上下文，联动 WPS 文档内核与外部工具，将指令转化为可编辑、可追溯、支持多人协作的办公成果。它支持项目级上下文管理、自主学习写作风格、编写代码完成系统搭建，并可调用浏览器执行本地..."
+  missing_fields: ["product_form"]
 
 signal_owner: "金山办公"
 

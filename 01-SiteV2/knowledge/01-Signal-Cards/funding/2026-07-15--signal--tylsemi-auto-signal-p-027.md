@@ -42,9 +42,9 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team"]
-  team_or_function: ["sales"]
-  specific_task: ["sales_lead_research"]
+  buyer_or_user: ["sales_team", "engineering_team"]
+  team_or_function: ["sales", "engineering"]
+  specific_task: ["sales_lead_research", "internal_tool_building"]
   business_action: ["funding_round", "customer_deployment", "product_launch", "partnership_integration"]
   product_form: []
   delivery_model: []
@@ -52,7 +52,7 @@ opportunity_signals:
   adoption_evidence: ["customer_metric", "partnership_announcement"]
   source_evidence_type: ["funding_news"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "TYLsemi 获得 4300 万美元融资，用于推出全栈 Chiplet 平台与定制 AI 芯片 TYLsemi Raises $43 Million to Launch First Full-Stack Chiplet Platform for Custom AI Silicon - TYLsemi TYLsemi 获得 4300 万美元融资。"
+  source_excerpt: "TYLsemi 获 4300 万美元融资，推出首个全栈芯粒平台用于定制 AI 芯片 TYLsemi Raises $43 Million to Launch First Full-Stack Chiplet Platform for Custom AI Silicon - TYLsemi TYLsemi Raises $43 Million to Launch First Full-Stack Chiplet Platform for..."
   missing_fields: ["product_form", "delivery_model"]
 
 signal_owner: "TYLsemi"

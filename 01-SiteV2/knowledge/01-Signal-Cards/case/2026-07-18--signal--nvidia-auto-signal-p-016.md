@@ -45,14 +45,14 @@ opportunity_signals:
   buyer_or_user: ["enterprise_ai_owner"]
   team_or_function: []
   specific_task: []
-  business_action: ["customer_deployment", "product_launch", "partnership_integration", "governance_requirement"]
+  business_action: ["customer_deployment", "product_launch", "partnership_integration", "pricing_change"]
   product_form: []
   delivery_model: []
-  pain_or_constraint: []
+  pain_or_constraint: ["api_cost_spike"]
   adoption_evidence: []
   source_evidence_type: ["business_media"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "/ query=edge AI device customer deployment manufacturing / intent=find_customer_case / path=ai_hardware_original\",\"supports\":[\"signal_card_candidate\",\"relationship_graph_input\",\"case\"],\"importance\":\"high\",\"confidence\":\"..."
+  source_excerpt: "/ query=edge AI device customer deployment manufacturing / intent=find_customer_case / path=ai_hardware_original Accessibility: Skip TopNav Japan’s Robotics and Manufacturing Leaders Build on NVIDIA Cosmos to Advance Ph..."
   missing_fields: ["specific_task", "product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "NVIDIA"

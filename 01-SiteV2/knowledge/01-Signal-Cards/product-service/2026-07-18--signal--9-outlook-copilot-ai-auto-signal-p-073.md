@@ -41,18 +41,18 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: []
-  team_or_function: []
-  specific_task: []
-  business_action: ["customer_deployment"]
+  buyer_or_user: ["sales_team"]
+  team_or_function: ["sales"]
+  specific_task: ["sales_lead_research"]
+  business_action: ["customer_deployment", "product_launch"]
   product_form: ["copilot"]
-  delivery_model: []
+  delivery_model: ["enterprise_subscription"]
   pain_or_constraint: ["audit_log_required", "data_silo"]
   adoption_evidence: ["deployment_scale"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "微软 9 月停运 Outlook 会议洞察功能，Copilot AI 接棒 微软 9 月停运 Outlook 会议洞察功能，Copilot AI 接棒 微软确认将于 2026 年 9 月停用 Outlook 的会议洞察（Meeting Insights）功能，改由 Microsoft 365 Copilot 接棒。"
-  missing_fields: ["buyer_or_user", "specific_task", "delivery_model"]
+  source_excerpt: "微软 9 月停运 Outlook 会议洞察功能，Copilot AI 接棒 微软 9 月停运 Outlook 会议洞察功能，Copilot AI 接棒 微软确认将于 2026 年 9 月停用 Outlook 的会议洞察（Meeting Insights）功能，改由 Microsoft 365 Copilot 接棒。会议洞察自 2020 年上线，在会议邀请中显示最近修改的文件和邮件，但常被用户误认为附件。Copilot 将提供更智能的上..."
+  missing_fields: []
 
 signal_owner: "微软 9 月停运 Outlook 会议洞察功能，Copilot AI 接棒"
 

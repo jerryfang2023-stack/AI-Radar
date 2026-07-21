@@ -42,18 +42,18 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: []
-  team_or_function: []
-  specific_task: []
-  business_action: ["funding_round"]
+  buyer_or_user: ["sales_team", "enterprise_ai_owner"]
+  team_or_function: ["sales"]
+  specific_task: ["sales_lead_research"]
+  business_action: ["funding_round", "customer_deployment", "partnership_integration", "procurement_signal"]
   product_form: []
   delivery_model: []
-  pain_or_constraint: []
-  adoption_evidence: ["deployment_scale"]
-  source_evidence_type: ["funding_news"]
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: ["deployment_scale", "partnership_announcement", "procurement_contract"]
+  source_evidence_type: ["funding_news", "business_media"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "使用 NVIDIA NeMo Automodel 和 🤗 Diffusers 大规模微调视频与图像模型 Fine-tune video and image models at scale with NVIDIA NeMo Automodel and 🤗 Diffusers Fine宣布完成种子轮融资。"
-  missing_fields: ["buyer_or_user", "specific_task", "product_form", "delivery_model"]
+  source_excerpt: "# 使用 NVIDIA NeMo Automodel 和 🤗 Diffusers 大规模微调视频与图像模型 ## 新闻事实 Fine宣布完成种子轮融资。"
+  missing_fields: ["product_form", "delivery_model"]
 
 signal_owner: "Fine"
 

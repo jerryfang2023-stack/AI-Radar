@@ -46,13 +46,13 @@ opportunity_signals:
   specific_task: []
   business_action: ["product_launch"]
   product_form: []
-  delivery_model: []
+  delivery_model: ["enterprise_subscription"]
   pain_or_constraint: []
   adoption_evidence: ["customer_metric", "deployment_scale"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "小鹏汽车第二代 VLA 模型打通中国与欧洲，目标 2027 年向海外交付 小鹏汽车第二代 VLA 模型打通中国与欧洲，目标 2027 年向海外交付 小鹏汽车发布图灵第二代 VLA 模型，已实现同一套模型打通中国与欧洲市场。"
-  missing_fields: ["buyer_or_user", "specific_task", "product_form", "delivery_model"]
+  source_excerpt: "小鹏汽车第二代 VLA 模型打通中国与欧洲，目标 2027 年向海外交付 小鹏汽车第二代 VLA 模型打通中国与欧洲，目标 2027 年向海外交付 小鹏汽车发布图灵第二代 VLA 模型，已实现同一套模型打通中国与欧洲市场。该模型通过世界模型与 VLA 一体两面设计，可在训练数据不足的海外市场自主生成训练数据加速泛化。小鹏正加快推进欧洲量产适配，目标 2027 年逐步向海外用户交付。"
+  missing_fields: ["buyer_or_user", "specific_task", "product_form"]
 
 signal_owner: "小鹏汽车"
 

@@ -41,18 +41,18 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["it_security_team"]
-  team_or_function: ["it_security"]
-  specific_task: []
-  business_action: ["product_launch", "governance_requirement"]
+  buyer_or_user: ["sales_team", "it_security_team"]
+  team_or_function: ["sales", "it_security"]
+  specific_task: ["sales_lead_research"]
+  business_action: ["customer_deployment", "product_launch", "open_source_release", "research_benchmark"]
   product_form: []
   delivery_model: []
   pain_or_constraint: ["latency_sensitive", "context_management"]
   adoption_evidence: ["deployment_scale"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "京东发布 JoyAI-Talker 实时语音交互模型与 JoyAI-Video-Edit 视频编辑模型 京东发布 JoyAI-Talker 实时语音交互模型与 JoyAI-Video-Edit 视频编辑模型 京东在 WAIC 2026 上推出 JoyAI-Talker 实时语音交互模型与 JoyAI-Video-Edit 实时视频编辑模型。"
-  missing_fields: ["specific_task", "product_form", "delivery_model"]
+  source_excerpt: "京东发布 JoyAI-Talker 实时语音交互模型与 JoyAI-Video-Edit 视频编辑模型 京东发布 JoyAI-Talker 实时语音交互模型与 JoyAI-Video-Edit 视频编辑模型 京东在 WAIC 2026 上推出 JoyAI-Talker 实时语音交互模型与 JoyAI-Video-Edit 实时视频编辑模型。JoyAI-Talker 具备低延迟对话、情绪理解、工具调用和记忆能力，支持声纹识别用户身份；J..."
+  missing_fields: ["product_form", "delivery_model"]
 
 signal_owner: "京东"
 

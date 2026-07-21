@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: ["deployment_scale"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "上纬新材发布全球首个可变形个人机器人启元 T1 上纬新材发布全球首个可变形个人机器人启元 T1 IT之家 7 月 14 日消息，上纬新材今日官宣， 全球首个可变形个人机器人 —— 启元 T1，正式登场 。"
+  source_excerpt: "上纬新材发布全球首个可变形个人机器人启元 T1 上纬新材发布全球首个可变形个人机器人启元 T1 上纬新材今日推出全球首个可变形个人机器人启元 T1。该机器人支持双足站立与四足行走，具备柔性力控、静谧移动、主动交互、长期记忆、外语教学、图形化编程、声纹识别与声源定位等功能。基于行业首创的 Transformer 跨形态一体架构，实现一个本体加两种形态的自由切换。此外还支持一句话点餐、游戏互动、智能跟随、复杂路况自适应、物品托载、蓝牙音箱..."
   missing_fields: ["product_form"]
 
 signal_owner: "上纬新材"

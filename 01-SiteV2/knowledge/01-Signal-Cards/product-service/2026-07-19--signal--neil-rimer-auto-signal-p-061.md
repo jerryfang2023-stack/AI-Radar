@@ -42,18 +42,18 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: []
-  team_or_function: []
-  specific_task: []
-  business_action: ["funding_round"]
+  buyer_or_user: ["sales_team"]
+  team_or_function: ["sales"]
+  specific_task: ["sales_lead_research"]
+  business_action: ["funding_round", "customer_deployment", "procurement_signal"]
   product_form: []
   delivery_model: []
   pain_or_constraint: []
-  adoption_evidence: []
+  adoption_evidence: ["procurement_contract"]
   source_evidence_type: ["funding_news", "business_media"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "尼尔·里默认为AI资金将回流 Neil Rimer thinks the AI money is coming back out Neil Rimer宣布完成150 亿美元融资。"
-  missing_fields: ["buyer_or_user", "specific_task", "product_form", "adoption_evidence", "delivery_model"]
+  source_excerpt: "# 尼尔·里默认为AI资金将回流 ## 新闻事实 Neil Rimer宣布完成150 亿美元融资。"
+  missing_fields: ["product_form", "delivery_model"]
 
 signal_owner: "Neil Rimer"
 

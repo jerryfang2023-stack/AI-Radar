@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: ["funding_news", "business_media"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Databricks 估值达 1880 亿美元，Coatue 领投新一轮融资 Databricks 估值达 1880 亿美元，Coatue 领投新一轮融资 Databricks 宣布由 Coatue 领投的新一轮融资，估值达 1880 亿美元，本轮融资额约 30 亿美元，预计今夏完成。"
+  source_excerpt: "Databricks 估值达 1880 亿美元，Coatue 领投新一轮融资 Databricks 估值达 1880 亿美元，Coatue 领投新一轮融资 Databricks 宣布由 Coatue 领投的新一轮融资，估值达 1880 亿美元，本轮融资额约 30 亿美元，预计今夏完成。该公司在五个月内估值从 1340 亿美元跃升至 1880 亿美元，通过推出面向 AI 智能体的 Lakebase 等产品，成功转型为 AI 提供商。"
   missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "a company to"

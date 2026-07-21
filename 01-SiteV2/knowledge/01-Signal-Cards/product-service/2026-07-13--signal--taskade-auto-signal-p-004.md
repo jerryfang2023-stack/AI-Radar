@@ -52,7 +52,7 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: ["funding_news"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Taskade 发布 TSK-1 系统内核，为工作区应用提供统一智能运行层 Introducing Taskade TSK-1: The Taskade System Kernel (2026) | Taskade Blog Taskade表示，平台中构建的每个应用现在都运行在 TSK-1 上，该内核成为工作区背后的统一智能层。"
+  source_excerpt: "Taskade TSK-1 发布：Taskade 系统内核（2026） Introducing Taskade TSK-1: The Taskade System Kernel (2026) | Taskade Blog # Taskade Genesis: The AI Operating System — Projects Remember, Agents Think, Automations Execute > Last-Upd..."
   missing_fields: ["adoption_evidence"]
 
 signal_owner: "Taskade"

@@ -52,7 +52,7 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: ["funding_news"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Reo.Dev 完成 1130 万美元 A 轮融资，扩大面向工程团队的 AI 信号服务 Reo.Dev raises $11.3M Series A to scale AI signals for Companies Selling to Engineering Teams Reo.Dev 获得 1130 万美元 A 轮融资。"
+  source_excerpt: "Reo.Dev 完成 1130 万美元 A 轮融资，扩大面向工程团队的 AI 信号服务 Reo.Dev raises $11.3M Series A to scale AI signals for Companies Selling to Engineering Teams Reo.Dev raises $11.3M Series A to scale AI signals for Companies Selling to Engin..."
   missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "Reo.Dev"

@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: ["deployment_scale"]
   source_evidence_type: ["business_media"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Reelful 利用 AI 将相册内容自动剪辑成短视频 Reelful 利用 AI 将相册内容自动剪辑成短视频 前 Snapchat 工程师 Kate Deyneka 推出 iOS 应用 Reelful，用户输入提示词并录制 30 秒语音样本后，AI 即可自动规划脚本、添加配音和特效，将照片和视频剪辑成适配 TikTok 的短视频。"
+  source_excerpt: "Reelful 利用 AI 将相册内容自动剪辑成短视频 Reelful 利用 AI 将相册内容自动剪辑成短视频 前 Snapchat 工程师 Kate Deyneka 推出 iOS 应用 Reelful，用户输入提示词并录制 30 秒语音样本后，AI 即可自动规划脚本、添加配音和特效，将照片和视频剪辑成适配 TikTok 的短视频。该应用提供一次性购买（5 个视频 15 美元起）和订阅计划（Creator 月费 25 美元含 10 个..."
   missing_fields: ["product_form"]
 
 signal_owner: "Deyneka"

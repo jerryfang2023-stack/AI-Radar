@@ -53,7 +53,7 @@ opportunity_signals:
   adoption_evidence: ["deployment_scale"]
   source_evidence_type: ["funding_news"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Seltz 融资 1250 万美元，用于为智能体构建先进 Web Search We've raised $12.5M to build state-of-the-art Web Search for agents Seltz 宣布完成 1250 万美元种子轮融资，用于构建面向 AI 智能体的先进网页搜索系统。"
+  source_excerpt: "Seltz 融资 1250 万美元，用于为智能体构建先进 Web Search We've raised $12.5M to build state-of-the-art Web Search for agents We raised 12.5 million to build fast, high quality, web search for AI agents."
   missing_fields: ["product_form", "delivery_model"]
 
 signal_owner: "Seltz"

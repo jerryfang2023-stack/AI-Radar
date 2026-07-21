@@ -45,14 +45,14 @@ opportunity_signals:
   buyer_or_user: ["customer_support_team", "enterprise_ai_owner"]
   team_or_function: ["customer_support"]
   specific_task: ["customer_ticket_triage"]
-  business_action: ["customer_deployment"]
+  business_action: ["customer_deployment", "pricing_change"]
   product_form: []
   delivery_model: []
-  pain_or_constraint: ["workflow_integration"]
+  pain_or_constraint: ["workflow_integration", "api_cost_spike"]
   adoption_evidence: ["case_study"]
   source_evidence_type: ["first_party_case"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "/ query=enterprise AI agent customer story deployment announced 2026 / intent=find_customer_case / path=official_original\",\"supports\":[\"signal_card_candidate\",\"relationship_graph_input\",\"case\"],\"importance\":\"high\",\"conf..."
+  source_excerpt: "/ query=enterprise AI agent customer story deployment announced 2026 / intent=find_customer_case / path=official_original Read in Indonesian here In today’s digital era, travellers do not just compare ticket prices or d..."
   missing_fields: ["product_form", "delivery_model"]
 
 signal_owner: "Microsoft"

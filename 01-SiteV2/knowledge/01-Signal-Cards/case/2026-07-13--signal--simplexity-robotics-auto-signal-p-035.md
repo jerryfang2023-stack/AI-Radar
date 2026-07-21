@@ -52,7 +52,7 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "Simplexity Robotics 成立 11 个月即向生产线交付 100 台 i7 Pro 机器人，并部署于 Leaderdrive 与 AI 基础设施工厂 Simplexity Robotics Ships 100 i7 Pro Robots to Production Lines at 11 Months Old, Deploys at Leaderdrive and AI Infrastructure Factories ..."
+  source_excerpt: "Simplexity Robotics 成立 11 个月即向生产线交付 100 台 i7 Pro 机器人，并在 Leaderdrive 和 AI 基础设施工厂部署 Simplexity Robotics Ships 100 i7 Pro Robots to Production Lines at 11 Months Old, Deploys at Leaderdrive and AI Infrastructure Factories ..."
   missing_fields: ["buyer_or_user", "specific_task", "product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "Simplexity Robotics"

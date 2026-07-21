@@ -45,14 +45,14 @@ opportunity_signals:
   buyer_or_user: ["sales_team"]
   team_or_function: ["sales"]
   specific_task: ["sales_lead_research"]
-  business_action: ["customer_deployment"]
+  business_action: ["customer_deployment", "procurement_signal"]
   product_form: []
   delivery_model: []
   pain_or_constraint: []
-  adoption_evidence: ["deployment_scale"]
+  adoption_evidence: ["deployment_scale", "procurement_contract"]
   source_evidence_type: ["business_media"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "\\\"We've heard the feedback that this feature missed the mark, so it's no longer available.\\\" Image Credits: Jonathan Raa/NurPhoto / Getty Images AI Meta removes controversial AI feature on Instagram after backlash Lucas..."
+  source_excerpt: "## 价值描述 Meta 的产品动作体现了 AI 能力从技术展示走向可调用、可部署或可采购的服务形态。"
   missing_fields: ["product_form", "delivery_model"]
 
 signal_owner: "Meta"

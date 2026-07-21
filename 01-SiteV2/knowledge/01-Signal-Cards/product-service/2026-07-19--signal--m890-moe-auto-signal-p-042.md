@@ -41,18 +41,18 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: []
-  team_or_function: []
-  specific_task: []
+  buyer_or_user: ["sales_team"]
+  team_or_function: ["sales"]
+  specific_task: ["sales_lead_research"]
   business_action: ["product_launch"]
   product_form: []
-  delivery_model: []
+  delivery_model: ["enterprise_subscription"]
   pain_or_constraint: []
   adoption_evidence: ["customer_metric"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "阿里云发布灵骏真武 M890 超节点实例，单台可承载十万亿参数级 MoE 大模型推理 阿里云发布灵骏真武 M890 超节点实例，单台可承载十万亿参数级 MoE 大模型推理 阿里云在 2026 世界人工智能大会上发布灵骏真武 M890 超节点实例，首次通过公共云提供超节点形态 AI 算力服务，已在乌兰察布开放邀测。"
-  missing_fields: ["buyer_or_user", "specific_task", "product_form", "delivery_model"]
+  source_excerpt: "阿里云发布灵骏真武 M890 超节点实例，单台可承载十万亿参数级 MoE 大模型推理 阿里云发布灵骏真武 M890 超节点实例，单台可承载十万亿参数级 MoE 大模型推理 阿里云在 2026 世界人工智能大会上发布灵骏真武 M890 超节点实例，首次通过公共云提供超节点形态 AI 算力服务，已在乌兰察布开放邀测。该实例支持 FP8/FP4 低精度计算，卡间互联提升至 800GB/s，训练性能相比上一代真武 810E 提升三倍，单台可承..."
+  missing_fields: ["product_form"]
 
 signal_owner: "阿里云"
 

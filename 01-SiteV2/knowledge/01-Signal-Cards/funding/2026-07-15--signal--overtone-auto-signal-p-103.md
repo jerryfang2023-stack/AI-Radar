@@ -52,7 +52,7 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: ["funding_news", "business_media"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Overtone 获得 1800 万美元融资，用于 AI 约会服务 The founder of Hinge raised $18M to build a new AI dating service, Overtone Overtone 获得 1800 万美元融资。"
+  source_excerpt: "Hinge 创始人筹集 1800 万美元打造新 AI 约会服务 Overtone The founder of Hinge raised $18M to build a new AI dating service, Overtone Overtone describes itself as \"a voice- and audio-forward service, enabled by AI, that provides highly ..."
   missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "Overtone"

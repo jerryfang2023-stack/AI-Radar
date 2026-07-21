@@ -41,18 +41,18 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
-  team_or_function: ["engineering"]
-  specific_task: ["internal_tool_building"]
+  buyer_or_user: ["sales_team", "engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["sales", "engineering"]
+  specific_task: ["sales_lead_research", "internal_tool_building"]
   business_action: ["product_launch"]
-  product_form: []
-  delivery_model: []
+  product_form: ["api"]
+  delivery_model: ["enterprise_subscription", "api_usage_based"]
   pain_or_constraint: ["latency_sensitive"]
   adoption_evidence: ["deployment_scale"]
-  source_evidence_type: []
+  source_evidence_type: ["technical_blog"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "阿里开放式世界模型快乐生蚝 HappyOyster 1.0 登陆百炼平台 阿里开放式世界模型快乐生蚝 HappyOyster 1.0 登陆百炼平台 阿里巴巴发布开放式世界模型 HappyOyster 1.0（快乐生蚝），已登陆阿里云百炼面向企业和开发者开启灰测。"
-  missing_fields: ["product_form", "delivery_model"]
+  source_excerpt: "阿里开放式世界模型快乐生蚝 HappyOyster 1.0 登陆百炼平台 阿里开放式世界模型快乐生蚝 HappyOyster 1.0 登陆百炼平台 阿里巴巴发布开放式世界模型 HappyOyster 1.0（快乐生蚝），已登陆阿里云百炼面向企业和开发者开启灰测。模型提供世界探索与实时导演两大模式，支持用户通过一句话或一张图生成可实时交互的开放世界，并可用文字指令操控镜头与剧情。产品提供 Android/iOS/Web 三端 SDK，支..."
+  missing_fields: []
 
 signal_owner: "阿里"
 

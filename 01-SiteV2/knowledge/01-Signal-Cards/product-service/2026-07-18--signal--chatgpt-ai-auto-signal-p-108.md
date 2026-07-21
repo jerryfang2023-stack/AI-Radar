@@ -41,18 +41,18 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: []
-  team_or_function: []
-  specific_task: ["knowledge_base_qa"]
-  business_action: ["product_launch", "pricing_change"]
+  buyer_or_user: ["sales_team"]
+  team_or_function: ["sales"]
+  specific_task: ["sales_lead_research", "knowledge_base_qa"]
+  business_action: ["customer_deployment", "product_launch", "pricing_change"]
   product_form: ["rag_knowledge_base"]
   delivery_model: []
   pain_or_constraint: ["api_cost_spike", "data_silo"]
   adoption_evidence: ["deployment_scale"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "宝马推出 ChatGPT 插件，让 AI 帮你选车 宝马推出 ChatGPT 插件，让 AI 帮你选车 宝马推出一款 ChatGPT 插件工具，用户可通过自然语言对话配置理想车型，AI 结合产品知识库确保生成的配置方案真实可购。"
-  missing_fields: ["buyer_or_user", "delivery_model"]
+  source_excerpt: "宝马推出 ChatGPT 插件，让 AI 帮你选车 宝马推出 ChatGPT 插件，让 AI 帮你选车 宝马推出一款 ChatGPT 插件工具，用户可通过自然语言对话配置理想车型，AI 结合产品知识库确保生成的配置方案真实可购。用户可提出\"选一台红色宝马 3 系配 19 英寸轮毂\"等需求，也能比较不同车型的使用成本、操控表现和四驱系统。该工具目前未上线 ChatGPT 网页版，支持移动设备和电脑。"
+  missing_fields: ["delivery_model"]
 
 signal_owner: "宝马"
 

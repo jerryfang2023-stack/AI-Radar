@@ -53,7 +53,7 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: ["funding_news", "business_media"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Elorian AI 如何实现 3 亿美元种子轮前估值 How Elorian AI pulled off a $300M pre-seed valuation | TechCrunch How Elorian AI pulled off a $300M pre 获得 3 亿美元 种子前轮融资。"
+  source_excerpt: "/ query=YC AI startup funding vertical AI / intent=find_startups / path=capital_startup How Elorian AI pulled off a $300M pre-seed valuation Maggie Nye Isabelle Johannessen Jul 16, 2026 Building an AI startup is one thi..."
   missing_fields: ["adoption_evidence", "delivery_model"]
 
 signal_owner: "How Elorian AI pulled off a $300M pre"

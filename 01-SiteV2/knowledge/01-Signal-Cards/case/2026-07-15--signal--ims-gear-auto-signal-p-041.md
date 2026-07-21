@@ -45,14 +45,14 @@ opportunity_signals:
   buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
   team_or_function: ["engineering"]
   specific_task: ["internal_tool_building"]
-  business_action: ["customer_deployment"]
+  business_action: ["customer_deployment", "pricing_change"]
   product_form: []
   delivery_model: []
-  pain_or_constraint: ["workflow_integration"]
+  pain_or_constraint: ["workflow_integration", "api_cost_spike"]
   adoption_evidence: []
   source_evidence_type: ["business_media"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "IMS Gear 用 agentic AI 将 RFQ 缩短至 10 分钟 IMS Gear cuts RFQ to 10 minutes with agentic AI | Synera IMS Gear cuts RFQ to 10 minutes with agentic AI 证据边界：本卡只使用已保留的 Raw / Pool 原文标题、摘录和来源链接。"
+  source_excerpt: "IMS Gear 借助 AI 智能体将询价时间缩短至 10 分钟 IMS Gear cuts RFQ to 10 minutes with agentic AI | Synera IMS Gear cuts RFQ to 10 minutes with agentic AI | Synera Share this article Follow us Newsletter ### From weeks to 10 minutes: ho..."
   missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "IMS Gear"

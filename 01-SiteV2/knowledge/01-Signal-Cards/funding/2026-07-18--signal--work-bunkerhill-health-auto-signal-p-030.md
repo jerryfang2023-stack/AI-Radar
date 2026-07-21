@@ -44,14 +44,14 @@ opportunity_signals:
   buyer_or_user: ["sales_team", "healthcare_provider", "it_security_team"]
   team_or_function: ["sales", "healthcare_operations", "it_security"]
   specific_task: ["sales_lead_research", "medical_documentation"]
-  business_action: ["funding_round", "customer_deployment", "governance_requirement"]
+  business_action: ["funding_round", "customer_deployment", "research_benchmark", "governance_requirement"]
   product_form: []
   delivery_model: []
   pain_or_constraint: ["latency_sensitive"]
   adoption_evidence: ["customer_metric"]
   source_evidence_type: ["funding_news"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Bunkerhill Health 完成5500万美元B轮融资，用于扩展其AI智能体平台Carebricks Bunkerhill Health 完成5500万美元B轮融资，用于扩展其AI智能体平台Carebricks Bunkerhill Health 完成 5500 万美元 B 轮融资，Khosla Ventures 领投，用于扩展其 agentic AI 平台 Carebricks，该平台让医院自行构建 AI 智能体。"
+  source_excerpt: "Bunkerhill Health 完成5500万美元B轮融资，用于扩展其AI智能体平台Carebricks Bunkerhill Health 完成5500万美元B轮融资，用于扩展其AI智能体平台Carebricks Bunkerhill Health 完成 5500 万美元 B 轮融资，Khosla Ventures 领投，用于扩展其 agentic AI 平台 Carebricks，该平台让医院自行构建 AI 智能体。UTMB ..."
   missing_fields: ["product_form", "delivery_model"]
 
 signal_owner: "Work Bunkerhill Health"

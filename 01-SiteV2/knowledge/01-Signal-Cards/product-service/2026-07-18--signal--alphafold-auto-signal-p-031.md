@@ -41,18 +41,18 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: []
-  team_or_function: []
-  specific_task: []
-  business_action: ["research_benchmark"]
+  buyer_or_user: ["sales_team"]
+  team_or_function: ["sales"]
+  specific_task: ["sales_lead_research"]
+  business_action: ["customer_deployment", "research_benchmark"]
   product_form: []
   delivery_model: []
   pain_or_constraint: ["workflow_integration", "evaluation_gap"]
   adoption_evidence: []
   source_evidence_type: ["business_media"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Vertu Alphafold 评测：6880美元AI智能体手机实测 Vertu Alphafold 评测：6880美元AI智能体手机实测 Vertu Alphafold 起售价6880美元，核心卖点是预装的Hermes Agent AI智能体，可分析文件并跨应用自动化多步工作流。"
-  missing_fields: ["buyer_or_user", "specific_task", "product_form", "adoption_evidence", "delivery_model"]
+  source_excerpt: "Vertu Alphafold 评测：6880美元AI智能体手机实测 Vertu Alphafold 评测：6880美元AI智能体手机实测 Vertu Alphafold 起售价6880美元，核心卖点是预装的Hermes Agent AI智能体，可分析文件并跨应用自动化多步工作流。实测中，Hermes分析本地文件优于三星Galaxy Z Fold 7的Gemini，但更大自主权也带来何时独立执行、何时请求澄清的权衡。"
+  missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "Alphafold"
 

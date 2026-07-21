@@ -41,18 +41,18 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: []
-  team_or_function: []
-  specific_task: []
+  buyer_or_user: ["sales_team"]
+  team_or_function: ["sales"]
+  specific_task: ["sales_lead_research"]
   business_action: ["customer_deployment", "product_launch", "open_source_release"]
   product_form: []
-  delivery_model: []
-  pain_or_constraint: ["evaluation_gap"]
+  delivery_model: ["open_source_commercial"]
+  pain_or_constraint: ["hallucination_risk", "evaluation_gap"]
   adoption_evidence: []
-  source_evidence_type: []
+  source_evidence_type: ["business_media"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Zyphra 发布 ZUNA1.1：Apache 2.0 许可的 EEG 基础模型，支持 0.5 至 30 秒可变长度输入 Zyphra 发布 ZUNA1.1：Apache 2.0 许可的 EEG 基础模型，支持 0.5 至 30 秒可变长度输入 Zyphra 发布 ZUNA1.1，一个 3.8 亿参数的掩码扩散自编码器，用于头皮 EEG 信号。"
-  missing_fields: ["buyer_or_user", "specific_task", "product_form", "adoption_evidence", "delivery_model"]
+  source_excerpt: "Zyphra 发布 ZUNA1.1：Apache 2.0 许可的 EEG 基础模型，支持 0.5 至 30 秒可变长度输入 Zyphra 发布 ZUNA1.1：Apache 2.0 许可的 EEG 基础模型，支持 0.5 至 30 秒可变长度输入 Zyphra 发布 ZUNA1.1，一个 3.8 亿参数的掩码扩散自编码器，用于头皮 EEG 信号。相比固定 5 秒输入的 ZUNA1，新模型支持 0.5 至 30 秒可变长度输入，并采用 ..."
+  missing_fields: ["product_form", "adoption_evidence"]
 
 signal_owner: "Zyphra"
 

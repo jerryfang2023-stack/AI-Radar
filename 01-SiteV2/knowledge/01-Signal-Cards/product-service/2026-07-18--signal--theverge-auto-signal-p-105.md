@@ -42,18 +42,18 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: []
-  team_or_function: []
-  specific_task: []
-  business_action: []
+  buyer_or_user: ["sales_team"]
+  team_or_function: ["sales"]
+  specific_task: ["sales_lead_research"]
+  business_action: ["customer_deployment", "procurement_signal"]
   product_form: []
   delivery_model: []
   pain_or_constraint: ["evaluation_gap"]
-  adoption_evidence: []
-  source_evidence_type: []
+  adoption_evidence: ["procurement_contract", "third_party_report"]
+  source_evidence_type: ["business_media"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "TikTok 正在测试 AI 肖像检测工具 TikTok is testing an AI likeness detection tool 原始来源标题显示：TikTok 正在测试 AI 肖像检测工具。"
-  missing_fields: ["buyer_or_user", "specific_task", "product_form", "adoption_evidence", "delivery_model"]
+  source_excerpt: "## 价值描述 Theverge 的产品动作体现了 AI 能力从技术展示走向可调用、可部署或可采购的服务形态。"
+  missing_fields: ["product_form", "delivery_model"]
 
 signal_owner: "Theverge"
 

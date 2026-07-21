@@ -52,7 +52,7 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "[{\"type\":\"quote\",\"text\":\"Simon Willison 在 Codex Desktop 中意外激活了一个类似 Clippy 的动画机器人\\\"宠物\\\"，随后发现可以自定义创建。他通过 GPT-5.6 Sol xhigh 模型描述需求，并借助 gpt-image-2 多轮生成精灵素材，最终制作出一只骑自行车的小鹈鹕\\\"Pedalican\\\"，在桌面上弹跳并更新 Codex 任务状态。关键实现细节已开源，包括 ope..."
+  source_excerpt: "Your browser does not support HTML5 video."
   missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "Simonwillison"
