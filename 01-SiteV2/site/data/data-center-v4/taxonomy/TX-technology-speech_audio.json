@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-20T04:21:34.978Z",
-    "latestDataDate": "2026-07-20",
-    "currentDate": "2026-07-20",
-    "eventCount": 1324,
-    "quarantinedEventCount": 12
+    "generatedAt": "2026-07-21T01:27:58.078Z",
+    "latestDataDate": "2026-07-21",
+    "currentDate": "2026-07-21",
+    "eventCount": 1347,
+    "quarantinedEventCount": 13
   },
   "node": {
     "id": "TX-technology-speech_audio",
@@ -17,6 +17,8 @@
     "typeLabel": "技术",
     "valueId": "speech_audio",
     "eventIds": [
+      "EV-94ad4a217508e6e0",
+      "EV-f388f7ae2debeae8",
       "EV-99e5df844a1bd670",
       "EV-dad8c827d14f2799",
       "EV-2258329f33d413cf",
@@ -25,6 +27,10 @@
       "EV-631dce4dc135d01b"
     ],
     "entityIds": [
+      "EN-047364b9be67f665",
+      "EN-ec1c8f558ff61e34",
+      "EN-0b0c3b228202ab0a",
+      "EN-bae152c4560df38c",
       "EN-bbdefa2950f49882",
       "EN-3a7bd3e2360a3d29",
       "EN-e0bab6f6c58bfe4e",
@@ -44,9 +50,176 @@
     "fdeIds": [],
     "hardwareIds": [],
     "firstSeen": "2026-05-25",
-    "lastSeen": "2026-06-17"
+    "lastSeen": "2026-07-21"
   },
   "events": [
+    {
+      "id": "EV-94ad4a217508e6e0",
+      "dataDate": "2026-07-21",
+      "date": "2026-07-21",
+      "updatedDate": "2026-07-21",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "阿里通义实验室发布 Qwen-Audio-3.0-TTS，面向 16 种语言的 Flash 与 Plus 级托管语音合成模型",
+      "originalTitle": "",
+      "subject": "阿里通义实验室",
+      "action": "发布",
+      "object": "Qwen-Audio-3.0-TTS，面向 16 种语言的 Flash 与 Plus 级托管语音合成模型",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "speech_audio",
+          "name": "语音与音频"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "speech_audio",
+          "name": "语音与音频"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "speech_audio",
+          "name": "语音与音频"
+        }
+      ],
+      "entityIds": [
+        "EN-047364b9be67f665",
+        "EN-ec1c8f558ff61e34",
+        "EN-0b0c3b228202ab0a"
+      ],
+      "entityNames": [
+        "Alibaba",
+        "阿里通义实验室",
+        "Qwen-Audio-3.0-TTS"
+      ],
+      "productName": "Qwen-Audio-3.0-TTS",
+      "products": [
+        {
+          "name": "Qwen-Audio-3.0-TTS",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Alibaba"
+          ]
+        }
+      ],
+      "sourceUrl": "https://marktechpost.com/2026/07/20/alibabas-tongyi-lab-releases-qwen-audio-3-0-tts-a-hosted-text-to-speech-model-in-flash-and-plus-tiers-across-16-languages",
+      "publisher": "MarkTechPost（RSS）"
+    },
+    {
+      "id": "EV-f388f7ae2debeae8",
+      "dataDate": "2026-07-21",
+      "date": "2026-07-20",
+      "updatedDate": "2026-07-21",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "阿里千问发布语音合成大模型 Qwen-Audio-3.0-TTS",
+      "originalTitle": "",
+      "subject": "阿里千问",
+      "action": "发布语音合成大模型",
+      "object": "Qwen-Audio-3.0-TTS",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "speech_audio",
+          "name": "语音与音频"
+        }
+      ],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "speech_audio",
+          "name": "语音与音频"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "speech_audio",
+          "name": "语音与音频"
+        }
+      ],
+      "entityIds": [
+        "EN-bae152c4560df38c",
+        "EN-047364b9be67f665",
+        "EN-0b0c3b228202ab0a"
+      ],
+      "entityNames": [
+        "阿里千问",
+        "Alibaba",
+        "Qwen-Audio-3.0-TTS"
+      ],
+      "productName": "Qwen-Audio-3.0-TTS",
+      "products": [
+        {
+          "name": "Qwen-Audio-3.0-TTS",
+          "type": "模型",
+          "ownerNames": [
+            "Alibaba"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/979/128.htm",
+      "publisher": "IT之家（RSS）"
+    },
     {
       "id": "EV-99e5df844a1bd670",
       "dataDate": "2026-06-17",
@@ -651,12 +824,164 @@
   ],
   "entities": [
     {
+      "id": "EN-047364b9be67f665",
+      "name": "Alibaba",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "Qwen"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-43b7f45e9bd7ec9b",
+        "EV-3d93d1da8cb64462",
+        "EV-4740121f428e4bda",
+        "EV-a354af52772334fd",
+        "EV-c0f87b8c5208cd75",
+        "EV-53f08daddd011dbb",
+        "EV-e1a4bc40db4a9d8f",
+        "EV-2a833330267cb2df",
+        "EV-94ad4a217508e6e0",
+        "EV-0d5a32aca724d30e",
+        "EV-b43f22d8bc7fec3f",
+        "EV-f388f7ae2debeae8",
+        "EV-d08935b06ed9e7bb",
+        "EV-215f938a46d0b126",
+        "EV-ac1b82f6e6261012",
+        "EV-6fbbbfcdcec81df4",
+        "EV-82e68f59d8584e4e",
+        "EV-fd8ecce5de2f667d",
+        "EV-f6ac2938949f74ec",
+        "EV-363fe72da52bdb86",
+        "EV-70cbf25f7ec2cc3a",
+        "EV-8b9e4428074bde60",
+        "EV-83c841a4c42cfdea",
+        "EV-3167e6eed75597e9",
+        "EV-ad2e4fe6a149d95d",
+        "EV-76aa77f5a2e7c661",
+        "EV-77662aa9bef9efbe",
+        "EV-c7f274c3aadece12",
+        "EV-333851b077b606c8",
+        "EV-6712f8ac1f00fe85",
+        "EV-c54172bf4e0c1068",
+        "EV-473f852b374d8b1c",
+        "EV-197aac95e60671f7",
+        "EV-4e6dc3ec2b3f0bd6",
+        "EV-bbc34d7bc9c02b6f",
+        "EV-8e6f9c324aa0b2f3",
+        "EV-a4f413441613beac",
+        "EV-c11ee0da38376254",
+        "EV-657837763764c869",
+        "EV-a4f052325d0ef230",
+        "EV-c0a94bb25d551db1",
+        "EV-710b145230faa692",
+        "EV-1b9bd3d2cb0dc54e"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-code_generation",
+        "TX-technology-long_context",
+        "TX-technology-mixture_of_experts",
+        "TX-use_case-data_analysis",
+        "TX-technology-on_device",
+        "TX-technology-embodied_ai",
+        "TX-technology-fine_tuning",
+        "TX-technology-open_weights",
+        "TX-technology-video_generation",
+        "TX-technology-multimodal",
+        "TX-technology-speech_audio",
+        "TX-technology-quantization",
+        "TX-technology-computer_use"
+      ],
+      "relatedEntityIds": [
+        "EN-0b0c3b228202ab0a",
+        "EN-22a4c686e665e299",
+        "EN-d65d81c60c0c47c4"
+      ],
+      "firstSeen": "2026-05-23",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "EN-ec1c8f558ff61e34",
+      "name": "阿里通义实验室",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-94ad4a217508e6e0",
+        "EV-6fbbbfcdcec81df4"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-video_generation",
+        "TX-technology-speech_audio"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "EN-0b0c3b228202ab0a",
+      "name": "Qwen-Audio-3.0-TTS",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-94ad4a217508e6e0",
+        "EV-f388f7ae2debeae8"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-speech_audio"
+      ],
+      "relatedEntityIds": [
+        "EN-047364b9be67f665"
+      ],
+      "firstSeen": "2026-07-20",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "EN-bae152c4560df38c",
+      "name": "阿里千问",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-f388f7ae2debeae8",
+        "EV-bbc34d7bc9c02b6f"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-speech_audio"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-10",
+      "lastSeen": "2026-07-21"
+    },
+    {
       "id": "EN-bbdefa2950f49882",
       "name": "Google",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "Gemini"
+        "gemini",
+        "谷歌"
       ],
       "verificationStatus": "verified",
       "datasetScopes": [
@@ -689,6 +1014,9 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
+        "EV-f3cc0845ce442e6b",
+        "EV-0d5a32aca724d30e",
+        "EV-bee410f8134cba5a",
         "EV-a255cfc0dab44564",
         "EV-98a80b75b27d9f3b",
         "EV-29e069ac093f0e34",
@@ -804,17 +1132,19 @@
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-embodied_ai",
         "TX-technology-fine_tuning",
+        "TX-technology-open_weights",
         "TX-technology-video_generation",
         "TX-technology-multimodal",
         "TX-industry-media_entertainment",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
+        "TX-technology-speech_audio",
         "TX-use_case-content_creation",
         "TX-technology-image_generation",
-        "TX-technology-computer_use",
-        "TX-technology-speech_audio"
+        "TX-technology-computer_use"
       ],
       "relatedEntityIds": [
+        "EN-419f2cd96ee122e3",
         "EN-96eebba49dbbf422",
         "EN-81e577740888ca6d",
         "EN-1229af0aa3b0305e",
@@ -825,8 +1155,11 @@
         "EN-01f1074bb52ff605",
         "EN-f2c032b19edb7900",
         "EN-2ab6d53e717a0e0d",
+        "EN-1cd41545564777ce",
         "EN-2998f8b13f4fd72e",
+        "EN-3546e1b15e6549b2",
         "EN-b5c336c0dd1ff29c",
+        "EN-e1a4e41919f7c2dc",
         "EN-d56aa2f9908f566a",
         "EN-4baef0e41cbd7ae2",
         "EN-bdfecbcd7dbf76d2",
@@ -834,7 +1167,7 @@
         "EN-2aae0de3f5530f08"
       ],
       "firstSeen": "2026-04-12",
-      "lastSeen": "2026-07-18"
+      "lastSeen": "2026-07-21"
     },
     {
       "id": "EN-3a7bd3e2360a3d29",
@@ -935,9 +1268,9 @@
         "TX-technology-multimodal",
         "TX-industry-media_entertainment",
         "TX-technology-tool_use",
+        "TX-technology-speech_audio",
         "TX-use_case-content_creation",
-        "TX-technology-quantization",
-        "TX-technology-speech_audio"
+        "TX-technology-quantization"
       ],
       "relatedEntityIds": [
         "EN-af3ceabbe048a291"
@@ -961,8 +1294,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-multimodal",
-        "TX-use_case-content_creation",
-        "TX-technology-speech_audio"
+        "TX-technology-speech_audio",
+        "TX-use_case-content_creation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-17",
@@ -984,8 +1317,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-multimodal",
-        "TX-use_case-content_creation",
-        "TX-technology-speech_audio"
+        "TX-technology-speech_audio",
+        "TX-use_case-content_creation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-17",
@@ -1167,9 +1500,9 @@
         "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
+        "TX-technology-speech_audio",
         "TX-technology-image_generation",
-        "TX-technology-inference_optimization",
-        "TX-technology-speech_audio"
+        "TX-technology-inference_optimization"
       ],
       "relatedEntityIds": [
         "EN-1e71d9c1a5c4de16",
@@ -1298,8 +1631,8 @@
         "TX-technology-video_generation",
         "TX-technology-multimodal",
         "TX-industry-media_entertainment",
-        "TX-technology-image_generation",
-        "TX-technology-speech_audio"
+        "TX-technology-speech_audio",
+        "TX-technology-image_generation"
       ],
       "relatedEntityIds": [
         "EN-d56aa2f9908f566a",
@@ -1428,8 +1761,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-content_creation",
-        "TX-technology-speech_audio"
+        "TX-technology-speech_audio",
+        "TX-use_case-content_creation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-04",

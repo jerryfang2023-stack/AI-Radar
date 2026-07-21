@@ -1,0 +1,265 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-042",
+  "title": "strands-agents · GitHub",
+  "title_zh": "GitHub 仓库：strands-agents",
+  "title_translation_status": "translated",
+  "title_translation_method": "deepseek_title_translation",
+  "title_translation_model": "deepseek-v4-flash",
+  "original_url": "https://github.com/strands-agents",
+  "canonical_url": "https://github.com/strands-agents",
+  "source_name": "keyword search / Anysearch",
+  "source_type": "developer",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "repo_readme_or_index",
+  "evidence_object_usable": false,
+  "event_evidence": false,
+  "index_only_evidence": true,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_customer_case",
+  "search_path": "developer_ecosystem",
+  "search_path_label": "开发生态路径",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "platform_enablement",
+  "enterprise_ai_transformation_reason": "enterprise_ai_implementation_signal",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-07-21T01:25:55.237Z",
+  "language": "mixed",
+  "full_text": "Uh oh!\nThere was an error while loading. Please reload this page .\nUh oh!\nThere was an error while loading. Please reload this page .\nREADME.md\nStrands Agents\nThe open source toolkit for building production agents.\nA model-driven, open source SDK for creating AI agents—from simple conversational assistants to complex autonomous workflows. Python and TypeScript. Apache 2.0.\nDocumentation · Quick Start · Samples · Discussions\nfrom strands import Agent\nfrom strands_tools import calculator\nagent = Agent ( tools = [ calculator ])\nagent ( \"What is the square root of 1764?\" )\nimport { Agent } from \"@strands-agents/sdk\" ;\nconst agent = new Agent ( ) ;\nawait agent . invoke ( \"What is the square root of 1764?\" ) ;\npip install strands-agents strands-agents-tools # Python\nnpm install @strands-agents/sdk # TypeScript\nWhy Strands?\nSimple — A minimal agent loop that just works. No boilerplate, no complex abstractions.\nModel agnostic — Amazon Bedrock, Anthropic, OpenAI, Gemini, Ollama, LiteLLM, llama.cpp, and more . Swap providers in one line.\nMulti-agent built in — Coordinate agents with Graph , Swarm , and Workflow patterns — plus A2A protocol for cross-framework interop.\nNative MCP — First-class Model Context Protocol support gives your agents access to thousands of tools.\nProduction ready — Deploy to AWS Lambda, Fargate, EKS, Bedrock AgentCore, Docker, Kubernetes, or Terraform with built-in OpenTelemetry observability.\nConversational & beyond — Streaming, non-streaming, autonomous agents, structured output, and real-time bidirectional audio conversations.\nCommunity\nStrands is built in the open and growing fast. The community contributes model providers (Cohere, xAI, Fireworks AI, NVIDIA NIM, vLLM, MLX, SGLang), session managers (Valkey/Redis, AgentCore Memory), tools (Telegram, HubSpot, Deepgram), and integrations (AG-UI).\n👉 See all community packages · Get your project featured · Join the discussion\nSDKs\nharness-sdk/strands-py\nPython SDK — the core agent framework\nharness-sdk/strands-ts\nTypeScript SDK — agents in Node.js and the browser\nevals\nSDK for testing and benchmarking your agents\nGet Started\nsamples\nExample agents and real-world use cases\ndocs\nDocumentation source for strandsagents.com\nmcp-server\nDocumentation server for building with Strands in your AI coding assistant\nGo Deeper\ntools\nPre-built tools: file I/O, HTTP, shell, code interpreter, and more\nshell\nGive your agent a shell without giving it the keys to your machine\nagent-sop\nStructured prompting for reliable, multi-step agent behavior\nContributing\nWe welcome contributions of all kinds — bug reports, feature requests, docs improvements, and code. See our contributing guide to get started.\nStay in touch with the team\nCome meet the Strands team and other users on Discord\nWebsite · Docs · Samples · Discussions\nAll projects are Apache 2.0 licensed.\nPopular repositories\nLoading\nharness-sdk\nharness-sdk\nPublic\nBuild an agent harness and control it end-to-end. Open-source SDK for production AI agents in Python & TypeScript - any model, any cloud.\nPython\n6.7k\n974\ntools\ntools\nPublic\nA set of tools that gives agents powerful capabilities.\nPython\n1.1k\n319\nagent-sop\nagent-sop\nPublic\nNatural language workflows that enable AI agents to perform complex, multi-step tasks with consistency and reliability.\nPython\n1.1k\n109\nsamples\nsamples\nPublic\nAgent samples built using the Strands Agents SDK.\nPython\n811\n425\nsdk-typescript\nsdk-typescript\nPublic archive\nA model-driven approach to building AI agents in just a few lines of code.\nTypeScript\n693\n103\nagent-builder\nagent-builder\nPublic archive\nAn example agent demonstrating streaming, tool use, and interactivity from your terminal. This agent builder can help you to build your own agents and tools.\nPython\n424\n94\nRepositories\nShowing 10 of 13 repositories\nagent-sop\nPublic\nNatural language workflows that enable AI agents to perform complex, multi-step tasks with consistency and reliability.\nUh oh!\nThere was an error while loading. Please reload this page .\nstrands-agents/agent-sop's past year of commit activity\nPython\n1,106\nApache-2.0\n109\nUpdated Jul 21, 2026\nharness-sdk\nPublic\nBuild an agent harness and control it end-to-end. Open-source SDK for production AI agents in Python & TypeScript - any model, any cloud.\nUh oh!\nThere was an error while loading. Please reload this page .\nstrands-agents/harness-sdk's past year of commit activity\nPython\n6,654\nApache-2.0\n974\n433\n143\nUpdated Jul 20, 2026\nshell\nPublic\nGive your agent a shell without giving it the keys to your machine.\nUh oh!\nThere was an error while loading. Please reload this page .\nstrands-agents/shell's past year of commit activity\nRust\n227\nApache-2.0\n20\n20\nUpdated Jul 20, 2026\nevals\nPublic\nA comprehensive evaluation framework for AI agents and LLM applications.\nUh oh!\nThere was an error while loading. Please reload this page .\nstrands-agents/evals's past year of commit activity\nPython\n161\nApache-2.0\n45\n41\n22\nUpdated Jul 20, 2026\nextension-template\nPublic template\nTemplate for building and publishing Strands Agents extensions (tools, model providers, plugins, interventions, and more) in Python and TypeScript\nUh oh!\nThere was an error while loading. Please reload this page .\nstrands-agents/extension-template's past year of commit activity\nPython\nApache-2.0\nUpdated Jul 17, 2026\nsamples\nPublic\nAgent samples built using the Strands Agents SDK.\nUh oh!\nThere was an error while loading. Please reload this page .\nstrands-agents/samples's past year of commit activity\nPython\n811\nApache-2.0\n425\n19\n(3 issues need help)\n21\nUpdated Jul 17, 2026\ndevtools\nPublic\nCommon GitHub workflows, actions, and shared tooling used across the Strands Agents organization.\nUh oh!\nThere was an error while loading. Please reload this page .\nstrands-agents/devtools's past year of commit activity\nPython\n13\nApache-2.0\n19\nUpdated Jul 17, 2026\ntools\nPublic\nA set of tools that gives agents powerful capabilities.\nUh oh!\nThere was an error while loading. Please reload this page .\nstrands-agents/tools's past year of commit activity\nPython\n1,132\nApache-2.0\n319\n84\n(2 issues need help)\n79\nUpdated Jul 17, 2026\nmcp-server\nPublic\nThis MCP server provides documentation about Strands Agents to your GenAI tools, so you can use your favorite AI coding assistant to vibe-code Strands Agents.\nUh oh!\nThere was an error while loading. Please reload this page .\nstrands-agents/mcp-server's past year of commit activity\nPython\n291\n73\nUpdated Jun 25, 2026\n.github\nPublic\nForked from\namzn/.github\nUh oh!\nThere was an error while loading. Please reload this page .\nstrands-agents/.github's past year of commit activity\n534\nUpdated Jun 16, 2026\nView all repositories\nPeople\nTop languages\nLoading…\nUh oh!\nThere was an error while loading. Please reload this page .\nMost used topics\nLoading…\nUh oh!\nThere was an error while loading. Please reload this page .",
+  "clean_text": "Uh oh!\nThere was an error while loading. Please reload this page .\nUh oh!\nThere was an error while loading. Please reload this page .\nREADME.md\nStrands Agents\nThe open source toolkit for building production agents.\nA model-driven, open source SDK for creating AI agents—from simple conversational assistants to complex autonomous workflows. Python and TypeScript. Apache 2.0.\nDocumentation · Quick Start · Samples · Discussions\nfrom strands import Agent\nfrom strands_tools import calculator\nagent = Agent ( tools = [ calculator ])\nagent ( \"What is the square root of 1764?\" )\nimport { Agent } from \"@strands-agents/sdk\" ;\nconst agent = new Agent ( ) ;\nawait agent . invoke ( \"What is the square root of 1764?\" ) ;\npip install strands-agents strands-agents-tools # Python\nnpm install @strands-agents/sdk # TypeScript\nWhy Strands?\nSimple — A minimal agent loop that just works. No boilerplate, no complex abstractions.\nModel agnostic — Amazon Bedrock, Anthropic, OpenAI, Gemini, Ollama, LiteLLM, llama.cpp, and more . Swap providers in one line.\nMulti-agent built in — Coordinate agents with Graph , Swarm , and Workflow patterns — plus A2A protocol for cross-framework interop.\nNative MCP — First-class Model Context Protocol support gives your agents access to thousands of tools.\nProduction ready — Deploy to AWS Lambda, Fargate, EKS, Bedrock AgentCore, Docker, Kubernetes, or Terraform with built-in OpenTelemetry observability.\nConversational & beyond — Streaming, non-streaming, autonomous agents, structured output, and real-time bidirectional audio conversations.\nCommunity\nStrands is built in the open and growing fast. The community contributes model providers (Cohere, xAI, Fireworks AI, NVIDIA NIM, vLLM, MLX, SGLang), session managers (Valkey/Redis, AgentCore Memory), tools (Telegram, HubSpot, Deepgram), and integrations (AG-UI).\n👉 See all community packages · Get your project featured · Join the discussion\nSDKs\nharness-sdk/strands-py\nPython SDK — the core agent framework\nharness-sdk/strands-ts\nTypeScript SDK — agents in Node.js and the browser\nevals\nSDK for testing and benchmarking your agents\nGet Started\nsamples\nExample agents and real-world use cases\ndocs\nDocumentation source for strandsagents.com\nmcp-server\nDocumentation server for building with Strands in your AI coding assistant\nGo Deeper\ntools\nPre-built tools: file I/O, HTTP, shell, code interpreter, and more\nshell\nGive your agent a shell without giving it the keys to your machine\nagent-sop\nStructured prompting for reliable, multi-step agent behavior\nContributing\nWe welcome contributions of all kinds — bug reports, feature requests, docs improvements, and code. See our contributing guide to get started.\nStay in touch with the team\nCome meet the Strands team and other users on Discord\nWebsite · Docs · Samples · Discussions\nAll projects are Apache 2.0 licensed.\nPopular repositories\nLoading\nharness-sdk\nharness-sdk\nPublic\nBuild an agent harness and control it end-to-end. Open-source SDK for production AI agents in Python & TypeScript - any model, any cloud.\nPython\n6.7k\n974\ntools\ntools\nPublic\nA set of tools that gives agents powerful capabilities.\nPython\n1.1k\n319\nagent-sop\nagent-sop\nPublic\nNatural language workflows that enable AI agents to perform complex, multi-step tasks with consistency and reliability.\nPython\n1.1k\n109\nsamples\nsamples\nPublic\nAgent samples built using the Strands Agents SDK.\nPython\n811\n425\nsdk-typescript\nsdk-typescript\nPublic archive\nA model-driven approach to building AI agents in just a few lines of code.\nTypeScript\n693\n103\nagent-builder\nagent-builder\nPublic archive\nAn example agent demonstrating streaming, tool use, and interactivity from your terminal. This agent builder can help you to build your own agents and tools.\nPython\n424\n94\nRepositories\nShowing 10 of 13 repositories\nagent-sop\nPublic\nNatural language workflows that enable AI agents to perform complex, multi-step tasks with consistency and reliability.\nUh oh!\nThere was an error while loading. Please reload this page .\nstrands-agents/agent-sop's past year of commit activity\nPython\n1,106\nApache-2.0\n109\nUpdated Jul 21, 2026\nharness-sdk\nPublic\nBuild an agent harness and control it end-to-end. Open-source SDK for production AI agents in Python & TypeScript - any model, any cloud.\nUh oh!\nThere was an error while loading. Please reload this page .\nstrands-agents/harness-sdk's past year of commit activity\nPython\n6,654\nApache-2.0\n974\n433\n143\nUpdated Jul 20, 2026\nshell\nPublic\nGive your agent a shell without giving it the keys to your machine.\nUh oh!\nThere was an error while loading. Please reload this page .\nstrands-agents/shell's past year of commit activity\nRust\n227\nApache-2.0\n20\n20\nUpdated Jul 20, 2026\nevals\nPublic\nA comprehensive evaluation framework for AI agents and LLM applications.\nUh oh!\nThere was an error while loading. Please reload this page .\nstrands-agents/evals's past year of commit activity\nPython\n161\nApache-2.0\n45\n41\n22\nUpdated Jul 20, 2026\nextension-template\nPublic template\nTemplate for building and publishing Strands Agents extensions (tools, model providers, plugins, interventions, and more) in Python and TypeScript\nUh oh!\nThere was an error while loading. Please reload this page .\nstrands-agents/extension-template's past year of commit activity\nPython\nApache-2.0\nUpdated Jul 17, 2026\nsamples\nPublic\nAgent samples built using the Strands Agents SDK.\nUh oh!\nThere was an error while loading. Please reload this page .\nstrands-agents/samples's past year of commit activity\nPython\n811\nApache-2.0\n425\n19\n(3 issues need help)\n21\nUpdated Jul 17, 2026\ndevtools\nPublic\nCommon GitHub workflows, actions, and shared tooling used across the Strands Agents organization.\nUh oh!\nThere was an error while loading. Please reload this page .\nstrands-agents/devtools's past year of commit activity\nPython\n13\nApache-2.0\n19\nUpdated Jul 17, 2026\ntools\nPublic\nA set of tools that gives agents powerful capabilities.\nUh oh!\nThere was an error while loading. Please reload this page .\nstrands-agents/tools's past year of commit activity\nPython\n1,132\nApache-2.0\n319\n84\n(2 issues need help)\n79\nUpdated Jul 17, 2026\nmcp-server\nPublic\nThis MCP server provides documentation about Strands Agents to your GenAI tools, so you can use your favorite AI coding assistant to vibe-code Strands Agents.\nUh oh!\nThere was an error while loading. Please reload this page .\nstrands-agents/mcp-server's past year of commit activity\nPython\n291\n73\nUpdated Jun 25, 2026\n.github\nPublic\nForked from\namzn/.github\nUh oh!\nThere was an error while loading. Please reload this page .\nstrands-agents/.github's past year of commit activity\n534\nUpdated Jun 16, 2026\nView all repositories\nPeople\nTop languages\nLoading…\nUh oh!\nThere was an error while loading. Please reload this page .\nMost used topics\nLoading…\nUh oh!\nThere was an error while loading. Please reload this page .",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-21/r-042-strands-agents-github.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-21/r-042-strands-agents-github.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 97,
+  "extractor_diagnostics": {
+    "readability_score": 97,
+    "text_length": 6846,
+    "paragraph_count": 90,
+    "sentence_count": 78,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0.0012,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 6846,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "9f4f4b2cf91de8a8",
+    "missing": []
+  },
+  "evidence_strength": "blocked",
+  "raw_qc_decision": "allow_with_degradation",
+  "raw_qc_downstream_use": "index_watchlist_or_feedback_only",
+  "degradation_reasons": [
+    "index_only_or_directory_page"
+  ],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "index_only_evidence",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "6401171265c8a23a",
+  "content_hash": "9f4f4b2cf91de8a8",
+  "full_text_hash": "9f4f4b2cf91de8a8",
+  "semantic_hash": "fdea3e82e10cff26",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-21T01:25:55.237Z",
+  "last_seen_at": "2026-07-21T01:25:55.237Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "case_detail",
+      "text": "# strands-agents. ## The open source toolkit for building production agents. A model-driven, open source SDK for creating AI agents—from simple conversational assistants to complex autonomous workflows. from strands import Agent from strands_tools import calculator agent = Agent tools = calculator a... / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=developer_ecosystem",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "There was an error while loading.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Please reload this page .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "md Strands Agents The open source toolkit for building production agents.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-21T01:25:55.237Z",
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Anysearch",
+      "OpenAI",
+      "Anthropic",
+      "GitHub",
+      "Amazon",
+      "AWS",
+      "Nvidia"
+    ],
+    "products": [
+      "agents",
+      "Agent",
+      "agent",
+      "Agents",
+      "Gemini",
+      "MCP",
+      "mcp"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具",
+      "企业服务"
+    ],
+    "roles": [
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "部署 / 上线"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "2.0",
+      "1764",
+      "2",
+      "6.7",
+      "974",
+      "1.1",
+      "319",
+      "109"
+    ],
+    "quotes": [
+      "What is the square root of 1764?",
+      "@strands-agents/sdk",
+      "What is the square root of 1764?"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "There was an error while loading.",
+      "Please reload this page .",
+      "md Strands Agents The open source toolkit for building production agents."
+    ],
+    "case_details": [
+      "# strands-agents. ## The open source toolkit for building production agents. A model-driven, open source SDK for creating AI agents—from simple conversational assistants to complex autonomous workflows. from strands import Agent from strands_tools import calculator agent = Agent tools = calculator a... / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=developer_ecosystem"
+    ],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_product_or_service",
+    "importance_score": 5,
+    "importance_reason": "new product or service; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "enterprise_ai_transformation_lens",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": false,
+    "business_change": false,
+    "relationship_graph_input": false,
+    "trend_candidate_context": false,
+    "signal_card_candidate": false,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": false
+  },
+  "pool_routes": [
+    "index_only"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "blocked",
+  "evidence_block_reason": "homepage_or_directory_observation",
+  "missing_information": [
+    "证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象",
+    "疑似官网首页、产品目录或导航页，只能索引留存"
+  ],
+  "raw_status": "indexed",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# strands-agents · GitHub\n\n- raw_id: R-042\n- title_zh: GitHub 仓库：strands-agents\n- title_translation_status: translated\n- title_translation_method: deepseek_title_translation\n- original_url: https://github.com/strands-agents\n- source_name: keyword search / Anysearch\n- collected_at: 2026-07-21T01:25:55.237Z\n\n## clean_text\n\nUh oh!\nThere was an error while loading. Please reload this page .\nUh oh!\nThere was an error while loading. Please reload this page .\nREADME.md\nStrands Agents\nThe open source toolkit for building production agents.\nA model-driven, open source SDK for creating AI agents—from simple conversational assistants to complex autonomous workflows. Python and TypeScript. Apache 2.0.\nDocumentation · Quick Start · Samples · Discussions\nfrom strands import Agent\nfrom strands_tools import calculator\nagent = Agent ( tools = [ calculator ])\nagent ( \"What is the square root of 1764?\" )\nimport { Agent } from \"@strands-agents/sdk\" ;\nconst agent = new Agent ( ) ;\nawait agent . invoke ( \"What is the square root of 1764?\" ) ;\npip install strands-agents strands-agents-tools # Python\nnpm install @strands-agents/sdk # TypeScript\nWhy Strands?\nSimple — A minimal agent loop that just works. No boilerplate, no complex abstractions.\nModel agnostic — Amazon Bedrock, Anthropic, OpenAI, Gemini, Ollama, LiteLLM, llama.cpp, and more . Swap providers in one line.\nMulti-agent built in — Coordinate agents with Graph , Swarm , and Workflow patterns — plus A2A protocol for cross-framework interop.\nNative MCP — First-class Model Context Protocol support gives your agents access to thousands of tools.\nProduction ready — Deploy to AWS Lambda, Fargate, EKS, Bedrock AgentCore, Docker, Kubernetes, or Terraform with built-in OpenTelemetry observability.\nConversational & beyond — Streaming, non-streaming, autonomous agents, structured output, and real-time bidirectional audio conversations.\nCommunity\nStrands is built in the open and growing fast. The community contributes model providers (Cohere, xAI, Fireworks AI, NVIDIA NIM, vLLM, MLX, SGLang), session managers (Valkey/Redis, AgentCore Memory), tools (Telegram, HubSpot, Deepgram), and integrations (AG-UI).\n👉 See all community packages · Get your project featured · Join the discussion\nSDKs\nharness-sdk/strands-py\nPython SDK — the core agent framework\nharness-sdk/strands-ts\nTypeScript SDK — agents in Node.js and the browser\nevals\nSDK for testing and benchmarking your agents\nGet Started\nsamples\nExample agents and real-world use cases\ndocs\nDocumentation source for strandsagents.com\nmcp-server\nDocumentation server for building with Strands in your AI coding assistant\nGo Deeper\ntools\nPre-built tools: file I/O, HTTP, shell, code interpreter, and more\nshell\nGive your agent a shell without giving it the keys to your machine\nagent-sop\nStructured prompting for reliable, multi-step agent behavior\nContributing\nWe welcome contributions of all kinds — bug reports, feature requests, docs improvements, and code. See our contributing guide to get started.\nStay in touch with the team\nCome meet the Strands team and other users on Discord\nWebsite · Docs · Samples · Discussions\nAll projects are Apache 2.0 licensed.\nPopular repositories\nLoading\nharness-sdk\nharness-sdk\nPublic\nBuild an agent harness and control it end-to-end. Open-source SDK for production AI agents in Python & TypeScript - any model, any cloud.\nPython\n6.7k\n974\ntools\ntools\nPublic\nA set of tools that gives agents powerful capabilities.\nPython\n1.1k\n319\nagent-sop\nagent-sop\nPublic\nNatural language workflows that enable AI agents to perform complex, multi-step tasks with consistency and reliability.\nPython\n1.1k\n109\nsamples\nsamples\nPublic\nAgent samples built using the Strands Agents SDK.\nPython\n811\n425\nsdk-typescript\nsdk-typescript\nPublic archive\nA model-driven approach to building AI agents in just a few lines of code.\nTypeScript\n693\n103\nagent-builder\nagent-builder\nPublic archive\nAn example agent demonstrating streaming, tool use, and interactivity from your terminal. This agent builder can help you to build your own agents and tools.\nPython\n424\n94\nRepositories\nShowing 10 of 13 repositories\nagent-sop\nPublic\nNatural language workflows that enable AI agents to perform complex, multi-step tasks with consistency and reliability.\nUh oh!\nThere was an error while loading. Please reload this page .\nstrands-agents/agent-sop's past year of commit activity\nPython\n1,106\nApache-2.0\n109\nUpdated Jul 21, 2026\nharness-sdk\nPublic\nBuild an agent harness and control it end-to-end. Open-source SDK for production AI agents in Python & TypeScript - any model, any cloud.\nUh oh!\nThere was an error while loading. Please reload this page .\nstrands-agents/harness-sdk's past year of commit activity\nPython\n6,654\nApache-2.0\n974\n433\n143\nUpdated Jul 20, 2026\nshell\nPublic\nGive your agent a shell without giving it the keys to your machine.\nUh oh!\nThere was an error while loading. Please reload this page .\nstrands-agents/shell's past year of commit activity\nRust\n227\nApache-2.0\n20\n20\nUpdated Jul 20, 2026\nevals\nPublic\nA comprehensive evaluation framework for AI agents and LLM applications.\nUh oh!\nThere was an error while loading. Please reload this page .\nstrands-agents/evals's past year of commit activity\nPython\n161\nApache-2.0\n45\n41\n22\nUpdated Jul 20, 2026\nextension-template\nPublic template\nTemplate for building and publishing Strands Agents extensions (tools, model providers, plugins, interventions, and more) in Python and TypeScript\nUh oh!\nThere was an error while loading. Please reload this page .\nstrands-agents/extension-template's past year of commit activity\nPython\nApache-2.0\nUpdated Jul 17, 2026\nsamples\nPublic\nAgent samples built using the Strands Agents SDK.\nUh oh!\nThere was an error while loading. Please reload this page .\nstrands-agents/samples's past year of commit activity\nPython\n811\nApache-2.0\n425\n19\n(3 issues need help)\n21\nUpdated Jul 17, 2026\ndevtools\nPublic\nCommon GitHub workflows, actions, and shared tooling used across the Strands Agents organization.\nUh oh!\nThere was an error while loading. Please reload this page .\nstrands-agents/devtools's past year of commit activity\nPython\n13\nApache-2.0\n19\nUpdated Jul 17, 2026\ntools\nPublic\nA set of tools that gives agents powerful capabilities.\nUh oh!\nThere was an error while loading. Please reload this page .\nstrands-agents/tools's past year of commit activity\nPython\n1,132\nApache-2.0\n319\n84\n(2 issues need help)\n79\nUpdated Jul 17, 2026\nmcp-server\nPublic\nThis MCP server provides documentation about Strands Agents to your GenAI tools, so you can use your favorite AI coding assistant to vibe-code Strands Agents.\nUh oh!\nThere was an error while loading. Please reload this page .\nstrands-agents/mcp-server's past year of commit activity\nPython\n291\n73\nUpdated Jun 25, 2026\n.github\nPublic\nForked from\namzn/.github\nUh oh!\nThere was an error while loading. Please reload this page .\nstrands-agents/.github's past year of commit activity\n534\nUpdated Jun 16, 2026\nView all repositories\nPeople\nTop languages\nLoading…\nUh oh!\nThere was an error while loading. Please reload this page .\nMost used topics\nLoading…\nUh oh!\nThere was an error while loading. Please reload this page .\n\n## full_text\n\nUh oh!\nThere was an error while loading. Please reload this page .\nUh oh!\nThere was an error while loading. Please reload this page .\nREADME.md\nStrands Agents\nThe open source toolkit for building production agents.\nA model-driven, open source SDK for creating AI agents—from simple conversational assistants to complex autonomous workflows. Python and TypeScript. Apache 2.0.\nDocumentation · Quick Start · Samples · Discussions\nfrom strands import Agent\nfrom strands_tools import calculator\nagent = Agent ( tools = [ calculator ])\nagent ( \"What is the square root of 1764?\" )\nimport { Agent } from \"@strands-agents/sdk\" ;\nconst agent = new Agent ( ) ;\nawait agent . invoke ( \"What is the square root of 1764?\" ) ;\npip install strands-agents strands-agents-tools # Python\nnpm install @strands-agents/sdk # TypeScript\nWhy Strands?\nSimple — A minimal agent loop that just works. No boilerplate, no complex abstractions.\nModel agnostic — Amazon Bedrock, Anthropic, OpenAI, Gemini, Ollama, LiteLLM, llama.cpp, and more . Swap providers in one line.\nMulti-agent built in — Coordinate agents with Graph , Swarm , and Workflow patterns — plus A2A protocol for cross-framework interop.\nNative MCP — First-class Model Context Protocol support gives your agents access to thousands of tools.\nProduction ready — Deploy to AWS Lambda, Fargate, EKS, Bedrock AgentCore, Docker, Kubernetes, or Terraform with built-in OpenTelemetry observability.\nConversational & beyond — Streaming, non-streaming, autonomous agents, structured output, and real-time bidirectional audio conversations.\nCommunity\nStrands is built in the open and growing fast. The community contributes model providers (Cohere, xAI, Fireworks AI, NVIDIA NIM, vLLM, MLX, SGLang), session managers (Valkey/Redis, AgentCore Memory), tools (Telegram, HubSpot, Deepgram), and integrations (AG-UI).\n👉 See all community packages · Get your project featured · Join the discussion\nSDKs\nharness-sdk/strands-py\nPython SDK — the core agent framework\nharness-sdk/strands-ts\nTypeScript SDK — agents in Node.js and the browser\nevals\nSDK for testing and benchmarking your agents\nGet Started\nsamples\nExample agents and real-world use cases\ndocs\nDocumentation source for strandsagents.com\nmcp-server\nDocumentation server for building with Strands in your AI coding assistant\nGo Deeper\ntools\nPre-built tools: file I/O, HTTP, shell, code interpreter, and more\nshell\nGive your agent a shell without giving it the keys to your machine\nagent-sop\nStructured prompting for reliable, multi-step agent behavior\nContributing\nWe welcome contributions of all kinds — bug reports, feature requests, docs improvements, and code. See our contributing guide to get started.\nStay in touch with the team\nCome meet the Strands team and other users on Discord\nWebsite · Docs · Samples · Discussions\nAll projects are Apache 2.0 licensed.\nPopular repositories\nLoading\nharness-sdk\nharness-sdk\nPublic\nBuild an agent harness and control it end-to-end. Open-source SDK for production AI agents in Python & TypeScript - any model, any cloud.\nPython\n6.7k\n974\ntools\ntools\nPublic\nA set of tools that gives agents powerful capabilities.\nPython\n1.1k\n319\nagent-sop\nagent-sop\nPublic\nNatural language workflows that enable AI agents to perform complex, multi-step tasks with consistency and reliability.\nPython\n1.1k\n109\nsamples\nsamples\nPublic\nAgent samples built using the Strands Agents SDK.\nPython\n811\n425\nsdk-typescript\nsdk-typescript\nPublic archive\nA model-driven approach to building AI agents in just a few lines of code.\nTypeScript\n693\n103\nagent-builder\nagent-builder\nPublic archive\nAn example agent demonstrating streaming, tool use, and interactivity from your terminal. This agent builder can help you to build your own agents and tools.\nPython\n424\n94\nRepositories\nShowing 10 of 13 repositories\nagent-sop\nPublic\nNatural language workflows that enable AI agents to perform complex, multi-step tasks with consistency and reliability.\nUh oh!\nThere was an error while loading. Please reload this page .\nstrands-agents/agent-sop's past year of commit activity\nPython\n1,106\nApache-2.0\n109\nUpdated Jul 21, 2026\nharness-sdk\nPublic\nBuild an agent harness and control it end-to-end. Open-source SDK for production AI agents in Python & TypeScript - any model, any cloud.\nUh oh!\nThere was an error while loading. Please reload this page .\nstrands-agents/harness-sdk's past year of commit activity\nPython\n6,654\nApache-2.0\n974\n433\n143\nUpdated Jul 20, 2026\nshell\nPublic\nGive your agent a shell without giving it the keys to your machine.\nUh oh!\nThere was an error while loading. Please reload this page .\nstrands-agents/shell's past year of commit activity\nRust\n227\nApache-2.0\n20\n20\nUpdated Jul 20, 2026\nevals\nPublic\nA comprehensive evaluation framework for AI agents and LLM applications.\nUh oh!\nThere was an error while loading. Please reload this page .\nstrands-agents/evals's past year of commit activity\nPython\n161\nApache-2.0\n45\n41\n22\nUpdated Jul 20, 2026\nextension-template\nPublic template\nTemplate for building and publishing Strands Agents extensions (tools, model providers, plugins, interventions, and more) in Python and TypeScript\nUh oh!\nThere was an error while loading. Please reload this page .\nstrands-agents/extension-template's past year of commit activity\nPython\nApache-2.0\nUpdated Jul 17, 2026\nsamples\nPublic\nAgent samples built using the Strands Agents SDK.\nUh oh!\nThere was an error while loading. Please reload this page .\nstrands-agents/samples's past year of commit activity\nPython\n811\nApache-2.0\n425\n19\n(3 issues need help)\n21\nUpdated Jul 17, 2026\ndevtools\nPublic\nCommon GitHub workflows, actions, and shared tooling used across the Strands Agents organization.\nUh oh!\nThere was an error while loading. Please reload this page .\nstrands-agents/devtools's past year of commit activity\nPython\n13\nApache-2.0\n19\nUpdated Jul 17, 2026\ntools\nPublic\nA set of tools that gives agents powerful capabilities.\nUh oh!\nThere was an error while loading. Please reload this page .\nstrands-agents/tools's past year of commit activity\nPython\n1,132\nApache-2.0\n319\n84\n(2 issues need help)\n79\nUpdated Jul 17, 2026\nmcp-server\nPublic\nThis MCP server provides documentation about Strands Agents to your GenAI tools, so you can use your favorite AI coding assistant to vibe-code Strands Agents.\nUh oh!\nThere was an error while loading. Please reload this page .\nstrands-agents/mcp-server's past year of commit activity\nPython\n291\n73\nUpdated Jun 25, 2026\n.github\nPublic\nForked from\namzn/.github\nUh oh!\nThere was an error while loading. Please reload this page .\nstrands-agents/.github's past year of commit activity\n534\nUpdated Jun 16, 2026\nView all repositories\nPeople\nTop languages\nLoading…\nUh oh!\nThere was an error while loading. Please reload this page .\nMost used topics\nLoading…\nUh oh!\nThere was an error while loading. Please reload this page .\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 97\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [case_detail / signal_card_candidate, relationship_graph_input, case / high] # strands-agents. ## The open source toolkit for building production agents. A model-driven, open source SDK for creating AI agents—from simple conversational assistants to complex autonomous workflows. from strands import Agent from strands_tools import calculator agent = Agent tools = calculator a... / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=developer_ecosystem\n2. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] There was an error while loading.\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Please reload this page .\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] md Strands Agents The open source toolkit for building production agents.\n"
+}

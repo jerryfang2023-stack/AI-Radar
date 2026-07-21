@@ -1,0 +1,247 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-107
+title: "苹果 iOS 27 Beta 4 更新汇总：国行 Siri AI 暂未上线"
+title_zh: "苹果 iOS 27 Beta 4 更新汇总：国行 Siri AI 暂未上线"
+title_translation_status: not_required
+title_translation_method: source_title
+title_translation_model: not_applicable
+original_url: "https://www.ithome.com/0/979/272.htm"
+canonical_url: "https://ithome.com/0/979/272.htm"
+source_name: "IT之家（RSS）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-20T22:57:01.000Z"
+collected_at: 2026-07-21T01:26:24.157Z
+language: mixed
+full_text_hash: f28239ae5e3356df
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-21/r-107-苹果-ios-27-beta-4-更新汇总-国行-siri-ai-暂未上线.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-21/r-107-苹果-ios-27-beta-4-更新汇总-国行-siri-ai-暂未上线.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: medium
+extraction_method: "content-container"
+readability_score: 63
+extractor_diagnostics: {"readability_score":63,"text_length":1260,"paragraph_count":14,"sentence_count":14,"boilerplate_hits":1,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 1260
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"f28239ae5e3356df","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"苹果 iOS 27 Beta 4 更新汇总：国行 Siri AI 暂未上线","discovery_summary":"苹果发布 iOS 27 Beta 4，更新幅度较小，主要新增 Apple TV 应用自动下载后续两集功能、照片\"放大以填充\"开关，并移除了 Beta 3 中的通知中心壁纸功能。Siri Voices 选择界面调整，新增 Siri 搜索启动屏幕及预览长度选项，ProRes Log 格式新增 Log 2 选项，Wi-Fi 连接辅助可单独配置。国行版本暂未发现 Apple 智能和 Siri AI 踪迹。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/979/272.htm","discovered_at":"2026-07-21T01:16:25.579Z","rank_on_page":51,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: aa5fcad6fc5d0d5c
+content_hash: f28239ae5e3356df
+semantic_hash: 5b5c28678fa34102
+duplicate_of: ""
+first_seen_at: "2026-07-20T22:57:01.000Z"
+last_seen_at: 2026-07-21T01:26:24.157Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["index_only"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"supporting_signal","importance_score":2,"importance_reason":"consumer entertainment or minor platform policy feature; AI-adjacent but not a core business signal","supporting_signals":["low_value_ai_adjacent_context"],"novelty":3,"evidence_strength":4,"case_richness":4,"trend_relevance":2,"guanlan_relevance":2,"emerging_signal_score":2}
+business_elements: {"companies":["IT之家（RSS）","Apple"],"products":[],"people":[],"industries":[],"roles":[],"workflows":[],"business_actions":["发布 / 推出","部署 / 上线"],"affected_departments":["IT / 安全"],"numbers":["27 B","4","3","2","7","21","1","17"],"quotes":["ProRes 日志视频编码","这款 iPhone 中的电池运行正常"]}
+evidence_seed: {"company_actions":["苹果发布 iOS 27 Beta 4，更新幅度较小，主要新增 Apple TV 应用自动下载后续两集功能、照片\"放大以填充\"开关，并移除了 Beta 3 中的通知中心壁纸功能。Siri Voices 选择界面调整，新增 Siri 搜索启动屏幕及预览长度选项，ProRes Log 格式新增 Log 2 选项，Wi-Fi 连接辅助可单独配置。国行版本暂未发现 Apple 智能和 Siri AI 踪迹。","IT之家 7 月 21 日消息，科技媒体 MacRumors 今天（7 月 21 日）发布博文，汇总梳理了苹果 iOS 27 Beta 4 更新内容。","该媒体指出比较此前 Beta 更新，苹果本次推出的 Beta 4 更新幅度较小，但依然加入了不少新功能 / 新特性。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例","没有变化前后流程线索"]
+key_excerpts: [{"type":"product_update","text":"苹果发布 iOS 27 Beta 4，更新幅度较小，主要新增 Apple TV 应用自动下载后续两集功能、照片\"放大以填充\"开关，并移除了 Beta 3 中的通知中心壁纸功能。Siri Voices 选择界面调整，新增 Siri 搜索启动屏幕及预览长度选项，ProRes Log 格式新增 Log 2 选项，Wi-Fi 连接辅助可单独配置。国行版本暂未发现 Apple 智能和 Siri AI 踪迹。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"medium"},{"type":"product_update","text":"IT之家 7 月 21 日消息，科技媒体 MacRumors 今天（7 月 21 日）发布博文，汇总梳理了苹果 iOS 27 Beta 4 更新内容。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"medium"},{"type":"product_update","text":"该媒体指出比较此前 Beta 更新，苹果本次推出的 Beta 4 更新幅度较小，但依然加入了不少新功能 / 新特性。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"1、Apple TV 应用 在 Apple TV 应用的“设置”部分，有一个新的“自动下载”开关。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"该选项启用后，对于用户在“继续观看”（Continue Watching）中开始观看的节目，该功能会自动下载接下来的两集。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"当用户看完这些剧集后，会自动删除这些内容。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-21T01:26:24.157Z
+theme: outside-core-exploration
+keyword_group: outside-core-exploration
+copyright_note: local research archive only
+---
+
+# 苹果 iOS 27 Beta 4 更新汇总：国行 Siri AI 暂未上线
+
+## clean_text
+
+IT之家 7 月 21 日消息，科技媒体 MacRumors 今天（7 月 21 日）发布博文，汇总梳理了苹果 iOS 27 Beta 4 更新内容。该媒体指出比较此前 Beta 更新，苹果本次推出的 Beta 4 更新幅度较小，但依然加入了不少新功能 / 新特性。
+1、Apple TV 应用
+在 Apple TV 应用的“设置”部分，有一个新的“自动下载”开关。该选项启用后，对于用户在“继续观看”（Continue Watching）中开始观看的节目，该功能会自动下载接下来的两集。当用户看完这些剧集后，会自动删除这些内容。
+2、照片（Photos）应用
+在“设置”应用的“照片”部分有一个“放大照片以填充”（Zoom Photos to Fill）的开关。它会轻微放大那些接近屏幕宽高比的照片，并且默认是开启的。
+3、壁纸
+苹果已移除了在 Beta 3 中添加到通知中心（Notification Center）的壁纸功能。用户滑动后，会在主屏幕上看到壁纸主题的剪裁效果，但该功能在 Beta 4 中不再可用。
+4、Siri Voices
+苹果在 Beta 4 更新中调整 Siri Voices 选择界面。在没有可设置自定义声音选项的设备上，它显示了带有声音和口音的自定义声音选择界面。在支持自定义 Siri 选择的设备上，有更多的声音选项，苹果表示这些功能即将推出。
+Siri Voices 仅限于 iPhone 17 Pro、 iPhone 17 Pro Max 和 iPhone Air 等机型。
+5、Siri Search
+用户向下轻扫以进入 Siri 搜索或询问界面后，现在会有一个解释该界面的启动屏幕。
+“设置”应用的 Siri 部分，有一个新的选项可以调整 Siri 应用中预览的长度。用户可以选择最多五行，或者不显示。
+6、ProRes Log 格式
+IT之家援引博文介绍，在“设置”应用的“相机”部分，如果用户开启 Apple ProRes，则可以选择 ProRes 日志格式。用户可以点击“ProRes 日志视频编码”并选择 Log 或 Log 2。
+7、Wi-Fi 辅助
+无论“连接辅助”主开关是开启还是关闭，都可以在每个 Wi-Fi 网络中启用或禁用“连接辅助”。
+8、AirPods
+苹果更改了控制中心中 AirPods 选项的外观，包括为自适应模式增加了更多选项。
+9、双电池
+iOS 27 Beta 4 代码引用了一款带有双电池的 iPhone ，其中包含诸如“这款 iPhone 中的电池运行正常”之类的字符串。
+10.国行 Siri AI 暂时缺席
+根据IT之家网友 @思皞 反馈，在升级 iOS 27 Beta 4 更新之后， 暂未发现 Apple 智能（Apple Intelligence）和 Siri AI 的踪迹。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## full_text
+
+IT之家 7 月 21 日消息，科技媒体 MacRumors 今天（7 月 21 日）发布博文，汇总梳理了苹果 iOS 27 Beta 4 更新内容。该媒体指出比较此前 Beta 更新，苹果本次推出的 Beta 4 更新幅度较小，但依然加入了不少新功能 / 新特性。
+1、Apple TV 应用
+在 Apple TV 应用的“设置”部分，有一个新的“自动下载”开关。该选项启用后，对于用户在“继续观看”（Continue Watching）中开始观看的节目，该功能会自动下载接下来的两集。当用户看完这些剧集后，会自动删除这些内容。
+2、照片（Photos）应用
+在“设置”应用的“照片”部分有一个“放大照片以填充”（Zoom Photos to Fill）的开关。它会轻微放大那些接近屏幕宽高比的照片，并且默认是开启的。
+3、壁纸
+苹果已移除了在 Beta 3 中添加到通知中心（Notification Center）的壁纸功能。用户滑动后，会在主屏幕上看到壁纸主题的剪裁效果，但该功能在 Beta 4 中不再可用。
+4、Siri Voices
+苹果在 Beta 4 更新中调整 Siri Voices 选择界面。在没有可设置自定义声音选项的设备上，它显示了带有声音和口音的自定义声音选择界面。在支持自定义 Siri 选择的设备上，有更多的声音选项，苹果表示这些功能即将推出。
+Siri Voices 仅限于 iPhone 17 Pro、 iPhone 17 Pro Max 和 iPhone Air 等机型。
+5、Siri Search
+用户向下轻扫以进入 Siri 搜索或询问界面后，现在会有一个解释该界面的启动屏幕。
+“设置”应用的 Siri 部分，有一个新的选项可以调整 Siri 应用中预览的长度。用户可以选择最多五行，或者不显示。
+6、ProRes Log 格式
+IT之家援引博文介绍，在“设置”应用的“相机”部分，如果用户开启 Apple ProRes，则可以选择 ProRes 日志格式。用户可以点击“ProRes 日志视频编码”并选择 Log 或 Log 2。
+7、Wi-Fi 辅助
+无论“连接辅助”主开关是开启还是关闭，都可以在每个 Wi-Fi 网络中启用或禁用“连接辅助”。
+8、AirPods
+苹果更改了控制中心中 AirPods 选项的外观，包括为自适应模式增加了更多选项。
+9、双电池
+iOS 27 Beta 4 代码引用了一款带有双电池的 iPhone ，其中包含诸如“这款 iPhone 中的电池运行正常”之类的字符串。
+10.国行 Siri AI 暂时缺席
+根据IT之家网友 @思皞 反馈，在升级 iOS 27 Beta 4 更新之后， 暂未发现 Apple 智能（Apple Intelligence）和 Siri AI 的踪迹。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 63
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: medium
+- diagnostics: {"readability_score":63,"text_length":1260,"paragraph_count":14,"sentence_count":14,"boilerplate_hits":1,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **product_update**｜supports=signal_card_candidate, relationship_graph_input, business_change｜importance=medium｜confidence=medium
+   苹果发布 iOS 27 Beta 4，更新幅度较小，主要新增 Apple TV 应用自动下载后续两集功能、照片"放大以填充"开关，并移除了 Beta 3 中的通知中心壁纸功能。Siri Voices 选择界面调整，新增 Siri 搜索启动屏幕及预览长度选项，ProRes Log 格式新增 Log 2 选项，Wi-Fi 连接辅助可单独配置。国行版本暂未发现 Apple 智能和 Siri AI 踪迹。
+
+2. **product_update**｜supports=signal_card_candidate, relationship_graph_input, business_change｜importance=medium｜confidence=medium
+   IT之家 7 月 21 日消息，科技媒体 MacRumors 今天（7 月 21 日）发布博文，汇总梳理了苹果 iOS 27 Beta 4 更新内容。
+
+3. **product_update**｜supports=signal_card_candidate, relationship_graph_input, business_change｜importance=medium｜confidence=medium
+   该媒体指出比较此前 Beta 更新，苹果本次推出的 Beta 4 更新幅度较小，但依然加入了不少新功能 / 新特性。
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=medium
+   1、Apple TV 应用 在 Apple TV 应用的“设置”部分，有一个新的“自动下载”开关。
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=medium
+   该选项启用后，对于用户在“继续观看”（Continue Watching）中开始观看的节目，该功能会自动下载接下来的两集。
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=medium
+   当用户看完这些剧集后，会自动删除这些内容。
+
+## business_elements
+
+- companies: IT之家（RSS）, Apple
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 暂无公开信息
+- roles: 暂无公开信息
+- workflows: 暂无公开信息
+- business_actions: 发布 / 推出, 部署 / 上线
+- affected_departments: IT / 安全
+- numbers: 27 B, 4, 3, 2, 7, 21, 1, 17
+- quotes: ProRes 日志视频编码 / 这款 iPhone 中的电池运行正常
+
+## evidence_seed
+
+- company_actions: 苹果发布 iOS 27 Beta 4，更新幅度较小，主要新增 Apple TV 应用自动下载后续两集功能、照片"放大以填充"开关，并移除了 Beta 3 中的通知中心壁纸功能。Siri Voices 选择界面调整，新增 Siri 搜索启动屏幕及预览长度选项，ProRes Log 格式新增 Log 2 选项，Wi-Fi 连接辅助可单独配置。国行版本暂未发现 Apple 智能和 Siri AI 踪迹。 / IT之家 7 月 21 日消息，科技媒体 MacRumors 今天（7 月 21 日）发布博文，汇总梳理了苹果 iOS 27 Beta 4 更新内容。 / 该媒体指出比较此前 Beta 更新，苹果本次推出的 Beta 4 更新幅度较小，但依然加入了不少新功能 / 新特性。
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 暂无公开信息
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: supporting_signal
+- importance_score: 2
+- importance_reason: consumer entertainment or minor platform policy feature; AI-adjacent but not a core business signal
+- supporting_signals: low_value_ai_adjacent_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 4
+- trend_relevance: 2
+- guanlan_relevance: 2
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: false
+- trend_candidate_context: false
+- signal_card_candidate: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- index_only
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+- 没有变化前后流程线索
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"苹果 iOS 27 Beta 4 更新汇总：国行 Siri AI 暂未上线","discovery_summary":"苹果发布 iOS 27 Beta 4，更新幅度较小，主要新增 Apple TV 应用自动下载后续两集功能、照片\"放大以填充\"开关，并移除了 Beta 3 中的通知中心壁纸功能。Siri Voices 选择界面调整，新增 Siri 搜索启动屏幕及预览长度选项，ProRes Log 格式新增 Log 2 选项，Wi-Fi 连接辅助可单独配置。国行版本暂未发现 Apple 智能和 Siri AI 踪迹。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/979/272.htm","discovered_at":"2026-07-21T01:16:25.579Z","rank_on_page":51,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+苹果发布 iOS 27 Beta 4，更新幅度较小，主要新增 Apple TV 应用自动下载后续两集功能、照片"放大以填充"开关，并移除了 Beta 3 中的通知中心壁纸功能。Siri Voices 选择界面调整，新增 Siri 搜索启动屏幕及预览长度选项，ProRes Log 格式新增 Log 2 选项，Wi-Fi 连接辅助可单独配置。国行版本暂未发现 Apple 智能和 Siri AI 踪迹。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

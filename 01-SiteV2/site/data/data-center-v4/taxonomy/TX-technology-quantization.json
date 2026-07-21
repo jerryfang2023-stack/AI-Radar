@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-20T04:21:34.978Z",
-    "latestDataDate": "2026-07-20",
-    "currentDate": "2026-07-20",
-    "eventCount": 1324,
-    "quarantinedEventCount": 12
+    "generatedAt": "2026-07-21T01:27:58.078Z",
+    "latestDataDate": "2026-07-21",
+    "currentDate": "2026-07-21",
+    "eventCount": 1347,
+    "quarantinedEventCount": 13
   },
   "node": {
     "id": "TX-technology-quantization",
@@ -218,9 +218,7 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "阿里巴巴",
-        "Qwen",
-        "阿里"
+        "Qwen"
       ],
       "verificationStatus": "verified",
       "datasetScopes": [
@@ -235,7 +233,10 @@
         "EV-53f08daddd011dbb",
         "EV-e1a4bc40db4a9d8f",
         "EV-2a833330267cb2df",
+        "EV-94ad4a217508e6e0",
         "EV-0d5a32aca724d30e",
+        "EV-b43f22d8bc7fec3f",
+        "EV-f388f7ae2debeae8",
         "EV-d08935b06ed9e7bb",
         "EV-215f938a46d0b126",
         "EV-ac1b82f6e6261012",
@@ -273,6 +274,7 @@
         "TX-technology-agentic_execution",
         "TX-technology-code_generation",
         "TX-technology-long_context",
+        "TX-technology-mixture_of_experts",
         "TX-use_case-data_analysis",
         "TX-technology-on_device",
         "TX-technology-embodied_ai",
@@ -280,18 +282,17 @@
         "TX-technology-open_weights",
         "TX-technology-video_generation",
         "TX-technology-multimodal",
+        "TX-technology-speech_audio",
         "TX-technology-quantization",
         "TX-technology-computer_use"
       ],
       "relatedEntityIds": [
-        "EN-10a27c6240d18dbe",
-        "EN-5398729239788ca5",
+        "EN-0b0c3b228202ab0a",
         "EN-22a4c686e665e299",
-        "EN-2daac3672aeafcbd",
         "EN-d65d81c60c0c47c4"
       ],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-07-20"
+      "lastSeen": "2026-07-21"
     },
     {
       "id": "EN-6f7ac1823da81d2e",
@@ -308,6 +309,7 @@
         "EV-d4d7b019ff0015df",
         "EV-27b69ea604475b72",
         "EV-f8c3a83d883c9b22",
+        "EV-0d5a32aca724d30e",
         "EV-70cbf25f7ec2cc3a",
         "EV-f8ba1728de6a4899",
         "EV-fe2b0d74944d6128",
@@ -334,6 +336,7 @@
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-software_development",
         "TX-technology-long_context",
+        "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
         "TX-technology-fine_tuning",
         "TX-technology-open_weights",
@@ -342,7 +345,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-07-16"
+      "lastSeen": "2026-07-21"
     },
     {
       "id": "EN-3a7bd3e2360a3d29",
@@ -443,9 +446,9 @@
         "TX-technology-multimodal",
         "TX-industry-media_entertainment",
         "TX-technology-tool_use",
+        "TX-technology-speech_audio",
         "TX-use_case-content_creation",
-        "TX-technology-quantization",
-        "TX-technology-speech_audio"
+        "TX-technology-quantization"
       ],
       "relatedEntityIds": [
         "EN-af3ceabbe048a291"

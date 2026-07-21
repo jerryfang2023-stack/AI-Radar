@@ -1,16 +1,23 @@
 {
   "schema_version": "model-assist-2026-07-18.2",
-  "generated_at": "2026-07-20T03:58:39.890Z",
+  "generated_at": "2026-07-21T01:27:50.358Z",
   "dates": [
-    "2026-07-20"
+    "2026-07-21"
   ],
-  "raw_documents_scanned": 116,
-  "scanned_jobs": 46,
+  "raw_documents_scanned": 139,
+  "scanned_jobs": 61,
   "reuse_existing": false,
   "reused_jobs": 0,
   "regated_existing": 0,
   "offset": 0,
-  "selected_jobs": 46,
-  "completed": 46,
-  "failures": []
+  "selected_jobs": 61,
+  "completed": 60,
+  "failures": [
+    {
+      "date": "2026-07-21",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-25690754dd14bd1b",
+      "error": "deepseek_json_quality_failed:entity_decision_incomplete"
+    }
+  ]
 }

@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-21T01:27:58.078Z",
+    "latestDataDate": "2026-07-21",
+    "currentDate": "2026-07-21",
+    "eventCount": 1347,
+    "quarantinedEventCount": 13
+  },
+  "entity": {
+    "id": "EN-c7d7af20b6ab853d",
+    "name": "微软将在 Azure",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-4fba2b2f1ac10a79"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-20",
+    "lastSeen": "2026-07-21",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [
+        "EV-4fba2b2f1ac10a79"
+      ],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-4fba2b2f1ac10a79",
+        "dataDate": "2026-07-21",
+        "date": "2026-07-20",
+        "eventType": "deployment",
+        "eventTypeLabel": "部署",
+        "eventGroup": "部署与案例",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "微软将在 Azure 部署 AMD Helios 机架系统，用于 AI 推理",
+        "displayTags": [
+          {
+            "dimensionId": "deployment_model",
+            "id": "cloud",
+            "dimensionName": "部署形态",
+            "name": "云端"
+          }
+        ],
+        "entityIds": [
+          "EN-c7d7af20b6ab853d",
+          "EN-9fbf261b62c1d7c0"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-20T04:21:34.978Z",
-    "latestDataDate": "2026-07-20",
-    "currentDate": "2026-07-20",
-    "eventCount": 1324,
-    "quarantinedEventCount": 12
+    "generatedAt": "2026-07-21T01:27:58.078Z",
+    "latestDataDate": "2026-07-21",
+    "currentDate": "2026-07-21",
+    "eventCount": 1347,
+    "quarantinedEventCount": 13
   },
   "entity": {
     "id": "EN-16fe95bd48dbf178",
@@ -100,6 +100,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-b43f22d8bc7fec3f",
         "EV-215f938a46d0b126",
         "EV-c54172bf4e0c1068"
       ],
@@ -113,7 +114,7 @@
         "EN-16fe95bd48dbf178"
       ],
       "firstSeen": "2026-06-24",
-      "lastSeen": "2026-07-19"
+      "lastSeen": "2026-07-21"
     }
   ],
   "relationships": [
@@ -147,6 +148,7 @@
       "typeLabel": "技术",
       "valueId": "agentic_execution",
       "eventIds": [
+        "EV-901155ab700a7e8e",
         "EV-f6e7a4fe77d7f5c9",
         "EV-6be89ebfbf8de6be",
         "EV-b29878fdf79f2ac5",
@@ -297,6 +299,9 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-0d5a32aca724d30e",
+        "EV-ab3e820aa6d92542",
+        "EV-b43f22d8bc7fec3f",
         "EV-86ab9c2f1416e9d8",
         "EV-3b1d1dd87442e7f1",
         "EV-4cb7e4c371fb252e",
@@ -355,6 +360,7 @@
         "EV-4a67e6cebb818fea",
         "EV-6af1e74358025628",
         "EV-701417bcd9b57095",
+        "EV-3e55e1cd1d54f6ef",
         "EV-3a7128e2d7ff149e",
         "EV-40390136762c64d3",
         "EV-97c7dd791c1d1a9f",
@@ -475,6 +481,7 @@
         "EV-c17f5a364ed6a3ac"
       ],
       "entityIds": [
+        "EN-12765295db4f1e79",
         "EN-270e2cfd11014ef8",
         "EN-522656609ff15589",
         "EN-b0bc23fa8e20c543",
@@ -635,6 +642,13 @@
         "EN-de5a1adf4fedcce1",
         "EN-19e41212c0556603",
         "EN-dca6ec9510fc0176",
+        "EN-607964040e4b62e0",
+        "EN-10a27c6240d18dbe",
+        "EN-572e31f55b6ac1b1",
+        "EN-aabd1a8a869c34a4",
+        "EN-6f7ac1823da81d2e",
+        "EN-c68cad73fb8e43d2",
+        "EN-e16fc821f34228d1",
         "EN-6f21a653c48f4f19",
         "EN-6ef7552b4631e789",
         "EN-dd758281d0c70e60",
@@ -680,7 +694,6 @@
         "EN-26e4951af4490c21",
         "EN-7dd7122ad9bf240f",
         "EN-95b0632f1b292fa7",
-        "EN-6f7ac1823da81d2e",
         "EN-b644c0a9d493976a",
         "EN-636fa9664f878a4d",
         "EN-6c87e5496f592f3c",
@@ -719,6 +732,8 @@
         "EN-30244d0624ac26cb",
         "EN-774e4ae6eef0efdb",
         "EN-87b3ab1e46b7ee62",
+        "EN-210a6aeaed360009",
+        "EN-a33d30b5f34bdff5",
         "EN-e395d03e988d30a9",
         "EN-0dba03107c52ed3e",
         "EN-d85ad5e8ff8e2889",
@@ -766,7 +781,6 @@
         "EN-562c2c6ed79e6b9e",
         "EN-bbed1081f0b62667",
         "EN-ae4ea495016fb286",
-        "EN-e16fc821f34228d1",
         "EN-16fe95bd48dbf178",
         "EN-0666a703033ebd1b",
         "EN-30a63b26b06e096e",
@@ -927,7 +941,7 @@
         "HW-25ce41fab12d9ef2"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-20"
+      "lastSeen": "2026-07-21"
     },
     {
       "id": "TX-use_case-data_analysis",
@@ -938,7 +952,6 @@
       "eventIds": [
         "EV-5f5f252c6a826599",
         "EV-b348083270be6c65",
-        "EV-0d5a32aca724d30e",
         "EV-19bcfc6d7c1612cb",
         "EV-daf1e21f8ccbf839",
         "EV-333851b077b606c8",
@@ -951,18 +964,13 @@
         "EN-122c0bebae950c77",
         "EN-96eebba49dbbf422",
         "EN-1c5483264189feef",
-        "EN-339217758bfa736e",
-        "EN-047364b9be67f665",
-        "EN-b5251b35f15bedc4",
-        "EN-9f15bb7e29e191eb",
-        "EN-607964040e4b62e0",
-        "EN-10a27c6240d18dbe",
         "EN-2abf8289b2f2113f",
         "EN-91901356a63794df",
         "EN-a89151ba4b5ac0f2",
         "EN-f64f284f6c46b9b6",
         "EN-2e610cbc4b309296",
         "EN-33ea25778e18d372",
+        "EN-047364b9be67f665",
         "EN-09c344df70df9660",
         "EN-1725c58362aadc2a",
         "EN-e16fc821f34228d1",
@@ -971,6 +979,7 @@
         "EN-3a13916345b60fad",
         "EN-b59c577ed73536c6",
         "EN-729324072d368379",
+        "EN-9f15bb7e29e191eb",
         "EN-7d3194f79e645c42",
         "EN-fc0586e76f80f181",
         "EN-45d780f82c9247fc"

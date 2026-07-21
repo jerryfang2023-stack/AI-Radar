@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-20T04:21:34.978Z",
-    "latestDataDate": "2026-07-20",
-    "currentDate": "2026-07-20",
-    "eventCount": 1324,
-    "quarantinedEventCount": 12
+    "generatedAt": "2026-07-21T01:27:58.078Z",
+    "latestDataDate": "2026-07-21",
+    "currentDate": "2026-07-21",
+    "eventCount": 1347,
+    "quarantinedEventCount": 13
   },
   "entity": {
     "id": "EN-085598c00f2aaccf",
@@ -177,8 +177,8 @@
         "TX-technology-video_generation",
         "TX-technology-multimodal",
         "TX-industry-media_entertainment",
-        "TX-technology-image_generation",
-        "TX-technology-speech_audio"
+        "TX-technology-speech_audio",
+        "TX-technology-image_generation"
       ],
       "relatedEntityIds": [
         "EN-d56aa2f9908f566a",
@@ -234,6 +234,7 @@
         "EV-4c0af31f1399ea8c",
         "EV-e1a4bc40db4a9d8f",
         "EV-d5f276ad6b2ac9de",
+        "EV-ab3e820aa6d92542",
         "EV-c237f5dc53f0a923",
         "EV-653cbce2ccc79f8b",
         "EV-74dfbd82b47dc626",
@@ -330,7 +331,7 @@
         "HW-b1302168a9ab18e8"
       ],
       "firstSeen": "2026-05-19",
-      "lastSeen": "2026-07-18"
+      "lastSeen": "2026-07-21"
     },
     {
       "id": "TX-use_case-software_development",
@@ -348,6 +349,7 @@
         "EV-2d6d2dc0ead4be10",
         "EV-d209a6acecba4285",
         "EV-b2e374d54b10b9af",
+        "EV-ab3e820aa6d92542",
         "EV-347d250e2769de9a",
         "EV-107725f2bdece882",
         "EV-70efbfcaadcdb259",
@@ -380,11 +382,11 @@
         "EN-f9ae78c09ff308f9",
         "EN-ce635c4eabff5e4f",
         "EN-9fbf261b62c1d7c0",
+        "EN-c70eca6b0f88f44d",
         "EN-916a98f0fa2a39af",
         "EN-dc6c28a2123e8efb",
         "EN-536c4035ba0c7047",
         "EN-1d79127e9d90e89b",
-        "EN-c70eca6b0f88f44d",
         "EN-bc77259c5d2eb341",
         "EN-fab30471ea65d627",
         "EN-bb5b6487f881bbb1",
@@ -419,7 +421,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-07-21"
     },
     {
       "id": "TX-technology-multimodal",
@@ -433,7 +435,6 @@
         "EV-26d2874c6ce028d6",
         "EV-fd21441fb6e143c3",
         "EV-9d5363657f3541e7",
-        "EV-0d5a32aca724d30e",
         "EV-ee489212ff9135a4",
         "EV-ba89f9414be0b041",
         "EV-6b51b1b6fe22c540",
@@ -470,11 +471,6 @@
         "EN-50537dab76505dfc",
         "EN-b5251b35f15bedc4",
         "EN-a89151ba4b5ac0f2",
-        "EN-339217758bfa736e",
-        "EN-047364b9be67f665",
-        "EN-9f15bb7e29e191eb",
-        "EN-607964040e4b62e0",
-        "EN-10a27c6240d18dbe",
         "EN-be548deba4a093d7",
         "EN-92ec1124e1de6f54",
         "EN-3c6d89173e6636d7",
@@ -511,6 +507,7 @@
         "EN-2b96ed840c07482a",
         "EN-9a6ee79873b1fb7b",
         "EN-3f726694f178ed7a",
+        "EN-047364b9be67f665",
         "EN-d65d81c60c0c47c4",
         "EN-085598c00f2aaccf",
         "EN-a3c3b987b09fc1bb",
@@ -596,6 +593,8 @@
       "typeLabel": "技术",
       "valueId": "speech_audio",
       "eventIds": [
+        "EV-94ad4a217508e6e0",
+        "EV-f388f7ae2debeae8",
         "EV-99e5df844a1bd670",
         "EV-dad8c827d14f2799",
         "EV-2258329f33d413cf",
@@ -604,6 +603,10 @@
         "EV-631dce4dc135d01b"
       ],
       "entityIds": [
+        "EN-047364b9be67f665",
+        "EN-ec1c8f558ff61e34",
+        "EN-0b0c3b228202ab0a",
+        "EN-bae152c4560df38c",
         "EN-bbdefa2950f49882",
         "EN-3a7bd3e2360a3d29",
         "EN-e0bab6f6c58bfe4e",
@@ -623,7 +626,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-06-17"
+      "lastSeen": "2026-07-21"
     }
   ],
   "fde": [],

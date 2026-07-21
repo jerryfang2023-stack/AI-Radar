@@ -1,0 +1,298 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-057",
+  "title": "GitHub - openafw/ai-agent-discovery: Detect OpenClaw AI agent installations across your organization via EDR telemetry. · GitHub",
+  "title_zh": "GitHub 仓库：openafw/ai-agent-discovery：通过 EDR 遥测检测组织中 OpenClaw AI 智能体安装。",
+  "title_translation_status": "translated",
+  "title_translation_method": "deepseek_title_translation",
+  "title_translation_model": "deepseek-v4-flash",
+  "original_url": "https://github.com/openafw/ai-agent-discovery",
+  "canonical_url": "https://github.com/openafw/ai-agent-discovery",
+  "source_name": "keyword search / Anysearch",
+  "source_type": "developer",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "case_or_customer",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_customer_case",
+  "search_path": "developer_ecosystem",
+  "search_path_label": "开发生态路径",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "pilot",
+  "enterprise_ai_transformation_reason": "enterprise_ai_implementation_signal",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-07-21T01:26:02.938Z",
+  "language": "mixed",
+  "full_text": "Uh oh!\nThere was an error while loading. Please reload this page .\nopenafw\nai-agent-discovery\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n6 Commits\n6 Commits\n.github/ workflows\n.github/ workflows\nbin\nbin\nconfig\nconfig\ndocs\ndocs\nregistry\nregistry\nsrc\nsrc\ntests/ fixtures\ntests/ fixtures\n.gitignore\n.gitignore\nLICENSE\nLICENSE\nREADME.md\nREADME.md\npackage-lock.json\npackage-lock.json\npackage.json\npackage.json\ntsconfig.json\ntsconfig.json\nView all files\nRepository files navigation\nAI Agent Discovery\nAn open-source enterprise tool by OpenGuardrails for discovering AI agents running within your organization.\nAs AI agent adoption explodes across enterprises, security teams face a critical visibility gap. AI Agent Discovery integrates with your existing EDR infrastructure to identify and inventory all AI agents—from autonomous coding assistants to workflow automation platforms.\nWhy AI Agent Discovery?\nShadow AI Visibility : Discover AI tools employees are using without IT knowledge\nSecurity Posture : Understand your AI attack surface\nCompliance : Track AI usage for regulatory requirements\nCost Control : Identify redundant AI tool subscriptions\nFeatures\nFeature\nDescription\nAgent Taxonomy\n3-level classification: Kingdom → Family → Species\nMulti-EDR Support\nCrowdStrike Falcon, Microsoft Defender, or file import\nPattern Detection\nCommunity-maintained YAML signatures\nWeb Dashboard\nReal-time visualization and reporting\nEasy Deployment\nSingle command to get started\nQuick Start\n# Run directly with npx\nnpx ai-agent-discovery\n# Or install globally\nnpm install -g ai-agent-discovery\n# Initialize configuration\naad init\n# Run a scan\naad scan\n# Start the dashboard\naad dashboard\nSupported AI Agents\nAutonomous Agents\nAgent\nVariants\nOpenClaw\nopenclaw, nanoclaw, moltbot, clawdbot\nAutoGPT\nautogpt, agentgpt, babyagi\nDevin\ndevin, opendevin, swe-agent\nAssistant Agents\nAgent\nVariants\nClaude\nclaude-desktop, claude-code, cline\nChatGPT\nchatgpt-desktop, chatgpt-app\nCursor\ncursor\nCopilot\ncopilot, copilot-chat\nWorkflow Agents\nAgent\nVariants\nDify\ndify, dify-sandbox\nN8N\nn8n\nFlowise\nflowise, langflow\nCLI Commands\n# Core commands\naad init # Initialize configuration\naad scan # Run detection scan\naad dashboard # Start web dashboard\n# Scan options\naad scan --connector file # Use file connector\naad scan --lookback 30 # Look back 30 days\naad scan --output csv # Output as CSV\n# Taxonomy browsing\naad taxonomy list # List all known agents\naad taxonomy list --kingdom autonomous\naad taxonomy show claude # Show agent details\naad taxonomy tree # Show full taxonomy tree\n# Configuration\naad config get connector.type\naad config set connector.type crowdstrike\n# Validation\naad validate # Validate all registry files\naad test-signature ./my-sig.yaml # Test a signature\nConfiguration\nCreate config/config.yaml :\n# EDR Connector\nconnector :\ntype : crowdstrike # Options: crowdstrike, defender, file\ncrowdstrike :\nclient_id : ${CROWDSTRIKE_CLIENT_ID}\nclient_secret : ${CROWDSTRIKE_CLIENT_SECRET}\ndefender :\ntenant_id : ${AZURE_TENANT_ID}\nclient_id : ${AZURE_CLIENT_ID}\nclient_secret : ${AZURE_CLIENT_SECRET}\nfile :\npath : ./data/events.json\nformat : json # csv, json, ndjson\n# Scan settings\nscan :\nlookback_days : 14\nmax_events : 10000\n# Dashboard\ndashboard :\nport : 3000\nhost : 0.0.0.0\nHow It Works\n┌─────────────────┐ ┌─────────────────┐ ┌─────────────────┐\n│ EDR Platform │────▶│ Detection │────▶│ Dashboard │\n│ (CrowdStrike, │ │ Engine │ │ & Reports │\n│ Defender) │ │ │ │ │\n└─────────────────┘ └────────┬────────┘ └─────────────────┘\n┌────────▼────────┐\n│ Community │\n│ Signatures │\n│ (YAML) │\n└─────────────────┘\nConnect to your EDR platform with API credentials\nQuery process execution events using detection patterns\nMatch events against community-maintained signatures\nAggregate results by endpoint, user, and agent type\nVisualize in the dashboard or export reports\nContributing\nWe welcome contributions! The easiest way to contribute is by adding detection signatures for new AI agents.\nAdding a New Agent\nFork & clone the repository\nCreate signature file: registry/signatures/my-agent.yaml\nAdd to taxonomy: registry/taxonomy/<kingdom>/my-agent.yaml\nValidate: aad validate\nTest: aad test-signature registry/signatures/my-agent.yaml\nSubmit a pull request\nSee CONTRIBUTING.md for detailed instructions.\nSignature Format\nid : my-agent\nname : My Agent Signatures\nversion : \" 1.0.0 \"\nauthor : your-github-username\ndescription : Detection patterns for My Agent\npatterns :\nprocess :\n- pattern : \" myagent \"\ntype : substring\ncase_sensitive : false\nfields : [file_path, image_name, command_line]\nfile_path :\n- pattern : \" .myagent \"\ntype : substring\nexclusions :\nprocesses : [chrome, firefox]\npaths : [/tmp/]\nProject Structure\nai-agent-discovery/\n├── bin/aad.js # CLI entry point\n├── src/\n│ ├── cli.ts # CLI commands (Commander.js)\n│ ├── taxonomy/ # Agent classification system\n│ ├── detectors/ # Pattern matching engine\n│ ├── connectors/ # EDR connectors\n│ ├── dashboard/ # Express.js web UI\n│ ├── config/ # Configuration (Zod)\n│ └── utils/ # Logging, filters\n├── registry/ # Community-contributed\n│ ├── taxonomy/ # Agent taxonomy (YAML)\n│ ├── signatures/ # Detection patterns (YAML)\n│ └── connectors/ # EDR configs (YAML)\n├── docs/ # Documentation\n└── tests/ # Test fixtures\nRoadmap\nSentinelOne connector\nCarbon Black connector\nElastic Security connector\nRisk scoring and alerting\nSIEM integration (Splunk, Sentinel)\nAgent behavior analysis\nPolicy enforcement\nCommunity\nGitHub Issues : Report bugs or request features\nDiscussions : Join the conversation\nDiscord : OpenGuardrails Community\nTwitter/X : @OpenGuardrails\nLicense\nApache 2.0 - See LICENSE for details.\nBuilt with ❤️ by OpenGuardrails\nOpen-source security tools for the AI era\nAbout\nDetect OpenClaw AI agent installations across your organization via EDR telemetry.\nResources\nReadme\nLicense\nApache-2.0 license\nContributing\nContributing\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nCustom properties\nStars\nstars\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nRelease v1.0.1\nLatest\nMar 9, 2026\n+ 1 release\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nTypeScript\n72.8%\nJavaScript\n19.3%\nCSS\n5.0%\nHTML\n2.9%",
+  "clean_text": "Uh oh!\nThere was an error while loading. Please reload this page .\nopenafw\nai-agent-discovery\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n6 Commits\n6 Commits\n.github/ workflows\n.github/ workflows\nbin\nbin\nconfig\nconfig\ndocs\ndocs\nregistry\nregistry\nsrc\nsrc\ntests/ fixtures\ntests/ fixtures\n.gitignore\n.gitignore\nLICENSE\nLICENSE\nREADME.md\nREADME.md\npackage-lock.json\npackage-lock.json\npackage.json\npackage.json\ntsconfig.json\ntsconfig.json\nView all files\nRepository files navigation\nAI Agent Discovery\nAn open-source enterprise tool by OpenGuardrails for discovering AI agents running within your organization.\nAs AI agent adoption explodes across enterprises, security teams face a critical visibility gap. AI Agent Discovery integrates with your existing EDR infrastructure to identify and inventory all AI agents—from autonomous coding assistants to workflow automation platforms.\nWhy AI Agent Discovery?\nShadow AI Visibility : Discover AI tools employees are using without IT knowledge\nSecurity Posture : Understand your AI attack surface\nCompliance : Track AI usage for regulatory requirements\nCost Control : Identify redundant AI tool subscriptions\nFeatures\nFeature\nDescription\nAgent Taxonomy\n3-level classification: Kingdom → Family → Species\nMulti-EDR Support\nCrowdStrike Falcon, Microsoft Defender, or file import\nPattern Detection\nCommunity-maintained YAML signatures\nWeb Dashboard\nReal-time visualization and reporting\nEasy Deployment\nSingle command to get started\nQuick Start\n# Run directly with npx\nnpx ai-agent-discovery\n# Or install globally\nnpm install -g ai-agent-discovery\n# Initialize configuration\naad init\n# Run a scan\naad scan\n# Start the dashboard\naad dashboard\nSupported AI Agents\nAutonomous Agents\nAgent\nVariants\nOpenClaw\nopenclaw, nanoclaw, moltbot, clawdbot\nAutoGPT\nautogpt, agentgpt, babyagi\nDevin\ndevin, opendevin, swe-agent\nAssistant Agents\nAgent\nVariants\nClaude\nclaude-desktop, claude-code, cline\nChatGPT\nchatgpt-desktop, chatgpt-app\nCursor\ncursor\nCopilot\ncopilot, copilot-chat\nWorkflow Agents\nAgent\nVariants\nDify\ndify, dify-sandbox\nN8N\nn8n\nFlowise\nflowise, langflow\nCLI Commands\n# Core commands\naad init # Initialize configuration\naad scan # Run detection scan\naad dashboard # Start web dashboard\n# Scan options\naad scan --connector file # Use file connector\naad scan --lookback 30 # Look back 30 days\naad scan --output csv # Output as CSV\n# Taxonomy browsing\naad taxonomy list # List all known agents\naad taxonomy list --kingdom autonomous\naad taxonomy show claude # Show agent details\naad taxonomy tree # Show full taxonomy tree\n# Configuration\naad config get connector.type\naad config set connector.type crowdstrike\n# Validation\naad validate # Validate all registry files\naad test-signature ./my-sig.yaml # Test a signature\nConfiguration\nCreate config/config.yaml :\n# EDR Connector\nconnector :\ntype : crowdstrike # Options: crowdstrike, defender, file\ncrowdstrike :\nclient_id : ${CROWDSTRIKE_CLIENT_ID}\nclient_secret : ${CROWDSTRIKE_CLIENT_SECRET}\ndefender :\ntenant_id : ${AZURE_TENANT_ID}\nclient_id : ${AZURE_CLIENT_ID}\nclient_secret : ${AZURE_CLIENT_SECRET}\nfile :\npath : ./data/events.json\nformat : json # csv, json, ndjson\n# Scan settings\nscan :\nlookback_days : 14\nmax_events : 10000\n# Dashboard\ndashboard :\nport : 3000\nhost : 0.0.0.0\nHow It Works\n┌─────────────────┐ ┌─────────────────┐ ┌─────────────────┐\n│ EDR Platform │────▶│ Detection │────▶│ Dashboard │\n│ (CrowdStrike, │ │ Engine │ │ & Reports │\n│ Defender) │ │ │ │ │\n└─────────────────┘ └────────┬────────┘ └─────────────────┘\n┌────────▼────────┐\n│ Community │\n│ Signatures │\n│ (YAML) │\n└─────────────────┘\nConnect to your EDR platform with API credentials\nQuery process execution events using detection patterns\nMatch events against community-maintained signatures\nAggregate results by endpoint, user, and agent type\nVisualize in the dashboard or export reports\nContributing\nWe welcome contributions! The easiest way to contribute is by adding detection signatures for new AI agents.\nAdding a New Agent\nFork & clone the repository\nCreate signature file: registry/signatures/my-agent.yaml\nAdd to taxonomy: registry/taxonomy/<kingdom>/my-agent.yaml\nValidate: aad validate\nTest: aad test-signature registry/signatures/my-agent.yaml\nSubmit a pull request\nSee CONTRIBUTING.md for detailed instructions.\nSignature Format\nid : my-agent\nname : My Agent Signatures\nversion : \" 1.0.0 \"\nauthor : your-github-username\ndescription : Detection patterns for My Agent\npatterns :\nprocess :\n- pattern : \" myagent \"\ntype : substring\ncase_sensitive : false\nfields : [file_path, image_name, command_line]\nfile_path :\n- pattern : \" .myagent \"\ntype : substring\nexclusions :\nprocesses : [chrome, firefox]\npaths : [/tmp/]\nProject Structure\nai-agent-discovery/\n├── bin/aad.js # CLI entry point\n├── src/\n│ ├── cli.ts # CLI commands (Commander.js)\n│ ├── taxonomy/ # Agent classification system\n│ ├── detectors/ # Pattern matching engine\n│ ├── connectors/ # EDR connectors\n│ ├── dashboard/ # Express.js web UI\n│ ├── config/ # Configuration (Zod)\n│ └── utils/ # Logging, filters\n├── registry/ # Community-contributed\n│ ├── taxonomy/ # Agent taxonomy (YAML)\n│ ├── signatures/ # Detection patterns (YAML)\n│ └── connectors/ # EDR configs (YAML)\n├── docs/ # Documentation\n└── tests/ # Test fixtures\nRoadmap\nSentinelOne connector\nCarbon Black connector\nElastic Security connector\nRisk scoring and alerting\nSIEM integration (Splunk, Sentinel)\nAgent behavior analysis\nPolicy enforcement\nCommunity\nGitHub Issues : Report bugs or request features\nDiscussions : Join the conversation\nDiscord : OpenGuardrails Community\nTwitter/X : @OpenGuardrails\nLicense\nApache 2.0 - See LICENSE for details.\nBuilt with ❤️ by OpenGuardrails\nOpen-source security tools for the AI era\nAbout\nDetect OpenClaw AI agent installations across your organization via EDR telemetry.\nResources\nReadme\nLicense\nApache-2.0 license\nContributing\nContributing\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nCustom properties\nStars\nstars\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nRelease v1.0.1\nLatest\nMar 9, 2026\n+ 1 release\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nTypeScript\n72.8%\nJavaScript\n19.3%\nCSS\n5.0%\nHTML\n2.9%",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-21/r-057-github-openafw-ai-agent-discovery-detect-openclaw-ai-agent-installatio.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-21/r-057-github-openafw-ai-agent-discovery-detect-openclaw-ai-agent-installatio.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 91,
+  "extractor_diagnostics": {
+    "readability_score": 91,
+    "text_length": 6492,
+    "paragraph_count": 109,
+    "sentence_count": 21,
+    "boilerplate_hits": 2,
+    "symbol_ratio": 0.0062,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 6492,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "7eece897b4c3a0d2",
+    "missing": []
+  },
+  "evidence_strength": "rich_evidence",
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "7378cc0a524c443a",
+  "content_hash": "7eece897b4c3a0d2",
+  "full_text_hash": "7eece897b4c3a0d2",
+  "semantic_hash": "d1bceca3b2a1abd1",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-21T01:26:02.938Z",
+  "last_seen_at": "2026-07-21T01:26:02.938Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "case_detail",
+      "text": "You signed in with another tab or window. openafw / **ai-agent-discovery** Public. # openafw/ai-agent-discovery. # AI Agent Discovery. **An open-source enterprise tool by OpenGuardrails for discovering AI agents running within your organization.**. AI Agent Discovery integrates with your existing ED... / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=developer_ecosystem",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "There was an error while loading.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Please reload this page .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "openafw ai-agent-discovery Public Notifications You must be signed in to change notification settings Fork Star main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 6 Commits 6 Commits .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "workflow_change",
+      "text": "github/ workflows .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "workflow_change",
+      "text": "github/ workflows bin bin config config docs docs registry registry src src tests/ fixtures tests/ fixtures .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-21T01:26:02.938Z",
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Anysearch",
+      "Microsoft",
+      "GitHub",
+      "Cursor"
+    ],
+    "products": [
+      "agent",
+      "Agent",
+      "agents",
+      "Agents",
+      "Claude",
+      "claude",
+      "ChatGPT",
+      "chatgpt",
+      "Cursor",
+      "cursor"
+    ],
+    "people": [],
+    "industries": [
+      "法律 / 法务",
+      "开发者工具",
+      "企业服务"
+    ],
+    "roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "计费 / 预算管理",
+      "权限 / 安全治理",
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "部署 / 上线"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "法务",
+      "财务 / 预算",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "6",
+      "3",
+      "8",
+      "30",
+      "14\nm",
+      "10000",
+      "3000",
+      "0.0"
+    ],
+    "quotes": [
+      "\nauthor : your-github-username\ndescription : Detection patterns for My Agent\npatterns :\nprocess :\n- pattern : ",
+      "\ntype : substring\ncase_sensitive : false\nfields : [file_path, image_name, command_line]\nfile_path :\n- pattern : "
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "There was an error while loading.",
+      "Please reload this page .",
+      "openafw ai-agent-discovery Public Notifications You must be signed in to change notification settings Fork Star main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 6 Commits 6 Commits ."
+    ],
+    "case_details": [
+      "You signed in with another tab or window. openafw / **ai-agent-discovery** Public. # openafw/ai-agent-discovery. # AI Agent Discovery. **An open-source enterprise tool by OpenGuardrails for discovering AI agents running within your organization.**. AI Agent Discovery integrates with your existing ED... / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=developer_ecosystem"
+    ],
+    "workflow_changes": [
+      "github/ workflows .",
+      "github/ workflows bin bin config config docs docs registry registry src src tests/ fixtures tests/ fixtures ."
+    ],
+    "before_after_clues": [
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "supporting_signal",
+    "importance_score": 2,
+    "importance_reason": "consumer entertainment or minor platform policy feature; AI-adjacent but not a core business signal",
+    "supporting_signals": [
+      "low_value_ai_adjacent_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 2,
+    "guanlan_relevance": 2,
+    "emerging_signal_score": 4
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": false,
+    "trend_candidate_context": false,
+    "signal_card_candidate": false,
+    "emerging_pool": true,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "emerging_pool",
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# GitHub - openafw/ai-agent-discovery: Detect OpenClaw AI agent installations across your organization via EDR telemetry. · GitHub\n\n- raw_id: R-057\n- title_zh: GitHub 仓库：openafw/ai-agent-discovery：通过 EDR 遥测检测组织中 OpenClaw AI 智能体安装。\n- title_translation_status: translated\n- title_translation_method: deepseek_title_translation\n- original_url: https://github.com/openafw/ai-agent-discovery\n- source_name: keyword search / Anysearch\n- collected_at: 2026-07-21T01:26:02.938Z\n\n## clean_text\n\nUh oh!\nThere was an error while loading. Please reload this page .\nopenafw\nai-agent-discovery\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n6 Commits\n6 Commits\n.github/ workflows\n.github/ workflows\nbin\nbin\nconfig\nconfig\ndocs\ndocs\nregistry\nregistry\nsrc\nsrc\ntests/ fixtures\ntests/ fixtures\n.gitignore\n.gitignore\nLICENSE\nLICENSE\nREADME.md\nREADME.md\npackage-lock.json\npackage-lock.json\npackage.json\npackage.json\ntsconfig.json\ntsconfig.json\nView all files\nRepository files navigation\nAI Agent Discovery\nAn open-source enterprise tool by OpenGuardrails for discovering AI agents running within your organization.\nAs AI agent adoption explodes across enterprises, security teams face a critical visibility gap. AI Agent Discovery integrates with your existing EDR infrastructure to identify and inventory all AI agents—from autonomous coding assistants to workflow automation platforms.\nWhy AI Agent Discovery?\nShadow AI Visibility : Discover AI tools employees are using without IT knowledge\nSecurity Posture : Understand your AI attack surface\nCompliance : Track AI usage for regulatory requirements\nCost Control : Identify redundant AI tool subscriptions\nFeatures\nFeature\nDescription\nAgent Taxonomy\n3-level classification: Kingdom → Family → Species\nMulti-EDR Support\nCrowdStrike Falcon, Microsoft Defender, or file import\nPattern Detection\nCommunity-maintained YAML signatures\nWeb Dashboard\nReal-time visualization and reporting\nEasy Deployment\nSingle command to get started\nQuick Start\n# Run directly with npx\nnpx ai-agent-discovery\n# Or install globally\nnpm install -g ai-agent-discovery\n# Initialize configuration\naad init\n# Run a scan\naad scan\n# Start the dashboard\naad dashboard\nSupported AI Agents\nAutonomous Agents\nAgent\nVariants\nOpenClaw\nopenclaw, nanoclaw, moltbot, clawdbot\nAutoGPT\nautogpt, agentgpt, babyagi\nDevin\ndevin, opendevin, swe-agent\nAssistant Agents\nAgent\nVariants\nClaude\nclaude-desktop, claude-code, cline\nChatGPT\nchatgpt-desktop, chatgpt-app\nCursor\ncursor\nCopilot\ncopilot, copilot-chat\nWorkflow Agents\nAgent\nVariants\nDify\ndify, dify-sandbox\nN8N\nn8n\nFlowise\nflowise, langflow\nCLI Commands\n# Core commands\naad init # Initialize configuration\naad scan # Run detection scan\naad dashboard # Start web dashboard\n# Scan options\naad scan --connector file # Use file connector\naad scan --lookback 30 # Look back 30 days\naad scan --output csv # Output as CSV\n# Taxonomy browsing\naad taxonomy list # List all known agents\naad taxonomy list --kingdom autonomous\naad taxonomy show claude # Show agent details\naad taxonomy tree # Show full taxonomy tree\n# Configuration\naad config get connector.type\naad config set connector.type crowdstrike\n# Validation\naad validate # Validate all registry files\naad test-signature ./my-sig.yaml # Test a signature\nConfiguration\nCreate config/config.yaml :\n# EDR Connector\nconnector :\ntype : crowdstrike # Options: crowdstrike, defender, file\ncrowdstrike :\nclient_id : ${CROWDSTRIKE_CLIENT_ID}\nclient_secret : ${CROWDSTRIKE_CLIENT_SECRET}\ndefender :\ntenant_id : ${AZURE_TENANT_ID}\nclient_id : ${AZURE_CLIENT_ID}\nclient_secret : ${AZURE_CLIENT_SECRET}\nfile :\npath : ./data/events.json\nformat : json # csv, json, ndjson\n# Scan settings\nscan :\nlookback_days : 14\nmax_events : 10000\n# Dashboard\ndashboard :\nport : 3000\nhost : 0.0.0.0\nHow It Works\n┌─────────────────┐ ┌─────────────────┐ ┌─────────────────┐\n│ EDR Platform │────▶│ Detection │────▶│ Dashboard │\n│ (CrowdStrike, │ │ Engine │ │ & Reports │\n│ Defender) │ │ │ │ │\n└─────────────────┘ └────────┬────────┘ └─────────────────┘\n┌────────▼────────┐\n│ Community │\n│ Signatures │\n│ (YAML) │\n└─────────────────┘\nConnect to your EDR platform with API credentials\nQuery process execution events using detection patterns\nMatch events against community-maintained signatures\nAggregate results by endpoint, user, and agent type\nVisualize in the dashboard or export reports\nContributing\nWe welcome contributions! The easiest way to contribute is by adding detection signatures for new AI agents.\nAdding a New Agent\nFork & clone the repository\nCreate signature file: registry/signatures/my-agent.yaml\nAdd to taxonomy: registry/taxonomy/<kingdom>/my-agent.yaml\nValidate: aad validate\nTest: aad test-signature registry/signatures/my-agent.yaml\nSubmit a pull request\nSee CONTRIBUTING.md for detailed instructions.\nSignature Format\nid : my-agent\nname : My Agent Signatures\nversion : \" 1.0.0 \"\nauthor : your-github-username\ndescription : Detection patterns for My Agent\npatterns :\nprocess :\n- pattern : \" myagent \"\ntype : substring\ncase_sensitive : false\nfields : [file_path, image_name, command_line]\nfile_path :\n- pattern : \" .myagent \"\ntype : substring\nexclusions :\nprocesses : [chrome, firefox]\npaths : [/tmp/]\nProject Structure\nai-agent-discovery/\n├── bin/aad.js # CLI entry point\n├── src/\n│ ├── cli.ts # CLI commands (Commander.js)\n│ ├── taxonomy/ # Agent classification system\n│ ├── detectors/ # Pattern matching engine\n│ ├── connectors/ # EDR connectors\n│ ├── dashboard/ # Express.js web UI\n│ ├── config/ # Configuration (Zod)\n│ └── utils/ # Logging, filters\n├── registry/ # Community-contributed\n│ ├── taxonomy/ # Agent taxonomy (YAML)\n│ ├── signatures/ # Detection patterns (YAML)\n│ └── connectors/ # EDR configs (YAML)\n├── docs/ # Documentation\n└── tests/ # Test fixtures\nRoadmap\nSentinelOne connector\nCarbon Black connector\nElastic Security connector\nRisk scoring and alerting\nSIEM integration (Splunk, Sentinel)\nAgent behavior analysis\nPolicy enforcement\nCommunity\nGitHub Issues : Report bugs or request features\nDiscussions : Join the conversation\nDiscord : OpenGuardrails Community\nTwitter/X : @OpenGuardrails\nLicense\nApache 2.0 - See LICENSE for details.\nBuilt with ❤️ by OpenGuardrails\nOpen-source security tools for the AI era\nAbout\nDetect OpenClaw AI agent installations across your organization via EDR telemetry.\nResources\nReadme\nLicense\nApache-2.0 license\nContributing\nContributing\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nCustom properties\nStars\nstars\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nRelease v1.0.1\nLatest\nMar 9, 2026\n+ 1 release\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nTypeScript\n72.8%\nJavaScript\n19.3%\nCSS\n5.0%\nHTML\n2.9%\n\n## full_text\n\nUh oh!\nThere was an error while loading. Please reload this page .\nopenafw\nai-agent-discovery\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n6 Commits\n6 Commits\n.github/ workflows\n.github/ workflows\nbin\nbin\nconfig\nconfig\ndocs\ndocs\nregistry\nregistry\nsrc\nsrc\ntests/ fixtures\ntests/ fixtures\n.gitignore\n.gitignore\nLICENSE\nLICENSE\nREADME.md\nREADME.md\npackage-lock.json\npackage-lock.json\npackage.json\npackage.json\ntsconfig.json\ntsconfig.json\nView all files\nRepository files navigation\nAI Agent Discovery\nAn open-source enterprise tool by OpenGuardrails for discovering AI agents running within your organization.\nAs AI agent adoption explodes across enterprises, security teams face a critical visibility gap. AI Agent Discovery integrates with your existing EDR infrastructure to identify and inventory all AI agents—from autonomous coding assistants to workflow automation platforms.\nWhy AI Agent Discovery?\nShadow AI Visibility : Discover AI tools employees are using without IT knowledge\nSecurity Posture : Understand your AI attack surface\nCompliance : Track AI usage for regulatory requirements\nCost Control : Identify redundant AI tool subscriptions\nFeatures\nFeature\nDescription\nAgent Taxonomy\n3-level classification: Kingdom → Family → Species\nMulti-EDR Support\nCrowdStrike Falcon, Microsoft Defender, or file import\nPattern Detection\nCommunity-maintained YAML signatures\nWeb Dashboard\nReal-time visualization and reporting\nEasy Deployment\nSingle command to get started\nQuick Start\n# Run directly with npx\nnpx ai-agent-discovery\n# Or install globally\nnpm install -g ai-agent-discovery\n# Initialize configuration\naad init\n# Run a scan\naad scan\n# Start the dashboard\naad dashboard\nSupported AI Agents\nAutonomous Agents\nAgent\nVariants\nOpenClaw\nopenclaw, nanoclaw, moltbot, clawdbot\nAutoGPT\nautogpt, agentgpt, babyagi\nDevin\ndevin, opendevin, swe-agent\nAssistant Agents\nAgent\nVariants\nClaude\nclaude-desktop, claude-code, cline\nChatGPT\nchatgpt-desktop, chatgpt-app\nCursor\ncursor\nCopilot\ncopilot, copilot-chat\nWorkflow Agents\nAgent\nVariants\nDify\ndify, dify-sandbox\nN8N\nn8n\nFlowise\nflowise, langflow\nCLI Commands\n# Core commands\naad init # Initialize configuration\naad scan # Run detection scan\naad dashboard # Start web dashboard\n# Scan options\naad scan --connector file # Use file connector\naad scan --lookback 30 # Look back 30 days\naad scan --output csv # Output as CSV\n# Taxonomy browsing\naad taxonomy list # List all known agents\naad taxonomy list --kingdom autonomous\naad taxonomy show claude # Show agent details\naad taxonomy tree # Show full taxonomy tree\n# Configuration\naad config get connector.type\naad config set connector.type crowdstrike\n# Validation\naad validate # Validate all registry files\naad test-signature ./my-sig.yaml # Test a signature\nConfiguration\nCreate config/config.yaml :\n# EDR Connector\nconnector :\ntype : crowdstrike # Options: crowdstrike, defender, file\ncrowdstrike :\nclient_id : ${CROWDSTRIKE_CLIENT_ID}\nclient_secret : ${CROWDSTRIKE_CLIENT_SECRET}\ndefender :\ntenant_id : ${AZURE_TENANT_ID}\nclient_id : ${AZURE_CLIENT_ID}\nclient_secret : ${AZURE_CLIENT_SECRET}\nfile :\npath : ./data/events.json\nformat : json # csv, json, ndjson\n# Scan settings\nscan :\nlookback_days : 14\nmax_events : 10000\n# Dashboard\ndashboard :\nport : 3000\nhost : 0.0.0.0\nHow It Works\n┌─────────────────┐ ┌─────────────────┐ ┌─────────────────┐\n│ EDR Platform │────▶│ Detection │────▶│ Dashboard │\n│ (CrowdStrike, │ │ Engine │ │ & Reports │\n│ Defender) │ │ │ │ │\n└─────────────────┘ └────────┬────────┘ └─────────────────┘\n┌────────▼────────┐\n│ Community │\n│ Signatures │\n│ (YAML) │\n└─────────────────┘\nConnect to your EDR platform with API credentials\nQuery process execution events using detection patterns\nMatch events against community-maintained signatures\nAggregate results by endpoint, user, and agent type\nVisualize in the dashboard or export reports\nContributing\nWe welcome contributions! The easiest way to contribute is by adding detection signatures for new AI agents.\nAdding a New Agent\nFork & clone the repository\nCreate signature file: registry/signatures/my-agent.yaml\nAdd to taxonomy: registry/taxonomy/<kingdom>/my-agent.yaml\nValidate: aad validate\nTest: aad test-signature registry/signatures/my-agent.yaml\nSubmit a pull request\nSee CONTRIBUTING.md for detailed instructions.\nSignature Format\nid : my-agent\nname : My Agent Signatures\nversion : \" 1.0.0 \"\nauthor : your-github-username\ndescription : Detection patterns for My Agent\npatterns :\nprocess :\n- pattern : \" myagent \"\ntype : substring\ncase_sensitive : false\nfields : [file_path, image_name, command_line]\nfile_path :\n- pattern : \" .myagent \"\ntype : substring\nexclusions :\nprocesses : [chrome, firefox]\npaths : [/tmp/]\nProject Structure\nai-agent-discovery/\n├── bin/aad.js # CLI entry point\n├── src/\n│ ├── cli.ts # CLI commands (Commander.js)\n│ ├── taxonomy/ # Agent classification system\n│ ├── detectors/ # Pattern matching engine\n│ ├── connectors/ # EDR connectors\n│ ├── dashboard/ # Express.js web UI\n│ ├── config/ # Configuration (Zod)\n│ └── utils/ # Logging, filters\n├── registry/ # Community-contributed\n│ ├── taxonomy/ # Agent taxonomy (YAML)\n│ ├── signatures/ # Detection patterns (YAML)\n│ └── connectors/ # EDR configs (YAML)\n├── docs/ # Documentation\n└── tests/ # Test fixtures\nRoadmap\nSentinelOne connector\nCarbon Black connector\nElastic Security connector\nRisk scoring and alerting\nSIEM integration (Splunk, Sentinel)\nAgent behavior analysis\nPolicy enforcement\nCommunity\nGitHub Issues : Report bugs or request features\nDiscussions : Join the conversation\nDiscord : OpenGuardrails Community\nTwitter/X : @OpenGuardrails\nLicense\nApache 2.0 - See LICENSE for details.\nBuilt with ❤️ by OpenGuardrails\nOpen-source security tools for the AI era\nAbout\nDetect OpenClaw AI agent installations across your organization via EDR telemetry.\nResources\nReadme\nLicense\nApache-2.0 license\nContributing\nContributing\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nCustom properties\nStars\nstars\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nRelease v1.0.1\nLatest\nMar 9, 2026\n+ 1 release\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nTypeScript\n72.8%\nJavaScript\n19.3%\nCSS\n5.0%\nHTML\n2.9%\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 91\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [case_detail / signal_card_candidate, relationship_graph_input, case / high] You signed in with another tab or window. openafw / **ai-agent-discovery** Public. # openafw/ai-agent-discovery. # AI Agent Discovery. **An open-source enterprise tool by OpenGuardrails for discovering AI agents running within your organization.**. AI Agent Discovery integrates with your existing ED... / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=developer_ecosystem\n2. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] There was an error while loading.\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Please reload this page .\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] openafw ai-agent-discovery Public Notifications You must be signed in to change notification settings Fork Star main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 6 Commits 6 Commits .\n5. [workflow_change / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] github/ workflows .\n6. [workflow_change / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] github/ workflows bin bin config config docs docs registry registry src src tests/ fixtures tests/ fixtures .\n"
+}

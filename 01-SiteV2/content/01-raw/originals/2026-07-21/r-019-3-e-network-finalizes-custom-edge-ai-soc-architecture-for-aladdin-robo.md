@@ -1,0 +1,306 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-019
+title: "3 E Network Finalizes Custom Edge AI SoC Architecture for Aladdin Robots, Delivering a Core Computing Foundation to Accelerate Commercialization"
+title_zh: "3 E Network 为阿拉丁机器人完成定制边缘AI SoC架构，提供核心计算基础以加速商业化"
+title_translation_status: translated
+title_translation_method: deepseek_title_translation
+title_translation_model: deepseek-v4-flash
+original_url: "https://www.globenewswire.com/news-release/2026/07/20/3329647/0/en/3-E-Network-Finalizes-Custom-Edge-AI-SoC-Architecture-for-Aladdin-Robots-Delivering-a-Core-Computing-Foundation-to-Accelerate-Commercialization.html"
+canonical_url: "https://globenewswire.com/news-release/2026/07/20/3329647/0/en/3-E-Network-Finalizes-Custom-Edge-AI-SoC-Architecture-for-Aladdin-Robots-Delivering-a-Core-Computing-Foundation-to-Accelerate-Commercialization.html"
+source_name: "keyword search / Anysearch"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_customer_case"
+search_path: "ai_hardware_original"
+search_path_label: "AI hardware original-source path"
+author: ""
+published_at: "2026-07-20T00:00:00.000Z"
+collected_at: 2026-07-21T01:25:39.662Z
+language: mixed
+full_text_hash: c09782c3cd106168
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-21/r-019-3-e-network-finalizes-custom-edge-ai-soc-architecture-for-aladdin-robo.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-21/r-019-3-e-network-finalizes-custom-edge-ai-soc-architecture-for-aladdin-robo.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":11415,"paragraph_count":41,"sentence_count":50,"boilerplate_hits":0,"symbol_ratio":0.0001,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 11415
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"c09782c3cd106168","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 6704ca1f32ff2c49
+content_hash: c09782c3cd106168
+semantic_hash: ad6abcceaaa77903
+duplicate_of: ""
+first_seen_at: "2026-07-20T00:00:00.000Z"
+last_seen_at: 2026-07-21T01:25:39.662Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":true,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":5,"importance_reason":"AI hardware scenario or service deployment; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","ai_hardware_lens","commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["keyword search","Anysearch","Nvidia"],"products":[],"people":[],"industries":["法律 / 法务","金融 / 保险","医疗","制造 / 工业","企业服务"],"roles":["CIO / IT 负责人"],"workflows":["合同审阅 / 法律研究","权限 / 安全治理","部署 / 集成交付"],"business_actions":["发布 / 推出","部署 / 上线"],"affected_departments":["IT / 安全","法务"],"numbers":["3","20","2026","07","50","2B","1996","24"],"quotes":["3 E Network","Aladdin Alaris AI","safety fences","local closed-loop","scenario-defined"]}
+evidence_seed: {"company_actions":["Following the strategic framework agreement entered into with California-based advanced robotics enterprise Aladdin Alaris AI Inc.","They may operate without the protective barriers commonly used in industrial settings and must navigate dynamic, highly unstructured real-world home environments to engage in frequent, direct physical contact with humans, particularly older adults who may require additional care."],"case_details":["3 E Network Finalizes Custom Edge AI SoC Architecture for # 3 E Network Finalizes Custom Edge AI SoC Architecture for Aladdin Robots, Delivering a Core Computing Foundation to Accelerate Commercialization July 20, 2026 07:50 ET | Source: 3E Network Technology Group Limited Follow 3E Network Techno..... / query=edge AI device customer deployment manufacturing / intent=find_customer_case / path=ai_hardware_original"],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":[]}
+missing_information: []
+key_excerpts: [{"type":"case_detail","text":"3 E Network Finalizes Custom Edge AI SoC Architecture for # 3 E Network Finalizes Custom Edge AI SoC Architecture for Aladdin Robots, Delivering a Core Computing Foundation to Accelerate Commercialization July 20, 2026 07:50 ET | Source: 3E Network Technology Group Limited Follow 3E Network Techno..... / query=edge AI device customer deployment manufacturing / intent=find_customer_case / path=ai_hardware_original","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"quote","text":"Accessibility: Skip TopNav 3 E Network Finalizes Custom Edge AI SoC Architecture for Aladdin Robots, Delivering a Core Computing Foundation to Accelerate Commercialization July 20, 2026 07:50 ET | Source: 3E Network Technology Group Limited 3E Network Technology Group Limited HONG KONG, July 20, 2026 (GLOBE NEWSWIRE) -- 3 E Network Technology Group Limited (Nasdaq: MASK) (the “Company” or “3 E Network”), a business-to-business (“B2B”) information technology (“IT”) business solutions provider, committed to becoming ","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Following the strategic framework agreement entered into with California-based advanced robotics enterprise Aladdin Alaris AI Inc.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"quote","text":"(“Aladdin Alaris AI”), the Company announced that it has completed key architectural design work and edge computing deployment planning for its custom Edge AI System-on-Chip (“SoC”), which is being designed for next-generation smart healthcare and eldercare robots.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"high"},{"type":"quote","text":"Core Computational Challenges and Compliance Barriers of Eldercare Robots Compared to traditional industrial robotic arms physically isolated by “safety fences” in structured factories, the computational challenges facing smart eldercare robots represent a significant increase in complexity.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"high"},{"type":"company_action","text":"They may operate without the protective barriers commonly used in industrial settings and must navigate dynamic, highly unstructured real-world home environments to engage in frequent, direct physical contact with humans, particularly older adults who may require additional care.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-21T01:25:39.662Z
+theme: ai-hardware-scenario-service-signal
+keyword_group: ai-hardware-scenario-service-signal
+copyright_note: local research archive only
+---
+
+# 3 E Network Finalizes Custom Edge AI SoC Architecture for Aladdin Robots, Delivering a Core Computing Foundation to Accelerate Commercialization
+
+## clean_text
+
+Accessibility: Skip TopNav
+3 E Network Finalizes Custom Edge AI SoC Architecture for Aladdin Robots, Delivering a Core Computing Foundation to Accelerate Commercialization
+July 20, 2026 07:50 ET
+| Source:
+3E Network Technology Group Limited
+3E Network Technology Group Limited
+HONG KONG, July 20, 2026 (GLOBE NEWSWIRE) -- 3 E Network Technology Group Limited (Nasdaq: MASK) (the “Company” or “3 E Network”), a business-to-business (“B2B”) information technology (“IT”) business solutions provider, committed to becoming a next-generation artificial intelligence (“AI”) infrastructure solutions provider, today announced a new development in its semiconductor business segment. Following the strategic framework agreement entered into with California-based advanced robotics enterprise Aladdin Alaris AI Inc. (“Aladdin Alaris AI”), the Company announced that it has completed key architectural design work and edge computing deployment planning for its custom Edge AI System-on-Chip (“SoC”), which is being designed for next-generation smart healthcare and eldercare robots.
+Core Computational Challenges and Compliance Barriers of Eldercare Robots
+Compared to traditional industrial robotic arms physically isolated by “safety fences” in structured factories, the computational challenges facing smart eldercare robots represent a significant increase in complexity. They may operate without the protective barriers commonly used in industrial settings and must navigate dynamic, highly unstructured real-world home environments to engage in frequent, direct physical contact with humans, particularly older adults who may require additional care. This shift from isolated environments to high-frequency physical human-robot interaction imposes three strict technical requirements on the underlying compute power:
+High Real-Time Responsiveness and Physical Safety: When facing sudden emergencies like an elderly person falling, or when making physical contact to assist with standing, the robot must process massive amounts of multi-modal sensor data concurrently with ultra-low latency. Even hundreds of milliseconds of cloud network latency could result in serious safety hazards.
+Strict Compliance Requirements for Medical Privacy: To address applicable medical privacy requirements, including those that may arise under the U.S. Health Insurance Portability and Accountability Act of 1996 (“HIPAA”), high-definition video, audio footage, and vital sign data captured continuously in the home may require appropriate safeguards before being transmitted to or processed in the cloud. This mandates that the robot possess exceptionally robust “local closed-loop” computing capabilities.
+Network Blind Spots and Offline Reliability: Network blind spots and signal fluctuations frequently occur in complex and dynamic home environments. However, life-saving protection and natural emotional companionship cannot be contingent upon uninterrupted internet connectivity. In the event of a network outage, eldercare robots must possess a robust local computing foundation capable of independently executing advanced cognitive and caregiving strategies.
+Faced with these complex, unstructured operating conditions, traditional merchant silicon prioritizing generalized benchmark metrics often falls short due to architectural limitations, suffering from latency, power, and bandwidth bottlenecks. This mismatch in underlying compute has contributed to the shift from general-purpose silicon to “scenario-defined” semiconductor design.
+Five Core Architectural Features of the Custom Edge AI SoC
+Consequently, 3 E Network’s custom-developed Edge AI SoC is focused on the optimization of edge inference capabilities. Utilizing a “hardware-software co-design” strategy, the chip architecture prioritizes low latency and energy efficiency for specific physical interactions, systematically addressing the underlying computing challenges of eldercare scenarios:
+Millisecond-Level Multi-Modal Heterogeneous Fusion Perception: The custom chip utilizes a highly optimized heterogeneous computing architecture. By integrating hardware acceleration engines designed specifically for complex physical interactions, the chip enables the parallel scheduling of high-frame-rate depth vision (RGB-D), millimeter-wave spatial radar, and compliant tactile array data directly at the silicon level. This empowers the robot to complete 3D spatial modeling and dynamic obstacle avoidance with millisecond-level latency, even in offline conditions.
+Hardware-Level Trusted Execution Environment (“TEE”) and Privacy Isolation: Addressing strict privacy compliance requirements, the chip establishes a secure TEE at the hardware level. The architecture is designed to enable home visual footage, voice commands and vital sign data to be de-identified and processed for feature extraction within this encrypted hardware sandbox. This ensures that core data is processed strictly on-device, helping reduce privacy and compliance risks associated with cloud data transmission.
+Localized Quantized Large Model LLM/VLM Inference Engine: This design strategy is consistent with the broader industry trend toward on-device processing and privacy-preserving computing. The chip’s architecture is specifically optimized for large models. Leveraging exceptional tensor compute-to-power efficiency, robots can smoothly execute quantized local Large Language Models and Vision-Language Models at the edge, enabling natural semantic understanding, emotion recognition, and daily companion conversations.
+Ultra-Low Latency Tactile Feedback and Human-Like Compliant Control: Targeting the core safety challenge of physical human-robot contact, the Edge AI SoC reserves a dedicated ultra-low-latency control data path specifically for processing fine-grained feedback from highly sensitive compliant tactile and torque sensors in real time. The underlying compute can drive robotic arms at kilohertz refresh rates to achieve highly compliant, “human-like” force control, significantly minimizing safety risks caused by rigid mechanical collisions.
+Milliwatt-Level “Always-On” Dynamic Power Architecture: Eldercare robots require 24/7 continuous monitoring. The chip introduces an advanced dynamic power management mechanism. In routine standby mode, it operates at a power level of only a few milliwatts to maintain specific wake-word listening and critical event detection, such as fall detection. Once a threshold is triggered, the chip can rapidly activate the system’s full computing capacity, providing round-the-clock safety redundancy.
+Practicing “Scenario-Defined Silicon” to Build a Differentiated Technology Platform
+Unlike traditional general-purpose silicon that attempts a “one-size-fits-all” design approach, 3 E Network’s Edge AI SoC profoundly practices the commercial philosophy of “Scenario-Defined Silicon.” Through deep co-design with Aladdin Alaris AI during the early architectural stages, the chip’s underlying hardware architecture and real-time control algorithms have been deeply customized and optimized for complex physical interaction norms. Aligning with the specialized computing trend highlighted by industry-leading platforms like NVIDIA’s Jetson Thor, 3 E Network is actively building its technological moat through this highly vertical custom SoC, accelerating the time-to-market for mass production.
+Dr. Tingjun Yang, Chief Executive Officer of 3 E Network, stated: “In the era of Embodied AI, the core technological barrier lies in the capability of real-time physical interaction at the edge. The Edge AI SoC we are custom-building for Aladdin’s eldercare robots aims to provide robust edge computing and responsiveness for the robots. By empowering robots with outstanding local multi-modal perception and a high degree of data security, we are translating silicon-level compute power into the foundation of smart caregiving that tangibly benefits the aging population. This marks an important step in the development and potential commercialization of 3 E Network’s semiconductor business.”
+This development reflects the Company’s efforts to translate its semiconductor expertise into custom silicon solutions for embodied AI applications. As the R&D process for this customized Edge AI SoC steadily advances, the Company is actively driving towards tape-out and subsequent validation milestones, continuing to consolidate its competitive advantage in the underlying compute market for global service robots.
+About 3 E Network Technology Group Limited
+3 E Network Technology Group Limited is a business-to-business (“B2B”) information technology (“IT”) business solutions provider committed to becoming a next-generation artificial intelligence (“AI”) infrastructure solutions provider. It upholds the industry consensus of “AI and energy symbiosis” and has a strong vision in the field of energy investment. The Company’s business comprises two main portfolios: the data center operation services portfolio and the software development portfolio. For more information, please visit the Company’s website at https://3emask.com/ .
+Forward-Looking Statements
+Certain statements in this announcement are forward-looking statements. These forward-looking statements involve known and unknown risks and uncertainties and are based on the Company’s current expectations and projections about future events that the Company believes may affect its financial condition, results of operations, business strategy, and financial needs. Investors can identify these forward-looking statements by words or phrases such as “approximates,” “assesses,” “believes,” “hopes,” “expects,” “anticipates,” “estimates,” “projects,” “intends,” “plans,” “will,” “would,” “should,” “could,” “may” or similar expressions. The Company undertakes no obligation to update or revise publicly any forward-looking statements to reflect subsequent events or circumstances, or changes in its expectations, except as may be required by law. Although the Company believes that the expectations expressed in these forward-looking statements are reasonable, it cannot assure you that such expectations will turn out to be correct, and the Company cautions investors that actual results may differ materially from the anticipated results and encourages investors to review other factors that may affect the Company’s future results in the Company’s registration statement and other filings with the U.S. Securities and Exchange Commission.
+For more information, please contact:
+3 E Network Technology Group Limited
+Investor Relations Department
+Email: ird@3emask.com
+Website: https://3emask.com/
+Tags
+3E Network
+custom Edge AI SoC
+Aladdin eldercare robots
+edge perception
+TEE privacy
+local LLM
+low latency
+offline embodied AI
+GlobeNewswire
+Recommended Reading
+June 23, 2026 16:10 ET
+Source: 3E Network Technology Group Limited
+3 E Network Technology Group Limited Announces Initial Closing of US$2 Million Convertible Promissory Note Offering
+MASK closed initial $2M convertible note private placement with warrant; proceeds subject to SEC resale registration
+Read More
+June 12, 2026 07:50 ET
+Source: 3E Network Technology Group Limited
+3 E Network CEO Outlines Strategic Vision for Robotics, Highlighting Silicon Innovation and Edge AI
+3 E Network CEO outlines robotics vision: Silicon Innovation, Edge AI, Embodied AI via hardware-software co-design.
+Read More
+
+## full_text
+
+Accessibility: Skip TopNav
+3 E Network Finalizes Custom Edge AI SoC Architecture for Aladdin Robots, Delivering a Core Computing Foundation to Accelerate Commercialization
+July 20, 2026 07:50 ET
+| Source:
+3E Network Technology Group Limited
+3E Network Technology Group Limited
+HONG KONG, July 20, 2026 (GLOBE NEWSWIRE) -- 3 E Network Technology Group Limited (Nasdaq: MASK) (the “Company” or “3 E Network”), a business-to-business (“B2B”) information technology (“IT”) business solutions provider, committed to becoming a next-generation artificial intelligence (“AI”) infrastructure solutions provider, today announced a new development in its semiconductor business segment. Following the strategic framework agreement entered into with California-based advanced robotics enterprise Aladdin Alaris AI Inc. (“Aladdin Alaris AI”), the Company announced that it has completed key architectural design work and edge computing deployment planning for its custom Edge AI System-on-Chip (“SoC”), which is being designed for next-generation smart healthcare and eldercare robots.
+Core Computational Challenges and Compliance Barriers of Eldercare Robots
+Compared to traditional industrial robotic arms physically isolated by “safety fences” in structured factories, the computational challenges facing smart eldercare robots represent a significant increase in complexity. They may operate without the protective barriers commonly used in industrial settings and must navigate dynamic, highly unstructured real-world home environments to engage in frequent, direct physical contact with humans, particularly older adults who may require additional care. This shift from isolated environments to high-frequency physical human-robot interaction imposes three strict technical requirements on the underlying compute power:
+High Real-Time Responsiveness and Physical Safety: When facing sudden emergencies like an elderly person falling, or when making physical contact to assist with standing, the robot must process massive amounts of multi-modal sensor data concurrently with ultra-low latency. Even hundreds of milliseconds of cloud network latency could result in serious safety hazards.
+Strict Compliance Requirements for Medical Privacy: To address applicable medical privacy requirements, including those that may arise under the U.S. Health Insurance Portability and Accountability Act of 1996 (“HIPAA”), high-definition video, audio footage, and vital sign data captured continuously in the home may require appropriate safeguards before being transmitted to or processed in the cloud. This mandates that the robot possess exceptionally robust “local closed-loop” computing capabilities.
+Network Blind Spots and Offline Reliability: Network blind spots and signal fluctuations frequently occur in complex and dynamic home environments. However, life-saving protection and natural emotional companionship cannot be contingent upon uninterrupted internet connectivity. In the event of a network outage, eldercare robots must possess a robust local computing foundation capable of independently executing advanced cognitive and caregiving strategies.
+Faced with these complex, unstructured operating conditions, traditional merchant silicon prioritizing generalized benchmark metrics often falls short due to architectural limitations, suffering from latency, power, and bandwidth bottlenecks. This mismatch in underlying compute has contributed to the shift from general-purpose silicon to “scenario-defined” semiconductor design.
+Five Core Architectural Features of the Custom Edge AI SoC
+Consequently, 3 E Network’s custom-developed Edge AI SoC is focused on the optimization of edge inference capabilities. Utilizing a “hardware-software co-design” strategy, the chip architecture prioritizes low latency and energy efficiency for specific physical interactions, systematically addressing the underlying computing challenges of eldercare scenarios:
+Millisecond-Level Multi-Modal Heterogeneous Fusion Perception: The custom chip utilizes a highly optimized heterogeneous computing architecture. By integrating hardware acceleration engines designed specifically for complex physical interactions, the chip enables the parallel scheduling of high-frame-rate depth vision (RGB-D), millimeter-wave spatial radar, and compliant tactile array data directly at the silicon level. This empowers the robot to complete 3D spatial modeling and dynamic obstacle avoidance with millisecond-level latency, even in offline conditions.
+Hardware-Level Trusted Execution Environment (“TEE”) and Privacy Isolation: Addressing strict privacy compliance requirements, the chip establishes a secure TEE at the hardware level. The architecture is designed to enable home visual footage, voice commands and vital sign data to be de-identified and processed for feature extraction within this encrypted hardware sandbox. This ensures that core data is processed strictly on-device, helping reduce privacy and compliance risks associated with cloud data transmission.
+Localized Quantized Large Model LLM/VLM Inference Engine: This design strategy is consistent with the broader industry trend toward on-device processing and privacy-preserving computing. The chip’s architecture is specifically optimized for large models. Leveraging exceptional tensor compute-to-power efficiency, robots can smoothly execute quantized local Large Language Models and Vision-Language Models at the edge, enabling natural semantic understanding, emotion recognition, and daily companion conversations.
+Ultra-Low Latency Tactile Feedback and Human-Like Compliant Control: Targeting the core safety challenge of physical human-robot contact, the Edge AI SoC reserves a dedicated ultra-low-latency control data path specifically for processing fine-grained feedback from highly sensitive compliant tactile and torque sensors in real time. The underlying compute can drive robotic arms at kilohertz refresh rates to achieve highly compliant, “human-like” force control, significantly minimizing safety risks caused by rigid mechanical collisions.
+Milliwatt-Level “Always-On” Dynamic Power Architecture: Eldercare robots require 24/7 continuous monitoring. The chip introduces an advanced dynamic power management mechanism. In routine standby mode, it operates at a power level of only a few milliwatts to maintain specific wake-word listening and critical event detection, such as fall detection. Once a threshold is triggered, the chip can rapidly activate the system’s full computing capacity, providing round-the-clock safety redundancy.
+Practicing “Scenario-Defined Silicon” to Build a Differentiated Technology Platform
+Unlike traditional general-purpose silicon that attempts a “one-size-fits-all” design approach, 3 E Network’s Edge AI SoC profoundly practices the commercial philosophy of “Scenario-Defined Silicon.” Through deep co-design with Aladdin Alaris AI during the early architectural stages, the chip’s underlying hardware architecture and real-time control algorithms have been deeply customized and optimized for complex physical interaction norms. Aligning with the specialized computing trend highlighted by industry-leading platforms like NVIDIA’s Jetson Thor, 3 E Network is actively building its technological moat through this highly vertical custom SoC, accelerating the time-to-market for mass production.
+Dr. Tingjun Yang, Chief Executive Officer of 3 E Network, stated: “In the era of Embodied AI, the core technological barrier lies in the capability of real-time physical interaction at the edge. The Edge AI SoC we are custom-building for Aladdin’s eldercare robots aims to provide robust edge computing and responsiveness for the robots. By empowering robots with outstanding local multi-modal perception and a high degree of data security, we are translating silicon-level compute power into the foundation of smart caregiving that tangibly benefits the aging population. This marks an important step in the development and potential commercialization of 3 E Network’s semiconductor business.”
+This development reflects the Company’s efforts to translate its semiconductor expertise into custom silicon solutions for embodied AI applications. As the R&D process for this customized Edge AI SoC steadily advances, the Company is actively driving towards tape-out and subsequent validation milestones, continuing to consolidate its competitive advantage in the underlying compute market for global service robots.
+About 3 E Network Technology Group Limited
+3 E Network Technology Group Limited is a business-to-business (“B2B”) information technology (“IT”) business solutions provider committed to becoming a next-generation artificial intelligence (“AI”) infrastructure solutions provider. It upholds the industry consensus of “AI and energy symbiosis” and has a strong vision in the field of energy investment. The Company’s business comprises two main portfolios: the data center operation services portfolio and the software development portfolio. For more information, please visit the Company’s website at https://3emask.com/ .
+Forward-Looking Statements
+Certain statements in this announcement are forward-looking statements. These forward-looking statements involve known and unknown risks and uncertainties and are based on the Company’s current expectations and projections about future events that the Company believes may affect its financial condition, results of operations, business strategy, and financial needs. Investors can identify these forward-looking statements by words or phrases such as “approximates,” “assesses,” “believes,” “hopes,” “expects,” “anticipates,” “estimates,” “projects,” “intends,” “plans,” “will,” “would,” “should,” “could,” “may” or similar expressions. The Company undertakes no obligation to update or revise publicly any forward-looking statements to reflect subsequent events or circumstances, or changes in its expectations, except as may be required by law. Although the Company believes that the expectations expressed in these forward-looking statements are reasonable, it cannot assure you that such expectations will turn out to be correct, and the Company cautions investors that actual results may differ materially from the anticipated results and encourages investors to review other factors that may affect the Company’s future results in the Company’s registration statement and other filings with the U.S. Securities and Exchange Commission.
+For more information, please contact:
+3 E Network Technology Group Limited
+Investor Relations Department
+Email: ird@3emask.com
+Website: https://3emask.com/
+Tags
+3E Network
+custom Edge AI SoC
+Aladdin eldercare robots
+edge perception
+TEE privacy
+local LLM
+low latency
+offline embodied AI
+GlobeNewswire
+Recommended Reading
+June 23, 2026 16:10 ET
+Source: 3E Network Technology Group Limited
+3 E Network Technology Group Limited Announces Initial Closing of US$2 Million Convertible Promissory Note Offering
+MASK closed initial $2M convertible note private placement with warrant; proceeds subject to SEC resale registration
+Read More
+June 12, 2026 07:50 ET
+Source: 3E Network Technology Group Limited
+3 E Network CEO Outlines Strategic Vision for Robotics, Highlighting Silicon Innovation and Edge AI
+3 E Network CEO outlines robotics vision: Silicon Innovation, Edge AI, Embodied AI via hardware-software co-design.
+Read More
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 97
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":11415,"paragraph_count":41,"sentence_count":50,"boilerplate_hits":0,"symbol_ratio":0.0001,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=high
+   3 E Network Finalizes Custom Edge AI SoC Architecture for # 3 E Network Finalizes Custom Edge AI SoC Architecture for Aladdin Robots, Delivering a Core Computing Foundation to Accelerate Commercialization July 20, 2026 07:50 ET | Source: 3E Network Technology Group Limited Follow 3E Network Techno..... / query=edge AI device customer deployment manufacturing / intent=find_customer_case / path=ai_hardware_original
+
+2. **quote**｜supports=signal_card_candidate, relationship_graph_input, viewpoint｜importance=high｜confidence=high
+   Accessibility: Skip TopNav 3 E Network Finalizes Custom Edge AI SoC Architecture for Aladdin Robots, Delivering a Core Computing Foundation to Accelerate Commercialization July 20, 2026 07:50 ET | Source: 3E Network Technology Group Limited 3E Network Technology Group Limited HONG KONG, July 20, 2026 (GLOBE NEWSWIRE) -- 3 E Network Technology Group Limited (Nasdaq: MASK) (the “Company” or “3 E Network”), a business-to-business (“B2B”) information technology (“IT”) business solutions provider, committed to becoming 
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Following the strategic framework agreement entered into with California-based advanced robotics enterprise Aladdin Alaris AI Inc.
+
+4. **quote**｜supports=signal_card_candidate, relationship_graph_input, viewpoint｜importance=high｜confidence=high
+   (“Aladdin Alaris AI”), the Company announced that it has completed key architectural design work and edge computing deployment planning for its custom Edge AI System-on-Chip (“SoC”), which is being designed for next-generation smart healthcare and eldercare robots.
+
+5. **quote**｜supports=signal_card_candidate, relationship_graph_input, viewpoint｜importance=high｜confidence=high
+   Core Computational Challenges and Compliance Barriers of Eldercare Robots Compared to traditional industrial robotic arms physically isolated by “safety fences” in structured factories, the computational challenges facing smart eldercare robots represent a significant increase in complexity.
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   They may operate without the protective barriers commonly used in industrial settings and must navigate dynamic, highly unstructured real-world home environments to engage in frequent, direct physical contact with humans, particularly older adults who may require additional care.
+
+## business_elements
+
+- companies: keyword search, Anysearch, Nvidia
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 法律 / 法务, 金融 / 保险, 医疗, 制造 / 工业, 企业服务
+- roles: CIO / IT 负责人
+- workflows: 合同审阅 / 法律研究, 权限 / 安全治理, 部署 / 集成交付
+- business_actions: 发布 / 推出, 部署 / 上线
+- affected_departments: IT / 安全, 法务
+- numbers: 3, 20, 2026, 07, 50, 2B, 1996, 24
+- quotes: 3 E Network / Aladdin Alaris AI / safety fences / local closed-loop / scenario-defined
+
+## evidence_seed
+
+- company_actions: Following the strategic framework agreement entered into with California-based advanced robotics enterprise Aladdin Alaris AI Inc. / They may operate without the protective barriers commonly used in industrial settings and must navigate dynamic, highly unstructured real-world home environments to engage in frequent, direct physical contact with humans, particularly older adults who may require additional care.
+- case_details: 3 E Network Finalizes Custom Edge AI SoC Architecture for # 3 E Network Finalizes Custom Edge AI SoC Architecture for Aladdin Robots, Delivering a Core Computing Foundation to Accelerate Commercialization July 20, 2026 07:50 ET | Source: 3E Network Technology Group Limited Follow 3E Network Techno..... / query=edge AI device customer deployment manufacturing / intent=find_customer_case / path=ai_hardware_original
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_vertical_solution
+- importance_score: 5
+- importance_reason: AI hardware scenario or service deployment; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,ai_hardware_lens,commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: true
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- none
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+3 E Network Finalizes Custom Edge AI SoC Architecture for # 3 E Network Finalizes Custom Edge AI SoC Architecture for Aladdin Robots, Delivering a Core Computing Foundation to Accelerate Commercialization July 20, 2026 07:50 ET | Source: 3E Network Technology Group Limited Follow 3E Network Techno..... / query=edge AI device customer deployment manufacturing / intent=find_customer_case / path=ai_hardware_original
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

@@ -1,0 +1,311 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-087
+title: "DA: Cop covered bodycam to snap nude prisoners on his iPhone—but other cams caught him"
+title_zh: "DA：警察用随身摄像头拍摄裸体囚犯至iPhone——但其他摄像头拍下了他"
+title_translation_status: translated
+title_translation_method: deepseek_title_translation
+title_translation_model: deepseek-v4-flash
+original_url: "https://arstechnica.com/tech-policy/2026/07/cop-charged-with-covering-bodycam-to-photograph-naked-prisoners/"
+canonical_url: "https://arstechnica.com/tech-policy/2026/07/cop-charged-with-covering-bodycam-to-photograph-naked-prisoners"
+source_name: "Ars Technica AI"
+source_type: media
+source_level: A
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: supporting_article
+evidence_object_usable: false
+event_evidence: false
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: rss-feed
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-03-31T00:00:00.000Z"
+collected_at: 2026-07-21T01:26:13.917Z
+language: mixed
+full_text_hash: 6a6da2afdd819824
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-21/r-087-da-cop-covered-bodycam-to-snap-nude-prisoners-on-his-iphone-but-other-.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-21/r-087-da-cop-covered-bodycam-to-snap-nude-prisoners-on-his-iphone-but-other-.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 91
+extractor_diagnostics: {"readability_score":91,"text_length":5772,"paragraph_count":23,"sentence_count":41,"boilerplate_hits":2,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 5772
+fetch_error: ""
+evidence_strength: source_backed_event
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["insufficient_usable_evidence_object"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"6a6da2afdd819824","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: supporting_evidence
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 078f41c59577fe15
+content_hash: 6a6da2afdd819824
+semantic_hash: faa6f0cbe8065292
+duplicate_of: ""
+first_seen_at: "2026-03-31T00:00:00.000Z"
+last_seen_at: 2026-07-21T01:26:13.917Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":false,"case":false,"business_change":false,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["index_only"]
+change_action_detected: false
+evidence_eligibility: blocked
+evidence_block_reason: "not_event_case_or_trend_evidence"
+guanlan_scores: {"importance_type":"supporting_signal","importance_score":2,"importance_reason":"consumer entertainment or minor platform policy feature; AI-adjacent but not a core business signal","supporting_signals":["low_value_ai_adjacent_context"],"novelty":2,"evidence_strength":4,"case_richness":4,"trend_relevance":2,"guanlan_relevance":2,"emerging_signal_score":4}
+business_elements: {"companies":["Ars Technica AI"],"products":[],"people":[],"industries":["法律 / 法务","医疗","开发者工具"],"roles":["法务 / 律师"],"workflows":[],"business_actions":["发布 / 推出"],"affected_departments":["IT / 安全","法务"],"numbers":["31","2026","30","2024","15","22","18","7"],"quotes":["several female civilian employees inside the Sheriff’s Office.","in jest.","subject’s naked buttocks while in custody.","observed manipulating the cell phone in his right hand","the camera application open,"]}
+evidence_seed: {"company_actions":["Pennsylvania cop charged with oppression and obstruction.","Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav On March 31, 2026, a rather odd complaint arrived at the Bucks County, Pennsylvania District Attorney’s Office.","It came from the local sheriff’s office, and it concerned one of their own, Deputy Sheriff Ryan Gaffney."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["法务 / 律师"],"risks_or_constraints":[]}
+missing_information: ["证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象","没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势","没有具体客户或真实企业案例","没有变化前后流程线索"]
+key_excerpts: [{"type":"company_action","text":"Pennsylvania cop charged with oppression and obstruction.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav On March 31, 2026, a rather odd complaint arrived at the Bucks County, Pennsylvania District Attorney’s Office.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"It came from the local sheriff’s office, and it concerned one of their own, Deputy Sheriff Ryan Gaffney.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"The allegation was unusual: Gaffney had used his iPhone to snap photos of nude prisoners he had encountered in his job—and he had then shared those photos with “several female civilian employees inside the Sheriff’s Office.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"” The main claim involved a local man suffering a mental health crisis on the morning of January 30, 2026.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Five fully uniformed deputies had arrived at the house and were in the upstairs bedroom.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-21T01:26:13.917Z
+theme: uncategorized
+keyword_group: uncategorized
+copyright_note: local research archive only
+---
+
+# DA: Cop covered bodycam to snap nude prisoners on his iPhone—but other cams caught him
+
+## clean_text
+
+Skip to content
+Text
+settings
+Story text
+Size
+Small
+Standard
+Large
+Width
+Standard
+Wide
+Links
+Standard
+Orange
+* Subscribers only
+Learn more
+Minimize to nav
+On March 31, 2026, a rather odd complaint arrived at the Bucks County, Pennsylvania District Attorney’s Office.
+It came from the local sheriff’s office, and it concerned one of their own, Deputy Sheriff Ryan Gaffney. The allegation was unusual: Gaffney had used his iPhone to snap photos of nude prisoners he had encountered in his job—and he had then shared those photos with “several female civilian employees inside the Sheriff’s Office.”
+The main claim involved a local man suffering a mental health crisis on the morning of January 30, 2026. Five fully uniformed deputies had arrived at the house and were in the upstairs bedroom. Their detainee was naked from the waist down and had just been persuaded to put on some pants.
+At some point in this process, Gaffney was believed to have obtained a photo of the man’s genitalia, because after the arrest and booking, another deputy admitted that he had seen Gaffney showing the photo on his phone to a female civilian employee “in jest.” This same witness said that Gaffney had done something similar in late 2024, taking a photo of a “subject’s naked buttocks while in custody.”
+Investigators checked the logs from the Axon system. These showed that Gaffney did not access bodycam footage from the January incident for many months. So if Gaffney had shown a photo on his phone to the female employee on the day of the arrest, it must have come from some other source.
+Perhaps Gaffney had used his own phone? Yet his bodycam footage never showed it. Still, it did show him covering his bodycam’s lens with a hand for a few moments.
+Investigators pulled bodycam footage from other cops who had been in the room. These picked up Gaffney as the deputies stood around the bed of the nude man. According to investigators, when the man sat down on the bed to pull on his pants, Gaffney removed a glove from his right hand and pulled an iPhone 15 from his right pants pocket. He was then “observed manipulating the cell phone in his right hand” and putting it back in his pocket.
+Investigators say that he placed his left hand over his bodycam, blocking its view, as he reached into his pocket again to retrieve the cell phone. He pointed it for just a moment toward the man getting dressed while the phone screen appeared to have “the camera application open,” investigators say.
+This gave them enough to go to a judge. On April 22, they obtained a warrant to search Gaffney’s cell phone, which was done the next day by a detective unaffiliated with the investigation. Both nude pictures previously described by witnesses were allegedly located on the phone.
+Further phone searches showed, investigators say, that Gaffney had shared one image with “two stored contacts” and the other with “twelve contacts from his personal device on four different dates.”
+Gaffney had already sat for a voluntary interview about the case with the Bucks County sheriff. He was asked about allegations of taking pictures of naked detainees with this phone. According to a written statement that he signed off on as accurate, Gaffney had told the sheriff, “I used it for texting my wife, but in relation to the allegations? No.”
+Gaffney had also offered his own evidence for this claim. His lawyer sent along screenshots from Gaffney’s iPhone, showing his photo library from January 18 through February 7, 2026. The photos at issue were not in it. Nor were they in the “Recently deleted” folder.
+But investigators later said that their detailed forensic search was in fact able to turn the photos up on Gaffney’s phone. They also noted that metadata helped them tie the photos to that very device—and even to specific moments in time that could be cross-checked with bodycam footage.
+Watching the watchers
+Gaffney was fired from the Sheriff’s Office last month and was today charged by Bucks County District Attorney Joe Khan with “secretly photographing naked prisoners.” This didn’t result in just one charge, either; Gaffney was hit with a batch of charges, including official oppression, unsworn falsification to authorities, possessing an instrument of crime, and obstructing the administration of law or other government function.
+“When a deputy sheriff breaks the law and then attempts to cover it up by lying about it,” Khan said today , “it erodes the public trust that thousands of honest public servants work daily to preserve. This Office will continue to aggressively investigate and prosecute official misconduct at all levels of government to ensure that no one is above the law, especially not those who are sworn to enforce it.”
+If the charges stick, then Gaffney acted as though he lived in an old-fashioned world, one where police abuse could be hidden with a hand over the camera and some misleading screenshots sent to one’s boss. But a world awash in surveillance cuts both ways—and it can trip up cops who aren’t aware of just how many logs, metadata, and recordings capture their every move.
+Nate Anderson
+Deputy Editor
+Nate Anderson
+Deputy Editor
+Nate is the deputy editor at Ars Technica. His most recent book is In Emergency, Break Glass: What Nietzsche Can Teach Us About Joyful Living in a Tech-Saturated World , which is much funnier than it sounds.
+38 Comments
+Comments
+Forum view
+Loading comments...
+Prev story
+1.
+The first trailer for Avengers: Doomsday is finally here
+2.
+Sheetz is quitting VMware, migrating 11,000 virtual machines
+3.
+F1 in Belgium: Machine learning algorithms are ruining the sport
+4.
+India's first privately developed rocket reaches orbit on dramatic debut launch
+5.
+Beyond grep: The case for a context-rich AI coding harness
+Customize
+
+## full_text
+
+Skip to content
+Text
+settings
+Story text
+Size
+Small
+Standard
+Large
+Width
+Standard
+Wide
+Links
+Standard
+Orange
+* Subscribers only
+Learn more
+Minimize to nav
+On March 31, 2026, a rather odd complaint arrived at the Bucks County, Pennsylvania District Attorney’s Office.
+It came from the local sheriff’s office, and it concerned one of their own, Deputy Sheriff Ryan Gaffney. The allegation was unusual: Gaffney had used his iPhone to snap photos of nude prisoners he had encountered in his job—and he had then shared those photos with “several female civilian employees inside the Sheriff’s Office.”
+The main claim involved a local man suffering a mental health crisis on the morning of January 30, 2026. Five fully uniformed deputies had arrived at the house and were in the upstairs bedroom. Their detainee was naked from the waist down and had just been persuaded to put on some pants.
+At some point in this process, Gaffney was believed to have obtained a photo of the man’s genitalia, because after the arrest and booking, another deputy admitted that he had seen Gaffney showing the photo on his phone to a female civilian employee “in jest.” This same witness said that Gaffney had done something similar in late 2024, taking a photo of a “subject’s naked buttocks while in custody.”
+Investigators checked the logs from the Axon system. These showed that Gaffney did not access bodycam footage from the January incident for many months. So if Gaffney had shown a photo on his phone to the female employee on the day of the arrest, it must have come from some other source.
+Perhaps Gaffney had used his own phone? Yet his bodycam footage never showed it. Still, it did show him covering his bodycam’s lens with a hand for a few moments.
+Investigators pulled bodycam footage from other cops who had been in the room. These picked up Gaffney as the deputies stood around the bed of the nude man. According to investigators, when the man sat down on the bed to pull on his pants, Gaffney removed a glove from his right hand and pulled an iPhone 15 from his right pants pocket. He was then “observed manipulating the cell phone in his right hand” and putting it back in his pocket.
+Investigators say that he placed his left hand over his bodycam, blocking its view, as he reached into his pocket again to retrieve the cell phone. He pointed it for just a moment toward the man getting dressed while the phone screen appeared to have “the camera application open,” investigators say.
+This gave them enough to go to a judge. On April 22, they obtained a warrant to search Gaffney’s cell phone, which was done the next day by a detective unaffiliated with the investigation. Both nude pictures previously described by witnesses were allegedly located on the phone.
+Further phone searches showed, investigators say, that Gaffney had shared one image with “two stored contacts” and the other with “twelve contacts from his personal device on four different dates.”
+Gaffney had already sat for a voluntary interview about the case with the Bucks County sheriff. He was asked about allegations of taking pictures of naked detainees with this phone. According to a written statement that he signed off on as accurate, Gaffney had told the sheriff, “I used it for texting my wife, but in relation to the allegations? No.”
+Gaffney had also offered his own evidence for this claim. His lawyer sent along screenshots from Gaffney’s iPhone, showing his photo library from January 18 through February 7, 2026. The photos at issue were not in it. Nor were they in the “Recently deleted” folder.
+But investigators later said that their detailed forensic search was in fact able to turn the photos up on Gaffney’s phone. They also noted that metadata helped them tie the photos to that very device—and even to specific moments in time that could be cross-checked with bodycam footage.
+Watching the watchers
+Gaffney was fired from the Sheriff’s Office last month and was today charged by Bucks County District Attorney Joe Khan with “secretly photographing naked prisoners.” This didn’t result in just one charge, either; Gaffney was hit with a batch of charges, including official oppression, unsworn falsification to authorities, possessing an instrument of crime, and obstructing the administration of law or other government function.
+“When a deputy sheriff breaks the law and then attempts to cover it up by lying about it,” Khan said today , “it erodes the public trust that thousands of honest public servants work daily to preserve. This Office will continue to aggressively investigate and prosecute official misconduct at all levels of government to ensure that no one is above the law, especially not those who are sworn to enforce it.”
+If the charges stick, then Gaffney acted as though he lived in an old-fashioned world, one where police abuse could be hidden with a hand over the camera and some misleading screenshots sent to one’s boss. But a world awash in surveillance cuts both ways—and it can trip up cops who aren’t aware of just how many logs, metadata, and recordings capture their every move.
+Nate Anderson
+Deputy Editor
+Nate Anderson
+Deputy Editor
+Nate is the deputy editor at Ars Technica. His most recent book is In Emergency, Break Glass: What Nietzsche Can Teach Us About Joyful Living in a Tech-Saturated World , which is much funnier than it sounds.
+38 Comments
+Comments
+Forum view
+Loading comments...
+Prev story
+1.
+The first trailer for Avengers: Doomsday is finally here
+2.
+Sheetz is quitting VMware, migrating 11,000 virtual machines
+3.
+F1 in Belgium: Machine learning algorithms are ruining the sport
+4.
+India's first privately developed rocket reaches orbit on dramatic debut launch
+5.
+Beyond grep: The case for a context-rich AI coding harness
+Customize
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 91
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":91,"text_length":5772,"paragraph_count":23,"sentence_count":41,"boilerplate_hits":2,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Pennsylvania cop charged with oppression and obstruction.
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav On March 31, 2026, a rather odd complaint arrived at the Bucks County, Pennsylvania District Attorney’s Office.
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   It came from the local sheriff’s office, and it concerned one of their own, Deputy Sheriff Ryan Gaffney.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   The allegation was unusual: Gaffney had used his iPhone to snap photos of nude prisoners he had encountered in his job—and he had then shared those photos with “several female civilian employees inside the Sheriff’s Office.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   ” The main claim involved a local man suffering a mental health crisis on the morning of January 30, 2026.
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Five fully uniformed deputies had arrived at the house and were in the upstairs bedroom.
+
+## business_elements
+
+- companies: Ars Technica AI
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 法律 / 法务, 医疗, 开发者工具
+- roles: 法务 / 律师
+- workflows: 暂无公开信息
+- business_actions: 发布 / 推出
+- affected_departments: IT / 安全, 法务
+- numbers: 31, 2026, 30, 2024, 15, 22, 18, 7
+- quotes: several female civilian employees inside the Sheriff’s Office. / in jest. / subject’s naked buttocks while in custody. / observed manipulating the cell phone in his right hand / the camera application open,
+
+## evidence_seed
+
+- company_actions: Pennsylvania cop charged with oppression and obstruction. / Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav On March 31, 2026, a rather odd complaint arrived at the Bucks County, Pennsylvania District Attorney’s Office. / It came from the local sheriff’s office, and it concerned one of their own, Deputy Sheriff Ryan Gaffney.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 暂无公开信息
+- affected_roles: 法务 / 律师
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: supporting_signal
+- importance_score: 2
+- importance_reason: consumer entertainment or minor platform policy feature; AI-adjacent but not a core business signal
+- supporting_signals: low_value_ai_adjacent_context
+- novelty: 2
+- evidence_strength: 4
+- case_richness: 4
+- trend_relevance: 2
+- guanlan_relevance: 2
+- emerging_signal_score: 4
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- business_change: false
+- relationship_graph_input: false
+- trend_candidate_context: false
+- signal_card_candidate: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- index_only
+
+## missing_information
+
+- 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象
+- 没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势
+- 没有具体客户或真实企业案例
+- 没有变化前后流程线索
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: supporting_evidence
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Pennsylvania cop charged with oppression and obstruction.
+
+## 采集备注
+
+该条目由 rss-feed 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-20T04:21:34.978Z",
-    "latestDataDate": "2026-07-20",
-    "currentDate": "2026-07-20",
-    "eventCount": 1324,
-    "quarantinedEventCount": 12
+    "generatedAt": "2026-07-21T01:27:58.078Z",
+    "latestDataDate": "2026-07-21",
+    "currentDate": "2026-07-21",
+    "eventCount": 1347,
+    "quarantinedEventCount": 13
   },
   "node": {
     "id": "TX-technology-code_generation",
@@ -32,6 +32,7 @@
       "EV-4c0af31f1399ea8c",
       "EV-e1a4bc40db4a9d8f",
       "EV-d5f276ad6b2ac9de",
+      "EV-ab3e820aa6d92542",
       "EV-c237f5dc53f0a923",
       "EV-653cbce2ccc79f8b",
       "EV-74dfbd82b47dc626",
@@ -128,7 +129,7 @@
       "HW-b1302168a9ab18e8"
     ],
     "firstSeen": "2026-05-19",
-    "lastSeen": "2026-07-18"
+    "lastSeen": "2026-07-21"
   },
   "events": [
     {
@@ -1422,6 +1423,107 @@
       "products": [],
       "sourceUrl": "https://markets.ft.com/data/announce/detail?dockey=600-202606161000PR_NEWS_USPRX____NY84494-1",
       "publisher": "markets.ft.com"
+    },
+    {
+      "id": "EV-ab3e820aa6d92542",
+      "dataDate": "2026-07-21",
+      "date": "2026-07-20",
+      "updatedDate": "2026-07-21",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "OpenAI 重获二级市场投资者青睐，Anthropic 仍是最热门标的",
+      "originalTitle": "",
+      "subject": "OpenAI",
+      "action": "product_release",
+      "object": "OpenAI 重获二级市场投资者青睐，Anthropic 仍是最热门标的",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "software_development",
+            "dimensionName": "应用场景",
+            "name": "软件开发"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "software_development",
+          "dimensionName": "应用场景",
+          "name": "软件开发"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "software_development",
+          "dimensionName": "应用场景",
+          "name": "软件开发"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成"
+        }
+      ],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "Anthropic",
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/979/213.htm",
+      "publisher": "IT之家（RSS）"
     },
     {
       "id": "EV-c237f5dc53f0a923",
@@ -3655,6 +3757,7 @@
         "EV-88f4ee8cd57bdf42",
         "EV-44a4e92c03a31ab1",
         "EV-7585b033d4005977",
+        "EV-4fba2b2f1ac10a79",
         "EV-bcb74b02448b7d78",
         "EV-47a16db069ed320e",
         "EV-49c6291694fb6c7b",
@@ -3751,7 +3854,7 @@
         "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-07-19"
+      "lastSeen": "2026-07-21"
     },
     {
       "id": "EN-0cc3af265406c202",
@@ -3806,6 +3909,7 @@
         "EV-2c476cb7969f399b",
         "EV-06487af6e98ea491",
         "EV-bb9ba11acf104db1",
+        "EV-bee410f8134cba5a",
         "EV-e7b7df43970f7e2c",
         "EV-025778b83c1b2ca9",
         "EV-b84035029a63e52e",
@@ -3845,7 +3949,7 @@
         "EN-3ccbd9105a45d8fc"
       ],
       "firstSeen": "2026-03-11",
-      "lastSeen": "2026-07-19"
+      "lastSeen": "2026-07-21"
     },
     {
       "id": "EN-7106dbc04a08ce3a",
@@ -3971,6 +4075,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-d7a7244d620a2142",
         "EV-fbb105be35c21eb4",
         "EV-e41fc65eb014893f",
         "EV-974a6b7d0e0efef2",
@@ -4017,6 +4122,9 @@
         "EV-8e01849c05b50355",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-684f286ef629ed0d",
+        "EV-0d5a32aca724d30e",
+        "EV-ab3e820aa6d92542",
         "EV-b20bf10af759bd43",
         "EV-eb97c388b3197c06",
         "EV-83a8ac8a2554b60c",
@@ -4047,6 +4155,7 @@
         "EV-fcbd97e1f30c95e3",
         "EV-ee9a1c99fe7054d6",
         "EV-fdcc4ff01b49053e",
+        "EV-3e55e1cd1d54f6ef",
         "EV-225ad0a94611daf3",
         "EV-cadcc94249dea81d",
         "EV-cedeae902fd1263d",
@@ -4163,6 +4272,8 @@
         "EV-773ffcc6e1df56fa",
         "EV-2923b35d936d9f4e",
         "EV-cf496e0f8a56ca97",
+        "EV-61053b02542f0fcc",
+        "EV-e6a7926fdb42b95a",
         "EV-94e1f1a5cea15eae",
         "EV-0990915063eb75a0",
         "EV-36a9b1b961f8e3b2",
@@ -4243,7 +4354,7 @@
         "EN-d8494bb34d6ddc43"
       ],
       "firstSeen": "2026-03-13",
-      "lastSeen": "2026-07-20"
+      "lastSeen": "2026-07-21"
     },
     {
       "id": "EN-7d3194f79e645c42",
@@ -4256,6 +4367,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-d7a7244d620a2142",
         "EV-4da1a7c4d527eb69",
         "EV-e41fc65eb014893f",
         "EV-974a6b7d0e0efef2",
@@ -4306,6 +4418,9 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-0d5a32aca724d30e",
+        "EV-ab3e820aa6d92542",
+        "EV-bc41a3060f11ca2d",
         "EV-83a8ac8a2554b60c",
         "EV-a68475d82ec939b5",
         "EV-c237f5dc53f0a923",
@@ -4508,7 +4623,7 @@
         "EN-7b8cb35de7ad047a"
       ],
       "firstSeen": "2026-02-19",
-      "lastSeen": "2026-07-20"
+      "lastSeen": "2026-07-21"
     },
     {
       "id": "EN-96eebba49dbbf422",
@@ -4540,6 +4655,7 @@
         "EV-81bd541510a530f0",
         "EV-2bb63a3015195f9b",
         "EV-4e7a32c9ee893918",
+        "EV-439ba8d5f2f575c4",
         "EV-d4e44892226be468",
         "EV-921c843ad32c993c",
         "EV-2bea8d8046a9b325",
@@ -4598,6 +4714,7 @@
         "EV-8e01849c05b50355",
         "EV-4faa2bcf2e42e60c",
         "EV-45be473baf6dfa4c",
+        "EV-0d5a32aca724d30e",
         "EV-92d28aef0c4b0a8a",
         "EV-c2800c1c5a3f568f",
         "EV-d4ddee1b39cced77",
@@ -4689,7 +4806,7 @@
         "EN-c70eca6b0f88f44d"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-20"
+      "lastSeen": "2026-07-21"
     },
     {
       "id": "EN-a7dd4a797cf9990b",
@@ -4724,6 +4841,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-439ba8d5f2f575c4",
         "EV-2d6d2dc0ead4be10",
         "EV-8fbe211e9d4bae03",
         "EV-f05783f745bc7c2c",
@@ -4747,7 +4865,7 @@
         "EN-954dc5d6516f127c"
       ],
       "firstSeen": "2026-06-11",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-07-21"
     },
     {
       "id": "EN-047364b9be67f665",
@@ -4755,9 +4873,7 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "阿里巴巴",
-        "Qwen",
-        "阿里"
+        "Qwen"
       ],
       "verificationStatus": "verified",
       "datasetScopes": [
@@ -4772,7 +4888,10 @@
         "EV-53f08daddd011dbb",
         "EV-e1a4bc40db4a9d8f",
         "EV-2a833330267cb2df",
+        "EV-94ad4a217508e6e0",
         "EV-0d5a32aca724d30e",
+        "EV-b43f22d8bc7fec3f",
+        "EV-f388f7ae2debeae8",
         "EV-d08935b06ed9e7bb",
         "EV-215f938a46d0b126",
         "EV-ac1b82f6e6261012",
@@ -4810,6 +4929,7 @@
         "TX-technology-agentic_execution",
         "TX-technology-code_generation",
         "TX-technology-long_context",
+        "TX-technology-mixture_of_experts",
         "TX-use_case-data_analysis",
         "TX-technology-on_device",
         "TX-technology-embodied_ai",
@@ -4817,18 +4937,17 @@
         "TX-technology-open_weights",
         "TX-technology-video_generation",
         "TX-technology-multimodal",
+        "TX-technology-speech_audio",
         "TX-technology-quantization",
         "TX-technology-computer_use"
       ],
       "relatedEntityIds": [
-        "EN-10a27c6240d18dbe",
-        "EN-5398729239788ca5",
+        "EN-0b0c3b228202ab0a",
         "EN-22a4c686e665e299",
-        "EN-2daac3672aeafcbd",
         "EN-d65d81c60c0c47c4"
       ],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-07-20"
+      "lastSeen": "2026-07-21"
     },
     {
       "id": "EN-86f73dfe7bb6a9e6",
@@ -5038,9 +5157,9 @@
         "TX-technology-multimodal",
         "TX-industry-media_entertainment",
         "TX-technology-tool_use",
+        "TX-technology-speech_audio",
         "TX-use_case-content_creation",
-        "TX-technology-quantization",
-        "TX-technology-speech_audio"
+        "TX-technology-quantization"
       ],
       "relatedEntityIds": [
         "EN-af3ceabbe048a291"
@@ -5396,9 +5515,9 @@
         "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
+        "TX-technology-speech_audio",
         "TX-technology-image_generation",
-        "TX-technology-inference_optimization",
-        "TX-technology-speech_audio"
+        "TX-technology-inference_optimization"
       ],
       "relatedEntityIds": [
         "EN-1e71d9c1a5c4de16",
@@ -5585,7 +5704,8 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "Gemini"
+        "gemini",
+        "谷歌"
       ],
       "verificationStatus": "verified",
       "datasetScopes": [
@@ -5618,6 +5738,9 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
+        "EV-f3cc0845ce442e6b",
+        "EV-0d5a32aca724d30e",
+        "EV-bee410f8134cba5a",
         "EV-a255cfc0dab44564",
         "EV-98a80b75b27d9f3b",
         "EV-29e069ac093f0e34",
@@ -5733,17 +5856,19 @@
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-embodied_ai",
         "TX-technology-fine_tuning",
+        "TX-technology-open_weights",
         "TX-technology-video_generation",
         "TX-technology-multimodal",
         "TX-industry-media_entertainment",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
+        "TX-technology-speech_audio",
         "TX-use_case-content_creation",
         "TX-technology-image_generation",
-        "TX-technology-computer_use",
-        "TX-technology-speech_audio"
+        "TX-technology-computer_use"
       ],
       "relatedEntityIds": [
+        "EN-419f2cd96ee122e3",
         "EN-96eebba49dbbf422",
         "EN-81e577740888ca6d",
         "EN-1229af0aa3b0305e",
@@ -5754,8 +5879,11 @@
         "EN-01f1074bb52ff605",
         "EN-f2c032b19edb7900",
         "EN-2ab6d53e717a0e0d",
+        "EN-1cd41545564777ce",
         "EN-2998f8b13f4fd72e",
+        "EN-3546e1b15e6549b2",
         "EN-b5c336c0dd1ff29c",
+        "EN-e1a4e41919f7c2dc",
         "EN-d56aa2f9908f566a",
         "EN-4baef0e41cbd7ae2",
         "EN-bdfecbcd7dbf76d2",
@@ -5763,7 +5891,7 @@
         "EN-2aae0de3f5530f08"
       ],
       "firstSeen": "2026-04-12",
-      "lastSeen": "2026-07-18"
+      "lastSeen": "2026-07-21"
     },
     {
       "id": "EN-b5251b35f15bedc4",
@@ -5771,7 +5899,8 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "Kimi"
+        "Kimi",
+        "月之暗面"
       ],
       "verificationStatus": "verified",
       "datasetScopes": [
@@ -5803,7 +5932,7 @@
         "TX-technology-code_generation",
         "TX-use_case-software_development",
         "TX-technology-long_context",
-        "TX-use_case-data_analysis",
+        "TX-technology-mixture_of_experts",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-open_weights",
         "TX-technology-multimodal"
@@ -5814,7 +5943,7 @@
         "EN-b57c95289680078c"
       ],
       "firstSeen": "2026-05-19",
-      "lastSeen": "2026-07-20"
+      "lastSeen": "2026-07-21"
     },
     {
       "id": "EN-0db2d631b42da133",
@@ -6113,6 +6242,7 @@
         "EV-d4d7b019ff0015df",
         "EV-27b69ea604475b72",
         "EV-f8c3a83d883c9b22",
+        "EV-0d5a32aca724d30e",
         "EV-70cbf25f7ec2cc3a",
         "EV-f8ba1728de6a4899",
         "EV-fe2b0d74944d6128",
@@ -6139,6 +6269,7 @@
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-software_development",
         "TX-technology-long_context",
+        "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
         "TX-technology-fine_tuning",
         "TX-technology-open_weights",
@@ -6147,7 +6278,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-07-16"
+      "lastSeen": "2026-07-21"
     },
     {
       "id": "EN-c27c48199bb1e14b",
@@ -6357,8 +6488,8 @@
         "TX-technology-video_generation",
         "TX-technology-multimodal",
         "TX-industry-media_entertainment",
-        "TX-technology-image_generation",
-        "TX-technology-speech_audio"
+        "TX-technology-speech_audio",
+        "TX-technology-image_generation"
       ],
       "relatedEntityIds": [
         "EN-d56aa2f9908f566a",
