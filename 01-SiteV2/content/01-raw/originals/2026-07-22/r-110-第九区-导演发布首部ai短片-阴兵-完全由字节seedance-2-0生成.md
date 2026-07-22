@@ -1,0 +1,216 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-110
+title: "《第九区》导演发布首部AI短片《阴兵》，完全由字节Seedance 2.0生成"
+title_zh: "《第九区》导演发布首部AI短片《阴兵》，完全由字节Seedance 2.0生成"
+title_translation_status: not_required
+title_translation_method: source_title
+title_translation_model: not_applicable
+original_url: "https://www.ithome.com/0/979/459.htm"
+canonical_url: "https://ithome.com/0/979/459.htm"
+source_name: "IT之家（RSS）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: supporting_article
+evidence_object_usable: false
+event_evidence: false
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-21T05:33:35.000Z"
+collected_at: 2026-07-22T01:55:53.164Z
+language: mixed
+full_text_hash: 1751a7b22d998635
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-22/r-110-第九区-导演发布首部ai短片-阴兵-完全由字节seedance-2-0生成.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-22/r-110-第九区-导演发布首部ai短片-阴兵-完全由字节seedance-2-0生成.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: low
+extraction_method: "content-container"
+readability_score: 46
+extractor_diagnostics: {"readability_score":46,"text_length":665,"paragraph_count":8,"sentence_count":7,"boilerplate_hits":1,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 665
+fetch_error: ""
+evidence_strength: source_backed_event
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["insufficient_usable_evidence_object"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"1751a7b22d998635","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: supporting_evidence
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"《第九区》导演发布首部AI短片《阴兵》，完全由字节Seedance 2.0生成","discovery_summary":"曾执导《第九区》的导演尼尔·布洛姆坎普发布其首部AI短片《阴兵》（Nightborne），时长约13分钟，每一帧画面均由字节跳动的Seedance 2.0模型通过文本提示逐帧生成。该片采用纪录片风格，仅授权使用了32位真人演员的外貌和声音。布洛姆坎普计划以相同方式拍摄一部长篇电影，并已创立AI电影工作室Barley Studios。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/979/459.htm","discovered_at":"2026-07-22T01:46:55.199Z","rank_on_page":345,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 872679a5b1a1dbeb
+content_hash: 1751a7b22d998635
+semantic_hash: bfcc723a92137039
+duplicate_of: ""
+first_seen_at: "2026-07-21T05:33:35.000Z"
+last_seen_at: 2026-07-22T01:55:53.164Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":false,"case":false,"business_change":false,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["index_only"]
+change_action_detected: true
+evidence_eligibility: blocked
+evidence_block_reason: "not_event_case_or_trend_evidence"
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":4,"importance_reason":"new product or service; rubric=4 concrete important change","supporting_signals":["adoption_context"],"novelty":3,"evidence_strength":3,"case_richness":3,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["IT之家（RSS）"],"products":[],"people":[],"industries":["开发者工具"],"roles":[],"workflows":[],"business_actions":["发布 / 推出"],"affected_departments":["IT / 安全"],"numbers":["2.0","13","32","7","21","8.4"],"quotes":[]}
+evidence_seed: {"company_actions":["曾执导《第九区》的导演尼尔·布洛姆坎普发布其首部AI短片《阴兵》（Nightborne），时长约13分钟，每一帧画面均由字节跳动的Seedance 2.0模型通过文本提示逐帧生成。该片采用纪录片风格，仅授权使用了32位真人演员的外貌和声音。布洛姆坎普计划以相同方式拍摄一部长篇电影，并已创立AI电影工作室Barley Studios。","IT之家 7 月 21 日消息，科技媒体 The Decoder 今天（7 月 21 日）发布博文，报道称 曾执导《第九区》的导演尼尔 · 布洛姆坎普（Neill Blomkamp）发布其首部 AI 短片《阴兵》（Nightborne）。","该短片时长约为 13 分钟，完全由 AI 生成，使用 字节跳动的 Seedance 2."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+missing_information: ["证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象","没有具体客户或真实企业案例","没有变化前后流程线索"]
+key_excerpts: [{"type":"funding","text":"曾执导《第九区》的导演尼尔·布洛姆坎普发布其首部AI短片《阴兵》（Nightborne），时长约13分钟，每一帧画面均由字节跳动的Seedance 2.0模型通过文本提示逐帧生成。该片采用纪录片风格，仅授权使用了32位真人演员的外貌和声音。布洛姆坎普计划以相同方式拍摄一部长篇电影，并已创立AI电影工作室Barley Studios。","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"IT之家 7 月 21 日消息，科技媒体 The Decoder 今天（7 月 21 日）发布博文，报道称 曾执导《第九区》的导演尼尔 · 布洛姆坎普（Neill Blomkamp）发布其首部 AI 短片《阴兵》（Nightborne）。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"},{"type":"funding","text":"该短片时长约为 13 分钟，完全由 AI 生成，使用 字节跳动的 Seedance 2.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"0 模型生成 ，布洛姆坎普通过文本提示逐帧执导。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"IT之家查询公开资料，南非导演尼尔 · 布洛姆坎普（Neill Blomkamp）以其标志性的纪录片风格与硬核科幻设定在影迷中备受瞩目。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"在豆瓣平台上，他最受好评的作品是处女作《第九区》（豆瓣评分 8.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-22T01:55:53.164Z
+theme: early-direction-signal
+keyword_group: early-direction-signal
+copyright_note: local research archive only
+---
+
+# 《第九区》导演发布首部AI短片《阴兵》，完全由字节Seedance 2.0生成
+
+## clean_text
+
+IT之家 7 月 21 日消息，科技媒体 The Decoder 今天（7 月 21 日）发布博文，报道称 曾执导《第九区》的导演尼尔 · 布洛姆坎普（Neill Blomkamp）发布其首部 AI 短片《阴兵》（Nightborne）。
+该短片时长约为 13 分钟，完全由 AI 生成，使用 字节跳动的 Seedance 2.0 模型生成 ，布洛姆坎普通过文本提示逐帧执导。
+IT之家查询公开资料，南非导演尼尔 · 布洛姆坎普（Neill Blomkamp）以其标志性的纪录片风格与硬核科幻设定在影迷中备受瞩目。在豆瓣平台上，他最受好评的作品是处女作《第九区》（豆瓣评分 8.4）。
+《Nightborne》采用纪录片风格拍摄，相关介绍如下：
+本片由《第九区》导演尼尔 · 布洛姆坎普执导、编剧，每一帧画面均由 Seedance 2.0 生成，仅授权使用了 32 位真人演员的外貌和声音，另有电影概念设计师参与制作。
+本片的故事很像坎普在燕麦工作室制作的系列科幻短片及其过往电影作品，讲一位美国陆军航空兵“阿帕奇”攻击直升机飞行员阵亡后被美国军方用于秘密超级士兵计划。
+图源：视频截图 布洛姆坎普在 X 上表示，他现在计划以相同的方式拍摄一部长篇电影。他还创立了 Barley Studios，这是一家新的 AI 电影工作室，旨在取代制作传统电影的 Oats Studios。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## full_text
+
+IT之家 7 月 21 日消息，科技媒体 The Decoder 今天（7 月 21 日）发布博文，报道称 曾执导《第九区》的导演尼尔 · 布洛姆坎普（Neill Blomkamp）发布其首部 AI 短片《阴兵》（Nightborne）。
+该短片时长约为 13 分钟，完全由 AI 生成，使用 字节跳动的 Seedance 2.0 模型生成 ，布洛姆坎普通过文本提示逐帧执导。
+IT之家查询公开资料，南非导演尼尔 · 布洛姆坎普（Neill Blomkamp）以其标志性的纪录片风格与硬核科幻设定在影迷中备受瞩目。在豆瓣平台上，他最受好评的作品是处女作《第九区》（豆瓣评分 8.4）。
+《Nightborne》采用纪录片风格拍摄，相关介绍如下：
+本片由《第九区》导演尼尔 · 布洛姆坎普执导、编剧，每一帧画面均由 Seedance 2.0 生成，仅授权使用了 32 位真人演员的外貌和声音，另有电影概念设计师参与制作。
+本片的故事很像坎普在燕麦工作室制作的系列科幻短片及其过往电影作品，讲一位美国陆军航空兵“阿帕奇”攻击直升机飞行员阵亡后被美国军方用于秘密超级士兵计划。
+图源：视频截图 布洛姆坎普在 X 上表示，他现在计划以相同的方式拍摄一部长篇电影。他还创立了 Barley Studios，这是一家新的 AI 电影工作室，旨在取代制作传统电影的 Oats Studios。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 46
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: low
+- diagnostics: {"readability_score":46,"text_length":665,"paragraph_count":8,"sentence_count":7,"boilerplate_hits":1,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=medium
+   曾执导《第九区》的导演尼尔·布洛姆坎普发布其首部AI短片《阴兵》（Nightborne），时长约13分钟，每一帧画面均由字节跳动的Seedance 2.0模型通过文本提示逐帧生成。该片采用纪录片风格，仅授权使用了32位真人演员的外貌和声音。布洛姆坎普计划以相同方式拍摄一部长篇电影，并已创立AI电影工作室Barley Studios。
+
+2. **product_update**｜supports=signal_card_candidate, relationship_graph_input, business_change｜importance=high｜confidence=medium
+   IT之家 7 月 21 日消息，科技媒体 The Decoder 今天（7 月 21 日）发布博文，报道称 曾执导《第九区》的导演尼尔 · 布洛姆坎普（Neill Blomkamp）发布其首部 AI 短片《阴兵》（Nightborne）。
+
+3. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=medium
+   该短片时长约为 13 分钟，完全由 AI 生成，使用 字节跳动的 Seedance 2.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   0 模型生成 ，布洛姆坎普通过文本提示逐帧执导。
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   IT之家查询公开资料，南非导演尼尔 · 布洛姆坎普（Neill Blomkamp）以其标志性的纪录片风格与硬核科幻设定在影迷中备受瞩目。
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   在豆瓣平台上，他最受好评的作品是处女作《第九区》（豆瓣评分 8.
+
+## business_elements
+
+- companies: IT之家（RSS）
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 开发者工具
+- roles: 暂无公开信息
+- workflows: 暂无公开信息
+- business_actions: 发布 / 推出
+- affected_departments: IT / 安全
+- numbers: 2.0, 13, 32, 7, 21, 8.4
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: 曾执导《第九区》的导演尼尔·布洛姆坎普发布其首部AI短片《阴兵》（Nightborne），时长约13分钟，每一帧画面均由字节跳动的Seedance 2.0模型通过文本提示逐帧生成。该片采用纪录片风格，仅授权使用了32位真人演员的外貌和声音。布洛姆坎普计划以相同方式拍摄一部长篇电影，并已创立AI电影工作室Barley Studios。 / IT之家 7 月 21 日消息，科技媒体 The Decoder 今天（7 月 21 日）发布博文，报道称 曾执导《第九区》的导演尼尔 · 布洛姆坎普（Neill Blomkamp）发布其首部 AI 短片《阴兵》（Nightborne）。 / 该短片时长约为 13 分钟，完全由 AI 生成，使用 字节跳动的 Seedance 2.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 暂无公开信息
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 4
+- importance_reason: new product or service; rubric=4 concrete important change
+- supporting_signals: adoption_context
+- novelty: 3
+- evidence_strength: 3
+- case_richness: 3
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- business_change: false
+- relationship_graph_input: false
+- trend_candidate_context: false
+- signal_card_candidate: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- index_only
+
+## missing_information
+
+- 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象
+- 没有具体客户或真实企业案例
+- 没有变化前后流程线索
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: supporting_evidence
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"《第九区》导演发布首部AI短片《阴兵》，完全由字节Seedance 2.0生成","discovery_summary":"曾执导《第九区》的导演尼尔·布洛姆坎普发布其首部AI短片《阴兵》（Nightborne），时长约13分钟，每一帧画面均由字节跳动的Seedance 2.0模型通过文本提示逐帧生成。该片采用纪录片风格，仅授权使用了32位真人演员的外貌和声音。布洛姆坎普计划以相同方式拍摄一部长篇电影，并已创立AI电影工作室Barley Studios。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/979/459.htm","discovered_at":"2026-07-22T01:46:55.199Z","rank_on_page":345,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+曾执导《第九区》的导演尼尔·布洛姆坎普发布其首部AI短片《阴兵》（Nightborne），时长约13分钟，每一帧画面均由字节跳动的Seedance 2.0模型通过文本提示逐帧生成。该片采用纪录片风格，仅授权使用了32位真人演员的外貌和声音。布洛姆坎普计划以相同方式拍摄一部长篇电影，并已创立AI电影工作室Barley Studios。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

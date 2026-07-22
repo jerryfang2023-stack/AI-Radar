@@ -1,0 +1,288 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-103",
+  "title": "Google ships three new Gemini Flash models but its frontier 3.5 Pro remains lost in training",
+  "title_zh": "谷歌发布三款新Gemini Flash模型，但前沿3.5 Pro仍在训练中",
+  "title_translation_status": "translated",
+  "title_translation_method": "deepseek_title_translation",
+  "title_translation_model": "deepseek-v4-flash",
+  "original_url": "https://the-decoder.com/google-ships-three-new-gemini-flash-models-but-its-frontier-3-5-pro-remains-lost-in-training/",
+  "canonical_url": "https://the-decoder.com/google-ships-three-new-gemini-flash-models-but-its-frontier-3-5-pro-remains-lost-in-training",
+  "source_name": "The Decoder AI News",
+  "source_type": "media",
+  "source_level": "A",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "event",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "rss-feed",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": false,
+  "enterprise_ai_transformation_stage": "",
+  "enterprise_ai_transformation_reason": "",
+  "author": "",
+  "published_at": "2026-07-21T00:00:00.000Z",
+  "collected_at": "2026-07-22T01:55:50.095Z",
+  "language": "mixed",
+  "full_text": "Ad\nSkip to content\nGoogle ships three new Gemini Flash models but its frontier 3.5 Pro remains lost in training\nJonathan Kemper\nView the LinkedIn Profile of Jonathan Kemper\nJul 21, 2026\nKey Points\nGoogle is releasing three efficient AI models—Gemini 3.6 Flash, 3.5 Flash-Lite, and the security-focused 3.5 Flash Cyber—while its flagship 3.5 Pro remains delayed. Gemini 4 is already in training.\nEach model serves a distinct purpose: 3.6 Flash cuts token usage at lower cost, Flash-Lite prioritizes speed, and the Cyber model is restricted to governments and partners due to potential risks.\nWithout the Pro model, Google is losing ground to OpenAI, Anthropic, and even Meta, which are pushing ahead with more capable frontier models.\nGoogle is expanding the Gemini lineup with two Flash models and a specialized Cyber version. But the anticipated frontier model, Gemini 3.5 Pro, is still missing.\nGoogle has announced three new models in the Gemini Flash family : 3.6 Flash, 3.5 Flash-Lite, and the cybersecurity model 3.5 Flash Cyber. Buried in the announcement is the fact that Google's anticipated flagship, Gemini 3.5 Pro, is still being tested exclusively with partners and will ship \"as soon as it is ready.\"\nGoogle says pretraining for Gemini 4 is already underway. The company calls it its \"most ambitious training run\" yet and says it is \"excited by the progress.\" That reads like damage control, and it makes clear that Google knows what the market expects but can't deliver yet. Ad\nGemini 3.6 Flash trades peak performance for efficiency and lower prices\nAccording to the benchmark aggregator Artificial Analysis Index , Gemini 3.6 Flash is expected to use about 17 percent fewer output tokens than 3.5 Flash. Google says the savings reach 65 percent on specific benchmarks such as DeepSWE. Google has cut the price to $1.50 per million input tokens and $7.50 per million output tokens, making it much cheaper than the earlier 3.1 Pro model, which 3.6 Flash consistently beats in benchmarks. Ad\nDEC_D_Incontent-1\nGemini 3.6 Flash leads across all four agentic benchmarks compared to earlier Gemini generations. | Image: Google\nGoogle also reports gains over 3.5 Flash. DeepSWE rises from 37 to 49 percent, MLE Bench from 49.7 to 63.9 percent, and OSWorld-Verified from 78.4 to 83 percent. The GDPval-AA v2 knowledge work benchmark improves from 1,349 to 1,421 points.\nComputer Use is now a built-in client-side tool in the Gemini API and Gemini Enterprise. Google has also added stronger Frontier Safety safeguards against CBRN misuse and cyberattacks. CBRN refers to chemical, biological, radiological, and nuclear threats. Ad\nOn DeepSWE, 3.6 Flash uses just over one-third as many output tokens as 3.5 Flash. | Image: Google\nDespite gains on multimodal tasks and a one million token context window, Google still trails the best models from competitors in the US and China. Logan Kilpatrick, a member of the technical staff, responded to criticism on X , saying the explicit goal was efficiency, usability, and lower cost, and that performance still improved in the process.\nGemini 3.5 Flash-Lite targets large workloads at low cost\nThe smaller Gemini 3.5 Flash-Lite is tuned for low latency and high throughput. According to Artificial Analysis , it produces 350 output tokens per second. It costs $0.30 per million input tokens and $2.50 per million output tokens. Ad\nDEC_D_Incontent-2\nFlash-Lite posts large gains over 3.1 Flash-Lite, especially on agentic coding tasks. | Image: Google\nGoogle says Flash-Lite beats the older 3 Flash on several agentic and coding benchmarks, including SWE-Bench Pro and OSWorld-Verified. Compared with its direct predecessor, 3.1 Flash-Lite, its Terminal-Bench 2.1 score rises from 31 to 54 percent. Ad\nThe smaller Flash-Lite beats the larger Gemini 3 Flash on agentic software engineering and computer use. | Image: Google\nGoogle introduced Gemini 3.5 Flash at its last I/O conference as the centerpiece of its agent strategy. The company later added native computer use, allowing the model to operate browsers, desktops, and mobile devices on its own.\nGoogle's cybersecurity model remains restricted\nGemini 3.5 Flash Cyber is based on 3.5 Flash and tuned for cybersecurity work. Google has built it into CodeMender, Google DeepMind's code security agent. Several Flash Cyber subagents work in parallel and combine their results into one report. On the CyberGym benchmark, the model scores 83.2 percent, within two points of OpenAI's GPT-5.5-Cyber at 85.6 percent, despite being a much smaller model.\nCyberGym is the only comparison that includes competitor models. Scores are tightly clustered, and Google's edge comes mainly from lower cost per token. | Image: Google\nGoogle's Big Sleep team put the model to work hunting critical flaws in Chrome and Safari, and it outperformed both the standard Flash models and Anthropic's Claude Opus 4.6. When scanning commits in the V8 JavaScript engine, Flash Cyber turned up 55 confirmed unique findings. The standard 3.5 Flash found 47, Opus 4.6 found 36, and Google says ten of Flash Cyber's findings didn't show up in any other model's results.\nIn another test, Google's Cloud Vulnerability Research Team used the model to scan public APIs. It found remote code execution flaws within two hours and produced a working exploit that bypassed security protections.\nGoogle says the model is just as useful for offense as it is for defense, so the company is keeping access tight. Only governments and trusted partners can use 3.5 Flash Cyber through CodeMender as part of a pilot program. Google is making the CodeMender agent itself broadly available in preview through the Gemini Enterprise Agent Platform, but that version runs on the standard Gemini models. It supports C/C++, Go, Java, Python, Ruby, Rust, and TypeScript.\nThe missing Pro model leaves Google behind its rivals\nGemini 3.5 Pro, Google's next frontier model, still isn't publicly available. OpenAI is already serving that class with GPT-5.6 Sol, Anthropic has Fable and Mythos, and Chinese labs like Moonshot with Kimi K3 and Zhipu with GLM-5.2 are closing in on frontier performance. Even Meta recently released a model that outperforms Google's current lineup at writing code.\nInstead of competing at the top, Google shipped another Flash update focused on efficiency and lower prices. According to a recent Bloomberg report , the flagship model is months behind schedule as the company works on improving its coding performance. As long as 3.5 Pro stays in private testing, Google doesn't have a public model that competes at the top of the market.\nAI News Without the Hype – Curated by Humans\nSubscribe to THE DECODER for ad-free reading, a weekly AI newsletter, our exclusive \"AI Radar\" frontier report six times a year, full archive access, and access to our comment section.\nSubscribe now\nSource: Google\nBETA-TEST\n&times;\nwpDiscuz\nInsert",
+  "clean_text": "Ad\nSkip to content\nGoogle ships three new Gemini Flash models but its frontier 3.5 Pro remains lost in training\nJonathan Kemper\nView the LinkedIn Profile of Jonathan Kemper\nJul 21, 2026\nKey Points\nGoogle is releasing three efficient AI models—Gemini 3.6 Flash, 3.5 Flash-Lite, and the security-focused 3.5 Flash Cyber—while its flagship 3.5 Pro remains delayed. Gemini 4 is already in training.\nEach model serves a distinct purpose: 3.6 Flash cuts token usage at lower cost, Flash-Lite prioritizes speed, and the Cyber model is restricted to governments and partners due to potential risks.\nWithout the Pro model, Google is losing ground to OpenAI, Anthropic, and even Meta, which are pushing ahead with more capable frontier models.\nGoogle is expanding the Gemini lineup with two Flash models and a specialized Cyber version. But the anticipated frontier model, Gemini 3.5 Pro, is still missing.\nGoogle has announced three new models in the Gemini Flash family : 3.6 Flash, 3.5 Flash-Lite, and the cybersecurity model 3.5 Flash Cyber. Buried in the announcement is the fact that Google's anticipated flagship, Gemini 3.5 Pro, is still being tested exclusively with partners and will ship \"as soon as it is ready.\"\nGoogle says pretraining for Gemini 4 is already underway. The company calls it its \"most ambitious training run\" yet and says it is \"excited by the progress.\" That reads like damage control, and it makes clear that Google knows what the market expects but can't deliver yet. Ad\nGemini 3.6 Flash trades peak performance for efficiency and lower prices\nAccording to the benchmark aggregator Artificial Analysis Index , Gemini 3.6 Flash is expected to use about 17 percent fewer output tokens than 3.5 Flash. Google says the savings reach 65 percent on specific benchmarks such as DeepSWE. Google has cut the price to $1.50 per million input tokens and $7.50 per million output tokens, making it much cheaper than the earlier 3.1 Pro model, which 3.6 Flash consistently beats in benchmarks. Ad\nDEC_D_Incontent-1\nGemini 3.6 Flash leads across all four agentic benchmarks compared to earlier Gemini generations. | Image: Google\nGoogle also reports gains over 3.5 Flash. DeepSWE rises from 37 to 49 percent, MLE Bench from 49.7 to 63.9 percent, and OSWorld-Verified from 78.4 to 83 percent. The GDPval-AA v2 knowledge work benchmark improves from 1,349 to 1,421 points.\nComputer Use is now a built-in client-side tool in the Gemini API and Gemini Enterprise. Google has also added stronger Frontier Safety safeguards against CBRN misuse and cyberattacks. CBRN refers to chemical, biological, radiological, and nuclear threats. Ad\nOn DeepSWE, 3.6 Flash uses just over one-third as many output tokens as 3.5 Flash. | Image: Google\nDespite gains on multimodal tasks and a one million token context window, Google still trails the best models from competitors in the US and China. Logan Kilpatrick, a member of the technical staff, responded to criticism on X , saying the explicit goal was efficiency, usability, and lower cost, and that performance still improved in the process.\nGemini 3.5 Flash-Lite targets large workloads at low cost\nThe smaller Gemini 3.5 Flash-Lite is tuned for low latency and high throughput. According to Artificial Analysis , it produces 350 output tokens per second. It costs $0.30 per million input tokens and $2.50 per million output tokens. Ad\nDEC_D_Incontent-2\nFlash-Lite posts large gains over 3.1 Flash-Lite, especially on agentic coding tasks. | Image: Google\nGoogle says Flash-Lite beats the older 3 Flash on several agentic and coding benchmarks, including SWE-Bench Pro and OSWorld-Verified. Compared with its direct predecessor, 3.1 Flash-Lite, its Terminal-Bench 2.1 score rises from 31 to 54 percent. Ad\nThe smaller Flash-Lite beats the larger Gemini 3 Flash on agentic software engineering and computer use. | Image: Google\nGoogle introduced Gemini 3.5 Flash at its last I/O conference as the centerpiece of its agent strategy. The company later added native computer use, allowing the model to operate browsers, desktops, and mobile devices on its own.\nGoogle's cybersecurity model remains restricted\nGemini 3.5 Flash Cyber is based on 3.5 Flash and tuned for cybersecurity work. Google has built it into CodeMender, Google DeepMind's code security agent. Several Flash Cyber subagents work in parallel and combine their results into one report. On the CyberGym benchmark, the model scores 83.2 percent, within two points of OpenAI's GPT-5.5-Cyber at 85.6 percent, despite being a much smaller model.\nCyberGym is the only comparison that includes competitor models. Scores are tightly clustered, and Google's edge comes mainly from lower cost per token. | Image: Google\nGoogle's Big Sleep team put the model to work hunting critical flaws in Chrome and Safari, and it outperformed both the standard Flash models and Anthropic's Claude Opus 4.6. When scanning commits in the V8 JavaScript engine, Flash Cyber turned up 55 confirmed unique findings. The standard 3.5 Flash found 47, Opus 4.6 found 36, and Google says ten of Flash Cyber's findings didn't show up in any other model's results.\nIn another test, Google's Cloud Vulnerability Research Team used the model to scan public APIs. It found remote code execution flaws within two hours and produced a working exploit that bypassed security protections.\nGoogle says the model is just as useful for offense as it is for defense, so the company is keeping access tight. Only governments and trusted partners can use 3.5 Flash Cyber through CodeMender as part of a pilot program. Google is making the CodeMender agent itself broadly available in preview through the Gemini Enterprise Agent Platform, but that version runs on the standard Gemini models. It supports C/C++, Go, Java, Python, Ruby, Rust, and TypeScript.\nThe missing Pro model leaves Google behind its rivals\nGemini 3.5 Pro, Google's next frontier model, still isn't publicly available. OpenAI is already serving that class with GPT-5.6 Sol, Anthropic has Fable and Mythos, and Chinese labs like Moonshot with Kimi K3 and Zhipu with GLM-5.2 are closing in on frontier performance. Even Meta recently released a model that outperforms Google's current lineup at writing code.\nInstead of competing at the top, Google shipped another Flash update focused on efficiency and lower prices. According to a recent Bloomberg report , the flagship model is months behind schedule as the company works on improving its coding performance. As long as 3.5 Pro stays in private testing, Google doesn't have a public model that competes at the top of the market.\nAI News Without the Hype – Curated by Humans\nSubscribe to THE DECODER for ad-free reading, a weekly AI newsletter, our exclusive \"AI Radar\" frontier report six times a year, full archive access, and access to our comment section.\nSubscribe now\nSource: Google\nBETA-TEST\n&times;\nwpDiscuz\nInsert",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-22/r-103-google-ships-three-new-gemini-flash-models-but-its-frontier-3-5-pro-re.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-22/r-103-google-ships-three-new-gemini-flash-models-but-its-frontier-3-5-pro-re.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-content-container",
+  "extraction_quality": "high",
+  "extraction_method": "content-container",
+  "readability_score": 88,
+  "extractor_diagnostics": {
+    "readability_score": 88,
+    "text_length": 6904,
+    "paragraph_count": 32,
+    "sentence_count": 53,
+    "boilerplate_hits": 3,
+    "symbol_ratio": 0.0013,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "content-container"
+  },
+  "has_full_text": true,
+  "content_length": 6904,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "0c75c8468ab584c0",
+    "missing": []
+  },
+  "evidence_strength": "rich_evidence",
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "low",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "merged_provider_duplicates",
+  "url_hash": "96fdb3cf39df5454",
+  "content_hash": "0c75c8468ab584c0",
+  "full_text_hash": "0c75c8468ab584c0",
+  "semantic_hash": "a0f704ece36cf9fe",
+  "duplicate_of": "merged 1 duplicate provider hit(s) before Raw selection",
+  "first_seen_at": "2026-07-21T00:00:00.000Z",
+  "last_seen_at": "2026-07-22T01:55:50.095Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "funding",
+      "text": "Google is shipping three new Flash models in the Gemini series, including the more efficient 3.6 Flash, which uses up to 65 percent fewer tokens, and a cybersecurity model available only to governments and select partners. But the anticipated flagship, Gemini 3.5 Pro, is still missing, while OpenAI, Anthropic, and Chinese labs are already competing at the frontier level. The article Google ships three new Gemini Flash models but its frontier 3.5 Pro remains lost in training appeared fir",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Ad Skip to content Google ships three new Gemini Flash models but its frontier 3.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "5 Pro remains lost in training Jonathan Kemper View the LinkedIn Profile of Jonathan Kemper Jul 21, 2026 Key Points Google is releasing three efficient AI models—Gemini 3.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "supporting_context",
+      "text": "5 Flash-Lite, and the security-focused 3.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "5 Flash Cyber—while its flagship 3.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "5 Pro remains delayed.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-22T01:55:50.095Z",
+  "business_elements": {
+    "companies": [
+      "The Decoder AI News",
+      "OpenAI",
+      "Anthropic",
+      "Google",
+      "Meta"
+    ],
+    "products": [
+      "Gemini",
+      "agent",
+      "GPT-5",
+      "Claude",
+      "Agent"
+    ],
+    "people": [],
+    "industries": [
+      "法律 / 法务",
+      "开发者工具",
+      "企业服务"
+    ],
+    "roles": [
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "合同审阅 / 法律研究",
+      "计费 / 预算管理",
+      "权限 / 安全治理"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "合作 / 联盟"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "法务",
+      "财务 / 预算",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "3.5",
+      "3.6",
+      "65",
+      "21",
+      "2026",
+      "4",
+      "17",
+      "$1.50"
+    ],
+    "quotes": [
+      "as soon as it is ready.",
+      "most ambitious training run",
+      "excited by the progress.",
+      "AI Radar"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Google is shipping three new Flash models in the Gemini series, including the more efficient 3.6 Flash, which uses up to 65 percent fewer tokens, and a cybersecurity model available only to governments and select partners. But the anticipated flagship, Gemini 3.5 Pro, is still missing, while OpenAI, Anthropic, and Chinese labs are already competing at the frontier level. The article Google ships three new Gemini Flash models but its frontier 3.5 Pro remains lost in training appeared fir",
+      "Ad Skip to content Google ships three new Gemini Flash models but its frontier 3.",
+      "5 Pro remains lost in training Jonathan Kemper View the LinkedIn Profile of Jonathan Kemper Jul 21, 2026 Key Points Google is releasing three efficient AI models—Gemini 3."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": [
+      "5 Flash-Lite, and the security-focused 3."
+    ]
+  },
+  "guanlan_scores": {
+    "importance_type": "important_case",
+    "importance_score": 5,
+    "importance_reason": "real customer or adoption case; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "commercial_or_risk_context"
+    ],
+    "novelty": 2,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": true,
+    "trend_candidate_context": true,
+    "signal_card_candidate": true,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Google ships three new Gemini Flash models but its frontier 3.5 Pro remains lost in training\n\n- raw_id: R-103\n- title_zh: 谷歌发布三款新Gemini Flash模型，但前沿3.5 Pro仍在训练中\n- title_translation_status: translated\n- title_translation_method: deepseek_title_translation\n- original_url: https://the-decoder.com/google-ships-three-new-gemini-flash-models-but-its-frontier-3-5-pro-remains-lost-in-training/\n- source_name: The Decoder AI News\n- collected_at: 2026-07-22T01:55:50.095Z\n\n## clean_text\n\nAd\nSkip to content\nGoogle ships three new Gemini Flash models but its frontier 3.5 Pro remains lost in training\nJonathan Kemper\nView the LinkedIn Profile of Jonathan Kemper\nJul 21, 2026\nKey Points\nGoogle is releasing three efficient AI models—Gemini 3.6 Flash, 3.5 Flash-Lite, and the security-focused 3.5 Flash Cyber—while its flagship 3.5 Pro remains delayed. Gemini 4 is already in training.\nEach model serves a distinct purpose: 3.6 Flash cuts token usage at lower cost, Flash-Lite prioritizes speed, and the Cyber model is restricted to governments and partners due to potential risks.\nWithout the Pro model, Google is losing ground to OpenAI, Anthropic, and even Meta, which are pushing ahead with more capable frontier models.\nGoogle is expanding the Gemini lineup with two Flash models and a specialized Cyber version. But the anticipated frontier model, Gemini 3.5 Pro, is still missing.\nGoogle has announced three new models in the Gemini Flash family : 3.6 Flash, 3.5 Flash-Lite, and the cybersecurity model 3.5 Flash Cyber. Buried in the announcement is the fact that Google's anticipated flagship, Gemini 3.5 Pro, is still being tested exclusively with partners and will ship \"as soon as it is ready.\"\nGoogle says pretraining for Gemini 4 is already underway. The company calls it its \"most ambitious training run\" yet and says it is \"excited by the progress.\" That reads like damage control, and it makes clear that Google knows what the market expects but can't deliver yet. Ad\nGemini 3.6 Flash trades peak performance for efficiency and lower prices\nAccording to the benchmark aggregator Artificial Analysis Index , Gemini 3.6 Flash is expected to use about 17 percent fewer output tokens than 3.5 Flash. Google says the savings reach 65 percent on specific benchmarks such as DeepSWE. Google has cut the price to $1.50 per million input tokens and $7.50 per million output tokens, making it much cheaper than the earlier 3.1 Pro model, which 3.6 Flash consistently beats in benchmarks. Ad\nDEC_D_Incontent-1\nGemini 3.6 Flash leads across all four agentic benchmarks compared to earlier Gemini generations. | Image: Google\nGoogle also reports gains over 3.5 Flash. DeepSWE rises from 37 to 49 percent, MLE Bench from 49.7 to 63.9 percent, and OSWorld-Verified from 78.4 to 83 percent. The GDPval-AA v2 knowledge work benchmark improves from 1,349 to 1,421 points.\nComputer Use is now a built-in client-side tool in the Gemini API and Gemini Enterprise. Google has also added stronger Frontier Safety safeguards against CBRN misuse and cyberattacks. CBRN refers to chemical, biological, radiological, and nuclear threats. Ad\nOn DeepSWE, 3.6 Flash uses just over one-third as many output tokens as 3.5 Flash. | Image: Google\nDespite gains on multimodal tasks and a one million token context window, Google still trails the best models from competitors in the US and China. Logan Kilpatrick, a member of the technical staff, responded to criticism on X , saying the explicit goal was efficiency, usability, and lower cost, and that performance still improved in the process.\nGemini 3.5 Flash-Lite targets large workloads at low cost\nThe smaller Gemini 3.5 Flash-Lite is tuned for low latency and high throughput. According to Artificial Analysis , it produces 350 output tokens per second. It costs $0.30 per million input tokens and $2.50 per million output tokens. Ad\nDEC_D_Incontent-2\nFlash-Lite posts large gains over 3.1 Flash-Lite, especially on agentic coding tasks. | Image: Google\nGoogle says Flash-Lite beats the older 3 Flash on several agentic and coding benchmarks, including SWE-Bench Pro and OSWorld-Verified. Compared with its direct predecessor, 3.1 Flash-Lite, its Terminal-Bench 2.1 score rises from 31 to 54 percent. Ad\nThe smaller Flash-Lite beats the larger Gemini 3 Flash on agentic software engineering and computer use. | Image: Google\nGoogle introduced Gemini 3.5 Flash at its last I/O conference as the centerpiece of its agent strategy. The company later added native computer use, allowing the model to operate browsers, desktops, and mobile devices on its own.\nGoogle's cybersecurity model remains restricted\nGemini 3.5 Flash Cyber is based on 3.5 Flash and tuned for cybersecurity work. Google has built it into CodeMender, Google DeepMind's code security agent. Several Flash Cyber subagents work in parallel and combine their results into one report. On the CyberGym benchmark, the model scores 83.2 percent, within two points of OpenAI's GPT-5.5-Cyber at 85.6 percent, despite being a much smaller model.\nCyberGym is the only comparison that includes competitor models. Scores are tightly clustered, and Google's edge comes mainly from lower cost per token. | Image: Google\nGoogle's Big Sleep team put the model to work hunting critical flaws in Chrome and Safari, and it outperformed both the standard Flash models and Anthropic's Claude Opus 4.6. When scanning commits in the V8 JavaScript engine, Flash Cyber turned up 55 confirmed unique findings. The standard 3.5 Flash found 47, Opus 4.6 found 36, and Google says ten of Flash Cyber's findings didn't show up in any other model's results.\nIn another test, Google's Cloud Vulnerability Research Team used the model to scan public APIs. It found remote code execution flaws within two hours and produced a working exploit that bypassed security protections.\nGoogle says the model is just as useful for offense as it is for defense, so the company is keeping access tight. Only governments and trusted partners can use 3.5 Flash Cyber through CodeMender as part of a pilot program. Google is making the CodeMender agent itself broadly available in preview through the Gemini Enterprise Agent Platform, but that version runs on the standard Gemini models. It supports C/C++, Go, Java, Python, Ruby, Rust, and TypeScript.\nThe missing Pro model leaves Google behind its rivals\nGemini 3.5 Pro, Google's next frontier model, still isn't publicly available. OpenAI is already serving that class with GPT-5.6 Sol, Anthropic has Fable and Mythos, and Chinese labs like Moonshot with Kimi K3 and Zhipu with GLM-5.2 are closing in on frontier performance. Even Meta recently released a model that outperforms Google's current lineup at writing code.\nInstead of competing at the top, Google shipped another Flash update focused on efficiency and lower prices. According to a recent Bloomberg report , the flagship model is months behind schedule as the company works on improving its coding performance. As long as 3.5 Pro stays in private testing, Google doesn't have a public model that competes at the top of the market.\nAI News Without the Hype – Curated by Humans\nSubscribe to THE DECODER for ad-free reading, a weekly AI newsletter, our exclusive \"AI Radar\" frontier report six times a year, full archive access, and access to our comment section.\nSubscribe now\nSource: Google\nBETA-TEST\n&times;\nwpDiscuz\nInsert\n\n## full_text\n\nAd\nSkip to content\nGoogle ships three new Gemini Flash models but its frontier 3.5 Pro remains lost in training\nJonathan Kemper\nView the LinkedIn Profile of Jonathan Kemper\nJul 21, 2026\nKey Points\nGoogle is releasing three efficient AI models—Gemini 3.6 Flash, 3.5 Flash-Lite, and the security-focused 3.5 Flash Cyber—while its flagship 3.5 Pro remains delayed. Gemini 4 is already in training.\nEach model serves a distinct purpose: 3.6 Flash cuts token usage at lower cost, Flash-Lite prioritizes speed, and the Cyber model is restricted to governments and partners due to potential risks.\nWithout the Pro model, Google is losing ground to OpenAI, Anthropic, and even Meta, which are pushing ahead with more capable frontier models.\nGoogle is expanding the Gemini lineup with two Flash models and a specialized Cyber version. But the anticipated frontier model, Gemini 3.5 Pro, is still missing.\nGoogle has announced three new models in the Gemini Flash family : 3.6 Flash, 3.5 Flash-Lite, and the cybersecurity model 3.5 Flash Cyber. Buried in the announcement is the fact that Google's anticipated flagship, Gemini 3.5 Pro, is still being tested exclusively with partners and will ship \"as soon as it is ready.\"\nGoogle says pretraining for Gemini 4 is already underway. The company calls it its \"most ambitious training run\" yet and says it is \"excited by the progress.\" That reads like damage control, and it makes clear that Google knows what the market expects but can't deliver yet. Ad\nGemini 3.6 Flash trades peak performance for efficiency and lower prices\nAccording to the benchmark aggregator Artificial Analysis Index , Gemini 3.6 Flash is expected to use about 17 percent fewer output tokens than 3.5 Flash. Google says the savings reach 65 percent on specific benchmarks such as DeepSWE. Google has cut the price to $1.50 per million input tokens and $7.50 per million output tokens, making it much cheaper than the earlier 3.1 Pro model, which 3.6 Flash consistently beats in benchmarks. Ad\nDEC_D_Incontent-1\nGemini 3.6 Flash leads across all four agentic benchmarks compared to earlier Gemini generations. | Image: Google\nGoogle also reports gains over 3.5 Flash. DeepSWE rises from 37 to 49 percent, MLE Bench from 49.7 to 63.9 percent, and OSWorld-Verified from 78.4 to 83 percent. The GDPval-AA v2 knowledge work benchmark improves from 1,349 to 1,421 points.\nComputer Use is now a built-in client-side tool in the Gemini API and Gemini Enterprise. Google has also added stronger Frontier Safety safeguards against CBRN misuse and cyberattacks. CBRN refers to chemical, biological, radiological, and nuclear threats. Ad\nOn DeepSWE, 3.6 Flash uses just over one-third as many output tokens as 3.5 Flash. | Image: Google\nDespite gains on multimodal tasks and a one million token context window, Google still trails the best models from competitors in the US and China. Logan Kilpatrick, a member of the technical staff, responded to criticism on X , saying the explicit goal was efficiency, usability, and lower cost, and that performance still improved in the process.\nGemini 3.5 Flash-Lite targets large workloads at low cost\nThe smaller Gemini 3.5 Flash-Lite is tuned for low latency and high throughput. According to Artificial Analysis , it produces 350 output tokens per second. It costs $0.30 per million input tokens and $2.50 per million output tokens. Ad\nDEC_D_Incontent-2\nFlash-Lite posts large gains over 3.1 Flash-Lite, especially on agentic coding tasks. | Image: Google\nGoogle says Flash-Lite beats the older 3 Flash on several agentic and coding benchmarks, including SWE-Bench Pro and OSWorld-Verified. Compared with its direct predecessor, 3.1 Flash-Lite, its Terminal-Bench 2.1 score rises from 31 to 54 percent. Ad\nThe smaller Flash-Lite beats the larger Gemini 3 Flash on agentic software engineering and computer use. | Image: Google\nGoogle introduced Gemini 3.5 Flash at its last I/O conference as the centerpiece of its agent strategy. The company later added native computer use, allowing the model to operate browsers, desktops, and mobile devices on its own.\nGoogle's cybersecurity model remains restricted\nGemini 3.5 Flash Cyber is based on 3.5 Flash and tuned for cybersecurity work. Google has built it into CodeMender, Google DeepMind's code security agent. Several Flash Cyber subagents work in parallel and combine their results into one report. On the CyberGym benchmark, the model scores 83.2 percent, within two points of OpenAI's GPT-5.5-Cyber at 85.6 percent, despite being a much smaller model.\nCyberGym is the only comparison that includes competitor models. Scores are tightly clustered, and Google's edge comes mainly from lower cost per token. | Image: Google\nGoogle's Big Sleep team put the model to work hunting critical flaws in Chrome and Safari, and it outperformed both the standard Flash models and Anthropic's Claude Opus 4.6. When scanning commits in the V8 JavaScript engine, Flash Cyber turned up 55 confirmed unique findings. The standard 3.5 Flash found 47, Opus 4.6 found 36, and Google says ten of Flash Cyber's findings didn't show up in any other model's results.\nIn another test, Google's Cloud Vulnerability Research Team used the model to scan public APIs. It found remote code execution flaws within two hours and produced a working exploit that bypassed security protections.\nGoogle says the model is just as useful for offense as it is for defense, so the company is keeping access tight. Only governments and trusted partners can use 3.5 Flash Cyber through CodeMender as part of a pilot program. Google is making the CodeMender agent itself broadly available in preview through the Gemini Enterprise Agent Platform, but that version runs on the standard Gemini models. It supports C/C++, Go, Java, Python, Ruby, Rust, and TypeScript.\nThe missing Pro model leaves Google behind its rivals\nGemini 3.5 Pro, Google's next frontier model, still isn't publicly available. OpenAI is already serving that class with GPT-5.6 Sol, Anthropic has Fable and Mythos, and Chinese labs like Moonshot with Kimi K3 and Zhipu with GLM-5.2 are closing in on frontier performance. Even Meta recently released a model that outperforms Google's current lineup at writing code.\nInstead of competing at the top, Google shipped another Flash update focused on efficiency and lower prices. According to a recent Bloomberg report , the flagship model is months behind schedule as the company works on improving its coding performance. As long as 3.5 Pro stays in private testing, Google doesn't have a public model that competes at the top of the market.\nAI News Without the Hype – Curated by Humans\nSubscribe to THE DECODER for ad-free reading, a weekly AI newsletter, our exclusive \"AI Radar\" frontier report six times a year, full archive access, and access to our comment section.\nSubscribe now\nSource: Google\nBETA-TEST\n&times;\nwpDiscuz\nInsert\n\n## extraction_diagnostics\n\n- extraction_method: content-container\n- readability_score: 88\n- fetch_status: fetched-readable-text-content-container\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [funding / signal_card_candidate, relationship_graph_input, trend_candidate_context / high] Google is shipping three new Flash models in the Gemini series, including the more efficient 3.6 Flash, which uses up to 65 percent fewer tokens, and a cybersecurity model available only to governments and select partners. But the anticipated flagship, Gemini 3.5 Pro, is still missing, while OpenAI, Anthropic, and Chinese labs are already competing at the frontier level. The article Google ships three new Gemini Flash models but its frontier 3.5 Pro remains lost in training appeared fir\n2. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Ad Skip to content Google ships three new Gemini Flash models but its frontier 3.\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] 5 Pro remains lost in training Jonathan Kemper View the LinkedIn Profile of Jonathan Kemper Jul 21, 2026 Key Points Google is releasing three efficient AI models—Gemini 3.\n4. [supporting_context / signal_card_candidate, relationship_graph_input / medium] 5 Flash-Lite, and the security-focused 3.\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] 5 Flash Cyber—while its flagship 3.\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] 5 Pro remains delayed.\n"
+}

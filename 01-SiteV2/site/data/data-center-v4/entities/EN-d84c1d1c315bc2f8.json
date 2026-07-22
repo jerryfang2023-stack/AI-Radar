@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-21T01:27:58.078Z",
-    "latestDataDate": "2026-07-21",
-    "currentDate": "2026-07-21",
-    "eventCount": 1347,
+    "generatedAt": "2026-07-22T01:57:46.409Z",
+    "latestDataDate": "2026-07-22",
+    "currentDate": "2026-07-22",
+    "eventCount": 1401,
     "quarantinedEventCount": 13
   },
   "entity": {
@@ -25,10 +25,14 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-968e2d5b08687bf4"
+    ],
     "firstSeen": "2026-06-23",
     "lastSeen": "2026-06-23",
-    "relationIds": [],
+    "relationIds": [
+      "REL2-171c0b5e7e3fda33"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -61,8 +65,80 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-968e2d5b08687bf4",
+      "name": "Samsung",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "三星"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-48075ca70a5458ec",
+        "EV-b3c7c4bff17063d8",
+        "EV-79a0bbe8b8623b28",
+        "EV-614fb5bb3cfc2519",
+        "EV-59882383f82f215d",
+        "EV-538adc98d1da8fda",
+        "EV-d209a6acecba4285",
+        "EV-ef6464cf7f764835",
+        "EV-a37b9d9fb85e460f",
+        "EV-8a9b12665a3e40a0",
+        "EV-415261e2efce3bf8",
+        "EV-9ca7db66f8f10b63",
+        "EV-9b29acd28643e9d1",
+        "EV-20dcacae656a9eb8",
+        "EV-b9da0f17dc8eb908",
+        "EV-02186ed7885f68fe",
+        "EV-44a492c1688949cf",
+        "EV-1b92b6c835ce240c",
+        "EV-3b3af6df1ca6c880",
+        "EV-c544ddd798dfcd51",
+        "EV-5271985bba70f3d1"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
+        "TX-use_case-software_development",
+        "TX-technology-on_device"
+      ],
+      "relatedEntityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-d84c1d1c315bc2f8"
+      ],
+      "firstSeen": "2026-05-22",
+      "lastSeen": "2026-07-22"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-171c0b5e7e3fda33",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-968e2d5b08687bf4",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-d84c1d1c315bc2f8",
+      "object_type": "entity",
+      "event_id": "EV-9b29acd28643e9d1",
+      "claim_refs": [
+        "CL-3088dff95dd16d25",
+        "CL-e32b273519e183f6",
+        "CL-9b6df01dd258eb44",
+        "CL-e696aa34031884ea"
+      ],
+      "source_refs": [
+        "SA-3c73c5563433827e"
+      ],
+      "data_date": "2026-06-23",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [],
   "fde": [],
   "hardware": []

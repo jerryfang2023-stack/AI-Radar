@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-21T01:27:58.078Z",
-    "latestDataDate": "2026-07-21",
-    "currentDate": "2026-07-21",
-    "eventCount": 1347,
+    "generatedAt": "2026-07-22T01:57:46.409Z",
+    "latestDataDate": "2026-07-22",
+    "currentDate": "2026-07-22",
+    "eventCount": 1401,
     "quarantinedEventCount": 13
   },
   "node": {
@@ -25,6 +25,8 @@
       "EV-467d1a701d21327d",
       "EV-59882383f82f215d",
       "EV-a84ec4216d3ded6d",
+      "EV-b4f69c41e23c7ce0",
+      "EV-ff77876694ab8395",
       "EV-cafe435ddd007821",
       "EV-ff1f6119de13fa19",
       "EV-4dd25589d834060d",
@@ -35,7 +37,9 @@
       "EV-39848cdd62c00e59",
       "EV-4faa2bcf2e42e60c",
       "EV-9ee3c0ec243b6129",
+      "EV-a37b9d9fb85e460f",
       "EV-19bcfc6d7c1612cb",
+      "EV-941ba9ebdc43f20c",
       "EV-6b51b1b6fe22c540",
       "EV-5f718c76c285ac9b",
       "EV-625904809a9b14b8",
@@ -64,6 +68,8 @@
       "EN-968e2d5b08687bf4",
       "EN-ee04228c5c6d8b08",
       "EN-7706c3c94d5f9b59",
+      "EN-01839aa42da88393",
+      "EN-9fbf261b62c1d7c0",
       "EN-59ae856cd788d0f5",
       "EN-0f3360879e746531",
       "EN-80d387ccb3289295",
@@ -73,7 +79,6 @@
       "EN-8efebac68a48c369",
       "EN-16fd849ce27f115b",
       "EN-f5791343a13abc71",
-      "EN-9fbf261b62c1d7c0",
       "EN-956b7280912ef1cc",
       "EN-18ada5002dd89e01",
       "EN-222f930b87524636",
@@ -81,8 +86,12 @@
       "EN-aa75c47729b4a292",
       "EN-8147e6fed86d42c1",
       "EN-51188f73e8dfbfee",
+      "EN-3bc9f78028bc2dba",
+      "EN-50e756052d0a9ac3",
       "EN-2abf8289b2f2113f",
       "EN-91901356a63794df",
+      "EN-954dc5d6516f127c",
+      "EN-e07654c7cc29acbd",
       "EN-e3b1bf3dab957ffe",
       "EN-cf9488537f777c1a",
       "EN-38f4d27a18084522",
@@ -106,13 +115,14 @@
       "EN-6c7575a43005188a"
     ],
     "fdeIds": [
+      "FDE-ab9846c6cdc82a26",
       "FDE-9f64e1521dd2dea0"
     ],
     "hardwareIds": [
       "HW-ceb55d9bc637c1d3"
     ],
     "firstSeen": "2025-12-02",
-    "lastSeen": "2026-07-20"
+    "lastSeen": "2026-07-22"
   },
   "events": [
     {
@@ -1136,6 +1146,138 @@
       "products": [],
       "sourceUrl": "https://www.prnewswire.com/news-releases/wonderful-raises-150m-series-b-to-accelerate-enterprise-ai-adoption-in-30-markets-302712238.html",
       "publisher": "prnewswire.com"
+    },
+    {
+      "id": "EV-b4f69c41e23c7ce0",
+      "dataDate": "2026-07-22",
+      "date": "2026-07-22",
+      "updatedDate": "2026-07-22",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "eventGroup": "AI 硬件",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "纬创资通美国首家半导体工厂：投资 7 亿美元，生产英伟达最强 AI 计算产品",
+      "originalTitle": "",
+      "subject": "纬创资通",
+      "action": "hardware_deployment",
+      "object": "美国得克萨斯州沃斯堡首家美国制造工厂",
+      "metrics": [],
+      "locations": [
+        "美国"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "manufacturing",
+            "dimensionName": "行业",
+            "name": "制造业"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "id": "manufacturing",
+          "dimensionName": "行业",
+          "name": "制造业"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "id": "manufacturing",
+          "dimensionName": "行业",
+          "name": "制造业"
+        }
+      ],
+      "entityIds": [
+        "EN-01839aa42da88393",
+        "EN-8d4321d936320802"
+      ],
+      "entityNames": [
+        "纬创资通",
+        "NVIDIA"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/979/812.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-ff77876694ab8395",
+      "dataDate": "2026-07-22",
+      "date": "2026-07-21",
+      "updatedDate": "2026-07-22",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "102.4Tbps：英伟达 Spectrum-6 交换系统落地全球超大规模 AI 工厂",
+      "originalTitle": "",
+      "subject": "102.4Tbps：英伟达 Spectrum-6 交换系统",
+      "action": "落地",
+      "object": "全球超大规模 AI 工厂",
+      "metrics": [
+        "102.4Tb"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "manufacturing",
+            "dimensionName": "行业",
+            "name": "制造业"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "id": "manufacturing",
+          "dimensionName": "行业",
+          "name": "制造业"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "id": "manufacturing",
+          "dimensionName": "行业",
+          "name": "制造业"
+        }
+      ],
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "entityNames": [
+        "NVIDIA",
+        "Microsoft"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/979/791.htm",
+      "publisher": "IT之家（RSS）"
     },
     {
       "id": "EV-cafe435ddd007821",
@@ -2221,6 +2363,86 @@
       "publisher": "IT之家（RSS）"
     },
     {
+      "id": "EV-a37b9d9fb85e460f",
+      "dataDate": "2026-07-22",
+      "date": "2026-07-21",
+      "updatedDate": "2026-07-22",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "CuspAI 推出\"AI 材料工厂\"计划，NVIDIA、Meta、三星均为创始成员",
+      "originalTitle": "",
+      "subject": "CuspAI",
+      "action": "推出",
+      "object": "\"AI 材料工厂\"计划，NVIDIA、Meta、三星均为创始成员",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "manufacturing",
+            "dimensionName": "行业",
+            "name": "制造业"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "id": "manufacturing",
+          "dimensionName": "行业",
+          "name": "制造业"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "id": "manufacturing",
+          "dimensionName": "行业",
+          "name": "制造业"
+        }
+      ],
+      "entityIds": [
+        "EN-3bc9f78028bc2dba",
+        "EN-8d4321d936320802",
+        "EN-ea3bd73e2b506e00",
+        "EN-968e2d5b08687bf4",
+        "EN-80d387ccb3289295",
+        "EN-50e756052d0a9ac3"
+      ],
+      "entityNames": [
+        "CuspAI",
+        "NVIDIA",
+        "Meta",
+        "Samsung",
+        "SoftBank",
+        "AI 材料工厂"
+      ],
+      "productName": "AI 材料工厂",
+      "products": [
+        {
+          "name": "AI 材料工厂",
+          "type": "产品/服务",
+          "ownerNames": [
+            "NVIDIA"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/979/446.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
       "id": "EV-19bcfc6d7c1612cb",
       "dataDate": "2026-07-19",
       "date": "2026-07-19",
@@ -2345,6 +2567,166 @@
       ],
       "sourceUrl": "https://ithome.com/0/978/684.htm",
       "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-941ba9ebdc43f20c",
+      "dataDate": "2026-07-22",
+      "date": "2026-07-16",
+      "updatedDate": "2026-07-22",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Nvidia 推出 Cosmos 3 Edge 模型，并扩大在日本物理 AI 领域的布局",
+      "originalTitle": "Nvidia launches Cosmos 3 Edge model and expands its physical AI push in Japan - SiliconANGLE",
+      "subject": "Nvidia",
+      "action": "launches Cosmos 3 Edge model",
+      "object": "and expands its physical AI push in Japan - SiliconANGLE",
+      "metrics": [],
+      "locations": [
+        "Japan"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        }
+      ],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          },
+          {
+            "dimensionId": "product_form",
+            "id": "data_infrastructure",
+            "dimensionName": "产品形态",
+            "name": "数据与模型基础设施"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "robotics_automation",
+            "dimensionName": "应用场景",
+            "name": "机器人与物理自动化"
+          }
+        ],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "manufacturing",
+            "dimensionName": "行业",
+            "name": "制造业"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "manufacturing",
+          "dimensionName": "行业",
+          "name": "制造业"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "data_infrastructure",
+          "dimensionName": "产品形态",
+          "name": "数据与模型基础设施"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "data_infrastructure",
+          "dimensionName": "产品形态",
+          "name": "数据与模型基础设施"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "manufacturing",
+          "dimensionName": "行业",
+          "name": "制造业"
+        }
+      ],
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-96eebba49dbbf422",
+        "EN-f475981105d2acbd",
+        "EN-e07654c7cc29acbd"
+      ],
+      "entityNames": [
+        "NVIDIA",
+        "Intel",
+        "SiliconANGLE",
+        "Cosmos 3 Edge"
+      ],
+      "productName": "SiliconANGLE",
+      "products": [
+        {
+          "name": "SiliconANGLE",
+          "type": "模型",
+          "ownerNames": [
+            "NVIDIA"
+          ]
+        },
+        {
+          "name": "Cosmos 3 Edge",
+          "type": "模型",
+          "ownerNames": [
+            "NVIDIA"
+          ]
+        }
+      ],
+      "sourceUrl": "https://siliconangle.com/2026/07/16/nvidia-launches-cosmos-3-edge-model-expands-physical-ai-push-japan",
+      "publisher": "siliconangle.com"
     },
     {
       "id": "EV-6b51b1b6fe22c540",
@@ -3652,6 +4034,8 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-2069f6a931b8c9d6",
+        "EV-02882e6f5e1902c6",
         "EV-e3792591090281c6",
         "EV-f6a72cddbda748b3",
         "EV-4eaf3aabecae6016",
@@ -3659,10 +4043,10 @@
         "EV-305ec93673f4f12e",
         "EV-640c5ea9f4fa2780",
         "EV-6e516b6e68def9cf",
-        "EV-463cb26b5e03c7f7",
         "EV-86ca5af11ee4d275",
         "EV-a8dc5c859946f336",
         "EV-d9cc588fb41a7e67",
+        "EV-463cb26b5e03c7f7",
         "EV-232ab5bcbaf6552d",
         "EV-48075ca70a5458ec",
         "EV-7b1c734882fa1ea6",
@@ -3730,7 +4114,7 @@
         "EV-8e01849c05b50355",
         "EV-4faa2bcf2e42e60c",
         "EV-45be473baf6dfa4c",
-        "EV-0d5a32aca724d30e",
+        "EV-941ba9ebdc43f20c",
         "EV-92d28aef0c4b0a8a",
         "EV-c2800c1c5a3f568f",
         "EV-d4ddee1b39cced77",
@@ -3822,7 +4206,7 @@
         "EN-c70eca6b0f88f44d"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-21"
+      "lastSeen": "2026-07-22"
     },
     {
       "id": "EN-7106dbc04a08ce3a",
@@ -3896,7 +4280,9 @@
       "name": "NVIDIA",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "英伟达"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -3918,6 +4304,9 @@
         "EV-a00763037a94d512",
         "EV-0e84a2f49d765ce3",
         "EV-467d1a701d21327d",
+        "EV-b4f69c41e23c7ce0",
+        "EV-11b2293769081d4c",
+        "EV-ff77876694ab8395",
         "EV-cafe435ddd007821",
         "EV-ed388875bc004add",
         "EV-bc9abd502c002102",
@@ -3941,8 +4330,14 @@
         "EV-4faa2bcf2e42e60c",
         "EV-9ee3c0ec243b6129",
         "EV-58c1cc3749294649",
+        "EV-2fea1664807824ce",
+        "EV-3ba971c5939b0f04",
+        "EV-cb3a8846bc4f8aca",
+        "EV-48977fd72d2fcfb8",
+        "EV-a37b9d9fb85e460f",
         "EV-118317b7f92e5e16",
         "EV-950237c6b3eb6343",
+        "EV-941ba9ebdc43f20c",
         "EV-29e069ac093f0e34",
         "EV-6b51b1b6fe22c540",
         "EV-c2800c1c5a3f568f",
@@ -3988,9 +4383,11 @@
         "EV-aa63303570154a9b",
         "EV-d2ac9700c86913da",
         "EV-d43a561da59b2897",
+        "EV-0e2a68efc19bfbaa",
         "EV-02b19ffbe883ee2e",
         "EV-8993e021ac17df4a",
         "EV-34929bdd016dc8d6",
+        "EV-c14e5185fd6bbe30",
         "EV-08f736f61f2b46f3",
         "EV-2c7d13d234147817",
         "EV-710b145230faa692",
@@ -4021,31 +4418,39 @@
         "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
-        "TX-technology-speech_audio",
         "TX-technology-image_generation",
+        "TX-technology-speech_audio",
         "TX-technology-inference_optimization"
       ],
       "relatedEntityIds": [
+        "EN-e07654c7cc29acbd",
+        "EN-52c2f30b6bda5898",
         "EN-1e71d9c1a5c4de16",
         "EN-683d8d597da71192",
         "EN-9e72fd4472222231",
+        "EN-8395dc051feafc4c",
+        "EN-aa15d891a32a51b8",
         "EN-0f3360879e746531",
         "EN-a1b0d8a938903dc7",
+        "EN-956b7280912ef1cc",
         "EN-4a639cb888a15d75",
         "EN-8d323d8bba783aa3",
         "EN-b5738c169b693bee",
         "EN-51fd7dc086fcb858",
         "EN-9e193e1ec8d75d41",
-        "EN-8395dc051feafc4c",
+        "EN-3ae50afab3e392b8",
         "EN-936f01f91fdadf69",
         "EN-4e7e886400fe6a83",
         "EN-1dc405a4cda895d0",
         "EN-12ab68e37d104d27",
         "EN-a3266ab9e10d6105",
-        "EN-9fbf261b62c1d7c0"
+        "EN-9fbf261b62c1d7c0",
+        "EN-11ef7b03c79c9bbd",
+        "EN-9bc22dcabf7f45b3",
+        "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-20"
+      "lastSeen": "2026-07-22"
     },
     {
       "id": "EN-c70eca6b0f88f44d",
@@ -4105,8 +4510,14 @@
         "EV-8e01849c05b50355",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
-        "EV-684f286ef629ed0d",
+        "EV-4449950a89892852",
+        "EV-6ce069b1845f5a52",
+        "EV-071c72225b8aaf80",
         "EV-0d5a32aca724d30e",
+        "EV-3043858af3970696",
+        "EV-8121a1ecdf168d8a",
+        "EV-cd067fa6f39fe828",
+        "EV-684f286ef629ed0d",
         "EV-ab3e820aa6d92542",
         "EV-b20bf10af759bd43",
         "EV-eb97c388b3197c06",
@@ -4198,7 +4609,6 @@
         "EV-b26bead25288d19c",
         "EV-3ff2a155035d01e7",
         "EV-644337db309a1c82",
-        "EV-8121a1ecdf168d8a",
         "EV-b796ba14c4eba861",
         "EV-7e6e0470ea99a6eb",
         "EV-cb08f263d23e6c00",
@@ -4255,6 +4665,9 @@
         "EV-773ffcc6e1df56fa",
         "EV-2923b35d936d9f4e",
         "EV-cf496e0f8a56ca97",
+        "EV-33fba8931cca96d5",
+        "EV-22c88b4ff8c7d8d8",
+        "EV-bf8086947a2639d4",
         "EV-61053b02542f0fcc",
         "EV-e6a7926fdb42b95a",
         "EV-94e1f1a5cea15eae",
@@ -4292,12 +4705,14 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-technology",
         "TX-industry-financial_services",
         "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
         "TX-technology-code_generation",
         "TX-industry-healthcare_life_sciences",
+        "TX-industry-professional_services",
         "TX-use_case-software_development",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
@@ -4323,6 +4738,7 @@
         "EN-3a13916345b60fad",
         "EN-9f15bb7e29e191eb",
         "EN-5a4c2be958c0af72",
+        "EN-968e2d5b08687bf4",
         "EN-cb4754c48f8023d0",
         "EN-2c063f604e634100",
         "EN-bb5b6487f881bbb1",
@@ -4337,7 +4753,7 @@
         "EN-d8494bb34d6ddc43"
       ],
       "firstSeen": "2026-03-13",
-      "lastSeen": "2026-07-21"
+      "lastSeen": "2026-07-22"
     },
     {
       "id": "EN-1bd14cd1a58c5708",
@@ -4426,7 +4842,11 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-133a92cb6cb25a0c",
+        "EV-7c836c34e7cf36ee",
+        "EV-071c72225b8aaf80",
         "EV-0d5a32aca724d30e",
+        "EV-ae1e2769aff82965",
         "EV-ab3e820aa6d92542",
         "EV-bc41a3060f11ca2d",
         "EV-83a8ac8a2554b60c",
@@ -4606,6 +5026,7 @@
         "TX-technology-computer_use"
       ],
       "relatedEntityIds": [
+        "EN-3850792f618f534b",
         "EN-7839fb10a8f14c70",
         "EN-d1ad14d4ad57d207",
         "EN-74692028630429c7",
@@ -4631,7 +5052,7 @@
         "EN-7b8cb35de7ad047a"
       ],
       "firstSeen": "2026-02-19",
-      "lastSeen": "2026-07-21"
+      "lastSeen": "2026-07-22"
     },
     {
       "id": "EN-b9b0702726f5be1c",
@@ -4700,6 +5121,8 @@
         "EV-cf76f090a1a20a36",
         "EV-fd7e79d3cb9cdb69",
         "EV-43301de739fe560e",
+        "EV-938eebe85a688ff1",
+        "EV-a37b9d9fb85e460f",
         "EV-cf176636839e45be",
         "EV-8540be15175c65da",
         "EV-9496f90f3e808992",
@@ -4748,6 +5171,7 @@
         "TX-technology-computer_use"
       ],
       "relatedEntityIds": [
+        "EN-62503b0d3dcfd096",
         "EN-e3863f813fe47240",
         "EN-d85ad5e8ff8e2889",
         "EN-a2fa009495c3bb3a",
@@ -4756,7 +5180,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-05-22",
-      "lastSeen": "2026-07-18"
+      "lastSeen": "2026-07-22"
     },
     {
       "id": "EN-883be863cc6562bb",
@@ -4784,7 +5208,9 @@
       "name": "Samsung",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "三星"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -4798,6 +5224,7 @@
         "EV-538adc98d1da8fda",
         "EV-d209a6acecba4285",
         "EV-ef6464cf7f764835",
+        "EV-a37b9d9fb85e460f",
         "EV-8a9b12665a3e40a0",
         "EV-415261e2efce3bf8",
         "EV-9ca7db66f8f10b63",
@@ -4818,9 +5245,12 @@
         "TX-use_case-software_development",
         "TX-technology-on_device"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-d84c1d1c315bc2f8"
+      ],
       "firstSeen": "2026-05-22",
-      "lastSeen": "2026-07-18"
+      "lastSeen": "2026-07-22"
     },
     {
       "id": "EN-ee04228c5c6d8b08",
@@ -4870,6 +5300,149 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-05-22",
       "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "EN-01839aa42da88393",
+      "name": "纬创资通",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-b4f69c41e23c7ce0"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-manufacturing"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-22",
+      "lastSeen": "2026-07-22"
+    },
+    {
+      "id": "EN-9fbf261b62c1d7c0",
+      "name": "Microsoft",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "微软"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-86ca5af11ee4d275",
+        "EV-52115fee0e716170",
+        "EV-20d762872664fddb",
+        "EV-88f4ee8cd57bdf42",
+        "EV-44a4e92c03a31ab1",
+        "EV-7585b033d4005977",
+        "EV-fa66f00e9d4b20c2",
+        "EV-ff77876694ab8395",
+        "EV-4fba2b2f1ac10a79",
+        "EV-bcb74b02448b7d78",
+        "EV-47a16db069ed320e",
+        "EV-49c6291694fb6c7b",
+        "EV-381b79897d896995",
+        "EV-d756f05478303505",
+        "EV-7263caa45bbf168e",
+        "EV-8abf5adc3e72fbb8",
+        "EV-6acfb15c012ddf6d",
+        "EV-2fab4396000198d2",
+        "EV-3fb492fb45980541",
+        "EV-b833b29d904b39ac",
+        "EV-9dab7fa55702e561",
+        "EV-b2e374d54b10b9af",
+        "EV-4763b46821ab746e",
+        "EV-58c1cc3749294649",
+        "EV-c0a65877001ed413",
+        "EV-bd508dbe4205774f",
+        "EV-cd067fa6f39fe828",
+        "EV-118317b7f92e5e16",
+        "EV-c4723445b11bb275",
+        "EV-7963d8c78531f12d",
+        "EV-7c899d5decafc42f",
+        "EV-b920999c64aa9ef6",
+        "EV-33292a33d0f4d599",
+        "EV-b3a050d576cea2f2",
+        "EV-fdcc4ff01b49053e",
+        "EV-cadcc94249dea81d",
+        "EV-dae42c1daf8ba2f8",
+        "EV-b862692915ae70bb",
+        "EV-51aed98773a9fca1",
+        "EV-cc3b92fe233953cf",
+        "EV-0370a17f0ef39c3e",
+        "EV-578a9db1fe952d0a",
+        "EV-b93b5cc15823e9c3",
+        "EV-7309586168387ad8",
+        "EV-8aead769e84de342",
+        "EV-7fb25ff3d853c314",
+        "EV-3acf607a02706fa8",
+        "EV-4ee99f92b011d16f",
+        "EV-9009adaed650ddde",
+        "EV-8a26b85b4f432525",
+        "EV-f953555178744c22",
+        "EV-28145c97a7237d6d",
+        "EV-10aac036228b3c6b",
+        "EV-8495af729cd05f62",
+        "EV-e28e134345ea5f99",
+        "EV-f7484ad16a6d1876",
+        "EV-d2d1834222ab32d3",
+        "EV-04c2ffd7f6b10126",
+        "EV-a9e22f22b7a2ec53",
+        "EV-922de7a46f447efa",
+        "EV-1f61330a3f828179",
+        "EV-523e5de44cc464fb",
+        "EV-ae89898e7aa4a4d6",
+        "EV-d596f111808bd55b",
+        "EV-a4f052325d0ef230",
+        "EV-6ce6b9c9780b97d9",
+        "EV-62df953d81def866",
+        "EV-1b92b6c835ce240c",
+        "EV-3da14e3743571e92",
+        "EV-d9a78a839d6c628f",
+        "EV-1587a760d81451be",
+        "EV-33e7429a7bc94840",
+        "EV-022d1f3160d94048",
+        "EV-7580a050ca19a8ae"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-technology",
+        "TX-industry-retail_ecommerce",
+        "TX-industry-manufacturing",
+        "TX-industry-automotive_transportation",
+        "TX-technology-code_generation",
+        "TX-use_case-customer_service",
+        "TX-industry-healthcare_life_sciences",
+        "TX-use_case-robotics_automation",
+        "TX-use_case-software_development",
+        "TX-use_case-cybersecurity",
+        "TX-technology-on_device",
+        "TX-technology-model_context_protocol",
+        "TX-industry-telecommunications",
+        "TX-technology-reasoning",
+        "TX-technology-distillation",
+        "TX-technology-computer_use"
+      ],
+      "relatedEntityIds": [
+        "EN-8652f6cd9088f1fa",
+        "EN-597d8c4afa5fe3d6",
+        "EN-d2f4e09cb01afa3c",
+        "EN-7d3194f79e645c42",
+        "EN-38945a66b4806b11",
+        "EN-c141d2237427f30d",
+        "EN-cbc62794911ff31b",
+        "EN-8d4321d936320802",
+        "EN-10fce287b4b1464c"
+      ],
+      "firstSeen": "2026-02-13",
+      "lastSeen": "2026-07-22"
     },
     {
       "id": "EN-59ae856cd788d0f5",
@@ -4935,7 +5508,9 @@
       "name": "SoftBank",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "软银"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -4943,6 +5518,7 @@
       "eventIds": [
         "EV-1a6688afdfd108ef",
         "EV-cafe435ddd007821",
+        "EV-a37b9d9fb85e460f",
         "EV-08f736f61f2b46f3"
       ],
       "viewpointIds": [],
@@ -4959,7 +5535,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-15",
-      "lastSeen": "2026-07-18"
+      "lastSeen": "2026-07-22"
     },
     {
       "id": "EN-be972f28adbc6e84",
@@ -4989,8 +5565,7 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "gemini",
-        "谷歌"
+        "Gemini"
       ],
       "verificationStatus": "verified",
       "datasetScopes": [
@@ -5023,8 +5598,14 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
+        "EV-6ce069b1845f5a52",
+        "EV-597b8257a97b3d02",
+        "EV-5aaa4c6697606274",
+        "EV-834e65247c2d4a3b",
+        "EV-cc974e0031c69715",
+        "EV-cd067fa6f39fe828",
+        "EV-dc3a5509a690a6b0",
         "EV-f3cc0845ce442e6b",
-        "EV-0d5a32aca724d30e",
         "EV-bee410f8134cba5a",
         "EV-a255cfc0dab44564",
         "EV-98a80b75b27d9f3b",
@@ -5141,18 +5722,20 @@
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-embodied_ai",
         "TX-technology-fine_tuning",
-        "TX-technology-open_weights",
-        "TX-technology-video_generation",
         "TX-technology-multimodal",
+        "TX-technology-video_generation",
         "TX-industry-media_entertainment",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
+        "TX-technology-image_generation",
         "TX-technology-speech_audio",
         "TX-use_case-content_creation",
-        "TX-technology-image_generation",
         "TX-technology-computer_use"
       ],
       "relatedEntityIds": [
+        "EN-a85d5a9b4a77d59b",
+        "EN-6f216f2ea5b7a13e",
+        "EN-18f0900d6c487f59",
         "EN-419f2cd96ee122e3",
         "EN-96eebba49dbbf422",
         "EN-81e577740888ca6d",
@@ -5164,11 +5747,8 @@
         "EN-01f1074bb52ff605",
         "EN-f2c032b19edb7900",
         "EN-2ab6d53e717a0e0d",
-        "EN-1cd41545564777ce",
         "EN-2998f8b13f4fd72e",
-        "EN-3546e1b15e6549b2",
         "EN-b5c336c0dd1ff29c",
-        "EN-e1a4e41919f7c2dc",
         "EN-d56aa2f9908f566a",
         "EN-4baef0e41cbd7ae2",
         "EN-bdfecbcd7dbf76d2",
@@ -5176,7 +5756,7 @@
         "EN-2aae0de3f5530f08"
       ],
       "firstSeen": "2026-04-12",
-      "lastSeen": "2026-07-21"
+      "lastSeen": "2026-07-22"
     },
     {
       "id": "EN-2fc9fff8ab7f35aa",
@@ -5269,124 +5849,6 @@
       "lastSeen": "2026-06-03"
     },
     {
-      "id": "EN-9fbf261b62c1d7c0",
-      "name": "Microsoft",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [
-        "微软"
-      ],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-86ca5af11ee4d275",
-        "EV-52115fee0e716170",
-        "EV-20d762872664fddb",
-        "EV-88f4ee8cd57bdf42",
-        "EV-44a4e92c03a31ab1",
-        "EV-7585b033d4005977",
-        "EV-4fba2b2f1ac10a79",
-        "EV-bcb74b02448b7d78",
-        "EV-47a16db069ed320e",
-        "EV-49c6291694fb6c7b",
-        "EV-381b79897d896995",
-        "EV-d756f05478303505",
-        "EV-7263caa45bbf168e",
-        "EV-8abf5adc3e72fbb8",
-        "EV-2fab4396000198d2",
-        "EV-3fb492fb45980541",
-        "EV-b833b29d904b39ac",
-        "EV-9dab7fa55702e561",
-        "EV-b2e374d54b10b9af",
-        "EV-4763b46821ab746e",
-        "EV-58c1cc3749294649",
-        "EV-c0a65877001ed413",
-        "EV-bd508dbe4205774f",
-        "EV-118317b7f92e5e16",
-        "EV-c4723445b11bb275",
-        "EV-7963d8c78531f12d",
-        "EV-7c899d5decafc42f",
-        "EV-b920999c64aa9ef6",
-        "EV-33292a33d0f4d599",
-        "EV-b3a050d576cea2f2",
-        "EV-fdcc4ff01b49053e",
-        "EV-cadcc94249dea81d",
-        "EV-dae42c1daf8ba2f8",
-        "EV-b862692915ae70bb",
-        "EV-51aed98773a9fca1",
-        "EV-cc3b92fe233953cf",
-        "EV-0370a17f0ef39c3e",
-        "EV-578a9db1fe952d0a",
-        "EV-b93b5cc15823e9c3",
-        "EV-7309586168387ad8",
-        "EV-8aead769e84de342",
-        "EV-7fb25ff3d853c314",
-        "EV-3acf607a02706fa8",
-        "EV-4ee99f92b011d16f",
-        "EV-9009adaed650ddde",
-        "EV-8a26b85b4f432525",
-        "EV-f953555178744c22",
-        "EV-28145c97a7237d6d",
-        "EV-10aac036228b3c6b",
-        "EV-8495af729cd05f62",
-        "EV-e28e134345ea5f99",
-        "EV-f7484ad16a6d1876",
-        "EV-d2d1834222ab32d3",
-        "EV-04c2ffd7f6b10126",
-        "EV-a9e22f22b7a2ec53",
-        "EV-922de7a46f447efa",
-        "EV-1f61330a3f828179",
-        "EV-523e5de44cc464fb",
-        "EV-ae89898e7aa4a4d6",
-        "EV-d596f111808bd55b",
-        "EV-a4f052325d0ef230",
-        "EV-6ce6b9c9780b97d9",
-        "EV-62df953d81def866",
-        "EV-1b92b6c835ce240c",
-        "EV-3da14e3743571e92",
-        "EV-d9a78a839d6c628f",
-        "EV-1587a760d81451be",
-        "EV-33e7429a7bc94840",
-        "EV-022d1f3160d94048",
-        "EV-7580a050ca19a8ae"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-industry-technology",
-        "TX-industry-retail_ecommerce",
-        "TX-industry-manufacturing",
-        "TX-industry-automotive_transportation",
-        "TX-technology-code_generation",
-        "TX-use_case-customer_service",
-        "TX-industry-healthcare_life_sciences",
-        "TX-use_case-robotics_automation",
-        "TX-use_case-software_development",
-        "TX-use_case-cybersecurity",
-        "TX-technology-on_device",
-        "TX-technology-model_context_protocol",
-        "TX-industry-telecommunications",
-        "TX-technology-reasoning",
-        "TX-technology-distillation",
-        "TX-technology-computer_use"
-      ],
-      "relatedEntityIds": [
-        "EN-8652f6cd9088f1fa",
-        "EN-597d8c4afa5fe3d6",
-        "EN-d2f4e09cb01afa3c",
-        "EN-7d3194f79e645c42",
-        "EN-38945a66b4806b11",
-        "EN-c141d2237427f30d",
-        "EN-cbc62794911ff31b",
-        "EN-8d4321d936320802",
-        "EN-10fce287b4b1464c"
-      ],
-      "firstSeen": "2026-02-13",
-      "lastSeen": "2026-07-21"
-    },
-    {
       "id": "EN-956b7280912ef1cc",
       "name": "Mitsubishi Heavy Industries",
       "entityType": "organization_candidate",
@@ -5405,7 +5867,9 @@
       "classificationRefs": [
         "TX-industry-manufacturing"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-8d4321d936320802"
+      ],
       "firstSeen": "2026-07-14",
       "lastSeen": "2026-07-15"
     },
@@ -5520,7 +5984,8 @@
         "EV-8a9b12665a3e40a0",
         "EV-cfa8c754627747a1",
         "EV-0d862d59b05361cc",
-        "EV-dab4d3f2059e8880"
+        "EV-dab4d3f2059e8880",
+        "EV-33fba8931cca96d5"
       ],
       "viewpointIds": [],
       "classificationRefs": [
@@ -5535,7 +6000,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-04-28",
-      "lastSeen": "2026-07-20"
+      "lastSeen": "2026-07-22"
     },
     {
       "id": "EN-51188f73e8dfbfee",
@@ -5557,6 +6022,48 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-06-08",
       "lastSeen": "2026-06-08"
+    },
+    {
+      "id": "EN-3bc9f78028bc2dba",
+      "name": "CuspAI",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-a37b9d9fb85e460f"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-manufacturing"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-22"
+    },
+    {
+      "id": "EN-50e756052d0a9ac3",
+      "name": "AI 材料工厂",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-a37b9d9fb85e460f"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-manufacturing"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-22"
     },
     {
       "id": "EN-2abf8289b2f2113f",
@@ -5605,6 +6112,68 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-07-19",
       "lastSeen": "2026-07-19"
+    },
+    {
+      "id": "EN-954dc5d6516f127c",
+      "name": "Canva AI 2.0",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [
+        "SiliconANGLE",
+        "Unveils Canva AI"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-941ba9ebdc43f20c",
+        "EV-f05783f745bc7c2c",
+        "EV-34b0f4cfd513fbde",
+        "EV-701417bcd9b57095",
+        "EV-0cb98302768c2e0a"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
+        "TX-use_case-robotics_automation",
+        "TX-technology-embodied_ai"
+      ],
+      "relatedEntityIds": [
+        "EN-3db1f560db626918"
+      ],
+      "firstSeen": "2026-05-23",
+      "lastSeen": "2026-07-22"
+    },
+    {
+      "id": "EN-e07654c7cc29acbd",
+      "name": "Cosmos 3 Edge",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-941ba9ebdc43f20c",
+        "EV-d4ddee1b39cced77",
+        "EV-0e2a68efc19bfbaa"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
+        "TX-use_case-robotics_automation",
+        "TX-technology-on_device",
+        "TX-technology-embodied_ai"
+      ],
+      "relatedEntityIds": [
+        "EN-8d4321d936320802"
+      ],
+      "firstSeen": "2026-05-31",
+      "lastSeen": "2026-07-22"
     },
     {
       "id": "EN-e3b1bf3dab957ffe",
@@ -5905,7 +6474,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-20",
-      "lastSeen": "2026-07-18"
+      "lastSeen": "2026-07-22"
     },
     {
       "id": "EN-2dc010636b9dce91",
@@ -6265,6 +6834,48 @@
     }
   ],
   "fde": [
+    {
+      "id": "FDE-ab9846c6cdc82a26",
+      "eventId": "EV-ff77876694ab8395",
+      "dataDate": "2026-07-22",
+      "date": "2026-07-21",
+      "title": "102.4Tbps：英伟达 Spectrum-6 交换系统落地全球超大规模 AI 工厂",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "NVIDIA",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "全球超大规模 AI 工厂",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "英伟达表示 CoreWeave、Microsoft 和 Nebius 将率先部署基于 Vera Rubin、并结合 Spectrum-6 的基础设施，以扩展开发者、初创公司和企业对该平台的访问。",
+        "CoreWeave 产品网络总监 Min Jun 表示，Spectrum-6 和液冷的 Spectrum-X Ethernet 基础设施将帮助其提供训练前沿模型和更快部署推理所需的带宽、韧性和效率。"
+      ],
+      "outcomes": [],
+      "metrics": [
+        "102.4Tb",
+        "102.4Tb"
+      ],
+      "undisclosedFields": [
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/979/791.htm",
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-9fbf261b62c1d7c0"
+      ]
+    },
     {
       "id": "FDE-9f64e1521dd2dea0",
       "eventId": "EV-4dd25589d834060d",

@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-21T01:27:58.078Z",
-    "latestDataDate": "2026-07-21",
-    "currentDate": "2026-07-21",
-    "eventCount": 1347,
+    "generatedAt": "2026-07-22T01:57:46.409Z",
+    "latestDataDate": "2026-07-22",
+    "currentDate": "2026-07-22",
+    "eventCount": 1401,
     "quarantinedEventCount": 13
   },
   "node": {
@@ -27,6 +27,13 @@
       "EV-53f4f2a34b3ce1b4",
       "EV-b240fb11e65b018e",
       "EV-bd508dbe4205774f",
+      "EV-6ce069b1845f5a52",
+      "EV-7c836c34e7cf36ee",
+      "EV-071c72225b8aaf80",
+      "EV-59229486408edb05",
+      "EV-597b8257a97b3d02",
+      "EV-5aaa4c6697606274",
+      "EV-cd067fa6f39fe828",
       "EV-167f50a6f3134bd5",
       "EV-2ffbe4560e69992a",
       "EV-d07906b648eec63f",
@@ -66,7 +73,15 @@
       "EN-ea87a2bd84296f73",
       "EN-4094a2b7125c7564",
       "EN-cbc62794911ff31b",
+      "EN-18f0900d6c487f59",
       "EN-7d3194f79e645c42",
+      "EN-d9352ce019e77ab3",
+      "EN-ac123e56b0168ec2",
+      "EN-d5b8915a8c232010",
+      "EN-2b6e51bec93e86c1",
+      "EN-6f216f2ea5b7a13e",
+      "EN-31055a8d9856fce4",
+      "EN-204d4b18c9d78e88",
       "EN-7839fb10a8f14c70",
       "EN-ea3bd73e2b506e00",
       "EN-52fc33ae4d101a5d",
@@ -75,7 +90,6 @@
       "EN-3a7bd3e2360a3d29",
       "EN-2c063f604e634100",
       "EN-03b974cdbd22fe32",
-      "EN-ac123e56b0168ec2",
       "EN-784c7cd63a83ccaa",
       "EN-8de7e44229714152",
       "EN-5ce177312903c604",
@@ -94,7 +108,7 @@
     ],
     "hardwareIds": [],
     "firstSeen": "2026-04-16",
-    "lastSeen": "2026-07-17"
+    "lastSeen": "2026-07-22"
   },
   "events": [
     {
@@ -1028,6 +1042,632 @@
       "products": [],
       "sourceUrl": "https://markets.ft.com/data/announce/full?dockey=1330-1001176217en-1878JJNUD9H6E0K0LPGOSGE4ST",
       "publisher": "markets.ft.com"
+    },
+    {
+      "id": "EV-6ce069b1845f5a52",
+      "dataDate": "2026-07-22",
+      "date": "2026-07-22",
+      "updatedDate": "2026-07-22",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Google 发布 Gemini 3.6 Flash 与网络安全 AI，预告 3.5 Pro 及 Gemini 4",
+      "originalTitle": "",
+      "subject": "Google",
+      "action": "发布",
+      "object": "Gemini 3.6 Flash 与网络安全 AI，预告 3.5 Pro 及 Gemini 4",
+      "metrics": [
+        "$0.30",
+        "$2.50",
+        "$0.25 ",
+        "$1.50"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "cybersecurity",
+            "dimensionName": "应用场景",
+            "name": "网络安全"
+          },
+          {
+            "dimensionId": "use_case",
+            "id": "software_development",
+            "dimensionName": "应用场景",
+            "name": "软件开发"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "cybersecurity",
+          "dimensionName": "应用场景",
+          "name": "网络安全"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "software_development",
+          "dimensionName": "应用场景",
+          "name": "软件开发"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "cybersecurity",
+          "dimensionName": "应用场景",
+          "name": "网络安全"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "software_development",
+          "dimensionName": "应用场景",
+          "name": "软件开发"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "entityIds": [
+        "EN-bbdefa2950f49882",
+        "EN-c70eca6b0f88f44d",
+        "EN-18f0900d6c487f59"
+      ],
+      "entityNames": [
+        "Google",
+        "Anthropic",
+        "Gemini 3.6 Flash"
+      ],
+      "productName": "Gemini 3.6 Flash",
+      "products": [
+        {
+          "name": "Gemini 3.6 Flash",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Google"
+          ]
+        }
+      ],
+      "sourceUrl": "https://arstechnica.com/google/2026/07/google-reveals-faster-and-cheaper-gemini-3-6-flash-says-3-5-pro-is-still-in-testing",
+      "publisher": "Ars Technica：AI（RSS）"
+    },
+    {
+      "id": "EV-7c836c34e7cf36ee",
+      "dataDate": "2026-07-22",
+      "date": "2026-07-22",
+      "updatedDate": "2026-07-22",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "OpenAI 自曝 AI 模型突破沙盒入侵 Hugging Face",
+      "originalTitle": "",
+      "subject": "OpenAI",
+      "action": "product_release",
+      "object": "OpenAI 自曝 AI 模型突破沙盒入侵 Hugging Face",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "cybersecurity",
+            "dimensionName": "应用场景",
+            "name": "网络安全"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "id": "cybersecurity",
+          "dimensionName": "应用场景",
+          "name": "网络安全"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "cybersecurity",
+          "dimensionName": "应用场景",
+          "name": "网络安全"
+        }
+      ],
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-d9352ce019e77ab3"
+      ],
+      "entityNames": [
+        "OpenAI",
+        "Hugging Face"
+      ],
+      "productName": "Hugging Face",
+      "products": [
+        {
+          "name": "Hugging Face",
+          "type": "产品/服务",
+          "ownerNames": [
+            "OpenAI"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/979/815.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-071c72225b8aaf80",
+      "dataDate": "2026-07-22",
+      "date": "2026-07-21",
+      "updatedDate": "2026-07-22",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Sakana AI 发布网络安全模型 Fugu Cyber，性能超越 GPT-5.5-Cyber",
+      "originalTitle": "",
+      "subject": "Sakana AI",
+      "action": "发布网络安全模型",
+      "object": "Fugu Cyber，性能超越 GPT-5.5-Cyber",
+      "metrics": [
+        "86.9%",
+        "72.1%"
+      ],
+      "locations": [
+        "日本"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "cybersecurity",
+            "dimensionName": "应用场景",
+            "name": "网络安全"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "id": "cybersecurity",
+          "dimensionName": "应用场景",
+          "name": "网络安全"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "cybersecurity",
+          "dimensionName": "应用场景",
+          "name": "网络安全"
+        }
+      ],
+      "entityIds": [
+        "EN-ac123e56b0168ec2",
+        "EN-7d3194f79e645c42",
+        "EN-c70eca6b0f88f44d",
+        "EN-d5b8915a8c232010"
+      ],
+      "entityNames": [
+        "Sakana AI",
+        "OpenAI",
+        "Anthropic",
+        "Fugu Cyber"
+      ],
+      "productName": "Fugu Cyber",
+      "products": [
+        {
+          "name": "Fugu Cyber",
+          "type": "模型",
+          "ownerNames": [
+            "Sakana AI"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/979/495.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-59229486408edb05",
+      "dataDate": "2026-07-22",
+      "date": "2026-07-21",
+      "updatedDate": "2026-07-22",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Google DeepMind 发布三款新 Gemini 模型，但未包含 3.5 Pro",
+      "originalTitle": "",
+      "subject": "Google DeepMind",
+      "action": "发布三款新 Gemini 模型",
+      "object": "，但未包含 3.5 Pro",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "cybersecurity",
+            "dimensionName": "应用场景",
+            "name": "网络安全"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "id": "cybersecurity",
+          "dimensionName": "应用场景",
+          "name": "网络安全"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "cybersecurity",
+          "dimensionName": "应用场景",
+          "name": "网络安全"
+        }
+      ],
+      "entityIds": [
+        "EN-2b6e51bec93e86c1",
+        "EN-4d09c69c19f5f67b",
+        "EN-18f0900d6c487f59"
+      ],
+      "entityNames": [
+        "Google DeepMind",
+        "DeepMind",
+        "Gemini 3.6 Flash"
+      ],
+      "productName": "DeepMind",
+      "products": [
+        {
+          "name": "DeepMind",
+          "type": "模型",
+          "ownerNames": [
+            "Google DeepMind"
+          ]
+        },
+        {
+          "name": "Gemini 3.6 Flash",
+          "type": "模型",
+          "ownerNames": [
+            "Google DeepMind"
+          ]
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/07/21/google-releases-three-new-gemini-models-but-no-3-5-pro",
+      "publisher": "TechCrunch：AI（RSS）"
+    },
+    {
+      "id": "EV-597b8257a97b3d02",
+      "dataDate": "2026-07-22",
+      "date": "2026-07-21",
+      "updatedDate": "2026-07-22",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "谷歌发布 Gemini 3.6 Flash、3.5 Flash Cyber 及 3.5 Flash-Lite 三款新 AI 模型",
+      "originalTitle": "",
+      "subject": "谷歌",
+      "action": "发布",
+      "object": "Gemini 3.6 Flash、3.5 Flash Cyber 及 3.5 Flash-Lite 三款新 AI 模型",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "cybersecurity",
+            "dimensionName": "应用场景",
+            "name": "网络安全"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "id": "cybersecurity",
+          "dimensionName": "应用场景",
+          "name": "网络安全"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "cybersecurity",
+          "dimensionName": "应用场景",
+          "name": "网络安全"
+        }
+      ],
+      "entityIds": [
+        "EN-bbdefa2950f49882",
+        "EN-6f216f2ea5b7a13e",
+        "EN-18f0900d6c487f59",
+        "EN-31055a8d9856fce4"
+      ],
+      "entityNames": [
+        "Google",
+        "Flash-Lite",
+        "Gemini 3.6 Flash",
+        "Flash Cyber"
+      ],
+      "productName": "Flash-Lite",
+      "products": [
+        {
+          "name": "Flash-Lite",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Google"
+          ]
+        },
+        {
+          "name": "Gemini 3.6 Flash",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Google"
+          ]
+        },
+        {
+          "name": "Flash Cyber",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Google"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/979/795.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-5aaa4c6697606274",
+      "dataDate": "2026-07-22",
+      "date": "2026-07-21",
+      "updatedDate": "2026-07-22",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "谷歌发布三款新Gemini Flash模型，但前沿3.5 Pro仍在训练中",
+      "originalTitle": "Google ships three new Gemini Flash models but its frontier 3.5 Pro remains lost in training",
+      "subject": "Google",
+      "action": "model_release",
+      "object": "Gemini 3.6 Flash, 3.5 Flash-Lite, and 3.5 Flash Cyber models",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "cybersecurity",
+            "dimensionName": "应用场景",
+            "name": "网络安全"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "id": "cybersecurity",
+          "dimensionName": "应用场景",
+          "name": "网络安全"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "cybersecurity",
+          "dimensionName": "应用场景",
+          "name": "网络安全"
+        }
+      ],
+      "entityIds": [
+        "EN-bbdefa2950f49882",
+        "EN-18f0900d6c487f59",
+        "EN-204d4b18c9d78e88"
+      ],
+      "entityNames": [
+        "Google",
+        "Gemini 3.6 Flash",
+        "Gemini Flash"
+      ],
+      "productName": "Gemini 3.6 Flash",
+      "products": [
+        {
+          "name": "Gemini 3.6 Flash",
+          "type": "模型",
+          "ownerNames": [
+            "Google"
+          ]
+        },
+        {
+          "name": "Gemini Flash",
+          "type": "模型",
+          "ownerNames": [
+            "Google"
+          ]
+        }
+      ],
+      "sourceUrl": "https://the-decoder.com/google-ships-three-new-gemini-flash-models-but-its-frontier-3-5-pro-remains-lost-in-training",
+      "publisher": "The Decoder AI News"
+    },
+    {
+      "id": "EV-cd067fa6f39fe828",
+      "dataDate": "2026-07-22",
+      "date": "2026-07-21",
+      "updatedDate": "2026-07-22",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "谷歌推出大型AI安全模型Mythos的更廉价替代方案",
+      "originalTitle": "Google launches a cheaper alternative to large AI security models like Mythos",
+      "subject": "Google",
+      "action": "launches",
+      "object": "a cheaper alternative to large AI security models like Mythos",
+      "metrics": [],
+      "locations": [
+        "China"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "cybersecurity",
+            "dimensionName": "应用场景",
+            "name": "网络安全"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "id": "cybersecurity",
+          "dimensionName": "应用场景",
+          "name": "网络安全"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "cybersecurity",
+          "dimensionName": "应用场景",
+          "name": "网络安全"
+        }
+      ],
+      "entityIds": [
+        "EN-bbdefa2950f49882",
+        "EN-c70eca6b0f88f44d",
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "entityNames": [
+        "Google",
+        "Anthropic",
+        "Microsoft"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://theverge.com/tech/968572/google-gemini-flash-cyber-ai-security-model",
+      "publisher": "The Verge AI"
     },
     {
       "id": "EV-167f50a6f3134bd5",
@@ -2790,8 +3430,7 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "gemini",
-        "谷歌"
+        "Gemini"
       ],
       "verificationStatus": "verified",
       "datasetScopes": [
@@ -2824,8 +3463,14 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
+        "EV-6ce069b1845f5a52",
+        "EV-597b8257a97b3d02",
+        "EV-5aaa4c6697606274",
+        "EV-834e65247c2d4a3b",
+        "EV-cc974e0031c69715",
+        "EV-cd067fa6f39fe828",
+        "EV-dc3a5509a690a6b0",
         "EV-f3cc0845ce442e6b",
-        "EV-0d5a32aca724d30e",
         "EV-bee410f8134cba5a",
         "EV-a255cfc0dab44564",
         "EV-98a80b75b27d9f3b",
@@ -2942,18 +3587,20 @@
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-embodied_ai",
         "TX-technology-fine_tuning",
-        "TX-technology-open_weights",
-        "TX-technology-video_generation",
         "TX-technology-multimodal",
+        "TX-technology-video_generation",
         "TX-industry-media_entertainment",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
+        "TX-technology-image_generation",
         "TX-technology-speech_audio",
         "TX-use_case-content_creation",
-        "TX-technology-image_generation",
         "TX-technology-computer_use"
       ],
       "relatedEntityIds": [
+        "EN-a85d5a9b4a77d59b",
+        "EN-6f216f2ea5b7a13e",
+        "EN-18f0900d6c487f59",
         "EN-419f2cd96ee122e3",
         "EN-96eebba49dbbf422",
         "EN-81e577740888ca6d",
@@ -2965,11 +3612,8 @@
         "EN-01f1074bb52ff605",
         "EN-f2c032b19edb7900",
         "EN-2ab6d53e717a0e0d",
-        "EN-1cd41545564777ce",
         "EN-2998f8b13f4fd72e",
-        "EN-3546e1b15e6549b2",
         "EN-b5c336c0dd1ff29c",
-        "EN-e1a4e41919f7c2dc",
         "EN-d56aa2f9908f566a",
         "EN-4baef0e41cbd7ae2",
         "EN-bdfecbcd7dbf76d2",
@@ -2977,14 +3621,16 @@
         "EN-2aae0de3f5530f08"
       ],
       "firstSeen": "2026-04-12",
-      "lastSeen": "2026-07-21"
+      "lastSeen": "2026-07-22"
     },
     {
       "id": "EN-8d4321d936320802",
       "name": "NVIDIA",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "英伟达"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -3006,6 +3652,9 @@
         "EV-a00763037a94d512",
         "EV-0e84a2f49d765ce3",
         "EV-467d1a701d21327d",
+        "EV-b4f69c41e23c7ce0",
+        "EV-11b2293769081d4c",
+        "EV-ff77876694ab8395",
         "EV-cafe435ddd007821",
         "EV-ed388875bc004add",
         "EV-bc9abd502c002102",
@@ -3029,8 +3678,14 @@
         "EV-4faa2bcf2e42e60c",
         "EV-9ee3c0ec243b6129",
         "EV-58c1cc3749294649",
+        "EV-2fea1664807824ce",
+        "EV-3ba971c5939b0f04",
+        "EV-cb3a8846bc4f8aca",
+        "EV-48977fd72d2fcfb8",
+        "EV-a37b9d9fb85e460f",
         "EV-118317b7f92e5e16",
         "EV-950237c6b3eb6343",
+        "EV-941ba9ebdc43f20c",
         "EV-29e069ac093f0e34",
         "EV-6b51b1b6fe22c540",
         "EV-c2800c1c5a3f568f",
@@ -3076,9 +3731,11 @@
         "EV-aa63303570154a9b",
         "EV-d2ac9700c86913da",
         "EV-d43a561da59b2897",
+        "EV-0e2a68efc19bfbaa",
         "EV-02b19ffbe883ee2e",
         "EV-8993e021ac17df4a",
         "EV-34929bdd016dc8d6",
+        "EV-c14e5185fd6bbe30",
         "EV-08f736f61f2b46f3",
         "EV-2c7d13d234147817",
         "EV-710b145230faa692",
@@ -3109,31 +3766,39 @@
         "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
-        "TX-technology-speech_audio",
         "TX-technology-image_generation",
+        "TX-technology-speech_audio",
         "TX-technology-inference_optimization"
       ],
       "relatedEntityIds": [
+        "EN-e07654c7cc29acbd",
+        "EN-52c2f30b6bda5898",
         "EN-1e71d9c1a5c4de16",
         "EN-683d8d597da71192",
         "EN-9e72fd4472222231",
+        "EN-8395dc051feafc4c",
+        "EN-aa15d891a32a51b8",
         "EN-0f3360879e746531",
         "EN-a1b0d8a938903dc7",
+        "EN-956b7280912ef1cc",
         "EN-4a639cb888a15d75",
         "EN-8d323d8bba783aa3",
         "EN-b5738c169b693bee",
         "EN-51fd7dc086fcb858",
         "EN-9e193e1ec8d75d41",
-        "EN-8395dc051feafc4c",
+        "EN-3ae50afab3e392b8",
         "EN-936f01f91fdadf69",
         "EN-4e7e886400fe6a83",
         "EN-1dc405a4cda895d0",
         "EN-12ab68e37d104d27",
         "EN-a3266ab9e10d6105",
-        "EN-9fbf261b62c1d7c0"
+        "EN-9fbf261b62c1d7c0",
+        "EN-11ef7b03c79c9bbd",
+        "EN-9bc22dcabf7f45b3",
+        "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-20"
+      "lastSeen": "2026-07-22"
     },
     {
       "id": "EN-b5738c169b693bee",
@@ -3262,8 +3927,14 @@
         "EV-8e01849c05b50355",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
-        "EV-684f286ef629ed0d",
+        "EV-4449950a89892852",
+        "EV-6ce069b1845f5a52",
+        "EV-071c72225b8aaf80",
         "EV-0d5a32aca724d30e",
+        "EV-3043858af3970696",
+        "EV-8121a1ecdf168d8a",
+        "EV-cd067fa6f39fe828",
+        "EV-684f286ef629ed0d",
         "EV-ab3e820aa6d92542",
         "EV-b20bf10af759bd43",
         "EV-eb97c388b3197c06",
@@ -3355,7 +4026,6 @@
         "EV-b26bead25288d19c",
         "EV-3ff2a155035d01e7",
         "EV-644337db309a1c82",
-        "EV-8121a1ecdf168d8a",
         "EV-b796ba14c4eba861",
         "EV-7e6e0470ea99a6eb",
         "EV-cb08f263d23e6c00",
@@ -3412,6 +4082,9 @@
         "EV-773ffcc6e1df56fa",
         "EV-2923b35d936d9f4e",
         "EV-cf496e0f8a56ca97",
+        "EV-33fba8931cca96d5",
+        "EV-22c88b4ff8c7d8d8",
+        "EV-bf8086947a2639d4",
         "EV-61053b02542f0fcc",
         "EV-e6a7926fdb42b95a",
         "EV-94e1f1a5cea15eae",
@@ -3449,12 +4122,14 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-technology",
         "TX-industry-financial_services",
         "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
         "TX-technology-code_generation",
         "TX-industry-healthcare_life_sciences",
+        "TX-industry-professional_services",
         "TX-use_case-software_development",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
@@ -3480,6 +4155,7 @@
         "EN-3a13916345b60fad",
         "EN-9f15bb7e29e191eb",
         "EN-5a4c2be958c0af72",
+        "EN-968e2d5b08687bf4",
         "EN-cb4754c48f8023d0",
         "EN-2c063f604e634100",
         "EN-bb5b6487f881bbb1",
@@ -3494,7 +4170,7 @@
         "EN-d8494bb34d6ddc43"
       ],
       "firstSeen": "2026-03-13",
-      "lastSeen": "2026-07-21"
+      "lastSeen": "2026-07-22"
     },
     {
       "id": "EN-96eebba49dbbf422",
@@ -3507,6 +4183,8 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-2069f6a931b8c9d6",
+        "EV-02882e6f5e1902c6",
         "EV-e3792591090281c6",
         "EV-f6a72cddbda748b3",
         "EV-4eaf3aabecae6016",
@@ -3514,10 +4192,10 @@
         "EV-305ec93673f4f12e",
         "EV-640c5ea9f4fa2780",
         "EV-6e516b6e68def9cf",
-        "EV-463cb26b5e03c7f7",
         "EV-86ca5af11ee4d275",
         "EV-a8dc5c859946f336",
         "EV-d9cc588fb41a7e67",
+        "EV-463cb26b5e03c7f7",
         "EV-232ab5bcbaf6552d",
         "EV-48075ca70a5458ec",
         "EV-7b1c734882fa1ea6",
@@ -3585,7 +4263,7 @@
         "EV-8e01849c05b50355",
         "EV-4faa2bcf2e42e60c",
         "EV-45be473baf6dfa4c",
-        "EV-0d5a32aca724d30e",
+        "EV-941ba9ebdc43f20c",
         "EV-92d28aef0c4b0a8a",
         "EV-c2800c1c5a3f568f",
         "EV-d4ddee1b39cced77",
@@ -3677,7 +4355,7 @@
         "EN-c70eca6b0f88f44d"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-21"
+      "lastSeen": "2026-07-22"
     },
     {
       "id": "EN-a23572554f6c861e",
@@ -3769,6 +4447,8 @@
         "EV-88f4ee8cd57bdf42",
         "EV-44a4e92c03a31ab1",
         "EV-7585b033d4005977",
+        "EV-fa66f00e9d4b20c2",
+        "EV-ff77876694ab8395",
         "EV-4fba2b2f1ac10a79",
         "EV-bcb74b02448b7d78",
         "EV-47a16db069ed320e",
@@ -3777,6 +4457,7 @@
         "EV-d756f05478303505",
         "EV-7263caa45bbf168e",
         "EV-8abf5adc3e72fbb8",
+        "EV-6acfb15c012ddf6d",
         "EV-2fab4396000198d2",
         "EV-3fb492fb45980541",
         "EV-b833b29d904b39ac",
@@ -3786,6 +4467,7 @@
         "EV-58c1cc3749294649",
         "EV-c0a65877001ed413",
         "EV-bd508dbe4205774f",
+        "EV-cd067fa6f39fe828",
         "EV-118317b7f92e5e16",
         "EV-c4723445b11bb275",
         "EV-7963d8c78531f12d",
@@ -3866,7 +4548,7 @@
         "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-07-21"
+      "lastSeen": "2026-07-22"
     },
     {
       "id": "EN-ea87a2bd84296f73",
@@ -3975,6 +4657,37 @@
       "lastSeen": "2026-07-20"
     },
     {
+      "id": "EN-18f0900d6c487f59",
+      "name": "Gemini 3.6 Flash",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-6ce069b1845f5a52",
+        "EV-59229486408edb05",
+        "EV-597b8257a97b3d02",
+        "EV-5aaa4c6697606274",
+        "EV-cc974e0031c69715"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-code_generation",
+        "TX-use_case-software_development",
+        "TX-use_case-cybersecurity"
+      ],
+      "relatedEntityIds": [
+        "EN-2b6e51bec93e86c1",
+        "EN-bbdefa2950f49882"
+      ],
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-22"
+    },
+    {
       "id": "EN-7d3194f79e645c42",
       "name": "OpenAI",
       "entityType": "organization_candidate",
@@ -4036,7 +4749,11 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-133a92cb6cb25a0c",
+        "EV-7c836c34e7cf36ee",
+        "EV-071c72225b8aaf80",
         "EV-0d5a32aca724d30e",
+        "EV-ae1e2769aff82965",
         "EV-ab3e820aa6d92542",
         "EV-bc41a3060f11ca2d",
         "EV-83a8ac8a2554b60c",
@@ -4216,6 +4933,7 @@
         "TX-technology-computer_use"
       ],
       "relatedEntityIds": [
+        "EN-3850792f618f534b",
         "EN-7839fb10a8f14c70",
         "EN-d1ad14d4ad57d207",
         "EN-74692028630429c7",
@@ -4241,7 +4959,216 @@
         "EN-7b8cb35de7ad047a"
       ],
       "firstSeen": "2026-02-19",
-      "lastSeen": "2026-07-21"
+      "lastSeen": "2026-07-22"
+    },
+    {
+      "id": "EN-d9352ce019e77ab3",
+      "name": "Hugging Face",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-7c836c34e7cf36ee",
+        "EV-ae1e2769aff82965",
+        "EV-9eb3693cc65fbca9",
+        "EV-39460c022e56badd"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-cybersecurity"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-08",
+      "lastSeen": "2026-07-22"
+    },
+    {
+      "id": "EN-ac123e56b0168ec2",
+      "name": "Sakana AI",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-071c72225b8aaf80",
+        "EV-c2800c1c5a3f568f",
+        "EV-a4b72879f3d73ea4",
+        "EV-276d6fc7ccb9eb76",
+        "EV-9e04edd969c977a1",
+        "EV-ceb7d70f0043eb81"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-use_case-cybersecurity"
+      ],
+      "relatedEntityIds": [
+        "EN-d5b8915a8c232010",
+        "EN-d4c633f24b48fcc4",
+        "EN-fdc6b157616f12a8"
+      ],
+      "firstSeen": "2026-06-22",
+      "lastSeen": "2026-07-22"
+    },
+    {
+      "id": "EN-d5b8915a8c232010",
+      "name": "Fugu Cyber",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-071c72225b8aaf80"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-cybersecurity"
+      ],
+      "relatedEntityIds": [
+        "EN-ac123e56b0168ec2"
+      ],
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-22"
+    },
+    {
+      "id": "EN-2b6e51bec93e86c1",
+      "name": "Google DeepMind",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "谷歌 DeepMind",
+        "DeepMind"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-6f092cfc7a064d64",
+        "EV-d4e44892226be468",
+        "EV-1ac32035d5e425e1",
+        "EV-19ebde6e2de35fc9",
+        "EV-67ef7accd26a07a0",
+        "EV-a7e1ecd212474e00",
+        "EV-d961d3ad02f6ae14",
+        "EV-59229486408edb05",
+        "EV-7e24db14146d39be",
+        "EV-7c6a9f4ee4829976",
+        "EV-93c6ccf23cc422cb",
+        "EV-5babb43f4b4d302f",
+        "EV-ff10670ad06959ec",
+        "EV-011eeba13ebcc9a8",
+        "EV-8eed6489ab514823",
+        "EV-3ef3e18df61a00d8",
+        "EV-568d2aeab5234e48",
+        "EV-f68e00bb9fd49fac",
+        "EV-3e9a0d1be6de5096",
+        "EV-e96aba142e46eba1",
+        "EV-d49da50484ba781f",
+        "EV-81e297ea6f8fde3b",
+        "EV-68edd592c36dccd3"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-vision_language",
+        "TX-technology-code_generation",
+        "TX-use_case-software_development",
+        "TX-technology-mixture_of_experts",
+        "TX-use_case-cybersecurity",
+        "TX-technology-retrieval_augmented_generation",
+        "TX-use_case-research_science",
+        "TX-technology-multimodal",
+        "TX-technology-video_generation",
+        "TX-industry-media_entertainment",
+        "TX-technology-image_generation",
+        "TX-technology-speech_audio"
+      ],
+      "relatedEntityIds": [
+        "EN-18f0900d6c487f59",
+        "EN-92af3ce2fb97edf3",
+        "EN-d56aa2f9908f566a",
+        "EN-085598c00f2aaccf"
+      ],
+      "firstSeen": "2026-06-02",
+      "lastSeen": "2026-07-22"
+    },
+    {
+      "id": "EN-6f216f2ea5b7a13e",
+      "name": "Flash-Lite",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-597b8257a97b3d02",
+        "EV-cc974e0031c69715",
+        "EV-cb3cb11ff13f6069"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-use_case-cybersecurity"
+      ],
+      "relatedEntityIds": [
+        "EN-bbdefa2950f49882"
+      ],
+      "firstSeen": "2026-05-23",
+      "lastSeen": "2026-07-22"
+    },
+    {
+      "id": "EN-31055a8d9856fce4",
+      "name": "Flash Cyber",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-597b8257a97b3d02"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-cybersecurity"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-22"
+    },
+    {
+      "id": "EN-204d4b18c9d78e88",
+      "name": "Gemini Flash",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-5aaa4c6697606274"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-cybersecurity"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-22"
     },
     {
       "id": "EN-7839fb10a8f14c70",
@@ -4300,6 +5227,8 @@
         "EV-cf76f090a1a20a36",
         "EV-fd7e79d3cb9cdb69",
         "EV-43301de739fe560e",
+        "EV-938eebe85a688ff1",
+        "EV-a37b9d9fb85e460f",
         "EV-cf176636839e45be",
         "EV-8540be15175c65da",
         "EV-9496f90f3e808992",
@@ -4348,6 +5277,7 @@
         "TX-technology-computer_use"
       ],
       "relatedEntityIds": [
+        "EN-62503b0d3dcfd096",
         "EN-e3863f813fe47240",
         "EN-d85ad5e8ff8e2889",
         "EN-a2fa009495c3bb3a",
@@ -4356,7 +5286,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-05-22",
-      "lastSeen": "2026-07-18"
+      "lastSeen": "2026-07-22"
     },
     {
       "id": "EN-52fc33ae4d101a5d",
@@ -4604,35 +5534,6 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-06-29",
       "lastSeen": "2026-06-29"
-    },
-    {
-      "id": "EN-ac123e56b0168ec2",
-      "name": "Sakana AI",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-c2800c1c5a3f568f",
-        "EV-a4b72879f3d73ea4",
-        "EV-276d6fc7ccb9eb76",
-        "EV-9e04edd969c977a1",
-        "EV-ceb7d70f0043eb81"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-use_case-cybersecurity"
-      ],
-      "relatedEntityIds": [
-        "EN-d4c633f24b48fcc4",
-        "EN-fdc6b157616f12a8"
-      ],
-      "firstSeen": "2026-06-22",
-      "lastSeen": "2026-07-17"
     },
     {
       "id": "EN-784c7cd63a83ccaa",

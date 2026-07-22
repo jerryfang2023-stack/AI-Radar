@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-21T01:27:58.078Z",
-    "latestDataDate": "2026-07-21",
-    "currentDate": "2026-07-21",
-    "eventCount": 1347,
+    "generatedAt": "2026-07-22T01:57:46.409Z",
+    "latestDataDate": "2026-07-22",
+    "currentDate": "2026-07-22",
+    "eventCount": 1401,
     "quarantinedEventCount": 13
   },
   "node": {
@@ -18,6 +18,7 @@
     "valueId": "vision_language",
     "eventIds": [
       "EV-6f092cfc7a064d64",
+      "EV-03ab7d0b40d1e5b5",
       "EV-7fe139b107f9adc6",
       "EV-ba89f9414be0b041",
       "EV-0259aae5ef9e83cd",
@@ -27,6 +28,8 @@
     "entityIds": [
       "EN-e647c818ac38b6ca",
       "EN-2b6e51bec93e86c1",
+      "EN-593d0361124f348f",
+      "EN-843e746333671ab1",
       "EN-53874092e000069b",
       "EN-9c8ae69b84f21a2e",
       "EN-f0da91960830b394",
@@ -42,7 +45,7 @@
     "fdeIds": [],
     "hardwareIds": [],
     "firstSeen": "2026-06-06",
-    "lastSeen": "2026-07-18"
+    "lastSeen": "2026-07-22"
   },
   "events": [
     {
@@ -114,6 +117,132 @@
       "products": [],
       "sourceUrl": "https://techcrunch.com/2026/07/16/how-a-former-deepmind-researcher-raised-at-a-300m-pre-seed-valuation-before-launching-a-product",
       "publisher": "TechCrunch AI"
+    },
+    {
+      "id": "EV-03ab7d0b40d1e5b5",
+      "dataDate": "2026-07-22",
+      "date": "2026-07-21",
+      "updatedDate": "2026-07-22",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "小鹏集团发布 TuringViT 高效视觉编码器",
+      "originalTitle": "",
+      "subject": "小鹏集团",
+      "action": "发布",
+      "object": "TuringViT 高效视觉编码器",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "vision_language",
+          "name": "视觉语言"
+        }
+      ],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          },
+          {
+            "dimensionId": "product_form",
+            "id": "robot",
+            "dimensionName": "产品形态",
+            "name": "机器人"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "robotics_automation",
+            "dimensionName": "应用场景",
+            "name": "机器人与物理自动化"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "vision_language",
+          "name": "视觉语言"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "robot",
+          "dimensionName": "产品形态",
+          "name": "机器人"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "robot",
+          "dimensionName": "产品形态",
+          "name": "机器人"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "vision_language",
+          "name": "视觉语言"
+        }
+      ],
+      "entityIds": [
+        "EN-593d0361124f348f",
+        "EN-843e746333671ab1"
+      ],
+      "entityNames": [
+        "小鹏集团",
+        "TuringViT"
+      ],
+      "productName": "TuringViT",
+      "products": [
+        {
+          "name": "TuringViT",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/979/451.htm",
+      "publisher": "IT之家（RSS）"
     },
     {
       "id": "EV-7fe139b107f9adc6",
@@ -640,6 +769,8 @@
         "EV-67ef7accd26a07a0",
         "EV-a7e1ecd212474e00",
         "EV-d961d3ad02f6ae14",
+        "EV-59229486408edb05",
+        "EV-7e24db14146d39be",
         "EV-7c6a9f4ee4829976",
         "EV-93c6ccf23cc422cb",
         "EV-5babb43f4b4d302f",
@@ -662,20 +793,67 @@
         "TX-technology-code_generation",
         "TX-use_case-software_development",
         "TX-technology-mixture_of_experts",
+        "TX-use_case-cybersecurity",
         "TX-technology-retrieval_augmented_generation",
         "TX-use_case-research_science",
-        "TX-technology-video_generation",
         "TX-technology-multimodal",
+        "TX-technology-video_generation",
         "TX-industry-media_entertainment",
-        "TX-technology-speech_audio",
-        "TX-technology-image_generation"
+        "TX-technology-image_generation",
+        "TX-technology-speech_audio"
       ],
       "relatedEntityIds": [
+        "EN-18f0900d6c487f59",
+        "EN-92af3ce2fb97edf3",
         "EN-d56aa2f9908f566a",
         "EN-085598c00f2aaccf"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-07-22"
+    },
+    {
+      "id": "EN-593d0361124f348f",
+      "name": "小鹏集团",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-03ab7d0b40d1e5b5"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-vision_language",
+        "TX-use_case-robotics_automation"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-22"
+    },
+    {
+      "id": "EN-843e746333671ab1",
+      "name": "TuringViT",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-03ab7d0b40d1e5b5"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-vision_language",
+        "TX-use_case-robotics_automation"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-22"
     },
     {
       "id": "EN-53874092e000069b",
@@ -724,6 +902,7 @@
         "EV-619e33abf3f9bfbf",
         "EV-be2f6bfcad93c42f",
         "EV-c7b81290859057b0",
+        "EV-423c7293d6a91086",
         "EV-86ab9c2f1416e9d8",
         "EV-7fe139b107f9adc6",
         "EV-de54542fd7e2282c",
@@ -753,9 +932,11 @@
         "TX-technology-multimodal",
         "TX-industry-media_entertainment"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-a1adb91065c5a347"
+      ],
       "firstSeen": "2026-05-18",
-      "lastSeen": "2026-07-20"
+      "lastSeen": "2026-07-22"
     },
     {
       "id": "EN-f0da91960830b394",
@@ -917,10 +1098,7 @@
       "name": "Moonshot AI",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "Kimi",
-        "月之暗面"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -930,6 +1108,7 @@
         "EV-0e4bddfd5c129618",
         "EV-fd21441fb6e143c3",
         "EV-0d5a32aca724d30e",
+        "EV-26a71ab785014e54",
         "EV-1b03e5dff76a50a1",
         "EV-5caf7f83664b1a2c",
         "EV-2cb9dbed2b2b6077",
@@ -951,18 +1130,19 @@
         "TX-technology-code_generation",
         "TX-use_case-software_development",
         "TX-technology-long_context",
-        "TX-technology-mixture_of_experts",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-open_weights",
         "TX-technology-multimodal"
       ],
       "relatedEntityIds": [
+        "EN-eb732565c71e6b85",
+        "EN-607964040e4b62e0",
         "EN-2cfed21b7a971267",
         "EN-23bc2a854bc0cfb0",
         "EN-b57c95289680078c"
       ],
       "firstSeen": "2026-05-19",
-      "lastSeen": "2026-07-21"
+      "lastSeen": "2026-07-22"
     },
     {
       "id": "EN-d831f1170590ddb1",

@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-21T01:27:58.078Z",
-    "latestDataDate": "2026-07-21",
-    "currentDate": "2026-07-21",
-    "eventCount": 1347,
+    "generatedAt": "2026-07-22T01:57:46.409Z",
+    "latestDataDate": "2026-07-22",
+    "currentDate": "2026-07-22",
+    "eventCount": 1401,
     "quarantinedEventCount": 13
   },
   "node": {
@@ -19,6 +19,7 @@
     "eventIds": [
       "EV-1de38866b4b92754",
       "EV-99e5df844a1bd670",
+      "EV-3bd84e75aa7f18b3",
       "EV-631dce4dc135d01b"
     ],
     "entityIds": [
@@ -27,12 +28,13 @@
       "EN-3a7bd3e2360a3d29",
       "EN-e0bab6f6c58bfe4e",
       "EN-afe83c198e329ef2",
+      "EN-f8bebacc033880dd",
       "EN-b2968d9ba72f4818"
     ],
     "fdeIds": [],
     "hardwareIds": [],
     "firstSeen": "2026-06-04",
-    "lastSeen": "2026-07-16"
+    "lastSeen": "2026-07-22"
   },
   "events": [
     {
@@ -274,6 +276,91 @@
       "publisher": "IT之家（RSS）"
     },
     {
+      "id": "EV-3bd84e75aa7f18b3",
+      "dataDate": "2026-07-22",
+      "date": "2026-07-21",
+      "updatedDate": "2026-07-22",
+      "eventType": "lawsuit_settlement",
+      "eventTypeLabel": "诉讼与和解",
+      "eventGroup": "组织、政策与法律",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "索尼音乐再次起诉 Udio：指控其未经许可复制超 3 万段录音训练 AI 模型",
+      "originalTitle": "",
+      "subject": "索尼音乐再次",
+      "action": "起诉",
+      "object": "Udio：指控其未经许可复制超 3 万段录音训练 AI 模型",
+      "metrics": [
+        "3 万"
+      ],
+      "locations": [
+        "美国"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "speech_audio",
+          "name": "语音与音频"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "content_creation",
+            "dimensionName": "应用场景",
+            "name": "内容创作"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "speech_audio",
+          "name": "语音与音频"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "content_creation",
+          "dimensionName": "应用场景",
+          "name": "内容创作"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "content_creation",
+          "dimensionName": "应用场景",
+          "name": "内容创作"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "speech_audio",
+          "name": "语音与音频"
+        }
+      ],
+      "entityIds": [
+        "EN-f8bebacc033880dd"
+      ],
+      "entityNames": [
+        "索尼音乐再次"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/979/429.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
       "id": "EV-631dce4dc135d01b",
       "dataDate": "2026-06-04",
       "date": "2026-06-04",
@@ -391,8 +478,7 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "gemini",
-        "谷歌"
+        "Gemini"
       ],
       "verificationStatus": "verified",
       "datasetScopes": [
@@ -425,8 +511,14 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
+        "EV-6ce069b1845f5a52",
+        "EV-597b8257a97b3d02",
+        "EV-5aaa4c6697606274",
+        "EV-834e65247c2d4a3b",
+        "EV-cc974e0031c69715",
+        "EV-cd067fa6f39fe828",
+        "EV-dc3a5509a690a6b0",
         "EV-f3cc0845ce442e6b",
-        "EV-0d5a32aca724d30e",
         "EV-bee410f8134cba5a",
         "EV-a255cfc0dab44564",
         "EV-98a80b75b27d9f3b",
@@ -543,18 +635,20 @@
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-embodied_ai",
         "TX-technology-fine_tuning",
-        "TX-technology-open_weights",
-        "TX-technology-video_generation",
         "TX-technology-multimodal",
+        "TX-technology-video_generation",
         "TX-industry-media_entertainment",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
+        "TX-technology-image_generation",
         "TX-technology-speech_audio",
         "TX-use_case-content_creation",
-        "TX-technology-image_generation",
         "TX-technology-computer_use"
       ],
       "relatedEntityIds": [
+        "EN-a85d5a9b4a77d59b",
+        "EN-6f216f2ea5b7a13e",
+        "EN-18f0900d6c487f59",
         "EN-419f2cd96ee122e3",
         "EN-96eebba49dbbf422",
         "EN-81e577740888ca6d",
@@ -566,11 +660,8 @@
         "EN-01f1074bb52ff605",
         "EN-f2c032b19edb7900",
         "EN-2ab6d53e717a0e0d",
-        "EN-1cd41545564777ce",
         "EN-2998f8b13f4fd72e",
-        "EN-3546e1b15e6549b2",
         "EN-b5c336c0dd1ff29c",
-        "EN-e1a4e41919f7c2dc",
         "EN-d56aa2f9908f566a",
         "EN-4baef0e41cbd7ae2",
         "EN-bdfecbcd7dbf76d2",
@@ -578,7 +669,7 @@
         "EN-2aae0de3f5530f08"
       ],
       "firstSeen": "2026-04-12",
-      "lastSeen": "2026-07-21"
+      "lastSeen": "2026-07-22"
     },
     {
       "id": "EN-3a7bd3e2360a3d29",
@@ -734,6 +825,28 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-06-17",
       "lastSeen": "2026-06-17"
+    },
+    {
+      "id": "EN-f8bebacc033880dd",
+      "name": "索尼音乐再次",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-3bd84e75aa7f18b3"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-speech_audio",
+        "TX-use_case-content_creation"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-22"
     },
     {
       "id": "EN-b2968d9ba72f4818",

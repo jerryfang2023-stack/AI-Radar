@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-21T01:27:58.078Z",
-    "latestDataDate": "2026-07-21",
-    "currentDate": "2026-07-21",
-    "eventCount": 1347,
+    "generatedAt": "2026-07-22T01:57:46.409Z",
+    "latestDataDate": "2026-07-22",
+    "currentDate": "2026-07-22",
+    "eventCount": 1401,
     "quarantinedEventCount": 13
   },
   "entity": {
@@ -27,10 +27,14 @@
     "classificationRefs": [
       "TX-technology-video_generation"
     ],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-5388bc10736a0eff"
+    ],
     "firstSeen": "2026-06-16",
     "lastSeen": "2026-06-16",
-    "relationIds": [],
+    "relationIds": [
+      "REL2-fc89e0f24571bef8"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -71,8 +75,80 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-5388bc10736a0eff",
+      "name": "ByteDance",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "字节跳动"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-b726a9cda7beae64",
+        "EV-97fdf068afbbe555",
+        "EV-47a84a0f1a85c29c",
+        "EV-6c361125c3f50bb6",
+        "EV-533d2da98cce1ae0",
+        "EV-8734f7217e78c861",
+        "EV-3b1d1dd87442e7f1",
+        "EV-8a9b12665a3e40a0",
+        "EV-ee363e679d12329c",
+        "EV-ad2e4fe6a149d95d",
+        "EV-76aa77f5a2e7c661",
+        "EV-0e42803078b1c6be",
+        "EV-620f5ebfb6ac81ac",
+        "EV-90e206ff43a3b9d1",
+        "EV-c7404765df94a3b4",
+        "EV-e03b324b7e297e6b",
+        "EV-887d47bb477e2142",
+        "EV-4942151f99b2c5ac",
+        "EV-cf00e83782783915",
+        "EV-c11ee0da38376254",
+        "EV-631197767a45d34c"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-retail_ecommerce",
+        "TX-technology-on_device",
+        "TX-technology-video_generation",
+        "TX-industry-media_entertainment",
+        "TX-technology-tool_use"
+      ],
+      "relatedEntityIds": [
+        "EN-4f96127fdacbb405"
+      ],
+      "firstSeen": "2026-06-01",
+      "lastSeen": "2026-07-22"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-fc89e0f24571bef8",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-5388bc10736a0eff",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-4f96127fdacbb405",
+      "object_type": "entity",
+      "event_id": "EV-887d47bb477e2142",
+      "claim_refs": [
+        "CL-4b2d508b68827b34",
+        "CL-28b3c29eaf8f9f1c",
+        "CL-687c5027592b39c5"
+      ],
+      "source_refs": [
+        "SA-56c9538d50ed21ed"
+      ],
+      "data_date": "2026-06-16",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [
     {
       "id": "TX-technology-video_generation",
@@ -83,6 +159,7 @@
       "eventIds": [
         "EV-a354af52772334fd",
         "EV-26d2874c6ce028d6",
+        "EV-7e24db14146d39be",
         "EV-6fbbbfcdcec81df4",
         "EV-fd8ecce5de2f667d",
         "EV-5babb43f4b4d302f",
@@ -95,9 +172,11 @@
         "EN-d747d6f5125b6bee",
         "EN-047364b9be67f665",
         "EN-b81c8201acfc7639",
+        "EN-2b6e51bec93e86c1",
+        "EN-c9e6168149dd7cf6",
+        "EN-92af3ce2fb97edf3",
         "EN-ec1c8f558ff61e34",
         "EN-d83624eb3ab9192e",
-        "EN-2b6e51bec93e86c1",
         "EN-b0532e1af75cc4ab",
         "EN-01f1074bb52ff605",
         "EN-7ed9c9e7c260ed06",
@@ -111,9 +190,11 @@
         "EN-4f96127fdacbb405"
       ],
       "fdeIds": [],
-      "hardwareIds": [],
+      "hardwareIds": [
+        "HW-7ae863dfba7ce9be"
+      ],
       "firstSeen": "2026-06-16",
-      "lastSeen": "2026-07-20"
+      "lastSeen": "2026-07-22"
     }
   ],
   "fde": [],

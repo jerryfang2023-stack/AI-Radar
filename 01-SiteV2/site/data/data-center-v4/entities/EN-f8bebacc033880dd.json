@@ -1,0 +1,154 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-22T01:57:46.409Z",
+    "latestDataDate": "2026-07-22",
+    "currentDate": "2026-07-22",
+    "eventCount": 1401,
+    "quarantinedEventCount": 13
+  },
+  "entity": {
+    "id": "EN-f8bebacc033880dd",
+    "name": "索尼音乐再次",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-3bd84e75aa7f18b3"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-technology-speech_audio",
+      "TX-use_case-content_creation"
+    ],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-21",
+    "lastSeen": "2026-07-22",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": [
+        "EV-3bd84e75aa7f18b3"
+      ]
+    },
+    "timeline": [
+      {
+        "id": "EV-3bd84e75aa7f18b3",
+        "dataDate": "2026-07-22",
+        "date": "2026-07-21",
+        "eventType": "lawsuit_settlement",
+        "eventTypeLabel": "诉讼与和解",
+        "eventGroup": "组织、政策与法律",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "索尼音乐再次起诉 Udio：指控其未经许可复制超 3 万段录音训练 AI 模型",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "id": "content_creation",
+            "dimensionName": "应用场景",
+            "name": "内容创作"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "speech_audio",
+            "name": "语音与音频"
+          }
+        ],
+        "entityIds": [
+          "EN-f8bebacc033880dd"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-technology-speech_audio",
+      "name": "语音与音频",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "speech_audio",
+      "eventIds": [
+        "EV-94ad4a217508e6e0",
+        "EV-f388f7ae2debeae8",
+        "EV-99e5df844a1bd670",
+        "EV-dad8c827d14f2799",
+        "EV-2258329f33d413cf",
+        "EV-f68e00bb9fd49fac",
+        "EV-d99037f2ed8db897",
+        "EV-3bd84e75aa7f18b3",
+        "EV-631dce4dc135d01b"
+      ],
+      "entityIds": [
+        "EN-047364b9be67f665",
+        "EN-ec1c8f558ff61e34",
+        "EN-0b0c3b228202ab0a",
+        "EN-bae152c4560df38c",
+        "EN-bbdefa2950f49882",
+        "EN-3a7bd3e2360a3d29",
+        "EN-e0bab6f6c58bfe4e",
+        "EN-afe83c198e329ef2",
+        "EN-0aa590cbbdb3835a",
+        "EN-2b78da3dc866654e",
+        "EN-8d4321d936320802",
+        "EN-12ab68e37d104d27",
+        "EN-8395dc051feafc4c",
+        "EN-2b6e51bec93e86c1",
+        "EN-085598c00f2aaccf",
+        "EN-a3c3b987b09fc1bb",
+        "EN-2c348893efb2316e",
+        "EN-ed501d3e2d977553",
+        "EN-f8bebacc033880dd",
+        "EN-b2968d9ba72f4818"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-05-25",
+      "lastSeen": "2026-07-22"
+    },
+    {
+      "id": "TX-use_case-content_creation",
+      "name": "内容创作",
+      "nodeType": "use_case",
+      "typeLabel": "应用场景",
+      "valueId": "content_creation",
+      "eventIds": [
+        "EV-1de38866b4b92754",
+        "EV-99e5df844a1bd670",
+        "EV-3bd84e75aa7f18b3",
+        "EV-631dce4dc135d01b"
+      ],
+      "entityIds": [
+        "EN-e93e29634540a290",
+        "EN-bbdefa2950f49882",
+        "EN-3a7bd3e2360a3d29",
+        "EN-e0bab6f6c58bfe4e",
+        "EN-afe83c198e329ef2",
+        "EN-f8bebacc033880dd",
+        "EN-b2968d9ba72f4818"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-06-04",
+      "lastSeen": "2026-07-22"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}

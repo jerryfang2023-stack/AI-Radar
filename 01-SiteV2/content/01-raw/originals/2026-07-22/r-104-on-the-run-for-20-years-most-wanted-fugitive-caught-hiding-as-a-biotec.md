@@ -1,0 +1,312 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-104
+title: "On the run for 20 years, most-wanted fugitive caught hiding as a biotech exec"
+title_zh: "潜逃20年，头号通缉犯伪装成生物科技高管落网"
+title_translation_status: translated
+title_translation_method: deepseek_title_translation
+title_translation_model: deepseek-v4-flash
+original_url: "https://arstechnica.com/health/2026/07/on-the-run-for-20-years-most-wanted-fugitive-caught-hiding-as-a-biotech-exec/"
+canonical_url: "https://arstechnica.com/health/2026/07/on-the-run-for-20-years-most-wanted-fugitive-caught-hiding-as-a-biotech-exec"
+source_name: "Ars Technica AI"
+source_type: media
+source_level: A
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: research_or_report
+evidence_object_usable: false
+event_evidence: false
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: rss-feed
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-21T22:04:56.000Z"
+collected_at: 2026-07-22T01:55:51.187Z
+language: mixed
+full_text_hash: 13446cfd6901b682
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-22/r-104-on-the-run-for-20-years-most-wanted-fugitive-caught-hiding-as-a-biotec.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-22/r-104-on-the-run-for-20-years-most-wanted-fugitive-caught-hiding-as-a-biotec.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 91
+extractor_diagnostics: {"readability_score":91,"text_length":4936,"paragraph_count":24,"sentence_count":34,"boilerplate_hits":2,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 4936
+fetch_error: ""
+evidence_strength: source_backed_event
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["insufficient_usable_evidence_object"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"13446cfd6901b682","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: supporting_evidence
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 85e10363140fc087
+content_hash: 13446cfd6901b682
+semantic_hash: b9c2be6eb6d75d71
+duplicate_of: ""
+first_seen_at: "2026-07-21T22:04:56.000Z"
+last_seen_at: 2026-07-22T01:55:51.187Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":false,"case":false,"business_change":false,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["index_only"]
+change_action_detected: false
+evidence_eligibility: blocked
+evidence_block_reason: "not_event_case_or_trend_evidence"
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":5,"importance_reason":"vertical industry solution; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":2,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["Ars Technica AI","Amazon"],"products":[],"people":[],"industries":["法律 / 法务","医疗"],"roles":["CIO / IT 负责人","法务 / 律师"],"workflows":["合同审阅 / 法律研究"],"business_actions":["发布 / 推出"],"affected_departments":["IT / 安全","法务"],"numbers":["20","70","2005","1994","2017","2022","7","16"],"quotes":[" reasons unrelated to his activities at the Company .","Goodbye,","master yachtsman, a world traveler, and internationally connected,","Dr. Graydon received his MD and PhD from Stanford University and trained at Harvard’s Massachusetts General Hospital,"," without incident ."]}
+evidence_seed: {"company_actions":["Ronald Fischer, aka Richard Graydon, was arrested in New York last week.","Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav One of Rhode Island’s most-wanted fugitives was arrested in New York last week after being on the run for more than 20 years, which was at least partially spent hiding as a biotech executive, according to Stat News .","In a Securities and Exchange Commission filing Monday, California-based Immix Biopharma noted that Richard Graydon was terminated Friday for “ reasons unrelated to his activities at the Company ."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","法务 / 律师"],"risks_or_constraints":["That followed a similar incident in 1994, in which he was accused of raping another woman on another of his yachts, The Dreammaker ."]}
+missing_information: ["证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象","没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势","没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"company_action","text":"Ronald Fischer, aka Richard Graydon, was arrested in New York last week.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav One of Rhode Island’s most-wanted fugitives was arrested in New York last week after being on the run for more than 20 years, which was at least partially spent hiding as a biotech executive, according to Stat News .","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"In a Securities and Exchange Commission filing Monday, California-based Immix Biopharma noted that Richard Graydon was terminated Friday for “ reasons unrelated to his activities at the Company .","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"” It turns out, Richard Graydon was an alias for Ronald Fischer, a 70-year-old former anesthesiologist licensed in Rhode Island and Massachusetts, who fled amid his 2005 trial for first-degree sexual assault.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Fischer was accused of raping a woman during a date on his yacht, Lion King .","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"supporting_context","text":"That followed a similar incident in 1994, in which he was accused of raping another woman on another of his yachts, The Dreammaker .","supports":["signal_card_candidate","relationship_graph_input"],"importance":"medium","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-22T01:55:51.187Z
+theme: uncategorized
+keyword_group: uncategorized
+copyright_note: local research archive only
+---
+
+# On the run for 20 years, most-wanted fugitive caught hiding as a biotech exec
+
+## clean_text
+
+Skip to content
+Text
+settings
+Story text
+Size
+Small
+Standard
+Large
+Width
+Standard
+Wide
+Links
+Standard
+Orange
+* Subscribers only
+Learn more
+Minimize to nav
+One of Rhode Island’s most-wanted fugitives was arrested in New York last week after being on the run for more than 20 years, which was at least partially spent hiding as a biotech executive, according to Stat News .
+In a Securities and Exchange Commission filing Monday, California-based Immix Biopharma noted that Richard Graydon was terminated Friday for “ reasons unrelated to his activities at the Company .”
+It turns out, Richard Graydon was an alias for Ronald Fischer, a 70-year-old former anesthesiologist licensed in Rhode Island and Massachusetts, who fled amid his 2005 trial for first-degree sexual assault. Fischer was accused of raping a woman during a date on his yacht, Lion King .
+That followed a similar incident in 1994, in which he was accused of raping another woman on another of his yachts, The Dreammaker . In that case, he ultimately pled guilty to assault and battery and received a two-year prison sentence that was suspended, according to the Boston Globe . At that point, his medical licenses were revoked.
+Days before closing arguments for his 2005 trial, he sent his lawyer an email with the subject line “Goodbye,” according to the Providence Journal .
+“Although I believe my trial has gone very well and expect to be acquitted and dismissed, the small chance of losing could carry extremely and unacceptably harsh penalties,” Fischer wrote in the email. “I have therefore decided not to take the risk and leave the US and enjoy life in another country where I have long been carefully planning a good, safe, secure and comfortable life.”
+He was subsequently convicted in absentia and has been wanted for failure to appear, first-degree sexual assault, and flight to avoid prosecution since.
+It’s unclear what he has been up to during his entire 20 years on the lam. However, police had identified more than a dozen aliases he had been using. His police profile described him as a “master yachtsman, a world traveler, and internationally connected,” and noted that he had been featured on the television show America’s Most Wanted .
+Biotech career
+Stat reported that in 2017, Richard Graydon self-published a book titled The Genetic Risks of Cancer : The Effects of DNA, Genomics and Inheritance on Aging and Survival .” The book described Graydon as an oncologist who had served as a chief medical officer in the biotech and drug development industry. It had no reviews on Amazon.
+In October 2022, Atossa Therapeutics, a Seattle-based biotech, announced it had hired Richard Graydon as its interim chief medical officer.
+“We are privileged to welcome Richard to Atossa, where his deep experience in CAR-T cell therapy fits well with our current strategic direction as we explore our opportunities in cell therapy,” Steven Quay, Atossa’s CEO, said in a statement at the time.
+In March, Immix announced hiring Graydon , calling him a “board-certified hematologist-oncologist with over 20 years of experience in clinical development, most recently at Merck & Co. and Johnson & Johnson, where he led new and supplemental new drug applications and biologics license applications for 7 approved drugs including Darzalex, Carvykti, Keytruda, and Imbruvica.” Stat noted that these are some of the bestselling cancer medicines in the world.
+“Dr. Graydon received his MD and PhD from Stanford University and trained at Harvard’s Massachusetts General Hospital,” the announcement said.
+Stat could not verify any of that information, and Immix did not respond to requests for comment.
+Graydon, aka Fischer, was arrested July 16 aboard a 56-foot sailing vessel called The Silver Lining . He was sailing on the East River in New York. US Marshals and the US Coast Guard intercepted the vessel and took Fischer into custody “ without incident .”
+In Immix’s SEC filing Monday, in which it reported Graydon’s termination, the biotech company said that “Given his short tenure, management believes there is no material effect on the business.”
+Beth Mole
+Senior Health Reporter
+Beth Mole
+Senior Health Reporter
+Beth is Ars Technica’s Senior Health Reporter. Beth has a Ph.D. in microbiology from the University of North Carolina at Chapel Hill and attended the Science Communication program at the University of California, Santa Cruz. She specializes in covering infectious diseases, public health, and microbes.
+52 Comments
+Comments
+Forum view
+Loading comments...
+Prev story
+Next story
+1.
+The first trailer for Avengers: Doomsday is finally here
+2.
+When your vehicle outlives its cloud: What happens next?
+3.
+The Space Force is now seeking to buy up to $30 billion in rocket launches
+4.
+DA: Cop covered bodycam to snap nude prisoners on his iPhone—but other cams caught him
+5.
+Nintendo customers have no legal right to tariff refunds, company tells judge
+Customize
+
+## full_text
+
+Skip to content
+Text
+settings
+Story text
+Size
+Small
+Standard
+Large
+Width
+Standard
+Wide
+Links
+Standard
+Orange
+* Subscribers only
+Learn more
+Minimize to nav
+One of Rhode Island’s most-wanted fugitives was arrested in New York last week after being on the run for more than 20 years, which was at least partially spent hiding as a biotech executive, according to Stat News .
+In a Securities and Exchange Commission filing Monday, California-based Immix Biopharma noted that Richard Graydon was terminated Friday for “ reasons unrelated to his activities at the Company .”
+It turns out, Richard Graydon was an alias for Ronald Fischer, a 70-year-old former anesthesiologist licensed in Rhode Island and Massachusetts, who fled amid his 2005 trial for first-degree sexual assault. Fischer was accused of raping a woman during a date on his yacht, Lion King .
+That followed a similar incident in 1994, in which he was accused of raping another woman on another of his yachts, The Dreammaker . In that case, he ultimately pled guilty to assault and battery and received a two-year prison sentence that was suspended, according to the Boston Globe . At that point, his medical licenses were revoked.
+Days before closing arguments for his 2005 trial, he sent his lawyer an email with the subject line “Goodbye,” according to the Providence Journal .
+“Although I believe my trial has gone very well and expect to be acquitted and dismissed, the small chance of losing could carry extremely and unacceptably harsh penalties,” Fischer wrote in the email. “I have therefore decided not to take the risk and leave the US and enjoy life in another country where I have long been carefully planning a good, safe, secure and comfortable life.”
+He was subsequently convicted in absentia and has been wanted for failure to appear, first-degree sexual assault, and flight to avoid prosecution since.
+It’s unclear what he has been up to during his entire 20 years on the lam. However, police had identified more than a dozen aliases he had been using. His police profile described him as a “master yachtsman, a world traveler, and internationally connected,” and noted that he had been featured on the television show America’s Most Wanted .
+Biotech career
+Stat reported that in 2017, Richard Graydon self-published a book titled The Genetic Risks of Cancer : The Effects of DNA, Genomics and Inheritance on Aging and Survival .” The book described Graydon as an oncologist who had served as a chief medical officer in the biotech and drug development industry. It had no reviews on Amazon.
+In October 2022, Atossa Therapeutics, a Seattle-based biotech, announced it had hired Richard Graydon as its interim chief medical officer.
+“We are privileged to welcome Richard to Atossa, where his deep experience in CAR-T cell therapy fits well with our current strategic direction as we explore our opportunities in cell therapy,” Steven Quay, Atossa’s CEO, said in a statement at the time.
+In March, Immix announced hiring Graydon , calling him a “board-certified hematologist-oncologist with over 20 years of experience in clinical development, most recently at Merck & Co. and Johnson & Johnson, where he led new and supplemental new drug applications and biologics license applications for 7 approved drugs including Darzalex, Carvykti, Keytruda, and Imbruvica.” Stat noted that these are some of the bestselling cancer medicines in the world.
+“Dr. Graydon received his MD and PhD from Stanford University and trained at Harvard’s Massachusetts General Hospital,” the announcement said.
+Stat could not verify any of that information, and Immix did not respond to requests for comment.
+Graydon, aka Fischer, was arrested July 16 aboard a 56-foot sailing vessel called The Silver Lining . He was sailing on the East River in New York. US Marshals and the US Coast Guard intercepted the vessel and took Fischer into custody “ without incident .”
+In Immix’s SEC filing Monday, in which it reported Graydon’s termination, the biotech company said that “Given his short tenure, management believes there is no material effect on the business.”
+Beth Mole
+Senior Health Reporter
+Beth Mole
+Senior Health Reporter
+Beth is Ars Technica’s Senior Health Reporter. Beth has a Ph.D. in microbiology from the University of North Carolina at Chapel Hill and attended the Science Communication program at the University of California, Santa Cruz. She specializes in covering infectious diseases, public health, and microbes.
+52 Comments
+Comments
+Forum view
+Loading comments...
+Prev story
+Next story
+1.
+The first trailer for Avengers: Doomsday is finally here
+2.
+When your vehicle outlives its cloud: What happens next?
+3.
+The Space Force is now seeking to buy up to $30 billion in rocket launches
+4.
+DA: Cop covered bodycam to snap nude prisoners on his iPhone—but other cams caught him
+5.
+Nintendo customers have no legal right to tariff refunds, company tells judge
+Customize
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 91
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":91,"text_length":4936,"paragraph_count":24,"sentence_count":34,"boilerplate_hits":2,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Ronald Fischer, aka Richard Graydon, was arrested in New York last week.
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav One of Rhode Island’s most-wanted fugitives was arrested in New York last week after being on the run for more than 20 years, which was at least partially spent hiding as a biotech executive, according to Stat News .
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   In a Securities and Exchange Commission filing Monday, California-based Immix Biopharma noted that Richard Graydon was terminated Friday for “ reasons unrelated to his activities at the Company .
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   ” It turns out, Richard Graydon was an alias for Ronald Fischer, a 70-year-old former anesthesiologist licensed in Rhode Island and Massachusetts, who fled amid his 2005 trial for first-degree sexual assault.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Fischer was accused of raping a woman during a date on his yacht, Lion King .
+
+6. **supporting_context**｜supports=signal_card_candidate, relationship_graph_input｜importance=medium｜confidence=high
+   That followed a similar incident in 1994, in which he was accused of raping another woman on another of his yachts, The Dreammaker .
+
+## business_elements
+
+- companies: Ars Technica AI, Amazon
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 法律 / 法务, 医疗
+- roles: CIO / IT 负责人, 法务 / 律师
+- workflows: 合同审阅 / 法律研究
+- business_actions: 发布 / 推出
+- affected_departments: IT / 安全, 法务
+- numbers: 20, 70, 2005, 1994, 2017, 2022, 7, 16
+- quotes:  reasons unrelated to his activities at the Company . / Goodbye, / master yachtsman, a world traveler, and internationally connected, / Dr. Graydon received his MD and PhD from Stanford University and trained at Harvard’s Massachusetts General Hospital, /  without incident .
+
+## evidence_seed
+
+- company_actions: Ronald Fischer, aka Richard Graydon, was arrested in New York last week. / Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav One of Rhode Island’s most-wanted fugitives was arrested in New York last week after being on the run for more than 20 years, which was at least partially spent hiding as a biotech executive, according to Stat News . / In a Securities and Exchange Commission filing Monday, California-based Immix Biopharma noted that Richard Graydon was terminated Friday for “ reasons unrelated to his activities at the Company .
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 法务 / 律师
+- risks_or_constraints: That followed a similar incident in 1994, in which he was accused of raping another woman on another of his yachts, The Dreammaker .
+
+## guanlan_scores
+
+- importance_type: important_vertical_solution
+- importance_score: 5
+- importance_reason: vertical industry solution; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 2
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- business_change: false
+- relationship_graph_input: false
+- trend_candidate_context: false
+- signal_card_candidate: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- index_only
+
+## missing_information
+
+- 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象
+- 没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: supporting_evidence
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Ronald Fischer, aka Richard Graydon, was arrested in New York last week.
+
+## 采集备注
+
+该条目由 rss-feed 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

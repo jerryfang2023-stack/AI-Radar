@@ -1,0 +1,288 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-015",
+  "title": "Google 发布 Gemini 3.6 Flash 与网络安全 AI，预告 3.5 Pro 及 Gemini 4",
+  "title_zh": "Google 发布 Gemini 3.6 Flash 与网络安全 AI，预告 3.5 Pro 及 Gemini 4",
+  "title_translation_status": "not_required",
+  "title_translation_method": "source_title",
+  "title_translation_model": "",
+  "original_url": "https://arstechnica.com/google/2026/07/google-reveals-faster-and-cheaper-gemini-3-6-flash-says-3-5-pro-is-still-in-testing",
+  "canonical_url": "https://arstechnica.com/google/2026/07/google-reveals-faster-and-cheaper-gemini-3-6-flash-says-3-5-pro-is-still-in-testing",
+  "source_name": "Ars Technica：AI（RSS）",
+  "source_type": "media",
+  "source_level": "A",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "event",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": false,
+  "enterprise_ai_transformation_stage": "",
+  "enterprise_ai_transformation_reason": "",
+  "author": "",
+  "published_at": "2026-07-21T16:58:25.000Z",
+  "collected_at": "2026-07-22T01:55:08.219Z",
+  "language": "mixed",
+  "full_text": "Skip to content\nText\nsettings\nStory text\nSize\nSmall\nStandard\nLarge\nWidth\nStandard\nWide\nLinks\nStandard\nOrange\n* Subscribers only\nLearn more\nMinimize to nav\nGoogle announced a significant evolution of its AI models at I/O in May with the release of Gemini 3.5 Flash, and it’s not slowing down. The company revealed three new AI models today , including its first version of Gemini geared toward cybersecurity. However, none of the new models is the delayed Gemini 3.5 Pro, which was supposed to launch in June.\nGemini 3.5 Flash, which was the star of the show at I/O , has already been deprecated. In its place, developers and users will find Gemini 3.6 Flash. Google makes the usual claims about this model—it’s marginally more capable and better at coding, and it has great multimodal features.\nGoogle says the changes to 3.6 Flash were made in response to user feedback on the 3.5 release. In general, Gemini 3.5 Flash didn’t appear to live up to Google’s promises around code generation. Perhaps that is simply a consequence of Google’s intense focus on efficiency as businesses have started to fret over the cost of AI tokens.\nCredit:\nGoogle\nCredit:\nGoogle\nIn the DeepSWE test for coding, 3.6 Flash jumps to 49 percent versus 37 percent for 3.5 Flash. The new model now supports computer use as a standard feature in the Gemini API, too. The OSWorld test for computer use shows a modest boost to 83 percent from 3.5’s 78.4 percent score. Efficiency was a big focus for Gemini 3.5 Flash, and Google says that effort has been amped up with 3.6. Even with small benchmark gains, Gemini 3.6 Flash uses about 17 percent fewer tokens.\nIn agentic workflows (like the one below), Gemini 3.6 Flash should complete tasks more accurately, in fewer steps, and with fewer tokens. That could save developers (and Google) a lot of money. The new model has a lower API cost, at $1.50/1M input tokens and $7.50/1M output tokens. It was $1.50 and $9, respectively, for 3.5 Flash.\nToken efficiency in Gemini 3.6 Flash.\nToken efficiency in Gemini 3.6 Flash.\nGoogle is not done with the 3.5 branch yet, though. It has also released Gemini 3.5 Flash Lite and 3.5 Flash Cyber. The new Flash Lite is Google’s most efficient modern AI, hitting an impressive 350 tokens per second. The company claims this model is ideal for scaling agentic systems without breaking the bank. Based on benchmark numbers, the new Flash Lite is almost on par with frontier models from about a year ago, but it’s cheap. Pricing is set at $0.30/1M input tokens and $2.50/1M output tokens, though that is slightly higher than the previous 3.1 Flash Lite ($0.25 and $1.50).\nGemini 3.6 Flash will begin rolling out in the API today, and it will take over from 3.5 Flash in the Gemini app. Likewise, Gemini 3.5 Flash Lite is available to developers and in the Gemini app. Google also notes that you’ll see a lot of 3.5 Flash Lite in Google search, where its higher speed probably makes it ideal for AI Overviews. So those may get a smidge better .\nGoogle’s AI roadmap\nGoogle also has some news on upcoming AI models. First up will be a limited release of Gemini 3.5 Flash Cyber. This is Google’s first LLM tuned specifically for cybersecurity. The company says this model is almost as good at finding and fixing cybersecurity issues as the much larger and more expensive Claude Mythos . At the same time, it has the efficiency of a Flash model.\nOf course, Google acknowledges the “dual-use” nature of such models, which can just as easily be used to identify vulnerabilities for malicious purposes. The company borrows a page from Anthropic here, painting Gemini 3.5 Flash Cyber as too dangerous to release publicly. Instead, the model will launch soon as a limited pilot in Google DeepMind’s CodeMender agent, which is available exclusively to trusted partners and governments.\nCredit:\nGoogle\nCredit:\nGoogle\nThen there’s the curious case of Gemini 3.5 Pro, which Google claimed was slated for a June release back at I/O. That never happened, and Google hasn’t had anything to say about it until now. There’s not much of an update, though. The company claims its new flagship model, which is supposed to rival GPT 5.6 and Claude Fable/Sonnet 5, is currently in testing with unnamed partners. The model will be released “as soon as it’s ready.” Earlier reports claimed that Google delayed 3.5 Pro because it couldn’t match competing models in coding.\nGemini 3.5 Flash may not be top-of-the-line for long when it arrives. Google also notes that it has started pre-training for Gemini 4, a process that is apparently more ambitious than its previous AI efforts. There’s no timeline for when we’ll see Gemini 4, and we don’t know if there will be more 3.x releases before that.\nRyan Whitwam\nSenior Technology Reporter\nRyan Whitwam\nSenior Technology Reporter\nRyan Whitwam is a senior technology reporter at Ars Technica, covering the ways Google, AI, and mobile technology continue to change the world. Over his 20-year career, he's written for Android Police, ExtremeTech, Wirecutter, NY Times, and more. He has reviewed more phones than most people will ever own. You can follow him on Bluesky , where you will see photos of his dozens of mechanical keyboards.\n24 Comments\nComments\nForum view\nLoading comments...\nPrev story\nNext story\n1.\nThe first trailer for Avengers: Doomsday is finally here\n2.\nThe Space Force is now seeking to buy up to $30 billion in rocket launches\n3.\nWhen your vehicle outlives its cloud: What happens next?\n4.\nDA: Cop covered bodycam to snap nude prisoners on his iPhone—but other cams caught him\n5.\nTroubling new details emerge on diabetes ouster controversy\nCustomize",
+  "clean_text": "Skip to content\nText\nsettings\nStory text\nSize\nSmall\nStandard\nLarge\nWidth\nStandard\nWide\nLinks\nStandard\nOrange\n* Subscribers only\nLearn more\nMinimize to nav\nGoogle announced a significant evolution of its AI models at I/O in May with the release of Gemini 3.5 Flash, and it’s not slowing down. The company revealed three new AI models today , including its first version of Gemini geared toward cybersecurity. However, none of the new models is the delayed Gemini 3.5 Pro, which was supposed to launch in June.\nGemini 3.5 Flash, which was the star of the show at I/O , has already been deprecated. In its place, developers and users will find Gemini 3.6 Flash. Google makes the usual claims about this model—it’s marginally more capable and better at coding, and it has great multimodal features.\nGoogle says the changes to 3.6 Flash were made in response to user feedback on the 3.5 release. In general, Gemini 3.5 Flash didn’t appear to live up to Google’s promises around code generation. Perhaps that is simply a consequence of Google’s intense focus on efficiency as businesses have started to fret over the cost of AI tokens.\nCredit:\nGoogle\nCredit:\nGoogle\nIn the DeepSWE test for coding, 3.6 Flash jumps to 49 percent versus 37 percent for 3.5 Flash. The new model now supports computer use as a standard feature in the Gemini API, too. The OSWorld test for computer use shows a modest boost to 83 percent from 3.5’s 78.4 percent score. Efficiency was a big focus for Gemini 3.5 Flash, and Google says that effort has been amped up with 3.6. Even with small benchmark gains, Gemini 3.6 Flash uses about 17 percent fewer tokens.\nIn agentic workflows (like the one below), Gemini 3.6 Flash should complete tasks more accurately, in fewer steps, and with fewer tokens. That could save developers (and Google) a lot of money. The new model has a lower API cost, at $1.50/1M input tokens and $7.50/1M output tokens. It was $1.50 and $9, respectively, for 3.5 Flash.\nToken efficiency in Gemini 3.6 Flash.\nToken efficiency in Gemini 3.6 Flash.\nGoogle is not done with the 3.5 branch yet, though. It has also released Gemini 3.5 Flash Lite and 3.5 Flash Cyber. The new Flash Lite is Google’s most efficient modern AI, hitting an impressive 350 tokens per second. The company claims this model is ideal for scaling agentic systems without breaking the bank. Based on benchmark numbers, the new Flash Lite is almost on par with frontier models from about a year ago, but it’s cheap. Pricing is set at $0.30/1M input tokens and $2.50/1M output tokens, though that is slightly higher than the previous 3.1 Flash Lite ($0.25 and $1.50).\nGemini 3.6 Flash will begin rolling out in the API today, and it will take over from 3.5 Flash in the Gemini app. Likewise, Gemini 3.5 Flash Lite is available to developers and in the Gemini app. Google also notes that you’ll see a lot of 3.5 Flash Lite in Google search, where its higher speed probably makes it ideal for AI Overviews. So those may get a smidge better .\nGoogle’s AI roadmap\nGoogle also has some news on upcoming AI models. First up will be a limited release of Gemini 3.5 Flash Cyber. This is Google’s first LLM tuned specifically for cybersecurity. The company says this model is almost as good at finding and fixing cybersecurity issues as the much larger and more expensive Claude Mythos . At the same time, it has the efficiency of a Flash model.\nOf course, Google acknowledges the “dual-use” nature of such models, which can just as easily be used to identify vulnerabilities for malicious purposes. The company borrows a page from Anthropic here, painting Gemini 3.5 Flash Cyber as too dangerous to release publicly. Instead, the model will launch soon as a limited pilot in Google DeepMind’s CodeMender agent, which is available exclusively to trusted partners and governments.\nCredit:\nGoogle\nCredit:\nGoogle\nThen there’s the curious case of Gemini 3.5 Pro, which Google claimed was slated for a June release back at I/O. That never happened, and Google hasn’t had anything to say about it until now. There’s not much of an update, though. The company claims its new flagship model, which is supposed to rival GPT 5.6 and Claude Fable/Sonnet 5, is currently in testing with unnamed partners. The model will be released “as soon as it’s ready.” Earlier reports claimed that Google delayed 3.5 Pro because it couldn’t match competing models in coding.\nGemini 3.5 Flash may not be top-of-the-line for long when it arrives. Google also notes that it has started pre-training for Gemini 4, a process that is apparently more ambitious than its previous AI efforts. There’s no timeline for when we’ll see Gemini 4, and we don’t know if there will be more 3.x releases before that.\nRyan Whitwam\nSenior Technology Reporter\nRyan Whitwam\nSenior Technology Reporter\nRyan Whitwam is a senior technology reporter at Ars Technica, covering the ways Google, AI, and mobile technology continue to change the world. Over his 20-year career, he's written for Android Police, ExtremeTech, Wirecutter, NY Times, and more. He has reviewed more phones than most people will ever own. You can follow him on Bluesky , where you will see photos of his dozens of mechanical keyboards.\n24 Comments\nComments\nForum view\nLoading comments...\nPrev story\nNext story\n1.\nThe first trailer for Avengers: Doomsday is finally here\n2.\nThe Space Force is now seeking to buy up to $30 billion in rocket launches\n3.\nWhen your vehicle outlives its cloud: What happens next?\n4.\nDA: Cop covered bodycam to snap nude prisoners on his iPhone—but other cams caught him\n5.\nTroubling new details emerge on diabetes ouster controversy\nCustomize",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-22/r-015-google-发布-gemini-3-6-flash-与网络安全-ai-预告-3-5-pro-及-gemini-4.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-22/r-015-google-发布-gemini-3-6-flash-与网络安全-ai-预告-3-5-pro-及-gemini-4.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-content-container",
+  "extraction_quality": "high",
+  "extraction_method": "content-container",
+  "readability_score": 91,
+  "extractor_diagnostics": {
+    "readability_score": 91,
+    "text_length": 5644,
+    "paragraph_count": 21,
+    "sentence_count": 57,
+    "boilerplate_hits": 2,
+    "symbol_ratio": 0,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "content-container"
+  },
+  "has_full_text": true,
+  "content_length": 5644,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "4a2cd997d4080eba",
+    "missing": []
+  },
+  "evidence_strength": "rich_evidence",
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "Google 发布 Gemini 3.6 Flash 与网络安全 AI，预告 3.5 Pro 及 Gemini 4",
+    "discovery_summary": "Google 今日推出 Gemini 3.6 Flash 模型及一款面向网络安全的 AI 产品，同时预告了即将发布的 Gemini 3.5 Pro 与正在训练中的 Gemini 4。新模型与安全工具的具体性能参数、上下文长度及可用性细节尚未公布。",
+    "source_name": "Ars Technica：AI（RSS）",
+    "origin_url": "https://arstechnica.com/google/2026/07/google-reveals-faster-and-cheaper-gemini-3-6-flash-says-3-5-pro-is-still-in-testing",
+    "discovered_at": "2026-07-22T01:46:55.153Z",
+    "rank_on_page": 156,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "fba84d3049406055",
+  "content_hash": "4a2cd997d4080eba",
+  "full_text_hash": "4a2cd997d4080eba",
+  "semantic_hash": "70c2044b42f9307e",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-21T16:58:25.000Z",
+  "last_seen_at": "2026-07-22T01:55:08.219Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "supporting_context",
+      "text": "Google 今日推出 Gemini 3.6 Flash 模型及一款面向网络安全的 AI 产品，同时预告了即将发布的 Gemini 3.5 Pro 与正在训练中的 Gemini 4。新模型与安全工具的具体性能参数、上下文长度及可用性细节尚未公布。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "product_update",
+      "text": "Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav Google announced a significant evolution of its AI models at I/O in May with the release of Gemini 3.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "5 Flash, and it’s not slowing down.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "supporting_context",
+      "text": "The company revealed three new AI models today , including its first version of Gemini geared toward cybersecurity.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "However, none of the new models is the delayed Gemini 3.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "product_update",
+      "text": "5 Pro, which was supposed to launch in June.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-22T01:55:08.219Z",
+  "business_elements": {
+    "companies": [
+      "Ars Technica",
+      "AI（RSS）",
+      "Anthropic",
+      "Google"
+    ],
+    "products": [
+      "Gemini",
+      "Claude",
+      "agent"
+    ],
+    "people": [],
+    "industries": [
+      "金融 / 保险",
+      "开发者工具"
+    ],
+    "roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "合同审阅 / 法律研究",
+      "计费 / 预算管理",
+      "权限 / 安全治理"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "合作 / 联盟",
+      "定价 / 计费变化"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "财务 / 预算",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "3.6",
+      "3.5",
+      "4",
+      "49",
+      "37",
+      "83",
+      "78.4",
+      "17"
+    ],
+    "quotes": [
+      "dual-use",
+      "as soon as it’s ready."
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav Google announced a significant evolution of its AI models at I/O in May with the release of Gemini 3.",
+      "5 Flash, and it’s not slowing down.",
+      "However, none of the new models is the delayed Gemini 3."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": [
+      "Google 今日推出 Gemini 3.6 Flash 模型及一款面向网络安全的 AI 产品，同时预告了即将发布的 Gemini 3.5 Pro 与正在训练中的 Gemini 4。新模型与安全工具的具体性能参数、上下文长度及可用性细节尚未公布。",
+      "The company revealed three new AI models today , including its first version of Gemini geared toward cybersecurity."
+    ]
+  },
+  "guanlan_scores": {
+    "importance_type": "supporting_signal",
+    "importance_score": 2,
+    "importance_reason": "consumer entertainment or minor platform policy feature; AI-adjacent but not a core business signal",
+    "supporting_signals": [
+      "low_value_ai_adjacent_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 2,
+    "guanlan_relevance": 2,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": false,
+    "trend_candidate_context": false,
+    "signal_card_candidate": false,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Google 发布 Gemini 3.6 Flash 与网络安全 AI，预告 3.5 Pro 及 Gemini 4\n\n- raw_id: R-015\n- title_zh: Google 发布 Gemini 3.6 Flash 与网络安全 AI，预告 3.5 Pro 及 Gemini 4\n- title_translation_status: not_required\n- title_translation_method: source_title\n- original_url: https://arstechnica.com/google/2026/07/google-reveals-faster-and-cheaper-gemini-3-6-flash-says-3-5-pro-is-still-in-testing\n- source_name: Ars Technica：AI（RSS）\n- collected_at: 2026-07-22T01:55:08.219Z\n\n## clean_text\n\nSkip to content\nText\nsettings\nStory text\nSize\nSmall\nStandard\nLarge\nWidth\nStandard\nWide\nLinks\nStandard\nOrange\n* Subscribers only\nLearn more\nMinimize to nav\nGoogle announced a significant evolution of its AI models at I/O in May with the release of Gemini 3.5 Flash, and it’s not slowing down. The company revealed three new AI models today , including its first version of Gemini geared toward cybersecurity. However, none of the new models is the delayed Gemini 3.5 Pro, which was supposed to launch in June.\nGemini 3.5 Flash, which was the star of the show at I/O , has already been deprecated. In its place, developers and users will find Gemini 3.6 Flash. Google makes the usual claims about this model—it’s marginally more capable and better at coding, and it has great multimodal features.\nGoogle says the changes to 3.6 Flash were made in response to user feedback on the 3.5 release. In general, Gemini 3.5 Flash didn’t appear to live up to Google’s promises around code generation. Perhaps that is simply a consequence of Google’s intense focus on efficiency as businesses have started to fret over the cost of AI tokens.\nCredit:\nGoogle\nCredit:\nGoogle\nIn the DeepSWE test for coding, 3.6 Flash jumps to 49 percent versus 37 percent for 3.5 Flash. The new model now supports computer use as a standard feature in the Gemini API, too. The OSWorld test for computer use shows a modest boost to 83 percent from 3.5’s 78.4 percent score. Efficiency was a big focus for Gemini 3.5 Flash, and Google says that effort has been amped up with 3.6. Even with small benchmark gains, Gemini 3.6 Flash uses about 17 percent fewer tokens.\nIn agentic workflows (like the one below), Gemini 3.6 Flash should complete tasks more accurately, in fewer steps, and with fewer tokens. That could save developers (and Google) a lot of money. The new model has a lower API cost, at $1.50/1M input tokens and $7.50/1M output tokens. It was $1.50 and $9, respectively, for 3.5 Flash.\nToken efficiency in Gemini 3.6 Flash.\nToken efficiency in Gemini 3.6 Flash.\nGoogle is not done with the 3.5 branch yet, though. It has also released Gemini 3.5 Flash Lite and 3.5 Flash Cyber. The new Flash Lite is Google’s most efficient modern AI, hitting an impressive 350 tokens per second. The company claims this model is ideal for scaling agentic systems without breaking the bank. Based on benchmark numbers, the new Flash Lite is almost on par with frontier models from about a year ago, but it’s cheap. Pricing is set at $0.30/1M input tokens and $2.50/1M output tokens, though that is slightly higher than the previous 3.1 Flash Lite ($0.25 and $1.50).\nGemini 3.6 Flash will begin rolling out in the API today, and it will take over from 3.5 Flash in the Gemini app. Likewise, Gemini 3.5 Flash Lite is available to developers and in the Gemini app. Google also notes that you’ll see a lot of 3.5 Flash Lite in Google search, where its higher speed probably makes it ideal for AI Overviews. So those may get a smidge better .\nGoogle’s AI roadmap\nGoogle also has some news on upcoming AI models. First up will be a limited release of Gemini 3.5 Flash Cyber. This is Google’s first LLM tuned specifically for cybersecurity. The company says this model is almost as good at finding and fixing cybersecurity issues as the much larger and more expensive Claude Mythos . At the same time, it has the efficiency of a Flash model.\nOf course, Google acknowledges the “dual-use” nature of such models, which can just as easily be used to identify vulnerabilities for malicious purposes. The company borrows a page from Anthropic here, painting Gemini 3.5 Flash Cyber as too dangerous to release publicly. Instead, the model will launch soon as a limited pilot in Google DeepMind’s CodeMender agent, which is available exclusively to trusted partners and governments.\nCredit:\nGoogle\nCredit:\nGoogle\nThen there’s the curious case of Gemini 3.5 Pro, which Google claimed was slated for a June release back at I/O. That never happened, and Google hasn’t had anything to say about it until now. There’s not much of an update, though. The company claims its new flagship model, which is supposed to rival GPT 5.6 and Claude Fable/Sonnet 5, is currently in testing with unnamed partners. The model will be released “as soon as it’s ready.” Earlier reports claimed that Google delayed 3.5 Pro because it couldn’t match competing models in coding.\nGemini 3.5 Flash may not be top-of-the-line for long when it arrives. Google also notes that it has started pre-training for Gemini 4, a process that is apparently more ambitious than its previous AI efforts. There’s no timeline for when we’ll see Gemini 4, and we don’t know if there will be more 3.x releases before that.\nRyan Whitwam\nSenior Technology Reporter\nRyan Whitwam\nSenior Technology Reporter\nRyan Whitwam is a senior technology reporter at Ars Technica, covering the ways Google, AI, and mobile technology continue to change the world. Over his 20-year career, he's written for Android Police, ExtremeTech, Wirecutter, NY Times, and more. He has reviewed more phones than most people will ever own. You can follow him on Bluesky , where you will see photos of his dozens of mechanical keyboards.\n24 Comments\nComments\nForum view\nLoading comments...\nPrev story\nNext story\n1.\nThe first trailer for Avengers: Doomsday is finally here\n2.\nThe Space Force is now seeking to buy up to $30 billion in rocket launches\n3.\nWhen your vehicle outlives its cloud: What happens next?\n4.\nDA: Cop covered bodycam to snap nude prisoners on his iPhone—but other cams caught him\n5.\nTroubling new details emerge on diabetes ouster controversy\nCustomize\n\n## full_text\n\nSkip to content\nText\nsettings\nStory text\nSize\nSmall\nStandard\nLarge\nWidth\nStandard\nWide\nLinks\nStandard\nOrange\n* Subscribers only\nLearn more\nMinimize to nav\nGoogle announced a significant evolution of its AI models at I/O in May with the release of Gemini 3.5 Flash, and it’s not slowing down. The company revealed three new AI models today , including its first version of Gemini geared toward cybersecurity. However, none of the new models is the delayed Gemini 3.5 Pro, which was supposed to launch in June.\nGemini 3.5 Flash, which was the star of the show at I/O , has already been deprecated. In its place, developers and users will find Gemini 3.6 Flash. Google makes the usual claims about this model—it’s marginally more capable and better at coding, and it has great multimodal features.\nGoogle says the changes to 3.6 Flash were made in response to user feedback on the 3.5 release. In general, Gemini 3.5 Flash didn’t appear to live up to Google’s promises around code generation. Perhaps that is simply a consequence of Google’s intense focus on efficiency as businesses have started to fret over the cost of AI tokens.\nCredit:\nGoogle\nCredit:\nGoogle\nIn the DeepSWE test for coding, 3.6 Flash jumps to 49 percent versus 37 percent for 3.5 Flash. The new model now supports computer use as a standard feature in the Gemini API, too. The OSWorld test for computer use shows a modest boost to 83 percent from 3.5’s 78.4 percent score. Efficiency was a big focus for Gemini 3.5 Flash, and Google says that effort has been amped up with 3.6. Even with small benchmark gains, Gemini 3.6 Flash uses about 17 percent fewer tokens.\nIn agentic workflows (like the one below), Gemini 3.6 Flash should complete tasks more accurately, in fewer steps, and with fewer tokens. That could save developers (and Google) a lot of money. The new model has a lower API cost, at $1.50/1M input tokens and $7.50/1M output tokens. It was $1.50 and $9, respectively, for 3.5 Flash.\nToken efficiency in Gemini 3.6 Flash.\nToken efficiency in Gemini 3.6 Flash.\nGoogle is not done with the 3.5 branch yet, though. It has also released Gemini 3.5 Flash Lite and 3.5 Flash Cyber. The new Flash Lite is Google’s most efficient modern AI, hitting an impressive 350 tokens per second. The company claims this model is ideal for scaling agentic systems without breaking the bank. Based on benchmark numbers, the new Flash Lite is almost on par with frontier models from about a year ago, but it’s cheap. Pricing is set at $0.30/1M input tokens and $2.50/1M output tokens, though that is slightly higher than the previous 3.1 Flash Lite ($0.25 and $1.50).\nGemini 3.6 Flash will begin rolling out in the API today, and it will take over from 3.5 Flash in the Gemini app. Likewise, Gemini 3.5 Flash Lite is available to developers and in the Gemini app. Google also notes that you’ll see a lot of 3.5 Flash Lite in Google search, where its higher speed probably makes it ideal for AI Overviews. So those may get a smidge better .\nGoogle’s AI roadmap\nGoogle also has some news on upcoming AI models. First up will be a limited release of Gemini 3.5 Flash Cyber. This is Google’s first LLM tuned specifically for cybersecurity. The company says this model is almost as good at finding and fixing cybersecurity issues as the much larger and more expensive Claude Mythos . At the same time, it has the efficiency of a Flash model.\nOf course, Google acknowledges the “dual-use” nature of such models, which can just as easily be used to identify vulnerabilities for malicious purposes. The company borrows a page from Anthropic here, painting Gemini 3.5 Flash Cyber as too dangerous to release publicly. Instead, the model will launch soon as a limited pilot in Google DeepMind’s CodeMender agent, which is available exclusively to trusted partners and governments.\nCredit:\nGoogle\nCredit:\nGoogle\nThen there’s the curious case of Gemini 3.5 Pro, which Google claimed was slated for a June release back at I/O. That never happened, and Google hasn’t had anything to say about it until now. There’s not much of an update, though. The company claims its new flagship model, which is supposed to rival GPT 5.6 and Claude Fable/Sonnet 5, is currently in testing with unnamed partners. The model will be released “as soon as it’s ready.” Earlier reports claimed that Google delayed 3.5 Pro because it couldn’t match competing models in coding.\nGemini 3.5 Flash may not be top-of-the-line for long when it arrives. Google also notes that it has started pre-training for Gemini 4, a process that is apparently more ambitious than its previous AI efforts. There’s no timeline for when we’ll see Gemini 4, and we don’t know if there will be more 3.x releases before that.\nRyan Whitwam\nSenior Technology Reporter\nRyan Whitwam\nSenior Technology Reporter\nRyan Whitwam is a senior technology reporter at Ars Technica, covering the ways Google, AI, and mobile technology continue to change the world. Over his 20-year career, he's written for Android Police, ExtremeTech, Wirecutter, NY Times, and more. He has reviewed more phones than most people will ever own. You can follow him on Bluesky , where you will see photos of his dozens of mechanical keyboards.\n24 Comments\nComments\nForum view\nLoading comments...\nPrev story\nNext story\n1.\nThe first trailer for Avengers: Doomsday is finally here\n2.\nThe Space Force is now seeking to buy up to $30 billion in rocket launches\n3.\nWhen your vehicle outlives its cloud: What happens next?\n4.\nDA: Cop covered bodycam to snap nude prisoners on his iPhone—but other cams caught him\n5.\nTroubling new details emerge on diabetes ouster controversy\nCustomize\n\n## extraction_diagnostics\n\n- extraction_method: content-container\n- readability_score: 91\n- fetch_status: fetched-readable-text-content-container\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [supporting_context / signal_card_candidate, relationship_graph_input / high] Google 今日推出 Gemini 3.6 Flash 模型及一款面向网络安全的 AI 产品，同时预告了即将发布的 Gemini 3.5 Pro 与正在训练中的 Gemini 4。新模型与安全工具的具体性能参数、上下文长度及可用性细节尚未公布。\n2. [product_update / signal_card_candidate, relationship_graph_input, business_change / high] Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav Google announced a significant evolution of its AI models at I/O in May with the release of Gemini 3.\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] 5 Flash, and it’s not slowing down.\n4. [supporting_context / signal_card_candidate, relationship_graph_input / high] The company revealed three new AI models today , including its first version of Gemini geared toward cybersecurity.\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] However, none of the new models is the delayed Gemini 3.\n6. [product_update / signal_card_candidate, relationship_graph_input, business_change / high] 5 Pro, which was supposed to launch in June.\n"
+}

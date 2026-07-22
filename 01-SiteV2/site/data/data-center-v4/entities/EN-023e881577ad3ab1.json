@@ -1,0 +1,213 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-22T01:57:46.409Z",
+    "latestDataDate": "2026-07-22",
+    "currentDate": "2026-07-22",
+    "eventCount": 1401,
+    "quarantinedEventCount": 13
+  },
+  "entity": {
+    "id": "EN-023e881577ad3ab1",
+    "name": "百时美施贵宝",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-11b2293769081d4c"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-industry-healthcare_life_sciences",
+      "TX-use_case-research_science"
+    ],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-21",
+    "lastSeen": "2026-07-22",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [
+        "EV-11b2293769081d4c"
+      ],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-11b2293769081d4c",
+        "dataDate": "2026-07-22",
+        "date": "2026-07-21",
+        "eventType": "procurement_contract",
+        "eventTypeLabel": "采购合同",
+        "eventGroup": "商业合作",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "百时美施贵宝采购英伟达 Vera Rubin 架构 DGX SuperPOD，用 AI 加速药物研发",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "id": "research_science",
+            "dimensionName": "应用场景",
+            "name": "科研与发现"
+          },
+          {
+            "dimensionId": "industry",
+            "id": "healthcare_life_sciences",
+            "dimensionName": "行业",
+            "name": "医疗与生命科学"
+          }
+        ],
+        "entityIds": [
+          "EN-023e881577ad3ab1",
+          "EN-8d4321d936320802"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-industry-healthcare_life_sciences",
+      "name": "医疗与生命科学",
+      "nodeType": "industry",
+      "typeLabel": "行业",
+      "valueId": "healthcare_life_sciences",
+      "eventIds": [
+        "EV-2dff32c1b6f813e4",
+        "EV-6e06cfa28f76a76f",
+        "EV-aa33ca051f3a7f78",
+        "EV-cfd791871e347aa6",
+        "EV-f487788f3d44f288",
+        "EV-189e43cb9fea8e1a",
+        "EV-a42e51959c627554",
+        "EV-a84ec4216d3ded6d",
+        "EV-8b0f056571d68269",
+        "EV-11b2293769081d4c",
+        "EV-9563aa162529aab0",
+        "EV-cafe435ddd007821",
+        "EV-4db890779221bd9a",
+        "EV-d1e2a7c6d314612c",
+        "EV-8abf5adc3e72fbb8",
+        "EV-afd0332ad8f5f05b",
+        "EV-2c87c8ea47cbd1b6",
+        "EV-794296a712c1cf15",
+        "EV-f4ead1a54e596bf8",
+        "EV-e999f3386aba7a2e",
+        "EV-bad301e14b034fbd",
+        "EV-4763b46821ab746e",
+        "EV-6b51b1b6fe22c540",
+        "EV-2aca9a810ea65555",
+        "EV-57597c92f7b183a9",
+        "EV-6ce6b9c9780b97d9",
+        "EV-dd62847548bb6ae3",
+        "EV-322796d9761a0824",
+        "EV-14b44a40808340f5",
+        "EV-edb1ddb3a091ada4"
+      ],
+      "entityIds": [
+        "EN-cf9488537f777c1a",
+        "EN-96eebba49dbbf422",
+        "EN-caaa8e02be54cfc9",
+        "EN-1bd14cd1a58c5708",
+        "EN-7d3194f79e645c42",
+        "EN-41a9132b800767fb",
+        "EN-f3d05a0f6248941d",
+        "EN-11507a0e2f5e69d5",
+        "EN-b314f58f5f506fd2",
+        "EN-ee04228c5c6d8b08",
+        "EN-7706c3c94d5f9b59",
+        "EN-e5cc9e38970eacb5",
+        "EN-cbc62794911ff31b",
+        "EN-023e881577ad3ab1",
+        "EN-8d4321d936320802",
+        "EN-b81c8201acfc7639",
+        "EN-59ae856cd788d0f5",
+        "EN-0f3360879e746531",
+        "EN-80d387ccb3289295",
+        "EN-27032b3c60ab2a95",
+        "EN-43381465c2b7d64e",
+        "EN-c70eca6b0f88f44d",
+        "EN-28d0bd981118a907",
+        "EN-9fbf261b62c1d7c0",
+        "EN-8d291c7017252b07",
+        "EN-8147e6fed86d42c1",
+        "EN-4d748ebd71af03a7",
+        "EN-c3e4cc183d345262",
+        "EN-ab877737b6081bd1",
+        "EN-2d54d63f0289af79",
+        "EN-cbadff7c58c26e1a",
+        "EN-06b5472c16feae4c",
+        "EN-bab9670e68265ab1",
+        "EN-e3b1bf3dab957ffe",
+        "EN-a93bc1dfeb147c54",
+        "EN-6f7ac1823da81d2e",
+        "EN-86acdf589a6723d5",
+        "EN-ebe5ed2fc0df64de",
+        "EN-6f549489209ee753",
+        "EN-61cce404a45c3545",
+        "EN-2a920347dfcf07a7",
+        "EN-2dc010636b9dce91",
+        "EN-23b979df49741c93",
+        "EN-4a639cb888a15d75",
+        "EN-56ee86045cfb0ddd",
+        "EN-9dde0c2d375060f6",
+        "EN-ea3bd73e2b506e00",
+        "EN-a19ad969c84178e9",
+        "EN-b6e23938808f272d"
+      ],
+      "fdeIds": [
+        "FDE-0ee0fe3baa3f1364",
+        "FDE-d08fed45110ab44b",
+        "FDE-ab9c514225686f60",
+        "FDE-560b710961006374",
+        "FDE-1fb7e2ae69d2f044"
+      ],
+      "hardwareIds": [
+        "HW-ceb55d9bc637c1d3"
+      ],
+      "firstSeen": "2026-01-20",
+      "lastSeen": "2026-07-22"
+    },
+    {
+      "id": "TX-use_case-research_science",
+      "name": "科研与发现",
+      "nodeType": "use_case",
+      "typeLabel": "应用场景",
+      "valueId": "research_science",
+      "eventIds": [
+        "EV-1ac32035d5e425e1",
+        "EV-11b2293769081d4c",
+        "EV-f4ead1a54e596bf8",
+        "EV-d961d3ad02f6ae14",
+        "EV-14b44a40808340f5"
+      ],
+      "entityIds": [
+        "EN-2b6e51bec93e86c1",
+        "EN-023e881577ad3ab1",
+        "EN-8d4321d936320802",
+        "EN-2d54d63f0289af79",
+        "EN-ffab0b8aa61e506a",
+        "EN-7d3194f79e645c42"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-06-02",
+      "lastSeen": "2026-07-22"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}

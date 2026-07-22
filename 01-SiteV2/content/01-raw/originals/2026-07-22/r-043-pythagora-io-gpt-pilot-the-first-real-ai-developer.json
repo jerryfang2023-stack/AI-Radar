@@ -1,0 +1,283 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-043",
+  "title": "Pythagora-io/gpt-pilot: The first real AI developer",
+  "title_zh": "Pythagora-io/gpt-pilot：首个真正的AI开发者",
+  "title_translation_status": "translated",
+  "title_translation_method": "deepseek_title_translation",
+  "title_translation_model": "deepseek-v4-flash",
+  "original_url": "https://github.com/Pythagora-io/gpt-pilot",
+  "canonical_url": "https://github.com/Pythagora-io/gpt-pilot",
+  "source_name": "keyword search / Anysearch",
+  "source_type": "developer",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "changelog_or_release",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_startups",
+  "search_path": "developer_ecosystem",
+  "search_path_label": "开发生态路径",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "pilot",
+  "enterprise_ai_transformation_reason": "enterprise_ai_implementation_signal",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-07-22T01:55:24.480Z",
+  "language": "mixed",
+  "full_text": "Uh oh!\nThere was an error while loading. Please reload this page .\nPythagora-io\ngpt-pilot\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n3.5k\nStar\n33.7k\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n2,886 Commits\n2,886 Commits\n.github\n.github\ncloud\ncloud\ncore\ncore\ndata/ database\ndata/ database\ndocs\ndocs\ntests\ntests\n.gitattributes\n.gitattributes\n.gitignore\n.gitignore\n.pre-commit-config.yaml\n.pre-commit-config.yaml\nCHANGELOG.md\nCHANGELOG.md\nDockerfile\nDockerfile\nLICENSE\nLICENSE\nREADME.md\nREADME.md\nexample-config.json\nexample-config.json\nmain.py\nmain.py\npyproject.toml\npyproject.toml\nrequirements.txt\nrequirements.txt\nView all files\nRepository files navigation\nCaution\nMalicious code was found in this repository and has been removed. A supply-chain worm (a credential stealer) was hidden in core/telemetry/ from August 2025 until 11 June 2026 . If you cloned and ran GPT Pilot from source during that window, rotate your credentials and read the security notice below.\n🔒 Security notice\nWhat happened. On 2025-08-24 , a malicious commit ( 065ee8eb , message \"Revert 'Implemented weekend discount'\" ) was pushed to this repository, disguised as a routine revert. It was publicly reported on 2026-06-08 by an external security researcher, and the malicious files were removed on 2026-06-11 .\nWhat it did. The commit added a hidden loader ( core/telemetry/_hooks.py ) that started automatically whenever the program ran (wired in through core/telemetry/__init__.py ). That loader silently downloaded the Bun JavaScript runtime and used it to execute an obfuscated payload ( core/telemetry/_runtime.bin ). The payload is a Shai-Hulud -class supply-chain worm: it harvests credentials and secrets from the machine (cloud/AWS keys, GitHub and npm tokens, SSH keys, and similar) and can use the stolen access to spread to other projects.\nWhat this means for you. The code only executed if GPT Pilot was actually run — simply having a copy you never ran is not affected. If you cloned and ran GPT Pilot from source between August 2025 and 11 June 2026 , assume the payload may have executed on that machine and:\nRotate every credential that was present on the machine — GitHub/npm tokens, cloud/AWS keys, SSH keys, and API keys.\nCheck for indicators of compromise: the files core/telemetry/_runtime.bin , core/telemetry/_hooks.py , or core/telemetry/.loader.lock ; an unexpected bun binary; or temporary folders named rt-* .\nTreat the machine as potentially compromised until you have verified it is clean.\nThis repository is no longer actively maintained , which is why the malicious commit went unnoticed for an extended period. This notice and the file removals are a security cleanup, not a resumption of development.\n🧑‍ ✈️ GPT PILOT 🧑‍ ✈️\nGPT Pilot doesn't just generate code, it builds apps!\nThis repo is not being maintained anymore.\nVisit Pythagora.ai for more info\n(click to open the video in YouTube) (1:04min)\nGPT Pilot is the core technology for the Pythagora VS Code extension that aims to provide the first real AI developer companion . Not just an autocomplete or a helper for PR messages but rather a real AI developer that can write full features, debug them, talk to you about issues, ask for review, etc.\n📫 If you would like to get updates on future releases or just get in touch, join our Discord server or you can add your email here . 📬\n🔌 Requirements\n🚦How to start using gpt-pilot?\n🔎 Examples\n🐳 How to start gpt-pilot in docker?\n🧑‍💻️ CLI arguments\n🏗 How GPT Pilot works?\n🕴How's GPT Pilot different from Smol developer and GPT engineer ?\n🍻 Contributing\n🔗 Connect with us\n🌟 Star history\nGPT Pilot aims to research how much LLMs can be utilized to generate fully working, production-ready apps while the developer oversees the implementation.\nThe main idea is that AI can write most of the code for an app (maybe 95%), but for the rest, 5%, a developer is and will be needed until we get full AGI .\nIf you are interested in our learnings during this project, you can check our latest blog posts .\n👉 Examples of apps written by GPT Pilot 👈\n🔌 Requirements\nPython 3.9+\n🚦How to start using gpt-pilot?\n👉 If you are using VS Code as your IDE, the easiest way to start is by downloading GPT Pilot VS Code extension . 👈\nOtherwise, you can use the CLI tool.\nIf you're new to GPT Pilot:\nAfter you have Python and (optionally) PostgreSQL installed, follow these steps:\ngit clone https://github.com/Pythagora-io/gpt-pilot.git (clone the repo)\ncd gpt-pilot (go to the repo folder)\npython3 -m venv venv (create a virtual environment)\nsource venv/bin/activate (or on Windows venv\\Scripts\\activate ) (activate the virtual environment)\npip install -r requirements.txt (install the dependencies)\ncp example-config.json config.json (create config.json file)\nSet your key and other settings in config.json file:\nLLM Provider ( openai , anthropic or groq ) key and endpoints (leave null for default) (note that Azure and OpenRouter are suppored via the openai setting)\nYour API key (if null , will be read from the environment variables)\ndatabase settings: sqlite is used by default, PostgreSQL should also work\noptionally update fs.ignore_paths and add files or folders which shouldn't be tracked by GPT Pilot in workspace, useful to ignore folders created by compilers\npython main.py (start GPT Pilot)\nAll generated code will be stored in the folder workspace inside the folder named after the app name you enter upon starting the pilot.\n🔎 Examples\nClick here to see all example apps created with GPT Pilot.\nPostgreSQL support\nGPT Pilot uses built-in SQLite database by default. If you want to use the PostgreSQL database, you need to additional install asyncpg and psycopg2 packages:\npip install asyncpg psycopg2\nThen, you need to update the config.json file to set db.url to postgresql+asyncpg://<user>:<password>@<db-host>/<db-name> .\n🧑‍💻️ CLI arguments\nList created projects (apps)\npython main.py --list\nNote: for each project (app), this also lists \"branches\". Currently we only support having one branch (called \"main\"), and in the future we plan to add support for multiple project branches.\nLoad and continue from the latest step in a project (app)\npython main.py --project < app_id >\nLoad and continue from a specific step in a project (app)\npython main.py --project < app_id > --step < step >\nWarning: this will delete all progress after the specified step!\nDelete project (app)\npython main.py --delete < app_id >\nDelete project with the specified app_id . Warning: this cannot be undone!\nOther command-line options\nThere are several other command-line options that mostly support calling GPT Pilot from our VSCode extension. To see all the available options, use the --help flag:\npython main.py --help\n🏗 How GPT Pilot works?\nHere are the steps GPT Pilot takes to create an app:\nYou enter the app name and the description.\nProduct Owner agent like in real life, does nothing. :)\nSpecification Writer agent asks a couple of questions to understand the requirements better if project description is not good enough.\nArchitect agent writes up technologies that will be used for the app and checks if all technologies are installed on the machine and installs them if not.\nTech Lead agent writes up development tasks that the Developer must implement.\nDeveloper agent takes each task and writes up what needs to be done to implement it. The description is in human-readable form.\nCode Monkey agent takes the Developer's description and the existing file and implements the changes.\nReviewer agent reviews every step of the task and if something is done wrong Reviewer sends it back to Code Monkey.\nTroubleshooter agent helps you to give good feedback to GPT Pilot when something is wrong.\nDebugger agent hate to see him, but he is your best friend when things go south.\nTechnical Writer agent writes documentation for the project.\n🕴How's GPT Pilot different from Smol developer and GPT engineer ?\nGPT Pilot works with the developer to create a fully working production-ready app - I don't think AI can (at least in the near future) create apps without a developer being involved. So, GPT Pilot codes the app step by step just like a developer would in real life. This way, it can debug issues as they arise throughout the development process. If it gets stuck, you, the developer in charge, can review the code and fix the issue. Other similar tools give you the entire codebase at once - this way, bugs are much harder to fix for AI and for you as a developer.\nWorks at scale - GPT Pilot isn't meant to create simple apps but rather so it can work at any scale. It has mechanisms that filter out the code, so in each LLM conversation, it doesn't need to store the entire codebase in context, but it shows the LLM only the relevant code for the current task it's working on. Once an app is finished, you can continue working on it by writing instructions on what feature you want to add.\n🍻 Contributing\nIf you are interested in contributing to GPT Pilot, join our Discord server , check out open GitHub issues , and see if anything interests you. We would be happy to get help in resolving any of those. The best place to start is by reviewing blog posts mentioned above to understand how the architecture works before diving into the codebase.\n🖥 Development\nOther than the research, GPT Pilot needs to be debugged to work in different scenarios. For example, we realized that the quality of the code generated is very sensitive to the size of the development task. When the task is too broad, the code has too many bugs that are hard to fix, but when the development task is too narrow, GPT also seems to struggle in getting the task implemented into the existing code.\n📊 Telemetry\nTo improve GPT Pilot, we are tracking some events from which you can opt out at any time. You can read more about it here .\n🔗 Connect with us\n🌟 As an open-source tool, it would mean the world to us if you starred the GPT-pilot repo 🌟\n💬 Join the Discord server to get in touch.\nAbout\nThe first real AI developer\nTopics\nai\ndeveloper-tools\nresearch-project\ncodegen\ncoding-assistant\ngpt-4\nResources\nReadme\nLicense\nView license\nCode of conduct\nCode of conduct\nContributing\nContributing\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nCustom properties\nStars\n33.7k\nstars\nWatchers\n295\nwatching\nForks\n3.5k\nforks\nReport repository\nReleases\n33\ntags\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nPython\n64.8%\nTypeScript\n27.6%\nJavaScript\n4.7%\nSmarty\n0.8%\nCSS\n0.5%\nShell\n0.5%\nOther\n1.1%",
+  "clean_text": "Uh oh!\nThere was an error while loading. Please reload this page .\nPythagora-io\ngpt-pilot\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n3.5k\nStar\n33.7k\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n2,886 Commits\n2,886 Commits\n.github\n.github\ncloud\ncloud\ncore\ncore\ndata/ database\ndata/ database\ndocs\ndocs\ntests\ntests\n.gitattributes\n.gitattributes\n.gitignore\n.gitignore\n.pre-commit-config.yaml\n.pre-commit-config.yaml\nCHANGELOG.md\nCHANGELOG.md\nDockerfile\nDockerfile\nLICENSE\nLICENSE\nREADME.md\nREADME.md\nexample-config.json\nexample-config.json\nmain.py\nmain.py\npyproject.toml\npyproject.toml\nrequirements.txt\nrequirements.txt\nView all files\nRepository files navigation\nCaution\nMalicious code was found in this repository and has been removed. A supply-chain worm (a credential stealer) was hidden in core/telemetry/ from August 2025 until 11 June 2026 . If you cloned and ran GPT Pilot from source during that window, rotate your credentials and read the security notice below.\n🔒 Security notice\nWhat happened. On 2025-08-24 , a malicious commit ( 065ee8eb , message \"Revert 'Implemented weekend discount'\" ) was pushed to this repository, disguised as a routine revert. It was publicly reported on 2026-06-08 by an external security researcher, and the malicious files were removed on 2026-06-11 .\nWhat it did. The commit added a hidden loader ( core/telemetry/_hooks.py ) that started automatically whenever the program ran (wired in through core/telemetry/__init__.py ). That loader silently downloaded the Bun JavaScript runtime and used it to execute an obfuscated payload ( core/telemetry/_runtime.bin ). The payload is a Shai-Hulud -class supply-chain worm: it harvests credentials and secrets from the machine (cloud/AWS keys, GitHub and npm tokens, SSH keys, and similar) and can use the stolen access to spread to other projects.\nWhat this means for you. The code only executed if GPT Pilot was actually run — simply having a copy you never ran is not affected. If you cloned and ran GPT Pilot from source between August 2025 and 11 June 2026 , assume the payload may have executed on that machine and:\nRotate every credential that was present on the machine — GitHub/npm tokens, cloud/AWS keys, SSH keys, and API keys.\nCheck for indicators of compromise: the files core/telemetry/_runtime.bin , core/telemetry/_hooks.py , or core/telemetry/.loader.lock ; an unexpected bun binary; or temporary folders named rt-* .\nTreat the machine as potentially compromised until you have verified it is clean.\nThis repository is no longer actively maintained , which is why the malicious commit went unnoticed for an extended period. This notice and the file removals are a security cleanup, not a resumption of development.\n🧑‍ ✈️ GPT PILOT 🧑‍ ✈️\nGPT Pilot doesn't just generate code, it builds apps!\nThis repo is not being maintained anymore.\nVisit Pythagora.ai for more info\n(click to open the video in YouTube) (1:04min)\nGPT Pilot is the core technology for the Pythagora VS Code extension that aims to provide the first real AI developer companion . Not just an autocomplete or a helper for PR messages but rather a real AI developer that can write full features, debug them, talk to you about issues, ask for review, etc.\n📫 If you would like to get updates on future releases or just get in touch, join our Discord server or you can add your email here . 📬\n🔌 Requirements\n🚦How to start using gpt-pilot?\n🔎 Examples\n🐳 How to start gpt-pilot in docker?\n🧑‍💻️ CLI arguments\n🏗 How GPT Pilot works?\n🕴How's GPT Pilot different from Smol developer and GPT engineer ?\n🍻 Contributing\n🔗 Connect with us\n🌟 Star history\nGPT Pilot aims to research how much LLMs can be utilized to generate fully working, production-ready apps while the developer oversees the implementation.\nThe main idea is that AI can write most of the code for an app (maybe 95%), but for the rest, 5%, a developer is and will be needed until we get full AGI .\nIf you are interested in our learnings during this project, you can check our latest blog posts .\n👉 Examples of apps written by GPT Pilot 👈\n🔌 Requirements\nPython 3.9+\n🚦How to start using gpt-pilot?\n👉 If you are using VS Code as your IDE, the easiest way to start is by downloading GPT Pilot VS Code extension . 👈\nOtherwise, you can use the CLI tool.\nIf you're new to GPT Pilot:\nAfter you have Python and (optionally) PostgreSQL installed, follow these steps:\ngit clone https://github.com/Pythagora-io/gpt-pilot.git (clone the repo)\ncd gpt-pilot (go to the repo folder)\npython3 -m venv venv (create a virtual environment)\nsource venv/bin/activate (or on Windows venv\\Scripts\\activate ) (activate the virtual environment)\npip install -r requirements.txt (install the dependencies)\ncp example-config.json config.json (create config.json file)\nSet your key and other settings in config.json file:\nLLM Provider ( openai , anthropic or groq ) key and endpoints (leave null for default) (note that Azure and OpenRouter are suppored via the openai setting)\nYour API key (if null , will be read from the environment variables)\ndatabase settings: sqlite is used by default, PostgreSQL should also work\noptionally update fs.ignore_paths and add files or folders which shouldn't be tracked by GPT Pilot in workspace, useful to ignore folders created by compilers\npython main.py (start GPT Pilot)\nAll generated code will be stored in the folder workspace inside the folder named after the app name you enter upon starting the pilot.\n🔎 Examples\nClick here to see all example apps created with GPT Pilot.\nPostgreSQL support\nGPT Pilot uses built-in SQLite database by default. If you want to use the PostgreSQL database, you need to additional install asyncpg and psycopg2 packages:\npip install asyncpg psycopg2\nThen, you need to update the config.json file to set db.url to postgresql+asyncpg://<user>:<password>@<db-host>/<db-name> .\n🧑‍💻️ CLI arguments\nList created projects (apps)\npython main.py --list\nNote: for each project (app), this also lists \"branches\". Currently we only support having one branch (called \"main\"), and in the future we plan to add support for multiple project branches.\nLoad and continue from the latest step in a project (app)\npython main.py --project < app_id >\nLoad and continue from a specific step in a project (app)\npython main.py --project < app_id > --step < step >\nWarning: this will delete all progress after the specified step!\nDelete project (app)\npython main.py --delete < app_id >\nDelete project with the specified app_id . Warning: this cannot be undone!\nOther command-line options\nThere are several other command-line options that mostly support calling GPT Pilot from our VSCode extension. To see all the available options, use the --help flag:\npython main.py --help\n🏗 How GPT Pilot works?\nHere are the steps GPT Pilot takes to create an app:\nYou enter the app name and the description.\nProduct Owner agent like in real life, does nothing. :)\nSpecification Writer agent asks a couple of questions to understand the requirements better if project description is not good enough.\nArchitect agent writes up technologies that will be used for the app and checks if all technologies are installed on the machine and installs them if not.\nTech Lead agent writes up development tasks that the Developer must implement.\nDeveloper agent takes each task and writes up what needs to be done to implement it. The description is in human-readable form.\nCode Monkey agent takes the Developer's description and the existing file and implements the changes.\nReviewer agent reviews every step of the task and if something is done wrong Reviewer sends it back to Code Monkey.\nTroubleshooter agent helps you to give good feedback to GPT Pilot when something is wrong.\nDebugger agent hate to see him, but he is your best friend when things go south.\nTechnical Writer agent writes documentation for the project.\n🕴How's GPT Pilot different from Smol developer and GPT engineer ?\nGPT Pilot works with the developer to create a fully working production-ready app - I don't think AI can (at least in the near future) create apps without a developer being involved. So, GPT Pilot codes the app step by step just like a developer would in real life. This way, it can debug issues as they arise throughout the development process. If it gets stuck, you, the developer in charge, can review the code and fix the issue. Other similar tools give you the entire codebase at once - this way, bugs are much harder to fix for AI and for you as a developer.\nWorks at scale - GPT Pilot isn't meant to create simple apps but rather so it can work at any scale. It has mechanisms that filter out the code, so in each LLM conversation, it doesn't need to store the entire codebase in context, but it shows the LLM only the relevant code for the current task it's working on. Once an app is finished, you can continue working on it by writing instructions on what feature you want to add.\n🍻 Contributing\nIf you are interested in contributing to GPT Pilot, join our Discord server , check out open GitHub issues , and see if anything interests you. We would be happy to get help in resolving any of those. The best place to start is by reviewing blog posts mentioned above to understand how the architecture works before diving into the codebase.\n🖥 Development\nOther than the research, GPT Pilot needs to be debugged to work in different scenarios. For example, we realized that the quality of the code generated is very sensitive to the size of the development task. When the task is too broad, the code has too many bugs that are hard to fix, but when the development task is too narrow, GPT also seems to struggle in getting the task implemented into the existing code.\n📊 Telemetry\nTo improve GPT Pilot, we are tracking some events from which you can opt out at any time. You can read more about it here .\n🔗 Connect with us\n🌟 As an open-source tool, it would mean the world to us if you starred the GPT-pilot repo 🌟\n💬 Join the Discord server to get in touch.\nAbout\nThe first real AI developer\nTopics\nai\ndeveloper-tools\nresearch-project\ncodegen\ncoding-assistant\ngpt-4\nResources\nReadme\nLicense\nView license\nCode of conduct\nCode of conduct\nContributing\nContributing\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nCustom properties\nStars\n33.7k\nstars\nWatchers\n295\nwatching\nForks\n3.5k\nforks\nReport repository\nReleases\n33\ntags\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nPython\n64.8%\nTypeScript\n27.6%\nJavaScript\n4.7%\nSmarty\n0.8%\nCSS\n0.5%\nShell\n0.5%\nOther\n1.1%",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-22/r-043-pythagora-io-gpt-pilot-the-first-real-ai-developer.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-22/r-043-pythagora-io-gpt-pilot-the-first-real-ai-developer.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 91,
+  "extractor_diagnostics": {
+    "readability_score": 91,
+    "text_length": 10840,
+    "paragraph_count": 94,
+    "sentence_count": 88,
+    "boilerplate_hits": 2,
+    "symbol_ratio": 0.0027,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 10840,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "d42f55d5c025b3ac",
+    "missing": []
+  },
+  "evidence_strength": "rich_evidence",
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "cdaa983347ef646a",
+  "content_hash": "d42f55d5c025b3ac",
+  "full_text_hash": "d42f55d5c025b3ac",
+  "semantic_hash": "e8ab7342ef79691f",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-22T01:55:24.480Z",
+  "last_seen_at": "2026-07-22T01:55:24.480Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "number",
+      "text": "# Repository: Pythagora-io/gpt-pilot The first real AI developer - Stars: 33724 - Forks: 3478 - Watchers: 295 - Open issues: 252 - Primary language: Python - Languages: Python (64.8%), TypeScript (27.6%), JavaScript (4.7%), Smarty (0.8%), CSS (0.5%), Shell (0.5%), EJS (0.3%), Dockerfile (0.3%), HT..... / query=AI implementation startup design partner pilot customer / intent=find_startups / path=developer_ecosystem",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "There was an error while loading.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Please reload this page .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "case_detail",
+      "text": "Pythagora-io gpt-pilot Public Notifications You must be signed in to change notification settings Fork 3.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "7k main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 2,886 Commits 2,886 Commits .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "github cloud cloud core core data/ database data/ database docs docs tests tests .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-22T01:55:24.480Z",
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Anysearch",
+      "OpenAI",
+      "Anthropic",
+      "GitHub",
+      "AWS"
+    ],
+    "products": [
+      "agent",
+      "gpt-4"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "合同审阅 / 法律研究",
+      "权限 / 安全治理"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "合作 / 联盟"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "33724",
+      "3478",
+      "295",
+      "252",
+      "64.8%",
+      "27.6%",
+      "4.7%",
+      "0.8%"
+    ],
+    "quotes": [
+      "Revert 'Implemented weekend discount'",
+      "branches"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "There was an error while loading.",
+      "Please reload this page .",
+      "7k main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 2,886 Commits 2,886 Commits ."
+    ],
+    "case_details": [
+      "Pythagora-io gpt-pilot Public Notifications You must be signed in to change notification settings Fork 3."
+    ],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_product_or_service",
+    "importance_score": 5,
+    "importance_reason": "new product or service; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "enterprise_ai_transformation_lens",
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 5
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": true,
+    "trend_candidate_context": true,
+    "signal_card_candidate": true,
+    "emerging_pool": true,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "emerging_pool",
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Pythagora-io/gpt-pilot: The first real AI developer\n\n- raw_id: R-043\n- title_zh: Pythagora-io/gpt-pilot：首个真正的AI开发者\n- title_translation_status: translated\n- title_translation_method: deepseek_title_translation\n- original_url: https://github.com/Pythagora-io/gpt-pilot\n- source_name: keyword search / Anysearch\n- collected_at: 2026-07-22T01:55:24.480Z\n\n## clean_text\n\nUh oh!\nThere was an error while loading. Please reload this page .\nPythagora-io\ngpt-pilot\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n3.5k\nStar\n33.7k\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n2,886 Commits\n2,886 Commits\n.github\n.github\ncloud\ncloud\ncore\ncore\ndata/ database\ndata/ database\ndocs\ndocs\ntests\ntests\n.gitattributes\n.gitattributes\n.gitignore\n.gitignore\n.pre-commit-config.yaml\n.pre-commit-config.yaml\nCHANGELOG.md\nCHANGELOG.md\nDockerfile\nDockerfile\nLICENSE\nLICENSE\nREADME.md\nREADME.md\nexample-config.json\nexample-config.json\nmain.py\nmain.py\npyproject.toml\npyproject.toml\nrequirements.txt\nrequirements.txt\nView all files\nRepository files navigation\nCaution\nMalicious code was found in this repository and has been removed. A supply-chain worm (a credential stealer) was hidden in core/telemetry/ from August 2025 until 11 June 2026 . If you cloned and ran GPT Pilot from source during that window, rotate your credentials and read the security notice below.\n🔒 Security notice\nWhat happened. On 2025-08-24 , a malicious commit ( 065ee8eb , message \"Revert 'Implemented weekend discount'\" ) was pushed to this repository, disguised as a routine revert. It was publicly reported on 2026-06-08 by an external security researcher, and the malicious files were removed on 2026-06-11 .\nWhat it did. The commit added a hidden loader ( core/telemetry/_hooks.py ) that started automatically whenever the program ran (wired in through core/telemetry/__init__.py ). That loader silently downloaded the Bun JavaScript runtime and used it to execute an obfuscated payload ( core/telemetry/_runtime.bin ). The payload is a Shai-Hulud -class supply-chain worm: it harvests credentials and secrets from the machine (cloud/AWS keys, GitHub and npm tokens, SSH keys, and similar) and can use the stolen access to spread to other projects.\nWhat this means for you. The code only executed if GPT Pilot was actually run — simply having a copy you never ran is not affected. If you cloned and ran GPT Pilot from source between August 2025 and 11 June 2026 , assume the payload may have executed on that machine and:\nRotate every credential that was present on the machine — GitHub/npm tokens, cloud/AWS keys, SSH keys, and API keys.\nCheck for indicators of compromise: the files core/telemetry/_runtime.bin , core/telemetry/_hooks.py , or core/telemetry/.loader.lock ; an unexpected bun binary; or temporary folders named rt-* .\nTreat the machine as potentially compromised until you have verified it is clean.\nThis repository is no longer actively maintained , which is why the malicious commit went unnoticed for an extended period. This notice and the file removals are a security cleanup, not a resumption of development.\n🧑‍ ✈️ GPT PILOT 🧑‍ ✈️\nGPT Pilot doesn't just generate code, it builds apps!\nThis repo is not being maintained anymore.\nVisit Pythagora.ai for more info\n(click to open the video in YouTube) (1:04min)\nGPT Pilot is the core technology for the Pythagora VS Code extension that aims to provide the first real AI developer companion . Not just an autocomplete or a helper for PR messages but rather a real AI developer that can write full features, debug them, talk to you about issues, ask for review, etc.\n📫 If you would like to get updates on future releases or just get in touch, join our Discord server or you can add your email here . 📬\n🔌 Requirements\n🚦How to start using gpt-pilot?\n🔎 Examples\n🐳 How to start gpt-pilot in docker?\n🧑‍💻️ CLI arguments\n🏗 How GPT Pilot works?\n🕴How's GPT Pilot different from Smol developer and GPT engineer ?\n🍻 Contributing\n🔗 Connect with us\n🌟 Star history\nGPT Pilot aims to research how much LLMs can be utilized to generate fully working, production-ready apps while the developer oversees the implementation.\nThe main idea is that AI can write most of the code for an app (maybe 95%), but for the rest, 5%, a developer is and will be needed until we get full AGI .\nIf you are interested in our learnings during this project, you can check our latest blog posts .\n👉 Examples of apps written by GPT Pilot 👈\n🔌 Requirements\nPython 3.9+\n🚦How to start using gpt-pilot?\n👉 If you are using VS Code as your IDE, the easiest way to start is by downloading GPT Pilot VS Code extension . 👈\nOtherwise, you can use the CLI tool.\nIf you're new to GPT Pilot:\nAfter you have Python and (optionally) PostgreSQL installed, follow these steps:\ngit clone https://github.com/Pythagora-io/gpt-pilot.git (clone the repo)\ncd gpt-pilot (go to the repo folder)\npython3 -m venv venv (create a virtual environment)\nsource venv/bin/activate (or on Windows venv\\Scripts\\activate ) (activate the virtual environment)\npip install -r requirements.txt (install the dependencies)\ncp example-config.json config.json (create config.json file)\nSet your key and other settings in config.json file:\nLLM Provider ( openai , anthropic or groq ) key and endpoints (leave null for default) (note that Azure and OpenRouter are suppored via the openai setting)\nYour API key (if null , will be read from the environment variables)\ndatabase settings: sqlite is used by default, PostgreSQL should also work\noptionally update fs.ignore_paths and add files or folders which shouldn't be tracked by GPT Pilot in workspace, useful to ignore folders created by compilers\npython main.py (start GPT Pilot)\nAll generated code will be stored in the folder workspace inside the folder named after the app name you enter upon starting the pilot.\n🔎 Examples\nClick here to see all example apps created with GPT Pilot.\nPostgreSQL support\nGPT Pilot uses built-in SQLite database by default. If you want to use the PostgreSQL database, you need to additional install asyncpg and psycopg2 packages:\npip install asyncpg psycopg2\nThen, you need to update the config.json file to set db.url to postgresql+asyncpg://<user>:<password>@<db-host>/<db-name> .\n🧑‍💻️ CLI arguments\nList created projects (apps)\npython main.py --list\nNote: for each project (app), this also lists \"branches\". Currently we only support having one branch (called \"main\"), and in the future we plan to add support for multiple project branches.\nLoad and continue from the latest step in a project (app)\npython main.py --project < app_id >\nLoad and continue from a specific step in a project (app)\npython main.py --project < app_id > --step < step >\nWarning: this will delete all progress after the specified step!\nDelete project (app)\npython main.py --delete < app_id >\nDelete project with the specified app_id . Warning: this cannot be undone!\nOther command-line options\nThere are several other command-line options that mostly support calling GPT Pilot from our VSCode extension. To see all the available options, use the --help flag:\npython main.py --help\n🏗 How GPT Pilot works?\nHere are the steps GPT Pilot takes to create an app:\nYou enter the app name and the description.\nProduct Owner agent like in real life, does nothing. :)\nSpecification Writer agent asks a couple of questions to understand the requirements better if project description is not good enough.\nArchitect agent writes up technologies that will be used for the app and checks if all technologies are installed on the machine and installs them if not.\nTech Lead agent writes up development tasks that the Developer must implement.\nDeveloper agent takes each task and writes up what needs to be done to implement it. The description is in human-readable form.\nCode Monkey agent takes the Developer's description and the existing file and implements the changes.\nReviewer agent reviews every step of the task and if something is done wrong Reviewer sends it back to Code Monkey.\nTroubleshooter agent helps you to give good feedback to GPT Pilot when something is wrong.\nDebugger agent hate to see him, but he is your best friend when things go south.\nTechnical Writer agent writes documentation for the project.\n🕴How's GPT Pilot different from Smol developer and GPT engineer ?\nGPT Pilot works with the developer to create a fully working production-ready app - I don't think AI can (at least in the near future) create apps without a developer being involved. So, GPT Pilot codes the app step by step just like a developer would in real life. This way, it can debug issues as they arise throughout the development process. If it gets stuck, you, the developer in charge, can review the code and fix the issue. Other similar tools give you the entire codebase at once - this way, bugs are much harder to fix for AI and for you as a developer.\nWorks at scale - GPT Pilot isn't meant to create simple apps but rather so it can work at any scale. It has mechanisms that filter out the code, so in each LLM conversation, it doesn't need to store the entire codebase in context, but it shows the LLM only the relevant code for the current task it's working on. Once an app is finished, you can continue working on it by writing instructions on what feature you want to add.\n🍻 Contributing\nIf you are interested in contributing to GPT Pilot, join our Discord server , check out open GitHub issues , and see if anything interests you. We would be happy to get help in resolving any of those. The best place to start is by reviewing blog posts mentioned above to understand how the architecture works before diving into the codebase.\n🖥 Development\nOther than the research, GPT Pilot needs to be debugged to work in different scenarios. For example, we realized that the quality of the code generated is very sensitive to the size of the development task. When the task is too broad, the code has too many bugs that are hard to fix, but when the development task is too narrow, GPT also seems to struggle in getting the task implemented into the existing code.\n📊 Telemetry\nTo improve GPT Pilot, we are tracking some events from which you can opt out at any time. You can read more about it here .\n🔗 Connect with us\n🌟 As an open-source tool, it would mean the world to us if you starred the GPT-pilot repo 🌟\n💬 Join the Discord server to get in touch.\nAbout\nThe first real AI developer\nTopics\nai\ndeveloper-tools\nresearch-project\ncodegen\ncoding-assistant\ngpt-4\nResources\nReadme\nLicense\nView license\nCode of conduct\nCode of conduct\nContributing\nContributing\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nCustom properties\nStars\n33.7k\nstars\nWatchers\n295\nwatching\nForks\n3.5k\nforks\nReport repository\nReleases\n33\ntags\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nPython\n64.8%\nTypeScript\n27.6%\nJavaScript\n4.7%\nSmarty\n0.8%\nCSS\n0.5%\nShell\n0.5%\nOther\n1.1%\n\n## full_text\n\nUh oh!\nThere was an error while loading. Please reload this page .\nPythagora-io\ngpt-pilot\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n3.5k\nStar\n33.7k\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n2,886 Commits\n2,886 Commits\n.github\n.github\ncloud\ncloud\ncore\ncore\ndata/ database\ndata/ database\ndocs\ndocs\ntests\ntests\n.gitattributes\n.gitattributes\n.gitignore\n.gitignore\n.pre-commit-config.yaml\n.pre-commit-config.yaml\nCHANGELOG.md\nCHANGELOG.md\nDockerfile\nDockerfile\nLICENSE\nLICENSE\nREADME.md\nREADME.md\nexample-config.json\nexample-config.json\nmain.py\nmain.py\npyproject.toml\npyproject.toml\nrequirements.txt\nrequirements.txt\nView all files\nRepository files navigation\nCaution\nMalicious code was found in this repository and has been removed. A supply-chain worm (a credential stealer) was hidden in core/telemetry/ from August 2025 until 11 June 2026 . If you cloned and ran GPT Pilot from source during that window, rotate your credentials and read the security notice below.\n🔒 Security notice\nWhat happened. On 2025-08-24 , a malicious commit ( 065ee8eb , message \"Revert 'Implemented weekend discount'\" ) was pushed to this repository, disguised as a routine revert. It was publicly reported on 2026-06-08 by an external security researcher, and the malicious files were removed on 2026-06-11 .\nWhat it did. The commit added a hidden loader ( core/telemetry/_hooks.py ) that started automatically whenever the program ran (wired in through core/telemetry/__init__.py ). That loader silently downloaded the Bun JavaScript runtime and used it to execute an obfuscated payload ( core/telemetry/_runtime.bin ). The payload is a Shai-Hulud -class supply-chain worm: it harvests credentials and secrets from the machine (cloud/AWS keys, GitHub and npm tokens, SSH keys, and similar) and can use the stolen access to spread to other projects.\nWhat this means for you. The code only executed if GPT Pilot was actually run — simply having a copy you never ran is not affected. If you cloned and ran GPT Pilot from source between August 2025 and 11 June 2026 , assume the payload may have executed on that machine and:\nRotate every credential that was present on the machine — GitHub/npm tokens, cloud/AWS keys, SSH keys, and API keys.\nCheck for indicators of compromise: the files core/telemetry/_runtime.bin , core/telemetry/_hooks.py , or core/telemetry/.loader.lock ; an unexpected bun binary; or temporary folders named rt-* .\nTreat the machine as potentially compromised until you have verified it is clean.\nThis repository is no longer actively maintained , which is why the malicious commit went unnoticed for an extended period. This notice and the file removals are a security cleanup, not a resumption of development.\n🧑‍ ✈️ GPT PILOT 🧑‍ ✈️\nGPT Pilot doesn't just generate code, it builds apps!\nThis repo is not being maintained anymore.\nVisit Pythagora.ai for more info\n(click to open the video in YouTube) (1:04min)\nGPT Pilot is the core technology for the Pythagora VS Code extension that aims to provide the first real AI developer companion . Not just an autocomplete or a helper for PR messages but rather a real AI developer that can write full features, debug them, talk to you about issues, ask for review, etc.\n📫 If you would like to get updates on future releases or just get in touch, join our Discord server or you can add your email here . 📬\n🔌 Requirements\n🚦How to start using gpt-pilot?\n🔎 Examples\n🐳 How to start gpt-pilot in docker?\n🧑‍💻️ CLI arguments\n🏗 How GPT Pilot works?\n🕴How's GPT Pilot different from Smol developer and GPT engineer ?\n🍻 Contributing\n🔗 Connect with us\n🌟 Star history\nGPT Pilot aims to research how much LLMs can be utilized to generate fully working, production-ready apps while the developer oversees the implementation.\nThe main idea is that AI can write most of the code for an app (maybe 95%), but for the rest, 5%, a developer is and will be needed until we get full AGI .\nIf you are interested in our learnings during this project, you can check our latest blog posts .\n👉 Examples of apps written by GPT Pilot 👈\n🔌 Requirements\nPython 3.9+\n🚦How to start using gpt-pilot?\n👉 If you are using VS Code as your IDE, the easiest way to start is by downloading GPT Pilot VS Code extension . 👈\nOtherwise, you can use the CLI tool.\nIf you're new to GPT Pilot:\nAfter you have Python and (optionally) PostgreSQL installed, follow these steps:\ngit clone https://github.com/Pythagora-io/gpt-pilot.git (clone the repo)\ncd gpt-pilot (go to the repo folder)\npython3 -m venv venv (create a virtual environment)\nsource venv/bin/activate (or on Windows venv\\Scripts\\activate ) (activate the virtual environment)\npip install -r requirements.txt (install the dependencies)\ncp example-config.json config.json (create config.json file)\nSet your key and other settings in config.json file:\nLLM Provider ( openai , anthropic or groq ) key and endpoints (leave null for default) (note that Azure and OpenRouter are suppored via the openai setting)\nYour API key (if null , will be read from the environment variables)\ndatabase settings: sqlite is used by default, PostgreSQL should also work\noptionally update fs.ignore_paths and add files or folders which shouldn't be tracked by GPT Pilot in workspace, useful to ignore folders created by compilers\npython main.py (start GPT Pilot)\nAll generated code will be stored in the folder workspace inside the folder named after the app name you enter upon starting the pilot.\n🔎 Examples\nClick here to see all example apps created with GPT Pilot.\nPostgreSQL support\nGPT Pilot uses built-in SQLite database by default. If you want to use the PostgreSQL database, you need to additional install asyncpg and psycopg2 packages:\npip install asyncpg psycopg2\nThen, you need to update the config.json file to set db.url to postgresql+asyncpg://<user>:<password>@<db-host>/<db-name> .\n🧑‍💻️ CLI arguments\nList created projects (apps)\npython main.py --list\nNote: for each project (app), this also lists \"branches\". Currently we only support having one branch (called \"main\"), and in the future we plan to add support for multiple project branches.\nLoad and continue from the latest step in a project (app)\npython main.py --project < app_id >\nLoad and continue from a specific step in a project (app)\npython main.py --project < app_id > --step < step >\nWarning: this will delete all progress after the specified step!\nDelete project (app)\npython main.py --delete < app_id >\nDelete project with the specified app_id . Warning: this cannot be undone!\nOther command-line options\nThere are several other command-line options that mostly support calling GPT Pilot from our VSCode extension. To see all the available options, use the --help flag:\npython main.py --help\n🏗 How GPT Pilot works?\nHere are the steps GPT Pilot takes to create an app:\nYou enter the app name and the description.\nProduct Owner agent like in real life, does nothing. :)\nSpecification Writer agent asks a couple of questions to understand the requirements better if project description is not good enough.\nArchitect agent writes up technologies that will be used for the app and checks if all technologies are installed on the machine and installs them if not.\nTech Lead agent writes up development tasks that the Developer must implement.\nDeveloper agent takes each task and writes up what needs to be done to implement it. The description is in human-readable form.\nCode Monkey agent takes the Developer's description and the existing file and implements the changes.\nReviewer agent reviews every step of the task and if something is done wrong Reviewer sends it back to Code Monkey.\nTroubleshooter agent helps you to give good feedback to GPT Pilot when something is wrong.\nDebugger agent hate to see him, but he is your best friend when things go south.\nTechnical Writer agent writes documentation for the project.\n🕴How's GPT Pilot different from Smol developer and GPT engineer ?\nGPT Pilot works with the developer to create a fully working production-ready app - I don't think AI can (at least in the near future) create apps without a developer being involved. So, GPT Pilot codes the app step by step just like a developer would in real life. This way, it can debug issues as they arise throughout the development process. If it gets stuck, you, the developer in charge, can review the code and fix the issue. Other similar tools give you the entire codebase at once - this way, bugs are much harder to fix for AI and for you as a developer.\nWorks at scale - GPT Pilot isn't meant to create simple apps but rather so it can work at any scale. It has mechanisms that filter out the code, so in each LLM conversation, it doesn't need to store the entire codebase in context, but it shows the LLM only the relevant code for the current task it's working on. Once an app is finished, you can continue working on it by writing instructions on what feature you want to add.\n🍻 Contributing\nIf you are interested in contributing to GPT Pilot, join our Discord server , check out open GitHub issues , and see if anything interests you. We would be happy to get help in resolving any of those. The best place to start is by reviewing blog posts mentioned above to understand how the architecture works before diving into the codebase.\n🖥 Development\nOther than the research, GPT Pilot needs to be debugged to work in different scenarios. For example, we realized that the quality of the code generated is very sensitive to the size of the development task. When the task is too broad, the code has too many bugs that are hard to fix, but when the development task is too narrow, GPT also seems to struggle in getting the task implemented into the existing code.\n📊 Telemetry\nTo improve GPT Pilot, we are tracking some events from which you can opt out at any time. You can read more about it here .\n🔗 Connect with us\n🌟 As an open-source tool, it would mean the world to us if you starred the GPT-pilot repo 🌟\n💬 Join the Discord server to get in touch.\nAbout\nThe first real AI developer\nTopics\nai\ndeveloper-tools\nresearch-project\ncodegen\ncoding-assistant\ngpt-4\nResources\nReadme\nLicense\nView license\nCode of conduct\nCode of conduct\nContributing\nContributing\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nCustom properties\nStars\n33.7k\nstars\nWatchers\n295\nwatching\nForks\n3.5k\nforks\nReport repository\nReleases\n33\ntags\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nPython\n64.8%\nTypeScript\n27.6%\nJavaScript\n4.7%\nSmarty\n0.8%\nCSS\n0.5%\nShell\n0.5%\nOther\n1.1%\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 91\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [number / signal_card_candidate, relationship_graph_input, case, trend_candidate_context / high] # Repository: Pythagora-io/gpt-pilot The first real AI developer - Stars: 33724 - Forks: 3478 - Watchers: 295 - Open issues: 252 - Primary language: Python - Languages: Python (64.8%), TypeScript (27.6%), JavaScript (4.7%), Smarty (0.8%), CSS (0.5%), Shell (0.5%), EJS (0.3%), Dockerfile (0.3%), HT..... / query=AI implementation startup design partner pilot customer / intent=find_startups / path=developer_ecosystem\n2. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] There was an error while loading.\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Please reload this page .\n4. [case_detail / signal_card_candidate, relationship_graph_input, case / high] Pythagora-io gpt-pilot Public Notifications You must be signed in to change notification settings Fork 3.\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] 7k main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 2,886 Commits 2,886 Commits .\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] github cloud cloud core core data/ database data/ database docs docs tests tests .\n"
+}
