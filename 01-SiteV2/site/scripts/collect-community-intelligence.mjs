@@ -10,6 +10,7 @@ const outputPath = path.join(siteRoot, "data", "community-intelligence.json");
 const snapshotRoot = path.join(siteRoot, "data", "community-intelligence-daily");
 
 const cdpUrl = process.env.COMMUNITY_CDP_URL || "http://127.0.0.1:9333";
+const cdpTimeoutMs = Number(process.env.COMMUNITY_CDP_TIMEOUT_MS || 120000);
 const scrolls = Number(process.env.COMMUNITY_SCROLLS || 1);
 const homeDetailLimit = Number(process.env.COMMUNITY_DETAIL_LIMIT || 6);
 const searchDetailLimit = Number(process.env.COMMUNITY_SEARCH_DETAIL_LIMIT || 1);
@@ -620,7 +621,7 @@ async function collectJob(context, sourceKey, job) {
 }
 
 async function main() {
-  const browser = await chromium.connectOverCDP(cdpUrl);
+  const browser = await chromium.connectOverCDP(cdpUrl, { timeout: cdpTimeoutMs });
   const context = browser.contexts()[0] || await browser.newContext();
   const selectedKeywords = selectSearchKeywords();
   const jobs = [
