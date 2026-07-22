@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-07-21T01:39:36.756Z",
+  "generatedAt": "2026-07-22T01:40:03.262Z",
   "stats": {
     "podcastsBuilt": 6,
-    "totalEpisodes": 17,
+    "totalEpisodes": 18,
     "errors": [],
     "fallbackUsed": false,
     "fallbackReason": ""
@@ -65,12 +65,12 @@
       "name": "Latent Space"
     },
     {
-      "title": "Anthropic's Katelyn Lesse & Angela Jiang: Building an Ecosystem, not a Walled Garden",
-      "url": "https://feeds.megaphone.fm/trainingdata",
-      "publishedAt": "Tue, 14 Jul 2026 09:00:00 -0000",
-      "excerpt": "Katelyn Lesse and Angela Jiang lead the team building Anthropic's developer platform - the layer that both outside builders and Anthropic's own products run on top of. Angela frames the platform as a three-layer stack: knowledge, execution, and coordination. She argues the real leverage is what’s at the top: \"strategies,\" or meta-harnesses that give each token a different job, from advising to executing to reflecting to memory. On the question of open ecosystem vs. walled garden, they say they aren't precious about owning the stack. Katelyn points to Anthropic's self-hosted sandboxes with partners like Modal, Vercel, and Cloudflare. Whether the work runs on Anthropic's infrastructure or someone else's, what really matters to them is that the architecture is sound. The deeper bet is standards: they hand skills and MCP to the whole industry, build connectors on the MCP spec, and help agents (Claude and non-C…",
+      "title": "🔬Causal Models Need Causal Data - Xaira’s X-Cell model for Drug Discovery (Bo Wang & Ci Chu, Chief Discovery Officer & Chief AI Scientist)",
+      "url": "https://www.latent.space/p/xaira",
+      "publishedAt": "Tue, 21 Jul 2026 19:34:06 GMT",
+      "excerpt": "Bet on informationIf test loss flatlines after 1.5B parameters while training loss continues to drop as you scale, that tells you that your model is limited by the amount of information in your data.Training on a single, smallish data set exposed an information gap: the 3.1B model falls off the scaling trend. Neither parameters nor compute will improve performance past this wall. For predicting changes to gene expression, you need more information rich data.This is what Chu and Bo’s teams have done, and here is what ~30x the information buys you:Now we can scale with parameters and training compute! We don’t know how much this effort costed, but we can guess that data collection experiments and infrastructure was a few tens of millions, and compute + headcount + research was a few million. The budget looks like a RL rollout bu…",
       "source": "podcast",
-      "name": "Training Data (Sequoia)"
+      "name": "Latent Space"
     }
   ]
 }
