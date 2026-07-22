@@ -1,6 +1,6 @@
 ---
 title: WaveSight Current Handoff
-date: 2026-07-16
+date: 2026-07-22
 status: current
 encoding: UTF-8
 ---
@@ -12,10 +12,9 @@ This file keeps only the current handoff state needed by a new window. Historica
 ## Current Position
 
 - Project: WaveSight AI / 观澜 AI.
-- Current stage: `SITE-V4.0-data-center` dual-write migration.
-- Frozen compatibility frontstage: `SITE-V3.4.5`.
+- Current stage: `SITE-V4.2.0-entity-history` public website and data-service baseline.
 - Product role: AI industry data center and structured factual data foundation for downstream products and research.
-- Current public frontstage: Business Signals / Reports Center / First-Line Viewpoints / Community Intelligence.
+- Current public frontstage: Data Center / Trend Radar / Industry Reports / Opportunity Map.
 - Current backend: Dashboard / operations console.
 - Default truth sources: `AGENTS.md`, `context/00-current-state.md`, `context/version-ledger.md`, `context/12-data-center-v4.md`, and directly relevant task files.
 
@@ -23,10 +22,12 @@ This file keeps only the current handoff state needed by a new window. Historica
 
 | Entry | File |
 |---|---|
-| Business Signals | `01-SiteV2/site/v3-data-observation.html` |
-| Reports Center | `01-SiteV2/site/intelligence-map.html` |
-| First-Line Viewpoints | `01-SiteV2/site/follow-builders.html` |
-| Community Intelligence | `01-SiteV2/site/community-intelligence.html` |
+| Commercial Events / FDE / AI Hardware | `01-SiteV2/site/data-center.html` |
+| Industry Reports | `01-SiteV2/site/intelligence-map.html` |
+| Opportunity Map | `01-SiteV2/site/opportunity-map.html` |
+| Trend Radar | `01-SiteV2/site/trend-radar.html` |
+| First-Line Viewpoints | `01-SiteV2/site/data-center.html?view=viewpoints` |
+| Community Intelligence | `01-SiteV2/site/data-center.html?view=community` |
 | Dashboard | `01-SiteV2/site/operations-console.html` |
 
 ## Current Production Chain
@@ -37,9 +38,9 @@ External sources
 -> exact-span Claims + Entities
 -> CanonicalEvents
 -> FDE / hardware / tag projections
--> queryable V4 exports
--> frozen V3 compatibility projection (Pool / Cards / graph / trend candidates)
--> frontstage + operations data
+-> queryable V4 exports + entity history
+-> split frontstage indexes and downstream applications
+-> operations data
 -> GitHub PR / merge
 -> GitHub Pages
 -> local Obsidian sync
@@ -49,7 +50,8 @@ V4 canonical tables contain factual evidence only. Card, trend, opportunity, rep
 
 ## Retired Routes
 
-- V2 homepage and four-column public site routes.
+- `v3-data-observation.html`, `follow-builders.html`, `community-intelligence.html`, and `reports.html` are redirects only.
+- V2 homepage and four-column public site content routes.
 - Daily observation as required output.
 - Business brief / internal reference as required output.
 - Trend report prose as required output.
