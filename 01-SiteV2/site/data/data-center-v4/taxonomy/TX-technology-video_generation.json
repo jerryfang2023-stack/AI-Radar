@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-22T01:57:46.409Z",
+    "generatedAt": "2026-07-22T06:04:57.768Z",
     "latestDataDate": "2026-07-22",
     "currentDate": "2026-07-22",
-    "eventCount": 1401,
+    "eventCount": 1400,
     "quarantinedEventCount": 13
   },
   "node": {
@@ -19,7 +19,7 @@
     "eventIds": [
       "EV-a354af52772334fd",
       "EV-26d2874c6ce028d6",
-      "EV-7e24db14146d39be",
+      "EV-6654f62015eff8e3",
       "EV-6fbbbfcdcec81df4",
       "EV-fd8ecce5de2f667d",
       "EV-5babb43f4b4d302f",
@@ -50,9 +50,7 @@
       "EN-4f96127fdacbb405"
     ],
     "fdeIds": [],
-    "hardwareIds": [
-      "HW-7ae863dfba7ce9be"
-    ],
+    "hardwareIds": [],
     "firstSeen": "2026-06-16",
     "lastSeen": "2026-07-22"
   },
@@ -221,21 +219,21 @@
       "publisher": "IT之家（RSS）"
     },
     {
-      "id": "EV-7e24db14146d39be",
+      "id": "EV-6654f62015eff8e3",
       "dataDate": "2026-07-22",
       "date": "2026-07-21",
       "updatedDate": "2026-07-22",
-      "eventType": "hardware_product",
-      "eventTypeLabel": "硬件产品",
-      "eventGroup": "AI 硬件",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
       "status": "completed",
       "statusLabel": "已完成",
       "publicationStatus": "verified",
       "title": "谷歌 DeepMind 发布 GenCeption：基于阿里 Wan2.1，打破计算机视觉桎梏",
       "originalTitle": "",
       "subject": "谷歌 DeepMind",
-      "action": "发布 GenCeption：基于阿里 Wan2.1，打破计算机",
-      "object": "视觉桎梏",
+      "action": "发布",
+      "object": "GenCeption：基于阿里 Wan2.1，打破计算机视觉桎梏",
       "metrics": [],
       "locations": [],
       "missingFields": [],
@@ -275,28 +273,28 @@
         "EN-2b6e51bec93e86c1",
         "EN-c9e6168149dd7cf6",
         "EN-047364b9be67f665",
-        "EN-4d09c69c19f5f67b",
-        "EN-92af3ce2fb97edf3"
+        "EN-92af3ce2fb97edf3",
+        "EN-4d09c69c19f5f67b"
       ],
       "entityNames": [
         "Google DeepMind",
         "谷歌 DeepMind",
         "Alibaba",
-        "DeepMind",
-        "GenCeption"
+        "GenCeption",
+        "DeepMind"
       ],
-      "productName": "DeepMind",
+      "productName": "GenCeption",
       "products": [
         {
-          "name": "DeepMind",
-          "type": "AI 硬件",
+          "name": "GenCeption",
+          "type": "产品/服务",
           "ownerNames": [
             "Google DeepMind"
           ]
         },
         {
-          "name": "GenCeption",
-          "type": "AI 硬件",
+          "name": "DeepMind",
+          "type": "产品/服务",
           "ownerNames": [
             "Google DeepMind"
           ]
@@ -939,7 +937,7 @@
         "EV-2a833330267cb2df",
         "EV-0d5a32aca724d30e",
         "EV-1a241bcb4fad886c",
-        "EV-7e24db14146d39be",
+        "EV-6654f62015eff8e3",
         "EV-8b67e7ac8e61cc1e",
         "EV-989631c550d89726",
         "EV-94ad4a217508e6e0",
@@ -1078,7 +1076,7 @@
         "EV-a7e1ecd212474e00",
         "EV-d961d3ad02f6ae14",
         "EV-59229486408edb05",
-        "EV-7e24db14146d39be",
+        "EV-6654f62015eff8e3",
         "EV-7c6a9f4ee4829976",
         "EV-93c6ccf23cc422cb",
         "EV-5babb43f4b4d302f",
@@ -1130,7 +1128,7 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-7e24db14146d39be"
+        "EV-6654f62015eff8e3"
       ],
       "viewpointIds": [],
       "classificationRefs": [
@@ -1151,7 +1149,7 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-7e24db14146d39be"
+        "EV-6654f62015eff8e3"
       ],
       "viewpointIds": [],
       "classificationRefs": [
@@ -1728,44 +1726,5 @@
     }
   ],
   "fde": [],
-  "hardware": [
-    {
-      "id": "HW-7ae863dfba7ce9be",
-      "eventId": "EV-7e24db14146d39be",
-      "dataDate": "2026-07-22",
-      "date": "2026-07-21",
-      "title": "谷歌 DeepMind 发布 GenCeption：基于阿里 Wan2.1，打破计算机视觉桎梏",
-      "hardwareType": "ai_device",
-      "eventType": "hardware_product",
-      "eventTypeLabel": "硬件产品",
-      "computeLayer": "GenCeption",
-      "supplier": "谷歌 DeepMind",
-      "customer": "未披露",
-      "processNode": "未披露",
-      "capacity": "未披露",
-      "capacityUnit": "",
-      "site": "未披露",
-      "region": "未披露",
-      "contractValue": "未披露",
-      "shipmentDate": "未披露",
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "video_generation",
-          "name": "视频生成"
-        }
-      ],
-      "sourceUrl": "https://ithome.com/0/979/535.htm",
-      "sourceName": "IT之家（RSS）",
-      "sourceDate": "2026-07-21",
-      "entityIds": [
-        "EN-2b6e51bec93e86c1",
-        "EN-c9e6168149dd7cf6",
-        "EN-047364b9be67f665",
-        "EN-4d09c69c19f5f67b",
-        "EN-92af3ce2fb97edf3"
-      ]
-    }
-  ]
+  "hardware": []
 }

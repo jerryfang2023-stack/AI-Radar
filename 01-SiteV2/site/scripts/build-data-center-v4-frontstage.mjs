@@ -335,7 +335,7 @@ function buildFdeRecords(rows, eventsById) {
       sourceUrl: event?.sourceUrl || "",
       entityIds: event?.entityIds || []
     };
-  }).sort((a, b) => b.date.localeCompare(a.date) || a.id.localeCompare(b.id));
+  }).sort((a, b) => b.dataDate.localeCompare(a.dataDate) || b.date.localeCompare(a.date) || a.id.localeCompare(b.id));
 }
 
 function buildHardwareRecords(rows, eventsById) {
@@ -366,7 +366,7 @@ function buildHardwareRecords(rows, eventsById) {
       sourceDate: event?.date || dateOnly(row.data_date),
       entityIds: event?.entityIds || []
     };
-  }).sort((a, b) => b.date.localeCompare(a.date) || a.id.localeCompare(b.id));
+  }).sort((a, b) => b.dataDate.localeCompare(a.dataDate) || b.date.localeCompare(a.date) || a.id.localeCompare(b.id));
 }
 
 function buildCommunity(root) {

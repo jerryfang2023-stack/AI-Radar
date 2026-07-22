@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-22T01:57:46.409Z",
+    "generatedAt": "2026-07-22T06:04:57.768Z",
     "latestDataDate": "2026-07-22",
     "currentDate": "2026-07-22",
-    "eventCount": 1401,
+    "eventCount": 1400,
     "quarantinedEventCount": 13
   },
   "entity": {
@@ -29,8 +29,8 @@
       "EV-88f4ee8cd57bdf42",
       "EV-44a4e92c03a31ab1",
       "EV-7585b033d4005977",
+      "EV-883d3b5f6d30eb48",
       "EV-fa66f00e9d4b20c2",
-      "EV-ff77876694ab8395",
       "EV-4fba2b2f1ac10a79",
       "EV-bcb74b02448b7d78",
       "EV-47a16db069ed320e",
@@ -155,8 +155,8 @@
         "EV-44a4e92c03a31ab1"
       ],
       "deployments": [
+        "EV-883d3b5f6d30eb48",
         "EV-fa66f00e9d4b20c2",
-        "EV-ff77876694ab8395",
         "EV-4fba2b2f1ac10a79",
         "EV-bcb74b02448b7d78",
         "EV-33e7429a7bc94840",
@@ -236,6 +236,30 @@
     },
     "timeline": [
       {
+        "id": "EV-883d3b5f6d30eb48",
+        "dataDate": "2026-07-22",
+        "date": "2026-07-21",
+        "eventType": "hardware_deployment",
+        "eventTypeLabel": "硬件部署",
+        "eventGroup": "AI 硬件",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "102.4Tbps：英伟达 Spectrum-6 交换系统落地全球超大规模 AI 工厂",
+        "displayTags": [
+          {
+            "dimensionId": "industry",
+            "id": "manufacturing",
+            "dimensionName": "行业",
+            "name": "制造业"
+          }
+        ],
+        "entityIds": [
+          "EN-8d4321d936320802",
+          "EN-9fbf261b62c1d7c0",
+          "EN-6fcba5d96a4fadfd"
+        ]
+      },
+      {
         "id": "EV-fa66f00e9d4b20c2",
         "dataDate": "2026-07-22",
         "date": "2026-07-21",
@@ -256,29 +280,6 @@
         "entityIds": [
           "EN-9fbf261b62c1d7c0",
           "EN-bd52a4943ae83155"
-        ]
-      },
-      {
-        "id": "EV-ff77876694ab8395",
-        "dataDate": "2026-07-22",
-        "date": "2026-07-21",
-        "eventType": "deployment",
-        "eventTypeLabel": "部署",
-        "eventGroup": "部署与案例",
-        "status": "announced",
-        "statusLabel": "已公布",
-        "title": "102.4Tbps：英伟达 Spectrum-6 交换系统落地全球超大规模 AI 工厂",
-        "displayTags": [
-          {
-            "dimensionId": "industry",
-            "id": "manufacturing",
-            "dimensionName": "行业",
-            "name": "制造业"
-          }
-        ],
-        "entityIds": [
-          "EN-8d4321d936320802",
-          "EN-9fbf261b62c1d7c0"
         ]
       },
       {
@@ -2492,7 +2493,7 @@
         "EV-467d1a701d21327d",
         "EV-b4f69c41e23c7ce0",
         "EV-11b2293769081d4c",
-        "EV-ff77876694ab8395",
+        "EV-883d3b5f6d30eb48",
         "EV-cafe435ddd007821",
         "EV-ed388875bc004add",
         "EV-bc9abd502c002102",
@@ -3851,7 +3852,7 @@
         "EV-59882383f82f215d",
         "EV-a84ec4216d3ded6d",
         "EV-b4f69c41e23c7ce0",
-        "EV-ff77876694ab8395",
+        "EV-883d3b5f6d30eb48",
         "EV-cafe435ddd007821",
         "EV-ff1f6119de13fa19",
         "EV-4dd25589d834060d",
@@ -3895,6 +3896,7 @@
         "EN-7706c3c94d5f9b59",
         "EN-01839aa42da88393",
         "EN-9fbf261b62c1d7c0",
+        "EN-6fcba5d96a4fadfd",
         "EN-59ae856cd788d0f5",
         "EN-0f3360879e746531",
         "EN-80d387ccb3289295",
@@ -3940,10 +3942,10 @@
         "EN-6c7575a43005188a"
       ],
       "fdeIds": [
-        "FDE-ab9846c6cdc82a26",
         "FDE-9f64e1521dd2dea0"
       ],
       "hardwareIds": [
+        "HW-c57ff6e49b40d839",
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2025-12-02",
@@ -4862,44 +4864,47 @@
   ],
   "fde": [
     {
-      "id": "FDE-ab9846c6cdc82a26",
-      "eventId": "EV-ff77876694ab8395",
-      "dataDate": "2026-07-22",
-      "date": "2026-07-21",
-      "title": "102.4Tbps：英伟达 Spectrum-6 交换系统落地全球超大规模 AI 工厂",
+      "id": "FDE-8d7df617732e7c45",
+      "eventId": "EV-b2e374d54b10b9af",
+      "dataDate": "2026-07-16",
+      "date": "2026-06-04",
+      "title": "C3 AI 与壳牌扩大合作，在全球资产运营中规模化部署可靠性AI智能体",
       "stage": "announced",
       "stageLabel": "已公布",
-      "customer": "NVIDIA",
-      "vendor": "未披露",
-      "industry": "未披露",
-      "useCase": "全球超大规模 AI 工厂",
-      "reportedNeed": "未披露",
+      "customer": "C3 AI",
+      "vendor": "Shell",
+      "industry": "Oil and gas",
+      "useCase": "Scaling Reliability AI Deployment Across Global Asset Operations",
+      "reportedNeed": "Reduce unplanned downtime and deliver economic value through operationalized enterprise AI for predictive maintenance",
       "deliveryComponents": [
-        "英伟达表示 CoreWeave、Microsoft 和 Nebius 将率先部署基于 Vera Rubin、并结合 Spectrum-6 的基础设施，以扩展开发者、初创公司和企业对该平台的访问。",
-        "CoreWeave 产品网络总监 Min Jun 表示，Spectrum-6 和液冷的 Spectrum-X Ethernet 基础设施将帮助其提供训练前沿模型和更快部署推理所需的带宽、韧性和效率。"
+        "C3 AI and Shell Expand Collaboration, Scaling Reliability AI Deployment Across Global Asset Operations"
       ],
-      "outcomes": [],
-      "metrics": [
-        "102.4Tb",
-        "102.4Tb"
+      "outcomes": [
+        "Hundreds of millions of dollars in economic value from reduced unplanned downtime"
       ],
+      "metrics": [],
       "undisclosedFields": [
-        "vendor",
-        "industry",
         "workflow_before",
         "workflow_after",
         "delivery_model",
         "team_composition",
-        "reported_need",
         "systems_integrated",
         "data_requirements",
-        "governance_controls",
-        "reported_outcomes"
+        "governance_controls"
       ],
-      "tags": [],
-      "sourceUrl": "https://ithome.com/0/979/791.htm",
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "sourceUrl": "https://markets.ft.com/data/announce/full?dockey=600-202606040900BIZWIRE_USPRX____20260604_BW461527-1",
       "entityIds": [
-        "EN-8d4321d936320802",
+        "EN-f48a4090493d2b5e",
+        "EN-f9ae78c09ff308f9",
+        "EN-ce635c4eabff5e4f",
         "EN-9fbf261b62c1d7c0"
       ]
     },
@@ -4984,51 +4989,6 @@
         "EN-7d3194f79e645c42",
         "EN-c70eca6b0f88f44d",
         "EN-4d748ebd71af03a7"
-      ]
-    },
-    {
-      "id": "FDE-8d7df617732e7c45",
-      "eventId": "EV-b2e374d54b10b9af",
-      "dataDate": "2026-07-16",
-      "date": "2026-06-04",
-      "title": "C3 AI 与壳牌扩大合作，在全球资产运营中规模化部署可靠性AI智能体",
-      "stage": "announced",
-      "stageLabel": "已公布",
-      "customer": "C3 AI",
-      "vendor": "Shell",
-      "industry": "Oil and gas",
-      "useCase": "Scaling Reliability AI Deployment Across Global Asset Operations",
-      "reportedNeed": "Reduce unplanned downtime and deliver economic value through operationalized enterprise AI for predictive maintenance",
-      "deliveryComponents": [
-        "C3 AI and Shell Expand Collaboration, Scaling Reliability AI Deployment Across Global Asset Operations"
-      ],
-      "outcomes": [
-        "Hundreds of millions of dollars in economic value from reduced unplanned downtime"
-      ],
-      "metrics": [],
-      "undisclosedFields": [
-        "workflow_before",
-        "workflow_after",
-        "delivery_model",
-        "team_composition",
-        "systems_integrated",
-        "data_requirements",
-        "governance_controls"
-      ],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        }
-      ],
-      "sourceUrl": "https://markets.ft.com/data/announce/full?dockey=600-202606040900BIZWIRE_USPRX____20260604_BW461527-1",
-      "entityIds": [
-        "EN-f48a4090493d2b5e",
-        "EN-f9ae78c09ff308f9",
-        "EN-ce635c4eabff5e4f",
-        "EN-9fbf261b62c1d7c0"
       ]
     },
     {
@@ -5178,6 +5138,35 @@
     }
   ],
   "hardware": [
+    {
+      "id": "HW-c57ff6e49b40d839",
+      "eventId": "EV-883d3b5f6d30eb48",
+      "dataDate": "2026-07-22",
+      "date": "2026-07-21",
+      "title": "102.4Tbps：英伟达 Spectrum-6 交换系统落地全球超大规模 AI 工厂",
+      "hardwareType": "networking",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "computeLayer": "未披露",
+      "supplier": "未披露",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": 102.4,
+      "capacityUnit": "Tb",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/979/791.htm",
+      "sourceName": "IT之家（RSS）",
+      "sourceDate": "2026-07-21",
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-9fbf261b62c1d7c0",
+        "EN-6fcba5d96a4fadfd"
+      ]
+    },
     {
       "id": "HW-f88508d724c3b2b0",
       "eventId": "EV-fa66f00e9d4b20c2",

@@ -434,12 +434,21 @@
       return { kind: item.indexKind, date: "", title: item.name, sub: item.indexSub, tags: item.tags, href: detailLink("index", item.detailKind, item.id) };
     }
     if (targetView === "fde") {
-      return { kind: item.stageLabel, date: item.date, title: item.title, sub: "", tags: item.tags, href: detailLink("fde", "fde", item.id) };
+      return {
+        kind: item.stageLabel,
+        date: `采集 ${item.dataDate}`,
+        secondaryDate: `事件 ${item.date}`,
+        title: item.title,
+        sub: "",
+        tags: item.tags,
+        href: detailLink("fde", "fde", item.id)
+      };
     }
     if (targetView === "hardware") {
       return {
         kind: item.hardwareType,
-        date: item.date,
+        date: `采集 ${item.dataDate}`,
+        secondaryDate: `事件 ${item.date}`,
         title: item.title,
         sub: `来源：${item.sourceName || "来源未披露"}`,
         tags: item.tags,
@@ -469,7 +478,7 @@
       return `
         <div class="dc-list-row">
           <a class="dc-row-hit" href="${escapeHtml(row.href)}" aria-label="${escapeHtml(row.title)}"></a>
-          <span class="dc-row-kind">${escapeHtml(row.kind || "未披露")}${row.date ? `<small class="dc-row-date">${escapeHtml(row.date)}</small>` : ""}</span>
+          <span class="dc-row-kind">${escapeHtml(row.kind || "未披露")}${row.date ? `<small class="dc-row-date">${escapeHtml(row.date)}</small>` : ""}${row.secondaryDate ? `<small class="dc-row-date">${escapeHtml(row.secondaryDate)}</small>` : ""}</span>
           <span class="dc-row-title">${escapeHtml(row.title)}${row.sub ? `<small>${escapeHtml(row.sub)}</small>` : ""}</span>
           ${renderTags(row.tags, 2)}
         </div>

@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-22T01:57:46.409Z",
+    "generatedAt": "2026-07-22T06:04:57.768Z",
     "latestDataDate": "2026-07-22",
     "currentDate": "2026-07-22",
-    "eventCount": 1401,
+    "eventCount": 1400,
     "quarantinedEventCount": 13
   },
   "entity": {
@@ -2525,7 +2525,7 @@
         "EV-59882383f82f215d",
         "EV-a84ec4216d3ded6d",
         "EV-b4f69c41e23c7ce0",
-        "EV-ff77876694ab8395",
+        "EV-883d3b5f6d30eb48",
         "EV-cafe435ddd007821",
         "EV-ff1f6119de13fa19",
         "EV-4dd25589d834060d",
@@ -2569,6 +2569,7 @@
         "EN-7706c3c94d5f9b59",
         "EN-01839aa42da88393",
         "EN-9fbf261b62c1d7c0",
+        "EN-6fcba5d96a4fadfd",
         "EN-59ae856cd788d0f5",
         "EN-0f3360879e746531",
         "EN-80d387ccb3289295",
@@ -2614,10 +2615,10 @@
         "EN-6c7575a43005188a"
       ],
       "fdeIds": [
-        "FDE-ab9846c6cdc82a26",
         "FDE-9f64e1521dd2dea0"
       ],
       "hardwareIds": [
+        "HW-c57ff6e49b40d839",
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2025-12-02",
@@ -3195,6 +3196,47 @@
   ],
   "fde": [
     {
+      "id": "FDE-ae632d9d054f8219",
+      "eventId": "EV-fd7e79d3cb9cdb69",
+      "dataDate": "2026-07-13",
+      "date": "2026-06-25",
+      "title": "高通发布三款新数据中心解决方案，包括Dragonfly C1000 CPU，将由Meta部署",
+      "stage": "completed",
+      "stageLabel": "已完成",
+      "customer": "Meta",
+      "vendor": "Qualcomm",
+      "industry": "Data Center",
+      "useCase": "by Meta - DCD",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "Qualcomm unveils three new data center solutions including Dragonfly C1000 CPU, set to be deployed by Meta",
+        "Qualcomm said the chip features custom-designed Oryon CPU cores, which have been optimized to “deliver superior performance for agentic workload deployed at scale,” while its 250+ core-count chiplet design offers “exceptional throughput and scale” while delivering exceptional per-core performance. Delivering a reported 2x better performance per watt compared to existing product benchmarks for server CPU, the Dragonfly C1000 is expected to be commercially available in 2028."
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "sourceUrl": "https://datacenterdynamics.com/en/news/qualcomm-unveils-three-new-data-center-solutions-including-qualcomm-dragonfly-c1000-cpu-set-to-be-deployed-by-meta",
+      "entityIds": [
+        "EN-ea3bd73e2b506e00"
+      ]
+    },
+    {
       "id": "FDE-33ed0bdb7b19e3d1",
       "eventId": "EV-9efcf6480f6c6f48",
       "dataDate": "2026-07-01",
@@ -3237,47 +3279,6 @@
         }
       ],
       "sourceUrl": "https://aboutamazon.com/news/aws/aws-1-billion-forward-deployed-ai-engineers",
-      "entityIds": [
-        "EN-ea3bd73e2b506e00"
-      ]
-    },
-    {
-      "id": "FDE-ae632d9d054f8219",
-      "eventId": "EV-fd7e79d3cb9cdb69",
-      "dataDate": "2026-07-13",
-      "date": "2026-06-25",
-      "title": "高通发布三款新数据中心解决方案，包括Dragonfly C1000 CPU，将由Meta部署",
-      "stage": "completed",
-      "stageLabel": "已完成",
-      "customer": "Meta",
-      "vendor": "Qualcomm",
-      "industry": "Data Center",
-      "useCase": "by Meta - DCD",
-      "reportedNeed": "未披露",
-      "deliveryComponents": [
-        "Qualcomm unveils three new data center solutions including Dragonfly C1000 CPU, set to be deployed by Meta",
-        "Qualcomm said the chip features custom-designed Oryon CPU cores, which have been optimized to “deliver superior performance for agentic workload deployed at scale,” while its 250+ core-count chiplet design offers “exceptional throughput and scale” while delivering exceptional per-core performance. Delivering a reported 2x better performance per watt compared to existing product benchmarks for server CPU, the Dragonfly C1000 is expected to be commercially available in 2028."
-      ],
-      "outcomes": [],
-      "metrics": [],
-      "undisclosedFields": [
-        "workflow_after",
-        "delivery_model",
-        "team_composition",
-        "reported_need",
-        "data_requirements",
-        "governance_controls",
-        "reported_outcomes"
-      ],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        }
-      ],
-      "sourceUrl": "https://datacenterdynamics.com/en/news/qualcomm-unveils-three-new-data-center-solutions-including-qualcomm-dragonfly-c1000-cpu-set-to-be-deployed-by-meta",
       "entityIds": [
         "EN-ea3bd73e2b506e00"
       ]

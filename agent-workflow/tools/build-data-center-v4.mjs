@@ -47,7 +47,7 @@ const EVENT_RULES = [
   ["research_result", /\b(?:study|research|benchmark|paper|report)\b.{0,70}\b(?:finds?|shows?|reports?|achieves?|usage|gap)\b|(?:研究(?!员)|论文|基准|报告).{0,50}(?:显示|表明|达到|结果|差距|用量|增长|下降|登顶|占比)/iu],
   ["organization_people", /\b(?:appoints?|appointed|hires?|hired|joins?|joined|resigns?|leaves?|depart(?:s|ed)?)\b|任命|加入|离职|辞任|聘任/iu],
   ["model_release", /\b(?:releases?|released|launch(?:es|ed)?|introduces?|introduced|unveils?|unveiled|open[- ]sources?)\b.{0,90}\b(?:model|llm|foundation model)\b|发布.{0,40}(?:模型|大模型)|推出.{0,40}(?:模型|大模型)|开源.{0,50}(?:模型|大模型)|(?:模型|大模型).{0,30}开源/iu],
-  ["hardware_product", /\b(?:releases?|released|launch(?:es|ed)?|introduces?|introduced|unveils?|unveiled|ships?|shipped|debuts?|expands?|adds?)\b.{0,90}\b(?:gpus?|chips?|processors?|accelerators?|servers?|computers?|devices?|robots?|glasses|keyboards?|npus?|chiplets?|modules?)\b|(?:发布|推出|扩展|新增).{0,80}(?:芯片|GPU|服务器|计算机|设备|机器人|眼镜|键盘|NPU|芯粒|工作站|模组)|(?:硬件|键盘|设备|计算机|工作站|模组).{0,40}(?:登场|亮相|新增|扩展)/iu],
+  ["hardware_product", /\b(?:releases?|released|launch(?:es|ed)?|introduces?|introduced|unveils?|unveiled|ships?|shipped|debuts?|expands?|adds?)\b.{0,90}\b(?:gpus?|chips?|processors?|accelerators?|servers?|computers?(?!\s+vision)|devices?|robots?|glasses|keyboards?|npus?|chiplets?|modules?)\b|(?:发布|推出|扩展|新增).{0,80}(?:芯片|GPU|服务器|计算机(?!视觉)|设备|机器人|眼镜|键盘|NPU|芯粒|工作站|模组)|(?:硬件|键盘|设备|计算机(?!视觉)|工作站|模组).{0,40}(?:登场|亮相|新增|扩展)/iu],
   ["service_change", /\b(?:discontinues?|discontinued|shuts? down|sunsets?|removes?|removed)\b|停止服务|关闭服务|下线|移除功能/iu],
   ["product_release", /\b(?:releases?|released|launch(?:es|ed)?|introduces?|introduced|unveils?|unveiled|adds?|added|open[- ]sources?)\b|发布|推出|上线新|新增|宣布开源|开源.{0,50}(?:工具|框架|软件)/iu]
 ];
@@ -62,6 +62,7 @@ const SPECIAL_EVENT_RULES = [
   ["product_release", /\b1Password\b.{0,80}\bClaude\b|\bClaude\b.{0,80}\b1Password\b|\bLM Studio Bionic\b/iu],
   ["product_release", /\b(?:launch(?:es|ed)?|releases?|released|introduces?|introduced|unveils?|unveiled)\b.{0,100}\b(?:app|plugin|extension|tool|platform|service|workspace)\b|(?:发布|推出|上线).{0,60}(?:应用|插件|扩展|工具|平台|服务|工作台)/iu],
   ["product_release", /(?:上线|推出|发布).{0,18}(?:新功能|功能更新)|\brolls? out\b.{0,50}\b(?:feature|capability|update)\b/iu],
+  ["hardware_deployment", /\b(?:gpus?|chips?|accelerators?|servers?|clusters?|network switches?|ethernet infrastructure|interconnects?)\b.{0,60}\b(?:deploy(?:s|ed|ment)?|install(?:s|ed|ation)?|rolls? out)\b|\b(?:deploy(?:s|ed|ment)?|install(?:s|ed|ation)?|rolls? out)\b.{0,60}\b(?:gpus?|chips?|accelerators?|servers?|clusters?|network switches?|ethernet infrastructure|interconnects?)\b|(?:GPU|芯片|加速器|服务器|集群|交换系统|以太网基础设施|互连).{0,50}(?:部署|落地|安装)|(?:部署|落地|安装).{0,50}(?:GPU|芯片|加速器|服务器|集群|交换系统|以太网基础设施|互连)/iu],
   ["hardware_deployment", /(?:发布|建设|推出|launch(?:es|ed)?|build(?:s|ing)?|construct(?:s|ing)?|unveil(?:s|ed)?).{0,100}(?:(?:国家级|national).{0,30}(?:AI|人工智能).{0,30}(?:infrastructure|factory|基础设施|数据中心)|(?:AI|人工智能).{0,20}(?:factory|data cent(?:er|re)|infrastructure|基础设施|数据中心|智算中心))/iu],
   ["funding", /完成.{0,30}(?:融资|募资)|\bcompleted\b.{0,40}\b(?:funding|financing)\b/iu],
   ["partnership", /合资成立|\b(?:forms?|creates?|establishes?)\b.{0,40}\bjoint venture\b|\bjoint venture\b/iu],
@@ -145,7 +146,7 @@ function eventSourceEligibility(raw, artifact, title) {
   } catch {
     return { accepted: false, reason: "invalid_source_url" };
   }
-  const genericForwardDeployedPage = /\bforward[- ]deployed\b.{0,80}\b(?:engineer|engineering|role|service)\b/iu.test(title)
+  const genericForwardDeployedPage = /\bforward[- ]deployed\b.{0,80}\b(?:engineers?|engineering|role|service)\b/iu.test(title)
     && !/\b(?:launch(?:es|ed)?|introduc(?:es|ed)?|announc(?:es|ed)?|partner(?:s|ed)?)\b.{0,100}\bforward[- ]deployed\b/iu.test(title);
   if (TRUNCATED_OR_NON_EVENT_TITLE.test(title)
       || GENERIC_NON_EVENT_TITLE.test(title)
@@ -693,7 +694,8 @@ function componentType(text) {
     ["input_device", /\bkeyboard\b|键盘/iu],
     ["robot", /\brobots?\b|机器人/iu],
     ["smart_glasses", /\b(?:smart|AI) glasses\b|智能眼镜|AI眼镜/iu],
-    ["ai_device", /\b(?:AI (?:device|hardware)|computer|module)\b|AI\s*智能硬件|人工智能硬件|计算机|模组/iu],
+    ["networking", /\b(?:network switches?|switching systems?|ethernet infrastructure|interconnects?)\b|交换系统|以太网基础设施|互连/iu],
+    ["ai_device", /\b(?:AI (?:device|hardware)|computer(?!\s+vision)|module)\b|AI\s*智能硬件|人工智能硬件|计算机(?!视觉)|模组/iu],
     ["data_center", /\b(?:data cent(?:er|re)|AI infrastructure)\b|数据中心|人工智能基础设施|AI\s*基础设施/iu]
   ];
   return entries.find(([, pattern]) => pattern.test(text))?.[0] || "";

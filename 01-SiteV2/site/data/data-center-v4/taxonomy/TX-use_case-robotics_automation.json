@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-22T01:57:46.409Z",
+    "generatedAt": "2026-07-22T06:04:57.768Z",
     "latestDataDate": "2026-07-22",
     "currentDate": "2026-07-22",
-    "eventCount": 1401,
+    "eventCount": 1400,
     "quarantinedEventCount": 13
   },
   "node": {
@@ -4275,7 +4275,7 @@
         "EV-467d1a701d21327d",
         "EV-b4f69c41e23c7ce0",
         "EV-11b2293769081d4c",
-        "EV-ff77876694ab8395",
+        "EV-883d3b5f6d30eb48",
         "EV-cafe435ddd007821",
         "EV-ed388875bc004add",
         "EV-bc9abd502c002102",
@@ -5738,9 +5738,7 @@
       "name": "xAI",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "Grok"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -5751,6 +5749,7 @@
         "EV-5d581d112fdbd464",
         "EV-201b25d4f3cf696a",
         "EV-31df816db86db282",
+        "EV-883d3b5f6d30eb48",
         "EV-e15ae1112294d59e",
         "EV-43301de739fe560e",
         "EV-2351415291cb9fcd",
@@ -5773,17 +5772,17 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
         "TX-technology-code_generation",
         "TX-use_case-robotics_automation",
         "TX-use_case-software_development",
         "TX-technology-tool_use"
       ],
       "relatedEntityIds": [
-        "EN-bac541b589c8a0d1",
-        "EN-c4bc2d00a42f220f"
+        "EN-bac541b589c8a0d1"
       ],
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-07-19"
+      "lastSeen": "2026-07-22"
     },
     {
       "id": "EN-7d5f17368c04f04c",
@@ -6279,8 +6278,8 @@
         "EV-88f4ee8cd57bdf42",
         "EV-44a4e92c03a31ab1",
         "EV-7585b033d4005977",
+        "EV-883d3b5f6d30eb48",
         "EV-fa66f00e9d4b20c2",
-        "EV-ff77876694ab8395",
         "EV-4fba2b2f1ac10a79",
         "EV-bcb74b02448b7d78",
         "EV-47a16db069ed320e",
@@ -6563,37 +6562,6 @@
       ]
     },
     {
-      "id": "HW-0ebffabe51a60966",
-      "eventId": "EV-303b418c63895ba6",
-      "dataDate": "2026-07-16",
-      "date": "2026-07-16",
-      "title": "NVIDIA 推出新款 Jetson Thor 计算机，推动主流机器人与边缘 AI 发展",
-      "hardwareType": "gpu",
-      "eventType": "hardware_product",
-      "eventTypeLabel": "硬件产品",
-      "computeLayer": "edge",
-      "supplier": "NVIDIA",
-      "customer": "未披露",
-      "processNode": "未披露",
-      "capacity": 32,
-      "capacityUnit": "GB",
-      "site": "未披露",
-      "region": "未披露",
-      "contractValue": "未披露",
-      "shipmentDate": "未披露",
-      "tags": [],
-      "sourceUrl": "https://blogs.nvidia.com/blog/jetson-thor-robotics-edge-ai-agent",
-      "sourceName": "blogs.nvidia.com",
-      "sourceDate": "2026-07-16",
-      "entityIds": [
-        "EN-8d4321d936320802",
-        "EN-cbc62794911ff31b",
-        "EN-a1b0d8a938903dc7",
-        "EN-fbe26af59be95e52",
-        "EN-2b119dc14de9478d"
-      ]
-    },
-    {
       "id": "HW-ceb55d9bc637c1d3",
       "eventId": "EV-cafe435ddd007821",
       "dataDate": "2026-07-18",
@@ -6634,6 +6602,37 @@
         "EN-59ae856cd788d0f5",
         "EN-0f3360879e746531",
         "EN-80d387ccb3289295"
+      ]
+    },
+    {
+      "id": "HW-0ebffabe51a60966",
+      "eventId": "EV-303b418c63895ba6",
+      "dataDate": "2026-07-16",
+      "date": "2026-07-16",
+      "title": "NVIDIA 推出新款 Jetson Thor 计算机，推动主流机器人与边缘 AI 发展",
+      "hardwareType": "gpu",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "edge",
+      "supplier": "NVIDIA",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": 32,
+      "capacityUnit": "GB",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://blogs.nvidia.com/blog/jetson-thor-robotics-edge-ai-agent",
+      "sourceName": "blogs.nvidia.com",
+      "sourceDate": "2026-07-16",
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-cbc62794911ff31b",
+        "EN-a1b0d8a938903dc7",
+        "EN-fbe26af59be95e52",
+        "EN-2b119dc14de9478d"
       ]
     },
     {

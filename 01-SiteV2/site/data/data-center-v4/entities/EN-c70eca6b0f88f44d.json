@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-22T01:57:46.409Z",
+    "generatedAt": "2026-07-22T06:04:57.768Z",
     "latestDataDate": "2026-07-22",
     "currentDate": "2026-07-22",
-    "eventCount": 1401,
+    "eventCount": 1400,
     "quarantinedEventCount": 13
   },
   "entity": {
@@ -8787,7 +8787,7 @@
         "EV-59882383f82f215d",
         "EV-a84ec4216d3ded6d",
         "EV-b4f69c41e23c7ce0",
-        "EV-ff77876694ab8395",
+        "EV-883d3b5f6d30eb48",
         "EV-cafe435ddd007821",
         "EV-ff1f6119de13fa19",
         "EV-4dd25589d834060d",
@@ -8831,6 +8831,7 @@
         "EN-7706c3c94d5f9b59",
         "EN-01839aa42da88393",
         "EN-9fbf261b62c1d7c0",
+        "EN-6fcba5d96a4fadfd",
         "EN-59ae856cd788d0f5",
         "EN-0f3360879e746531",
         "EN-80d387ccb3289295",
@@ -8876,10 +8877,10 @@
         "EN-6c7575a43005188a"
       ],
       "fdeIds": [
-        "FDE-ab9846c6cdc82a26",
         "FDE-9f64e1521dd2dea0"
       ],
       "hardwareIds": [
+        "HW-c57ff6e49b40d839",
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2025-12-02",
@@ -10014,6 +10015,44 @@
   ],
   "fde": [
     {
+      "id": "FDE-a63e80944be39019",
+      "eventId": "EV-94e0afb44c320c99",
+      "dataDate": "2026-07-17",
+      "date": "2026-05-14",
+      "title": "PwC部署Claude为客户构建技术、执行交易并重塑企业职能 \\ Anthropic",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "PwC",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "Claude to build technology, execute deals, and reinvent enterprise functions for clients",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "PwC is deploying Claude to build technology, execute deals, and reinvent enterprise functions for clients \\ Anthropic",
+        "PwC is deploying Claude to build technology, execute deals, and reinvent enterprise functions for clients"
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://anthropic.com/news/pwc-expanded-partnership?939688b5_page=1",
+      "entityIds": [
+        "EN-e4ffb7bd879b89da",
+        "EN-c70eca6b0f88f44d"
+      ]
+    },
+    {
       "id": "FDE-1804f08a3871ba4e",
       "eventId": "EV-7f2811d2272cf4a3",
       "dataDate": "2026-07-16",
@@ -10048,6 +10087,44 @@
       "entityIds": [
         "EN-c70eca6b0f88f44d",
         "EN-7d3194f79e645c42"
+      ]
+    },
+    {
+      "id": "FDE-26e5a1821fa5cbd0",
+      "eventId": "EV-ae7b6d0c134c9cad",
+      "dataDate": "2026-07-13",
+      "date": "2026-07-01",
+      "title": "JAKALA 借助 Claude 智能体将营销周期从 7 天缩短至 24 小时",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "JAKALA",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "Claude Enterprise to over 3,000 employees",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "rolled out Claude Enterprise to over 3,000 employees",
+        "deploying specialized Performance Agents across client media and marketing workflows"
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://theapplied.co/use-cases/how-jakala-cuts-campaign-cycles-from-7-days-to-24-hours-with-claude-agents",
+      "entityIds": [
+        "EN-89be33615acf235c",
+        "EN-c70eca6b0f88f44d"
       ]
     },
     {
@@ -10139,55 +10216,6 @@
       ]
     },
     {
-      "id": "FDE-8c57145ddc067b7d",
-      "eventId": "EV-fe601e081c090971",
-      "dataDate": "2026-07-02",
-      "date": "2026-07-02",
-      "title": "Zillow 如何利用 AI 在 7,000 名员工中部署 Glean，每人每周节省 1.5 小时以上",
-      "stage": "completed",
-      "stageLabel": "已完成",
-      "customer": "Zillow",
-      "vendor": "未披露",
-      "industry": "未披露",
-      "useCase": "Glean",
-      "reportedNeed": "未披露",
-      "deliveryComponents": [
-        "Zillow deployed Glean across its entire workforce, connecting 30+ data sources with 138M documents and enabling teams to build 3,400+ AI agents using natural language — achieving 80%+ adoption and saving employees 1.5+ hours per week.",
-        "One standout deployment was the Self Review agent, which guided employees through performance review self-assessments and was run approximately 10,000 times, contributing to a 7% increase in review participation.",
-        "Zillow also integrated Glean MCP with developer tools including Cursor and Claude Code, extending AI-assisted search into engineering workflows."
-      ],
-      "outcomes": [],
-      "metrics": [
-        "80%",
-        "7%"
-      ],
-      "undisclosedFields": [
-        "vendor",
-        "industry",
-        "workflow_before",
-        "workflow_after",
-        "delivery_model",
-        "team_composition",
-        "reported_need",
-        "data_requirements",
-        "governance_controls",
-        "reported_outcomes"
-      ],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        }
-      ],
-      "sourceUrl": "https://theapplied.co/use-cases/how-zillow-deployed-glean-across-7000-employees-and-saved-1-5-hours-per-person-per-week",
-      "entityIds": [
-        "EN-5a08fbb37039e825",
-        "EN-c70eca6b0f88f44d"
-      ]
-    },
-    {
       "id": "FDE-c19b8c67ebeeae98",
       "eventId": "EV-47a16db069ed320e",
       "dataDate": "2026-07-03",
@@ -10271,24 +10299,28 @@
       ]
     },
     {
-      "id": "FDE-26e5a1821fa5cbd0",
-      "eventId": "EV-ae7b6d0c134c9cad",
-      "dataDate": "2026-07-13",
-      "date": "2026-07-01",
-      "title": "JAKALA 借助 Claude 智能体将营销周期从 7 天缩短至 24 小时",
-      "stage": "announced",
-      "stageLabel": "已公布",
-      "customer": "JAKALA",
+      "id": "FDE-8c57145ddc067b7d",
+      "eventId": "EV-fe601e081c090971",
+      "dataDate": "2026-07-02",
+      "date": "2026-07-02",
+      "title": "Zillow 如何利用 AI 在 7,000 名员工中部署 Glean，每人每周节省 1.5 小时以上",
+      "stage": "completed",
+      "stageLabel": "已完成",
+      "customer": "Zillow",
       "vendor": "未披露",
       "industry": "未披露",
-      "useCase": "Claude Enterprise to over 3,000 employees",
+      "useCase": "Glean",
       "reportedNeed": "未披露",
       "deliveryComponents": [
-        "rolled out Claude Enterprise to over 3,000 employees",
-        "deploying specialized Performance Agents across client media and marketing workflows"
+        "Zillow deployed Glean across its entire workforce, connecting 30+ data sources with 138M documents and enabling teams to build 3,400+ AI agents using natural language — achieving 80%+ adoption and saving employees 1.5+ hours per week.",
+        "One standout deployment was the Self Review agent, which guided employees through performance review self-assessments and was run approximately 10,000 times, contributing to a 7% increase in review participation.",
+        "Zillow also integrated Glean MCP with developer tools including Cursor and Claude Code, extending AI-assisted search into engineering workflows."
       ],
       "outcomes": [],
-      "metrics": [],
+      "metrics": [
+        "80%",
+        "7%"
+      ],
       "undisclosedFields": [
         "vendor",
         "industry",
@@ -10301,10 +10333,17 @@
         "governance_controls",
         "reported_outcomes"
       ],
-      "tags": [],
-      "sourceUrl": "https://theapplied.co/use-cases/how-jakala-cuts-campaign-cycles-from-7-days-to-24-hours-with-claude-agents",
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "sourceUrl": "https://theapplied.co/use-cases/how-zillow-deployed-glean-across-7000-employees-and-saved-1-5-hours-per-person-per-week",
       "entityIds": [
-        "EN-89be33615acf235c",
+        "EN-5a08fbb37039e825",
         "EN-c70eca6b0f88f44d"
       ]
     },
@@ -10518,44 +10557,6 @@
         "EN-cbc62794911ff31b",
         "EN-bbdefa2950f49882",
         "EN-9fbf261b62c1d7c0"
-      ]
-    },
-    {
-      "id": "FDE-a63e80944be39019",
-      "eventId": "EV-94e0afb44c320c99",
-      "dataDate": "2026-07-17",
-      "date": "2026-05-14",
-      "title": "PwC部署Claude为客户构建技术、执行交易并重塑企业职能 \\ Anthropic",
-      "stage": "announced",
-      "stageLabel": "已公布",
-      "customer": "PwC",
-      "vendor": "未披露",
-      "industry": "未披露",
-      "useCase": "Claude to build technology, execute deals, and reinvent enterprise functions for clients",
-      "reportedNeed": "未披露",
-      "deliveryComponents": [
-        "PwC is deploying Claude to build technology, execute deals, and reinvent enterprise functions for clients \\ Anthropic",
-        "PwC is deploying Claude to build technology, execute deals, and reinvent enterprise functions for clients"
-      ],
-      "outcomes": [],
-      "metrics": [],
-      "undisclosedFields": [
-        "vendor",
-        "industry",
-        "workflow_before",
-        "workflow_after",
-        "delivery_model",
-        "team_composition",
-        "reported_need",
-        "data_requirements",
-        "governance_controls",
-        "reported_outcomes"
-      ],
-      "tags": [],
-      "sourceUrl": "https://anthropic.com/news/pwc-expanded-partnership?939688b5_page=1",
-      "entityIds": [
-        "EN-e4ffb7bd879b89da",
-        "EN-c70eca6b0f88f44d"
       ]
     }
   ],

@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-22T01:57:46.409Z",
+    "generatedAt": "2026-07-22T06:04:57.768Z",
     "latestDataDate": "2026-07-22",
     "currentDate": "2026-07-22",
-    "eventCount": 1401,
+    "eventCount": 1400,
     "quarantinedEventCount": 13
   },
   "entity": {
@@ -29,14 +29,10 @@
       "TX-use_case-software_development",
       "TX-technology-tool_use"
     ],
-    "relatedEntityIds": [
-      "EN-6fcba5d96a4fadfd"
-    ],
+    "relatedEntityIds": [],
     "firstSeen": "2026-05-25",
     "lastSeen": "2026-07-17",
-    "relationIds": [
-      "REL2-e0b4c492d7f56ad2"
-    ],
+    "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -91,88 +87,8 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [
-    {
-      "id": "EN-6fcba5d96a4fadfd",
-      "name": "xAI",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [
-        "Grok"
-      ],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-3daefecd0453631a",
-        "EV-edcb66d0401cfb8f",
-        "EV-5d581d112fdbd464",
-        "EV-201b25d4f3cf696a",
-        "EV-31df816db86db282",
-        "EV-e15ae1112294d59e",
-        "EV-43301de739fe560e",
-        "EV-2351415291cb9fcd",
-        "EV-e7b7df43970f7e2c",
-        "EV-377094da492a03d2",
-        "EV-ae736eb124d7163a",
-        "EV-bdcd6fc0caa8f6d4",
-        "EV-5012364af7480121",
-        "EV-e1a7e7dcb19bfc70",
-        "EV-10aac036228b3c6b",
-        "EV-ed58c2c69290ee4c",
-        "EV-631197767a45d34c",
-        "EV-d53cd33e8f541a65",
-        "EV-11a3893cb86fef69",
-        "EV-9578242a4df20721",
-        "EV-8cd571951f62b2c8",
-        "EV-bce258f8f915ff5f",
-        "EV-4beb890f0879aeaf"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-technology-code_generation",
-        "TX-use_case-robotics_automation",
-        "TX-use_case-software_development",
-        "TX-technology-tool_use"
-      ],
-      "relatedEntityIds": [
-        "EN-bac541b589c8a0d1",
-        "EN-c4bc2d00a42f220f"
-      ],
-      "firstSeen": "2026-05-25",
-      "lastSeen": "2026-07-19"
-    }
-  ],
-  "relationships": [
-    {
-      "relationship_id": "REL2-e0b4c492d7f56ad2",
-      "relationship_version": "RELATION-V2.0",
-      "subject_ref": "EN-6fcba5d96a4fadfd",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-c4bc2d00a42f220f",
-      "object_type": "entity",
-      "event_id": "EV-d53cd33e8f541a65",
-      "claim_refs": [
-        "CL-66990e99d6c6046f",
-        "CL-8dea0880a232aacb",
-        "CL-8f0816ffc6ddc924",
-        "CL-2253a0c5e5c24ff0",
-        "CL-fffcc4be39cd4ff6",
-        "CL-c4c367a0b5ff3421",
-        "CL-aecc349eae5fb79f",
-        "CL-54c7c187771e7610"
-      ],
-      "source_refs": [
-        "SA-0edcc134c1576e9a",
-        "SA-ab14f44044faafd5"
-      ],
-      "data_date": "2026-07-17",
-      "status": "verified"
-    }
-  ],
+  "relatedEntities": [],
+  "relationships": [],
   "taxonomyNodes": [
     {
       "id": "TX-technology-code_generation",

@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-22T01:57:46.409Z",
+    "generatedAt": "2026-07-22T06:04:57.768Z",
     "latestDataDate": "2026-07-22",
     "currentDate": "2026-07-22",
-    "eventCount": 1401,
+    "eventCount": 1400,
     "quarantinedEventCount": 13
   },
   "entity": {
@@ -41,7 +41,7 @@
       "EV-467d1a701d21327d",
       "EV-b4f69c41e23c7ce0",
       "EV-11b2293769081d4c",
-      "EV-ff77876694ab8395",
+      "EV-883d3b5f6d30eb48",
       "EV-cafe435ddd007821",
       "EV-ed388875bc004add",
       "EV-bc9abd502c002102",
@@ -249,7 +249,7 @@
       "deployments": [
         "EV-b4f69c41e23c7ce0",
         "EV-11b2293769081d4c",
-        "EV-ff77876694ab8395",
+        "EV-883d3b5f6d30eb48",
         "EV-cafe435ddd007821",
         "EV-ed388875bc004add",
         "EV-bc9abd502c002102",
@@ -419,12 +419,12 @@
         ]
       },
       {
-        "id": "EV-ff77876694ab8395",
+        "id": "EV-883d3b5f6d30eb48",
         "dataDate": "2026-07-22",
         "date": "2026-07-21",
-        "eventType": "deployment",
-        "eventTypeLabel": "部署",
-        "eventGroup": "部署与案例",
+        "eventType": "hardware_deployment",
+        "eventTypeLabel": "硬件部署",
+        "eventGroup": "AI 硬件",
         "status": "announced",
         "statusLabel": "已公布",
         "title": "102.4Tbps：英伟达 Spectrum-6 交换系统落地全球超大规模 AI 工厂",
@@ -438,7 +438,8 @@
         ],
         "entityIds": [
           "EN-8d4321d936320802",
-          "EN-9fbf261b62c1d7c0"
+          "EN-9fbf261b62c1d7c0",
+          "EN-6fcba5d96a4fadfd"
         ]
       },
       {
@@ -3842,8 +3843,8 @@
         "EV-88f4ee8cd57bdf42",
         "EV-44a4e92c03a31ab1",
         "EV-7585b033d4005977",
+        "EV-883d3b5f6d30eb48",
         "EV-fa66f00e9d4b20c2",
-        "EV-ff77876694ab8395",
         "EV-4fba2b2f1ac10a79",
         "EV-bcb74b02448b7d78",
         "EV-47a16db069ed320e",
@@ -5774,7 +5775,7 @@
         "EV-59882383f82f215d",
         "EV-a84ec4216d3ded6d",
         "EV-b4f69c41e23c7ce0",
-        "EV-ff77876694ab8395",
+        "EV-883d3b5f6d30eb48",
         "EV-cafe435ddd007821",
         "EV-ff1f6119de13fa19",
         "EV-4dd25589d834060d",
@@ -5818,6 +5819,7 @@
         "EN-7706c3c94d5f9b59",
         "EN-01839aa42da88393",
         "EN-9fbf261b62c1d7c0",
+        "EN-6fcba5d96a4fadfd",
         "EN-59ae856cd788d0f5",
         "EN-0f3360879e746531",
         "EN-80d387ccb3289295",
@@ -5863,10 +5865,10 @@
         "EN-6c7575a43005188a"
       ],
       "fdeIds": [
-        "FDE-ab9846c6cdc82a26",
         "FDE-9f64e1521dd2dea0"
       ],
       "hardwareIds": [
+        "HW-c57ff6e49b40d839",
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2025-12-02",
@@ -7242,48 +7244,6 @@
   ],
   "fde": [
     {
-      "id": "FDE-ab9846c6cdc82a26",
-      "eventId": "EV-ff77876694ab8395",
-      "dataDate": "2026-07-22",
-      "date": "2026-07-21",
-      "title": "102.4Tbps：英伟达 Spectrum-6 交换系统落地全球超大规模 AI 工厂",
-      "stage": "announced",
-      "stageLabel": "已公布",
-      "customer": "NVIDIA",
-      "vendor": "未披露",
-      "industry": "未披露",
-      "useCase": "全球超大规模 AI 工厂",
-      "reportedNeed": "未披露",
-      "deliveryComponents": [
-        "英伟达表示 CoreWeave、Microsoft 和 Nebius 将率先部署基于 Vera Rubin、并结合 Spectrum-6 的基础设施，以扩展开发者、初创公司和企业对该平台的访问。",
-        "CoreWeave 产品网络总监 Min Jun 表示，Spectrum-6 和液冷的 Spectrum-X Ethernet 基础设施将帮助其提供训练前沿模型和更快部署推理所需的带宽、韧性和效率。"
-      ],
-      "outcomes": [],
-      "metrics": [
-        "102.4Tb",
-        "102.4Tb"
-      ],
-      "undisclosedFields": [
-        "vendor",
-        "industry",
-        "workflow_before",
-        "workflow_after",
-        "delivery_model",
-        "team_composition",
-        "reported_need",
-        "systems_integrated",
-        "data_requirements",
-        "governance_controls",
-        "reported_outcomes"
-      ],
-      "tags": [],
-      "sourceUrl": "https://ithome.com/0/979/791.htm",
-      "entityIds": [
-        "EN-8d4321d936320802",
-        "EN-9fbf261b62c1d7c0"
-      ]
-    },
-    {
       "id": "FDE-1b1197864e953ff1",
       "eventId": "EV-36d484148fbd3424",
       "dataDate": "2026-07-04",
@@ -7602,34 +7562,63 @@
   ],
   "hardware": [
     {
-      "id": "HW-0ebffabe51a60966",
-      "eventId": "EV-303b418c63895ba6",
-      "dataDate": "2026-07-16",
-      "date": "2026-07-16",
-      "title": "NVIDIA 推出新款 Jetson Thor 计算机，推动主流机器人与边缘 AI 发展",
-      "hardwareType": "gpu",
-      "eventType": "hardware_product",
-      "eventTypeLabel": "硬件产品",
-      "computeLayer": "edge",
-      "supplier": "NVIDIA",
+      "id": "HW-c57ff6e49b40d839",
+      "eventId": "EV-883d3b5f6d30eb48",
+      "dataDate": "2026-07-22",
+      "date": "2026-07-21",
+      "title": "102.4Tbps：英伟达 Spectrum-6 交换系统落地全球超大规模 AI 工厂",
+      "hardwareType": "networking",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "computeLayer": "未披露",
+      "supplier": "未披露",
       "customer": "未披露",
       "processNode": "未披露",
-      "capacity": 32,
-      "capacityUnit": "GB",
+      "capacity": 102.4,
+      "capacityUnit": "Tb",
       "site": "未披露",
       "region": "未披露",
       "contractValue": "未披露",
       "shipmentDate": "未披露",
       "tags": [],
-      "sourceUrl": "https://blogs.nvidia.com/blog/jetson-thor-robotics-edge-ai-agent",
-      "sourceName": "blogs.nvidia.com",
-      "sourceDate": "2026-07-16",
+      "sourceUrl": "https://ithome.com/0/979/791.htm",
+      "sourceName": "IT之家（RSS）",
+      "sourceDate": "2026-07-21",
       "entityIds": [
         "EN-8d4321d936320802",
-        "EN-cbc62794911ff31b",
-        "EN-a1b0d8a938903dc7",
-        "EN-fbe26af59be95e52",
-        "EN-2b119dc14de9478d"
+        "EN-9fbf261b62c1d7c0",
+        "EN-6fcba5d96a4fadfd"
+      ]
+    },
+    {
+      "id": "HW-7ac397b49d3cae6a",
+      "eventId": "EV-02b19ffbe883ee2e",
+      "dataDate": "2026-07-20",
+      "date": "2026-03-13",
+      "title": "WSJ：英伟达计划推出新款AI处理芯片，将进入下一发展阶段",
+      "hardwareType": "semiconductor",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "未披露",
+      "supplier": "NVIDIA",
+      "customer": "NVIDIA",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://finance.yahoo.com/news/nvidia-set-enter-next-phase-054624576.html",
+      "sourceName": "finance.yahoo.com",
+      "sourceDate": "2026-03-13",
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-7d3194f79e645c42",
+        "EN-683d8d597da71192",
+        "EN-9e72fd4472222231",
+        "EN-1e71d9c1a5c4de16"
       ]
     },
     {
@@ -7673,6 +7662,37 @@
         "EN-59ae856cd788d0f5",
         "EN-0f3360879e746531",
         "EN-80d387ccb3289295"
+      ]
+    },
+    {
+      "id": "HW-0ebffabe51a60966",
+      "eventId": "EV-303b418c63895ba6",
+      "dataDate": "2026-07-16",
+      "date": "2026-07-16",
+      "title": "NVIDIA 推出新款 Jetson Thor 计算机，推动主流机器人与边缘 AI 发展",
+      "hardwareType": "gpu",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "edge",
+      "supplier": "NVIDIA",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": 32,
+      "capacityUnit": "GB",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://blogs.nvidia.com/blog/jetson-thor-robotics-edge-ai-agent",
+      "sourceName": "blogs.nvidia.com",
+      "sourceDate": "2026-07-16",
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-cbc62794911ff31b",
+        "EN-a1b0d8a938903dc7",
+        "EN-fbe26af59be95e52",
+        "EN-2b119dc14de9478d"
       ]
     },
     {
@@ -7730,6 +7750,51 @@
         "EN-a48f75191ba3e484",
         "EN-8d4321d936320802",
         "EN-c73da23142d2205b"
+      ]
+    },
+    {
+      "id": "HW-25ce41fab12d9ef2",
+      "eventId": "EV-34929bdd016dc8d6",
+      "dataDate": "2026-07-13",
+      "date": "2025-03-18",
+      "title": "Supermicro 扩展企业级 AI 产品组合，新增超100款 GPU 优化系统，支持即将推出的 NVIDIA RTX PRO 6000 Blackwell 服务器版及 NVIDIA H200 NVL 平台",
+      "hardwareType": "gpu",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "edge",
+      "supplier": "NVIDIA",
+      "customer": "Supermicro",
+      "processNode": "未披露",
+      "capacity": 100,
+      "capacityUnit": "GPU",
+      "site": "未披露",
+      "region": "San Jose, California",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "fine_tuning",
+          "name": "模型微调"
+        }
+      ],
+      "sourceUrl": "https://supermicro.com/en/pressreleases/supermicro-expands-enterprise-ai-portfolio-over-100-gpu-optimized-systems-supporting?mlg=0",
+      "sourceName": "supermicro.com",
+      "sourceDate": "2025-03-18",
+      "entityIds": [
+        "EN-4a639cb888a15d75",
+        "EN-8d4321d936320802",
+        "EN-96eebba49dbbf422",
+        "EN-65b3aa2f527deeef",
+        "EN-a2413f7c5095f988",
+        "EN-c165c006a5968443"
       ]
     },
     {
@@ -7931,82 +7996,6 @@
       "sourceDate": "2026-06-22",
       "entityIds": [
         "EN-8d4321d936320802"
-      ]
-    },
-    {
-      "id": "HW-7ac397b49d3cae6a",
-      "eventId": "EV-02b19ffbe883ee2e",
-      "dataDate": "2026-07-20",
-      "date": "2026-03-13",
-      "title": "WSJ：英伟达计划推出新款AI处理芯片，将进入下一发展阶段",
-      "hardwareType": "semiconductor",
-      "eventType": "hardware_product",
-      "eventTypeLabel": "硬件产品",
-      "computeLayer": "未披露",
-      "supplier": "NVIDIA",
-      "customer": "NVIDIA",
-      "processNode": "未披露",
-      "capacity": "未披露",
-      "capacityUnit": "",
-      "site": "未披露",
-      "region": "未披露",
-      "contractValue": "未披露",
-      "shipmentDate": "未披露",
-      "tags": [],
-      "sourceUrl": "https://finance.yahoo.com/news/nvidia-set-enter-next-phase-054624576.html",
-      "sourceName": "finance.yahoo.com",
-      "sourceDate": "2026-03-13",
-      "entityIds": [
-        "EN-8d4321d936320802",
-        "EN-7d3194f79e645c42",
-        "EN-683d8d597da71192",
-        "EN-9e72fd4472222231",
-        "EN-1e71d9c1a5c4de16"
-      ]
-    },
-    {
-      "id": "HW-25ce41fab12d9ef2",
-      "eventId": "EV-34929bdd016dc8d6",
-      "dataDate": "2026-07-13",
-      "date": "2025-03-18",
-      "title": "Supermicro 扩展企业级 AI 产品组合，新增超100款 GPU 优化系统，支持即将推出的 NVIDIA RTX PRO 6000 Blackwell 服务器版及 NVIDIA H200 NVL 平台",
-      "hardwareType": "gpu",
-      "eventType": "hardware_product",
-      "eventTypeLabel": "硬件产品",
-      "computeLayer": "edge",
-      "supplier": "NVIDIA",
-      "customer": "Supermicro",
-      "processNode": "未披露",
-      "capacity": 100,
-      "capacityUnit": "GPU",
-      "site": "未披露",
-      "region": "San Jose, California",
-      "contractValue": "未披露",
-      "shipmentDate": "未披露",
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "fine_tuning",
-          "name": "模型微调"
-        }
-      ],
-      "sourceUrl": "https://supermicro.com/en/pressreleases/supermicro-expands-enterprise-ai-portfolio-over-100-gpu-optimized-systems-supporting?mlg=0",
-      "sourceName": "supermicro.com",
-      "sourceDate": "2025-03-18",
-      "entityIds": [
-        "EN-4a639cb888a15d75",
-        "EN-8d4321d936320802",
-        "EN-96eebba49dbbf422",
-        "EN-65b3aa2f527deeef",
-        "EN-a2413f7c5095f988",
-        "EN-c165c006a5968443"
       ]
     }
   ]

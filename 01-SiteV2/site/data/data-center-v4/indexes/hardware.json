@@ -4,49 +4,40 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-22T01:57:46.409Z",
+    "generatedAt": "2026-07-22T06:04:57.768Z",
     "latestDataDate": "2026-07-22",
     "currentDate": "2026-07-22",
-    "eventCount": 1401,
+    "eventCount": 1400,
     "quarantinedEventCount": 13
   },
   "hardware": [
     {
-      "id": "HW-7ae863dfba7ce9be",
-      "eventId": "EV-7e24db14146d39be",
+      "id": "HW-c57ff6e49b40d839",
+      "eventId": "EV-883d3b5f6d30eb48",
       "dataDate": "2026-07-22",
       "date": "2026-07-21",
-      "title": "谷歌 DeepMind 发布 GenCeption：基于阿里 Wan2.1，打破计算机视觉桎梏",
-      "hardwareType": "ai_device",
-      "eventType": "hardware_product",
-      "eventTypeLabel": "硬件产品",
-      "computeLayer": "GenCeption",
-      "supplier": "谷歌 DeepMind",
+      "title": "102.4Tbps：英伟达 Spectrum-6 交换系统落地全球超大规模 AI 工厂",
+      "hardwareType": "networking",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "computeLayer": "未披露",
+      "supplier": "未披露",
       "customer": "未披露",
       "processNode": "未披露",
-      "capacity": "未披露",
-      "capacityUnit": "",
+      "capacity": 102.4,
+      "capacityUnit": "Tb",
       "site": "未披露",
       "region": "未披露",
       "contractValue": "未披露",
       "shipmentDate": "未披露",
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "video_generation",
-          "name": "视频生成"
-        }
-      ],
-      "sourceUrl": "https://ithome.com/0/979/535.htm",
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/979/791.htm",
       "sourceName": "IT之家（RSS）",
       "sourceDate": "2026-07-21",
       "entityIds": [
-        "EN-2b6e51bec93e86c1",
-        "EN-c9e6168149dd7cf6",
-        "EN-047364b9be67f665",
-        "EN-4d09c69c19f5f67b",
-        "EN-92af3ce2fb97edf3"
+        "EN-8d4321d936320802",
+        "EN-9fbf261b62c1d7c0",
+        "EN-6fcba5d96a4fadfd"
       ]
     },
     {
@@ -75,6 +66,35 @@
       "entityIds": [
         "EN-9fbf261b62c1d7c0",
         "EN-bd52a4943ae83155"
+      ]
+    },
+    {
+      "id": "HW-fda4fe26e7e80468",
+      "eventId": "EV-7bc2e6744a92c81f",
+      "dataDate": "2026-07-21",
+      "date": "2026-07-20",
+      "title": "Together AI 与 Y Combinator 合作，为 YC 社区推出首个专用 GPU 集群",
+      "hardwareType": "gpu",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "未披露",
+      "supplier": "未披露",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://together.ai/blog/together-yc-gpu-cluster",
+      "sourceName": "together.ai",
+      "sourceDate": "2026-07-20",
+      "entityIds": [
+        "EN-3feb1417824fbc34",
+        "EN-1728124bda619b0f",
+        "EN-275b0f4a4023d91c"
       ]
     },
     {
@@ -132,35 +152,6 @@
       ]
     },
     {
-      "id": "HW-fda4fe26e7e80468",
-      "eventId": "EV-7bc2e6744a92c81f",
-      "dataDate": "2026-07-21",
-      "date": "2026-07-20",
-      "title": "Together AI 与 Y Combinator 合作，为 YC 社区推出首个专用 GPU 集群",
-      "hardwareType": "gpu",
-      "eventType": "hardware_product",
-      "eventTypeLabel": "硬件产品",
-      "computeLayer": "未披露",
-      "supplier": "未披露",
-      "customer": "未披露",
-      "processNode": "未披露",
-      "capacity": "未披露",
-      "capacityUnit": "",
-      "site": "未披露",
-      "region": "未披露",
-      "contractValue": "未披露",
-      "shipmentDate": "未披露",
-      "tags": [],
-      "sourceUrl": "https://together.ai/blog/together-yc-gpu-cluster",
-      "sourceName": "together.ai",
-      "sourceDate": "2026-07-20",
-      "entityIds": [
-        "EN-3feb1417824fbc34",
-        "EN-1728124bda619b0f",
-        "EN-275b0f4a4023d91c"
-      ]
-    },
-    {
       "id": "HW-f9f230d6eb357e0a",
       "eventId": "EV-218c2f6ecf3c369f",
       "dataDate": "2026-07-20",
@@ -187,6 +178,37 @@
         "EN-e95cf508b2bef361",
         "EN-4dbe391b8fcf977a",
         "EN-0b706b4b95ba647c"
+      ]
+    },
+    {
+      "id": "HW-7ac397b49d3cae6a",
+      "eventId": "EV-02b19ffbe883ee2e",
+      "dataDate": "2026-07-20",
+      "date": "2026-03-13",
+      "title": "WSJ：英伟达计划推出新款AI处理芯片，将进入下一发展阶段",
+      "hardwareType": "semiconductor",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "未披露",
+      "supplier": "NVIDIA",
+      "customer": "NVIDIA",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://finance.yahoo.com/news/nvidia-set-enter-next-phase-054624576.html",
+      "sourceName": "finance.yahoo.com",
+      "sourceDate": "2026-03-13",
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-7d3194f79e645c42",
+        "EN-683d8d597da71192",
+        "EN-9e72fd4472222231",
+        "EN-1e71d9c1a5c4de16"
       ]
     },
     {
@@ -280,6 +302,76 @@
       ]
     },
     {
+      "id": "HW-ceb55d9bc637c1d3",
+      "eventId": "EV-cafe435ddd007821",
+      "dataDate": "2026-07-18",
+      "date": "2026-07-16",
+      "title": "Nvidia 与日本推出全球首个国家级 AI 基础设施——Noetra 联盟将建设 140MW Rubin AI 工厂，配备 27,500 块 GPU",
+      "hardwareType": "gpu",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "computeLayer": "edge",
+      "supplier": "NVIDIA",
+      "customer": "Noetra",
+      "processNode": "未披露",
+      "capacity": 27500,
+      "capacityUnit": "GPUs",
+      "site": "Japan",
+      "region": "Japan",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        }
+      ],
+      "sourceUrl": "https://tomshardware.com/pc-components/gpus/nvidia-and-japans-noetra-consortium-to-build-140mw-rubin-ai-factory-with-27500-gpus",
+      "sourceName": "tomshardware.com",
+      "sourceDate": "2026-07-16",
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-59ae856cd788d0f5",
+        "EN-0f3360879e746531",
+        "EN-80d387ccb3289295"
+      ]
+    },
+    {
+      "id": "HW-4c176e4c40871adc",
+      "eventId": "EV-bca0d9aca07bcb4a",
+      "dataDate": "2026-07-17",
+      "date": "2026-07-16",
+      "title": "TYLsemi 携 4300 万美元走出隐身模式，重塑 AI 芯片供应链",
+      "hardwareType": "semiconductor",
+      "eventType": "hardware_supply",
+      "eventTypeLabel": "硬件供应",
+      "computeLayer": "未披露",
+      "supplier": "TYLsemi",
+      "customer": "TYLsemi",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "2026-07-16",
+      "tags": [],
+      "sourceUrl": "https://startupfortune.com/tylsemi-emerges-from-stealth-with-43-million-to-rebuild-ai-chip-supply-chains",
+      "sourceName": "startupfortune.com",
+      "sourceDate": "2026-07-16",
+      "entityIds": [
+        "EN-cf9488537f777c1a"
+      ]
+    },
+    {
       "id": "HW-0ebffabe51a60966",
       "eventId": "EV-303b418c63895ba6",
       "dataDate": "2026-07-16",
@@ -344,76 +436,6 @@
         "EN-820a72d1d4b51ae7",
         "EN-7d3194f79e645c42",
         "EN-74692028630429c7"
-      ]
-    },
-    {
-      "id": "HW-4c176e4c40871adc",
-      "eventId": "EV-bca0d9aca07bcb4a",
-      "dataDate": "2026-07-17",
-      "date": "2026-07-16",
-      "title": "TYLsemi 携 4300 万美元走出隐身模式，重塑 AI 芯片供应链",
-      "hardwareType": "semiconductor",
-      "eventType": "hardware_supply",
-      "eventTypeLabel": "硬件供应",
-      "computeLayer": "未披露",
-      "supplier": "TYLsemi",
-      "customer": "TYLsemi",
-      "processNode": "未披露",
-      "capacity": "未披露",
-      "capacityUnit": "",
-      "site": "未披露",
-      "region": "未披露",
-      "contractValue": "未披露",
-      "shipmentDate": "2026-07-16",
-      "tags": [],
-      "sourceUrl": "https://startupfortune.com/tylsemi-emerges-from-stealth-with-43-million-to-rebuild-ai-chip-supply-chains",
-      "sourceName": "startupfortune.com",
-      "sourceDate": "2026-07-16",
-      "entityIds": [
-        "EN-cf9488537f777c1a"
-      ]
-    },
-    {
-      "id": "HW-ceb55d9bc637c1d3",
-      "eventId": "EV-cafe435ddd007821",
-      "dataDate": "2026-07-18",
-      "date": "2026-07-16",
-      "title": "Nvidia 与日本推出全球首个国家级 AI 基础设施——Noetra 联盟将建设 140MW Rubin AI 工厂，配备 27,500 块 GPU",
-      "hardwareType": "gpu",
-      "eventType": "hardware_deployment",
-      "eventTypeLabel": "硬件部署",
-      "computeLayer": "edge",
-      "supplier": "NVIDIA",
-      "customer": "Noetra",
-      "processNode": "未披露",
-      "capacity": 27500,
-      "capacityUnit": "GPUs",
-      "site": "Japan",
-      "region": "Japan",
-      "contractValue": "未披露",
-      "shipmentDate": "未披露",
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "multimodal",
-          "name": "多模态"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "embodied_ai",
-          "name": "具身智能"
-        }
-      ],
-      "sourceUrl": "https://tomshardware.com/pc-components/gpus/nvidia-and-japans-noetra-consortium-to-build-140mw-rubin-ai-factory-with-27500-gpus",
-      "sourceName": "tomshardware.com",
-      "sourceDate": "2026-07-16",
-      "entityIds": [
-        "EN-8d4321d936320802",
-        "EN-59ae856cd788d0f5",
-        "EN-0f3360879e746531",
-        "EN-80d387ccb3289295"
       ]
     },
     {
@@ -508,6 +530,62 @@
       ]
     },
     {
+      "id": "HW-122f041ab84fcfdf",
+      "eventId": "EV-fd693f4b2195b20e",
+      "dataDate": "2026-07-15",
+      "date": "2026-07-08",
+      "title": "韩国芯片初创公司FuriosaAI进军欧洲数据中心",
+      "hardwareType": "ai_accelerator",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "computeLayer": "未披露",
+      "supplier": "FuriosaAI",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://theregister.com/ai-and-ml/2026/07/07/south-korean-chip-startup-furiosaai-invades-european-datacenters/5267884",
+      "sourceName": "theregister.com",
+      "sourceDate": "2026-07-08",
+      "entityIds": [
+        "EN-f4bec299df3f4f27"
+      ]
+    },
+    {
+      "id": "HW-ecc6755da7bbbbcd",
+      "eventId": "EV-f1912ab7c46288f3",
+      "dataDate": "2026-07-14",
+      "date": "2025-09-26",
+      "title": "FuriosaAI 推出面向数据中心规模推理的 NXT RNGD 服务器 - DCD",
+      "hardwareType": "gpu",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "data_center",
+      "supplier": "FuriosaAI",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://datacenterdynamics.com/en/news/furiosaai-launches-nxt-rngd-server-for-data-center-scale-inferencing",
+      "sourceName": "datacenterdynamics.com",
+      "sourceDate": "2025-09-26",
+      "entityIds": [
+        "EN-f4bec299df3f4f27",
+        "EN-5f5fcd8701ab30c0",
+        "EN-977d20414b3b8be9"
+      ]
+    },
+    {
       "id": "HW-b70d73630b7c3a4b",
       "eventId": "EV-47d14d0aa4d4414e",
       "dataDate": "2026-07-13",
@@ -534,6 +612,78 @@
         "EN-a48f75191ba3e484",
         "EN-8d4321d936320802",
         "EN-c73da23142d2205b"
+      ]
+    },
+    {
+      "id": "HW-5201a846489d2bb0",
+      "eventId": "EV-392fb231bfc623b6",
+      "dataDate": "2026-07-13",
+      "date": "2026-07-07",
+      "title": "FuriosaAI 在 Equinix 里斯本数据中心部署 RNGD，扩展欧洲 AI 基础设施",
+      "hardwareType": "server",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "computeLayer": "data_center",
+      "supplier": "FuriosaAI",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://furiosa.ai/blog/furiosaai-equinixs-lisbon-data-center-press-release",
+      "sourceName": "furiosa.ai",
+      "sourceDate": "2026-07-07",
+      "entityIds": [
+        "EN-f4bec299df3f4f27"
+      ]
+    },
+    {
+      "id": "HW-25ce41fab12d9ef2",
+      "eventId": "EV-34929bdd016dc8d6",
+      "dataDate": "2026-07-13",
+      "date": "2025-03-18",
+      "title": "Supermicro 扩展企业级 AI 产品组合，新增超100款 GPU 优化系统，支持即将推出的 NVIDIA RTX PRO 6000 Blackwell 服务器版及 NVIDIA H200 NVL 平台",
+      "hardwareType": "gpu",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "edge",
+      "supplier": "NVIDIA",
+      "customer": "Supermicro",
+      "processNode": "未披露",
+      "capacity": 100,
+      "capacityUnit": "GPU",
+      "site": "未披露",
+      "region": "San Jose, California",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "fine_tuning",
+          "name": "模型微调"
+        }
+      ],
+      "sourceUrl": "https://supermicro.com/en/pressreleases/supermicro-expands-enterprise-ai-portfolio-over-100-gpu-optimized-systems-supporting?mlg=0",
+      "sourceName": "supermicro.com",
+      "sourceDate": "2025-03-18",
+      "entityIds": [
+        "EN-4a639cb888a15d75",
+        "EN-8d4321d936320802",
+        "EN-96eebba49dbbf422",
+        "EN-65b3aa2f527deeef",
+        "EN-a2413f7c5095f988",
+        "EN-c165c006a5968443"
       ]
     },
     {
@@ -624,33 +774,6 @@
       ]
     },
     {
-      "id": "HW-122f041ab84fcfdf",
-      "eventId": "EV-fd693f4b2195b20e",
-      "dataDate": "2026-07-15",
-      "date": "2026-07-08",
-      "title": "韩国芯片初创公司FuriosaAI进军欧洲数据中心",
-      "hardwareType": "ai_accelerator",
-      "eventType": "hardware_deployment",
-      "eventTypeLabel": "硬件部署",
-      "computeLayer": "未披露",
-      "supplier": "FuriosaAI",
-      "customer": "未披露",
-      "processNode": "未披露",
-      "capacity": "未披露",
-      "capacityUnit": "",
-      "site": "未披露",
-      "region": "未披露",
-      "contractValue": "未披露",
-      "shipmentDate": "未披露",
-      "tags": [],
-      "sourceUrl": "https://theregister.com/ai-and-ml/2026/07/07/south-korean-chip-startup-furiosaai-invades-european-datacenters/5267884",
-      "sourceName": "theregister.com",
-      "sourceDate": "2026-07-08",
-      "entityIds": [
-        "EN-f4bec299df3f4f27"
-      ]
-    },
-    {
       "id": "HW-23634b09baa414b2",
       "eventId": "EV-b862692915ae70bb",
       "dataDate": "2026-07-07",
@@ -676,33 +799,6 @@
       "entityIds": [
         "EN-9fbf261b62c1d7c0",
         "EN-38945a66b4806b11"
-      ]
-    },
-    {
-      "id": "HW-5201a846489d2bb0",
-      "eventId": "EV-392fb231bfc623b6",
-      "dataDate": "2026-07-13",
-      "date": "2026-07-07",
-      "title": "FuriosaAI 在 Equinix 里斯本数据中心部署 RNGD，扩展欧洲 AI 基础设施",
-      "hardwareType": "server",
-      "eventType": "hardware_deployment",
-      "eventTypeLabel": "硬件部署",
-      "computeLayer": "data_center",
-      "supplier": "FuriosaAI",
-      "customer": "未披露",
-      "processNode": "未披露",
-      "capacity": "未披露",
-      "capacityUnit": "",
-      "site": "未披露",
-      "region": "未披露",
-      "contractValue": "未披露",
-      "shipmentDate": "未披露",
-      "tags": [],
-      "sourceUrl": "https://furiosa.ai/blog/furiosaai-equinixs-lisbon-data-center-press-release",
-      "sourceName": "furiosa.ai",
-      "sourceDate": "2026-07-07",
-      "entityIds": [
-        "EN-f4bec299df3f4f27"
       ]
     },
     {
@@ -791,6 +887,33 @@
       ]
     },
     {
+      "id": "HW-b32e61f6ea5c1646",
+      "eventId": "EV-9191a8bbd547a28e",
+      "dataDate": "2026-06-29",
+      "date": "2026-06-09",
+      "title": "Akamas 推出面向 GPU 效率的 AI 基础设施优化方案",
+      "hardwareType": "gpu",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "computeLayer": "data_center",
+      "supplier": "Akamas",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://akamas.io/akamas-ai-infrastructure-optimization-launch",
+      "sourceName": "akamas.io",
+      "sourceDate": "2026-06-09",
+      "entityIds": [
+        "EN-b9e93f925b8d42c8"
+      ]
+    },
+    {
       "id": "HW-1bb09b8ce9378df8",
       "eventId": "EV-31782f0824ae1db1",
       "dataDate": "2026-06-28",
@@ -817,6 +940,35 @@
         "EN-7d3194f79e645c42",
         "EN-e78bdebae031095b",
         "EN-8d4321d936320802",
+        "EN-373ac021a2c0bb2c"
+      ]
+    },
+    {
+      "id": "HW-e44b241c78bbbd26",
+      "eventId": "EV-37cdd2fae39aaa2e",
+      "dataDate": "2026-06-27",
+      "date": "2026-06-24",
+      "title": "OpenAI 发布首款 AI 处理器：Jalapeño",
+      "hardwareType": "semiconductor",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "未披露",
+      "supplier": "未披露",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://theverge.com/ai-artificial-intelligence/955939/openai-reveals-its-first-ai-processor-jalapeno",
+      "sourceName": "The Verge AI",
+      "sourceDate": "2026-06-24",
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-96eebba49dbbf422",
         "EN-373ac021a2c0bb2c"
       ]
     },
@@ -875,35 +1027,6 @@
         "EN-7d3194f79e645c42",
         "EN-373ac021a2c0bb2c",
         "EN-96eebba49dbbf422"
-      ]
-    },
-    {
-      "id": "HW-e44b241c78bbbd26",
-      "eventId": "EV-37cdd2fae39aaa2e",
-      "dataDate": "2026-06-27",
-      "date": "2026-06-24",
-      "title": "OpenAI 发布首款 AI 处理器：Jalapeño",
-      "hardwareType": "semiconductor",
-      "eventType": "hardware_product",
-      "eventTypeLabel": "硬件产品",
-      "computeLayer": "未披露",
-      "supplier": "未披露",
-      "customer": "未披露",
-      "processNode": "未披露",
-      "capacity": "未披露",
-      "capacityUnit": "",
-      "site": "未披露",
-      "region": "未披露",
-      "contractValue": "未披露",
-      "shipmentDate": "未披露",
-      "tags": [],
-      "sourceUrl": "https://theverge.com/ai-artificial-intelligence/955939/openai-reveals-its-first-ai-processor-jalapeno",
-      "sourceName": "The Verge AI",
-      "sourceDate": "2026-06-24",
-      "entityIds": [
-        "EN-7d3194f79e645c42",
-        "EN-96eebba49dbbf422",
-        "EN-373ac021a2c0bb2c"
       ]
     },
     {
@@ -992,33 +1115,6 @@
       ]
     },
     {
-      "id": "HW-3a31dd1b372dc4f2",
-      "eventId": "EV-79c3f4f7cb2f2c86",
-      "dataDate": "2026-06-22",
-      "date": "2026-06-22",
-      "title": "英伟达自夸 AI 服务器 100% 液冷散热：能在 45°C 冷却液中运行，比洗澡水还热",
-      "hardwareType": "semiconductor",
-      "eventType": "hardware_deployment",
-      "eventTypeLabel": "硬件部署",
-      "computeLayer": "未披露",
-      "supplier": "NVIDIA",
-      "customer": "未披露",
-      "processNode": "未披露",
-      "capacity": "未披露",
-      "capacityUnit": "",
-      "site": "未披露",
-      "region": "未披露",
-      "contractValue": "未披露",
-      "shipmentDate": "未披露",
-      "tags": [],
-      "sourceUrl": "https://ithome.com/0/966/887.htm",
-      "sourceName": "IT之家（RSS）",
-      "sourceDate": "2026-06-22",
-      "entityIds": [
-        "EN-8d4321d936320802"
-      ]
-    },
-    {
       "id": "HW-94ca08e08e6e52fe",
       "eventId": "EV-3f23ddb47fc652a4",
       "dataDate": "2026-06-23",
@@ -1086,6 +1182,33 @@
       "entityIds": [
         "EN-30081094f2a8c83d",
         "EN-d558e1de958b9d05"
+      ]
+    },
+    {
+      "id": "HW-3a31dd1b372dc4f2",
+      "eventId": "EV-79c3f4f7cb2f2c86",
+      "dataDate": "2026-06-22",
+      "date": "2026-06-22",
+      "title": "英伟达自夸 AI 服务器 100% 液冷散热：能在 45°C 冷却液中运行，比洗澡水还热",
+      "hardwareType": "semiconductor",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "computeLayer": "未披露",
+      "supplier": "NVIDIA",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/966/887.htm",
+      "sourceName": "IT之家（RSS）",
+      "sourceDate": "2026-06-22",
+      "entityIds": [
+        "EN-8d4321d936320802"
       ]
     },
     {
@@ -1210,33 +1333,6 @@
       ]
     },
     {
-      "id": "HW-b32e61f6ea5c1646",
-      "eventId": "EV-9191a8bbd547a28e",
-      "dataDate": "2026-06-29",
-      "date": "2026-06-09",
-      "title": "Akamas 推出面向 GPU 效率的 AI 基础设施优化方案",
-      "hardwareType": "gpu",
-      "eventType": "hardware_deployment",
-      "eventTypeLabel": "硬件部署",
-      "computeLayer": "data_center",
-      "supplier": "Akamas",
-      "customer": "未披露",
-      "processNode": "未披露",
-      "capacity": "未披露",
-      "capacityUnit": "",
-      "site": "未披露",
-      "region": "未披露",
-      "contractValue": "未披露",
-      "shipmentDate": "未披露",
-      "tags": [],
-      "sourceUrl": "https://akamas.io/akamas-ai-infrastructure-optimization-launch",
-      "sourceName": "akamas.io",
-      "sourceDate": "2026-06-09",
-      "entityIds": [
-        "EN-b9e93f925b8d42c8"
-      ]
-    },
-    {
       "id": "HW-9d84fd7aa512dddd",
       "eventId": "EV-43301de739fe560e",
       "dataDate": "2026-06-05",
@@ -1263,111 +1359,6 @@
         "EN-090e5412541f063f",
         "EN-ea3bd73e2b506e00",
         "EN-6fcba5d96a4fadfd"
-      ]
-    },
-    {
-      "id": "HW-7ac397b49d3cae6a",
-      "eventId": "EV-02b19ffbe883ee2e",
-      "dataDate": "2026-07-20",
-      "date": "2026-03-13",
-      "title": "WSJ：英伟达计划推出新款AI处理芯片，将进入下一发展阶段",
-      "hardwareType": "semiconductor",
-      "eventType": "hardware_product",
-      "eventTypeLabel": "硬件产品",
-      "computeLayer": "未披露",
-      "supplier": "NVIDIA",
-      "customer": "NVIDIA",
-      "processNode": "未披露",
-      "capacity": "未披露",
-      "capacityUnit": "",
-      "site": "未披露",
-      "region": "未披露",
-      "contractValue": "未披露",
-      "shipmentDate": "未披露",
-      "tags": [],
-      "sourceUrl": "https://finance.yahoo.com/news/nvidia-set-enter-next-phase-054624576.html",
-      "sourceName": "finance.yahoo.com",
-      "sourceDate": "2026-03-13",
-      "entityIds": [
-        "EN-8d4321d936320802",
-        "EN-7d3194f79e645c42",
-        "EN-683d8d597da71192",
-        "EN-9e72fd4472222231",
-        "EN-1e71d9c1a5c4de16"
-      ]
-    },
-    {
-      "id": "HW-ecc6755da7bbbbcd",
-      "eventId": "EV-f1912ab7c46288f3",
-      "dataDate": "2026-07-14",
-      "date": "2025-09-26",
-      "title": "FuriosaAI 推出面向数据中心规模推理的 NXT RNGD 服务器 - DCD",
-      "hardwareType": "gpu",
-      "eventType": "hardware_product",
-      "eventTypeLabel": "硬件产品",
-      "computeLayer": "data_center",
-      "supplier": "FuriosaAI",
-      "customer": "未披露",
-      "processNode": "未披露",
-      "capacity": "未披露",
-      "capacityUnit": "",
-      "site": "未披露",
-      "region": "未披露",
-      "contractValue": "未披露",
-      "shipmentDate": "未披露",
-      "tags": [],
-      "sourceUrl": "https://datacenterdynamics.com/en/news/furiosaai-launches-nxt-rngd-server-for-data-center-scale-inferencing",
-      "sourceName": "datacenterdynamics.com",
-      "sourceDate": "2025-09-26",
-      "entityIds": [
-        "EN-f4bec299df3f4f27",
-        "EN-5f5fcd8701ab30c0",
-        "EN-977d20414b3b8be9"
-      ]
-    },
-    {
-      "id": "HW-25ce41fab12d9ef2",
-      "eventId": "EV-34929bdd016dc8d6",
-      "dataDate": "2026-07-13",
-      "date": "2025-03-18",
-      "title": "Supermicro 扩展企业级 AI 产品组合，新增超100款 GPU 优化系统，支持即将推出的 NVIDIA RTX PRO 6000 Blackwell 服务器版及 NVIDIA H200 NVL 平台",
-      "hardwareType": "gpu",
-      "eventType": "hardware_product",
-      "eventTypeLabel": "硬件产品",
-      "computeLayer": "edge",
-      "supplier": "NVIDIA",
-      "customer": "Supermicro",
-      "processNode": "未披露",
-      "capacity": 100,
-      "capacityUnit": "GPU",
-      "site": "未披露",
-      "region": "San Jose, California",
-      "contractValue": "未披露",
-      "shipmentDate": "未披露",
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "fine_tuning",
-          "name": "模型微调"
-        }
-      ],
-      "sourceUrl": "https://supermicro.com/en/pressreleases/supermicro-expands-enterprise-ai-portfolio-over-100-gpu-optimized-systems-supporting?mlg=0",
-      "sourceName": "supermicro.com",
-      "sourceDate": "2025-03-18",
-      "entityIds": [
-        "EN-4a639cb888a15d75",
-        "EN-8d4321d936320802",
-        "EN-96eebba49dbbf422",
-        "EN-65b3aa2f527deeef",
-        "EN-a2413f7c5095f988",
-        "EN-c165c006a5968443"
       ]
     }
   ]

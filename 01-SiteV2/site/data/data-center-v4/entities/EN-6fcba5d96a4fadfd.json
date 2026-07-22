@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-22T01:57:46.409Z",
+    "generatedAt": "2026-07-22T06:04:57.768Z",
     "latestDataDate": "2026-07-22",
     "currentDate": "2026-07-22",
-    "eventCount": 1401,
+    "eventCount": 1400,
     "quarantinedEventCount": 13
   },
   "entity": {
@@ -15,9 +15,7 @@
     "name": "xAI",
     "entityType": "organization_candidate",
     "typeLabel": "公司与机构",
-    "aliases": [
-      "Grok"
-    ],
+    "aliases": [],
     "verificationStatus": "verified",
     "datasetScopes": [
       "canonical"
@@ -28,6 +26,7 @@
       "EV-5d581d112fdbd464",
       "EV-201b25d4f3cf696a",
       "EV-31df816db86db282",
+      "EV-883d3b5f6d30eb48",
       "EV-e15ae1112294d59e",
       "EV-43301de739fe560e",
       "EV-2351415291cb9fcd",
@@ -50,20 +49,19 @@
     "viewpointIds": [],
     "classificationRefs": [
       "TX-technology-agentic_execution",
+      "TX-industry-manufacturing",
       "TX-technology-code_generation",
       "TX-use_case-robotics_automation",
       "TX-use_case-software_development",
       "TX-technology-tool_use"
     ],
     "relatedEntityIds": [
-      "EN-bac541b589c8a0d1",
-      "EN-c4bc2d00a42f220f"
+      "EN-bac541b589c8a0d1"
     ],
     "firstSeen": "2026-05-25",
-    "lastSeen": "2026-07-19",
+    "lastSeen": "2026-07-22",
     "relationIds": [
-      "REL2-fe33f6bf65f6dfab",
-      "REL2-e0b4c492d7f56ad2"
+      "REL2-fe33f6bf65f6dfab"
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
@@ -74,6 +72,7 @@
         "EV-31df816db86db282"
       ],
       "deployments": [
+        "EV-883d3b5f6d30eb48",
         "EV-e15ae1112294d59e",
         "EV-43301de739fe560e"
       ],
@@ -103,6 +102,30 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-883d3b5f6d30eb48",
+        "dataDate": "2026-07-22",
+        "date": "2026-07-21",
+        "eventType": "hardware_deployment",
+        "eventTypeLabel": "硬件部署",
+        "eventGroup": "AI 硬件",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "102.4Tbps：英伟达 Spectrum-6 交换系统落地全球超大规模 AI 工厂",
+        "displayTags": [
+          {
+            "dimensionId": "industry",
+            "id": "manufacturing",
+            "dimensionName": "行业",
+            "name": "制造业"
+          }
+        ],
+        "entityIds": [
+          "EN-8d4321d936320802",
+          "EN-9fbf261b62c1d7c0",
+          "EN-6fcba5d96a4fadfd"
+        ]
+      },
       {
         "id": "EV-2351415291cb9fcd",
         "dataDate": "2026-07-19",
@@ -632,31 +655,6 @@
       ],
       "firstSeen": "2026-07-18",
       "lastSeen": "2026-07-19"
-    },
-    {
-      "id": "EN-c4bc2d00a42f220f",
-      "name": "Grok Build",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-d53cd33e8f541a65"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-code_generation",
-        "TX-use_case-software_development",
-        "TX-technology-tool_use"
-      ],
-      "relatedEntityIds": [
-        "EN-6fcba5d96a4fadfd"
-      ],
-      "firstSeen": "2026-05-25",
-      "lastSeen": "2026-07-17"
     }
   ],
   "relationships": [
@@ -679,32 +677,6 @@
         "SA-5e076b3303d1b0cc"
       ],
       "data_date": "2026-07-19",
-      "status": "verified"
-    },
-    {
-      "relationship_id": "REL2-e0b4c492d7f56ad2",
-      "relationship_version": "RELATION-V2.0",
-      "subject_ref": "EN-6fcba5d96a4fadfd",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-c4bc2d00a42f220f",
-      "object_type": "entity",
-      "event_id": "EV-d53cd33e8f541a65",
-      "claim_refs": [
-        "CL-66990e99d6c6046f",
-        "CL-8dea0880a232aacb",
-        "CL-8f0816ffc6ddc924",
-        "CL-2253a0c5e5c24ff0",
-        "CL-fffcc4be39cd4ff6",
-        "CL-c4c367a0b5ff3421",
-        "CL-aecc349eae5fb79f",
-        "CL-54c7c187771e7610"
-      ],
-      "source_refs": [
-        "SA-0edcc134c1576e9a",
-        "SA-ab14f44044faafd5"
-      ],
-      "data_date": "2026-07-17",
       "status": "verified"
     }
   ],
@@ -1535,6 +1507,121 @@
       "lastSeen": "2026-07-22"
     },
     {
+      "id": "TX-industry-manufacturing",
+      "name": "制造业",
+      "nodeType": "industry",
+      "typeLabel": "行业",
+      "valueId": "manufacturing",
+      "eventIds": [
+        "EV-f6a72cddbda748b3",
+        "EV-9300044a58395552",
+        "EV-80e54c9a390da293",
+        "EV-aa33ca051f3a7f78",
+        "EV-010946e35d35bb43",
+        "EV-467d1a701d21327d",
+        "EV-59882383f82f215d",
+        "EV-a84ec4216d3ded6d",
+        "EV-b4f69c41e23c7ce0",
+        "EV-883d3b5f6d30eb48",
+        "EV-cafe435ddd007821",
+        "EV-ff1f6119de13fa19",
+        "EV-4dd25589d834060d",
+        "EV-7263caa45bbf168e",
+        "EV-e4fec8a00b416d12",
+        "EV-5b16886442234f81",
+        "EV-3d8608d3e78e031b",
+        "EV-39848cdd62c00e59",
+        "EV-4faa2bcf2e42e60c",
+        "EV-9ee3c0ec243b6129",
+        "EV-a37b9d9fb85e460f",
+        "EV-19bcfc6d7c1612cb",
+        "EV-941ba9ebdc43f20c",
+        "EV-6b51b1b6fe22c540",
+        "EV-5f718c76c285ac9b",
+        "EV-625904809a9b14b8",
+        "EV-309ea4fc27a66485",
+        "EV-66b510b948ad4ba4",
+        "EV-6ce6b9c9780b97d9",
+        "EV-dd62847548bb6ae3",
+        "EV-8993e021ac17df4a",
+        "EV-08f736f61f2b46f3",
+        "EV-946569cccbd9222f",
+        "EV-2c7d13d234147817"
+      ],
+      "entityIds": [
+        "EN-a5d2ae286d0d9e45",
+        "EN-96eebba49dbbf422",
+        "EN-7106dbc04a08ce3a",
+        "EN-3ccbd9105a45d8fc",
+        "EN-8d4321d936320802",
+        "EN-c70eca6b0f88f44d",
+        "EN-1bd14cd1a58c5708",
+        "EN-7d3194f79e645c42",
+        "EN-b9b0702726f5be1c",
+        "EN-cd35ca6b5c3cf23c",
+        "EN-ea3bd73e2b506e00",
+        "EN-883be863cc6562bb",
+        "EN-968e2d5b08687bf4",
+        "EN-ee04228c5c6d8b08",
+        "EN-7706c3c94d5f9b59",
+        "EN-01839aa42da88393",
+        "EN-9fbf261b62c1d7c0",
+        "EN-6fcba5d96a4fadfd",
+        "EN-59ae856cd788d0f5",
+        "EN-0f3360879e746531",
+        "EN-80d387ccb3289295",
+        "EN-be972f28adbc6e84",
+        "EN-bbdefa2950f49882",
+        "EN-2fc9fff8ab7f35aa",
+        "EN-8efebac68a48c369",
+        "EN-16fd849ce27f115b",
+        "EN-f5791343a13abc71",
+        "EN-956b7280912ef1cc",
+        "EN-18ada5002dd89e01",
+        "EN-222f930b87524636",
+        "EN-72138e570e5103e2",
+        "EN-aa75c47729b4a292",
+        "EN-8147e6fed86d42c1",
+        "EN-51188f73e8dfbfee",
+        "EN-3bc9f78028bc2dba",
+        "EN-50e756052d0a9ac3",
+        "EN-2abf8289b2f2113f",
+        "EN-91901356a63794df",
+        "EN-954dc5d6516f127c",
+        "EN-e07654c7cc29acbd",
+        "EN-e3b1bf3dab957ffe",
+        "EN-cf9488537f777c1a",
+        "EN-38f4d27a18084522",
+        "EN-94c93b5ab886f2d9",
+        "EN-d7aba0f660c463d8",
+        "EN-e58ee91f1d57df05",
+        "EN-3fd1b8ed094cd712",
+        "EN-8f451ae7730ddb67",
+        "EN-ce635c4eabff5e4f",
+        "EN-ab9e3beebd83960d",
+        "EN-61cce404a45c3545",
+        "EN-2a920347dfcf07a7",
+        "EN-2dc010636b9dce91",
+        "EN-23b979df49741c93",
+        "EN-4a639cb888a15d75",
+        "EN-56ee86045cfb0ddd",
+        "EN-9dde0c2d375060f6",
+        "EN-cbc62794911ff31b",
+        "EN-a614180064f7ef60",
+        "EN-3a7bd3e2360a3d29",
+        "EN-6c7575a43005188a"
+      ],
+      "fdeIds": [
+        "FDE-9f64e1521dd2dea0"
+      ],
+      "hardwareIds": [
+        "HW-c57ff6e49b40d839",
+        "HW-ceb55d9bc637c1d3"
+      ],
+      "firstSeen": "2025-12-02",
+      "lastSeen": "2026-07-22"
+    },
+    {
       "id": "TX-technology-code_generation",
       "name": "代码生成",
       "nodeType": "technology",
@@ -1940,6 +2027,35 @@
   ],
   "fde": [],
   "hardware": [
+    {
+      "id": "HW-c57ff6e49b40d839",
+      "eventId": "EV-883d3b5f6d30eb48",
+      "dataDate": "2026-07-22",
+      "date": "2026-07-21",
+      "title": "102.4Tbps：英伟达 Spectrum-6 交换系统落地全球超大规模 AI 工厂",
+      "hardwareType": "networking",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "computeLayer": "未披露",
+      "supplier": "未披露",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": 102.4,
+      "capacityUnit": "Tb",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/979/791.htm",
+      "sourceName": "IT之家（RSS）",
+      "sourceDate": "2026-07-21",
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-9fbf261b62c1d7c0",
+        "EN-6fcba5d96a4fadfd"
+      ]
+    },
     {
       "id": "HW-9d84fd7aa512dddd",
       "eventId": "EV-43301de739fe560e",

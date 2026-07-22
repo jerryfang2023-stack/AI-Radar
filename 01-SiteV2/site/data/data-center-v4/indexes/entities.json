@@ -4,27 +4,27 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-22T01:57:46.409Z",
+    "generatedAt": "2026-07-22T06:04:57.768Z",
     "latestDataDate": "2026-07-22",
     "currentDate": "2026-07-22",
-    "eventCount": 1401,
+    "eventCount": 1400,
     "quarantinedEventCount": 13,
     "entityHistory": {
       "entityVersion": "ENTITY-V1.0",
       "relationshipVersion": "RELATION-V2.0",
-      "generatedAt": "2026-07-22T01:57:46.376Z",
+      "generatedAt": "2026-07-22T06:04:57.624Z",
       "coverage": {
         "startDate": "2017-09-07",
         "endDate": "2026-07-22",
         "distinctDataDays": 60
       },
       "counts": {
-        "entities": 1364,
-        "organizations": 812,
+        "entities": 1363,
+        "organizations": 811,
         "products": 521,
         "people": 31,
         "taxonomyNodes": 43,
-        "relationships": 290
+        "relationships": 289
       },
       "review": {
         "reviewed": 510,
@@ -585,7 +585,7 @@
         "EV-2a833330267cb2df",
         "EV-0d5a32aca724d30e",
         "EV-1a241bcb4fad886c",
-        "EV-7e24db14146d39be",
+        "EV-6654f62015eff8e3",
         "EV-8b67e7ac8e61cc1e",
         "EV-989631c550d89726",
         "EV-94ad4a217508e6e0",
@@ -2187,7 +2187,7 @@
         "EV-a7e1ecd212474e00",
         "EV-d961d3ad02f6ae14",
         "EV-59229486408edb05",
-        "EV-7e24db14146d39be",
+        "EV-6654f62015eff8e3",
         "EV-7c6a9f4ee4829976",
         "EV-93c6ccf23cc422cb",
         "EV-5babb43f4b4d302f",
@@ -2213,7 +2213,7 @@
       ],
       "relationIds": [
         "REL2-284835caff7e4288",
-        "REL2-be46d44f8ee661d3",
+        "REL2-3ebed8c60e163231",
         "REL2-1bac7c6922a7a98b",
         "REL2-5c5311c5417a4717",
         "REL2-10447b957e7da57c"
@@ -2811,8 +2811,8 @@
         "EV-88f4ee8cd57bdf42",
         "EV-44a4e92c03a31ab1",
         "EV-7585b033d4005977",
+        "EV-883d3b5f6d30eb48",
         "EV-fa66f00e9d4b20c2",
-        "EV-ff77876694ab8395",
         "EV-4fba2b2f1ac10a79",
         "EV-bcb74b02448b7d78",
         "EV-47a16db069ed320e",
@@ -3252,7 +3252,7 @@
         "EV-467d1a701d21327d",
         "EV-b4f69c41e23c7ce0",
         "EV-11b2293769081d4c",
-        "EV-ff77876694ab8395",
+        "EV-883d3b5f6d30eb48",
         "EV-cafe435ddd007821",
         "EV-ed388875bc004add",
         "EV-bc9abd502c002102",
@@ -4959,15 +4959,13 @@
       "id": "EN-6fcba5d96a4fadfd",
       "name": "xAI",
       "sourceType": "organization_candidate",
-      "aliases": [
-        "Grok"
-      ],
+      "aliases": [],
       "tags": [
         "智能体",
+        "制造业",
         "代码生成",
         "机器人与物理自动化",
-        "软件开发",
-        "工具调用"
+        "软件开发"
       ],
       "eventIds": [
         "EV-3daefecd0453631a",
@@ -4975,6 +4973,7 @@
         "EV-5d581d112fdbd464",
         "EV-201b25d4f3cf696a",
         "EV-31df816db86db282",
+        "EV-883d3b5f6d30eb48",
         "EV-e15ae1112294d59e",
         "EV-43301de739fe560e",
         "EV-2351415291cb9fcd",
@@ -4995,19 +4994,16 @@
         "EV-4beb890f0879aeaf"
       ],
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-07-19",
+      "lastSeen": "2026-07-22",
       "relatedEntityIds": [
-        "EN-bac541b589c8a0d1",
-        "EN-c4bc2d00a42f220f"
+        "EN-bac541b589c8a0d1"
       ],
       "relationIds": [
-        "REL2-fe33f6bf65f6dfab",
-        "REL2-e0b4c492d7f56ad2"
+        "REL2-fe33f6bf65f6dfab"
       ],
       "type": "公司/机构",
       "productIds": [
-        "EN-bac541b589c8a0d1",
-        "EN-c4bc2d00a42f220f"
+        "EN-bac541b589c8a0d1"
       ]
     },
     {
@@ -11483,7 +11479,7 @@
         "视频生成"
       ],
       "eventIds": [
-        "EV-7e24db14146d39be"
+        "EV-6654f62015eff8e3"
       ],
       "firstSeen": "2026-07-21",
       "lastSeen": "2026-07-22",
@@ -11491,7 +11487,7 @@
         "EN-2b6e51bec93e86c1"
       ],
       "relationIds": [
-        "REL2-be46d44f8ee661d3"
+        "REL2-3ebed8c60e163231"
       ],
       "legacyIds": [
         "PD-258bf816df7a51"
@@ -11502,7 +11498,7 @@
       "companyNames": [
         "Google DeepMind"
       ],
-      "type": "AI 硬件"
+      "type": "产品/服务"
     },
     {
       "id": "EN-65ef4539bbcbe9fc",
@@ -12126,21 +12122,13 @@
       ],
       "firstSeen": "2026-05-25",
       "lastSeen": "2026-07-17",
-      "relatedEntityIds": [
-        "EN-6fcba5d96a4fadfd"
-      ],
-      "relationIds": [
-        "REL2-e0b4c492d7f56ad2"
-      ],
+      "relatedEntityIds": [],
+      "relationIds": [],
       "legacyIds": [
         "PD-f898fce382ca4a"
       ],
-      "companyIds": [
-        "EN-6fcba5d96a4fadfd"
-      ],
-      "companyNames": [
-        "xAI"
-      ],
+      "companyIds": [],
+      "companyNames": [],
       "type": "产品/服务"
     },
     {
@@ -19003,8 +18991,6 @@
       "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
       "organization": "",
       "viewpointIds": [
-        "https://simonwillison.net/2026/Jul/21/nativ/#atom-everything",
-        "https://simonwillison.net/2026/Jul/21/cat-and-thariq/#atom-everything",
         "https://simonwillison.net/2026/Jul/20/cheap-reverse-engineering/#atom-everything",
         "https://simonwillison.net/2026/Jul/20/afraid-of-chinese-models/#atom-everything",
         "https://simonwillison.net/2026/Jul/20/sam-altman/#atom-everything",
@@ -20798,7 +20784,7 @@
       "eventIds": [
         "EV-a354af52772334fd",
         "EV-26d2874c6ce028d6",
-        "EV-7e24db14146d39be",
+        "EV-6654f62015eff8e3",
         "EV-6fbbbfcdcec81df4",
         "EV-fd8ecce5de2f667d",
         "EV-5babb43f4b4d302f",
@@ -20829,9 +20815,7 @@
         "EN-4f96127fdacbb405"
       ],
       "fdeIds": [],
-      "hardwareIds": [
-        "HW-7ae863dfba7ce9be"
-      ],
+      "hardwareIds": [],
       "firstSeen": "2026-06-16",
       "lastSeen": "2026-07-22"
     },
@@ -21349,7 +21333,7 @@
         "EV-59882383f82f215d",
         "EV-a84ec4216d3ded6d",
         "EV-b4f69c41e23c7ce0",
-        "EV-ff77876694ab8395",
+        "EV-883d3b5f6d30eb48",
         "EV-cafe435ddd007821",
         "EV-ff1f6119de13fa19",
         "EV-4dd25589d834060d",
@@ -21393,6 +21377,7 @@
         "EN-7706c3c94d5f9b59",
         "EN-01839aa42da88393",
         "EN-9fbf261b62c1d7c0",
+        "EN-6fcba5d96a4fadfd",
         "EN-59ae856cd788d0f5",
         "EN-0f3360879e746531",
         "EN-80d387ccb3289295",
@@ -21438,10 +21423,10 @@
         "EN-6c7575a43005188a"
       ],
       "fdeIds": [
-        "FDE-ab9846c6cdc82a26",
         "FDE-9f64e1521dd2dea0"
       ],
       "hardwareIds": [
+        "HW-c57ff6e49b40d839",
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2025-12-02",

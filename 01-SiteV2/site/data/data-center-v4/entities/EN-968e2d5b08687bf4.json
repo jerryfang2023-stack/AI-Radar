@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-22T01:57:46.409Z",
+    "generatedAt": "2026-07-22T06:04:57.768Z",
     "latestDataDate": "2026-07-22",
     "currentDate": "2026-07-22",
-    "eventCount": 1401,
+    "eventCount": 1400,
     "quarantinedEventCount": 13
   },
   "entity": {
@@ -1783,7 +1783,7 @@
         "EV-59882383f82f215d",
         "EV-a84ec4216d3ded6d",
         "EV-b4f69c41e23c7ce0",
-        "EV-ff77876694ab8395",
+        "EV-883d3b5f6d30eb48",
         "EV-cafe435ddd007821",
         "EV-ff1f6119de13fa19",
         "EV-4dd25589d834060d",
@@ -1827,6 +1827,7 @@
         "EN-7706c3c94d5f9b59",
         "EN-01839aa42da88393",
         "EN-9fbf261b62c1d7c0",
+        "EN-6fcba5d96a4fadfd",
         "EN-59ae856cd788d0f5",
         "EN-0f3360879e746531",
         "EN-80d387ccb3289295",
@@ -1872,10 +1873,10 @@
         "EN-6c7575a43005188a"
       ],
       "fdeIds": [
-        "FDE-ab9846c6cdc82a26",
         "FDE-9f64e1521dd2dea0"
       ],
       "hardwareIds": [
+        "HW-c57ff6e49b40d839",
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2025-12-02",
@@ -2069,41 +2070,6 @@
   ],
   "fde": [
     {
-      "id": "FDE-2dda1b977721f467",
-      "eventId": "EV-d209a6acecba4285",
-      "dataDate": "2026-06-22",
-      "date": "2026-06-22",
-      "title": "OpenAI 史上最大规模企业部署之一：三星向员工开放 ChatGPT 和 Codex",
-      "stage": "completed",
-      "stageLabel": "已完成",
-      "customer": "OpenAI",
-      "vendor": "OpenAI",
-      "industry": "电子",
-      "useCase": "之一：三星向员工开放 ChatGPT 和 Codex",
-      "reportedNeed": "提升员工生产力和解决问题的能力",
-      "deliveryComponents": [
-        "IT之家 6 月 22 日消息，OpenAI 于当地时间 6 月 21 日宣布，三星电子正在全球向员工部署 ChatGPT Enterprise 和 Codex ，加速公司 AI 的采用。",
-        "这是 OpenAI 迄今为止最大规模的企业部署之一 。"
-      ],
-      "outcomes": [
-        "三星电子计划在工作中使用 ChatGPT 和 Codex，涵盖软件开发、市场营销、产品开发和制造等广泛职能，以提升员工生产力和解决问题的能力。"
-      ],
-      "metrics": [],
-      "undisclosedFields": [
-        "workflow_before",
-        "workflow_after",
-        "data_requirements",
-        "governance_controls"
-      ],
-      "tags": [],
-      "sourceUrl": "https://ithome.com/0/966/876.htm",
-      "entityIds": [
-        "EN-7c3482959a6cdd3f",
-        "EN-7d3194f79e645c42",
-        "EN-968e2d5b08687bf4"
-      ]
-    },
-    {
       "id": "FDE-8f63ee695a479d40",
       "eventId": "EV-538adc98d1da8fda",
       "dataDate": "2026-06-23",
@@ -2140,6 +2106,41 @@
         "EN-3a63fb227a4df26d",
         "EN-968e2d5b08687bf4",
         "EN-7d3194f79e645c42"
+      ]
+    },
+    {
+      "id": "FDE-2dda1b977721f467",
+      "eventId": "EV-d209a6acecba4285",
+      "dataDate": "2026-06-22",
+      "date": "2026-06-22",
+      "title": "OpenAI 史上最大规模企业部署之一：三星向员工开放 ChatGPT 和 Codex",
+      "stage": "completed",
+      "stageLabel": "已完成",
+      "customer": "OpenAI",
+      "vendor": "OpenAI",
+      "industry": "电子",
+      "useCase": "之一：三星向员工开放 ChatGPT 和 Codex",
+      "reportedNeed": "提升员工生产力和解决问题的能力",
+      "deliveryComponents": [
+        "IT之家 6 月 22 日消息，OpenAI 于当地时间 6 月 21 日宣布，三星电子正在全球向员工部署 ChatGPT Enterprise 和 Codex ，加速公司 AI 的采用。",
+        "这是 OpenAI 迄今为止最大规模的企业部署之一 。"
+      ],
+      "outcomes": [
+        "三星电子计划在工作中使用 ChatGPT 和 Codex，涵盖软件开发、市场营销、产品开发和制造等广泛职能，以提升员工生产力和解决问题的能力。"
+      ],
+      "metrics": [],
+      "undisclosedFields": [
+        "workflow_before",
+        "workflow_after",
+        "data_requirements",
+        "governance_controls"
+      ],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/966/876.htm",
+      "entityIds": [
+        "EN-7c3482959a6cdd3f",
+        "EN-7d3194f79e645c42",
+        "EN-968e2d5b08687bf4"
       ]
     }
   ],

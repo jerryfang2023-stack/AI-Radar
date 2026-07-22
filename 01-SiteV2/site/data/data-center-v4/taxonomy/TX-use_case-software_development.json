@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-22T01:57:46.409Z",
+    "generatedAt": "2026-07-22T06:04:57.768Z",
     "latestDataDate": "2026-07-22",
     "currentDate": "2026-07-22",
-    "eventCount": 1401,
+    "eventCount": 1400,
     "quarantinedEventCount": 13
   },
   "node": {
@@ -3537,8 +3537,8 @@
         "EV-88f4ee8cd57bdf42",
         "EV-44a4e92c03a31ab1",
         "EV-7585b033d4005977",
+        "EV-883d3b5f6d30eb48",
         "EV-fa66f00e9d4b20c2",
-        "EV-ff77876694ab8395",
         "EV-4fba2b2f1ac10a79",
         "EV-bcb74b02448b7d78",
         "EV-47a16db069ed320e",
@@ -4840,7 +4840,7 @@
         "EV-a7e1ecd212474e00",
         "EV-d961d3ad02f6ae14",
         "EV-59229486408edb05",
-        "EV-7e24db14146d39be",
+        "EV-6654f62015eff8e3",
         "EV-7c6a9f4ee4829976",
         "EV-93c6ccf23cc422cb",
         "EV-5babb43f4b4d302f",
@@ -4963,9 +4963,7 @@
       "name": "xAI",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "Grok"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -4976,6 +4974,7 @@
         "EV-5d581d112fdbd464",
         "EV-201b25d4f3cf696a",
         "EV-31df816db86db282",
+        "EV-883d3b5f6d30eb48",
         "EV-e15ae1112294d59e",
         "EV-43301de739fe560e",
         "EV-2351415291cb9fcd",
@@ -4998,17 +4997,17 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
         "TX-technology-code_generation",
         "TX-use_case-robotics_automation",
         "TX-use_case-software_development",
         "TX-technology-tool_use"
       ],
       "relatedEntityIds": [
-        "EN-bac541b589c8a0d1",
-        "EN-c4bc2d00a42f220f"
+        "EN-bac541b589c8a0d1"
       ],
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-07-19"
+      "lastSeen": "2026-07-22"
     },
     {
       "id": "EN-630dc133336bc266",
@@ -5053,9 +5052,7 @@
         "TX-use_case-software_development",
         "TX-technology-tool_use"
       ],
-      "relatedEntityIds": [
-        "EN-6fcba5d96a4fadfd"
-      ],
+      "relatedEntityIds": [],
       "firstSeen": "2026-05-25",
       "lastSeen": "2026-07-17"
     },
@@ -5088,41 +5085,6 @@
     }
   ],
   "fde": [
-    {
-      "id": "FDE-2dda1b977721f467",
-      "eventId": "EV-d209a6acecba4285",
-      "dataDate": "2026-06-22",
-      "date": "2026-06-22",
-      "title": "OpenAI 史上最大规模企业部署之一：三星向员工开放 ChatGPT 和 Codex",
-      "stage": "completed",
-      "stageLabel": "已完成",
-      "customer": "OpenAI",
-      "vendor": "OpenAI",
-      "industry": "电子",
-      "useCase": "之一：三星向员工开放 ChatGPT 和 Codex",
-      "reportedNeed": "提升员工生产力和解决问题的能力",
-      "deliveryComponents": [
-        "IT之家 6 月 22 日消息，OpenAI 于当地时间 6 月 21 日宣布，三星电子正在全球向员工部署 ChatGPT Enterprise 和 Codex ，加速公司 AI 的采用。",
-        "这是 OpenAI 迄今为止最大规模的企业部署之一 。"
-      ],
-      "outcomes": [
-        "三星电子计划在工作中使用 ChatGPT 和 Codex，涵盖软件开发、市场营销、产品开发和制造等广泛职能，以提升员工生产力和解决问题的能力。"
-      ],
-      "metrics": [],
-      "undisclosedFields": [
-        "workflow_before",
-        "workflow_after",
-        "data_requirements",
-        "governance_controls"
-      ],
-      "tags": [],
-      "sourceUrl": "https://ithome.com/0/966/876.htm",
-      "entityIds": [
-        "EN-7c3482959a6cdd3f",
-        "EN-7d3194f79e645c42",
-        "EN-968e2d5b08687bf4"
-      ]
-    },
     {
       "id": "FDE-8d7df617732e7c45",
       "eventId": "EV-b2e374d54b10b9af",
@@ -5166,6 +5128,41 @@
         "EN-f9ae78c09ff308f9",
         "EN-ce635c4eabff5e4f",
         "EN-9fbf261b62c1d7c0"
+      ]
+    },
+    {
+      "id": "FDE-2dda1b977721f467",
+      "eventId": "EV-d209a6acecba4285",
+      "dataDate": "2026-06-22",
+      "date": "2026-06-22",
+      "title": "OpenAI 史上最大规模企业部署之一：三星向员工开放 ChatGPT 和 Codex",
+      "stage": "completed",
+      "stageLabel": "已完成",
+      "customer": "OpenAI",
+      "vendor": "OpenAI",
+      "industry": "电子",
+      "useCase": "之一：三星向员工开放 ChatGPT 和 Codex",
+      "reportedNeed": "提升员工生产力和解决问题的能力",
+      "deliveryComponents": [
+        "IT之家 6 月 22 日消息，OpenAI 于当地时间 6 月 21 日宣布，三星电子正在全球向员工部署 ChatGPT Enterprise 和 Codex ，加速公司 AI 的采用。",
+        "这是 OpenAI 迄今为止最大规模的企业部署之一 。"
+      ],
+      "outcomes": [
+        "三星电子计划在工作中使用 ChatGPT 和 Codex，涵盖软件开发、市场营销、产品开发和制造等广泛职能，以提升员工生产力和解决问题的能力。"
+      ],
+      "metrics": [],
+      "undisclosedFields": [
+        "workflow_before",
+        "workflow_after",
+        "data_requirements",
+        "governance_controls"
+      ],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/966/876.htm",
+      "entityIds": [
+        "EN-7c3482959a6cdd3f",
+        "EN-7d3194f79e645c42",
+        "EN-968e2d5b08687bf4"
       ]
     }
   ],
