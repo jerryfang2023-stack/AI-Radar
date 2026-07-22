@@ -6,7 +6,7 @@
     "eventVersion": "EVENT-V1.1",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-22T01:57:51.331Z",
+    "generatedAt": "2026-07-22T06:05:04.008Z",
     "latestDataDate": "2026-07-22",
     "timezone": "Asia/Shanghai",
     "dateBasis": "dataDate",
@@ -30,9 +30,9 @@
       "hardware": "AI 硬件"
     },
     "sourceCounts": {
-      "events": 1383,
+      "events": 1382,
       "entities": 685,
-      "relationships": 286
+      "relationships": 285
     }
   },
   "events": {
@@ -10716,6 +10716,48 @@
       "metricDisclosed": false,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-11b2293769081d4c"
     },
+    "EV-883d3b5f6d30eb48": {
+      "id": "EV-883d3b5f6d30eb48",
+      "dataDate": "2026-07-22",
+      "occurrenceDate": "2026-07-21",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "publicationStatus": "verified",
+      "category": "hardware",
+      "title": "102.4Tbps：英伟达 Spectrum-6 交换系统落地全球超大规模 AI 工厂",
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-9fbf261b62c1d7c0",
+        "EN-6fcba5d96a4fadfd"
+      ],
+      "entityNames": [
+        "NVIDIA",
+        "Microsoft",
+        "xAI"
+      ],
+      "productNames": [],
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "id": "manufacturing",
+          "dimensionName": "行业",
+          "name": "制造业"
+        }
+      ],
+      "claimIds": [
+        "CL-c80c299b76e69c6d",
+        "CL-b7e06ca49fdc2a8b",
+        "CL-7a4abd8638aada43",
+        "CL-55d30e871200e336"
+      ],
+      "sourceIds": [
+        "SA-7a66eebf4085fd08"
+      ],
+      "sourceUrl": "https://ithome.com/0/979/791.htm",
+      "publisher": "IT之家（RSS）",
+      "metricDisclosed": true,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-883d3b5f6d30eb48"
+    },
     "EV-95acc01f9b9a08ab": {
       "id": "EV-95acc01f9b9a08ab",
       "dataDate": "2026-07-22",
@@ -10830,46 +10872,6 @@
       "publisher": "The Decoder AI News",
       "metricDisclosed": false,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-fa66f00e9d4b20c2"
-    },
-    "EV-ff77876694ab8395": {
-      "id": "EV-ff77876694ab8395",
-      "dataDate": "2026-07-22",
-      "occurrenceDate": "2026-07-21",
-      "eventType": "deployment",
-      "eventTypeLabel": "部署",
-      "publicationStatus": "verified",
-      "category": "deployment",
-      "title": "102.4Tbps：英伟达 Spectrum-6 交换系统落地全球超大规模 AI 工厂",
-      "entityIds": [
-        "EN-8d4321d936320802",
-        "EN-9fbf261b62c1d7c0"
-      ],
-      "entityNames": [
-        "NVIDIA",
-        "Microsoft"
-      ],
-      "productNames": [],
-      "classifications": [
-        {
-          "dimensionId": "industry",
-          "id": "manufacturing",
-          "dimensionName": "行业",
-          "name": "制造业"
-        }
-      ],
-      "claimIds": [
-        "CL-c80c299b76e69c6d",
-        "CL-b7e06ca49fdc2a8b",
-        "CL-747e56272b004b6c",
-        "CL-e781357363fc092b"
-      ],
-      "sourceIds": [
-        "SA-7a66eebf4085fd08"
-      ],
-      "sourceUrl": "https://ithome.com/0/979/791.htm",
-      "publisher": "IT之家（RSS）",
-      "metricDisclosed": true,
-      "detailUrl": "data-center.html?view=events&detail=event&id=EV-ff77876694ab8395"
     },
     "EV-4fba2b2f1ac10a79": {
       "id": "EV-4fba2b2f1ac10a79",
@@ -14457,35 +14459,6 @@
       "publisher": "IT之家（RSS）",
       "metricDisclosed": false,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-33717672cb5e8004"
-    },
-    "EV-9e79f8d37a89e3b7": {
-      "id": "EV-9e79f8d37a89e3b7",
-      "dataDate": "2026-07-22",
-      "occurrenceDate": "2026-06-12",
-      "eventType": "deployment",
-      "eventTypeLabel": "部署",
-      "publicationStatus": "verified",
-      "category": "deployment",
-      "title": "问答：AWS 风格的前线部署工程师",
-      "entityIds": [],
-      "entityNames": [
-        "Q&A"
-      ],
-      "productNames": [],
-      "classifications": [],
-      "claimIds": [
-        "CL-f7166f7c64f61669",
-        "CL-e74c12de07f52741",
-        "CL-a687809064bd4624",
-        "CL-b2b0d1b27524673d"
-      ],
-      "sourceIds": [
-        "SA-802a64ea75ad708b"
-      ],
-      "sourceUrl": "https://computerworld.com/article/4184226/qa-a-look-at-forward-deployed-engineers-aws-style.html",
-      "publisher": "computerworld.com",
-      "metricDisclosed": false,
-      "detailUrl": "data-center.html?view=events&detail=event&id=EV-9e79f8d37a89e3b7"
     },
     "EV-97fdf068afbbe555": {
       "id": "EV-97fdf068afbbe555",
@@ -20010,14 +19983,14 @@
       "metricDisclosed": false,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-5aaa4c6697606274"
     },
-    "EV-7e24db14146d39be": {
-      "id": "EV-7e24db14146d39be",
+    "EV-6654f62015eff8e3": {
+      "id": "EV-6654f62015eff8e3",
       "dataDate": "2026-07-22",
       "occurrenceDate": "2026-07-21",
-      "eventType": "hardware_product",
-      "eventTypeLabel": "硬件产品",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
       "publicationStatus": "verified",
-      "category": "hardware",
+      "category": "product",
       "title": "谷歌 DeepMind 发布 GenCeption：基于阿里 Wan2.1，打破计算机视觉桎梏",
       "entityIds": [
         "EN-2b6e51bec93e86c1",
@@ -20028,20 +20001,20 @@
         "Google DeepMind",
         "谷歌 DeepMind",
         "Alibaba",
-        "DeepMind",
-        "GenCeption"
+        "GenCeption",
+        "DeepMind"
       ],
       "productNames": [
         {
-          "name": "DeepMind",
-          "type": "AI 硬件",
+          "name": "GenCeption",
+          "type": "产品/服务",
           "ownerNames": [
             "Google DeepMind"
           ]
         },
         {
-          "name": "GenCeption",
-          "type": "AI 硬件",
+          "name": "DeepMind",
+          "type": "产品/服务",
           "ownerNames": [
             "Google DeepMind"
           ]
@@ -20067,7 +20040,7 @@
       "sourceUrl": "https://ithome.com/0/979/535.htm",
       "publisher": "IT之家（RSS）",
       "metricDisclosed": false,
-      "detailUrl": "data-center.html?view=events&detail=event&id=EV-7e24db14146d39be"
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-6654f62015eff8e3"
     },
     "EV-8121a1ecdf168d8a": {
       "id": "EV-8121a1ecdf168d8a",
@@ -63952,9 +63925,9 @@
           "key": "2026-07-22",
           "counts": {
             "financing": 4,
-            "deployment": 5,
+            "deployment": 3,
             "partnership": 2,
-            "product": 32,
+            "product": 33,
             "hardware": 3
           },
           "eventIds": [
@@ -63978,20 +63951,20 @@
             "EV-59229486408edb05",
             "EV-597b8257a97b3d02",
             "EV-5aaa4c6697606274",
+            "EV-6654f62015eff8e3",
             "EV-6acfb15c012ddf6d",
             "EV-6ce069b1845f5a52",
             "EV-76a627509e283ebd",
             "EV-7c836c34e7cf36ee",
-            "EV-7e24db14146d39be",
             "EV-8121a1ecdf168d8a",
             "EV-834e65247c2d4a3b",
             "EV-8734f7217e78c861",
+            "EV-883d3b5f6d30eb48",
             "EV-91b44062c92837ee",
             "EV-938eebe85a688ff1",
             "EV-941ba9ebdc43f20c",
             "EV-95acc01f9b9a08ab",
             "EV-989631c550d89726",
-            "EV-9e79f8d37a89e3b7",
             "EV-a37b9d9fb85e460f",
             "EV-b4f69c41e23c7ce0",
             "EV-cb3a8846bc4f8aca",
@@ -64002,11 +63975,10 @@
             "EV-d8fc5fc40bccc0bc",
             "EV-dc3a5509a690a6b0",
             "EV-ef2cd6bd912a6ed8",
-            "EV-fa66f00e9d4b20c2",
-            "EV-ff77876694ab8395"
+            "EV-fa66f00e9d4b20c2"
           ],
           "otherCount": 7,
-          "totalAccepted": 53,
+          "totalAccepted": 52,
           "coverage": "数据中心于 2026-07-22 接受的事件；事件发生日期可能不同。"
         },
         "2026-07-21": {
@@ -66122,13 +66094,13 @@
           ],
           "counts": {
             "financing": 14,
-            "deployment": 12,
+            "deployment": 10,
             "partnership": 5,
-            "product": 60,
+            "product": 61,
             "hardware": 8
           },
-          "totalAccepted": 112,
-          "trackedCount": 99,
+          "totalAccepted": 111,
+          "trackedCount": 98,
           "otherCount": 13,
           "activeEntities": [
             {
@@ -66136,7 +66108,7 @@
               "eventIds": [
                 "EV-0d5a32aca724d30e",
                 "EV-1a241bcb4fad886c",
-                "EV-7e24db14146d39be",
+                "EV-6654f62015eff8e3",
                 "EV-989631c550d89726",
                 "EV-ef2cd6bd912a6ed8",
                 "EV-94ad4a217508e6e0",
@@ -66148,7 +66120,7 @@
                 "EV-c0f87b8c5208cd75",
                 "EV-d08935b06ed9e7bb"
               ],
-              "categoryCount": 4
+              "categoryCount": 3
             },
             {
               "entityId": "EN-8d4321d936320802",
@@ -66159,15 +66131,15 @@
                 "EV-3ba971c5939b0f04",
                 "EV-463cb26b5e03c7f7",
                 "EV-48977fd72d2fcfb8",
+                "EV-883d3b5f6d30eb48",
                 "EV-941ba9ebdc43f20c",
                 "EV-a37b9d9fb85e460f",
                 "EV-b4f69c41e23c7ce0",
                 "EV-cb3a8846bc4f8aca",
-                "EV-ff77876694ab8395",
                 "EV-02b19ffbe883ee2e",
                 "EV-625904809a9b14b8"
               ],
-              "categoryCount": 5
+              "categoryCount": 4
             },
             {
               "entityId": "EN-c70eca6b0f88f44d",
@@ -66215,9 +66187,9 @@
               "entityId": "EN-9fbf261b62c1d7c0",
               "eventIds": [
                 "EV-6acfb15c012ddf6d",
+                "EV-883d3b5f6d30eb48",
                 "EV-cd067fa6f39fe828",
                 "EV-fa66f00e9d4b20c2",
-                "EV-ff77876694ab8395",
                 "EV-4fba2b2f1ac10a79"
               ],
               "categoryCount": 4
@@ -66229,24 +66201,15 @@
                 "EV-bee410f8134cba5a"
               ],
               "categoryCount": 2
-            },
-            {
-              "entityId": "EN-2b6e51bec93e86c1",
-              "eventIds": [
-                "EV-59229486408edb05",
-                "EV-7e24db14146d39be"
-              ],
-              "categoryCount": 2
             }
           ],
           "deploymentEventIds": [
+            "EV-883d3b5f6d30eb48",
             "EV-95acc01f9b9a08ab",
-            "EV-9e79f8d37a89e3b7",
             "EV-b4f69c41e23c7ce0",
             "EV-d8fc5fc40bccc0bc",
             "EV-ef2cd6bd912a6ed8",
             "EV-fa66f00e9d4b20c2",
-            "EV-ff77876694ab8395",
             "EV-4fba2b2f1ac10a79",
             "EV-aa6f83d2515ee546",
             "EV-4740121f428e4bda",
@@ -66918,6 +66881,17 @@
               "eventId": "EV-5aaa4c6697606274"
             },
             {
+              "entityId": "EN-92af3ce2fb97edf3",
+              "classification": {
+                "dimensionId": "technology",
+                "dimensionName": "技术",
+                "id": "video_generation",
+                "name": "视频生成"
+              },
+              "dataDate": "2026-07-22",
+              "eventId": "EV-6654f62015eff8e3"
+            },
+            {
               "entityId": "EN-18f0900d6c487f59",
               "classification": {
                 "dimensionId": "technology",
@@ -66973,15 +66947,15 @@
               "eventId": "EV-7c836c34e7cf36ee"
             },
             {
-              "entityId": "EN-92af3ce2fb97edf3",
+              "entityId": "EN-6fcba5d96a4fadfd",
               "classification": {
-                "dimensionId": "technology",
-                "dimensionName": "技术",
-                "id": "video_generation",
-                "name": "视频生成"
+                "dimensionId": "industry",
+                "id": "manufacturing",
+                "dimensionName": "行业",
+                "name": "制造业"
               },
               "dataDate": "2026-07-22",
-              "eventId": "EV-7e24db14146d39be"
+              "eventId": "EV-883d3b5f6d30eb48"
             },
             {
               "entityId": "EN-87683d905745fb89",
@@ -83916,9 +83890,9 @@
           ],
           "counts": {
             "financing": 130,
-            "deployment": 60,
+            "deployment": 58,
             "partnership": 53,
-            "product": 351,
+            "product": 352,
             "hardware": 32
           },
           "previousMonth": "2026-06",
@@ -83959,13 +83933,13 @@
           },
           "deltas": {
             "financing": 19,
-            "deployment": 24,
+            "deployment": 22,
             "partnership": 26,
-            "product": 122,
+            "product": 123,
             "hardware": 25
           },
-          "totalAccepted": 713,
-          "trackedCount": 626,
+          "totalAccepted": 712,
+          "trackedCount": 625,
           "otherCount": 87,
           "newCompanies": [
             {
@@ -85779,7 +85753,7 @@
             {
               "entityId": "EN-92af3ce2fb97edf3",
               "eventIds": [
-                "EV-7e24db14146d39be"
+                "EV-6654f62015eff8e3"
               ]
             },
             {
@@ -86257,7 +86231,7 @@
                 "id": "video_generation",
                 "name": "视频生成",
                 "eventIds": [
-                  "EV-7e24db14146d39be",
+                  "EV-6654f62015eff8e3",
                   "EV-a354af52772334fd",
                   "EV-6fbbbfcdcec81df4",
                   "EV-fd8ecce5de2f667d",
@@ -86542,10 +86516,10 @@
                 "id": "manufacturing",
                 "name": "制造业",
                 "eventIds": [
+                  "EV-883d3b5f6d30eb48",
                   "EV-941ba9ebdc43f20c",
                   "EV-a37b9d9fb85e460f",
                   "EV-b4f69c41e23c7ce0",
-                  "EV-ff77876694ab8395",
                   "EV-625904809a9b14b8",
                   "EV-19bcfc6d7c1612cb",
                   "EV-e4fec8a00b416d12",
@@ -86682,13 +86656,12 @@
             ]
           },
           "deploymentEventIds": [
+            "EV-883d3b5f6d30eb48",
             "EV-95acc01f9b9a08ab",
-            "EV-9e79f8d37a89e3b7",
             "EV-b4f69c41e23c7ce0",
             "EV-d8fc5fc40bccc0bc",
             "EV-ef2cd6bd912a6ed8",
             "EV-fa66f00e9d4b20c2",
-            "EV-ff77876694ab8395",
             "EV-4fba2b2f1ac10a79",
             "EV-aa6f83d2515ee546",
             "EV-4740121f428e4bda",

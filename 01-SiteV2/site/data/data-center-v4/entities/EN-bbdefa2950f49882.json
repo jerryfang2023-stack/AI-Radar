@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-22T01:57:46.409Z",
+    "generatedAt": "2026-07-22T06:04:57.768Z",
     "latestDataDate": "2026-07-22",
     "currentDate": "2026-07-22",
-    "eventCount": 1401,
+    "eventCount": 1400,
     "quarantinedEventCount": 13
   },
   "entity": {
@@ -5876,7 +5876,7 @@
         "EV-59882383f82f215d",
         "EV-a84ec4216d3ded6d",
         "EV-b4f69c41e23c7ce0",
-        "EV-ff77876694ab8395",
+        "EV-883d3b5f6d30eb48",
         "EV-cafe435ddd007821",
         "EV-ff1f6119de13fa19",
         "EV-4dd25589d834060d",
@@ -5920,6 +5920,7 @@
         "EN-7706c3c94d5f9b59",
         "EN-01839aa42da88393",
         "EN-9fbf261b62c1d7c0",
+        "EN-6fcba5d96a4fadfd",
         "EN-59ae856cd788d0f5",
         "EN-0f3360879e746531",
         "EN-80d387ccb3289295",
@@ -5965,10 +5966,10 @@
         "EN-6c7575a43005188a"
       ],
       "fdeIds": [
-        "FDE-ab9846c6cdc82a26",
         "FDE-9f64e1521dd2dea0"
       ],
       "hardwareIds": [
+        "HW-c57ff6e49b40d839",
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2025-12-02",
@@ -6842,7 +6843,7 @@
       "eventIds": [
         "EV-a354af52772334fd",
         "EV-26d2874c6ce028d6",
-        "EV-7e24db14146d39be",
+        "EV-6654f62015eff8e3",
         "EV-6fbbbfcdcec81df4",
         "EV-fd8ecce5de2f667d",
         "EV-5babb43f4b4d302f",
@@ -6873,9 +6874,7 @@
         "EN-4f96127fdacbb405"
       ],
       "fdeIds": [],
-      "hardwareIds": [
-        "HW-7ae863dfba7ce9be"
-      ],
+      "hardwareIds": [],
       "firstSeen": "2026-06-16",
       "lastSeen": "2026-07-22"
     },
@@ -7357,6 +7356,50 @@
       ]
     },
     {
+      "id": "FDE-226f304c9cf13a74",
+      "eventId": "EV-029d34e296397775",
+      "dataDate": "2026-06-15",
+      "date": "2026-04-12",
+      "title": "谷歌A2A代理市场正式上线：首个自然语言代理发现平台",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Google",
+      "vendor": "Google",
+      "industry": "Technology",
+      "useCase": "The First Natural Language Agent Discovery Platform | AgentMarketCap",
+      "reportedNeed": "Enterprise teams need a low-friction path to discover, evaluate, and deploy third-party AI agents with standardized interoperability and procurement.",
+      "deliveryComponents": [
+        "Google Cloud just made it possible to shop for AI agents the same way you ask a question — in plain English. The new AI Agent Marketplace, integrated directly into Google Cloud Marketplace, lets enterprise teams discover, evaluate, and deploy third-party agents built on the Agent2Agent (A2A) protocol using Gemini-powered natural language search. It is the first major cloud marketplace where the discovery layer itself is agentic.",
+        "For the Google Cloud Agent Marketplace specifically, this means listed agents can leverage MCP for their internal tool integrations while exposing A2A interfaces for inter-agent collaboration. An enterprise team deploying a ServiceNow ITSM agent alongside an Elastic observability agent can orchestrate them through A2A without either agent needing to understand the other's internal MCP tool connections.",
+        "For enterprise teams evaluating agent procurement strategy, the practical recommendation is straightforward: if you are already on Google Cloud, the Agent Marketplace is now the lowest-friction path to deploying third-party agents. If you are multi-cloud, watch for equivalent marketplace offerings from AWS and Azure — both have A2A support, and both have existing marketplace infrastructure that could host similar agent directories."
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "sourceUrl": "https://agentmarketcap.ai/blog/2026/04/12/gemini-a2a-agent-marketplace-enterprise-discovery",
+      "entityIds": [
+        "EN-3aa7606e6aa345a3",
+        "EN-bbdefa2950f49882",
+        "EN-b5738c169b693bee"
+      ]
+    },
+    {
       "id": "FDE-27308b0a6cb2321a",
       "eventId": "EV-c0a65877001ed413",
       "dataDate": "2026-05-22",
@@ -7405,50 +7448,6 @@
         "EN-cbc62794911ff31b",
         "EN-bbdefa2950f49882",
         "EN-9fbf261b62c1d7c0"
-      ]
-    },
-    {
-      "id": "FDE-226f304c9cf13a74",
-      "eventId": "EV-029d34e296397775",
-      "dataDate": "2026-06-15",
-      "date": "2026-04-12",
-      "title": "谷歌A2A代理市场正式上线：首个自然语言代理发现平台",
-      "stage": "announced",
-      "stageLabel": "已公布",
-      "customer": "Google",
-      "vendor": "Google",
-      "industry": "Technology",
-      "useCase": "The First Natural Language Agent Discovery Platform | AgentMarketCap",
-      "reportedNeed": "Enterprise teams need a low-friction path to discover, evaluate, and deploy third-party AI agents with standardized interoperability and procurement.",
-      "deliveryComponents": [
-        "Google Cloud just made it possible to shop for AI agents the same way you ask a question — in plain English. The new AI Agent Marketplace, integrated directly into Google Cloud Marketplace, lets enterprise teams discover, evaluate, and deploy third-party agents built on the Agent2Agent (A2A) protocol using Gemini-powered natural language search. It is the first major cloud marketplace where the discovery layer itself is agentic.",
-        "For the Google Cloud Agent Marketplace specifically, this means listed agents can leverage MCP for their internal tool integrations while exposing A2A interfaces for inter-agent collaboration. An enterprise team deploying a ServiceNow ITSM agent alongside an Elastic observability agent can orchestrate them through A2A without either agent needing to understand the other's internal MCP tool connections.",
-        "For enterprise teams evaluating agent procurement strategy, the practical recommendation is straightforward: if you are already on Google Cloud, the Agent Marketplace is now the lowest-friction path to deploying third-party agents. If you are multi-cloud, watch for equivalent marketplace offerings from AWS and Azure — both have A2A support, and both have existing marketplace infrastructure that could host similar agent directories."
-      ],
-      "outcomes": [],
-      "metrics": [],
-      "undisclosedFields": [
-        "workflow_before",
-        "workflow_after",
-        "delivery_model",
-        "team_composition",
-        "data_requirements",
-        "governance_controls",
-        "reported_outcomes"
-      ],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        }
-      ],
-      "sourceUrl": "https://agentmarketcap.ai/blog/2026/04/12/gemini-a2a-agent-marketplace-enterprise-discovery",
-      "entityIds": [
-        "EN-3aa7606e6aa345a3",
-        "EN-bbdefa2950f49882",
-        "EN-b5738c169b693bee"
       ]
     }
   ],

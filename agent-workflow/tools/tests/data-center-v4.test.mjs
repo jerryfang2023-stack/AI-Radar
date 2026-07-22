@@ -215,6 +215,19 @@ test("guides and implementation explainers do not become deployment events", () 
   assert.equal(bundle.canonical_events.length, 0);
 });
 
+test("an FDE role interview does not become an enterprise implementation event", () => {
+  const bundle = buildBundle([
+    entry(
+      "fde-role-interview",
+      "Q&A: A look at forward-deployed engineers, AWS style",
+      "Hot AI companies are talking about forward-deployed engineers. The interview explains how teams deploy AI tools, work at customer sites, and integrate systems into enterprise workflows."
+    )
+  ], taxonomy, date, "2026-07-16T00:00:00.000Z");
+
+  assert.equal(bundle.canonical_events.length, 0);
+  assert.equal(bundle.fde_records.length, 0);
+});
+
 test("blocked, community, and launch-index sources do not become canonical events", () => {
   const bundle = buildBundle([
     entry("blocked-source", "Hugging Face Releases Experimental AI Agent for Computers", "Hugging Face released an experimental AI computer agent.", {
@@ -368,6 +381,36 @@ test("hardware projection requires a concrete hardware event", () => {
   assert.equal(bundle.hardware_records[0].hardware_event_type, "hardware_supply");
   assert.equal(bundle.hardware_records[0].capacity, 10000);
   assert.equal(bundle.hardware_records[0].capacity_unit.toLowerCase(), "gpus");
+});
+
+test("a computer vision model release does not become AI hardware", () => {
+  const bundle = buildBundle([
+    entry(
+      "computer-vision-model",
+      "Google DeepMind releases GenCeption for computer vision tasks",
+      "Google DeepMind released the GenCeption model for depth estimation and segmentation in computer vision. The team repurposed a pretrained video generation model as a visual analysis system.",
+      { title_zh: "Google DeepMind 发布 GenCeption 计算机视觉模型" }
+    )
+  ], taxonomy, date, "2026-07-16T00:00:00.000Z");
+
+  assert.notEqual(bundle.canonical_events[0].event_type, "hardware_product");
+  assert.equal(bundle.hardware_records.length, 0);
+});
+
+test("an AI factory network rollout becomes hardware instead of FDE", () => {
+  const bundle = buildBundle([
+    entry(
+      "spectrum-network-rollout",
+      "102.4Tbps：英伟达 Spectrum-6 交换系统落地全球超大规模 AI 工厂",
+      "102.4Tbps：英伟达 Spectrum-6 交换系统落地全球超大规模 AI 工厂。英伟达表示 CoreWeave、Microsoft 和 Nebius 将率先部署基于 Vera Rubin、并结合 Spectrum-6 的基础设施。Spectrum-6 和液冷的 Spectrum-X Ethernet 基础设施将提供训练模型和部署推理所需的带宽。",
+      { language: "zh" }
+    )
+  ], taxonomy, date, "2026-07-16T00:00:00.000Z");
+
+  assert.equal(bundle.canonical_events[0].event_type, "hardware_deployment");
+  assert.equal(bundle.hardware_records.length, 1);
+  assert.equal(bundle.hardware_records[0].component_type, "networking");
+  assert.equal(bundle.fde_records.length, 0);
 });
 
 test("a computer launch with explicit accelerator modules becomes a hardware product", () => {

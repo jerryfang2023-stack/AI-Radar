@@ -327,13 +327,35 @@ test("commercial events expose TAG-V4 technical tags and structured facets separ
 test("FDE and hardware projections preserve the daily batch date", () => {
   const data = buildFrontstageData(root);
   const publicEventIds = new Set(data.events.map((item) => item.id));
+  const currentMonth = data.meta.currentDate.slice(0, 7);
 
   assert.ok(data.fde.every((item) => /^\d{4}-\d{2}-\d{2}$/u.test(item.dataDate)));
   assert.ok(data.hardware.every((item) => /^\d{4}-\d{2}-\d{2}$/u.test(item.dataDate)));
   assert.ok(data.fde.every((item) => publicEventIds.has(item.eventId)));
   assert.ok(data.hardware.every((item) => publicEventIds.has(item.eventId)));
-  assert.ok(data.fde.some((item) => item.dataDate === data.meta.currentDate));
-  assert.ok(data.hardware.some((item) => item.dataDate === data.meta.currentDate));
+  assert.ok(data.fde.some((item) => item.dataDate.startsWith(`${currentMonth}-`)));
+  assert.ok(data.hardware.some((item) => item.dataDate.startsWith(`${currentMonth}-`)));
+});
+
+test("FDE and hardware projections prioritize newly collected records", () => {
+  const data = buildFrontstageData(root);
+
+  for (const records of [data.fde, data.hardware]) {
+    const expected = [...records].sort((a, b) => (
+      b.dataDate.localeCompare(a.dataDate)
+      || b.date.localeCompare(a.date)
+      || a.id.localeCompare(b.id)
+    ));
+    assert.deepEqual(records.map((item) => item.id), expected.map((item) => item.id));
+  }
+});
+
+test("FDE and hardware list rows distinguish collection and event dates", () => {
+  const script = fs.readFileSync(path.join(root, "01-SiteV2/site/assets/data-center-v4.js"), "utf8");
+
+  assert.match(script, /date: `采集 \$\{item\.dataDate\}`/u);
+  assert.match(script, /secondaryDate: `事件 \$\{item\.date\}`/u);
+  assert.match(script, /row\.secondaryDate/u);
 });
 
 test("FDE and hardware default to the current month while commercial events remain daily", () => {

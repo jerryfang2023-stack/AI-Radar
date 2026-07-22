@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-22T01:57:46.409Z",
+    "generatedAt": "2026-07-22T06:04:57.768Z",
     "latestDataDate": "2026-07-22",
     "currentDate": "2026-07-22",
-    "eventCount": 1401,
+    "eventCount": 1400,
     "quarantinedEventCount": 13
   },
   "entity": {
@@ -5491,8 +5491,8 @@
         "EV-88f4ee8cd57bdf42",
         "EV-44a4e92c03a31ab1",
         "EV-7585b033d4005977",
+        "EV-883d3b5f6d30eb48",
         "EV-fa66f00e9d4b20c2",
-        "EV-ff77876694ab8395",
         "EV-4fba2b2f1ac10a79",
         "EV-bcb74b02448b7d78",
         "EV-47a16db069ed320e",
@@ -7978,7 +7978,7 @@
         "EV-59882383f82f215d",
         "EV-a84ec4216d3ded6d",
         "EV-b4f69c41e23c7ce0",
-        "EV-ff77876694ab8395",
+        "EV-883d3b5f6d30eb48",
         "EV-cafe435ddd007821",
         "EV-ff1f6119de13fa19",
         "EV-4dd25589d834060d",
@@ -8022,6 +8022,7 @@
         "EN-7706c3c94d5f9b59",
         "EN-01839aa42da88393",
         "EN-9fbf261b62c1d7c0",
+        "EN-6fcba5d96a4fadfd",
         "EN-59ae856cd788d0f5",
         "EN-0f3360879e746531",
         "EN-80d387ccb3289295",
@@ -8067,10 +8068,10 @@
         "EN-6c7575a43005188a"
       ],
       "fdeIds": [
-        "FDE-ab9846c6cdc82a26",
         "FDE-9f64e1521dd2dea0"
       ],
       "hardwareIds": [
+        "HW-c57ff6e49b40d839",
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2025-12-02",
@@ -9442,6 +9443,42 @@
   ],
   "fde": [
     {
+      "id": "FDE-2a3615a93ffe5946",
+      "eventId": "EV-3c4d6d70ac763885",
+      "dataDate": "2026-07-19",
+      "date": "2026-02-19",
+      "title": "OpenAI 与咨询巨头达成合作，推进企业业务",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "未披露",
+      "vendor": "OpenAI",
+      "industry": "未披露",
+      "useCase": "Accenture, Boston Consulting Group, Capgemini, McKinsey & Co.",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "customer",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_delivery_components",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://cnbc.com/2026/02/23/open-ai-consulting-accenture-boston-capgemini-mckinsey-frontier.html",
+      "entityIds": [
+        "EN-7d3194f79e645c42"
+      ]
+    },
+    {
       "id": "FDE-1804f08a3871ba4e",
       "eventId": "EV-7f2811d2272cf4a3",
       "dataDate": "2026-07-16",
@@ -9600,6 +9637,45 @@
       ]
     },
     {
+      "id": "FDE-8f63ee695a479d40",
+      "eventId": "EV-538adc98d1da8fda",
+      "dataDate": "2026-06-23",
+      "date": "2026-06-22",
+      "title": "三星在韩国及全球DX部门部署ChatGPT Enterprise和Codex",
+      "stage": "completed",
+      "stageLabel": "已完成",
+      "customer": "Samsung",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "ChatGPT Enterprise和Codex",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "Samsung Electronics is deploying ChatGPT Enterprise and Codex to all employees in South Korea and everyone in its Device eXperience (DX) division worldwide.",
+        "Samsung Electronics is deploying ChatGPT Enterprise and Codex to all employees in South Korea and everyone in its Device eXperience (DX) division worldwide."
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://the-decoder.com/samsung-rolls-out-chatgpt-enterprise-and-codex-to-employees-in-south-korea",
+      "entityIds": [
+        "EN-3a63fb227a4df26d",
+        "EN-968e2d5b08687bf4",
+        "EN-7d3194f79e645c42"
+      ]
+    },
+    {
       "id": "FDE-0e1970e9eb17729f",
       "eventId": "EV-26183a56cf9ed63c",
       "dataDate": "2026-06-22",
@@ -9669,45 +9745,6 @@
         "EN-7c3482959a6cdd3f",
         "EN-7d3194f79e645c42",
         "EN-968e2d5b08687bf4"
-      ]
-    },
-    {
-      "id": "FDE-8f63ee695a479d40",
-      "eventId": "EV-538adc98d1da8fda",
-      "dataDate": "2026-06-23",
-      "date": "2026-06-22",
-      "title": "三星在韩国及全球DX部门部署ChatGPT Enterprise和Codex",
-      "stage": "completed",
-      "stageLabel": "已完成",
-      "customer": "Samsung",
-      "vendor": "未披露",
-      "industry": "未披露",
-      "useCase": "ChatGPT Enterprise和Codex",
-      "reportedNeed": "未披露",
-      "deliveryComponents": [
-        "Samsung Electronics is deploying ChatGPT Enterprise and Codex to all employees in South Korea and everyone in its Device eXperience (DX) division worldwide.",
-        "Samsung Electronics is deploying ChatGPT Enterprise and Codex to all employees in South Korea and everyone in its Device eXperience (DX) division worldwide."
-      ],
-      "outcomes": [],
-      "metrics": [],
-      "undisclosedFields": [
-        "vendor",
-        "industry",
-        "workflow_before",
-        "workflow_after",
-        "delivery_model",
-        "team_composition",
-        "reported_need",
-        "data_requirements",
-        "governance_controls",
-        "reported_outcomes"
-      ],
-      "tags": [],
-      "sourceUrl": "https://the-decoder.com/samsung-rolls-out-chatgpt-enterprise-and-codex-to-employees-in-south-korea",
-      "entityIds": [
-        "EN-3a63fb227a4df26d",
-        "EN-968e2d5b08687bf4",
-        "EN-7d3194f79e645c42"
       ]
     },
     {
@@ -9854,45 +9891,40 @@
         "EN-9fbf261b62c1d7c0",
         "EN-7d3194f79e645c42"
       ]
-    },
-    {
-      "id": "FDE-2a3615a93ffe5946",
-      "eventId": "EV-3c4d6d70ac763885",
-      "dataDate": "2026-07-19",
-      "date": "2026-02-19",
-      "title": "OpenAI 与咨询巨头达成合作，推进企业业务",
-      "stage": "announced",
-      "stageLabel": "已公布",
-      "customer": "未披露",
-      "vendor": "OpenAI",
-      "industry": "未披露",
-      "useCase": "Accenture, Boston Consulting Group, Capgemini, McKinsey & Co.",
-      "reportedNeed": "未披露",
-      "deliveryComponents": [],
-      "outcomes": [],
-      "metrics": [],
-      "undisclosedFields": [
-        "customer",
-        "industry",
-        "workflow_before",
-        "workflow_after",
-        "delivery_model",
-        "team_composition",
-        "reported_need",
-        "systems_integrated",
-        "data_requirements",
-        "governance_controls",
-        "reported_delivery_components",
-        "reported_outcomes"
-      ],
-      "tags": [],
-      "sourceUrl": "https://cnbc.com/2026/02/23/open-ai-consulting-accenture-boston-capgemini-mckinsey-frontier.html",
-      "entityIds": [
-        "EN-7d3194f79e645c42"
-      ]
     }
   ],
   "hardware": [
+    {
+      "id": "HW-7ac397b49d3cae6a",
+      "eventId": "EV-02b19ffbe883ee2e",
+      "dataDate": "2026-07-20",
+      "date": "2026-03-13",
+      "title": "WSJ：英伟达计划推出新款AI处理芯片，将进入下一发展阶段",
+      "hardwareType": "semiconductor",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "未披露",
+      "supplier": "NVIDIA",
+      "customer": "NVIDIA",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://finance.yahoo.com/news/nvidia-set-enter-next-phase-054624576.html",
+      "sourceName": "finance.yahoo.com",
+      "sourceDate": "2026-03-13",
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-7d3194f79e645c42",
+        "EN-683d8d597da71192",
+        "EN-9e72fd4472222231",
+        "EN-1e71d9c1a5c4de16"
+      ]
+    },
     {
       "id": "HW-2ce4c2fb193555e3",
       "eventId": "EV-a4a61babc902931a",
@@ -9995,6 +10027,35 @@
       ]
     },
     {
+      "id": "HW-e44b241c78bbbd26",
+      "eventId": "EV-37cdd2fae39aaa2e",
+      "dataDate": "2026-06-27",
+      "date": "2026-06-24",
+      "title": "OpenAI 发布首款 AI 处理器：Jalapeño",
+      "hardwareType": "semiconductor",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "未披露",
+      "supplier": "未披露",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://theverge.com/ai-artificial-intelligence/955939/openai-reveals-its-first-ai-processor-jalapeno",
+      "sourceName": "The Verge AI",
+      "sourceDate": "2026-06-24",
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-96eebba49dbbf422",
+        "EN-373ac021a2c0bb2c"
+      ]
+    },
+    {
       "id": "HW-d06521eb435c0f62",
       "eventId": "EV-6eb9a23be3117421",
       "dataDate": "2026-06-25",
@@ -10052,35 +10113,6 @@
       ]
     },
     {
-      "id": "HW-e44b241c78bbbd26",
-      "eventId": "EV-37cdd2fae39aaa2e",
-      "dataDate": "2026-06-27",
-      "date": "2026-06-24",
-      "title": "OpenAI 发布首款 AI 处理器：Jalapeño",
-      "hardwareType": "semiconductor",
-      "eventType": "hardware_product",
-      "eventTypeLabel": "硬件产品",
-      "computeLayer": "未披露",
-      "supplier": "未披露",
-      "customer": "未披露",
-      "processNode": "未披露",
-      "capacity": "未披露",
-      "capacityUnit": "",
-      "site": "未披露",
-      "region": "未披露",
-      "contractValue": "未披露",
-      "shipmentDate": "未披露",
-      "tags": [],
-      "sourceUrl": "https://theverge.com/ai-artificial-intelligence/955939/openai-reveals-its-first-ai-processor-jalapeno",
-      "sourceName": "The Verge AI",
-      "sourceDate": "2026-06-24",
-      "entityIds": [
-        "EN-7d3194f79e645c42",
-        "EN-96eebba49dbbf422",
-        "EN-373ac021a2c0bb2c"
-      ]
-    },
-    {
       "id": "HW-ea75c7e58c36cb62",
       "eventId": "EV-be69ef6fcae83890",
       "dataDate": "2026-06-25",
@@ -10106,37 +10138,6 @@
       "entityIds": [
         "EN-7d3194f79e645c42",
         "EN-8d4321d936320802"
-      ]
-    },
-    {
-      "id": "HW-7ac397b49d3cae6a",
-      "eventId": "EV-02b19ffbe883ee2e",
-      "dataDate": "2026-07-20",
-      "date": "2026-03-13",
-      "title": "WSJ：英伟达计划推出新款AI处理芯片，将进入下一发展阶段",
-      "hardwareType": "semiconductor",
-      "eventType": "hardware_product",
-      "eventTypeLabel": "硬件产品",
-      "computeLayer": "未披露",
-      "supplier": "NVIDIA",
-      "customer": "NVIDIA",
-      "processNode": "未披露",
-      "capacity": "未披露",
-      "capacityUnit": "",
-      "site": "未披露",
-      "region": "未披露",
-      "contractValue": "未披露",
-      "shipmentDate": "未披露",
-      "tags": [],
-      "sourceUrl": "https://finance.yahoo.com/news/nvidia-set-enter-next-phase-054624576.html",
-      "sourceName": "finance.yahoo.com",
-      "sourceDate": "2026-03-13",
-      "entityIds": [
-        "EN-8d4321d936320802",
-        "EN-7d3194f79e645c42",
-        "EN-683d8d597da71192",
-        "EN-9e72fd4472222231",
-        "EN-1e71d9c1a5c4de16"
       ]
     }
   ]

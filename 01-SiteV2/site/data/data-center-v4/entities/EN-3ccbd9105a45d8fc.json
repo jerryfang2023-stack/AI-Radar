@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-22T01:57:46.409Z",
+    "generatedAt": "2026-07-22T06:04:57.768Z",
     "latestDataDate": "2026-07-22",
     "currentDate": "2026-07-22",
-    "eventCount": 1401,
+    "eventCount": 1400,
     "quarantinedEventCount": 13
   },
   "entity": {
@@ -1549,7 +1549,7 @@
         "EV-59882383f82f215d",
         "EV-a84ec4216d3ded6d",
         "EV-b4f69c41e23c7ce0",
-        "EV-ff77876694ab8395",
+        "EV-883d3b5f6d30eb48",
         "EV-cafe435ddd007821",
         "EV-ff1f6119de13fa19",
         "EV-4dd25589d834060d",
@@ -1593,6 +1593,7 @@
         "EN-7706c3c94d5f9b59",
         "EN-01839aa42da88393",
         "EN-9fbf261b62c1d7c0",
+        "EN-6fcba5d96a4fadfd",
         "EN-59ae856cd788d0f5",
         "EN-0f3360879e746531",
         "EN-80d387ccb3289295",
@@ -1638,10 +1639,10 @@
         "EN-6c7575a43005188a"
       ],
       "fdeIds": [
-        "FDE-ab9846c6cdc82a26",
         "FDE-9f64e1521dd2dea0"
       ],
       "hardwareIds": [
+        "HW-c57ff6e49b40d839",
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2025-12-02",
@@ -1927,42 +1928,6 @@
   ],
   "fde": [
     {
-      "id": "FDE-98a3583160cf79b0",
-      "eventId": "EV-8b73e88ffd3569b2",
-      "dataDate": "2026-05-20",
-      "date": "2026-05-21",
-      "title": "NHS共享商业服务公司与Salesforce部署AI驱动平台，助力NHS企业服务转型——Salesforce",
-      "stage": "announced",
-      "stageLabel": "已公布",
-      "customer": "NHS Shared Business Services",
-      "vendor": "Salesforce",
-      "industry": "未披露",
-      "useCase": "AI-powered Platform to Transform Corporate Services across the NHS - Salesforce",
-      "reportedNeed": "未披露",
-      "deliveryComponents": [],
-      "outcomes": [],
-      "metrics": [],
-      "undisclosedFields": [
-        "industry",
-        "workflow_before",
-        "workflow_after",
-        "delivery_model",
-        "team_composition",
-        "reported_need",
-        "systems_integrated",
-        "data_requirements",
-        "governance_controls",
-        "reported_delivery_components",
-        "reported_outcomes"
-      ],
-      "tags": [],
-      "sourceUrl": "https://www.salesforce.com/uk/news/press-releases/2026/05/20/nhs-shared-business-ai",
-      "entityIds": [
-        "EN-6f30fa79d4bd8a3e",
-        "EN-3ccbd9105a45d8fc"
-      ]
-    },
-    {
       "id": "FDE-cc943789fb1c3f3d",
       "eventId": "EV-2c476cb7969f399b",
       "dataDate": "2026-07-19",
@@ -2011,6 +1976,42 @@
       "entityIds": [
         "EN-3ccbd9105a45d8fc",
         "EN-b0532e1af75cc4ab"
+      ]
+    },
+    {
+      "id": "FDE-98a3583160cf79b0",
+      "eventId": "EV-8b73e88ffd3569b2",
+      "dataDate": "2026-05-20",
+      "date": "2026-05-21",
+      "title": "NHS共享商业服务公司与Salesforce部署AI驱动平台，助力NHS企业服务转型——Salesforce",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "NHS Shared Business Services",
+      "vendor": "Salesforce",
+      "industry": "未披露",
+      "useCase": "AI-powered Platform to Transform Corporate Services across the NHS - Salesforce",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_delivery_components",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://www.salesforce.com/uk/news/press-releases/2026/05/20/nhs-shared-business-ai",
+      "entityIds": [
+        "EN-6f30fa79d4bd8a3e",
+        "EN-3ccbd9105a45d8fc"
       ]
     }
   ],

@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-22T01:57:46.409Z",
+    "generatedAt": "2026-07-22T06:04:57.768Z",
     "latestDataDate": "2026-07-22",
     "currentDate": "2026-07-22",
-    "eventCount": 1401,
+    "eventCount": 1400,
     "quarantinedEventCount": 13
   },
   "entity": {
@@ -1171,6 +1171,50 @@
   ],
   "fde": [
     {
+      "id": "FDE-4edaa833d41055bd",
+      "eventId": "EV-53f4f2a34b3ce1b4",
+      "dataDate": "2026-07-16",
+      "date": "2026-06-17",
+      "title": "Rubrik 宣布即将集成 Amazon Bedrock AgentCore 以保护 AI 智能体",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Rubrik",
+      "vendor": "Rubrik Announces Upcoming",
+      "industry": "Security and AI Operations",
+      "useCase": "Amazon Bedrock AgentCore to Secure AI Agents",
+      "reportedNeed": "Cybersecurity leaders estimate that in the next year, half or more of attacks they face will be driven by agentic AI",
+      "deliveryComponents": [
+        "Rubrik Announces Upcoming Integration with Amazon Bedrock AgentCore to Secure AI Agents",
+        "AWS Summit -- Rubrik (NYSE: RBRK), the Security and AI Operations company, announced today its upcoming Rubrik Agent Cloud (RAC) integration with Amazon Bedrock AgentCore. The upcoming integration reflects Rubrik's commitment to extending the security controls customers already trust into agentic workflows.",
+        "\"Speed has always been the enterprise mandate, but today, safety is the prerequisite,\" said Devvret Rishi, General Manager AI, Rubrik. \"Cybersecurity leaders estimate that in the next year, half or more of attacks they face will be driven by agentic AI. Rubrik’s upcoming integration with AWS Bedrock AgentCore gives enterprises the confidence to deploy AI agents quickly with trustworthy governance.\""
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "sourceUrl": "https://markets.ft.com/data/announce/full?dockey=600-202606171200BIZWIRE_USPRX____20260617_BW107817-1",
+      "entityIds": [
+        "EN-ea87a2bd84296f73",
+        "EN-4094a2b7125c7564",
+        "EN-cbc62794911ff31b"
+      ]
+    },
+    {
       "id": "FDE-467e0bd030c922df",
       "eventId": "EV-d5f276ad6b2ac9de",
       "dataDate": "2026-07-10",
@@ -1219,50 +1263,6 @@
         "EN-86ca9936019f1039",
         "EN-4094a2b7125c7564",
         "EN-8f71c4871a160172"
-      ]
-    },
-    {
-      "id": "FDE-4edaa833d41055bd",
-      "eventId": "EV-53f4f2a34b3ce1b4",
-      "dataDate": "2026-07-16",
-      "date": "2026-06-17",
-      "title": "Rubrik 宣布即将集成 Amazon Bedrock AgentCore 以保护 AI 智能体",
-      "stage": "announced",
-      "stageLabel": "已公布",
-      "customer": "Rubrik",
-      "vendor": "Rubrik Announces Upcoming",
-      "industry": "Security and AI Operations",
-      "useCase": "Amazon Bedrock AgentCore to Secure AI Agents",
-      "reportedNeed": "Cybersecurity leaders estimate that in the next year, half or more of attacks they face will be driven by agentic AI",
-      "deliveryComponents": [
-        "Rubrik Announces Upcoming Integration with Amazon Bedrock AgentCore to Secure AI Agents",
-        "AWS Summit -- Rubrik (NYSE: RBRK), the Security and AI Operations company, announced today its upcoming Rubrik Agent Cloud (RAC) integration with Amazon Bedrock AgentCore. The upcoming integration reflects Rubrik's commitment to extending the security controls customers already trust into agentic workflows.",
-        "\"Speed has always been the enterprise mandate, but today, safety is the prerequisite,\" said Devvret Rishi, General Manager AI, Rubrik. \"Cybersecurity leaders estimate that in the next year, half or more of attacks they face will be driven by agentic AI. Rubrik’s upcoming integration with AWS Bedrock AgentCore gives enterprises the confidence to deploy AI agents quickly with trustworthy governance.\""
-      ],
-      "outcomes": [],
-      "metrics": [],
-      "undisclosedFields": [
-        "workflow_before",
-        "workflow_after",
-        "delivery_model",
-        "team_composition",
-        "data_requirements",
-        "governance_controls",
-        "reported_outcomes"
-      ],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        }
-      ],
-      "sourceUrl": "https://markets.ft.com/data/announce/full?dockey=600-202606171200BIZWIRE_USPRX____20260617_BW107817-1",
-      "entityIds": [
-        "EN-ea87a2bd84296f73",
-        "EN-4094a2b7125c7564",
-        "EN-cbc62794911ff31b"
       ]
     }
   ],

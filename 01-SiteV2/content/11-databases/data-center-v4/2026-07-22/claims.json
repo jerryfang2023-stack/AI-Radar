@@ -1200,90 +1200,6 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-f7166f7c64f61669",
-    "raw_id": "RAW-b73138e81848ee25",
-    "claim_type": "deployment",
-    "subject": "Q&A: A look at forward-",
-    "predicate": "deployment",
-    "object": "engineers, AWS style – Computerworld",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 1
-    },
-    "source_span": {
-      "raw_id": "RAW-b73138e81848ee25",
-      "start": 0,
-      "end": 52
-    },
-    "source_quote": "Q&A: A look at forward-deployed engineers, AWS style",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.9,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-e74c12de07f52741",
-    "raw_id": "RAW-b73138e81848ee25",
-    "claim_type": "deployment",
-    "subject": "Q&A: A look at forward-",
-    "predicate": "deployment",
-    "object": "engineers, AWS style – Computerworld",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 2
-    },
-    "source_span": {
-      "raw_id": "RAW-b73138e81848ee25",
-      "start": 53,
-      "end": 163
-    },
-    "source_quote": "Hot AI companies can’t stop talking about forward-deployed engineers (FDEs), which are now very much in vogue.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-a687809064bd4624",
-    "raw_id": "RAW-b73138e81848ee25",
-    "claim_type": "deployment",
-    "subject": "Q&A: A look at forward-",
-    "predicate": "deployment",
-    "object": "engineers, AWS style – Computerworld",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 3
-    },
-    "source_span": {
-      "raw_id": "RAW-b73138e81848ee25",
-      "start": 236,
-      "end": 385
-    },
-    "source_quote": ") to successfully deploy AI tools and services. It’s one of the hotter professions in a world still trying to understand the impact of AI on careers.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-b2b0d1b27524673d",
-    "raw_id": "RAW-b73138e81848ee25",
-    "claim_type": "deployment",
-    "subject": "Q&A: A look at forward-",
-    "predicate": "deployment",
-    "object": "engineers, AWS style – Computerworld",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 4
-    },
-    "source_span": {
-      "raw_id": "RAW-b73138e81848ee25",
-      "start": 497,
-      "end": 674
-    },
-    "source_quote": "Turns out it’s not so much about individual engineers who swoop in to design and roll out AI deployments; it’s more about a team of engineers working together at customer sites.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
     "claim_id": "CL-1ae047b8fcfe2e38",
     "raw_id": "RAW-c4918a49bacbd681",
     "claim_type": "research_result",
@@ -1838,9 +1754,9 @@
   {
     "claim_id": "CL-c80c299b76e69c6d",
     "raw_id": "RAW-4e4f7852c69cad27",
-    "claim_type": "deployment",
-    "subject": "102.4Tbps：英伟达 Spectrum-6 交换系统",
-    "predicate": "deployment",
+    "claim_type": "hardware_deployment",
+    "subject": "102.4Tbps：英伟达 Spectrum-6",
+    "predicate": "hardware_deployment",
     "object": "全球超大规模 AI 工厂",
     "qualifiers": {
       "event_status": "announced",
@@ -1859,9 +1775,9 @@
   {
     "claim_id": "CL-b7e06ca49fdc2a8b",
     "raw_id": "RAW-4e4f7852c69cad27",
-    "claim_type": "deployment",
-    "subject": "102.4Tbps：英伟达 Spectrum-6 交换系统",
-    "predicate": "deployment",
+    "claim_type": "hardware_deployment",
+    "subject": "102.4Tbps：英伟达 Spectrum-6",
+    "predicate": "hardware_deployment",
     "object": "全球超大规模 AI 工厂",
     "qualifiers": {
       "event_status": "announced",
@@ -1878,11 +1794,11 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-747e56272b004b6c",
+    "claim_id": "CL-7a4abd8638aada43",
     "raw_id": "RAW-4e4f7852c69cad27",
-    "claim_type": "deployment",
-    "subject": "102.4Tbps：英伟达 Spectrum-6 交换系统",
-    "predicate": "deployment",
+    "claim_type": "hardware_deployment",
+    "subject": "102.4Tbps：英伟达 Spectrum-6",
+    "predicate": "hardware_deployment",
     "object": "全球超大规模 AI 工厂",
     "qualifiers": {
       "event_status": "announced",
@@ -1890,20 +1806,20 @@
     },
     "source_span": {
       "raw_id": "RAW-4e4f7852c69cad27",
-      "start": 514,
-      "end": 611
+      "start": 308,
+      "end": 410
     },
-    "source_quote": "英伟达表示 CoreWeave、Microsoft 和 Nebius 将率先部署基于 Vera Rubin、并结合 Spectrum-6 的基础设施，以扩展开发者、初创公司和企业对该平台的访问。",
+    "source_quote": "IT之家 7 月 21 日消息，英伟达昨日（7 月 21 日）发布博文， 宣布面向 Vera Rubin 平台推出 Spectrum-6 交换系统，带宽达 102.4 Tbps，容量较上一代提升 2 倍。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-e781357363fc092b",
+    "claim_id": "CL-55d30e871200e336",
     "raw_id": "RAW-4e4f7852c69cad27",
-    "claim_type": "deployment",
-    "subject": "102.4Tbps：英伟达 Spectrum-6 交换系统",
-    "predicate": "deployment",
+    "claim_type": "hardware_deployment",
+    "subject": "102.4Tbps：英伟达 Spectrum-6",
+    "predicate": "hardware_deployment",
     "object": "全球超大规模 AI 工厂",
     "qualifiers": {
       "event_status": "announced",
@@ -1911,10 +1827,10 @@
     },
     "source_span": {
       "raw_id": "RAW-4e4f7852c69cad27",
-      "start": 612,
-      "end": 711
+      "start": 411,
+      "end": 500
     },
-    "source_quote": "CoreWeave 产品网络总监 Min Jun 表示，Spectrum-6 和液冷的 Spectrum-X Ethernet 基础设施将帮助其提供训练前沿模型和更快部署推理所需的带宽、韧性和效率。",
+    "source_quote": "英伟达表示 Spectrum-6 系统目前已进入全球超大规模 AI 工厂，首批采用者包括 CoreWeave、Microsoft、Nebius、SpaceXAI 和 Tesla。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -2764,10 +2680,10 @@
   {
     "claim_id": "CL-840ddd6a6e7692a3",
     "raw_id": "RAW-9cb4d91edc1f8c00",
-    "claim_type": "hardware_product",
+    "claim_type": "product_release",
     "subject": "谷歌 DeepMind",
-    "predicate": "hardware_product",
-    "object": "视觉桎梏",
+    "predicate": "product_release",
+    "object": "GenCeption：基于阿里 Wan2.1，打破计算机视觉桎梏",
     "qualifiers": {
       "event_status": "completed",
       "sequence": 1
@@ -2785,10 +2701,10 @@
   {
     "claim_id": "CL-2946d3d86e677a3a",
     "raw_id": "RAW-9cb4d91edc1f8c00",
-    "claim_type": "hardware_product",
+    "claim_type": "product_release",
     "subject": "谷歌 DeepMind",
-    "predicate": "hardware_product",
-    "object": "视觉桎梏",
+    "predicate": "product_release",
+    "object": "GenCeption：基于阿里 Wan2.1，打破计算机视觉桎梏",
     "qualifiers": {
       "event_status": "completed",
       "sequence": 2
@@ -2806,10 +2722,10 @@
   {
     "claim_id": "CL-ffe960efe13edf3a",
     "raw_id": "RAW-9cb4d91edc1f8c00",
-    "claim_type": "hardware_product",
+    "claim_type": "product_release",
     "subject": "谷歌 DeepMind",
-    "predicate": "hardware_product",
-    "object": "视觉桎梏",
+    "predicate": "product_release",
+    "object": "GenCeption：基于阿里 Wan2.1，打破计算机视觉桎梏",
     "qualifiers": {
       "event_status": "completed",
       "sequence": 3
@@ -2827,10 +2743,10 @@
   {
     "claim_id": "CL-38f19d57a7afab02",
     "raw_id": "RAW-9cb4d91edc1f8c00",
-    "claim_type": "hardware_product",
+    "claim_type": "product_release",
     "subject": "谷歌 DeepMind",
-    "predicate": "hardware_product",
-    "object": "视觉桎梏",
+    "predicate": "product_release",
+    "object": "GenCeption：基于阿里 Wan2.1，打破计算机视觉桎梏",
     "qualifiers": {
       "event_status": "completed",
       "sequence": 4

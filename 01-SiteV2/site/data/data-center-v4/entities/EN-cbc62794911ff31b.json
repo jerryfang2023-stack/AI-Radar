@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-22T01:57:46.409Z",
+    "generatedAt": "2026-07-22T06:04:57.768Z",
     "latestDataDate": "2026-07-22",
     "currentDate": "2026-07-22",
-    "eventCount": 1401,
+    "eventCount": 1400,
     "quarantinedEventCount": 13
   },
   "entity": {
@@ -832,8 +832,8 @@
         "EV-88f4ee8cd57bdf42",
         "EV-44a4e92c03a31ab1",
         "EV-7585b033d4005977",
+        "EV-883d3b5f6d30eb48",
         "EV-fa66f00e9d4b20c2",
-        "EV-ff77876694ab8395",
         "EV-4fba2b2f1ac10a79",
         "EV-bcb74b02448b7d78",
         "EV-47a16db069ed320e",
@@ -1875,7 +1875,7 @@
         "EV-59882383f82f215d",
         "EV-a84ec4216d3ded6d",
         "EV-b4f69c41e23c7ce0",
-        "EV-ff77876694ab8395",
+        "EV-883d3b5f6d30eb48",
         "EV-cafe435ddd007821",
         "EV-ff1f6119de13fa19",
         "EV-4dd25589d834060d",
@@ -1919,6 +1919,7 @@
         "EN-7706c3c94d5f9b59",
         "EN-01839aa42da88393",
         "EN-9fbf261b62c1d7c0",
+        "EN-6fcba5d96a4fadfd",
         "EN-59ae856cd788d0f5",
         "EN-0f3360879e746531",
         "EN-80d387ccb3289295",
@@ -1964,10 +1965,10 @@
         "EN-6c7575a43005188a"
       ],
       "fdeIds": [
-        "FDE-ab9846c6cdc82a26",
         "FDE-9f64e1521dd2dea0"
       ],
       "hardwareIds": [
+        "HW-c57ff6e49b40d839",
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2025-12-02",
@@ -2363,6 +2364,50 @@
   ],
   "fde": [
     {
+      "id": "FDE-4edaa833d41055bd",
+      "eventId": "EV-53f4f2a34b3ce1b4",
+      "dataDate": "2026-07-16",
+      "date": "2026-06-17",
+      "title": "Rubrik 宣布即将集成 Amazon Bedrock AgentCore 以保护 AI 智能体",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Rubrik",
+      "vendor": "Rubrik Announces Upcoming",
+      "industry": "Security and AI Operations",
+      "useCase": "Amazon Bedrock AgentCore to Secure AI Agents",
+      "reportedNeed": "Cybersecurity leaders estimate that in the next year, half or more of attacks they face will be driven by agentic AI",
+      "deliveryComponents": [
+        "Rubrik Announces Upcoming Integration with Amazon Bedrock AgentCore to Secure AI Agents",
+        "AWS Summit -- Rubrik (NYSE: RBRK), the Security and AI Operations company, announced today its upcoming Rubrik Agent Cloud (RAC) integration with Amazon Bedrock AgentCore. The upcoming integration reflects Rubrik's commitment to extending the security controls customers already trust into agentic workflows.",
+        "\"Speed has always been the enterprise mandate, but today, safety is the prerequisite,\" said Devvret Rishi, General Manager AI, Rubrik. \"Cybersecurity leaders estimate that in the next year, half or more of attacks they face will be driven by agentic AI. Rubrik’s upcoming integration with AWS Bedrock AgentCore gives enterprises the confidence to deploy AI agents quickly with trustworthy governance.\""
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "sourceUrl": "https://markets.ft.com/data/announce/full?dockey=600-202606171200BIZWIRE_USPRX____20260617_BW107817-1",
+      "entityIds": [
+        "EN-ea87a2bd84296f73",
+        "EN-4094a2b7125c7564",
+        "EN-cbc62794911ff31b"
+      ]
+    },
+    {
       "id": "FDE-fb386f863269b245",
       "eventId": "EV-49c6291694fb6c7b",
       "dataDate": "2026-07-03",
@@ -2439,50 +2484,6 @@
       "entityIds": [
         "EN-2b6e51bec93e86c1",
         "EN-7df09a7717ef2feb",
-        "EN-cbc62794911ff31b"
-      ]
-    },
-    {
-      "id": "FDE-4edaa833d41055bd",
-      "eventId": "EV-53f4f2a34b3ce1b4",
-      "dataDate": "2026-07-16",
-      "date": "2026-06-17",
-      "title": "Rubrik 宣布即将集成 Amazon Bedrock AgentCore 以保护 AI 智能体",
-      "stage": "announced",
-      "stageLabel": "已公布",
-      "customer": "Rubrik",
-      "vendor": "Rubrik Announces Upcoming",
-      "industry": "Security and AI Operations",
-      "useCase": "Amazon Bedrock AgentCore to Secure AI Agents",
-      "reportedNeed": "Cybersecurity leaders estimate that in the next year, half or more of attacks they face will be driven by agentic AI",
-      "deliveryComponents": [
-        "Rubrik Announces Upcoming Integration with Amazon Bedrock AgentCore to Secure AI Agents",
-        "AWS Summit -- Rubrik (NYSE: RBRK), the Security and AI Operations company, announced today its upcoming Rubrik Agent Cloud (RAC) integration with Amazon Bedrock AgentCore. The upcoming integration reflects Rubrik's commitment to extending the security controls customers already trust into agentic workflows.",
-        "\"Speed has always been the enterprise mandate, but today, safety is the prerequisite,\" said Devvret Rishi, General Manager AI, Rubrik. \"Cybersecurity leaders estimate that in the next year, half or more of attacks they face will be driven by agentic AI. Rubrik’s upcoming integration with AWS Bedrock AgentCore gives enterprises the confidence to deploy AI agents quickly with trustworthy governance.\""
-      ],
-      "outcomes": [],
-      "metrics": [],
-      "undisclosedFields": [
-        "workflow_before",
-        "workflow_after",
-        "delivery_model",
-        "team_composition",
-        "data_requirements",
-        "governance_controls",
-        "reported_outcomes"
-      ],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        }
-      ],
-      "sourceUrl": "https://markets.ft.com/data/announce/full?dockey=600-202606171200BIZWIRE_USPRX____20260617_BW107817-1",
-      "entityIds": [
-        "EN-ea87a2bd84296f73",
-        "EN-4094a2b7125c7564",
         "EN-cbc62794911ff31b"
       ]
     },

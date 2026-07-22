@@ -4,35 +4,33 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-22T01:57:46.409Z",
+    "generatedAt": "2026-07-22T06:04:57.768Z",
     "latestDataDate": "2026-07-22",
     "currentDate": "2026-07-22",
-    "eventCount": 1401,
+    "eventCount": 1400,
     "quarantinedEventCount": 13
   },
   "fde": [
     {
-      "id": "FDE-ab9846c6cdc82a26",
-      "eventId": "EV-ff77876694ab8395",
-      "dataDate": "2026-07-22",
-      "date": "2026-07-21",
-      "title": "102.4Tbps：英伟达 Spectrum-6 交换系统落地全球超大规模 AI 工厂",
-      "stage": "announced",
-      "stageLabel": "已公布",
-      "customer": "NVIDIA",
+      "id": "FDE-a7e2c93aec6b5db7",
+      "eventId": "EV-aa6f83d2515ee546",
+      "dataDate": "2026-07-21",
+      "date": "2026-07-14",
+      "title": "从AI试飞到生产：前线部署工程师的角色",
+      "stage": "completed",
+      "stageLabel": "已完成",
+      "customer": "From AI",
       "vendor": "未披露",
       "industry": "未披露",
-      "useCase": "全球超大规模 AI 工厂",
+      "useCase": "Production: The Role of Forward Deployed Engineers",
       "reportedNeed": "未披露",
       "deliveryComponents": [
-        "英伟达表示 CoreWeave、Microsoft 和 Nebius 将率先部署基于 Vera Rubin、并结合 Spectrum-6 的基础设施，以扩展开发者、初创公司和企业对该平台的访问。",
-        "CoreWeave 产品网络总监 Min Jun 表示，Spectrum-6 和液冷的 Spectrum-X Ethernet 基础设施将帮助其提供训练前沿模型和更快部署推理所需的带宽、韧性和效率。"
+        "How a Forward Deployed Engineer Accelerates AI Deployment From Pilot to Production",
+        "How a Forward Deployed Engineer Accelerates AI Deployment From Pilot to Production",
+        "Most AI pilots never make it to production. Research from MIT’s NANDA initiative found that 95 percent of enterprise generative AI pilots deliver no measurable return on investment, and Gartner projects that 60 percent of AI projects lacking properly prepared data will be abandoned this year. A Forward Deployed Engineer is one of the clearest answers to that gap, because the role exists specifically to carry AI from a working demo into a system that a real business can depend on."
       ],
       "outcomes": [],
-      "metrics": [
-        "102.4Tb",
-        "102.4Tb"
-      ],
+      "metrics": [],
       "undisclosedFields": [
         "vendor",
         "industry",
@@ -47,10 +45,169 @@
         "reported_outcomes"
       ],
       "tags": [],
-      "sourceUrl": "https://ithome.com/0/979/791.htm",
+      "sourceUrl": "https://manras.com/agentforce-fde",
       "entityIds": [
-        "EN-8d4321d936320802",
-        "EN-9fbf261b62c1d7c0"
+        "EN-25690754dd14bd1b"
+      ]
+    },
+    {
+      "id": "FDE-1ef827152775919a",
+      "eventId": "EV-c24db606193b9dea",
+      "dataDate": "2026-07-20",
+      "date": "2017-09-07",
+      "title": "Lyft 与 Drive.ai 合作在湾区开展自动驾驶网约车试点",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Lyft",
+      "vendor": "Drive.ai",
+      "industry": "Ride-hailing",
+      "useCase": "Lyft and Drive.ai partner on Bay Area self-driving ride-hailing pilot",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_delivery_components",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://techcrunch.com/2017/09/07/lyft-and-drive-ai-partner-on-bay-area-self-driving-ride-hailing-pilot",
+      "entityIds": [
+        "EN-09a2f4897466c7a5"
+      ]
+    },
+    {
+      "id": "FDE-cc943789fb1c3f3d",
+      "eventId": "EV-2c476cb7969f399b",
+      "dataDate": "2026-07-19",
+      "date": "2026-03-19",
+      "title": "前线部署工程师证明AI让技术岗位更人性化 - Salesforce",
+      "stage": "completed",
+      "stageLabel": "已完成",
+      "customer": "Salesforce",
+      "vendor": "Rime",
+      "industry": "未披露",
+      "useCase": "Engineers Are Proving AI Makes Tech Jobs More Human - Salesforce",
+      "reportedNeed": "companies adopt AI agents at breakneck speed but need expertise to actually deploy them",
+      "deliveryComponents": [
+        "How Forward Deployed Engineers Are Proving AI Makes Tech Jobs More Human",
+        "Sarah Khalid was three years into her career as a Success Architect at Salesforce when her team restructured and she found herself in a role she hadn’t planned on, couldn’t fully define, and wasn’t sure existed yet. “I didn’t plan on becoming an FDE,” she said. “It’s something that I grew into.” Forward deployed engineers (FDEs) saw an 800% spike in job postings between January and September 2025, according to an analysis by Indeed and the Financial Times, as companies adopt AI agents at breakneck speed but need expertise to actually deploy them. FDEs exist to close that gap. They code, consult, and translate agentic AI into working solutions, often while sitting side by side with the customer. Similar to when Harvard Business Review deemed data scientist “the sexiest job of the 21st century” due to a rare combination of technical chops and business savvy, both roles prove that transformative technology doesn’t eliminate jobs. It creates entirely new ones we couldn’t have imagined a few years prior. Now history is repeating itself, just faster. How do I know when AI is wrong, when AI is right, how it can solve the right problem?",
+        "” Around 40% to 50% of FDE movement at Salesforce is internal. The company built a six-week onboarding program in September 2025 with two weeks of focused technical training and four weeks on the job to bridge the gap. For anyone eyeing the role from the outside, Hickin’s advice is simple: “Become the AI expert in the job that you’re in. Experiment with the tool, figure out how it can solve problems in your team. Then you become a kind of quasi-FDE within your own job.” Related How We Cut Inference Spend by Right-Sizing Our Models 8 min read Slackbot Can Now Do Anything Salesforce Can. Just Ask. Trust builder AI has already changed what the job demands internally. FDEs once spent up to 40% of their time on administrative preparation, including summarizing meetings, pulling account histories, and drafting status updates. That’s largely automated now. “Now they can spend their time on hacking, building, figuring out the customer issue,” Hickin said. “Human jobs become more human.” Khalid explained what this looks like in practice: She once worked with a tech customer whose AI agent was targeting a 70% deflection rate for their customer service function. That figure became the North Star to add functionality, optimize, and move the needle. When they hit it, the customer expanded to a second use case. She also described a time when an insurance company demanded accuracy and response time targets. Khalid admitted that the technical side was hard. It required experimenting with different LLM models and prompt engineering on the back end. But what nearly derailed the engagement had nothing to do with code. This company, like many others, was experimenting with a variety of solutions. So she said, “It also required a lot of nontechnical skills: how to deal with that customer, how to make them not want to give up on Agentforce. And make them trust.” That account didn’t turn on a technical breakthrough. It turned on rebuilding confidence. “There’s not much coding involved,” Khalid reflected. “It’s actually more judgment, trust, and communication skills. And not something that AI can replace.” Work, redefined Back in 2012, the data scientist role looked like something only a narrow slice of specialists could do. A decade later, data literacy had become a baseline expectation across job functions. Hickin sees the FDE role charting the same arc. It won’t be a specialty forever but a leading indicator of where technical work is heading: closer to the customer, more dependent on judgment, and more human than the job title implies. Khalid, reflecting on the FDE acronym, has her own proposal: future defining engineers. “We’re not just defining the AI part,” she said. “We’re also defining how this role itself will shape out in the future.” It’s clever. And after what happened with data science, it’s hard to argue with. Go Deeper: Read why today’s hottest role is the forward deployed engineer Learn how Agentforce inspired three FDEs to return to Salesforce Learn how the role of the developer has changed in the agentic AI era",
+        "How Forward Deployed Engineers Are Proving AI Makes Tech Jobs More Human"
+      ],
+      "outcomes": [],
+      "metrics": [
+        "800%",
+        "40%",
+        "50%",
+        "40%",
+        "70%"
+      ],
+      "undisclosedFields": [
+        "industry",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "sourceUrl": "https://salesforce.com/news/stories/forward-deployed-engineers-making-ai-jobs-more-human",
+      "entityIds": [
+        "EN-3ccbd9105a45d8fc",
+        "EN-b0532e1af75cc4ab"
+      ]
+    },
+    {
+      "id": "FDE-2a3615a93ffe5946",
+      "eventId": "EV-3c4d6d70ac763885",
+      "dataDate": "2026-07-19",
+      "date": "2026-02-19",
+      "title": "OpenAI 与咨询巨头达成合作，推进企业业务",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "未披露",
+      "vendor": "OpenAI",
+      "industry": "未披露",
+      "useCase": "Accenture, Boston Consulting Group, Capgemini, McKinsey & Co.",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "customer",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_delivery_components",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://cnbc.com/2026/02/23/open-ai-consulting-accenture-boston-capgemini-mckinsey-frontier.html",
+      "entityIds": [
+        "EN-7d3194f79e645c42"
+      ]
+    },
+    {
+      "id": "FDE-3665b073634d4b9d",
+      "eventId": "EV-05a87b578967c83e",
+      "dataDate": "2026-07-18",
+      "date": "2026-03-04",
+      "title": "Singtel Group 与 Sierra 合作，借助 AI 智能体革新客户互动体验",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Sierra",
+      "vendor": "Singtel Group",
+      "industry": "未披露",
+      "useCase": "Sierra to transform customer engagement with AI | Sierra",
+      "reportedNeed": "More personalised experiences, greater convenience and faster, more responsive service",
+      "deliveryComponents": [
+        "Mr Ng Tian Chong, Chief Executive Officer, Singtel Singapore, said: “Putting our customers first has always been at the heart of what we do. The deployment of agentic AI across chat and voice is about delivering real value — more personalised experiences, greater convenience and faster, more responsive service. By using AI to support our customer service teams, we can ensure customers are promptly and well assisted, while empowering our agents to focus on more complex cases where human expertise matters most. Our AI agents are designed to understand local expressions and even Singlish, reflecting our roots as a homegrown company serving a diverse nation. This marks an important step in redefining how we build and sustain customer relationships in the AI era.”"
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "industry",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "sourceUrl": "https://sierra.ai/customers/singtel",
+      "entityIds": [
+        "EN-19e41212c0556603",
+        "EN-dca6ec9510fc0176"
       ]
     },
     {
@@ -93,6 +250,93 @@
         "EN-96eebba49dbbf422",
         "EN-d9b1d7819af92e77",
         "EN-bbdefa2950f49882"
+      ]
+    },
+    {
+      "id": "FDE-de1562b0634b20ed",
+      "eventId": "EV-bbc1042dcf5ad317",
+      "dataDate": "2026-07-17",
+      "date": "2026-05-15",
+      "title": "IBM 发布前线部署单元，将 AI 投入生产",
+      "stage": "planned",
+      "stageLabel": "计划中",
+      "customer": "IBM",
+      "vendor": "IBM",
+      "industry": "未披露",
+      "useCase": "Units to Ship AI in Production - AI Learning Guides",
+      "reportedNeed": "Bridging the gap between AI pilots and production deployments at scale",
+      "deliveryComponents": [
+        "IBM Consulting launched Forward Deployed Units (FDUs) yesterday, a service-delivery model built around six-person pods that combine domain specialists, architects, and engineers with a “digital workforce” of specialized AI agents handling coding, evaluation, testing, and documentation. IBM Forward Deployed Units claim a 6-person pod can do the work of a 30-person team at materially better economics, with progress measured in working systems rather than slide decks. The first named deployments — Riyadh Air, Nestlé, Heineken, and Pearson — are already moving AI from isolated pilots into production at scale, and IBM says FDU rollout is expanding rapidly across Asia Pacific, Europe, and the US.",
+        "The FDU model is IBM’s answer to the most-discussed problem in enterprise AI deployment in 2026: the gap between AI pilots that look great in demos and AI deployments that actually run in production. The reality across enterprises has been hard. Only 11-14% of enterprise AI agent pilots reached production at scale by mid-2026, with the rest stalling in integration, governance, and operational reliability issues. IBM’s bet is that the consulting-engagement model itself — armies of analysts, layered handoffs, slide-deck deliverables — is part of the problem, and that a smaller AI-augmented pod can ship faster precisely because it has less coordination overhead.",
+        "Define the production-AI gap in your organization. The IBM Forward Deployed Units pitch is strongest when you’ve already attempted AI deployment and stalled. Document specifically what’s stuck, why, and what production looks like.",
+        "IBM Forward Deployed Units"
+      ],
+      "outcomes": [
+        "6-person pod can do the work of a 30-person team at materially better economics",
+        "Progress measured in working systems rather than slide decks",
+        "First named deployments moving AI from isolated pilots into production at scale"
+      ],
+      "metrics": [
+        "14%"
+      ],
+      "undisclosedFields": [
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "team_composition",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls"
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "sourceUrl": "https://ailearningguides.com/ibm-forward-deployed-units-ai-production",
+      "entityIds": [
+        "EN-916a98f0fa2a39af"
+      ]
+    },
+    {
+      "id": "FDE-a63e80944be39019",
+      "eventId": "EV-94e0afb44c320c99",
+      "dataDate": "2026-07-17",
+      "date": "2026-05-14",
+      "title": "PwC部署Claude为客户构建技术、执行交易并重塑企业职能 \\ Anthropic",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "PwC",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "Claude to build technology, execute deals, and reinvent enterprise functions for clients",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "PwC is deploying Claude to build technology, execute deals, and reinvent enterprise functions for clients \\ Anthropic",
+        "PwC is deploying Claude to build technology, execute deals, and reinvent enterprise functions for clients"
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://anthropic.com/news/pwc-expanded-partnership?939688b5_page=1",
+      "entityIds": [
+        "EN-e4ffb7bd879b89da",
+        "EN-c70eca6b0f88f44d"
       ]
     },
     {
@@ -170,22 +414,159 @@
       ]
     },
     {
-      "id": "FDE-a7e2c93aec6b5db7",
-      "eventId": "EV-aa6f83d2515ee546",
-      "dataDate": "2026-07-21",
-      "date": "2026-07-14",
-      "title": "从AI试飞到生产：前线部署工程师的角色",
-      "stage": "completed",
-      "stageLabel": "已完成",
-      "customer": "From AI",
-      "vendor": "未披露",
+      "id": "FDE-4edaa833d41055bd",
+      "eventId": "EV-53f4f2a34b3ce1b4",
+      "dataDate": "2026-07-16",
+      "date": "2026-06-17",
+      "title": "Rubrik 宣布即将集成 Amazon Bedrock AgentCore 以保护 AI 智能体",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Rubrik",
+      "vendor": "Rubrik Announces Upcoming",
+      "industry": "Security and AI Operations",
+      "useCase": "Amazon Bedrock AgentCore to Secure AI Agents",
+      "reportedNeed": "Cybersecurity leaders estimate that in the next year, half or more of attacks they face will be driven by agentic AI",
+      "deliveryComponents": [
+        "Rubrik Announces Upcoming Integration with Amazon Bedrock AgentCore to Secure AI Agents",
+        "AWS Summit -- Rubrik (NYSE: RBRK), the Security and AI Operations company, announced today its upcoming Rubrik Agent Cloud (RAC) integration with Amazon Bedrock AgentCore. The upcoming integration reflects Rubrik's commitment to extending the security controls customers already trust into agentic workflows.",
+        "\"Speed has always been the enterprise mandate, but today, safety is the prerequisite,\" said Devvret Rishi, General Manager AI, Rubrik. \"Cybersecurity leaders estimate that in the next year, half or more of attacks they face will be driven by agentic AI. Rubrik’s upcoming integration with AWS Bedrock AgentCore gives enterprises the confidence to deploy AI agents quickly with trustworthy governance.\""
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "sourceUrl": "https://markets.ft.com/data/announce/full?dockey=600-202606171200BIZWIRE_USPRX____20260617_BW107817-1",
+      "entityIds": [
+        "EN-ea87a2bd84296f73",
+        "EN-4094a2b7125c7564",
+        "EN-cbc62794911ff31b"
+      ]
+    },
+    {
+      "id": "FDE-8d7df617732e7c45",
+      "eventId": "EV-b2e374d54b10b9af",
+      "dataDate": "2026-07-16",
+      "date": "2026-06-04",
+      "title": "C3 AI 与壳牌扩大合作，在全球资产运营中规模化部署可靠性AI智能体",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "C3 AI",
+      "vendor": "Shell",
+      "industry": "Oil and gas",
+      "useCase": "Scaling Reliability AI Deployment Across Global Asset Operations",
+      "reportedNeed": "Reduce unplanned downtime and deliver economic value through operationalized enterprise AI for predictive maintenance",
+      "deliveryComponents": [
+        "C3 AI and Shell Expand Collaboration, Scaling Reliability AI Deployment Across Global Asset Operations"
+      ],
+      "outcomes": [
+        "Hundreds of millions of dollars in economic value from reduced unplanned downtime"
+      ],
+      "metrics": [],
+      "undisclosedFields": [
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls"
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "sourceUrl": "https://markets.ft.com/data/announce/full?dockey=600-202606040900BIZWIRE_USPRX____20260604_BW461527-1",
+      "entityIds": [
+        "EN-f48a4090493d2b5e",
+        "EN-f9ae78c09ff308f9",
+        "EN-ce635c4eabff5e4f",
+        "EN-9fbf261b62c1d7c0"
+      ]
+    },
+    {
+      "id": "FDE-08f12caedc3b2f13",
+      "eventId": "EV-8fcb52bb6ec980af",
+      "dataDate": "2026-07-15",
+      "date": "2026-05-27",
+      "title": "FuriosaAI与博通合作，为代理时代构建下一代推理平台",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "未披露",
+      "vendor": "FuriosaAI",
       "industry": "未披露",
-      "useCase": "Production: The Role of Forward Deployed Engineers",
+      "useCase": "Broadcom to build next-generation inference platform for the Agentic Era",
       "reportedNeed": "未披露",
       "deliveryComponents": [
-        "How a Forward Deployed Engineer Accelerates AI Deployment From Pilot to Production",
-        "How a Forward Deployed Engineer Accelerates AI Deployment From Pilot to Production",
-        "Most AI pilots never make it to production. Research from MIT’s NANDA initiative found that 95 percent of enterprise generative AI pilots deliver no measurable return on investment, and Gartner projects that 60 percent of AI projects lacking properly prepared data will be abandoned this year. A Forward Deployed Engineer is one of the clearest answers to that gap, because the role exists specifically to carry AI from a working demo into a system that a real business can depend on."
+        "The future of AI is not just about raw TFLOPS; it is about building a sustainable, efficient, and integrated infrastructure for all data centers. Through this partnership with Broadcom, and backed by the proven success of RNGD and our software stack, FuriosaAI is establishing the new standard for the world’s most demanding inference needs."
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "customer",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "sourceUrl": "https://furiosa.ai/blog/furiosaai-partners-with-broadcom-to-build-next-generation-inference-platform-for-the-agentic-era",
+      "entityIds": [
+        "EN-f4bec299df3f4f27",
+        "EN-373ac021a2c0bb2c",
+        "EN-c13e2f4a44bb01ed",
+        "EN-2a920347dfcf07a7"
+      ]
+    },
+    {
+      "id": "FDE-d693e68f89adf86a",
+      "eventId": "EV-01df8e489a34893b",
+      "dataDate": "2026-07-15",
+      "date": "2026-05-06",
+      "title": "ServiceNow 与埃森哲推出前沿部署工程计划，规模化企业级 AI 智能体应用",
+      "stage": "completed",
+      "stageLabel": "已完成",
+      "customer": "ServiceNow",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "engineering program to scale agentic AI across the enterprise",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "ServiceNow and Accenture launch forward deployed engineering program to scale agentic AI across the enterprise",
+        "Knowledge 2026 – Today, ServiceNow (NYSE: NOW), the AI control tower for business reinvention, and Accenture (NYSE: ACN) announced a forward deployed engineering (FDE) program to help enterprises take agentic AI from enterprise pilot to production at scale.",
+        "“Forward deployed engineering is how ServiceNow and Accenture turn mutual customers’ agentic AI business goals into value-generating production workloads,” said John Aisien , senior vice president and general manager, Central Product Management, Security & Risk at ServiceNow . “We're not simply handing over instructions. Our teams are in the customers’ environments, implementing ServiceNow , customer, and third-party building blocks, and demonstrating the resulting value metrics in the ServiceNow AI Control Tower .”",
+        "This press release contains “forward-looking statements” about the expectations, beliefs, plans, and intentions relating to ServiceNow and Accenture’s forward-deployed engineering program. Such statements include statements regarding future product capabilities and offerings and expected benefits to ServiceNow . Forward-looking statements are subject to known and unknown risks and uncertainties and are based on potentially inaccurate assumptions that could cause actual results to differ materially from those expected or implied by the forward-looking statements. If any such risks or uncertainties materialize or if any of the assumptions prove incorrect, ServiceNow’s results could differ materially from the results expressed or implied by the forward-looking statements made. ServiceNow undertakes no obligation, and does not intend, to update the forward-looking statements. Factors that may cause actual results to differ materially from those in any forward-looking statements include: (i) delays and unexpected difficulties and expenses in executing the product capabilities and offerings, (ii) changes in the regulatory landscape related to AI and (iii) uncertainty as to whether sales will justify the investments in the product capabilities and offerings. Further information on factors that could affect ServiceNow’s financial and other results is included in the filings ServiceNow makes with the Securities and Exchange Commission from time to time."
       ],
       "outcomes": [],
       "metrics": [],
@@ -202,10 +583,97 @@
         "governance_controls",
         "reported_outcomes"
       ],
-      "tags": [],
-      "sourceUrl": "https://manras.com/agentforce-fde",
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "sourceUrl": "https://markets.ft.com/data/announce/full?dockey=600-202605061300BIZWIRE_USPRX____20260506_BW338822-1",
       "entityIds": [
-        "EN-25690754dd14bd1b"
+        "EN-b5738c169b693bee",
+        "EN-4d748ebd71af03a7"
+      ]
+    },
+    {
+      "id": "FDE-26e5a1821fa5cbd0",
+      "eventId": "EV-ae7b6d0c134c9cad",
+      "dataDate": "2026-07-13",
+      "date": "2026-07-01",
+      "title": "JAKALA 借助 Claude 智能体将营销周期从 7 天缩短至 24 小时",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "JAKALA",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "Claude Enterprise to over 3,000 employees",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "rolled out Claude Enterprise to over 3,000 employees",
+        "deploying specialized Performance Agents across client media and marketing workflows"
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://theapplied.co/use-cases/how-jakala-cuts-campaign-cycles-from-7-days-to-24-hours-with-claude-agents",
+      "entityIds": [
+        "EN-89be33615acf235c",
+        "EN-c70eca6b0f88f44d"
+      ]
+    },
+    {
+      "id": "FDE-ae632d9d054f8219",
+      "eventId": "EV-fd7e79d3cb9cdb69",
+      "dataDate": "2026-07-13",
+      "date": "2026-06-25",
+      "title": "高通发布三款新数据中心解决方案，包括Dragonfly C1000 CPU，将由Meta部署",
+      "stage": "completed",
+      "stageLabel": "已完成",
+      "customer": "Meta",
+      "vendor": "Qualcomm",
+      "industry": "Data Center",
+      "useCase": "by Meta - DCD",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "Qualcomm unveils three new data center solutions including Dragonfly C1000 CPU, set to be deployed by Meta",
+        "Qualcomm said the chip features custom-designed Oryon CPU cores, which have been optimized to “deliver superior performance for agentic workload deployed at scale,” while its 250+ core-count chiplet design offers “exceptional throughput and scale” while delivering exceptional per-core performance. Delivering a reported 2x better performance per watt compared to existing product benchmarks for server CPU, the Dragonfly C1000 is expected to be commercially available in 2028."
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "sourceUrl": "https://datacenterdynamics.com/en/news/qualcomm-unveils-three-new-data-center-solutions-including-qualcomm-dragonfly-c1000-cpu-set-to-be-deployed-by-meta",
+      "entityIds": [
+        "EN-ea3bd73e2b506e00"
       ]
     },
     {
@@ -687,6 +1155,89 @@
       ]
     },
     {
+      "id": "FDE-c19b8c67ebeeae98",
+      "eventId": "EV-47a16db069ed320e",
+      "dataDate": "2026-07-03",
+      "date": "2026-07-02",
+      "title": "微软宣布斥资 25 亿美元成立新公司，助力企业落地人工智能技术",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Microsoft",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "人工智能技术",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [],
+      "outcomes": [],
+      "metrics": [
+        "10 亿"
+      ],
+      "undisclosedFields": [
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_delivery_components",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/971/911.htm",
+      "entityIds": [
+        "EN-9fbf261b62c1d7c0",
+        "EN-8d4321d936320802",
+        "EN-c70eca6b0f88f44d",
+        "EN-7d3194f79e645c42"
+      ]
+    },
+    {
+      "id": "FDE-fb386f863269b245",
+      "eventId": "EV-49c6291694fb6c7b",
+      "dataDate": "2026-07-03",
+      "date": "2026-07-02",
+      "title": "微软推出自有AI部署公司，投入25亿美元",
+      "stage": "completed",
+      "stageLabel": "已完成",
+      "customer": "Microsoft",
+      "vendor": "Amazon",
+      "industry": "未披露",
+      "useCase": "公司，投入25亿美元",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "In a statement announcing the venture, Microsoft’s Commercial Business CEO Judson Althoff resisted the Forward Deployed Engineer (FDE) label that is often applied to these ventures. “This goes beyond what has been labeled as Forward-Deployed Engineering,” Althoff wrote, “and will be the largest, most capable, outcome-driven engineering organization in the industry.”",
+        "Nonetheless, the venture bears a striking similarity to a number of FDE-based AI ventures announced in recent months. Just two days earlier , Amazon Web Services announced an internal commitment of $1 billion for its own AI deployment venture, explicitly embracing the FDE model. Both OpenAI and Anthropic have launched joint ventures along similar lines, although those efforts also involve outside capital from private equity firms.",
+        "Microsoft’s existing client base will give the new effort a significant head start, as the company has already deployed engineers to much of the Fortune 500. The announcement cites an early partnership with the London Stock Exchange Group, as well as Unilever, Land O’Lakes, and Accenture."
+      ],
+      "outcomes": [],
+      "metrics": [
+        "$1 billion"
+      ],
+      "undisclosedFields": [
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "team_composition",
+        "reported_need",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://techcrunch.com/2026/07/02/microsoft-launches-its-own-ai-deployment-company-with-2-5-billion-commitment",
+      "entityIds": [
+        "EN-9fbf261b62c1d7c0",
+        "EN-cbc62794911ff31b",
+        "EN-7d3194f79e645c42",
+        "EN-c70eca6b0f88f44d",
+        "EN-4d748ebd71af03a7"
+      ]
+    },
+    {
       "id": "FDE-8c57145ddc067b7d",
       "eventId": "EV-fe601e081c090971",
       "dataDate": "2026-07-02",
@@ -776,127 +1327,6 @@
         "EN-160077a1c92d0095",
         "EN-af7ddda9aad50840",
         "EN-b0532e1af75cc4ab"
-      ]
-    },
-    {
-      "id": "FDE-c19b8c67ebeeae98",
-      "eventId": "EV-47a16db069ed320e",
-      "dataDate": "2026-07-03",
-      "date": "2026-07-02",
-      "title": "微软宣布斥资 25 亿美元成立新公司，助力企业落地人工智能技术",
-      "stage": "announced",
-      "stageLabel": "已公布",
-      "customer": "Microsoft",
-      "vendor": "未披露",
-      "industry": "未披露",
-      "useCase": "人工智能技术",
-      "reportedNeed": "未披露",
-      "deliveryComponents": [],
-      "outcomes": [],
-      "metrics": [
-        "10 亿"
-      ],
-      "undisclosedFields": [
-        "vendor",
-        "industry",
-        "workflow_before",
-        "workflow_after",
-        "delivery_model",
-        "team_composition",
-        "reported_need",
-        "systems_integrated",
-        "data_requirements",
-        "governance_controls",
-        "reported_delivery_components",
-        "reported_outcomes"
-      ],
-      "tags": [],
-      "sourceUrl": "https://ithome.com/0/971/911.htm",
-      "entityIds": [
-        "EN-9fbf261b62c1d7c0",
-        "EN-8d4321d936320802",
-        "EN-c70eca6b0f88f44d",
-        "EN-7d3194f79e645c42"
-      ]
-    },
-    {
-      "id": "FDE-fb386f863269b245",
-      "eventId": "EV-49c6291694fb6c7b",
-      "dataDate": "2026-07-03",
-      "date": "2026-07-02",
-      "title": "微软推出自有AI部署公司，投入25亿美元",
-      "stage": "completed",
-      "stageLabel": "已完成",
-      "customer": "Microsoft",
-      "vendor": "Amazon",
-      "industry": "未披露",
-      "useCase": "公司，投入25亿美元",
-      "reportedNeed": "未披露",
-      "deliveryComponents": [
-        "In a statement announcing the venture, Microsoft’s Commercial Business CEO Judson Althoff resisted the Forward Deployed Engineer (FDE) label that is often applied to these ventures. “This goes beyond what has been labeled as Forward-Deployed Engineering,” Althoff wrote, “and will be the largest, most capable, outcome-driven engineering organization in the industry.”",
-        "Nonetheless, the venture bears a striking similarity to a number of FDE-based AI ventures announced in recent months. Just two days earlier , Amazon Web Services announced an internal commitment of $1 billion for its own AI deployment venture, explicitly embracing the FDE model. Both OpenAI and Anthropic have launched joint ventures along similar lines, although those efforts also involve outside capital from private equity firms.",
-        "Microsoft’s existing client base will give the new effort a significant head start, as the company has already deployed engineers to much of the Fortune 500. The announcement cites an early partnership with the London Stock Exchange Group, as well as Unilever, Land O’Lakes, and Accenture."
-      ],
-      "outcomes": [],
-      "metrics": [
-        "$1 billion"
-      ],
-      "undisclosedFields": [
-        "industry",
-        "workflow_before",
-        "workflow_after",
-        "team_composition",
-        "reported_need",
-        "data_requirements",
-        "governance_controls",
-        "reported_outcomes"
-      ],
-      "tags": [],
-      "sourceUrl": "https://techcrunch.com/2026/07/02/microsoft-launches-its-own-ai-deployment-company-with-2-5-billion-commitment",
-      "entityIds": [
-        "EN-9fbf261b62c1d7c0",
-        "EN-cbc62794911ff31b",
-        "EN-7d3194f79e645c42",
-        "EN-c70eca6b0f88f44d",
-        "EN-4d748ebd71af03a7"
-      ]
-    },
-    {
-      "id": "FDE-26e5a1821fa5cbd0",
-      "eventId": "EV-ae7b6d0c134c9cad",
-      "dataDate": "2026-07-13",
-      "date": "2026-07-01",
-      "title": "JAKALA 借助 Claude 智能体将营销周期从 7 天缩短至 24 小时",
-      "stage": "announced",
-      "stageLabel": "已公布",
-      "customer": "JAKALA",
-      "vendor": "未披露",
-      "industry": "未披露",
-      "useCase": "Claude Enterprise to over 3,000 employees",
-      "reportedNeed": "未披露",
-      "deliveryComponents": [
-        "rolled out Claude Enterprise to over 3,000 employees",
-        "deploying specialized Performance Agents across client media and marketing workflows"
-      ],
-      "outcomes": [],
-      "metrics": [],
-      "undisclosedFields": [
-        "vendor",
-        "industry",
-        "workflow_before",
-        "workflow_after",
-        "delivery_model",
-        "team_composition",
-        "reported_need",
-        "data_requirements",
-        "governance_controls",
-        "reported_outcomes"
-      ],
-      "tags": [],
-      "sourceUrl": "https://theapplied.co/use-cases/how-jakala-cuts-campaign-cycles-from-7-days-to-24-hours-with-claude-agents",
-      "entityIds": [
-        "EN-89be33615acf235c",
-        "EN-c70eca6b0f88f44d"
       ]
     },
     {
@@ -1032,6 +1462,177 @@
       ]
     },
     {
+      "id": "FDE-1fb7e2ae69d2f044",
+      "eventId": "EV-794296a712c1cf15",
+      "dataDate": "2026-06-29",
+      "date": "2026-06-24",
+      "title": "Infosys 与 Sentara 合作，解锁 AI 价值并规模化医疗服务业的企业 AI 应用",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Sentara",
+      "vendor": "Infosys",
+      "industry": "Healthcare",
+      "useCase": "with Sentara to Unlock AI Value and Scale Enterprise AI Adoption in Healthcare Services",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "Jamisson Fowler, SVP and Chief Digital Officer, Sentara, said, \"As we continue to advance our digital strategy, working with Infosys enables us to take a thoughtful and scalable approach to AI adoption across the enterprise. This collaboration helps ensure AI is deployed in ways that genuinely improve how our hospital teams work supporting efficiency, care delivery and the communities we serve while remaining secure, compliant and patient–centered.\""
+      ],
+      "outcomes": [
+        "Enhance efficiency, support clinicians and staff, and improve experiences for patients and members",
+        "Operate with greater speed, consistency and resilience",
+        "Real efficiency gains for clinicians, staff and patients"
+      ],
+      "metrics": [],
+      "undisclosedFields": [
+        "workflow_before",
+        "workflow_after",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls"
+      ],
+      "tags": [],
+      "sourceUrl": "https://prnewswire.com/news-releases/infosys-collaborates-with-sentara-to-unlock-ai-value-and-scale-enterprise-ai-adoption-in-healthcare-services-302809245.html",
+      "entityIds": [
+        "EN-ab877737b6081bd1"
+      ]
+    },
+    {
+      "id": "FDE-3e499215265a81d5",
+      "eventId": "EV-e869f17214557633",
+      "dataDate": "2026-06-29",
+      "date": "2026-06-23",
+      "title": "Talkdesk 终结客户服务 AI 部署中的猜测",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Talkdesk ends the guesswork in",
+      "vendor": "Talkdesk",
+      "industry": "Customer Experience Automation",
+      "useCase": "customer-facing AI",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "Talkdesk ends the guesswork in deploying customer-facing AI agents",
+        "By functioning as a specialized agent-building agent, the platform automatically ingests an enterprise’s existing raw assets, such as standard operating procedures and policies, and translates them into high-precision logical instructions and structured guardrails. Once new AI Agents are approved by a human operator and deployed, they’re continuously monitored, evaluated, and governed through the CXA Operations Center . This complete framework helps organizations grow their AI workforce without multiplying their operational risk.",
+        "PALO ALTO, Calif., June 23, 2026 (GLOBE NEWSWIRE) -- Talkdesk®, Inc. , a leader in Customer Experience Automation (CXA) , today announced Talkdesk Agent Builder, a natural language-driven tool that enables both business users and technical teams to oversee the complete lifecycle of their customer service AI agents . Customer experience (CX) leaders describe the outcome they want to achieve with natural language, and Agent Builder creates, tests, diagnoses, and validates the AI agent before it ever interacts with a customer. The result is a faster path to production, lower deployment risk, and the ability to build a trusted AI workforce in hours instead of weeks."
+      ],
+      "outcomes": [
+        "faster path to production",
+        "lower deployment risk",
+        "ability to build a trusted AI workforce in hours instead of weeks"
+      ],
+      "metrics": [],
+      "undisclosedFields": [
+        "workflow_before",
+        "workflow_after",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls"
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "sourceUrl": "https://globenewswire.com/news-release/2026/06/23/3316084/0/en/Talkdesk-ends-the-guesswork-in-deploying-customer-facing-AI-agents.html",
+      "entityIds": [
+        "EN-3474e24464fc25a7"
+      ]
+    },
+    {
+      "id": "FDE-9f64e1521dd2dea0",
+      "eventId": "EV-4dd25589d834060d",
+      "dataDate": "2026-06-29",
+      "date": "2026-06-17",
+      "title": "IndiaMART 与 SquadStack.ai 部署印度最大 AI 智能体系统 VANI，每日驱动超 10 万次自主买卖对话",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "IndiaMART",
+      "vendor": "未披露",
+      "industry": "B2B commerce",
+      "useCase": "India’s Largest Agentic AI System, VANI, Powering over 1 Lakh Autonomous Buyer-Seller Conversations Daily |",
+      "reportedNeed": "ensure quality conversation among buyers, maintain uniformity, and provide better customer experience",
+      "deliveryComponents": [],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "vendor",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_delivery_components",
+        "reported_outcomes"
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "sourceUrl": "https://businessnewsforprofit.com/technology/indiamart-and-squadstack-ai-deploy-indias-largest-agentic-ai-system-vani-powering-over-1-lakh-autonomous-buyer-seller-conversations-daily",
+      "entityIds": [
+        "EN-2fc9fff8ab7f35aa",
+        "EN-8efebac68a48c369",
+        "EN-96eebba49dbbf422"
+      ]
+    },
+    {
+      "id": "FDE-ab9c514225686f60",
+      "eventId": "EV-afd0332ad8f5f05b",
+      "dataDate": "2026-06-29",
+      "date": "2026-04-28",
+      "title": "CCS 部署企业级 AI 智能体，服务慢性病患者",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "CCS",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "enterprise-wide agentic AI for chronic care patients",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "The company, a provider of chronic care management and home-delivered medical supplies, has rolled out an agentic AI solution, dubbed CeeCee, that's designed to streamline the patient experience, improve medical supply workflows and boost operational efficiency, executives said.",
+        "The agentic AI tech was designed to simplify the complex patient experience for chronic care patients. It's being deployed for high-volume patient interactions that sit between clinical visits but directly impact adherence. And, unlike many current AI models, CeeCee is trained on CCS’s own proprietary knowledge and data to deliver empathetic, personalized support."
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "sourceUrl": "https://fiercehealthcare.com/ai-and-machine-learning/ccs-deploys-enterprise-wide-agentic-ai-across-chronic-care-operations",
+      "entityIds": [
+        "EN-8d291c7017252b07",
+        "EN-8147e6fed86d42c1"
+      ]
+    },
+    {
       "id": "FDE-e1b2683e8d017358",
       "eventId": "EV-86247a326e79bb88",
       "dataDate": "2026-06-28",
@@ -1065,6 +1666,43 @@
       "tags": [],
       "sourceUrl": "https://news.microsoft.com/source/emea/features/zavarovalnica-triglav-copilot-adoption-insurance",
       "entityIds": []
+    },
+    {
+      "id": "FDE-faf3a8cfcafef981",
+      "eventId": "EV-2fd730d0ad452334",
+      "dataDate": "2026-06-28",
+      "date": "2026-06-26",
+      "title": "Vaspian 与 BlueMesh 合作，将私有 AI 引入企业通信",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Vaspian",
+      "vendor": "Intel",
+      "industry": "未披露",
+      "useCase": "BlueMesh to Bring Private AI to Business Communications – IT Business Net",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "Vaspian’s partnership with BlueMesh is built on the opposite premise. BlueMesh is designed around private deployment and complete data ownership, supporting cloud, on-premises, and hybrid environments, with built-in data encryption, role-based access control, security guardrails, and the ability to run AI models on infrastructure the customer or Vaspian controls. That architecture is what allows Vaspian to make a claim most AI providers cannot: a customer’s data is analyzed for that customer’s benefit alone, and never pooled or used to train shared models. Learn more about Vaspian’s AI capabilities ."
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://itbusinessnet.com/2026/06/vaspian-partners-with-bluemesh-to-bring-private-ai-to-business-communications",
+      "entityIds": [
+        "EN-c890cfa67d1da908",
+        "EN-96eebba49dbbf422",
+        "EN-8147e6fed86d42c1"
+      ]
     },
     {
       "id": "FDE-06ef9b4e442caa9c",
@@ -1185,43 +1823,6 @@
       "entityIds": []
     },
     {
-      "id": "FDE-faf3a8cfcafef981",
-      "eventId": "EV-2fd730d0ad452334",
-      "dataDate": "2026-06-28",
-      "date": "2026-06-26",
-      "title": "Vaspian 与 BlueMesh 合作，将私有 AI 引入企业通信",
-      "stage": "announced",
-      "stageLabel": "已公布",
-      "customer": "Vaspian",
-      "vendor": "Intel",
-      "industry": "未披露",
-      "useCase": "BlueMesh to Bring Private AI to Business Communications – IT Business Net",
-      "reportedNeed": "未披露",
-      "deliveryComponents": [
-        "Vaspian’s partnership with BlueMesh is built on the opposite premise. BlueMesh is designed around private deployment and complete data ownership, supporting cloud, on-premises, and hybrid environments, with built-in data encryption, role-based access control, security guardrails, and the ability to run AI models on infrastructure the customer or Vaspian controls. That architecture is what allows Vaspian to make a claim most AI providers cannot: a customer’s data is analyzed for that customer’s benefit alone, and never pooled or used to train shared models. Learn more about Vaspian’s AI capabilities ."
-      ],
-      "outcomes": [],
-      "metrics": [],
-      "undisclosedFields": [
-        "industry",
-        "workflow_before",
-        "workflow_after",
-        "team_composition",
-        "reported_need",
-        "systems_integrated",
-        "data_requirements",
-        "governance_controls",
-        "reported_outcomes"
-      ],
-      "tags": [],
-      "sourceUrl": "https://itbusinessnet.com/2026/06/vaspian-partners-with-bluemesh-to-bring-private-ai-to-business-communications",
-      "entityIds": [
-        "EN-c890cfa67d1da908",
-        "EN-96eebba49dbbf422",
-        "EN-8147e6fed86d42c1"
-      ]
-    },
-    {
       "id": "FDE-a1c35f8b9ea1d489",
       "eventId": "EV-b95539d17772a4ce",
       "dataDate": "2026-06-25",
@@ -1276,47 +1877,6 @@
         "EN-4d748ebd71af03a7",
         "EN-bbdefa2950f49882",
         "EN-916a98f0fa2a39af"
-      ]
-    },
-    {
-      "id": "FDE-ae632d9d054f8219",
-      "eventId": "EV-fd7e79d3cb9cdb69",
-      "dataDate": "2026-07-13",
-      "date": "2026-06-25",
-      "title": "高通发布三款新数据中心解决方案，包括Dragonfly C1000 CPU，将由Meta部署",
-      "stage": "completed",
-      "stageLabel": "已完成",
-      "customer": "Meta",
-      "vendor": "Qualcomm",
-      "industry": "Data Center",
-      "useCase": "by Meta - DCD",
-      "reportedNeed": "未披露",
-      "deliveryComponents": [
-        "Qualcomm unveils three new data center solutions including Dragonfly C1000 CPU, set to be deployed by Meta",
-        "Qualcomm said the chip features custom-designed Oryon CPU cores, which have been optimized to “deliver superior performance for agentic workload deployed at scale,” while its 250+ core-count chiplet design offers “exceptional throughput and scale” while delivering exceptional per-core performance. Delivering a reported 2x better performance per watt compared to existing product benchmarks for server CPU, the Dragonfly C1000 is expected to be commercially available in 2028."
-      ],
-      "outcomes": [],
-      "metrics": [],
-      "undisclosedFields": [
-        "workflow_after",
-        "delivery_model",
-        "team_composition",
-        "reported_need",
-        "data_requirements",
-        "governance_controls",
-        "reported_outcomes"
-      ],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        }
-      ],
-      "sourceUrl": "https://datacenterdynamics.com/en/news/qualcomm-unveils-three-new-data-center-solutions-including-qualcomm-dragonfly-c1000-cpu-set-to-be-deployed-by-meta",
-      "entityIds": [
-        "EN-ea3bd73e2b506e00"
       ]
     },
     {
@@ -1414,43 +1974,6 @@
       ]
     },
     {
-      "id": "FDE-1fb7e2ae69d2f044",
-      "eventId": "EV-794296a712c1cf15",
-      "dataDate": "2026-06-29",
-      "date": "2026-06-24",
-      "title": "Infosys 与 Sentara 合作，解锁 AI 价值并规模化医疗服务业的企业 AI 应用",
-      "stage": "announced",
-      "stageLabel": "已公布",
-      "customer": "Sentara",
-      "vendor": "Infosys",
-      "industry": "Healthcare",
-      "useCase": "with Sentara to Unlock AI Value and Scale Enterprise AI Adoption in Healthcare Services",
-      "reportedNeed": "未披露",
-      "deliveryComponents": [
-        "Jamisson Fowler, SVP and Chief Digital Officer, Sentara, said, \"As we continue to advance our digital strategy, working with Infosys enables us to take a thoughtful and scalable approach to AI adoption across the enterprise. This collaboration helps ensure AI is deployed in ways that genuinely improve how our hospital teams work supporting efficiency, care delivery and the communities we serve while remaining secure, compliant and patient–centered.\""
-      ],
-      "outcomes": [
-        "Enhance efficiency, support clinicians and staff, and improve experiences for patients and members",
-        "Operate with greater speed, consistency and resilience",
-        "Real efficiency gains for clinicians, staff and patients"
-      ],
-      "metrics": [],
-      "undisclosedFields": [
-        "workflow_before",
-        "workflow_after",
-        "team_composition",
-        "reported_need",
-        "systems_integrated",
-        "data_requirements",
-        "governance_controls"
-      ],
-      "tags": [],
-      "sourceUrl": "https://prnewswire.com/news-releases/infosys-collaborates-with-sentara-to-unlock-ai-value-and-scale-enterprise-ai-adoption-in-healthcare-services-302809245.html",
-      "entityIds": [
-        "EN-ab877737b6081bd1"
-      ]
-    },
-    {
       "id": "FDE-1928d44823eb1c09",
       "eventId": "EV-67ef7accd26a07a0",
       "dataDate": "2026-06-23",
@@ -1489,48 +2012,42 @@
       ]
     },
     {
-      "id": "FDE-3e499215265a81d5",
-      "eventId": "EV-e869f17214557633",
-      "dataDate": "2026-06-29",
-      "date": "2026-06-23",
-      "title": "Talkdesk 终结客户服务 AI 部署中的猜测",
-      "stage": "announced",
-      "stageLabel": "已公布",
-      "customer": "Talkdesk ends the guesswork in",
-      "vendor": "Talkdesk",
-      "industry": "Customer Experience Automation",
-      "useCase": "customer-facing AI",
+      "id": "FDE-8f63ee695a479d40",
+      "eventId": "EV-538adc98d1da8fda",
+      "dataDate": "2026-06-23",
+      "date": "2026-06-22",
+      "title": "三星在韩国及全球DX部门部署ChatGPT Enterprise和Codex",
+      "stage": "completed",
+      "stageLabel": "已完成",
+      "customer": "Samsung",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "ChatGPT Enterprise和Codex",
       "reportedNeed": "未披露",
       "deliveryComponents": [
-        "Talkdesk ends the guesswork in deploying customer-facing AI agents",
-        "By functioning as a specialized agent-building agent, the platform automatically ingests an enterprise’s existing raw assets, such as standard operating procedures and policies, and translates them into high-precision logical instructions and structured guardrails. Once new AI Agents are approved by a human operator and deployed, they’re continuously monitored, evaluated, and governed through the CXA Operations Center . This complete framework helps organizations grow their AI workforce without multiplying their operational risk.",
-        "PALO ALTO, Calif., June 23, 2026 (GLOBE NEWSWIRE) -- Talkdesk®, Inc. , a leader in Customer Experience Automation (CXA) , today announced Talkdesk Agent Builder, a natural language-driven tool that enables both business users and technical teams to oversee the complete lifecycle of their customer service AI agents . Customer experience (CX) leaders describe the outcome they want to achieve with natural language, and Agent Builder creates, tests, diagnoses, and validates the AI agent before it ever interacts with a customer. The result is a faster path to production, lower deployment risk, and the ability to build a trusted AI workforce in hours instead of weeks."
+        "Samsung Electronics is deploying ChatGPT Enterprise and Codex to all employees in South Korea and everyone in its Device eXperience (DX) division worldwide.",
+        "Samsung Electronics is deploying ChatGPT Enterprise and Codex to all employees in South Korea and everyone in its Device eXperience (DX) division worldwide."
       ],
-      "outcomes": [
-        "faster path to production",
-        "lower deployment risk",
-        "ability to build a trusted AI workforce in hours instead of weeks"
-      ],
+      "outcomes": [],
       "metrics": [],
       "undisclosedFields": [
+        "vendor",
+        "industry",
         "workflow_before",
         "workflow_after",
+        "delivery_model",
+        "team_composition",
         "reported_need",
-        "systems_integrated",
         "data_requirements",
-        "governance_controls"
+        "governance_controls",
+        "reported_outcomes"
       ],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        }
-      ],
-      "sourceUrl": "https://globenewswire.com/news-release/2026/06/23/3316084/0/en/Talkdesk-ends-the-guesswork-in-deploying-customer-facing-AI-agents.html",
+      "tags": [],
+      "sourceUrl": "https://the-decoder.com/samsung-rolls-out-chatgpt-enterprise-and-codex-to-employees-in-south-korea",
       "entityIds": [
-        "EN-3474e24464fc25a7"
+        "EN-3a63fb227a4df26d",
+        "EN-968e2d5b08687bf4",
+        "EN-7d3194f79e645c42"
       ]
     },
     {
@@ -1644,45 +2161,6 @@
       ],
       "sourceUrl": "https://converteo.com/en/blog/deploy-ai-agent-production-lacoste",
       "entityIds": []
-    },
-    {
-      "id": "FDE-8f63ee695a479d40",
-      "eventId": "EV-538adc98d1da8fda",
-      "dataDate": "2026-06-23",
-      "date": "2026-06-22",
-      "title": "三星在韩国及全球DX部门部署ChatGPT Enterprise和Codex",
-      "stage": "completed",
-      "stageLabel": "已完成",
-      "customer": "Samsung",
-      "vendor": "未披露",
-      "industry": "未披露",
-      "useCase": "ChatGPT Enterprise和Codex",
-      "reportedNeed": "未披露",
-      "deliveryComponents": [
-        "Samsung Electronics is deploying ChatGPT Enterprise and Codex to all employees in South Korea and everyone in its Device eXperience (DX) division worldwide.",
-        "Samsung Electronics is deploying ChatGPT Enterprise and Codex to all employees in South Korea and everyone in its Device eXperience (DX) division worldwide."
-      ],
-      "outcomes": [],
-      "metrics": [],
-      "undisclosedFields": [
-        "vendor",
-        "industry",
-        "workflow_before",
-        "workflow_after",
-        "delivery_model",
-        "team_composition",
-        "reported_need",
-        "data_requirements",
-        "governance_controls",
-        "reported_outcomes"
-      ],
-      "tags": [],
-      "sourceUrl": "https://the-decoder.com/samsung-rolls-out-chatgpt-enterprise-and-codex-to-employees-in-south-korea",
-      "entityIds": [
-        "EN-3a63fb227a4df26d",
-        "EN-968e2d5b08687bf4",
-        "EN-7d3194f79e645c42"
-      ]
     },
     {
       "id": "FDE-a9fc583eb4065d4d",
@@ -1910,6 +2388,44 @@
       "entityIds": []
     },
     {
+      "id": "FDE-ae4c44cd0de9d48a",
+      "eventId": "EV-97747aee0cafd9f3",
+      "dataDate": "2026-06-19",
+      "date": "2026-06-18",
+      "title": "汇丰银行与Google Cloud扩大AI银行合作",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Google",
+      "vendor": "汇丰银行",
+      "industry": "未披露",
+      "useCase": "汇丰银行与Google Cloud扩大AI银行合作",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [],
+      "outcomes": [],
+      "metrics": [
+        "$100 million"
+      ],
+      "undisclosedFields": [
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "data_requirements",
+        "governance_controls",
+        "reported_delivery_components",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://artificialintelligence-news.com/news/hsbc-google-cloud-ai-partnership",
+      "entityIds": [
+        "EN-9b6ea48b511ffd60",
+        "EN-bbdefa2950f49882",
+        "EN-96eebba49dbbf422"
+      ]
+    },
+    {
       "id": "FDE-4c7d515b2beaad0a",
       "eventId": "EV-9884a0317e1e6ae7",
       "dataDate": "2026-06-18",
@@ -1990,131 +2506,6 @@
       ]
     },
     {
-      "id": "FDE-ae4c44cd0de9d48a",
-      "eventId": "EV-97747aee0cafd9f3",
-      "dataDate": "2026-06-19",
-      "date": "2026-06-18",
-      "title": "汇丰银行与Google Cloud扩大AI银行合作",
-      "stage": "announced",
-      "stageLabel": "已公布",
-      "customer": "Google",
-      "vendor": "汇丰银行",
-      "industry": "未披露",
-      "useCase": "汇丰银行与Google Cloud扩大AI银行合作",
-      "reportedNeed": "未披露",
-      "deliveryComponents": [],
-      "outcomes": [],
-      "metrics": [
-        "$100 million"
-      ],
-      "undisclosedFields": [
-        "industry",
-        "workflow_before",
-        "workflow_after",
-        "delivery_model",
-        "team_composition",
-        "reported_need",
-        "data_requirements",
-        "governance_controls",
-        "reported_delivery_components",
-        "reported_outcomes"
-      ],
-      "tags": [],
-      "sourceUrl": "https://artificialintelligence-news.com/news/hsbc-google-cloud-ai-partnership",
-      "entityIds": [
-        "EN-9b6ea48b511ffd60",
-        "EN-bbdefa2950f49882",
-        "EN-96eebba49dbbf422"
-      ]
-    },
-    {
-      "id": "FDE-4edaa833d41055bd",
-      "eventId": "EV-53f4f2a34b3ce1b4",
-      "dataDate": "2026-07-16",
-      "date": "2026-06-17",
-      "title": "Rubrik 宣布即将集成 Amazon Bedrock AgentCore 以保护 AI 智能体",
-      "stage": "announced",
-      "stageLabel": "已公布",
-      "customer": "Rubrik",
-      "vendor": "Rubrik Announces Upcoming",
-      "industry": "Security and AI Operations",
-      "useCase": "Amazon Bedrock AgentCore to Secure AI Agents",
-      "reportedNeed": "Cybersecurity leaders estimate that in the next year, half or more of attacks they face will be driven by agentic AI",
-      "deliveryComponents": [
-        "Rubrik Announces Upcoming Integration with Amazon Bedrock AgentCore to Secure AI Agents",
-        "AWS Summit -- Rubrik (NYSE: RBRK), the Security and AI Operations company, announced today its upcoming Rubrik Agent Cloud (RAC) integration with Amazon Bedrock AgentCore. The upcoming integration reflects Rubrik's commitment to extending the security controls customers already trust into agentic workflows.",
-        "\"Speed has always been the enterprise mandate, but today, safety is the prerequisite,\" said Devvret Rishi, General Manager AI, Rubrik. \"Cybersecurity leaders estimate that in the next year, half or more of attacks they face will be driven by agentic AI. Rubrik’s upcoming integration with AWS Bedrock AgentCore gives enterprises the confidence to deploy AI agents quickly with trustworthy governance.\""
-      ],
-      "outcomes": [],
-      "metrics": [],
-      "undisclosedFields": [
-        "workflow_before",
-        "workflow_after",
-        "delivery_model",
-        "team_composition",
-        "data_requirements",
-        "governance_controls",
-        "reported_outcomes"
-      ],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        }
-      ],
-      "sourceUrl": "https://markets.ft.com/data/announce/full?dockey=600-202606171200BIZWIRE_USPRX____20260617_BW107817-1",
-      "entityIds": [
-        "EN-ea87a2bd84296f73",
-        "EN-4094a2b7125c7564",
-        "EN-cbc62794911ff31b"
-      ]
-    },
-    {
-      "id": "FDE-9f64e1521dd2dea0",
-      "eventId": "EV-4dd25589d834060d",
-      "dataDate": "2026-06-29",
-      "date": "2026-06-17",
-      "title": "IndiaMART 与 SquadStack.ai 部署印度最大 AI 智能体系统 VANI，每日驱动超 10 万次自主买卖对话",
-      "stage": "announced",
-      "stageLabel": "已公布",
-      "customer": "IndiaMART",
-      "vendor": "未披露",
-      "industry": "B2B commerce",
-      "useCase": "India’s Largest Agentic AI System, VANI, Powering over 1 Lakh Autonomous Buyer-Seller Conversations Daily |",
-      "reportedNeed": "ensure quality conversation among buyers, maintain uniformity, and provide better customer experience",
-      "deliveryComponents": [],
-      "outcomes": [],
-      "metrics": [],
-      "undisclosedFields": [
-        "vendor",
-        "workflow_before",
-        "workflow_after",
-        "delivery_model",
-        "team_composition",
-        "systems_integrated",
-        "data_requirements",
-        "governance_controls",
-        "reported_delivery_components",
-        "reported_outcomes"
-      ],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        }
-      ],
-      "sourceUrl": "https://businessnewsforprofit.com/technology/indiamart-and-squadstack-ai-deploy-indias-largest-agentic-ai-system-vani-powering-over-1-lakh-autonomous-buyer-seller-conversations-daily",
-      "entityIds": [
-        "EN-2fc9fff8ab7f35aa",
-        "EN-8efebac68a48c369",
-        "EN-96eebba49dbbf422"
-      ]
-    },
-    {
       "id": "FDE-b366647aabd8f450",
       "eventId": "EV-451a70d4374c2818",
       "dataDate": "2026-06-16",
@@ -2186,41 +2577,47 @@
       "entityIds": []
     },
     {
-      "id": "FDE-9070c0b9565b7833",
-      "eventId": "EV-9e79f8d37a89e3b7",
-      "dataDate": "2026-07-22",
-      "date": "2026-06-12",
-      "title": "问答：AWS 风格的前线部署工程师",
-      "stage": "completed",
-      "stageLabel": "已完成",
-      "customer": "Q&A",
-      "vendor": "未披露",
-      "industry": "未披露",
-      "useCase": "engineers, AWS style – Computerworld",
-      "reportedNeed": "未披露",
+      "id": "FDE-226f304c9cf13a74",
+      "eventId": "EV-029d34e296397775",
+      "dataDate": "2026-06-15",
+      "date": "2026-04-12",
+      "title": "谷歌A2A代理市场正式上线：首个自然语言代理发现平台",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Google",
+      "vendor": "Google",
+      "industry": "Technology",
+      "useCase": "The First Natural Language Agent Discovery Platform | AgentMarketCap",
+      "reportedNeed": "Enterprise teams need a low-friction path to discover, evaluate, and deploy third-party AI agents with standardized interoperability and procurement.",
       "deliveryComponents": [
-        "Q&A: A look at forward-deployed engineers, AWS style",
-        "Hot AI companies can’t stop talking about forward-deployed engineers (FDEs), which are now very much in vogue."
+        "Google Cloud just made it possible to shop for AI agents the same way you ask a question — in plain English. The new AI Agent Marketplace, integrated directly into Google Cloud Marketplace, lets enterprise teams discover, evaluate, and deploy third-party agents built on the Agent2Agent (A2A) protocol using Gemini-powered natural language search. It is the first major cloud marketplace where the discovery layer itself is agentic.",
+        "For the Google Cloud Agent Marketplace specifically, this means listed agents can leverage MCP for their internal tool integrations while exposing A2A interfaces for inter-agent collaboration. An enterprise team deploying a ServiceNow ITSM agent alongside an Elastic observability agent can orchestrate them through A2A without either agent needing to understand the other's internal MCP tool connections.",
+        "For enterprise teams evaluating agent procurement strategy, the practical recommendation is straightforward: if you are already on Google Cloud, the Agent Marketplace is now the lowest-friction path to deploying third-party agents. If you are multi-cloud, watch for equivalent marketplace offerings from AWS and Azure — both have A2A support, and both have existing marketplace infrastructure that could host similar agent directories."
       ],
       "outcomes": [],
       "metrics": [],
       "undisclosedFields": [
-        "vendor",
-        "industry",
         "workflow_before",
         "workflow_after",
         "delivery_model",
         "team_composition",
-        "reported_need",
-        "systems_integrated",
         "data_requirements",
         "governance_controls",
         "reported_outcomes"
       ],
-      "tags": [],
-      "sourceUrl": "https://computerworld.com/article/4184226/qa-a-look-at-forward-deployed-engineers-aws-style.html",
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "sourceUrl": "https://agentmarketcap.ai/blog/2026/04/12/gemini-a2a-agent-marketplace-enterprise-discovery",
       "entityIds": [
-        "EN-353c23e3350fce45"
+        "EN-3aa7606e6aa345a3",
+        "EN-bbdefa2950f49882",
+        "EN-b5738c169b693bee"
       ]
     },
     {
@@ -2258,49 +2655,6 @@
       "entityIds": [
         "EN-c70eca6b0f88f44d",
         "EN-96eebba49dbbf422"
-      ]
-    },
-    {
-      "id": "FDE-d0a39c8df546833a",
-      "eventId": "EV-83b2e8f7fe679bc3",
-      "dataDate": "2026-06-06",
-      "date": "2026-06-07",
-      "title": "Travelers 借助 OpenAI Realtime API 在全国部署 AI 语音理赔助手",
-      "stage": "announced",
-      "stageLabel": "已公布",
-      "customer": "OpenAI",
-      "vendor": "Travelers",
-      "industry": "未披露",
-      "useCase": "AI-powered voice claims assistant nationwide with OpenAI Realtime API | keepingupwith.ai",
-      "reportedNeed": "未披露",
-      "deliveryComponents": [
-        "Travelers Insurance deployed a fully autonomous voice system powered by OpenAI’s Realtime API across all US states as of June 2, 2026, according to the OpenAI Blog. The AI Claim Assistant guides customers through first notice of loss for auto property damage claims using natural conversation, eliminating wait times and human involvement for routine filings. Between 85–90% of customers now complete their claim submission entirely through the AI system after the nationwide rollout, which occurred within two months of launching in eight pilot states.",
-        "The deployment addresses a critical operational constraint: Travelers processed more than 1.5 million claims and paid over $23 billion in losses last year, with catastrophe events alone capable of generating 100,000+ claims within days. By connecting OpenAI’s frontier models to its internal claims infrastructure and orchestration systems, Travelers enables 24/7 support that does not create bottlenecks during surge events, while claim professionals redirect their effort toward complex cases requiring human judgment.",
-        "Travelers SVP of Auto and Property Claims Patrick Gee credited OpenAI’s selection to the model’s ability to “perform in that environment”—a reference to the demanding requirements of low-latency, conversational voice interaction at enterprise scale. The Realtime API’s capacity to maintain natural dialogue while integrating with backend systems, retrieving policy details, and submitting structured claims data differentiated it from competing approaches."
-      ],
-      "outcomes": [],
-      "metrics": [
-        "90%",
-        "1.5 million",
-        "$23 billion"
-      ],
-      "undisclosedFields": [
-        "industry",
-        "workflow_before",
-        "workflow_after",
-        "delivery_model",
-        "team_composition",
-        "reported_need",
-        "systems_integrated",
-        "data_requirements",
-        "governance_controls",
-        "reported_outcomes"
-      ],
-      "tags": [],
-      "sourceUrl": "https://keepingupwith.ai/articles/travelers-deploys-ai-powered-voice-claims-assistant-nationwide-with-openai-realt",
-      "entityIds": [
-        "EN-bc8a00f7f6fb535f",
-        "EN-7d3194f79e645c42"
       ]
     },
     {
@@ -2353,6 +2707,49 @@
       ]
     },
     {
+      "id": "FDE-d0a39c8df546833a",
+      "eventId": "EV-83b2e8f7fe679bc3",
+      "dataDate": "2026-06-06",
+      "date": "2026-06-07",
+      "title": "Travelers 借助 OpenAI Realtime API 在全国部署 AI 语音理赔助手",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "OpenAI",
+      "vendor": "Travelers",
+      "industry": "未披露",
+      "useCase": "AI-powered voice claims assistant nationwide with OpenAI Realtime API | keepingupwith.ai",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "Travelers Insurance deployed a fully autonomous voice system powered by OpenAI’s Realtime API across all US states as of June 2, 2026, according to the OpenAI Blog. The AI Claim Assistant guides customers through first notice of loss for auto property damage claims using natural conversation, eliminating wait times and human involvement for routine filings. Between 85–90% of customers now complete their claim submission entirely through the AI system after the nationwide rollout, which occurred within two months of launching in eight pilot states.",
+        "The deployment addresses a critical operational constraint: Travelers processed more than 1.5 million claims and paid over $23 billion in losses last year, with catastrophe events alone capable of generating 100,000+ claims within days. By connecting OpenAI’s frontier models to its internal claims infrastructure and orchestration systems, Travelers enables 24/7 support that does not create bottlenecks during surge events, while claim professionals redirect their effort toward complex cases requiring human judgment.",
+        "Travelers SVP of Auto and Property Claims Patrick Gee credited OpenAI’s selection to the model’s ability to “perform in that environment”—a reference to the demanding requirements of low-latency, conversational voice interaction at enterprise scale. The Realtime API’s capacity to maintain natural dialogue while integrating with backend systems, retrieving policy details, and submitting structured claims data differentiated it from competing approaches."
+      ],
+      "outcomes": [],
+      "metrics": [
+        "90%",
+        "1.5 million",
+        "$23 billion"
+      ],
+      "undisclosedFields": [
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://keepingupwith.ai/articles/travelers-deploys-ai-powered-voice-claims-assistant-nationwide-with-openai-realt",
+      "entityIds": [
+        "EN-bc8a00f7f6fb535f",
+        "EN-7d3194f79e645c42"
+      ]
+    },
+    {
       "id": "FDE-c3c23efbdf4eecba",
       "eventId": "EV-2749b10fd85fc58c",
       "dataDate": "2026-06-05",
@@ -2389,51 +2786,6 @@
       "tags": [],
       "sourceUrl": "https://riseuplabs.com/cost-of-implementing-ai-in-business",
       "entityIds": []
-    },
-    {
-      "id": "FDE-8d7df617732e7c45",
-      "eventId": "EV-b2e374d54b10b9af",
-      "dataDate": "2026-07-16",
-      "date": "2026-06-04",
-      "title": "C3 AI 与壳牌扩大合作，在全球资产运营中规模化部署可靠性AI智能体",
-      "stage": "announced",
-      "stageLabel": "已公布",
-      "customer": "C3 AI",
-      "vendor": "Shell",
-      "industry": "Oil and gas",
-      "useCase": "Scaling Reliability AI Deployment Across Global Asset Operations",
-      "reportedNeed": "Reduce unplanned downtime and deliver economic value through operationalized enterprise AI for predictive maintenance",
-      "deliveryComponents": [
-        "C3 AI and Shell Expand Collaboration, Scaling Reliability AI Deployment Across Global Asset Operations"
-      ],
-      "outcomes": [
-        "Hundreds of millions of dollars in economic value from reduced unplanned downtime"
-      ],
-      "metrics": [],
-      "undisclosedFields": [
-        "workflow_before",
-        "workflow_after",
-        "delivery_model",
-        "team_composition",
-        "systems_integrated",
-        "data_requirements",
-        "governance_controls"
-      ],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        }
-      ],
-      "sourceUrl": "https://markets.ft.com/data/announce/full?dockey=600-202606040900BIZWIRE_USPRX____20260604_BW461527-1",
-      "entityIds": [
-        "EN-f48a4090493d2b5e",
-        "EN-f9ae78c09ff308f9",
-        "EN-ce635c4eabff5e4f",
-        "EN-9fbf261b62c1d7c0"
-      ]
     },
     {
       "id": "FDE-ef9fdaf8134b8c2f",
@@ -2629,53 +2981,6 @@
       ]
     },
     {
-      "id": "FDE-08f12caedc3b2f13",
-      "eventId": "EV-8fcb52bb6ec980af",
-      "dataDate": "2026-07-15",
-      "date": "2026-05-27",
-      "title": "FuriosaAI与博通合作，为代理时代构建下一代推理平台",
-      "stage": "announced",
-      "stageLabel": "已公布",
-      "customer": "未披露",
-      "vendor": "FuriosaAI",
-      "industry": "未披露",
-      "useCase": "Broadcom to build next-generation inference platform for the Agentic Era",
-      "reportedNeed": "未披露",
-      "deliveryComponents": [
-        "The future of AI is not just about raw TFLOPS; it is about building a sustainable, efficient, and integrated infrastructure for all data centers. Through this partnership with Broadcom, and backed by the proven success of RNGD and our software stack, FuriosaAI is establishing the new standard for the world’s most demanding inference needs."
-      ],
-      "outcomes": [],
-      "metrics": [],
-      "undisclosedFields": [
-        "customer",
-        "industry",
-        "workflow_before",
-        "workflow_after",
-        "delivery_model",
-        "team_composition",
-        "reported_need",
-        "systems_integrated",
-        "data_requirements",
-        "governance_controls",
-        "reported_outcomes"
-      ],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        }
-      ],
-      "sourceUrl": "https://furiosa.ai/blog/furiosaai-partners-with-broadcom-to-build-next-generation-inference-platform-for-the-agentic-era",
-      "entityIds": [
-        "EN-f4bec299df3f4f27",
-        "EN-373ac021a2c0bb2c",
-        "EN-c13e2f4a44bb01ed",
-        "EN-2a920347dfcf07a7"
-      ]
-    },
-    {
       "id": "FDE-27308b0a6cb2321a",
       "eventId": "EV-c0a65877001ed413",
       "dataDate": "2026-05-22",
@@ -2760,391 +3065,6 @@
       "entityIds": [
         "EN-6f30fa79d4bd8a3e",
         "EN-3ccbd9105a45d8fc"
-      ]
-    },
-    {
-      "id": "FDE-de1562b0634b20ed",
-      "eventId": "EV-bbc1042dcf5ad317",
-      "dataDate": "2026-07-17",
-      "date": "2026-05-15",
-      "title": "IBM 发布前线部署单元，将 AI 投入生产",
-      "stage": "planned",
-      "stageLabel": "计划中",
-      "customer": "IBM",
-      "vendor": "IBM",
-      "industry": "未披露",
-      "useCase": "Units to Ship AI in Production - AI Learning Guides",
-      "reportedNeed": "Bridging the gap between AI pilots and production deployments at scale",
-      "deliveryComponents": [
-        "IBM Consulting launched Forward Deployed Units (FDUs) yesterday, a service-delivery model built around six-person pods that combine domain specialists, architects, and engineers with a “digital workforce” of specialized AI agents handling coding, evaluation, testing, and documentation. IBM Forward Deployed Units claim a 6-person pod can do the work of a 30-person team at materially better economics, with progress measured in working systems rather than slide decks. The first named deployments — Riyadh Air, Nestlé, Heineken, and Pearson — are already moving AI from isolated pilots into production at scale, and IBM says FDU rollout is expanding rapidly across Asia Pacific, Europe, and the US.",
-        "The FDU model is IBM’s answer to the most-discussed problem in enterprise AI deployment in 2026: the gap between AI pilots that look great in demos and AI deployments that actually run in production. The reality across enterprises has been hard. Only 11-14% of enterprise AI agent pilots reached production at scale by mid-2026, with the rest stalling in integration, governance, and operational reliability issues. IBM’s bet is that the consulting-engagement model itself — armies of analysts, layered handoffs, slide-deck deliverables — is part of the problem, and that a smaller AI-augmented pod can ship faster precisely because it has less coordination overhead.",
-        "Define the production-AI gap in your organization. The IBM Forward Deployed Units pitch is strongest when you’ve already attempted AI deployment and stalled. Document specifically what’s stuck, why, and what production looks like.",
-        "IBM Forward Deployed Units"
-      ],
-      "outcomes": [
-        "6-person pod can do the work of a 30-person team at materially better economics",
-        "Progress measured in working systems rather than slide decks",
-        "First named deployments moving AI from isolated pilots into production at scale"
-      ],
-      "metrics": [
-        "14%"
-      ],
-      "undisclosedFields": [
-        "industry",
-        "workflow_before",
-        "workflow_after",
-        "team_composition",
-        "systems_integrated",
-        "data_requirements",
-        "governance_controls"
-      ],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        }
-      ],
-      "sourceUrl": "https://ailearningguides.com/ibm-forward-deployed-units-ai-production",
-      "entityIds": [
-        "EN-916a98f0fa2a39af"
-      ]
-    },
-    {
-      "id": "FDE-a63e80944be39019",
-      "eventId": "EV-94e0afb44c320c99",
-      "dataDate": "2026-07-17",
-      "date": "2026-05-14",
-      "title": "PwC部署Claude为客户构建技术、执行交易并重塑企业职能 \\ Anthropic",
-      "stage": "announced",
-      "stageLabel": "已公布",
-      "customer": "PwC",
-      "vendor": "未披露",
-      "industry": "未披露",
-      "useCase": "Claude to build technology, execute deals, and reinvent enterprise functions for clients",
-      "reportedNeed": "未披露",
-      "deliveryComponents": [
-        "PwC is deploying Claude to build technology, execute deals, and reinvent enterprise functions for clients \\ Anthropic",
-        "PwC is deploying Claude to build technology, execute deals, and reinvent enterprise functions for clients"
-      ],
-      "outcomes": [],
-      "metrics": [],
-      "undisclosedFields": [
-        "vendor",
-        "industry",
-        "workflow_before",
-        "workflow_after",
-        "delivery_model",
-        "team_composition",
-        "reported_need",
-        "data_requirements",
-        "governance_controls",
-        "reported_outcomes"
-      ],
-      "tags": [],
-      "sourceUrl": "https://anthropic.com/news/pwc-expanded-partnership?939688b5_page=1",
-      "entityIds": [
-        "EN-e4ffb7bd879b89da",
-        "EN-c70eca6b0f88f44d"
-      ]
-    },
-    {
-      "id": "FDE-d693e68f89adf86a",
-      "eventId": "EV-01df8e489a34893b",
-      "dataDate": "2026-07-15",
-      "date": "2026-05-06",
-      "title": "ServiceNow 与埃森哲推出前沿部署工程计划，规模化企业级 AI 智能体应用",
-      "stage": "completed",
-      "stageLabel": "已完成",
-      "customer": "ServiceNow",
-      "vendor": "未披露",
-      "industry": "未披露",
-      "useCase": "engineering program to scale agentic AI across the enterprise",
-      "reportedNeed": "未披露",
-      "deliveryComponents": [
-        "ServiceNow and Accenture launch forward deployed engineering program to scale agentic AI across the enterprise",
-        "Knowledge 2026 – Today, ServiceNow (NYSE: NOW), the AI control tower for business reinvention, and Accenture (NYSE: ACN) announced a forward deployed engineering (FDE) program to help enterprises take agentic AI from enterprise pilot to production at scale.",
-        "“Forward deployed engineering is how ServiceNow and Accenture turn mutual customers’ agentic AI business goals into value-generating production workloads,” said John Aisien , senior vice president and general manager, Central Product Management, Security & Risk at ServiceNow . “We're not simply handing over instructions. Our teams are in the customers’ environments, implementing ServiceNow , customer, and third-party building blocks, and demonstrating the resulting value metrics in the ServiceNow AI Control Tower .”",
-        "This press release contains “forward-looking statements” about the expectations, beliefs, plans, and intentions relating to ServiceNow and Accenture’s forward-deployed engineering program. Such statements include statements regarding future product capabilities and offerings and expected benefits to ServiceNow . Forward-looking statements are subject to known and unknown risks and uncertainties and are based on potentially inaccurate assumptions that could cause actual results to differ materially from those expected or implied by the forward-looking statements. If any such risks or uncertainties materialize or if any of the assumptions prove incorrect, ServiceNow’s results could differ materially from the results expressed or implied by the forward-looking statements made. ServiceNow undertakes no obligation, and does not intend, to update the forward-looking statements. Factors that may cause actual results to differ materially from those in any forward-looking statements include: (i) delays and unexpected difficulties and expenses in executing the product capabilities and offerings, (ii) changes in the regulatory landscape related to AI and (iii) uncertainty as to whether sales will justify the investments in the product capabilities and offerings. Further information on factors that could affect ServiceNow’s financial and other results is included in the filings ServiceNow makes with the Securities and Exchange Commission from time to time."
-      ],
-      "outcomes": [],
-      "metrics": [],
-      "undisclosedFields": [
-        "vendor",
-        "industry",
-        "workflow_before",
-        "workflow_after",
-        "delivery_model",
-        "team_composition",
-        "reported_need",
-        "systems_integrated",
-        "data_requirements",
-        "governance_controls",
-        "reported_outcomes"
-      ],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        }
-      ],
-      "sourceUrl": "https://markets.ft.com/data/announce/full?dockey=600-202605061300BIZWIRE_USPRX____20260506_BW338822-1",
-      "entityIds": [
-        "EN-b5738c169b693bee",
-        "EN-4d748ebd71af03a7"
-      ]
-    },
-    {
-      "id": "FDE-ab9c514225686f60",
-      "eventId": "EV-afd0332ad8f5f05b",
-      "dataDate": "2026-06-29",
-      "date": "2026-04-28",
-      "title": "CCS 部署企业级 AI 智能体，服务慢性病患者",
-      "stage": "announced",
-      "stageLabel": "已公布",
-      "customer": "CCS",
-      "vendor": "未披露",
-      "industry": "未披露",
-      "useCase": "enterprise-wide agentic AI for chronic care patients",
-      "reportedNeed": "未披露",
-      "deliveryComponents": [
-        "The company, a provider of chronic care management and home-delivered medical supplies, has rolled out an agentic AI solution, dubbed CeeCee, that's designed to streamline the patient experience, improve medical supply workflows and boost operational efficiency, executives said.",
-        "The agentic AI tech was designed to simplify the complex patient experience for chronic care patients. It's being deployed for high-volume patient interactions that sit between clinical visits but directly impact adherence. And, unlike many current AI models, CeeCee is trained on CCS’s own proprietary knowledge and data to deliver empathetic, personalized support."
-      ],
-      "outcomes": [],
-      "metrics": [],
-      "undisclosedFields": [
-        "vendor",
-        "industry",
-        "workflow_before",
-        "workflow_after",
-        "delivery_model",
-        "team_composition",
-        "reported_need",
-        "systems_integrated",
-        "data_requirements",
-        "governance_controls",
-        "reported_outcomes"
-      ],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        }
-      ],
-      "sourceUrl": "https://fiercehealthcare.com/ai-and-machine-learning/ccs-deploys-enterprise-wide-agentic-ai-across-chronic-care-operations",
-      "entityIds": [
-        "EN-8d291c7017252b07",
-        "EN-8147e6fed86d42c1"
-      ]
-    },
-    {
-      "id": "FDE-226f304c9cf13a74",
-      "eventId": "EV-029d34e296397775",
-      "dataDate": "2026-06-15",
-      "date": "2026-04-12",
-      "title": "谷歌A2A代理市场正式上线：首个自然语言代理发现平台",
-      "stage": "announced",
-      "stageLabel": "已公布",
-      "customer": "Google",
-      "vendor": "Google",
-      "industry": "Technology",
-      "useCase": "The First Natural Language Agent Discovery Platform | AgentMarketCap",
-      "reportedNeed": "Enterprise teams need a low-friction path to discover, evaluate, and deploy third-party AI agents with standardized interoperability and procurement.",
-      "deliveryComponents": [
-        "Google Cloud just made it possible to shop for AI agents the same way you ask a question — in plain English. The new AI Agent Marketplace, integrated directly into Google Cloud Marketplace, lets enterprise teams discover, evaluate, and deploy third-party agents built on the Agent2Agent (A2A) protocol using Gemini-powered natural language search. It is the first major cloud marketplace where the discovery layer itself is agentic.",
-        "For the Google Cloud Agent Marketplace specifically, this means listed agents can leverage MCP for their internal tool integrations while exposing A2A interfaces for inter-agent collaboration. An enterprise team deploying a ServiceNow ITSM agent alongside an Elastic observability agent can orchestrate them through A2A without either agent needing to understand the other's internal MCP tool connections.",
-        "For enterprise teams evaluating agent procurement strategy, the practical recommendation is straightforward: if you are already on Google Cloud, the Agent Marketplace is now the lowest-friction path to deploying third-party agents. If you are multi-cloud, watch for equivalent marketplace offerings from AWS and Azure — both have A2A support, and both have existing marketplace infrastructure that could host similar agent directories."
-      ],
-      "outcomes": [],
-      "metrics": [],
-      "undisclosedFields": [
-        "workflow_before",
-        "workflow_after",
-        "delivery_model",
-        "team_composition",
-        "data_requirements",
-        "governance_controls",
-        "reported_outcomes"
-      ],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        }
-      ],
-      "sourceUrl": "https://agentmarketcap.ai/blog/2026/04/12/gemini-a2a-agent-marketplace-enterprise-discovery",
-      "entityIds": [
-        "EN-3aa7606e6aa345a3",
-        "EN-bbdefa2950f49882",
-        "EN-b5738c169b693bee"
-      ]
-    },
-    {
-      "id": "FDE-cc943789fb1c3f3d",
-      "eventId": "EV-2c476cb7969f399b",
-      "dataDate": "2026-07-19",
-      "date": "2026-03-19",
-      "title": "前线部署工程师证明AI让技术岗位更人性化 - Salesforce",
-      "stage": "completed",
-      "stageLabel": "已完成",
-      "customer": "Salesforce",
-      "vendor": "Rime",
-      "industry": "未披露",
-      "useCase": "Engineers Are Proving AI Makes Tech Jobs More Human - Salesforce",
-      "reportedNeed": "companies adopt AI agents at breakneck speed but need expertise to actually deploy them",
-      "deliveryComponents": [
-        "How Forward Deployed Engineers Are Proving AI Makes Tech Jobs More Human",
-        "Sarah Khalid was three years into her career as a Success Architect at Salesforce when her team restructured and she found herself in a role she hadn’t planned on, couldn’t fully define, and wasn’t sure existed yet. “I didn’t plan on becoming an FDE,” she said. “It’s something that I grew into.” Forward deployed engineers (FDEs) saw an 800% spike in job postings between January and September 2025, according to an analysis by Indeed and the Financial Times, as companies adopt AI agents at breakneck speed but need expertise to actually deploy them. FDEs exist to close that gap. They code, consult, and translate agentic AI into working solutions, often while sitting side by side with the customer. Similar to when Harvard Business Review deemed data scientist “the sexiest job of the 21st century” due to a rare combination of technical chops and business savvy, both roles prove that transformative technology doesn’t eliminate jobs. It creates entirely new ones we couldn’t have imagined a few years prior. Now history is repeating itself, just faster. How do I know when AI is wrong, when AI is right, how it can solve the right problem?",
-        "” Around 40% to 50% of FDE movement at Salesforce is internal. The company built a six-week onboarding program in September 2025 with two weeks of focused technical training and four weeks on the job to bridge the gap. For anyone eyeing the role from the outside, Hickin’s advice is simple: “Become the AI expert in the job that you’re in. Experiment with the tool, figure out how it can solve problems in your team. Then you become a kind of quasi-FDE within your own job.” Related How We Cut Inference Spend by Right-Sizing Our Models 8 min read Slackbot Can Now Do Anything Salesforce Can. Just Ask. Trust builder AI has already changed what the job demands internally. FDEs once spent up to 40% of their time on administrative preparation, including summarizing meetings, pulling account histories, and drafting status updates. That’s largely automated now. “Now they can spend their time on hacking, building, figuring out the customer issue,” Hickin said. “Human jobs become more human.” Khalid explained what this looks like in practice: She once worked with a tech customer whose AI agent was targeting a 70% deflection rate for their customer service function. That figure became the North Star to add functionality, optimize, and move the needle. When they hit it, the customer expanded to a second use case. She also described a time when an insurance company demanded accuracy and response time targets. Khalid admitted that the technical side was hard. It required experimenting with different LLM models and prompt engineering on the back end. But what nearly derailed the engagement had nothing to do with code. This company, like many others, was experimenting with a variety of solutions. So she said, “It also required a lot of nontechnical skills: how to deal with that customer, how to make them not want to give up on Agentforce. And make them trust.” That account didn’t turn on a technical breakthrough. It turned on rebuilding confidence. “There’s not much coding involved,” Khalid reflected. “It’s actually more judgment, trust, and communication skills. And not something that AI can replace.” Work, redefined Back in 2012, the data scientist role looked like something only a narrow slice of specialists could do. A decade later, data literacy had become a baseline expectation across job functions. Hickin sees the FDE role charting the same arc. It won’t be a specialty forever but a leading indicator of where technical work is heading: closer to the customer, more dependent on judgment, and more human than the job title implies. Khalid, reflecting on the FDE acronym, has her own proposal: future defining engineers. “We’re not just defining the AI part,” she said. “We’re also defining how this role itself will shape out in the future.” It’s clever. And after what happened with data science, it’s hard to argue with. Go Deeper: Read why today’s hottest role is the forward deployed engineer Learn how Agentforce inspired three FDEs to return to Salesforce Learn how the role of the developer has changed in the agentic AI era",
-        "How Forward Deployed Engineers Are Proving AI Makes Tech Jobs More Human"
-      ],
-      "outcomes": [],
-      "metrics": [
-        "800%",
-        "40%",
-        "50%",
-        "40%",
-        "70%"
-      ],
-      "undisclosedFields": [
-        "industry",
-        "workflow_after",
-        "delivery_model",
-        "team_composition",
-        "systems_integrated",
-        "data_requirements",
-        "governance_controls",
-        "reported_outcomes"
-      ],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        }
-      ],
-      "sourceUrl": "https://salesforce.com/news/stories/forward-deployed-engineers-making-ai-jobs-more-human",
-      "entityIds": [
-        "EN-3ccbd9105a45d8fc",
-        "EN-b0532e1af75cc4ab"
-      ]
-    },
-    {
-      "id": "FDE-3665b073634d4b9d",
-      "eventId": "EV-05a87b578967c83e",
-      "dataDate": "2026-07-18",
-      "date": "2026-03-04",
-      "title": "Singtel Group 与 Sierra 合作，借助 AI 智能体革新客户互动体验",
-      "stage": "announced",
-      "stageLabel": "已公布",
-      "customer": "Sierra",
-      "vendor": "Singtel Group",
-      "industry": "未披露",
-      "useCase": "Sierra to transform customer engagement with AI | Sierra",
-      "reportedNeed": "More personalised experiences, greater convenience and faster, more responsive service",
-      "deliveryComponents": [
-        "Mr Ng Tian Chong, Chief Executive Officer, Singtel Singapore, said: “Putting our customers first has always been at the heart of what we do. The deployment of agentic AI across chat and voice is about delivering real value — more personalised experiences, greater convenience and faster, more responsive service. By using AI to support our customer service teams, we can ensure customers are promptly and well assisted, while empowering our agents to focus on more complex cases where human expertise matters most. Our AI agents are designed to understand local expressions and even Singlish, reflecting our roots as a homegrown company serving a diverse nation. This marks an important step in redefining how we build and sustain customer relationships in the AI era.”"
-      ],
-      "outcomes": [],
-      "metrics": [],
-      "undisclosedFields": [
-        "industry",
-        "systems_integrated",
-        "data_requirements",
-        "governance_controls",
-        "reported_outcomes"
-      ],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        }
-      ],
-      "sourceUrl": "https://sierra.ai/customers/singtel",
-      "entityIds": [
-        "EN-19e41212c0556603",
-        "EN-dca6ec9510fc0176"
-      ]
-    },
-    {
-      "id": "FDE-2a3615a93ffe5946",
-      "eventId": "EV-3c4d6d70ac763885",
-      "dataDate": "2026-07-19",
-      "date": "2026-02-19",
-      "title": "OpenAI 与咨询巨头达成合作，推进企业业务",
-      "stage": "announced",
-      "stageLabel": "已公布",
-      "customer": "未披露",
-      "vendor": "OpenAI",
-      "industry": "未披露",
-      "useCase": "Accenture, Boston Consulting Group, Capgemini, McKinsey & Co.",
-      "reportedNeed": "未披露",
-      "deliveryComponents": [],
-      "outcomes": [],
-      "metrics": [],
-      "undisclosedFields": [
-        "customer",
-        "industry",
-        "workflow_before",
-        "workflow_after",
-        "delivery_model",
-        "team_composition",
-        "reported_need",
-        "systems_integrated",
-        "data_requirements",
-        "governance_controls",
-        "reported_delivery_components",
-        "reported_outcomes"
-      ],
-      "tags": [],
-      "sourceUrl": "https://cnbc.com/2026/02/23/open-ai-consulting-accenture-boston-capgemini-mckinsey-frontier.html",
-      "entityIds": [
-        "EN-7d3194f79e645c42"
-      ]
-    },
-    {
-      "id": "FDE-1ef827152775919a",
-      "eventId": "EV-c24db606193b9dea",
-      "dataDate": "2026-07-20",
-      "date": "2017-09-07",
-      "title": "Lyft 与 Drive.ai 合作在湾区开展自动驾驶网约车试点",
-      "stage": "announced",
-      "stageLabel": "已公布",
-      "customer": "Lyft",
-      "vendor": "Drive.ai",
-      "industry": "Ride-hailing",
-      "useCase": "Lyft and Drive.ai partner on Bay Area self-driving ride-hailing pilot",
-      "reportedNeed": "未披露",
-      "deliveryComponents": [],
-      "outcomes": [],
-      "metrics": [],
-      "undisclosedFields": [
-        "workflow_before",
-        "workflow_after",
-        "delivery_model",
-        "team_composition",
-        "reported_need",
-        "systems_integrated",
-        "data_requirements",
-        "governance_controls",
-        "reported_delivery_components",
-        "reported_outcomes"
-      ],
-      "tags": [],
-      "sourceUrl": "https://techcrunch.com/2017/09/07/lyft-and-drive-ai-partner-on-bay-area-self-driving-ride-hailing-pilot",
-      "entityIds": [
-        "EN-09a2f4897466c7a5"
       ]
     }
   ],
@@ -22839,6 +22759,75 @@
       "publisher": "IT之家（RSS）"
     },
     {
+      "id": "EV-883d3b5f6d30eb48",
+      "dataDate": "2026-07-22",
+      "date": "2026-07-21",
+      "updatedDate": "2026-07-22",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "eventGroup": "AI 硬件",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "102.4Tbps：英伟达 Spectrum-6 交换系统落地全球超大规模 AI 工厂",
+      "originalTitle": "",
+      "subject": "102.4Tbps：英伟达 Spectrum-6",
+      "action": "交换系统落地",
+      "object": "全球超大规模 AI 工厂",
+      "metrics": [
+        "102.4Tb",
+        "102.4 Tb"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "manufacturing",
+            "dimensionName": "行业",
+            "name": "制造业"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "id": "manufacturing",
+          "dimensionName": "行业",
+          "name": "制造业"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "id": "manufacturing",
+          "dimensionName": "行业",
+          "name": "制造业"
+        }
+      ],
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-9fbf261b62c1d7c0",
+        "EN-6fcba5d96a4fadfd"
+      ],
+      "entityNames": [
+        "NVIDIA",
+        "Microsoft",
+        "xAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/979/791.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
       "id": "EV-95acc01f9b9a08ab",
       "dataDate": "2026-07-22",
       "date": "2026-07-21",
@@ -23049,72 +23038,6 @@
       "products": [],
       "sourceUrl": "https://the-decoder.com/microsoft-and-mistral-strike-multi-billion-dollar-deal-to-build-ai-infrastructure-across-europe",
       "publisher": "The Decoder AI News"
-    },
-    {
-      "id": "EV-ff77876694ab8395",
-      "dataDate": "2026-07-22",
-      "date": "2026-07-21",
-      "updatedDate": "2026-07-22",
-      "eventType": "deployment",
-      "eventTypeLabel": "部署",
-      "eventGroup": "部署与案例",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "102.4Tbps：英伟达 Spectrum-6 交换系统落地全球超大规模 AI 工厂",
-      "originalTitle": "",
-      "subject": "102.4Tbps：英伟达 Spectrum-6 交换系统",
-      "action": "落地",
-      "object": "全球超大规模 AI 工厂",
-      "metrics": [
-        "102.4Tb"
-      ],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "product_form": [],
-        "use_case": [],
-        "industry": [
-          {
-            "dimensionId": "industry",
-            "id": "manufacturing",
-            "dimensionName": "行业",
-            "name": "制造业"
-          }
-        ],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "industry",
-          "id": "manufacturing",
-          "dimensionName": "行业",
-          "name": "制造业"
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "industry",
-          "id": "manufacturing",
-          "dimensionName": "行业",
-          "name": "制造业"
-        }
-      ],
-      "entityIds": [
-        "EN-8d4321d936320802",
-        "EN-9fbf261b62c1d7c0"
-      ],
-      "entityNames": [
-        "NVIDIA",
-        "Microsoft"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://ithome.com/0/979/791.htm",
-      "publisher": "IT之家（RSS）"
     },
     {
       "id": "EV-4fba2b2f1ac10a79",
@@ -29338,47 +29261,6 @@
       "products": [],
       "sourceUrl": "https://ithome.com/0/964/150.htm",
       "publisher": "IT之家（RSS）"
-    },
-    {
-      "id": "EV-9e79f8d37a89e3b7",
-      "dataDate": "2026-07-22",
-      "date": "2026-06-12",
-      "updatedDate": "2026-07-22",
-      "eventType": "deployment",
-      "eventTypeLabel": "部署",
-      "eventGroup": "部署与案例",
-      "status": "completed",
-      "statusLabel": "已完成",
-      "publicationStatus": "verified",
-      "title": "问答：AWS 风格的前线部署工程师",
-      "originalTitle": "Q&A: A look at forward-deployed engineers, AWS style – Computerworld",
-      "subject": "Q&A: A look at forward-",
-      "action": "deployed",
-      "object": "engineers, AWS style – Computerworld",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [],
-      "displayTags": [],
-      "entityIds": [
-        "EN-353c23e3350fce45"
-      ],
-      "entityNames": [
-        "Q&A"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://computerworld.com/article/4184226/qa-a-look-at-forward-deployed-engineers-aws-style.html",
-      "publisher": "computerworld.com"
     },
     {
       "id": "EV-97fdf068afbbe555",
@@ -38980,21 +38862,21 @@
       "publisher": "The Decoder AI News"
     },
     {
-      "id": "EV-7e24db14146d39be",
+      "id": "EV-6654f62015eff8e3",
       "dataDate": "2026-07-22",
       "date": "2026-07-21",
       "updatedDate": "2026-07-22",
-      "eventType": "hardware_product",
-      "eventTypeLabel": "硬件产品",
-      "eventGroup": "AI 硬件",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
       "status": "completed",
       "statusLabel": "已完成",
       "publicationStatus": "verified",
       "title": "谷歌 DeepMind 发布 GenCeption：基于阿里 Wan2.1，打破计算机视觉桎梏",
       "originalTitle": "",
       "subject": "谷歌 DeepMind",
-      "action": "发布 GenCeption：基于阿里 Wan2.1，打破计算机",
-      "object": "视觉桎梏",
+      "action": "发布",
+      "object": "GenCeption：基于阿里 Wan2.1，打破计算机视觉桎梏",
       "metrics": [],
       "locations": [],
       "missingFields": [],
@@ -39034,28 +38916,28 @@
         "EN-2b6e51bec93e86c1",
         "EN-c9e6168149dd7cf6",
         "EN-047364b9be67f665",
-        "EN-4d09c69c19f5f67b",
-        "EN-92af3ce2fb97edf3"
+        "EN-92af3ce2fb97edf3",
+        "EN-4d09c69c19f5f67b"
       ],
       "entityNames": [
         "Google DeepMind",
         "谷歌 DeepMind",
         "Alibaba",
-        "DeepMind",
-        "GenCeption"
+        "GenCeption",
+        "DeepMind"
       ],
-      "productName": "DeepMind",
+      "productName": "GenCeption",
       "products": [
         {
-          "name": "DeepMind",
-          "type": "AI 硬件",
+          "name": "GenCeption",
+          "type": "产品/服务",
           "ownerNames": [
             "Google DeepMind"
           ]
         },
         {
-          "name": "GenCeption",
-          "type": "AI 硬件",
+          "name": "DeepMind",
+          "type": "产品/服务",
           "ownerNames": [
             "Google DeepMind"
           ]

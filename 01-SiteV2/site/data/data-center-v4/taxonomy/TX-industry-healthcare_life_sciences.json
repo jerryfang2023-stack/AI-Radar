@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-22T01:57:46.409Z",
+    "generatedAt": "2026-07-22T06:04:57.768Z",
     "latestDataDate": "2026-07-22",
     "currentDate": "2026-07-22",
-    "eventCount": 1401,
+    "eventCount": 1400,
     "quarantinedEventCount": 13
   },
   "node": {
@@ -4234,7 +4234,7 @@
         "EV-467d1a701d21327d",
         "EV-b4f69c41e23c7ce0",
         "EV-11b2293769081d4c",
-        "EV-ff77876694ab8395",
+        "EV-883d3b5f6d30eb48",
         "EV-cafe435ddd007821",
         "EV-ed388875bc004add",
         "EV-bc9abd502c002102",
@@ -4916,8 +4916,8 @@
         "EV-88f4ee8cd57bdf42",
         "EV-44a4e92c03a31ab1",
         "EV-7585b033d4005977",
+        "EV-883d3b5f6d30eb48",
         "EV-fa66f00e9d4b20c2",
-        "EV-ff77876694ab8395",
         "EV-4fba2b2f1ac10a79",
         "EV-bcb74b02448b7d78",
         "EV-47a16db069ed320e",
@@ -5829,6 +5829,52 @@
       ]
     },
     {
+      "id": "FDE-ab9c514225686f60",
+      "eventId": "EV-afd0332ad8f5f05b",
+      "dataDate": "2026-06-29",
+      "date": "2026-04-28",
+      "title": "CCS 部署企业级 AI 智能体，服务慢性病患者",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "CCS",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "enterprise-wide agentic AI for chronic care patients",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "The company, a provider of chronic care management and home-delivered medical supplies, has rolled out an agentic AI solution, dubbed CeeCee, that's designed to streamline the patient experience, improve medical supply workflows and boost operational efficiency, executives said.",
+        "The agentic AI tech was designed to simplify the complex patient experience for chronic care patients. It's being deployed for high-volume patient interactions that sit between clinical visits but directly impact adherence. And, unlike many current AI models, CeeCee is trained on CCS’s own proprietary knowledge and data to deliver empathetic, personalized support."
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "sourceUrl": "https://fiercehealthcare.com/ai-and-machine-learning/ccs-deploys-enterprise-wide-agentic-ai-across-chronic-care-operations",
+      "entityIds": [
+        "EN-8d291c7017252b07",
+        "EN-8147e6fed86d42c1"
+      ]
+    },
+    {
       "id": "FDE-0ee0fe3baa3f1364",
       "eventId": "EV-d1e2a7c6d314612c",
       "dataDate": "2026-06-21",
@@ -5928,52 +5974,6 @@
         "EN-28d0bd981118a907",
         "EN-9fbf261b62c1d7c0",
         "EN-7d3194f79e645c42"
-      ]
-    },
-    {
-      "id": "FDE-ab9c514225686f60",
-      "eventId": "EV-afd0332ad8f5f05b",
-      "dataDate": "2026-06-29",
-      "date": "2026-04-28",
-      "title": "CCS 部署企业级 AI 智能体，服务慢性病患者",
-      "stage": "announced",
-      "stageLabel": "已公布",
-      "customer": "CCS",
-      "vendor": "未披露",
-      "industry": "未披露",
-      "useCase": "enterprise-wide agentic AI for chronic care patients",
-      "reportedNeed": "未披露",
-      "deliveryComponents": [
-        "The company, a provider of chronic care management and home-delivered medical supplies, has rolled out an agentic AI solution, dubbed CeeCee, that's designed to streamline the patient experience, improve medical supply workflows and boost operational efficiency, executives said.",
-        "The agentic AI tech was designed to simplify the complex patient experience for chronic care patients. It's being deployed for high-volume patient interactions that sit between clinical visits but directly impact adherence. And, unlike many current AI models, CeeCee is trained on CCS’s own proprietary knowledge and data to deliver empathetic, personalized support."
-      ],
-      "outcomes": [],
-      "metrics": [],
-      "undisclosedFields": [
-        "vendor",
-        "industry",
-        "workflow_before",
-        "workflow_after",
-        "delivery_model",
-        "team_composition",
-        "reported_need",
-        "systems_integrated",
-        "data_requirements",
-        "governance_controls",
-        "reported_outcomes"
-      ],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        }
-      ],
-      "sourceUrl": "https://fiercehealthcare.com/ai-and-machine-learning/ccs-deploys-enterprise-wide-agentic-ai-across-chronic-care-operations",
-      "entityIds": [
-        "EN-8d291c7017252b07",
-        "EN-8147e6fed86d42c1"
       ]
     }
   ],

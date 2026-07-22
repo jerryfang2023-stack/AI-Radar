@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-22T01:57:46.409Z",
+    "generatedAt": "2026-07-22T06:04:57.768Z",
     "latestDataDate": "2026-07-22",
     "currentDate": "2026-07-22",
-    "eventCount": 1401,
+    "eventCount": 1400,
     "quarantinedEventCount": 13
   },
   "node": {
@@ -26,7 +26,7 @@
       "EV-59882383f82f215d",
       "EV-a84ec4216d3ded6d",
       "EV-b4f69c41e23c7ce0",
-      "EV-ff77876694ab8395",
+      "EV-883d3b5f6d30eb48",
       "EV-cafe435ddd007821",
       "EV-ff1f6119de13fa19",
       "EV-4dd25589d834060d",
@@ -70,6 +70,7 @@
       "EN-7706c3c94d5f9b59",
       "EN-01839aa42da88393",
       "EN-9fbf261b62c1d7c0",
+      "EN-6fcba5d96a4fadfd",
       "EN-59ae856cd788d0f5",
       "EN-0f3360879e746531",
       "EN-80d387ccb3289295",
@@ -115,10 +116,10 @@
       "EN-6c7575a43005188a"
     ],
     "fdeIds": [
-      "FDE-ab9846c6cdc82a26",
       "FDE-9f64e1521dd2dea0"
     ],
     "hardwareIds": [
+      "HW-c57ff6e49b40d839",
       "HW-ceb55d9bc637c1d3"
     ],
     "firstSeen": "2025-12-02",
@@ -1214,23 +1215,24 @@
       "publisher": "IT之家（RSS）"
     },
     {
-      "id": "EV-ff77876694ab8395",
+      "id": "EV-883d3b5f6d30eb48",
       "dataDate": "2026-07-22",
       "date": "2026-07-21",
       "updatedDate": "2026-07-22",
-      "eventType": "deployment",
-      "eventTypeLabel": "部署",
-      "eventGroup": "部署与案例",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "eventGroup": "AI 硬件",
       "status": "announced",
       "statusLabel": "已公布",
       "publicationStatus": "verified",
       "title": "102.4Tbps：英伟达 Spectrum-6 交换系统落地全球超大规模 AI 工厂",
       "originalTitle": "",
-      "subject": "102.4Tbps：英伟达 Spectrum-6 交换系统",
-      "action": "落地",
+      "subject": "102.4Tbps：英伟达 Spectrum-6",
+      "action": "交换系统落地",
       "object": "全球超大规模 AI 工厂",
       "metrics": [
-        "102.4Tb"
+        "102.4Tb",
+        "102.4 Tb"
       ],
       "locations": [],
       "missingFields": [],
@@ -1268,11 +1270,13 @@
       ],
       "entityIds": [
         "EN-8d4321d936320802",
-        "EN-9fbf261b62c1d7c0"
+        "EN-9fbf261b62c1d7c0",
+        "EN-6fcba5d96a4fadfd"
       ],
       "entityNames": [
         "NVIDIA",
-        "Microsoft"
+        "Microsoft",
+        "xAI"
       ],
       "productName": "",
       "products": [],
@@ -4306,7 +4310,7 @@
         "EV-467d1a701d21327d",
         "EV-b4f69c41e23c7ce0",
         "EV-11b2293769081d4c",
-        "EV-ff77876694ab8395",
+        "EV-883d3b5f6d30eb48",
         "EV-cafe435ddd007821",
         "EV-ed388875bc004add",
         "EV-bc9abd502c002102",
@@ -5341,8 +5345,8 @@
         "EV-88f4ee8cd57bdf42",
         "EV-44a4e92c03a31ab1",
         "EV-7585b033d4005977",
+        "EV-883d3b5f6d30eb48",
         "EV-fa66f00e9d4b20c2",
-        "EV-ff77876694ab8395",
         "EV-4fba2b2f1ac10a79",
         "EV-bcb74b02448b7d78",
         "EV-47a16db069ed320e",
@@ -5442,6 +5446,57 @@
         "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-02-13",
+      "lastSeen": "2026-07-22"
+    },
+    {
+      "id": "EN-6fcba5d96a4fadfd",
+      "name": "xAI",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-3daefecd0453631a",
+        "EV-edcb66d0401cfb8f",
+        "EV-5d581d112fdbd464",
+        "EV-201b25d4f3cf696a",
+        "EV-31df816db86db282",
+        "EV-883d3b5f6d30eb48",
+        "EV-e15ae1112294d59e",
+        "EV-43301de739fe560e",
+        "EV-2351415291cb9fcd",
+        "EV-e7b7df43970f7e2c",
+        "EV-377094da492a03d2",
+        "EV-ae736eb124d7163a",
+        "EV-bdcd6fc0caa8f6d4",
+        "EV-5012364af7480121",
+        "EV-e1a7e7dcb19bfc70",
+        "EV-10aac036228b3c6b",
+        "EV-ed58c2c69290ee4c",
+        "EV-631197767a45d34c",
+        "EV-d53cd33e8f541a65",
+        "EV-11a3893cb86fef69",
+        "EV-9578242a4df20721",
+        "EV-8cd571951f62b2c8",
+        "EV-bce258f8f915ff5f",
+        "EV-4beb890f0879aeaf"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
+        "TX-technology-code_generation",
+        "TX-use_case-robotics_automation",
+        "TX-use_case-software_development",
+        "TX-technology-tool_use"
+      ],
+      "relatedEntityIds": [
+        "EN-bac541b589c8a0d1"
+      ],
+      "firstSeen": "2026-05-25",
       "lastSeen": "2026-07-22"
     },
     {
@@ -6835,48 +6890,6 @@
   ],
   "fde": [
     {
-      "id": "FDE-ab9846c6cdc82a26",
-      "eventId": "EV-ff77876694ab8395",
-      "dataDate": "2026-07-22",
-      "date": "2026-07-21",
-      "title": "102.4Tbps：英伟达 Spectrum-6 交换系统落地全球超大规模 AI 工厂",
-      "stage": "announced",
-      "stageLabel": "已公布",
-      "customer": "NVIDIA",
-      "vendor": "未披露",
-      "industry": "未披露",
-      "useCase": "全球超大规模 AI 工厂",
-      "reportedNeed": "未披露",
-      "deliveryComponents": [
-        "英伟达表示 CoreWeave、Microsoft 和 Nebius 将率先部署基于 Vera Rubin、并结合 Spectrum-6 的基础设施，以扩展开发者、初创公司和企业对该平台的访问。",
-        "CoreWeave 产品网络总监 Min Jun 表示，Spectrum-6 和液冷的 Spectrum-X Ethernet 基础设施将帮助其提供训练前沿模型和更快部署推理所需的带宽、韧性和效率。"
-      ],
-      "outcomes": [],
-      "metrics": [
-        "102.4Tb",
-        "102.4Tb"
-      ],
-      "undisclosedFields": [
-        "vendor",
-        "industry",
-        "workflow_before",
-        "workflow_after",
-        "delivery_model",
-        "team_composition",
-        "reported_need",
-        "systems_integrated",
-        "data_requirements",
-        "governance_controls",
-        "reported_outcomes"
-      ],
-      "tags": [],
-      "sourceUrl": "https://ithome.com/0/979/791.htm",
-      "entityIds": [
-        "EN-8d4321d936320802",
-        "EN-9fbf261b62c1d7c0"
-      ]
-    },
-    {
       "id": "FDE-9f64e1521dd2dea0",
       "eventId": "EV-4dd25589d834060d",
       "dataDate": "2026-06-29",
@@ -6921,6 +6934,35 @@
     }
   ],
   "hardware": [
+    {
+      "id": "HW-c57ff6e49b40d839",
+      "eventId": "EV-883d3b5f6d30eb48",
+      "dataDate": "2026-07-22",
+      "date": "2026-07-21",
+      "title": "102.4Tbps：英伟达 Spectrum-6 交换系统落地全球超大规模 AI 工厂",
+      "hardwareType": "networking",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "computeLayer": "未披露",
+      "supplier": "未披露",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": 102.4,
+      "capacityUnit": "Tb",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/979/791.htm",
+      "sourceName": "IT之家（RSS）",
+      "sourceDate": "2026-07-21",
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-9fbf261b62c1d7c0",
+        "EN-6fcba5d96a4fadfd"
+      ]
+    },
     {
       "id": "HW-ceb55d9bc637c1d3",
       "eventId": "EV-cafe435ddd007821",
