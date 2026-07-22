@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-21T01:27:58.078Z",
-    "latestDataDate": "2026-07-21",
-    "currentDate": "2026-07-21",
-    "eventCount": 1347,
+    "generatedAt": "2026-07-22T01:57:46.409Z",
+    "latestDataDate": "2026-07-22",
+    "currentDate": "2026-07-22",
+    "eventCount": 1401,
     "quarantinedEventCount": 13
   },
   "entity": {
@@ -21,9 +21,9 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-8121a1ecdf168d8a",
       "EV-46b9ae8e68164b93",
       "EV-644337db309a1c82",
-      "EV-8121a1ecdf168d8a",
       "EV-b796ba14c4eba861",
       "EV-7e6e0470ea99a6eb"
     ],
@@ -33,9 +33,8 @@
       "EN-c70eca6b0f88f44d"
     ],
     "firstSeen": "2026-06-24",
-    "lastSeen": "2026-06-25",
+    "lastSeen": "2026-07-22",
     "relationIds": [
-      "REL2-1b8f173af3df59a0",
       "REL2-3f4a8fd041f39671",
       "REL2-78ddc08f12c7184d"
     ],
@@ -44,9 +43,9 @@
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-8121a1ecdf168d8a",
         "EV-46b9ae8e68164b93",
         "EV-644337db309a1c82",
-        "EV-8121a1ecdf168d8a",
         "EV-b796ba14c4eba861",
         "EV-7e6e0470ea99a6eb"
       ],
@@ -55,6 +54,24 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-8121a1ecdf168d8a",
+        "dataDate": "2026-07-22",
+        "date": "2026-07-21",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "与 Claude Code 团队的 Cat 和 Thariq 炉边谈话",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-d0a0acb9a5ef0560",
+          "EN-29da4a1636b822ee",
+          "EN-cb4754c48f8023d0"
+        ]
+      },
       {
         "id": "EV-46b9ae8e68164b93",
         "dataDate": "2026-06-25",
@@ -86,22 +103,6 @@
           "EN-c70eca6b0f88f44d",
           "EN-96eebba49dbbf422",
           "EN-7d3194f79e645c42",
-          "EN-d0a0acb9a5ef0560"
-        ]
-      },
-      {
-        "id": "EV-8121a1ecdf168d8a",
-        "dataDate": "2026-06-25",
-        "date": "2026-06-24",
-        "eventType": "product_release",
-        "eventTypeLabel": "产品发布",
-        "eventGroup": "模型、产品与服务",
-        "status": "announced",
-        "statusLabel": "已公布",
-        "title": "Claude Tag 嵌入 Slack，Anthropic 称内部 65% 的代码由该工具生成",
-        "displayTags": [],
-        "entityIds": [
-          "EN-c70eca6b0f88f44d",
           "EN-d0a0acb9a5ef0560"
         ]
       },
@@ -201,8 +202,14 @@
         "EV-8e01849c05b50355",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
-        "EV-684f286ef629ed0d",
+        "EV-4449950a89892852",
+        "EV-6ce069b1845f5a52",
+        "EV-071c72225b8aaf80",
         "EV-0d5a32aca724d30e",
+        "EV-3043858af3970696",
+        "EV-8121a1ecdf168d8a",
+        "EV-cd067fa6f39fe828",
+        "EV-684f286ef629ed0d",
         "EV-ab3e820aa6d92542",
         "EV-b20bf10af759bd43",
         "EV-eb97c388b3197c06",
@@ -294,7 +301,6 @@
         "EV-b26bead25288d19c",
         "EV-3ff2a155035d01e7",
         "EV-644337db309a1c82",
-        "EV-8121a1ecdf168d8a",
         "EV-b796ba14c4eba861",
         "EV-7e6e0470ea99a6eb",
         "EV-cb08f263d23e6c00",
@@ -351,6 +357,9 @@
         "EV-773ffcc6e1df56fa",
         "EV-2923b35d936d9f4e",
         "EV-cf496e0f8a56ca97",
+        "EV-33fba8931cca96d5",
+        "EV-22c88b4ff8c7d8d8",
+        "EV-bf8086947a2639d4",
         "EV-61053b02542f0fcc",
         "EV-e6a7926fdb42b95a",
         "EV-94e1f1a5cea15eae",
@@ -388,12 +397,14 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-technology",
         "TX-industry-financial_services",
         "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
         "TX-technology-code_generation",
         "TX-industry-healthcare_life_sciences",
+        "TX-industry-professional_services",
         "TX-use_case-software_development",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
@@ -419,6 +430,7 @@
         "EN-3a13916345b60fad",
         "EN-9f15bb7e29e191eb",
         "EN-5a4c2be958c0af72",
+        "EN-968e2d5b08687bf4",
         "EN-cb4754c48f8023d0",
         "EN-2c063f604e634100",
         "EN-bb5b6487f881bbb1",
@@ -433,28 +445,10 @@
         "EN-d8494bb34d6ddc43"
       ],
       "firstSeen": "2026-03-13",
-      "lastSeen": "2026-07-21"
+      "lastSeen": "2026-07-22"
     }
   ],
   "relationships": [
-    {
-      "relationship_id": "REL2-1b8f173af3df59a0",
-      "relationship_version": "RELATION-V2.0",
-      "subject_ref": "EN-c70eca6b0f88f44d",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-d0a0acb9a5ef0560",
-      "object_type": "entity",
-      "event_id": "EV-8121a1ecdf168d8a",
-      "claim_refs": [
-        "CL-bf4e4bccf67eb353"
-      ],
-      "source_refs": [
-        "SA-3873e99a21559efa"
-      ],
-      "data_date": "2026-06-25",
-      "status": "verified"
-    },
     {
       "relationship_id": "REL2-3f4a8fd041f39671",
       "relationship_version": "RELATION-V2.0",

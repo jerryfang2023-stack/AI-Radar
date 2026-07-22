@@ -1,0 +1,281 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-011",
+  "title": "Meta 开源 Astryx：含 150+ 无障碍组件、七种主题和 CLI 的 Agent 就绪 React 设计系统",
+  "title_zh": "Meta 开源 Astryx：含 150+ 无障碍组件、七种主题和 CLI 的 Agent 就绪 React 设计系统",
+  "title_translation_status": "not_required",
+  "title_translation_method": "source_title",
+  "title_translation_model": "",
+  "original_url": "https://www.marktechpost.com/2026/07/21/meta-open-sources-astryx-an-agent-ready-react-design-system-with-150-accessible-components-seven-themes-and-a-cli",
+  "canonical_url": "https://marktechpost.com/2026/07/21/meta-open-sources-astryx-an-agent-ready-react-design-system-with-150-accessible-components-seven-themes-and-a-cli",
+  "source_name": "MarkTechPost（RSS）",
+  "source_type": "web",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "event",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": false,
+  "enterprise_ai_transformation_stage": "",
+  "enterprise_ai_transformation_reason": "",
+  "author": "",
+  "published_at": "2026-07-21T08:49:55.000Z",
+  "collected_at": "2026-07-22T01:55:08.199Z",
+  "language": "mixed",
+  "full_text": "Editors Pick\nAgentic AI\nAI Agents\nTechnology\nAI Shorts\nArtificial Intelligence\nNew Releases\nOpen Source\nSoftware Engineering\nStaff\nTech News\nMeta has released Astryx , an open source design system that is fully customizable and built to be operated by both people and the AI agents working alongside them. It is available now in Beta. Astryx is not a new experiment. It grew inside Meta over the last eight years, where the company says it became its most-used and largest design system, shaped by the engineers, designers, and product teams who depend on it daily.\nThe system ships 150+ accessible components (the docs site now lists 160+), brand-level theming, dark mode, ready-to-ship templates, and a CLI as one cohesive package. It is built on React and StyleX . You import pre-built CSS and use typed React components. There is no build plugin to wire up and no styling library to adopt.\nThe trade-off Astryx is trying to remove\nMost design systems force a choice. Adopt a large company’s system and your app tends to look like someone else’s product. Reach for copy-paste components instead and every project forks its own snippets, with no shared coherence, no upstream fixes, and accessibility quietly becoming your problem.\nAstryx separates the two concerns. The system controls behavior, accessibility, and quality. Themes control how it looks. You customize at the token level (color, type, radius, motion) so the app becomes unmistakably yours without rewrites. A theme is simply a set of CSS custom property overrides, so a designer can retheme Astryx without forking or wrapping component source.\nIts stated design principles are guidance over enforcement , strong documented conventions , one system for humans and AI , and earned by measurement — conventions are tested, not asserted.\nArchitecture: foundations, components, patterns\nAstryx is organized in three layers. Foundations are the primitives for cohesive, accessible interfaces: typography, color, layout, and accessibility. Components are the 150+ reusable building blocks, all with full TypeScript support. Patterns are battle-tested solutions for common workflows: table pages, detail layouts, form wizards, navigation, and data-entry flows.\nTwo design decisions make it unusually open. Components are composed at any level rather than locked behind a closed top-level API, and swizzle can eject a component’s full source into your project when you need to own it. Styling is created with StyleX but stays invisible to consumers, so you can override with className using Tailwind, CSS modules, or plain CSS — whatever the project already uses. The explainer below shows how one set of components restyles across Astryx’s seven shipped themes when only the tokens change.\nAstryx Explainer — Marktechpost\nInteractive explainer\nOne system, many skins: how Astryx splits behavior from brand\nThe components below never change. Only the tokens do. Pick a theme, drag the sliders, and watch the same accessible React UI restyle with no rewrites.\n8 yrs In production\n13,000+ Apps at Meta\n150+ Components\n7 Themes\nMIT License\nReact 19 + StyleX\n1 · Choose a theme\n2 · Tune the tokens\nCorner radius 10 px\nDensity (padding) 14 px\nDark mode (built in)\n▸ Show the tokens this theme sets\ntheme: neutral\nNew\nMinimalist watch\nClean design, everyday durability.\n$248\nIn stock\nApply\nAdd to cart\nSame markup, same behavior — restyled only through CSS custom properties.\nUnder the hood · three layers\n01 Foundations\n02 Components\n03 Patterns\nExplore the real themes →\nInteractive explainer · palettes shown are representative · Marktechpost\nBuilt for agents, not retrofitted for them\nMeta frames Astryx as a response to how software is now written. As more code is produced by agents, the argument goes, design systems have to be rethought rather than patched. The API, conventions, docs, and CLI were designed together, so a person and an AI assistant build the same way from the same reference. Every change that made Astryx easier for AI, the team notes, made it easier for people too.\nThat shows up in the tooling. The CLI ( @astryxdesign/cli ) can list and scaffold templates , print full component docs, generate and build themes, run codemods to migrate versions, and surface machine-readable docs from the command line or over MCP . Components ship with consistent naming, prop, and composition rules, so once you learn a few, both people and models can predict how an unfamiliar one behaves.\nRequirements and how to deploy it\nBecause Astryx is a front-end library, ‘deploying’ it means adding it to a React app. The package ( @astryxdesign/core , referred to internally as XDS) lists React and react-dom ≥ 19.0.0 as peer dependencies, alongside StyleX. It ships pre-built CSS, so there is no PostCSS or Babel configuration to add. Supported setups include Next.js with Tailwind, Next.js with StyleX, Vite, and a no-build CDN path via the UMD bundle on unpkg or jsDelivr. The interactive checker below generates the exact install and setup steps for your stack and flags anything that needs to change first.\nAstryx Deployability Checker — Marktechpost\nIs it deployable?\nShip Astryx in your stack: requirements, setup, and a go / no-go verdict\nAstryx is a front-end design system, so “deploy” means dropping it into a React app. Answer three questions and get the exact install path, a requirements check, and whether you are clear to ship.\nFramework\nNext.js + Tailwind\nNext.js + StyleX\nVite / CRA\nNo build (CDN)\nReact version\nReact 19+\nReact 18 or lower\nPackage manager\nnpm\npnpm\nyarn\nUse case\nCommercial product\nOpen source\nClear to ship\nSetup for your stack\nCopy install\nPre-built CSS No PostCSS / Babel\nTyped + tree-shakeable Import per component\nDark mode Built in\nCLI + MCP Agent-ready docs\nFull getting-started guide →\nVerified against the core README · Marktechpost\nKey takeaways\nAstryx is Meta's largest internal design system, now open source under MIT.\n150+ accessible React components, seven themes, dark mode, templates, and a CLI.\nBehavior and accessibility live in the system; look lives in CSS-token themes.\nBuilt agent-first: one API, docs, and CLI (plus MCP) for humans and AI alike.\nRequires React 19+; ships pre-built CSS with no build plugin, and is currently Beta.\nSources: astryx.atmeta.com and github.com/facebook/astryx\nMichal Sutter\n+ posts Bio\nMichal Sutter is a data science professional with a Master of Science in Data Science from the University of Padova. With a solid foundation in statistical analysis, machine learning, and data engineering, Michal excels at transforming complex datasets into actionable insights.\nMichal Sutter\nSomeone Fine-Tuned OpenBMB’s MiniCPM5-1B on Claude Fable 5 Traces to Ship a 657MB Local Thinking Model\nMichal Sutter\nBest Local LLMs You Can Run on a Single 24GB GPU in 2026: Qwen, Gemma, Mistral, DeepSeek Compared\nMichal Sutter\n10 Open-Source No-Code AI Platforms for Building LLM Apps, RAG Systems, and AI Agents\nMichal Sutter\nKimi K3 vs DeepSeek V4 Pro vs GLM-5.2: Open Trillion-Scale MoE Models Compared on Benchmarks, License, and Serving Cost",
+  "clean_text": "Editors Pick\nAgentic AI\nAI Agents\nTechnology\nAI Shorts\nArtificial Intelligence\nNew Releases\nOpen Source\nSoftware Engineering\nStaff\nTech News\nMeta has released Astryx , an open source design system that is fully customizable and built to be operated by both people and the AI agents working alongside them. It is available now in Beta. Astryx is not a new experiment. It grew inside Meta over the last eight years, where the company says it became its most-used and largest design system, shaped by the engineers, designers, and product teams who depend on it daily.\nThe system ships 150+ accessible components (the docs site now lists 160+), brand-level theming, dark mode, ready-to-ship templates, and a CLI as one cohesive package. It is built on React and StyleX . You import pre-built CSS and use typed React components. There is no build plugin to wire up and no styling library to adopt.\nThe trade-off Astryx is trying to remove\nMost design systems force a choice. Adopt a large company’s system and your app tends to look like someone else’s product. Reach for copy-paste components instead and every project forks its own snippets, with no shared coherence, no upstream fixes, and accessibility quietly becoming your problem.\nAstryx separates the two concerns. The system controls behavior, accessibility, and quality. Themes control how it looks. You customize at the token level (color, type, radius, motion) so the app becomes unmistakably yours without rewrites. A theme is simply a set of CSS custom property overrides, so a designer can retheme Astryx without forking or wrapping component source.\nIts stated design principles are guidance over enforcement , strong documented conventions , one system for humans and AI , and earned by measurement — conventions are tested, not asserted.\nArchitecture: foundations, components, patterns\nAstryx is organized in three layers. Foundations are the primitives for cohesive, accessible interfaces: typography, color, layout, and accessibility. Components are the 150+ reusable building blocks, all with full TypeScript support. Patterns are battle-tested solutions for common workflows: table pages, detail layouts, form wizards, navigation, and data-entry flows.\nTwo design decisions make it unusually open. Components are composed at any level rather than locked behind a closed top-level API, and swizzle can eject a component’s full source into your project when you need to own it. Styling is created with StyleX but stays invisible to consumers, so you can override with className using Tailwind, CSS modules, or plain CSS — whatever the project already uses. The explainer below shows how one set of components restyles across Astryx’s seven shipped themes when only the tokens change.\nAstryx Explainer — Marktechpost\nInteractive explainer\nOne system, many skins: how Astryx splits behavior from brand\nThe components below never change. Only the tokens do. Pick a theme, drag the sliders, and watch the same accessible React UI restyle with no rewrites.\n8 yrs In production\n13,000+ Apps at Meta\n150+ Components\n7 Themes\nMIT License\nReact 19 + StyleX\n1 · Choose a theme\n2 · Tune the tokens\nCorner radius 10 px\nDensity (padding) 14 px\nDark mode (built in)\n▸ Show the tokens this theme sets\ntheme: neutral\nNew\nMinimalist watch\nClean design, everyday durability.\n$248\nIn stock\nApply\nAdd to cart\nSame markup, same behavior — restyled only through CSS custom properties.\nUnder the hood · three layers\n01 Foundations\n02 Components\n03 Patterns\nExplore the real themes →\nInteractive explainer · palettes shown are representative · Marktechpost\nBuilt for agents, not retrofitted for them\nMeta frames Astryx as a response to how software is now written. As more code is produced by agents, the argument goes, design systems have to be rethought rather than patched. The API, conventions, docs, and CLI were designed together, so a person and an AI assistant build the same way from the same reference. Every change that made Astryx easier for AI, the team notes, made it easier for people too.\nThat shows up in the tooling. The CLI ( @astryxdesign/cli ) can list and scaffold templates , print full component docs, generate and build themes, run codemods to migrate versions, and surface machine-readable docs from the command line or over MCP . Components ship with consistent naming, prop, and composition rules, so once you learn a few, both people and models can predict how an unfamiliar one behaves.\nRequirements and how to deploy it\nBecause Astryx is a front-end library, ‘deploying’ it means adding it to a React app. The package ( @astryxdesign/core , referred to internally as XDS) lists React and react-dom ≥ 19.0.0 as peer dependencies, alongside StyleX. It ships pre-built CSS, so there is no PostCSS or Babel configuration to add. Supported setups include Next.js with Tailwind, Next.js with StyleX, Vite, and a no-build CDN path via the UMD bundle on unpkg or jsDelivr. The interactive checker below generates the exact install and setup steps for your stack and flags anything that needs to change first.\nAstryx Deployability Checker — Marktechpost\nIs it deployable?\nShip Astryx in your stack: requirements, setup, and a go / no-go verdict\nAstryx is a front-end design system, so “deploy” means dropping it into a React app. Answer three questions and get the exact install path, a requirements check, and whether you are clear to ship.\nFramework\nNext.js + Tailwind\nNext.js + StyleX\nVite / CRA\nNo build (CDN)\nReact version\nReact 19+\nReact 18 or lower\nPackage manager\nnpm\npnpm\nyarn\nUse case\nCommercial product\nOpen source\nClear to ship\nSetup for your stack\nCopy install\nPre-built CSS No PostCSS / Babel\nTyped + tree-shakeable Import per component\nDark mode Built in\nCLI + MCP Agent-ready docs\nFull getting-started guide →\nVerified against the core README · Marktechpost\nKey takeaways\nAstryx is Meta's largest internal design system, now open source under MIT.\n150+ accessible React components, seven themes, dark mode, templates, and a CLI.\nBehavior and accessibility live in the system; look lives in CSS-token themes.\nBuilt agent-first: one API, docs, and CLI (plus MCP) for humans and AI alike.\nRequires React 19+; ships pre-built CSS with no build plugin, and is currently Beta.\nSources: astryx.atmeta.com and github.com/facebook/astryx\nMichal Sutter\n+ posts Bio\nMichal Sutter is a data science professional with a Master of Science in Data Science from the University of Padova. With a solid foundation in statistical analysis, machine learning, and data engineering, Michal excels at transforming complex datasets into actionable insights.\nMichal Sutter\nSomeone Fine-Tuned OpenBMB’s MiniCPM5-1B on Claude Fable 5 Traces to Ship a 657MB Local Thinking Model\nMichal Sutter\nBest Local LLMs You Can Run on a Single 24GB GPU in 2026: Qwen, Gemma, Mistral, DeepSeek Compared\nMichal Sutter\n10 Open-Source No-Code AI Platforms for Building LLM Apps, RAG Systems, and AI Agents\nMichal Sutter\nKimi K3 vs DeepSeek V4 Pro vs GLM-5.2: Open Trillion-Scale MoE Models Compared on Benchmarks, License, and Serving Cost",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-22/r-011-meta-开源-astryx-含-150-无障碍组件-七种主题和-cli-的-agent-就绪-react-设计系统.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-22/r-011-meta-开源-astryx-含-150-无障碍组件-七种主题和-cli-的-agent-就绪-react-设计系统.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-article",
+  "extraction_quality": "high",
+  "extraction_method": "article",
+  "readability_score": 94,
+  "extractor_diagnostics": {
+    "readability_score": 94,
+    "text_length": 7076,
+    "paragraph_count": 49,
+    "sentence_count": 52,
+    "boilerplate_hits": 1,
+    "symbol_ratio": 0,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "article"
+  },
+  "has_full_text": true,
+  "content_length": 7076,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "348d5f470d730055",
+    "missing": []
+  },
+  "evidence_strength": "rich_evidence",
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "Meta 开源 Astryx：含 150+ 无障碍组件、七种主题和 CLI 的 Agent 就绪 React 设计系统",
+    "discovery_summary": "Meta 开源了内部运行八年、覆盖 13，000+ 应用的 React 与 StyleX 设计系统 Astryx。它提供 150+ 无障碍组件、七种主题、暗色模式、模板及一个 Agent 就绪的 CLI，采用 MIT 许可，要求 React 19+。",
+    "source_name": "MarkTechPost（RSS）",
+    "origin_url": "https://www.marktechpost.com/2026/07/21/meta-open-sources-astryx-an-agent-ready-react-design-system-with-150-accessible-components-seven-themes-and-a-cli",
+    "discovered_at": "2026-07-22T01:46:55.188Z",
+    "rank_on_page": 299,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "749d86226e96d71a",
+  "content_hash": "348d5f470d730055",
+  "full_text_hash": "348d5f470d730055",
+  "semantic_hash": "71ce710b10343f39",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-21T08:49:55.000Z",
+  "last_seen_at": "2026-07-22T01:55:08.199Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "case_detail",
+      "text": "Meta 开源了内部运行八年、覆盖 13，000+ 应用的 React 与 StyleX 设计系统 Astryx。它提供 150+ 无障碍组件、七种主题、暗色模式、模板及一个 Agent 就绪的 CLI，采用 MIT 许可，要求 React 19+。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "product_update",
+      "text": "Editors Pick Agentic AI AI Agents Technology AI Shorts Artificial Intelligence New Releases Open Source Software Engineering Staff Tech News Meta has released Astryx , an open source design system that is fully customizable and built to be operated by both people and the AI agents working alongside them.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "It is available now in Beta.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Astryx is not a new experiment.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "opinion",
+      "text": "It grew inside Meta over the last eight years, where the company says it became its most-used and largest design system, shaped by the engineers, designers, and product teams who depend on it daily.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "viewpoint"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "The system ships 150+ accessible components (the docs site now lists 160+), brand-level theming, dark mode, ready-to-ship templates, and a CLI as one cohesive package.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-22T01:55:08.199Z",
+  "business_elements": {
+    "companies": [
+      "MarkTechPost（RSS）",
+      "GitHub",
+      "Meta",
+      "Mistral"
+    ],
+    "products": [
+      "Agent",
+      "Agents",
+      "agents",
+      "MCP",
+      "agent",
+      "Claude"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "计费 / 预算管理"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "部署 / 上线"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "财务 / 预算",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "150",
+      "13",
+      "000",
+      "19",
+      "160",
+      "8",
+      "7",
+      "1"
+    ],
+    "quotes": []
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Editors Pick Agentic AI AI Agents Technology AI Shorts Artificial Intelligence New Releases Open Source Software Engineering Staff Tech News Meta has released Astryx , an open source design system that is fully customizable and built to be operated by both people and the AI agents working alongside them.",
+      "It is available now in Beta.",
+      "Astryx is not a new experiment."
+    ],
+    "case_details": [
+      "Meta 开源了内部运行八年、覆盖 13，000+ 应用的 React 与 StyleX 设计系统 Astryx。它提供 150+ 无障碍组件、七种主题、暗色模式、模板及一个 Agent 就绪的 CLI，采用 MIT 许可，要求 React 19+。"
+    ],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_vertical_solution",
+    "importance_score": 5,
+    "importance_reason": "vertical industry solution; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": true,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": true,
+    "trend_candidate_context": true,
+    "signal_card_candidate": true,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "core_pool"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Meta 开源 Astryx：含 150+ 无障碍组件、七种主题和 CLI 的 Agent 就绪 React 设计系统\n\n- raw_id: R-011\n- title_zh: Meta 开源 Astryx：含 150+ 无障碍组件、七种主题和 CLI 的 Agent 就绪 React 设计系统\n- title_translation_status: not_required\n- title_translation_method: source_title\n- original_url: https://www.marktechpost.com/2026/07/21/meta-open-sources-astryx-an-agent-ready-react-design-system-with-150-accessible-components-seven-themes-and-a-cli\n- source_name: MarkTechPost（RSS）\n- collected_at: 2026-07-22T01:55:08.199Z\n\n## clean_text\n\nEditors Pick\nAgentic AI\nAI Agents\nTechnology\nAI Shorts\nArtificial Intelligence\nNew Releases\nOpen Source\nSoftware Engineering\nStaff\nTech News\nMeta has released Astryx , an open source design system that is fully customizable and built to be operated by both people and the AI agents working alongside them. It is available now in Beta. Astryx is not a new experiment. It grew inside Meta over the last eight years, where the company says it became its most-used and largest design system, shaped by the engineers, designers, and product teams who depend on it daily.\nThe system ships 150+ accessible components (the docs site now lists 160+), brand-level theming, dark mode, ready-to-ship templates, and a CLI as one cohesive package. It is built on React and StyleX . You import pre-built CSS and use typed React components. There is no build plugin to wire up and no styling library to adopt.\nThe trade-off Astryx is trying to remove\nMost design systems force a choice. Adopt a large company’s system and your app tends to look like someone else’s product. Reach for copy-paste components instead and every project forks its own snippets, with no shared coherence, no upstream fixes, and accessibility quietly becoming your problem.\nAstryx separates the two concerns. The system controls behavior, accessibility, and quality. Themes control how it looks. You customize at the token level (color, type, radius, motion) so the app becomes unmistakably yours without rewrites. A theme is simply a set of CSS custom property overrides, so a designer can retheme Astryx without forking or wrapping component source.\nIts stated design principles are guidance over enforcement , strong documented conventions , one system for humans and AI , and earned by measurement — conventions are tested, not asserted.\nArchitecture: foundations, components, patterns\nAstryx is organized in three layers. Foundations are the primitives for cohesive, accessible interfaces: typography, color, layout, and accessibility. Components are the 150+ reusable building blocks, all with full TypeScript support. Patterns are battle-tested solutions for common workflows: table pages, detail layouts, form wizards, navigation, and data-entry flows.\nTwo design decisions make it unusually open. Components are composed at any level rather than locked behind a closed top-level API, and swizzle can eject a component’s full source into your project when you need to own it. Styling is created with StyleX but stays invisible to consumers, so you can override with className using Tailwind, CSS modules, or plain CSS — whatever the project already uses. The explainer below shows how one set of components restyles across Astryx’s seven shipped themes when only the tokens change.\nAstryx Explainer — Marktechpost\nInteractive explainer\nOne system, many skins: how Astryx splits behavior from brand\nThe components below never change. Only the tokens do. Pick a theme, drag the sliders, and watch the same accessible React UI restyle with no rewrites.\n8 yrs In production\n13,000+ Apps at Meta\n150+ Components\n7 Themes\nMIT License\nReact 19 + StyleX\n1 · Choose a theme\n2 · Tune the tokens\nCorner radius 10 px\nDensity (padding) 14 px\nDark mode (built in)\n▸ Show the tokens this theme sets\ntheme: neutral\nNew\nMinimalist watch\nClean design, everyday durability.\n$248\nIn stock\nApply\nAdd to cart\nSame markup, same behavior — restyled only through CSS custom properties.\nUnder the hood · three layers\n01 Foundations\n02 Components\n03 Patterns\nExplore the real themes →\nInteractive explainer · palettes shown are representative · Marktechpost\nBuilt for agents, not retrofitted for them\nMeta frames Astryx as a response to how software is now written. As more code is produced by agents, the argument goes, design systems have to be rethought rather than patched. The API, conventions, docs, and CLI were designed together, so a person and an AI assistant build the same way from the same reference. Every change that made Astryx easier for AI, the team notes, made it easier for people too.\nThat shows up in the tooling. The CLI ( @astryxdesign/cli ) can list and scaffold templates , print full component docs, generate and build themes, run codemods to migrate versions, and surface machine-readable docs from the command line or over MCP . Components ship with consistent naming, prop, and composition rules, so once you learn a few, both people and models can predict how an unfamiliar one behaves.\nRequirements and how to deploy it\nBecause Astryx is a front-end library, ‘deploying’ it means adding it to a React app. The package ( @astryxdesign/core , referred to internally as XDS) lists React and react-dom ≥ 19.0.0 as peer dependencies, alongside StyleX. It ships pre-built CSS, so there is no PostCSS or Babel configuration to add. Supported setups include Next.js with Tailwind, Next.js with StyleX, Vite, and a no-build CDN path via the UMD bundle on unpkg or jsDelivr. The interactive checker below generates the exact install and setup steps for your stack and flags anything that needs to change first.\nAstryx Deployability Checker — Marktechpost\nIs it deployable?\nShip Astryx in your stack: requirements, setup, and a go / no-go verdict\nAstryx is a front-end design system, so “deploy” means dropping it into a React app. Answer three questions and get the exact install path, a requirements check, and whether you are clear to ship.\nFramework\nNext.js + Tailwind\nNext.js + StyleX\nVite / CRA\nNo build (CDN)\nReact version\nReact 19+\nReact 18 or lower\nPackage manager\nnpm\npnpm\nyarn\nUse case\nCommercial product\nOpen source\nClear to ship\nSetup for your stack\nCopy install\nPre-built CSS No PostCSS / Babel\nTyped + tree-shakeable Import per component\nDark mode Built in\nCLI + MCP Agent-ready docs\nFull getting-started guide →\nVerified against the core README · Marktechpost\nKey takeaways\nAstryx is Meta's largest internal design system, now open source under MIT.\n150+ accessible React components, seven themes, dark mode, templates, and a CLI.\nBehavior and accessibility live in the system; look lives in CSS-token themes.\nBuilt agent-first: one API, docs, and CLI (plus MCP) for humans and AI alike.\nRequires React 19+; ships pre-built CSS with no build plugin, and is currently Beta.\nSources: astryx.atmeta.com and github.com/facebook/astryx\nMichal Sutter\n+ posts Bio\nMichal Sutter is a data science professional with a Master of Science in Data Science from the University of Padova. With a solid foundation in statistical analysis, machine learning, and data engineering, Michal excels at transforming complex datasets into actionable insights.\nMichal Sutter\nSomeone Fine-Tuned OpenBMB’s MiniCPM5-1B on Claude Fable 5 Traces to Ship a 657MB Local Thinking Model\nMichal Sutter\nBest Local LLMs You Can Run on a Single 24GB GPU in 2026: Qwen, Gemma, Mistral, DeepSeek Compared\nMichal Sutter\n10 Open-Source No-Code AI Platforms for Building LLM Apps, RAG Systems, and AI Agents\nMichal Sutter\nKimi K3 vs DeepSeek V4 Pro vs GLM-5.2: Open Trillion-Scale MoE Models Compared on Benchmarks, License, and Serving Cost\n\n## full_text\n\nEditors Pick\nAgentic AI\nAI Agents\nTechnology\nAI Shorts\nArtificial Intelligence\nNew Releases\nOpen Source\nSoftware Engineering\nStaff\nTech News\nMeta has released Astryx , an open source design system that is fully customizable and built to be operated by both people and the AI agents working alongside them. It is available now in Beta. Astryx is not a new experiment. It grew inside Meta over the last eight years, where the company says it became its most-used and largest design system, shaped by the engineers, designers, and product teams who depend on it daily.\nThe system ships 150+ accessible components (the docs site now lists 160+), brand-level theming, dark mode, ready-to-ship templates, and a CLI as one cohesive package. It is built on React and StyleX . You import pre-built CSS and use typed React components. There is no build plugin to wire up and no styling library to adopt.\nThe trade-off Astryx is trying to remove\nMost design systems force a choice. Adopt a large company’s system and your app tends to look like someone else’s product. Reach for copy-paste components instead and every project forks its own snippets, with no shared coherence, no upstream fixes, and accessibility quietly becoming your problem.\nAstryx separates the two concerns. The system controls behavior, accessibility, and quality. Themes control how it looks. You customize at the token level (color, type, radius, motion) so the app becomes unmistakably yours without rewrites. A theme is simply a set of CSS custom property overrides, so a designer can retheme Astryx without forking or wrapping component source.\nIts stated design principles are guidance over enforcement , strong documented conventions , one system for humans and AI , and earned by measurement — conventions are tested, not asserted.\nArchitecture: foundations, components, patterns\nAstryx is organized in three layers. Foundations are the primitives for cohesive, accessible interfaces: typography, color, layout, and accessibility. Components are the 150+ reusable building blocks, all with full TypeScript support. Patterns are battle-tested solutions for common workflows: table pages, detail layouts, form wizards, navigation, and data-entry flows.\nTwo design decisions make it unusually open. Components are composed at any level rather than locked behind a closed top-level API, and swizzle can eject a component’s full source into your project when you need to own it. Styling is created with StyleX but stays invisible to consumers, so you can override with className using Tailwind, CSS modules, or plain CSS — whatever the project already uses. The explainer below shows how one set of components restyles across Astryx’s seven shipped themes when only the tokens change.\nAstryx Explainer — Marktechpost\nInteractive explainer\nOne system, many skins: how Astryx splits behavior from brand\nThe components below never change. Only the tokens do. Pick a theme, drag the sliders, and watch the same accessible React UI restyle with no rewrites.\n8 yrs In production\n13,000+ Apps at Meta\n150+ Components\n7 Themes\nMIT License\nReact 19 + StyleX\n1 · Choose a theme\n2 · Tune the tokens\nCorner radius 10 px\nDensity (padding) 14 px\nDark mode (built in)\n▸ Show the tokens this theme sets\ntheme: neutral\nNew\nMinimalist watch\nClean design, everyday durability.\n$248\nIn stock\nApply\nAdd to cart\nSame markup, same behavior — restyled only through CSS custom properties.\nUnder the hood · three layers\n01 Foundations\n02 Components\n03 Patterns\nExplore the real themes →\nInteractive explainer · palettes shown are representative · Marktechpost\nBuilt for agents, not retrofitted for them\nMeta frames Astryx as a response to how software is now written. As more code is produced by agents, the argument goes, design systems have to be rethought rather than patched. The API, conventions, docs, and CLI were designed together, so a person and an AI assistant build the same way from the same reference. Every change that made Astryx easier for AI, the team notes, made it easier for people too.\nThat shows up in the tooling. The CLI ( @astryxdesign/cli ) can list and scaffold templates , print full component docs, generate and build themes, run codemods to migrate versions, and surface machine-readable docs from the command line or over MCP . Components ship with consistent naming, prop, and composition rules, so once you learn a few, both people and models can predict how an unfamiliar one behaves.\nRequirements and how to deploy it\nBecause Astryx is a front-end library, ‘deploying’ it means adding it to a React app. The package ( @astryxdesign/core , referred to internally as XDS) lists React and react-dom ≥ 19.0.0 as peer dependencies, alongside StyleX. It ships pre-built CSS, so there is no PostCSS or Babel configuration to add. Supported setups include Next.js with Tailwind, Next.js with StyleX, Vite, and a no-build CDN path via the UMD bundle on unpkg or jsDelivr. The interactive checker below generates the exact install and setup steps for your stack and flags anything that needs to change first.\nAstryx Deployability Checker — Marktechpost\nIs it deployable?\nShip Astryx in your stack: requirements, setup, and a go / no-go verdict\nAstryx is a front-end design system, so “deploy” means dropping it into a React app. Answer three questions and get the exact install path, a requirements check, and whether you are clear to ship.\nFramework\nNext.js + Tailwind\nNext.js + StyleX\nVite / CRA\nNo build (CDN)\nReact version\nReact 19+\nReact 18 or lower\nPackage manager\nnpm\npnpm\nyarn\nUse case\nCommercial product\nOpen source\nClear to ship\nSetup for your stack\nCopy install\nPre-built CSS No PostCSS / Babel\nTyped + tree-shakeable Import per component\nDark mode Built in\nCLI + MCP Agent-ready docs\nFull getting-started guide →\nVerified against the core README · Marktechpost\nKey takeaways\nAstryx is Meta's largest internal design system, now open source under MIT.\n150+ accessible React components, seven themes, dark mode, templates, and a CLI.\nBehavior and accessibility live in the system; look lives in CSS-token themes.\nBuilt agent-first: one API, docs, and CLI (plus MCP) for humans and AI alike.\nRequires React 19+; ships pre-built CSS with no build plugin, and is currently Beta.\nSources: astryx.atmeta.com and github.com/facebook/astryx\nMichal Sutter\n+ posts Bio\nMichal Sutter is a data science professional with a Master of Science in Data Science from the University of Padova. With a solid foundation in statistical analysis, machine learning, and data engineering, Michal excels at transforming complex datasets into actionable insights.\nMichal Sutter\nSomeone Fine-Tuned OpenBMB’s MiniCPM5-1B on Claude Fable 5 Traces to Ship a 657MB Local Thinking Model\nMichal Sutter\nBest Local LLMs You Can Run on a Single 24GB GPU in 2026: Qwen, Gemma, Mistral, DeepSeek Compared\nMichal Sutter\n10 Open-Source No-Code AI Platforms for Building LLM Apps, RAG Systems, and AI Agents\nMichal Sutter\nKimi K3 vs DeepSeek V4 Pro vs GLM-5.2: Open Trillion-Scale MoE Models Compared on Benchmarks, License, and Serving Cost\n\n## extraction_diagnostics\n\n- extraction_method: article\n- readability_score: 94\n- fetch_status: fetched-readable-text-article\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [case_detail / signal_card_candidate, relationship_graph_input, case / high] Meta 开源了内部运行八年、覆盖 13，000+ 应用的 React 与 StyleX 设计系统 Astryx。它提供 150+ 无障碍组件、七种主题、暗色模式、模板及一个 Agent 就绪的 CLI，采用 MIT 许可，要求 React 19+。\n2. [product_update / signal_card_candidate, relationship_graph_input, business_change / high] Editors Pick Agentic AI AI Agents Technology AI Shorts Artificial Intelligence New Releases Open Source Software Engineering Staff Tech News Meta has released Astryx , an open source design system that is fully customizable and built to be operated by both people and the AI agents working alongside them.\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] It is available now in Beta.\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] Astryx is not a new experiment.\n5. [opinion / signal_card_candidate, relationship_graph_input, viewpoint / high] It grew inside Meta over the last eight years, where the company says it became its most-used and largest design system, shaped by the engineers, designers, and product teams who depend on it daily.\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] The system ships 150+ accessible components (the docs site now lists 160+), brand-level theming, dark mode, ready-to-ship templates, and a CLI as one cohesive package.\n"
+}

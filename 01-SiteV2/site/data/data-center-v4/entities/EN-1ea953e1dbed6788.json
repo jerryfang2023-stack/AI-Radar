@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-22T01:57:46.409Z",
+    "latestDataDate": "2026-07-22",
+    "currentDate": "2026-07-22",
+    "eventCount": 1401,
+    "quarantinedEventCount": 13
+  },
+  "entity": {
+    "id": "EN-1ea953e1dbed6788",
+    "name": "Alibaba's Qwen team",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-989631c550d89726"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-21",
+    "lastSeen": "2026-07-22",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-989631c550d89726"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-989631c550d89726",
+        "dataDate": "2026-07-22",
+        "date": "2026-07-21",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "阿里巴巴的Qwen-Image-3.0单次生成完整信息图网格及可读的十像素文字",
+        "displayTags": [],
+        "entityIds": [
+          "EN-1ea953e1dbed6788",
+          "EN-047364b9be67f665",
+          "EN-52e3d014f9a275ea"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

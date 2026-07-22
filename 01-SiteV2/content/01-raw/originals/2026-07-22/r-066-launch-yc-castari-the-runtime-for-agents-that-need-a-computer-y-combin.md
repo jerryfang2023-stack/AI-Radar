@@ -1,0 +1,327 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-066
+title: "Launch YC: Castari – The runtime for agents that need a computer | Y Combinator"
+title_zh: "Launch YC: Castari – 需要计算机的AI智能体运行时环境"
+title_translation_status: translated
+title_translation_method: deepseek_title_translation
+title_translation_model: deepseek-v4-flash
+original_url: "https://www.ycombinator.com/launches/PTN-castari-the-runtime-for-agents-that-need-a-computer"
+canonical_url: "https://ycombinator.com/launches/PTN-castari-the-runtime-for-agents-that-need-a-computer"
+source_name: "keyword search / Anysearch"
+source_type: funding
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_startups"
+search_path: "capital_startup"
+search_path_label: "资本与创业公司路径"
+author: ""
+published_at: ""
+collected_at: 2026-07-22T01:55:33.741Z
+language: mixed
+full_text_hash: e95650782d693403
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-22/r-066-launch-yc-castari-the-runtime-for-agents-that-need-a-computer-y-combin.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-22/r-066-launch-yc-castari-the-runtime-for-agents-that-need-a-computer-y-combin.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-body-visible-text
+extraction_quality: high
+extraction_method: "body-visible-text"
+readability_score: 84
+extractor_diagnostics: {"readability_score":84,"text_length":4013,"paragraph_count":47,"sentence_count":31,"boilerplate_hits":0,"symbol_ratio":0.0002,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"body-visible-text"}
+has_full_text: true
+content_length: 4013
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"e95650782d693403","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: c4394896f6a7c181
+content_hash: e95650782d693403
+semantic_hash: 00282c6fca526cac
+duplicate_of: ""
+first_seen_at: "2026-07-22T01:55:33.741Z"
+last_seen_at: 2026-07-22T01:55:33.741Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool","emerging_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","commercial_or_risk_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":5}
+business_elements: {"companies":["keyword search","Anysearch","OpenAI"],"products":["agents","agent","Claude","Agent"],"people":[],"industries":["开发者工具"],"roles":[],"workflows":["权限 / 安全治理"],"business_actions":["发布 / 推出","部署 / 上线"],"affected_departments":["IT / 安全","销售 / 客服"],"numbers":["5","5 m","2","051","2M","$100M","500","2m"],"quotes":["call an API and done.","prototype","production-safe"]}
+evidence_seed: {"company_actions":["Launch YC: Castari – The runtime for agents that need a computer | Y Combinator Home› Launches›MadeThis 5 # Castari – The runtime for agents that need a computer Your agent executes code, calls tools, and runs for hours. We give it a sandbox, an endpoint, and observability — with one command. #... / query=Y Combinator AI startup agent infra / intent=find_startups / path=capital_startup","Launch YC: Castari – The runtime for agents that need a computer | Y Combinator Home › Launches › MadeThis Castari – The runtime for agents that need a computer Your agent executes code, calls tools, and runs for hours.","We give it a sandbox, an endpoint, and observability — with one command."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"product_update","text":"Launch YC: Castari – The runtime for agents that need a computer | Y Combinator Home› Launches›MadeThis 5 # Castari – The runtime for agents that need a computer Your agent executes code, calls tools, and runs for hours. We give it a sandbox, an endpoint, and observability — with one command. #... / query=Y Combinator AI startup agent infra / intent=find_startups / path=capital_startup","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"high"},{"type":"product_update","text":"Launch YC: Castari – The runtime for agents that need a computer | Y Combinator Home › Launches › MadeThis Castari – The runtime for agents that need a computer Your agent executes code, calls tools, and runs for hours.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"We give it a sandbox, an endpoint, and observability — with one command.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Jacob Wright MadeThis 5 months ago Embed https://madethis.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"com #ai #operations TL;DR Castari is hosting infrastructure for agents that need more than an API call.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Run cast deploy and your agent gets a secure sandbox, auto-scaling endpoint, and full observability.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-22T01:55:33.741Z
+theme: capital-market-signal
+keyword_group: capital-market-signal
+copyright_note: local research archive only
+---
+
+# Launch YC: Castari – The runtime for agents that need a computer | Y Combinator
+
+## clean_text
+
+Launch YC: Castari – The runtime for agents that need a computer | Y Combinator
+Home › Launches › MadeThis
+Castari – The runtime for agents that need a computer
+Your agent executes code, calls tools, and runs for hours. We give it a sandbox, an endpoint, and observability — with one command.
+Jacob Wright
+MadeThis
+5 months ago
+Embed
+https://madethis.com #ai #operations
+TL;DR
+Castari is hosting infrastructure for agents that need more than an API call. Run cast deploy and your agent gets a secure sandbox, auto-scaling endpoint, and full observability.
+Public beta is live today.
+https://youtu.be/2fpCTj051kY
+The problem
+Serious agents aren’t just “call an API and done.”
+They execute code, hit tools and browsers, run for minutes to hours, and touch sensitive systems. Every team ends up rebuilding the same fragile setup:
+homegrown agentic harnesses
+stitched-together sandboxes/microVMs/containers/queues
+logs and traces scattered everywhere
+hacky snapshots and suspect secret handling
+So:
+every agent needs its own mini-runtime
+debugging one run is detective work
+adding a new agent feels like starting a new infra project
+Deploying agents that work great locally turns into wrangling infrastructure.
+The problem
+Serious agents aren't chatbots. They execute code, call tools, touch filesystems, and run for hours. They need a computer.
+But there's no good way to put them in production. You end up stitching together containers, queues, and compute layers — rebuilding the same infrastructure every team rebuilds. The agent works on your laptop. Getting it to work reliably for users takes weeks.
+We hit this ourselves. We built an AI consumer app to 2M+ members while at RunPod (scaled to $100M revenue). The hardest part was never the model — it was the harness. Every time we shipped a new agent, we were rebuilding sandboxing, scaling, secrets, and monitoring from scratch.
+What we built
+Castari wraps your agent in a secure sandbox and gives you back a production endpoint.
+npm install -g @castari/cli
+cast login
+cast deploy
+Your agent now has:
+Secure sandbox — full isolation. Your agent can safely execute code, use browsers, and access filesystems
+Auto-scaling endpoint — scales with demand, no capacity planning
+Observability — trace every tool call, decision, and output in real time
+Multi-model support — Claude, OpenAI, xAI, open source. Your code stays the same
+Zero lock-in — remove Castari and your agent still runs on vanilla Claude Agent SDK
+How we're different
+Most tools give you primitives — a sandbox API, a container runtime, a compute layer. You still stitch it together yourself.
+Castari wraps around your agent. You define it declaratively, we manage the lifecycle: provisioning, versioning, execution, scaling, teardown. You write agent logic, not infrastructure code.
+What's next
+Better tracing and observability — debug agent behavior in production, not after the fact
+Higher sandbox concurrency limits — run more agents in parallel
+Forever-running sandboxes — agents that stay alive indefinitely
+Why we’re working on this
+While I was leading the FDE team at RunPod:
+Built and shipped AI infrastructure and agents for Fortune 500s and fast-growing startups
+Watched the same loop repeat: agent works in a notebook → weeks disappear into infra glue → nobody trusts the system, production release gets delayed (over and over again).
+Additionally, while @Cambree Bernkopf and I scaled our AI consumer app to 2m+ users, our biggest issues were getting our agents to work reliably in production.
+The pattern is clear: agents deserve a first-class runtime, the way frontends got one.
+Castari is our bet that:
+Sandboxing & safety should be built-in, not bolted on
+Going from “prototype” to “production-safe” should be one config file, not a quarter-long project
+AI teams should ship agents, not infrastructure.
+Try it
+Docs: docs.castari.com
+Website: castari.com
+CLI: npm install -g @castari/cli
+Or email jacob@castari.com — happy to get you deployed.
+— Jacob & Cambree
+See All Launches ›
+
+## full_text
+
+Launch YC: Castari – The runtime for agents that need a computer | Y Combinator
+Home › Launches › MadeThis
+Castari – The runtime for agents that need a computer
+Your agent executes code, calls tools, and runs for hours. We give it a sandbox, an endpoint, and observability — with one command.
+Jacob Wright
+MadeThis
+5 months ago
+Embed
+https://madethis.com #ai #operations
+TL;DR
+Castari is hosting infrastructure for agents that need more than an API call. Run cast deploy and your agent gets a secure sandbox, auto-scaling endpoint, and full observability.
+Public beta is live today.
+https://youtu.be/2fpCTj051kY
+The problem
+Serious agents aren’t just “call an API and done.”
+They execute code, hit tools and browsers, run for minutes to hours, and touch sensitive systems. Every team ends up rebuilding the same fragile setup:
+homegrown agentic harnesses
+stitched-together sandboxes/microVMs/containers/queues
+logs and traces scattered everywhere
+hacky snapshots and suspect secret handling
+So:
+every agent needs its own mini-runtime
+debugging one run is detective work
+adding a new agent feels like starting a new infra project
+Deploying agents that work great locally turns into wrangling infrastructure.
+The problem
+Serious agents aren't chatbots. They execute code, call tools, touch filesystems, and run for hours. They need a computer.
+But there's no good way to put them in production. You end up stitching together containers, queues, and compute layers — rebuilding the same infrastructure every team rebuilds. The agent works on your laptop. Getting it to work reliably for users takes weeks.
+We hit this ourselves. We built an AI consumer app to 2M+ members while at RunPod (scaled to $100M revenue). The hardest part was never the model — it was the harness. Every time we shipped a new agent, we were rebuilding sandboxing, scaling, secrets, and monitoring from scratch.
+What we built
+Castari wraps your agent in a secure sandbox and gives you back a production endpoint.
+npm install -g @castari/cli
+cast login
+cast deploy
+Your agent now has:
+Secure sandbox — full isolation. Your agent can safely execute code, use browsers, and access filesystems
+Auto-scaling endpoint — scales with demand, no capacity planning
+Observability — trace every tool call, decision, and output in real time
+Multi-model support — Claude, OpenAI, xAI, open source. Your code stays the same
+Zero lock-in — remove Castari and your agent still runs on vanilla Claude Agent SDK
+How we're different
+Most tools give you primitives — a sandbox API, a container runtime, a compute layer. You still stitch it together yourself.
+Castari wraps around your agent. You define it declaratively, we manage the lifecycle: provisioning, versioning, execution, scaling, teardown. You write agent logic, not infrastructure code.
+What's next
+Better tracing and observability — debug agent behavior in production, not after the fact
+Higher sandbox concurrency limits — run more agents in parallel
+Forever-running sandboxes — agents that stay alive indefinitely
+Why we’re working on this
+While I was leading the FDE team at RunPod:
+Built and shipped AI infrastructure and agents for Fortune 500s and fast-growing startups
+Watched the same loop repeat: agent works in a notebook → weeks disappear into infra glue → nobody trusts the system, production release gets delayed (over and over again).
+Additionally, while @Cambree Bernkopf and I scaled our AI consumer app to 2m+ users, our biggest issues were getting our agents to work reliably in production.
+The pattern is clear: agents deserve a first-class runtime, the way frontends got one.
+Castari is our bet that:
+Sandboxing & safety should be built-in, not bolted on
+Going from “prototype” to “production-safe” should be one config file, not a quarter-long project
+AI teams should ship agents, not infrastructure.
+Try it
+Docs: docs.castari.com
+Website: castari.com
+CLI: npm install -g @castari/cli
+Or email jacob@castari.com — happy to get you deployed.
+— Jacob & Cambree
+See All Launches ›
+
+## extraction_diagnostics
+
+- extraction_method: body-visible-text
+- readability_score: 84
+- fetch_status: fetched-readable-text-body-visible-text
+- extraction_quality: high
+- diagnostics: {"readability_score":84,"text_length":4013,"paragraph_count":47,"sentence_count":31,"boilerplate_hits":0,"symbol_ratio":0.0002,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"body-visible-text"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **product_update**｜supports=signal_card_candidate, relationship_graph_input, business_change｜importance=medium｜confidence=high
+   Launch YC: Castari – The runtime for agents that need a computer | Y Combinator Home› Launches›MadeThis 5 # Castari – The runtime for agents that need a computer Your agent executes code, calls tools, and runs for hours. We give it a sandbox, an endpoint, and observability — with one command. #... / query=Y Combinator AI startup agent infra / intent=find_startups / path=capital_startup
+
+2. **product_update**｜supports=signal_card_candidate, relationship_graph_input, business_change｜importance=medium｜confidence=high
+   Launch YC: Castari – The runtime for agents that need a computer | Y Combinator Home › Launches › MadeThis Castari – The runtime for agents that need a computer Your agent executes code, calls tools, and runs for hours.
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   We give it a sandbox, an endpoint, and observability — with one command.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Jacob Wright MadeThis 5 months ago Embed https://madethis.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   com #ai #operations TL;DR Castari is hosting infrastructure for agents that need more than an API call.
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Run cast deploy and your agent gets a secure sandbox, auto-scaling endpoint, and full observability.
+
+## business_elements
+
+- companies: keyword search, Anysearch, OpenAI
+- products: agents, agent, Claude, Agent
+- people: 暂无公开信息
+- industries: 开发者工具
+- roles: 暂无公开信息
+- workflows: 权限 / 安全治理
+- business_actions: 发布 / 推出, 部署 / 上线
+- affected_departments: IT / 安全, 销售 / 客服
+- numbers: 5, 5 m, 2, 051, 2M, $100M, 500, 2m
+- quotes: call an API and done. / prototype / production-safe
+
+## evidence_seed
+
+- company_actions: Launch YC: Castari – The runtime for agents that need a computer | Y Combinator Home› Launches›MadeThis 5 # Castari – The runtime for agents that need a computer Your agent executes code, calls tools, and runs for hours. We give it a sandbox, an endpoint, and observability — with one command. #... / query=Y Combinator AI startup agent infra / intent=find_startups / path=capital_startup / Launch YC: Castari – The runtime for agents that need a computer | Y Combinator Home › Launches › MadeThis Castari – The runtime for agents that need a computer Your agent executes code, calls tools, and runs for hours. / We give it a sandbox, an endpoint, and observability — with one command.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,commercial_or_risk_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 5
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: true
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+- emerging_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Launch YC: Castari – The runtime for agents that need a computer | Y Combinator Home› Launches›MadeThis 5 # Castari – The runtime for agents that need a computer Your agent executes code, calls tools, and runs for hours. We give it a sandbox, an endpoint, and observability — with one command. #... / query=Y Combinator AI startup agent infra / intent=find_startups / path=capital_startup
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

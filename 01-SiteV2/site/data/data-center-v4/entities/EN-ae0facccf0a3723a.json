@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-21T01:27:58.078Z",
-    "latestDataDate": "2026-07-21",
-    "currentDate": "2026-07-21",
-    "eventCount": 1347,
+    "generatedAt": "2026-07-22T01:57:46.409Z",
+    "latestDataDate": "2026-07-22",
+    "currentDate": "2026-07-22",
+    "eventCount": 1401,
     "quarantinedEventCount": 13
   },
   "entity": {
@@ -22,13 +22,16 @@
     ],
     "eventIds": [
       "EV-4e8f6e91e4451ba1",
-      "EV-98dd0db65ab955f7"
+      "EV-98dd0db65ab955f7",
+      "EV-22c88b4ff8c7d8d8"
     ],
     "viewpointIds": [],
-    "classificationRefs": [],
+    "classificationRefs": [
+      "TX-industry-professional_services"
+    ],
     "relatedEntityIds": [],
     "firstSeen": "2026-07-15",
-    "lastSeen": "2026-07-19",
+    "lastSeen": "2026-07-22",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -40,9 +43,40 @@
         "EV-98dd0db65ab955f7"
       ],
       "organizationPeople": [],
-      "other": []
+      "other": [
+        "EV-22c88b4ff8c7d8d8"
+      ]
     },
     "timeline": [
+      {
+        "id": "EV-22c88b4ff8c7d8d8",
+        "dataDate": "2026-07-22",
+        "date": "2026-07-21",
+        "eventType": "lawsuit_settlement",
+        "eventTypeLabel": "诉讼与和解",
+        "eventGroup": "组织、政策与法律",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Anthropic 的 15 亿美元图书盗版和解协议获法官批准",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          },
+          {
+            "dimensionId": "industry",
+            "id": "professional_services",
+            "dimensionName": "行业",
+            "name": "专业服务"
+          }
+        ],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-ae0facccf0a3723a"
+        ]
+      },
       {
         "id": "EV-4e8f6e91e4451ba1",
         "dataDate": "2026-07-19",
@@ -100,7 +134,38 @@
   },
   "relatedEntities": [],
   "relationships": [],
-  "taxonomyNodes": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-industry-professional_services",
+      "name": "专业服务",
+      "nodeType": "industry",
+      "typeLabel": "行业",
+      "valueId": "professional_services",
+      "eventIds": [
+        "EV-0f520c9e5b1ea1d2",
+        "EV-e1e0a38da122caed",
+        "EV-39717cdbada984d7",
+        "EV-7954fd5a6b8b76d0",
+        "EV-26183a56cf9ed63c",
+        "EV-22c88b4ff8c7d8d8"
+      ],
+      "entityIds": [
+        "EN-733859c1fc6b9331",
+        "EN-d74c69db63e4763f",
+        "EN-96eebba49dbbf422",
+        "EN-7d3194f79e645c42",
+        "EN-3b7491f6cfa8bb7a",
+        "EN-c70eca6b0f88f44d",
+        "EN-ae0facccf0a3723a"
+      ],
+      "fdeIds": [
+        "FDE-0e1970e9eb17729f"
+      ],
+      "hardwareIds": [],
+      "firstSeen": "2026-05-25",
+      "lastSeen": "2026-07-22"
+    }
+  ],
   "fde": [],
   "hardware": [
     {

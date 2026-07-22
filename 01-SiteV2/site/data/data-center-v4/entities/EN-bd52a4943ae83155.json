@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-22T01:57:46.409Z",
+    "latestDataDate": "2026-07-22",
+    "currentDate": "2026-07-22",
+    "eventCount": 1401,
+    "quarantinedEventCount": 13
+  },
+  "entity": {
+    "id": "EN-bd52a4943ae83155",
+    "name": "Mistral strike multi-billion-dollar deal",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-fa66f00e9d4b20c2"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-21",
+    "lastSeen": "2026-07-22",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [
+        "EV-fa66f00e9d4b20c2"
+      ],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-fa66f00e9d4b20c2",
+        "dataDate": "2026-07-22",
+        "date": "2026-07-21",
+        "eventType": "hardware_deployment",
+        "eventTypeLabel": "硬件部署",
+        "eventGroup": "AI 硬件",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "微软与Mistral达成数十亿美元协议，在欧洲共建AI基础设施",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "data_infrastructure",
+            "dimensionName": "产品形态",
+            "name": "数据与模型基础设施"
+          }
+        ],
+        "entityIds": [
+          "EN-9fbf261b62c1d7c0",
+          "EN-bd52a4943ae83155"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [
+    {
+      "id": "HW-f88508d724c3b2b0",
+      "eventId": "EV-fa66f00e9d4b20c2",
+      "dataDate": "2026-07-22",
+      "date": "2026-07-21",
+      "title": "微软与Mistral达成数十亿美元协议，在欧洲共建AI基础设施",
+      "hardwareType": "data_center",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "computeLayer": "未披露",
+      "supplier": "Mistral strike multi-billion-dollar deal",
+      "customer": "Microsoft",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "Europe",
+      "region": "Europe",
+      "contractValue": "multi-billion-dollar",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://the-decoder.com/microsoft-and-mistral-strike-multi-billion-dollar-deal-to-build-ai-infrastructure-across-europe",
+      "sourceName": "The Decoder AI News",
+      "sourceDate": "2026-07-21",
+      "entityIds": [
+        "EN-9fbf261b62c1d7c0",
+        "EN-bd52a4943ae83155"
+      ]
+    }
+  ]
+}

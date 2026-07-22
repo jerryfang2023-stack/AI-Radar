@@ -1,0 +1,329 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-098
+title: "Naked mole-rat queens use a chemical signal to suppress fertility in rivals"
+title_zh: "裸鼹鼠女王利用化学信号抑制竞争对手的生育能力"
+title_translation_status: translated
+title_translation_method: deepseek_title_translation
+title_translation_model: deepseek-v4-flash
+original_url: "https://arstechnica.com/science/2026/07/naked-mole-rat-queens-keep-their-colonies-in-line-with-a-scent/"
+canonical_url: "https://arstechnica.com/science/2026/07/naked-mole-rat-queens-keep-their-colonies-in-line-with-a-scent"
+source_name: "Ars Technica AI"
+source_type: media
+source_level: A
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: supporting_article
+evidence_object_usable: false
+event_evidence: false
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: rss-feed
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-21T17:51:52.000Z"
+collected_at: 2026-07-22T01:55:44.801Z
+language: mixed
+full_text_hash: bee870c53b2d7dce
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-22/r-098-naked-mole-rat-queens-use-a-chemical-signal-to-suppress-fertility-in-r.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-22/r-098-naked-mole-rat-queens-use-a-chemical-signal-to-suppress-fertility-in-r.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 91
+extractor_diagnostics: {"readability_score":91,"text_length":9019,"paragraph_count":28,"sentence_count":78,"boilerplate_hits":2,"symbol_ratio":0.0002,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 9019
+fetch_error: ""
+evidence_strength: source_backed_event
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["insufficient_usable_evidence_object"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"bee870c53b2d7dce","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: supporting_evidence
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 0b99123fadc1adf9
+content_hash: bee870c53b2d7dce
+semantic_hash: 46198ab04eb6808d
+duplicate_of: ""
+first_seen_at: "2026-07-21T17:51:52.000Z"
+last_seen_at: 2026-07-22T01:55:44.801Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":false,"case":false,"business_change":false,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["index_only"]
+change_action_detected: false
+evidence_eligibility: blocked
+evidence_block_reason: "not_event_case_or_trend_evidence"
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":4,"importance_reason":"new product or service; rubric=4 concrete important change","supporting_signals":["commercial_or_risk_context"],"novelty":2,"evidence_strength":4,"case_richness":4,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["Ars Technica AI"],"products":[],"people":[],"industries":["制造 / 工业"],"roles":["CIO / IT 负责人","开发者 / 工程团队"],"workflows":[],"business_actions":["发布 / 推出"],"affected_departments":["IT / 安全"],"numbers":["30","1200","1","000","100","40","24","2026"],"quotes":["It’s very clear that mole rats actually have quite big noses and smell a lot,","They have to be able to navigate and move around without vision, so smell is one of those things that’s enhanced,","Naked mole rats are like humans in the sense that they’re very xenophobic,","They basically were cool with each other, and there was no fighting,","Breeding females had this particular molecule that non-breeding animals did not have,"]}
+evidence_seed: {"company_actions":["A single chemical made by mole-rat queens enforces the social order.","Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav Naked mole rats are weird.","They spend their lives almost entirely underground, are largely insensitive to some kinds of pain, can persist without oxygen for a long time, rarely develop cancer, and can live past 30 years, which is decades longer than similarly sized rodents."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: ["证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象","没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势","没有具体客户或真实企业案例","没有变化前后流程线索"]
+key_excerpts: [{"type":"company_action","text":"A single chemical made by mole-rat queens enforces the social order.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav Naked mole rats are weird.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"They spend their lives almost entirely underground, are largely insensitive to some kinds of pain, can persist without oxygen for a long time, rarely develop cancer, and can live past 30 years, which is decades longer than similarly sized rodents.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"They are also eusocial, like ants, bees, or termites—in a colony that can hold more than a hundred animals, only one female, the queen, breeds.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"We didn’t know how exactly naked mole-rat queens stop other females from breeding.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"For a long time, our leading hypothesis was bullying and violence, but that may be a bit impractical, given their kingdoms are vast networks of tunnels that can stretch for up to three kilometers.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-22T01:55:44.801Z
+theme: uncategorized
+keyword_group: uncategorized
+copyright_note: local research archive only
+---
+
+# Naked mole-rat queens use a chemical signal to suppress fertility in rivals
+
+## clean_text
+
+Skip to content
+Text
+settings
+Story text
+Size
+Small
+Standard
+Large
+Width
+Standard
+Wide
+Links
+Standard
+Orange
+* Subscribers only
+Learn more
+Minimize to nav
+Naked mole rats are weird. They spend their lives almost entirely underground, are largely insensitive to some kinds of pain, can persist without oxygen for a long time, rarely develop cancer, and can live past 30 years, which is decades longer than similarly sized rodents. They are also eusocial, like ants, bees, or termites—in a colony that can hold more than a hundred animals, only one female, the queen, breeds.
+We didn’t know how exactly naked mole-rat queens stop other females from breeding. For a long time, our leading hypothesis was bullying and violence, but that may be a bit impractical, given their kingdoms are vast networks of tunnels that can stretch for up to three kilometers. But now a team of Lewin Lab scientists at Max Delbrück Center for Molecular Medicine in Berlin discovered it’s actually just one part of a sophisticated olfactory signaling program.
+Running on smell
+“It’s very clear that mole rats actually have quite big noses and smell a lot,” says Gary Lewin, a neurobiologist at the Max Delbrück Center for Molecular Medicine and senior author of the study. Naked mole rats have around 1200 olfactory receptor genes, more than mice (which have roughly 1,000 of them) and way more than the few hundred in humans. They’re also blind. “They have to be able to navigate and move around without vision, so smell is one of those things that’s enhanced,” Lewin said.
+To find out how heavily mole rats rely on smell, the team collected odor bouquets from individual animals. Scientists held an absorbent plastic tube near a mole rat for about half an hour to pick up the volatile molecules coming off its body. Then, they analyzed these scents in a mass spectrometer, which separated the components of the scent into around 100 distinct chemical compounds.
+Based on analyzing samples taken from hundreds of different mole rats, the team learned members of each colony carried a distinguishable chemical signature. When mole rats from different colonies were placed together, they sniffed each other for about 40 seconds to decide if they were dealing with their nestmate or a stranger. When they sniffed a stranger, they attacked, often with lethal intent. “Naked mole rats are like humans in the sense that they’re very xenophobic,” Lewin said.
+So, the team tested if depriving mole-rats of smell would purge the xenophobia out of them. It did. When scientists temporarily disabled mole-rats’ olfactory sensory neurons with chemicals, the aggression towards strangers disappeared. “They basically were cool with each other, and there was no fighting,” Lewin said.
+Besides chemical friend-or-foe signals, researchers found something else in the odor bouquets. There was one compound, an ester called isopropyl myristate, that scientists found in the samples taken from queens and nowhere else. “Breeding females had this particular molecule that non-breeding animals did not have,” Lewin said.
+The royal scent
+Scientists found breeding queens secreted isopropyl myristate from their genitals and smeared it through the tunnels as they roamed their underground kingdoms. Tracking a queen’s output of the compound over her reproductive cycle showed that it rises and falls with her fertility, peaking when she’s in heat or pregnant. “It’s actually a very good marker of whether the queen is capable of breeding, ” Lewin said. On top of that, it has another useful feature.
+Isopropyl myristate, while volatile, is rather stable once deposited on a surface. Researchers could still detect it in mole-rat cages roughly 24 hours after it’d been applied. Because a colony’s burrow system can run up to three kilometers, a queen has a lot of ground to cover if she wants every subordinate exposed to her scent. “It sticks around for a while, so she has less work to spread the odor around the underground colony,” Lewin said.
+Pinpointing the queen’s molecule was one thing, though. Showing what it does was another.
+Lowborns and upstarts
+Naked mole-rat colonies are organized in a hierarchy loosely correlated with body size, starting with bottom-ranked workers and foragers, up through soldiers, to the highest-ranked animals and the breeding male called the pasha. Scientists sort naked mole rats into ranks using a dominance test: When two animals meet in a tunnel, whichever one yields is the lower-ranked of the pair. When Lewin’s team tested how mole rats react to isopropyl myristate, the reaction seemed to be dependent on rank.
+When placed in a T-maze with the queen’s molecule placed on one side, higher-ranked females, the ones with a realistic shot at becoming the queen one day, avoided it. “We’ve got an idea, although we didn’t prove it, that in a normal environment, higher-ranked animals try to avoid the queen, because the queen might be aggressive towards them,” Lewin said.
+Direct evidence on the mole-rat brain response to isopropyl myristate came from functional ultrasound imaging, a technique that tracks blood flow non-invasively in an anesthetized animal. “If you just puff isopropyl myristate on the nose of the animal, a large part of the olfactory cortex lights up,” Lewin said. The team interpreted this as a proof the compound is registering as a distinct signal, not just background smell. What’s more, the exposure to the queen’s scent triggered hormonal shifts in females.
+Non-breeding mole-rat females are known to run high on prolactin, a hormone that also suppresses fertility during lactation in nursing mammals. Lewin’s team found that prolactin levels drop when a queen is removed from a colony and climb back up once isopropyl myristate is reintroduced. Progesterone, a hormone associated with active breeding, moved in the opposite direction: low in non-breeders, and rising once the queen was gone. “These hormones seem to be directly controlled by the presence of the molecule [isopropyl myristate],” Lewin said.
+The queen’s odor bouquet, however, contained many other scents. To be sure they’ve got the right one and that others are not involved in reproductive suppression, the researchers tested what happens when the queen herself is gone, but her royal molecule stays. It turned out the scent alone kept the subjects in check just as well as the real queen did.
+Game of thrones
+The team started by taking mating pairs out of a colony away from any queen. Under such conditions, mole rats usually start breeding within four or five weeks. When the team sprinkled their cages with isopropyl myristate daily, though, the animals did not breed—the compound reliably prevented pregnancy. Once the contraceptive effect was confirmed at the individual level, Lewin’s team extended this experiment to the whole colony scale.
+Removing a queen from an established colony normally sets off the mole-rat version of Game of Thrones . The strongest females fight against each other, often to the death, until a single winner emerges as the new queen. When the researchers removed the queen and dosed the colony with isopropyl myristate every day for three months, there were no attempts at coup d’etat. “Everything was peaceful,” Lewin says. “We had no fights. We had no females emerging as reproductive queens. The molecule was acting as a super contraceptive keeping them all sexually repressed.”
+To Lewin, these results show that naked mole-rat biology is more closely tied to insect eusociality than scientists expected. Queens in honeybee colonies and other eusocial insects use pheromones to keep worker daughters from developing ovaries. “It’s a relatively simple mechanism that explains a relatively complex behavioral trait,” Lewin says.
+What we are still not sure about is whether in this shape or another it appeared somewhere else in the mammalian evolutionary tree. Because secreting isopropyl myristate is not something exclusive to naked mole rats. Humans do that too.
+“Isopropyl myristate has been detected in the breast secretions of lactating human mothers, though its function there is unknown,” Lewin says. “This molecule or similar molecules may have effects on reproduction in species other than naked mole rats, maybe even including humans. We just don’t know that”.
+Nature, 2026. DOI: 10.1038/s41586-026-10772-5
+Jacek Krywko
+Associate Writer
+Jacek Krywko
+Associate Writer
+Jacek Krywko is a freelance science and technology writer who covers space exploration, artificial intelligence research, computer science, and all sorts of engineering wizardry.
+24 Comments
+Comments
+Forum view
+Loading comments...
+Prev story
+Next story
+1.
+The first trailer for Avengers: Doomsday is finally here
+2.
+The Space Force is now seeking to buy up to $30 billion in rocket launches
+3.
+When your vehicle outlives its cloud: What happens next?
+4.
+DA: Cop covered bodycam to snap nude prisoners on his iPhone—but other cams caught him
+5.
+Troubling new details emerge on diabetes ouster controversy
+Customize
+
+## full_text
+
+Skip to content
+Text
+settings
+Story text
+Size
+Small
+Standard
+Large
+Width
+Standard
+Wide
+Links
+Standard
+Orange
+* Subscribers only
+Learn more
+Minimize to nav
+Naked mole rats are weird. They spend their lives almost entirely underground, are largely insensitive to some kinds of pain, can persist without oxygen for a long time, rarely develop cancer, and can live past 30 years, which is decades longer than similarly sized rodents. They are also eusocial, like ants, bees, or termites—in a colony that can hold more than a hundred animals, only one female, the queen, breeds.
+We didn’t know how exactly naked mole-rat queens stop other females from breeding. For a long time, our leading hypothesis was bullying and violence, but that may be a bit impractical, given their kingdoms are vast networks of tunnels that can stretch for up to three kilometers. But now a team of Lewin Lab scientists at Max Delbrück Center for Molecular Medicine in Berlin discovered it’s actually just one part of a sophisticated olfactory signaling program.
+Running on smell
+“It’s very clear that mole rats actually have quite big noses and smell a lot,” says Gary Lewin, a neurobiologist at the Max Delbrück Center for Molecular Medicine and senior author of the study. Naked mole rats have around 1200 olfactory receptor genes, more than mice (which have roughly 1,000 of them) and way more than the few hundred in humans. They’re also blind. “They have to be able to navigate and move around without vision, so smell is one of those things that’s enhanced,” Lewin said.
+To find out how heavily mole rats rely on smell, the team collected odor bouquets from individual animals. Scientists held an absorbent plastic tube near a mole rat for about half an hour to pick up the volatile molecules coming off its body. Then, they analyzed these scents in a mass spectrometer, which separated the components of the scent into around 100 distinct chemical compounds.
+Based on analyzing samples taken from hundreds of different mole rats, the team learned members of each colony carried a distinguishable chemical signature. When mole rats from different colonies were placed together, they sniffed each other for about 40 seconds to decide if they were dealing with their nestmate or a stranger. When they sniffed a stranger, they attacked, often with lethal intent. “Naked mole rats are like humans in the sense that they’re very xenophobic,” Lewin said.
+So, the team tested if depriving mole-rats of smell would purge the xenophobia out of them. It did. When scientists temporarily disabled mole-rats’ olfactory sensory neurons with chemicals, the aggression towards strangers disappeared. “They basically were cool with each other, and there was no fighting,” Lewin said.
+Besides chemical friend-or-foe signals, researchers found something else in the odor bouquets. There was one compound, an ester called isopropyl myristate, that scientists found in the samples taken from queens and nowhere else. “Breeding females had this particular molecule that non-breeding animals did not have,” Lewin said.
+The royal scent
+Scientists found breeding queens secreted isopropyl myristate from their genitals and smeared it through the tunnels as they roamed their underground kingdoms. Tracking a queen’s output of the compound over her reproductive cycle showed that it rises and falls with her fertility, peaking when she’s in heat or pregnant. “It’s actually a very good marker of whether the queen is capable of breeding, ” Lewin said. On top of that, it has another useful feature.
+Isopropyl myristate, while volatile, is rather stable once deposited on a surface. Researchers could still detect it in mole-rat cages roughly 24 hours after it’d been applied. Because a colony’s burrow system can run up to three kilometers, a queen has a lot of ground to cover if she wants every subordinate exposed to her scent. “It sticks around for a while, so she has less work to spread the odor around the underground colony,” Lewin said.
+Pinpointing the queen’s molecule was one thing, though. Showing what it does was another.
+Lowborns and upstarts
+Naked mole-rat colonies are organized in a hierarchy loosely correlated with body size, starting with bottom-ranked workers and foragers, up through soldiers, to the highest-ranked animals and the breeding male called the pasha. Scientists sort naked mole rats into ranks using a dominance test: When two animals meet in a tunnel, whichever one yields is the lower-ranked of the pair. When Lewin’s team tested how mole rats react to isopropyl myristate, the reaction seemed to be dependent on rank.
+When placed in a T-maze with the queen’s molecule placed on one side, higher-ranked females, the ones with a realistic shot at becoming the queen one day, avoided it. “We’ve got an idea, although we didn’t prove it, that in a normal environment, higher-ranked animals try to avoid the queen, because the queen might be aggressive towards them,” Lewin said.
+Direct evidence on the mole-rat brain response to isopropyl myristate came from functional ultrasound imaging, a technique that tracks blood flow non-invasively in an anesthetized animal. “If you just puff isopropyl myristate on the nose of the animal, a large part of the olfactory cortex lights up,” Lewin said. The team interpreted this as a proof the compound is registering as a distinct signal, not just background smell. What’s more, the exposure to the queen’s scent triggered hormonal shifts in females.
+Non-breeding mole-rat females are known to run high on prolactin, a hormone that also suppresses fertility during lactation in nursing mammals. Lewin’s team found that prolactin levels drop when a queen is removed from a colony and climb back up once isopropyl myristate is reintroduced. Progesterone, a hormone associated with active breeding, moved in the opposite direction: low in non-breeders, and rising once the queen was gone. “These hormones seem to be directly controlled by the presence of the molecule [isopropyl myristate],” Lewin said.
+The queen’s odor bouquet, however, contained many other scents. To be sure they’ve got the right one and that others are not involved in reproductive suppression, the researchers tested what happens when the queen herself is gone, but her royal molecule stays. It turned out the scent alone kept the subjects in check just as well as the real queen did.
+Game of thrones
+The team started by taking mating pairs out of a colony away from any queen. Under such conditions, mole rats usually start breeding within four or five weeks. When the team sprinkled their cages with isopropyl myristate daily, though, the animals did not breed—the compound reliably prevented pregnancy. Once the contraceptive effect was confirmed at the individual level, Lewin’s team extended this experiment to the whole colony scale.
+Removing a queen from an established colony normally sets off the mole-rat version of Game of Thrones . The strongest females fight against each other, often to the death, until a single winner emerges as the new queen. When the researchers removed the queen and dosed the colony with isopropyl myristate every day for three months, there were no attempts at coup d’etat. “Everything was peaceful,” Lewin says. “We had no fights. We had no females emerging as reproductive queens. The molecule was acting as a super contraceptive keeping them all sexually repressed.”
+To Lewin, these results show that naked mole-rat biology is more closely tied to insect eusociality than scientists expected. Queens in honeybee colonies and other eusocial insects use pheromones to keep worker daughters from developing ovaries. “It’s a relatively simple mechanism that explains a relatively complex behavioral trait,” Lewin says.
+What we are still not sure about is whether in this shape or another it appeared somewhere else in the mammalian evolutionary tree. Because secreting isopropyl myristate is not something exclusive to naked mole rats. Humans do that too.
+“Isopropyl myristate has been detected in the breast secretions of lactating human mothers, though its function there is unknown,” Lewin says. “This molecule or similar molecules may have effects on reproduction in species other than naked mole rats, maybe even including humans. We just don’t know that”.
+Nature, 2026. DOI: 10.1038/s41586-026-10772-5
+Jacek Krywko
+Associate Writer
+Jacek Krywko
+Associate Writer
+Jacek Krywko is a freelance science and technology writer who covers space exploration, artificial intelligence research, computer science, and all sorts of engineering wizardry.
+24 Comments
+Comments
+Forum view
+Loading comments...
+Prev story
+Next story
+1.
+The first trailer for Avengers: Doomsday is finally here
+2.
+The Space Force is now seeking to buy up to $30 billion in rocket launches
+3.
+When your vehicle outlives its cloud: What happens next?
+4.
+DA: Cop covered bodycam to snap nude prisoners on his iPhone—but other cams caught him
+5.
+Troubling new details emerge on diabetes ouster controversy
+Customize
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 91
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":91,"text_length":9019,"paragraph_count":28,"sentence_count":78,"boilerplate_hits":2,"symbol_ratio":0.0002,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   A single chemical made by mole-rat queens enforces the social order.
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav Naked mole rats are weird.
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   They spend their lives almost entirely underground, are largely insensitive to some kinds of pain, can persist without oxygen for a long time, rarely develop cancer, and can live past 30 years, which is decades longer than similarly sized rodents.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   They are also eusocial, like ants, bees, or termites—in a colony that can hold more than a hundred animals, only one female, the queen, breeds.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   We didn’t know how exactly naked mole-rat queens stop other females from breeding.
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   For a long time, our leading hypothesis was bullying and violence, but that may be a bit impractical, given their kingdoms are vast networks of tunnels that can stretch for up to three kilometers.
+
+## business_elements
+
+- companies: Ars Technica AI
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 制造 / 工业
+- roles: CIO / IT 负责人, 开发者 / 工程团队
+- workflows: 暂无公开信息
+- business_actions: 发布 / 推出
+- affected_departments: IT / 安全
+- numbers: 30, 1200, 1, 000, 100, 40, 24, 2026
+- quotes: It’s very clear that mole rats actually have quite big noses and smell a lot, / They have to be able to navigate and move around without vision, so smell is one of those things that’s enhanced, / Naked mole rats are like humans in the sense that they’re very xenophobic, / They basically were cool with each other, and there was no fighting, / Breeding females had this particular molecule that non-breeding animals did not have,
+
+## evidence_seed
+
+- company_actions: A single chemical made by mole-rat queens enforces the social order. / Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav Naked mole rats are weird. / They spend their lives almost entirely underground, are largely insensitive to some kinds of pain, can persist without oxygen for a long time, rarely develop cancer, and can live past 30 years, which is decades longer than similarly sized rodents.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 暂无公开信息
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 4
+- importance_reason: new product or service; rubric=4 concrete important change
+- supporting_signals: commercial_or_risk_context
+- novelty: 2
+- evidence_strength: 4
+- case_richness: 4
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- business_change: false
+- relationship_graph_input: false
+- trend_candidate_context: false
+- signal_card_candidate: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- index_only
+
+## missing_information
+
+- 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象
+- 没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势
+- 没有具体客户或真实企业案例
+- 没有变化前后流程线索
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: supporting_evidence
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+A single chemical made by mole-rat queens enforces the social order.
+
+## 采集备注
+
+该条目由 rss-feed 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

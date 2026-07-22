@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-21T01:27:58.078Z",
-    "latestDataDate": "2026-07-21",
-    "currentDate": "2026-07-21",
-    "eventCount": 1347,
+    "generatedAt": "2026-07-22T01:57:46.409Z",
+    "latestDataDate": "2026-07-22",
+    "currentDate": "2026-07-22",
+    "eventCount": 1401,
     "quarantinedEventCount": 13
   },
   "node": {
@@ -17,10 +17,13 @@
     "typeLabel": "技术",
     "valueId": "multimodal",
     "eventIds": [
+      "EV-95acc01f9b9a08ab",
       "EV-cafe435ddd007821",
       "EV-a9810b47e0408a05",
       "EV-26d2874c6ce028d6",
       "EV-fd21441fb6e143c3",
+      "EV-d4278191ae11f198",
+      "EV-ed272c57e1513d3f",
       "EV-9d5363657f3541e7",
       "EV-ee489212ff9135a4",
       "EV-ba89f9414be0b041",
@@ -57,6 +60,7 @@
       "EN-3a7bd3e2360a3d29",
       "EN-50537dab76505dfc",
       "EN-b5251b35f15bedc4",
+      "EN-8d57f84bd1847b24",
       "EN-a89151ba4b5ac0f2",
       "EN-be548deba4a093d7",
       "EN-92ec1124e1de6f54",
@@ -108,9 +112,112 @@
       "HW-ceb55d9bc637c1d3"
     ],
     "firstSeen": "2026-06-02",
-    "lastSeen": "2026-07-20"
+    "lastSeen": "2026-07-22"
   },
   "events": [
+    {
+      "id": "EV-95acc01f9b9a08ab",
+      "dataDate": "2026-07-22",
+      "date": "2026-07-21",
+      "updatedDate": "2026-07-22",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "中国电信完成5G无线网络规划大模型试点应用，效率提升50%",
+      "originalTitle": "",
+      "subject": "中国电信完成5G无线网络规划大模型",
+      "action": "试点",
+      "object": "应用，效率提升50%",
+      "metrics": [
+        "50%",
+        "75%"
+      ],
+      "locations": [
+        "中国"
+      ],
+      "missingFields": [
+        "entities"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "data_analysis",
+            "dimensionName": "应用场景",
+            "name": "数据分析"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "data_analysis",
+          "dimensionName": "应用场景",
+          "name": "数据分析"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "data_analysis",
+          "dimensionName": "应用场景",
+          "name": "数据分析"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "entityIds": [],
+      "entityNames": [],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/979/428.htm",
+      "publisher": "IT之家（RSS）"
+    },
     {
       "id": "EV-cafe435ddd007821",
       "dataDate": "2026-07-18",
@@ -663,6 +770,216 @@
       "productName": "",
       "products": [],
       "sourceUrl": "https://ithome.com/0/966/539.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-d4278191ae11f198",
+      "dataDate": "2026-07-22",
+      "date": "2026-07-21",
+      "updatedDate": "2026-07-22",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "荣耀 Robot Phone 拍照页面曝光，将支持大师电影模式与四自由度机械云台",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "荣耀 Robot Phone 拍照页面曝光，将支持大师电影模式与四自由度机械云台",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "robotics_automation",
+            "dimensionName": "应用场景",
+            "name": "机器人与物理自动化"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "entityIds": [
+        "EN-8d57f84bd1847b24"
+      ],
+      "entityNames": [
+        "Robot Phone"
+      ],
+      "productName": "Robot Phone",
+      "products": [
+        {
+          "name": "Robot Phone",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/979/801.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-ed272c57e1513d3f",
+      "dataDate": "2026-07-22",
+      "date": "2026-07-21",
+      "updatedDate": "2026-07-22",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "rumored",
+      "statusLabel": "rumored",
+      "publicationStatus": "disputed",
+      "title": "荣耀 Robot Phone 首日预约量超历代旗舰，搭载第五代骁龙 8 至尊版与 4DoF 钛合金机械云台",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "荣耀 Robot Phone 首日预约量超历代旗舰，搭载第五代骁龙 8 至尊版与 4DoF 钛合金机械云台",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "robotics_automation",
+            "dimensionName": "应用场景",
+            "name": "机器人与物理自动化"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "entityIds": [
+        "EN-8d57f84bd1847b24"
+      ],
+      "entityNames": [
+        "Robot Phone"
+      ],
+      "productName": "Robot Phone",
+      "products": [
+        {
+          "name": "Robot Phone",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/979/555.htm",
       "publisher": "IT之家（RSS）"
     },
     {
@@ -3397,7 +3714,9 @@
       "name": "NVIDIA",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "英伟达"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -3419,6 +3738,9 @@
         "EV-a00763037a94d512",
         "EV-0e84a2f49d765ce3",
         "EV-467d1a701d21327d",
+        "EV-b4f69c41e23c7ce0",
+        "EV-11b2293769081d4c",
+        "EV-ff77876694ab8395",
         "EV-cafe435ddd007821",
         "EV-ed388875bc004add",
         "EV-bc9abd502c002102",
@@ -3442,8 +3764,14 @@
         "EV-4faa2bcf2e42e60c",
         "EV-9ee3c0ec243b6129",
         "EV-58c1cc3749294649",
+        "EV-2fea1664807824ce",
+        "EV-3ba971c5939b0f04",
+        "EV-cb3a8846bc4f8aca",
+        "EV-48977fd72d2fcfb8",
+        "EV-a37b9d9fb85e460f",
         "EV-118317b7f92e5e16",
         "EV-950237c6b3eb6343",
+        "EV-941ba9ebdc43f20c",
         "EV-29e069ac093f0e34",
         "EV-6b51b1b6fe22c540",
         "EV-c2800c1c5a3f568f",
@@ -3489,9 +3817,11 @@
         "EV-aa63303570154a9b",
         "EV-d2ac9700c86913da",
         "EV-d43a561da59b2897",
+        "EV-0e2a68efc19bfbaa",
         "EV-02b19ffbe883ee2e",
         "EV-8993e021ac17df4a",
         "EV-34929bdd016dc8d6",
+        "EV-c14e5185fd6bbe30",
         "EV-08f736f61f2b46f3",
         "EV-2c7d13d234147817",
         "EV-710b145230faa692",
@@ -3522,31 +3852,39 @@
         "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
-        "TX-technology-speech_audio",
         "TX-technology-image_generation",
+        "TX-technology-speech_audio",
         "TX-technology-inference_optimization"
       ],
       "relatedEntityIds": [
+        "EN-e07654c7cc29acbd",
+        "EN-52c2f30b6bda5898",
         "EN-1e71d9c1a5c4de16",
         "EN-683d8d597da71192",
         "EN-9e72fd4472222231",
+        "EN-8395dc051feafc4c",
+        "EN-aa15d891a32a51b8",
         "EN-0f3360879e746531",
         "EN-a1b0d8a938903dc7",
+        "EN-956b7280912ef1cc",
         "EN-4a639cb888a15d75",
         "EN-8d323d8bba783aa3",
         "EN-b5738c169b693bee",
         "EN-51fd7dc086fcb858",
         "EN-9e193e1ec8d75d41",
-        "EN-8395dc051feafc4c",
+        "EN-3ae50afab3e392b8",
         "EN-936f01f91fdadf69",
         "EN-4e7e886400fe6a83",
         "EN-1dc405a4cda895d0",
         "EN-12ab68e37d104d27",
         "EN-a3266ab9e10d6105",
-        "EN-9fbf261b62c1d7c0"
+        "EN-9fbf261b62c1d7c0",
+        "EN-11ef7b03c79c9bbd",
+        "EN-9bc22dcabf7f45b3",
+        "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-20"
+      "lastSeen": "2026-07-22"
     },
     {
       "id": "EN-59ae856cd788d0f5",
@@ -3612,7 +3950,9 @@
       "name": "SoftBank",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "软银"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -3620,6 +3960,7 @@
       "eventIds": [
         "EV-1a6688afdfd108ef",
         "EV-cafe435ddd007821",
+        "EV-a37b9d9fb85e460f",
         "EV-08f736f61f2b46f3"
       ],
       "viewpointIds": [],
@@ -3636,7 +3977,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-15",
-      "lastSeen": "2026-07-18"
+      "lastSeen": "2026-07-22"
     },
     {
       "id": "EN-193d220b421d776e",
@@ -3698,8 +4039,8 @@
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-software_development",
         "TX-technology-on_device",
-        "TX-technology-video_generation",
         "TX-technology-multimodal",
+        "TX-technology-video_generation",
         "TX-industry-media_entertainment",
         "TX-use_case-knowledge_search"
       ],
@@ -3885,10 +4226,7 @@
       "name": "Moonshot AI",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "Kimi",
-        "月之暗面"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -3898,6 +4236,7 @@
         "EV-0e4bddfd5c129618",
         "EV-fd21441fb6e143c3",
         "EV-0d5a32aca724d30e",
+        "EV-26a71ab785014e54",
         "EV-1b03e5dff76a50a1",
         "EV-5caf7f83664b1a2c",
         "EV-2cb9dbed2b2b6077",
@@ -3919,18 +4258,46 @@
         "TX-technology-code_generation",
         "TX-use_case-software_development",
         "TX-technology-long_context",
-        "TX-technology-mixture_of_experts",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-open_weights",
         "TX-technology-multimodal"
       ],
       "relatedEntityIds": [
+        "EN-eb732565c71e6b85",
+        "EN-607964040e4b62e0",
         "EN-2cfed21b7a971267",
         "EN-23bc2a854bc0cfb0",
         "EN-b57c95289680078c"
       ],
       "firstSeen": "2026-05-19",
-      "lastSeen": "2026-07-21"
+      "lastSeen": "2026-07-22"
+    },
+    {
+      "id": "EN-8d57f84bd1847b24",
+      "name": "Robot Phone",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-d4278191ae11f198",
+        "EV-ed272c57e1513d3f",
+        "EV-25933b8f123f92be",
+        "EV-c844ddabb8528896"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-use_case-robotics_automation",
+        "TX-technology-embodied_ai",
+        "TX-technology-multimodal"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-18",
+      "lastSeen": "2026-07-22"
     },
     {
       "id": "EN-a89151ba4b5ac0f2",
@@ -4120,7 +4487,11 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-133a92cb6cb25a0c",
+        "EV-7c836c34e7cf36ee",
+        "EV-071c72225b8aaf80",
         "EV-0d5a32aca724d30e",
+        "EV-ae1e2769aff82965",
         "EV-ab3e820aa6d92542",
         "EV-bc41a3060f11ca2d",
         "EV-83a8ac8a2554b60c",
@@ -4300,6 +4671,7 @@
         "TX-technology-computer_use"
       ],
       "relatedEntityIds": [
+        "EN-3850792f618f534b",
         "EN-7839fb10a8f14c70",
         "EN-d1ad14d4ad57d207",
         "EN-74692028630429c7",
@@ -4325,7 +4697,7 @@
         "EN-7b8cb35de7ad047a"
       ],
       "firstSeen": "2026-02-19",
-      "lastSeen": "2026-07-21"
+      "lastSeen": "2026-07-22"
     },
     {
       "id": "EN-8f71c4871a160172",
@@ -4343,6 +4715,7 @@
         "EV-ad40755ca624afe7",
         "EV-d5f276ad6b2ac9de",
         "EV-181b425d2a600cad",
+        "EV-2fea1664807824ce",
         "EV-70e3f88cb06a856c",
         "EV-cf5b2a0aff3914bd",
         "EV-54ecd52c69b97834",
@@ -4360,13 +4733,14 @@
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-technology-fine_tuning",
+        "TX-technology-open_weights",
         "TX-technology-multimodal"
       ],
       "relatedEntityIds": [
         "EN-78624f0a98e78301"
       ],
       "firstSeen": "2026-06-15",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-07-22"
     },
     {
       "id": "EN-78624f0a98e78301",
@@ -4520,7 +4894,7 @@
         "EV-d4d7b019ff0015df",
         "EV-27b69ea604475b72",
         "EV-f8c3a83d883c9b22",
-        "EV-0d5a32aca724d30e",
+        "EV-2fea1664807824ce",
         "EV-70cbf25f7ec2cc3a",
         "EV-f8ba1728de6a4899",
         "EV-fe2b0d74944d6128",
@@ -4535,6 +4909,7 @@
         "EV-4dfd7233c8c69b0b",
         "EV-657837763764c869",
         "EV-388a53fe918389b0",
+        "EV-c14e5185fd6bbe30",
         "EV-48e17a3ba4b73550",
         "EV-848bdd13f319c516",
         "EV-86537be17d50ff20",
@@ -4556,7 +4931,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-07-21"
+      "lastSeen": "2026-07-22"
     },
     {
       "id": "EN-ea3bd73e2b506e00",
@@ -4582,6 +4957,8 @@
         "EV-cf76f090a1a20a36",
         "EV-fd7e79d3cb9cdb69",
         "EV-43301de739fe560e",
+        "EV-938eebe85a688ff1",
+        "EV-a37b9d9fb85e460f",
         "EV-cf176636839e45be",
         "EV-8540be15175c65da",
         "EV-9496f90f3e808992",
@@ -4630,6 +5007,7 @@
         "TX-technology-computer_use"
       ],
       "relatedEntityIds": [
+        "EN-62503b0d3dcfd096",
         "EN-e3863f813fe47240",
         "EN-d85ad5e8ff8e2889",
         "EN-a2fa009495c3bb3a",
@@ -4638,7 +5016,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-05-22",
-      "lastSeen": "2026-07-18"
+      "lastSeen": "2026-07-22"
     },
     {
       "id": "EN-e3863f813fe47240",
@@ -4679,6 +5057,8 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-2069f6a931b8c9d6",
+        "EV-02882e6f5e1902c6",
         "EV-e3792591090281c6",
         "EV-f6a72cddbda748b3",
         "EV-4eaf3aabecae6016",
@@ -4686,10 +5066,10 @@
         "EV-305ec93673f4f12e",
         "EV-640c5ea9f4fa2780",
         "EV-6e516b6e68def9cf",
-        "EV-463cb26b5e03c7f7",
         "EV-86ca5af11ee4d275",
         "EV-a8dc5c859946f336",
         "EV-d9cc588fb41a7e67",
+        "EV-463cb26b5e03c7f7",
         "EV-232ab5bcbaf6552d",
         "EV-48075ca70a5458ec",
         "EV-7b1c734882fa1ea6",
@@ -4757,7 +5137,7 @@
         "EV-8e01849c05b50355",
         "EV-4faa2bcf2e42e60c",
         "EV-45be473baf6dfa4c",
-        "EV-0d5a32aca724d30e",
+        "EV-941ba9ebdc43f20c",
         "EV-92d28aef0c4b0a8a",
         "EV-c2800c1c5a3f568f",
         "EV-d4ddee1b39cced77",
@@ -4849,7 +5229,7 @@
         "EN-c70eca6b0f88f44d"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-21"
+      "lastSeen": "2026-07-22"
     },
     {
       "id": "EN-52fc33ae4d101a5d",
@@ -5039,6 +5419,8 @@
         "EV-67ef7accd26a07a0",
         "EV-a7e1ecd212474e00",
         "EV-d961d3ad02f6ae14",
+        "EV-59229486408edb05",
+        "EV-7e24db14146d39be",
         "EV-7c6a9f4ee4829976",
         "EV-93c6ccf23cc422cb",
         "EV-5babb43f4b4d302f",
@@ -5061,20 +5443,23 @@
         "TX-technology-code_generation",
         "TX-use_case-software_development",
         "TX-technology-mixture_of_experts",
+        "TX-use_case-cybersecurity",
         "TX-technology-retrieval_augmented_generation",
         "TX-use_case-research_science",
-        "TX-technology-video_generation",
         "TX-technology-multimodal",
+        "TX-technology-video_generation",
         "TX-industry-media_entertainment",
-        "TX-technology-speech_audio",
-        "TX-technology-image_generation"
+        "TX-technology-image_generation",
+        "TX-technology-speech_audio"
       ],
       "relatedEntityIds": [
+        "EN-18f0900d6c487f59",
+        "EN-92af3ce2fb97edf3",
         "EN-d56aa2f9908f566a",
         "EN-085598c00f2aaccf"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-07-22"
     },
     {
       "id": "EN-b0532e1af75cc4ab",
@@ -5139,14 +5524,14 @@
         "TX-technology-on_device",
         "TX-technology-fine_tuning",
         "TX-technology-open_weights",
-        "TX-technology-video_generation",
-        "TX-technology-multimodal"
+        "TX-technology-multimodal",
+        "TX-technology-video_generation"
       ],
       "relatedEntityIds": [
         "EN-3ccbd9105a45d8fc"
       ],
       "firstSeen": "2026-03-11",
-      "lastSeen": "2026-07-21"
+      "lastSeen": "2026-07-22"
     },
     {
       "id": "EN-01f1074bb52ff605",
@@ -5168,8 +5553,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-industry-retail_ecommerce",
-        "TX-technology-video_generation",
         "TX-technology-multimodal",
+        "TX-technology-video_generation",
         "TX-technology-image_generation"
       ],
       "relatedEntityIds": [
@@ -5193,8 +5578,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-video_generation",
-        "TX-technology-multimodal"
+        "TX-technology-multimodal",
+        "TX-technology-video_generation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-01",
@@ -5218,8 +5603,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-industry-retail_ecommerce",
-        "TX-technology-video_generation",
-        "TX-technology-multimodal"
+        "TX-technology-multimodal",
+        "TX-technology-video_generation"
       ],
       "relatedEntityIds": [
         "EN-bbdefa2950f49882"
@@ -5233,8 +5618,7 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "gemini",
-        "谷歌"
+        "Gemini"
       ],
       "verificationStatus": "verified",
       "datasetScopes": [
@@ -5267,8 +5651,14 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
+        "EV-6ce069b1845f5a52",
+        "EV-597b8257a97b3d02",
+        "EV-5aaa4c6697606274",
+        "EV-834e65247c2d4a3b",
+        "EV-cc974e0031c69715",
+        "EV-cd067fa6f39fe828",
+        "EV-dc3a5509a690a6b0",
         "EV-f3cc0845ce442e6b",
-        "EV-0d5a32aca724d30e",
         "EV-bee410f8134cba5a",
         "EV-a255cfc0dab44564",
         "EV-98a80b75b27d9f3b",
@@ -5385,18 +5775,20 @@
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-embodied_ai",
         "TX-technology-fine_tuning",
-        "TX-technology-open_weights",
-        "TX-technology-video_generation",
         "TX-technology-multimodal",
+        "TX-technology-video_generation",
         "TX-industry-media_entertainment",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
+        "TX-technology-image_generation",
         "TX-technology-speech_audio",
         "TX-use_case-content_creation",
-        "TX-technology-image_generation",
         "TX-technology-computer_use"
       ],
       "relatedEntityIds": [
+        "EN-a85d5a9b4a77d59b",
+        "EN-6f216f2ea5b7a13e",
+        "EN-18f0900d6c487f59",
         "EN-419f2cd96ee122e3",
         "EN-96eebba49dbbf422",
         "EN-81e577740888ca6d",
@@ -5408,11 +5800,8 @@
         "EN-01f1074bb52ff605",
         "EN-f2c032b19edb7900",
         "EN-2ab6d53e717a0e0d",
-        "EN-1cd41545564777ce",
         "EN-2998f8b13f4fd72e",
-        "EN-3546e1b15e6549b2",
         "EN-b5c336c0dd1ff29c",
-        "EN-e1a4e41919f7c2dc",
         "EN-d56aa2f9908f566a",
         "EN-4baef0e41cbd7ae2",
         "EN-bdfecbcd7dbf76d2",
@@ -5420,7 +5809,7 @@
         "EN-2aae0de3f5530f08"
       ],
       "firstSeen": "2026-04-12",
-      "lastSeen": "2026-07-21"
+      "lastSeen": "2026-07-22"
     },
     {
       "id": "EN-e0bab6f6c58bfe4e",
@@ -5644,7 +6033,8 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "Qwen"
+        "Qwen",
+        "阿里"
       ],
       "verificationStatus": "verified",
       "datasetScopes": [
@@ -5653,14 +6043,19 @@
       "eventIds": [
         "EV-43b7f45e9bd7ec9b",
         "EV-3d93d1da8cb64462",
+        "EV-ef2cd6bd912a6ed8",
         "EV-4740121f428e4bda",
         "EV-a354af52772334fd",
         "EV-c0f87b8c5208cd75",
         "EV-53f08daddd011dbb",
         "EV-e1a4bc40db4a9d8f",
         "EV-2a833330267cb2df",
-        "EV-94ad4a217508e6e0",
         "EV-0d5a32aca724d30e",
+        "EV-1a241bcb4fad886c",
+        "EV-7e24db14146d39be",
+        "EV-8b67e7ac8e61cc1e",
+        "EV-989631c550d89726",
+        "EV-94ad4a217508e6e0",
         "EV-b43f22d8bc7fec3f",
         "EV-f388f7ae2debeae8",
         "EV-d08935b06ed9e7bb",
@@ -5700,25 +6095,28 @@
         "TX-technology-agentic_execution",
         "TX-technology-code_generation",
         "TX-technology-long_context",
-        "TX-technology-mixture_of_experts",
         "TX-use_case-data_analysis",
         "TX-technology-on_device",
         "TX-technology-embodied_ai",
         "TX-technology-fine_tuning",
         "TX-technology-open_weights",
-        "TX-technology-video_generation",
         "TX-technology-multimodal",
+        "TX-technology-video_generation",
+        "TX-technology-image_generation",
         "TX-technology-speech_audio",
         "TX-technology-quantization",
         "TX-technology-computer_use"
       ],
       "relatedEntityIds": [
+        "EN-52e3d014f9a275ea",
         "EN-0b0c3b228202ab0a",
+        "EN-5398729239788ca5",
         "EN-22a4c686e665e299",
+        "EN-2daac3672aeafcbd",
         "EN-d65d81c60c0c47c4"
       ],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-07-21"
+      "lastSeen": "2026-07-22"
     },
     {
       "id": "EN-d65d81c60c0c47c4",
@@ -5883,6 +6281,7 @@
         "EV-619e33abf3f9bfbf",
         "EV-be2f6bfcad93c42f",
         "EV-c7b81290859057b0",
+        "EV-423c7293d6a91086",
         "EV-86ab9c2f1416e9d8",
         "EV-7fe139b107f9adc6",
         "EV-de54542fd7e2282c",
@@ -5912,9 +6311,11 @@
         "TX-technology-multimodal",
         "TX-industry-media_entertainment"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-a1adb91065c5a347"
+      ],
       "firstSeen": "2026-05-18",
-      "lastSeen": "2026-07-20"
+      "lastSeen": "2026-07-22"
     }
   ],
   "fde": [],

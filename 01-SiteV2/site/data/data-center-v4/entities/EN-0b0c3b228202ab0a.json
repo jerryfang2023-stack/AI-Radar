@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-21T01:27:58.078Z",
-    "latestDataDate": "2026-07-21",
-    "currentDate": "2026-07-21",
-    "eventCount": 1347,
+    "generatedAt": "2026-07-22T01:57:46.409Z",
+    "latestDataDate": "2026-07-22",
+    "currentDate": "2026-07-22",
+    "eventCount": 1401,
     "quarantinedEventCount": 13
   },
   "entity": {
@@ -34,6 +34,7 @@
     "firstSeen": "2026-07-20",
     "lastSeen": "2026-07-21",
     "relationIds": [
+      "REL2-7ae0c6bd5891fc63",
       "REL2-a8a5ef2c18107fcd"
     ],
     "groupedEventIds": {
@@ -113,7 +114,8 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "Qwen"
+        "Qwen",
+        "阿里"
       ],
       "verificationStatus": "verified",
       "datasetScopes": [
@@ -122,14 +124,19 @@
       "eventIds": [
         "EV-43b7f45e9bd7ec9b",
         "EV-3d93d1da8cb64462",
+        "EV-ef2cd6bd912a6ed8",
         "EV-4740121f428e4bda",
         "EV-a354af52772334fd",
         "EV-c0f87b8c5208cd75",
         "EV-53f08daddd011dbb",
         "EV-e1a4bc40db4a9d8f",
         "EV-2a833330267cb2df",
-        "EV-94ad4a217508e6e0",
         "EV-0d5a32aca724d30e",
+        "EV-1a241bcb4fad886c",
+        "EV-7e24db14146d39be",
+        "EV-8b67e7ac8e61cc1e",
+        "EV-989631c550d89726",
+        "EV-94ad4a217508e6e0",
         "EV-b43f22d8bc7fec3f",
         "EV-f388f7ae2debeae8",
         "EV-d08935b06ed9e7bb",
@@ -169,28 +176,52 @@
         "TX-technology-agentic_execution",
         "TX-technology-code_generation",
         "TX-technology-long_context",
-        "TX-technology-mixture_of_experts",
         "TX-use_case-data_analysis",
         "TX-technology-on_device",
         "TX-technology-embodied_ai",
         "TX-technology-fine_tuning",
         "TX-technology-open_weights",
-        "TX-technology-video_generation",
         "TX-technology-multimodal",
+        "TX-technology-video_generation",
+        "TX-technology-image_generation",
         "TX-technology-speech_audio",
         "TX-technology-quantization",
         "TX-technology-computer_use"
       ],
       "relatedEntityIds": [
+        "EN-52e3d014f9a275ea",
         "EN-0b0c3b228202ab0a",
+        "EN-5398729239788ca5",
         "EN-22a4c686e665e299",
+        "EN-2daac3672aeafcbd",
         "EN-d65d81c60c0c47c4"
       ],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-07-21"
+      "lastSeen": "2026-07-22"
     }
   ],
   "relationships": [
+    {
+      "relationship_id": "REL2-7ae0c6bd5891fc63",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-047364b9be67f665",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-0b0c3b228202ab0a",
+      "object_type": "entity",
+      "event_id": "EV-f388f7ae2debeae8",
+      "claim_refs": [
+        "CL-a1249f35b9ba6926",
+        "CL-92d6b555c432e2ae",
+        "CL-37dcfa07b30d87fb",
+        "CL-181e772867328b63"
+      ],
+      "source_refs": [
+        "SA-fad5933b92a28ab6"
+      ],
+      "data_date": "2026-07-21",
+      "status": "verified"
+    },
     {
       "relationship_id": "REL2-a8a5ef2c18107fcd",
       "relationship_version": "RELATION-V2.0",
@@ -228,6 +259,7 @@
         "EV-2258329f33d413cf",
         "EV-f68e00bb9fd49fac",
         "EV-d99037f2ed8db897",
+        "EV-3bd84e75aa7f18b3",
         "EV-631dce4dc135d01b"
       ],
       "entityIds": [
@@ -249,12 +281,13 @@
         "EN-a3c3b987b09fc1bb",
         "EN-2c348893efb2316e",
         "EN-ed501d3e2d977553",
+        "EN-f8bebacc033880dd",
         "EN-b2968d9ba72f4818"
       ],
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-07-21"
+      "lastSeen": "2026-07-22"
     }
   ],
   "fde": [],

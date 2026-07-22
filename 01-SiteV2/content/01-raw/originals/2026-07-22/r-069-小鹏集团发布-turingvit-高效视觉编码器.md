@@ -1,0 +1,241 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-069
+title: "小鹏集团发布 TuringViT 高效视觉编码器"
+title_zh: "小鹏集团发布 TuringViT 高效视觉编码器"
+title_translation_status: not_required
+title_translation_method: source_title
+title_translation_model: not_applicable
+original_url: "https://www.ithome.com/0/979/451.htm"
+canonical_url: "https://ithome.com/0/979/451.htm"
+source_name: "IT之家（RSS）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-21T04:23:59.000Z"
+collected_at: 2026-07-22T01:55:34.628Z
+language: mixed
+full_text_hash: 6b69e5bf0965703f
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-22/r-069-小鹏集团发布-turingvit-高效视觉编码器.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-22/r-069-小鹏集团发布-turingvit-高效视觉编码器.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: medium
+extraction_method: "content-container"
+readability_score: 69
+extractor_diagnostics: {"readability_score":69,"text_length":1812,"paragraph_count":21,"sentence_count":14,"boilerplate_hits":1,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 1812
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"6b69e5bf0965703f","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"小鹏集团发布 TuringViT 高效视觉编码器","discovery_summary":"小鹏集团发布面向 VLM/VLA 时代的 TuringViT 视觉编码器，推出 18L 和 24L 两个规格。该编码器在 1536×1536 分辨率下推理吞吐量达 Seed1.5-ViT 的 3.04 倍，仅用 0.85B 图文对便在六项零样本分类基准上取得 83.6% 平均准确率，超越使用 10B 数据的基线。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/979/451.htm","discovered_at":"2026-07-22T01:46:55.201Z","rank_on_page":355,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 06ceae680650121b
+content_hash: 6b69e5bf0965703f
+semantic_hash: a765f6b02f644833
+duplicate_of: ""
+first_seen_at: "2026-07-21T04:23:59.000Z"
+last_seen_at: 2026-07-22T01:55:34.628Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":true,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":false,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool","emerging_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_technical_trend","importance_score":5,"importance_reason":"AI hardware capability or supply shift; rubric=5 major/platform/industry-shaping","supporting_signals":["ai_hardware_lens","automotive_vertical_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":5,"guanlan_relevance":4,"emerging_signal_score":4}
+business_elements: {"companies":["IT之家（RSS）","GitHub"],"products":[],"people":[],"industries":[],"roles":[],"workflows":["计费 / 预算管理","权限 / 安全治理","部署 / 集成交付"],"business_actions":["发布 / 推出","部署 / 上线"],"affected_departments":["IT / 安全"],"numbers":["18","24","1536","1.5","3.04 倍","0.85B","83.6%","10B"],"quotes":["线性注意力主导 + 高质量数据治理 + 原生动态分辨率","十分之一数据，更优效果","固定分辨率预训练 + 事后适配"]}
+evidence_seed: {"company_actions":["小鹏集团发布面向 VLM/VLA 时代的 TuringViT 视觉编码器，推出 18L 和 24L 两个规格。该编码器在 1536×1536 分辨率下推理吞吐量达 Seed1.5-ViT 的 3.04 倍，仅用 0.85B 图文对便在六项零样本分类基准上取得 83.6% 平均准确率，超越使用 10B 数据的基线。","实测数据显示，随着输入分辨率提升，TuringViT 的延迟增长曲线远平缓于标准 softmax ViT，高分辨率下的效率优势愈发显著。"],"case_details":["TuringViT 共推出两个规格版本： TuringViT-18L 包含 3 组 Turing Block（共 15 层 TLA+3 层 MHA），主打动态分辨率下的高效部署； TuringViT-24L 包含 4 组 Turing Block（共 20 层 TLA+4 层 MHA），在保持线性计算主导的前提下进一步提升表征能力。"],"workflow_changes":["IT之家 7 月 21 日消息，小鹏集团今日发布 TuringViT 高效视觉编码器 ，面向 VLM / VLA 时代系统性重构视觉编码器的架构设计、数据范式与训练流程。"],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+missing_information: []
+key_excerpts: [{"type":"funding","text":"小鹏集团发布面向 VLM/VLA 时代的 TuringViT 视觉编码器，推出 18L 和 24L 两个规格。该编码器在 1536×1536 分辨率下推理吞吐量达 Seed1.5-ViT 的 3.04 倍，仅用 0.85B 图文对便在六项零样本分类基准上取得 83.6% 平均准确率，超越使用 10B 数据的基线。","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"workflow_change","text":"IT之家 7 月 21 日消息，小鹏集团今日发布 TuringViT 高效视觉编码器 ，面向 VLM / VLA 时代系统性重构视觉编码器的架构设计、数据范式与训练流程。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"opinion","text":"小鹏集团表示， TuringViT 将全面支撑智能驾驶、智能座舱、IRON 人形机器人三大业务场景 ，同时为行业提供了一条可复现、低成本训练 SOTA 级（State-of-the-Art，最新技术水平）视觉 Transformer 的技术路径，推动先进视觉大模型从“头部团队专属”走向“行业普惠”。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"medium"},{"type":"quote","text":"▲ TuringViT 的块架构和模型配置 据介绍，TuringViT 从架构、数据、训练三个维度同步突破，打造了“线性注意力主导 + 高质量数据治理 + 原生动态分辨率”的完整技术体系，实现了效果、效率与落地性的三重提升。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"TuringViT 共推出两个规格版本： TuringViT-18L 包含 3 组 Turing Block（共 15 层 TLA+3 层 MHA），主打动态分辨率下的高效部署； TuringViT-24L 包含 4 组 Turing Block（共 20 层 TLA+4 层 MHA），在保持线性计算主导的前提下进一步提升表征能力。","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"实测数据显示，随着输入分辨率提升，TuringViT 的延迟增长曲线远平缓于标准 softmax ViT，高分辨率下的效率优势愈发显著。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-22T01:55:34.628Z
+theme: early-direction-signal
+keyword_group: early-direction-signal
+copyright_note: local research archive only
+---
+
+# 小鹏集团发布 TuringViT 高效视觉编码器
+
+## clean_text
+
+IT之家 7 月 21 日消息，小鹏集团今日发布 TuringViT 高效视觉编码器 ，面向 VLM / VLA 时代系统性重构视觉编码器的架构设计、数据范式与训练流程。
+小鹏集团表示， TuringViT 将全面支撑智能驾驶、智能座舱、IRON 人形机器人三大业务场景 ，同时为行业提供了一条可复现、低成本训练 SOTA 级（State-of-the-Art，最新技术水平）视觉 Transformer 的技术路径，推动先进视觉大模型从“头部团队专属”走向“行业普惠”。
+▲ TuringViT 的块架构和模型配置 据介绍，TuringViT 从架构、数据、训练三个维度同步突破，打造了“线性注意力主导 + 高质量数据治理 + 原生动态分辨率”的完整技术体系，实现了效果、效率与落地性的三重提升。
+TuringViT 共推出两个规格版本：
+TuringViT-18L 包含 3 组 Turing Block（共 15 层 TLA+3 层 MHA），主打动态分辨率下的高效部署；
+TuringViT-24L 包含 4 组 Turing Block（共 20 层 TLA+4 层 MHA），在保持线性计算主导的前提下进一步提升表征能力。
+实测数据显示，随着输入分辨率提升，TuringViT 的延迟增长曲线远平缓于标准 softmax ViT，高分辨率下的效率优势愈发显著。在 1536×1536 分辨率下，TuringViT-18L 的推理吞吐量达到 Seed1.5-ViT 的 3.04 倍，相比 SigLIP2-ViT-L 提升 2.16 倍，为高分辨率感知、多摄像头输入、长时序视频处理的端侧部署扫清了核心障碍。
+不同于行业“堆数据规模”的粗放路线， TuringViT 打造了 VISTA-Curation 多模态数据治理流水线 ，通过提升单样本的监督价值实现数据效率的量级提升，从“用更多数据”转向“用更优质的监督”。
+针对图文数据，流水线通过三步精细化筛选实现质量升级：
+第一步过滤低分辨率、模糊、低纹理的低质量图片；
+第二步通过多模型、多提示词生成多样化候选字幕，并交叉验证视觉一致性；
+第三步在统一对比池中通过相对图文对齐度、文本信息量、歧义度综合打分，筛选出视觉贴合度高、语义信息密度高的优质标注，淘汰模糊、泛化、弱对齐的样本。
+▲ 图像-文本筛选及处理流程 针对视频数据，流水线同样进行全流程治理：先将长视频切分为连续短片段并均匀采样代表帧；再通过语义一致性与运动一致性双重过滤，保留语义连贯、变化信息有效的片段；最后融合局部帧级细节字幕与全局时序语义字幕，生成具备变换感知能力的视频标注，让模型从连续画面中学习更鲁棒的视觉表征。
+▲ 视频-语义筛选及处理流程 最终，TuringViT 仅用 0.85B 图文对（约为 SigLIP2-L 训练数据规模的 10%），便在 ImageNet-1K 等六项零样本分类基准上取得 83.6% 的平均准确率， 超越使用 10B 数据训练的主流开源基线 ；在 COCO、Flickr30K 图文检索任务上同样优势显著，真正实现了“十分之一数据，更优效果”的突破。
+TuringViT 还采用四阶段渐进式原生动态分辨率训练范式，从预训练之初就适配下游 VLM / VLA 的输入特性，告别“固定分辨率预训练 + 事后适配”的传统模式。
+在智能驾驶领域， TuringViT 是第二代 VLA 模型的核心视觉编码器 ，负责处理多路环视摄像头的高分辨率、多帧动态道路场景输入，为预测式世界模型提供视觉 token。
+面向智能座舱与驾泊一体化场景，TuringViT 的 VLM 原生特性让视觉特征与语言模型实现更高效的对齐， 可以提供更高的识别精度、不同画幅和比例的视觉输入 ，以支撑更多未来的车辆与用户交互的丰富座舱功能。
+在小鹏 IRON 人形机器人的技术体系中， TuringViT 充当着“视觉视网膜”的核心角色 ，为具身智能提供物体细粒度识别、空间关系理解、可操作区域检测、动态环境追踪等基础感知能力。
+IT之家附 TuringViT 项目主页如下：
+https://turingvit.github.io/
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## full_text
+
+IT之家 7 月 21 日消息，小鹏集团今日发布 TuringViT 高效视觉编码器 ，面向 VLM / VLA 时代系统性重构视觉编码器的架构设计、数据范式与训练流程。
+小鹏集团表示， TuringViT 将全面支撑智能驾驶、智能座舱、IRON 人形机器人三大业务场景 ，同时为行业提供了一条可复现、低成本训练 SOTA 级（State-of-the-Art，最新技术水平）视觉 Transformer 的技术路径，推动先进视觉大模型从“头部团队专属”走向“行业普惠”。
+▲ TuringViT 的块架构和模型配置 据介绍，TuringViT 从架构、数据、训练三个维度同步突破，打造了“线性注意力主导 + 高质量数据治理 + 原生动态分辨率”的完整技术体系，实现了效果、效率与落地性的三重提升。
+TuringViT 共推出两个规格版本：
+TuringViT-18L 包含 3 组 Turing Block（共 15 层 TLA+3 层 MHA），主打动态分辨率下的高效部署；
+TuringViT-24L 包含 4 组 Turing Block（共 20 层 TLA+4 层 MHA），在保持线性计算主导的前提下进一步提升表征能力。
+实测数据显示，随着输入分辨率提升，TuringViT 的延迟增长曲线远平缓于标准 softmax ViT，高分辨率下的效率优势愈发显著。在 1536×1536 分辨率下，TuringViT-18L 的推理吞吐量达到 Seed1.5-ViT 的 3.04 倍，相比 SigLIP2-ViT-L 提升 2.16 倍，为高分辨率感知、多摄像头输入、长时序视频处理的端侧部署扫清了核心障碍。
+不同于行业“堆数据规模”的粗放路线， TuringViT 打造了 VISTA-Curation 多模态数据治理流水线 ，通过提升单样本的监督价值实现数据效率的量级提升，从“用更多数据”转向“用更优质的监督”。
+针对图文数据，流水线通过三步精细化筛选实现质量升级：
+第一步过滤低分辨率、模糊、低纹理的低质量图片；
+第二步通过多模型、多提示词生成多样化候选字幕，并交叉验证视觉一致性；
+第三步在统一对比池中通过相对图文对齐度、文本信息量、歧义度综合打分，筛选出视觉贴合度高、语义信息密度高的优质标注，淘汰模糊、泛化、弱对齐的样本。
+▲ 图像-文本筛选及处理流程 针对视频数据，流水线同样进行全流程治理：先将长视频切分为连续短片段并均匀采样代表帧；再通过语义一致性与运动一致性双重过滤，保留语义连贯、变化信息有效的片段；最后融合局部帧级细节字幕与全局时序语义字幕，生成具备变换感知能力的视频标注，让模型从连续画面中学习更鲁棒的视觉表征。
+▲ 视频-语义筛选及处理流程 最终，TuringViT 仅用 0.85B 图文对（约为 SigLIP2-L 训练数据规模的 10%），便在 ImageNet-1K 等六项零样本分类基准上取得 83.6% 的平均准确率， 超越使用 10B 数据训练的主流开源基线 ；在 COCO、Flickr30K 图文检索任务上同样优势显著，真正实现了“十分之一数据，更优效果”的突破。
+TuringViT 还采用四阶段渐进式原生动态分辨率训练范式，从预训练之初就适配下游 VLM / VLA 的输入特性，告别“固定分辨率预训练 + 事后适配”的传统模式。
+在智能驾驶领域， TuringViT 是第二代 VLA 模型的核心视觉编码器 ，负责处理多路环视摄像头的高分辨率、多帧动态道路场景输入，为预测式世界模型提供视觉 token。
+面向智能座舱与驾泊一体化场景，TuringViT 的 VLM 原生特性让视觉特征与语言模型实现更高效的对齐， 可以提供更高的识别精度、不同画幅和比例的视觉输入 ，以支撑更多未来的车辆与用户交互的丰富座舱功能。
+在小鹏 IRON 人形机器人的技术体系中， TuringViT 充当着“视觉视网膜”的核心角色 ，为具身智能提供物体细粒度识别、空间关系理解、可操作区域检测、动态环境追踪等基础感知能力。
+IT之家附 TuringViT 项目主页如下：
+https://turingvit.github.io/
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 69
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: medium
+- diagnostics: {"readability_score":69,"text_length":1812,"paragraph_count":21,"sentence_count":14,"boilerplate_hits":1,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=medium
+   小鹏集团发布面向 VLM/VLA 时代的 TuringViT 视觉编码器，推出 18L 和 24L 两个规格。该编码器在 1536×1536 分辨率下推理吞吐量达 Seed1.5-ViT 的 3.04 倍，仅用 0.85B 图文对便在六项零样本分类基准上取得 83.6% 平均准确率，超越使用 10B 数据的基线。
+
+2. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   IT之家 7 月 21 日消息，小鹏集团今日发布 TuringViT 高效视觉编码器 ，面向 VLM / VLA 时代系统性重构视觉编码器的架构设计、数据范式与训练流程。
+
+3. **opinion**｜supports=signal_card_candidate, relationship_graph_input, viewpoint｜importance=high｜confidence=medium
+   小鹏集团表示， TuringViT 将全面支撑智能驾驶、智能座舱、IRON 人形机器人三大业务场景 ，同时为行业提供了一条可复现、低成本训练 SOTA 级（State-of-the-Art，最新技术水平）视觉 Transformer 的技术路径，推动先进视觉大模型从“头部团队专属”走向“行业普惠”。
+
+4. **quote**｜supports=signal_card_candidate, relationship_graph_input, viewpoint｜importance=high｜confidence=medium
+   ▲ TuringViT 的块架构和模型配置 据介绍，TuringViT 从架构、数据、训练三个维度同步突破，打造了“线性注意力主导 + 高质量数据治理 + 原生动态分辨率”的完整技术体系，实现了效果、效率与落地性的三重提升。
+
+5. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=medium
+   TuringViT 共推出两个规格版本： TuringViT-18L 包含 3 组 Turing Block（共 15 层 TLA+3 层 MHA），主打动态分辨率下的高效部署； TuringViT-24L 包含 4 组 Turing Block（共 20 层 TLA+4 层 MHA），在保持线性计算主导的前提下进一步提升表征能力。
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   实测数据显示，随着输入分辨率提升，TuringViT 的延迟增长曲线远平缓于标准 softmax ViT，高分辨率下的效率优势愈发显著。
+
+## business_elements
+
+- companies: IT之家（RSS）, GitHub
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 暂无公开信息
+- roles: 暂无公开信息
+- workflows: 计费 / 预算管理, 权限 / 安全治理, 部署 / 集成交付
+- business_actions: 发布 / 推出, 部署 / 上线
+- affected_departments: IT / 安全
+- numbers: 18, 24, 1536, 1.5, 3.04 倍, 0.85B, 83.6%, 10B
+- quotes: 线性注意力主导 + 高质量数据治理 + 原生动态分辨率 / 十分之一数据，更优效果 / 固定分辨率预训练 + 事后适配
+
+## evidence_seed
+
+- company_actions: 小鹏集团发布面向 VLM/VLA 时代的 TuringViT 视觉编码器，推出 18L 和 24L 两个规格。该编码器在 1536×1536 分辨率下推理吞吐量达 Seed1.5-ViT 的 3.04 倍，仅用 0.85B 图文对便在六项零样本分类基准上取得 83.6% 平均准确率，超越使用 10B 数据的基线。 / 实测数据显示，随着输入分辨率提升，TuringViT 的延迟增长曲线远平缓于标准 softmax ViT，高分辨率下的效率优势愈发显著。
+- case_details: TuringViT 共推出两个规格版本： TuringViT-18L 包含 3 组 Turing Block（共 15 层 TLA+3 层 MHA），主打动态分辨率下的高效部署； TuringViT-24L 包含 4 组 Turing Block（共 20 层 TLA+4 层 MHA），在保持线性计算主导的前提下进一步提升表征能力。
+- workflow_changes: IT之家 7 月 21 日消息，小鹏集团今日发布 TuringViT 高效视觉编码器 ，面向 VLM / VLA 时代系统性重构视觉编码器的架构设计、数据范式与训练流程。
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_technical_trend
+- importance_score: 5
+- importance_reason: AI hardware capability or supply shift; rubric=5 major/platform/industry-shaping
+- supporting_signals: ai_hardware_lens,automotive_vertical_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 5
+- guanlan_relevance: 4
+- emerging_signal_score: 4
+
+## usable_for
+
+- viewpoint: true
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: false
+- emerging_pool: true
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+- emerging_pool
+
+## missing_information
+
+- none
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"小鹏集团发布 TuringViT 高效视觉编码器","discovery_summary":"小鹏集团发布面向 VLM/VLA 时代的 TuringViT 视觉编码器，推出 18L 和 24L 两个规格。该编码器在 1536×1536 分辨率下推理吞吐量达 Seed1.5-ViT 的 3.04 倍，仅用 0.85B 图文对便在六项零样本分类基准上取得 83.6% 平均准确率，超越使用 10B 数据的基线。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/979/451.htm","discovered_at":"2026-07-22T01:46:55.201Z","rank_on_page":355,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+小鹏集团发布面向 VLM/VLA 时代的 TuringViT 视觉编码器，推出 18L 和 24L 两个规格。该编码器在 1536×1536 分辨率下推理吞吐量达 Seed1.5-ViT 的 3.04 倍，仅用 0.85B 图文对便在六项零样本分类基准上取得 83.6% 平均准确率，超越使用 10B 数据的基线。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

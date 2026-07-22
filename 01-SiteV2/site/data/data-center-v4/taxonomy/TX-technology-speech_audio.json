@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-21T01:27:58.078Z",
-    "latestDataDate": "2026-07-21",
-    "currentDate": "2026-07-21",
-    "eventCount": 1347,
+    "generatedAt": "2026-07-22T01:57:46.409Z",
+    "latestDataDate": "2026-07-22",
+    "currentDate": "2026-07-22",
+    "eventCount": 1401,
     "quarantinedEventCount": 13
   },
   "node": {
@@ -24,6 +24,7 @@
       "EV-2258329f33d413cf",
       "EV-f68e00bb9fd49fac",
       "EV-d99037f2ed8db897",
+      "EV-3bd84e75aa7f18b3",
       "EV-631dce4dc135d01b"
     ],
     "entityIds": [
@@ -45,12 +46,13 @@
       "EN-a3c3b987b09fc1bb",
       "EN-2c348893efb2316e",
       "EN-ed501d3e2d977553",
+      "EN-f8bebacc033880dd",
       "EN-b2968d9ba72f4818"
     ],
     "fdeIds": [],
     "hardwareIds": [],
     "firstSeen": "2026-05-25",
-    "lastSeen": "2026-07-21"
+    "lastSeen": "2026-07-22"
   },
   "events": [
     {
@@ -735,6 +737,91 @@
       "publisher": "MarkTechPost（RSS）"
     },
     {
+      "id": "EV-3bd84e75aa7f18b3",
+      "dataDate": "2026-07-22",
+      "date": "2026-07-21",
+      "updatedDate": "2026-07-22",
+      "eventType": "lawsuit_settlement",
+      "eventTypeLabel": "诉讼与和解",
+      "eventGroup": "组织、政策与法律",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "索尼音乐再次起诉 Udio：指控其未经许可复制超 3 万段录音训练 AI 模型",
+      "originalTitle": "",
+      "subject": "索尼音乐再次",
+      "action": "起诉",
+      "object": "Udio：指控其未经许可复制超 3 万段录音训练 AI 模型",
+      "metrics": [
+        "3 万"
+      ],
+      "locations": [
+        "美国"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "speech_audio",
+          "name": "语音与音频"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "content_creation",
+            "dimensionName": "应用场景",
+            "name": "内容创作"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "speech_audio",
+          "name": "语音与音频"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "content_creation",
+          "dimensionName": "应用场景",
+          "name": "内容创作"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "content_creation",
+          "dimensionName": "应用场景",
+          "name": "内容创作"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "speech_audio",
+          "name": "语音与音频"
+        }
+      ],
+      "entityIds": [
+        "EN-f8bebacc033880dd"
+      ],
+      "entityNames": [
+        "索尼音乐再次"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/979/429.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
       "id": "EV-631dce4dc135d01b",
       "dataDate": "2026-06-04",
       "date": "2026-06-04",
@@ -829,7 +916,8 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "Qwen"
+        "Qwen",
+        "阿里"
       ],
       "verificationStatus": "verified",
       "datasetScopes": [
@@ -838,14 +926,19 @@
       "eventIds": [
         "EV-43b7f45e9bd7ec9b",
         "EV-3d93d1da8cb64462",
+        "EV-ef2cd6bd912a6ed8",
         "EV-4740121f428e4bda",
         "EV-a354af52772334fd",
         "EV-c0f87b8c5208cd75",
         "EV-53f08daddd011dbb",
         "EV-e1a4bc40db4a9d8f",
         "EV-2a833330267cb2df",
-        "EV-94ad4a217508e6e0",
         "EV-0d5a32aca724d30e",
+        "EV-1a241bcb4fad886c",
+        "EV-7e24db14146d39be",
+        "EV-8b67e7ac8e61cc1e",
+        "EV-989631c550d89726",
+        "EV-94ad4a217508e6e0",
         "EV-b43f22d8bc7fec3f",
         "EV-f388f7ae2debeae8",
         "EV-d08935b06ed9e7bb",
@@ -885,25 +978,28 @@
         "TX-technology-agentic_execution",
         "TX-technology-code_generation",
         "TX-technology-long_context",
-        "TX-technology-mixture_of_experts",
         "TX-use_case-data_analysis",
         "TX-technology-on_device",
         "TX-technology-embodied_ai",
         "TX-technology-fine_tuning",
         "TX-technology-open_weights",
-        "TX-technology-video_generation",
         "TX-technology-multimodal",
+        "TX-technology-video_generation",
+        "TX-technology-image_generation",
         "TX-technology-speech_audio",
         "TX-technology-quantization",
         "TX-technology-computer_use"
       ],
       "relatedEntityIds": [
+        "EN-52e3d014f9a275ea",
         "EN-0b0c3b228202ab0a",
+        "EN-5398729239788ca5",
         "EN-22a4c686e665e299",
+        "EN-2daac3672aeafcbd",
         "EN-d65d81c60c0c47c4"
       ],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-07-21"
+      "lastSeen": "2026-07-22"
     },
     {
       "id": "EN-ec1c8f558ff61e34",
@@ -963,16 +1059,18 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-1a241bcb4fad886c",
         "EV-f388f7ae2debeae8",
         "EV-bbc34d7bc9c02b6f"
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-image_generation",
         "TX-technology-speech_audio"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-10",
-      "lastSeen": "2026-07-21"
+      "lastSeen": "2026-07-22"
     },
     {
       "id": "EN-bbdefa2950f49882",
@@ -980,8 +1078,7 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "gemini",
-        "谷歌"
+        "Gemini"
       ],
       "verificationStatus": "verified",
       "datasetScopes": [
@@ -1014,8 +1111,14 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
+        "EV-6ce069b1845f5a52",
+        "EV-597b8257a97b3d02",
+        "EV-5aaa4c6697606274",
+        "EV-834e65247c2d4a3b",
+        "EV-cc974e0031c69715",
+        "EV-cd067fa6f39fe828",
+        "EV-dc3a5509a690a6b0",
         "EV-f3cc0845ce442e6b",
-        "EV-0d5a32aca724d30e",
         "EV-bee410f8134cba5a",
         "EV-a255cfc0dab44564",
         "EV-98a80b75b27d9f3b",
@@ -1132,18 +1235,20 @@
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-embodied_ai",
         "TX-technology-fine_tuning",
-        "TX-technology-open_weights",
-        "TX-technology-video_generation",
         "TX-technology-multimodal",
+        "TX-technology-video_generation",
         "TX-industry-media_entertainment",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
+        "TX-technology-image_generation",
         "TX-technology-speech_audio",
         "TX-use_case-content_creation",
-        "TX-technology-image_generation",
         "TX-technology-computer_use"
       ],
       "relatedEntityIds": [
+        "EN-a85d5a9b4a77d59b",
+        "EN-6f216f2ea5b7a13e",
+        "EN-18f0900d6c487f59",
         "EN-419f2cd96ee122e3",
         "EN-96eebba49dbbf422",
         "EN-81e577740888ca6d",
@@ -1155,11 +1260,8 @@
         "EN-01f1074bb52ff605",
         "EN-f2c032b19edb7900",
         "EN-2ab6d53e717a0e0d",
-        "EN-1cd41545564777ce",
         "EN-2998f8b13f4fd72e",
-        "EN-3546e1b15e6549b2",
         "EN-b5c336c0dd1ff29c",
-        "EN-e1a4e41919f7c2dc",
         "EN-d56aa2f9908f566a",
         "EN-4baef0e41cbd7ae2",
         "EN-bdfecbcd7dbf76d2",
@@ -1167,7 +1269,7 @@
         "EN-2aae0de3f5530f08"
       ],
       "firstSeen": "2026-04-12",
-      "lastSeen": "2026-07-21"
+      "lastSeen": "2026-07-22"
     },
     {
       "id": "EN-3a7bd3e2360a3d29",
@@ -1375,7 +1477,9 @@
       "name": "NVIDIA",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "英伟达"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -1397,6 +1501,9 @@
         "EV-a00763037a94d512",
         "EV-0e84a2f49d765ce3",
         "EV-467d1a701d21327d",
+        "EV-b4f69c41e23c7ce0",
+        "EV-11b2293769081d4c",
+        "EV-ff77876694ab8395",
         "EV-cafe435ddd007821",
         "EV-ed388875bc004add",
         "EV-bc9abd502c002102",
@@ -1420,8 +1527,14 @@
         "EV-4faa2bcf2e42e60c",
         "EV-9ee3c0ec243b6129",
         "EV-58c1cc3749294649",
+        "EV-2fea1664807824ce",
+        "EV-3ba971c5939b0f04",
+        "EV-cb3a8846bc4f8aca",
+        "EV-48977fd72d2fcfb8",
+        "EV-a37b9d9fb85e460f",
         "EV-118317b7f92e5e16",
         "EV-950237c6b3eb6343",
+        "EV-941ba9ebdc43f20c",
         "EV-29e069ac093f0e34",
         "EV-6b51b1b6fe22c540",
         "EV-c2800c1c5a3f568f",
@@ -1467,9 +1580,11 @@
         "EV-aa63303570154a9b",
         "EV-d2ac9700c86913da",
         "EV-d43a561da59b2897",
+        "EV-0e2a68efc19bfbaa",
         "EV-02b19ffbe883ee2e",
         "EV-8993e021ac17df4a",
         "EV-34929bdd016dc8d6",
+        "EV-c14e5185fd6bbe30",
         "EV-08f736f61f2b46f3",
         "EV-2c7d13d234147817",
         "EV-710b145230faa692",
@@ -1500,31 +1615,39 @@
         "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
-        "TX-technology-speech_audio",
         "TX-technology-image_generation",
+        "TX-technology-speech_audio",
         "TX-technology-inference_optimization"
       ],
       "relatedEntityIds": [
+        "EN-e07654c7cc29acbd",
+        "EN-52c2f30b6bda5898",
         "EN-1e71d9c1a5c4de16",
         "EN-683d8d597da71192",
         "EN-9e72fd4472222231",
+        "EN-8395dc051feafc4c",
+        "EN-aa15d891a32a51b8",
         "EN-0f3360879e746531",
         "EN-a1b0d8a938903dc7",
+        "EN-956b7280912ef1cc",
         "EN-4a639cb888a15d75",
         "EN-8d323d8bba783aa3",
         "EN-b5738c169b693bee",
         "EN-51fd7dc086fcb858",
         "EN-9e193e1ec8d75d41",
-        "EN-8395dc051feafc4c",
+        "EN-3ae50afab3e392b8",
         "EN-936f01f91fdadf69",
         "EN-4e7e886400fe6a83",
         "EN-1dc405a4cda895d0",
         "EN-12ab68e37d104d27",
         "EN-a3266ab9e10d6105",
-        "EN-9fbf261b62c1d7c0"
+        "EN-9fbf261b62c1d7c0",
+        "EN-11ef7b03c79c9bbd",
+        "EN-9bc22dcabf7f45b3",
+        "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-20"
+      "lastSeen": "2026-07-22"
     },
     {
       "id": "EN-12ab68e37d104d27",
@@ -1604,6 +1727,8 @@
         "EV-67ef7accd26a07a0",
         "EV-a7e1ecd212474e00",
         "EV-d961d3ad02f6ae14",
+        "EV-59229486408edb05",
+        "EV-7e24db14146d39be",
         "EV-7c6a9f4ee4829976",
         "EV-93c6ccf23cc422cb",
         "EV-5babb43f4b4d302f",
@@ -1626,20 +1751,23 @@
         "TX-technology-code_generation",
         "TX-use_case-software_development",
         "TX-technology-mixture_of_experts",
+        "TX-use_case-cybersecurity",
         "TX-technology-retrieval_augmented_generation",
         "TX-use_case-research_science",
-        "TX-technology-video_generation",
         "TX-technology-multimodal",
+        "TX-technology-video_generation",
         "TX-industry-media_entertainment",
-        "TX-technology-speech_audio",
-        "TX-technology-image_generation"
+        "TX-technology-image_generation",
+        "TX-technology-speech_audio"
       ],
       "relatedEntityIds": [
+        "EN-18f0900d6c487f59",
+        "EN-92af3ce2fb97edf3",
         "EN-d56aa2f9908f566a",
         "EN-085598c00f2aaccf"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-07-22"
     },
     {
       "id": "EN-085598c00f2aaccf",
@@ -1745,6 +1873,28 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-05-25",
       "lastSeen": "2026-05-25"
+    },
+    {
+      "id": "EN-f8bebacc033880dd",
+      "name": "索尼音乐再次",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-3bd84e75aa7f18b3"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-speech_audio",
+        "TX-use_case-content_creation"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-22"
     },
     {
       "id": "EN-b2968d9ba72f4818",

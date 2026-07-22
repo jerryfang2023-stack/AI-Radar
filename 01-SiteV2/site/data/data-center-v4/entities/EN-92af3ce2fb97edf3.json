@@ -1,0 +1,255 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-22T01:57:46.409Z",
+    "latestDataDate": "2026-07-22",
+    "currentDate": "2026-07-22",
+    "eventCount": 1401,
+    "quarantinedEventCount": 13
+  },
+  "entity": {
+    "id": "EN-92af3ce2fb97edf3",
+    "name": "GenCeption",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-7e24db14146d39be"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-technology-video_generation"
+    ],
+    "relatedEntityIds": [
+      "EN-2b6e51bec93e86c1"
+    ],
+    "firstSeen": "2026-07-21",
+    "lastSeen": "2026-07-22",
+    "relationIds": [
+      "REL2-be46d44f8ee661d3"
+    ],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [
+        "EV-7e24db14146d39be"
+      ],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-7e24db14146d39be",
+        "dataDate": "2026-07-22",
+        "date": "2026-07-21",
+        "eventType": "hardware_product",
+        "eventTypeLabel": "硬件产品",
+        "eventGroup": "AI 硬件",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "谷歌 DeepMind 发布 GenCeption：基于阿里 Wan2.1，打破计算机视觉桎梏",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "video_generation",
+            "name": "视频生成"
+          }
+        ],
+        "entityIds": [
+          "EN-2b6e51bec93e86c1",
+          "EN-c9e6168149dd7cf6",
+          "EN-047364b9be67f665",
+          "EN-92af3ce2fb97edf3"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [
+    {
+      "id": "EN-2b6e51bec93e86c1",
+      "name": "Google DeepMind",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "谷歌 DeepMind",
+        "DeepMind"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-6f092cfc7a064d64",
+        "EV-d4e44892226be468",
+        "EV-1ac32035d5e425e1",
+        "EV-19ebde6e2de35fc9",
+        "EV-67ef7accd26a07a0",
+        "EV-a7e1ecd212474e00",
+        "EV-d961d3ad02f6ae14",
+        "EV-59229486408edb05",
+        "EV-7e24db14146d39be",
+        "EV-7c6a9f4ee4829976",
+        "EV-93c6ccf23cc422cb",
+        "EV-5babb43f4b4d302f",
+        "EV-ff10670ad06959ec",
+        "EV-011eeba13ebcc9a8",
+        "EV-8eed6489ab514823",
+        "EV-3ef3e18df61a00d8",
+        "EV-568d2aeab5234e48",
+        "EV-f68e00bb9fd49fac",
+        "EV-3e9a0d1be6de5096",
+        "EV-e96aba142e46eba1",
+        "EV-d49da50484ba781f",
+        "EV-81e297ea6f8fde3b",
+        "EV-68edd592c36dccd3"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-vision_language",
+        "TX-technology-code_generation",
+        "TX-use_case-software_development",
+        "TX-technology-mixture_of_experts",
+        "TX-use_case-cybersecurity",
+        "TX-technology-retrieval_augmented_generation",
+        "TX-use_case-research_science",
+        "TX-technology-multimodal",
+        "TX-technology-video_generation",
+        "TX-industry-media_entertainment",
+        "TX-technology-image_generation",
+        "TX-technology-speech_audio"
+      ],
+      "relatedEntityIds": [
+        "EN-18f0900d6c487f59",
+        "EN-92af3ce2fb97edf3",
+        "EN-d56aa2f9908f566a",
+        "EN-085598c00f2aaccf"
+      ],
+      "firstSeen": "2026-06-02",
+      "lastSeen": "2026-07-22"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-be46d44f8ee661d3",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-2b6e51bec93e86c1",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-92af3ce2fb97edf3",
+      "object_type": "entity",
+      "event_id": "EV-7e24db14146d39be",
+      "claim_refs": [
+        "CL-840ddd6a6e7692a3",
+        "CL-2946d3d86e677a3a",
+        "CL-ffe960efe13edf3a",
+        "CL-38f19d57a7afab02"
+      ],
+      "source_refs": [
+        "SA-b43b0d7dc99a4085"
+      ],
+      "data_date": "2026-07-22",
+      "status": "verified"
+    }
+  ],
+  "taxonomyNodes": [
+    {
+      "id": "TX-technology-video_generation",
+      "name": "视频生成",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "video_generation",
+      "eventIds": [
+        "EV-a354af52772334fd",
+        "EV-26d2874c6ce028d6",
+        "EV-7e24db14146d39be",
+        "EV-6fbbbfcdcec81df4",
+        "EV-fd8ecce5de2f667d",
+        "EV-5babb43f4b4d302f",
+        "EV-d8c69ed782b73a34",
+        "EV-c7404765df94a3b4",
+        "EV-473f852b374d8b1c",
+        "EV-887d47bb477e2142"
+      ],
+      "entityIds": [
+        "EN-d747d6f5125b6bee",
+        "EN-047364b9be67f665",
+        "EN-b81c8201acfc7639",
+        "EN-2b6e51bec93e86c1",
+        "EN-c9e6168149dd7cf6",
+        "EN-92af3ce2fb97edf3",
+        "EN-ec1c8f558ff61e34",
+        "EN-d83624eb3ab9192e",
+        "EN-b0532e1af75cc4ab",
+        "EN-01f1074bb52ff605",
+        "EN-7ed9c9e7c260ed06",
+        "EN-0e008e2c06144ec8",
+        "EN-bbdefa2950f49882",
+        "EN-5388bc10736a0eff",
+        "EN-43a340bb75b45f02",
+        "EN-47c1e53c427aafb4",
+        "EN-2daac3672aeafcbd",
+        "EN-e9857f381893dd05",
+        "EN-4f96127fdacbb405"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [
+        "HW-7ae863dfba7ce9be"
+      ],
+      "firstSeen": "2026-06-16",
+      "lastSeen": "2026-07-22"
+    }
+  ],
+  "fde": [],
+  "hardware": [
+    {
+      "id": "HW-7ae863dfba7ce9be",
+      "eventId": "EV-7e24db14146d39be",
+      "dataDate": "2026-07-22",
+      "date": "2026-07-21",
+      "title": "谷歌 DeepMind 发布 GenCeption：基于阿里 Wan2.1，打破计算机视觉桎梏",
+      "hardwareType": "ai_device",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "GenCeption",
+      "supplier": "谷歌 DeepMind",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成"
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/979/535.htm",
+      "sourceName": "IT之家（RSS）",
+      "sourceDate": "2026-07-21",
+      "entityIds": [
+        "EN-2b6e51bec93e86c1",
+        "EN-c9e6168149dd7cf6",
+        "EN-047364b9be67f665",
+        "EN-4d09c69c19f5f67b",
+        "EN-92af3ce2fb97edf3"
+      ]
+    }
+  ]
+}

@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-21T01:27:58.078Z",
-    "latestDataDate": "2026-07-21",
-    "currentDate": "2026-07-21",
-    "eventCount": 1347,
+    "generatedAt": "2026-07-22T01:57:46.409Z",
+    "latestDataDate": "2026-07-22",
+    "currentDate": "2026-07-22",
+    "eventCount": 1401,
     "quarantinedEventCount": 13
   },
   "node": {
@@ -28,6 +28,9 @@
       "EV-e4fec8a00b416d12",
       "EV-39848cdd62c00e59",
       "EV-4faa2bcf2e42e60c",
+      "EV-03ab7d0b40d1e5b5",
+      "EV-d4278191ae11f198",
+      "EV-ed272c57e1513d3f",
       "EV-6833305504174bb1",
       "EV-73da0805f2a2705a",
       "EV-345c8a2cc00fe8ca",
@@ -35,6 +38,7 @@
       "EV-c844ddabb8528896",
       "EV-7fe139b107f9adc6",
       "EV-d1e8407177e11fdc",
+      "EV-941ba9ebdc43f20c",
       "EV-6b51b1b6fe22c540",
       "EV-303b418c63895ba6",
       "EV-3353bd96728c99e2",
@@ -69,6 +73,9 @@
       "EN-72138e570e5103e2",
       "EN-aa75c47729b4a292",
       "EN-8147e6fed86d42c1",
+      "EN-593d0361124f348f",
+      "EN-843e746333671ab1",
+      "EN-8d57f84bd1847b24",
       "EN-a96df57737b74def",
       "EN-e2c64fbbaf48eeb2",
       "EN-68dce3237e10d795",
@@ -76,13 +83,14 @@
       "EN-0e6e48aba1669631",
       "EN-d77c36c05230024c",
       "EN-be548deba4a093d7",
-      "EN-8d57f84bd1847b24",
       "EN-53874092e000069b",
       "EN-9c8ae69b84f21a2e",
       "EN-f0da91960830b394",
       "EN-505ff8a27618ef39",
       "EN-c51e27d8efcff21f",
       "EN-dbd6a2f6ddb95ca7",
+      "EN-954dc5d6516f127c",
+      "EN-e07654c7cc29acbd",
       "EN-e3b1bf3dab957ffe",
       "EN-cbc62794911ff31b",
       "EN-a1b0d8a938903dc7",
@@ -124,7 +132,7 @@
       "HW-dca442211b264bbe"
     ],
     "firstSeen": "2026-05-24",
-    "lastSeen": "2026-07-20"
+    "lastSeen": "2026-07-22"
   },
   "events": [
     {
@@ -1298,6 +1306,342 @@
       "publisher": "NVIDIA AI Blog"
     },
     {
+      "id": "EV-03ab7d0b40d1e5b5",
+      "dataDate": "2026-07-22",
+      "date": "2026-07-21",
+      "updatedDate": "2026-07-22",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "小鹏集团发布 TuringViT 高效视觉编码器",
+      "originalTitle": "",
+      "subject": "小鹏集团",
+      "action": "发布",
+      "object": "TuringViT 高效视觉编码器",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "vision_language",
+          "name": "视觉语言"
+        }
+      ],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          },
+          {
+            "dimensionId": "product_form",
+            "id": "robot",
+            "dimensionName": "产品形态",
+            "name": "机器人"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "robotics_automation",
+            "dimensionName": "应用场景",
+            "name": "机器人与物理自动化"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "vision_language",
+          "name": "视觉语言"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "robot",
+          "dimensionName": "产品形态",
+          "name": "机器人"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "robot",
+          "dimensionName": "产品形态",
+          "name": "机器人"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "vision_language",
+          "name": "视觉语言"
+        }
+      ],
+      "entityIds": [
+        "EN-593d0361124f348f",
+        "EN-843e746333671ab1"
+      ],
+      "entityNames": [
+        "小鹏集团",
+        "TuringViT"
+      ],
+      "productName": "TuringViT",
+      "products": [
+        {
+          "name": "TuringViT",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/979/451.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-d4278191ae11f198",
+      "dataDate": "2026-07-22",
+      "date": "2026-07-21",
+      "updatedDate": "2026-07-22",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "荣耀 Robot Phone 拍照页面曝光，将支持大师电影模式与四自由度机械云台",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "荣耀 Robot Phone 拍照页面曝光，将支持大师电影模式与四自由度机械云台",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "robotics_automation",
+            "dimensionName": "应用场景",
+            "name": "机器人与物理自动化"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "entityIds": [
+        "EN-8d57f84bd1847b24"
+      ],
+      "entityNames": [
+        "Robot Phone"
+      ],
+      "productName": "Robot Phone",
+      "products": [
+        {
+          "name": "Robot Phone",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/979/801.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-ed272c57e1513d3f",
+      "dataDate": "2026-07-22",
+      "date": "2026-07-21",
+      "updatedDate": "2026-07-22",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "rumored",
+      "statusLabel": "rumored",
+      "publicationStatus": "disputed",
+      "title": "荣耀 Robot Phone 首日预约量超历代旗舰，搭载第五代骁龙 8 至尊版与 4DoF 钛合金机械云台",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "荣耀 Robot Phone 首日预约量超历代旗舰，搭载第五代骁龙 8 至尊版与 4DoF 钛合金机械云台",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "robotics_automation",
+            "dimensionName": "应用场景",
+            "name": "机器人与物理自动化"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "entityIds": [
+        "EN-8d57f84bd1847b24"
+      ],
+      "entityNames": [
+        "Robot Phone"
+      ],
+      "productName": "Robot Phone",
+      "products": [
+        {
+          "name": "Robot Phone",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/979/555.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
       "id": "EV-6833305504174bb1",
       "dataDate": "2026-07-20",
       "date": "2026-07-20",
@@ -1847,6 +2191,166 @@
       ],
       "sourceUrl": "https://ithome.com/0/978/289.htm",
       "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-941ba9ebdc43f20c",
+      "dataDate": "2026-07-22",
+      "date": "2026-07-16",
+      "updatedDate": "2026-07-22",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Nvidia 推出 Cosmos 3 Edge 模型，并扩大在日本物理 AI 领域的布局",
+      "originalTitle": "Nvidia launches Cosmos 3 Edge model and expands its physical AI push in Japan - SiliconANGLE",
+      "subject": "Nvidia",
+      "action": "launches Cosmos 3 Edge model",
+      "object": "and expands its physical AI push in Japan - SiliconANGLE",
+      "metrics": [],
+      "locations": [
+        "Japan"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        }
+      ],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          },
+          {
+            "dimensionId": "product_form",
+            "id": "data_infrastructure",
+            "dimensionName": "产品形态",
+            "name": "数据与模型基础设施"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "robotics_automation",
+            "dimensionName": "应用场景",
+            "name": "机器人与物理自动化"
+          }
+        ],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "manufacturing",
+            "dimensionName": "行业",
+            "name": "制造业"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "manufacturing",
+          "dimensionName": "行业",
+          "name": "制造业"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "data_infrastructure",
+          "dimensionName": "产品形态",
+          "name": "数据与模型基础设施"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "data_infrastructure",
+          "dimensionName": "产品形态",
+          "name": "数据与模型基础设施"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "manufacturing",
+          "dimensionName": "行业",
+          "name": "制造业"
+        }
+      ],
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-96eebba49dbbf422",
+        "EN-f475981105d2acbd",
+        "EN-e07654c7cc29acbd"
+      ],
+      "entityNames": [
+        "NVIDIA",
+        "Intel",
+        "SiliconANGLE",
+        "Cosmos 3 Edge"
+      ],
+      "productName": "SiliconANGLE",
+      "products": [
+        {
+          "name": "SiliconANGLE",
+          "type": "模型",
+          "ownerNames": [
+            "NVIDIA"
+          ]
+        },
+        {
+          "name": "Cosmos 3 Edge",
+          "type": "模型",
+          "ownerNames": [
+            "NVIDIA"
+          ]
+        }
+      ],
+      "sourceUrl": "https://siliconangle.com/2026/07/16/nvidia-launches-cosmos-3-edge-model-expands-physical-ai-push-japan",
+      "publisher": "siliconangle.com"
     },
     {
       "id": "EV-6b51b1b6fe22c540",
@@ -3505,6 +4009,7 @@
         "EV-ad40755ca624afe7",
         "EV-d5f276ad6b2ac9de",
         "EV-181b425d2a600cad",
+        "EV-2fea1664807824ce",
         "EV-70e3f88cb06a856c",
         "EV-cf5b2a0aff3914bd",
         "EV-54ecd52c69b97834",
@@ -3522,13 +4027,14 @@
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-technology-fine_tuning",
+        "TX-technology-open_weights",
         "TX-technology-multimodal"
       ],
       "relatedEntityIds": [
         "EN-78624f0a98e78301"
       ],
       "firstSeen": "2026-06-15",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-07-22"
     },
     {
       "id": "EN-b51b27d89f9ea747",
@@ -3564,6 +4070,8 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-2069f6a931b8c9d6",
+        "EV-02882e6f5e1902c6",
         "EV-e3792591090281c6",
         "EV-f6a72cddbda748b3",
         "EV-4eaf3aabecae6016",
@@ -3571,10 +4079,10 @@
         "EV-305ec93673f4f12e",
         "EV-640c5ea9f4fa2780",
         "EV-6e516b6e68def9cf",
-        "EV-463cb26b5e03c7f7",
         "EV-86ca5af11ee4d275",
         "EV-a8dc5c859946f336",
         "EV-d9cc588fb41a7e67",
+        "EV-463cb26b5e03c7f7",
         "EV-232ab5bcbaf6552d",
         "EV-48075ca70a5458ec",
         "EV-7b1c734882fa1ea6",
@@ -3642,7 +4150,7 @@
         "EV-8e01849c05b50355",
         "EV-4faa2bcf2e42e60c",
         "EV-45be473baf6dfa4c",
-        "EV-0d5a32aca724d30e",
+        "EV-941ba9ebdc43f20c",
         "EV-92d28aef0c4b0a8a",
         "EV-c2800c1c5a3f568f",
         "EV-d4ddee1b39cced77",
@@ -3734,14 +4242,16 @@
         "EN-c70eca6b0f88f44d"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-21"
+      "lastSeen": "2026-07-22"
     },
     {
       "id": "EN-8d4321d936320802",
       "name": "NVIDIA",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "英伟达"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -3763,6 +4273,9 @@
         "EV-a00763037a94d512",
         "EV-0e84a2f49d765ce3",
         "EV-467d1a701d21327d",
+        "EV-b4f69c41e23c7ce0",
+        "EV-11b2293769081d4c",
+        "EV-ff77876694ab8395",
         "EV-cafe435ddd007821",
         "EV-ed388875bc004add",
         "EV-bc9abd502c002102",
@@ -3786,8 +4299,14 @@
         "EV-4faa2bcf2e42e60c",
         "EV-9ee3c0ec243b6129",
         "EV-58c1cc3749294649",
+        "EV-2fea1664807824ce",
+        "EV-3ba971c5939b0f04",
+        "EV-cb3a8846bc4f8aca",
+        "EV-48977fd72d2fcfb8",
+        "EV-a37b9d9fb85e460f",
         "EV-118317b7f92e5e16",
         "EV-950237c6b3eb6343",
+        "EV-941ba9ebdc43f20c",
         "EV-29e069ac093f0e34",
         "EV-6b51b1b6fe22c540",
         "EV-c2800c1c5a3f568f",
@@ -3833,9 +4352,11 @@
         "EV-aa63303570154a9b",
         "EV-d2ac9700c86913da",
         "EV-d43a561da59b2897",
+        "EV-0e2a68efc19bfbaa",
         "EV-02b19ffbe883ee2e",
         "EV-8993e021ac17df4a",
         "EV-34929bdd016dc8d6",
+        "EV-c14e5185fd6bbe30",
         "EV-08f736f61f2b46f3",
         "EV-2c7d13d234147817",
         "EV-710b145230faa692",
@@ -3866,31 +4387,39 @@
         "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
-        "TX-technology-speech_audio",
         "TX-technology-image_generation",
+        "TX-technology-speech_audio",
         "TX-technology-inference_optimization"
       ],
       "relatedEntityIds": [
+        "EN-e07654c7cc29acbd",
+        "EN-52c2f30b6bda5898",
         "EN-1e71d9c1a5c4de16",
         "EN-683d8d597da71192",
         "EN-9e72fd4472222231",
+        "EN-8395dc051feafc4c",
+        "EN-aa15d891a32a51b8",
         "EN-0f3360879e746531",
         "EN-a1b0d8a938903dc7",
+        "EN-956b7280912ef1cc",
         "EN-4a639cb888a15d75",
         "EN-8d323d8bba783aa3",
         "EN-b5738c169b693bee",
         "EN-51fd7dc086fcb858",
         "EN-9e193e1ec8d75d41",
-        "EN-8395dc051feafc4c",
+        "EN-3ae50afab3e392b8",
         "EN-936f01f91fdadf69",
         "EN-4e7e886400fe6a83",
         "EN-1dc405a4cda895d0",
         "EN-12ab68e37d104d27",
         "EN-a3266ab9e10d6105",
-        "EN-9fbf261b62c1d7c0"
+        "EN-9fbf261b62c1d7c0",
+        "EN-11ef7b03c79c9bbd",
+        "EN-9bc22dcabf7f45b3",
+        "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-20"
+      "lastSeen": "2026-07-22"
     },
     {
       "id": "EN-59ae856cd788d0f5",
@@ -3956,7 +4485,9 @@
       "name": "SoftBank",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "软银"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -3964,6 +4495,7 @@
       "eventIds": [
         "EV-1a6688afdfd108ef",
         "EV-cafe435ddd007821",
+        "EV-a37b9d9fb85e460f",
         "EV-08f736f61f2b46f3"
       ],
       "viewpointIds": [],
@@ -3980,7 +4512,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-15",
-      "lastSeen": "2026-07-18"
+      "lastSeen": "2026-07-22"
     },
     {
       "id": "EN-6f21a653c48f4f19",
@@ -4071,8 +4603,7 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "gemini",
-        "谷歌"
+        "Gemini"
       ],
       "verificationStatus": "verified",
       "datasetScopes": [
@@ -4105,8 +4636,14 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
+        "EV-6ce069b1845f5a52",
+        "EV-597b8257a97b3d02",
+        "EV-5aaa4c6697606274",
+        "EV-834e65247c2d4a3b",
+        "EV-cc974e0031c69715",
+        "EV-cd067fa6f39fe828",
+        "EV-dc3a5509a690a6b0",
         "EV-f3cc0845ce442e6b",
-        "EV-0d5a32aca724d30e",
         "EV-bee410f8134cba5a",
         "EV-a255cfc0dab44564",
         "EV-98a80b75b27d9f3b",
@@ -4223,18 +4760,20 @@
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-embodied_ai",
         "TX-technology-fine_tuning",
-        "TX-technology-open_weights",
-        "TX-technology-video_generation",
         "TX-technology-multimodal",
+        "TX-technology-video_generation",
         "TX-industry-media_entertainment",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
+        "TX-technology-image_generation",
         "TX-technology-speech_audio",
         "TX-use_case-content_creation",
-        "TX-technology-image_generation",
         "TX-technology-computer_use"
       ],
       "relatedEntityIds": [
+        "EN-a85d5a9b4a77d59b",
+        "EN-6f216f2ea5b7a13e",
+        "EN-18f0900d6c487f59",
         "EN-419f2cd96ee122e3",
         "EN-96eebba49dbbf422",
         "EN-81e577740888ca6d",
@@ -4246,11 +4785,8 @@
         "EN-01f1074bb52ff605",
         "EN-f2c032b19edb7900",
         "EN-2ab6d53e717a0e0d",
-        "EN-1cd41545564777ce",
         "EN-2998f8b13f4fd72e",
-        "EN-3546e1b15e6549b2",
         "EN-b5c336c0dd1ff29c",
-        "EN-e1a4e41919f7c2dc",
         "EN-d56aa2f9908f566a",
         "EN-4baef0e41cbd7ae2",
         "EN-bdfecbcd7dbf76d2",
@@ -4258,7 +4794,7 @@
         "EN-2aae0de3f5530f08"
       ],
       "firstSeen": "2026-04-12",
-      "lastSeen": "2026-07-21"
+      "lastSeen": "2026-07-22"
     },
     {
       "id": "EN-3cce50ffb12f1a69",
@@ -4351,7 +4887,8 @@
         "EV-8a9b12665a3e40a0",
         "EV-cfa8c754627747a1",
         "EV-0d862d59b05361cc",
-        "EV-dab4d3f2059e8880"
+        "EV-dab4d3f2059e8880",
+        "EV-33fba8931cca96d5"
       ],
       "viewpointIds": [],
       "classificationRefs": [
@@ -4366,7 +4903,78 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-04-28",
-      "lastSeen": "2026-07-20"
+      "lastSeen": "2026-07-22"
+    },
+    {
+      "id": "EN-593d0361124f348f",
+      "name": "小鹏集团",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-03ab7d0b40d1e5b5"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-vision_language",
+        "TX-use_case-robotics_automation"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-22"
+    },
+    {
+      "id": "EN-843e746333671ab1",
+      "name": "TuringViT",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-03ab7d0b40d1e5b5"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-vision_language",
+        "TX-use_case-robotics_automation"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-22"
+    },
+    {
+      "id": "EN-8d57f84bd1847b24",
+      "name": "Robot Phone",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-d4278191ae11f198",
+        "EV-ed272c57e1513d3f",
+        "EV-25933b8f123f92be",
+        "EV-c844ddabb8528896"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-use_case-robotics_automation",
+        "TX-technology-embodied_ai",
+        "TX-technology-multimodal"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-18",
+      "lastSeen": "2026-07-22"
     },
     {
       "id": "EN-a96df57737b74def",
@@ -4520,30 +5128,6 @@
       "lastSeen": "2026-07-19"
     },
     {
-      "id": "EN-8d57f84bd1847b24",
-      "name": "Robot Phone",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-25933b8f123f92be",
-        "EV-c844ddabb8528896"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-use_case-robotics_automation",
-        "TX-technology-embodied_ai"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-07-18",
-      "lastSeen": "2026-07-19"
-    },
-    {
       "id": "EN-53874092e000069b",
       "name": "腾讯",
       "entityType": "organization_candidate",
@@ -4590,6 +5174,7 @@
         "EV-619e33abf3f9bfbf",
         "EV-be2f6bfcad93c42f",
         "EV-c7b81290859057b0",
+        "EV-423c7293d6a91086",
         "EV-86ab9c2f1416e9d8",
         "EV-7fe139b107f9adc6",
         "EV-de54542fd7e2282c",
@@ -4619,9 +5204,11 @@
         "TX-technology-multimodal",
         "TX-industry-media_entertainment"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-a1adb91065c5a347"
+      ],
       "firstSeen": "2026-05-18",
-      "lastSeen": "2026-07-20"
+      "lastSeen": "2026-07-22"
     },
     {
       "id": "EN-f0da91960830b394",
@@ -4710,6 +5297,68 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-07-17",
       "lastSeen": "2026-07-18"
+    },
+    {
+      "id": "EN-954dc5d6516f127c",
+      "name": "Canva AI 2.0",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [
+        "SiliconANGLE",
+        "Unveils Canva AI"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-941ba9ebdc43f20c",
+        "EV-f05783f745bc7c2c",
+        "EV-34b0f4cfd513fbde",
+        "EV-701417bcd9b57095",
+        "EV-0cb98302768c2e0a"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
+        "TX-use_case-robotics_automation",
+        "TX-technology-embodied_ai"
+      ],
+      "relatedEntityIds": [
+        "EN-3db1f560db626918"
+      ],
+      "firstSeen": "2026-05-23",
+      "lastSeen": "2026-07-22"
+    },
+    {
+      "id": "EN-e07654c7cc29acbd",
+      "name": "Cosmos 3 Edge",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-941ba9ebdc43f20c",
+        "EV-d4ddee1b39cced77",
+        "EV-0e2a68efc19bfbaa"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
+        "TX-use_case-robotics_automation",
+        "TX-technology-on_device",
+        "TX-technology-embodied_ai"
+      ],
+      "relatedEntityIds": [
+        "EN-8d4321d936320802"
+      ],
+      "firstSeen": "2026-05-31",
+      "lastSeen": "2026-07-22"
     },
     {
       "id": "EN-e3b1bf3dab957ffe",
@@ -5288,7 +5937,11 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-133a92cb6cb25a0c",
+        "EV-7c836c34e7cf36ee",
+        "EV-071c72225b8aaf80",
         "EV-0d5a32aca724d30e",
+        "EV-ae1e2769aff82965",
         "EV-ab3e820aa6d92542",
         "EV-bc41a3060f11ca2d",
         "EV-83a8ac8a2554b60c",
@@ -5468,6 +6121,7 @@
         "TX-technology-computer_use"
       ],
       "relatedEntityIds": [
+        "EN-3850792f618f534b",
         "EN-7839fb10a8f14c70",
         "EN-d1ad14d4ad57d207",
         "EN-74692028630429c7",
@@ -5493,7 +6147,7 @@
         "EN-7b8cb35de7ad047a"
       ],
       "firstSeen": "2026-02-19",
-      "lastSeen": "2026-07-21"
+      "lastSeen": "2026-07-22"
     },
     {
       "id": "EN-94ff75465b1afa65",
@@ -5558,7 +6212,9 @@
       "classificationRefs": [
         "TX-use_case-robotics_automation"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-8d4321d936320802"
+      ],
       "firstSeen": "2026-06-01",
       "lastSeen": "2026-06-01"
     },
@@ -5623,6 +6279,8 @@
         "EV-88f4ee8cd57bdf42",
         "EV-44a4e92c03a31ab1",
         "EV-7585b033d4005977",
+        "EV-fa66f00e9d4b20c2",
+        "EV-ff77876694ab8395",
         "EV-4fba2b2f1ac10a79",
         "EV-bcb74b02448b7d78",
         "EV-47a16db069ed320e",
@@ -5631,6 +6289,7 @@
         "EV-d756f05478303505",
         "EV-7263caa45bbf168e",
         "EV-8abf5adc3e72fbb8",
+        "EV-6acfb15c012ddf6d",
         "EV-2fab4396000198d2",
         "EV-3fb492fb45980541",
         "EV-b833b29d904b39ac",
@@ -5640,6 +6299,7 @@
         "EV-58c1cc3749294649",
         "EV-c0a65877001ed413",
         "EV-bd508dbe4205774f",
+        "EV-cd067fa6f39fe828",
         "EV-118317b7f92e5e16",
         "EV-c4723445b11bb275",
         "EV-7963d8c78531f12d",
@@ -5720,7 +6380,7 @@
         "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-07-21"
+      "lastSeen": "2026-07-22"
     }
   ],
   "fde": [
