@@ -1,10 +1,11 @@
 {
-  "generatedAt": "2026-07-22T01:39:59.177Z",
+  "generatedAt": "2026-07-23T01:38:44.107Z",
   "stats": {
-    "blogsBuilt": 5,
-    "totalItems": 30,
+    "blogsBuilt": 4,
+    "totalItems": 32,
     "sourceCount": 8,
     "errors": [
+      "tigera-blog: HTTP 415",
       "dataiku-blog: HTTP 404"
     ]
   },
@@ -14,6 +15,56 @@
       "handle": "simonwillison.net",
       "bio": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
       "tweets": [
+        {
+          "id": "https://simonwillison.net/2026/Jul/22/thomas-ptacek/#atom-everything",
+          "text": "Quoting Thomas Ptacek",
+          "summary": "<blockquote cite=\"https://twitter.com/tqbf/status/2080045032162173329\"><p>I genuinely believe that if you took an open weights model from 2025 and built a pentest harness for it, it could do this kind of sandbox escape and scan/hack in most networks. This is only surprising because you assume OpenAI",
+          "createdAt": "2026-07-22T23:59:01+00:00",
+          "url": "https://simonwillison.net/2026/Jul/22/thomas-ptacek/#atom-everything",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
+          "id": "https://simonwillison.net/2026/Jul/22/openai-cyberattack/#atom-everything",
+          "text": "OpenAI’s accidental cyberattack against Hugging Face is science fiction that happened",
+          "summary": "<p>This story is wild. The short version: OpenAI were running a cybersecurity test against an unreleased model, with the model's guardrail features turned off. Rather than solve the test, the model broke its way out of OpenAI's sandbox, then found exploits to break <em>in</em> to Hugging Face, all s",
+          "createdAt": "2026-07-22T23:51:33+00:00",
+          "url": "https://simonwillison.net/2026/Jul/22/openai-cyberattack/#atom-everything",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
+          "id": "https://simonwillison.net/2026/Jul/22/are-ai-labs-pelicanmaxxing/#atom-everything",
+          "text": "Are AI labs pelicanmaxxing?",
+          "summary": "<p><strong><a href=\"https://dylancastillo.co/posts/pelicanmaxxing.html\">Are AI labs pelicanmaxxing?</a></strong></p>\nExcellent piece of work by Dylan Castillo, who took a deep-dive into the frequently pondered question of whether the AI labs have been deliberately training models to draw pelicans ri",
+          "createdAt": "2026-07-22T23:01:00+00:00",
+          "url": "https://simonwillison.net/2026/Jul/22/are-ai-labs-pelicanmaxxing/#atom-everything",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
+          "id": "https://simonwillison.net/2026/Jul/22/all-the-orchestrions/#atom-everything",
+          "text": "Orchestrions",
+          "summary": "<p>San Francisco tip: it only costs around $15 ($10 in quarters plus a $5 bill for the self-playing violin) to activate every single Orchestrion in <a href=\"https://en.wikipedia.org/wiki/Musée_Mécanique\">Musée Mécanique</a>.</p>\n<p>And because most people are bad at allocating their funds you may we",
+          "createdAt": "2026-07-22T14:48:52+00:00",
+          "url": "https://simonwillison.net/2026/Jul/22/all-the-orchestrions/#atom-everything",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
+          "id": "https://simonwillison.net/2026/Jul/21/sighting-383713864/#atom-everything",
+          "text": "California Sea Lion",
+          "summary": "<p><img src=\"https://static.inaturalist.org/photos/702321069/large.jpg\" alt=\"California Sea Lion\"></p><p><img src=\"https://static.inaturalist.org/photos/702321114/large.jpg\" alt=\"California Sea Lion\"></p><p>California Sea Lion, in San Francisco County, US, CA</p><p>We took some visiting family to Pi",
+          "createdAt": "2026-07-21T19:51:03+00:00",
+          "url": "https://simonwillison.net/2026/Jul/21/sighting-383713864/#atom-everything",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
         {
           "id": "https://simonwillison.net/2026/Jul/21/nativ/#atom-everything",
           "text": "Nativ: Run AI models locally on your Mac",
@@ -203,36 +254,6 @@
           "likes": 0,
           "retweets": 0,
           "replies": 0
-        },
-        {
-          "id": "https://simonwillison.net/2026/Jul/16/grok-mermaid/#atom-everything",
-          "text": "Mermaid to Unicode box art (grok-mermaid)",
-          "summary": "<p><strong>Tool:</strong> <a href=\"https://tools.simonwillison.net/grok-mermaid\">Mermaid to Unicode box art (grok-mermaid)</a></p>\n        <p>While <a href=\"https://simonwillison.net/2026/Jul/15/grok-build/\">exploring the codebase</a> for the newly open-sourced Grok CLI coding agent I came across <a",
-          "createdAt": "2026-07-16T00:33:18+00:00",
-          "url": "https://simonwillison.net/2026/Jul/16/grok-mermaid/#atom-everything",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://simonwillison.net/2026/Jul/15/grok-build/#atom-everything",
-          "text": "xai-org/grok-build, now open source",
-          "summary": "<p><strong><a href=\"https://github.com/xai-org/grok-build\">xai-org/grok-build, now open source</a></strong></p>\nxAI's <code>grok</code> CLI tool faced severe community backlash yesterday when it became apparent that running the command in a directory could upload that <em>entire directory</em> to xA",
-          "createdAt": "2026-07-15T23:59:30+00:00",
-          "url": "https://simonwillison.net/2026/Jul/15/grok-build/#atom-everything",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://simonwillison.net/2026/Jul/15/claude-web-fetch-exfiltration/#atom-everything",
-          "text": "How I tricked Claude into leaking your deepest, darkest secrets",
-          "summary": "<p><strong><a href=\"https://www.ayush.digital/blog/the-memory-heist\">How I tricked Claude into leaking your deepest, darkest secrets</a></strong></p>\nI've <a href=\"https://simonwillison.net/2025/Sep/10/claude-web-fetch-tool/\">been impressed</a> by the way the Claude <code>web_fetch</code> tool is de",
-          "createdAt": "2026-07-15T14:21:54+00:00",
-          "url": "https://simonwillison.net/2026/Jul/15/claude-web-fetch-exfiltration/#atom-everything",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
         }
       ]
     },
@@ -241,6 +262,16 @@
       "handle": "interconnects.ai",
       "bio": "AI research industry analysis, model evaluations, open-source AI, Llama ecosystem, inference.",
       "tweets": [
+        {
+          "id": "https://www.interconnects.ai/p/open-models-recap-more-on-kimi-k3",
+          "text": "Open models recap: more on Kimi K3, Qwen 3.8, Xi's WAIC speech, distillation, the open-closed gap, and what's next",
+          "summary": "A podcast with Florian Brand.",
+          "createdAt": "Wed, 22 Jul 2026 14:09:04 GMT",
+          "url": "https://www.interconnects.ai/p/open-models-recap-more-on-kimi-k3",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
         {
           "id": "https://www.interconnects.ai/p/kimi-k3-the-open-weights-escalation",
           "text": "Kimi K3: The open-weights escalation",
@@ -286,6 +317,16 @@
       "bio": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
       "tweets": [
         {
+          "id": "https://tldr.tech/ai/2026-07-22",
+          "text": "Gemini 3.6 Flash ✨, OpenAI security escape 🚨, Devin Outposts 🛰️",
+          "summary": "",
+          "createdAt": "Wed, 22 Jul 2026 00:00:00 GMT",
+          "url": "https://tldr.tech/ai/2026-07-22",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
           "id": "https://tldr.tech/ai/2026-07-21",
           "text": "Ramp Router ⚡, Kimi Work 💼 , AMD Helios 🧱",
           "summary": "",
@@ -311,33 +352,6 @@
           "summary": "",
           "createdAt": "Fri, 17 Jul 2026 00:00:00 GMT",
           "url": "https://tldr.tech/ai/2026-07-17",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://tldr.tech/ai/2026-07-16",
-          "text": "Thinking Machines Inkling 🧠, GPT-Red 🔒, Perplexity sandboxes 🛡️",
-          "summary": "",
-          "createdAt": "Thu, 16 Jul 2026 00:00:00 GMT",
-          "url": "https://tldr.tech/ai/2026-07-16",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        }
-      ]
-    },
-    {
-      "name": "Tigera Blog (Calico / AI Security)",
-      "handle": "tigera.io",
-      "bio": "AI agent governance, security, accountability frameworks, enterprise AI deployment policy.",
-      "tweets": [
-        {
-          "id": "https://www.tigera.io/blog/nvidia-openshell-secures-the-agent-who-governs-the-fleet/",
-          "text": "NVIDIA OpenShell Secures the Agent. Who Governs the Fleet?",
-          "summary": "In short: At GTC 2026, NVIDIA released OpenShell, an open source runtime that sandboxes autonomous AI agents with kernel-level policy: what files they can touch, what processes they can spawn, where their traffic can go....\nThe post NVIDIA OpenShell Secures the Agent. Who Governs the Fleet? appeared",
-          "createdAt": "Wed, 15 Jul 2026 14:41:56 +0000",
-          "url": "https://www.tigera.io/blog/nvidia-openshell-secures-the-agent-who-governs-the-fleet/",
           "likes": 0,
           "retweets": 0,
           "replies": 0
