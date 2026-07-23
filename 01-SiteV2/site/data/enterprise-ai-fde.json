@@ -1,17 +1,181 @@
 {
   "meta": {
     "version": "EAI-V1.2.0-raw-card-ingestion-boundary",
-    "generatedAt": "2026-07-21T06:38:43.848Z",
-    "activeDate": "2026-07-21",
+    "generatedAt": "2026-07-23T04:14:19.353Z",
+    "activeDate": "2026-07-23",
     "source": "01-SiteV2/site/data/v3-data-observation-desk.json",
     "fdePoolCount": 1,
     "itemCount": 1,
-    "totalFdePoolCount": 33,
-    "totalItemCount": 33,
+    "totalFdePoolCount": 34,
+    "totalItemCount": 34,
     "historyMode": "all_available_dates",
     "boundary": "FDE is an Enterprise AI lens pool, not a fourth Business Signals Card type."
   },
   "fdePool": [
+    {
+      "id": "FDE-2026-07-23-P-017",
+      "type": "signal_card",
+      "category": "case",
+      "categoryLabel": "案例",
+      "title": "Helios 标志着 AMD 迄今最大规模的 AI 基础设施布局",
+      "originalTitle": "Helios marks AMD's biggest AI infrastructure push yet | Network World",
+      "date": "2026-07-23",
+      "subject": "Networkworld",
+      "source": "networkworld.com",
+      "sourceName": "networkworld.com",
+      "sourceUrl": "https://www.networkworld.com/article/4199402/helios-marks-amds-biggest-ai-infrastructure-push-yet.html",
+      "sourceLevel": "B",
+      "evidenceStrength": "rich_evidence",
+      "importanceScore": 5,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "publishedAt": "2026-07-21T05:32:09.000Z",
+      "tags": {
+        "track": [
+          "track-ai-infra"
+        ],
+        "function": [],
+        "scenario": [],
+        "customer": [],
+        "evidence": [
+          "evidence-customer-adoption"
+        ]
+      },
+      "flatTags": [
+        "track-ai-infra",
+        "evidence-customer-adoption"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-infra",
+          "label": "AI 基础设施"
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "label": "客户采用"
+        }
+      ],
+      "opportunitySignals": {
+        "schemaVersion": "opportunity-signals-v1",
+        "evidenceBasis": "raw_source_text",
+        "sourceExcerpt": "[{\"type\":\"product_update\",\"text\":\"Helios marks AMD's biggest AI infrastructure push yet | Network World # Helios marks AMD’s biggest AI infrastructure push yet News Jul 21, 20265 mins AMD has expanded its AI infrastruct...",
+        "missingFields": [
+          "specific_task",
+          "product_form",
+          "delivery_model"
+        ],
+        "labels": {
+          "buyer_or_user": [
+            {
+              "id": "enterprise_ai_owner",
+              "label": "Enterprise AI / transformation owner"
+            }
+          ],
+          "team_or_function": [],
+          "specific_task": [],
+          "business_action": [],
+          "product_form": [],
+          "delivery_model": [],
+          "pain_or_constraint": [
+            {
+              "id": "workflow_integration",
+              "label": "Integration into existing workflow or systems"
+            }
+          ],
+          "adoption_evidence": [
+            {
+              "id": "enterprise_plan",
+              "label": "Enterprise plan, security plan, or governance package"
+            }
+          ],
+          "source_evidence_type": [
+            {
+              "id": "business_media",
+              "label": "Business or industry media article"
+            }
+          ]
+        },
+        "buyer_or_user": [
+          "enterprise_ai_owner"
+        ],
+        "buyerOrUser": [
+          "enterprise_ai_owner"
+        ],
+        "team_or_function": [],
+        "teamOrFunction": [],
+        "specific_task": [],
+        "specificTask": [],
+        "business_action": [],
+        "businessAction": [],
+        "product_form": [],
+        "productForm": [],
+        "delivery_model": [],
+        "deliveryModel": [],
+        "pain_or_constraint": [
+          "workflow_integration"
+        ],
+        "painOrConstraint": [
+          "workflow_integration"
+        ],
+        "adoption_evidence": [
+          "enterprise_plan"
+        ],
+        "adoptionEvidence": [
+          "enterprise_plan"
+        ],
+        "source_evidence_type": [
+          "business_media"
+        ],
+        "sourceEvidenceType": [
+          "business_media"
+        ]
+      },
+      "summary": "networkworld 的材料指向 AI 基础设施能力，重点在推理、模型部署或算力调用成本。",
+      "translatedFact": "networkworld 的材料指向 AI 基础设施能力，重点在推理、模型部署或算力调用成本。",
+      "originalHighlights": [],
+      "visibleFragment": "networkworld 的材料指向 AI 基础设施能力，重点在推理、模型部署或算力调用成本。",
+      "sourceLinks": [
+        "https://www.networkworld.com/article/4199402/helios-marks-amds-biggest-ai-infrastructure-push-yet.html"
+      ],
+      "sourceTitle": "Helios marks AMD's biggest AI infrastructure push yet | Network World",
+      "status": "published",
+      "assetLevel": "enterprise_ai_fde_pool",
+      "evidenceGate": "core_evidence_candidate",
+      "stage": "",
+      "evidence": "evidence-customer-adoption",
+      "largeVendorKey": "",
+      "track": "track-ai-infra",
+      "generatedTitle": "Helios 标志着 AMD 迄今最大规模的 AI 基础设施布局",
+      "displayTitle": "Helios 标志着 AMD 迄今最大规模的 AI 基础设施布局",
+      "largeVendor": false,
+      "frontstageRankScore": 1150,
+      "frontstageEditorialScore": 1150,
+      "frontstageEvidenceScore": 91,
+      "frontstageSelectionReasons": [
+        "FDE lens pool",
+        "source-backed implementation evidence"
+      ],
+      "frontstageValueDescription": "FDE lens pool item preserved for the Enterprise AI lens.",
+      "frontstageQualityWarnings": [],
+      "frontstageGenericCandidate": false,
+      "fromCorePool": true,
+      "linkedCardId": "SIG-20260723-A10",
+      "promotionStatus": "promoted_to_signal_card",
+      "enterpriseAiLensPriority": true,
+      "sourceRef": "P-017",
+      "titleZh": "Helios 标志着 AMD 迄今最大规模的 AI 基础设施布局",
+      "titleTranslationStatus": "translated",
+      "titleTranslationMethod": "fde_lens_source_rule",
+      "factExtractionStatus": "extracted_at_fde_lens_pool_build",
+      "factExtractionMethod": "pool_key_excerpts_and_fde_implementation_analysis",
+      "implementationAnalysis": {
+        "demand": "原文显示，企业侧需求集中在把 Agent 或模型接入业务系统，需要把 AI / Agent 接入实际业务流程，而不是停留在演示或通用工具层。",
+        "services": "提供的服务是围绕企业工作流的 AI 实施与交付：做技术 scoping、系统接入、工作流配置、验证和上线支持。",
+        "result": "实施结果已经进入生产、部署或上线阶段；原文未披露可独立核验的 ROI 或长期运行指标。",
+        "sourceBasis": "networkworld 的材料指向 AI 基础设施能力，重点在推理、模型部署或算力调用成本。"
+      }
+    },
     {
       "id": "FDE-2026-07-21-P-018",
       "type": "signal_card",
@@ -6244,6 +6408,28 @@
     }
   ],
   "items": [
+    {
+      "id": "enterprise-ai:SIG-20260723-A10",
+      "cardId": "SIG-20260723-A10",
+      "date": "2026-07-23",
+      "category": "case",
+      "categoryLabel": "案例",
+      "title": "Helios 标志着 AMD 迄今最大规模的 AI 基础设施布局",
+      "subject": "Networkworld",
+      "sourceName": "networkworld.com",
+      "sourceUrl": "https://www.networkworld.com/article/4199402/helios-marks-amds-biggest-ai-infrastructure-push-yet.html",
+      "stage": "production_rollout",
+      "stageLabel": "生产上线",
+      "scenario": "企业工作流",
+      "workflow": "把 Agent 或模型接入业务系统",
+      "evidenceBoundary": "已确认：networkworld 的材料指向 AI 基础设施能力，重点在推理、模型部署或算力调用成本。；未确认：内部投入、ROI 与长期运行效果。",
+      "implementationAnalysis": {
+        "demand": "原文显示，企业侧需求集中在把 Agent 或模型接入业务系统，需要把 AI / Agent 接入实际业务流程，而不是停留在演示或通用工具层。",
+        "services": "提供的服务是围绕企业工作流的 AI 实施与交付：做技术 scoping、系统接入、工作流配置、验证和上线支持。",
+        "result": "实施结果已经进入生产、部署或上线阶段；原文未披露可独立核验的 ROI 或长期运行指标。",
+        "sourceBasis": "networkworld 的材料指向 AI 基础设施能力，重点在推理、模型部署或算力调用成本。"
+      }
+    },
     {
       "id": "enterprise-ai:SIG-20260721-A08",
       "cardId": "SIG-20260721-A08",

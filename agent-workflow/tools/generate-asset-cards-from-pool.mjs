@@ -1865,7 +1865,7 @@ function hasConcreteProductEvent(section) {
   if (isViewpointWithoutConfirmedCommercialEvent(section) || isUnconfirmedProductRumorOrPlan(section)) return false;
   if (/\b(shuts? down|discontinues?|kills?|removes?|removed|axes?|axed|withdraws?|pulls? .{0,30}(?:feature|product)|folds? .{0,60} into)\b|关停|下线|移除|并入/iu.test(sourceIdentity)) return true;
   return /\b(launch(?:es|ed)?|release(?:s|d)?|introduc(?:es|ed)?|announc(?:e|es|ed|ing)|now has a built-in|general availability|GA|new API|new SDK|new platform|new product|pricing|available now|shuts? down|discontinues?|kills?|folds? .{0,60} into)\b|发布|推出|上线|新增|正式可用|开放|定价|关停|下线|并入/iu.test(text)
-    && !/guide|tutorial|how to|core concepts|scaling dimensions|architecture overview|field guide|glossary|market map|roundup|list|指南|教程|概念|综述|清单|榜单/iu.test(text);
+    && !/\b(?:guide|tutorial|how to|core concepts|scaling dimensions|architecture overview|field guide|glossary|market map|roundup|list)\b|指南|教程|概念|综述|清单|榜单/iu.test(text);
 }
 
 function hasConcreteCaseEvent(section) {
@@ -4213,6 +4213,27 @@ function runCoreRecallRegressionFixtures() {
     const spec = autoSignalSpec(poolRef, section(poolRef), Number(poolRef.replace("P-", "")), diagnostics);
     return { spec, diagnostics };
   };
+
+  const waitlistLaunchFixture = [
+    "## P-999｜CoFounder.AI Launches a New AI Partner",
+    "- source_url: https://example.com/cofounder-ai-launch",
+    "- evidence_object_type: case_or_customer",
+    "- event_evidence: true",
+    "- evidence_object_usable: true",
+    "- importance_type: important_product_or_service",
+    "- key_excerpts: CoFounder.AI launches today with 8,000+ founders on the waitlist.",
+    "- evidence_seed: The product is available to startup founders and small-business owners.",
+  ].join("\n");
+  assert.equal(
+    hasConcreteProductEvent(waitlistLaunchFixture),
+    true,
+    "waitlist must not be mistaken for a generic list page when the source proves a product launch",
+  );
+  assert.equal(
+    inferSignalType(waitlistLaunchFixture),
+    "product_service",
+    "a product launch with a waitlist must keep the product/service freshness window",
+  );
 
   const microsoftResearchLaunchFixture = [
     "## P-998｜微软研究院推出开源可视化中间语言 Flint",

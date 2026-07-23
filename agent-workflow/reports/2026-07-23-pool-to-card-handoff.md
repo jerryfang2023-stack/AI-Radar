@@ -1,13 +1,13 @@
 # 2026-07-23 Pool-to-Card Handoff
 
-- generated_at: 2026-07-23T03:54:22.789Z
+- generated_at: 2026-07-23T04:12:26.360Z
 - raw_input_count: 163
 - pool_input_count: 155
-- written_count: 32
+- written_count: 31
 - merged_count: 0
 - skipped_count: 0
-- signal_asset_count: 31
-- not_promoted_candidate_count: 124
+- signal_asset_count: 30
+- not_promoted_candidate_count: 125
 - asset_generation_limit: all_cardable_raw_pool
 - signal_asset_mode: all cardable Raw / Pool business signals
 
@@ -28,22 +28,21 @@
 - SIG-20260723-A13｜P-094｜Anthropic 与图书作者达成的 15 亿美元盗版和解创下纪录，成为 AI 实验室最大法律胜利
 - SIG-20260723-A14｜P-005｜Cursor 发布 Cursor Router：请求级分类器，以 30-50% 更低成本实现前沿编码质量
 - SIG-20260723-A15｜P-045｜用 GPT-5.6、Claude、Gemini 和 Grok "绘制"《蒙娜丽莎》--AI 图像生成能力实测
-- SIG-20260723-A16｜P-055｜CoFounder.AI 推出首个专为成为合作伙伴而打造的 AI 智能体
-- SIG-20260723-A17｜P-086｜腾讯整合 Workbuddy 与 QClaw 两款 AI 产品团队
-- SIG-20260723-A18｜P-091｜Acrab 发布边缘 AI 终端 SoC GΞLIX 1，支持 100B 模型本地运行
-- SIG-20260723-A19｜P-020｜微软采用AMD Helios AI平台扩展Azure
-- SIG-20260723-A20｜P-030｜Kapture CX 获 Bajaj Finserv Ventures 领投的 1000 万美元 Pre-B 轮融资，用于扩展 AI 智能体企业技术栈
-- SIG-20260723-A21｜P-053｜Galaxy Unpacked 2026 上的 3 项 Google 更新
-- SIG-20260723-A22｜P-054｜独家：初创公司 Arrakis 携 3800 万美元融资走出隐身模式，将 AI 引入工业领域
-- SIG-20260723-A23｜P-095｜Anthropic 将部署 2 吉瓦 AMD GPU 用于 Claude，交易价值高达 50 亿美元
-- SIG-20260723-A24｜P-067｜OpenAI 推出 OpenAI Presence，布局企业软件赛道
-- SIG-20260723-A25｜P-122｜OpenAI 与 Datadog 高管支持 AI 部署初创公司 Arrakis
-- SIG-20260723-A26｜P-087｜曜越推出专为 AI 工作站打造的 AX 3200W 电源
-- SIG-20260723-A27｜P-029｜AI 队友：monday.com 如何在 Amazon Bedrock 上运行生产级 AI 智能体
-- SIG-20260723-A28｜P-084｜Meta 推出 AI 故事应用 StoryKit，可生成个性化儿童绘本
-- SIG-20260723-A29｜P-006｜开源模型季度盘点：Kimi K3、Qwen 3.8、WAIC 演讲、知识蒸馏与开源闭源差距
-- SIG-20260723-A30｜P-034｜加拿大鹅如何利用AI扩展产能并打造创收体验中心 - Salesforce
-- SIG-20260723-A31｜P-102｜思科押注其小型开源网络安全模型能以更低成本在漏洞检测上超越GPT-5.5
+- SIG-20260723-A16｜P-086｜腾讯整合 Workbuddy 与 QClaw 两款 AI 产品团队
+- SIG-20260723-A17｜P-091｜Acrab 发布边缘 AI 终端 SoC GΞLIX 1，支持 100B 模型本地运行
+- SIG-20260723-A18｜P-020｜微软采用AMD Helios AI平台扩展Azure
+- SIG-20260723-A19｜P-030｜Kapture CX 获 Bajaj Finserv Ventures 领投的 1000 万美元 Pre-B 轮融资，用于扩展 AI 智能体企业技术栈
+- SIG-20260723-A20｜P-053｜Galaxy Unpacked 2026 上的 3 项 Google 更新
+- SIG-20260723-A21｜P-054｜独家：初创公司 Arrakis 携 3800 万美元融资走出隐身模式，将 AI 引入工业领域
+- SIG-20260723-A22｜P-095｜Anthropic 将部署 2 吉瓦 AMD GPU 用于 Claude，交易价值高达 50 亿美元
+- SIG-20260723-A23｜P-067｜OpenAI 推出 OpenAI Presence，布局企业软件赛道
+- SIG-20260723-A24｜P-122｜OpenAI 与 Datadog 高管支持 AI 部署初创公司 Arrakis
+- SIG-20260723-A25｜P-087｜曜越推出专为 AI 工作站打造的 AX 3200W 电源
+- SIG-20260723-A26｜P-029｜AI 队友：monday.com 如何在 Amazon Bedrock 上运行生产级 AI 智能体
+- SIG-20260723-A27｜P-084｜Meta 推出 AI 故事应用 StoryKit，可生成个性化儿童绘本
+- SIG-20260723-A28｜P-006｜开源模型季度盘点：Kimi K3、Qwen 3.8、WAIC 演讲、知识蒸馏与开源闭源差距
+- SIG-20260723-A29｜P-034｜加拿大鹅如何利用AI扩展产能并打造创收体验中心 - Salesforce
+- SIG-20260723-A30｜P-102｜思科押注其小型开源网络安全模型能以更低成本在漏洞检测上超越GPT-5.5
 
 ## Cluster / Dedupe Rows
 
@@ -62,7 +61,6 @@
 - P-094｜event:case:the decoder:$1.5b｜accepted
 - P-005｜event:product_service:cursor:30｜accepted
 - P-045｜event:product_service:用 gpt:5.6｜accepted
-- P-055｜event:case:cofounder ai:302810459｜accepted
 - P-086｜event:product_service:腾讯整合 workbuddy 与 qclaw 两款 ai 产品团队:0｜accepted
 - P-091｜event:product_service:acrab:100b｜accepted
 - P-020｜event:case:eenewseurope:case microsoft adopts amd helios ai platform for azure expansion｜accepted
@@ -96,7 +94,6 @@
 - 01-SiteV2/knowledge/01-Signal-Cards/case/2026-07-23--signal--the-decoder-auto-signal-p-094.md
 - 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-07-23--signal--cursor-auto-signal-p-005.md
 - 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-07-23--signal--gpt-auto-signal-p-045.md
-- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-07-23--signal--cofounder-ai-auto-signal-p-055.md
 - 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-07-23--signal--workbuddy-qclaw-ai-auto-signal-p-086.md
 - 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-07-23--signal--acrab-auto-signal-p-091.md
 - 01-SiteV2/knowledge/01-Signal-Cards/case/2026-07-23--signal--eenewseurope-auto-signal-p-020.md
@@ -130,7 +127,7 @@
 - P-004: valid_page_type:research_benchmark_without_commercial_event, fact_type_constraints:workforce_retraining_program_not_formal_signal_card, business_signal_scope:missing_concrete_funding_product_or_case_event; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Anthropic 设立 2 亿美元经济未来研究基金，支持外部研究
 - P-007: fact_type_constraints:user_feedback_or_commentary_not_verified_fact, valid_page_type:index_or_directory_url, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:docs_or_catalog_or_investing_thesis; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Gemini 最新模型废弃 temperature、top_p 和 top_k 参数，设置将被忽略
 - P-008: fact_type_constraints:unconfirmed_product_rumor_or_plan; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=low; title=现代否认人形机器人计划与罢工工人谈判有关
-- P-009: valid_page_type:research_prototype_without_commercial_event, valid_page_type:research_benchmark_without_commercial_event, business_signal_scope:missing_concrete_funding_product_or_case_event; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Claude 新增 Anthropic Economic Index 连接器，可直接查询 AI 对经济与职业的影响数据
+- P-009: valid_page_type:research_prototype_without_commercial_event, valid_page_type:research_benchmark_without_commercial_event; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Claude 新增 Anthropic Economic Index 连接器，可直接查询 AI 对经济与职业的影响数据
 - P-010: business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal; repair=Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.; priority=review; title=OpenAI 测试 GPT-5.6 Sol 时，其 AI 智能体逃逸沙箱并入侵 Hugging Face 服务器
 - P-011: business_signal_scope:missing_concrete_funding_product_or_case_event; repair=Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.; priority=review; title=Unsloth vs Axolotl vs TRL vs LLaMA-Factory：四大开源微调框架速度、显存与多GPU对比
 - P-012: business_signal_scope:funding_importance_without_confirmed_round; repair=Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.; priority=review; title=Kimi K3 与 Fable 5 对比：开源模型在 93% 路由准确率下成本低至 50 倍
@@ -158,6 +155,7 @@
 - P-050: valid_page_type:research_benchmark_without_commercial_event, business_signal_scope:missing_concrete_funding_product_or_case_event; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=OpenAI claims responsibility for the Hugging Face hack after its own models escaped a test sandbox
 - P-051: valid_page_type:research_benchmark_without_commercial_event; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Every frontier AI model tested by Britain's safety institute tried to cheat on cybersecurity evaluations
 - P-052: evidence_quality:source_event_line_unusable; repair=Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.; priority=medium; title=Here’s what Samsung’s smart glasses actually look like
+- P-055: evidence_quality:stale_source_date; repair=Find a fresh same-event source or keep as backend audit evidence.; priority=low; title=CoFounder.AI Launches the First AI Built to Be a Partner ...
 - P-056: valid_page_type:generic_report_or_list_not_fact_signal, valid_page_type:generic_fde_explainer_or_service_page_without_customer_event; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Design on the Canvas with Claude Code: The Complete Guide | Clearly
 - P-057: evidence_quality:stale_source_date; repair=Find a fresh same-event source or keep as backend audit evidence.; priority=low; title=India pilots AI chatbot-led e-commerce with ChatGPT, Gemini, Claude in the mix | TechCrunch
 - P-058: evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation, business_signal_scope:missing_concrete_funding_product_or_case_event; repair=Find a fresh same-event source or keep as backend audit evidence.; priority=low; title=Agility’s humanoid robots are going to handle your Spanx | TechCrunch
