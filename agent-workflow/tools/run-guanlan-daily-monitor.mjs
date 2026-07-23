@@ -1309,8 +1309,30 @@ async function runMetadataRegressionFixtures() {
   if (preferredPublishedAt("2026-07-07T00:00:00Z", "2026-05-27T00:00:00Z") !== "2026-05-27T00:00:00.000Z") {
     throw new Error("captured source publication date did not override provider-inferred freshness");
   }
-  if (!activeCuratedOriginalSourceItems().some((item) => /supermicro-simplifies-edge-ai-deployments/iu.test(item.url))) {
+  const curatedFixtureSources = [
+    {
+      id: "fixture-active-original",
+      title: "Fixture active original source",
+      url: "https://example.com/active-original-source",
+      published_at: "2026-07-08T00:00:00.000Z",
+      active_from: "2026-07-08",
+      active_until: "2026-07-22",
+    },
+    {
+      id: "fixture-expired-original",
+      title: "Fixture expired original source",
+      url: "https://example.com/expired-original-source",
+      published_at: "2026-07-01T00:00:00.000Z",
+      active_from: "2026-07-01",
+      active_until: "2026-07-07",
+    },
+  ];
+  const curatedFixtureItems = activeCuratedOriginalSourceItems("2026-07-13", curatedFixtureSources);
+  if (!curatedFixtureItems.some((item) => /active-original-source/iu.test(item.url))) {
     throw new Error("active curated original source did not enter the direct-source recall lane");
+  }
+  if (curatedFixtureItems.some((item) => /expired-original-source/iu.test(item.url))) {
+    throw new Error("expired curated original source entered the direct-source recall lane");
   }
   const recoveredTitle = recoverCompleteSourceTitle(
     "Northstar raises $7M to build an enterprise agent",
@@ -4012,12 +4034,12 @@ async function collectHN() {
   return { items: items.slice(0, hnTarget), failures };
 }
 
-function activeCuratedOriginalSourceItems() {
-  return curatedOriginalSources
+function activeCuratedOriginalSourceItems(targetDate = date, sources = curatedOriginalSources) {
+  return sources
     .filter((item) => {
       const activeFrom = String(item?.active_from || "0000-01-01");
       const activeUntil = String(item?.active_until || "9999-12-31");
-      return activeFrom <= date && date <= activeUntil;
+      return activeFrom <= targetDate && targetDate <= activeUntil;
     })
     .filter((item) => item?.title && item?.url && item?.published_at)
     .map((item) => ({

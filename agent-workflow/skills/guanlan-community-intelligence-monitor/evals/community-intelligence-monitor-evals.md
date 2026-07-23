@@ -62,6 +62,10 @@ Run these pass/fail checks when supervising, repairing, or updating the Communit
    - Pass when local checkout / pull failures after successful remote publication are recorded as warnings in the local publish report.
    - Fail when a post-publication local sync warning makes `WaveSight Community Intelligence Daily` return a failed task result after the Community Intelligence PR has already reached `main`.
 
+16. `published_remote_precedes_stale_dirty_checkout`
+   - Pass when supervision uses same-date `origin/main` Community Intelligence data and gate evidence after a validated local publish merged, while reporting the stale dirty checkout as a local-sync warning.
+   - Fail when safe self-repair reruns the community gate against yesterday's working-tree data, overwrites today's passed gate report, and asks for browser recollection after the same-date PR already merged.
+
 ## Repair Loop
 
 When a check fails, repair the local collection, archive, gate, or publisher path. Do not treat local collection success as complete publication until the community PR reaches `main` and Pages deploys when required.
